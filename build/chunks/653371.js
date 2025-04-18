@@ -1,24 +1,24 @@
 /** Chunk was on 87626 **/
 a.d(t, {
-  a: () => A
+  a: () => O
 }), a(388685), a(539854);
 var n = a(200651),
-  s = a(192379),
-  r = a(120356),
-  l = a.n(r),
+  r = a(192379),
+  s = a(120356),
+  l = a.n(s),
   i = a(771950),
   o = a(860911),
   c = a(66037),
   d = a(787907),
   u = a(643103),
   _ = a(34211),
-  p = a(231338),
-  h = a(436620),
-  m = a(431138),
-  N = a(330711),
-  I = a(721380);
+  N = a(231338),
+  m = a(436620),
+  p = a(431138),
+  h = a(330711),
+  I = a(306222);
 
-function g(e, t, a) {
+function k(e, t, a) {
   return t in e ? Object.defineProperty(e, t, {
     value: a,
     enumerable: !0,
@@ -26,27 +26,27 @@ function g(e, t, a) {
     writable: !0
   }) : e[t] = a, e
 }
-let k = p.j_.MAIN_NAVIGATION_MENU,
-  O = () => [{
-    route: (0, i.L)(p.RK.TWITTER),
+let g = N.j_.MAIN_NAVIGATION_MENU,
+  A = () => [{
+    route: (0, i.L)(N.RK.TWITTER),
     linkClicked: "twitter",
     alt: "Discord's Twitter",
-    img: m.r.ASSET_SOCIAL_TWITTER
+    img: p.r.ASSET_SOCIAL_TWITTER
   }, {
-    route: p.fK.FACEBOOK_URL,
+    route: N.fK.FACEBOOK_URL,
     linkClicked: "facebook",
     alt: "Discord's Facebook",
-    img: m.r.ASSET_SOCIAL_FACEBOOK
+    img: p.r.ASSET_SOCIAL_FACEBOOK
   }, {
-    route: p.fK.INSTAGRAM_URL,
+    route: N.fK.INSTAGRAM_URL,
     linkClicked: "instagram",
     alt: "Discord's Instagram",
-    img: m.r.ASSET_SOCIAL_INSTAGRAM
+    img: p.r.ASSET_SOCIAL_INSTAGRAM
   }];
-class A extends s.PureComponent {
+class O extends r.PureComponent {
   componentDidMount() {
     this.setState({
-      isAppCompatible: h.KO
+      isAppCompatible: m.KO
     })
   }
   render() {
@@ -54,8 +54,8 @@ class A extends s.PureComponent {
       className: e,
       mainContentId: t,
       skipToContentLabel: a,
-      onChangeLocale: s,
-      TrackClick: r,
+      onChangeLocale: r,
+      TrackClick: s,
       avoidRouter: i
     } = this.props;
     return (0, n.jsxs)("header", {
@@ -64,16 +64,16 @@ class A extends s.PureComponent {
         className: I.headerInner,
         children: [(0, n.jsxs)("div", {
           className: I.headerLogo,
-          children: [(0, n.jsx)(r, {
+          children: [(0, n.jsx)(s, {
             tag: "div",
-            eventName: k,
+            eventName: g,
             data: {
               linkClicked: "logo"
             },
             children: (0, n.jsx)(c.Z, {
               avoidRouter: i,
-              to: p.am.INDEX,
-              from: p.j_.MAIN_NAVIGATION_MENU,
+              to: N.am.INDEX,
+              from: N.j_.MAIN_NAVIGATION_MENU,
               children: (0, n.jsx)(d.O, {})
             })
           }), null != t ? (0, n.jsx)("a", {
@@ -85,13 +85,13 @@ class A extends s.PureComponent {
           className: I.headerNav,
           children: (0, n.jsx)(_.o, {
             avoidRouter: i,
-            TrackClick: r,
+            TrackClick: s,
             styles: I
           })
         }), (0, n.jsxs)("ul", {
           className: I.headerNavRight,
           children: [this.renderSocialMediaNav(), (0, n.jsx)(u.p, {
-            onChange: s
+            onChange: r
           })]
         })]
       }), null != t && (0, n.jsx)("div", {
@@ -101,36 +101,36 @@ class A extends s.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), g(this, "state", {
+    super(...e), k(this, "state", {
       isAppCompatible: !0
-    }), g(this, "getAppButton", () => {
+    }), k(this, "getAppButton", () => {
       let {
         token: e,
         TrackClick: t,
         authRedirectTo: a
       } = this.props, {
-        isAppCompatible: s
-      } = this.state, r = (0, o.Ui)(a), l = N.Z.Messages.NAVIGATION_LOGIN;
-      return null != e && (r = p.$w.ME, l = N.Z.Messages.NAVIGATION_OPEN), s ? (0, n.jsx)("li", {
+        isAppCompatible: r
+      } = this.state, s = (0, o.Ui)(a), l = h.Z.Messages.NAVIGATION_LOGIN;
+      return null != e && (s = N.$w.ME, l = h.Z.Messages.NAVIGATION_OPEN), r ? (0, n.jsx)("li", {
         className: I.listItemInactive,
         children: (0, n.jsx)(t, {
-          eventName: k,
+          eventName: g,
           className: I.appButton,
           data: {
             linkClicked: e ? "open" : "login",
             googleAnalytics: !0
           },
-          href: r,
+          href: s,
           children: l
         })
       }, "app-button") : null
-    }), g(this, "renderSocialMediaNav", () => {
+    }), k(this, "renderSocialMediaNav", () => {
       let {
         TrackClick: e
-      } = this.props, t = O().map(t => (0, n.jsx)("li", {
+      } = this.props, t = A().map(t => (0, n.jsx)("li", {
         className: l()(I.listItemInactive, I.listItemSocialMedia),
         children: (0, n.jsx)(e, {
-          eventName: k,
+          eventName: g,
           className: I.rightNavLink,
           data: {
             linkClicked: t.linkClicked

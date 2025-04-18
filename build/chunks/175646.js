@@ -1,4 +1,4 @@
-/** Chunk was on 91259 **/
+/** Chunk was on 48157 **/
 e.exports = {
   container: "container__03885 " + n(384323).recentMentionsPopout,
   invitesContainer: "invitesContainer__03885",

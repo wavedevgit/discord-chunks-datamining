@@ -8,7 +8,7 @@ var a = n(200651),
   i = n(411149),
   s = n(680783),
   o = n(944486),
-  c = n(641050);
+  c = n(145634);
 
 function d() {
   let e = (0, l.e7)([o.Z], () => o.Z.getChannelId()),

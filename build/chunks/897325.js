@@ -1,11 +1,11 @@
-/** Chunk was on 49245 **/
+/** Chunk was on 48157 **/
 n.d(t, {
   E: () => o,
   _: () => l
 }), n(314940);
 var r = n(278074),
   i = n(263568),
-  a = n(99230);
+  a = n(228127);
 
 function l(e, t) {
   let n = (0, r.EQ)(t).with(i.C.IMAGE_ONLY_ANSWERS, () => a.normalStylesImageOnlyAnswers).otherwise(() => a.normalStylesDefault);

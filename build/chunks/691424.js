@@ -35,8 +35,8 @@ var r = n(200651),
   D = n(311739),
   L = n(981631),
   x = n(176505),
-  M = n(852831),
-  k = n(675857);
+  M = n(73433),
+  k = n(283574);
 
 function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -188,7 +188,7 @@ function H(e) {
     })
   })
 }
-n(193917);
+n(484944);
 let W = {
   blockQuote: {
     react: (e, t, n) => (0, r.jsxs)("div", {

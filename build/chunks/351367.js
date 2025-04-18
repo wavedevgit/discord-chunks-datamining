@@ -1,4 +1,4 @@
-/** Chunk was on 93243 **/
+/** Chunk was on 63958 **/
 "use strict";
 r.d(t, {
   m: () => p
@@ -29,11 +29,11 @@ function p(e) {
     location: t
   } = e, [r, c] = n.useState(null), p = h.t.useExperiment({
     location: t
-  }), [d, b] = (0, i.Wu)([o.ZP], () => [o.ZP.getMostRecentPremiumTypeSubscription(), o.ZP.getPreviousPremiumTypeSubscription()]), g = (0, i.e7)([l.Z], () => l.Z.hasFetchedOffer()), [Z, j] = (0, i.Wu)([o.ZP], () => [o.ZP.hasFetchedMostRecentPremiumTypeSubscription(), o.ZP.hasFetchedPreviousPremiumTypeSubscription()]), M = (0, i.e7)([s.default], () => s.default.getCurrentUser()), O = (null == M ? void 0 : M.hasHadPremium()) && !Z && !j, y = !(0, a.I5)(M) && !g;
+  }), [d, b] = (0, i.Wu)([o.ZP], () => [o.ZP.getMostRecentPremiumTypeSubscription(), o.ZP.getPreviousPremiumTypeSubscription()]), Z = (0, i.e7)([l.Z], () => l.Z.hasFetchedOffer()), [M, g] = (0, i.Wu)([o.ZP], () => [o.ZP.hasFetchedMostRecentPremiumTypeSubscription(), o.ZP.hasFetchedPreviousPremiumTypeSubscription()]), j = (0, i.e7)([s.default], () => s.default.getCurrentUser()), O = (null == j ? void 0 : j.hasHadPremium()) && !M && !g, y = !(0, a.I5)(j) && !Z;
   return n.useEffect(() => {
     if (!1 === p.enabled) return void c(!1);
     if (!O && !y) {
-      if (null === d) return void((0, a.I5)(M, v.p9.TIER_2) ? c(!1) : c(!0));
+      if (null === d) return void((0, a.I5)(j, v.p9.TIER_2) ? c(!1) : c(!0));
       if (d.isPaused) c(!0);
       else if (d.isEnded) l.Z.hasAnyUnexpiredOffer() || l.Z.hasAnyUnexpiredDiscountOffer() || u(d) ? c(!1) : c(!0);
       else if (d.isActive) {
@@ -42,5 +42,5 @@ function p(e) {
         c(e && t)
       } else c(!1)
     }
-  }, [p.enabled, d, b, O, y, M]), r
+  }, [p.enabled, d, b, O, y, j]), r
 }

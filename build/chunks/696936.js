@@ -1,4 +1,4 @@
-/** Chunk was on 93243 **/
+/** Chunk was on 63958 **/
 "use strict";
 r.d(t, {
   W: () => a,
@@ -9,7 +9,7 @@ r(192379);
 var i = r(120356),
   s = r.n(i),
   o = r(481060),
-  l = r(971438);
+  l = r(956542);
 let a = {
   RED: l.redMessageBlock,
   YELLOW: l.yellowMessageBlock,

@@ -110,9 +110,9 @@ var r = n(200651),
   e0 = n(981631),
   e1 = n(176505),
   e3 = n(701476),
-  e5 = n(186901);
+  e2 = n(186901);
 
-function e8(e, t, n) {
+function e5(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -121,14 +121,14 @@ function e8(e, t, n) {
   }) : e[t] = n, e
 }
 
-function e2(e) {
+function e8(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      e8(e, t, n[t])
+      e5(e, t, n[t])
     })
   }
   return e
@@ -148,7 +148,7 @@ let e4 = !1;
     }
   })
 }));
-let e9 = (0, m.l)(e => {
+let e6 = (0, m.l)(e => {
     let {
       location: t
     } = e, n = (0, ew.default)(t.pathname);
@@ -156,7 +156,7 @@ let e9 = (0, m.l)(e => {
       openWithoutBackstack: !1,
       impressionSource: n.source
     })), (0, r.jsxs)(g.Z, {
-      deepLinkType: e5.jE.USER_SETTINGS,
+      deepLinkType: e2.jE.USER_SETTINGS,
       path: t.pathname,
       paramsBuilder: function(e, t) {
         let [, , n, r] = e.split("/");
@@ -172,7 +172,7 @@ let e9 = (0, m.l)(e => {
       }), ";"]
     })
   }),
-  e6 = o.ZP.connectStores([z.Z, eG.Z, ek.default], () => ({
+  e9 = o.ZP.connectStores([z.Z, eG.Z, ek.default], () => ({
     isConnected: z.Z.isConnected(),
     defaultRoute: eG.Z.defaultRoute,
     defaultRouteFallback: eG.Z.fallbackRoute,
@@ -235,14 +235,14 @@ let tr = [{
     let {
       match: t
     } = e;
-    return (0, r.jsx)(e6, {
+    return (0, r.jsx)(e9, {
       match: t
     })
   },
   isSessionRequired: !0
 }, {
   path: [e0.Z5c.APP],
-  render: () => (0, r.jsx)(e6, {}),
+  render: () => (0, r.jsx)(e9, {}),
   isSessionRequired: !0
 }, {
   path: [e0.Z5c.USERS(":id")],
@@ -334,7 +334,7 @@ let tr = [{
   isSessionRequired: !0
 }, {
   path: [e0.Z5c.SETTINGS(":section", ":subsection?")],
-  render: e9,
+  render: e6,
   isSessionRequired: !0
 }, {
   path: [e0.Z5c.USER_GUILD_NOTIFICATION_SETTINGS(e_.Hw.guildId())],
@@ -348,10 +348,10 @@ let tr = [{
       (0, s.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("5863"), n.e("31255")]).then(n.bind(n, 751212));
+        } = await Promise.all([n.e("5863"), n.e("95626")]).then(n.bind(n, 751212));
         return t => {
           var n, l;
-          return (0, r.jsx)(e, (n = e2({}, t), l = l = {
+          return (0, r.jsx)(e, (n = e8({}, t), l = l = {
             guildId: i
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
@@ -484,7 +484,7 @@ class ta extends i.PureComponent {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 650233));
-        return t => (0, r.jsx)(e, e2({}, t))
+        return t => (0, r.jsx)(e, e8({}, t))
       })
     }), M.Z.init(), er.Z.initialize(), em.Z.initialize(), eh.Z.initialize(), D.Z.initialize(), A.Z.initialize(), Z.Z.initialize(), v.Z.initialize(), this.rewriterUnlisten = eb.Z.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = eb.Z.addRouteChangeListener(this.handleHistoryChange)
   }
@@ -628,7 +628,7 @@ class ta extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), e8(this, "historyUnlisten", () => {}), e8(this, "rewriterUnlisten", () => {})
+    super(...e), e5(this, "historyUnlisten", () => {}), e5(this, "rewriterUnlisten", () => {})
   }
 }
 let to = ta

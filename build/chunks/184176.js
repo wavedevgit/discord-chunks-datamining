@@ -1,4 +1,4 @@
-/** Chunk was on 40790 **/
+/** Chunk was on 44114 **/
 n.d(t, {
   Z: () => o
 });
@@ -7,7 +7,7 @@ n(192379);
 var i = n(481060),
   s = n(823188),
   a = n(388032),
-  l = n(691264);
+  l = n(641089);
 let o = () => (0, r.jsxs)("div", {
   className: l.banner,
   children: [(0, r.jsx)(s.Cy, {

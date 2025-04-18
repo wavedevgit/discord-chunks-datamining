@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => O
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -13,21 +13,22 @@ var r = n(200651),
   u = n(316792),
   d = n(168551),
   f = n(19759),
-  _ = n(892071),
-  p = n(252618),
-  h = n(587061),
-  m = n(981631);
-n(933688);
-let g = new Set([m.Z5c.LOGIN, m.Z5c.REGISTER]);
+  _ = n(522474),
+  p = n(892071),
+  h = n(252618),
+  m = n(587061),
+  g = n(981631);
+n(294346);
+let E = new Set([g.Z5c.LOGIN, g.Z5c.REGISTER]);
 
-function E(e) {
+function b(e) {
   let {
     lang: t,
     style: n,
     className: a
-  } = (0, _.vP)(), s = (0, l.TH)(), u = i.useMemo(() => g.has(s.pathname), [s.pathname]);
-  (0, h.Z)(window, u);
-  let d = (0, c.e7)([f.Z], () => f.Z.sidebarWidth);
+  } = (0, p.vP)(), s = (0, l.TH)(), u = i.useMemo(() => E.has(s.pathname), [s.pathname]);
+  (0, m.Z)(window, u);
+  let d = (0, c.e7)([f.Z, _.Z], () => _.Z.getWindowOpen(g.KJ3.DEVTOOLS_POPOUT) ? 0 : f.Z.sidebarWidth);
   return (0, r.jsx)("html", {
     lang: t,
     style: "".concat(n, " --devtools-sidebar-width: ").concat(d, "px;"),
@@ -37,7 +38,7 @@ function E(e) {
   })
 }
 
-function b() {
+function y() {
   let [e, t] = i.useState([]);
   return i.useEffect(() => {
     Promise.all(u.L.map(e => n(959598)("./".concat(e, ".woff2")).then(e => {
@@ -57,12 +58,12 @@ function b() {
   })
 }
 
-function y(e) {
+function v(e) {
   let {
     children: t,
     skipsSettingDefaultPageTitle: n
   } = e;
-  (0, p.ZD)({
+  (0, h.ZD)({
     skipsSettingDefaultPageTitle: n
   });
   let {
@@ -72,7 +73,7 @@ function y(e) {
     [d.PQ]: !0
   }, o);
   return (0, r.jsxs)(s.ql, {
-    children: [E(a), b(), l, t]
+    children: [b(a), y(), l, t]
   })
 }
-let v = i.memo(y)
+let O = i.memo(v)

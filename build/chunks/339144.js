@@ -1,7 +1,7 @@
-/** Chunk was on 48791 **/
+/** Chunk was on 64040 **/
 n.d(t, {
   J: () => I,
-  y: () => x
+  y: () => E
 });
 var r = n(200651),
   i = n(192379),
@@ -20,15 +20,15 @@ var r = n(200651),
   b = n(562224),
   y = n(803647),
   _ = n(131704),
-  v = n(944486),
-  O = n(626135),
+  O = n(944486),
+  v = n(626135),
   C = n(870569),
-  S = n(981631),
-  j = n(388032),
-  E = n(903203);
+  j = n(981631),
+  S = n(388032),
+  x = n(390648);
 
-function x(e, t, n) {
-  return null != e && (null != n ? n.applicationId === e.id : null != t && t.application_id === e.id && t.type === S.IIU.PLAYING && (0, d.Z)(t, S.xjy.JOIN))
+function E(e, t, n) {
+  return null != e && (null != n ? n.applicationId === e.id : null != t && t.application_id === e.id && t.type === j.IIU.PLAYING && (0, d.Z)(t, j.xjy.JOIN))
 }
 let I = i.memo(function(e) {
   let t, l, d, I, {
@@ -54,28 +54,28 @@ let I = i.memo(function(e) {
     {
       parentAnalyticsLocation: B
     } = (0, p.ZP)(),
-    W = x(k, L, D),
+    W = E(k, L, D),
     V = i.useCallback(() => {
-      o()(null != L, "Received null activity"), (0, f.v)(B, f.d.INVITE), O.default.track(S.rMx.OPEN_MODAL, {
+      o()(null != L, "Received null activity"), (0, f.v)(B, f.d.INVITE), v.default.track(j.rMx.OPEN_MODAL, {
         type: "Send Join Invite",
         application_id: L.application_id,
         location: M.location
       }), (0, c.h7)(L, !1)
     }, [L, M, B]),
-    H = i.useCallback((e, t) => () => {
+    F = i.useCallback((e, t) => () => {
       (0, f.v)(B, f.d.LEAVE_ACTIVITY), h.Z.leaveActivity({
         location: t,
         applicationId: e,
         showFeedback: !0
       })
     }, [B]),
-    F = i.useCallback(() => {
+    H = i.useCallback(() => {
       (0, y.Z)(N)
     }, [N]),
     z = i.useCallback(() => {
       let e = null != T && (0, _.vd)(T.type) ? T : null,
         t = null != e ? e.getGuildId() : w;
-      if (U && null != R && null != v.Z.getVoiceChannelId()) {
+      if (U && null != R && null != O.Z.getVoiceChannelId()) {
         (0, m.s)("Activity Panel"), (0, b.Z)(R.pid);
         return
       }(0, a.ZDy)(async () => {
@@ -103,9 +103,9 @@ let I = i.memo(function(e) {
             return e
           }({}, n), l = l = {
             sourcePID: null == R ? void 0 : R.pid,
-            selectSource: !!G && null != v.Z.getVoiceChannelId(),
+            selectSource: !!G && null != O.Z.getVoiceChannelId(),
             guildId: t,
-            analyticsLocation: S.Sbl.ACTIVITY_PANEL
+            analyticsLocation: j.Sbl.ACTIVITY_PANEL
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -122,13 +122,13 @@ let I = i.memo(function(e) {
     Y = (null != R || null == D || (0, u.R)({
       isContextless: D.location.kind === s.E.CONTEXTLESS
     })) && (Z || P) ? (Z ? (t = !1, l = () => {
-      F(), (0, f.v)(B, f.d.STREAM, !1)
-    }, d = a.g5r, I = j.NW.string(j.t.S5anIS)) : A ? (t = !1, l = () => {
+      H(), (0, f.v)(B, f.d.STREAM, !1)
+    }, d = a.g5r, I = S.NW.string(S.t.S5anIS)) : A ? (t = !1, l = () => {
       z(), (0, f.v)(B, f.d.STREAM, !0)
-    }, d = a.hGI, I = null != R ? j.NW.formatToPlainString(j.t.AB5gT0, {
+    }, d = a.hGI, I = null != R ? S.NW.formatToPlainString(S.t.AB5gT0, {
       game: R.name
-    }) : j.NW.string(j.t.FeUKeH)) : (t = !0, l = null, d = a.hGI, I = null != T && (0, _.vd)(T.type) ? j.NW.string(j.t.uQn9Bw) : null != w ? j.NW.string(j.t.fBXEoK) : j.NW.string(j.t.n3feND)), (0, r.jsx)("div", {
-      className: E.panelButtonContainer,
+    }) : S.NW.string(S.t.FeUKeH)) : (t = !0, l = null, d = a.hGI, I = null != T && (0, _.vd)(T.type) ? S.NW.string(S.t.uQn9Bw) : null != w ? S.NW.string(S.t.fBXEoK) : S.NW.string(S.t.n3feND)), (0, r.jsx)("div", {
+      className: x.panelButtonContainer,
       children: (0, r.jsx)(C.Z, {
         tooltipText: I,
         disabled: t,
@@ -137,18 +137,18 @@ let I = i.memo(function(e) {
       })
     })) : null,
     K = W && null == D ? (0, r.jsx)(C.Z, {
-      tooltipText: j.NW.string(j.t["hC/Ze3"]),
+      tooltipText: S.NW.string(S.t["hC/Ze3"]),
       onClick: V,
       icon: a.ejJ
     }) : null,
     q = null == D ? null : (0, r.jsx)(C.Z, {
-      tooltipText: j.NW.string(j.t["R/FK4O"]),
-      onClick: H(D.applicationId, D.location),
+      tooltipText: S.NW.string(S.t["R/FK4O"]),
+      onClick: F(D.applicationId, D.location),
       icon: a.PBZ
     }),
     Q = null == N ? null : (0, r.jsx)(g.Z, {});
   return null == Y && null == K && null == q ? null : (0, r.jsxs)("div", {
-    className: E.actions,
+    className: x.actions,
     children: [Y, K, null != q ? q : Q]
   })
 })

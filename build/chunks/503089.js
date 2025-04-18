@@ -1,10 +1,10 @@
-/** Chunk was on 93243 **/
+/** Chunk was on 63958 **/
 "use strict";
 r.d(t, {
   $x: () => H,
-  ZP: () => P,
-  d7: () => V,
-  w6: () => x
+  ZP: () => _,
+  d7: () => x,
+  w6: () => V
 }), r(539854), r(361932), r(187205), r(388685);
 var n = r(200651),
   i = r(192379),
@@ -20,11 +20,11 @@ var n = r(200651),
   p = r(960048),
   d = r(410575),
   b = r(493544),
-  g = r(981631),
-  Z = r(388032),
-  j = r(728800);
+  Z = r(981631),
+  M = r(388032),
+  g = r(64730);
 
-function M(e, t, r) {
+function j(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
     value: r,
     enumerable: !0,
@@ -40,7 +40,7 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
       return Object.getOwnPropertyDescriptor(r, e).enumerable
     }))), n.forEach(function(t) {
-      M(e, t, r[t])
+      j(e, t, r[t])
     })
   }
   return e
@@ -64,8 +64,8 @@ let m = Object.freeze({
     sidebarOpen: !0
   }),
   H = 1.4,
-  x = 15,
-  V = 2;
+  V = 15,
+  x = 2;
 
 function w(e) {
   var t, r;
@@ -79,7 +79,7 @@ function w(e) {
     name: null == i ? void 0 : i.impressionName,
     properties: null == i ? void 0 : i.impressionProperties
   });
-  let c = null != (t = null == i ? void 0 : i.element) ? t : g.VqG,
+  let c = null != (t = null == i ? void 0 : i.element) ? t : Z.VqG,
     h = null != (r = null == i ? void 0 : i.elementProps) ? r : {};
   return (0, n.jsx)(d.Z, {
     section: i.section,
@@ -89,7 +89,7 @@ function w(e) {
     }))
   })
 }
-class C extends i.PureComponent {
+class P extends i.PureComponent {
   componentDidMount() {
     this.getPredicateSections().forEach(e => {
       let {
@@ -126,10 +126,10 @@ class C extends i.PureComponent {
     } = this.props, {
       notice: r
     } = null != (e = this.getPredicateSections().find(e => t === e.section)) ? e : {};
-    return null != r && r.stores.some(e => e.showNotice() && !(null != e.canCloseEarly && e.canCloseEarly())) ? (f.S.dispatch(g.CkL.SHAKE_APP, {
+    return null != r && r.stores.some(e => e.showNotice() && !(null != e.canCloseEarly && e.canCloseEarly())) ? (f.S.dispatch(Z.CkL.SHAKE_APP, {
       duration: 300,
       intensity: this._intensity
-    }), this._intensity = Math.min(this._intensity + V, x), f.S.dispatch(g.CkL.EMPHASIZE_NOTICE), !1) : (this._intensity = H, !0)
+    }), this._intensity = Math.min(this._intensity + x, V), f.S.dispatch(Z.CkL.EMPHASIZE_NOTICE), !1) : (this._intensity = H, !0)
   }
   renderSidebar(e) {
     let {
@@ -149,7 +149,7 @@ class C extends i.PureComponent {
           orientation: "vertical",
           "aria-label": r,
           children: [i ? (0, n.jsx)(u.Z, {
-            style: j.searchBar
+            style: g.searchBar
           }) : null, e.map((e, t) => {
             if (null != e.tabPredicate && !e.tabPredicate()) return null;
             switch (e.section) {
@@ -161,7 +161,7 @@ class C extends i.PureComponent {
                 return (0, n.jsx)(l.njP.Separator, {}, t);
               case b.ID.CUSTOM:
                 var r;
-                let i = null != (r = e.element) ? r : g.VqG;
+                let i = null != (r = e.element) ? r : Z.VqG;
                 return (0, n.jsx)(i, {}, t);
               default:
                 return this.renderSettingsSectionTabBarItem(e, o === e.section, s)
@@ -221,14 +221,14 @@ class C extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), M(this, "_unmounted", !1), M(this, "_intensity", H), M(this, "_subscribedStores", []), M(this, "scrollerRef", i.createRef()), M(this, "state", y(O({}, m), {
-      sidebarOpen: this.props.section !== g.oAB.SUBSCRIPTIONS && this.props.section !== g.oAB.PROFILE_CUSTOMIZATION
-    })), M(this, "setPreventNavigation", (e, t) => {
+    super(...e), j(this, "_unmounted", !1), j(this, "_intensity", H), j(this, "_subscribedStores", []), j(this, "scrollerRef", i.createRef()), j(this, "state", y(O({}, m), {
+      sidebarOpen: this.props.section !== Z.oAB.SUBSCRIPTIONS && this.props.section !== Z.oAB.PROFILE_CUSTOMIZATION
+    })), j(this, "setPreventNavigation", (e, t) => {
       this.setState({
         shouldPreventNavigation: e,
         onPreventNavigation: t
       })
-    }), M(this, "handleSetSection", e => {
+    }), j(this, "handleSetSection", e => {
       let {
         onSetSection: t,
         sections: r
@@ -251,16 +251,16 @@ class C extends i.PureComponent {
         category: "settings",
         message: "Set section: ".concat(e)
       })), n && null != i && i(s)
-    }), M(this, "handleClose", () => {
+    }), j(this, "handleClose", () => {
       if (this.validNavigation()) {
         let {
           onClose: e
         } = this.props;
         null == e || e()
       }
-    }), M(this, "handleNoticeStoreUpdate", () => {
+    }), j(this, "handleNoticeStoreUpdate", () => {
       this._unmounted || (this._intensity = H, this.forceUpdate())
-    }), M(this, "renderSettingsSectionTabBarItem", (e, t, r) => {
+    }), j(this, "renderSettingsSectionTabBarItem", (e, t, r) => {
       let {
         section: i,
         label: s = null,
@@ -272,28 +272,28 @@ class C extends i.PureComponent {
         newIndicator: p,
         newIndicatorDismissibleContentTypes: d,
         badgeCount: b
-      } = e, M = null;
-      i === g.oAB.ACCOUNT && this.props.isEligibleForPomelo ? M = (0, n.jsx)(l.P4T, {
+      } = e, j = null;
+      i === Z.oAB.ACCOUNT && this.props.isEligibleForPomelo ? j = (0, n.jsx)(l.P4T, {
         size: "custom",
         width: 20,
         height: 20,
         color: o.Z.colors.STATUS_WARNING.css
-      }) : null != e.decoration ? M = (0, n.jsx)(l.Text, {
+      }) : null != e.decoration ? j = (0, n.jsx)(l.Text, {
         variant: "text-md/normal",
         color: "text-muted",
         children: e.decoration
-      }) : null != r && (null == d ? void 0 : d.includes(r)) && !t ? M = null != p ? p : (0, n.jsx)(l.IGR, {
-        text: Z.NW.string(Z.t.y2b7CA)
-      }) : null != u ? M = u : null != b && b > 0 && (M = (0, n.jsx)(l.mAB, {
+      }) : null != r && (null == d ? void 0 : d.includes(r)) && !t ? j = null != p ? p : (0, n.jsx)(l.IGR, {
+        text: M.NW.string(M.t.y2b7CA)
+      }) : null != u ? j = u : null != b && b > 0 && (j = (0, n.jsx)(l.mAB, {
         count: b
       }));
-      let O = i === g.oAB.PREMIUM ? (0, n.jsx)(v.Z, {
+      let O = i === Z.oAB.PREMIUM ? (0, n.jsx)(v.Z, {
         label: s,
         isSelected: t,
-        decoration: M
-      }) : null == M ? s : (0, n.jsxs)("div", {
-        className: j.tabBarItemContainer,
-        children: [s, M]
+        decoration: j
+      }) : null == j ? s : (0, n.jsxs)("div", {
+        className: g.tabBarItemContainer,
+        children: [s, j]
       });
       return (0, n.jsx)(l.njP.Item, {
         color: h,
@@ -306,4 +306,4 @@ class C extends i.PureComponent {
     })
   }
 }
-let P = C
+let _ = P

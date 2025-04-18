@@ -1,1 +1,1 @@
-{"id":"353398","type":"store","data":{"name":"GuildSettingsTemplateMetadataStore_","functions":[{"name":"getTemplate","args":[]},{"name":"showNotice","args":[]},{"name":"constructor","args":["e"]}],"events":[]},"fromModule":{"id":"97502"}}
+{"id":"353398","type":"store","data":{"name":"GuildSettingsTemplateMetadataStore_","functions":[{"name":"getTemplate","args":[]},{"name":"showNotice","args":[]},{"name":"constructor","args":["e"]}],"events":[]},"fromModule":{"id":"10923"}}

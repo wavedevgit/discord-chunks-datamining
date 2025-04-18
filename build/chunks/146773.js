@@ -1,6 +1,6 @@
-/** Chunk was on 48791 **/
+/** Chunk was on 64040 **/
 n.d(t, {
-  B: () => x
+  B: () => E
 });
 var r = n(200651);
 n(192379);
@@ -20,11 +20,11 @@ var i = n(155281),
   b = n(430824),
   y = n(496675),
   _ = n(914010),
-  v = n(281029),
-  O = n(700785),
+  O = n(281029),
+  v = n(700785),
   C = n(981631);
 
-function S(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,9 +42,9 @@ function S(e) {
   }
   return e
 }
-let j = "DRAGGABLE_GUILD_CHANNEL";
+let S = "DRAGGABLE_GUILD_CHANNEL";
 
-function E(e, t) {
+function x(e, t) {
   var n, r;
   if (null == e || null == t) return null;
   if (e !== C.I_8) return f.Z.getChannel(t);
@@ -53,19 +53,19 @@ function E(e, t) {
   return null == l ? void 0 : l.channel
 }
 
-function x(e) {
-  return (0, i.G)(j, {
+function E(e) {
+  return (0, i.G)(S, {
     drop(e, t) {
       let n, i = _.Z.getGuildId(),
         l = t.getItem(),
-        o = (0, v.if)(E(i, l.id), l.position, e.channel, e.position, l.channelList);
+        o = (0, O.if)(x(i, l.id), l.position, e.channel, e.position, l.channelList);
       if (null == o) return;
-      let u = E(i, l.id);
+      let u = x(i, l.id);
       if (null == u) return;
       let h = g.Z.getCategories(i),
         p = b.Z.getGuild(i);
       if (null == p) return;
-      let m = (0, v.Dn)(u, E(i, o.referenceId), o.parentId, h);
+      let m = (0, O.Dn)(u, x(i, o.referenceId), o.parentId, h);
       if (0 !== m.length) {
         if (i === C.I_8) return void(0, d.s3)(m);
         if (m = m.filter(e => {
@@ -79,14 +79,14 @@ function x(e) {
             if (e.id !== u.id) return !1;
             let t = f.Z.getChannel(e.parent_id);
             if (!(null != t && y.Z.can(C.Plq.MANAGE_ROLES, u) && y.Z.can(C.Plq.MANAGE_ROLES, t))) return !0;
-            let r = O.o4(u, t),
-              i = O.o4(u, f.Z.getChannel(u.parent_id));
+            let r = v.o4(u, t),
+              i = v.o4(u, f.Z.getChannel(u.parent_id));
             return (null != u.parent_id || r) && (!i || r) || (n = e), !0
           }), null != n) {
           let e = f.Z.getChannel(n.parent_id);
           null != e && (0, s.h7j)(t => {
             var l, o;
-            return (0, r.jsx)(c.default, (l = S({}, t), o = o = {
+            return (0, r.jsx)(c.default, (l = j({}, t), o = o = {
               channel: u,
               category: e,
               onConfirm: () => {
@@ -113,7 +113,7 @@ function x(e) {
       let n = t.getItem(),
         r = f.Z.getChannel(n.id);
       if (null == r) return !1;
-      let i = (0, v.if)(f.Z.getChannel(n.id), n.position, e.channel, e.position, n.channelList);
+      let i = (0, O.if)(f.Z.getChannel(n.id), n.position, e.channel, e.position, n.channelList);
       if (null == i) return !1;
       if (_.Z.getGuildId() === C.I_8) return !0;
       let l = b.Z.getGuild(n.guildId);
@@ -140,7 +140,7 @@ function x(e) {
       sortingPosition: t.isOver() && t.canDrop() ? n.position : null,
       sortingParent: t.isOver() && t.canDrop() ? n.parentId : null
     }
-  })((0, l.E)(j, {
+  })((0, l.E)(S, {
     canDrag(e) {
       let {
         channel: t
@@ -152,7 +152,7 @@ function x(e) {
         let {
           default: e
         } = await n.e("82560").then(n.bind(n, 391312));
-        return t => (0, r.jsx)(e, S({}, t))
+        return t => (0, r.jsx)(e, j({}, t))
       }), !1;
       if (t.type === C.d4z.GUILD_CATEGORY) return y.Z.can(C.Plq.MANAGE_CHANNELS, i) && !(0, h.r1)(i.id);
       let l = f.Z.getChannel(t.parent_id);

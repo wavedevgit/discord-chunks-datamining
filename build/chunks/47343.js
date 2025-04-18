@@ -16,7 +16,7 @@ var i = t(200651),
   p = t(731971),
   N = t(981631),
   x = t(388032),
-  g = t(535186);
+  g = t(190981);
 let h = () => {
   var e;
   let [n, t] = l.useState(!1), a = c.G6.useSetting(), {

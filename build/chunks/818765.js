@@ -1,6 +1,6 @@
-/** Chunk was on 48791 **/
+/** Chunk was on 64040 **/
 n.d(t, {
-  Z: () => x
+  Z: () => E
 }), n(388685), n(539854);
 var r = n(570140),
   i = n(317770),
@@ -21,29 +21,29 @@ let f = (0, l.uk)("poggermode_applause", o.Z.getSoundpack()),
   _ = () => {
     g || (f.loop(), g = !0)
   },
-  v = () => {
+  O = () => {
     f.stop(), g = !1
   },
-  O = () => {
+  v = () => {
     let e = d.Z.isEnabled(),
       t = d.Z.comboSoundsEnabled;
     return !!e && !!t && null != c.Z.getChannelId()
   },
   C = () => {
-    if (0 === b.length || !O() || m) return;
+    if (0 === b.length || !v() || m) return;
     m = !0;
     let [e, t] = b[b.length - 1];
-    (0, l.GN)(e, t), y = setTimeout(S, 1e3)
+    (0, l.GN)(e, t), y = setTimeout(j, 1e3)
   },
-  S = () => {
+  j = () => {
     b.pop(), m = !1, C()
   },
-  j = function(e) {
+  S = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1,
       n = a.Z.isConnected();
     b.push([e, t * (n ? .1 : 1)]), C()
   };
-class E extends i.Z {
+class x extends i.Z {
   _initialize() {
     h.ZP.addChangeListener(this.startAudio), r.Z.subscribe("RTC_CONNECTION_STATE", this.setVolume), r.Z.subscribe("TYPING_STOP", this.stopAudio), r.Z.subscribe("TYPING_STOP_LOCAL", this.stopAudio), r.Z.subscribe("CHANNEL_SELECT", this.stopAudio), r.Z.subscribe("POGGERMODE_SETTINGS_UPDATE", this.stopAudio)
   }
@@ -60,24 +60,24 @@ class E extends i.Z {
     let {
       userId: t
     } = e;
-    s.default.getId() === t && v()
+    s.default.getId() === t && O()
   }
   stopAudio() {
-    v()
+    O()
   }
   startAudio() {
     var e;
-    if (!O()) return;
+    if (!v()) return;
     let t = c.Z.getChannelId();
     if (null == t) return;
     let n = s.default.getId(),
       r = u.Z.isTyping(t, n),
       i = h.ZP.getUserCombo(n, t),
       l = null != (e = null == i ? void 0 : i.multiplier) ? e : 1;
-    r && l >= 7 ? _() : v()
+    r && l >= 7 ? _() : O()
   }
   playAchievementUnlockSound() {
-    O() && j("poggermode_achievement_unlock")
+    v() && S("poggermode_achievement_unlock")
   }
 }
-let x = new E
+let E = new x

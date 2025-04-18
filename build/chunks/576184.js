@@ -13,7 +13,7 @@ var o = s(200651),
   l = s(954824),
   b = s(981631),
   m = s(388032),
-  p = s(812799);
+  p = s(764406);
 let h = [{
     id: "discord",
     getName: () => m.NW.string(m.t.uON9Ul),

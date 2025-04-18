@@ -1,9 +1,9 @@
 /** Chunk was on 87626 **/
 a.d(t, {
-  L: () => s
+  L: () => r
 });
 var n = a(330711);
-let s = e => {
+let r = e => {
   let t = n.Z.getLocale().toLowerCase();
   return t in e ? e[t] : e.default
 }

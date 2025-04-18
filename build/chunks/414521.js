@@ -1,4 +1,4 @@
-/** Chunk was on 91259 **/
+/** Chunk was on 48157 **/
 e.exports = {
   container: "container_adb50a",
   coverImageContainer: "coverImageContainer_adb50a",

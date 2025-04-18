@@ -3,8 +3,8 @@ a.d(t, {
   Z: () => o
 }), a(388685);
 var n = a(200651),
-  s = a(192379),
-  r = a(332009);
+  r = a(192379),
+  s = a(332009);
 
 function l(e, t, a) {
   return t in e ? Object.defineProperty(e, t, {
@@ -14,7 +14,7 @@ function l(e, t, a) {
     writable: !0
   }) : e[t] = a, e
 }
-class i extends s.Component {
+class i extends r.Component {
   componentDidUpdate(e) {
     let {
       props: {
@@ -39,9 +39,9 @@ class i extends s.Component {
     })
   }
   constructor(...e) {
-    super(...e), l(this, "scrollRef", s.createRef()), l(this, "scrollTo", e => {
+    super(...e), l(this, "scrollRef", r.createRef()), l(this, "scrollTo", e => {
       null != this.scrollRef.current && (this.scrollRef.current.scrollTop = e)
     }), l(this, "getScrollTop", () => null == this.scrollRef.current ? 0 : this.scrollRef.current.scrollTop)
   }
 }
-let o = (0, r.EN)(i)
+let o = (0, s.EN)(i)

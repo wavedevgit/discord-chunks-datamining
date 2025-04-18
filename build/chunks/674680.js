@@ -1,4 +1,4 @@
-/** Chunk was on 48791 **/
+/** Chunk was on 64040 **/
 n.d(t, {
   Z: () => g
 });
@@ -11,7 +11,7 @@ var i = n(780384),
   a = n(889901),
   c = n(955204),
   u = n(231338),
-  d = n(437983);
+  d = n(835115);
 
 function h(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -53,21 +53,21 @@ function g(e) {
   let y = (0, l.UCu)(g),
     {
       name: _,
-      rarity: v
+      rarity: O
     } = b,
     {
-      color: O
-    } = (0, c.F7)(v),
+      color: v
+    } = (0, c.F7)(O),
     C = (0, i.wj)(m) ? p : f,
-    S = (y.size - y.offset - 2 * y.stroke) * .8,
-    j = y.size - y.stroke,
-    E = {
-      width: .4 * S,
-      height: .4 * S
-    },
+    j = (y.size - y.offset - 2 * y.stroke) * .8,
+    S = y.size - y.stroke,
     x = {
-      width: E.width + 1,
-      height: E.height + 1,
+      width: .4 * j,
+      height: .4 * j
+    },
+    E = {
+      width: x.width + 1,
+      height: x.height + 1,
       right: y.stroke + 1,
       bottom: y.stroke + 1,
       padding: 0
@@ -75,8 +75,8 @@ function g(e) {
   return (0, r.jsxs)("div", {
     className: d.container,
     style: {
-      width: j,
-      height: j,
+      width: S,
+      height: S,
       padding: y.stroke
     },
     "aria-label": "".concat(null != (t = _()) ? t : ""),
@@ -84,23 +84,23 @@ function g(e) {
       className: d.trophyIconContainer,
       children: (0, r.jsx)(l.rm8, {
         size: "custom",
-        color: u ? O : (0, s.Lq)(C.trophy),
-        width: S,
-        height: S
+        color: u ? v : (0, s.Lq)(C.trophy),
+        width: j,
+        height: j
       })
     }), !u && (0, r.jsx)("div", {
       className: d.lockContainer,
-      style: x,
+      style: E,
       children: (0, r.jsx)(l.mBM, h({
         size: "custom",
         color: (0, s.Lq)(C.locked)
-      }, E))
-    }), u && v === c.EP.LEGENDARY && (0, r.jsx)("div", {
+      }, x))
+    }), u && O === c.EP.LEGENDARY && (0, r.jsx)("div", {
       className: d.lockContainer,
-      style: x,
+      style: E,
       children: (0, r.jsx)(a.Z, h({
         className: d.confettiIcon
-      }, E))
+      }, x))
     })]
   })
 }

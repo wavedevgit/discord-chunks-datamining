@@ -1,10 +1,10 @@
 /** Chunk was on 87626 **/
 a.r(t), a.d(t, {
-  default: () => N
+  default: () => h
 }), a(388685);
 var n = a(200651),
-  s = a(192379),
-  r = a(548668),
+  r = a(192379),
+  s = a(548668),
   l = a(231262),
   i = a(501522),
   o = a(442837),
@@ -12,9 +12,9 @@ var n = a(200651),
   d = a(706454),
   u = a(626135),
   _ = a(981631),
-  p = a(388032),
-  h = a(235030);
-class m extends s.Component {
+  N = a(388032),
+  m = a(681205);
+class p extends r.Component {
   shouldScrollToTop(e) {
     let {
       location: t
@@ -31,24 +31,24 @@ class m extends s.Component {
     return (0, n.jsx)(i.Z, {
       className: t,
       shouldScrollToTop: this.shouldScrollToTop,
-      render: (t, i) => (0, n.jsxs)(s.Fragment, {
+      render: (t, i) => (0, n.jsxs)(r.Fragment, {
         children: [(0, n.jsx)(l.h, {
           avoidRouter: !0,
           locale: o,
           authRedirectTo: e.pathname,
           track: u.default.track,
-          className: h.marketingHeader,
+          className: m.marketingHeader,
           onChangeLocale: this.handleHeaderLocaleChange,
-          mobileClassName: h.marketingHeader,
-          openNavAriaLabel: p.NW.string(p.t.Fs9k3N),
-          hideNavAriaLabel: p.NW.string(p.t.AbfyHB),
-          skipToContentLabel: p.NW.string(p.t["18gavL"])
-        }), a(t, i), (0, n.jsx)(r.$, {
+          mobileClassName: m.marketingHeader,
+          openNavAriaLabel: N.NW.string(N.t.Fs9k3N),
+          hideNavAriaLabel: N.NW.string(N.t.AbfyHB),
+          skipToContentLabel: N.NW.string(N.t["18gavL"])
+        }), a(t, i), (0, n.jsx)(s.$, {
           locale: o,
           authRedirectTo: e.pathname,
           avoidRouter: !0,
           track: u.default.track,
-          className: h.marketingFooter
+          className: m.marketingFooter
         })]
       })
     })
@@ -65,6 +65,6 @@ class m extends s.Component {
     }) : this[t] = a
   }
 }
-let N = o.ZP.connectStores([d.default], () => ({
+let h = o.ZP.connectStores([d.default], () => ({
   locale: d.default.locale
-}))(m)
+}))(p)

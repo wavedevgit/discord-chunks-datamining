@@ -1,8 +1,8 @@
-/** Chunk was on 56236 **/
+/** Chunk was on 70657 **/
 t.d(n, {
-  H: () => r
+  H: () => i
 });
-let r = e => {
+let i = e => {
   let {
     guildId: n,
     guildEventId: t

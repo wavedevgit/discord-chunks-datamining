@@ -4,21 +4,21 @@ n.d(t, {
 }), n(35282), n(388685);
 var r, i = n(200651),
   s = n(192379),
-  l = n(593473),
-  o = n(442837),
+  o = n(593473),
+  l = n(442837),
   a = n(544891),
   c = n(481060),
   u = n(129293),
   d = n(388905),
   h = n(108427),
-  p = n(598077),
-  g = n(896797),
-  f = n(981631),
-  m = n(930441),
+  g = n(598077),
+  p = n(896797),
+  m = n(981631),
+  f = n(930441),
   _ = n(388032),
-  N = n(971005);
+  x = n(20493);
 
-function x(e, t, n) {
+function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -26,13 +26,13 @@ function x(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-o.ZP.initialize();
+l.ZP.initialize();
 class b extends(r = s.PureComponent) {
   componentDidMount() {
     let e = (0, u.Z)(this.props.location),
-      t = (0, l.parse)(this.props.location.search);
+      t = (0, o.parse)(this.props.location.search);
     a.tn.post({
-      url: f.ANM.DISABLE_EMAIL_NOTIFICATIONS,
+      url: m.ANM.DISABLE_EMAIL_NOTIFICATIONS,
       body: {
         token: e,
         pixel_uuid: t.hash,
@@ -46,7 +46,7 @@ class b extends(r = s.PureComponent) {
         body: {
           user: n
         }
-      } = e, r = new p.Z(n);
+      } = e, r = new g.Z(n);
       this.setState({
         success: !0,
         busy: !1,
@@ -72,19 +72,19 @@ class b extends(r = s.PureComponent) {
     });
     return (0, i.jsxs)(d.ZP, {
       children: [(0, i.jsx)(d.Dx, {
-        className: N.marginBottom8,
+        className: x.marginBottom8,
         children: _.NW.string(_.t.f6rdLi)
       }), (0, i.jsx)(d.DK, {
         children: s
       }), (0, i.jsx)(d.zx, {
-        className: N.marginTop20,
+        className: x.marginTop20,
         onClick: () => r(n),
         children: _.NW.string(_.t.fIv16O)
       }), (0, i.jsx)(d.zx, {
-        className: N.marginTop8,
+        className: x.marginTop8,
         color: d.zx.Colors.LINK,
         look: d.zx.Looks.LINK,
-        onClick: () => r(f.Z5c.SETTINGS("notifications", m.vG)),
+        onClick: () => r(m.Z5c.SETTINGS("notifications", f.vG)),
         children: _.NW.string(_.t.YYTira)
       })]
     })
@@ -98,21 +98,21 @@ class b extends(r = s.PureComponent) {
       category: r
     } = this.state;
     if (null != r) {
-      let e = m.Od.find(e => e.category === r);
+      let e = f.Od.find(e => e.category === r);
       if (null != e) return this.renderCategorySuccess(r, e.label())
     }
     return (0, i.jsxs)(d.ZP, {
       children: [(0, i.jsx)(d.qE, {
         src: null == n ? void 0 : n.getAvatarURL(void 0, 100),
         size: c.EFr.DEPRECATED_SIZE_100,
-        className: N.marginBottom20
+        className: x.marginBottom20
       }), (0, i.jsx)(d.Dx, {
-        className: N.marginBottom8,
+        className: x.marginBottom8,
         children: _.NW.string(_.t["6U6OMT"])
       }), (0, i.jsx)(d.DK, {
         children: _.NW.string(_.t["yaDJ4+"])
       }), (0, i.jsx)(d.zx, {
-        className: N.marginTop40,
+        className: x.marginTop40,
         onClick: () => t(e),
         children: _.NW.string(_.t.fIv16O)
       })]
@@ -126,14 +126,14 @@ class b extends(r = s.PureComponent) {
     return (0, i.jsxs)(d.ZP, {
       children: [(0, i.jsx)(d.Ee, {
         src: n(105020),
-        className: N.marginBottom20
+        className: x.marginBottom20
       }), (0, i.jsx)(d.Dx, {
-        className: N.marginBottom8,
+        className: x.marginBottom8,
         children: _.NW.string(_.t.ox9hIS)
       }), (0, i.jsx)(d.DK, {
         children: _.NW.string(_.t["/dcuR0"])
       }), (0, i.jsx)(d.zx, {
-        className: N.marginTop40,
+        className: x.marginTop40,
         onClick: () => t(e),
         children: _.NW.string(_.t.fIv16O)
       })]
@@ -147,7 +147,7 @@ class b extends(r = s.PureComponent) {
     return e ? this.renderBusy() : t ? this.renderSuccess() : this.renderError()
   }
   constructor(...e) {
-    super(...e), x(this, "state", {
+    super(...e), N(this, "state", {
       busy: !0,
       success: !1,
       user: null,
@@ -155,9 +155,9 @@ class b extends(r = s.PureComponent) {
     })
   }
 }
-x(b, "defaultProps", {
+N(b, "defaultProps", {
   transitionTo: e => n.g.location.assign(e)
 });
-let E = o.ZP.connectStores([g.Z], () => ({
-  defaultRoute: g.Z.defaultRoute
+let E = l.ZP.connectStores([p.Z], () => ({
+  defaultRoute: p.Z.defaultRoute
 }))(b)

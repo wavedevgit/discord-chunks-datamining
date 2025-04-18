@@ -1,4 +1,4 @@
-/** Chunk was on 93243 **/
+/** Chunk was on 63958 **/
 "use strict";
 r.d(t, {
   E: () => u,
@@ -13,7 +13,7 @@ var i = r(120356),
   a = r(410030),
   c = r(696936),
   h = r(903773),
-  v = r(232703);
+  v = r(734344);
 let u = {
   RIGHT: v.horizontalStatusWarningBlock,
   BOTTOM: v.verticalStatusWarningBlock
@@ -28,27 +28,27 @@ function f(e) {
     ctaLabel: p,
     ctaLoading: d,
     ctaDisabled: b,
-    ctaClassName: g,
-    onClick: Z
-  } = e, j = (0, a.ZP)();
+    ctaClassName: Z,
+    onClick: M
+  } = e, g = (0, a.ZP)();
   return (0, n.jsx)(h.Z, {
     className: s()(v.statusWarningBlock, {
       [v.statusWarningBlockWithCta]: null != p
     }, t),
-    color: (0, o.wj)(j) ? r : c.W.BROWN,
+    color: (0, o.wj)(g) ? r : c.W.BROWN,
     children: (0, n.jsxs)("div", {
       className: i,
       children: [(0, n.jsx)(l.Text, {
         variant: "text-sm/normal",
         color: "interactive-active",
         children: f
-      }), null != p && null != Z && (0, n.jsx)("div", {
+      }), null != p && null != M && (0, n.jsx)("div", {
         className: v.ctaButtonContainer,
         children: (0, n.jsx)(l.zxk, {
-          className: s()(v.ctaButton, (0, o.wj)(j) ? void 0 : v.ctaBlackButton, g),
-          color: (0, o.wj)(j) ? l.zxk.Colors.WHITE : l.zxk.Colors.CUSTOM,
+          className: s()(v.ctaButton, (0, o.wj)(g) ? void 0 : v.ctaBlackButton, Z),
+          color: (0, o.wj)(g) ? l.zxk.Colors.WHITE : l.zxk.Colors.CUSTOM,
           size: l.PhG.MEDIUM,
-          onClick: Z,
+          onClick: M,
           disabled: b,
           submitting: d,
           children: (0, n.jsx)(l.Text, {

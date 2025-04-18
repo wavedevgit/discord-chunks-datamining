@@ -1,4 +1,4 @@
-/** Chunk was on 97502 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => x
@@ -14,7 +14,7 @@ var r = n(200651),
   u = n(273504),
   m = n(981631),
   g = n(388032),
-  p = n(108906);
+  p = n(409866);
 let h = o.Z.getArticleURL(m.BhN.GUILD_AUTOMOD_REGEX);
 
 function f(e) {

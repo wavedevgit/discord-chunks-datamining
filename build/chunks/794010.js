@@ -2,8 +2,8 @@
 a.d(t, {
   Z: () => i
 }), a(388685);
-var n, s = a(200651),
-  r = a(192379);
+var n, r = a(200651),
+  s = a(192379);
 
 function l(e, t, a) {
   return t in e ? Object.defineProperty(e, t, {
@@ -13,13 +13,13 @@ function l(e, t, a) {
     writable: !0
   }) : e[t] = a, e
 }
-class i extends(n = r.PureComponent) {
+class i extends(n = s.PureComponent) {
   render() {
     var e, t;
     let a = this.props,
       {
         tag: n,
-        children: r,
+        children: s,
         eventName: i,
         data: o,
         track: c,
@@ -27,20 +27,20 @@ class i extends(n = r.PureComponent) {
       } = a,
       u = function(e, t) {
         if (null == e) return {};
-        var a, n, s = function(e, t) {
+        var a, n, r = function(e, t) {
           if (null == e) return {};
-          var a, n, s = {},
-            r = Object.keys(e);
-          for (n = 0; n < r.length; n++) a = r[n], t.indexOf(a) >= 0 || (s[a] = e[a]);
-          return s
+          var a, n, r = {},
+            s = Object.keys(e);
+          for (n = 0; n < s.length; n++) a = s[n], t.indexOf(a) >= 0 || (r[a] = e[a]);
+          return r
         }(e, t);
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          for (n = 0; n < r.length; n++) a = r[n], !(t.indexOf(a) >= 0) && Object.prototype.propertyIsEnumerable.call(e, a) && (s[a] = e[a])
+          var s = Object.getOwnPropertySymbols(e);
+          for (n = 0; n < s.length; n++) a = s[n], !(t.indexOf(a) >= 0) && Object.prototype.propertyIsEnumerable.call(e, a) && (r[a] = e[a])
         }
-        return s
+        return r
       }(a, ["tag", "children", "eventName", "data", "track", "trackOutboundLink"]);
-    return null == n ? null : (0, s.jsx)(n, (e = function(e) {
+    return null == n ? null : (0, r.jsx)(n, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var a = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(a);
@@ -53,7 +53,7 @@ class i extends(n = r.PureComponent) {
       return e
     }({}, u), t = t = {
       onClick: this.handleClick,
-      children: r
+      children: s
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var a = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -71,11 +71,11 @@ class i extends(n = r.PureComponent) {
         eventName: t,
         data: a,
         href: n,
-        onClick: s,
-        trackOutboundLink: r,
+        onClick: r,
+        trackOutboundLink: s,
         track: l
       } = this.props;
-      if (a.googleAnalytics && r && (null != n ? r(n) : console.warn("TrackClick.handleClick: No href provided when using data.googleAnalytics")), s && s(e), !t) return !1;
+      if (a.googleAnalytics && s && (null != n ? s(n) : console.warn("TrackClick.handleClick: No href provided when using data.googleAnalytics")), r && r(e), !t) return !1;
       l(t, a)
     })
   }

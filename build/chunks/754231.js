@@ -1,6 +1,6 @@
-/** Chunk was on 48791 **/
+/** Chunk was on 64040 **/
 n.d(t, {
-  Z: () => x
+  Z: () => E
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -18,10 +18,10 @@ var r = n(200651),
   m = n(768581),
   b = n(823379),
   y = n(51144),
-  _ = n(237272);
-let v = d.u.SIZE_24;
+  _ = n(291798);
+let O = d.u.SIZE_24;
 
-function O(e) {
+function v(e) {
   var t, n;
   let {
     activity: l,
@@ -110,7 +110,7 @@ function C(e) {
   })
 }
 
-function S(e) {
+function j(e) {
   let {
     activity: t,
     user: n,
@@ -129,7 +129,7 @@ function S(e) {
   })
 }
 
-function j(e) {
+function S(e) {
   let {
     activity: t
   } = e, n = null == t ? void 0 : t.state;
@@ -139,7 +139,7 @@ function j(e) {
   })
 }
 
-function E(e) {
+function x(e) {
   let {
     activity: t
   } = e;
@@ -161,7 +161,7 @@ function E(e) {
   })
 }
 
-function x(e) {
+function E(e) {
   let {
     activity: t,
     embeddedApp: n,
@@ -173,7 +173,7 @@ function x(e) {
     onOpenSpotifyAlbum: g
   } = e, m = [];
   null != n ? m = Array.from(n.embeddedActivity.userIds) : (0, c.Z)(t) && null != u && (m = u.map(e => e.user.id));
-  let x = (0, s.Wu)([f.default], () => m.map(e => f.default.getUser(e)).filter(b.lm)),
+  let E = (0, s.Wu)([f.default], () => m.map(e => f.default.getUser(e)).filter(b.lm)),
     I = null != n || (0, c.Z)(t),
     N = i.useMemo(() => {
       let e = new Map;
@@ -186,7 +186,7 @@ function x(e) {
     className: _.flexColumn,
     children: [(0, r.jsxs)("div", {
       className: _.flexRow,
-      children: [(0, r.jsx)(O, {
+      children: [(0, r.jsx)(v, {
         activity: t,
         user: l,
         embeddedApp: n,
@@ -197,17 +197,17 @@ function x(e) {
           activity: t,
           embeddedApp: n,
           onOpenSpotifyTrack: h
-        }), (0, r.jsx)(S, {
+        }), (0, r.jsx)(j, {
           activity: t,
           user: l,
           onOpenSpotifyArtist: p
-        }), (0, r.jsx)(j, {
+        }), (0, r.jsx)(S, {
           activity: t
         }), m.length > 0 && (0, r.jsx)(d.Z, {
           className: _.usersSummary,
           guildId: o.guild_id,
-          users: x,
-          size: v,
+          users: E,
+          size: O,
           max: 7,
           renderUser: e => {
             var t;
@@ -218,7 +218,7 @@ function x(e) {
               text: i,
               position: "bottom",
               children: (0, r.jsx)("img", {
-                src: e.getAvatarURL(o.guild_id, v),
+                src: e.getAvatarURL(o.guild_id, O),
                 alt: i,
                 className: _.avatar
               }, e.id)
@@ -226,7 +226,7 @@ function x(e) {
           }
         })]
       })]
-    }), (0, r.jsx)(E, {
+    }), (0, r.jsx)(x, {
       activity: t
     })]
   }) : null

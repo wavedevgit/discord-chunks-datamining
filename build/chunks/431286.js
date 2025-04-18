@@ -1,6 +1,6 @@
-/** Chunk was on 48791 **/
+/** Chunk was on 64040 **/
 n.d(t, {
-  i: () => S
+  i: () => j
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -19,11 +19,11 @@ var r = n(200651),
   b = n(479766),
   y = n(331663),
   _ = n(981631),
-  v = n(921944),
-  O = n(46140);
+  O = n(921944),
+  v = n(46140);
 let C = "orb-announcement-modal-key";
 
-function S() {
+function j() {
   let {
     hasLayers: e
   } = (0, o.cj)([f.Z], () => ({
@@ -33,12 +33,12 @@ function S() {
   } = (0, o.cj)([b.Z], () => ({
     onboardingModalOpenedPrior: b.Z.onboardingModalOpenedPrior
   })), {
-    enabled: S
+    enabled: j
   } = (0, m.W)({
     location: "virtual_currency_announcement_modal"
-  }), [j, E] = (0, h.US)(S ? [s.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], ...y.b.useSelectedDismissibleContent), x = (0, c.s9z)(c.JQI);
+  }), [S, x] = (0, h.US)(j ? [s.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], ...y.b.useSelectedDismissibleContent), E = (0, c.s9z)(c.JQI);
   i.useEffect(() => {
-    S && !t && j === s.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL && (e || x || (u.Z.dispatch({
+    j && !t && S === s.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL && (e || E || (u.Z.dispatch({
       type: "VIRTUAL_CURRENCY_ONBOARDING_MODAL_OPEN"
     }), (0, a.ZD)(async () => {
       let {
@@ -49,24 +49,24 @@ function S() {
           onClose: n,
           transitionState: i
         } = t, o = async () => {
-          await n(), E(v.L.USER_DISMISS)
+          await n(), x(O.L.USER_DISMISS)
         };
         return (0, r.jsx)(e, {
           transitionState: i,
           onClose: o,
           ctaOnClick: () => {
-            E(v.L.TAKE_ACTION), (0, d.EW)(s.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK, {
-              dismissAction: v.L.INDIRECT_ACTION,
-              groupName: v.R.VIRTUAL_CURRENCY_ONBOARDING
+            x(O.L.TAKE_ACTION), (0, d.EW)(s.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK, {
+              dismissAction: O.L.INDIRECT_ACTION,
+              groupName: O.R.VIRTUAL_CURRENCY_ONBOARDING
             }), (0, d.EW)(s.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, {
-              dismissAction: v.L.INDIRECT_ACTION,
-              groupName: v.R.VIRTUAL_CURRENCY_ONBOARDING
+              dismissAction: O.L.INDIRECT_ACTION,
+              groupName: O.R.VIRTUAL_CURRENCY_ONBOARDING
             }), (0, g.Y)({
               pageType: _.ZY5.ORBS_ANNOUNCEMENT_MODAL,
               sectionType: _.jXE.ORBS_ANNOUNCEMENT_MODAL,
               ctaObject: _.qAy.CTA_TO_ORB_INTRO_QUEST
             }), (0, p.navigateToQuestHome)({
-              questId: O.V6,
+              questId: v.V6,
               fromContent: l.j.ORBS_ANNOUNCEMENT_MODAL
             }), n()
           }
@@ -75,8 +75,8 @@ function S() {
     }, {
       modalKey: C,
       onCloseRequest: () => {
-        E(v.L.USER_DISMISS), (0, c.Mr3)(C)
+        x(O.L.USER_DISMISS), (0, c.Mr3)(C)
       }
     })))
-  }, [j, S, t, E, e, x])
+  }, [S, j, t, x, e, E])
 }

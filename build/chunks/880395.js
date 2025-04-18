@@ -1,4 +1,4 @@
-/** Chunk was on 48791 **/
+/** Chunk was on 64040 **/
 n.d(t, {
   D: () => s
 });
@@ -43,7 +43,7 @@ function s(e, t, s, a, c) {
   return null != u ? (0, i.jW)(e, async () => {
     let {
       default: e
-    } = await Promise.all([n.e("98693"), n.e("35794"), n.e("18619")]).then(n.bind(n, 357823));
+    } = await Promise.all([n.e("98693"), n.e("35794"), n.e("42707")]).then(n.bind(n, 357823));
     return n => (0, r.jsx)(e, o(l({}, n), {
       user: t,
       channel: s,

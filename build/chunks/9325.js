@@ -5,22 +5,22 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   s = n(442837),
-  l = n(481060),
-  o = n(388905),
+  o = n(481060),
+  l = n(388905),
   a = n(409059),
   c = n(962220),
   u = n(306453),
   d = n(108427),
   h = n(314897),
-  p = n(626135),
-  g = n(587444),
-  f = n(981631),
-  m = n(260539),
+  g = n(626135),
+  p = n(587444),
+  m = n(981631),
+  f = n(260539),
   _ = n(388032),
-  N = n(971005);
+  x = n(20493);
 
-function x(e, t, n) {
-  e.preventDefault(), p.default.track(f.rMx.GUILD_TEMPLATE_APP_OPENED, {
+function N(e, t, n) {
+  e.preventDefault(), g.default.track(m.rMx.GUILD_TEMPLATE_APP_OPENED, {
     guild_template_code: t,
     guild_template_name: n.name,
     guild_template_description: n.description,
@@ -28,7 +28,7 @@ function x(e, t, n) {
   });
   let r = h.default.getFingerprint(),
     i = null != r ? r : h.default.getId();
-  c.Z.openMobileApp(n.state === m.Rj.RESOLVED ? t : void 0, i)
+  c.Z.openMobileApp(n.state === f.Rj.RESOLVED ? t : void 0, i)
 }
 
 function b(e) {
@@ -37,21 +37,21 @@ function b(e) {
   } = e, n = (0, s.e7)([a.Z], () => a.Z.getGuildTemplate(t));
   return (i.useEffect(() => {
     (0, d.e)("guild_template_mobile")
-  }, []), null == n || n.state === m.Rj.RESOLVING) ? (0, r.jsx)(o.ZP, {
-    children: (0, r.jsx)(l.$jN, {})
-  }) : n.state === m.Rj.RESOLVED ? (0, r.jsxs)(o.ZP, {
+  }, []), null == n || n.state === f.Rj.RESOLVING) ? (0, r.jsx)(l.ZP, {
+    children: (0, r.jsx)(o.$jN, {})
+  }) : n.state === f.Rj.RESOLVED ? (0, r.jsxs)(l.ZP, {
     children: [(0, r.jsx)(u.Z, {
       guildTemplate: n,
       tall: !0
-    }), (0, r.jsx)(o.zx, {
-      onClick: e => x(e, t, n),
-      className: N.marginTop20,
+    }), (0, r.jsx)(l.zx, {
+      onClick: e => N(e, t, n),
+      className: x.marginTop20,
       children: _.NW.string(_.t["a3Gl+f"])
     })]
-  }) : (0, r.jsx)(g.Z, {
+  }) : (0, r.jsx)(p.Z, {
     text: _.NW.string(_.t["e/rZ2t"]),
     buttonCta: _.NW.string(_.t.HAvYn5),
-    onClick: e => x(e, t, n)
+    onClick: e => N(e, t, n)
   })
 }
 s.ZP.initialize()

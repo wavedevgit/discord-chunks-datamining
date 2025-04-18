@@ -1,8 +1,8 @@
-/** Chunk was on 98587 **/
+/** Chunk was on 98350 **/
 n.d(t, {
-  Xs: () => o
+  Xs: () => a
 });
-let r = (0, n(818083).B)({
+let i = (0, n(818083).B)({
   kind: "user",
   id: "2024-09_dm_mute_feedback",
   label: "DM Mute Feedback Experiment",
@@ -18,10 +18,10 @@ let r = (0, n(818083).B)({
   }]
 });
 
-function o(e) {
+function a(e) {
   let {
     enabled: t
-  } = r.getCurrentConfig({
+  } = i.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: !0

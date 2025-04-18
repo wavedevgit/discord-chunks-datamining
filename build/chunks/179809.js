@@ -1,4 +1,4 @@
-/** Chunk was on 48791 **/
+/** Chunk was on 64040 **/
 n.d(t, {
   Z: () => N
 }), n(388685);
@@ -19,13 +19,13 @@ var r = n(200651),
   b = n(276952),
   y = n(199540),
   _ = n(40153),
-  v = n(252686),
-  O = n(682662),
+  O = n(252686),
+  v = n(682662),
   C = n(662146),
-  S = n(388032),
-  j = n(909698),
-  E = n(815537);
-let x = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
+  j = n(388032),
+  S = n(728492),
+  x = n(335426);
+let E = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
   I = (0, a.animated)(d.Kqy),
   N = i.memo(function(e) {
     let {
@@ -52,8 +52,8 @@ let x = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
       "aria-posinset": W
     } = e, {
       id: V,
-      name: H,
-      children: F
+      name: F,
+      children: H
     } = t, [z, Y] = i.useState(!1), [K, q] = i.useState(!1), Q = z || K;
     i.useEffect(() => {
       A && Y(!1)
@@ -76,7 +76,7 @@ let x = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
       q(e)
     }, []), ee = i.useCallback(e => {
       ("ArrowRight" === e.key && !a || "ArrowLeft" === e.key && a) && L()
-    }, [L, a]), et = null != H && "" !== H ? H : null != w && "" !== w ? w : S.NW.string(S.t.xV9hVl), en = (0, c.Ie)("".concat(V)), er = "folder-items-".concat(V), ei = function(e) {
+    }, [L, a]), et = null != F && "" !== F ? F : null != w && "" !== w ? w : j.NW.string(j.t.xV9hVl), en = (0, c.Ie)("".concat(V)), er = "folder-items-".concat(V), ei = function(e) {
       let t = (0, d.dQu)(d.TVs.modules.guildbar.AVATAR_SIZE),
         n = (0, p.Q3)("FolderItem.useHeight"),
         r = (0, d.dQu)(d.TVs.space.SPACE_XS),
@@ -84,7 +84,7 @@ let x = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
         l = (0, d.dQu)(d.TVs.modules.guildbar.FOLDER_SIZE),
         o = n ? r : 8;
       return e * (t + o) + (n ? (l - i) / 2 - o : 0)
-    }(F.length), el = (0, d.Yzy)(!X && a, {
+    }(H.length), el = (0, d.Yzy)(!X && a, {
       from: {
         height: 0
       },
@@ -95,15 +95,15 @@ let x = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
         height: 0
       },
       config: {
-        duration: x
+        duration: E
       }
-    }), eo = i.useCallback(e => null == n ? void 0 : n(V, e), [n, V]), es = (0, r.jsxs)(O.H, {
+    }), eo = i.useCallback(e => null == n ? void 0 : n(V, e), [n, V]), es = (0, r.jsxs)(v.H, {
       children: [(0, r.jsx)(b.Z, {
         disabled: X || a,
         hovered: z,
         selected: l,
         unread: P,
-        className: E.pill
+        className: x.pill
       }), (0, r.jsx)(C.Z, {
         text: et,
         disabled: A,
@@ -113,11 +113,11 @@ let x = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
           ref: T ? e => {
             J(e)
           } : void 0,
-          className: o()(j.folderIcon, {
-            [E.wobble]: !X && K && !a
+          className: o()(S.folderIcon, {
+            [x.wobble]: !X && K && !a
           }),
           "data-dnd-name": et,
-          children: X ? (0, r.jsx)(v.Z, {}) : (0, r.jsx)(y.Z, {
+          children: X ? (0, r.jsx)(O.Z, {}) : (0, r.jsx)(y.Z, {
             folderNode: t,
             expanded: a,
             forceCircular: Z,
@@ -146,12 +146,12 @@ let x = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
     });
     return (0, r.jsxs)("div", {
       ref: eo,
-      className: o()(j.wrapper, a && j.isExpanded),
+      className: o()(S.wrapper, a && S.isExpanded),
       "data-drop-hovering": K,
       children: [!X && a && (0, r.jsx)("span", {
-        className: o()(j.expandedFolderBackground, {
-          [j.collapsed]: !a,
-          [j.hover]: Q
+        className: o()(S.expandedFolderBackground, {
+          [S.collapsed]: !a,
+          [S.hover]: Q
         })
       }), es, el((e, n, i) => {
         let {
@@ -167,7 +167,7 @@ let x = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
           },
           role: "group",
           "aria-label": t.name,
-          children: F.map((t, n) => M(t, n, F.length, e.height))
+          children: H.map((t, n) => M(t, n, H.length, e.height))
         }, l)
       }), T && a ? (0, r.jsx)(_.Zu, {
         name: et,

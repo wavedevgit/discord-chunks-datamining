@@ -1,40 +1,40 @@
-/** Chunk was on 56422 **/
-n.d(t, {
+/** Chunk was on 76346 **/
+r.d(t, {
   Z: () => c
 });
-var r = n(200651);
-n(192379);
-var i = n(120356),
-  l = n.n(i),
-  s = n(481060),
-  a = n(679768),
-  o = n(166844);
+var n = r(200651);
+r(192379);
+var s = r(120356),
+  i = r.n(s),
+  l = r(481060),
+  o = r(679768),
+  a = r(456411);
 
 function c(e) {
   let {
     copy: t,
-    showStars: n = !0,
-    className: i
+    showStars: r = !0,
+    className: s
   } = e;
-  return (0, r.jsxs)("div", {
-    className: l()(o.badgeContainer, i),
-    children: [n && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)("span", {
-        className: l()(o.star, o.starLeft),
-        children: (0, r.jsx)(a.Z, {
+  return (0, n.jsxs)("div", {
+    className: i()(a.badgeContainer, s),
+    children: [r && (0, n.jsxs)(n.Fragment, {
+      children: [(0, n.jsx)("span", {
+        className: i()(a.star, a.starLeft),
+        children: (0, n.jsx)(o.Z, {
           width: "10",
           height: "10"
         })
-      }), (0, r.jsx)("span", {
-        className: l()(o.star, o.starRight),
-        children: (0, r.jsx)(a.Z, {
+      }), (0, n.jsx)("span", {
+        className: i()(a.star, a.starRight),
+        children: (0, n.jsx)(o.Z, {
           width: "14",
           height: "14"
         })
       })]
-    }), (0, r.jsx)(s.Text, {
+    }), (0, n.jsx)(l.Text, {
       variant: "eyebrow",
-      className: o.newBadge,
+      className: a.newBadge,
       children: t
     })]
   })

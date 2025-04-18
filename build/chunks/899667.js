@@ -1,7 +1,7 @@
-/** Chunk was on 93243 **/
+/** Chunk was on 63958 **/
 "use strict";
 r.d(t, {
-  Z: () => g
+  Z: () => Z
 }), r(388685);
 var n, i, s, o = r(442837),
   l = r(570140);
@@ -51,7 +51,7 @@ s = "AppliedGuildBoostStore", (i = "displayName") in b ? Object.defineProperty(b
   configurable: !0,
   writable: !0
 }) : b[i] = s;
-let g = new b(l.Z, {
+let Z = new b(l.Z, {
   GUILD_APPLIED_BOOSTS_FETCH_SUCCESS: function(e) {
     let {
       guildId: t,

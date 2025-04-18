@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: d1bf0489c684dd2a
+  Original File Name: d57648d636f7c698
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -1337,6 +1337,129 @@ html:not(.visual-refresh) .footer__7c901 {
     transform: translateY(-4px)
 }
 
+.circleContainer_c1b44f {
+    overflow: visible;
+    position: relative
+}
+
+.childrenContainer_c1b44f,.circleContainer_c1b44f {
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+.childrenContainer_c1b44f {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.theme-light .baseProgressCircle_c1b44f {
+    stroke: var(--white-500)
+}
+
+.circleSVG_c1b44f {
+    height: 100%;
+    overflow: visible;
+    width: 100%
+}
+
+.nitroGemAnimation__7d30a {
+    animation: gemGlow__7d30a 5s ease-in-out infinite
+}
+
+.nitroGemContainer__7d30a {
+    overflow: visible
+}
+
+.gemBackgroundFill__7d30a {
+    fill: var(--background-primary)
+}
+
+.theme-light .gemBackgroundFill__7d30a {
+    fill: var(--white-500)
+}
+
+.progressCircle__7d30a {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%
+}
+
+.progressCricleBottomMargin__7d30a {
+    margin-bottom: 15px
+}
+
+@keyframes gemGlow__7d30a {
+    0%,50%,to {
+        filter: drop-shadow(0 0 0 hsl(var(--premium-tier-2-pink-for-gradients-2-hsl)/.6))
+    }
+
+    25%,75% {
+        filter: drop-shadow(0 0 20px hsl(var(--premium-tier-2-pink-for-gradients-2-hsl)/.6))
+    }
+}
+
+.activeProgressCircle__7d30a {
+    fill: transparent;
+    transform: rotate(-90deg);
+    transform-origin: center
+}
+
+.activeProgressCircleAnimation__7d30a {
+    animation: glow__7d30a 5s ease-in-out infinite,pulse__7d30a 5s ease-in-out infinite;
+    transition: stroke-dashoffset .5s ease-out
+}
+
+@keyframes glow__7d30a {
+    0%,50%,to {
+        filter: none
+    }
+
+    25%,75% {
+        filter: drop-shadow(0 0 5px var(--premium-tier-2-pink-for-gradients-2))
+    }
+}
+
+@keyframes pulse__7d30a {
+    0%,50%,to {
+        stroke-width: 2
+    }
+
+    25%,75% {
+        stroke-width: 3
+    }
+}
+
+.avatarDecoContainer__7d30a {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    padding: 12%;
+    width: 100%
+}
+
+.avatarDecoContainer__7d30a img:before {
+    background-color: transparent
+}
+
+.avatarDeco__7d30a {
+    align-items: center;
+    background: var(--background-primary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 15%
+}
+
+.avatarDecoImage__7d30a {
+    height: 100%;
+    width: 100%
+}
+
 .left_caab99 {
     transform: rotate(270deg)
 }
@@ -2543,4 +2666,4 @@ html:not(.visual-refresh) .footer__7c901 {
     height: 100px
 }
 
-/*# sourceMappingURL=d1bf0489c684dd2a.css.map*/
+/*# sourceMappingURL=d57648d636f7c698.css.map*/

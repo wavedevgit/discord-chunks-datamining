@@ -1,49 +1,49 @@
 /** Chunk was on 87626 **/
 a.d(t, {
-  h: () => p
+  h: () => N
 });
 var n = a(200651),
-  s = a(192379),
-  r = a(120356),
-  l = a.n(r),
+  r = a(192379),
+  s = a(120356),
+  l = a.n(s),
   i = a(794010),
   o = a(653371),
   c = a(388755),
   d = a(330711),
-  u = a(316202);
+  u = a(419920);
 let _ = null;
-class p extends s.PureComponent {
+class N extends r.PureComponent {
   render() {
     let {
       token: e,
       className: t,
       onChangeLocale: a,
-      mainContentId: r,
+      mainContentId: s,
       mobileClassName: i,
       avoidRouter: d,
-      authRedirectTo: p,
-      openNavAriaLabel: h,
-      hideNavAriaLabel: m,
-      skipToContentLabel: N
+      authRedirectTo: N,
+      openNavAriaLabel: m,
+      hideNavAriaLabel: p,
+      skipToContentLabel: h
     } = this.props;
-    return null == _ ? null : (0, n.jsxs)(s.Fragment, {
+    return null == _ ? null : (0, n.jsxs)(r.Fragment, {
       children: [(0, n.jsx)(o.a, {
         className: l()(u.desktopHeader, t),
         TrackClick: _,
         token: e,
         avoidRouter: d,
-        authRedirectTo: p,
+        authRedirectTo: N,
         onChangeLocale: a,
-        mainContentId: r,
-        skipToContentLabel: N
+        mainContentId: s,
+        skipToContentLabel: h
       }), (0, n.jsx)(c.D, {
         className: l()(u.mobileHeader, i),
         token: e,
         avoidRouter: d,
         TrackClick: _,
         onChangeLocale: a,
-        openNavAriaLabel: h,
-        hideNavAriaLabel: m
+        openNavAriaLabel: m,
+        hideNavAriaLabel: p
       })]
     })
   }

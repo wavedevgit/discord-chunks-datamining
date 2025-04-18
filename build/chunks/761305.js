@@ -1,20 +1,20 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => x
+  Z: () => N
 }), n(35282), n(388685);
 var r, i = n(200651),
   s = n(192379),
-  l = n(593473),
-  o = n(442837),
+  o = n(593473),
+  l = n(442837),
   a = n(544891),
   c = n(108427),
   u = n(601964),
   d = n(896797),
   h = n(129293),
-  p = n(388905),
-  g = n(981631),
-  f = n(388032),
-  m = n(971005);
+  g = n(388905),
+  p = n(981631),
+  m = n(388032),
+  f = n(20493);
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -24,13 +24,13 @@ function _(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-o.ZP.initialize();
-class N extends(r = s.PureComponent) {
+l.ZP.initialize();
+class x extends(r = s.PureComponent) {
   componentDidMount() {
     let e = (0, h.Z)(this.props.location),
-      t = (0, l.parse)(this.props.location.search);
+      t = (0, o.parse)(this.props.location.search);
     a.tn.post({
-      url: g.ANM.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS,
+      url: p.ANM.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS,
       body: {
         token: e,
         pixel_uuid: t.hash,
@@ -55,8 +55,8 @@ class N extends(r = s.PureComponent) {
     })), (0, c.e)("disable_server_highlight_notifications")
   }
   renderBusy() {
-    return (0, i.jsx)(p.ZP, {
-      children: (0, i.jsx)(p.Hh, {})
+    return (0, i.jsx)(g.ZP, {
+      children: (0, i.jsx)(g.Hh, {})
     })
   }
   renderSuccess() {
@@ -66,26 +66,26 @@ class N extends(r = s.PureComponent) {
     } = this.props, {
       guild: n
     } = this.state;
-    return (0, i.jsxs)(p.ZP, {
-      children: [(0, i.jsx)(p.Dx, {
-        className: m.marginBottom8,
-        children: f.NW.string(f.t.Z33eiI)
-      }), (0, i.jsx)(p.DK, {
-        children: f.NW.format(f.t.NRWtfH, {
+    return (0, i.jsxs)(g.ZP, {
+      children: [(0, i.jsx)(g.Dx, {
+        className: f.marginBottom8,
+        children: m.NW.string(m.t.Z33eiI)
+      }), (0, i.jsx)(g.DK, {
+        children: m.NW.format(m.t.NRWtfH, {
           guildName: n.name
         })
-      }), (0, i.jsx)(p.zx, {
-        className: m.marginTop40,
+      }), (0, i.jsx)(g.zx, {
+        className: f.marginTop40,
         onClick: () => t(e),
-        children: f.NW.string(f.t.fIv16O)
-      }), (0, i.jsx)(p.zx, {
-        className: m.marginTop8,
-        color: p.zx.Colors.LINK,
-        look: p.zx.Looks.LINK,
+        children: m.NW.string(m.t.fIv16O)
+      }), (0, i.jsx)(g.zx, {
+        className: f.marginTop8,
+        color: g.zx.Colors.LINK,
+        look: g.zx.Looks.LINK,
         onClick: () => {
-          t(g.Z5c.USER_GUILD_NOTIFICATION_SETTINGS(n.id))
+          t(p.Z5c.USER_GUILD_NOTIFICATION_SETTINGS(n.id))
         },
-        children: f.NW.string(f.t["cGmT/P"])
+        children: m.NW.string(m.t["cGmT/P"])
       })]
     })
   }
@@ -94,19 +94,19 @@ class N extends(r = s.PureComponent) {
       defaultRoute: e,
       transitionTo: t
     } = this.props;
-    return (0, i.jsxs)(p.ZP, {
-      children: [(0, i.jsx)(p.Ee, {
+    return (0, i.jsxs)(g.ZP, {
+      children: [(0, i.jsx)(g.Ee, {
         src: n(105020),
-        className: m.marginBottom20
-      }), (0, i.jsx)(p.Dx, {
-        className: m.marginBottom8,
-        children: f.NW.string(f.t.ox9hIS)
-      }), (0, i.jsx)(p.DK, {
-        children: f.NW.string(f.t["/dcuR0"])
-      }), (0, i.jsx)(p.zx, {
-        className: m.marginTop40,
+        className: f.marginBottom20
+      }), (0, i.jsx)(g.Dx, {
+        className: f.marginBottom8,
+        children: m.NW.string(m.t.ox9hIS)
+      }), (0, i.jsx)(g.DK, {
+        children: m.NW.string(m.t["/dcuR0"])
+      }), (0, i.jsx)(g.zx, {
+        className: f.marginTop40,
         onClick: () => t(e),
-        children: f.NW.string(f.t.fIv16O)
+        children: m.NW.string(m.t.fIv16O)
       })]
     })
   }
@@ -125,9 +125,9 @@ class N extends(r = s.PureComponent) {
     })
   }
 }
-_(N, "defaultProps", {
+_(x, "defaultProps", {
   transitionTo: e => n.g.location.assign(e)
 });
-let x = o.ZP.connectStores([d.Z], () => ({
+let N = l.ZP.connectStores([d.Z], () => ({
   defaultRoute: d.Z.defaultRoute
-}))(N)
+}))(x)

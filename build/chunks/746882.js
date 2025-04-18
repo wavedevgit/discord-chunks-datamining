@@ -1,4 +1,4 @@
-/** Chunk was on 30867 **/
+/** Chunk was on 33312 **/
 n.d(t, {
   default: () => v
 }), n(388685);
@@ -28,7 +28,7 @@ var r = n(200651),
   j = n(723359),
   L = n(981631),
   R = n(388032),
-  T = n(416607);
+  T = n(951408);
 
 function v(e) {
   let {
@@ -95,7 +95,7 @@ function v(e) {
         className: T.container,
         children: [(0, r.jsx)("img", {
           alt: "",
-          src: n(462991),
+          src: n(559325),
           className: T.img
         }), (0, r.jsx)(u.X6q, {
           variant: "heading-xl/semibold",
@@ -146,7 +146,7 @@ function v(e) {
           className: T.container,
           children: [(0, r.jsx)("img", {
             alt: "",
-            src: n(462991),
+            src: n(559325),
             className: T.img
           }), (0, r.jsx)(u.X6q, {
             variant: "heading-xl/semibold",

@@ -1,27 +1,28 @@
-/** Chunk was on 22826 **/
+/** Chunk was on 91245 **/
+"use strict";
 n.d(t, {
-  ZP: () => T,
-  c4: () => S,
-  st: () => C
+  ZP: () => _,
+  c4: () => h,
+  st: () => y
 });
-var i = n(200651),
+var r = n(200651),
   o = n(192379),
-  r = n(120356),
-  a = n.n(r),
-  c = n(931609),
+  a = n(120356),
+  i = n.n(a),
+  s = n(931609),
   l = n(442837),
-  s = n(481060),
-  _ = n(292419),
+  c = n(481060),
+  u = n(292419),
   d = n(282397),
-  u = n(188597),
-  p = n(981631),
-  I = n(388032),
-  f = n(983976);
+  p = n(188597),
+  g = n(981631),
+  m = n(388032),
+  f = n(964732);
 
-function m(e) {
+function b(e) {
   return {
     text: e,
-    icon: (0, i.jsx)(s.bbz, {
+    icon: (0, r.jsx)(c.bbz, {
       className: f.icon,
       dotRadius: 3.5,
       themed: !0
@@ -29,80 +30,80 @@ function m(e) {
   }
 }
 
-function S(e) {
+function h(e) {
   return {
-    text: null != e ? e : I.NW.string(I.t.VCsUJi),
+    text: null != e ? e : m.NW.string(m.t.VCsUJi),
     color: "text-danger",
-    icon: (0, i.jsx)(s.P4T, {
+    icon: (0, r.jsx)(c.P4T, {
       size: "xs",
       color: "currentColor",
-      className: a()(f.icon, f.errorIcon)
+      className: i()(f.icon, f.errorIcon)
     })
   }
 }
 
-function C(e) {
+function y(e) {
   let {
     className: t,
     icon: n,
     text: o,
-    color: r
+    color: a
   } = e;
-  return (0, i.jsxs)("div", {
-    className: a()(f.wrapper, t),
-    children: [n, (0, i.jsx)(s.Text, {
+  return (0, r.jsxs)("div", {
+    className: i()(f.wrapper, t),
+    children: [n, (0, r.jsx)(c.Text, {
       variant: "text-md/normal",
-      color: r,
+      color: a,
       scaleFontToUserSetting: !0,
       children: o
     })]
   })
 }
-let T = o.memo(function(e) {
+let _ = o.memo(function(e) {
   let {
     message: t,
     className: n,
-    component: r
-  } = e, a = (0, c.Z)(), s = (0, l.e7)([d.ZP], () => d.ZP.getInteraction(t), [t]);
+    component: a
+  } = e, i = (0, s.Z)(), c = (0, l.e7)([d.ZP], () => d.ZP.getInteraction(t), [t]);
   o.useEffect(() => {
     let e = null;
-    if (t.hasFlag(p.iLy.LOADING) && null != s) {
-      let n = (0, u.ow)(t.id) - Date.now();
-      n > 0 && (e = setTimeout(() => a(), 1e3 + n))
+    if (t.hasFlag(g.iLy.LOADING) && null != c) {
+      let n = (0, p.ow)(t.id) - Date.now();
+      n > 0 && (e = setTimeout(() => i(), 1e3 + n))
     }
     return () => {
       clearTimeout(e)
     }
-  }, [a, s, t]);
+  }, [i, c, t]);
   let f = null;
-  if (null == r) f = function(e, t) {
-    switch ((0, u.t$)(t, e)) {
-      case u.rQ.SENDING:
-        return m(I.NW.string(I.t.RiLfBQ));
-      case u.rQ.CREATED:
-        return m(I.NW.formatToPlainString(I.t["7ePV4u"], {
+  if (null == a) f = function(e, t) {
+    switch ((0, p.t$)(t, e)) {
+      case p.rQ.SENDING:
+        return b(m.NW.string(m.t.RiLfBQ));
+      case p.rQ.CREATED:
+        return b(m.NW.formatToPlainString(m.t["7ePV4u"], {
           applicationName: t.author.username
         }));
-      case u.rQ.TIMED_OUT:
-        return S(I.NW.string(I.t.h8hzPT));
-      case u.rQ.FAILED:
-        return S(t.interactionError)
+      case p.rQ.TIMED_OUT:
+        return h(m.NW.string(m.t.h8hzPT));
+      case p.rQ.FAILED:
+        return h(t.interactionError)
     }
-  }(s, t);
+  }(c, t);
   else {
-    let e = (0, _.SD)(s, t, r);
-    null != e && (f = S(e))
+    let e = (0, u.SD)(c, t, a);
+    null != e && (f = h(e))
   }
   if (null == f) return null;
   let {
-    text: T,
-    icon: b,
-    color: h
+    text: _,
+    icon: O,
+    color: v
   } = f;
-  return (0, i.jsx)(C, {
-    icon: b,
-    text: T,
+  return (0, r.jsx)(y, {
+    icon: O,
+    text: _,
     className: n,
-    color: h
+    color: v
   })
 })

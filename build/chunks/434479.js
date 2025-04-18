@@ -1,4 +1,4 @@
-/** Chunk was on 48791 **/
+/** Chunk was on 64040 **/
 n.d(t, {
   m: () => f
 });
@@ -9,9 +9,9 @@ var i = n(120356),
   o = n(91192),
   s = n(589440),
   a = n(481060),
-  c = n(298018),
-  u = n(653084),
-  d = n(830082);
+  c = n(440185),
+  u = n(915887),
+  d = n(768107);
 
 function h(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -55,9 +55,9 @@ function f(e) {
       selected: b,
       trailing: y,
       background: _,
-      showUnread: v = !1
+      showUnread: O = !1
     } = e,
-    O = function(e, t) {
+    v = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -73,15 +73,15 @@ function f(e) {
       return i
     }(e, ["id", "className", "innerClassName", "renderIcon", "text", "selected", "trailing", "background", "showUnread"]);
   let C = (0, o.JA)(n),
-    S = null != (t = (0, s.qg)(m)) ? t : "";
+    j = null != (t = (0, s.qg)(m)) ? t : "";
   return (0, r.jsx)("li", {
-    children: (0, r.jsxs)(a.kL8, p(h({}, O), {
+    children: (0, r.jsxs)(a.kL8, p(h({}, v), {
       buttonProps: p(h({}, C), {
         id: n,
         role: "button"
       }),
       tag: "div",
-      "aria-label": S,
+      "aria-label": j,
       focusProps: {
         offset: {
           top: 1,
@@ -89,13 +89,13 @@ function f(e) {
           right: 4
         }
       },
-      onContextMenu: null != O.onContextMenu ? O.onContextMenu : e => {
+      onContextMenu: null != v.onContextMenu ? v.onContextMenu : e => {
         e.stopPropagation()
       },
       className: l()(u.containerDefault, d.wrapper, {
         [d.modeSelected]: b
       }, i),
-      children: [_, v ? (0, r.jsx)("div", {
+      children: [_, O ? (0, r.jsx)("div", {
         className: l()(d.unread, d.unreadImportant)
       }) : null, (0, r.jsx)("div", {
         className: l()([d.link, d.basicChannelRowLink, f]),

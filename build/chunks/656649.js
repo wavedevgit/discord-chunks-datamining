@@ -1,45 +1,45 @@
-/** Chunk was on 67127 **/
-n.d(t, {
-  KJ: () => d,
-  UV: () => u,
-  vJ: () => s
+/** Chunk was on 89515 **/
+o.d(t, {
+  KJ: () => u,
+  UV: () => d,
+  vJ: () => c
 });
-var r = n(200651);
-n(192379);
-var c = n(120356),
-  o = n.n(c),
-  l = n(726542),
-  a = n(981631),
-  i = n(753349);
+var r = o(200651);
+o(192379);
+var n = o(120356),
+  a = o.n(n),
+  s = o(726542),
+  l = o(981631),
+  i = o(64684);
 
-function s(e) {
-  return null != e && Object.values(a.ABu).includes(e) ? e : null
+function c(e) {
+  return null != e && Object.values(l.ABu).includes(e) ? e : null
 }
 
-function u(e) {
+function d(e) {
   let {
     children: t,
-    platformType: n
-  } = e, c = l.Z.get(n);
+    platformType: o
+  } = e, n = s.Z.get(o);
   return (0, r.jsx)("div", {
     className: i.verifyConnectedAccount,
     children: (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(d, {
-        platform: c
+      children: [(0, r.jsx)(u, {
+        platform: n
       }), t]
     })
   })
 }
 
-function d(e) {
+function u(e) {
   let {
     platform: t,
-    className: n
+    className: o
   } = e;
   return (0, r.jsxs)("div", {
-    className: o()(i.logos, n),
+    className: a()(i.logos, o),
     children: [(0, r.jsx)("div", {
-      className: o()(i.logo, i.logoDiscord)
+      className: a()(i.logo, i.logoDiscord)
     }), (0, r.jsx)("div", {
       className: i.logosDivider
     }), (0, r.jsx)("div", {

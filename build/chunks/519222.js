@@ -1,4 +1,5 @@
-/** Chunk was on 91259 **/
+/** Chunk was on 87427 **/
+"use strict";
 e.exports = {
   embedIFrame: "embedIFrame__49997"
 }

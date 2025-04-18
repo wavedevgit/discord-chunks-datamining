@@ -10,8 +10,8 @@ var a = r(120356),
   s = r(481060),
   o = r(810568),
   c = r(388032),
-  u = r(206218),
-  d = r(90403);
+  u = r(263930),
+  d = r(242177);
 let m = [l.p.OFFICIAL, l.p.TWITTER, l.p.YOUTUBE];
 
 function g(e) {

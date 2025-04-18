@@ -1,52 +1,53 @@
-/** Chunk was on 87918 **/
+/** Chunk was on 91245 **/
+"use strict";
 n.d(t, {
-  BK: () => f,
-  mm: () => _,
-  vV: () => s
+  BK: () => p,
+  mm: () => g,
+  vV: () => d
 }), n(997841);
 var r = n(442837),
-  l = n(271383),
-  i = n(430824),
-  o = n(496675),
-  u = n(594174),
-  a = n(630388),
+  o = n(271383),
+  a = n(430824),
+  i = n(496675),
+  s = n(594174),
+  l = n(630388),
   c = n(372897),
-  d = n(981631);
-let s = (e, t) => {
+  u = n(981631);
+let d = (e, t) => {
   var n;
-  let o = (0, r.e7)([l.ZP], () => {
+  let i = (0, r.e7)([o.ZP], () => {
       var n, r;
-      return (0, a.yE)(null != (r = null == (n = l.ZP.getMember(e, t)) ? void 0 : n.flags) ? r : 0, c.q.DID_REJOIN)
+      return (0, l.yE)(null != (r = null == (n = o.ZP.getMember(e, t)) ? void 0 : n.flags) ? r : 0, c.q.DID_REJOIN)
     }),
-    d = (0, r.e7)([i.Z], () => {
+    u = (0, r.e7)([a.Z], () => {
       var t;
-      return null == (t = i.Z.getGuild(e)) ? void 0 : t.isNew()
+      return null == (t = a.Z.getGuild(e)) ? void 0 : t.isNew()
     }),
-    s = (0, r.e7)([u.default], () => {
+    d = (0, r.e7)([s.default], () => {
       var e;
-      return null == (e = u.default.getUser(t)) ? void 0 : e.bot
+      return null == (e = s.default.getUser(t)) ? void 0 : e.bot
     });
   return n = {
     maxDaysOld: 7
   }, (0, r.e7)([], () => (function(e, t, n) {
     let {
       maxDaysOld: r,
-      minDaysOld: o = 0
-    } = t, u = i.Z.getGuild(e), a = null == u ? void 0 : u.joinedAt;
+      minDaysOld: i = 0
+    } = t, s = a.Z.getGuild(e), l = null == s ? void 0 : s.joinedAt;
     if (null != n) {
-      let t = l.ZP.getMember(e, n);
-      a = (null == t ? void 0 : t.joinedAt) == null ? null : new Date(t.joinedAt)
+      let t = o.ZP.getMember(e, n);
+      l = (null == t ? void 0 : t.joinedAt) == null ? null : new Date(t.joinedAt)
     }
-    if (null == a) return !1;
-    let c = Date.now() - a.getTime();
-    return (null == r || c <= 864e5 * r) && c >= 864e5 * o
-  })(e, n, t), [n, e, t]) && !d && !s && !o
+    if (null == l) return !1;
+    let c = Date.now() - l.getTime();
+    return (null == r || c <= 864e5 * r) && c >= 864e5 * i
+  })(e, n, t), [n, e, t]) && !u && !d && !i
 };
 
-function f(e, t) {
-  return null != t && o.Z.canManageUser(d.Plq.KICK_MEMBERS, e, t) && !e.isNonUserBot()
+function p(e, t) {
+  return null != t && i.Z.canManageUser(u.Plq.KICK_MEMBERS, e, t) && !e.isNonUserBot()
 }
 
-function _(e, t) {
-  return null != t && o.Z.canManageUser(d.Plq.BAN_MEMBERS, e, t) && !e.isNonUserBot() && !e.bot
+function g(e, t) {
+  return null != t && i.Z.canManageUser(u.Plq.BAN_MEMBERS, e, t) && !e.isNonUserBot() && !e.bot
 }

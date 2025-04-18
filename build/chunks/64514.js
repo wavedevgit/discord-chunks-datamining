@@ -49,7 +49,7 @@ class h extends l.Z {
       a.default.track(d.rMx.CLIENT_AD_HEARTBEAT, {
         client_ad_session_id: n.uuid,
         client_heartbeat_initialization_timestamp: n.initialized,
-        client_heartbeat_version: 1
+        client_heartbeat_version: 2
       })
     }), p(this, "stopAnalyticHeartbeat", function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "DEFAULT";
@@ -59,7 +59,7 @@ class h extends l.Z {
       a.default.track(d.rMx.CLIENT_AD_HEARTBEAT_TERMINATION, {
         client_ad_session_id: null == n ? void 0 : n.uuid,
         client_heartbeat_initialization_timestamp: null == n ? void 0 : n.initialized,
-        client_heartbeat_version: 1,
+        client_heartbeat_version: 2,
         reason: e
       }), s.Z.addBreadcrumb({
         category: "ad",

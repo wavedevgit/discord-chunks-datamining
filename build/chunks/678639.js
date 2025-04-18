@@ -13,8 +13,8 @@ var a = n(200651),
   u = n(484036),
   m = n(681619),
   x = n(621060),
-  h = n(482479),
-  p = n(556394);
+  h = n(616257),
+  p = n(564799);
 
 function b(e, t) {
   return e.store.getName().localeCompare(t.store.getName())
@@ -47,7 +47,7 @@ let v = [{
       return t.getName()
     }
   }],
-  j = [{
+  g = [{
     id: "local",
     name: "Local Variables",
     group: x.v0.NONE,
@@ -80,7 +80,7 @@ let v = [{
     }
   }];
 
-function g(e) {
+function j(e) {
   let {
     store: t,
     initialHeight: n
@@ -88,7 +88,7 @@ function g(e) {
     TabBar: r,
     renderSelectedTab: l
   } = (0, x.ZP)({
-    tabs: j
+    tabs: g
   }, []);
   return (0, a.jsxs)(u.Z, {
     className: p.subPanel,
@@ -142,7 +142,7 @@ function _() {
       data: c,
       selectedRowKey: d,
       onClickRow: e => u(e.key)
-    }), null != x && (0, a.jsx)(g, {
+    }), null != x && (0, a.jsx)(j, {
       store: x,
       initialHeight: null != e.current ? e.current.clientHeight / 2 : 300
     })]

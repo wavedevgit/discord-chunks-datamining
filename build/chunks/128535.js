@@ -19,7 +19,7 @@ var s = n(120356),
   h = n(918701),
   f = n(667105),
   j = n(388032),
-  b = n(825258);
+  b = n(166246);
 let C = e => 0 === e.length ? b.warning : b.danger,
   N = (e, t) => 0 === e.length ? j.NW.formatToPlainString(j.t.gX0Qc3, {
     gameTitle: t

@@ -1,21 +1,21 @@
-/** Chunk was on 37220 **/
+/** Chunk was on 58593 **/
 n.d(t, {
-  Ad: () => m,
-  Lb: () => c,
-  ZF: () => f,
+  Ad: () => _,
+  Lb: () => l,
+  ZF: () => p,
   gP: () => d,
-  mh: () => g,
+  mh: () => m,
   sF: () => u
 });
-var r = n(192379),
-  i = n(392711),
-  a = n(367907),
-  l = n(592125),
-  o = n(626135),
+var a = n(192379),
+  r = n(392711),
+  o = n(367907),
+  i = n(592125),
+  c = n(626135),
   s = n(981631);
 
-function c(e, t, n) {
-  o.default.track(s.rMx.FORWARD_MESSAGE_STARTED, {
+function l(e, t, n) {
+  c.default.track(s.rMx.FORWARD_MESSAGE_STARTED, {
     channel_id: e,
     message_id: t,
     source: n
@@ -26,14 +26,14 @@ function u(e) {
   let {
     channelId: t,
     messageId: n,
-    numDestinationChanges: r,
-    numQueryChanges: i
+    numDestinationChanges: a,
+    numQueryChanges: r
   } = e;
-  o.default.track(s.rMx.FORWARD_MESSAGE_CANCELLED, {
+  c.default.track(s.rMx.FORWARD_MESSAGE_CANCELLED, {
     channel_id: t,
     message_id: n,
-    num_destination_changes: r,
-    num_query_changes: i
+    num_destination_changes: a,
+    num_query_changes: r
   })
 }
 
@@ -41,52 +41,52 @@ function d(e) {
   let {
     channelId: t,
     messageId: n,
-    hasError: r,
-    hasContextMessage: i,
-    numDestinations: c,
+    hasError: a,
+    hasContextMessage: r,
+    numDestinations: l,
     numDestinationChanges: u,
     numQueryChanges: d,
-    anyDestinationHasSlowmode: f,
-    source: g
+    anyDestinationHasSlowmode: p,
+    source: m
   } = e;
-  if (o.default.track(s.rMx.FORWARD_MESSAGE_SENT, {
+  if (c.default.track(s.rMx.FORWARD_MESSAGE_SENT, {
       channel_id: t,
       message_id: n,
-      has_error: r,
-      has_context_message: i,
-      num_destinations: c,
+      has_error: a,
+      has_context_message: r,
+      num_destinations: l,
       num_destination_changes: u,
       num_query_changes: d,
-      any_destination_has_slowmode: f
-    }), "message-shortcut" === g) {
-    let e = l.Z.getChannel(t);
-    o.default.track(s.rMx.MESSAGE_SHORTCUT_ACTION_SENT, function(e) {
+      any_destination_has_slowmode: p
+    }), "message-shortcut" === m) {
+    let e = i.Z.getChannel(t);
+    c.default.track(s.rMx.MESSAGE_SHORTCUT_ACTION_SENT, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          a = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = n[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
+        }))), a.forEach(function(t) {
+          var a;
+          a = n[t], t in e ? Object.defineProperty(e, t, {
+            value: a,
             enumerable: !0,
             configurable: !0,
             writable: !0
-          }) : e[t] = r
+          }) : e[t] = a
         })
       }
       return e
     }({
       action: "forward",
       original_message_id: n
-    }, (0, a.hH)(null == e ? void 0 : e.guild_id), (0, a.v_)(e)))
+    }, (0, o.hH)(null == e ? void 0 : e.guild_id), (0, o.v_)(e)))
   }
 }
 
-function f() {
-  return r.useMemo(() => (0, i.once)((e, t, n) => {
-    o.default.track(s.rMx.FORWARD_ADD_RECIPIENT, {
+function p() {
+  return a.useMemo(() => (0, r.once)((e, t, n) => {
+    c.default.track(s.rMx.FORWARD_ADD_RECIPIENT, {
       channel_id: e,
       message_id: t,
       has_query: n
@@ -94,18 +94,18 @@ function f() {
   }), [])
 }
 
-function g() {
-  return r.useMemo(() => (0, i.once)((e, t) => {
-    o.default.track(s.rMx.FORWARD_EDIT_SEARCH, {
+function m() {
+  return a.useMemo(() => (0, r.once)((e, t) => {
+    c.default.track(s.rMx.FORWARD_EDIT_SEARCH, {
       channel_id: e,
       message_id: t
     })
   }), [])
 }
 
-function m() {
-  return r.useMemo(() => (0, i.once)((e, t) => {
-    o.default.track(s.rMx.FORWARD_EDIT_CONTEXT_MESSAGE, {
+function _() {
+  return a.useMemo(() => (0, r.once)((e, t) => {
+    c.default.track(s.rMx.FORWARD_EDIT_CONTEXT_MESSAGE, {
       channel_id: e,
       message_id: t
     })

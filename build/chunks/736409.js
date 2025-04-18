@@ -1,6 +1,6 @@
-/** Chunk was on 48791 **/
+/** Chunk was on 64040 **/
 n.d(t, {
-  j: () => v
+  j: () => O
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -19,12 +19,12 @@ var r = n(200651),
   b = n(981631),
   y = n(921944),
   _ = n(46140);
-let v = e => {
+let O = e => {
   let {
     children: t,
     isForceShowSharingPopout: n,
-    setIsForceShowSharingPopout: v
-  } = e, [O, C] = (0, i.useState)(!1), S = function(e) {
+    setIsForceShowSharingPopout: O
+  } = e, [v, C] = (0, i.useState)(!1), j = function(e) {
     let {
       isForceShowSharingPopout: t
     } = e, {
@@ -42,12 +42,12 @@ let v = e => {
     return c && n && !o ? t ? m.N.Activity : m.N.ActivityNux : null
   }({
     isForceShowSharingPopout: n
-  }), j = (0, i.useRef)(null);
+  }), S = (0, i.useRef)(null);
   return ((0, i.useEffect)(() => {
     n && f.default.track(b.rMx.OPEN_POPOUT, {
       type: "SharingPrivacyPopout"
     })
-  }, [n]), null != S || O) ? (0, r.jsx)(c.ZP, {
+  }, [n]), null != j || v) ? (0, r.jsx)(c.ZP, {
     contentTypes: n ? [] : [o.z.SHARE_ACTIVITY_COACHMARK_V2],
     children: e => {
       let {
@@ -57,10 +57,10 @@ let v = e => {
         let e = () => {
           (0, a.EW)(o.z.SHARE_ACTIVITY_COACHMARK_V2, {
             dismissAction: y.L.USER_DISMISS
-          }), v(!1), C(!1)
+          }), O(!1), C(!1)
         };
         return (0, r.jsx)(s.yRy, {
-          targetElementRef: j,
+          targetElementRef: S,
           shouldShow: !0,
           spacing: -2,
           position: "top",
@@ -73,11 +73,11 @@ let v = e => {
             return (0, r.jsx)(m.I, {
               closePopout: t,
               onOpen: () => C(!0),
-              popoutState: S
+              popoutState: j
             })
           },
           children: () => (0, r.jsx)(s.P3F, {
-            innerRef: j,
+            innerRef: S,
             onClick: e,
             children: t
           })

@@ -1,8 +1,8 @@
-/** Chunk was on 93243 **/
+/** Chunk was on 63958 **/
 "use strict";
 r.d(t, {
-  $H: () => g,
-  GN: () => Z
+  $H: () => Z,
+  GN: () => M
 });
 var n = r(200651),
   i = r(192379),
@@ -16,7 +16,7 @@ var n = r(200651),
   u = r(639119),
   f = r(474936),
   p = r(388032),
-  d = r(217750);
+  d = r(952849);
 
 function b(e) {
   let {
@@ -78,7 +78,7 @@ function b(e) {
   })
 }
 
-function g(e) {
+function Z(e) {
   var t, r;
   let {
     isTabSelected: i,
@@ -87,7 +87,7 @@ function g(e) {
     intervalType: null == o ? void 0 : o.interval,
     intervalCount: null == o ? void 0 : o.interval_count
   });
-  return (0, n.jsx)(j, {
+  return (0, n.jsx)(g, {
     isTabSelected: i,
     badgeCopy: a,
     offerExpiresAt: s.expires_at,
@@ -95,7 +95,7 @@ function g(e) {
   })
 }
 
-function Z(e) {
+function M(e) {
   let {
     isTabSelected: t,
     userDiscount: r,
@@ -103,7 +103,7 @@ function Z(e) {
   } = e, s = p.NW.formatToPlainString(p.t.iiLbvr, {
     percent: r.discount.amount
   }), o = (0, v.xP)("OfferTabBadge");
-  return (0, n.jsx)(j, {
+  return (0, n.jsx)(g, {
     isTabSelected: t,
     badgeCopy: i ? s : p.NW.string(p.t["/DTtr6"]),
     offerExpiresAt: r.expires_at,
@@ -111,7 +111,7 @@ function Z(e) {
   })
 }
 
-function j(e) {
+function g(e) {
   let {
     isTabSelected: t,
     badgeCopy: r,

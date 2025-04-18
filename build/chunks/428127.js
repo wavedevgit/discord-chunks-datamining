@@ -1,4 +1,4 @@
-/** Chunk was on 48791 **/
+/** Chunk was on 64040 **/
 n.d(t, {
   Z: () => _
 });
@@ -15,7 +15,7 @@ var r = n(200651),
   p = n(934415),
   f = n(968847),
   g = n(388032),
-  m = n(344913);
+  m = n(762039);
 let b = {
   friction: 30,
   tension: 300
@@ -70,18 +70,18 @@ function _(e) {
   } = e, {
     bottomBar: p,
     topBar: _
-  } = (0, a.cj)([f.Z], () => f.Z.getUnreadStateForGuildId(n.id)), v = (0, a.e7)([h.Z], () => h.Z.isFocused()), {
-    mode: O,
+  } = (0, a.cj)([f.Z], () => f.Z.getUnreadStateForGuildId(n.id)), O = (0, a.e7)([h.Z], () => h.Z.isFocused()), {
+    mode: v,
     mentionCount: C,
-    targetChannelId: S
-  } = "bottom" === t ? p : _, j = O === f.x.HIDDEN, E = (0, c.q_F)({
+    targetChannelId: j
+  } = "bottom" === t ? p : _, S = v === f.x.HIDDEN, x = (0, c.q_F)({
     to: {
-      transform: j ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
+      transform: S ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
     },
     config: b
-  }, v ? "respect-motion-settings" : "animate-never"), x = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), null != S && d(S)
-  }, [d, S]);
+  }, O ? "respect-motion-settings" : "animate-never"), E = i.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), null != j && d(j)
+  }, [d, j]);
   return (0, r.jsx)("div", {
     className: o()(m.container, {
       [m.top]: "top" === t,
@@ -89,13 +89,13 @@ function _(e) {
     }),
     children: (0, r.jsx)(s.animated.div, {
       className: m.containerPadding,
-      style: E,
-      "aria-hidden": j,
-      children: O === f.x.HIDDEN ? (0, r.jsx)("div", {
+      style: x,
+      "aria-hidden": S,
+      children: v === f.x.HIDDEN ? (0, r.jsx)("div", {
         className: o()(m.bar, m.emptyBar)
-      }) : O === f.x.UNREAD ? (0, r.jsxs)(c.P3F, {
+      }) : v === f.x.UNREAD ? (0, r.jsxs)(c.P3F, {
         className: m.bar,
-        onClick: x,
+        onClick: E,
         children: ["bottom" === t ? (0, r.jsx)(c.CJ0, {
           size: "custom",
           color: "currentColor",
@@ -114,9 +114,9 @@ function _(e) {
           className: m.barText,
           children: g.NW.string(g.t.FCRiT0)
         })]
-      }) : O === f.x.MENTIONS ? (0, r.jsx)(c.P3F, {
+      }) : v === f.x.MENTIONS ? (0, r.jsx)(c.P3F, {
         className: o()(m.bar, m.mentionsBar),
-        onClick: x,
+        onClick: E,
         children: (0, r.jsx)(c.Text, {
           variant: "text-xs/semibold",
           color: "status-danger-text",
@@ -125,7 +125,7 @@ function _(e) {
             count: C
           })
         })
-      }) : O === f.x.VOICE_CHANNELS ? (0, r.jsx)(y, {
+      }) : v === f.x.VOICE_CHANNELS ? (0, r.jsx)(y, {
         jumpToVoiceChannels: u,
         guildChannels: n,
         guildChannelsVersion: l

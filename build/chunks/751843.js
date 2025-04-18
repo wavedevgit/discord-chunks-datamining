@@ -1,4 +1,4 @@
-/** Chunk was on 73344 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => p
 });
@@ -8,7 +8,7 @@ var l = n(120356),
   o = n.n(l),
   a = n(481060),
   s = n(871499),
-  c = n(887e3),
+  c = n(572511),
   u = ((r = u || {})[r.UP = 0] = "UP", r[r.DOWN = 1] = "DOWN", r);
 
 function d(e) {

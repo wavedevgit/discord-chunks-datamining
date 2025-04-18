@@ -1,6 +1,6 @@
-/** Chunk was on 48791 **/
+/** Chunk was on 64040 **/
 n.d(t, {
-  Z: () => S
+  Z: () => j
 }), n(388685), n(642613), n(583741);
 var r = n(200651),
   i = n(192379),
@@ -19,11 +19,11 @@ var r = n(200651),
   b = n(768581),
   y = n(709054),
   _ = n(981631),
-  v = n(124368),
-  O = n(388032),
-  C = n(284998);
+  O = n(124368),
+  v = n(388032),
+  C = n(571658);
 
-function S(e) {
+function j(e) {
   let {
     channel: t
   } = e, l = (0, s.Wu)([d.Z, g.ZP, f.Z], () => {
@@ -42,8 +42,8 @@ function S(e) {
       className: C.title,
       variant: "text-xs/bold",
       color: "header-secondary",
-      children: t.isForumLikeChannel() ? O.NW.string(O.t.ioVdOz) : O.NW.string(O.t.VNYs2t)
-    }), l.slice(0, t.isForumLikeChannel() ? l.length : c).map(e => (0, r.jsx)(j, {
+      children: t.isForumLikeChannel() ? v.NW.string(v.t.ioVdOz) : v.NW.string(v.t.VNYs2t)
+    }), l.slice(0, t.isForumLikeChannel() ? l.length : c).map(e => (0, r.jsx)(S, {
       thread: e
     }, e.id)).filter(e => i.isValidElement(e)).slice(0, c), (0, r.jsx)(a.P3F, {
       className: C.more,
@@ -77,20 +77,20 @@ function S(e) {
       children: (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "none",
-        children: O.NW.string(O.t["4qdZ9/"])
+        children: v.NW.string(v.t["4qdZ9/"])
       })
     })]
   })
 }
 
-function j(e) {
+function S(e) {
   let {
     thread: t
   } = e, n = (0, s.e7)([m.default], () => m.default.getUser(t.ownerId)), i = (0, h.Ok)(t);
   return (0, r.jsxs)(a.P3F, {
     className: C.row,
     onClick: e => {
-      (0, p.ok)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, v.on.POPOUT)
+      (0, p.ok)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, O.on.POPOUT)
     },
     children: [null == n ? (0, r.jsx)("img", {
       className: C.avatar,

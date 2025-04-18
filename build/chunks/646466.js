@@ -12,7 +12,7 @@ var a = n(200651),
   d = n(18868),
   u = n(281598),
   m = n(206878),
-  x = n(232202);
+  x = n(63874);
 
 function h(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -58,7 +58,7 @@ let p = [{
       onCloseRequest: () => (0, l.Mr3)(o.g)
     })
   },
-  j = () => {
+  g = () => {
     (0, l.nfh)(o.c) ? (0, l.Mr3)(o.c) : (0, l.ZDy)(async () => {
       let {
         ShopPFXPreviewInstructionModal: e
@@ -69,7 +69,7 @@ let p = [{
       onCloseRequest: () => (0, l.Mr3)(o.c)
     })
   },
-  g = () => {
+  j = () => {
     let e = (0, s.lb)(),
       {
         previewProfileEffectId: t,
@@ -91,7 +91,7 @@ let p = [{
         }), (0, a.jsx)(l.zxk, {
           look: l.zxk.Looks.BLANK,
           size: l.zxk.Sizes.SMALL,
-          onClick: j,
+          onClick: g,
           className: x.instructionsButton,
           children: (0, a.jsx)(l.idN, {
             color: l.TVs.colors.BG_BRAND
@@ -338,7 +338,7 @@ let p = [{
             color: l.TVs.colors.BG_BRAND
           })
         })]
-      }), (0, a.jsx)(g, {}), (0, a.jsx)(_, {}), (0, a.jsx)(y, {
+      }), (0, a.jsx)(j, {}), (0, a.jsx)(_, {}), (0, a.jsx)(y, {
         clearAssets: s,
         clearIgnoredFiles: o
       }), (0, a.jsx)(C, {

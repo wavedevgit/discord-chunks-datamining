@@ -1,40 +1,40 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => x
+  Z: () => N
 }), n(388685);
 var r = n(200651),
   i = n(192379),
   s = n(442837),
-  l = n(481060),
-  o = n(893776),
+  o = n(481060),
+  l = n(893776),
   a = n(232567),
   c = n(129293),
   u = n(388905),
   d = n(353926),
   h = n(185625),
-  p = n(551549),
-  g = n(108427),
-  f = n(314897),
-  m = n(981631),
+  g = n(551549),
+  p = n(108427),
+  m = n(314897),
+  f = n(981631),
   _ = n(388032),
-  N = n(971005);
+  x = n(20493);
 s.ZP.initialize();
-let x = e => {
+let N = e => {
   let {
     location: t
-  } = e, n = (0, s.e7)([f.default], () => f.default.isAuthenticated()), x = (0, s.e7)([d.Z], () => d.Z.hasLoadedExperiments), b = (0, p.oK)("RSL - Landing Page"), [E, v] = i.useState(!1), [j, I] = i.useState(_.NW.string(_.t["9exy+f"])), [O, S] = i.useState(!0), y = e => {
+  } = e, n = (0, s.e7)([m.default], () => m.default.isAuthenticated()), N = (0, s.e7)([d.Z], () => d.Z.hasLoadedExperiments), b = (0, g.oK)("RSL - Landing Page"), [E, v] = i.useState(!1), [j, I] = i.useState(_.NW.string(_.t["9exy+f"])), [O, S] = i.useState(!0), y = e => {
     switch (e) {
-      case m.evJ.INVALID_FORM_BODY:
-      case m.evJ.DSA_RSL_REPORT_NOT_FOUND:
+      case f.evJ.INVALID_FORM_BODY:
+      case f.evJ.DSA_RSL_REPORT_NOT_FOUND:
         I(_.NW.string(_.t.bzXDfX));
         break;
-      case m.evJ.DSA_RSL_ALREADY_REQUESTED:
+      case f.evJ.DSA_RSL_ALREADY_REQUESTED:
         I(_.NW.string(_.t.rV00ws));
         break;
-      case m.evJ.DSA_RSL_LIMITED_TIME:
+      case f.evJ.DSA_RSL_LIMITED_TIME:
         I(_.NW.string(_.t["0dI29v"]));
         break;
-      case m.evJ.DSA_RSL_REPORT_INELIGIBLE:
+      case f.evJ.DSA_RSL_REPORT_INELIGIBLE:
         I(_.NW.string(_.t["RGa/GR"]));
         break;
       default:
@@ -46,8 +46,8 @@ let x = e => {
       withAnalyticsToken: !0
     }).then(() => S(!1)).catch(() => S(!1))) : S(!1)
   }, [n]), i.useEffect(() => {
-    x || b || o.Z.getExperiments()
-  }, [x, b]), i.useEffect(() => {
+    N || b || l.Z.getExperiments()
+  }, [N, b]), i.useEffect(() => {
     let e = async e => {
       var t, n;
       try {
@@ -59,11 +59,11 @@ let x = e => {
         v(!1)
       }
     };
-    v(!0), e((0, c.Z)(t)), (0, g.e)("report_second_look")
+    v(!0), e((0, c.Z)(t)), (0, p.e)("report_second_look")
   }, [t]), b && !O && (0, r.jsxs)(u.ZP, {
     children: [(0, r.jsx)(u.Dx, {
-      className: N.marginBottom8,
+      className: x.marginBottom8,
       children: j
-    }), E && (0, r.jsx)(l.$jN, {})]
+    }), E && (0, r.jsx)(o.$jN, {})]
   })
 }

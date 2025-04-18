@@ -1,59 +1,59 @@
-/** Chunk was on 56422 **/
-n.d(t, {
-  g: () => b,
-  mI: () => m
-}), n(388685);
-var r = n(149765),
-  i = n(399606),
-  l = n(581883),
-  s = n(430824),
-  a = n(496675),
-  o = n(914010),
-  c = n(594174),
-  u = n(700785),
-  d = n(709054),
-  g = n(533244),
-  p = n(487419),
-  f = n(676770);
+/** Chunk was on 76346 **/
+r.d(t, {
+  g: () => C,
+  mI: () => y
+}), r(388685);
+var n = r(149765),
+  s = r(399606),
+  i = r(581883),
+  l = r(430824),
+  o = r(496675),
+  a = r(914010),
+  c = r(594174),
+  u = r(700785),
+  d = r(709054),
+  p = r(533244),
+  f = r(487419),
+  g = r(676770);
 
-function m(e) {
-  let t = (0, i.e7)([s.Z, a.Z], () => {
-      let t = s.Z.getGuild(e);
+function y(e) {
+  let t = (0, s.e7)([l.Z, o.Z], () => {
+      let t = l.Z.getGuild(e);
       if (null == t) return !1;
-      let n = a.Z.getGuildPermissions(t);
-      return null != n && r.Db(n, f.cv)
+      let r = o.Z.getGuildPermissions(t);
+      return null != r && n.Db(r, g.cv)
     }),
-    n = (0, i.e7)([p.Z], () => null != e ? p.Z.getGuildIncident(e) : null),
-    l = null != n && (0, g.ur)(n);
+    r = (0, s.e7)([f.Z], () => null != e ? f.Z.getGuildIncident(e) : null),
+    i = null != r && (0, p.ur)(r);
   return {
     shouldShowIncidentActions: t,
-    incidentData: n,
-    isUnderLockdown: l
+    incidentData: r,
+    isUnderLockdown: i
   }
 }
 
-function b() {
+function C() {
   var e;
   let t = function(e) {
       let t = c.default.getCurrentUser(),
-        n = p.Z.getIncidentsByGuild();
-      for (let i of d.default.keys(n).map(e => s.Z.getGuild(e))) {
-        if (null == i) continue;
-        let l = n[i.id];
-        if (!(null == l || !(0, g.i9)(l) && !(0, g.ur)(l) || (0, g.ur)(l) && i.id !== e) && r.Db(u.uB({
+        r = f.Z.getIncidentsByGuild();
+      for (let s of d.default.keys(r).map(e => l.Z.getGuild(e))) {
+        if (null == s) continue;
+        let i = r[s.id];
+        if (!(null == i || !(0, p.i9)(i) && !(0, p.ur)(i) || (0, p.ur)(i) && s.id !== e) && n.Db(u.uB({
             user: t,
-            context: i,
+            context: s,
             checkElevated: !1
-          }), f.cv)) return i.id
+          }), g.cv)) return s.id
       }
       return null
-    }(o.Z.getGuildId()),
-    n = null != (e = l.Z.getGuildsProto()) ? e : {},
-    i = null != t ? n[t] : null,
-    a = null != i && i.disableRaidAlertNag;
+    }(a.Z.getGuildId()),
+    r = null != (e = i.Z.getGuildsProto()) ? e : {},
+    s = null != t ? r[t] : null,
+    o = null != s && s.disableRaidAlertNag;
   return {
-    show: null != t && !a,
+    show: null != t && !o,
     guildId: t
   }
 }
-n(981631)
+r(981631)

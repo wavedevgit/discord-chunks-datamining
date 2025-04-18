@@ -52,7 +52,7 @@ function d(e) {
   a.Z.open(e, o.pNK.SOUNDBOARD), (0, i.ZDy)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("56035"), n.e("42564")]).then(n.bind(n, 758961));
+    } = await Promise.all([n.e("56035"), n.e("34057")]).then(n.bind(n, 758961));
     return n => (0, r.jsx)(t, u(l({}, n), {
       guildId: e
     }))

@@ -1,6 +1,6 @@
-/** Chunk was on 48791 **/
+/** Chunk was on 64040 **/
 n.d(t, {
-  Z: () => S
+  Z: () => j
 });
 var r = n(200651);
 n(192379);
@@ -20,9 +20,9 @@ var i = n(399606),
   b = n(39604),
   y = n(981631),
   _ = n(388032),
-  v = n(517059);
+  O = n(856587);
 
-function O(e) {
+function v(e) {
   (0, s.jW)(e, async () => {
     let {
       default: e
@@ -66,29 +66,29 @@ let C = e => {
           dismissibleContent: l.z.CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK,
           shouldUseHorizontalButtons: !0,
           inlineArt: !0,
-          artClassName: v.clipsEducationArt,
+          artClassName: O.clipsEducationArt,
           position: "top",
           header: (0, r.jsx)("div", {
-            className: v.header,
+            className: O.header,
             children: _.NW.format(_.t["o+srEx"], {
               keybind: t,
               keybindHook: () => (0, r.jsx)("span", {
-                className: v.keybindHintKeys,
+                className: O.keybindHintKeys,
                 children: (0, r.jsx)(o.M2$, {
-                  className: v.keybindShortcut,
+                  className: O.keybindShortcut,
                   shortcut: t
                 })
               })
             })
           }),
-          headerClassName: v.clipsEducationHeader,
+          headerClassName: O.clipsEducationHeader,
           body: (0, r.jsx)(o.Text, {
             variant: "text-sm/normal",
             color: "always-white",
-            className: v.bodyText,
+            className: O.bodyText,
             children: _.NW.format(_.t.DWeRm5, {
               keybindHook: () => (0, r.jsx)("div", {
-                className: v.keyCombo,
+                className: O.keyCombo,
                 children: t
               }),
               keybind: t
@@ -102,7 +102,7 @@ let C = e => {
       children: () => n
     })
   },
-  S = () => {
+  j = () => {
     let {
       parentAnalyticsLocation: e
     } = (0, a.ZP)(), t = (0, i.e7)([h.Z], () => h.Z.hasLayers()), n = (0, g.Go)(), {
@@ -113,9 +113,9 @@ let C = e => {
       isAtMaxSavingClipsOperations: m.Z.getIsAtMaxSaveClipOperations()
     })), u = (0, i.e7)([p.ZP], () => p.ZP.getKeybindForAction(y.kg4.SAVE_CLIP));
     if (!(n && l) || null == u || t) return null;
-    let v = f.BB(u.shortcut, !0);
+    let O = f.BB(u.shortcut, !0);
     return (0, r.jsx)(C, {
-      keybindString: v,
+      keybindString: O,
       children: (0, r.jsx)(d.Z, {
         disabled: s,
         tooltipText: null != u ? _.NW.formatToPlainString(_.t.HIMcv7, {
@@ -124,7 +124,7 @@ let C = e => {
         onClick: () => {
           (0, b.C1)(), (0, c.v)(e, c.d.CLIP)
         },
-        onContextMenu: O,
+        onContextMenu: v,
         icon: o.AlX
       })
     })

@@ -1,4 +1,4 @@
-/** Chunk was on 48791 **/
+/** Chunk was on 64040 **/
 n.d(t, {
   CN: () => P,
   ZP: () => L,
@@ -22,14 +22,14 @@ var r, i = n(200651),
   b = n(131704),
   y = n(199902),
   _ = n(430824),
-  v = n(496675),
-  O = n(914010),
+  O = n(496675),
+  v = n(914010),
   C = n(281029),
-  S = n(981631),
-  j = n(388032),
-  E = n(653084);
+  j = n(981631),
+  S = n(388032),
+  x = n(915887);
 
-function x(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -45,7 +45,7 @@ function I(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      E(e, t, n[t])
     })
   }
   return e
@@ -69,7 +69,7 @@ function P(e, t, n) {
 }
 
 function w(e, t) {
-  return null == t ? E.containerDefault : e > t ? E.containerDragAfter : E.containerDragBefore
+  return null == t ? x.containerDefault : e > t ? x.containerDragAfter : x.containerDragBefore
 }
 
 function Z(e) {
@@ -80,7 +80,7 @@ function Z(e) {
     onContextMenu: l
   } = e;
   return (0, i.jsx)(c.ua7, {
-    text: j.NW.string(j.t.OBr7Cw),
+    text: S.NW.string(S.t.OBr7Cw),
     children: e => {
       let {
         onMouseEnter: o,
@@ -89,10 +89,10 @@ function Z(e) {
         onBlur: d
       } = e;
       return (0, i.jsx)(c.P3F, {
-        className: s()(E.iconItem, n ? E.alwaysShown : void 0, r ? E.iconWithChannelInfo : E.iconNoChannelInfo),
+        className: s()(x.iconItem, n ? x.alwaysShown : void 0, r ? x.iconWithChannelInfo : x.iconNoChannelInfo),
         onClick: l,
         tabIndex: t,
-        "aria-label": j.NW.string(j.t.OBr7Cw),
+        "aria-label": S.NW.string(S.t.OBr7Cw),
         onMouseEnter: o,
         onMouseLeave: a,
         onFocus: u,
@@ -100,7 +100,7 @@ function Z(e) {
         children: (0, i.jsx)(c.Huf, {
           size: "xs",
           color: "currentColor",
-          className: E.actionIcon
+          className: x.actionIcon
         })
       })
     }
@@ -115,13 +115,13 @@ function T(e) {
     forceShowButtons: l,
     hasChannelInfo: o = !1
   } = e;
-  if ((0, a.e7)([v.Z, O.Z], () => n || O.Z.getGuildId() === S.I_8 || !v.Z.can(S.Plq.MANAGE_CHANNELS, t) && !v.Z.can(S.Plq.MANAGE_ROLES, t) && !v.Z.can(S.Plq.MANAGE_WEBHOOKS, t) || (0, b.r8)(t.type) && !v.Z.can(S.Plq.VIEW_CHANNEL, t) || t.isGuildVocal() && !v.Z.can(S.Plq.CONNECT, t) || !b.dF.has(t.type))) return null;
+  if ((0, a.e7)([O.Z, v.Z], () => n || v.Z.getGuildId() === j.I_8 || !O.Z.can(j.Plq.MANAGE_CHANNELS, t) && !O.Z.can(j.Plq.MANAGE_ROLES, t) && !O.Z.can(j.Plq.MANAGE_WEBHOOKS, t) || (0, b.r8)(t.type) && !O.Z.can(j.Plq.VIEW_CHANNEL, t) || t.isGuildVocal() && !O.Z.can(j.Plq.CONNECT, t) || !b.dF.has(t.type))) return null;
 
   function d() {
     u.ZP.open(t.id)
   }
   return (0, i.jsx)(c.ua7, {
-    text: j.NW.string(j.t["3gUsJS"]),
+    text: S.NW.string(S.t["3gUsJS"]),
     children: e => {
       let {
         onMouseEnter: t,
@@ -130,10 +130,10 @@ function T(e) {
         onBlur: u
       } = e;
       return (0, i.jsx)(c.P3F, {
-        className: s()(E.iconItem, l ? E.alwaysShown : void 0, o ? E.iconWithChannelInfo : E.iconNoChannelInfo),
+        className: s()(x.iconItem, l ? x.alwaysShown : void 0, o ? x.iconWithChannelInfo : x.iconNoChannelInfo),
         onClick: d,
         tabIndex: r,
-        "aria-label": j.NW.string(j.t["3gUsJS"]),
+        "aria-label": S.NW.string(S.t["3gUsJS"]),
         onMouseEnter: t,
         onMouseLeave: n,
         onFocus: a,
@@ -141,7 +141,7 @@ function T(e) {
         children: (0, i.jsx)(c.ewm, {
           size: "xs",
           color: "currentColor",
-          className: E.actionIcon
+          className: x.actionIcon
         })
       })
     }
@@ -157,33 +157,33 @@ function A(e) {
     forceShowButtons: f,
     hasChannelInfo: b = !1
   } = e, {
-    entrypoints: O
+    entrypoints: v
   } = (0, h._k)({
     location: "channel_base"
-  }), C = (0, a.e7)([_.Z], () => _.Z.getGuild(t.getGuildId())), x = (0, a.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), P = (0, a.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), w = (0, a.e7)([v.Z], () => (0, p.b)(v.Z, C, t, x)), Z = (0, a.e7)([v.Z], () => v.Z.can(S.Plq.CREATE_INSTANT_INVITE, t) ? j.NW.string(j.t.zJrgTE) : j.NW.string(j.t.Sd8Ix8)), T = O ? j.NW.string(j.t["EE+P0N"]) : Z, A = l.useRef(null);
+  }), C = (0, a.e7)([_.Z], () => _.Z.getGuild(t.getGuildId())), E = (0, a.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), P = (0, a.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), w = (0, a.e7)([O.Z], () => (0, p.b)(O.Z, C, t, E)), Z = (0, a.e7)([O.Z], () => O.Z.can(j.Plq.CREATE_INSTANT_INVITE, t) ? S.NW.string(S.t.zJrgTE) : S.NW.string(S.t.Sd8Ix8)), T = v ? S.NW.string(S.t["EE+P0N"]) : Z, A = l.useRef(null);
   if (o || !w) return null;
 
   function R() {
     if (null != C) {
-      let e = y.Z.getAllActiveStreams().filter(e => e.state !== S.jm8.ENDED && e.channelId === t.id);
+      let e = y.Z.getAllActiveStreams().filter(e => e.state !== j.jm8.ENDED && e.channelId === t.id);
       (0, c.ZDy)(async () => {
         let {
           default: r
-        } = await Promise.all([n.e("7654"), n.e("99060")]).then(n.bind(n, 560114));
+        } = await Promise.all([n.e("7654"), n.e("17439")]).then(n.bind(n, 560114));
         return n => (0, i.jsx)(r, N(I({}, n), {
           guild: C,
           channel: t,
           streamUserId: 1 === e.length ? e[0].ownerId : null,
-          source: S.t4x.GUILD_CHANNELS,
+          source: j.t4x.GUILD_CHANNELS,
           guildScheduledEvent: P
         }))
       })
     }
   }
-  let D = O ? c.oLu : c.ejJ,
+  let D = v ? c.oLu : c.ejJ,
     L = (0, i.jsx)(D, {
       size: "xs",
-      className: E.actionIcon,
+      className: x.actionIcon,
       "aria-hidden": !0,
       color: "currentColor"
     });
@@ -198,7 +198,7 @@ function A(e) {
   })), (0, i.jsx)(c.ua7, {
     text: T,
     children: e => (0, i.jsx)(c.P3F, N(I({
-      className: s()(E.iconItem, f ? E.alwaysShown : void 0, b ? E.iconWithChannelInfo : E.iconNoChannelInfo)
+      className: s()(x.iconItem, f ? x.alwaysShown : void 0, b ? x.iconWithChannelInfo : x.iconNoChannelInfo)
     }, e), {
       onClick: R,
       tabIndex: u,
@@ -215,16 +215,16 @@ function R(e) {
     (0, f._U)(t.guild_id, t.id)
   };
   return (0, i.jsx)(c.ua7, {
-    text: j.NW.string(j.t.ROh4T0),
+    text: S.NW.string(S.t.ROh4T0),
     children: e => (0, i.jsx)(c.P3F, N(I({
-      className: E.iconItem
+      className: x.iconItem
     }, e), {
       onClick: n,
-      "aria-label": j.NW.string(j.t.ROh4T0),
+      "aria-label": S.NW.string(S.t.ROh4T0),
       children: (0, i.jsx)(c.Dio, {
         size: "xs",
         color: "currentColor",
-        className: E.actionIcon
+        className: x.actionIcon
       })
     }))
   })
@@ -235,20 +235,20 @@ function D(e) {
     channel: t
   } = e, n = () => {
     (0, f.dM)(t.guild_id, t.id, !0, {
-      section: S.jXE.CHANNEL_LIST
+      section: j.jXE.CHANNEL_LIST
     })
   };
   return (0, i.jsx)(c.ua7, {
-    text: j.NW.string(j.t["N2c/Ul"]),
+    text: S.NW.string(S.t["N2c/Ul"]),
     children: e => (0, i.jsx)(c.P3F, N(I({
-      className: E.iconItem
+      className: x.iconItem
     }, e), {
       onClick: n,
-      "aria-label": j.NW.string(j.t["N2c/Ul"]),
+      "aria-label": S.NW.string(S.t["N2c/Ul"]),
       children: (0, i.jsx)(c.dz2, {
         size: "xs",
         color: "currentColor",
-        className: E.actionIcon
+        className: x.actionIcon
       })
     }))
   })
@@ -290,6 +290,6 @@ class L extends(r = l.PureComponent) {
     return P(e, t, n)
   }
 }
-x(L, "defaultProps", {
+E(L, "defaultProps", {
   isDefaultChannel: !1
 })

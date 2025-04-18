@@ -1,8 +1,8 @@
-/** Chunk was on 48791 **/
+/** Chunk was on 64040 **/
 n.d(t, {
   EM: () => y,
   WW: () => _,
-  ZP: () => v
+  ZP: () => O
 });
 var r = n(200651),
   i = n(192379),
@@ -17,7 +17,7 @@ var r = n(200651),
   p = n(327530),
   f = n(981631),
   g = n(388032),
-  m = n(503668);
+  m = n(789123);
 
 function b(e) {
   return e ? 9 : p.QP
@@ -57,42 +57,42 @@ function _(e, t) {
     }
   }
 }
-let v = i.memo(function(e) {
+let O = i.memo(function(e) {
   let {
     sectionIndex: t,
     guild: n,
     guildChannels: b,
     guildChannelsVersion: y,
     selectedChannelId: _,
-    disableManageChannels: v
+    disableManageChannels: O
   } = e, {
-    isFavoritesPerk: O
+    isFavoritesPerk: v
   } = (0, a.z)("ChannelListSection"), C = i.useCallback(() => {
     let e = b.getCategoryFromSection(b.recentsSectionNumber);
     if (null == e) return;
     let t = null,
       r = e.getShownChannelAndThreadIds();
     null != _ && r.includes(_) && (t = (0, c.KY)(b)), (0, c.Uo)(n.id, r, t)
-  }, [n.id, _, b, y]), S = (0, s.Q3)("ChannelListSection"), {
-    density: j
-  } = (0, l.TCT)(), E = S && "compact" === j ? 8 : p.$k;
+  }, [n.id, _, b, y]), j = (0, s.Q3)("ChannelListSection"), {
+    density: S
+  } = (0, l.TCT)(), x = j && "compact" === S ? 8 : p.$k;
   switch (t) {
     case d.wZ:
       return (0, r.jsx)("div", {
         style: {
-          height: E
+          height: x
         }
       });
     case d.wd:
       if (n.hasFeature(f.oNc.HUB)) return null;
       return (0, r.jsx)("div", {
         style: {
-          height: E
+          height: x
         }
       });
     case d.p2:
       return (0, r.jsx)(h.P, {
-        name: O ? g.NW.string(g.t.mlPMCw) : g.NW.string(g.t.k8fFjo)
+        name: v ? g.NW.string(g.t.mlPMCw) : g.NW.string(g.t.k8fFjo)
       });
     case b.recentsSectionNumber:
       return (0, r.jsx)(h.P, {
@@ -100,10 +100,10 @@ let v = i.memo(function(e) {
         onDismiss: C
       });
     case b.voiceChannelsSectionNumber: {
-      var x;
+      var E;
       let e = b.getCategoryFromSection(b.voiceChannelsSectionNumber);
       if (null == e || e.isEmpty()) return null;
-      let n = null == (x = b.getChannelFromSectionRow(t, 0)) ? void 0 : x.channel;
+      let n = null == (E = b.getChannelFromSectionRow(t, 0)) ? void 0 : E.channel;
       return (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)("div", {
           className: m.sectionDivider
@@ -119,7 +119,7 @@ let v = i.memo(function(e) {
       return (0, r.jsx)(h.ZP, {
         channel: e.record,
         position: e.position,
-        disableManageChannels: v,
+        disableManageChannels: O,
         children: (0, r.jsx)(u.Z, {
           inlineSpecs: p.MF,
           arrowAlignment: o.cy.TOP,
@@ -134,7 +134,7 @@ let v = i.memo(function(e) {
       return (0, r.jsx)(h.ZP, {
         channel: e.record,
         position: e.position,
-        disableManageChannels: v
+        disableManageChannels: O
       })
     }
   }

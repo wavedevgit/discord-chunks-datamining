@@ -1,4 +1,4 @@
-/** Chunk was on 56484 **/
+/** Chunk was on 77025 **/
 n.d(t, {
   l: () => d,
   v: () => m
@@ -10,7 +10,7 @@ var i = n(481060),
   o = n(489813),
   s = n(815660),
   a = n(388032),
-  c = n(679808);
+  c = n(667084);
 
 function u(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -77,7 +77,7 @@ function m(e) {
         (0, i.ZDy)(async () => {
           let {
             default: e
-          } = await Promise.all([n.e("76540"), n.e("4630")]).then(n.bind(n, 607018));
+          } = await Promise.all([n.e("76540"), n.e("56898")]).then(n.bind(n, 607018));
           return t => (0, r.jsx)(e, u({
             reason: l.L.GUILD_PHONE_REQUIRED
           }, t))

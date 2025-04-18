@@ -1,4 +1,4 @@
-/** Chunk was on 93243 **/
+/** Chunk was on 63958 **/
 "use strict";
 r.d(t, {
   Z: () => p
@@ -13,7 +13,7 @@ var n = r(200651),
   h = r(25015),
   v = r(963550),
   u = r(845080),
-  f = r(988940);
+  f = r(30804);
 let p = i.memo(function(e) {
   var t, r;
   let {
@@ -21,18 +21,18 @@ let p = i.memo(function(e) {
     channel: p,
     compact: d,
     className: b,
-    isGroupStart: g,
-    hideSimpleEmbedContent: Z = !0,
-    disableInteraction: j,
-    previewGuildId: M,
+    isGroupStart: Z,
+    hideSimpleEmbedContent: M = !0,
+    disableInteraction: g,
+    previewGuildId: j,
     preview: O,
     author: y
-  } = e, m = null != (t = null != M ? M : s.getGuildId()) ? t : void 0, H = (0, a.Z)(y), x = (0, l.A)((null != (r = s.editedTimestamp) ? r : s.timestamp).valueOf()), {
-    content: V
+  } = e, m = null != (t = null != j ? j : s.getGuildId()) ? t : void 0, H = (0, a.Z)(y), V = (0, l.A)((null != (r = s.editedTimestamp) ? r : s.timestamp).valueOf()), {
+    content: x
   } = (0, h.Z)(s, {
-    hideSimpleEmbedContent: Z,
-    allowList: x,
-    allowHeading: x,
+    hideSimpleEmbedContent: M,
+    allowList: V,
+    allowHeading: V,
     allowLinks: !0,
     previewLinkTarget: !0
   }), w = i.useMemo(() => {
@@ -73,11 +73,11 @@ let p = i.memo(function(e) {
     className: o()(b, {
       [f.message]: !0,
       [f.cozyMessage]: !d,
-      [f.groupStart]: g
+      [f.groupStart]: Z
     }),
     childrenHeader: w,
-    childrenMessageContent: (0, v.Z)(e, V),
-    disableInteraction: j,
+    childrenMessageContent: (0, v.Z)(e, x),
+    disableInteraction: g,
     authorHasGradientRole: H,
     guildId: m,
     preview: O

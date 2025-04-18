@@ -14,7 +14,7 @@ var r = n(913527),
   u = n(211644),
   m = n(675478),
   x = n(681619),
-  h = n(59963);
+  h = n(177488);
 let p = e => {
     switch (e) {
       case c.D.DC_DISMISSED:
@@ -53,7 +53,7 @@ function v() {
     n = (0, u.ZP)(e => e.lastWinnerTime),
     r = 0 !== n ? l()(n).fromNow() : "n/a",
     v = (0, u.ZP)(e => e.recentlyShown[0]),
-    j = e.map(e => {
+    g = e.map(e => {
       let {
         eventType: t,
         dismissibleContent: n
@@ -64,7 +64,7 @@ function v() {
         dismissibleContent: n
       }
     }),
-    g = Array.from(t.keys()).map(e => ({
+    j = Array.from(t.keys()).map(e => ({
       key: e.toString(),
       dismissibleContent: e
     }));
@@ -96,11 +96,11 @@ function v() {
       children: (0, a.jsx)(x.Z, {
         className: h.candidatesTable,
         columns: f,
-        data: g
+        data: j
       })
     }), (0, a.jsx)("br", {}), (0, a.jsx)(x.Z, {
       columns: b,
-      data: j
+      data: g
     })]
   })
 }

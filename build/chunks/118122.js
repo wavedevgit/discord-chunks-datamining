@@ -1,6 +1,6 @@
-/** Chunk was on 48791 **/
+/** Chunk was on 64040 **/
 n.d(t, {
-  Z: () => j
+  Z: () => S
 });
 var r = n(200651),
   i = n(192379),
@@ -19,8 +19,8 @@ var r = n(200651),
   b = n(603592),
   y = n(981631),
   _ = n(675999),
-  v = n(388032),
-  O = n(653024);
+  O = n(388032),
+  v = n(176330);
 let C = {
   origin: {
     x: -16,
@@ -34,7 +34,7 @@ let C = {
   }
 };
 
-function S(e) {
+function j(e) {
   (0, s.jW)(e, async () => {
     let {
       default: e
@@ -60,11 +60,11 @@ function S(e) {
   })
 }
 
-function j(e) {
+function S(e) {
   let {
     disableTooltip: t,
     lastTargetNode: n
-  } = e, s = (0, l.e7)([f.Z], () => f.Z.getGuilds()), j = i.useMemo(() => Object.values(s), [s]), E = (0, l.e7)([g.default], () => g.default.getCurrentUser()), x = i.useMemo(() => j.some(e => e.isOwner(E)), [j, E]), I = (0, o.s9z)(e => (0, o.DEQ)(e, _.PU)), {
+  } = e, s = (0, l.e7)([f.Z], () => f.Z.getGuilds()), S = i.useMemo(() => Object.values(s), [s]), x = (0, l.e7)([g.default], () => g.default.getCurrentUser()), E = i.useMemo(() => S.some(e => e.isOwner(x)), [S, x]), I = (0, o.s9z)(e => (0, o.DEQ)(e, _.PU)), {
     analyticsLocations: N
   } = (0, a.ZP)(), P = (0, u.Q3)("CreateJoinGuildButton"), w = (0, r.jsx)(b.Z, {
     showPill: !1,
@@ -84,18 +84,18 @@ function j(e) {
       })
     },
     selected: I,
-    onContextMenu: S,
-    tooltip: v.NW.string(v.t.l5WIbW),
+    onContextMenu: j,
+    tooltip: O.NW.string(O.t.l5WIbW),
     icon: P ? o.oFk : o.BRu
   });
   return t ? w : (0, r.jsx)("div", {
-    className: O.tutorialContainer,
+    className: v.tutorialContainer,
     children: (0, r.jsxs)(p.Z, {
-      tutorialId: x ? "create-more-servers" : "create-first-server",
+      tutorialId: E ? "create-more-servers" : "create-first-server",
       inlineSpecs: C,
       position: "right",
       children: [w, null != n && (0, r.jsx)(m.ZP, {
-        name: v.NW.string(v.t["45xjMz"]),
+        name: O.NW.string(O.t["45xjMz"]),
         targetNode: n,
         below: !0,
         noCombine: !0

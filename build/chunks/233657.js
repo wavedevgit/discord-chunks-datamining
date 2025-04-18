@@ -1,4 +1,4 @@
-/** Chunk was on 48791 **/
+/** Chunk was on 64040 **/
 n.d(t, {
   Z: () => y
 });
@@ -15,7 +15,7 @@ var i = n(442837),
   h = n(434479),
   p = n(490897),
   f = n(388032),
-  g = n(830082);
+  g = n(768107);
 
 function m(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -55,24 +55,24 @@ function y(e) {
     selected: y
   } = e, {
     hasUnread: _,
-    mentionCount: v
+    mentionCount: O
   } = (0, i.cj)([u.ZP], () => ({
     hasUnread: u.ZP.hasUnread(t.id, p.W.GUILD_EVENT),
     mentionCount: u.ZP.getMentionCount(t.id, p.W.GUILD_EVENT)
-  }), [t.id]), O = (0, i.e7)([d.ZP], () => d.ZP.isMuteScheduledEventsEnabled(t.id));
+  }), [t.id]), v = (0, i.e7)([d.ZP], () => d.ZP.isMuteScheduledEventsEnabled(t.id));
   async function C() {
     await (0, o.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("22347"), n.e("56236"), n.e("8674")]).then(n.bind(n, 17671));
+      } = await Promise.all([n.e("22347"), n.e("56236"), n.e("79010")]).then(n.bind(n, 17671));
       return n => (0, r.jsx)(e, b(m({}, n), {
         guildId: t.id
       }))
     }), (0, a.EW)(l.z.GUILD_HEADER_EVENT_UPSELL)
   }
-  let S = (0, c.ZP)(t.id),
-    j = S.length > 0 ? f.NW.formatToPlainString(f.t.IBdqSk, {
-      number: S.length
+  let j = (0, c.ZP)(t.id),
+    S = j.length > 0 ? f.NW.formatToPlainString(f.t.IBdqSk, {
+      number: j.length
     }) : f.NW.string(f.t.tlopTE);
   return (0, r.jsx)(h.m, {
     id: "upcoming-events-".concat(t.id),
@@ -81,7 +81,7 @@ function y(e) {
       color: "currentColor",
       className: e
     }),
-    text: j,
+    text: S,
     selected: y,
     onClick: C,
     onContextMenu: e => {
@@ -94,11 +94,11 @@ function y(e) {
         }))
       })
     },
-    showUnread: _ && !O,
-    trailing: !O && v > 0 ? (0, r.jsx)(o.mAB, {
+    showUnread: _ && !v,
+    trailing: !v && O > 0 ? (0, r.jsx)(o.mAB, {
       className: g.numberBadge,
       disableColor: !0,
-      count: v
+      count: O
     }) : null
   })
 }
