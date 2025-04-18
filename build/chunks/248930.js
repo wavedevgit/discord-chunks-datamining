@@ -16,9 +16,9 @@ var r = t(200651),
   b = t(652853),
   m = t(64621),
   h = t(382405),
-  I = t(386019),
-  g = t(228168),
-  y = t(227832);
+  g = t(386019),
+  y = t(228168),
+  I = t(227832);
 
 function j(e) {
   let {
@@ -45,7 +45,7 @@ function j(e) {
     value: Z,
     children: (0, r.jsx)(m.Z, {
       targetElementRef: _,
-      sourceType: g.n_.ACTIVITY,
+      sourceType: y.n_.ACTIVITY,
       user: n,
       children: (0, r.jsx)(f.Z, {
         user: n,
@@ -54,18 +54,18 @@ function j(e) {
         sourceId: t.id,
         entry: t,
         onAction: E,
-        sourceType: g.n_.ACTIVITY,
+        sourceType: y.n_.ACTIVITY,
         children: () => (0, r.jsx)(p.Z, {
           ref: _,
           user: n,
-          className: y.toolbarContainer,
+          className: I.toolbarContainer,
           interactionSourceId: t.id,
-          sourceType: g.n_.ACTIVITY,
+          sourceType: y.n_.ACTIVITY,
           onAction: E,
           onShowToolbar: () => E({
             action: "HOVER_ACTIVITY_CARD"
           }),
-          renderMoreButtonPopout: x ? void 0 : e => (0, r.jsx)(I.Z, {
+          renderMoreButtonPopout: x ? void 0 : e => (0, r.jsx)(g.Z, {
             display: "recent",
             entry: t,
             user: n,
@@ -77,7 +77,7 @@ function j(e) {
             user: n,
             onClose: v,
             className: l()(j, {
-              [y.hoisted]: N === g.n_.ACTIVITY && P === t.id
+              [I.hoisted]: N === y.n_.ACTIVITY && P === t.id
             })
           })
         })

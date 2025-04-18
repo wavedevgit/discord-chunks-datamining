@@ -21,13 +21,13 @@ function h(e) {
     user: n,
     currentUser: t,
     guildId: h,
-    initialSubsection: I
+    initialSubsection: g
   } = e, {
-    voiceActivityStatusEnabled: g
+    voiceActivityStatusEnabled: y
   } = (0, o.U)({
     location: "useUserProfileModalTabBarItems"
   }), {
-    live: y,
+    live: I,
     recent: j,
     stream: v,
     outbox: x
@@ -40,7 +40,7 @@ function h(e) {
   }), O = n.id === (null == t ? void 0 : t.id), N = (0, r.e7)([l.Z, i.Z], () => {
     let e = O ? l.Z.getStatus() : i.Z.getStatus(n.id);
     return e === b.Skl.OFFLINE || e === b.Skl.INVISIBLE
-  }), P = null != v || y.length > 0, E = j.length > 0, {
+  }), P = null != v || I.length > 0, E = j.length > 0, {
     mutualFriendsCount: S,
     mutualGuilds: T
   } = (0, c.Z)(n), A = null == T ? void 0 : T.length, C = (0, d.Z)({
@@ -50,10 +50,10 @@ function h(e) {
     section: p.oh.USER_INFO,
     text: m.NW.string(m.t.jGoPJS)
   }];
-  return !N && (P || g && null == v && null == Z && null != _) ? L.push({
+  return !N && (P || y && null == v && null == Z && null != _) ? L.push({
     section: p.oh.ACTIVITY,
     text: m.NW.string(m.t.chq59f)
-  }) : (E || null == x && I === p.Tb.RECENT_ACTIVITY) && L.push({
+  }) : (E || null == x && g === p.Tb.RECENT_ACTIVITY) && L.push({
     section: p.oh.ACTIVITY,
     text: m.NW.string(m.t.chq59f)
   }), !O && C && (L.push({

@@ -16,9 +16,9 @@ var r = t(200651),
   b = t(389190),
   m = t(428927),
   h = t(228168),
-  I = t(388032),
-  g = t(301150),
-  y = t(923243);
+  g = t(388032),
+  y = t(301150),
+  I = t(923243);
 
 function j(e) {
   let {
@@ -101,20 +101,20 @@ function v(e) {
     })
   }, [Z, E]);
   return O ? (0, r.jsx)("div", {
-    className: y.container,
+    className: I.container,
     children: (0, r.jsxs)("div", {
-      className: g.empty,
+      className: y.empty,
       children: [(0, r.jsx)("div", {
-        className: g.emptyIconStreamerMode
+        className: y.emptyIconStreamerMode
       }), (0, r.jsx)("div", {
-        className: g.emptyText,
-        children: I.NW.string(I.t.Br1ls7)
+        className: y.emptyText,
+        children: g.NW.string(g.t.Br1ls7)
       })]
     })
   }) : (0, r.jsxs)("div", {
-    className: y.container,
+    className: I.container,
     children: [(0, r.jsx)(l.n, {
-      className: y.tabBar,
+      className: I.tabBar,
       type: "top",
       selectedItem: N,
       onItemSelect: S,
@@ -124,7 +124,7 @@ function v(e) {
           text: t
         } = e;
         return (0, r.jsx)(l.n.Item, {
-          className: y.tabBarItem,
+          className: I.tabBarItem,
           id: n,
           "aria-label": t,
           children: (0, r.jsx)(s.Text, {

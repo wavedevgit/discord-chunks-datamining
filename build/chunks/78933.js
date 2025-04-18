@@ -79,7 +79,7 @@ function Q(e) {
   } = e, ee = __OVERLAY__, et = (0, N.ZP)(t.id), {
     analyticsLocations: en
   } = (0, u.ZP)(d.Z.ACCOUNT_PROFILE_POPOUT), er = (0, _.ZB)({
-    layout: "SIMPLIFIED_ACCOUNT_POPOUT",
+    layout: "ACCOUNT_POPOUT",
     userId: t.id
   }), {
     ref: ei

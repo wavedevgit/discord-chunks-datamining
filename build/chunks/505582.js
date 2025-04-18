@@ -59,7 +59,7 @@ function R(e) {
   } = e, R = __OVERLAY__ || !(0, d.Z)(t.id), k = (0, b.ZP)(t.id), M = (0, s.ZP)(), L = i.useRef(Date.now()), {
     analyticsLocations: D
   } = (0, u.ZP)(c.Z.PROFILE_PANEL), W = (0, m.ZB)({
-    layout: "SIMPLIFIED_DM_PANEL",
+    layout: "SIDEBAR",
     userId: t.id,
     channelId: n.id
   }), U = i.useRef(null), B = (0, a.Z)(U), G = e => {

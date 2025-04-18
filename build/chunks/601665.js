@@ -65,7 +65,7 @@ function C(e) {
   } = e, {
     analyticsLocations: k
   } = (0, c.ZP)([...M, l.Z.BITE_SIZE_PROFILE_POPOUT]), j = (0, d.ZB)({
-    layout: "BITE_SIZE_POPOUT",
+    layout: "POPOUT",
     userId: t.id,
     guildId: N,
     channelId: C,

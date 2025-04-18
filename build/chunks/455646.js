@@ -51,7 +51,7 @@ function E(e) {
   } = e, N = (0, m.ZP)(t.id), I = (0, s.ZP)(), P = (0, o.e7)([d.Z], () => d.Z.isBlocked(t.id)), {
     analyticsLocations: S
   } = (0, u.ZP)(P ? c.Z.BLOCKED_PROFILE_PANEL : c.Z.IGNORED_PROFILE_PANEL), Z = (0, h.ZB)({
-    layout: P ? "BLOCKED_PROFILE_PANEL" : "IGNORED_PROFILE_PANEL",
+    layout: "SIDEBAR",
     userId: t.id,
     channelId: n.id
   }), T = i.useRef(null);

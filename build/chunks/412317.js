@@ -1,6 +1,6 @@
 /** Chunk was on 54636 **/
 t.d(n, {
-  Z: () => y
+  Z: () => I
 });
 var r = t(200651);
 t(192379);
@@ -48,7 +48,7 @@ function h(e, n) {
   }), e
 }
 
-function I(e) {
+function g(e) {
   var {
     user: n,
     analyticsLocation: t
@@ -81,7 +81,7 @@ function I(e) {
   })
 }
 
-function g(e) {
+function y(e) {
   let {
     gameFriends: n,
     hasIncomingPendingGameFriends: t,
@@ -98,7 +98,7 @@ function g(e) {
     hasIncomingPendingGameFriends: t,
     hasOutgoingPendingGameFriends: o
   });
-  return (0, r.jsx)(I, {
+  return (0, r.jsx)(g, {
     tooltipText: a,
     ariaLabel: c,
     icon: u,
@@ -108,7 +108,7 @@ function g(e) {
   })
 }
 
-function y(e) {
+function I(e) {
   let {
     isCurrentUser: n,
     user: t,
@@ -118,12 +118,12 @@ function y(e) {
   } = e, {
     newestAnalyticsLocation: h
   } = (0, l.ZP)(), {
-    gameFriends: y,
+    gameFriends: I,
     hasOutgoingPendingGameFriends: j,
     hasIncomingPendingGameFriends: v
   } = (0, u.H)({
     userId: t.id
-  }), x = y.length > 0 || j || v;
+  }), x = I.length > 0 || j || v;
   return n || a === f.OGo.BLOCKED ? null : a === f.OGo.FRIEND || t.bot ? (0, r.jsx)("div", {
     className: b.multipleButtons,
     children: (0, r.jsx)(c.c, {
@@ -132,10 +132,10 @@ function y(e) {
     })
   }) : a === f.OGo.NONE && x ? (0, r.jsxs)("div", {
     className: b.multipleButtons,
-    children: [(0, r.jsx)(g, {
+    children: [(0, r.jsx)(y, {
       user: t,
       analyticsLocation: h,
-      gameFriends: y,
+      gameFriends: I,
       hasIncomingPendingGameFriends: v,
       hasOutgoingPendingGameFriends: j
     }), (0, r.jsx)(c.c, {
@@ -144,7 +144,7 @@ function y(e) {
     })]
   }) : a === f.OGo.PENDING_OUTGOING ? (0, r.jsxs)("div", {
     className: b.multipleButtons,
-    children: [(0, r.jsx)(I, {
+    children: [(0, r.jsx)(g, {
       icon: o.iHX,
       tooltipText: p.NW.string(p.t.zz2i8v),
       user: t,
@@ -155,7 +155,7 @@ function y(e) {
     })]
   }) : a === f.OGo.PENDING_INCOMING ? (0, r.jsxs)("div", {
     className: b.multipleButtons,
-    children: [(0, r.jsx)(I, {
+    children: [(0, r.jsx)(g, {
       icon: o.iHX,
       tooltipText: p.NW.string(p.t.ZOFd1N),
       user: t,

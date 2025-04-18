@@ -17,9 +17,9 @@ var o = t(442837),
   b = t(151545),
   m = t(744802),
   h = t(493043),
-  I = t(864141),
-  g = t(228168),
-  y = t(981631),
+  g = t(864141),
+  y = t(228168),
+  I = t(981631),
   j = t(388032),
   v = t(316879),
   x = t(301150);
@@ -49,12 +49,12 @@ function _(e) {
   }), L = (0, o.e7)([s.Z], () => s.Z.isFetchingUserOutbox(n.id)), w = n.id === t.id, R = (0, o.e7)([a.Z, c.Z], () => {
     let e = w ? a.Z.getStatus() : c.Z.getStatus(n.id);
     return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
-  }), M = E.length > 0 || null != T, U = P && null == T && null == C && null != A, D = S.length > 0;
-  return !R && (M || U) || D || !L ? (0, r.jsxs)(i.zJl, {
+  }), M = E.length > 0 || null != T, U = P && null == T && null == C && null != A, B = S.length > 0;
+  return !R && (M || U) || B || !L ? (0, r.jsxs)(i.zJl, {
     className: v.scroller,
     fade: !0,
     children: [!R && (M || U) ? (0, r.jsxs)(p.Z, {
-      children: [U && (0, r.jsx)(I.Z, {
+      children: [U && (0, r.jsx)(g.Z, {
         user: n,
         currentUser: t,
         voiceChannel: A,
@@ -73,15 +73,15 @@ function _(e) {
         onClose: N,
         profileGuildId: null == _ ? void 0 : _.guildId
       }, "live-".concat(o)))]
-    }) : null, D ? (0, r.jsx)(p.Z, {
+    }) : null, B ? (0, r.jsx)(p.Z, {
       heading: j.NW.string(j.t.M0zgnZ),
       subheading: w ? j.NW.format(j.t["4bk9Ag"], {
         learnMoreHook: (e, n) => (0, r.jsx)(i.eee, {
-          href: d.Z.getArticleURL(y.BhN.ACTIVITY_STATUS_SETTINGS),
+          href: d.Z.getArticleURL(I.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, n)
       }) : void 0,
-      scrollIntoView: O === g.Tb.RECENT_ACTIVITY,
+      scrollIntoView: O === y.Tb.RECENT_ACTIVITY,
       children: S.map(e => (0, r.jsx)(m.Z, {
         location: "UserProfileModalActivity",
         user: n,

@@ -60,7 +60,7 @@ function R(e) {
   } = e, k = __OVERLAY__, M = (0, g.ZP)(t.id), L = (0, c.ZP)(), D = i.useRef(Date.now()), {
     analyticsLocations: W
   } = (0, d.ZP)(u.Z.PROFILE_PANEL), U = (0, f.ZB)({
-    layout: "SIMPLIFIED_DM_PANEL",
+    layout: "SIDEBAR",
     userId: t.id,
     channelId: R.id
   }), B = i.useRef(null), G = (0, s.Z)(B), F = (0, b.$m)(), H = (0, a.q_F)({

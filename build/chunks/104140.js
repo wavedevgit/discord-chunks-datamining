@@ -712,5 +712,5 @@ function K(e) {
       className: E.upperBadge,
       children: h
     }) : null]
-  }, "wrapper")
+  }, "".concat(S, "-").concat(I))
 }
