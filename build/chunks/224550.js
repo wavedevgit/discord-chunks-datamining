@@ -57,6 +57,7 @@ let g = (e, t, n, r) => {
         purchaseType: A || f.GZQ.SUBSCRIPTION,
         plan: b,
         premiumSubscription: null == P ? null : P,
+        productLine: C,
         isGift: !!y,
         planGroup: L,
         isPrepaidPaymentSource: !1
@@ -127,6 +128,7 @@ let g = (e, t, n, r) => {
           throw Error("Unexpected interval: ".concat(t))
       } else {
         let e, r = (0, a.K)({
+          productLine: C,
           purchaseType: f.GZQ.SUBSCRIPTION,
           plan: b,
           premiumSubscription: null == P ? null : P,
