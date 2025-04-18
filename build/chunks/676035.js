@@ -27,7 +27,8 @@ function c(e, t) {
       animated: !1
     } : null
   }
-  let i = Number(e.expiresAtMs);
+  let i = Number(e.expiresAtMs),
+    a = null == (n = e.label) ? void 0 : n.value;
   return {
     name: "Custom Status",
     type: l.IIU.CUSTOM_STATUS,
@@ -36,8 +37,9 @@ function c(e, t) {
       end: i
     } : void 0,
     emoji: r,
+    details: a,
     metadata: {
-      label: null == (n = e.label) ? void 0 : n.value
+      label: a
     }
   }
 }
