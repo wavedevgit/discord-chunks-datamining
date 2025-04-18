@@ -1,6 +1,6 @@
 /**
   Module ID: 73344
-  Original File Name: 53d904852259e561
+  Original File Name: 6d950e05ee78fc95
 **/
 .content__79cbe {
     border-radius: 8px;
@@ -12656,41 +12656,41 @@ div.profileThemedContainer__656be {
     width: 4px
 }
 
-.header__537ec {
+.header__08449 {
     margin-bottom: 8px;
     min-height: calc(var(--custom-user-profile-banner-height) + 39px);
     position: relative
 }
 
-.headerTag__537ec {
+.headerTag__08449 {
     border-radius: var(--radius-xs);
     bottom: 8px;
     position: absolute;
     right: 16px
 }
 
-.footer__537ec {
+.footer__08449 {
     border-top: 1px solid var(--user-profile-border);
     z-index: 1
 }
 
-.footerButtonColor__537ec {
+.footerButtonColor__08449 {
     color: var(--interactive-normal)
 }
 
-.footerButtonColor__537ec:hover {
+.footerButtonColor__08449:hover {
     color: var(--interactive-hover)
 }
 
-.footerButtonColor__537ec:active {
+.footerButtonColor__08449:active {
     color: var(--interactive-active)
 }
 
-.banner__537ec {
+.banner__08449 {
     border-radius: 0
 }
 
-.backdrop__537ec {
+.backdrop__08449 {
     background: var(--bg-backdrop);
     bottom: 0;
     left: 0;
@@ -12700,53 +12700,53 @@ div.profileThemedContainer__656be {
     z-index: 4
 }
 
-.toast__537ec {
+.toast__08449 {
     top: calc((var(--custom-user-profile-banner-height) - 56px)/2);
     z-index: 5
 }
 
-.body__747b1 {
+.body__486c9 {
     margin: 0 16px
 }
 
-.body__747b1,.overlay__747b1 {
+.body__486c9,.overlay__486c9 {
     display: flex;
     flex-direction: column;
     gap: 12px
 }
 
-.card__747b1,.overlay__747b1 {
+.card__486c9,.overlay__486c9 {
     padding: 12px
 }
 
-.note__747b1 {
+.note__486c9 {
     margin: -4px
 }
 
-.note__747b1 textarea {
+.note__486c9 textarea {
     border-radius: 3px;
     font-size: 14px;
     line-height: 18px;
     padding: 4px
 }
 
-.note__747b1 textarea:focus {
+.note__486c9 textarea:focus {
     background: var(--user-profile-note-background-focus)
 }
 
-.note__747b1 textarea:focus::-moz-placeholder {
+.note__486c9 textarea:focus::-moz-placeholder {
     color: transparent
 }
 
-.note__747b1 textarea:focus::placeholder {
+.note__486c9 textarea:focus::placeholder {
     color: transparent
 }
 
-.container_f34d4c {
+.container__87523 {
     width: 340px
 }
 
-.headerContainer_f34d4c {
+.headerContainer__87523 {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -12754,7 +12754,7 @@ div.profileThemedContainer__656be {
     justify-content: center
 }
 
-.preview_f34d4c {
+.preview__87523 {
     filter: blur(5px);
     object-fit: contain;
     object-position: top;
@@ -12762,12 +12762,12 @@ div.profileThemedContainer__656be {
     width: 100%
 }
 
-.container_f34d4c,.preview_f34d4c {
+.container__87523,.preview__87523 {
     height: 100%;
     position: relative
 }
 
-.body_f34d4c {
+.body__87523 {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -12905,48 +12905,48 @@ div.profileThemedContainer__656be {
     white-space: nowrap
 }
 
-.section_c7ac92 {
+.section__733e9 {
     display: flex;
     flex-direction: column;
     gap: 12px;
     padding: 12px
 }
 
-.header_c7ac92 {
+.header__733e9 {
     align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between
 }
 
-.header_c7ac92.clickable_c7ac92 {
+.header__733e9.clickable__733e9 {
     cursor: pointer
 }
 
-.list_c7ac92 {
+.list__733e9 {
     display: flex;
     flex-direction: column;
     gap: 8px
 }
 
-.list_c7ac92[hidden] {
+.list__733e9[hidden] {
     display: none
 }
 
-.overlay__325ce {
+.overlay_d04d18 {
     margin: 12px 16px
 }
 
-.divider__325ce {
+.divider_d04d18 {
     margin: 0 12px
 }
 
-.list__325ce {
+.list_d04d18 {
     gap: 0;
     margin-left: -8px
 }
 
-.loadingMutualFriend__325ce {
+.loadingMutualFriend_d04d18 {
     align-items: center;
     display: flex;
     gap: 10px;
@@ -12954,7 +12954,7 @@ div.profileThemedContainer__656be {
     padding: 4px
 }
 
-.loadingMutualFriend__325ce>:first-child {
+.loadingMutualFriend_d04d18>:first-child {
     border-radius: var(--radius-round);
     height: 40px;
     margin: 0
@@ -13039,4 +13039,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=53d904852259e561.css.map*/
+/*# sourceMappingURL=6d950e05ee78fc95.css.map*/

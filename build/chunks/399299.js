@@ -33,8 +33,8 @@ var r = n(200651),
   E = n(618407),
   P = n(586290),
   R = n(233037),
-  k = n(810013),
-  W = n(537135),
+  W = n(810013),
+  k = n(537135),
   A = n(641115),
   M = n(143135),
   L = n(70722),
@@ -64,7 +64,7 @@ function F(e) {
     title: B.NW.string(B.t.TC7Ev7),
     className: z.modalContent,
     titleClassName: z.formItemTitleVerySlim,
-    children: (0, r.jsxs)(W.Z, {
+    children: (0, r.jsxs)(k.Z, {
       children: [null != g ? (0, r.jsx)(h.Z, {
         game: g,
         size: h.Z.Sizes.XSMALL,
@@ -94,7 +94,7 @@ function H(e) {
     title: B.NW.string(B.t.WC3u3t),
     className: z.modalContent,
     titleClassName: z.formItemTitle,
-    children: (0, r.jsxs)(W.Z, {
+    children: (0, r.jsxs)(k.Z, {
       children: [(0, r.jsx)(x.Z, {
         guild: i,
         size: x.Z.Sizes.SMALLER,
@@ -222,7 +222,7 @@ function K(e) {
     onChangeSelectedPreset: Z,
     onChangeSelectedChannelId: O,
     onChangeSource: T,
-    onChangeAudioDevice: W,
+    onChangeAudioDevice: k,
     onChangeGuild: M,
     onChangeSound: L,
     onChangePreviewDisabled: z
@@ -236,7 +236,7 @@ function K(e) {
     children: [et ? (0, r.jsx)(P.Z, {
       selectedSource: t,
       onChangeVideoDeviceSource: T,
-      onChangeAudioDevice: W
+      onChangeAudioDevice: k
     }) : (0, r.jsxs)("div", {
       children: [(0, r.jsx)(F, {
         selectSource: h,
@@ -253,7 +253,7 @@ function K(e) {
     }), x && null != f ? (0, r.jsx)(H, {
       guildId: f,
       onChange: M
-    }) : null, null != K ? (0, r.jsx)(k.Z, {
+    }) : null, null != K ? (0, r.jsx)(W.Z, {
       channel: K
     }) : (0, r.jsx)(R.Z, {
       guildId: f,

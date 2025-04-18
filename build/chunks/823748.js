@@ -61,9 +61,9 @@ var r = n(200651),
   el = n(910611),
   eo = n(915718),
   ea = n(518311),
-  es = n(180539),
-  ec = n(882378),
-  eu = n(207868),
+  es = n(882378),
+  ec = n(207868),
+  eu = n(473065),
   ed = n(576171),
   ep = n(754688),
   eh = n(41776),
@@ -85,7 +85,7 @@ var r = n(200651),
   eS = n(900157),
   eZ = n(108427),
   eT = n(171368),
-  eA = n(431933),
+  eA = n(336724),
   ew = n(524329),
   eR = n(995532),
   ek = n(738643),
@@ -586,10 +586,10 @@ class tl extends i.PureComponent {
           }, "pins")), o.push((0, r.jsx)(ea.Z, {
             channel: e,
             tooltip: e9.NW.string(e9.t.Xjlbvr)
-          }, "invite")), o.push((0, r.jsx)(es.Z, {
+          }, "invite")), o.push((0, r.jsx)(eu.Z, {
             channel: e,
             showCallOrActivityPanel: i || l
-          }, "profile")), o.push((0, r.jsx)(ec.Z, {
+          }, "profile")), o.push((0, r.jsx)(es.Z, {
             channel: e
           }, "safety_tools")), o.push((0, r.jsx)(en.Z, {
             channel: e
@@ -618,7 +618,7 @@ class tl extends i.PureComponent {
         case e3.d4z.PUBLIC_THREAD:
           null == t || t.isForumLikeChannel() || o.push((0, r.jsx)(eN.Z, {
             channel: t
-          }, "browser")), e.isVocalThread() && o.push((0, r.jsx)(eu.Z, {
+          }, "browser")), e.isVocalThread() && o.push((0, r.jsx)(ec.Z, {
             channel: e
           }, "thread-call")), o.push((0, r.jsx)(eI.Z, {
             channel: e

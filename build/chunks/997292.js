@@ -28,7 +28,7 @@ let p = {
       return (0, l.TY)({
         displayProfile: r,
         isProfileOpen: !i
-      }), s.Z.toggleProfilePanelSection(), !1
+      }), s.Z.toggleUserProfileSidebarSection(), !1
     }
     return s.Z.toggleMembersSection(), !1
   }

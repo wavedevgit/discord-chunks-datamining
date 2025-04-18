@@ -33,8 +33,8 @@ var r = n(200651),
   E = n(544753),
   P = n(560749),
   R = n(615161),
-  k = n(289989),
-  W = n(328242),
+  W = n(289989),
+  k = n(328242),
   A = n(565574),
   M = n(51708),
   L = n(801604),
@@ -152,9 +152,9 @@ function F(e) {
           })
         }), (0, r.jsx)(m.hzk, {
           className: z.content,
-          children: V && en !== u.vA.CAMERA ? (0, r.jsx)(k.Z, {
+          children: V && en !== u.vA.CAMERA ? (0, r.jsx)(W.Z, {
             onSourceSelect: el
-          }) : (0, r.jsx)(W.Z, {
+          }) : (0, r.jsx)(k.Z, {
             onClick: function(e) {
               if (!F) return er(e);
               $({

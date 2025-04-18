@@ -9,9 +9,9 @@ let i = {
       type: "CHANNEL_TOGGLE_MEMBERS_SECTION"
     })
   },
-  toggleProfilePanelSection() {
+  toggleUserProfileSidebarSection() {
     r.Z.dispatch({
-      type: "PROFILE_PANEL_TOGGLE_SECTION"
+      type: "USER_PROFILE_SIDEBAR_TOGGLE_SECTION"
     })
   },
   toggleSummariesSection() {

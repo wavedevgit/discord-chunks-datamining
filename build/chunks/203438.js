@@ -1,6 +1,7 @@
-/** Chunk was on 1272 **/
+/** Chunk was on 73344 **/
 e.exports = {
-  messageRequestItem: "messageRequestItem_abb9ad",
-  firstItem: "firstItem_abb9ad",
-  active: "active_abb9ad"
+  overlay: "overlay_d04d18",
+  divider: "divider_d04d18",
+  list: "list_d04d18",
+  loadingMutualFriend: "loadingMutualFriend_d04d18"
 }

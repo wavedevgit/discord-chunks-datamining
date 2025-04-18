@@ -72,8 +72,8 @@ function Z(e) {
     resolution: E,
     fps: P,
     sourceType: R,
-    audioSourceId: k
-  }, W] = (0, x.E_)(), A = (0, c.Z)(), M = (0, h.Z)(), [L, D] = null != (n = (0, g.Z)(_.tI.PRESET_VIDEO)) ? n : [_.LY.RESOLUTION_720, _.ws.FPS_30], [G, B] = null != (i = (0, g.Z)(_.tI.PRESET_DOCUMENTS)) ? i : [_.LY.RESOLUTION_SOURCE, _.ws.FPS_15];
+    audioSourceId: W
+  }, k] = (0, x.E_)(), A = (0, c.Z)(), M = (0, h.Z)(), [L, D] = null != (n = (0, g.Z)(_.tI.PRESET_VIDEO)) ? n : [_.LY.RESOLUTION_720, _.ws.FPS_30], [G, B] = null != (i = (0, g.Z)(_.tI.PRESET_DOCUMENTS)) ? i : [_.LY.RESOLUTION_SOURCE, _.ws.FPS_15];
   return (0, r.jsxs)(a.v2r, {
     "aria-label": v.NW.string(v.t["+1H47u"]),
     navId: "stream-options",
@@ -113,7 +113,7 @@ function Z(e) {
                 throw Error("No case implemented for ".concat(e))
             }
           }(t),
-          action: () => W({
+          action: () => k({
             type: "set_preset",
             preset: t
           })
@@ -143,7 +143,7 @@ function Z(e) {
               if (!(0, u.Z)(T, e, P, d.default.getCurrentUser(), M)) return b(), (0, p.E)({
                 analyticsLocation: o.Z.GO_LIVE_MODAL_SETTINGS_SELECTION
               });
-              W({
+              k({
                 type: "set_resolution",
                 resolution: e
               })
@@ -164,7 +164,7 @@ function Z(e) {
             if (!(0, u.Z)(T, E, e, d.default.getCurrentUser(), M)) return b(), (0, p.E)({
               analyticsLocation: o.Z.GO_LIVE_MODAL_SETTINGS_SELECTION
             });
-            W({
+            k({
               type: "set_fps",
               fps: e
             })
@@ -175,14 +175,14 @@ function Z(e) {
       id: "stream-option-mute",
       checked: w,
       label: v.NW.string(j.Z["b0+Ira"]),
-      action: () => W({
+      action: () => k({
         type: "set_mute_audio",
         value: !w
       })
     }), R === s.vA.CAMERA && (0, r.jsx)(a.sNh, {
       id: "device-audio-input",
       label: v.NW.string(j.Z.YSdHV1),
-      subtext: null == (t = A[null != k ? k : ""]) ? void 0 : t.name,
+      subtext: null == (t = A[null != W ? W : ""]) ? void 0 : t.name,
       subtextLineClamp: 1,
       children: l().map(A, e => {
         let {
@@ -192,9 +192,9 @@ function Z(e) {
         return (0, r.jsx)(a.k5B, {
           group: "device-audio-input-group",
           id: "device-audio-input-".concat(t),
-          checked: k === t,
+          checked: W === t,
           label: n,
-          action: () => W({
+          action: () => k({
             type: "set_audio_source",
             audioSourceId: t
           })
@@ -207,7 +207,7 @@ function Z(e) {
         id: "stream-option-share-preview",
         checked: O,
         label: v.NW.string(j.Z.H3Qjqa),
-        action: () => W({
+        action: () => k({
           type: "set_hide_preview",
           hidePreview: !O
         })
@@ -215,7 +215,7 @@ function Z(e) {
         id: "stream-option-notify",
         checked: I,
         label: v.NW.string(j.Z.SiHtX1),
-        action: () => W({
+        action: () => k({
           type: "set_notify_friends",
           value: !I
         })

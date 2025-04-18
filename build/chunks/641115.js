@@ -1,6 +1,6 @@
 /** Chunk was on 46746 **/
 n.d(t, {
-  Z: () => W
+  Z: () => k
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -91,7 +91,7 @@ function R() {
   })
 }
 
-function k(e) {
+function W(e) {
   let t, n, {
       type: i,
       selected: l,
@@ -144,7 +144,7 @@ function k(e) {
   }
 }
 
-function W(e) {
+function k(e) {
   let {
     onClose: t,
     selectedPreset: n,
@@ -153,7 +153,7 @@ function W(e) {
     onResolutionChange: a,
     onFPSChange: x,
     onPresetChange: R,
-    targetGuildPremiumTier: W,
+    targetGuildPremiumTier: k,
     captureDeviceSelected: A
   } = e, M = (0, c.e7)([v.default], () => {
     let e = v.default.getCurrentUser();
@@ -165,10 +165,10 @@ function W(e) {
   }), U = (0, p.B4)(), z = v.default.getUser(null == L ? void 0 : L.hdStreamingBuyerId), F = null != L && null != L.hdStreamingUntil && new Date(L.hdStreamingUntil) > new Date && null != z, H = !D && !B, [V, Y] = i.useState(!1), J = A ? C.z8 : C.WC, X = E(T({}, G), {
     section: y.jXE.STREAM_SETTINGS
   }), K = (0, r.jsx)(d.hE2, {
-    buttons: J.map(e => k({
+    buttons: J.map(e => W({
       type: e,
       selected: e.value === l,
-      needsPremium: !(0, S.Z)(n, e.value, s, M, W, L),
+      needsPremium: !(0, S.Z)(n, e.value, s, M, k, L),
       needsDemo: U && e.value !== C.LY.RESOLUTION_720,
       analyticsLocation: X,
       onClick: () => a(e.value),
@@ -176,10 +176,10 @@ function W(e) {
       setIsHovering: Y
     }))
   }), q = (0, r.jsx)(d.hE2, {
-    buttons: C.k0.map(e => k({
+    buttons: C.k0.map(e => W({
       type: e,
       selected: e.value === s,
-      needsPremium: !(0, S.Z)(n, l, e.value, M, W, L),
+      needsPremium: !(0, S.Z)(n, l, e.value, M, k, L),
       needsDemo: U && e.value === C.ws.FPS_60,
       analyticsLocation: X,
       onClick: () => x(e.value),

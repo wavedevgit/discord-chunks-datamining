@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  b: () => y
+  b: () => b
 });
 var r = n(200651),
   i = n(192379),
@@ -10,99 +10,93 @@ var r = n(200651),
   s = n(846027),
   l = n(872810),
   c = n(803647),
-  u = n(521147),
-  d = n(361291),
-  f = n(131951),
-  _ = n(358085),
-  p = n(418469),
-  h = n(776031),
-  m = n(981631),
-  g = n(231338),
-  E = n(65154),
-  b = n(388032);
+  u = n(361291),
+  d = n(131951),
+  f = n(358085),
+  _ = n(418469),
+  p = n(776031),
+  h = n(981631),
+  m = n(231338),
+  g = n(65154),
+  E = n(388032);
 
-function y(e) {
+function b(e) {
   let {
     stream: t,
     handleGoLive: n,
-    showReportOption: y = !1,
-    disableChangeWindows: v = !1,
-    simplified: O = !1,
-    appContext: I = m.IlC.APP
+    showReportOption: b = !1,
+    disableChangeWindows: y = !1,
+    simplified: v = !1,
+    appContext: O = h.IlC.APP
   } = e, {
-    desktopSourceId: S
-  } = (0, a.cj)([f.Z], () => {
+    desktopSourceId: I
+  } = (0, a.cj)([d.Z], () => {
     var e;
     let {
       desktopSource: t
-    } = null != (e = f.Z.getGoLiveSource()) ? e : {};
+    } = null != (e = d.Z.getGoLiveSource()) ? e : {};
     return {
       desktopSourceId: null == t ? void 0 : t.id
     }
-  }), T = (0, a.e7)([d.Z], () => d.Z.getState().soundshareEnabled), N = f.Z.supports(E.AN.DESKTOP_CAPTURE_APPLICATIONS), A = (0, a.e7)([f.Z], () => f.Z.supports(E.AN.SOUNDSHARE)), C = (0, a.e7)([f.Z], () => f.Z.supportsScreenSoundshare()), R = (0, h.Z)(t, I), P = (0, p.Z)(t, I, g.Vq), w = null != S && A && (!S.startsWith("screen") || C), D = u.Z.useExperiment({
-    location: "ManageStreamsMenu"
-  }, {
-    disable: !w,
-    autoTrackExposure: !0
-  }).enabled, L = i.useCallback(() => {
-    (null == S ? void 0 : S.startsWith("prepicked:")) ? f.Z.getMediaEngine().eachConnection(e => {
-      e.context === E.Yn.STREAM && e.presentDesktopSourcePicker()
+  }), S = (0, a.e7)([u.Z], () => u.Z.getState().soundshareEnabled), T = d.Z.supports(g.AN.DESKTOP_CAPTURE_APPLICATIONS), N = (0, a.e7)([d.Z], () => d.Z.supports(g.AN.SOUNDSHARE)), A = (0, a.e7)([d.Z], () => d.Z.supportsScreenSoundshare()), C = (0, p.Z)(t, O), R = (0, _.Z)(t, O, m.Vq), P = null != I && N && (!I.startsWith("screen") || A), w = i.useCallback(() => {
+    (null == I ? void 0 : I.startsWith("prepicked:")) ? d.Z.getMediaEngine().eachConnection(e => {
+      e.context === g.Yn.STREAM && e.presentDesktopSourcePicker()
     }): n()
-  }, [S, n]), x = i.useCallback(() => {
+  }, [I, n]), D = i.useCallback(() => {
     let {
       preset: e,
       resolution: t,
       fps: n
-    } = d.Z.getState(), r = {
+    } = u.Z.getState(), r = {
       qualityOptions: {
         preset: e,
         resolution: t,
         frameRate: n
       },
-      context: E.Yn.STREAM
+      context: g.Yn.STREAM
     };
-    null != S && (r.desktopSettings = {
-      sourceId: S,
-      sound: !T
+    null != I && (r.desktopSettings = {
+      sourceId: I,
+      sound: !S
     }), (0, l.Rc)({
       preset: e,
       resolution: t,
       frameRate: n,
-      soundshareEnabled: !T
+      soundshareEnabled: !S
     }), s.Z.setGoLiveSource(r)
-  }, [S, T]);
+  }, [I, S]);
   if (null == t) return (0, r.jsx)(o.sNh, {
     id: "share-your-screen",
-    label: b.NW.string(b.t.fjBNo6),
+    label: E.NW.string(E.t.fjBNo6),
     icon: o.hGI,
     action: n
   });
-  let M = _.isPlatformEmbedded ? (0, r.jsx)(o.sNh, {
+  let L = f.isPlatformEmbedded ? (0, r.jsx)(o.sNh, {
       id: "stream-settings",
-      label: b.NW.string(b.t.ytAD9f),
-      children: R
+      label: E.NW.string(E.t.ytAD9f),
+      children: C
     }) : null,
-    k = D ? (0, r.jsx)(o.S89, {
+    x = P ? (0, r.jsx)(o.S89, {
       id: "stream-settings-audio-enable",
-      label: O ? b.NW.string(b.t.af2Tw8) : b.NW.string(b.t.ZJEHt7),
-      checked: T,
-      action: x
+      label: v ? E.NW.string(E.t.af2Tw8) : E.NW.string(E.t.ZJEHt7),
+      checked: S,
+      action: D
     }) : null,
-    j = N && !v ? (0, r.jsx)(o.sNh, {
+    M = T && !y ? (0, r.jsx)(o.sNh, {
       id: "change-windows",
-      label: O ? b.NW.string(b.t.eAktHh) : b.NW.string(b.t.qntSam),
+      label: v ? E.NW.string(E.t.eAktHh) : E.NW.string(E.t.qntSam),
       icon: o.hGI,
-      action: L
+      action: w
     }) : null,
-    U = (0, r.jsx)(o.sNh, {
+    k = (0, r.jsx)(o.sNh, {
       id: "stop-streaming",
-      label: b.NW.string(b.t.S5anIS),
+      label: E.NW.string(E.t.S5anIS),
       icon: o.g5r,
       action: () => (0, c.Z)(t)
     });
-  return O ? (0, r.jsxs)(r.Fragment, {
-    children: [U, j, M, k]
+  return v ? (0, r.jsxs)(r.Fragment, {
+    children: [k, M, L, x]
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [M, y ? P : null, k, j, U]
+    children: [L, b ? R : null, x, M, k]
   })
 }

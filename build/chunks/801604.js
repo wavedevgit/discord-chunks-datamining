@@ -67,7 +67,7 @@ function S(e) {
   } = (0, d.a)({
     location: "go_live_modal_refresh",
     autoTrackExposure: !1
-  }), T = (0, c.Z)(), [E, P] = null != (i = (0, x.Z)(S)) ? i : [N, C], R = (0, u.L)(S), k = (0, f.M)(E), W = I === s.vA.CAMERA, A = null != Z || !!w && (!m || W), M = null != Z ? null == Z || null == (t = Z.id) ? void 0 : t.startsWith(s.vA.CAMERA) : W, L = A ? void 0 : S === p.tI.PRESET_VIDEO ? _.NW.string(g.Z.MuHUFR) : S === p.tI.PRESET_DOCUMENTS ? _.NW.string(g.Z.y0JuYW) : void 0;
+  }), T = (0, c.Z)(), [E, P] = null != (i = (0, x.Z)(S)) ? i : [N, C], R = (0, u.L)(S), W = (0, f.M)(E), k = I === s.vA.CAMERA, A = null != Z || !!w && (!m || k), M = null != Z ? null == Z || null == (t = Z.id) ? void 0 : t.startsWith(s.vA.CAMERA) : k, L = A ? void 0 : S === p.tI.PRESET_VIDEO ? _.NW.string(g.Z.MuHUFR) : S === p.tI.PRESET_DOCUMENTS ? _.NW.string(g.Z.y0JuYW) : void 0;
   return (0, r.jsxs)("div", {
     className: j.root,
     children: [A && (0, r.jsx)(b, {
@@ -97,7 +97,7 @@ function S(e) {
             children: L
           }), (0, r.jsx)(v, {})]
         }), (0, r.jsx)("span", {
-          children: k
+          children: W
         }), (0, r.jsx)(v, {}), (0, r.jsx)("span", {
           children: "".concat(P, "fps")
         }), y && (0, r.jsxs)(r.Fragment, {
