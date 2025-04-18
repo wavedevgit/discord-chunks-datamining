@@ -42,30 +42,31 @@ async function m(e) {
     subsection: m,
     friendToken: g,
     showGuildProfile: E,
-    analyticsLocation: b,
-    sourceAnalyticsLocations: y,
-    appContext: v,
-    customStatusPrompt: O = null
-  } = e, I = c.default.getUser(t);
+    hideRestrictedProfile: b,
+    analyticsLocation: y,
+    sourceAnalyticsLocations: v,
+    appContext: O,
+    customStatusPrompt: I = null
+  } = e, S = c.default.getUser(t);
   h(t);
   let {
-    withMutualFriendsCount: S
+    withMutualFriendsCount: T
   } = (0, d.R)({
     location: "openUserProfileModal"
   });
-  null == I ? await (0, a.In)(t, {
+  null == S ? await (0, a.In)(t, {
     type: "modal",
     guildId: E && null != n ? n : void 0,
-    withMutualFriendsCount: S,
-    withMutualFriends: !S,
+    withMutualFriendsCount: T,
+    withMutualFriends: !T,
     withMutualGuilds: !0,
     friendToken: g,
     joinRequestId: u
-  }) : (0, f.Z)(I.id, I.getAvatarURL(void 0, _), {
+  }) : (0, f.Z)(S.id, S.getAvatarURL(void 0, _), {
     type: "modal",
     guildId: E && null != n ? n : void 0,
-    withMutualFriendsCount: !I.bot && S,
-    withMutualFriends: !I.bot && !S,
+    withMutualFriendsCount: !S.bot && T,
+    withMutualFriends: !S.bot && !T,
     withMutualGuilds: !0,
     friendToken: g,
     joinRequestId: u
@@ -78,14 +79,15 @@ async function m(e) {
     roleId: null != s ? s : void 0,
     sessionId: null != l ? l : void 0,
     openedAt: Date.now(),
-    customStatusPrompt: O,
+    customStatusPrompt: I,
     section: p,
     subsection: m,
     friendToken: g,
     showGuildProfile: E,
-    analyticsLocation: b,
-    sourceAnalyticsLocations: y,
-    appContext: v
+    hideRestrictedProfile: b,
+    analyticsLocation: y,
+    sourceAnalyticsLocations: v,
+    appContext: O
   })
 }
 

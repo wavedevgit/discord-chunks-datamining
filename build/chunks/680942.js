@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651),
   l = n(192379),
   a = n(481060),
-  o = n(727637),
-  i = n(906732),
+  i = n(727637),
+  o = n(906732),
   s = n(333867),
   c = n(677232),
   u = n(884697),
@@ -74,12 +74,12 @@ let m = {
       color: O = a.Ttl.BRAND
     } = e, {
       analyticsLocations: j
-    } = (0, i.ZP)(), y = l.useRef(null), S = (0, o.Z)(y), k = (0, d.hv)("CollectiblesShopGiftButton");
+    } = (0, o.ZP)(), y = l.useRef(null), S = (0, i.Z)(y), k = (0, d.hv)("CollectiblesShopGiftButton");
     return (0, u.x6)(t) ? null : (0, r.jsx)(a.ua7, {
       text: g.NW.string(g.t["JCFN//"]),
       delay: v,
       children: e => {
-        var l, o;
+        var l, i;
         return (0, r.jsx)(a.zxk, (l = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -97,7 +97,7 @@ let m = {
             })
           }
           return e
-        }({}, e), o = o = {
+        }({}, e), i = i = {
           buttonRef: y,
           className: h.giftButton,
           color: O,
@@ -130,15 +130,15 @@ let m = {
             size: "md",
             color: "currentColor"
           })
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(o)).forEach(function(e) {
-          Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(o, e))
+        })(Object(i)).forEach(function(e) {
+          Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(i, e))
         }), l))
       }
     })

@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => b
+  Z: () => _
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -17,14 +17,14 @@ let g = d.Z.Millis.SECOND,
   h = d.Z.Millis.HALF_SECOND,
   f = [() => m.NW.string(m.t.MSaeTU), () => m.NW.string(m.t.UmrCw8), () => m.NW.string(m.t.gKE0Ji), () => m.NW.string(m.t["4DSKbm"]), () => m.NW.string(m.t["+8ENdX"]), () => m.NW.string(m.t.GlWHv7), () => m.NW.string(m.t.hIzxU1), () => m.NW.string(m.t["26uMPD"]), () => m.NW.string(m.t.uFs7R0), () => m.NW.string(m.t.bLXdcX), () => m.NW.string(m.t.gPg9fX)];
 
-function b(e) {
+function _(e) {
   let {
     text: t,
     copyValue: n,
     children: d,
     onCopy: m,
-    "aria-label": b,
-    delay: _ = h
+    "aria-label": _,
+    delay: b = h
   } = e, [N, x] = i.useState(0), [E, j] = i.useState(!1), [C, O] = i.useState(!1), [S] = i.useState(() => new a.V7), [v] = i.useState(() => new a.V7);
   if (i.useEffect(() => () => {
       S.stop(), v.stop()
@@ -48,8 +48,8 @@ function b(e) {
         children: i()
       })
     })(),
-    delay: _,
-    "aria-label": b,
+    delay: b,
+    "aria-label": _,
     color: y,
     forceOpen: C,
     onAnimationRest: (e, t) => {

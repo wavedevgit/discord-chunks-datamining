@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651),
   l = n(192379),
   a = n(120356),
-  o = n.n(a),
-  i = n(200100),
+  i = n.n(a),
+  o = n(200100),
   s = n(873546),
   c = n(481060),
   u = n(774078),
@@ -23,12 +23,12 @@ function g(e) {
     days: n,
     hours: l,
     minutes: a,
-    seconds: o
-  } = (0, u.Z)(t), i = function(e, t, n, r) {
+    seconds: i
+  } = (0, u.Z)(t), o = function(e, t, n, r) {
     let l = (e, t) => "".concat(e.toString().padStart(2, "0")).concat(t),
       a = [];
     return e > 0 && a.push(l(e, d.NW.string(d.t.QJyuxc))), (t > 0 || a.length > 0) && a.push(l(t, d.NW.string(d.t["1LyF1t"]))), (n > 0 || a.length > 0) && a.push(l(n, d.NW.string(d.t.n7dksL))), a.push(l(r, d.NW.string(d.t["6m/6nJ"]))), a.join(":")
-  }(n, l, a, o);
+  }(n, l, a, i);
   return (0, r.jsx)(c.Text, {
     variant: "heading-md/medium",
     className: b.countdown,
@@ -36,7 +36,7 @@ function g(e) {
     children: (0, r.jsx)("div", {
       role: "timer",
       "aria-relevant": "all",
-      children: i
+      children: o
     })
   })
 }
@@ -54,8 +54,8 @@ let h = l.memo(function(e) {
       friction: 12
     }
   });
-  return (0, r.jsxs)(i.animated.div, {
-    className: o()([b.countDownWrapper, a && b.fullScreenWrapper, s.tq && b.mobileWrapper]),
+  return (0, r.jsxs)(o.animated.div, {
+    className: i()([b.countDownWrapper, a && b.fullScreenWrapper, s.tq && b.mobileWrapper]),
     role: "status",
     style: function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -88,12 +88,12 @@ let h = l.memo(function(e) {
       endDate: t
     }), (0, r.jsx)("img", {
       src: p.Z,
-      className: o()(b.sparkles, b.left),
+      className: i()(b.sparkles, b.left),
       alt: "",
       "aria-hidden": !0
     }), (0, r.jsx)("img", {
       src: f.Z,
-      className: o()(b.sparkles, b.right),
+      className: i()(b.sparkles, b.right),
       alt: "",
       "aria-hidden": !0
     })]

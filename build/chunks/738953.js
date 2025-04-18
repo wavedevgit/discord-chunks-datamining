@@ -122,8 +122,9 @@ function B(e) {
     ei = i.useMemo(() => (0, _.Z)(), []),
     eo = e => {
       null == Z || Z(), (0, R.openUserProfileModal)(G(j({
-        customStatusPrompt: ei,
-        sourceAnalyticsLocations: z
+        sourceAnalyticsLocations: z,
+        hideRestrictedProfile: !0,
+        customStatusPrompt: ei
       }, q, e), {
         appContext: K
       }))

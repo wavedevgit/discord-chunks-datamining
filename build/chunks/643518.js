@@ -1,9 +1,9 @@
 /** Chunk was on 54636 **/
 t.d(n, {
-  Z: () => I
+  Z: () => h
 }), t(539854);
-var o = t(442837),
-  r = t(468363),
+var r = t(442837),
+  o = t(468363),
   i = t(158776),
   l = t(885110),
   s = t(369566),
@@ -16,15 +16,15 @@ var o = t(442837),
   b = t(981631),
   m = t(388032);
 
-function I(e) {
+function h(e) {
   let {
     user: n,
     currentUser: t,
-    guildId: I,
-    initialSubsection: h
+    guildId: h,
+    initialSubsection: I
   } = e, {
     voiceActivityStatusEnabled: g
-  } = (0, r.U)({
+  } = (0, o.U)({
     location: "useUserProfileModalTabBarItems"
   }), {
     live: y,
@@ -36,31 +36,31 @@ function I(e) {
     voiceActivity: Z
   } = (0, a.Z)({
     userId: n.id,
-    guildId: I
-  }), O = n.id === (null == t ? void 0 : t.id), N = (0, o.e7)([l.Z, i.Z], () => {
+    guildId: h
+  }), O = n.id === (null == t ? void 0 : t.id), N = (0, r.e7)([l.Z, i.Z], () => {
     let e = O ? l.Z.getStatus() : i.Z.getStatus(n.id);
     return e === b.Skl.OFFLINE || e === b.Skl.INVISIBLE
-  }), E = null != v || y.length > 0, P = j.length > 0, {
+  }), P = null != v || y.length > 0, E = j.length > 0, {
     mutualFriendsCount: S,
     mutualGuilds: T
-  } = (0, c.Z)(n), C = null == T ? void 0 : T.length, A = (0, d.Z)({
+  } = (0, c.Z)(n), A = null == T ? void 0 : T.length, C = (0, d.Z)({
     user: n,
     location: b.Sbl.PROFILE_MODAL_TABS
   }), L = [{
     section: p.oh.USER_INFO,
     text: m.NW.string(m.t.jGoPJS)
   }];
-  return !N && (E || g && null == v && null == Z && null != _) ? L.push({
+  return !N && (P || g && null == v && null == Z && null != _) ? L.push({
     section: p.oh.ACTIVITY,
     text: m.NW.string(m.t.chq59f)
-  }) : (P || null == x && h === p.Tb.RECENT_ACTIVITY) && L.push({
+  }) : (E || null == x && I === p.Tb.RECENT_ACTIVITY) && L.push({
     section: p.oh.ACTIVITY,
     text: m.NW.string(m.t.chq59f)
-  }), !O && A && (L.push({
+  }), !O && C && (L.push({
     section: p.oh.MUTUAL_FRIENDS,
     text: (0, u.Z)(S)
   }), L.push({
     section: p.oh.MUTUAL_GUILDS,
-    text: (0, f.Z)(C)
+    text: (0, f.Z)(A)
   })), L
 }

@@ -70,7 +70,8 @@ function R(e) {
     }
   }), V = e => {
     (0, I.openUserProfileModal)(w({
-      sourceAnalyticsLocations: W
+      sourceAnalyticsLocations: W,
+      hideRestrictedProfile: !0
     }, U, e))
   };
   return (0, r.jsx)(d.Gt, {

@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(63063),
   h = n(281494),
   f = n(276444),
-  b = n(520540),
-  _ = n(796634),
+  _ = n(520540),
+  b = n(796634),
   N = n(197115),
   x = n(119269),
   E = n(938736),
@@ -134,13 +134,13 @@ let I = e => {
       isInSettings: t = !1
     } = e, s = (0, l.e7)([f.Z], () => f.Z.getRecipientStatus()), {
       referralSentUsers: u
-    } = (0, _.G)(), I = i.useMemo(() => u.map(e => new m.Z(e)), [u]), {
+    } = (0, b.G)(), I = i.useMemo(() => u.map(e => new m.Z(e)), [u]), {
       subscriberHomeVariant: y
-    } = b.g.useExperiment({
+    } = _.g.useExperiment({
       location: "ReferralProgramProgressBar"
     }, {
       autoTrackExposure: !1
-    }), P = y === b.p.VARIANT_2, R = {
+    }), P = y === _.p.VARIANT_2, R = {
       redeemed: 0,
       converted: 0,
       sent: s.size
@@ -148,13 +148,13 @@ let I = e => {
     s.forEach(e => {
       e === h.Fe.REDEEMED && R.redeemed++, e === h.Fe.CONVERTED && (R.redeemed++, R.converted++)
     });
-    let D = R.sent === _.Q,
+    let D = R.sent === b.Q,
       Z = p.Z.getArticleURL(j.BhN.REFERRAL_PROGRAM),
       {
         analyticsLocations: w
       } = (0, d.ZP)(c.Z.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
       k = i.useRef(null),
-      W = R.sent / _.Q * 100,
+      W = R.sent / b.Q * 100,
       L = (0, r.jsxs)("div", {
         className: O.referralInfoContent,
         children: [(0, r.jsx)(x.ZP, {
@@ -220,7 +220,7 @@ let I = e => {
           })]
         })]
       }),
-      B = R.redeemed === _.Q;
+      B = R.redeemed === b.Q;
     return (0, r.jsx)(d.Gt, {
       value: w,
       children: (0, r.jsx)("div", {

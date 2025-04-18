@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(131951),
   h = n(556296),
   f = n(924557),
-  b = n(435064),
-  _ = n(894694),
+  _ = n(435064),
+  b = n(894694),
   N = n(779618),
   x = n(39604),
   E = n(442334),
@@ -38,10 +38,10 @@ function A() {
       decoupledClipsEnabled: s,
       clipsLength: A,
       clipsQuality: P
-    } = (0, l.cj)([b.Z], () => b.Z.getSettings()),
-    R = (0, l.e7)([b.Z], () => b.Z.getHardwareClassification()),
+    } = (0, l.cj)([_.Z], () => _.Z.getSettings()),
+    R = (0, l.e7)([_.Z], () => _.Z.getHardwareClassification()),
     D = (0, l.e7)([h.ZP], () => h.ZP.getKeybindForAction(C.kg4.SAVE_CLIP, !0)),
-    Z = b.Z.isDecoupledGameClippingEnabled(),
+    Z = _.Z.isDecoupledGameClippingEnabled(),
     w = (0, N.Z)(p.Z),
     {
       showClipsHeaderEntrypoint: k
@@ -151,7 +151,7 @@ function A() {
             scrollPosition: S.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION
           })
         })
-      }), R === _.x.BELOW_MINIMUM ? (0, r.jsx)(g.Z, {
+      }), R === b.x.BELOW_MINIMUM ? (0, r.jsx)(g.Z, {
         look: g.z.WARNING,
         className: I.formItem,
         children: v.NW.string(v.t.SIxrIC)

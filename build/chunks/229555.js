@@ -51,25 +51,25 @@ let g = (e, t) => (null == e ? void 0 : e.status) === o.Vq.EARNED ? u.NW.format(
         id: d,
         nameUnformatted: h,
         tenureReqNumMonths: f,
-        hasWideArt: b
+        hasWideArt: _
       } = t,
-      _ = u.NW.string(h),
+      b = u.NW.string(h),
       N = (0, l.q)(d, f);
     return (0, r.jsxs)("div", {
       className: s()(m.container, p(d)),
       children: [(0, r.jsx)("div", {}), " ", (0, r.jsx)("img", {
         src: i,
-        alt: _,
+        alt: b,
         className: s()(m.badgeImage, m.badgeImageV2, {
           [m.upcomingBadge]: t.status === o.Vq.UPCOMING,
-          [m.wide]: b
+          [m.wide]: _
         })
       }), (0, r.jsxs)("div", {
         className: m.textColumn,
         children: [(0, r.jsx)(a.xv, {
           variant: "text-lg/semibold",
           className: m.badgeText,
-          children: _
+          children: b
         }), (0, r.jsx)(a.xv, {
           variant: "text-md/normal",
           className: m.badgeText,

@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651),
   l = n(192379),
   a = n(481060),
-  o = n(906732),
-  i = n(963249),
+  i = n(906732),
+  o = n(963249),
   s = n(474936),
   c = n(831485);
 let u = e => {
@@ -15,12 +15,12 @@ let u = e => {
     text: t
   } = e, {
     analyticsLocations: n
-  } = (0, o.ZP)(), u = l.useRef(null);
+  } = (0, i.ZP)(), u = l.useRef(null);
   return (0, r.jsx)(a.P3F, {
     className: c.subscribeNow,
     innerRef: u,
     onClick: () => {
-      (0, i.Z)({
+      (0, o.Z)({
         subscriptionTier: s.Si.TIER_2,
         analyticsLocations: n,
         returnRef: u

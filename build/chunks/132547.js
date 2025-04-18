@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(347475),
   h = n(342414),
   f = n(615042),
-  b = n(391110),
-  _ = n(71363),
+  _ = n(391110),
+  b = n(71363),
   N = n(781800),
   x = n(981631),
   E = n(388032),
@@ -44,9 +44,9 @@ let O = () => {
           value: S,
           children: [(0, r.jsx)(h.Z, {
             className: j.heroHeading,
-            location: b.MQ.HOME
+            location: _.MQ.HOME
           }), (0, r.jsx)(g.Z, {
-            variant: b.R0.WHATS_NEW,
+            variant: _.R0.WHATS_NEW,
             className: j.whatsNew,
             noBackground: !0,
             leftAlignHeaders: !0,
@@ -57,7 +57,7 @@ let O = () => {
             leftAlignHeaders: !0,
             showAllPerksButton: (0, r.jsx)(N.Z, {
               setIsAllPerksVisible: O,
-              previousComponent: b.MQ.HOME
+              previousComponent: _.MQ.HOME
             })
           }), (0, r.jsx)(p.Z, {
             className: j.giftNitro,
@@ -88,10 +88,10 @@ let O = () => {
           })]
         })
       })
-    }), (0, r.jsx)(_.Z, {
+    }), (0, r.jsx)(b.Z, {
       isAllPerksVisible: n,
       setIsAllPerksVisible: O,
-      previousComponent: b.MQ.HOME
+      previousComponent: _.MQ.HOME
     })]
   })
 }

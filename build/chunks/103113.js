@@ -78,7 +78,8 @@ function P(e) {
   }, [B, L]);
   let V = () => {
       null == x || x(), (0, S.openUserProfileModal)(R({
-        sourceAnalyticsLocations: U
+        sourceAnalyticsLocations: U,
+        hideRestrictedProfile: !0
       }, G))
     },
     Z = !M && (0, c.Z)(t.id),

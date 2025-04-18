@@ -1,6 +1,6 @@
 /**
   Module ID: 3656
-  Original File Name: 6667991bcf2140c1
+  Original File Name: 45a9cc05347bc072
 **/
 .content__79cbe {
     border-radius: 8px;
@@ -12627,65 +12627,6 @@ div.profileThemedContainer__656be {
     border: 2px solid CanvasText
 }
 
-.container__48a3a {
-    width: 340px
-}
-
-.header__48a3a {
-    margin-bottom: var(--spacing-8);
-    margin-top: var(--spacing-8)
-}
-
-.headerContainer__48a3a {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-8);
-    justify-content: center
-}
-
-.preview__48a3a {
-    height: 100%;
-    position: relative;
-    width: 100%
-}
-
-.previewForCollected__48a3a {
-    filter: blur(5px);
-    object-fit: contain;
-    object-position: top;
-    opacity: .3
-}
-
-.container__48a3a {
-    height: 100%;
-    position: relative
-}
-
-.body__48a3a {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    left: 50%;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    width: 80%;
-    z-index: 1
-}
-
-.bodySpacing__48a3a {
-    gap: var(--spacing-16)
-}
-
-.centeredButton__48a3a {
-    margin-top: var(--spacing-16);
-    width: 100%;
-    z-index: 1
-}
-
 .memberSinceWrapper_c4eb81 {
     align-items: center;
     display: flex;
@@ -12795,6 +12736,46 @@ div.profileThemedContainer__656be {
 
 .note__747b1 textarea:focus::placeholder {
     color: transparent
+}
+
+.container_f34d4c {
+    width: 340px
+}
+
+.headerContainer_f34d4c {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+    justify-content: center
+}
+
+.preview_f34d4c {
+    filter: blur(5px);
+    object-fit: contain;
+    object-position: top;
+    opacity: .3;
+    width: 100%
+}
+
+.container_f34d4c,.preview_f34d4c {
+    height: 100%;
+    position: relative
+}
+
+.body_f34d4c {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-16);
+    justify-content: center;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    z-index: 1
 }
 
 .listRow__9d78f {
@@ -13054,4 +13035,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=6667991bcf2140c1.css.map*/
+/*# sourceMappingURL=45a9cc05347bc072.css.map*/

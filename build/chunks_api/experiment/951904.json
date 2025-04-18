@@ -1,0 +1,1 @@
+{"id":"951904","type":"experiment","data":{"kind":"user","id":"2025-04_shop_shop_all_perf","label":"Shop All Pagination Experiment","defaultConfig":{"isPaginationEnabled":false},"treatments":[{"id":1,"label":"Pagination enabled","config":{"isPaginationEnabled":false}}]},"fromModule":{"id":"45620"}}

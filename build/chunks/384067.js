@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651),
   l = n(192379),
   a = n(120356),
-  o = n.n(a),
-  i = n(622535),
+  i = n.n(a),
+  o = n(622535),
   s = n(481060),
   c = n(63063),
   u = n(597688),
@@ -38,13 +38,13 @@ let h = e => {
       handleCardVisibilityChange: S
     } = (0, d.E)(y, "home", "marketing wide banner"),
     k = h.bannerUrl;
-  return null == k ? null : (0, r.jsx)(i.$, {
+  return null == k ? null : (0, r.jsx)(o.$, {
     innerRef: v,
     onChange: S,
     threshold: 0,
     children: (0, r.jsxs)("div", {
       ref: v,
-      className: o()(g.row, g.between, g.bannerBlockContainer, g.centeredSection),
+      className: i()(g.row, g.between, g.bannerBlockContainer, g.centeredSection),
       children: [(0, r.jsx)("div", {
         className: g.wideBannerBackgroundImg,
         children: (0, r.jsx)("img", {

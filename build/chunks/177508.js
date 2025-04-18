@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(526156),
   h = n(706705),
   f = n(726985),
-  b = n(981631),
-  _ = n(231338),
+  _ = n(981631),
+  b = n(231338),
   N = n(426617);
 
 function x(e) {
@@ -209,7 +209,7 @@ function D() {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(p.Z, {
       parentSetting: f.s6.DESIGN_SYSTEMS,
-      settingsSection: b.oAB.DESIGN_SYSTEMS,
+      settingsSection: _.oAB.DESIGN_SYSTEMS,
       tabs: [{
         title: "Components",
         component: () => (0, r.jsx)(S, {}),
@@ -271,19 +271,19 @@ function Z() {
     }), e ? (0, r.jsxs)("div", {
       className: N.buttons,
       children: [(0, r.jsx)(d.f6W, {
-        theme: _.BR.DARKER,
+        theme: b.BR.DARKER,
         children: e => (0, r.jsx)("div", {
           className: a()(e, N.section),
           children: n
         })
       }), (0, r.jsx)(d.f6W, {
-        theme: _.BR.LIGHT,
+        theme: b.BR.LIGHT,
         children: e => (0, r.jsx)("div", {
           className: a()(e, N.section),
           children: n
         })
       }), (0, r.jsx)(d.f6W, {
-        theme: _.BR.DARKER,
+        theme: b.BR.DARKER,
         children: e => (0, r.jsxs)("div", {
           className: a()(e, N.section),
           children: [(0, r.jsx)(d.zxk, {
@@ -294,7 +294,7 @@ function Z() {
           }), s]
         })
       }), (0, r.jsx)(d.f6W, {
-        theme: _.BR.LIGHT,
+        theme: b.BR.LIGHT,
         children: e => (0, r.jsxs)("div", {
           className: a()(e, N.section),
           children: [(0, r.jsx)(d.zxk, {
@@ -896,7 +896,7 @@ function G() {
 function F() {
   let e = (0, o.e7)([m.Z], () => m.Z.gradientPreset);
   return (0, r.jsx)(d.f6W, {
-    theme: _.BR.DARKER,
+    theme: b.BR.DARKER,
     disableAdaptiveTheme: !0,
     children: t => (0, r.jsxs)("div", {
       className: a()(t, N.section),
@@ -906,7 +906,7 @@ function F() {
         fullWidth: !0,
         children: "Button"
       }), (0, r.jsx)(d.f6W, {
-        theme: _.BR.LIGHT,
+        theme: b.BR.LIGHT,
         children: t => (0, r.jsxs)("div", {
           className: a()(t, N.section),
           children: [(0, r.jsx)(d.zxk, {
@@ -915,7 +915,7 @@ function F() {
             fullWidth: !0,
             children: "Button"
           }), (0, r.jsx)(d.f6W, {
-            theme: _.BR.DARKER,
+            theme: b.BR.DARKER,
             children: e => (0, r.jsx)("div", {
               className: a()(e, N.section),
               children: (0, r.jsx)(d.zxk, {

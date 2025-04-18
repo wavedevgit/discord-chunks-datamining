@@ -23,8 +23,8 @@ var r = n(192379),
   p = n(706140),
   h = n(243778),
   f = n(594174),
-  b = n(580130),
-  _ = n(626135),
+  _ = n(580130),
+  b = n(626135),
   N = n(823379),
   x = n(111361),
   E = n(595878),
@@ -75,9 +75,9 @@ function A() {
     }(),
     n = function() {
       var e = [v.Ft.FREE_AVATAR_DECO_1_MONTH];
-      let t = (0, a.e7)([b.Z], () => {
+      let t = (0, a.e7)([_.Z], () => {
           var e;
-          return null != (e = b.Z.getForApplication(S.CL)) ? e : R
+          return null != (e = _.Z.getForApplication(S.CL)) ? e : R
         }, [], N.OL),
         n = (0, a.e7)([f.default], () => {
           let e = f.default.getCurrentUser();
@@ -88,9 +88,9 @@ function A() {
     i = (0, a.e7)([f.default], () => f.default.getCurrentUser()),
     l = null != n,
     o = function() {
-      let e = (0, a.e7)([b.Z], () => {
+      let e = (0, a.e7)([_.Z], () => {
         var e;
-        return null != (e = b.Z.getForApplication(T.XAJ)) ? e : R
+        return null != (e = _.Z.getForApplication(T.XAJ)) ? e : R
       }, [], N.OL);
       return (0, O.Cl)(v.qY, e)
     }(),
@@ -189,7 +189,7 @@ let R = new Set,
       [n] = (0, p.cv)(t),
       i = r.useRef(!1);
     return r.useCallback(() => {
-      null != e && !0 === e.showNotification && (n === l.z.TENURE_REWARD_REDEEMABLE || n === l.z.TENURE_REWARD_PENDING) && ((0, g.EW)(n), n === l.z.TENURE_REWARD_PENDING && !1 === i.current && (_.default.track(T.rMx.USER_NITRO_TENURE_REWARD_ACKNOWLEDGED, {
+      null != e && !0 === e.showNotification && (n === l.z.TENURE_REWARD_REDEEMABLE || n === l.z.TENURE_REWARD_PENDING) && ((0, g.EW)(n), n === l.z.TENURE_REWARD_PENDING && !1 === i.current && (b.default.track(T.rMx.USER_NITRO_TENURE_REWARD_ACKNOWLEDGED, {
         user_tenure_reward_id: null == e ? void 0 : e.tenureRewardStatusId,
         tenure_reward_id: e.tenureRewardSkuId,
         reward_type: null == e ? void 0 : e.tenureRewardType,
@@ -201,7 +201,7 @@ let R = new Set,
 function W() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : S.CL,
     t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-    n = (0, a.e7)([b.Z], () => b.Z.isFetchingForApplication(e)),
+    n = (0, a.e7)([_.Z], () => _.Z.isFetchingForApplication(e)),
     i = (0, a.e7)([f.default], () => {
       let e = f.default.getCurrentUser();
       return null != e && (0, x.M5)(e, S.p9.TIER_2)

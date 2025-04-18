@@ -9,7 +9,7 @@ n(192379);
 var l = n(481060),
   a = n(82856);
 
-function o(e) {
+function i(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -27,7 +27,7 @@ function o(e) {
   }
   return e
 }
-let i = "collectibles shop product details modal",
+let o = "collectibles shop product details modal",
   s = e => {
     let {
       product: t,
@@ -44,7 +44,7 @@ let i = "collectibles shop product details modal",
       } = await n.e("2026").then(n.bind(n, 702370));
       return n => {
         var l, a;
-        return (0, r.jsx)(e, (l = o({}, n), a = a = {
+        return (0, r.jsx)(e, (l = i({}, n), a = a = {
           product: t,
           category: s,
           shouldCheckoutWithOrbs: u,
@@ -63,8 +63,8 @@ let i = "collectibles shop product details modal",
           Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(a, e))
         }), l))
       }
-    }, o({
-      modalKey: i
+    }, i({
+      modalKey: o
     }, u ? {
       onCloseRequest() {
         c(), (0, a.vp)()
@@ -72,5 +72,5 @@ let i = "collectibles shop product details modal",
     } : {}))
   },
   c = () => {
-    (0, l.Mr3)(i)
+    (0, l.Mr3)(o)
   }

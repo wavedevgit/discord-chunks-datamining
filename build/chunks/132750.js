@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => b
+  Z: () => _
 });
 var r = n(200651),
   i = n(192379),
@@ -43,15 +43,15 @@ function f(e) {
   })
 }
 
-function b(e) {
+function _(e) {
   let {
     hovered: t,
     activities: s,
     user: a,
     applicationStream: p,
-    voiceChannel: b
+    voiceChannel: _
   } = e, {
-    analyticsLocations: _
+    analyticsLocations: b
   } = (0, u.ZP)(d.Z.RTC_PANEL), N = null == s ? void 0 : s.find(e => {
     let {
       type: t
@@ -83,7 +83,7 @@ function b(e) {
           }
           return e
         }({}, n), s = s = {
-          sourceAnalyticsLocations: _,
+          sourceAnalyticsLocations: b,
           location: "CustomStatusRTCEntrypoint",
           prompt: e
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
@@ -98,9 +98,9 @@ function b(e) {
         }), i))
       }
     })
-  }, [_]);
+  }, [b]);
   return (0, r.jsx)(u.Gt, {
-    value: _,
+    value: b,
     children: null != s && s.length > 0 ? (0, r.jsx)(c.Z, {
       hoverText: (0, r.jsx)(f, {
         openModal: x,
@@ -112,7 +112,7 @@ function b(e) {
         user: a,
         activities: s,
         applicationStream: p,
-        voiceChannel: b,
+        voiceChannel: _,
         hideTooltip: !0
       })
     }) : (0, r.jsx)(f, {

@@ -1,7 +1,7 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  hs: () => _,
-  oF: () => b
+  hs: () => b,
+  oF: () => _
 }), n(388685);
 var r = n(913527),
   i = n.n(r),
@@ -18,7 +18,7 @@ var r = n(913527),
   h = n(981631),
   f = n(701488);
 
-function b() {
+function _() {
   let e = (0, s.Wu)([d.ZP, m.Z, g.Z], () => d.ZP.getGamesSeen(!1).filter(e => !!(0, d.FZ)(e, [d.ZP, m.Z, g.Z]).detectable && null != e.lastLaunched && 30 >= i()().diff(e.lastLaunched, "days")).map(e => {
       var t, n;
       return null != (n = e.id) ? n : null == (t = m.Z.getGameByGameData(e)) ? void 0 : t.id
@@ -37,7 +37,7 @@ function b() {
   }
 }
 
-function _() {
+function b() {
   let e = (0, s.e7)([u.Z], () => u.Z.getAccounts()),
     t = (0, l.ZP)(),
     n = e.length;

@@ -17,8 +17,8 @@ var r = n(200651),
   p = n(51499),
   h = n(614277),
   f = n(626135),
-  b = n(152521),
-  _ = n(932563),
+  _ = n(152521),
+  b = n(932563),
   N = n(82856),
   x = n(621490),
   E = n(257493),
@@ -88,7 +88,7 @@ let I = {
     } = t;
     e === j.rMx.PAYMENT_FLOW_CANCELED && f.default.track(j.rMx.PAYMENT_FLOW_CANCELED, S({
       load_id: n,
-      application_id: (0, b.N)(r),
+      application_id: (0, _.N)(r),
       location: i,
       location_stack: i,
       sku_id: r,
@@ -114,7 +114,7 @@ let I = {
       var t, n;
       return S(v(S({
         load_id: r,
-        application_id: (0, b.N)(a),
+        application_id: (0, _.N)(a),
         location: o,
         location_stack: o,
         sku_id: a,
@@ -166,12 +166,12 @@ let I = {
     } = (0, l.T)(o), {
       emitOrbCheckoutPaymentFlowEvent: f
     } = A(), {
-      skuId: b,
+      skuId: _,
       onRedeemVirtualCurrency: N,
       isRedeeming: C,
       orbRedemptionError: O,
       orbProductContext: S
-    } = (0, E.C)(), v = (0, _.c)(), T = (0, i.useRef)(v);
+    } = (0, E.C)(), v = (0, b.c)(), T = (0, i.useRef)(v);
     (0, a.ZP)(() => {
       f(j.rMx.PAYMENT_FLOW_LOADED)
     }), (0, i.useEffect)(() => {
@@ -194,7 +194,7 @@ let I = {
         children: [(0, r.jsx)(x.gY, {
           error: O
         }), (0, r.jsx)(x.A3, {
-          skuId: b,
+          skuId: _,
           orbPriceAmount: P,
           orbBalance: y
         })]
@@ -238,7 +238,7 @@ let I = {
       }
     }, [a]);
     return (0, r.jsx)(g.PaymentModal, {
-      applicationId: (0, b.N)(t),
+      applicationId: (0, _.N)(t),
       transitionState: s.transitionState,
       analyticsDataOverride: o,
       onClose: e => {
@@ -260,7 +260,7 @@ let I = {
       analyticsLocations: a = []
     } = e, l = T(e, ["skuId", "loadId", "onCheckoutSuccess", "analyticsSourceLocation", "analyticsLocations"]);
     return (0, r.jsx)(c.PaymentContextProvider, {
-      applicationId: (0, b.N)(t),
+      applicationId: (0, _.N)(t),
       activeSubscription: null,
       loadId: n,
       stepConfigs: R,

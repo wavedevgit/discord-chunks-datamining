@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => _
+  Z: () => b
 });
 var r = n(200651);
 n(192379);
@@ -17,25 +17,25 @@ var i = n(399606),
   p = n(292352),
   h = n(332495),
   f = n(388032),
-  b = n(959810);
-let _ = () => {
+  _ = n(959810);
+let b = () => {
   let e = (0, c.mq)(p.ne.ACTIVE),
     t = (0, o.c)(),
     n = (0, i.e7)([a.default], () => a.default.getCurrentUser()),
-    _ = (0, l.o)(f.NW.string(h.Z["5RZ8Tk"]), f.NW.string(h.Z.bmhCnJ)),
+    b = (0, l.o)(f.NW.string(h.Z["5RZ8Tk"]), f.NW.string(h.Z.bmhCnJ)),
     N = (0, l.o)(f.NW.string(h.Z.XKnFFh), f.NW.string(h.Z["68zfxM"])),
     x = (0, l.o)(f.NW.string(h.Z["Rm/6a2"]), f.NW.string(h.Z["1xPTwM"]));
   return void 0 === n ? null : (0, r.jsxs)("div", {
-    className: b.container,
+    className: _.container,
     children: [(0, r.jsx)("div", {
-      className: b.banner,
+      className: _.banner,
       children: (0, r.jsx)(d.Z, {})
     }), (0, r.jsxs)("div", {
-      className: b.featureCards,
+      className: _.featureCards,
       children: [(0, r.jsx)(g.Z, {
         icon: s.eQA,
         header: f.NW.string(h.Z["001l3t"]),
-        description: _
+        description: b
       }), (0, r.jsx)(g.Z, {
         icon: s.tEF,
         header: f.NW.string(h.Z.yipAeH),

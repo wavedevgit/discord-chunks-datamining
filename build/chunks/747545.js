@@ -17,8 +17,8 @@ var r = n(200651),
   p = n(906732),
   h = n(920321),
   f = n(921801),
-  b = n(695346),
-  _ = n(938117),
+  _ = n(695346),
+  b = n(938117),
   N = n(131951),
   x = n(626135),
   E = n(358085),
@@ -61,7 +61,7 @@ function I(e) {
   } = (0, c.cj)([N.Z], () => ({
     currentDeviceId: N.Z.getVideoDeviceId(),
     isVideoAvailable: N.Z.isVideoAvailable()
-  })), Z = (0, h.Z)(), w = b.qF.useSetting(), k = Object.values(Z).map(e => {
+  })), Z = (0, h.Z)(), w = _.qF.useSetting(), k = Object.values(Z).map(e => {
     let {
       id: t,
       name: n
@@ -83,7 +83,7 @@ function I(e) {
       className: S.previewToggle,
       note: O.NW.string(O.t.WNbX4O),
       onChange: e => {
-        b.qF.updateSetting(e), x.default.track(j.rMx.UPDATE_USER_SETTINGS_LOCAL, {
+        _.qF.updateSetting(e), x.default.track(j.rMx.UPDATE_USER_SETTINGS_LOCAL, {
           always_preview_video: e
         })
       },
@@ -120,7 +120,7 @@ function I(e) {
       })
     }), (0, r.jsx)(f.F, {
       setting: C.s6.VOICE_AND_VIDEO_VIDEO_BACKGROUND,
-      children: (0, r.jsx)(_.Z, {
+      children: (0, r.jsx)(b.Z, {
         className: S.spacingTop24,
         onLearnMore: s,
         selectedBackgroundOption: l,

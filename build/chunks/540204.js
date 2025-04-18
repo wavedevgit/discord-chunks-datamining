@@ -25,11 +25,11 @@ function f() {
     setSelectedGuildId: t
   } = (0, u.xu)(), n = (0, s.e7)([c.ZP], () => c.ZP.getFlattenedGuildIds()), g = (0, s.e7)([o.Z], () => o.Z.getGuilds()), {
     hideGuildOptions: f,
-    hideGlobalOption: b
-  } = (0, m.b)(), _ = n[0];
+    hideGlobalOption: _
+  } = (0, m.b)(), b = n[0];
   i.useEffect(() => {
-    b && f || (e === u.Th && e !== _ && b && t(_), e !== u.Th && f && t(u.Th))
-  }, [e, t, b, f, _]);
+    _ && f || (e === u.Th && e !== b && _ && t(b), e !== u.Th && f && t(u.Th))
+  }, [e, t, _, f, b]);
   let N = i.useMemo(() => {
       var e, t;
       let r = f ? [] : n.map(e => {
@@ -39,7 +39,7 @@ function f() {
           value: t.id
         }
       }).filter(d.lm);
-      return b || r.unshift((e = function(e) {
+      return _ || r.unshift((e = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -68,7 +68,7 @@ function f() {
       })(Object(t)).forEach(function(n) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
       }), e)), r
-    }, [f, n, b, g]),
+    }, [f, n, _, g]),
     x = i.useCallback(e => {
       let t = (null == e ? void 0 : e.label) === h.label() && (null == e ? void 0 : e.value) === h.value;
       return null == e || "" === e.value || t ? (0, r.jsx)("div", {

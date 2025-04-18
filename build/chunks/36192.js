@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(43015),
   h = n(136097),
   f = n(605236),
-  b = n(246946),
-  _ = n(594174),
+  _ = n(246946),
+  b = n(594174),
   N = n(460562),
   x = n(823379),
   E = n(981631),
@@ -30,8 +30,8 @@ function S() {
       currentSession: t,
       otherSessions: n
     } = (0, h.h)(),
-    s = (0, l.e7)([b.Z], () => b.Z.hidePersonalInformation),
-    a = (0, l.e7)([_.default], () => _.default.getCurrentUser()),
+    s = (0, l.e7)([_.Z], () => _.Z.hidePersonalInformation),
+    a = (0, l.e7)([b.default], () => b.default.getCurrentUser()),
     [u, g] = i.useState(!1);
   i.useEffect(() => {
     (0, f.EW)(c.z.AUTH_SESSIONS_NEW, {
@@ -144,8 +144,8 @@ function v(e) {
     setChecked: u,
     checked: m,
     useChecks: g
-  } = e, f = null != (l = null == (t = o.client_info) ? void 0 : t.location) ? l : null == (n = o.client_info) ? void 0 : n.ip, b = null == (i = o.client_info) ? void 0 : i.platform, {
-    text: _,
+  } = e, f = null != (l = null == (t = o.client_info) ? void 0 : t.location) ? l : null == (n = o.client_info) ? void 0 : n.ip, _ = null == (i = o.client_info) ? void 0 : i.platform, {
+    text: b,
     icon: N
   } = function(e) {
     switch (null == e ? void 0 : e.toLowerCase().trim()) {
@@ -165,7 +165,7 @@ function v(e) {
           text: e, icon: d.pzj
         }
     }
-  }(null == (s = o.client_info) ? void 0 : s.os), E = c ? null : (0, h.p)(o.approx_last_used_time), j = [_, b].filter(x.lm), S = [f, E].filter(x.lm);
+  }(null == (s = o.client_info) ? void 0 : s.os), E = c ? null : (0, h.p)(o.approx_last_used_time), j = [b, _].filter(x.lm), S = [f, E].filter(x.lm);
   return (0, r.jsxs)("div", {
     className: a()(O.session, c ? O.currentSession : null),
     children: [(0, r.jsx)("div", {

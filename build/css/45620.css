@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 88db736d6ca4a75e
+  Original File Name: 2d0a5d2700f0f2dd
 **/
 .countDownWrapper_a1b7b8 {
     align-items: center;
@@ -125,6 +125,10 @@
     }
 }
 
+.pageWithPagination__6db1d {
+    margin-bottom: 60px
+}
+
 .pageFullscreen__6db1d {
     margin-left: 8px;
     padding: 0 32px
@@ -226,8 +230,21 @@
     margin-top: 80px
 }
 
+.categoriesWithPagination__6db1d {
+    margin-bottom: 0
+}
+
 .skeletons__6db1d {
     margin-top: var(--spacing-16)
+}
+
+.paginationContainer__6db1d {
+    border-top: 1px solid var(--background-modifier-accent);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: 40px;
+    padding-top: 20px
 }
 
 @keyframes placeholderPulse__72fa0 {
@@ -1567,4 +1584,4 @@
     opacity: 0
 }
 
-/*# sourceMappingURL=88db736d6ca4a75e.css.map*/
+/*# sourceMappingURL=2d0a5d2700f0f2dd.css.map*/

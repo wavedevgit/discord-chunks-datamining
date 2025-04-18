@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(740492),
   h = n(695346),
   f = n(399970),
-  b = n(726985),
-  _ = n(981631),
+  _ = n(726985),
+  b = n(981631),
   N = n(388032);
 
 function x(e) {
@@ -85,17 +85,17 @@ function E() {
     tag: a.RB0.H1,
     title: N.NW.string(N.t["8/udY2"]),
     children: [(0, r.jsx)(u.F, {
-      setting: b.s6.SETTINGS_ADVANCED_DEVELOPER_MODE,
+      setting: _.s6.SETTINGS_ADVANCED_DEVELOPER_MODE,
       children: (0, r.jsx)(a.j7V, {
         value: n,
         onChange: h.Sb.updateSetting,
         note: N.NW.format(N.t["CY6q/f"], {
-          apiDocsUrl: _.EYA.API_DOCS
+          apiDocsUrl: b.EYA.API_DOCS
         }),
         children: N.NW.string(N.t.ObIb1d)
       })
     }), (0, r.jsx)(u.F, {
-      setting: b.s6.SETTINGS_ADVANCED_HARDWARE_ACCELERATION,
+      setting: _.s6.SETTINGS_ADVANCED_HARDWARE_ACCELERATION,
       children: (0, r.jsx)(a.j7V, {
         value: e,
         onChange: v,
@@ -103,7 +103,7 @@ function E() {
         children: N.NW.string(N.t["eOC/Fx"])
       })
     }), (0, r.jsx)(u.F, {
-      setting: b.s6.SETTINGS_ADVANCED_SHOW_GAME_LIBRARY,
+      setting: _.s6.SETTINGS_ADVANCED_SHOW_GAME_LIBRARY,
       children: (0, r.jsx)(a.j7V, {
         value: !t,
         onChange: C,
@@ -111,7 +111,7 @@ function E() {
         children: N.NW.string(N.t.fi3UQE)
       })
     }), (0, r.jsx)(u.F, {
-      setting: b.s6.SETTINGS_ADVANCED_APPLICATION_TEST_MODE,
+      setting: _.s6.SETTINGS_ADVANCED_APPLICATION_TEST_MODE,
       children: (0, r.jsx)(a.j7V, {
         value: null != E,
         note: N.NW.string(N.t["52hMnJ"]),
@@ -119,7 +119,7 @@ function E() {
         children: N.NW.string(N.t.erOqlp)
       })
     }), (0, r.jsx)(u.F, {
-      setting: b.s6.SETTINGS_ADVANCED_SHOW_PLAY_AGAIN,
+      setting: _.s6.SETTINGS_ADVANCED_SHOW_PLAY_AGAIN,
       children: (0, r.jsx)(a.j7V, {
         value: j,
         note: N.NW.string(N.t["B/qU4O"]),
@@ -127,7 +127,7 @@ function E() {
         children: N.NW.string(N.t.qDZryM)
       })
     }), (0, r.jsxs)(u.F, {
-      setting: b.s6.SETTINGS_ADVANCED_CF_WARP,
+      setting: _.s6.SETTINGS_ADVANCED_CF_WARP,
       children: [(0, r.jsx)(a.j7V, {
         value: T,
         note: "Enable WARP Proxy Connection",
