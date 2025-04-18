@@ -8,7 +8,7 @@ var r = n(442837),
   o = n(535396);
 
 function s(e) {
-  return (0, r.e7)([l.Z], () => {
+  return (0, r.Wu)([l.Z], () => {
     let t = l.Z.getStateForGuild(e);
     return null == t ? [] : Array.from(o.KW.values()).map(e => t.powerups.get(e)).filter(i.lm)
   })

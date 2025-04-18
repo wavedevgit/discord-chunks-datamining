@@ -1,6 +1,6 @@
 /**
   Module ID: 10923
-  Original File Name: 4ad41e22ca00063f
+  Original File Name: 0854a583c6f878ec
 **/
 .editCard_a25a68 {
     background-color: var(--background-secondary);
@@ -11087,6 +11087,10 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     margin-bottom: 16px
 }
 
+.tooltip_d87d30 {
+    text-align: center
+}
+
 @media (min-width:1010px) {
     .grid_d87d30 {
         display: grid;
@@ -12958,4 +12962,4 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=4ad41e22ca00063f.css.map*/
+/*# sourceMappingURL=0854a583c6f878ec.css.map*/
