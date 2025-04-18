@@ -61,13 +61,13 @@ function S(e) {
     muteStreamAudio: y,
     selectedSource: Z,
     sourceType: I,
-    audioSourceId: O
+    audioSourceId: w
   }] = (0, h.E_)(), {
-    twoClickVariant: w
+    twoClickVariant: O
   } = (0, d.a)({
     location: "go_live_modal_refresh",
     autoTrackExposure: !1
-  }), T = (0, c.Z)(), [E, P] = null != (i = (0, x.Z)(S)) ? i : [N, C], R = (0, u.L)(S), W = (0, f.M)(E), k = I === s.vA.CAMERA, A = null != Z || !!w && (!m || k), M = null != Z ? null == Z || null == (t = Z.id) ? void 0 : t.startsWith(s.vA.CAMERA) : k, L = A ? void 0 : S === p.tI.PRESET_VIDEO ? _.NW.string(g.Z.MuHUFR) : S === p.tI.PRESET_DOCUMENTS ? _.NW.string(g.Z.y0JuYW) : void 0;
+  }), T = (0, c.Z)(), [E, P] = null != (i = (0, x.Z)(S)) ? i : [N, C], R = (0, u.L)(S), W = (0, f.M)(E), k = I === s.vA.CAMERA, A = null != Z || !!O && (!m || k), M = null != Z ? null == Z || null == (t = Z.id) ? void 0 : t.startsWith(s.vA.CAMERA) : k, L = A ? void 0 : S === p.tI.PRESET_VIDEO ? _.NW.string(g.Z.MuHUFR) : S === p.tI.PRESET_DOCUMENTS ? _.NW.string(g.Z.y0JuYW) : void 0;
   return (0, r.jsxs)("div", {
     className: j.root,
     children: [A && (0, r.jsx)(b, {
@@ -111,7 +111,7 @@ function S(e) {
           })]
         }), M ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(v, {}), (0, r.jsx)("span", {
-            children: null == (n = T[null != O ? O : ""]) ? void 0 : n.name
+            children: null == (n = T[null != w ? w : ""]) ? void 0 : n.name
           })]
         }) : null]
       })]

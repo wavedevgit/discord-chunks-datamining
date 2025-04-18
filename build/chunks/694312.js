@@ -22,18 +22,18 @@ function m(e, t) {
     _ = (0, o.Z)(b),
     y = "channel" in t && (0, l.aZ)(t.channel, "useActivityShelfData()"),
     x = i.useMemo(() => _.filter(c.lm), [_]),
-    C = i.useMemo(() => null != f && x.length > 0 && x[0].id === f && null != x[0].embeddedActivityConfig ? [{
+    v = i.useMemo(() => null != f && x.length > 0 && x[0].id === f && null != x[0].embeddedActivityConfig ? [{
       activity: x[0].embeddedActivityConfig,
       application: x[0]
     }] : [], [x, f]),
-    v = i.useMemo(() => m.map(e => {
+    C = i.useMemo(() => m.map(e => {
       let t = x.find(t => t.id === e.application_id);
       return null == t ? null : {
         activity: e,
         application: t
       }
     }).filter(c.lm), [m, x]);
-  return i.useMemo(() => [...C, ...v].filter(e => {
+  return i.useMemo(() => [...v, ...C].filter(e => {
     var t;
     let {
       activity: n
@@ -44,5 +44,5 @@ function m(e, t) {
       activity: t
     } = e;
     return !t.requires_age_gate || (null == n ? void 0 : n.nsfwAllowed) === !0 || (null == n ? void 0 : n.nsfwAllowed) == null
-  }).filter(e => !y || e.application.id !== l.gu), [null == n ? void 0 : n.nsfwAllowed, v, y, C])
+  }).filter(e => !y || e.application.id !== l.gu), [null == n ? void 0 : n.nsfwAllowed, C, y, v])
 }

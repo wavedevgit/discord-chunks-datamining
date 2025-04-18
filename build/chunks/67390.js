@@ -9,8 +9,8 @@ var l = r(120356),
   o = r.n(l),
   i = r(410030),
   u = r(231338),
-  c = r(388032),
-  a = r(60717);
+  a = r(388032),
+  c = r(60717);
 
 function s(e) {
   let {
@@ -19,10 +19,10 @@ function s(e) {
   } = e, l = (0, i.ZP)() === u.BR.LIGHT ? "https://cdn.discordapp.com/assets/content/e4ec02f7af5d01c8c168eb814823a94a6bf1ce440e70e35e5a6f18b0fdad3321.png" : "https://cdn.discordapp.com/assets/content/f814e4be3c27004f4e60c1bdad648ee24acfa9716c0be8048cc63b5b869e56a4.png";
   return (0, n.jsx)("img", {
     className: o()(t, {
-      [a.sm]: "sm" === r,
-      [a.md]: "md" === r
+      [c.sm]: "sm" === r,
+      [c.md]: "md" === r
     }),
     src: l,
-    alt: c.NW.string(c.t.htEhYm)
+    alt: a.NW.string(a.t.htEhYm)
   })
 }

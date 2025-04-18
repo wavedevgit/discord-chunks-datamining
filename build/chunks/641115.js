@@ -27,8 +27,8 @@ var r = n(200651),
   y = n(981631),
   Z = n(388032),
   I = n(319255),
-  O = n(669872),
-  w = n(971005);
+  w = n(669872),
+  O = n(971005);
 
 function T(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -78,13 +78,13 @@ function P(e) {
 
 function R() {
   return (0, r.jsxs)("div", {
-    className: O.toolTipTextContainer,
+    className: w.toolTipTextContainer,
     children: [(0, r.jsx)(d.SrA, {
       size: "md",
       color: x.JX.PREMIUM_TIER_2,
-      className: O.premiumIcon
+      className: w.premiumIcon
     }), (0, r.jsx)(d.Text, {
-      className: O.upsellText,
+      className: w.upsellText,
       variant: "text-sm/medium",
       children: Z.NW.string(Z.t.sEAnVF)
     })]
@@ -107,17 +107,17 @@ function W(e) {
       label: x
     } = i;
   return a ? (t = (0, r.jsx)(d.DY3, {
-    tooltipClassName: O.tooltip,
+    tooltipClassName: w.tooltip,
     spacing: 6,
     "aria-label": Z.NW.string(Z.t.sEAnVF),
     text: (0, r.jsx)(R, {}),
     children: (0, r.jsx)("div", {
-      className: O.textContainer,
+      className: w.textContainer,
       onMouseEnter: () => m(!0),
       onMouseLeave: () => m(!1),
       children: (0, r.jsx)(d.Text, {
         variant: "text-xs/bold",
-        className: s()(O.selectorNitroText, O.enhancedSelectorNitroText),
+        className: s()(w.selectorNitroText, w.enhancedSelectorNitroText),
         children: x
       })
     })
@@ -125,20 +125,20 @@ function W(e) {
     analyticsLocation: c,
     onClose: f
   })) : (t = (0, r.jsx)("div", {
-    className: O.textContainer,
+    className: w.textContainer,
     children: (0, r.jsx)(d.Text, {
       variant: "text-xs/normal",
-      className: s()(O.selectorText, {
-        [O.enhancedSelectorNitroText]: o
+      className: s()(w.selectorText, {
+        [w.enhancedSelectorNitroText]: o
       }),
       children: x
     })
   }), n = () => u(h)), {
     content: t,
-    className: s()(O.selectorButton, {
-      [O.selectorButtonSelected]: l,
-      [O.perksDemo]: o,
-      [O.premiumUpsell]: a
+    className: s()(w.selectorButton, {
+      [w.selectorButtonSelected]: l,
+      [w.perksDemo]: o,
+      [w.premiumUpsell]: a
     }),
     onClick: n
   }
@@ -200,7 +200,7 @@ function k(e) {
       children: (0, r.jsx)(d.xJW, {
         title: Z.NW.string(Z.t.rHyPXl),
         titleClassName: I.formItemTitleSlim,
-        className: O.documentModeGroup,
+        className: w.documentModeGroup,
         children: (0, r.jsx)(d.Text, {
           variant: "text-xs/normal",
           children: Z.NW.format(Z.t["U+hmam"], {
@@ -221,12 +221,12 @@ function k(e) {
     children: [(0, r.jsxs)(h.Z, {
       children: [(0, r.jsx)(d.xJW, {
         title: Z.NW.string(Z.t.rHyPXl),
-        className: O.settingsGroup,
+        className: w.settingsGroup,
         titleClassName: I.formItemTitleSlim,
         children: K
       }), (0, r.jsx)(d.xJW, {
         title: Z.NW.string(Z.t.SkkeIi),
-        className: O.settingsGroup,
+        className: w.settingsGroup,
         titleClassName: I.formItemTitleSlim,
         children: q
       })]
@@ -246,10 +246,10 @@ function k(e) {
       titleClassName: I.formItemTitle,
       className: I.modalContent,
       children: (0, r.jsxs)("div", {
-        className: O.qualitySettingsContainer,
+        className: w.qualitySettingsContainer,
         children: [(0, r.jsx)(d.q4e, {
           value: n,
-          className: w.marginTop8,
+          className: O.marginTop8,
           options: Q,
           onChange: e => R(e)
         }), $]

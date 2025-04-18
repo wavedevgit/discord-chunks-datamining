@@ -1,6 +1,6 @@
 /** Chunk was on 45480 **/
 r.d(t, {
-  default: () => b
+  default: () => O
 });
 var n = r(200651),
   o = r(192379),
@@ -9,15 +9,16 @@ var n = r(200651),
   a = r(541099),
   c = r(827498),
   i = r(421591),
-  u = r(496977),
-  f = r(314734),
-  d = r(388032),
-  p = r(135647);
-let b = o.memo(function(e) {
+  u = r(176412),
+  f = r(496977),
+  d = r(314734),
+  p = r(388032),
+  b = r(135647);
+let O = o.memo(function(e) {
   var t, r, {
-      context: b
+      context: O
     } = e,
-    O = function(e, t) {
+    y = function(e, t) {
       if (null == e) return {};
       var r, n, o = function(e, t) {
         if (null == e) return {};
@@ -32,13 +33,13 @@ let b = o.memo(function(e) {
       }
       return o
     }(e, ["context"]);
-  let y = (0, l.e7)([a.Z], () => a.Z.shouldShowModal());
+  let m = (0, l.e7)([a.Z], () => a.Z.shouldShowModal());
   o.useEffect(() => {
-    y || (0, s.Fvk)(f.e9)
+    m || (0, s.Fvk)(d.e9)
   });
-  let m = (0, u.Z)();
+  let j = (0, f.Z)();
   return (0, n.jsx)("span", {
-    style: f.u$,
+    style: (0, u.kU)(),
     children: (0, n.jsx)(s.Y0X, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
@@ -57,14 +58,14 @@ let b = o.memo(function(e) {
       }
       return e
     }({
-      className: p.root,
-      "aria-label": d.NW.string(d.t.shUONj),
+      className: b.root,
+      "aria-label": p.NW.string(p.t.shUONj),
       size: s.CgR.DYNAMIC
-    }, O), r = r = {
+    }, y), r = r = {
       children: (0, n.jsx)(i.Z, {
-        context: b,
+        context: O,
         entrypoint: c._b.VOICE,
-        initHistory: m
+        initHistory: j
       })
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var r = Object.keys(e);

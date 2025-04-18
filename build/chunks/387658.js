@@ -19,14 +19,14 @@ var i = n(200651),
   _ = n(104919),
   y = n(583027),
   x = n(585483),
-  C = n(499254),
-  v = n(541099),
+  v = n(499254),
+  C = n(541099),
   g = n(827498),
   N = n(496158),
   j = n(676161),
   P = n(660090),
-  O = n(783097),
-  E = n(176412),
+  E = n(783097),
+  O = n(176412),
   A = n(870205),
   I = n(981631),
   S = n(689079),
@@ -34,9 +34,9 @@ var i = n(200651),
   L = n(758878),
   w = n(382249);
 let R = "placeholder",
-  k = [, , , , , ].fill(R);
+  Z = [, , , , , ].fill(R);
 
-function Z(e) {
+function k(e) {
   var t, n;
   let {
     context: l,
@@ -44,8 +44,8 @@ function Z(e) {
     section: s,
     sectionName: c
   } = e, d = r.useCallback(() => {
-    let e = v.Z.entrypoint();
-    C.yT(g.ti.COMMAND), (0, y.Mo)({
+    let e = C.Z.entrypoint();
+    v.yT(g.ti.COMMAND), (0, y.Mo)({
       command: o,
       location: b.Vh.APP_LAUNCHER_APPLICATION_VIEW,
       sectionName: c
@@ -60,7 +60,7 @@ function Z(e) {
     }), x.S.dispatch(I.CkL.FOCUS_CHANNEL_TEXT_AREA, {
       channelId: l.channel.id
     }))
-  }, [l, o, s, c]), p = (null != (n = null == (t = o.options) ? void 0 : t.length) ? n : 0) > 0, f = r.useMemo(() => (0, E.ae)(o.displayDescription, void 0), [o.displayDescription]), h = r.useMemo(() => (0, i.jsxs)("div", {
+  }, [l, o, s, c]), p = (null != (n = null == (t = o.options) ? void 0 : t.length) ? n : 0) > 0, f = r.useMemo(() => (0, O.ae)(o.displayDescription, void 0), [o.displayDescription]), h = r.useMemo(() => (0, i.jsxs)("div", {
     className: w.commandTextContainer,
     children: [(0, i.jsx)(u.Text, {
       variant: "text-sm/semibold",
@@ -79,7 +79,7 @@ function Z(e) {
     children: [(0, i.jsx)(u.Rny, {
       className: w.commandFocusBlock,
       children: h
-    }), p ? (0, i.jsx)(a.F, {}) : (0, i.jsx)(D, {
+    }), p ? (0, i.jsx)(a.F, {}) : (0, i.jsx)(W, {
       context: l,
       command: o,
       sectionName: c
@@ -134,7 +134,7 @@ function M() {
   })
 }
 
-function D(e) {
+function W(e) {
   let {
     context: t,
     command: n,
@@ -146,7 +146,7 @@ function D(e) {
     d = r.useCallback(async e => {
       if ("channel" !== t.type) return;
       e.stopPropagation();
-      let i = v.Z.lastShownEntrypoint();
+      let i = C.Z.lastShownEntrypoint();
       try {
         let {
           isAuthorized: e
@@ -160,13 +160,13 @@ function D(e) {
             sectionName: l
           }
         });
-        e && (await (0, O.Y$)({
+        e && (await (0, E.Y$)({
           command: n,
           optionValues: {},
           context: o,
           sectionName: l,
           commandOrigin: b.bB.APP_LAUNCHER_APPLICATION_VIEW
-        }), C.yT(g.ti.COMMAND))
+        }), v.yT(g.ti.COMMAND))
       } finally {
         c(!1)
       }
@@ -193,7 +193,7 @@ function D(e) {
   })
 }
 
-function W(e) {
+function D(e) {
   let {
     context: t,
     commands: n,
@@ -212,7 +212,7 @@ function W(e) {
     }), (0, i.jsx)("ul", {
       className: w.commandContainer,
       "aria-label": l,
-      children: n.map((e, n) => e === R ? (0, i.jsx)(M, {}, e + n) : (0, i.jsx)(Z, {
+      children: n.map((e, n) => e === R ? (0, i.jsx)(M, {}, e + n) : (0, i.jsx)(k, {
         context: t,
         command: e,
         section: r,
@@ -261,7 +261,7 @@ function B(e) {
   r.useEffect(() => {
     c(l.id)
   }, [l.id, c]);
-  let C = (0, j.Z)({
+  let v = (0, j.Z)({
     context: n,
     commands: y,
     limit: 5
@@ -270,16 +270,16 @@ function B(e) {
     s(y.length > 0)
   }, [s, y]), m || 0 !== y.length) ? (0, i.jsxs)("ul", {
     className: w.contentContainer,
-    children: [(0, i.jsx)(W, {
+    children: [(0, i.jsx)(D, {
       context: n,
       section: f,
-      commands: C,
+      commands: v,
       headerName: T.NW.string(T.t.acSE0t),
       sectionName: o
-    }), (0, i.jsx)(W, {
+    }), (0, i.jsx)(D, {
       context: n,
       section: f,
-      commands: m ? k : y,
+      commands: m ? Z : y,
       headerName: T.NW.string(T.t.DUU9Ly),
       sectionName: o,
       children: x && (0, i.jsx)(A.Z, {

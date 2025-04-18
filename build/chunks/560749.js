@@ -1,6 +1,6 @@
 /** Chunk was on 46746 **/
 n.d(t, {
-  Z: () => O
+  Z: () => w
 }), n(35282), n(539854), n(388685), n(387201), n(642613);
 var r = n(200651),
   i = n(192379),
@@ -63,7 +63,7 @@ function I(e) {
   })
 }
 
-function O(e) {
+function w(e) {
   let {
     onSelectChannel: t
   } = e, {
@@ -83,7 +83,7 @@ function O(e) {
       null != t && (0, S.JL)(t, p.Z, g.Z) && e.push(t)
     }
     return e
-  }), O = (0, l.Wu)([d.Z, m.Z, h.Z, p.Z, g.Z], () => {
+  }), w = (0, l.Wu)([d.Z, m.Z, h.Z, p.Z, g.Z], () => {
     let e = [],
       t = new Set;
     for (let n of d.Z.getChannelHistory()) {
@@ -93,10 +93,10 @@ function O(e) {
     for (let n of h.Z.getFrequentlyWithoutFetchingLatest()) n instanceof f.Sf && n.type === N.d4z.GUILD_VOICE && !t.has(n.id) && (0, S.JL)(n, p.Z, g.Z) && (t.add(n.id), e.push(n));
     return e
   }), T = i.useMemo(() => {
-    let e = new Set(O.map(e => e.id)),
+    let e = new Set(w.map(e => e.id)),
       t = new Set(v.map(e => e.id));
-    return [...v.toSorted((t, n) => e.has(t.id) && !e.has(n.id) ? -1 : e.has(n.id) && !e.has(t.id) ? 1 : 0).map(e => (0, o.Z)(e.id)).filter(b.lm), ...O.filter(e => !t.has(e.id)).map(e => (0, o.Z)(e.id)).filter(b.lm)]
-  }, [O, v]), E = "" !== c ? j : T;
+    return [...v.toSorted((t, n) => e.has(t.id) && !e.has(n.id) ? -1 : e.has(n.id) && !e.has(t.id) ? 1 : 0).map(e => (0, o.Z)(e.id)).filter(b.lm), ...w.filter(e => !t.has(e.id)).map(e => (0, o.Z)(e.id)).filter(b.lm)]
+  }, [w, v]), E = "" !== c ? j : T;
   return (0, r.jsxs)("div", {
     className: Z.root,
     children: [(0, r.jsx)(s.E1j, {
@@ -133,11 +133,11 @@ function O(e) {
           onSelectChannel: t
         }, i.record.id)
       }
-    }) : (0, r.jsx)(w, {})]
+    }) : (0, r.jsx)(O, {})]
   })
 }
 
-function w() {
+function O() {
   return (0, r.jsxs)("div", {
     className: Z.emptyState,
     children: [(0, r.jsx)(s._Ve, {

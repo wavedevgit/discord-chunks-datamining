@@ -701,8 +701,8 @@ function eq(e) {
 
 function eQ(e) {
   return {
-    minutes: Math.floor(e / 60),
-    seconds: Math.floor(e % 60)
+    minutes: Math.max(0, Math.floor(e / 60)),
+    seconds: Math.max(0, Math.floor(e % 60))
   }
 }
 

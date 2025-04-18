@@ -1,6 +1,6 @@
-/** Chunk was on 84921 **/
+/** Chunk was on 56422 **/
 n.d(t, {
-  UV: () => E,
+  UV: () => g,
   _s: () => u,
   kW: () => d,
   km: () => c
@@ -9,7 +9,7 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   l = n(273504),
-  o = n(388032);
+  s = n(388032);
 
 function a(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -30,7 +30,7 @@ function a(e) {
   return e
 }
 
-function s(e, t) {
+function o(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,7 +52,7 @@ function c(e) {
         } = await n.e("94005").then(n.bind(n, 144462));
         return n => {
           var l;
-          return (0, r.jsx)(i, s(a({
+          return (0, r.jsx)(i, o(a({
             initialCustomMessage: null != (l = t.metadata.customMessage) ? l : "",
             onSubmit: r => {
               t.metadata.customMessage = r, e(t), n.onClose()
@@ -63,55 +63,55 @@ function c(e) {
         }
       })
     }),
-    [l.jj.FLAG_TO_CHANNEL]: (t, o) => new Promise(c => {
+    [l.jj.FLAG_TO_CHANNEL]: (t, s) => new Promise(c => {
       (0, i.ZDy)(async () => {
         let {
           default: i
         } = await n.e("74543").then(n.bind(n, 643611)), u = t.actions.find(e => e.type === l.jj.FLAG_TO_CHANNEL);
-        return n => (0, r.jsx)(i, s(a({
-          action: o,
+        return n => (0, r.jsx)(i, o(a({
+          action: s,
           isEdit: null != u,
           triggerType: t.triggerType,
           guildId: e,
           onEditChannel: e => {
-            o.metadata.channelId = e, t.exemptChannels.add(e), c(o), n.onClose()
+            s.metadata.channelId = e, t.exemptChannels.add(e), c(s), n.onClose()
           }
         }, n), {
           onClose: () => (c(null), n.onClose())
         }))
       })
     }),
-    [l.jj.USER_COMMUNICATION_DISABLED]: (e, t) => new Promise(o => {
+    [l.jj.USER_COMMUNICATION_DISABLED]: (e, t) => new Promise(s => {
       (0, i.ZDy)(async () => {
         let {
           default: i
         } = await n.e("78273").then(n.bind(n, 41767)), c = e.actions.find(e => e.type === l.jj.USER_COMMUNICATION_DISABLED);
-        return n => (0, r.jsx)(i, s(a({
+        return n => (0, r.jsx)(i, o(a({
           action: t,
           isEdit: null != c,
           triggerType: e.triggerType,
           onUpdateDuration: e => {
-            null != e && (t.metadata.durationSeconds = e), o(t), n.onClose()
+            null != e && (t.metadata.durationSeconds = e), s(t), n.onClose()
           }
         }, n), {
-          onClose: () => (o(null), n.onClose())
+          onClose: () => (s(null), n.onClose())
         }))
       })
     })
   }
 }
 
-function u(e, t, l, o) {
+function u(e, t, l, s) {
   (0, i.ZDy)(async () => {
     let {
       default: i
     } = await n.e("37483").then(n.bind(n, 241046));
-    return n => (0, r.jsx)(i, s(a({}, n), {
+    return n => (0, r.jsx)(i, o(a({}, n), {
       automodDecision: {
         messageId: e,
         messageContent: t,
         decisionId: l,
-        channel: o
+        channel: s
       }
     }))
   })
@@ -122,23 +122,23 @@ function d(e, t) {
     let {
       default: i
     } = await n.e("28382").then(n.bind(n, 537623));
-    return n => (0, r.jsx)(i, s(a({}, n), {
+    return n => (0, r.jsx)(i, o(a({}, n), {
       messageId: e,
       guildId: t
     }))
   })
 }
 
-function E(e) {
-  (0, i.h7j)(t => (0, r.jsx)(i.ConfirmModal, s(a({
-    header: o.NW.string(o.t.wLGrjI),
-    confirmText: o.NW.string(o.t["cY+Ooa"]),
+function g(e) {
+  (0, i.h7j)(t => (0, r.jsx)(i.ConfirmModal, o(a({
+    header: s.NW.string(s.t.wLGrjI),
+    confirmText: s.NW.string(s.t["cY+Ooa"]),
     onConfirm: e,
-    cancelText: o.NW.string(o.t["ETE/oK"])
+    cancelText: s.NW.string(s.t["ETE/oK"])
   }, t), {
     children: (0, r.jsx)(i.Text, {
       variant: "text-md/normal",
-      children: o.NW.string(o.t.arYQ2d)
+      children: s.NW.string(s.t.arYQ2d)
     })
   })))
 }

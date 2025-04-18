@@ -8,8 +8,8 @@ var n = r(200651),
   o = r(481060),
   i = r(100527),
   u = r(906732),
-  c = r(181918),
-  a = r(670188),
+  a = r(181918),
+  c = r(670188),
   s = r(592125),
   d = r(91047);
 
@@ -42,21 +42,21 @@ function p(e) {
     ariaLabel: O
   } = e, {
     analyticsLocations: g
-  } = (0, u.ZP)(i.Z.USERNAME), y = (0, c.$V)(p, "useUsernameHook"), h = l.useCallback(e => {
+  } = (0, u.ZP)(i.Z.USERNAME), m = (0, a.$V)(p, "useUsernameHook"), y = l.useCallback(e => {
     let n = s.Z.getChannel(r);
     null != n && null != t && (0, d.Pv)(e, t, n)
   }, [t, r]);
   return l.useCallback(e => (l, i) => {
-    let c = null == e ? void 0 : e.colorStrings,
-      s = y && null != c && null != c.primaryColor && null != c.secondaryColor,
+    let a = null == e ? void 0 : e.colorStrings,
+      s = m && null != a && null != a.primaryColor && null != a.secondaryColor,
       d = t => {
         var r, i;
         return (0, n.jsx)(o.rz2, (r = f({}, null != t ? t : {}), i = i = {
-          onContextMenu: h,
+          onContextMenu: y,
           name: l,
           color: null == e ? void 0 : e.colorString,
           roleName: null == e ? void 0 : e.colorRoleName,
-          roleColors: s ? c : null,
+          roleColors: s ? a : null,
           "aria-label": O
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var r = Object.keys(e);
@@ -69,12 +69,12 @@ function p(e) {
           Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
         }), r))
       },
-      m = e => t => {
+      h = e => t => {
         v && null != t && t.stopPropagation(), e(t)
       };
     return (0, n.jsx)(u.Gt, {
       value: g,
-      children: null != t ? (0, n.jsx)(a.Z, {
+      children: null != t ? (0, n.jsx)(c.Z, {
         user: t,
         guildId: p,
         channelId: r,
@@ -100,10 +100,10 @@ function p(e) {
             return l
           }(e, ["onClick"]);
           return d(f({
-            onClick: m(t)
+            onClick: h(t)
           }, r))
         }
       }) : d(void 0)
     }, i)
-  }, [g, t, r, p, b, h, v, O, y])
+  }, [g, t, r, p, b, y, v, O, m])
 }

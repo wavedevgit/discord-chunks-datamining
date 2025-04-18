@@ -29,8 +29,8 @@ var r = n(200651),
   y = n(463727),
   Z = n(855403),
   I = n(299570),
-  O = n(960861),
-  w = n(59468),
+  w = n(960861),
+  O = n(59468),
   T = n(989941),
   E = n(39540),
   P = n(958707),
@@ -76,7 +76,7 @@ function z(e) {
     enableGoLiveCaptureCard: l
   } = y.Z.useExperiment({
     location: "GoLive_Source_Select"
-  }), a = S.Z.supports(L.AN.GO_LIVE_HARDWARE), [o, m] = i.useState(null), [N, C] = i.useState(null), [I, O] = i.useState(null), T = null != I && I.length > 0, [E, R] = i.useState(c.vA.WINDOW), [k, B] = i.useState(!1), z = i.useRef(null), F = i.useRef(new u.Xp), H = (0, d.e7)([p.ZP], () => p.ZP.getRunningGames()), V = function(e, t, n) {
+  }), a = S.Z.supports(L.AN.GO_LIVE_HARDWARE), [o, m] = i.useState(null), [N, C] = i.useState(null), [I, w] = i.useState(null), T = null != I && I.length > 0, [E, R] = i.useState(c.vA.WINDOW), [k, B] = i.useState(!1), z = i.useRef(null), F = i.useRef(new u.Xp), H = (0, d.e7)([p.ZP], () => p.ZP.getRunningGames()), V = function(e, t, n) {
     let r = (0, v.Zy)({
       location: M.dr.STREAM_SOURCE_SELECT
     });
@@ -97,7 +97,7 @@ function z(e) {
   }((0, d.e7)([_.Z], () => _.Z.quests), H, N), Y = i.useMemo(() => null == N ? null : [...N].sort((e, t) => (null == V ? void 0 : V.source.id) === e.id ? -1 : (null == V ? void 0 : V.source.id) === t.id ? 1 : U(t) - U(e)), [V, N]);
   i.useEffect(() => {
     let e = F.current;
-    return (0, w.t)({
+    return (0, O.t)({
       width: 176,
       height: 99
     }).then(e => {
@@ -106,17 +106,17 @@ function z(e) {
         windowSources: n,
         cameraSources: r
       } = e;
-      m(t), C(n), O(r)
+      m(t), C(n), w(r)
     }), e.start(1e3, async () => {
       let {
         screenSources: e,
         windowSources: t,
         cameraSources: n
-      } = await (0, w.t)({
+      } = await (0, O.t)({
         width: 176,
         height: 99
       });
-      m(e), C(t), O(n)
+      m(e), C(t), w(n)
     }), () => {
       e.stop()
     }
@@ -400,7 +400,7 @@ function Y(e) {
   } = (0, E.Z)(t, n);
   return i.useEffect(() => {
     (0, C.isLinux)() || (0, C.isMac)() && o().satisfies(null === m.Z || void 0 === m.Z ? void 0 : m.Z.os.release, k.jR) ? (0, I.T)(l) : (0, I.t)()
-  }, [l]), s === O.Uc.Error ? (0, r.jsx)(f.Text, {
+  }, [l]), s === w.Uc.Error ? (0, r.jsx)(f.Text, {
     className: G.errorMessage,
     variant: "text-md/normal",
     color: "text-danger",

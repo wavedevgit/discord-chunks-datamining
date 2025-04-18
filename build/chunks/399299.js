@@ -27,8 +27,8 @@ var r = n(200651),
   y = n(626135),
   Z = n(823379),
   I = n(63063),
-  O = n(358085),
-  w = n(653255),
+  w = n(358085),
+  O = n(653255),
   T = n(989941),
   E = n(618407),
   P = n(586290),
@@ -50,7 +50,7 @@ function F(e) {
     selectSource: n,
     sourceChanged: i,
     onChangeSource: l
-  } = e, s = (0, a.e7)([m.ZP, C.Z], () => (0, O.isWindows)() ? (0, T.Z)(m.ZP, C.Z) : null), c = (0, a.e7)([d.Z], () => (null == s ? void 0 : s.id) != null ? d.Z.getApplication(s.id) : null), u = (0, a.e7)([m.ZP], () => m.ZP.getRunningGames()), f = (0, a.Wu)([d.Z], () => u.map(e => null != e.id ? d.Z.getApplication(e.id) : null).filter(Z.lm), [u]), x = null;
+  } = e, s = (0, a.e7)([m.ZP, C.Z], () => (0, w.isWindows)() ? (0, T.Z)(m.ZP, C.Z) : null), c = (0, a.e7)([d.Z], () => (null == s ? void 0 : s.id) != null ? d.Z.getApplication(s.id) : null), u = (0, a.e7)([m.ZP], () => m.ZP.getRunningGames()), f = (0, a.Wu)([d.Z], () => u.map(e => null != e.id ? d.Z.getApplication(e.id) : null).filter(Z.lm), [u]), x = null;
   if (null != t ? x = t.name : null != s && (x = s.name), null == x) return null;
   let p = (0, M.Z)(s, t, u),
     g = i ? f.find(e => {
@@ -220,13 +220,13 @@ function K(e) {
     onChangeSelectedFPS: C,
     onChangeSelectedResolution: y,
     onChangeSelectedPreset: Z,
-    onChangeSelectedChannelId: O,
+    onChangeSelectedChannelId: w,
     onChangeSource: T,
     onChangeAudioDevice: k,
     onChangeGuild: M,
     onChangeSound: L,
     onChangePreviewDisabled: z
-  } = e, K = (0, a.e7)([S.Z, _.Z], () => _.Z.getChannel(S.Z.getVoiceChannelId())), q = (0, a.e7)([w.Z], () => w.Z.GPUDriversOutdated), Q = (0, a.e7)([w.Z], () => w.Z.problematicGPUDriver), $ = (0, a.e7)([N.default], () => N.default.getCurrentUser()), ee = (0, E.Z)();
+  } = e, K = (0, a.e7)([S.Z, _.Z], () => _.Z.getChannel(S.Z.getVoiceChannelId())), q = (0, a.e7)([O.Z], () => O.Z.GPUDriversOutdated), Q = (0, a.e7)([O.Z], () => O.Z.problematicGPUDriver), $ = (0, a.e7)([N.default], () => N.default.getCurrentUser()), ee = (0, E.Z)();
   null != t && t.id.startsWith("screen") && !b.Z.supportsScreenSoundshare() && (ee = B.NW.string(B.t["1b0Gm5"]));
   let et = !!(null == t ? void 0 : t.id.startsWith("camera")),
     en = null != $ && $.verified && !$.bot,
@@ -258,7 +258,7 @@ function K(e) {
     }) : (0, r.jsx)(R.Z, {
       guildId: f,
       selectedChannelId: l,
-      onChangeSelectedChannelId: O
+      onChangeSelectedChannelId: w
     }), null != f && en && er ? (0, r.jsx)(Y, {
       guildId: f
     }) : null, q ? (0, r.jsx)(V, {

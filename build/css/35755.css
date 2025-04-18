@@ -1,6 +1,6 @@
 /**
   Module ID: 35755
-  Original File Name: 05fb29d34998b1c6
+  Original File Name: 679ba4bd0db162bd
 **/
 .brokenImageIcon_f68fcb {
     color: var(--background-accent);
@@ -682,6 +682,11 @@
     margin-bottom: 116px
 }
 
+.friendsWhoPlay__95856.container__95856 {
+    gap: var(--spacing-16);
+    margin-bottom: 116px
+}
+
 .videoContainer__95856 {
     position: relative
 }
@@ -710,20 +715,30 @@
 }
 
 .overviewContainerWithVideo__95856 {
-    border-bottom-left-radius: var(--radius-sm);
-    border-bottom-right-radius: var(--radius-sm)
-}
-
-.overviewContainerNoVideo__95856,.overviewContainerWithVideo__95856 {
     background-color: var(--background-primary);
+    border-bottom-left-radius: var(--radius-sm);
+    border-bottom-right-radius: var(--radius-sm);
     display: flex;
     flex-direction: column;
     gap: var(--spacing-8);
     padding: var(--spacing-12)
 }
 
+.friendsWhoPlay__95856 .overviewContainerWithVideo__95856 {
+    padding-top: 0
+}
+
+.tabBar__95856 {
+    height: 29px
+}
+
 .overviewContainerNoVideo__95856 {
-    border-radius: var(--radius-sm)
+    background-color: var(--background-primary);
+    border-radius: var(--radius-sm);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+    padding: var(--spacing-12)
 }
 
 .titleContainer__95856 {
@@ -786,14 +801,27 @@
     gap: 4px
 }
 
-.experimentLayout__95856.entrypointContainer__95856 {
+.friendsWhoPlayPEP__95856 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+}
+
+.experimentLayout__95856.entrypointContainer__95856,.friendsWhoPlayPEP__95856 {
     background-color: var(--background-primary);
     bottom: 0;
-    gap: 10px;
     left: 0;
     padding: 16px;
     position: fixed;
     right: 0
+}
+
+.experimentLayout__95856.entrypointContainer__95856 {
+    gap: 10px
+}
+
+.friendsWhoPlayPEP__95856 .entrypointContainer__95856 {
+    margin: 0
 }
 
 .altLayout__95856.entrypointContainer__95856 .entryPointCheckbox__95856 {
@@ -1606,4 +1634,4 @@
     border: 3px solid CanvasText
 }
 
-/*# sourceMappingURL=05fb29d34998b1c6.css.map*/
+/*# sourceMappingURL=679ba4bd0db162bd.css.map*/

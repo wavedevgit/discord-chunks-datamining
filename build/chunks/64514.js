@@ -22,7 +22,7 @@ function p(e, t, n) {
 }
 class h extends l.Z {
   _initialize() {
-    this.focusedOrForegrounded = (0, u.H)(), i.Z.subscribe("WINDOW_FOCUS", this.handleWindowFocus), i.Z.subscribe("APP_STATE_UPDATE", this.handleAppStateUpdate), i.Z.subscribe("QUESTS_ENROLL_SUCCESS", this.handleEnrollmentSuccess), i.Z.subscribe("LOGIN_SUCCESS", this.handleLogin), i.Z.subscribe("LOGOUT", this.handleLogout), this.trackHeartbeat(!0), this.scheduleHeartbeatTracking()
+    this.focusedOrForegrounded = (0, u.H)(), i.Z.subscribe("WINDOW_FOCUS", this.handleWindowFocus), i.Z.subscribe("APP_STATE_UPDATE", this.handleAppStateUpdate), i.Z.subscribe("QUESTS_ENROLL_SUCCESS", this.handleEnrollmentSuccess), i.Z.subscribe("LOGIN_SUCCESS", this.handleLogin), i.Z.subscribe("LOGOUT", this.handleLogout), this.scheduleHeartbeatTracking()
   }
   _terminate() {
     this.stopAnalyticHeartbeat(), i.Z.unsubscribe("WINDOW_FOCUS", this.handleWindowFocus), i.Z.unsubscribe("APP_STATE_UPDATE", this.handleAppStateUpdate), i.Z.unsubscribe("QUESTS_ENROLL_SUCCESS", this.handleEnrollmentSuccess), i.Z.unsubscribe("LOGIN_SUCCESS", this.handleLogin), i.Z.unsubscribe("LOGOUT", this.handleLogout)
@@ -30,7 +30,7 @@ class h extends l.Z {
   constructor(...e) {
     var t;
     super(...e), t = this, p(this, "focusedOrForegrounded", !0), p(this, "heartbeatInterval", new r.Xp), p(this, "schedulerStarted", !1), p(this, "maybeStartHeartbeat", () => {
-      this.heartbeatInterval.isStarted() || this.heartbeatInterval.start(5 * o.Z.Millis.MINUTE, this.trackHeartbeat)
+      this.heartbeatInterval.isStarted() || (this.trackHeartbeat(), this.heartbeatInterval.start(5 * o.Z.Millis.MINUTE, this.trackHeartbeat))
     }), p(this, "startAnalyticHeartbeat", () => {
       this.schedulerStarted || (this.schedulerStarted = !0, s.Z.addBreadcrumb({
         category: "ad",

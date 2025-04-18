@@ -1,7 +1,7 @@
 /** Chunk was on 35755 **/
 n.d(t, {
   Q2: () => A,
-  pe: () => E
+  pe: () => O
 }), n(388685), n(539854), n(35282), n(472816), n(794429);
 var i = n(192379),
   r = n(392711),
@@ -20,8 +20,8 @@ var i = n(192379),
   _ = n(177653),
   y = n(631827),
   x = n(424602),
-  C = n(827498),
-  v = n(783097),
+  v = n(827498),
+  C = n(783097),
   g = n(689079),
   N = n(761652);
 
@@ -31,16 +31,16 @@ function j(e, t) {
 }
 
 function P(e, t) {
-  let n = (0, v.$d)(e),
-    i = (0, v.$d)(t);
+  let n = (0, C.$d)(e),
+    i = (0, C.$d)(t);
   return (0, p.un)(n, i)
 }
 
-function O(e, t) {
+function E(e, t) {
   return (0, p.un)(e.displayName, t.displayName)
 }
 
-function E(e) {
+function O(e) {
   let {
     context: t,
     query: n,
@@ -54,7 +54,7 @@ function E(e) {
   let {
     commands: b,
     commandSectionMap: _,
-    loading: C
+    loading: v
   } = function(e) {
     var t, n;
     let {
@@ -88,7 +88,7 @@ function E(e) {
     context: t,
     includeBuiltIn: !0
   }), {
-    apps: E
+    apps: O
   } = function(e) {
     let {
       context: t,
@@ -99,7 +99,7 @@ function E(e) {
       includeNonEmbeddedApps: a
     } = e, s = "channel" === t.type ? t.channel : void 0, u = (0, m.Hs)(s, [c.yU.CHAT]).hasBaseAccessPermissions, d = (0, p.em)(t, u, l), f = (0, p.PL)(u, l), h = i.useCallback(e => {
       let t = e.descriptor.application;
-      return null != t && (!!(o && (0, v.ye)(t)) || null != t && a && !(0, v.ye)(t) && (!n || Object.keys(e.commands).length > 0))
+      return null != t && (!!(o && (0, C.ye)(t)) || null != t && a && !(0, C.ye)(t) && (!n || Object.keys(e.commands).length > 0))
     }, [o, a, n]), b = [], _ = new Set;
     if (null != d.result)
       for (let e of Object.values(d.result.sections)) {
@@ -111,7 +111,7 @@ function E(e) {
         let t = e.descriptor.application;
         null != t && !_.has(t.id) && h(e) && b.push(t)
       }
-    a && r && b.push(v.Wx);
+    a && r && b.push(C.Wx);
     let y = "channel" in t && (0, x.aZ)(t.channel, "AppLauncherSearchUtils.useApplicationsInContext()");
     return {
       apps: b.filter(e => !y || e.id !== x.gu),
@@ -212,11 +212,11 @@ function E(e) {
       }, (e, t) => {
         let n = d.ZP.getScoreWithoutLoadingLatest(u, e);
         return d.ZP.getScoreWithoutLoadingLatest(u, t) - n
-      }), O]
+      }), E]
     })
   }, [a, b, r, t, n]), S = i.useMemo(() => {
     if (0 === I.length) return [];
-    let e = new Map(E.map(e => [e.id, e]));
+    let e = new Map(O.map(e => [e.id, e]));
     return l().compact(I.map(t => {
       var n;
       let i = e.get(t.applicationId);
@@ -228,17 +228,17 @@ function E(e) {
         section: r
       }
     }))
-  }, [E, I, _]), T = i.useMemo(() => {
+  }, [O, I, _]), T = i.useMemo(() => {
     var e, i, r, l, a;
     let u = [];
     if (h) {
-      let e = new Set(E.map(e => {
+      let e = new Set(O.map(e => {
         let {
           id: t
         } = e;
         return t
       }));
-      u.push(...E), u.push(...A.filter(t => {
+      u.push(...O), u.push(...A.filter(t => {
         let {
           application: {
             id: n
@@ -251,7 +251,7 @@ function E(e) {
         } = e;
         return t
       }))
-    } else s && (u = E);
+    } else s && (u = O);
     return (0, y.N)(u, {
       limit: o,
       filterPredicates: [function(e) {
@@ -277,25 +277,25 @@ function E(e) {
           }) === f.mF.ALLOWED)
         }
       }(t)],
-      bucketPredicates: [(i = e = n, e => (0, v.$d)(e).toLocaleLowerCase().startsWith(i.toLocaleLowerCase())), (r = e, e => (0, v.$d)(e).toLocaleLowerCase().includes(r.toLocaleLowerCase())), (l = e, e => {
+      bucketPredicates: [(i = e = n, e => (0, C.$d)(e).toLocaleLowerCase().startsWith(i.toLocaleLowerCase())), (r = e, e => (0, C.$d)(e).toLocaleLowerCase().includes(r.toLocaleLowerCase())), (l = e, e => {
         var t, n;
-        let i = null == (t = (0, v.jD)(e)) ? void 0 : t.toLocaleLowerCase();
+        let i = null == (t = (0, C.jD)(e)) ? void 0 : t.toLocaleLowerCase();
         return null != (n = null == i ? void 0 : i.startsWith(l.toLocaleLowerCase())) && n
       }), (a = e, e => {
         var t, n;
-        let i = null == (t = (0, v.jD)(e)) ? void 0 : t.toLocaleLowerCase();
+        let i = null == (t = (0, C.jD)(e)) ? void 0 : t.toLocaleLowerCase();
         return null != (n = null == i ? void 0 : i.includes(a.toLocaleLowerCase())) && n
       })],
       sortComparers: [j, P]
     })
-  }, [s, h, o, t, n, E, A]), L = S.length > 0, w = T.length > 0;
+  }, [s, h, o, t, n, O, A]), L = S.length > 0, w = T.length > 0;
   return {
     commandResults: S,
     hasCommandResults: L,
     applicationResults: T,
     hasApplicationResults: w,
     isEmptyState: !L && !w,
-    loading: C && a
+    loading: v && a
   }
 }
 
@@ -308,7 +308,7 @@ function A(e) {
     entrypoint: c
   } = e;
   n.startsWith("".concat(N.GI)) && (n = n.substring(1));
-  let u = c === C._b.VOICE,
+  let u = c === v._b.VOICE,
     d = "channel" === t.type ? t.channel.guild_id : void 0,
     [p, m] = i.useState(1),
     f = i.useRef(p);
@@ -357,7 +357,7 @@ function A(e) {
       excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: !0,
       source: a.F.APP_LAUNCHER
     })) ? void 0 : i.results) ? r : []
-  }), [h, d, n, p, u]), v = i.useCallback(() => {
+  }), [h, d, n, p, u]), C = i.useCallback(() => {
     let e = x.length;
     h === _.M.FETCHED && e === f.current && e > 0 && e < y && e < l && x[e - 1].length > 0 && (f.current++, m(e => e + 1))
   }, [h, l, x, y]), g = i.useCallback(e => {
@@ -391,6 +391,6 @@ function A(e) {
   }, [d, n]), {
     fetchState: h,
     applicationResults: x.flat(),
-    fetchNextPage: v
+    fetchNextPage: C
   }
 }

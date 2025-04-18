@@ -1,6 +1,6 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => C
+  Z: () => v
 }), n(388685);
 var i = n(200651),
   r = n(192379),
@@ -20,20 +20,20 @@ var i = n(200651),
   y = n(388032),
   x = n(244909);
 
-function C(e) {
+function v(e) {
   let {
     context: t,
     application: n,
-    sectionName: C,
-    primaryEntryPointCommand: v,
+    sectionName: v,
+    primaryEntryPointCommand: C,
     buttonSize: g = l.PhG.MEDIUM,
     playSolo: N = !1
   } = e, j = r.useId(), P = r.useCallback(() => {
     c.yT(p.ti.ACTIVITY)
-  }, []), O = r.useCallback(() => {
+  }, []), E = r.useCallback(() => {
     d.Z.shouldShowModal() && P()
   }, [P]), {
-    submitting: E,
+    submitting: O,
     wasSubmitting: A
   } = (0, h.Z)({
     applicationId: n.id,
@@ -45,33 +45,33 @@ function C(e) {
     context: t
   }), L = u.PM.useExperiment({
     location: "AppPrimaryEntryPointButton()"
-  }), w = r.useMemo(() => (0, f.XZ)(v.displayName), [v.displayName]), {
+  }), w = r.useMemo(() => (0, f.XZ)(C.displayName), [C.displayName]), {
     onActivityItemSelected: R,
-    buttonColor: k,
-    buttonText: Z
+    buttonColor: Z,
+    buttonText: k
   } = (0, b.P7)({
     context: t,
     application: n,
     location: a.Vh.APP_LAUNCHER_APPLICATION_VIEW,
-    sectionName: C,
+    sectionName: v,
     commandName: w,
     autoDismissOnClick: T === o.JS.LEAVE,
     launchingComponentId: j,
-    submitting: null != A ? A : E,
-    onConfirmActivityLaunchChecksAlertOpen: O,
+    submitting: null != A ? A : O,
+    onConfirmActivityLaunchChecksAlertOpen: E,
     playSolo: !!L.altLayout && N
   }), {
     disabled: M,
-    reason: D
+    reason: W
   } = (0, m.Z)({
     context: t,
     application: n,
     activityAction: T
-  }), W = L.enabled ? y.NW.string(y.t["1KxmJi"]) : Z;
+  }), D = L.enabled ? y.NW.string(y.t["1KxmJi"]) : k;
   return (0, i.jsx)(l.ua7, {
-    shouldShow: null != D,
+    shouldShow: null != W,
     tooltipContentClassName: x.tooltipContent,
-    text: D,
+    text: W,
     children: e => {
       var t, r, {
           onClick: o
@@ -111,7 +111,7 @@ function C(e) {
       }({}, a), r = r = {
         type: "submit",
         size: g,
-        color: k,
+        color: Z,
         disabled: M,
         submitting: I,
         onClick: () => {
@@ -121,10 +121,10 @@ function C(e) {
           })
         },
         "aria-label": y.NW.formatToPlainString(y.t["XjP/R0"], {
-          buttonText: W,
+          buttonText: D,
           applicationName: n.name
         }),
-        children: W
+        children: D
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

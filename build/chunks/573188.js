@@ -1,10 +1,10 @@
-/** Chunk was on 35755 **/
+/** Chunk was on 23491 **/
 n.d(t, {
-  X: () => l
+  X: () => a
 });
 var i = n(818083),
   r = n(987338);
-let l = (0, i.B)({
+let a = (0, i.B)({
   kind: "user",
   id: "2025-04_app_launcher_friends_who_play",
   commonTriggerPoint: r.$P.CONNECTION_OPEN,

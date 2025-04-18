@@ -12,21 +12,32 @@ let o = (0, n.B)({
   label: "Go Live Modal Refresh",
   defaultConfig: {
     showRefreshedGoLiveModal: !1,
-    twoClickVariant: !1
+    twoClickVariant: !1,
+    skipModalForGame: !1
   },
   treatments: [{
     id: 1,
     label: "Show refreshed go live modal",
     config: {
       showRefreshedGoLiveModal: !0,
-      twoClickVariant: !1
+      twoClickVariant: !1,
+      skipModalForGame: !0
     }
   }, {
     id: 2,
     label: "Show refreshed go live modal, 2 click variant",
     config: {
       showRefreshedGoLiveModal: !0,
-      twoClickVariant: !0
+      twoClickVariant: !0,
+      skipModalForGame: !0
+    }
+  }, {
+    id: 3,
+    label: "Show refreshed go live modal, 2 click variant, dont skip modal for game",
+    config: {
+      showRefreshedGoLiveModal: !0,
+      twoClickVariant: !0,
+      skipModalForGame: !1
     }
   }]
 });

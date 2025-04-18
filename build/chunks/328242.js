@@ -1,6 +1,6 @@
 /** Chunk was on 46746 **/
 n.d(t, {
-  Z: () => p
+  Z: () => g
 }), n(388685);
 var r = n(200651);
 n(192379);
@@ -10,12 +10,13 @@ var i = n(120356),
   a = n(481060),
   o = n(63063),
   c = n(668519),
-  d = n(615161),
-  u = n(519229),
-  f = n(388032),
-  m = n(483205);
+  d = n(855403),
+  u = n(615161),
+  f = n(519229),
+  m = n(388032),
+  h = n(483205);
 
-function h(e) {
+function x(e) {
   let {
     source: t
   } = e;
@@ -23,7 +24,7 @@ function h(e) {
     size: "xs"
   }) : t.id.startsWith(s.vA.WINDOW) ? null != t.icon && "" !== t.icon ? (0, r.jsx)("img", {
     src: t.icon,
-    className: m.sourceIcon,
+    className: h.sourceIcon,
     alt: ""
   }) : (0, r.jsx)(a.GON, {
     size: "xs"
@@ -32,7 +33,7 @@ function h(e) {
   })
 }
 
-function x(e) {
+function p(e) {
   let {
     source: t,
     selected: n,
@@ -44,43 +45,43 @@ function x(e) {
   } = t;
   return (0, r.jsxs)(a.P3F, {
     onClick: () => s(t),
-    className: l()(m.source, {
-      [m.selectedSource]: n
+    className: l()(h.source, {
+      [h.selectedSource]: n
     }),
     children: [(0, r.jsx)("div", {
-      className: m.sourcePreviewContainer,
+      className: h.sourcePreviewContainer,
       children: (0, r.jsxs)("div", {
-        className: m.sourcePreview,
+        className: h.sourcePreview,
         children: [(0, r.jsx)("img", {
           src: o,
-          className: m.sourcePreviewImage,
+          className: h.sourcePreviewImage,
           alt: ""
         }), !i && (0, r.jsx)("div", {
-          className: m.sourceOverlay,
+          className: h.sourceOverlay,
           children: (0, r.jsx)("div", {
-            className: m.sourceOverlayCTA,
+            className: h.sourceOverlayCTA,
             children: (0, r.jsx)(a.Text, {
               variant: "text-sm/medium",
               color: "button-filled-white-text",
-              children: f.NW.string(f.t.z7WGho)
+              children: m.NW.string(m.t.z7WGho)
             })
           })
         })]
       })
     }), (0, r.jsxs)("div", {
-      className: m.sourceNameContainer,
-      children: [(0, r.jsx)(h, {
+      className: h.sourceNameContainer,
+      children: [(0, r.jsx)(x, {
         source: t
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
-        className: m.sourceName,
+        className: h.sourceName,
         children: c
       })]
     })]
   })
 }
 
-function p(e) {
+function g(e) {
   var t;
   let {
     onClick: n
@@ -92,45 +93,45 @@ function p(e) {
   }), [{
     windowSources: l,
     deviceSources: o,
-    screenSources: u,
-    sourceType: f,
-    fetchingSources: h,
-    selectedSource: p
-  }] = (0, d.E_)();
-  return h ? (0, r.jsx)("div", {
-    className: m.loading,
+    screenSources: f,
+    sourceType: m,
+    fetchingSources: x,
+    selectedSource: g
+  }] = (0, u.E_)();
+  return x ? (0, r.jsx)("div", {
+    className: h.loading,
     children: (0, r.jsx)(a.$jN, {})
-  }) : (t = f === s.vA.WINDOW ? l : f === s.vA.SCREEN ? u : o, f === s.vA.CAMERA && 0 === t.length ? (0, r.jsx)(g, {}) : (0, r.jsx)("div", {
-    className: m.root,
-    children: t.map(e => (0, r.jsx)(x, {
+  }) : (t = m === s.vA.WINDOW ? l : m === s.vA.SCREEN ? f : o, m === s.vA.CAMERA && 0 === t.length ? (0, r.jsx)(_, {}) : (0, r.jsx)("div", {
+    className: h.root,
+    children: t.map(e => (0, r.jsx)(p, {
       onClick: n,
       source: e,
-      selected: (null == p ? void 0 : p.id) === e.id,
+      selected: null != g && "windowHandle" in g ? (0, d.Z)(e.id, g.windowHandle) : (null == g ? void 0 : g.id) === e.id,
       twoClickVariant: i
     }, e.id))
   }))
 }
 
-function g() {
+function _() {
   return (0, r.jsxs)("div", {
-    className: m.emptyState,
+    className: h.emptyState,
     children: [(0, r.jsx)(a.Odl, {
       size: "md",
       color: a.TVs.colors.ICON_MUTED,
-      className: m.emptyIcon
+      className: h.emptyIcon
     }), (0, r.jsx)(a.Text, {
       variant: "text-lg/medium",
       color: "header-primary",
-      className: m.emptyHeader,
-      children: f.NW.string(u.Z["/z3YaW"])
+      className: h.emptyHeader,
+      children: m.NW.string(f.Z["/z3YaW"])
     }), (0, r.jsx)(a.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
-      className: m.emptyBody,
-      children: f.NW.string(u.Z.agwSGB)
+      className: h.emptyBody,
+      children: m.NW.string(f.Z.agwSGB)
     }), (0, r.jsx)(a.Text, {
       variant: "text-sm/semibold",
-      children: f.NW.format(u.Z.xpVzr6, {
+      children: m.NW.format(f.Z.xpVzr6, {
         helpdeskURL: o.Z.getArticleURL(0x53d41ade17)
       })
     })]

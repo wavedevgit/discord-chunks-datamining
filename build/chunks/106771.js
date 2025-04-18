@@ -24,8 +24,8 @@ function y(e) {
     command: n,
     application: y,
     onClick: x,
-    query: C,
-    searchResultsPosition: v,
+    query: v,
+    searchResultsPosition: C,
     onClickAppCardFriends: g
   } = e, N = r.useCallback(e => {
     if ((0, u.BQ)(y)) {
@@ -54,20 +54,20 @@ function y(e) {
   }, [y]), {
     iconURL: j,
     name: P,
-    description: O
+    description: E
   } = r.useMemo(() => (0, u.sl)(y, {
     fakeAppIconURL: _
-  }), [y]), E = r.useMemo(() => {
+  }), [y]), O = r.useMemo(() => {
     var e;
-    let t = null != (e = null == n ? void 0 : n.displayDescription) ? e : O;
+    let t = null != (e = null == n ? void 0 : n.displayDescription) ? e : E;
     return null == t ? null : (0, d.ae)(t, void 0)
-  }, [O, null == n ? void 0 : n.displayDescription]), {
+  }, [E, null == n ? void 0 : n.displayDescription]), {
     trackSearchResultsItemImpressionRef: A
   } = (0, h.Z)({
     applicationId: y.id,
     commandId: null == n ? void 0 : n.id,
-    query: C,
-    searchResultsPosition: v
+    query: v,
+    searchResultsPosition: C
   }), {
     enabled: I
   } = c.X.useExperiment({
@@ -105,7 +105,7 @@ function y(e) {
           variant: "text-sm/normal",
           color: "text-secondary",
           lineClamp: 1,
-          children: E
+          children: O
         })]
       }), null != n ? (0, i.jsx)(l.Text, {
         className: b.cmdAppName,
