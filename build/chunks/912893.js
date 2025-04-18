@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  G: () => o,
+  G: () => a,
   U: () => i
 });
 var r = n(570140);
@@ -16,7 +16,7 @@ function i(e, t, n, i) {
   })
 }
 
-function o(e, t, n) {
+function a(e, t, n) {
   r.Z.dispatch({
     type: "BURST_REACTION_PICKER_ANIMATION_CLEAR",
     messageId: e,

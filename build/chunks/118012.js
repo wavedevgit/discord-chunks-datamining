@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  o = n.n(i),
-  a = n(163490),
+  a = n.n(i),
+  o = n(163490),
   s = n(967777);
 
 function l(e, t, n) {
@@ -53,8 +53,8 @@ function f(e, t) {
   if (null == e) return {};
   var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -62,24 +62,24 @@ function f(e, t) {
 function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let p = Object.freeze({
-    STANDARD: a.colorStandard,
-    MUTED: a.colorMuted,
-    ERROR: a.colorError,
-    BRAND: a.colorBrand,
-    LINK: a.colorLink,
-    HEADER_PRIMARY: a.colorHeaderPrimary,
-    HEADER_SECONDARY: a.colorHeaderSecondary,
-    STATUS_YELLOW: a.colorStatusYellow,
-    STATUS_GREEN: a.colorStatusGreen,
-    STATUS_RED: a.colorStatusRed,
-    INTERACTIVE_ACTIVE: a.colorInteractiveActive,
-    INTERACTIVE_NORMAL: a.colorInteractiveNormal,
-    ALWAYS_WHITE: a.colorWhite,
+    STANDARD: o.colorStandard,
+    MUTED: o.colorMuted,
+    ERROR: o.colorError,
+    BRAND: o.colorBrand,
+    LINK: o.colorLink,
+    HEADER_PRIMARY: o.colorHeaderPrimary,
+    HEADER_SECONDARY: o.colorHeaderSecondary,
+    STATUS_YELLOW: o.colorStatusYellow,
+    STATUS_GREEN: o.colorStatusGreen,
+    STATUS_RED: o.colorStatusRed,
+    INTERACTIVE_ACTIVE: o.colorInteractiveActive,
+    INTERACTIVE_NORMAL: o.colorInteractiveNormal,
+    ALWAYS_WHITE: o.colorWhite,
     CUSTOM: null
   }),
   h = Object.freeze({
@@ -105,9 +105,9 @@ let p = Object.freeze({
     } = e, E = f(e, ["className", "color", "size", "tag", "selectable", "strong", "children", "style", "aria-label"]);
     return (0, r.jsx)(s, d(c({
       "aria-label": g,
-      className: o()(n, i, t, {
-        [a.selectable]: l,
-        [a.strong]: u
+      className: a()(n, i, t, {
+        [o.selectable]: l,
+        [o.strong]: u
       }),
       style: m
     }, E), {

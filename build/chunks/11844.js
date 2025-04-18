@@ -16,9 +16,9 @@ var r = n(200651),
   p = n(267642),
   h = n(981631),
   f = n(388032),
-  _ = n(122039);
+  b = n(122039);
 
-function b(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -77,7 +77,7 @@ let x = function() {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 719228));
-      return t => (0, r.jsx)(e, N(b({}, t), {
+      return t => (0, r.jsx)(e, N(_({}, t), {
         onSelectGuild: C
       }))
     }, {
@@ -90,20 +90,20 @@ let x = function() {
     isBoostManagementDisabledForFractionalPremium: j
   });
   return (0, r.jsxs)("div", {
-    className: _.wrapper,
+    className: b.wrapper,
     children: [(0, r.jsx)(g.Z, {
-      className: _.boostIcon,
+      className: b.boostIcon,
       width: 16,
       height: 16
     }), (0, r.jsx)(a.Text, {
-      className: _.copy,
+      className: b.copy,
       color: "header-secondary",
       variant: "text-sm/medium",
       children: f.NW.format(f.t.kqC5vr, {
         boostAnyGuildHook: (e, t) => {
           let n = null != S,
             i = (0, r.jsx)(a.zxk, {
-              className: _.cta,
+              className: b.cta,
               disabled: n,
               color: a.zxk.Colors.LINK,
               look: a.zxk.Looks.LINK,
@@ -113,7 +113,7 @@ let x = function() {
           return n ? (0, r.jsx)(c.Z, {
             text: S,
             "aria-label": S.toString(),
-            children: e => (0, r.jsx)("span", N(b({}, e), {
+            children: e => (0, r.jsx)("span", N(_({}, e), {
               children: i
             }))
           }, t) : i

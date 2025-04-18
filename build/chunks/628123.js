@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  o = n(392711),
-  a = n.n(o),
+  a = n(392711),
+  o = n.n(a),
   s = n(818405),
   l = n(587158),
   c = n(286379),
@@ -56,7 +56,7 @@ function N() {
     children: I.NW.string(I.t["/Nz9ra"])
   })
 }
-let A = a().throttle(e => {
+let A = o().throttle(e => {
   g.Z.increment({
     name: c.V.APP_CRASHED,
     tags: ["reason:".concat(s.v.UNHANDLED_JS_ERROR), "level:".concat(l.c.FATAL), "modded_client:".concat(e)]

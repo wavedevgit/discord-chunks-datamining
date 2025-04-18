@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(442837),
   l = n(481060),
   c = n(22267),
@@ -34,7 +34,7 @@ function C(e) {
     user: t,
     guild: n,
     canUsePremiumCustomization: i,
-    onUpsellClick: o,
+    onUpsellClick: a,
     pendingBanner: s,
     pendingAccentColor: c,
     pendingBio: g,
@@ -85,7 +85,7 @@ function C(e) {
       displayProfile: W,
       profileType: T.y0.BITE_SIZE,
       pendingThemeColors: D,
-      className: a()(A.container, M),
+      className: o()(A.container, M),
       forceShowPremium: i,
       children: [(0, r.jsxs)("header", {
         className: A.header,
@@ -98,7 +98,7 @@ function C(e) {
           pendingAccentColor: c,
           isTryItOutFlow: k,
           disabledInputs: j,
-          onUpsellClick: () => null == o ? void 0 : o({
+          onUpsellClick: () => null == a ? void 0 : a({
             object: S.qAy.EDIT_PROFILE_BANNER
           })
         }), (0, r.jsx)(y.Z, {
@@ -113,7 +113,7 @@ function C(e) {
           className: x,
           disabledInputs: j,
           isTryItOutFlow: k,
-          onUpsellClick: () => null == o ? void 0 : o({
+          onUpsellClick: () => null == a ? void 0 : a({
             object: S.qAy.AVATAR
           })
         }), !U && (0, r.jsx)(m.Z, {
@@ -150,7 +150,7 @@ function R() {
   var e;
   let t = (0, s.e7)([E.default], () => E.default.getCurrentUser()),
     n = (0, s.e7)([g.Z], () => g.Z.getPendingNameplate()),
-    o = i.useMemo(() => {
+    a = i.useMemo(() => {
       var e;
       return null == t || null == (e = t.collectibles) || e.nameplate, N.NW.string(N.t.ziaxGh)
     }, [null == t || null == (e = t.collectibles) ? void 0 : e.nameplate, n]);
@@ -158,7 +158,7 @@ function R() {
     className: A.nameplatePreviewSection,
     children: [(0, r.jsx)(l.Text, {
       variant: "eyebrow",
-      children: o.toLocaleUpperCase()
+      children: a.toLocaleUpperCase()
     }), (0, r.jsx)(c.Z, {
       user: t,
       nameplate: n,

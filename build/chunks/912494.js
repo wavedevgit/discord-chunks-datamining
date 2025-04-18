@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  o = n.n(i),
-  a = n(399606),
+  a = n.n(i),
+  o = n(399606),
   s = n(607070),
   l = n(226690),
   c = n(339549);
@@ -15,7 +15,7 @@ var i = n(120356),
 function u(e) {
   let {
     className: t
-  } = e, i = (0, a.e7)([s.Z], () => s.Z.useReducedMotion);
+  } = e, i = (0, o.e7)([s.Z], () => s.Z.useReducedMotion);
   async function u() {
     let {
       default: e
@@ -25,6 +25,6 @@ function u(e) {
   return (0, r.jsx)(l.F, {
     importData: u,
     shouldAnimate: !i,
-    className: o()(c.sparkles, t)
+    className: a()(c.sparkles, t)
   })
 }

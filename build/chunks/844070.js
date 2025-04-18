@@ -6,14 +6,14 @@ n.d(t, {
 });
 var r = n(493683),
   i = n(529103),
-  o = n(292556),
-  a = n(703656),
+  a = n(292556),
+  o = n(703656),
   s = n(768581),
   l = n(981631),
   c = n(388032);
 
 function u(e, t, n) {
-  o.default.showNotification(s.ZP.getUserAvatarURL(e), e.username, t, {}, {
+  a.default.showNotification(s.ZP.getUserAvatarURL(e), e.username, t, {}, {
     omitViewTracking: !0,
     omitClickTracking: !0,
     tag: e.id,
@@ -31,7 +31,7 @@ function d(e) {
       t({
         userId: e.id
       })
-    }(0, a.uL)(l.Z5c.FRIENDS), i.Z.setSection(l.pJs.PENDING)
+    }(0, o.uL)(l.Z5c.FRIENDS), i.Z.setSection(l.pJs.PENDING)
   })
 }
 

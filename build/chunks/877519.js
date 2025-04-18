@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(147913),
   i = n(70956),
-  o = n(272008),
-  a = n(569984),
+  a = n(272008),
+  o = n(569984),
   s = n(497505),
   l = n(977156),
   c = n(46140);
@@ -28,7 +28,7 @@ class m extends r.Z {
   _fetch() {
     (0, l.cB)({
       location: c.dr.QUESTS_MANAGER
-    }) && !a.Z.isFetchingCurrentQuests && ((0, o.xw)(), (0, o.w)(s.Ok.DESKTOP_ACCOUNT_PANEL_AREA))
+    }) && !o.Z.isFetchingCurrentQuests && ((0, a.xw)(), (0, a.w)(s.Ok.DESKTOP_ACCOUNT_PANEL_AREA))
   }
   constructor(...e) {
     super(...e), u(this, "instantiatedAt", Date.now()), u(this, "initialFetchTimerId", null), u(this, "recurringFetchTimerId", null), u(this, "lastFetchAttemptedAt", 0), u(this, "lastFetchedQuestForLocaleChangeAt", 0), u(this, "handleQuestsFetchCurrentQuestsBegin", () => {
@@ -37,10 +37,10 @@ class m extends r.Z {
       window.clearTimeout(this.initialFetchTimerId), window.clearTimeout(this.recurringFetchTimerId), this.recurringFetchTimerId = window.setInterval(() => {
         Date.now() - this.lastFetchAttemptedAt > d && (this.lastFetchAttemptedAt = Date.now(), this._fetch())
       }, f), this.initialFetchTimerId = window.setTimeout(() => {
-        0 === a.Z.lastFetchedCurrentQuests && this._fetch()
+        0 === o.Z.lastFetchedCurrentQuests && this._fetch()
       }, Math.floor(Math.random() * _))
     }), u(this, "handleRunningGamesChange", () => {
-      this.instantiatedAt + h > Date.now() || a.Z.lastFetchedCurrentQuests + h > Date.now() || this._fetch()
+      this.instantiatedAt + h > Date.now() || o.Z.lastFetchedCurrentQuests + h > Date.now() || this._fetch()
     }), u(this, "handleUserSettingsProtoUpdate", e => {
       let {
         partial: t,

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(539854);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(911969),
   l = n(367907),
   c = n(998698),
@@ -35,7 +35,7 @@ var r = n(200651),
 let D = i.forwardRef(function(e, t) {
   let {
     value: n,
-    type: o,
+    type: a,
     channel: D,
     className: L,
     id: x,
@@ -63,8 +63,8 @@ let D = i.forwardRef(function(e, t) {
     disableAutoFocus: en,
     disableEnterToSubmit: er,
     allowNewLines: ei,
-    "aria-owns": eo,
-    "aria-expanded": ea,
+    "aria-owns": ea,
+    "aria-expanded": eo,
     "aria-haspopup": es,
     "aria-activedescendant": el,
     "aria-controls": ec,
@@ -76,30 +76,30 @@ let D = i.forwardRef(function(e, t) {
     var r;
     let {
       value: i,
-      selection: o
-    } = n, a = b.bN.richValue(e), s = e.selection, l = !1;
-    if (void 0 !== i && i !== a) {
+      selection: a
+    } = n, o = b.bN.richValue(e), s = e.selection, l = !1;
+    if (void 0 !== i && i !== o) {
       if (e.children = i, "parent" === t && !e.previewMarkdown && e.chatInputType === _.Ie.EDIT) {
         try {
           e.previewMarkdown = !0, (0, A.KH)(e, D.guild_id, D.id)
         } finally {
           e.previewMarkdown = !1
-        }(0, A.KH)(e, D.guild_id, D.id), o = void 0
+        }(0, A.KH)(e, D.guild_id, D.id), a = void 0
       }
-      "undo" !== t && void 0 !== i && i !== a && h.T.insertEntry(e, "other", !1, a, s), l = !0
+      "undo" !== t && void 0 !== i && i !== o && h.T.insertEntry(e, "other", !1, o, s), l = !0
     }
-    if (null == o || b.Ew.isValid(e, o) || (o = void 0), (l || !b.Ew.isValid(e, s)) && void 0 === o) {
+    if (null == a || b.Ew.isValid(e, a) || (a = void 0), (l || !b.Ew.isValid(e, s)) && void 0 === a) {
       let t = b.bN.end(e, []);
-      o = {
+      a = {
         anchor: t,
         focus: t
       }
     }
-    let u = null != o && !b.Ew.equals(o, s);
-    if (l && !en && b.bN.focus(e), null != o && u) {
-      e.selection = o;
+    let u = null != a && !b.Ew.equals(a, s);
+    if (l && !en && b.bN.focus(e), null != a && u) {
+      e.selection = a;
       let t = h.T.currentEntry(e);
-      null != t && (t.selection = o), l = !0
+      null != t && (t.selection = a), l = !0
     }
     let d = p.cr(e);
     if (null != d && d[0].command.id !== (null == (r = c.Z.getActiveCommand(D.id)) ? void 0 : r.id) && h.T.withMergedEntry(e, () => {
@@ -116,7 +116,7 @@ let D = i.forwardRef(function(e, t) {
     em.current = !0
   }, []), eO = (0, v.Z)({
     channel: D,
-    chatInputType: o,
+    chatInputType: a,
     canUseCommands: ee,
     canOnlyUseTextCommands: et,
     onChangeStart: ey,
@@ -134,14 +134,14 @@ let D = i.forwardRef(function(e, t) {
     if (null != t && null != t.options) {
       let i = eI(t, !1);
       e = i.values;
-      let o = p.cu(eO).filter(e => !i.results[e].success).map(e => {
+      let a = p.cu(eO).filter(e => !i.results[e].success).map(e => {
         var n;
         return (null != (n = t.options) ? n : []).find(t => t.name === e)
       });
-      for (let e of t.options) !e.required || e.name in i.values || (E.Q.insertCommandOption(eO, e), o.push(e));
-      if (o.length > 0) {
+      for (let e of t.options) !e.required || e.name in i.values || (E.Q.insertCommandOption(eO, e), a.push(e));
+      if (a.length > 0) {
         var n, r;
-        let e = o[0];
+        let e = a[0];
         E.Q.selectCommandOption(eO, e.name), f.S.dispatch(P.CkL.SHAKE_APP, {
           duration: 200,
           intensity: 2
@@ -206,13 +206,13 @@ let D = i.forwardRef(function(e, t) {
       handler: eC
     }), (0, r.jsx)("div", {
       ref: ep,
-      className: a()(L, w.slateContainer),
+      className: o()(L, w.slateContainer),
       children: (0, r.jsx)(m.Z, {
         id: x,
         editor: eO,
         channelId: D.id,
         guildId: D.guild_id,
-        className: a()(w.slateTextArea, G),
+        className: o()(w.slateTextArea, G),
         placeholder: j,
         readOnly: eE,
         spellCheck: $,
@@ -228,9 +228,9 @@ let D = i.forwardRef(function(e, t) {
         decorateExtra: ew,
         renderExtraElement: eD,
         renderExtraLeaf: eL,
-        "aria-owns": eo,
+        "aria-owns": ea,
         "aria-haspopup": es,
-        "aria-expanded": ea,
+        "aria-expanded": eo,
         "aria-activedescendant": el,
         "aria-controls": ec,
         "aria-labelledby": ef,

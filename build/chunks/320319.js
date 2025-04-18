@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(605236),
   h = n(706140),
   f = n(626135),
-  _ = n(314684),
-  b = n(715627),
+  b = n(314684),
+  _ = n(715627),
   N = n(404615),
   x = n(238108),
   E = n(32173),
@@ -75,7 +75,7 @@ let R = {
       forceShadow: N,
       cardType: C,
       confettiCanvas: O
-    } = e, w = null == e ? void 0 : e.onCtaClick, k = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), [W, L] = i.useState(!1), [B, M] = i.useState(!1), U = (0, _.Er)(), V = (0, _.IB)(), [G, F] = i.useState(!1), [H, z] = i.useState(t === E.u.TENURE_REWARD_COLLECTIBLE && V && (null == U ? void 0 : U.nitroTenureStatus) === S.EB.REDEEMABLE);
+    } = e, w = null == e ? void 0 : e.onCtaClick, k = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), [W, L] = i.useState(!1), [B, M] = i.useState(!1), U = (0, b.Er)(), V = (0, b.IB)(), [G, F] = i.useState(!1), [H, z] = i.useState(t === E.u.TENURE_REWARD_COLLECTIBLE && V && (null == U ? void 0 : U.nitroTenureStatus) === S.EB.REDEEMABLE);
     i.useEffect(() => {
       t === E.u.TENURE_REWARD_COLLECTIBLE && V && (null == U ? void 0 : U.nitroTenureStatus) === S.EB.REDEEMABLE && z(!0)
     }, [V, t, U]);
@@ -178,7 +178,7 @@ let R = {
         }),
         children: [(0, r.jsx)(Z, P(A({}, e), {
           ref: t === E.u.TENURE_REWARD_COLLECTIBLE ? ei : void 0
-        })), H && (0, r.jsx)(b.Z, {
+        })), H && (0, r.jsx)(_.Z, {
           speedValues: R,
           numBursts: 3,
           particlesPerBurst: 15,
@@ -252,23 +252,23 @@ let Z = i.forwardRef((e, t) => {
     className: p,
     perkComponent: h,
     cardVariant: f,
-    cardType: _,
-    onClick: b,
+    cardType: b,
+    onClick: _,
     backgroundImage: x,
     pillText: E,
     perkImage: S,
     imageOverlayText: v
-  } = e, T = _ === j.R0.CARD_CAROUSEL_FIRST_ROW || _ === j.R0.CARD_CAROUSEL_SECOND_ROW || _ === j.R0.CARD_CAROUSEL_THIRD_ROW, I = "" !== o || "" !== c || "" !== l && f === j.zW.REWARD, A = (0, N._)(f);
+  } = e, T = b === j.R0.CARD_CAROUSEL_FIRST_ROW || b === j.R0.CARD_CAROUSEL_SECOND_ROW || b === j.R0.CARD_CAROUSEL_THIRD_ROW, I = "" !== o || "" !== c || "" !== l && f === j.zW.REWARD, A = (0, N._)(f);
   return (0, r.jsxs)(u.P3F, {
     className: a()(y.card, p, null == (n = A.cardContainer) ? void 0 : n.className, {
-      [y.clickable]: null != b,
+      [y.clickable]: null != _,
       [y.hideOverflow]: T
     }),
     onMouseEnter: g,
     style: {
       backgroundImage: null != x ? "url(".concat(x, ")") : void 0
     },
-    onClick: b,
+    onClick: _,
     children: [null != E && (0, r.jsx)(u.Text, {
       variant: "text-xs/semibold",
       className: y.pill,

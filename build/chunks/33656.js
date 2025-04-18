@@ -16,9 +16,9 @@ var r = n(200651),
   p = n(726985),
   h = n(388032),
   f = n(495288),
-  _ = n(20493);
+  b = n(20493);
 
-function b(e) {
+function _(e) {
   let {
     label: t,
     onChange: n,
@@ -60,7 +60,7 @@ function N() {
     children: [(0, r.jsx)("div", {
       ref: t
     }), (0, r.jsxs)(o.hjN, {
-      className: _.marginTop40,
+      className: b.marginTop40,
       tag: o.RB0.H1,
       title: h.NW.string(h.t.TPchzM),
       children: [g.Od.map(e => {
@@ -68,7 +68,7 @@ function N() {
           category: t,
           label: i,
           subLabel: s
-        } = e, a = x[t], l = (0, r.jsx)(b, {
+        } = e, a = x[t], l = (0, r.jsx)(_, {
           label: i(),
           subLabel: s(),
           enabled: n[t],
@@ -93,7 +93,7 @@ function N() {
           type: o.geA.DESCRIPTION,
           children: h.NW.string(h.t.iYjQ8f)
         }), (0, r.jsx)(o.$i$, {
-          className: a()(_.marginTop40, _.marginBottom40)
+          className: a()(b.marginTop40, b.marginBottom40)
         })]
       })]
     })]

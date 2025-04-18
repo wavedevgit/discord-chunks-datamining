@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(442837),
-  o = n(481060),
-  a = n(320582),
+  a = n(481060),
+  o = n(320582),
   s = n(189156),
   l = n(699516),
   c = n(246946),
@@ -45,8 +45,8 @@ function C(e) {
   } = (0, i.cj)([l.Z], () => ({
     relationshipType: l.Z.getRelationshipType(t.id),
     originApplicationId: l.Z.getOriginApplicationId(t.id)
-  })), j = (0, a.vh)(t.id), U = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), G = t.id === n.id, B = (0, d.I5)(n);
-  return (0, r.jsxs)(o.Ttm, {
+  })), j = (0, o.vh)(t.id), U = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), G = t.id === n.id, B = (0, d.I5)(n);
+  return (0, r.jsxs)(a.Ttm, {
     fade: !0,
     className: A.body,
     children: [(0, r.jsx)(b.Z, {

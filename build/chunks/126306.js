@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(846519),
   l = n(186325),
   c = n(954332);
@@ -32,7 +32,7 @@ function p(e) {
   let {
     position: t,
     type: n,
-    children: o
+    children: a
   } = e, {
     reducedMotion: d
   } = i.useContext(l.S), p = d.enabled ? 3 : n, [h, m] = i.useState(null != t), [g] = i.useState(() => new s.V7), [E, b] = i.useState(!0), y = i.useRef(null);
@@ -47,11 +47,11 @@ function p(e) {
     null != t && g.start(10, () => m(!0))
   }, [t, g]), (0, r.jsx)("div", {
     "data-popout-animating": E,
-    className: a()(null != t ? _[t] : null, {
+    className: o()(null != t ? _[t] : null, {
       [f[p]]: null != t,
       [c.didRender]: h
     }),
-    children: o
+    children: a
   })
 }
 p.Types = d

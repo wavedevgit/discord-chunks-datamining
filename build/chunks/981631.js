@@ -27,7 +27,7 @@ n.d(t, {
   BhN: () => nZ,
   BiE: () => eq,
   Bjg: () => nH,
-  BmY: () => eo,
+  BmY: () => ea,
   BpS: () => ec,
   CgE: () => ry,
   CkL: () => tz,
@@ -83,7 +83,7 @@ n.d(t, {
   KJ3: () => rw,
   KsC: () => N,
   L4X: () => eF,
-  LAt: () => ta,
+  LAt: () => to,
   LPv: () => tq,
   LYt: () => th,
   Lg6: () => rP,
@@ -97,7 +97,7 @@ n.d(t, {
   N_j: () => n$,
   NgX: () => I,
   O0b: () => nc,
-  O0n: () => ea,
+  O0n: () => eo,
   O42: () => E.O4,
   O8q: () => n4,
   OBS: () => Y,
@@ -148,7 +148,7 @@ n.d(t, {
   T23: () => rX,
   TC2: () => g.TC,
   TNx: () => tT,
-  TPd: () => a.T,
+  TPd: () => o.T,
   TU7: () => tc,
   TaA: () => ri,
   TzF: () => nq,
@@ -168,7 +168,7 @@ n.d(t, {
   V_K: () => tK,
   VqG: () => g.Vq,
   Vzj: () => g.Vz,
-  WND: () => na,
+  WND: () => no,
   WtW: () => e4,
   Wyy: () => t6,
   X5t: () => g.X5,
@@ -205,7 +205,7 @@ n.d(t, {
   b8q: () => tM,
   bL: () => eC,
   c2C: () => nL,
-  d4z: () => a.d,
+  d4z: () => o.d,
   dAT: () => tW,
   dCx: () => t7,
   dG4: () => g.dG,
@@ -227,7 +227,7 @@ n.d(t, {
   f07: () => n9,
   fK7: () => g.fK,
   fMv: () => E.fM,
-  fo$: () => to,
+  fo$: () => ta,
   frH: () => g.fr,
   fzT: () => t2,
   gLR: () => rQ,
@@ -254,7 +254,7 @@ n.d(t, {
   jwA: () => nC,
   kEZ: () => j,
   kGb: () => rc,
-  kNB: () => ra,
+  kNB: () => ro,
   kVF: () => M,
   kg4: () => O,
   kod: () => eb,
@@ -269,7 +269,7 @@ n.d(t, {
   mFx: () => e_,
   n8r: () => nY,
   nkL: () => nV,
-  o3l: () => no,
+  o3l: () => na,
   oAB: () => tB,
   oCV: () => ni,
   oNc: () => U,
@@ -289,7 +289,7 @@ n.d(t, {
   qAy: () => tj,
   qWG: () => rZ,
   qXD: () => rE,
-  qc2: () => ro,
+  qc2: () => ra,
   qhL: () => te,
   qrD: () => w,
   r2o: () => k,
@@ -350,9 +350,9 @@ n.d(t, {
 }), n(388685), n(743606);
 var r = n(512722),
   i = n.n(r),
-  o = n(674746);
+  a = n(674746);
 n(722770);
-var a = n(106351),
+var o = n(106351),
   s = n(470167),
   l = n(388123),
   c = n(275726),
@@ -489,10 +489,10 @@ var K = function(e) {
   ei = function(e) {
     return e.ENABLED = "ENABLED", e.DISABLED = "DISABLED", e
   }({}),
-  eo = function(e) {
+  ea = function(e) {
     return e.CONNECT = "CONNECT", e.DISPATCH = "DISPATCH", e.LOG_MESSAGES = "LOG_MESSAGES", e.STORAGE_SYNC = "STORAGE_SYNC", e
   }({}),
-  ea = function(e) {
+  eo = function(e) {
     return e.TEXT_WIDGET = "TEXT_WIDGET", e
   }({}),
   es = function(e) {
@@ -1473,8 +1473,8 @@ let e7 = 128,
   tn = 64e3,
   tr = 96e3,
   ti = 1e3,
-  to = "0000",
-  ta = "1",
+  ta = "0000",
+  to = "1",
   ts = 99,
   tl = 1e4,
   tc = 1e4,
@@ -1739,7 +1739,7 @@ let t0 = new Set(["facebook", "contacts"]),
   }),
   t3 = 0x99aab5,
   t4 = [1752220, 3066993, 3447003, 0x9b59b6, 0xe91e63, 0xf1c40f, 0xe67e22, 0xe74c3c, 9807270, 6323595, 1146986, 2067276, 2123412, 7419530, 0xad1457, 0xc27c0e, 0xa84300, 0x992d22, 9936031, 5533306],
-  t5 = (0, u._i)(o.Z.BRAND_500);
+  t5 = (0, u._i)(a.Z.BRAND_500);
 i()(null != t5, "Brand color could not be parsed");
 let t6 = t5;
 var t8 = function(e) {
@@ -1765,8 +1765,8 @@ let ni = Object.freeze({
     2: 7,
     3: 14
   }),
-  no = 7,
-  na = 0;
+  na = 7,
+  no = 0;
 var ns = function(e) {
   return e[e.DEFAULT = 0] = "DEFAULT", e[e.GIFT = 1] = "GIFT", e[e.SALE = 2] = "SALE", e[e.PREMIUM_TIER_1 = 3] = "PREMIUM_TIER_1", e[e.PREMIUM_TIER_2 = 4] = "PREMIUM_TIER_2", e[e.MOBILE = 5] = "MOBILE", e[e.PREMIUM_TIER_0 = 6] = "PREMIUM_TIER_0", e[e.MOBILE_PREMIUM_TIER_2 = 7] = "MOBILE_PREMIUM_TIER_2", e
 }({});
@@ -2045,10 +2045,10 @@ var n7 = function(e) {
   ri = function(e) {
     return e.WINDOWS = "1", e.MACOS = "2", e.LINUX = "3", e
   }({}),
-  ro = function(e) {
+  ra = function(e) {
     return e[e.PURCHASE = 1] = "PURCHASE", e[e.PREMIUM_SUBSCRIPTION = 2] = "PREMIUM_SUBSCRIPTION", e[e.DEVELOPER_GIFT = 3] = "DEVELOPER_GIFT", e[e.TEST_MODE_PURCHASE = 4] = "TEST_MODE_PURCHASE", e[e.FREE_PURCHASE = 5] = "FREE_PURCHASE", e[e.USER_GIFT = 6] = "USER_GIFT", e[e.PREMIUM_PURCHASE = 7] = "PREMIUM_PURCHASE", e[e.APPLICATION_SUBSCRIPTION = 8] = "APPLICATION_SUBSCRIPTION", e[e.FREE_STAFF_PURCHASE = 9] = "FREE_STAFF_PURCHASE", e[e.QUEST_REWARD = 10] = "QUEST_REWARD", e[e.FRACTIONAL_REDEMPTION = 11] = "FRACTIONAL_REDEMPTION", e[e.VIRTUAL_CURRENCY_REDEMPTION = 12] = "VIRTUAL_CURRENCY_REDEMPTION", e
   }({}),
-  ra = function(e) {
+  ro = function(e) {
     return e[e.QUEST_REWARD = 1] = "QUEST_REWARD", e[e.DEVELOPER_GIFT = 2] = "DEVELOPER_GIFT", e[e.INVOICE = 3] = "INVOICE", e[e.REVERSE_TRIAL = 4] = "REVERSE_TRIAL", e
   }({}),
   rs = function(e) {

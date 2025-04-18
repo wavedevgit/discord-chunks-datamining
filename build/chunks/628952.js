@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  o = n.n(i),
-  a = n(979554),
+  a = n.n(i),
+  o = n(979554),
   s = n(442837),
   l = n(481060),
   c = n(987209),
@@ -73,7 +73,7 @@ let O = e => {
     giftRecipientError: T
   } = (0, c.wD)(), N = (0, s.e7)([f.default], () => f.default.getCurrentUser()), A = (0, p.k)(I);
   if (null == I) return null;
-  let [C] = I.items, R = () => C.type === a.Z.AVATAR_DECORATION ? m.NW.string(m.t["7v0T9P"]) : C.type === a.Z.PROFILE_EFFECT ? m.NW.string(m.t.wR5wOj) : null, P = null != S && S.id !== (null == N ? void 0 : N.id), w = () => {
+  let [C] = I.items, R = () => C.type === o.Z.AVATAR_DECORATION ? m.NW.string(m.t["7v0T9P"]) : C.type === o.Z.PROFILE_EFFECT ? m.NW.string(m.t.wR5wOj) : null, P = null != S && S.id !== (null == N ? void 0 : N.id), w = () => {
     null != t && null != E && E(t)
   };
   return (0, r.jsxs)("div", {
@@ -88,8 +88,8 @@ let O = e => {
         renderPopout: e => (0, r.jsx)(u.Z, v(b({}, e), {
           user: S,
           pendingAvatar: S.getAvatarURL(null, (0, l.pxk)(l.EFr.SIZE_80)),
-          pendingAvatarDecoration: C.type === a.Z.AVATAR_DECORATION ? C : null,
-          pendingProfileEffectId: C.type === a.Z.PROFILE_EFFECT ? C.id : null,
+          pendingAvatarDecoration: C.type === o.Z.AVATAR_DECORATION ? C : null,
+          pendingProfileEffectId: C.type === o.Z.PROFILE_EFFECT ? C.id : null,
           canUsePremiumCustomization: !0,
           disabledInputs: !0
         })),
@@ -107,7 +107,7 @@ let O = e => {
     }), (0, r.jsxs)(l.P3F, {
       tag: "div",
       onClick: w,
-      className: o()(g.previewContainer, {
+      className: a()(g.previewContainer, {
         [g.previewContainerSelected]: n && null == T,
         [g.previewContainerError]: n && null != T
       }),

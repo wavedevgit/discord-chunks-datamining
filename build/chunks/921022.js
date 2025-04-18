@@ -1,21 +1,21 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(192379),
   i = n(931609);
 
-function o(e) {
+function a(e) {
   let {
     delay: t,
     disable: n = !1
-  } = e, o = (0, i.Z)();
+  } = e, a = (0, i.Z)();
   r.useEffect(() => {
     if (t <= 0 || n) return;
     let e = setTimeout(() => {
-      o()
+      a()
     }, t);
     return () => clearTimeout(e)
-  }, [t, n, o])
+  }, [t, n, a])
 }

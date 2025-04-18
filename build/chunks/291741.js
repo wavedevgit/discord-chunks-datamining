@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   Dl: () => s,
-  Mk: () => a,
-  fD: () => o,
+  Mk: () => o,
+  fD: () => a,
   mO: () => i
 });
 let r = (0, n(818083).B)({
@@ -35,12 +35,12 @@ let r = (0, n(818083).B)({
   }, {
     autoTrackExposure: !1
   }).enabled,
-  o = e => r.getCurrentConfig({
+  a = e => r.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: !1
   }).defaultTimeout,
-  a = e => r.useExperiment({
+  o = e => r.useExperiment({
     location: e
   }, {
     autoTrackExposure: !1

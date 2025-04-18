@@ -10,15 +10,15 @@ function i(e) {
     image: t,
     file: n,
     uploadType: i,
-    guildId: o,
-    isTryItOutFlow: a = !1
+    guildId: a,
+    isTryItOutFlow: o = !1
   } = e;
   r.Z.dispatch({
     type: "PROFILE_CUSTOMIZATION_OPEN_PREVIEW_MODAL",
     image: t,
     file: n,
     uploadType: i,
-    guildId: o,
-    isTryItOutFlow: a
+    guildId: a,
+    isTryItOutFlow: o
   })
 }

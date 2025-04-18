@@ -5,8 +5,8 @@ n.d(t, {
 }), n(125548);
 var r = n(200651),
   i = n(192379),
-  o = n(25209),
-  a = n(794295),
+  a = n(25209),
+  o = n(794295),
   s = n(865427),
   l = n(853425),
   c = n(49012),
@@ -22,7 +22,7 @@ function f(e) {
         }, t.target)
       }, f.key);
       let _ = n(t.content, f),
-        p = "string" == typeof t.title && 0 !== t.title.length ? t.title : (0, o.Rp)(t.content),
+        p = "string" == typeof t.title && 0 !== t.title.length ? t.title : (0, a.Rp)(t.content),
         h = () => (0, u.r)(t),
         m = (null == e ? void 0 : e.mustConfirmExternalLink) ? e => (null == e || e.stopPropagation(), null == e || e.preventDefault(), (0, c.q)({
           href: t.target,
@@ -37,7 +37,7 @@ function f(e) {
       return f.noStyleAndInteraction ? (0, r.jsx)("span", {
         title: p,
         children: _
-      }, f.key) : (0, r.jsx)(a.Z, {
+      }, f.key) : (0, r.jsx)(o.Z, {
         title: p,
         href: t.target,
         trusted: h,

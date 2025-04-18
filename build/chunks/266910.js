@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(692547),
-  a = n(481060),
+  a = n(692547),
+  o = n(481060),
   s = n(220082),
   l = n(420596),
   c = n(880563),
@@ -59,8 +59,8 @@ function b(e, t) {
   if (null == e) return {};
   var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -68,8 +68,8 @@ function b(e, t) {
 function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let v = function(e) {
@@ -82,7 +82,7 @@ let v = function(e) {
     speaking: v = !1
   } = e, O = b(e, ["style", "src", "backgroundSrc", "userId", "pulseSpeakingIndicator", "speaking"]);
   let I = null != h ? h : n,
-    S = (0, s.ZP)(I, o.Z.unsafe_rawColors.PRIMARY_800.css),
+    S = (0, s.ZP)(I, a.Z.unsafe_rawColors.PRIMARY_800.css),
     T = (0, l.c)(!0, "VideoBackground-web").enabled,
     N = (0, u.ZP)(null != g ? g : _.lds),
     A = null == N ? void 0 : N.getBannerURL({
@@ -94,7 +94,7 @@ let v = function(e) {
         dispatchWait: !0
       })
     }, [T, g]), null == n) return null;
-  let C = (0, r.jsx)(a.qEK, m({
+  let C = (0, r.jsx)(o.qEK, m({
       className: p.avatarWrapper,
       src: n
     }, O)),

@@ -1,11 +1,11 @@
 /** Chunk was on 46746 **/
 n.d(t, {
-  Z: () => N
+  Z: () => S
 }), n(361932), n(187205);
 var r = n(200651);
 n(192379);
-var l = n(120356),
-  i = n.n(l),
+var i = n(120356),
+  l = n.n(i),
   s = n(392711),
   a = n.n(s),
   o = n(442837),
@@ -22,27 +22,27 @@ var l = n(120356),
   j = n(347226),
   v = n(213510);
 
-function S(e) {
+function b(e) {
   let {
     guildId: t,
     onClick: n
-  } = e, l = (0, o.e7)([f.Z], () => f.Z.getGuild(t)), i = (0, o.e7)([u.ZP, f.Z, m.Z], () => u.ZP.getChannels(t)[u.Zb].some(e => {
+  } = e, i = (0, o.e7)([f.Z], () => f.Z.getGuild(t)), l = (0, o.e7)([u.ZP, f.Z, m.Z], () => u.ZP.getChannels(t)[u.Zb].some(e => {
     let {
       channel: t
     } = e;
     return (0, p.JL)(t, f.Z, m.Z)
   }));
-  return null != l && i ? (0, r.jsxs)(c.P3F, {
+  return null != i && l ? (0, r.jsxs)(c.P3F, {
     onClick: () => n(t),
     className: v.guildRow,
     children: [(0, r.jsx)(d.Z, {
-      guild: l,
+      guild: i,
       size: d.Z.Sizes.SMALL,
       className: v.guildIcon
     }), (0, r.jsx)(c.Text, {
       variant: "text-md/normal",
       className: v.guildName,
-      children: l.toString()
+      children: i.toString()
     }), (0, r.jsx)(x.Z, {
       direction: x.Z.Directions.RIGHT,
       className: v.guildArrow
@@ -50,18 +50,18 @@ function S(e) {
   }) : null
 }
 
-function N(e) {
+function S(e) {
   let {
     onSelectGuild: t
   } = e, n = (0, o.e7)([h.ZP], () => h.ZP.getGuildFolders());
   return (0, r.jsx)(g.Z, {
     title: _.NW.string(_.t.JsqeEh),
-    scrollerClassName: i()(v.guildScroller, j.marginBottom),
+    scrollerClassName: l()(v.guildScroller, j.marginBottom),
     children: a().flatMap(n, e => {
       let {
         guildIds: n
       } = e;
-      return n.map(e => (0, r.jsx)(S, {
+      return n.map(e => (0, r.jsx)(b, {
         guildId: e,
         onClick: t
       }, e))

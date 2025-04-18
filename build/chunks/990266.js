@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  i: () => o
+  i: () => a
 });
 var r = n(818083),
   i = n(987338);
-let o = (0, r.B)({
+let a = (0, r.B)({
   kind: "user",
   id: "2024-11_expression_suggestions_disabled",
   label: "Expression Suggestions Disabled Experiment",

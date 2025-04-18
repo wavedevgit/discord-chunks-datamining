@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(481060),
   l = n(303835);
 
@@ -17,7 +17,7 @@ let u = e => {
   let {
     value: t,
     onChange: n,
-    className: o,
+    className: a,
     minValue: u,
     maxValue: d
   } = e, [f, _] = i.useState(t), p = c(f) || null != u && f <= u, h = c(f) || null != d && f >= d, m = e => {
@@ -34,17 +34,17 @@ let u = e => {
   return (0, r.jsx)(s.tEY, {
     within: !0,
     children: (0, r.jsxs)("div", {
-      className: a()(l.actions, o),
+      className: o()(l.actions, a),
       children: [(0, r.jsx)(s.P3F, {
         onClick: g,
         tabIndex: -1,
-        className: a()(l.iconWrapper, l.__invalid_subtract, {
+        className: o()(l.iconWrapper, l.__invalid_subtract, {
           [l.disabled]: p
         }),
         children: (0, r.jsx)(s.V_R, {
           size: "md",
           color: "currentColor",
-          className: a()(l.icon, {
+          className: o()(l.icon, {
             [l.disabled]: p
           })
         })
@@ -55,13 +55,13 @@ let u = e => {
       }), (0, r.jsx)(s.P3F, {
         onClick: E,
         tabIndex: -1,
-        className: a()(l.iconWrapper, l.__invalid_add, {
+        className: o()(l.iconWrapper, l.__invalid_add, {
           [l.disabled]: h
         }),
         children: (0, r.jsx)(s.qJs, {
           size: "md",
           color: "currentColor",
-          className: a()(l.icon, {
+          className: o()(l.icon, {
             [l.disabled]: h
           })
         })

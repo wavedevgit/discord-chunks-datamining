@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  G7: () => a,
+  G7: () => o,
   UQ: () => s,
   bc: () => c,
   g2: () => l
@@ -34,7 +34,7 @@ let i = (0, r.B)({
       }
     }]
   }),
-  o = (0, r.B)({
+  a = (0, r.B)({
     kind: "user",
     id: "2025-01_sensitive_content_defaults_new_users",
     label: "Sensitive Content Defaults - New Users",
@@ -62,7 +62,7 @@ let i = (0, r.B)({
     }]
   });
 
-function a(e) {
+function o(e) {
   let {
     enabled: t
   } = i.getCurrentConfig({
@@ -71,7 +71,7 @@ function a(e) {
     autoTrackExposure: !1
   }), {
     enabled: n
-  } = o.getCurrentConfig({
+  } = a.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: !1
@@ -88,7 +88,7 @@ function s(e) {
     autoTrackExposure: !1
   }), {
     enabled: n
-  } = o.useExperiment({
+  } = a.useExperiment({
     location: e
   }, {
     autoTrackExposure: !1

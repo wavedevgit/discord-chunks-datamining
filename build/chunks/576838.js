@@ -14,7 +14,7 @@ function i(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -27,7 +27,7 @@ function o(e) {
   return e
 }
 
-function a(e, t) {
+function o(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -39,7 +39,7 @@ function a(e, t) {
 }
 
 function s(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : a(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -56,37 +56,37 @@ let l = {
     treatments: [{
       id: 1,
       label: "Use gamma 2.8",
-      config: s(o({}, l), {
+      config: s(a({}, l), {
         gamma: 2.8
       })
     }, {
       id: 2,
       label: "Use gamma ~1.7 (50% = -10dB, 25% = -20dB)",
-      config: s(o({}, l), {
+      config: s(a({}, l), {
         gamma: 1.66096404744368
       })
     }, {
       id: 3,
       label: "Use gamma 2.6",
-      config: s(o({}, l), {
+      config: s(a({}, l), {
         gamma: 2.6
       })
     }, {
       id: 4,
       label: "Use gamma 3.0",
-      config: s(o({}, l), {
+      config: s(a({}, l), {
         gamma: 3
       })
     }, {
       id: 5,
       label: "Use gamma 2.0",
-      config: s(o({}, l), {
+      config: s(a({}, l), {
         gamma: 2
       })
     }, {
       id: 6,
       label: "Use gamma 4.0",
-      config: s(o({}, l), {
+      config: s(a({}, l), {
         gamma: 4
       })
     }]

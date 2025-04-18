@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  E: () => o,
-  Z: () => a
+  E: () => a,
+  Z: () => o
 });
 var r = n(818083),
   i = n(987338);
-let o = (0, r.B)({
+let a = (0, r.B)({
     kind: "user",
     id: "2024-08_tiered_tenure_badges",
     label: "Tiered Tenure Badging",
@@ -22,4 +22,4 @@ let o = (0, r.B)({
       }
     }]
   }),
-  a = o
+  o = a

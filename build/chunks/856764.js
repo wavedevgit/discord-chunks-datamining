@@ -1,12 +1,2 @@
-/** Chunk was on 10451 **/
-e.exports = {
-  container: "container_cdb3b1",
-  closeButton: "closeButton_cdb3b1",
-  tagContainer: "tagContainer_cdb3b1",
-  tag: "tag_cdb3b1",
-  badge: "badge_cdb3b1",
-  title: "title_cdb3b1",
-  description: "description_cdb3b1",
-  adoptButton: "adoptButton_cdb3b1",
-  editButton: "editButton_cdb3b1"
-}
+/** Chunk was on 5083 **/
+t.exports = JSON.parse('{"Poezn5":"G\xe5 online","qKDqen":"G\xe5 online f\xf6r att dela aktivitet","a3AofX":"St\xe4ller in status till online"}')

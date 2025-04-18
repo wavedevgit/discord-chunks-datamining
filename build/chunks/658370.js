@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => _
+  Z: () => b
 }), n(953529);
 var r = n(200651);
 n(192379);
@@ -17,12 +17,12 @@ var i = n(120356),
   p = n(474936),
   h = n(388032),
   f = n(344253);
-let _ = e => {
+let b = e => {
   var t;
   let n, {
       title: i,
-      titleClassName: _ = "",
-      buttonClassName: b = "",
+      titleClassName: b = "",
+      buttonClassName: _ = "",
       subtitle: N = "",
       description: x = "",
       descriptionCta: E = "",
@@ -52,18 +52,18 @@ let _ = e => {
     children: [(0, r.jsx)(m.Z, {
       title: i,
       cardVariantStyleInfo: A,
-      titleClassName: _,
+      titleClassName: b,
       subtitle: N,
       description: x
     }), j && (0, r.jsx)(g.Z, {
-      className: b,
+      className: _,
       look: a.zxk.Looks.BLANK,
       color: a.zxk.Colors.CUSTOM,
       subscriptionTier: p.Si.TIER_2,
       buttonText: y,
       showGradient: !0
     }), 0 !== E.length && (null == (n = null == A ? void 0 : A.descriptionCta) ? void 0 : n.hideOnHoverComponent) !== !0 && null != C && (0, r.jsx)(a.zxk, {
-      className: b,
+      className: _,
       onClick: C,
       children: E
     })]

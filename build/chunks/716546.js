@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(668781),
   i = n(998502),
-  o = n(58406),
-  a = n(761274);
+  a = n(58406),
+  o = n(761274);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -16,7 +16,7 @@ function s(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class l extends o.g {
+class l extends a.g {
   requestPermissionCore(e, t) {
     var n;
     return this.asyncify(null == (n = this.nativeUtils) ? void 0 : n.nativePermssionRequestAuthorization, e, t)
@@ -28,7 +28,7 @@ class l extends o.g {
   asyncify(e, t, n) {
     let r = l.requestTypeLookup[t];
     if (void 0 === r) return Promise.resolve(!0);
-    let i = () => null == e ? Promise.resolve(a.NZ.AUTHORIZED) : new Promise((t, n) => e(t, r));
+    let i = () => null == e ? Promise.resolve(o.NZ.AUTHORIZED) : new Promise((t, n) => e(t, r));
     return this.requestAuthorization(t, i, n)
   }
   openSettings(e) {
@@ -45,15 +45,15 @@ class l extends o.g {
       title: t,
       body: n,
       onConfirm: i,
-      cancelText: o,
-      confirmText: a
+      cancelText: a,
+      confirmText: o
     } = e;
     r.Z.show({
       title: t,
       body: n,
       onConfirm: i,
-      cancelText: o,
-      confirmText: a
+      cancelText: a,
+      confirmText: o
     })
   }
   constructor(...e) {
@@ -61,10 +61,10 @@ class l extends o.g {
   }
 }
 s(l, "requestTypeLookup", {
-  [a.Eu.CAMERA]: i.jK.Camera,
-  [a.Eu.AUDIO]: i.jK.Microphone,
-  [a.Eu.PHOTOS]: i.jK.Photo,
-  [a.Eu.INPUT_MONITORING]: i.jK.InputMonitoring,
-  [a.Eu.SCREEN_RECORDING]: i.jK.ScreenRecording
+  [o.Eu.CAMERA]: i.jK.Camera,
+  [o.Eu.AUDIO]: i.jK.Microphone,
+  [o.Eu.PHOTOS]: i.jK.Photo,
+  [o.Eu.INPUT_MONITORING]: i.jK.InputMonitoring,
+  [o.Eu.SCREEN_RECORDING]: i.jK.ScreenRecording
 });
 let c = new l

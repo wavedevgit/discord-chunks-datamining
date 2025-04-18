@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  o = n(378298),
-  a = n(473092),
+  a = n(378298),
+  o = n(473092),
   s = n(237292);
 
 function l(e) {
@@ -21,12 +21,12 @@ function l(e) {
       location: "takeover-modal"
     })) return;
   let d = () => {
-    (0, o.T)(t, [l]), (0, a.qc)({
+    (0, a.T)(t, [l]), (0, o.qc)({
       channelId: t,
       senderId: c,
       warningId: l,
       warningType: u,
-      cta: a.NM.USER_TAKEOVER_MODAL_DISMISS,
+      cta: o.NM.USER_TAKEOVER_MODAL_DISMISS,
       isNudgeWarning: !1
     })
   };

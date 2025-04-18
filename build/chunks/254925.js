@@ -13,12 +13,12 @@ var C = B(200651),
   v = B(65361),
   I = B(441536),
   P = B(434404),
-  r = B(999382),
-  e = B(70086),
-  o = B(835887),
-  t = B(388661),
-  d = B(500230),
-  n = B(742409),
+  e = B(999382),
+  r = B(70086),
+  t = B(835887),
+  n = B(388661),
+  o = B(500230),
+  d = B(742409),
   M = B(981631),
   s = B(116175),
   L = B(817239),
@@ -68,8 +68,8 @@ let H = [s.ZD.LEAF, s.ZD.SWORD, s.ZD.HEART, s.ZD.FIRE, s.ZD.WATER_DROP, s.ZD.SKU
   G = function() {
     var A, g, B, s;
     (0, X.j1)(L.M);
-    let G = (0, w.e7)([r.Z], () => r.Z.getGuild()),
-      a = (0, w.e7)([r.Z], () => r.Z.getGuildProfile()),
+    let G = (0, w.e7)([e.Z], () => e.Z.getGuild()),
+      a = (0, w.e7)([e.Z], () => e.Z.getGuildProfile()),
       {
         fetchGuildProfile: Y,
         fetchStatus: F
@@ -81,25 +81,25 @@ let H = [s.ZD.LEAF, s.ZD.SWORD, s.ZD.HEART, s.ZD.FIRE, s.ZD.WATER_DROP, s.ZD.SKU
       children: (0, C.jsx)(D.$jN, {})
     });
     if (null == G || null == a) return null;
-    let N = (0, E.up)(G),
-      i = !N || (null == a ? void 0 : a.tag) == null,
+    let i = (0, E.up)(G),
+      N = !i || (null == a ? void 0 : a.tag) == null,
       K = null != (A = a.badge) ? A : H[0],
       y = null != (g = a.badgeColorPrimary) ? g : b[0].primary,
       T = null != (B = a.badgeColorSecondary) ? B : b[0].secondary,
       O = (0, C.jsxs)(C.Fragment, {
-        children: [(0, C.jsx)(t.Z, {
+        children: [(0, C.jsx)(n.Z, {
           className: c.section,
           guildId: G.id,
-          isDisabled: i,
+          isDisabled: N,
           tag: null != (s = a.tag) ? s : "",
           badge: K,
           primaryColor: y,
           secondaryColor: T
-        }), (0, C.jsx)(o.Z, {
+        }), (0, C.jsx)(t.Z, {
           className: c.section,
           selectedBadge: K,
           guildId: G.id
-        }), (0, C.jsx)(d.Z, {
+        }), (0, C.jsx)(o.Z, {
           className: c.section,
           guildId: G.id,
           badge: K,
@@ -128,7 +128,7 @@ let H = [s.ZD.LEAF, s.ZD.SWORD, s.ZD.HEART, s.ZD.FIRE, s.ZD.WATER_DROP, s.ZD.SKU
                 P.Z.setSection(M.pNK.ACCESS)
               }
             })
-          }), N ? (0, C.jsxs)("div", {
+          }), i ? (0, C.jsxs)("div", {
             className: c.enableSwitchContainer,
             children: [(0, C.jsx)("label", {
               htmlFor: "enable-server-tag",
@@ -139,9 +139,9 @@ let H = [s.ZD.LEAF, s.ZD.SWORD, s.ZD.HEART, s.ZD.FIRE, s.ZD.WATER_DROP, s.ZD.SKU
               })
             }), (0, C.jsx)(D.rsf, {
               id: "enable-server-tag",
-              checked: !i,
+              checked: !N,
               onChange: () => {
-                if (i) {
+                if (N) {
                   var A;
                   P.Z.updateGuildProfile(G.id, {
                     tag: null != (A = a.tag) ? A : "",
@@ -156,19 +156,19 @@ let H = [s.ZD.LEAF, s.ZD.SWORD, s.ZD.HEART, s.ZD.FIRE, s.ZD.WATER_DROP, s.ZD.SKU
             })]
           }) : (0, C.jsx)("div", {
             className: c.boostingLinkContainer,
-            children: (0, C.jsx)(e.P, {
+            children: (0, C.jsx)(r.P, {
               onClick: () => {
                 (0, I.Z)(G.id), P.Z.close()
               }
             })
-          }), i ? (0, C.jsx)(D.nuw, {
+          }), N ? (0, C.jsx)(D.nuw, {
             children: (0, C.jsx)("div", {
               className: c.disabledForm,
               children: O
             })
           }) : O]
         }), (0, C.jsx)("div", {
-          children: (0, C.jsx)(n.Z, {
+          children: (0, C.jsx)(d.Z, {
             guildId: G.id,
             tag: a.tag,
             badge: K,

@@ -2,8 +2,8 @@
 "use strict";
 var r = n(98405),
   i = n(154028),
-  o = n(10693),
-  a = n(621523),
+  a = n(10693),
+  o = n(621523),
   s = n(713411),
   l = n(530575),
   c = n(117895).f,
@@ -24,7 +24,7 @@ var r = n(98405),
   S = i("Error"),
   T = i(O) || function() {
     try {
-      new(i("MessageChannel") || o("worker_threads").MessageChannel)().port1.postMessage(new WeakMap)
+      new(i("MessageChannel") || a("worker_threads").MessageChannel)().port1.postMessage(new WeakMap)
     } catch (e) {
       if (e.name === I && 25 === e.code) return e.constructor
     }
@@ -67,13 +67,13 @@ var r = n(98405),
     })
   };
 y && (d(L, "code", M("code")), d(L, "message", M("message")), d(L, "name", M("name"))), c(L, "constructor", l(1, D));
-var k = a(function() {
+var k = o(function() {
     return !(new T instanceof S)
   }),
-  j = k || a(function() {
+  j = k || o(function() {
     return A.toString !== h || "2: 1" !== String(new T(1, 2))
   }),
-  U = k || a(function() {
+  U = k || o(function() {
     return 25 !== new T(1, "DataCloneError").code
   }),
   G = k || 25 !== T[I] || 25 !== N[I],

@@ -5,8 +5,8 @@ n.d(t, {
   a: () => f
 }), n(388685), n(953529);
 var r, i = n(442837),
-  o = n(570140),
-  a = n(406218),
+  a = n(570140),
+  o = n(406218),
   s = n(981631);
 
 function l(e, t, n) {
@@ -176,7 +176,7 @@ function I(e) {
   } = t;
   if (null == n) return;
   let r = _.get(n.id),
-    i = (0, a.xo)(n);
+    i = (0, o.xo)(n);
   null == r ? _.set(n.id, d(c({}, p), {
     profile: i,
     lastSyncTimestamp: Date.now(),
@@ -208,16 +208,16 @@ function N(e) {
   var t, n, r;
   let {
     guild: i
-  } = e, o = _.get(i.id);
-  if (null == o || null == o.profile) return !1;
-  let a = d(c({}, o.profile), {
+  } = e, a = _.get(i.id);
+  if (null == a || null == a.profile) return !1;
+  let o = d(c({}, a.profile), {
     name: i.name,
     icon: null != (t = i.icon) ? t : null,
     description: null != (n = i.description) ? n : "",
     customBanner: null != (r = i.discovery_splash) ? r : null
   });
-  _.set(i.id, d(c({}, o), {
-    profile: a
+  _.set(i.id, d(c({}, a), {
+    profile: o
   }))
 }
 class A extends(r = i.ZP.Store) {
@@ -243,7 +243,7 @@ class A extends(r = i.ZP.Store) {
   }
 }
 l(A, "displayName", "GuildProfileStore");
-let C = new A(o.Z, {
+let C = new A(a.Z, {
   GUILD_PROFILE_FETCH: h,
   GUILD_PROFILE_FETCH_SUCCESS: m,
   GUILD_PROFILE_FETCH_FAILURE: g,

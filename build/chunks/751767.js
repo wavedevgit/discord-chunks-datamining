@@ -2,13 +2,13 @@
 "use strict";
 n.d(t, {
   A: () => s,
-  S: () => a
+  S: () => o
 });
 var r = n(663993),
   i = n(618541),
-  o = n(981631);
+  a = n(981631);
 
-function a() {
+function o() {
   return (0, r.wE)({
     createPromise: () => n.e("85468").then(n.t.bind(n, 91438, 23)),
     webpackId: 91438
@@ -22,13 +22,13 @@ function a() {
 
 function s() {
   let e = i.Z.getClient();
-  return null == e ? a().then(e => e.client.create({
-    authorization: o.Ai1.BRAINTREE.KEY
+  return null == e ? o().then(e => e.client.create({
+    authorization: a.Ai1.BRAINTREE.KEY
   }).then(e => l(e)).catch(() => null)) : l(e)
 }
 
 function l(e) {
-  return a().then(t => t.dataCollector.create({
+  return o().then(t => t.dataCollector.create({
     client: e
   }).then(e => e.deviceData).catch(() => null))
 }

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(91192),
   l = n(866442),
   c = n(442837),
@@ -65,8 +65,8 @@ function T(e, t) {
   if (null == e) return {};
   var n, r, i = N(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -74,12 +74,12 @@ function T(e, t) {
 function N(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let A = i.forwardRef(function(e, t) {
-  var o, v, I;
+  var a, v, I;
   let N, {
       canRemove: A,
       className: C,
@@ -100,7 +100,7 @@ let A = i.forwardRef(function(e, t) {
       guildId: w
     }),
     U = (0, c.e7)([_.Z], () => _.Z.roleStyle),
-    G = (null == (o = R.tags) ? void 0 : o.guild_connections) === null,
+    G = (null == (a = R.tags) ? void 0 : a.guild_connections) === null,
     B = i.useCallback(e => {
       (0, f.jW)(e, async () => {
         let {
@@ -144,7 +144,7 @@ let A = i.forwardRef(function(e, t) {
     z = () => A ? (0, r.jsx)(d.DY3, {
       text: b.NW.string(b.t.u3RVsL),
       children: (0, r.jsxs)(d.P3F, {
-        className: a()(y.roleRemoveButtonCanRemove, y.roleRemoveButton),
+        className: o()(y.roleRemoveButtonCanRemove, y.roleRemoveButton),
         onClick: P,
         tabIndex: M,
         focusProps: {
@@ -176,7 +176,7 @@ let A = i.forwardRef(function(e, t) {
   return (0, r.jsx)(d.tEY, {
     children: (0, r.jsxs)("div", S(O({
       ref: t,
-      className: a()(y.role, C),
+      className: o()(y.role, C),
       style: K,
       onContextMenu: B,
       onMouseDown: L,

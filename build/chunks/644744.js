@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => b
+  Z: () => _
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -36,12 +36,12 @@ let p = {
     [d.gkr.HOUSE_2]: n(797148),
     [d.gkr.HOUSE_3]: n(374347)
   },
-  _ = e => ({
+  b = e => ({
     [d.gkr.HOUSE_1]: u.NW.string(u.t.CpG10d),
     [d.gkr.HOUSE_2]: u.NW.string(u.t.VNPE6u),
     [d.gkr.HOUSE_3]: u.NW.string(u.t.KNfiTU)
   })[e];
-class b extends i.Component {
+class _ extends i.Component {
   render() {
     let {
       houseMembership: e,
@@ -72,7 +72,7 @@ class b extends i.Component {
               }), (0, r.jsx)(l.Text, {
                 className: m.membershipDialogHouseDescription,
                 variant: "text-md/normal",
-                children: _(e)
+                children: b(e)
               })]
             }), (0, r.jsx)(o.Z.Child, {
               className: m.houseLogoWrapper,

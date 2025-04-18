@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => S
 }), n(388685);
 var r, i = n(512722),
-  o = n.n(i),
-  a = n(442837),
+  a = n.n(i),
+  o = n(442837),
   s = n(570140),
   l = n(830917);
 
@@ -64,13 +64,13 @@ function h(e) {
 }
 
 function m(e) {
-  o()(!p.has(e.windowId), "Window initialized multiple times");
+  a()(!p.has(e.windowId), "Window initialized multiple times");
   let {
     width: t,
     height: n,
     isElementFullscreen: r,
     focused: i,
-    visible: a
+    visible: o
   } = e;
   return p.set(e.windowId, {
     windowSize: {
@@ -79,7 +79,7 @@ function m(e) {
     },
     isElementFullscreen: r,
     focused: i,
-    visible: a
+    visible: o
   }), i && (_ = e.windowId), !0
 }
 
@@ -117,7 +117,7 @@ function y(e) {
 function v(e) {
   return p.delete(e.windowId), _ === e.windowId && (_ = null), !0
 }
-class O extends(r = a.ZP.Store) {
+class O extends(r = o.ZP.Store) {
   isFocused() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : (0, l.UU)();
     return h(e).focused

@@ -5,9 +5,9 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(481060),
-  o = n(388032);
+  a = n(388032);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,7 +23,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -32,7 +32,7 @@ function s(e) {
 function l(e) {
   let {
     applicationId: t,
-    viewId: a,
+    viewId: o,
     showOutdatedInfoOption: l = !0
   } = e;
   if (null == t) return null;
@@ -43,12 +43,12 @@ function l(e) {
     return n => (0, r.jsx)(e, s({
       showOutdatedInfoOption: l,
       applicationId: t,
-      viewId: a
+      viewId: o
     }, n))
   });
   return (0, r.jsx)(i.sNh, {
     id: "game-profile-something-wrong",
-    label: o.NW.string(o.t.qP2cXV),
+    label: a.NW.string(a.t.qP2cXV),
     action: c
   })
 }

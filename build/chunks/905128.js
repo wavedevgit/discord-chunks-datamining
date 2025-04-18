@@ -6,7 +6,7 @@ n.d(t, {
 var r = n(442837),
   i = n(570140);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -15,14 +15,14 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 
-function a(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -73,22 +73,22 @@ function E(e) {
     guildId: t,
     powerups: n,
     catalog: r
-  } = e, i = g(t), o = new Map(d);
-  o.set(t, l(a({}, i), {
+  } = e, i = g(t), a = new Map(d);
+  a.set(t, l(o({}, i), {
     powerups: n,
     catalog: r
-  })), d = o, f[t] = Date.now(), p[t] = !0
+  })), d = a, f[t] = Date.now(), p[t] = !0
 }
 
 function b(e) {
   let {
     guildId: t,
     unlocked: n
-  } = e, r = g(t), i = m(n), o = new Map(d);
-  o.set(t, l(a({}, r), {
+  } = e, r = g(t), i = m(n), a = new Map(d);
+  a.set(t, l(o({}, r), {
     unlocked: n,
     appliedBoosts: i
-  })), d = o, _[t] = Date.now(), h[t] = !0
+  })), d = a, _[t] = Date.now(), h[t] = !0
 }
 
 function y(e, t) {
@@ -99,10 +99,10 @@ function y(e, t) {
   r.forEach(e => {
     t ? i.unlocked.set(e.sku_id, e) : i.unlocked.delete(e.sku_id)
   });
-  let o = m(i.unlocked),
+  let a = m(i.unlocked),
     s = new Map(d);
-  s.set(n, l(a({}, i), {
-    appliedBoosts: o
+  s.set(n, l(o({}, i), {
+    appliedBoosts: a
   })), d = s
 }
 

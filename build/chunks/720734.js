@@ -17,8 +17,8 @@ var r = n(200651),
   p = n(789639),
   h = n(930295),
   f = n(481060),
-  _ = n(355467),
-  b = n(239091),
+  b = n(355467),
+  _ = n(239091),
   N = n(230711),
   x = n(410575),
   E = n(941129),
@@ -71,8 +71,8 @@ var r = n(200651),
   ep = n(763296),
   eh = n(640806),
   ef = n(52538),
-  e_ = n(670188),
-  eb = n(861254),
+  eb = n(670188),
+  e_ = n(861254),
   eN = n(221241),
   ex = n(879815),
   eE = n(294629),
@@ -146,8 +146,8 @@ function e3(e, t) {
 }
 let e6 = eY.ZP.getEnableHardwareAcceleration() ? f.Xo$ : f.qEK,
   e8 = 2 * eG.Z.Millis.MINUTE,
-  e4 = 3 * eG.Z.Millis.SECOND,
-  e9 = 30 * eG.Z.Millis.DAY;
+  e9 = 3 * eG.Z.Millis.SECOND,
+  e4 = 30 * eG.Z.Millis.DAY;
 
 function e5(e) {
   let {
@@ -164,8 +164,8 @@ function e5(e) {
     coloredIconsEnabled: h
   } = (0, eN.Z)({
     location: "RTC Avatar"
-  }), _ = (0, R.Z)(null == s ? void 0 : s.avatarDecoration), b = (0, eM.NZ)({
-    avatarDecoration: _,
+  }), b = (0, R.Z)(null == s ? void 0 : s.avatarDecoration), _ = (0, eM.NZ)({
+    avatarDecoration: b,
     size: (0, D.y9)(f.EFr.SIZE_32)
   }), N = (0, f.dQu)(f.TVs.modules.guildbar.AVATAR_SIZE), {
     updateOpenPopoutRef: E,
@@ -199,7 +199,7 @@ function e5(e) {
   }(), S = (0, ei.A)(u);
   return null == s ? null : (0, r.jsx)(x.Z, {
     object: eQ.qAy.AVATAR,
-    children: (0, r.jsx)(e_.Z, {
+    children: (0, r.jsx)(eb.Z, {
       user: s,
       targetElementRef: g,
       clickTrap: !0,
@@ -242,7 +242,7 @@ function e5(e) {
         children: [(0, r.jsx)(e6, {
           size: p ? f.EFr["SIZE_".concat(N)] : f.EFr.SIZE_32,
           src: s.getAvatarURL(void 0, p ? N - 4 : 32, !1),
-          avatarDecoration: b,
+          avatarDecoration: _,
           "aria-label": s.username,
           status: n ? eQ.Skl.STREAMING : l,
           isSpeaking: t,
@@ -480,7 +480,7 @@ class e7 extends i.PureComponent {
       let {
         currentUser: t
       } = this.props;
-      null != t && (0, b.jW)(e, async () => {
+      null != t && (0, _.jW)(e, async () => {
         let {
           default: e
         } = await n.e("2535").then(n.bind(n, 923422));
@@ -492,20 +492,20 @@ class e7 extends i.PureComponent {
         }))
       })
     }), e1(this, "audioOnInteractionHandler", (0, U.u)("AudioDeviceMenu", A.Z.ACCOUNT)), e1(this, "handleInputAudioContextMenu", (e, t) => {
-      (0, b.jW)(e, async () => {
+      (0, _.jW)(e, async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 659580));
         return () => (0, r.jsx)(P.Gt, {
           value: t,
           children: this.props.simplifiedCallSettingsEnabled ? (0, r.jsx)(e, {
-            onClose: b.Zy,
+            onClose: _.Zy,
             renderInputDevices: !0,
             renderInputVolume: !0,
             simplified: !0,
             onInteraction: this.audioOnInteractionHandler
           }) : (0, r.jsx)(e, {
-            onClose: b.Zy,
+            onClose: _.Zy,
             renderInputDevices: !0,
             renderInputModes: !0,
             renderInputVolume: !0,
@@ -514,20 +514,20 @@ class e7 extends i.PureComponent {
         })
       })
     }), e1(this, "handleOutputAudioContextMenu", (e, t) => {
-      (0, b.jW)(e, async () => {
+      (0, _.jW)(e, async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 659580));
         return () => (0, r.jsx)(P.Gt, {
           value: t,
           children: this.props.simplifiedCallSettingsEnabled ? (0, r.jsx)(e, {
-            onClose: b.Zy,
+            onClose: _.Zy,
             renderOutputDevices: !0,
             renderOutputVolume: !0,
             simplified: !0,
             onInteraction: this.audioOnInteractionHandler
           }) : (0, r.jsx)(e, {
-            onClose: b.Zy,
+            onClose: _.Zy,
             renderOutputDevices: !0,
             renderOutputVolume: !0,
             onInteraction: this.audioOnInteractionHandler
@@ -640,8 +640,8 @@ function te(e) {
     handleToggleSelfDeaf: g,
     handleToggleSelfMute: p,
     handleInputAudioContextMenu: h,
-    handleOutputAudioContextMenu: _,
-    handleOpenAccountSettings: b,
+    handleOutputAudioContextMenu: b,
+    handleOpenAccountSettings: _,
     handleOpenSettingsContextMenu: N,
     dismissibleContents: x,
     nameplate: E,
@@ -669,14 +669,14 @@ function te(e) {
       selfDeaf: t,
       serverDeaf: a,
       onClick: g,
-      onContextMenu: _,
+      onContextMenu: b,
       awaitingRemote: i,
       iconForeground: null != E ? e0.iconForeground : void 0,
       nameplate: E
     }), (0, r.jsx)(tn, {
       isEligibleForPomelo: c,
       webBuildOverride: d,
-      onClick: b,
+      onClick: _,
       onContextMenu: N,
       dismissibleContents: x.settings,
       iconForeground: null != E ? e0.iconForeground : void 0,
@@ -720,7 +720,7 @@ function tt() {
     }),
     {
       mute: h,
-      selfMute: b,
+      selfMute: _,
       suppress: N
     } = (0, eE.Z)(p),
     {
@@ -781,13 +781,13 @@ function tt() {
         }),
         l = i.useMemo(() => {
           let e = new Date().getTime();
-          return null != s && (s.status === eQ.O0b.ACTIVE || e - s.currentPeriodEnd.getTime() < e9)
+          return null != s && (s.status === eQ.O0b.ACTIVE || e - s.currentPeriodEnd.getTime() < e4)
         }, [s]);
       return i.useEffect(() => {
         (async () => {
           if (!e && null == n && a) {
-            if (!r) return await (0, _.ou)();
-            !l && (t || await (0, _.l0)())
+            if (!r) return await (0, b.ou)();
+            !l && (t || await (0, b.l0)())
           }
         })()
       }, [a, n, e, r, t, l]), !e && !!a && !l && null != n && n
@@ -818,7 +818,7 @@ function tt() {
       occluded: R,
       premiumSubscription: T,
       selfDeaf: x,
-      selfMute: b,
+      selfMute: _,
       serverDeaf: O,
       serverMute: h,
       speaking: u,
@@ -849,18 +849,18 @@ function tn(e) {
     nameplate: d
   } = e, u = i.useRef(null), m = f.ewm, g = (0, p.i)();
   m = null != t ? f.bgT : n ? f.Ncx : g.Component;
-  let [h, _] = (0, q.US)(l);
+  let [h, b] = (0, q.US)(l);
   return (0, r.jsx)(f.yRy, {
     targetElementRef: u,
     position: "top",
     align: "center",
     shouldShow: null != h,
     renderPopout: h === c.z.PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2 ? () => (0, r.jsx)(ed.Z, {}) : h === c.z.USER_SAFETY_CONSUMER_EDUCATION_BLOCK ? () => (0, r.jsx)(em.Z, {
-      markAsDismissed: _
+      markAsDismissed: b
     }) : h === c.z.USER_SAFETY_CONSUMER_EDUCATION_MUTE ? () => (0, r.jsx)(eg.Z, {
-      markAsDismissed: _
+      markAsDismissed: b
     }) : h === c.z.SOUNDBOARD_VOLUME_EDUCATION ? () => (0, r.jsx)(eh.Z, {
-      markAsDismissed: _
+      markAsDismissed: b
     }) : h === c.z.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK ? () => (0, r.jsx)(ef.Z, {}) : () => (0, r.jsx)(r.Fragment, {}),
     children: () => (0, r.jsx)(eK.Z, e3(e2({
       ref: u,
@@ -889,8 +889,8 @@ function tr(e) {
     tooltipText: d,
     tooltipColor: u,
     tooltipForceOpen: p,
-    iconForeground: _,
-    onMouseEnter: b,
+    iconForeground: b,
+    onMouseEnter: _,
     onMouseLeave: N,
     onClick: x,
     onContextMenu: E,
@@ -904,13 +904,13 @@ function tr(e) {
     play: L
   } = R ? I : T, B = n || s ? f.v0G : w, {
     mode: M
-  } = (0, eb.ZP)({
+  } = (0, e_.ZP)({
     location: "RTC Microphone Button"
   }), {
     coloredIconsEnabled: U
   } = (0, eN.Z)({
     location: "RTC Microphone Button"
-  }), V = null != d ? d : (0, W.Z)(t, n, s, c, M === eb.BK.GroupedButtonsRedMic), {
+  }), V = null != d ? d : (0, W.Z)(t, n, s, c, M === e_.BK.GroupedButtonsRedMic), {
     analyticsLocations: G
   } = (0, P.ZP)(A.Z.AUDIO_INPUT_BUTTON), F = (0, ej.Hu)({
     location: A.Z.AUDIO_INPUT_BUTTON,
@@ -930,7 +930,7 @@ function tr(e) {
   return i.useEffect(() => {
     let e;
     return Z && R && (e = setTimeout(() => {
-      X(!0), e = setTimeout(() => X(!1), e4)
+      X(!0), e = setTimeout(() => X(!1), e9)
     }, 300)), () => {
       X(!1), clearTimeout(e)
     }
@@ -945,7 +945,7 @@ function tr(e) {
         tooltipForceOpen: p,
         plated: null != j,
         onMouseEnter: () => {
-          b(), k.onMouseEnter()
+          _(), k.onMouseEnter()
         },
         onMouseLeave: () => {
           N(), k.onMouseLeave()
@@ -955,7 +955,7 @@ function tr(e) {
           width: 20,
           height: 20,
           color: O ? f.TVs.colors.STATUS_DANGER : "currentColor",
-          className: _
+          className: b
         }),
         onClick: x,
         onContextMenu: H,
@@ -1070,9 +1070,9 @@ function ti(e) {
     play: p,
     events: {
       onMouseEnter: h,
-      onMouseLeave: _
+      onMouseLeave: b
     }
-  } = (0, u.l)(m ? "undeafen" : "deafen"), b = n ? f.Vm4 : g, {
+  } = (0, u.l)(m ? "undeafen" : "deafen"), _ = n ? f.Vm4 : g, {
     coloredIconsEnabled: N
   } = (0, eN.Z)({
     location: "RTC Microphone Button"
@@ -1089,8 +1089,8 @@ function ti(e) {
       plated: null != d,
       tooltipText: (0, k.Z)(t, n, s),
       onMouseEnter: h,
-      onMouseLeave: _,
-      icon: (0, r.jsx)(b, {
+      onMouseLeave: b,
+      icon: (0, r.jsx)(_, {
         size: "custom",
         width: 20,
         height: 20,

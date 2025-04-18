@@ -5,9 +5,9 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(626135);
+  a = n(626135);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,7 +23,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -48,7 +48,7 @@ function c(e, t) {
 
 function u(e) {
   var t;
-  let n = i.forwardRef((t, n) => (0, r.jsx)(o.AnalyticsContext.Consumer, {
+  let n = i.forwardRef((t, n) => (0, r.jsx)(a.AnalyticsContext.Consumer, {
     children: i => (0, r.jsx)(e, c(s({}, t), {
       ref: n,
       analyticsContext: i

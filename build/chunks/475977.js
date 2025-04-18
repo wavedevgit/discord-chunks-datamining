@@ -21,17 +21,17 @@ let h = () => {
     asset: n,
     popoutAsset: h,
     title: f,
-    body: _,
-    version: b,
+    body: b,
+    version: _,
     revertTextColor: N
   } = (0, d.W)();
   return i.useEffect(() => {
     o.default.track(u.rMx.PREMIUM_UPSELL_VIEWED, {
       type: m.cd.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
       location_stack: e,
-      version: b
+      version: _
     })
-  }, [e, b]), (0, r.jsxs)("div", {
+  }, [e, _]), (0, r.jsxs)("div", {
     ref: t,
     className: p.container,
     style: {
@@ -56,7 +56,7 @@ let h = () => {
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: N ? "redesign-button-overlay-text" : "currentColor",
-        children: _
+        children: b
       })]
     }), (0, r.jsx)(s.zxk, {
       onClick: () => {

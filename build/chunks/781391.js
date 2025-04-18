@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Ag: () => a,
+  Ag: () => o,
   Q_: () => i,
-  hi: () => o
+  hi: () => a
 });
 var r = n(570140);
 
@@ -14,7 +14,7 @@ function i(e) {
   })
 }
 
-function o(e) {
+function a(e) {
   r.Z.dispatch({
     type: "UNSYNCED_USER_SETTINGS_UPDATE",
     settings: {
@@ -23,7 +23,7 @@ function o(e) {
   })
 }
 
-function a(e) {
+function o(e) {
   r.Z.dispatch({
     type: "UPDATE_THEME_PREFERENCES",
     preferences: e

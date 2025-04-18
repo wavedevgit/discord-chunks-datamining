@@ -16,7 +16,7 @@ function P(A) {
     className: g,
     guildId: B,
     selectedBadge: P
-  } = A, r = Q.useCallback(A => {
+  } = A, e = Q.useCallback(A => {
     D.Z.updateGuildProfile(B, {
       badge: A
     })
@@ -27,7 +27,7 @@ function P(A) {
       className: I.sectionTitle,
       children: v.NW.string(E.Z.pb7lpK)
     }), (0, C.jsx)(f.g, {
-      onBadgeClicked: r,
+      onBadgeClicked: e,
       selectedBadge: P
     })]
   })

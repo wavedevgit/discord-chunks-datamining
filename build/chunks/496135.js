@@ -1,17 +1,17 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  D: () => a
+  D: () => o
 });
 var r = n(570140),
   i = n(576007),
-  o = n(672458);
-async function a(e, t, n) {
-  let a = await (0, i.g)(e, t, n);
-  if (a.type === o.d.ERROR) throw a.body;
+  a = n(672458);
+async function o(e, t, n) {
+  let o = await (0, i.g)(e, t, n);
+  if (o.type === a.d.ERROR) throw o.body;
   let {
     body: s
-  } = a;
+  } = o;
   r.Z.dispatch({
     type: "MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS",
     guildId: e,

@@ -19,8 +19,8 @@ var r = n(200651),
   p = n(493683),
   h = n(239091),
   f = n(420660),
-  _ = n(468363),
-  b = n(326255),
+  b = n(468363),
+  _ = n(326255),
   N = n(956221),
   x = n(747017),
   E = n(385499),
@@ -172,8 +172,8 @@ let er = X.ZP.getEnableHardwareAcceleration() ? g.Xo$ : g.qEK,
       locationState: p,
       onClick: h,
       className: f,
-      role: _,
-      "aria-posinset": b,
+      role: b,
+      "aria-posinset": _,
       "aria-setsize": N,
       listItemRef: x
     } = e, E = en(e, ["route", "selected", "icon", "iconClassName", "avatarWithTextClassName", "interactiveClassName", "text", "children", "locationState", "onClick", "className", "role", "aria-posinset", "aria-setsize", "listItemRef"]);
@@ -183,11 +183,11 @@ let er = X.ZP.getEnableHardwareAcceleration() ? g.Xo$ : g.qEK,
         [$.fullWidth]: u.tq
       }, f),
       onClick: h,
-      role: _,
+      role: b,
       focusProps: ee({
         within: !0
       }, ei),
-      "aria-posinset": b,
+      "aria-posinset": _,
       "aria-setsize": N,
       ref: x,
       children: (0, r.jsx)(g.vjx, {
@@ -224,7 +224,7 @@ function ed(e) {
     isGDMFacepileEnabled: s,
     selected: l = !1,
     user: u,
-    activities: _,
+    activities: b,
     applicationStream: N,
     voiceChannel: A,
     isTyping: R,
@@ -241,13 +241,13 @@ function ed(e) {
     user: u,
     size: g.EFr.SIZE_32,
     animateOnHover: !(l || K)
-  }), eg = t.isMultiUserDM(), ep = t.isSystemDM(), eh = (0, M.Q)(), ef = !eg && !ep && t.type === Q.d4z.DM, e_ = ef && (null == u ? void 0 : u.primaryGuild) != null, eb = (0, m.e7)([Y.ZP], () => Y.ZP.isChannelMuted(t.getGuildId(), t.id)), {
+  }), eg = t.isMultiUserDM(), ep = t.isSystemDM(), eh = (0, M.Q)(), ef = !eg && !ep && t.type === Q.d4z.DM, eb = ef && (null == u ? void 0 : u.primaryGuild) != null, e_ = (0, m.e7)([Y.ZP], () => Y.ZP.isChannelMuted(t.getGuildId(), t.id)), {
     ignored: eN,
     blocked: ex
   } = (0, m.cj)([H.Z], () => ({
     ignored: H.Z.isIgnored(t.getRecipientId()),
     blocked: H.Z.isBlocked(t.getRecipientId())
-  })), eE = ef && eN, ej = ef && ex, eC = (eb || eE || ej) && !(l || K), eO = (0, m.e7)([F.ZP], () => F.ZP.getMentionCount(t.id) > 0), eS = (0, v.ZP)(t), ev = (0, m.e7)([P.Z], () => P.Z.isFavorite(t.id)), eT = (0, B.L)("PrivateChannel"), eI = (0, Z.AK)("PrivateChannel") ? null != V && (l || K) : null != V, ey = () => {
+  })), eE = ef && eN, ej = ef && ex, eC = (e_ || eE || ej) && !(l || K), eO = (0, m.e7)([F.ZP], () => F.ZP.getMentionCount(t.id) > 0), eS = (0, v.ZP)(t), ev = (0, m.e7)([P.Z], () => P.Z.isFavorite(t.id)), eT = (0, B.L)("PrivateChannel"), eI = (0, Z.AK)("PrivateChannel") ? null != V && (l || K) : null != V, ey = () => {
     q(!0)
   }, eA = () => {
     q(!1)
@@ -314,14 +314,14 @@ function ed(e) {
     children: J.NW.format(J.t.CxSA5O, {
       members: t.recipients.length + 1
     })
-  }) : (0, b.Z)({
-    activities: _,
+  }) : (0, _.Z)({
+    activities: b,
     status: w,
     applicationStream: N,
     voiceChannel: A
   }) ? (0, r.jsx)(x.Z, {
     user: u,
-    activities: _,
+    activities: b,
     voiceChannel: A,
     applicationStream: N,
     animate: K,
@@ -346,7 +346,7 @@ function ed(e) {
       }));
     o()(null != u, "PrivateChannel.renderAvatar: Invalid prop configuration - no user or channel");
     let n = null;
-    return u.isSystemUser() || (n = (0, f.Z)(_) ? Q.Skl.STREAMING : w), (0, r.jsx)(er, et(ee({}, em), {
+    return u.isSystemUser() || (n = (0, f.Z)(b) ? Q.Skl.STREAMING : w), (0, r.jsx)(er, et(ee({}, em), {
       size: g.EFr.SIZE_32,
       src: ed,
       avatarDecoration: eu,
@@ -356,7 +356,7 @@ function ed(e) {
       "aria-label": u.username,
       statusTooltip: !0
     }))
-  }, eB = e_ ? (0, r.jsxs)(r.Fragment, {
+  }, eB = eb ? (0, r.jsxs)(r.Fragment, {
     children: [eS, (0, r.jsx)(T.ZP, {
       primaryGuild: null == u ? void 0 : u.primaryGuild,
       userId: null == u ? void 0 : u.id,
@@ -475,7 +475,7 @@ let eu = 12633 == n.j ? e => {
     }, [t, c, a]),
     {
       voiceActivityStatusEnabled: u
-    } = (0, _.U)({
+    } = (0, b.U)({
       location: "PrivateChannel"
     }),
     {

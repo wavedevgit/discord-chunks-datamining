@@ -6,9 +6,9 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(588468);
+  a = n(588468);
 n(419922);
-var a = n(388032);
+var o = n(388032);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -57,10 +57,10 @@ function d(e) {
     getQuery: s,
     headerClassName: l,
     headerTrailingContent: c
-  } = e, u = i.length > 0 ? a.NW.formatToPlainString(t, {
+  } = e, u = i.length > 0 ? o.NW.formatToPlainString(t, {
     prefix: s(i)
   }) : n;
-  return (0, r.jsx)(o.ZP.Title, {
+  return (0, r.jsx)(a.ZP.Title, {
     className: l,
     title: u,
     children: c
@@ -71,8 +71,8 @@ function f(e) {
   let {
     query: t,
     selectedIndex: n,
-    autocompletes: o,
-    onHover: a,
+    autocompletes: a,
+    onHover: o,
     onClick: s,
     titleWithQuery: c,
     titleWithoutQuery: f,
@@ -85,17 +85,17 @@ function f(e) {
     headerTrailingContent: b,
     footer: y
   } = e;
-  if (null == y && (null == o || 0 === o.length)) return null;
-  let v = null == o ? void 0 : o.map((e, t) => {
+  if (null == y && (null == a || 0 === a.length)) return null;
+  let v = null == a ? void 0 : a.map((e, t) => {
     let r = t + g,
-      o = p(e, r);
+      a = p(e, r);
     return (0, i.createElement)(_, u(l({
       onClick: s,
-      onHover: a,
+      onHover: o,
       selected: n === r,
       index: r
-    }, o), {
-      key: o.key
+    }, a), {
+      key: a.key
     }))
   });
   return (0, r.jsxs)(i.Fragment, {

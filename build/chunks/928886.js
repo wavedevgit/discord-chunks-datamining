@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(512722),
-  a = n.n(o),
+  a = n(512722),
+  o = n.n(a),
   s = n(481060),
   l = n(479446),
   c = n(646476),
@@ -32,7 +32,7 @@ function S(e) {
   var t;
   let {
     renderHeader: n,
-    referralTrialOfferId: o,
+    referralTrialOfferId: a,
     handleClose: S
   } = e, {
     selectedSkuId: T,
@@ -45,7 +45,7 @@ function S(e) {
     isGift: w,
     selectedGiftStyle: D,
     giftRecipient: L
-  } = (0, m.wD)(), x = w && (0, h.pO)(L) && N === E.h8.CONFIRM && null != D && (null == P ? void 0 : P.productLine) !== b.POd.COLLECTIBLES, M = null != n && null != N, k = [E.h8.SKU_SELECT, E.h8.SELECT_FREE_SKU], j = null != N && !k.includes(N) && null != T, U = (0, d.N)(o), G = !w && null != U && null != T && y.nG[U.trial_id].skus.includes(T), B = (0, u.Ng)(), F = null == B || null == (t = B.discount) ? void 0 : t.plan_ids.some(e => y.GP[e].skuId === T), V = !w && null != B && null != T && F, {
+  } = (0, m.wD)(), x = w && (0, h.pO)(L) && N === E.h8.CONFIRM && null != D && (null == P ? void 0 : P.productLine) !== b.POd.COLLECTIBLES, M = null != n && null != N, k = [E.h8.SKU_SELECT, E.h8.SELECT_FREE_SKU], j = null != N && !k.includes(N) && null != T, U = (0, d.N)(a), G = !w && null != U && null != T && y.nG[U.trial_id].skus.includes(T), B = (0, u.Ng)(), F = null == B || null == (t = B.discount) ? void 0 : t.plan_ids.some(e => y.GP[e].skuId === T), V = !w && null != B && null != T && F, {
     enabled: Z
   } = c.ZP.useExperiment({
     location: "PaymentModalHeader"
@@ -68,7 +68,7 @@ function S(e) {
     }) : M ? e = n(null != A ? A : null, S, N) : R === v.GZ.ONE_TIME ? e = (0, r.jsx)(p.t, {
       step: N,
       onClose: S
-    }) : j && (a()(I(T, y.y7), "invalid sku id: ".concat(T)), e = (0, r.jsx)(_.Z, {
+    }) : j && (o()(I(T, y.y7), "invalid sku id: ".concat(T)), e = (0, r.jsx)(_.Z, {
       currentStep: null != N ? N : void 0,
       purchaseState: C,
       premiumType: y.y7[T],

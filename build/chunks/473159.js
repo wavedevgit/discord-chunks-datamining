@@ -5,13 +5,13 @@ n.d(t, {
 }), n(388685);
 var r = n(284737),
   i = n(889711),
-  o = n(228488),
-  a = n(830917),
+  a = n(228488),
+  o = n(830917),
   s = n(919570);
 
 function l(e) {
   let t = e.document,
-    n = (0, a.Ig)(e);
+    n = (0, o.Ig)(e);
 
   function l() {
     (0, r.dx)(e)
@@ -48,5 +48,5 @@ function l(e) {
     (0, r.CO)(e)
   }
   for (let n of ((0, i.YP)(c, e.document.body), e.addEventListener("focus", u), e.addEventListener("blur", d), e.addEventListener("unload", _), e.addEventListener("visibilitychange", m), s.wu)) t.addEventListener(n, p, !0), t.addEventListener(n, h, !1);
-  (0, o.uF)(t, f), (0, r.S1)(e)
+  (0, a.uF)(t, f), (0, r.S1)(e)
 }

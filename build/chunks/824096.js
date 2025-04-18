@@ -5,8 +5,8 @@ n.d(t, {
 }), n(539854), n(388685);
 var r = n(259443),
   i = n(379649),
-  o = n(147063),
-  a = n(70956),
+  a = n(147063),
+  o = n(70956),
   s = n(981631);
 
 function l(e, t, n) {
@@ -33,7 +33,7 @@ class _ {
   updateFps(e, t, n) {
     if (!this.disabled && !this.streamDisabledUsers.has(e)) {
       let r = this.calculateFps(e, t, n);
-      if (f && this.logger.info("frames=".concat(t, ", timestamp=").concat(n, " fps=").concat(r)), !(r < 0) && Number.isFinite(r)) this.perUserFpsWindow[e].push(r), this.perUserFpsWindow[e].length < this.windowLength || (this.perUserFpsWindow[e].length > this.windowLength && this.perUserFpsWindow[e].shift(), this.perUserFpsWindow[e].filter(e => e < this.fpsThreshold).length >= this.fpsWindowBorderlineCount ? (this.logger.info("".concat(e, ": detected poor network quality, turning off video")), this.streamDisabledUsers.add(e), this.currentVideoAutoToggleState[e] = s.ZUi.DISABLED, (0, o.Z)(e, s.ZUi.DISABLED), this.startReenableBackoffTimer(e)) : this.currentVideoAutoToggleState[e] === s.ZUi.AUTO_PROBING && (this.currentVideoAutoToggleState[e] = s.ZUi.AUTO_ENABLED, this.logger.info("acceptable conditions reached, will reset and send a AUTO_ENABLED for user ".concat(e)), (0, o.Z)(e, s.ZUi.AUTO_ENABLED)), this.probingUserId === e && (this.probingUserId = void 0, this.tryReenableQueue()))
+      if (f && this.logger.info("frames=".concat(t, ", timestamp=").concat(n, " fps=").concat(r)), !(r < 0) && Number.isFinite(r)) this.perUserFpsWindow[e].push(r), this.perUserFpsWindow[e].length < this.windowLength || (this.perUserFpsWindow[e].length > this.windowLength && this.perUserFpsWindow[e].shift(), this.perUserFpsWindow[e].filter(e => e < this.fpsThreshold).length >= this.fpsWindowBorderlineCount ? (this.logger.info("".concat(e, ": detected poor network quality, turning off video")), this.streamDisabledUsers.add(e), this.currentVideoAutoToggleState[e] = s.ZUi.DISABLED, (0, a.Z)(e, s.ZUi.DISABLED), this.startReenableBackoffTimer(e)) : this.currentVideoAutoToggleState[e] === s.ZUi.AUTO_PROBING && (this.currentVideoAutoToggleState[e] = s.ZUi.AUTO_ENABLED, this.logger.info("acceptable conditions reached, will reset and send a AUTO_ENABLED for user ".concat(e)), (0, a.Z)(e, s.ZUi.AUTO_ENABLED)), this.probingUserId === e && (this.probingUserId = void 0, this.tryReenableQueue()))
     }
   }
   startReenableBackoffTimer(e) {
@@ -47,7 +47,7 @@ class _ {
       lastBackoffTime: (0, i.zO)(),
       expBackoffFactor: n
     };
-    let r = n * this.backoffTimeSec * a.Z.Millis.SECOND;
+    let r = n * this.backoffTimeSec * o.Z.Millis.SECOND;
     this.logger.info("starting backoff timer with time = ".concat(r, " milliseconds")), this.timeoutIdCache[e] = setTimeout(() => {
       this.queueReenable(e)
     }, r)
@@ -60,7 +60,7 @@ class _ {
       for (let e = this.enableQueue.shift(); null != e && !this.reenableVideo(e););
   }
   reenableVideo(e) {
-    return e in this.perUserFpsWindow && (this.logger.info("reenableVideo called for user ".concat(e, " - time = ").concat((0, i.zO)())), this.stateCleanupBeforeEnable(e), this.currentVideoAutoToggleState[e] = s.ZUi.AUTO_PROBING, this.probingUserId = e, (0, o.Z)(e, s.ZUi.AUTO_PROBING), !0)
+    return e in this.perUserFpsWindow && (this.logger.info("reenableVideo called for user ".concat(e, " - time = ").concat((0, i.zO)())), this.stateCleanupBeforeEnable(e), this.currentVideoAutoToggleState[e] = s.ZUi.AUTO_PROBING, this.probingUserId = e, (0, a.Z)(e, s.ZUi.AUTO_PROBING), !0)
   }
   elapsedSeconds(e, t) {
     return (e - t) / 1e3

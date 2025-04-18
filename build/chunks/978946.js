@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  r: () => o
+  r: () => a
 });
 var r = n(600553),
   i = n(981631);
 
-function o(e) {
+function a(e) {
   return null == e ? i.pNK.OVERVIEW : (0, r.i1)({
     guildId: e,
     location: "getDefaultGuildSettingsSection"

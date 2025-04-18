@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  o = n.n(i),
-  a = n(381338),
+  a = n.n(i),
+  o = n(381338),
   s = n(442837),
   l = n(481060),
   c = n(206295),
@@ -20,11 +20,11 @@ var i = n(120356),
 
 function m(e) {
   switch (e) {
-    case a.q.DAILY:
+    case o.q.DAILY:
       return p.NW.string(p.t.UfbhDA);
-    case a.q.WEEKLY:
+    case o.q.WEEKLY:
       return p.NW.string(p.t["9x5Nam"]);
-    case a.q.MONTHLY:
+    case o.q.MONTHLY:
       return p.NW.string(p.t.xB2Co6);
     default:
       return p.NW.string(p.t["4N67JS"])
@@ -32,14 +32,14 @@ function m(e) {
 }
 
 function g(e) {
-  var t, n, i, a;
+  var t, n, i, o;
   let {
     guildId: g,
     leaderboard: E,
     className: b
   } = e, y = null == E || null == (t = E.users) ? void 0 : t[0], {
     sort_by_statistic_id: v
-  } = E.guild_settings, O = null != (a = null == y || null == (i = y.statistics) || null == (n = i[v]) ? void 0 : n.value) ? a : 0, I = p.NW.formatToPlainString(p.t.yhdo8v, {
+  } = E.guild_settings, O = null != (o = null == y || null == (i = y.statistics) || null == (n = i[v]) ? void 0 : n.value) ? o : 0, I = p.NW.formatToPlainString(p.t.yhdo8v, {
     value: O,
     statisticName: (0, f.C)(v)
   }), S = (0, _.j)(E), {
@@ -49,7 +49,7 @@ function g(e) {
   if (null == A) return null;
   let C = d.ZP.getName(g, void 0, A);
   return (0, r.jsxs)("div", {
-    className: o()(h.container, b),
+    className: a()(h.container, b),
     style: {
       backgroundImage: "linear-gradient(90deg, ".concat(N, " 0%, ").concat(T, " 100%)")
     },

@@ -17,8 +17,8 @@ var i = n(990547),
   p = n(579806),
   h = n(782568),
   f = n(758182),
-  _ = n(49226),
-  b = n(163379),
+  b = n(49226),
+  _ = n(163379),
   N = n(498646),
   x = n(489968),
   E = n(703288),
@@ -71,8 +71,8 @@ var i = n(990547),
   ep = n(327192),
   eh = n(949493),
   ef = n(675047),
-  e_ = n(177508),
-  eb = n(956699),
+  eb = n(177508),
+  e_ = n(956699),
   eN = n(54942),
   ex = n(293389),
   eE = n(88624),
@@ -133,8 +133,8 @@ let eJ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
       isKeywordFilteringEnabled: e3,
       isStaff: e6,
       isInappropriateConversationWarningEnabled: e8,
-      isInapproprateConversationsDefaultOn: e4,
-      paymentsBlocked: e9,
+      isInapproprateConversationsDefaultOn: e9,
+      paymentsBlocked: e4,
       isEligibleForQuests: e5,
       showGiftNitro: e7,
       isStricterMessageRequestsEnabled: te,
@@ -493,7 +493,7 @@ let eJ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eH.oAB.CONTENT_AND_SOCIAL,
         searchableTitles: [eK.NW.string(eK.t.qFsx5u)],
         parent: eG.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
-        predicate: () => e8 && !ti && !e4
+        predicate: () => e8 && !ti && !e9
       },
       [eG.s6.PRIVACY_ENCRYPTION_VERIFIED_DEVICES_V2]: {
         section: eH.oAB.DATA_AND_PRIVACY,
@@ -640,13 +640,13 @@ let eJ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eH.oAB.INVENTORY,
         searchableTitles: [eK.NW.string(eK.t.Ve9Ge3)],
         parent: eG.s6.GIFT_INVENTORY,
-        predicate: () => !e9 && e7
+        predicate: () => !e4 && e7
       },
       [eG.s6.GIFT_CODE_REDEMPTION]: {
         section: eH.oAB.INVENTORY,
         searchableTitles: [eK.NW.string(eK.t["il+VCg"])],
         parent: eG.s6.GIFT_INVENTORY,
-        predicate: () => !e9
+        predicate: () => !e4
       },
       [eG.s6.GIFT_INVENTORY_QUESTS]: {
         section: eH.oAB.INVENTORY,
@@ -658,13 +658,13 @@ let eJ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eH.oAB.INVENTORY,
         searchableTitles: [eK.NW.string(eK.t["9KeUbW"])],
         parent: eG.s6.GIFT_INVENTORY,
-        predicate: () => !e9
+        predicate: () => !e4
       },
       [eG.s6.GIFT_BLOCKED_PAYMENTS]: {
         section: eH.oAB.INVENTORY,
         searchableTitles: [eK.NW.string(eK.t.vwMEHR)],
         parent: eG.s6.GIFT_INVENTORY,
-        predicate: () => e9
+        predicate: () => e4
       },
       [eG.s6.BILLING]: {
         section: eH.oAB.BILLING,
@@ -1512,7 +1512,7 @@ let eJ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eH.oAB.ADVANCED,
         searchableTitles: ["CF WARP", "CloudFlare WARP"],
         parent: eG.s6.SETTINGS_ADVANCED,
-        predicate: () => _.Z.getCurrentConfig({
+        predicate: () => b.Z.getCurrentConfig({
           location: "SettingsRendererConfig"
         }, {
           autoTrackExposure: !1
@@ -1563,7 +1563,7 @@ let eJ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
       },
       [eG.s6.CHANGELOG]: {
         section: "changelog",
-        onClick: () => (0, b.Z)(!0),
+        onClick: () => (0, _.Z)(!0),
         searchableTitles: [eK.NW.string(eK.t.LRmNAg)],
         label: eK.NW.string(eK.t.LRmNAg)
       },
@@ -1612,7 +1612,7 @@ let eJ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: ["Developer Options"],
         label: "Developer Options",
         ariaLabel: "Developer Options",
-        element: eb.Z,
+        element: e_.Z,
         predicate: () => F.Z.isDeveloper
       },
       [eG.s6.DEVELOPER_OPTIONS_FLAGS]: {
@@ -1831,7 +1831,7 @@ let eJ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eH.oAB.DESIGN_SYSTEMS,
         searchableTitles: ["Design Systems"],
         label: "Design Systems",
-        element: e_.Z,
+        element: eb.Z,
         predicate: () => F.Z.isDeveloper,
         url: eH.Z5c.SETTINGS("design-systems")
       },
@@ -1839,21 +1839,21 @@ let eJ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eH.oAB.DESIGN_SYSTEMS,
         searchableTitles: ["Colors"],
         label: "Colors",
-        element: e_.Z,
+        element: eb.Z,
         predicate: () => F.Z.isDeveloper
       },
       [eG.s6.ANIMATION_TESTING]: {
         section: eH.oAB.DESIGN_SYSTEMS,
         searchableTitles: ["Animation Testing"],
         label: "Animation Testing",
-        element: e_.Z,
+        element: eb.Z,
         predicate: () => F.Z.isDeveloper
       },
       [eG.s6.DESIGN_SYSTEMS_COMPONENTS]: {
         section: eH.oAB.DESIGN_SYSTEMS,
         searchableTitles: ["Components"],
         label: "Components",
-        element: e_.Z,
+        element: eb.Z,
         predicate: () => F.Z.isDeveloper
       },
       [eG.s6.TEXT_COMPONENTS]: {

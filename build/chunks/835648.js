@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(91192),
   l = n(442837),
   c = n(481060),
@@ -65,8 +65,8 @@ function T(e, t) {
   if (null == e) return {};
   var n, r, i = N(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -74,8 +74,8 @@ function T(e, t) {
 function N(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let A = [8, 8, 8, 8],
@@ -86,11 +86,11 @@ function R(e) {
     icon: t,
     isSelected: n,
     onClick: i,
-    listItemProps: o
+    listItemProps: a
   } = e, s = T(e, ["icon", "isSelected", "onClick", "listItemProps"]);
-  return (0, r.jsx)(c.P3F, S(O({}, o, s), {
+  return (0, r.jsx)(c.P3F, S(O({}, a, s), {
     onClick: i,
-    className: a()(y.categoryIcon, {
+    className: o()(y.categoryIcon, {
       [y.selected]: n
     }),
     children: (0, r.jsx)(t, {
@@ -100,37 +100,37 @@ function R(e) {
   }))
 }
 
-function P(e, t, n, i, o, a) {
+function P(e, t, n, i, a, o) {
   switch (e.categoryInfo.type) {
     case m.bg.FAVORITES:
       return (0, r.jsx)(R, S(O({}, i), {
         icon: c.r7p,
         onClick: t,
         isSelected: n,
-        listItemProps: o
+        listItemProps: a
       }), e.key);
     case m.bg.RECENTLY_HEARD:
       return (0, r.jsx)(R, S(O({}, i), {
         icon: c.T39,
         onClick: t,
         isSelected: n,
-        listItemProps: o
+        listItemProps: a
       }), e.key);
     case m.bg.FREQUENTLY_USED:
       return (0, r.jsx)(R, S(O({}, i), {
         icon: c.IeX,
         onClick: t,
         isSelected: n,
-        listItemProps: o
+        listItemProps: a
       }), e.key);
     case m.bg.GUILD:
-      return (0, r.jsx)(c.P3F, S(O({}, o, i), {
+      return (0, r.jsx)(c.P3F, S(O({}, a, i), {
         className: y.category,
         onClick: t,
         children: (0, r.jsx)(u.Z, {
           guild: e.categoryInfo.guild,
           isSelected: n,
-          isLocked: a
+          isLocked: o
         })
       }), e.key);
     case m.bg.DEFAULTS:
@@ -138,7 +138,7 @@ function P(e, t, n, i, o, a) {
         icon: c.gw7,
         onClick: t,
         isSelected: n,
-        listItemProps: o
+        listItemProps: a
       }), e.key);
     default:
       return null
@@ -183,14 +183,14 @@ function L(e) {
     category: t,
     categoryIndex: n,
     onClick: i,
-    isSelected: o,
-    isNitroLocked: a
+    isSelected: a,
+    isNitroLocked: o
   } = e, l = (0, s.JA)("soundboard_guild_".concat(n));
   return (0, r.jsx)(c.ua7, {
     text: w(t),
     "aria-label": D(t),
     position: "right",
-    children: e => P(t, i, o, e, l, a)
+    children: e => P(t, i, a, e, l, o)
   })
 }
 
@@ -198,27 +198,27 @@ function x(e) {
   let {
     soundboardListRef: t,
     categories: n,
-    shouldUpsellLockedCategories: o,
-    listPadding: a = A,
+    shouldUpsellLockedCategories: a,
+    listPadding: o = A,
     guildId: s,
     inExpressionPicker: c
   } = e, u = i.useRef(null), _ = (0, l.e7)([p.default], () => p.default.getCurrentUser()), m = (0, h.I5)(_, E.p9.TIER_2), b = i.useCallback((e, t, n, i) => {
-    let a = o && (0, g.O)(e.categoryInfo, m, s);
+    let o = a && (0, g.O)(e.categoryInfo, m, s);
     return (0, r.jsx)(L, {
       category: e,
       categoryIndex: t,
       onClick: n,
       isSelected: i,
-      isNitroLocked: a
+      isNitroLocked: o
     })
-  }, [s, o, m]);
+  }, [s, a, m]);
   return (0, r.jsx)(f.Z, {
     className: c ? y.expressionPickerCategoryList : y.categoryList,
     categoryListRef: u,
     expressionsListRef: t,
     store: d.Wq,
     categories: n,
-    listPadding: a,
+    listPadding: o,
     renderCategoryListItem: b,
     rowCount: n.length,
     categoryHeight: C

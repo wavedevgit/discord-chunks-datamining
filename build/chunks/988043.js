@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(838436),
   h = n(51331),
   f = n(922628),
-  _ = n(703115),
-  b = n(526761),
+  b = n(703115),
+  _ = n(526761),
   N = n(726985),
   x = n(736530),
   E = n(981631),
@@ -27,10 +27,10 @@ function C(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, b = (0, g.c_)(), C = u.h2.useSetting().includes(n), O = (0, d.q)(), S = (0, m.r)(), v = i.useCallback(e => {
+  } = e, _ = (0, g.c_)(), C = u.h2.useSetting().includes(n), O = (0, d.q)(), S = (0, m.r)(), v = i.useCallback(e => {
     let r = (0, c.YK)();
     e ? r.delete(n) : r.add(n), u.h2.updateSetting(Array.from(r)), l.default.track(E.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
-      action: _.Y.DIRECT_MESSAGES_TOGGLE,
+      action: b.Y.DIRECT_MESSAGES_TOGGLE,
       ingress: t,
       guild_id: n
     })
@@ -69,7 +69,7 @@ function C(e) {
       }
     }) : (0, r.jsx)(h.Z, {
       title: y,
-      note: b ? j.NW.string(j.t.V0ka0d) : S ? j.NW.string(j.t.F9WY3d) : j.NW.string(j.t.G7c3Xl),
+      note: _ ? j.NW.string(j.t.V0ka0d) : S ? j.NW.string(j.t.F9WY3d) : j.NW.string(j.t.G7c3Xl),
       value: !C,
       onChange: v
     })
@@ -78,7 +78,7 @@ function C(e) {
 
 function O(e) {
   let {
-    ingress: t = b.f4.USER_SETTINGS_PRIVACY_SAFETY,
+    ingress: t = _.f4.USER_SETTINGS_PRIVACY_SAFETY,
     guildId: n
   } = e, i = (0, g.is)();
   return (0, r.jsx)(C, {

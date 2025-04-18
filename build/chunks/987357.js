@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(200651),
   i = n(192379);
 
-function o(e) {
+function a(e) {
   return {
     position: "vertical" === e ? "absolute" : "relative",
     pointerEvents: "none",
@@ -16,11 +16,11 @@ function o(e) {
   }
 }
 
-function a(e) {
+function o(e) {
   let {
     paddingFix: t = !0,
     orientation: n = "vertical",
-    dir: a,
+    dir: o,
     className: s,
     scrollerRef: l,
     specs: c
@@ -34,30 +34,30 @@ function a(e) {
     let i = null == (e = r.ownerDocument) ? void 0 : e.defaultView;
     if (null == i) return;
     r.style.paddingTop = "", r.style.paddingBottom = "", r.style.paddingLeft = "", r.style.paddingRight = "";
-    let o = i.getComputedStyle(r);
+    let a = i.getComputedStyle(r);
     if ("vertical" === n) {
-      if ("rtl" === a) {
-        let e = parseInt(o.getPropertyValue("padding-left"), 10);
+      if ("rtl" === o) {
+        let e = parseInt(a.getPropertyValue("padding-left"), 10);
         r.style.paddingLeft = "".concat(Math.max(0, e - c.width), "px"), r.style.paddingRight = ""
       } else {
-        let e = parseInt(o.getPropertyValue("padding-right"), 10);
+        let e = parseInt(a.getPropertyValue("padding-right"), 10);
         r.style.paddingRight = "".concat(Math.max(0, e - c.width), "px"), r.style.paddingLeft = ""
       }
       let {
         current: e
       } = u;
-      null != e && (e.style.height = o.getPropertyValue("padding-bottom"))
+      null != e && (e.style.height = a.getPropertyValue("padding-bottom"))
     } else {
-      let e = parseInt(o.getPropertyValue("padding-bottom"), 10);
+      let e = parseInt(a.getPropertyValue("padding-bottom"), 10);
       r.style.paddingBottom = "".concat(Math.max(0, e - c.height), "px");
       let {
         current: t
       } = u;
-      null != t && (t.style.width = o.getPropertyValue("padding-left"))
+      null != t && (t.style.width = a.getPropertyValue("padding-left"))
     }
-  }, [n, a, s, l, t, c]), (0, i.useMemo)(() => "auto" !== n ? (0, r.jsx)("div", {
+  }, [n, o, s, l, t, c]), (0, i.useMemo)(() => "auto" !== n ? (0, r.jsx)("div", {
     "aria-hidden": !0,
-    style: o(n),
+    style: a(n),
     ref: u
   }) : null, [n])
 }

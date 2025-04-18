@@ -21,8 +21,8 @@ let f = function(e) {
   let {
     isVisible: i,
     isFullscreen: f,
-    subscriptionTier: _,
-    isMarketingPageV2: b
+    subscriptionTier: b,
+    isMarketingPageV2: _
   } = e, N = null == (t = (0, d.N)()) ? void 0 : t.subscription_trial, x = (0, c.Ng)(), E = (0, c.Wp)(x, g.Si.TIER_2) ? g.Si.TIER_2 : void 0, j = (0, l.q_F)({
     transform: i ? "translateY(-100%)" : "translateY(0%)",
     opacity: +!!i,
@@ -40,12 +40,12 @@ let f = function(e) {
     }),
     style: j,
     children: (0, r.jsxs)("div", {
-      className: b ? h.innerWrapperV2 : h.innerWrapperV1,
+      className: _ ? h.innerWrapperV2 : h.innerWrapperV1,
       children: [(0, r.jsx)(m.Z, {
         className: s()(h.button, {
           [h.subButton]: S
         }),
-        subscriptionTier: null != (n = null != _ ? _ : null == N ? void 0 : N.sku_id) ? n : E,
+        subscriptionTier: null != (n = null != b ? b : null == N ? void 0 : N.sku_id) ? n : E,
         premiumModalAnalyticsLocation: C,
         isPersistentCTA: !0
       }), (0, r.jsx)(u.Z, {

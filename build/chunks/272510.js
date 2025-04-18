@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(481060),
-  a = n(100527),
+  a = n(481060),
+  o = n(100527),
   s = n(906732),
   l = n(299206),
   c = n(389052),
@@ -50,7 +50,7 @@ function E(e) {
   } = (0, _.KZ)(), {
     analyticsLocations: v,
     newestAnalyticsLocation: O
-  } = (0, s.ZP)(a.Z.USER_PROFILE_OVERFLOW_MENU), I = (0, d.Z)({
+  } = (0, s.ZP)(o.Z.USER_PROFILE_OVERFLOW_MENU), I = (0, d.Z)({
     user: t,
     guildId: n,
     onAction: () => y({
@@ -126,18 +126,18 @@ function E(e) {
   ];
   return A.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(s.Gt, {
     value: v,
-    children: (0, r.jsx)(o.yRy, {
+    children: (0, r.jsx)(a.yRy, {
       targetElementRef: b,
       renderPopout: e => {
         let {
           closePopout: t
         } = e;
-        return (0, r.jsx)(o.v2r, {
+        return (0, r.jsx)(a.v2r, {
           navId: "user-profile-overflow-menu",
           onSelect: void 0,
           onClose: t,
           "aria-label": h.NW.string(h.t.AXIHpa),
-          children: A.map((e, t) => (0, r.jsx)(o.kSQ, {
+          children: A.map((e, t) => (0, r.jsx)(a.kSQ, {
             children: e.map(e => e)
           }, t))
         })
@@ -145,7 +145,7 @@ function E(e) {
       children: e => (0, r.jsx)(p.oY, g({
         ref: b,
         action: "PRESS_OPTIONS",
-        icon: o.xhG,
+        icon: a.xhG,
         tooltipText: h.NW.string(h.t.UKOtz8)
       }, e))
     })

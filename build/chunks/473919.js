@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  o = n.n(i),
-  a = n(481060),
+  a = n.n(i),
+  o = n(481060),
   s = n(556638),
   l = n(843280);
 
@@ -56,12 +56,12 @@ function _(e) {
     tooltipText: n,
     tooltipAriaLabel: i,
     className: c
-  } = e, d = (0, a.vjg)(a.Skl.ONLINE);
+  } = e, d = (0, o.vjg)(o.Skl.ONLINE);
   return null == n ? (0, r.jsx)(t, {
     size: "custom",
     color: d,
-    className: o()(l.icon, c)
-  }) : (0, r.jsx)(a.ua7, {
+    className: a()(l.icon, c)
+  }) : (0, r.jsx)(o.ua7, {
     text: n,
     "aria-label": i,
     tooltipContentClassName: l.container,
@@ -69,7 +69,7 @@ function _(e) {
     children: e => (0, r.jsx)(t, f(u({}, e), {
       size: "custom",
       color: d,
-      className: o()(l.icon, c)
+      className: a()(l.icon, c)
     }))
   })
 }

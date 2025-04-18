@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(442837),
-  a = n(780384),
+  a = n(442837),
+  o = n(780384),
   s = n(907040),
   l = n(210887),
   c = n(823379),
@@ -27,25 +27,25 @@ let v = e => {
     username: n,
     sourceType: r,
     sourceDetails: i
-  } = e, o = ":".concat(t.name, ":");
+  } = e, a = ":".concat(t.name, ":");
   switch (r) {
     case h.n_.ACTIVITY:
-      let a = b.NW.formatToPlainString(b.t.EUFEJi, {
+      let o = b.NW.formatToPlainString(b.t.EUFEJi, {
           username: n
         }),
         s = "\n> ".concat(i);
-      return null != i ? "".concat(_.jd).concat(a, "*").concat(s, "\n").concat(o) : "".concat(_.jd).concat(a, "*\n").concat(o);
+      return null != i ? "".concat(_.jd).concat(o, "*").concat(s, "\n").concat(a) : "".concat(_.jd).concat(o, "*\n").concat(a);
     case h.n_.AVATAR:
       let l = b.NW.formatToPlainString(b.t.E6H15u, {
         username: n
       });
-      return "".concat(_.jd).concat(l, "*\n").concat(o);
+      return "".concat(_.jd).concat(l, "*\n").concat(a);
     case h.n_.STATUS:
       let u = b.NW.formatToPlainString(b.t.XPQgLy, {
           username: n
         }),
         d = "\n> ".concat(i);
-      return null != i ? "".concat(_.jd).concat(u, "*").concat(d, "\n").concat(o) : "".concat(_.jd).concat(u, "*\n").concat(o);
+      return null != i ? "".concat(_.jd).concat(u, "*").concat(d, "\n").concat(a) : "".concat(_.jd).concat(u, "*\n").concat(a);
     default:
       (0, c.vE)(r)
   }
@@ -66,7 +66,7 @@ function O(e) {
     setInteractionToast: N
   } = (0, f.Xo)(), {
     theme: A
-  } = (0, p.z)(), C = (0, o.e7)([l.Z], () => l.Z.theme), R = (0, a.wj)(C) ? !(0, a.wj)(A) : (0, a.wj)(A), P = i.useRef(null);
+  } = (0, p.z)(), C = (0, a.e7)([l.Z], () => l.Z.theme), R = (0, o.wj)(C) ? !(0, o.wj)(A) : (0, o.wj)(A), P = i.useRef(null);
   i.useEffect(() => {
     null == O || O(null == P ? void 0 : P.current)
   }, [P, O]), i.useEffect(() => {

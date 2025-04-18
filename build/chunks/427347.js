@@ -17,42 +17,42 @@ var i = n(704215),
   p = n(981631),
   h = n(921944),
   f = n(388032),
-  _ = n(963748);
+  b = n(963748);
 
-function b(e) {
+function _(e) {
   let {
     dismissibleContent: t
   } = e, n = m.Z.useIsEligible(), u = (0, c.wE)(t), {
-    analyticsLocations: b
+    analyticsLocations: _
   } = (0, o.ZP)(l.Z.HOLIDAY_COACHMARK), N = e => {
     (0, c.EW)(i.z.HOLIDAY_COACHMARK_HALLOWEEN_2024, {
       dismissAction: e
     })
   }, x = () => {
     a.Z.open(p.oAB.NOTIFICATIONS, null, {
-      analyticsLocations: b
+      analyticsLocations: _
     }), N(h.L.SECONDARY)
   };
   return n && !u ? (0, r.jsx)(d.ZP, {
     children: (0, r.jsxs)("div", {
-      className: _.wrapper,
+      className: b.wrapper,
       children: [(0, r.jsxs)("div", {
-        className: _.backgroundWrapper,
+        className: b.backgroundWrapper,
         children: [(0, r.jsx)(g.Z, {
-          className: _.backgroundImage,
+          className: b.backgroundImage,
           pageMultiplier: 5
         }), (0, r.jsx)("div", {
-          className: _.backgroundOverlay
+          className: b.backgroundOverlay
         })]
       }), (0, r.jsx)("div", {
-        className: _.heroImage
+        className: b.heroImage
       }), (0, r.jsxs)("div", {
-        className: _.content,
+        className: b.content,
         children: [(0, r.jsxs)("div", {
           children: [(0, r.jsx)(s.X6q, {
             variant: "heading-md/bold",
             color: void 0,
-            className: _.specialText,
+            className: b.specialText,
             children: f.NW.string(f.t.zUhr3N)
           }), (0, r.jsx)(s.Text, {
             variant: "text-xs/normal",
@@ -60,14 +60,14 @@ function b(e) {
             children: f.NW.format(f.t.Xw2XUV, {
               settingsHook: (e, t) => (0, r.jsx)(s.P3F, {
                 tag: "span",
-                className: _.specialTextLink,
+                className: b.specialTextLink,
                 onClick: x,
                 children: e
               }, t)
             })
           })]
         }), (0, r.jsx)(s.P3F, {
-          className: _.closeClickable,
+          className: b.closeClickable,
           onClick: () => N(h.L.USER_DISMISS),
           children: (0, r.jsx)(s.Dio, {
             color: "currentColor",
@@ -80,7 +80,7 @@ function b(e) {
 }
 
 function N() {
-  return null == u.Z.coachmarkDismissibleContent ? null : (0, r.jsx)(b, {
+  return null == u.Z.coachmarkDismissibleContent ? null : (0, r.jsx)(_, {
     dismissibleContent: u.Z.coachmarkDismissibleContent
   })
 }

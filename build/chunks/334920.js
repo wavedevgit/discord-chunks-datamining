@@ -5,27 +5,27 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(532145);
 let l = e => {
   let {
     src: t,
     alt: n,
-    size: o,
+    size: a,
     "aria-label": l,
     className: c
   } = e, u = i.useRef(null), d = i.useRef(!1), f = d.current ? s.image : s.imageLoading;
   return (0, r.jsx)("img", {
-    className: a()(f, c),
+    className: o()(f, c),
     alt: n,
     src: t,
     ref: u,
     "aria-label": l,
     style: {
-      backgroundSize: o,
-      height: o,
-      width: o
+      backgroundSize: a,
+      height: a,
+      width: a
     },
     onLoad: d.current ? void 0 : () => {
       window.requestAnimationFrame(() => {

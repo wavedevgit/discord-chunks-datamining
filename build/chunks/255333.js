@@ -5,8 +5,8 @@ n.d(t, {
   Z: () => v
 });
 var r, i = n(31775),
-  o = n.n(i),
-  a = n(442837),
+  a = n.n(i),
+  o = n(442837),
   s = n(570140);
 
 function l(e, t, n) {
@@ -60,7 +60,7 @@ function p(e) {
   } = e;
   return "applicationId:".concat(t, " guildId:").concat(n, " page:").concat(r)
 }
-let h = new(o())({
+let h = new(a())({
     max: f
   }),
   m = {};
@@ -86,19 +86,19 @@ function E(e) {
     guildId: n,
     similarApplications: r,
     loadId: i,
-    page: o,
-    totalPages: a
+    page: a,
+    totalPages: o
   } = e, s = p({
     applicationId: t,
     guildId: n,
-    page: o
+    page: a
   });
   h.set(s, {
     lastFetchTimeMs: Date.now(),
     applications: r,
     loadId: i,
-    page: o,
-    totalPages: a
+    page: a,
+    totalPages: o
   }), m = d(c({}, m), {
     [s]: 2
   })
@@ -118,7 +118,7 @@ function b(e) {
     [i]: 3
   })
 }
-class y extends(r = a.ZP.Store) {
+class y extends(r = o.ZP.Store) {
   getSimilarApplications(e) {
     let {
       applicationId: t,

@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(353093),
   h = n(170871),
   f = n(981631),
-  _ = n(921944),
-  b = n(526761),
+  b = n(921944),
+  _ = n(526761),
   N = n(388032),
   x = n(989966);
 let E = (0, o.hQ)(),
@@ -53,11 +53,11 @@ let E = (0, o.hQ)(),
         children: S(t)
       })
     }, [S]), T = i.useCallback(e => {
-      o(_.L.TAKE_ACTION), (0, g.nE)(e, !0, f.Sbl.USER_SETTINGS)
+      o(b.L.TAKE_ACTION), (0, g.nE)(e, !0, f.Sbl.USER_SETTINGS)
     }, [o]), I = i.useCallback(e => e === C, [C]), y = i.useCallback(e => e, []), A = i.useCallback(() => {
-      o(_.L.TAKE_ACTION), (0, g.nE)(null, !1)
+      o(b.L.TAKE_ACTION), (0, g.nE)(null, !1)
     }, [o]), P = i.useRef(null);
-    return (0, u.Z)(P, b.Y_.GUILD_TAG), (0, r.jsxs)(d.Z, {
+    return (0, u.Z)(P, _.Y_.GUILD_TAG), (0, r.jsxs)(d.Z, {
       title: N.NW.string(N.t.Pdd1nZ),
       titleId: E,
       ref: P,

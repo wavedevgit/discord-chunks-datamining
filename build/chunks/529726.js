@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(539854);
 var r = n(31775),
   i = n.n(r),
-  o = n(147913),
-  a = n(626135),
+  a = n(147913),
+  o = n(626135),
   s = n(709054),
   l = n(981631);
 
@@ -23,7 +23,7 @@ let u = 6e4,
   f = 10,
   _ = 2e3,
   p = 500;
-class h extends o.Z {
+class h extends a.Z {
   handleMessageBecameVisible(e) {
     let {
       messageId: t
@@ -50,7 +50,7 @@ class h extends o.Z {
     this.currentlyVisibleMessageTimers = {}, this.viewsInCurrentChannel.clear(), this.drainBuffer()
   }
   drainBuffer() {
-    for (let e of this.batchBuffer) a.default.track(l.rMx.ANNOUNCEMENT_MESSAGE_VIEWED, {
+    for (let e of this.batchBuffer) o.default.track(l.rMx.ANNOUNCEMENT_MESSAGE_VIEWED, {
       message_id: e.messageId,
       channel_id: e.channelId,
       guild_id: e.guildId,

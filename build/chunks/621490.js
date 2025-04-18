@@ -18,9 +18,9 @@ var r = n(200651),
   p = n(960919),
   h = n(981631),
   f = n(388032),
-  _ = n(309103);
+  b = n(309103);
 
-function b(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -57,7 +57,7 @@ let x = e => {
     } = e;
     return (0, r.jsxs)(i.Text, {
       variant: "text-md/semibold",
-      className: _.orbAmountTag,
+      className: b.orbAmountTag,
       children: [(0, r.jsx)(p.Z, {
         shouldUseThemeColor: !0,
         customSize: 14
@@ -86,7 +86,7 @@ let x = e => {
       return i
     }(e, ["orbBalance", "orbPriceAmount", "submitting", "onClick"]);
     let o = f.NW.string(f.t.wmcDys),
-      c = b({
+      c = _({
         color: i.zxk.Colors.GREEN,
         type: "submit",
         "data-testid": "submitButton",
@@ -94,15 +94,15 @@ let x = e => {
       }, l);
     return null === n ? (0, r.jsx)(i.ua7, {
       text: f.NW.string(f.t["c/rcUl"]),
-      children: e => (0, r.jsx)(i.zxk, N(b({}, e, c), {
+      children: e => (0, r.jsx)(i.zxk, N(_({}, e, c), {
         disabled: !0
       }))
     }) : null === t || n > t ? (0, r.jsx)(i.ua7, {
       text: f.NW.string(f.t.keFvXF),
-      children: e => (0, r.jsx)(i.zxk, N(b({}, e, c), {
+      children: e => (0, r.jsx)(i.zxk, N(_({}, e, c), {
         disabled: !0
       }))
-    }) : (0, r.jsx)(i.zxk, N(b({}, c), {
+    }) : (0, r.jsx)(i.zxk, N(_({}, c), {
       submitting: s,
       onClick: a
     }))
@@ -122,7 +122,7 @@ let x = e => {
     return void 0 === a ? (0, r.jsx)(m.aO, {
       children: (0, r.jsx)(i.$jN, {
         type: i.$jN.Type.PULSING_ELLIPSIS,
-        className: _.purchaseDetailsSpinner
+        className: b.purchaseDetailsSpinner
       })
     }) : (0, r.jsx)(u.E, {
       sku: a,
@@ -136,18 +136,18 @@ let x = e => {
       orbBalance: t
     } = e;
     return (0, r.jsxs)("div", {
-      className: _.paymentSourceWrapper,
+      className: b.paymentSourceWrapper,
       children: [(0, r.jsx)(i.vwX, {
         tag: i.RB0.H5,
         children: f.NW.string(f.t.mmDvV1)
       }), (0, r.jsxs)("div", {
-        className: _.paymentSourceItem,
+        className: b.paymentSourceItem,
         children: [(0, r.jsx)(i.Text, {
-          className: _.displayFlex,
+          className: b.displayFlex,
           variant: "text-md/medium",
           children: f.NW.string(f.t.y0WGqK)
         }), (0, r.jsx)(i.Text, {
-          className: _.displayFlex,
+          className: b.displayFlex,
           variant: "text-md/medium",
           children: (0, r.jsx)(x, {
             orbAmount: t
@@ -163,7 +163,7 @@ let x = e => {
     if (null == t) return;
     let n = "";
     return n = t.code === l.SM.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE ? f.NW.string(f.t.keFvXF) : t.code === l.SM.ALREADY_PURCHASED ? f.NW.string(f.t.m371Mz) : f.NW.string(f.t.fqJZ19), (0, r.jsx)("div", {
-      className: _.formErrorContainer,
+      className: b.formErrorContainer,
       children: (0, r.jsx)(i.kzN, {
         children: n
       })
@@ -176,7 +176,7 @@ let x = e => {
       orbBalance: l
     } = e;
     return (0, r.jsxs)("div", {
-      className: _.stepBody,
+      className: b.stepBody,
       children: [(0, r.jsx)(i.vwX, {
         tag: i.RB0.H5,
         children: f.NW.string(f.t.sail9P)

@@ -1,7 +1,2 @@
-/** Chunk was on 51231 **/
-"use strict";
-e.exports = {
-  guildProductRoleIcon: "guildProductRoleIcon__77573",
-  shine: "shine__77573",
-  Shine: "Shine__77573"
-}
+/** Chunk was on 53072 **/
+a.exports = JSON.parse('{"Xypb39":"Mağara","qRFFLC":"Kızartma","lFIyMz":"Hayalet","fPU01d":"Megafon","KN+v7+":"Uzay Tavşanı","kHmvdn":"Siber Patron"}')

@@ -1,15 +1,15 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  O: () => a
+  O: () => o
 });
 var r = n(544891),
   i = n(33194),
-  o = n(981631);
+  a = n(981631);
 
-function a(e) {
+function o(e) {
   return (0, i.g6)(e), r.tn.post({
-    url: o.ANM.CHANNEL_BLOCKED_USER_WARNING_ACK(e),
+    url: a.ANM.CHANNEL_BLOCKED_USER_WARNING_ACK(e),
     rejectWithError: !1
   })
 }

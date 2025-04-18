@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(803997),
-  a = n.n(o),
+  a = n(803997),
+  o = n.n(a),
   s = n(928873),
   l = n(821541),
   c = n(780900);
@@ -54,8 +54,8 @@ function p(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -63,13 +63,13 @@ function p(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
 function m(e, t, n) {
-  let o = (0, c.G6)(e);
+  let a = (0, c.G6)(e);
   return i.forwardRef(function(u, f) {
     var {
       children: h,
@@ -97,12 +97,12 @@ function m(e, t, n) {
       dir: g,
       className: m,
       scrollerRef: N,
-      specs: o
+      specs: a
     });
     return S ? (0, r.jsx)(l.K, _(d({
       gap: I,
       ref: N,
-      className: a()(m, {
+      className: o()(m, {
         [e]: !0,
         [t]: b,
         [n]: y
@@ -116,7 +116,7 @@ function m(e, t, n) {
       })
     })) : (0, r.jsx)("div", _(d({
       ref: N,
-      className: a()(m, {
+      className: o()(m, {
         [e]: !0,
         [t]: b,
         [n]: y

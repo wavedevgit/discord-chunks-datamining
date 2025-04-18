@@ -1,6 +1,6 @@
 /** Chunk was on 32652 **/
 B.d(g, {
-  Z: () => n
+  Z: () => d
 });
 var C = B(200651),
   Q = B(120356),
@@ -11,38 +11,38 @@ var C = B(200651),
   v = B(494620),
   I = B(63063),
   P = B(434404),
-  r = B(999382),
-  e = B(981631),
-  o = B(817239),
-  t = B(388032),
-  d = B(602268);
-let n = function(A) {
+  e = B(999382),
+  r = B(981631),
+  t = B(817239),
+  n = B(388032),
+  o = B(602268);
+let d = function(A) {
   let {
     className: g,
     guildId: B,
     tag: Q,
-    badge: n,
+    badge: d,
     primaryColor: M,
     secondaryColor: s,
     isDisabled: L = !1
-  } = A, X = (0, D.e7)([r.Z], () => r.Z.getProps().originalProfile), c = null != X && X.tag !== Q;
+  } = A, X = (0, D.e7)([e.Z], () => e.Z.getProps().originalProfile), c = null != X && X.tag !== Q;
   return (0, C.jsxs)("div", {
     className: g,
     children: [(0, C.jsx)(f.vwX, {
-      className: d.sectionTitle,
-      children: t.NW.string(o.Z["tN+8pK"])
+      className: o.sectionTitle,
+      children: n.NW.string(t.Z["tN+8pK"])
     }), (0, C.jsxs)("div", {
-      className: d.tagContainer,
+      className: o.tagContainer,
       children: [(0, C.jsx)("div", {
-        className: d.tagInputContainer,
+        className: o.tagInputContainer,
         children: (0, C.jsx)(f.oil, {
-          className: d.tagInputWrapper,
-          inputClassName: w()(d.tagInput, "heading-sm/semibold"),
+          className: o.tagInputWrapper,
+          inputClassName: w()(o.tagInput, "heading-sm/semibold"),
           maxLength: 4,
           autoFocus: !0,
           placeholder: "WUMP",
           prefixElement: (0, C.jsx)(E.A, {
-            badge: n,
+            badge: d,
             width: 40,
             height: 40,
             primaryTintColor: M,
@@ -57,19 +57,19 @@ let n = function(A) {
           }
         })
       }), (0, C.jsx)("div", {
-        className: d.tagTooltip,
+        className: o.tagTooltip,
         children: (0, C.jsx)(f.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
-          children: t.NW.string(o.Z.UbC8y8)
+          children: n.NW.string(t.Z.UbC8y8)
         })
       })]
     }), c && (0, C.jsx)(v.Z, {
-      className: d.tagChangeInfoBox,
+      className: o.tagChangeInfoBox,
       children: (0, C.jsx)(f.Text, {
         variant: "text-xs/medium",
-        children: t.NW.format(o.Z["4ZKDXl"], {
-          articleUrl: I.Z.getArticleURL(e.BhN.SERVER_TAGS)
+        children: n.NW.format(t.Z["4ZKDXl"], {
+          articleUrl: I.Z.getArticleURL(r.BhN.SERVER_TAGS)
         })
       })
     })]

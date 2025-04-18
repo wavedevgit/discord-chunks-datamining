@@ -2,8 +2,8 @@
 "use strict";
 var r = n(127849),
   i = n(35760),
-  o = n(621523),
-  a = n(896471),
+  a = n(621523),
+  o = n(896471),
   s = n(992914),
   l = n(840475),
   c = n(358932),
@@ -14,12 +14,12 @@ var r = n(127849),
   p = l.exportTypedArrayMethod,
   h = r.Uint16Array,
   m = h && i(h.prototype.sort),
-  g = !!m && !(o(function() {
+  g = !!m && !(a(function() {
     m(new h(2), null)
-  }) && o(function() {
+  }) && a(function() {
     m(new h(2), {})
   })),
-  E = !!m && !o(function() {
+  E = !!m && !a(function() {
     if (d) return d < 74;
     if (c) return c < 67;
     if (u) return !0;
@@ -38,5 +38,5 @@ var r = n(127849),
     }
   };
 p("sort", function(e) {
-  return (void 0 !== e && a(e), E) ? m(this, e) : s(_(this), b(e))
+  return (void 0 !== e && o(e), E) ? m(this, e) : s(_(this), b(e))
 }, !E || g)

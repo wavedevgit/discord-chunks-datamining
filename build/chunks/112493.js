@@ -1,6 +1,6 @@
 /** Chunk was on web.js **/
 "use strict";
-var r, i, o, a = n(621523),
+var r, i, a, o = n(621523),
   s = n(880181),
   l = n(434431),
   c = n(713411),
@@ -10,7 +10,7 @@ var r, i, o, a = n(621523),
   _ = n(511696),
   p = f("iterator"),
   h = !1;
-[].keys && ("next" in (o = [].keys()) ? (i = u(u(o))) !== Object.prototype && (r = i) : h = !0), !l(r) || a(function() {
+[].keys && ("next" in (a = [].keys()) ? (i = u(u(a))) !== Object.prototype && (r = i) : h = !0), !l(r) || o(function() {
   var e = {};
   return r[p].call(e) !== e
 }) ? r = {} : _ && (r = c(r)), s(r[p]) || d(r, p, function() {

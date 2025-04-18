@@ -1,6 +1,6 @@
 /** Chunk was on 32652 **/
 B.d(g, {
-  Z: () => n
+  Z: () => d
 }), B(388685);
 var C = B(200651),
   Q = B(192379),
@@ -11,19 +11,19 @@ var C = B(200651),
   v = B(550271),
   I = B(229190),
   P = B(434404),
-  r = B(254925),
-  e = B(116175),
-  o = B(817239),
-  t = B(388032),
-  d = B(602268);
-let n = function(A) {
+  e = B(254925),
+  r = B(116175),
+  t = B(817239),
+  n = B(388032),
+  o = B(602268);
+let d = function(A) {
   let {
     className: g,
     guildId: B,
     badge: w,
-    primaryColor: n,
+    primaryColor: d,
     secondaryColor: M
-  } = A, [s, L] = Q.useState(!1), X = Q.useMemo(() => r.go.every(A => A.primary !== n || A.secondary !== M), [n, M]);
+  } = A, [s, L] = Q.useState(!1), X = Q.useMemo(() => e.go.every(A => A.primary !== d || A.secondary !== M), [d, M]);
 
   function c(A) {
     let g = {};
@@ -32,13 +32,13 @@ let n = function(A) {
   return (0, C.jsxs)("div", {
     className: g,
     children: [(0, C.jsx)(E.vwX, {
-      className: d.sectionTitle,
-      children: t.NW.string(o.Z.zSbMdX)
+      className: o.sectionTitle,
+      children: n.NW.string(t.Z.zSbMdX)
     }), (0, C.jsxs)("div", {
-      className: d.pickerGrid,
-      children: [r.go.map(A => (0, C.jsx)(E.P3F, {
-        className: D()(d.pickerItem, {
-          [d.pickerItemSelected]: A.primary === n && A.secondary === M
+      className: o.pickerGrid,
+      children: [e.go.map(A => (0, C.jsx)(E.P3F, {
+        className: D()(o.pickerItem, {
+          [o.pickerItemSelected]: A.primary === d && A.secondary === M
         }),
         onClick: () => c(A),
         children: (0, C.jsx)(v.A, {
@@ -49,9 +49,9 @@ let n = function(A) {
           secondaryTintColor: A.secondary
         })
       }, "".concat(A.primary).concat(A.secondary))), (0, C.jsx)(I.Z, {
-        showSecondaryColor: e.ME[w] >= 2,
+        showSecondaryColor: r.ME[w] >= 2,
         palette: {
-          primary: n,
+          primary: d,
           secondary: M
         },
         onPrimaryColorChange: A => {
@@ -89,8 +89,8 @@ let n = function(A) {
             onClick: () => {
               L(A => !A)
             },
-            className: D()(d.pickerItem, {
-              [d.pickerItemSelected]: X
+            className: D()(o.pickerItem, {
+              [o.pickerItemSelected]: X
             }),
             children: (0, C.jsx)(E.ilE, {
               size: "custom",

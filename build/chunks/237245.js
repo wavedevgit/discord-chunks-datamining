@@ -174,7 +174,7 @@ function I(e) {
         if (D && A > 0 && s.joinType !== j.A.APPLY) return void(0, l.ZDy)(async () => {
           let {
             default: t
-          } = await n.e("55009").then(n.bind(n, 826390));
+          } = await n.e("93884").then(n.bind(n, 826390));
           return n => (0, r.jsx)(t, y(C({}, n), {
             guildId: T,
             submittedGuildJoinRequestsCount: A,

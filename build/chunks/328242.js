@@ -4,8 +4,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651);
 n(192379);
-var l = n(120356),
-  i = n.n(l),
+var i = n(120356),
+  l = n.n(i),
   s = n(268146),
   a = n(481060),
   o = n(63063),
@@ -36,7 +36,7 @@ function x(e) {
   let {
     source: t,
     selected: n,
-    twoClickVariant: l,
+    twoClickVariant: i,
     onClick: s
   } = e, {
     url: o,
@@ -44,7 +44,7 @@ function x(e) {
   } = t;
   return (0, r.jsxs)(a.P3F, {
     onClick: () => s(t),
-    className: i()(m.source, {
+    className: l()(m.source, {
       [m.selectedSource]: n
     }),
     children: [(0, r.jsx)("div", {
@@ -55,7 +55,7 @@ function x(e) {
           src: o,
           className: m.sourcePreviewImage,
           alt: ""
-        }), !l && (0, r.jsx)("div", {
+        }), !i && (0, r.jsx)("div", {
           className: m.sourceOverlay,
           children: (0, r.jsx)("div", {
             className: m.sourceOverlayCTA,
@@ -85,12 +85,12 @@ function p(e) {
   let {
     onClick: n
   } = e, {
-    twoClickVariant: l
+    twoClickVariant: i
   } = (0, c.a)({
     autoTrackExposure: !1,
     location: "sourcegrid"
   }), [{
-    windowSources: i,
+    windowSources: l,
     deviceSources: o,
     screenSources: u,
     sourceType: f,
@@ -100,13 +100,13 @@ function p(e) {
   return h ? (0, r.jsx)("div", {
     className: m.loading,
     children: (0, r.jsx)(a.$jN, {})
-  }) : (t = f === s.vA.WINDOW ? i : f === s.vA.SCREEN ? u : o, f === s.vA.CAMERA && 0 === t.length ? (0, r.jsx)(g, {}) : (0, r.jsx)("div", {
+  }) : (t = f === s.vA.WINDOW ? l : f === s.vA.SCREEN ? u : o, f === s.vA.CAMERA && 0 === t.length ? (0, r.jsx)(g, {}) : (0, r.jsx)("div", {
     className: m.root,
     children: t.map(e => (0, r.jsx)(x, {
       onClick: n,
       source: e,
       selected: (null == p ? void 0 : p.id) === e.id,
-      twoClickVariant: l
+      twoClickVariant: i
     }, e.id))
   }))
 }

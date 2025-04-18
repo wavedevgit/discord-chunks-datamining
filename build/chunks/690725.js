@@ -1,15 +1,15 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  f: () => o
+  f: () => a
 }), n(415506);
 var r = n(4646),
   i = n(665672);
-async function o(e) {
+async function a(e) {
   let {
     assetsToLoad: t,
-    drawImage: o,
-    exportConfigs: a
+    drawImage: a,
+    exportConfigs: o
   } = e, s = await (0, r.k2)(t);
   await s.loadFonts();
   {
@@ -19,8 +19,8 @@ async function o(e) {
       l = new e(r, s),
       c = new t,
       u = new i.Z(l, c);
-    o(u.canvas);
-    let d = await u.export(a);
+    a(u.canvas);
+    let d = await u.export(o);
     return r.remove(), d
   }
 }

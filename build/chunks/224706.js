@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(35282), n(415506);
 var r = n(664751),
   i = n(990547),
-  o = n(243814),
-  a = n(544891),
+  a = n(243814),
+  o = n(544891),
   s = n(283693),
   l = n(570140),
   c = n(638880),
@@ -39,8 +39,8 @@ function D(e) {
     secret: n,
     channelId: r,
     intent: i = C.Ws.PLAY,
-    embedded: o = !1,
-    source: a,
+    embedded: a = !1,
+    source: o,
     partyId: s,
     locationObject: c,
     analyticsLocations: u,
@@ -51,8 +51,8 @@ function D(e) {
   M({
     applicationId: t,
     channelId: r,
-    embedded: o,
-    source: a,
+    embedded: a,
+    source: o,
     partyId: s,
     locationObject: c,
     analyticsLocations: u,
@@ -66,7 +66,7 @@ function D(e) {
       applicationId: t,
       secret: n,
       intent: i,
-      embedded: o
+      embedded: a
     })
   }).catch(() => l.Z.dispatch({
     type: "ACTIVITY_JOIN_FAILED",
@@ -82,12 +82,12 @@ function L(e, t) {
 }
 
 function x(e) {
-  return a.tn.post({
+  return o.tn.post({
     url: A.ANM.OAUTH2_AUTHORIZE,
     query: {
       client_id: e,
       response_type: "token",
-      scope: [o.x.IDENTIFY].join(" ")
+      scope: [a.x.IDENTIFY].join(" ")
     },
     retries: 3,
     body: {
@@ -115,8 +115,8 @@ async function M(e) {
     branchId: n,
     channelId: r,
     embedded: i = !1,
-    source: o,
-    partyId: a,
+    source: a,
+    partyId: o,
     locationObject: s = {},
     analyticsLocations: f = [],
     joinUserId: _,
@@ -127,8 +127,8 @@ async function M(e) {
   if (i) return await (0, c.Z)({
     applicationId: t,
     activityChannelId: null != r ? r : void 0,
-    source: o,
-    partyId: a,
+    source: a,
+    partyId: o,
     locationObject: s,
     analyticsLocations: f,
     joinUserId: _,
@@ -197,8 +197,8 @@ let k = {
         let r = e.getFlags(),
           i = y.yE(r, A.eHb.OVERLAY_DISABLED);
         t && i !== t && (r = y.x9(r, A.eHb.OVERLAY_DISABLED));
-        let o = y.yE(r, A.eHb.OVERLAY_V3_DISABLED);
-        null != n && n !== o && (r = y.x9(r, A.eHb.OVERLAY_V3_DISABLED)), T.h(e.id, e.branchId, r);
+        let a = y.yE(r, A.eHb.OVERLAY_V3_DISABLED);
+        null != n && n !== a && (r = y.x9(r, A.eHb.OVERLAY_V3_DISABLED)), T.h(e.id, e.branchId, r);
         return
       }
     }
@@ -243,7 +243,7 @@ let k = {
     });
     let r = async e => {
       try {
-        let t = await a.tn.get({
+        let t = await o.tn.get({
           url: A.ANM.APPLICATIONS_GAMES_SUPPLEMENTAL,
           query: {
             application_ids: e
@@ -320,16 +320,16 @@ let k = {
       iconHash: n,
       publisher: r,
       distributor: i,
-      sku: o,
+      sku: a,
       executableName: s
     } = e, c = (0, f.F)(s);
-    null != c && a.tn.post({
+    null != c && o.tn.post({
       url: A.ANM.UNVERIFIED_APPLICATIONS,
       body: {
         name: t,
         os: (0, O.getPlatformName)(),
         icon: n,
-        distributor_application: L(i, o),
+        distributor_application: L(i, a),
         executable: c,
         publisher: r,
         report_version: P
@@ -354,7 +354,7 @@ let k = {
     })
   },
   uploadIcon(e, t, n) {
-    a.tn.post({
+    o.tn.post({
       url: A.ANM.UNVERIFIED_APPLICATIONS_ICONS,
       body: {
         application_name: e,
@@ -379,8 +379,8 @@ let k = {
       sessionId: n,
       applicationId: r,
       channelId: i,
-      messageId: o,
-      intent: a = C.Ws.PLAY,
+      messageId: a,
+      intent: o = C.Ws.PLAY,
       embedded: s = !1,
       source: c,
       partyId: u,
@@ -394,19 +394,19 @@ let k = {
       sessionId: n,
       applicationId: r,
       channelId: i,
-      messageId: o
+      messageId: a
     }), Promise.resolve(!0);
     l.Z.dispatch({
       type: "ACTIVITY_JOIN_LOADING",
       applicationId: r
     });
     try {
-      let e = await S.Z.getJoinSecret(t, n, r, i, o);
+      let e = await S.Z.getJoinSecret(t, n, r, i, a);
       return D({
         applicationId: r,
         secret: e,
         channelId: i,
-        intent: a,
+        intent: o,
         embedded: s,
         partyId: u,
         source: c,

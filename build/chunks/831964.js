@@ -17,8 +17,8 @@ var r, i = n(230711),
   p = n(880511),
   h = n(985443),
   f = n(612253),
-  _ = n(872532),
-  b = n(91342),
+  b = n(872532),
+  _ = n(91342),
   N = n(181708),
   x = n(290650),
   E = n(751125),
@@ -41,7 +41,7 @@ let D = () => {
         title: m.NW.string(m.t.zY5PPT),
         description: m.NW.string(m.t.R5Xag4),
         previewImage: g,
-        videoUrl: e ? b.ZP : N.ZP,
+        videoUrl: e ? _.ZP : N.ZP,
         isCompact: !0
       },
       noLimits: {
@@ -76,7 +76,7 @@ let D = () => {
         description: m.NW.string(m.t.HMSHeH),
         descriptionCta: m.NW.string(m.t.jVcuVV),
         onClick: n,
-        previewImage: _,
+        previewImage: b,
         videoUrl: r ? v.ZP : T.ZP
       },
       referralProgram: {
@@ -88,7 +88,7 @@ let D = () => {
         previewImage: O.Z,
         videoUrl: r ? C.ZP : S.ZP
       }
-    }, b = {
+    }, _ = {
       showYourStyle: {
         name: "showYourStyle",
         title: m.NW.string(m.t.Ij3Zmp),
@@ -113,5 +113,5 @@ let D = () => {
         videoUrl: r ? A.Z : P.Z
       }
     };
-    return e ? b : p
+    return e ? _ : p
   }

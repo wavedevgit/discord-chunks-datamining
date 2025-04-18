@@ -22,8 +22,8 @@ function g(e) {
     guildId: p,
     guildName: h,
     guildIcon: f,
-    guildIconSize: _,
-    memberCount: b
+    guildIconSize: b,
+    memberCount: _
   } = e, N = i.useRef(null), [x, E] = i.useState(!1);
   return i.useEffect(() => {
     let e = N.current;
@@ -36,7 +36,7 @@ function g(e) {
         guildId: p,
         guildName: h,
         guildIcon: f,
-        iconSize: _,
+        iconSize: b,
         className: m.guildPrefixIcon,
         animate: !1
       }), (0, r.jsxs)("div", {
@@ -80,8 +80,8 @@ function g(e) {
               Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
             }), t))
           }
-        }), null != b && (0, r.jsx)(c.Z, {
-          count: b
+        }), null != _ && (0, r.jsx)(c.Z, {
+          count: _
         })]
       })]
     }), (0, r.jsx)("div", {

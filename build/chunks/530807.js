@@ -2,10 +2,10 @@
 "use strict";
 var r = n(938373).PROPER,
   i = n(621523),
-  o = n(868984),
-  a = "​\x85᠎";
+  a = n(868984),
+  o = "​\x85᠎";
 e.exports = function(e) {
   return i(function() {
-    return !!o[e]() || a[e]() !== a || r && o[e].name !== e
+    return !!a[e]() || o[e]() !== o || r && a[e].name !== e
   })
 }
