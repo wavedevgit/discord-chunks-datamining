@@ -49,6 +49,7 @@ n.d(t, {
   f2: () => eM,
   fY: () => e6,
   gI: () => e8,
+  hF: () => ty,
   hQ: () => et,
   iQ: () => K,
   il: () => eW,
@@ -952,4 +953,10 @@ function tb(e) {
     creative_type: e.creativeType,
     decision_id: e.decisionId
   } : {}
+}
+
+function ty(e) {
+  var t, n;
+  let r = null != (n = null == (t = e.userStatus) ? void 0 : t.claimedTier) ? n : 0;
+  return "rewardsConfig" in e.config ? e.config.rewardsConfig.rewards[r] : e.config.rewards[r]
 }
