@@ -2,8 +2,8 @@
 "use strict";
 var r = n(48657),
   i = n(580983),
-  a = n(385903),
-  o = n(527160),
+  o = n(385903),
+  a = n(527160),
   s = n(914331),
   l = n(533610),
   c = n(800054),
@@ -12,8 +12,8 @@ var r = n(48657),
   f = n(840475).aTypedArrayConstructor,
   _ = n(190475);
 e.exports = function(e) {
-  var t, n, p, h, m, g, E, b, y = a(this),
-    v = o(e),
+  var t, n, p, h, m, g, E, b, y = o(this),
+    v = a(e),
     O = arguments.length,
     I = O > 1 ? arguments[1] : void 0,
     S = void 0 !== I,

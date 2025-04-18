@@ -5,9 +5,9 @@ n.d(t, {
 }), n(388685), n(415506);
 var r = n(200651),
   i = n(192379),
-  a = n(734530),
-  o = n(120356),
-  s = n.n(o),
+  o = n(734530),
+  a = n(120356),
+  s = n.n(a),
   l = n(846519),
   c = n(481060),
   u = n(609194),
@@ -27,7 +27,7 @@ function v(e) {
   let {
     steps: t,
     currentStep: n,
-    body: o,
+    body: a,
     paymentError: v,
     header: O,
     footer: I,
@@ -60,7 +60,7 @@ function v(e) {
     }
   }, [k]);
   let U = t.includes(p.h8.PAYMENT_TYPE) ? p.h8.PAYMENT_TYPE : p.h8.ADD_PAYMENT_STEPS;
-  return (0, r.jsxs)(a.Elements, {
+  return (0, r.jsxs)(o.Elements, {
     options: g.OBo,
     stripe: k,
     children: [O, (0, r.jsxs)("div", {
@@ -101,7 +101,7 @@ function v(e) {
           children: (0, r.jsx)(c.h21, {
             onScroll: w,
             className: s()(b.scroller, D),
-            children: o
+            children: a
           })
         })]
       })]

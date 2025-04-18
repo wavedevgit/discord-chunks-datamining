@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(481060),
-  a = n(592125),
-  o = n(626135),
+  o = n(592125),
+  a = n(626135),
   s = n(254109),
   l = n(981631);
 
@@ -37,8 +37,8 @@ function d(e, t) {
   if (null == e) return {};
   var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -46,8 +46,8 @@ function d(e, t) {
 function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let _ = "Media Viewer Modal";
@@ -59,7 +59,7 @@ function p(e) {
     } = e,
     m = d(e, ["location", "contextKey"]);
   let g = null == (c = m.items[null != (f = m.startingIndex) ? f : 0]) || null == (t = c.sourceMetadata) ? void 0 : t.message,
-    E = a.Z.getChannel(null == g ? void 0 : g.channel_id);
+    E = o.Z.getChannel(null == g ? void 0 : g.channel_id);
   (0, s.fS)({
     guildId: null == E ? void 0 : E.guild_id,
     channelId: null == E ? void 0 : E.id,
@@ -67,7 +67,7 @@ function p(e) {
     numMediaItems: m.items.length,
     source: p,
     hasMediaOptions: !m.shouldHideMediaOptions
-  }), o.default.track(l.rMx.OPEN_MODAL, {
+  }), a.default.track(l.rMx.OPEN_MODAL, {
     type: l.jXE.MEDIA_VIEWER,
     source: p,
     guild_id: null == E ? void 0 : E.guild_id,

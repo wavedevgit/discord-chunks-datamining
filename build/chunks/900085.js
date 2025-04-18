@@ -16,8 +16,8 @@ var r, i = n(200651),
   g = n(815372),
   m = n(14429),
   b = n(576855),
-  _ = n(313201),
-  y = n(991346),
+  y = n(313201),
+  _ = n(991346),
   v = n(592125),
   O = n(888369),
   C = n(430824),
@@ -25,8 +25,8 @@ var r, i = n(200651),
   j = n(944486),
   E = n(938475),
   x = n(483360),
-  N = n(585483),
-  I = n(63063),
+  I = n(585483),
+  N = n(63063),
   P = n(51596),
   w = n(823385),
   Z = n(415795),
@@ -81,7 +81,7 @@ let G = {
     }), (0, i.jsx)("div", {
       className: L.emptyStateCTA,
       children: (0, i.jsx)(u.eee, {
-        href: I.Z.getArticleURL(R.BhN.QUICK_SWITCHER_TUTORIAL),
+        href: N.Z.getArticleURL(R.BhN.QUICK_SWITCHER_TUTORIAL),
         children: D.NW.string(D.t["4iPfEB"])
       })
     })]
@@ -237,7 +237,7 @@ class q extends l.PureComponent {
     })
   }
   focusNode(e) {
-    N.S.dispatch(R.CkL.QUICKSWITCHER_RESULT_FOCUS, {
+    I.S.dispatch(R.CkL.QUICKSWITCHER_RESULT_FOCUS, {
       node: e
     })
   }
@@ -255,7 +255,7 @@ class q extends l.PureComponent {
         textChannelSymbolHook: (e, t) => K(t, f.xQ.TEXT_CHANNEL, D.NW.string(D.t.wrwhub)),
         voiceChannelSymbolHook: (e, t) => K(t, f.xQ.VOICE_CHANNEL, D.NW.string(D.t["jz+hJi"])),
         guildSymbolHook: (e, t) => K(t, f.xQ.GUILD, D.NW.string(D.t.WuwCWl)),
-        helpdeskArticle: I.Z.getArticleURL(R.BhN.QUICK_SWITCHER_TUTORIAL)
+        helpdeskArticle: N.Z.getArticleURL(R.BhN.QUICK_SWITCHER_TUTORIAL)
       })
     })
   }
@@ -285,7 +285,7 @@ class q extends l.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), k(this, "scrollerRef", l.createRef()), k(this, "inputRef", l.createRef()), k(this, "_listId", (0, _.hQ)()), k(this, "state", {
+    super(...e), k(this, "scrollerRef", l.createRef()), k(this, "inputRef", l.createRef()), k(this, "_listId", (0, y.hQ)()), k(this, "state", {
       query: this.props.query,
       mouseFocusDisabled: !0
     }), k(this, "handleInputChange", () => {
@@ -569,7 +569,7 @@ class q extends l.PureComponent {
 
 function Q(e) {
   let t = (0, c.cj)([w.Z], () => w.Z.getProps()),
-    n = (0, y.Pt)(),
+    n = (0, _.Pt)(),
     r = A.Z.useExperiment({
       location: "QuickSwitcher"
     }).enabled,

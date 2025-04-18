@@ -5,14 +5,14 @@ n.d(t, {
   Hg: () => u,
   PW: () => _,
   S5: () => i,
-  ZA: () => a,
+  ZA: () => o,
   l0: () => f
 }), n(358797), n(539854);
 var r = n(65154);
 let i = null != navigator.mediaDevices && null != navigator.mediaDevices.enumerateDevices,
-  a = i && "setSinkId" in HTMLAudioElement.prototype;
+  o = i && "setSinkId" in HTMLAudioElement.prototype;
 
-function o(e) {
+function a(e) {
   return {
     id: r.w5,
     type: e,
@@ -22,7 +22,7 @@ function o(e) {
 }
 
 function s() {
-  return [o(r.h7.AUDIO_INPUT), o(r.h7.AUDIO_OUTPUT), o(r.h7.VIDEO_INPUT)]
+  return [a(r.h7.AUDIO_INPUT), a(r.h7.AUDIO_OUTPUT), a(r.h7.VIDEO_INPUT)]
 }
 
 function l(e, t) {
@@ -44,26 +44,26 @@ function c() {
           return !1
       }
     }).map(e => {
-      let a;
+      let o;
       switch (e.kind) {
         case r.h7.AUDIO_INPUT:
-          a = t++;
+          o = t++;
           break;
         case r.h7.AUDIO_OUTPUT:
-          a = n++;
+          o = n++;
           break;
         case r.h7.VIDEO_INPUT:
         default:
-          a = i++
+          o = i++
       }
       return {
         id: e.deviceId,
         type: e.kind,
-        index: a,
-        name: null != e.label && "" !== e.label ? e.label : 0 === a ? "Default" : "Device ".concat(a)
+        index: o,
+        name: null != e.label && "" !== e.label ? e.label : 0 === o ? "Default" : "Device ".concat(o)
       }
     })
-  }).then(e => (a || (e = e.filter(e => e.type !== r.h7.AUDIO_OUTPUT)).push(o(r.h7.AUDIO_OUTPUT)), e)).catch(s) : new Promise(e => {
+  }).then(e => (o || (e = e.filter(e => e.type !== r.h7.AUDIO_OUTPUT)).push(a(r.h7.AUDIO_OUTPUT)), e)).catch(s) : new Promise(e => {
     setImmediate(() => e(s()))
   })
 }

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(481060),
-  o = n(727637),
+  o = n(481060),
+  a = n(727637),
   s = n(100527),
   l = n(906732),
   c = n(580552),
@@ -72,7 +72,7 @@ function P(e) {
     channelId: C,
     messageId: P,
     roleId: w
-  }), B = i.useRef(null), F = (0, o.Z)(B);
+  }), B = i.useRef(null), F = (0, a.Z)(B);
   i.useEffect(() => {
     null == L || L(null == B ? void 0 : B.current)
   }, [B, L]);
@@ -83,7 +83,7 @@ function P(e) {
       }, G))
     },
     Z = !M && (0, c.Z)(t.id),
-    H = () => Z ? (0, r.jsx)(a.sNh, {
+    H = () => Z ? (0, r.jsx)(o.sNh, {
       id: "view-profile",
       label: N.NW.string(N.t["+Xp3ho"]),
       action: () => {
@@ -101,7 +101,7 @@ function P(e) {
       fetchStartedAt: null == j ? void 0 : j.fetchStartedAt,
       fetchEndedAt: null == j ? void 0 : j.fetchEndedAt,
       isLoaded: null == j ? void 0 : j.isLoaded,
-      children: (0, r.jsxs)(a.VqE, {
+      children: (0, r.jsxs)(o.VqE, {
         ref: B,
         "aria-label": t.username,
         children: [(0, r.jsxs)(y.Z, {
@@ -131,7 +131,7 @@ function P(e) {
             }), t.isClyde() && (0, r.jsx)(u.Z, {
               className: A.headerTag
             })]
-          }), (0, r.jsxs)(a.Ttm, {
+          }), (0, r.jsxs)(o.Ttm, {
             fade: !0,
             className: A.body,
             children: [(0, r.jsx)(v.Z, {

@@ -1,24 +1,24 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 }), n(388685), n(539854);
 var r = n(192379),
   i = n(442837),
-  a = n(235587);
+  o = n(235587);
 
-function o(e) {
+function a(e) {
   let {
     guildId: t,
     leaderboardId: n,
-    intervalStart: o
-  } = e, s = (0, i.Wu)([a.Z], () => {
+    intervalStart: a
+  } = e, s = (0, i.Wu)([o.Z], () => {
     var e, r;
-    return null != (r = null == (e = a.Z.getPrevLeaderboardRanks(t, n, o)) ? void 0 : e.ranks) ? r : []
-  }, [t, o, n]), l = (0, i.Wu)([a.Z], () => {
+    return null != (r = null == (e = o.Z.getPrevLeaderboardRanks(t, n, a)) ? void 0 : e.ranks) ? r : []
+  }, [t, a, n]), l = (0, i.Wu)([o.Z], () => {
     var e, r;
-    return null != (r = null == (e = a.Z.getCurrentLeaderboardRanks(t, n, o)) ? void 0 : e.ranks) ? r : []
-  }, [t, o, n]);
+    return null != (r = null == (e = o.Z.getCurrentLeaderboardRanks(t, n, a)) ? void 0 : e.ranks) ? r : []
+  }, [t, a, n]);
   return {
     rankChanges: r.useMemo(() => {
       let e = new Map;
@@ -28,11 +28,11 @@ function o(e) {
       let t = [];
       return l.forEach((n, r) => {
         let i = r + 1,
-          a = e.get(n);
-        a !== i && t.push({
+          o = e.get(n);
+        o !== i && t.push({
           userId: n,
           currentRank: i,
-          previousRank: a
+          previousRank: o
         })
       }), t
     }, [s, l])

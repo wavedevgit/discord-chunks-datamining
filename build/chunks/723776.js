@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   s = n(596454),
   l = n(727637),
   c = n(607070),
@@ -54,14 +54,14 @@ function p(e) {
 function h(e) {
   let {
     trait: t
-  } = e, n = i.useRef(null), s = (0, l.Z)(n), u = !(0, a.e7)([c.Z], () => c.Z.useReducedMotion) && s;
+  } = e, n = i.useRef(null), s = (0, l.Z)(n), u = !(0, o.e7)([c.Z], () => c.Z.useReducedMotion) && s;
   return (null == t ? void 0 : t.label) == null || t.label.length <= 0 ? null : (0, r.jsxs)("div", {
     ref: n,
     className: d.trait,
     children: [(0, r.jsx)(p, {
       emoji: t.emoji,
       shouldAnimate: u
-    }), (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(a.Text, {
       tag: "span",
       className: d.traitLabel,
       variant: "text-sm/normal",
@@ -76,9 +76,9 @@ function m(e) {
     profile: t
   } = e, n = i.useMemo(() => t.traits.map((e, t) => _({
     key: "trait-".concat(t)
-  }, e)).filter(e => e.label.length > 0), [t]), a = i.useCallback(e => "string" == typeof e ? (0, r.jsx)("div", {
+  }, e)).filter(e => e.label.length > 0), [t]), o = i.useCallback(e => "string" == typeof e ? (0, r.jsx)("div", {
     className: d.trait,
-    children: (0, r.jsx)(o.Text, {
+    children: (0, r.jsx)(a.Text, {
       tag: "span",
       variant: "text-sm/normal",
       color: "text-normal",
@@ -87,10 +87,10 @@ function m(e) {
   }, "overflow") : (0, r.jsx)(h, {
     trait: e
   }, e.key), []);
-  return 0 === n.length ? null : (0, r.jsx)(o.Epb, {
+  return 0 === n.length ? null : (0, r.jsx)(a.Epb, {
     className: d.container,
     items: n,
-    renderItem: a,
+    renderItem: o,
     maxLines: 2,
     itemGapPx: 4
   })

@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(442837),
-  a = n(481060),
-  o = n(592125),
+  o = n(481060),
+  a = n(592125),
   s = n(944486),
   l = n(246946),
   c = n(5192),
@@ -42,8 +42,8 @@ function A(e) {
   } = e, L = c.ZP.getName(null == C ? void 0 : C.id, w, t), x = (0, i.e7)([u.Z], () => {
     var e;
     return null == (e = u.Z.getUserProfile(t.id)) ? void 0 : e.application
-  }), M = (0, i.e7)([o.Z, s.Z], () => o.Z.getChannel(s.Z.getChannelId())), k = (0, i.e7)([l.Z], () => l.Z.hidePersonalInformation);
-  return (0, r.jsxs)(a.Ttm, {
+  }), M = (0, i.e7)([a.Z, s.Z], () => a.Z.getChannel(s.Z.getChannelId())), k = (0, i.e7)([l.Z], () => l.Z.hidePersonalInformation);
+  return (0, r.jsxs)(o.Ttm, {
     fade: !0,
     className: N.body,
     children: [(0, r.jsx)(m.Z, {

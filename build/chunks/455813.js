@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(481060),
   l = n(249458),
   c = n(388032),
@@ -16,7 +16,7 @@ function d(e) {
   let {
     onPlay: t,
     className: n,
-    inactive: a
+    inactive: o
   } = e, d = i.useRef(null), f = (0, r.jsx)("div", {
     className: u.iconWrapper,
     ref: d,
@@ -27,11 +27,11 @@ function d(e) {
     })
   });
   return (0, r.jsx)(l.G.Consumer, {
-    children: e => a || null == t ? (0, r.jsx)("div", {
+    children: e => o || null == t ? (0, r.jsx)("div", {
       className: u.cover,
       children: f
     }) : (0, r.jsx)(s.P3F, {
-      className: o()(n, u.cover, {
+      className: a()(n, u.cover, {
         [u.active]: !e.disableInteractions
       }),
       onClick: t,

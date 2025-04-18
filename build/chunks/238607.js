@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(442837),
-  a = n(481060),
-  o = n(40851),
+  o = n(481060),
+  a = n(40851),
   s = n(456100),
   l = n(841784),
   c = n(906732),
@@ -69,7 +69,7 @@ function S(e) {
     onClose: O
   } = e, {
     newestAnalyticsLocation: S
-  } = (0, c.ZP)(), T = (0, o.bp)() === E.IlC.POPOUT, N = (0, i.e7)([h.Z, m.Z], () => h.Z.getChannel(m.Z.getChannelId())), A = (0, p.e)({
+  } = (0, c.ZP)(), T = (0, a.bp)() === E.IlC.POPOUT, N = (0, i.e7)([h.Z, m.Z], () => h.Z.getChannel(m.Z.getChannelId())), A = (0, p.e)({
     activity: null != n ? n : void 0,
     embeddedActivity: void 0,
     user: t,
@@ -80,11 +80,11 @@ function S(e) {
     location: "ActivityButton"
   }, {
     autoTrackExposure: !0
-  }), R = C ? a.iWm : a.jje;
+  }), R = C ? o.iWm : o.jje;
   if (null == A && null != n && (0, l.Z)(n)) return (0, r.jsx)(g.tG, {
     icon: R,
     text: b.NW.string(b.t.RscU7O),
-    color: a.Ttl.BRAND,
+    color: o.Ttl.BRAND,
     themeColor: "none",
     fullWidth: !0,
     onClick: e => {
@@ -111,10 +111,10 @@ function S(e) {
     isEnabled: x,
     isEmbedded: M
   } = A;
-  return M ? (0, r.jsx)(a.ua7, {
+  return M ? (0, r.jsx)(o.ua7, {
     text: L,
     children: e => (0, r.jsx)(g.tG, I(v({}, e), {
-      icon: a.YVR,
+      icon: o.YVR,
       text: D,
       disabled: !x,
       submitting: P,
@@ -125,10 +125,10 @@ function S(e) {
         }), w()
       }
     }))
-  }) : (0, r.jsx)(a.ua7, {
+  }) : (0, r.jsx)(o.ua7, {
     text: L,
     children: e => (0, r.jsx)(g.tG, I(v({}, e), {
-      icon: a.iWm,
+      icon: o.iWm,
       text: D,
       disabled: !x,
       submitting: P,

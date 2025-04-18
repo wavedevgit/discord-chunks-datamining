@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(38068),
   l = n(388032),
   c = n(416999);
@@ -14,16 +14,16 @@ let u = i.forwardRef(function(e, t) {
   let {
     className: n,
     contentClassName: i,
-    isUnread: a,
+    isUnread: o,
     children: u,
     id: d,
     role: f,
     "aria-label": _
   } = e;
   return (0, r.jsxs)("div", {
-    className: o()(n, {
+    className: a()(n, {
       [c.divider]: !0,
-      [c.isUnread]: a,
+      [c.isUnread]: o,
       [c.hasContent]: null != u
     }),
     ref: t,
@@ -31,9 +31,9 @@ let u = i.forwardRef(function(e, t) {
     role: f,
     "aria-label": _,
     children: [null != u ? (0, r.jsx)("span", {
-      className: o()(c.content, i),
+      className: a()(c.content, i),
       children: u
-    }) : null, a ? (0, r.jsxs)("span", {
+    }) : null, o ? (0, r.jsxs)("span", {
       className: c.unreadPill,
       children: [(0, r.jsx)(s.Z, {
         foreground: c.unreadPillCapStroke,

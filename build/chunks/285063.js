@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  a = n(916752),
-  o = n(852831);
+  o = n(916752),
+  a = n(852831);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -51,12 +51,12 @@ function u(e, t) {
 function d(e) {
   let {
     node: t
-  } = e, n = (0, a.Z)(t);
+  } = e, n = (0, o.Z)(t);
   return (0, r.jsx)(i.ua7, {
     text: t.full,
-    tooltipClassName: o.timestampTooltip,
+    tooltipClassName: a.timestampTooltip,
     children: e => (0, r.jsx)("span", u(l({}, e), {
-      className: o.timestamp,
+      className: a.timestamp,
       children: n
     }))
   })

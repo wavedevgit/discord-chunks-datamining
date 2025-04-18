@@ -1,6 +1,6 @@
 /**
   Module ID: 48791
-  Original File Name: 126821216491fba7
+  Original File Name: 031b7615d13570d7
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -3772,46 +3772,15 @@
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
-    height: 48px;
+    height: 40px;
     justify-content: center;
     transition: color .15s ease-out,background-color .15s ease-out;
-    width: 48px
+    width: 40px
 }
 
 .geoRestrictedBadge_a2be55 {
-    background-color: var(--status-warning);
-    color: var(--black)
-}
-
-.footer__214dc {
-    background: var(--bg-overlay-app-frame,var(--background-tertiary));
-    margin-top: -8px;
-    padding-top: 8px;
-    position: relative;
-    z-index: 2
-}
-
-.gradient__214dc {
-    background: inherit;
-    height: 16px;
-    left: 0;
-    -webkit-mask-image: linear-gradient(0deg,#000 0,transparent);
-    mask-image: linear-gradient(0deg,#000 0,transparent);
-    pointer-events: none;
-    position: absolute;
-    right: 0;
-    top: -16px;
-    transition: opacity .2s ease
-}
-
-.gradientHidden__214dc {
-    opacity: 0
-}
-
-.visual-refresh .footer__214dc {
-    background: var(--bg-overlay-app-frame,var(--bg-base-tertiary));
-    margin-top: 0;
-    padding: var(--space-xs) 0
+    background-color: var(--status-warning-background);
+    color: var(--status-warning-text)
 }
 
 .progressContainer__81ae5 {
@@ -4346,8 +4315,17 @@
     user-select: none
 }
 
+.scroller_ef3116>[hidden] {
+    margin-top: calc(var(--space-xs)*-1);
+    visibility: hidden
+}
+
 .scroller_ef3116.scrolling_ef3116>* {
     pointer-events: none
+}
+
+.scroller_ef3116.isScrolledToBottom_ef3116 {
+    padding: 12px 0 0
 }
 
 .platform-osx .scroller_ef3116,.platform-win .scroller_ef3116 {
@@ -6484,4 +6462,4 @@
     background-image: url(/assets/05207174d5432737.svg)
 }
 
-/*# sourceMappingURL=126821216491fba7.css.map*/
+/*# sourceMappingURL=031b7615d13570d7.css.map*/

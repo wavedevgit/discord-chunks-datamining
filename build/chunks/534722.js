@@ -1,4 +1,4 @@
-/** Chunk was on 51582 **/
+/** Chunk was on 49245 **/
 e.exports = {
   channel: "channel__427f0",
   collapseButton: "collapseButton__427f0",

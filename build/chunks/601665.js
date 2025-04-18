@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   s = n(727637),
   l = n(100527),
   c = n(906732),
@@ -71,7 +71,7 @@ function C(e) {
     channelId: C,
     messageId: R,
     roleId: P
-  }), U = (0, _.ZP)(t.id, N), G = (0, a.e7)([u.Z], () => null != N ? u.Z.getGuild(N) : null), B = i.useRef(null), F = (0, s.Z)(B);
+  }), U = (0, _.ZP)(t.id, N), G = (0, o.e7)([u.Z], () => null != N ? u.Z.getGuild(N) : null), B = i.useRef(null), F = (0, s.Z)(B);
   i.useEffect(() => {
     null == L || L(null == B ? void 0 : B.current)
   }, [B, L]);
@@ -81,7 +81,7 @@ function C(e) {
         hideRestrictedProfile: !0
       }, j, e))
     },
-    Z = () => x ? null : (0, r.jsx)(o.sNh, {
+    Z = () => x ? null : (0, r.jsx)(a.sNh, {
       id: "view-profile",
       label: S.NW.string(S.t["+Xp3ho"]),
       action: () => {
@@ -99,7 +99,7 @@ function C(e) {
       fetchStartedAt: null == U ? void 0 : U.fetchStartedAt,
       fetchEndedAt: null == U ? void 0 : U.fetchEndedAt,
       isLoaded: null == U ? void 0 : U.isLoaded,
-      children: (0, r.jsx)(o.VqE, {
+      children: (0, r.jsx)(a.VqE, {
         ref: B,
         "aria-label": t.username,
         children: (0, r.jsxs)(m.Z, {

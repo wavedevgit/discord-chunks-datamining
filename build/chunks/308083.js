@@ -11,11 +11,11 @@ var r = n(913527),
 if (n(116175), n(137920), n(388032), i()("2024-01-01T00:00:00"), isNaN(Number(Object.values(function(e) {
     return e[e.GAMES = 0] = "GAMES", e[e.PLAYSTYLE = 1] = "PLAYSTYLE", e[e.UTILITY_TRAITS = 2] = "UTILITY_TRAITS", e[e.INTERESTS = 3] = "INTERESTS", e[e.DESCRIPTION = 4] = "DESCRIPTION", e[e.CUSTOMIZE_TAG_BADGE = 5] = "CUSTOMIZE_TAG_BADGE", e[e.CUSTOMIZE_BANNER = 6] = "CUSTOMIZE_BANNER", e[e.MEMBER_APPLICATION = 7] = "MEMBER_APPLICATION", e
   }({})).pop()))) throw Error("Failed to get the last step in the ClanSetupSteps enum");
-let a = ["Server: NA", "Server: EU", "Server: LATAM", "Server: KR", "Server: AP", "Voice ON", "Voice OFF", "Unrated", "All Ranks", "Bronze+", "Silver+", "Gold+", "Platinum+", "Diamond+"],
-  o = new Set([...a, "Server: NA", "Server: EU", "Server: Asia", "Server: TW/HK/MO", "Mondstadt", "Liyue", "Inazuma", "Sumeru", "Fontaine", "F2P", "Spenders", "Co-op", "Support"]),
+let o = ["Server: NA", "Server: EU", "Server: LATAM", "Server: KR", "Server: AP", "Voice ON", "Voice OFF", "Unrated", "All Ranks", "Bronze+", "Silver+", "Gold+", "Platinum+", "Diamond+"],
+  a = new Set([...o, "Server: NA", "Server: EU", "Server: Asia", "Server: TW/HK/MO", "Mondstadt", "Liyue", "Inazuma", "Sumeru", "Fontaine", "F2P", "Spenders", "Co-op", "Support"]),
   s = ["20+", "30+", "40+", "All Ages"],
   l = ["Recurring Events", "Beginner Friendly", "PUGs", "Inclusive", "Parent Friendly", "Work-life Balance", "Competitive", "Streamer", "Esports"],
-  c = new Set([...a, ...s, ...l]),
+  c = new Set([...o, ...s, ...l]),
   u = new Set(["Bulgarian", "Chinese (Simplified)", "Chinese (Traditional)", "Croatian", "Czech", "Danish", "Dutch", "English", "Finnish", "French", "German", "Greek", "Hindi", "Hungarian", "Italian", "Japanese", "Korean", "Lithuanian", "Norwegian", "Polish", "Portuguese", "Romanian", "Russian", "Spanish", "Swedish", "Thai", "Turkish", "Ukrainian", "Vietnamese"]);
 
 function d(e) {

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(70097),
   l = n(598062),
   c = n(881474),
@@ -45,14 +45,14 @@ function g(e) {
   let {
     nameplate: t,
     hovered: n,
-    selected: a,
+    selected: o,
     content: s,
     placement: l
-  } = e, u = (0, d.p)(s, t, n, a, l, !0), p = (0, c.C)(n, a), h = i.useRef(null == t);
+  } = e, u = (0, d.p)(s, t, n, o, l, !0), p = (0, c.C)(n, o), h = i.useRef(null == t);
   return (i.useEffect(() => {
     h.current || null != t || (h.current = !0)
   }, [t]), null == t) ? null : (0, r.jsx)("div", {
-    className: o()(_.container, {
+    className: a()(_.container, {
       [_.fadeIn]: h.current
     }),
     style: {
@@ -60,9 +60,9 @@ function g(e) {
     },
     children: (0, r.jsx)(b, {
       nameplate: t,
-      className: o()(_.img, _.updated, {
+      className: a()(_.img, _.updated, {
         [_.hover]: n,
-        [_.selected]: a,
+        [_.selected]: o,
         [_.account]: l === f.i.ACCOUNT,
         [_.preview]: l === f.i.PREVIEW,
         [_.channel]: l === f.i.CHANNEL
@@ -80,10 +80,10 @@ function E(e) {
   let {
     nameplate: t,
     hovered: n,
-    selected: a,
+    selected: o,
     content: s,
     placement: l
-  } = e, u = (0, d.p)(s, t, n, a, l), p = (0, c.C)(n, a), [h, m] = i.useState(t), [g, E] = i.useState(!0), y = null != t;
+  } = e, u = (0, d.p)(s, t, n, o, l), p = (0, c.C)(n, o), [h, m] = i.useState(t), [g, E] = i.useState(!0), y = null != t;
   i.useLayoutEffect(() => () => {
     E(!1)
   }, [y]), i.useEffect(() => {
@@ -94,7 +94,7 @@ function E(e) {
     onAnimationEnd: () => {
       y || m(null)
     },
-    className: o()(_.container, {
+    className: a()(_.container, {
       [_.fadeOut]: !g && !y,
       [_.fadeIn]: !g && y
     }),
@@ -103,9 +103,9 @@ function E(e) {
     },
     children: (0, r.jsx)(b, {
       nameplate: v,
-      className: o()(_.img, {
+      className: a()(_.img, {
         [_.hover]: n,
-        [_.selected]: a,
+        [_.selected]: o,
         [_.account]: l === f.i.ACCOUNT,
         [_.preview]: l === f.i.PREVIEW
       }),
@@ -123,22 +123,22 @@ function b(e) {
     nameplate: t,
     className: n,
     style: i,
-    animate: a,
-    loop: o
+    animate: o,
+    loop: a
   } = e, {
     staticAsset: s,
     animatedAsset: l
   } = (0, u._)(t), c = null == l ? void 0 : l.endsWith(".png");
   return null == s || null == l ? null : c ? (0, r.jsx)(v, {
     nameplate: t,
-    asset: a ? l : s,
+    asset: o ? l : s,
     className: n,
     style: i
   }) : (0, r.jsx)(y, {
     animatedAsset: l,
     staticAsset: s,
-    animate: a,
-    loop: o,
+    animate: o,
+    loop: a,
     style: i,
     className: n
   })
@@ -148,14 +148,14 @@ function y(e) {
   let {
     staticAsset: t,
     animatedAsset: n,
-    animate: a,
-    loop: o,
+    animate: o,
+    loop: a,
     className: l,
     style: c
   } = e, u = i.useRef(null);
   return i.useEffect(() => {
-    null != u.current && (a || o ? u.current.play() : u.current.pause())
-  }, [a, o]), (0, r.jsx)("div", {
+    null != u.current && (o || a ? u.current.play() : u.current.pause())
+  }, [o, a]), (0, r.jsx)("div", {
     className: _.videoContainer,
     style: c,
     children: (0, r.jsx)(s.Z, {
@@ -163,7 +163,7 @@ function y(e) {
       poster: t,
       ref: u,
       playsInline: !0,
-      loop: o,
+      loop: a,
       controls: !1,
       className: l
     })
@@ -175,12 +175,12 @@ function v(e) {
     nameplate: t,
     asset: n,
     className: i,
-    style: a
+    style: o
   } = e;
   return (0, r.jsx)("img", {
     src: n,
     className: i,
-    style: a,
+    style: o,
     alt: t.imgAlt
   })
 }

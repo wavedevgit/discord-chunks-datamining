@@ -3,12 +3,12 @@
 n.d(t, {
   AK: () => l,
   PW: () => s,
-  XD: () => o,
-  i5: () => a
+  XD: () => a,
+  i5: () => o
 });
 var r = n(818083),
   i = n(987338);
-let a = (0, r.B)({
+let o = (0, r.B)({
     kind: "user",
     id: "2025-02_name_plate_experiment",
     label: "Nameplates Experiment",
@@ -36,17 +36,17 @@ let a = (0, r.B)({
       }
     }]
   }),
-  o = e => a.useExperiment({
+  a = e => o.useExperiment({
     location: e
   }, {
     autoTrackExposure: !1
   }).canView,
-  s = e => a.useExperiment({
+  s = e => o.useExperiment({
     location: e
   }, {
     autoTrackExposure: !1
   }).canViewAll,
-  l = e => a.useExperiment({
+  l = e => o.useExperiment({
     location: e
   }, {
     autoTrackExposure: !1

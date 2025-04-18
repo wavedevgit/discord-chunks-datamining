@@ -10,8 +10,8 @@ n.d(t, {
 }), n(35282), n(953529);
 var r = n(664751),
   i = n(134432),
-  a = n(768581),
-  o = n(823379),
+  o = n(768581),
+  a = n(823379),
   s = n(72703),
   l = n(981631),
   c = n(485696),
@@ -23,31 +23,31 @@ function d(e) {
     canAnimate: n = !1,
     allowWebp: r = !0
   } = e;
-  if (n && (0, a.xR)(t)) return "gif";
+  if (n && (0, o.xR)(t)) return "gif";
   let {
     CDN_HOST: i
   } = window.GLOBAL_ENV;
-  return null == i ? "jpg" : r && a.$k ? "webp" : "png"
+  return null == i ? "jpg" : r && o.$k ? "webp" : "png"
 }
 
 function f(e) {
   let {
     userId: t,
     avatarId: n,
-    storageHash: a,
-    canAnimate: o = !1,
+    storageHash: o,
+    canAnimate: a = !1,
     allowWebp: s = !0,
     size: c
   } = e, {
     CDN_HOST: u
   } = window.GLOBAL_ENV, f = null != u ? "".concat(location.protocol, "//").concat(u) : location.protocol + window.GLOBAL_ENV.API_ENDPOINT, _ = d({
-    storageHash: a,
-    canAnimate: o,
+    storageHash: o,
+    canAnimate: a,
     allowWebp: s
   }), p = "?".concat(r.stringify({
     size: (0, i.oO)(c * (0, i.x_)())
   }));
-  return "".concat(f).concat(l.ANM.ARCHIVED_AVATAR(t, n, a, _)).concat(p)
+  return "".concat(f).concat(l.ANM.ARCHIVED_AVATAR(t, n, o, _)).concat(p)
 }
 
 function _(e) {
@@ -92,7 +92,7 @@ function m(e) {
     case "jpg":
       return "image/jpeg";
     default:
-      (0, o.vE)(e)
+      (0, a.vE)(e)
   }
 }
 
@@ -130,7 +130,7 @@ function E(e) {
         assetOrigin: t, imageUri: n, originalAsset: i
       };
     default:
-      (0, o.vE)(t)
+      (0, a.vE)(t)
   }
 }
 

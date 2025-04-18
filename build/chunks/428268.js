@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(442837),
-  a = n(692547),
-  o = n(481060),
+  o = n(692547),
+  a = n(481060),
   s = n(726542),
   l = n(231757),
   c = n(511010),
@@ -75,7 +75,7 @@ let v = function(e) {
     R = A || C;
 
   function P() {
-    null != I && (0, o.ZDy)(async () => {
+    null != I && (0, a.ZDy)(async () => {
       let {
         default: e
       } = await n.e("73217").then(n.bind(n, 139964));
@@ -98,16 +98,16 @@ let v = function(e) {
 
   function L() {
     if (b) return null;
-    let e = N ? (0, r.jsx)(o.d3s, {
+    let e = N ? (0, r.jsx)(a.d3s, {
         className: m.infoMessageIcon
-      }) : (0, r.jsx)(o.aNP, {
-        color: a.Z.colors.STATUS_WARNING,
+      }) : (0, r.jsx)(a.aNP, {
+        color: o.Z.colors.STATUS_WARNING,
         className: m.infoMessageIcon
       }),
       t = N ? h.NW.string(h.t["Ihg/Dg"]) : h.NW.string(h.t["J8U+Iy"]);
     return (0, r.jsxs)("div", {
       className: m.updateMessage,
-      children: [e, (0, r.jsx)(o.Text, {
+      children: [e, (0, r.jsx)(a.Text, {
         variant: "text-xs/medium",
         color: "text-muted",
         children: t
@@ -117,7 +117,7 @@ let v = function(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.Z, {
       className: m.divider
-    }), L(), (0, r.jsxs)(o.zxk, {
+    }), L(), (0, r.jsxs)(a.zxk, {
       className: m.joinLeaderboardButton,
       innerClassName: m.joinLeaderboardButtonInner,
       onClick: w,

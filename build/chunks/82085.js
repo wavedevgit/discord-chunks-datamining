@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(703656),
   i = n(981631);
-let a = {
+let o = {
   onOpenHubInvite(e) {
     let {
       guild: t

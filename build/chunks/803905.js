@@ -34,8 +34,8 @@ n.d(t, {
 }), n(49124);
 var r = n(848246),
   i = n(710845),
-  a = n(380684),
-  o = n(533293),
+  o = n(380684),
+  a = n(533293),
   s = n(526998),
   l = n(575691),
   c = n(474936);
@@ -60,7 +60,7 @@ function f(e, t) {
   }
   return !1
 }
-class _ extends o.Z {
+class _ extends a.Z {
   constructor(e, t) {
     super(e, e => f(this, e), t)
   }
@@ -89,7 +89,7 @@ let p = new _(r.q.ANIMATED_EMOJIS),
   M = new _("installPremiumApplications"),
   k = new _("redeemPremiumPerks"),
   j = new _(r.q.VIDEO_FILTER_ASSETS);
-new o.Z(r.q.INCREASED_FILE_UPLOAD_SIZE, a.h);
+new a.Z(r.q.INCREASED_FILE_UPLOAD_SIZE, o.h);
 let U = new _(r.q.INCREASED_GUILD_LIMIT),
   G = new _(r.q.INCREASED_MESSAGE_LENGTH),
   B = new _("increasedVideoUploadQuality"),

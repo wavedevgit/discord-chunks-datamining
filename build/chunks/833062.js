@@ -1,21 +1,21 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(200651),
   i = n(925329),
-  a = n(373373);
+  o = n(373373);
 
-function o(e) {
+function a(e) {
   let {
     application: t,
     useComma: n = !1
   } = e;
   return (0, r.jsxs)("div", {
-    className: a.applicationNameWrapper,
+    className: o.applicationNameWrapper,
     children: [(0, r.jsx)(i.Z, {
-      className: a.applicationIcon,
+      className: o.applicationIcon,
       game: t,
       size: i.Z.Sizes.XSMALL
     }), (0, r.jsx)("strong", {

@@ -6,8 +6,8 @@ n.d(t, {
 }), n(539854), n(388685), n(953529), n(997841), n(781311), n(642613);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(658722),
   l = n.n(s),
   c = n(512722),
@@ -60,8 +60,8 @@ var r = n(200651),
   en = n(981631),
   er = n(388032),
   ei = n(340707),
-  ea = n(852831),
-  eo = n(971005);
+  eo = n(852831),
+  ea = n(971005);
 
 function es(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -111,7 +111,7 @@ function ef(e) {
     className: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: o()(ei.twoWayWarning, n),
+    className: a()(ei.twoWayWarning, n),
     children: [(0, r.jsx)(g.d3s, {
       size: "md",
       color: "currentColor",
@@ -197,7 +197,7 @@ let e_ = e => {
         href: t.terms_of_service_url,
         shouldConfirm: !0
       })
-    }, a = () => {
+    }, o = () => {
       null != t.privacy_policy_url && (0, Y.q)({
         href: t.privacy_policy_url,
         shouldConfirm: !0
@@ -223,7 +223,7 @@ let e_ = e => {
           className: ei.divider
         }) : null, (0, r.jsxs)(m.P, {
           tag: "a",
-          onClick: a,
+          onClick: o,
           className: ei.privacy,
           tabIndex: n ? 0 : -1,
           children: [(0, r.jsx)(g.R94, {
@@ -240,14 +240,14 @@ let e_ = e => {
   eg = e => {
     let {
       scopes: t,
-      application: a,
+      application: o,
       selectedChannelId: s,
       selectedGuildId: l,
       onDelete: c,
       disclosures: u,
       locale: d,
       id: _
-    } = e, p = i.useMemo(() => j.ZP.createFromServer(a), [a]), h = L.Z.useExperiment({
+    } = e, p = i.useMemo(() => j.ZP.createFromServer(o), [o]), h = L.Z.useExperiment({
       location: "Authorized Applications"
     }, {
       autoTrackExposure: !0
@@ -257,7 +257,7 @@ let e_ = e => {
       if (e.length > 0 || null != u && u.length > 0) return (0, r.jsx)(g.xJW, {
         faded: !0,
         title: er.NW.string(er.t.xrmhRU),
-        className: eo.marginTop20,
+        className: ea.marginTop20,
         children: (0, r.jsxs)("ul", {
           children: [e.map((e, t) => (0, r.jsxs)("li", {
             className: ei.permission,
@@ -280,15 +280,15 @@ let e_ = e => {
         })
       })
     }, E = () => {
-      if (null != a.description && "" !== a.description) return (0, r.jsx)(g.xJW, {
+      if (null != o.description && "" !== o.description) return (0, r.jsx)(g.xJW, {
         faded: !0,
         title: er.NW.string(er.t.GfRGra),
         children: (0, r.jsx)(g.R94, {
-          children: a.description
+          children: o.description
         })
       })
     }, b = (0, D.Z)({
-      id: a.id,
+      id: o.id,
       label: er.NW.string(er.t["+NP/b2"])
     }), v = i.useMemo(() => {
       if (null != b) return e => {
@@ -303,8 +303,8 @@ let e_ = e => {
       }
     }, [b]), O = () => {
       let e = Z.ZP.getApplicationIconURL({
-          id: a.id,
-          icon: a.icon
+          id: o.id,
+          icon: o.icon
         }),
         t = null != e ? (0, r.jsx)(w.Z.Child, {
           className: ei.appAvatar,
@@ -316,13 +316,13 @@ let e_ = e => {
         }) : null,
         n = new Date(z.default.extractTimestamp(_)).toLocaleDateString(d);
       return (0, r.jsxs)("div", {
-        className: o()(ei.header, eo.marginBottom20),
+        className: a()(ei.header, ea.marginBottom20),
         children: [t, (0, r.jsxs)("div", {
           className: ei.headerTextContainer,
           children: [(0, r.jsx)(g.X6q, {
             variant: "text-sm/semibold",
             className: ei.headerText,
-            children: a.name
+            children: o.name
           }), (0, r.jsx)(g.Text, {
             variant: "text-xs/normal",
             color: "text-normal",
@@ -341,22 +341,22 @@ let e_ = e => {
           color: g.Ttl.RED,
           look: g.iLD.OUTLINED,
           size: g.PhG.SMALL,
-          onClick: () => eh(a, c),
+          onClick: () => eh(o, c),
           children: er.NW.string(er.t.xUqheH)
         })]
       })
-    }, I = (0, $.O)(a.id);
+    }, I = (0, $.O)(o.id);
     return (0, r.jsx)(g.Zbd, {
-      className: o()(ei.authedApp, eo.marginBottom8),
+      className: a()(ei.authedApp, ea.marginBottom8),
       outline: !0,
       onContextMenu: v,
       children: (0, r.jsxs)(g.y5t, {
         component: O(),
         children: [E(), (0, r.jsx)(em, {
-          application: a,
+          application: o,
           isVisible: !0
         }), m(), I && (0, r.jsx)(ef, {
-          application: a,
+          application: o,
           className: ei.twoWayWarningV1
         })]
       })
@@ -365,19 +365,19 @@ let e_ = e => {
   eE = e => {
     let {
       scopes: t,
-      application: a,
+      application: o,
       selectedChannelId: s,
       selectedGuildId: l,
       onDelete: c,
       disclosures: d,
       locale: p,
       id: E
-    } = e, y = a.id, O = i.useMemo(() => j.ZP.createFromServer(a), [a]), I = (0, W.yE)(O.flags, en.udG.EMBEDDED), S = (0, _.e7)([J.Z], () => {
+    } = e, y = o.id, O = i.useMemo(() => j.ZP.createFromServer(o), [o]), I = (0, W.yE)(O.flags, en.udG.EMBEDDED), S = (0, _.e7)([J.Z], () => {
       var e, t, n, r;
       return null == (r = J.Z.settings.applications) || null == (n = r.appSettings) || null == (t = n[y]) || null == (e = t.appDmSettings) ? void 0 : e.allowMobilePush
     }, [y]), T = A.w.useExperiment({
       location: "oauth2_authorize"
-    }), N = a.bot, C = (0, _.e7)([G.Z], () => G.Z.getDMFromUserId(null == N ? void 0 : N.id)), {
+    }), N = o.bot, C = (0, _.e7)([G.Z], () => G.Z.getDMFromUserId(null == N ? void 0 : N.id)), {
       appDMChannelMuteConfig: P,
       dmChannelMuted: D
     } = (0, _.cj)([V.ZP], () => null == C ? {
@@ -441,7 +441,7 @@ let e_ = e => {
             }), !B && (0, r.jsx)(g.Text, {
               variant: "text-sm/normal",
               color: "text-secondary",
-              className: o()(ei.appDetailsContent, ei.permissionsDescription),
+              className: a()(ei.appDetailsContent, ei.permissionsDescription),
               children: er.NW.format(er.t.nZOS8v, {
                 numPermissions: e.length
               })
@@ -450,22 +450,22 @@ let e_ = e => {
         }
       })
     }, q = i.useMemo(() => {
-      if (null != a.description && "" !== a.description) return (0, r.jsx)(g.Text, {
-        className: ea.markup,
+      if (null != o.description && "" !== o.description) return (0, r.jsx)(g.Text, {
+        className: eo.markup,
         variant: "text-sm/normal",
         color: "text-normal",
-        children: (0, M.parseBioReact)(a.description)
+        children: (0, M.parseBioReact)(o.description)
       })
-    }, [a.description]), Q = () => {
-      let e = null != a.description && "" !== a.description,
-        t = null != a.terms_of_service_url || null != a.privacy_policy_url;
+    }, [o.description]), Q = () => {
+      let e = null != o.description && "" !== o.description,
+        t = null != o.terms_of_service_url || null != o.privacy_policy_url;
       return e || t ? (0, r.jsx)(g.zF9, {
         className: ei.appDetailsSection,
         isExpanded: x,
         collapsibleContent: (0, r.jsxs)("div", {
           className: ei.appDetailsContent,
           children: [e && q, t && (0, r.jsx)(em, {
-            application: a,
+            application: o,
             isVisible: x
           })]
         }),
@@ -494,8 +494,8 @@ let e_ = e => {
       }) : null
     }, ee = () => {
       let e = Z.ZP.getApplicationIconURL({
-          id: a.id,
-          icon: a.icon
+          id: o.id,
+          icon: o.icon
         }),
         t = null != e ? (0, r.jsx)(w.Z.Child, {
           className: ei.appAvatarV2,
@@ -512,8 +512,8 @@ let e_ = e => {
           className: ei.headerTextContainerV2,
           children: [(0, r.jsx)(g.X6q, {
             variant: "heading-md/semibold",
-            className: o()(ei.headerText, eo.marginBottom4),
-            children: a.name
+            className: a()(ei.headerText, ea.marginBottom4),
+            children: o.name
           }), (0, r.jsx)(g.Text, {
             variant: "text-sm/normal",
             color: "text-normal",
@@ -592,10 +592,10 @@ let e_ = e => {
           children: er.NW.string(er.t["Pkw//v"])
         })
       }) : null]
-    }) : null, ed = (0, $.O)(a.id), ep = () => (0, r.jsxs)("div", {
+    }) : null, ed = (0, $.O)(o.id), ep = () => (0, r.jsxs)("div", {
       className: ei.footer,
       children: [ed && (0, r.jsx)(ef, {
-        application: a,
+        application: o,
         className: ei.twoWayWarningV2
       }), (0, r.jsx)("div", {
         className: ei.deauthorizeButton,
@@ -603,7 +603,7 @@ let e_ = e => {
           color: g.Ttl.RED,
           look: g.iLD.OUTLINED,
           size: g.PhG.SMALL,
-          onClick: () => eh(a, c),
+          onClick: () => eh(o, c),
           children: er.NW.string(er.t.xUqheH)
         })
       })]
@@ -625,8 +625,8 @@ let e_ = e => {
   ey = () => {
     let e = (0, _.e7)([F.Z], () => F.Z.hidePersonalInformation),
       t = (0, _.e7)([U.Z], () => U.Z.getApps()),
-      a = (0, _.e7)([q.default], () => q.default.locale),
-      o = (0, _.e7)([T.ZP], () => T.ZP.getSelfEmbeddedActivities()),
+      o = (0, _.e7)([q.default], () => q.default.locale),
+      a = (0, _.e7)([T.ZP], () => T.ZP.getSelfEmbeddedActivities()),
       s = (0, _.e7)([G.Z, B.Z], () => G.Z.getChannel(B.Z.getChannelId())),
       c = null == s ? void 0 : s.getGuildId(),
       u = C.G.useExperiment({
@@ -649,7 +649,7 @@ let e_ = e => {
         E.Z.delete(t), H.S.safeDispatch(en.CkL.HIDE_APP_LAUNCHER_BUTTON_APP_INSTALLED_EDUCATION, {
           applicationId: n.id
         });
-        let r = o.get(n.id);
+        let r = a.get(n.id);
         null != r && N.Z.leaveActivity({
           location: r.location,
           applicationId: n.id,
@@ -694,18 +694,18 @@ let e_ = e => {
         return "" === e || null == t ? t : t.length < 100 ? t.filter(t => l()(e, t.application.name.toLowerCase())) : t.filter(t => t.application.name.toLowerCase().includes(e))
       }, [t, f]),
       O = () => null == t || null == v ? (0, r.jsx)(g.$jN, {
-        className: eo.marginTop20,
+        className: ea.marginTop20,
         type: g.$jN.Type.SPINNING_CIRCLE
       }) : 0 === t.length ? y(er.NW.string(er.t.CpPv5u), er.NW.string(er.t["E+SM6e"])) : 0 === v.length ? (0, r.jsxs)(r.Fragment, {
         children: [b(), y(null, er.NW.string(er.t.EVWFNj))]
       }) : (0, r.jsxs)(r.Fragment, {
         children: [b(), v.sort((e, t) => Number(t.id) - Number(e.id)).map(e => u ? (0, r.jsx)(eE, el({
-          locale: a,
+          locale: o,
           onDelete: () => d(e),
           selectedChannelId: null == s ? void 0 : s.id,
           selectedGuildId: null != c ? c : void 0
         }, e), e.id) : (0, r.jsx)(eg, el({
-          locale: a,
+          locale: o,
           onDelete: () => d(e),
           selectedChannelId: null == s ? void 0 : s.id,
           selectedGuildId: null != c ? c : void 0
@@ -716,7 +716,7 @@ let e_ = e => {
       title: er.NW.string(er.t["f6kk+v"]),
       children: (0, r.jsx)(g.y5t, {
         component: (0, r.jsx)(g.ToO, {
-          className: eo.marginBottom40,
+          className: ea.marginBottom40,
           type: g.sje.PRIMARY,
           title: er.NW.string(er.t.HU3RFx),
           body: er.NW.string(er.t.Nu5Yi4)

@@ -8,8 +8,8 @@ n.d(t, {
 }), n(35282), n(388685), n(539854);
 var r = n(392711),
   i = n(252258),
-  a = n(759174),
-  o = n(586902),
+  o = n(759174),
+  a = n(586902),
   s = n(636449),
   l = n(317381),
   c = n(569545),
@@ -137,8 +137,8 @@ class D {
       }), this.participants[e] = n, e !== C) {
       var r, i;
       let e = null != (r = null == t ? void 0 : t.length) ? r : 0,
-        a = null != (i = null == n ? void 0 : n.length) ? i : 0;
-      (e < 1 && a > 0 || e > 0 && a < 1) && this.updateEmbeddedActivities()
+        o = null != (i = null == n ? void 0 : n.length) ? i : 0;
+      (e < 1 && o > 0 || e > 0 && o < 1) && this.updateEmbeddedActivities()
     }
     return !0
   }
@@ -146,7 +146,7 @@ class D {
     var t, n;
     return null != (n = null == (t = this.participants[e]) ? void 0 : t.reduce((t, n) => {
       if (n.type === v.fO.USER) {
-        let t = (0, o.O)({
+        let t = (0, a.O)({
           userId: e,
           checkIsMuted: !0
         });
@@ -172,19 +172,19 @@ class D {
   _getEmbeddedActivities() {
     var e, t;
     let n = l.ZP.getEmbeddedActivitiesForChannel(this.channelId).concat(l.ZP.getEmbeddedActivitiesForStartingChannel(this.channelId)),
-      a = new Set;
+      o = new Set;
     Object.entries(this.participants).forEach(e => {
       let [t, n] = e;
-      n.length > 0 && a.add(t)
+      n.length > 0 && o.add(t)
     });
-    let o = n.filter(e => {
+    let a = n.filter(e => {
         var t;
-        return null == (t = e.participants) ? void 0 : t.some(e => a.has(e.userId))
+        return null == (t = e.participants) ? void 0 : t.some(e => o.has(e.userId))
       }),
       c = null != (e = l.ZP.getSelfEmbeddedActivityForChannel(this.channelId)) ? e : l.ZP.getSelfEmbeddedActivityForStartingChannel(this.channelId);
-    if (null == c) return o;
+    if (null == c) return a;
     {
-      let e = (0, r.uniqBy)([...o, c], e => e.compositeInstanceId);
+      let e = (0, r.uniqBy)([...a, c], e => e.compositeInstanceId);
       return (null == (t = c.participants) ? void 0 : t.some(e => e.sessionId === d.default.getSessionId())) && (0, s.R)({
         isContextless: c.location.kind === i.E.CONTEXTLESS
       }) ? e.filter(e => e.applicationId !== c.applicationId && e.compositeInstanceId !== c.compositeInstanceId) : e
@@ -209,7 +209,7 @@ class D {
     })
   }
   _getParticipantsForUser(e) {
-    var t, n, r, i, a, s;
+    var t, n, r, i, o, s;
     let l, f, y = [],
       O = m.default.getUser(e);
     if (null == O) return y;
@@ -224,7 +224,7 @@ class D {
       id: O.id,
       voiceState: S,
       voicePlatform: N,
-      speaking: (0, o.O)({
+      speaking: (0, a.O)({
         userId: e,
         checkIsMuted: !0
       }),
@@ -234,7 +234,7 @@ class D {
       userNick: b.ZP.getName(null == C ? void 0 : C.getGuildId(), this.channelId, O),
       localVideoDisabled: p.Z.isLocalVideoDisabled(O.id)
     }), y.push(l));
-    let P = null != (a = u.Z.getStreamForUser(e, null == C ? void 0 : C.getGuildId())) ? a : u.Z.getActiveStreamForUser(e, null == C ? void 0 : C.getGuildId());
+    let P = null != (o = u.Z.getStreamForUser(e, null == C ? void 0 : C.getGuildId())) ? o : u.Z.getActiveStreamForUser(e, null == C ? void 0 : C.getGuildId());
     if (null != P && P.channelId === this.channelId) {
       let t = (0, c.V9)(P),
         n = this.getParticipant(t),
@@ -255,7 +255,7 @@ class D {
     return y
   }
   constructor(e) {
-    S(this, "channelId", void 0), S(this, "call", void 0), S(this, "participants", {}), S(this, "lastSpoke", {}), S(this, "guildRingingUsers", new Set), S(this, "participantByIndex", new a.h(e => {
+    S(this, "channelId", void 0), S(this, "call", void 0), S(this, "participants", {}), S(this, "lastSpoke", {}), S(this, "guildRingingUsers", new Set), S(this, "participantByIndex", new o.h(e => {
       var t;
       let n = [];
       return e.type === v.fO.USER && e.speaking && n.push("SPEAKING"), e.type === v.fO.USER && (null == (t = e.voiceState) ? void 0 : t.selfVideo) ? (n.push("VIDEO"), e.localVideoDisabled || n.push("FILTERED")) : (0, v._5)(e) && (n.push("STREAM"), e.type !== v.fO.HIDDEN_STREAM && null != e.streamId && n.push("FILTERED")), e.type === v.fO.ACTIVITY && (n.push("ACTIVITY"), n.push("FILTERED")), n

@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  a = n.n(i),
-  o = n(780384),
+  o = n.n(i),
+  a = n(780384),
   s = n(481060),
   l = n(410030),
   c = n(876917),
@@ -28,11 +28,11 @@ let m = e => {
   } = e, {
     firstProfileEffect: b,
     firstAvatarDecoration: y
-  } = (0, u.R)(t), v = (0, d.O1)(y), O = (0, l.ZP)(), I = (0, o.ap)(O);
+  } = (0, u.R)(t), v = (0, d.O1)(y), O = (0, l.ZP)(), I = (0, a.ap)(O);
   return (0, r.jsxs)("div", {
     className: _.container,
     children: [null != b ? (0, r.jsx)("div", {
-      className: a()(_.profileEffectShopPreview, E),
+      className: o()(_.profileEffectShopPreview, E),
       children: (0, r.jsx)(c.Z, {
         isHovering: i,
         profileEffectId: b.id,

@@ -5,16 +5,16 @@ n.d(t, {
 });
 var r = n(101284),
   i = n(622916),
-  a = n(263449);
-let o = 100;
+  o = n(263449);
+let a = 100;
 
 function s(e, t) {
-  let n = (0, a.s3)(),
-    s = (0, a.aF)();
+  let n = (0, o.s3)(),
+    s = (0, o.aF)();
   if (!n) return;
   let {
     beforeBreadcrumb: l = null,
-    maxBreadcrumbs: c = o
+    maxBreadcrumbs: c = a
   } = n.getOptions();
   if (c <= 0) return;
   let u = {

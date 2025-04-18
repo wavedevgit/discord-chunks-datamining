@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  J6: () => a,
+  J6: () => o,
   bd: () => i,
-  pA: () => o
+  pA: () => a
 });
 var r = n(313307);
 let i = {
@@ -11,5 +11,5 @@ let i = {
     1: r.document,
     2: r.code
   },
-  a = [1, 0, 2],
-  o = [0, 0, 0]
+  o = [1, 0, 2],
+  a = [0, 0, 0]

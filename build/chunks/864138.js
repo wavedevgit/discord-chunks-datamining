@@ -1,30 +1,30 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  z: () => o
+  z: () => a
 });
 var r = n(200651);
 n(192379);
 var i = n(206295),
-  a = n(799789);
+  o = n(799789);
 
-function o(e) {
+function a(e) {
   let {
     children: t,
     imageUrl: n
   } = e, {
-    primaryColor: o,
+    primaryColor: a,
     secondaryColor: s
   } = (0, i.Z)("".concat(n, "?forColors"));
   return (0, r.jsxs)("div", {
-    className: a.heroContainer,
+    className: o.heroContainer,
     style: {
-      backgroundImage: "linear-gradient(180deg, ".concat(o, " 0%, ").concat(s, " 100%), radial-gradient(99.17% 98.53% at 0% 1.47%, #deca7b 0%, #c89b3c 30.5%, #785a28 100%)")
+      backgroundImage: "linear-gradient(180deg, ".concat(a, " 0%, ").concat(s, " 100%), radial-gradient(99.17% 98.53% at 0% 1.47%, #deca7b 0%, #c89b3c 30.5%, #785a28 100%)")
     },
     children: [(0, r.jsx)("img", {
       src: n,
       alt: "",
-      className: a.heroSplash
+      className: o.heroSplash
     }), t]
   })
 }

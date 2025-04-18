@@ -1,31 +1,31 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  a = n(813141);
-let o = e => {
+  o = n(813141);
+let a = e => {
   let {
     title: t,
     subtitle: n,
-    icon: o
+    icon: a
   } = e;
   return (0, r.jsxs)("div", {
-    className: a.wrapper,
-    children: [null != o && (0, r.jsx)(o, {
+    className: o.wrapper,
+    children: [null != a && (0, r.jsx)(a, {
       size: "xs",
       color: "currentColor",
-      className: a.icon
+      className: o.icon
     }), (0, r.jsx)(i.Text, {
       variant: "text-md/normal",
-      className: a.title,
+      className: o.title,
       children: t
     }), null != n && "" !== n ? (0, r.jsx)(i.Text, {
       variant: "text-xs/semibold",
-      className: a.subtitle,
+      className: o.subtitle,
       children: n
     }) : null]
   })

@@ -1,21 +1,21 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  a = n(41414);
-let o = function(e) {
+  o = n(41414);
+let a = function(e) {
   let {
     message: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: a.container,
+    className: o.container,
     children: [(0, r.jsx)(i.d3s, {
       size: "custom",
-      className: a.icon,
+      className: o.icon,
       width: 20,
       height: 20,
       color: i.TVs.colors.TEXT_WARNING

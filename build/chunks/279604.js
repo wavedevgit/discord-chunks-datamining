@@ -2,7 +2,7 @@
 n.d(t, {
   KE: () => b,
   KT: () => m,
-  ZP: () => _
+  ZP: () => y
 }), n(388685), n(457542);
 var r = n(200651),
   i = n(192379),
@@ -68,11 +68,11 @@ function b(e, t) {
   })
 }
 
-function _(e, t) {
+function y(e, t) {
   var m;
   let {
-    analyticsLocations: _
-  } = (0, s.ZP)(), [y, v] = i.useState(!1), [O, C] = i.useState(void 0), S = (0, l.e7)([h.Z], () => {
+    analyticsLocations: y
+  } = (0, s.ZP)(), [_, v] = i.useState(!1), [O, C] = i.useState(void 0), S = (0, l.e7)([h.Z], () => {
     var t, n;
     return null != (n = null == (t = h.Z.getStateForGuild(e)) ? void 0 : t.appliedBoosts) ? n : 0
   }), j = (0, l.e7)([u.Z], () => u.Z.getGuild(e)), E = Math.max((null != (m = null == j ? void 0 : j.premiumSubscriberCount) ? m : 0) - S, 0), x = i.useCallback(n => {
@@ -83,14 +83,14 @@ function _(e, t) {
     }).finally(() => {
       v(!1)
     })
-  }, [e, t.skuId]), N = i.useCallback(e => {
+  }, [e, t.skuId]), I = i.useCallback(e => {
     if (e.stopPropagation(), null != j) return E < t.cost ? void(0, a.u)({
       analyticsLocation: {
         page: f.ZY5.GUILD_POWERUPS_OVERVIEW,
         section: f.jXE.GUILD_POWERUPS_OVERVIEW_CARD
       },
       numberOfBoostsToAdd: t.cost - E,
-      analyticsLocations: _,
+      analyticsLocations: y,
       guild: j,
       intent: t.type === p.Us.LEVEL ? c.P.LEVEL : c.P.PERK,
       onSubscribeComplete: () => x(!0).then(() => {
@@ -115,12 +115,12 @@ function _(e, t) {
         }, n))
       })
     })
-  }, [x, t, E, _, j]), I = i.useCallback(e => (e.stopPropagation(), x(!1)), [x]);
+  }, [x, t, E, y, j]), N = i.useCallback(e => (e.stopPropagation(), x(!1)), [x]);
   return {
-    isLoading: y,
+    isLoading: _,
     error: O,
-    onActivate: N,
-    onDeactivate: I,
+    onActivate: I,
+    onDeactivate: N,
     onShowDeactivate: i.useCallback(i => {
       i.stopPropagation(), (0, o.ZDy)(async () => {
         let {

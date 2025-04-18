@@ -1,7 +1,7 @@
 /** Chunk was on 48791 **/
 n.d(t, {
-  EM: () => _,
-  WW: () => y,
+  EM: () => y,
+  WW: () => _,
   ZP: () => v
 });
 var r = n(200651),
@@ -23,7 +23,7 @@ function b(e) {
   return e ? 9 : p.QP
 }
 
-function _(e, t, n, r, i) {
+function y(e, t, n, r, i) {
   let l = r && "compact" === i ? 8 : p.$k;
   if (e === d.wZ) return l;
   if (e === d.wd) return t.hasFeature(f.oNc.HUB) ? 0 : l;
@@ -38,7 +38,7 @@ function _(e, t, n, r, i) {
   return r && "compact" === i ? 32 : p.Pw
 }
 
-function y(e, t) {
+function _(e, t) {
   switch (e) {
     case d.wZ:
       return "hoisted-spacer";
@@ -62,8 +62,8 @@ let v = i.memo(function(e) {
     sectionIndex: t,
     guild: n,
     guildChannels: b,
-    guildChannelsVersion: _,
-    selectedChannelId: y,
+    guildChannelsVersion: y,
+    selectedChannelId: _,
     disableManageChannels: v
   } = e, {
     isFavoritesPerk: O
@@ -72,8 +72,8 @@ let v = i.memo(function(e) {
     if (null == e) return;
     let t = null,
       r = e.getShownChannelAndThreadIds();
-    null != y && r.includes(y) && (t = (0, c.KY)(b)), (0, c.Uo)(n.id, r, t)
-  }, [n.id, y, b, _]), S = (0, s.Q3)("ChannelListSection"), {
+    null != _ && r.includes(_) && (t = (0, c.KY)(b)), (0, c.Uo)(n.id, r, t)
+  }, [n.id, _, b, y]), S = (0, s.Q3)("ChannelListSection"), {
     density: j
   } = (0, l.TCT)(), E = S && "compact" === j ? 8 : p.$k;
   switch (t) {

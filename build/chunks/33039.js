@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => N
 }), n(388685);
 var r, i = n(442837),
-  a = n(570140),
-  o = n(981631),
+  o = n(570140),
+  a = n(981631),
   s = n(65154);
 
 function l(e, t, n) {
@@ -59,18 +59,18 @@ function g(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null,
     r = p[e];
   if (null == r) return;
-  let i = r[null != t ? t : o.kod];
+  let i = r[null != t ? t : a.kod];
   if (null != i) {
     for (let t of Object.values(s.Yn))(n === t || null == n) && (delete i[t], delete h[m(null != n ? n : t, e)]);
-    p[e][null != t ? t : o.kod] = i
+    p[e][null != t ? t : a.kod] = i
   }
 }
 
 function E(e, t, n, r) {
   var i;
   e in p || (p[e] = {});
-  let a = null != (i = p[e][null != t ? t : o.kod]) ? i : {};
-  p[e][null != t ? t : o.kod] = d(c({}, a), {
+  let o = null != (i = p[e][null != t ? t : a.kod]) ? i : {};
+  p[e][null != t ? t : a.kod] = d(c({}, o), {
     [r]: {
       streamId: n
     }
@@ -112,14 +112,14 @@ function O(e) {
     let {
       userId: r,
       sessionId: i,
-      channelId: a,
+      channelId: o,
       guildId: s
     } = t;
-    if (null == a && r === f)
+    if (null == o && r === f)
       if (i !== _) return e;
       else p = {}, h = {};
     else {
-      if (null != a || (null == (n = p[r]) ? void 0 : n[null != s ? s : o.kod]) == null) return e;
+      if (null != o || (null == (n = p[r]) ? void 0 : n[null != s ? s : a.kod]) == null) return e;
       g(r, s)
     }
     return !0
@@ -152,13 +152,13 @@ function S(e) {
 class T extends(r = i.ZP.Store) {
   getStreamId(e, t) {
     var n, r, i;
-    let a = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : s.Yn.DEFAULT;
-    return null == (i = p[e]) || null == (r = i[null != t ? t : o.kod]) || null == (n = r[a]) ? void 0 : n.streamId
+    let o = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : s.Yn.DEFAULT;
+    return null == (i = p[e]) || null == (r = i[null != t ? t : a.kod]) || null == (n = r[o]) ? void 0 : n.streamId
   }
   getUserStreamData(e, t) {
     var n, r;
     let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : s.Yn.DEFAULT;
-    return null == (r = p[e]) || null == (n = r[null != t ? t : o.kod]) ? void 0 : n[i]
+    return null == (r = p[e]) || null == (n = r[null != t ? t : a.kod]) ? void 0 : n[i]
   }
   getTimedoutVideos() {
     return h
@@ -168,7 +168,7 @@ class T extends(r = i.ZP.Store) {
   }
 }
 l(T, "displayName", "VideoStreamStore");
-let N = new T(a.Z, {
+let N = new T(o.Z, {
   CONNECTION_OPEN: b,
   OVERLAY_INITIALIZE: y,
   RTC_CONNECTION_VIDEO: v,

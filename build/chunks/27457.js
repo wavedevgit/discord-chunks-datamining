@@ -497,32 +497,33 @@ let ev = i.memo(e => {
     idle: l,
     title: t,
     width: s,
-    videoToggleState: u,
-    blocked: d,
-    ignored: m,
-    participantType: p,
-    participantUserId: f,
-    platform: x,
-    secureFramesVerified: g,
-    onContextMenu: h,
-    muted: j,
-    deafened: O,
-    localMuted: N,
-    serverMuted: E,
-    serverDeafened: T,
-    hasVideo: y,
-    hideAudioIcon: I,
-    onToggleMute: Z
-  } = e, S = (0, a.e7)([M.Z], () => null != f && M.Z.isLocalVideoAutoDisabled(f, (0, v.Z)(p)), [f, p]), C = (0, $.N)(s), b = (0, $.K)(s), [_, R] = i.useState(!1);
+    focused: u,
+    videoToggleState: d,
+    blocked: m,
+    ignored: p,
+    participantType: f,
+    participantUserId: x,
+    platform: g,
+    secureFramesVerified: h,
+    onContextMenu: j,
+    muted: O,
+    deafened: N,
+    localMuted: E,
+    serverMuted: T,
+    serverDeafened: y,
+    hasVideo: I,
+    hideAudioIcon: Z,
+    onToggleMute: S
+  } = e, C = (0, a.e7)([M.Z], () => null != x && M.Z.isLocalVideoAutoDisabled(x, (0, v.Z)(f)), [x, f]), b = (0, $.N)(s), _ = (0, $.K)(s), [R, A] = i.useState(!1);
   i.useEffect(() => {
     let e = !1,
       l = () => {
-        e !== L.Z.isOpen() && ((e = L.Z.isOpen()) || R(!1))
+        e !== L.Z.isOpen() && ((e = L.Z.isOpen()) || A(!1))
       };
     return L.Z.addChangeListener(l), () => L.Z.removeChangeListener(l)
   }, []);
-  let A = !I && p === et.fO.STREAM && y && (!b || N),
-    P = function(e) {
+  let P = !Z && f === et.fO.STREAM && I && (!_ || E),
+    k = function(e) {
       let {
         localMuted: l,
         serverMuted: t,
@@ -532,21 +533,21 @@ let ev = i.memo(e => {
       } = e;
       return n ? c.Vm4 : t ? c.v0G : i ? c.wE8 : l ? c.v0G : s ? c.nRN : null
     }({
-      localMuted: N,
-      serverMuted: E,
-      serverDeafened: T,
-      deafened: O,
-      muted: j
+      localMuted: E,
+      serverMuted: T,
+      serverDeafened: y,
+      deafened: N,
+      muted: O
     });
   return (0, n.jsxs)("div", {
     className: r()(ea.overlayContainer, {
-      [ea.compact]: b
+      [ea.compact]: _
     }),
     children: [(0, n.jsx)("div", {
       className: r()(ea.overlayTop, {
         [ea.small]: s < 195
       }),
-      children: S || u === el.ZUi.AUTO_PROBING ? l ? (0, n.jsx)("div", {
+      children: C || d === el.ZUi.AUTO_PROBING ? l ? (0, n.jsx)("div", {
         className: ea.status,
         children: (0, n.jsx)(c.Amn, {
           size: "md",
@@ -566,45 +567,45 @@ let ev = i.memo(e => {
           children: er.NW.string(er.t.m2Hyj4)
         })]
       }) : null
-    }), !C && (0, n.jsxs)("div", {
+    }), !b && (0, n.jsxs)("div", {
       className: r()(ea.overlayBottom, {
         [ea.small]: s < 195
       }),
       children: [(0, n.jsxs)(c.Text, {
         className: r()(ea.experimentOverlayTitle, {
-          [ea.compact]: b
+          [ea.compact]: _
         }),
         color: "none",
-        variant: b ? "text-sm/normal" : "text-md/normal",
-        children: [null != P && p === et.fO.USER && (0, n.jsx)(P, {
+        variant: _ ? "text-sm/normal" : "text-md/normal",
+        children: [null != k && f === et.fO.USER && (0, n.jsx)(k, {
           className: r()(ea.experimentTitleIcon, {
-            [ea.compact]: b
+            [ea.compact]: _
           }),
           size: "xs",
           color: "currentColor"
-        }), d ? (0, n.jsx)("div", {
+        }), m ? (0, n.jsx)("div", {
           className: ea.blocked,
           children: (0, n.jsx)(c.t6m, {
             size: "lg",
             className: ea.blockedIcon,
             color: o.Z.unsafe_rawColors.RED_400.css
           })
-        }) : null, m ? (0, n.jsx)("div", {
+        }) : null, p ? (0, n.jsx)("div", {
           className: ea.ignored,
           children: (0, n.jsx)(c.kZF, {
             size: "lg",
             className: ea.blockedIcon
           })
         }) : null, l ? null : (0, n.jsx)(ep, {
-          participantType: p,
-          platform: x,
+          participantType: f,
+          platform: g,
           className: r()(ea.experimentTitleIcon, {
-            [ea.compact]: b
+            [ea.compact]: _
           })
         }), null == t || "" === t || l ? null : (0, n.jsx)("span", {
           className: ea.overlayTitleText,
           children: t
-        }), g && (0, n.jsx)(c.ua7, {
+        }), h && (0, n.jsx)(c.ua7, {
           text: er.NW.string(er.t.ZEem6O),
           children: e => (0, n.jsx)(c.tQf, ec(eo({}, e), {
             className: ea.secureFramesIcon,
@@ -613,22 +614,22 @@ let ev = i.memo(e => {
             "aria-label": er.NW.string(er.t.mR9cf3)
           }))
         })]
-      }), (0, n.jsxs)("div", {
+      }), !u && (0, n.jsxs)("div", {
         className: ea.overlayButtonContainer,
         children: [(0, n.jsx)(ef, {
           onClick: e => {
-            e.stopPropagation(), R(!0), h(e, !0, et.A5.THREE_DOT)
+            e.stopPropagation(), A(!0), j(e, !0, et.A5.THREE_DOT)
           },
           tooltipText: er.NW.string(er.t["+1H47u"]),
           icon: c.xhG,
-          hideWhenInactive: !_,
-          compact: b
-        }), A && (0, n.jsx)(ef, {
-          onClick: Z,
-          tooltipText: N ? er.NW.string(er.t.YqAjX1) : er.NW.string(er.t["w4m94+"]),
-          icon: N ? c.OyP : c.gj8,
-          hideWhenInactive: !N && !_,
-          compact: b
+          hideWhenInactive: !R,
+          compact: _
+        }), P && (0, n.jsx)(ef, {
+          onClick: S,
+          tooltipText: E ? er.NW.string(er.t.YqAjX1) : er.NW.string(er.t["w4m94+"]),
+          icon: E ? c.OyP : c.gj8,
+          hideWhenInactive: !E && !R,
+          compact: _
         })]
       })]
     })]

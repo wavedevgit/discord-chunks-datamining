@@ -2,15 +2,15 @@
 "use strict";
 n.d(t, {
   Jj: () => i,
-  OF: () => a,
+  OF: () => o,
   WW: () => s,
-  hV: () => o,
+  hV: () => a,
   mT: () => r
 });
 let r = 550,
   i = 350,
-  a = 40;
-var o = function(e) {
+  o = 40;
+var a = function(e) {
   return e.STATIC = "STATIC", e.RESPONSIVE = "RESPONSIVE", e.MOSAIC = "MOSAIC", e
 }({});
 let s = 20

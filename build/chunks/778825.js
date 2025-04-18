@@ -1,6 +1,6 @@
 /** Chunk was on web.js **/
 "use strict";
-let r, i, a, o, s, l, c, u, d, f, _;
+let r, i, o, a, s, l, c, u, d, f, _;
 n.d(t, {
   Z: () => F
 });
@@ -63,14 +63,14 @@ function R(e) {
   let {
     profileEffectId: t
   } = e;
-  a = t
+  o = t
 }
 
 function P(e) {
   let {
     banner: t
   } = e;
-  o = t
+  a = t
 }
 
 function w(e) {
@@ -110,7 +110,7 @@ function k() {
 }
 
 function j() {
-  o = void 0, s = void 0, l = void 0, u = void 0, a = void 0
+  a = void 0, s = void 0, l = void 0, u = void 0, o = void 0
 }
 
 function U() {
@@ -128,7 +128,7 @@ class B extends(p = h.ZP.Store) {
     return y
   }
   showNotice() {
-    return void 0 !== r || void 0 !== i || void 0 !== a || void 0 !== o || void 0 !== s || void 0 !== l || void 0 !== c || void 0 !== u
+    return void 0 !== r || void 0 !== i || void 0 !== o || void 0 !== a || void 0 !== s || void 0 !== l || void 0 !== c || void 0 !== u
   }
   getIsSubmitDisabled() {
     return void 0 !== s && s.length > g.tPV
@@ -140,10 +140,10 @@ class B extends(p = h.ZP.Store) {
     return i
   }
   getPendingProfileEffectId() {
-    return a
+    return o
   }
   getPendingBanner() {
-    return o
+    return a
   }
   getPendingBio() {
     return s
@@ -164,8 +164,8 @@ class B extends(p = h.ZP.Store) {
     return {
       pendingAvatar: r,
       pendingAvatarDecoration: i,
-      pendingProfileEffectId: a,
-      pendingBanner: o,
+      pendingProfileEffectId: o,
+      pendingBanner: a,
       pendingBio: s,
       pendingPronouns: l,
       pendingNickname: c,

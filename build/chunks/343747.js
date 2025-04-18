@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  a = n(434404),
-  o = n(981631);
+  o = n(434404),
+  a = n(981631);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -49,7 +49,7 @@ function u(e, t) {
 }
 
 function d(e) {
-  a.Z.open(e, o.pNK.SOUNDBOARD), (0, i.ZDy)(async () => {
+  o.Z.open(e, a.pNK.SOUNDBOARD), (0, i.ZDy)(async () => {
     let {
       default: t
     } = await Promise.all([n.e("56035"), n.e("42564")]).then(n.bind(n, 758961));

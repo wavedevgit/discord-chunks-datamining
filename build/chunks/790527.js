@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(481060),
   c = n(355467),
@@ -33,8 +33,8 @@ function C(e, t) {
   if (null == e) return {};
   var n, r, i = R(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -42,13 +42,13 @@ function C(e, t) {
 function R(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
 function P(e) {
-  var t, n, a, {
+  var t, n, o, {
       title: R,
       type: P,
       guildBoostProps: w,
@@ -79,8 +79,8 @@ function P(e) {
       showEnhancedUpsell: en,
       useSubscribeButtonGradient: er,
       subscribeButtonClassname: ei,
-      hidePremiumOfferUpsell: ea,
-      children: eo,
+      hidePremiumOfferUpsell: eo,
+      children: ea,
       LeadingComponent: es,
       backgroundElements: el,
       smallText: ec = !1,
@@ -90,7 +90,7 @@ function P(e) {
   let ef = null != w,
     e_ = (0, E.N)(),
     ep = (0, g.Ng)(),
-    eh = !ea && ((null == e_ || null == (t = e_.subscription_trial) ? void 0 : t.sku_id) === J || (0, g.Wp)(ep, J)) && !ef,
+    eh = !eo && ((null == e_ || null == (t = e_.subscription_trial) ? void 0 : t.sku_id) === J || (0, g.Wp)(ep, J)) && !ef,
     {
       analyticsLocations: em
     } = (0, d.ZP)(u.Z.PREMIUM_UPSELL_MODAL),
@@ -164,14 +164,14 @@ function P(e) {
         buttonText: null != z ? z : e
       })
     },
-    eI = X ? o()(N.artContainer, N.artContainerBoxShadow, G) : o()(N.artContainer, G),
+    eI = X ? a()(N.artContainer, N.artContainerBoxShadow, G) : a()(N.artContainer, G),
     eS = null;
   return null != ed.artURL ? eS = (0, r.jsx)("img", {
     className: N.art,
     alt: "",
     src: ed.artURL
   }) : null != ed.artElement && (eS = ed.artElement), (0, r.jsxs)(l.Y0X, {
-    className: o()(N.root, !eh && j),
+    className: a()(N.root, !eh && j),
     "aria-label": R,
     transitionState: V,
     children: [null != eS && (0, r.jsxs)("div", {
@@ -183,11 +183,11 @@ function P(e) {
       }) : null]
     }), (0, r.jsx)(l.hzk, {
       scrollbarType: "none",
-      className: o()(en ? N.enhancedContent : N.content, !eh && U),
+      className: a()(en ? N.enhancedContent : N.content, !eh && U),
       children: $ ? (0, r.jsx)(l.$jN, {}) : eh ? (0, r.jsx)(b.ZP, {
         onClose: Z,
         type: P,
-        subscriptionTier: null != (a = null == e_ || null == (n = e_.subscription_trial) ? void 0 : n.sku_id) ? a : I.Si.TIER_2,
+        subscriptionTier: null != (o = null == e_ || null == (n = e_.subscription_trial) ? void 0 : n.sku_id) ? o : I.Si.TIER_2,
         headingText: R,
         context: M,
         analyticsLocationObject: L,
@@ -199,7 +199,7 @@ function P(e) {
         children: [es, (0, r.jsxs)("div", {
           className: N.bodyContent,
           children: [(0, r.jsxs)(l.X6q, {
-            className: o()(N.header, {
+            className: a()(N.header, {
               [N.enhancedHeader]: en
             }, B),
             variant: "heading-xl/bold",
@@ -208,23 +208,23 @@ function P(e) {
             }) : null]
           }), ey ? (0, r.jsx)(v.Z, {
             affinities: eb
-          }) : void 0, eo, (0, r.jsx)(l.Text, {
+          }) : void 0, ea, (0, r.jsx)(l.Text, {
             variant: ec ? "text-sm/normal" : "text-md/normal",
-            className: o()(F, N.subHeader),
+            className: a()(F, N.subHeader),
             children: x
           })]
         })]
       })
     }), (0, r.jsxs)(l.mzw, {
-      className: o()(N.footer, eu, {
+      className: a()(N.footer, eu, {
         [N.enhancedFooter]: en
       }),
       children: [(0, r.jsxs)("div", {
-        className: o()(N.primaryActions, {
+        className: a()(N.primaryActions, {
           [N.enhancedPrimaryActions]: en
         }),
         children: [null != K ? (0, r.jsx)(l.zxk, {
-          className: o()(N.secondaryAction, {
+          className: a()(N.secondaryAction, {
             [N.enhancedSecondaryAction]: en
           }),
           onClick: Y,

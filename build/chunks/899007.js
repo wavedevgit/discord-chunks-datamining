@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(481060),
   c = n(420660),
@@ -69,7 +69,7 @@ function R(e) {
   let {
     user: t,
     displayProfile: n,
-    guildId: a,
+    guildId: o,
     channelId: h,
     profileType: S,
     animateOnHover: N,
@@ -90,7 +90,7 @@ function R(e) {
   } = (0, s.cj)([_.Z], () => ({
     status: (0, c.Z)(U) ? v.Skl.STREAMING : _.Z.getStatus(t.id),
     isMobileOnline: _.Z.isMobileOnline(t.id)
-  })), F = void 0 !== w ? w : G, V = S === y.y0.FULL_SIZE ? l.EFr.SIZE_120 : l.EFr.SIZE_80, Z = o()(I.avatar, {
+  })), F = void 0 !== w ? w : G, V = S === y.y0.FULL_SIZE ? l.EFr.SIZE_120 : l.EFr.SIZE_80, Z = a()(I.avatar, {
     [I.biteSize]: S === y.y0.BITE_SIZE,
     [I.fullSize]: S === y.y0.FULL_SIZE,
     [I.panel]: S === y.y0.PANEL
@@ -100,7 +100,7 @@ function R(e) {
     eventHandlers: Y
   } = (0, E.Z)({
     user: t,
-    guildId: null != n ? n.guildId : a,
+    guildId: null != n ? n.guildId : o,
     size: V,
     animateOnHover: N
   }), K = (0, r.jsx)(C, {
@@ -119,7 +119,7 @@ function R(e) {
     className: Z,
     children: K
   })) : (0, r.jsx)(l.P3F, A(T({}, Y), {
-    className: o()(Z, I.clickable),
+    className: a()(Z, I.clickable),
     focusProps: {
       ringClassName: I.focusRing
     },

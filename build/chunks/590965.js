@@ -1,7 +1,7 @@
 /** Chunk was on 48791 **/
 let r;
 n.d(t, {
-  Z: () => N
+  Z: () => I
 }), n(388685), n(539854);
 var i, l = n(442837),
   o = n(570140),
@@ -16,9 +16,9 @@ var i, l = n(442837),
   g = n(594174),
   m = n(998502),
   b = n(981631),
-  _ = n(176505);
+  y = n(176505);
 
-function y(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -34,7 +34,7 @@ function v(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -63,8 +63,8 @@ class x extends(i = l.ZP.Store) {
     }
   }
 }
-y(x, "displayName", "InviteModalStore");
-let N = new x(o.Z, {
+_(x, "displayName", "InviteModalStore");
+let I = new x(o.Z, {
   OVERLAY_INITIALIZE: E,
   CONNECTION_OPEN: E,
   CONNECTION_CLOSED: function() {
@@ -85,7 +85,7 @@ let N = new x(o.Z, {
         if (null == n) return !1;
         if (null != h.Z.getGuild(n.id) && !(0, s.TY)(t)) {
           let e = function(e) {
-            if ((0, s.W6)(e)) return _.oC.ROLE_SUBSCRIPTIONS;
+            if ((0, s.W6)(e)) return y.oC.ROLE_SUBSCRIPTIONS;
             let {
               channel: t
             } = e;

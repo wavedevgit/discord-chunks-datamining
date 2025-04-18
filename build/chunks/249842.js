@@ -1,19 +1,19 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  P: () => o
+  P: () => a
 });
 var r = n(544891),
   i = n(570140),
-  a = n(981631);
-async function o(e) {
+  o = n(981631);
+async function a(e) {
   i.Z.dispatch({
     type: "GUILD_POPOUT_FETCH_START",
     guildId: e
   });
   try {
     let t = await r.tn.get({
-      url: a.ANM.GUILD_PREVIEW(e),
+      url: o.ANM.GUILD_PREVIEW(e),
       oldFormErrors: !0,
       rejectWithError: !0
     });

@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: 45f9ba51e202bd90
+  Original File Name: 1a7a9c260774df25
 **/
 .container__74da2 {
     align-items: center;
@@ -4671,15 +4671,6 @@ html:not(.visual-refresh) .sidebar_c48ade:not(.hidden_c48ade) {
     width: 240px!important
 }
 
-.platform-win .sidebar_c48ade {
-    border-radius: 8px 0 0;
-    overflow: hidden
-}
-
-.sidebar_c48ade.hasNotice_c48ade,.platform-win .sidebar_c48ade.hasNotice_c48ade {
-    border-radius: 0
-}
-
 .fullWidth_c48ade {
     width: 100%
 }
@@ -8620,4 +8611,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=45f9ba51e202bd90.css.map*/
+/*# sourceMappingURL=1a7a9c260774df25.css.map*/

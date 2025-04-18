@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(392711),
-  o = n.n(a),
+  o = n(392711),
+  a = n.n(o),
   s = n(670596),
   l = n(561779),
   c = n(434952);
@@ -14,13 +14,13 @@ let u = e => "".concat(e.toFixed(0), "%"),
   d = i.forwardRef(function(e, t) {
     let {
       value: n,
-      minValue: a = 0,
+      minValue: o = 0,
       maxValue: d = 100,
       onChange: f,
       onInteraction: _,
       renderValue: p = u,
       "aria-label": h
-    } = e, m = i.useRef(null), g = i.useRef(o().debounce(() => null == _ ? void 0 : _(s.U.SLIDER), 100));
+    } = e, m = i.useRef(null), g = i.useRef(a().debounce(() => null == _ ? void 0 : _(s.U.SLIDER), 100));
     i.useImperativeHandle(t, () => ({
       focus: () => {
         var e;
@@ -43,7 +43,7 @@ let u = e => "".concat(e.toFixed(0), "%"),
         handleSize: 16,
         className: c.slider,
         initialValue: n,
-        minValue: a,
+        minValue: o,
         maxValue: d,
         onValueChange: E,
         asValueChanges: f,

@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => S
 }), n(388685);
 var r, i = n(442837),
-  a = n(570140),
-  o = n(353926),
+  o = n(570140),
+  a = n(353926),
   s = n(581883),
   l = n(430824),
   c = n(496675),
@@ -91,7 +91,7 @@ function O(e) {
 }
 class I extends(r = i.ZP.Store) {
   initialize() {
-    this.waitFor(s.Z, l.Z, c.Z, o.Z), this.syncWith([s.Z, l.Z, c.Z, o.Z], m)
+    this.waitFor(s.Z, l.Z, c.Z, a.Z), this.syncWith([s.Z, l.Z, c.Z, a.Z], m)
   }
   getGuildIncident(e) {
     return p[e]
@@ -104,7 +104,7 @@ class I extends(r = i.ZP.Store) {
   }
 }
 f(I, "displayName", "GuildIncidentsStore");
-let S = new I(a.Z, {
+let S = new I(o.Z, {
   CONNECTION_OPEN: E,
   GUILD_CREATE: b,
   GUILD_UPDATE: y,

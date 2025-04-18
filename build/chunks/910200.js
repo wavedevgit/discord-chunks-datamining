@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  a = n.n(i),
-  o = n(692547),
+  o = n.n(i),
+  a = n(692547),
   s = n(481060),
   l = n(114487),
   c = n(686546),
@@ -30,9 +30,9 @@ function E(e) {
   let {
     profile: t,
     className: n
-  } = e, i = g(t, (0, s.dQu)(o.Z.colors.BG_BASE_TERTIARY).hex()), l = (0, h.d)(i, t);
+  } = e, i = g(t, (0, s.dQu)(a.Z.colors.BG_BASE_TERTIARY).hex()), l = (0, h.d)(i, t);
   return (0, r.jsx)("div", {
-    className: a()(n, m.banner),
+    className: o()(n, m.banner),
     style: {
       background: l
     }
@@ -69,7 +69,7 @@ function b(e) {
         width: 70,
         height: 70,
         children: (0, r.jsxs)("div", {
-          className: a()(m.avatarWrapper, m.clickable),
+          className: o()(m.avatarWrapper, m.clickable),
           children: [(0, r.jsx)(l.b, {
             guildId: t.id,
             guildName: t.name,
@@ -98,15 +98,15 @@ function y(e) {
     profile: t,
     onIconChange: n,
     className: i,
-    disableCTA: o,
+    disableCTA: a,
     CTAOverride: l,
     onClose: c
   } = e, u = null;
-  return null != l ? u = l : o || (u = (0, r.jsx)(d.Z, {
+  return null != l ? u = l : a || (u = (0, r.jsx)(d.Z, {
     profile: t,
     onComplete: c
   })), (0, r.jsxs)("div", {
-    className: a()(m.container, i),
+    className: o()(m.container, i),
     children: [(0, r.jsx)(E, {
       profile: t
     }), (0, r.jsx)(b, {

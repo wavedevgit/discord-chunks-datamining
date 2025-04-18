@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => I
 });
 var r, i = n(442837),
-  a = n(570140),
-  o = n(592125);
+  o = n(570140),
+  a = n(592125);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -48,7 +48,7 @@ function u(e, t) {
 let d = {};
 
 function f(e) {
-  let t = o.Z.getChannel(e);
+  let t = a.Z.getChannel(e);
   return null != t && !!t.isForumLikeChannel()
 }
 
@@ -161,7 +161,7 @@ class O extends(r = i.ZP.Store) {
   }
 }
 s(O, "displayName", "ForumSearchStore");
-let I = new O(a.Z, {
+let I = new O(o.Z, {
   CONNECTION_OPEN: v,
   THREAD_DELETE: b,
   CHANNEL_DELETE: y,

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(467055);
 var r = n(200651),
   i = n(192379),
-  a = n(803997),
-  o = n.n(a),
+  o = n(803997),
+  a = n.n(o),
   s = n(696689),
   l = n.n(s),
   c = n(692547),
@@ -56,8 +56,8 @@ function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -65,15 +65,15 @@ function m(e, t) {
 function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let E = Object.fromEntries(Object.keys(c.Z.colors).map(e => [l()(e), e])),
   b = i.forwardRef(function(e, t) {
     let n;
     var i, {
-        variant: a,
+        variant: o,
         tag: s = "div",
         selectable: l = !1,
         className: f,
@@ -107,14 +107,14 @@ let E = Object.fromEntries(Object.keys(c.Z.colors).map(e => [l()(e), e])),
     }, S, v.style);
     return (0, r.jsx)(O, h(_({
       ref: t,
-      className: o()({
+      className: a()({
         [u.defaultColor]: void 0 === g,
         [u.selectable]: l,
         [u.tabularNumbers]: b,
         [d.fontScaling]: y
-      }, I, d[a], f)
+      }, I, d[o], f)
     }, v), {
       style: Object.values(T).filter(Boolean).length > 0 ? T : void 0,
-      "data-text-variant": a
+      "data-text-variant": o
     }))
   })

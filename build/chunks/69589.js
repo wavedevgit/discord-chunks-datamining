@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(481060),
-  a = n(99690),
-  o = n(473188),
+  o = n(99690),
+  a = n(473188),
   s = n(162846),
   l = n(191420),
   c = n(774621),
@@ -35,13 +35,13 @@ function f(e) {
         height: m + 8
       },
       alt: ""
-    }), (0, r.jsx)(a.Z, {
+    }), (0, r.jsx)(o.Z, {
       className: _,
       user: t,
       size: p
     }), "hidden" !== f && (0, r.jsx)("div", {
       className: s.rankBadge,
-      children: (0, r.jsx)(o._, {
+      children: (0, r.jsx)(a._, {
         rank: n,
         hideInnerBorder: "visibleWithoutBorder" === f
       })

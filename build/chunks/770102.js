@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  a = n.n(i),
-  o = n(860709);
+  o = n.n(i),
+  a = n(860709);
 
 function s(e) {
   let {
@@ -15,7 +15,7 @@ function s(e) {
     style: n
   } = e;
   return (0, r.jsx)("div", {
-    className: a()(o.divider, t),
+    className: o()(a.divider, t),
     style: n
   })
 }

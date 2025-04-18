@@ -18,8 +18,8 @@ var i = n(120356),
   g = n(501655),
   m = n(199902),
   b = n(592125),
-  _ = n(594174),
-  y = n(938475),
+  y = n(594174),
+  _ = n(938475),
   v = n(823379),
   O = n(709054),
   C = n(853856),
@@ -28,7 +28,7 @@ var i = n(120356),
   E = n(276405),
   x = n(582936);
 
-function N(e, t) {
+function I(e, t) {
   return 0 === t.length ? null : (0, r.jsxs)("div", {
     className: E.row,
     children: [(0, r.jsx)(e, {
@@ -42,12 +42,12 @@ function N(e, t) {
   })
 }
 
-function I() {
+function N() {
   let e = (0, a.Wu)([C.Z, b.Z], () => O.default.keys(C.Z.getFavoriteChannels()).map(e => b.Z.getChannel(e)).filter(v.lm)),
     t = e.map(e => e.id),
     n = e.filter(e => e.type === S.d4z.GUILD_VOICE),
     i = e.filter(e => e.type === S.d4z.GUILD_STAGE_VOICE).map(e => e.id),
-    l = (0, a.Wu)([y.ZP], () => s().flatMap(n, e => y.ZP.getVoiceStatesForChannel(e).map(e => {
+    l = (0, a.Wu)([_.ZP], () => s().flatMap(n, e => _.ZP.getVoiceStatesForChannel(e).map(e => {
       let {
         user: t
       } = e;
@@ -74,9 +74,9 @@ function I() {
       }
       return n
     }, [t]),
-    I = (0, a.Wu)([_.default], () => x.map(e => _.default.getUser(e)), [x]),
-    P = (0, a.Wu)([_.default], () => j.map(e => _.default.getUser(e)), [j]),
-    w = N(c.gj8, l.filter(e => !j.includes(e.id) && !x.includes(e.id))),
+    N = (0, a.Wu)([y.default], () => x.map(e => y.default.getUser(e)), [x]),
+    P = (0, a.Wu)([y.default], () => j.map(e => y.default.getUser(e)), [j]),
+    w = I(c.gj8, l.filter(e => !j.includes(e.id) && !x.includes(e.id))),
     Z = 0 === o.length ? null : (0, r.jsxs)("div", {
       className: E.row,
       children: [(0, r.jsx)(c.ewx, {
@@ -100,7 +100,7 @@ function I() {
         })]
       })]
     }),
-    T = N(c.hGI, P.filter(e => null != e && !x.includes(e.id))),
+    T = I(c.hGI, P.filter(e => null != e && !x.includes(e.id))),
     {
       enabled: A
     } = u.c.useExperiment({
@@ -108,7 +108,7 @@ function I() {
     }, {
       autoTrackExposure: !0
     }),
-    R = N(A ? c.iWm : c.nG3, I);
+    R = I(A ? c.iWm : c.nG3, N);
   return (0, r.jsxs)(r.Fragment, {
     children: [Z, w, T, R]
   })
@@ -122,7 +122,7 @@ function P() {
         className: l()(E.guildNameText, E.guildNameTextLimitedSize),
         children: j.NW.string(j.t.wMWycn)
       })
-    }), (0, r.jsx)(I, {})]
+    }), (0, r.jsx)(N, {})]
   })
 }
 

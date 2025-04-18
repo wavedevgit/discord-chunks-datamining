@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => f
 }), n(388685);
 var r, i = n(442837),
-  a = n(570140);
+  o = n(570140);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -40,8 +40,8 @@ class d extends(r = i.ZP.Store) {
     return s
   }
 }
-o(d, "displayName", "LayerStore");
-let f = new d(a.Z, {
+a(d, "displayName", "LayerStore");
+let f = new d(o.Z, {
   LAYER_PUSH: l,
   LAYER_POP: c,
   LAYER_POP_ALL: u,

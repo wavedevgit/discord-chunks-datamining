@@ -20,8 +20,8 @@ let f = i.forwardRef(function(e, t) {
     onClick: g,
     onContextMenu: m,
     icon: b,
-    selected: _,
-    tooltip: y,
+    selected: y,
+    tooltip: _,
     upperBadge: v,
     lowerBadge: O,
     lowerBadgeSize: C,
@@ -29,8 +29,8 @@ let f = i.forwardRef(function(e, t) {
     className: j,
     "aria-label": E,
     children: x,
-    onMouseEnter: N,
-    onMouseLeave: I,
+    onMouseEnter: I,
+    onMouseLeave: N,
     onMouseDown: P
   } = e, w = (0, c.Q3)("ButtonListItem"), Z = (0, s.Ie)(f), [T, A] = i.useState(!1);
   return (0, r.jsxs)(d.H, {
@@ -38,13 +38,13 @@ let f = i.forwardRef(function(e, t) {
       className: p.pill,
       children: (0, r.jsx)(u.Z, {
         hovered: T,
-        selected: _
+        selected: y
       })
     }) : null, (0, r.jsx)(h.Z, {
-      text: y,
-      selected: _,
+      text: _,
+      selected: y,
       children: (0, r.jsx)(a.aRk, {
-        selected: !!w || _ || T,
+        selected: !!w || y || T,
         upperBadge: v,
         lowerBadge: O,
         lowerBadgeSize: C,
@@ -68,17 +68,18 @@ let f = i.forwardRef(function(e, t) {
         }({
           innerRef: t,
           onMouseEnter: () => {
-            null == N || N(), A(!0)
+            null == I || I(), A(!0)
           },
           onMouseLeave: () => {
-            null == I || I(), A(!1)
+            null == N || N(), A(!1)
           },
           onMouseDown: P,
           className: o()(p.circleIconButton, j, {
-            [p.selected]: _ || T
+            [p.selected]: y || T
           }),
           onClick: g,
-          "aria-label": "string" == typeof y && null == E ? y : E,
+          "aria-label": "string" == typeof _ && null == E ? _ : E,
+          "aria-selected": y,
           onContextMenu: m,
           focusProps: {
             enabled: !1

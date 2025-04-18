@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(374470),
   l = n(442837),
   c = n(481060),
@@ -25,29 +25,29 @@ var r = n(200651),
 let O = function(e) {
   let t, {
       className: n,
-      quest: a,
+      quest: o,
       autoplay: O = !0,
       learnMoreStyle: I = null
     } = e,
     S = (0, _.O5)(),
     T = (0, l.e7)([f.Z], () => f.Z.isFocused()),
     N = (0, l.e7)([u.Z], () => u.Z.useReducedMotion),
-    A = i.useMemo(() => (0, h.fh)(a, h.eC.REWARD), [a]),
+    A = i.useMemo(() => (0, h.fh)(o, h.eC.REWARD), [o]),
     C = i.useCallback(t => {
       var n;
       (0, s.k)(t.currentTarget, HTMLElement) && t.currentTarget.blur(), S({
-        questId: a.id,
+        questId: o.id,
         questContent: e.questContent,
         questContentPosition: e.questContentPosition,
         questContentCTA: _.jZ.REWARD_LEARN_MORE
       }), (0, b.navigateToQuestHome)({
         fromContent: e.questContent,
-        questId: a.id
+        questId: o.id
       }), null == (n = e.onClick) || n.call(e, t)
-    }, [S, a.id, e]),
+    }, [S, o.id, e]),
     R = i.useRef(null),
     P = i.useRef(O),
-    w = (0, p.Bg)(a.config);
+    w = (0, p.Bg)(o.config);
   return i.useEffect(() => {
     if (null != R.current) {
       if (!A.isAnimated || N) {
@@ -86,15 +86,15 @@ let O = function(e) {
     id: "QuestRewardTile_rewardTileStatic",
     children: e => (0, r.jsx)("img", {
       ref: e,
-      alt: m.r.build(a.config).defaultReward.messages.name,
-      className: o()(v.questRewardTileAsset, v.questRewardTileAssetStatic),
+      alt: m.r.build(o.config).defaultReward.messages.name,
+      className: a()(v.questRewardTileAsset, v.questRewardTileAssetStatic),
       src: A.url
     })
   }), null == I ? (0, r.jsx)("div", {
-    className: o()(v.questRewardTile, n),
+    className: a()(v.questRewardTile, n),
     children: t
   }) : (0, r.jsxs)(c.P3F, {
-    className: o()(v.questRewardTileInteractive, v.questRewardTile, v.rewardHighlight, n),
+    className: a()(v.questRewardTileInteractive, v.questRewardTile, v.rewardHighlight, n),
     onClick: C,
     children: [t, (0, r.jsx)(c.ZX5, {
       className: v.shine,

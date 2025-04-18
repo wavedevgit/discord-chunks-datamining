@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   s = n(194359),
   l = n(276506),
   c = n(699516),
@@ -63,16 +63,16 @@ function m(e) {
     id: E,
     username: b,
     bot: y
-  } = t, v = (0, a.e7)([u.default], () => {
+  } = t, v = (0, o.e7)([u.default], () => {
     var e;
     return (null == (e = u.default.getCurrentUser()) ? void 0 : e.id) === E
   }, [E]), O = (0, l.n)({
     userId: E
-  }), [I, S] = (0, a.Wu)([c.Z], () => [c.Z.isFriend(E), c.Z.isBlocked(E)], [E]), [T, N] = i.useState(!1);
+  }), [I, S] = (0, o.Wu)([c.Z], () => [c.Z.isFriend(E), c.Z.isBlocked(E)], [E]), [T, N] = i.useState(!1);
   if (y || v) return null;
 
   function A() {
-    (0, o.ZDy)(async () => {
+    (0, a.ZDy)(async () => {
       let {
         ConfirmModal: e
       } = await Promise.resolve().then(n.bind(n, 878678));
@@ -88,7 +88,7 @@ function m(e) {
           }), N(!1), null == m || m()
         }
       }, t), {
-        children: (0, r.jsx)(o.Text, {
+        children: (0, r.jsx)(a.Text, {
           variant: "text-md/normal",
           children: d.NW.format(d.t.l5FFq6, {
             name: b
@@ -96,14 +96,14 @@ function m(e) {
         })
       }))
     }, {
-      contextKey: null != g ? (0, o.VnL)(g) : void 0
+      contextKey: null != g ? (0, a.VnL)(g) : void 0
     })
   }
-  return I ? (0, r.jsx)(o.sNh, {
+  return I ? (0, r.jsx)(a.sNh, {
     id: "remove-friend",
     label: d.NW.string(d.t.cvSt1N),
     action: A
-  }) : (0, r.jsx)(o.sNh, {
+  }) : (0, r.jsx)(a.sNh, {
     id: "add-friend",
     label: T ? d.NW.string(d.t.xMH6vL) : O,
     action: () => {

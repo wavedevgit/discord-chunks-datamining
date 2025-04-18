@@ -5,9 +5,9 @@ n.d(t, {
 }), n(388685);
 var r = n(133080),
   i = n(592125),
-  a = n(412788);
+  o = n(412788);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -81,7 +81,7 @@ function y(e) {
   } = e;
   _(t)
 }
-class v extends a.Z {
+class v extends o.Z {
   initialize() {
     this.waitFor(i.Z)
   }
@@ -127,5 +127,5 @@ class v extends a.Z {
     })
   }
 }
-o(v, "displayName", "MessageRequestStore"), o(v, "LATEST_SNAPSHOT_VERSION", 1);
+a(v, "displayName", "MessageRequestStore"), a(v, "LATEST_SNAPSHOT_VERSION", 1);
 let O = new v

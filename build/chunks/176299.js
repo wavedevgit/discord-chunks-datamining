@@ -456,7 +456,6 @@ function eY(e) {
       ref: O ? y : void 0,
       "data-collapsed": N,
       className: a()(eO.sidebar, e, {
-        [eO.hasNotice]: t,
         [eO.fullWidth]: d.tq,
         [eO.hidden]: g,
         [eO.channelListHidden]: o

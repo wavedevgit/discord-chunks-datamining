@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  a = n.n(i),
-  o = n(481060),
+  o = n.n(i),
+  a = n(481060),
   s = n(549631),
   l = n(172832);
 
@@ -54,8 +54,8 @@ function _(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -63,8 +63,8 @@ function _(e, t) {
 function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -72,13 +72,13 @@ function h(e) {
   var {
     children: t,
     className: n,
-    size: i = o.zxk.Sizes.MEDIUM,
+    size: i = a.zxk.Sizes.MEDIUM,
     onlyShineOnHover: c = !1
   } = e, d = _(e, ["children", "className", "size", "onlyShineOnHover"]);
-  return (0, r.jsx)(o.gtL, f(u({}, d), {
-    color: o.zxk.Colors.CUSTOM,
+  return (0, r.jsx)(a.gtL, f(u({}, d), {
+    color: a.zxk.Colors.CUSTOM,
     size: i,
-    className: a()(l.button, n),
+    className: o()(l.button, n),
     onlyShineOnHover: c,
     children: (0, r.jsxs)("div", {
       className: l.buttonContents,

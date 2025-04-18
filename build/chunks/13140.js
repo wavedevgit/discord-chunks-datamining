@@ -10,8 +10,8 @@ n.d(t, {
 }), n(388685), n(704826), n(35282), n(415506), n(539854), n(781311);
 var r = n(921738),
   i = n.n(r),
-  a = n(392711),
-  o = n.n(a),
+  o = n(392711),
+  a = n.n(o),
   s = n(714338),
   l = n(823379),
   c = n(358085),
@@ -57,12 +57,12 @@ function h(e, t) {
   }), e
 }
 let m = __OVERLAY__ ? d.iC$ : (0, c.isLinux)() ? d.HsE : (0, c.isMac)() ? d.REU : (0, c.isWindows)() ? d.iC$ : {},
-  g = o().invert(d.HsE);
+  g = a().invert(d.HsE);
 g["223"] = "`", Object.freeze(g);
-let E = Object.freeze(o().invert(d.REU)),
-  b = o().invert(d.iC$);
+let E = Object.freeze(a().invert(d.REU)),
+  b = a().invert(d.iC$);
 b["223"] = "`", Object.freeze(b);
-let y = o().invert(null != m ? m : {});
+let y = a().invert(null != m ? m : {});
 (0, c.isMac)() || (y["223"] = "`"), Object.freeze(y);
 let v = new Set([192, 220, 222, 223, 229]);
 
@@ -135,21 +135,21 @@ function R(e) {
   let t, n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : S(),
     r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : d.MoX.KEYBOARD_KEY;
   if (null == e) return null;
-  let a = r === d.MoX.KEYBOARD_KEY || r === d.MoX.KEYBOARD_MODIFIER_KEY;
+  let o = r === d.MoX.KEYBOARD_KEY || r === d.MoX.KEYBOARD_MODIFIER_KEY;
   switch (!0) {
-    case a && n === d.CgE.LINUX:
+    case o && n === d.CgE.LINUX:
       t = d.HsE[e];
       break;
-    case a && n === d.CgE.MACOS:
+    case o && n === d.CgE.MACOS:
       t = d.REU[e];
       break;
-    case a && n === d.CgE.WINDOWS:
+    case o && n === d.CgE.WINDOWS:
       t = "+" === e ? d.iC$.plus : d.iC$[e];
       break;
-    case a && n === d.CgE.BROWSER:
+    case o && n === d.CgE.BROWSER:
       t = i()(C(e));
       break;
-    case a:
+    case o:
       t = m[e];
       break;
     case r === d.MoX.MOUSE_BUTTON:

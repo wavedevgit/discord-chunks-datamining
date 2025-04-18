@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(512722),
   l = n.n(s),
   c = n(442837),
@@ -56,7 +56,7 @@ class b extends i.Component {
       eulaId: e,
       applicationName: t,
       hasPreviouslyAcceptedEULA: i,
-      forceShow: a,
+      forceShow: o,
       disabled: s,
       className: c,
       checkboxClassname: d,
@@ -73,12 +73,12 @@ class b extends i.Component {
       hasAcceptedEULA: A,
       hasAcceptedWithdrawalWaiver: C
     } = this.state;
-    return (l()(!O || null != T, "subscriptionPlan cannot be null if shouldShowUpdatedPaymentModal is true"), a || null != e && !i || v) ? (0, r.jsxs)("div", {
+    return (l()(!O || null != T, "subscriptionPlan cannot be null if shouldShowUpdatedPaymentModal is true"), o || null != e && !i || v) ? (0, r.jsxs)("div", {
       className: c,
       children: [v && (0, r.jsx)(u.vwX, {
         className: m.formTitle,
         children: h.NW.string(h.t.Ogvn5u)
-      }), null != e && (a || !i) ? (0, r.jsx)(u.XZJ, {
+      }), null != e && (o || !i) ? (0, r.jsx)(u.XZJ, {
         type: u.XZJ.Types.INVERTED,
         value: A,
         onChange: this.handleToggleEULAAcceptance,
@@ -101,7 +101,7 @@ class b extends i.Component {
           })
         })
       }) : null, null == b ? null : (0, r.jsx)("div", {
-        className: o()(m.finePrint, N),
+        className: a()(m.finePrint, N),
         children: b
       }), v ? (0, r.jsxs)("div", {
         className: c,
@@ -110,9 +110,9 @@ class b extends i.Component {
           value: C,
           onChange: this.handleToggleEUWithdralWaiverAcceptance,
           disabled: s,
-          className: o()(m.checkbox, d),
+          className: a()(m.checkbox, d),
           children: (0, r.jsx)("div", {
-            className: o()(m.checkboxLabel, g),
+            className: a()(m.checkboxLabel, g),
             children: h.NW.string(h.t.DFCVNz)
           })
         }), (0, r.jsx)("div", {

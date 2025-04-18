@@ -9,8 +9,8 @@ n.d(t, {
 }), n(388685), n(35282);
 var r = n(392711),
   i = n.n(r),
-  a = n(31775),
-  o = n.n(a),
+  o = n(31775),
+  a = n.n(o),
   s = n(664751),
   l = n(261470),
   c = n(956664),
@@ -42,7 +42,7 @@ let h = 5,
   g = /\.avif($|\?|#)/i,
   E = [16, 20, 22, 24, 28, 32, 40, 44, 48, 56, 60, 64, 80, 96, 100, 128, 160, 240, 256, 300, 320, 480, 512, 600, 640, 1024, 1280, 1536, 2048, 3072, 4096],
   b = 4096,
-  y = new(o())({
+  y = new(a())({
     max: 1e3
   });
 
@@ -135,8 +135,8 @@ function C(e) {
     src: t,
     sourceWidth: n,
     sourceHeight: r,
-    targetWidth: a,
-    targetHeight: o,
+    targetWidth: o,
+    targetHeight: a,
     format: l = null,
     quality: u = null,
     animated: d = !1,
@@ -146,12 +146,12 @@ function C(e) {
   let [_, p] = A(t);
   null != l && (p.format = l), null != u && (p.quality = u), d && f && (m.test(t) || g.test(t)) && (p.animated = !0), g.test(t) && (p.format = "webp");
   let h = (0, c.Tj)({
-    width: a,
-    height: o,
+    width: o,
+    height: a,
     maxWidth: b,
     maxHeight: b
   });
-  return a = h.width, o = h.height, (a !== n || o !== r) && (p.width = 0 | a, p.height = 0 | o), i().isEmpty(p) || (_ += "?" + s.stringify(p)), _
+  return o = h.width, a = h.height, (o !== n || a !== r) && (p.width = 0 | o, p.height = 0 | a), i().isEmpty(p) || (_ += "?" + s.stringify(p)), _
 }
 
 function R(e) {
@@ -160,14 +160,14 @@ function R(e) {
     width: n,
     height: r,
     maxWidth: i,
-    maxHeight: a,
-    ratio: o = 1,
+    maxHeight: o,
+    ratio: a = 1,
     format: s = null,
     quality: l = null,
     animated: c = !1,
     srcIsAnimated: u = !1
   } = e, f = n, _ = r;
-  o < 1 && (f = Math.round(n * o), _ = Math.round(r * o)), null != i && (f = Math.min(f, i)), null != a && (_ = Math.min(_, a));
+  a < 1 && (f = Math.round(n * a), _ = Math.round(r * a)), null != i && (f = Math.min(f, i)), null != o && (_ = Math.min(_, o));
   let p = (0, d.Z)();
   return C({
     src: t,

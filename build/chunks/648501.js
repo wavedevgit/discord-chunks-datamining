@@ -1,6 +1,6 @@
 /** Chunk was on 48791 **/
 n.d(t, {
-  Z: () => N
+  Z: () => I
 });
 var r = n(200651);
 n(192379);
@@ -18,8 +18,8 @@ var i = n(442837),
   g = n(979651),
   m = n(968358),
   b = n(790901),
-  _ = n(714794),
-  y = n(355363),
+  y = n(714794),
+  _ = n(355363),
   v = n(687352),
   O = n(876548),
   C = n(25601),
@@ -28,12 +28,12 @@ var i = n(442837),
   E = n(388032),
   x = n(732020);
 
-function N(e) {
+function I(e) {
   var t;
   let {
     channel: n,
-    isChannelSelected: N,
-    isChannelCollapsed: I,
+    isChannelSelected: I,
+    isChannelCollapsed: N,
     voiceStates: P,
     enableConnectedUserLimit: w,
     enableActivities: Z,
@@ -42,16 +42,16 @@ function N(e) {
     isNewChannel: R,
     muted: D,
     resolvedUnreadSetting: L
-  } = e, k = (0, i.e7)([f.ZP], () => f.ZP.getMentionCount(n.id)), M = (0, i.e7)([f.ZP], () => f.ZP.getIsMentionLowImportance(n.id)), U = (0, s.ZP)(n), G = (0, i.e7)([p.Z], () => !p.Z.can(S.Plq.CONNECT, n)), B = (0, i.e7)([g.Z], () => g.Z.hasVideo(n.id)), W = (0, u.PK)(n.id) && n.isGuildStageVoice(), V = (0, y.ZP)({
+  } = e, k = (0, i.e7)([f.ZP], () => f.ZP.getMentionCount(n.id)), M = (0, i.e7)([f.ZP], () => f.ZP.getIsMentionLowImportance(n.id)), U = (0, s.ZP)(n), G = (0, i.e7)([p.Z], () => !p.Z.can(S.Plq.CONNECT, n)), B = (0, i.e7)([g.Z], () => g.Z.hasVideo(n.id)), W = (0, u.PK)(n.id) && n.isGuildStageVoice(), V = (0, _.ZP)({
     channel: n,
     locked: G,
     video: B || W,
-    selected: N
+    selected: I
   }), H = (0, i.e7)([d.Z], () => d.Z.getNewThreadCount(n.guild_id, n.id)), F = (0, a.n2)(n.guild_id, n.id), z = (0, i.e7)([h.Z], () => {
     var e, t;
     return null != (t = null == (e = h.Z.getGuild(n.guild_id)) ? void 0 : e.hasFeature(S.oNc.COMMUNITY)) && t
   });
-  if ((0, _.Z)(k)) return (0, r.jsx)(C.Z, {
+  if ((0, y.Z)(k)) return (0, r.jsx)(C.Z, {
     mentionsCount: k,
     isMentionLowImportance: M
   });
@@ -80,7 +80,7 @@ function N(e) {
     userCount: Y,
     video: B || W,
     channel: n
-  }) : I && (0, m.a)(P) && z ? (0, r.jsx)(o.IGR, {
+  }) : N && (0, m.a)(P) && z ? (0, r.jsx)(o.IGR, {
     text: E.NW.string(E.t.dI3q4u),
     color: l.Z.unsafe_rawColors.RED_400.css
   }) : null != Z && Z && (0, b.u)(U) ? (0, r.jsx)(v.Z, {

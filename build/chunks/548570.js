@@ -5,8 +5,8 @@ n.d(t, {
 }), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685), n(539854), n(49124), n(358797);
 var r = n(512722),
   i = n.n(r),
-  a = n(457854),
-  o = n(261470),
+  o = n(457854),
+  a = n(261470),
   s = n(956067),
   l = n(286379),
   c = n(442837),
@@ -82,8 +82,8 @@ function F(e) {
     gatewayURL: n,
     newCallback: r,
     onOpen: i,
-    onMessage: a,
-    onError: o,
+    onMessage: o,
+    onError: a,
     onClose: s
   } = e;
   G.enableNativeLogger(!0);
@@ -102,7 +102,7 @@ function F(e) {
       }) : e)), G.log("[FAST CONNECT] successfully took over websocket, state:", U(k({}, e), {
         messages: null == (_ = e.messages) ? void 0 : _.length
       })), c = l.state.open, u = l.state.identify, d = l.state.messages, f = l.state.clientState
-    } null == t && ((t = (0, L.Z)(n)).binaryType = "arraybuffer"), r(t), c && i(u, f), null != d && d.forEach(a), t.onopen = () => i(u, f), t.onmessage = a, t.onclose = s, t.onerror = o
+    } null == t && ((t = (0, L.Z)(n)).binaryType = "arraybuffer"), r(t), c && i(u, f), null != d && d.forEach(o), t.onopen = () => i(u, f), t.onmessage = o, t.onclose = s, t.onerror = a
 }
 
 function V() {}
@@ -125,10 +125,10 @@ function Q(e, t, n) {
   });
   let i = !1;
   return n => {
-    let a = n.data;
-    null != n.raw_length ? r += n.raw_length : r += X(a);
+    let o = n.data;
+    null != n.raw_length ? r += n.raw_length : r += X(o);
     try {
-      e.feed(a)
+      e.feed(o)
     } catch (e) {
       throw i || (i = !0, t(!1, 0, "A decompression error occurred")), e
     }
@@ -180,32 +180,32 @@ class $ extends w.Z {
           {
             op: r,
             s: i,
-            t: a,
-            d: o
+            t: o,
+            d: a
           } = B.unpack(e);
         if (r !== w.j.DISPATCH && s.Z.mark("\uD83C\uDF10", "GatewaySocket.onMessage ".concat(r, " ").concat(w.j[r])), b.default.isLoggingGatewayEvents) {
           let e = [r];
-          r === w.j.DISPATCH && e.push(a), e.push(o), G.verboseDangerously("<~", ...e)
+          r === w.j.DISPATCH && e.push(o), e.push(a), G.verboseDangerously("<~", ...e)
         }
         let l = Date.now() - n;
-        switch ("READY" === a ? E.Z.parseReady.set(n, l) : "READY_SUPPLEMENTAL" === a ? E.Z.parseReadySupplemental.set(n, l) : l > 10 && s.Z.mark("\uD83C\uDF10", "Parse " + a, l), null != i && (this.seq = i), r) {
+        switch ("READY" === o ? E.Z.parseReady.set(n, l) : "READY_SUPPLEMENTAL" === o ? E.Z.parseReadySupplemental.set(n, l) : l > 10 && s.Z.mark("\uD83C\uDF10", "Parse " + o, l), null != i && (this.seq = i), r) {
           case w.j.HELLO:
-            this._clearHelloTimeout(), this._handleHello(o);
+            this._clearHelloTimeout(), this._handleHello(a);
             break;
           case w.j.RECONNECT:
             this._handleReconnect();
             break;
           case w.j.INVALID_SESSION:
-            this._handleInvalidSession(o);
+            this._handleInvalidSession(a);
             break;
           case w.j.HEARTBEAT:
             this._handleHeartbeatReceive();
             break;
           case w.j.HEARTBEAT_ACK:
-            this._handleHeartbeatAck(o);
+            this._handleHeartbeatAck(a);
             break;
           case w.j.DISPATCH:
-            this._handleDispatch(o, a, "READY" === a ? {
+            this._handleDispatch(a, o, "READY" === o ? {
               compressed_byte_size: t,
               uncompressed_byte_size: X(e),
               compression_algorithm: this.compressionHandler.getAlgorithm(),
@@ -356,7 +356,7 @@ class $ extends w.Z {
     this.connectionState = T.Z.IDENTIFYING;
     let t = Date.now();
     this.identifyStartTime = t;
-    let [n, r, i] = await Promise.all([(0, h.O)() ? f.Z.getCommittedVersions() : {}, (0, h.O)() ? p.Z.getCommittedVersions() : {}, !!(0, h.O)() && _.Z.canUseGuildVersions()]), o = i ? {
+    let [n, r, i] = await Promise.all([(0, h.O)() ? f.Z.getCommittedVersions() : {}, (0, h.O)() ? p.Z.getCommittedVersions() : {}, !!(0, h.O)() && _.Z.canUseGuildVersions()]), a = i ? {
       guild_versions: n,
       highest_last_message_id: r.highest_last_message_id,
       read_state_version: r.read_state_version,
@@ -381,10 +381,10 @@ class $ extends w.Z {
         properties: l,
         presence: c,
         compress: this.compressionHandler.usesLegacyCompression(),
-        client_state: o
+        client_state: a
       },
       d = JSON.stringify(u);
-    this.identifyUncompressedByteSize = d.length, this.identifyCompressedByteSize = a.deflate(d).length, this.identifyCount += 1, this.send(w.j.IDENTIFY, u, !1), y.default.track(x.rMx.SESSION_START_CLIENT, {})
+    this.identifyUncompressedByteSize = d.length, this.identifyCompressedByteSize = o.deflate(d).length, this.identifyCount += 1, this.send(w.j.IDENTIFY, u, !1), y.default.track(x.rMx.SESSION_START_CLIENT, {})
   }
   _doFastConnectIdentify() {
     this.seq = 0, this.sessionId = null;
@@ -487,7 +487,7 @@ class $ extends w.Z {
     G.verbose("Connection has reset backoff".concat(null != e && "" !== e ? " for reason: " + e : "")), this.gatewayBackoff.succeed(), this.iosGoingAwayEventCount = 0, this.nextReconnectIsImmediate = !0, this.willReconnect() ? this._connect() : t && this.connectionState !== T.Z.SESSION_ESTABLISHED && this._handleClose(!0, 0, e)
   }
   constructor() {
-    super(), M(this, "gatewayBackoff", void 0), M(this, "handleIdentify", void 0), M(this, "dispatchExceptionBackoff", new o.Z(1e3, q)), M(this, "dispatchSuccessTimer", 0), M(this, "connectionState_", void 0), M(this, "webSocket", void 0), M(this, "seq", void 0), M(this, "sessionId", void 0), M(this, "token", void 0), M(this, "initialHeartbeatTimeout", void 0), M(this, "expeditedHeartbeatTimeout", void 0), M(this, "heartbeatInterval", void 0), M(this, "helloTimeout", void 0), M(this, "heartbeater", void 0), M(this, "lastHeartbeatTime", void 0), M(this, "lastHeartbeatAckTime", void 0), M(this, "heartbeatAck", void 0), M(this, "connectionStartTime", void 0), M(this, "identifyStartTime", void 0), M(this, "nextReconnectIsImmediate", void 0), M(this, "compressionHandler", void 0), M(this, "hasConnectedOnce", void 0), M(this, "isFastConnect", void 0), M(this, "didForceClearGuildHashes", !1), M(this, "identifyUncompressedByteSize", 0), M(this, "identifyCompressedByteSize", 0), M(this, "analytics", {}), M(this, "identifyCount", 0), M(this, "resumeUrl", null), M(this, "iosGoingAwayEventCount", 0), M(this, "dispatcher", void 0), M(this, "send", (e, t, n) => {
+    super(), M(this, "gatewayBackoff", void 0), M(this, "handleIdentify", void 0), M(this, "dispatchExceptionBackoff", new a.Z(1e3, q)), M(this, "dispatchSuccessTimer", 0), M(this, "connectionState_", void 0), M(this, "webSocket", void 0), M(this, "seq", void 0), M(this, "sessionId", void 0), M(this, "token", void 0), M(this, "initialHeartbeatTimeout", void 0), M(this, "expeditedHeartbeatTimeout", void 0), M(this, "heartbeatInterval", void 0), M(this, "helloTimeout", void 0), M(this, "heartbeater", void 0), M(this, "lastHeartbeatTime", void 0), M(this, "lastHeartbeatAckTime", void 0), M(this, "heartbeatAck", void 0), M(this, "connectionStartTime", void 0), M(this, "identifyStartTime", void 0), M(this, "nextReconnectIsImmediate", void 0), M(this, "compressionHandler", void 0), M(this, "hasConnectedOnce", void 0), M(this, "isFastConnect", void 0), M(this, "didForceClearGuildHashes", !1), M(this, "identifyUncompressedByteSize", 0), M(this, "identifyCompressedByteSize", 0), M(this, "analytics", {}), M(this, "identifyCount", 0), M(this, "resumeUrl", null), M(this, "iosGoingAwayEventCount", 0), M(this, "dispatcher", void 0), M(this, "send", (e, t, n) => {
       b.default.isLoggingGatewayEvents && G.verboseDangerously("~>", e, t);
       let r = B.pack({
         op: e,
@@ -496,6 +496,6 @@ class $ extends w.Z {
       if (!n || this.isSessionEstablished()) try {
         null != this.webSocket && this.webSocket.send(r)
       } catch (e) {} else G.warn("Attempted to send while not being in a connected state opcode: ".concat(e))
-    }), this.dispatcher = new P.Z(this), this.gatewayBackoff = new o.Z(1e3, 6e4), this.connectionState_ = T.Z.CLOSED, this.webSocket = null, this.seq = 0, this.sessionId = null, this.token = null, this.initialHeartbeatTimeout = null, this.expeditedHeartbeatTimeout = null, this.lastHeartbeatTime = null, this.lastHeartbeatAckTime = null, this.helloTimeout = null, this.heartbeatInterval = null, this.heartbeater = null, this.heartbeatAck = !0, this.connectionStartTime = 0, this.identifyStartTime = 0, this.nextReconnectIsImmediate = !1, this.compressionHandler = (0, A.I)(B), this.hasConnectedOnce = !1, this.isFastConnect = !1, this.identifyCount = 0, this.iosGoingAwayEventCount = 0
+    }), this.dispatcher = new P.Z(this), this.gatewayBackoff = new a.Z(1e3, 6e4), this.connectionState_ = T.Z.CLOSED, this.webSocket = null, this.seq = 0, this.sessionId = null, this.token = null, this.initialHeartbeatTimeout = null, this.expeditedHeartbeatTimeout = null, this.lastHeartbeatTime = null, this.lastHeartbeatAckTime = null, this.helloTimeout = null, this.heartbeatInterval = null, this.heartbeater = null, this.heartbeatAck = !0, this.connectionStartTime = 0, this.identifyStartTime = 0, this.nextReconnectIsImmediate = !1, this.compressionHandler = (0, A.I)(B), this.hasConnectedOnce = !1, this.isFastConnect = !1, this.identifyCount = 0, this.iosGoingAwayEventCount = 0
   }
 }

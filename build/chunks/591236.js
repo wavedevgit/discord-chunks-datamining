@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(588468),
   i = n(496675),
-  a = n(483360),
-  o = n(877565),
+  o = n(483360),
+  a = n(877565),
   s = n(590921),
   l = n(761652),
   c = n(981631),
@@ -18,21 +18,21 @@ function f(e) {
 }
 let _ = {
   sentinel: l.a4,
-  matches(e, t, n, r, a) {
-    var o, s;
-    return r && null != (s = null == (o = a.chatInputType.autocomplete) ? void 0 : o.addReactionShortcut) && s && (i.Z.can(c.Plq.ADD_REACTIONS, e) || e.isPrivate())
+  matches(e, t, n, r, o) {
+    var a, s;
+    return r && null != (s = null == (a = o.chatInputType.autocomplete) ? void 0 : a.addReactionShortcut) && s && (i.Z.can(c.Plq.ADD_REACTIONS, e) || e.isPrivate())
   },
   queryResults(e, t, n, r, i) {
     let {
-      emojis: o
-    } = a.ZP.queryEmojiResults({
+      emojis: a
+    } = o.ZP.queryEmojiResults({
       query: n,
       channel: e,
       intention: u.Hz.REACTION
     });
     return {
       results: {
-        emojis: o.unlocked
+        emojis: a.unlocked
       }
     }
   },
@@ -43,14 +43,14 @@ let _ = {
       },
       selectedIndex: n,
       query: i,
-      onHover: a,
+      onHover: o,
       onClick: s
     } = e;
-    return (0, o.HI)({
+    return (0, a.HI)({
       query: i,
       selectedIndex: n,
       autocompletes: t,
-      onHover: a,
+      onHover: o,
       onClick: s,
       titleWithQuery: d.t.o1Nmpa,
       titleWithoutQuery: d.NW.string(d.t.sMOuub),

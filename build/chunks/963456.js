@@ -6,8 +6,8 @@ n.d(t, {
 }), n(539854);
 var r = n(544891),
   i = n(570140),
-  a = n(626135),
-  o = n(70956),
+  o = n(626135),
+  a = n(70956),
   s = n(823379),
   l = n(981631);
 let c = 5e3,
@@ -57,7 +57,7 @@ async function p(e, t) {
       });
       return
     }
-    return 429 === n.status ? (m.push(429), g(n.body.retry_after * o.Z.Millis.SECOND)) : (m.push(null != (r = n.status) ? r : d), b({
+    return 429 === n.status ? (m.push(429), g(n.body.retry_after * a.Z.Millis.SECOND)) : (m.push(null != (r = n.status) ? r : d), b({
       error: !0
     }), i.Z.dispatch({
       type: "APPLICATION_COMMAND_INDEX_FETCH_FAILURE",
@@ -66,9 +66,9 @@ async function p(e, t) {
   }), b = r => {
     let {
       error: i
-    } = r, o = performance.now() - s;
-    a.default.track(l.rMx.APPLICATION_COMMAND_PERFORMANCE, {
-      duration_ms: o,
+    } = r, a = performance.now() - s;
+    o.default.track(l.rMx.APPLICATION_COMMAND_PERFORMANCE, {
+      duration_ms: a,
       error: i,
       aborted: t.signal.aborted,
       include_applications: !0,

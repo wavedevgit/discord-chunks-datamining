@@ -5,8 +5,8 @@ n.d(t, {
 }), n(997841);
 var r = n(200651),
   i = n(117447),
-  a = n(481060),
-  o = n(783097),
+  o = n(481060),
+  a = n(783097),
   s = n(594174),
   l = n(572004),
   c = n(630388),
@@ -45,7 +45,7 @@ function p(e) {
   } = e;
   if (__OVERLAY__ || !l.wS || null == t) return null;
   let m = s.default.getCurrentUser(),
-    g = (0, o.Ow)(t);
+    g = (0, a.Ow)(t);
 
   function E() {
     var e;
@@ -59,7 +59,7 @@ function p(e) {
     null != n && (0, l.JG)(n, f)
   }
   let b = "copy-app-link-".concat(t.id);
-  return (0, r.jsx)(a.sNh, {
+  return (0, r.jsx)(o.sNh, {
     id: b,
     label: n,
     action: E,

@@ -1,18 +1,18 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $: () => o
+  $: () => a
 });
 var r = n(200651);
 n(192379);
 var i = n(907040),
-  a = n(185923);
+  o = n(185923);
 
-function o(e) {
+function a(e) {
   let {
     channel: t,
     closePopout: n,
-    analyticsOverride: o,
+    analyticsOverride: a,
     onSelectEmoji: s,
     messageId: l
   } = e;
@@ -20,8 +20,8 @@ function o(e) {
     closePopout: n,
     channel: t,
     onSelectEmoji: s,
-    pickerIntention: a.Hz.REACTION,
-    analyticsOverride: o,
+    pickerIntention: o.Hz.REACTION,
+    analyticsOverride: a,
     messageId: l
   })
 }

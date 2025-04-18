@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Hg: () => a,
+  Hg: () => o,
   iP: () => r,
   qK: () => i
 });
@@ -11,6 +11,6 @@ function i(e) {
   return 60 * r * 1e3 + e.lastUsed - Date.now() <= 0
 }
 
-function a(e) {
+function o(e) {
   return null != e ? Number(e) : 0
 }

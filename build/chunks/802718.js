@@ -36,7 +36,7 @@ function b(e) {
   return e
 }
 
-function _(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,7 +49,7 @@ function _(e, t) {
   }), e
 }
 
-function y(e) {
+function _(e) {
   let {
     target: t
   } = e, s = (0, l.Ie)("fakedoor"), p = i.useCallback(() => {
@@ -57,16 +57,16 @@ function y(e) {
       let {
         default: e
       } = await Promise.all([n.e("22862"), n.e("8672")]).then(n.bind(n, 646202));
-      return n => (0, r.jsx)(e, _(b({}, n), {
+      return n => (0, r.jsx)(e, y(b({}, n), {
         target: t
       }))
     })
-  }, [t]), y = i.useCallback(e => {
+  }, [t]), _ = i.useCallback(e => {
     (0, a.jW)(e, async () => {
       let {
         default: e
       } = await n.e("39612").then(n.bind(n, 761624));
-      return n => (0, r.jsx)(e, _(b({}, n), {
+      return n => (0, r.jsx)(e, y(b({}, n), {
         signupTarget: t
       }))
     })
@@ -99,9 +99,10 @@ function y(e) {
               count: 1,
               color: u.Z.BG_BRAND
             }),
-            children: (0, r.jsx)(o.LYs, _(b({}, s), {
+            children: (0, r.jsx)(o.LYs, y(b({}, s), {
+              ariaLabel: t.tooltipHeader,
               onClick: p,
-              onContextMenu: y,
+              onContextMenu: _,
               children: (0, r.jsx)(o.Dkj, {
                 color: u.Z.TEXT_NORMAL
               })
@@ -121,7 +122,7 @@ function y(e) {
 
 function v() {
   let e = (0, s.e7)([p.Z], () => p.Z.getActiveUserSignUp());
-  return null == e ? null : (0, r.jsx)(y, {
+  return null == e ? null : (0, r.jsx)(_, {
     target: e
   })
 }

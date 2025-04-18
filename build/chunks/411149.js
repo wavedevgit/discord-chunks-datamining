@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => O
 }), n(388685);
 var r, i = n(442837),
-  a = n(570140),
-  o = n(709054),
+  o = n(570140),
+  a = n(709054),
   s = n(981631);
 
 function l(e, t, n) {
@@ -62,7 +62,7 @@ function b(e) {
     message: n
   } = e;
   if (n.type !== s.uaV.CHAT_WALLPAPER_SET) return !1;
-  o.default.compare(n.id, f[t]) > 0 && (f[t] = n.id)
+  a.default.compare(n.id, f[t]) > 0 && (f[t] = n.id)
 }
 
 function y(e) {
@@ -100,7 +100,7 @@ class v extends(r = i.ZP.Store) {
   }
 }
 l(v, "displayName", "ChatWallpaperStore");
-let O = new v(a.Z, {
+let O = new v(o.Z, {
   FETCH_CHAT_WALLPAPERS_START: _,
   FETCH_CHAT_WALLPAPERS_SUCCESS: p,
   FETCH_CHAT_WALLPAPERS_FAILURE: h,

@@ -1,6 +1,6 @@
 /** Chunk was on 48791 **/
 n.d(t, {
-  E: () => I,
+  E: () => N,
   Z: () => P
 }), n(388685), n(539854);
 var r, i = n(200651),
@@ -17,8 +17,8 @@ var r, i = n(200651),
   g = n(703656),
   m = n(417363),
   b = n(941128),
-  _ = n(780570),
-  y = n(353042),
+  y = n(780570),
+  _ = n(353042),
   v = n(981631),
   O = n(388032),
   C = n(556934);
@@ -105,7 +105,7 @@ class x extends l.PureComponent {
     } = this.props;
     if (e.type === v.vxO.UPDATING || e.type === v.vxO.REPAIRING || e.type === v.vxO.INSTALLING) {
       if (t) return O.NW.string(O.t["5oxtFR"]);
-      else if (e.stage === v.f07.PATCHING || e.stage === v.f07.REPAIRING) return (0, i.jsx)(y.Z, {
+      else if (e.stage === v.f07.PATCHING || e.stage === v.f07.REPAIRING) return (0, i.jsx)(_.Z, {
         getHistoricalTotalBytes: m.Z.getHistoricalTotalBytesWritten,
         updateInterval: 5e3,
         children: this.renderProgressBody
@@ -145,7 +145,7 @@ class x extends l.PureComponent {
     })
   }
 }
-class N extends(r = l.PureComponent) {
+class I extends(r = l.PureComponent) {
   componentWillAppear(e) {
     this.state.animationScale.setValue(1), e()
   }
@@ -229,7 +229,7 @@ class N extends(r = l.PureComponent) {
   }
 }
 
-function I(e, t) {
+function N(e, t) {
   return e.reduce((e, n) => {
     let {
       applicationId: r,
@@ -238,18 +238,18 @@ function I(e, t) {
     return null != l && e.push(l), e
   }, [])
 }
-S(N, "defaultProps", {
+S(I, "defaultProps", {
   strokeSize: h._3P.StrokeSizes.MEDIUM
 });
 let P = c.ZP.connectStores([b.Z, m.Z, p.Z], () => {
   let e = b.Z.activeItems,
-    t = I(e, m.Z),
+    t = N(e, m.Z),
     {
       total: n,
       progress: r
-    } = _.lK(t);
+    } = y.lK(t);
   return {
-    percent: _.xI(r, n),
+    percent: y.xI(r, n),
     isPaused: b.Z.paused,
     firstApplication: e.length > 0 ? p.Z.getApplication(e[0].applicationId) : null,
     firstState: t.length > 0 ? t[0] : null
@@ -274,6 +274,6 @@ let P = c.ZP.connectStores([b.Z, m.Z, p.Z], () => {
   }(e, ["determineOwnVisibility"]);
   return t ? (0, i.jsx)(d.W, {
     component: l.Fragment,
-    children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(N, j({}, n)) : null
-  }) : (0, i.jsx)(N, j({}, n))
+    children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(I, j({}, n)) : null
+  }) : (0, i.jsx)(I, j({}, n))
 })

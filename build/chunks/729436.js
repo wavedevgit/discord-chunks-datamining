@@ -2,19 +2,19 @@
 "use strict";
 n.d(t, {
   C: () => s,
-  H: () => a
+  H: () => o
 }), n(642613);
 var r = n(192379),
   i = n(392711);
-let a = e => e.sort((e, t) => {
+let o = e => e.sort((e, t) => {
     var n, r;
     return (null != (n = e.zIndex) ? n : 0) - (null != (r = t.zIndex) ? r : 0)
   }),
-  o = (e, t) => Math.floor(Math.random() * (t - e + 1) + e),
+  a = (e, t) => Math.floor(Math.random() * (t - e + 1) + e),
   s = e => r.useMemo(() => {
     if (null == e) return e;
     let t = (0, i.cloneDeep)(e),
-      n = o(0, t.effects.reduce((e, t) => {
+      n = a(0, t.effects.reduce((e, t) => {
         var n;
         let r = null == (n = t.randomizedSources) ? void 0 : n.length;
         return r > 0 && (e = 0 === e ? r : Math.min(e, r)), e

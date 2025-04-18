@@ -4,9 +4,9 @@ n.d(t, {
   a: () => W
 }), n(415506), n(388685);
 var r, i = n(200651),
-  a = n(192379),
-  o = n(120356),
-  s = n.n(o),
+  o = n(192379),
+  a = n(120356),
+  s = n.n(a),
   l = n(96355),
   c = n(47759),
   u = n.n(c),
@@ -62,8 +62,8 @@ function I(e, t) {
   if (null == e) return {};
   var n, r, i = S(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -71,8 +71,8 @@ function I(e, t) {
 function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let T = 108e5,
@@ -151,7 +151,7 @@ function F(e, t) {
 function V(e) {
   return e.toString()
 }
-class Z extends a.Component {
+class Z extends o.Component {
   componentDidMount() {
     this.forceUpdate()
   }
@@ -202,16 +202,16 @@ function W(e) {
       height: A
     },
     highlight: r = !1,
-    rounded: a = !1
-  } = e, o = I(e, ["selected", "lowerBadgeSize", "highlight", "rounded"]);
+    rounded: o = !1
+  } = e, a = I(e, ["selected", "lowerBadgeSize", "highlight", "rounded"]);
   let s = (0, g.Q3)("BlobMask"),
-    l = !!o.isFolder,
+    l = !!a.isFolder,
     c = L(!1),
     u = L(l),
     d = x(u),
     f = M(s);
-  return s ? (0, i.jsx)(K, O(y({}, o), {
-    rounded: a,
+  return s ? (0, i.jsx)(K, O(y({}, a), {
+    rounded: o,
     isVisualRefreshEnabled: !0,
     baseViewBoxSize: c,
     viewBoxSize: u,
@@ -220,7 +220,7 @@ function W(e) {
     selected: t,
     lowerBadgeSize: n,
     highlight: r
-  })) : (0, i.jsx)(Y, O(y({}, o), {
+  })) : (0, i.jsx)(Y, O(y({}, a), {
     selected: t,
     lowerBadgeSize: n,
     highlight: r,
@@ -231,14 +231,14 @@ function W(e) {
     badgeMaskStroke: f
   }))
 }
-class Y extends a.Component {
+class Y extends o.Component {
   static getDerivedStateFromProps(e, t) {
     let {
       hasRenderedBadge: n,
       upperBadgeMask: r,
       lowerBadgeMask: i,
-      borderRadiusMask: a,
-      renderComplex: o
+      borderRadiusMask: o,
+      renderComplex: a
     } = t, {
       upperBadge: s,
       lowerBadge: l
@@ -247,14 +247,14 @@ class Y extends a.Component {
       spring: 0
     }), i = new d.Controller({
       spring: 0
-    })), H(e) && null == a && (c = !0, a = new d.Controller({
+    })), H(e) && null == o && (c = !0, o = new d.Controller({
       spring: 0
-    })), !o && H(e) && (c = !0, o = !0), c ? {
+    })), !a && H(e) && (c = !0, a = !0), c ? {
       hasRenderedBadge: n,
       lowerBadgeMask: i,
       upperBadgeMask: r,
-      borderRadiusMask: a,
-      renderComplex: o
+      borderRadiusMask: o,
+      renderComplex: a
     } : null
   }
   componentDidMount() {
@@ -265,7 +265,7 @@ class Y extends a.Component {
     } = this.props, {
       borderRadiusMask: r,
       lowerBadgeMask: i,
-      upperBadgeMask: a
+      upperBadgeMask: o
     } = this.state;
     null == r || r.update({
       spring: +!!e,
@@ -273,7 +273,7 @@ class Y extends a.Component {
     }).start(), null == i || i.update({
       spring: +(null != t),
       immediate: !0
-    }).start(), null == a || a.update({
+    }).start(), null == o || o.update({
       spring: +(null != n),
       immediate: !0
     }).start()
@@ -293,8 +293,8 @@ class Y extends a.Component {
       upperBadge: r
     } = this.props, {
       borderRadiusMask: i,
-      lowerBadgeMask: a,
-      upperBadgeMask: o,
+      lowerBadgeMask: o,
+      upperBadgeMask: a,
       renderComplex: s
     } = this.state;
     t && !e.selected ? null == i || i.update({
@@ -305,19 +305,19 @@ class Y extends a.Component {
       spring: 0,
       immediate: !1,
       config: P
-    }).start()), null != n && null == e.lowerBadge ? null == a || a.update({
+    }).start()), null != n && null == e.lowerBadge ? null == o || o.update({
       spring: 1,
       immediate: !document.hasFocus(),
       config: w
-    }).start() : null == n && null != e.lowerBadge && (null == a || a.update({
+    }).start() : null == n && null != e.lowerBadge && (null == o || o.update({
       spring: 0,
       immediate: !document.hasFocus(),
       config: D
-    }).start()), null != r && null == e.upperBadge ? null == o || o.update({
+    }).start()), null != r && null == e.upperBadge ? null == a || a.update({
       spring: 1,
       immediate: !document.hasFocus(),
       config: w
-    }).start() : null == r && null != e.upperBadge && (null == o || o.update({
+    }).start() : null == r && null != e.upperBadge && (null == a || a.update({
       spring: 0,
       immediate: !document.hasFocus(),
       config: D
@@ -370,7 +370,7 @@ class Y extends a.Component {
       className: t,
       innerClassName: n,
       lowerBadge: r,
-      lowerBadgeSize: o,
+      lowerBadgeSize: a,
       style: l,
       upperBadge: c,
       highlight: u,
@@ -401,6 +401,7 @@ class Y extends a.Component {
         viewBox: "0 0 ".concat(f, " ").concat(f),
         className: E.svg,
         overflow: "visible",
+        role: "none",
         children: (0, i.jsx)("foreignObject", {
           x: 0,
           y: 0,
@@ -416,8 +417,8 @@ class Y extends a.Component {
       P = "".concat(y, "-blob_mask"),
       w = "".concat(y, "-stroke_mask"),
       D = "".concat(y, "-highlight_mask"),
-      L = (null == o ? void 0 : o.width) != null ? o.width : A,
-      x = (null == o ? void 0 : o.height) != null ? o.height : A,
+      L = (null == a ? void 0 : a.width) != null ? a.width : A,
+      x = (null == a ? void 0 : a.height) != null ? a.height : A,
       M = {
         width: g ? f + 8 : f,
         height: g ? f + 8 : f,
@@ -438,6 +439,7 @@ class Y extends a.Component {
           [E.noContain]: u
         }),
         overflow: "visible",
+        role: "none",
         children: [(0, i.jsxs)("defs", {
           children: [u && (0, i.jsx)(d.animated.path, {
             d: this.getPathInterpolation(),
@@ -504,7 +506,7 @@ class Y extends a.Component {
             href: "#".concat(R),
             fill: "black"
           })]
-        }) : null, I ? (0, i.jsxs)(a.Fragment, {
+        }) : null, I ? (0, i.jsxs)(o.Fragment, {
           children: [(0, i.jsx)("g", {
             className: E.focusStroke,
             mask: "url(#".concat(w, ")"),
@@ -535,7 +537,7 @@ class Y extends a.Component {
           children: e
         }, "foreign-object")]
       }, "svg"), (0, i.jsxs)(h.W, {
-        component: a.Fragment,
+        component: o.Fragment,
         children: [null != r ? (0, i.jsx)(Z, {
           className: E.lowerBadge,
           animatedStyle: this.getLowerBadgeStyles(),
@@ -575,7 +577,7 @@ function K(e) {
     children: t,
     viewBoxSize: n,
     className: r,
-    style: o,
+    style: a,
     innerClassName: l,
     isFolder: c,
     lowerBadgeSize: u,
@@ -585,11 +587,11 @@ function K(e) {
     upperBadge: h,
     lowerBadge: m,
     rounded: g = !1
-  } = e, [b, y] = a.useState(!1), v = () => {
+  } = e, [b, y] = o.useState(!1), v = () => {
     y(!0)
   }, O = () => {
     y(!1)
-  }, I = null != h, S = null != m, T = a.useId(), N = "".concat(T, "-upper_badge_masks"), R = "".concat(T, "-lower_badge_masks"), P = "".concat(T, "-blob_mask"), w = "".concat(T, "-stroke_mask"), D = "".concat(T, "-highlight_mask"), L = (null == u ? void 0 : u.width) != null ? u.width : A, x = (null == u ? void 0 : u.height) != null ? u.height : A, M = {
+  }, I = null != h, S = null != m, T = o.useId(), N = "".concat(T, "-upper_badge_masks"), R = "".concat(T, "-lower_badge_masks"), P = "".concat(T, "-blob_mask"), w = "".concat(T, "-stroke_mask"), D = "".concat(T, "-highlight_mask"), L = (null == u ? void 0 : u.width) != null ? u.width : A, x = (null == u ? void 0 : u.height) != null ? u.height : A, M = {
     width: n + 8,
     height: n + 8,
     x: -4,
@@ -597,7 +599,7 @@ function K(e) {
   }, U = c ? 20 : p, G = g ? j(n) : k(n);
   return (0, i.jsxs)("div", {
     className: s()(r, E.wrapper),
-    style: o,
+    style: a,
     onFocus: v,
     onBlur: O,
     children: [(0, i.jsxs)("svg", {
@@ -608,6 +610,7 @@ function K(e) {
         [E.noContain]: d
       }),
       overflow: "visible",
+      role: "none",
       children: [(0, i.jsxs)("defs", {
         children: [d && (0, i.jsx)("path", {
           d: G,

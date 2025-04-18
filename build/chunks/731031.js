@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(358221),
   i = n(569545),
-  a = n(199902),
-  o = n(959457),
+  o = n(199902),
+  a = n(959457),
   s = n(557457),
   l = n(458725),
   c = n(442741),
@@ -36,9 +36,9 @@ function f(e) {
 let _ = {
   getActiveErrors: () => {
     var e;
-    let t = a.Z.getCurrentUserActiveStream();
-    if (null == t || 0 === a.Z.getViewerIds(t).length) return null;
-    let n = null == (e = o.Z.getRTCConnection((0, i.V9)(t))) ? void 0 : e.getMediaEngineConnectionId();
+    let t = o.Z.getCurrentUserActiveStream();
+    if (null == t || 0 === o.Z.getViewerIds(t).length) return null;
+    let n = null == (e = a.Z.getRTCConnection((0, i.V9)(t))) ? void 0 : e.getMediaEngineConnectionId();
     if (null == n) return null;
     let d = r.Z.getParticipant(t.channelId, (0, i.V9)(t));
     if (null == d) return null;

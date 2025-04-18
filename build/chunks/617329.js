@@ -6,11 +6,11 @@ n.d(t, {
 var r = n(192379),
   i = n(348288);
 
-function a(e, t) {
-  return u(e) || c(e, t) || s(e, t) || o()
+function o(e, t) {
+  return u(e) || c(e, t) || s(e, t) || a()
 }
 
-function o() {
+function a() {
   throw TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
 }
 
@@ -34,16 +34,16 @@ function c(e, t) {
     var n = [],
       r = !0,
       i = !1,
-      a = void 0;
+      o = void 0;
     try {
-      for (var o, s = e[Symbol.iterator](); !(r = (o = s.next()).done) && (n.push(o.value), !t || n.length !== t); r = !0);
+      for (var a, s = e[Symbol.iterator](); !(r = (a = s.next()).done) && (n.push(a.value), !t || n.length !== t); r = !0);
     } catch (e) {
-      i = !0, a = e
+      i = !0, o = e
     } finally {
       try {
         r || null == s.return || s.return()
       } finally {
-        if (i) throw a
+        if (i) throw o
       }
     }
     return n
@@ -54,12 +54,12 @@ function u(e) {
   if (Array.isArray(e)) return e
 }
 var d = function() {
-  var e = a((0, r.useState)(!1), 2),
+  var e = o((0, r.useState)(!1), 2),
     t = e[0],
     n = e[1],
-    o = (0, r.useContext)(i.L);
+    a = (0, r.useContext)(i.L);
   return (0, r.useEffect)(function() {
-    var e, t = null == o || null == (e = o.dragDropManager) ? void 0 : e.getBackend(),
+    var e, t = null == a || null == (e = a.dragDropManager) ? void 0 : e.getBackend(),
       r = {
         backendChanged: function(e) {
           n(e.previewEnabled())
@@ -69,5 +69,5 @@ var d = function() {
       function() {
         t.previewsList().unregister(r)
       }
-  }, [o, o.dragDropManager]), t
+  }, [a, a.dragDropManager]), t
 }

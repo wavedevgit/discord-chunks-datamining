@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  a = n.n(i),
-  o = n(887490),
+  o = n.n(i),
+  a = n(887490),
   s = n(416387),
   l = n(525051),
   c = n(494451);
@@ -61,7 +61,7 @@ let p = {
   url: s.fakeLink,
   autolink: s.fakeLink,
   silentPrefix: s.fakeLink,
-  spoiler: a()(c.spoilerContent, c.spoilerMarkdownContent, c.obscuredTextContent, s.spoiler),
+  spoiler: o()(c.spoilerContent, c.spoilerMarkdownContent, c.obscuredTextContent, s.spoiler),
   staticRouteLink: s.fakeLink,
   syntaxBefore: s.syntaxBefore,
   syntaxAfter: s.syntaxAfter,
@@ -79,8 +79,8 @@ function h(e, t) {
       text: f
     } = t,
     h = !1,
-    [m] = o.bN.node(e, o.C0.parent(o.bN.findPath(e, f)));
-  switch (o.bN.isEditor(m) ? "editor" : m.type) {
+    [m] = a.bN.node(e, a.C0.parent(a.bN.findPath(e, f)));
+  switch (a.bN.isEditor(m) ? "editor" : m.type) {
     case "line":
     case "blockQuote": {
       h = void 0;
@@ -96,12 +96,12 @@ function h(e, t) {
           throw Error("Slate: Unknown decoration attribute: ".concat(t))
         }
       }).filter(e => null != e).join(" ");
-      n = a()(e, {
+      n = o()(e, {
         [s.syntaxOverride]: "||" === u.text || "\\" === u.text
       })
     }
   }
-  return n = a()(n, {
+  return n = o()(n, {
     [l.emptyText]: "" === f.text
   }), (0, r.jsx)("span", _(d({}, i), {
     className: n,

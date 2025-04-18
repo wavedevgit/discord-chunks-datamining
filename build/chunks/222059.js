@@ -17,8 +17,8 @@ var r = n(200651),
   g = n(460181),
   m = n(155409),
   b = n(944486),
-  _ = n(594174),
-  y = n(431),
+  y = n(594174),
+  _ = n(431),
   v = n(774343),
   O = n(417363),
   C = n(941128),
@@ -26,8 +26,8 @@ var r = n(200651),
   j = n(278464),
   E = n(276952),
   x = n(682662),
-  N = n(662146),
-  I = n(674552),
+  I = n(662146),
+  N = n(674552),
   P = n(981631),
   w = n(474936),
   Z = n(871465),
@@ -52,8 +52,8 @@ function D(e) {
     selected: p,
     user: f,
     badge: b,
-    link: _,
-    showProgressBadge: y
+    link: y,
+    showProgressBadge: _
   } = e, v = (0, o.e7)([u.Z], () => u.Z.isEditorOpen), [O, C] = i.useState(!1), [S, j] = i.useState(!1), [w, D] = i.useState(null), [L, k] = i.useState(0), M = (0, l.Ie)("home"), U = (0, h.Q3)("DefaultHomeButton"), G = () => {
     D(null), k(0), clearTimeout(w)
   };
@@ -61,14 +61,14 @@ function D(e) {
   let B = T.NW.string(T.t.YUU0RE);
   S && (B = s.K.get(P.wli) ? T.NW.string(T.t.nkq1l5) : T.NW.string(T.t.Be8Q5O));
   let W = null;
-  !p && y && (W = (0, r.jsx)(c.Z, {
+  !p && _ && (W = (0, r.jsx)(c.Z, {
     className: A.downloadProgress,
     determineOwnVisibility: !1
   }));
   let V = p || O || v,
     H = (0, r.jsx)(a.aRk, {
       selected: U || V,
-      lowerBadge: b > 0 ? (0, I.Ne)(b) : null,
+      lowerBadge: b > 0 ? (0, N.Ne)(b) : null,
       upperBadge: W,
       lowerBadgeSize: {
         width: (0, a.OVM)(b)
@@ -103,10 +103,12 @@ function D(e) {
           }
         },
         selected: V,
-        ariaLabel: T.NW.string(T.t.YUU0RE)
+        ariaLabel: T.NW.string(T.t.YUU0RE),
+        "aria-owns": "guild-list-unread-dms",
+        "aria-selected": p
       }, M), n = n = {
         to: {
-          pathname: _,
+          pathname: y,
           state: {
             analyticsSource: {
               page: P.ZY5.GUILD_CHANNEL,
@@ -138,7 +140,7 @@ function D(e) {
           selected: p,
           hovered: O,
           className: A.pill
-        }), (0, r.jsx)(N.Z, {
+        }), (0, r.jsx)(I.Z, {
           color: a.ua7.Colors.PRIMARY,
           hideOnClick: !0,
           text: B,
@@ -166,12 +168,12 @@ function L() {
     {
       unviewedTrialCount: l,
       unviewedDiscountCount: s
-    } = (0, o.cj)([y.Z], () => ({
-      unviewedTrialCount: y.Z.getUnacknowledgedOffers(i).length,
-      unviewedDiscountCount: y.Z.getUnacknowledgedDiscountOffers().length
+    } = (0, o.cj)([_.Z], () => ({
+      unviewedTrialCount: _.Z.getUnacknowledgedOffers(i).length,
+      unviewedDiscountCount: _.Z.getUnacknowledgedDiscountOffers().length
     })),
     a = l + s,
-    u = (0, o.e7)([_.default], () => _.default.getCurrentUser()),
+    u = (0, o.e7)([y.default], () => y.default.getCurrentUser()),
     d = (0, p.q)(),
     h = n + a + d,
     g = h === a && a > 0 && n + d === 0,

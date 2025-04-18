@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  a = n.n(i),
-  o = n(481060),
+  o = n.n(i),
+  a = n(481060),
   s = n(388032),
   l = n(460585);
 let c = e => {
@@ -17,9 +17,9 @@ let c = e => {
       onClick: n,
       children: i
     } = e;
-    return (0, r.jsx)(o.eee, {
+    return (0, r.jsx)(a.eee, {
       onClick: n,
-      className: a()(l.link, t),
+      className: o()(l.link, t),
       children: i
     })
   },

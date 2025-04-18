@@ -6,8 +6,8 @@ n.d(t, {
 }), n(388685), n(35282);
 var r = n(933557),
   i = n(797610),
-  a = n(339085),
-  o = n(633302),
+  o = n(339085),
+  a = n(633302),
   s = n(601070),
   l = n(592125),
   c = n(984933),
@@ -22,11 +22,11 @@ var r = n(933557),
 function g(e, t, n, r) {
   let {
     allowUsers: i = !0,
-    allowRoles: a = !0
+    allowRoles: o = !0
   } = null != r ? r : {};
   switch (e[0]) {
     case "@":
-      return b(e, t, n, i, a);
+      return b(e, t, n, i, o);
     case ":":
       return O(e, t);
     case "#":
@@ -40,11 +40,11 @@ function E(e, t, n, r) {
   return null == i ? null : (0, h.VI)(i)
 }
 
-function b(e, t, n, r, a) {
-  let [o, s] = e.slice(1).split("#", 2), c = null != t ? d.Z.getGuild(t) : null, f = (0, i.M9)(c);
-  if (a && null == s && null != c) {
+function b(e, t, n, r, o) {
+  let [a, s] = e.slice(1).split("#", 2), c = null != t ? d.Z.getGuild(t) : null, f = (0, i.M9)(c);
+  if (o && null == s && null != c) {
     for (let e of Object.values(d.Z.getRoles(c.id)))
-      if (o === e.name) return {
+      if (a === e.name) return {
         type: "roleMention",
         roleId: e.id,
         children: [{
@@ -57,7 +57,7 @@ function b(e, t, n, r, a) {
     if (null != e)
       if (e.isPrivate()) {
         for (let t of e.recipients)
-          if (y(o, s, t)) return {
+          if (y(a, s, t)) return {
             type: "userMention",
             userId: t,
             children: [{
@@ -69,14 +69,14 @@ function b(e, t, n, r, a) {
             userId: e
           }
           of u.ZP.getMembers(t))
-          if (y(o, s, e)) return {
+          if (y(a, s, e)) return {
             type: "userMention",
             userId: e,
             children: [{
               text: ""
             }]
           };
-        if (f && y(o, s, m.fL)) return {
+        if (f && y(a, s, m.fL)) return {
           type: "userMention",
           userId: m.fL,
           children: [{
@@ -119,12 +119,12 @@ function v(e, t) {
             text: ""
           }]
         }
-    } let a = s.Z.getActiveJoinedThreadsForGuild(t);
-  for (let e of p.default.keys(a))
-    for (let t of p.default.keys(a[e])) {
+    } let o = s.Z.getActiveJoinedThreadsForGuild(t);
+  for (let e of p.default.keys(o))
+    for (let t of p.default.keys(o[e])) {
       let {
         channel: r
-      } = a[e][t];
+      } = o[e][t];
       if (r.name === n) return {
         type: "channelMention",
         channelId: r.id,
@@ -137,10 +137,10 @@ function v(e, t) {
 }
 
 function O(e, t) {
-  let n = o.ZP.EMOJI_NAME_RE.exec(e);
+  let n = a.ZP.EMOJI_NAME_RE.exec(e);
   if (null == n) return null;
   let r = n[1],
-    i = a.ZP.getDisambiguatedEmojiContext(t).getCustomEmoji();
+    i = o.ZP.getDisambiguatedEmojiContext(t).getCustomEmoji();
   if (null != i && r in i) {
     let e = i[r];
     return {

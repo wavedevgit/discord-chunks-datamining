@@ -6,9 +6,9 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  a = n.n(i),
-  o = n(913527),
-  s = n.n(o),
+  o = n.n(i),
+  a = n(913527),
+  s = n.n(a),
   l = n(442837),
   c = n(481060),
   u = n(835473),
@@ -23,7 +23,7 @@ let g = function(e) {
     createdAt: t,
     participantIds: n,
     applicationId: i,
-    title: o,
+    title: a,
     guildId: g,
     className: E
   } = e, b = (0, u.q)(i), y = (0, l.Wu)([_.default], () => {
@@ -31,15 +31,15 @@ let g = function(e) {
     return null != (e = n.map(e => _.default.getUser(e)).filter(p.lm)) ? e : []
   }), v = null == b ? void 0 : b.name, O = s()(t).fromNow();
   return null == t ? null : (0, r.jsxs)("div", {
-    className: a()(E, m.container),
+    className: o()(E, m.container),
     children: [(0, r.jsx)(f.Z, {
       game: b
     }), (0, r.jsxs)("div", {
       className: m.textSection,
-      children: [null != o && "" !== o ? (0, r.jsx)(c.Text, {
+      children: [null != a && "" !== a ? (0, r.jsx)(c.Text, {
         variant: "text-md/semibold",
         color: "interactive-active",
-        children: o
+        children: a
       }) : (0, r.jsx)(c.Text, {
         variant: "text-md/semibold",
         color: "text-muted",
