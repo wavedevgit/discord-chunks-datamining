@@ -2,6 +2,7 @@
 "use strict";
 e.exports = {
   container: "container_ef0711",
+  headerContainer: "headerContainer_ef0711",
   powerupsContainer: "powerupsContainer_ef0711",
   powerupCard: "powerupCard_ef0711",
   image: "image_ef0711",
