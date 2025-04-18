@@ -4,17 +4,19 @@ var r, i, l, a = n(108131),
   o = n.n(a),
   s = n(442837),
   c = n(570140),
-  u = n(314897);
-let d = {
+  u = n(314897),
+  d = n(626135),
+  p = n(981631);
+let h = {
     user: {},
     guild: {}
   },
-  p = {
+  f = {
     user: {},
     guild: {}
   },
-  h = {};
-class f extends(r = s.ZP.Store) {
+  g = {};
+class m extends(r = s.ZP.Store) {
   initialize() {
     this.waitFor(u.default)
   }
@@ -39,16 +41,16 @@ class f extends(r = s.ZP.Store) {
         }]
       }))
     };
-    d[r][i] = l
+    h[r][i] = l
   }
   registerExperiment(e, t, n) {
-    let r = p[t],
+    let r = f[t],
       i = {
         id: e,
         kind: t,
         defaultConfig: n
       };
-    return r[e] = i, h[e] = o().v3(e), i
+    return r[e] = i, g[e] = o().v3(e), i
   }
   getAssignedConfig(e, t) {
     var n;
@@ -57,16 +59,23 @@ class f extends(r = s.ZP.Store) {
   }
   getEvaluation(e, t) {
     var n, r;
-    return null == (r = d[e]) || null == (n = r[t]) ? void 0 : n.evaluationId
+    return null == (r = h[e]) || null == (n = r[t]) ? void 0 : n.evaluationId
   }
-  trackExposure(e, t, n) {}
+  trackExposure(e, t, n, r) {
+    "user" === t && d.default.track(p.rMx.EXPERIMENT_USER_EVALUATION_EXPOSED, {
+      evaluation: e,
+      experiment: n,
+      exposure_location: r,
+      unit_type: t
+    })
+  }
   isCompatibleConfig(e, t) {
     return Object.keys(t).every(t => t in e)
   }
   getExperimentAssignment(e) {
     var t, n;
-    let r = h[e.experimentId];
-    return null == (n = d[e.kind]) || null == (t = n[e.unitId]) ? void 0 : t.experiments[r]
+    let r = g[e.experimentId];
+    return null == (n = h[e.kind]) || null == (t = n[e.unitId]) ? void 0 : t.experiments[r]
   }
   constructor() {
     super(c.Z, {
@@ -75,9 +84,9 @@ class f extends(r = s.ZP.Store) {
     }, c.c.Early)
   }
 }
-l = "ApexExperimentStore", (i = "displayName") in f ? Object.defineProperty(f, i, {
+l = "ApexExperimentStore", (i = "displayName") in m ? Object.defineProperty(m, i, {
   value: l,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : f[i] = l, new f
+}) : m[i] = l, new m
