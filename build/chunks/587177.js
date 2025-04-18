@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(311850);
 
@@ -13,21 +13,21 @@ function i(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class o {
+class a {
   static fromServer(e) {
     let {
       prices: t,
       type: n,
       premium_type: i,
-      name: a,
+      name: o,
       sku_id: s,
       summary: l
     } = e;
-    return new o({
+    return new a({
       prices: (0, r.l)(t),
       type: n,
       premiumType: i,
-      name: a,
+      name: o,
       skuId: s,
       summary: l
     })

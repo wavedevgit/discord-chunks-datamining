@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  o = n(620662),
-  a = n(503438),
+  a = n(620662),
+  o = n(503438),
   s = n(829820),
   l = n(395361),
   c = n(475413),
@@ -22,7 +22,7 @@ function _(e) {
     activity: p,
     onAction: h
   } = e, m = (0, s.Ih)(p, _), g = (0, s.Fe)(p, _);
-  return (0, a.Z)(p) && ((0, o.Z)(p, u.xjy.PLAY) || (0, o.Z)(p, u.xjy.SYNC)) ? (0, r.jsxs)(r.Fragment, {
+  return (0, o.Z)(p) && ((0, a.Z)(p, u.xjy.PLAY) || (0, a.Z)(p, u.xjy.SYNC)) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.DY3, {
       text: m.tooltip,
       className: f.primaryButton,

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(953529);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(200100),
   l = n(793030),
   c = n(442837),
@@ -73,7 +73,7 @@ function L(e) {
   let {
     guildId: t,
     powerup: n,
-    onClose: o
+    onClose: a
   } = e, {
     analyticsLocations: l
   } = (0, f.ZP)(), c = null != (0, y.Z)(t, n), m = (0, v.Z)(t), [g, E] = i.useState(!1), [I, R] = i.useState(!1), w = I, L = i.useCallback(() => {
@@ -88,8 +88,8 @@ function L(e) {
       guild: e
     })
   }, [t, l]), x = i.useCallback(() => {
-    o(), (0, O.Z)(t, n.skuId)
-  }, [t, n.skuId, o]), M = {
+    a(), (0, O.Z)(t, n.skuId)
+  }, [t, n.skuId, a]), M = {
     tension: 400,
     friction: 30
   }, k = (0, u.q_F)({
@@ -108,7 +108,7 @@ function L(e) {
     e && E(!0)
   }, []), B = (0, d.O)(G), F = (0, b.Z)(n, I);
   return (0, r.jsxs)("div", {
-    className: a()(C.topPerksCard, C.animatedTopPerksCard, A.powerupCard, {
+    className: o()(C.topPerksCard, C.animatedTopPerksCard, A.powerupCard, {
       [C.animate]: g
     }),
     onMouseEnter: () => R(!0),
@@ -119,7 +119,7 @@ function L(e) {
     }), (0, r.jsx)("div", {
       className: C.topPerksCardImageWrapper,
       children: (0, r.jsx)(s.animated.img, {
-        className: a()(C.topPerksCardImage, A.image),
+        className: o()(C.topPerksCardImage, A.image),
         src: F,
         alt: "",
         style: k
@@ -128,7 +128,7 @@ function L(e) {
       style: D(P({}, j), {
         transform: j.y.to(e => "translateY(".concat(e, "px)"))
       }),
-      className: a()(C.contentContainer, A.contentContainer),
+      className: o()(C.contentContainer, A.contentContainer),
       children: [(0, r.jsx)(p.xm, {
         heading: n.title,
         description: n.description,
@@ -164,13 +164,13 @@ function L(e) {
 let x = i.forwardRef((e, t) => {
   var n;
   let {
-    guild: o,
-    onClose: a
-  } = e, s = (0, E.Ek)(o.id, "GuildPowerupsMarketingPowerupCards");
+    guild: a,
+    onClose: o
+  } = e, s = (0, E.Ek)(a.id, "GuildPowerupsMarketingPowerupCards");
   i.useEffect(() => {
-    s && ((0, m.Sn)(o.id), (0, m.Fm)(o.id))
-  }, [s, o.id]);
-  let u = (0, c.e7)([g.Z], () => g.Z.getStateForGuild(o.id)),
+    s && ((0, m.Sn)(a.id), (0, m.Fm)(a.id))
+  }, [s, a.id]);
+  let u = (0, c.e7)([g.Z], () => g.Z.getStateForGuild(a.id)),
     d = null != (n = null == u ? void 0 : u.catalog.get(I.Us.PERK)) ? n : [];
   return s && 0 !== d.length ? (0, r.jsxs)("div", {
     ref: t,
@@ -184,9 +184,9 @@ let x = i.forwardRef((e, t) => {
     }), (0, r.jsx)("div", {
       className: A.powerupsContainer,
       children: d.map(e => (0, r.jsx)(L, {
-        guildId: o.id,
+        guildId: a.id,
         powerup: e,
-        onClose: a
+        onClose: o
       }, "guild-powerup-marketing-".concat(e.skuId)))
     })]
   }) : null

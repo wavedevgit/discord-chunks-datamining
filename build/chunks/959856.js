@@ -5,8 +5,8 @@ n.d(t, {
 }), n(457542), n(415506), n(388685), n(600040);
 var r = n(512722),
   i = n.n(r),
-  o = n(264344),
-  a = n.n(o),
+  a = n(264344),
+  o = n.n(a),
   s = n(259443),
   l = n(47770),
   c = n(174498),
@@ -43,7 +43,7 @@ class A extends l.Z {
     this.interacted || (document.createElement("audio").play(), this.interacted = !0), this.eachConnection(e => e.interact())
   }
   static supported() {
-    return !__OVERLAY__ && (S.fi && null != window.AudioContext && null != window.RTCPeerConnection ? (n(266370), !0) : (N.info("WebRTC is not supported on", a().name, a().version), !1))
+    return !__OVERLAY__ && (S.fi && null != window.AudioContext && null != window.RTCPeerConnection ? (n(266370), !0) : (N.info("WebRTC is not supported on", o().name, o().version), !1))
   }
   supported() {
     return !0
@@ -60,7 +60,7 @@ class A extends l.Z {
         var t;
         return (null == (t = navigator.mediaDevices) ? void 0 : t.getDisplayMedia) != null;
       case I.AN.VOICE_PROCESSING:
-        return "Chrome" === a().name;
+        return "Chrome" === o().name;
       case I.AN.NATIVE_PING:
       case I.AN.DIAGNOSTICS:
         return S.Fo;
@@ -68,7 +68,7 @@ class A extends l.Z {
       case I.AN.LOOPBACK:
       case I.AN.NOISE_SUPPRESSION:
       case I.AN.AUTOMATIC_GAIN_CONTROL:
-        return "Safari" !== a().name;
+        return "Safari" !== o().name;
       case I.AN.NOISE_CANCELLATION:
         return u()();
       case I.AN.QOS:
@@ -100,8 +100,8 @@ class A extends l.Z {
     let {
       ssrc: r,
       address: i,
-      port: o,
-      modes: a,
+      port: a,
+      modes: o,
       streamUserId: s,
       streamParameters: l
     } = n, c = (0, m.Q)(e, t, this.getAudioContext(), l);
@@ -127,7 +127,7 @@ class A extends l.Z {
     e.on("permission", this.handleAudioPermission);
     try {
       var t;
-      await e.enable(), "Firefox" === a().name && await this.handleDeviceChange(), this.enabled = !0, this.eachConnection(e => e.input.enableAudioInput(), I.Yn.DEFAULT), null == (t = this.voiceActivityInput) || t.enable()
+      await e.enable(), "Firefox" === o().name && await this.handleDeviceChange(), this.enabled = !0, this.eachConnection(e => e.input.enableAudioInput(), I.Yn.DEFAULT), null == (t = this.voiceActivityInput) || t.enable()
     } finally {
       e.destroy()
     }

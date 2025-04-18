@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  JH: () => o,
+  JH: () => a,
   o9: () => i,
   w8: () => r
 });
@@ -30,7 +30,7 @@ let r = (0, n(818083).B)({
     });
     return e
   },
-  o = () => {
+  a = () => {
     let {
       enabled: e
     } = r.getCurrentConfig({

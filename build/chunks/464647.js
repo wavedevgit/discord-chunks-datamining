@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(97028),
   l = n(481060),
   c = n(686546),
@@ -59,9 +59,9 @@ function E(e) {
     game: t,
     activityLevel: n,
     hideTooltip: i
-  } = e, o = t.getIconURL(24);
-  if (null == o) return null;
-  let a = !i,
+  } = e, a = t.getIconURL(24);
+  if (null == a) return null;
+  let o = !i,
     u = (null == n ? void 0 : n.level) === s.m.HIGH,
     f = (0, r.jsx)(l.Text, {
       variant: "text-sm/medium",
@@ -72,12 +72,12 @@ function E(e) {
     text: f,
     position: "bottom",
     "aria-label": t.name,
-    shouldShow: a,
+    shouldShow: o,
     children: e => (0, r.jsxs)("div", h(_({}, e), {
       className: d.gameIcon,
       children: [(0, r.jsx)("img", {
         className: d.gameIconImage,
-        src: o,
+        src: a,
         alt: t.name
       }), u && (0, r.jsx)(c.ZP, {
         mask: c.QS.GAMEPLAY_HIGH_ACTIVITY_ICON,
@@ -142,7 +142,7 @@ function v(e) {
   let {
     profile: t
   } = e, n = t.gameActivity, {
-    gamesToDisplay: o,
+    gamesToDisplay: a,
     lastGameToDisplay: s,
     remainingGames: c
   } = (0, u.Z)(t), f = i.useMemo(() => {
@@ -162,9 +162,9 @@ function v(e) {
         activity: n
       }),
       children: n => (0, r.jsxs)("div", h(_({}, n), {
-        className: a()(d.gameIcon, d.extraGameItem),
+        className: o()(d.gameIcon, d.extraGameItem),
         children: [(0, r.jsx)("img", {
-          className: a()(d.gameIconImage, d.extraGameIconImage),
+          className: o()(d.gameIconImage, d.extraGameIconImage),
           src: e,
           alt: s.name
         }), (0, r.jsx)("div", {
@@ -180,15 +180,15 @@ function v(e) {
       }))
     })
   }, [s, c, n]);
-  return null == o || 0 === o.length ? null : 1 === o.length ? (0, r.jsx)("div", {
+  return null == a || 0 === a.length ? null : 1 === a.length ? (0, r.jsx)("div", {
     className: d.container,
     children: (0, r.jsx)(y, {
-      game: o[0],
-      activityLevel: n[o[0].id]
+      game: a[0],
+      activityLevel: n[a[0].id]
     })
   }) : (0, r.jsxs)("div", {
     className: d.container,
-    children: [o.map(e => (0, r.jsx)(E, {
+    children: [a.map(e => (0, r.jsx)(E, {
       game: e,
       activityLevel: n[e.id]
     }, e.id)), f]

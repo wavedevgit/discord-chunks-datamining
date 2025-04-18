@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(765053),
   l = n(512969),
   c = n(442837),
@@ -24,14 +24,14 @@ function E(e) {
   let {
     lang: t,
     style: n,
-    className: o
+    className: a
   } = (0, _.vP)(), s = (0, l.TH)(), u = i.useMemo(() => g.has(s.pathname), [s.pathname]);
   (0, h.Z)(window, u);
   let d = (0, c.e7)([f.Z], () => f.Z.sidebarWidth);
   return (0, r.jsx)("html", {
     lang: t,
     style: "".concat(n, " --devtools-sidebar-width: ").concat(d, "px;"),
-    className: a()(o, e, {
+    className: o()(a, e, {
       overlay: __OVERLAY__
     })
   })
@@ -66,13 +66,13 @@ function y(e) {
     skipsSettingDefaultPageTitle: n
   });
   let {
-    clientThemesClassName: o,
-    clientThemesCSS: a
+    clientThemesClassName: a,
+    clientThemesCSS: o
   } = (0, d.ZP)(), l = i.createElement("style", {
     [d.PQ]: !0
-  }, a);
+  }, o);
   return (0, r.jsxs)(s.ql, {
-    children: [E(o), b(), l, t]
+    children: [E(a), b(), l, t]
   })
 }
 let v = i.memo(y)

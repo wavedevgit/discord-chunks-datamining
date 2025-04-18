@@ -6,8 +6,8 @@ n.d(t, {
 }), n(953529), n(388685);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(512722),
   l = n.n(s),
   c = n(200100),
@@ -54,13 +54,13 @@ let P = e => {
       children: t,
       hasError: n,
       isLoading: i,
-      maskAsset: o,
+      maskAsset: a,
       size: s,
       withLoadingIndicator: l = !0
     } = e, c = s >= S;
     return (0, r.jsxs)("div", {
-      className: a()(v.assetWrapper, {
-        [v.assetWrapperMasked]: n || o
+      className: o()(v.assetWrapper, {
+        [v.assetWrapperMasked]: n || a
       }),
       style: {
         height: s,
@@ -88,8 +88,8 @@ let P = e => {
   w = e => {
     let {
       shouldAnimate: t,
-      size: o,
-      sticker: a,
+      size: a,
+      sticker: o,
       fileUri: s,
       assetData: c,
       isFocused: u,
@@ -100,11 +100,11 @@ let P = e => {
       onError: m
     } = e, g = i.useRef(null), E = i.useRef(null), [O, I] = i.useState(!0), [S, T] = i.useState(!1), N = i.useRef(!1);
     N.current = t && u;
-    let A = null == s ? (0, b.Q6)(a) : s;
-    return (l()(null != A, "Unable to determine sticker asset URL. Sticker ID: ".concat(a.id)), i.useEffect(() => {
+    let A = null == s ? (0, b.Q6)(o) : s;
+    return (l()(null != A, "Unable to determine sticker asset URL. Sticker ID: ".concat(o.id)), i.useEffect(() => {
       if (null == g.current || null == A) return;
       let e = Math.min(2, (0, p.x_)());
-      g.current.width = o * e, g.current.height = o * e;
+      g.current.width = a * e, g.current.height = a * e;
       let t = !1;
       return (async () => {
         let {
@@ -112,7 +112,7 @@ let P = e => {
         } = await n.e("21617").then(n.bind(n, 186952));
         null != g.current && (E.current = new e({
           canvas: g.current,
-          animationId: a.id,
+          animationId: o.id,
           assetUrl: A,
           assetData: c,
           onInitialDraw: () => {
@@ -126,25 +126,25 @@ let P = e => {
         var e;
         null == (e = E.current) || e.drop(), E.current = null, t = !0
       }
-    }, [A, o, a.id, c, m]), i.useEffect(() => {
+    }, [A, a, o.id, c, m]), i.useEffect(() => {
       var e;
       let n;
       t || (n = 0), null == (e = E.current) || e.setState(t && u, n)
-    }, [a, t, u]), null == A) ? null : (0, r.jsx)("div", {
+    }, [o, t, u]), null == A) ? null : (0, r.jsx)("div", {
       role: "img",
       className: d,
-      "aria-label": S ? y.NW.string(y.t.yEvsKy) : R(a),
+      "aria-label": S ? y.NW.string(y.t.yEvsKy) : R(o),
       ref: _,
       children: (0, r.jsx)(P, {
         hasError: S,
         isLoading: O,
         maskAsset: f,
-        size: o,
+        size: a,
         withLoadingIndicator: h,
         children: C((0, r.jsx)("canvas", {
           className: v.lottieCanvas,
           ref: g
-        }), a.id)
+        }), o.id)
       })
     })
   },
@@ -152,7 +152,7 @@ let P = e => {
     let {
       shouldAnimate: t,
       sticker: n,
-      isFocused: o,
+      isFocused: a,
       size: s,
       className: l,
       maskAsset: c,
@@ -160,7 +160,7 @@ let P = e => {
       withLoadingIndicator: f,
       fileUri: _
     } = e, [p, h] = i.useState(!1), [m, g] = i.useState(!0), [E, y] = i.useState(!1), S = i.useRef(null), T = i.useRef(null), N = null != _ ? _ : (0, b.Q6)(n, {
-      isPreview: !t || !p || !o,
+      isPreview: !t || !p || !a,
       size: s
     }), A = i.useCallback(() => {
       g(!1)
@@ -183,7 +183,7 @@ let P = e => {
       onChange: h,
       threshold: I,
       children: (0, r.jsx)("div", {
-        className: a()(l, v.__invalid_pngImageWrapper),
+        className: o()(l, v.__invalid_pngImageWrapper),
         ref: u,
         children: (0, r.jsx)(P, {
           hasError: E,
@@ -209,15 +209,15 @@ let P = e => {
     let {
       disableAnimation: t,
       enlargeScaleFactor: n,
-      enlargeWithName: o,
-      isInteracting: a,
+      enlargeWithName: a,
+      isInteracting: o,
       positionRef: s,
       size: l,
       sticker: d
     } = e, p = (0, u.e7)([_.Z], () => _.Z.useReducedMotion), m = i.useRef(null), g = {
       transform: "scale(".concat(p ? 1 : 1 / n, ")"),
       opacity: 0
-    }, E = (0, f.Yzy)(a, {
+    }, E = (0, f.Yzy)(o, {
       ref: m,
       from: g,
       enter: {
@@ -228,11 +228,11 @@ let P = e => {
       config: N
     }), b = i.useRef(null), y = (0, f.q_F)({
       ref: b,
-      transform: a || p ? "translateY(0)" : "translateY(-25px)",
-      opacity: +!!a,
+      transform: o || p ? "translateY(0)" : "translateY(-25px)",
+      opacity: +!!o,
       config: A
     }, "animate-always");
-    return (0, c.useChain)(a ? [m, b] : [b, m], a ? [0, .0625] : [0, 0]), E((e, i) => i && (0, r.jsx)(h.W5, {
+    return (0, c.useChain)(o ? [m, b] : [b, m], o ? [0, .0625] : [0, 0]), E((e, i) => i && (0, r.jsx)(h.W5, {
       className: v.positionedLayer,
       fixed: !0,
       align: "center",
@@ -247,13 +247,13 @@ let P = e => {
             className: v.__invalid_overlaySticker,
             disableAnimation: t,
             enlargeOnInteraction: !1,
-            isInteracting: a,
+            isInteracting: o,
             maskAsset: !1,
             sticker: d,
             size: Math.round(l * n),
             withLoadingIndicator: !1
           })
-        }), o && (0, r.jsx)(c.animated.div, {
+        }), a && (0, r.jsx)(c.animated.div, {
           className: v.overlayLabelWrapper,
           style: y,
           children: (0, r.jsx)(f.Text, {
@@ -269,8 +269,8 @@ let P = e => {
     let {
       isInteracting: t = !1,
       disableAnimation: n = !1,
-      enlargeOnInteraction: o = !1,
-      enlargeWithName: a = !0,
+      enlargeOnInteraction: a = !1,
+      enlargeWithName: o = !0,
       enlargeScaleFactor: s = T,
       maskAsset: l = !1,
       size: c,
@@ -296,10 +296,10 @@ let P = e => {
         assetData: _,
         fileUri: p,
         onError: h
-      }), o && (0, r.jsx)(L, {
+      }), a && (0, r.jsx)(L, {
         disableAnimation: n,
         enlargeScaleFactor: s,
-        enlargeWithName: a,
+        enlargeWithName: o,
         isInteracting: t,
         positionRef: v,
         size: c,

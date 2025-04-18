@@ -8,8 +8,8 @@ n.d(t, {
 });
 var r = n(544891),
   i = n(430742),
-  o = n(904245),
-  a = n(623292),
+  a = n(904245),
+  o = n(623292),
   s = n(592125),
   l = n(703558),
   c = n(375954),
@@ -56,7 +56,7 @@ async function h(e) {
   });
   if (null != t.text && "" !== t.text) {
     let n = s.Z.getChannel(e.channel_id);
-    null != n && ((0, a.fE)({
+    null != n && ((0, o.fE)({
       channel: n,
       message: e,
       shouldMention: !1,
@@ -66,5 +66,5 @@ async function h(e) {
 }
 
 function m(e) {
-  c.Z.getMessages(e).hasMoreAfter ? o.Z.jumpToPresent(e, d.AQB) : u.S.dispatch(d.CkL.SCROLLTO_PRESENT)
+  c.Z.getMessages(e).hasMoreAfter ? a.Z.jumpToPresent(e, d.AQB) : u.S.dispatch(d.CkL.SCROLLTO_PRESENT)
 }

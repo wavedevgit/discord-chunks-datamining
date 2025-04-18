@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => v
 });
 var r, i = n(442837),
-  o = n(570140),
-  a = n(881052);
+  a = n(570140),
+  o = n(881052);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -35,7 +35,7 @@ function _(e) {
     message: t,
     code: n
   } = e;
-  l = new a.HF(t, n)
+  l = new o.HF(t, n)
 }
 
 function p(e) {
@@ -43,7 +43,7 @@ function p(e) {
     message: t,
     code: n
   } = e;
-  l = new a.HF(t, n)
+  l = new o.HF(t, n)
 }
 
 function h() {
@@ -78,7 +78,7 @@ class y extends(r = i.ZP.Store) {
   }
 }
 s(y, "displayName", "PremiumPaymentModalStore");
-let v = new y(o.Z, {
+let v = new y(a.Z, {
   PREMIUM_PAYMENT_SUBSCRIBE_FAIL: d,
   PREMIUM_PAYMENT_UPDATE_FAIL: d,
   PREMIUM_PAYMENT_SUBSCRIBE_SUCCESS: f,

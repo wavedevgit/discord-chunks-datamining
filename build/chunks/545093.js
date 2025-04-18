@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  o = n.n(i),
-  a = n(481060),
+  a = n.n(i),
+  o = n(481060),
   s = n(76087);
 
 function l(e, t, n) {
@@ -53,8 +53,8 @@ function f(e, t) {
   if (null == e) return {};
   var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -62,8 +62,8 @@ function f(e, t) {
 function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -79,19 +79,19 @@ function p(e) {
     width: 20,
     height: 20
   });
-  return (0, r.jsx)(a.ua7, {
+  return (0, r.jsx)(o.ua7, {
     text: i,
     position: "bottom",
     children: e => {
       var {
         onClick: n
       } = e, _ = f(e, ["onClick"]);
-      return (0, r.jsx)(a.P3F, d(c({}, _), {
+      return (0, r.jsx)(o.P3F, d(c({}, _), {
         "aria-label": i,
         onClick: e => {
           null == n || n(), t(e)
         },
-        className: o()(s.button, l),
+        className: a()(s.button, l),
         children: (0, r.jsx)("div", {
           className: s.buttonInner,
           children: u

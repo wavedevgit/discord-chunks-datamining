@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(743236),
   l = n(939350),
   c = n(56913);
@@ -54,23 +54,23 @@ function p(e) {
   let {
     color: t = "default",
     disabled: n,
-    isFocused: o,
+    isFocused: a,
     showDefaultFocus: u = !1,
     menuItemProps: f,
     children: p
   } = e, h = i.useRef(null);
   return i.useLayoutEffect(() => {
-    if (!o) return;
+    if (!a) return;
     let e = h.current;
     if (null == e) return;
     (0, s.F)(h);
     let t = e.querySelector('[tabindex="0"]');
     null == t || t.focus()
-  }, [o]), (0, r.jsx)("div", _(d({
+  }, [a]), (0, r.jsx)("div", _(d({
     ref: h,
-    className: a()(c.item, l._[t], {
+    className: o()(c.item, l._[t], {
       [c.disabled]: n,
-      [c.focused]: u && o,
+      [c.focused]: u && a,
       [c.hideInteraction]: !u
     }),
     "aria-disabled": n

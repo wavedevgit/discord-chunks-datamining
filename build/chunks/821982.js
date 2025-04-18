@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(768581),
   i = n(1585);
-let o = (e, t, n) => (0, r.NZ)({
+let a = (e, t, n) => (0, r.NZ)({
   avatarDecoration: {
     asset: e
   },

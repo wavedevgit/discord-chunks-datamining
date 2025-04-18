@@ -2,8 +2,8 @@
 "use strict";
 var r = n(98405),
   i = n(46015),
-  o = n(896471),
-  a = n(527160),
+  a = n(896471),
+  o = n(527160),
   s = n(914331),
   l = n(992032),
   c = n(382698),
@@ -67,8 +67,8 @@ r({
   forced: y || !v || !O || !I
 }, {
   sort: function(e) {
-    void 0 !== e && o(e);
-    var t, n, r = a(this);
+    void 0 !== e && a(e);
+    var t, n, r = o(this);
     if (I) return void 0 === e ? E(r) : E(r, e);
     var i = [],
       c = s(r);

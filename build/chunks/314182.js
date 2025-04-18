@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(752934);
 let l = i.forwardRef(function(e, t) {
   let {
@@ -14,7 +14,7 @@ let l = i.forwardRef(function(e, t) {
     children: i
   } = e;
   return (0, r.jsx)("div", {
-    className: a()(s.wrapper, {
+    className: o()(s.wrapper, {
       [s.wrapperActive]: n
     }),
     ref: t,

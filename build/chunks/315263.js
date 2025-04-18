@@ -5,8 +5,8 @@ n.r(t), n.d(t, {
 }), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685), n(35282);
 var r = n(873546),
   i = n(636977),
-  o = n(570140),
-  a = n(493683),
+  a = n(570140),
+  o = n(493683),
   s = n(447543),
   l = n(230711),
   c = n(566620),
@@ -38,7 +38,7 @@ var r = n(873546),
   M = n(981631),
   k = n(46140);
 async function j(e, t) {
-  await o.Z.dispatch({
+  await a.Z.dispatch({
     type: "INVITE_MODAL_OPEN",
     invite: e,
     code: t,
@@ -68,25 +68,25 @@ let G = {
 function B(e) {
   var t;
   let {
-    skipExtensionCheck: o,
+    skipExtensionCheck: a,
     analyticsLocations: s
   } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : G, C = (0, E.zO)(e);
   if (null != C && (C.type === g.g.INVITE || C.type === g.g.EMBEDDED_ACTIVITY_INVITE)) return e => (null == e || e.preventDefault(), U(C), !0);
   if (null != C && (C.type === g.g.APP_DIRECTORY_PROFILE || C.type === g.g.APP_DIRECTORY_STOREFRONT || C.type === g.g.APP_DIRECTORY_STOREFRONT_SKU)) return t => {
-    var i, o;
+    var i, a;
     null == t || t.preventDefault();
     let {
-      code: a
+      code: o
     } = C, {
       applicationId: s,
       skuId: l
     } = C.type === g.g.APP_DIRECTORY_PROFILE || C.type === g.g.APP_DIRECTORY_STOREFRONT ? {
-      applicationId: a,
+      applicationId: o,
       skuId: void 0
-    } : null != (i = (0, p.Q)(a)) ? i : {
+    } : null != (i = (0, p.Q)(o)) ? i : {
       applicationId: void 0,
       skuId: void 0
-    }, c = null != (o = P.Z.getGuildId()) ? o : void 0;
+    }, c = null != (a = P.Z.getGuildId()) ? a : void 0;
     return null == s ? (0, x.Z)(e) : (D.default.track(M.rMx.APP_DIRECTORY_PROFILE_EMBED_URL_CLICKED, {
       application_id: s,
       device_platform: r.tq ? "mobile_web" : "desktop_web",
@@ -114,7 +114,7 @@ function B(e) {
     let {
       code: r,
       url: i
-    } = C, o = h.Z.getApplication(r), l = new URL(i), _ = null != (t = l.searchParams.get("referrer_id")) ? t : void 0, p = (0, f.Z)(), {
+    } = C, a = h.Z.getApplication(r), l = new URL(i), _ = null != (t = l.searchParams.get("referrer_id")) ? t : void 0, p = (0, f.Z)(), {
       currentChannelId: g,
       instanceId: E,
       isCurrentlyInInstance: b,
@@ -136,8 +136,8 @@ function B(e) {
       })
     }).catch(() => {}), !0);
     {
-      let e = null == o || null == (n = o.bot) ? void 0 : n.id;
-      return null != e && (a.Z.openPrivateChannel({
+      let e = null == a || null == (n = a.bot) ? void 0 : n.id;
+      return null != e && (o.Z.openPrivateChannel({
         recipientIds: e
       }).then(async e => {
         let {
@@ -186,14 +186,14 @@ function B(e) {
       t = null == B ? void 0 : B.startsWith("/discovery/applications"),
       r = e[t ? 3 : 2],
       i = "search" === r,
-      o = t && "categories" === r && "featured" !== e[4];
+      a = t && "categories" === r && "featured" !== e[4];
     return t => {
-      let r, a, s;
+      let r, o, s;
       if (null == t || t.preventDefault(), i) {
         var l, c, u;
         let e = new URLSearchParams(F);
-        r = null != (l = e.get("q")) ? l : void 0, a = null != (c = e.get("category_id")) ? c : void 0, s = null != (u = e.get("page")) ? u : void 0
-      } else o && (a = e[4]);
+        r = null != (l = e.get("q")) ? l : void 0, o = null != (c = e.get("category_id")) ? c : void 0, s = null != (u = e.get("page")) ? u : void 0
+      } else a && (o = e[4]);
       return n.e("11866").then(n.bind(n, 749681)).then(e => {
         let {
           transitionToGlobalDiscovery: t
@@ -202,7 +202,7 @@ function B(e) {
         } = n(49898);
         t({
           tab: i.APPS,
-          categoryId: null == a || Number.isNaN(a) ? void 0 : Number(a),
+          categoryId: null == o || Number.isNaN(o) ? void 0 : Number(o),
           page: null == s || Number.isNaN(s) ? void 0 : Number(s),
           query: r
         })
@@ -256,5 +256,5 @@ function B(e) {
     t({
       tab: r.SERVERS
     })
-  }), !0) : o || null == (0, A.v)(e) ? void 0 : t => (null == t || t.preventDefault(), N.Z.show(e), !0)
+  }), !0) : a || null == (0, A.v)(e) ? void 0 : t => (null == t || t.preventDefault(), N.Z.show(e), !0)
 }

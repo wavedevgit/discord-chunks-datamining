@@ -6,8 +6,8 @@ n.d(t, {
 }), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685), n(953529);
 var r = n(200651),
   i = n(192379),
-  o = n(772848),
-  a = n(544891),
+  a = n(772848),
+  o = n(544891),
   s = n(481060),
   l = n(355467),
   c = n(821849),
@@ -27,8 +27,8 @@ let v = 1e3;
 function O(e, t, n, r, i) {
   let s = g.ANM.BILLING_STANDALONE_CHECKOUT_PAGE(e, t, n, i),
     l = new URL(f.Z.makeUrl(g.Z5c.BILLING_LOGIN_HANDOFF)),
-    c = (0, o.Z)();
-  return l.searchParams.append("handoff_key", c), l.searchParams.append("redirect_to", s), a.tn.post({
+    c = (0, a.Z)();
+  return l.searchParams.append("handoff_key", c), l.searchParams.append("redirect_to", s), o.tn.post({
     url: g.ANM.HANDOFF,
     body: {
       key: c
@@ -44,8 +44,8 @@ function O(e, t, n, r, i) {
 let I = e => {
     let t, {
         step: n,
-        onPurchaseComplete: o,
-        onHandoffFailure: a
+        onPurchaseComplete: a,
+        onHandoffFailure: o
       } = e,
       {
         selectedPlan: u,
@@ -71,12 +71,12 @@ let I = e => {
     return i.useEffect(() => {
       let e = setTimeout(() => {
         var e;
-        R || (P(!0), (0, l.r5)(A.loadId), O(null != (e = null == u ? void 0 : u.id) ? e : E.Xh.PREMIUM_MONTH_TIER_2, C, A.loadId, a, t))
+        R || (P(!0), (0, l.r5)(A.loadId), O(null != (e = null == u ? void 0 : u.id) ? e : E.Xh.PREMIUM_MONTH_TIER_2, C, A.loadId, o, t))
       }, v);
       return () => clearTimeout(e)
-    }, [u, C, A, a, P, R, t]), i.useEffect(() => {
-      null !== T && (E.YQ.includes(T) && ((0, c.GZ)(T), (0, l.jg)()), f(T)), null !== N && d(N), S === A.loadId && I === m.Y.DONE && o()
-    }, [f, d, I, S, T, N, A, o]), (0, r.jsxs)("div", {
+    }, [u, C, A, o, P, R, t]), i.useEffect(() => {
+      null !== T && (E.YQ.includes(T) && ((0, c.GZ)(T), (0, l.jg)()), f(T)), null !== N && d(N), S === A.loadId && I === m.Y.DONE && a()
+    }, [f, d, I, S, T, N, A, a]), (0, r.jsxs)("div", {
       className: y.body,
       children: [(0, r.jsx)(s.X6q, {
         variant: "heading-xl/bold",

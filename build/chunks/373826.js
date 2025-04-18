@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  o = n(111028),
-  a = n(652853),
+  a = n(111028),
+  o = n(652853),
   s = n(228168),
   l = n(935693);
 
@@ -54,8 +54,8 @@ function _(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -63,8 +63,8 @@ function _(e, t) {
 function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -75,7 +75,7 @@ function h(e) {
   } = e, c = _(e, ["text", "onClick"]);
   let {
     profileType: d
-  } = (0, a.z)(), p = "string" == typeof t ? t.trim() : t;
+  } = (0, o.z)(), p = "string" == typeof t ? t.trim() : t;
   if (null == p || "" === p) return null;
   let h = () => d === s.y0.FULL_SIZE ? (0, r.jsx)(i.Text, f(u({
     color: "text-normal"
@@ -84,7 +84,7 @@ function h(e) {
   })) : (0, r.jsx)(i.Text, f(u({
     color: "text-normal"
   }, c), {
-    children: (0, r.jsx)(o.Z, {
+    children: (0, r.jsx)(a.Z, {
       children: p
     })
   }));

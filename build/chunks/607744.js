@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => A
 }), n(388685), n(997841), n(539854);
 var r, i = n(442837),
-  o = n(570140),
-  a = n(630388),
+  a = n(570140),
+  o = n(630388),
   s = n(709054),
   l = n(271383),
   c = n(430824),
@@ -41,7 +41,7 @@ function g(e) {
   let i = l.ZP.getMember(n.id, r.id);
   if (null != i) {
     var s;
-    if ((0, a.yE)(null != (s = i.flags) ? s : 0, f.q.BYPASSES_VERIFICATION)) return;
+    if ((0, o.yE)(null != (s = i.flags) ? s : 0, f.q.BYPASSES_VERIFICATION)) return;
     let e = new Set;
     for (let t of i.roles) {
       let r = c.Z.getRole(n.id, t);
@@ -60,7 +60,7 @@ function g(e) {
     O = !1;
   r.isPhoneVerified() || r.isStaff() || (b = n.verificationLevel >= d.sFg.LOW && !r.verified, y = n.verificationLevel >= d.sFg.VERY_HIGH, v = n.verificationLevel >= d.sFg.MEDIUM && _ > 0, O = n.verificationLevel >= d.sFg.HIGH && p > 0);
   let I = [];
-  O && I.push(p), v && I.push(_), I.length > 0 && (t = setTimeout(() => o.Z.dispatch({
+  O && I.push(p), v && I.push(_), I.length > 0 && (t = setTimeout(() => a.Z.dispatch({
     type: "GUILD_VERIFICATION_CHECK",
     guildId: e
   }), Math.max(...I))), m[e] = {
@@ -133,7 +133,7 @@ class N extends(r = i.ZP.Store) {
   }
 }
 _(N, "displayName", "GuildVerificationStore");
-let A = new N(o.Z, {
+let A = new N(a.Z, {
   CONNECTION_OPEN: b,
   CONNECTION_CLOSED: y,
   CURRENT_USER_UPDATE: S,

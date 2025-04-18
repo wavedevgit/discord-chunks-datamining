@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  o = n(929204),
-  a = n(388032),
+  a = n(929204),
+  o = n(388032),
   s = n(324823);
 
 function l(e) {
@@ -20,13 +20,13 @@ function l(e) {
     innerClassName: s.premiumButtonInner,
     color: i.zxk.Colors.GREEN,
     size: i.zxk.Sizes.SMALL,
-    onClick: () => (0, o.Z)({
+    onClick: () => (0, a.Z)({
       section: t
     }),
     children: [(0, r.jsx)(i.SrA, {
       size: "md",
       color: "currentColor",
       className: s.premiumButtonNitroWheel
-    }), null != n ? n : a.NW.string(a.t["8Sh5fn"])]
+    }), null != n ? n : o.NW.string(o.t["8Sh5fn"])]
   })
 }

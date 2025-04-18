@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(600164),
-  o = n(112560),
-  a = n(906680);
+  a = n(112560),
+  o = n(906680);
 
 function s(e) {
   let {
@@ -18,11 +18,11 @@ function s(e) {
     size: c
   } = e;
   return (0, r.jsxs)(i.Z, {
-    className: a.root,
+    className: o.root,
     justify: i.Z.Justify.CENTER,
     align: i.Z.Align.CENTER,
     direction: i.Z.Direction.VERTICAL,
-    children: [(0, r.jsx)(o.Z, {
+    children: [(0, r.jsx)(a.Z, {
       header: t,
       description: n,
       errorCodeMessage: s,

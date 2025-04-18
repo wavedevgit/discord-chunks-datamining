@@ -11,8 +11,8 @@ n.d(t, {
 });
 var r = n(692547),
   i = n(481060),
-  o = n(15385),
-  a = n(709586),
+  a = n(15385),
+  o = n(709586),
   s = n(123245),
   l = n(981631);
 n(474936);
@@ -56,23 +56,23 @@ let u = () => ({
   m = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r.Z.unsafe_rawColors.PREMIUM_PERK_PURPLE.css,
       n = 0,
-      o = 0;
+      a = 0;
     switch (e) {
       case l.Eu4.TIER_1:
-        n = 15, o = 100;
+        n = 15, a = 100;
         break;
       case l.Eu4.TIER_2:
-        n = 30, o = 150;
+        n = 30, a = 150;
         break;
       case l.Eu4.TIER_3:
-        n = 60, o = 250
+        n = 60, a = 250
     }
     return {
       color: t,
       icon: i.SlE,
       description: c.NW.formatToPlainString(c.t["12vFYG"], {
         numStickers: n,
-        numEmojis: o
+        numEmojis: a
       })
     }
   },
@@ -82,11 +82,11 @@ let u = () => ({
     description: c.NW.string(c.t["ThRK/v"])
   }),
   E = () => ({
-    icon: o.Z,
+    icon: a.Z,
     description: c.NW.string(c.t.a7LWeH)
   }),
   b = () => ({
-    icon: a.Z,
+    icon: o.Z,
     color: r.Z.unsafe_rawColors.PREMIUM_PERK_PINK.css,
     description: c.NW.string(c.t.QouJkp)
   }),

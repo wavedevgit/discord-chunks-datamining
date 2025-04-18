@@ -1,6 +1,6 @@
 /** Chunk was on web.js **/
 "use strict";
-var r, i, o, a = n(720561),
+var r, i, a, o = n(720561),
   s = n(127849),
   l = n(434431),
   c = n(436207),
@@ -12,7 +12,7 @@ var r, i, o, a = n(720561),
   h = s.TypeError,
   m = s.WeakMap,
   g = function(e) {
-    return o(e) ? i(e) : r(e, {})
+    return a(e) ? i(e) : r(e, {})
   },
   E = function(e) {
     return function(t) {
@@ -21,14 +21,14 @@ var r, i, o, a = n(720561),
       return n
     }
   };
-if (a || d.state) {
+if (o || d.state) {
   var b = d.state || (d.state = new m);
   b.get = b.get, b.has = b.has, b.set = b.set, r = function(e, t) {
     if (b.has(e)) throw new h(p);
     return t.facade = e, b.set(e, t), t
   }, i = function(e) {
     return b.get(e) || {}
-  }, o = function(e) {
+  }, a = function(e) {
     return b.has(e)
   }
 } else {
@@ -38,14 +38,14 @@ if (a || d.state) {
     return t.facade = e, c(e, y, t), t
   }, i = function(e) {
     return u(e, y) ? e[y] : {}
-  }, o = function(e) {
+  }, a = function(e) {
     return u(e, y)
   }
 }
 e.exports = {
   set: r,
   get: i,
-  has: o,
+  has: a,
   enforce: g,
   getterFor: E
 }

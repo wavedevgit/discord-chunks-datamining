@@ -6,8 +6,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(481060),
   l = n(317257),
   c = n(583478),
@@ -45,12 +45,12 @@ let p = () => (0, r.jsx)("img", {
   g = (0, i.forwardRef)(function(e, t) {
     let {
       balance: n,
-      balanceWidgetMode: o = l.b.DEFAULT,
+      balanceWidgetMode: a = l.b.DEFAULT,
       showNotificationBadge: f,
       onClick: g,
       onMouseDown: E,
       className: b
-    } = e, [y, v] = (0, i.useState)(!1), O = (0, i.useMemo)(() => m(o, y), [o, y]), [I, S] = (0, i.useState)(!1), [T, N] = (0, i.useState)(!1), [A, C] = (0, i.useState)(.9 * u.D2), R = null === n;
+    } = e, [y, v] = (0, i.useState)(!1), O = (0, i.useMemo)(() => m(a, y), [a, y]), [I, S] = (0, i.useState)(!1), [T, N] = (0, i.useState)(!1), [A, C] = (0, i.useState)(.9 * u.D2), R = null === n;
     (0, i.useEffect)(() => {
       R && !I && (S(!0), setTimeout(() => {
         N(!0)
@@ -83,11 +83,11 @@ let p = () => (0, r.jsx)("img", {
         onMouseLeave: () => v(!1),
         id: h,
         ref: t,
-        className: a()(d.container, O, b, {
+        className: o()(d.container, O, b, {
           [d.containerLoading]: P
         }),
         children: [(0, r.jsx)("div", {
-          className: a()(d.orbsLottieContainer, P ? d.orbIconloading : void 0),
+          className: o()(d.orbsLottieContainer, P ? d.orbIconloading : void 0),
           children: (0, r.jsx)(u.ZP, _({}, j))
         }), (0, r.jsx)(c.Z, {
           value: w,

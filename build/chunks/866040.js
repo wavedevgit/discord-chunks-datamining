@@ -5,8 +5,8 @@ n.d(t, {
 }), n(415506);
 var r = n(200651),
   i = n(442837),
-  o = n(481060),
-  a = n(239091),
+  a = n(481060),
+  o = n(239091),
   s = n(751688),
   l = n(670188),
   c = n(210887),
@@ -57,7 +57,7 @@ function m(e) {
     participants: t,
     channel: i
   } = e;
-  return (0, r.jsx)(o.Ttm, {
+  return (0, r.jsx)(a.Ttm, {
     className: d.popout,
     children: t.map(e => (0, r.jsx)(s.Z, {
       user: e,
@@ -65,7 +65,7 @@ function m(e) {
       channelId: null == i ? void 0 : i.id,
       nick: u.ZP.getNickname(null == i ? void 0 : i.guild_id, null == i ? void 0 : i.id, e),
       onContextMenu: t => {
-        (0, a.jW)(t, async () => {
+        (0, o.jW)(t, async () => {
           let {
             default: t
           } = await Promise.all([n.e("26881"), n.e("69220"), n.e("79075")]).then(n.bind(n, 881351));
@@ -82,25 +82,25 @@ function g(e) {
   let {
     children: t,
     participants: n,
-    channel: a,
+    channel: o,
     onPopoutClosed: s
   } = e, u = (0, i.e7)([c.Z], () => c.Z.theme), d = 1 === n.length ? n[0] : null;
-  return null != d ? (0, r.jsx)(o.ze6, {
+  return null != d ? (0, r.jsx)(a.ze6, {
     theme: u,
     children: (0, r.jsx)(l.Z, {
       user: d,
-      guildId: null == a ? void 0 : a.guild_id,
-      channelId: null == a ? void 0 : a.id,
+      guildId: null == o ? void 0 : o.guild_id,
+      channelId: null == o ? void 0 : o.id,
       onClosePopout: s,
       children: t
     })
-  }) : (0, r.jsx)(o.ze6, {
+  }) : (0, r.jsx)(a.ze6, {
     theme: u,
-    children: (0, r.jsx)(o.yRy, {
+    children: (0, r.jsx)(a.yRy, {
       renderPopout: () => {
         if (null != n) return (0, r.jsx)(m, {
           participants: n,
-          channel: a
+          channel: o
         });
         throw Error("One of participant or participants is required")
       },

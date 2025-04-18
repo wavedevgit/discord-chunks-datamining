@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(392711),
-  o = n(481060),
-  a = n(111028),
+  a = n(481060),
+  o = n(111028),
   s = n(5192),
   l = n(496354);
 
@@ -123,18 +123,18 @@ function g(e) {
         style: e,
         children: c && i === g ? (0, r.jsx)("div", {
           className: l.overflowCount,
-          children: (0, r.jsx)(o.Text, {
+          children: (0, r.jsx)(a.Text, {
             variant: "text-xxs/semibold",
             lineClamp: 1,
-            children: (0, r.jsx)(a.Z, {
+            children: (0, r.jsx)(o.Z, {
               children: d > 99 ? ">99" : "+".concat(d)
             })
           })
-        }) : (0, r.jsx)(o.ua7, {
+        }) : (0, r.jsx)(a.ua7, {
           text: s.ZP.getName(n.guild_id, n.id, _),
           children: e => (0, r.jsx)("img", f(u({}, e), {
             className: l.avatar,
-            src: _.getAvatarURL(n.guild_id, (0, o.pxk)(o.EFr.SIZE_80)),
+            src: _.getAvatarURL(n.guild_id, (0, a.pxk)(a.EFr.SIZE_80)),
             alt: ""
           }))
         })

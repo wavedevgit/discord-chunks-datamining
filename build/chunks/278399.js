@@ -7,8 +7,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(317261),
-  a = n(823379),
+  a = n(317261),
+  o = n(823379),
   s = n(379357),
   l = n(442550),
   c = n(561308),
@@ -16,18 +16,18 @@ var r = n(200651),
   d = n(443487),
   f = n(111998);
 let _ = [u.An],
-  p = [o._.WEEK],
+  p = [a._.WEEK],
   h = e => {
     let {
       entry: t,
       channel: n,
       selected: i
     } = e, {
-      largeImage: o
+      largeImage: a
     } = (0, s.rv)({
       entry: t
     }), h = (0, c.Nq)(t);
-    return null != h && (0, a.Hi)(h, p) ? (0, r.jsxs)(d.Zb, {
+    return null != h && (0, o.Hi)(h, p) ? (0, r.jsxs)(d.Zb, {
       selected: i,
       children: [(0, r.jsxs)(d.e$, {
         children: [(0, r.jsx)(d.F9, {
@@ -43,7 +43,7 @@ let _ = [u.An],
           }, n))
         })]
       }), (0, r.jsx)(l.f, {
-        src: null == o ? void 0 : o.src,
+        src: null == a ? void 0 : a.src,
         size: 48,
         className: f.thumbnail
       })]

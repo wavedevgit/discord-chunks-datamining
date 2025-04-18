@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(665443),
-  a = n.n(o),
+  a = n(665443),
+  o = n.n(a),
   s = n(970838),
   l = n(376398);
 
@@ -36,8 +36,8 @@ function d(e, t) {
   if (null == e) return {};
   var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -45,8 +45,8 @@ function d(e, t) {
 function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -54,7 +54,7 @@ function _(e) {
   var {
     streamId: t,
     paused: n = !1,
-    onReady: o,
+    onReady: a,
     onResize: c,
     className: f
   } = e, _ = d(e, ["streamId", "paused", "onReady", "onResize", "className"]);
@@ -78,11 +78,11 @@ function _(e) {
     var e, t, n, r;
     let {
       width: i,
-      height: o
-    } = h.current, a = null != (n = null == (e = p.current) ? void 0 : e.videoWidth) ? n : 0, s = null != (r = null == (t = p.current) ? void 0 : t.videoHeight) ? r : 0;
-    if (i !== a || o !== s) {
+      height: a
+    } = h.current, o = null != (n = null == (e = p.current) ? void 0 : e.videoWidth) ? n : 0, s = null != (r = null == (t = p.current) ? void 0 : t.videoHeight) ? r : 0;
+    if (i !== o || a !== s) {
       let e = {
-        width: a,
+        width: o,
         height: s
       };
       null == c || c(e), h.current = e
@@ -93,13 +93,13 @@ function _(e) {
     if (null != e) return e.addEventListener("resize", m), () => e.removeEventListener("resize", m)
   }, [m]);
   let g = i.useCallback(() => {
-      null == o || o()
-    }, [o]),
+      null == a || a()
+    }, [a]),
     E = i.useCallback(e => {
       n || e.currentTarget.play()
     }, [n]);
   return (0, r.jsx)("video", u({
-    className: a()("media-engine-video", f),
+    className: o()("media-engine-video", f),
     ref: p,
     autoPlay: !0,
     onPause: E,

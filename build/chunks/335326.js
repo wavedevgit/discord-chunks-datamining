@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(379357),
-  a = n(442550),
+  a = n(379357),
+  o = n(442550),
   s = n(297781),
   l = n(443487),
   c = n(111998);
@@ -19,7 +19,7 @@ let u = [s.Yl, s.Rg],
       selected: i
     } = e, {
       largeImage: d
-    } = (0, o.rv)({
+    } = (0, a.rv)({
       entry: t
     });
     return (0, r.jsxs)(l.Zb, {
@@ -37,7 +37,7 @@ let u = [s.Yl, s.Rg],
             entry: t
           }, n))
         })]
-      }), (0, r.jsx)(a.f, {
+      }), (0, r.jsx)(o.f, {
         src: null == d ? void 0 : d.src,
         size: 48,
         className: c.thumbnail,

@@ -5,9 +5,9 @@ n.d(t, {
 });
 var r = n(192379),
   i = n(181034),
-  o = n(668193);
+  a = n(668193);
 
-function a(e, t) {
+function o(e, t) {
   return d(e) || u(e, t) || l(e, t) || s()
 }
 
@@ -33,21 +33,21 @@ function c(e, t) {
 function u(e, t) {
   var n, r, i = null == e ? null : "undefined" != typeof Symbol && e[Symbol.iterator] || e["@@iterator"];
   if (null != i) {
-    var o = [],
-      a = !0,
+    var a = [],
+      o = !0,
       s = !1;
     try {
-      for (i = i.call(e); !(a = (n = i.next()).done) && (o.push(n.value), !t || o.length !== t); a = !0);
+      for (i = i.call(e); !(o = (n = i.next()).done) && (a.push(n.value), !t || a.length !== t); o = !0);
     } catch (e) {
       s = !0, r = e
     } finally {
       try {
-        a || null == i.return || i.return()
+        o || null == i.return || i.return()
       } finally {
         if (s) throw r
       }
     }
-    return o
+    return a
   }
 }
 
@@ -57,7 +57,7 @@ function d(e) {
 
 function f(e) {
   var t = (0, i.N)().getMonitor(),
-    n = a((0, o.r)(t, e), 2),
+    n = o((0, a.r)(t, e), 2),
     s = n[0],
     l = n[1];
   return (0, r.useEffect)(function() {

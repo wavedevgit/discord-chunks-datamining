@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  o = n.n(i),
-  a = n(297700),
+  a = n.n(i),
+  o = n(297700),
   s = n(471885),
   l = n(981631),
   c = n(596350);
@@ -31,13 +31,13 @@ function f(e) {
     iconClassName: i,
     size: l
   } = e;
-  return (0, r.jsx)(a.Z, {
-    className: o()(n, u[t]),
+  return (0, r.jsx)(o.Z, {
+    className: a()(n, u[t]),
     size: l,
     children: (0, r.jsx)(s.Z, {
       tier: t,
       color: "currentColor",
-      className: o()(i, c.boostedGuildIconGem, d[t])
+      className: a()(i, c.boostedGuildIconGem, d[t])
     })
   })
 }

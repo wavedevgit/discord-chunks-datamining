@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(871465);
 let i = {
@@ -72,6 +72,6 @@ let i = {
   }
 };
 
-function o(e) {
+function a(e) {
   return i[e]
 }

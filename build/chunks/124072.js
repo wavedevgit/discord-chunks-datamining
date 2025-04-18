@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(866442),
   l = n(481060),
   c = n(779699),
@@ -55,8 +55,8 @@ function h(e, t) {
   if (null == e) return {};
   var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -64,15 +64,15 @@ function h(e, t) {
 function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let g = e => {
   var {
     children: t,
     className: n,
-    color: o,
+    color: a,
     roleColors: d,
     iconType: _,
     onMouseEnter: m,
@@ -86,12 +86,12 @@ let g = e => {
   }, [y, m]), S = i.useCallback(e => {
     y(!1), null == g || g(e)
   }, [y, g]), T = {};
-  return null != o && (T = {
-    color: (0, s.Rf)(o),
-    backgroundColor: b ? (0, s.br)(o, .3) : (0, s.br)(o, .1)
+  return null != a && (T = {
+    color: (0, s.Rf)(a),
+    backgroundColor: b ? (0, s.br)(a, .3) : (0, s.br)(a, .1)
   }), (0, r.jsx)(l.P3F, p(f({}, E), {
     tag: "span",
-    className: a()(n, {
+    className: o()(n, {
       [u.wrapper]: !0,
       interactive: E.onClick
     }),

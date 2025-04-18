@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  o = n.n(i),
-  a = n(481060),
+  a = n.n(i),
+  o = n(481060),
   s = n(400377),
   l = n(717371);
 
@@ -73,12 +73,12 @@ let _ = Object.freeze({
       title: E,
       uppercase: b
     } = e;
-    return (0, r.jsx)(a.H, {
+    return (0, r.jsx)(o.H, {
       role: null != h ? "button" : void 0,
       onClick: h,
       onContextMenu: m,
       id: t,
-      className: o()(i, {
+      className: a()(i, {
         [s.base]: !0,
         [l]: !0,
         [s.selectable]: c,

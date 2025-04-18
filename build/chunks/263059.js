@@ -5,8 +5,8 @@ n.d(t, {
 }), n(35282);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(481060),
   l = n(503438),
   c = n(100527),
@@ -60,7 +60,7 @@ function M(e) {
   var t;
   let {
     user: n,
-    currentUser: o,
+    currentUser: a,
     activity: L,
     profileGuildId: M,
     className: k,
@@ -92,22 +92,22 @@ function M(e) {
   if (!(0, l.Z)(L)) return null;
   let q = () => {
       var e, t;
-      let o = null != (t = null == (e = L.state) ? void 0 : e.split(";")) ? t : [];
-      return 0 === o.length ? null : null == L.sync_id ? (0, r.jsx)(A.Z, {
+      let a = null != (t = null == (e = L.state) ? void 0 : e.split(";")) ? t : [];
+      return 0 === a.length ? null : null == L.sync_id ? (0, r.jsx)(A.Z, {
         variant: "text-xs/normal",
-        text: o.join(", ")
+        text: a.join(", ")
       }) : (0, r.jsx)(A.Z, {
         variant: "text-xs/normal",
-        text: o.map((e, t) => (0, r.jsxs)(i.Fragment, {
+        text: a.map((e, t) => (0, r.jsxs)(i.Fragment, {
           children: [(0, r.jsx)(s.P3F, {
-            className: a()(D.clickableText, D.inline),
+            className: o()(D.clickableText, D.inline),
             onClick: e => {
               e.stopPropagation(), K({
                 action: "OPEN_SPOTIFY_ARTIST"
               }), (0, p.d$)(L, n.id, t)
             },
             children: e
-          }), t < o.length - 1 ? ", " : ""]
+          }), t < a.length - 1 ? ", " : ""]
         }, t))
       })
     },
@@ -125,8 +125,8 @@ function M(e) {
         end: n
       })
     },
-    X = () => n.id === o.id ? null : (0, r.jsx)("div", {
-      className: a()(D.actions, B),
+    X = () => n.id === a.id ? null : (0, r.jsx)("div", {
+      className: o()(D.actions, B),
       children: (0, r.jsx)(R.Z, {
         user: n,
         activity: L,
@@ -171,7 +171,7 @@ function M(e) {
           }),
           children: (0, r.jsxs)(T.Z, {
             ref: z,
-            className: a()(k, {
+            className: o()(k, {
               [D.hoisted]: $
             }),
             onAction: K,
@@ -179,7 +179,7 @@ function M(e) {
             children: [(0, r.jsx)(N.Z, x({}, H)), (0, r.jsx)("div", {
               className: D.body,
               children: (0, r.jsxs)("div", {
-                className: a()(D.content, B),
+                className: o()(D.content, B),
                 children: [(0, r.jsx)(f.E, {
                   image: W,
                   size: f.J.SIZE_60,

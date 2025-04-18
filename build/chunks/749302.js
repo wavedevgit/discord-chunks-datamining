@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(539854);
 var r = n(200651),
   i = n(192379),
-  o = n(442837),
-  a = n(481060),
+  a = n(442837),
+  o = n(481060),
   s = n(835473),
   l = n(925329),
   c = n(699516),
@@ -51,7 +51,7 @@ function m(e) {
   } = e, {
     id: E,
     bot: b
-  } = n, y = (0, o.e7)([u.default], () => {
+  } = n, y = (0, a.e7)([u.default], () => {
     var e;
     return (null == (e = u.default.getCurrentUser()) ? void 0 : e.id) === E
   }) || b, v = y ? _ : f, [O, I] = i.useState(!1), S = i.useCallback(() => I(!0), []), T = i.useMemo(() => v.map(e => {
@@ -59,13 +59,13 @@ function m(e) {
       applicationId: t
     } = e;
     return t
-  }), [v]), N = (0, o.e7)([c.Z], () => c.Z.getRelationshipType(E), [E]), A = p(T, O || 1 === v.length);
+  }), [v]), N = (0, a.e7)([c.Z], () => c.Z.getRelationshipType(E), [E]), A = p(T, O || 1 === v.length);
   if (y || 0 === v.length || N === d.OGo.FRIEND) return null;
   if (1 === v.length) {
     let {
       applicationId: e
     } = v[0], n = A.get(e);
-    return null == n ? null : (0, r.jsx)(a.sNh, {
+    return null == n ? null : (0, r.jsx)(o.sNh, {
       color: g,
       id: t,
       label: s,
@@ -81,7 +81,7 @@ function m(e) {
     let {
       applicationId: t
     } = e, n = A.get(t);
-    null != n && C.push((0, r.jsx)(a.sNh, {
+    null != n && C.push((0, r.jsx)(o.sNh, {
       id: t,
       label: n.name,
       icon: (0, r.jsx)(l.Z, {
@@ -90,7 +90,7 @@ function m(e) {
       }),
       action: () => m(n)
     }, t))
-  }), 0 === C.length) ? null : (0, r.jsx)(a.sNh, {
+  }), 0 === C.length) ? null : (0, r.jsx)(o.sNh, {
     color: g,
     id: t,
     label: s,

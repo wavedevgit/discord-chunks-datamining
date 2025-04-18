@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => p
 });
 var r, i = n(200651),
-  o = n(192379),
-  a = n(120356),
-  s = n.n(a),
+  a = n(192379),
+  o = n(120356),
+  s = n.n(o),
   l = n(481060),
   c = n(928086);
 
@@ -30,7 +30,7 @@ let d = {
     [d.DOWN]: c.down,
     [d.LEFT]: c.left
   };
-class _ extends(r = o.PureComponent) {
+class _ extends(r = a.PureComponent) {
   render() {
     let {
       direction: e,

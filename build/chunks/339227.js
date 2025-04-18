@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(415506), n(35282), n(704826), n(539854), n(49124);
 var r = n(512722),
   i = n.n(r),
-  o = n(31775),
-  a = n.n(o),
+  a = n(31775),
+  o = n.n(a),
   s = n(477660),
   l = n(25209),
   c = n(710845),
@@ -301,8 +301,8 @@ let R = {
     maxAge: +p.Z.Millis.MINUTE,
     updateAgeOnGet: !0
   },
-  k = new(a())(M),
-  j = new(a())(M);
+  k = new(o())(M),
+  j = new(o())(M);
 
 function U(e, t, n) {
   let r = [],
@@ -312,9 +312,9 @@ function U(e, t, n) {
       guildId: t,
       isSlate: !0
     },
-    o = n ? x : L,
-    a = n ? j : k,
-    s = a.get(e);
+    a = n ? x : L,
+    o = n ? j : k,
+    s = o.get(e);
   if (null != s) return s;
   let l = e.replace(/\r\n/g, " \n").replace(/[\r\f]/g, " ").replace(/\t/g, " ") + "\n\n",
     c = {
@@ -323,11 +323,11 @@ function U(e, t, n) {
         0: ""
       },
       type: "paragraph",
-      content: o(l, !0, i)
+      content: a(l, !0, i)
     };
   F(r, l, c, 0, []);
   let u = B(r);
-  return a.set(e, u), u
+  return o.set(e, u), u
 }
 
 function G(e, t) {
@@ -335,27 +335,27 @@ function G(e, t) {
     r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
     i = g.r(e);
   if (i.push(e.length), 1 === i.length && n) return [];
-  let o = 0,
-    a = n,
+  let a = 0,
+    o = n,
     s = [];
   for (let n of i) {
-    if (a) s.push({
-      text: e.substring(o, n),
-      start: o,
+    if (o) s.push({
+      text: e.substring(a, n),
+      start: a,
       attributes: ["codeBlockText"],
       data: void 0
     });
     else {
-      let a = n === i[i.length - 2] ? e.substring(n + 3) : "";
-      n += 3 + (null != a.match(g.Q) ? a : "").length;
-      let l = e.substring(o, n);
+      let o = n === i[i.length - 2] ? e.substring(n + 3) : "";
+      n += 3 + (null != o.match(g.Q) ? o : "").length;
+      let l = e.substring(a, n);
       "" !== l && U(l, t, r).forEach(e => {
         s.push(v(b({}, e), {
-          start: e.start + o
+          start: e.start + a
         }))
       })
     }
-    a = !a, o = n
+    o = !o, a = n
   }
   return s
 }
@@ -366,15 +366,15 @@ function B(e) {
   for (let n = 1; n < e.length; n++) {
     let r = t[t.length - 1],
       i = r.start + r.text.length,
-      o = e[n];
-    o.start === i && null == r.data && null == o.data && r.attributes.join("-") === o.attributes.join("-") ? r.text += o.text : t.push(o)
+      a = e[n];
+    a.start === i && null == r.data && null == a.data && r.attributes.join("-") === a.attributes.join("-") ? r.text += a.text : t.push(a)
   }
   return t
 }
 
-function F(e, t, n, r, o) {
+function F(e, t, n, r, a) {
   let {
-    content: a,
+    content: o,
     type: s,
     originalMatch: l
   } = n;
@@ -384,7 +384,7 @@ function F(e, t, n, r, o) {
     case "paragraph":
     case "text":
     case "emoticon":
-      return Z(e, t, a || "", r, o);
+      return Z(e, t, o || "", r, a);
     case "emoji":
     case "customEmoji": {
       let i = t.substring(r);
@@ -417,17 +417,17 @@ function F(e, t, n, r, o) {
     case "silentPrefix":
     case "channel": {
       let {
-        text: o,
-        id: a
+        text: a,
+        id: o
       } = n;
-      if (null != o) return i()(o === l[0], "Slate: text mentions must exactly match the regex match"), W({
+      if (null != a) return i()(a === l[0], "Slate: text mentions must exactly match the regex match"), W({
         result: e,
         sourceText: t,
-        text: o,
+        text: a,
         originalStart: r,
         attributes: ["textMention"],
         data: {
-          text: o
+          text: a
         }
       });
       return W({
@@ -437,7 +437,7 @@ function F(e, t, n, r, o) {
         originalStart: r,
         attributes: [s],
         data: {
-          id: a
+          id: o
         }
       })
     }
@@ -469,7 +469,7 @@ function F(e, t, n, r, o) {
         attributes: [s],
         data: n
       });
-      return Z(e, t, l[0], r, o);
+      return Z(e, t, l[0], r, a);
     case "em":
     case "autolink":
     case "mailto":
@@ -490,7 +490,7 @@ function F(e, t, n, r, o) {
         before: n,
         after: i
       } = V(t, s, r, l);
-      return r = H(e, t, n, r, "syntaxBefore"), o.push(s), r = Z(e, t, null != a ? a : "", r, o), o.pop(), r = H(e, t, i, r, "syntaxAfter"), Y(t, r)
+      return r = H(e, t, n, r, "syntaxBefore"), a.push(s), r = Z(e, t, null != o ? o : "", r, a), a.pop(), r = H(e, t, i, r, "syntaxAfter"), Y(t, r)
     }
     default:
       throw Error("Slate: Unknown rule type: ".concat(s))
@@ -530,15 +530,15 @@ function Z(e, t, n, r, i) {
 
 function H(e, t, n, r, i) {
   if (n.length > 0) {
-    let o = t.indexOf(n, r);
-    if (-1 === o) return K('Slate: Unable to find syntax characters "'.concat(n, '" at position ').concat(r), n, r);
-    let a = t.substring(r, o + n.length);
+    let a = t.indexOf(n, r);
+    if (-1 === a) return K('Slate: Unable to find syntax characters "'.concat(n, '" at position ').concat(r), n, r);
+    let o = t.substring(r, a + n.length);
     e.push({
-      text: a,
+      text: o,
       attributes: [i],
       start: r,
       data: null
-    }), r = o + n.length
+    }), r = a + n.length
   }
   return r
 }
@@ -549,8 +549,8 @@ function W(e) {
     sourceText: n,
     text: r,
     originalStart: i,
-    attributes: o,
-    data: a
+    attributes: a,
+    data: o
   } = e, s = Y(n, i);
   for (;
     "\n" === r.charAt(0) || " " === r.charAt(0);) r = r.substring(1);
@@ -560,9 +560,9 @@ function W(e) {
     u = n.substring(i, c);
   return t.push({
     text: u,
-    attributes: o.slice(),
+    attributes: a.slice(),
     start: i,
-    data: a
+    data: o
   }), c
 }
 

@@ -10,8 +10,8 @@ function i(e) {
     channelId: t,
     applicationId: n,
     intent: i,
-    inviterUserId: o,
-    analyticsLocations: a,
+    inviterUserId: a,
+    analyticsLocations: o,
     commandOrigin: s
   } = e;
   r.Z.dispatch({
@@ -19,8 +19,8 @@ function i(e) {
     channelId: t,
     applicationId: n,
     intent: i,
-    inviterUserId: o,
-    analyticsLocations: a,
+    inviterUserId: a,
+    analyticsLocations: o,
     commandOrigin: s
   })
 }

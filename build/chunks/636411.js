@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  o = n.n(i),
-  a = n(442837),
+  a = n.n(i),
+  o = n(442837),
   s = n(481060),
   l = n(607070),
   c = n(70097),
@@ -26,7 +26,7 @@ function y(e) {
   var t, n;
   let {
     onDismiss: i
-  } = e, y = (0, a.e7)([l.Z], () => l.Z.useReducedMotion), v = m.NW.string(m.t["eikz4+"]), O = (0, d.N)(), I = (0, u.Ng)(), S = (null == O ? void 0 : O.subscription_trial) != null || null != I, T = {
+  } = e, y = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), v = m.NW.string(m.t["eikz4+"]), O = (0, d.N)(), I = (0, u.Ng)(), S = (null == O ? void 0 : O.subscription_trial) != null || null != I, T = {
     object: p.qAy.BUTTON_CTA,
     section: p.jXE.SUPER_REACTION_PICKER
   };
@@ -45,7 +45,7 @@ function y(e) {
       children: [(0, r.jsx)("div", {
         className: g.contentFill,
         children: (0, r.jsx)(c.Z, {
-          className: o()(g.banner, {
+          className: a()(g.banner, {
             [g.hasTrialOffer]: S
           }),
           src: E,

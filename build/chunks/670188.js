@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  o = n(442837),
-  a = n(481060),
+  a = n(442837),
+  o = n(481060),
   s = n(493773),
   l = n(237617),
   c = n(594174),
@@ -60,8 +60,8 @@ function y(e, t) {
   if (null == e) return {};
   var n, r, i = v(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -69,11 +69,11 @@ function y(e, t) {
 function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let O = (0, a.pxk)(a.EFr.SIZE_80),
+let O = (0, o.pxk)(o.EFr.SIZE_80),
   I = {
     onMouseDown: p.dG,
     onClick: p.dG,
@@ -90,7 +90,7 @@ function T(e) {
   var {
     children: t,
     user: n,
-    currentUser: o,
+    currentUser: a,
     guildId: s,
     channelId: l,
     messageId: c,
@@ -110,13 +110,13 @@ function T(e) {
   let P = i.useRef(void 0),
     w = i.useCallback(() => null != v ? v() : (0, d.Z)(n.id, null != E ? E : n.getAvatarURL(s, O), {
       withMutualGuilds: n.id != n.id,
-      withMutualFriends: !n.bot && n.id !== o.id,
+      withMutualFriends: !n.bot && n.id !== a.id,
       guildId: s,
       channelId: l
-    }), [v, o, n, E, s, l]),
+    }), [v, a, n, E, s, l]),
     D = i.useCallback(e => (null == P.current && (P.current = Date.now()), null != I) ? I(e) : (0, r.jsx)(f.Z, b(g({}, e), {
       user: n,
-      currentUser: o,
+      currentUser: a,
       guildId: s,
       channelId: l,
       roleId: u,
@@ -128,8 +128,8 @@ function T(e) {
       closePopout: () => {
         e.closePopout(), null == N || N()
       }
-    })), [n, o, I, s, l, u, c, p, h, m, N]);
-  return (0, r.jsx)(a.yRy, b(g({
+    })), [n, a, I, s, l, u, c, p, h, m, N]);
+  return (0, r.jsx)(o.yRy, b(g({
     popoutKey: _.Tg,
     shouldShow: A,
     preload: C ? w : void 0,
@@ -149,7 +149,7 @@ function N(e) {
   var {
     children: t,
     user: n,
-    currentUser: o,
+    currentUser: a,
     guildId: c,
     channelId: p,
     messageId: m,
@@ -180,14 +180,14 @@ function N(e) {
     }, []);
   (0, s.zq)(W);
   let Y = i.useCallback(() => null != N ? N() : (0, d.Z)(n.id, null != T ? T : n.getAvatarURL(c, O), {
-      withMutualGuilds: n.id !== o.id,
-      withMutualFriends: !n.bot && n.id !== o.id,
+      withMutualGuilds: n.id !== a.id,
+      withMutualFriends: !n.bot && n.id !== a.id,
       guildId: c,
       channelId: p
-    }), [N, n, o, T, c, p]),
-    K = i.useCallback(e => (null == x.current && (x.current = Date.now()), j) ? (0, r.jsx)(a.xxz, {}) : null != A ? A(e) : (0, r.jsx)(f.Z, b(g({}, e), {
+    }), [N, n, a, T, c, p]),
+    K = i.useCallback(e => (null == x.current && (x.current = Date.now()), j) ? (0, r.jsx)(o.xxz, {}) : null != A ? A(e) : (0, r.jsx)(f.Z, b(g({}, e), {
       user: n,
-      currentUser: o,
+      currentUser: a,
       guildId: c,
       channelId: p,
       roleId: E,
@@ -199,7 +199,7 @@ function N(e) {
       closePopout: () => {
         e.closePopout(), null == P || P()
       }
-    })), [n, o, A, c, p, E, m, v, I, S, P, j]),
+    })), [n, a, A, c, p, E, m, v, I, S, P, j]),
     z = i.useCallback(() => {
       W(), G.current = !0, D && (B.current = setTimeout(async () => {
         if (G.current) try {
@@ -208,7 +208,7 @@ function N(e) {
           U(!1)
         }
       }, _.a6)), F.current = setTimeout(() => {
-        (0, a.$sL)() || H.current || G.current && (null == x.current && (x.current = Date.now()), k(!0))
+        (0, o.$sL)() || H.current || G.current && (null == x.current && (x.current = Date.now()), k(!0))
       }, _.JX)
     }, [W, D, Y, H]),
     q = i.useCallback(() => {
@@ -220,7 +220,7 @@ function N(e) {
     className: h.hoverable,
     onMouseEnter: z,
     onMouseLeave: q,
-    children: (0, r.jsx)(a.yRy, b(g({
+    children: (0, r.jsx)(o.yRy, b(g({
       popoutKey: _.Tg,
       shouldShow: !0 === w || M,
       preload: !D || j || M ? void 0 : Y,
@@ -242,11 +242,11 @@ function A(e) {
     children: t,
     userId: n,
     user: i,
-    shouldShowOnHover: a = !1
+    shouldShowOnHover: o = !1
   } = e, s = y(e, ["children", "userId", "user", "shouldShowOnHover"]);
-  let l = (0, o.e7)([c.default], () => c.default.getCurrentUser()),
-    u = (0, o.e7)([c.default], () => null != i ? i : c.default.getUser(n));
-  return null == u || null == l ? t(I, S) : a ? (0, r.jsx)(N, b(g({}, s), {
+  let l = (0, a.e7)([c.default], () => c.default.getCurrentUser()),
+    u = (0, a.e7)([c.default], () => null != i ? i : c.default.getUser(n));
+  return null == u || null == l ? t(I, S) : o ? (0, r.jsx)(N, b(g({}, s), {
     user: u,
     currentUser: l,
     children: t

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(481060),
   l = n(906732),
   c = n(785717),
@@ -59,7 +59,7 @@ let b = 57.75,
     let {
       user: t,
       onClose: n,
-      bio: o,
+      bio: a,
       hidePersonalInformation: h,
       viewFullBioDisabled: g = !1
     } = e, {
@@ -79,13 +79,13 @@ let b = 57.75,
     }, P = e => {
       null == O || (null == O ? void 0 : O.contains(e.relatedTarget)) || (O.scrollTop = 0)
     };
-    return h || null == o || "" === o ? null : (0, r.jsxs)("div", {
+    return h || null == a || "" === a ? null : (0, r.jsxs)("div", {
       children: [(0, r.jsx)("div", {
         ref: C,
-        className: a()(p.descriptionClamp, N && p.maxBioHeight),
+        className: o()(p.descriptionClamp, N && p.maxBioHeight),
         onBlur: P,
         children: (0, r.jsx)(u.Z, {
-          userBio: o,
+          userBio: a,
           setLineClamp: !1,
           textColor: "header-primary"
         })
@@ -93,7 +93,7 @@ let b = 57.75,
         look: s.zxk.Looks.BLANK,
         size: s.zxk.Sizes.NONE,
         className: p.viewFullBio,
-        color: a()(p.viewFullBioColor, g && p.viewFullBioDisabled),
+        color: o()(p.viewFullBioColor, g && p.viewFullBioDisabled),
         onClick: R,
         children: (0, r.jsx)(s.Text, {
           variant: "text-xs/normal",

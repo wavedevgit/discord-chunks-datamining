@@ -5,22 +5,22 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(247390);
 let l = i.forwardRef(function(e, t) {
   let {
     children: n,
     className: i,
-    style: o,
+    style: a,
     noBorder: l = !1,
     participantUserId: c
   } = e;
   return (0, r.jsx)("div", {
-    className: a()(i, s.tile, {
+    className: o()(i, s.tile, {
       [s.noBorder]: l
     }),
-    style: o,
+    style: a,
     ref: t,
     "data-selenium-video-tile": c,
     children: n

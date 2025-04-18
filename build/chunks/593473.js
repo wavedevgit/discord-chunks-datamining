@@ -2,9 +2,9 @@
 "use strict";
 var r = n(492476),
   i = n(381538),
-  o = n(26018);
+  a = n(26018);
 
-function a(e) {
+function o(e) {
   switch (e.arrayFormat) {
     case "index":
       return function(t, n, r) {
@@ -77,14 +77,14 @@ t.extract = function(e) {
   return "string" == typeof e && (e = e.trim().replace(/^(\?|#|&)/, "")) ? (e.split("&").forEach(function(e) {
     var t = e.replace(/\+/g, " ").split("="),
       i = t.shift(),
-      a = t.length > 0 ? t.join("=") : void 0;
-    a = void 0 === a ? null : o(a), n(o(i), a, r)
+      o = t.length > 0 ? t.join("=") : void 0;
+    o = void 0 === o ? null : a(o), n(a(i), o, r)
   }), Object.keys(r).sort().reduce(function(e, t) {
     var n = r[t];
     return n && "object" == typeof n && !Array.isArray(n) ? e[t] = c(n) : e[t] = n, e
   }, Object.create(null))) : r
 }, t.stringify = function(e, t) {
-  var n = a(t = i({
+  var n = o(t = i({
     encode: !0,
     strict: !0,
     arrayFormat: "none"
@@ -94,10 +94,10 @@ t.extract = function(e) {
     if (void 0 === i) return "";
     if (null === i) return l(r, t);
     if (Array.isArray(i)) {
-      var o = [];
+      var a = [];
       return i.slice().forEach(function(e) {
-        void 0 !== e && o.push(n(r, e, o.length))
-      }), o.join("&")
+        void 0 !== e && a.push(n(r, e, a.length))
+      }), a.join("&")
     }
     return l(r, t) + "=" + l(i, t)
   }).filter(function(e) {

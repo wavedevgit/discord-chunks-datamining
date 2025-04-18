@@ -5,9 +5,9 @@ n.d(t, {
   u$: () => g
 }), n(388685);
 var r, i = n(200651),
-  o = n(192379),
-  a = n(392711),
-  s = n.n(a),
+  a = n(192379),
+  o = n(392711),
+  s = n.n(o),
   l = n(748780),
   c = n(692547),
   u = n(227408);
@@ -22,7 +22,7 @@ function d(e, t, n) {
 }
 let f = 12,
   _ = [c.Z.unsafe_rawColors.PREMIUM_TIER_1_PURPLE.css, c.Z.unsafe_rawColors.PREMIUM_TIER_1_BLUE.css, "#929AFA"];
-class p extends o.PureComponent {
+class p extends a.PureComponent {
   render() {
     let {
       props: {
@@ -46,7 +46,7 @@ class p extends o.PureComponent {
     })
   }
 }
-class h extends(r = o.Component) {
+class h extends(r = a.Component) {
   componentDidMount() {
     this.animateSlide()
   }
@@ -125,7 +125,7 @@ let m = e => {
     }, t))
   })
 };
-class g extends o.PureComponent {
+class g extends a.PureComponent {
   render() {
     let {
       columns: e,

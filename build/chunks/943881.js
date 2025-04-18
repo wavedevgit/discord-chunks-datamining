@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => d
 });
 var r, i = n(442837),
-  o = n(570140),
-  a = n(411198);
+  a = n(570140),
+  o = n(411198);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -22,7 +22,7 @@ function c(e) {
     invite: t
   } = e, n = t.guild;
   if (null == n) return !1;
-  l[n.id] = (0, a.Qs)(n)
+  l[n.id] = (0, o.Qs)(n)
 }
 class u extends(r = i.ZP.Store) {
   getGuild(e) {
@@ -30,6 +30,6 @@ class u extends(r = i.ZP.Store) {
   }
 }
 s(u, "displayName", "AuthInviteStore");
-let d = new u(o.Z, {
+let d = new u(a.Z, {
   AUTH_INVITE_UPDATE: c
 })

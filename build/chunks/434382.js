@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(152057),
   i = n(570140),
-  o = n(147913),
-  a = n(38618),
+  a = n(147913),
+  o = n(38618),
   s = n(517100),
   l = n(914010),
   c = n(451478),
@@ -42,7 +42,7 @@ function O(e, t) {
   if (!(0, f.NM)({
       guildId: e,
       location: "GuildLeaderboardManager"
-    }) || !c.Z.isFocused() || !a.Z.isConnected()) return !1;
+    }) || !c.Z.isFocused() || !o.Z.isConnected()) return !1;
   let i = s.Z.getIdleSince();
   return !(null != i && Date.now() - i > g) && !0
 }
@@ -71,17 +71,17 @@ async function T(e) {
     force: r = !1
   } = e;
   if (!(O(t, n) || r)) return;
-  let o = v(t, n);
-  if (!b.has(o)) try {
-    b.add(o);
+  let a = v(t, n);
+  if (!b.has(a)) try {
+    b.add(a);
     let e = await (0, u.pV)({
         guildId: t,
         leaderboardId: n,
         intervalOffset: 0,
         force: r
       }),
-      a = d.Z.get(t, n);
-    if ((null == a ? void 0 : a.interval_start) !== e.leaderboard.interval_start) {
+      o = d.Z.get(t, n);
+    if ((null == o ? void 0 : o.interval_start) !== e.leaderboard.interval_start) {
       let e = await (0, u.pV)({
         guildId: t,
         leaderboardId: n,
@@ -98,13 +98,13 @@ async function T(e) {
       type: "SET_GUILD_LEADERBOARD",
       leaderboardResponse: e,
       intervalOffset: 0
-    }), y.delete(o), b.delete(o), S()
+    }), y.delete(a), b.delete(a), S()
   } catch (i) {
-    var a;
-    let e = (null != (a = y.get(o)) ? a : 0) + 1;
-    if (y.set(o, e), !O(t, n)) return;
+    var o;
+    let e = (null != (o = y.get(a)) ? o : 0) + 1;
+    if (y.set(a, e), !O(t, n)) return;
     let r = 1e3 * Math.pow(m, e);
-    E.set(o, setTimeout(() => T({
+    E.set(a, setTimeout(() => T({
       guildId: t,
       leaderboardId: n,
       force: !0
@@ -119,7 +119,7 @@ function N() {
 function A() {
   I(), E = new Map, b = new Set, y = new Map, N()
 }
-class C extends o.Z {
+class C extends a.Z {
   fetchLeaderboard(e) {
     return T(e)
   }

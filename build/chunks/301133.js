@@ -5,9 +5,9 @@ Object.defineProperty(t, "__esModule", {
 }), t.reactFormatter = t.DEFAULT_REACT_RICH_TEXT_ELEMENTS = void 0, t.formatReact = s, t.makeReactFormatter = l;
 let r = n(192379),
   i = n(481078),
-  o = r.createElement;
+  a = r.createElement;
 
-function a(e) {
+function o(e) {
   return class extends i.FormatBuilder {
     constructor() {
       super(...arguments), this._nodeKey = 0, this.result = []
@@ -34,27 +34,27 @@ function s(e, t, n) {
 function l(e) {
   return {
     format: s,
-    builder: a(e)
+    builder: o(e)
   }
 }
 t.DEFAULT_REACT_RICH_TEXT_ELEMENTS = {
-  $b: (e, t) => o("strong", {
+  $b: (e, t) => a("strong", {
     key: t
   }, e),
-  $i: (e, t) => o("em", {
+  $i: (e, t) => a("em", {
     key: t
   }, e),
-  $del: (e, t) => o("del", {
+  $del: (e, t) => a("del", {
     key: t
   }, e),
-  $code: (e, t) => o("code", {
+  $code: (e, t) => a("code", {
     key: t
   }, e),
-  $link: (e, t, [n]) => o("a", {
+  $link: (e, t, [n]) => a("a", {
     href: n,
     key: t
   }, e),
-  $p: (e, t) => o("p", {
+  $p: (e, t) => a("p", {
     key: t
   }, e)
 }, t.reactFormatter = l(t.DEFAULT_REACT_RICH_TEXT_ELEMENTS)

@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => L
 }), n(388685), n(825670);
 var r, i = n(442837),
-  o = n(570140),
-  a = n(276444),
+  a = n(570140),
+  o = n(276444),
   s = n(937579),
   l = n(579075),
   c = n(594174),
@@ -120,7 +120,7 @@ function w() {
   var e;
   let t = null == (e = c.default.getCurrentUser()) ? void 0 : e.id;
   if (null == t) return !1;
-  let n = a.Z.getAllRelevantReferralTrialOffers().filter(e => e.user_id === t);
+  let n = o.Z.getAllRelevantReferralTrialOffers().filter(e => e.user_id === t);
   if (n.length > 0) {
     let e = n[0];
     return y.userTrialOffers[e.trial_id] = e, !0
@@ -129,7 +129,7 @@ function w() {
 }
 class D extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    y = null != e ? e : b, this.waitFor(c.default), this.syncWith([c.default], C), this.syncWith([d.ZP], R), this.syncWith([a.Z], w)
+    y = null != e ? e : b, this.waitFor(c.default), this.syncWith([c.default], C), this.syncWith([d.ZP], R), this.syncWith([o.Z], w)
   }
   getUserTrialOffer(e) {
     if (null !== e) return y.userTrialOffers[e]
@@ -152,8 +152,8 @@ class D extends(r = i.ZP.PersistedStore) {
       ttl: n
     } = l.d.getCurrentConfig({
       location: "UserOfferStore.shouldFetchOffer"
-    }), r = t ? n : g, i = y.userOffersLastFetchedAtDate, o = null != (e = y.isFetching) && e;
-    return null == i ? !o : !o && Date.now() - r > i
+    }), r = t ? n : g, i = y.userOffersLastFetchedAtDate, a = null != (e = y.isFetching) && e;
+    return null == i ? !a : !a && Date.now() - r > i
   }
   shouldFetchReferralOffer(e) {
     var t;
@@ -161,8 +161,8 @@ class D extends(r = i.ZP.PersistedStore) {
       r = null != (t = y.isFetching) && t;
     if (null == n) return !r;
     let i = Date.now() - E > n,
-      o = (null != e ? e : 0) > n;
-    return !r && (i || o)
+      a = (null != e ? e : 0) > n;
+    return !r && (i || a)
   }
   getAlmostExpiringTrialOffers(e) {
     let t = Object.values(f.nG).map(e => e.id),
@@ -211,7 +211,7 @@ _(D, "displayName", "UserOfferStore"), _(D, "persistKey", "UserOfferStore"), _(D
     isFetching: !1
   }) : e
 }]);
-let L = new D(o.Z, {
+let L = new D(a.Z, {
   BILLING_USER_OFFER_FETCH_START: v,
   BILLING_USER_TRIAL_OFFER_FETCH_SUCCESS: O,
   BILLING_USER_TRIAL_OFFER_ACKNOWLEDGED_SUCCESS: T,

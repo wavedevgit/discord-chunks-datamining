@@ -5,8 +5,8 @@ n.d(t, {
 }), n(35282), n(388685);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(359959),
   l = n(442837),
   c = n(481060),
@@ -135,8 +135,8 @@ class A extends i.PureComponent {
       resultItems: t,
       resultQuery: n,
       query: i,
-      favorites: o,
-      searchOffset: a,
+      favorites: a,
+      searchOffset: o,
       searchLimit: s,
       searchTotalResults: l,
       suggestions: c,
@@ -150,12 +150,12 @@ class A extends i.PureComponent {
       onSelectItem: this.handleSelectItem
     }) : (0, r.jsx)(g.ZP, {
       className: e,
-      data: d === E.wI2.FAVORITES ? o : t,
+      data: d === E.wI2.FAVORITES ? a : t,
       onSelectGIF: this.handleSelectGIF,
       resultType: d,
       resultQuery: n,
       query: i,
-      searchOffset: a,
+      searchOffset: o,
       searchLimit: s,
       searchTotalResults: l,
       suggestions: c,
@@ -171,7 +171,7 @@ class A extends i.PureComponent {
       id: b.vO,
       role: "tabpanel",
       "aria-labelledby": b._3,
-      className: a()(v.container, e),
+      className: o()(v.container, e),
       onClick: N,
       ref: t,
       children: [(0, r.jsx)("div", {
@@ -228,8 +228,8 @@ let C = i.forwardRef((e, t) => {
   e.persistSearch || (0, _.ql)("");
   let {
     query: n,
-    resultQuery: o,
-    resultItems: a,
+    resultQuery: a,
+    resultItems: o,
     suggestions: c
   } = (0, l.cj)([p.Z], () => ({
     query: p.Z.getQuery(),
@@ -251,8 +251,8 @@ let C = i.forwardRef((e, t) => {
   }, [d, g]), (0, r.jsx)(A, T(I({}, e), {
     forwardedRef: t,
     query: f,
-    resultQuery: o,
-    resultItems: a,
+    resultQuery: a,
+    resultItems: o,
     suggestions: c,
     favorites: m,
     searchOffset: 0,

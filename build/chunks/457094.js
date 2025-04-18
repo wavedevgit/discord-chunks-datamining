@@ -110,9 +110,9 @@ var r = n(200651),
   e0 = n(981631),
   e1 = n(176505),
   e3 = n(701476),
-  e5 = n(186901);
+  e8 = n(186901);
 
-function e8(e, t, n) {
+function e5(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -128,7 +128,7 @@ function e2(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      e8(e, t, n[t])
+      e5(e, t, n[t])
     })
   }
   return e
@@ -156,7 +156,7 @@ let e9 = (0, m.l)(e => {
       openWithoutBackstack: !1,
       impressionSource: n.source
     })), (0, r.jsxs)(g.Z, {
-      deepLinkType: e5.jE.USER_SETTINGS,
+      deepLinkType: e8.jE.USER_SETTINGS,
       path: t.pathname,
       paramsBuilder: function(e, t) {
         let [, , n, r] = e.split("/");
@@ -628,7 +628,7 @@ class ta extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), e8(this, "historyUnlisten", () => {}), e8(this, "rewriterUnlisten", () => {})
+    super(...e), e5(this, "historyUnlisten", () => {}), e5(this, "rewriterUnlisten", () => {})
   }
 }
 let to = ta

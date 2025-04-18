@@ -5,14 +5,14 @@ n.d(t, {
 }), n(388685);
 var r = n(192379),
   i = n(493773),
-  o = n(545511),
-  a = n(386965);
+  a = n(545511),
+  o = n(386965);
 
 function s(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
     {
       audioRef: n
-    } = r.useContext(a.Z),
+    } = r.useContext(o.Z),
     s = r.useRef(null),
     [l, c] = r.useState(() => {
       var e;
@@ -32,7 +32,7 @@ function s(e) {
       return
     }
     if (null != s.current && s.current.src === e) return;
-    let t = new(await (0, o.Z)(e));
+    let t = new(await (0, a.Z)(e));
     t.src = e, s.current = t
   }, [s, e]);
   return {

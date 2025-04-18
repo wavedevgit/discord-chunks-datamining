@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  K: () => o
+  K: () => a
 });
 var r = n(685816);
 
@@ -13,9 +13,9 @@ function i(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class o {
+class a {
   static fromServer(e) {
-    return new o(e)
+    return new a(e)
   }
   constructor(e) {
     i(this, "rankedSkuIds", void 0), this.type = r.z.FEED, this.rankedSkuIds = e.ranked_sku_ids

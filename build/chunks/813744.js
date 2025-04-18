@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(442837),
-  o = n(481060),
-  a = n(314910),
+  a = n(481060),
+  o = n(314910),
   s = n(857192),
   l = n(517100),
   c = n(594174),
@@ -23,25 +23,25 @@ function f() {
     }),
     [f, _] = (0, i.Wu)([l.Z], () => [l.Z.isIdle(), l.Z.isAFK()]),
     p = [];
-  return f || _ || p.push("ACTIVE"), f && p.push("IDLE"), _ && p.push("AFK"), n && t ? (0, r.jsx)(a.ZP, {
+  return f || _ || p.push("ACTIVE"), f && p.push("IDLE"), _ && p.push("AFK"), n && t ? (0, r.jsx)(o.ZP, {
     children: (0, r.jsxs)("div", {
       className: d.container,
       children: [(0, r.jsxs)("div", {
         className: d.status,
-        children: [(0, r.jsx)(o.qbd, {
+        children: [(0, r.jsx)(a.qbd, {
           status: p.includes("ACTIVE") ? u.Sk.ONLINE : u.Sk.IDLE,
           className: d.statusIndicator
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-md/normal",
           children: "IDLE STATUS:"
         }), (0, r.jsx)("div", {
           className: d.statusText,
-          children: (0, r.jsx)(o.Text, {
+          children: (0, r.jsx)(a.Text, {
             variant: "text-md/bold",
             children: p.join(" + ")
           })
         })]
-      }), f && (0, r.jsxs)(o.Text, {
+      }), f && (0, r.jsxs)(a.Text, {
         variant: "text-md/normal",
         children: ["Idle since:", " ", new Date(null != (e = l.Z.getIdleSince()) ? e : 0).toLocaleDateString(void 0, {
           year: "numeric",

@@ -6,8 +6,8 @@ n.d(t, {
 }), n(35282);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(180650),
   l = n(399606),
   c = n(481060),
@@ -36,16 +36,16 @@ let A = 90,
       category: t
     } = e, {
       analyticsLocations: n
-    } = (0, d.ZP)(), o = i.useRef(null), a = (0, l.e7)([p.default], () => p.default.getCurrentUser());
-    return g.ZP.canUseCollectibles(a) ? t.summary : T.NW.format(T.t["9hafRk"], {
+    } = (0, d.ZP)(), a = i.useRef(null), o = (0, l.e7)([p.default], () => p.default.getCurrentUser());
+    return g.ZP.canUseCollectibles(o) ? t.summary : T.NW.format(T.t["9hafRk"], {
       getPremium: e => (0, r.jsx)(c.P3F, {
-        innerRef: o,
+        innerRef: a,
         className: N.getPremiumHook,
         onClick: () => {
           (0, _.Z)({
             subscriptionTier: S.Si.TIER_2,
             analyticsLocations: n,
-            returnRef: o
+            returnRef: a
           })
         },
         tag: "span",
@@ -80,7 +80,7 @@ function D(e) {
     className: n,
     hideLimitedTimeBadge: i = !1
   } = e, {
-    backgroundColors: o
+    backgroundColors: a
   } = (0, b.Z)(t.styles), d = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), f = (0, l.e7)([h.Z], () => h.Z.isFocused()), {
     bannerOverrides: _,
     shopAllBannerStatic: p,
@@ -88,10 +88,10 @@ function D(e) {
   } = (0, I.t0)(t), S = !!(null == _ ? void 0 : _.showDarkBannerText);
   return (0, r.jsxs)(y.Z, {
     asset: p,
-    className: a()(N.shopBanner, n),
-    style: null != o ? {
-      background: "".concat((0, O.nH)(o), " border-box border-box"),
-      outlineColor: o.border.toHslString()
+    className: o()(N.shopBanner, n),
+    style: null != a ? {
+      background: "".concat((0, O.nH)(a), " border-box border-box"),
+      outlineColor: a.border.toHslString()
     } : void 0,
     children: [!d && null != g && f && (0, r.jsx)(w, {
       src: g
@@ -120,7 +120,7 @@ function D(e) {
     }) : (0, r.jsx)(c.LZC, {
       size: A
     }), (0, r.jsx)(c.Text, {
-      className: a()(N.summary, {
+      className: o()(N.summary, {
         [N.blackSummary]: S
       }),
       style: null != t.bannerTextColor ? {

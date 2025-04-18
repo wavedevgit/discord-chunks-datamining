@@ -7,8 +7,8 @@ n.d(t, {
 }), n(314940), n(388685);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(392711),
   l = n(278074),
   c = n(442837),
@@ -80,7 +80,7 @@ function P(e) {
   let {
     user: t,
     sourceType: n,
-    isVisible: o,
+    isVisible: a,
     isExpandable: O,
     interactionSourceId: S,
     targetRef: N,
@@ -94,7 +94,7 @@ function P(e) {
   } = (0, g.Xo)(), {
     live: j,
     stream: U
-  } = (0, m.Z)(t.id), G = !o && x !== b.y0.FULL_SIZE && (0, l.EQ)(n).with(b.n_.STATUS, () => 0 === j.length && null == U).with(b.n_.ACTIVITY, () => !0).with(b.n_.AVATAR, () => !1).exhaustive(), [B, F] = i.useState(G);
+  } = (0, m.Z)(t.id), G = !a && x !== b.y0.FULL_SIZE && (0, l.EQ)(n).with(b.n_.STATUS, () => 0 === j.length && null == U).with(b.n_.ACTIVITY, () => !0).with(b.n_.AVATAR, () => !1).exhaustive(), [B, F] = i.useState(G);
   if (i.useEffect(() => {
       B && !G && F(!1)
     }, [B, G]), t.bot || D || !L) return null;
@@ -128,9 +128,9 @@ function P(e) {
       e.animationName === (0, s.get)(v, "fadeInAndOut") && F(!1)
     };
   return (0, r.jsxs)(f.ZP, {
-    className: a()(v.popover, {
+    className: o()(v.popover, {
       [v.fadeInAndOut]: B,
-      [v.visible]: o,
+      [v.visible]: a,
       [v.expandable]: O,
       [v.statusPopover]: n === b.n_.STATUS,
       [v.avatarPopover]: n === b.n_.AVATAR,
@@ -139,7 +139,7 @@ function P(e) {
     onAnimationEnd: B ? H : void 0,
     children: [(0, r.jsx)(d.DY3, {
       text: y.NW.string(y.t.nhaI4e),
-      shouldShow: o,
+      shouldShow: a,
       className: v.tooltipContainer,
       delay: 0,
       "aria-label": !1,
@@ -155,7 +155,7 @@ function P(e) {
       })
     }), (0, r.jsx)(d.DY3, {
       text: y.NW.string(y.t.RmDYKC),
-      shouldShow: o,
+      shouldShow: a,
       className: v.tooltipContainer,
       delay: 0,
       "aria-label": !1,
@@ -176,7 +176,7 @@ function P(e) {
       };
       return (0, r.jsx)(d.DY3, {
         text: y.NW.string(y.t.UKOtz8),
-        shouldShow: o,
+        shouldShow: a,
         className: v.tooltipContainer,
         delay: 0,
         "aria-label": !1,

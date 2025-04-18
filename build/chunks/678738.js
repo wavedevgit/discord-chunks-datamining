@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(442837),
   l = n(481060),
   c = n(607070),
@@ -16,7 +16,7 @@ function d(e) {
   let {
     children: t,
     heading: n,
-    headingIcon: o,
+    headingIcon: a,
     subheading: d,
     className: f,
     scrollIntoView: _ = !1,
@@ -33,7 +33,7 @@ function d(e) {
     return () => cancelAnimationFrame(t)
   }, [h]), (0, r.jsxs)("section", {
     ref: _ ? m : void 0,
-    className: a()(u.section, f),
+    className: o()(u.section, f),
     children: [null != n && (0, r.jsxs)("div", {
       className: u.headings,
       children: [(0, r.jsxs)("div", {
@@ -42,7 +42,7 @@ function d(e) {
           variant: "text-xs/semibold",
           color: p,
           children: n
-        }), null != o && (0, r.jsx)(o, {
+        }), null != a && (0, r.jsx)(a, {
           size: "xxs",
           color: l.TVs.colors.HEADER_SECONDARY
         })]

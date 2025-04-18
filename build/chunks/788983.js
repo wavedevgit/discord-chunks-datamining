@@ -18,7 +18,7 @@ function i(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -30,7 +30,7 @@ function o(e) {
   }
   return e
 }
-let a = {
+let o = {
   menubar: !1,
   toolbar: !1,
   location: !1,
@@ -41,7 +41,7 @@ function s(e, t, n) {
   return r.Z.dispatch({
     type: "POPOUT_WINDOW_OPEN",
     key: e,
-    features: o({}, a, n),
+    features: a({}, o, n),
     render: t
   })
 }

@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  o = n.n(i),
-  a = n(1561),
+  a = n.n(i),
+  o = n(1561),
   s = n(359806);
 
 function l(e, t, n) {
@@ -53,8 +53,8 @@ function f(e, t) {
   if (null == e) return {};
   var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -62,8 +62,8 @@ function f(e, t) {
 function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -74,9 +74,9 @@ function p(e) {
     selected: i = !1,
     className: l
   } = e, u = f(e, ["as", "muted", "selected", "className"]);
-  let _ = null != t ? t : a.P;
+  let _ = null != t ? t : o.P;
   return (0, r.jsx)(_, d(c({}, u), {
-    className: o()(s.interactive, l, {
+    className: a()(s.interactive, l, {
       [s.muted]: n,
       [s.selected]: i
     })

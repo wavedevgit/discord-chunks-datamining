@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 }), n(388685);
 var r = n(192379),
   i = n(920103);
 
-function o(e) {
+function a(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "vertical",
     [n] = (0, r.useState)(() => new i.Z({
       tension: 200,

@@ -10,12 +10,12 @@ e.exports = function(e) {
       begin: n,
       relevance: 0
     },
-    o = {
+    a = {
       className: "number",
       begin: "[-+]?\\d+(\\.\\d+)?",
       relevance: 0
     },
-    a = e.inherit(e.QUOTE_STRING_MODE, {
+    o = e.inherit(e.QUOTE_STRING_MODE, {
       illegal: null
     }),
     s = e.COMMENT(";", "$", {
@@ -54,11 +54,11 @@ e.exports = function(e) {
       begin: n,
       starts: p
     },
-    m = [_, a, u, d, s, f, c, o, l, i];
+    m = [_, o, u, d, s, f, c, a, l, i];
   return _.contains = [e.COMMENT("comment", ""), h, p], p.contains = m, c.contains = m, {
     name: "Hy",
     aliases: ["hylang"],
     illegal: /\S/,
-    contains: [e.SHEBANG(), _, a, u, d, s, f, c, o, l]
+    contains: [e.SHEBANG(), _, o, u, d, s, f, c, a, l]
   }
 }

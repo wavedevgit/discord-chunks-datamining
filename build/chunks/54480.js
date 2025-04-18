@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(442837),
   i = n(780384),
-  o = n(410030),
-  a = n(592125),
+  a = n(410030),
+  o = n(592125),
   s = n(436952);
 
 function l(e) {
@@ -18,7 +18,7 @@ function l(e) {
     entryPoint: c
   } = (0, s.sX)({
     location: t
-  }), u = (0, i.wj)((0, o.ZP)()), d = (0, r.e7)([a.Z], () => a.Z.getChannel(n));
+  }), u = (0, i.wj)((0, a.ZP)()), d = (0, r.e7)([o.Z], () => o.Z.getChannel(n));
   return {
     canAccessPicker: l && u && (null == d ? void 0 : d.isChatWallpaperEnabled) === !0,
     entryPoint: c

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(804061), n(704826), n(35282), n(539854);
 var r = n(200651),
   i = n(192379),
-  o = n(423875),
-  a = n(442837),
+  a = n(423875),
+  o = n(442837),
   s = n(902704),
   l = n(481060),
   c = n(952164),
@@ -42,10 +42,10 @@ let D = (e, t, n) => {
   let {
     artist: r,
     media: i
-  } = e, o = C.t["6iNxrq"], a = m.ZP.getName(t.guild_id, t.id, n);
-  return C.NW.formatToMarkdownString(o, {
+  } = e, a = C.t["6iNxrq"], o = m.ZP.getName(t.guild_id, t.id, n);
+  return C.NW.formatToMarkdownString(a, {
     artist: r,
-    userName: a,
+    userName: o,
     media: i
   }).replaceAll("*", "")
 };
@@ -54,9 +54,9 @@ function L(e) {
   let {
     activity: t
   } = e, n = t.timestamps, {
-    now: o
+    now: a
   } = (0, S.tS)(), {
-    durationTimestamp: a,
+    durationTimestamp: o,
     seekBarStyles: s
   } = i.useMemo(() => {
     var e;
@@ -65,18 +65,18 @@ function L(e) {
       end: r
     } = null != (e = t.timestamps) ? e : {};
     if (null == n || null == r) return {};
-    let i = Math.min(r, o),
-      a = r - n,
-      s = Math.floor(Math.max(i - n, 0) / a * 100);
+    let i = Math.min(r, a),
+      o = r - n,
+      s = Math.floor(Math.max(i - n, 0) / o * 100);
     return {
       seekBarStyles: {
         width: "".concat(s, "%")
       },
       durationTimestamp: (0, E.T_)({
         start: 0
-      }, a)
+      }, o)
     }
-  }, [t, o]);
+  }, [t, a]);
   return null == s ? null : (0, r.jsxs)("div", {
     className: R.listeningTimeline,
     children: [(0, r.jsx)(S.x3, {
@@ -92,7 +92,7 @@ function L(e) {
       variant: "text-xs/normal",
       tabularNumbers: !0,
       color: void 0,
-      children: a
+      children: o
     })]
   })
 }
@@ -123,7 +123,7 @@ function x(e) {
       secondaryColor: W
     } = (0, v.Z)(null == U ? void 0 : U.src),
     Y = (0, y.Z)(N.ABu.SPOTIFY),
-    K = (0, a.e7)([u.Z, p.default], () => (null == G ? void 0 : G.type) === N.IIU.LISTENING && null != Z ? (0, f.Z)(u.Z, p.default, Z, G) : void 0, [G, Z], s.Z),
+    K = (0, o.e7)([u.Z, p.default], () => (null == G ? void 0 : G.type) === N.IIU.LISTENING && null != Z ? (0, f.Z)(u.Z, p.default, Z, G) : void 0, [G, Z], s.Z),
     z = i.useCallback(() => {
       var e;
       if (null == R || null == Z) return;
@@ -149,7 +149,7 @@ function x(e) {
   if (null == G || null == B) return null;
   let q = F,
     Q = [];
-  if (B.media.provider === o.p.SPOTIFY) {
+  if (B.media.provider === a.p.SPOTIFY) {
     m = () => {
       (0, c.aG)(G)
     }, S = () => {
@@ -181,7 +181,7 @@ function x(e) {
     onClickThumbnail: S,
     channel: R,
     entry: x,
-    headerIcons: B.media.provider === o.p.SPOTIFY ? (0, r.jsx)(T.Z, {
+    headerIcons: B.media.provider === a.p.SPOTIFY ? (0, r.jsx)(T.Z, {
       onClick: n,
       "aria-label": C.NW.string(C.t.rRffNz),
       Icon: h.Z

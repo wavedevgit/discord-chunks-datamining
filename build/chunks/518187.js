@@ -3,21 +3,21 @@
 n(35282);
 var r = n(580983),
   i = n(556585),
-  o = n(16721),
-  a = n(621523),
+  a = n(16721),
+  o = n(621523),
   s = n(751736),
   l = n(436207),
   c = s("species"),
   u = RegExp.prototype;
 e.exports = function(e, t, n, d) {
   var f = s(e),
-    _ = !a(function() {
+    _ = !o(function() {
       var t = {};
       return t[f] = function() {
         return 7
       }, 7 !== "" [e](t)
     }),
-    p = _ && !a(function() {
+    p = _ && !o(function() {
       var t = !1,
         n = /a/;
       return "split" === e && ((n = {}).constructor = {}, n.constructor[c] = function() {
@@ -28,9 +28,9 @@ e.exports = function(e, t, n, d) {
     });
   if (!_ || !p || n) {
     var h = /./ [f],
-      m = t(f, "" [e], function(e, t, n, i, a) {
+      m = t(f, "" [e], function(e, t, n, i, o) {
         var s = t.exec;
-        return s === o || s === u.exec ? _ && !a ? {
+        return s === a || s === u.exec ? _ && !o ? {
           done: !0,
           value: r(h, t, n, i)
         } : {

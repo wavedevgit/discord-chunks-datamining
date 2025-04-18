@@ -15,8 +15,8 @@ n.r(t), n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(772848),
-  o = n(271579),
-  a = n(756647),
+  a = n(271579),
+  o = n(756647),
   s = n(481060),
   l = n(836768),
   c = n(98278),
@@ -86,8 +86,8 @@ function k(e) {
   let {
     questId: t,
     location: i,
-    questContentPosition: o,
-    preview: a = !1,
+    questContentPosition: a,
+    preview: o = !1,
     previewQuest: l = null
   } = e;
   (0, s.ZDy)(async () => {
@@ -96,9 +96,9 @@ function k(e) {
     } = await Promise.all([n.e("37447"), n.e("64838"), n.e("27458"), n.e("88708"), n.e("29876")]).then(n.bind(n, 985866));
     return n => (0, r.jsx)(e, L(w({}, n), {
       questId: t,
-      questContentPosition: o,
+      questContentPosition: a,
       location: i,
-      preview: a,
+      preview: o,
       previewQuest: l
     }))
   })
@@ -208,7 +208,7 @@ function H(e) {
     let {
       default: i
     } = await Z();
-    return o => (0, r.jsx)(i, L(w({}, o), {
+    return a => (0, r.jsx)(i, L(w({}, a), {
       openStartClockTime: performance.now(),
       questId: e.id,
       autoplay: t,
@@ -221,14 +221,14 @@ function H(e) {
       var t, r;
       let i = v.ZP.getState().getVideoProgress(e.id);
       if (null == i) return;
-      let o = E.Z.getQuest(e.id);
-      null != o && (null == (t = o.userStatus) ? void 0 : t.enrolledAt) != null && (null == (r = o.userStatus) ? void 0 : r.completedAt) == null && (0, y.FI)(o, i.maxTimestampSec);
-      let a = (0, y.bA)(i.maxTimestampSec, i.duration);
+      let a = E.Z.getQuest(e.id);
+      null != a && (null == (t = a.userStatus) ? void 0 : t.enrolledAt) != null && (null == (r = a.userStatus) ? void 0 : r.completedAt) == null && (0, y.FI)(a, i.maxTimestampSec);
+      let o = (0, y.bA)(i.maxTimestampSec, i.duration);
       (0, g.dA)({
         questId: e.id,
         event: C.rMx.QUEST_VIDEO_PROGRESSED,
         properties: {
-          progress: a,
+          progress: o,
           video_timestamp_seconds: i.maxTimestampSec,
           video_session_id: n
         }
@@ -236,7 +236,7 @@ function H(e) {
         questId: e.id,
         event: C.rMx.QUEST_VIDEO_MODAL_CLOSED,
         properties: {
-          video_progress: a,
+          video_progress: o,
           video_session_id: n,
           network_connection_speed: p.Z.getEffectiveConnectionSpeed()
         }
@@ -251,9 +251,9 @@ function W(e) {
     r = "quest";
   if ("Android" === n || "iOS" === n) {
     let t = _.default.getFingerprint(),
-      n = (0, o.WS)(),
+      n = (0, a.WS)(),
       i = "".concat(location.protocol, "//").concat(window.GLOBAL_ENV.WEBAPP_ENDPOINT, "/quests/").concat(e);
-    return (0, o.ZP)(i, {
+    return (0, a.ZP)(i, {
       utmSource: r,
       fingerprint: t,
       attemptId: n
@@ -264,9 +264,9 @@ function W(e) {
 
 function Y(e) {
   let t = W(e),
-    n = (0, o.zS)(t);
+    n = (0, a.zS)(t);
   null != n && h.default.track(C.rMx.DEEP_LINK_CLICKED, {
-    fingerprint: (0, a.K)(n.fingerprint),
+    fingerprint: (0, o.K)(n.fingerprint),
     attempt_id: n.attemptId,
     source: n.utmSource
   }), m.Z.launch(t, t => {

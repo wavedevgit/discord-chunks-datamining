@@ -4,8 +4,8 @@ let r, i;
 n.d(t, {
   Z: () => q
 });
-var o, a = n(512722),
-  s = n.n(a),
+var a, o = n(512722),
+  s = n.n(o),
   l = n(392711),
   c = n.n(l),
   u = n(442837),
@@ -70,8 +70,8 @@ function M(e) {
     guildId: n,
     channelId: r,
     appContext: i,
-    pid: o,
-    sourceId: a,
+    pid: a,
+    sourceId: o,
     nativePickerStyleUsed: s,
     goLiveModalDurationMs: l
   } = e, u = (0, p.V9)({
@@ -86,8 +86,8 @@ function M(e) {
         isOwner: n
       } = e;
       t.setActionContext(i), t.setNativePickerStyleUsed(s), n && t.trackStart()
-    }), A[u] = a, N[u] = o, null != o) {
-    let e = f.ZP.getGameForPID(o);
+    }), A[u] = o, N[u] = a, null != a) {
+    let e = f.ZP.getGameForPID(a);
     null != e && (T[u] = {
       name: e.name,
       id: e.id,
@@ -117,11 +117,11 @@ function j(e) {
     streamKey: t,
     rtcServerId: n,
     region: r,
-    viewerIds: o
+    viewerIds: a
   } = e;
   i = t;
-  let a = P[t];
-  if (null == a && null != n) {
+  let o = P[t];
+  if (null == o && null != n) {
     null == N[t] && (T[t] = null);
     let e = (0, p.my)(t);
     null == T[t] && null == A[t] && (T[t] = (0, h.L2)(e, y.Z));
@@ -130,14 +130,14 @@ function j(e) {
       streamApplication: T[t],
       streamSourceType: K(A[t]),
       actionContext: S[t],
-      numViewers: null != o ? o.length : 0,
+      numViewers: null != a ? a.length : 0,
       goLiveModalDurationMs: C[t]
     });
-    a = w(t, n, i), P[t] = a
+    o = w(t, n, i), P[t] = o
   }
   d.Z.dispatch({
     type: "MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET",
-    mediaEngineConnectionId: a.getMediaEngineConnectionId()
+    mediaEngineConnectionId: o.getMediaEngineConnectionId()
   })
 }
 
@@ -227,7 +227,7 @@ function K(e) {
   else if ((null == (r = platform) ? void 0 : r.name) === "Safari") return "window";
   return "unknown"
 }
-class z extends(o = u.ZP.Store) {
+class z extends(a = u.ZP.Store) {
   getActiveStreamKey() {
     return (0, m.Z)(b.Z) ? i : null
   }
