@@ -52,19 +52,19 @@ let u = e => {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t))), [j, N] = l.useState(""), [y, O] = l.useState("");
+    }), t))), [j, N] = l.useState(""), [y, O] = l.useState(null);
     l.useEffect(() => {
       var e;
       N(null != (e = null == f ? void 0 : f.value) ? e : "")
     }, [f]);
     let Z = l.useCallback(e => {
       let t = null != h ? new RegExp(h) : null;
-      null != t && null == t.exec(e) ? (O(s.NW.string(s.t["24xrGR"])), _({
-        value: e,
-        isValid: !1
-      })) : null != e && (O(""), N(e), _({
+      null == t || t.test(e) ? null != e && (O(null), N(e), _({
         value: e,
         isValid: !0
+      })) : (O(s.NW.string(s.t["24xrGR"])), _({
+        value: e,
+        isValid: !1
       }))
     }, [_, h]);
     return (0, r.jsxs)("div", {

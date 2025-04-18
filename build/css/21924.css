@@ -1,6 +1,6 @@
 /**
   Module ID: 21924
-  Original File Name: 6c4f9362f2bc3211
+  Original File Name: 2482aa7cf645e0c7
 **/
 .actionButton__5d9ef {
     margin-left: auto
@@ -192,6 +192,12 @@
     max-height: 70vh;
     min-height: 240px;
     position: relative
+}
+
+@media (max-width:485px) or (max-height:550px) {
+    .container__527b1 {
+        max-height: none
+    }
 }
 
 .remediationElementsHeader__527b1 {
@@ -706,4 +712,10 @@
     max-height: clamp(200px,calc(100vh - 80px),660px)
 }
 
-/*# sourceMappingURL=6c4f9362f2bc3211.css.map*/
+@media (max-width:485px) or (max-height:550px) {
+    .slideContainer__01ce3 {
+        max-height: none
+    }
+}
+
+/*# sourceMappingURL=2482aa7cf645e0c7.css.map*/
