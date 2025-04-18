@@ -5,8 +5,8 @@ n.d(t, {
 }), n(35282), n(388685), n(415506);
 var r = n(264344),
   i = n.n(r),
-  o = n(259443),
-  a = n(47770),
+  a = n(259443),
+  o = n(47770),
   s = n(46973),
   l = n(734298),
   c = n(997545),
@@ -63,7 +63,7 @@ function y(e) {
 function v(e, t, n) {
   return t + (n - t) * e / 100
 }
-class O extends a.Z {
+class O extends o.Z {
   destroy() {
     this.eachConnection(e => e.destroy()), this.emit(s.aB.Destroy), this.removeAllListeners()
   }
@@ -256,7 +256,7 @@ class O extends a.Z {
     let {
       frameRate: r,
       resolution: i
-    } = e.quality, o = i <= 480 ? i / 3 * 4 : i / 9 * 16, a = i, {
+    } = e.quality, a = i <= 480 ? i / 3 * 4 : i / 9 * 16, o = i, {
       id: l,
       soundshareId: c,
       useLoopback: u,
@@ -276,8 +276,8 @@ class O extends a.Z {
       hdrCaptureMode: g,
       soundshareLoopback: u,
       frameRate: r,
-      width: o,
-      height: a
+      width: a,
+      height: o
     });
     let [E, b] = null != l ? l.split(":") : ["", ""];
     n.setClipsSource({
@@ -321,11 +321,11 @@ class O extends a.Z {
   }
   saveClipForUser(e, t, n) {
     let r = (0, d.zS)();
-    return null == r.saveClipForUser ? Promise.reject("unsupported") : new Promise((i, o) => {
+    return null == r.saveClipForUser ? Promise.reject("unsupported") : new Promise((i, a) => {
       r.saveClipForUser(e, t, n, (e, t, n) => i({
         duration: e,
         clipStats: JSON.parse(n)
-      }), e => o(JSON.parse(e)))
+      }), e => a(JSON.parse(e)))
     })
   }
   updateClipMetadata(e, t) {
@@ -510,10 +510,10 @@ class O extends a.Z {
     var t, n;
     let r = 100 - e,
       i = v(r, p.Zq, p.WA),
-      o = v(r, p.QO, p.JA);
+      a = v(r, p.QO, p.JA);
     null == (t = (n = (0, d.zS)()).applySidechainCompressionSettings) || t.call(n, {
       threshold: i,
-      ratio: o
+      ratio: a
     })
   }
   setNativeDesktopVideoSourcePickerActive(e) {
@@ -540,8 +540,8 @@ class O extends a.Z {
     return 0 === this.connections.size
   }
   constructor() {
-    var e, t, n, r, i, a, c, p;
-    super(), e = this, m(this, "Video", _.Z), m(this, "Camera", f.Z), m(this, "videoInputDeviceId", h.Av), m(this, "connections", new Set), m(this, "lastVoiceActivity", -1), m(this, "audioSubsystem", "standard"), m(this, "audioLayer", ""), m(this, "deviceChangeGeneration", 0), m(this, "consecutiveWatchdogFailures", 0), m(this, "codecSurvey", null), m(this, "logger", new o.Yd("MediaEngineNative")), m(this, "handleDeviceChange", function() {
+    var e, t, n, r, i, o, c, p;
+    super(), e = this, m(this, "Video", _.Z), m(this, "Camera", f.Z), m(this, "videoInputDeviceId", h.Av), m(this, "connections", new Set), m(this, "lastVoiceActivity", -1), m(this, "audioSubsystem", "standard"), m(this, "audioLayer", ""), m(this, "deviceChangeGeneration", 0), m(this, "consecutiveWatchdogFailures", 0), m(this, "codecSurvey", null), m(this, "logger", new a.Yd("MediaEngineNative")), m(this, "handleDeviceChange", function() {
       let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [],
         n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [],
         r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [];
@@ -586,7 +586,7 @@ class O extends a.Z {
     g.setDeviceChangeCallback(this.handleDeviceChange), g.setVolumeChangeCallback(this.handleVolumeChange), g.setOnVoiceCallback(this.handleVoiceActivity), null == (t = g.setVideoInputInitializationCallback) || t.call(g, this.handleVideoInputInitialization), null == (n = g.setAudioInputInitializationCallback) || n.call(g, this.handleAudioInputInitialization), g.setTransportOptions({
       idleJitterBufferFlush: !0,
       ducking: !1
-    }), null == (r = g.setNativeScreenSharePickerCallbacks) || r.call(g, this.handleNativeScreenSharePickerUpdate, this.handleNativeScreenSharePickerCancel, this.handleNativeScreenSharePickerError), null == (i = g.setAudioDeviceModuleErrorCallback) || i.call(g, this.handleAudioDeviceModuleErrorCallback), null == (a = g.setVideoCodecErrorCallback) || a.call(g, this.handleVideoCodecErrorCallback), this.on("removeListener", this.handleRemoveListener), this.on("newListener", this.handleNewListener), null != (0, d.zS)().getAudioSubsystem ? (0, d.zS)().getAudioSubsystem((e, t) => {
+    }), null == (r = g.setNativeScreenSharePickerCallbacks) || r.call(g, this.handleNativeScreenSharePickerUpdate, this.handleNativeScreenSharePickerCancel, this.handleNativeScreenSharePickerError), null == (i = g.setAudioDeviceModuleErrorCallback) || i.call(g, this.handleAudioDeviceModuleErrorCallback), null == (o = g.setVideoCodecErrorCallback) || o.call(g, this.handleVideoCodecErrorCallback), this.on("removeListener", this.handleRemoveListener), this.on("newListener", this.handleNewListener), null != (0, d.zS)().getAudioSubsystem ? (0, d.zS)().getAudioSubsystem((e, t) => {
       this.audioSubsystem = e, this.audioLayer = t
     }) : null != (0, d.zS)().getUseLegacyAudioDevice && (this.audioSubsystem = (0, d.zS)().getUseLegacyAudioDevice() ? h.iA.LEGACY : h.iA.STANDARD), null != g.pingVoiceThread && "undefined" != typeof window && "canary" === window.GLOBAL_ENV.RELEASE_CHANNEL && this.watchdogTick(), null != g.setActiveSinksChangeCallback && g.setActiveSinksChangeCallback(this.handleActiveSinksChange), null == (c = g.setLoopbackPlaybackGainMultiplier) || c.call(g, h.Jk), null == (p = g.setVoiceFiltersFailedCallback) || p.call(g, e => this.emit(s.aB.VoiceFiltersFailed, e)), (0, l.Z)(this), I(this)
   }
@@ -599,13 +599,13 @@ function I(e) {
   let r = async () => {
     if (n) return;
     let i = (0, d.zS)(),
-      o = await new Promise(e => {
+      a = await new Promise(e => {
         var t;
         null == (t = i.pollQueueMetrics) || t.call(i, t => {
           e(t)
         })
       });
-    o.periodMs = t, e.emit(s.aB.VoiceQueueMetrics, o), setTimeout(r, t)
+    a.periodMs = t, e.emit(s.aB.VoiceQueueMetrics, a), setTimeout(r, t)
   };
   setTimeout(r, t)
 }

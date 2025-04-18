@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  o = n(510659),
-  a = n(511341),
+  a = n(510659),
+  o = n(511341),
   s = n(215105),
   l = n(429974),
   c = n(228168);
@@ -55,8 +55,8 @@ function p(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -64,8 +64,8 @@ function p(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -98,14 +98,14 @@ function g(e) {
     resetInteraction: v,
     interactionSourceId: O,
     interactionPopoutTargetRef: I
-  } = (0, o.Xo)(), S = f === c.y0.FULL_SIZE ? (0, l.z)(t.id, n) : void 0, T = y === E.sourceType && b === c.P.REACT, N = y === E.sourceType && b === c.P.REPLY, A = (T || N) && O === E.sourceId;
+  } = (0, a.Xo)(), S = f === c.y0.FULL_SIZE ? (0, l.z)(t.id, n) : void 0, T = y === E.sourceType && b === c.P.REACT, N = y === E.sourceType && b === c.P.REPLY, A = (T || N) && O === E.sourceId;
   return (0, r.jsx)(i.yRy, _(d({
     targetElementRef: null != I ? I : void 0,
     renderPopout: e => {
       let {
         setPopoutRef: i
-      } = e, o = T ? a.Z : s.Z;
-      return (0, r.jsx)(o, d({
+      } = e, a = T ? o.Z : s.Z;
+      return (0, r.jsx)(a, d({
         user: t,
         guildId: n,
         channelId: u,

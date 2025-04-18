@@ -5,9 +5,9 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(709014);
+  a = n(709014);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,7 +23,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -62,26 +62,30 @@ let u = {
       t = i.useCallback(() => {
         null != e.current && e.current.play("click")
       }, []),
-      a = i.useCallback(() => {
+      o = i.useCallback(() => {
         null != e.current && e.current.play("hover")
       }, []),
       l = i.useCallback(() => {
         null != e.current && e.current.stopIfPlaying("hover")
       }, []),
-      d = i.useCallback(t => (0, r.jsx)(o.L, c(s({}, t), {
+      d = i.useCallback(t => (0, r.jsx)(a.L, c(s({}, t), {
         src: () => n.e("37655").then(n.t.bind(n, 119493, 19)),
         ref: e,
         markers: u
       })), []);
     return {
       events: {
-        onMouseEnter: a,
+        onMouseEnter: o,
         onMouseLeave: l
       },
       play: t,
       getDuration: i.useCallback(() => {
         var t;
         return null == (t = e.current) ? void 0 : t.getDuration()
+      }, []),
+      getCurrentFrame: i.useCallback(() => {
+        var t, n;
+        return null != (n = null == (t = e.current) ? void 0 : t.getCurrentFrame()) ? n : null
       }, []),
       Component: d
     }

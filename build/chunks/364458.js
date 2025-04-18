@@ -23,12 +23,12 @@ function i(e) {
   return e
 }
 
-function o(e) {
+function a(e) {
   let t = {};
   for (let n of e)
     for (let e in n) e in t ? t[e] = i({}, t[e], n[e]) : t[e] = i({}, n[e]);
   return t
 }
 n.d(t, {
-  Z: () => o
+  Z: () => a
 }), n(388685)

@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   DB: () => i,
-  V9: () => a,
-  my: () => o
+  V9: () => o,
+  my: () => a
 }), n(35282), n(388685), n(415506);
 var r = n(70722);
 
@@ -11,7 +11,7 @@ function i(e) {
   return null != e && (e.startsWith(r.lo.GUILD) || e.startsWith(r.lo.CALL))
 }
 
-function o(e) {
+function a(e) {
   let t = e.split(":"),
     n = t[0];
   switch (n) {
@@ -37,18 +37,18 @@ function o(e) {
   }
 }
 
-function a(e) {
+function o(e) {
   let {
     streamType: t,
     guildId: n,
     channelId: i,
-    ownerId: o
+    ownerId: a
   } = e;
   switch (t) {
     case r.lo.GUILD:
-      return [t, n, i, o].join(":");
+      return [t, n, i, a].join(":");
     case r.lo.CALL:
-      return [t, i, o].join(":");
+      return [t, i, a].join(":");
     default:
       throw Error("Unknown stream type ".concat(t))
   }

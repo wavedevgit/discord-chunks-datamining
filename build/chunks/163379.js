@@ -6,9 +6,9 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  o = n(596401);
+  a = n(596401);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,7 +24,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -38,6 +38,6 @@ function l() {
     } = await Promise.all([n.e("22878"), n.e("53937"), n.e("87427")]).then(n.bind(n, 678420));
     return t => (0, r.jsx)(e, s({}, t))
   }, {
-    modalKey: o.Xd
+    modalKey: a.Xd
   })
 }

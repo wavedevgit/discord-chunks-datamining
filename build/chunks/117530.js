@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => P
 }), n(388685), n(539854), n(953529);
 var r, i = n(392711),
-  o = n.n(i),
-  a = n(442837),
+  a = n.n(i),
+  o = n(442837),
   s = n(570140),
   l = n(668781),
   c = n(141795),
@@ -52,17 +52,17 @@ let v = e => {
     channelId: n,
     showLargeMessageDialog: r,
     draftType: i
-  } = e, a = [...g(n, i)];
-  if (a.length + t.length > f.dN1 && i !== d.d.SlashCommand && i !== d.d.ApplicationLauncherCommand) return void l.Z.show({
+  } = e, o = [...g(n, i)];
+  if (o.length + t.length > f.dN1 && i !== d.d.SlashCommand && i !== d.d.ApplicationLauncherCommand) return void l.Z.show({
     title: _.NW.string(_.t.wOr6hI),
     body: _.NW.formatToPlainString(_.t["qqyp/f"], {
       limit: f.dN1
     })
   });
-  o().forEach(t, e => {
-    let t = new c.n(e, n, r, a.length);
-    t.upload(), a.push(t)
-  }), b(n, i, a)
+  a().forEach(t, e => {
+    let t = new c.n(e, n, r, o.length);
+    t.upload(), o.push(t)
+  }), b(n, i, o)
 };
 
 function O(e) {
@@ -70,11 +70,11 @@ function O(e) {
     channelId: t,
     id: n,
     draftType: r
-  } = e, i = [...g(t, r)], o = i.findIndex(e => (0, u.T)({
+  } = e, i = [...g(t, r)], a = i.findIndex(e => (0, u.T)({
     uri: n,
     filename: n
   }, e));
-  o > -1 && (i.splice(o, 1)[0].cancel(), b(t, r, i))
+  a > -1 && (i.splice(a, 1)[0].cancel(), b(t, r, i))
 }
 
 function I(e) {
@@ -95,10 +95,10 @@ function S(e) {
     id: n,
     filename: r,
     description: i,
-    spoiler: o,
-    thumbnail: a,
+    spoiler: a,
+    thumbnail: o,
     draftType: s
-  } = e, l = [...g(t, s)].map(e => (e.id === n && (void 0 !== r && (e.filename = r), void 0 !== o && (e.spoiler = o), void 0 !== i && (e.description = i), void 0 !== a && (e.isThumbnail = a)), e));
+  } = e, l = [...g(t, s)].map(e => (e.id === n && (void 0 !== r && (e.filename = r), void 0 !== a && (e.spoiler = a), void 0 !== i && (e.description = i), void 0 !== o && (e.isThumbnail = o)), e));
   b(t, s, l)
 }
 
@@ -108,8 +108,8 @@ function T(e) {
     id: n,
     file: r,
     draftType: i
-  } = e, o = [...g(t, i)].filter(e => e.id !== n), a = new c.n(r, t);
-  a.upload(), o.push(a), b(t, i, o)
+  } = e, a = [...g(t, i)].filter(e => e.id !== n), o = new c.n(r, t);
+  o.upload(), a.push(o), b(t, i, a)
 }
 
 function N(e) {
@@ -135,7 +135,7 @@ function C(e) {
   } = e;
   b(t, d.d.FirstThreadMessage, [])
 }
-class R extends(r = a.ZP.Store) {
+class R extends(r = o.ZP.Store) {
   getFirstUpload(e, t) {
     let n = g(e, t);
     return n.length > 0 ? n[0] : null

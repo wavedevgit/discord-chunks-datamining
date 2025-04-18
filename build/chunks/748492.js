@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  o = n.n(i),
-  a = n(252258),
+  a = n.n(i),
+  o = n(252258),
   s = n(442837),
   l = n(481060),
   c = n(846027),
@@ -46,7 +46,7 @@ function M(e) {
     isExpanded: n
   } = e;
   return (0, r.jsx)(v.Z, {
-    iconClassName: o()(L.arrowIcon, {
+    iconClassName: a()(L.arrowIcon, {
       [L.arrowIconExpanded]: n
     }),
     onClick: t,
@@ -59,7 +59,7 @@ function k(e) {
   var t, n;
   let {
     channel: i,
-    applicationId: o,
+    applicationId: a,
     onMouseDown: l,
     onMouseMove: v,
     onMouseLeave: S,
@@ -67,7 +67,7 @@ function k(e) {
     idle: D,
     selectedParticipant: M,
     embeddedActivity: k
-  } = e, j = (0, u.bp)() === P.IlC.POPOUT, U = (0, s.e7)([N.Z], () => N.Z.isVideoEnabled()), G = (0, s.e7)([N.Z], () => Object.values(N.Z.getVideoDevices())[0]), B = !1 === (null == (t = null == G ? void 0 : G.disabled) || t), F = (0, f.Z)([o])[0], V = (0, g.Z)(i), {
+  } = e, j = (0, u.bp)() === P.IlC.POPOUT, U = (0, s.e7)([N.Z], () => N.Z.isVideoEnabled()), G = (0, s.e7)([N.Z], () => Object.values(N.Z.getVideoDevices())[0]), B = !1 === (null == (t = null == G ? void 0 : G.disabled) || t), F = (0, f.Z)([a])[0], V = (0, g.Z)(i), {
     parentAnalyticsLocation: Z
   } = (0, d.ZP)(), H = e => {
     (0, p.v)(Z, p.d.CAMERA, e), c.Z.setVideoEnabled(e)
@@ -119,14 +119,14 @@ function k(e) {
         basis: "50%",
         align: h.Z.Align.CENTER,
         children: [j || (0, A.R)({
-          isContextless: k.location.kind === a.E.CONTEXTLESS
+          isContextless: k.location.kind === o.E.CONTEXTLESS
         }) ? null : (0, r.jsx)(I.Z, {
           className: L.rightPipIcon,
           popoutOpen: !1,
           onOpenPopout: Y,
           onClosePopout: w.Vq
         }), (0, r.jsx)(O.Z, {
-          applicationId: o,
+          applicationId: a,
           location: k.location,
           className: L.rightPipIcon
         })]
@@ -140,7 +140,7 @@ function j(e) {
   let {
     channel: n,
     applicationId: i,
-    onMouseDown: a,
+    onMouseDown: o,
     onMouseMove: s,
     onMouseLeave: c,
     onJumpToChannel: u,
@@ -149,9 +149,9 @@ function j(e) {
     embeddedActivity: p
   } = e, h = (0, f.Z)([i])[0];
   return (0, r.jsxs)(l.P3F, {
-    className: o()(x.videoControls, x.videoControlsTextActivity),
+    className: a()(x.videoControls, x.videoControlsTextActivity),
     onMouseMove: s,
-    onMouseDown: a,
+    onMouseDown: o,
     onMouseLeave: c,
     onDoubleClick: u,
     children: [(0, r.jsx)("div", {
@@ -198,7 +198,7 @@ function G(e) {
   let {
     onMouseDown: n,
     onMouseMove: i,
-    onMouseLeave: a,
+    onMouseLeave: o,
     showControls: s,
     applicationId: c,
     channel: u,
@@ -212,9 +212,9 @@ function G(e) {
     className: L.pipHeader,
     onMouseMove: i,
     onMouseDown: n,
-    onMouseLeave: a,
+    onMouseLeave: o,
     children: (0, r.jsxs)("div", {
-      className: o()(x.topControls, L.pipHeaderContent, {
+      className: a()(x.topControls, L.pipHeaderContent, {
         [L.pipHeaderContentOpen]: s
       }),
       children: [!s && (0, r.jsx)(l.xhG, {

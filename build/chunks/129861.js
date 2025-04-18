@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  o = n.n(i),
-  a = n(442837),
+  a = n.n(i),
+  o = n(442837),
   s = n(481060),
   l = n(385499),
   c = n(813549),
@@ -59,8 +59,8 @@ function E(e, t) {
   if (null == e) return {};
   var n, r, i = b(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -68,8 +68,8 @@ function E(e, t) {
 function b(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -81,7 +81,7 @@ let v = e => {
       primary: t,
       secondary: n,
       botType: i,
-      botVerified: a,
+      botVerified: o,
       discriminatorClass: c,
       className: u,
       usernameClass: d,
@@ -90,25 +90,25 @@ let v = e => {
       showStreamerModeTooltip: E
     } = e;
     return (0, r.jsxs)("div", {
-      className: o()(_.info, u),
+      className: a()(_.info, u),
       children: [(0, r.jsx)(s.ua7, {
         text: f.NW.string(f.t.Br1ls7),
         shouldShow: E,
         "aria-label": !!E && void 0,
         children: e => (0, r.jsx)("span", g(h({}, e), {
-          className: o()(_.__invalid_username, d),
+          className: a()(_.__invalid_username, d),
           style: null != p ? {
             color: p
           } : void 0,
           children: t
         }))
       }), null != n ? (0, r.jsx)("span", {
-        className: o()(_.infoSpacing, c),
+        className: a()(_.infoSpacing, c),
         children: n
       }) : void 0, null != i && (0, r.jsx)(l.Z, {
         type: i,
-        className: o()(_.infoSpacing, m),
-        verified: a
+        className: a()(_.infoSpacing, m),
+        verified: o
       })]
     })
   },
@@ -117,13 +117,13 @@ let v = e => {
       user: t,
       nick: n,
       forceUsername: i,
-      showAccountIdentifier: o,
+      showAccountIdentifier: a,
       overrideDiscriminator: s,
       forcePomelo: l,
       hideBotTag: f = !1,
       hideDiscriminator: _ = !1
     } = e, p = E(e, ["user", "nick", "forceUsername", "showAccountIdentifier", "overrideDiscriminator", "forcePomelo", "hideBotTag", "hideDiscriminator"]);
-    let m = (0, a.e7)([u.Z], () => u.Z.hidePersonalInformation),
+    let m = (0, o.e7)([u.Z], () => u.Z.hidePersonalInformation),
       g = m || _ || t.isNonUserBot(),
       b = t.toString(),
       O = f ? null : y(t),
@@ -135,7 +135,7 @@ let v = e => {
       let e = T === b && N && i ? d.ZP.getUserTag(t, {
           forcePomelo: l
         }) : T,
-        n = o && e !== "@".concat(b) ? d.ZP.getUserTag(t) : void 0;
+        n = a && e !== "@".concat(b) ? d.ZP.getUserTag(t) : void 0;
       return (0, r.jsx)(v, h({
         primary: e,
         secondary: n,

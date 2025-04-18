@@ -41,8 +41,8 @@ var r = n(200651),
   W = n(488131),
   U = n(602034),
   B = n(981631),
-  G = n(388032),
-  F = n(776584),
+  F = n(388032),
+  G = n(776584),
   H = n(128337);
 
 function V(e) {
@@ -77,23 +77,23 @@ function Y(e) {
     value: o,
     children: (0, r.jsx)(w.I3, {
       children: (0, r.jsxs)("section", {
-        "aria-label": G.NW.string(G.t.rBIGBA),
-        className: F.container,
+        "aria-label": F.NW.string(F.t.rBIGBA),
+        className: G.container,
         children: [(0, r.jsx)(p.Z, {
           channel: l,
           draftType: S.d.FirstThreadMessage
         }), (0, r.jsxs)(j.ZP, {
           toolbar: (0, r.jsx)(j.ZP.Icon, {
             icon: s.Dio,
-            tooltip: G.NW.string(G.t.cpT0Cg),
+            tooltip: F.NW.string(F.t.cpT0Cg),
             onClick: () => (0, W.NK)(t)
           }),
           children: [(0, r.jsx)(j.ZP.Icon, {
             icon: s.or_,
             disabled: !0,
-            "aria-label": G.NW.string(G.t["7Xm5QE"])
+            "aria-label": F.NW.string(F.t["7Xm5QE"])
           }), (0, r.jsx)(j.ZP.Title, {
-            children: G.NW.string(G.t["4WNcpq"])
+            children: F.NW.string(F.t["4WNcpq"])
           })]
         }), (0, r.jsx)(q, {
           parentChannel: l,
@@ -236,21 +236,21 @@ function q(e) {
     location: l
   }), Z = (0, L.oD)(f, C) ? s.qtY : s.or_, T = (0, x.R6)("CreateThreadSidebar");
   return (0, r.jsx)("div", {
-    className: F.chat,
+    className: G.chat,
     onMouseDown: p,
     onFocus: p,
     children: (0, r.jsx)("div", {
-      className: o()(F.messagesWrapper, "group-spacing-".concat(u)),
+      className: o()(G.messagesWrapper, "group-spacing-".concat(u)),
       children: (0, r.jsxs)("form", {
         onSubmit: e => {
           e.preventDefault(), I()
         },
-        className: F.form,
+        className: G.form,
         children: [(0, r.jsx)(s.Ttm, {
-          className: F.scroller,
+          className: G.scroller,
           fade: !0,
           children: (0, r.jsxs)("div", {
-            className: F.scrollerInner,
+            className: G.scrollerInner,
             children: [(0, r.jsxs)(v.ZP, {
               channelId: "create-thread-null",
               children: [(0, r.jsx)("div", {
@@ -277,7 +277,7 @@ function q(e) {
             })]
           })
         }), (0, r.jsxs)("div", {
-          className: F.submitContainer,
+          className: G.submitContainer,
           children: [(0, r.jsx)(Q, {
             parentChannel: t,
             textAreaState: _,
@@ -288,7 +288,7 @@ function q(e) {
           }), T ? null : (0, r.jsx)(d.Z, {
             channel: t,
             isThreadCreation: !0,
-            className: F.typingIndicator
+            className: G.typingIndicator
           })]
         })]
       })
@@ -303,13 +303,13 @@ function K(e) {
     updateThreadSettings: i,
     privateThreadMode: l
   } = e, o = (0, L.oD)(n, l), a = (0, r.jsx)("div", {
-    className: F.privateThreadFormTitle,
+    className: G.privateThreadFormTitle,
     children: (0, r.jsx)("span", {
-      className: F.privateThreadFormTitleText,
-      children: G.NW.string(G.t.F1zyvb)
+      className: G.privateThreadFormTitleText,
+      children: F.NW.string(F.t.F1zyvb)
     })
   }), c = (0, r.jsx)(s.XZJ, {
-    className: F.checkbox,
+    className: G.checkbox,
     type: s.XZJ.Types.INVERTED,
     disabled: l === L.Jw.PrivateOnly,
     value: o,
@@ -319,17 +319,17 @@ function K(e) {
     children: (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "none",
-      children: G.NW.string(G.t.TRPp3t)
+      children: F.NW.string(F.t.TRPp3t)
     })
   });
   return t || l === L.Jw.Disabled ? null : (0, r.jsxs)(s.hjN, {
     title: a,
-    className: F.formSection,
+    className: G.formSection,
     children: [c, o ? (0, r.jsx)(s.Text, {
-      className: F.privateThreadDescription,
+      className: G.privateThreadDescription,
       variant: "text-xs/normal",
       color: "header-secondary",
-      children: G.NW.string(G.t.EWXyc3)
+      children: F.NW.string(F.t.EWXyc3)
     }) : null]
   })
 }
@@ -349,12 +349,12 @@ function X(e) {
   return (0, r.jsx)(s.hjN, {
     tag: "label",
     htmlFor: m,
-    title: G.NW.string(f ? G.t.JPvIiI : G.t.j3XWjI),
-    className: F.formSection,
+    title: F.NW.string(f ? F.t.JPvIiI : F.t.j3XWjI),
+    className: G.formSection,
     children: (0, r.jsx)(s.oil, {
       value: d,
       id: m,
-      placeholder: "" !== h ? h : G.NW.string(G.t["Nb2/RE"]),
+      placeholder: "" !== h ? h : F.NW.string(F.t["Nb2/RE"]),
       maxLength: B.HN8,
       onChange: e => {
         o({
@@ -411,22 +411,22 @@ function Q(e) {
       type: z,
       canAttachFiles: v
     }), (0, r.jsx)("div", {
-      className: F.starterMessageError,
+      className: G.starterMessageError,
       children: (0, r.jsx)(s.pdY, {
         error: j
       })
     }), (0, r.jsx)(_.Z, {
       type: z,
       channel: t,
-      placeholder: G.NW.string(G.t.taZfIC),
+      placeholder: F.NW.string(F.t.taZfIC),
       textValue: n.textValue,
       richValue: n.richValue,
       focused: f,
-      className: o()(F.channelTextArea, {
-        [F.channelTextAreaWithTypingIndicator]: !h
+      className: o()(G.channelTextArea, {
+        [G.channelTextAreaWithTypingIndicator]: !h
       }),
-      innerClassName: o()(F.channelTextAreaInner, {
-        [F.channelTextAreaInnerError]: null != j
+      innerClassName: o()(G.channelTextAreaInner, {
+        [G.channelTextAreaInnerError]: null != j
       }),
       onFocus: g,
       onBlur: b,
@@ -443,7 +443,7 @@ function J(e) {
     parentMessageId: n
   } = e, i = (0, a.e7)([Z.Z], () => null == n ? null : Z.Z.getMessage(t.id, n)), l = I.jU.useSetting();
   return null != i ? (0, r.jsx)(O.Z, {
-    className: F.messagePreview,
+    className: G.messagePreview,
     message: i,
     channel: t,
     compact: l,

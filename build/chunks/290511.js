@@ -23,14 +23,14 @@ n.d(t, {
 }), n(953529);
 var r = n(348327),
   i = n.n(r),
-  o = n(388032);
+  a = n(388032);
 
-function a(e, t) {
+function o(e, t) {
   if (null == e) return {};
   var n, r, i = s(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -38,8 +38,8 @@ function a(e, t) {
 function s(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let l = 100,
@@ -68,18 +68,18 @@ function v(e) {
     {
       id: n
     } = t,
-    r = a(t, ["id"]),
+    r = o(t, ["id"]),
     {
-      id: o
+      id: a
     } = e,
-    s = a(e, ["id"]);
+    s = o(e, ["id"]);
   return i()(r, s)
 }
 
 function O() {
   return {
     id: String(Date.now()),
-    title: o.NW.string(o.t.vY91Cw),
+    title: a.NW.string(a.t.vY91Cw),
     options: [],
     singleSelect: !1,
     required: !1,

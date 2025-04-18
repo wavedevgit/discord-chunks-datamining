@@ -2,12 +2,12 @@
 "use strict";
 n.d(t, {
   g: () => i,
-  n: () => o
+  n: () => a
 });
 var r = n(200651);
 let i = n(192379).createContext(!1);
 
-function o(e) {
+function a(e) {
   let {
     children: t
   } = e;

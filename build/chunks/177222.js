@@ -63,8 +63,8 @@ function R(e) {
     layout: "SIMPLIFIED_DM_PANEL",
     userId: t.id,
     channelId: R.id
-  }), B = i.useRef(null), G = (0, s.Z)(B), F = (0, b.$m)(), H = (0, a.q_F)({
-    opacity: +(null != F.interactionType),
+  }), B = i.useRef(null), F = (0, s.Z)(B), G = (0, b.$m)(), H = (0, a.q_F)({
+    opacity: +(null != G.interactionType),
     config: {
       duration: 150
     }
@@ -83,14 +83,14 @@ function R(e) {
       fetchEndedAt: null == M ? void 0 : M.fetchEndedAt,
       isLoaded: null == M ? void 0 : M.isLoaded,
       children: (0, r.jsx)(b.NJ, {
-        value: F,
+        value: G,
         children: (0, r.jsxs)(x.Z, {
           ref: B,
           user: t,
           displayProfile: M,
           profileType: Z.y0.PANEL,
           themeOverride: L,
-          children: [null != F.interactionType && (0, r.jsx)(l.animated.div, {
+          children: [null != G.interactionType && (0, r.jsx)(l.animated.div, {
             style: H,
             className: A.backdrop
           }), (0, r.jsxs)(o.u2, {
@@ -99,7 +99,7 @@ function R(e) {
               children: [(0, r.jsx)(O.Z, {
                 user: t,
                 profileType: Z.y0.PANEL,
-                shouldShowTooltip: null === F.interactionType
+                shouldShowTooltip: null === G.interactionType
               }), t.bot ? (0, r.jsx)(v.Z, {
                 user: t
               }) : (0, r.jsx)(E.Z, {
@@ -111,7 +111,7 @@ function R(e) {
                 user: t,
                 displayProfile: M,
                 profileType: Z.y0.PANEL,
-                animateOnHover: !G,
+                animateOnHover: !F,
                 className: A.banner
               }), (0, r.jsx)(C.Z, {
                 userId: t.id,
@@ -136,7 +136,7 @@ function R(e) {
               currentUser: n,
               displayProfile: M,
               channel: R,
-              isHovering: null == F.interactionType && G,
+              isHovering: null == G.interactionType && F,
               onOpenProfile: k ? void 0 : V
             }), (0, r.jsx)(S.Z, {
               user: t
@@ -158,7 +158,7 @@ function R(e) {
             })
           }), (null == M ? void 0 : M.profileEffectId) != null && (0, r.jsx)(h.Z, {
             profileEffectId: null == M ? void 0 : M.profileEffectId,
-            isHovering: G
+            isHovering: F
           })]
         })
       })

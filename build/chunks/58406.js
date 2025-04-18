@@ -5,8 +5,8 @@ n.d(t, {
 }), n(415506);
 var r = n(626135),
   i = n(823967),
-  o = n(281058),
-  a = n(761274),
+  a = n(281058),
+  o = n(761274),
   s = n(981631),
   l = n(388032);
 
@@ -37,9 +37,9 @@ class d {
     r.default.track(s.rMx.PERMISSIONS_REQUESTED, {
       type: e
     });
-    let o = await t(),
-      l = o === a.NZ.AUTHORIZED || o === a.NZ.LIMITED,
-      c = l ? a.PQ.ACCEPTED : a.PQ.DENIED;
+    let a = await t(),
+      l = a === o.NZ.AUTHORIZED || a === o.NZ.LIMITED,
+      c = l ? o.PQ.ACCEPTED : o.PQ.DENIED;
     return i.Z.setPermission(e, c), !l && n.showAuthorizationError && this.showAlert(e), l
   }
   requestPermission(e, t) {
@@ -52,11 +52,11 @@ class d {
   }
   showAlert(e) {
     let t = {
-      [a.Eu.CAMERA]: "".concat(l.NW.string(l.t["68G7fH"]), ". ").concat(l.NW.string(l.t["5Jvu1d"])),
-      [a.Eu.AUDIO]: "".concat(l.NW.string(l.t.xisTfX), ". ").concat(l.NW.string(l.t["5Jvu1d"])),
-      [a.Eu.PHOTOS]: "".concat(l.NW.string(l.t.jQHU4O), ". ").concat(l.NW.string(l.t["5Jvu1d"])),
-      [a.Eu.INPUT_MONITORING]: "".concat(l.NW.string(l.t.UIBqsb), ". ").concat(l.NW.string(l.t["5Jvu1d"])),
-      [a.Eu.CONTACTS]: "".concat(l.NW.string(l.t.kTtf7u), ". ").concat(l.NW.string(l.t["5Jvu1d"]))
+      [o.Eu.CAMERA]: "".concat(l.NW.string(l.t["68G7fH"]), ". ").concat(l.NW.string(l.t["5Jvu1d"])),
+      [o.Eu.AUDIO]: "".concat(l.NW.string(l.t.xisTfX), ". ").concat(l.NW.string(l.t["5Jvu1d"])),
+      [o.Eu.PHOTOS]: "".concat(l.NW.string(l.t.jQHU4O), ". ").concat(l.NW.string(l.t["5Jvu1d"])),
+      [o.Eu.INPUT_MONITORING]: "".concat(l.NW.string(l.t.UIBqsb), ". ").concat(l.NW.string(l.t["5Jvu1d"])),
+      [o.Eu.CONTACTS]: "".concat(l.NW.string(l.t.kTtf7u), ". ").concat(l.NW.string(l.t["5Jvu1d"]))
     } [e];
     null != t && this.openAlertModal({
       title: l.NW.string(l.t.u1Gxpq),
@@ -73,6 +73,6 @@ class d {
     return null == e ? t : u({}, t, e)
   }
   constructor() {
-    c(this, "storage", new o.Z)
+    c(this, "storage", new a.Z)
   }
 }

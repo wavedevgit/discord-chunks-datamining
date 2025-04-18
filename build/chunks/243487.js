@@ -72,12 +72,12 @@ function G(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let U = e => {
+let F = e => {
   let t = (null != e ? e : 0) % C.Z.DEFAULT_AVATARS.length;
   return C.Z.DEFAULT_AVATARS[t]
 };
 
-function F(e) {
+function U(e) {
   var t, n;
   let {
     hiddenVoiceStates: i,
@@ -91,7 +91,7 @@ function F(e) {
     if (null == n) return;
     let r = h.Z.getChannel(null == (t = l.get(e)) ? void 0 : t.voiceState.channelId);
     return n.getAvatarURL(null == r ? void 0 : r.getGuildId(), f, !1)
-  }).filter(E.lm), [i, l, f]), O = null != (t = g[0]) ? t : U(0), m = null != (n = g[1]) ? n : U(1);
+  }).filter(E.lm), [i, l, f]), O = null != (t = g[0]) ? t : F(0), m = null != (n = g[1]) ? n : F(1);
   return (0, r.jsxs)("div", {
     className: o()(L.hiddenVoiceStates, u && L.locked, p && L.flipped),
     children: [(0, r.jsx)("div", {
@@ -173,7 +173,7 @@ let z = i.memo(function(e) {
       displayNameMode: c,
       displayUserMode: u,
       locked: d
-    }, C[0]), D && C.length > 1 && (0, r.jsx)(F, {
+    }, C[0]), D && C.length > 1 && (0, r.jsx)(U, {
       hiddenVoiceStates: C,
       voiceStateMap: P,
       size: (0, A.px)(v),

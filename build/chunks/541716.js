@@ -2,15 +2,15 @@
 "use strict";
 n.d(t, {
   Ie: () => I,
-  OW: () => o,
-  gy: () => a
+  OW: () => a,
+  gy: () => o
 });
 var r = n(873546),
   i = n(703558),
-  o = function(e) {
+  a = function(e) {
     return e[e.TOOLTIP = 0] = "TOOLTIP", e[e.STATIC = 1] = "STATIC", e[e.NONE = 2] = "NONE", e
   }({}),
-  a = function(e) {
+  o = function(e) {
     return e[e.DEFAULT = 0] = "DEFAULT", e[e.INLINE = 1] = "INLINE", e[e.FLUSH = 2] = "FLUSH", e
   }({});
 let s = {

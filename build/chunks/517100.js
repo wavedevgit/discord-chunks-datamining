@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => D
 });
 var r, i = n(442837),
-  o = n(570140),
-  a = n(287734),
+  a = n(570140),
+  o = n(287734),
   s = n(579806),
   l = n(695346),
   c = n(70956),
@@ -34,21 +34,21 @@ function v() {
 }
 
 function O() {
-  Date.now() - h > Math.min(l.CM.getSetting() * c.Z.Millis.SECOND, f.OSm) || v() ? g || o.Z.dispatch({
+  Date.now() - h > Math.min(l.CM.getSetting() * c.Z.Millis.SECOND, f.OSm) || v() ? g || a.Z.dispatch({
     type: "AFK",
     afk: !0
-  }) : g && o.Z.dispatch({
+  }) : g && a.Z.dispatch({
     type: "AFK",
     afk: !1
   })
 }
 
 function I() {
-  Date.now() - h > f.OSm || v() ? m || o.Z.dispatch({
+  Date.now() - h > f.OSm || v() ? m || a.Z.dispatch({
     type: "IDLE",
     idle: !0,
     idleSince: h
-  }) : m && o.Z.dispatch({
+  }) : m && a.Z.dispatch({
     type: "IDLE",
     idle: !1
   })
@@ -97,7 +97,7 @@ function P(e) {
     timestamp: t,
     type: n
   } = e, r = "OVERLAY_SET_NOT_IDLE" === n && null != t;
-  return (!r || !(t <= h)) && (h = r ? t : Date.now(), __OVERLAY__ ? o.Z.dispatch({
+  return (!r || !(t <= h)) && (h = r ? t : Date.now(), __OVERLAY__ ? a.Z.dispatch({
     type: "OVERLAY_SET_NOT_IDLE",
     timestamp: h
   }) : S(), !1)
@@ -105,7 +105,7 @@ function P(e) {
 __OVERLAY__ || (u.isPlatformEmbedded && (null === s.Z || void 0 === s.Z ? void 0 : s.Z.remotePowerMonitor) != null ? (T(), s.Z.remotePowerMonitor.on("resume", () => {
   E = !1, P({})
 }), s.Z.remotePowerMonitor.on("suspend", () => {
-  E = !0, P({}), a.default.disconnect()
+  E = !0, P({}), o.default.disconnect()
 }), s.Z.remotePowerMonitor.on("lock-screen", () => {
   b = !0, P({})
 }), s.Z.remotePowerMonitor.on("unlock-screen", () => {
@@ -123,7 +123,7 @@ class w extends(r = i.ZP.Store) {
   }
 }
 p(w, "displayName", "IdleStore");
-let D = new w(o.Z, {
+let D = new w(a.Z, {
   IDLE: N,
   AFK: A,
   SPEAKING: C,

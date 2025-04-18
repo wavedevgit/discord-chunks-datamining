@@ -5,17 +5,17 @@ n.d(t, {
 });
 var r = n(291476),
   i = n(993192),
-  o = n(731965);
+  a = n(731965);
 
-function a(e, t) {
+function o(e, t) {
   return e === t
 }
 
 function s(e) {
-  let t = (0, i.F)((0, r.XR)((t, n, r) => e(e => (0, o.j)(() => t(e)), n, r)));
+  let t = (0, i.F)((0, r.XR)((t, n, r) => e(e => (0, a.j)(() => t(e)), n, r)));
 
   function n(e) {
-    let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : a;
+    let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : o;
     return t(e, n)
   }
 
@@ -25,7 +25,7 @@ function s(e) {
   }
 
   function l(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : a;
+    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : o;
     return n(t => t[e], t)
   }
 
@@ -33,7 +33,7 @@ function s(e) {
     return s(t => t[e])
   }
   let u = e => {
-    (0, o.j)(() => t.setState(e))
+    (0, a.j)(() => t.setState(e))
   };
 
   function d() {

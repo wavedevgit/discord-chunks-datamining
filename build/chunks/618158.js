@@ -1,19 +1,19 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Y: () => a,
+  Y: () => o,
   Z: () => s
 });
 var r = n(200651),
   i = n(192379),
-  o = n(937995);
+  a = n(937995);
 
-function a(e) {
+function o(e) {
   let {
     onPreventIdle: t,
     onAllowIdle: n,
     onActive: r
-  } = i.useContext(o.nM);
+  } = i.useContext(a.nM);
   return {
     preventIdle: i.useCallback(() => {
       t(e)
@@ -32,10 +32,10 @@ function s(e) {
   } = e, {
     onForceIdle: s,
     onActive: l
-  } = i.useContext(o.nM), {
+  } = i.useContext(a.nM), {
     preventIdle: c,
     allowIdle: u
-  } = a("interact");
+  } = o("interact");
   i.useEffect(() => () => u(), [u]);
   let d = i.useCallback(e => {
     var t;

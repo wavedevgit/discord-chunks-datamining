@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(415506);
 var r = n(200651),
   i = n(192379),
-  o = n(734530),
-  a = n(780384),
+  a = n(734530),
+  o = n(780384),
   s = n(481060),
   l = n(410030),
   c = n(231338),
@@ -29,11 +29,11 @@ let m = function(e) {
       let t = window.getComputedStyle(e),
         r = window.getComputedStyle(e, "::placeholder"),
         i = t.getPropertyValue("font-family"),
-        o = t.getPropertyValue("font-weight");
+        a = t.getPropertyValue("font-weight");
       g({
         base: {
           fontFamily: i,
-          fontWeight: o,
+          fontWeight: a,
           color: t.getPropertyValue("color"),
           fontSize: t.getPropertyValue("font-size"),
           backgroundColor: E,
@@ -46,7 +46,7 @@ let m = function(e) {
       })
     }, [n, E]), e.type) {
     case c.He.PRZELEWY24: {
-      let i = (0, a.wj)(t) ? p : h,
+      let i = (0, o.wj)(t) ? p : h,
         {
           onNameChange: l,
           onEmailChange: c,
@@ -77,7 +77,7 @@ let m = function(e) {
         }), (0, r.jsxs)(s.hjN, {
           className: d.nonTopInputWrapper,
           title: u.NW.string(u.t.De3b8v),
-          children: [(0, r.jsx)(o.P24BankElement, {
+          children: [(0, r.jsx)(a.P24BankElement, {
             options: {
               value: _,
               style: m
@@ -99,7 +99,7 @@ let m = function(e) {
         onEPSBankChange: l,
         epsBankValue: c,
         billingAddressInfo: p
-      } = e, h = (0, a.wj)(t) ? f : _;
+      } = e, h = (0, o.wj)(t) ? f : _;
       return (0, r.jsxs)("div", {
         className: d.body,
         children: [(0, r.jsx)(s.hjN, {
@@ -114,7 +114,7 @@ let m = function(e) {
         }), (0, r.jsxs)(s.hjN, {
           className: d.nonTopInputWrapper,
           title: u.NW.string(u.t.dFyV09),
-          children: [(0, r.jsx)(o.EpsBankElement, {
+          children: [(0, r.jsx)(a.EpsBankElement, {
             options: {
               value: c,
               style: m

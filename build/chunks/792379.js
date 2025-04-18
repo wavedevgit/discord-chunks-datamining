@@ -62,7 +62,7 @@ function R(e) {
     layout: "SIMPLIFIED_DM_PANEL",
     userId: t.id,
     channelId: n.id
-  }), U = i.useRef(null), B = (0, a.Z)(U), G = e => {
+  }), U = i.useRef(null), B = (0, a.Z)(U), F = e => {
     (0, P.openUserProfileModal)(w({
       sourceAnalyticsLocations: D,
       hideRestrictedProfile: !0
@@ -100,7 +100,7 @@ function R(e) {
               displayProfile: k,
               channelId: n.id,
               profileType: S.y0.PANEL,
-              onOpenProfile: R ? void 0 : G
+              onOpenProfile: R ? void 0 : F
             }), t.isClyde() && (0, r.jsx)(p.Z, {
               className: T.headerTag
             })]
@@ -111,7 +111,7 @@ function R(e) {
               profileType: S.y0.PANEL,
               nickname: f.ZP.getName(null, n.id, t),
               pronouns: null == k ? void 0 : k.pronouns,
-              onOpenProfile: R ? void 0 : G,
+              onOpenProfile: R ? void 0 : F,
               tags: (0, r.jsx)(y.Z, {
                 displayProfile: k,
                 profileType: S.y0.PANEL
@@ -144,7 +144,7 @@ function R(e) {
             look: o.zxk.Looks.BLANK,
             color: T.footerButtonColor,
             onClick: () => {
-              G(), (0, g.pQ)(w({
+              F(), (0, g.pQ)(w({
                 action: "PRESS_VIEW_PROFILE",
                 analyticsLocations: D
               }, W))

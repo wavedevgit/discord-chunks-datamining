@@ -7,8 +7,8 @@ n.d(t, {
   ZP: () => H,
   kE: () => L
 });
-var i, o = n(192379),
-  a = n(442837),
+var i, a = n(192379),
+  o = n(442837),
   s = n(570140),
   l = n(872810),
   c = n(998594),
@@ -59,13 +59,13 @@ function w() {
 }
 
 function D() {
-  return (0, o.useEffect)(() => (T++, w(), () => {
+  return (0, a.useEffect)(() => (T++, w(), () => {
     0 == --T && w()
   }), [])
 }
 
 function L() {
-  return (0, o.useEffect)(() => (N++, w(), () => {
+  return (0, a.useEffect)(() => (N++, w(), () => {
     --N, w()
   }), [])
 }
@@ -91,7 +91,7 @@ function j() {
     sourceName: null != (e = M()) ? e : v.NW.string(v.t["KKcy9/"])
   }
 }
-class U extends(i = a.ZP.Store) {
+class U extends(i = o.ZP.Store) {
   initialize() {
     this.syncWith([f.Z, p.Z, u.Z, d.Z, _.Z], x), c.Z.subscribe({
       location: "NativeScreenSharePickerStore_initialize"

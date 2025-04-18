@@ -144,7 +144,7 @@ function G(e, t) {
     setHideConnectedAnimation: s
   }), [l, n, a, s])
 }
-let U = i.memo(function(e) {
+let F = i.memo(function(e) {
     let {
       nick: t,
       connectedOn: n,
@@ -209,7 +209,7 @@ let U = i.memo(function(e) {
       })
     })
   }),
-  F = i.memo(function(e) {
+  U = i.memo(function(e) {
     let {
       avatarSize: t,
       userId: n,
@@ -344,7 +344,7 @@ let U = i.memo(function(e) {
             children: u
           })]
         })
-      }), !R && (0, r.jsx)(U, {
+      }), !R && (0, r.jsx)(F, {
         nick: u,
         connectedOn: L,
         isSettingsPreview: C,
@@ -355,7 +355,7 @@ let U = i.memo(function(e) {
         size: ep,
         src: eg,
         "aria-hidden": !0
-      }), (0, r.jsx)(F, {
+      }), (0, r.jsx)(U, {
         avatarSize: ef,
         userId: a.id,
         channelId: t.id,
@@ -377,7 +377,7 @@ let U = i.memo(function(e) {
         size: ep,
         src: eg,
         "aria-hidden": !0
-      }), !R && (0, r.jsx)(U, {
+      }), !R && (0, r.jsx)(F, {
         nick: u,
         connectedOn: L,
         isSettingsPreview: C,

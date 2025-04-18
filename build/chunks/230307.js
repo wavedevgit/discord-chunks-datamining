@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => m
 });
 var r, i = n(442837),
-  o = n(570140),
-  a = n(981631);
+  a = n(570140),
+  o = n(981631);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -38,15 +38,15 @@ function p(e) {
     duration: t,
     applicationId: n,
     distributor: r
-  } = e, i = l[n], o = new Date().toISOString(), s = 0, c = 0;
+  } = e, i = l[n], a = new Date().toISOString(), s = 0, c = 0;
   if (null != i) {
     var u;
     s = i.total_duration, c = null != (u = i.total_discord_sku_duration) ? u : 0
   }
-  s += t, r === a.GQo.DISCORD && (c += t), l[n] = {
+  s += t, r === o.GQo.DISCORD && (c += t), l[n] = {
     application_id: n,
     total_duration: s,
-    last_played_at: o,
+    last_played_at: a,
     total_discord_sku_duration: c
   }
 }
@@ -83,7 +83,7 @@ class h extends(r = i.ZP.Store) {
   }
 }
 s(h, "displayName", "LibraryApplicationStatisticsStore");
-let m = new h(o.Z, {
+let m = new h(a.Z, {
   USER_ACTIVITY_STATISTICS_FETCH_SUCCESS: _,
   ACTIVITY_UPDATE_START: p,
   LOGOUT: f

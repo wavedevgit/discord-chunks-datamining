@@ -82,10 +82,10 @@ function S(e) {
       animateOnHover: !0
     }),
     B = C.ZP.getName(t.guild_id, t.id, l),
-    G = A && !R,
-    F = t.hdStreamingUntil;
-  if (null == F || null == l || null == T) return null;
-  let H = s()(F).diff(s()(), "hours"),
+    F = A && !R,
+    G = t.hdStreamingUntil;
+  if (null == G || null == l || null == T) return null;
+  let H = s()(G).diff(s()(), "hours"),
     V = S ? O.NW.format(O.t["6LrV9f"], {
       username: B,
       num: H,
@@ -96,7 +96,7 @@ function S(e) {
     }) : O.NW.formatToPlainString(O.t.vNbVXF, {
       username: B
     }),
-    z = R ? O.NW.string(O.t.o7NIjY) : G ? O.NW.string(O.t.r6xhBw) : O.NW.string(O.t.yKw8Dg);
+    z = R ? O.NW.string(O.t.o7NIjY) : F ? O.NW.string(O.t.r6xhBw) : O.NW.string(O.t.yKw8Dg);
   return null == l || null == T ? null : (0, r.jsxs)(c.animated.div, {
     style: D,
     className: E.banner,
@@ -124,7 +124,7 @@ function S(e) {
             let n = (0, h.s_)(e.resolution, e.frameRate, t);
             return p.Z.setGoLiveSource(n), void a()
           }
-          if (G) return void a();
+          if (F) return void a();
           (0, d.ZDy)(async () => {
             let {
               default: e
@@ -138,7 +138,7 @@ function S(e) {
           [E.actionButton]: !0 !== A
         }),
         children: z
-      }), !G && (0, r.jsx)(d.P3F, {
+      }), !F && (0, r.jsx)(d.P3F, {
         className: E.x,
         onClick: a,
         children: (0, r.jsx)(d.Dio, {

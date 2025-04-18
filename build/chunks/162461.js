@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  DG: () => a,
+  DG: () => o,
   MY: () => s,
   iC: () => f,
   nP: () => d,
@@ -10,8 +10,8 @@ n.d(t, {
 });
 var r = n(818083),
   i = n(109911),
-  o = n(987338);
-let a = (0, r.B)({
+  a = n(987338);
+let o = (0, r.B)({
     kind: "user",
     id: "2024-03_content_inventory_memberlist_and_ranker",
     label: "Enables the memberlist content feed",
@@ -37,7 +37,7 @@ let a = (0, r.B)({
     kind: "user",
     id: "2025-02_hotwheels_v2_model",
     label: "Next iteration of the activity feed ranking model.",
-    commonTriggerPoint: o.$P.CONNECTION_OPEN,
+    commonTriggerPoint: a.$P.CONNECTION_OPEN,
     defaultConfig: {},
     treatments: [{
       id: 5,
@@ -53,7 +53,7 @@ let a = (0, r.B)({
 function l(e) {
   let {
     enabled: t
-  } = a.getCurrentConfig({
+  } = o.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: !0
@@ -65,7 +65,7 @@ function c(e) {
   let {
     enabled: t,
     impressionCappingEnabled: n
-  } = a.getCurrentConfig({
+  } = o.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: !1

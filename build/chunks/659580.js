@@ -50,8 +50,8 @@ function N(e) {
   let D = (0, y.Z)(T),
     _ = (0, O.Z)(w, x),
     L = (0, h.Z)(w, x),
-    W = (0, p.Z)(w),
-    k = (0, f.Z)(w),
+    k = (0, p.Z)(w),
+    W = (0, f.Z)(w),
     M = (0, m.Z)(w),
     U = o.Yn.DEFAULT,
     R = g.Z.isSelfDeaf(U),
@@ -68,9 +68,9 @@ function N(e) {
       "aria-label": S.NW.string(S.t.ZR1Ss7),
       children: [N ? _ : null, n ? L : null, !x && P ? (0, r.jsx)(a.kSQ, {
         label: S.NW.string(S.t["pS+K2N"]),
-        children: W
+        children: k
       }) : null, (0, r.jsxs)(a.kSQ, {
-        children: [E ? k : null, Z ? M : null, x ? (0, r.jsx)(a.Clw, {}) : null, x && I ? (0, r.jsx)(a.S89, {
+        children: [E ? W : null, Z ? M : null, x ? (0, r.jsx)(a.Clw, {}) : null, x && I ? (0, r.jsx)(a.S89, {
           id: "deafen",
           label: S.NW.string(S.t.wjcRFR),
           action: () => s.Z.toggleSelfDeaf({

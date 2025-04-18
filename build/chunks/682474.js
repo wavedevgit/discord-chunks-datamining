@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 var r, i = n(442837),
-  o = n(570140),
-  a = n(786761),
+  a = n(570140),
+  o = n(786761),
   s = n(592125),
   l = n(594174),
   c = n(823379),
@@ -57,7 +57,7 @@ function m(e) {
 }
 
 function g(e, t) {
-  let n = null == t ? null : (0, a.e5)(t);
+  let n = null == t ? null : (0, o.e5)(t);
   return h[e] = {
     loaded: !0,
     message: n
@@ -68,7 +68,7 @@ function E(e, t) {
   let n = y(e),
     r = v(e);
   return null != n && null != r && (h[e] = p(f({}, n), {
-    message: (0, a.wi)(r, t)
+    message: (0, o.wi)(r, t)
   }), !0)
 }
 
@@ -131,7 +131,7 @@ class C extends(r = i.ZP.Store) {
     }), h[e]
   }
 }
-d(C, "displayName", "ForumPostRecentMessageStore"), new C(o.Z, {
+d(C, "displayName", "ForumPostRecentMessageStore"), new C(a.Z, {
   CONNECTION_OPEN: O,
   MESSAGE_CREATE: S,
   MESSAGE_UPDATE: T,

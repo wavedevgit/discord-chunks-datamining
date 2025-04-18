@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(442837),
   i = n(704215),
-  o = n(243778),
-  a = n(944486),
+  a = n(243778),
+  o = n(944486),
   s = n(436952),
   l = n(839606),
   c = n(54480),
@@ -20,13 +20,13 @@ function d(e) {
     openPickerForChannel: d,
     setLastShownChatWallpaperPickerType: f,
     lastShownChatWallpaperPickerType: _
-  } = (0, l.B)(), p = (0, r.e7)([a.Z], () => a.Z.getCurrentlySelectedChannelId()), {
+  } = (0, l.B)(), p = (0, r.e7)([o.Z], () => o.Z.getCurrentlySelectedChannelId()), {
     canAccessPicker: h,
     entryPoint: m
   } = (0, c.m)({
     location: "useChatWallpaperPickerConfig",
     selectedChannelId: p
-  }), g = h && !t, [E, b] = (0, o.US)(g ? [i.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK] : [], void 0, !0), y = E === i.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK, [v, O] = (0, o.US)(y ? [i.z.CHAT_WALLPAPERS_PICKER_COACHMARK] : []);
+  }), g = h && !t, [E, b] = (0, a.US)(g ? [i.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK] : [], void 0, !0), y = E === i.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK, [v, O] = (0, a.US)(y ? [i.z.CHAT_WALLPAPERS_PICKER_COACHMARK] : []);
   if (!h) return;
   let I = y && v === i.z.CHAT_WALLPAPERS_PICKER_COACHMARK;
   if (I && null != p && null == n && _ !== l.j.COACHMARK && d(p), n === p) {

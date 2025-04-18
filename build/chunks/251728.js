@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(685816),
   i = n(549616),
-  o = n(794934),
-  a = n(885577),
+  a = n(794934),
+  o = n(885577),
   s = n(198647),
   l = n(690913),
   c = n(608413);
@@ -29,9 +29,9 @@ class d {
         case r.z.HERO:
           return s.s.fromServer(e);
         case r.z.FEATURED:
-          return o.I.fromServer(e);
+          return a.I.fromServer(e);
         case r.z.FEED:
-          return a.K.fromServer(e);
+          return o.K.fromServer(e);
         case r.z.WIDE_BANNER:
           return c.j.fromServer(e);
         case r.z.SHELF:

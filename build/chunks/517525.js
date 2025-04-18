@@ -72,10 +72,10 @@ let N = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
   A = {
     opacity: 1
   },
-  T = {
+  C = {
     borderRadius: "".concat(N, "px ").concat(N, "px ").concat(N, "px ").concat(N, "px")
   },
-  C = {
+  T = {
     borderRadius: "0px ".concat(N, "px ").concat(N, "px 0px")
   },
   D = {
@@ -97,9 +97,9 @@ let N = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
       } = e,
       A = (0, b.Wc)(o),
       {
-        analyticsLocations: T
+        analyticsLocations: C
       } = (0, p.ZP)(),
-      C = null != (0, y.Z)(o);
+      T = null != (0, y.Z)(o);
     try {
       t = (0, b.nG)(A)
     } catch (e) {
@@ -131,16 +131,16 @@ let N = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
           type: I.cd.STREAM_QUALITY_INDICATOR,
           has_premium_stream_fps: t,
           has_premium_stream_resolution: i,
-          location_stack: T
+          location_stack: C
         }), w(!0))
-      }, [t, i, D, N, w, T]), null == A) return null;
+      }, [t, i, D, N, w, C]), null == A) return null;
     let W = (0, r.jsx)(f.ua7, {
-      text: C ? _.NW.string(_.t.q8TiVl) : D ? _.NW.string(_.t.IHgpEh) : _.NW.string(_.t.vLb0VV),
+      text: T ? _.NW.string(_.t.q8TiVl) : D ? _.NW.string(_.t.IHgpEh) : _.NW.string(_.t.vLb0VV),
       position: "bottom",
       color: f.ua7.Colors.GREY,
       children: e => (0, r.jsxs)(f.P3F, x(Z({}, e), {
         onClick: U,
-        className: a()(j.qualityIndicator, g, E.eE[d], C ? j.qualityIndicatorLowQuality : j.qualityIndicatorFullQuality, {
+        className: a()(j.qualityIndicator, g, E.eE[d], T ? j.qualityIndicatorLowQuality : j.qualityIndicatorFullQuality, {
           [j.clickable]: k && D
         }),
         children: [D ? (0, r.jsx)(f.SrA, {
@@ -189,7 +189,7 @@ let N = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
         config: D
       }, "animate-always"),
       y = (0, f.q_F)({
-        to: v ? C : T,
+        to: v ? T : C,
         config: D
       }, "animate-always");
     return (e => {

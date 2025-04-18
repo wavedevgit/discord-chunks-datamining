@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  o = n.n(i),
-  a = n(481060),
+  a = n.n(i),
+  o = n(481060),
   s = n(28531),
   l = n(819758),
   c = n(149203),
@@ -18,12 +18,12 @@ let f = e => {
       emojiSubCategory: t
     } = e;
     return (0, r.jsxs)("div", {
-      className: o()(d.badgeLabel, t === c.t0.TOP_GUILD_EMOJI ? d.topGuildEmojiBadge : d.newlyAddedBadge),
+      className: a()(d.badgeLabel, t === c.t0.TOP_GUILD_EMOJI ? d.topGuildEmojiBadge : d.newlyAddedBadge),
       children: [t === c.t0.TOP_GUILD_EMOJI ? (0, r.jsx)(s.Z, {
         foreground: d.newlyAddedBadgeIcon
       }) : (0, r.jsx)(l.Z, {
         foreground: d.newlyAddedBadgeIcon
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-sm/semibold",
         color: "always-white",
         children: t === c.t0.TOP_GUILD_EMOJI ? u.NW.string(u.t.TR2B4e) : u.NW.string(u.t["1aZ4V1"])
@@ -41,17 +41,17 @@ let f = e => {
       emojiSubCategory: p = c.t0.NONE
     } = e;
     return (0, r.jsxs)("div", {
-      className: o()(d.inspector, t),
+      className: a()(d.inspector, t),
       children: [(0, r.jsx)("div", {
         className: d.graphicPrimary,
         "aria-hidden": !0,
         children: n
       }), (0, r.jsxs)("div", {
         className: d.textWrapper,
-        children: [(0, r.jsxs)(a.Text, {
+        children: [(0, r.jsxs)(o.Text, {
           className: d.titlePrimary,
           variant: "text-md/semibold",
-          children: [_ ? (0, r.jsx)(a.r7p, {
+          children: [_ ? (0, r.jsx)(o.r7p, {
             size: "custom",
             color: "currentColor",
             "aria-label": _ ? u.NW.formatToPlainString(u.t["+fdUkZ"], {
@@ -61,7 +61,7 @@ let f = e => {
             height: 15,
             className: d.favorite
           }) : null, s]
-        }), null != l && (0, r.jsx)(a.Text, {
+        }), null != l && (0, r.jsx)(o.Text, {
           className: d.titleSecondary,
           variant: "text-xs/normal",
           children: l

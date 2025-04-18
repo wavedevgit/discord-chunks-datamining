@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(433517),
   i = n(147913),
-  o = n(594174),
-  a = n(918505),
+  a = n(594174),
+  o = n(918505),
   s = n(548161),
   l = n(347649),
   c = n(776319),
@@ -29,12 +29,12 @@ function h() {
 }
 
 function m() {
-  if (!a.w8.getCurrentConfig({
+  if (!o.w8.getCurrentConfig({
       location: "b9eb97_1"
     }, {
       autoTrackExposure: !1
     }).enabled) return !1;
-  let e = o.default.getCurrentUser();
+  let e = a.default.getCurrentUser();
   if (null == e || e.isPomelo() || !e.hasVerifiedEmailOrPhone()) return !1;
   let t = (0, l.ov)() ? p : _,
     n = r.K.get(t);

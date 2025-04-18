@@ -3,19 +3,19 @@
 n.d(t, {
   DQ: () => l,
   He: () => s,
-  P1: () => a
+  P1: () => o
 });
 var r = n(825829),
   i = n(594174),
-  o = n(981631);
+  a = n(981631);
 
-function a(e) {
-  return void 0 !== e && e.type !== o.d4z.DM
+function o(e) {
+  return void 0 !== e && e.type !== a.d4z.DM
 }
 
 function s(e) {
   var t, n;
-  return null != (n = null == (t = i.default.getUser(e)) ? void 0 : t.hasFlag(o.xW$.SPAMMER)) && n
+  return null != (n = null == (t = i.default.getUser(e)) ? void 0 : t.hasFlag(a.xW$.SPAMMER)) && n
 }
 
 function l(e) {

@@ -34,13 +34,13 @@ e.exports = function(e) {
         relevance: 0
       }]
     },
-    o = {
+    a = {
       className: "bullet",
       begin: "^[ 	]*([*+-]|(\\d+\\.))(?=\\s+)",
       end: "\\s+",
       excludeEnd: !0
     },
-    a = {
+    o = {
       begin: /^\[[^\n]+\]:/,
       returnBegin: !0,
       contains: [{
@@ -152,12 +152,12 @@ e.exports = function(e) {
           contains: _
         }]
       }]
-    }, n, o, c, u, {
+    }, n, a, c, u, {
       className: "quote",
       begin: "^>\\s+",
       contains: _,
       end: "$"
-    }, i, r, l, a, {
+    }, i, r, l, o, {
       scope: "literal",
       match: /&([a-zA-Z0-9]+|#[0-9]{1,7}|#[Xx][0-9a-fA-F]{1,6});/
     }]

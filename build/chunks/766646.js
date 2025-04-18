@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  o = n.n(i),
-  a = n(782992);
+  a = n.n(i),
+  o = n(782992);
 
 function s(e) {
   let {
@@ -18,9 +18,9 @@ function s(e) {
   } = e;
   return (0, r.jsx)(n, {
     id: t,
-    className: o()({
-      [a.hiddenVisually]: !i,
-      [a.showOnFocus]: i
+    className: a()({
+      [o.hiddenVisually]: !i,
+      [o.showOnFocus]: i
     }),
     children: s
   })

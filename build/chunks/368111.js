@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(81825);
 
@@ -13,7 +13,7 @@ function i(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class o extends r.Z {
+class a extends r.Z {
   toString() {
     return this.name
   }

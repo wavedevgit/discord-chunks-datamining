@@ -19,11 +19,11 @@ var r = Object.assign || function(e) {
     }
   }();
 
-function o(e, t) {
+function a(e, t) {
   if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
 }
 
-function a(e, t) {
+function o(e, t) {
   if (!e) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
   return t && ("object" == typeof t || "function" == typeof t) ? t : e
 }
@@ -42,8 +42,8 @@ function s(e, t) {
 var l = n(706057);
 n(622865), e.exports = function(e) {
   function t(e, n, r, i, s) {
-    o(this, t);
-    var l = a(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
+    a(this, t);
+    var l = o(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
     return l._value = e, l._parent = n, l._animationClass = r, l._animationConfig = i, l._callback = s, l.__attach(), l
   }
   return s(t, e), i(t, [{

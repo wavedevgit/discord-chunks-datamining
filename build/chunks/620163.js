@@ -1651,6 +1651,12 @@ let eJ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         parent: eG.s6.DEVELOPER_OPTIONS_FLAGS,
         predicate: () => F.Z.isDeveloper
       },
+      [eG.s6.DEVELOPER_OPTIONS_ALWAYS_DELIVER]: {
+        section: eH.oAB.DEVELOPER_OPTIONS,
+        searchableTitles: ["Always deliver ads"],
+        parent: eG.s6.DEVELOPER_OPTIONS_FLAGS,
+        predicate: () => e6 && F.Z.isDeveloper
+      },
       [eG.s6.DEVELOPER_OPTIONS_SOURCE_MAPS]: {
         section: eH.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Source Maps"],

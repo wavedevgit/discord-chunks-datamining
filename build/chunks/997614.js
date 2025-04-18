@@ -79,8 +79,8 @@ function w(e) {
     }
   } = (0, a.j)(), U = t.getGuildId(), {
     mute: B,
-    suppress: G
-  } = (0, y.Z)(t), F = (0, l.e7)([v.Z], () => v.Z.isDeaf()), H = B || G || F, V = (0, h.sR)({
+    suppress: F
+  } = (0, y.Z)(t), G = (0, l.e7)([v.Z], () => v.Z.isDeaf()), H = B || F || G, V = (0, h.sR)({
     isSoundboardButtonDisabled: H
   }), [z, Y] = (0, p.cv)(V), {
     analyticsLocations: q
@@ -98,7 +98,7 @@ function w(e) {
   });
 
   function $() {
-    return B ? Z.NW.string(Z.t["Ox4/zc"]) : G ? Z.NW.string(Z.t["+YBKYG"]) : F ? Z.NW.string(Z.t.X1lQlp) : void 0
+    return B ? Z.NW.string(Z.t["Ox4/zc"]) : F ? Z.NW.string(Z.t["+YBKYG"]) : G ? Z.NW.string(Z.t.X1lQlp) : void 0
   }
 
   function ee(e) {

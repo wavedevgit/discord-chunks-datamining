@@ -7,9 +7,9 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  o = n(846519);
+  a = n(846519);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,7 +25,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -42,8 +42,8 @@ function u(e) {
   let {
     children: t,
     timeout: n
-  } = e, [a, u] = i.useState(!1), d = i.useRef(new Set), f = i.useRef(null);
-  i.useEffect(() => (f.current = new o.sW(n, () => u(!0)), f.current.delay(), () => {
+  } = e, [o, u] = i.useState(!1), d = i.useRef(new Set), f = i.useRef(null);
+  i.useEffect(() => (f.current = new a.sW(n, () => u(!0)), f.current.delay(), () => {
     var e;
     null == (e = f.current) || e.cancel(), f.current = null
   }), [n]);
@@ -74,11 +74,11 @@ function u(e) {
       onForceIdle: m
     }), [p, _, h, m]);
   return (0, r.jsx)(c.Provider, {
-    value: a,
+    value: o,
     children: (0, r.jsx)(l.Provider, {
       value: g,
       children: t(s({
-        idle: a
+        idle: o
       }, g))
     })
   })

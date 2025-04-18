@@ -7,14 +7,14 @@ n.d(t, {
   Tx: () => s,
   VR: () => _,
   W6: () => l,
-  wx: () => o.wx
+  wx: () => a.wx
 });
 var r = n(924301),
   i = n(131704),
-  o = n(245335);
+  a = n(245335);
 
-function a(e) {
-  return e.type === o.wx.GROUP_DM || null != e.channel && (0, i.bc)(e.channel.type)
+function o(e) {
+  return e.type === a.wx.GROUP_DM || null != e.channel && (0, i.bc)(e.channel.type)
 }
 
 function s(e) {
@@ -23,7 +23,7 @@ function s(e) {
 }
 
 function l(e) {
-  return e.target_type === o.Iq.ROLE_SUBSCRIPTIONS_PURCHASE
+  return e.target_type === a.Iq.ROLE_SUBSCRIPTIONS_PURCHASE
 }
 
 function c(e) {
@@ -31,17 +31,17 @@ function c(e) {
 }
 
 function u(e) {
-  return e.target_type === o.Iq.STREAM && null != e.target_user
+  return e.target_type === a.Iq.STREAM && null != e.target_user
 }
 
 function d(e) {
-  return e.type === o.wx.FRIEND || null == e.guild && null != e.inviter
+  return e.type === a.wx.FRIEND || null == e.guild && null != e.inviter
 }
 
 function f(e) {
-  return e.target_type === o.Iq.EMBEDDED_APPLICATION
+  return e.target_type === a.Iq.EMBEDDED_APPLICATION
 }
 
 function _(e) {
-  return "number" == typeof e.type ? e.type : a(e) ? o.wx.GROUP_DM : d(e) ? o.wx.FRIEND : o.wx.GUILD
+  return "number" == typeof e.type ? e.type : o(e) ? a.wx.GROUP_DM : d(e) ? a.wx.FRIEND : a.wx.GUILD
 }

@@ -4,15 +4,15 @@ n.d(t, {
   ML: () => s,
   nH: () => l,
   vK: () => d,
-  yV: () => o
+  yV: () => a
 });
 var r = n(180650),
   i = n(921948);
-let o = 1060,
-  a = 180,
+let a = 1060,
+  o = 180,
   s = e => e * (0, i.Z)(),
   l = function(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : a,
+    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : o,
       {
         primary: n,
         secondary: r

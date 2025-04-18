@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(252258),
-  o = n(481060),
-  a = n(570140),
+  a = n(481060),
+  o = n(570140),
   s = n(468026),
   l = n(522474),
   c = n(788983),
@@ -54,7 +54,7 @@ class v extends f.Z {
       code: t,
       message: n
     } = e;
-    (0, o.ZDy)(async () => e => (0, r.jsx)(s.default, b({
+    (0, a.ZDy)(async () => e => (0, r.jsx)(s.default, b({
       title: g.NW.formatToPlainString(g.t.hbiAOz, {
         code: t
       }),
@@ -62,22 +62,22 @@ class v extends f.Z {
     }, e)))
   }
   showLaunchErrorModal(e) {
-    (0, o.ZDy)(async () => t => (0, r.jsx)(s.default, b({
+    (0, a.ZDy)(async () => t => (0, r.jsx)(s.default, b({
       title: g.NW.string(g.t.PtobXV),
       body: e
     }, t)))
   }
   showDevShelfOverrideEnabled() {
-    (0, o.showToast)((0, o.createToast)(g.NW.string(g.t.JfA7IC), o.ToastType.SUCCESS))
+    (0, a.showToast)((0, a.createToast)(g.NW.string(g.t.JfA7IC), a.ToastType.SUCCESS))
   }
   leaveActivity(e) {
     let {
       location: t,
       applicationId: n,
       showFeedback: r,
-      shouldClosePopout: o = !0
+      shouldClosePopout: a = !0
     } = e;
-    a.Z.wait(() => {
+    o.Z.wait(() => {
       (0, d.mW)({
         location: t,
         applicationId: n,
@@ -85,7 +85,7 @@ class v extends f.Z {
       })
     }), (0, u.R)({
       isContextless: t.kind === i.E.CONTEXTLESS
-    }) && o && (0, c.xv)(m.KJ3.ACTIVITY_POPOUT)
+    }) && a && (0, c.xv)(m.KJ3.ACTIVITY_POPOUT)
   }
   hidePIPEmbed(e) {
     let {

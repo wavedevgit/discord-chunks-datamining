@@ -4,8 +4,8 @@ let r;
 n.d(t, {
   Z: () => v
 }), n(388685);
-var i, o = n(442837),
-  a = n(570140),
+var i, a = n(442837),
+  o = n(570140),
   s = n(180335);
 
 function l(e, t, n) {
@@ -63,7 +63,7 @@ function E(e) {
 function b() {
   f = !f
 }
-class y extends(i = o.ZP.Store) {
+class y extends(i = a.ZP.Store) {
   getFeeds() {
     return c
   }
@@ -93,12 +93,12 @@ class y extends(i = o.ZP.Store) {
       feedId: r
     } = e, i = this.getFeed(r);
     if (null == i || null == t) return;
-    let o = i.entries.reduce((e, t) => t.content.author_id === n ? [...e, t.content] : [...e], []);
-    return (0, s.vu)(o, t)
+    let a = i.entries.reduce((e, t) => t.content.author_id === n ? [...e, t.content] : [...e], []);
+    return (0, s.vu)(a, t)
   }
 }
 l(y, "displayName", "ContentInventoryStore");
-let v = new y(a.Z, {
+let v = new y(o.Z, {
   CONNECTION_OPEN: m,
   CONTENT_INVENTORY_SET_FEED: p,
   CONTENT_INVENTORY_SET_FEED_STATE: h,

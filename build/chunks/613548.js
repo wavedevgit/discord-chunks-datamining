@@ -41,8 +41,8 @@ var r = n(200651),
   W = n(594174),
   U = n(358221),
   B = n(887012),
-  G = n(444253),
-  F = n(355827),
+  F = n(444253),
+  G = n(355827),
   H = n(185935),
   V = n(795318),
   z = n(354459),
@@ -180,7 +180,7 @@ function $(e) {
     targetElementRef: L,
     position: "bottom",
     renderPopout: () => (0, r.jsx)(Z.Z, {
-      children: (0, r.jsx)(F.Z, {
+      children: (0, r.jsx)(G.Z, {
         channel: n
       })
     }),
@@ -219,7 +219,7 @@ function $(e) {
         closePopout: t
       } = e;
       return (0, r.jsx)(Z.Z, {
-        children: (0, r.jsx)(G.Z, {
+        children: (0, r.jsx)(F.Z, {
           channelId: et,
           onClose: t,
           appContext: l,

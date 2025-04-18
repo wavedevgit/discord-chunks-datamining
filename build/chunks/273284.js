@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(981631),
   i = n(388032);
 
-function o(e) {
+function a(e) {
   switch (e.type) {
     case r.IIU.STREAMING:
       let t = null != e.details && "" !== e.details ? e.details : e.name;
@@ -19,9 +19,9 @@ function o(e) {
         name: n
       }) : null;
     case r.IIU.WATCHING:
-      let o = null != e.details && "" !== e.details ? e.details : e.name;
-      return null != o ? i.NW.formatToPlainString(i.t.pW3Ip6, {
-        name: o
+      let a = null != e.details && "" !== e.details ? e.details : e.name;
+      return null != a ? i.NW.formatToPlainString(i.t.pW3Ip6, {
+        name: a
       }) : null;
     case r.IIU.COMPETING:
       return null != e.name ? i.NW.formatToPlainString(i.t.QQ2wVF, {

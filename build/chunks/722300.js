@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(692547),
-  o = n(481060),
-  a = n(686546),
+  a = n(481060),
+  o = n(686546),
   s = n(60034),
   l = n(686369),
   c = n(388032),
@@ -17,7 +17,7 @@ function d(e) {
   let {
     name: t,
     onRetry: n
-  } = e, d = (0, o.dQu)(i.Z.colors.BG_BASE_TERTIARY), f = (0, l.d)(d.hex()), _ = null != t ? t : c.NW.string(c.t.DmIUGB);
+  } = e, d = (0, a.dQu)(i.Z.colors.BG_BASE_TERTIARY), f = (0, l.d)(d.hex()), _ = null != t ? t : c.NW.string(c.t.DmIUGB);
   return (0, r.jsxs)("div", {
     className: u.container,
     children: [(0, r.jsx)("div", {
@@ -27,8 +27,8 @@ function d(e) {
       }
     }), (0, r.jsx)("div", {
       className: u.avatarContainer,
-      children: (0, r.jsx)(a.ZP, {
-        mask: a.QS.CLAN_ICON,
+      children: (0, r.jsx)(o.ZP, {
+        mask: o.QS.CLAN_ICON,
         width: 70,
         height: 70,
         children: (0, r.jsx)("div", {
@@ -41,17 +41,17 @@ function d(e) {
       })
     }), (0, r.jsxs)("div", {
       className: u.header,
-      children: [(0, r.jsx)(o.X6q, {
+      children: [(0, r.jsx)(a.X6q, {
         variant: "heading-lg/medium",
         color: "header-primary",
         children: _
-      }), (0, r.jsxs)(o.P3F, {
+      }), (0, r.jsxs)(a.P3F, {
         className: u.error,
         onClick: n,
-        children: [(0, r.jsx)(o.P4T, {
+        children: [(0, r.jsx)(a.P4T, {
           size: "sm",
           color: "currentColor"
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
           color: "text-warning",
           children: c.NW.string(c.t.tmGHjY)

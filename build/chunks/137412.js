@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(213919),
   i = n(570140),
-  o = n(317770),
-  a = n(358085);
+  a = n(317770),
+  o = n(358085);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -16,7 +16,7 @@ function s(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class l extends o.Z {
+class l extends a.Z {
   _initialize() {
     i.Z.subscribe("CONNECTION_OPEN", this.handleConnectionOpen)
   }
@@ -25,7 +25,7 @@ class l extends o.Z {
   }
   constructor(...e) {
     super(...e), s(this, "handleConnectionOpen", e => {
-      ((0, a.isWindows)() || (0, a.isMac)()) && r.encryptAndStoreTokens()
+      ((0, o.isWindows)() || (0, o.isMac)()) && r.encryptAndStoreTokens()
     })
   }
 }

@@ -69,8 +69,8 @@ function j(e) {
     applicationId: m
   } = e, p = (0, b.V_)(t), [_] = (0, b.Ym)(t), j = (0, o.e7)([v.Z], () => v.Z.getChannel(n)), Z = (0, o.e7)([S.default, h.default], () => (0, d.J)(i, h.default) ? null : S.default.getUser(i.userId)), x = l.useMemo(() => null != Z ? [Z] : [], [Z]), N = (0, g.q)(m), {
     analyticsLocations: w
-  } = (0, E.ZP)(), P = (0, u.O)(), R = i.activity.session_id, A = (0, f.Z)(i.activity, y.xjy.EMBEDDED) && (0, f.Z)(i.activity, y.xjy.CONTEXTLESS), [T, C] = l.useState(!1), D = null == Z ? void 0 : Z.id, M = l.useCallback(async e => {
-    e.stopPropagation(), null != m && null != D && (C(!0), await (0, c.Z)({
+  } = (0, E.ZP)(), P = (0, u.O)(), R = i.activity.session_id, A = (0, f.Z)(i.activity, y.xjy.EMBEDDED) && (0, f.Z)(i.activity, y.xjy.CONTEXTLESS), [C, T] = l.useState(!1), D = null == Z ? void 0 : Z.id, M = l.useCallback(async e => {
+    e.stopPropagation(), null != m && null != D && (T(!0), await (0, c.Z)({
       applicationId: m,
       activityChannelId: n,
       locationObject: P.location,
@@ -79,7 +79,7 @@ function j(e) {
       joinSessionId: R,
       instanceId: void 0,
       isContextlessActivity: A
-    }), C(!1))
+    }), T(!1))
   }, [m, D, P.location, w, R, n, A]);
   return null == j || null == Z || null == N ? null : (0, r.jsxs)("div", {
     className: I.splash,
@@ -108,7 +108,7 @@ function j(e) {
       className: I.buttons,
       children: (0, r.jsx)(s.zxk, {
         onClick: M,
-        submitting: T,
+        submitting: C,
         size: (0, b.ac)(p),
         className: I.button,
         color: s.zxk.Colors.PRIMARY,

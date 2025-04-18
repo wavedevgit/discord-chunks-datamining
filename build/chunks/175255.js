@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(147913),
   i = n(336197),
-  o = n(341298),
-  a = n(558921),
+  a = n(341298),
+  o = n(558921),
   s = n(981631);
 
 function l(e, t, n) {
@@ -22,7 +22,7 @@ class c extends r.Z {
     let {
       channel: t
     } = e;
-    (0, o.tr)(t) && (await (0, o.mM)(a.y), (0, i.Z)(s.Z5c.CHANNEL(null, t.id)))
+    (0, a.tr)(t) && (await (0, a.mM)(o.y), (0, i.Z)(s.Z5c.CHANNEL(null, t.id)))
   }
   constructor(...e) {
     super(...e), l(this, "actions", {

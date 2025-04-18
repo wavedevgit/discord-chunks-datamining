@@ -1,6 +1,6 @@
 /** Chunk was on 3656 **/
 n.d(t, {
-  Z: () => F
+  Z: () => G
 });
 var r = n(200651),
   i = n(192379),
@@ -42,7 +42,7 @@ var r = n(200651),
   U = n(906667),
   B = n(20493);
 
-function G(e) {
+function F(e) {
   let {
     canManageRoles: t,
     channel: n
@@ -65,7 +65,7 @@ function G(e) {
   })
 }
 
-function F(e) {
+function G(e) {
   var t, n;
   let {
     channel: p,
@@ -79,7 +79,7 @@ function F(e) {
     canManageRoles: v.Z.can(L.Plq.MANAGE_ROLES, p),
     canReadMessageHistory: v.Z.can(L.Plq.READ_MESSAGE_HISTORY, p)
   })), M = (0, l.e7)([b.Z], () => x === L.d4z.DM ? b.Z.getMutualGuilds(p.getRecipientId()) : null, [p, x]), {
-    systemDMRedesignEnabled: F
+    systemDMRedesignEnabled: G
   } = g.Z.useExperiment({
     location: "bf1a4f_1"
   }, {
@@ -102,7 +102,7 @@ function F(e) {
       }))
     }, [M, x, p, I]), i.useEffect(() => {
       (null == I ? void 0 : I.bot) && z === C.M.NOT_FETCHED && s.Z.fetch()
-    }, [null == I ? void 0 : I.bot, z]), p.isSystemDM()) return F ? (0, r.jsx)(w.Z, {
+    }, [null == I ? void 0 : I.bot, z]), p.isSystemDM()) return G ? (0, r.jsx)(w.Z, {
     channel: p
   }) : (0, r.jsx)(T.Z, {
     channel: p,
@@ -165,7 +165,7 @@ function F(e) {
       name: y
     })
   });
-  return k ? (0, r.jsx)(G, {
+  return k ? (0, r.jsx)(F, {
     channel: p,
     canManageRoles: R
   }) : (0, r.jsx)(N.ZP, {

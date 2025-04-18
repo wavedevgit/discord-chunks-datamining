@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  o = n.n(i),
-  a = n(442837),
+  a = n.n(i),
+  o = n(442837),
   s = n(686546),
   l = n(451478),
   c = n(768581),
@@ -22,7 +22,7 @@ function f(e) {
     iconSize: f,
     className: _,
     animate: p
-  } = e, h = (0, a.e7)([l.Z], () => l.Z.isFocused()), m = (0, c.pU)(i) ? i : c.ZP.getGuildIconURL({
+  } = e, h = (0, o.e7)([l.Z], () => l.Z.isFocused()), m = (0, c.pU)(i) ? i : c.ZP.getGuildIconURL({
     id: t,
     icon: i,
     size: f,
@@ -36,7 +36,7 @@ function f(e) {
       height: f,
       className: _,
       children: (0, r.jsx)("div", {
-        className: o()(d.guildIconImage, d.acronym),
+        className: a()(d.guildIconImage, d.acronym),
         children: e
       })
     })

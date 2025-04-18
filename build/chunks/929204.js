@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  o = n(626135),
-  a = n(981631);
+  a = n(626135),
+  o = n(981631);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -32,8 +32,8 @@ function l(e) {
 }
 
 function c(e) {
-  o.default.track(a.rMx.OPEN_MODAL, {
-    type: a.jXE.STICKER_PREMIUM_TIER_2_UPSELL_MODAL,
+  a.default.track(o.rMx.OPEN_MODAL, {
+    type: o.jXE.STICKER_PREMIUM_TIER_2_UPSELL_MODAL,
     location: e
   }), (0, i.ZDy)(async () => {
     let {

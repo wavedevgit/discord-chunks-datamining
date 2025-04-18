@@ -1,7 +1,7 @@
 /** Chunk was on 75862 **/
 n.d(t, {
   T: () => A,
-  Z: () => T
+  Z: () => C
 });
 var r = n(200651),
   l = n(192379),
@@ -80,7 +80,7 @@ function A(e) {
   }) : null
 }
 
-function T(e) {
+function C(e) {
   let {
     participant: t,
     channel: n,
@@ -88,8 +88,8 @@ function T(e) {
     width: s,
     paused: v,
     selected: A,
-    fit: T,
-    onVideoResize: C,
+    fit: C,
+    onVideoResize: T,
     blocked: D,
     ignored: M,
     noVideoRender: L = !1,
@@ -127,13 +127,13 @@ function T(e) {
     width: s,
     selected: A
   }) : (0, r.jsx)(E.Z, {
-    onResize: C,
+    onResize: T,
     wrapperClassName: w.videoWrapper,
     className: w.content,
     mirror: z,
     streamId: Y,
     videoComponent: W,
-    fit: T,
+    fit: C,
     paused: v,
     videoSpinnerContext: V.id === F ? c.m.SELF_VIDEO : c.m.REMOTE_VIDEO,
     userId: V.id

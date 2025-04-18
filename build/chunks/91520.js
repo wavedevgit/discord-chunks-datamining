@@ -1,6 +1,6 @@
 /** Chunk was on web.js **/
 "use strict";
-var r, i, o, a, s, l = n(127849),
+var r, i, a, o, s, l = n(127849),
   c = n(242606),
   u = n(48657),
   d = n(390827).set,
@@ -25,16 +25,16 @@ if (!v) {
       }
       e && e.enter()
     };
-  _ || m || h || !g || !E ? !p && y && y.resolve ? ((a = y.resolve(void 0)).constructor = y, s = u(a.then, a), r = function() {
+  _ || m || h || !g || !E ? !p && y && y.resolve ? ((o = y.resolve(void 0)).constructor = y, s = u(o.then, o), r = function() {
     s(I)
   }) : m ? r = function() {
     b.nextTick(I)
   } : (d = u(d, l), r = function() {
     d(I)
-  }) : (i = !0, o = E.createTextNode(""), new g(I).observe(o, {
+  }) : (i = !0, a = E.createTextNode(""), new g(I).observe(a, {
     characterData: !0
   }), r = function() {
-    o.data = i = !i
+    a.data = i = !i
   }), v = function(e) {
     O.head || r(), O.add(e)
   }

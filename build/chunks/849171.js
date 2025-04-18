@@ -38,8 +38,8 @@ var r, l = n(200651),
   P = n(819640),
   R = n(594174),
   A = n(823379),
-  T = n(5192),
-  C = n(388032),
+  C = n(5192),
+  T = n(388032),
   D = n(754438),
   M = ((r = {})[r.SMALL = 0] = "SMALL", r[r.MEDIUM = 1] = "MEDIUM", r[r.LARGE = 2] = "LARGE", r);
 let L = 1024,
@@ -67,7 +67,7 @@ function F(e) {
     max: 4,
     renderUser: e => {
       if (null == e) return null;
-      let t = T.ZP.getName(n, r, e);
+      let t = C.ZP.getName(n, r, e);
       return (0, l.jsx)(c.DY3, {
         text: t,
         color: c.FGA.GREY,
@@ -104,7 +104,7 @@ function Y(e) {
     return null != (e = f.ZP.getEmbeddedActivitiesForChannel(E.id).find(e => e.applicationId === a.id)) ? e : f.ZP.getEmbeddedActivitiesForStartingChannel(E.id).find(e => e.applicationId === a.id)
   }), {
     analyticsLocations: O
-  } = (0, j.ZP)(), I = (0, d.O)(), _ = T.ZP.getName(E.getGuildId(), E.id, null == b ? void 0 : b[0]), x = (0, g.s5)({
+  } = (0, j.ZP)(), I = (0, d.O)(), _ = C.ZP.getName(E.getGuildId(), E.id, null == b ? void 0 : b[0]), x = (0, g.s5)({
     userId: null == (t = R.default.getCurrentUser()) ? void 0 : t.id,
     channelId: E.id,
     application: a
@@ -131,10 +131,10 @@ function Y(e) {
         [D.medium]: 1 === v
       }),
       variant: "text-sm/normal",
-      children: b.length > 1 ? C.NW.formatToPlainString(C.t.cpe6CA, {
+      children: b.length > 1 ? T.NW.formatToPlainString(T.t.cpe6CA, {
         username: _,
         count: b.length - 1
-      }) : C.NW.formatToPlainString(C.t["7Uuia2"], {
+      }) : T.NW.formatToPlainString(T.t["7Uuia2"], {
         username: _
       })
     }), (0, l.jsx)(c.Text, {
@@ -163,7 +163,7 @@ function Y(e) {
         className: D.button,
         look: c.iLD.FILLED,
         color: c.zxk.Colors.WHITE,
-        children: C.NW.string(C.t["4i2vj4"])
+        children: T.NW.string(T.t["4i2vj4"])
       }) : null
     })]
   })

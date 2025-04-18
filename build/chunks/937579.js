@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(544891),
   i = n(704215),
-  o = n(570140),
-  a = n(605236),
+  a = n(570140),
+  o = n(605236),
   s = n(675478),
   l = n(626135),
   c = n(358085),
@@ -19,7 +19,7 @@ let d = () => {
 async function f(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
   if (t) {
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "BILLING_USER_OFFER_FETCH_START"
     });
     try {
@@ -38,7 +38,7 @@ async function f(e) {
         p = null != (n = _.body.user_trial_offer) ? n : null,
         h = null != (c = _.body.user_discount) ? c : null,
         m = null != (f = _.body.user_discount_offer) ? f : null;
-      return null == p && (0, a.un)(i.z.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING) && (0, s.w9)(i.z.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING), o.Z.dispatch({
+      return null == p && (0, o.un)(i.z.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING) && (0, s.w9)(i.z.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING), a.Z.dispatch({
         type: "BILLING_USER_OFFER_FETCH_SUCCESS",
         userTrialOffer: p,
         userDiscount: h,
@@ -49,7 +49,7 @@ async function f(e) {
         userDiscountOffer: m
       }
     } catch (e) {
-      o.Z.dispatch({
+      a.Z.dispatch({
         type: "BILLING_USER_OFFER_FETCH_FAIL"
       })
     }
@@ -69,14 +69,14 @@ function _(e, t) {
     rejectWithError: !1
   }).then(e => {
     var t, n, r;
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "BILLING_USER_OFFER_ACKNOWLEDGED_SUCCESS",
       userTrialOffer: null != (t = e.body.user_trial_offer) ? t : null,
       userDiscount: null != (n = e.body.user_discount) ? n : null,
       userDiscountOffer: null != (r = e.body.user_discount_offer) ? r : null
     })
   }).catch(e => {
-    404 === e.status && o.Z.dispatch({
+    404 === e.status && a.Z.dispatch({
       type: "BILLING_USER_OFFER_ACKNOWLEDGED_SUCCESS",
       userTrialOffer: null,
       userDiscount: null,

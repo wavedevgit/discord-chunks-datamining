@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 var r = n(754675),
   i = n(39493),
-  o = n(855543),
-  a = n(143866),
+  a = n(855543),
+  o = n(143866),
   s = n(142670),
   l = "[object Boolean]",
   c = "[object Date]",
@@ -49,10 +49,10 @@ e.exports = function(e, t, n) {
     case p:
       return new A(e);
     case f:
-      return o(e);
+      return a(e);
     case _:
       return new A;
     case h:
-      return a(e)
+      return o(e)
   }
 }

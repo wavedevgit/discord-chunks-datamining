@@ -1,6 +1,6 @@
 /** Chunk was on 93602 **/
 n.d(t, {
-  Z: () => k
+  Z: () => W
 });
 var r = n(200651);
 n(192379);
@@ -36,7 +36,7 @@ var l = n(120356),
   D = n(388032),
   _ = n(622802),
   L = n(126485);
-let W = e => {
+let k = e => {
     let {
       user: t,
       color: n,
@@ -54,7 +54,7 @@ let W = e => {
       }
     }, "custom-activity-button")
   },
-  k = (0, u.Z)(e => {
+  W = (0, u.Z)(e => {
     let {
       activity: t,
       embeddedActivity: n,
@@ -63,7 +63,7 @@ let W = e => {
       className: u,
       guildId: p,
       channelId: g,
-      source: k,
+      source: W,
       color: M = c.zxk.Colors.WHITE,
       look: U = c.zxk.Looks.OUTLINED,
       type: R,
@@ -105,7 +105,7 @@ let W = e => {
         return n
       })(Object(H)).forEach(function(e) {
         Object.defineProperty(z, e, Object.getOwnPropertyDescriptor(H, e))
-      }), t = z, (0, r.jsx)(W, {
+      }), t = z, (0, r.jsx)(k, {
         user: l,
         color: M,
         look: U,
@@ -141,7 +141,7 @@ let W = e => {
               user: l,
               guildId: p,
               channelId: g,
-              source: k,
+              source: W,
               look: U,
               color: M,
               onAction: V
@@ -149,7 +149,7 @@ let W = e => {
             n = (0, r.jsx)(I.Z, {
               activity: t,
               user: l,
-              source: k,
+              source: W,
               look: U,
               color: M,
               onAction: V

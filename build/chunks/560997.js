@@ -8,8 +8,8 @@ n.d(t, {
 });
 var r = n(442837),
   i = n(570140),
-  o = n(238514),
-  a = n(675478),
+  a = n(238514),
+  o = n(675478),
   s = n(581883),
   l = n(526761);
 
@@ -34,14 +34,14 @@ function u(e, t) {
 }
 
 function d(e, t, n, i) {
-  let o = () => {
+  let a = () => {
       var r;
       return n(null == (r = s.Z.settings[e]) ? void 0 : r[t])
     },
-    c = () => (0, r.e7)([s.Z], o);
+    c = () => (0, r.e7)([s.Z], a);
   return {
-    getSetting: o,
-    updateSetting: h(o, n => a.hW.updateAsync(e, e => {
+    getSetting: a,
+    updateSetting: h(a, n => o.hW.updateAsync(e, e => {
       e[t] = i(n, e[t])
     }, l.fy.INFREQUENT_USER_ACTION)),
     useSetting: c
@@ -49,22 +49,22 @@ function d(e, t, n, i) {
 }
 
 function f(e, t, n) {
-  let a = () => {
+  let o = () => {
     var r;
-    let i = o.Z.getState()[t];
+    let i = a.Z.getState()[t];
     return null != (r = null == i ? void 0 : i.settings[n]) ? r : e.getSetting()
   };
   return {
-    getSetting: a,
+    getSetting: o,
     useSetting: () => {
       let i = e.useSetting(),
-        a = (0, r.e7)([o.Z], () => {
-          let e = o.Z.getState()[t];
+        o = (0, r.e7)([a.Z], () => {
+          let e = a.Z.getState()[t];
           return null == e ? void 0 : e.settings[n]
         });
-      return null != a ? a : i
+      return null != o ? o : i
     },
-    updateSetting: h(a, r => o.Z.shouldSync(t) ? e.updateSetting(r) : (i.Z.dispatch({
+    updateSetting: h(o, r => a.Z.shouldSync(t) ? e.updateSetting(r) : (i.Z.dispatch({
       type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE",
       changes: {
         [t]: {
@@ -78,18 +78,18 @@ function f(e, t, n) {
 }
 
 function _(e, t, n, r) {
-  let o = () => {
+  let a = () => {
     var t;
     return null != (t = n()) ? t : e.getSetting()
   };
   return {
-    getSetting: o,
+    getSetting: a,
     useSetting: () => {
       let t = e.useSetting(),
         n = r();
       return null != n ? n : t
     },
-    updateSetting: h(o, n => (i.Z.dispatch({
+    updateSetting: h(a, n => (i.Z.dispatch({
       type: "USER_SETTINGS_OVERRIDE_CLEAR",
       settings: [t]
     }), e.updateSetting(n)))
@@ -102,18 +102,18 @@ function p(e) {
     isEligible: n,
     useIsEligible: r,
     eligibleDefault: i,
-    ineligibleDefault: o,
-    onUseDefault: a
+    ineligibleDefault: a,
+    onUseDefault: o
   } = e;
   return {
     getSetting: () => {
       let e = t.getSetting();
-      return null != e ? e : (null == a || a(), n() ? i() : o)
+      return null != e ? e : (null == o || o(), n() ? i() : a)
     },
     useSetting: () => {
       let e = t.useSetting(),
         n = r();
-      return null != e ? e : (null == a || a(), n ? i() : o)
+      return null != e ? e : (null == o || o(), n ? i() : a)
     },
     updateSetting: e => t.updateSetting(e)
   }

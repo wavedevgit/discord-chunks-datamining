@@ -1,8 +1,8 @@
 /** Chunk was on 93602 **/
 n.d(t, {
   ZP: () => M,
-  eJ: () => W,
-  nm: () => k
+  eJ: () => k,
+  nm: () => W
 }), n(539854), n(997841), n(388685);
 var r = n(200651),
   l = n(192379),
@@ -55,7 +55,7 @@ function L(e) {
   }
   return e
 }
-let W = e => {
+let k = e => {
   let {
     children: t,
     collapsed: n = !1,
@@ -68,7 +68,7 @@ let W = e => {
   })
 };
 
-function k(e) {
+function W(e) {
   let {
     className: t,
     mute: n,
@@ -92,14 +92,14 @@ function k(e) {
     user: C,
     disconnected: L
   } = e, {
-    enabled: W
+    enabled: k
   } = d.c.getCurrentConfig({
     location: "VoiceUserIcons"
   }, {
     autoTrackExposure: !0
   });
   if (f || b) return null;
-  let k = [],
+  let W = [],
     M = (0, r.jsx)(R, {
       iconClassName: y,
       mute: n,
@@ -108,7 +108,7 @@ function k(e) {
       deaf: c,
       serverDeaf: u
     });
-  m && (i ? k.push((0, r.jsx)(s.DY3, {
+  m && (i ? W.push((0, r.jsx)(s.DY3, {
     className: _.iconSpacing,
     text: D.NW.string(D.t["PXMZ//"]),
     children: (0, r.jsx)(s.Amn, {
@@ -117,7 +117,7 @@ function k(e) {
       className: o()(_.icon, y),
       colorClass: _.strikethrough
     })
-  }, "video")) : k.push((0, r.jsx)(s.DY3, {
+  }, "video")) : W.push((0, r.jsx)(s.DY3, {
     className: _.iconSpacing,
     text: D.NW.string(D.t.FlNoSU),
     children: (0, r.jsx)(s.Odl, {
@@ -125,7 +125,7 @@ function k(e) {
       color: "currentColor",
       className: o()(_.icon, y)
     })
-  }, "video"))), L && k.push((0, r.jsx)(s.DY3, {
+  }, "video"))), L && W.push((0, r.jsx)(s.DY3, {
     className: _.iconSpacing,
     text: D.NW.string(D.t.HFwRpq),
     children: (0, r.jsx)(s.P4T, {
@@ -133,8 +133,8 @@ function k(e) {
       color: s.TVs.colors.STATUS_WARNING_BACKGROUND
     })
   }, "disconnected"));
-  let V = W ? s.iWm : s.nG3;
-  null != v && k.push((0, r.jsx)(s.DY3, {
+  let V = k ? s.iWm : s.nG3;
+  null != v && W.push((0, r.jsx)(s.DY3, {
     text: (0, p.Z)(v.name),
     className: _.iconSpacing,
     children: (0, r.jsx)(V, {
@@ -142,17 +142,17 @@ function k(e) {
       color: "currentColor",
       className: o()(_.icon, y)
     })
-  }, "activity")), S === w.YE.XBOX || j === A.wR.XBOX ? k.push((0, r.jsx)("div", {
+  }, "activity")), S === w.YE.XBOX || j === A.wR.XBOX ? W.push((0, r.jsx)("div", {
     className: _.iconSpacing,
     children: (0, r.jsx)(I.Z, {
       className: o()(_.icon, y)
     })
-  }, "xbox")) : (S === w.YE.PLAYSTATION || j === A.wR.PLAYSTATION) && k.push((0, r.jsx)("div", {
+  }, "xbox")) : (S === w.YE.PLAYSTATION || j === A.wR.PLAYSTATION) && W.push((0, r.jsx)("div", {
     className: _.iconSpacing,
     children: (0, r.jsx)(Z.Z, {
       className: o()(_.icon, y)
     })
-  }, "playstation")), h && k.push((0, r.jsx)(s.DY3, {
+  }, "playstation")), h && W.push((0, r.jsx)(s.DY3, {
     className: _.iconSpacing,
     text: D.NW.string(D.t.JH1SJy),
     children: (0, r.jsx)(s.tEF, {
@@ -160,18 +160,18 @@ function k(e) {
       color: "currentColor",
       className: o()(_.icon, y)
     })
-  }, "watch")), g && k.push((0, r.jsx)("div", {
+  }, "watch")), g && W.push((0, r.jsx)("div", {
     className: o()(_.iconSpacing, _.liveIconSpacing),
     children: (0, r.jsx)(O.ZP, {
       size: O.ZP.Sizes.SMALL
     })
   }, "stream"));
   let F = null != N && !(0, x.yE)(N.flags, T.udG.EMBEDDED);
-  return 0 !== k.length || null != M || F ? (0, r.jsxs)("div", {
+  return 0 !== W.length || null != M || F ? (0, r.jsxs)("div", {
     className: o()(_.icons, t),
     children: [(0, r.jsxs)("div", {
       className: _.iconGroup,
-      children: [M, k]
+      children: [M, W]
     }), F && (0, r.jsx)("div", {
       className: _.iconGroup,
       children: (0, r.jsx)(U, {
@@ -213,7 +213,7 @@ let M = l.forwardRef(function(e, t) {
     onKeyDown: I,
     onDoubleClick: x,
     onContextMenu: w,
-    onMouseLeave: W,
+    onMouseLeave: k,
     onMouseDown: M,
     priority: U,
     speaking: R,
@@ -265,7 +265,7 @@ let M = l.forwardRef(function(e, t) {
       null == w || w(e, Q)
     },
     onMouseLeave: e => {
-      null == W || W(e, Q)
+      null == k || k(e, Q)
     },
     onMouseDown: e => {
       null == M || M(e, Q)
@@ -332,7 +332,7 @@ let M = l.forwardRef(function(e, t) {
         })(Object(t)).forEach(function(n) {
           Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
         }), e)) : null
-      }(), (0, r.jsx)(k, L({
+      }(), (0, r.jsx)(W, L({
         disabled: f
       }, y)), er && (!V && el ? (0, r.jsx)(s.DY3, {
         text: D.NW.string(D.t["+1H47u"]),

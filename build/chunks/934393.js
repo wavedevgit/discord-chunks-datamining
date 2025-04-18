@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(442837),
-  o = n(726542),
-  a = n(906732),
+  a = n(726542),
+  o = n(906732),
   s = n(231757),
   l = n(553795),
   c = n(475413),
@@ -21,11 +21,11 @@ function f(e) {
     onAction: f
   } = e, {
     newestAnalyticsLocation: _
-  } = (0, a.ZP)();
+  } = (0, o.ZP)();
   return (0, i.e7)([l.Z], () => null != l.Z.getAccount(null, t)) ? null : (0, r.jsx)(c.tG, {
     icon: n,
     text: d.NW.formatToPlainString(d.t.XWSHTU, {
-      platform: o.Z.get(t).name
+      platform: a.Z.get(t).name
     }),
     fullWidth: !0,
     onClick: e => {

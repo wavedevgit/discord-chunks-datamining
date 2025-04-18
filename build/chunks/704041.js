@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  o = n(481060),
-  a = n(835473),
+  a = n(481060),
+  o = n(835473),
   s = n(626135),
   l = n(709054),
   c = n(814059),
@@ -25,7 +25,7 @@ function y(e) {
   let {
     children: t
   } = e;
-  return (0, r.jsx)(o.f6W, {
+  return (0, r.jsx)(a.f6W, {
     theme: g.BR.DARK,
     disableAdaptiveTheme: !0,
     children: e => (0, r.jsx)("div", {
@@ -40,7 +40,7 @@ function v(e) {
     guildId: t,
     leaderboardId: n,
     source: r
-  } = e, o = {
+  } = e, a = {
     leaderboard: (0, u.Z)({
       guildId: null != t ? t : "",
       leaderboardId: n,
@@ -51,20 +51,20 @@ function v(e) {
       leaderboardId: n,
       intervalOffset: -1
     })
-  }, a = i.useRef(o);
+  }, o = i.useRef(a);
   i.useEffect(() => {
-    a.current = o
+    o.current = a
   }), i.useEffect(() => {
     let e, n, {
       leaderboard: i,
-      prevLeaderboard: o
-    } = a.current;
+      prevLeaderboard: a
+    } = o.current;
     if (null == i) return;
     let l = i.guild_settings.sort_by_statistic_id;
-    if (null != o) {
+    if (null != a) {
       var c, u;
-      let t = o.guild_settings.sort_by_statistic_id,
-        r = o.users[0];
+      let t = a.guild_settings.sort_by_statistic_id,
+        r = a.users[0];
       e = null == r ? void 0 : r.user_id, n = null == r || null == (u = r.statistics) || null == (c = u[t]) ? void 0 : c.value
     }
     s.default.track(h.rMx.LEADERBOARD_POPOUT_VIEWED, {
@@ -90,7 +90,7 @@ function O(e) {
   let {
     leaderboard: t,
     application: n
-  } = e, a = i.useMemo(() => (0, c.n)(l.default.extractTimestamp(t.interval_end)), [t]), s = n.getIconURL(m.Si.LARGE), u = null == s ? null : (0, r.jsx)("img", {
+  } = e, o = i.useMemo(() => (0, c.n)(l.default.extractTimestamp(t.interval_end)), [t]), s = n.getIconURL(m.Si.LARGE), u = null == s ? null : (0, r.jsx)("img", {
     className: b.gameIcon,
     src: s,
     "aria-hidden": !0,
@@ -98,16 +98,16 @@ function O(e) {
   });
   return (0, r.jsxs)("div", {
     className: b.header,
-    children: [u, (0, r.jsx)(o.LZC, {
+    children: [u, (0, r.jsx)(a.LZC, {
       size: 8,
       horizontal: !0
-    }), (0, r.jsx)(o.X6q, {
+    }), (0, r.jsx)(a.X6q, {
       variant: "text-xs/normal",
       className: b.leaderboardTitle,
       children: E.NW.format(E.t["MlT4+P"], {
         leaderboardName: n.name,
-        timeLeft: a,
-        leaderboardNameHook: (e, t) => (0, r.jsx)(o.Text, {
+        timeLeft: o,
+        leaderboardNameHook: (e, t) => (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
           className: b.leaderboardName,
           children: e
@@ -136,12 +136,12 @@ let I = e => {
     leaderboardId: s,
     intervalOffset: -1
   });
-  (0, o.Tbt)(g), v({
+  (0, a.Tbt)(g), v({
     guildId: n,
     leaderboardId: s,
     source: c
   });
-  let T = (0, a.q)(null == I || null == (t = I.settings) ? void 0 : t.application_id);
+  let T = (0, o.q)(null == I || null == (t = I.settings) ? void 0 : t.application_id);
   return null == I || null == T ? null : (0, r.jsx)(y, {
     children: (0, r.jsxs)("div", {
       className: b.popout,
@@ -165,11 +165,11 @@ let I = e => {
             leaderboardId: s
           })]
         })]
-      }), h ? (0, r.jsx)(o.P3F, {
+      }), h ? (0, r.jsx)(a.P3F, {
         onClick: () => m(!1),
         children: (0, r.jsx)("div", {
           className: b.exitPreviewModeButton,
-          children: (0, r.jsx)(o.Text, {
+          children: (0, r.jsx)(a.Text, {
             variant: "text-sm/medium",
             className: b.exitPreviewModeText,
             children: E.NW.string(E.t.GLeQe3)

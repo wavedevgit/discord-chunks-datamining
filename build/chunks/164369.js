@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(991656),
   i = n(70597),
-  o = n(991998),
-  a = n(896662),
+  a = n(991998),
+  o = n(896662),
   s = n(573347),
   l = n(536403),
   c = n(188650),
@@ -30,11 +30,11 @@ function _(e) {
   var m = (0, i.Z)(h, {
     months: p * _.months
   });
-  _.days = Math.abs((0, o.Z)(n, m));
+  _.days = Math.abs((0, a.Z)(n, m));
   var g = (0, i.Z)(m, {
     days: p * _.days
   });
-  _.hours = Math.abs((0, a.Z)(n, g));
+  _.hours = Math.abs((0, o.Z)(n, g));
   var E = (0, i.Z)(g, {
     hours: p * _.hours
   });

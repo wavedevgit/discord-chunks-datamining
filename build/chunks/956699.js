@@ -985,7 +985,7 @@ let ea = d.ZP.connectStores([D.default], () => ({
     onlyShowPreviewAppCollections: p,
     disableAppCollectionsCache: h,
     preventPopoutClose: b
-  } = e;
+  } = e, _ = B.zY.useSetting();
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(R.F, {
       setting: U.s6.DEVELOPER_OPTIONS_FLAGS,
@@ -1041,6 +1041,14 @@ let ea = d.ZP.connectStores([D.default], () => ({
               logAnalyticsEvents: e
             }),
             children: "Enable Logging of Analytics Events"
+          })
+        }), (0, r.jsx)(R.F, {
+          setting: U.s6.DEVELOPER_OPTIONS_ALWAYS_DELIVER,
+          children: (0, r.jsx)(g.j7V, {
+            value: _,
+            note: "Make user targetable for all active ads",
+            onChange: e => B.zY.updateSetting(e),
+            children: "Ads auto-targeting"
           })
         }), (0, r.jsx)(R.F, {
           setting: U.s6.DEVELOPER_OPTIONS_SOURCE_MAPS,

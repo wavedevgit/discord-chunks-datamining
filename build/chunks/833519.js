@@ -33,8 +33,8 @@ var r = n(200651),
   P = n(112560),
   R = n(442168),
   A = n(822296),
-  T = n(916771),
-  C = n(792517),
+  C = n(916771),
+  T = n(792517),
   D = (n(351483), n(979425)),
   M = n(651183),
   L = n(623825),
@@ -112,13 +112,13 @@ function z(e) {
     stream: Q,
     width: M
   });
-  if (null != ei || (null == Q ? void 0 : Q.state) === k.jm8.FAILED) return (0, r.jsx)(T.Z, {
+  if (null != ei || (null == Q ? void 0 : Q.state) === k.jm8.FAILED) return (0, r.jsx)(C.Z, {
     avError: ei,
     selected: n,
     stream: t.stream,
     width: M
   });
-  if (t.type === U.fO.HIDDEN_STREAM) return (0, r.jsx)(C.Z, {
+  if (t.type === U.fO.HIDDEN_STREAM) return (0, r.jsx)(T.Z, {
     selected: n,
     participant: t,
     width: M
