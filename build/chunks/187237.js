@@ -15,9 +15,13 @@ function d(e) {
   let {
     channel: t,
     children: n,
-    className: i
+    className: i,
+    editable: d,
+    location: p
   } = e;
-  return (0, a.I3)("HeaderBarMaybeClickableGdmIcon", t.id) ? (0, r.jsx)(o.ua7, {
+  return (0, a.I3)("HeaderBarMaybeClickableGdmIcon", t.id, {
+    autoTrackExposure: d
+  }) && d ? (0, r.jsx)(o.ua7, {
     position: "bottom",
     text: c.NW.string(c.t["0qPSMT"]),
     children: e => {
@@ -41,7 +45,7 @@ function d(e) {
         return e
       }({}, e), c = c = {
         className: l()(u.editableGdmIcon, i),
-        onClick: () => (0, s.P5)(t.id),
+        onClick: () => (0, s.P5)(t.id, p),
         children: [n, (0, r.jsx)("div", {
           className: u.editableGdmIconIndicator,
           children: (0, r.jsx)(o.vdY, {

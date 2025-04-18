@@ -1,63 +1,66 @@
 /** Chunk was on 41259 **/
-t.d(n, {
-  ND: () => d,
+n.d(t, {
+  ND: () => p,
   P5: () => h,
-  es: () => p
+  es: () => m
 });
-var l = t(200651);
-t(192379);
-var r = t(347715),
-  o = t(481060),
-  i = t(668781),
-  a = t(493683),
-  s = t(346486),
-  c = t(486324),
-  u = t(388032);
-let d = e => (0, o.ZDy)(async () => {
+var r = n(200651);
+n(192379);
+var l = n(347715),
+  o = n(481060),
+  a = n(668781),
+  i = n(493683),
+  c = n(100527),
+  s = n(346486),
+  u = n(486324),
+  d = n(388032);
+let p = (e, t) => (0, o.ZDy)(async () => {
     let {
-      default: n
-    } = await Promise.all([t.e("91689"), t.e("89289"), t.e("36016")]).then(t.bind(t, 28130));
-    return t => (0, l.jsx)(n, function(e) {
-      for (var n = 1; n < arguments.length; n++) {
-        var t = null != arguments[n] ? arguments[n] : {},
-          l = Object.keys(t);
-        "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(t, e).enumerable
-        }))), l.forEach(function(n) {
-          var l;
-          l = t[n], n in e ? Object.defineProperty(e, n, {
-            value: l,
+      default: l
+    } = await Promise.all([n.e("91689"), n.e("89289"), n.e("36016")]).then(n.bind(n, 28130));
+    return n => (0, r.jsx)(l, function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
             enumerable: !0,
             configurable: !0,
             writable: !0
-          }) : e[n] = l
+          }) : e[t] = r
         })
       }
       return e
     }({
       maxFileSizeBytes: 8388608,
       onComplete: e,
-      uploadType: c.pC.AVATAR,
+      uploadType: u.pC.AVATAR,
       showUpsellHeader: !1,
-      modalTitle: u.NW.string(u.t["6yrpFR"]),
+      modalTitle: d.NW.string(d.t["6yrpFR"]),
+      analyticsLocation: c.Z.GROUP_DM_ICON_EDITOR,
+      analyticsLocations: t,
       allowRecentAvatarsSelection: !1
-    }, t))
+    }, n))
   }),
-  h = e => {
-    d(n => {
-      a.Z.setIcon(e, n.imageUri).catch(p)
-    })
+  h = (e, t) => {
+    p(n => {
+      i.Z.setIcon(e, n.imageUri, t).catch(m)
+    }, [t])
   },
-  p = e => {
-    var n;
-    if ((null == e || null == (n = e.body) ? void 0 : n.retry_after) != null) {
-      let n = (0, r.Z)(new Date, e.body.retry_after);
-      i.Z.show({
-        title: u.NW.string(u.t["Whhv4+"]),
-        body: u.NW.format(u.t.VIJkAw, {
-          duration: (0, l.jsx)(s.Z, {
+  m = e => {
+    var t;
+    if ((null == e || null == (t = e.body) ? void 0 : t.retry_after) != null) {
+      let t = (0, l.Z)(new Date, e.body.retry_after);
+      a.Z.show({
+        title: d.NW.string(d.t["Whhv4+"]),
+        body: d.NW.format(d.t.VIJkAw, {
+          duration: (0, r.jsx)(s.Z, {
             showUnits: !0,
-            deadline: n
+            deadline: t
           })
         })
       })

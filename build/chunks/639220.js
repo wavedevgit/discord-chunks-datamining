@@ -15,7 +15,6 @@ e.exports = {
   headerForeground: "headerForeground__5ce63",
   close: "close__5ce63",
   footerContainer: "footerContainer__5ce63",
-  gradient: "gradient__5ce63",
   heading: "heading__5ce63",
   nitroHeading: "nitroHeading__5ce63",
   cta: "cta__5ce63",
@@ -27,7 +26,5 @@ e.exports = {
   errorModalCloseButton: "errorModalCloseButton__5ce63",
   errorContent: "errorContent__5ce63",
   errorModalFooter: "errorModalFooter__5ce63",
-  iconBackgroundFractional: "iconBackgroundFractional__5ce63",
-  iconFractional: "iconFractional__5ce63",
   spinnerContainer: "spinnerContainer__5ce63"
 }

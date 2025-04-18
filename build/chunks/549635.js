@@ -138,7 +138,7 @@ function T(e) {
     maxWidth: a,
     maxHeight: s,
     useFullWidth: !0,
-    shouldLink: !0,
+    shouldLink: !1,
     className: g.media,
     animated: !i && n.animated,
     autoPlay: !i,

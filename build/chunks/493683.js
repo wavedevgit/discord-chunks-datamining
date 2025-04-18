@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => O
+  Z: () => N
 }), n(388685);
 var r = n(544891),
   i = n(780384),
@@ -22,7 +22,46 @@ var r = n(544891),
   b = n(287734),
   y = n(981631),
   v = n(388032);
-let O = {
+
+function O(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: !0,
+    configurable: !0,
+    writable: !0
+  }) : e[t] = n, e
+}
+
+function I(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      O(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function S(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function T(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let N = {
   async openPrivateChannel(e) {
     let {
       recipientIds: t,
@@ -202,9 +241,20 @@ let O = {
       a = null == n ? void 0 : n.getGuildId();
     return null == a || (null == n ? void 0 : n.isThread()) || l.Z.checkGuildTemplateDirty(a), i
   },
-  async setIcon(e, t) {
-    let n = p.Z.getChannel(e),
-      i = await r.tn.patch({
+  async setIcon(e, t, n) {
+    let i = p.Z.getChannel(e),
+      a = {
+        channel_id: e,
+        channel_type: null == i ? void 0 : i.type,
+        old_icon_set: (null == i ? void 0 : i.icon) != null,
+        new_icon_set: null != t,
+        location: n
+      };
+    m.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, T(I({}, a), {
+      status: "initiated"
+    }));
+    try {
+      let n = await r.tn.patch({
         url: y.ANM.CHANNEL(e),
         body: {
           icon: t
@@ -212,9 +262,20 @@ let O = {
         oldFormErrors: !0,
         rejectWithError: !0,
         failImmediatelyWhenRateLimited: !0
-      }),
-      a = null == n ? void 0 : n.getGuildId();
-    return null == a || (null == n ? void 0 : n.isThread()) || l.Z.checkGuildTemplateDirty(a), i
+      });
+      m.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, T(I({}, a), {
+        status: "success"
+      }));
+      let o = null == i ? void 0 : i.getGuildId();
+      return null == o || (null == i ? void 0 : i.isThread()) || l.Z.checkGuildTemplateDirty(o), n
+    } catch (e) {
+      var o, s;
+      throw m.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, T(I({}, a), {
+        status: "failed",
+        is_rate_limited: (null == e || null == (o = e.body) ? void 0 : o.retry_after) != null,
+        error_message: null == e || null == (s = e.body) ? void 0 : s.message
+      })), e
+    }
   },
   setWallpaper: async (e, t) => await r.tn.patch({
     url: y.ANM.CHANNEL(e),

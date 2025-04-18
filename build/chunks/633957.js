@@ -20,8 +20,8 @@ var r = n(200651),
   b = n(311819),
   x = n(758199),
   y = n(943762),
-  v = n(914498),
-  E = n(208444),
+  E = n(914498),
+  v = n(208444),
   O = n(429551),
   N = n(973616),
   j = n(314897),
@@ -125,7 +125,7 @@ let U = i.memo(function(e) {
         instanceId: null == z ? void 0 : z.compositeInstanceId,
         isContextlessActivity: (null == z ? void 0 : z.location.kind) === a.E.CONTEXTLESS
       })
-    }, el = en.disabled ? L.NW.string(L.t.JBnc7O) : L.NW.string(L.t.cX9uLS), eo = (0, E.z)($, () => {
+    }, el = en.disabled ? L.NW.string(L.t.JBnc7O) : L.NW.string(L.t.cX9uLS), eo = (0, v.z)($, () => {
       T.default.track(k.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
         application_id: A.id,
         channel_id: Z,
@@ -145,7 +145,7 @@ let U = i.memo(function(e) {
     em = (0, y.r)(Q),
     ef = [{
       label: et ? L.NW.string(L.t.cnBQPD) : L.NW.string(L.t.VJlc0d),
-      trackingArea: v.j_.PLAY,
+      trackingArea: E.j_.PLAY,
       onClick: ea,
       disabledReason: O,
       submitting: ei
@@ -181,7 +181,7 @@ let U = i.memo(function(e) {
     actions: ef,
     trackingConfig: {
       id: A.id,
-      linkType: v.Un.ACTIVITY_INSTANCE
+      linkType: E.Un.ACTIVITY_INSTANCE
     }
   })
 })

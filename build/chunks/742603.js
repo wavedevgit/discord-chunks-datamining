@@ -89,7 +89,7 @@ function B(e) {
   })
 }
 
-function F(e) {
+function G(e) {
   let {
     user: t,
     channel: n,
@@ -111,7 +111,7 @@ function F(e) {
   })
 }
 
-function G(e) {
+function F(e) {
   let t, {
       focusedApplication: n,
       focusedParticipant: i,
@@ -143,7 +143,7 @@ function G(e) {
     t = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(y.ZP.Divider, {
         className: L.divider
-      }), (0, r.jsx)(F, {
+      }), (0, r.jsx)(G, {
         user: e,
         channel: l,
         stream: n,
@@ -181,7 +181,7 @@ function H(e) {
   let S = (0, o.e7)([p.Z], () => p.Z.getChannelStatus(t)),
     T = t.isGuildVoice() && c && null != S && S.length > 0,
     B = (0, P.ZP)(t),
-    F = T ? (0, r.jsx)(a.ua7, {
+    G = T ? (0, r.jsx)(a.ua7, {
       text: M.NW.string(M.t.Mgpxi4),
       delay: 500,
       position: "bottom",
@@ -232,7 +232,7 @@ function H(e) {
         onDoubleClick: C.O,
         transparent: !0,
         className: e,
-        childrenBottom: F,
+        childrenBottom: G,
         toolbar: (0, r.jsx)(Z.Z, {
           inPopout: s === R.IlC.POPOUT,
           channel: t,
@@ -260,7 +260,7 @@ function H(e) {
         }), (0, r.jsx)(x.TS, {
           channel: t,
           guild: i
-        }), (0, r.jsx)(G, {
+        }), (0, r.jsx)(F, {
           focusedApplication: E,
           focusedParticipant: g,
           channel: t

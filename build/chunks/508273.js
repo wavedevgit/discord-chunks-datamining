@@ -20,8 +20,8 @@ var r = n(200651),
   b = n(723776),
   x = n(910200),
   y = n(358595),
-  v = n(981631),
-  E = n(388032),
+  E = n(981631),
+  v = n(388032),
   O = n(583136);
 
 function N(e) {
@@ -30,7 +30,7 @@ function N(e) {
     isMemberOfGuild: n,
     onTransitionToInviteChannel: a,
     onAcceptInstantInvite: c
-  } = e, d = i.useRef(null), [p, f] = i.useState(!0), [h, N] = i.useState(!1), C = t.state === v.r2o.ACCEPTING, S = (0, o.e7)([u.Z], () => u.Z.useReducedMotion);
+  } = e, d = i.useRef(null), [p, f] = i.useState(!0), [h, N] = i.useState(!1), C = t.state === E.r2o.ACCEPTING, S = (0, o.e7)([u.Z], () => u.Z.useReducedMotion);
   i.useLayoutEffect(() => {
     var e, t;
     N((null != (t = null == (e = d.current) ? void 0 : e.clientHeight) ? t : 0) > 328)
@@ -87,7 +87,7 @@ function N(e) {
       children: (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "interactive-normal",
-        children: E.NW.string(E.t.xdCLeH)
+        children: v.NW.string(v.t.xdCLeH)
       })
     }) : null, (0, r.jsxs)("div", {
       className: l()(O.footer, {

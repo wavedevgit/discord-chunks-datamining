@@ -1,7 +1,7 @@
 /** Chunk was on 3656 **/
 n.d(t, {
   Q: () => W,
-  Z: () => F
+  Z: () => G
 });
 var r = n(200651),
   i = n(192379),
@@ -161,7 +161,7 @@ let W = 16 / 9,
       children: a && n.type === k.fO.USER && (0, r.jsx)(w.Z, {})
     }, m)
   },
-  F = i.memo(function(e) {
+  G = i.memo(function(e) {
     var t;
     let {
       participant: i,

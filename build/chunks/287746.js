@@ -41,8 +41,8 @@ var r = n(200651),
   W = n(541716),
   U = n(752305),
   B = n(516887),
-  F = n(974251),
-  G = n(893718),
+  G = n(974251),
+  F = n(893718),
   H = n(436660),
   V = n(131565),
   z = n(680783),
@@ -95,8 +95,8 @@ var r = n(200651),
   eW = n(979956),
   eU = n(655687),
   eB = n(165540),
-  eF = n(583027),
-  eG = n(25007),
+  eG = n(583027),
+  eF = n(25007),
   eH = n(685006),
   eV = n(685722),
   ez = n(199649),
@@ -252,7 +252,7 @@ class e6 extends i.PureComponent {
       pendingScheduledMessage: _
     } = this.props, {
       contentWarningProps: y
-    } = this.state, x = (0, r.jsx)(G.Z, {
+    } = this.state, x = (0, r.jsx)(F.Z, {
       ref: this.props.refInstance,
       textValue: this.state.textValue,
       richValue: this.state.richValue,
@@ -423,7 +423,7 @@ class e6 extends i.PureComponent {
           let {
             location: t,
             sectionName: n
-          } = null != (h = (0, eF._U)(l)) ? h : {}, r = e === R.bB.APPLICATION_LAUNCHER ? I.Z.lastShownEntrypoint() : P._b.TEXT, {
+          } = null != (h = (0, eG._U)(l)) ? h : {}, r = e === R.bB.APPLICATION_LAUNCHER ? I.Z.lastShownEntrypoint() : P._b.TEXT, {
             isAuthorized: i
           } = await (0, D.L)({
             applicationId: l.applicationId,
@@ -439,7 +439,7 @@ class e6 extends i.PureComponent {
             shouldClear: !1,
             shouldRefocus: !0
           });
-          (0, eF.SC)(l)
+          (0, eG.SC)(l)
         }
         let n = await (0, M.Z)({
           command: l,
@@ -549,7 +549,7 @@ class e6 extends i.PureComponent {
       var t, n;
       let r = null == (t = this.editorRef) ? void 0 : t.getSlateEditor();
       null != r && (H.Q.select(r, []), r.insertText(e), null == (n = this.editorRef) || n.focus())
-    }), e$(this, "renderAttachButton", (e, t) => (0, r.jsx)(F.Z, {
+    }), e$(this, "renderAttachButton", (e, t) => (0, r.jsx)(G.Z, {
       className: t,
       channel: this.props.channel,
       draftType: eO.d.ChannelMessage,
@@ -666,7 +666,7 @@ class e8 extends i.PureComponent {
         guildId: null == Z ? void 0 : Z.guild_id,
         location: "ChannelChat"
       }),
-      F = B && null != S && null != Z;
+      G = B && null != S && null != Z;
     return (0, r.jsx)(y.Z, {
       page: (0, ew.mE)(this.props.channel),
       children: (0, r.jsx)(en.sW, {
@@ -698,10 +698,10 @@ class e8 extends i.PureComponent {
               onFocus: this.handleChatInteract,
               children: [(0, r.jsx)(V.Z, {
                 channel: n
-              }), F && (0, r.jsx)(eq.Z, {
+              }), G && (0, r.jsx)(eq.Z, {
                 recipientUser: S,
                 voiceChannel: Z
-              }), (0, r.jsx)(eG.Z, {
+              }), (0, r.jsx)(eF.Z, {
                 channel: n,
                 guild: i,
                 narrow: R
@@ -907,7 +907,7 @@ let e5 = i.memo(function(e) {
     W = (0, Y.Q3)("ChannelChat"),
     U = (0, d.e7)([eS.Z], () => eS.Z.getVoiceChannelId()),
     B = (0, d.e7)([ej.Z], () => ej.Z.getChannel(U)),
-    F = (0, d.e7)([eT.default], () => t.type !== eK.d4z.DM ? null : eT.default.getUser(t.getRecipientId()));
+    G = (0, d.e7)([eT.default], () => t.type !== eK.d4z.DM ? null : eT.default.getUser(t.getRecipientId()));
   return (0, r.jsx)(e8, {
     channel: t,
     isEditing: null != (0, d.e7)([eE.Z], () => eE.Z.getEditingMessageId(t.id)),
@@ -934,7 +934,7 @@ let e5 = i.memo(function(e) {
     isRefreshChatInputEnabled: D,
     isRefreshEnabled: W,
     pendingScheduledMessage: x,
-    recipientUser: F,
+    recipientUser: G,
     voiceChannel: B,
     chatWallpaperState: j
   })

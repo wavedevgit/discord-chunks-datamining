@@ -62,7 +62,7 @@ function B(e) {
   return e
 }
 
-function F(e, t) {
+function G(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -74,7 +74,7 @@ function F(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class G extends i.PureComponent {
+class F extends i.PureComponent {
   componentDidMount() {
     let {
       isFollowable: e,
@@ -156,14 +156,14 @@ class G extends i.PureComponent {
         shouldShowLurkerModeSuccessPopout: !1
       }),
       renderPopout: this.renderSuccessPopout,
-      children: e => (0, r.jsx)(k.Z, F(B({}, E), {
+      children: e => (0, r.jsx)(k.Z, G(B({}, E), {
         children: (0, r.jsxs)(i.Fragment, {
           children: [this.renderMemberVerificationSuccessModal(), _ ? (0, r.jsx)(s.yRy, {
             targetElementRef: this.upsellTargetRef,
             renderPopout: this.renderLurkerModeUpsellPopout,
             shouldShow: j,
             position: "top",
-            children: e => (0, r.jsx)(s.P3F, F(B({
+            children: e => (0, r.jsx)(s.P3F, G(B({
               innerRef: this.upsellTargetRef
             }, e), {
               className: W.clickableChannelTextArea,
@@ -194,7 +194,7 @@ class G extends i.PureComponent {
       let {
         guild: e
       } = this.props;
-      null != e && (0, s.h7j)(t => (0, r.jsx)(s.ConfirmModal, F(B({
+      null != e && (0, s.h7j)(t => (0, r.jsx)(s.ConfirmModal, G(B({
         header: D.NW.string(D.t.aIz1oa),
         confirmText: D.NW.string(D.t["cY+Ooa"]),
         cancelText: D.NW.string(D.t["ETE/oK"]),
@@ -240,7 +240,7 @@ class G extends i.PureComponent {
       var e;
       c.Z.verifyResend();
       let t = null == (e = w.default.getCurrentUser()) ? void 0 : e.email;
-      null != t && (0, s.h7j)(e => (0, r.jsx)(s.ConfirmModal, F(B({}, e), {
+      null != t && (0, s.h7j)(e => (0, r.jsx)(s.ConfirmModal, G(B({}, e), {
         header: D.NW.string(D.t.LykQYm),
         confirmText: D.NW.string(D.t.BddRzc),
         confirmButtonColor: s.zxk.Colors.BRAND,
@@ -311,7 +311,7 @@ class G extends i.PureComponent {
         f.Z.ackUserGuildJoinRequest(e.id, t.joinRequestId)
       };
       return (0, r.jsx)(s.u_l, {
-        renderModal: t => (0, r.jsx)(C.Z, F(B({}, t), {
+        renderModal: t => (0, r.jsx)(C.Z, G(B({}, t), {
           onAccept: i,
           guildName: e.name
         })),
@@ -329,7 +329,7 @@ function H(e) {
   } = e, o = i.getGuildId(), s = (0, a.e7)([Z.Z], () => Z.Z.getGuild(o)), c = (0, a.e7)([T.Z], () => T.Z.getCheck(o)), u = i.type === M.d4z.GUILD_ANNOUNCEMENT && null != s && s.hasFeature(M.oNc.NEWS), d = (0, a.e7)([P.Z], () => u ? P.Z.getFollowerStatsForChannel(i.id) : null), h = (0, a.e7)([v.Z], () => v.Z.isLurking(o)), f = (0, a.e7)([w.default], () => w.default.getCurrentUser()), m = null != (t = null == f ? void 0 : f.isStaff()) && t, g = (0, a.e7)([S.ZP], () => {
     var e, t;
     return null != f && null != (t = null == (e = S.ZP.getMember(o, f.id)) ? void 0 : e.isPending) && t
-  }), C = !!(0, _.Dc)(s), j = (g || c.notClaimed) && C, O = (0, a.e7)([x.Z], () => x.Z.shouldShowPopout(o)), E = (0, a.e7)([A.Z], () => A.Z.can(M.Plq.SEND_MESSAGES, i)), N = (0, a.e7)([y.Z], () => y.Z.getRequest(o)), k = F(B({}, c), {
+  }), C = !!(0, _.Dc)(s), j = (g || c.notClaimed) && C, O = (0, a.e7)([x.Z], () => x.Z.shouldShowPopout(o)), E = (0, a.e7)([A.Z], () => A.Z.can(M.Plq.SEND_MESSAGES, i)), N = (0, a.e7)([y.Z], () => y.Z.getRequest(o)), k = G(B({}, c), {
     guild: s,
     isLurking: h,
     isFollowable: u,
@@ -345,7 +345,7 @@ function H(e) {
     useReducedMotion: p.Z.useReducedMotion,
     isStaff: m
   });
-  return (0, r.jsx)(G, F(B({}, k), {
+  return (0, r.jsx)(F, G(B({}, k), {
     channel: i,
     children: l
   }))

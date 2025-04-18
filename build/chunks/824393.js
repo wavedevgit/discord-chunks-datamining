@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  default: () => j,
-  h: () => k,
-  j: () => M
+  default: () => U,
+  h: () => j,
+  j: () => k
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -14,10 +14,10 @@ var r = n(200651),
   c = n(481060),
   u = n(230711),
   d = n(211266),
-  f = n(607070),
-  _ = n(975298),
-  p = n(530618),
-  h = n(436774),
+  f = n(410030),
+  _ = n(607070),
+  p = n(975298),
+  h = n(530618),
   m = n(688465),
   g = n(98278),
   E = n(741245),
@@ -32,17 +32,18 @@ var r = n(200651),
   A = n(474936),
   C = n(388032),
   R = n(639220),
-  P = n(499018),
-  w = n(946790);
+  P = n(851750),
+  w = n(946790),
+  D = n(593639);
 
-function D(e) {
+function L(e) {
   var t, n, a, u, d;
   let {
-    transitionState: _,
-    onClose: h,
+    transitionState: f,
+    onClose: p,
     quest: m,
     location: g
-  } = e, E = i.useRef(null), [b, y] = i.useState(null), v = i.useRef(new s.qA), O = (0, l.e7)([f.Z], () => f.Z.useReducedMotion), T = (null == (t = m.userStatus) ? void 0 : t.claimedAt) != null, [A, C] = i.useState({
+  } = e, E = i.useRef(null), [b, y] = i.useState(null), v = i.useRef(new s.qA), O = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), T = (null == (t = m.userStatus) ? void 0 : t.claimedAt) != null, [A, C] = i.useState({
     state: "loading"
   });
   i.useEffect(() => {
@@ -73,7 +74,7 @@ function D(e) {
     }), (0, r.jsx)("div", {
       ref: E,
       children: (0, r.jsx)(c.Y0X, {
-        transitionState: _,
+        transitionState: f,
         size: c.CgR.DYNAMIC,
         className: o()(R.rootContainer, {
           [R.rootContainerLoading]: P
@@ -81,18 +82,18 @@ function D(e) {
         hideShadow: !0,
         children: P ? (0, r.jsx)(c.$jN, {
           type: c.$jN.Type.SPINNING_CIRCLE
-        }) : "error" === A.state ? (0, r.jsx)(L, {
+        }) : "error" === A.state ? (0, r.jsx)(x, {
           errorReason: A.errorReason,
-          onClose: h
-        }) : D ? (0, r.jsx)(M, {
-          duration: x(null != (u = null == (n = A.entitlements) ? void 0 : n.items) ? u : []),
-          onClose: h
-        }) : (0, r.jsx)(k, {
-          duration: x(null != (d = null == (a = A.entitlements) ? void 0 : a.items) ? d : []),
-          onClose: h
+          onClose: p
+        }) : D ? (0, r.jsx)(k, {
+          duration: M(null != (u = null == (n = A.entitlements) ? void 0 : n.items) ? u : []),
+          onClose: p
+        }) : (0, r.jsx)(j, {
+          duration: M(null != (d = null == (a = A.entitlements) ? void 0 : a.items) ? d : []),
+          onClose: p
         })
       })
-    }), w && (0, r.jsx)(p.Z, {
+    }), w && (0, r.jsx)(h.Z, {
       confettiTarget: E.current,
       confettiCanvas: b,
       sprites: N.CA,
@@ -101,7 +102,7 @@ function D(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     onClose: t
   } = e, n = C.NW.string(C.t.PbaUtr);
@@ -135,7 +136,7 @@ function L(e) {
   })
 }
 
-function x(e) {
+function M(e) {
   let t = (0, O.xG)(e.map(e => e.skuId));
   return t % 24 == 0 ? C.NW.formatToPlainString(C.t["Cz1G9/"], {
     days: t / 24
@@ -144,13 +145,13 @@ function x(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     duration: t,
     onClose: n
   } = e, {
     theme: a
-  } = (0, c.TCT)(), o = (0, _.Z)({
+  } = (0, c.TCT)(), o = (0, p.Z)({
     forceFetch: !0
   }), s = (0, y.vc)(o.endsAt, "L"), l = i.useCallback(() => {
     (0, g.$)(n)
@@ -204,13 +205,13 @@ function M(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     duration: t,
     onClose: n
-  } = e, a = (0, _.Z)({
+  } = e, a = (0, p.Z)({
     forceFetch: !0
-  }), s = i.useCallback(() => {
+  }), s = (0, f.ZP)(), l = i.useCallback(() => {
     u.Z.open(T.oAB.SUBSCRIPTIONS, null, {}), n()
   }, [n]);
   if (!a.fetched) return (0, r.jsx)("div", {
@@ -219,12 +220,12 @@ function k(e) {
       type: c.$jN.Type.SPINNING_CIRCLE
     })
   });
-  let l = a.isFractionalPremiumActive ? C.NW.string(C.t["1ku8i4"]) : C.NW.format(C.t.fI1nLy, {
+  let d = a.isFractionalPremiumActive ? C.NW.string(C.t["1ku8i4"]) : C.NW.format(C.t.fI1nLy, {
     helpCenterLink: v.Z.getArticleURL(T.BhN.FRACTIONAL_PREMIUM_ABOUT),
     duration: t
   });
   return (0, r.jsx)(c.f6W, {
-    theme: T.BRd.DARK,
+    theme: s,
     children: e => (0, r.jsxs)("div", {
       className: o()(R.claimedRootContainer, e),
       children: [(0, r.jsxs)("div", {
@@ -238,11 +239,10 @@ function k(e) {
         }), (0, r.jsxs)("div", {
           className: R.headerForeground,
           children: [(0, r.jsx)("div", {
-            className: R.iconBackgroundFractional,
-            children: (0, r.jsx)(c.SrA, {
-              size: "lg",
-              className: R.iconFractional,
-              color: h.JX.PREMIUM_GUILD_BADGE_V2_BACKGROUND
+            children: (0, r.jsx)("img", {
+              src: D,
+              alt: C.NW.string(C.t.OhPMam),
+              height: 120
             })
           }), (0, r.jsx)(c.olH, {
             className: R.close,
@@ -251,7 +251,7 @@ function k(e) {
           })]
         })]
       }), (0, r.jsxs)(c.mzw, {
-        className: o()(R.footerContainer, R.gradient),
+        className: R.footerContainer,
         separator: !1,
         children: [(0, r.jsx)(c.X6q, {
           variant: "heading-lg/bold",
@@ -260,10 +260,10 @@ function k(e) {
         }), (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
           className: R.text,
-          children: l
+          children: d
         }), (0, r.jsx)(c.zxk, {
           className: R.cta2,
-          onClick: s,
+          onClick: l,
           children: C.NW.string(C.t.LnsQGR)
         })]
       })]
@@ -271,7 +271,7 @@ function k(e) {
   })
 }
 
-function j(e) {
+function U(e) {
   let {
     quest: t,
     location: n,
@@ -283,7 +283,7 @@ function j(e) {
   });
   return (i.useEffect(() => {
     s && a()
-  }, [a, s]), s) ? null : (0, r.jsx)(D, {
+  }, [a, s]), s) ? null : (0, r.jsx)(L, {
     onClose: a,
     transitionState: o,
     quest: t,

@@ -1,6 +1,6 @@
 /**
   Module ID: 3656
-  Original File Name: 45a9cc05347bc072
+  Original File Name: 53d904852259e561
 **/
 .content__79cbe {
     border-radius: 8px;
@@ -6007,6 +6007,34 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     gap: 4px
 }
 
+.editableGdmIcon_ec5bef {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content
+}
+
+.editableGdmIcon_ec5bef .editableGdmIconIndicator_ec5bef {
+    display: none
+}
+
+.editableGdmIcon_ec5bef:hover>:not(.editableGdmIconIndicator_ec5bef) {
+    opacity: .2
+}
+
+.editableGdmIcon_ec5bef:hover .editableGdmIconIndicator_ec5bef {
+    align-items: center;
+    color: var(--interactive-active);
+    display: flex;
+    inset: 0;
+    justify-content: center;
+    position: absolute
+}
+
 .buttonContainer__6ca73 {
     align-items: center;
     display: flex;
@@ -8266,30 +8294,6 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     width: 18px
 }
 
-.editableGdmIcon_ec5bef {
-    align-items: center;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    position: relative
-}
-
-.editableGdmIcon_ec5bef .editableGdmIconIndicator_ec5bef {
-    display: none
-}
-
-.editableGdmIcon_ec5bef:hover>:not(.editableGdmIconIndicator_ec5bef) {
-    opacity: .2
-}
-
-.editableGdmIcon_ec5bef:hover .editableGdmIconIndicator_ec5bef {
-    align-items: center;
-    display: flex;
-    inset: 0;
-    justify-content: center;
-    position: absolute
-}
-
 .container__754bd {
     align-items: center;
     display: flex;
@@ -8339,11 +8343,20 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     margin-right: 4px
 }
 
-.hoverableContainer__754bd .editIcon__754bd {
+.hoverableContainer__754bd:hover:not(.editing__754bd) {
+    background-color: var(--bg-mod-subtle)
+}
+
+.hoverableContainer__754bd.editing__754bd {
+    background-color: var(--bg-mod-faint);
+    border-color: var(--border-subtle)
+}
+
+.editIcon__754bd {
     display: none
 }
 
-.hoverableContainer__754bd .clickableTitle__754bd {
+.clickableTitle__754bd {
     align-items: center;
     align-self: stretch;
     cursor: pointer;
@@ -8354,17 +8367,8 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     white-space: nowrap
 }
 
-.hoverableContainer__754bd .clickableTitle__754bd:hover .editIcon__754bd {
+.clickableTitle__754bd:hover .editIcon__754bd {
     display: block
-}
-
-.hoverableContainer__754bd:hover:not(.editing__754bd) {
-    background-color: var(--bg-mod-subtle)
-}
-
-.hoverableContainer__754bd.editing__754bd {
-    background-color: var(--bg-mod-faint);
-    border-color: var(--border-subtle)
 }
 
 .newInput__754bd {
@@ -13035,4 +13039,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=45a9cc05347bc072.css.map*/
+/*# sourceMappingURL=53d904852259e561.css.map*/

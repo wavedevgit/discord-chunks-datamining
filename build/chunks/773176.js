@@ -41,8 +41,8 @@ var r = n(200651),
   W = n(314897),
   U = n(323873),
   B = n(271383),
-  F = n(430824),
-  G = n(607744),
+  G = n(430824),
+  F = n(607744),
   H = n(496675),
   V = n(626135),
   z = n(572004),
@@ -206,7 +206,7 @@ function ef(e) {
       isFocused: a
     } = e, {
       author: s
-    } = n, u = (0, c.e7)([F.Z], () => F.Z.getGuild(t.guild_id), [t.guild_id]), d = (0, c.e7)([W.default], () => W.default.getId()), p = (0, L.$R)(t), m = (0, L.Gu)(t), g = D.nc.useSetting(), b = D.Sb.useSetting(), _ = (0, c.e7)([G.Z], () => null == t.guild_id || G.Z.canChatInGuild(t.guild_id), [t]), {
+    } = n, u = (0, c.e7)([G.Z], () => G.Z.getGuild(t.guild_id), [t.guild_id]), d = (0, c.e7)([W.default], () => W.default.getId()), p = (0, L.$R)(t), m = (0, L.Gu)(t), g = D.nc.useSetting(), b = D.Sb.useSetting(), _ = (0, c.e7)([F.Z], () => null == t.guild_id || F.Z.canChatInGuild(t.guild_id), [t]), {
       canManageMessages: y,
       canAddNewReactions: x
     } = (0, c.cj)([H.Z], () => ({
