@@ -1,9 +1,9 @@
 /** Chunk was on 86915 **/
 "use strict";
 n.d(t, {
-  Z: () => i
+  Z: () => r
 });
-let i = (0, n(818083).B)({
+let r = (0, n(818083).B)({
   kind: "guild",
   id: "2024-03_advanced_slowmode_input",
   label: "advanced slowmode input",

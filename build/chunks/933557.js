@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  F6: () => _,
-  ZP: () => m,
-  cO: () => f,
-  le: () => p,
-  mA: () => h
+  F6: () => p,
+  ZP: () => g,
+  cO: () => _,
+  le: () => h,
+  mA: () => m,
+  pT: () => d
 }), n(388685), n(704826), n(35282);
 var r = n(442837),
   i = n(353926),
@@ -17,7 +18,7 @@ var r = n(442837),
   u = n(388032);
 
 function d(e, t, n) {
-  let r = e.recipients.map(t.getUser).filter(s.lm).map(e => {
+  let r = e.map(t.getUser).filter(s.lm).map(e => {
     var t;
     return null != (t = n.getNickname(e.id)) ? t : l.ZP.getName(e)
   });
@@ -26,11 +27,15 @@ function d(e, t, n) {
   })
 }
 
-function f(e) {
-  return (0, r.e7)([o.default, a.Z], () => null != e && e.isMultiUserDM() ? d(e, o.default, a.Z) : null)
+function f(e, t, n) {
+  return d(e.recipients, t, n)
 }
 
-function _(e, t, n) {
+function _(e) {
+  return (0, r.e7)([o.default, a.Z], () => null != e && e.isMultiUserDM() ? f(e, o.default, a.Z) : null)
+}
+
+function p(e, t, n) {
   let r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
     i = arguments.length > 4 && void 0 !== arguments[4] && arguments[4];
   switch (e.type) {
@@ -40,11 +45,11 @@ function _(e, t, n) {
       if (null == o) return "???";
       if (o.isProvisional && null != o.globalName) return o.globalName;
       let u = n.getNickname(o.id),
-        f = null != (a = null != u ? u : l.ZP.getName(o)) ? a : "???";
-      return r ? "@".concat(f) : f;
+        d = null != (a = null != u ? u : l.ZP.getName(o)) ? a : "???";
+      return r ? "@".concat(d) : d;
     case c.d4z.GROUP_DM:
       if ("" !== e.name) return e.name;
-      return d(e, t, n);
+      return f(e, t, n);
     case c.d4z.GUILD_ANNOUNCEMENT:
     case c.d4z.GUILD_TEXT:
     case c.d4z.GUILD_FORUM:
@@ -57,7 +62,7 @@ function _(e, t, n) {
     case c.d4z.GUILD_VOICE:
     case c.d4z.GUILD_STAGE_VOICE:
     case c.d4z.GUILD_CATEGORY:
-      if (i) return '#"'.concat(p(e.name), '"');
+      if (i) return '#"'.concat(h(e.name), '"');
       if (r && e.isThread()) return '"'.concat(e.name, '"');
       return e.name;
     default:
@@ -65,15 +70,15 @@ function _(e, t, n) {
   }
 }
 
-function p(e) {
+function h(e) {
   return e.replace(/\\/g, "\\\\").replace(/"/g, '\\"')
 }
 
-function h(e) {
+function m(e) {
   return e.replace(/\\"/g, '"').replace(/\\\\/g, "\\")
 }
 
-function m(e) {
+function g(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-  return (0, r.e7)([o.default, i.Z, a.Z], () => null == e ? null : _(e, o.default, a.Z, t))
+  return (0, r.e7)([o.default, i.Z, a.Z], () => null == e ? null : p(e, o.default, a.Z, t))
 }

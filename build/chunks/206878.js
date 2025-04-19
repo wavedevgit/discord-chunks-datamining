@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  g: () => E
+  g: () => N
 }), n(388685), n(35282);
 var a = n(192379),
   r = n(281598);
@@ -37,69 +37,68 @@ function i(e, t) {
   }), e
 }
 let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO_LOGO, r.jE.PDP_BACKGROUND, r.jE.PDP_LOGO, r.jE.COLLECTED_MODAL_BG, r.jE.MOBILE_BANNER, r.jE.MOBILE_BACKGROUND]),
-  o = ["reduced_motion.png", "static.png", "thumbnail.png"],
-  c = ["intro", "idle"],
-  d = {
+  o = ["intro", "idle", "reduced_motion", "static", "thumbnail"],
+  c = {
     max: 5e6,
     warn: 2e6
   },
-  u = {
+  d = {
     max: 3e6,
     warn: 1e6
   },
-  m = {
+  u = {
     max: 2e6,
     warn: 1e6
   },
-  x = {
+  m = {
     max: 1e6,
     warn: 5e5
   },
-  h = {
+  x = {
     max: 25e4,
     warn: 5e4
   },
-  p = {
-    [r.aB.PROFILE_EFFECT]: d,
-    [r.aB.AVATAR_DECORATION]: u,
-    [r.jE.HERO_BANNER_ANIMATED]: d,
-    [r.jE.SHOP_ALL_BANNER_ANIMATED]: d,
-    [r.jE.SHOP_BUTTON_BG_HOVER]: u,
-    [r.jE.SHOP_BUTTON_BG_HOVER_DARK]: u,
-    [r.jE.SHOP_BUTTON_BG_HOVER_LIGHT]: u,
-    [r.jE.SHOP_BUTTON_BG_RESTING]: u,
-    [r.jE.SHOP_BUTTON_BG_RESTING_DARK]: u,
-    [r.jE.SHOP_BUTTON_BG_RESTING_LIGHT]: u,
-    [r.jE.HERO_BANNER_STATIC]: m,
-    [r.jE.SHOP_ALL_BANNER_STATIC]: m,
-    [r.jE.UPSELL_BANNER]: x,
-    [r.jE.UPSELL_BANNER_POPOUT]: h,
-    [r.jE.MOBILE_BANNER]: x,
-    [r.jE.MOBILE_BACKGROUND]: h,
-    [r.jE.PDP_BACKGROUND]: h,
-    [r.jE.PDP_LOGO]: h,
-    [r.jE.COLLECTED_MODAL_BG]: h,
-    [r.jE.COACHTIP_AVATAR]: h
+  h = {
+    [r.aB.PROFILE_EFFECT]: c,
+    [r.aB.AVATAR_DECORATION]: d,
+    [r.jE.HERO_BANNER_ANIMATED]: c,
+    [r.jE.SHOP_ALL_BANNER_ANIMATED]: c,
+    [r.jE.SHOP_BUTTON_BG_HOVER]: d,
+    [r.jE.SHOP_BUTTON_BG_HOVER_DARK]: d,
+    [r.jE.SHOP_BUTTON_BG_HOVER_LIGHT]: d,
+    [r.jE.SHOP_BUTTON_BG_RESTING]: d,
+    [r.jE.SHOP_BUTTON_BG_RESTING_DARK]: d,
+    [r.jE.SHOP_BUTTON_BG_RESTING_LIGHT]: d,
+    [r.jE.HERO_BANNER_STATIC]: u,
+    [r.jE.SHOP_ALL_BANNER_STATIC]: u,
+    [r.jE.UPSELL_BANNER]: m,
+    [r.jE.UPSELL_BANNER_POPOUT]: x,
+    [r.jE.MOBILE_BANNER]: m,
+    [r.jE.MOBILE_BACKGROUND]: x,
+    [r.jE.PDP_BACKGROUND]: x,
+    [r.jE.PDP_LOGO]: x,
+    [r.jE.COLLECTED_MODAL_BG]: x,
+    [r.jE.COACHTIP_AVATAR]: x
   },
-  b = async e => {
+  p = async e => {
     let t = Object.values(r.CM),
       n = new Set,
       a = e.createReader();
     for (let e of (await new Promise(e => a.readEntries(e)))) e.isDirectory && t.includes(e.name) && n.add(e.name);
     return t.filter(e => !n.has(e))
-  }, f = e => {
+  }, b = e => {
     let {
       files: t,
       addWarning: n
     } = e;
     t.ignoredFilenames.length > 0 && n("Contains unrecognized files", t.ignoredFilenames)
-  }, v = e => {
+  }, f = e => {
     let {
       names: t,
       addError: n
     } = e, a = /^[a-z]+(_[a-z]+)*(\.[a-z0-9]+)?$/, r = t.filter(e => !a.test(e));
     r.length > 0 && n("File names must be in lowercase snake case", r)
-  }, g = (e, t, n, a) => {
+  }, v = (e, t, n, a) => {
     let r = t.size,
       l = r > 1e6 ? "".concat((r / 1e6).toFixed(2), "MB") : "".concat((r / 1e3).toFixed(2), "KB"),
       i = "".concat(t.name, " - ").concat(l);
@@ -107,23 +106,23 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
       let t = e.max > 1e6 ? "".concat(Math.round(e.max / 1e6), "MB") : "".concat(Math.round(e.max / 1e3), "KB");
       n("Files exceed the recommended size limit - make sure they are optimized!", ["".concat(i, " (max: ").concat(t, ")")])
     } else r > e.warn && a("Files are a tad chonky - are you sure they're optimized?", ["".concat(i)])
-  }, j = (e, t, n, a) => {
-    let r = p[e];
+  }, g = (e, t, n, a) => {
+    let r = h[e];
     if (null != r)
-      for (let e of t) e.name.endsWith(".txt") || g(r, e, n, a)
-  }, _ = (e, t, n) => {
+      for (let e of t) e.name.endsWith(".txt") || v(r, e, n, a)
+  }, j = (e, t, n) => {
     for (let a of e) {
       let e = (0, r.BU)(a),
-        l = null != e ? p[e] : null;
-      null != l && g(l, a, t, n)
+        l = null != e ? h[e] : null;
+      null != l && v(l, a, t, n)
     }
-  }, y = e => {
+  }, _ = e => {
     let {
       files: t,
       addError: n,
       addWarning: a
     } = e;
-    _(t.collectionFiles, n, a), v({
+    j(t.collectionFiles, n, a), f({
       names: t.collectionFiles.map(e => e.name),
       addError: n
     });
@@ -132,40 +131,45 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
     i.length > 0 && n("Missing required files", i);
     let o = Object.values(r.jE).filter(e => !s.has(e)).filter(e => !l.has(e));
     o.length > 0 && a("Missing optional assets", o)
+  }, y = e => {
+    let {
+      files: t,
+      addError: n,
+      addWarning: a
+    } = e;
+    f({
+      names: Object.keys(t.profileEffectFilesMap),
+      addError: n
+    }), Object.entries(t.profileEffectFilesMap).forEach(e => {
+      let [t, l] = e, i = l.map(e => e.name);
+      f({
+        names: i.map(e => {
+          let t = e.indexOf("-");
+          return e.substring(0, t > 0 ? t : e.length)
+        }),
+        addError: n
+      }), g(r.aB.PROFILE_EFFECT, l, n, a);
+      let s = o.filter(e => !i.some(t => t.startsWith(e) && t.endsWith(".png"))).map(e => "".concat(t, " - ").concat(e));
+      s.length > 0 && n("Missing required PFX files with prefix", s), i.some(e => e.endsWith(".txt")) || n("PFX configs required - please include both exports!", [t]);
+      let c = i.filter(e => !o.some(t => e.startsWith(t)) && !e.endsWith(".txt")).map(e => "".concat(t, "/").concat(e));
+      c.length > 0 && a("Contains unrecognized files", c)
+    })
   }, C = e => {
     let {
       files: t,
       addError: n,
       addWarning: a
     } = e;
-    v({
-      names: Object.keys(t.profileEffectFilesMap),
-      addError: n
-    }), Object.entries(t.profileEffectFilesMap).forEach(e => {
-      let [t, l] = e, i = l.map(e => e.name);
-      v({
-        names: i,
-        addError: n
-      }), j(r.aB.PROFILE_EFFECT, l, n, a);
-      let s = o.filter(e => !i.some(t => t === e)).map(e => "".concat(t, " - ").concat(e));
-      s.length > 0 && n("Missing required files", s);
-      let d = c.filter(e => !i.some(t => t.startsWith(e))).map(e => "".concat(t, " - ").concat(e));
-      d.length > 0 && n("Missing required PFX files with prefix", d), i.some(e => e.endsWith(".txt")) || n("PFX configs required - please include both exports!", [t]);
-      let u = i.filter(e => !o.some(t => t === e) && !c.some(t => e.startsWith(t)) && !e.endsWith(".txt")).map(e => "".concat(t, "/").concat(e));
-      u.length > 0 && a("Contains unrecognized files", u)
-    })
-  }, O = e => {
-    let {
-      files: t,
-      addError: n,
-      addWarning: a
-    } = e;
-    v({
+    f({
       names: t.avatarDecorationFiles.map(e => e.name),
       addError: n
-    }), j(r.aB.AVATAR_DECORATION, t.avatarDecorationFiles, n, a)
-  }, N = (e, t, n) => {
-    y({
+    }), g(r.aB.AVATAR_DECORATION, t.avatarDecorationFiles, n, a)
+  }, O = (e, t, n) => {
+    _({
+      files: e,
+      addError: n,
+      addWarning: t
+    }), y({
       files: e,
       addError: n,
       addWarning: t
@@ -173,16 +177,12 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
       files: e,
       addError: n,
       addWarning: t
-    }), O({
-      files: e,
-      addError: n,
-      addWarning: t
-    }), f({
+    }), b({
       files: e,
       addError: n,
       addWarning: t
     })
-  }, E = () => {
+  }, N = () => {
     let [e, t] = a.useState(!1), [n, s] = a.useState({}), [o, c] = a.useState({}), d = a.useCallback(function(e) {
       let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [];
       c(n => {
@@ -214,10 +214,10 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
           if (e.length > 1) return void d("Uploaded multiple files. Expected 1 directory.");
           let t = e[0];
           if (!t.isDirectory) return void d("Uploaded a file. Expected a directory.");
-          let n = await b(t);
+          let n = await p(t);
           if (n.length > 0) return void d("Missing required directories", n);
           let a = await (0, r.LY)([t]);
-          N(a, u, d)
+          O(a, u, d)
         } finally {
           t(!0)
         }

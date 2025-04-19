@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: b8b3eefdf471b9e2
+  Original File Name: 21e194b9a3740231
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -2734,9 +2734,11 @@
 .popoutContainer_db0ccb {
     background: var(--background-primary);
     color: var(--text-normal);
+    display: flex;
+    flex-direction: column;
     height: 100%;
     position: relative;
     width: 100%
 }
 
-/*# sourceMappingURL=b8b3eefdf471b9e2.css.map*/
+/*# sourceMappingURL=21e194b9a3740231.css.map*/
