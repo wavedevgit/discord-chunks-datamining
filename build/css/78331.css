@@ -1,10 +1,48 @@
 /**
   Module ID: 78331
-  Original File Name: 39ce734cf2daaf9a
+  Original File Name: 4418cea4259e7f0b
 **/
-.modal_db78b7 {
-    color: var(--text-primary);
-    padding: var(--space-lg)
+.modalRoot_db78b7 {
+    width: var(--modal-width-medium)
 }
 
-/*# sourceMappingURL=39ce734cf2daaf9a.css.map*/
+.modalContent_db78b7 {
+    color: var(--text-primary);
+    overflow: hidden;
+    padding: 0
+}
+
+main {
+    border-radius: var(--radius-md);
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    min-height: 100%;
+    overflow: hidden;
+    width: 100%
+}
+
+.left_db78b7 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: var(--space-xl) var(--space-lg)
+}
+
+.left_db78b7 img {
+    max-height: 100%;
+    max-width: 100%
+}
+
+.right_db78b7 {
+    background: var(--background-tertiary);
+    display: flex;
+    padding: var(--space-xl)
+}
+
+.closeButton_db78b7 {
+    position: absolute;
+    right: var(--space-lg);
+    top: var(--space-lg)
+}
+
+/*# sourceMappingURL=4418cea4259e7f0b.css.map*/

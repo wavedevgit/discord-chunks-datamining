@@ -1,32 +1,51 @@
 /** Chunk was on 78331 **/
-d.d(s, {
-  EmojiStudioModal: () => t
+s.d(e, {
+  EmojiStudioModal: () => r
 });
-var n = d(200651);
-d(192379);
-var e = d(481060),
-  c = d(375727),
-  o = d(807179);
-let r = () => (0, n.jsxs)("main", {
-    children: [(0, n.jsx)("h1", {
-      children: "Add Emoji"
-    }), (0, n.jsx)("p", {
-      children: "Under construction"
-    }), (0, n.jsx)(e.zxk, {
-      onClick: c.y,
-      children: "Close"
-    })]
-  }),
-  t = i => {
+var o = s(200651);
+s(192379);
+var a = s(481060),
+  l = s(375727),
+  n = s(388032),
+  d = s(807179);
+let i = t => {
     let {
-      transitionState: s
-    } = i;
-    return (0, n.jsx)(e.Y0X, {
-      transitionState: s,
-      size: e.CgR.LARGE,
-      children: (0, n.jsx)(e.hzk, {
-        className: o.modal,
-        children: (0, n.jsx)(r, {})
+      userImage: e
+    } = t;
+    return (0, o.jsxs)("main", {
+      children: [(0, o.jsx)("div", {
+        className: d.left,
+        children: (0, o.jsx)("img", {
+          src: e.data,
+          alt: "Uploaded content"
+        })
+      }), (0, o.jsxs)("div", {
+        className: d.right,
+        children: [(0, o.jsx)(a.X6q, {
+          variant: "heading-lg/bold",
+          children: n.NW.string(n.t.DU0dy8)
+        }), (0, o.jsx)(a.olH, {
+          onClick: l.y,
+          className: d.closeButton
+        })]
+      })]
+    })
+  },
+  r = t => {
+    let {
+      transitionState: e,
+      userImage: s
+    } = t;
+    return (0, o.jsx)(a.Y0X, {
+      transitionState: e,
+      size: a.CgR.LARGE,
+      className: d.modalRoot,
+      children: (0, o.jsx)(a.hzk, {
+        scrollbarType: "none",
+        className: d.modalContent,
+        children: (0, o.jsx)(i, {
+          userImage: s
+        })
       })
     })
   }
