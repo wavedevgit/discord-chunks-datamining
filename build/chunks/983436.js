@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(287734),
-  l = n(475468),
+  l = n(287734),
+  a = n(475468),
   o = n(358555),
   s = n(955415),
   c = n(944486),
@@ -30,7 +30,7 @@ function h(e) {
       link_channel_type: h.type,
       guild_id: _,
       channel_id: b
-    }), (0, l.K)(n.id, h.id), a.default.selectVoiceChannel(h.id)
+    }), (0, a.K)(n.id, h.id), l.default.selectVoiceChannel(h.id)
   }, [null == (t = g.author) ? void 0 : t.id, n.id, h.id, h.type, _, b]), y = (0, r.jsx)(s.Z.Channel, {
     channel: h
   });
@@ -45,7 +45,7 @@ function h(e) {
           onClick: x,
           children: (0, r.jsxs)("span", {
             className: f.infoTitle,
-            children: [m.NW.format(m.t["2wimj4"], {
+            children: [m.intl.format(m.t["2wimj4"], {
               guildName: n.name
             }), (0, r.jsx)("span", {
               className: f.infoBadge,
@@ -59,7 +59,7 @@ function h(e) {
       }), (0, r.jsx)(s.Z.Button, {
         onClick: x,
         color: s.Z.Button.Colors.GREEN,
-        children: h.isGuildStageVoice() ? m.NW.string(m.t["7vb2cX"]) : m.NW.string(m.t["96ANUF"])
+        children: h.isGuildStageVoice() ? m.intl.string(m.t["7vb2cX"]) : m.intl.string(m.t["96ANUF"])
       })]
     })
   })

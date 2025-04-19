@@ -28,14 +28,14 @@ let f = (0, d.Z)(e => {
     state: _,
     guildId: E,
     channelId: O,
-    prompt: N,
-    disableGuildSelect: y,
-    disclosures: I,
-    integrationType: v,
-    pid: C
-  } = e, S = "OAuth2Authorize_".concat(n, "_").concat(E, "_").concat(O), T = null != v ? null == s ? void 0 : s.get(v) : void 0, P = null != (t = null == T ? void 0 : T.application) ? t : a.Z.getApplication(n);
+    prompt: y,
+    disableGuildSelect: I,
+    disclosures: v,
+    integrationType: C,
+    pid: S
+  } = e, N = "OAuth2Authorize_".concat(n, "_").concat(E, "_").concat(O), T = null != C ? null == s ? void 0 : s.get(C) : void 0, P = null != (t = null == T ? void 0 : T.application) ? t : a.Z.getApplication(n);
   return new Promise((e, t) => {
-    let a = (0, p.jU)(C),
+    let a = (0, p.jU)(S),
       T = !1,
       j = r => {
         let {
@@ -73,7 +73,7 @@ let f = (0, d.Z)(e => {
         authorizations: s,
         clientId: n,
         scopes: null != c ? c : [],
-        disclosures: null != I ? I : [],
+        disclosures: null != v ? v : [],
         callback: j,
         responseType: f,
         redirectUri: g,
@@ -83,9 +83,9 @@ let f = (0, d.Z)(e => {
         permissions: d,
         guildId: E,
         channelId: O,
-        prompt: N,
-        disableGuildSelect: "boolean" == typeof y ? y : "true" === y,
-        integrationType: v
+        prompt: y,
+        disableGuildSelect: "boolean" == typeof I ? I : "true" === I,
+        integrationType: C
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -97,9 +97,9 @@ let f = (0, d.Z)(e => {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
       }), t))
     }, {
-      modalKey: S,
+      modalKey: N,
       onCloseRequest: () => {
-        (0, i.Mr3)(S)
+        (0, i.Mr3)(N)
       },
       onCloseCallback: () => {
         T || (t(new u.Z({

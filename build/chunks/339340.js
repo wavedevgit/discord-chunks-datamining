@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   a: () => T,
-  default: () => A
+  default: () => N
 }), n(388685), n(704826), n(35282);
 var r = n(200651),
   i = n(192379),
@@ -27,15 +27,15 @@ var r = n(200651),
   I = n(388032),
   S = n(823150);
 let T = "VoiceChannelStatusModal",
-  N = 500;
+  A = 500;
 
-function A(e) {
+function N(e) {
   let {
     channel: t,
     transitionState: n,
     sourceAnalyticsLocations: a,
-    onClose: A
-  } = e, C = (0, s.e7)([f.Z], () => f.Z.getChannelStatus(t)), R = (0, s.e7)([b.Z], () => b.Z.getMediaSessionId()), [P, w] = i.useState(null != C ? C : ""), [D, L] = i.useState(!1), [x, M] = i.useState(null), k = (0, s.e7)([y.default], () => y.default.getCurrentUser()), j = P.length > N, U = (0, g.Q3)("VoiceChannelStatusModal");
+    onClose: N
+  } = e, C = (0, s.e7)([f.Z], () => f.Z.getChannelStatus(t)), R = (0, s.e7)([b.Z], () => b.Z.getMediaSessionId()), [P, w] = i.useState(null != C ? C : ""), [D, L] = i.useState(!1), [x, M] = i.useState(null), k = (0, s.e7)([y.default], () => y.default.getCurrentUser()), j = P.length > A, U = (0, g.Q3)("VoiceChannelStatusModal");
   i.useEffect(() => {
     v.default.track(O.rMx.OPEN_MODAL, {
       type: "Voice Channel Topic Modal",
@@ -63,7 +63,7 @@ function A(e) {
       }
     },
     F = async e => {
-      P === C && A(), null == e || e.preventDefault(), M(null), L(!0);
+      P === C && N(), null == e || e.preventDefault(), M(null), L(!0);
       let n = P.length,
         r = P.replace(/<(a)?:[^:]+:[0-9]+>/g, "--").length,
         i = E.ZP.parse(void 0, P),
@@ -80,7 +80,7 @@ function A(e) {
             raw_length: n,
             text_length: r,
             location_stack: a
-          }), A()) : G(e)
+          }), N()) : G(e)
         } catch (e) {
           G(e)
         }
@@ -88,7 +88,7 @@ function A(e) {
       }
     }, [V, Z] = i.useState((0, p.JM)(P)), H = (e, t, n) => {
       w(t), Z(n)
-    }, W = async () => (j || D || await F(), Promise.resolve({
+    }, Y = async () => (j || D || await F(), Promise.resolve({
       shouldClear: !1,
       shouldRefocus: !0
     }));
@@ -107,39 +107,39 @@ function A(e) {
           separator: !1,
           children: [(0, r.jsx)(c.olH, {
             className: S.closeButton,
-            onClick: A
+            onClick: N
           }), (0, r.jsx)("div", {
             className: S.headerImage
           }), (0, r.jsx)(c.vwX, {
             tag: "h1",
             className: S.title,
-            children: I.NW.string(I.t["5CyJBQ"])
+            children: I.intl.string(I.t["5CyJBQ"])
           }), (0, r.jsx)(c.Text, {
             color: "header-secondary",
             variant: "text-sm/normal",
-            children: I.NW.string(I.t.NRBYjo)
+            children: I.intl.string(I.t.NRBYjo)
           })]
         }), (0, r.jsxs)(c.hjN, {
           className: S.inputSection,
-          title: I.NW.string(I.t.Fq5lwM),
+          title: I.intl.string(I.t.Fq5lwM),
           children: [(0, r.jsx)(h.Z, {
             innerClassName: S.textArea,
             textValue: P,
             richValue: V,
-            placeholder: I.NW.formatToPlainString(I.t.DUXxBg, {
+            placeholder: I.intl.formatToPlainString(I.t.DUXxBg, {
               channelName: t.name
             }),
             focused: !0,
             channel: t,
             onChange: H,
-            onSubmit: W,
+            onSubmit: Y,
             type: _.Ie.VOICE_CHANNEL_STATUS,
             canMentionRoles: !1,
             canMentionChannels: !1,
             allowNewLines: !1,
             parentModalKey: T,
-            maxCharacterCount: N,
-            showRemainingCharsAfterCount: N / 2,
+            maxCharacterCount: A,
+            showRemainingCharsAfterCount: A / 2,
             emojiPickerCloseOnModalOuterClick: !0
           }), null != x ? (0, r.jsx)(c.kzN, {
             className: S.error,
@@ -154,14 +154,14 @@ function A(e) {
           look: c.zxk.Looks.FILLED,
           color: c.zxk.Colors.PRIMARY,
           className: S.cancelButton,
-          onClick: A,
-          children: I.NW.string(I.t["ETE/oK"])
+          onClick: N,
+          children: I.intl.string(I.t["ETE/oK"])
         }), (0, r.jsx)(c.zxk, {
           onClick: F,
           submitting: D,
           className: S.button,
           disabled: j,
-          children: I.NW.string(I.t.XqK2Iy)
+          children: I.intl.string(I.t.XqK2Iy)
         })]
       })]
     })

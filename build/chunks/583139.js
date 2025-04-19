@@ -1,5 +1,5 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  C: () => r
+  C: () => i
 });
-let r = "CONNECTED_GAMES"
+let i = "CONNECTED_GAMES"

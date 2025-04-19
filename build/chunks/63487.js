@@ -1,9 +1,9 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  p: () => r
+  p: () => i
 });
 
-function r(e) {
+function i(e) {
   return e.toLocaleDateString(void 0, {
     dateStyle: "long"
   })

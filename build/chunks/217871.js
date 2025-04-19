@@ -80,7 +80,7 @@ let j = i.memo(function(e) {
             color: u
           },
           variant: "text-sm/bold",
-          children: x.NW.format(x.t["6bgVlp"], {
+          children: x.intl.format(x.t["6bgVlp"], {
             multiplier: n
           })
         }), a && (0, r.jsxs)(r.Fragment, {
@@ -112,7 +112,7 @@ let j = i.memo(function(e) {
         }), 1 === n && (0, r.jsx)(c.Text, {
           className: v.tip,
           variant: "text-sm/bold",
-          children: x.NW.string(x.t.b5Cpoa)
+          children: x.intl.string(x.t.b5Cpoa)
         })]
       })]
     })
@@ -129,27 +129,27 @@ let j = i.memo(function(e) {
       let e = setTimeout(() => y(E), 1e3);
       return () => clearTimeout(e)
     }, [E]);
-    let N = (0, c.q_F)({
+    let I = (0, c.q_F)({
         opacity: +!!g,
         transform: g ? "translateY(0)" : "translateY(100%)",
         pointerEvents: "none",
         config: a.config.stiff
       }),
-      I = i.useMemo(() => null != x ? x : {
+      P = i.useMemo(() => null != x ? x : {
         value: 0,
         multiplier: 1
       }, [x]),
-      P = i.useRef(I);
+      S = i.useRef(P);
     i.useEffect(() => {
-      (I.multiplier > 1 || I.value > 0) && (P.current = I)
-    }, [I]);
+      (P.multiplier > 1 || P.value > 0) && (S.current = P)
+    }, [P]);
     let {
-      multiplier: S,
-      value: Z
+      multiplier: Z,
+      value: N
     } = i.useMemo(() => ({
-      value: E ? I.value : P.current.value,
-      multiplier: E ? I.multiplier : P.current.multiplier
-    }), [E, I, P]);
+      value: E ? P.value : S.current.value,
+      multiplier: E ? P.multiplier : S.current.multiplier
+    }), [E, P, S]);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(j, {
         channelId: t,
@@ -157,10 +157,10 @@ let j = i.memo(function(e) {
       }), (0, r.jsx)(a.animated.div, {
         ref: p,
         className: v.combo,
-        style: N,
+        style: I,
         children: (0, r.jsx)(O, {
-          value: Z,
-          multiplier: S
+          value: N,
+          multiplier: Z
         })
       })]
     })

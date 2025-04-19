@@ -37,7 +37,7 @@ function g(e) {
           webhooks: [r]
         })
       } return Object.values(e).sort((e, t) => e.channel.name.localeCompare(t.channel.name))
-  }, [n, t]), N = i.useCallback(e => {
+  }, [n, t]), y = i.useCallback(e => {
     x() && (e === (null == f ? void 0 : f.id) ? o.Z.stopEditingWebhook() : o.Z.startEditingWebhook(e))
   }, [x, f]);
   return (0, r.jsx)("div", {
@@ -60,7 +60,7 @@ function g(e) {
         return (0, r.jsxs)("div", {
           children: [(0, r.jsx)(l.vwX, {
             className: b.groupHeader,
-            children: m.NW.format(m.t.TKDIZm, {
+            children: m.intl.format(m.t.TKDIZm, {
               channelHook: () => (0, r.jsx)("span", {
                 className: b.channelName,
                 children: (0, a.F6)(t, c.default, s.Z, !0)
@@ -94,7 +94,7 @@ function g(e) {
         lastCreatedWebhookId: g,
         editedWebhook: f,
         errors: h,
-        toggleWebhookExpand: N
+        toggleWebhookExpand: y
       })
     })
   })

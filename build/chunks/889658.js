@@ -99,7 +99,7 @@ let a = new(n(147567)),
     for (; n && r.length;) n = r.every(e => i.intersects(e, t)), i = r.pop();
     return n
   },
-  y = (e, t) => (l("comp", e, t), l("caret", e = S(e, t)), l("tildes", e = O(e, t)), l("xrange", e = N(e, t)), l("stars", e = C(e, t)), e),
+  y = (e, t) => (l("comp", e, t), l("caret", e = S(e, t)), l("tildes", e = O(e, t)), l("xrange", e = A(e, t)), l("stars", e = C(e, t)), e),
   v = e => !e || "x" === e.toLowerCase() || "*" === e,
   O = (e, t) => e.trim().split(/\s+/).map(e => I(e, t)).join(" "),
   I = (e, t) => {
@@ -119,8 +119,8 @@ let a = new(n(147567)),
       return l("caret", e, t, n, i, a, o), v(n) ? s = "" : v(i) ? s = `>=${n}.0.0${r} <${+n+1}.0.0-0` : v(a) ? s = "0" === n ? `>=${n}.${i}.0${r} <${n}.${+i+1}.0-0` : `>=${n}.${i}.0${r} <${+n+1}.0.0-0` : o ? (l("replaceCaret pr", o), s = "0" === n ? "0" === i ? `>=${n}.${i}.${a}-${o} <${n}.${i}.${+a+1}-0` : `>=${n}.${i}.${a}-${o} <${n}.${+i+1}.0-0` : `>=${n}.${i}.${a}-${o} <${+n+1}.0.0-0`) : (l("no pr"), s = "0" === n ? "0" === i ? `>=${n}.${i}.${a}${r} <${n}.${i}.${+a+1}-0` : `>=${n}.${i}.${a}${r} <${n}.${+i+1}.0-0` : `>=${n}.${i}.${a} <${+n+1}.0.0-0`), l("caret return", s), s
     })
   },
-  N = (e, t) => (l("replaceXRanges", e, t), e.split(/\s+/).map(e => A(e, t)).join(" ")),
-  A = (e, t) => {
+  A = (e, t) => (l("replaceXRanges", e, t), e.split(/\s+/).map(e => N(e, t)).join(" ")),
+  N = (e, t) => {
     e = e.trim();
     let n = t.loose ? u[d.XRANGELOOSE] : u[d.XRANGE];
     return e.replace(n, (n, r, i, a, o, s) => {

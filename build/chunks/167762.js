@@ -15,10 +15,10 @@ var i = n(200651),
   p = n(239091),
   f = n(194359),
   g = n(549879),
-  N = n(724757),
-  h = n(620662),
-  O = n(420660),
-  y = n(326255),
+  h = n(724757),
+  O = n(620662),
+  y = n(420660),
+  N = n(326255),
   m = n(956221),
   S = n(747017),
   I = n(297781),
@@ -61,7 +61,7 @@ function M(e) {
   return e
 }
 
-function W(e, t) {
+function q(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -74,7 +74,7 @@ function W(e, t) {
   }), e
 }
 
-function q(e, t) {
+function V(e, t) {
   if (null == e) return {};
   var n, i, r = function(e, t) {
     if (null == e) return {};
@@ -89,8 +89,8 @@ function q(e, t) {
   }
   return r
 }
-let V = c.EFr.SIZE_32,
-  z = {
+let z = c.EFr.SIZE_32,
+  Q = {
     FRIEND_REQUESTS: 0,
     SAME_ACTIVITY: 1,
     ACTIVITIES: 2,
@@ -98,13 +98,13 @@ let V = c.EFr.SIZE_32,
     ONLINE: 4,
     OFFLINE: 5
   },
-  Q = [I.OV, I.wO, I.f, I.v1, I.pQ],
+  W = [I.OV, I.wO, I.f, I.v1, I.pQ],
   Y = r.memo(e => {
     let {
       user: t,
       activities: l = [],
       gameProfileEntry: s,
-      index: N,
+      index: h,
       closeParentPopout: b,
       isSuggestion: j,
       relationshipType: Z,
@@ -113,13 +113,13 @@ let V = c.EFr.SIZE_32,
     } = e, {
       avatarDecorationSrc: U,
       avatarSrc: D,
-      eventHandlers: q
+      eventHandlers: V
     } = (0, w.Z)({
       user: t,
-      size: V,
+      size: z,
       animateOnHover: !0,
       guildId: null
-    }), z = (0, a.JA)("".concat(N)), [Y, H] = r.useState(!1), [B, J] = r.useState({}), K = l.filter(e => e.type === R.IIU.PLAYING && (0, h.Z)(e, R.xjy.JOIN)), X = (0, o.Wu)([x.Z], () => x.Z.getActivities().filter(e => e.type === R.IIU.PLAYING && (0, h.Z)(e, R.xjy.JOIN))), {
+    }), Q = (0, a.JA)("".concat(h)), [Y, H] = r.useState(!1), [B, J] = r.useState({}), K = l.filter(e => e.type === R.IIU.PLAYING && (0, O.Z)(e, R.xjy.JOIN)), X = (0, o.Wu)([x.Z], () => x.Z.getActivities().filter(e => e.type === R.IIU.PLAYING && (0, O.Z)(e, R.xjy.JOIN))), {
       voiceChannel: $
     } = (0, m.Z)({
       userId: t.id
@@ -135,7 +135,7 @@ let V = c.EFr.SIZE_32,
       let e = G.Z.getStatus(t.id),
         n = T.Z.getAnyStreamForUser(t.id),
         i = G.Z.isMobileOnline(t.id),
-        r = (0, O.Z)(l) ? R.Skl.STREAMING : e;
+        r = (0, y.Z)(l) ? R.Skl.STREAMING : e;
       return {
         status: e,
         applicationStream: n,
@@ -149,18 +149,18 @@ let V = c.EFr.SIZE_32,
     }, []), ea = r.useCallback(() => {
       if (null != s) {
         let e = s.traits,
-          t = W(M({}, s), {
+          t = q(M({}, s), {
             traits: e.slice(0, 3)
           });
         return (0, i.jsx)(I.Gk, {
           location: I.Gt.FRIENDS_POPOUT,
           className: L.badgesContainer,
-          children: Q.map((e, n) => (0, i.jsx)(e, {
+          children: W.map((e, n) => (0, i.jsx)(e, {
             entry: t
           }, n))
         })
       }
-      if (!(0, y.Z)({
+      if (!(0, N.Z)({
           activities: l,
           status: et,
           applicationStream: en,
@@ -189,7 +189,7 @@ let V = c.EFr.SIZE_32,
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("69220"), n.e("70686")]).then(n.bind(n, 881351));
-        return n => (0, i.jsx)(e, W(M({}, n), {
+        return n => (0, i.jsx)(e, q(M({}, n), {
           user: t,
           appContext: A
         }))
@@ -207,41 +207,41 @@ let V = c.EFr.SIZE_32,
       })
     }, [t.id]), ed = async (e, n) => {
       if (e.preventDefault(), e.stopPropagation(), null != n.application_id && "" !== n.application_id && !B[n.application_id]) try {
-        J(e => W(M({}, e), {
+        J(e => q(M({}, e), {
           [n.application_id]: !0
         })), await u.Z.sendActivityInviteUser({
           type: R.mFx.JOIN,
           userId: t.id,
           activity: n,
           location: R.Sbl.FRIENDS_POPOUT
-        }), J(e => W(M({}, e), {
+        }), J(e => q(M({}, e), {
           [n.application_id]: !1
         }))
       } finally {
-        J(e => W(M({}, e), {
+        J(e => q(M({}, e), {
           [n.application_id]: !1
         }))
       }
     }, ep = async (e, n) => {
       if (e.preventDefault(), e.stopPropagation(), null != n.application_id && "" !== n.application_id && !B[n.application_id]) try {
-        J(e => W(M({}, e), {
+        J(e => q(M({}, e), {
           [n.application_id]: !0
         })), await u.Z.sendActivityInviteUser({
           type: R.mFx.JOIN_REQUEST,
           userId: t.id,
           activity: n,
           location: R.Sbl.FRIENDS_POPOUT
-        }), J(e => W(M({}, e), {
+        }), J(e => q(M({}, e), {
           [n.application_id]: !1
         }))
       } finally {
-        J(e => W(M({}, e), {
+        J(e => q(M({}, e), {
           [n.application_id]: !1
         }))
       }
     }, ef = () => Z === R.OGo.PENDING_INCOMING ? (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(C.sF, {
-        label: F.NW.string(F.t.MMlhsr),
+        label: F.intl.string(F.t.MMlhsr),
         icon: c.dz2,
         onClick: e => {
           e.preventDefault(), e.stopPropagation(), f.Z.addRelationship({
@@ -252,7 +252,7 @@ let V = c.EFr.SIZE_32,
           })
         }
       }), (0, i.jsx)(C.sF, {
-        label: F.NW.string(F.t.ytCpKi),
+        label: F.intl.string(F.t.ytCpKi),
         icon: c.Dio,
         onClick: e => {
           e.preventDefault(), e.stopPropagation(), f.Z.removeRelationship(t.id, {
@@ -261,7 +261,7 @@ let V = c.EFr.SIZE_32,
         }
       })]
     }) : Z === R.OGo.PENDING_OUTGOING ? (0, i.jsx)(C.sF, {
-      label: F.NW.string(F.t["bTfA//"]),
+      label: F.intl.string(F.t["bTfA//"]),
       icon: c.iHX,
       onClick: e => {
         e.preventDefault(), e.stopPropagation(), f.Z.cancelFriendRequest(t.id, {
@@ -269,18 +269,18 @@ let V = c.EFr.SIZE_32,
         })
       }
     }) : j ? (0, i.jsx)(C.sF, {
-      label: F.NW.string(F.t.w5uwoK),
+      label: F.intl.string(F.t.w5uwoK),
       icon: c.oLu,
       onClick: eu
     }) : null, eg = () => (0, i.jsxs)(i.Fragment, {
       children: [K.map(e => (0, i.jsx)(C.sF, {
-        label: B[e.application_id] ? F.NW.string(F.t["8BEiNj"]) : F.NW.string(F.t.OKsSCQ),
+        label: B[e.application_id] ? F.intl.string(F.t["8BEiNj"]) : F.intl.string(F.t.OKsSCQ),
         icon: B[e.application_id] ? c.dz2 : c.V9,
         onClick: t => ep(t, e)
       }, e.application_id)), X.map(e => {
         var n;
         return (0, i.jsx)(C.sF, {
-          label: B[e.application_id] ? F.NW.string(F.t["8BEiNj"]) : F.NW.formatToPlainString(F.t["KHLo+P"], {
+          label: B[e.application_id] ? F.intl.string(F.t["8BEiNj"]) : F.intl.formatToPlainString(F.t["KHLo+P"], {
             channel: null != (n = t.globalName) ? n : t.username,
             game: e.name
           }),
@@ -305,8 +305,8 @@ let V = c.EFr.SIZE_32,
             onContextMenu: eo,
             onMouseEnter: el,
             onMouseLeave: es,
-            avatar: (0, i.jsx)(c.qEK, W(M({}, q), {
-              size: V,
+            avatar: (0, i.jsx)(c.qEK, q(M({}, V), {
+              size: z,
               src: D,
               isMobile: ei,
               isTyping: !1,
@@ -324,14 +324,14 @@ let V = c.EFr.SIZE_32,
             selected: l,
             nameplate: ee,
             hovered: Y
-          }, e, z)), (0, i.jsxs)(C.ZP, {
+          }, e, Q)), (0, i.jsxs)(C.ZP, {
             className: L.hoverBar,
             children: [ef(), eg(), Z !== R.OGo.PENDING_INCOMING && Z !== R.OGo.PENDING_OUTGOING && (0, i.jsx)(C.sF, {
-              label: F.NW.string(F.t["g33r/P"]),
+              label: F.intl.string(F.t["g33r/P"]),
               icon: c.kBi,
               onClick: ec
             }), (0, i.jsx)(C.sF, {
-              label: F.NW.string(F.t.UKOtz8),
+              label: F.intl.string(F.t.UKOtz8),
               icon: c.xhG,
               onClick: eo
             })]
@@ -380,7 +380,7 @@ let H = () => {
             activities: f ? p : d,
             nickname: o
           };
-        f ? (r.sameActivity.push(g), l.delete(e)) : d.length > 0 ? r.activities.push(g) : u ? r.activities.push(W(M({}, g), {
+        f ? (r.sameActivity.push(g), l.delete(e)) : d.length > 0 ? r.activities.push(g) : u ? r.activities.push(q(M({}, g), {
           activities: a
         })) : s === R.Skl.ONLINE || s === R.Skl.IDLE || s === R.Skl.DND ? r.online.push(g) : r.offline.push(g)
       }
@@ -480,7 +480,7 @@ let H = () => {
       online: i(e.online),
       offline: i(e.offline)
     }), [e, i]), a = r.useCallback(() => n(""), []);
-    return W(M({}, l), {
+    return q(M({}, l), {
       searchQuery: t,
       setSearchQuery: n,
       handleSearchClear: a
@@ -494,18 +494,18 @@ let H = () => {
       renderHeader: o,
       autoFocus: u = !1,
       appContext: d = R.IlC.APP
-    } = e, [f, g] = r.useState([z.SUGGESTIONS, z.FRIEND_REQUESTS]), h = r.useRef(null), O = (0, N.Z)("friends-popout", h), y = K(), m = X(y), {
+    } = e, [f, g] = r.useState([Q.SUGGESTIONS, Q.FRIEND_REQUESTS]), O = r.useRef(null), y = (0, h.Z)("friends-popout", O), N = K(), m = X(N), {
       searchQuery: S,
       setSearchQuery: I,
       handleSearchClear: v
-    } = m, E = q(m, ["searchQuery", "setSearchQuery", "handleSearchClear"]), j = r.useCallback(e => {
+    } = m, E = V(m, ["searchQuery", "setSearchQuery", "handleSearchClear"]), j = r.useCallback(e => {
       g(t => t.includes(e) ? t.filter(t => t !== e) : [...t, e])
     }, []), C = r.useCallback(e => {
       (0, p.jW)(e, async () => {
         let {
           default: e
         } = await n.e("23087").then(n.bind(n, 29131));
-        return t => (0, i.jsx)(e, W(M({}, t), {
+        return t => (0, i.jsx)(e, q(M({}, t), {
           onClose: s
         }))
       })
@@ -521,30 +521,30 @@ let H = () => {
         section: t
       } = e, n = "", r = 0;
       switch (t) {
-        case z.FRIEND_REQUESTS:
-          n = F.NW.string(F.t.fyA119), r = E.friendRequests.length;
+        case Q.FRIEND_REQUESTS:
+          n = F.intl.string(F.t.fyA119), r = E.friendRequests.length;
           break;
-        case z.SAME_ACTIVITY:
-          n = y.currentActivityName, r = E.sameActivity.length;
+        case Q.SAME_ACTIVITY:
+          n = N.currentActivityName, r = E.sameActivity.length;
           break;
-        case z.SUGGESTIONS:
-          n = F.NW.string(F.t.qm9dSk), r = E.suggestions.length;
+        case Q.SUGGESTIONS:
+          n = F.intl.string(F.t.qm9dSk), r = E.suggestions.length;
           break;
-        case z.ACTIVITIES:
-          n = F.NW.string(F.t.TxqPQU), r = E.activities.length;
+        case Q.ACTIVITIES:
+          n = F.intl.string(F.t.TxqPQU), r = E.activities.length;
           break;
-        case z.ONLINE:
-          n = F.NW.string(F.t.WbGtnJ), r = E.online.length;
+        case Q.ONLINE:
+          n = F.intl.string(F.t.WbGtnJ), r = E.online.length;
           break;
-        case z.OFFLINE:
-          n = F.NW.string(F.t.Vv0abG), r = E.offline.length
+        case Q.OFFLINE:
+          n = F.intl.string(F.t.Vv0abG), r = E.offline.length
       }
-      let l = (t === z.SUGGESTIONS || t === z.FRIEND_REQUESTS) && r > 3,
+      let l = (t === Q.SUGGESTIONS || t === Q.FRIEND_REQUESTS) && r > 3,
         s = f.includes(t);
       return (0, i.jsxs)(b.Z, {
         className: L.section,
         children: [(0, i.jsx)(c.nn4, {
-          children: F.NW.format(F.t.UaqbkZ, {
+          children: F.intl.format(F.t.UaqbkZ, {
             title: n,
             count: r
           })
@@ -563,19 +563,19 @@ let H = () => {
           }) : null]
         })]
       })
-    }, [y.currentActivityName, E.friendRequests.length, E.sameActivity.length, E.suggestions.length, E.activities.length, E.online.length, E.offline.length, f, j]), w = r.useCallback(e => {
+    }, [N.currentActivityName, E.friendRequests.length, E.sameActivity.length, E.suggestions.length, E.activities.length, E.online.length, E.offline.length, f, j]), w = r.useCallback(e => {
       let t;
-      return null == (t = e.section === z.FRIEND_REQUESTS ? E.friendRequests[e.row] : e.section === z.SAME_ACTIVITY ? E.sameActivity[e.row] : e.section === z.SUGGESTIONS ? E.suggestions[e.row] : e.section === z.ACTIVITIES ? E.activities[e.row] : e.section === z.ONLINE ? E.online[e.row] : E.offline[e.row]) || null == t.user ? null : (0, i.jsx)(Y, W(M({}, t), {
+      return null == (t = e.section === Q.FRIEND_REQUESTS ? E.friendRequests[e.row] : e.section === Q.SAME_ACTIVITY ? E.sameActivity[e.row] : e.section === Q.SUGGESTIONS ? E.suggestions[e.row] : e.section === Q.ACTIVITIES ? E.activities[e.row] : e.section === Q.ONLINE ? E.online[e.row] : E.offline[e.row]) || null == t.user ? null : (0, i.jsx)(Y, q(M({}, t), {
         index: e.row,
         closeParentPopout: s,
-        isSuggestion: e.section === z.SUGGESTIONS,
+        isSuggestion: e.section === Q.SUGGESTIONS,
         appContext: d
       }), "".concat(e.section, ":").concat(t.user.id))
     }, [E, s, d]), {
       showSuggestions: _
     } = (0, D.Z)(), T = r.useMemo(() => {
-      let e = _ ? f.includes(z.SUGGESTIONS) ? Math.min(3, E.suggestions.length) : E.suggestions.length : 0;
-      return [f.includes(z.FRIEND_REQUESTS) ? Math.min(3, E.friendRequests.length) : E.friendRequests.length, E.sameActivity.length, E.activities.length, e, E.online.length, E.offline.length]
+      let e = _ ? f.includes(Q.SUGGESTIONS) ? Math.min(3, E.suggestions.length) : E.suggestions.length : 0;
+      return [f.includes(Q.FRIEND_REQUESTS) ? Math.min(3, E.friendRequests.length) : E.friendRequests.length, E.sameActivity.length, E.activities.length, e, E.online.length, E.offline.length]
     }, [E, f, _]), G = Object.values(E).every(e => 0 === e.length);
     return (0, i.jsxs)(c.VqE, {
       className: t,
@@ -586,11 +586,11 @@ let H = () => {
         className: L.header,
         children: [(0, i.jsx)(c.X6q, {
           variant: "heading-lg/semibold",
-          children: F.NW.string(F.t.TdEu5e)
+          children: F.intl.string(F.t.TdEu5e)
         }), (0, i.jsxs)("div", {
           className: L.controlButtons,
           children: [(0, i.jsx)(c.M0o, {
-            tooltip: F.NW.string(F.t.w5uwoK),
+            tooltip: F.intl.string(F.t.w5uwoK),
             color: c.YX$.TERTIARY,
             icon: (0, i.jsx)(c.oLu, {
               size: "xs",
@@ -599,7 +599,7 @@ let H = () => {
             className: L.controlButton,
             onClick: P
           }), (0, i.jsx)(c.M0o, {
-            tooltip: F.NW.string(F.t["3D5yo6"]),
+            tooltip: F.intl.string(F.t["3D5yo6"]),
             color: c.YX$.TERTIARY,
             icon: (0, i.jsx)(c.xhG, {
               size: "xs",
@@ -615,7 +615,7 @@ let H = () => {
           query: S,
           onChange: I,
           onClear: v,
-          placeholder: F.NW.string(F.t["5h0QOD"]),
+          placeholder: F.intl.string(F.t["5h0QOD"]),
           size: c.E1j.Sizes.MEDIUM,
           autoFocus: u
         })
@@ -624,23 +624,23 @@ let H = () => {
         children: (0, i.jsx)(c.Text, {
           variant: "text-md/normal",
           color: "text-muted",
-          children: F.NW.string(F.t["7sW4h4"])
+          children: F.intl.string(F.t["7sW4h4"])
         })
       }) : (0, i.jsx)(a.bG, {
-        navigator: O,
+        navigator: y,
         children: (0, i.jsx)(a.SJ, {
           children: e => {
             var {
               ref: t,
               role: n
-            } = e, r = q(e, ["ref", "role"]);
+            } = e, r = V(e, ["ref", "role"]);
             return (0, i.jsx)(c.Wdt, {
               children: e => (0, i.jsx)(c.aVo, M({
                 innerRole: n,
-                innerAriaLabel: F.NW.string(F.t.TdEu5e),
+                innerAriaLabel: F.intl.string(F.t.TdEu5e),
                 ref: e => {
                   var n;
-                  h.current = e, t.current = null != (n = null == e ? void 0 : e.getScrollerNode()) ? n : null
+                  O.current = e, t.current = null != (n = null == e ? void 0 : e.getScrollerNode()) ? n : null
                 },
                 className: l,
                 sectionHeight: 40,

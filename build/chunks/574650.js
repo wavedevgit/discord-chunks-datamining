@@ -14,10 +14,10 @@ var a = n(442837),
   E = n(693546),
   d = n(305325),
   _ = n(246364),
-  N = n(983736),
-  I = n(937111),
-  O = n(981631),
-  T = n(176505),
+  I = n(983736),
+  O = n(937111),
+  T = n(981631),
+  N = n(176505),
   S = n(388032),
   R = n(246752),
   A = n(240211);
@@ -44,10 +44,10 @@ let P = 12633 == n.j ? () => {
   var e, t;
   let i = (0, a.e7)([u.Z], () => u.Z.getGuildId(), []),
     P = (0, a.e7)([c.Z], () => c.Z.getGuild(i), [i]),
-    C = (0, a.e7)([I.Z], () => null != i ? I.Z.getRequest(i) : null, [i]),
+    C = (0, a.e7)([O.Z], () => null != i ? O.Z.getRequest(i) : null, [i]),
     D = (0, o.TH)(),
-    f = (null == (e = (0, o.LX)(D.pathname, O.Z5c.CHANNEL(null == P ? void 0 : P.id, T.oC.GUILD_ONBOARDING))) ? void 0 : e.isExact) === !0;
-  if (null == P || !(0, N.Dc)(P) || f) return null;
+    f = (null == (e = (0, o.LX)(D.pathname, T.Z5c.CHANNEL(null == P ? void 0 : P.id, N.oC.GUILD_ONBOARDING))) ? void 0 : e.isExact) === !0;
+  if (null == P || !(0, I.Dc)(P) || f) return null;
   let m = null != (t = null == C ? void 0 : C.applicationStatus) ? t : _.wB.STARTED,
     g = null,
     y = null,
@@ -55,19 +55,19 @@ let P = 12633 == n.j ? () => {
     h = [R.notice, A.notice];
   switch (m) {
     case _.wB.SUBMITTED:
-      g = S.NW.string(S.t["5iLvS0"]), y = S.NW.string(S.t.mqtdmZ), U = () => {
+      g = S.intl.string(S.t["5iLvS0"]), y = S.intl.string(S.t.mqtdmZ), U = () => {
         (0, s.h7j)(e => {
           var t, n;
           return (0, r.jsx)(s.ConfirmModal, (t = p({
-            header: S.NW.string(S.t.aIz1oa),
-            confirmText: S.NW.string(S.t["cY+Ooa"]),
-            cancelText: S.NW.string(S.t["ETE/oK"]),
+            header: S.intl.string(S.t.aIz1oa),
+            confirmText: S.intl.string(S.t["cY+Ooa"]),
+            cancelText: S.intl.string(S.t["ETE/oK"]),
             onConfirm: () => E.Z.removeGuildJoinRequest(P.id),
             confirmButtonColor: s.zxk.Colors.BRAND
           }, e), n = n = {
             children: (0, r.jsx)(s.Text, {
               variant: "text-md/normal",
-              children: S.NW.string(S.t["13tjTU"])
+              children: S.intl.string(S.t["13tjTU"])
             })
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
             var n = Object.keys(e);
@@ -83,7 +83,7 @@ let P = 12633 == n.j ? () => {
       };
       break;
     case _.wB.REJECTED:
-      g = S.NW.string(S.t.lk30cX), y = S.NW.string(S.t["8RrsHh"]), U = () => {
+      g = S.intl.string(S.t.lk30cX), y = S.intl.string(S.t["8RrsHh"]), U = () => {
         (0, s.ZDy)(async () => {
           let {
             default: e
@@ -95,7 +95,7 @@ let P = 12633 == n.j ? () => {
       }, h.push(R.error);
       break;
     default:
-      g = S.NW.string(S.t.G5YKXF), y = S.NW.string(S.t["r8/DT0"]), U = () => {
+      g = S.intl.string(S.t.G5YKXF), y = S.intl.string(S.t["r8/DT0"]), U = () => {
         (0, d.hk)(P.id)
       }
   }

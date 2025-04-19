@@ -52,7 +52,7 @@ function f(e, t) {
 
 function _(e) {
   let {
-    text: t = s.NW.string(s.t["5AFxuL"]),
+    text: t = s.intl.string(s.t["5AFxuL"]),
     className: n
   } = e;
   return (0, r.jsx)(o.ua7, {

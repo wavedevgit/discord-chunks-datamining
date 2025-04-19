@@ -37,30 +37,30 @@ function g(e) {
       separator: !1,
       children: (0, r.jsx)(o.X6q, {
         variant: "heading-lg/semibold",
-        children: h.NW.string(h.t["7glvXl"])
+        children: h.intl.string(h.t["7glvXl"])
       })
     }), (0, r.jsxs)(o.hzk, {
       children: [(0, r.jsx)(o.Text, {
         variant: "text-md/normal",
-        children: g === p.c2C.AGREEMENTS ? h.NW.format(h.t.zHolhY, {}) : null
+        children: g === p.c2C.AGREEMENTS ? h.intl.format(h.t.zHolhY, {}) : null
       }), (0, r.jsxs)("div", {
         className: f.container,
         children: [(0, r.jsxs)("ul", {
           className: f.links,
           children: [(0, r.jsx)("li", {
-            children: h.NW.format(h.t.iw0hFh, {
+            children: h.intl.format(h.t.iw0hFh, {
               url: p.EYA.TERMS
             })
           }), (0, r.jsx)("li", {
-            children: h.NW.format(h.t["36klnJ"], {
+            children: h.intl.format(h.t["36klnJ"], {
               url: p.EYA.PAID_TERMS
             })
           }), (0, r.jsx)("li", {
-            children: h.NW.format(h.t.TquFBA, {
+            children: h.intl.format(h.t.TquFBA, {
               url: p.EYA.PRIVACY
             })
           }), (0, r.jsx)("li", {
-            children: h.NW.format(h.t.ia96TU, {
+            children: h.intl.format(h.t.ia96TU, {
               url: p.EYA.GUIDELINES
             })
           })]
@@ -72,14 +72,14 @@ function g(e) {
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
         className: f.agreementDescription,
-        children: h.NW.string(h.t["+USXQE"])
+        children: h.intl.string(h.t["+USXQE"])
       })]
     }), (0, r.jsx)(o.mzw, {
       children: (0, r.jsx)(o.zxk, {
         submitting: m,
         onClick: E,
         color: o.zxk.Colors.GREEN,
-        children: h.NW.string(h.t["+TBKLy"])
+        children: h.intl.string(h.t["+TBKLy"])
       })
     })]
   })

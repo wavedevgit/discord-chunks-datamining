@@ -61,8 +61,8 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let N = e => e.stopPropagation();
-class A extends i.PureComponent {
+let A = e => e.stopPropagation();
+class N extends i.PureComponent {
   componentDidMount() {
     d.gK(), document.addEventListener("keydown", this.backToFrontPage), "" !== this.props.query && this.search(this.props.query, E.wI2.SEARCH)
   }
@@ -90,13 +90,13 @@ class A extends i.PureComponent {
         return (0, r.jsx)(c.vwX, {
           tag: "h5",
           className: v.searchHeader,
-          children: y.NW.string(y.t.y3LQCA)
+          children: y.intl.string(y.t.y3LQCA)
         });
       case E.wI2.TRENDING_GIFS:
         return (0, r.jsx)(c.vwX, {
           tag: "h5",
           className: v.searchHeader,
-          children: y.NW.string(y.t.H6zNFx)
+          children: y.intl.string(y.t.H6zNFx)
         });
       default:
         return (0, r.jsx)(c.E1j, {
@@ -105,8 +105,8 @@ class A extends i.PureComponent {
           query: e,
           onChange: this.handleChangeQuery,
           onClear: this.handleClearQuery,
-          placeholder: y.NW.string(y.t.TnYqkZ),
-          "aria-label": y.NW.string(y.t.TnYqkZ),
+          placeholder: y.intl.string(y.t.TnYqkZ),
+          "aria-label": y.intl.string(y.t.TnYqkZ),
           ref: this.props.searchBarRef,
           autoFocus: !0
         })
@@ -119,7 +119,7 @@ class A extends i.PureComponent {
     return null != e && (t = (0, r.jsx)(c.P3F, {
       onClick: this.handleClearQuery,
       className: v.backButton,
-      "aria-label": y.NW.string(y.t["13/7kZ"]),
+      "aria-label": y.intl.string(y.t["13/7kZ"]),
       children: (0, r.jsx)(c.whL, {
         size: "md",
         color: "currentColor"
@@ -172,7 +172,7 @@ class A extends i.PureComponent {
       role: "tabpanel",
       "aria-labelledby": b._3,
       className: o()(v.container, e),
-      onClick: N,
+      onClick: A,
       ref: t,
       children: [(0, r.jsx)("div", {
         className: v.header,
@@ -248,7 +248,7 @@ let C = i.forwardRef((e, t) => {
       var e;
       null == (e = g.current) || e.focus()
     }
-  }, [d, g]), (0, r.jsx)(A, T(I({}, e), {
+  }, [d, g]), (0, r.jsx)(N, T(I({}, e), {
     forwardedRef: t,
     query: f,
     resultQuery: a,

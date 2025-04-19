@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => Y
+  Z: () => W
 }), n(388685), n(539854);
 var r, i = n(392711),
   a = n.n(i),
@@ -33,17 +33,17 @@ let y = new Set,
   I = {},
   S = new Set,
   T = {},
-  N = 10 * m.Z.Millis.MINUTE,
-  A = 6 * m.Z.Millis.HOUR,
+  A = 10 * m.Z.Millis.MINUTE,
+  N = 6 * m.Z.Millis.HOUR,
   C = 10 * m.Z.Millis.MINUTE,
   R = new s.V7;
 
 function P(e) {
-  R.start(e + Math.random() * N, c.o)
+  R.start(e + Math.random() * A, c.o)
 }
 
 function w() {
-  return P(A), D()
+  return P(N), D()
 }
 
 function D() {
@@ -157,7 +157,7 @@ function F(e) {
     }
     T[t] = r
   }
-  P(A)
+  P(N)
 }
 
 function V() {
@@ -180,7 +180,7 @@ function H(e) {
     n.has(t.id) && (0, g.Je)(t) && l.Z.wait(() => u.l(t.id, t.branchId))
   }
 }
-class W extends(r = o.ZP.Store) {
+class Y extends(r = o.ZP.Store) {
   initialize() {
     this.syncWith([_.Z], D), this.waitFor(p.Z, _.Z, f.Z)
   }
@@ -203,8 +203,8 @@ class W extends(r = o.ZP.Store) {
     return I[e]
   }
 }
-b(W, "displayName", "ApplicationBuildStore");
-let Y = new W(l.Z, {
+b(Y, "displayName", "ApplicationBuildStore");
+let W = new Y(l.Z, {
   CONNECTION_OPEN: w,
   GAMES_DATABASE_UPDATE: L,
   APPLICATION_BUILD_FETCH_START: M,

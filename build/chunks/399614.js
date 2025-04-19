@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  s = n(399606),
-  l = n(481060),
+  l = n(399606),
+  s = n(481060),
   a = n(710344),
   o = n(734893),
   c = n(8426),
@@ -50,32 +50,32 @@ let f = [],
   x = function(e) {
     let {
       guildId: t
-    } = e, x = (0, s.Wu)([d.Z], () => {
+    } = e, x = (0, l.Wu)([d.Z], () => {
       var e;
       return null != (e = d.Z.getSettings().resourceChannels) ? e : f
     }), b = i.useMemo(() => x.map(e => h(p({}, e), {
       id: e.channelId
     })), [x]), {
       handleDragStart: j,
-      handleDragReset: N,
-      handleDragComplete: _
-    } = (0, a.Z)(b, c.lq), v = i.useCallback((e, n) => {
+      handleDragReset: _,
+      handleDragComplete: v
+    } = (0, a.Z)(b, c.lq), O = i.useCallback((e, n) => {
       let r = d.Z.getSettings();
       null != r && ((0, c.r2)(e), (0, c.oo)(t, r).then(() => {
         (0, c.mM)(t, e.channelId, n)
       }))
-    }, [t]), O = i.useCallback(() => {
-      if (null != t) return (0, l.ZDy)(async () => {
+    }, [t]), C = i.useCallback(() => {
+      if (null != t) return (0, s.ZDy)(async () => {
         let {
           default: e
         } = await n.e("84725").then(n.bind(n, 462499));
         return n => (0, r.jsx)(e, h(p({}, n), {
           guildId: t,
           onSave: c.r2,
-          onIconUpload: v
+          onIconUpload: O
         }))
       })
-    }, [t, v]);
+    }, [t, O]);
     return (0, r.jsxs)("div", {
       className: g.editResources,
       children: [x.map((e, n) => (0, r.jsx)(u.Z, {
@@ -83,18 +83,18 @@ let f = [],
         resourceChannel: e,
         index: n,
         onDragStart: j,
-        onDragReset: N,
-        onDragComplete: _
-      }, e.channelId)), x.length < o.x3 && (0, r.jsxs)(l.P3F, {
+        onDragReset: _,
+        onDragComplete: v
+      }, e.channelId)), x.length < o.x3 && (0, r.jsxs)(s.P3F, {
         className: g.addActionItem,
-        onClick: O,
-        children: [(0, r.jsx)(l.oFk, {
+        onClick: C,
+        children: [(0, r.jsx)(s.oFk, {
           size: "xs",
           color: "currentColor"
-        }), (0, r.jsx)(l.Text, {
+        }), (0, r.jsx)(s.Text, {
           variant: "text-md/normal",
           color: "none",
-          children: m.NW.string(m.t["w9/qGR"])
+          children: m.intl.string(m.t["w9/qGR"])
         })]
       })]
     })

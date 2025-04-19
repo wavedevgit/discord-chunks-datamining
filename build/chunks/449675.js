@@ -30,7 +30,7 @@ function l(e) {
     }(e, ["ruleName", "onConfirm"]);
   let {
     setEditingRule: u
-  } = (0, c.V)(), p = null != l ? l : i.NW.string(i.t.ffR2cH);
+  } = (0, c.V)(), p = null != l ? l : i.intl.string(i.t.ffR2cH);
   return (0, n.jsx)(o.ConfirmModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
@@ -49,15 +49,15 @@ function l(e) {
     }
     return e
   }({}, f), r = r = {
-    header: i.NW.string(i.t.kknTmJ),
-    cancelText: i.NW.string(i.t["ETE/oK"]),
-    confirmText: i.NW.string(i.t["cY+Ooa"]),
+    header: i.intl.string(i.t.kknTmJ),
+    cancelText: i.intl.string(i.t["ETE/oK"]),
+    confirmText: i.intl.string(i.t["cY+Ooa"]),
     onConfirm: () => {
       u(null), null == a || a()
     },
     children: (0, n.jsx)(o.Text, {
       variant: "text-md/normal",
-      children: i.NW.format(i.t["ff/gx8"], {
+      children: i.intl.format(i.t["ff/gx8"], {
         ruleName: p
       })
     })

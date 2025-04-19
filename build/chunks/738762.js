@@ -72,6 +72,6 @@ function h(e) {
         }, (0, s.y)(e)))
       })
     },
-    label: d.NW.string(d.t["g33r/P"])
+    label: d.intl.string(d.t["g33r/P"])
   }) : null
 }

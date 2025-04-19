@@ -1,6 +1,6 @@
 /** Chunk was on 97299 **/
 n.d(t, {
-  Z: () => x
+  Z: () => N
 }), n(388685);
 var r = n(200651),
   l = n(192379),
@@ -42,18 +42,18 @@ let O = {
     [f.IE4.AVERAGE]: a.ua7.Colors.YELLOW,
     [f.IE4.FINE]: a.ua7.Colors.GREEN
   },
-  N = {
+  b = {
     [f.QKv.CONNECTED]: p.rtcConnectionStatusConnected,
     [f.QKv.CONNECTING]: p.rtcConnectionStatusConnecting,
     [f.QKv.ERROR]: p.rtcConnectionStatusError
   },
-  b = {
+  v = {
     [f.IE4.FINE]: p.rtcConnectionQualityFine,
     [f.IE4.AVERAGE]: p.rtcConnectionQualityAverage,
     [f.IE4.BAD]: p.rtcConnectionQualityBad,
     [f.IE4.UNKNOWN]: null
   };
-class v extends l.PureComponent {
+class m extends l.PureComponent {
   renderPopoutTarget(e) {
     let t = this.props.channelId;
     return null == t ? e({}) : (0, r.jsx)(a.yRy, {
@@ -85,7 +85,7 @@ class v extends l.PureComponent {
           text: i,
           textVariant: this.props.connectionStatusTextVariant,
           hasVideo: this.props.hasVideo,
-          className: N[l],
+          className: b[l],
           hasConnectedChannel: null != n
         })
       })
@@ -103,14 +103,14 @@ class v extends l.PureComponent {
     return i === f.hes.RTC_CONNECTED && (e = (0, r.jsx)(a.ua7, {
       text: t !== f.IE4.UNKNOWN && null != l ? "".concat(l.toFixed(0), " ms") : null,
       color: O[t],
-      children: e => (0, r.jsx)(m, y({
+      children: e => (0, r.jsx)(x, y({
         quality: t,
         smallPing: n
       }, e))
     })), (0, r.jsxs)("div", {
       className: p.rtcConnectionStatusWrapper,
       children: [(0, r.jsxs)("div", {
-        className: o()(p.rtcConnectionStatus, b[t], s),
+        className: o()(p.rtcConnectionStatus, v[t], s),
         children: [e, (0, r.jsx)("div", {
           className: p.labelWrapper,
           children: this.renderStatus()
@@ -137,7 +137,7 @@ class v extends l.PureComponent {
   }
 }
 
-function m(e) {
+function x(e) {
   var {
     quality: t,
     smallPing: n
@@ -168,4 +168,4 @@ function m(e) {
     })
   }, l))
 }
-let x = v
+let N = m

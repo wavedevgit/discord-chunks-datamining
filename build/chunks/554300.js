@@ -83,8 +83,8 @@ let E = i.forwardRef(function(e, t) {
       muted: I,
       to: S,
       avatarClassName: T,
-      selectedClassName: N,
-      innerClassName: A,
+      selectedClassName: A,
+      innerClassName: N,
       wrapContent: C,
       highlighted: R,
       focusProps: P
@@ -93,7 +93,7 @@ let E = i.forwardRef(function(e, t) {
   w.className = o()(w.className, d.container, {
     [d.selected]: O,
     [d.highlighted]: R,
-    [null != N ? N : ""]: O,
+    [null != A ? A : ""]: O,
     [d.clickable]: !O && (null != S || null != y)
   }), w["aria-selected"] = null != (n = w["aria-selected"]) ? n : O;
   let D = i.useRef(null),
@@ -109,7 +109,7 @@ let E = i.forwardRef(function(e, t) {
         placement: c.i.MEMBER_LIST
       }), (0, r.jsxs)("div", {
         ref: D,
-        className: o()(A, d.layout, {
+        className: o()(N, d.layout, {
           [d.muted]: !O && I,
           [d.wrappedLayout]: C
         }),

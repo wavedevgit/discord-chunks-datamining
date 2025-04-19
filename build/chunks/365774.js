@@ -1,23 +1,23 @@
 /** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  Z: () => l
+  Z: () => s
 });
 var r = n(200651);
 n(192379);
 var i = n(388032),
-  s = n(493591);
+  l = n(493591);
 
-function l(e) {
+function s(e) {
   let {
     showDirtyIndicator: t
   } = e;
   return t ? (0, r.jsxs)("div", {
-    className: s.container,
-    children: [i.NW.string(i.t.KUw7Sk), (0, r.jsx)("div", {
-      className: s.dot
+    className: l.container,
+    children: [i.intl.string(i.t.KUw7Sk), (0, r.jsx)("div", {
+      className: l.dot
     })]
   }) : (0, r.jsx)(r.Fragment, {
-    children: i.NW.string(i.t.KUw7Sk)
+    children: i.intl.string(i.t.KUw7Sk)
   })
 }

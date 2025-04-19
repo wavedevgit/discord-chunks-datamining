@@ -57,13 +57,13 @@ function T(e, t) {
   return n
 }
 
-function N(e, t) {
+function A(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function A(e, t) {
+function N(e, t) {
   if (null == e) return {};
   var n, r, i = C(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -138,10 +138,10 @@ function L(e) {
       wrap: !0
     }),
     H = d.length,
-    W = 0 === H ? v.NW.string(v.t["vR7M+/"]) : v.NW.formatToPlainString(v.t.PCs0oq, {
+    Y = 0 === H ? v.intl.string(v.t["vR7M+/"]) : v.intl.formatToPlainString(v.t.PCs0oq, {
       numRoles: H
     }),
-    Y = (j ? d : L).map((e, i) => {
+    W = (j ? d : L).map((e, i) => {
       var a;
       return (0, r.jsx)(E.Z, {
         role: e,
@@ -174,14 +174,14 @@ function L(e) {
       children: e => {
         var {
           ref: t
-        } = e, n = A(e, ["ref"]);
-        return (0, r.jsxs)("div", N(S({
+        } = e, n = N(e, ["ref"]);
+        return (0, r.jsxs)("div", A(S({
           className: O.root,
-          "aria-label": W,
+          "aria-label": Y,
           ref: t
         }, n), {
-          children: [Y, L.length < d.length ? j ? (0, r.jsx)(c.DY3, {
-            text: v.NW.string(v.t.XnXtCg),
+          children: [W, L.length < d.length ? j ? (0, r.jsx)(c.DY3, {
+            text: v.intl.string(v.t.XnXtCg),
             children: (0, r.jsx)(c.P3F, {
               onClick: q,
               className: O.collapseButton,
@@ -192,7 +192,7 @@ function L(e) {
               })
             })
           }) : (0, r.jsx)(c.DY3, {
-            text: v.NW.string(v.t.DY6n4u),
+            text: v.intl.string(v.t.DY6n4u),
             children: (0, r.jsx)(c.P3F, {
               innerRef: G,
               onClick: z,

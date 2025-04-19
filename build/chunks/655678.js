@@ -33,7 +33,7 @@ function h(e, t) {
       }),
       onClick: g,
       isActive: m,
-      "aria-label": _.NW.string(_.t.yvN8bG),
+      "aria-label": _.intl.string(_.t.yvN8bG),
       "aria-haspopup": "false",
       children: (0, r.jsx)(s.l22, {
         size: h ? "refresh_sm" : void 0,

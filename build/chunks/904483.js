@@ -47,7 +47,7 @@ function p(e) {
   let t = (0, l.e7)([c.Z], () => c.Z.can(o.Plq.MANAGE_CHANNELS, e));
   return __OVERLAY__ ? null : e.id === a._ ? (0, r.jsx)(i.sNh, {
     id: "create-category",
-    label: u.NW.string(u.t["ISN+ND"]),
+    label: u.intl.string(u.t["ISN+ND"]),
     action: () => (0, i.ZDy)(async () => {
       let {
         default: e
@@ -56,7 +56,7 @@ function p(e) {
     })
   }) : t ? [(0, r.jsx)(i.sNh, {
     id: "create-channel",
-    label: u.NW.string(u.t["fUYU+v"]),
+    label: u.intl.string(u.t["fUYU+v"]),
     action: () => (0, i.ZDy)(async () => {
       let {
         default: t
@@ -68,7 +68,7 @@ function p(e) {
     })
   }, "create-channel"), (0, r.jsx)(i.sNh, {
     id: "create-category",
-    label: u.NW.string(u.t["ISN+ND"]),
+    label: u.intl.string(u.t["ISN+ND"]),
     action: () => (0, i.ZDy)(async () => {
       let {
         default: t

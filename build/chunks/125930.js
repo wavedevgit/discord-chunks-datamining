@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => N
+  Z: () => y
 }), n(781311), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -45,34 +45,34 @@ class _ extends i.PureComponent {
   }
 }
 let E = e => [{
-  key: g.NW.string(g.t["0TcHzs"]),
+  key: g.intl.string(g.t["0TcHzs"]),
   value: e.operating_system_version
 }, {
-  key: g.NW.string(g.t.eOX6Hh),
+  key: g.intl.string(g.t.eOX6Hh),
   value: e.cpu
 }, {
-  key: g.NW.string(g.t["+WJ5XV"]),
-  value: null != e.ram ? g.NW.formatToPlainString(g.t.RNRSl5, {
+  key: g.intl.string(g.t["+WJ5XV"]),
+  value: null != e.ram ? g.intl.formatToPlainString(g.t.RNRSl5, {
     size: (0, u.BU)(1e3 * e.ram, {
       showDecimalForGB: !1
     })
   }) : null
 }, {
-  key: g.NW.string(g.t["+3s/V1"]),
+  key: g.intl.string(g.t["+3s/V1"]),
   value: e.gpu
 }, {
-  key: g.NW.string(g.t["L+x5wM"]),
+  key: g.intl.string(g.t["L+x5wM"]),
   value: null != e.disk ? (0, u.BU)(1e3 * e.disk, {
     showDecimalForGB: !1
   }) : null
 }, {
-  key: g.NW.string(g.t["Ghp2/P"]),
+  key: g.intl.string(g.t["Ghp2/P"]),
   value: e.sound_card
 }, {
-  key: g.NW.string(g.t["+w6nJi"]),
+  key: g.intl.string(g.t["+w6nJi"]),
   value: e.network
 }, {
-  key: g.NW.string(g.t.Au3Vbm),
+  key: g.intl.string(g.t.Au3Vbm),
   value: e.notes
 }];
 class O extends i.PureComponent {
@@ -104,11 +104,11 @@ class O extends i.PureComponent {
         children: function(e) {
           switch (e) {
             case f.TaA.WINDOWS:
-              return g.NW.string(g.t["0/xHFB"]);
+              return g.intl.string(g.t["0/xHFB"]);
             case f.TaA.MACOS:
-              return g.NW.string(g.t.E4u4n5);
+              return g.intl.string(g.t.E4u4n5);
             case f.TaA.LINUX:
-              return g.NW.string(g.t.tcawo6)
+              return g.intl.string(g.t.tcawo6)
           }
         }(t)
       }, t))]
@@ -141,14 +141,14 @@ class O extends i.PureComponent {
     } = this.props.systemRequirements[this.state.selectedOperatingSystem];
     return (0, r.jsxs)("div", {
       className: m.requirementsContainer,
-      children: [this.renderRequirementsSection(e, g.NW.string(g.t.QCCMXF)), this.renderRequirementsSection(t, g.NW.string(g.t.He39ws))]
+      children: [this.renderRequirementsSection(e, g.intl.string(g.t.QCCMXF)), this.renderRequirementsSection(t, g.intl.string(g.t.He39ws))]
     })
   }
   render() {
     return (0, r.jsxs)("div", {
       className: this.props.className,
       children: [(0, r.jsx)(s.Z, {
-        children: g.NW.string(g.t.IkOAoq)
+        children: g.intl.string(g.t.IkOAoq)
       }), this.renderTabs(), this.renderBody()]
     })
   }
@@ -173,4 +173,4 @@ class O extends i.PureComponent {
     }
   }
 }
-let N = O
+let y = O

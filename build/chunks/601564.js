@@ -21,13 +21,13 @@ var r = n(200651),
   _ = n(703656),
   E = n(108427),
   O = n(911314),
-  N = n(429899),
-  y = n(843445),
-  I = n(981631),
-  v = n(388032),
-  C = n(681205);
+  y = n(429899),
+  I = n(843445),
+  v = n(981631),
+  C = n(388032),
+  S = n(681205);
 
-function S(e, t, n) {
+function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -41,13 +41,13 @@ let T = (0, m.Un)({
 });
 
 function P(e) {
-  return e < y.x ? y.b.SMALL : y.b.LARGE
+  return e < I.x ? I.b.SMALL : I.b.LARGE
 }
 o.ZP.initialize();
 class j extends i.PureComponent {
   componentDidMount() {
     (0, s.Y)(this.props.location), this.stopListeningToHistory = (0, _.s1)().listen(e => {
-      e.pathname.startsWith(I.Z5c.APPLICATION_STORE) && (0, s.Y)(e)
+      e.pathname.startsWith(v.Z5c.APPLICATION_STORE) && (0, s.Y)(e)
     }), this.props.isAuthenticated && (0, c.tZ)(), g.Z.disable(), g.Z.setLayout(h.r), g.Z.enable(), (0, E.e)("application_store")
   }
   componentWillUnmount() {
@@ -56,9 +56,9 @@ class j extends i.PureComponent {
   renderCustomErrorMessage() {
     return (0, r.jsxs)("div", {
       children: [(0, r.jsx)("p", {
-        children: v.NW.string(v.t["1PZdFx"])
+        children: C.intl.string(C.t["1PZdFx"])
       }), (0, r.jsx)("p", {
-        children: v.NW.string(v.t.CvQlAA)
+        children: C.intl.string(C.t.CvQlAA)
       })]
     })
   }
@@ -67,10 +67,10 @@ class j extends i.PureComponent {
       isAuthenticated: e,
       location: t
     } = this.props, n = e ? (0, r.jsx)("div", {
-      className: C.applicationStore,
+      className: S.applicationStore,
       children: this.renderContent()
     }) : (0, r.jsx)(T, {
-      className: C.applicationStore,
+      className: S.applicationStore,
       location: t,
       render: this.renderContent
     });
@@ -80,7 +80,7 @@ class j extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), S(this, "stopListeningToHistory", void 0), S(this, "renderStoreListing", e => {
+    super(...e), N(this, "stopListeningToHistory", void 0), N(this, "renderStoreListing", e => {
       let {
         match: {
           params: {
@@ -94,9 +94,9 @@ class j extends i.PureComponent {
         width: o
       } = this.props, s = (0, l.parse)(a.search);
       return (0, r.jsx)(u.Z, {
-        page: I.ZY5.STORE_LISTING,
+        page: v.ZY5.STORE_LISTING,
         root: !0,
-        children: (0, r.jsx)(N.Z, {
+        children: (0, r.jsx)(y.Z, {
           skuId: t,
           applicationId: n,
           slug: i,
@@ -105,29 +105,29 @@ class j extends i.PureComponent {
           pageSize: P(o)
         })
       })
-    }), S(this, "renderContent", () => (0, r.jsxs)(a.rs, {
+    }), N(this, "renderContent", () => (0, r.jsxs)(a.rs, {
       children: [(0, r.jsx)(a.AW, {
-        path: I.Z5c.APPLICATION_STORE,
+        path: v.Z5c.APPLICATION_STORE,
         exact: !0,
         render: () => (0, r.jsx)(u.Z, {
-          page: I.ZY5.STORE_DIRECTORY_HOME,
+          page: v.ZY5.STORE_DIRECTORY_HOME,
           root: !0,
           children: (0, r.jsx)(O.Z, {})
         })
       }), (0, r.jsx)(a.AW, {
-        path: I.Z5c.APPLICATION_STORE_LISTING_APPLICATION(":applicationId", ":slug"),
+        path: v.Z5c.APPLICATION_STORE_LISTING_APPLICATION(":applicationId", ":slug"),
         render: this.renderStoreListing
       }), (0, r.jsx)(a.AW, {
-        path: I.Z5c.APPLICATION_STORE_LISTING_APPLICATION(":applicationId"),
+        path: v.Z5c.APPLICATION_STORE_LISTING_APPLICATION(":applicationId"),
         render: this.renderStoreListing
       }), (0, r.jsx)(a.AW, {
-        path: I.Z5c.APPLICATION_STORE_LISTING_SKU(":skuId", ":slug"),
+        path: v.Z5c.APPLICATION_STORE_LISTING_SKU(":skuId", ":slug"),
         render: this.renderStoreListing
       }), (0, r.jsx)(a.AW, {
-        path: I.Z5c.APPLICATION_STORE_LISTING_SKU(":skuId"),
+        path: v.Z5c.APPLICATION_STORE_LISTING_SKU(":skuId"),
         render: this.renderStoreListing
       }), (0, r.jsx)(a.l_, {
-        to: I.Z5c.APP
+        to: v.Z5c.APP
       })]
     }))
   }

@@ -1,12 +1,12 @@
 /** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  Z: () => C
+  Z: () => y
 }), n(35282);
 var r = n(200651),
   i = n(192379),
-  s = n(120356),
-  l = n.n(s),
+  l = n(120356),
+  s = n.n(l),
   a = n(442837),
   o = n(692547),
   c = n(481060),
@@ -21,7 +21,7 @@ var r = n(200651),
   b = n(388032),
   j = n(364313);
 
-function N(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -40,7 +40,7 @@ function N(e) {
   return e
 }
 
-function _(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,40 +53,40 @@ function _(e, t) {
   }), e
 }
 
-function v(e) {
+function O(e) {
   let {
     profile: t,
     canManageGuild: n,
     handleClick: i,
-    hasCustomBanner: s
+    hasCustomBanner: l
   } = e, a = (0, c.dQu)(o.Z.colors.BG_BASE_TERTIARY), u = (0, d.q)(t, a.hex());
   return (0, r.jsx)(c.ua7, {
-    text: b.NW.string(b.t.W4Nd7e),
-    children: e => (0, r.jsx)(c.P3F, _(N({}, e), {
+    text: b.intl.string(b.t.W4Nd7e),
+    children: e => (0, r.jsx)(c.P3F, v(_({}, e), {
       "aria-disabled": !n,
       tabIndex: n ? 0 : -1,
-      "aria-label": b.NW.string(b.t.W4Nd7e),
+      "aria-label": b.intl.string(b.t.W4Nd7e),
       onClick: n ? i : void 0,
       style: {
         background: (0, d.d)(u)
       },
-      className: l()(j.itemContainer, {
+      className: s()(j.itemContainer, {
         [j.disabled]: !n
       }),
       children: (0, r.jsx)("div", {
-        className: l()({
-          [j.itemSelected]: !s && null == t.brandColorPrimary
+        className: s()({
+          [j.itemSelected]: !l && null == t.brandColorPrimary
         })
       })
     }))
   })
 }
 
-function O(e) {
+function C(e) {
   let {
     isDiscoverable: t,
     profile: n,
-    onCustomBannerChange: s,
+    onCustomBannerChange: l,
     canManageGuild: a
   } = e, o = null != n.customBanner, d = i.useMemo(() => {
     if (null == n.customBanner) return null;
@@ -111,11 +111,11 @@ function O(e) {
     children: (0, r.jsx)(c.tEY, {
       within: !0,
       children: (0, r.jsx)("div", {
-        className: l()(j.uploadItemWrapper, {
+        className: s()(j.uploadItemWrapper, {
           [j.uploadItemSelected]: o
         }),
         children: (0, r.jsxs)("div", {
-          className: l()(j.uploadItem, {
+          className: s()(j.uploadItem, {
             [j.disabled]: !a
           }),
           children: [m, (0, r.jsx)("div", {
@@ -129,7 +129,7 @@ function O(e) {
           }), (0, r.jsx)(u.ZP, {
             multiple: !1,
             tabIndex: 0,
-            onChange: s,
+            onChange: l,
             disabled: !a
           })]
         })
@@ -138,26 +138,26 @@ function O(e) {
   })
 }
 
-function C(e) {
+function y(e) {
   var t;
   let {
     profile: n,
-    onCustomBannerChange: s,
+    onCustomBannerChange: l,
     canManageGuild: o
-  } = e, u = (0, a.e7)([m.Z], () => m.Z.getGuild(n.id)), g = null != (t = null == u ? void 0 : u.hasFeature(f.oNc.DISCOVERABLE)) && t, p = n.id, C = i.useCallback(e => () => {
+  } = e, u = (0, a.e7)([m.Z], () => m.Z.getGuild(n.id)), g = null != (t = null == u ? void 0 : u.hasFeature(f.oNc.DISCOVERABLE)) && t, p = n.id, y = i.useCallback(e => () => {
     h.Z.updateGuildProfile(p, {
       brandColorPrimary: e,
       customBanner: null
     })
-  }, [p]), y = i.useCallback(e => (!g || null == n.customBanner) && e === n.brandColorPrimary, [n, g]);
+  }, [p]), N = i.useCallback(e => (!g || null == n.customBanner) && e === n.brandColorPrimary, [n, g]);
   return (0, r.jsx)(c.hjN, {
-    title: b.NW.string(b.t.BSVog4),
+    title: b.intl.string(b.t.BSVog4),
     children: (0, r.jsxs)("div", {
       className: j.grid,
-      children: [(0, r.jsx)(v, {
+      children: [(0, r.jsx)(O, {
         profile: n,
         canManageGuild: o,
-        handleClick: C(null),
+        handleClick: y(null),
         hasCustomBanner: g && null != n.customBanner
       }), x.cb.map(e => {
         let {
@@ -166,29 +166,29 @@ function C(e) {
         } = e;
         return (0, r.jsx)(c.ua7, {
           text: t,
-          children: e => (0, r.jsx)(c.P3F, _(N({}, e), {
+          children: e => (0, r.jsx)(c.P3F, v(_({}, e), {
             "aria-disabled": !o,
             tabIndex: o ? 0 : -1,
             "aria-label": t,
-            onClick: o ? C(n) : void 0,
+            onClick: o ? y(n) : void 0,
             style: {
               background: (0, d.d)(n)
             },
-            className: l()(j.itemContainer, {
+            className: s()(j.itemContainer, {
               [j.disabled]: !o
             }),
             children: (0, r.jsx)("div", {
-              className: l()({
-                [j.itemSelected]: y(n)
+              className: s()({
+                [j.itemSelected]: N(n)
               })
             })
           }))
         }, t)
-      }), (0, r.jsx)(O, {
+      }), (0, r.jsx)(C, {
         canManageGuild: o,
         isDiscoverable: g,
         profile: n,
-        onCustomBannerChange: s
+        onCustomBannerChange: l
       })]
     })
   })

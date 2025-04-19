@@ -99,7 +99,7 @@ function v(e) {
     children: [(0, r.jsx)(s.X6q, {
       className: p.optionalHeader,
       variant: "heading-deprecated-12/semibold",
-      children: _.NW.string(_.t["5C107O"])
+      children: _.intl.string(_.t["5C107O"])
     }), l.map(e => y(e, null == n ? void 0 : n[e.name], a))]
   }) : null, g = u.length > 0 ? (0, r.jsx)(s.ua7, {
     text: d,
@@ -109,9 +109,9 @@ function v(e) {
       className: p.optionalCount,
       color: c.Z.Colors.MUTED
     }, e), {
-      children: 0 === l.length ? _.NW.formatToPlainString(_.t["0mI72t"], {
+      children: 0 === l.length ? _.intl.formatToPlainString(_.t["0mI72t"], {
         count: u.length
-      }) : _.NW.formatToPlainString(_.t.BP8N0N, {
+      }) : _.intl.formatToPlainString(_.t.BP8N0N, {
         count: u.length
       })
     }))

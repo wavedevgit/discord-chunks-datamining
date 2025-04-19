@@ -36,7 +36,7 @@ let x = function(e) {
     }, [t.id]),
     j = (0, r.jsx)(h.ZP.Icon, {
       icon: o.Dio,
-      tooltip: y.NW.string(y.t.cpT0Cg),
+      tooltip: y.intl.string(y.t.cpT0Cg),
       onClick: v
     });
   return (0, r.jsxs)(u.Z, {
@@ -48,11 +48,11 @@ let x = function(e) {
       draftType: f.d.ChannelMessage
     }), (0, r.jsxs)(h.ZP, {
       toolbar: j,
-      "aria-label": y.NW.string(y.t.BIYAqa),
+      "aria-label": y.intl.string(y.t.BIYAqa),
       children: [(0, r.jsx)(h.ZP.Icon, {
         icon: o.kBi,
         disabled: !0,
-        "aria-label": y.NW.string(y.t.Kx5kCA)
+        "aria-label": y.intl.string(y.t.Kx5kCA)
       }), (0, r.jsx)(h.ZP.Title, {
         children: t.name
       })]

@@ -1,8 +1,8 @@
 /** Chunk was on 28467 **/
-t.d(s, {
+s.d(t, {
   Z: () => n
 });
 
-function n(e, s) {
-  return null != s && !!e.mentions.includes(s.author.id)
+function n(e, t) {
+  return null != t && !!e.mentions.includes(t.author.id)
 }

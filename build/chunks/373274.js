@@ -27,9 +27,9 @@ var r, i = n(200651),
   x = n(398758),
   E = n(486311),
   I = n(220444),
-  N = n(31022),
-  P = n(10401),
-  w = n(131704),
+  P = n(31022),
+  w = n(10401),
+  N = n(131704),
   Z = n(592125),
   T = n(796974),
   A = n(984933),
@@ -41,11 +41,11 @@ var r, i = n(200651),
   U = n(301342),
   G = n(906817),
   B = n(429122),
-  W = n(285573),
-  V = n(995993),
-  F = n(910595),
-  H = n(466935),
-  z = n(120818),
+  V = n(285573),
+  F = n(995993),
+  H = n(910595),
+  z = n(466935),
+  W = n(120818),
   Y = n(61642),
   K = n(848442),
   q = n(53425),
@@ -187,7 +187,7 @@ class ef extends(r = l.PureComponent) {
         channel: o,
         category: s
       } = l;
-      return !!(0, w.vc)(o.record.type) && (!s.isCollapsed || !s.isMuted) && !o.isMuted && !!t.isItemVisible(r, i, !0) && (0, I.d)(o.record)
+      return !!(0, N.vc)(o.record.type) && (!s.isCollapsed || !s.isMuted) && !o.isMuted && !!t.isItemVisible(r, i, !0) && (0, I.d)(o.record)
     })
   }
   renderTopUnread() {
@@ -205,8 +205,8 @@ class ef extends(r = l.PureComponent) {
       className: ea.positionedContainer,
       children: (0, i.jsx)(ee.Z, {
         ref: this.unreadTopRef,
-        textUnread: es.NW.string(es.t.FCRiT0),
-        textMention: es.NW.string(es.t["8zH0LC"]),
+        textUnread: es.intl.string(es.t.FCRiT0),
+        textMention: es.intl.string(es.t["8zH0LC"]),
         hide: null == e && (r || null != t || null != n),
         className: ea.unreadTop,
         barClassName: ea.unreadBar,
@@ -231,8 +231,8 @@ class ef extends(r = l.PureComponent) {
     return (0, i.jsx)(ee.Z, {
       reverse: !0,
       ref: this.unreadBottomRef,
-      textUnread: es.NW.string(es.t.FCRiT0),
-      textMention: es.NW.string(es.t["8zH0LC"]),
+      textUnread: es.intl.string(es.t.FCRiT0),
+      textMention: es.intl.string(es.t["8zH0LC"]),
       hide: null == r && l,
       className: ea.unreadBottom,
       barClassName: ea.unreadBar,
@@ -295,7 +295,7 @@ class ef extends(r = l.PureComponent) {
         onResize: this.handleResize,
         onContentResize: this.handleResize,
         sections: e.getSections(!0),
-        innerAriaLabel: es.NW.string(es.t.OGiMXF),
+        innerAriaLabel: es.intl.string(es.t.OGiMXF),
         innerTag: "ul",
         getAnchorId: this.getAnchorId
       }, h, t, a), "guild-channels")
@@ -312,7 +312,7 @@ class ef extends(r = l.PureComponent) {
         component: (0, i.jsx)(d.nn4, {
           children: (0, i.jsx)(d.H, {
             id: r,
-            children: es.NW.string(es.t.OGiMXF)
+            children: es.intl.string(es.t.OGiMXF)
           })
         }),
         children: n ? (0, i.jsxs)(l.Fragment, {
@@ -585,7 +585,7 @@ class ef extends(r = l.PureComponent) {
               withMargin: l.length > 1
             }, er.z.GUILD_PREMIUM_PROGRESS_BAR);
           case er.z.GUILD_HOME:
-            return (0, i.jsx)(F.Z, {
+            return (0, i.jsx)(H.Z, {
               guild: r,
               selected: s === eo.oC.GUILD_HOME
             }, er.z.GUILD_HOME);
@@ -605,21 +605,21 @@ class ef extends(r = l.PureComponent) {
               selected: s === eo.oC.GUILD_SHOP
             }, er.z.GUILD_SHOP);
           case er.z.GUILD_MEMBER_APPLICATIONS:
-            return (0, i.jsx)(H.Z, {
+            return (0, i.jsx)(z.Z, {
               guild: r,
               selected: s === eo.oC.MEMBER_APPLICATIONS
             }, er.z.GUILD_MEMBER_APPLICATIONS);
           case er.z.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR:
-            return (0, i.jsx)(z.T, {
+            return (0, i.jsx)(W.T, {
               guild: r
             });
           case er.z.CHANNELS_AND_ROLES:
-            return (0, i.jsx)(V.m, {
+            return (0, i.jsx)(F.m, {
               guild: r,
               selected: s === eo.oC.CHANNEL_BROWSER || s === eo.oC.CUSTOMIZE_COMMUNITY
             }, er.z.CHANNELS_AND_ROLES);
           case er.z.GUILD_DIRECTORY:
-            return (0, i.jsx)(W.Z, {
+            return (0, i.jsx)(V.Z, {
               guild: r,
               selectedChannelId: s,
               disableManageChannels: h
@@ -762,7 +762,7 @@ class ef extends(r = l.PureComponent) {
         if (!l.isPlaceholderRow(e, t)) return null == (r = l.getChannelFromSectionRow(e, t)) || null == (n = r.channel) ? void 0 : n.id
       }
     }), ec(this, "testShouldSkipTutorial", () => {
-      if (!P.Z.shouldShow("voice-conversations")) return;
+      if (!w.Z.shouldShow("voice-conversations")) return;
       let {
         guildChannels: e
       } = this.props, t = e.getFirstVoiceChannel();
@@ -820,8 +820,8 @@ let eg = e => {
   l.useEffect(() => {
     null != n && E(n)
   }, [n, E]);
-  let I = (0, N.Z)(t),
-    P = (0, _.Q3)("NavigableChannels");
+  let I = (0, P.Z)(t),
+    w = (0, _.Q3)("NavigableChannels");
   return (0, i.jsx)(b.Gt, {
     value: s,
     children: (0, i.jsx)(f.Z, {
@@ -836,7 +836,7 @@ let eg = e => {
           stageChannelSpeakerVoiceStates: I,
           selectedGuildId: p,
           optInEnabled: y,
-          isRefreshEnabled: P
+          isRefreshEnabled: w
         }))
       })
     })

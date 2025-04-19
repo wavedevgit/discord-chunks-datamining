@@ -1,26 +1,26 @@
 /** Chunk was on 69818 **/
 r.d(t, {
   MessageReminderEditMenu: () => d,
-  r: () => l
+  r: () => u
 }), r(539854);
 var n = r(200651),
   a = r(192379),
-  c = r(481060),
-  o = r(239091),
-  i = r(324701),
+  i = r(481060),
+  c = r(239091),
+  o = r(324701),
   s = r(550727),
-  u = r(388032);
+  l = r(388032);
 
-function l(e) {
+function u(e) {
   let {
     createReminder: t
-  } = e, o = a.useCallback(() => {
-    (0, c.ZDy)(async () => {
+  } = e, c = a.useCallback(() => {
+    (0, i.ZDy)(async () => {
       let {
         default: e
       } = await r.e("43866").then(r.bind(r, 423639));
       return r => {
-        var a, c;
+        var a, i;
         return (0, n.jsx)(e, (a = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var r = null != arguments[t] ? arguments[t] : {},
@@ -38,17 +38,17 @@ function l(e) {
             })
           }
           return e
-        }({}, r), c = c = {
+        }({}, r), i = i = {
           createReminder: t
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(c)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var n = Object.getOwnPropertySymbols(e);
             r.push.apply(r, n)
           }
           return r
-        })(Object(c)).forEach(function(e) {
-          Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(c, e))
+        })(Object(i)).forEach(function(e) {
+          Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
         }), a))
       }
     })
@@ -59,37 +59,37 @@ function l(e) {
         getDueAt: r,
         getLabel: a
       } = e;
-      return (0, n.jsx)(c.sNh, {
+      return (0, n.jsx)(i.sNh, {
         id: "create-reminder-".concat(a()),
         label: a(),
         action: () => t(r())
       }, "create-reminder-".concat(a()))
     });
-    return e.push((0, n.jsx)(c.sNh, {
+    return e.push((0, n.jsx)(i.sNh, {
       id: "create-reminder-custom",
-      label: u.NW.string(u.t.OLA8Zm),
-      action: o
+      label: l.intl.string(l.t.OLA8Zm),
+      action: c
     }, "custom")), e
-  }, [t, o])
+  }, [t, c])
 }
 
 function d(e) {
   let {
     message: t,
     label: r
-  } = e, a = l({
-    createReminder: e => (0, i.z)({
+  } = e, a = u({
+    createReminder: e => (0, o.z)({
       channelId: t.channel_id,
       messageId: t.id,
       dueAt: e
     })
   });
-  return (0, n.jsx)(c.v2r, {
+  return (0, n.jsx)(i.v2r, {
     navId: "message-reminder-create",
-    onClose: o.Zy,
-    "aria-label": u.NW.string(u.t.mJ3P0N),
+    onClose: c.Zy,
+    "aria-label": l.intl.string(l.t.mJ3P0N),
     onSelect: () => null,
-    children: (0, n.jsx)(c.kSQ, {
+    children: (0, n.jsx)(i.kSQ, {
       label: r,
       children: a
     })

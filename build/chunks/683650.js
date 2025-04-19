@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var s = n(120356),
-  o = n.n(s),
-  i = n(481060),
+  i = n.n(s),
+  o = n(481060),
   a = n(617136),
   l = n(497505),
   c = n(266843),
@@ -19,15 +19,15 @@ var s = n(120356),
 function g() {
   return (0, r.jsx)("div", {
     className: p.buttonContainer,
-    children: (0, r.jsx)(i.zxk, {
+    children: (0, r.jsx)(o.zxk, {
       className: p.button,
-      color: i.Ttl.BRAND,
+      color: o.Ttl.BRAND,
       onClick: () => {
         (0, u.navigateToQuestHome)({
           fromContent: l.jn.QUESTS_EMBED
         })
       },
-      children: m.NW.string(m.t.GURBQk)
+      children: m.intl.string(m.t.GURBQk)
     })
   })
 }
@@ -43,21 +43,21 @@ function h(e) {
     ref: e => {
       n.current = e
     },
-    className: o()(p.container, {
+    className: i()(p.container, {
       [p.wide]: "lg" === s,
       [p.tall]: "lg" !== s
     }),
     children: [(0, r.jsxs)("div", {
       className: p.contentContainer,
-      children: [(0, r.jsx)(i.X6q, {
+      children: [(0, r.jsx)(o.X6q, {
         variant: "lg" === s ? "heading-xl/bold" : "heading-lg/bold",
         color: "header-primary",
-        children: m.NW.string(m.t.vnP31d)
-      }), (0, r.jsx)(i.Text, {
+        children: m.intl.string(m.t.vnP31d)
+      }), (0, r.jsx)(o.Text, {
         variant: "lg" === s ? "text-sm/medium" : "text-xs/medium",
         color: "text-normal",
         className: p.__invalid_mobileWebCopy,
-        children: m.NW.string(m.t.CTn0yc)
+        children: m.intl.string(m.t.CTn0yc)
       }), (0, r.jsx)(g, {})]
     }), (0, r.jsx)("div", {
       className: p.imgContainer,

@@ -31,11 +31,11 @@ let v = (0, a.Z)(e => {
     onSelectParticipant: j,
     onContextMenuParticipant: O,
     onFullscreenParticipant: E,
-    channel: N,
-    hasConnectPermission: I,
-    className: P,
-    inCall: S,
-    showParticipants: Z = !0,
+    channel: I,
+    hasConnectPermission: P,
+    className: S,
+    inCall: Z,
+    showParticipants: N = !0,
     paused: T = !1,
     width: A,
     height: w,
@@ -48,56 +48,56 @@ let v = (0, a.Z)(e => {
   i.useEffect(() => {
     p.S.dispatch(y.CkL.REMEASURE_TARGET)
   }, [A, w, D.width, D.height]);
-  let W = (0, d.Q3)("ChannelCallContent"),
-    U = i.useMemo(() => n.filter(e => e.type !== C.fO.ACTIVITY || !e.participants.some(e => (0, s.J)(e))), [n, a]);
-  return (null == L ? void 0 : L.channelId) === N.id ? (0, r.jsx)(f.Z, {
+  let U = (0, d.Q3)("ChannelCallContent"),
+    B = i.useMemo(() => n.filter(e => e.type !== C.fO.ACTIVITY || !e.participants.some(e => (0, s.J)(e))), [n, a]);
+  return (null == L ? void 0 : L.channelId) === I.id ? (0, r.jsx)(f.Z, {
     height: w
-  }) : (null == N ? void 0 : N.isGuildVocal()) && !S ? (0, r.jsx)(h.Z, {
-    channel: N,
+  }) : (null == I ? void 0 : I.isGuildVocal()) && !Z ? (0, r.jsx)(h.Z, {
+    channel: I,
     participants: t,
-    hasConnectPermission: I
+    hasConnectPermission: P
   }) : k === y.WtW.VOICE ? (0, r.jsx)(c.Z, {
-    guildId: N.guild_id,
+    guildId: I.guild_id,
     width: A,
     className: x.voiceCallWrapper,
     participants: t,
     onContextMenu: O
-  }) : (n = S ? n : t, null == l) ? 0 === n.length ? W ? (0, r.jsx)(_.Z, {
-    channelId: N.id
+  }) : (n = Z ? n : t, null == l) ? 0 === n.length ? U ? (0, r.jsx)(_.Z, {
+    channelId: I.id
   }) : (0, r.jsx)(b.Z, {
     className: o()(x.videoGrid, x.hiddenParticipants),
-    channelId: N.id,
+    channelId: I.id,
     width: A
   }) : (0, r.jsx)(u.Z, {
     className: x.videoGridWrapper,
     justify: u.Z.Justify.CENTER,
     align: u.Z.Align.CENTER,
     children: (0, r.jsx)(m.Z, {
-      channel: N,
+      channel: I,
       className: x.videoGrid,
-      participants: U,
+      participants: B,
       totalNumberOfParticipants: t.length,
       onClick: j,
       onDoubleClick: E,
       onContextMenu: O,
       paused: T,
-      inCall: S
+      inCall: Z
     })
   }) : (0, r.jsx)(g.Z, {
     onFullscreenParticipant: E,
     onContextMenuParticipant: O,
     onSelectParticipant: j,
     selectedParticipant: l,
-    filteredParticipants: U,
+    filteredParticipants: B,
     participants: t,
     popoutWindow: M,
-    className: P,
+    className: S,
     idle: R,
     height: w,
     width: A,
     layout: v,
-    inCall: S,
-    channel: N,
-    showParticipants: Z
+    inCall: Z,
+    channel: I,
+    showParticipants: N
   })
 })

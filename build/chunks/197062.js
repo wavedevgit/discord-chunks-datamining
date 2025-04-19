@@ -28,7 +28,7 @@ let o = (e, t) => {
   },
   s = {
     getForumChannelPermissionText: function() {
-      return a.NW.format(a.t.zlXUVV, {
+      return a.intl.format(a.t.zlXUVV, {
         warningHook: o
       })
     }

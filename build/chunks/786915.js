@@ -49,11 +49,11 @@ function C(e) {
     analyticsLocation: j,
     guildScheduledEvent: O,
     shouldPrioritizeGroupPlusIcon: E = !1,
-    embeddedActivity: N,
-    iconClassName: I,
-    look: P,
-    size: S,
-    buttonText: Z
+    embeddedActivity: I,
+    iconClassName: P,
+    look: S,
+    size: Z,
+    buttonText: N
   } = e, T = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
@@ -76,16 +76,16 @@ function C(e) {
     R = null == C ? void 0 : C.getGuildId(),
     k = (0, a.e7)([h.Z], () => null != R ? h.Z.getGuild(R) : null, [R]),
     M = (0, a.e7)([f.Z], () => null != t ? f.Z.getApplicationActivity(t) : void 0);
-  return null != M && (null == N ? void 0 : N.location.kind) === o.E.CONTEXTLESS ? (0, r.jsx)(g.Z, {
+  return null != M && (null == I ? void 0 : I.location.kind) === o.E.CONTEXTLESS ? (0, r.jsx)(g.Z, {
     onClick: () => {
       null != w && (0, p.v)(w, p.d.INVITE), c.h7(M, !1, A)
     },
     iconComponent: null == t || E ? s.ejJ : s.gQj,
-    label: null != t ? _.NW.string(_.t["OzOM/v"]) : _.NW.string(_.t["6F9ivr"]),
-    iconClassName: I,
-    look: P,
-    size: S,
-    buttonText: Z
+    label: null != t ? _.intl.string(_.t["OzOM/v"]) : _.intl.string(_.t["6F9ivr"]),
+    iconClassName: P,
+    look: S,
+    size: Z,
+    buttonText: N
   }) : null != k && null != C && m.Z.can(b.Plq.CREATE_INSTANT_INVITE, C) ? (0, r.jsx)(g.Z, y({
     onClick: () => {
       l()(null != k, "guild cannot be null"), l()(null != C, "channel cannot be null"), null != w && (0, p.v)(w, p.d.INVITE),
@@ -141,10 +141,10 @@ function C(e) {
         })
     },
     iconComponent: null == t || E ? s.ejJ : s.gQj,
-    label: null != t ? _.NW.string(_.t["OzOM/v"]) : _.NW.string(_.t["6F9ivr"]),
-    iconClassName: I,
-    look: P,
-    size: S,
-    buttonText: Z
+    label: null != t ? _.intl.string(_.t["OzOM/v"]) : _.intl.string(_.t["6F9ivr"]),
+    iconClassName: P,
+    look: S,
+    size: Z,
+    buttonText: N
   }, T)) : null
 }

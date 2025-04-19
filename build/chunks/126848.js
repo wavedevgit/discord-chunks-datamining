@@ -41,7 +41,7 @@ function m(e) {
     }),
     C = (0, a.wE)(l.z.Q1_2025_MARKETING_MOMENT_OFFER_BADGE);
   return t = !0 === _ ? !0 === C ? (0, n.jsx)(b.Du, {}) : (0, n.jsx)(Z.Z, {
-    copy: O.NW.string(O.t.OS9KPj),
+    copy: O.intl.string(O.t.OS9KPj),
     showStars: !1
   }) : x ? (0, n.jsx)(u.Z, {}) : null != V ? (0, n.jsx)(d.GN, {
     isTabSelected: m,

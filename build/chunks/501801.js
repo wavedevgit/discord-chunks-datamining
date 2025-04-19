@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(200651),
   l = n(192379),
   s = n(120356),
-  a = n.n(s),
-  i = n(392711),
-  o = n.n(i),
+  i = n.n(s),
+  a = n(392711),
+  o = n.n(a),
   E = n(913527),
   u = n.n(E),
   c = n(481060),
@@ -17,9 +17,9 @@ var r = n(200651),
   d = n(835473),
   A = n(479099),
   T = n(592125),
-  N = n(430824),
-  I = n(594174),
-  O = n(934415),
+  I = n(430824),
+  O = n(594174),
+  N = n(934415),
   R = n(823379),
   g = n(624138),
   f = n(51144),
@@ -54,7 +54,7 @@ class M extends l.PureComponent {
       targetType: t,
       action: n,
       themeOverride: l
-    } = this.props, s = null != l ? L["themeOverride".concat((0, g.De)(l))] : null, i = a()(L.icon, D[e], n === U.rsA.MESSAGE_DELETE ? L.targetMessage : n === U.rsA.AUTO_MODERATION_BLOCK_MESSAGE || n === U.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || n === U.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || n === U.rsA.AUTO_MODERATION_QUARANTINE_USER ? L.autoModerationBlockMessage : ({
+    } = this.props, s = null != l ? L["themeOverride".concat((0, g.De)(l))] : null, a = i()(L.icon, D[e], n === U.rsA.MESSAGE_DELETE ? L.targetMessage : n === U.rsA.AUTO_MODERATION_BLOCK_MESSAGE || n === U.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || n === U.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || n === U.rsA.AUTO_MODERATION_QUARANTINE_USER ? L.autoModerationBlockMessage : ({
       [U.KFR.ALL]: L.targetAll,
       [U.KFR.GUILD]: L.targetGuild,
       [U.KFR.CHANNEL]: L.targetChannel,
@@ -82,7 +82,7 @@ class M extends l.PureComponent {
       [U.KFR.GUILD_PROFILE]: L.targetGuild
     })[t], s);
     return (0, r.jsx)("div", {
-      className: i
+      className: a
     })
   }
 }
@@ -92,23 +92,23 @@ function m(e) {
     log: t,
     guild: n,
     onContentClick: s,
-    className: i
+    className: a
   } = e, E = l.useCallback(e => {
     if (null == t.changes) return null;
     let l = 0,
       E = o().flatten(t.changes.map(s => {
         if (p(t, s)) return null;
         let {
-          oldValue: a,
-          newValue: i
+          oldValue: i,
+          newValue: a
         } = (() => {
           if ((t.action === U.rsA.CHANNEL_UPDATE || t.action === U.rsA.CHANNEL_CREATE) && s.key === U.zUn.TYPE) {
             var e, n;
             return {
-              oldValue: null != (e = s.oldValue) ? e : (0, O.a5)({
+              oldValue: null != (e = s.oldValue) ? e : (0, N.a5)({
                 type: s.oldValue
               }),
-              newValue: null != (n = s.newValue) ? n : (0, O.a5)({
+              newValue: null != (n = s.newValue) ? n : (0, N.a5)({
                 type: s.newValue
               })
             }
@@ -164,11 +164,11 @@ function m(e) {
             let {
               newValue: l,
               oldValue: s
-            } = e, a = e => {
+            } = e, i = e => {
               var t;
-              let r = null != n ? null == (t = N.Z.getRole(n.id, e)) ? void 0 : t.name : void 0;
+              let r = null != n ? null == (t = I.Z.getRole(n.id, e)) ? void 0 : t.name : void 0;
               return null == r ? null : "@".concat(r)
-            }, i = e => {
+            }, a = e => {
               var t;
               let n = null == (t = T.Z.getChannel(e)) ? void 0 : t.name;
               return null == n ? null : "#".concat(n)
@@ -176,8 +176,8 @@ function m(e) {
               let {
                 title: l,
                 id: s
-              } = n, E = e.role_ids.map(a).filter(R.lm), u = e.channel_ids.map(i).filter(R.lm), _ = n.role_ids.map(a).filter(R.lm), d = n.channel_ids.map(i).filter(R.lm), A = o().difference(_, E), T = o().difference(E, _), N = o().difference(d, u), I = o().difference(u, d), O = [];
-              return (o().isEqual(e.title, n.title) || O.push("title"), o().isEqual(e.description, n.description) || O.push("description"), 0 === A.length && 0 === T.length && 0 === N.length && 0 === I.length && 0 === O.length) ? null : (0, r.jsxs)("li", {
+              } = n, E = e.role_ids.map(i).filter(R.lm), u = e.channel_ids.map(a).filter(R.lm), _ = n.role_ids.map(i).filter(R.lm), d = n.channel_ids.map(a).filter(R.lm), A = o().difference(_, E), T = o().difference(E, _), I = o().difference(d, u), O = o().difference(u, d), N = [];
+              return (o().isEqual(e.title, n.title) || N.push("title"), o().isEqual(e.description, n.description) || N.push("description"), 0 === A.length && 0 === T.length && 0 === I.length && 0 === O.length && 0 === N.length) ? null : (0, r.jsxs)("li", {
                 children: [(0, r.jsxs)("div", {
                   className: L.onboardingChangeLogItemTitle,
                   children: [(0, r.jsx)(M, {
@@ -186,7 +186,7 @@ function m(e) {
                     action: t.action
                   }), (0, r.jsx)(c.Text, {
                     variant: "text-md/normal",
-                    children: h.NW.format(h.t["WZO+iY"], {
+                    children: h.intl.format(h.t["WZO+iY"], {
                       title: l
                     })
                   })]
@@ -194,27 +194,27 @@ function m(e) {
                   className: L.onboardingChangeLogItemChanges,
                   children: [A.length > 0 && (0, r.jsx)(c.Text, {
                     variant: "text-md/normal",
-                    children: h.NW.format(h.t["R+km+f"], {
+                    children: h.intl.format(h.t["R+km+f"], {
                       roles: A.join(", ")
                     })
                   }), T.length > 0 && (0, r.jsx)(c.Text, {
                     variant: "text-md/normal",
-                    children: h.NW.format(h.t.xIVRoa, {
+                    children: h.intl.format(h.t.xIVRoa, {
                       roles: T.join(", ")
-                    })
-                  }), N.length > 0 && (0, r.jsx)(c.Text, {
-                    variant: "text-md/normal",
-                    children: h.NW.format(h.t.iYowX1, {
-                      channels: N.join(", ")
                     })
                   }), I.length > 0 && (0, r.jsx)(c.Text, {
                     variant: "text-md/normal",
-                    children: h.NW.format(h.t.JLdJpK, {
+                    children: h.intl.format(h.t.iYowX1, {
                       channels: I.join(", ")
                     })
-                  }), O.map((t, l) => (0, r.jsx)(c.Text, {
+                  }), O.length > 0 && (0, r.jsx)(c.Text, {
                     variant: "text-md/normal",
-                    children: h.NW.format(h.t["0698zc"], {
+                    children: h.intl.format(h.t.JLdJpK, {
+                      channels: O.join(", ")
+                    })
+                  }), N.map((t, l) => (0, r.jsx)(c.Text, {
+                    variant: "text-md/normal",
+                    children: h.intl.format(h.t["0698zc"], {
                       key: t,
                       oldValue: e[t],
                       newValue: n[t]
@@ -222,7 +222,7 @@ function m(e) {
                   }, l))]
                 })]
               }, s)
-            }, u = o().keyBy(null != s ? s : [], "id"), _ = o().keyBy(null != l ? l : [], "id"), d = o().difference(Object.keys(_), Object.keys(u)).map(e => _[e]), A = o().difference(Object.keys(u), Object.keys(_)).map(e => u[e]), I = o().intersection(Object.keys(_), Object.keys(u));
+            }, u = o().keyBy(null != s ? s : [], "id"), _ = o().keyBy(null != l ? l : [], "id"), d = o().difference(Object.keys(_), Object.keys(u)).map(e => _[e]), A = o().difference(Object.keys(u), Object.keys(_)).map(e => u[e]), O = o().intersection(Object.keys(_), Object.keys(u));
             return (0, r.jsxs)("ul", {
               className: L.onboardingChangeLogContainer,
               children: [d.map(e => {
@@ -231,7 +231,7 @@ function m(e) {
                   channel_ids: l,
                   title: s,
                   id: o
-                } = e, E = (null != n ? n : []).map(a).filter(R.lm), u = (null != l ? l : []).map(i).filter(R.lm);
+                } = e, E = (null != n ? n : []).map(i).filter(R.lm), u = (null != l ? l : []).map(a).filter(R.lm);
                 return (0, r.jsxs)("li", {
                   children: [(0, r.jsxs)("div", {
                     className: L.onboardingChangeLogItemTitle,
@@ -241,7 +241,7 @@ function m(e) {
                       action: t.action
                     }), (0, r.jsx)(c.Text, {
                       variant: "text-md/normal",
-                      children: h.NW.format(h.t.CZ1tys, {
+                      children: h.intl.format(h.t.CZ1tys, {
                         title: s
                       })
                     })]
@@ -249,12 +249,12 @@ function m(e) {
                     className: L.onboardingChangeLogItemChanges,
                     children: [E.length > 0 && (0, r.jsx)(c.Text, {
                       variant: "text-md/normal",
-                      children: h.NW.format(h.t["gt/5z8"], {
+                      children: h.intl.format(h.t["gt/5z8"], {
                         roles: E.join(", ")
                       })
                     }), u.length > 0 && (0, r.jsx)(c.Text, {
                       variant: "text-md/normal",
-                      children: h.NW.format(h.t["4q006e"], {
+                      children: h.intl.format(h.t["4q006e"], {
                         channels: u.join(", ")
                       })
                     })]
@@ -269,12 +269,12 @@ function m(e) {
                     action: t.action
                   }), (0, r.jsx)(c.Text, {
                     variant: "text-md/normal",
-                    children: h.NW.format(h.t["m3dt+P"], {
+                    children: h.intl.format(h.t["m3dt+P"], {
                       title: e.title
                     })
                   })]
                 })
-              }, e.id)), I.map(e => E(u[e], _[e]))]
+              }, e.id)), O.map(e => E(u[e], _[e]))]
             }, "options")
           }(s, t, n);
           if (t.action === U.rsA.HOME_SETTINGS_CREATE || t.action === U.rsA.HOME_SETTINGS_UPDATE) return function(e, t) {
@@ -283,23 +283,23 @@ function m(e) {
               newValue: l,
               key: s
             } = e, {
-              targetType: a,
-              action: i
+              targetType: i,
+              action: a
             } = t;
             switch (s) {
               case U.zUn.WELCOME_MESSAGE:
                 return ((e, t) => {
-                  var n, l, s, a, i;
-                  let o = I.default.getUser(null == t || null == (n = t.author_ids) ? void 0 : n[0]),
-                    E = I.default.getUser(null == (l = e.author_ids) ? void 0 : l[0]),
+                  var n, l, s, i, a;
+                  let o = O.default.getUser(null == t || null == (n = t.author_ids) ? void 0 : n[0]),
+                    E = O.default.getUser(null == (l = e.author_ids) ? void 0 : l[0]),
                     u = (null == o ? void 0 : o.id) !== (null == E ? void 0 : E.id) ? (0, r.jsx)("li", {
                       children: (0, r.jsx)("div", {
                         className: L.onboardingChangeLogItemTitle,
                         children: (0, r.jsx)(c.Text, {
                           variant: "text-md/normal",
-                          children: h.NW.format(h.t.PrOzAw, {
-                            oldUser: null != (s = null == o ? void 0 : o.username) ? s : h.NW.string(h.t.PoWNfX),
-                            newUser: null != (a = null == E ? void 0 : E.username) ? a : h.NW.string(h.t.PoWNfX)
+                          children: h.intl.format(h.t.PrOzAw, {
+                            oldUser: null != (s = null == o ? void 0 : o.username) ? s : h.intl.string(h.t.PoWNfX),
+                            newUser: null != (i = null == E ? void 0 : E.username) ? i : h.intl.string(h.t.PoWNfX)
                           })
                         })
                       })
@@ -309,8 +309,8 @@ function m(e) {
                         className: L.onboardingChangeLogItemTitle,
                         children: (0, r.jsx)(c.Text, {
                           variant: "text-md/normal",
-                          children: h.NW.format(h.t.oB7rBQ, {
-                            oldMessage: null != (i = null == t ? void 0 : t.message) ? i : h.NW.string(h.t.PoWNfX),
+                          children: h.intl.format(h.t.oB7rBQ, {
+                            oldMessage: null != (a = null == t ? void 0 : t.message) ? a : h.intl.string(h.t.PoWNfX),
                             newMessage: e.message
                           })
                         })
@@ -334,11 +334,11 @@ function m(e) {
                         className: L.onboardingChangeLogItemTitle,
                         children: [(0, r.jsx)(M, {
                           actionType: U.vB8.CREATE,
-                          targetType: a,
-                          action: i
+                          targetType: i,
+                          action: a
                         }), (0, r.jsx)(c.Text, {
                           variant: "text-md/normal",
-                          children: h.NW.format(h.t["oFSu6+"], {
+                          children: h.intl.format(h.t["oFSu6+"], {
                             name: e.title
                           })
                         })]
@@ -348,11 +348,11 @@ function m(e) {
                         className: L.onboardingChangeLogItemTitle,
                         children: [(0, r.jsx)(M, {
                           actionType: U.vB8.DELETE,
-                          targetType: a,
-                          action: i
+                          targetType: i,
+                          action: a
                         }), (0, r.jsx)(c.Text, {
                           variant: "text-md/normal",
-                          children: h.NW.format(h.t.GssWam, {
+                          children: h.intl.format(h.t.GssWam, {
                             name: e.title
                           })
                         })]
@@ -374,11 +374,11 @@ function m(e) {
                         className: L.onboardingChangeLogItemTitle,
                         children: [(0, r.jsx)(M, {
                           actionType: U.vB8.CREATE,
-                          targetType: a,
-                          action: i
+                          targetType: i,
+                          action: a
                         }), (0, r.jsx)(c.Text, {
                           variant: "text-md/normal",
-                          children: h.NW.format(h.t.HlGndH, {
+                          children: h.intl.format(h.t.HlGndH, {
                             name: e.title
                           })
                         })]
@@ -388,11 +388,11 @@ function m(e) {
                         className: L.onboardingChangeLogItemTitle,
                         children: [(0, r.jsx)(M, {
                           actionType: U.vB8.DELETE,
-                          targetType: a,
-                          action: i
+                          targetType: i,
+                          action: a
                         }), (0, r.jsx)(c.Text, {
                           variant: "text-md/normal",
-                          children: h.NW.format(h.t["7pysg4"], {
+                          children: h.intl.format(h.t["7pysg4"], {
                             name: e.title
                           })
                         })]
@@ -411,18 +411,18 @@ function m(e) {
           let {
             changeItem: l,
             subChanges: s,
-            changeNumber: a,
-            log: i,
+            changeNumber: i,
+            log: a,
             oldValue: o,
             newValue: E,
             change: u
           } = e;
           if (null == l) return console.warn("No change string for", u), null;
-          let d = h.NW.format(l, {
+          let d = h.intl.format(l, {
             oldValue: o,
             newValue: E,
             count: Array.isArray(E) ? E.length : null,
-            subtarget: null != (n = null != (t = i.options.subtarget) ? t : u.subtarget) ? n : null,
+            subtarget: null != (n = null != (t = a.options.subtarget) ? t : u.subtarget) ? n : null,
             newColorHook: (e, t) => (0, r.jsx)("div", {
               className: L.colorHook,
               style: {
@@ -474,8 +474,8 @@ function m(e) {
                   default:
                     return "text-warning"
                 }
-              }(i.actionType),
-              children: [a < 10 ? "0".concat(a) : a, (0, r.jsx)("span", {
+              }(a.actionType),
+              children: [i < 10 ? "0".concat(i) : i, (0, r.jsx)("span", {
                 className: L.dash,
                 children: "—"
               })]
@@ -488,23 +488,23 @@ function m(e) {
                 children: s
               }) : null]
             })]
-          }, a)
+          }, i)
         }({
           changeItem: "function" == typeof d ? d(s) : d,
           subChanges: E,
           changeNumber: ++l,
           log: t,
-          oldValue: a,
-          newValue: i,
+          oldValue: i,
+          newValue: a,
           change: s
         })
       })).filter(R.lm);
     return (0, r.jsx)(c.P3F, {
       onClick: s,
-      className: a()(L.changeDetails, i),
+      className: i()(L.changeDetails, a),
       children: E
     })
-  }, [t, n, s, i]);
+  }, [t, n, s, a]);
   return l.useMemo(() => {
     switch (t.targetType) {
       case U.KFR.GUILD:

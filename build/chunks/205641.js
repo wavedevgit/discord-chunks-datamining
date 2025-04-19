@@ -3,8 +3,8 @@
 n.d(t, {
   Z: () => b
 }), n(388685);
-var r, i, s = n(200651),
-  l = n(192379),
+var r, i, l = n(200651),
+  s = n(192379),
   a = n(120356),
   o = n.n(a),
   c = n(392711),
@@ -66,7 +66,7 @@ function f(e, t, n, r) {
     duration: n / t
   })))
 }
-class x extends(r = l.Component) {
+class x extends(r = s.Component) {
   componentDidMount() {
     this.startAnimation()
   }
@@ -99,13 +99,13 @@ class x extends(r = l.Component) {
     let n = e > 1,
       r = n ? h.HOVERING.FIRE_MIN_INTENSITY_FALLING : h.HOVERING.FIRE_MIN_INTENSITY_RISING,
       i = n ? h.HOVERING.FIRE_MAX_INTENSITY_FALLING : h.HOVERING.FIRE_MAX_INTENSITY_RISING,
-      s = this.createFireAnimation(h.HOVERING.FIRE_COUNT, h.HOVERING.Y_DURATION, r, i),
-      l = u.Z.timing(this.y, {
+      l = this.createFireAnimation(h.HOVERING.FIRE_COUNT, h.HOVERING.Y_DURATION, r, i),
+      s = u.Z.timing(this.y, {
         toValue: e,
         duration: h.HOVERING.Y_DURATION,
         easing: u.Z.Easing.inOut(u.Z.Easing.ease)
       });
-    this.currentAnimation = u.Z.parallel([l, s]), await (null == (t = this.currentAnimation) ? void 0 : t.start()), this.hoverAnimate(e * h.HOVERING.Y_VALUE_MODIFIER)
+    this.currentAnimation = u.Z.parallel([s, l]), await (null == (t = this.currentAnimation) ? void 0 : t.start()), this.hoverAnimate(e * h.HOVERING.Y_VALUE_MODIFIER)
   }
   createShakeAnimation(e, t, n) {
     return f(this.x, e, t, e => d().random(1, n) * (e % 2 == 0 ? 1 : -1))
@@ -125,9 +125,9 @@ class x extends(r = l.Component) {
         toValue: h.STAGING.Y_VALUE,
         duration: h.STAGING.DURATION
       }),
-      s = this.createShakeAnimation(h.STAGING.SHAKE_COUNT, h.STAGING.DURATION, h.STAGING.SHAKE_INTENSITY),
-      l = this.createFireAnimation(h.STAGING.FIRE_COUNT, h.STAGING.DURATION, h.STAGING.FIRE_MIN_INTENSITY, h.STAGING.FIRE_MAX_INTENSITY),
-      a = u.Z.parallel([i, s, l]),
+      l = this.createShakeAnimation(h.STAGING.SHAKE_COUNT, h.STAGING.DURATION, h.STAGING.SHAKE_INTENSITY),
+      s = this.createFireAnimation(h.STAGING.FIRE_COUNT, h.STAGING.DURATION, h.STAGING.FIRE_MIN_INTENSITY, h.STAGING.FIRE_MAX_INTENSITY),
+      a = u.Z.parallel([i, l, s]),
       o = u.Z.timing(this.y, {
         toValue: h.FLYING.Y_VALUE,
         duration: h.FLYING.DURATION,
@@ -180,7 +180,7 @@ class x extends(r = l.Component) {
       className: e,
       style: t
     } = this.props;
-    return (0, s.jsxs)(u.Z.div, {
+    return (0, l.jsxs)(u.Z.div, {
       className: o()(m.animation, e),
       style: function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -194,19 +194,19 @@ class x extends(r = l.Component) {
         }
         return e
       }({}, t, this.getWumpusStyle()),
-      children: [(0, s.jsx)("div", {
+      children: [(0, l.jsx)("div", {
         className: m.fireTopWrapper,
-        children: (0, s.jsx)(u.Z.div, {
+        children: (0, l.jsx)(u.Z.div, {
           className: m.fire,
           style: this.getFireStyle()
         })
-      }), (0, s.jsx)("div", {
+      }), (0, l.jsx)("div", {
         className: m.fireBottomWrapper,
-        children: (0, s.jsx)(u.Z.div, {
+        children: (0, l.jsx)(u.Z.div, {
           className: m.fire,
           style: this.getFireStyle()
         })
-      }), (0, s.jsx)("div", {
+      }), (0, l.jsx)("div", {
         className: m.wumpus
       })]
     })

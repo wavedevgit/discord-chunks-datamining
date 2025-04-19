@@ -2,10 +2,10 @@
 n.d(t, {
   Z: () => u
 });
-var r, a = n(442837),
-  o = n(570140);
+var r, l = n(442837),
+  a = n(570140);
 
-function l(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -13,17 +13,17 @@ function l(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let s = i();
+let i = s();
 
-function i() {
+function s() {
   return {
     ignoreTimestamps: {}
   }
 }
-class c extends(r = a.ZP.PersistedStore) {
+class c extends(r = l.ZP.PersistedStore) {
   initialize(e) {
     var t, n, r;
-    let a = null != (t = null == e ? void 0 : e.ignoreTimestamps) ? t : {};
+    let l = null != (t = null == e ? void 0 : e.ignoreTimestamps) ? t : {};
     n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -31,12 +31,12 @@ class c extends(r = a.ZP.PersistedStore) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          l(e, t, n[t])
+          o(e, t, n[t])
         })
       }
       return e
-    }({}, i()), r = r = {
-      ignoreTimestamps: a
+    }({}, s()), r = r = {
+      ignoreTimestamps: l
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -46,22 +46,22 @@ class c extends(r = a.ZP.PersistedStore) {
       return n
     })(Object(r)).forEach(function(e) {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
-    }), s = n
+    }), i = n
   }
   getState() {
-    return s
+    return i
   }
   getIgnoreTimestamps() {
-    return s.ignoreTimestamps
+    return i.ignoreTimestamps
   }
 }
-l(c, "displayName", "IgnoreNoticeStore"), l(c, "persistKey", "IgnoreNoticeStore");
-let u = new c(o.Z, {
+o(c, "displayName", "IgnoreNoticeStore"), o(c, "persistKey", "IgnoreNoticeStore");
+let u = new c(a.Z, {
   RELATIONSHIP_IGNORE_USER_SUCCESS: function(e) {
     let {
       userId: t,
       timestamp: n
     } = e;
-    s.ignoreTimestamps[t] = n
+    i.ignoreTimestamps[t] = n
   }
 })

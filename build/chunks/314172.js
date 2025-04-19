@@ -85,7 +85,7 @@ function y(e) {
       })
     },
     children: e => (0, r.jsx)(s.DY3, {
-      text: p.NW.string(p.t.icyMgY),
+      text: p.intl.string(p.t.icyMgY),
       "aria-label": !1,
       shouldShow: m > 0,
       children: (0, r.jsxs)(f.kF, b(g({
@@ -95,7 +95,7 @@ function y(e) {
         themeColor: "none",
         size: a.zx.Sizes.NONE,
         grow: !1,
-        "aria-label": p.NW.string(p.t.icyMgY),
+        "aria-label": p.intl.string(p.t.icyMgY),
         buttonRef: v
       }, e), {
         children: [(0, r.jsx)(s.qJs, {
@@ -104,7 +104,7 @@ function y(e) {
         }), 0 === m && (0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "none",
-          children: p.NW.string(p.t.icyMgY)
+          children: p.intl.string(p.t.icyMgY)
         })]
       }))
     })

@@ -23,17 +23,17 @@ let s = e => {
       className: l.innerContent,
       children: [(0, r.jsx)(a.X6q, {
         variant: "heading-xl/extrabold",
-        children: o.NW.string(o.t["3dgwPD"])
+        children: o.intl.string(o.t["3dgwPD"])
       }), (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
-        children: o.NW.string(o.t["/GAO1N"])
+        children: o.intl.string(o.t["/GAO1N"])
       })]
     }), (0, r.jsx)(a.zxk, {
       className: l.footerButton,
       color: a.zxk.Colors.BRAND,
       onClick: t,
-      children: o.NW.string(o.t["7NqTJi"])
+      children: o.intl.string(o.t["7NqTJi"])
     })]
   })
 }

@@ -25,7 +25,7 @@ function P(A) {
     className: g,
     children: [(0, C.jsx)(w.vwX, {
       className: I.sectionTitle,
-      children: v.NW.string(E.Z.pb7lpK)
+      children: v.intl.string(E.default.pb7lpK)
     }), (0, C.jsx)(f.g, {
       onBadgeClicked: e,
       selectedBadge: P

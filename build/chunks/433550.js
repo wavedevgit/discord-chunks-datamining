@@ -27,14 +27,14 @@ var n = r(200651),
   x = r(388032),
   I = r(95547);
 let v = (0, h.Mg)(u.Z.STICKERS_CONSTANTS_STICKER_PURCHASE_PACK_PREVIEW_DIMENSIONS),
-  N = (0, h.Mg)(u.Z.STICKERS_CONSTANTS_STICKER_PURCHASE_PACK_PREVIEW_PADDING),
-  C = (0, h.Mg)(u.Z.STICKERS_CONSTANTS_STICKER_PURCHASE_PACK_PREVIEW_MARGIN),
-  E = v + 2 * N,
+  C = (0, h.Mg)(u.Z.STICKERS_CONSTANTS_STICKER_PURCHASE_PACK_PREVIEW_PADDING),
+  E = (0, h.Mg)(u.Z.STICKERS_CONSTANTS_STICKER_PURCHASE_PACK_PREVIEW_MARGIN),
+  N = v + 2 * C,
   w = a()(j.pF, 250),
-  W = () => {
+  T = () => {
     w.cancel()
   },
-  T = e => {
+  W = e => {
     let {
       visibleRowIndex: t,
       columnIndex: r
@@ -54,8 +54,8 @@ let v = (0, h.Mg)(u.Z.STICKERS_CONSTANTS_STICKER_PURCHASE_PACK_PREVIEW_DIMENSION
       gutterWidth: b
     } = (0, O.el)({
       stickersCategories: l,
-      stickerNodeMargin: C,
-      stickerNodeWidth: E,
+      stickerNodeMargin: E,
+      stickerNodeWidth: N,
       listWidth: r
     });
     return (0, n.jsxs)("div", {
@@ -67,9 +67,9 @@ let v = (0, h.Mg)(u.Z.STICKERS_CONSTANTS_STICKER_PURCHASE_PACK_PREVIEW_DIMENSION
         stickerPack: t,
         withDescription: !0
       }, t.id), (0, n.jsx)("div", {
-        onFocus: W,
+        onFocus: T,
         onBlur: w,
-        onMouseOver: W,
+        onMouseOver: T,
         onMouseOut: w,
         children: (() => {
           if (0 === f.length) return null;
@@ -83,7 +83,7 @@ let v = (0, h.Mg)(u.Z.STICKERS_CONSTANTS_STICKER_PURCHASE_PACK_PREVIEW_DIMENSION
             onInspect: a,
             rowIndex: t,
             stickerDescriptors: d[t],
-            stickerPadding: N,
+            stickerPadding: C,
             stickerSize: v,
             isDisplayingIndividualStickers: !0,
             checkSendability: !1
@@ -105,7 +105,7 @@ let v = (0, h.Mg)(u.Z.STICKERS_CONSTANTS_STICKER_PURCHASE_PACK_PREVIEW_DIMENSION
       children: [(0, n.jsx)(f.eee, {
         onClick: t,
         className: I.skuPreviewFooterCloseButton,
-        children: x.NW.string(x.t.cpT0Cg)
+        children: x.intl.string(x.t.cpT0Cg)
       }), o && (0, n.jsxs)(f.gtL, {
         color: f.zxk.Colors.GREEN,
         type: "submit",
@@ -119,7 +119,7 @@ let v = (0, h.Mg)(u.Z.STICKERS_CONSTANTS_STICKER_PURCHASE_PACK_PREVIEW_DIMENSION
           size: "md",
           color: "currentColor",
           className: I.premiumButtonNitroWheel
-        }), x.NW.string(x.t["w+kuhY"])]
+        }), x.intl.string(x.t["w+kuhY"])]
       })]
     })
   },
@@ -198,7 +198,7 @@ function D(e) {
           children: null != a && (0, n.jsx)(R, {
             stickerPack: s,
             hasHeaderImage: !0,
-            onInspect: T,
+            onInspect: W,
             width: a
           })
         }),

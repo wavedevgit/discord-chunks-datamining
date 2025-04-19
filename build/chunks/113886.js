@@ -1,6 +1,6 @@
 /** Chunk was on 56496 **/
 r.d(t, {
-  default: () => u
+  default: () => l
 }), r(388685);
 var n = r(200651),
   c = r(192379),
@@ -8,18 +8,18 @@ var n = r(200651),
   i = r(693546),
   a = r(246364),
   s = r(388032);
-let u = e => {
+let l = e => {
   var t, r;
   let {
-    guildId: u,
-    userId: p,
-    guildJoinRequestId: l,
+    guildId: l,
+    userId: u,
+    guildJoinRequestId: p,
     onConfirm: b,
     onError: O,
     modalProps: f
   } = e, [y, j] = c.useState(), g = async () => {
     try {
-      await i.Z.updateGuildJoinRequest(u, p, l, a.wB.REJECTED, y), null == b || b()
+      await i.Z.updateGuildJoinRequest(l, u, p, a.wB.REJECTED, y), null == b || b()
     } catch (e) {
       null == O || O()
     }
@@ -42,9 +42,9 @@ let u = e => {
     }
     return e
   }({
-    header: s.NW.string(s.t["mFP/q6"]),
-    cancelText: s.NW.string(s.t["ETE/oK"]),
-    confirmText: s.NW.string(s.t.hDtbs7),
+    header: s.intl.string(s.t["mFP/q6"]),
+    cancelText: s.intl.string(s.t["ETE/oK"]),
+    confirmText: s.intl.string(s.t.hDtbs7),
     onConfirm: g
   }, f), r = r = {
     children: (0, n.jsx)(o.Kx8, {

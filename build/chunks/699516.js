@@ -60,8 +60,8 @@ let m = 3e5,
   I = {},
   S = {},
   T = 0,
-  N = 0,
   A = 0,
+  N = 0,
   C = 0,
   R = 0,
   P = 0;
@@ -71,7 +71,7 @@ function w() {
   let {
     [d.OGo.PENDING_INCOMING]: e = 0, [d.OGo.PENDING_OUTGOING]: t = 0, [d.OGo.FRIEND]: n = 0
   } = a().countBy(Object.values(g), e => e);
-  N = t, A = n, R = y.size, P = O.size, T = Math.max(e - R - P, 0)
+  A = t, N = n, R = y.size, P = O.size, T = Math.max(e - R - P, 0)
 }
 
 function D(e) {
@@ -173,10 +173,10 @@ class G extends(r = o.ZP.Store) {
     return P
   }
   getOutgoingCount() {
-    return N
+    return A
   }
   getFriendCount() {
-    return A
+    return N
   }
   getRelationshipCount() {
     return C

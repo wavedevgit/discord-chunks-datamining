@@ -1,58 +1,58 @@
 /** Chunk was on 11166 **/
-n.d(e, {
+e.d(n, {
   default: () => O
 });
-var r = n(200651);
-n(192379);
-var o = n(692547),
-  a = n(481060),
-  c = n(906732),
-  i = n(98278),
-  l = n(790527),
-  s = n(474936),
-  u = n(981631),
-  f = n(388032),
-  d = n(685506),
-  p = n(127453),
-  b = n(860324);
+var r = e(200651);
+e(192379);
+var o = e(692547),
+  a = e(481060),
+  c = e(906732),
+  i = e(98278),
+  l = e(790527),
+  s = e(474936),
+  u = e(981631),
+  f = e(388032),
+  d = e(685506),
+  p = e(127453),
+  b = e(860324);
 
-function y(t, e) {
+function y(t, n) {
   return (0, r.jsx)(a.IGR, {
     text: t,
     className: p.newBadge,
     color: o.Z.unsafe_rawColors.BRAND_500.css
-  }, e)
+  }, n)
 }
 
 function O(t) {
   var {
-    guildCount: e,
-    onClose: n,
+    guildCount: n,
+    onClose: e,
     analyticsLocations: o
-  } = t, p = function(t, e) {
+  } = t, p = function(t, n) {
     if (null == t) return {};
-    var n, r, o = function(t, e) {
+    var e, r, o = function(t, n) {
       if (null == t) return {};
-      var n, r, o = {},
+      var e, r, o = {},
         a = Object.keys(t);
-      for (r = 0; r < a.length; r++) n = a[r], e.indexOf(n) >= 0 || (o[n] = t[n]);
+      for (r = 0; r < a.length; r++) e = a[r], n.indexOf(e) >= 0 || (o[e] = t[e]);
       return o
-    }(t, e);
+    }(t, n);
     if (Object.getOwnPropertySymbols) {
       var a = Object.getOwnPropertySymbols(t);
-      for (r = 0; r < a.length; r++) n = a[r], !(e.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(t, n) && (o[n] = t[n])
+      for (r = 0; r < a.length; r++) e = a[r], !(n.indexOf(e) >= 0) && Object.prototype.propertyIsEnumerable.call(t, e) && (o[e] = t[e])
     }
     return o
   }(t, ["guildCount", "onClose", "analyticsLocations"]);
-  let O = function(t, e) {
+  let O = function(t, n) {
       return (0, r.jsx)(a.P3F, {
         className: d.learnMoreLink,
         tag: "span",
         onClick: () => {
-          n(), (0, i.z)()
+          e(), (0, i.z)()
         },
         children: t
-      }, e)
+      }, n)
     },
     {
       analyticsLocations: g
@@ -60,39 +60,39 @@ function O(t) {
   return (0, r.jsx)(c.Gt, {
     value: g,
     children: (0, r.jsx)(l.Z, function(t) {
-      for (var e = 1; e < arguments.length; e++) {
-        var n = null != arguments[e] ? arguments[e] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
-          return Object.getOwnPropertyDescriptor(n, t).enumerable
-        }))), r.forEach(function(e) {
+      for (var n = 1; n < arguments.length; n++) {
+        var e = null != arguments[n] ? arguments[n] : {},
+          r = Object.keys(e);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(e).filter(function(t) {
+          return Object.getOwnPropertyDescriptor(e, t).enumerable
+        }))), r.forEach(function(n) {
           var r;
-          r = n[e], e in t ? Object.defineProperty(t, e, {
+          r = e[n], n in t ? Object.defineProperty(t, n, {
             value: r,
             enumerable: !0,
             configurable: !0,
             writable: !0
-          }) : t[e] = r
+          }) : t[n] = r
         })
       }
       return t
     }({
       artURL: b.Z,
-      onClose: n,
+      onClose: e,
       type: s.cd.GUILD_CAP_MODAL_UPSELL,
-      title: f.NW.string(f.t.CoNXBw),
-      body: e < u.DZw ? f.NW.format(f.t["5qLH7O"], {
-        guildCount: e,
+      title: f.intl.string(f.t.CoNXBw),
+      body: n < u.DZw ? f.intl.format(f.t["5qLH7O"], {
+        guildCount: n,
         onAndMore: O,
         newBadgeHook: y
-      }) : f.NW.format(f.t.mk9CS0, {
+      }) : f.intl.format(f.t.mk9CS0, {
         onAndMore: O,
         newBadgeHook: y
       }),
-      context: e < u.DZw ? f.NW.formatToPlainString(f.t["C+Hqzs"], {
-        guildCount: e
-      }) : f.NW.string(f.t.m0xavb),
-      glowUp: f.NW.format(f.t["6Dl5X1"], {
+      context: n < u.DZw ? f.intl.formatToPlainString(f.t["C+Hqzs"], {
+        guildCount: n
+      }) : f.intl.string(f.t.m0xavb),
+      glowUp: f.intl.format(f.t["6Dl5X1"], {
         onAndMore: O
       })
     }, p))

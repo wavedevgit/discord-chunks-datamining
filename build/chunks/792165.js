@@ -25,7 +25,7 @@ function b(e) {
   let {
     onClose: n,
     markAsDismissed: b
-  } = e, y = (0, i.e7)([u.default], () => u.default.getCurrentUser()), x = (t = null == y ? void 0 : y.premiumType) === p.p9.TIER_2 ? h.NW.string(h.t.jqO5Qk) : null == t ? h.NW.string(h.t.f2qjw8) : h.NW.string(h.t.SblICQ), j = _.ZP.canUseCustomCallSounds(y);
+  } = e, y = (0, i.e7)([u.default], () => u.default.getCurrentUser()), x = (t = null == y ? void 0 : y.premiumType) === p.p9.TIER_2 ? h.intl.string(h.t.jqO5Qk) : null == t ? h.intl.string(h.t.f2qjw8) : h.intl.string(h.t.SblICQ), j = _.ZP.canUseCustomCallSounds(y);
   return (0, r.jsxs)(d.Z, {
     isShown: !0,
     type: d.Y.PREMIUM,
@@ -34,7 +34,7 @@ function b(e) {
     children: [null != b ? (0, r.jsx)(l.P3F, {
       className: v.close,
       onClick: () => null == b ? void 0 : b(f.L.DISMISS),
-      "aria-label": h.NW.string(h.t.cpT0Cg),
+      "aria-label": h.intl.string(h.t.cpT0Cg),
       children: (0, r.jsx)(l.Dio, {
         size: "xs",
         color: "currentColor",
@@ -48,7 +48,7 @@ function b(e) {
         className: v.nitroWheel
       }), (0, r.jsx)(l.X6q, {
         variant: "heading-sm/bold",
-        children: h.NW.string(h.t.dTbAx8)
+        children: h.intl.string(h.t.dTbAx8)
       })]
     }), (0, r.jsx)(o.x, {
       variant: "text-sm/normal",
@@ -57,9 +57,9 @@ function b(e) {
       onClick: function() {
         s.Z.open(m.oAB.VOICE, g.GA), null == n || n(), null == b || b(f.L.PRIMARY)
       },
-      children: h.NW.string(h.t.RzWDqa)
+      children: h.intl.string(h.t.RzWDqa)
     }) : (0, r.jsx)(c.Z, {
-      buttonText: h.NW.string(h.t.pj0XBA),
+      buttonText: h.intl.string(h.t.pj0XBA),
       subscriptionTier: p.Si.TIER_2,
       premiumModalAnalyticsLocation: {
         section: m.jXE.SOUNDBOARD_SOUND_PICKER,

@@ -22,7 +22,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.NW.string(l.t.BVZqJi)
+        "aria-label": l.intl.string(l.t.BVZqJi)
       });
       break;
     case "voice-locked":
@@ -30,7 +30,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.NW.string(l.t.aa0FYm)
+        "aria-label": l.intl.string(l.t.aa0FYm)
       });
       break;
     case "stage":
@@ -38,7 +38,7 @@ let u = function(e) {
         size: "lg",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.NW.string(l.t.EErMzM)
+        "aria-label": l.intl.string(l.t.EErMzM)
       });
       break;
     case "stage-locked":
@@ -46,7 +46,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.NW.string(l.t.pKZ4Iy)
+        "aria-label": l.intl.string(l.t.pKZ4Iy)
       });
       break;
     case "thread":
@@ -54,7 +54,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.NW.string(l.t["7Xm5QE"])
+        "aria-label": l.intl.string(l.t["7Xm5QE"])
       });
       break;
     case "text":
@@ -62,7 +62,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.NW.string(l.t.GK18KC)
+        "aria-label": l.intl.string(l.t.GK18KC)
       });
       break;
     case "forum":
@@ -70,7 +70,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.NW.string(l.t.GbryDQ)
+        "aria-label": l.intl.string(l.t.GbryDQ)
       });
       break;
     case "post":
@@ -78,7 +78,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.NW.string(l.t.Y4REmJ)
+        "aria-label": l.intl.string(l.t.Y4REmJ)
       });
       break;
     case "home":
@@ -87,7 +87,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.NW.string(l.t.VbpLyc)
+        "aria-label": l.intl.string(l.t.VbpLyc)
       });
       break;
     case "browse":
@@ -96,7 +96,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.NW.string(l.t.et6wam)
+        "aria-label": l.intl.string(l.t.et6wam)
       });
       break;
     case "message":
@@ -104,7 +104,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.NW.string(l.t.BAB0yM)
+        "aria-label": l.intl.string(l.t.BAB0yM)
       });
       break;
     case "locked":
@@ -112,7 +112,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.NW.string(l.t["/YzI6+"])
+        "aria-label": l.intl.string(l.t["/YzI6+"])
       });
       break;
     case "media":
@@ -120,7 +120,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.NW.string(l.t.seKITE)
+        "aria-label": l.intl.string(l.t.seKITE)
       });
       break;
     case "linked-roles":
@@ -128,7 +128,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.NW.string(l.t.ghtnsr)
+        "aria-label": l.intl.string(l.t.ghtnsr)
       })
   }
   return (0, r.jsxs)("span", {

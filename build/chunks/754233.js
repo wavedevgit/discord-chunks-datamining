@@ -6,21 +6,21 @@ var n = r(200651);
 r(192379);
 var o = r(481060),
   c = r(313201),
-  s = r(430824),
-  a = r(614812),
-  l = r(388032),
+  l = r(430824),
+  s = r(614812),
+  a = r(388032),
   i = r(318350);
 let d = e => {
   var t, r;
   let {
     onClose: d,
     guildId: u
-  } = e, p = (0, c.Dt)(), b = l.NW.format(l.t.ZqkXsL, {
-    helpdeskArticle: a.z
-  }), m = s.Z.getGuild(u);
-  return null != m && (b = l.NW.format(l.t.jn0Xy8, {
+  } = e, p = (0, c.Dt)(), b = a.intl.format(a.t.ZqkXsL, {
+    helpdeskArticle: s.z
+  }), m = l.Z.getGuild(u);
+  return null != m && (b = a.intl.format(a.t.jn0Xy8, {
     guildName: m.name,
-    helpdeskArticle: a.z
+    helpdeskArticle: s.z
   })), (0, n.jsxs)(o.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
@@ -46,7 +46,7 @@ let d = e => {
       children: [(0, n.jsx)(o.X6q, {
         id: p,
         variant: "heading-xl/extrabold",
-        children: l.NW.string(l.t.kJwpBQ)
+        children: a.intl.string(a.t.kJwpBQ)
       }), (0, n.jsx)(o.olH, {
         className: i.closeButton,
         onClick: d
@@ -63,7 +63,7 @@ let d = e => {
         className: i.button,
         size: o.zxk.Sizes.MIN,
         onClick: d,
-        children: l.NW.string(l.t.BddRzc)
+        children: a.intl.string(a.t.BddRzc)
       })
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

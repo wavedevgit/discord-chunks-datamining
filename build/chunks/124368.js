@@ -33,13 +33,13 @@ var d = function(e) {
 function f() {
   return [{
     setting: u.ALL_MESSAGES,
-    label: i.NW.string(i.t["n/bTaW"])
+    label: i.intl.string(i.t["n/bTaW"])
   }, {
     setting: u.ONLY_MENTIONS,
-    label: i.NW.format(i.t.L2hmY2, {})
+    label: i.intl.format(i.t.L2hmY2, {})
   }, {
     setting: u.NO_MESSAGES,
-    label: i.NW.string(i.t.CtVGyc)
+    label: i.intl.string(i.t.CtVGyc)
   }]
 }
 var _ = function(e) {

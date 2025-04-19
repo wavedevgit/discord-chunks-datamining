@@ -44,13 +44,13 @@ function d(e) {
       onItemSelect: n,
       children: [(0, r.jsx)(i.njP.Item, {
         id: a.QIO.NEWEST,
-        children: s.NW.string(s.t.rLjqbW)
+        children: s.intl.string(s.t.rLjqbW)
       }), (0, r.jsx)(i.njP.Item, {
         id: a.QIO.OLDEST,
-        children: s.NW.string(s.t.a1BaUl)
+        children: s.intl.string(s.t.a1BaUl)
       }), (0, r.jsx)(i.njP.Item, {
         id: a.QIO.MOST_RELEVANT,
-        children: s.NW.string(s.t.FtR97u)
+        children: s.intl.string(s.t.FtR97u)
       })]
     })]
   })
@@ -75,7 +75,7 @@ function p(e) {
     className: c.totalResults,
     role: "status",
     children: [a ? (0, r.jsx)(i.ua7, {
-      text: s.NW.formatToPlainString(s.t["4Y3O+P"], {
+      text: s.intl.formatToPlainString(s.t["4Y3O+P"], {
         count: o
       }),
       children: n => {
@@ -108,7 +108,7 @@ function h(e) {
   if (t) return (0, r.jsx)(i.Text, {
     variant: d,
     color: "header-secondary",
-    children: s.NW.string(s.t.uixzLS)
+    children: s.intl.string(s.t.uixzLS)
   });
   {
     if (n) return (0, r.jsx)(i.Text, {
@@ -117,14 +117,14 @@ function h(e) {
       children: (0, r.jsx)(i.eee, {
         className: c.helpdeskLink,
         href: o.Z.getArticleURL(a.BhN.SEARCH_INDEXING),
-        children: s.NW.string(s.t["G3EA+/"])
+        children: s.intl.string(s.t["G3EA+/"])
       })
     });
     let e = u.toLocaleString();
     return (0, r.jsx)(i.Text, {
       variant: d,
       color: "header-primary",
-      children: s.NW.format(s.t.ZGVL3t, {
+      children: s.intl.format(s.t.ZGVL3t, {
         count: e
       })
     })

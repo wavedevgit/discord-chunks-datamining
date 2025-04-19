@@ -31,7 +31,7 @@ function b(e) {
     collapseWhenChecked: j = !0,
     onClick: O,
     disabled: E
-  } = e, N = (0, a.e7)([p.Z], () => p.Z.useReducedMotion), [I, P] = i.useState(!1), S = (0, d.ZP)(), Z = (0, s.wj)(S) || t ? g : m, {
+  } = e, I = (0, a.e7)([p.Z], () => p.Z.useReducedMotion), [P, S] = i.useState(!1), Z = (0, d.ZP)(), N = (0, s.wj)(Z) || t ? g : m, {
     width: T = 0,
     ref: A
   } = (0, u.ZP)(), {
@@ -54,7 +54,7 @@ function b(e) {
       onChange: function() {
         if (b) {
           let e = !t;
-          P(!0), null == y || y(e)
+          S(!0), null == y || y(e)
         }
         "function" == typeof O && O()
       },
@@ -64,7 +64,7 @@ function b(e) {
     }), (0, r.jsxs)("label", {
       htmlFor: v,
       className: o()(f.label, x, {
-        [f.transition]: I,
+        [f.transition]: P,
         [f.labelChecked]: t,
         [f.labelUnchecked]: !t && !b
       }),
@@ -73,10 +73,10 @@ function b(e) {
       } : void 0,
       children: [t ? (0, r.jsx)(c.ZX5, {
         className: f.shine,
-        shinePaused: N
+        shinePaused: I
       }) : null, (0, r.jsx)("img", {
         ref: A,
-        src: Z,
+        src: N,
         alt: _
       }), (0, r.jsx)("span", {
         ref: R,

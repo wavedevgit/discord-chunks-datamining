@@ -4,9 +4,9 @@ n.d(t, {
   i: () => x
 }), n(35282), n(388685), n(953529);
 var r = n(200651),
-  a = n(192379),
-  i = n(120356),
-  l = n.n(i),
+  i = n(192379),
+  a = n(120356),
+  l = n.n(a),
   s = n(477660),
   o = n.n(s),
   c = n(481060),
@@ -54,9 +54,9 @@ let b = /^!\[([^\]]*)\]\(asset:\/\/(\d+)\)/,
   x = f(_({}, u.Z.rules), {
     heading: f(_({}, u.Z.rules.heading), {
       react(e, t, n) {
-        let a = "h".concat(Math.min(Math.max(2, e.level + 1), 4));
+        let i = "h".concat(Math.min(Math.max(2, e.level + 1), 4));
         return (0, r.jsx)(d.Z, {
-          tag: a,
+          tag: i,
           children: t(e.content, n)
         }, n.key)
       }
@@ -89,7 +89,7 @@ let b = /^!\[([^\]]*)\]\(asset:\/\/(\d+)\)/,
   }),
   v = o().parserFor(x),
   C = o().reactFor(o().ruleOutput(x, "react"));
-class j extends a.PureComponent {
+class j extends i.PureComponent {
   componentDidMount() {
     if (null != this._container) {
       let {
@@ -105,14 +105,14 @@ class j extends a.PureComponent {
       applicationId: e,
       description: t,
       blurb: n,
-      className: a,
-      assets: i
+      className: i,
+      assets: a
     } = this.props, {
       collapsed: s,
       collapsable: o
     } = this.state;
     return (0, r.jsxs)("div", {
-      className: a,
+      className: i,
       children: [(0, r.jsx)("div", {
         className: l()({
           [h.collapsed]: o && s
@@ -127,7 +127,7 @@ class j extends a.PureComponent {
             parser: v,
             output: C,
             state: {
-              assets: i,
+              assets: a,
               applicationId: e
             },
             children: t
@@ -137,7 +137,7 @@ class j extends a.PureComponent {
         className: h.toggleCollapseButton,
         onClick: this.handleToggleCollapse,
         color: c.zxk.Colors.PRIMARY,
-        children: s ? m.NW.string(m.t.DxcOXF) : m.NW.string(m.t.rD6EaG)
+        children: s ? m.intl.string(m.t.DxcOXF) : m.intl.string(m.t.rD6EaG)
       }) : null]
     })
   }

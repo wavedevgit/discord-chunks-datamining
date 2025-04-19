@@ -36,7 +36,7 @@ function E(e) {
     n = null == e ? void 0 : e.name;
   if (null != t) return {
     src: t,
-    alt: null == n ? m.NW.string(m.t["2B/phI"]) : m.NW.formatToPlainString(m.t.tiKyYm, {
+    alt: null == n ? m.intl.string(m.t["2B/phI"]) : m.intl.formatToPlainString(m.t.tiKyYm, {
       applicationName: n
     })
   }
@@ -103,14 +103,14 @@ function y(e, t) {
   if (null == n && (0, o.Z)(e)) return {
     largeImage: {
       src: r.Z.get(p.ABu.XBOX).icon.customPNG,
-      alt: m.NW.string(m.t["Nfvo7+"])
+      alt: m.intl.string(m.t["Nfvo7+"])
     },
     smallImage: void 0
   };
   if (null == n && null == i && (0, a.Z)(e)) return {
     largeImage: {
       src: r.Z.get(p.ABu.PLAYSTATION).icon.lightPNG,
-      alt: m.NW.string(m.t.fFl4jo)
+      alt: m.intl.string(m.t.fFl4jo)
     },
     smallImage: void 0
   };

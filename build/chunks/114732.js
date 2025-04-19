@@ -27,7 +27,7 @@ let d = function(e) {
       }), (0, r.jsx)(a.X6q, {
         className: l.title,
         variant: "heading-xl/medium",
-        children: s.NW.string(s.t.tWYWJy)
+        children: s.intl.string(s.t.tWYWJy)
       }), (0, r.jsx)(a.olH, {
         onClick: t,
         className: l.modalCloseButton
@@ -37,7 +37,7 @@ let d = function(e) {
       scrollbarType: "none",
       children: (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
-        children: s.NW.string(s.t.JNQRU1)
+        children: s.intl.string(s.t.JNQRU1)
       })
     }), (0, r.jsx)(a.mzw, {
       className: l.modalFooter,
@@ -45,7 +45,7 @@ let d = function(e) {
         color: a.zxk.Colors.BRAND,
         size: a.zxk.Sizes.MEDIUM,
         onClick: t,
-        children: s.NW.string(s.t.cpT0Cg)
+        children: s.intl.string(s.t.cpT0Cg)
       })
     })]
   })

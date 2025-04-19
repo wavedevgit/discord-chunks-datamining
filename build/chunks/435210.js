@@ -27,7 +27,7 @@ t.format = function(e) {
         default:
           return e
       }
-    }), s = r[n]; n < i; s = r[++n]) v(s) || !N(s) ? o += " " + s : o += " " + c(s);
+    }), s = r[n]; n < i; s = r[++n]) v(s) || !A(s) ? o += " " + s : o += " " + c(s);
   return o
 }, t.deprecate = function(e, n) {
   if (void 0 !== r && !0 === r.noDeprecation) return e;
@@ -90,13 +90,13 @@ function _(e, n, r) {
       return e.stylize("[Function" + c + "]", "special")
     }
     if (T(n)) return e.stylize(RegExp.prototype.toString.call(n), "regexp");
-    if (A(n)) return e.stylize(Date.prototype.toString.call(n), "date");
+    if (N(n)) return e.stylize(Date.prototype.toString.call(n), "date");
     if (C(n)) return h(n)
   }
   var u = "",
     d = !1,
     y = ["{", "}"];
-  if (b(n) && (d = !0, y = ["[", "]"]), R(n) && (u = " [Function" + (n.name ? ": " + n.name : "") + "]"), T(n) && (u = " " + RegExp.prototype.toString.call(n)), A(n) && (u = " " + Date.prototype.toUTCString.call(n)), C(n) && (u = " " + h(n)), 0 === s.length && (!d || 0 == n.length)) return y[0] + u + y[1];
+  if (b(n) && (d = !0, y = ["[", "]"]), R(n) && (u = " [Function" + (n.name ? ": " + n.name : "") + "]"), T(n) && (u = " " + RegExp.prototype.toString.call(n)), N(n) && (u = " " + Date.prototype.toUTCString.call(n)), C(n) && (u = " " + h(n)), 0 === s.length && (!d || 0 == n.length)) return y[0] + u + y[1];
   if (r < 0)
     if (T(n)) return e.stylize(RegExp.prototype.toString.call(n), "regexp");
     else return e.stylize("[Object]", "special");
@@ -172,19 +172,19 @@ function S(e) {
 }
 
 function T(e) {
-  return N(e) && "[object RegExp]" === P(e)
-}
-
-function N(e) {
-  return "object" == typeof e && null !== e
+  return A(e) && "[object RegExp]" === P(e)
 }
 
 function A(e) {
-  return N(e) && "[object Date]" === P(e)
+  return "object" == typeof e && null !== e
+}
+
+function N(e) {
+  return A(e) && "[object Date]" === P(e)
 }
 
 function C(e) {
-  return N(e) && ("[object Error]" === P(e) || e instanceof Error)
+  return A(e) && ("[object Error]" === P(e) || e instanceof Error)
 }
 
 function R(e) {
@@ -235,7 +235,7 @@ t.debuglog = function(e) {
   return null == e
 }, t.isNumber = O, t.isString = I, t.isSymbol = function(e) {
   return "symbol" == typeof e
-}, t.isUndefined = S, t.isRegExp = T, t.types.isRegExp = T, t.isObject = N, t.isDate = A, t.types.isDate = A, t.isError = C, t.types.isNativeError = C, t.isFunction = R, t.isPrimitive = function(e) {
+}, t.isUndefined = S, t.isRegExp = T, t.types.isRegExp = T, t.isObject = A, t.isDate = N, t.types.isDate = N, t.isError = C, t.types.isNativeError = C, t.isFunction = R, t.isPrimitive = function(e) {
   return null === e || "boolean" == typeof e || "number" == typeof e || "string" == typeof e || "symbol" == typeof e || void 0 === e
 }, t.isBuffer = n(102439);
 var D = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -252,7 +252,7 @@ function x(e, t) {
 t.log = function() {
   console.log("%s - %s", L(), t.format.apply(t, arguments))
 }, t.inherits = n(689118), t._extend = function(e, t) {
-  if (!t || !N(t)) return e;
+  if (!t || !A(t)) return e;
   for (var n = Object.keys(t), r = n.length; r--;) e[n[r]] = t[n[r]];
   return e
 };

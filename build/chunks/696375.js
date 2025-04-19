@@ -5,8 +5,8 @@ t.d(n, {
 var i = t(200651);
 t(192379);
 var s = t(481060),
-  a = t(259580),
-  l = t(935786);
+  l = t(259580),
+  a = t(935786);
 
 function r(e) {
   let {
@@ -17,16 +17,16 @@ function r(e) {
   return (0, i.jsx)(s.eee, {
     href: n,
     onClick: r,
-    className: l.externalLinkWrapper,
+    className: a.externalLinkWrapper,
     children: (0, i.jsxs)(s.P3F, {
-      className: l.childButton,
+      className: a.childButton,
       children: [(0, i.jsx)(s.Text, {
-        className: l.childText,
+        className: a.childText,
         variant: "text-md/semibold",
         children: t
-      }), (0, i.jsx)(a.Z, {
-        className: l.childIcon,
-        direction: a.Z.Directions.RIGHT
+      }), (0, i.jsx)(l.Z, {
+        className: a.childIcon,
+        direction: l.Z.Directions.RIGHT
       })]
     })
   })

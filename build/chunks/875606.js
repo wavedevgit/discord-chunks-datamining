@@ -1,5 +1,5 @@
 /** Chunk was on 40390 **/
-e.exports = {
+n.exports = {
   headerContainer: "headerContainer__56d15",
   guildIconContainer: "guildIconContainer__56d15",
   statusContainer: "statusContainer__56d15",

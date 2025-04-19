@@ -28,7 +28,7 @@ let g = "isHideDevBanner",
       b = () => (0, r.jsx)(c.P3F, {
         onClick: m,
         className: f.closeButton,
-        "aria-label": h.NW.string(h.t.WAI6xs),
+        "aria-label": h.intl.string(h.t.WAI6xs),
         children: (0, r.jsx)(c.Dio, {
           size: "md",
           color: "currentColor",
@@ -39,13 +39,13 @@ let g = "isHideDevBanner",
       className: a()(f.devBanner, f.buildOverride),
       children: [(0, r.jsx)(p.Z, {
         className: f.icon
-      }), h.NW.string(h.t.Wj3LW1), (0, r.jsx)(b, {})]
+      }), h.intl.string(h.t.Wj3LW1), (0, r.jsx)(b, {})]
     }) : "staging" === window.GLOBAL_ENV.RELEASE_CHANNEL ? (0, r.jsxs)("div", {
       className: a()(f.devBanner, f.staging),
       children: [(0, r.jsx)(p.Z, {
         className: f.icon
-      }), h.NW.format(h.t.uyrfYG, {
-        buildNumber: "391862"
+      }), h.intl.format(h.t.uyrfYG, {
+        buildNumber: "391875"
       }), (0, r.jsx)(b, {})]
     }) : null
   }

@@ -79,7 +79,7 @@ let w = e => {
         variant: i,
         children: l
       }), o && (0, n.jsx)(d.IGR, {
-        text: v.NW.string(v.t.nhbtEh)
+        text: v.intl.string(v.t.nhbtEh)
       })]
     })
   })
@@ -125,13 +125,13 @@ function k(e) {
           children: [(0, n.jsx)(d.X6q, {
             id: h,
             variant: "heading-md/semibold",
-            children: v.NW.string(v.t.nP7nDQ)
+            children: v.intl.string(v.t.nP7nDQ)
           }), (0, n.jsx)(d.LZC, {
             size: 2
           }), (0, n.jsx)(d.Text, {
             variant: "text-sm/normal",
             color: "header-secondary",
-            children: v.NW.string(v.t.I4SYUF)
+            children: v.intl.string(v.t.I4SYUF)
           })]
         })]
       }), (0, n.jsx)(d.olH, {
@@ -146,7 +146,7 @@ function k(e) {
         className: y.checklistContainer,
         children: [(0, n.jsx)(w, {
           className: y.selectAllCheckbox,
-          label: v.NW.string(v.t["Ve/y5+"]),
+          label: v.intl.string(v.t["Ve/y5+"]),
           textVariant: "text-md/semibold",
           value: f,
           onChange: () => {
@@ -171,15 +171,15 @@ function k(e) {
     }), (0, n.jsx)(d.mzw, {
       children: (0, n.jsx)(d.ua7, {
         shouldShow: !p,
-        text: v.NW.string(v.t["8aYImJ"]),
+        text: v.intl.string(v.t["8aYImJ"]),
         children: e => {
           var t, r;
           return (0, n.jsx)(d.zxk, (t = O({}, e), r = r = {
-            "aria-label": v.NW.string(v.t.R3BPHx),
+            "aria-label": v.intl.string(v.t.R3BPHx),
             disabled: !p,
             submitting: c,
             onClick: g,
-            children: v.NW.string(v.t.R3BPHx)
+            children: v.intl.string(v.t.R3BPHx)
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
             var r = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

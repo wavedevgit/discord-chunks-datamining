@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   Af: () => j,
-  An: () => Y,
-  E6: () => W,
+  An: () => W,
+  E6: () => Y,
   EE: () => G,
   Gk: () => X,
   Gt: () => D,
@@ -53,7 +53,7 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function N(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -66,7 +66,7 @@ function N(e) {
   return e
 }
 
-function A(e, t) {
+function N(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -78,7 +78,7 @@ function A(e, t) {
 }
 
 function C(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -101,9 +101,9 @@ function P(e, t) {
   return i
 }
 let w = {
-  [c.s.TOP_ARTIST]: [Y],
+  [c.s.TOP_ARTIST]: [W],
   [c.s.PLAYED_GAME]: [U, G, j, z, F, H, K, Z, V],
-  [c.s.TOP_GAME]: [W],
+  [c.s.TOP_GAME]: [Y],
   [c.s.WATCHED_MEDIA]: [q, Q],
   [c.s.LAUNCHED_ACTIVITY]: [U, G, j, z, K, V]
 };
@@ -120,7 +120,7 @@ function M(e) {
   var {
     children: t
   } = e, n = R(e, ["children"]);
-  return (0, r.jsx)("div", C(N({
+  return (0, r.jsx)("div", C(A({
     className: S.badgeContainer
   }, n), {
     children: t
@@ -142,7 +142,7 @@ function k(e) {
   return (0, r.jsx)(f.ua7, {
     text: a,
     shouldShow: o,
-    children: e => (0, r.jsxs)(M, C(N({}, e), {
+    children: e => (0, r.jsxs)(M, C(A({}, e), {
       children: [(0, r.jsx)(t, {
         size: "xxs",
         color: null != i ? i : l
@@ -256,7 +256,7 @@ function F(e) {
   } = x(), i = (0, h.Hi)(n, [0, 3]) ? f.TVs.colors.STATUS_POSITIVE : void 0;
   return (0, b.Ol)(t) ? (0, r.jsx)(k, {
     Icon: f._IE,
-    text: I.NW.string(I.t.keY6mZ),
+    text: I.intl.string(I.t.keY6mZ),
     iconColor: i
   }) : null
 }
@@ -294,7 +294,7 @@ function Z(e) {
     Icon: f.Oe7,
     showTooltip: !i,
     tooltipText: o,
-    text: i ? o : I.NW.string(I.t.adnLsL)
+    text: i ? o : I.intl.string(I.t.adnLsL)
   })
 }
 
@@ -307,16 +307,16 @@ function H(e) {
   return (0, b.q_)(t) ? (0, r.jsx)(k, {
     Icon: f.qOE,
     showTooltip: 0 === n,
-    text: I.NW.formatToPlainString(I.t["Klie/P"], {
+    text: I.intl.formatToPlainString(I.t["Klie/P"], {
       days: i
     }),
-    tooltipText: I.NW.formatToPlainString(I.t.PwMe0t, {
+    tooltipText: I.intl.formatToPlainString(I.t.PwMe0t, {
       days: i
     })
   }) : null
 }
 
-function W(e) {
+function Y(e) {
   let {
     entry: t
   } = e, {
@@ -328,14 +328,14 @@ function W(e) {
   return (0, r.jsx)(k, {
     Icon: f.rm8,
     text: (0, r.jsxs)(r.Fragment, {
-      children: [I.NW.string(I.t["/50eHh"]), o, I.NW.format(s, {
+      children: [I.intl.string(I.t["/50eHh"]), o, I.intl.format(s, {
         hours: Math.round(a / p.Z.Seconds.HOUR)
       })]
     })
   })
 }
 
-function Y(e) {
+function W(e) {
   var t;
   let {
     entry: n
@@ -343,9 +343,9 @@ function Y(e) {
     location: i
   } = x(), a = null == (t = (0, b.PJ)(n, u.N.AGGREGATE_COUNT)) ? void 0 : t.count;
   if (null == a) return null;
-  let o = (0, h.Hi)(i, [1, 2, 5]) ? I.NW.formatToPlainString(I.t.HtifnJ, {
+  let o = (0, h.Hi)(i, [1, 2, 5]) ? I.intl.formatToPlainString(I.t.HtifnJ, {
     count: a
-  }) : I.NW.formatToPlainString(I.t["jq/Bmp"], {
+  }) : I.intl.formatToPlainString(I.t["jq/Bmp"], {
     count: a
   });
   return (0, r.jsx)(k, {
@@ -364,7 +364,7 @@ function K(e) {
   let i = (0, b.ig)(t);
   return null == i || i === d.o.TRENDING_TYPE_UNSPECIFIED ? null : (0, r.jsx)(k, {
     Icon: f.YqE,
-    text: I.NW.string(I.t.kAlUs7)
+    text: I.intl.string(I.t.kAlUs7)
   })
 }
 
@@ -378,7 +378,7 @@ function z(e) {
   let i = m.default.extractTimestamp(t.extra.application_id);
   return l()().diff(l()(i), "days") > O.G ? null : (0, r.jsx)(k, {
     Icon: f.rIT,
-    text: I.NW.string(I.t.vYuyWV)
+    text: I.intl.string(I.t.vYuyWV)
   })
 }
 
@@ -431,7 +431,7 @@ function X(e) {
   } : {
     defaultTextColor: "text-secondary"
   }, (0, r.jsx)(L.Provider, {
-    value: N({
+    value: A({
       location: n
     }, t),
     children: (0, r.jsx)("div", {

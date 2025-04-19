@@ -41,7 +41,7 @@ function j(e) {
       children: [(0, i.jsx)(c.Text, {
         variant: "text-sm/medium",
         color: "header-primary",
-        children: _.NW.string(_.t.KY0ilp)
+        children: _.intl.string(_.t.KY0ilp)
       }), n && (0, i.jsxs)("div", {
         className: O.toggleContainerOnlineRow,
         children: [(0, i.jsx)(c.qbd, {
@@ -50,7 +50,7 @@ function j(e) {
         }), (0, i.jsx)(c.Text, {
           variant: "text-xs/normal",
           color: "text-secondary",
-          children: r === c.Skl.INVISIBLE ? _.NW.string(y.Z.a3AofX) : _.NW.string(_.t.WbGtnJ)
+          children: r === c.Skl.INVISIBLE ? _.intl.string(y.default.a3AofX) : _.intl.string(_.t.WbGtnJ)
         })]
       })]
     }), (0, i.jsx)(c.rsf, {
@@ -77,7 +77,7 @@ function S(e) {
       children: [null != n && (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(c.zxk, {
           className: O.closeButton,
-          "aria-label": _.NW.string(_.t.cpT0Cg),
+          "aria-label": _.intl.string(_.t.cpT0Cg),
           look: c.zxk.Looks.BLANK,
           size: c.zxk.Sizes.NONE,
           onClick: n,
@@ -93,7 +93,7 @@ function S(e) {
           variant: "heading-md/bold",
           color: "header-primary",
           className: O.nuxTitle,
-          children: _.NW.string(_.t.PRjSRk)
+          children: _.intl.string(_.t.PRjSRk)
         })]
       }), t]
     })]
@@ -112,7 +112,7 @@ function x(e) {
       variant: "text-xs/normal",
       color: "text-secondary",
       className: O.nuxContent,
-      children: _.NW.format(_.t.nEgjjo, {
+      children: _.intl.format(_.t.nEgjjo, {
         onClickSettings: () => {
           t(), u.Z.open(b.oAB.ACTIVITY_PRIVACY, null, {
             analyticsLocations: n
@@ -139,11 +139,11 @@ function E(e) {
       variant: "heading-sm/semibold",
       color: "header-primary",
       className: O.controlTitle,
-      children: _.NW.string(_.t["6x5uWV"])
+      children: _.intl.string(_.t["6x5uWV"])
     }), (0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      children: _.NW.format(_.t.nEgjjo, {
+      children: _.intl.format(_.t.nEgjjo, {
         onClickSettings: () => {
           t(), u.Z.open(b.oAB.ACTIVITY_PRIVACY, null, {
             analyticsLocations: n
@@ -169,7 +169,7 @@ function I(e) {
       variant: "text-xs/normal",
       color: "text-secondary",
       className: O.nuxContent,
-      children: _.NW.format(_.t.fF2TbW, {
+      children: _.intl.format(_.t.fF2TbW, {
         helpDeskUrl: m.Z.getArticleURL(b.BhN.ACTIVITY_STATUS_SETTINGS)
       })
     }), (0, i.jsx)("div", {
@@ -181,7 +181,7 @@ function I(e) {
   })
 }
 
-function N(e) {
+function P(e) {
   let {
     closePopout: t
   } = e, n = p.G6.useSetting();
@@ -191,7 +191,7 @@ function N(e) {
       variant: "text-xs/normal",
       color: "text-secondary",
       className: O.nuxContent,
-      children: _.NW.format(_.t.fF2TbW, {
+      children: _.intl.format(_.t.fF2TbW, {
         helpDeskUrl: m.Z.getArticleURL(b.BhN.ACTIVITY_STATUS_SETTINGS)
       })
     }), (0, i.jsx)("div", {
@@ -204,7 +204,7 @@ function N(e) {
   })
 }
 
-function P() {
+function w() {
   let e = p.G6.useSetting();
   return (0, i.jsxs)(S, {
     children: [(0, i.jsx)(j, {
@@ -214,14 +214,14 @@ function P() {
     }), (0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      children: _.NW.format(_.t.fF2TbW, {
+      children: _.intl.format(_.t.fF2TbW, {
         helpDeskUrl: m.Z.getArticleURL(b.BhN.ACTIVITY_STATUS_SETTINGS)
       })
     })]
   })
 }
 
-function w(e) {
+function N(e) {
   let {
     closePopout: t
   } = e;
@@ -230,11 +230,11 @@ function w(e) {
       variant: "heading-sm/semibold",
       color: "header-primary",
       className: O.controlTitle,
-      children: _.NW.string(y.Z.qKDqen)
+      children: _.intl.string(y.default.qKDqen)
     }), (0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      children: _.NW.format(_.t.fF2TbW, {
+      children: _.intl.format(_.t.fF2TbW, {
         helpDeskUrl: m.Z.getArticleURL(b.BhN.ACTIVITY_STATUS_SETTINGS)
       })
     }), (0, i.jsx)(c.zxk, {
@@ -246,7 +246,7 @@ function w(e) {
         t(), C(c.Skl.ONLINE)
       },
       fullWidth: !0,
-      children: _.NW.string(y.Z.Poezn5)
+      children: _.intl.string(y.default.Poezn5)
     })]
   })
 }
@@ -262,7 +262,7 @@ function Z() {
     }), (0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      children: _.NW.format(_.t.fF2TbW, {
+      children: _.intl.format(_.t.fF2TbW, {
         helpDeskUrl: m.Z.getArticleURL(b.BhN.ACTIVITY_STATUS_SETTINGS)
       })
     })]
@@ -288,7 +288,7 @@ function A(e) {
         closePopout: n
       });
     case 2:
-      return (0, i.jsx)(N, {
+      return (0, i.jsx)(P, {
         closePopout: n
       });
     case 3:
@@ -296,9 +296,9 @@ function A(e) {
         closePopout: n
       });
     case 4:
-      return (0, i.jsx)(P, {});
+      return (0, i.jsx)(w, {});
     case 5:
-      return (0, i.jsx)(w, {
+      return (0, i.jsx)(N, {
         closePopout: n
       });
     case 6:

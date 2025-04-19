@@ -30,8 +30,8 @@ var i = n(120356),
   I = n(800965),
   S = n(157813),
   T = n(25827),
-  N = n(131951),
-  A = n(636449),
+  A = n(131951),
+  N = n(636449),
   C = n(884338),
   R = n(349619),
   P = n(981631),
@@ -51,7 +51,7 @@ function M(e) {
     }),
     onClick: t,
     iconComponent: l.CJ0,
-    label: n ? D.NW.string(D.t["2TiKgY"]) : D.NW.string(D.t.oN8bqa)
+    label: n ? D.intl.string(D.t["2TiKgY"]) : D.intl.string(D.t.oN8bqa)
   })
 }
 
@@ -67,13 +67,13 @@ function k(e) {
     idle: D,
     selectedParticipant: M,
     embeddedActivity: k
-  } = e, j = (0, u.bp)() === P.IlC.POPOUT, U = (0, s.e7)([N.Z], () => N.Z.isVideoEnabled()), G = (0, s.e7)([N.Z], () => Object.values(N.Z.getVideoDevices())[0]), B = !1 === (null == (t = null == G ? void 0 : G.disabled) || t), F = (0, f.Z)([a])[0], V = (0, g.Z)(i), {
+  } = e, j = (0, u.bp)() === P.IlC.POPOUT, U = (0, s.e7)([A.Z], () => A.Z.isVideoEnabled()), G = (0, s.e7)([A.Z], () => Object.values(A.Z.getVideoDevices())[0]), B = !1 === (null == (t = null == G ? void 0 : G.disabled) || t), F = (0, f.Z)([a])[0], V = (0, g.Z)(i), {
     parentAnalyticsLocation: Z
   } = (0, d.ZP)(), H = e => {
     (0, p.v)(Z, p.d.CAMERA, e), c.Z.setVideoEnabled(e)
-  }, W = () => {
-    B ? H(!0) : (0, E.Z)()
   }, Y = () => {
+    B ? H(!0) : (0, E.Z)()
+  }, W = () => {
     (0, p.v)(Z, p.d.POPOUT, !0), (0, R.Z)(() => m.hP(i))
   };
   return (0, r.jsxs)("div", {
@@ -102,7 +102,7 @@ function k(e) {
           cameraUnavailable: !B,
           hasPermission: V,
           onChange: H,
-          onCameraUnavailable: W
+          onCameraUnavailable: Y
         }), (0, r.jsx)(b.Z, {
           children: (0, r.jsx)(_.Z, {
             channelId: i.id,
@@ -118,12 +118,12 @@ function k(e) {
         justify: h.Z.Justify.END,
         basis: "50%",
         align: h.Z.Align.CENTER,
-        children: [j || (0, A.R)({
+        children: [j || (0, N.R)({
           isContextless: k.location.kind === o.E.CONTEXTLESS
         }) ? null : (0, r.jsx)(I.Z, {
           className: L.rightPipIcon,
           popoutOpen: !1,
-          onOpenPopout: Y,
+          onOpenPopout: W,
           onClosePopout: w.Vq
         }), (0, r.jsx)(O.Z, {
           applicationId: a,

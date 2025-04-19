@@ -6,65 +6,65 @@ n.d(t, {
   TL: () => u,
   XL: () => b,
   YA: () => c,
-  pv: () => i
+  pv: () => s
 });
-var r, a, o, l = n(70956),
-  s = n(388032);
-let i = 6 * l.Z.Millis.DAYS_30;
+var r, l, a, o = n(70956),
+  i = n(388032);
+let s = 6 * o.Z.Millis.DAYS_30;
 var c = ((r = {}).TOO_MANY_NOTIFICATIONS = "too_many_notifications", r.TEMPORARY_BREAK = "temporary_break", r.ANNOYING = "annoying", r.UNSAFE = "unsafe", r.SPAM = "spam", r.OTHER = "other", r);
 
 function u() {
   return [{
     value: "too_many_notifications",
-    label: s.NW.string(s.t.bQHhT0)
+    label: i.intl.string(i.t.bQHhT0)
   }, {
     value: "temporary_break",
-    label: s.NW.string(s.t.OuPkvL)
+    label: i.intl.string(i.t.OuPkvL)
   }, {
     value: "annoying",
-    label: s.NW.string(s.t["3kmAMD"])
+    label: i.intl.string(i.t["3kmAMD"])
   }, {
     value: "unsafe",
-    label: s.NW.string(s.t.nmW7jI)
+    label: i.intl.string(i.t.nmW7jI)
   }, {
     value: "spam",
-    label: s.NW.string(s.t.cCPYjo)
+    label: i.intl.string(i.t.cCPYjo)
   }, {
     value: "other",
-    label: s.NW.string(s.t["7ZIIJy"])
+    label: i.intl.string(i.t["7ZIIJy"])
   }]
 }
-var d = ((a = {}).CONFUSION = "confusion", a.DOES_NOT_ACHIEVE_WANTS = "does_not_achieve_wants", a.HARD_TO_ACCESS = "hard_to_access", a.SOMETHING_ELSE = "something_else", a);
+var d = ((l = {}).CONFUSION = "confusion", l.DOES_NOT_ACHIEVE_WANTS = "does_not_achieve_wants", l.HARD_TO_ACCESS = "hard_to_access", l.SOMETHING_ELSE = "something_else", l);
 
 function _() {
   return [{
     value: "confusion",
-    label: s.NW.string(s.t["64Oph4"])
+    label: i.intl.string(i.t["64Oph4"])
   }, {
     value: "does_not_achieve_wants",
-    label: s.NW.string(s.t["wH5R/v"])
+    label: i.intl.string(i.t["wH5R/v"])
   }, {
     value: "hard_to_access",
-    label: s.NW.string(s.t["4uZBRk"])
+    label: i.intl.string(i.t["4uZBRk"])
   }, {
     value: "something_else",
-    label: s.NW.string(s.t.YicFbG)
+    label: i.intl.string(i.t.YicFbG)
   }]
 }
-var b = ((o = {}).CONFUSION = "confusion", o.DOES_NOT_ACHIEVE_WANTS = "does_not_achieve_wants", o.HARD_TO_ACCESS = "hard_to_access", o.SOMETHING_ELSE = "something_else", o);
+var b = ((a = {}).CONFUSION = "confusion", a.DOES_NOT_ACHIEVE_WANTS = "does_not_achieve_wants", a.HARD_TO_ACCESS = "hard_to_access", a.SOMETHING_ELSE = "something_else", a);
 
 function m() {
   return [{
     value: "confusion",
-    label: s.NW.string(s.t.IumZmp)
+    label: i.intl.string(i.t.IumZmp)
   }, {
     value: "does_not_achieve_wants",
-    label: s.NW.string(s.t.mXkYyc)
+    label: i.intl.string(i.t.mXkYyc)
   }, {
     value: "hard_to_access",
-    label: s.NW.string(s.t.eg1hVF)
+    label: i.intl.string(i.t.eg1hVF)
   }, {
     value: "something_else",
-    label: s.NW.string(s.t.WAYoT0)
+    label: i.intl.string(i.t.WAYoT0)
   }]
 }

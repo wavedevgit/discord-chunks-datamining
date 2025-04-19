@@ -2,11 +2,11 @@
 n.d(t, {
   Z: () => p
 });
-var r = n(200651),
-  i = n(192379),
+var i = n(200651),
+  r = n(192379),
   s = n(120356),
-  a = n.n(s),
-  l = n(481060),
+  l = n.n(s),
+  a = n(481060),
   o = n(358085),
   c = n(998502),
   d = n(388032),
@@ -20,7 +20,7 @@ function m(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class g extends i.PureComponent {
+class g extends r.PureComponent {
   async componentDidMount() {
     this.setState({
       openOnStartup: await c.ZP.getSetting("OPEN_ON_STARTUP", !0),
@@ -33,34 +33,34 @@ class g extends i.PureComponent {
       openOnStartup: e,
       startMinimized: t,
       minimizeToTray: n
-    } = this.state, i = (0, o.isLinux)() ? d.NW.string(d.t["7pPjTU"]) : d.NW.string(d.t.ZkDZoq);
-    return (0, r.jsxs)(l.hjN, {
-      tag: l.RB0.H1,
-      title: i,
-      children: [(0, r.jsx)(l.vwX, {
-        children: d.NW.string(d.t["w/vU5u"])
-      }), (0, r.jsx)(l.j7V, {
+    } = this.state, r = (0, o.isLinux)() ? d.intl.string(d.t["7pPjTU"]) : d.intl.string(d.t.ZkDZoq);
+    return (0, i.jsxs)(a.hjN, {
+      tag: a.RB0.H1,
+      title: r,
+      children: [(0, i.jsx)(a.vwX, {
+        children: d.intl.string(d.t["w/vU5u"])
+      }), (0, i.jsx)(a.j7V, {
         className: u.marginBottom20,
         value: e,
-        note: d.NW.string(d.t["s/cQra"]),
+        note: d.intl.string(d.t["s/cQra"]),
         onChange: this.handleToggleOpenOnStartup,
-        children: d.NW.string(d.t.WQm4p6)
-      }), (0, o.isWindows)() ? (0, r.jsx)(l.j7V, {
+        children: d.intl.string(d.t.WQm4p6)
+      }), (0, o.isWindows)() ? (0, i.jsx)(a.j7V, {
         disabled: !e,
-        className: a()(u.marginTop8, u.marginBottom20),
+        className: l()(u.marginTop8, u.marginBottom20),
         value: !!e && t,
-        note: d.NW.string(d.t.o2FSjI),
+        note: d.intl.string(d.t.o2FSjI),
         onChange: this.handleToggleStartMinimized,
-        children: d.NW.string(d.t.n7Yjen)
-      }) : null, (0, r.jsx)(l.vwX, {
-        className: a()(u.marginTop20, u.marginBottom8),
-        children: d.NW.string(d.t.h0hFx8)
-      }), (0, r.jsx)(l.j7V, {
+        children: d.intl.string(d.t.n7Yjen)
+      }) : null, (0, i.jsx)(a.vwX, {
+        className: l()(u.marginTop20, u.marginBottom8),
+        children: d.intl.string(d.t.h0hFx8)
+      }), (0, i.jsx)(a.j7V, {
         className: u.marginBottom20,
         value: n,
-        note: d.NW.string(d.t["mVuX+v"]),
+        note: d.intl.string(d.t["mVuX+v"]),
         onChange: this.handleToggleMinimizeToTray,
-        children: d.NW.string(d.t.abLFen)
+        children: d.intl.string(d.t.abLFen)
       })]
     })
   }

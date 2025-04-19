@@ -3,9 +3,9 @@ n.d(t, {
   Z: () => p
 }), n(953529);
 var r = n(200651),
-  a = n(192379),
-  i = n(120356),
-  l = n.n(i),
+  i = n(192379),
+  a = n(120356),
+  l = n.n(a),
   s = n(780384),
   o = n(481060),
   c = n(410030),
@@ -27,10 +27,10 @@ function p(e) {
   let {
     title: t,
     description: n,
-    button: i,
+    button: a,
     className: p,
     children: m
-  } = e, h = (0, c.ZP)(), g = (0, s.wj)(h), _ = a.useMemo(() => Array.isArray(t) ? t.map((e, t) => (0, r.jsx)(u, {
+  } = e, h = (0, c.ZP)(), g = (0, s.wj)(h), _ = i.useMemo(() => Array.isArray(t) ? t.map((e, t) => (0, r.jsx)(u, {
     title: e
   }, t)) : (0, r.jsx)(u, {
     title: t
@@ -46,9 +46,9 @@ function p(e) {
           variant: "text-md/medium",
           color: g ? "text-muted" : "header-primary",
           children: n
-        }), null != i && (0, r.jsx)("div", {
+        }), null != a && (0, r.jsx)("div", {
           className: d.buttonContainer,
-          children: i
+          children: a
         })]
       })
     }), m]

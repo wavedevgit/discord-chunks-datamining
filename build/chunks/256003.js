@@ -6,7 +6,7 @@ var r = n(359959),
   l = n(993192),
   o = n(731965);
 
-function a(e) {
+function i(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -25,7 +25,7 @@ function a(e) {
   return e
 }
 
-function i(e, t) {
+function a(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,7 +46,7 @@ let s = (0, l.F)((e, t) => ({
       } = t(), c = new Set([...null != (l = s[n]) ? l : new Set, ...r]);
       (0, o.j)(() => {
         e({
-          selectedUserIds: i(a({}, s), {
+          selectedUserIds: a(i({}, s), {
             [n]: c
           })
         })
@@ -60,7 +60,7 @@ let s = (0, l.F)((e, t) => ({
       let c = [...s].filter(e => e !== r);
       (0, o.j)(() => {
         e({
-          selectedUserIds: i(a({}, l), {
+          selectedUserIds: a(i({}, l), {
             [n]: new Set(c)
           })
         })
@@ -72,7 +72,7 @@ let s = (0, l.F)((e, t) => ({
       } = t();
       null != r && (0, o.j)(() => {
         e({
-          selectedUserIds: i(a({}, r), {
+          selectedUserIds: a(i({}, r), {
             [n]: new Set
           })
         })

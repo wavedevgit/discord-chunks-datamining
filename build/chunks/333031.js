@@ -2,8 +2,8 @@
 n.d(t, {
   Z: () => w
 }), n(388685);
-var r = n(200651),
-  i = n(192379),
+var i = n(200651),
+  r = n(192379),
   o = n(120356),
   l = n.n(o),
   s = n(954955),
@@ -39,7 +39,7 @@ function C(e, t) {
     bottom: Math.ceil(t.bottom)
   }
 }
-let j = i.createContext(new class {
+let j = r.createContext(new class {
   observe(e) {
     var t;
     if (null == this.resizeObserver && (this.resizeObserver = new this.window.ResizeObserver(this.handleResize)), null == this.mutationObserver) {
@@ -52,10 +52,10 @@ let j = i.createContext(new class {
     }
     let n = this.zones.get(e);
     null != n && this.resizeObserver.unobserve(n.element);
-    let r = e.getBoundingClientRect();
+    let i = e.getBoundingClientRect();
     this.zones.set(e, {
       element: e,
-      zone: C(null != (t = null == n ? void 0 : n.zone.name) ? t : (0, a.Z)(), r)
+      zone: C(null != (t = null == n ? void 0 : n.zone.name) ? t : (0, a.Z)(), i)
     }), this.elements.add(e), this.resizeObserver.observe(e), this.updateZones()
   }
   unobserve(e) {
@@ -90,11 +90,11 @@ let j = i.createContext(new class {
     }), x(this, "globalUpdate", c()(() => {
       let e = !1;
       for (let [t, n] of this.zones) {
-        let r = t.getBoundingClientRect(),
-          i = C(n.zone.name, r);
-        (0, d.Z)(i, n.zone) || (e = !0, n = {
+        let i = t.getBoundingClientRect(),
+          r = C(n.zone.name, i);
+        (0, d.Z)(r, n.zone) || (e = !0, n = {
           element: n.element,
-          zone: i
+          zone: r
         }, this.zones.set(t, n))
       }
       e && this.updateZones()
@@ -111,10 +111,10 @@ function w(e) {
     className: n,
     style: o,
     children: s
-  } = e, c = i.useContext(j), a = (0, u.e7)([v.ZP], () => v.ZP.hasRenderDebugMode(f.G.ClickZones)), d = (0, u.e7)([m.default], () => m.default.disableClickableRegions), [{
+  } = e, c = r.useContext(j), a = (0, u.e7)([v.ZP], () => v.ZP.hasRenderDebugMode(f.G.ClickZones)), d = (0, u.e7)([m.default], () => m.default.disableClickableRegions), [{
     refHandler: h,
     setObserve: p
-  }] = i.useState(() => {
+  }] = r.useState(() => {
     let e = null;
     return {
       setObserve(t) {
@@ -125,9 +125,9 @@ function w(e) {
       }
     }
   });
-  return i.useLayoutEffect(() => {
+  return r.useLayoutEffect(() => {
     d ? p(!1) : p(t)
-  }, [t, p, d]), (0, r.jsx)("div", {
+  }, [t, p, d]), (0, i.jsx)("div", {
     ref: h,
     style: o,
     className: l()(n, O.clickable, a && O.debugMode),

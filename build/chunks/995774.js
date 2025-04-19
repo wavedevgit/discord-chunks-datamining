@@ -24,7 +24,7 @@ function u(e) {
 function d(e, t, n, r) {
   var i, a, o;
   let s;
-  return s = r ? e ? c.t.i9DXqK : c.t["Z/l+qq"] : e ? c.t.CLuzw8 : c.t.PirBBA, c.NW.formatToPlainString(s, {
+  return s = r ? e ? c.t.i9DXqK : c.t["Z/l+qq"] : e ? c.t.CLuzw8 : c.t.PirBBA, c.intl.formatToPlainString(s, {
     reactions: t,
     emojiName: null != (o = null == (a = u(n)) || null == (i = a.replace(/[:_]/g, " ")) ? void 0 : i.trim()) ? o : ""
   })

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(192379),
   i = n(442837),
-  s = n(80932),
-  l = n(110924),
+  l = n(80932),
+  s = n(110924),
   a = n(471613),
   o = n(889564);
 let c = [];
@@ -18,10 +18,10 @@ function d(e) {
   } = (0, i.cj)([a.Z], () => ({
     revision: a.Z.getEmojiRevision(e),
     emojis: a.Z.getEmojis(e)
-  })), d = (0, l.Z)(t);
+  })), d = (0, s.Z)(t);
   return r.useEffect(() => {
-    (0, s.OQ)(e)
+    (0, l.OQ)(e)
   }, [e]), r.useEffect(() => {
-    null != d && d < t && (0, s.OQ)(e)
+    null != d && d < t && (0, l.OQ)(e)
   }, [t, d, e]), r.useMemo(() => null == n ? c : n.filter(t => (0, o.Kt)(t, e)), [n, e])
 }

@@ -64,7 +64,7 @@ function f(e) {
       children: [(0, r.jsx)(s.x, {
         variant: "text-sm/medium",
         color: "header-secondary",
-        children: u.NW.format(u.t.sOaT2t, {
+        children: u.intl.format(u.t.sOaT2t, {
           applicationName: t.name,
           guildName: p.name
         })
@@ -76,7 +76,7 @@ function f(e) {
       children: [(0, r.jsx)(s.x, {
         variant: "text-sm/medium",
         color: "header-secondary",
-        children: u.NW.format(u.t.fsOkFx, {
+        children: u.intl.format(u.t.fsOkFx, {
           applicationName: t.name
         })
       }), (0, r.jsx)("ul", {

@@ -7,8 +7,8 @@ var i = n(200651),
   r = n(192379),
   s = n(512969),
   o = n(749210),
-  a = n(287734),
-  l = n(765717),
+  l = n(287734),
+  a = n(765717),
   c = n(893607),
   d = n(703656),
   u = n(981631);
@@ -40,7 +40,7 @@ class h extends r.Component {
         messageId: i
       }
     }(e);
-    (0, c.Ss)(t) && (0, c.cq)(n) ? (o.Z.selectGuild(t), a.default.selectChannel({
+    (0, c.Ss)(t) && (0, c.cq)(n) ? (o.Z.selectGuild(t), l.default.selectChannel({
       guildId: t,
       channelId: n,
       messageId: i
@@ -51,12 +51,12 @@ class h extends r.Component {
   }
 }
 let p = () => (0, i.jsxs)(s.rs, {
-  children: [(0, i.jsx)(l.Z, {
+  children: [(0, i.jsx)(a.Z, {
     path: u.Z5c.CHANNEL(c.Hw.guildId(), c.Hw.channelId({
       optional: !0
     }), ":messageId?"),
     component: h
-  }), (0, i.jsx)(l.Z, {
+  }), (0, i.jsx)(a.Z, {
     component: h
   })]
 })

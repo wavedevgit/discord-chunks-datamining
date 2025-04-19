@@ -13,11 +13,11 @@ var r = n(442837),
 function u(e, t) {
   return (0, r.e7)([l.Z], () => l.Z.hasJoined(e.id)) ? (0, i.jsx)(a.sNh, {
     id: "leave-thread",
-    label: e.isForumPost() ? d.NW.string(d.t["2LsZdX"]) : d.NW.string(d.t["fa/84u"]),
+    label: e.isForumPost() ? d.intl.string(d.t["2LsZdX"]) : d.intl.string(d.t["fa/84u"]),
     action: () => o.Z.leaveThread(e, t)
   }) : (0, i.jsx)(a.sNh, {
     id: "join-thread",
-    label: e.isForumPost() ? d.NW.string(d.t.ihLPiI) : d.NW.string(d.t["10kukZ"]),
+    label: e.isForumPost() ? d.intl.string(d.t.ihLPiI) : d.intl.string(d.t["10kukZ"]),
     action: () => o.Z.joinThread(e, t)
   })
 }

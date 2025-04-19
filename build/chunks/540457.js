@@ -1,18 +1,18 @@
 /** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  A: () => l
+  A: () => s
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  s = n(441012);
+  l = n(441012);
 
-function l(e) {
+function s(e) {
   let {
     text: t,
     tooltipText: n,
-    onClick: l
+    onClick: s
   } = e;
   return (0, r.jsx)(i.ua7, {
     text: n,
@@ -37,12 +37,12 @@ function l(e) {
         }
         return e
       }({}, e), a = a = {
-        className: s.container,
-        onClick: l,
+        className: l.container,
+        onClick: s,
         children: [(0, r.jsx)(i.qJs, {
           size: "md",
           color: "currentColor",
-          className: s.icon
+          className: l.icon
         }), (0, r.jsx)(i.Text, {
           color: "interactive-active",
           variant: "text-md/semibold",

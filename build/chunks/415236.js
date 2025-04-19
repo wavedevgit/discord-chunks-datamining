@@ -3,10 +3,10 @@
 n.d(t, {
   Z: () => a
 }), n(953529);
-var r = n(200651);
+var i = n(200651);
 n(192379);
-var i = n(481060),
-  l = n(600164),
+var l = n(481060),
+  r = n(600164),
   s = n(332067);
 
 function a(e) {
@@ -18,23 +18,23 @@ function a(e) {
     onChange: c,
     value: d
   } = e;
-  return (0, r.jsxs)("div", {
+  return (0, i.jsxs)("div", {
     className: s.cardContent,
-    children: [(0, r.jsxs)(l.Z, {
-      justify: l.Z.Justify.BETWEEN,
-      align: l.Z.Align.CENTER,
-      children: [n, (0, r.jsx)(l.Z.Child, {
+    children: [(0, i.jsxs)(r.Z, {
+      justify: r.Z.Justify.BETWEEN,
+      align: r.Z.Align.CENTER,
+      children: [n, (0, i.jsx)(r.Z.Child, {
         grow: 1,
-        children: (0, r.jsx)(i.Text, {
+        children: (0, i.jsx)(l.Text, {
           variant: "text-md/semibold",
           children: o
         })
-      }), null != c && null != d && (0, r.jsx)(i.rsf, {
+      }), null != c && null != d && (0, i.jsx)(l.rsf, {
         id: a,
         checked: d,
         onChange: c
       })]
-    }), (0, r.jsx)(i.Text, {
+    }), (0, i.jsx)(l.Text, {
       variant: "text-xs/normal",
       color: "text-normal",
       className: s.cardDescription,

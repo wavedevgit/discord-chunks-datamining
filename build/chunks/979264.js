@@ -48,7 +48,7 @@ let g = i.memo(function(e) {
     } = e;
     return null == t ? null : (0, r.jsx)("img", {
       src: t,
-      alt: _.NW.formatToPlainString(_.t.PShNVV, {
+      alt: _.intl.formatToPlainString(_.t.PShNVV, {
         tag: n
       }),
       className: o()(p.badge, i),
@@ -111,10 +111,10 @@ let g = i.memo(function(e) {
     } = e, O = (0, s.e7)([u.default], () => u.default.getUser(i), [i]), I = null != (t = null == O ? void 0 : O.primaryGuild) ? t : n, {
       tag: S,
       badge: T,
-      guildId: N
+      guildId: A
     } = (0, d.Pb)(I);
-    return (0, d.p0)(i, a) && null != N ? b ? (0, r.jsx)(E, {
-      guildId: N,
+    return (0, d.p0)(i, a) && null != A ? b ? (0, r.jsx)(E, {
+      guildId: A,
       clanTag: S,
       clanBadge: T,
       className: o()(p.noTooltip, l),
@@ -123,12 +123,12 @@ let g = i.memo(function(e) {
       badgeSize: g,
       inline: y
     }) : (0, r.jsx)(c.Z, {
-      guildId: N,
+      guildId: A,
       onRequestOpen: v,
       children: e => (0, r.jsx)("span", {
         className: f,
         children: (0, r.jsx)(E, m({
-          guildId: N,
+          guildId: A,
           clanTag: S,
           clanBadge: T,
           className: l,

@@ -79,16 +79,16 @@ function T(e, t, n) {
   }
 }
 
-function N(e) {
+function A(e) {
   let {
     joinRequest: t
   } = e;
   G(t)
 }
-let A = !1;
+let N = !1;
 
 function C() {
-  A = !0
+  N = !0
 }
 
 function R(e) {
@@ -98,13 +98,13 @@ function R(e) {
     total: r,
     guildId: i
   } = e;
-  A = !1, t === _.wB.SUBMITTED && S(i, r), n.forEach(e => {
+  N = !1, t === _.wB.SUBMITTED && S(i, r), n.forEach(e => {
     G(e)
   })
 }
 
 function P() {
-  A = !1
+  N = !1
 }
 let w = e => "guild-join-request=".concat(e),
   D = (e, t) => "guild-".concat(e, "-").concat(t);
@@ -168,16 +168,16 @@ function H(e) {
   } = e;
   n !== Z[t] && (Z[t] = n)
 }
-let W = {};
+let Y = {};
 
-function Y(e) {
+function W(e) {
   var t;
   let {
     guildId: n,
     sortOrder: r
   } = e;
-  if (r === W[n]) return;
-  W[n] = r;
+  if (r === Y[n]) return;
+  Y[n] = r;
   let i = null != (t = Z[n]) ? t : _.wB.SUBMITTED;
   "REVIEW_APPLICATION" !== i && ((0, f.bk)(i) && k.clear(), (0, f.Nd)(i) && M.clear())
 }
@@ -204,7 +204,7 @@ class X extends(r = o.ZP.Store) {
     return O[e]
   }
   isFetching() {
-    return A
+    return N
   }
   hasFetched(e) {
     if (!v.has(e)) return !1;
@@ -220,7 +220,7 @@ class X extends(r = o.ZP.Store) {
   }
   getSelectedSortOrder(e) {
     var t;
-    return null != (t = W[e]) ? t : _.Nw.TIMESTAMP_DESC
+    return null != (t = Y[e]) ? t : _.Nw.TIMESTAMP_DESC
   }
   getSelectedGuildJoinRequest(e) {
     let t = K[e];
@@ -229,7 +229,7 @@ class X extends(r = o.ZP.Store) {
 }
 m(X, "displayName", "GuildJoinRequestStoreV2");
 let J = new X(l.Z, {
-  GUILD_JOIN_REQUEST_BY_ID_FETCH_SUCCESS: N,
+  GUILD_JOIN_REQUEST_BY_ID_FETCH_SUCCESS: A,
   GUILD_JOIN_REQUESTS_FETCH_SUCCESS: R,
   GUILD_JOIN_REQUESTS_FETCH_START: C,
   GUILD_JOIN_REQUESTS_FETCH_FAILURE: P,
@@ -238,6 +238,6 @@ let J = new X(l.Z, {
   GUILD_JOIN_REQUEST_UPDATE: B,
   GUILD_JOIN_REQUEST_DELETE: F,
   GUILD_JOIN_REQUESTS_SET_APPLICATION_TAB: H,
-  GUILD_JOIN_REQUESTS_SET_SORT_ORDER: Y,
+  GUILD_JOIN_REQUESTS_SET_SORT_ORDER: W,
   GUILD_JOIN_REQUESTS_SET_SELECTED: z
 })

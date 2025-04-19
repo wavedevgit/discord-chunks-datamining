@@ -1,7 +1,7 @@
 /** Chunk was on 99922 **/
 t.d(n, {
-  IG: () => p,
-  JK: () => N,
+  IG: () => N,
+  JK: () => p,
   ZA: () => u,
   _m: () => b,
   ft: () => L,
@@ -60,14 +60,14 @@ function b(e, n, t) {
   }, c.ZB.PresetNothing)
 }
 
-function N(e, n) {
+function p(e, n) {
   a.Z.updateChannelOverrideSettings(e, n, {
     message_notifications: l.bL.NULL,
     flags: (0, r.YF)(d.ZP.getChannelIdFlags(e, n))
   }, c.ZB.PresetDefault)
 }
 
-function p(e, n, t) {
+function N(e, n, t) {
   let i = d.ZP.getChannelIdFlags(e, n);
   a.Z.updateChannelOverrideSettings(e, n, {
     flags: (0, r.pq)(i, t === g.i.ALL_MESSAGES ? h.ic.UNREADS_ALL_MESSAGES : h.ic.UNREADS_ONLY_MENTIONS)

@@ -18,7 +18,7 @@ function a(n) {
     closeLabel: h,
     onConfirm: x,
     iconVariant: u = "warning"
-  } = n, [g, k] = t.useState(!1), z = null != a ? a : c.NW.string(c.t.HMrgcn);
+  } = n, [g, k] = t.useState(!1), z = null != a ? a : c.intl.string(c.t.HMrgcn);
   return (0, i.jsxs)(s.Y0X, {
     size: s.CgR.DYNAMIC,
     transitionState: e,

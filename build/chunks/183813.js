@@ -33,40 +33,40 @@ function S(e) {
   } = (0, h.JL)(), {
     setSelectedGiftingPromotionReward: y,
     selectedGiftingPromotionReward: I,
-    claimableRewards: N
-  } = (0, x.wD)(), b = (0, o.e7)([p.default], () => p.default.getCurrentUser());
+    claimableRewards: b
+  } = (0, x.wD)(), T = (0, o.e7)([p.default], () => p.default.getCurrentUser());
   i.useEffect(() => {
-    let e = null != N && N.length > 0;
-    null == I && e && y(N[0])
-  }, [N, I, y]);
-  let T = e => {
+    let e = null != b && b.length > 0;
+    null == I && e && y(b[0])
+  }, [b, I, y]);
+  let P = e => {
       let t = e.skuId;
       return (0, r.jsx)(d.Z, {
         skuId: t,
-        price: L.NW.string(L.t.QQsaCQ),
+        price: L.intl.string(L.t.QQsaCQ),
         isSelected: t === (null == I ? void 0 : I.skuId),
         onSelect: () => y(e),
         className: g.giftSelectItem
       }, t)
     },
-    P = (0, c.Q3)("PremiumPaymentFreeSKUSelectStep");
+    M = (0, c.Q3)("PremiumPaymentFreeSKUSelectStep");
   s()(null != l, "Expected plan to selected"), s()(null != S, "Expected selectedSkuId"), s()(null != E, "Step should be set");
-  let M = null == N ? void 0 : N.map(e => T(e)),
-    O = null != I && null != b ? (0, r.jsx)(C.Z, {
+  let O = null == b ? void 0 : b.map(e => P(e)),
+    Z = null != I && null != T ? (0, r.jsx)(C.Z, {
       avatarDecorationOverride: {
         asset: I.assetId
       },
-      user: b,
+      user: T,
       guildId: null,
       avatarSize: a.EFr.SIZE_152
     }) : null,
-    Z = (0, r.jsx)(j.O3, {
+    v = (0, r.jsx)(j.O3, {
       children: (0, r.jsx)(a.mzw, {
         className: g.modalFooter,
         children: (0, r.jsx)(u.y, {
           onStepChange: e => {
-            null != b && null != I && _.default.track(m.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
-              user_id: b.id,
+            null != T && null != I && _.default.track(m.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
+              user_id: T.id,
               reward_sku_id: I.skuId
             }), t(e)
           },
@@ -78,19 +78,19 @@ function S(e) {
         })
       })
     }),
-    v = (0, r.jsx)(a.X6q, {
+    N = (0, r.jsx)(a.X6q, {
       variant: "heading-lg/bold",
       color: "header-primary",
-      children: L.NW.string(L.t["Rp0+ZG"])
+      children: L.intl.string(L.t["Rp0+ZG"])
     });
-  return P ? (0, r.jsxs)("div", {
+  return M ? (0, r.jsxs)("div", {
     className: g.container,
     children: [(0, r.jsx)(a.xBx, {
       children: (0, r.jsxs)(a.Kqy, {
         direction: "horizontal",
         justify: "space-between",
         align: "center",
-        children: [v, (0, r.jsx)(a.olH, {
+        children: [N, (0, r.jsx)(a.olH, {
           onClick: n
         })]
       })
@@ -101,29 +101,29 @@ function S(e) {
         padding: {
           top: 24
         },
-        children: [O, (0, r.jsx)(a.Kqy, {
+        children: [Z, (0, r.jsx)(a.Kqy, {
           gap: 8,
           padding: {
             top: 12
           },
-          children: M
+          children: O
         })]
       })
-    }), Z]
+    }), v]
   }) : (0, r.jsxs)("div", {
     className: g.stepBodySkuSelect,
     children: [(0, r.jsxs)("div", {
       className: g.bodyColumnLeft,
       children: [(0, r.jsx)("div", {
         className: g.header,
-        children: v
-      }), M]
+        children: N
+      }), O]
     }), (0, r.jsx)(a.olH, {
       onClick: n,
       className: g.closeButton
     }), (0, r.jsx)("div", {
       className: g.bodyColumnRight,
-      children: O
-    }), Z]
+      children: Z
+    }), v]
   })
 }

@@ -5,16 +5,16 @@ n.d(t, {
 var r = n(200651),
   o = n(192379),
   a = n(442837),
-  c = n(481060),
-  i = n(14263),
+  i = n(481060),
+  c = n(14263),
   s = n(650774),
   l = n(430824),
   u = n(795338),
   d = n(17622),
   m = n(279604),
   b = n(535396),
-  p = n(680278),
-  f = n(388032),
+  f = n(680278),
+  p = n(388032),
   x = n(340114);
 
 function g(e) {
@@ -43,13 +43,13 @@ function g(e) {
     isLoading: _
   } = (0, m.ZP)(g, j), {
     onClose: h
-  } = k, N = o.useCallback(e => {
+  } = k, I = o.useCallback(e => {
     v(e).then(() => {
       null == h || h()
     })
-  }, [h, v]), I = function(e, t) {
+  }, [h, v]), C = function(e, t) {
     let n = (0, a.e7)([s.Z], () => s.Z.getMemberCount(e)),
-      u = (0, i.Z)(e),
+      u = (0, c.Z)(e),
       d = (0, a.e7)([l.Z], () => {
         var t;
         return (null == (t = l.Z.getGuild(e)) ? void 0 : t.vanityURLCode) != null
@@ -63,24 +63,24 @@ function g(e) {
       }, 0), [e, t.skuId, u]);
     return o.useMemo(() => {
       let e;
-      return e = t.skuId === b.If ? m > 0 ? f.NW.formatToPlainString(p.Z["4jSvr6"], {
+      return e = t.skuId === b.If ? m > 0 ? p.intl.formatToPlainString(f.default["4jSvr6"], {
         perk: t.title,
         memberCount: m
-      }) : f.NW.formatToPlainString(p.Z.cavtEh, {
+      }) : p.intl.formatToPlainString(f.default.cavtEh, {
         perk: t.title
-      }) : f.NW.formatToPlainString(p.Z["4jSvr6"], {
+      }) : p.intl.formatToPlainString(f.default["4jSvr6"], {
         perk: t.title,
         memberCount: n
       }), d && t.skuId === b.XW && (e = (0, r.jsxs)(r.Fragment, {
-        children: [e, (0, r.jsx)(c.Text, {
+        children: [e, (0, r.jsx)(i.Text, {
           color: "text-danger",
           variant: "text-sm/semibold",
-          children: f.NW.string(p.Z.M4XL5u)
+          children: p.intl.string(f.default.M4XL5u)
         })]
       })), e
     }, [t, m, n, d])
   }(g, j);
-  return (0, r.jsxs)(c.Y0X, (t = function(e) {
+  return (0, r.jsxs)(i.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -99,27 +99,27 @@ function g(e) {
     return e
   }({
     className: x.modal,
-    size: j.type === b.Us.LEVEL ? c.CgR.MEDIUM : c.CgR.SMALL
+    size: j.type === b.Us.LEVEL ? i.CgR.MEDIUM : i.CgR.SMALL
   }, k), n = n = {
-    children: [(0, r.jsxs)(c.hzk, {
+    children: [(0, r.jsxs)(i.hzk, {
       className: x.modalContentContainer,
       scrollbarType: "none",
       children: [(0, r.jsxs)("div", {
         className: x.headerContainer,
         children: [(0, r.jsxs)("div", {
           className: x.header,
-          children: [(0, r.jsx)(c.X6q, {
+          children: [(0, r.jsx)(i.X6q, {
             variant: "heading-md/semibold",
-            children: f.NW.formatToPlainString(p.Z.iEBw1N, {
+            children: p.intl.formatToPlainString(f.default.iEBw1N, {
               perk: j.title
             })
-          }), (0, r.jsx)(c.Text, {
+          }), (0, r.jsx)(i.Text, {
             variant: "text-sm/medium",
-            children: f.NW.formatToPlainString(p.Z["7o0K+/"], {
+            children: p.intl.formatToPlainString(f.default["7o0K+/"], {
               perk: j.title
             })
           })]
-        }), (0, r.jsx)(c.olH, {
+        }), (0, r.jsx)(i.olH, {
           onClick: k.onClose
         })]
       }), (() => {
@@ -136,35 +136,35 @@ function g(e) {
         }
       })(), (0, r.jsxs)("div", {
         className: x.warningContainer,
-        children: [(0, r.jsx)(c.Text, {
+        children: [(0, r.jsx)(i.Text, {
           color: "text-danger",
           variant: "eyebrow",
-          children: f.NW.string(p.Z.OVt5CA)
-        }), (0, r.jsx)(c.Text, {
+          children: p.intl.string(f.default.OVt5CA)
+        }), (0, r.jsx)(i.Text, {
           className: x.warningText,
           tag: "span",
           variant: "text-sm/medium",
-          children: I
+          children: C
         })]
-      }), null != O && (0, r.jsx)(c.Text, {
+      }), null != O && (0, r.jsx)(i.Text, {
         className: x.errorText,
         color: "text-danger",
         variant: "text-sm/semibold",
         children: O
       })]
-    }), (0, r.jsxs)(c.mzw, {
+    }), (0, r.jsxs)(i.mzw, {
       className: x.footer,
-      children: [(0, r.jsx)(c.zxk, {
+      children: [(0, r.jsx)(i.zxk, {
         submitting: _,
-        color: c.Ttl.RED,
+        color: i.Ttl.RED,
         className: x.button,
-        onClick: N,
-        children: f.NW.string(p.Z.PYPdl5)
-      }), (0, r.jsx)(c.zxk, {
-        color: c.Ttl.PRIMARY,
+        onClick: I,
+        children: p.intl.string(f.default.PYPdl5)
+      }), (0, r.jsx)(i.zxk, {
+        color: i.Ttl.PRIMARY,
         className: x.button,
         onClick: k.onClose,
-        children: f.NW.string(f.t["ETE/oK"])
+        children: p.intl.string(p.t["ETE/oK"])
       })]
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

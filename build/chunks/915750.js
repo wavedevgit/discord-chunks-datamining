@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  B5: () => N,
+  B5: () => A,
   PI: () => O,
   WD: () => R,
   aM: () => P,
@@ -165,11 +165,11 @@ class T {
     }), this.id = (0, a.Z)(), this.adDecisionData = n, this.questContent = t, this.questContentPosition = s, this.minViewTimeSeconds = d, this.minViewportPercentage = O, this.quests = Array.isArray(e) ? e : [e], this.trackGuildAndChannelMetadata = i, this.triggeredByStatusChange = r, this.questContentRowIndex = l
   }
 }
-let N = (e, t) => {
+let A = (e, t) => {
     let n = Array.isArray(e) ? e.sort().map(e => e.id).join("_") : e.id;
     return "".concat(n, "_").concat(t)
   },
-  A = e => {
+  N = e => {
     let t = Array.isArray(e) ? null : (0, u.uk)(e),
       n = (0, l.Z)(t);
     return t !== n
@@ -193,7 +193,7 @@ function w(e) {
     focused: a,
     reference: o,
     focusedChanged: l
-  } = e, c = A(e.questOrQuests), u = (0, d.KZ)(e.questContent), f = i.useRef(null);
+  } = e, c = N(e.questOrQuests), u = (0, d.KZ)(e.questContent), f = i.useRef(null);
   return (0, s.ZP)(() => () => {
     null != f.current && f.current.stop()
   }), i.useEffect(() => {

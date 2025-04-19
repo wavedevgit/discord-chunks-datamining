@@ -14,13 +14,13 @@ var o = n(834345),
 function u() {
   return [{
     icon: i.e,
-    text: s.NW.string(s.t.OYu45e)
+    text: s.intl.string(s.t.OYu45e)
   }, {
     icon: l.k,
-    text: s.NW.string(s.t["5a8g/f"])
+    text: s.intl.string(s.t["5a8g/f"])
   }, {
     icon: o.N,
-    text: s.NW.string(s.t.k6sOl5)
+    text: s.intl.string(s.t.k6sOl5)
   }].map((t, e) => {
     let {
       icon: n,
@@ -81,7 +81,7 @@ let f = function(t) {
       children: (0, r.jsx)(c.X6q, {
         variant: "heading-xl/semibold",
         className: a.heading,
-        children: s.NW.string(s.t.WkhDVF)
+        children: s.intl.string(s.t.WkhDVF)
       })
     }), (0, r.jsxs)(c.hzk, {
       scrollbarType: "none",
@@ -89,7 +89,7 @@ let f = function(t) {
         variant: "text-sm/normal",
         color: "text-secondary",
         className: a.contentText,
-        children: s.NW.string(s.t.wN9nIC)
+        children: s.intl.string(s.t.wN9nIC)
       }), (0, r.jsx)("div", {
         className: a.bulletPointsContainer,
         children: (0, r.jsx)(u, {})
@@ -99,7 +99,7 @@ let f = function(t) {
       children: (0, r.jsx)(c.zxk, {
         fullWidth: !0,
         onClick: o,
-        children: s.NW.string(s.t.RscU7O)
+        children: s.intl.string(s.t.RscU7O)
       })
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(t, e) {

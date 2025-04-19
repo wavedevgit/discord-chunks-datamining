@@ -1,6 +1,6 @@
 /** Chunk was on 5863 **/
 n.d(t, {
-  f: () => S
+  f: () => N
 }), n(388685);
 var i = n(200651),
   s = n(192379),
@@ -15,11 +15,11 @@ var i = n(200651),
   g = n(699516),
   m = n(594174),
   x = n(621600),
-  N = n(981631),
-  p = n(388032),
-  v = n(529651);
+  p = n(981631),
+  v = n(388032),
+  j = n(529651);
 
-function j(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,7 +27,7 @@ function j(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class S extends s.PureComponent {
+class N extends s.PureComponent {
   highlight() {
     this.setState({
       highlight: !0
@@ -58,9 +58,9 @@ class S extends s.PureComponent {
       guildMessageNotifications: r,
       checkboxColor: a
     } = this.props, o = t === e;
-    (null == t || t === N.bL.NULL) && e === r && (o = !0);
+    (null == t || t === p.bL.NULL) && e === r && (o = !0);
     let d = l.XZJ.Types.INVERTED;
-    return (s || t === N.bL.NULL || null == t) && (d = l.XZJ.Types.GHOST), (0, i.jsx)(l.XZJ, {
+    return (s || t === p.bL.NULL || null == t) && (d = l.XZJ.Types.GHOST), (0, i.jsx)(l.XZJ, {
       value: !n && o,
       disabled: n,
       shape: l.XZJ.Shapes.ROUND,
@@ -75,28 +75,28 @@ class S extends s.PureComponent {
     } = this.props;
     null != n.parent_id && (e = u.Z.getChannel(n.parent_id));
     let s = (0, d.KS)(n);
-    if (n.type === N.d4z.GUILD_CATEGORY && null != n.guild_id && "" !== n.guild_id) {
+    if (n.type === p.d4z.GUILD_CATEGORY && null != n.guild_id && "" !== n.guild_id) {
       let e = h.Z.getCategories(n.guild_id);
-      t = p.NW.formatToPlainString(p.t["2KzH8/"], {
+      t = v.intl.formatToPlainString(v.t["2KzH8/"], {
         num: null != e[n.id] ? e[n.id].length : 0
       })
-    } else t = null != e ? p.NW.formatToPlainString(p.t.L1zJgY, {
+    } else t = null != e ? v.intl.formatToPlainString(v.t.L1zJgY, {
       categoryName: (0, o.F6)(e, m.default, g.Z)
-    }) : p.NW.string(p.t.uIzfCA);
+    }) : v.intl.string(v.t.uIzfCA);
     return (0, i.jsxs)(c.Z, {
       grow: 1,
-      className: v.nameContainer,
+      className: j.nameContainer,
       children: [null != s ? (0, i.jsx)(s, {
-        className: v.icon
+        className: j.icon
       }) : null, (0, i.jsxs)("div", {
-        className: v.channelNameContainer,
+        className: j.channelNameContainer,
         children: [(0, i.jsx)(l.Text, {
           variant: "text-md/semibold",
-          className: v.channelName,
+          className: j.channelName,
           children: (0, o.F6)(n, m.default, g.Z)
         }), (0, i.jsx)(l.Text, {
           variant: "text-xs/normal",
-          className: v.channelNameByline,
+          className: j.channelNameByline,
           children: t
         })]
       })]
@@ -110,32 +110,32 @@ class S extends s.PureComponent {
     return (0, i.jsxs)(c.Z, {
       grow: 0,
       shrink: 0,
-      className: v.checkboxGroup,
+      className: j.checkboxGroup,
       justify: c.Z.Justify.AROUND,
       align: c.Z.Align.CENTER,
       children: [(0, i.jsx)(c.Z.Child, {
         wrap: !0,
         grow: 0,
         shrink: 0,
-        className: t ? v.checkboxContainerMuted : v.checkboxContainer,
-        children: this.renderMessageNotificationsRadioOption(N.bL.ALL_MESSAGES)
+        className: t ? j.checkboxContainerMuted : j.checkboxContainer,
+        children: this.renderMessageNotificationsRadioOption(p.bL.ALL_MESSAGES)
       }), (0, i.jsx)(c.Z.Child, {
         wrap: !0,
         grow: 0,
         shrink: 0,
-        className: t ? v.checkboxContainerMuted : v.checkboxContainer,
-        children: this.renderMessageNotificationsRadioOption(N.bL.ONLY_MENTIONS)
+        className: t ? j.checkboxContainerMuted : j.checkboxContainer,
+        children: this.renderMessageNotificationsRadioOption(p.bL.ONLY_MENTIONS)
       }), (0, i.jsx)(c.Z.Child, {
         wrap: !0,
         grow: 0,
         shrink: 0,
-        className: t ? v.checkboxContainerMuted : v.checkboxContainer,
-        children: this.renderMessageNotificationsRadioOption(N.bL.NO_MESSAGES)
+        className: t ? j.checkboxContainerMuted : j.checkboxContainer,
+        children: this.renderMessageNotificationsRadioOption(p.bL.NO_MESSAGES)
       }), (0, i.jsx)(c.Z.Child, {
         wrap: !0,
         grow: 0,
         shrink: 0,
-        className: v.checkboxMute,
+        className: j.checkboxMute,
         children: (0, i.jsx)(l.XZJ, {
           value: e,
           shape: l.XZJ.Shapes.BOX,
@@ -153,31 +153,31 @@ class S extends s.PureComponent {
       ref: this.contentDomRef,
       outline: !0,
       editable: !0,
-      className: e ? v.overrideHighlight : v.override,
+      className: e ? j.overrideHighlight : j.override,
       children: [this.renderName(), this.renderOptions(), (0, i.jsx)(a.Z, {
-        className: v.removeOverride,
+        className: j.removeOverride,
         onClick: this.handleDelete
       })]
     })
   }
   constructor(...e) {
-    super(...e), j(this, "_timeout", void 0), j(this, "contentDomRef", s.createRef()), j(this, "state", {
+    super(...e), S(this, "_timeout", void 0), S(this, "contentDomRef", s.createRef()), S(this, "state", {
       highlight: !1
-    }), j(this, "unhighlight", () => {
+    }), S(this, "unhighlight", () => {
       this.setState({
         highlight: !1
       })
-    }), j(this, "handleMute", (e, t) => {
+    }), S(this, "handleMute", (e, t) => {
       let {
         messageNotifications: n
       } = this.props;
-      this.setMessageNotification(null != n ? n : N.bL.NULL, t, x.UE.muted(t))
-    }), j(this, "handleDelete", () => {
+      this.setMessageNotification(null != n ? n : p.bL.NULL, t, x.UE.muted(t))
+    }), S(this, "handleDelete", () => {
       let {
         onDelete: e,
         channel: t
       } = this.props;
-      this.setMessageNotification(N.bL.NULL, !1, x.ZB.OverrideDeleted), null != e && e(t.id)
+      this.setMessageNotification(p.bL.NULL, !1, x.ZB.OverrideDeleted), null != e && e(t.id)
     })
   }
 }

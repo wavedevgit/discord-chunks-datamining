@@ -33,7 +33,7 @@ function O(e) {
       [b.fileHidden]: e
     }),
     url: t.url,
-    fileName: null != r ? r : f.NW.string(f.t.GnuJ5u),
+    fileName: null != r ? r : f.intl.string(f.t.GnuJ5u),
     fileSize: null != i ? i : 0,
     renderAdjacentContent: h
   });

@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(695103),
   S = n(4912),
   T = n(630388),
-  N = n(669079),
-  A = n(987209),
+  A = n(669079),
+  N = n(987209),
   C = n(563132),
   R = n(45572),
   P = n(435020),
@@ -70,15 +70,15 @@ function j(e) {
     skusById: V,
     skuPricePreviewsById: Z,
     selectedSkuId: H,
-    isEmbeddedIAP: W,
-    purchaseType: Y,
+    isEmbeddedIAP: Y,
+    purchaseType: W,
     purchasePreviewError: K,
     devShelfFetchState: z,
     setPurchasePreviewError: q
   } = (0, C.JL)(), {
     isGift: Q,
     giftRecipient: X
-  } = (0, A.wD)(), J = Q && (0, N.pO)(X), {
+  } = (0, N.wD)(), J = Q && (0, A.pO)(X), {
     defaultPaymentSourceId: $,
     hasFetchedPaymentSources: ee
   } = (0, l.cj)([v.Z], () => ({
@@ -112,24 +112,24 @@ function j(e) {
       iconSize: f.Z.Sizes.SMALL,
       color: f.Z.Colors.WARNING,
       className: M.errorBlock,
-      children: x.NW.string(x.t.OvMyMT)
+      children: x.intl.string(x.t.OvMyMT)
     }, "TEST_MODE") : null, (0, T.yE)(j.flags, L.udG.EMBEDDED) && z === h.O.ERROR ? (0, r.jsx)(f.Z, {
       icon: (0, c.GSL)(S.Z),
       iconSize: f.Z.Sizes.SMALL,
       color: f.Z.Colors.ERROR,
       className: M.errorBlock,
-      children: x.NW.string(x.t.tAmECg)
+      children: x.intl.string(x.t.tAmECg)
     }, "DEV_SHELF_ERROR") : null, (0, r.jsx)(k, {
       application: j,
       sku: et,
-      isEmbeddedIAP: W
+      isEmbeddedIAP: Y
     }), J && (0, r.jsx)(w.Z, {
       sku: et
     }), null != X ? (0, r.jsx)(E.s, {
       giftRecipient: X
     }) : null, (0, r.jsx)(c.vwX, {
       tag: c.RB0.H5,
-      children: Q ? x.NW.string(x.t.PEjaCw) : x.NW.string(x.t.sail9P)
+      children: Q ? x.intl.string(x.t.PEjaCw) : x.intl.string(x.t.sail9P)
     }), null != ei ? (0, r.jsx)(D.B, {
       sku: et,
       skuPricePreview: ei
@@ -143,7 +143,7 @@ function j(e) {
       className: M.paymentSourceWrapper,
       children: [(0, r.jsx)(c.vwX, {
         tag: c.RB0.H5,
-        children: x.NW.string(x.t.mmDvV1)
+        children: x.intl.string(x.t.mmDvV1)
       }), (0, r.jsx)(_.Z, {
         paymentSources: Object.values(G),
         selectedPaymentSourceId: B,
@@ -161,15 +161,15 @@ function j(e) {
         disabled: el,
         subscriptionPlan: null,
         finePrintClassname: M.fineprint,
-        purchaseType: Y,
+        purchaseType: W,
         isGift: Q,
-        checkboxLabel: et.productLine === L.POd.COLLECTIBLES ? x.NW.format(x.t["1EdAlZ"], {
+        checkboxLabel: et.productLine === L.POd.COLLECTIBLES ? x.intl.format(x.t["1EdAlZ"], {
           paidURL: L.EYA.PAID_TERMS
         }) : void 0,
         finePrint: (0, r.jsx)(d.Z, {
           paymentSourceType: eu,
-          isEmbeddedIAP: W,
-          purchaseType: Y,
+          isEmbeddedIAP: Y,
+          purchaseType: W,
           productLine: et.productLine,
           isGift: Q
         })

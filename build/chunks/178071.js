@@ -69,7 +69,7 @@ class h extends i.PureComponent {
       onDropdownClick: this.handleContextMenu,
       onContextMenu: this.handleContextMenu
     }, p), t = t = {
-      children: u.NW.string(u.t.hElye3)
+      children: u.intl.string(u.t.hElye3)
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -98,7 +98,7 @@ class h extends i.PureComponent {
       return (0, r.jsx)(a.v2r, {
         onSelect: i,
         navId: "test-store-listing",
-        "aria-label": u.NW.string(u.t.ogxXGh),
+        "aria-label": u.intl.string(u.t.ogxXGh),
         onClose: o.Zy,
         children: l
       })

@@ -27,7 +27,7 @@ let d = e => {
     guildId: d.guild_id,
     messageId: null == r ? void 0 : r.id,
     stopPropagation: !0,
-    ariaLabel: c.NW.formatToPlainString(c.t.CSIeU1, {
+    ariaLabel: c.intl.formatToPlainString(c.t.CSIeU1, {
       name: g
     })
   })(null != f ? f : void 0)(g, d.id);

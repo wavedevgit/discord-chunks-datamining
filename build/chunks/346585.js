@@ -66,7 +66,7 @@ function I(e) {
     rateLimited: !0
   }, () => ({
     type: d.K.RATE_LIMIT,
-    message: f.NW.string(f.t.T15lqq)
+    message: f.intl.string(f.t.T15lqq)
   })).with({
     error: r.P.not(r.P.nullish)
   }, e => {
@@ -81,12 +81,12 @@ function I(e) {
     taken: !1
   }, () => ({
     type: d.K.AVAILABLE,
-    message: f.NW.string(f.t.PgfBS0)
+    message: f.intl.string(f.t.PgfBS0)
   })).with({
     taken: !0
   }, () => ({
     type: d.K.ERROR,
-    message: f.NW.string(f.t.mCrAUV)
+    message: f.intl.string(f.t.mCrAUV)
   })).with({
     error: r.P.nullish
   }, () => ({

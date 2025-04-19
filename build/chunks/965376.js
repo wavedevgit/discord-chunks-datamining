@@ -34,7 +34,7 @@ function m(e, t) {
       return e.push(p.Sk.ONLINE, p.Sk.OFFLINE), e.map(e => {
         var t, r, i, l;
         return {
-          label: e === p.Sk.ONLINE ? h.NW.string(h.t.WbGtnJ) : e === p.Sk.OFFLINE ? h.NW.string(h.t.Vv0abG) : null != (i = null == n || null == (t = n[e]) ? void 0 : t.name) ? i : "",
+          label: e === p.Sk.ONLINE ? h.intl.string(h.t.WbGtnJ) : e === p.Sk.OFFLINE ? h.intl.string(h.t.Vv0abG) : null != (i = null == n || null == (t = n[e]) ? void 0 : t.name) ? i : "",
           userIds: null != (l = null == m || null == (r = m[e]) ? void 0 : r.userIds) ? l : [],
           id: e,
           roleId: e

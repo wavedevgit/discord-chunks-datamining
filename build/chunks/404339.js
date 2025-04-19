@@ -1,6 +1,6 @@
 /** Chunk was on 12858 **/
 r.d(t, {
-  default: () => g
+  default: () => h
 }), r(388685), r(290780);
 var n = r(200651);
 r(192379);
@@ -23,18 +23,18 @@ let I = e => {
       numOfIgnoredUsers: r
     } = e, s = t > 0, i = r > 0;
     return s && i ? (0, n.jsxs)(n.Fragment, {
-      children: [E.NW.string(E.t.aTORmJ), (0, n.jsx)("br", {}), E.NW.string(E.t.LXFz19)]
+      children: [E.intl.string(E.t.aTORmJ), (0, n.jsx)("br", {}), E.intl.string(E.t.LXFz19)]
     }) : s ? (0, n.jsxs)(n.Fragment, {
-      children: [E.NW.format(E.t["J/ZBu7"], {
+      children: [E.intl.format(E.t["J/ZBu7"], {
         n: t
-      }), (0, n.jsx)("br", {}), E.NW.string(E.t.tFvYm5)]
+      }), (0, n.jsx)("br", {}), E.intl.string(E.t.tFvYm5)]
     }) : i ? (0, n.jsxs)(n.Fragment, {
-      children: [E.NW.format(E.t["8mtcq6"], {
+      children: [E.intl.format(E.t["8mtcq6"], {
         n: r
-      }), (0, n.jsx)("br", {}), E.NW.string(E.t.Z21Rp6)]
+      }), (0, n.jsx)("br", {}), E.intl.string(E.t.Z21Rp6)]
     }) : null
   },
-  N = e => {
+  g = e => {
     let {
       channelId: t,
       blockedUsers: r,
@@ -44,7 +44,7 @@ let I = e => {
         className: m.icon,
         children: (0, n.jsx)(i.aNP, {})
       }),
-      text: E.NW.string(E.t["7jN3FB"]),
+      text: E.intl.string(E.t["7jN3FB"]),
       className: m.row
     }];
     if (c && u) {
@@ -76,7 +76,7 @@ let I = e => {
     return d
   };
 
-function g(e) {
+function h(e) {
   let {
     channelId: t,
     blockedUserIds: r,
@@ -84,17 +84,17 @@ function g(e) {
     transitionState: a,
     onClose: l,
     onJoin: _
-  } = e, m = Array.from(r).map(e => o.default.getUser(e)).filter(e => null !== e), g = Array.from(i).map(e => o.default.getUser(e)).filter(e => null !== e);
-  return 0 === m.length && 0 === g.length ? null : (0, n.jsx)(d.Z, {
-    headerText: E.NW.string(E.t.zPUmzc),
+  } = e, m = Array.from(r).map(e => o.default.getUser(e)).filter(e => null !== e), h = Array.from(i).map(e => o.default.getUser(e)).filter(e => null !== e);
+  return 0 === m.length && 0 === h.length ? null : (0, n.jsx)(d.Z, {
+    headerText: E.intl.string(E.t.zPUmzc),
     descriptionText: (0, n.jsx)(I, {
       numOfBlockedUsers: r.size,
       numOfIgnoredUsers: i.size
     }),
-    infoRows: N({
+    infoRows: g({
       channelId: t,
       blockedUsers: m,
-      ignoredUsers: g
+      ignoredUsers: h
     }),
     onDismissAndStay: () => {
       _(), l(), (0, u.g6)(t), c.default.track(A.rMx.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, {
@@ -114,8 +114,8 @@ function g(e) {
         warning_surface: f.fz.PRE_JOIN_MODAL
       })
     },
-    leaveButtonText: E.NW.string(E.t.Trz9Ji),
-    stayButtonText: E.NW.string(E.t.kiODyM),
+    leaveButtonText: E.intl.string(E.t.Trz9Ji),
+    stayButtonText: E.intl.string(E.t.kiODyM),
     transitionState: a,
     onClose: l,
     impression: {

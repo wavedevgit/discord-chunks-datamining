@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(113434),
   S = n(497505),
   T = n(475595),
-  N = n(602667),
-  A = n(644646),
+  A = n(602667),
+  N = n(644646),
   C = n(667105),
   R = n(341907),
   P = n(46140),
@@ -70,18 +70,18 @@ function F(e) {
   let {
     quest: y,
     memberListItemRef: v,
-    applicationStream: N,
+    applicationStream: A,
     position: M,
     closePopout: k,
     updatePosition: F,
     impressionRef: V
   } = e, Z = (0, s.e7)([E.Z], () => {
     var e;
-    return null != (e = E.Z.getChannel(null == N ? void 0 : N.channelId)) ? e : null
+    return null != (e = E.Z.getChannel(null == A ? void 0 : A.channelId)) ? e : null
   }), H = (0, C.hf)({
     quest: y,
     location: S.jn.MEMBERS_LIST
-  }), W = (0, I.tP)(y), Y = (null == y || null == (t = y.userStatus) ? void 0 : t.claimedAt) != null, K = (null == y || null == (n = y.userStatus) ? void 0 : n.enrolledAt) != null, z = (null == y || null == (h = y.userStatus) ? void 0 : h.completedAt) != null, q = (0, s.e7)([g.Z], () => g.Z.getState().theme), Q = (0, l.wj)(q) ? D.BR.DARK : D.BR.LIGHT, X = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), {
+  }), Y = (0, I.tP)(y), W = (null == y || null == (t = y.userStatus) ? void 0 : t.claimedAt) != null, K = (null == y || null == (n = y.userStatus) ? void 0 : n.enrolledAt) != null, z = (null == y || null == (h = y.userStatus) ? void 0 : h.completedAt) != null, q = (0, s.e7)([g.Z], () => g.Z.getState().theme), Q = (0, l.wj)(q) ? D.BR.DARK : D.BR.LIGHT, X = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), {
     ref: J,
     height: $
   } = (0, f.ZP)(), [ee, et] = i.useState(X), en = (0, _.Aq)(), er = (0, o.eg)();
@@ -127,7 +127,7 @@ function F(e) {
       en.dispatch(w.CkL.POPOUT_CLOSE)
     },
     es = "top" === M ? "".concat(j, " ").concat(j, " 0 0") : "0 0 ".concat(j, " ").concat(j);
-  if (null == y || W || Y && !B(N, Z)) return null;
+  if (null == y || Y || W && !B(A, Z)) return null;
   let el = () => {
       (0, O._3)({
         questId: y.id,
@@ -154,32 +154,32 @@ function F(e) {
       e.stopPropagation(), el()
     },
     ed = () => {
-      if (B(N, Z) && null != Z) return (0, O._3)({
+      if (B(A, Z) && null != Z) return (0, O._3)({
         questId: y.id,
         questContent: S.jn.MEMBERS_LIST,
         questContentCTA: O.jZ.WATCH_STREAM,
         trackGuildAndChannelMetadata: !0
-      }), u.default.selectVoiceChannel(Z.id), (0, d.iV)(N);
+      }), u.default.selectVoiceChannel(Z.id), (0, d.iV)(A);
       ec()
     },
-    ef = z && !Y ? {
-      headerText: L.NW.string(L.t.gHerLS),
-      ctaText: L.NW.string(L.t.cfY4PD),
+    ef = z && !W ? {
+      headerText: L.intl.string(L.t.gHerLS),
+      ctaText: L.intl.string(L.t.cfY4PD),
       handleClickCta: H,
       tileAssetType: "reward"
-    } : K && !Y ? {
-      headerText: L.NW.string(L.t.uH2sf3),
-      ctaText: L.NW.string(L.t.VN1Ajo),
+    } : K && !W ? {
+      headerText: L.intl.string(L.t.uH2sf3),
+      ctaText: L.intl.string(L.t.VN1Ajo),
       handleClickCta: ec,
       tileAssetType: "reward"
-    } : B(N, Z) ? {
-      headerText: L.NW.string(L.t.Bz6SkJ),
-      ctaText: L.NW.string(L.t.BXFP39),
+    } : B(A, Z) ? {
+      headerText: L.intl.string(L.t.Bz6SkJ),
+      ctaText: L.intl.string(L.t.BXFP39),
       handleClickCta: ed,
       tileAssetType: "game"
     } : {
-      headerText: L.NW.string(L.t.Bz6SkJ),
-      ctaText: L.NW.string(L.t.BSXPZ2),
+      headerText: L.intl.string(L.t.Bz6SkJ),
+      ctaText: L.intl.string(L.t.BSXPZ2),
       handleClickCta: ec,
       tileAssetType: "game"
     };
@@ -219,7 +219,7 @@ function F(e) {
               variant: "text-xs/medium",
               color: "text-muted",
               className: x.helpText,
-              children: L.NW.format(L.t["Lm8/mJ"], {
+              children: L.intl.format(L.t["Lm8/mJ"], {
                 gamePublisher: y.config.messages.gamePublisher
               })
             }), (0, r.jsx)(c.idN, {
@@ -238,13 +238,13 @@ function F(e) {
               style: e,
               className: x.imgUnderlay
             })), "game" === ef.tileAssetType && (0, r.jsx)("img", {
-              alt: L.NW.formatToPlainString(L.t.IskzPj, {
+              alt: L.intl.formatToPlainString(L.t.IskzPj, {
                 gameTitle: y.config.messages.gameTitle,
                 gamePublisher: y.config.messages.gamePublisher
               }),
               className: x.assetTile,
               src: (0, T.fh)(y, T.eC.GAME_TILE, Q).url
-            }), "reward" === ef.tileAssetType && (0, r.jsx)(A.Z, {
+            }), "reward" === ef.tileAssetType && (0, r.jsx)(N.Z, {
               className: x.assetTile,
               quest: y,
               questContent: S.jn.MEMBERS_LIST,
@@ -267,7 +267,7 @@ function F(e) {
 }
 
 function V(e) {
-  return null == e.quest ? null : (0, r.jsx)(N.A, {
+  return null == e.quest ? null : (0, r.jsx)(A.A, {
     questOrQuests: e.quest,
     questContent: S.jn.MEMBERS_LIST,
     trackGuildAndChannelMetadata: !0,

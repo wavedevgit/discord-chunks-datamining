@@ -70,7 +70,7 @@ function v(e) {
         className: x.chatHeaderBarText,
         variant: "text-md/medium",
         color: "header-secondary",
-        children: C.NW.format(C.t.f2tNxM, {
+        children: C.intl.format(C.t.f2tNxM, {
           username: null == t ? void 0 : t.globalName,
           channelName: (0, r.jsx)(c.Text, {
             variant: "text-md/semibold",
@@ -92,7 +92,7 @@ function j(e) {
     channelId: t,
     recipientUserId: n,
     isUserRinging: i
-  } = e, o = (0, m.Q3)("RingUserButton"), a = i ? C.NW.string(C.t.ygslb2) : C.NW.string(C.t["3Hv9qa"]), d = i ? () => u.Z.stopRinging(t, [n]) : () => {
+  } = e, o = (0, m.Q3)("RingUserButton"), a = i ? C.intl.string(C.t.ygslb2) : C.intl.string(C.t["3Hv9qa"]), d = i ? () => u.Z.stopRinging(t, [n]) : () => {
     u.Z.ring(t, [n]), (0, g.Kh)(t)
   };
   return o ? (0, r.jsx)(s.z, {

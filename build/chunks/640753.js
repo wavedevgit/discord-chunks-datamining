@@ -27,7 +27,7 @@ let g = r.memo(function(e) {
   } = e, y = (0, o.e7)([u.Z], () => u.Z.getEffectForEmojiId(t, n, g)), x = r.useMemo(() => (0, p.Zn)(g, j, t, {
     key: y,
     messageId: n
-  }), [j, y, g, t, n]), [T, S] = r.useState(!1), _ = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), N = c.Yk.useSetting(), C = r.useCallback(() => {
+  }), [j, y, g, t, n]), [T, S] = r.useState(!1), _ = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), C = c.Yk.useSetting(), R = r.useCallback(() => {
     a.Z.dispatch({
       type: "BURST_REACTION_EFFECT_CLEAR",
       channelId: t,
@@ -46,16 +46,16 @@ let g = r.memo(function(e) {
         key: u.I.RANDOM
       }))
     };
-    if (T || _ && !N || !N) return;
+    if (T || _ && !C || !C) return;
     e();
     let i = setInterval(e, 5e3);
     return () => {
       clearInterval(i)
     }
-  }, [N, t, v, g, g.name, T, n, _]), null == y) ? null : (0, i.jsx)(h.Z, {
+  }, [C, t, v, g, g.name, T, n, _]), null == y) ? null : (0, i.jsx)(h.Z, {
     className: (b ? f : m).effect,
     effect: x,
-    onComplete: C,
+    onComplete: R,
     emojiSize: O
   })
 })

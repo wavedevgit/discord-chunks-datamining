@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  s = n.n(i),
-  l = n(481060),
+  l = n.n(i),
+  s = n(481060),
   a = n(572590);
 
 function o(e) {
@@ -17,12 +17,12 @@ function o(e) {
   } = e;
   return (0, r.jsx)("div", {
     className: a.container,
-    children: t.map(e => (0, r.jsx)(l.ua7, {
+    children: t.map(e => (0, r.jsx)(s.ua7, {
       text: e.tooltipText,
       shouldShow: null != e.tooltipText,
       children: t => {
         var i, o;
-        return (0, r.jsx)(l.P3F, (i = function(e) {
+        return (0, r.jsx)(s.P3F, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -40,11 +40,11 @@ function o(e) {
           }
           return e
         }({}, t), o = o = {
-          className: s()(a.pill, {
+          className: l()(a.pill, {
             [a.disabled]: e.disabled
           }, n),
           onClick: e.onClick,
-          children: (0, r.jsx)(l.Text, {
+          children: (0, r.jsx)(s.Text, {
             tag: "span",
             variant: "text-sm/medium",
             color: "interactive-normal",

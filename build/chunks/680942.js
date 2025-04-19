@@ -76,7 +76,7 @@ let m = {
       analyticsLocations: j
     } = (0, o.ZP)(), y = l.useRef(null), S = (0, i.Z)(y), k = (0, d.hv)("CollectiblesShopGiftButton");
     return (0, u.x6)(t) ? null : (0, r.jsx)(a.ua7, {
-      text: g.NW.string(g.t["JCFN//"]),
+      text: g.intl.string(g.t["JCFN//"]),
       delay: v,
       children: e => {
         var l, i;
@@ -104,7 +104,7 @@ let m = {
           look: a.zxk.Looks.FILLED,
           size: a.PhG.ICON,
           innerClassName: h.giftButtonInner,
-          "aria-label": g.NW.string(g.t.PEjaCw),
+          "aria-label": g.intl.string(g.t.PEjaCw),
           onClick: e => {
             e.stopPropagation(), (0, s.Z)({
               skuId: (0, b.S)({

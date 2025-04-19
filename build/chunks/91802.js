@@ -1,17 +1,17 @@
 /** Chunk was on 76346 **/
 r.d(t, {
-  n: () => i
+  n: () => s
 });
 var n = r(442837),
-  s = r(351402);
+  i = r(351402);
 
-function i() {
+function s() {
   let {
     localizedPricingPromo: e,
     hasError: t
-  } = (0, n.cj)([s.Z], () => ({
-    localizedPricingPromo: s.Z.localizedPricingPromo,
-    hasError: s.Z.localizedPricingPromoHasError
+  } = (0, n.cj)([i.Z], () => ({
+    localizedPricingPromo: i.Z.localizedPricingPromo,
+    hasError: i.Z.localizedPricingPromoHasError
   }));
   return t ? null : e
 }

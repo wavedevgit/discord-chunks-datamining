@@ -24,12 +24,12 @@ function h(e) {
   }
   return r ? t ? (0, i.jsx)(o.sNh, {
     id: "unmute-channel",
-    label: e.isForumPost() ? f.NW.string(f.t["0JQfsL"]) : f.NW.string(f.t["Cq/TzM"]),
+    label: e.isForumPost() ? f.intl.string(f.t["0JQfsL"]) : f.intl.string(f.t["Cq/TzM"]),
     subtext: h,
     action: () => v(!1)
   }) : (0, i.jsx)(o.sNh, {
     id: "mute-channel",
-    label: e.isForumPost() ? f.NW.string(f.t["nP+YkZ"]) : f.NW.string(f.t.bUUd8v),
+    label: e.isForumPost() ? f.intl.string(f.t["nP+YkZ"]) : f.intl.string(f.t.bUUd8v),
     action: () => v(!0),
     children: (0, c.k)().map(t => {
       let {
@@ -53,7 +53,7 @@ function h(e) {
     })
   }) : (0, i.jsx)(o.sNh, {
     id: "mute-disabled",
-    label: e.isForumPost() ? f.NW.string(f.t["nP+YkZ"]) : f.NW.string(f.t.bUUd8v),
+    label: e.isForumPost() ? f.intl.string(f.t["nP+YkZ"]) : f.intl.string(f.t.bUUd8v),
     disabled: !0
   })
 }

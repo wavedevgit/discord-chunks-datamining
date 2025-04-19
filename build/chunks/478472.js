@@ -11,7 +11,7 @@ function i(e) {
   var t, r, {
       ruleName: i
     } = e,
-    a = function(e, t) {
+    l = function(e, t) {
       if (null == e) return {};
       var r, n, o = function(e, t) {
         if (null == e) return {};
@@ -26,7 +26,7 @@ function i(e) {
       }
       return o
     }(e, ["ruleName"]);
-  let l = null != i ? i : c.NW.string(c.t.ffR2cH);
+  let a = null != i ? i : c.intl.string(c.t.ffR2cH);
   return (0, n.jsx)(o.ConfirmModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
@@ -44,14 +44,14 @@ function i(e) {
       })
     }
     return e
-  }({}, a), r = r = {
-    header: c.NW.string(c.t.Hy8XgI),
-    cancelText: c.NW.string(c.t["ETE/oK"]),
-    confirmText: c.NW.string(c.t["cY+Ooa"]),
+  }({}, l), r = r = {
+    header: c.intl.string(c.t.Hy8XgI),
+    cancelText: c.intl.string(c.t["ETE/oK"]),
+    confirmText: c.intl.string(c.t["cY+Ooa"]),
     children: (0, n.jsx)(o.Text, {
       variant: "text-md/normal",
-      children: c.NW.format(c.t.hO7PgY, {
-        ruleName: l
+      children: c.intl.format(c.t.hO7PgY, {
+        ruleName: a
       })
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

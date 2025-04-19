@@ -1,6 +1,6 @@
 /** Chunk was on 84509 **/
 n.d(t, {
-  default: () => l
+  default: () => u
 });
 var r = n(200651);
 n(192379);
@@ -8,14 +8,14 @@ var o = n(98278),
   c = n(790527),
   a = n(474936),
   i = n(981631),
-  f = n(388032),
-  u = n(102525);
+  l = n(388032),
+  f = n(102525);
 
-function l(e) {
+function u(e) {
   var {
     onClose: t,
     source: n
-  } = e, l = function(e, t) {
+  } = e, u = function(e, t) {
     if (null == e) return {};
     var n, r, o = function(e, t) {
       if (null == e) return {};
@@ -30,7 +30,7 @@ function l(e) {
     }
     return o
   }(e, ["onClose", "source"]);
-  let b = f.NW.format(f.t.WMO9pq, {
+  let b = l.intl.format(l.t.WMO9pq, {
     onAndMore: function() {
       t(), (0, o.z)(!0)
     }
@@ -53,9 +53,9 @@ function l(e) {
     }
     return e
   }({
-    artURL: u.Z,
+    artURL: f.Z,
     type: a.cd.PREMIUM_GUILD_IDENTITY_MODAL,
-    title: f.NW.string(f.t.kOEBKC),
+    title: l.intl.string(l.t.kOEBKC),
     body: b,
     glowUp: b,
     analyticsSource: n,
@@ -64,5 +64,5 @@ function l(e) {
       object: i.qAy.BUTTON_CTA
     },
     onClose: t
-  }, l))
+  }, u))
 }

@@ -63,7 +63,7 @@ function j(e) {
   }, [n]), (0, r.jsxs)(a.hjN, {
     children: [(0, r.jsx)(a.R94, {
       type: a.geA.DESCRIPTION,
-      children: f.NW.format(f.t["9gsSLi"], {
+      children: f.intl.format(f.t["9gsSLi"], {
         helpdeskArticle: m.Z.getArticleURL(g.BhN.LINKED_LOBBIES)
       })
     }), (0, r.jsx)(a.$i$, {

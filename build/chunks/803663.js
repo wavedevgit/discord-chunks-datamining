@@ -32,7 +32,7 @@ function p(e) {
     }), o.AC(g, m), (0, a.Kh)(m), null == p || p()
   };
   return (0, r.jsx)(f.tG, {
-    text: _.NW.string(_.t.ZYO5OD),
+    text: _.intl.string(_.t.ZYO5OD),
     fullWidth: !0,
     disabled: E,
     onClick: v

@@ -2,9 +2,9 @@
 n.d(t, {
   Z: () => d
 }), n(781311);
-var a = n(913527),
-  r = n.n(a),
-  l = n(381499),
+var l = n(913527),
+  a = n.n(l),
+  r = n(381499),
   i = n(695346),
   o = n(626135),
   s = n(337953),
@@ -15,7 +15,7 @@ function d(e) {
   let {
     text: t,
     emojiInfo: n,
-    clearAfter: a,
+    clearAfter: l,
     analyticsContext: d,
     createdAtMs: m,
     prompt: f,
@@ -25,11 +25,11 @@ function d(e) {
   {
     let e = i.Ok.updateSetting({
       text: p.length > 0 ? p : "",
-      expiresAtMs: null != a && a !== u.FO.DONT_CLEAR ? String(r()().add((0, s.Z)(a), "ms").toDate().getTime()) : "0",
+      expiresAtMs: null != l && l !== u.FO.DONT_CLEAR ? String(a()().add((0, s.Z)(l), "ms").toDate().getTime()) : "0",
       emojiId: null != n && null != n.id ? n.id : "0",
       emojiName: null != n ? n.name : "",
-      createdAtMs: String(null != m ? m : r()().toDate().getTime()),
-      label: null != h ? l.Gm.create({
+      createdAtMs: String(null != m ? m : a()().toDate().getTime()),
+      label: null != h ? r.Gm.create({
         value: h
       }) : void 0
     });
@@ -37,7 +37,7 @@ function d(e) {
       location: null != d ? d.location : null,
       emoji_type: null == n ? null : null != n.id ? "custom" : "unicode",
       text_len: p.length,
-      clear_after: null != a ? "".concat(a) : null,
+      clear_after: null != l ? "".concat(l) : null,
       prompt_type: null == f ? void 0 : f.value,
       label: null != h ? h : null
     }), e

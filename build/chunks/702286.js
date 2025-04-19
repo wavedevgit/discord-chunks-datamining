@@ -1,11 +1,11 @@
 /** Chunk was on 3378 **/
 n.d(t, {
-  Z: () => i
+  Z: () => o
 });
 var r = n(703656),
-  o = n(981631);
+  i = n(981631);
 
-function i() {
+function o() {
   let e = (0, r.s1)();
-  e.length > 0 ? e.goBack() : (0, r.uL)(o.Z5c.ME)
+  e.length > 0 ? e.goBack() : (0, r.uL)(i.Z5c.ME)
 }

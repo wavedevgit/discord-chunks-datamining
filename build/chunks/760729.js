@@ -15,11 +15,11 @@ let o = [{
       s = Math.pow(10, Math.floor(Math.log10(o))),
       l = a.t["47E5R0"];
     return t.isForumPost() ? l = a.t.sYW2c3 : t.isThread() && (l = a.t["2YaiQ0"]), {
-      body: a.NW.formatToPlainString(l, {
+      body: a.intl.formatToPlainString(l, {
         role: i,
         count: (Math.trunc(o / s) * s).toLocaleString()
       }),
-      footer: a.NW.string(a.t.mVyrtr)
+      footer: a.intl.string(a.t.mVyrtr)
     }
   },
   analyticsType: "@Everyone Warning",
@@ -29,7 +29,7 @@ let o = [{
   }
 }, {
   check: e => !!i.Jn9.test(e) && {
-    body: a.NW.string(a.t.sTwS1d)
+    body: a.intl.string(a.t.sTwS1d)
   },
   analyticsType: "API Token Warning"
 }]

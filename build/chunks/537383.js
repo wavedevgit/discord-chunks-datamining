@@ -1,14 +1,14 @@
 /** Chunk was on 7590 **/
-r.d(t, {
+n.d(t, {
   Z: () => s
 });
-var n = r(200651),
-  l = r(192379),
-  i = r(461745),
-  a = r(932197);
+var r = n(200651),
+  l = n(192379),
+  i = n(461745),
+  a = n(932197);
 let s = l.forwardRef(function(e, t) {
   let {
-    query: r,
+    query: n,
     onQueryChange: l,
     onRemoveTag: s,
     onSelect: o,
@@ -23,7 +23,7 @@ let s = l.forwardRef(function(e, t) {
     "aria-labelledby": f,
     "aria-controls": p
   } = e;
-  return (0, n.jsx)(i.ZP, {
+  return (0, r.jsx)(i.ZP, {
     autoFocus: !0,
     className: a.searchBar,
     maxHeight: 100,
@@ -34,7 +34,7 @@ let s = l.forwardRef(function(e, t) {
     onSelect: o,
     onSelectionChange: c,
     placeholder: 0 === m.length ? h : "",
-    query: r,
+    query: n,
     ref: t,
     size: i.ZP.Sizes.MEDIUM,
     tags: m,

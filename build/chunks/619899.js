@@ -3,7 +3,7 @@
 n.d(t, {
   N9: () => y,
   O1: () => C,
-  St: () => A,
+  St: () => N,
   ex: () => I,
   xq: () => v,
   zL: () => O
@@ -235,11 +235,11 @@ let y = (0, a.U)(e => ({
     }
     return n
   },
-  N = (e, t, n) => {
+  A = (e, t, n) => {
     let r = Object.values(t);
     return e && 0 !== r.length ? null != n ? t[n] : r[0] : null
   },
-  A = e => {
+  N = e => {
     let {
       previewEnabled: t,
       previewAvatarDecorationId: n
@@ -264,7 +264,7 @@ let y = (0, a.U)(e => ({
     } = y(), i = y(e => e.avatarDecorationAssets);
     return r.useMemo(() => {
       if (null == e) return null;
-      let r = N(t, i, n);
+      let r = A(t, i, n);
       return null == r ? e : S(e, r)
     }, [e, t, n, i])
   }

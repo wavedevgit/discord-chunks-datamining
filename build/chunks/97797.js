@@ -1,19 +1,19 @@
 /** Chunk was on 85679 **/
 n.d(e, {
-  i: () => a
+  i: () => r
 });
-var r = n(981631),
-  l = n(388032);
+var l = n(981631),
+  i = n(388032);
 
-function a(t) {
+function r(t) {
   let {
     username: e,
-    usernameOnClickHandler: n = r.dG4,
-    productName: a
+    usernameOnClickHandler: n = l.dG4,
+    productName: r
   } = t;
-  return l.NW.formatToParts(l.t.w4iXs7, {
+  return i.intl.formatToParts(i.t.w4iXs7, {
     username: e,
     usernameHook: n,
-    productName: a
+    productName: r
   })
 }

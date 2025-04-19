@@ -30,19 +30,19 @@ function w(e) {
   let {
     quest: P,
     questContent: E,
-    isHovering: N,
-    contentPosition: T,
+    isHovering: T,
+    contentPosition: N,
     rowIndex: A,
     onReceiveErrorHints: R
   } = e, B = (0, f.j)({
     location: v.dr.QUESTS_BAR_MOBILE
-  }), k = o.useMemo(() => g.r.build(P.config), [P.config]), q = k.defaultReward.messages.name, D = k.defaultReward.messages.nameWithArticle, W = B ? q : D, I = (null == (t = P.userStatus) ? void 0 : t.enrolledAt) != null, {
-    ref: M,
-    scrollHeight: L
-  } = (0, d.kE)(), Z = 104 !== L, {
+  }), k = o.useMemo(() => g.r.build(P.config), [P.config]), q = k.defaultReward.messages.name, D = k.defaultReward.messages.nameWithArticle, I = B ? q : D, M = (null == (t = P.userStatus) ? void 0 : t.enrolledAt) != null, {
+    ref: L,
+    scrollHeight: Z
+  } = (0, d.kE)(), W = 104 !== Z, {
     expansionSpring: V
   } = (0, c.q_F)({
-    expansionSpring: +!!N,
+    expansionSpring: +!!T,
     config: (w = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -81,9 +81,9 @@ function w(e) {
     tag: "span",
     className: C.header,
     children: e
-  }, "".concat(P.id, "_reward")), [P.id]), K = o.useMemo(() => U ? X(q) : _.NW.format(_.t["0IUT4e"], {
-    rewardWithArticleHook: () => X(W)
-  }), [q, U, X, W]), Y = o.useMemo(() => {
+  }, "".concat(P.id, "_reward")), [P.id]), K = o.useMemo(() => U ? X(q) : _.intl.format(_.t["0IUT4e"], {
+    rewardWithArticleHook: () => X(I)
+  }), [q, U, X, I]), Y = o.useMemo(() => {
     if (null != z) return (0, r.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
@@ -95,14 +95,14 @@ function w(e) {
     className: C.container,
     children: [(0, r.jsxs)(i.animated.div, {
       style: {
-        maxHeight: V.to([0, 1], [104, (null != L ? L : 0) + 12])
+        maxHeight: V.to([0, 1], [104, (null != Z ? Z : 0) + 12])
       },
       className: C.rewardDescriptionContainer,
       children: [(0, r.jsxs)("div", {
         className: C.assetWrapper,
         children: [!U && Q && (0, r.jsx)("div", {
           className: C.completionAnimation
-        }), I && !U ? (0, r.jsxs)("div", {
+        }), M && !U ? (0, r.jsxs)("div", {
           className: C.progressWrapper,
           children: [Q && (0, r.jsx)(c.Fmz, {
             importData: O,
@@ -114,7 +114,7 @@ function w(e) {
             quest: P,
             size: 76,
             percentComplete: H,
-            percentCompleteText: N && !(0, m.zi)(P) ? F : void 0,
+            percentCompleteText: T && !(0, m.zi)(P) ? F : void 0,
             children: (0, r.jsx)("div", {
               className: C.circularRewardTileWrapper,
               children: (0, r.jsx)(h.Z, {
@@ -122,27 +122,27 @@ function w(e) {
                 questContent: E,
                 className: C.circularQuestRewardTileAsset,
                 location: v.dr.QUEST_HOME_DESKTOP,
-                autoplay: N
+                autoplay: T
               })
             })
           })]
         }) : (0, r.jsx)(h.Z, {
           quest: P,
-          autoplay: N,
+          autoplay: T,
           questContent: E,
           className: C.questRewardTileAsset,
           location: v.dr.QUEST_HOME_DESKTOP
         })]
       }), (0, r.jsxs)("div", {
-        ref: M,
+        ref: L,
         className: a()(C.textContainer, {
-          [C.justifyCenter]: !Z
+          [C.justifyCenter]: !W
         }),
         children: [(0, r.jsx)(c.X6q, {
           variant: "eyebrow",
           color: "text-brand",
           className: C.questName,
-          children: _.NW.format(_.t.EAYZAg, {
+          children: _.intl.format(_.t.EAYZAg, {
             questName: P.config.messages.questName
           })
         }), (0, r.jsx)(c.Text, {
@@ -156,7 +156,7 @@ function w(e) {
           quest: P,
           textColor: "text-muted"
         }), Y]
-      }), Z && (0, r.jsx)(i.animated.div, {
+      }), W && (0, r.jsx)(i.animated.div, {
         style: {
           opacity: V.to([0, 1], [1, 0])
         },
@@ -165,7 +165,7 @@ function w(e) {
     }), (0, r.jsx)(j.Z, {
       quest: P,
       location: E,
-      contentPosition: T,
+      contentPosition: N,
       rowIndex: A,
       onReceiveErrorHints: R
     })]

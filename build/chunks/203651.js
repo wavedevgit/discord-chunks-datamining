@@ -81,7 +81,7 @@ e.exports = function(e, n) {
   return "function" == typeof n ? new t.Request("GET", e).end(n) : 1 == arguments.length ? new t.Request("GET", e) : new t.Request(e, n)
 };
 let E = t = e.exports;
-t.Request = N, E.getXHR = () => {
+t.Request = A, E.getXHR = () => {
   if (r.XMLHttpRequest) return new r.XMLHttpRequest;
   throw Error("Browser-only version of superagent could not find XHR")
 };
@@ -139,7 +139,7 @@ function T(e) {
   1223 === t && (t = 204), this._setStatusProperties(t), this.headers = I(this.xhr.getAllResponseHeaders()), this.header = this.headers, this.header["content-type"] = this.xhr.getResponseHeader("content-type"), this._setHeaderProperties(this.header), null === this.text && e._responseType ? this.body = this.xhr.response : this.body = "HEAD" === this.req.method ? null : this._parseBody(this.text ? this.text : this.xhr.response)
 }
 
-function N(e, t) {
+function A(e, t) {
   let n = this;
   this._query = this._query || [], this.method = e, this.url = t, this.header = {}, this._header = {}, this.on("end", () => {
     let e, t = null,
@@ -180,11 +180,11 @@ E.serializeObject = y, E.parseString = O, E.types = {
     n = e.url,
     r = Error(`cannot ${t} ${n} (${this.status})`);
   return r.status = this.status, r.method = t, r.url = n, r
-}, E.Response = T, s(N.prototype), _(N.prototype, u.prototype), N.prototype.type = function(e) {
+}, E.Response = T, s(A.prototype), _(A.prototype, u.prototype), A.prototype.type = function(e) {
   return this.set("Content-Type", E.types[e] || e), this
-}, N.prototype.accept = function(e) {
+}, A.prototype.accept = function(e) {
   return this.set("Accept", E.types[e] || e), this
-}, N.prototype.auth = function(e, t, n) {
+}, A.prototype.auth = function(e, t, n) {
   1 == arguments.length && (t = ""), "object" == typeof t && null !== t && (n = t, t = ""), n || (n = {
     type: "function" == typeof btoa ? "basic" : "auto"
   });
@@ -193,37 +193,37 @@ E.serializeObject = y, E.parseString = O, E.types = {
     throw Error("Cannot use basic auth, btoa is not a function")
   };
   return this._auth(e, t, n, r)
-}, N.prototype.query = function(e) {
+}, A.prototype.query = function(e) {
   return "string" != typeof e && (e = y(e)), e && this._query.push(e), this
-}, N.prototype.attach = function(e, t, n) {
+}, A.prototype.attach = function(e, t, n) {
   if (t) {
     if (this._data) throw Error("superagent can't mix .send() and .attach()");
     this._getFormData().append(e, t, n || t.name)
   }
   return this
-}, N.prototype._getFormData = function() {
+}, A.prototype._getFormData = function() {
   return this._formData || (this._formData = new r.FormData), this._formData
-}, N.prototype.callback = function(e, t) {
+}, A.prototype.callback = function(e, t) {
   if (this._shouldRetry(e, t)) return this._retry();
   let n = this._callback;
   this.clearTimeout(), e && (this._maxRetries && (e.retries = this._retries - 1), this.emit("error", e)), n(e, t)
-}, N.prototype.crossDomainError = function() {
+}, A.prototype.crossDomainError = function() {
   let e = Error("Request has been terminated\nPossible causes: the network is offline, Origin is not allowed by Access-Control-Allow-Origin, the page is being unloaded, etc.");
   e.crossDomain = !0, e.status = this.status, e.method = this.method, e.url = this.url, this.callback(e)
-}, N.prototype.agent = function() {
+}, A.prototype.agent = function() {
   return console.warn("This is not supported in browser version of superagent"), this
-}, N.prototype.ca = N.prototype.agent, N.prototype.buffer = N.prototype.ca, N.prototype.write = () => {
+}, A.prototype.ca = A.prototype.agent, A.prototype.buffer = A.prototype.ca, A.prototype.write = () => {
   throw Error("Streaming is not supported in browser version of superagent")
-}, N.prototype.pipe = N.prototype.write, N.prototype._isHost = function(e) {
+}, A.prototype.pipe = A.prototype.write, A.prototype._isHost = function(e) {
   return e && "object" == typeof e && !Array.isArray(e) && "[object Object]" !== Object.prototype.toString.call(e)
-}, N.prototype.end = function(e) {
+}, A.prototype.end = function(e) {
   this._endCalled && console.warn("Warning: .end() was called twice. This is not supported in superagent"), this._endCalled = !0, this._callback = e || g, this._finalizeQueryString(), this._end()
-}, N.prototype._setUploadTimeout = function() {
+}, A.prototype._setUploadTimeout = function() {
   let e = this;
   this._uploadTimeout && !this._uploadTimeoutTimer && (this._uploadTimeoutTimer = setTimeout(() => {
     e._timeoutError("Upload timeout of ", e._uploadTimeout, "ETIMEDOUT")
   }, this._uploadTimeout))
-}, N.prototype._end = function() {
+}, A.prototype._end = function() {
   if (this._aborted) return this.callback(Error("The request has been aborted even before .end() was called"));
   let e = this;
   this.xhr = E.getXHR();
@@ -264,8 +264,8 @@ E.serializeObject = y, E.parseString = O, E.types = {
   for (let e in this.header) null !== this.header[e] && p(this.header, e) && t.setRequestHeader(e, this.header[e]);
   this._responseType && (t.responseType = this._responseType), this.emit("request", this), t.send(void 0 === n ? null : n)
 }, E.agent = () => new m;
-for (var A = 0, C = ["GET", "POST", "OPTIONS", "PATCH", "PUT", "DELETE"]; A < C.length; A++) {
-  let e = C[A];
+for (var N = 0, C = ["GET", "POST", "OPTIONS", "PATCH", "PUT", "DELETE"]; N < C.length; N++) {
+  let e = C[N];
   m.prototype[e.toLowerCase()] = function(t, n) {
     let r = new E.Request(e, t);
     return this._setDefaults(r), n && r.end(n), r

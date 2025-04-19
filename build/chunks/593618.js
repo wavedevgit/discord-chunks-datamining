@@ -27,8 +27,8 @@ var r = n(200651),
   I = n(777861),
   S = n(565799),
   T = n(501655),
-  N = n(517334),
-  A = n(344185),
+  A = n(517334),
+  N = n(344185),
   C = n(199902),
   R = n(984933),
   P = n(699516),
@@ -82,7 +82,7 @@ function F(e, t) {
 
 function V(e) {
   let t = e.id,
-    n = (0, c.Wu)([R.ZP, A.Z], () => [...R.ZP.getChannels(t)[R.Zb].filter(e => {
+    n = (0, c.Wu)([R.ZP, N.Z], () => [...R.ZP.getChannels(t)[R.Zb].filter(e => {
       let {
         channel: t
       } = e;
@@ -92,8 +92,8 @@ function V(e) {
         channel: t
       } = e;
       return t.id
-    }), ...Object.values(A.Z.getThreadsForGuild(t)).flatMap(e => Object.keys(e))], [t]),
-    r = (0, N.ZP)(t),
+    }), ...Object.values(N.Z.getThreadsForGuild(t)).flatMap(e => Object.keys(e))], [t]),
+    r = (0, A.ZP)(t),
     a = i.useMemo(() => r.map(e => e.id), [r]),
     o = (0, c.e7)([L.ZP], () => L.ZP.getVoiceStates(t), [t]),
     s = (0, c.Wu)([P.Z], () => P.Z.getBlockedOrIgnoredIDs()),
@@ -190,7 +190,7 @@ function H(e, t, n) {
   })
 }
 
-function W(e) {
+function Y(e) {
   let {
     muteConfig: t,
     className: n
@@ -199,14 +199,14 @@ function W(e) {
     variant: "text-xs/normal",
     color: "text-muted",
     className: n,
-    children: M.NW.string(M.t.fpKdS0)
+    children: M.intl.string(M.t.fpKdS0)
   }) : (0, r.jsx)(I.Z, {
     muteConfig: t,
     className: n
   })
 }
 
-function Y(e) {
+function W(e) {
   let {
     guild: t
   } = e, n = t.id, {
@@ -229,7 +229,7 @@ function Y(e) {
     muteConfig: w.ZP.getMuteConfig(n)
   }), [n]), y = null != p || null != m;
   return (0, r.jsxs)(r.Fragment, {
-    children: [h, p, m, g, E ? (0, r.jsx)(W, {
+    children: [h, p, m, g, E ? (0, r.jsx)(Y, {
       muteConfig: b,
       className: o()(k.muteText, {
         [k.muteTextWithActivity]: y
@@ -241,13 +241,13 @@ function Y(e) {
 function K(e) {
   switch (e) {
     case b.wB.SUBMITTED:
-      return M.NW.string(M.t["9KFC9/"]);
+      return M.intl.string(M.t["9KFC9/"]);
     case b.wB.REJECTED:
-      return M.NW.string(M.t["TQY/RU"]);
+      return M.intl.string(M.t["TQY/RU"]);
     case b.wB.APPROVED:
-      return M.NW.string(M.t.WXHcq6);
+      return M.intl.string(M.t.WXHcq6);
     default:
-      return M.NW.string(M.t.fjHFCw)
+      return M.intl.string(M.t.fjHFCw)
   }
 }
 
@@ -269,7 +269,7 @@ function q(e) {
     includeActivity: n = !0
   } = e, i = (0, m.Z)(t), a = (0, y.E)(t), s = null != a ? (0, r.jsx)(z, {
     guildJoinRequestStatus: a
-  }) : null, l = n ? (0, r.jsx)(Y, {
+  }) : null, l = n ? (0, r.jsx)(W, {
     guild: t
   }) : null, d = (0, c.e7)([O.Z], () => O.Z.isViewingRoles(t.id)), f = null != s ? s : l, _ = (0, v.Ij)(t);
   return (0, r.jsxs)(r.Fragment, {
@@ -292,12 +292,12 @@ function q(e) {
       className: k.invitesDisabledTooltip,
       color: "header-secondary",
       variant: "text-sm/medium",
-      children: M.NW.string(M.t["2n0/Fh"])
+      children: M.intl.string(M.t["2n0/Fh"])
     }) : null, d ? (0, r.jsx)(u.Text, {
       className: k.viewAsRolesWarning,
       color: "text-normal",
       variant: "text-xs/normal",
-      children: M.NW.string(M.t["5LwN8/"])
+      children: M.intl.string(M.t["5LwN8/"])
     }) : f]
   })
 }

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  s = n(536982),
-  l = n(285318),
+  l = n(536982),
+  s = n(285318),
   a = n(456677),
   o = n(55889),
   c = n(300453),
@@ -63,11 +63,11 @@ function f(e) {
     className: g.cardContentsContainer,
     children: [(0, r.jsxs)(c.Z, {
       step: 1,
-      header: m.NW.string(m.t.CX5YfX),
-      children: [(0, r.jsx)(l.Z, {
+      header: m.intl.string(m.t.CX5YfX),
+      children: [(0, r.jsx)(s.Z, {
         rule: x,
         onChangeRule: b
-      }), (0, r.jsx)(s.Z, {
+      }), (0, r.jsx)(l.Z, {
         onChange: j,
         initialValue: null == (t = x.triggerMetadata) ? void 0 : t.allowList,
         maxWordCount: u.I3,
@@ -77,7 +77,7 @@ function f(e) {
       type: d.Z.Type.ARROW_DOWN
     }), (0, r.jsx)(c.Z, {
       step: 2,
-      header: m.NW.string(m.t["18TOiY"]),
+      header: m.intl.string(m.t["18TOiY"]),
       children: (0, r.jsx)(a.Z, {
         rule: x,
         onChangeRule: b
@@ -86,7 +86,7 @@ function f(e) {
       type: d.Z.Type.CROSS
     }), (0, r.jsx)(c.Z, {
       step: 3,
-      header: m.NW.string(m.t.eq3gjo),
+      header: m.intl.string(m.t.eq3gjo),
       children: (0, r.jsx)(o.Z, {
         rule: x,
         onChangeRule: b

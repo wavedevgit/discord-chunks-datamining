@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  s = n(481060),
-  l = n(906732),
+  l = n(481060),
+  s = n(906732),
   a = n(516129),
   o = n(768581),
   c = n(949640),
@@ -23,9 +23,9 @@ function f(e) {
     canManageGuild: n
   } = e, f = t.hasFeature(d.oNc.BANNER), x = t.hasFeature(d.oNc.ANIMATED_BANNER), b = f && n, {
     analyticsLocations: j
-  } = (0, l.ZP)(), N = i.useCallback((e, n) => {
+  } = (0, s.ZP)(), _ = i.useCallback((e, n) => {
     (0, c.f4)(t, j, e, n)
-  }, [j, t]), _ = i.useCallback(e => {
+  }, [j, t]), v = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, c.E6)({
       guild: t,
       analyticsLocations: j,
@@ -33,15 +33,15 @@ function f(e) {
       analyticsObject: d.qAy.UPLOAD_IMAGE,
       perks: (0, u.XO)()
     })
-  }, [j, t]), v = (0, r.jsx)(a.Z, {
+  }, [j, t]), O = (0, r.jsx)(a.Z, {
     image: t.banner,
     makeURL: e => null != e ? o.ZP.getGuildBannerURL({
       id: t.id,
       banner: e
     }, x) : null,
     disabled: !b,
-    onChange: N,
-    hint: p.NW.string(p.t.uPvxqK),
+    onChange: _,
+    hint: p.intl.string(p.t.uPvxqK),
     onOpenImageSelectModal: () => (0, c.mw)({
       uploadType: m.pC.GUILD_BANNER,
       maxFileSizeBytes: g.B,
@@ -50,7 +50,7 @@ function f(e) {
           imageUri: t,
           file: n
         } = e;
-        return N(t, n)
+        return _(t, n)
       },
       analyticsLocation: {
         page: d.ZY5.GUILD_SETTINGS,
@@ -60,11 +60,11 @@ function f(e) {
     }),
     enabled: b
   });
-  return f ? v : (0, r.jsx)(s.P3F, {
+  return f ? O : (0, r.jsx)(l.P3F, {
     "aria-hidden": !0,
     tabIndex: -1,
     className: h.upsell,
-    onClick: _,
-    children: v
+    onClick: v,
+    children: O
   })
 }

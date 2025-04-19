@@ -4,9 +4,9 @@ r.d(t, {
 });
 var n = r(200651);
 r(192379);
-var s = r(325767);
+var i = r(325767);
 
-function i(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -32,20 +32,20 @@ let l = e => {
     } = e,
     c = function(e, t) {
       if (null == e) return {};
-      var r, n, s = function(e, t) {
+      var r, n, i = function(e, t) {
         if (null == e) return {};
-        var r, n, s = {},
-          i = Object.keys(e);
-        for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (s[r] = e[r]);
-        return s
+        var r, n, i = {},
+          s = Object.keys(e);
+        for (n = 0; n < s.length; n++) r = s[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+        return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (s[r] = e[r])
+        var s = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < s.length; n++) r = s[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
       }
-      return s
+      return i
     }(e, ["className", "backgroundColor", "backgroundCircleSize"]);
-  return (0, n.jsxs)("svg", (t = i({
+  return (0, n.jsxs)("svg", (t = s({
     width: "100%",
     height: "100%",
     viewBox: "0 0 100 100",
@@ -54,7 +54,7 @@ let l = e => {
       overflow: "visible"
     },
     xmlns: "http://www.w3.org/2000/svg"
-  }, (0, s.Z)(i({}, c))), r = r = {
+  }, (0, i.Z)(s({}, c))), r = r = {
     children: [(0, n.jsx)("circle", {
       r: null != a ? a : "40%",
       cx: "50%",

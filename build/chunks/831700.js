@@ -27,9 +27,9 @@ var r = n(200651),
   x = n(554747),
   E = n(378844),
   I = n(340541),
-  N = n(335353),
-  P = n(896835),
-  w = n(359110),
+  P = n(335353),
+  w = n(896835),
+  N = n(359110),
   Z = n(155409),
   T = n(695346),
   A = n(447564),
@@ -41,11 +41,11 @@ var r = n(200651),
   U = n(9156),
   G = n(979651),
   B = n(934415),
-  W = n(63063),
-  V = n(98597),
-  F = n(648501),
-  H = n(473403),
-  z = n(830993),
+  V = n(63063),
+  F = n(98597),
+  H = n(648501),
+  z = n(473403),
+  W = n(830993),
   Y = n(653577),
   K = n(207055),
   q = n(981631),
@@ -87,7 +87,7 @@ function et(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class en extends V.ZP {
+class en extends F.ZP {
   componentWillUnmount() {
     this.activitiesHideTimeout.stop()
   }
@@ -165,7 +165,7 @@ class en extends V.ZP {
       locked: t
     } = this.props;
     return t || !e.isHDStreamSplashed ? null : (0, r.jsx)(c.ua7, {
-      text: X.NW.string(X.t.gpF6QU),
+      text: X.intl.string(X.t.gpF6QU),
       children: t => {
         let {
           onMouseEnter: n,
@@ -176,9 +176,9 @@ class en extends V.ZP {
         return (0, r.jsx)(c.P3F, {
           className: o()(J.iconItem, J.alwaysShown),
           onClick: () => {
-            (0, P.X)("VoiceChannel") ? (0, A.k)(e, "VoiceChannel") : window.open(W.Z.getArticleURL(q.BhN.HD_STREAMING_POTION), "_blank")
+            (0, w.X)("VoiceChannel") ? (0, A.k)(e, "VoiceChannel") : window.open(V.Z.getArticleURL(q.BhN.HD_STREAMING_POTION), "_blank")
           },
-          "aria-label": X.NW.string(X.t.gpF6QU),
+          "aria-label": X.intl.string(X.t.gpF6QU),
           onMouseEnter: n,
           onMouseLeave: i,
           onFocus: l,
@@ -217,8 +217,8 @@ class en extends V.ZP {
       withGuildIcon: x
     } = this.props, {
       shouldShowActivities: E,
-      shouldShowGuildVerificationPopout: P
-    } = this.state, w = (0, I.jW)({
+      shouldShowGuildVerificationPopout: w
+    } = this.state, N = (0, I.jW)({
       location: "voice_channel"
     }).entrypoints, T = this.getVoiceStatesCount(), A = (0, r.jsxs)("li", {
       ref: this.ref,
@@ -235,7 +235,7 @@ class en extends V.ZP {
           renderPopout: this.renderPopout,
           spacing: 0,
           onRequestClose: this.closeGuildVerificationPopout,
-          shouldShow: E && !u && !d && !P || P,
+          shouldShow: E && !u && !d && !w || w,
           children: () => (0, r.jsx)(c.ua7, {
             text: this.getTooltipText(),
             children: c => {
@@ -257,9 +257,9 @@ class en extends V.ZP {
                 }
                 return i
               }(c, ["onClick", "onContextMenu"]);
-              return (0, r.jsx)(N.Z, {
+              return (0, r.jsx)(P.Z, {
                 channel: e,
-                children: (0, r.jsxs)(H.ZP, et(ee({
+                children: (0, r.jsxs)(z.ZP, et(ee({
                   ref: this.channelItemRef,
                   className: J.iconVisibility,
                   iconClassName: o()({
@@ -299,7 +299,7 @@ class en extends V.ZP {
                   children: [S && (0, r.jsxs)(r.Fragment, {
                     children: [this.renderAcceptSuggestionButton(), this.renderRemoveSuggestionButton()]
                   }), !S && (0, r.jsxs)(r.Fragment, {
-                    children: [this.renderOpenChatButton(), this.renderInviteButton(), w ? this.renderOptionsButton({
+                    children: [this.renderOpenChatButton(), this.renderInviteButton(), N ? this.renderOptionsButton({
                       onContextMenu: this.handleContextMenu
                     }) : this.renderEditButton(), this.renderChannelInfo(), this.renderHDSplashedIcon()]
                   })]
@@ -397,7 +397,7 @@ class en extends V.ZP {
       } = this.state;
       if (s && !n && !i && !a) {
         let n = T.SE.getSetting().includes(o.id);
-        return (0, r.jsx)(z.Z, {
+        return (0, r.jsx)(W.Z, {
           onAction: this.closePopout,
           guild: o,
           channel: e,
@@ -419,7 +419,7 @@ class en extends V.ZP {
         forceShowButtons: n
       } = this.props;
       if (!t) return (0, r.jsx)(c.ua7, {
-        text: X.NW.string(X.t.ZXxLQk),
+        text: X.intl.string(X.t.ZXxLQk),
         children: t => {
           let {
             onMouseEnter: i,
@@ -430,9 +430,9 @@ class en extends V.ZP {
           return (0, r.jsx)(c.P3F, {
             className: o()(J.iconItem, n ? J.alwaysShown : null),
             onClick: () => {
-              u.Z.updateChatOpen(e.id, !0), (0, w.Kh)(e.id)
+              u.Z.updateChatOpen(e.id, !0), (0, N.Kh)(e.id)
             },
-            "aria-label": X.NW.string(X.t.ZXxLQk),
+            "aria-label": X.intl.string(X.t.ZXxLQk),
             onMouseEnter: i,
             onMouseLeave: l,
             onFocus: s,
@@ -449,7 +449,7 @@ class en extends V.ZP {
       let {
         connected: e
       } = this.props;
-      return this.isFull() && !e ? X.NW.string(X.t.rZfiNj) : null
+      return this.isFull() && !e ? X.intl.string(X.t.rZfiNj) : null
     })
   }
 }
@@ -481,7 +481,7 @@ function ei(e) {
   }), p = (0, s.e7)([G.Z], () => G.Z.hasVideo(n.id)), g = (0, f.ZP)(n), m = (0, y.ZP)(n), b = (0, x.qY)(n.id), {
     isSubscriptionGated: _,
     needSubscriptionToAccess: O
-  } = (0, S.Z)(n.id), C = (0, v.Z)(), j = (0, s.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), E = e.connected || (null == C ? void 0 : C.channelId) === n.id, I = (0, F.Z)({
+  } = (0, S.Z)(n.id), C = (0, v.Z)(), j = (0, s.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), E = e.connected || (null == C ? void 0 : C.channelId) === n.id, I = (0, H.Z)({
     channel: n,
     isChannelSelected: o,
     isChannelCollapsed: a,
@@ -490,7 +490,7 @@ function ei(e) {
     needSubscriptionToAccess: O,
     enableConnectedUserLimit: !0,
     enableActivities: !0
-  }), N = E && null == I;
+  }), P = E && null == I;
   return (0, r.jsx)(er, et(ee({
     channelName: m,
     embeddedApps: g,
@@ -502,7 +502,7 @@ function ei(e) {
   }, u, h, e), {
     connected: E,
     isFavoriteSuggestion: l && !j,
-    forceShowButtons: N,
+    forceShowButtons: P,
     channelInfo: I,
     resolvedUnreadSetting: d
   }))

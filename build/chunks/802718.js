@@ -82,7 +82,7 @@ function _(e) {
       children: t.tooltipHeader
     }), (0, r.jsx)(o.Text, {
       variant: "text-xs/normal",
-      children: g.NW.string(g.t.IIbwAg)
+      children: g.intl.string(g.t.IIbwAg)
     })]
   }), C = (0, c.Fg)();
   return (0, r.jsxs)(d.H, {

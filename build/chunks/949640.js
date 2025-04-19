@@ -7,8 +7,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(481060),
-  s = n(367907),
-  l = n(48217),
+  l = n(367907),
+  s = n(48217),
   a = n(26323),
   o = n(267642),
   c = n(434404),
@@ -17,8 +17,8 @@ var r = n(200651),
 function u(e) {
   let {
     uploadType: t,
-    maxFileSizeBytes: s,
-    onComplete: l,
+    maxFileSizeBytes: l,
+    onComplete: s,
     showUpsellHeader: a = !0,
     analyticsLocation: o,
     analyticsLocations: c
@@ -45,8 +45,8 @@ function u(e) {
       }
       return e
     }({
-      maxFileSizeBytes: s,
-      onComplete: l,
+      maxFileSizeBytes: l,
+      onComplete: s,
       uploadType: t,
       showUpsellHeader: a,
       analyticsLocation: o,
@@ -61,10 +61,10 @@ function m(e) {
     analyticsLocations: n,
     analyticsSection: r,
     analyticsObject: i,
-    perks: l,
+    perks: s,
     targetPremiumGuildTier: c
   } = e;
-  (0, s.yw)(d.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
+  (0, l.yw)(d.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
     location: {
       section: r,
       object: d.qAy.LEARN_MORE,
@@ -80,13 +80,13 @@ function m(e) {
       page: d.ZY5.GUILD_SETTINGS
     },
     guild: t,
-    perks: l
+    perks: s
   })
 }
 
 function g(e, t, n, r) {
   let i = null == r ? void 0 : r.type,
-    s = {
+    l = {
       page: d.ZY5.GUILD_SETTINGS,
       section: d.jXE.ANIMATED_GUILD_BANNER_UPSELL,
       object: "temp"
@@ -94,20 +94,20 @@ function g(e, t, n, r) {
   if (null != i && null != n)
     if ("image/gif" !== i || e.hasFeature(d.oNc.ANIMATED_BANNER)) {
       if (!e.hasFeature(d.oNc.BANNER)) {
-        s.object = d.qAy.IMAGE_CROPPING_MODAL, (0, l.c)({
+        l.object = d.qAy.IMAGE_CROPPING_MODAL, (0, s.c)({
           guild: e,
           analyticsLocations: t,
-          analyticsLocation: s,
+          analyticsLocation: l,
           banner: n,
           isGIF: !1
         });
         return
       }
     } else {
-      s.object = d.qAy.GIF_CROPPING_MODAL, (0, l.c)({
+      l.object = d.qAy.GIF_CROPPING_MODAL, (0, s.c)({
         guild: e,
         analyticsLocations: t,
-        analyticsLocation: s,
+        analyticsLocation: l,
         banner: n,
         isGIF: !0
       });

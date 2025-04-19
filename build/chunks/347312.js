@@ -26,8 +26,8 @@ let m = 40,
   I = 24,
   S = 2,
   T = 4,
-  N = [0, 0, 0, 0, 0],
-  A = 200;
+  A = [0, 0, 0, 0, 0],
+  N = 200;
 
 function C(e) {
   let t;
@@ -94,7 +94,7 @@ function M(e, t) {
     r = i.useMemo(() => w(t), [t]);
   return i.useMemo(() => {
     var e;
-    return null != (e = R(null != n ? n : [], r)) ? e : N
+    return null != (e = R(null != n ? n : [], r)) ? e : A
   }, [n, r])
 }
 
@@ -129,7 +129,7 @@ function j(e, t) {
 
 function U(e, t, n, r) {
   if (null == r) return [t, !1];
-  let i = Math.min((n - r) / A, 1);
+  let i = Math.min((n - r) / N, 1);
   return 1 === i ? [t, !1] : [(0, d.BM)(e, t, i), !0]
 }
 
@@ -147,7 +147,7 @@ function G(e) {
   } = e, {
     ref: g,
     width: E
-  } = (0, c.ZP)(), b = i.useMemo(() => P(s), [s]), y = i.useRef(void 0), v = M(n, E), O = i.useRef(l), S = i.useRef(d), N = i.useRef(null), C = window.devicePixelRatio, {
+  } = (0, c.ZP)(), b = i.useMemo(() => P(s), [s]), y = i.useRef(void 0), v = M(n, E), O = i.useRef(l), S = i.useRef(d), A = i.useRef(null), C = window.devicePixelRatio, {
     lastBackgroundFillColor: R,
     backgroundFillColor: w,
     lastActiveFillColor: D,
@@ -199,10 +199,10 @@ function G(e) {
         a = y.current;
       if (null == r || null == i || null == a) return;
       let o = !1;
-      (O.current !== l || S.current !== d) && (O.current = l, S.current = d, N.current = n), null != N.current && n > N.current + A && (N.current = null);
+      (O.current !== l || S.current !== d) && (O.current = l, S.current = d, A.current = n), null != A.current && n > A.current + N && (A.current = null);
       let s = r.height / C;
       i.clearRect(0, 0, r.width, r.height), i.beginPath();
-      let [c, u] = U(R, w, n, N.current);
+      let [c, u] = U(R, w, n, A.current);
       o = o || u, i.fillStyle = c;
       for (let e = 0; e < v.length; e++) x({
         context: i,
@@ -213,9 +213,9 @@ function G(e) {
         constrainMin: !0
       });
       i.fill();
-      let [f, _] = U(G, B, n, N.current);
+      let [f, _] = U(G, B, n, A.current);
       o = o || _;
-      let [p, h] = U(D, k, n, N.current);
+      let [p, h] = U(D, k, n, A.current);
       o = o || h;
       for (let e = 0; e < a.length; e++) {
         let t = a[e],

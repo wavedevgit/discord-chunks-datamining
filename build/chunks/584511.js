@@ -64,16 +64,16 @@ function p(e) {
         color: s.TVs.colors.WHITE.css
       }, "status")
     }) : null
-  }, N = () => (0, r.jsx)("div", {
+  }, A = () => (0, r.jsx)("div", {
     className: a()(u.border, {
       [u.speaking]: i
     })
-  }, "border"), A = () => d && i ? (0, r.jsxs)(r.Fragment, {
-    children: [N(), T()]
+  }, "border"), N = () => d && i ? (0, r.jsxs)(r.Fragment, {
+    children: [A(), T()]
   }) : d || _ || S ? (0, r.jsx)(r.Fragment, {
     children: T()
   }) : (0, r.jsx)(r.Fragment, {
-    children: N()
+    children: A()
   }), C = () => {
     let e = (0, s.pxk)(n),
       t = (0, r.jsx)("img", {
@@ -93,7 +93,7 @@ function p(e) {
         height: e,
         mask: i,
         children: [null == b ? void 0 : b(), t]
-      }), A()]
+      }), N()]
     })
   }, R = a()(u.wrapper, {
     [u.clickable]: null != v,

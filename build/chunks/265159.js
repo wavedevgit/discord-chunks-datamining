@@ -1,13 +1,13 @@
 /** Chunk was on 55183 **/
 r.d(t, {
-  Z: () => l
+  Z: () => o
 });
 var n = r(200651);
 r(192379);
 var i = r(481060),
-  o = r(981631);
+  l = r(981631);
 
-function l() {
+function o() {
   (0, i.ZDy)(async () => {
     let {
       default: e
@@ -33,10 +33,10 @@ function l() {
         return e
       }({}, t), i = i = {
         source: {
-          page: o.ZY5.USER_SETTINGS,
-          section: o.jXE.SETTINGS_CUSTOMIZE_PROFILE,
-          object: o.qAy.BUTTON_CTA,
-          type: o.Qqv.BUY
+          page: l.ZY5.USER_SETTINGS,
+          section: l.jXE.SETTINGS_CUSTOMIZE_PROFILE,
+          object: l.qAy.BUTTON_CTA,
+          type: l.Qqv.BUY
         }
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var r = Object.keys(e);

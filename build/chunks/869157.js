@@ -1,6 +1,6 @@
 /** Chunk was on 49286 **/
 n.d(t, {
-  Z: () => k
+  Z: () => A
 }), n(388685), n(642613);
 var r = n(200651),
   i = n(192379),
@@ -20,11 +20,11 @@ var r = n(200651),
   x = n(314897),
   j = n(430824),
   O = n(594174),
-  N = n(626135),
-  y = n(5192),
-  v = n(709054),
-  _ = n(360606),
-  C = n(905753),
+  y = n(626135),
+  v = n(5192),
+  _ = n(709054),
+  C = n(360606),
+  N = n(905753),
   I = n(399860),
   S = n(335049),
   E = n(617012),
@@ -51,7 +51,7 @@ function Z(e) {
   return e
 }
 
-function W(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -64,7 +64,7 @@ function W(e, t) {
   }), e
 }
 
-function k(e) {
+function A(e) {
   let {
     commandId: t,
     editPermissions: n,
@@ -75,7 +75,7 @@ function k(e) {
   } = e, h = (0, c.e7)([j.Z], () => j.Z.getGuild(l));
   o()(null != h, "");
   let x = (0, c.e7)([j.Z], () => j.Z.getRoles(l)),
-    [N, S] = i.useState(new Set),
+    [y, S] = i.useState(new Set),
     E = i.useMemo(() => {
       let e = (0, b.bD)(l),
         t = s()(x).sortBy(e => e.position).reduce((e, t, n) => (e[t.id] = n, e), {});
@@ -90,11 +90,11 @@ function k(e) {
               let i = O.default.getUser(e.id),
                 l = O.default.getUser(t.id);
               if (null != i && null != l) {
-                let e = y.ZP.getName(n, void 0, i),
-                  t = y.ZP.getName(n, void 0, l);
+                let e = v.ZP.getName(n, void 0, i),
+                  t = v.ZP.getName(n, void 0, l);
                 return null == e ? void 0 : e.localeCompare(t)
               }
-              return v.default.compare(e.id, t.id)
+              return _.default.compare(e.id, t.id)
             }(n, r, l);
           case m.Kw.ROLE:
             if (n.id === l) return -1;
@@ -104,7 +104,7 @@ function k(e) {
             if (n.id === e) return -1;
             if (r.id === e) return 1;
             let o = Number(n.canWrite) - Number(r.canWrite);
-            return 0 !== o ? o : v.default.compare(n.id, r.id)
+            return 0 !== o ? o : _.default.compare(n.id, r.id)
         }
       })
     }, [l, p, x]),
@@ -122,23 +122,23 @@ function k(e) {
       }, [])
     }, [n, p]);
   i.useEffect(() => {
-    let e = Object.values(p).filter(e => e.type === m.Kw.USER && !e.canRead && !N.has(e.id)).map(e => e.id);
+    let e = Object.values(p).filter(e => e.type === m.Kw.USER && !e.canRead && !y.has(e.id)).map(e => e.id);
     0 !== e.length && (u.Z.requestMembersById(l, e, !1), S(t => new Set([...t, ...e])))
-  }, [l, p, N, S]);
-  let Z = (0, c.e7)([C.Z], () => C.Z.getApplicationId()),
-    W = (0, c.e7)([_.default], () => null == Z ? void 0 : _.default.integrations.find(e => {
+  }, [l, p, y, S]);
+  let Z = (0, c.e7)([N.Z], () => N.Z.getApplicationId()),
+    k = (0, c.e7)([C.default], () => null == Z ? void 0 : C.default.integrations.find(e => {
       var t;
       return (null == (t = e.application) ? void 0 : t.id) === Z
     })),
-    k = (0, c.e7)([f.Z], () => void 0 !== W && f.Z.canShowToggleTooltip(W.id));
-  return E.length > 0 ? E.map(e => (0, r.jsx)(A, {
+    A = (0, c.e7)([f.Z], () => void 0 !== k && f.Z.canShowToggleTooltip(k.id));
+  return E.length > 0 ? E.map(e => (0, r.jsx)(D, {
     guild: h,
     commandId: t,
     onChange: t => w(e.id, e.type, t),
     onRemove: () => P(e.id, e.type),
     overwrite: e,
-    integration: W,
-    canShowMigrationTooltip: k,
+    integration: k,
+    canShowMigrationTooltip: A,
     hasAccessToMutatePermissions: g
   }, e.id)) : (0, r.jsx)("div", {
     className: T.noItemsSelected,
@@ -150,7 +150,7 @@ function k(e) {
   })
 }
 
-function A(e) {
+function D(e) {
   var t, n, l;
   let o, {
       guild: a,
@@ -160,48 +160,48 @@ function A(e) {
       overwrite: f,
       integration: j,
       canShowMigrationTooltip: O,
-      hasAccessToMutatePermissions: y
+      hasAccessToMutatePermissions: v
     } = e,
-    v = f.id === a.id || f.id === (0, b.bD)(a.id),
-    _ = null == j || null == (n = j.application) || null == (t = n.bot) ? void 0 : t.username,
-    C = !f.canWrite || !y,
+    _ = f.id === a.id || f.id === (0, b.bD)(a.id),
+    C = null == j || null == (n = j.application) || null == (t = n.bot) ? void 0 : t.username,
+    N = !f.canWrite || !v,
     I = x.default.getId();
-  y ? f.canWrite || (f.type === m.Kw.USER ? o = f.id === I ? w.NW.string(w.t["1VF/09"]) : w.NW.string(w.t.P1GnER) : f.type === m.Kw.ROLE && (o = w.NW.string(w.t.mcAijY))) : o = null != s ? w.NW.string(w.t.tybdam) : w.NW.string(w.t.z2hjk5);
-  let k = O && null != j && f.id === a.id && void 0 !== _ && !f.permission;
+  v ? f.canWrite || (f.type === m.Kw.USER ? o = f.id === I ? w.intl.string(w.t["1VF/09"]) : w.intl.string(w.t.P1GnER) : f.type === m.Kw.ROLE && (o = w.intl.string(w.t.mcAijY))) : o = null != s ? w.intl.string(w.t.tybdam) : w.intl.string(w.t.z2hjk5);
+  let A = O && null != j && f.id === a.id && void 0 !== C && !f.permission;
   i.useEffect(() => {
-    if (k) {
+    if (A) {
       var e;
-      N.default.track(P.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, W(Z({}, (0, p.hH)(a.id)), {
+      y.default.track(P.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, k(Z({}, (0, p.hH)(a.id)), {
         application_id: null == j || null == (e = j.application) ? void 0 : e.id,
         location: "toggle"
       }))
     }
-  }, [a.id, null == j || null == (l = j.application) ? void 0 : l.id, k]);
-  let A = (0, r.jsx)(d.ua7, {
+  }, [a.id, null == j || null == (l = j.application) ? void 0 : l.id, A]);
+  let D = (0, r.jsx)(d.ua7, {
       tooltipClassName: T.tooltip,
       text: o,
-      shouldShow: C,
+      shouldShow: N,
       position: "left",
       hideOnClick: !1,
-      children: e => (0, r.jsx)("div", W(Z({}, e), {
+      children: e => (0, r.jsx)("div", k(Z({}, e), {
         children: (0, r.jsx)(E.Z, {
-          isDisabled: C,
+          isDisabled: N,
           currentValue: f.permission,
-          onChange: k ? e => {
+          onChange: A ? e => {
             g.Z.dismissToggleTooltip(a.id, j), c(e)
           } : c
         })
       }))
     }),
-    R = (0, r.jsx)(d.yRy, {
+    L = (0, r.jsx)(d.yRy, {
       renderPopout: () => (0, r.jsx)(d.P3F, {
         onClick: e => {
           e.stopPropagation(), g.Z.dismissToggleTooltip(a.id, j)
         },
         children: (0, r.jsx)(h.ZP, {
           className: T.tooltip,
-          content: w.NW.format(w.t.pW4Cr6, {
-            botName: _,
+          content: w.intl.format(w.t.pW4Cr6, {
+            botName: C,
             link: "https://discord.com/blog/welcome-to-the-new-era-of-discord-apps/"
           }),
           onClick: () => {}
@@ -211,9 +211,9 @@ function A(e) {
       align: "center",
       animation: d.yRy.Animation.TRANSLATE,
       onRequestClose: () => g.Z.dismissToggleTooltip(a.id, j),
-      shouldShow: k,
+      shouldShow: A,
       closeOnScroll: !0,
-      children: () => A
+      children: () => D
     });
   return (0, r.jsxs)("div", {
     className: T.entryItem,
@@ -223,22 +223,22 @@ function A(e) {
         guild: a,
         id: f.id,
         type: f.type,
-        isLocked: C,
+        isLocked: N,
         lockTooltipText: o
       })
     }), (0, r.jsxs)("div", {
       className: T.entryActions,
-      children: [(0, r.jsx)(D, {
+      children: [(0, r.jsx)(R, {
         commandId: s,
-        isSentinel: v,
-        isDisabled: !y,
+        isSentinel: _,
+        isDisabled: !v,
         onRemove: u
-      }), R]
+      }), L]
     })]
   }, f.id)
 }
 
-function D(e) {
+function R(e) {
   let {
     commandId: t,
     isSentinel: n,
@@ -249,7 +249,7 @@ function D(e) {
     className: T.removeActions,
     children: (0, r.jsx)(d.P3F, {
       className: T.removeContainer,
-      "aria-label": w.NW.string(w.t.mT0CQE),
+      "aria-label": w.intl.string(w.t.mT0CQE),
       onClick: l,
       children: (0, r.jsx)(d.XHJ, {
         size: "md",

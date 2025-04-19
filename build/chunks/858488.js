@@ -19,7 +19,7 @@ function s(e) {
     return [o.Z.isFriend(d), null != (e = o.Z.getNickname(d)) ? e : null]
   }, [d]);
   if (!c) return null;
-  let Z = null == f ? a.NW.string(a.t.BGYkaG) : a.NW.string(a.t["8pOYUF"]);
+  let Z = null == f ? a.intl.string(a.t.BGYkaG) : a.intl.string(a.t["8pOYUF"]);
   return (0, i.jsx)(r.sNh, {
     id: null == f ? "add-friend-nickname" : "edit-friend-nickname",
     label: Z,

@@ -27,19 +27,19 @@ var i = n(120356),
   v = n(981631),
   C = n(176505),
   w = n(302463),
-  N = n(293810),
-  I = n(388032),
-  j = n(800515);
+  I = n(293810),
+  j = n(388032),
+  x = n(800515);
 
-function x(e) {
+function E(e) {
   let {
     className: t,
     onClick: n,
     children: i
   } = e;
   return (0, r.jsx)(c.zxk, {
-    className: o()(j.button, t),
-    innerClassName: j.buttonInner,
+    className: o()(x.button, t),
+    innerClassName: x.buttonInner,
     look: c.zxk.Looks.OUTLINED,
     color: c.zxk.Colors.WHITE,
     size: c.zxk.Sizes.NONE,
@@ -48,13 +48,13 @@ function x(e) {
   })
 }
 
-function E(e) {
+function N(e) {
   let {
     onClick: t
   } = e;
-  return (0, r.jsx)(x, {
+  return (0, r.jsx)(E, {
     onClick: t,
-    children: I.NW.string(I.t.R9GHyc)
+    children: j.intl.string(j.t.R9GHyc)
   })
 }
 
@@ -76,16 +76,16 @@ function T() {
   let T = function(e) {
       switch (e) {
         case v.pNK.INTEGRATIONS:
-          return I.NW.string(I.t.k7LGdn);
+          return j.intl.string(j.t.k7LGdn);
         case v.pNK.ROLE_SUBSCRIPTIONS:
-          return I.NW.string(I.t.bRqiqa);
+          return j.intl.string(j.t.bRqiqa);
         case v.pNK.ONBOARDING:
-          return I.NW.string(I.t.qZpU3d);
+          return j.intl.string(j.t.qZpU3d);
         default:
-          return I.NW.string(I.t.MTIXho)
+          return j.intl.string(j.t.MTIXho)
       }
     }(i),
-    Z = i === v.pNK.ROLE_SUBSCRIPTIONS ? I.NW.string(I.t.hZUCzc) : I.NW.string(I.t["/djIh4"]),
+    Z = i === v.pNK.ROLE_SUBSCRIPTIONS ? j.intl.string(j.t.hZUCzc) : j.intl.string(j.t["/djIh4"]),
     R = t === C.oC.GUILD_ONBOARDING,
     A = t => {
       let {
@@ -95,31 +95,31 @@ function T() {
     };
   return (0, r.jsxs)(c.qXd, {
     color: c.DM8.BRAND,
-    className: j.notice,
-    children: [(0, r.jsxs)(x, {
+    className: x.notice,
+    children: [(0, r.jsxs)(E, {
       onClick: () => A({
         backToSettings: !0
       }),
-      className: j.backButton,
+      className: x.backButton,
       children: [(0, r.jsx)(h.Z, {
         width: 16,
         height: 16,
         direction: h.Z.Directions.LEFT,
-        className: j.backArrow
+        className: x.backArrow
       }), T]
     }), R && o ? (0, r.jsx)("div", {
-      className: j.noticeContents,
+      className: x.noticeContents,
       children: (0, r.jsx)("div", {
-        className: j.noticeText,
-        children: I.NW.string(I.t.PxbiAQ)
+        className: x.noticeText,
+        children: j.intl.string(j.t.PxbiAQ)
       })
     }) : (0, r.jsxs)("div", {
-      className: j.noticeContents,
+      className: x.noticeContents,
       children: [(0, r.jsx)("div", {
-        className: j.noticeText,
-        children: o ? I.NW.formatToPlainString(I.t["0PHahI"], {
+        className: x.noticeText,
+        children: o ? j.intl.formatToPlainString(j.t["0PHahI"], {
           numRoles: Object.keys(n).length
-        }) : I.NW.formatToPlainString(I.t.vMlK8v, {
+        }) : j.intl.formatToPlainString(j.t.vMlK8v, {
           numRoles: Object.keys(n).length
         })
       }), (0, r.jsx)(c.yRy, {
@@ -131,27 +131,27 @@ function T() {
           let {
             onClick: t
           } = e;
-          return (0, r.jsxs)(x, {
+          return (0, r.jsxs)(E, {
             onClick: t,
             children: [Z, (0, r.jsx)(m.Z, {
               width: 16,
               height: 16,
               direction: m.Z.Directions.DOWN,
-              className: j.selectCaret
+              className: x.selectCaret
             })]
           })
         }
       }), o && (0, r.jsx)(c.DY3, {
-        className: j.previewWarning,
-        text: I.NW.string(I.t.mW4DUF),
+        className: x.previewWarning,
+        text: j.intl.string(j.t.mW4DUF),
         children: (0, r.jsx)(c.P4T, {
           size: "xs",
           color: a.Z.unsafe_rawColors.YELLOW_300.css
         })
       }), O && (0, r.jsx)(c.DY3, {
-        className: j.previewWarning,
-        text: I.NW.formatToPlainString(I.t.eummvb, {
-          maxTiers: N.fF,
+        className: x.previewWarning,
+        text: j.intl.formatToPlainString(j.t.eummvb, {
+          maxTiers: I.fF,
           maxProducts: w.dD
         }),
         children: (0, r.jsx)(c.P4T, {
@@ -159,7 +159,7 @@ function T() {
           color: a.Z.unsafe_rawColors.YELLOW_300.css
         })
       })]
-    }), o || i === v.pNK.ROLE_SUBSCRIPTIONS ? null : (0, r.jsx)(E, {
+    }), o || i === v.pNK.ROLE_SUBSCRIPTIONS ? null : (0, r.jsx)(N, {
       onClick: () => A({
         backToSettings: !1
       })
@@ -172,9 +172,9 @@ function Z(e) {
     guildId: t
   } = e;
   return (0, l.e7)([S.Z], () => S.Z.isViewingRoles(t)) ? (0, r.jsx)("div", {
-    className: o()(j.settingsWrapper, {
-      [j.windows]: (0, O.isWindows)(),
-      [j.osx]: (0, O.isMac)()
+    className: o()(x.settingsWrapper, {
+      [x.windows]: (0, O.isWindows)(),
+      [x.osx]: (0, O.isMac)()
     }),
     children: (0, r.jsx)(T, {})
   }) : null

@@ -1,8 +1,8 @@
 /** Chunk was on 7549 **/
-n.d(e, {
+e.d(n, {
   Z: () => i
 });
-let i = (0, n(818083).B)({
+let i = (0, e(818083).B)({
   kind: "guild",
   id: "2021-11_hub_events",
   label: "Hub Events",

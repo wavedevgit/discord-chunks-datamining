@@ -4,8 +4,8 @@ n.d(e, {
 });
 var o = n(200651);
 n(192379);
-var r = n(442837),
-  i = n(481060),
+var i = n(442837),
+  r = n(481060),
   a = n(906732),
   l = n(48217),
   c = n(26323),
@@ -23,42 +23,42 @@ function b(t) {
     analyticsPage: n,
     isGIF: b,
     banner: g
-  } = t, C = (0, r.e7)([u.Z], () => u.Z.getGuildId()), N = (0, r.e7)([s.Z], () => s.Z.getGuild(C)), {
-    analyticsLocations: v
+  } = t, C = (0, i.e7)([u.Z], () => u.Z.getGuildId()), v = (0, i.e7)([s.Z], () => s.Z.getGuild(C)), {
+    analyticsLocations: x
   } = (0, a.ZP)();
-  return null == N || N.hasFeature(d.oNc.ANIMATED_BANNER) || !b && N.hasFeature(d.oNc.BANNER) ? null : (0, o.jsxs)("div", {
+  return null == v || v.hasFeature(d.oNc.ANIMATED_BANNER) || !b && v.hasFeature(d.oNc.BANNER) ? null : (0, o.jsxs)("div", {
     className: p.container,
     children: [(0, o.jsx)(_.Z, {
       className: p.guildBoostingIcon
-    }), (0, o.jsx)(i.Text, {
+    }), (0, o.jsx)(r.Text, {
       color: "header-primary",
       variant: "text-sm/semibold",
-      children: m.NW.string(m.t["56M7xc"])
-    }), (0, o.jsx)(i.zxk, {
-      look: i.zxk.Looks.LINK,
-      color: i.zxk.Colors.LINK,
+      children: m.intl.string(m.t["56M7xc"])
+    }), (0, o.jsx)(r.zxk, {
+      look: r.zxk.Looks.LINK,
+      color: r.zxk.Colors.LINK,
       className: p.subscribeButton,
       onClick: () => {
-        if (null == N) return;
+        if (null == v) return;
         let t = {
           section: e,
           page: n,
           object: d.qAy.UPSELL_HEADER
         };
         null != g ? (0, l.c)({
-          analyticsLocations: v,
+          analyticsLocations: x,
           analyticsLocation: t,
-          guild: N,
+          guild: v,
           isGIF: b,
           banner: g
         }) : (0, c.Z)({
-          analyticsLocations: v,
+          analyticsLocations: x,
           analyticsSourceLocation: t,
-          guild: N,
+          guild: v,
           perks: b ? (0, f.zC)() : (0, f.XO)()
         })
       },
-      children: m.NW.string(m.t.WUHdZW)
+      children: m.intl.string(m.t.WUHdZW)
     })]
   })
 }

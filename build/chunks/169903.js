@@ -1,18 +1,18 @@
 /** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  Z: () => l
+  Z: () => s
 });
 var r = n(192379),
   i = n(584825),
-  s = n(14263);
+  l = n(14263);
 
-function l(e, t) {
+function s(e, t) {
   let n = (0, i.qi)(e),
-    l = (0, s.Z)(e);
+    s = (0, l.Z)(e);
   return r.useMemo(() => n.map(e => {
     var n, r, i;
-    let s = null == e ? void 0 : e.role_id;
+    let l = null == e ? void 0 : e.role_id;
     return r = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -33,7 +33,7 @@ function l(e, t) {
     }({}, null != (n = null == t ? void 0 : t.ppgs[e.id]) ? n : {}), i = i = {
       key: e.id,
       subscriptionListing: e,
-      roleMemberCount: null == s || null == l ? void 0 : l[s]
+      roleMemberCount: null == l || null == s ? void 0 : s[l]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -44,5 +44,5 @@ function l(e, t) {
     })(Object(i)).forEach(function(e) {
       Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
     }), r
-  }), [n, null == t ? void 0 : t.ppgs, l])
+  }), [n, null == t ? void 0 : t.ppgs, s])
 }

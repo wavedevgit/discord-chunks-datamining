@@ -2,12 +2,12 @@
 n.d(t, {
   Z: () => d
 });
-var r = n(200651);
+var i = n(200651);
 n(192379);
-var i = n(481060),
+var r = n(481060),
   s = n(518950),
-  a = n(182294),
-  l = n(388032),
+  l = n(182294),
+  a = n(388032),
   o = n(416820),
   c = n(144343);
 
@@ -20,29 +20,29 @@ function d(e) {
     eventHandlers: m
   } = (0, s.Z)({
     user: t,
-    size: a.EF.SIZE_32,
+    size: l.EF.SIZE_32,
     animateOnHover: !0
   });
-  return (0, r.jsx)("div", {
+  return (0, i.jsx)("div", {
     className: o.attributionBannerContainer,
-    children: (0, r.jsxs)("div", {
+    children: (0, i.jsxs)("div", {
       className: n ? o.attributionBannerContentV2 : o.attributionBannerContent,
-      children: [(0, r.jsx)("div", {
+      children: [(0, i.jsx)("div", {
         className: n ? o.iconContainerV2 : o.iconContainer,
-        children: (0, r.jsx)(i.qEK, function(e) {
+        children: (0, i.jsx)(r.qEK, function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
-              r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              i = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-              var r;
-              r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
+            }))), i.forEach(function(t) {
+              var i;
+              i = n[t], t in e ? Object.defineProperty(e, t, {
+                value: i,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-              }) : e[t] = r
+              }) : e[t] = i
             })
           }
           return e
@@ -50,21 +50,21 @@ function d(e) {
           className: o.icon,
           src: u,
           "aria-label": t.username,
-          size: a.EF.SIZE_32
+          size: l.EF.SIZE_32
         }, m))
-      }), n ? (0, r.jsx)(i.X6q, {
+      }), n ? (0, i.jsx)(r.X6q, {
         variant: "heading-lg/medium",
         className: o.textContainer,
-        children: l.NW.format(l.t.IqxblZ, {
+        children: a.intl.format(a.t.IqxblZ, {
           username: d(t)
         })
-      }) : (0, r.jsx)(i.Text, {
+      }) : (0, i.jsx)(r.Text, {
         variant: "text-sm/normal",
         className: o.textContainer,
-        children: l.NW.format(l.t.IqxblZ, {
+        children: a.intl.format(a.t.IqxblZ, {
           username: d(t)
         })
-      }), !n && (0, r.jsx)("img", {
+      }), !n && (0, i.jsx)("img", {
         src: c,
         alt: "",
         className: o.attributionIcon

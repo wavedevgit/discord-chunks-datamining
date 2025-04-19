@@ -7,8 +7,8 @@ n.d(t, {
 }), n(388685), n(361932), n(187205);
 var l = n(192379),
   r = n(106351),
-  a = n(442837),
-  i = n(933557),
+  i = n(442837),
+  a = n(933557),
   s = n(987509),
   o = n(926491),
   c = n(378233),
@@ -24,7 +24,7 @@ var l = n(192379),
 
 function E(e) {
   let t = e.map(s.hl).find(m.lm),
-    n = (0, a.e7)([d.Z], () => d.Z.getChannel(t), [t]);
+    n = (0, i.e7)([d.Z], () => d.Z.getChannel(t), [t]);
   return l.useMemo(() => null != n ? n : (0, u.kt)({
     id: "1",
     type: r.d.DM
@@ -34,14 +34,14 @@ function E(e) {
 function y(e, t, n) {
   let l = n instanceof u.Sf;
   if (t.isNSFW() && !(l && n.isNSFW())) return {
-    label: b.NW.string(b.t.KgPx1N)
+    label: b.intl.string(b.t.KgPx1N)
   };
   if (l && (0, u.Km)(n.type)) {
     if ((e.attachments.length > 0 || e.messageSnapshots.some(e => e.message.attachments.length > 0)) && !f.Z.can(p.Plq.ATTACH_FILES, n)) return {
-      label: b.NW.string(b.t.P7yvbm)
+      label: b.intl.string(b.t.P7yvbm)
     };
     if ((e.embeds.length > 0 || e.messageSnapshots.some(e => e.message.embeds.length > 0)) && !(0, g.eC)(n, f.Z) && !(0, g.En)(e)) return {
-      label: b.NW.string(b.t.Wr4RIS)
+      label: b.intl.string(b.t.Wr4RIS)
     };
     let t = [...(0, c.cv)(e), ...e.messageSnapshots.flatMap(e => {
       let {
@@ -53,10 +53,10 @@ function y(e, t, n) {
         let n = o.Z.getStickerById(e.id);
         return null != n && !!(0, c.J8)(n) && (n.guild_id !== t.guild_id || void 0)
       })(e, n))) return {
-      label: b.NW.string(b.t["0Yyrub"])
+      label: b.intl.string(b.t["0Yyrub"])
     };
     if ((e.hasFlag(p.iLy.IS_VOICE_MESSAGE) || e.messageSnapshots.some(e => e.message.hasFlag(p.iLy.IS_VOICE_MESSAGE))) && !f.Z.can(p.Plq.SEND_VOICE_MESSAGES, n)) return {
-      label: b.NW.string(b.t.quj4DQ)
+      label: b.intl.string(b.t.quj4DQ)
     }
   }
 }
@@ -66,12 +66,12 @@ function I(e, t) {
 }
 
 function S(e) {
-  let t = (0, a.Wu)([d.Z, f.Z], () => e.map(e => {
+  let t = (0, i.Wu)([d.Z, f.Z], () => e.map(e => {
     let {
       type: t,
       id: n
     } = e;
     return "channel" === t ? d.Z.getChannel(n) : null
   }).filter(m.lm).filter(e => I(e, f.Z)), [e]);
-  return (0, a.Wu)([_.default, h.Z], () => t.map(e => (0, i.F6)(e, _.default, h.Z, !0)), [t])
+  return (0, i.Wu)([_.default, h.Z], () => t.map(e => (0, a.F6)(e, _.default, h.Z, !0)), [t])
 }

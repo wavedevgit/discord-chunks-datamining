@@ -32,7 +32,7 @@ function _(e) {
       size: "sm",
       className: f.icon,
       color: i.TVs.colors.MENTION_FOREGROUND
-    }), null != (t = null == u ? void 0 : u.name) ? t : d.NW.string(d.t["Ij+2ra"]), (0, r.jsx)(l.Z, {})]
+    }), null != (t = null == u ? void 0 : u.name) ? t : d.intl.string(d.t["Ij+2ra"]), (0, r.jsx)(l.Z, {})]
   }, a)
 }
 

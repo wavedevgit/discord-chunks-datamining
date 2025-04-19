@@ -15,10 +15,10 @@ var i = n(120356),
   E = n(174556),
   d = n(358221),
   _ = n(185935),
-  N = n(320007),
-  I = n(540059),
-  O = n(141321),
-  T = n(2818),
+  I = n(320007),
+  O = n(540059),
+  T = n(141321),
+  N = n(2818),
   S = n(954551),
   R = n(208450),
   A = n(975146),
@@ -85,8 +85,8 @@ function Z(e) {
     mobileToolbar: b,
     "aria-label": M,
     "aria-labelledby": Z,
-    scrollable: L,
-    role: j,
+    scrollable: j,
+    role: L,
     hideSearch: v,
     showDivider: F
   } = e, V = null == i || (0, U.AB)(i) ? null : i, x = (0, a.e7)([p.Z], () => p.Z.isInChannel(V) || !1), G = (0, a.e7)([d.Z], () => null != V && d.Z.getParticipantsListOpen(V)), {
@@ -97,14 +97,14 @@ function Z(e) {
     autoTrackExposure: !1
   }), {
     enabled: B,
-    inInbox: W
-  } = T.Z.useExperiment({
+    inInbox: z
+  } = N.Z.useExperiment({
     location: "HeaderBar"
   }), {
-    hasParticipantsPanel: z
+    hasParticipantsPanel: W
   } = (0, _.Z)({
     location: "HeaderBar"
-  }), Y = (0, I.Q3)("HeaderBar");
+  }), Y = (0, O.Q3)("HeaderBar");
   return (0, r.jsx)(D.ZP, {
     className: n,
     innerClassName: u,
@@ -114,9 +114,9 @@ function Z(e) {
       return o.tq ? b : (0, r.jsxs)(r.Fragment, {
         children: [C, e ? (0, r.jsx)(R.Z, {
           className: h.search
-        }, null != c ? c : i) : null, F && (0, r.jsx)(D.ZP.Divider, {}), !Y && (0, r.jsx)(g.Z, {}), !Y && (0, r.jsx)(N.Z, {
+        }, null != c ? c : i) : null, F && (0, r.jsx)(D.ZP.Divider, {}), !Y && (0, r.jsx)(g.Z, {}), !Y && (0, r.jsx)(I.Z, {
           canShowReminder: !0
-        }), !Y && (0, r.jsx)(O.Z, {}), B && !W ? (0, r.jsx)(S.Z, {}) : null, !Y && (w ? (0, r.jsx)(m.Z, {}) : (0, r.jsx)(f.Z, {})), z && x && null != V && !G && l === y.d4z.GROUP_DM && (0, r.jsxs)("div", {
+        }), !Y && (0, r.jsx)(T.Z, {}), B && !z ? (0, r.jsx)(S.Z, {}) : null, !Y && (w ? (0, r.jsx)(m.Z, {}) : (0, r.jsx)(f.Z, {})), W && x && null != V && !G && l === y.d4z.GROUP_DM && (0, r.jsxs)("div", {
           className: h.controlButtonWrapper,
           children: [(0, r.jsx)(D.ZP.Divider, {}), (0, r.jsx)(A.Z, {
             onClick: () => s.Z.toggleParticipantsList(V, !G)
@@ -128,13 +128,13 @@ function Z(e) {
     onDoubleClick: k,
     "aria-label": M,
     "aria-labelledby": Z,
-    role: j,
-    scrollable: L,
+    role: L,
+    scrollable: j,
     children: t
   })
 }
 
-function L(e) {
+function j(e) {
   let {
     children: t,
     className: n,
@@ -152,7 +152,7 @@ function L(e) {
   })
 }
 
-function j(e) {
+function L(e) {
   var {
     isAuthenticated: t = !0
   } = e, n = function(e, t) {
@@ -179,10 +179,10 @@ function j(e) {
     value: i,
     children: t ? (0, r.jsx)(Z, M(b({}, n), {
       className: o
-    })) : (0, r.jsx)(L, M(b({}, n), {
+    })) : (0, r.jsx)(j, M(b({}, n), {
       className: o
     }))
   })
 }
-j.Title = D.ZP.Title, j.Icon = D.ZP.Icon, j.Divider = D.ZP.Divider, j.Caret = D.ZP.Caret;
-let v = j
+L.Title = D.ZP.Title, L.Icon = D.ZP.Icon, L.Divider = D.ZP.Divider, L.Caret = D.ZP.Caret;
+let v = L

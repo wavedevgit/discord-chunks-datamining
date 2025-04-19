@@ -1,36 +1,36 @@
 /** Chunk was on 52030 **/
-r.d(t, {
+n.d(t, {
   Z: () => c
 });
-var n = r(200651);
-r(192379);
-var l = r(481060),
-  s = r(507453),
-  i = r(48550),
-  o = r(388032),
-  a = r(895453);
+var r = n(200651);
+n(192379);
+var l = n(481060),
+  i = n(507453),
+  s = n(48550),
+  o = n(388032),
+  a = n(895453);
 
 function c(e) {
   let {
     mfaChallenge: t,
-    setSlide: r,
+    setSlide: n,
     onClose: c
   } = e;
-  return (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)(s.Z.SlideHeader, {
-      subtitle: o.NW.string(o.t["XQaT+/"]),
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(i.Z.SlideHeader, {
+      subtitle: o.intl.string(o.t["XQaT+/"]),
       onClose: c
-    }), (0, n.jsx)(s.Z.SlideContent, {
-      children: t.methods.map(e => (0, n.jsxs)(l.P3F, {
+    }), (0, r.jsx)(i.Z.SlideContent, {
+      children: t.methods.map(e => (0, r.jsxs)(l.P3F, {
         className: a.listItemContainer,
         onClick: () => {
-          r(e.type)
+          n(e.type)
         },
-        children: [(0, n.jsx)(l.Text, {
+        children: [(0, r.jsx)(l.Text, {
           className: a.listItemText,
           variant: "text-md/semibold",
-          children: i.P[e.type]
-        }), (0, n.jsx)(l.Fbu, {
+          children: s.P[e.type]
+        }), (0, r.jsx)(l.Fbu, {
           size: "custom",
           color: "currentColor",
           width: 20,

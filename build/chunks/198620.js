@@ -4,7 +4,7 @@ n.d(t, {
   B_: () => R,
   MO: () => b,
   _M: () => y,
-  k5: () => A,
+  k5: () => N,
   q5: () => v
 }), n(35282), n(388685);
 var r, i, a, o = n(544891),
@@ -68,13 +68,13 @@ function T(e) {
   return null != t && !!b(t) && I(t)
 }
 
-function N(e) {
+function A(e) {
   var t;
   return T(e.image) || (null == (t = e.images) ? void 0 : t.some(T)) || T(e.video)
 }
 
-function A(e) {
-  return e.attachments.some(S) || e.embeds.some(N)
+function N(e) {
+  return e.attachments.some(S) || e.embeds.some(A)
 }
 async function C(e) {
   let t = await o.tn.post({

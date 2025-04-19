@@ -19,7 +19,7 @@ function d(e) {
   } = (0, s.ZP)();
   return (0, r.jsx)(i.sNh, {
     id: "video-settings",
-    label: u.NW.string(u.t.LKzQSE),
+    label: u.intl.string(u.t.LKzQSE),
     action: () => {
       a.Z.open(l.oAB.VOICE, c.gP, {
         analyticsLocations: t

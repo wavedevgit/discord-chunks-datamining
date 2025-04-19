@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  s = n(120356),
-  l = n.n(s),
+  l = n(120356),
+  s = n.n(l),
   a = n(481060),
   o = n(442837),
   c = n(210753),
@@ -17,7 +17,7 @@ function m(e) {
   let {
     applicationId: t,
     selected: n,
-    onClick: s,
+    onClick: l,
     disabled: m
   } = e, {
     isFetching: g,
@@ -29,8 +29,8 @@ function m(e) {
     var e, n;
     return null != (n = null == (e = d.Z.getDetectableGame(t)) ? void 0 : e.name) ? n : ""
   }), f = i.useCallback(() => {
-    null == s || s(t)
-  }, [t, s]), x = i.useMemo(() => g ? null : null == p ? (0, r.jsx)("div", {
+    null == l || l(t)
+  }, [t, l]), x = i.useMemo(() => g ? null : null == p ? (0, r.jsx)("div", {
     className: u.gameUnknownImage,
     children: (0, r.jsx)(a.IMN, {
       size: "lg"
@@ -41,7 +41,7 @@ function m(e) {
     src: p
   }), [p, g, h]);
   return (0, r.jsxs)("div", {
-    className: l()(u.selectedGame, {
+    className: s()(u.selectedGame, {
       [u.dimmed]: !n,
       [u.disabled]: m
     }),
@@ -49,7 +49,7 @@ function m(e) {
       "aria-disabled": m,
       tabIndex: m ? -1 : 0,
       onClick: m ? void 0 : f,
-      className: l()(u.gameImageBackground, {
+      className: s()(u.gameImageBackground, {
         [u.gameImageLoading]: g,
         [u.disabled]: m
       }),

@@ -60,8 +60,8 @@ let v = 2,
   I = new Map,
   S = null,
   T = [],
-  N = null,
-  A = !1,
+  A = null,
+  N = !1,
   C = new Map,
   R = (e, t) => {
     C = new Map(C.set(e, t))
@@ -184,25 +184,25 @@ function F(e) {
   }), C.delete(n.id), C = new Map(C)
 }
 let V = () => {
-    v = 0, T = [], I.clear(), O.clear(), S = null, C.clear(), C = new Map(C), A = !1, N = null
+    v = 0, T = [], I.clear(), O.clear(), S = null, C.clear(), C = new Map(C), N = !1, A = null
   },
   Z = () => {
-    A = !0
+    N = !0
   },
   H = e => {
     let {
       packs: t
     } = e;
-    t.forEach(e => M(e, !0)), N = Date.now(), A = !1
+    t.forEach(e => M(e, !0)), A = Date.now(), N = !1
   },
-  W = e => {
+  Y = e => {
     let {
       pack: t,
       ingestStickers: n
     } = e;
     M(t, !1, n)
   },
-  Y = e => {
+  W = e => {
     let {
       guildId: t,
       stickers: n
@@ -254,10 +254,10 @@ class Q extends(r = a.ZP.Store) {
     return w(), null == S && (S = new Map, k()), S
   }
   get hasLoadedStickerPacks() {
-    return null != N && N + P > Date.now()
+    return null != A && A + P > Date.now()
   }
   get isFetchingStickerPacks() {
-    return A
+    return N
   }
   getStickerById(e) {
     return I.has(e) || w(), I.get(e)
@@ -293,8 +293,8 @@ let X = new Q(o.Z, {
   LOGOUT: V,
   STICKER_PACKS_FETCH_START: Z,
   STICKER_PACKS_FETCH_SUCCESS: H,
-  STICKER_PACK_FETCH_SUCCESS: W,
-  GUILD_STICKERS_FETCH_SUCCESS: Y,
+  STICKER_PACK_FETCH_SUCCESS: Y,
+  GUILD_STICKERS_FETCH_SUCCESS: W,
   GUILD_STICKERS_CREATE_SUCCESS: K,
   STICKER_FETCH_SUCCESS: z,
   GUILD_STICKERS_UPDATE: q,

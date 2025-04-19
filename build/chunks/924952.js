@@ -23,8 +23,8 @@ function Z(e, t, n) {
     null != e && s.Z.endEvent(e, t.id), (0, l.pTH)()
   };
   return (0, r.jsx)(l.sNh, {
-    id: d.NW.string(d.t.qaYzPD),
-    label: d.NW.string(d.t.qaYzPD),
+    id: d.intl.string(d.t.qaYzPD),
+    label: d.intl.string(d.t.qaYzPD),
     action: function() {
       (0, l.h7j)(e => {
         var t, n;
@@ -46,13 +46,13 @@ function Z(e, t, n) {
           }
           return e
         }({}, e), n = n = {
-          header: d.NW.string(d.t.qaYzPD),
-          confirmText: d.NW.string(d.t.mjB9pa),
-          cancelText: d.NW.string(d.t["ETE/oK"]),
+          header: d.intl.string(d.t.qaYzPD),
+          confirmText: d.intl.string(d.t.mjB9pa),
+          cancelText: d.intl.string(d.t["ETE/oK"]),
           onConfirm: O,
           children: (0, r.jsx)(l.Text, {
             variant: "text-md/normal",
-            children: d.NW.string(d.t.bnDQ7O)
+            children: d.intl.string(d.t.bnDQ7O)
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);

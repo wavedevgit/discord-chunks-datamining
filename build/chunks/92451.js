@@ -29,10 +29,10 @@ let _ = function(e) {
   }]), [f, h] = a.useState(null), j = async () => {
     null != f && h(null);
     let e = y.map(e => e.value.trim()).filter(e => "" !== e);
-    if (0 === e.length) return void h(p.NW.string(p.t.TCHkcX));
+    if (0 === e.length) return void h(p.intl.string(p.t.TCHkcX));
     let t = {
       field_type: s.QJ.TERMS,
-      label: p.NW.string(p.t["9suSIC"]),
+      label: p.intl.string(p.t["9suSIC"]),
       values: e,
       required: !0
     };
@@ -63,7 +63,7 @@ let _ = function(e) {
       return e
     }({}, e), n = n = {
       errorText: f,
-      title: p.NW.string(p.t["3pz9t7"]),
+      title: p.intl.string(p.t["3pz9t7"]),
       onCancel: m,
       onConfirm: j,
       children: (0, r.jsx)(d.k, {

@@ -1,13 +1,13 @@
 /** Chunk was on 83536 **/
 n.d(t, {
-  Gl: () => s,
-  hG: () => i,
-  oI: () => r
+  Gl: () => l,
+  hG: () => a,
+  oI: () => s
 });
-var a = n(570140);
+var i = n(570140);
 
-function i(e, t, n) {
-  a.Z.dispatch({
+function a(e, t, n) {
+  i.Z.dispatch({
     type: "CONNECTED_DEVICE_SET",
     displayName: e,
     connectedDevicePreference: t,
@@ -15,15 +15,15 @@ function i(e, t, n) {
   })
 }
 
-function s(e) {
-  a.Z.dispatch({
+function l(e) {
+  i.Z.dispatch({
     type: "CONNECTED_DEVICE_IGNORE",
     displayName: e
   })
 }
 
-function r() {
-  a.Z.dispatch({
+function s() {
+  i.Z.dispatch({
     type: "CONNECTED_DEVICE_NEVER_SHOW_MODAL"
   })
 }

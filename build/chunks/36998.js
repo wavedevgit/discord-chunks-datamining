@@ -1,14 +1,14 @@
 /** Chunk was on 96473 **/
 e.d(n, {
-  v: () => i
+  v: () => r
 });
 var l = e(944486),
-  r = e(176505);
+  i = e(176505);
 
-function i() {
+function r() {
   var t;
   let n = null != (t = l.Z.getCurrentlySelectedChannelId()) ? t : void 0;
-  return null != n && (0, r.AB)(n) ? {
+  return null != n && (0, i.AB)(n) ? {
     channel_static_route: n
   } : {
     channel_id: n

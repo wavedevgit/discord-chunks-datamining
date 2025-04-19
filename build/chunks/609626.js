@@ -10,11 +10,11 @@ var i = n(768581),
 
 function s(e, t) {
   let n = e.username,
-    s = a.NW.format(a.t["Yk+uYG"], {
+    s = a.intl.format(a.t["Yk+uYG"], {
       username: ""
     }),
     c = (0, i.ov)(e),
-    u = a.NW.string(a.t.WRj1Wl),
+    u = a.intl.string(a.t.WRj1Wl),
     {
       trackView: d,
       trackClick: p

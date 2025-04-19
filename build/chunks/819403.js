@@ -24,20 +24,20 @@ function g(e) {
     v = (0, l.e7)([o.Z], () => o.Z.getGuild(O), [O]),
     p = (0, l.e7)([s.Z], () => null != g ? s.Z.getVoiceStateForChannel(g, e.id) : null, [g, e.id]),
     j = (null == (t = a.default.getCurrentUser()) ? void 0 : t.id) === e.id,
-    N = (0, f.Z)(),
-    m = (0, l.e7)([c.ZP], () => c.ZP.getPermissionsForUser(e.id, g), [g, e.id]),
-    h = (0, d.B)(g);
-  if (null == n || null == v || null == p || m.speaker) return null;
-  let y = () => {
+    m = (0, f.Z)(),
+    h = (0, l.e7)([c.ZP], () => c.ZP.getPermissionsForUser(e.id, g), [g, e.id]),
+    y = (0, d.B)(g);
+  if (null == n || null == v || null == p || h.speaker) return null;
+  let P = () => {
     j ? (0, u.RK)(n, !1) : (0, u._0)(n, e.id)
   };
-  return h ? (0, i.jsx)(r.sNh, {
+  return y ? (0, i.jsx)(r.sNh, {
     id: "invite-speaker",
-    label: j ? b.NW.string(b.t["W6c/VV"]) : b.NW.string(b.t.VUCWcH),
-    action: y
-  }) : N && j ? (0, i.jsx)(r.sNh, {
+    label: j ? b.intl.string(b.t["W6c/VV"]) : b.intl.string(b.t.VUCWcH),
+    action: P
+  }) : m && j ? (0, i.jsx)(r.sNh, {
     id: "invite-speaker",
-    label: b.NW.string(b.t["W6c/VV"]),
-    action: y
+    label: b.intl.string(b.t["W6c/VV"]),
+    action: P
   }) : null
 }

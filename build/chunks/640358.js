@@ -10,10 +10,10 @@ let i = (e, t) => {
     maximumFractionDigits: +(n % 1 != 0)
   }).format(e);
   let i = Math.round(e / 1e6 * 10) / 10,
-    s = new Intl.NumberFormat(t, {
+    l = new Intl.NumberFormat(t, {
       maximumFractionDigits: +(i % 1 != 0)
     }).format(e / 1e6);
   return r.Z.Messages.NUMBER_ABBREVIATIONS_MILLION.format({
-    num: s
+    num: l
   })
 }

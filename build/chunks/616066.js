@@ -80,6 +80,6 @@ let g = u.ZP.getEnableHardwareAcceleration() ? s.Xo$ : s.qEK,
         [f.avatarPurchased]: u && !i
       }),
       size: _,
-      "aria-label": d.NW.string(d.t.lqaIxM)
+      "aria-label": d.intl.string(d.t.lqaIxM)
     }))
   }

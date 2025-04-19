@@ -49,9 +49,9 @@ let _ = e => {
   return O && null != x && (null == j ? void 0 : j.type) === m.B.CONFETTI ? (0, r.jsx)(a.P3F, {
     onFocus: C,
     onClick: P,
-    "aria-label": h.NW.string(h.t.Mp5k6O),
+    "aria-label": h.intl.string(h.t.Mp5k6O),
     children: (0, r.jsx)(a.ua7, {
-      text: h.NW.formatToPlainString(h.t["FE++aG"], {
+      text: h.intl.formatToPlainString(h.t["FE++aG"], {
         user: x
       }),
       children: e => {
@@ -85,7 +85,7 @@ let _ = e => {
           }), (0, r.jsx)(a.Text, {
             variant: "text-xs/bold",
             color: "currentColor",
-            children: h.NW.string(h.t["8Rrro6"])
+            children: h.intl.string(h.t["8Rrro6"])
           })]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);

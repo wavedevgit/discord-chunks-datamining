@@ -72,7 +72,7 @@ let E = e => r.useState(() => new h.AS(e))[0],
         wrapChildren: _
       })
     }) : n ? t ? null : (0, i.jsx)(s.E, {
-      emptyText: g.NW.string(g.t.O1Nbjo),
+      emptyText: g.intl.string(g.t.O1Nbjo),
       icon: l.Dkj,
       absolute: !0
     }) : null

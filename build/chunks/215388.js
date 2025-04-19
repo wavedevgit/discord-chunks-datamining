@@ -5,8 +5,8 @@ r.d(t, {
 var n = r(200651),
   A = r(192379),
   a = r(120356),
-  o = r.n(a),
-  l = r(772848),
+  l = r.n(a),
+  o = r(772848),
   i = r(481060),
   s = r(752305),
   c = r(893718),
@@ -16,7 +16,7 @@ var n = r(200651),
   f = r(388032),
   p = r(3840),
   m = r(999249);
-let h = (0, l.Z)(),
+let h = (0, o.Z)(),
   b = (0, d.kt)({
     id: "1",
     type: g.d4z.DM
@@ -39,7 +39,7 @@ function C(e) {
     text: a
   } = e;
   return (0, n.jsxs)("div", {
-    className: o()(m.maxLength, {
+    className: l()(m.maxLength, {
       [m.errorOverflow]: r
     }),
     "aria-hidden": "true",
@@ -52,18 +52,18 @@ function q(e) {
   let {
     "aria-labelledby": r,
     className: a,
-    id: l,
+    id: o,
     autoFocus: d,
     maxLength: g,
     onChange: m,
     onSubmit: q,
     showCharacterCount: x = !1,
     placeholder: j,
-    required: N,
-    value: O,
-    enableThemedBackground: U = !1,
-    parentModalKey: P
-  } = e, V = (0, i.Gc0)(), [W, y] = A.useState(() => (0, s.JM)(O)), I = A.useRef(!0 === d), T = null != r ? r : null == V ? void 0 : V.titleId, F = null != (t = null == V ? void 0 : V.errorId) ? t : h, Z = A.useMemo(() => ({
+    required: O,
+    value: U,
+    enableThemedBackground: P = !1,
+    parentModalKey: V
+  } = e, N = (0, i.Gc0)(), [y, I] = A.useState(() => (0, s.JM)(U)), T = A.useRef(!0 === d), F = null != r ? r : null == N ? void 0 : N.titleId, Z = null != (t = null == N ? void 0 : N.errorId) ? t : h, K = A.useMemo(() => ({
     analyticsName: "simple",
     autocomplete: {
       alwaysUseLayer: !0,
@@ -85,38 +85,38 @@ function q(e) {
     }
   }), [d]);
   return (0, n.jsxs)(c.Z, {
-    "aria-describedby": F,
-    "aria-labelledby": T,
-    innerClassName: o()(a, p.textArea),
-    id: l,
+    "aria-describedby": Z,
+    "aria-labelledby": F,
+    innerClassName: l()(a, p.textArea),
+    id: o,
     maxCharacterCount: g,
     onChange: function(e, t, r) {
-      m(t), y(r)
+      m(t), I(r)
     },
     placeholder: j,
-    required: N,
+    required: O,
     channel: b,
-    textValue: O,
-    richValue: W,
-    type: Z,
+    textValue: U,
+    richValue: y,
+    type: K,
     onBlur: () => {
-      I.current = !1
+      T.current = !1
     },
     onFocus: () => {
-      I.current = !0
+      T.current = !0
     },
-    focused: I.current,
+    focused: T.current,
     onSubmit: null != q ? q : v,
-    disableThemedBackground: !U,
-    parentModalKey: P,
+    disableThemedBackground: !P,
+    parentModalKey: V,
     emojiPickerCloseOnModalOuterClick: !0,
     children: [!0 === x && (0, n.jsx)(C, {
-      hasError: null != V.error || null != g && O.length > g,
-      text: O,
+      hasError: null != N.error || null != g && U.length > g,
+      text: U,
       maxLength: g
     }), null != g && (0, n.jsx)(i.nn4, {
       id: h,
-      children: f.NW.format(f.t["+DFxLS"], {
+      children: f.intl.format(f.t["+DFxLS"], {
         maxLength: g
       })
     })]

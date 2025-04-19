@@ -45,11 +45,11 @@ function C(e) {
     embeddedActivitiesManager: h.Z,
     assetNames: b,
     commandOrigin: x
-  }), [N, I] = l.useState(!1), P = l.useCallback(() => {
-    I(!0)
-  }, [I]), S = l.useCallback(() => {
-    I(!1)
-  }, [I]), Z = l.useMemo(() => (0, i.jsx)("div", {
+  }), [I, P] = l.useState(!1), S = l.useCallback(() => {
+    P(!0)
+  }, [P]), Z = l.useCallback(() => {
+    P(!1)
+  }, [P]), N = l.useMemo(() => (0, i.jsx)("div", {
     className: g.overlayBadge,
     children: (0, i.jsx)("div", {
       className: g.badgeContainer,
@@ -67,7 +67,7 @@ function C(e) {
             children: (0, i.jsx)(c.Text, {
               variant: "text-sm/medium",
               color: "always-white",
-              children: m.NW.string(m.t.VJlc0d)
+              children: m.intl.string(m.t.VJlc0d)
             })
           })
         });
@@ -79,7 +79,7 @@ function C(e) {
             children: (0, i.jsx)(c.Text, {
               variant: "text-sm/medium",
               color: "always-white",
-              children: m.NW.string(m.t["wH/wDA"])
+              children: m.intl.string(m.t["wH/wDA"])
             })
           })
         });
@@ -93,10 +93,10 @@ function C(e) {
     color: "transparent",
     look: c.zxk.Looks.BLANK,
     size: c.zxk.Sizes.NONE,
-    onFocus: P,
-    onBlur: S,
-    onMouseEnter: P,
-    onMouseLeave: S,
+    onFocus: S,
+    onBlur: Z,
+    onMouseEnter: S,
+    onMouseLeave: Z,
     innerClassName: g.activityItemButtonInnerClass,
     children: (0, i.jsx)(c.AMe, {
       config: _,
@@ -104,7 +104,7 @@ function C(e) {
         value: 0
       },
       to: {
-        value: +!!N
+        value: +!!I
       },
       children: e => {
         let {
@@ -125,7 +125,7 @@ function C(e) {
               applicationName: r.application.name,
               imageClassName: g.activitySuggestionImage,
               imageNotFoundClassName: g.brokenImageIconWrapper
-            }), Z, T]
+            }), N, T]
           })
         })
       }

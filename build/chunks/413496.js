@@ -23,10 +23,10 @@ var r = n(507604),
   I = n(923646),
   S = n(204954),
   T = O("match"),
-  N = i.RegExp,
-  A = N.prototype,
+  A = i.RegExp,
+  N = A.prototype,
   C = i.SyntaxError,
-  R = a(A.exec),
+  R = a(N.exec),
   P = a("".charAt),
   w = a("".replace),
   D = a("".indexOf),
@@ -34,11 +34,11 @@ var r = n(507604),
   x = /^\?<[^\s\d!#%&*+<=>@^][^\s!#%&*+<=>@^]*>/,
   M = /a/g,
   k = /a/g,
-  j = new N(M) !== M,
+  j = new A(M) !== M,
   U = h.MISSED_STICKY,
   G = h.UNSUPPORTED_Y,
   B = r && (!j || U || I || S || E(function() {
-    return k[T] = !1, N(M) !== M || N(k) === k || "/a/i" !== String(N(M, "i"))
+    return k[T] = !1, A(M) !== M || A(k) === k || "/a/i" !== String(A(M, "i"))
   })),
   F = function(e) {
     for (var t, n = e.length, r = 0, i = "", a = !1; r <= n; r++) {
@@ -73,18 +73,18 @@ var r = n(507604),
   };
 if (o("RegExp", B)) {
   for (var Z = function(e, t) {
-      var n, r, i, a, o, c, u = d(A, this),
+      var n, r, i, a, o, c, u = d(N, this),
         h = f(e),
         m = void 0 === t,
         g = [],
         E = e;
       if (!u && h && m && e.constructor === Z) return e;
-      if ((h || d(A, e)) && (e = e.source, m && (t = p(E))), e = void 0 === e ? "" : _(e), t = void 0 === t ? "" : _(t), E = e, I && "dotAll" in M && (r = !!t && D(t, "s") > -1) && (t = w(t, /s/g, "")), n = t, U && "sticky" in M && (i = !!t && D(t, "y") > -1) && G && (t = w(t, /y/g, "")), S && (e = (a = V(e))[0], g = a[1]), o = s(N(e, t), u ? this : A, Z), (r || i || g.length) && (c = y(o), r && (c.dotAll = !0, c.raw = Z(F(e), n)), i && (c.sticky = !0), g.length && (c.groups = g)), e !== E) try {
+      if ((h || d(N, e)) && (e = e.source, m && (t = p(E))), e = void 0 === e ? "" : _(e), t = void 0 === t ? "" : _(t), E = e, I && "dotAll" in M && (r = !!t && D(t, "s") > -1) && (t = w(t, /s/g, "")), n = t, U && "sticky" in M && (i = !!t && D(t, "y") > -1) && G && (t = w(t, /y/g, "")), S && (e = (a = V(e))[0], g = a[1]), o = s(A(e, t), u ? this : N, Z), (r || i || g.length) && (c = y(o), r && (c.dotAll = !0, c.raw = Z(F(e), n)), i && (c.sticky = !0), g.length && (c.groups = g)), e !== E) try {
         l(o, "source", "" === E ? "(?:)" : E)
       } catch (e) {}
       return o
-    }, H = u(N), W = 0; H.length > W;) m(Z, N, H[W++]);
-  A.constructor = Z, Z.prototype = A, g(i, "RegExp", Z, {
+    }, H = u(A), Y = 0; H.length > Y;) m(Z, A, H[Y++]);
+  N.constructor = Z, Z.prototype = N, g(i, "RegExp", Z, {
     constructor: !0
   })
 }

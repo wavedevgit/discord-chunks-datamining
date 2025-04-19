@@ -49,7 +49,7 @@ let _ = e => {
     let n = null == (t = (0, s.PJ)(e, r.N.AGGREGATE_COUNT)) ? void 0 : t.count;
     return null == n ? [] : [{
       iconPath: c.eF,
-      text: u.NW.formatToPlainString(u.t.HtifnJ, {
+      text: u.intl.formatToPlainString(u.t.HtifnJ, {
         count: n
       })
     }]

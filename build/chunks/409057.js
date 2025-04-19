@@ -27,8 +27,8 @@ var i = n(120356),
   I = n(979038),
   S = n(448980),
   T = n(336383),
-  N = n(194811),
-  A = n(373826),
+  A = n(194811),
+  N = n(373826),
   C = n(315324),
   R = n(262210),
   P = n(670451),
@@ -90,11 +90,11 @@ function F(e) {
     onClose: Z,
     appContext: H
   } = e, {
-    analyticsLocations: W
+    analyticsLocations: Y
   } = (0, f.ZP)(d.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), {
-    profileType: Y
+    profileType: W
   } = (0, O.z)(), K = {
-    [k.fullSize]: Y === D.y0.FULL_SIZE
+    [k.fullSize]: W === D.y0.FULL_SIZE
   }, z = (0, h.Z)({
     activity: i,
     user: t
@@ -103,7 +103,7 @@ function F(e) {
     user: t,
     activity: i,
     entry: z,
-    analyticsLocations: W
+    analyticsLocations: Y
   }), Q = (0, b.Z)({
     userId: t.id,
     onAction: q
@@ -145,21 +145,21 @@ function F(e) {
         size: "xxs",
         color: o.TVs.colors.TEXT_NORMAL,
         className: k.voiceIcon
-      }), (0, r.jsx)(A.Z, {
+      }), (0, r.jsx)(N.Z, {
         variant: "heading-sm/semibold",
         text: F.name
       })]
-    }) : (0, c.Z)(i) || (0, g.dS)(i) ? (0, r.jsx)(A.Z, {
+    }) : (0, c.Z)(i) || (0, g.dS)(i) ? (0, r.jsx)(N.Z, {
       variant: "heading-sm/semibold",
       text: i.name
-    }) : (0, r.jsx)(A.Z, {
+    }) : (0, r.jsx)(N.Z, {
       variant: "heading-sm/semibold",
       text: null != (e = i.details) ? e : i.name
     })
   }, er = () => {
-    if ((0, u.Z)(i) && null != G) return (0, r.jsx)(A.Z, {
+    if ((0, u.Z)(i) && null != G) return (0, r.jsx)(N.Z, {
       variant: "text-xs/normal",
-      text: M.NW.formatToPlainString(M.t["hq/Qzc"], {
+      text: M.intl.formatToPlainString(M.t["hq/Qzc"], {
         guildName: G.name
       }),
       onClick: () => {
@@ -168,18 +168,18 @@ function F(e) {
         }), null == Z || Z()
       }
     });
-    if ((0, c.Z)(i)) return (0, r.jsx)(A.Z, {
+    if ((0, c.Z)(i)) return (0, r.jsx)(N.Z, {
       variant: "text-xs/normal",
       text: i.details
     });
     if ((0, g.dS)(i)) {
       var e;
-      return (0, r.jsx)(A.Z, {
+      return (0, r.jsx)(N.Z, {
         variant: "text-xs/normal",
         text: null == i || null == (e = i.assets) ? void 0 : e.small_text
       })
     }
-    return (0, r.jsx)(A.Z, {
+    return (0, r.jsx)(N.Z, {
       variant: "text-xs/normal",
       text: i.state
     })
@@ -188,16 +188,16 @@ function F(e) {
     if (i.type === L.IIU.WATCHING) return null;
     if ((0, c.Z)(i)) return ea();
     if ((0, g.dS)(i) && (null == (e = i.party) ? void 0 : e.size) != null && (null == (t = i.party) ? void 0 : t.size.length) >= 2) {
-      let e = M.NW.formatToPlainString(M.t["JC/3x8"], {
+      let e = M.intl.formatToPlainString(M.t["JC/3x8"], {
         numSpeakers: null == (a = i.party) ? void 0 : a.size[0],
         numListeners: (null == (o = i.party) ? void 0 : o.size[1]) - (null == (s = i.party) ? void 0 : s.size[0])
       });
-      return (0, r.jsx)(A.Z, {
+      return (0, r.jsx)(N.Z, {
         variant: "text-xs/normal",
         text: e
       })
     }
-    return (0, r.jsx)(A.Z, {
+    return (0, r.jsx)(N.Z, {
       text: null == (n = i.assets) ? void 0 : n.large_text,
       variant: "text-xs/normal"
     })
@@ -205,31 +205,31 @@ function F(e) {
     var e, t, n, a;
     return (null == (e = i.party) ? void 0 : e.size) == null && i.application_id === x.Zc ? (0, r.jsxs)("div", {
       className: k.gameState,
-      children: [(0, r.jsx)(A.Z, {
+      children: [(0, r.jsx)(N.Z, {
         variant: "text-xs/normal",
         text: i.state
-      }), (0, r.jsx)(A.Z, {
+      }), (0, r.jsx)(N.Z, {
         variant: "text-xs/normal",
-        text: M.NW.formatToPlainString(M.t["u//9Bw"], {
+        text: M.intl.formatToPlainString(M.t["u//9Bw"], {
           count: "0",
           max: null != (a = null == j ? void 0 : j.getMaxParticipants()) ? a : 0
         })
       })]
     }) : (0, l.Z)(i) && (null == (t = i.party) ? void 0 : t.size) != null && (null == (n = i.party) ? void 0 : n.size.length) >= 2 ? (0, r.jsxs)("div", {
       className: k.gameState,
-      children: [(0, r.jsx)(A.Z, {
+      children: [(0, r.jsx)(N.Z, {
         variant: "text-xs/normal",
         text: i.state
-      }), (0, r.jsx)(A.Z, {
+      }), (0, r.jsx)(N.Z, {
         variant: "text-xs/normal",
-        text: 0 === i.party.size[1] ? M.NW.formatToPlainString(M.t.IM4J4e, {
+        text: 0 === i.party.size[1] ? M.intl.formatToPlainString(M.t.IM4J4e, {
           count: i.party.size[0]
-        }) : M.NW.formatToPlainString(M.t["u//9Bw"], {
+        }) : M.intl.formatToPlainString(M.t["u//9Bw"], {
           count: i.party.size[0],
           max: i.party.size[1]
         })
       })]
-    }) : null == i.party ? (0, r.jsx)(A.Z, {
+    }) : null == i.party ? (0, r.jsx)(N.Z, {
       variant: "text-xs/normal",
       text: i.state
     }) : null
@@ -269,13 +269,13 @@ function F(e) {
     })
   });
   return (0, r.jsx)(f.Gt, {
-    value: W,
+    value: Y,
     children: (0, r.jsxs)(T.Z, {
       ref: Q,
       className: a()(k.card, V),
       onAction: q,
       onClose: Z,
-      children: [(0, r.jsx)(N.Z, B(U({}, X), {
+      children: [(0, r.jsx)(A.Z, B(U({}, X), {
         contextMenu: (0, r.jsx)(P.Z, {
           display: "live",
           user: t,
@@ -295,9 +295,9 @@ function F(e) {
               activity: i,
               className: k.badges
             }), eo()]
-          }), Y === D.y0.FULL_SIZE && ec()]
+          }), W === D.y0.FULL_SIZE && ec()]
         }), el()]
-      }), Y !== D.y0.FULL_SIZE && ec()]
+      }), W !== D.y0.FULL_SIZE && ec()]
     })
   })
 }

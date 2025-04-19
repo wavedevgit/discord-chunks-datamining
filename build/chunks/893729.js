@@ -25,7 +25,7 @@ function M(e) {
     guildId: r,
     role: s,
     theme: M,
-    content: g = b.NW.string(b.t["6OSasb"]),
+    content: g = b.intl.string(b.t["6OSasb"]),
     className: j
   } = e, O = (0, l.e7)([f.default], () => f.default.getCurrentUser()), y = p.ZP.useName(r, null, O), m = (0, c.Kz)(s), H = i.useMemo(() => {
     var e, t;

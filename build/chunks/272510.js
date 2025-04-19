@@ -92,7 +92,7 @@ function E(e) {
       action: "UNIGNORE",
       analyticsLocations: v
     })
-  }), N = (0, f.Z)({
+  }), A = (0, f.Z)({
     user: t,
     guildId: n,
     location: O,
@@ -102,9 +102,9 @@ function E(e) {
       action: "REPORT",
       analyticsLocations: v
     })
-  }), A = [
+  }), N = [
     [m, I],
-    [T, S, N, (0, f.T)({
+    [T, S, A, (0, f.T)({
       user: t,
       guildId: n,
       location: O,
@@ -117,14 +117,14 @@ function E(e) {
     })],
     [(0, l.Z)({
       id: t.id,
-      label: h.NW.string(h.t["/AXYnJ"]),
+      label: h.intl.string(h.t["/AXYnJ"]),
       onSuccess: () => y({
         action: "COPY_USER_ID",
         analyticsLocations: v
       })
     })]
   ];
-  return A.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(s.Gt, {
+  return N.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(s.Gt, {
     value: v,
     children: (0, r.jsx)(a.yRy, {
       targetElementRef: b,
@@ -136,8 +136,8 @@ function E(e) {
           navId: "user-profile-overflow-menu",
           onSelect: void 0,
           onClose: t,
-          "aria-label": h.NW.string(h.t.AXIHpa),
-          children: A.map((e, t) => (0, r.jsx)(a.kSQ, {
+          "aria-label": h.intl.string(h.t.AXIHpa),
+          children: N.map((e, t) => (0, r.jsx)(a.kSQ, {
             children: e.map(e => e)
           }, t))
         })
@@ -146,7 +146,7 @@ function E(e) {
         ref: b,
         action: "PRESS_OPTIONS",
         icon: a.xhG,
-        tooltipText: h.NW.string(h.t.UKOtz8)
+        tooltipText: h.intl.string(h.t.UKOtz8)
       }, e))
     })
   })

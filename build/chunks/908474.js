@@ -23,7 +23,7 @@ function f(e) {
     return (0, c.fv)(t, c.jq.JOINED_AT)
   }, []), _ = i.useMemo(() => null == t ? null : b(g), [t, b, g]), y = i.useMemo(() => (0, s.J)(t.communicationDisabledUntil), [t.communicationDisabledUntil]), C = i.useMemo(() => null == t.communicationDisabledUntil ? new Date : new Date(t.communicationDisabledUntil), [t.communicationDisabledUntil]);
   return null != g || y ? (0, r.jsx)(o.xJW, {
-    title: p.NW.string(p.t["7V375+"]),
+    title: p.intl.string(p.t["7V375+"]),
     titleClassName: h.infoTitle,
     children: (0, r.jsxs)(d.WM, {
       children: [null != g && (0, r.jsx)(d._2, {
@@ -36,7 +36,7 @@ function f(e) {
         name: (0, r.jsx)(o.Text, {
           variant: "text-sm/semibold",
           color: "text-normal",
-          children: p.NW.string(p.t.ZRnONz)
+          children: p.intl.string(p.t.ZRnONz)
         }),
         description: (0, r.jsx)(o.Text, {
           variant: "text-sm/semibold",
@@ -53,7 +53,7 @@ function f(e) {
         name: (0, r.jsx)(o.Text, {
           variant: "text-sm/semibold",
           color: "text-normal",
-          children: p.NW.string(p.t["TJ8/tL"])
+          children: p.intl.string(p.t["TJ8/tL"])
         }),
         description: (0, r.jsx)(o.Text, {
           variant: "text-sm/semibold",

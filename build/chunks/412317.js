@@ -146,7 +146,7 @@ function I(e) {
     className: b.multipleButtons,
     children: [(0, r.jsx)(g, {
       icon: o.iHX,
-      tooltipText: p.NW.string(p.t.zz2i8v),
+      tooltipText: p.intl.string(p.t.zz2i8v),
       user: t,
       analyticsLocation: h
     }), (0, r.jsx)(c.c, {
@@ -157,7 +157,7 @@ function I(e) {
     className: b.multipleButtons,
     children: [(0, r.jsx)(g, {
       icon: o.iHX,
-      tooltipText: p.NW.string(p.t.ZOFd1N),
+      tooltipText: p.intl.string(p.t.ZOFd1N),
       user: t,
       analyticsLocation: h
     }), (0, r.jsx)(c.c, {
@@ -172,7 +172,7 @@ function I(e) {
     }), (0, r.jsx)(s.tG, {
       action: "SEND_FRIEND_REQUEST",
       icon: o.oLu,
-      text: p.NW.string(p.t["7815aW"]),
+      text: p.intl.string(p.t["7815aW"]),
       color: o.zxk.Colors.BRAND,
       onClick: () => {
         i.Z.addRelationship({

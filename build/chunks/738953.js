@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(502762),
   S = n(544989),
   T = n(481932),
-  N = n(195387),
-  A = n(272510),
+  A = n(195387),
+  N = n(272510),
   C = n(4517),
   R = n(171368),
   P = n(978395),
@@ -87,12 +87,12 @@ function B(e) {
     openedAt: V,
     closePopout: Z,
     setPopoutRef: H,
-    disableUserProfileLink: W = __OVERLAY__,
-    newAnalyticsLocations: Y = [],
+    disableUserProfileLink: Y = __OVERLAY__,
+    newAnalyticsLocations: W = [],
     appContext: K = L.IlC.APP
   } = e, {
     analyticsLocations: z
-  } = (0, d.ZP)([...Y, u.Z.BITE_SIZE_PROFILE_POPOUT]), q = (0, m.ZB)({
+  } = (0, d.ZP)([...W, u.Z.BITE_SIZE_PROFILE_POPOUT]), q = (0, m.ZB)({
     layout: "POPOUT",
     userId: t.id,
     guildId: k,
@@ -129,9 +129,9 @@ function B(e) {
         appContext: K
       }))
     },
-    eo = () => W ? null : (0, r.jsx)(s.sNh, {
+    eo = () => Y ? null : (0, r.jsx)(s.sNh, {
       id: "view-profile",
-      label: x.NW.string(x.t["+Xp3ho"]),
+      label: x.intl.string(x.t["+Xp3ho"]),
       action: () => {
         ea(), (0, g.pQ)(j({
           action: "PRESS_VIEW_PROFILE",
@@ -161,7 +161,7 @@ function B(e) {
               className: M.backdrop
             }), (0, r.jsxs)(S.Z, {
               profileType: D.y0.BITE_SIZE,
-              children: [(0, r.jsx)(N.Z, {
+              children: [(0, r.jsx)(A.Z, {
                 shouldShowTooltip: null === et.interactionType,
                 user: t,
                 guildId: k,
@@ -172,7 +172,7 @@ function B(e) {
                 shouldShowTooltip: null === et.interactionType,
                 profileType: D.y0.BITE_SIZE,
                 user: t
-              }), t.id !== n.id && (0, r.jsx)(A.Z, {
+              }), t.id !== n.id && (0, r.jsx)(N.Z, {
                 user: t,
                 guildId: k,
                 viewProfileItem: eo(),
@@ -196,7 +196,7 @@ function B(e) {
                 guildId: k,
                 channelId: U,
                 profileType: D.y0.BITE_SIZE,
-                onOpenProfile: W ? void 0 : ea
+                onOpenProfile: Y ? void 0 : ea
               }), (0, r.jsx)(C.Z, {
                 location: "UserProfilePopout",
                 user: t,
@@ -212,7 +212,7 @@ function B(e) {
               displayProfile: $,
               guild: Q,
               isHovering: null == et.interactionType && ee,
-              onOpenProfile: W ? void 0 : ea,
+              onOpenProfile: Y ? void 0 : ea,
               channelId: U,
               onClose: Z
             }), (0, r.jsx)(w.Z, {

@@ -1,6 +1,6 @@
 /** Chunk was on 3656 **/
 n.d(t, {
-  Z: () => G
+  Z: () => F
 });
 var r = n(200651),
   i = n(192379),
@@ -25,11 +25,11 @@ var r = n(200651),
   j = n(569211),
   O = n(663924),
   E = n(533379),
-  N = n(562129),
-  I = n(404295),
-  P = n(540059),
-  S = n(605236),
-  Z = n(819640),
+  I = n(562129),
+  P = n(404295),
+  S = n(540059),
+  Z = n(605236),
+  N = n(819640),
   T = n(291407),
   A = n(685006),
   w = n(61356),
@@ -38,71 +38,71 @@ var r = n(200651),
   M = n(921944),
   L = n(388032),
   D = n(560163),
-  W = n(795361);
-let U = i.forwardRef(function(e, t) {
+  U = n(795361);
+let B = i.forwardRef(function(e, t) {
   var n, l;
   let {
     type: j,
     animateRef: O
   } = e, E = (0, s.e7)([x.Z], () => x.Z.shouldShowPopup() && x.Z.activeViewType() === j), {
-    badgeTreatment: I
+    badgeTreatment: P
   } = f.Y.useExperiment({
     location: "ChannelAppLauncherButton"
   }, {
     autoTrackExposure: !0
   }), {
-    Component: Z,
+    Component: N,
     events: T,
     play: A
-  } = (0, N.Z)("ChannelAppLauncherButton"), {
+  } = (0, I.Z)("ChannelAppLauncherButton"), {
     Component: w,
-    play: W
+    play: U
   } = (0, u.B)(), {
-    Component: U,
-    play: B
-  } = (0, d.P)(), G = (0, P.Q3)("ChannelAppLauncherButton");
+    Component: B,
+    play: G
+  } = (0, d.P)(), F = (0, S.Q3)("ChannelAppLauncherButton");
   i.useImperativeHandle(O, () => ({
     animate: () => {
       T.onMouseEnter()
     }
   }), [T]);
-  let F = (0, g.a)({
+  let H = (0, g.a)({
       surface: h.eR.TEXT_LAUNCHER,
-      skipFetchingShelf: I === f.O.NONE
+      skipFetchingShelf: P === f.O.NONE
     }),
-    H = i.useCallback(() => {
+    V = i.useCallback(() => {
       (0, _.yw)(R.rMx.APP_LAUNCHER_ENTRYPOINT_BUTTON_CLICKED, {
         source: v._b.TEXT,
-        badge_type: F ? I.valueOf() : null
-      }), E ? C.yT(v.ti.DISMISSED) : ((0, S.EW)(c.z.DESKTOP_APP_LAUNCHER_ONBOARDING, {
+        badge_type: H ? P.valueOf() : null
+      }), E ? C.yT(v.ti.DISMISSED) : ((0, Z.EW)(c.z.DESKTOP_APP_LAUNCHER_ONBOARDING, {
         dismissAction: M.L.TAKE_ACTION
       }), C.__(v._b.TEXT, j), m.ux()), A()
-    }, [E, j, A, F, I]);
+    }, [E, j, A, H, P]);
   i.useEffect(() => {
     let e = setTimeout(() => {
-      I !== f.O.NONE && F && (W(), B(), (0, y.h)({
+      P !== f.O.NONE && H && (U(), G(), (0, y.h)({
         type: a.ImpressionTypes.VIEW,
         name: a.ImpressionNames.APP_LAUNCHER_BADGE,
         properties: {
           source: v._b.TEXT,
-          badge_type: I.valueOf()
+          badge_type: P.valueOf()
         }
       }))
     }, 1e3);
     return () => clearTimeout(e)
-  }, [W, B, I, F]);
-  let V = i.useMemo(() => {
-    let e = (0, r.jsx)(Z, {
-      size: G ? "refresh_sm" : void 0,
+  }, [U, G, P, H]);
+  let z = i.useMemo(() => {
+    let e = (0, r.jsx)(N, {
+      size: F ? "refresh_sm" : void 0,
       color: "currentColor"
     });
-    if (!F) return e;
-    switch (I) {
+    if (!H) return e;
+    switch (P) {
       case f.O.WORDLE_LOGO_ANIMATION:
         return (0, r.jsx)("div", {
           className: D.channelAppLauncherWordlePromo,
-          children: (0, r.jsx)(U, {
-            size: G ? "refresh_sm" : void 0,
+          children: (0, r.jsx)(B, {
+            size: F ? "refresh_sm" : void 0,
             useLottieDefaultColors: !0
           })
         });
@@ -112,9 +112,9 @@ let U = i.forwardRef(function(e, t) {
       default:
         return e
     }
-  }, [Z, U, I, G, F]);
+  }, [N, B, P, F, H]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [F && I === f.O.GLOWING_ANIMATION && (0, r.jsx)("div", {
+    children: [H && P === f.O.GLOWING_ANIMATION && (0, r.jsx)("div", {
       className: D.appLauncherGlow,
       children: (0, r.jsx)(w, {
         size: "custom",
@@ -124,7 +124,7 @@ let U = i.forwardRef(function(e, t) {
       })
     }), (0, r.jsxs)("div", {
       className: o()(D.buttonContainer, k.t4, {
-        [D.appLauncherCircleMask]: I === f.O.GLOWING_ANIMATION
+        [D.appLauncherCircleMask]: P === f.O.GLOWING_ANIMATION
       }),
       ref: t,
       children: [(0, r.jsx)(p.zxk, (n = function(e) {
@@ -151,8 +151,8 @@ let U = i.forwardRef(function(e, t) {
         className: o()(D.button, {
           [D.buttonActive]: E
         }),
-        onClick: H,
-        "aria-label": L.NW.string(L.t.erHFxM),
+        onClick: V,
+        "aria-label": L.intl.string(L.t.erHFxM),
         focusProps: {
           offset: {
             top: 4,
@@ -163,7 +163,7 @@ let U = i.forwardRef(function(e, t) {
         },
         innerClassName: D.buttonContents
       }, T), l = l = {
-        children: V
+        children: z
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -173,7 +173,7 @@ let U = i.forwardRef(function(e, t) {
         return n
       })(Object(l)).forEach(function(e) {
         Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
-      }), n)), F && I === f.O.SIMPLE_BADGE && (0, r.jsx)(b.r, {
+      }), n)), H && P === f.O.SIMPLE_BADGE && (0, r.jsx)(b.r, {
         top: -1,
         right: -1,
         size: 7,
@@ -184,11 +184,11 @@ let U = i.forwardRef(function(e, t) {
   })
 });
 
-function B(e) {
+function G(e) {
   let {
     showAppLauncherPopup: t,
     children: n
-  } = e, i = (0, s.e7)([Z.Z], () => Z.Z.hasLayers()), {
+  } = e, i = (0, s.e7)([N.Z], () => N.Z.hasLayers()), {
     enabled: l,
     shouldShow: a,
     applicationDetails: c,
@@ -202,7 +202,7 @@ function B(e) {
     className: D.channelAppLauncherButtonPopoutIconContainer,
     children: [(0, r.jsx)("img", {
       className: o()(D.buttonContainer, D.button, D.channelAppLauncherButtonPopoutIcon),
-      alt: L.NW.string(L.t.X4IxWF),
+      alt: L.intl.string(L.t.X4IxWF),
       src: null == c ? void 0 : c.iconURL,
       "aria-hidden": !0,
       draggable: !1
@@ -210,15 +210,15 @@ function B(e) {
       className: D.channelAppLauncherButtonPopoutIconShimmerContainer,
       children: (0, r.jsx)("img", {
         className: D.channelAppLauncherButtonPopoutIconShimmer,
-        alt: L.NW.string(L.t.X4IxWF),
-        src: W,
+        alt: L.intl.string(L.t.X4IxWF),
+        src: U,
         "aria-hidden": !0,
         draggable: !1
       })
     })]
   }) : null;
   return u ? (0, r.jsx)(p.ua7, {
-    text: L.NW.string(L.t.JDj6Xl),
+    text: L.intl.string(L.t.JDj6Xl),
     shouldShow: a,
     forceOpen: a,
     children: () => (0, r.jsxs)(r.Fragment, {
@@ -228,7 +228,7 @@ function B(e) {
     children: [d, n]
   })
 }
-let G = i.memo(function(e) {
+let F = i.memo(function(e) {
   let {
     channel: t,
     type: n,
@@ -239,7 +239,7 @@ let G = i.memo(function(e) {
     chatInputType: n
   }), u = (0, w.Z)({
     type: n
-  }), d = (0, I.h9)(t.id), p = (0, s.e7)([x.Z], () => x.Z.appDMChannelsWithFailedLoads().has(t.id)), {
+  }), d = (0, P.h9)(t.id), p = (0, s.e7)([x.Z], () => x.Z.appDMChannelsWithFailedLoads().has(t.id)), {
     visible: h
   } = (0, A.xL)();
   return c ? (0, r.jsxs)("div", {
@@ -249,9 +249,9 @@ let G = i.memo(function(e) {
       animationContainerClassName: D.entrypointAnimation,
       glowClassName: D.animationGlow,
       trinketsClassName: D.animationTrinkets,
-      children: (0, r.jsx)(B, {
+      children: (0, r.jsx)(G, {
         showAppLauncherPopup: u,
-        children: (0, r.jsx)(U, {
+        children: (0, r.jsx)(B, {
           type: n,
           ref: a,
           animateRef: l

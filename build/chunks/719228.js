@@ -31,11 +31,11 @@ function j(e) {
     children: [(0, n.jsx)(a.X6q, {
       className: p.selectHeader,
       variant: "heading-md/semibold",
-      children: t ? f.NW.string(f.t.IB13DQ) : f.NW.string(f.t.cQYceX)
+      children: t ? f.intl.string(f.t.IB13DQ) : f.intl.string(f.t.cQYceX)
     }), (0, n.jsx)(a.E1j, {
       size: a.E1j.Sizes.MEDIUM,
-      placeholder: f.NW.string(f.t.vf3ZTU),
-      "aria-label": f.NW.string(f.t.vf3ZTU),
+      placeholder: f.intl.string(f.t.vf3ZTU),
+      "aria-label": f.intl.string(f.t.vf3ZTU),
       className: p.selectSearch,
       query: r,
       onChange: l,
@@ -56,7 +56,7 @@ function C(e) {
     return null == n || null != l && l.some(e => e.id === t) || (j.length <= 0 || i()(j.toLowerCase(), null == n ? void 0 : n.name.toLowerCase())) && e.push(n), e
   }, []));
 
-  function N() {
+  function b() {
     r(), (0, c.xf)(), (0, u.uL)(g.Z5c.GUILD_DISCOVERY)
   }
   return (0, n.jsxs)(n.Fragment, {
@@ -64,13 +64,13 @@ function C(e) {
       className: p.emptyStateWrapper,
       children: (0, n.jsx)(a.Text, {
         variant: "text-md/normal",
-        children: 0 === C.length ? f.NW.format(f.t["E3tB6+"], {
+        children: 0 === C.length ? f.intl.format(f.t["E3tB6+"], {
           publicGuildDirectoryHook: (e, t) => (0, n.jsx)(a.P3F, {
-            onClick: N,
+            onClick: b,
             tag: "a",
             children: e
           }, t)
-        }) : f.NW.string(f.t.w3GLl5)
+        }) : f.intl.string(f.t.w3GLl5)
       })
     }), v.map(e => (0, n.jsxs)(a.P3F, {
       className: p.selectGuild,
@@ -97,7 +97,7 @@ function C(e) {
         className: p.selectGuildPseudoCta,
         color: "always-white",
         variant: "text-sm/medium",
-        children: t ? f.NW.string(f.t.dUgaFx) : f.NW.string(f.t.Uj0md3)
+        children: t ? f.intl.string(f.t.dUgaFx) : f.intl.string(f.t.Uj0md3)
       })]
     }, e.id))]
   })

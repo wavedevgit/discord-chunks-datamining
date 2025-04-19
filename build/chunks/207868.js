@@ -41,6 +41,6 @@ let y = i.memo(function(e) {
   }).enabled && !n && !l && C && v && t.isVocalThread()) ? (0, r.jsx)(g.ZP.Icon, {
     icon: s.Csw,
     onClick: j,
-    tooltip: y ? _.NW.string(_.t.fdEeb2) : _.NW.string(_.t.focH1t)
+    tooltip: y ? _.intl.string(_.t.fdEeb2) : _.intl.string(_.t.focH1t)
   }) : null
 })

@@ -1,6 +1,6 @@
 /** Chunk was on 49286 **/
 n.d(t, {
-  Z: () => N
+  Z: () => y
 }), n(539854), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -21,26 +21,26 @@ var r = n(200651),
   j = n(388032),
   O = n(439478);
 
-function N(e) {
+function y(e) {
   var t;
   let {
     guild: n,
-    applicationIntegration: N
-  } = e, y = (0, o.e7)([f.Z], () => f.Z.getRoles(n.id)), {
-    application: v
-  } = N, _ = null != v.bot ? new b.Z(v.bot) : null, C = (0, o.e7)([g.ZP], () => null != _ ? g.ZP.getMember(n.id, _.id) : null, [_, n]), I = null == _ ? void 0 : _.id;
+    applicationIntegration: y
+  } = e, v = (0, o.e7)([f.Z], () => f.Z.getRoles(n.id)), {
+    application: _
+  } = y, C = null != _.bot ? new b.Z(_.bot) : null, N = (0, o.e7)([g.ZP], () => null != C ? g.ZP.getMember(n.id, C.id) : null, [C, n]), I = null == C ? void 0 : C.id;
   i.useEffect(() => {
     null != I && s.Z.requestMembersById(n.id, I)
   }, [n.id, I]);
   let S = i.useMemo(() => {
     var e, t, r;
-    let i = y[n.getEveryoneRoleId()],
-      o = null != (t = null == C || null == (e = C.roles) ? void 0 : e.map(e => y[e]).filter(h.lm)) ? t : [],
+    let i = v[n.getEveryoneRoleId()],
+      o = null != (t = null == N || null == (e = N.roles) ? void 0 : e.map(e => v[e]).filter(h.lm)) ? t : [],
       a = null != (r = null == i ? void 0 : i.permissions) ? r : x.Hn;
     for (let e of o) a = l.IH(a, e.permissions);
     return a
-  }, [n, y, C]);
-  return null == _ ? null : (0, r.jsx)(a.Zbd, {
+  }, [n, v, N]);
+  return null == C ? null : (0, r.jsx)(a.Zbd, {
     editable: !0,
     className: O.card,
     children: (0, r.jsxs)(p.Z, {
@@ -49,17 +49,17 @@ function N(e) {
         align: p.Z.Align.CENTER,
         children: [(0, r.jsx)("img", {
           alt: "",
-          src: _.getAvatarURL(n.id, 32),
+          src: C.getAvatarURL(n.id, 32),
           className: O.iconWrapper
         }), (0, r.jsx)(a.Text, {
           color: "header-primary",
           variant: "text-sm/normal",
-          children: j.NW.format(j.t.GyhzGx, {
-            user: _.toString()
+          children: j.intl.format(j.t.GyhzGx, {
+            user: C.toString()
           })
         }), (0, r.jsx)(u.Z, {
           className: O.tag,
-          verified: _.isVerifiedBot()
+          verified: C.isVerifiedBot()
         })]
       }), function(e, t, n, i) {
         let o = [],
@@ -71,7 +71,7 @@ function N(e) {
           }), n.length > 0 ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(a.vwX, {
               className: O.permissionHeader,
-              children: j.NW.format(j.t.PCs0oq, {
+              children: j.intl.format(j.t.PCs0oq, {
                 numRoles: n.length
               })
             }), (0, r.jsx)(c.ZP, {
@@ -84,12 +84,12 @@ function N(e) {
             })]
           }) : null, o.length > 0 || s.length > 0 ? (0, r.jsx)(d.Z, {
             grantedPermissions: o,
-            grantedPermissionsHeader: j.NW.string(j.t["hA4+sr"]),
+            grantedPermissionsHeader: j.intl.string(j.t["hA4+sr"]),
             disabledPermissions: s,
-            disabledPermissionsHeader: j.NW.string(j.t["/rEZ2t"])
+            disabledPermissionsHeader: j.intl.string(j.t["/rEZ2t"])
           }) : null]
         })
-      }(_, n, null != (t = null == C ? void 0 : C.roles) ? t : [], S)]
+      }(C, n, null != (t = null == N ? void 0 : N.roles) ? t : [], S)]
     })
   })
 }

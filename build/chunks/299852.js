@@ -1,11 +1,11 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => E
+  Z: () => v
 }), n(35282), n(388685);
 var r, i = n(200651),
-  s = n(192379),
-  o = n(593473),
-  l = n(442837),
+  l = n(192379),
+  s = n(593473),
+  o = n(442837),
   a = n(544891),
   c = n(481060),
   u = n(129293),
@@ -18,7 +18,7 @@ var r, i = n(200651),
   _ = n(388032),
   x = n(20493);
 
-function N(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -26,11 +26,11 @@ function N(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-l.ZP.initialize();
-class b extends(r = s.PureComponent) {
+o.ZP.initialize();
+class E extends(r = l.PureComponent) {
   componentDidMount() {
     let e = (0, u.Z)(this.props.location),
-      t = (0, o.parse)(this.props.location.search);
+      t = (0, s.parse)(this.props.location.search);
     a.tn.post({
       url: m.ANM.DISABLE_EMAIL_NOTIFICATIONS,
       body: {
@@ -67,25 +67,25 @@ class b extends(r = s.PureComponent) {
     let {
       defaultRoute: n,
       transitionTo: r
-    } = this.props, s = _.NW.formatToPlainString(_.t.YDAohI, {
+    } = this.props, l = _.intl.formatToPlainString(_.t.YDAohI, {
       category: t
     });
     return (0, i.jsxs)(d.ZP, {
       children: [(0, i.jsx)(d.Dx, {
         className: x.marginBottom8,
-        children: _.NW.string(_.t.f6rdLi)
+        children: _.intl.string(_.t.f6rdLi)
       }), (0, i.jsx)(d.DK, {
-        children: s
+        children: l
       }), (0, i.jsx)(d.zx, {
         className: x.marginTop20,
         onClick: () => r(n),
-        children: _.NW.string(_.t.fIv16O)
+        children: _.intl.string(_.t.fIv16O)
       }), (0, i.jsx)(d.zx, {
         className: x.marginTop8,
         color: d.zx.Colors.LINK,
         look: d.zx.Looks.LINK,
         onClick: () => r(m.Z5c.SETTINGS("notifications", f.vG)),
-        children: _.NW.string(_.t.YYTira)
+        children: _.intl.string(_.t.YYTira)
       })]
     })
   }
@@ -108,13 +108,13 @@ class b extends(r = s.PureComponent) {
         className: x.marginBottom20
       }), (0, i.jsx)(d.Dx, {
         className: x.marginBottom8,
-        children: _.NW.string(_.t["6U6OMT"])
+        children: _.intl.string(_.t["6U6OMT"])
       }), (0, i.jsx)(d.DK, {
-        children: _.NW.string(_.t["yaDJ4+"])
+        children: _.intl.string(_.t["yaDJ4+"])
       }), (0, i.jsx)(d.zx, {
         className: x.marginTop40,
         onClick: () => t(e),
-        children: _.NW.string(_.t.fIv16O)
+        children: _.intl.string(_.t.fIv16O)
       })]
     })
   }
@@ -129,13 +129,13 @@ class b extends(r = s.PureComponent) {
         className: x.marginBottom20
       }), (0, i.jsx)(d.Dx, {
         className: x.marginBottom8,
-        children: _.NW.string(_.t.ox9hIS)
+        children: _.intl.string(_.t.ox9hIS)
       }), (0, i.jsx)(d.DK, {
-        children: _.NW.string(_.t["/dcuR0"])
+        children: _.intl.string(_.t["/dcuR0"])
       }), (0, i.jsx)(d.zx, {
         className: x.marginTop40,
         onClick: () => t(e),
-        children: _.NW.string(_.t.fIv16O)
+        children: _.intl.string(_.t.fIv16O)
       })]
     })
   }
@@ -147,7 +147,7 @@ class b extends(r = s.PureComponent) {
     return e ? this.renderBusy() : t ? this.renderSuccess() : this.renderError()
   }
   constructor(...e) {
-    super(...e), N(this, "state", {
+    super(...e), b(this, "state", {
       busy: !0,
       success: !1,
       user: null,
@@ -155,9 +155,9 @@ class b extends(r = s.PureComponent) {
     })
   }
 }
-N(b, "defaultProps", {
+b(E, "defaultProps", {
   transitionTo: e => n.g.location.assign(e)
 });
-let E = l.ZP.connectStores([p.Z], () => ({
+let v = o.ZP.connectStores([p.Z], () => ({
   defaultRoute: p.Z.defaultRoute
-}))(b)
+}))(E)

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  s = n(120356),
-  l = n.n(s),
+  l = n(120356),
+  s = n.n(l),
   a = n(580685),
   o = n(442837),
   c = n(481060),
@@ -22,45 +22,45 @@ function x(e) {
   var t;
   let {
     profile: n,
-    canManageGuild: s
+    canManageGuild: l
   } = e, x = n.id, b = a.Y.VISIBLE.has(n.visibility), j = (0, o.e7)([d.Z], () => {
     var e;
     return (null == (e = d.Z.getProfile(x)) ? void 0 : e.visibility) === u.k.PUBLIC_WITH_RECRUITMENT
-  }, [x]), N = i.useCallback(() => {
+  }, [x]), _ = i.useCallback(() => {
     b ? g.Z.updateGuildProfile(x, {
       visibility: u.k.RESTRICTED
     }) : g.Z.updateGuildProfile(x, {
       visibility: j ? u.k.PUBLIC_WITH_RECRUITMENT : u.k.PUBLIC
     })
-  }, [x, j, b]), _ = i.useCallback(() => {
+  }, [x, j, b]), v = i.useCallback(() => {
     g.Z.setSection(p.pNK.ACCESS, p.KsC.ACCESS_DISCOVERABLE)
-  }, []), v = null == (t = n.features) ? void 0 : t.includes(p.oNc.DISCOVERABLE);
+  }, []), O = null == (t = n.features) ? void 0 : t.includes(p.oNc.DISCOVERABLE);
   return (0, r.jsxs)(c.hjN, {
     className: f.twoColumnContainer,
     children: [(0, r.jsxs)("div", {
       className: f.column,
       children: [(0, r.jsx)(c.j7V, {
-        onChange: N,
+        onChange: _,
         value: !b,
         hideBorder: !0,
-        disabled: v || !s,
-        children: h.NW.string(h.t.fjHWen)
+        disabled: O || !l,
+        children: h.intl.string(h.t.fjHWen)
       }), (0, r.jsx)(c.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
-        children: h.NW.string(h.t.J1YOV1)
-      }), v && (0, r.jsx)(c.Text, {
+        children: h.intl.string(h.t.J1YOV1)
+      }), O && (0, r.jsx)(c.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: h.NW.format(h.t.R8jY9v, {
+        children: h.intl.format(h.t.R8jY9v, {
           accessLink: (e, t) => (0, r.jsx)(c.eee, {
-            onClick: _,
+            onClick: v,
             children: e
           }, t)
         })
       })]
     }), (0, r.jsx)("div", {
-      className: l()(f.column, {
+      className: s()(f.column, {
         [f.profileViewDisabled]: b
       }),
       children: (0, r.jsx)(m.Z, {

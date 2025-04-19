@@ -1,6 +1,6 @@
 /** Chunk was on 12009 **/
 l.d(n, {
-  ZP: () => W
+  ZP: () => D
 }), l(388685), l(953529);
 var t = l(200651),
   r = l(192379),
@@ -143,7 +143,7 @@ function M(e) {
   })
 }
 
-function W(e) {
+function D(e) {
   let {
     guild: n,
     isNewMember: l
@@ -153,7 +153,7 @@ function W(e) {
     children: [(0, t.jsx)(c.X6q, {
       variant: "heading-xl/bold",
       color: "header-primary",
-      children: w.NW.string(w.t.owvC9f)
+      children: w.intl.string(w.t.owvC9f)
     }), (0, t.jsx)("img", {
       className: E.emptyStateImage,
       src: k,
@@ -165,14 +165,14 @@ function W(e) {
         null != e && (0, x.uL)(P.Z5c.CHANNEL(n.id, e.id))
       },
       fullWidth: !0,
-      children: w.NW.string(w.t["3iCBUl"])
+      children: w.intl.string(w.t["3iCBUl"])
     })]
   }) : (0, t.jsxs)("div", {
     className: E.container,
     children: [(0, t.jsx)(c.X6q, {
       variant: "heading-lg/bold",
       color: "header-primary",
-      children: w.NW.string(w.t.xwY4LS)
+      children: w.intl.string(w.t.xwY4LS)
     }), r.map(e => (0, t.jsx)(M, {
       resource: e
     }, e.channelId))]

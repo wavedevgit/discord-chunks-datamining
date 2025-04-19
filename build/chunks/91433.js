@@ -43,16 +43,16 @@ function m(e) {
     I(), v({
       action: E ? "ACCEPT_GAME_FRIEND_REQUEST" : "ACCEPT_FRIEND_REQUEST"
     })
-  }, [I, E, v]), N = i.useCallback(() => {
+  }, [I, E, v]), A = i.useCallback(() => {
     S(), v({
       action: E ? "IGNORE_GAME_FRIEND_REQUEST" : "IGNORE_FRIEND_REQUEST"
     })
-  }, [S, E, v]), A = null != m, C = (0, c.q)(m);
-  return A && null == C ? null : (0, r.jsxs)("div", {
+  }, [S, E, v]), N = null != m, C = (0, c.q)(m);
+  return N && null == C ? null : (0, r.jsxs)("div", {
     className: o()(h.container, b),
-    children: [A ? (0, r.jsx)(s.Text, {
+    children: [N ? (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
-      children: p.NW.format(E ? p.t.syHjLC : p.t.V15uUF, {
+      children: p.intl.format(E ? p.t.syHjLC : p.t.V15uUF, {
         username: y,
         applicationIcon: () => (0, r.jsx)(u.Z, {
           className: h.gameIcon,
@@ -63,7 +63,7 @@ function m(e) {
       })
     }) : (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
-      children: p.NW.format(p.t.uIomX1, {
+      children: p.intl.format(p.t.uIomX1, {
         username: y
       })
     }), (0, r.jsxs)("div", {
@@ -74,14 +74,14 @@ function m(e) {
         size: s.zxk.Sizes.SMALL,
         className: h.button,
         onClick: T,
-        children: p.NW.string(p.t.ZcibdX)
+        children: p.intl.string(p.t.ZcibdX)
       }), (0, r.jsx)(s.zxk, {
         look: s.zxk.Looks.FILLED,
         color: s.zxk.Colors.PRIMARY,
         size: s.zxk.Sizes.SMALL,
         className: h.button,
-        onClick: N,
-        children: p.NW.string(p.t.xuio0N)
+        onClick: A,
+        children: p.intl.string(p.t.xuio0N)
       })]
     })]
   })

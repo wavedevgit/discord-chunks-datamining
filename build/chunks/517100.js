@@ -69,11 +69,11 @@ function T() {
   }
 }
 
-function N(e) {
+function A(e) {
   m = e.idle
 }
 
-function A(e) {
+function N(e) {
   g = e.afk
 }
 
@@ -124,8 +124,8 @@ class w extends(r = i.ZP.Store) {
 }
 p(w, "displayName", "IdleStore");
 let D = new w(a.Z, {
-  IDLE: N,
-  AFK: A,
+  IDLE: A,
+  AFK: N,
   SPEAKING: C,
   APP_STATE_UPDATE: R,
   OVERLAY_SET_NOT_IDLE: P,

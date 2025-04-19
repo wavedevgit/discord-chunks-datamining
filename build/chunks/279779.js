@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => N
 }), n(997841), n(539854), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685), n(415506), n(361932), n(187205);
 var r = n(392711),
   i = n.n(r),
@@ -109,7 +109,7 @@ class T {
     }), this._worker = e, this._uuid = (0, a.Z)(), this._callback = t, this._limit = n, this._currentQuery = null, this._nextQuery = null, this._subscribed = !1, this.subscribe()
   }
 }
-class N extends o.Z {
+class A extends o.Z {
   _initialize() {
     this.rebootWebworker()
   }
@@ -301,4 +301,4 @@ class N extends o.Z {
     })
   }
 }
-let A = new N
+let N = new A

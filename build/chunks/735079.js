@@ -1,9 +1,9 @@
 /** Chunk was on 49508 **/
 n.d(e, {
-  J: () => i
+  J: () => r
 });
-var r = n(601964);
-class i extends r.ZP {
+var i = n(601964);
+class r extends i.ZP {
   constructor(t) {
     var e, n;
     super(t), n = void 0, (e = "approximateMemberCount") in this ? Object.defineProperty(this, e, {

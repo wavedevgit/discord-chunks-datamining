@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  B6: () => W,
+  B6: () => Y,
   ql: () => $
 });
 var r = n(192379),
@@ -100,7 +100,7 @@ var m = {
   T = function(e) {
     return I(e, "onChangeClientState") || function() {}
   },
-  N = function(e, t) {
+  A = function(e, t) {
     return t.filter(function(t) {
       return void 0 !== t[e]
     }).map(function(t) {
@@ -109,7 +109,7 @@ var m = {
       return f({}, e, t)
     }, {})
   },
-  A = function(e, t) {
+  N = function(e, t) {
     return t.filter(function(e) {
       return void 0 !== e[m.BASE]
     }).map(function(e) {
@@ -356,7 +356,7 @@ var m = {
     })
   }),
   H = "undefined" != typeof document,
-  W = function(e) {
+  Y = function(e) {
     function t(n) {
       var r;
       return (r = e.call(this, n) || this).helmetData = new F(r.props.context, t.canUseDOM), r
@@ -367,15 +367,15 @@ var m = {
       }, this.props.children)
     }, t
   }(r.Component);
-W.canUseDOM = H, W.propTypes = {
+Y.canUseDOM = H, Y.propTypes = {
   context: a().shape({
     helmet: a().shape()
   }),
   children: a().node.isRequired
-}, W.defaultProps = {
+}, Y.defaultProps = {
   context: {}
-}, W.displayName = "HelmetProvider";
-var Y = function(e, t) {
+}, Y.displayName = "HelmetProvider";
+var W = function(e, t) {
     var n, r = document.head || document.querySelector(m.HEAD),
       i = r.querySelectorAll(e + "[data-rh]"),
       a = [].slice.call(i),
@@ -424,12 +424,12 @@ var Y = function(e, t) {
         void 0 !== e && document.title !== e && (document.title = P(e)), K(m.TITLE, t)
       }(u, d);
     var f = {
-        baseTag: Y(m.BASE, n),
-        linkTags: Y(m.LINK, i),
-        metaTags: Y(m.META, a),
-        noscriptTags: Y(m.NOSCRIPT, o),
-        scriptTags: Y(m.SCRIPT, l),
-        styleTags: Y(m.STYLE, c)
+        baseTag: W(m.BASE, n),
+        linkTags: W(m.LINK, i),
+        metaTags: W(m.META, a),
+        noscriptTags: W(m.NOSCRIPT, o),
+        scriptTags: W(m.SCRIPT, l),
+        styleTags: W(m.STYLE, c)
       },
       _ = {},
       p = {};
@@ -459,14 +459,14 @@ var Y = function(e, t) {
         r = n.setHelmet,
         i = null,
         a = {
-          baseTag: A(["href"], e = n.helmetInstances.get().map(function(e) {
+          baseTag: N(["href"], e = n.helmetInstances.get().map(function(e) {
             var t = f({}, e.props);
             return delete t.context, t
           })),
-          bodyAttributes: N("bodyAttributes", e),
+          bodyAttributes: A("bodyAttributes", e),
           defer: I(e, "defer"),
           encode: I(e, "encodeSpecialCharacters"),
-          htmlAttributes: N("htmlAttributes", e),
+          htmlAttributes: A("htmlAttributes", e),
           linkTags: C(m.LINK, ["rel", "href"], e),
           metaTags: C(m.META, ["name", "charset", "http-equiv", "property", "itemprop"], e),
           noscriptTags: C(m.NOSCRIPT, ["innerHTML"], e),
@@ -474,10 +474,10 @@ var Y = function(e, t) {
           scriptTags: C(m.SCRIPT, ["src", "innerHTML"], e),
           styleTags: C(m.STYLE, ["cssText"], e),
           title: S(e),
-          titleAttributes: N("titleAttributes", e),
+          titleAttributes: A("titleAttributes", e),
           prioritizeSeoTags: R(e, "prioritizeSeoTags")
         };
-      W.canUseDOM ? (t = a, q && cancelAnimationFrame(q), t.defer ? q = requestAnimationFrame(function() {
+      Y.canUseDOM ? (t = a, q && cancelAnimationFrame(q), t.defer ? q = requestAnimationFrame(function() {
         z(t, function() {
           q = null
         })

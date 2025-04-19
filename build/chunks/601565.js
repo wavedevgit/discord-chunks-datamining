@@ -1,29 +1,29 @@
 /** Chunk was on 83098 **/
 n.d(t, {
-  Z: () => a
+  Z: () => i
 }), n(388685), n(35282), n(781311);
 var r = n(192379),
   l = n(211266),
   s = n(212819);
 
-function a(e) {
+function i(e) {
   let {
     searchOptions: t
-  } = e, [n, a] = r.useState({
+  } = e, [n, i] = r.useState({
     results: [],
     query: ""
-  }), i = (0, l.Z)(() => {
+  }), a = (0, l.Z)(() => {
     let e = new s.ZP((e, t) => {
-      a({
+      i({
         results: e,
         query: t
       })
     });
     return e.setLimit(20), e.search(""), e
   });
-  return r.useEffect(() => () => i.destroy(), [i]), r.useEffect(() => {
-      null != t && t !== i.options && i.setOptions(t)
-    }, [i, t]),
+  return r.useEffect(() => () => a.destroy(), [a]), r.useEffect(() => {
+      null != t && t !== a.options && a.setOptions(t)
+    }, [a, t]),
     function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -48,7 +48,7 @@ function a(e) {
           query: n,
           resultTypes: r
         } = e;
-        null != i.resultTypes && (t = i.resultTypes, r.length === t.size && r.every(e => t.has(e))) || (i.setResultTypes(r), i.setLimit(1 === r.length ? 50 : 20)), i.search("" === n.trim() ? "" : n)
-      }, [i])
+        null != a.resultTypes && (t = a.resultTypes, r.length === t.size && r.every(e => t.has(e))) || (a.setResultTypes(r), a.setLimit(1 === r.length ? 50 : 20)), a.search("" === n.trim() ? "" : n)
+      }, [a])
     }, n)
 }

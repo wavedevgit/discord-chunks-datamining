@@ -2,8 +2,8 @@
 n.d(t, {
   Z: () => h
 });
-var r = n(525654),
-  i = n.n(r),
+var i = n(525654),
+  r = n.n(i),
   l = n(39612),
   a = n(271579),
   o = n(756647),
@@ -16,17 +16,17 @@ var r = n(525654),
   p = n(981631);
 async function b(e) {
   var t, n;
-  let r = null == (t = i().os) ? void 0 : t.family;
-  if ("Android" === r || "iOS" === r) {
+  let i = null == (t = r().os) ? void 0 : t.family;
+  if ("Android" === i || "iOS" === i) {
     let t = null != (n = u.default.getFingerprint()) ? n : u.default.getId(),
-      r = (0, a.WS)();
+      i = (0, a.WS)();
     if (null == t && u.default.isAuthenticated()) try {
       await (0, s.k)(), t = u.default.getId()
     } catch (e) {}
     return (0, a.ZP)((0, l.Gk)(), {
       utmSource: e,
       fingerprint: t,
-      attemptId: r
+      attemptId: i
     })
   }
   return "discord://"

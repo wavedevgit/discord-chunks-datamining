@@ -40,13 +40,13 @@ function h(e, t, n) {
 }
 
 function m(e) {
-  return e.type === u.uA.SOURCE ? d.NW.string(d.t.XjXqzs) : d.NW.formatToPlainString(d.t.TEOC0N, {
+  return e.type === u.uA.SOURCE ? d.intl.string(d.t.XjXqzs) : d.intl.formatToPlainString(d.t.TEOC0N, {
     resolution: e.height
   })
 }
 
 function g(e) {
-  return d.NW.formatToPlainString(d.t.Qb44XF, {
+  return d.intl.formatToPlainString(d.t.Qb44XF, {
     fps: e
   })
 }

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(539854), n(388685), n(415506);
 var i = n(475179),
   o = n(166459),
-  r = n(966390),
-  l = n(531643),
+  l = n(966390),
+  r = n(531643),
   a = n(476326),
   c = n(367907),
   d = n(358221),
@@ -25,32 +25,32 @@ function T(e, t) {
   let n = p.default.getCurrentUser(),
     i = e.getGuildId(),
     o = s.dg(i),
-    r = [],
+    l = [],
     a = 0,
     d = 0,
     _ = 0,
     u = [];
-  for (let e of t) _ += 1, a += e.size, r.push(e.size), e.size > d && (d = e.size), null != e.type ? u.push(e.type) : u.push("unknown");
+  for (let e of t) _ += 1, a += e.size, l.push(e.size), e.size > d && (d = e.size), null != e.type ? u.push(e.type) : u.push("unknown");
   if (d > o) {
     (0, c.yw)(m.rMx.FILE_SIZE_LIMIT_EXCEEDED, {
       channel_id: e.id,
       guild_id: i,
       user_individual_file_size_limit: o,
-      pre_compression_file_sizes: r,
+      pre_compression_file_sizes: l,
       pre_compression_aggregate_file_size: a,
       num_attachments: _,
       error_type: h.xi.UPLOAD_ATTACHMENT_MAX_SIZE_ERROR,
       attachment_mimetypes: u
-    }), (0, l.openUploadError)({
-      title: b.NW.string(b.t["/tGlcn"]),
+    }), (0, r.openUploadError)({
+      title: b.intl.string(b.t["/tGlcn"]),
       help: (0, g.BK)(n, i),
       showPremiumUpsell: !(0, f.M5)(n, I.p9.TIER_2),
       fileSize: d
     });
     return
-  }(0, l.openUploadError)({
-    title: b.NW.string(b.t["/tGlcn"]),
-    help: b.NW.formatToPlainString(b.t.tUOJdH, {
+  }(0, r.openUploadError)({
+    title: b.intl.string(b.t["/tGlcn"]),
+    help: b.intl.formatToPlainString(b.t.tUOJdH, {
       maxSize: s.Ng(s.OC())
     })
   })
@@ -68,9 +68,9 @@ function E(e, t, n) {
   let h = t.getGuildId();
   if ((0, g.Bf)(e, h)) return void T(t, e);
   if (_.Z.getUploadCount(t.id, n) + e.length > m.dN1) {
-    (0, l.openUploadError)({
-      title: b.NW.string(b.t.wOr6hI),
-      help: b.NW.formatToPlainString(b.t["qqyp/f"], {
+    (0, r.openUploadError)({
+      title: b.intl.string(b.t.wOr6hI),
+      help: b.intl.formatToPlainString(b.t["qqyp/f"], {
         limit: m.dN1
       })
     }), u.default.track(m.rMx.UPLOAD_FILE_LIMIT_ERROR, {
@@ -108,7 +108,7 @@ function E(e, t, n) {
       showLargeMessageDialog: s,
       draftType: n
     })
-  } else r.Z.instantBatchUpload({
+  } else l.Z.instantBatchUpload({
     channelId: t.id,
     files: e,
     draftType: n,

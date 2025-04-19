@@ -1,5 +1,5 @@
 /** Chunk was on 21907 **/
-n.d(t, {
+n.d(e, {
   default: () => u
 });
 var r = n(200651);
@@ -11,59 +11,59 @@ var o = n(98278),
   l = n(388032),
   s = n(551105);
 
-function u(e) {
+function u(t) {
   var {
-    onClose: t,
+    onClose: e,
     analyticsSource: n,
     analyticsLocation: u,
     onSecondaryClick: f
-  } = e, p = function(e, t) {
-    if (null == e) return {};
-    var n, r, o = function(e, t) {
-      if (null == e) return {};
+  } = t, p = function(t, e) {
+    if (null == t) return {};
+    var n, r, o = function(t, e) {
+      if (null == t) return {};
       var n, r, o = {},
-        c = Object.keys(e);
-      for (r = 0; r < c.length; r++) n = c[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
+        c = Object.keys(t);
+      for (r = 0; r < c.length; r++) n = c[r], e.indexOf(n) >= 0 || (o[n] = t[n]);
       return o
-    }(e, t);
+    }(t, e);
     if (Object.getOwnPropertySymbols) {
-      var c = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < c.length; r++) n = c[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
+      var c = Object.getOwnPropertySymbols(t);
+      for (r = 0; r < c.length; r++) n = c[r], !(e.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(t, n) && (o[n] = t[n])
     }
     return o
-  }(e, ["onClose", "analyticsSource", "analyticsLocation", "onSecondaryClick"]);
-  return (0, r.jsx)(c.Z, function(e) {
-    for (var t = 1; t < arguments.length; t++) {
-      var n = null != arguments[t] ? arguments[t] : {},
+  }(t, ["onClose", "analyticsSource", "analyticsLocation", "onSecondaryClick"]);
+  return (0, r.jsx)(c.Z, function(t) {
+    for (var e = 1; e < arguments.length; e++) {
+      var n = null != arguments[e] ? arguments[e] : {},
         r = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), r.forEach(function(t) {
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
+        return Object.getOwnPropertyDescriptor(n, t).enumerable
+      }))), r.forEach(function(e) {
         var r;
-        r = n[t], t in e ? Object.defineProperty(e, t, {
+        r = n[e], e in t ? Object.defineProperty(t, e, {
           value: r,
           enumerable: !0,
           configurable: !0,
           writable: !0
-        }) : e[t] = r
+        }) : t[e] = r
       })
     }
-    return e
+    return t
   }({
     artURL: s.Z,
     type: a.cd.RECENT_AVATARS_ROADBLOCK_UPSELL,
-    title: l.NW.string(l.t.O8YHNT),
-    body: l.NW.format(l.t.MW3mAg, {
+    title: l.intl.string(l.t.O8YHNT),
+    body: l.intl.format(l.t.MW3mAg, {
       recentAvatarsLimit: i.zW
     }),
-    glowUp: l.NW.format(l.t.MW3mAg, {
+    glowUp: l.intl.format(l.t.MW3mAg, {
       recentAvatarsLimit: i.zW
     }),
     onSecondaryClick: () => {
-      null == f || f(), (0, o.$)(t)
+      null == f || f(), (0, o.$)(e)
     },
-    secondaryCTA: l.NW.string(l.t.PcTCBw),
-    onClose: t,
+    secondaryCTA: l.intl.string(l.t.PcTCBw),
+    onClose: e,
     enableArtBoxShadow: !1,
     analyticsSource: n,
     analyticsLocation: u,

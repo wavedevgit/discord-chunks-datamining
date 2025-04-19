@@ -7,8 +7,8 @@ var a = n(200651),
   o = n(120356),
   i = n.n(o),
   c = n(442837),
-  s = n(481060),
-  l = n(700582),
+  l = n(481060),
+  s = n(700582),
   u = n(372900),
   d = n(318713),
   p = n(123145),
@@ -25,13 +25,13 @@ let O = r.memo(function(e) {
   return null == n ? null : (0, a.jsx)(g.ZP, {
     children: e => (0, a.jsxs)(u.Z.Provider, {
       value: n.guild_id,
-      children: [(0, a.jsx)(l.Z, {
+      children: [(0, a.jsx)(s.Z, {
         user: t.author,
-        size: s.EFr.SIZE_40,
+        size: l.EFr.SIZE_40,
         className: i()(b.authorAvatar, e)
       }), (0, a.jsxs)("div", {
         className: i()(b.author, e),
-        children: [(0, a.jsx)(s.Rny, {
+        children: [(0, a.jsx)(l.Rny, {
           children: (0, a.jsx)("div", {
             className: b.authorNameWrapper,
             children: (0, a.jsx)(p.Z, {
@@ -68,8 +68,8 @@ function h(e) {
       mode: g.lx.PINNED,
       children: e => (0, a.jsx)(f.Z, {
         onClick: o,
-        icon: s.Dio,
-        tooltip: y.NW.string(y.t.cpT0Cg),
+        icon: l.Dio,
+        tooltip: y.intl.string(y.t.cpT0Cg),
         className: i()(b.closeButton, e)
       })
     })]

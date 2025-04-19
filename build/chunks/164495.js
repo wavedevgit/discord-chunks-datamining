@@ -71,7 +71,7 @@ let C = e => {
         ctaContent: u.jZ.OPEN_GAME_LINK,
         impressionId: n
       }),
-      children: (0, x.pO)(t) ? y.NW.string(y.t.hvVgAQ) : y.NW.string(y.t.lwQdjI)
+      children: (0, x.pO)(t) ? y.intl.string(y.t.hvVgAQ) : y.intl.string(y.t.lwQdjI)
     })
   },
   N = e => {
@@ -90,7 +90,7 @@ let C = e => {
         impressionId: o
       }),
       size: i.zxk.Sizes.SMALL,
-      children: y.NW.string(y.t.csptqa)
+      children: y.intl.string(y.t.csptqa)
     })
   },
   E = e => {
@@ -156,7 +156,7 @@ let C = e => {
       className: l()(O.cta, g),
       buttonShineClassName: O.shine
     }, m), n = n = {
-      children: null != j ? j : y.NW.string(y.t.cfY4PD)
+      children: null != j ? j : y.intl.string(y.t.cfY4PD)
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

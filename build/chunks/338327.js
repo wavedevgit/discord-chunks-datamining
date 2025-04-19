@@ -1,12 +1,12 @@
 /** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  Z: () => s
+  Z: () => l
 });
 var r = n(200651);
 n(192379);
 var i = n(481060);
-let s = {
+let l = {
   open() {
     (0, i.ZDy)(async () => {
       let {

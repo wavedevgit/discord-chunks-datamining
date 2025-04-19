@@ -5,8 +5,8 @@ r.d(t, {
 var n = r(392711),
   A = r.n(n),
   a = r(723454),
-  o = r(428595),
-  l = r(454585);
+  l = r(428595),
+  o = r(454585);
 
 function i(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -39,18 +39,18 @@ function s(e, t) {
     Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
   }), e
 }
-let c = A().omit(o.Z.RULES, ["codeBlock", "heading"]),
+let c = A().omit(l.Z.RULES, ["codeBlock", "heading"]),
   d = s(i({}, a.Z), {
     parse: function(e, t, r) {
       var n;
       let A = a.Z.parse(e, t, r),
-        o = Math.min(6, (null != (n = r.initialHeaderLevel) ? n : 3) + A.level);
+        l = Math.min(6, (null != (n = r.initialHeaderLevel) ? n : 3) + A.level);
       return s(i({}, A), {
-        level: o
+        level: l
       })
     }
   }),
-  u = l.Z.combineAndInjectMentionRule(c, [l.Z.createReactRules(l.Z.defaultReactRuleOptions), {
+  u = o.Z.combineAndInjectMentionRule(c, [o.Z.createReactRules(o.Z.defaultReactRuleOptions), {
     header: d
   }]),
-  g = l.Z.reactParserFor(u)
+  g = o.Z.reactParserFor(u)

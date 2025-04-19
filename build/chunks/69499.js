@@ -1,7 +1,7 @@
 /** Chunk was on 40419 **/
 n.d(t, {
-  E: () => N,
-  Z: () => O
+  E: () => I,
+  Z: () => T
 }), n(388685), n(642613);
 var r = n(200651),
   i = n(192379),
@@ -22,13 +22,13 @@ function _(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let N = {
+let I = {
   DropdownSizes: s.Z.DropdownSizes,
   Sizes: s.Z.Sizes,
   Colors: s.Z.Colors,
   Looks: s.Z.Looks
 };
-class I extends i.PureComponent {
+class O extends i.PureComponent {
   render() {
     var e, t;
     let n = this.props,
@@ -92,7 +92,7 @@ class I extends i.PureComponent {
       return (0, r.jsx)(o.v2r, {
         onSelect: n,
         navId: "test-skus",
-        "aria-label": d.NW.string(d.t.ogxXGh),
+        "aria-label": d.intl.string(d.t.ogxXGh),
         onClose: a.Zy,
         children: e.map(e => (0, r.jsx)(o.sNh, {
           id: "".concat(e.id),
@@ -113,7 +113,7 @@ class I extends i.PureComponent {
     })
   }
 }
-let O = l.ZP.connectStores([u.Z, c.Z], e => {
+let T = l.ZP.connectStores([u.Z, c.Z], e => {
   var t;
   let {
     applicationId: n
@@ -122,4 +122,4 @@ let O = l.ZP.connectStores([u.Z, c.Z], e => {
     skus: (null != (t = u.Z.getForApplication(n)) ? t : []).sort((e, t) => null != r && e.id === r.id ? -1 : null != r && t.id === r.id ? 1 : e.name >= t.name ? -1 : 1),
     primarySKU: r
   }
-})(I)
+})(O)

@@ -3,8 +3,8 @@ r.d(t, {
   Ns: () => p
 }), r(388685);
 var n = r(192379),
-  a = r(392711),
-  i = r.n(a),
+  i = r(392711),
+  a = r.n(i),
   l = r(876215),
   s = r(442837),
   o = r(146282),
@@ -21,7 +21,7 @@ function p(e) {
   } = function() {
     let e = (0, u.Z)(m.YN.GAME_PROFILE_FEED),
       t = (0, u.Z)(m.YN.GLOBAL_FEED),
-      r = n.useMemo(() => i()(t).unionBy(e, e => e.id).filter(f).orderBy(e => d.default.extractTimestamp(e.id), "desc").uniqWith((e, t) => e.author_id === t.author_id && e.extra.application_id === t.extra.application_id).value(), [e, t]);
+      r = n.useMemo(() => a()(t).unionBy(e, e => e.id).filter(f).orderBy(e => d.default.extractTimestamp(e.id), "desc").uniqWith((e, t) => e.author_id === t.author_id && e.extra.application_id === t.extra.application_id).value(), [e, t]);
     return {
       requestId: (0, s.e7)([o.Z], () => o.Z.getFeedRequestId(m.YN.GAME_PROFILE_FEED)),
       entries: r

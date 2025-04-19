@@ -15,12 +15,12 @@ var t = t || function(e) {
       a = /Version\/[\d\.]+.*Safari/.test(navigator.userAgent),
       c = e.webkitRequestFileSystem,
       u = e.requestFileSystem || c || e.mozRequestFileSystem,
-      s = function(t) {
+      l = function(t) {
         (e.setImmediate || e.setTimeout)(function() {
           throw t
         }, 0)
       },
-      l = "application/octet-stream",
+      s = "application/octet-stream",
       d = 0,
       f = function(e) {
         setTimeout(function() {
@@ -33,7 +33,7 @@ var t = t || function(e) {
           if ("function" == typeof o) try {
             o.call(e, n || e)
           } catch (e) {
-            s(e)
+            l(e)
           }
         }
       },
@@ -42,7 +42,7 @@ var t = t || function(e) {
           type: e.type
         }) : e
       },
-      y = function(t, s, y) {
+      y = function(t, l, y) {
         y || (t = p(t));
         var w, O, g = this,
           v = t.type,
@@ -65,21 +65,21 @@ var t = t || function(e) {
               if (g.readyState !== g.DONE) return e.apply(this, arguments)
             }
           },
-          N = {
+          P = {
             create: !0,
             exclusive: !1
           };
-        if (g.readyState = g.INIT, s || (s = "download"), o) {
+        if (g.readyState = g.INIT, l || (l = "download"), o) {
           w = n().createObjectURL(t), setTimeout(function() {
-            r.href = w, r.download = s, i(r), m(), f(w), g.readyState = g.DONE
+            r.href = w, r.download = l, i(r), m(), f(w), g.readyState = g.DONE
           });
           return
         }
-        if (e.chrome && v && v !== l && (t = (t.slice || t.webkitSlice).call(t, 0, t.size, l), h = !0), c && "download" !== s && (s += ".download"), (v === l || c) && (O = e), !u) return void j();
+        if (e.chrome && v && v !== s && (t = (t.slice || t.webkitSlice).call(t, 0, t.size, s), h = !0), c && "download" !== l && (l += ".download"), (v === s || c) && (O = e), !u) return void j();
         d += t.size, u(e.TEMPORARY, d, S(function(e) {
-          e.root.getDirectory("saved", N, S(function(e) {
+          e.root.getDirectory("saved", P, S(function(e) {
             var n = function() {
-              e.getFile(s, N, S(function(e) {
+              e.getFile(l, P, S(function(e) {
                 e.createWriter(S(function(n) {
                   n.onwriteend = function(t) {
                     O.location.href = e.toURL(), g.readyState = g.DONE, b(g, "writeend", t), f(e)
@@ -94,7 +94,7 @@ var t = t || function(e) {
                 }), j)
               }), j)
             };
-            e.getFile(s, {
+            e.getFile(l, {
               create: !1
             }, S(function(e) {
               e.remove(), n()

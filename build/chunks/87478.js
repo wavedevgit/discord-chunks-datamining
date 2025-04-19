@@ -1,18 +1,18 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => l
+  Z: () => a
 });
-var r = n(200651),
-  i = n(481060),
+var i = n(200651),
+  r = n(481060),
   s = n(598989),
-  a = n(388032);
+  l = n(388032);
 
-function l(e) {
+function a(e) {
   let {
     className: t
-  } = e, n = (0, s._)() ? i.lBU : i.IGR;
-  return (0, r.jsx)(n, {
-    text: a.NW.string(a.t.y2b7CA),
+  } = e, n = (0, s._)() ? r.lBU : r.IGR;
+  return (0, i.jsx)(n, {
+    text: l.intl.string(l.t.y2b7CA),
     className: t
   })
 }

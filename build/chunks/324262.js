@@ -47,8 +47,8 @@ let m = a().debounce(s.ZP.trackWithMetadata, 500),
       undismissable: _,
       onDismissed: E,
       onClick: O,
-      cta: N,
-      ctaColor: y
+      cta: y,
+      ctaColor: I
     } = e;
     i.useEffect(() => {
       m(p.rMx.CHANNEL_NOTICE_VIEWED, {
@@ -56,8 +56,8 @@ let m = a().debounce(s.ZP.trackWithMetadata, 500),
         guild_id: t.id
       })
     }, [t.id, u]);
-    let I = null;
-    "function" == typeof N ? I = N() : null != N && (I = (0, r.jsx)(o.zxk, {
+    let v = null;
+    "function" == typeof y ? v = y() : null != y && (v = (0, r.jsx)(o.zxk, {
       className: f.btn,
       size: o.zxk.Sizes.SMALL,
       onClick: () => {
@@ -68,10 +68,10 @@ let m = a().debounce(s.ZP.trackWithMetadata, 500),
         }), null == O || O()
       },
       fullWidth: !0,
-      color: y,
-      children: N
+      color: I,
+      children: y
     }));
-    let v = null != d ? "".concat(d, "px") : "16px";
+    let C = null != d ? "".concat(d, "px") : "16px";
     return (0, r.jsxs)("div", {
       className: f.channelNotice,
       children: [!0 === _ ? null : (0, r.jsx)(o.P3F, {
@@ -81,7 +81,7 @@ let m = a().debounce(s.ZP.trackWithMetadata, 500),
           }), null == E || E()
         },
         className: f.close,
-        "aria-label": h.NW.string(h.t.WAI6xs),
+        "aria-label": h.intl.string(h.t.WAI6xs),
         children: (0, r.jsx)(o.Dio, {
           size: "md",
           color: "currentColor",
@@ -91,8 +91,8 @@ let m = a().debounce(s.ZP.trackWithMetadata, 500),
         className: f.imageContainer,
         style: {
           marginTop: "".concat(g, "px"),
-          marginLeft: v,
-          marginRight: v
+          marginLeft: C,
+          marginRight: C
         },
         children: (0, r.jsx)("img", {
           className: f.image,
@@ -108,7 +108,7 @@ let m = a().debounce(s.ZP.trackWithMetadata, 500),
         }) : null, (0, r.jsx)(o.Text, {
           variant: "text-sm/normal",
           children: l
-        }), I]
+        }), v]
       })]
     })
   },

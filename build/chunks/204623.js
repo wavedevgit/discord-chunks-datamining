@@ -52,7 +52,7 @@ class S extends i.PureComponent {
   render() {
     let e = (0, r.jsx)("div", {
         children: (0, r.jsxs)("p", {
-          children: [y.NW.string(y.t["4tRjHB"]), " ", (0, r.jsx)(d.Z, {
+          children: [y.intl.string(y.t["4tRjHB"]), " ", (0, r.jsx)(d.Z, {
             src: p.ZP.getURL(c.Z.convert.fromCodePoint("1f44c")),
             emojiName: ":ok_hand:",
             animated: !1
@@ -62,7 +62,7 @@ class S extends i.PureComponent {
       t = (0, r.jsx)(u.zxk, {
         size: u.PhG.LARGE,
         onClick: this.handleDownload,
-        children: y.NW.string(y.t["1WjMbG"])
+        children: y.intl.string(y.t["1WjMbG"])
       });
     return (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(s.ql, {
@@ -72,7 +72,7 @@ class S extends i.PureComponent {
       }), (0, r.jsx)(I, {
         type: this.getPlatform()
       }), (0, r.jsx)(f.Z, {
-        title: y.NW.string(y.t["3h+n+/"]),
+        title: y.intl.string(y.t["3h+n+/"]),
         note: e,
         action: t
       })]

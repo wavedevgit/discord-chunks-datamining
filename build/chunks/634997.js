@@ -13,8 +13,8 @@ var o = n(200651),
   d = n(480916),
   E = n(81643),
   u = n(469775),
-  N = n(981631),
-  m = n(800530),
+  m = n(981631),
+  N = n(800530),
   I = n(388032),
   L = n(631843);
 let C = function(e) {
@@ -37,11 +37,11 @@ let C = function(e) {
         className: L.headersContainer,
         children: [(0, o.jsx)(r.X6q, {
           variant: "heading-xl/bold",
-          children: I.NW.string(I.t["FQ+YOD"])
+          children: I.intl.string(I.t["FQ+YOD"])
         }), (0, o.jsx)(r.X6q, {
           variant: "heading-md/medium",
           color: "text-normal",
-          children: I.NW.string(I.t.Cc41tb)
+          children: I.intl.string(I.t.Cc41tb)
         }), (0, o.jsx)(r.olH, {
           className: L.modalClose,
           onClick: C
@@ -61,9 +61,9 @@ let C = function(e) {
         variant: "text-xs/medium",
         color: "text-muted",
         className: L.requestContainer,
-        children: I.NW.format(I.t.TYfgw8, {
+        children: I.intl.format(I.t.TYfgw8, {
           handleOnRequestHook: () => {
-            _.Z.openUrl(m.sQ.APPEALS_LINK), (0, d.x3)(x, d.d_.PRIMARY, d.sU.MANUAL_REVIEW_REQUEST)
+            _.Z.openUrl(N.sQ.APPEALS_LINK), (0, d.x3)(x, d.d_.PRIMARY, d.sU.MANUAL_REVIEW_REQUEST)
           }
         })
       })]
@@ -77,12 +77,12 @@ let C = function(e) {
         look: r.zxk.Looks.LINK,
         className: L.learnMoreButton,
         onClick: () => {
-          _.Z.openUrl(c.Z.getArticleURL(N.BhN.TIGGER_PAWTECT_UK_AND_AUS_ONLY_LEARN_MORE)), (0, d.x3)(x, d.d_.PRIMARY, d.sU.LEARN_MORE)
+          _.Z.openUrl(c.Z.getArticleURL(m.BhN.TIGGER_PAWTECT_UK_AND_AUS_ONLY_LEARN_MORE)), (0, d.x3)(x, d.d_.PRIMARY, d.sU.LEARN_MORE)
         },
         children: [(0, o.jsx)(r.Text, {
           variant: "text-sm/semibold",
           color: "currentColor",
-          children: I.NW.string(I.t.mXpKND)
+          children: I.intl.string(I.t.mXpKND)
         }), (0, o.jsx)(r.Gr1, {
           size: "xs",
           color: "currentColor"
@@ -97,7 +97,7 @@ let C = function(e) {
         children: [(0, o.jsx)(r.Text, {
           variant: "text-sm/semibold",
           color: "always-white",
-          children: I.NW.string(I.t.VLbVho)
+          children: I.intl.string(I.t.VLbVho)
         }), (0, o.jsx)(r.Gr1, {
           size: "xs",
           color: "currentColor"

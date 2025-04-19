@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  s = n(951284),
-  l = n(442837),
+  l = n(951284),
+  s = n(442837),
   a = n(139387),
   o = n(726542),
   c = n(690221),
@@ -16,14 +16,14 @@ var r = n(200651),
   g = n(388032);
 
 function p(e) {
-  let t = (0, l.e7)([u.Z], () => u.Z.getProps().integrations);
+  let t = (0, s.e7)([u.Z], () => u.Z.getProps().integrations);
   return i.useMemo(() => (function(e, t) {
-    var n, i, l, u;
+    var n, i, s, u;
     let p;
     if (!e.managed) return null;
     let h = null == (n = e.tags) ? void 0 : n.bot_id,
       f = null == (i = e.tags) ? void 0 : i.integration_id,
-      x = (null == (l = e.tags) ? void 0 : l.premium_subscriber) !== void 0,
+      x = (null == (s = e.tags) ? void 0 : s.premium_subscriber) !== void 0,
       b = (null == (u = e.tags) ? void 0 : u.guild_connections) !== void 0;
     if (null != h ? p = null == t ? void 0 : t.find(e => {
         var t;
@@ -39,11 +39,11 @@ function p(e) {
       })), null != p && null != p.application && null != p.name) {
       let e = p.application.id,
         t = p.name;
-      [s.b.TWITCH, s.b.YOUTUBE].includes(p.type) && (t = "".concat(o.Z.get(p.type).name, " - ").concat(t));
+      [l.b.TWITCH, l.b.YOUTUBE].includes(p.type) && (t = "".concat(o.Z.get(p.type).name, " - ").concat(t));
       let n = () => {
         d.Z.setSection(m.pNK.INTEGRATIONS), a.Z.setSection(m.b4C.APPLICATION, e)
       };
-      return g.NW.format(g.t.FuXsWl, {
+      return g.intl.format(g.t.FuXsWl, {
         name: t,
         integrationNameHook: (e, t) => (0, r.jsx)(c.Z, {
           onClick: n,
@@ -51,6 +51,6 @@ function p(e) {
         }, t)
       })
     }
-    return x ? g.NW.string(g.t.oF6FYW) : b ? g.NW.string(g.t.ZQ37tL) : g.NW.string(g.t.k5d7DA)
+    return x ? g.intl.string(g.t.oF6FYW) : b ? g.intl.string(g.t.ZQ37tL) : g.intl.string(g.t.k5d7DA)
   })(e, t), [e, t])
 }

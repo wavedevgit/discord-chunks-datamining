@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(474936),
   S = n(981631),
   T = n(388032),
-  N = n(127453),
-  A = n(769860);
+  A = n(127453),
+  N = n(769860);
 
 function C(e, t) {
   if (null == e) return {};
@@ -65,8 +65,8 @@ function P(e) {
       transitionState: V,
       onClose: Z,
       onSubscribeClick: H,
-      onSubscribeFinish: W,
-      onSecondaryClick: Y,
+      onSubscribeFinish: Y,
+      onSecondaryClick: W,
       secondaryCTA: K,
       subscribeButtonText: z,
       showNewBadge: q = !1,
@@ -139,7 +139,7 @@ function P(e) {
         guild: w.guild,
         onClose: Z
       });
-      let e = en ? T.NW.string(T.t.pj0XBA) : void 0;
+      let e = en ? T.intl.string(T.t.pj0XBA) : void 0;
       if (eh)
         if (null != e_) {
           var t, n;
@@ -147,7 +147,7 @@ function P(e) {
             intervalType: null == e_ || null == (t = e_.subscription_trial) ? void 0 : t.interval,
             intervalCount: null == e_ || null == (n = e_.subscription_trial) ? void 0 : n.interval_count
           })
-        } else null != ep && (e = T.NW.formatToPlainString(T.t.bkQ4bG, {
+        } else null != ep && (e = T.intl.formatToPlainString(T.t.bkQ4bG, {
           percent: ep.discount.amount
         }));
       return (0, r.jsx)(y.Z, {
@@ -160,30 +160,30 @@ function P(e) {
         onClick: () => {
           null == H || H(), Z()
         },
-        onSubscribeModalClose: W,
+        onSubscribeModalClose: Y,
         buttonText: null != z ? z : e
       })
     },
-    eI = X ? o()(N.artContainer, N.artContainerBoxShadow, G) : o()(N.artContainer, G),
+    eI = X ? o()(A.artContainer, A.artContainerBoxShadow, G) : o()(A.artContainer, G),
     eS = null;
   return null != ed.artURL ? eS = (0, r.jsx)("img", {
-    className: N.art,
+    className: A.art,
     alt: "",
     src: ed.artURL
   }) : null != ed.artElement && (eS = ed.artElement), (0, r.jsxs)(l.Y0X, {
-    className: o()(N.root, !eh && j),
+    className: o()(A.root, !eh && j),
     "aria-label": R,
     transitionState: V,
     children: [null != eS && (0, r.jsxs)("div", {
       className: eI,
       children: [eS, q ? (0, r.jsx)("img", {
-        className: N.sparkleBadge,
+        className: A.sparkleBadge,
         alt: "",
-        src: A
+        src: N
       }) : null]
     }), (0, r.jsx)(l.hzk, {
       scrollbarType: "none",
-      className: o()(en ? N.enhancedContent : N.content, !eh && U),
+      className: o()(en ? A.enhancedContent : A.content, !eh && U),
       children: $ ? (0, r.jsx)(l.$jN, {}) : eh ? (0, r.jsx)(b.ZP, {
         onClose: Z,
         type: P,
@@ -195,39 +195,39 @@ function P(e) {
         trialOffer: e_,
         children: k
       }) : (0, r.jsxs)("div", {
-        className: N.contentContainer,
+        className: A.contentContainer,
         children: [es, (0, r.jsxs)("div", {
-          className: N.bodyContent,
+          className: A.bodyContent,
           children: [(0, r.jsxs)(l.X6q, {
-            className: o()(N.header, {
-              [N.enhancedHeader]: en
+            className: o()(A.header, {
+              [A.enhancedHeader]: en
             }, B),
             variant: "heading-xl/bold",
             children: [R, Q ? (0, r.jsx)(f.Z, {
-              className: N.betaTag
+              className: A.betaTag
             }) : null]
           }), ey ? (0, r.jsx)(v.Z, {
             affinities: eb
           }) : void 0, eo, (0, r.jsx)(l.Text, {
             variant: ec ? "text-sm/normal" : "text-md/normal",
-            className: o()(F, N.subHeader),
+            className: o()(F, A.subHeader),
             children: x
           })]
         })]
       })
     }), (0, r.jsxs)(l.mzw, {
-      className: o()(N.footer, eu, {
-        [N.enhancedFooter]: en
+      className: o()(A.footer, eu, {
+        [A.enhancedFooter]: en
       }),
       children: [(0, r.jsxs)("div", {
-        className: o()(N.primaryActions, {
-          [N.enhancedPrimaryActions]: en
+        className: o()(A.primaryActions, {
+          [A.enhancedPrimaryActions]: en
         }),
         children: [null != K ? (0, r.jsx)(l.zxk, {
-          className: o()(N.secondaryAction, {
-            [N.enhancedSecondaryAction]: en
+          className: o()(A.secondaryAction, {
+            [A.enhancedSecondaryAction]: en
           }),
-          onClick: Y,
+          onClick: W,
           size: l.zxk.Sizes.SMALL,
           color: en ? l.zxk.Colors.CUSTOM : l.zxk.Colors.PRIMARY,
           look: l.zxk.Looks.LINK,
@@ -238,11 +238,11 @@ function P(e) {
         size: l.zxk.Sizes.SMALL,
         color: l.zxk.Colors.PRIMARY,
         look: l.zxk.Looks.LINK,
-        children: null != et ? et : T.NW.string(T.t["13/7kZ"])
+        children: null != et ? et : T.intl.string(T.t["13/7kZ"])
       })]
     }), en ? (0, r.jsx)(l.olH, {
       onClick: Z,
-      className: N.closeButton
+      className: A.closeButton
     }) : null, el]
   })
 }

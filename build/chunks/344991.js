@@ -76,35 +76,35 @@ function g(e) {
     state: A,
     executeStateUpdate: M,
     visualState: U,
-    isDisabled: W,
-    error: H
+    isDisabled: H,
+    error: G
   } = (0, d.Ee)(n, {
     type: v,
     selectedOptions: Array.from(I.values())
-  }), G = U === p.gH.LOADING;
+  }), F = U === p.gH.LOADING;
   i.useEffect(() => {
     if ((null == A ? void 0 : A.type) === s.re.USER_SELECT || (null == A ? void 0 : A.type) === s.re.ROLE_SELECT || (null == A ? void 0 : A.type) === s.re.MENTIONABLE_SELECT || (null == A ? void 0 : A.type) === s.re.CHANNEL_SELECT) {
       let e = new Map(A.selectedOptions.map(e => [e.value, e]));
       T(e), Z(new Set(e.keys()))
     }
   }, [A]);
-  let F = i.useCallback(() => {
+  let z = i.useCallback(() => {
     M({
       type: v,
       selectedOptions: Array.from(I.values())
     }) && Z(new Set(I.keys()))
   }, [M, v, I]);
   i.useEffect(() => {
-    !w && !E && (I.size === k.size && Array.from(I.keys()).every(e => k.has(e)) || F())
-  }, [w, E, k, I, F]);
-  let z = 0 === I.size || w,
-    B = {
-      isDisabled: S || W,
+    !w && !E && (I.size === k.size && Array.from(I.keys()).every(e => k.has(e)) || z())
+  }, [w, E, k, I, z]);
+  let B = 0 === I.size || w,
+    W = {
+      isDisabled: S || H,
       wrapperClassName: b.select,
       options: e => new Promise(t => {
         t(o(e))
       }),
-      placeholder: z ? null != P ? P : f.NW.string(f.t.Otr6W1) : void 0,
+      placeholder: B ? null != P ? P : f.intl.string(f.t.Otr6W1) : void 0,
       onClose: () => C(!1),
       onOpen: () => C(!0),
       onBlur: () => N(!1),
@@ -134,11 +134,11 @@ function g(e) {
         inputClassNames: a()({
           [b.soloInput]: 0 === I.size,
           [b.inlineInput]: I.size > 0,
-          [b.hidden]: !z
+          [b.hidden]: !B
         }),
         closeOnSelect: !1,
         centerCaret: !0
-      }, B), R) : (0, l.jsx)(c.VcW, m({
+      }, W), R) : (0, l.jsx)(c.VcW, m({
         className: (b.badges, b.singleSelect),
         value: [...I.values()][0],
         onChange: e => T(null != e ? new Map([
@@ -146,14 +146,14 @@ function g(e) {
         ]) : new Map),
         clearable: !0,
         centerCaret: !0
-      }, B), R), G ? (0, l.jsx)("div", {
+      }, W), R), F ? (0, l.jsx)("div", {
         className: b.loading,
         children: (0, l.jsx)(c.bbz, {
           dotRadius: 3.5,
           themed: !0
         })
       }) : null]
-    }), null != H ? (0, l.jsx)(u.st, (t = m({}, (0, u.c4)(H)), r = r = {
+    }), null != G ? (0, l.jsx)(u.st, (t = m({}, (0, u.c4)(G)), r = r = {
       className: O.error
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var r = Object.keys(e);

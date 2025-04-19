@@ -31,16 +31,16 @@ function p(e) {
     }
     return e
   }({}, e), r = r = {
-    header: s.NW.string(s.t.pjYu09),
-    confirmText: s.NW.string(s.t.zVZXRU),
-    cancelText: s.NW.string(s.t["ETE/oK"]),
+    header: s.intl.string(s.t.pjYu09),
+    confirmText: s.intl.string(s.t.zVZXRU),
+    cancelText: s.intl.string(s.t["ETE/oK"]),
     onConfirm: () => {
       (0, a.l)(!0)
     },
     confirmButtonColor: i.zxk.Colors.BRAND,
     children: [(0, n.jsx)(i.Text, {
       variant: "text-md/normal",
-      children: s.NW.format(s.t["0eydys"], {})
+      children: s.intl.format(s.t["0eydys"], {})
     }), (0, n.jsx)(i.XZJ, {
       className: l.checkboxMargin,
       type: i.XZJ.Types.INVERTED,
@@ -50,7 +50,7 @@ function p(e) {
       },
       children: (0, n.jsx)(i.Text, {
         variant: "text-md/normal",
-        children: s.NW.string(s.t["50TyjY"])
+        children: s.intl.string(s.t["50TyjY"])
       })
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

@@ -57,11 +57,11 @@ class _ extends i.Component {
         onClick: this.handleClick,
         children: [(0, r.jsx)(s.P3F, {
           onClick: this.handleClick,
-          "aria-label": h.NW.string(h.t.mKwsSk),
+          "aria-label": h.intl.string(h.t.mKwsSk),
           className: f.topicClickTarget
         }), null == e.linkedLobby || t ? u.Z.parseTopic(e.topic, !0, {
           channelId: e.id
-        }) : h.NW.string(h.t.XJVlf3)]
+        }) : h.intl.string(h.t.XJVlf3)]
       })]
     }) : null
   }

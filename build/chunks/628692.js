@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   ZP: () => R,
-  ku: () => A
+  ku: () => N
 });
 var r = n(200651),
   i = n(192379),
@@ -63,7 +63,7 @@ function T(e, t) {
   }), e
 }
 
-function N(e) {
+function A(e) {
   let {
     playSound: t
   } = e;
@@ -82,7 +82,7 @@ function N(e) {
   })
 }
 
-function A(e) {
+function N(e) {
   let {
     soundId: t
   } = e, n = (0, s.e7)([h.Z], () => h.Z.getSoundById(t)), i = (0, d.V2)({
@@ -91,7 +91,7 @@ function A(e) {
     isPlaying: a,
     playSound: o
   } = (0, p.Z)(n);
-  return i ? null == n ? (0, r.jsx)(N, {}) : (0, r.jsx)(C, {
+  return i ? null == n ? (0, r.jsx)(A, {}) : (0, r.jsx)(C, {
     className: v.inlineTextArea,
     isPlaying: a,
     playSound: o,
@@ -105,7 +105,7 @@ function C(e) {
     sound: n,
     playSound: i,
     isPlaying: a
-  } = e, s = (null == n ? void 0 : n.emojiId) != null || (null == n ? void 0 : n.emojiName) != null, d = y.NW.formatToPlainString(y.t.tuMUJy, {
+  } = e, s = (null == n ? void 0 : n.emojiId) != null || (null == n ? void 0 : n.emojiName) != null, d = y.intl.formatToPlainString(y.t.tuMUJy, {
     emojiName: null == n ? void 0 : n.emojiName,
     soundName: null == n ? void 0 : n.name
   });
@@ -137,7 +137,7 @@ let R = function(e) {
   } = e, d = E.jU.useSetting(), y = (0, s.e7)([h.Z], () => h.Z.getSoundById(a), [a]), O = i.useMemo(() => {
     var e;
     return null != (e = (0, f.Z)(t, n, a, o)) ? e : y
-  }, [t, n, a, o, y]), S = (0, s.e7)([b.Z], () => b.Z.getChannel(t)), A = (0, u.X0)({
+  }, [t, n, a, o, y]), S = (0, s.e7)([b.Z], () => b.Z.getChannel(t)), N = (0, u.X0)({
     location: "SoundboardMention"
   }), R = i.useRef(null), {
     isPlaying: P,
@@ -148,7 +148,7 @@ let R = function(e) {
       null == (e = R.current) || e.addAnimation()
     }
   }, [w]);
-  return A ? null == O ? (0, r.jsx)(N, {
+  return N ? null == O ? (0, r.jsx)(A, {
     playSound: D
   }) : c && !d ? (0, r.jsx)(g.ZP, {
     containerClassName: v.jumboContainer,

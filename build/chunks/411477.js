@@ -4,8 +4,8 @@ n.d(e, {
 });
 var o = n(200651);
 n(192379);
-var r = n(120356),
-  i = n.n(r),
+var i = n(120356),
+  r = n.n(i),
   a = n(481060),
   l = n(436774),
   c = n(118012),
@@ -15,13 +15,13 @@ function u(t) {
   let {
     text: e,
     textSize: n = c.Z.Sizes.SIZE_12,
-    textColor: r = c.Z.Colors.STANDARD,
+    textColor: i = c.Z.Colors.STANDARD,
     className: u,
     button: _,
     reducedRightPadding: d = !1
   } = t;
   return (0, o.jsxs)("div", {
-    className: i()(d ? s.noticeWithoutRightPadding : s.noticeWithRightPadding, u),
+    className: r()(d ? s.noticeWithoutRightPadding : s.noticeWithRightPadding, u),
     children: [(0, o.jsxs)("div", {
       className: s.noticeLeft,
       children: [(0, o.jsx)(a.SrA, {
@@ -31,7 +31,7 @@ function u(t) {
       }), (0, o.jsx)(c.Z, {
         className: s.text,
         size: n,
-        color: r,
+        color: i,
         children: e
       })]
     }), _]

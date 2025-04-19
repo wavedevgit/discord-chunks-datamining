@@ -63,7 +63,7 @@ let y = function(e) {
     name: "",
     country: "",
     postalCode: ""
-  }), [S, T] = i.useState({}), [N, A] = i.useState({}), {
+  }), [S, T] = i.useState({}), [A, N] = i.useState({}), {
     setFocusLockDisabled: C
   } = i.useContext(s.M);
   i.useEffect(() => () => {
@@ -81,11 +81,11 @@ let y = function(e) {
   let w = i.useCallback(function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
       t = {};
-    return (e || S.name) && "" === O.name && (t.name = _.NW.string(_.t.lIkVsr)), t
+    return (e || S.name) && "" === O.name && (t.name = _.intl.string(_.t.lIkVsr)), t
   }, [S, O]);
 
   function D() {
-    A(w())
+    N(w())
   }
   i.useEffect(() => {
     let e = y.cardNumber && y.cardExpiry && y.cardCvc && 0 === Object.keys(w(!0)).length;
@@ -96,7 +96,7 @@ let y = function(e) {
   let L = [{
     fields: [{
       name: "cardNumber",
-      title: () => _.NW.string(_.t.cVyJ3t),
+      title: () => _.intl.string(_.t.cVyJ3t),
       getClassNameForLayout: () => h.width100,
       renderInput: () => (0, r.jsx)(f.Z, {
         stripeType: "cardNumber",
@@ -108,7 +108,7 @@ let y = function(e) {
   }, {
     fields: [{
       name: "cardExpiry",
-      title: () => _.NW.string(_.t["CeBa//"]),
+      title: () => _.intl.string(_.t["CeBa//"]),
       getClassNameForLayout: () => h.width50,
       renderInput: () => (0, r.jsx)(f.Z, {
         stripeType: "cardExpiry",
@@ -117,7 +117,7 @@ let y = function(e) {
       })
     }, {
       name: "cardCvc",
-      title: () => _.NW.string(_.t.Fd3rOz),
+      title: () => _.intl.string(_.t.Fd3rOz),
       getClassNameForLayout: () => h.width50,
       renderInput: () => (0, r.jsx)(f.Z, {
         stripeType: "cardCvc",
@@ -134,9 +134,9 @@ let y = function(e) {
     fields: [{
       id: "card-name",
       name: "name",
-      title: () => _.NW.string(_.t.VUlFdX),
+      title: () => _.intl.string(_.t.VUlFdX),
       autoComplete: "cc-name",
-      placeholder: () => _.NW.string(_.t.yf7ms7),
+      placeholder: () => _.intl.string(_.t.yf7ms7),
       getClassNameForLayout: () => h.width100,
       renderInput: e => (0, r.jsx)(l.oil, g({}, e))
     }]
@@ -147,9 +147,9 @@ let y = function(e) {
     let n = g({}, O),
       r = g({}, S),
       i = {
-        name: N.name
+        name: A.name
       };
-    S[t] || "" === e || (r[t] = !0), n[t] = e, r[t] && "" === e ? "name" === t && (i.name = _.NW.string(_.t.lIkVsr)) : delete i[t], I(n), T(r), A(i)
+    S[t] || "" === e || (r[t] = !0), n[t] = e, r[t] && "" === e ? "name" === t && (i.name = _.intl.string(_.t.lIkVsr)) : delete i[t], I(n), T(r), N(i)
   }
 
   function M() {
@@ -193,7 +193,7 @@ let y = function(e) {
   return (0, r.jsxs)("div", {
     children: [M(), (0, r.jsx)(d.Z, {
       form: L,
-      errors: N,
+      errors: A,
       formError: n,
       values: O,
       onFieldChange: x,

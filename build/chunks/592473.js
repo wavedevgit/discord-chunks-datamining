@@ -104,7 +104,7 @@ function f(e) {
     return e
   }({
     onClick: d,
-    label: n ? u.NW.string(u.t.gKGz7O) : u.NW.string(u.t.ImQ4dX),
+    label: n ? u.intl.string(u.t.gKGz7O) : u.intl.string(u.t.ImQ4dX),
     className: l,
     iconComponent: () => (0, r.jsx)(h, {
       numRequestToSpeak: o,

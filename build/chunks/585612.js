@@ -1,18 +1,18 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  C: () => a,
+  C: () => l,
   t: () => s
 });
-var r = n(818083),
-  i = n(987338);
-let s = (0, r.B)({
+var i = n(818083),
+  r = n(987338);
+let s = (0, i.B)({
   kind: "user",
   id: "2025-03_sub_marketing_page_v2_experiment",
   label: "Sub Marketing Page V2 Experiment",
   defaultConfig: {
     enabled: !1
   },
-  commonTriggerPoint: i.$P.CONNECTION_OPEN,
+  commonTriggerPoint: r.$P.CONNECTION_OPEN,
   treatments: [{
     id: 0,
     label: "Sub Users see current marketing page",
@@ -28,7 +28,7 @@ let s = (0, r.B)({
   }]
 });
 
-function a(e) {
+function l(e) {
   let {
     enabled: t
   } = s.useExperiment({

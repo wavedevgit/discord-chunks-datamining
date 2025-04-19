@@ -75,8 +75,8 @@ let S = i.memo(function(e) {
       waveform: g,
       durationSecs: S,
       onVolumeShow: T,
-      onVolumeHide: N,
-      onPlay: A,
+      onVolumeHide: A,
+      onPlay: N,
       onPause: C,
       onError: R
     } = e,
@@ -88,7 +88,7 @@ let S = i.memo(function(e) {
     [G, B] = i.useState(!1),
     [F, V] = i.useState(!1),
     [Z, H] = i.useState("none"),
-    [W, Y] = i.useState(() => "function" == typeof a ? a() : a),
+    [Y, W] = i.useState(() => "function" == typeof a ? a() : a),
     K = i.useRef(void 0),
     z = i.useCallback(() => {
       U(e => !e)
@@ -116,7 +116,7 @@ let S = i.memo(function(e) {
     }, [R]),
     ee = i.useCallback(e => {
       let t = (0, h.A)(e, 1);
-      k(0 === t), Y(t), null == d || d(t)
+      k(0 === t), W(t), null == d || d(t)
     }, [d]),
     et = i.useCallback(() => {
       k(!M), null == _ || _(!M)
@@ -141,7 +141,7 @@ let S = i.memo(function(e) {
       played: F,
       currentTime: w,
       onPause: C,
-      onPlay: A
+      onPlay: N
     },
     es = i.useRef(eo);
   i.useEffect(() => {
@@ -165,7 +165,7 @@ let S = i.memo(function(e) {
       }
   }, [j]), O(P, j, D), I(n, j, U);
   let el = j ? l.fpf : l.o1U,
-    ec = j ? E.NW.string(E.t.ZcgDJS) : E.NW.string(E.t.RscU7O);
+    ec = j ? E.intl.string(E.t.ZcgDJS) : E.intl.string(E.t.RscU7O);
   t = "Safari" === platform.name ? (0, r.jsx)(i.Suspense, {
     children: (0, r.jsx)(y, {
       ref: P,
@@ -177,7 +177,7 @@ let S = i.memo(function(e) {
       onLoadedMetadata: Q,
       onError: $,
       muted: M,
-      volume: W
+      volume: Y
     })
   }) : (0, r.jsx)(u.Z, {
     ref: P,
@@ -188,7 +188,7 @@ let S = i.memo(function(e) {
     onLoadedMetadata: Q,
     onError: $,
     muted: M,
-    volume: W,
+    volume: Y,
     playing: j && !G,
     children: (0, r.jsx)("source", {
       src: n
@@ -236,14 +236,14 @@ let S = i.memo(function(e) {
       iconColor: "currentColor",
       sliderWrapperClassName: b.volumeSlider,
       muted: M,
-      value: (0, h.P)(W, 1),
+      value: (0, h.P)(Y, 1),
       minValue: 0,
       maxValue: 1,
       currentWindow: window,
       onValueChange: ee,
       onToggleMute: et,
       onVolumeShow: T,
-      onVolumeHide: N
+      onVolumeHide: A
     }), t]
   })
 })

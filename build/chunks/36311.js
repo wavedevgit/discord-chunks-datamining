@@ -42,11 +42,11 @@ function y(e) {
     modalType: d.it.NSFW_CHANNEL_AGE_VERIFY,
     onAgree: j,
     onDisagree: x,
-    title: b.NW.string(b.t.ZmwvDQ),
+    title: b.intl.string(b.t.ZmwvDQ),
     description: C,
     agreement: y,
     agreementButtonColor: s.zxk.Colors.BRAND,
-    disagreement: b.NW.string(b.t["/g10LC"]),
+    disagreement: b.intl.string(b.t["/g10LC"]),
     imageClassName: _.ageGatedImage
   }) : l ? (0, r.jsx)(h.Z, {
     guildId: null == t ? void 0 : t.id,
@@ -54,12 +54,12 @@ function y(e) {
     modalType: d.it.NSFW_CHANNEL_UNDERAGE,
     onAgree: v,
     onDisagree: x,
-    title: b.NW.string(b.t.NEabBQ),
-    description: b.NW.format(b.t["2kHZen"], {
+    title: b.intl.string(b.t.NEabBQ),
+    description: b.intl.format(b.t["2kHZen"], {
       helpURL: m.Z.getArticleURL(g.BhN.NSFW_AGE_GATING)
     }),
     agreement: null,
-    disagreement: b.NW.string(b.t["/g10LC"]),
+    disagreement: b.intl.string(b.t["/g10LC"]),
     imageClassName: _.ageGatedImage
   }) : (0, r.jsx)(h.Z, {
     guildId: null == t ? void 0 : t.id,
@@ -67,10 +67,10 @@ function y(e) {
     modalType: d.it.NSFW_CHANNEL_VERIFIED,
     onAgree: v,
     onDisagree: x,
-    title: b.NW.string(b.t.ZmwvDQ),
-    description: b.NW.string(b.t.E4Cd5O),
-    agreement: b.NW.string(b.t.wVq7ur),
-    disagreement: b.NW.string(b.t["/g10LC"])
+    title: b.intl.string(b.t.ZmwvDQ),
+    description: b.intl.string(b.t.E4Cd5O),
+    agreement: b.intl.string(b.t.wVq7ur),
+    disagreement: b.intl.string(b.t["/g10LC"])
   })
 }
 let C = function(e) {

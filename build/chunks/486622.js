@@ -23,11 +23,11 @@ function b(e) {
     onAcceptSuccess: n,
     onRejectSuccess: i,
     onError: b
-  } = e, _ = (0, f.Z)(), [y, C] = r.useState(!1), [x, v] = r.useState(!1), [j, O] = r.useState(!1), [E, N] = r.useState(!1), [I, P] = r.useState(!1), S = y || x || j, Z = r.useCallback(async e => {
-    if (!S) {
+  } = e, _ = (0, f.Z)(), [y, C] = r.useState(!1), [x, v] = r.useState(!1), [j, O] = r.useState(!1), [E, I] = r.useState(!1), [P, S] = r.useState(!1), Z = y || x || j, N = r.useCallback(async e => {
+    if (!Z) {
       C(!0);
       try {
-        await (0, p.e4)(e), N(!0), null == n || n()
+        await (0, p.e4)(e), I(!0), null == n || n()
       } catch (t) {
         let e = new o.Hx(t);
         null == b || b(e)
@@ -35,11 +35,11 @@ function b(e) {
         C(!1)
       }
     }
-  }, [S, n, b]), T = r.useCallback(async e => {
-    if (!S) {
+  }, [Z, n, b]), T = r.useCallback(async e => {
+    if (!Z) {
       v(!0);
       try {
-        await (0, p.gN)(e), P(!0), null == i || i()
+        await (0, p.gN)(e), S(!0), null == i || i()
       } catch (t) {
         let e = new o.Hx(t);
         null == b || b(e)
@@ -47,21 +47,21 @@ function b(e) {
         v(!1)
       }
     }
-  }, [S, i, b]), A = r.useCallback(async e => {
-    if (S) return;
+  }, [Z, i, b]), A = r.useCallback(async e => {
+    if (Z) return;
     v(!0);
     let t = l()(e, m.t$);
     try {
       for (let e of t) await (0, p.r_)(e);
-      P(!0), null == i || i()
+      S(!0), null == i || i()
     } catch (t) {
       let e = new o.Hx(t);
       null == b || b(e)
     } finally {
       v(!1)
     }
-  }, [S, i, b]), w = r.useCallback(async e => {
-    if (S) return;
+  }, [Z, i, b]), w = r.useCallback(async e => {
+    if (Z) return;
     if (null != t && null == s.Z.getMutualGuilds(t.id)) {
       O(!0);
       try {
@@ -81,7 +81,7 @@ function b(e) {
         channel_id: e,
         mutual_guild_ids: null != r ? r : [],
         other_user_id: null == t ? void 0 : t.id
-      }), await Z(e)
+      }), await N(e)
     };
     (0, h.H)({
       channelId: e,
@@ -97,9 +97,9 @@ function b(e) {
         })
       }
     })
-  }, [Z, S, t]), R = r.useCallback((e, t, n) => {
+  }, [N, Z, t]), R = r.useCallback((e, t, n) => {
     let r = (r, i) => {
-        i && u.kJ.updateSetting(r), r && null != t && (0, a.zd)(t), Z(e.id), d.default.track(g.rMx.MESSAGE_REQUEST_ACTION, {
+        i && u.kJ.updateSetting(r), r && null != t && (0, a.zd)(t), N(e.id), d.default.track(g.rMx.MESSAGE_REQUEST_ACTION, {
           action: m.cl.ACCEPT_HAM_CONFIRMATION_PROMPT,
           channel_id: e.id,
           is_dont_show_again_checked: i,
@@ -117,9 +117,9 @@ function b(e) {
         })
       }
     }) : r(i)
-  }, [Z]);
+  }, [N]);
   return {
-    acceptMessageRequest: _ ? w : Z,
+    acceptMessageRequest: _ ? w : N,
     rejectMessageRequest: T,
     rejectAll: A,
     markAsNotSpam: R,
@@ -127,6 +127,6 @@ function b(e) {
     isRejectLoading: x,
     isUserProfileLoading: j,
     isOptimisticAccepted: E,
-    isOptimisticRejected: I
+    isOptimisticRejected: P
   }
 }

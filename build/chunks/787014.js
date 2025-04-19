@@ -118,8 +118,8 @@ async function h(e, t) {
     videoQualityMode: I,
     autoArchiveDuration: S,
     locked: T,
-    invitable: N,
-    availableTags: A,
+    invitable: A,
+    availableTags: N,
     defaultSortOrder: C,
     defaultForumLayout: R,
     defaultTagSetting: P,
@@ -148,12 +148,12 @@ async function h(e, t) {
       video_quality_mode: I,
       auto_archive_duration: S,
       locked: T,
-      invitable: N,
+      invitable: A,
       default_reaction_emoji: null != v ? {
         emoji_id: null == v ? void 0 : v.emojiId,
         emoji_name: null == v ? void 0 : v.emojiName
       } : null === v ? null : void 0,
-      available_tags: null == A ? void 0 : A.map(e => ({
+      available_tags: null == N ? void 0 : N.map(e => ({
         id: e.id,
         name: e.name,
         emoji_id: e.emojiId,

@@ -2,14 +2,14 @@
 n.d(t, {
   default: () => d
 }), n(35282);
-var o = n(200651);
+var i = n(200651);
 n(192379);
-var r = n(481060),
-  i = n(536442),
+var o = n(481060),
+  r = n(536442),
   s = n(13140),
   c = n(487029),
-  a = n(388032),
-  l = n(771031);
+  l = n(388032),
+  a = n(771031);
 
 function d(e) {
   let {
@@ -21,62 +21,62 @@ function d(e) {
   } = e;
 
   function b() {
-    (0, i.Kw)(i.v6.SOUNDBOARD_WHEEL_EDUCATION_MODAL), k()
+    (0, r.Kw)(r.v6.SOUNDBOARD_WHEEL_EDUCATION_MODAL), k()
   }
 
   function y() {
-    b(), (0, r.ZDy)(async () => {
+    b(), (0, o.ZDy)(async () => {
       let {
         default: e
       } = await n.e("5551").then(n.bind(n, 355453));
-      return t => (0, o.jsx)(e, function(e) {
+      return t => (0, i.jsx)(e, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            o = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (o = o.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            i = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), o.forEach(function(t) {
-            var o;
-            o = n[t], t in e ? Object.defineProperty(e, t, {
-              value: o,
+          }))), i.forEach(function(t) {
+            var i;
+            i = n[t], t in e ? Object.defineProperty(e, t, {
+              value: i,
               enumerable: !0,
               configurable: !0,
               writable: !0
-            }) : e[t] = o
+            }) : e[t] = i
           })
         }
         return e
       }({}, t))
     })
   }
-  return (0, o.jsxs)(r.Y0X, {
+  return (0, i.jsxs)(o.Y0X, {
     transitionState: h,
-    "aria-label": a.NW.string(a.t["yJeV5+"]),
-    children: [(0, o.jsxs)(r.hzk, {
-      className: l.content,
-      children: [(0, o.jsx)(r.X6q, {
+    "aria-label": l.intl.string(l.t["yJeV5+"]),
+    children: [(0, i.jsxs)(o.hzk, {
+      className: a.content,
+      children: [(0, i.jsx)(o.X6q, {
         variant: "heading-xl/extrabold",
-        className: l.header,
-        children: a.NW.string(a.t["yJeV5+"])
-      }), (0, o.jsx)(r.Text, {
+        className: a.header,
+        children: l.intl.string(l.t["yJeV5+"])
+      }), (0, i.jsx)(o.Text, {
         variant: "text-md/normal",
-        children: a.NW.format(a.t.fq3Sw8, {
+        children: l.intl.format(l.t.fq3Sw8, {
           keybind: (0, s.BB)(u.shortcut, !0).split(" + "),
-          keybindHook: (e, t) => (0, o.jsx)("span", {
-            className: l.keybindHintKeys,
-            children: (0, o.jsx)(r.M2$, {
-              className: l.keybindShortcut,
+          keybindHook: (e, t) => (0, i.jsx)("span", {
+            className: a.keybindHintKeys,
+            children: (0, i.jsx)(o.M2$, {
+              className: a.keybindShortcut,
               shortcut: (0, s.BB)(u.shortcut, !1)
             })
           }, t),
-          openSettingsHook: (e, t) => (0, o.jsx)(r.eee, {
+          openSettingsHook: (e, t) => (0, i.jsx)(o.eee, {
             onClick: y,
             children: e
           }, t)
         })
-      }), (0, o.jsx)("div", {
-        className: l.soundWheel,
-        children: (0, o.jsx)(c.Z, {
+      }), (0, i.jsx)("div", {
+        className: a.soundWheel,
+        children: (0, i.jsx)(c.Z, {
           width: 372,
           height: 316,
           guildId: t,
@@ -87,18 +87,18 @@ function d(e) {
           analyticsSource: "education modal"
         })
       })]
-    }), (0, o.jsxs)(r.mzw, {
-      children: [(0, o.jsx)(r.zxk, {
+    }), (0, i.jsxs)(o.mzw, {
+      children: [(0, i.jsx)(o.zxk, {
         onClick: b,
-        children: a.NW.string(a.t.ZwRzIC)
-      }), (0, o.jsx)(r.zxk, {
-        look: r.zxk.Looks.LINK,
-        color: r.zxk.Colors.PRIMARY,
+        children: l.intl.string(l.t.ZwRzIC)
+      }), (0, i.jsx)(o.zxk, {
+        look: o.zxk.Looks.LINK,
+        color: o.zxk.Colors.PRIMARY,
         onClick: y,
-        children: a.NW.string(a.t["TJ0N9/"])
+        children: l.intl.string(l.t["TJ0N9/"])
       })]
-    }), (0, o.jsx)(r.olH, {
-      className: l.closeButton,
+    }), (0, i.jsx)(o.olH, {
+      className: a.closeButton,
       onClick: b
     })]
   })

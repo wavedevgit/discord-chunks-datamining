@@ -26,7 +26,7 @@ let b = (0, s.Z)(function(e) {
     guildId: n
   }), Z = (0, f.Z)(l.id, n), p = (0, d.Z)({
     id: l.id,
-    label: h.NW.string(h.t["/AXYnJ"])
+    label: h.intl.string(h.t["/AXYnJ"])
   }), O = (0, u.Z)(l.id), j = l.isNonUserBot();
   return (0, t.jsx)(o.Z, {
     context: s,
@@ -34,7 +34,7 @@ let b = (0, s.Z)(function(e) {
     children: (0, t.jsxs)(r.v2r, {
       navId: "user-context",
       onClose: i.Zy,
-      "aria-label": h.NW.string(h.t.liqwPD),
+      "aria-label": h.intl.string(h.t.liqwPD),
       onSelect: c,
       children: [(0, t.jsxs)(r.kSQ, {
         children: [!j && b, !j && O]

@@ -66,7 +66,7 @@ function S(e, t) {
 
 function T(e, t) {
   if (null == e) return {};
-  var n, r, i = N(e, t);
+  var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -74,14 +74,14 @@ function T(e, t) {
   return i
 }
 
-function N(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let A = i.lazy(() => Promise.all([n.e("26436"), n.e("28102")]).then(n.bind(n, 534828))),
+let N = i.lazy(() => Promise.all([n.e("26436"), n.e("28102")]).then(n.bind(n, 534828))),
   C = 7,
   R = () => Promise.resolve();
 
@@ -113,19 +113,19 @@ function w(e) {
     backgroundColor: null != t ? (0, c.Rf)(t) : u.backgroundColor
   };
   let T = _ ? g : t,
-    N = !1;
+    A = !1;
 
-  function A() {
+  function N() {
     let e = 16,
       t = 16;
     if ((i || n) && (e = 32, t = 24), a) return (0, r.jsx)(p.dz2, {
       size: "custom",
       width: e,
       height: t,
-      color: (0, m.Lq)(N ? E.Ilk.WHITE_500 : E.Ilk.BLACK_500)
+      color: (0, m.Lq)(A ? E.Ilk.WHITE_500 : E.Ilk.BLACK_500)
     })
   }
-  return i && !a ? N = !0 : (i || a) && (N = (0, c.Bd)(null != T ? T : E.p6O) > .1), (0, r.jsx)(f.t, {
+  return i && !a ? A = !0 : (i || a) && (A = (0, c.Bd)(null != T ? T : E.p6O) > .1), (0, r.jsx)(f.t, {
     offset: -2,
     children: (0, r.jsxs)("button", S(O({
       type: "button",
@@ -150,8 +150,8 @@ function w(e) {
         colorClass: y.colorPickerDropperFg,
         width: 14,
         height: 14,
-        color: (0, m.Lq)(N ? E.Ilk.WHITE_500 : E.Ilk.BLACK_500)
-      }) : null, A()]
+        color: (0, m.Lq)(A ? E.Ilk.WHITE_500 : E.Ilk.BLACK_500)
+      }) : null, N()]
     }))
   })
 }
@@ -202,7 +202,7 @@ function x(e) {
     showEyeDropper: E,
     wrapperComponentType: v,
     className: I
-  } = e, T = (0, h.Z)(), N = P(t), R = null != N ? N : 0, w = (0, c.Rf)(R), D = (0, c.O)(R), [L, x] = i.useState({
+  } = e, T = (0, h.Z)(), A = P(t), R = null != A ? A : 0, w = (0, c.Rf)(R), D = (0, c.O)(R), [L, x] = i.useState({
     current: R,
     pending: {
       hex: w,
@@ -211,18 +211,18 @@ function x(e) {
     input: w
   });
   i.useEffect(() => {
-    if (null == N || N === L.current) return;
-    let e = (0, c.Rf)(N),
-      t = (0, c.O)(N);
+    if (null == A || A === L.current) return;
+    let e = (0, c.Rf)(A),
+      t = (0, c.O)(A);
     x({
-      current: N,
+      current: A,
       pending: {
         hex: e,
         hsl: t
       },
       input: e
     })
-  }, [N, L]), i.useEffect(() => s, [s]);
+  }, [A, L]), i.useEffect(() => s, [s]);
   let M = e => {
       let t = "#" === e[0] ? e : "#".concat(e);
       if (!(0, c.FX)(t)) return void x(e => S(O({}, e), {
@@ -256,7 +256,7 @@ function x(e) {
     }, G = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(i.Suspense, {
         fallback: null,
-        children: (0, r.jsx)(A, {
+        children: (0, r.jsx)(N, {
           onChange: j,
           onChangeComplete: e => {
             let {
@@ -270,7 +270,7 @@ function x(e) {
         className: y.customColorPickerInputContainer,
         children: [E && null != T && (0, r.jsx)(g.JO, {
           onClick: k,
-          tooltip: b.NW.string(b.t["0dU9Nz"]),
+          tooltip: b.intl.string(b.t["0dU9Nz"]),
           tooltipPosition: "top",
           className: y.customColorPickerEyeDropper,
           icon: p.ilE
@@ -293,7 +293,7 @@ function x(e) {
       }), m]
     }), B = null != v ? v : d.V;
   return (0, r.jsx)(B, {
-    "aria-label": b.NW.string(b.t.WTqQ5e),
+    "aria-label": b.intl.string(b.t.WTqQ5e),
     className: o()(y.customColorPicker, I),
     children: G
   })

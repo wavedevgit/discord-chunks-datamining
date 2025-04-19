@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(64621),
   S = n(448980),
   T = n(336383),
-  N = n(194811),
-  A = n(373826),
+  A = n(194811),
+  N = n(373826),
   C = n(262210),
   R = n(666984),
   P = n(386019),
@@ -76,15 +76,15 @@ function M(e) {
     activity: L,
     user: n
   }), H = (0, g.Z)(L), {
-    largeImage: W
+    largeImage: Y
   } = (0, d.FO)(L), {
-    analyticsLocations: Y
+    analyticsLocations: W
   } = (0, u.ZP)(c.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), K = (0, h.Z)({
     display: "live",
     user: n,
     activity: L,
     entry: Z,
-    analyticsLocations: Y
+    analyticsLocations: W
   }), z = (0, m.Z)({
     userId: n.id,
     onAction: K
@@ -93,10 +93,10 @@ function M(e) {
   let q = () => {
       var e, t;
       let a = null != (t = null == (e = L.state) ? void 0 : e.split(";")) ? t : [];
-      return 0 === a.length ? null : null == L.sync_id ? (0, r.jsx)(A.Z, {
+      return 0 === a.length ? null : null == L.sync_id ? (0, r.jsx)(N.Z, {
         variant: "text-xs/normal",
         text: a.join(", ")
-      }) : (0, r.jsx)(A.Z, {
+      }) : (0, r.jsx)(N.Z, {
         variant: "text-xs/normal",
         text: a.map((e, t) => (0, r.jsxs)(i.Fragment, {
           children: [(0, r.jsx)(s.P3F, {
@@ -137,7 +137,7 @@ function M(e) {
   let J = null != (t = L.application_id) ? t : L.name,
     $ = F === w.n_.ACTIVITY && V === J;
   return (0, r.jsx)(u.Gt, {
-    value: Y,
+    value: W,
     children: (0, r.jsx)(I.Z, {
       targetElementRef: U,
       sourceType: w.n_.ACTIVITY,
@@ -176,12 +176,12 @@ function M(e) {
             }),
             onAction: K,
             onClose: j,
-            children: [(0, r.jsx)(N.Z, x({}, H)), (0, r.jsx)("div", {
+            children: [(0, r.jsx)(A.Z, x({}, H)), (0, r.jsx)("div", {
               className: D.body,
               children: (0, r.jsxs)("div", {
                 className: o()(D.content, B),
                 children: [(0, r.jsx)(f.E, {
-                  image: W,
+                  image: Y,
                   size: f.J.SIZE_60,
                   className: D.clickableImage,
                   onClick: e => {
@@ -192,7 +192,7 @@ function M(e) {
                 }), (0, r.jsxs)("div", {
                   className: D.details,
                   children: [(0, r.jsxs)("div", {
-                    children: [(0, r.jsx)(A.Z, {
+                    children: [(0, r.jsx)(N.Z, {
                       variant: "heading-sm/semibold",
                       text: L.details,
                       onClick: () => {

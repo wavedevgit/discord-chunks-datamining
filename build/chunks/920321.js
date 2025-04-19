@@ -37,7 +37,7 @@ function u() {
     let t = c({}, e),
       n = t[o.w5];
     return null == n || (t[o.w5] = c({}, n, n.disabled && {
-      name: s.NW.string(s.t.WKWARU)
+      name: s.intl.string(s.t.WKWARU)
     })), t
   }, [e])
 }

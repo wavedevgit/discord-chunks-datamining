@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => N
+  Z: () => y
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -79,7 +79,7 @@ class O extends i.Component {
         },
         maxLength: 100,
         query: e,
-        placeholder: b.NW.string(b.t.aSxWSk)
+        placeholder: b.intl.string(b.t.aSxWSk)
       })
     })
   }
@@ -132,7 +132,7 @@ class O extends i.Component {
   }
 }
 
-function N() {
+function y() {
   let e = (0, o.e7)([d.Z], () => d.Z.hasLayers()),
     t = (0, s.s9z)(s.JQI);
   return (0, r.jsx)(O, {

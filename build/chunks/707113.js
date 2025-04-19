@@ -1,6 +1,6 @@
 /** Chunk was on 9924 **/
 n.d(t, {
-  Z: () => N
+  Z: () => p
 });
 var r = n(200651),
   l = n(192379),
@@ -33,17 +33,17 @@ function f(e) {
   })
 }
 
-function N(e) {
+function p(e) {
   let {
     guild: t,
     className: n,
     onPageChange: i,
     onMemberSelect: s
-  } = e, N = t.id, p = (0, o.e7)([u.Z], () => u.Z.getEstimatedMemberSearchCountByGuildId(N), [N]), g = (0, d.$j)(N), _ = (0, d.M3)(N), v = l.useCallback(e => {
+  } = e, p = t.id, g = (0, o.e7)([u.Z], () => u.Z.getEstimatedMemberSearchCountByGuildId(p), [p]), _ = (0, d.$j)(p), v = (0, d.M3)(p), C = l.useCallback(e => {
     null != e && (null == s || s(e))
-  }, [s]), C = (0, m.xb)(_, g, p), T = l.useRef(null), E = l.useRef(null), I = l.useCallback(() => {
+  }, [s]), T = (0, m.xb)(v, _, g), N = l.useRef(null), E = l.useRef(null), I = l.useCallback(() => {
     var e;
-    null == (e = T.current) || e.resetSearchText()
+    null == (e = N.current) || e.resetSearchText()
   }, []);
   return (0, r.jsx)("div", {
     className: a()(b.mainTableContainer, n),
@@ -53,15 +53,15 @@ function N(e) {
       orientation: "horizontal",
       children: [(0, r.jsx)(j.Z, {
         guild: t,
-        ref: T
+        ref: N
       }), (0, r.jsx)(f, {
         guild: t
       }), (0, r.jsx)(x.Z, {
         guild: t,
-        onSelectRow: v,
-        searchState: C,
+        onSelectRow: C,
+        searchState: T,
         onResetForNewMembers: I
-      }), C !== m.po.SUCCESS_STILL_INDEXING && (0, r.jsx)(h.Z, {
+      }), T !== m.po.SUCCESS_STILL_INDEXING && (0, r.jsx)(h.Z, {
         guildId: t.id,
         onPageChange: i
       })]

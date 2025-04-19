@@ -1,19 +1,19 @@
 /** Chunk was on 52030 **/
-r.d(t, {
+n.d(t, {
   Z: () => u
-}), r(388685), r(457542);
-var n = r(200651),
-  l = r(192379),
-  s = r(658550),
-  i = r(481060),
-  o = r(540059),
-  a = r(507453),
-  c = r(388032);
+}), n(388685), n(457542);
+var r = n(200651),
+  l = n(192379),
+  i = n(658550),
+  s = n(481060),
+  o = n(540059),
+  a = n(507453),
+  c = n(388032);
 
 function u(e) {
   let {
     mfaChallenge: t,
-    finish: r,
+    finish: n,
     setSlide: u,
     onClose: d,
     isSlideReady: f
@@ -23,43 +23,43 @@ function u(e) {
       var e;
       null == (e = x.current) || e.focus()
     }
-  }, [f]), (0, n.jsxs)("form", {
+  }, [f]), (0, r.jsxs)("form", {
     onSubmit: e => {
-      e.preventDefault(), p(!0), b(null), r({
+      e.preventDefault(), p(!0), b(null), n({
         mfaType: "totp",
         data: j
       }).catch(e => {
-        var t, r;
-        b(null != (r = null == (t = e.body) ? void 0 : t.message) ? r : e.message)
+        var t, n;
+        b(null != (n = null == (t = e.body) ? void 0 : t.message) ? n : e.message)
       }).finally(() => {
         p(!1)
       })
     },
-    children: [(0, n.jsx)(a.Z.SlideHeader, {
+    children: [(0, r.jsx)(a.Z.SlideHeader, {
       onClose: d
-    }), (0, n.jsx)(a.Z.SlideContent, {
+    }), (0, r.jsx)(a.Z.SlideContent, {
       scrollbarType: h ? "none" : void 0,
-      children: (0, n.jsxs)(i.xJW, {
-        title: c.NW.string(c.t.HZPBOT),
-        children: [(0, n.jsx)(i.oil, {
+      children: (0, r.jsxs)(s.xJW, {
+        title: c.intl.string(c.t.HZPBOT),
+        children: [(0, r.jsx)(s.oil, {
           inputRef: x,
           onChange: y,
-          placeholder: c.NW.string(c.t.tARzgo),
-          maxLength: s.gH,
-          minLength: s.gH,
+          placeholder: c.intl.string(c.t.tARzgo),
+          maxLength: i.gH,
+          minLength: i.gH,
           value: j,
           autoComplete: "one-time-code",
           spellCheck: "false",
           disabled: m
-        }), (0, n.jsx)(a.Z.SlideError, {
+        }), (0, r.jsx)(a.Z.SlideError, {
           error: g
         })]
       })
-    }), (0, n.jsx)(a.Z.SlideFooter, {
+    }), (0, r.jsx)(a.Z.SlideFooter, {
       mfaChallenge: t,
       setSlide: u,
       showConfirm: !0,
-      disabled: j.length !== s.gH,
+      disabled: j.length !== i.gH,
       submitting: m
     })]
   })

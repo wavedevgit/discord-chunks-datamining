@@ -2,15 +2,15 @@
 n.d(t, {
   Bm: () => D,
   DK: () => j,
-  P7: () => S,
+  P7: () => N,
   X: () => M,
-  ae: () => N,
+  ae: () => S,
   cr: () => R,
   kU: () => U
 });
-var i, r, a = n(192379),
-  l = n(392711),
-  o = n.n(l),
+var i, l, r = n(192379),
+  a = n(392711),
+  o = n.n(a),
   c = n(442837),
   u = n(25209),
   d = n(481060),
@@ -49,19 +49,19 @@ let L = (i = function(e) {
       })
     }
     return e
-  }({}, b.Z.RULES.commandMention), r = r = {
+  }({}, b.Z.RULES.commandMention), l = l = {
     parse: (e, t, n) => ({
       content: b.Z.RULES.commandMention.parse(e, t, n).content
     })
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
       var i = Object.getOwnPropertySymbols(e);
       n.push.apply(n, i)
     }
     return n
-  })(Object(r)).forEach(function(e) {
-    Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(r, e))
+  })(Object(l)).forEach(function(e) {
+    Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
   }), i),
   T = o().pick((0, h.Z)([b.Z.RULES, {
     commandMention: L
@@ -69,15 +69,15 @@ let L = (i = function(e) {
     enableBuildOverrides: !1,
     enableEmojiClick: !1
   })]), ["commandMention", "customEmoji", "em", "emoji", "emoticon", "highlight", "inlineCode", "looseEm", "s", "strong", "text", "timestamp", "u", "spoiler"]),
-  N = u.w4(T);
+  S = u.w4(T);
 
-function S(e) {
+function N(e) {
   let {
     context: t,
     application: n,
     location: i,
-    sectionName: r,
-    commandName: l,
+    sectionName: l,
+    commandName: a,
     autoDismissOnClick: o = !0,
     launchingComponentId: u,
     submitting: y = !1,
@@ -88,12 +88,12 @@ function S(e) {
     context: t,
     applicationId: n.id,
     fetchesApplication: b
-  }), L = (0, P.Q)(Z), T = (0, c.e7)([O.Z], () => O.Z.entrypoint()), N = a.useMemo(() => {
-    var e, i, r;
-    if ("channel" !== t.type || g) return null != (r = null == (e = n.bot) ? void 0 : e.id) ? r : null == (i = (0, v.If)(t, n.id).descriptor) ? void 0 : i.botId
-  }, [t, n.id, n.bot, g]), S = (0, s.w1)({
+  }), L = (0, P.Q)(Z), T = (0, c.e7)([O.Z], () => O.Z.entrypoint()), S = r.useMemo(() => {
+    var e, i, l;
+    if ("channel" !== t.type || g) return null != (l = null == (e = n.bot) ? void 0 : e.id) ? l : null == (i = (0, v.If)(t, n.id).descriptor) ? void 0 : i.botId
+  }, [t, n.id, n.bot, g]), N = (0, s.w1)({
     applicationId: n.id,
-    botUserIdForAppDM: N,
+    botUserIdForAppDM: S,
     embeddedActivitiesManager: f.Z,
     context: t,
     locationObject: A.location,
@@ -104,20 +104,20 @@ function S(e) {
       o && m.yT(I.ti.ACTIVITY), (0, E.yw)(w.rMx.APP_LAUNCHER_ACTIVITY_ITEM_SELECTED, {
         location: i,
         application_id: t,
-        section_name: r,
+        section_name: l,
         action: L,
         source: T
       })
     },
     launchingComponentId: u,
     commandOrigin: _.bB.APPLICATION_LAUNCHER,
-    sectionName: r,
+    sectionName: l,
     source: T,
     fetchesApplication: b,
     onConfirmActivityLaunchChecksAlertOpen: h
-  }), D = d.Ttl.BRAND, M = null != l ? l : C.NW.string(C.t.zKX8Nj);
-  return L === s.JS.JOIN ? (D = d.Ttl.GREEN, M = C.NW.string(C.t.d9PsMj)) : L !== s.JS.LEAVE || y || (D = d.Ttl.RED, M = C.NW.string(C.t["Hi1/aW"])), {
-    onActivityItemSelected: S,
+  }), D = d.Ttl.BRAND, M = null != a ? a : C.intl.string(C.t.zKX8Nj);
+  return L === s.JS.JOIN ? (D = d.Ttl.GREEN, M = C.intl.string(C.t.d9PsMj)) : L !== s.JS.LEAVE || y || (D = d.Ttl.RED, M = C.intl.string(C.t["Hi1/aW"])), {
+    onActivityItemSelected: N,
     activityAction: L,
     buttonColor: D,
     buttonText: M
@@ -126,7 +126,7 @@ function S(e) {
 
 function D(e, t) {
   let n = O.Z.entrypoint(),
-    i = a.useMemo(() => (0, l.debounce)((e, t) => {
+    i = r.useMemo(() => (0, a.debounce)((e, t) => {
       (0, E.yw)(w.rMx.APP_LAUNCHER_EMPTY_STATE_ENCOUNTERED, {
         type: e,
         source: t
@@ -135,7 +135,7 @@ function D(e, t) {
       leading: !1,
       trailing: !0
     }), []);
-  a.useEffect(() => {
+  r.useEffect(() => {
     null != e && i(e, n)
   }, [e, t, n, i])
 }

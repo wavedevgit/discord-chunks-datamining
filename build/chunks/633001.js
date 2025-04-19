@@ -24,8 +24,8 @@ var a = n(200651),
   y = n(572004),
   C = n(70956),
   O = n(145597),
-  N = n(246992),
-  E = n(981631),
+  E = n(246992),
+  N = n(981631),
   T = n(757744),
   S = n(388032),
   P = n(931207),
@@ -63,8 +63,8 @@ function I(e, t) {
   }), e
 }
 let R = {
-    [E.Odu.CLICK_ZONE_DEBUG]: e => I(k({
-      type: E.Odu.CLICK_ZONE_DEBUG,
+    [N.Odu.CLICK_ZONE_DEBUG]: e => I(k({
+      type: N.Odu.CLICK_ZONE_DEBUG,
       id: (0, s.Z)(),
       layoutId: e,
       anchor: {
@@ -75,11 +75,11 @@ let R = {
         width: 100,
         height: 100
       }
-    }, g.Z.getWidgetDefaultSettings(E.Odu.CLICK_ZONE_DEBUG)), {
+    }, g.Z.getWidgetDefaultSettings(N.Odu.CLICK_ZONE_DEBUG)), {
       pinned: !0
     }),
-    [E.Odu.PERFORMANCE_DEBUG]: e => I(k({
-      type: E.Odu.PERFORMANCE_DEBUG,
+    [N.Odu.PERFORMANCE_DEBUG]: e => I(k({
+      type: N.Odu.PERFORMANCE_DEBUG,
       id: (0, s.Z)(),
       layoutId: e,
       anchor: {
@@ -91,7 +91,7 @@ let R = {
         width: "auto",
         height: "auto"
       }
-    }, g.Z.getWidgetDefaultSettings(E.Odu.PERFORMANCE_DEBUG)), {
+    }, g.Z.getWidgetDefaultSettings(N.Odu.PERFORMANCE_DEBUG)), {
       pinned: !0
     })
   },
@@ -116,7 +116,7 @@ function L(e) {
       (0, y.JG)(t, () => l(!0))
     },
     className: P.copyId,
-    children: ["Application Id: ", t, " ", n ? S.NW.string(S.t["t5VZ8/"]) : null]
+    children: ["Application Id: ", t, " ", n ? S.intl.string(S.t["t5VZ8/"]) : null]
   })
 }
 
@@ -274,7 +274,7 @@ function z(e) {
 
 function M() {
   var e, t;
-  let [n, l] = z(E.Odu.CLICK_ZONE_DEBUG), [s, d] = z(E.Odu.PERFORMANCE_DEBUG), g = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ClickZones)), j = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.WidgetAreas)), y = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.DisabledGPUBoost)), T = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ForceGPUBoost)), S = (0, o.e7)([p.default], () => p.default.getForcedRenderMode()), [R, Z] = r.useState({}), [L, M] = r.useState(S), B = e => {
+  let [n, l] = z(N.Odu.CLICK_ZONE_DEBUG), [s, d] = z(N.Odu.PERFORMANCE_DEBUG), g = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ClickZones)), j = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.WidgetAreas)), y = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.DisabledGPUBoost)), T = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ForceGPUBoost)), S = (0, o.e7)([p.default], () => p.default.getForcedRenderMode()), [R, Z] = r.useState({}), [L, M] = r.useState(S), B = e => {
     M(e), u.Z.forceRenderMode(e)
   }, U = [{
     label: m.R5.UNSET,
@@ -465,7 +465,7 @@ function M() {
             isSelected: e => e === L,
             options: U,
             select: B,
-            popoutLayerContext: N.O$
+            popoutLayerContext: E.O$
           })
         }))
       }), ei.length > 0 && (0, a.jsx)(c.ua7, {

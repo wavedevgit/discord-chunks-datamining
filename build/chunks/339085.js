@@ -26,8 +26,8 @@ var r, i = n(392711),
   I = n(271383),
   S = n(93093),
   T = n(430824),
-  N = n(771845),
-  A = n(594174),
+  A = n(771845),
+  N = n(594174),
   C = n(70956),
   R = n(176354),
   P = n(823379),
@@ -66,7 +66,7 @@ function H(e) {
   return e
 }
 
-function W(e, t) {
+function Y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -77,8 +77,8 @@ function W(e, t) {
   return n
 }
 
-function Y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : W(Object(t)).forEach(function(n) {
+function W(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -324,7 +324,7 @@ class ef {
           a = null != (n = e[i]) ? n : 0;
         if (e[i] = a + 1, a > 0) {
           let e = "".concat(i, "~").concat(a);
-          t = Y(H({}, t), {
+          t = W(H({}, t), {
             name: e,
             originalName: i,
             allNamesString: ":".concat(e, ":")
@@ -345,7 +345,7 @@ class ef {
       null != t && (a().each(t.usableEmojis, n), a().each(t.emoticons, r))
     };
     for (let e in i(this.guildId), this.newlyAddedEmoji) null != this.newlyAddedEmoji[e] ? this.newlyAddedEmoji[e] = this.newlyAddedEmoji[e].sort((e, t) => D.default.compare(t.id, e.id)).slice(0, 3) : this.newlyAddedEmoji[e] = [];
-    N.ZP.getFlattenedGuildIds().forEach(e => {
+    A.ZP.getFlattenedGuildIds().forEach(e => {
       e !== this.guildId && i(e)
     }), this.escapedEmoticonNames = t.join("|")
   }
@@ -380,7 +380,7 @@ function eg() {
 
 function eE(e, t) {
   if (em(e), ef.clear(e), null == t) return;
-  let n = A.default.getCurrentUser();
+  let n = N.default.getCurrentUser();
   if (null == n) return;
   let r = (0, y.r)(e);
   en[e] = new Q(e, n.id, t, r)
@@ -420,20 +420,20 @@ function eT(e) {
   eE(t, n), eg()
 }
 
-function eN(e) {
+function eA(e) {
   let {
     guild: t
   } = e;
   em(t.id), ea.delete(t.id), eg()
 }
 
-function eA(e) {
+function eN(e) {
   var t;
   let {
     guildId: n,
     user: r
   } = e;
-  if (r.id !== (null == (t = A.default.getCurrentUser()) ? void 0 : t.id)) return;
+  if (r.id !== (null == (t = N.default.getCurrentUser()) ? void 0 : t.id)) return;
   let i = en[n];
   eE(n, null == i ? void 0 : i.usableEmojis), eg()
 }
@@ -471,9 +471,9 @@ function eP() {
   let l = O.Z.frecencyWithoutFetchingLatest,
     c = null != (i = null == (n = l.emojiFrecency) ? void 0 : n.emojis) ? i : {},
     u = null != (o = null == (r = l.emojiReactionFrecency) ? void 0 : r.emojis) ? o : {};
-  e_.overwriteHistory(a().mapValues(c, e => Y(H({}, e), {
+  e_.overwriteHistory(a().mapValues(c, e => W(H({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
-  })), q.pendingUsages), ep.overwriteHistory(a().mapValues(u, e => Y(H({}, e), {
+  })), q.pendingUsages), ep.overwriteHistory(a().mapValues(u, e => W(H({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), q.emojiReactionPendingUsages), eR(c, u)
 }
@@ -552,7 +552,7 @@ function ej(e) {
   let {
     guildId: t
   } = e, n = new Set(q.expandedSectionsByGuildIds);
-  q.expandedSectionsByGuildIds.has(t) ? n.delete(t) : n.add(t), q = Y(H({}, q), {
+  q.expandedSectionsByGuildIds.has(t) ? n.delete(t) : n.add(t), q = W(H({}, q), {
     expandedSectionsByGuildIds: n
   })
 }
@@ -576,7 +576,7 @@ function eG(e) {
 }
 class eB extends(r = c.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(f.Z, S.Z, I.ZP, T.Z, v.default, b.Z, j.Z, A.default, m.Z), null != e && (null != e.pendingUsages && (q.pendingUsages = e.pendingUsages), null != e.emojiReactionPendingUsages && (q.emojiReactionPendingUsages = e.emojiReactionPendingUsages), null != e.expandedSectionsByGuildIds && (q.expandedSectionsByGuildIds = new Set(e.expandedSectionsByGuildIds))), this.syncWith([O.Z], eP), this.syncWith([m.Z], eD)
+    this.waitFor(f.Z, S.Z, I.ZP, T.Z, v.default, b.Z, j.Z, N.default, m.Z), null != e && (null != e.pendingUsages && (q.pendingUsages = e.pendingUsages), null != e.emojiReactionPendingUsages && (q.emojiReactionPendingUsages = e.emojiReactionPendingUsages), null != e.expandedSectionsByGuildIds && (q.expandedSectionsByGuildIds = new Set(e.expandedSectionsByGuildIds))), this.syncWith([O.Z], eP), this.syncWith([m.Z], eD)
   }
   getState() {
     return q
@@ -733,11 +733,11 @@ let eF = new eB(u.Z, {
   CONNECTION_OPEN: eb,
   OVERLAY_INITIALIZE: ey,
   CACHED_EMOJIS_LOADED: eu,
-  GUILD_MEMBER_UPDATE: eA,
+  GUILD_MEMBER_UPDATE: eN,
   GUILD_CREATE: eI,
   GUILD_UPDATE: eS,
   GUILD_EMOJIS_UPDATE: eT,
-  GUILD_DELETE: eN,
+  GUILD_DELETE: eA,
   MESSAGE_REACTION_ADD: eC,
   EMOJI_TRACK_USAGE: eL,
   USER_SETTINGS_PROTO_UPDATE: ew,

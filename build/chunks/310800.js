@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  s = n(724598),
-  l = n(674180),
+  l = n(724598),
+  s = n(674180),
   a = n(572004),
   o = n(495437),
   c = n(267101),
@@ -27,11 +27,11 @@ function x(e) {
     publishedOnly: !1
   }), {
     shouldRestrictUpdatingCreatorMonetizationSettings: b
-  } = (0, l.gX)(t), j = e => {
+  } = (0, s.gX)(t), j = e => {
     (0, o.Je)(t, e, {
       published: !1
     })
-  }, N = (e, s) => {
+  }, _ = (e, l) => {
     (0, i.ZDy)(async () => {
       let {
         default: i
@@ -56,18 +56,18 @@ function x(e) {
       }({
         guildId: t,
         productId: e,
-        productName: s
+        productName: l
       }, n))
     })
-  }, _ = (e, t) => {
+  }, v = (e, t) => {
     (0, a.JG)((0, d.ar)(e, t))
-  }, v = x.length > 0;
+  }, O = x.length > 0;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.vwX, {
       className: h.productListingsHeader,
       id: f,
-      children: v ? p.NW.string(p.t.RwuStb) : p.NW.string(p.t.WKMcMT)
-    }), v ? (0, r.jsx)("ul", {
+      children: O ? p.intl.string(p.t.RwuStb) : p.intl.string(p.t.WKMcMT)
+    }), O ? (0, r.jsx)("ul", {
       className: h.productListings,
       "aria-labelledby": f,
       children: x.map(e => (0, r.jsx)("li", {
@@ -76,8 +76,8 @@ function x(e) {
           product: e,
           onEditProduct: () => u(e.id),
           onUnpublishProduct: () => j(e.id),
-          onDeleteProduct: () => N(e.id, e.name),
-          onCopyProductLink: () => _(t, e.id),
+          onDeleteProduct: () => _(e.id, e.name),
+          onCopyProductLink: () => v(t, e.id),
           onTestDownload: () => m.Z.open({
             guildId: t,
             productId: e.id
@@ -86,7 +86,7 @@ function x(e) {
           disabled: b
         })
       }, e.id))
-    }) : (0, r.jsx)(s.Z, {
+    }) : (0, r.jsx)(l.Z, {
       guildId: t,
       showCTA: !1,
       responsive: !1
@@ -99,14 +99,14 @@ function b(e) {
     guildId: t
   } = e, {
     shouldRestrictUpdatingCreatorMonetizationSettings: n
-  } = (0, l.gX)(t), s = e => {
+  } = (0, s.gX)(t), l = e => {
     u.h(t, e)
   };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(i.zxk, {
       className: h.addButton,
       innerClassName: h.addButtonInner,
-      onClick: () => s(null),
+      onClick: () => l(null),
       disabled: n,
       children: [(0, r.jsx)(i.qJs, {
         size: "custom",
@@ -117,12 +117,12 @@ function b(e) {
       }), (0, r.jsx)(i.LZC, {
         size: 6,
         horizontal: !0
-      }), p.NW.string(p.t.riG6DQ)]
+      }), p.intl.string(p.t.riG6DQ)]
     }), (0, r.jsx)(i.LZC, {
       size: 24
     }), (0, r.jsx)(x, {
       guildId: t,
-      handleCreateOrEditProduct: s
+      handleCreateOrEditProduct: l
     })]
   })
 }

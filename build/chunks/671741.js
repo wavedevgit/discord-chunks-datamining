@@ -25,11 +25,11 @@ var r = n(200651),
   j = n(544989),
   O = n(481932),
   E = n(272510),
-  N = n(4517),
-  I = n(171368),
-  P = n(854935),
-  S = n(397110),
-  Z = n(228168),
+  I = n(4517),
+  P = n(171368),
+  S = n(854935),
+  Z = n(397110),
+  N = n(228168),
   T = n(388032),
   A = n(149385);
 
@@ -58,48 +58,48 @@ function R(e) {
     currentUser: n,
     channel: R
   } = e, k = __OVERLAY__, M = (0, g.ZP)(t.id), L = (0, c.ZP)(), D = i.useRef(Date.now()), {
-    analyticsLocations: W
-  } = (0, d.ZP)(u.Z.PROFILE_PANEL), U = (0, f.ZB)({
+    analyticsLocations: U
+  } = (0, d.ZP)(u.Z.PROFILE_PANEL), B = (0, f.ZB)({
     layout: "SIDEBAR",
     userId: t.id,
     channelId: R.id
-  }), B = i.useRef(null), G = (0, s.Z)(B), F = (0, b.$m)(), H = (0, a.q_F)({
-    opacity: +(null != F.interactionType),
+  }), G = i.useRef(null), F = (0, s.Z)(G), H = (0, b.$m)(), V = (0, a.q_F)({
+    opacity: +(null != H.interactionType),
     config: {
       duration: 150
     }
-  }), V = e => {
-    (0, I.openUserProfileModal)(w({
-      sourceAnalyticsLocations: W,
+  }), z = e => {
+    (0, P.openUserProfileModal)(w({
+      sourceAnalyticsLocations: U,
       hideRestrictedProfile: !0
-    }, U, e))
+    }, B, e))
   };
   return (0, r.jsx)(d.Gt, {
-    value: W,
+    value: U,
     children: (0, r.jsx)(f.Mt, {
-      value: U,
+      value: B,
       openedAt: D.current,
       fetchStartedAt: null == M ? void 0 : M.fetchStartedAt,
       fetchEndedAt: null == M ? void 0 : M.fetchEndedAt,
       isLoaded: null == M ? void 0 : M.isLoaded,
       children: (0, r.jsx)(b.NJ, {
-        value: F,
+        value: H,
         children: (0, r.jsxs)(x.Z, {
-          ref: B,
+          ref: G,
           user: t,
           displayProfile: M,
-          profileType: Z.y0.PANEL,
+          profileType: N.y0.PANEL,
           themeOverride: L,
-          children: [null != F.interactionType && (0, r.jsx)(l.animated.div, {
-            style: H,
+          children: [null != H.interactionType && (0, r.jsx)(l.animated.div, {
+            style: V,
             className: A.backdrop
           }), (0, r.jsxs)(o.u2, {
             children: [(0, r.jsxs)(j.Z, {
-              profileType: Z.y0.PANEL,
+              profileType: N.y0.PANEL,
               children: [(0, r.jsx)(O.Z, {
                 user: t,
-                profileType: Z.y0.PANEL,
-                shouldShowTooltip: null === F.interactionType
+                profileType: N.y0.PANEL,
+                shouldShowTooltip: null === H.interactionType
               }), t.bot ? (0, r.jsx)(v.Z, {
                 user: t
               }) : (0, r.jsx)(E.Z, {
@@ -110,8 +110,8 @@ function R(e) {
               children: [(0, r.jsx)(y.Z, {
                 user: t,
                 displayProfile: M,
-                profileType: Z.y0.PANEL,
-                animateOnHover: !G,
+                profileType: N.y0.PANEL,
+                animateOnHover: !F,
                 className: A.banner
               }), (0, r.jsx)(C.Z, {
                 userId: t.id,
@@ -121,24 +121,24 @@ function R(e) {
                 user: t,
                 displayProfile: M,
                 channelId: R.id,
-                profileType: Z.y0.PANEL,
-                onOpenProfile: k ? void 0 : V
-              }), (0, r.jsx)(N.Z, {
+                profileType: N.y0.PANEL,
+                onOpenProfile: k ? void 0 : z
+              }), (0, r.jsx)(I.Z, {
                 location: "UserProfileSiebar",
                 user: t,
                 channelId: R.id,
-                profileType: Z.y0.PANEL
+                profileType: N.y0.PANEL
               }), t.isClyde() && (0, r.jsx)(p.Z, {
                 className: A.headerTag
               })]
-            }), (0, r.jsx)(P.Z, {
+            }), (0, r.jsx)(S.Z, {
               user: t,
               currentUser: n,
               displayProfile: M,
               channel: R,
-              isHovering: null == F.interactionType && G,
-              onOpenProfile: k ? void 0 : V
-            }), (0, r.jsx)(S.Z, {
+              isHovering: null == H.interactionType && F,
+              onOpenProfile: k ? void 0 : z
+            }), (0, r.jsx)(Z.Z, {
               user: t
             })]
           }), !k && (0, r.jsx)("footer", {
@@ -149,16 +149,16 @@ function R(e) {
               look: a.zxk.Looks.BLANK,
               color: A.footerButtonColor,
               onClick: () => {
-                V(), (0, m.pQ)(w({
+                z(), (0, m.pQ)(w({
                   action: "PRESS_VIEW_PROFILE",
-                  analyticsLocations: W
-                }, U))
+                  analyticsLocations: U
+                }, B))
               },
-              children: T.NW.string(T.t["+Xp3ho"])
+              children: T.intl.string(T.t["+Xp3ho"])
             })
           }), (null == M ? void 0 : M.profileEffectId) != null && (0, r.jsx)(h.Z, {
             profileEffectId: null == M ? void 0 : M.profileEffectId,
-            isHovering: G
+            isHovering: F
           })]
         })
       })

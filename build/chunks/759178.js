@@ -1,24 +1,24 @@
 /** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  Z: () => s
+  Z: () => l
 });
 var r = n(198139),
   i = n(388032);
-let s = {
+let l = {
   getStatusErrorText: function(e) {
     switch (e) {
       case r.jw.CANCELED:
       case r.jw.DEFERRED:
-        return i.NW.string(i.t["0SrNPz"]);
+        return i.intl.string(i.t["0SrNPz"]);
       case r.jw.DEFERRED_INTERNAL:
-        return i.NW.string(i.t.OtZ5k5);
+        return i.intl.string(i.t.OtZ5k5);
       case r.jw.ERROR:
-        return i.NW.string(i.t.ninjcX);
+        return i.intl.string(i.t.ninjcX);
       case r.jw.REJECTED:
-        return i.NW.string(i.t.TSC809);
+        return i.intl.string(i.t.TSC809);
       case r.jw.RISK_REVIEW:
-        return i.NW.string(i.t.rppxMj)
+        return i.intl.string(i.t.rppxMj)
     }
   }
 }

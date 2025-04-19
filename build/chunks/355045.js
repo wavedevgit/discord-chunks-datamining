@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => N
+  Z: () => A
 });
 var r = n(200651),
   i = n(192379),
@@ -26,12 +26,12 @@ var r = n(200651),
   I = n(474936),
   S = n(388032),
   T = n(491503);
-let N = function(e) {
+let A = function(e) {
   let {
     closeLayer: t,
     guild: n,
     onCtaVisibilityChange: a
-  } = e, N = i.useRef(null), A = (0, s.e7)([m.default], () => m.default.getCurrentUser()), C = (0, s.e7)([g.Z], () => g.Z.boostSlots), {
+  } = e, A = i.useRef(null), N = (0, s.e7)([m.default], () => m.default.getCurrentUser()), C = (0, s.e7)([g.Z], () => g.Z.boostSlots), {
     analyticsLocations: R
   } = (0, u.ZP)(), {
     fractionalState: P
@@ -94,14 +94,14 @@ let N = function(e) {
         }), (0, r.jsx)(c.Text, {
           className: T.guildStatusCopy,
           variant: "text-md/bold",
-          children: S.NW.format(S.t["pob/cH"], {
+          children: S.intl.format(S.t["pob/cH"], {
             subscriptions: L
           })
         })]
       }), w > 0 ? (0, r.jsx)(c.Text, {
         className: T.guildBoostCountCurrentUser,
         variant: "text-sm/normal",
-        children: S.NW.format(S.t.Jeto2t, {
+        children: S.intl.format(S.t.Jeto2t, {
           numSubscriptions: w
         })
       }) : null]
@@ -111,11 +111,11 @@ let N = function(e) {
     }), (0, r.jsxs)("div", {
       className: T.guildBoostCtas,
       children: [(0, r.jsx)(l.$, {
-        innerRef: N,
+        innerRef: A,
         onChange: a,
         threshold: .9,
         children: (0, r.jsx)("div", {
-          ref: N,
+          ref: A,
           className: o()(T.guildBoostCta, T.guildBoostCtaBoostWrapper),
           children: (0, r.jsx)(v.Z, {
             className: T.guildBoostCtaBoost,
@@ -134,7 +134,7 @@ let N = function(e) {
             fullWidth: !0
           })
         })
-      }), y.ZP.hasFreeBoosts(A, P) || y.ZP.isPremium(A, I.p9.TIER_2) ? (0, r.jsxs)(c.zxk, {
+      }), y.ZP.hasFreeBoosts(N, P) || y.ZP.isPremium(N, I.p9.TIER_2) ? (0, r.jsxs)(c.zxk, {
         className: o()(T.guildBoostCta, T.guildBoostCtaSecondary),
         innerClassName: o()(T.__invalid_guildBoostCtaContent, T.guildBoostCtaGiftContent),
         look: c.zxk.Looks.OUTLINED,
@@ -145,7 +145,7 @@ let N = function(e) {
           size: "md",
           color: "currentColor",
           className: T.guildBoostCtaGiftIcon
-        }), S.NW.string(S.t["8MYSQ0"])]
+        }), S.intl.string(S.t["8MYSQ0"])]
       }) : (0, r.jsx)(c.zxk, {
         className: o()(T.guildBoostCta, T.guildBoostCtaSecondary),
         innerClassName: o()(T.__invalid_guildBoostCtaContent, T.__invalid_guildBoostCtaSubscribeContent),
@@ -153,7 +153,7 @@ let N = function(e) {
         color: c.zxk.Colors.WHITE,
         onClick: x,
         size: c.zxk.Sizes.LARGE,
-        children: S.NW.string(S.t.Q43TvL)
+        children: S.intl.string(S.t.Q43TvL)
       })]
     })]
   })

@@ -2,133 +2,133 @@
 n.d(t, {
   G: () => o
 }), n(388685);
-var r = n(192379),
-  i = n(881052),
+var i = n(192379),
+  r = n(881052),
   s = n(260722),
-  a = n(914788),
-  l = n(292352);
+  l = n(914788),
+  a = n(292352);
 
 function o(e) {
   let {
     onError: t,
     onSuccess: n
-  } = null != e ? e : {}, [o, c] = r.useState(!1), [d, u] = r.useState(!1), [m, g] = r.useState(!1), [p, h] = r.useState(!1), [f, b] = r.useState(!1), [_, N] = r.useState(!1), [x, E] = r.useState(!1), [j, C] = r.useState(!1), O = o || d || m || p || _ || j, S = r.useCallback(async e => {
-    if (!O) {
+  } = null != e ? e : {}, [o, c] = i.useState(!1), [d, u] = i.useState(!1), [m, g] = i.useState(!1), [p, h] = i.useState(!1), [f, b] = i.useState(!1), [_, x] = i.useState(!1), [E, j] = i.useState(!1), [C, O] = i.useState(!1), S = o || d || m || p || _ || C, v = i.useCallback(async e => {
+    if (!S) {
       c(!0);
       try {
-        await (0, s.Yw)(e.id, l.ne.ACTIVE), null == n || n()
+        await (0, s.Yw)(e.id, a.ne.ACTIVE), null == n || n()
       } catch (n) {
-        let e = new i.Hx(n);
+        let e = new r.Hx(n);
         null == t || t(e)
       } finally {
         c(!1)
       }
     }
-  }, [O, t, n]), v = r.useCallback(async e => {
-    if (!O) {
+  }, [S, t, n]), T = i.useCallback(async e => {
+    if (!S) {
       u(!0);
       try {
-        await (0, s.Yw)(e.id, l.ne.DECLINED), null == n || n()
+        await (0, s.Yw)(e.id, a.ne.DECLINED), null == n || n()
       } catch (n) {
-        let e = new i.Hx(n);
+        let e = new r.Hx(n);
         null == t || t(e)
       } finally {
         u(!1)
       }
     }
-  }, [O, t, n]), T = r.useCallback(async e => {
-    if (!O) {
+  }, [S, t, n]), I = i.useCallback(async e => {
+    if (!S) {
       g(!0);
       try {
-        await (0, s.Yw)(e.id, l.ne.INACTIVE), null == n || n()
+        await (0, s.Yw)(e.id, a.ne.INACTIVE), null == n || n()
       } catch (n) {
-        let e = new i.Hx(n);
+        let e = new r.Hx(n);
         null == t || t(e)
       } finally {
         g(!1)
       }
     }
-  }, [O, t, n]), I = r.useCallback(async e => {
-    if (!O) {
+  }, [S, t, n]), N = i.useCallback(async e => {
+    if (!S) {
       h(!0);
       try {
         await (0, s.fc)(e.id), null == n || n()
       } catch (n) {
-        let e = new i.Hx(n);
+        let e = new r.Hx(n);
         null == t || t(e)
       } finally {
         h(!1)
       }
     }
-  }, [O, t, n]), y = r.useCallback(async () => {
+  }, [S, t, n]), y = i.useCallback(async () => {
     if (!f) {
       b(!0);
       try {
         await (0, s.qd)(), null == n || n()
       } catch (n) {
-        let e = new i.Hx(n);
+        let e = new r.Hx(n);
         null == t || t(e)
       } finally {
         b(!1)
       }
     }
-  }, [f, t, n]), A = r.useCallback(async e => {
-    if (!x) {
-      E(!0);
+  }, [f, t, n]), A = i.useCallback(async e => {
+    if (!E) {
+      j(!0);
       try {
         await s.ZP.fetchTeenActivity(e), null == n || n()
       } catch (n) {
-        let e = new i.Hx(n);
+        let e = new r.Hx(n);
         null == t || t(e)
       } finally {
-        E(!1)
+        j(!1)
       }
     }
-  }, [x, t, n]);
+  }, [E, t, n]);
   return {
-    acceptLinkRequest: S,
-    declineLinkRequest: v,
-    disconnectLinkRequest: T,
-    cancelLinkRequest: I,
+    acceptLinkRequest: v,
+    declineLinkRequest: T,
+    disconnectLinkRequest: I,
+    cancelLinkRequest: N,
     selectTeenUser: A,
     getLinkCode: y,
-    requestLink: r.useCallback(async (e, r) => {
+    requestLink: i.useCallback(async (e, i) => {
       if (!_) {
-        N(!0);
+        x(!0);
         try {
-          await s.ZP.requestLink(e, r), null == n || n()
+          await s.ZP.requestLink(e, i), null == n || n()
         } catch (n) {
-          let e = new i.Hx(n);
+          let e = new r.Hx(n);
           null == t || t(e)
         } finally {
-          N(!1)
+          x(!1)
         }
       }
     }, [_, t, n]),
-    loadMore: r.useCallback(async e => {
-      let n = a.Z.getActionsForDisplayType(e),
-        r = n[n.length - 1],
-        l = a.Z.getStartId(),
-        o = a.Z.getSelectedTeenId();
-      if (!j && null != l && null != o) {
-        C(!0);
+    loadMore: i.useCallback(async e => {
+      let n = l.Z.getActionsForDisplayType(e),
+        i = n[n.length - 1],
+        a = l.Z.getStartId(),
+        o = l.Z.getSelectedTeenId();
+      if (!C && null != a && null != o) {
+        O(!0);
         try {
-          await s.ZP.fetchMoreTeenActivity(o, e, l, r.event_id)
+          await s.ZP.fetchMoreTeenActivity(o, e, a, i.event_id)
         } catch (n) {
-          let e = new i.Hx(n);
+          let e = new r.Hx(n);
           null == t || t(e)
         } finally {
-          C(!1)
+          O(!1)
         }
       }
-    }, [j, t]),
+    }, [C, t]),
     isAcceptLoading: o,
     isDeclineLoading: d,
     isDisconnectLoading: m,
     isCancelLoading: p,
     isGetLinkCodeLoading: f,
-    isSelectTeenUserLoading: x,
+    isSelectTeenUserLoading: E,
     isRequestingLink: _,
-    isMoreLoading: j
+    isMoreLoading: C
   }
 }

@@ -39,47 +39,47 @@ function b(e) {
 }
 let _ = {
   [h.AzA.NOW_PLAYING]: {
-    single: (e, t) => f.NW.format(f.t.NEckzc, {
+    single: (e, t) => f.intl.format(f.t.NEckzc, {
       user1: e.username,
       user1Hook: () => t(e)
     }),
-    double: (e, t, n) => f.NW.format(f.t["6uWulZ"], {
+    double: (e, t, n) => f.intl.format(f.t["6uWulZ"], {
       user1: e.username,
       user1Hook: () => n(e),
       user2: t.username,
       user2Hook: () => n(t)
     }),
-    other: e => f.NW.format(f.t["8fMgRU"], {
+    other: e => f.intl.format(f.t["8fMgRU"], {
       count: e
     })
   },
   [h.AzA.RECENTLY_PLAYED]: {
-    single: (e, t) => f.NW.format(f.t["nB/JND"], {
+    single: (e, t) => f.intl.format(f.t["nB/JND"], {
       user1: e.username,
       user1Hook: () => t(e)
     }),
-    double: (e, t, n) => f.NW.format(f.t.AZCcHR, {
+    double: (e, t, n) => f.intl.format(f.t.AZCcHR, {
       user1: e.username,
       user1Hook: () => n(e),
       user2: t.username,
       user2Hook: () => n(t)
     }),
-    other: e => f.NW.format(f.t.yNuaTU, {
+    other: e => f.intl.format(f.t.yNuaTU, {
       count: e
     })
   },
   [h.AzA.EVER_PLAYED]: {
-    single: (e, t) => f.NW.format(f.t.Fecf3N, {
+    single: (e, t) => f.intl.format(f.t.Fecf3N, {
       user1: e.username,
       user1Hook: () => t(e)
     }),
-    double: (e, t, n) => f.NW.format(f.t["0LiGbG"], {
+    double: (e, t, n) => f.intl.format(f.t["0LiGbG"], {
       user1: e.username,
       user1Hook: () => n(e),
       user2: t.username,
       user2Hook: () => n(t)
     }),
-    other: e => f.NW.format(f.t.Yx1rjY, {
+    other: e => f.intl.format(f.t.Yx1rjY, {
       count: e
     })
   }

@@ -18,5 +18,5 @@ function l(e, t) {
 }
 
 function c(e) {
-  return (0, r.EQ)(e).with("all_messages", () => o.NW.string(o.t.hZrr6u)).with("mentions", () => o.NW.string(o.t.y59NJi)).with("nothing", () => o.NW.string(o.t["pGn/bG"])).with("custom", () => o.NW.string(o.t["32yow8"])).exhaustive()
+  return (0, r.EQ)(e).with("all_messages", () => o.intl.string(o.t.hZrr6u)).with("mentions", () => o.intl.string(o.t.y59NJi)).with("nothing", () => o.intl.string(o.t["pGn/bG"])).with("custom", () => o.intl.string(o.t["32yow8"])).exhaustive()
 }

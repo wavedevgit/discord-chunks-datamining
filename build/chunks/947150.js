@@ -36,11 +36,11 @@ function u(e) {
     });
   return n ? (0, r.jsx)(i.sNh, {
     id: "input-devices",
-    label: c.NW.string(c.t.ElbIXF),
+    label: c.intl.string(c.t.ElbIXF),
     subtext: p,
     children: f
   }) : (0, r.jsx)(i.kSQ, {
-    label: c.NW.string(c.t.ElbIXF),
+    label: c.intl.string(c.t.ElbIXF),
     children: f
   })
 }

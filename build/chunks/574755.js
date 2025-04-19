@@ -1,12 +1,12 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => O
+  Z: () => S
 });
-var r = n(200651),
-  i = n(192379),
+var i = n(200651),
+  r = n(192379),
   s = n(442837),
-  a = n(704215),
-  l = n(481060),
+  l = n(704215),
+  a = n(481060),
   o = n(906732),
   c = n(605236),
   d = n(441167),
@@ -18,63 +18,63 @@ var r = n(200651),
   f = n(39604),
   b = n(703288),
   _ = n(491758),
-  N = n(233685),
-  x = n(388032),
-  E = n(922284),
-  j = n(802454),
-  C = n(20493);
+  x = n(233685),
+  E = n(388032),
+  j = n(922284),
+  C = n(802454),
+  O = n(20493);
 
-function O(e) {
+function S(e) {
   let {
     className: t,
     showHeader: n = !0
-  } = e, O = u.tU.useSetting(), {
-    enableViewerClipping: S
+  } = e, S = u.tU.useSetting(), {
+    enableViewerClipping: v
   } = d.Z.useExperiment({
     location: "Clips Settings"
   }, {
     autoTrackExposure: !1
   }), {
-    analyticsLocations: v
-  } = (0, o.ZP)(), T = (0, g.Go)(), {
-    viewerClipsEnabled: I
+    analyticsLocations: T
+  } = (0, o.ZP)(), I = (0, g.Go)(), {
+    viewerClipsEnabled: N
   } = (0, s.cj)([p.Z], () => p.Z.getSettings()), y = (0, h.Z)(m.Z);
-  return i.useEffect(() => {
-    (0, c.EW)(a.z.CLIPS_SETTINGS_BETA_TAG)
-  }), (0, r.jsxs)(o.Gt, {
-    value: v,
-    children: [(T || n) && (0, r.jsx)(l.hjN, {
+  return r.useEffect(() => {
+    (0, c.EW)(l.z.CLIPS_SETTINGS_BETA_TAG)
+  }), (0, i.jsxs)(o.Gt, {
+    value: T,
+    children: [(I || n) && (0, i.jsx)(a.hjN, {
       className: t,
-      tag: l.RB0.H1,
-      title: n ? (0, r.jsxs)("div", {
-        className: E.headerContainer,
-        children: [x.NW.string(x.t.z2jK6e), (0, r.jsx)(b.Z, {})]
+      tag: a.RB0.H1,
+      title: n ? (0, i.jsxs)("div", {
+        className: j.headerContainer,
+        children: [E.intl.string(E.t.z2jK6e), (0, i.jsx)(b.Z, {})]
       }) : null,
-      children: T && (0, r.jsxs)("form", {
+      children: I && (0, i.jsxs)("form", {
         onSubmit: e => e.preventDefault(),
-        children: [(0, r.jsx)(_.Z, {}), (0, r.jsx)(N.Z, {})]
+        children: [(0, i.jsx)(_.Z, {}), (0, i.jsx)(x.Z, {})]
       })
-    }), T && (0, r.jsx)(l.$i$, {}), (0, r.jsxs)(l.hjN, {
-      className: n || T ? C.marginTop20 : t,
-      children: [(0, r.jsx)(l.j7V, {
+    }), I && (0, i.jsx)(a.$i$, {}), (0, i.jsxs)(a.hjN, {
+      className: n || I ? O.marginTop20 : t,
+      children: [(0, i.jsx)(a.j7V, {
         hideBorder: !0,
-        className: j.formItem,
-        value: O,
-        note: x.NW.string(x.t["wW9/zc"]),
+        className: C.formItem,
+        value: S,
+        note: E.intl.string(E.t["wW9/zc"]),
         onChange: e => f.yg({
           allowVoiceRecording: e
         }),
-        children: x.NW.string(x.t.AGDDkJ)
-      }), S && y && (0, r.jsx)(l.j7V, {
+        children: E.intl.string(E.t.AGDDkJ)
+      }), v && y && (0, i.jsx)(a.j7V, {
         hideBorder: !0,
-        className: j.formItem,
-        value: I,
-        note: x.NW.string(x.t["0vjy8P"]),
+        className: C.formItem,
+        value: N,
+        note: E.intl.string(E.t["0vjy8P"]),
         onChange: e => f.yl({
           enabled: e,
           trackAnalytics: !0
         }),
-        children: x.NW.string(x.t.NWw7kZ)
+        children: E.intl.string(E.t.NWw7kZ)
       })]
     })]
   })

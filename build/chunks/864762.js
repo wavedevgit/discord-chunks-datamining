@@ -1,16 +1,16 @@
 /** Chunk was on 51343 **/
-r.d(a, {
+a.d(t, {
   k: () => c
-}), r(388685);
-var s = r(192379),
-  t = r(110924),
-  l = r(626135),
-  n = r(798930),
-  o = r(981631);
+}), a(388685);
+var r = a(192379),
+  l = a(110924),
+  s = a(626135),
+  n = a(798930),
+  o = a(981631);
 
-function c(e, a) {
-  let [r, c] = s.useState(n.O.LANDING), i = (0, t.Z)(r), [d, x] = s.useState(null), [u, h] = s.useState(null), [N, m] = s.useState(void 0), C = s.useCallback(() => {
-    switch (r) {
+function c(e, t) {
+  let [a, c] = r.useState(n.O.LANDING), i = (0, l.Z)(a), [d, x] = r.useState(null), [u, h] = r.useState(null), [m, N] = r.useState(void 0), C = r.useCallback(() => {
+    switch (a) {
       case n.O.LANDING:
         c(n.O.PRE_CONNECT);
         break;
@@ -20,28 +20,28 @@ function c(e, a) {
       case n.O.ERROR:
         c(n.O.PRE_CONNECT)
     }
-  }, [r]), j = s.useCallback(e => {
-    x(null), m(e), c(n.O.ERROR)
-  }, []), k = s.useCallback(e => {
+  }, [a]), j = r.useCallback(e => {
+    x(null), N(e), c(n.O.ERROR)
+  }, []), k = r.useCallback(e => {
     x(e), c(n.O.PRE_CONNECT_WAITING)
-  }, []), v = s.useCallback(e => {
+  }, []), v = r.useCallback(e => {
     x(null), h(e), c(n.O.DISCORD_CONSENT)
   }, []);
-  return s.useEffect(() => {
-    r !== i && l.default.track(o.rMx.ACCOUNT_LINK_STEP, {
+  return r.useEffect(() => {
+    a !== i && s.default.track(o.rMx.ACCOUNT_LINK_STEP, {
       location_stack: e,
       previous_step: i,
-      current_step: r,
-      platform_type: a
+      current_step: a,
+      platform_type: t
     })
-  }, [r, i, e, a]), {
-    slide: r,
+  }, [a, i, e, t]), {
+    slide: a,
     gotoNext: C,
     gotoError: j,
     handleWaitingForConnection: k,
     handleAuthToken: v,
     expectedCallbackState: d,
     callbackData: u,
-    errorCode: N
+    errorCode: m
   }
 }

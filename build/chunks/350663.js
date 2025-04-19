@@ -93,7 +93,7 @@ let v = 8,
       widgetId: t,
       height: C,
       pinned: j
-    })), N = (0, c.Z)(n), Z = o === f.C5.VERTICAL, w = 0, P = 0, T = (0, s.Yzy)(Z ? S.map((e, t) => O(y({}, e), {
+    })), Z = (0, c.Z)(n), N = o === f.C5.VERTICAL, w = 0, P = 0, T = (0, s.Yzy)(N ? S.map((e, t) => O(y({}, e), {
       y: (w += e.height + (t > 0 ? v : 0)) - e.height,
       x: 0
     })) : S.map((e, t) => O(y({}, e), {
@@ -139,8 +139,8 @@ let v = 8,
         }
       },
       config: _,
-      trail: 100 * (n === N)
-    }, n !== N ? "animate-never" : "respect-motion-settings"), k = (0, p.ee)(() => new Set(x.map(e => e.user.id)), [x, I]), A = (0, p.ee)(() => new Set(x.filter(e => E.has((0, u.V9)(e.stream))).map(e => e.user.id)), [x, E, I]);
+      trail: 100 * (n === Z)
+    }, n !== Z ? "animate-never" : "respect-motion-settings"), k = (0, p.ee)(() => new Set(x.map(e => e.user.id)), [x, I]), A = (0, p.ee)(() => new Set(x.filter(e => E.has((0, u.V9)(e.stream))).map(e => e.user.id)), [x, E, I]);
     return r.useEffect(() => {
       0 !== k.size && (0, p.zi)(m.Odu.GO_LIVE, {
         locked: d.default.isInstanceLocked(),
@@ -151,10 +151,10 @@ let v = 8,
     }, [k, A]), (0, i.jsx)("div", {
       className: l()({
         [g.gridContainer]: !0,
-        [g.vertical]: Z,
-        [g.horizontal]: !Z
+        [g.vertical]: N,
+        [g.horizontal]: !N
       }),
-      style: Z ? {
+      style: N ? {
         height: w
       } : {
         width: P

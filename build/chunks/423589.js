@@ -17,22 +17,22 @@ var i = n(442837),
 
 function g() {
   return [{
-    label: f.NW.string(f.t["8ot6go"]),
+    label: f.intl.string(f.t["8ot6go"]),
     value: c.Oe.MINUTES_15
   }, {
-    label: f.NW.string(f.t.UMWBZm),
+    label: f.intl.string(f.t.UMWBZm),
     value: c.Oe.HOURS_1
   }, {
-    label: f.NW.string(f.t.QmYWtr),
+    label: f.intl.string(f.t.QmYWtr),
     value: c.Oe.HOURS_3
   }, {
-    label: f.NW.string(f.t.EpAXPD),
+    label: f.intl.string(f.t.EpAXPD),
     value: c.Oe.HOURS_8
   }, {
-    label: f.NW.string(f.t["755t4u"]),
+    label: f.intl.string(f.t["755t4u"]),
     value: c.Oe.HOURS_24
   }, {
-    label: f.NW.string(f.t.r3LawM),
+    label: f.intl.string(f.t.r3LawM),
     value: c.Oe.ALWAYS
   }]
 }

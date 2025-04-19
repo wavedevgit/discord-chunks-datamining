@@ -4,7 +4,7 @@ n.r(t), n.d(t, {
   loadVideoQuestModal: () => Z,
   maybeShowSurveyForQuest: () => V,
   navigateToQuestHome: () => F,
-  openAppWithQuest: () => Y,
+  openAppWithQuest: () => W,
   openDisclosureModal: () => B,
   openQuestInGameRewardModal: () => U,
   openQuestOrbsRewardModal: () => G,
@@ -36,8 +36,8 @@ var i = n(772848),
   I = n(5881),
   S = n(492112),
   T = n(61115),
-  N = n(150560),
-  A = n(46140),
+  A = n(150560),
+  N = n(46140),
   C = n(981631),
   R = n(49898);
 
@@ -168,7 +168,7 @@ function F() {
     fromContent: e,
     questId: t
   } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-  (0, N.Z.getState().setUtmCurrentContext)({
+  (0, A.Z.getState().setUtmCurrentContext)({
     utmSourceCurrent: M,
     utmMediumCurrent: x,
     utmCampaignCurrent: t,
@@ -185,7 +185,7 @@ function V(e) {
       quest: e
     }),
     n = {
-      location: A.dr.QUESTS_BAR
+      location: N.dr.QUESTS_BAR
     };
   if (!(0, O.j)(n)) return;
   let r = (0, S.Z)({
@@ -245,7 +245,7 @@ function H(e) {
   })
 }
 
-function W(e) {
+function Y(e) {
   var t;
   let n = null == (t = platform.os) ? void 0 : t.family,
     r = "quest";
@@ -262,8 +262,8 @@ function W(e) {
   return "discord://"
 }
 
-function Y(e) {
-  let t = W(e),
+function W(e) {
+  let t = Y(e),
     n = (0, a.zS)(t);
   null != n && h.default.track(C.rMx.DEEP_LINK_CLICKED, {
     fingerprint: (0, o.K)(n.fingerprint),

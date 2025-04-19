@@ -64,9 +64,9 @@ let y = !1,
   I = new Set,
   S = {},
   T = {},
-  N = !1;
+  A = !1;
 
-function A() {
+function N() {
   s.K.set(E, g(h({}, b()), {
     activeLaunchOptionIds: T
   }))
@@ -109,7 +109,7 @@ function L(e) {
     branchId: n,
     flags: r
   } = e, i = (0, d.Tu)(t, n), a = B(t, n);
-  null != a && !a.isHidden() && u.yE(r, _.eHb.HIDDEN) && (N = !0), I.add(i)
+  null != a && !a.isHidden() && u.yE(r, _.eHb.HIDDEN) && (A = !0), I.add(i)
 }
 
 function x(e) {
@@ -125,7 +125,7 @@ function M(e) {
     branchId: n,
     launchOptionId: r
   } = e;
-  T[(0, d.Tu)(t, n)] = r, A()
+  T[(0, d.Tu)(t, n)] = r, N()
 }
 
 function k(e) {
@@ -168,7 +168,7 @@ class V extends(r = o.ZP.Store) {
   initialize() {
     this.waitFor(f.default);
     let e = s.K.get(E);
-    null != e && (null == e.activeLaunchOptionIds ? A() : T = e.activeLaunchOptionIds, null == e.activeLibraryApplicationBranchIds ? C() : S = e.activeLibraryApplicationBranchIds)
+    null != e && (null == e.activeLaunchOptionIds ? N() : T = e.activeLaunchOptionIds, null == e.activeLibraryApplicationBranchIds ? C() : S = e.activeLibraryApplicationBranchIds)
   }
   get libraryApplications() {
     return G(e => !e.isHidden())
@@ -218,7 +218,7 @@ class V extends(r = o.ZP.Store) {
     return a()(F()).values().filter(e => (0, d.Je)(e)).map(e => e.branchId).value()
   }
   get hasRemovedLibraryApplicationThisSession() {
-    return N
+    return A
   }
   whenInitialized(e) {
     this.addConditionalChangeListener(() => {

@@ -56,7 +56,7 @@ var O = Array.isArray,
     __source: !0
   };
 
-function N(e, t, r) {
+function A(e, t, r) {
   var i, a = {},
     o = null,
     s = null;
@@ -80,7 +80,7 @@ function N(e, t, r) {
   }
 }
 
-function A(e, t) {
+function N(e, t) {
   return {
     $$typeof: n,
     type: e.type,
@@ -129,7 +129,7 @@ function D(e, t, i, a, o) {
   }
   if (l) return o = o(l = e), e = "" === a ? "." + w(l, 0) : a, O(o) ? (i = "", null != e && (i = e.replace(P, "$&/") + "/"), D(o, t, i, "", function(e) {
     return e
-  })) : null != o && (C(o) && (o = A(o, i + (!o.key || l && l.key === o.key ? "" : ("" + o.key).replace(P, "$&/") + "/") + e)), t.push(o)), 1;
+  })) : null != o && (C(o) && (o = N(o, i + (!o.key || l && l.key === o.key ? "" : ("" + o.key).replace(P, "$&/") + "/") + e)), t.push(o)), 1;
   if (l = 0, a = "" === a ? "." : a + ":", O(e))
     for (var c = 0; c < e.length; c++) {
       var u = a + w(s = e[c], c);
@@ -237,8 +237,8 @@ t.Children = {
     $$typeof: s,
     _context: e
   }, e.Consumer = e
-}, t.createElement = N, t.createFactory = function(e) {
-  var t = N.bind(null, e);
+}, t.createElement = A, t.createFactory = function(e) {
+  var t = A.bind(null, e);
   return t.type = e, t
 }, t.createRef = function() {
   return {

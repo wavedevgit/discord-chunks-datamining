@@ -1,16 +1,16 @@
 /** Chunk was on 18912 **/
 n.d(e, {
-  Z: () => i
+  Z: () => a
 });
-var r = n(192379),
-  l = n(252618),
-  s = n(358085),
-  a = n(388032);
+var l = n(192379),
+  r = n(252618),
+  i = n(358085),
+  s = n(388032);
 
-function i() {
-  return r.useEffect(() => {
-    s.isPlatformEmbedded || (0, l.EM)({
-      messages: [a.NW.string(a.t.KIX3cn), a.NW.string(a.t["UbO+8v"]), a.NW.string(a.t.MbySu7)],
+function a() {
+  return l.useEffect(() => {
+    i.isPlatformEmbedded || (0, r.EM)({
+      messages: [s.intl.string(s.t.KIX3cn), s.intl.string(s.t["UbO+8v"]), s.intl.string(s.t.MbySu7)],
       interval: 600,
       count: 20,
       onlyWhenBlurred: !0

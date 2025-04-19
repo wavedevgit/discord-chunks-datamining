@@ -47,13 +47,13 @@ function u(e) {
   } = (0, a.Z)({
     location: "StreamButton"
   }), j = h ? s.d : s.Z;
-  t = d ? p ? c.NW.string(c.t.S5anIS) : c.NW.string(c.t.q3O3Jy) : u ? c.NW.string(c.t.fjBNo6) : c.NW.string(c.t.uQn9Bw);
+  t = d ? p ? c.intl.string(c.t.S5anIS) : c.intl.string(c.t.q3O3Jy) : u ? c.intl.string(c.t.fjBNo6) : c.intl.string(c.t.uQn9Bw);
   let {
     Component: O,
     events: E,
-    play: N
+    play: I
   } = (0, l.P)(d ? "disable" : "enable");
-  return i.useEffect(() => () => N(), [d, N]), (0, r.jsx)(j, function(e) {
+  return i.useEffect(() => () => I(), [d, I]), (0, r.jsx)(j, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

@@ -1,31 +1,31 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => l
+  Z: () => a
 }), n(388685), n(781311), n(35282);
-var r = n(192379),
-  i = n(304445),
+var i = n(192379),
+  r = n(304445),
   s = n(997383);
-let a = [];
+let l = [];
 
-function l(e) {
+function a(e) {
   let {
     visible: t,
     autocompleterResultTypes: n,
-    autocompleterOptions: l,
+    autocompleterOptions: a,
     autocompleterBeforeCreateSearchContext: o
-  } = e, [c, d] = r.useState(""), [u, m] = r.useState(a), g = r.useCallback((e, t) => {
-    "" === (t = t.trim()).trim() ? m(a) : m(e)
+  } = e, [c, d] = i.useState(""), [u, m] = i.useState(l), g = i.useCallback((e, t) => {
+    "" === (t = t.trim()).trim() ? m(l) : m(e)
   }, []);
-  r.useEffect(() => i.Z.addRouteChangeListener(() => {
+  i.useEffect(() => r.Z.addRouteChangeListener(() => {
     d("")
   }), []);
-  let [p] = r.useState(() => new s.Z(g, n, void 0, l));
-  return r.useEffect(() => {
+  let [p] = i.useState(() => new s.Z(g, n, void 0, a));
+  return i.useEffect(() => {
     t ? (null == o || o(p), p.createSearchContext()) : (p.clean(), d(""))
   }, [t, p, o]), {
     queryResults: u,
     query: c,
-    updateQuery: r.useCallback(e => {
+    updateQuery: i.useCallback(e => {
       d(e), p.search(e)
     }, [p])
   }

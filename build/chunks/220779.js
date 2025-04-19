@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   A7: () => S,
-  dE: () => N
+  dE: () => A
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -77,14 +77,14 @@ function S(e) {
     className: m
   } = e, [g, b] = i.useState(""), [v, S] = i.useState((0, u.JM)("")), T = () => {
     b(""), S((0, u.JM)(""))
-  }, N = c.Ie.ATOMIC_REACTOR_REPLY_INPUT, A = i.useRef(null), C = () => {
-    if (null == A.current) return "top";
-    let e = A.current.getBoundingClientRect(),
+  }, A = c.Ie.ATOMIC_REACTOR_REPLY_INPUT, N = i.useRef(null), C = () => {
+    if (null == N.current) return "top";
+    let e = N.current.getBoundingClientRect(),
       t = window.innerHeight;
     return e.top < t / 2 ? "bottom" : "top"
   };
   return (0, r.jsx)(d.Z, {
-    ref: A,
+    ref: N,
     placeholder: t,
     editorClassName: m,
     className: o()(E.replyInput, m),
@@ -95,11 +95,11 @@ function S(e) {
     onChange: (e, t, n) => {
       b(t), S(n)
     },
-    type: s ? O(y({}, N), {
+    type: s ? O(y({}, A), {
       emojis: {
         button: !0
       }
-    }) : N,
+    }) : A,
     textValue: g,
     richValue: v,
     onSubmit: e => {
@@ -138,7 +138,7 @@ let T = (e, t) => {
       }
     }, [e, t])
   },
-  N = e => {
+  A = e => {
     let {
       onSelectEmoji: t,
       onClick: n
@@ -167,7 +167,7 @@ let T = (e, t) => {
         })
       }),
       children: () => (0, r.jsx)(s.ua7, {
-        text: g.NW.string(g.t.lfIHs7),
+        text: g.intl.string(g.t.lfIHs7),
         children: e => (0, r.jsx)("div", O(y({
           ref: d
         }, e), {

@@ -21,7 +21,7 @@ function d(e) {
     children: [(0, r.jsx)(l.Text, {
       variant: "text-xs/bold",
       className: u.header,
-      children: c.NW.format(c.t.e95u3N, {
+      children: c.intl.format(c.t.e95u3N, {
         count: n.length
       })
     }), (0, r.jsx)(l.Ttm, {

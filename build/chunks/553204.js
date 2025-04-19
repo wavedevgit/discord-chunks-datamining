@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  s = n(120356),
-  l = n.n(s),
+  l = n(120356),
+  s = n.n(l),
   a = n(477690),
   o = n(481060),
   c = n(91218),
@@ -20,8 +20,8 @@ let h = (0, m.Mg)(a.Z.ROLE_ICON_UPLOADER_ICON_SIZE);
 function f(e) {
   let {
     role: t,
-    "aria-label": n = g.NW.string(g.t["MsUY/f"]),
-    className: s,
+    "aria-label": n = g.intl.string(g.t["MsUY/f"]),
+    className: l,
     onClick: a,
     disabled: m = !1
   } = e, f = i.useRef(null), x = i.useMemo(() => null != t ? (0, d.Kz)(t, h) : null, [t]), b = null != x ? (0, r.jsx)(c.Z, function(e) {
@@ -53,7 +53,7 @@ function f(e) {
     ringTarget: f,
     children: (0, r.jsxs)(o.P3F, {
       "aria-label": n,
-      className: l()(p.container, s, {
+      className: s()(p.container, l, {
         [p.disabled]: m
       }),
       onClick: m ? void 0 : a,

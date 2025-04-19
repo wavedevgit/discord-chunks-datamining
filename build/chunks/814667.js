@@ -1,19 +1,19 @@
 /** Chunk was on 47435 **/
 r.d(t, {
-  Z: () => s
+  Z: () => i
 });
 var a = r(200651);
 r(192379);
-let s = e => {
+let i = e => {
   let {
     className: t,
     width: r = 214,
-    height: s = 165
+    height: i = 165
   } = e;
   return (0, a.jsxs)("svg", {
     className: t,
     width: r,
-    height: s,
+    height: i,
     viewBox: "0 0 214 165",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",

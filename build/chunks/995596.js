@@ -1,6 +1,6 @@
 /** Chunk was on 9924 **/
 n.d(t, {
-  Z: () => T
+  Z: () => N
 }), n(388685);
 var r = n(200651),
   l = n(192379),
@@ -17,25 +17,25 @@ var r = n(200651),
   j = n(571728),
   b = n(984370),
   f = n(433355),
-  N = n(384433),
-  p = n(388032),
-  g = n(86931);
-let _ = e => [{
-    id: N.e.ALL_MEMBERS,
-    label: p.NW.string(p.t.NOOm1d)
+  p = n(384433),
+  g = n(388032),
+  _ = n(86931);
+let v = e => [{
+    id: p.e.ALL_MEMBERS,
+    label: g.intl.string(g.t.NOOm1d)
   }, {
-    id: N.e.PENDING,
-    label: e > 0 ? p.NW.formatToPlainString(p.t["Wo+zLy"], {
+    id: p.e.PENDING,
+    label: e > 0 ? g.intl.formatToPlainString(g.t["Wo+zLy"], {
       count: e
-    }) : p.NW.string(p.t["4eQVBA"])
+    }) : g.intl.string(g.t["4eQVBA"])
   }, {
-    id: N.e.REJECTED,
-    label: p.NW.string(p.t.bSZklZ)
+    id: p.e.REJECTED,
+    label: g.intl.string(g.t.bSZklZ)
   }, {
-    id: N.e.APPROVED,
-    label: p.NW.string(p.t.aURgY2)
+    id: p.e.APPROVED,
+    label: g.intl.string(g.t.aURgY2)
   }],
-  v = e => {
+  C = e => {
     let {
       tabs: t,
       selectedTab: n,
@@ -44,7 +44,7 @@ let _ = e => [{
     } = e;
     return (0, r.jsx)(d.v2r, {
       navId: "members-tabs-overflow-menu",
-      "aria-label": p.NW.string(p.t.riPnr6),
+      "aria-label": g.intl.string(g.t.riPnr6),
       hideScroller: !0,
       onClose: i,
       onSelect: i,
@@ -65,7 +65,7 @@ let _ = e => [{
     })
   };
 
-function C(e) {
+function T(e) {
   let {
     onTabSelect: t,
     tabs: n,
@@ -81,7 +81,7 @@ function C(e) {
       let {
         closePopout: l
       } = e;
-      return (0, r.jsx)(v, {
+      return (0, r.jsx)(C, {
         selectedTab: i,
         onClose: l,
         tabs: n,
@@ -115,14 +115,14 @@ function C(e) {
       }({}, e), l = l = {
         id: "more",
         color: "text-muted",
-        className: a()(g.more, {
-          [g.selected]: u
+        className: a()(_.more, {
+          [_.selected]: u
         }),
-        "aria-label": p.NW.string(p.t.UKOtz8),
+        "aria-label": g.intl.string(g.t.UKOtz8),
         children: [(0, r.jsx)(d.Text, {
           variant: "text-md/medium",
           color: m,
-          children: p.NW.string(p.t.UKOtz8)
+          children: g.intl.string(g.t.UKOtz8)
         }), i ? (0, r.jsx)(d.u04, {
           size: "sm",
           color: h
@@ -144,14 +144,14 @@ function C(e) {
   })
 }
 
-function T(e) {
+function N(e) {
   let {
     guildId: t,
     currentTab: n,
     onTabSelect: i
-  } = e, [a, c] = l.useState(0), x = l.useRef(null), v = l.useRef(a), T = (0, j.A)({
+  } = e, [a, c] = l.useState(0), x = l.useRef(null), C = l.useRef(a), N = (0, j.A)({
     guildId: t
-  }), E = _(null != T ? T : 0), {
+  }), E = v(null != N ? N : 0), {
     lastVisibleIndex: I,
     onItemLayout: S,
     overflowItemsRef: P
@@ -162,18 +162,18 @@ function T(e) {
     containerWidth: a - 200
   }), O = (0, s.e7)([f.ZP], () => null != f.ZP.getGuildSidebarState(t), [t]), R = (0, h.L)({
     guildId: t
-  }), y = l.useMemo(() => n === N.e.ALL_MEMBERS ? O : null != R && null != R.user, [n, O, R]), A = l.useMemo(() => E.slice(0, I + 1), [I, E]), w = l.useMemo(() => E.slice(I + 1), [I, E]), M = (0, m.Z)(e => {
+  }), y = l.useMemo(() => n === p.e.ALL_MEMBERS ? O : null != R && null != R.user, [n, O, R]), A = l.useMemo(() => E.slice(0, I + 1), [I, E]), w = l.useMemo(() => E.slice(I + 1), [I, E]), M = (0, m.Z)(e => {
     let t = e.contentRect.width;
-    null != t && v.current !== t && (c(t), v.current = t)
+    null != t && C.current !== t && (c(t), C.current = t)
   });
   return (0, u.s)(x, M, [y]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(b.Z.Divider, {
-      className: g.divider
+      className: _.divider
     }), (0, r.jsxs)("div", {
-      className: g.tabsContainer,
+      className: _.tabsContainer,
       ref: x,
       children: [(0, r.jsxs)("div", {
-        className: g.measurements,
+        className: _.measurements,
         children: [E.map((e, t) => (0, r.jsx)(o.AJ, {
           index: t,
           onItemLayout: S,
@@ -184,14 +184,14 @@ function T(e) {
           })
         }, e.id)), (0, r.jsx)("div", {
           ref: P,
-          children: (0, r.jsx)(C, {
+          children: (0, r.jsx)(T, {
             tabs: w,
             onTabSelect: i,
             selectedTab: n
           })
         })]
       }), (0, r.jsxs)(d.njP, {
-        "aria-label": p.NW.string(p.t.tcvVXF),
+        "aria-label": g.intl.string(g.t.tcvVXF),
         selectedItem: n,
         type: "top-pill",
         onItemSelect: i,
@@ -199,7 +199,7 @@ function T(e) {
           id: e.id,
           "aria-label": e.label,
           children: e.label
-        }, e.id)), 0 !== w.length ? (0, r.jsx)(C, {
+        }, e.id)), 0 !== w.length ? (0, r.jsx)(T, {
           tabs: w,
           onTabSelect: i,
           selectedTab: n

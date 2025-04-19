@@ -18,11 +18,11 @@ var t = l(200651),
   x = l(273039),
   p = l(339085),
   b = l(592125),
-  N = l(984933),
-  g = l(699516),
-  C = l(594174),
-  _ = l(700785),
-  v = l(995532),
+  g = l(984933),
+  C = l(699516),
+  _ = l(594174),
+  v = l(700785),
+  N = l(995532),
   k = l(514698),
   O = l(845606),
   y = l(981631),
@@ -36,11 +36,11 @@ let T = e => {
     welcomeChannel: Z,
     transitionState: w,
     onSave: z,
-    onClose: W
-  } = e, I = (0, j.Dt)(), [D, L] = i.useState(null != Z ? Z.channel_id : null), [B, A] = i.useState(null != Z ? Z.description : ""), [H, R] = i.useState(null != Z ? {
+    onClose: I
+  } = e, D = (0, j.Dt)(), [L, B] = i.useState(null != Z ? Z.channel_id : null), [A, H] = i.useState(null != Z ? Z.description : ""), [R, M] = i.useState(null != Z ? {
     id: Z.emoji_id,
     name: Z.emoji_name
-  } : null), [M, K] = i.useState(!1), Y = (0, o.e7)([p.ZP], () => (null == H ? void 0 : H.id) != null ? p.ZP.getUsableCustomEmojiById(H.id) : null), q = (0, o.e7)([N.ZP], () => N.ZP.getChannels(T)[N.sH], [T]), G = (0, o.e7)([v.Z], () => v.Z.get(T)), V = null != (l = null == G || null == (n = G.welcome_channels) ? void 0 : n.map(e => e.channel_id)) ? l : [], [X, $] = i.useState(!1);
+  } : null), [K, W] = i.useState(!1), Y = (0, o.e7)([p.ZP], () => (null == R ? void 0 : R.id) != null ? p.ZP.getUsableCustomEmojiById(R.id) : null), q = (0, o.e7)([g.ZP], () => g.ZP.getChannels(T)[g.sH], [T]), G = (0, o.e7)([N.Z], () => N.Z.get(T)), V = null != (l = null == G || null == (n = G.welcome_channels) ? void 0 : n.map(e => e.channel_id)) ? l : [], [X, $] = i.useState(!1);
   i.useEffect(() => {
     r.K.get(O.S) || setTimeout(() => $(!0), 300)
   }, []);
@@ -49,19 +49,19 @@ let T = e => {
     let {
       channel: n
     } = e;
-    _.Uu(y.Plq.VIEW_CHANNEL, n) && ((null == Z ? void 0 : Z.channel_id) === n.id || !V.includes(n.id)) && U.push({
+    v.Uu(y.Plq.VIEW_CHANNEL, n) && ((null == Z ? void 0 : Z.channel_id) === n.id || !V.includes(n.id)) && U.push({
       value: n.id,
-      label: (0, u.F6)(n, C.default, g.Z)
+      label: (0, u.F6)(n, _.default, C.Z)
     })
   });
   let F = () => {
-      $(!1), W()
+      $(!1), I()
     },
-    J = i.useCallback(e => A(e), []),
+    J = i.useCallback(e => H(e), []),
     Q = e => {
       var n, l, t;
-      if (null == e) return void R(null);
-      R(null != e.id ? {
+      if (null == e) return void M(null);
+      M(null != e.id ? {
         id: null != (n = e.id) ? n : null,
         name: null != (l = e.name) ? l : null
       } : {
@@ -76,7 +76,7 @@ let T = e => {
     page: y.ZY5.CHANNEL_WELCOME_CREATE_MODAL,
     children: (0, t.jsxs)(a.Y0X, {
       transitionState: w,
-      "aria-labelledby": I,
+      "aria-labelledby": D,
       children: [(0, t.jsxs)("div", {
         className: P.modalContents,
         children: [(0, t.jsx)(a.olH, {
@@ -85,14 +85,14 @@ let T = e => {
         }), (0, t.jsx)(a.X6q, {
           variant: "heading-md/semibold",
           className: P.headerText,
-          id: I,
-          children: S.NW.string(S.t.cTghws)
+          id: D,
+          children: S.intl.string(S.t.cTghws)
         }), (0, t.jsxs)(a.hjN, {
           className: P.__invalid_formGroup,
           children: [(0, t.jsx)(a.VcW, {
             options: U,
-            onChange: e => L(e),
-            value: D,
+            onChange: e => B(e),
+            value: L,
             renderOptionPrefix: e => {
               var n;
               if (null === e) return null;
@@ -109,19 +109,19 @@ let T = e => {
             variant: "text-xs/normal",
             color: "text-muted",
             className: P.formDescription,
-            children: S.NW.string(S.t.VV2929)
+            children: S.intl.string(S.t.VV2929)
           })]
         }), (0, t.jsx)(a.$i$, {}), (0, t.jsx)(a.X6q, {
           variant: "heading-md/semibold",
           className: P.headerText,
-          children: S.NW.string(S.t.bBw6HR)
+          children: S.intl.string(S.t.bBw6HR)
         }), (0, t.jsx)(a.hjN, {
           className: P.__invalid_formGroup,
           children: (0, t.jsx)(a.oil, {
             maxLength: 42,
-            value: B,
+            value: A,
             inputClassName: P.input,
-            placeholder: S.NW.string(S.t.h5EOur),
+            placeholder: S.intl.string(S.t.h5EOur),
             onChange: J
           })
         }), (0, t.jsx)(a.$i$, {}), (0, t.jsx)(a.hjN, {
@@ -132,20 +132,20 @@ let T = e => {
               className: P.emojiTitleContainer,
               children: [(0, t.jsx)(a.X6q, {
                 variant: "heading-md/semibold",
-                children: S.NW.string(S.t.HHniMT)
+                children: S.intl.string(S.t.HHniMT)
               }), (0, t.jsx)(a.Text, {
                 variant: "text-xs/normal",
                 color: "text-muted",
-                children: S.NW.string(S.t.c4mfl5)
+                children: S.intl.string(S.t.c4mfl5)
               })]
             }), (0, t.jsx)(x.Z, {
-              hasSetEmoji: null != H,
+              hasSetEmoji: null != R,
               onClick: Q,
               children: (0, t.jsx)(a.yRy, {
                 renderPopout: e => {
                   let {
                     closePopout: n
-                  } = e, l = N.ZP.getDefaultChannel(T);
+                  } = e, l = g.ZP.getDefaultChannel(T);
                   return (0, t.jsx)(h.Z, {
                     guildId: T,
                     closePopout: n,
@@ -169,7 +169,7 @@ let T = e => {
                     color: a.FGA.BRAND,
                     tooltipClassName: P.tooltip,
                     position: "left",
-                    text: X ? S.NW.string(S.t.YL3nfH) : null,
+                    text: X ? S.intl.string(S.t.YL3nfH) : null,
                     forceOpen: X,
                     children: (0, t.jsx)(f.Z, (l = function(e) {
                       for (var n = 1; n < arguments.length; n++) {
@@ -196,10 +196,10 @@ let T = e => {
                       active: o,
                       className: P.emojiButton,
                       tabIndex: 0,
-                      renderButtonContents: null != H && (null != H.id || null != H.name) ? () => (0, t.jsx)(s.Z, {
+                      renderButtonContents: null != R && (null != R.id || null != R.name) ? () => (0, t.jsx)(s.Z, {
                         className: P.emoji,
-                        emojiId: H.id,
-                        emojiName: H.name,
+                        emojiId: R.id,
+                        emojiName: R.name,
                         animated: !!(null == Y ? void 0 : Y.animated)
                       }) : null
                     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, n) {
@@ -229,34 +229,34 @@ let T = e => {
             size: a.zxk.Sizes.SMALL,
             look: a.zxk.Looks.LINK,
             color: a.zxk.Colors.PRIMARY,
-            children: S.NW.string(S.t["ETE/oK"])
+            children: S.intl.string(S.t["ETE/oK"])
           }), (0, t.jsx)(a.zxk, {
             onClick: () => {
-              null != D && B.length > 0 && z({
-                channel_id: D,
-                description: B,
-                emoji_id: null == H ? void 0 : H.id,
-                emoji_name: null == H ? void 0 : H.name
+              null != L && A.length > 0 && z({
+                channel_id: L,
+                description: A,
+                emoji_id: null == R ? void 0 : R.id,
+                emoji_name: null == R ? void 0 : R.name
               }), F()
             },
-            disabled: null == D || 0 === B.length,
-            children: S.NW.string(S.t.R3BPHx)
+            disabled: null == L || 0 === A.length,
+            children: S.intl.string(S.t.R3BPHx)
           })]
         }), null != Z && (0, t.jsx)(a.zxk, {
           onClick: () => {
-            K(!0)
+            W(!0)
           },
           size: a.zxk.Sizes.MIN,
           look: a.zxk.Looks.LINK,
           color: a.zxk.Colors.RED,
-          children: S.NW.string(S.t.N86XcH)
+          children: S.intl.string(S.t.N86XcH)
         })]
-      }), M && (0, t.jsx)(k.Z, {
+      }), K && (0, t.jsx)(k.Z, {
         onConfirm: () => {
           z(), F()
         },
-        onCancel: () => K(!1),
-        channelId: D
+        onCancel: () => W(!1),
+        channelId: L
       })]
     })
   })

@@ -1,6 +1,6 @@
 /** Chunk was on 3656 **/
 n.d(t, {
-  Z: () => N
+  Z: () => I
 }), n(539854);
 var r = n(200651),
   i = n(192379),
@@ -26,49 +26,49 @@ var r = n(200651),
   O = n(981631),
   E = n(600295);
 
-function N(e) {
+function I(e) {
   let {
     participants: t,
     onClick: n,
-    onDoubleClick: N,
-    onContextMenu: I,
-    channel: P,
-    className: S,
-    inCall: Z,
+    onDoubleClick: I,
+    onContextMenu: P,
+    channel: S,
+    className: Z,
+    inCall: N,
     totalNumberOfParticipants: T,
     paused: A = !1
-  } = e, w = (0, c.bp)() === O.IlC.POPOUT, R = (0, a.e7)([_.Z], () => _.Z.getGuild(P.guild_id), [P.guild_id]), {
+  } = e, w = (0, c.bp)() === O.IlC.POPOUT, R = (0, a.e7)([_.Z], () => _.Z.getGuild(S.guild_id), [S.guild_id]), {
     dismissedActivityEntryPointTileChannel: k
-  } = (0, v.d)(), M = (0, a.e7)([h.Z], () => h.Z.getUserParticipantCount(P.id), [P]), L = (0, b.bt)(P.id, t), D = i.useCallback(() => {
+  } = (0, v.d)(), M = (0, a.e7)([h.Z], () => h.Z.getUserParticipantCount(S.id), [S]), L = (0, b.bt)(S.id, t), D = i.useCallback(() => {
     (0, o.j)(() => {
       v.d.setState({
-        dismissedActivityEntryPointTileChannel: P.id
+        dismissedActivityEntryPointTileChannel: S.id
       })
     })
-  }, [P.id]);
+  }, [S.id]);
   i.useEffect(() => {
-    null != k && P.id !== k && (0, o.j)(() => {
+    null != k && S.id !== k && (0, o.j)(() => {
       v.d.setState({
         dismissedActivityEntryPointTileChannel: null
       })
     })
-  }, [P.id, k]);
-  let W = (0, a.e7)([y.Z], () => P.isPrivate() || (0, m.b)(y.Z, R, P), [R, P]),
-    U = (null == R ? void 0 : R.afkChannelId) === P.id,
-    B = P.userLimit <= 0 || P.userLimit > 1,
-    G = (0, a.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(P.id).length <= 0),
-    F = (0, f.N)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
-    H = (0, d.KF)(P.id) !== d.jy.CAN_LAUNCH,
-    V = null != k && k === P.id,
-    z = L.map(e => t => (0, r.jsx)(x.ZP, {
+  }, [S.id, k]);
+  let U = (0, a.e7)([y.Z], () => S.isPrivate() || (0, m.b)(y.Z, R, S), [R, S]),
+    B = (null == R ? void 0 : R.afkChannelId) === S.id,
+    G = S.userLimit <= 0 || S.userLimit > 1,
+    F = (0, a.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(S.id).length <= 0),
+    H = (0, f.N)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
+    V = (0, d.KF)(S.id) !== d.jy.CAN_LAUNCH,
+    z = null != k && k === S.id,
+    W = L.map(e => t => (0, r.jsx)(x.ZP, {
       participant: e,
-      channel: P,
+      channel: S,
       className: E.tile,
       paused: A,
       onClick: n,
-      onDoubleClick: N,
-      onContextMenu: I,
-      inCall: Z,
+      onDoubleClick: I,
+      onContextMenu: P,
+      inCall: N,
       width: t,
       inPopout: w
     }, e.id));
@@ -77,26 +77,26 @@ function N(e) {
     name: l.ImpressionNames.CHANNEL_CALL_VIDEO_GRID_VIEW,
     properties: {
       total_participants: T,
-      can_invite: W,
-      is_afk_channel: U,
-      channel_user_limit: P.userLimit
+      can_invite: U,
+      is_afk_channel: B,
+      channel_user_limit: S.userLimit
     }
   }, {
     trackOnInitialLoad: !0
-  }, []), null != R && !U && (!(M >= 2) || !G || H || F || V ? B && 1 === M && W && (G && !H ? z.push(e => (0, r.jsx)(C.h, {
-    channel: P,
+  }, []), null != R && !B && (!(M >= 2) || !F || V || H || z ? G && 1 === M && U && (F && !V ? W.push(e => (0, r.jsx)(C.h, {
+    channel: S,
     guild: R,
     width: e,
     inPopout: w,
     handleClose: D,
     userParticipantCount: M
-  })) : z.push(e => (0, r.jsx)(j.Z, {
+  })) : W.push(e => (0, r.jsx)(j.Z, {
     width: e,
-    channel: P,
+    channel: S,
     guild: R,
     inPopout: w
-  }))) : z.push(e => (0, r.jsx)(C.h, {
-    channel: P,
+  }))) : W.push(e => (0, r.jsx)(C.h, {
+    channel: S,
     guild: R,
     width: e,
     inPopout: w,
@@ -108,10 +108,10 @@ function N(e) {
     return null != (n = null == (t = L[e]) ? void 0 : t.id) ? n : "empty-tile"
   }, [L]);
   return (0, r.jsx)(g.Z, {
-    className: S,
+    className: Z,
     keyExtractor: Y,
     paddingTop: 64,
     paddingBottom: 64,
-    children: z
+    children: W
   })
 }

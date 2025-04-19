@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   $R: () => w,
-  C7: () => N,
+  C7: () => A,
   Ek: () => I,
   Gu: () => U,
   JQ: () => T,
@@ -99,14 +99,14 @@ function T(e) {
   })
 }
 
-function N(e) {
+function A(e) {
   let t = (0, o.e7)([f.Z], () => f.Z.getChannel(null == e ? void 0 : e.parent_id)),
     n = (0, o.e7)([_.Z], () => null != t && _.Z.can(m.Plq.MANAGE_THREADS, t), [t]),
     r = (0, o.e7)([d.default], () => d.default.getId());
   return null != e && null != t && !!e.isThread() && (!!n || !e.isLockedThread() && e.ownerId === r)
 }
 
-function A(e, t) {
+function N(e, t) {
   return null != e && t.can(m.Plq.SEND_MESSAGES_IN_THREADS, e)
 }
 
@@ -116,13 +116,13 @@ function C(e, t, n) {
 }
 
 function R(e) {
-  let t = (0, o.e7)([_.Z], () => A(e, _.Z)),
+  let t = (0, o.e7)([_.Z], () => N(e, _.Z)),
     n = M(e);
   return C(e, t, n)
 }
 
 function P(e) {
-  let t = A(e, _.Z),
+  let t = N(e, _.Z),
     n = k(e);
   return C(e, t, n)
 }

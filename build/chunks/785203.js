@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  R: () => v,
-  Z: () => C
+  R: () => C,
+  Z: () => S
 });
 var r, i = n(192379),
   l = n(442837),
@@ -20,14 +20,14 @@ var r, i = n(192379),
   _ = n(541566),
   E = n(192513),
   O = n(255791),
-  N = n(70956),
-  y = n(267642),
-  I = n(981631),
-  v = ((r = {})[r.ENABLE_PUBLIC_GUILD = 0] = "ENABLE_PUBLIC_GUILD", r[r.APPLIED_GUILD_BOOST_GRACE_PERIOD = 1] = "APPLIED_GUILD_BOOST_GRACE_PERIOD", r[r.MAX_MEMBER_COUNT = 2] = "MAX_MEMBER_COUNT", r[r.GUILD_LIVE_CHANNEL = 3] = "GUILD_LIVE_CHANNEL", r[r.GUILD_MFA_WARNING = 4] = "GUILD_MFA_WARNING", r[r.COMMANDS_MIGRATION = 5] = "COMMANDS_MIGRATION", r[r.APPLICATION_SUBSCRIPTION_EXPIRATION = 6] = "APPLICATION_SUBSCRIPTION_EXPIRATION", r[r.HUB_STUDY_ROOM = 7] = "HUB_STUDY_ROOM", r[r.SIGNUP = 8] = "SIGNUP", r[r.CLAN_UPSELL = 9] = "CLAN_UPSELL", r);
+  y = n(70956),
+  I = n(267642),
+  v = n(981631),
+  C = ((r = {})[r.ENABLE_PUBLIC_GUILD = 0] = "ENABLE_PUBLIC_GUILD", r[r.APPLIED_GUILD_BOOST_GRACE_PERIOD = 1] = "APPLIED_GUILD_BOOST_GRACE_PERIOD", r[r.MAX_MEMBER_COUNT = 2] = "MAX_MEMBER_COUNT", r[r.GUILD_LIVE_CHANNEL = 3] = "GUILD_LIVE_CHANNEL", r[r.GUILD_MFA_WARNING = 4] = "GUILD_MFA_WARNING", r[r.COMMANDS_MIGRATION = 5] = "COMMANDS_MIGRATION", r[r.APPLICATION_SUBSCRIPTION_EXPIRATION = 6] = "APPLICATION_SUBSCRIPTION_EXPIRATION", r[r.HUB_STUDY_ROOM = 7] = "HUB_STUDY_ROOM", r[r.SIGNUP = 8] = "SIGNUP", r[r.CLAN_UPSELL = 9] = "CLAN_UPSELL", r);
 
-function C(e) {
+function S(e) {
   var t;
-  let n = null != (t = null == e ? void 0 : e.id) ? t : I.lds,
+  let n = null != (t = null == e ? void 0 : e.id) ? t : v.lds,
     {
       lastFetchedAt: r
     } = (0, l.cj)([m.Z], () => ({
@@ -35,18 +35,18 @@ function C(e) {
       lastFetchedAt: m.Z.getLastFetchedAtForGuild(n)
     })),
     {
-      lastDismissedGracePeriod: v,
-      isGracePeriodVisible: C
+      lastDismissedGracePeriod: C,
+      isGracePeriodVisible: S
     } = (0, l.cj)([_.Z], () => ({
       lastDismissedGracePeriod: _.Z.getLastDismissedGracePeriodForGuild(n),
       isGracePeriodVisible: _.Z.isVisible(n)
     })),
-    S = (0, p.Ek)(n, "GuildBoostingNoticeStore"),
+    N = (0, p.Ek)(n, "GuildBoostingNoticeStore"),
     T = (0, l.e7)([f.Z], () => f.Z.isVisible(e)),
     P = (0, l.e7)([O.Z], () => O.Z.isVisible(e)),
-    j = (0, l.e7)([b.Z], () => b.Z.can(I.Plq.ADMINISTRATOR, e)),
-    A = null != v && Date.now() - v <= I.Dge,
-    Z = (0, y.Jh)(n) !== I.Eu4.NONE,
+    j = (0, l.e7)([b.Z], () => b.Z.can(v.Plq.ADMINISTRATOR, e)),
+    A = null != C && Date.now() - C <= v.Dge,
+    Z = (0, I.Jh)(n) !== v.Eu4.NONE,
     x = !(null != r && Date.now() - r <= 432e5) && !A && j && Z,
     L = (0, s.m)(n),
     w = (0, l.e7)([E.Z], () => E.Z.isVisible(e)),
@@ -56,26 +56,26 @@ function C(e) {
       enableStudyGroup: k
     } = (0, u.s)(e),
     M = D.length > 0,
-    U = k && !(null == e ? void 0 : e.hasFeature(I.oNc.HUB)),
+    U = k && !(null == e ? void 0 : e.hasFeature(v.oNc.HUB)),
     G = (0, c.Vm)(n),
-    W = (0, l.e7)([g.Z], () => null != g.Z.getActiveGuildSignUp(n));
+    V = (0, l.e7)([g.Z], () => null != g.Z.getActiveGuildSignUp(n));
   if (i.useEffect(() => {
       o.Z.getGuildEventsForCurrentUser(n)
     }, [n]), i.useEffect(() => {
       let e = -1;
       return x && (e = window.setTimeout(() => {
         null != n && (0, a.C0)(n)
-      }, 30 * Math.random() * N.Z.Millis.SECOND)), () => {
+      }, 30 * Math.random() * y.Z.Millis.SECOND)), () => {
         window.clearTimeout(e)
       }
     }, [n, x]), T) return 0;
-  if (C && !S) return 1;
+  if (S && !N) return 1;
   if (P) return 2;
   if (L || null != G) return 3;
   if (w) return 4;
   else if (R) return 5;
   else if (M) return 6;
   else if (U) return 7;
-  else if (W) return 8;
+  else if (V) return 8;
   return null
 }

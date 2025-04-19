@@ -1,84 +1,84 @@
 /** Chunk was on 49910 **/
-s.d(t, {
-  DesktopRefreshOnboardingModal: () => _
-}), s(388685), s(539854);
-var r = s(200651),
-  n = s(192379),
-  i = s(120356),
-  a = s.n(i),
-  l = s(442837),
-  o = s(524437),
-  c = s(481060),
-  d = s(153867),
-  m = s(131388),
-  h = s(514361),
-  g = s(47760),
-  p = s(210887),
-  u = s(740492),
-  y = s(695346),
-  x = s(874893),
-  b = s(231338),
-  j = s(388032),
-  O = s(294649);
+n.d(t, {
+  DesktopRefreshOnboardingModal: () => w
+}), n(388685), n(539854);
+var i = n(200651),
+  s = n(192379),
+  r = n(120356),
+  a = n.n(r),
+  l = n(442837),
+  o = n(524437),
+  c = n(481060),
+  d = n(153867),
+  m = n(131388),
+  h = n(514361),
+  g = n(47760),
+  p = n(210887),
+  u = n(740492),
+  y = n(695346),
+  x = n(874893),
+  b = n(231338),
+  j = n(388032),
+  O = n(294649);
 
-function N(e) {
+function f(e) {
   let {
     options: t,
-    selected: s,
-    onSelect: n,
-    showLabels: i,
+    selected: n,
+    onSelect: s,
+    showLabels: r,
     renderOptionContainer: l
   } = e;
-  return (0, r.jsx)(c.Kqy, {
+  return (0, i.jsx)(c.Kqy, {
     direction: "horizontal",
     gap: 8,
     children: t.map((e, t) => {
       var o;
-      let d = (0, r.jsx)(c.Kqy, {
+      let d = (0, i.jsx)(c.Kqy, {
         gap: 16,
-        children: (0, r.jsx)(c.ua7, {
+        children: (0, i.jsx)(c.ua7, {
           text: e.label,
-          shouldShow: !i && void 0,
+          shouldShow: !r && void 0,
           children: t => {
             var l, o;
-            return (0, r.jsxs)(c.P3F, (l = function(e) {
+            return (0, i.jsxs)(c.P3F, (l = function(e) {
               for (var t = 1; t < arguments.length; t++) {
-                var s = null != arguments[t] ? arguments[t] : {},
-                  r = Object.keys(s);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(s).filter(function(e) {
-                  return Object.getOwnPropertyDescriptor(s, e).enumerable
-                }))), r.forEach(function(t) {
-                  var r;
-                  r = s[t], t in e ? Object.defineProperty(e, t, {
-                    value: r,
+                var n = null != arguments[t] ? arguments[t] : {},
+                  i = Object.keys(n);
+                "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                  return Object.getOwnPropertyDescriptor(n, e).enumerable
+                }))), i.forEach(function(t) {
+                  var i;
+                  i = n[t], t in e ? Object.defineProperty(e, t, {
+                    value: i,
                     enumerable: !0,
                     configurable: !0,
                     writable: !0
-                  }) : e[t] = r
+                  }) : e[t] = i
                 })
               }
               return e
             }({}, t), o = o = {
-              "data-selected": e.id === s,
-              onClick: () => n(e.id),
+              "data-selected": e.id === n,
+              onClick: () => s(e.id),
               className: a()(e.className, O.option),
               style: e.style,
-              children: [i && (0, r.jsx)(c.Text, {
+              children: [r && (0, i.jsx)(c.Text, {
                 variant: "text-sm/medium",
                 color: "text-primary",
                 children: e.label
-              }), e.new && (0, r.jsx)(c.IGR, {
+              }), e.new && (0, i.jsx)(c.IGR, {
                 color: c.TVs.colors.BG_BRAND.css,
-                text: j.NW.string(j.t.y2b7CA),
+                text: j.intl.string(j.t.y2b7CA),
                 className: O.new
               })]
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
-              var s = Object.keys(e);
+              var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
-                var r = Object.getOwnPropertySymbols(e);
-                s.push.apply(s, r)
+                var i = Object.getOwnPropertySymbols(e);
+                n.push.apply(n, i)
               }
-              return s
+              return n
             })(Object(o)).forEach(function(e) {
               Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(o, e))
             }), l))
@@ -89,155 +89,155 @@ function N(e) {
     })
   })
 }
-let f = [{
+let v = [{
     id: b.BR.LIGHT,
-    label: j.NW.string(j.t.K2sFfn),
+    label: j.intl.string(j.t.K2sFfn),
     className: a()("theme-light", O.themeOption)
   }, {
     id: b.BR.DARK,
-    label: j.NW.string(j.t.SMPT1t),
+    label: j.intl.string(j.t.SMPT1t),
     className: a()("theme-dark", O.themeOption)
   }, {
     id: b.BR.DARKER,
-    label: j.NW.string(j.t.b8Cei4),
+    label: j.intl.string(j.t.b8Cei4),
     className: a()("theme-darker", O.themeOption),
     new: !0
   }, {
     id: b.BR.MIDNIGHT,
-    label: j.NW.string(j.t.Do4ZJy),
+    label: j.intl.string(j.t.Do4ZJy),
     className: a()("theme-midnight", O.themeOption),
     new: !0
   }],
-  v = [{
+  _ = [{
     id: "compact",
-    label: j.NW.string(j.t["7iegX1"])
+    label: j.intl.string(j.t["7iegX1"])
   }, {
     id: "default",
-    label: j.NW.string(j.t.bBvAEB)
+    label: j.intl.string(j.t.bBvAEB)
   }, {
     id: "cozy",
-    label: j.NW.string(j.t["4cuYHx"])
+    label: j.intl.string(j.t["4cuYHx"])
   }];
 
-function _(e) {
+function w(e) {
   let {
     transitionState: t,
-    onClose: s
-  } = e, [i] = n.useState(() => h.Z.gradientPreset), b = (0, l.e7)([p.Z], () => p.Z.theme), [_] = n.useState(() => u.ZP.useSystemTheme === x.KW.ON), [w, k] = n.useState(() => _ ? "system" : null != i ? "gradient" : b), {
+    onClose: n
+  } = e, [r] = s.useState(() => h.Z.gradientPreset), b = (0, l.e7)([p.Z], () => p.Z.theme), [w] = s.useState(() => u.ZP.useSystemTheme === x.KW.ON), [N, k] = s.useState(() => w ? "system" : null != r ? "gradient" : b), {
     density: P
-  } = (0, c.TCT)(), C = n.useMemo(() => {
-    if (null == i && !_) return f;
-    let e = [...f];
-    if (null != i) {
+  } = (0, c.TCT)(), C = s.useMemo(() => {
+    if (null == r && !w) return v;
+    let e = [...v];
+    if (null != r) {
       let {
         colors: t,
-        angle: s,
-        theme: r,
-        getName: n
-      } = i, l = (0, g.VK)({
+        angle: n,
+        theme: i,
+        getName: s
+      } = r, l = (0, g.VK)({
         colors: t,
-        angle: s
-      }), o = n();
+        angle: n
+      }), o = s();
       e.push({
         id: "gradient",
         label: o,
-        className: a()((0, c.wjy)(r) ? O.darkOverlay : O.lightOverlay, O.themeOption),
+        className: a()((0, c.wjy)(i) ? O.darkOverlay : O.lightOverlay, O.themeOption),
         style: {
           background: "var(--bg-overlay), ".concat(l)
         }
       })
     }
-    return _ && e.push({
+    return w && e.push({
       id: "system",
-      label: j.NW.string(j.t["7rOU6u"]),
+      label: j.intl.string(j.t["7rOU6u"]),
       className: O.themeOption
     }), e
-  }, [i, _]), K = (0, m.Z)("(max-height: 800px)");
-  return (0, r.jsxs)(c.Y0X, {
+  }, [r, w]), K = (0, m.Z)("(max-height: 800px)");
+  return (0, i.jsxs)(c.Y0X, {
     transitionState: t,
     size: c.CgR.DYNAMIC,
     className: O.root,
     "data-modal-align": "top",
-    children: [(0, r.jsx)("div", {
+    children: [(0, i.jsx)("div", {
       className: O.gradient
-    }), (0, r.jsx)(c.xBx, {
+    }), (0, i.jsx)(c.xBx, {
       className: O.header,
-      children: (0, r.jsxs)(c.Kqy, {
+      children: (0, i.jsxs)(c.Kqy, {
         gap: K ? 4 : 8,
-        children: [(0, r.jsxs)(c.Kqy, {
+        children: [(0, i.jsxs)(c.Kqy, {
           gap: K ? 8 : 16,
-          children: [(0, r.jsx)("div", {
+          children: [(0, i.jsx)("div", {
             className: O.headerImage
-          }), (0, r.jsx)(c.X6q, {
+          }), (0, i.jsx)(c.X6q, {
             variant: K ? "heading-lg/semibold" : "heading-xl/semibold",
             color: "header-primary",
-            children: j.NW.string(j.t["7+iCGx"])
+            children: j.intl.string(j.t["7+iCGx"])
           })]
-        }), (0, r.jsx)(c.X6q, {
+        }), (0, i.jsx)(c.X6q, {
           variant: K ? "heading-sm/medium" : "heading-md/medium",
           color: "text-secondary",
-          children: j.NW.string(j.t.fZMMqK)
+          children: j.intl.string(j.t.fZMMqK)
         })]
       })
-    }), (0, r.jsx)(c.hzk, {
+    }), (0, i.jsx)(c.hzk, {
       className: O.content,
-      children: (0, r.jsxs)(c.Kqy, {
+      children: (0, i.jsxs)(c.Kqy, {
         gap: K ? 20 : 24,
-        children: [(0, r.jsxs)(c.Kqy, {
+        children: [(0, i.jsxs)(c.Kqy, {
           gap: K ? 8 : 12,
-          children: [(0, r.jsx)(c.X6q, {
+          children: [(0, i.jsx)(c.X6q, {
             variant: "heading-md/medium",
-            children: j.NW.string(j.t.Ksh3io)
-          }), (0, r.jsx)(N, {
+            children: j.intl.string(j.t.Ksh3io)
+          }), (0, i.jsx)(f, {
             showLabels: !1,
             options: C,
-            selected: w,
+            selected: N,
             onSelect: e => {
-              k(e), "gradient" === e ? null != i && (0, d.ZI)({
-                backgroundGradientPresetId: i.id,
-                theme: i.theme
+              k(e), "gradient" === e ? null != r && (0, d.ZI)({
+                backgroundGradientPresetId: r.id,
+                theme: r.theme
               }) : (0, d.ZI)({
                 theme: e
               })
             },
-            renderOptionContainer: (e, t) => "gradient" === e.id ? t : "system" === e.id ? (0, r.jsxs)(c.Kqy, {
+            renderOptionContainer: (e, t) => "gradient" === e.id ? t : "system" === e.id ? (0, i.jsxs)(c.Kqy, {
               className: O.systemOption,
-              children: [t, (0, r.jsx)(c.DuK, {
+              children: [t, (0, i.jsx)(c.DuK, {
                 size: "sm",
                 className: O.systemIcon
               })]
-            }) : (0, r.jsx)(c.f6W, {
+            }) : (0, i.jsx)(c.f6W, {
               theme: e.id,
               disableAdaptiveTheme: !0,
-              children: e => (0, r.jsx)(c.Kqy, {
+              children: e => (0, i.jsx)(c.Kqy, {
                 className: e,
                 children: t
               })
             })
           })]
-        }), (0, r.jsxs)(c.Kqy, {
+        }), (0, i.jsxs)(c.Kqy, {
           gap: K ? 8 : 12,
-          children: [(0, r.jsxs)(c.Kqy, {
+          children: [(0, i.jsxs)(c.Kqy, {
             gap: 0,
-            children: [(0, r.jsxs)(c.Kqy, {
+            children: [(0, i.jsxs)(c.Kqy, {
               direction: "horizontal",
               gap: 4,
               align: "center",
-              children: [(0, r.jsx)(c.X6q, {
+              children: [(0, i.jsx)(c.X6q, {
                 variant: "heading-md/medium",
-                children: j.NW.string(j.t["C/5V0N"])
-              }), (0, r.jsx)(c.IGR, {
+                children: j.intl.string(j.t["C/5V0N"])
+              }), (0, i.jsx)(c.IGR, {
                 color: c.TVs.colors.BG_BRAND.css,
-                text: j.NW.string(j.t.y2b7CA)
+                text: j.intl.string(j.t.y2b7CA)
               })]
-            }), (0, r.jsx)(c.Text, {
+            }), (0, i.jsx)(c.Text, {
               variant: "text-sm/medium",
               color: "text-secondary",
-              children: j.NW.string(j.t["2w1sEB"])
+              children: j.intl.string(j.t["2w1sEB"])
             })]
-          }), (0, r.jsx)(N, {
+          }), (0, i.jsx)(f, {
             showLabels: !0,
-            options: v,
+            options: _,
             selected: P,
             onSelect: e => {
               switch (e) {
@@ -254,11 +254,11 @@ function _(e) {
           })]
         })]
       })
-    }), (0, r.jsx)(c.mzw, {
+    }), (0, i.jsx)(c.mzw, {
       className: O.footer,
-      children: (0, r.jsx)(c.zxk, {
-        onClick: s,
-        children: j.NW.string(j.t["1Qm829"])
+      children: (0, i.jsx)(c.zxk, {
+        onClick: n,
+        children: j.intl.string(j.t["1Qm829"])
       })
     })]
   })

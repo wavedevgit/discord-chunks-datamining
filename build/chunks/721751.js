@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(35282);
 var o = n(200651),
   i = n(192379),
-  c = n(873546),
-  l = n(442837),
+  l = n(873546),
+  c = n(442837),
   s = n(481060),
   a = n(980591),
   u = n(605782),
@@ -31,7 +31,7 @@ function T(e) {
   } = e;
   switch (function() {
       var e;
-      let [t, n] = i.useState(!1), [o, c] = i.useState(!0), s = (0, l.e7)([p.Z], () => p.Z.hasLoadedExperiments);
+      let [t, n] = i.useState(!1), [o, l] = i.useState(!0), s = (0, c.e7)([p.Z], () => p.Z.hasLoadedExperiments);
       return ((0, a.Z)(() => {}, 300), void 0 !== r) ? r : !o && s ? (t || n(!0), I((e = 0, "default"))) : o ? I("default") : "loading"
     }()) {
     case "default":
@@ -109,7 +109,7 @@ class Z extends i.Component {
     let {
       isMobileWidth: e
     } = this.state, t = navigator.userAgent.includes("GameLauncher");
-    return e || c.tq || c.Em || t ? this.renderMobile() : this.renderDefault()
+    return e || l.tq || l.Em || t ? this.renderMobile() : this.renderDefault()
   }
   constructor(e) {
     var t, n;

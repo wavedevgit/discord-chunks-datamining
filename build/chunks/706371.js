@@ -7,17 +7,17 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(442837),
-  s = n(447003),
-  l = n(984933),
+  l = n(447003),
+  s = n(984933),
   a = n(512508),
   o = n(981631);
 
 function c(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
-  return (0, i.Wu)([l.ZP], () => {
-    let i = l.ZP.getChannels(e)[o.d4z.GUILD_CATEGORY],
-      c = [...l.ZP.getChannels(e)[l.sH], ...l.ZP.getChannels(e)[l.Zb]],
+  return (0, i.Wu)([s.ZP], () => {
+    let i = s.ZP.getChannels(e)[o.d4z.GUILD_CATEGORY],
+      c = [...s.ZP.getChannels(e)[s.sH], ...s.ZP.getChannels(e)[s.Zb]],
       d = [],
       u = {};
     return i.forEach(e => {
@@ -32,14 +32,14 @@ function c(e, t) {
     }), c.forEach(e => {
       let {
         channel: i,
-        comparator: l
+        comparator: s
       } = e;
-      !(i.isThread() || t.has(i.id) || i.isGuildStageVoice() && !r) && (!n && (0, s.Z)(i) || (null == i.parent_id ? d.push({
+      !(i.isThread() || t.has(i.id) || i.isGuildStageVoice() && !r) && (!n && (0, l.Z)(i) || (null == i.parent_id ? d.push({
         channel: i,
-        comparator: l
+        comparator: s
       }) : (null == u[i.parent_id] && (u[i.parent_id] = []), u[i.parent_id].push({
         channel: i,
-        comparator: l
+        comparator: s
       }))))
     }), d.sort((e, t) => {
       let {
@@ -47,9 +47,9 @@ function c(e, t) {
         channel: r
       } = e, {
         comparator: i,
-        channel: s
+        channel: l
       } = t;
-      return r.isCategory() && !s.isCategory() ? 1 : !r.isCategory() && s.isCategory() ? -1 : i - n
+      return r.isCategory() && !l.isCategory() ? 1 : !r.isCategory() && l.isCategory() ? -1 : i - n
     }).reduce((e, n) => {
       let {
         channel: r
@@ -72,18 +72,18 @@ function d(e) {
     guildId: t,
     selectedChannelIds: n,
     onChange: i,
-    placeholder: s,
-    includeRoleRestrictedPrivateChannels: l = !1,
+    placeholder: l,
+    includeRoleRestrictedPrivateChannels: s = !1,
     includeStageVoiceChannels: o = !1,
     helperText: d,
     className: u
-  } = e, m = c(t, n, l, o);
+  } = e, m = c(t, n, s, o);
   return (0, r.jsx)(a.ZP, {
     channelRows: m,
     guildId: t,
     selectedChannelIds: n,
     onChange: (e, t) => i(e),
-    placeholder: s,
+    placeholder: l,
     helperText: d,
     className: u
   })

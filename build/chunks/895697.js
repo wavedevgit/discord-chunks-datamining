@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => N
 });
 var r = n(200651);
 n(192379);
@@ -27,13 +27,13 @@ var i = n(442837),
   I = n(228168),
   S = n(388032),
   T = n(773714),
-  N = n(200669);
+  A = n(200669);
 
-function A(e) {
+function N(e) {
   let {
     user: t,
     currentUser: n,
-    displayProfile: A,
+    displayProfile: N,
     guild: C,
     isHovering: R,
     onOpenProfile: P,
@@ -45,15 +45,15 @@ function A(e) {
   }), M = (0, i.e7)([o.Z, s.Z], () => o.Z.getChannel(s.Z.getChannelId())), k = (0, i.e7)([l.Z], () => l.Z.hidePersonalInformation);
   return (0, r.jsxs)(a.Ttm, {
     fade: !0,
-    className: N.body,
+    className: A.body,
     children: [(0, r.jsx)(m.Z, {
       user: t,
       profileType: I.y0.BITE_SIZE,
       onOpenProfile: P,
       nickname: L,
-      pronouns: null == A ? void 0 : A.pronouns,
+      pronouns: null == N ? void 0 : N.pronouns,
       tags: (0, r.jsx)(f.Z, {
-        displayProfile: A,
+        displayProfile: N,
         profileType: I.y0.BITE_SIZE,
         onClose: D
       }),
@@ -84,13 +84,13 @@ function A(e) {
       })]
     }), (0, r.jsx)(y.Z, {
       user: t,
-      bio: null == A ? void 0 : A.bio,
+      bio: null == N ? void 0 : N.bio,
       hidePersonalInformation: k,
       onClose: D
     }), (0, r.jsx)(_.Z, {
       user: t,
       currentUser: n,
-      displayProfile: A,
+      displayProfile: N,
       guildId: null == C ? void 0 : C.id,
       onClose: D
     }), (null == x ? void 0 : x.popularApplicationCommandIds) != null && null != M && (0, r.jsx)(d.Z, {
@@ -100,7 +100,7 @@ function A(e) {
       guildId: null == C ? void 0 : C.id,
       onClick: D
     }), null != C && (0, r.jsx)(h.Z, {
-      heading: S.NW.string(S.t.LPJmLy),
+      heading: S.intl.string(S.t.LPJmLy),
       children: (0, r.jsx)(v.Z, {
         user: t,
         currentUser: n,

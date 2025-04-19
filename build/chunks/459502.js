@@ -32,10 +32,10 @@ function g(e) {
         width: 20
       }),
       color: l.Z.unsafe_rawColors.GREEN_360.css,
-      title: f.NW.formatToPlainString(y(e) ? f.t["1vGXqK"] : f.t.xMJylZ, {
+      title: f.intl.formatToPlainString(y(e) ? f.t["1vGXqK"] : f.t.xMJylZ, {
         eventName: e.name
       }),
-      description: f.NW.formatToPlainString(f.t.PTebCQ, {
+      description: f.intl.formatToPlainString(f.t.PTebCQ, {
         startTime: (0, p.ub)(e.scheduled_start_time).startDateTimeString
       }),
       onClick: () => {

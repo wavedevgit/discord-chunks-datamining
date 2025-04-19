@@ -35,7 +35,7 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function N(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function N(e) {
   return e
 }
 
-function A(e, t) {
+function N(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -60,7 +60,7 @@ function A(e, t) {
 }
 
 function C(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -73,7 +73,7 @@ function P(e) {
   let n = l().sample(l().values(e));
   return {
     type: O.wI2.FAVORITES,
-    name: I.NW.string(I.t.y3LQCA),
+    name: I.intl.string(I.t.y3LQCA),
     icon: _.r7p,
     src: null != n ? n.src : "https://media.giphy.com/media/1TOSaJsWtnhe0/giphy.gif",
     format: null != (t = null == n ? void 0 : n.format) ? t : u.EO.IMAGE
@@ -214,7 +214,7 @@ function D(e) {
   let t = (0, c.e7)([m.Z], () => m.Z.getTrendingCategories()),
     n = (0, E.gG)(),
     i = (0, v.PY)();
-  return (0, r.jsx)(w, C(N({}, e, i), {
+  return (0, r.jsx)(w, C(A({}, e, i), {
     trendingCategories: t,
     favorites: n
   }))

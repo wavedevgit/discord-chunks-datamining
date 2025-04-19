@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(481060),
-  l = n(739566),
+  l = n(481060),
+  a = n(739566),
   o = n(942951),
   s = n(834129),
   c = n(670188),
@@ -15,7 +15,7 @@ var r = n(200651),
   p = n(981631);
 
 function m(e, t) {
-  return i.useCallback(n => (i, l) => {
+  return i.useCallback(n => (i, a) => {
     let o = u.ZP.getApplicationIconURL({
         id: n.id,
         icon: n.icon,
@@ -34,7 +34,7 @@ function m(e, t) {
       clickTrap: !0,
       children: e => {
         var t, n;
-        return (0, r.jsx)(a.eee, (t = function(e) {
+        return (0, r.jsx)(l.eee, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -64,7 +64,7 @@ function m(e, t) {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
         }), t))
       }
-    }, l)
+    }, a)
   }, [e, t.id])
 }
 
@@ -72,8 +72,8 @@ function f(e) {
   let {
     message: t,
     channel: i,
-    compact: a
-  } = e, c = (0, l.ZP)(t), u = t.application, f = (0, o.l)({
+    compact: l
+  } = e, c = (0, a.ZP)(t), u = t.application, f = (0, o.l)({
     user: t.author,
     channelId: i.id,
     guildId: i.guild_id,
@@ -82,7 +82,7 @@ function f(e) {
   return (0, r.jsx)(s.Z, {
     icon: n(570111),
     timestamp: t.timestamp,
-    compact: a,
+    compact: l,
     children: (0, d.DS)({
       application: u,
       username: c.nick,
@@ -96,8 +96,8 @@ function h(e) {
   let {
     message: t,
     channel: i,
-    compact: a
-  } = e, c = (0, l.ZP)(t), u = t.application, f = (0, o.l)({
+    compact: l
+  } = e, c = (0, a.ZP)(t), u = t.application, f = (0, o.l)({
     user: t.author,
     channelId: i.id,
     guildId: i.guild_id,
@@ -106,7 +106,7 @@ function h(e) {
   return (0, r.jsx)(s.Z, {
     icon: n(474019),
     timestamp: t.timestamp,
-    compact: a,
+    compact: l,
     children: (0, d.nh)({
       application: u,
       username: c.nick,

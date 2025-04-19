@@ -21,12 +21,12 @@ var r = n(200651),
   b = n(138339);
 
 function j(e) {
-  var t, n, j, y, _, w, C, N;
+  var t, n, j, y, _, w, C, k;
   let {
-    clip: k,
-    channelId: P,
-    transitionState: O,
-    onClose: S
+    clip: P,
+    channelId: O,
+    transitionState: S,
+    onClose: N
   } = e, [E, R] = a.useState(!0), [L, T] = a.useState(null), [F, D] = a.useState(null), {
     analyticsLocations: I
   } = (0, c.ZP)(u.Z.CLIPS_EDITOR);
@@ -34,11 +34,11 @@ function j(e) {
     !async function() {
       let e;
       try {
-        e = await s.Z.clips.loadClip(k.filepath)
+        e = await s.Z.clips.loadClip(P.filepath)
       } catch (e) {
-        S(), o.Z.show({
-          title: x.NW.string(x.t.yjoSOD),
-          body: x.NW.string(x.t.JmYczc)
+        N(), o.Z.show({
+          title: x.intl.string(x.t.yjoSOD),
+          body: x.intl.string(x.t.JmYczc)
         });
         return
       }
@@ -51,39 +51,39 @@ function j(e) {
         }));
       D(n), T(r)
     }()
-  }, [k.filepath, S]), a.useEffect(() => () => {
+  }, [P.filepath, N]), a.useEffect(() => () => {
     null != L && URL.revokeObjectURL(L)
   }, [L]), a.useEffect(() => () => {
     null != F && URL.revokeObjectURL(F)
   }, [F]);
-  let [A, Z] = a.useState(null == (_ = null == (t = k.editMetadata) ? void 0 : t.voiceAudio) || _), [B, M] = a.useState(null == (w = null == (n = k.editMetadata) ? void 0 : n.applicationAudio) || w), [W, z] = a.useState({
-    start: null != (C = null == (j = k.editMetadata) ? void 0 : j.start) ? C : 0,
-    end: null != (N = null == (y = k.editMetadata) ? void 0 : y.end) ? N : 0
-  }), [H, U] = a.useState(k.name), V = a.useRef({
-    name: H,
+  let [A, Z] = a.useState(null == (_ = null == (t = P.editMetadata) ? void 0 : t.voiceAudio) || _), [B, M] = a.useState(null == (w = null == (n = P.editMetadata) ? void 0 : n.applicationAudio) || w), [z, H] = a.useState({
+    start: null != (C = null == (j = P.editMetadata) ? void 0 : j.start) ? C : 0,
+    end: null != (k = null == (y = P.editMetadata) ? void 0 : y.end) ? k : 0
+  }), [W, U] = a.useState(P.name), V = a.useRef({
+    name: W,
     editMetadata: {
-      start: W.start,
-      end: W.end,
+      start: z.start,
+      end: z.end,
       voiceAudio: A,
       applicationAudio: B
     }
   });
   V.current = {
-    name: H,
+    name: W,
     editMetadata: {
-      start: W.start,
-      end: W.end,
+      start: z.start,
+      end: z.end,
       voiceAudio: A,
       applicationAudio: B
     }
   };
-  let X = (0, f.l)(k);
+  let X = (0, f.l)(P);
   a.useEffect(() => {
     async function e() {
       let e = {};
       null != X && (e = {
         thumbnail: await (0, p.R)(X, V.current.editMetadata.start)
-      }), (0, d.Tm)(k.id, function(e) {
+      }), (0, d.Tm)(P.id, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -105,7 +105,7 @@ function j(e) {
     return () => {
       e()
     }
-  }, [k.id, X]);
+  }, [P.id, X]);
   let G = a.useRef(null),
     K = a.useMemo(() => ({
       videoPlayerRef: G,
@@ -113,16 +113,16 @@ function j(e) {
       setApplicationAudioEnabled: M,
       voiceAudioEnabled: A,
       setVoiceAudioEnabled: Z,
-      cropData: W,
-      setCropData: z
-    }), [B, A, W]);
+      cropData: z,
+      setCropData: H
+    }), [B, A, z]);
   return (0, r.jsx)(i.Y0X, {
     impression: {
       impressionName: l.ImpressionNames.CLIP_EDITOR_VIEWED
     },
     size: i.CgR.DYNAMIC,
     className: b.modalRoot,
-    transitionState: O,
+    transitionState: S,
     children: (0, r.jsx)(c.Gt, {
       value: I,
       children: (0, r.jsx)(i.hzk, {
@@ -138,13 +138,13 @@ function j(e) {
               isLoading: E,
               onDoneLoading: () => R(!1),
               audioURL: F,
-              transitionState: O
+              transitionState: S
             }), !E && (0, r.jsx)(h.Z, {
-              channelId: P,
+              channelId: O,
               onSetClipName: U,
-              clipName: H,
-              clip: k,
-              onClose: S
+              clipName: W,
+              clip: P,
+              onClose: N
             })]
           })
         })

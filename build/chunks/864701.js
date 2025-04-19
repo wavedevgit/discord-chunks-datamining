@@ -1,6 +1,6 @@
 /** Chunk was on 67544 **/
 n.d(t, {
-  Z: () => Z
+  Z: () => _
 }), n(539854);
 var r = n(200651),
   s = n(192379),
@@ -29,7 +29,7 @@ let b = n(742914),
     2: 32,
     3: 48
   },
-  N = [{
+  v = [{
     x: 0,
     y: 11
   }, {
@@ -42,16 +42,16 @@ let b = n(742914),
     x: 0,
     y: 14
   }],
-  v = new Image;
-v.src = g.Z;
-let O = new Image;
-O.src = p.Z;
+  O = new Image;
+O.src = g.Z;
 let j = new Image;
+j.src = p.Z;
+let N = new Image;
 
-function Z(e) {
+function _(e) {
   let {
     isPaused: t
-  } = e, n = (0, s.useRef)(null), o = c.Mq[d.yN.SNEK], p = (0, u.eR)(b), m = (0, s.useRef)(N.map((e, t) => {
+  } = e, n = (0, s.useRef)(null), o = c.Mq[d.yN.SNEK], p = (0, u.eR)(b), m = (0, s.useRef)(v.map((e, t) => {
     let {
       x: n,
       y: r
@@ -60,9 +60,9 @@ function Z(e) {
       x: n,
       y: r,
       direction: 0,
-      type: 0 === t ? 0 : t === N.length - 1 ? 2 : 1
+      type: 0 === t ? 0 : t === v.length - 1 ? 2 : 1
     }
-  })), g = (0, s.useRef)([]), Z = (0, s.useCallback)(() => {
+  })), g = (0, s.useRef)([]), _ = (0, s.useCallback)(() => {
     for (let n = m.current.length - 1; n >= 0; n--)
       if (0 === n) {
         var e, t;
@@ -90,9 +90,9 @@ function Z(e) {
         m.current[n].direction = r, m.current[n].x = s.x, m.current[n].y = s.y
       } else m.current[n].direction = m.current[n - 1].direction, m.current[n].x = m.current[n - 1].x, m.current[n].y = m.current[n - 1].y;
     for (let e = 1; e < m.current.length - 1; e++) m.current[e].type = m.current[e - 1].direction !== m.current[e].direction ? 3 : 1
-  }, []), _ = (0, s.useCallback)(e => {
-    e.fillStyle = "#7f986a", e.fillRect(0, 0, 422.4, 278.4), e.drawImage(j, 0, 0, 422.4, 278.4)
   }, []), P = (0, s.useCallback)(e => {
+    e.fillStyle = "#7f986a", e.fillRect(0, 0, 422.4, 278.4), e.drawImage(N, 0, 0, 422.4, 278.4)
+  }, []), C = (0, s.useCallback)(e => {
     m.current.forEach((t, n) => {
       let r = function(e, t) {
         if (3 === e.type) switch (e.direction) {
@@ -107,11 +107,11 @@ function Z(e) {
         }
         return 2 === e.type && null != t ? t.direction : e.direction
       }(t, m.current[n - 1]);
-      e.drawImage(v, h[r], x[t.type], 16, 16, 16 * t.x + 19.2, 16 * t.y + 19.2, 16, 16)
+      e.drawImage(O, h[r], x[t.type], 16, 16, 16 * t.x + 19.2, 16 * t.y + 19.2, 16, 16)
     })
-  }, []), C = (0, s.useCallback)(e => {
+  }, []), Z = (0, s.useCallback)(e => {
     g.current.forEach(t => {
-      e.drawImage(O, 16 * t.x + 19.2, 16 * t.y + 19.2, 16, 16)
+      e.drawImage(j, 16 * t.x + 19.2, 16 * t.y + 19.2, 16, 16)
     })
   }, []), w = (0, s.useCallback)(() => {
     let e = {
@@ -124,8 +124,8 @@ function Z(e) {
   }, [p, o]), E = (0, s.useCallback)(() => {
     var e;
     let t = null == (e = n.current) ? void 0 : e.getContext("2d");
-    null != t && (Z(), w(), t.clearRect(0, 0, 422.4, 278.4), _(t), P(t), C(t))
-  }, [w, _, C, P, Z]), S = (0, s.useCallback)(() => {
+    null != t && (_(), w(), t.clearRect(0, 0, 422.4, 278.4), P(t), C(t), Z(t))
+  }, [w, P, Z, C, _]), S = (0, s.useCallback)(() => {
     if (g.current.length < 10 && .2 > Math.random()) {
       let e = function e(t) {
         let n = function() {
@@ -172,4 +172,4 @@ function Z(e) {
     height: 278.4
   })
 }
-j.src = m.Z
+N.src = m.Z

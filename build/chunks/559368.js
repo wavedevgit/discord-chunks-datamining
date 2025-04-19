@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => h
 });
 var r, i = n(877921),
-  s = n.n(i),
-  l = n(442837),
+  l = n.n(i),
+  s = n(442837),
   a = n(570140);
 
 function o(e, t, n) {
@@ -28,12 +28,12 @@ function m(e) {
   u = null;
   let r = {},
     i = {},
-    l = n[0],
+    s = n[0],
     a = n[1];
-  null != l && c.forEach(e => {
-    if (null != l[e]) {
-      let t = s()(e);
-      null != a && 0 !== a[e] && (r["".concat(t, "Change")] = (l[e] - a[e]) * 100 / a[e]), i[t] = l[e]
+  null != s && c.forEach(e => {
+    if (null != s[e]) {
+      let t = l()(e);
+      null != a && 0 !== a[e] && (r["".concat(t, "Change")] = (s[e] - a[e]) * 100 / a[e]), i[t] = s[e]
     }
   }), d[t] = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -55,7 +55,7 @@ function g(e) {
   } = e;
   u = t.code
 }
-class p extends(r = l.ZP.Store) {
+class p extends(r = s.ZP.Store) {
   getOverviewAnalytics(e) {
     return d[e]
   }

@@ -1,6 +1,6 @@
 /** Chunk was on 61526 **/
 n.d(t, {
-  Z: () => S
+  Z: () => N
 }), n(388685);
 var r = n(200651),
   a = n(192379),
@@ -24,10 +24,10 @@ var r = n(200651),
   _ = n(356659),
   w = n(710111),
   C = n(388032),
-  N = n(935032),
-  k = n(413135).Buffer;
+  k = n(935032),
+  P = n(413135).Buffer;
 
-function P(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function P(e) {
   return e
 }
 
-function O(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,11 +59,11 @@ function O(e, t) {
   }), e
 }
 
-function S(e) {
+function N(e) {
   let {
     clip: t,
     channelId: l,
-    clipName: S,
+    clipName: N,
     onSetClipName: E,
     onClose: R
   } = e, {
@@ -79,20 +79,20 @@ function S(e) {
     channelId: l,
     setExporting: e => B(null != e ? "share" : null)
   });
-  async function W() {
+  async function z() {
     var e;
     let a = m.Z.getChannel(l);
     B("export"), null == (e = L.current) || e.pause();
     try {
-      let e = await (0, g.rO)(t, O(P({}, T), {
+      let e = await (0, g.rO)(t, S(O({}, T), {
         applicationAudio: I,
         voiceAudio: F
       }));
       (0, s.ZDy)(async () => {
         let {
           default: l
-        } = await Promise.all([n.e("56035"), n.e("34057")]).then(n.bind(n, 758961)), i = (null == a ? void 0 : a.guild_id) != null ? p.Z.getGuild(a.guild_id) : null, o = null != i && (0, d.Gw)(i, f.Z, v.default).canCreateExpressions, s = null == S || "" === S ? (0, _.yl)(h.default.extractTimestamp(t.id)) : S, u = s.slice(0, w.Ek);
-        return t => (0, r.jsx)(l, O(P({}, t), {
+        } = await Promise.all([n.e("56035"), n.e("34057")]).then(n.bind(n, 758961)), i = (null == a ? void 0 : a.guild_id) != null ? p.Z.getGuild(a.guild_id) : null, o = null != i && (0, d.Gw)(i, f.Z, v.default).canCreateExpressions, s = null == N || "" === N ? (0, _.yl)(h.default.extractTimestamp(t.id)) : N, u = s.slice(0, w.Ek);
+        return t => (0, r.jsx)(l, S(O({}, t), {
           showGuildPicker: !0,
           guildId: o ? null == a ? void 0 : a.guild_id : void 0,
           sourceFile: {
@@ -107,28 +107,28 @@ function S(e) {
       B(null)
     }
   }
-  async function z() {
+  async function H() {
     var e;
     B("export"), null == (e = L.current) || e.pause();
     try {
-      let e = await (0, g.rO)(t, O(P({}, T), {
+      let e = await (0, g.rO)(t, S(O({}, T), {
           applicationAudio: I,
           voiceAudio: F
         })),
         n = await e.arrayBuffer();
-      await c.Z.fileManager.saveWithDialog(k.from(n), (0, _.EF)(t.id))
+      await c.Z.fileManager.saveWithDialog(P.from(n), (0, _.EF)(t.id))
     } catch (e) {} finally {
       B(null)
     }
   }
 
-  function H() {
+  function W() {
     var e;
     null == (e = L.current) || e.pause(), (0, s.ZDy)(async () => {
       let {
         default: e
       } = await n.e("15915").then(n.bind(n, 799677));
-      return n => (0, r.jsx)(e, O(P({
+      return n => (0, r.jsx)(e, S(O({
         clip: t
       }, n), {
         onClose: async () => {
@@ -141,53 +141,53 @@ function S(e) {
     })
   }
   return (0, r.jsxs)("div", {
-    className: N.clipForm,
+    className: k.clipForm,
     children: [(0, r.jsxs)("div", {
-      className: i()(N.clipFormSection, N.editSection),
+      className: i()(k.clipFormSection, k.editSection),
       children: [(0, r.jsx)(s.xJW, {
-        className: N.clipFormItem,
-        title: C.NW.string(C.t.SJKc5u),
+        className: k.clipFormItem,
+        title: C.intl.string(C.t.SJKc5u),
         children: (0, r.jsx)(s.oil, {
           onChange: e => {
             "" === e ? E(void 0) : E(e)
           },
-          value: S,
+          value: N,
           minLength: _.XH,
           maxLength: _.MG,
-          placeholder: C.NW.string(C.t.Cyxddn)
+          placeholder: C.intl.string(C.t.Cyxddn)
         })
       }), (0, r.jsxs)("div", {
-        className: N.clipFormSwitches,
+        className: k.clipFormSwitches,
         children: [(0, r.jsx)(s.j7V, {
           onChange: A,
           value: I,
           hideBorder: !0,
-          children: C.NW.string(C.t.GnQui4)
+          children: C.intl.string(C.t.GnQui4)
         }), (0, r.jsx)(s.j7V, {
           onChange: D,
           value: F,
           hideBorder: !0,
-          children: C.NW.string(C.t["5mVOCQ"])
+          children: C.intl.string(C.t["5mVOCQ"])
         })]
       })]
     }), (0, r.jsxs)("div", {
-      className: i()(N.clipFormSection, N.metadataSection),
+      className: i()(k.clipFormSection, k.metadataSection),
       children: [(0, r.jsx)(b.Z, {
         clip: t
       }), (0, r.jsx)(j.Z, {
-        className: N.userList,
+        className: k.userList,
         clip: t
       })]
     }), (0, r.jsxs)("div", {
-      className: N.clipFormFooter,
+      className: k.clipFormFooter,
       children: [(0, r.jsx)(s.zxk, {
         submitting: "share" === Z,
         disabled: null != Z && "share" !== Z,
         color: s.zxk.Colors.BRAND,
-        wrapperClassName: N.clipFormFooterButton,
+        wrapperClassName: k.clipFormFooterButton,
         onClick: () => M({
-          clip: O(P({}, t), {
-            name: S
+          clip: S(O({}, t), {
+            name: N
           }),
           cropData: T,
           applicationAudioEnabled: I,
@@ -196,22 +196,22 @@ function S(e) {
             o.Mr(_.Ut), o.Mr(_.Qr)
           }
         }),
-        children: C.NW.string(C.t.I8lglZ)
+        children: C.intl.string(C.t.I8lglZ)
       }), (0, r.jsx)(s.zxk, {
         size: s.zxk.Sizes.ICON,
-        className: N.clipFormFooterButton,
+        className: k.clipFormFooterButton,
         disabled: null != Z,
-        wrapperClassName: i()(N.clipFormFooterButton, {
-          [N.submittingWrapperFix]: null != Z
+        wrapperClassName: i()(k.clipFormFooterButton, {
+          [k.submittingWrapperFix]: null != Z
         }),
         color: s.zxk.Colors.PRIMARY,
         onClick: R,
-        children: C.NW.string(C.t.K344S0)
+        children: C.intl.string(C.t.K344S0)
       }), (0, r.jsx)(s.zxk, {
-        "aria-label": C.NW.string(C.t.PdRCRk),
+        "aria-label": C.intl.string(C.t.PdRCRk),
         size: s.zxk.Sizes.ICON,
-        wrapperClassName: i()(N.clipFormFooterButton, {
-          [N.submittingWrapperFix]: null != Z
+        wrapperClassName: i()(k.clipFormFooterButton, {
+          [k.submittingWrapperFix]: null != Z
         }),
         submitting: "export" === Z,
         disabled: null != Z && "export" !== Z,
@@ -221,10 +221,10 @@ function S(e) {
             let {
               default: e
             } = await n.e("32157").then(n.bind(n, 151090));
-            return t => (0, r.jsx)(e, O(P({}, t), {
-              onExportToSoundboard: W,
-              onExportToFile: z,
-              onDelete: H,
+            return t => (0, r.jsx)(e, S(O({}, t), {
+              onExportToSoundboard: z,
+              onExportToFile: H,
+              onDelete: W,
               channelId: l
             }))
           })

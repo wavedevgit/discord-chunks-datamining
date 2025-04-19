@@ -49,7 +49,7 @@ function T(e) {
   return e
 }
 
-function N(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -60,8 +60,8 @@ function N(e, t) {
   return n
 }
 
-function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
+function N(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -80,11 +80,11 @@ function w(e, t, n, r) {
         type: "GROUP", key: t, id: t, get title() {
           switch (t) {
             case O.Skl.ONLINE:
-              return I.NW.string(I.t.WbGtnJ);
+              return I.intl.string(I.t.WbGtnJ);
             case O.Skl.OFFLINE:
-              return I.NW.string(I.t.Vv0abG);
+              return I.intl.string(I.t.Vv0abG);
             default:
-              return I.NW.string(I.t["UQMV/P"])
+              return I.intl.string(I.t["UQMV/P"])
           }
         }, count: n, index: r
       };
@@ -104,7 +104,7 @@ function D(e, t, n) {
     o = r ? y.Z.getActivities() : b.Z.getActivities(n, e),
     s = _.Z.getStreamForUser(n, e),
     l = v.default.getUser(n);
-  return null == l ? null : A(T({
+  return null == l ? null : N(T({
     type: "MEMBER"
   }, g.ZP.getMember(e, n)), {
     user: l,
@@ -294,7 +294,7 @@ function Z(e) {
 }
 let H = [];
 
-function W() {
+function Y() {
   let e = _.Z.getAllApplicationStreams(),
     t = H.concat(e);
   H = e, t.forEach(e => {
@@ -302,7 +302,7 @@ function W() {
   })
 }
 
-function Y() {
+function W() {
   let e = p.default.getId();
   j.forEach(null, t => t.rebuildMember(e))
 }
@@ -312,7 +312,7 @@ function K() {
 }
 class z extends(r = c.ZP.Store) {
   initialize() {
-    this.waitFor(v.default, E.Z, h.Z, g.ZP, b.Z, y.Z, p.default, m.Z, _.Z, d.Z), this.syncWith([y.Z], Y), this.syncWith([_.Z], W)
+    this.waitFor(v.default, E.Z, h.Z, g.ZP, b.Z, y.Z, p.default, m.Z, _.Z, d.Z), this.syncWith([y.Z], W), this.syncWith([_.Z], Y)
   }
   getProps(e, t) {
     let n = j.get(e, L(t));

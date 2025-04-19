@@ -25,13 +25,13 @@ let h = function(e) {
     isEnabled: b,
     async scrollToStart() {},
     async scrollToEnd() {}
-  }), O = g !== d.pJs.ONLINE && g !== d.pJs.ALL, N = _ || f || O, y = i.useMemo(() => t.map((e, t) => 0 === e.length ? null : N ? (0, r.jsxs)("div", {
+  }), O = g !== d.pJs.ONLINE && g !== d.pJs.ALL, y = _ || f || O, I = i.useMemo(() => t.map((e, t) => 0 === e.length ? null : y ? (0, r.jsxs)("div", {
     children: [h(t), e.map(n)]
   }, t) : (0, r.jsxs)(s.W, {
     transitionAppear: !1,
     component: "div",
     children: [h(t), e.map(n)]
-  }, t)), [n, h, t, N]);
+  }, t)), [n, h, t, y]);
   return (0, r.jsx)(a.bG, {
     navigator: E,
     children: (0, r.jsx)(a.SJ, {
@@ -75,7 +75,7 @@ let h = function(e) {
           ref: i,
           className: p.peopleList
         }, l), n = n = {
-          children: [y, m]
+          children: [I, m]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

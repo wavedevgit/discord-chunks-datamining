@@ -33,16 +33,16 @@ var r = n(200651),
   B = n(744112),
   I = n(951904),
   T = n(139668),
-  N = n(223143),
-  L = n(298228),
+  L = n(223143),
+  N = n(298228),
   A = n(309956),
   R = n(193227),
   Z = n(426171),
   F = n(752053),
-  W = n(963102),
-  H = n(508498),
-  D = n(373113),
-  M = n(681435),
+  H = n(963102),
+  D = n(508498),
+  M = n(373113),
+  W = n(681435),
   V = n(81136),
   U = n(566564),
   G = n(531864),
@@ -117,7 +117,7 @@ let J = e => {
     let ex = (0, s.e7)([O.Z], () => O.Z.getLayers().includes(q.S9g.COLLECTIBLES_SHOP)),
       {
         onClose: eO
-      } = (0, H.Db)(),
+      } = (0, D.Db)(),
       ej = (0, s.e7)([j.default], () => j.default.getCurrentUser()),
       ey = S.ZP.canUseCollectibles(ej),
       {
@@ -127,18 +127,18 @@ let J = e => {
         fetchPurchasesError: eE,
         claimError: ew,
         refreshCategories: eB
-      } = (0, N.ZP)({
+      } = (0, L.ZP)({
         location: "CollectiblesShop.web"
       }),
       eI = null != (t = null != eP ? eP : eE) ? t : ew;
     (0, v.P)();
-    let eT = (0, L.O)(eS),
-      eN = l.useRef(null),
-      [eL, eA] = l.useState(!1);
+    let eT = (0, N.O)(eS),
+      eL = l.useRef(null),
+      [eN, eA] = l.useState(!1);
     (0, Z.Kp)({
       isFetchingCategories: ek,
       isLayer: ex,
-      initialItemCardRef: eN
+      initialItemCardRef: eL
     }), l.useEffect(() => {
       if (eo === z.f7.VISIBLE && en === ee) {
         var e;
@@ -159,7 +159,7 @@ let J = e => {
     }, [ey, et, ej]);
     let {
       dismissShopButtonDC: eR
-    } = (0, M.Z)();
+    } = (0, W.Z)();
     l.useEffect(() => {
       eR(), (0, m.un)(c.z.COLLECTIBLES_GIFTING_COACHMARK) || (0, m.EW)(c.z.COLLECTIBLES_GIFTING_COACHMARK, {
         dismissAction: Y.L.AUTO_DISMISS,
@@ -173,17 +173,17 @@ let J = e => {
       }, [eB]),
       {
         setCategoryRef: eF,
-        handleScrollToCategory: eW
+        handleScrollToCategory: eH
       } = (0, Z.xV)(el.current),
       {
-        reducedMotion: eH
+        reducedMotion: eD
       } = l.useContext(b.Sfi),
-      eD = l.useRef(null),
-      eM = l.useRef(null);
-    (0, b.Tbt)(eD), l.useEffect(() => {
+      eM = l.useRef(null),
+      eW = l.useRef(null);
+    (0, b.Tbt)(eM), l.useEffect(() => {
       if (!n) {
         var e;
-        null == (e = eM.current) || e.focus()
+        null == (e = eW.current) || e.focus()
       }
     }, [n]);
     let [eV, eU] = l.useState(1), {
@@ -194,16 +194,16 @@ let J = e => {
       let t = eT.findIndex(t => t.skuId === e);
       return -1 === t ? 1 : Math.floor(t / ez) + 1
     }, [eT, eG, ez]), eY = l.useCallback(async (e, t, r) => {
-      let l = r && !n && !eH.enabled;
+      let l = r && !n && !eD.enabled;
       if (em(e), eg(t), t === o.T.ORB) await es(z.AW.ORBS, r);
       else if (await es(z.AW.CATALOG, l), t) {
         if (eG && ez > 0) {
           let e = eq(t);
           e !== eV && eU(e)
         }
-        eW(t)
+        eH(t)
       }
-    }, [eW, n, eH.enabled, es, eG, ez, eq, eV, eU]), e$ = (0, B.b)("Collectibles Shop Button"), eK = l.useMemo(() => {
+    }, [eH, n, eD.enabled, es, eG, ez, eq, eV, eU]), e$ = (0, B.b)("Collectibles Shop Button"), eK = l.useMemo(() => {
       if (!eG) return eT;
       let e = (eV - 1) * ez;
       return eT.slice(e, e + ez)
@@ -229,7 +229,7 @@ let J = e => {
           shouldAddEventListener: n && !ex,
           children: [(0, r.jsx)("div", {
             className: X.shop,
-            ref: n ? eD : eM,
+            ref: n ? eM : eW,
             tabIndex: -1,
             children: (0, r.jsx)(b.Den, {
               className: X.shopScroll,
@@ -246,7 +246,7 @@ let J = e => {
                   [X.in]: eo === z.f7.IN,
                   [X.out]: eo === z.f7.OUT
                 }),
-                children: [(0, r.jsx)(W.I, {
+                children: [(0, r.jsx)(H.I, {
                   isFullScreen: n,
                   isLayer: ex,
                   onClose: eO,
@@ -292,9 +292,9 @@ let J = e => {
                             sortedCategories: eK,
                             setCategoryRef: eF,
                             isPremiumUser: ey,
-                            initialItemCardRef: eN,
+                            initialItemCardRef: eL,
                             setIsGiftEasterEggEnabled: eA,
-                            isGiftEasterEggEnabled: eL,
+                            isGiftEasterEggEnabled: eN,
                             isFullScreen: n
                           }), eG && eT.length > ez && (0, r.jsx)("div", {
                             className: X.paginationContainer,
@@ -316,7 +316,7 @@ let J = e => {
                 }(ei)]
               })
             })
-          }), eL && (0, r.jsx)(D.Z, {}), J({
+          }), eN && (0, r.jsx)(M.Z, {}), J({
             isFullScreen: n,
             tab: a
           }) && (0, r.jsxs)(r.Fragment, {

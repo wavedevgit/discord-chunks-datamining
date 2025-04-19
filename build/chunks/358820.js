@@ -4,8 +4,8 @@ n.d(t, {
   fz: () => T,
   ge: () => C,
   r5: () => R,
-  rk: () => N,
-  wV: () => A
+  rk: () => A,
+  wV: () => N
 }), n(415506);
 var r = n(512722),
   i = n.n(r),
@@ -120,7 +120,7 @@ function T(e) {
     }))
   }))
 }
-async function N(e) {
+async function A(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
   if (!m.Z.isNativeModuleLoaded()) return void I.warn("Voice Filter apply ignored, module not loaded.");
   let n = performance.now();
@@ -142,7 +142,7 @@ async function N(e) {
     })
   }
 }
-async function A() {
+async function N() {
   if (!m.Z.isNativeModuleLoaded()) return void I.info("Voice Filter catalog refresh ignored, module not loaded.");
   if (S) return;
   let e = l.default.getToken(),
@@ -194,7 +194,7 @@ async function R() {
       }), await s.Z.dispatch({
         type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",
         state: g.O.LOADED
-      }), await A();
+      }), await N();
       let n = c.Z.getMostRecentlyRequestedVoiceFilter();
       if (null != n) {
         var e;

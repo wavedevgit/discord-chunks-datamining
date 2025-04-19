@@ -16,7 +16,7 @@ function o(e) {
   return null == o ? null : (0, r.jsx)("img", {
     src: o.iconSource,
     width: n,
-    alt: a.NW.string(a.t.N4YDam),
+    alt: a.intl.string(a.t.N4YDam),
     draggable: !1
   })
 }

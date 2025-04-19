@@ -2,9 +2,9 @@
 n.d(t, {
   Z: () => a
 });
-var r = n(200651);
+var i = n(200651);
 n(192379);
-var i = n(481060),
+var r = n(481060),
   o = n(153867),
   l = n(468026),
   s = n(740492),
@@ -17,33 +17,33 @@ function a(e) {
         disableEmbeddedActivityPopOutAlert: !0
       }), t(), e()
     };
-  s.ZP.disableEmbeddedActivityPopOutAlert ? e() : (0, i.h7j)(i => (0, r.jsx)(l.default, function(e) {
+  s.ZP.disableEmbeddedActivityPopOutAlert ? e() : (0, r.h7j)(r => (0, i.jsx)(l.default, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
-        r = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        i = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), r.forEach(function(t) {
-        var r;
-        r = n[t], t in e ? Object.defineProperty(e, t, {
-          value: r,
+      }))), i.forEach(function(t) {
+        var i;
+        i = n[t], t in e ? Object.defineProperty(e, t, {
+          value: i,
           enumerable: !0,
           configurable: !0,
           writable: !0
-        }) : e[t] = r
+        }) : e[t] = i
       })
     }
     return e
   }({
-    confirmText: c.NW.string(c.t.efSOLC),
-    secondaryConfirmText: c.NW.string(c.t["JdIQ/f"]),
-    title: c.NW.string(c.t.pVr7Cg),
-    cancelText: c.NW.string(c.t.EwoEOT),
+    confirmText: c.intl.string(c.t.efSOLC),
+    secondaryConfirmText: c.intl.string(c.t["JdIQ/f"]),
+    title: c.intl.string(c.t.pVr7Cg),
+    cancelText: c.intl.string(c.t.EwoEOT),
     onConfirm: () => {
-      i.onClose(), e()
+      r.onClose(), e()
     },
     onCancel: t,
-    onConfirmSecondary: () => n(i.onClose),
-    body: c.NW.string(c.t.ugSbNT)
-  }, i)), {}, i.u1M)
+    onConfirmSecondary: () => n(r.onClose),
+    body: c.intl.string(c.t.ugSbNT)
+  }, r)), {}, r.u1M)
 }

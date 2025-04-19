@@ -27,8 +27,8 @@ function b(e) {
     transitionState: a,
     guildProductListingId: b,
     analyticsLocation: v,
-    guildId: N,
-    onClose: Z
+    guildId: Z,
+    onClose: N
   } = e, C = (0, l.e7)([f.Z], () => f.Z.getGuildProduct(b));
   i()(null != C, "guildProductListing cannot be null"), (0, d.Z)({
     type: s.ImpressionTypes.MODAL,
@@ -41,7 +41,7 @@ function b(e) {
   });
   let y = null != (t = (0, h.C)(C)) ? t : "",
     I = (0, h.k)(C),
-    O = (0, l.e7)([x.Z], () => x.Z.getGuild(N));
+    O = (0, l.e7)([x.Z], () => x.Z.getGuild(Z));
   return (0, r.jsxs)(o.Y0X, {
     className: g.modal,
     size: o.CgR.MEDIUM,
@@ -56,7 +56,7 @@ function b(e) {
         alt: ""
       }), (0, r.jsx)(o.olH, {
         className: g.closeButton,
-        onClick: Z,
+        onClick: N,
         withCircleBackground: !0
       })]
     }), (0, r.jsx)(o.hzk, {
@@ -71,7 +71,7 @@ function b(e) {
         }), (0, r.jsx)(o.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: p.NW.format(p.t.xImSen, {
+          children: p.intl.format(p.t.xImSen, {
             productType: y,
             personName: null != (n = null == O ? void 0 : O.name) ? n : ""
           })
@@ -88,7 +88,7 @@ function b(e) {
         }), (0, r.jsx)(o.X6q, {
           variant: "heading-lg/medium",
           color: "header-primary",
-          children: p.NW.string(p.t.TNnDJi)
+          children: p.intl.string(p.t.TNnDJi)
         }), (0, r.jsx)(o.LZC, {
           size: 12
         }), (0, r.jsx)(u.Z, {
@@ -101,7 +101,7 @@ function b(e) {
     }), (0, r.jsxs)(o.mzw, {
       className: g.footer,
       children: [(0, r.jsx)(_.Z, {
-        guildId: N,
+        guildId: Z,
         guildProductListingId: b,
         sourceAnalyticsLocations: c.Z.GUILD_PRODUCT_INFO_MODAL
       }), (0, r.jsx)(o.Text, {

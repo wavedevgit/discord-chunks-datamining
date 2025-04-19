@@ -163,8 +163,8 @@ function O(e, t, n, a) {
       onResize: I = null,
       onContentResize: S = null,
       dir: T = "ltr",
-      sections: N,
-      sectionHeight: A,
+      sections: A,
+      sectionHeight: N,
       rowHeight: C,
       footerHeight: R = 0,
       sidebarHeight: P,
@@ -182,8 +182,8 @@ function O(e, t, n, a) {
       fade: V = !1,
       customTheme: Z = !1,
       chunkSize: H,
-      style: W,
-      innerId: Y,
+      style: Y,
+      innerId: W,
       innerRole: K,
       innerAriaLabel: z,
       innerAriaMultiselectable: q,
@@ -215,8 +215,8 @@ function O(e, t, n, a) {
       forceUpdateOnChunkChange: ef,
       anchor: e_
     } = (0, u.aU)({
-      sections: N,
-      sectionHeight: A,
+      sections: A,
+      sectionHeight: N,
       rowHeight: C,
       footerHeight: R,
       sidebarHeight: P,
@@ -256,7 +256,7 @@ function O(e, t, n, a) {
       listenerMap: l
     });
     let eb = E(ec),
-      ey = b(N);
+      ey = b(A);
     i.useImperativeHandle(p, () => _({
       getScrollerNode: () => ei.current,
       getScrollerState: eo,
@@ -286,10 +286,10 @@ function O(e, t, n, a) {
         [n]: Z,
         [d.scrolling]: en
       }),
-      style: (0, u.uT)(W)
+      style: (0, u.uT)(Y)
     }, $), {
       children: [i.useMemo(() => (0, r.jsx)(J, {
-        id: Y,
+        id: W,
         role: K,
         "aria-label": z,
         "aria-multiselectable": q,
@@ -312,7 +312,7 @@ function O(e, t, n, a) {
             spacerTop: es
           })
         })
-      }), [J, Y, K, z, q, Q, el, X, ec, k, j, D, L, x, U, es]), i.useMemo(() => v({
+      }), [J, W, K, z, q, Q, el, X, ec, k, j, D, L, x, U, es]), i.useMemo(() => v({
         isSidebarVisible: eu,
         renderSidebar: M,
         sidebarHeight: P,

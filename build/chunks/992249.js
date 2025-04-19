@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  s = n(120356),
-  l = n.n(s),
+  l = n(120356),
+  s = n.n(l),
   a = n(481060),
   o = n(717251),
   c = n(313795);
@@ -15,7 +15,7 @@ function d(e) {
   var {
     action: t,
     children: n,
-    className: s,
+    className: l,
     onExpandChange: d,
     loading: u
   } = e, m = function(e, t) {
@@ -23,13 +23,13 @@ function d(e) {
     var n, r, i = function(e, t) {
       if (null == e) return {};
       var n, r, i = {},
-        s = Object.keys(e);
-      for (r = 0; r < s.length; r++) n = s[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        l = Object.keys(e);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var s = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var l = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
   }(e, ["action", "children", "className", "onExpandChange", "loading"]);
@@ -37,7 +37,7 @@ function d(e) {
     p(e), null == d || d(e)
   };
   return (0, r.jsx)(a.zF9, {
-    className: l()(c.groupContainer, s),
+    className: s()(c.groupContainer, l),
     isExpanded: g,
     collapsibleContent: (0, r.jsxs)("div", {
       className: c.groupCollapsedContainer,
@@ -48,7 +48,7 @@ function d(e) {
     children: e => {
       var n, i;
       let {
-        onClick: s
+        onClick: l
       } = e;
       return (0, r.jsx)(o.Z, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -73,7 +73,7 @@ function d(e) {
           type: a.$jN.Type.PULSING_ELLIPSIS
         }) : t,
         onClick: e => {
-          h(!g), s(e)
+          h(!g), l(e)
         }
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);

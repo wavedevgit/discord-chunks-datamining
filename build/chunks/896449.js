@@ -71,12 +71,12 @@ function y(e) {
     guildId: h,
     channelId: null == g ? void 0 : g.id,
     onAction: S
-  }), N = (0, s.Z)({
+  }), A = (0, s.Z)({
     id: n.id,
-    label: _.NW.string(_.t["/AXYnJ"])
-  }), A = "application_id" in y.extra ? y.extra.application_id : null, C = (0, s.Z)({
-    id: A,
-    label: _.NW.string(_.t["FfCL+/"])
+    label: _.intl.string(_.t["/AXYnJ"])
+  }), N = "application_id" in y.extra ? y.extra.application_id : null, C = (0, s.Z)({
+    id: N,
+    label: _.intl.string(_.t["FfCL+/"])
   }), R = (0, d.dX)(y), P = (0, c.Z)({
     location: "ContentPopoutContextMenu",
     applicationId: R && !0 !== O ? null == (t = y.extra) ? void 0 : t.application_id : void 0,
@@ -98,25 +98,25 @@ function y(e) {
         onClose: () => {
           (0, o.Zy)(), t()
         },
-        "aria-label": _.NW.string(_.t.liqwPD),
+        "aria-label": _.intl.string(_.t.liqwPD),
         onSelect: v,
         children: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsxs)(a.kSQ, {
             children: [T, null != P && (0, r.jsx)(a.sNh, {
               id: "game-profile",
-              label: _.NW.string(_.t.f7aVGh),
+              label: _.intl.string(_.t.f7aVGh),
               action: e => {
                 P(e), null == S || S()
               }
             })]
           }), (0, r.jsxs)(a.kSQ, {
-            children: [N, C]
+            children: [A, C]
           })]
         })
       })
     },
     children: e => (0, r.jsx)(a.ua7, {
-      text: _.NW.string(_.t.UKOtz8),
+      text: _.intl.string(_.t.UKOtz8),
       children: t => (0, r.jsx)(a.P3F, E(m(E(m({
         innerRef: I
       }, t), {

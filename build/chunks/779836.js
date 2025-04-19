@@ -57,7 +57,7 @@ function _(e) {
         children: [(0, r.jsx)(s.Text, {
           variant: "text-xs/medium",
           color: "interactive-normal",
-          children: g.NW.string(g.t["5ZsiEx"])
+          children: g.intl.string(g.t["5ZsiEx"])
         }), (0, r.jsx)(s.P3F, {
           onClick: e => l(e, f.aZ.GOOD),
           children: (0, r.jsx)(d.Z, {

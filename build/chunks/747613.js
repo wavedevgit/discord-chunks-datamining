@@ -47,7 +47,7 @@ function T(e) {
   return e
 }
 
-function N(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,8 +58,8 @@ function N(e, t) {
   return n
 }
 
-function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
+function N(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -91,17 +91,17 @@ let P = 20,
 function k(e) {
   switch (d.Z.convert.toCodePoint(e)) {
     case "1f3fb":
-      return O.NW.string(O.t.BVK5b2);
+      return O.intl.string(O.t.BVK5b2);
     case "1f3fc":
-      return O.NW.string(O.t.xJWOKy);
+      return O.intl.string(O.t.xJWOKy);
     case "1f3fd":
-      return O.NW.string(O.t["MB+T5u"]);
+      return O.intl.string(O.t["MB+T5u"]);
     case "1f3fe":
-      return O.NW.string(O.t.MODud3);
+      return O.intl.string(O.t.MODud3);
     case "1f3ff":
-      return O.NW.string(O.t["0uzqsb"]);
+      return O.intl.string(O.t["0uzqsb"]);
     default:
-      return O.NW.string(O.t.bGN1o6)
+      return O.intl.string(O.t.bGN1o6)
   }
 }
 let j = e => {
@@ -118,7 +118,7 @@ let j = e => {
       },
       delay: a
     }, "animate-always");
-    return (0, r.jsx)(_.P3F, A(T({}, s), {
+    return (0, r.jsx)(_.P3F, N(T({}, s), {
       role: "option",
       "aria-selected": 0 === o,
       onClick: () => i(n),
@@ -158,7 +158,7 @@ let j = e => {
           var {
             ref: n
           } = e, i = C(e, ["ref"]);
-          return (0, r.jsx)(c.animated.div, A(T({}, i), {
+          return (0, r.jsx)(c.animated.div, N(T({}, i), {
             id: t,
             ref: n,
             className: o()(I.diversitySelectorOptions, {
@@ -199,7 +199,7 @@ let j = e => {
         innerRef: d,
         className: I.diversitySelectorButton,
         onClick: f,
-        "aria-label": O.NW.string(O.t.pAVHxc),
+        "aria-label": O.intl.string(O.t.pAVHxc),
         "aria-haspopup": !0,
         "aria-expanded": l,
         "aria-controls": D,

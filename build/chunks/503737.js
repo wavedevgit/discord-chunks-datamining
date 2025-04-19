@@ -49,11 +49,11 @@ class p extends s.Z {
       context: s
     } = e, p = s === a.IlC.POPOUT ? i.u1M : i.z1l;
     l ? (0, i.h7j)(e => (0, r.jsx)(o.default, u({
-      title: c.NW.formatToPlainString(c.t["2tN7io"], {
+      title: c.intl.formatToPlainString(c.t["2tN7io"], {
         name: t.name
       }),
-      body: c.NW.string(c.t.MAxtkp),
-      confirmText: c.NW.string(c.t.BddRzc)
+      body: c.intl.string(c.t.MAxtkp),
+      confirmText: c.intl.string(c.t.BddRzc)
     }, e)), {
       onCloseCallback: h,
       modalKey: d

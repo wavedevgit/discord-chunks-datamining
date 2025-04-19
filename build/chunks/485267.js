@@ -6,8 +6,8 @@ r.d(t, {
 });
 var n = r(570140);
 r(100527), r(592125);
-var a = r(944486),
-  i = r(914010);
+var i = r(944486),
+  a = r(914010);
 r(594174);
 var l = r(626135),
   s = r(71585);
@@ -17,8 +17,8 @@ let c = () => {
   n.Z.dispatch({
     type: "CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN"
   }), l.default.track(o.rMx.MEMBERLIST_CONTENT_FEED_HIDDEN, {
-    channel_id: a.Z.getChannelId(),
-    guild_id: i.Z.getGuildId(),
+    channel_id: i.Z.getChannelId(),
+    guild_id: a.Z.getGuildId(),
     hidden: s.Z.hidden
   })
 };

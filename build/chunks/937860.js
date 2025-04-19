@@ -26,7 +26,7 @@ let i = t => {
     }
     return t
   }({}, t), n = n = {
-    "aria-label": c.NW.string(c.t.cpT0Cg),
+    "aria-label": c.intl.string(c.t.cpT0Cg),
     look: r.zxk.Looks.BLANK,
     size: r.zxk.Sizes.NONE,
     wrapperClassName: a.closeButton,

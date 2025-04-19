@@ -6,8 +6,8 @@ var n = r(200651);
 r(192379);
 var o = r(481060),
   i = r(923298),
-  c = r(63063),
-  l = r(981631),
+  l = r(63063),
+  c = r(981631),
   a = r(388032);
 
 function u(e) {
@@ -52,7 +52,7 @@ function u(e) {
     sku_id: u.id,
     sku_name: u.name,
     guild_id: u.guild_id,
-    header: a.NW.format(a.t.avKMZm, {
+    header: a.intl.format(a.t.avKMZm, {
       listingName: u.name
     }),
     transitionState: s,
@@ -60,10 +60,10 @@ function u(e) {
   }, b), r = r = {
     children: (0, n.jsx)(o.Text, {
       variant: "text-md/normal",
-      children: a.NW.format(a.t.jkvpmp, {
+      children: a.intl.format(a.t.jkvpmp, {
         listingName: u.name,
-        monetizationTermsUrl: c.Z.getArticleURL(l.BhN.CREATOR_TERMS),
-        communityGuidelinesUrl: l.EYA.GUIDELINES
+        monetizationTermsUrl: l.Z.getArticleURL(c.BhN.CREATOR_TERMS),
+        communityGuidelinesUrl: c.EYA.GUIDELINES
       })
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

@@ -1,5 +1,5 @@
 /** Chunk was on 70686 **/
-t.d(n, {
+t.d(e, {
   Z: () => u
 });
 var i = t(442837),
@@ -8,10 +8,10 @@ var i = t(442837),
 
 function u() {
   return (0, i.e7)([l.Z, r.Z], () => {
-    let e = l.Z.getVoiceChannelId();
-    if (null != e) {
-      let n = r.Z.getChannel(e);
-      if (null == n ? void 0 : n.isGuildStageVoice()) return n
+    let n = l.Z.getVoiceChannelId();
+    if (null != n) {
+      let e = r.Z.getChannel(n);
+      if (null == e ? void 0 : e.isGuildStageVoice()) return e
     }
     return null
   })

@@ -56,7 +56,7 @@ function f(e) {
             })
           })]
         }), (0, r.jsx)(c.jz, {
-          children: u.NW.string(u.t.Rzvnio)
+          children: u.intl.string(u.t.Rzvnio)
         })]
       })]
     })]

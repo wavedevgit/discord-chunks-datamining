@@ -52,12 +52,12 @@ function T(e) {
   return m.values(f(e))
 }
 
-function N(e) {
+function A(e) {
   var t;
-  for (let n of (m.set(e.id, e), S.set(e.guild_id, e.application_id), null != (t = e.subscription_listings) ? t : [])) A(n)
+  for (let n of (m.set(e.id, e), S.set(e.guild_id, e.application_id), null != (t = e.subscription_listings) ? t : [])) N(n)
 }
 
-function A(e) {
+function N(e) {
   g.set(e.id, e)
 }
 
@@ -87,7 +87,7 @@ function w(e) {
     settings: r,
     subscriptionTrials: i
   } = e;
-  for (let e of (E[t] = 2, n)) N(e);
+  for (let e of (E[t] = 2, n)) A(e);
   for (let e of (y[t] = r, i)) v[e.id] = e
 }
 
@@ -102,7 +102,7 @@ function L(e) {
   let {
     listing: t
   } = e;
-  N(t)
+  A(t)
 }
 
 function x(e) {
@@ -123,7 +123,7 @@ function k(e) {
   let {
     groupListing: t
   } = e;
-  N(t)
+  A(t)
 }
 
 function j(e) {
@@ -131,14 +131,14 @@ function j(e) {
     listing: t,
     groupListing: n
   } = e;
-  A(t), N(n)
+  N(t), A(n)
 }
 
 function U(e) {
   let {
     listing: t
   } = e;
-  A(t)
+  N(t)
 }
 
 function G(e) {
@@ -183,8 +183,8 @@ function H(e) {
   } = e;
   I[t] = 0
 }
-let W = [];
-class Y extends(r = o.ZP.Store) {
+let Y = [];
+class W extends(r = o.ZP.Store) {
   getSubscriptionGroupListingsForGuildFetchState(e) {
     var t;
     return null != (t = E[e]) ? t : 0
@@ -208,7 +208,7 @@ class Y extends(r = o.ZP.Store) {
   getSubscriptionListingsForGuild(e) {
     var t;
     let n = null == (t = this.getSubscriptionGroupListingsForGuild(e)[0]) ? void 0 : t.application_id;
-    return null != n ? g.values(p(n)) : W
+    return null != n ? g.values(p(n)) : Y
   }
   getSubscriptionListingForPlan(e) {
     let t = g.values(h(e));
@@ -231,8 +231,8 @@ class Y extends(r = o.ZP.Store) {
     return S.get(e)
   }
 }
-u(Y, "displayName", "GuildRoleSubscriptionsStore");
-let K = new Y(l.Z, {
+u(W, "displayName", "GuildRoleSubscriptionsStore");
+let K = new W(l.Z, {
   CONNECTION_OPEN: C,
   GUILD_ROLE_SUBSCRIPTIONS_UPDATE_SUBSCRIPTIONS_SETTINGS: R,
   GUILD_ROLE_SUBSCRIPTIONS_FETCH_LISTINGS: P,

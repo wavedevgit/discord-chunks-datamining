@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   ZP: () => ee,
-  yv: () => W
+  yv: () => Y
 }), n(539854), n(388685), n(415506);
 var r, i, a = n(200651),
   o = n(192379),
@@ -25,8 +25,8 @@ var r, i, a = n(200651),
   I = n(36703),
   S = n(228488),
   T = n(540026),
-  N = n(528472),
-  A = n(455813),
+  A = n(528472),
+  N = n(455813),
   C = n(283756),
   R = n(793148),
   P = n(981631),
@@ -90,13 +90,13 @@ let G = 3e3,
     backgroundColor: "black"
   };
 
-function W(e) {
+function Y(e) {
   let t = 0 | e,
     n = t % 60;
   return "".concat((t - n) / 60, ":").concat(String(n).padStart(2, "0"))
 }
 
-function Y(e) {
+function W(e) {
   let t = [],
     {
       duration: n
@@ -115,7 +115,7 @@ let K = e => {
   let {
     current: t,
     duration: n
-  } = e, r = null != t ? W(t) : F, i = null != n ? W(n) : F;
+  } = e, r = null != t ? Y(t) : F, i = null != n ? Y(n) : F;
   return r = r.padStart(i.length, "0"), (0, a.jsxs)("div", {
     className: L.durationTimeWrapper,
     children: [(0, a.jsx)("span", {
@@ -183,7 +183,7 @@ class z extends(r = o.Component) {
       className: L.videoButton,
       onClick: r,
       tabIndex: o ? -1 : 0,
-      "aria-label": D.NW.string(D.t.ZcgDJS),
+      "aria-label": D.intl.string(D.t.ZcgDJS),
       children: (0, a.jsx)(_.fpf, {
         size: "xs",
         color: "currentColor",
@@ -193,7 +193,7 @@ class z extends(r = o.Component) {
       className: L.videoButton,
       onClick: i,
       tabIndex: o ? -1 : 0,
-      "aria-label": D.NW.string(D.t.hsvh0t),
+      "aria-label": D.intl.string(D.t.hsvh0t),
       children: (0, a.jsx)(y.Z, {
         className: L.controlIcon
       }, "replay")
@@ -201,7 +201,7 @@ class z extends(r = o.Component) {
       className: L.videoButton,
       onClick: i,
       tabIndex: o ? -1 : 0,
-      "aria-label": D.NW.string(D.t.RscU7O),
+      "aria-label": D.intl.string(D.t.RscU7O),
       children: (0, a.jsx)(_.o1U, {
         size: "xs",
         color: "currentColor",
@@ -540,7 +540,7 @@ class J {
       location: "media_player"
     }).enabled, (0, g.x)({
       location: "media_player"
-    }).enabled && N.Z.getInstance().getCapabilities()
+    }).enabled && A.Z.getInstance().getCapabilities()
   }
 }
 class $ extends(i = o.PureComponent) {
@@ -765,14 +765,14 @@ class $ extends(i = o.PureComponent) {
       width: m ? window.screen.width : y,
       disabled: !r,
       children: t === Z.VIDEO ? (0, a.jsx)(E.Z, {
-        "aria-label": D.NW.string(D.t["2nM3Pj"]),
+        "aria-label": D.intl.string(D.t["2nM3Pj"]),
         className: L.videoButton,
         iconClassName: L.controlIcon,
         guestWindow: window,
         onClick: this.toggleFullscreen,
         node: (0, S.fn)(null == e ? void 0 : e.parentNode, e)
       }) : null
-    }) : (0, a.jsx)(A.Z, {
+    }) : (0, a.jsx)(N.Z, {
       onPlay: this.handleVideoClick,
       inactive: !r
     })
@@ -977,7 +977,7 @@ class $ extends(i = o.PureComponent) {
         buffers: []
       });
       this.setState({
-        buffers: Y(e)
+        buffers: W(e)
       })
     }, 400)), M(this, "handleEnded", e => {
       let {

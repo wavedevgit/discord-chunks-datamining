@@ -5,15 +5,15 @@ n.d(t, {
 }), n(388685), n(781311);
 var r = n(200651),
   i = n(192379),
-  s = n(120356),
-  l = n.n(s),
+  l = n(120356),
+  s = n.n(l),
   a = n(481060),
   o = n(981631),
   c = n(388032),
   d = n(306447);
 let u = e => {
   var t, n, {
-      className: s,
+      className: l,
       tags: u,
       value: m,
       onRemoveTag: g,
@@ -24,22 +24,22 @@ let u = e => {
       disabled: b,
       placeholder: j
     } = e,
-    N = function(e, t) {
+    _ = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
         var n, r, i = {},
-          s = Object.keys(e);
-        for (r = 0; r < s.length; r++) n = s[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+          l = Object.keys(e);
+        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var s = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        var l = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
     }(e, ["className", "tags", "value", "onRemoveTag", "onAddTag", "onAddTagError", "maxTaxLength", "maxTags", "disabled", "placeholder"]);
-  let [_, v] = i.useState(null != m ? m : ""), O = u.map((e, t) => (0, r.jsxs)("span", {
+  let [v, O] = i.useState(null != m ? m : ""), C = u.map((e, t) => (0, r.jsxs)("span", {
     className: d.tag,
     children: [e, !b && (0, r.jsx)(a.P3F, {
       className: d.closeWrapper,
@@ -50,31 +50,31 @@ let u = e => {
         className: d.close
       })
     })]
-  }, t)), C = i.useCallback(() => {
-    let e = _.trim();
+  }, t)), y = i.useCallback(() => {
+    let e = v.trim();
     if (0 !== e.length) {
       if (null != x && u.length >= x) {
-        null == h || h(c.NW.string(c.t.Xx7XeH));
+        null == h || h(c.intl.string(c.t.Xx7XeH));
         return
       }
-      p(e), v("")
+      p(e), O("")
     }
-  }, [_, x, p, h, u.length]), y = i.useCallback(e => {
+  }, [v, x, p, h, u.length]), N = i.useCallback(e => {
     switch (e.keyCode) {
       case o.yXg.BACKSPACE:
-        0 === _.length && u.length > 0 && (e.preventDefault(), e.stopPropagation(), g(u.length - 1));
+        0 === v.length && u.length > 0 && (e.preventDefault(), e.stopPropagation(), g(u.length - 1));
         break;
       case o.yXg.ENTER:
       case o.yXg.TAB:
       case o.yXg.COMMA:
-        e.preventDefault(), e.stopPropagation(), C()
+        e.preventDefault(), e.stopPropagation(), y()
     }
-  }, [C, _.length, g, u.length]);
+  }, [y, v.length, g, u.length]);
   return (0, r.jsxs)("div", {
-    className: l()(s, d.inputWrapper, {
+    className: s()(l, d.inputWrapper, {
       [d.disabled]: b
     }),
-    children: [O, (0, r.jsx)(a.oil, (t = function(e) {
+    children: [C, (0, r.jsx)(a.oil, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -94,13 +94,13 @@ let u = e => {
     }({
       className: d.inputOuter,
       inputClassName: d.inputInner
-    }, N), n = n = {
-      value: _,
-      onKeyDown: y,
-      onChange: v,
+    }, _), n = n = {
+      value: v,
+      onKeyDown: N,
+      onChange: O,
       maxLength: f,
       disabled: b,
-      onBlur: C,
+      onBlur: y,
       placeholder: j
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);

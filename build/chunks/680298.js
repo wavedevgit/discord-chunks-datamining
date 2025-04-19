@@ -62,7 +62,7 @@ function p(e) {
         var n, i;
         return (0, r.jsx)(e, (n = u({}, t), i = i = {
           id: b.id,
-          label: c.NW.string(c.t.oJ1Mu7)
+          label: c.intl.string(c.t.oJ1Mu7)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -96,7 +96,7 @@ function p(e) {
         className: d.statusLine,
         children: [(0, r.jsx)(l.Text, {
           variant: "text-md/normal",
-          children: c.NW.string(c.t.jH4B9P)
+          children: c.intl.string(c.t.jH4B9P)
         }), (0, r.jsx)(l.d3s, {
           size: "sm",
           color: "currentColor",

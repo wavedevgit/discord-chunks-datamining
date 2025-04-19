@@ -30,9 +30,9 @@ let _ = e => {
       className: a()((0, s.wj)(_) ? f.badgeDark : f.badgeLight, i)
     })
   }
-  return (0, o.EQ)([n, p > 1]).with(["card", !0], () => null).with(["banner", !0], () => h(d.NW.formatToPlainString(d.t["8gsP5O"], {
+  return (0, o.EQ)([n, p > 1]).with(["card", !0], () => null).with(["banner", !0], () => h(d.intl.formatToPlainString(d.t["8gsP5O"], {
     days: p
-  }))).with(["modal", !0], () => h(d.NW.formatToPlainString(d.t.Io7ozs, {
+  }))).with(["modal", !0], () => h(d.intl.formatToPlainString(d.t.Io7ozs, {
     days: p
-  }))).otherwise(() => h(d.NW.string(d.t.Bc13HB)))
+  }))).otherwise(() => h(d.intl.string(d.t.Bc13HB)))
 }

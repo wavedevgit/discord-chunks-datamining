@@ -27,9 +27,9 @@ function f(e) {
   } = e, E = (0, i.e7)([l.Z], () => l.Z.getChannel(t.channelId)), b = (0, s.ZP)(E);
   if (h && m) return null;
   let y = (null == n ? void 0 : n.name) === "" ? null : null == n ? void 0 : n.name,
-    v = null != y ? d.NW.format(d.t["0wJXSk"], {
+    v = null != y ? d.intl.format(d.t["0wJXSk"], {
       name: y
-    }) : d.NW.string(d.t.eXan7O);
+    }) : d.intl.string(d.t.eXan7O);
   return (0, r.jsxs)(r.Fragment, {
     children: [!h && (0, r.jsx)(c.Z, {
       icon: a.ARS,

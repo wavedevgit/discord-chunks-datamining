@@ -1,10 +1,10 @@
 /** Chunk was on 89650 **/
 n.d(e, {
-  q: () => i
+  q: () => s
 });
-var r = n(442837),
-  s = n(375954);
-let i = t => (0, r.e7)([s.Z], () => {
+var i = n(442837),
+  r = n(375954);
+let s = t => (0, i.e7)([r.Z], () => {
   var e;
-  return null != (e = s.Z.getLastNonCurrentUserMessage(t)) ? e : s.Z.getLastMessage(t)
+  return null != (e = r.Z.getLastNonCurrentUserMessage(t)) ? e : r.Z.getLastMessage(t)
 })

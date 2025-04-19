@@ -19,7 +19,7 @@ function u(e) {
   }), [e]);
   return (0, r.jsx)(l.S8, {
     id: "call-grid-view",
-    label: c.NW.string(c.t["3jrUBg"]),
+    label: c.intl.string(c.t["3jrUBg"]),
     checked: null == t,
     action: () => {
       null != t ? o.Z.selectParticipant(e, null) : o.Z.selectParticipant(e, s.dF.AUTO)

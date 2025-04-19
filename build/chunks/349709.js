@@ -1,6 +1,6 @@
 /** Chunk was on 93626 **/
 l.d(t, {
-  Z: () => b
+  Z: () => y
 });
 var n = l(200651),
   i = l(192379),
@@ -19,7 +19,7 @@ var n = l(200651),
   x = l(388032),
   v = l(705462);
 
-function N(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var l = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(l);
@@ -38,7 +38,7 @@ function N(e) {
   return e
 }
 
-function h(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var l = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -51,20 +51,20 @@ function h(e, t) {
   }), e
 }
 
-function b(e) {
+function y(e) {
   let {
     className: t,
     guildId: l,
     error: s,
-    emojiId: b,
-    emojiName: y,
+    emojiId: y,
+    emojiName: N,
     isRequiredField: I = !0,
     shouldUpdateBothEmojiFields: E = !1,
     setEmojiId: O,
     setEmojiName: w
   } = e, S = (0, p.Z)({
-    emojiId: b,
-    emojiName: y
+    emojiId: y,
+    emojiName: N
   }), k = (0, r.e7)([g.ZP], () => null != l ? g.ZP.getDefaultChannel(l) : null), C = i.createRef(), D = (0, d.Z)(C), P = () => {
     w(void 0), O(void 0)
   }, Z = e => (t, l) => {
@@ -73,20 +73,20 @@ function b(e) {
   }, T = e => {
     e.stopPropagation(), P()
   }, z = i.useMemo(() => {
-    let e = null != b && "" !== b,
-      t = null != y && "" !== y,
+    let e = null != y && "" !== y,
+      t = null != N && "" !== N,
       l = null != S && "" !== S,
-      n = t && !Number.isNaN(parseInt(y)) && !l && !e;
+      n = t && !Number.isNaN(parseInt(N)) && !l && !e;
     return {
       hasEmojiId: e,
       hasEmojiName: t,
       hasEmojiDisplayName: l,
       isDeletedCustomEmoji: n
     }
-  }, [b, y, S]);
+  }, [y, N, S]);
   return (0, n.jsx)(o.xJW, {
     required: I,
-    title: x.NW.string(x.t["3BQmiI"]),
+    title: x.intl.string(x.t["3BQmiI"]),
     className: a()(t, v.section),
     error: s,
     children: (0, n.jsx)(o.yRy, {
@@ -109,7 +109,7 @@ function b(e) {
         let {
           isShown: l
         } = t;
-        return (0, n.jsxs)("div", h(N({}, e), {
+        return (0, n.jsxs)("div", b(h({}, e), {
           className: v.emojiInput,
           ref: C,
           children: [(0, n.jsx)(m.Z, {
@@ -117,15 +117,15 @@ function b(e) {
             active: l,
             tabIndex: 0,
             renderButtonContents: !z.isDeletedCustomEmoji && (z.hasEmojiId || z.hasEmojiName) ? () => (0, n.jsx)(u.Z, {
-              emojiName: y,
-              emojiId: b
+              emojiName: N,
+              emojiId: y
             }) : null
           }), (0, n.jsx)(o.oil, {
             inputClassName: v.emojiText,
-            placeholder: x.NW.string(x.t.QTK0TE),
+            placeholder: x.intl.string(x.t.QTK0TE),
             value: !z.isDeletedCustomEmoji && z.hasEmojiDisplayName ? ":".concat(S, ":") : "",
             readOnly: !0
-          }), !z.isDeletedCustomEmoji && z.hasEmojiDisplayName && D && (0, n.jsx)(c.Z, h(N({}, e), {
+          }), !z.isDeletedCustomEmoji && z.hasEmojiDisplayName && D && (0, n.jsx)(c.Z, b(h({}, e), {
             onClick: T,
             className: v.removeButton
           }))]

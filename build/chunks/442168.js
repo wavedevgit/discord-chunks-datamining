@@ -70,7 +70,7 @@ function b(e) {
         left: t.left
       }
     },
-    N = e => {
+    w = e => {
       let t = null == O ? void 0 : O.getBoundingClientRect();
       if (Z.current = t, e.timestamp !== _ || null == t || n) return g;
       let {
@@ -84,10 +84,10 @@ function b(e) {
         width: 268
       }
     },
-    w = (0, l.useRef)(null),
-    P = (0, s.Yzy)(j, {
+    P = (0, l.useRef)(null),
+    R = (0, s.Yzy)(j, {
       keys: e => e.timestamp,
-      ref: w,
+      ref: P,
       from: {
         opacity: .2
       },
@@ -96,19 +96,19 @@ function b(e) {
       },
       config: h
     }, "animate-always"),
-    R = (0, l.useRef)(null),
-    A = (0, s.Yzy)(j, {
-      ref: R,
+    A = (0, l.useRef)(null),
+    C = (0, s.Yzy)(j, {
+      ref: A,
       keys: e => e.timestamp,
       from: e => E({
         position: "fixed",
         visibility: "hidden",
         opacity: 1
-      }, b.enabled ? N(e) : x()),
+      }, b.enabled ? w(e) : x()),
       enter: e => [E({
         opacity: 1,
         visibility: "visible"
-      }, N(e))],
+      }, w(e))],
       leave: E({
         opacity: 0
       }, !b.enabled && E({
@@ -125,17 +125,17 @@ function b(e) {
         null != t.item && null != j.find(e => e.timestamp === t.item.timestamp) && (0, c.Gh)(I, t.item.timestamp)
       }
     }, "animate-always");
-  return (0, i.useChain)([w, R], [0, .1], 3e3), (0, r.jsxs)(r.Fragment, {
+  return (0, i.useChain)([P, A], [0, .1], 3e3), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: p.hidden,
       ref: y
-    }), P((e, t) => null != t && (0, r.jsx)(i.animated.div, {
+    }), R((e, t) => null != t && (0, r.jsx)(i.animated.div, {
       className: p.whiteFlash,
       style: e
     })), (0, r.jsx)(m.ZP, {
       children: (0, r.jsx)("div", {
         className: p.hidden,
-        children: A((e, t, n, l) => (null == t ? void 0 : t.thumbnail) != null && (0, r.jsx)(i.animated.img, {
+        children: C((e, t, n, l) => (null == t ? void 0 : t.thumbnail) != null && (0, r.jsx)(i.animated.img, {
           src: t.thumbnail,
           className: p.movingImage,
           style: e

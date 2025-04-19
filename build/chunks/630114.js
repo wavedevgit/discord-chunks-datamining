@@ -28,7 +28,7 @@ function E(e, t, n, r, i) {
   }];
   let a = [],
     o = Object.values(s.Z.getMutableGuildChannelsForGuild(e.id)).filter(e => u.Z.can(m.Plq.VIEW_CHANNEL, e));
-  return a.push(...b(e, o)), a.push(y(e)), a.push(v()), a.push(...I(o)), a.push(...S(o)), a.push(...A(o)), l.Z.hasConsented(m.pjP.PERSONALIZATION) ? a.push(...T(e, o, n, r, i)) : a.push(...N(e, o)), a.filter(p.lm)
+  return a.push(...b(e, o)), a.push(y(e)), a.push(v()), a.push(...I(o)), a.push(...S(o)), a.push(...N(o)), l.Z.hasConsented(m.pjP.PERSONALIZATION) ? a.push(...T(e, o, n, r, i)) : a.push(...A(e, o)), a.filter(p.lm)
 }
 
 function b(e, t) {
@@ -138,7 +138,7 @@ function T(e, t, n, r, a) {
   }), p
 }
 
-function N(e, t) {
+function A(e, t) {
   if (d.ZP.isMuted(e.id) && !d.ZP.isTemporarilyMuted(e.id)) return [];
   let n = [],
     r = new Set(t.map(e => e.id)),
@@ -157,7 +157,7 @@ function N(e, t) {
   }), n
 }
 
-function A(e) {
+function N(e) {
   let t = [],
     n = [],
     r = [];

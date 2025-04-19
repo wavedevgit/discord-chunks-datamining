@@ -37,8 +37,8 @@ function f(e) {
   });
   return l()(null != y, "Expected premium type"), (0, r.jsx)(C.Z, {
     premiumType: y,
-    titleText: x.NW.string(x.t["7VcWW1"]),
-    subtitleText: x.NW.format(x.t.Qk34Ii, {
+    titleText: x.intl.string(x.t["7VcWW1"]),
+    subtitleText: x.intl.format(x.t.Qk34Ii, {
       subscriptionName: E
     }),
     footer: (0, r.jsxs)("div", {
@@ -47,12 +47,12 @@ function f(e) {
         onClick: () => {
           I ? (m((0, _.nA)(j, f)), t(p.h8.REVIEW)) : t(p.h8.PLAN_SELECT)
         },
-        children: x.NW.string(x.t["3PatS0"])
+        children: x.intl.string(x.t["3PatS0"])
       }), (0, r.jsx)(o.zxk, {
         look: o.zxk.Looks.LINK,
         color: (0, s.wj)(i) ? o.zxk.Colors.WHITE : o.zxk.Colors.PRIMARY,
         onClick: n,
-        children: x.NW.string(x.t.h9tkAA)
+        children: x.intl.string(x.t.h9tkAA)
       })]
     }),
     onClose: n,

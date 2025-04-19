@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  a = n(67390),
-  l = n(896835),
+  l = n(67390),
+  a = n(896835),
   o = n(447564),
   s = n(63063),
   c = n(739566),
@@ -26,7 +26,7 @@ function h(e) {
     channelId: n.channel_id,
     guildId: h.guild_id,
     messageId: n.id
-  })(g), b = (0, l.j)("HDStreamingUpgradedMessage"), x = () => (0, o.k)(h, "HDStreamingUpgradedMessage"), y = b ? x : s.Z.getArticleURL(p.BhN.HD_STREAMING_POTION);
+  })(g), b = (0, a.j)("HDStreamingUpgradedMessage"), x = () => (0, o.k)(h, "HDStreamingUpgradedMessage"), y = b ? x : s.Z.getArticleURL(p.BhN.HD_STREAMING_POTION);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: f.parentContainer,
@@ -36,7 +36,7 @@ function h(e) {
         }),
         timestamp: n.timestamp,
         compact: t,
-        children: m.NW.format(m.t["u0qJ4+"], {
+        children: m.intl.format(m.t["u0qJ4+"], {
           actorName: g.nick,
           actorHook: _
         })
@@ -46,17 +46,17 @@ function h(e) {
         b ? x() : window.open(s.Z.getArticleURL(p.BhN.HD_STREAMING_POTION), "_blank")
       },
       className: f.embed,
-      children: [(0, r.jsx)(a.Z, {}), (0, r.jsxs)("div", {
+      children: [(0, r.jsx)(l.Z, {}), (0, r.jsxs)("div", {
         className: f.text,
         children: [(0, r.jsx)(i.Text, {
           color: "text-normal",
           variant: "text-sm/semibold",
           className: f.title,
-          children: m.NW.string(m.t["Fh/mk5"])
+          children: m.intl.string(m.t["Fh/mk5"])
         }), (0, r.jsx)(i.Text, {
           color: "text-primary",
           variant: "text-xs/normal",
-          children: m.NW.format(m.t["bmGF+f"], {
+          children: m.intl.format(m.t["bmGF+f"], {
             helpCenterLink: y
           })
         })]

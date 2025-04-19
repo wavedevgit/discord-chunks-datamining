@@ -1,7 +1,7 @@
 /** Chunk was on 3656 **/
 n.d(t, {
   Z: () => T,
-  z: () => S
+  z: () => Z
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -26,12 +26,12 @@ var r = n(200651),
   j = n(768581),
   O = n(70956),
   E = n(823379),
-  N = n(981631),
-  I = n(217702),
-  P = n(955525);
-let S = 10 * O.Z.Millis.SECOND;
+  I = n(981631),
+  P = n(217702),
+  S = n(955525);
+let Z = 10 * O.Z.Millis.SECOND;
 
-function Z(e) {
+function N(e) {
   var t;
   let {
     message: n
@@ -41,45 +41,45 @@ function Z(e) {
   } = (0, c.cj)([v.Z], () => ({
     isBlocked: v.Z.isBlockedForMessage(n),
     isIgnored: v.Z.isIgnoredForMessage(n)
-  }), [n]), s = (0, b.Uj)(n), d = i.useContext(f.Z), [x, O] = i.useState(!1), E = (0, m.p)(), N = i.useCallback(e => {
+  }), [n]), s = (0, b.Uj)(n), d = i.useContext(f.Z), [x, O] = i.useState(!1), E = (0, m.p)(), I = i.useCallback(e => {
     "A" !== e.target.nodeName && (p.Z.updateChatOpen(n.channel_id, !0), h.Z.jumpToMessage({
       channelId: n.channel_id,
       messageId: n.id,
       flash: !0
     }))
-  }, [n.channel_id, n.id]), S = null != n.content && "" !== n.content ? (0, g.ZP)(n, {
+  }, [n.channel_id, n.id]), Z = null != n.content && "" !== n.content ? (0, g.ZP)(n, {
     isInteracting: x,
     shouldFilterKeywords: E
   }).content : null, {
-    contentPlaceholder: Z,
+    contentPlaceholder: N,
     renderedContent: T,
     trailingIcon: A,
     leadingIcon: w
-  } = (0, _.f)(n, S, l, a, P.messageContent, {
-    trailingIconClass: P.messageContentTrailingIcon,
-    leadingIconClass: P.messageContentLeadingIcon,
-    iconSize: I.WW
+  } = (0, _.f)(n, Z, l, a, S.messageContent, {
+    trailingIconClass: S.messageContentTrailingIcon,
+    leadingIconClass: S.messageContentLeadingIcon,
+    iconSize: P.WW
   }), R = (0, y.cv)(n), k = R.length > 0 ? R.map(e => (0, r.jsx)(C.Z, {
-    className: P.sticker,
+    className: S.sticker,
     size: 128,
     sticker: e,
     isInteracting: x
   }, e.id)) : null;
   return (0, r.jsxs)(u.P3F, {
-    className: P.toast,
+    className: S.toast,
     onMouseEnter: () => {
       O(!0)
     },
     onMouseLeave: () => {
       O(!1)
     },
-    onClick: N,
+    onClick: I,
     children: [(0, r.jsxs)("div", {
-      className: o()(P.messageContentWrapper, {
-        [P.mentioned]: n.mentioned
+      className: o()(S.messageContentWrapper, {
+        [S.mentioned]: n.mentioned
       }),
       children: [null != k ? null : w, null != (t = null != T ? T : k) ? t : (0, r.jsx)("span", {
-        children: Z
+        children: N
       }), null != k ? null : A]
     }), (0, r.jsx)("img", {
       alt: "",
@@ -88,7 +88,7 @@ function Z(e) {
         userId: n.author.id,
         avatar: s.guildMemberAvatar
       }) : n.author.getAvatarURL(d, 32),
-      className: P.avatar
+      className: S.avatar
     })]
   })
 }
@@ -117,7 +117,7 @@ function T(e) {
           message: r,
           optimistic: i
         } = e;
-        t !== n || r.type === N.uaV.STAGE_START || r.type === N.uaV.STAGE_END || r.type === N.uaV.STAGE_TOPIC || r.type === N.uaV.STAGE_SPEAKER || r.type === N.uaV.STAGE_RAISE_HAND || i || (clearTimeout(f.current), f.current = setTimeout(m, o), s(e => [...e, r.id]))
+        t !== n || r.type === I.uaV.STAGE_START || r.type === I.uaV.STAGE_END || r.type === I.uaV.STAGE_TOPIC || r.type === I.uaV.STAGE_SPEAKER || r.type === I.uaV.STAGE_RAISE_HAND || i || (clearTimeout(f.current), f.current = setTimeout(m, o), s(e => [...e, r.id]))
       }
       return d.Z.subscribe("MESSAGE_CREATE", e), () => {
         d.Z.unsubscribe("MESSAGE_CREATE", e)
@@ -139,7 +139,7 @@ function T(e) {
     channelId: t,
     isFrozen: l,
     count: 3,
-    lingerMs: S
+    lingerMs: Z
   }), m = i.useRef({}), [g, b] = i.useState({}), _ = i.useCallback((e, t) => {
     null == t ? delete m.current[e] : m.current[e] = t
   }, []), y = i.useRef(g);
@@ -194,7 +194,7 @@ function T(e) {
       }
     });
   return (0, r.jsx)(u.f6W, {
-    theme: N.BRd.DARK,
+    theme: I.BRd.DARK,
     children: e => (0, r.jsx)("div", {
       className: o()(n, e),
       onMouseEnter: () => {
@@ -205,9 +205,9 @@ function T(e) {
       },
       children: v((e, t) => (0, r.jsx)(s.animated.div, {
         ref: e => _(t.message.id, null != e ? e.offsetHeight : null),
-        className: P.toastWrapper,
+        className: S.toastWrapper,
         style: e,
-        children: (0, r.jsx)(Z, {
+        children: (0, r.jsx)(N, {
           message: t.message
         })
       }))

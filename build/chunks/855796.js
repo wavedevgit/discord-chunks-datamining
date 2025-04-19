@@ -28,7 +28,7 @@ async function c(e) {
   } catch (t) {
     let e = new o.Hx(t);
     a.Z.show({
-      title: l.NW.string(l.t["328j/P"]),
+      title: l.intl.string(l.t["328j/P"]),
       body: e.getAnyErrorMessage()
     })
   }
@@ -48,7 +48,7 @@ async function u(e) {
   } catch (t) {
     let e = new o.Hx(t);
     a.Z.show({
-      title: l.NW.string(l.t["328j/P"]),
+      title: l.intl.string(l.t["328j/P"]),
       body: e.getAnyErrorMessage()
     })
   }
@@ -63,7 +63,7 @@ let d = {
       userId: t,
       applicationId: n,
       onSuccess: () => {
-        i.uv.announce(l.NW.string(l.t.zRf8cH))
+        i.uv.announce(l.intl.string(l.t.zRf8cH))
       }
     })
   },
@@ -77,7 +77,7 @@ let d = {
       applicationId: n,
       type: s.OGo.FRIEND,
       onSuccess: () => {
-        i.uv.announce(l.NW.string(l.t.taJiub))
+        i.uv.announce(l.intl.string(l.t.taJiub))
       }
     })
   },
@@ -90,7 +90,7 @@ let d = {
       userId: t,
       applicationId: n,
       onSuccess: () => {
-        i.uv.announce(l.NW.string(l.t.XMf21t))
+        i.uv.announce(l.intl.string(l.t.XMf21t))
       }
     })
   }

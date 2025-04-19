@@ -7,9 +7,9 @@ n.d(t, {
 var i, r = n(200651),
   s = n(192379),
   o = n(120356),
-  a = n.n(o),
-  l = n(877921),
-  c = n.n(l),
+  l = n.n(o),
+  a = n(877921),
+  c = n.n(a),
   d = n(481060),
   u = n(981631),
   h = n(751234),
@@ -56,7 +56,7 @@ let g = u.t_t.DEFAULT,
         } = e;
         return (0, r.jsx)(v.Consumer, {
           children: e => {
-            var o, l;
+            var o, a;
             return (0, r.jsx)("div", (o = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
@@ -69,19 +69,19 @@ let g = u.t_t.DEFAULT,
               }
               return e
             }({
-              className: a()(h.bar, h[c()(s)], n),
+              className: l()(h.bar, h[c()(s)], n),
               style: e
-            }, i), l = l = {
+            }, i), a = a = {
               children: t
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
                 var i = Object.getOwnPropertySymbols(e);
                 n.push.apply(n, i)
               }
               return n
-            })(Object(l)).forEach(function(e) {
-              Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(l, e))
+            })(Object(a)).forEach(function(e) {
+              Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(a, e))
             }), o))
           }
         })
@@ -98,7 +98,7 @@ class O extends(i = s.PureComponent) {
     return (0, r.jsx)(v.Consumer, {
       children: i => (0, r.jsx)(y.Consumer, {
         children: s => {
-          let o = a()(h.body, h[c()(s.type)], n);
+          let o = l()(h.body, h[c()(s.type)], n);
           return e ? (0, r.jsx)("div", {
             className: o,
             style: i,
@@ -123,16 +123,16 @@ let b = e => {
       height: i,
       children: s,
       className: o,
-      opacity: l = m,
+      opacity: a = m,
       onClick: d
     } = e;
     return (0, r.jsx)(y.Provider, {
       value: {
         type: t,
-        opacity: l
+        opacity: a
       },
       children: (0, r.jsx)("div", {
-        className: a()(h.widget, h[c()(t)], o),
+        className: l()(h.widget, h[c()(t)], o),
         style: {
           width: n,
           height: i
@@ -150,7 +150,7 @@ let b = e => {
     } = e;
     return (0, r.jsx)(v.Consumer, {
       children: e => (0, r.jsx)("div", {
-        className: a()(h.content, {
+        className: l()(h.content, {
           [h.staticSize]: !i
         }, n),
         style: e,
@@ -169,15 +169,15 @@ b.Background = e => {
     children: e => {
       let {
         opacity: o
-      } = e, a = {
+      } = e, l = {
         backgroundColor: "rgba(54, 57, 63, ".concat("" + (null != n ? n : o), ")")
       };
       if ("string" == typeof t.type) return s.cloneElement(t, {
-        style: a
+        style: l
       });
       {
         if (i.includes(t.type)) return (0, r.jsx)(v.Provider, {
-          value: a,
+          value: l,
           children: t
         });
         let e = t.type.displayName;
@@ -192,7 +192,7 @@ b.Background = e => {
     onClick: i,
     isActive: s,
     tooltipPosition: o = "top",
-    size: l = 20,
+    size: a = 20,
     isTutorial: c = !1
   } = e;
   return (0, r.jsx)(d.ua7, {
@@ -215,7 +215,7 @@ b.Background = e => {
         onClick: i,
         onMouseEnter: o,
         onMouseLeave: c,
-        className: a()(h.icon, {
+        className: l()(h.icon, {
           [h.toggledIconOn]: s
         }),
         innerClassName: p.flexCenter,
@@ -223,8 +223,8 @@ b.Background = e => {
         children: (0, r.jsx)(t, {
           color: "currentColor",
           size: "custom",
-          width: l,
-          height: l,
+          width: a,
+          height: a,
           role: "img"
         })
       })

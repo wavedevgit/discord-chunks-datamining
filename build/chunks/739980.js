@@ -4,9 +4,9 @@ n.d(t, {
 });
 var r = n(200651),
   l = n(192379),
-  a = n(954654),
-  s = n(937889),
-  i = n(930282),
+  i = n(954654),
+  a = n(937889),
+  s = n(930282),
   o = n(524444),
   u = n(136831);
 
@@ -15,7 +15,7 @@ function c(e) {
     previewMessage: t
   } = e, {
     content: n
-  } = (0, s.ZP)(t, {
+  } = (0, a.ZP)(t, {
     allowHeading: !0,
     allowLinks: !0
   }), c = t.attachments.map((e, t) => {
@@ -39,10 +39,10 @@ function c(e) {
       className: u.quote
     }), (0, r.jsxs)("div", {
       className: u.content,
-      children: [(0, r.jsx)(i.ZP, {
+      children: [(0, r.jsx)(s.ZP, {
         message: t,
         content: n
-      }), c, t.components.length > 0 ? (0, r.jsx)(a.ZP, {
+      }), c, t.components.length > 0 ? (0, r.jsx)(i.ZP, {
         message: t,
         shouldDisableInteractiveComponents: !0
       }) : null]

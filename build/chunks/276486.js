@@ -35,17 +35,17 @@ function d() {
   return (0, r.jsx)(o.PU, {
     className: c.editableRequirementContainer,
     icon: i.AtH,
-    text: a.NW.string(a.t.woMjLS),
-    footnote: a.NW.string(a.t["jMh+TU"]),
+    text: a.intl.string(a.t.woMjLS),
+    footnote: a.intl.string(a.t["jMh+TU"]),
     meetsRequirement: !1,
     children: (0, r.jsx)(i.ua7, {
-      text: a.NW.string(a.t.mGlP39),
+      text: a.intl.string(a.t.mGlP39),
       children: e => {
         var t, n;
         return (0, r.jsx)(i.zxk, (t = u({}, e), n = n = {
           size: i.zxk.Sizes.SMALL,
           disabled: !0,
-          children: a.NW.string(a.t["13ofGh"])
+          children: a.intl.string(a.t["13ofGh"])
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -64,12 +64,12 @@ function d() {
 function m(e) {
   let {
     isUserVerified: t
-  } = e, d = t ? a.NW.string(a.t.WWzQtb) : a.NW.string(a.t.woMjLS);
+  } = e, d = t ? a.intl.string(a.t.WWzQtb) : a.intl.string(a.t.woMjLS);
   return (0, r.jsx)(o.PU, {
     className: c.editableRequirementContainer,
     icon: i.AtH,
     text: d,
-    footnote: a.NW.string(a.t["jMh+TU"]),
+    footnote: a.intl.string(a.t["jMh+TU"]),
     meetsRequirement: t,
     children: (0, r.jsx)(i.zxk, {
       size: i.zxk.Sizes.SMALL,
@@ -85,7 +85,7 @@ function m(e) {
           modalKey: s.M
         })
       },
-      children: a.NW.string(a.t["13ofGh"])
+      children: a.intl.string(a.t["13ofGh"])
     })
   })
 }

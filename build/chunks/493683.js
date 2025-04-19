@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => N
+  Z: () => A
 }), n(388685);
 var r = n(544891),
   i = n(780384),
@@ -61,7 +61,7 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let N = {
+let A = {
   async openPrivateChannel(e) {
     let {
       recipientIds: t,
@@ -172,9 +172,9 @@ let N = {
       oldFormErrors: !0,
       rejectWithError: !1
     }).then(() => {
-      i.uv.announce(v.NW.string(v.t.nRbucn))
+      i.uv.announce(v.intl.string(v.t.nRbucn))
     }).catch(() => {
-      i.uv.announce(v.NW.string(v.t.ndXVIy))
+      i.uv.announce(v.intl.string(v.t.ndXVIy))
     })
   },
   async updatePermissionOverwrite(e, t) {
@@ -210,7 +210,7 @@ let N = {
       },
       oldFormErrors: !0,
       rejectWithError: !0
-    }).then(t => (i.uv.announce(v.NW.string(v.t.cU0t1N)), null == a || a(), 201 === t.status) ? this._openPrivateChannel(t.body).id : e).catch(() => (i.uv.announce(v.NW.string(v.t["8GEden"])), e))
+    }).then(t => (i.uv.announce(v.intl.string(v.t.cU0t1N)), null == a || a(), 201 === t.status) ? this._openPrivateChannel(t.body).id : e).catch(() => (i.uv.announce(v.intl.string(v.t["8GEden"])), e))
   },
   addRecipients(e, t, n, r) {
     return this.addRecipient(e, t[0], n, r).then(e => Promise.all(t.slice(1).map(t => this.addRecipient(e, t, n))).then(() => e))

@@ -1,14 +1,14 @@
 /** Chunk was on 73628 **/
 r.d(t, {
-  v: () => l
+  v: () => o
 });
 var n = r(200651);
 r(192379);
 var A = r(481060),
   a = r(388032),
-  o = r(233741);
-let l = () => (0, n.jsx)(A.IGR, {
+  l = r(233741);
+let o = () => (0, n.jsx)(A.IGR, {
   color: A.TVs.unsafe_rawColors.YELLOW_300.css,
-  text: a.NW.string(a.t.vosPk5),
-  className: o.draftBadge
+  text: a.intl.string(a.t.vosPk5),
+  className: l.draftBadge
 })

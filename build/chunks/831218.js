@@ -26,9 +26,9 @@ var r, i = n(200651),
   x = n(355298),
   E = n(869404),
   I = n(333984),
-  N = n(210887),
-  P = n(592125),
-  w = n(158776),
+  P = n(210887),
+  w = n(592125),
+  N = n(158776),
   Z = n(55589),
   T = n(515753),
   A = n(981631),
@@ -279,7 +279,7 @@ class G extends(r = l.Component) {
           children: r => (0, i.jsx)(h.aVo, k({
             fade: !0,
             innerRole: o,
-            innerAriaLabel: R.NW.string(R.t.YUU0RE),
+            innerAriaLabel: R.intl.string(R.t.YUU0RE),
             innerTag: "ul",
             ref: e => {
               var t;
@@ -323,7 +323,7 @@ class G extends(r = l.Component) {
         c = n.some(e => (0, b.Z)(e)),
         u = {
           num_users_visible: s.length,
-          num_users_visible_with_mobile_indicator: a.filter(e => null != e && w.Z.isMobileOnline(e)).length
+          num_users_visible_with_mobile_indicator: a.filter(e => null != e && N.Z.isMobileOnline(e)).length
         };
       this.hasReportedAnalytics = !0, g.ZP.trackWithMetadata(A.rMx.DM_LIST_VIEWED, M(k({}, u, (0, m.X)()), {
         visible_user_ids: a.filter(e => null != e),
@@ -388,9 +388,9 @@ class G extends(r = l.Component) {
         className: D.privateChannelsHeaderContainer,
         children: [(0, i.jsx)("span", {
           className: D.headerText,
-          children: R.NW.string(R.t.YUU0RE)
+          children: R.intl.string(R.t.YUU0RE)
         }), (0, i.jsx)(S.Z, {
-          tooltip: R.NW.string(R.t["6Urw1t"]),
+          tooltip: R.intl.string(R.t["6Urw1t"]),
           tooltipPosition: "top",
           popoutAlign: "left",
           className: D.privateChannelRecipientsInviteButtonIconContainer,
@@ -439,22 +439,22 @@ let B = e => {
       showDMHeader: p
     } = e,
     g = l.Children.count(d),
-    m = P.Z.getMutablePrivateChannels(),
+    m = w.Z.getMutablePrivateChannels(),
     b = (0, E.k1)(m),
     y = (0, u.Wu)([Z.Z, x.Z, I.Z], () => {
       let e = Z.Z.getPrivateChannelIds();
       return (0, E.tU)(e, [x.Z, I.Z])
     }, []);
   (0, j.z)(C.R);
-  let _ = (0, u.cj)([f.Z, N.Z, P.Z], () => ({
-      theme: N.Z.darkSidebar ? A.BRd.DARK : s,
+  let _ = (0, u.cj)([f.Z, P.Z, w.Z], () => ({
+      theme: P.Z.darkSidebar ? A.BRd.DARK : s,
       keyboardModeEnabled: f.Z.keyboardModeEnabled,
-      version: null != o ? "".concat(o, ":").concat(P.Z.getPrivateChannelsVersion()) : P.Z.getPrivateChannelsVersion()
+      version: null != o ? "".concat(o, ":").concat(w.Z.getPrivateChannelsVersion()) : w.Z.getPrivateChannelsVersion()
     })),
     S = l.useRef(null),
-    w = null != (t = e.listScrollerRef) ? t : S,
+    N = null != (t = e.listScrollerRef) ? t : S,
     T = l.useCallback(e => {
-      let t = w.current,
+      let t = N.current,
         n = document.querySelector(e);
       null != t && null != n && t.scrollIntoViewNode({
         node: n,
@@ -467,23 +467,23 @@ let B = e => {
           })
         }
       })
-    }, [w]),
+    }, [N]),
     R = l.useCallback(() => new Promise(e => {
-      let t = w.current;
+      let t = N.current;
       if (null == t) return e();
       t.scrollToTop({
         callback: () => requestAnimationFrame(() => e())
       })
-    }), [w]),
+    }), [N]),
     D = l.useCallback(() => new Promise(e => {
-      let t = w.current;
+      let t = N.current;
       if (null == t) return e();
       t.scrollToBottom({
         callback() {
           requestAnimationFrame(() => setTimeout(e, 100))
         }
       })
-    }), [w]),
+    }), [N]),
     L = (0, O.Dt)(),
     U = (0, c.ZP)({
       id: "private-channels-".concat(L),
@@ -500,7 +500,7 @@ let B = e => {
       isVisualRefreshEnabled: n,
       channels: b,
       privateChannelIds: y,
-      listRef: w,
+      listRef: N,
       theme: s,
       version: o
     }, e), {

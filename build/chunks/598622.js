@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(740903),
-  s = n(426434),
-  l = n(112824),
+  l = n(426434),
+  s = n(112824),
   a = n(181339),
   o = n(195189),
   c = n(3896),
@@ -21,24 +21,24 @@ let m = e => {
     enabled: !0
   }, {
     renderComponent: () => (0, r.jsx)(o.Z, {
-      title: u.NW.string(u.t.QiONLy),
-      details: u.NW.string(u.t.dSRTMD)
+      title: u.intl.string(u.t.QiONLy),
+      details: u.intl.string(u.t.dSRTMD)
     }, "hide-suspicious-dms"),
     enabled: !0
   }, {
     renderComponent: () => (0, r.jsx)(o.Z, {
-      title: u.NW.string(u.t["f+8F8P"]),
-      details: u.NW.string(u.t.qChrIy)
+      title: u.intl.string(u.t["f+8F8P"]),
+      details: u.intl.string(u.t.qChrIy)
     }, "filter-unknown-dms"),
     enabled: !0
   }, {
     renderComponent: () => (0, r.jsx)(o.Z, {
-      title: u.NW.string(u.t.EkSAHR)
+      title: u.intl.string(u.t.EkSAHR)
     }, "outbound-links-warn"),
     enabled: !0
   }, {
     renderComponent: () => (0, r.jsx)(o.Z, {
-      title: u.NW.string(u.t["7cAQmp"])
+      title: u.intl.string(u.t["7cAQmp"])
     }, "delete-spam"),
     enabled: !0
   }].filter(e => null != e);
@@ -50,26 +50,26 @@ let m = e => {
       enabled: !e.hasFeature(d.oNc.RAID_ALERTS_DISABLED)
     }, {
       renderComponent: () => (0, r.jsx)(o.Z, {
-        title: u.NW.string(u.t.gOkFfH)
+        title: u.intl.string(u.t.gOkFfH)
       }, "captcha-suspicious-joins"),
       enabled: !0
     }, {
       renderComponent: () => (0, r.jsx)(o.Z, {
-        title: u.NW.string(u.t.r3esyM)
+        title: u.intl.string(u.t.r3esyM)
       }, "captcha-raid-joins"),
       enabled: !0
     }],
     [i.u.DM_AND_SPAM_PROTECTION]: t,
     [i.u.PERMISSIONS]: [{
-      renderComponent: () => (0, r.jsx)(s.Z, {
+      renderComponent: () => (0, r.jsx)(l.Z, {
         guild: e
       }, "guild-mfa"),
       enabled: e.mfaLevel === d.BpS.ELEVATED
     }, {
-      renderComponent: () => (0, r.jsx)(l.Z, {
+      renderComponent: () => (0, r.jsx)(s.Z, {
         guild: e
       }, "disable-risky-perms"),
-      enabled: 0 === (0, l.R)(e).length
+      enabled: 0 === (0, s.R)(e).length
     }]
   }
 }

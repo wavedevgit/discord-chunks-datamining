@@ -134,7 +134,7 @@ let O = y(E({}, h.Z), {
       onHover: s,
       onClick: c,
       titleWithQuery: m.t.HFRoZW,
-      titleWithoutQuery: m.NW.string(m.t["0hKkS0"]),
+      titleWithoutQuery: m.intl.string(m.t["0hKkS0"]),
       Component: o.commands === p.L8.OLD_BUILT_INS ? l.ZP.Command : l.ZP.NewCommand,
       getProps: e => {
         let {

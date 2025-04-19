@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(192379),
   l = n(442837),
   s = n(38618),
-  a = n(51596),
-  i = n(516373),
+  i = n(51596),
+  a = n(516373),
   o = n(314897),
   u = n(580005),
   c = n(987509),
@@ -17,7 +17,7 @@ function b(e) {
   let {
     query: t,
     queryMode: n
-  } = (0, a.F_)(e), r = f.M, l = null;
+  } = (0, i.F_)(e), r = f.M, l = null;
   return null != n && f.M.includes(n) && (r = [n], l = n), {
     query: t,
     queryMode: l,
@@ -29,7 +29,7 @@ function p(e) {
   let {
     targetDestination: t,
     selectedDestinations: n,
-    originDestination: a,
+    originDestination: i,
     includeMissingDMs: f = !1
   } = e, p = (0, l.e7)([o.default], () => o.default.getId()), h = r.useMemo(() => ({
     searchOptions: {
@@ -43,7 +43,7 @@ function p(e) {
     results: g
   } = (0, d.Z)(h), [j, x] = r.useState(b("")), O = r.useCallback(e => x(b(e)), [x]), {
     queryMode: v
-  } = j, _ = r.useRef(), S = r.useRef(n), N = y !== _.current ? n : S.current;
+  } = j, _ = r.useRef(), S = r.useRef(n), E = y !== _.current ? n : S.current;
   r.useEffect(() => {
     y !== _.current && (S.current = n), _.current = y
   }, [y, n]), r.useLayoutEffect(() => {
@@ -55,23 +55,23 @@ function p(e) {
       query: e,
       resultTypes: t
     })
-  }, [m, j]), (0, i.D)();
-  let E = (0, l.e7)([u.Z], () => u.Z.getFrequentlyWithoutFetchingLatest()),
-    P = (0, l.e7)([s.Z], () => s.Z.isConnected()),
-    Z = "" !== y;
+  }, [m, j]), (0, a.D)();
+  let P = (0, l.e7)([u.Z], () => u.Z.getFrequentlyWithoutFetchingLatest()),
+    Z = (0, l.e7)([s.Z], () => s.Z.isConnected()),
+    L = "" !== y;
   return {
     results: r.useMemo(() => (0, c.ZP)({
       results: g,
-      hasQuery: Z,
+      hasQuery: L,
       queryMode: v,
       targetDestination: t,
-      frequentChannels: E,
+      frequentChannels: P,
       selectedDestinations: n,
-      pinnedDestinations: N,
-      originDestination: a,
+      pinnedDestinations: E,
+      originDestination: i,
       includeMissingDMs: f,
-      isConnected: P
-    }), [g, Z, v, t, E, n, N, a, f, P]),
+      isConnected: Z
+    }), [g, L, v, t, P, n, E, i, f, Z]),
     updateSearchText: O
   }
 }

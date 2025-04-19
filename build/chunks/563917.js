@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(447543),
-  l = n(100527),
+  l = n(447543),
+  a = n(100527),
   o = n(906732),
   s = n(792766),
   c = n(955415);
@@ -20,9 +20,9 @@ let u = e => {
     onAcceptInstantInvite: f
   } = e, {
     analyticsLocations: h
-  } = (0, o.ZP)(l.Z.INVITE_EMBED), g = i.useCallback(() => {
+  } = (0, o.ZP)(a.Z.INVITE_EMBED), g = i.useCallback(() => {
     let e = "noop";
-    p ? (m(), e = "transition") : (f(), e = "accept"), (0, a.r$)({
+    p ? (m(), e = "transition") : (f(), e = "accept"), (0, l.r$)({
       invite: t,
       action: e,
       inviter_id: d

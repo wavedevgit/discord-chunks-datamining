@@ -17,7 +17,7 @@ let s = e => {
     children: [(0, r.jsx)(l.X6q, {
       className: o.header,
       variant: "heading-sm/semibold",
-      children: a.NW.string(a.t["Rsth7+"])
+      children: a.intl.string(a.t["Rsth7+"])
     }), (0, r.jsx)("div", {
       className: o.userContainer,
       children: (0, r.jsxs)("div", {

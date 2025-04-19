@@ -1,21 +1,21 @@
 /** Chunk was on 4419 **/
-t.d(n, {
+e.d(t, {
   Z: () => s
 });
-var o = t(200651);
-t(192379);
-var i = t(859097),
-  r = t(388032);
+var o = e(200651);
+e(192379);
+var i = e(859097),
+  r = e(388032);
 
-function s(e) {
+function s(n) {
   let {
-    onContinue: n,
-    onClose: t
-  } = e;
+    onContinue: t,
+    onClose: e
+  } = n;
   return (0, o.jsx)(i.C, {
-    title: r.NW.string(r.t["8YK70d"]),
-    body: r.NW.string(r.t.moyYLS),
-    onClose: t,
-    onContinue: n
+    title: r.intl.string(r.t["8YK70d"]),
+    body: r.intl.string(r.t.moyYLS),
+    onClose: e,
+    onContinue: t
   })
 }

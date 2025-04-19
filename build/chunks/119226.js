@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => N
+  Z: () => A
 }), n(314940);
 var r = n(200651);
 n(192379);
@@ -79,7 +79,7 @@ function S(e) {
       src: a,
       className: g.avatar,
       size: o.EFr.SIZE_152,
-      "aria-label": m.NW.string(m.t.lqaIxM)
+      "aria-label": m.intl.string(m.t.lqaIxM)
     }))
   })
 }
@@ -101,7 +101,7 @@ function T(e) {
   })
 }
 
-function N(e) {
+function A(e) {
   let {
     sku: t
   } = e, {

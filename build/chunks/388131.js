@@ -1,10 +1,10 @@
 /** Chunk was on 46786 **/
 n.d(t, {
-  A: () => _,
-  default: () => j
+  A: () => j,
+  default: () => C
 }), n(388685);
-var r = n(200651),
-  l = n(192379),
+var l = n(200651),
+  r = n(192379),
   i = n(442837),
   a = n(481060),
   s = n(741361),
@@ -19,9 +19,9 @@ var r = n(200651),
   b = n(146085),
   k = n(71080),
   p = n(388032),
-  N = n(441609);
+  _ = n(441609);
 
-function _(e, t) {
+function j(e, t) {
   return {
     id: e,
     type: t,
@@ -30,15 +30,15 @@ function _(e, t) {
   }
 }
 
-function j(e) {
+function C(e) {
   let {
     transitionState: t,
     onClose: n,
     channelId: m
-  } = e, j = (0, h.Dt)(), C = (0, i.e7)([x.Z], () => x.Z.getChannel(m)), R = (0, i.e7)([g.Z], () => g.Z.getGuild(null == C ? void 0 : C.getGuildId())), [S, E] = l.useState({}), [w, y] = l.useState(!1), [f, A] = l.useState(null);
-  if (null == C || null == R) return null;
+  } = e, C = (0, h.Dt)(), R = (0, i.e7)([x.Z], () => x.Z.getChannel(m)), S = (0, i.e7)([g.Z], () => g.Z.getGuild(null == R ? void 0 : R.getGuildId())), [E, w] = r.useState({}), [y, N] = r.useState(!1), [f, A] = r.useState(null);
+  if (null == R || null == S) return null;
   let z = async () => {
-    y(!0);
+    N(!0);
     try {
       await
       function(e, t) {
@@ -51,59 +51,59 @@ function j(e) {
           let {
             row: t
           } = e;
-          return t.rowType === k.aC.ROLE ? _(t.id, d.BN.ROLE) : _(t.id, d.BN.MEMBER)
+          return t.rowType === k.aC.ROLE ? j(t.id, d.BN.ROLE) : j(t.id, d.BN.MEMBER)
         });
         return (0, s.hw)(e.id, n, !0)
-      }(C, S), n()
+      }(R, E), n()
     } catch (t) {
       let e = new o.Hx(t);
-      y(!1), A(e)
+      N(!1), A(e)
     }
   };
-  return (0, r.jsxs)(a.Y0X, {
+  return (0, l.jsxs)(a.Y0X, {
     transitionState: t,
-    "aria-labelledby": j,
+    "aria-labelledby": C,
     size: a.CgR.SMALL,
-    className: N.modalRoot,
-    children: [(0, r.jsxs)(a.xBx, {
+    className: _.modalRoot,
+    children: [(0, l.jsxs)(a.xBx, {
       separator: !1,
       direction: u.Z.Direction.VERTICAL,
       align: u.Z.Align.CENTER,
-      className: N.header,
-      children: [(0, r.jsx)(a.X6q, {
+      className: _.header,
+      children: [(0, l.jsx)(a.X6q, {
         variant: "heading-xl/semibold",
-        children: p.NW.string(p.t.dMJ3Y2)
-      }), (0, r.jsxs)(a.Text, {
+        children: p.intl.string(p.t.dMJ3Y2)
+      }), (0, l.jsxs)(a.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
-        className: N.headerSubtitle,
-        children: [(0, r.jsx)(a.ewx, {
+        className: _.headerSubtitle,
+        children: [(0, l.jsx)(a.ewx, {
           size: "xs",
           color: "currentColor",
-          className: N.headerSubtitleIcon
-        }), C.name]
+          className: _.headerSubtitleIcon
+        }), R.name]
       })]
-    }), (0, r.jsx)(c.U, {
-      guild: R,
-      channel: C,
+    }), (0, l.jsx)(c.U, {
+      guild: S,
+      channel: R,
       permission: b.yP,
-      pendingAdditions: S,
-      setPendingAdditions: E
-    }), null != f ? (0, r.jsx)(a.Text, {
-      className: N.error,
+      pendingAdditions: E,
+      setPendingAdditions: w
+    }), null != f ? (0, l.jsx)(a.Text, {
+      className: _.error,
       variant: "text-xs/normal",
       color: "text-danger",
       children: f.getAnyErrorMessage()
-    }) : null, (0, r.jsxs)(a.mzw, {
-      children: [(0, r.jsx)(a.zxk, {
+    }) : null, (0, l.jsxs)(a.mzw, {
+      children: [(0, l.jsx)(a.zxk, {
         onClick: z,
-        submitting: w,
-        children: p.NW.string(p.t.OYkgVl)
-      }), (0, r.jsx)(a.zxk, {
+        submitting: y,
+        children: p.intl.string(p.t.OYkgVl)
+      }), (0, l.jsx)(a.zxk, {
         look: a.zxk.Looks.LINK,
         color: a.zxk.Colors.PRIMARY,
         onClick: n,
-        children: p.NW.string(p.t["ETE/oK"])
+        children: p.intl.string(p.t["ETE/oK"])
       })]
     })]
   })

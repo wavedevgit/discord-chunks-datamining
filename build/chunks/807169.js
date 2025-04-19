@@ -31,7 +31,7 @@ function m(e, t) {
     {
       computedPermissions: S,
       hasBaseAccessPermissions: T,
-      hasSendMessagesPermission: N
+      hasSendMessagesPermission: A
     } = b(_, e instanceof c.Sf && e.isThread());
   return {
     context: _,
@@ -41,7 +41,7 @@ function m(e, t) {
     commandTypes: t,
     computedPermissions: S,
     hasBaseAccessPermissions: T,
-    hasSendMessagesPermission: N,
+    hasSendMessagesPermission: A,
     allowNsfw: E(_, y, m)
   }
 }

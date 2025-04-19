@@ -4,8 +4,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(913527),
-  l = n.n(a),
+  l = n(913527),
+  a = n.n(l),
   o = n(442837),
   s = n(481060),
   c = n(727637),
@@ -21,10 +21,10 @@ function _(e) {
   let {
     invite: t,
     expired: n
-  } = e, a = (0, o.e7)([m.default], () => {
+  } = e, l = (0, o.e7)([m.default], () => {
     var e, n;
     return null != (n = null == (e = m.default.getUser(t.inviter_id)) ? void 0 : e.username) ? n : ""
-  }), u = (0, f.vc)(l()(t.created_at), "LT"), d = i.useRef(null), _ = (0, c.Z)(d);
+  }), u = (0, f.vc)(a()(t.created_at), "LT"), d = i.useRef(null), _ = (0, c.Z)(d);
   return i.useEffect(() => {
     n || (0, p.Br)(t)
   }, [t, n]), (0, r.jsxs)("div", {
@@ -40,8 +40,8 @@ function _(e) {
         className: g.title,
         variant: "text-md/semibold",
         color: "interactive-active",
-        children: h.NW.format(h.t.vtUO3d, {
-          username: a
+        children: h.intl.format(h.t.vtUO3d, {
+          username: l
         })
       }), (0, r.jsxs)("div", {
         className: g.buttonContainer,
@@ -51,7 +51,7 @@ function _(e) {
           isHoveringInvite: _
         }), (0, r.jsx)(s.M0o, {
           className: g.deleteButton,
-          tooltip: h.NW.string(h.t.oyYWHB),
+          tooltip: h.intl.string(h.t.oyYWHB),
           color: s.YX$.SECONDARY,
           icon: (0, r.jsx)(s.XHJ, {
             size: "xs"
@@ -76,7 +76,7 @@ function _(e) {
           variant: "text-xxs/semibold",
           className: g.__invalid_metaText,
           color: "text-muted",
-          children: h.NW.string(h.t["//8Uqa"])
+          children: h.intl.string(h.t["//8Uqa"])
         })
       })]
     })]
@@ -87,8 +87,8 @@ function b(e) {
   let {
     expired: t,
     invite: n,
-    isHoveringInvite: a
-  } = e, l = (0, o.e7)([d.Z], () => d.Z.isInviteGameInstalled(n)), c = (0, o.e7)([d.Z], () => d.Z.isInviteJoinable(n)), [m, f] = i.useState(!1), _ = i.useCallback(async () => {
+    isHoveringInvite: l
+  } = e, a = (0, o.e7)([d.Z], () => d.Z.isInviteGameInstalled(n)), c = (0, o.e7)([d.Z], () => d.Z.isInviteJoinable(n)), [m, f] = i.useState(!1), _ = i.useCallback(async () => {
     f(!0);
     try {
       await (0, p.MH)(n)
@@ -102,31 +102,31 @@ function b(e) {
     f(!1)
   }, [n]);
   if (t)
-    if (l && a) return (0, r.jsx)(s.zxk, {
+    if (a && l) return (0, r.jsx)(s.zxk, {
       className: g.primaryButton,
       color: s.Ttl.TRANSPARENT,
       disabled: m,
       size: s.PhG.SMALL,
       onClick: _,
-      children: h.NW.string(h.t["s+J8Dg"])
+      children: h.intl.string(h.t["s+J8Dg"])
     });
     else return null;
-  return l && c ? (0, r.jsx)(s.zxk, {
+  return a && c ? (0, r.jsx)(s.zxk, {
     className: g.primaryButton,
     color: s.Ttl.GREEN,
     disabled: m,
     size: s.PhG.SMALL,
     onClick: b,
-    children: h.NW.string(h.t["/loN9/"])
+    children: h.intl.string(h.t["/loN9/"])
   }) : null != n.fallback_url ? (0, r.jsx)(s.zxk, {
     className: g.primaryButton,
     disabled: m,
     size: s.PhG.SMALL,
     color: s.Ttl.TRANSPARENT,
     onClick: () => (0, u.Z)(n.fallback_url),
-    children: h.NW.string(h.t["27y8KC"])
+    children: h.intl.string(h.t["27y8KC"])
   }) : (0, r.jsx)(s.ua7, {
-    text: h.NW.formatToPlainString(h.t.issFLC, {
+    text: h.intl.formatToPlainString(h.t.issFLC, {
       gameTitle: n.application_name
     }),
     children: e => {
@@ -160,7 +160,7 @@ function b(e) {
             variant: "text-xxs/medium",
             className: g.launchToJoinText,
             color: "text-muted",
-            children: h.NW.string(h.t.dai1Oz)
+            children: h.intl.string(h.t.dai1Oz)
           }), (0, r.jsx)(s.d3s, {
             size: "xxs",
             color: s.TVs.colors.TEXT_MUTED.css

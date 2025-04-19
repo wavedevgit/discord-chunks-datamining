@@ -38,10 +38,10 @@ function p(e) {
     onClick: y,
     className: _.clickableUsername,
     children: e
-  }), T = null != g && g.length > 0, N = (0, l.D)(t);
+  }), T = null != g && g.length > 0, A = (0, l.D)(t);
   return (0, r.jsxs)("div", {
     className: a()(_.container, {
-      [_.bot]: null != N
+      [_.bot]: null != A
     }, E),
     children: [(0, r.jsxs)("div", {
       className: _.usernameRow,
@@ -49,8 +49,8 @@ function p(e) {
         className: a()(_.nickname, I),
         variant: v,
         children: h
-      })), null != N && (0, r.jsx)(c.Z, {
-        type: N,
+      })), null != A && (0, r.jsx)(c.Z, {
+        type: A,
         verified: t.isVerifiedBot()
       }), null != m && (0, r.jsx)("div", {
         className: a()(_.nicknameIcons, I),
@@ -59,7 +59,7 @@ function p(e) {
     }), (0, r.jsxs)("div", {
       className: a()(_.tags, I, {
         [_.pronouns]: T,
-        [_.bot]: null != N
+        [_.bot]: null != A
       }),
       children: [!t.isProvisional && S((0, r.jsx)(s.Z, {
         user: t,
@@ -76,7 +76,7 @@ function p(e) {
           className: _.dotSpacer
         }), (0, r.jsx)(o.DY3, {
           className: _.pronounsTooltip,
-          text: f.NW.string(f.t.GI2A8P),
+          text: f.intl.string(f.t.GI2A8P),
           delay: d.vB,
           children: (0, r.jsx)(o.Text, {
             variant: O,

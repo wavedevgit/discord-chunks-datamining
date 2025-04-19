@@ -63,7 +63,7 @@ function s(e) {
     }, [e.id, p]);
   return e.isCommunity() && s ? (0, n.jsx)(l.sNh, {
     id: "server-lockdown",
-    label: b ? u.NW.string(u.t["+tSVi4"]) : u.NW.string(u.t.EPlEdn),
+    label: b ? u.intl.string(u.t["+tSVi4"]) : u.intl.string(u.t.EPlEdn),
     icon: t ? b ? l.d$P : l.mBM : void 0,
     action: O,
     color: "danger"

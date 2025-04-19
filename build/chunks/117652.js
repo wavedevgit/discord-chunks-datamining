@@ -27,8 +27,8 @@ var i = n(442837),
   I = n(563132),
   S = n(409813),
   T = n(614277),
-  N = n(981631),
-  A = n(474936),
+  A = n(981631),
+  N = n(474936),
   C = n(388032),
   R = n(997433),
   P = n(651427);
@@ -59,7 +59,7 @@ let L = {
   renderStep: e => (0, r.jsx)(M, D({}, e)),
   options: {
     isLargeModal: !0,
-    useBreadcrumbLabel: () => C.NW.string(C.t["W685+f"])
+    useBreadcrumbLabel: () => C.intl.string(C.t["W685+f"])
   }
 };
 
@@ -78,7 +78,7 @@ function x(e) {
       onClick: () => t(c),
       disabled: o,
       submitting: s,
-      children: C.NW.string(C.t.XiOHRU)
+      children: C.intl.string(C.t.XiOHRU)
     }), i ? (0, r.jsx)(m.Z, {
       onClick: n
     }) : null]
@@ -107,21 +107,21 @@ function M(e) {
     skuPricePreviewsById: V
   } = (0, I.JL)(), Z = (0, i.e7)([E.default], () => E.default.getCurrentUser()), {
     enabled: H,
-    giftRecommendationAlgorithm: W
+    giftRecommendationAlgorithm: Y
   } = _.G.useExperiment({
     location: "CollectiblesPaymentModalGiftCustomizationStep"
   }, {
     autoTrackExposure: !1
-  }), Y = H && M === A.Wt.DM_CHANNEL, K = W === _.u.POPULAR ? C.NW.string(C.t.Kwgrrq) : C.NW.string(C.t.r1huYW), z = async (e, t) => {
-    j(!0), null != m && S(), await (0, c.B1)(e.id, t) || S(C.NW.string(C.t["4kgVqa"])), j(!1)
+  }), W = H && M === N.Wt.DM_CHANNEL, K = Y === _.u.POPULAR ? C.intl.string(C.t.Kwgrrq) : C.intl.string(C.t.r1huYW), z = async (e, t) => {
+    j(!0), null != m && S(), await (0, c.B1)(e.id, t) || S(C.intl.string(C.t["4kgVqa"])), j(!1)
   };
   (0, o.ZP)(() => {
-    null != U && null != D && (y.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
+    null != U && null != D && (y.default.track(A.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
       sku_id: U
     }), z(D, U))
   });
   let q = e => {
-      y.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
+      y.default.track(A.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
         sku_id: e
       }), null != D && z(D, e), G(e)
     },
@@ -143,7 +143,7 @@ function M(e) {
       }, e)
     },
     X = () => (0, r.jsx)(p.Z, {
-      sectionTitle: C.NW.string(C.t.B3miEx),
+      sectionTitle: C.intl.string(C.t.B3miEx),
       onTextChange: e => null == l ? void 0 : l(e),
       pendingText: s,
       currentText: s,
@@ -151,7 +151,7 @@ function M(e) {
       className: R.customGiftMessageWrapper,
       innerClassName: R.customGiftMessage
     }),
-    J = () => Y ? (0, r.jsxs)("div", {
+    J = () => W ? (0, r.jsxs)("div", {
       className: R.bodyColumnLeft,
       children: [(0, r.jsx)(a.Text, {
         variant: "text-xs/bold",
@@ -168,7 +168,7 @@ function M(e) {
       })
     }),
     $ = () => {
-      if (Y) return (0, r.jsxs)("div", {
+      if (W) return (0, r.jsxs)("div", {
         className: R.bodyColumnRight,
         children: [(0, r.jsx)(g.s, {
           giftRecipient: D
@@ -207,7 +207,7 @@ function M(e) {
         children: (0, r.jsx)(x, {
           onStepChange: t,
           onBackClick: n,
-          disabled: null != m || null == D || D.id === (null == Z ? void 0 : Z.id) || s.length > A.$n,
+          disabled: null != m || null == D || D.id === (null == Z ? void 0 : Z.id) || s.length > N.$n,
           loading: w
         })
       })
@@ -248,11 +248,11 @@ function k(e) {
           children: [(0, r.jsx)(a.Text, {
             color: "header-primary",
             variant: "text-md/semibold",
-            children: C.NW.string(C.t["1+Co8P"])
+            children: C.intl.string(C.t["1+Co8P"])
           }), (0, r.jsx)(a.X6q, {
             color: "header-secondary",
             variant: "heading-sm/medium",
-            children: C.NW.string(C.t.nYn52N)
+            children: C.intl.string(C.t.nYn52N)
           })]
         })]
       }), (0, r.jsx)("div", {

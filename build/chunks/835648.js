@@ -63,7 +63,7 @@ function S(e, t) {
 
 function T(e, t) {
   if (null == e) return {};
-  var n, r, i = N(e, t);
+  var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -71,14 +71,14 @@ function T(e, t) {
   return i
 }
 
-function N(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let A = [8, 8, 8, 8],
+let N = [8, 8, 8, 8],
   C = 40;
 
 function R(e) {
@@ -148,33 +148,33 @@ function P(e, t, n, i, a, o) {
 function w(e) {
   switch (e.categoryInfo.type) {
     case m.bg.FAVORITES:
-      return b.NW.string(b.t.k8fFjo);
+      return b.intl.string(b.t.k8fFjo);
     case m.bg.RECENTLY_HEARD:
-      return b.NW.string(b.t["8i/+SE"]);
+      return b.intl.string(b.t["8i/+SE"]);
     case m.bg.FREQUENTLY_USED:
-      return b.NW.string(b.t["+cGVV1"]);
+      return b.intl.string(b.t["+cGVV1"]);
     case m.bg.GUILD:
       return (0, r.jsx)(_.K, {
         guild: e.categoryInfo.guild,
         includeActivity: !1
       });
     case m.bg.DEFAULTS:
-      return b.NW.string(b.t.Rtvk9f)
+      return b.intl.string(b.t.Rtvk9f)
   }
 }
 
 function D(e) {
   switch (e.categoryInfo.type) {
     case m.bg.FAVORITES:
-      return b.NW.string(b.t.k8fFjo);
+      return b.intl.string(b.t.k8fFjo);
     case m.bg.RECENTLY_HEARD:
-      return b.NW.string(b.t["8i/+SE"]);
+      return b.intl.string(b.t["8i/+SE"]);
     case m.bg.FREQUENTLY_USED:
-      return b.NW.string(b.t["+cGVV1"]);
+      return b.intl.string(b.t["+cGVV1"]);
     case m.bg.GUILD:
       return e.categoryInfo.guild.name;
     case m.bg.DEFAULTS:
-      return b.NW.string(b.t.Rtvk9f)
+      return b.intl.string(b.t.Rtvk9f)
   }
 }
 
@@ -199,7 +199,7 @@ function x(e) {
     soundboardListRef: t,
     categories: n,
     shouldUpsellLockedCategories: a,
-    listPadding: o = A,
+    listPadding: o = N,
     guildId: s,
     inExpressionPicker: c
   } = e, u = i.useRef(null), _ = (0, l.e7)([p.default], () => p.default.getCurrentUser()), m = (0, h.I5)(_, E.p9.TIER_2), b = i.useCallback((e, t, n, i) => {

@@ -25,10 +25,10 @@ var r = t(200651),
   _ = t(451834),
   Z = t(502762),
   O = t(544989),
-  N = t(705556),
-  P = t(481932),
-  E = t(195387),
-  S = t(272510),
+  P = t(705556),
+  E = t(481932),
+  S = t(195387),
+  N = t(272510),
   T = t(4517),
   A = t(171368),
   C = t(62154),
@@ -74,11 +74,11 @@ function D(e) {
     user: n,
     currentUser: t,
     guildId: D,
-    channelId: W,
-    messageId: G,
-    roleId: k,
-    sessionId: F,
-    friendToken: V,
+    channelId: G,
+    messageId: k,
+    roleId: F,
+    sessionId: V,
+    friendToken: W,
     initialSection: Y,
     initialSubsection: z,
     transitionState: J,
@@ -92,11 +92,11 @@ function D(e) {
   } = (0, u.ZP)([...Q, d.Z.SIMPLIFIED_PROFILE_MODAL]), ee = (0, g.ZB)({
     layout: "MODAL",
     userId: n.id,
-    sourceSessionId: F,
+    sourceSessionId: V,
     guildId: D,
-    channelId: W,
-    messageId: G,
-    roleId: k,
+    channelId: G,
+    messageId: k,
+    roleId: F,
     showGuildProfile: q
   }), en = (0, j.$m)(), et = (0, s.q_F)({
     opacity: +(null != en.interactionType),
@@ -125,7 +125,7 @@ function D(e) {
           transitionState: J,
           className: M.root,
           hideShadow: !0,
-          "aria-label": R.NW.string(R.t["3N/J2t"]),
+          "aria-label": R.intl.string(R.t["3N/J2t"]),
           children: [(0, r.jsxs)(Z.Z, {
             user: n,
             displayProfile: er,
@@ -133,30 +133,30 @@ function D(e) {
             ref: ed,
             children: [(0, r.jsxs)(O.Z, {
               profileType: w.y0.FULL_SIZE,
-              children: [(0, r.jsx)(E.Z, {
+              children: [(0, r.jsx)(S.Z, {
                 shouldShowTooltip: null === en.interactionType,
                 user: n,
                 guildId: D,
-                channelId: W,
+                channelId: G,
                 onClose: X
-              }), (0, r.jsx)(P.Z, {
+              }), (0, r.jsx)(E.Z, {
                 shouldShowTooltip: null === en.interactionType,
                 profileType: w.y0.FULL_SIZE,
                 user: n,
-                friendToken: V
-              }), (0, r.jsx)(S.Z, {
+                friendToken: W
+              }), (0, r.jsx)(N.Z, {
                 user: n,
                 guildId: D,
                 viewProfileItem: (null == eo ? void 0 : eo.guildId) == null ? null : (null == er ? void 0 : er.guildId) != null ? (0, r.jsx)(s.sNh, {
                   id: "view-main-profile",
-                  label: R.NW.string(R.t.GISTtb),
-                  subtext: R.NW.formatToPlainString(R.t["mn/nW1"], {
+                  label: R.intl.string(R.t.GISTtb),
+                  subtext: R.intl.formatToPlainString(R.t["mn/nW1"], {
                     displayName: h.ZP.getName(void 0, void 0, n)
                   }),
                   action: () => {
                     X(), (0, A.openUserProfileModal)(B(U({}, ee), {
                       showGuildProfile: !1,
-                      friendToken: V,
+                      friendToken: W,
                       sourceAnalyticsLocations: Q
                     })), (0, y.pQ)(U({
                       action: "PRESS_VIEW_MAIN_PROFILE",
@@ -165,14 +165,14 @@ function D(e) {
                   }
                 }) : (0, r.jsx)(s.sNh, {
                   id: "view-server-profile",
-                  label: R.NW.string(R.t.DisZzM),
-                  subtext: R.NW.formatToPlainString(R.t["mn/nW1"], {
-                    displayName: h.ZP.getName(D, W, n)
+                  label: R.intl.string(R.t.DisZzM),
+                  subtext: R.intl.formatToPlainString(R.t["mn/nW1"], {
+                    displayName: h.ZP.getName(D, G, n)
                   }),
                   action: () => {
                     X(), (0, A.openUserProfileModal)(B(U({}, ee), {
                       showGuildProfile: !0,
-                      friendToken: V,
+                      friendToken: W,
                       sourceAnalyticsLocations: Q
                     })), (0, y.pQ)(U({
                       action: "PRESS_VIEW_SERVER_PROFILE",
@@ -200,13 +200,13 @@ function D(e) {
                   user: n,
                   displayProfile: er,
                   guildId: D,
-                  channelId: W,
+                  channelId: G,
                   profileType: w.y0.FULL_SIZE
                 }), (0, r.jsx)(T.Z, {
                   location: "UserProfileModal",
                   user: n,
                   guildId: D,
-                  channelId: W,
+                  channelId: G,
                   profileType: w.y0.FULL_SIZE,
                   hasEntered: J === s.Dvm.ENTERED,
                   onCloseProfile: X,
@@ -217,9 +217,9 @@ function D(e) {
                     isCurrentUser: el,
                     user: n,
                     relationshipType: ei,
-                    friendToken: V,
+                    friendToken: W,
                     onClose: X
-                  }), (0, r.jsx)(N.Z, {
+                  }), (0, r.jsx)(P.Z, {
                     user: n,
                     guildId: D,
                     onClose: X
@@ -230,11 +230,11 @@ function D(e) {
               user: n,
               currentUser: t,
               guildId: D,
-              channelId: W,
+              channelId: G,
               displayProfile: er,
               initialSection: Y,
               initialSubsection: z,
-              friendToken: V,
+              friendToken: W,
               onClose: X
             })]
           }), (null == er ? void 0 : er.profileEffectId) != null && (0, r.jsx)(b.Z, {

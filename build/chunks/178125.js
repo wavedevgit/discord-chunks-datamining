@@ -32,7 +32,7 @@ function j(e) {
         className: g.modalHeaderTitle,
         children: [(0, t.jsx)(o.X6q, {
           variant: "text-lg/semibold",
-          children: x.NW.string(x.t["4wcdEx"])
+          children: x.intl.string(x.t["4wcdEx"])
         }), (0, t.jsx)(o.olH, {
           onClick: l
         })]
@@ -60,7 +60,7 @@ function j(e) {
         color: o.Ttl.PRIMARY,
         size: o.PhG.SMALL,
         onClick: l,
-        children: x.NW.string(x.t["/g10LC"])
+        children: x.intl.string(x.t["/g10LC"])
       }), (0, t.jsx)("div", {
         children: (0, t.jsx)(o.XZJ, {
           type: o.XZJ.Types.INVERTED,
@@ -69,7 +69,7 @@ function j(e) {
           children: (0, t.jsx)(o.Text, {
             variant: "text-sm/medium",
             color: "interactive-normal",
-            children: x.NW.string(x.t.UwOLJC)
+            children: x.intl.string(x.t.UwOLJC)
           })
         })
       })]
@@ -138,16 +138,16 @@ function I(e) {
         color: "interactive-normal",
         children: n.name
       })]
-    }), null != a ? (0, t.jsx)(Z, {
+    }), null != a ? (0, t.jsx)(_, {
       channelId: n.id
-    }) : (0, t.jsx)(N, {
+    }) : (0, t.jsx)(Z, {
       channelId: n.id,
       parentId: i
     })]
   }, n.id)
 }
 
-function N(e) {
+function Z(e) {
   let {
     channelId: n,
     parentId: l
@@ -159,11 +159,11 @@ function N(e) {
     onClick: function() {
       (0, f.kj)(n, l)
     },
-    children: x.NW.string(x.t.OYkgVl)
+    children: x.intl.string(x.t.OYkgVl)
   })
 }
 
-function Z(e) {
+function _(e) {
   let {
     channelId: n
   } = e;
@@ -174,6 +174,6 @@ function Z(e) {
     onClick: function() {
       (0, f.oC)(n)
     },
-    children: x.NW.string(x.t.N86XcH)
+    children: x.intl.string(x.t.N86XcH)
   })
 }

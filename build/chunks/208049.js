@@ -7,9 +7,9 @@ n.d(t, {
   Dx: () => I,
   HZ: () => x,
   R: () => w,
-  TB: () => N,
+  TB: () => A,
   XE: () => R,
-  hs: () => A,
+  hs: () => N,
   w: () => O,
   xR: () => P,
   xU: () => C,
@@ -122,16 +122,16 @@ async function T(e, t) {
   })
 }
 
-function N(e) {
+function A(e) {
   c.DZ.updateAsync("favoriteSoundboardSounds", t => i().size(t.soundIds) >= m.oX ? (s.Z.show({
-    title: g.NW.string(g.t["+XYXtb"]),
-    body: g.NW.formatToPlainString(g.t.JaIyFh, {
+    title: g.intl.string(g.t["+XYXtb"]),
+    body: g.intl.formatToPlainString(g.t.JaIyFh, {
       count: m.oX
     })
   }), !1) : !t.soundIds.includes(e) && void t.soundIds.push(e), m.fy.INFREQUENT_USER_ACTION)
 }
 
-function A(e) {
+function N(e) {
   c.DZ.updateAsync("favoriteSoundboardSounds", t => {
     t.soundIds = t.soundIds.filter(t => t !== e)
   }, m.fy.INFREQUENT_USER_ACTION)

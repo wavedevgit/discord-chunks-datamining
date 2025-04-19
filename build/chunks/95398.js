@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   ZP: () => R,
-  aQ: () => N
+  aQ: () => A
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -66,7 +66,7 @@ let O = e => {
     } = e;
     return (0, r.jsx)("div", {
       className: o()(m.spoilerWarning, t),
-      children: h.NW.string(h.t["F+x38P"])
+      children: h.intl.string(h.t["F+x38P"])
     })
   },
   I = e => {
@@ -85,7 +85,7 @@ let O = e => {
           variant: "text-sm/normal",
           color: "always-white",
           className: m.explicitContentWarningText,
-          children: h.NW.string(h.t.SpxcUV)
+          children: h.intl.string(h.t.SpxcUV)
         })]
       })
     })
@@ -128,7 +128,7 @@ let O = e => {
       children: (0, r.jsx)(l.P3F, {
         className: m.obscureHoverButton,
         onClick: i,
-        "aria-label": h.NW.string(h.t.ex5G9v),
+        "aria-label": h.intl.string(h.t.ex5G9v),
         children: n ? (0, r.jsx)(l.tEF, {
           size: "md",
           color: "currentColor"
@@ -139,8 +139,8 @@ let O = e => {
       })
     })
   },
-  N = i.createContext(!1);
-class A extends i.PureComponent {
+  A = i.createContext(!1);
+class N extends i.PureComponent {
   renderWithTooltip(e) {
     return (0, r.jsx)(l.ua7, {
       position: "left",
@@ -171,7 +171,7 @@ class A extends i.PureComponent {
       isVerifiedTeen: f
     } = this.props, {
       visible: p
-    } = this.state, h = (0, r.jsx)(N.Consumer, {
+    } = this.state, h = (0, r.jsx)(A.Consumer, {
       children: h => {
         let g = h || p || !a;
         return [_.wk.EXPLICIT_CONTENT, _.wk.POTENTIAL_EXPLICIT_CONTENT].includes(s) && !t ? (0, r.jsxs)("div", {
@@ -235,7 +235,7 @@ class A extends i.PureComponent {
     } = this.props, {
       visible: d
     } = this.state;
-    return (0, r.jsx)(N.Consumer, {
+    return (0, r.jsx)(A.Consumer, {
       children: f => {
         let p = f || d;
         return [_.wk.EXPLICIT_CONTENT, _.wk.POTENTIAL_EXPLICIT_CONTENT].includes(s) ? (0, r.jsxs)("div", {
@@ -289,7 +289,7 @@ class A extends i.PureComponent {
       className: n
     } = this.props, {
       visible: a
-    } = this.state, s = (0, r.jsx)(N.Consumer, {
+    } = this.state, s = (0, r.jsx)(A.Consumer, {
       children: s => {
         let c = s || a,
           u = i.Children.toArray(e(c)),
@@ -338,11 +338,11 @@ class A extends i.PureComponent {
     } = this.props;
     switch (e) {
       case _.wk.SPOILER:
-        return h.NW.string(h.t["F+x38P"]);
+        return h.intl.string(h.t["F+x38P"]);
       case _.wk.EXPLICIT_CONTENT:
-        return h.NW.string(h.t.mlJ8VV);
+        return h.intl.string(h.t.mlJ8VV);
       case _.wk.POTENTIAL_EXPLICIT_CONTENT:
-        return h.NW.string(h.t["MRdR7+"]);
+        return h.intl.string(h.t["MRdR7+"]);
       default:
         return (0, p.vE)(e)
     }
@@ -353,11 +353,11 @@ class A extends i.PureComponent {
     } = this.props;
     switch (e) {
       case _.wk.SPOILER:
-        return h.NW.string(h.t["F+x38P"]);
+        return h.intl.string(h.t["F+x38P"]);
       case _.wk.EXPLICIT_CONTENT:
-        return h.NW.string(h.t.mlJ8VV);
+        return h.intl.string(h.t.mlJ8VV);
       case _.wk.POTENTIAL_EXPLICIT_CONTENT:
-        return h.NW.string(h.t["MRdR7+"]);
+        return h.intl.string(h.t["MRdR7+"]);
       default:
         return (0, p.vE)(e)
     }
@@ -400,7 +400,7 @@ class A extends i.PureComponent {
 let C = e => {
   let t = (0, f.m8)() && e.reason === _.wk.EXPLICIT_CONTENT,
     n = (0, d.Jm)();
-  return (0, r.jsx)(A, y(E({}, e), {
+  return (0, r.jsx)(N, y(E({}, e), {
     shouldAgeVerify: t,
     isVerifiedTeen: n
   }))

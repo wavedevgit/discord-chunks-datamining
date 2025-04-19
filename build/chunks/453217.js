@@ -61,7 +61,7 @@ let h = function(e) {
           className: x.questProgressHint,
           color: "always-white",
           variant: "text-sm/semibold",
-          children: g.NW.string(g.t["7e5k7O"])
+          children: g.intl.string(g.t["7e5k7O"])
         })]
       }) : (0, r.jsxs)("div", {
         className: x.brandingWrapper,
@@ -72,7 +72,7 @@ let h = function(e) {
           color: "always-white",
           variant: "heading-sm/medium",
           className: x.questName,
-          children: g.NW.format(g.t.EAYZAg, {
+          children: g.intl.format(g.t.EAYZAg, {
             questName: j.config.messages.questName
           })
         })]

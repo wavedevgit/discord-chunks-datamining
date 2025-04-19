@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(192379),
   i = n(399606),
-  s = n(674180),
-  l = n(594174),
+  l = n(674180),
+  s = n(594174),
   a = n(63063),
   o = n(223892),
   c = n(58259),
@@ -20,59 +20,59 @@ function h(e) {
   let t, n = (0, o.Ob)(e),
     h = null == e ? void 0 : e.hasFeature(g.oNc.CREATOR_MONETIZABLE_PROVISIONAL),
     f = null == e ? void 0 : e.hasFeature(g.oNc.CREATOR_MONETIZABLE),
-    x = (0, i.e7)([l.default], () => {
-      let t = l.default.getCurrentUser();
+    x = (0, i.e7)([s.default], () => {
+      let t = s.default.getCurrentUser();
       return (null == e ? void 0 : e.isOwner(t)) === !0
     }),
     {
       error: b,
       loading: j,
-      createEnableRequest: N,
-      submittedRequest: _
+      createEnableRequest: _,
+      submittedRequest: v
     } = (0, c.Z)(null == e ? void 0 : e.id),
     {
-      loading: v,
-      error: O,
-      refresh: C,
-      eligibility: y
+      loading: O,
+      error: C,
+      refresh: y,
+      eligibility: N
     } = (0, d.Z)(null == e ? void 0 : e.id),
     {
       isApplicationRejected: I,
       requestCooldownDuration: E
-    } = (0, u.Z)(y),
+    } = (0, u.Z)(N),
     S = (null == e ? void 0 : e.hasFeature(g.oNc.CREATOR_MONETIZABLE_RESTRICTED)) === !0 || (null == e ? void 0 : e.hasFeature(g.oNc.CREATOR_MONETIZABLE_DISABLED)) === !0,
     {
       isMonetizationReapplicationDisabled: T
-    } = (0, s.eC)(null == e ? void 0 : e.id),
-    P = _ || (null == y ? void 0 : y.isApplicationPending) === !0,
-    w = (null == y ? void 0 : y.canApply) === !0,
-    R = p.NW.format(p.t.aJUdOj, {
+    } = (0, l.eC)(null == e ? void 0 : e.id),
+    P = v || (null == N ? void 0 : N.isApplicationPending) === !0,
+    w = (null == N ? void 0 : N.canApply) === !0,
+    R = p.intl.format(p.t.aJUdOj, {
       faqUrl: a.Z.getArticleURL(g.BhN.CREATOR_FAQ)
     });
-  I && T ? t = !0 === h ? p.NW.format(p.t["0o1Q+v"], {
+  I && T ? t = !0 === h ? p.intl.format(p.t["0o1Q+v"], {
     communityGuidelineUrl: g.EYA.GUIDELINES
-  }) : p.NW.format(p.t.b6h59v, {
+  }) : p.intl.format(p.t.b6h59v, {
     communityGuidelineUrl: g.EYA.GUIDELINES
-  }) : I && null != E && (t = p.NW.format(p.t.TvX209, {
+  }) : I && null != E && (t = p.intl.format(p.t.TvX209, {
     requestCooldownDuration: E,
     creatorRevenuePolicyUrl: a.Z.getArticleURL(g.BhN.CREATOR_POLICY)
   }));
   let Z = n && x && !1 === f,
     D = n && !1 === h,
     A = (0, m.f)(),
-    k = I && w && x ? p.NW.format(p.t.wbVIUF, {}) : void 0;
+    k = I && w && x ? p.intl.format(p.t.wbVIUF, {}) : void 0;
   return r.useEffect(() => {
-    Z && C()
-  }, [C, Z]), {
+    Z && y()
+  }, [y, Z]), {
     resubmittingEnableRequest: j,
     resubmissionError: b,
     isGuildOwner: x,
-    createEnableRequest: N,
-    resubmittedRequest: _,
-    eligibilityLoading: v,
-    eligibilityError: O,
-    refreshEligibility: C,
-    eligibility: y,
+    createEnableRequest: _,
+    resubmittedRequest: v,
+    eligibilityLoading: O,
+    eligibilityError: C,
+    refreshEligibility: y,
+    eligibility: N,
     eligibleForMonetization: w,
     isApplicationPending: P,
     hasPreviousApplicationRejection: I,

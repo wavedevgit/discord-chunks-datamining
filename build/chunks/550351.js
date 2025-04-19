@@ -46,7 +46,7 @@ function h(e) {
   return null != r && (i = Object.keys(c.Z.getVoiceStatesForChannel(r))), {
     id: u.default.fromTimestamp(Date.now()),
     version: d.Bg,
-    applicationName: null != t ? t : _.NW.string(_.t.qtSJxc),
+    applicationName: null != t ? t : _.intl.string(_.t.qtSJxc),
     applicationId: n,
     users: i,
     clipMethod: "manual",

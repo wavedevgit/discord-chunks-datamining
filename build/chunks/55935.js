@@ -3,7 +3,7 @@
 n.d(t, {
   Hg: () => I,
   KC: () => m,
-  QX: () => N,
+  QX: () => A,
   TD: () => T,
   Xf: () => y,
   Y4: () => b,
@@ -125,14 +125,14 @@ function T(e, t) {
   }), r
 }
 
-function N(e, t) {
-  return e.days > 0 ? c.NW.formatToPlainString(t.days, {
+function A(e, t) {
+  return e.days > 0 ? c.intl.formatToPlainString(t.days, {
     days: e.days,
     hours: e.hours
-  }) : e.hours > 0 ? c.NW.formatToPlainString(t.hours, {
+  }) : e.hours > 0 ? c.intl.formatToPlainString(t.hours, {
     hours: e.hours,
     minutes: e.minutes
-  }) : c.NW.formatToPlainString(t.minutes, {
+  }) : c.intl.formatToPlainString(t.minutes, {
     minutes: Math.max(1, e.minutes)
   })
 }

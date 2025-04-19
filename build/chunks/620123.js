@@ -3,13 +3,13 @@ n.d(t, {
   Z: () => h
 }), n(388685);
 var s = n(200651),
-  r = n(192379),
-  i = n(442837),
-  l = n(481060),
+  i = n(192379),
+  l = n(442837),
+  r = n(481060),
   a = n(16084),
   o = n(55563),
   d = n(388032);
-class c extends r.Component {
+class c extends i.Component {
   componentDidMount() {
     let {
       applicationId: e,
@@ -32,17 +32,17 @@ class c extends r.Component {
       skus: e,
       selectedSkuId: t,
       className: n
-    } = this.props, r = null != e && 0 === e.length;
-    return (0, s.jsx)(l.q4e, {
+    } = this.props, i = null != e && 0 === e.length;
+    return (0, s.jsx)(r.q4e, {
       options: null != e ? e.map(e => ({
         label: e.name,
         value: e.id
       })) : [],
-      placeholder: r ? d.NW.string(d.t.hKcgPz) : d.NW.string(d.t.QV60Ul),
+      placeholder: i ? d.intl.string(d.t.hKcgPz) : d.intl.string(d.t.QV60Ul),
       value: t,
       onChange: this.handleChange,
       className: n,
-      isDisabled: r
+      isDisabled: i
     })
   }
   constructor(...e) {
@@ -57,7 +57,7 @@ class c extends r.Component {
     }) : this[t] = n
   }
 }
-let h = i.ZP.connectStores([o.Z], e => {
+let h = l.ZP.connectStores([o.Z], e => {
   let {
     applicationId: t
   } = e;

@@ -5,8 +5,8 @@ n.d(e, {
 }), n(953529), n(388685), n(704826), n(35282), n(781311);
 var r = n(200651),
   o = n(192379),
-  a = n(481060),
-  i = n(881052),
+  i = n(481060),
+  a = n(881052),
   l = n(246364),
   c = n(915509),
   s = n(592286),
@@ -43,7 +43,7 @@ function b(t) {
   } = t, [x, h] = o.useState(null != (e = null == g ? void 0 : g.label) ? e : ""), [f, j] = o.useState(null), C = async () => {
     null != f && j(null);
     let t = x.trim();
-    if ("" === t) return void j(d.NW.string(d.t["G+TI4+"]));
+    if ("" === t) return void j(d.intl.string(d.t["G+TI4+"]));
     try {
       await m({
         field_type: b,
@@ -51,7 +51,7 @@ function b(t) {
         required: !0
       }), y()
     } catch (t) {
-      j(new i.Hx(t).getAnyErrorMessage())
+      j(new a.Hx(t).getAnyErrorMessage())
     }
   };
   return (0, r.jsx)(c.Z, (n = u({}, t), l = l = {
@@ -60,13 +60,13 @@ function b(t) {
     description: _,
     onConfirm: C,
     onCancel: y,
-    children: (0, r.jsx)(a.oil, {
+    children: (0, r.jsx)(i.oil, {
       onChange: t => {
         null != f && j(null);
         let e = t.replace(/(\r\n|\n|\r)/g, " ");
         e.length > s.XN && (e = e.slice(0, s.XN)), h(e)
       },
-      placeholder: d.NW.string(d.t.fqVmbG),
+      placeholder: d.intl.string(d.t.fqVmbG),
       value: x,
       onKeyDown: t => "Enter" === t.key && C()
     })
@@ -84,16 +84,16 @@ function b(t) {
 
 function p(t) {
   return (0, r.jsx)(b, u({
-    title: d.NW.string(d.t.w6Q9w8),
-    description: d.NW.string(d.t["A6M+qq"]),
+    title: d.intl.string(d.t.w6Q9w8),
+    description: d.intl.string(d.t["A6M+qq"]),
     type: l.QJ.TEXT_INPUT
   }, t))
 }
 
 function _(t) {
   return (0, r.jsx)(b, u({
-    title: d.NW.string(d.t.gG0JBA),
-    description: d.NW.string(d.t.SMX0iY),
+    title: d.intl.string(d.t.gG0JBA),
+    description: d.intl.string(d.t.SMX0iY),
     type: l.QJ.PARAGRAPH
   }, t))
 }

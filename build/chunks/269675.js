@@ -20,12 +20,12 @@ var r = n(200651),
   _ = n(730647),
   E = n(772021),
   O = n(396828),
-  N = n(293423),
-  y = n(20967),
-  I = n(504762),
-  v = n(807152),
-  C = n(176505),
-  S = n(388032),
+  y = n(293423),
+  I = n(20967),
+  v = n(504762),
+  C = n(807152),
+  S = n(176505),
+  N = n(388032),
   T = n(86492);
 
 function P(e) {
@@ -36,17 +36,17 @@ function P(e) {
     restrictionsLoading: w
   } = (0, h.uP)(t), R = null == n || !x || Z || w;
   (0, u.Tt)({
-    subsection: S.NW.string(S.t["KzCF//"]),
+    subsection: N.intl.string(N.t["KzCF//"]),
     location: null == n ? void 0 : n.name
   }), (0, c.Z)(l.tq ? "role-subscriptions-overview" : void 0);
   let D = P && (null == n || !(j || A) || L && !w);
   if (i.useEffect(() => {
       s.jg()
     }, []), i.useEffect(() => {
-      D && !l.tq && (0, d.M)(t, C.oC.ROLE_SUBSCRIPTIONS)
+      D && !l.tq && (0, d.M)(t, S.oC.ROLE_SUBSCRIPTIONS)
     }, [t, D]), l.tq && D) {
-    let e = null == n ? y.J.NOT_GUILD_MEMBER : y.J.GUILD_NOT_ELIGIBLE;
-    return (0, r.jsx)(y.z, {
+    let e = null == n ? I.J.NOT_GUILD_MEMBER : I.J.GUILD_NOT_ELIGIBLE;
+    return (0, r.jsx)(I.z, {
       errorType: e
     })
   }
@@ -59,21 +59,21 @@ function P(e) {
         icon: (0, o.GSL)(O.Z),
         "aria-hidden": !0
       }), (0, r.jsx)(g.Z.Title, {
-        children: S.NW.string(S.t["KzCF//"])
+        children: N.intl.string(N.t["KzCF//"])
       })]
     }), (0, r.jsx)("div", {
-      id: v.v
+      id: C.v
     }), (0, r.jsx)("div", {
       className: T.content,
       children: j ? (0, r.jsx)(o.u2D, {
         className: T.scroller,
         children: (0, r.jsx)("div", {
           className: T.scrollerContent,
-          children: R ? (0, r.jsx)(o.$jN, {}) : (0, r.jsx)(N.Z, {
+          children: R ? (0, r.jsx)(o.$jN, {}) : (0, r.jsx)(y.Z, {
             guild: n
           })
         })
-      }) : (0, r.jsx)(I.Z, {})
+      }) : (0, r.jsx)(v.Z, {})
     })]
   })
 }

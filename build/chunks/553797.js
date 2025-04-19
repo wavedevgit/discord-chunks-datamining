@@ -21,11 +21,11 @@ function u(e) {
     intervalCount: d = 1,
     isPrepaidPaymentSource: f = !1
   } = e, _ = (0, o.T4)(t, n), p = null;
-  return i === s.rV.YEAR ? p = l.NW.format(l.t["3U719v"], {
+  return i === s.rV.YEAR ? p = l.intl.format(l.t["3U719v"], {
     price: _
-  }) : i === s.rV.MONTH && 1 === d ? p = l.NW.format(l.t.NkR7BQ, {
+  }) : i === s.rV.MONTH && 1 === d ? p = l.intl.format(l.t.NkR7BQ, {
     price: _
-  }) : i === s.rV.MONTH && d > 1 && (p = l.NW.format(l.t.CNAGg4, {
+  }) : i === s.rV.MONTH && d > 1 && (p = l.intl.format(l.t.CNAGg4, {
     price: _,
     intervalCount: d
   })), (0, r.jsx)("div", {

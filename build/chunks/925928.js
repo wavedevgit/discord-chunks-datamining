@@ -33,17 +33,17 @@ function _(e) {
     seconds: t,
     getFormatter: n
   } = e, r = n(), i = "";
-  return t < o ? a.NW.formatToPlainString(r.minutes, {
+  return t < o ? a.intl.formatToPlainString(r.minutes, {
     minutes: 1
-  }) : t < s ? a.NW.formatToPlainString(r.minutes, {
+  }) : t < s ? a.intl.formatToPlainString(r.minutes, {
     minutes: Math.floor(t / o)
-  }) : t < l ? a.NW.formatToPlainString(r.hours, {
+  }) : t < l ? a.intl.formatToPlainString(r.hours, {
     hours: Math.floor(t / s)
-  }) : t < c ? a.NW.formatToPlainString(r.days, {
+  }) : t < c ? a.intl.formatToPlainString(r.days, {
     days: Math.floor(t / l)
-  }) : t < u ? a.NW.formatToPlainString(r.months, {
+  }) : t < u ? a.intl.formatToPlainString(r.months, {
     months: Math.floor(t / c)
-  }) : a.NW.formatToPlainString(r.years, {
+  }) : a.intl.formatToPlainString(r.years, {
     years: Math.floor(t / u)
   })
 }

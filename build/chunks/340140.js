@@ -2,11 +2,11 @@
 n.d(e, {
   default: () => h
 }), n(388685);
-var r = n(200651),
-  l = n(192379),
-  s = n(481060),
-  a = n(600164),
-  i = n(538211),
+var l = n(200651),
+  r = n(192379),
+  i = n(481060),
+  s = n(600164),
+  a = n(538211),
   o = n(698066),
   c = n(648159),
   u = n(388032),
@@ -21,66 +21,66 @@ function m(t, e, n) {
     writable: !0
   }) : t[e] = n, t
 }
-class f extends l.PureComponent {
+class f extends r.PureComponent {
   render() {
     let {
       isStreamer: t,
       transitionState: e,
       onClose: n
     } = this.props, {
-      problem: l
+      problem: r
     } = this.state;
-    return (0, r.jsxs)(s.Y0X, {
+    return (0, l.jsxs)(i.Y0X, {
       transitionState: e,
-      size: s.CgR.SMALL,
-      "aria-label": u.NW.string(u.t.qnJ9W1),
-      children: [(0, r.jsx)(c.Z, {}), (0, r.jsxs)(s.xBx, {
+      size: i.CgR.SMALL,
+      "aria-label": u.intl.string(u.t.qnJ9W1),
+      children: [(0, l.jsx)(c.Z, {}), (0, l.jsxs)(i.xBx, {
         separator: !1,
         className: d.modalHeader,
-        children: [(0, r.jsx)(s.X6q, {
+        children: [(0, l.jsx)(i.X6q, {
           variant: "text-md/semibold",
           className: b.title,
-          children: u.NW.string(u.t.qnJ9W1)
-        }), (0, r.jsx)(s.olH, {
+          children: u.intl.string(u.t.qnJ9W1)
+        }), (0, l.jsx)(i.olH, {
           className: b.closeButton,
           innerClassName: d.modalInnerCloseButton,
           onClick: n
         })]
-      }), (0, r.jsxs)(s.hzk, {
+      }), (0, l.jsxs)(i.hzk, {
         className: b.content,
-        children: [(0, r.jsx)(s.Text, {
+        children: [(0, l.jsx)(i.Text, {
           variant: "text-sm/normal",
-          children: u.NW.string(u.t["7vw0h4"])
-        }), (0, r.jsx)(s.xJW, {
-          title: u.NW.string(u.t["6Y1t5O"]),
-          children: (0, r.jsx)(s.q4e, {
-            placeholder: u.NW.string(u.t.U0kGk5),
-            options: (0, i.Z)({
+          children: u.intl.string(u.t["7vw0h4"])
+        }), (0, l.jsx)(i.xJW, {
+          title: u.intl.string(u.t["6Y1t5O"]),
+          children: (0, l.jsx)(i.q4e, {
+            placeholder: u.intl.string(u.t.U0kGk5),
+            options: (0, a.Z)({
               isStreamer: t,
               isEndStream: !1,
               showVibesHoneypot: !1
             }),
             onChange: this.handleChanged,
-            value: l,
+            value: r,
             maxVisibleItems: 4
           })
-        }), (0, r.jsx)("div", {
+        }), (0, l.jsx)("div", {
           className: d.art
         })]
-      }), (0, r.jsxs)(s.mzw, {
+      }), (0, l.jsxs)(i.mzw, {
         className: b.__invalid_footer,
-        children: [(0, r.jsx)(s.zxk, {
-          color: s.zxk.Colors.BRAND,
-          disabled: null == l,
+        children: [(0, l.jsx)(i.zxk, {
+          color: i.zxk.Colors.BRAND,
+          disabled: null == r,
           onClick: this.handleSubmit,
-          children: u.NW.string(u.t.E48BIS)
-        }), (0, r.jsx)(a.Z, {
-          children: (0, r.jsx)(s.zxk, {
-            look: s.zxk.Looks.LINK,
-            color: s.zxk.Colors.PRIMARY,
-            size: s.zxk.Sizes.NONE,
+          children: u.intl.string(u.t.E48BIS)
+        }), (0, l.jsx)(s.Z, {
+          children: (0, l.jsx)(i.zxk, {
+            look: i.zxk.Looks.LINK,
+            color: i.zxk.Colors.PRIMARY,
+            size: i.zxk.Sizes.NONE,
             onClick: n,
-            children: u.NW.string(u.t["ETE/oK"])
+            children: u.intl.string(u.t["ETE/oK"])
           })
         })]
       })]
@@ -97,35 +97,35 @@ class f extends l.PureComponent {
       let {
         stream: t,
         streamApplication: e,
-        analyticsData: l,
-        onClose: a
+        analyticsData: r,
+        onClose: s
       } = this.props, {
-        problem: i
+        problem: a
       } = this.state;
       (0, o.Z)({
-        problem: i,
+        problem: a,
         stream: t,
         feedback: "",
         streamApplication: e,
-        analyticsData: l,
+        analyticsData: r,
         location: "Stream"
-      }), a(), (0, s.ZDy)(async () => {
+      }), s(), (0, i.ZDy)(async () => {
         let {
           default: t
         } = await n.e("14466").then(n.bind(n, 729328));
-        return e => (0, r.jsx)(t, function(t) {
+        return e => (0, l.jsx)(t, function(t) {
           for (var e = 1; e < arguments.length; e++) {
             var n = null != arguments[e] ? arguments[e] : {},
-              r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
+              l = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
               return Object.getOwnPropertyDescriptor(n, t).enumerable
-            }))), r.forEach(function(e) {
+            }))), l.forEach(function(e) {
               m(t, e, n[e])
             })
           }
           return t
         }({
-          body: u.NW.string(u.t.mMTVnp)
+          body: u.intl.string(u.t.mMTVnp)
         }, e))
       })
     })

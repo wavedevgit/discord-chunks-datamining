@@ -24,7 +24,7 @@ function f(e) {
   } = (0, o.ZP)();
   return (0, i.e7)([l.Z], () => null != l.Z.getAccount(null, t)) ? null : (0, r.jsx)(c.tG, {
     icon: n,
-    text: d.NW.formatToPlainString(d.t.XWSHTU, {
+    text: d.intl.formatToPlainString(d.t.XWSHTU, {
       platform: a.Z.get(t).name
     }),
     fullWidth: !0,

@@ -31,7 +31,7 @@ let f = o.ZP.connectStores([u.Z], () => ({
         className: p.headerText,
         children: [(0, i.jsx)("div", {
           className: p.label,
-          children: d.NW.string(d.t.vmzMZG)
+          children: d.intl.string(d.t.vmzMZG)
         }), (0, i.jsx)("div", {
           className: p.username,
           children: t.username

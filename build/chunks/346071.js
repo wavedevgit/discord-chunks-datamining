@@ -34,12 +34,12 @@ function f(e) {
         hours: u.t["8Xm6uL"]
       }
     };
-  return (p.days > 0 && p.hours > 0 ? m = u.NW.format(g[n].days_and_hours, {
+  return (p.days > 0 && p.hours > 0 ? m = u.intl.format(g[n].days_and_hours, {
     days: p.days,
     hours: p.hours
-  }) : p.days > 0 ? m = u.NW.format(g[n].days, {
+  }) : p.days > 0 ? m = u.intl.format(g[n].days, {
     days: p.days
-  }) : p.hours > 0 && (m = u.NW.format(g[n].hours, {
+  }) : p.hours > 0 && (m = u.intl.format(g[n].hours, {
     hours: p.hours
   })), "" === m) ? null : (0, r.jsxs)("div", {
     className: d.activeFractionalPremiumBannerContainer,

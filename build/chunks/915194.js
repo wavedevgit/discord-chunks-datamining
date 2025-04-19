@@ -5,9 +5,9 @@ i.d(n, {
 var r = i(200651);
 i(192379);
 var e = i(442837),
-  o = i(481060),
-  s = i(812206),
-  t = i(600164),
+  t = i(481060),
+  o = i(812206),
+  s = i(600164),
   a = i(922156),
   c = i(63063),
   d = i(388032),
@@ -19,11 +19,11 @@ let p = l => {
   } = l, {
     error: p,
     applicationName: h
-  } = (0, e.cj)([a.Z, s.Z], () => {
+  } = (0, e.cj)([a.Z, o.Z], () => {
     let l = a.Z.getLastError(),
       n = null;
     if (null != l && null != l.applicationId) {
-      let i = s.Z.getApplication(l.applicationId);
+      let i = o.Z.getApplication(l.applicationId);
       null != i && (n = i.name)
     }
     return {
@@ -31,38 +31,38 @@ let p = l => {
       applicationName: n
     }
   });
-  return (0, r.jsxs)(o.Y0X, {
+  return (0, r.jsxs)(t.Y0X, {
     transitionState: i,
-    size: o.CgR.SMALL,
-    "aria-label": d.NW.string(d.t["6kHRYG"]),
-    children: [(0, r.jsxs)(o.xBx, {
-      justify: t.Z.Justify.BETWEEN,
+    size: t.CgR.SMALL,
+    "aria-label": d.intl.string(d.t["6kHRYG"]),
+    children: [(0, r.jsxs)(t.xBx, {
+      justify: s.Z.Justify.BETWEEN,
       separator: !1,
-      children: [(0, r.jsx)(t.Z.Child, {
+      children: [(0, r.jsx)(s.Z.Child, {
         grow: 1,
-        children: (0, r.jsx)(o.X6q, {
+        children: (0, r.jsx)(t.X6q, {
           variant: "heading-lg/semibold",
-          children: d.NW.string(d.t["6kHRYG"])
+          children: d.intl.string(d.t["6kHRYG"])
         })
-      }), (0, r.jsx)(t.Z.Child, {
+      }), (0, r.jsx)(s.Z.Child, {
         grow: 0,
-        children: (0, r.jsx)(o.olH, {
+        children: (0, r.jsx)(t.olH, {
           onClick: n
         })
       })]
-    }), (0, r.jsx)(o.hzk, {
+    }), (0, r.jsx)(t.hzk, {
       children: (0, r.jsxs)("div", {
         className: u.body,
         children: [(0, r.jsx)("div", {
-          children: d.NW.format(d.t["NnE/6O"], {
+          children: d.intl.format(d.t["NnE/6O"], {
             link: "https://dis.gd/dispatch-error"
           })
         }), (0, r.jsx)("div", {
           className: u.supportCallToAction,
-          children: d.NW.string(d.t["o+efY2"])
+          children: d.intl.string(d.t["o+efY2"])
         }), (0, r.jsx)("div", {
           className: u.errorLabel,
-          children: d.NW.string(d.t.BiSnZ2)
+          children: d.intl.string(d.t.BiSnZ2)
         }), (0, r.jsx)("div", {
           className: u.errorDetails,
           children: (0, r.jsxs)("div", {
@@ -70,17 +70,17 @@ let p = l => {
           })
         })]
       })
-    }), (0, r.jsxs)(o.mzw, {
-      children: [(0, r.jsx)(o.zxk, {
+    }), (0, r.jsxs)(t.mzw, {
+      children: [(0, r.jsx)(t.zxk, {
         onClick: () => {
           window.open(c.Z.getSubmitRequestURL())
         },
-        children: d.NW.string(d.t.VdyWmJ)
-      }), (0, r.jsx)(o.zxk, {
-        look: o.zxk.Looks.LINK,
+        children: d.intl.string(d.t.VdyWmJ)
+      }), (0, r.jsx)(t.zxk, {
+        look: t.zxk.Looks.LINK,
         onClick: n,
         color: u.closeLink,
-        children: d.NW.string(d.t.cpT0Cg)
+        children: d.intl.string(d.t.cpT0Cg)
       })]
     })]
   })

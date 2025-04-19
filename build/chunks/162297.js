@@ -4,8 +4,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(990547),
-  l = n(399606),
+  l = n(990547),
+  a = n(399606),
   o = n(100527),
   s = n(906732),
   c = n(213609),
@@ -18,15 +18,15 @@ function f(e) {
   let {
     applicationId: t,
     embedUrl: n
-  } = e, [a, o, s] = (0, l.Wu)([d.Z], () => [d.Z.getApplication(t), d.Z.isFetchingApplication(t), d.Z.didFetchingApplicationFail(t)], [t]);
+  } = e, [l, o, s] = (0, a.Wu)([d.Z], () => [d.Z.getApplication(t), d.Z.isFetchingApplication(t), d.Z.didFetchingApplicationFail(t)], [t]);
   return (i.useEffect(() => {
-    null != a || o || s || u.ZP.fetchApplication(t)
-  }, [a, o, s, t]), null != a && (0, m.Eb)({
-    customInstallUrl: a.customInstallUrl,
-    installParams: a.installParams,
-    integrationTypesConfig: a.integrationTypesConfig
+    null != l || o || s || u.ZP.fetchApplication(t)
+  }, [l, o, s, t]), null != l && (0, m.Eb)({
+    customInstallUrl: l.customInstallUrl,
+    installParams: l.installParams,
+    integrationTypesConfig: l.integrationTypesConfig
   })) ? (0, r.jsx)(h, {
-    application: a,
+    application: l,
     embedUrl: n
   }) : null
 }
@@ -35,10 +35,10 @@ function h(e) {
   let {
     application: t,
     embedUrl: n
-  } = e, l = i.useCallback(() => {
+  } = e, a = i.useCallback(() => {
     (0, c.h)({
-      type: a.ImpressionTypes.VIEW,
-      name: a.ImpressionNames.APP_OAUTH2_LINK_EMBED,
+      type: l.ImpressionTypes.VIEW,
+      name: l.ImpressionNames.APP_OAUTH2_LINK_EMBED,
       properties: {
         application_id: t.id
       }
@@ -52,7 +52,7 @@ function h(e) {
       app: t,
       embedUrl: n,
       linkType: p.U.OAUTH,
-      onView: l
+      onView: a
     })
   })
 }

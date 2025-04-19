@@ -5,9 +5,9 @@ r.d(t, {
 var n = r(200651),
   i = r(192379),
   o = r(348327),
-  c = r.n(o),
-  a = r(658722),
-  l = r.n(a),
+  l = r.n(o),
+  c = r(658722),
+  a = r.n(c),
   s = r(442837),
   u = r(481060),
   d = r(492435),
@@ -54,12 +54,12 @@ function j() {
           currentBucket: null != n ? n.bucket : -1
         }
       })
-    }, [], c()),
+    }, [], l()),
     [t, r] = i.useState(""),
-    [o, a] = i.useState([]);
+    [o, c] = i.useState([]);
   i.useEffect(() => {
-    if (0 === t.trim().length) return void a(e);
-    a(e.filter(e => l()(t, e.experiment.title.toLowerCase())))
+    if (0 === t.trim().length) return void c(e);
+    c(e.filter(e => a()(t, e.experiment.title.toLowerCase())))
   }, [e, t]);
   let d = i.useMemo(() => o.filter(e => {
       let {
@@ -78,7 +78,7 @@ function j() {
   return [(0, n.jsx)(u.II_, {
     id: "experiments-search",
     control: (e, i) => {
-      var o, c;
+      var o, l;
       return (0, n.jsx)(u.ne, (o = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
@@ -96,20 +96,20 @@ function j() {
           })
         }
         return e
-      }({}, e), c = c = {
+      }({}, e), l = l = {
         query: t,
         onChange: r,
         ref: i,
-        placeholder: g.NW.string(g.t["5h0QOD"])
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(c)) : (function(e, t) {
+        placeholder: g.intl.string(g.t["5h0QOD"])
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e);
           r.push.apply(r, n)
         }
         return r
-      })(Object(c)).forEach(function(e) {
-        Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(c, e))
+      })(Object(l)).forEach(function(e) {
+        Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(l, e))
       }), o))
     }
   }, "experiments-search"), (0, n.jsx)(u.Clw, {}, "separator"), ...j, j.length > 0 ? (0, n.jsx)(u.Clw, {}, "separator-2") : null, ...O]

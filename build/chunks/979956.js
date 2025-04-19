@@ -6,17 +6,17 @@ n.d(t, {
 }), n(539854);
 var i = n(476326),
   o = n(403182),
-  r = n(74538),
-  l = n(474936),
+  l = n(74538),
+  r = n(474936),
   a = n(388032);
 
 function c(e, t) {
   let n = o.Ng(o.dg(t));
-  return r.ZP.isPremium(e, l.p9.TIER_2) ? a.NW.formatToPlainString(a.t.fxEKdX, {
+  return l.ZP.isPremium(e, r.p9.TIER_2) ? a.intl.formatToPlainString(a.t.fxEKdX, {
     maxSize: n
-  }) : r.ZP.isPremium(e, l.p9.TIER_1) ? a.NW.formatToPlainString(a.t["Nr+Lsb"], {
+  }) : l.ZP.isPremium(e, r.p9.TIER_1) ? a.intl.formatToPlainString(a.t["Nr+Lsb"], {
     maxSize: n
-  }) : a.NW.formatToPlainString(a.t.fxEKdX, {
+  }) : a.intl.formatToPlainString(a.t.fxEKdX, {
     maxSize: n
   })
 }

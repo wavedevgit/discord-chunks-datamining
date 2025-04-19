@@ -7,8 +7,8 @@ n(192379);
 var i = n(481060),
   c = n(480916),
   o = n(986035),
-  a = n(388032),
-  l = n(165862);
+  l = n(388032),
+  a = n(165862);
 
 function s(e) {
   var t, n, {
@@ -61,13 +61,13 @@ function s(e) {
         onDisagree: () => {
           g(), p()
         },
-        title: a.NW.string(a.t.SSDPOD),
-        description: a.NW.formatToPlainString(a.t.OgmIq6, {
+        title: l.intl.string(l.t.SSDPOD),
+        description: l.intl.formatToPlainString(l.t.OgmIq6, {
           applicationName: s.name
         }),
-        agreement: a.NW.string(a.t.wVq7ur),
-        disagreement: a.NW.string(a.t.hg1uxs),
-        imageClassName: l.image
+        agreement: l.intl.string(l.t.wVq7ur),
+        disagreement: l.intl.string(l.t.hg1uxs),
+        imageClassName: a.image
       })
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

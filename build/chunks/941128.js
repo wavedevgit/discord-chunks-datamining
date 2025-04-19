@@ -33,8 +33,8 @@ let y = [E.ff.AUTHENTICATION_FAILED, E.ff.NOT_ENTITLED],
   I = [],
   S = !1,
   T = null,
-  N = null,
-  A = !1,
+  A = null,
+  N = !1,
   C = new Map,
   R = !1,
   P = null;
@@ -49,7 +49,7 @@ function w() {
 }
 
 function D(e, t) {
-  return null != T && T.applicationId === e && T.branchId === t || null != N && N.applicationId === e && N.branchId === t
+  return null != T && T.applicationId === e && T.branchId === t || null != A && A.applicationId === e && A.branchId === t
 }
 
 function L() {
@@ -150,9 +150,9 @@ function H(e) {
   let {
     state: t
   } = e;
-  !A && (A = !0, L(), S || p.Z.resume());
+  !N && (N = !0, L(), S || p.Z.resume());
   let n = S;
-  S = t.paused, T = t.currentTask, N = t.nextTask;
+  S = t.paused, T = t.currentTask, A = t.nextTask;
   let r = !1;
   O = O.filter(e => {
     let {
@@ -178,20 +178,20 @@ function H(e) {
   }), L(), (r || n !== S) && w()
 }
 
-function W() {
+function Y() {
   let e = d.default.getToken(),
     t = d.default.getId();
   null != e && p.Z.setCredentials(t, e)
 }
 
-function Y(e) {
+function W(e) {
   let {
     error: t
   } = e, {
     code: n
   } = t;
   if (null != n) {
-    if (y.includes(n)) W();
+    if (y.includes(n)) Y();
     else if (n === E.ff.APPLICATION_NOT_FOUND) {
       let {
         context: e
@@ -214,7 +214,7 @@ function K() {
 }
 
 function z() {
-  (0, h.isDesktop)() && W()
+  (0, h.isDesktop)() && Y()
 }
 
 function q() {
@@ -268,7 +268,7 @@ let J = new X(l.Z, {
   DISPATCH_APPLICATION_MOVE_UP: V,
   DISPATCH_APPLICATION_REMOVE_FINISHED: Z,
   DISPATCH_APPLICATION_STATE_UPDATE: H,
-  DISPATCH_APPLICATION_ERROR: Y,
+  DISPATCH_APPLICATION_ERROR: W,
   CONNECTION_OPEN: z,
   LOGOUT: q
 })

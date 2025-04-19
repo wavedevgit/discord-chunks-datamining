@@ -1,11 +1,11 @@
 /** Chunk was on 99927 **/
-a.d(t, {
+n.d(t, {
   Ui: () => o,
   p$: () => c
 });
-var n = a(818083),
-  r = a(981631);
-let i = (0, n.B)({
+var a = n(818083),
+  r = n(981631);
+let i = (0, a.B)({
   kind: "guild",
   id: "2023-03_guild_media_channel",
   label: "Media Channel",
@@ -24,16 +24,16 @@ let i = (0, n.B)({
 function o(e) {
   var t;
   let {
-    enabled: a
+    enabled: n
   } = i.useExperiment({
     guildId: null != (t = null == e ? void 0 : e.id) ? t : r.lds,
     location: "96e84c_1"
   }, {
     autoTrackExposure: !0
   });
-  return (null == e ? void 0 : e.id) != null && a
+  return (null == e ? void 0 : e.id) != null && n
 }
-let l = (0, n.B)({
+let l = (0, a.B)({
   kind: "user",
   id: "2023-04_guild_media_channel_post_preview_embed_users",
   label: "Guild Role Subscription Users",

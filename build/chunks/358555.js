@@ -64,7 +64,7 @@ function S(e, t) {
 
 function T(e, t) {
   if (null == e) return {};
-  var n, r, i = N(e, t);
+  var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -72,7 +72,7 @@ function T(e, t) {
   return i
 }
 
-function N(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -80,7 +80,7 @@ function N(e, t) {
   return i
 }
 
-function A(e) {
+function N(e) {
   let {
     guild: t,
     isBannerVisible: n,
@@ -102,13 +102,13 @@ function A(e) {
         }
       })
     },
-    v = u === E.Eu4.NONE ? b.NW.string(b.t.c2wsn5) : g.nW(u),
+    v = u === E.Eu4.NONE ? b.intl.string(b.t.c2wsn5) : g.nW(u),
     I = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: y.tierTooltipTitle,
         children: v
       }), (0, r.jsx)("div", {
-        children: b.NW.format(b.t.If4iTU, {
+        children: b.intl.format(b.t.If4iTU, {
           subscriberCount: d
         })
       })]
@@ -186,7 +186,7 @@ function R(e) {
   }) : t.hasFeature(E.oNc.VERIFIED) || t.hasFeature(E.oNc.PARTNERED) ? (0, r.jsx)(C, {
     guild: t,
     disableColor: !a
-  }) : (0, r.jsx)(A, {
+  }) : (0, r.jsx)(N, {
     guild: t,
     isBannerVisible: a,
     disableBoostClick: n

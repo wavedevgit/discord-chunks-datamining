@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   D: () => S,
-  Z: () => N
+  Z: () => A
 });
 var r = n(200651),
   i = n(192379),
@@ -96,7 +96,7 @@ function T(e) {
       url: y,
       proxyUrl: I,
       alt: T,
-      type: N,
+      type: A,
       maxWidth: C,
       maxHeight: R
     } = n,
@@ -105,9 +105,9 @@ function T(e) {
       zoomed: w,
       setZoomed: D
     } = (0, m.Y)(),
-    L = A(w, y, I),
+    L = N(w, y, I),
     x = null != p && 0 !== p && null != E && 0 !== E;
-  if ("VIDEO" === N && x && null != I) {
+  if ("VIDEO" === A && x && null != I) {
     var M;
     let e = S(I);
     if (null == e) return null;
@@ -131,7 +131,7 @@ function T(e) {
       onContextMenu: f
     }))
   }
-  return "IMAGE" === N && (t = x ? (0, r.jsx)(l.ZP, v(b({}, P), {
+  return "IMAGE" === A && (t = x ? (0, r.jsx)(l.ZP, v(b({}, P), {
     src: L,
     width: p,
     height: E,
@@ -168,9 +168,9 @@ function T(e) {
     children: t
   }) : null
 }
-let N = i.memo(T);
+let A = i.memo(T);
 
-function A(e, t, n) {
+function N(e, t, n) {
   return e && (0, s.rV)(t) ? (0, s.s$)(t) : (0, f.q)({
     proxyURL: n,
     url: t

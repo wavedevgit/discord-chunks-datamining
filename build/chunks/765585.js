@@ -3,9 +3,9 @@ r.d(t, {
   Z: () => g
 }), r(388685);
 var n = r(200651),
-  s = r(192379),
-  i = r(120356),
-  l = r.n(i),
+  i = r(192379),
+  s = r(120356),
+  l = r.n(s),
   o = r(481060),
   a = r(393238),
   c = r(605236),
@@ -13,10 +13,10 @@ var n = r(200651),
   d = r(921944),
   p = r(388032),
   f = r(418952);
-let g = s.forwardRef(function(e, t) {
+let g = i.forwardRef(function(e, t) {
   let {
     body: r,
-    header: i,
+    header: s,
     artClassName: g,
     headerClassName: y,
     contentClassName: C,
@@ -41,21 +41,21 @@ let g = s.forwardRef(function(e, t) {
     dismissIcon: Z,
     onDismissIconClick: R,
     tryItButtonColor: M
-  } = e, k = S ? o.zxk.Sizes.LARGE : o.zxk.Sizes.MAX, [G, U] = s.useState(!1), {
+  } = e, k = S ? o.zxk.Sizes.LARGE : o.zxk.Sizes.MAX, [G, U] = i.useState(!1), {
     ref: F,
-    width: W
+    width: B
   } = (0, a.ZP)();
 
-  function B(e) {
+  function W(e) {
     (0, c.EW)(v, {
       dismissAction: e
     })
   }
-  return s.useEffect(() => {
+  return i.useEffect(() => {
     var e, t;
     let r = (null != (t = null == (e = F.current) ? void 0 : e.scrollWidth) ? t : 0) + 64;
     !G && r > N && U(!0)
-  }, [G, W, F, N]), s.useEffect(() => {
+  }, [G, B, F, N]), i.useEffect(() => {
     (0, c.kk)(v)
   }, [v]), (0, n.jsx)("div", {
     className: _,
@@ -94,9 +94,9 @@ let g = s.forwardRef(function(e, t) {
               className: f.earlyAccessIcon
             }), (0, n.jsx)("span", {
               className: f.earlyAccessText,
-              children: p.NW.string(p.t.phHyIS)
+              children: p.intl.string(p.t.phHyIS)
             })]
-          }) : null, i]
+          }) : null, s]
         }), null == r ? null : "string" == typeof r ? (0, n.jsx)(o.Text, {
           variant: "text-sm/normal",
           color: "always-white",
@@ -110,28 +110,28 @@ let g = s.forwardRef(function(e, t) {
             className: f.button,
             size: k,
             onClick: e => {
-              null == O || O(e), h(e), B(d.L.PRIMARY)
+              null == O || O(e), h(e), W(d.L.PRIMARY)
             },
             color: null != M ? M : b || I ? o.zxk.Colors.BRAND_INVERTED : o.zxk.Colors.WHITE,
-            children: null != x ? x : p.NW.string(p.t.IHf1RE)
+            children: null != x ? x : p.intl.string(p.t.IHf1RE)
           }), !D && (0, n.jsx)(o.zxk, {
             className: f.button,
             size: k,
             onClick: e => {
-              null == O || O(e), B(d.L.DISMISS)
+              null == O || O(e), W(d.L.DISMISS)
             },
             color: b || I ? o.zxk.Colors.WHITE : o.zxk.Colors.BRAND,
             look: b || I ? o.zxk.Looks.LINK : o.zxk.Looks.FILLED,
-            children: null != j ? j : p.NW.string(p.t.om7Ovr)
+            children: null != j ? j : p.intl.string(p.t.om7Ovr)
           })]
         }) : (0, n.jsx)(o.zxk, {
           className: f.button,
           size: o.zxk.Sizes.MAX,
           onClick: e => {
-            null == O || O(e), B(d.L.PRIMARY)
+            null == O || O(e), W(d.L.PRIMARY)
           },
           color: o.zxk.Colors.WHITE,
-          children: p.NW.string(p.t.HU2IR0)
+          children: p.intl.string(p.t.HU2IR0)
         })
       }), (0, n.jsx)("div", {
         className: l()(f.pointer, P, {

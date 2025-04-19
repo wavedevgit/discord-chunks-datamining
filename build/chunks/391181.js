@@ -71,39 +71,39 @@ function O(e) {
     children: (0, r.jsxs)(o.v2r, {
       navId: "guild-product-context",
       onClose: O,
-      "aria-label": E.NW.string(E.t.Z146dH),
+      "aria-label": E.intl.string(E.t.Z146dH),
       onSelect: I,
       children: [(0, r.jsxs)(o.kSQ, {
         children: [t && (0, r.jsx)(o.sNh, {
           id: "guild-product-edit",
-          label: E.NW.string(E.t.EEfce3),
+          label: E.intl.string(E.t.EEfce3),
           action: c
         }), i && (0, r.jsx)(o.sNh, {
           id: "guild-product-copy-link",
-          label: E.NW.string(E.t.XR26ur),
+          label: E.intl.string(E.t.XR26ur),
           icon: o.xPt,
           action: p
         }), l && (0, r.jsx)(o.sNh, {
           id: "guild-product-test-download",
-          label: E.NW.string(E.t.aXoI6e),
+          label: E.intl.string(E.t.aXoI6e),
           icon: o._8t,
           action: _
         })]
       }), (0, r.jsxs)(o.kSQ, {
         children: [n && (0, r.jsx)(o.sNh, {
           id: "guild-product-unpublish",
-          label: E.NW.string(E.t.QrkMlJ),
+          label: E.intl.string(E.t.QrkMlJ),
           action: s
         }), a && (0, r.jsx)(o.sNh, {
           id: "guild-product-delete",
-          label: E.NW.string(E.t.zWjqvL),
+          label: E.intl.string(E.t.zWjqvL),
           color: "danger",
           action: d
         })]
       }), (0, r.jsx)(o.kSQ, {
         children: u && (0, r.jsx)(o.sNh, {
           id: "guild-product-report",
-          label: E.NW.string(E.t["6yUzvL"]),
+          label: E.intl.string(E.t["6yUzvL"]),
           color: "danger",
           action: S
         })
@@ -159,7 +159,7 @@ function I(e) {
           isShown: i
         } = n;
         return (0, r.jsx)(o.P3F, S(_({}, e), {
-          "aria-label": E.NW.formatToPlainString(E.t.RtqjeH, {
+          "aria-label": E.intl.formatToPlainString(E.t.RtqjeH, {
             productName: t.name
           }),
           "aria-haspopup": "listbox",
@@ -186,14 +186,14 @@ function g(e) {
     onDeleteProduct: T,
     onCopyProductLink: b,
     onTestDownload: h,
-    disabled: N = !1
-  } = e, C = (0, u.U)(t, 600), y = null !== t.price_tier ? (0, c.T4)(t.price_tier, p.pK.USD) : void 0, P = (0, s.C)(t);
+    disabled: C = !1
+  } = e, y = (0, u.U)(t, 600), N = null !== t.price_tier ? (0, c.T4)(t.price_tier, p.pK.USD) : void 0, P = (0, s.C)(t);
   return (0, r.jsxs)(o.kL8, {
     tag: "article",
     className: l()(f.productCardClickable, f.productCard, {
-      [f.disabled]: N
+      [f.disabled]: C
     }),
-    onClick: N ? void 0 : i,
+    onClick: C ? void 0 : i,
     onContextMenu: function(e) {
       (0, a.jW)(e, () => Promise.resolve(e => (0, r.jsx)(O, S(_({}, e), {
         closePopout: a.Zy,
@@ -213,12 +213,12 @@ function g(e) {
         onReportProduct: () => {}
       }))))
     },
-    "aria-label": E.NW.formatToPlainString(E.t["X/yAKi"], {
+    "aria-label": E.intl.formatToPlainString(E.t["X/yAKi"], {
       productName: t.name
     }),
     children: [(0, r.jsx)("img", {
       alt: "",
-      src: C,
+      src: y,
       className: f.productThumbnail
     }), (0, r.jsxs)("div", {
       className: f.productInfo,
@@ -236,7 +236,7 @@ function g(e) {
           children: [(0, r.jsx)(o.Text, {
             variant: "text-md/normal",
             color: "header-secondary",
-            children: y
+            children: N
           }), null != P ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)("div", {
               className: f.dotSeparator
@@ -249,7 +249,7 @@ function g(e) {
         }), (0, r.jsx)(o.LZC, {
           size: 16
         }), t.published ? (0, r.jsx)(d.t, {}) : (0, r.jsx)(d.b, {})]
-      }), !N && (0, r.jsx)(I, {
+      }), !C && (0, r.jsx)(I, {
         product: t,
         guildId: n,
         showEditProduct: !0,

@@ -42,7 +42,7 @@ function f(e) {
     alwaysShowLinkDecorations: O,
     hardwareAccelerationEnabled: I,
     children: S
-  } = e, T = window.CSS.supports("selector(::-webkit-scrollbar)"), N = "font-size: ".concat(_, "%; --saturation-factor: ").concat(g, ";"), A = o()((0, c.Z)(), (0, l.QeD)(a), "density-".concat(d), p, {
+  } = e, T = window.CSS.supports("selector(::-webkit-scrollbar)"), A = "font-size: ".concat(_, "%; --saturation-factor: ").concat(g, ";"), N = o()((0, c.Z)(), (0, l.QeD)(a), "density-".concat(d), p, {
     "low-saturation": g <= l.AEw,
     "keyboard-mode": m,
     "decorate-links": O,
@@ -61,9 +61,9 @@ function f(e) {
     "visual-refresh-chat-input": !1
   }, t), C = i.useMemo(() => ({
     lang: n,
-    style: N,
-    className: A
-  }), [n, N, A]);
+    style: A,
+    className: N
+  }), [n, A, N]);
   return (0, r.jsx)(u.Provider, {
     value: C,
     children: S

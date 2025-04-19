@@ -46,7 +46,7 @@ function O(e) {
         trackEntryPointImpression: !0,
         sourceUserId: s.author_id
       }),
-      ariaDescription: p.NW.formatToPlainString(p.t["9sZWVl"], {
+      ariaDescription: p.intl.formatToPlainString(p.t["9sZWVl"], {
         gameName: j
       })
     };

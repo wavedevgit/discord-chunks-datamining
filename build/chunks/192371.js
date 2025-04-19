@@ -1,10 +1,10 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => o
+  Z: () => i
 });
 var r = t(706454);
 
-function o(e) {
+function i(e) {
   return new Date(e).toLocaleDateString(r.default.locale, {
     month: "2-digit",
     day: "2-digit"

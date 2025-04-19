@@ -1,11 +1,11 @@
 /** Chunk was on 89311 **/
 r.d(t, {
-  Z: () => h
+  Z: () => x
 });
 var n = r(200651),
-  a = r(192379),
-  i = r(120356),
-  l = r.n(i),
+  i = r(192379),
+  a = r(120356),
+  l = r.n(a),
   s = r(442837),
   o = r(481060),
   c = r(592125),
@@ -17,56 +17,56 @@ var n = r(200651),
   p = r(297781),
   O = r(388032),
   E = r(152790),
-  N = r(263930);
-let h = e => {
+  h = r(263930);
+let x = e => {
   let {
     entry: t,
     onClose: r,
-    onReaction: i,
-    onRequestOpen: h,
-    disableActivityProfileLinks: x,
-    customCTA: v,
-    popoutClassname: j,
-    popoutPosition: b = "right"
-  } = e, I = a.useRef(null), y = (0, s.e7)([u.Z, c.Z], () => c.Z.getChannel(u.Z.getChannelId())), _ = (0, s.e7)([d.default], () => d.default.getUser(t.author_id)), {
-    nick: P,
-    avatar: S
-  } = a.useMemo(() => {
-    let e = null == _ ? void 0 : _.getAvatarURL(null == y ? void 0 : y.guild_id, 48, !1);
+    onReaction: a,
+    onRequestOpen: x,
+    disableActivityProfileLinks: v,
+    customCTA: j,
+    popoutClassname: b,
+    popoutPosition: I = "right"
+  } = e, y = i.useRef(null), _ = (0, s.e7)([u.Z, c.Z], () => c.Z.getChannel(u.Z.getChannelId())), P = (0, s.e7)([d.default], () => d.default.getUser(t.author_id)), {
+    nick: S,
+    avatar: N
+  } = i.useMemo(() => {
+    let e = null == P ? void 0 : P.getAvatarURL(null == _ ? void 0 : _.guild_id, 48, !1);
     return {
-      nick: m.ZP.getName(null == y ? void 0 : y.guild_id, null == y ? void 0 : y.id, _),
+      nick: m.ZP.getName(null == _ ? void 0 : _.guild_id, null == _ ? void 0 : _.id, P),
       avatar: e
     }
-  }, [_, y]);
-  return null == _ ? null : (0, n.jsx)(o.yRy, {
-    targetElementRef: I,
-    position: b,
+  }, [P, _]);
+  return null == P ? null : (0, n.jsx)(o.yRy, {
+    targetElementRef: y,
+    position: I,
     renderPopout: e => {
       let {
-        closePopout: a,
+        closePopout: i,
         updatePosition: l
       } = e;
       return (0, n.jsx)("div", {
-        className: j,
+        className: b,
         children: (0, n.jsx)(g.J, {
           entry: t,
-          closePopout: a,
+          closePopout: i,
           updatePopoutPosition: l,
           onReaction: () => {
-            null == i || i(), r(), a()
+            null == a || a(), r(), i()
           },
-          onUserPopoutClosed: () => a(),
+          onUserPopoutClosed: () => i(),
           disableGameProfileLinks: !0,
-          disableActivityProfileLinks: x
+          disableActivityProfileLinks: v
         })
       })
     },
     positionKey: "'content-entry-".concat(t.id),
     onRequestOpen: () => {
-      null == h || h()
+      null == x || x()
     },
     children: e => {
-      var r, a;
+      var r, i;
       return (0, n.jsx)(o.P3F, (r = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
@@ -85,8 +85,8 @@ let h = e => {
         }
         return e
       }({
-        innerRef: I
-      }, e), a = a = {
+        innerRef: y
+      }, e), i = i = {
         className: E.profileEntryCard,
         children: (0, n.jsx)(o.tEY, {
           offset: {
@@ -98,19 +98,19 @@ let h = e => {
           children: (0, n.jsxs)(n.Fragment, {
             children: [(0, n.jsx)("img", {
               className: E.avatar,
-              src: S,
-              alt: O.NW.formatToPlainString(O.t.IzVXxc, {
-                userName: P
+              src: N,
+              alt: O.intl.formatToPlainString(O.t.IzVXxc, {
+                userName: S
               })
             }), (0, n.jsx)("div", {
               className: E.playerInfo,
               children: (0, n.jsxs)("div", {
-                className: l()(N.column, N.gapXs),
+                className: l()(h.column, h.gapXs),
                 children: [(0, n.jsx)(o.Text, {
                   variant: "text-md/medium",
                   color: "text-primary",
                   lineClamp: 1,
-                  children: P
+                  children: S
                 }), (0, n.jsx)(p.Gk, {
                   location: p.Gt.GAME_PROFILE,
                   children: f.W.map((e, r) => (0, n.jsx)(e, {
@@ -118,7 +118,7 @@ let h = e => {
                   }, r))
                 })]
               })
-            }), null != v ? v : (0, n.jsx)("div", {
+            }), null != j ? j : (0, n.jsx)("div", {
               className: E.reactions,
               children: (0, n.jsx)(o.n$P, {
                 size: "sm"
@@ -126,15 +126,15 @@ let h = e => {
             })]
           })
         })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e);
           r.push.apply(r, n)
         }
         return r
-      })(Object(a)).forEach(function(e) {
-        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
+      })(Object(i)).forEach(function(e) {
+        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
       }), r))
     }
   })

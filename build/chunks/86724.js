@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   L: () => P,
-  Z: () => A
+  Z: () => N
 }), n(388685), n(781311), n(539854), n(704826), n(35282), n(290780), n(583741), n(125548);
 var r = n(373793),
   i = n(911969),
@@ -27,9 +27,9 @@ var r = n(373793),
   I = n(761652);
 let S = new Set(["applicationCommandOption"]),
   T = new Set([i.jw.ATTACHMENT]),
-  N = new Set(["line", "applicationCommand"]);
+  A = new Set(["line", "applicationCommand"]);
 
-function A(e, t, n, r) {
+function N(e, t, n, r) {
   let {
     insertData: i,
     isInline: d,
@@ -159,7 +159,7 @@ function C(e) {
     }), null;
     let e = y.bN.richValue(i)[0],
       t = e.children[0];
-    if (N.has(e.type) && y.LC.isText(t)) {
+    if (A.has(e.type) && y.LC.isText(t)) {
       let e = k(t.text, s);
       if (null != e) return a.Po({
         channelId: s.id,
@@ -215,7 +215,7 @@ function R(e, t, n) {
   p.startsWith(h) ? _ = f.substring(h.length).trim() : p.startsWith(g) && (_ = f.substring(g.length).trim());
   let O = [],
     S = null,
-    N = null;
+    A = null;
   if (null != u.options) {
     let e = new Set;
     if (null != d)
@@ -246,13 +246,13 @@ function R(e, t, n) {
             text: e
           }]
         };
-        O.push(a), 0 === e.length && null == S && (S = a), null == i && (N = a)
+        O.push(a), 0 === e.length && null == S && (S = a), null == i && (A = a)
       }
   }
   l = _.length > 0 ? "".concat(I.GI).concat(u.displayName, " ").concat(_.replace(/\r|\n/g, " ")) : 0 === O.length ? "".concat(I.GI).concat(u.displayName, " ") : "".concat(I.GI).concat(u.displayName), O.unshift({
     text: l
   });
-  let A = {
+  let N = {
     type: "applicationCommand",
     children: O,
     command: {
@@ -262,7 +262,7 @@ function R(e, t, n) {
     }
   };
   y.bN.withoutNormalizing(e, () => {
-    for (let [, t] of(b.Q.insertNodes(e, [A], {
+    for (let [, t] of(b.Q.insertNodes(e, [N], {
         at: v.YD
       }), y.bN.blocks(e).reverse())) y.C0.isAfter(t, v.YD) && b.Q.removeNodes(e, {
       at: t,
@@ -270,7 +270,7 @@ function R(e, t, n) {
     })
   });
   let C = null;
-  return null != S ? (b.Q.selectCommandOption(e, S.optionName), C = S.optionName) : null != N ? (b.Q.selectCommandOption(e, N.optionName, !1), C = N.optionName) : b.Q.resetSelectionToEnd(e), null == N && D(e, u), C
+  return null != S ? (b.Q.selectCommandOption(e, S.optionName), C = S.optionName) : null != A ? (b.Q.selectCommandOption(e, A.optionName, !1), C = A.optionName) : b.Q.resetSelectionToEnd(e), null == A && D(e, u), C
 }
 
 function P(e, t, n, r) {

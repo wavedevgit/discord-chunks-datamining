@@ -54,8 +54,8 @@ let v = e => {
     draftType: i
   } = e, o = [...g(n, i)];
   if (o.length + t.length > f.dN1 && i !== d.d.SlashCommand && i !== d.d.ApplicationLauncherCommand) return void l.Z.show({
-    title: _.NW.string(_.t.wOr6hI),
-    body: _.NW.formatToPlainString(_.t["qqyp/f"], {
+    title: _.intl.string(_.t.wOr6hI),
+    body: _.intl.formatToPlainString(_.t["qqyp/f"], {
       limit: f.dN1
     })
   });
@@ -112,7 +112,7 @@ function T(e) {
   o.upload(), a.push(o), b(t, i, a)
 }
 
-function N(e) {
+function A(e) {
   let {
     channelId: t,
     uploads: n,
@@ -121,7 +121,7 @@ function N(e) {
   b(t, r, n)
 }
 
-function A(e) {
+function N(e) {
   let {
     channelId: t,
     draftType: n
@@ -165,8 +165,8 @@ let P = new R(s.Z, {
   UPLOAD_ATTACHMENT_UPDATE_FILE: S,
   UPLOAD_ATTACHMENT_REMOVE_FILE: O,
   UPLOAD_ATTACHMENT_REMOVE_FILES: I,
-  UPLOAD_ATTACHMENT_CLEAR_ALL_FILES: A,
-  UPLOAD_ATTACHMENT_SET_UPLOADS: N,
+  UPLOAD_ATTACHMENT_CLEAR_ALL_FILES: N,
+  UPLOAD_ATTACHMENT_SET_UPLOADS: A,
   UPLOAD_ATTACHMENT_SET_FILE: T,
   SIDEBAR_CLOSE: C
 })

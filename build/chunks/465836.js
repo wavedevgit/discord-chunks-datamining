@@ -1,13 +1,13 @@
 /** Chunk was on 33184 **/
-n.d(t, {
+n.d(e, {
   default: () => b
 });
 var r = n(200651);
 n(192379);
 var o = n(703558),
   a = n(585483),
-  c = n(403182),
-  i = n(127654),
+  i = n(403182),
+  c = n(127654),
   l = n(98278),
   s = n(790527),
   u = n(474936),
@@ -15,76 +15,76 @@ var o = n(703558),
   d = n(388032),
   p = n(330226);
 
-function b(e) {
+function b(t) {
   var {
-    channel: t,
+    channel: e,
     onClose: n,
     content: b
-  } = e, g = function(e, t) {
-    if (null == e) return {};
-    var n, r, o = function(e, t) {
-      if (null == e) return {};
+  } = t, g = function(t, e) {
+    if (null == t) return {};
+    var n, r, o = function(t, e) {
+      if (null == t) return {};
       var n, r, o = {},
-        a = Object.keys(e);
-      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
+        a = Object.keys(t);
+      for (r = 0; r < a.length; r++) n = a[r], e.indexOf(n) >= 0 || (o[n] = t[n]);
       return o
-    }(e, t);
+    }(t, e);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
+      var a = Object.getOwnPropertySymbols(t);
+      for (r = 0; r < a.length; r++) n = a[r], !(e.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(t, n) && (o[n] = t[n])
     }
     return o
-  }(e, ["channel", "onClose", "content"]);
+  }(t, ["channel", "onClose", "content"]);
 
   function y() {
     n(), (0, l.z)(!0)
   }
-  return (0, r.jsx)(s.Z, function(e) {
-    for (var t = 1; t < arguments.length; t++) {
-      var n = null != arguments[t] ? arguments[t] : {},
+  return (0, r.jsx)(s.Z, function(t) {
+    for (var e = 1; e < arguments.length; e++) {
+      var n = null != arguments[e] ? arguments[e] : {},
         r = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), r.forEach(function(t) {
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
+        return Object.getOwnPropertyDescriptor(n, t).enumerable
+      }))), r.forEach(function(e) {
         var r;
-        r = n[t], t in e ? Object.defineProperty(e, t, {
+        r = n[e], e in t ? Object.defineProperty(t, e, {
           value: r,
           enumerable: !0,
           configurable: !0,
           writable: !0
-        }) : e[t] = r
+        }) : t[e] = r
       })
     }
-    return e
+    return t
   }({
     artURL: p.Z,
     type: u.cd.MESSAGE_LENGTH_UPSELL,
-    title: d.NW.string(d.t.TZT3sL),
-    body: d.NW.format(d.t.QhcEAA, {
+    title: d.intl.string(d.t.TZT3sL),
+    body: d.intl.format(d.t.QhcEAA, {
       maxLength: f.J6R,
       onLearnMore: y
     }),
-    context: d.NW.formatToPlainString(d.t.Fc1uVV, {
+    context: d.intl.formatToPlainString(d.t.Fc1uVV, {
       maxLength: f.J6R
     }),
-    glowUp: d.NW.format(d.t.Mi8kt7, {
+    glowUp: d.intl.format(d.t.Mi8kt7, {
       onLearnMore: y
     }),
     analyticsSource: {
-      page: (null == t ? void 0 : t.getGuildId()) != null ? f.ZY5.GUILD_CHANNEL : (null == t ? void 0 : t.isGroupDM()) || (null == t ? void 0 : t.isPrivate()) ? f.ZY5.DM_CHANNEL : null
+      page: (null == e ? void 0 : e.getGuildId()) != null ? f.ZY5.GUILD_CHANNEL : (null == e ? void 0 : e.isGroupDM()) || (null == e ? void 0 : e.isPrivate()) ? f.ZY5.DM_CHANNEL : null
     },
     analyticsLocation: {
       section: f.jXE.MESSAGE_LENGTH_UPSELL_MODAL,
       object: f.qAy.BUTTON_CTA
     },
     onClose: n,
-    secondaryCTA: d.NW.string(d.t.Fnsb1t),
+    secondaryCTA: d.intl.string(d.t.Fnsb1t),
     onSecondaryClick: function() {
       n();
-      let e = new Blob([b], {
+      let t = new Blob([b], {
         type: "text/plain"
       });
-      (0, i.d)([(0, c.dp)(e, "message.txt", "text/plain")], t, o.d.ChannelMessage, {
+      (0, c.d)([(0, i.dp)(t, "message.txt", "text/plain")], e, o.d.ChannelMessage, {
         requireConfirm: !0,
         showLargeMessageDialog: !0
       }), a.S.dispatchToLastSubscribed(f.CkL.CLEAR_TEXT)

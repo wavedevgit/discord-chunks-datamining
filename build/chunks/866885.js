@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(594174),
   S = n(566620),
   T = n(317381),
-  N = n(531826),
-  A = n(175894),
+  A = n(531826),
+  N = n(175894),
   C = n(963614),
   R = n(917107),
   P = n(208156),
@@ -85,16 +85,16 @@ function Z(e) {
   let {
     channel: _,
     isLoading: p
-  } = e, [A, G] = i.useState(!1), B = (0, s.e7)([T.ZP], () => T.ZP.getSelfEmbeddedActivityForChannel(_.id)), F = (0, s.e7)([T.ZP], () => T.ZP.getActivityPanelMode()), V = (0, h.q)(null == B ? void 0 : B.applicationId), Z = null == B ? void 0 : B.launchId, H = (0, s.e7)([O.Z], () => O.Z.getChannelId() === _.id), {
-    dockedRect: W,
-    isHidden: Y
+  } = e, [N, G] = i.useState(!1), B = (0, s.e7)([T.ZP], () => T.ZP.getSelfEmbeddedActivityForChannel(_.id)), F = (0, s.e7)([T.ZP], () => T.ZP.getActivityPanelMode()), V = (0, h.q)(null == B ? void 0 : B.applicationId), Z = null == B ? void 0 : B.launchId, H = (0, s.e7)([O.Z], () => O.Z.getChannelId() === _.id), {
+    dockedRect: Y,
+    isHidden: W
   } = (0, s.cj)([v.Z], () => {
     let e = v.Z.pipWindow;
     return {
       dockedRect: null != e ? v.Z.getDockedRect(e.id) : null,
       isHidden: v.Z.isEmbeddedActivityHidden()
     }
-  }), K = (0, N.sU)({
+  }), K = (0, A.sU)({
     channelId: _.id
   }), {
     activityParticipant: z,
@@ -107,7 +107,7 @@ function Z(e) {
     })) : null,
     selectedParticipant: g.Z.getSelectedParticipant(_.id),
     participantsOpen: g.Z.getParticipantsOpen(_.id)
-  })), X = H || null != K, J = (0, R.Z)(_.id), $ = J && (null == q ? void 0 : q.type) !== M.fO.ACTIVITY, ee = !J && F === L.Ez.PIP, et = X && ($ || ee) && null == W, en = (!X || et) && !Y, er = en && null != v.Z.pipVideoWindow && null != v.Z.pipActivityWindow;
+  })), X = H || null != K, J = (0, R.Z)(_.id), $ = J && (null == q ? void 0 : q.type) !== M.fO.ACTIVITY, ee = !J && F === L.Ez.PIP, et = X && ($ || ee) && null == Y, en = (!X || et) && !W, er = en && null != v.Z.pipVideoWindow && null != v.Z.pipActivityWindow;
 
   function ei() {
     var e;
@@ -120,7 +120,7 @@ function Z(e) {
   }
 
   function ea() {
-    G(!A)
+    G(!N)
   }
 
   function eo(e, t, n, i, a) {
@@ -134,7 +134,7 @@ function Z(e) {
       onMouseMove: e,
       onMouseLeave: t,
       onToggleHeight: ea,
-      isExpanded: A,
+      isExpanded: N,
       hideExpandedButton: i,
       embeddedActivity: B
     }) : i ? (0, r.jsx)(w.q5, {
@@ -202,9 +202,9 @@ function Z(e) {
           [k.pipMode]: en,
           [U.elevationHigh]: en,
           [j.idle]: i && !(null == (t = B.config) ? void 0 : t.useInteractivePIP),
-          [k.pipModeShort]: en && !A,
-          [k.pipModeTall]: en && A,
-          [k.hidden]: Y,
+          [k.pipModeShort]: en && !N,
+          [k.pipModeTall]: en && N,
+          [k.hidden]: W,
           [k.multiPIPMode]: er
         }),
         noBorder: !en,
@@ -213,8 +213,8 @@ function Z(e) {
           children: eo(a, s, i, ee, es)
         }), p ? (0, r.jsx)(l.$jN, {
           className: o()(k.iframe, {
-            [k.pipModeShort]: en && !A,
-            [k.pipModeTall]: en && A
+            [k.pipModeShort]: en && !N,
+            [k.pipModeTall]: en && N
           })
         }) : (0, r.jsx)(P.J, {
           allowPopups: (0, C.h)(V),
@@ -222,8 +222,8 @@ function Z(e) {
           url: B.url,
           queryParams: el,
           className: o()(k.iframe, {
-            [k.pipModeShort]: en && !A,
-            [k.pipModeTall]: en && A,
+            [k.pipModeShort]: en && !N,
+            [k.pipModeTall]: en && N,
             [k.pipNonInteractive]: en && !(null == (n = B.config) ? void 0 : n.useInteractivePIP)
           }),
           shouldRefocus: !en && H
@@ -241,7 +241,7 @@ let H = e => {
     channel: t
   } = e, n = F(e, ["channel"]);
   let i = T.ZP.getCurrentEmbeddedActivity();
-  (0, A.Z)({
+  (0, N.Z)({
     connectedEmbeddedActivity: i
   });
   let {

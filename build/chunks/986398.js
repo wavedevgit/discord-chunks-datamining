@@ -15,6 +15,6 @@ function o(e) {
   return null == o ? null : (0, r.jsx)("img", {
     className: n,
     src: o,
-    alt: a.NW.string(a.t.QyRmzc)
+    alt: a.intl.string(a.t.QyRmzc)
   })
 }

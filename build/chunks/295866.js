@@ -1,27 +1,27 @@
 /** Chunk was on 99989 **/
-n.d(t, {
-  D0: () => l,
-  kY: () => c,
+n.d(e, {
+  D0: () => c,
+  kY: () => l,
   lE: () => i
 });
 var r = n(570140);
 
-function c() {
+function l() {
   r.Z.dispatch({
     type: "SPELLCHECK_TOGGLE"
   })
 }
 
-function l(e) {
+function c(t) {
   r.Z.dispatch({
     type: "SPELLCHECK_LEARN_WORD",
-    word: e
+    word: t
   })
 }
 
-function i(e) {
+function i(t) {
   r.Z.dispatch({
     type: "SPELLCHECK_UNLEARN_WORD",
-    word: e
+    word: t
   })
 }

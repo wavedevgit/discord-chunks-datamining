@@ -44,6 +44,6 @@ let s = e => {
         }, t))
       })
     },
-    children: u ? a.NW.string(a.t.YqAjX1) : a.NW.string(a.t["w4m94+"])
+    children: u ? a.intl.string(a.t.YqAjX1) : a.intl.string(a.t["w4m94+"])
   }) : null
 }

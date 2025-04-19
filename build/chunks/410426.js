@@ -24,16 +24,16 @@ function j(e) {
   } = e, a = (0, o.e7)([u.ZP], () => u.ZP.getKeybindForAction(m.kg4.SAVE_CLIP)), j = (0, o.e7)([p.Z], () => p.Z.getSettings().clipsEnabled), h = t ? g.noSearchResultsImage : g.noClipsImage, y = l.useCallback(() => {
     n(), (0, c.Z)(f.Z.CLIPS)
   }, [n]), x = (() => {
-    if (!j) return b.NW.format(b.t["3iveam"], {
+    if (!j) return b.intl.format(b.t["3iveam"], {
       onClick: y
     });
-    if (t) return b.NW.string(b.t["xrEs6+"]);
-    if (null == a) return b.NW.format(b.t.jpKk7e, {
+    if (t) return b.intl.string(b.t["xrEs6+"]);
+    if (null == a) return b.intl.format(b.t.jpKk7e, {
       onClick: y
     });
     {
       let e = d.BB(a.shortcut, !0);
-      return b.NW.format(b.t["xY/8Ky"], {
+      return b.intl.format(b.t["xY/8Ky"], {
         keybind: e,
         keybindHook: () => (0, r.jsx)("span", {
           className: g.keybindHintKeys,

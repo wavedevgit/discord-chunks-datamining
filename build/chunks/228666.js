@@ -68,7 +68,7 @@ let m = e => {
   return 0 === n.country.length && (n.country = null != y ? y : ""), (0, r.jsxs)(i.Fragment, {
     children: [E ? (0, r.jsx)(o.kzN, {
       className: _.errorBlock,
-      children: f.NW.string(f.t.vZ8y7u)
+      children: f.intl.string(f.t.vZ8y7u)
     }) : null, (0, r.jsx)(s.ZP, h({
       className: _.__invalid_formItem,
       onBillingAddressChange: m,

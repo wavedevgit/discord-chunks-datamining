@@ -33,8 +33,8 @@ var i = n(200651),
   j = n(74299),
   C = n(803647),
   S = n(565138),
-  N = n(917405),
-  Z = n(763296),
+  Z = n(917405),
+  N = n(763296),
   w = n(603074),
   P = n(879815),
   T = n(189771),
@@ -43,11 +43,11 @@ var i = n(200651),
   D = n(544384),
   L = n(890828),
   R = n(560688),
-  W = n(871499),
-  M = n(199902),
-  z = n(314897),
-  V = n(430824),
-  U = n(131951),
+  M = n(871499),
+  z = n(199902),
+  V = n(314897),
+  U = n(430824),
+  W = n(131951),
   G = n(19780),
   F = n(944486),
   B = n(594174),
@@ -122,7 +122,7 @@ function en(e) {
     }
     return r
   }(e, ["isActive", "disabled", "iconComponent", "iconColor", "tooltip", "defaultColor", "highlightedColor", "caretColor", "popoutOpen", "onClick", "popoutDisabled", "onPopoutClick", "onMouseEnter", "onMouseLeave", "onContextMenu", "fullRegionButton"]);
-  return (0, i.jsx)(W.d, {
+  return (0, i.jsx)(M.d, {
     onClick: null != d ? d : () => {},
     color: t ? s : a,
     className: $.button,
@@ -200,7 +200,7 @@ function ei(e) {
           (0, E.Z)(a, o, J.jXE.OVERLAY), (0, Q.Ws)(J.Odu.QUICK_ACTIONS, {
             type: Q.Qu.MICROPHONE,
             value: c ? Q.bk.ENABLED : Q.bk.DISABLED,
-            userId: z.default.getId()
+            userId: V.default.getId()
           })
         },
         onPopoutClick: g(n),
@@ -237,7 +237,7 @@ function er(e) {
       (0, _.Z)(l, J.jXE.OVERLAY), (0, Q.Ws)(J.Odu.QUICK_ACTIONS, {
         type: Q.Qu.AUDIO,
         value: l ? Q.bk.ENABLED : Q.bk.DISABLED,
-        userId: z.default.getId()
+        userId: V.default.getId()
       })
     },
     g = e => t => {
@@ -289,7 +289,7 @@ function eo(e) {
   let {
     voiceChannel: n,
     locked: l
-  } = e, a = (0, o.e7)([U.Z], () => U.Z.isVideoEnabled()), s = (0, o.e7)([U.Z], () => Object.values(U.Z.getVideoDevices())[0]), c = null == (t = null == s ? void 0 : s.disabled) || t, u = !1 === c, f = (0, T.Z)(n), m = e => {
+  } = e, a = (0, o.e7)([W.Z], () => W.Z.isVideoEnabled()), s = (0, o.e7)([W.Z], () => Object.values(W.Z.getVideoDevices())[0]), c = null == (t = null == s ? void 0 : s.disabled) || t, u = !1 === c, f = (0, T.Z)(n), m = e => {
     h.Z.setVideoEnabled(e)
   }, g = () => {
     u ? m(!0) : (0, R.Z)()
@@ -302,7 +302,7 @@ function eo(e) {
     c ? g() : m(!a), (0, Q.Ws)(J.Odu.QUICK_ACTIONS, {
       type: Q.Qu.CAMERA,
       value: a ? Q.bk.DISABLED : Q.bk.ENABLED,
-      userId: z.default.getId()
+      userId: V.default.getId()
     })
   }, {
     Component: v,
@@ -363,29 +363,29 @@ function el(e) {
     } = e,
     a = (0, o.e7)([B.default], () => B.default.getCurrentUser()),
     s = (0, T.Z)(n),
-    u = (0, o.cj)([U.Z], () => (0, j.Z)(U.Z)),
-    d = (0, o.e7)([M.Z], () => M.Z.getCurrentUserActiveStream()),
+    u = (0, o.cj)([W.Z], () => (0, j.Z)(W.Z)),
+    d = (0, o.e7)([z.Z], () => z.Z.getCurrentUserActiveStream()),
     h = (0, X.g)((0, Y.getPID)()),
     f = () => {
       h(), (0, Q.Ws)(J.Odu.QUICK_ACTIONS, {
         type: Q.Qu.GO_LIVE,
         value: Q.bk.ENABLED,
-        userId: z.default.getId()
+        userId: V.default.getId()
       })
     },
     m = null != d;
-  if (m) t = q.NW.string(q.t.S5anIS);
+  if (m) t = q.intl.string(q.t.S5anIS);
   else if (null != n) {
     let e = (0, K.pL)();
-    t = s ? null != e ? q.NW.format(q.t.AB5gT0, {
+    t = s ? null != e ? q.intl.format(q.t.AB5gT0, {
       game: e.name
-    }) : q.NW.string(q.t.FeUKeH) : q.NW.string(q.t.uQn9Bw)
+    }) : q.intl.string(q.t.FeUKeH) : q.intl.string(q.t.uQn9Bw)
   }
   let g = () => {
       if (m) return (0, Q.Ws)(J.Odu.QUICK_ACTIONS, {
         type: Q.Qu.GO_LIVE,
         value: Q.bk.DISABLED,
-        userId: z.default.getId()
+        userId: V.default.getId()
       }), (0, C.Z)(d, !1);
       f()
     },
@@ -432,7 +432,7 @@ function el(e) {
       return (0, i.jsx)(en, {
         iconComponent: O,
         tooltip: t,
-        "aria-label": q.NW.string(q.t.FeUKeH),
+        "aria-label": q.intl.string(q.t.FeUKeH),
         isActive: m,
         highlightedColor: "green",
         onClick: g,
@@ -456,7 +456,7 @@ function ea(e) {
   } = e, a = null != (t = null == r ? void 0 : r.getGuildId()) ? t : null, {
     mute: s,
     suppress: c
-  } = (0, k.Z)(r), d = (0, o.e7)([U.Z], () => U.Z.isDeaf()), h = null == r || s || c || d, {
+  } = (0, k.Z)(r), d = (0, o.e7)([W.Z], () => W.Z.isDeaf()), h = null == r || s || c || d, {
     analyticsLocations: m
   } = (0, g.ZP)();
 
@@ -481,7 +481,7 @@ function ea(e) {
       onMouseEnter: b,
       onMouseLeave: _
     }
-  } = (0, u.j)(), E = et(l), x = (0, o.e7)([Z.Z, z.default], () => Z.Z.isUserPlayingSounds(z.default.getId()), []) ? "green" : void 0;
+  } = (0, u.j)(), E = et(l), x = (0, o.e7)([N.Z, V.default], () => N.Z.isUserPlayingSounds(V.default.getId()), []) ? "green" : void 0;
   return (0, i.jsx)(p.yRy, {
     renderPopout: e => {
       let {
@@ -505,12 +505,12 @@ function ea(e) {
       } = t;
       return (0, i.jsx)(en, {
         iconComponent: O,
-        tooltip: s ? q.NW.string(q.t["Ox4/zc"]) : c ? q.NW.string(q.t["+YBKYG"]) : d ? q.NW.string(q.t.X1lQlp) : void 0,
+        tooltip: s ? q.intl.string(q.t["Ox4/zc"]) : c ? q.intl.string(q.t["+YBKYG"]) : d ? q.intl.string(q.t.X1lQlp) : void 0,
         onClick: e => {
           v(), (0, Q.Ws)(J.Odu.QUICK_ACTIONS, {
             type: Q.Qu.SOUNDBOARD,
             value: Q.bk.PANEL_OPENED,
-            userId: z.default.getId()
+            userId: V.default.getId()
           }), n(e)
         },
         highlightedColor: x,
@@ -534,13 +534,13 @@ function es(e) {
     (0, Q.Ws)(J.Odu.QUICK_ACTIONS, {
       type: Q.Qu.CALL_BUTTON,
       value: Q.bk.DISABLED,
-      userId: z.default.getId()
+      userId: V.default.getId()
     }), a && m.default.disconnect()
   }, c = e => {
     m.default.selectVoiceChannel(e), (0, Q.Ws)(J.Odu.QUICK_ACTIONS, {
       type: Q.Qu.CALL_BUTTON,
       value: Q.bk.ENABLED,
-      userId: z.default.getId()
+      userId: V.default.getId()
     })
   }, [u, d] = r.useTransition(), h = e => t => {
     d(() => {
@@ -578,7 +578,7 @@ function es(e) {
       } = n;
       return (0, i.jsx)(en, {
         iconComponent: v,
-        tooltip: null != t ? q.NW.string(q.t["6vrfgo"]) : q.NW.string(q.t.S0W8Z2),
+        tooltip: null != t ? q.intl.string(q.t["6vrfgo"]) : q.intl.string(q.t.S0W8Z2),
         onClick: a ? s : h(r),
         defaultColor: a ? "disconnect" : void 0,
         onMouseEnter: g,
@@ -595,7 +595,7 @@ function es(e) {
 function ec(e) {
   let {
     voiceChannel: t
-  } = e, n = (0, o.e7)([V.Z], () => V.Z.getGuild(t.getGuildId()), [t]);
+  } = e, n = (0, o.e7)([U.Z], () => U.Z.getGuild(t.getGuildId()), [t]);
   switch (!0) {
     case t.isGroupDM() || t.isDM():
     case t.isDM():
@@ -659,7 +659,7 @@ function ed(e) {
     lastPing: G.Z.getLastPing()
   })), s = null != l, c = (0, o.e7)([H.Z], () => null != l && H.Z.hasVideo(l), [l]);
   return s && null != r && (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(N.Z, (t = ee({}, a), n = n = {
+    children: [(0, i.jsx)(Z.Z, (t = ee({}, a), n = n = {
       hasVideo: c,
       connectionStatusTextVariant: "text-xs/semibold"
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

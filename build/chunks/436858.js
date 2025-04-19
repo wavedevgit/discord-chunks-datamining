@@ -1,5 +1,5 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => r
+  Z: () => i
 });
-let r = "https://cdn.discordapp.com/assets/content/639fe517eb46f08420138760548905cc2c97004ae117ed797cfd325ad84a8014.png"
+let i = "https://cdn.discordapp.com/assets/content/639fe517eb46f08420138760548905cc2c97004ae117ed797cfd325ad84a8014.png"

@@ -141,8 +141,8 @@ function S(e) {
     submitting: E = !1,
     type: S = "button",
     style: T,
-    wrapperClassName: N,
-    className: A,
+    wrapperClassName: A,
+    className: N,
     innerClassName: C,
     onClick: R,
     onDoubleClick: P,
@@ -160,12 +160,12 @@ function S(e) {
     submittingFinishedLabel: V
   } = e, Z = g(e, ["look", "color", "size", "fullWidth", "grow", "disabled", "submitting", "type", "style", "wrapperClassName", "className", "innerClassName", "onClick", "onDoubleClick", "onMouseDown", "onMouseUp", "onMouseEnter", "onMouseLeave", "onKeyDown", "children", "rel", "buttonRef", "focusProps", "aria-label", "submittingStartedLabel", "submittingFinishedLabel"]);
   let H = h || E,
-    W = H && (null != L || null != x),
-    Y = W ? null : N,
+    Y = H && (null != L || null != x),
+    W = Y ? null : A,
     K = O(G, t),
     z = i.useRef(!1);
   i.useEffect(() => {
-    !0 === E && (z.current = !0, l.u.announce(null != F ? F : d.NW.string(d.t.pfChQk))), !1 === E && !0 === z.current && l.u.announce(null != V ? V : d.NW.string(d.t.SVPara))
+    !0 === E && (z.current = !0, l.u.announce(null != F ? F : d.intl.string(d.t.pfChQk))), !1 === E && !0 === z.current && l.u.announce(null != V ? V : d.intl.string(d.t.SVPara))
   }, [E, F, V]);
   let q = (0, r.jsx)(c.t, m(p({}, G), {
     offset: K,
@@ -184,7 +184,7 @@ function S(e) {
       disabled: h,
       style: T,
       rel: j,
-      className: o()(A, I({
+      className: o()(N, I({
         look: t,
         color: n,
         size: a,
@@ -192,7 +192,7 @@ function S(e) {
         grow: _,
         submitting: E,
         disabled: h
-      }), Y),
+      }), W),
       children: [E && !h ? (0, r.jsx)(u.$, {
         type: u.$.Type.PULSING_ELLIPSIS,
         className: f.spinner,
@@ -203,8 +203,8 @@ function S(e) {
       })]
     }))
   }));
-  return W ? (0, r.jsxs)("span", {
-    className: o()(f.disabledButtonWrapper, N, a, {
+  return Y ? (0, r.jsxs)("span", {
+    className: o()(f.disabledButtonWrapper, A, a, {
       [f.grow]: _,
       [f.fullWidth]: s
     }),

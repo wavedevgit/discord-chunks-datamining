@@ -176,20 +176,20 @@ function h(e, t, n, r, i) {
   if (null != t.minValue && e < t.minValue || null != t.maxValue && e > t.maxValue) {
     if (null != t.maxValue && null != t.minValue) return {
       success: !1,
-      error: f.NW.formatToPlainString(n, {
+      error: f.intl.formatToPlainString(n, {
         minimum: g(t.minValue),
         maximum: g(t.maxValue)
       })
     };
     else if (null != t.minValue) return {
       success: !1,
-      error: f.NW.formatToPlainString(r, {
+      error: f.intl.formatToPlainString(r, {
         minimum: g(t.minValue)
       })
     };
     else if (null != t.maxValue) return {
       success: !1,
-      error: f.NW.formatToPlainString(i, {
+      error: f.intl.formatToPlainString(i, {
         maximum: g(t.maxValue)
       })
     }
@@ -203,26 +203,26 @@ function m(e, t, n) {
   if (void 0 !== t.minLength && e.length < t.minLength || void 0 !== t.maxLength && e.length > t.maxLength) {
     if (void 0 !== t.maxLength && void 0 !== t.minLength && t.minLength === t.maxLength) return {
       success: !1,
-      error: f.NW.formatToPlainString(n.exactRangeErrorMessage, {
+      error: f.intl.formatToPlainString(n.exactRangeErrorMessage, {
         value: g(t.minLength)
       })
     };
     else if (void 0 !== t.maxLength && void 0 !== t.minLength) return {
       success: !1,
-      error: f.NW.formatToPlainString(n.rangeErrorMessage, {
+      error: f.intl.formatToPlainString(n.rangeErrorMessage, {
         minimum: g(t.minLength),
         maximum: g(t.maxLength)
       })
     };
     else if (void 0 !== t.minLength) return {
       success: !1,
-      error: f.NW.formatToPlainString(n.minErrorMessage, {
+      error: f.intl.formatToPlainString(n.minErrorMessage, {
         minimum: g(t.minLength)
       })
     };
     else if (void 0 !== t.maxLength) return {
       success: !1,
-      error: f.NW.formatToPlainString(n.maxErrorMessage, {
+      error: f.intl.formatToPlainString(n.maxErrorMessage, {
         maximum: g(t.maxLength)
       })
     }
@@ -233,7 +233,7 @@ function m(e, t, n) {
 }
 
 function g(e) {
-  return e.toLocaleString(f.NW.currentLocale, {
+  return e.toLocaleString(f.intl.currentLocale, {
     useGrouping: !1
   })
 }

@@ -15,13 +15,13 @@ function o(e, t) {
     o = (0, r.Lz)(e),
     a = new Set(o.map(e => e.guildId));
   o.length > 0 && n.push({
-    header: l.NW.string(l.t.CbaapK),
+    header: l.intl.string(l.t.CbaapK),
     entries: o,
     appendEndCard: !1
   });
   let s = e.filter(e => !a.has(e.guildId));
   return (s = (0, r.Th)(s)).length > 0 && n.push({
-    header: l.NW.string(l.t.wxbhER),
+    header: l.intl.string(l.t.wxbhER),
     entries: s,
     appendEndCard: !0
   }), n

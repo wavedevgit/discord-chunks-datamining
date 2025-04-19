@@ -74,7 +74,7 @@ function S(e, t) {
 
 function T(e, t) {
   if (null == e) return {};
-  var n, r, i = N(e, t);
+  var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -82,14 +82,14 @@ function T(e, t) {
   return i
 }
 
-function N(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let A = 250,
+let N = 250,
   C = /-/g;
 
 function R(e) {
@@ -151,7 +151,7 @@ function w(e, t, n) {
     query: e
   }))
 }
-let D = i().debounce(w, A);
+let D = i().debounce(w, N);
 
 function L(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
@@ -301,8 +301,8 @@ function F(e) {
     if (t.gifs[B(e.url)] = S(O({}, e), {
         order: r + 1
       }), s.wK.toBinary(t).length > b.vY) return g.Z.show({
-      title: y.NW.string(y.t["+XYXtb"]),
-      body: y.NW.string(y.t.YSDH9v)
+      title: y.intl.string(y.t["+XYXtb"]),
+      body: y.intl.string(y.t.YSDH9v)
     }), !1;
     let a = i().size(t.gifs);
     a > 2 && (t.hideTooltip = !0), p.default.track(E.rMx.GIF_FAVORITED, {

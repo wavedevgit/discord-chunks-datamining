@@ -26,7 +26,7 @@ function b(e, t) {
   null != f && g.push(f);
   let h = (0, d.Z)({
     id: t.id,
-    label: m.NW.string(m.t.sMsaLi)
+    label: m.intl.string(m.t.sMsaLi)
   });
   null != h && g.push(h);
   let x = (null == (n = t.tags) ? void 0 : n.guild_connections) === null,
@@ -35,16 +35,16 @@ function b(e, t) {
   return b || j || O || g.push((0, r.jsx)(l.kSQ, {
     children: (0, r.jsx)(l.sNh, {
       id: "delete-role",
-      label: m.NW.string(m.t.oyYWHB),
+      label: m.intl.string(m.t.oyYWHB),
       color: "danger",
       icon: l.XHJ,
       action: () => {
         a.Z.show({
-          title: m.NW.string(m.t.YWISbW),
-          body: m.NW.format(m.t["9+nrUV"], {
+          title: m.intl.string(m.t.YWISbW),
+          body: m.intl.format(m.t["9+nrUV"], {
             name: t.name
           }),
-          cancelText: m.NW.string(m.t["ETE/oK"]),
+          cancelText: m.intl.string(m.t["ETE/oK"]),
           onConfirm: async () => {
             x && await (0, c.L_)(e.id, t.id, []), o.Z.deleteRole(e.id, t.id)
           }

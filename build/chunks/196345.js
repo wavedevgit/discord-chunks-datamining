@@ -58,7 +58,7 @@ function m(e) {
     className: u.checkbox,
     children: (0, r.jsx)(o.Text, {
       variant: "text-md/normal",
-      children: c.NW.string(c.t["2EXfGB"])
+      children: c.intl.string(c.t["2EXfGB"])
     })
   })
 }
@@ -69,7 +69,7 @@ function f(e) {
   } = e;
   return (0, r.jsx)(a.Ih, {
     icon: o.snC,
-    text: c.NW.string(c.t["2xbmoK"]),
+    text: c.intl.string(c.t["2xbmoK"]),
     meetsRequirement: !!t.response
   })
 }
@@ -80,7 +80,7 @@ let h = e => {
     onChange: i
   } = e;
   return (0, r.jsxs)(a.hK, {
-    title: c.NW.string(c.t.Q8OFNz),
+    title: c.intl.string(c.t.Q8OFNz),
     children: [(0, r.jsx)(d, {
       className: u.disabledFieldBackground,
       terms: n.values,

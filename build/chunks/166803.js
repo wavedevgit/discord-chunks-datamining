@@ -1,13 +1,13 @@
 /** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  Z: () => l
+  Z: () => s
 });
 var r = n(149765),
   i = n(700785),
-  s = n(981631);
+  l = n(981631);
 
-function l(e, t) {
+function s(e, t) {
   let n = {
     [t.id]: t
   };
@@ -16,7 +16,7 @@ function l(e, t) {
         forceRoles: n,
         context: e
       }),
-      l = s.Plq.VIEW_CHANNEL;
-    return e.isGuildVocal() && (l = r.IH(l, s.Plq.CONNECT)), r.e$(t, l) && !i.Uu(l, e)
+      s = l.Plq.VIEW_CHANNEL;
+    return e.isGuildVocal() && (s = r.IH(s, l.Plq.CONNECT)), r.e$(t, s) && !i.Uu(s, e)
   })
 }

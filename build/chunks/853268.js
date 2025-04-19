@@ -5,9 +5,9 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  s = n.n(i),
-  o = n(481060),
-  l = n(600164),
+  l = n.n(i),
+  s = n(481060),
+  o = n(600164),
   a = n(388905),
   c = n(256478),
   u = n(20493);
@@ -20,16 +20,16 @@ function d(e) {
     muted: d,
     marginTopStyle: h
   } = e;
-  return (0, r.jsx)(l.Z, {
+  return (0, r.jsx)(o.Z, {
     className: null != h ? h : u.marginTop20,
-    align: l.Z.Align.CENTER,
-    children: (0, r.jsx)(o.XZJ, {
+    align: o.Z.Align.CENTER,
+    children: (0, r.jsx)(s.XZJ, {
       value: t,
-      type: o.XZJ.Types.INVERTED,
+      type: s.XZJ.Types.INVERTED,
       onChange: (e, t) => n(t),
       className: c.checkbox,
       children: (0, r.jsx)(a.i_, {
-        className: s()({
+        className: l()({
           [c.subText]: !d
         }),
         children: i

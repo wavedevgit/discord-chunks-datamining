@@ -31,9 +31,9 @@ function T(e) {
     sourceType: t,
     children: n,
     user: T,
-    targetElementRef: N
+    targetElementRef: A
   } = e, {
-    profileType: A
+    profileType: N
   } = (0, h.z)(), C = (0, p.T)({
     location: "UserProfilePopoutInteractionCoachmark"
   }), R = (0, a.e7)([_.default], () => {
@@ -44,7 +44,7 @@ function T(e) {
       type: t
     } = e;
     return t === g.IIU.CUSTOM_STATUS
-  })), w = () => !R && A === m.y0.BITE_SIZE && (t === m.n_.AVATAR ? C && null == P : t === m.n_.STATUS ? C : t === m.n_.ACTIVITY && !C), [D, L] = i.useState(!1);
+  })), w = () => !R && N === m.y0.BITE_SIZE && (t === m.n_.AVATAR ? C && null == P : t === m.n_.STATUS ? C : t === m.n_.ACTIVITY && !C), [D, L] = i.useState(!1);
   (0, l.Z)(() => L(!0), w() ? O : null);
   let {
     asset: x,
@@ -58,21 +58,21 @@ function T(e) {
     asset: v,
     assetClassName: b.profileImage,
     className: b.profileCoachmark,
-    content: E.NW.string(E.t.HEGlIC),
-    header: E.NW.string(E.t["R/RaKy"]),
+    content: E.intl.string(E.t.HEGlIC),
+    header: E.intl.string(E.t["R/RaKy"]),
     spacing: S,
     dismissibleContentType: o.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK_ALL
   } : {
     asset: y,
     assetClassName: void 0,
     className: b.activityCoachmark,
-    content: E.NW.string(E.t.LQ32TU),
-    header: E.NW.string(E.t.XDBiPT),
+    content: E.intl.string(E.t.LQ32TU),
+    header: E.intl.string(E.t.XDBiPT),
     spacing: I,
     dismissibleContentType: o.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK_ACTIVITY
   }, F = (0, c.N)(o.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK), V = D && !F ? [B] : [], [Z, H] = (0, u.US)(V);
   return (0, r.jsx)(s.yRy, {
-    targetElementRef: N,
+    targetElementRef: A,
     align: "center",
     position: t === m.n_.AVATAR ? "left" : "right",
     shouldShow: null != Z,
@@ -94,7 +94,7 @@ function T(e) {
             src: x,
             className: M
           }),
-          buttonCTA: E.NW.string(E.t["+IrDzM"]),
+          buttonCTA: E.intl.string(E.t["+IrDzM"]),
           buttonLayout: d._F.STACKED,
           buttonProps: {
             color: s.Ttl.BRAND_INVERTED,

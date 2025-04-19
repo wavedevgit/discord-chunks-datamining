@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => N
+  Z: () => A
 }), n(388685);
 var r, i = n(442837),
   a = n(570140),
@@ -168,7 +168,7 @@ class T extends(r = i.ZP.Store) {
   }
 }
 l(T, "displayName", "VideoStreamStore");
-let N = new T(a.Z, {
+let A = new T(a.Z, {
   CONNECTION_OPEN: b,
   OVERLAY_INITIALIZE: y,
   RTC_CONNECTION_VIDEO: v,

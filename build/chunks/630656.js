@@ -1,5 +1,5 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  j: () => i
+  j: () => r
 });
-var r, i = ((r = {}).HOME = "HOME", r.SWITCH_APP_PLANS = "SWITCH_APP_PLANS", r)
+var i, r = ((i = {}).HOME = "HOME", i.SWITCH_APP_PLANS = "SWITCH_APP_PLANS", i)

@@ -5,9 +5,9 @@ n.d(t, {
 var r = n(200651),
   a = n(192379),
   c = n(481060),
-  o = n(239091),
-  s = n(76234),
-  i = n(981631),
+  i = n(239091),
+  o = n(76234),
+  s = n(981631),
   l = n(388032);
 
 function u(e) {
@@ -58,12 +58,12 @@ function p(e) {
   }, [f, p]);
   return (0, r.jsxs)(c.v2r, {
     navId: "instant_invite_options",
-    onSelect: i.dG4,
-    onClose: o.Zy,
-    "aria-label": l.NW.string(l.t.b85Vws),
+    onSelect: s.dG4,
+    onClose: i.Zy,
+    "aria-label": l.intl.string(l.t.b85Vws),
     children: [(0, r.jsx)(c.kSQ, {
-      label: l.NW.string(l.t.Sdarfn),
-      children: s.H.map(e => {
+      label: l.intl.string(l.t.Sdarfn),
+      children: o.H.map(e => {
         let {
           value: t,
           label: n
@@ -77,8 +77,8 @@ function p(e) {
         }, "max-age-".concat(t))
       })
     }), (0, r.jsx)(c.kSQ, {
-      label: l.NW.string(l.t["/2yRSE"]),
-      children: s.p.map(e => {
+      label: l.intl.string(l.t["/2yRSE"]),
+      children: o.p.map(e => {
         let {
           value: t,
           label: n

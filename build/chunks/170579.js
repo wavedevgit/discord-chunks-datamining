@@ -33,11 +33,11 @@ function O(e, t) {
   if (t) return i;
   switch (r) {
     case b.rV.MONTH:
-      return y.NW.formatToPlainString(y.t.AbOLNj, {
+      return y.intl.formatToPlainString(y.t.AbOLNj, {
         price: i
       });
     case b.rV.YEAR:
-      return y.NW.formatToPlainString(y.t.rS8FAw, {
+      return y.intl.formatToPlainString(y.t.rS8FAw, {
         price: i
       })
   }
@@ -46,10 +46,10 @@ let I = e => {
     let {
       isTier0: t,
       discountAmount: n
-    } = e, i = (0, g.N)(), o = null != i && i.trial_id === b.a7, l = y.NW.string(y.t.IBYG5e);
-    return void 0 !== n ? l = y.NW.formatToPlainString(y.t.iiLbvr, {
+    } = e, i = (0, g.N)(), o = null != i && i.trial_id === b.a7, l = y.intl.string(y.t.IBYG5e);
+    return void 0 !== n ? l = y.intl.formatToPlainString(y.t.iiLbvr, {
       percent: n
-    }) : o && (l = y.NW.string(y.t.gtNqJS)), (0, r.jsx)("div", {
+    }) : o && (l = y.intl.string(y.t.gtNqJS)), (0, r.jsx)("div", {
       className: v.trialBadgeContainer,
       children: (0, r.jsx)(s.Text, {
         variant: "text-xs/bold",
@@ -70,14 +70,14 @@ let I = e => {
         renderAnimation: y,
         onClose: S,
         isGift: T,
-        upgradeToPremiumType: N,
-        headerTheme: A = b.nL.DEFAULT,
+        upgradeToPremiumType: A,
+        headerTheme: N = b.nL.DEFAULT,
         className: C,
         showTrialBadge: R = !1,
         showDiscountBadge: P = !1
       } = e,
-      w = N === b.p9.TIER_2;
-    n = N === b.p9.TIER_0 ? d.Z : N === b.p9.TIER_1 ? f.Z : u.Z;
+      w = A === b.p9.TIER_2;
+    n = A === b.p9.TIER_0 ? d.Z : A === b.p9.TIER_1 ? f.Z : u.Z;
     let D = (0, o.e7)([l.Z], () => l.Z.useReducedMotion),
       L = (0, m.Ng)(),
       x = null == L || null == (t = L.discount) ? void 0 : t.amount;
@@ -87,7 +87,7 @@ let I = e => {
         [v.headerBackground]: !w,
         [v.tier2HeaderBackground]: w
       }, C),
-      children: [D || A !== b.nL.WINTER ? null : (0, r.jsx)(E.Z, {
+      children: [D || N !== b.nL.WINTER ? null : (0, r.jsx)(E.Z, {
         className: v.snow,
         wind: 5
       }), (R || P) && (0, r.jsx)(_.Z, {
@@ -102,7 +102,7 @@ let I = e => {
               [v.nonTier2]: !w
             })
           }), (R || P) && (0, r.jsx)(I, {
-            isTier0: N === b.p9.TIER_0,
+            isTier0: A === b.p9.TIER_0,
             discountAmount: P ? x : void 0
           })]
         }), !i && (0, r.jsx)(s.olH, {

@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(399606),
-  s = n(481060),
-  l = n(725803),
+  l = n(481060),
+  s = n(725803),
   a = n(999382),
   o = n(352981),
   c = n(469351),
@@ -20,10 +20,10 @@ function m() {
     {
       application: n,
       loading: m
-    } = (0, l.Z)(null == e ? void 0 : e.id, u.wW.GUILD_ROLE_SUBSCRIPTIONS),
+    } = (0, s.Z)(null == e ? void 0 : e.id, u.wW.GUILD_ROLE_SUBSCRIPTIONS),
     g = null != n && (null == e ? void 0 : e.hasFeature(d.oNc.ROLE_SUBSCRIPTIONS_ENABLED)) === !0;
   return (0, r.jsx)("main", {
-    children: null == e || !t || m ? (0, r.jsx)(s.$jN, {}) : (0, r.jsx)(c.t, {
+    children: null == e || !t || m ? (0, r.jsx)(l.$jN, {}) : (0, r.jsx)(c.t, {
       guildId: e.id,
       hasValidApplication: g
     })

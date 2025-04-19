@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => N
 }), n(388685);
 var r, i = n(442837),
   a = n(570140),
@@ -115,7 +115,7 @@ function S() {
 function T() {
   I()
 }
-class N extends(r = i.ZP.Store) {
+class A extends(r = i.ZP.Store) {
   getMatchingOutboxEntry(e) {
     let {
       activity: t,
@@ -139,8 +139,8 @@ class N extends(r = i.ZP.Store) {
     return h
   }
 }
-s(N, "displayName", "ContentInventoryOutboxStore");
-let A = new N(a.Z, {
+s(A, "displayName", "ContentInventoryOutboxStore");
+let N = new A(a.Z, {
   CONNECTION_OPEN: S,
   LOGOUT: T,
   CONTENT_INVENTORY_FETCH_OUTBOX_START: m,

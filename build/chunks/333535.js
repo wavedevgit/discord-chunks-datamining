@@ -32,11 +32,11 @@ function b(e) {
       children: [(0, r.jsx)(o.Text, {
         variant: "text-md/semibold",
         color: "header-primary",
-        children: m.NW.string(m.t["5uAO7e"])
+        children: m.intl.string(m.t["5uAO7e"])
       }), (0, r.jsx)(o.Text, {
         variant: "text-sm/medium",
         color: "text-normal",
-        children: m.NW.format(m.t.WnfPV1, {
+        children: m.intl.format(m.t.WnfPV1, {
           helpArticleUrl: d.Z.getCreatorSupportArticleURL(f.BhN.MEDIA_CHANNEL)
         })
       }), (0, r.jsx)(o.LZC, {
@@ -51,7 +51,7 @@ function b(e) {
         }), (0, r.jsx)(o.Text, {
           variant: "text-sm/medium",
           color: "always-white",
-          children: m.NW.string(m.t.C5UQCw)
+          children: m.intl.string(m.t.C5UQCw)
         })]
       })]
     }), (0, r.jsx)(o.P3F, {
@@ -59,7 +59,7 @@ function b(e) {
       onClick: () => {
         (0, p.fn)(t)
       },
-      "aria-label": m.NW.string(m.t["0+xZHx"]),
+      "aria-label": m.intl.string(m.t["0+xZHx"]),
       children: (0, r.jsx)(o.Dio, {
         color: "currentColor",
         size: "xs"

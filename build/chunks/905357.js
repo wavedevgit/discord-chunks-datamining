@@ -10,8 +10,8 @@ var r = n(311570),
 let o = e => {
     let t = (0, i.hv)("useProductName") === r.v.VARIANTS_GROUP;
     if (null == e) return "";
-    let n = a.NW.string(a.t.z7y5vL);
-    return t && "baseVariantName" in e && null != e.baseVariantName && e.variantLabel !== n ? a.NW.formatToPlainString(a.t.BZN5k5, {
+    let n = a.intl.string(a.t.z7y5vL);
+    return t && "baseVariantName" in e && null != e.baseVariantName && e.variantLabel !== n ? a.intl.formatToPlainString(a.t.BZN5k5, {
       baseVariantName: e.baseVariantName,
       variantLabel: e.variantLabel
     }) : e.name

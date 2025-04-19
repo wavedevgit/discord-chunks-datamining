@@ -20,12 +20,12 @@ var r = n(200651),
   _ = n(112724),
   E = n(812206),
   O = n(44315),
-  N = n(600164),
-  y = n(167533),
-  I = n(925329),
-  v = n(707409),
-  C = n(210887),
-  S = n(283595),
+  y = n(600164),
+  I = n(167533),
+  v = n(925329),
+  C = n(707409),
+  S = n(210887),
+  N = n(283595),
   T = n(417363),
   P = n(941128),
   j = n(451478),
@@ -89,7 +89,7 @@ let M = e => {
     })
   };
 
-function W(e, t) {
+function V(e, t) {
   switch (t) {
     case w.f07.POST_INSTALL_SCRIPTS:
     case w.f07.PLANNING:
@@ -102,26 +102,26 @@ function W(e, t) {
       })
   }
 }
-let V = {
+let B = {
   [w.vxO.INSTALLING]: {
-    [v.J6.NONE]: (e, t, n, r) => R.NW.formatToPlainString(R.t.JfJt9f, {
+    [C.J6.NONE]: (e, t, n, r) => R.intl.formatToPlainString(R.t.JfJt9f, {
       percent: e,
       progress: t,
       total: n
     }),
-    [v.J6.SECONDS]: (e, t, n, r) => R.NW.formatToPlainString(R.t["1z3c6e"], {
+    [C.J6.SECONDS]: (e, t, n, r) => R.intl.formatToPlainString(R.t["1z3c6e"], {
       percent: e,
       progress: t,
       total: n,
       timeRemaining: r
     }),
-    [v.J6.MINUTES]: (e, t, n, r) => R.NW.formatToPlainString(R.t.PCX509, {
+    [C.J6.MINUTES]: (e, t, n, r) => R.intl.formatToPlainString(R.t.PCX509, {
       percent: e,
       progress: t,
       total: n,
       timeRemaining: r
     }),
-    [v.J6.HOURS]: (e, t, n, r) => R.NW.formatToPlainString(R.t["3VG9s7"], {
+    [C.J6.HOURS]: (e, t, n, r) => R.intl.formatToPlainString(R.t["3VG9s7"], {
       percent: e,
       progress: t,
       total: n,
@@ -129,24 +129,24 @@ let V = {
     })
   },
   [w.vxO.UPDATING]: {
-    [v.J6.NONE]: (e, t, n, r) => R.NW.formatToPlainString(R.t.JsqXXF, {
+    [C.J6.NONE]: (e, t, n, r) => R.intl.formatToPlainString(R.t.JsqXXF, {
       percent: e,
       progress: t,
       total: n
     }),
-    [v.J6.SECONDS]: (e, t, n, r) => R.NW.formatToPlainString(R.t["3BvVeX"], {
+    [C.J6.SECONDS]: (e, t, n, r) => R.intl.formatToPlainString(R.t["3BvVeX"], {
       percent: e,
       progress: t,
       total: n,
       timeRemaining: r
     }),
-    [v.J6.MINUTES]: (e, t, n, r) => R.NW.formatToPlainString(R.t.rwULn5, {
+    [C.J6.MINUTES]: (e, t, n, r) => R.intl.formatToPlainString(R.t.rwULn5, {
       percent: e,
       progress: t,
       total: n,
       timeRemaining: r
     }),
-    [v.J6.HOURS]: (e, t, n, r) => R.NW.formatToPlainString(R.t.adcitL, {
+    [C.J6.HOURS]: (e, t, n, r) => R.intl.formatToPlainString(R.t.adcitL, {
       percent: e,
       progress: t,
       total: n,
@@ -154,24 +154,24 @@ let V = {
     })
   },
   [w.vxO.REPAIRING]: {
-    [v.J6.NONE]: (e, t, n, r) => R.NW.formatToPlainString(R.t.JfJt9f, {
+    [C.J6.NONE]: (e, t, n, r) => R.intl.formatToPlainString(R.t.JfJt9f, {
       percent: e,
       progress: t,
       total: n
     }),
-    [v.J6.SECONDS]: (e, t, n, r) => R.NW.formatToPlainString(R.t["1z3c6e"], {
+    [C.J6.SECONDS]: (e, t, n, r) => R.intl.formatToPlainString(R.t["1z3c6e"], {
       percent: e,
       progress: t,
       total: n,
       timeRemaining: r
     }),
-    [v.J6.MINUTES]: (e, t, n, r) => R.NW.formatToPlainString(R.t.PCX509, {
+    [C.J6.MINUTES]: (e, t, n, r) => R.intl.formatToPlainString(R.t.PCX509, {
       percent: e,
       progress: t,
       total: n,
       timeRemaining: r
     }),
-    [v.J6.HOURS]: (e, t, n, r) => R.NW.formatToPlainString(R.t["3VG9s7"], {
+    [C.J6.HOURS]: (e, t, n, r) => R.intl.formatToPlainString(R.t["3VG9s7"], {
       percent: e,
       progress: t,
       total: n,
@@ -180,13 +180,13 @@ let V = {
   }
 };
 
-function B(e, t, n, r, i) {
-  let l = V[t],
+function H(e, t, n, r, i) {
+  let l = B[t],
     a = null != l ? Object.keys(l) : [],
     {
       unit: o,
       time: s
-    } = (0, v.CI)(null != e ? e / 60 : null, a);
+    } = (0, C.CI)(null != e ? e / 60 : null, a);
   if (null != l && null != o) {
     let e = l[o];
     return null != e ? e(n, r, i, s) : null
@@ -194,7 +194,7 @@ function B(e, t, n, r, i) {
   return null
 }
 
-function H(e) {
+function F(e) {
   let {
     type: t,
     stage: n,
@@ -202,50 +202,50 @@ function H(e) {
     progress: i,
     total: l,
     secondsRemaining: a
-  } = e, o = W(l, n), s = W(i, n);
+  } = e, o = V(l, n), s = V(i, n);
   switch (n) {
     case w.f07.QUEUED:
-      if (0 === i) return R.NW.string(R.t.RpfBqa);
-      return R.NW.formatToPlainString(R.t.uNjCXV, {
+      if (0 === i) return R.intl.string(R.t.RpfBqa);
+      return R.intl.formatToPlainString(R.t.uNjCXV, {
         percent: r,
         progress: s,
         total: o
       });
     case w.f07.PLANNING:
-      return R.NW.formatToPlainString(R.t.sfuCUV, {
+      return R.intl.formatToPlainString(R.t.sfuCUV, {
         percent: r
       });
     case w.f07.ALLOCATING_DISK:
-      return R.NW.formatToPlainString(R.t.XigoJy, {
+      return R.intl.formatToPlainString(R.t.XigoJy, {
         percent: r
       });
     case w.f07.PATCHING:
-      return B(a, t, r, s, o);
+      return H(a, t, r, s, o);
     case w.f07.FINALIZING:
-      return R.NW.formatToPlainString(R.t["6PHDUF"], {
+      return R.intl.formatToPlainString(R.t["6PHDUF"], {
         percent: r
       });
     case w.f07.PAUSING:
-      return R.NW.formatToPlainString(R.t.vjxhWl, {
+      return R.intl.formatToPlainString(R.t.vjxhWl, {
         percent: r,
         progress: s,
         total: o
       });
     case w.f07.VERIFYING:
-      return R.NW.formatToPlainString(R.t.bbilvr, {
+      return R.intl.formatToPlainString(R.t.bbilvr, {
         percent: r,
         progress: s,
         total: o
       });
     case w.f07.POST_INSTALL_SCRIPTS:
-      return R.NW.formatToPlainString(R.t.c5vRUl, {
+      return R.intl.formatToPlainString(R.t.c5vRUl, {
         percent: r,
         progress: s,
         total: o
       });
     case w.f07.REPAIRING:
-      if (t === w.vxO.REPAIRING) return B(a, t, r, s, o);
-      return R.NW.formatToPlainString(R.t.OCzETU, {
+      if (t === w.vxO.REPAIRING) return H(a, t, r, s, o);
+      return R.intl.formatToPlainString(R.t.OCzETU, {
         percent: r,
         progress: s,
         total: o
@@ -253,7 +253,7 @@ function H(e) {
   }
   throw Error("Invalid Dispatch stage")
 }
-class F extends i.PureComponent {
+class z extends i.PureComponent {
   get isFocused() {
     let {
       cellProps: e
@@ -267,8 +267,8 @@ class F extends i.PureComponent {
       foregroundGradientColor: i,
       message: l
     } = e;
-    return (0, r.jsxs)(N.Z, {
-      direction: N.Z.Direction.VERTICAL,
+    return (0, r.jsxs)(y.Z, {
+      direction: y.Z.Direction.VERTICAL,
       children: [(0, r.jsx)(p.Exd, {
         percent: t,
         size: p.Exd.Sizes.SMALL,
@@ -286,8 +286,8 @@ class F extends i.PureComponent {
       percents: t,
       message: n
     } = e;
-    return (0, r.jsxs)(N.Z, {
-      direction: N.Z.Direction.VERTICAL,
+    return (0, r.jsxs)(y.Z, {
+      direction: y.Z.Direction.VERTICAL,
       children: [(0, r.jsx)(p.yGy, {
         percents: t,
         size: p.yGy.Sizes.SMALL,
@@ -304,7 +304,7 @@ class F extends i.PureComponent {
       item: e
     } = this.props;
     return this.renderBody({
-      message: R.NW.format(R.t.z1oxGB, {
+      message: R.intl.format(R.t.z1oxGB, {
         remove: () => g.wi(e.applicationId, e.branchId)
       }),
       foregroundColor: (0, d.ap)(e.theme) ? w.Ilk.PRIMARY_300 : w.Ilk.PRIMARY_500,
@@ -325,21 +325,21 @@ class F extends i.PureComponent {
         stage: l
       } = n;
       if (null != r && null != i) {
-        let n = W(i, l),
-          a = W(r, l),
+        let n = V(i, l),
+          a = V(r, l),
           o = Math.floor(t = Z.xI(r, i));
-        e = l === w.f07.PAUSING ? R.NW.formatToPlainString(R.t.vjxhWl, {
+        e = l === w.f07.PAUSING ? R.intl.formatToPlainString(R.t.vjxhWl, {
           percent: o,
           progress: a,
           total: n
-        }) : R.NW.formatToPlainString(R.t.voT3Bg, {
+        }) : R.intl.formatToPlainString(R.t.voT3Bg, {
           percent: o,
           progress: a,
           total: n
         })
       }
     }
-    return (null == t || null == e) && (t = 0, e = R.NW.string(R.t["qS+iKS"])), this.renderBody({
+    return (null == t || null == e) && (t = 0, e = R.intl.string(R.t["qS+iKS"])), this.renderBody({
       percent: t,
       foregroundColor: (0, d.ap)(r) ? w.Ilk.PRIMARY_300 : w.Ilk.PRIMARY_500,
       message: e
@@ -360,7 +360,7 @@ class F extends i.PureComponent {
     if (null == n || null == r) return null;
     let i = Z.xI(n, r),
       l = Math.floor(i),
-      a = 0 === n && 1 === r ? R.NW.string(R.t["+pfsFR"]) : R.NW.formatToPlainString(R.t["+feX8f"], {
+      a = 0 === n && 1 === r ? R.intl.string(R.t["+pfsFR"]) : R.intl.formatToPlainString(R.t["+feX8f"], {
         percent: l,
         progress: (0, A.BU)(n),
         total: (0, A.BU)(r)
@@ -394,7 +394,7 @@ class F extends i.PureComponent {
       a = Math.floor(l);
     return this.renderBody({
       percent: l,
-      message: H({
+      message: F({
         type: i,
         stage: r,
         percent: a,
@@ -448,7 +448,7 @@ class F extends i.PureComponent {
         c = Z.xI(null != o ? o : 0, l),
         u = e[e.length - 1] / t * 1e3,
         d = l - i,
-        p = H({
+        p = F({
           type: a,
           stage: r,
           percent: Math.floor(s),
@@ -463,14 +463,14 @@ class F extends i.PureComponent {
     })
   }
 }
-let z = () => (0, r.jsx)(G, {
+let W = () => (0, r.jsx)(G, {
     icon: p.o1U,
-    tooltip: R.NW.string(R.t.YGm6SU),
+    tooltip: R.intl.string(R.t.YGm6SU),
     onClick: () => g.v4()
   }),
   Y = () => (0, r.jsx)(G, {
     icon: p.fpf,
-    tooltip: R.NW.string(R.t.TVAd5O),
+    tooltip: R.intl.string(R.t.TVAd5O),
     onClick: () => g.wO()
   }),
   K = e => {
@@ -479,7 +479,7 @@ let z = () => (0, r.jsx)(G, {
     } = e;
     return (0, r.jsx)(G, {
       icon: p.wj7,
-      tooltip: R.NW.string(R.t["Eqb+LC"]),
+      tooltip: R.intl.string(R.t["Eqb+LC"]),
       onClick: () => g.A1(t.applicationId, t.branchId)
     })
   },
@@ -489,19 +489,19 @@ let z = () => (0, r.jsx)(G, {
     } = e;
     return (0, r.jsx)(G, {
       icon: p.Dio,
-      tooltip: R.NW.string(R.t["0lFmCw"]),
+      tooltip: R.intl.string(R.t["0lFmCw"]),
       onClick: () => g.al(t.applicationId, t.branchId)
     })
   },
   Q = [{
     key: "name",
     cellClassName: D.nameCell,
-    render: e => (0, r.jsxs)(N.Z, {
-      align: N.Z.Align.CENTER,
-      children: [(0, r.jsx)(I.Z, {
+    render: e => (0, r.jsxs)(y.Z, {
+      align: y.Z.Align.CENTER,
+      children: [(0, r.jsx)(v.Z, {
         game: e.application,
         className: D.__invalid_gameIcon,
-        size: I.Z.Sizes.SMALL
+        size: v.Z.Sizes.SMALL
       }), (0, r.jsx)("div", {
         className: D.nameCellText,
         children: e.application.name
@@ -512,7 +512,7 @@ let z = () => (0, r.jsx)(G, {
     cellClassName: D.progressCell,
     headerCellClassName: D.progressCellHeader,
     bodyCellClassName: D.progressCellBody,
-    render: (e, t) => (0, r.jsx)(F, {
+    render: (e, t) => (0, r.jsx)(z, {
       item: e,
       cellProps: t
     })
@@ -528,14 +528,14 @@ let z = () => (0, r.jsx)(G, {
         source: w.Sbl.APPLICATION_LIBRARY_UPDATES
       }) : null : null != e.state ? e.state.type !== w.vxO.UP_TO_DATE && (n = e.index > 0 ? (0, r.jsx)(K, {
         item: e
-      }) : null != t && t.paused ? (0, r.jsx)(z, {}) : (0, r.jsx)(Y, {
+      }) : null != t && t.paused ? (0, r.jsx)(W, {}) : (0, r.jsx)(Y, {
         item: e
       }), i = (0, r.jsx)(q, {
         item: e
       })) : i = (0, r.jsx)(q, {
         item: e
-      }), (0, r.jsxs)(N.Z, {
-        justify: N.Z.Justify.END,
+      }), (0, r.jsxs)(y.Z, {
+        justify: y.Z.Justify.END,
         children: [n, i]
       })
     }
@@ -571,18 +571,18 @@ class X extends i.PureComponent {
         className: D.headerRow,
         children: [(0, r.jsx)(L.Z, {
           className: a()(D.headerCell, D.networkProgress),
-          title: R.NW.string(R.t.ytoXKi),
+          title: R.intl.string(R.t.ytoXKi),
           getHistoricalTotalBytes: T.Z.getHistoricalTotalBytesDownloaded,
           color: w.Ilk.GREEN_360,
           animate: i
         }), (0, r.jsx)(L.Z, {
           className: a()(D.headerCell, D.diskProgress),
-          title: R.NW.string(R.t.SjohhI),
+          title: R.intl.string(R.t.SjohhI),
           getHistoricalTotalBytes: T.Z.getHistoricalTotalBytesWritten,
           color: w.Ilk.BLUE_345,
           animate: i
         })]
-      }), (0, r.jsx)(y.Z, {
+      }), (0, r.jsx)(I.Z, {
         hasHeader: !1,
         columns: Q,
         data: e,
@@ -659,15 +659,15 @@ function J(e, t, n, r) {
       branchId: o,
       state: c,
       application: s,
-      libraryApplication: S.Z.getLibraryApplication(a, o),
+      libraryApplication: N.Z.getLibraryApplication(a, o),
       finished: t,
       index: l
     }), e
   }, [])
 }
-let $ = (0, _.Z)(c.ZP.connectStores([E.Z, T.Z, P.Z, C.Z, j.Z], () => ({
+let $ = (0, _.Z)(c.ZP.connectStores([E.Z, T.Z, P.Z, S.Z, j.Z], () => ({
   applications: [...J(P.Z.activeItems, !1, E.Z, T.Z), ...J(P.Z.finishedItems, !0, E.Z, T.Z)],
   paused: P.Z.paused,
   isFocused: j.Z.isFocused(),
-  theme: C.Z.theme
+  theme: S.Z.theme
 }))((0, b.Z)(X)))

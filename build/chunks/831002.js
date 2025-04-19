@@ -1,7 +1,7 @@
 /** Chunk was on 3656 **/
 n.d(t, {
   $A: () => O,
-  ZP: () => N,
+  ZP: () => I,
   j8: () => E
 });
 var r = n(200651);
@@ -35,11 +35,11 @@ function O(e) {
     c = () => null != t && (0, y.T)(t, l);
   return (null == t ? void 0 : t.isGuildStageVoice()) && n ? null != i ? (0, r.jsx)(a.sNh, {
     id: "edit-stage",
-    label: j.NW.string(j.t["I+9bLy"]),
+    label: j.intl.string(j.t["I+9bLy"]),
     action: c
   }) : (0, r.jsx)(a.sNh, {
     id: "start-stage",
-    label: j.NW.string(j.t.OYbHfn),
+    label: j.intl.string(j.t.OYbHfn),
     action: c
   }) : null
 }
@@ -53,7 +53,7 @@ function E(e) {
   return n ? r : i
 }
 
-function N(e) {
+function I(e) {
   let {
     channelId: t,
     closePopout: n,
@@ -64,7 +64,7 @@ function N(e) {
   return (0, r.jsxs)(a.v2r, {
     navId: "stage-channel-call-overflow-popout",
     onClose: n,
-    "aria-label": j.NW.string(j.t.pkYeAw),
+    "aria-label": j.intl.string(j.t.pkYeAw),
     onSelect: l,
     onInteraction: s,
     children: [O(t), E(t), (0, d.Z)(), (0, u.Z)(t), g, (0, p.Z)(m, i)]

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(200651),
   r = n(192379),
-  a = n(442837),
-  l = n(481060),
+  l = n(442837),
+  a = n(481060),
   s = n(700582),
   c = n(933557),
   o = n(266076),
@@ -27,7 +27,7 @@ function S(e) {
   } = e;
   return (0, i.jsxs)("div", {
     className: y.failedRow,
-    children: [t, (0, i.jsx)(l.Text, {
+    children: [t, (0, i.jsx)(a.Text, {
       className: y.label,
       variant: "text-md/medium",
       lineClamp: 1,
@@ -43,7 +43,7 @@ function A(e) {
   return (0, i.jsx)(S, {
     icon: (0, i.jsx)(o.Z, {
       "aria-hidden": !0,
-      size: l.EFr.SIZE_32,
+      size: a.EFr.SIZE_32,
       channel: t,
       experimentLocation: "forward-failed-retry-modal"
     }),
@@ -54,11 +54,11 @@ function A(e) {
 function O(e) {
   let {
     user: t
-  } = e, n = E.ZP.useName(t), r = (0, a.e7)([b.Z], () => b.Z.getNickname(t.id)), c = (0, a.e7)([p.Z], () => p.Z.getStatus(t.id));
+  } = e, n = E.ZP.useName(t), r = (0, l.e7)([b.Z], () => b.Z.getNickname(t.id)), c = (0, l.e7)([p.Z], () => p.Z.getStatus(t.id));
   return (0, i.jsx)(S, {
     icon: (0, i.jsx)(s.Z, {
       "aria-hidden": !0,
-      size: l.EFr.SIZE_32,
+      size: a.EFr.SIZE_32,
       user: t,
       status: c
     }),
@@ -69,7 +69,7 @@ function O(e) {
 function h(e) {
   let {
     channel: t
-  } = e, n = (0, a.e7)([f.Z], () => f.Z.getGuild(null == t ? void 0 : t.guild_id)), r = (0, c.ZP)(t);
+  } = e, n = (0, l.e7)([f.Z], () => f.Z.getGuild(null == t ? void 0 : t.guild_id)), r = (0, c.ZP)(t);
   return (0, i.jsx)(S, {
     icon: (0, i.jsx)(u.Z, {
       size: u.E.SMALL_32,
@@ -86,7 +86,7 @@ function m(e) {
   } = e, {
     channel: n,
     user: r
-  } = (0, a.cj)([d.Z, I.default], () => ({
+  } = (0, l.cj)([d.Z, I.default], () => ({
     channel: "channel" === t.type ? d.Z.getChannel(t.id) : null,
     user: "user" === t.type ? I.default.getUser(t.id) : null
   }));
@@ -101,7 +101,7 @@ function m(e) {
 
 function j(e) {
   var t, n, {
-      message: a,
+      message: l,
       failedDestinations: s,
       forwardOptions: c
     } = e,
@@ -110,25 +110,25 @@ function j(e) {
       var n, i, r = function(e, t) {
         if (null == e) return {};
         var n, i, r = {},
-          a = Object.keys(e);
-        for (i = 0; i < a.length; i++) n = a[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+          l = Object.keys(e);
+        for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
         return r
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var a = Object.getOwnPropertySymbols(e);
-        for (i = 0; i < a.length; i++) n = a[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+        var l = Object.getOwnPropertySymbols(e);
+        for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
       }
       return r
     }(e, ["message", "failedDestinations", "forwardOptions"]);
   let u = r.useCallback(() => {
     (0, _.l8)({
-      message: a,
+      message: l,
       source: "retry-modal",
       initialSelectedDestinations: s,
       forwardOptions: c
     })
-  }, [s, a, c]);
-  return (0, i.jsxs)(l.ConfirmModal, (t = function(e) {
+  }, [s, l, c]);
+  return (0, i.jsxs)(a.ConfirmModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);
@@ -146,15 +146,15 @@ function j(e) {
     }
     return e
   }({
-    header: g.NW.string(g.t["/OPIaG"]),
-    confirmText: g.NW.string(g.t["5911LS"]),
-    cancelText: g.NW.string(g.t["ETE/oK"]),
-    confirmButtonColor: l.zxk.Colors.BRAND,
+    header: g.intl.string(g.t["/OPIaG"]),
+    confirmText: g.intl.string(g.t["5911LS"]),
+    cancelText: g.intl.string(g.t["ETE/oK"]),
+    confirmButtonColor: a.zxk.Colors.BRAND,
     onConfirm: u
   }, o), n = n = {
-    children: [(0, i.jsx)(l.Text, {
+    children: [(0, i.jsx)(a.Text, {
       variant: "text-md/medium",
-      children: g.NW.format(g.t.cn9vFR, {
+      children: g.intl.format(g.t.cn9vFR, {
         count: s.length
       })
     }), (0, i.jsx)("div", {

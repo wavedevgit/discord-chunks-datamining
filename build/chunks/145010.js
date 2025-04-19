@@ -33,7 +33,7 @@ function f(e) {
       } = e;
       return (0, r.jsx)(c.Z, {
         children: (0, r.jsx)(d.Z, {
-          title: h.NW.string(h.t.XYLOyM),
+          title: h.intl.string(h.t.XYLOyM),
           channel: t,
           closePopout: n,
           onFocus: i,

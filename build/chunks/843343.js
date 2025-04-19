@@ -22,7 +22,7 @@ function g() {
     g = (0, i.Ie)("unavailable-guilds-button");
   return n <= 0 ? null : (0, r.jsx)(u.H, {
     children: (0, r.jsx)(d.Z, {
-      text: p.NW.format(p.t["TnH05+"], {
+      text: p.intl.format(p.t["TnH05+"], {
         count: n
       }),
       color: o.ua7.Colors.RED,
@@ -47,7 +47,7 @@ function g() {
         href: (0, s.Z)(h.RK.TWITTER),
         target: "_blank",
         className: f.guildsError,
-        "aria-label": p.NW.formatToPlainString(p.t["MEpX+/"], {
+        "aria-label": p.intl.formatToPlainString(p.t["MEpX+/"], {
           count: n
         })
       }, g), t = t = {

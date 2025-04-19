@@ -2,11 +2,11 @@
 a.d(i, {
   default: () => j
 }), a(388685), a(953529);
-var s = a(200651),
-  t = a(192379),
+var t = a(200651),
+  s = a(192379),
   n = a(120356),
-  o = a.n(n),
-  l = a(481060),
+  l = a.n(n),
+  o = a(481060),
   r = a(313201),
   m = a(309081),
   d = a(35463),
@@ -33,55 +33,55 @@ function j(e) {
     channelId: a,
     localCreationAnswerId: n.localCreationAnswerId,
     image: n.image
-  }), [C, N] = t.useState(null != (i = null == k ? void 0 : k.description) ? i : "");
-  return (0, s.jsxs)(l.Y0X, {
-    size: l.CgR.DYNAMIC,
-    className: o()(u.modal, {
+  }), [C, z] = s.useState(null != (i = null == k ? void 0 : k.description) ? i : "");
+  return (0, t.jsxs)(o.Y0X, {
+    size: o.CgR.DYNAMIC,
+    className: l()(u.modal, {
       [u.hasImage]: p,
       [u.hasEmoji]: null != g
     }),
     transitionState: j,
-    "aria-label": h.NW.string(h.t.QbhHBQ),
-    children: [(0, s.jsx)(m.I, {
+    "aria-label": h.intl.string(h.t.QbhHBQ),
+    children: [(0, t.jsx)(m.I, {
       hasUpload: p,
       mediaUrl: v,
       mediaFilename: w,
       imageClassName: u.imagePreview,
       emoji: g,
       emojiClassName: u.emojiPreview
-    }), (0, s.jsxs)(l.hzk, {
+    }), (0, t.jsxs)(o.hzk, {
       className: u.content,
-      children: [(0, s.jsx)(l.vwX, {
-        tag: l.RB0.LABEL,
+      children: [(0, t.jsx)(o.vwX, {
+        tag: o.RB0.LABEL,
         htmlFor: x,
-        children: h.NW.string(h.t["/2Gnoa"])
-      }), (0, s.jsx)(l.oil, {
+        children: h.intl.string(h.t["/2Gnoa"])
+      }), (0, t.jsx)(o.oil, {
         id: x,
         value: C,
         inputClassName: u.input,
-        onChange: N,
+        onChange: z,
         maxLength: c.WA,
         autoFocus: !0
       })]
-    }), (0, s.jsxs)(l.mzw, {
+    }), (0, t.jsxs)(o.mzw, {
       className: u.footer,
-      children: [(0, s.jsx)(l.zxk, {
-        look: l.iLD.FILLED,
-        size: l.zxk.Sizes.MEDIUM,
+      children: [(0, t.jsx)(o.zxk, {
+        look: o.iLD.FILLED,
+        size: o.zxk.Sizes.MEDIUM,
         onClick: () => {
           null != C && r(C), _()
         },
-        children: (0, s.jsx)(l.Text, {
+        children: (0, t.jsx)(o.Text, {
           variant: "text-md/semibold",
-          children: h.NW.string(h.t.R3BPHx)
+          children: h.intl.string(h.t.R3BPHx)
         })
-      }), (0, s.jsx)(l.zxk, {
-        look: l.iLD.LINK,
-        size: l.zxk.Sizes.MEDIUM,
+      }), (0, t.jsx)(o.zxk, {
+        look: o.iLD.LINK,
+        size: o.zxk.Sizes.MEDIUM,
         onClick: _,
-        children: (0, s.jsx)(l.Text, {
+        children: (0, t.jsx)(o.Text, {
           variant: "text-md/semibold",
-          children: h.NW.string(h.t["ETE/oK"])
+          children: h.intl.string(h.t["ETE/oK"])
         })
       })]
     })]

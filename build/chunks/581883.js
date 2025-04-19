@@ -65,7 +65,7 @@ function O(e) {
     isDirty: r,
     cleanupFuncs: i
   } = (0, p.xt)(E.proto, _.Z[h.yP.PRELOADED_USER_SETTINGS]);
-  r && N(E), E.proto = n, a()("string" != typeof E.proto, "UserSettingsProto cannot be a string"), E.editInfo.triggeredMigrations = r, E.editInfo.cleanupFuncs = i, E.editInfo.loaded = !0, Object.values(y).forEach(e => {
+  r && A(E), E.proto = n, a()("string" != typeof E.proto, "UserSettingsProto cannot be a string"), E.editInfo.triggeredMigrations = r, E.editInfo.cleanupFuncs = i, E.editInfo.loaded = !0, Object.values(y).forEach(e => {
     e.lazyLoaded && (e.editInfo.loaded = !1, e.editInfo.loading = !1)
   }), T()
 }
@@ -89,11 +89,11 @@ function T() {
   })
 }
 
-function N(e) {
+function A(e) {
   null != e.editInfo.timeout && clearTimeout(e.editInfo.timeout), e.editInfo = (0, h.JC)()
 }
 
-function A(e) {
+function N(e) {
   let {
     userSettingsProto: t
   } = e;
@@ -112,7 +112,7 @@ function C(e) {
   } = e;
   v = !o;
   let s = y[n];
-  i && N(s), r ? (s.proto = (0, p.re)(s.ProtoClass, s.proto, t), a()("string" != typeof s.proto, "UserSettingsProto cannot be a string")) : (s.proto = t, a()("string" != typeof s.proto, "UserSettingsProto cannot be a string"), s.editInfo.loaded = !0, s.editInfo.loading = !1)
+  i && A(s), r ? (s.proto = (0, p.re)(s.ProtoClass, s.proto, t), a()("string" != typeof s.proto, "UserSettingsProto cannot be a string")) : (s.proto = t, a()("string" != typeof s.proto, "UserSettingsProto cannot be a string"), s.editInfo.loaded = !0, s.editInfo.loading = !1)
 }
 
 function R(e) {
@@ -218,6 +218,6 @@ let L = new D(f.Z, {
   CONNECTION_OPEN: O,
   CONNECTION_CLOSED: I,
   CONNECTION_RESUMED: I,
-  OVERLAY_INITIALIZE: A,
+  OVERLAY_INITIALIZE: N,
   LOGOUT: S
 })

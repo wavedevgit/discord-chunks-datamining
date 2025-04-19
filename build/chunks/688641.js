@@ -55,7 +55,7 @@ function u(e) {
           variant: "text-xs/normal",
           color: b ? "text-primary" : "header-secondary",
           className: c.inline,
-          children: s.NW.format(s.t.NywdIi, {
+          children: s.intl.format(s.t.NywdIi, {
             count: h
           })
         })]

@@ -1,13 +1,13 @@
 /** Chunk was on 83264 **/
 r.d(t, {
-  Z: () => l
+  Z: () => a
 }), r(388685);
-var s = r(200651),
-  n = r(192379),
+var n = r(200651),
+  s = r(192379),
   i = r(748780),
   o = r(481060),
-  a = r(502254);
-class l extends n.Component {
+  l = r(502254);
+class a extends s.Component {
   componentWillEnter(e) {
     let {
       offset: t
@@ -35,8 +35,8 @@ class l extends n.Component {
       isExiting: e,
       offset: t
     } = this.state;
-    return (0, s.jsx)(i.Z.div, {
-      className: a.wrapper,
+    return (0, n.jsx)(i.Z.div, {
+      className: l.wrapper,
       style: {
         left: 0,
         position: e ? "absolute" : "relative",
@@ -48,8 +48,8 @@ class l extends n.Component {
           })
         }]
       },
-      children: (0, s.jsx)(o.hzk, {
-        className: a.contentWrapper,
+      children: (0, n.jsx)(o.hzk, {
+        className: l.contentWrapper,
         children: this.props.children
       })
     })

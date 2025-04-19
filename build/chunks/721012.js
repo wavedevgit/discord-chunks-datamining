@@ -3,9 +3,9 @@ n.d(t, {
   i: () => u
 }), n(388685);
 var l = n(200651),
-  r = n(192379);
+  i = n(192379);
 n(120356);
-var i = n(200100),
+var r = n(200100),
   s = n(481060),
   a = n(671533),
   o = n(388032),
@@ -16,8 +16,8 @@ function d(e) {
     testimonial: t,
     className: n
   } = e, {
-    message: r,
-    profilePic: i,
+    message: i,
+    profilePic: r,
     adminTitle: a,
     emphasisColor: d = "interactive-normal"
   } = t;
@@ -26,7 +26,7 @@ function d(e) {
     children: [(0, l.jsx)(s.Text, {
       variant: "text-sm/medium",
       color: "header-secondary",
-      children: o.NW.format(r, {
+      children: o.intl.format(i, {
         testimonialHook: (e, t) => (0, l.jsx)(s.Text, {
           tag: "span",
           variant: "text-sm/bold",
@@ -37,7 +37,7 @@ function d(e) {
     }), (0, l.jsxs)("div", {
       className: c.userContainer,
       children: [(0, l.jsx)(s.qEK, {
-        src: i,
+        src: r,
         size: s.EFr.SIZE_16,
         "aria-hidden": !0
       }), (0, l.jsx)(s.Text, {
@@ -53,30 +53,30 @@ function u(e) {
   let {
     testimonials: t
   } = e, [
-    [n, i], d
-  ] = r.useState([0, "right"]), u = r.useCallback(() => {
+    [n, r], d
+  ] = i.useState([0, "right"]), u = i.useCallback(() => {
     d(e => {
       let [n] = e;
       return 0 === n ? [t.length - 1, "left"] : [n - 1, "left"]
     })
-  }, [d, t.length]), N = r.useCallback(() => {
+  }, [d, t.length]), I = i.useCallback(() => {
     d(e => {
       let [n] = e;
       return [(n + 1) % t.length, "right"]
     })
-  }, [d, t.length]), I = t[n], h = r.useCallback((e, t, n, r) => (0, l.jsx)(m, {
+  }, [d, t.length]), h = t[n], g = i.useCallback((e, t, n, i) => (0, l.jsx)(m, {
     item: t,
     state: n,
-    cleanup: r,
-    direction: i
-  }, e), [i]);
+    cleanup: i,
+    direction: r
+  }, e), [r]);
   return (0, l.jsxs)("div", {
     className: c.testimonialHeroContainer,
     children: [(0, l.jsx)("div", {
       className: c.animatedContainer,
       children: (0, l.jsx)(s.W3x, {
-        items: [I],
-        renderItem: h,
+        items: [h],
+        renderItem: g,
         getItemKey: e => e.adminTitle
       })
     }), (0, l.jsx)(s.Text, {
@@ -95,19 +95,19 @@ function u(e) {
           className: c.testimonialControlIcon,
           direction: a.Z.Directions.LEFT
         }), (0, l.jsx)(s.nn4, {
-          children: o.NW.string(o.t["13/7kZ"])
+          children: o.intl.string(o.t["13/7kZ"])
         })]
       }), (0, l.jsxs)(s.zxk, {
         className: c.testimonialControl,
         innerClassName: c.testimonialControlInner,
-        onClick: N,
+        onClick: I,
         size: s.zxk.Sizes.MIN,
         color: s.zxk.Colors.PRIMARY,
         children: [(0, l.jsx)(a.Z, {
           className: c.testimonialControlIcon,
           direction: a.Z.Directions.RIGHT
         }), (0, l.jsx)(s.nn4, {
-          children: o.NW.string(o.t.PDTjLC)
+          children: o.intl.string(o.t.PDTjLC)
         })]
       })]
     })]
@@ -118,7 +118,7 @@ function m(e) {
   let {
     item: t,
     state: n,
-    cleanup: r,
+    cleanup: i,
     direction: a
   } = e, [o] = (0, s.q_F)(() => {
     switch (n) {
@@ -136,13 +136,13 @@ function m(e) {
             transform: "translateX(0%)"
           }, to: {
             transform: "right" === a ? "translateX(-150%)" : "translate(150%)"
-          }, onRest: r
+          }, onRest: i
         };
       default:
         return {}
     }
   }, "respect-motion-settings", [n]);
-  return (0, l.jsx)(i.animated.div, {
+  return (0, l.jsx)(r.animated.div, {
     style: o,
     children: (0, l.jsx)(d, {
       className: c.testimonial,

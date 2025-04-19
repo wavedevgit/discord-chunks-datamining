@@ -1,12 +1,12 @@
 /** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  Z: () => N
+  Z: () => _
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  s = n(120356),
-  l = n.n(s),
+  l = n(120356),
+  s = n.n(l),
   a = n(866442),
   o = n(481060),
   c = n(393238),
@@ -61,7 +61,7 @@ function j(e) {
   let {
     value: t,
     onChange: n,
-    disabled: s = !1
+    disabled: l = !1
   } = e, [c, d] = i.useState(t);
 
   function u() {
@@ -72,100 +72,100 @@ function j(e) {
     n(e), d(e)
   }
   let j = t === m.p6O,
-    N = j ? c : t,
-    _ = (0, r.jsx)(o.dz2, {
+    _ = j ? c : t,
+    v = (0, r.jsx)(o.dz2, {
       size: "custom",
       width: 32,
       height: 24,
       color: b(t)
     }),
-    v = (0, o.arW)({
+    O = (0, o.arW)({
       orientation: "horizontal",
-      isDisabled: s
+      isDisabled: l
     }),
     {
-      ref: O
-    } = v,
-    C = function(e, t) {
+      ref: C
+    } = O,
+    y = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
         var n, r, i = {},
-          s = Object.keys(e);
-        for (r = 0; r < s.length; r++) n = s[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+          l = Object.keys(e);
+        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var s = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        var l = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
-    }(v, ["ref"]),
-    y = (0, o.xUy)({
+    }(O, ["ref"]),
+    N = (0, o.xUy)({
       isSelected: j,
-      label: g.NW.formatToPlainString(g.t.ZC69mJ, {
+      label: g.intl.formatToPlainString(g.t.ZC69mJ, {
         colorHex: (0, a.Rf)(m.p6O)
       })
     }),
     I = (0, o.xUy)({
       isSelected: !j,
-      label: g.NW.formatToPlainString(g.t["3kiLZW"], {
+      label: g.intl.formatToPlainString(g.t["3kiLZW"], {
         colorHex: (0, a.Rf)(t)
       })
     });
   return (0, r.jsxs)("div", f(h({
     className: p.buttonsContainer,
-    "aria-label": g.NW.string(g.t.FJjrIy),
-    ref: O
-  }, C), {
+    "aria-label": g.intl.string(g.t.FJjrIy),
+    ref: C
+  }, y), {
     children: [(0, r.jsx)("div", {
-      className: l()(p.colorSwatch, {
-        [p.disabled]: s
+      className: s()(p.colorSwatch, {
+        [p.disabled]: l
       }),
       children: (0, r.jsxs)(o.P3F, f(h({
-        onClick: s ? void 0 : function() {
+        onClick: l ? void 0 : function() {
           n(m.p6O)
         },
-        "aria-disabled": s
-      }, y), {
+        "aria-disabled": l
+      }, N), {
         children: [(0, r.jsx)("div", {
           className: p.swatch,
           style: {
             backgroundColor: (0, a.Rf)(m.p6O)
           },
-          children: j ? _ : null
+          children: j ? v : null
         }), (0, r.jsx)(o.Text, {
           className: p.swatchDescription,
           color: "header-secondary",
           variant: "text-xs/normal",
           "aria-hidden": !0,
-          children: g.NW.string(g.t.Mcfzam)
+          children: g.intl.string(g.t.Mcfzam)
         })]
       }))
     }), (0, r.jsxs)("div", {
-      className: l()(p.colorSwatch, {
-        [p.disabled]: s
+      className: s()(p.colorSwatch, {
+        [p.disabled]: l
       }),
       children: [(0, r.jsxs)(o.P3F, f(h({
-        onClick: s ? void 0 : u,
-        "aria-disabled": s
+        onClick: l ? void 0 : u,
+        "aria-disabled": l
       }, I), {
         children: [(0, r.jsx)("div", {
-          className: l()(p.customSwatch, {
-            [p.defaultSwatch]: N === m.p6O
+          className: s()(p.customSwatch, {
+            [p.defaultSwatch]: _ === m.p6O
           }),
           style: {
-            "--custom-color": (0, a.Rf)(N)
+            "--custom-color": (0, a.Rf)(_)
           },
-          children: j ? null : _
+          children: j ? null : v
         }), (0, r.jsx)(o.Text, {
           className: p.swatchDescription,
           color: "header-secondary",
           variant: "text-xs/normal",
           "aria-hidden": !0,
-          children: g.NW.string(g.t["2ArXy8"])
+          children: g.intl.string(g.t["2ArXy8"])
         })]
-      })), !s && (0, r.jsx)(o.yRy, {
+      })), !l && (0, r.jsx)(o.yRy, {
         onRequestOpen: u,
         renderPopout: e => (0, r.jsx)(o.Z$W, f(h({}, e), {
           value: t,
@@ -173,13 +173,13 @@ function j(e) {
         })),
         children: e => (0, r.jsx)(o.P3F, f(h({}, e), {
           className: p.dropperIconButton,
-          "aria-label": g.NW.string(g.t.Qp04hI),
+          "aria-label": g.intl.string(g.t.Qp04hI),
           children: (0, r.jsx)(o.ilE, {
             size: "custom",
             className: p.dropperIcon,
             width: 14,
             height: 14,
-            color: b(N)
+            color: b(_)
           })
         }))
       })]
@@ -187,28 +187,28 @@ function j(e) {
   }))
 }
 
-function N(e) {
+function _(e) {
   let t, {
       value: n,
       onChange: i,
-      disabled: s = !1
+      disabled: l = !1
     } = e,
     {
-      ref: l,
+      ref: s,
       width: a
     } = (0, c.ZP)();
   return t = null == a || a < 440 ? (0, r.jsx)(j, {
     value: n,
     onChange: i,
-    disabled: s
+    disabled: l
   }) : (0, r.jsx)(x, {
     defaultColor: m.p6O,
     colors: m.pmI,
     value: n,
     onChange: i,
-    disabled: s
+    disabled: l
   }), (0, r.jsx)("div", {
-    ref: l,
+    ref: s,
     children: t
   })
 }

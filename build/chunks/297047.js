@@ -37,7 +37,7 @@ function f(e, t, n) {
   }, [t]), d = n === p.IlC.POPOUT;
   return !u || d ? null : (0, r.jsx)(a.sNh, {
     id: "mention",
-    label: g.NW.string(g.t.P8tvKC),
+    label: g.intl.string(g.t.P8tvKC),
     action: function() {
       m(e, i)
     }

@@ -21,7 +21,7 @@ function u() {
       className: l.lockIcon
     }), (0, r.jsx)(o.Text, {
       variant: "text-sm/medium",
-      children: s.NW.string(s.t.Kv6Z4O)
+      children: s.intl.string(s.t.Kv6Z4O)
     })]
   })
 }

@@ -68,7 +68,7 @@ function _(e) {
     ref: e => {
       p.current = e, d(e)
     },
-    "data-dnd-name": g.NW.formatToPlainString(g.t.A5aDw8, {
+    "data-dnd-name": g.intl.formatToPlainString(g.t.A5aDw8, {
       itemName: t
     }),
     className: m.target
@@ -101,7 +101,7 @@ function O(e) {
       ref: e => {
         d.current = e, u(e)
       },
-      "data-dnd-name": g.NW.formatToPlainString(g.t.qiQ0QE, {
+      "data-dnd-name": g.intl.formatToPlainString(g.t.qiQ0QE, {
         itemName: t
       }),
       className: o()(m.centerTarget, {})

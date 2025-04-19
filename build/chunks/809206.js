@@ -11,9 +11,9 @@ n.d(t, {
   W0: () => O,
   W3: () => C,
   Zy: () => m,
-  b9: () => N,
+  b9: () => A,
   cV: () => I,
-  si: () => A,
+  si: () => N,
   ss: () => g,
   xn: () => T
 });
@@ -63,7 +63,7 @@ function m() {
 }
 
 function g(e, t) {
-  let n = t ? f.NW.string(f.t["8lQ2ra"]) : f.NW.string(f.t.jf5GGR),
+  let n = t ? f.intl.string(f.t["8lQ2ra"]) : f.intl.string(f.t.jf5GGR),
     i = t ? u.ANM.DELETE_ACCOUNT : u.ANM.DISABLE_ACCOUNT,
     a = t => r.tn.post({
       url: i,
@@ -146,7 +146,7 @@ function b(e) {
   }, {
     checkEnabled: !1,
     modalProps: {
-      title: f.NW.string(f.t.clQc1d)
+      title: f.intl.string(f.t.clQc1d)
     },
     hooks: {
       onEarlyClose: () => o.Z.dispatch({
@@ -179,7 +179,7 @@ function v(e) {
   o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR",
     avatar: e
-  }), null == e ? a.uv.announce(f.NW.string(f.t["f1+oNj"])) : a.uv.announce(f.NW.string(f.t.NstziY))
+  }), null == e ? a.uv.announce(f.intl.string(f.t["f1+oNj"])) : a.uv.announce(f.intl.string(f.t.NstziY))
 }
 
 function O(e) {
@@ -210,13 +210,13 @@ function T(e) {
   })
 }
 
-function N() {
+function A() {
   o.Z.dispatch({
     type: "USER_SETTINGS_CLEAR_ERRORS"
   })
 }
 
-function A() {
+function N() {
   o.Z.dispatch({
     type: "USER_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES"
   })

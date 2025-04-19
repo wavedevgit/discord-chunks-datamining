@@ -16,7 +16,7 @@ class s extends i.PureComponent {
     return null == t.legalNotice ? null : (0, r.jsxs)("div", {
       className: e,
       children: [(0, r.jsx)(l.Z, {
-        children: a.NW.string(a.t.m8OiMj)
+        children: a.intl.string(a.t.m8OiMj)
       }), (0, r.jsx)("div", {
         className: o.content,
         children: t.legalNotice

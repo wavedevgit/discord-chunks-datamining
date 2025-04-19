@@ -28,7 +28,7 @@ let m = () => {
         icon: o.VL1,
         "aria-hidden": !0
       }), (0, r.jsx)(c.Z.Title, {
-        children: d.NW.string(d.t["8LKcho"])
+        children: d.intl.string(d.t["8LKcho"])
       })]
     }), (0, r.jsxs)("div", {
       className: p.content,
@@ -39,11 +39,11 @@ let m = () => {
       }), (0, r.jsx)(o.X6q, {
         className: p.splashHeader,
         variant: "heading-lg/medium",
-        children: d.NW.string(d.t.m9gRVF)
+        children: d.intl.string(d.t.m9gRVF)
       }), (0, r.jsx)(o.Text, {
         className: p.splashText,
         variant: "text-md/normal",
-        children: d.NW.string(d.t["wC3j5+"])
+        children: d.intl.string(d.t["wC3j5+"])
       })]
     })]
   })

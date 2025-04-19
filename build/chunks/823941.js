@@ -27,20 +27,20 @@ var r = n(200651),
   I = n(794324),
   S = n(474936),
   T = n(388032),
-  N = n(544348);
-let A = 90,
+  A = n(544348);
+let N = 90,
   C = 28,
-  R = (0, E.IC)(A),
+  R = (0, E.IC)(N),
   P = e => {
     let {
       category: t
     } = e, {
       analyticsLocations: n
     } = (0, d.ZP)(), a = i.useRef(null), o = (0, l.e7)([p.default], () => p.default.getCurrentUser());
-    return g.ZP.canUseCollectibles(o) ? t.summary : T.NW.format(T.t["9hafRk"], {
+    return g.ZP.canUseCollectibles(o) ? t.summary : T.intl.format(T.t["9hafRk"], {
       getPremium: e => (0, r.jsx)(c.P3F, {
         innerRef: a,
-        className: N.getPremiumHook,
+        className: A.getPremiumHook,
         onClick: () => {
           (0, _.Z)({
             subscriptionTier: S.Si.TIER_2,
@@ -65,10 +65,10 @@ let A = 90,
     return /.*\.png/i.test(t) ? (0, r.jsx)("img", {
       src: t,
       alt: "",
-      className: N.animationAsset
+      className: A.animationAsset
     }) : (0, r.jsx)(f.Z, {
       src: t,
-      className: N.animationAsset,
+      className: A.animationAsset,
       autoPlay: !0,
       loop: !0
     })
@@ -88,7 +88,7 @@ function D(e) {
   } = (0, I.t0)(t), S = !!(null == _ ? void 0 : _.showDarkBannerText);
   return (0, r.jsxs)(y.Z, {
     asset: p,
-    className: o()(N.shopBanner, n),
+    className: o()(A.shopBanner, n),
     style: null != a ? {
       background: "".concat((0, O.nH)(a), " border-box border-box"),
       outlineColor: a.border.toHslString()
@@ -96,20 +96,20 @@ function D(e) {
     children: [!d && null != g && f && (0, r.jsx)(w, {
       src: g
     }), (null == _ ? void 0 : _.addAttributionLogo) ? (0, r.jsxs)("div", {
-      className: N.discordLogo,
+      className: A.discordLogo,
       children: [(0, r.jsx)(c.gw7, {
         size: "custom",
         width: 28,
         height: 28,
         color: "currentColor",
-        className: N.discordIcon
+        className: A.discordIcon
       }), (0, r.jsx)(m.Z, {
-        className: N.discordWordmark
+        className: A.discordWordmark
       })]
     }) : (0, r.jsx)(c.LZC, {
       size: C
     }), (null == _ ? void 0 : _.addLogo) ? (0, r.jsx)("img", {
-      className: N.categoryLogo,
+      className: A.categoryLogo,
       src: (0, E.uV)(t.logo, {
         size: R
       }),
@@ -118,10 +118,10 @@ function D(e) {
         maxWidth: null == _ ? void 0 : _.logoMaxWidth
       }
     }) : (0, r.jsx)(c.LZC, {
-      size: A
+      size: N
     }), (0, r.jsx)(c.Text, {
-      className: o()(N.summary, {
-        [N.blackSummary]: S
+      className: o()(A.summary, {
+        [A.blackSummary]: S
       }),
       style: null != t.bannerTextColor ? {
         color: t.bannerTextColor
@@ -132,7 +132,7 @@ function D(e) {
       }) : t.summary
     }), !i && (0, r.jsx)(v.Z, {
       category: t,
-      className: N.limitedTimeBadge,
+      className: A.limitedTimeBadge,
       display: "banner"
     })]
   })

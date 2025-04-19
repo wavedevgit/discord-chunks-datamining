@@ -1,17 +1,17 @@
 /** Chunk was on 33397 **/
-r.d(t, {
+n.d(t, {
   i: () => a
 });
-var n = r(192379),
-  l = r(442837),
-  i = r(19780),
-  u = r(959457),
-  s = r(630759);
+var r = n(192379),
+  l = n(442837),
+  i = n(19780),
+  u = n(959457),
+  s = n(630759);
 
 function a(e) {
   let {
     channelId: t,
-    userId: r,
+    userId: n,
     nickname: a,
     onAlertOpen: o
   } = e, c = function(e) {
@@ -20,12 +20,12 @@ function a(e) {
     } = e;
     return (0, l.e7)([i.Z, u.Z], () => (0, s.UB)(t, [i.Z, u.Z]))
   }({
-    userId: r
-  }), d = n.useRef(null);
-  n.useEffect(() => {
+    userId: n
+  }), d = r.useRef(null);
+  r.useEffect(() => {
     c && null == d.current ? d.current = setTimeout(() => {
       o(), (0, s.lg)({
-        userId: r,
+        userId: n,
         channelId: t,
         nickname: a
       })
@@ -34,5 +34,5 @@ function a(e) {
     return () => {
       clearTimeout(e)
     }
-  }, [t, c, a, o, r])
+  }, [t, c, a, o, n])
 }

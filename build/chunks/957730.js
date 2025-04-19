@@ -26,8 +26,8 @@ var r = n(392711),
   I = n(594174),
   S = n(483360),
   T = n(176354),
-  N = n(51144),
-  A = n(981631),
+  A = n(51144),
+  N = n(981631),
   C = n(185923),
   R = n(388032);
 
@@ -157,7 +157,7 @@ let U = u.Z.RULES,
   V = /^<#(\d+)>/,
   Z = /^<a?:(\w+):(\d+)>/,
   H = /(@everyone|@here|@Clyde)\b/,
-  W = {
+  Y = {
     link: k(o().defaultRules.link),
     autolink: k(o().defaultRules.autolink),
     url: k(o().defaultRules.url),
@@ -255,7 +255,7 @@ let U = u.Z.RULES,
       match: (e, t) => "string" == typeof t.textExclusions && "" !== t.textExclusions ? (0, d.T9)(t.textExclusions).exec(e) : null != G.match ? G.match(e, t, "") : null
     })
   },
-  Y = {
+  W = {
     inlineCode: k(U.inlineCode),
     codeBlock: k(U.codeBlock),
     mention: {
@@ -267,14 +267,14 @@ let U = u.Z.RULES,
         if (null == i) return {
           content: e[0]
         };
-        let a = N.ZP.getUserTag(i, {
+        let a = A.ZP.getUserTag(i, {
           identifiable: r && O.Z.enabled ? "never" : "always"
         });
         if (!r) return {
           content: "@".concat(a)
         };
         {
-          let e = N.ZP.getGlobalName(i);
+          let e = A.ZP.getGlobalName(i);
           return {
             content: null != e ? "@".concat(e) : "@".concat(a)
           }
@@ -328,13 +328,13 @@ let U = u.Z.RULES,
       }
     },
     spoiler: {
-      match: o().anyScopeRegex(A.$92),
+      match: o().anyScopeRegex(N.$92),
       parse: () => ({
-        content: "<".concat(R.NW.string(R.t["F+x38P"]).toLowerCase(), ">")
+        content: "<".concat(R.intl.string(R.t["F+x38P"]).toLowerCase(), ">")
       })
     },
     staticRouteLink: {
-      match: o().anyScopeRegex(A.PEY),
+      match: o().anyScopeRegex(N.PEY),
       parse: e => ({
         content: "<id:".concat(e[1], ">")
       })
@@ -352,12 +352,12 @@ let U = u.Z.RULES,
     }),
     text: w({}, G)
   };
-[W, Y].forEach(e => {
+[Y, W].forEach(e => {
   Object.keys(e).forEach((t, n) => {
     e[t].order = n
   })
 });
-let K = o().parserFor(W),
+let K = o().parserFor(Y),
   z = /(?:<a?:\w+:(\d+)>)|:(?:([^\s:]+?)(?:::skin-tone-\d)?:)/g;
 
 function q(e, t, n) {
@@ -395,7 +395,7 @@ function X(e, t, n) {
 function J(e) {
   let t, n = null == e ? void 0 : e.getGuildId(),
     r = null != n ? b.Z.getGuild(n) : null,
-    a = y.Z.can(A.Plq.MENTION_EVERYONE, e);
+    a = y.Z.can(N.Plq.MENTION_EVERYONE, e);
   t = (null == e ? void 0 : e.isPrivate()) ? e.recipients.map(e => ({
     userId: e,
     nick: null
@@ -495,7 +495,7 @@ let ee = {
     let r = m.Z.getChannel(t),
       a = null != r ? r.getGuildId() : null,
       s = null != a ? b.Z.getGuild(a) : null,
-      l = n ? Y : i().omit(Y, ["spoiler", "timestamp"]),
+      l = n ? W : i().omit(W, ["spoiler", "timestamp"]),
       u = n ? $ : c.ZP.translateSurrogatesToInlineEmoji,
       d = o().parserFor(l),
       f = {

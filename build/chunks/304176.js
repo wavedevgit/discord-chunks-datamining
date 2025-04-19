@@ -1,7 +1,7 @@
 /** Chunk was on 91245 **/
 "use strict";
 n.d(t, {
-  Z: () => N
+  Z: () => T
 });
 var r = n(200651);
 n(192379);
@@ -57,12 +57,12 @@ function P(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let N = e => {
+let T = e => {
   let {
     roleIcon: t,
     guild: n
   } = e, {
-    name: N
+    name: T
   } = t;
   (0, i.ZP)(() => {
     y.default.track(O.rMx.OPEN_POPOUT, C({
@@ -70,18 +70,18 @@ let N = e => {
       guild_id: n.id
     }, (0, s.v_)(m.Z.getChannel(b.Z.getChannelId(n.id)))))
   });
-  let T = (0, o.e7)([f.Z], () => null != t.roleId ? f.Z.getRole(n.id, t.roleId) : void 0),
-    w = (0, p.Z)(T),
-    S = w ? j.NW.formatToPlainString(j.t.t0928f, {
-      name: N
-    }) : j.NW.formatToPlainString(j.t.UDDkGx, {
-      name: N
+  let w = (0, o.e7)([f.Z], () => null != t.roleId ? f.Z.getRole(n.id, t.roleId) : void 0),
+    S = (0, p.Z)(w),
+    I = S ? j.intl.formatToPlainString(j.t.t0928f, {
+      name: T
+    }) : j.intl.formatToPlainString(j.t.UDDkGx, {
+      name: T
     }),
-    I = P(C({}, t), {
+    N = P(C({}, t), {
       src: null == t.src ? t.src : (0, u.o)(t.src, 40),
       size: 40
     }),
-    k = w ? () => {
+    k = S ? () => {
       (0, g.uL)(O.Z5c.CHANNEL(n.id, v.oC.ROLE_SUBSCRIPTIONS))
     } : () => {
       (0, d.f)({
@@ -99,7 +99,7 @@ let N = e => {
           className: x.mainContent,
           children: [(0, r.jsx)("div", {
             className: x.roleIconContainer,
-            children: (0, r.jsx)(c.Z, P(C({}, I), {
+            children: (0, r.jsx)(c.Z, P(C({}, N), {
               enableTooltip: !1,
               className: x.__invalid_roleIcon,
               enableHeight: !1
@@ -110,11 +110,11 @@ let N = e => {
               variant: "heading-md/semibold",
               className: x.roleName,
               children: (0, r.jsx)(l.Z, {
-                children: N
+                children: T
               })
             }), (0, r.jsx)(a.Text, {
               variant: "text-sm/normal",
-              children: S
+              children: I
             })]
           })]
         }), (0, r.jsxs)(a.zxk, {
@@ -129,7 +129,7 @@ let N = e => {
             width: 14,
             height: 14,
             className: x.boosterBadge
-          }), j.NW.string(j.t["H930+P"])]
+          }), j.intl.string(j.t["H930+P"])]
         })]
       })
     })

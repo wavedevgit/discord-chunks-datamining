@@ -26,10 +26,10 @@ var r, i = n(200651),
   x = n(662146),
   E = n(674552),
   I = n(981631),
-  N = n(388032),
-  P = n(223203);
+  P = n(388032),
+  w = n(223203);
 
-function w(e, t, n) {
+function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -45,7 +45,7 @@ function Z(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      N(e, t, n[t])
     })
   }
   return e
@@ -172,7 +172,7 @@ class D extends(r = l.PureComponent) {
           hovered: !b && g,
           selected: !b && n,
           unread: !b && d,
-          className: P.pill
+          className: w.pill
         }), (0, i.jsx)(x.Z, {
           text: null != t ? t : "",
           selected: n,
@@ -198,7 +198,7 @@ class D extends(r = l.PureComponent) {
                 hovered: !1
               }),
               selected: n || g,
-              ariaLabel: null != t ? N.NW.formatToPlainString(N.t.hKarnZ, {
+              ariaLabel: null != t ? P.intl.formatToPlainString(P.t.hKarnZ, {
                 mentions: r,
                 name: t
               }) : "",
@@ -219,7 +219,7 @@ class D extends(r = l.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), w(this, "state", {
+    super(...e), N(this, "state", {
       hovered: !1,
       animating: !0,
       controller: new o.Controller({
@@ -228,7 +228,7 @@ class D extends(r = l.PureComponent) {
         opacity: 0,
         config: R
       })
-    }), w(this, "handleContextMenu", e => {
+    }), N(this, "handleContextMenu", e => {
       let {
         channel: t
       } = this.props, r = t.type === I.d4z.DM ? v.default.getUser(t.getRecipientId()) : null;
@@ -252,7 +252,7 @@ class D extends(r = l.PureComponent) {
     })
   }
 }
-w(D, "defaultProps", {
+N(D, "defaultProps", {
   badge: 0,
   audio: !1,
   video: !1,
@@ -279,7 +279,7 @@ let L = l.forwardRef(function(e, t) {
     x = !1;
   j && (S = u === I.WtW.VOICE, x = u === I.WtW.VIDEO);
   let E = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE),
-    N = (0, f.Q3)("DirectMessage");
+    P = (0, f.Q3)("DirectMessage");
   return (0, i.jsx)(D, T(Z({}, e), {
     ref: t,
     channelName: r,
@@ -291,8 +291,8 @@ let L = l.forwardRef(function(e, t) {
     stream: h,
     isCurrentUserInThisDMCall: j,
     isGDMFacepileEnabled: C,
-    size: N ? E : 56,
-    isVisualRefreshEnabled: N,
+    size: P ? E : 56,
+    isVisualRefreshEnabled: P,
     treeItemProps: l
   }))
 })

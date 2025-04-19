@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(707592),
-  s = n(137158),
-  l = n(388032),
+  l = n(137158),
+  s = n(388032),
   a = n(664305);
 let o = function(e) {
   let {
@@ -25,7 +25,7 @@ let o = function(e) {
     label: f,
     placeholder: x
   } = t;
-  return (0, r.jsx)(s.Z, {
+  return (0, r.jsx)(l.Z, {
     field: t,
     index: n,
     isDragEnabled: o,
@@ -39,7 +39,7 @@ let o = function(e) {
     fieldStyle: h,
     children: (0, r.jsx)(i.Gi, {
       className: a.fieldBackground,
-      placeholder: null != x ? x : l.NW.string(l.t["Sqn+Wl"]),
+      placeholder: null != x ? x : s.intl.string(s.t["Sqn+Wl"]),
       disabled: !0
     })
   })

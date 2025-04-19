@@ -4,8 +4,8 @@ n.d(t, {
   ZP: () => _,
   am: () => h
 }), n(388685);
-var r, a = n(200651),
-  i = n(192379),
+var r, i = n(200651),
+  a = n(192379),
   l = n(120356),
   s = n.n(l),
   o = n(481060),
@@ -24,7 +24,7 @@ let p = {
   CENTER: d.alignCenter,
   LEFT: d.alignLeft
 };
-class m extends(r = i.PureComponent) {
+class m extends(r = a.PureComponent) {
   componentDidUpdate(e) {
     let {
       selectedIndex: t
@@ -39,11 +39,11 @@ class m extends(r = i.PureComponent) {
       paginationContainerClass: r,
       align: l
     } = this.props, c = n ? d.verticalPaginationItemContainer : d.horizontalPaginationItemContainer;
-    return (0, a.jsx)(o.yWw, {
+    return (0, i.jsx)(o.yWw, {
       orientation: n ? "vertical" : "horizontal",
       className: s()(c, r, l),
       ref: this.handleSetScrollerRef,
-      children: t.map((t, n) => i.cloneElement(e(t, n), {
+      children: t.map((t, n) => a.cloneElement(e(t, n), {
         onClick: () => this.handlePageClick(n),
         key: n,
         ref: e => {
@@ -81,17 +81,17 @@ u(m, "Align", p), u(m, "defaultProps", {
   },
   align: p.CENTER
 });
-class h extends i.PureComponent {
+class h extends a.PureComponent {
   render() {
     let {
       className: e
     } = this.props;
-    return (0, a.jsx)(o.zxk, {
+    return (0, i.jsx)(o.zxk, {
       look: o.zxk.Looks.BLANK,
       size: o.zxk.Sizes.NONE,
       className: s()(d.prevButtonContainer, e),
       onClick: this.handlePrevClick,
-      children: (0, a.jsx)(c.Z, {
+      children: (0, i.jsx)(c.Z, {
         className: d.arrow,
         direction: c.Z.Directions.LEFT
       })
@@ -107,17 +107,17 @@ class h extends i.PureComponent {
     })
   }
 }
-class g extends i.PureComponent {
+class g extends a.PureComponent {
   render() {
     let {
       className: e
     } = this.props;
-    return (0, a.jsx)(o.zxk, {
+    return (0, i.jsx)(o.zxk, {
       look: o.zxk.Looks.BLANK,
       size: o.zxk.Sizes.NONE,
       className: s()(d.nextButtonContainer, e),
       onClick: this.handleNextClick,
-      children: (0, a.jsx)(c.Z, {
+      children: (0, i.jsx)(c.Z, {
         className: d.arrow,
         direction: c.Z.Directions.RIGHT
       })

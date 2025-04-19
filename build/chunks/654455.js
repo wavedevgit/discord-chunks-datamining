@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   LU: () => y,
-  ZP: () => N
+  ZP: () => A
 }), n(388685), n(35282), n(539854);
 var r, i = n(392711),
   a = n.n(i),
@@ -131,7 +131,7 @@ class T extends(r = o.ZP.PersistedStore) {
   }
 }
 _(T, "displayName", "ApplicationCommandFrecencyStore"), _(T, "persistKey", "ApplicationCommandFrecencyV2");
-let N = new T(s.Z, {
+let A = new T(s.Z, {
   APPLICATION_COMMAND_USED: I,
   USER_SETTINGS_PROTO_UPDATE: O
 })

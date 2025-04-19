@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(314897),
   S = n(785717),
   T = n(81570),
-  N = n(510659),
-  A = n(287954),
+  A = n(510659),
+  N = n(287954),
   C = n(810097),
   R = n(64621),
   P = n(913002),
@@ -96,8 +96,8 @@ let B = 1.25,
   V = 144,
   Z = 150,
   H = 150,
-  W = 300,
-  Y = 14;
+  Y = 300,
+  W = 14;
 
 function K(e) {
   let {
@@ -167,7 +167,7 @@ function z(e) {
       label: l.w.LOVE,
       size: "xxs"
     })]
-  }) : null, g = null != a ? a.label() : D.NW.string(D.t.evw0o6), E = (0, r.jsxs)("div", {
+  }) : null, g = null != a ? a.label() : D.intl.string(D.t.evw0o6), E = (0, r.jsxs)("div", {
     className: o()(L.content, f, null != p && L.withLabel),
     children: [p, (0, r.jsx)(d.oFk, {
       size: "xs",
@@ -185,7 +185,7 @@ function z(e) {
       children: E
     }), (0, r.jsx)(d.P3F, {
       className: o()(L.container, L.editable, f),
-      "aria-label": D.NW.string(D.t["zrpF/f"]),
+      "aria-label": D.intl.string(D.t["zrpF/f"]),
       onClick: _,
       focusProps: {
         ringClassName: L.ring
@@ -220,8 +220,8 @@ let q = i.forwardRef(function(e, t) {
     onShowToolbar: O,
     placeholderText: I,
     label: T,
-    hasEntered: A = !0
-  } = e, C = (0, N.yi)(), {
+    hasEntered: N = !0
+  } = e, C = (0, A.yi)(), {
     trackUserProfileAction: R
   } = (0, S.KZ)(), P = {
     [L.biteSize]: h === w.y0.BITE_SIZE,
@@ -231,7 +231,7 @@ let q = i.forwardRef(function(e, t) {
     location: "CustomStatusBubble"
   }), M = (0, m.Z)({
     location: "UserProfileCustomStatusBubble"
-  }), k = null != l ? B : 0, j = null != T && M ? Y : 0, U = F + k + j, G = V + k + j, z = i.useRef(null), q = i.useRef(null), Q = i.useRef(null), X = i.useRef(U), J = i.useRef(G), $ = null != l && null == p && null == T, [ee, et] = i.useState(!1), [en, er] = i.useState(!0), [ei, ea] = i.useState(!$ && A), eo = A && ee;
+  }), k = null != l ? B : 0, j = null != T && M ? W : 0, U = F + k + j, G = V + k + j, z = i.useRef(null), q = i.useRef(null), Q = i.useRef(null), X = i.useRef(U), J = i.useRef(G), $ = null != l && null == p && null == T, [ee, et] = i.useState(!1), [en, er] = i.useState(!0), [ei, ea] = i.useState(!$ && N), eo = N && ee;
   i.useLayoutEffect(() => {
     if (et(!0), null == q.current || null == Q.current || !eo) return;
     let e = q.current.getBoundingClientRect().height,
@@ -259,7 +259,7 @@ let q = i.forwardRef(function(e, t) {
   let ed = e => {
       ei && (e ? eu({
         maxHeight: "".concat(Math.min(J.current, G), "px"),
-        delay: es ? 0 : W,
+        delay: es ? 0 : Y,
         config: {
           clamp: !0,
           duration: es ? 0 : Z
@@ -267,7 +267,7 @@ let q = i.forwardRef(function(e, t) {
       }) : eu({
         maxHeight: "".concat(Math.min(X.current, U), "px"),
         delay: 0
-      }), es ? er(!e) : el.start(e ? W : H, () => er(!e)))
+      }), es ? er(!e) : el.start(e ? Y : H, () => er(!e)))
     },
     ef = null != T && M ? (0, r.jsx)(v.Z, {
       label: T,
@@ -288,7 +288,7 @@ let q = i.forwardRef(function(e, t) {
     eh = void 0 === I || null != l && x ? null : (0, r.jsx)(d.Text, {
       variant: "text-sm/normal",
       color: "text-muted",
-      "aria-label": "".concat(D.NW.string(D.t.EVV6ub), ": ").concat(I),
+      "aria-label": "".concat(D.intl.string(D.t.EVV6ub), ": ").concat(I),
       className: o()(L.statusText, x && L.italicPrompt),
       children: null != I ? I : ""
     }),
@@ -330,7 +330,7 @@ let q = i.forwardRef(function(e, t) {
         role: "tooltip",
         tabIndex: 0,
         className: o()(L.container, P, b),
-        "aria-label": D.NW.formatToPlainString(D.t.UpF5QU, {
+        "aria-label": D.intl.formatToPlainString(D.t.UpF5QU, {
           emoji: null != (n = null == l ? void 0 : l.name) ? n : "",
           status: p
         }),
@@ -355,7 +355,7 @@ let q = i.forwardRef(function(e, t) {
         role: "tooltip",
         tabIndex: 0,
         className: o()(L.container, P, b),
-        "aria-label": D.NW.formatToPlainString(D.t.UpF5QU, {
+        "aria-label": D.intl.formatToPlainString(D.t.UpF5QU, {
           emoji: null != (a = null == l ? void 0 : l.name) ? a : "",
           status: p
         }),
@@ -415,7 +415,7 @@ function X(e) {
     interactionType: d,
     interactionSource: f,
     resetInteraction: _
-  } = (0, N.Xo)(), p = f === w.n_.STATUS && d === w.P.REACT, h = f === w.n_.STATUS && d === w.P.REPLY, m = p || h, g = i.useRef(null), E = i.useRef(t), b = i.useRef(n);
+  } = (0, A.Xo)(), p = f === w.n_.STATUS && d === w.P.REACT, h = f === w.n_.STATUS && d === w.P.REPLY, m = p || h, g = i.useRef(null), E = i.useRef(t), b = i.useRef(n);
   i.useEffect(() => {
     f === w.n_.STATUS && ((E.current !== t || b.current !== n) && _(), E.current = t, b.current = n)
   }, [f, _, t, n]);
@@ -426,7 +426,7 @@ function X(e) {
     let e = null != t.id ? "`" + ":".concat(t.name, ":") + "`" : O.ZP.translateSurrogatesToInlineEmoji(t.name);
     return null == n ? e : "".concat(e, " ").concat(n)
   };
-  return (0, r.jsx)(A.Z, {
+  return (0, r.jsx)(N.Z, {
     user: a,
     guildId: o,
     channelId: s,
@@ -475,13 +475,13 @@ function J(e) {
   let g = (0, b.Z)(a.id),
     {
       analyticsLocations: y
-    } = (0, h.ZP)(p.Z.PROFILE_CUSTOM_STATUS),
+    } = (0, h.ZP)(p.Z.USER_PROFILE_CUSTOM_STATUS_BUBBLE),
     v = (0, c.e7)([I.default], () => I.default.getId() === a.id),
     O = v && !_,
     S = (0, T.T)({
       location: i
     }),
-    N = !v && !a.bot && S;
+    A = !v && !a.bot && S;
   if (null != s || null != l) {
     let e = null != l ? l : null,
       t = null != s && "" !== s ? s : null,
@@ -496,28 +496,28 @@ function J(e) {
       }, m))
     })
   }
-  let A = null != (t = null == g ? void 0 : g.emoji) ? t : null,
+  let N = null != (t = null == g ? void 0 : g.emoji) ? t : null,
     C = null != (n = null == g ? void 0 : g.state) ? n : null,
     R = null != C && "" !== C ? C : null,
     P = null != g ? (0, E.Z)(g) : null;
-  return null != A || null != R || O ? null == A && null == R ? (0, r.jsx)(h.Gt, {
+  return null != N || null != R || O ? null == N && null == R ? (0, r.jsx)(h.Gt, {
     value: y,
     children: (0, r.jsx)(z, M({
       onCloseProfile: o,
       prompt: f
     }, m))
-  }) : N ? (0, r.jsx)(h.Gt, {
+  }) : A ? (0, r.jsx)(h.Gt, {
     value: y,
     children: (0, r.jsx)(X, M({
       user: a,
-      emoji: A,
+      emoji: N,
       text: R,
       label: P
     }, m))
   }) : O ? (0, r.jsx)(h.Gt, {
     value: y,
     children: (0, r.jsx)(Q, M({
-      emoji: A,
+      emoji: N,
       text: R,
       label: P,
       onCloseProfile: o
@@ -525,7 +525,7 @@ function J(e) {
   }) : (0, r.jsx)(h.Gt, {
     value: y,
     children: (0, r.jsx)(q, M({
-      emoji: A,
+      emoji: N,
       text: R,
       label: P
     }, m))

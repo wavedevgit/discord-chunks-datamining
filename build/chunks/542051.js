@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => _
 }), n(415506), n(781311);
 var r, i = n(200651),
-  a = n(192379),
-  l = n(120356),
-  o = n.n(l),
+  l = n(192379),
+  a = n(120356),
+  o = n.n(a),
   s = n(481060),
   c = n(388032),
   u = n(953928);
@@ -58,14 +58,14 @@ function h(e, t, n) {
     "aria-selected": n
   }
 }
-class g extends(r = a.PureComponent) {
+class g extends(r = l.PureComponent) {
   renderQuery(e) {
     let {
       query: t,
       navId: n,
       focusedIndex: r,
-      onSelectQuery: a,
-      onSelectSearchEverywhere: l,
+      onSelectQuery: l,
+      onSelectSearchEverywhere: a,
       onHighlightQuery: d,
       hideQuery: f,
       searchFavorites: g
@@ -79,10 +79,10 @@ class g extends(r = a.PureComponent) {
         })
       }, h(n, -1, _)), {
         onMouseEnter: d,
-        onClick: a,
+        onClick: l,
         children: [(0, i.jsx)("div", {
           className: u.queryText,
-          children: g ? c.NW.string(c.t["6RVtLC"]) : c.NW.format(c.t.ub226e, {
+          children: g ? c.intl.string(c.t["6RVtLC"]) : c.intl.format(c.t.ub226e, {
             value: t
           })
         }), (0, i.jsx)("div", {
@@ -100,10 +100,10 @@ class g extends(r = a.PureComponent) {
         })
       }, h(n, -1, _)), {
         onMouseEnter: d,
-        onClick: l,
+        onClick: a,
         children: [(0, i.jsx)("div", {
           className: u.queryText,
-          children: c.NW.string(c.t.FtSUxc)
+          children: c.intl.string(c.t.FtSUxc)
         }), (0, i.jsx)("div", {
           className: u.queryShortcut,
           "aria-hidden": !0,
@@ -122,14 +122,14 @@ class g extends(r = a.PureComponent) {
       renderNoResults: n,
       renderInitialState: r,
       renderResult: i,
-      renderCustomResults: a
+      renderCustomResults: l
     } = this.props;
     if (e) return r();
     if (0 === t) return n();
     if (null != i) return Array.from({
       length: t
     }).map((e, t) => i(t));
-    if (null != a) return a();
+    if (null != l) return l();
     throw Error("SearchResultsPopout.renderResults: Flow should never allow this...")
   }
   render() {
@@ -138,7 +138,7 @@ class g extends(r = a.PureComponent) {
       focusedIndex: t,
       navId: n,
       width: r
-    } = this.props, a = "" === e.trim();
+    } = this.props, l = "" === e.trim();
     return (0, i.jsxs)("div", {
       className: u.container,
       style: {
@@ -149,7 +149,7 @@ class g extends(r = a.PureComponent) {
       id: n,
       tabIndex: -1,
       "aria-activedescendant": "".concat(n, "-").concat(t),
-      children: [this.renderQuery(a), this.renderResults(a)]
+      children: [this.renderQuery(l), this.renderResults(l)]
     })
   }
 }

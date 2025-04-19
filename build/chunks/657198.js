@@ -77,9 +77,9 @@ function O(e, t, n) {
       let f = {};
       if (l > 0) {
         let e;
-        e = c > 0 ? m.NW.formatToPlainString(m.t.BP8N0N, {
+        e = c > 0 ? m.intl.formatToPlainString(m.t.BP8N0N, {
           count: l
-        }) : m.NW.formatToPlainString(m.t.lziVCw, {
+        }) : m.intl.formatToPlainString(m.t.lziVCw, {
           count: l
         }), f["data-trailing-placeholder"] = e
       }
@@ -119,9 +119,9 @@ let I = e => {
         errored: (null == (r = u.Z.getOptionState(n, a.optionName)) || null == (t = r.lastValidationResult) ? void 0 : t.success) !== !0
       }
     }, [n, a.optionName]),
-    N = (0, l.e7)([f.Z], () => f.Z.getUpload(n, a.optionName, d.d.SlashCommand), [n, a.optionName]),
-    A = a.children[a.children.length - 1],
-    C = null != A && h.LC.isText(A) && A.text.endsWith("\n"),
+    A = (0, l.e7)([f.Z], () => f.Z.getUpload(n, a.optionName, d.d.SlashCommand), [n, a.optionName]),
+    N = a.children[a.children.length - 1],
+    C = null != N && h.LC.isText(N) && N.text.endsWith("\n"),
     R = o()(g.inlineElement, g.optionPill, {
       [g.selectedPill]: O && y,
       [g.erroredPill]: (!O || !y) && T
@@ -129,14 +129,14 @@ let I = e => {
     P = i.useCallback(() => {
       h.bN.isVoid(I, a) || p.Q.selectCommandOption(I, a.optionName, !0)
     }, [I, a]);
-  return t = S === c.jw.ATTACHMENT ? (null == N ? void 0 : N.filename) != null ? (0, r.jsxs)("span", {
+  return t = S === c.jw.ATTACHMENT ? (null == A ? void 0 : A.filename) != null ? (0, r.jsxs)("span", {
     className: o()(g.optionPillValue, g.attachmentFilename),
     contentEditable: !1,
-    children: [N.filename, E]
+    children: [A.filename, E]
   }) : (0, r.jsxs)("span", {
     className: o()(g.optionPillValue, g.readonlyPillValue),
     contentEditable: !1,
-    children: [m.NW.string(m.t.GRdFnp), E]
+    children: [m.intl.string(m.t.GRdFnp), E]
   }) : (0, r.jsxs)("span", {
     className: g.optionPillValue,
     children: [E, C ? (0, r.jsx)("span", {

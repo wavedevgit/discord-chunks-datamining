@@ -42,12 +42,12 @@ function C(e) {
   } = (0, u.cj)([m.Z], () => ({
     impersonateType: m.Z.getImpersonateType(t),
     viewingRoles: m.Z.getViewingRoles(t)
-  })), N = C === O.z.SERVER_SHOP, I = (0, u.e7)([b.ZP], () => null != n ? b.ZP.getTrueMember(t, n.id) : null), [j, x] = (0, d.A7R)(null == w ? [] : _.default.keys(w)), E = i.useRef(o);
+  })), I = C === O.z.SERVER_SHOP, j = (0, u.e7)([b.ZP], () => null != n ? b.ZP.getTrueMember(t, n.id) : null), [x, E] = (0, d.A7R)(null == w ? [] : _.default.keys(w)), N = i.useRef(o);
   i.useEffect(() => {
     let e = {},
-      t = E.current;
+      t = N.current;
     if (null != t && null != C) {
-      for (let t of j) {
+      for (let t of x) {
         let n = a[t];
         null != n && (e[t] = n)
       }(0, h.Zm)(t.id, {
@@ -55,15 +55,15 @@ function C(e) {
         roles: e
       })
     }
-  }, [j, C, a]);
-  let T = null != o && null != n && null != I ? c()(a).filter(e => -1 !== I.roles.indexOf(e.id)).sortBy(e => -e.position).first() : void 0,
+  }, [x, C, a]);
+  let T = null != o && null != n && null != j ? c()(a).filter(e => -1 !== j.roles.indexOf(e.id)).sortBy(e => -e.position).first() : void 0,
     Z = i.useMemo(() => null != o && null != n ? Object.values(a).filter(e => e.id !== o.id).filter(e => {
       var t;
-      return !N || (null == (t = e.tags) ? void 0 : t.subscription_listing_id) != null
-    }).filter(e => (null == T ? void 0 : T.id) === e.id || f.r6(o, n.id, T, e)) : [], [o, n, N, T, a]);
-  if (null == n || null == o || null == I) return null;
+      return !I || (null == (t = e.tags) ? void 0 : t.subscription_listing_id) != null
+    }).filter(e => (null == T ? void 0 : T.id) === e.id || f.r6(o, n.id, T, e)) : [], [o, n, I, T, a]);
+  if (null == n || null == o || null == j) return null;
   let R = {};
-  return (I.roles.forEach(e => {
+  return (j.roles.forEach(e => {
     let t = a[e];
     null != t && (R[t.id] = t)
   }), s.e$(f.I0({
@@ -72,9 +72,9 @@ function C(e) {
   }), s.$e(y.Plq.MANAGE_GUILD, y.Plq.MANAGE_ROLES)) || o.isOwner(n.id)) ? (0, r.jsx)("div", {
     className: P.container,
     children: (0, r.jsx)(d.hQY, {
-      placeholder: S.NW.string(S.t.Sojqsr),
-      value: j,
-      onChange: x,
+      placeholder: S.intl.string(S.t.Sojqsr),
+      value: x,
+      onChange: E,
       autoFocus: !0,
       children: e => {
         let t = Z.reduce((t, n) => (l()(e.toLowerCase(), n.name.toLowerCase()) && t.push((0, r.jsxs)(d.lo1, {
@@ -97,6 +97,6 @@ function C(e) {
     })
   }) : (0, r.jsx)(d.Text, {
     variant: "text-md/medium",
-    children: S.NW.string(S.t.MNSTbW)
+    children: S.intl.string(S.t.MNSTbW)
   })
 }

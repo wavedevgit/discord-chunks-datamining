@@ -7,9 +7,9 @@ r(192379);
 var o = r(399606),
   c = r(481060),
   i = r(239091),
-  a = r(367907),
-  s = r(496675),
-  l = r(626135),
+  l = r(367907),
+  a = r(496675),
+  s = r(626135),
   p = r(934415),
   O = r(572004),
   b = r(629481),
@@ -21,19 +21,19 @@ function d(e) {
   let {
     guild: t,
     onSelect: r
-  } = e, d = (0, o.e7)([s.Z], () => null != t && s.Z.can(u.Plq.ADMINISTRATOR, t));
+  } = e, d = (0, o.e7)([a.Z], () => null != t && a.Z.can(u.Plq.ADMINISTRATOR, t));
   return (0, n.jsx)(c.v2r, {
     navId: "guild-shop-context",
-    "aria-label": f.NW.string(f.t.g3KvYG),
+    "aria-label": f.intl.string(f.t.g3KvYG),
     onClose: i.Zy,
     onSelect: r,
     children: (0, n.jsx)(c.kSQ, {
       children: (0, n.jsx)(c.sNh, {
         id: "role-subscription-copy-link",
-        label: f.NW.string(f.t.WqhZsr),
+        label: f.intl.string(f.t.WqhZsr),
         action: () => {
           var e, r;
-          l.default.track(u.rMx.GUILD_SHOP_COPY_LINK, (e = function(e) {
+          s.default.track(u.rMx.GUILD_SHOP_COPY_LINK, (e = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var r = null != arguments[t] ? arguments[t] : {},
                 n = Object.keys(r);
@@ -50,7 +50,7 @@ function d(e) {
               })
             }
             return e
-          }({}, (0, a.hH)(t.id)), r = r = {
+          }({}, (0, l.hH)(t.id)), r = r = {
             is_admin_or_owner: d,
             copy_location: b.xv.CHANNEL_ROW_CONTEXT_MENU
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

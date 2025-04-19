@@ -28,7 +28,7 @@ function x(e) {
   if (i.useEffect(() => {
       null == x || E.current || (E.current = !0, (0, _.lN)(x))
     }, [x]), null == x || null == j) return null;
-  let N = (0, r.jsx)(f.Z, {
+  let I = (0, r.jsx)(f.Z, {
     channel: x
   });
   return (0, r.jsxs)(r.Fragment, {
@@ -36,8 +36,8 @@ function x(e) {
       channel: x,
       draftType: g.d.ChannelMessage
     }), (0, r.jsx)(d.ZP, {
-      toolbar: N,
-      "aria-label": y.NW.string(y.t.Pwe8tL),
+      toolbar: I,
+      "aria-label": y.intl.string(y.t.Pwe8tL),
       children: (0, p.ud)({
         channel: x,
         parentChannel: v,

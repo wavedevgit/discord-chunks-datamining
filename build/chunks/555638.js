@@ -1,24 +1,24 @@
 /** Chunk was on 10667 **/
-n.d(e, {
+e.d(n, {
   A: () => a
 });
-var o = n(200651);
-n(192379);
-var i = n(212598),
-  r = n(388032),
-  s = n(436200),
-  c = n(757685);
+var o = e(200651);
+e(192379);
+var i = e(212598),
+  r = e(388032),
+  s = e(436200),
+  c = e(757685);
 
 function a(t) {
   let {
-    platformType: e,
-    isWaitingForConnection: n,
+    platformType: n,
+    isWaitingForConnection: e,
     onWaitingForConnection: a,
-    expectedCallbackState: d,
-    onAuthToken: l,
+    expectedCallbackState: l,
+    onAuthToken: d,
     onError: u,
     onClose: p
-  } = t, _ = n ? (0, o.jsx)("img", {
+  } = t, _ = e ? (0, o.jsx)("img", {
     src: c.Z,
     width: "231",
     height: "172",
@@ -28,17 +28,17 @@ function a(t) {
     width: "231",
     height: "160",
     alt: ""
-  }), b = n ? r.NW.string(r.t.TTIocn) : r.NW.string(r.t["6n+UPT"]), N = n ? r.NW.string(r.t.MNmoKC) : r.NW.string(r.t.JaaqIS);
+  }), b = e ? r.intl.string(r.t.TTIocn) : r.intl.string(r.t["6n+UPT"]), C = e ? r.intl.string(r.t.MNmoKC) : r.intl.string(r.t.JaaqIS);
   return (0, o.jsx)(i.t, {
-    platformType: e,
-    isWaitingForConnection: n,
+    platformType: n,
+    isWaitingForConnection: e,
     onWaitingForConnection: a,
-    expectedCallbackState: d,
-    onAuthToken: l,
+    expectedCallbackState: l,
+    onAuthToken: d,
     onError: u,
     onClose: p,
     img: _,
     title: b,
-    body: N
+    body: C
   })
 }

@@ -1,11 +1,11 @@
 /** Chunk was on 37447 **/
 n.d(t, {
-  Z: () => Z
+  Z: () => k
 }), n(388685);
 var r = n(200651),
   s = n(192379),
-  o = n(120356),
-  i = n.n(o),
+  i = n(120356),
+  o = n.n(i),
   a = n(200100),
   l = n(722770),
   c = n(442837),
@@ -20,12 +20,12 @@ var r = n(200651),
   j = n(617136),
   b = n(113434),
   C = n(497505),
-  N = n(918701),
-  v = n(475595),
-  y = n(566078),
-  O = n(685613),
-  T = n(611855),
-  E = n(644646),
+  v = n(918701),
+  y = n(475595),
+  O = n(566078),
+  T = n(685613),
+  E = n(611855),
+  N = n(644646),
   q = n(670638),
   S = n(87894),
   P = n(46140),
@@ -66,23 +66,23 @@ function D(e, t) {
 }
 let A = (0, a.animated)(d.CJ0),
   M = (0, a.animated)(h.Z),
-  W = e => {
+  Z = e => {
     var {
       quest: t,
       location: n,
-      questContentPosition: o
-    } = e, i = function(e, t) {
+      questContentPosition: i
+    } = e, o = function(e, t) {
       if (null == e) return {};
       var n, r, s = function(e, t) {
         if (null == e) return {};
         var n, r, s = {},
-          o = Object.keys(e);
-        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (s[n] = e[n]);
+          i = Object.keys(e);
+        for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (s[n] = e[n]);
         return s
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n])
+        var i = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n])
       }
       return s
     }(e, ["quest", "location", "questContentPosition"]);
@@ -98,8 +98,8 @@ let A = (0, a.animated)(d.CJ0),
         questId: t.id,
         questContent: n,
         questContentCTA: j.jZ.COPY_QUEST_URL,
-        questContentPosition: o
-      }), (0, f.JG)((0, N.Rs)(t.id), () => {
+        questContentPosition: i
+      }), (0, f.JG)((0, v.Rs)(t.id), () => {
         l(!0), c.current.start(1e3, () => l(!1))
       })
     };
@@ -107,77 +107,77 @@ let A = (0, a.animated)(d.CJ0),
       forceOpen: a,
       shouldShow: a,
       color: d.ua7.Colors.GREEN,
-      text: R.NW.string(R.t.MSaeTU),
-      children: () => (0, r.jsx)(d.zxk, D(I({}, i), {
+      text: R.intl.string(R.t.MSaeTU),
+      children: () => (0, r.jsx)(d.zxk, D(I({}, o), {
         className: _.shareButton,
         color: d.zxk.Colors.PRIMARY,
         size: d.zxk.Sizes.SMALL,
         onClick: p,
-        children: R.NW.string(R.t["5Z6rz8"])
+        children: R.intl.string(R.t["5Z6rz8"])
       }))
     })
   },
-  Z = e => {
+  k = e => {
     var t, n;
     let {
-      isFocused: o,
+      isFocused: i,
       isQuestExpired: u,
       quest: h,
       location: f,
-      size: N,
-      expansionSpring: Z,
-      isAnimating: k,
-      isExpanded: L,
-      isInConcurrentQuestExperiment: B,
-      contentPosition: U,
-      toggleExpanded: Q
+      size: v,
+      expansionSpring: k,
+      isAnimating: L,
+      isExpanded: B,
+      isInConcurrentQuestExperiment: U,
+      contentPosition: Q,
+      toggleExpanded: W
     } = e, {
       ref: F,
       height: z
     } = (0, m.ZP)(), [G, H] = s.useState(null), [X, V] = s.useState(null), Y = (0, x.Z)(e => {
       let t = e.target;
       H(t.offsetWidth), V(t.scrollWidth)
-    }), K = (0, p.y)(Y), J = (0, c.e7)([g.Z], () => g.Z.useReducedMotion), $ = s.useMemo(() => (0, v.fh)(h, v.eC.HERO), [h]), ee = s.useRef(null), et = (0, S.uq)(f), en = f === C.jn.QUESTS_EMBED, er = (0, b.t5)(h, P.dr.QUESTS_CARD, f), es = (null == (t = h.userStatus) ? void 0 : t.completedAt) != null, eo = (0, j.O5)(), ei = (0, b.B6)(h.config.expiresAt, {
+    }), K = (0, p.y)(Y), J = (0, c.e7)([g.Z], () => g.Z.useReducedMotion), $ = s.useMemo(() => (0, y.fh)(h, y.eC.HERO), [h]), ee = s.useRef(null), et = (0, S.uq)(f), en = f === C.jn.QUESTS_EMBED, er = (0, b.t5)(h, P.dr.QUESTS_CARD, f), es = (null == (t = h.userStatus) ? void 0 : t.completedAt) != null, ei = (0, j.O5)(), eo = (0, b.B6)(h.config.expiresAt, {
       year: "numeric",
       month: "long",
       day: "numeric"
-    }), ea = (0, b.B6)(y.r.build(h.config).rewardsExpireAt, {
+    }), ea = (0, b.B6)(O.r.build(h.config).rewardsExpireAt, {
       year: "numeric",
       month: "long",
       day: "numeric"
     }), el = s.useMemo(() => null != h.config.cosponsorMetadata, [h]), ec = e => {
-      e.stopPropagation(), e.currentTarget.blur(), Q(), eo({
+      e.stopPropagation(), e.currentTarget.blur(), W(), ei({
         questId: h.id,
         questContent: f,
-        questContentCTA: L ? j.jZ.COLLAPSE : j.jZ.EXPAND,
-        questContentPosition: U
+        questContentCTA: B ? j.jZ.COLLAPSE : j.jZ.EXPAND,
+        questContentPosition: Q
       })
     };
     s.useEffect(() => {
-      $.isAnimated && null != ee.current && (o ? ee.current.play() : o || (ee.current.pause(), ee.current.currentTime = 0))
-    }, [o, $]);
-    let eu = (0, r.jsx)(O.ZP, {
+      $.isAnimated && null != ee.current && (i ? ee.current.play() : i || (ee.current.pause(), ee.current.currentTime = 0))
+    }, [i, $]);
+    let eu = (0, r.jsx)(T.ZP, {
       className: _.partnerBranding,
       logotypeClassName: el ? _.partnerBrandingLogotypes : void 0,
-      gameTileSize: O.fF.MEDIUM,
+      gameTileSize: T.fF.MEDIUM,
       quest: h,
-      separatorSpacing: O.US.MEDIUM,
+      separatorSpacing: T.US.MEDIUM,
       theme: w.BR.DARK,
       withGameTile: !en || null == h.config.cosponsorMetadata
     });
     return (0, r.jsxs)("div", {
-      className: i()(_.outerContainer, {
+      className: o()(_.outerContainer, {
         [_.outerContainerGiftInventory]: et,
         [_.outerContainerEmbed]: en,
-        [_.outerContainerXs]: "xs" === N
+        [_.outerContainerXs]: "xs" === v
       }),
-      "aria-label": R.NW.string(R.t.dcl9MT),
+      "aria-label": R.intl.string(R.t.dcl9MT),
       style: {
         height: et ? z : void 0
       },
       children: [(0, r.jsx)(M, {
         style: {
-          opacity: Z.to({
+          opacity: k.to({
             range: [0, 1],
             output: [.25, 1]
           })
@@ -196,13 +196,13 @@ let A = (0, a.animated)(d.CJ0),
         })
       }), (0, r.jsxs)("div", {
         className: _.header,
-        "aria-expanded": L,
+        "aria-expanded": B,
         children: [(0, r.jsxs)(a.animated.div, {
-          className: i()(_.headerContent, {
+          className: o()(_.headerContent, {
             [_.headerContentEmbed]: en
           }),
           style: {
-            y: et ? Z.to({
+            y: et ? k.to({
               range: [0, 1],
               output: [S.DJ, 0]
             }) : void 0
@@ -210,20 +210,20 @@ let A = (0, a.animated)(d.CJ0),
           children: [et && (0, r.jsx)(a.animated.div, {
             className: _.headerCollapsedContent,
             style: {
-              opacity: Z.to({
+              opacity: k.to({
                 range: [0, 1],
                 output: [1, 0]
               }),
-              visibility: k || !L ? "inherit" : "hidden"
+              visibility: L || !B ? "inherit" : "hidden"
             },
-            "aria-hidden": !k && L,
+            "aria-hidden": !L && B,
             children: (0, r.jsxs)(d.kL8, {
-              "aria-label": R.NW.string(R.t.dcl9MT),
+              "aria-label": R.intl.string(R.t.dcl9MT),
               onClick: ec,
               className: _.headerCollapsedClickableContainer,
               children: [(0, r.jsx)("div", {
                 className: _.headerCollapsedContentRewardWrapper,
-                children: (0, r.jsx)(E.Z, {
+                children: (0, r.jsx)(N.Z, {
                   quest: h,
                   questContent: f,
                   className: _.headerCollapsedRewardTile,
@@ -233,7 +233,7 @@ let A = (0, a.animated)(d.CJ0),
                 className: _.headerCollapsedContentCopyWrapper,
                 children: [(0, r.jsxs)("div", {
                   className: _.headerCollapsedContentCopyLogos,
-                  children: [eu, (0, r.jsx)(T.Z, {
+                  children: [eu, (0, r.jsx)(E.Z, {
                     color: "always-white"
                   })]
                 }), (0, r.jsx)(d.Text, {
@@ -246,23 +246,23 @@ let A = (0, a.animated)(d.CJ0),
             ref: e => {
               F.current = e
             },
-            className: i()(_.headerExpandedContent, {
+            className: o()(_.headerExpandedContent, {
               [_.outerContainerGiftInventory]: et,
               [_.outerContainerEmbed]: en
             }),
             style: {
-              opacity: Z.to({
+              opacity: k.to({
                 range: [0, 1],
                 output: [0, 1]
               }),
-              visibility: k || L ? "inherit" : "hidden"
+              visibility: L || B ? "inherit" : "hidden"
             },
-            "aria-hidden": !k && !L,
+            "aria-hidden": !L && !B,
             children: [(0, r.jsxs)("div", {
               className: _.headerExpandedWrapper,
               children: [(0, r.jsxs)("div", {
                 className: _.iconLogotypeContainer,
-                children: [eu, en ? null : (0, r.jsx)(T.Z, {
+                children: [eu, en ? null : (0, r.jsx)(E.Z, {
                   color: "always-white"
                 })]
               }), (0, r.jsxs)("div", {
@@ -272,36 +272,36 @@ let A = (0, a.animated)(d.CJ0),
                   shouldShow: null != G && null != X && G < X,
                   children: e => (0, r.jsx)(d.X6q, D(I({
                     ref: K,
-                    variant: "lg" === N ? "heading-xxl/bold" : "sm" === N ? "heading-xl/bold" : "heading-lg/bold",
+                    variant: "lg" === v ? "heading-xxl/bold" : "sm" === v ? "heading-xl/bold" : "heading-lg/bold",
                     className: _.heading,
                     color: "always-white"
                   }, e), {
-                    children: R.NW.format(R.t.EAYZAg, {
+                    children: R.intl.format(R.t.EAYZAg, {
                       questName: h.config.messages.questName
                     })
                   }))
                 }), (0, r.jsx)(d.Text, {
                   variant: "text-xs/normal",
                   color: "always-white",
-                  children: es ? R.NW.formatToPlainString(R.t.APddvL, {
+                  children: es ? R.intl.formatToPlainString(R.t.APddvL, {
                     expirationDate: ea
-                  }) : u ? R.NW.formatToPlainString(R.t.v7xMw8, {
-                    expirationDate: ei
-                  }) : R.NW.formatToPlainString(R.t["pX+fmp"], {
-                    expirationDate: ei
+                  }) : u ? R.intl.formatToPlainString(R.t.v7xMw8, {
+                    expirationDate: eo
+                  }) : R.intl.formatToPlainString(R.t["pX+fmp"], {
+                    expirationDate: eo
                   })
                 })]
               })]
-            }), !u && et && (0, r.jsx)(W, {
+            }), !u && et && (0, r.jsx)(Z, {
               quest: h,
               location: f,
-              questContentPosition: U
+              questContentPosition: Q
             })]
           })]
         }), (0, r.jsxs)(a.animated.div, {
           className: _.iconsContainer,
           style: {
-            top: et ? Z.to({
+            top: et ? k.to({
               range: [0, 1],
               output: [S.DJ / 2 - S.Z$ / 2, S.jc]
             }) : S.jc
@@ -309,32 +309,32 @@ let A = (0, a.animated)(d.CJ0),
           children: [(0, r.jsx)(q.r, {
             questContent: f,
             quest: h,
-            questContentPosition: U,
+            questContentPosition: Q,
             shouldShowDisclosure: !0,
             hideLearnMore: et,
             showShareLink: !u && en,
             children: e => (0, r.jsx)(a.animated.div, {
               style: {
-                opacity: Z,
-                visibility: k || L ? "inherit" : "hidden"
+                opacity: k,
+                visibility: L || B ? "inherit" : "hidden"
               },
-              "aria-hidden": !k && !L,
+              "aria-hidden": !L && !B,
               children: (0, r.jsx)(d.P3F, D(I({}, e), {
                 className: _.iconWrapper,
-                "aria-label": R.NW.string(R.t.DEoVWV),
+                "aria-label": R.intl.string(R.t.DEoVWV),
                 children: (0, r.jsx)(d.xhG, {
                   size: "md",
                   color: l.Z.WHITE
                 })
               }))
             })
-          }), B && !(0, S.W_)(f) && (0, r.jsx)(d.P3F, {
+          }), U && !(0, S.W_)(f) && (0, r.jsx)(d.P3F, {
             onClick: ec,
             className: _.iconWrapper,
-            "aria-label": L ? R.NW.string(R.t.iTcumZ) : R.NW.string(R.t.dcl9MT),
+            "aria-label": B ? R.intl.string(R.t.iTcumZ) : R.intl.string(R.t.dcl9MT),
             children: (0, r.jsx)(A, {
               style: {
-                rotate: Z.to({
+                rotate: k.to({
                   range: [0, 1],
                   output: [0, 180]
                 })

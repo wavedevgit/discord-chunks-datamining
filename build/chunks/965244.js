@@ -19,7 +19,7 @@ function b(e, t) {
     O = (0, o.e7)([u.Z], () => null != d ? u.Z.getGuildIncident(d.id) : null);
   return b ? null : (0, r.jsx)(i.sNh, {
     id: "nav-security-actions",
-    label: s.NW.string(s.t.UgXhdn),
+    label: s.intl.string(s.t.UgXhdn),
     action: () => {
       let t = {
         source: c.Zu.MESSAGE,

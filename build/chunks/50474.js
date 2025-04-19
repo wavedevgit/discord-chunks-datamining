@@ -4,8 +4,8 @@ r.d(i, {
 }), r(388685);
 var s = r(200651),
   n = r(192379),
-  o = r(392711),
-  t = r.n(o),
+  t = r(392711),
+  o = r.n(t),
   a = r(481060),
   l = r(139387),
   d = r(479531),
@@ -23,22 +23,22 @@ function j(e) {
   let {
     applicationIcon: i,
     applicationId: r,
-    applicationName: o,
+    applicationName: t,
     command: u,
     guildId: j,
     onClose: E,
     transitionState: g
-  } = e, [v, N] = n.useState(null), [w, C] = n.useState(!1), {
-    originalApplicationPermissions: P,
-    originalCommandPermissions: z,
-    editedTargetPermissions: O,
-    hasChanges: I,
+  } = e, [v, w] = n.useState(null), [C, P] = n.useState(!1), {
+    originalApplicationPermissions: z,
+    originalCommandPermissions: O,
+    editedTargetPermissions: I,
+    hasChanges: N,
     selectedPermissionCount: R
   } = (0, x.Z)(j, r, u.id), D = n.useCallback(async () => {
-    var e, i, s, n, o;
-    if (!I) return void E();
-    let a = t().difference(Object.keys(null != (s = u.permissions) ? s : {}), Object.keys(O)),
-      l = t().omit(function(e) {
+    var e, i, s, n, t;
+    if (!N) return void E();
+    let a = o().difference(Object.keys(null != (s = u.permissions) ? s : {}), Object.keys(I)),
+      l = o().omit(function(e) {
         for (var i = 1; i < arguments.length; i++) {
           var r = null != arguments[i] ? arguments[i] : {},
             s = Object.keys(r);
@@ -55,18 +55,18 @@ function j(e) {
           })
         }
         return e
-      }({}, O), a),
+      }({}, I), a),
       x = (0, m.bD)(j),
       h = (0, b.rE)(j, c.Kw.ROLE),
       y = (0, b.rE)(x, c.Kw.CHANNEL),
-      f = null == (n = null == (e = P[h]) ? void 0 : e.permission) || n,
-      k = null == (o = null == (i = P[y]) ? void 0 : i.permission) || o,
+      f = null == (n = null == (e = z[h]) ? void 0 : e.permission) || n,
+      k = null == (t = null == (i = z[y]) ? void 0 : i.permission) || t,
       g = Object.values(l).map(e => ({
         id: e.id,
         permission: e.permission,
         type: e.type
       }));
-    N(null), C(!0);
+    w(null), P(!0);
     try {
       await p.U3({
         defaultEveryoneValue: f,
@@ -75,18 +75,18 @@ function j(e) {
         commandId: u.id,
         guildId: j,
         permissions: g
-      }), C(!1), E()
+      }), P(!1), E()
     } catch (e) {
-      N(new d.Z(e))
+      w(new d.Z(e))
     }
-    C(!1)
-  }, [r, P, u.id, u.permissions, j, I, E, O, N, C]);
+    P(!1)
+  }, [r, z, u.id, u.permissions, j, N, E, I, w, P]);
   n.useEffect(() => () => {
     p.Ui(u.id), l.Z.stopEditingCommandPermissions(u.id)
   }, [u.id]);
   let _ = (0, b.gw)(u.type, u.displayName);
   return (0, s.jsxs)(a.Y0X, {
-    "aria-label": y.NW.string(y.t["N+InBQ"]),
+    "aria-label": y.intl.string(y.t["N+InBQ"]),
     size: a.CgR.MEDIUM,
     transitionState: g,
     children: [(0, s.jsxs)(a.xBx, {
@@ -95,7 +95,7 @@ function j(e) {
       children: [(0, s.jsx)(k, {
         icon: i,
         id: r,
-        name: o
+        name: t
       }), (0, s.jsxs)("div", {
         className: f.headerDescription,
         children: [(0, s.jsx)(a.Text, {
@@ -116,24 +116,24 @@ function j(e) {
         commandId: u.id,
         guildId: j,
         inModal: !0,
-        originalApplicationPermissions: P,
-        originalCommandPermissions: z,
-        editedTargetPermissions: O,
+        originalApplicationPermissions: z,
+        originalCommandPermissions: O,
+        editedTargetPermissions: I,
         selectedPermissionCount: R
       })]
     }), (0, s.jsxs)(a.mzw, {
       className: f.modalFooter,
       children: [(0, s.jsx)(a.zxk, {
         type: "submit",
-        disabled: w,
+        disabled: C,
         onClick: D,
-        color: !0 === I ? a.zxk.Colors.GREEN : a.zxk.Colors.PRIMARY,
-        children: y.NW.string(y.t.R3BPHx)
+        color: !0 === N ? a.zxk.Colors.GREEN : a.zxk.Colors.PRIMARY,
+        children: y.intl.string(y.t.R3BPHx)
       }), (0, s.jsx)(a.zxk, {
         onClick: E,
         look: a.zxk.Looks.LINK,
         color: a.zxk.Colors.PRIMARY,
-        children: y.NW.string(y.t["ETE/oK"])
+        children: y.intl.string(y.t["ETE/oK"])
       })]
     })]
   })

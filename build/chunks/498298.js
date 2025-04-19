@@ -55,20 +55,20 @@ function l(e) {
         style: {
           marginTop: 24
         },
-        children: i.NW.string(i.t.nmBUv7)
+        children: i.intl.string(i.t.nmBUv7)
       })
     }), (0, n.jsxs)(c.mzw, {
       children: [(0, n.jsx)(c.zxk, {
         color: c.Ttl.PRIMARY,
         onClick: c.pTH,
-        children: i.NW.string(i.t["ETE/oK"])
+        children: i.intl.string(i.t["ETE/oK"])
       }), (0, n.jsx)(c.zxk, {
         color: c.Ttl.RED,
         onClick: p,
         style: {
           marginRight: 8
         },
-        children: i.NW.string(i.t.R9GHyc)
+        children: i.intl.string(i.t.R9GHyc)
       })]
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

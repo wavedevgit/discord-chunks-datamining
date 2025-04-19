@@ -1,13 +1,13 @@
 /** Chunk was on 53682 **/
 n.d(t, {
-  F: () => z
+  F: () => H
 });
 var r = n(200651),
   l = n(192379),
-  a = n(120356),
-  s = n.n(a),
-  i = n(913527),
-  o = n.n(i),
+  i = n(120356),
+  a = n.n(i),
+  s = n(913527),
+  o = n.n(s),
   u = n(91192),
   c = n(442837),
   d = n(481060),
@@ -23,12 +23,12 @@ var r = n(200651),
   x = n(131704),
   O = n(592125),
   _ = n(430824),
-  N = n(496675),
-  S = n(158776),
-  P = n(306680),
-  w = n(699516),
-  E = n(594174),
-  C = n(55935),
+  S = n(496675),
+  P = n(158776),
+  w = n(306680),
+  E = n(699516),
+  C = n(594174),
+  N = n(55935),
   Z = n(823379),
   L = n(51144),
   D = n(981631),
@@ -36,7 +36,7 @@ var r = n(200651),
   T = n(388032),
   k = n(120575);
 
-function W(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -55,7 +55,7 @@ function W(e) {
   return e
 }
 
-function A(e, t) {
+function R(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -68,28 +68,28 @@ function A(e, t) {
   }), e
 }
 
-function R(e, t) {
+function I(e, t) {
   if (null == e) return {};
   var n, r, l = function(e, t) {
     if (null == e) return {};
     var n, r, l = {},
-      a = Object.keys(e);
-    for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+      i = Object.keys(e);
+    for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
     return l
   }(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+    var i = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
   }
   return l
 }
 
-function I(e) {
+function F(e) {
   let {
     destination: t,
     icon: n,
-    label: a,
-    subLabel: i,
+    label: i,
+    subLabel: s,
     selected: o,
     disabled: c,
     onPressDestination: f,
@@ -103,8 +103,8 @@ function I(e) {
       transitionToDestination: !1,
       closeAfterSend: !1
     }))
-  }), (0, r.jsxs)(d.P3F, A(W({
-    className: s()(k.destinationRow, {
+  }), (0, r.jsxs)(d.P3F, R(A({
+    className: a()(k.destinationRow, {
       [k.disabled]: c
     }),
     onClick: y,
@@ -124,12 +124,12 @@ function I(e) {
           className: k.label,
           variant: "text-md/semibold",
           lineClamp: 1,
-          children: a
+          children: i
         }), (0, r.jsx)(d.Text, {
           className: k.subLabel,
           variant: "text-xs/normal",
           color: "text-muted",
-          children: i
+          children: s
         })]
       })]
     }), (0, r.jsx)(d.XZJ, {
@@ -142,45 +142,26 @@ function I(e) {
   }))
 }
 
-function F(e) {
+function q(e) {
   var {
     user: t,
     subLabel: n
-  } = e, l = R(e, ["user", "subLabel"]);
-  let a = L.ZP.useName(t),
-    s = L.ZP.useUserTag(t, {
+  } = e, l = I(e, ["user", "subLabel"]);
+  let i = L.ZP.useName(t),
+    a = L.ZP.useUserTag(t, {
       decoration: "never"
     }),
-    i = (0, c.e7)([w.Z], () => w.Z.getNickname(t.id)),
-    o = (0, c.e7)([S.Z], () => S.Z.getStatus(t.id));
-  return (0, r.jsx)(I, A(W({}, l), {
+    s = (0, c.e7)([E.Z], () => E.Z.getNickname(t.id)),
+    o = (0, c.e7)([P.Z], () => P.Z.getStatus(t.id));
+  return (0, r.jsx)(F, R(A({}, l), {
     icon: (0, r.jsx)(f.Z, {
       "aria-hidden": !0,
       size: d.EFr.SIZE_32,
       user: t,
       status: o
     }),
-    label: null != i ? i : a,
-    subLabel: null != n ? n : s
-  }))
-}
-
-function q(e) {
-  var {
-    channel: t,
-    subLabel: n
-  } = e, l = R(e, ["channel", "subLabel"]);
-  let a = (0, p.ZP)(t),
-    s = (0, j._)(t);
-  return (0, r.jsx)(I, A(W({}, l), {
-    icon: (0, r.jsx)(g.Z, {
-      "aria-hidden": !0,
-      size: d.EFr.SIZE_32,
-      channel: t,
-      experimentLocation: "application-command-modal"
-    }),
-    label: a,
-    subLabel: null != n ? n : s
+    label: null != s ? s : i,
+    subLabel: null != n ? n : a
   }))
 }
 
@@ -188,15 +169,34 @@ function U(e) {
   var {
     channel: t,
     subLabel: n
-  } = e, l = R(e, ["channel", "subLabel"]);
-  let a = (0, c.e7)([_.Z], () => _.Z.getGuild(null == t ? void 0 : t.guild_id)),
-    s = (0, p.ZP)(t),
-    i = (0, c.e7)([O.Z, E.default, w.Z], () => {
-      let e = O.Z.getChannel(t.parent_id);
-      return null == e ? null : (0, p.F6)(e, E.default, w.Z, !1)
+  } = e, l = I(e, ["channel", "subLabel"]);
+  let i = (0, p.ZP)(t),
+    a = (0, j._)(t);
+  return (0, r.jsx)(F, R(A({}, l), {
+    icon: (0, r.jsx)(g.Z, {
+      "aria-hidden": !0,
+      size: d.EFr.SIZE_32,
+      channel: t,
+      experimentLocation: "application-command-modal"
     }),
-    u = (0, c.e7)([P.ZP], () => P.ZP.lastMessageTimestamp(t.id, M.W.CHANNEL)),
-    f = null == a ? void 0 : a.name;
+    label: i,
+    subLabel: null != n ? n : a
+  }))
+}
+
+function z(e) {
+  var {
+    channel: t,
+    subLabel: n
+  } = e, l = I(e, ["channel", "subLabel"]);
+  let i = (0, c.e7)([_.Z], () => _.Z.getGuild(null == t ? void 0 : t.guild_id)),
+    a = (0, p.ZP)(t),
+    s = (0, c.e7)([O.Z, C.default, E.Z], () => {
+      let e = O.Z.getChannel(t.parent_id);
+      return null == e ? null : (0, p.F6)(e, C.default, E.Z, !1)
+    }),
+    u = (0, c.e7)([w.ZP], () => w.ZP.lastMessageTimestamp(t.id, M.W.CHANNEL)),
+    f = null == i ? void 0 : i.name;
   if (t.isThread() || t.isForumPost()) {
     let e = t.isForumPost() ? d.Mmi : d.VL1;
     f = (0, r.jsxs)("div", {
@@ -208,7 +208,7 @@ function U(e) {
         variant: "text-xs/medium",
         color: "text-secondary",
         lineClamp: 1,
-        children: i
+        children: s
       }), null != u ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(d.Text, {
           className: k.subLabelSeparator,
@@ -218,30 +218,30 @@ function U(e) {
         }), (0, r.jsx)(d.Text, {
           variant: "text-xs/medium",
           color: "text-secondary",
-          children: (0, C.Xf)(o()(u))
+          children: (0, N.Xf)(o()(u))
         })]
       }) : null]
     })
   }
-  return (0, r.jsx)(I, A(W({}, l), {
+  return (0, r.jsx)(F, R(A({}, l), {
     icon: (0, r.jsx)(y.Z, {
       size: y.E.SMALL_32,
-      guild: a,
+      guild: i,
       channel: t
     }),
-    label: s,
+    label: a,
     subLabel: null != n ? n : f
   }))
 }
 
-function z(e) {
+function H(e) {
   var {
     rowData: t,
     selectedDestinations: n,
-    handleToggleDestination: a,
-    disableSelection: s,
-    originDestination: i
-  } = e, o = R(e, ["rowData", "selectedDestinations", "handleToggleDestination", "disableSelection", "originDestination"]);
+    handleToggleDestination: i,
+    disableSelection: a,
+    originDestination: s
+  } = e, o = I(e, ["rowData", "selectedDestinations", "handleToggleDestination", "disableSelection", "originDestination"]);
   let c = l.useMemo(() => [t.length], [t.length]),
     f = l.useCallback(() => 48, []),
     b = l.useMemo(() => {
@@ -267,39 +267,39 @@ function z(e) {
           id: u.id
         },
         d = (0, v.hC)(c),
-        f = null != i ? function(e, t) {
+        f = null != s ? function(e, t) {
           if (t instanceof x.Sf && (0, x.Km)(t.type)) {
-            if (null != t.rateLimitPerUser && t.rateLimitPerUser > 0 && !(N.Z.can(D.Plq.MANAGE_CHANNELS, t) || N.Z.can(D.Plq.MANAGE_MESSAGES, t))) return {
-              label: T.NW.string(T.t.Icu3bW)
+            if (null != t.rateLimitPerUser && t.rateLimitPerUser > 0 && !(S.Z.can(D.Plq.MANAGE_CHANNELS, t) || S.Z.can(D.Plq.MANAGE_MESSAGES, t))) return {
+              label: T.intl.string(T.t.Icu3bW)
             };
-            if (t.isThread() || t.isForumPost() || !N.Z.can(D.Plq.USE_APPLICATION_COMMANDS, t)) return {
-              label: T.NW.string(T.t.v8MLq6)
+            if (t.isThread() || t.isForumPost() || !S.Z.can(D.Plq.USE_APPLICATION_COMMANDS, t)) return {
+              label: T.intl.string(T.t.v8MLq6)
             };
             let n = (0, v.dL)(t.id);
             if (e.id === n.id) return {
-              label: T.NW.string(T.t.mD4gqa)
+              label: T.intl.string(T.t.mD4gqa)
             }
           }
-        }(i, u) : null,
+        }(s, u) : null,
         h = b.includes(d),
         p = {
           key: d,
           destination: c,
           subLabel: null != f ? f.label : void 0,
-          disabled: s && !h || null != f,
+          disabled: a && !h || null != f,
           selected: h,
-          onPressDestination: a,
+          onPressDestination: i,
           "aria-posinset": l + 1,
           "aria-setsize": t.length
         };
-      return o === m.h8.USER ? (0, r.jsx)(F, W({
+      return o === m.h8.USER ? (0, r.jsx)(q, A({
         user: u
-      }, p)) : o === m.h8.GROUP_DM ? (0, r.jsx)(q, W({
+      }, p)) : o === m.h8.GROUP_DM ? (0, r.jsx)(U, A({
         channel: u
-      }, p)) : o === m.h8.TEXT_CHANNEL || o === m.h8.VOICE_CHANNEL ? (0, r.jsx)(U, W({
+      }, p)) : o === m.h8.TEXT_CHANNEL || o === m.h8.VOICE_CHANNEL ? (0, r.jsx)(z, A({
         channel: u
       }, p)) : void(0, Z.vE)(o)
-    }, [s, a, i, t, b]),
+    }, [a, i, s, t, b]),
     g = l.useRef(null),
     y = (0, h.Z)("share-command-modal", g);
   return (0, r.jsx)(u.bG, {
@@ -308,8 +308,8 @@ function z(e) {
       children: e => {
         var {
           ref: t
-        } = e, n = R(e, ["ref"]);
-        return (0, r.jsx)(d.YAO, A(W({
+        } = e, n = I(e, ["ref"]);
+        return (0, r.jsx)(d.YAO, R(A({
           scrollerRef: e => {
             var n;
             g.current = e, t.current = null != (n = null == e ? void 0 : e.getScrollerNode()) ? n : null

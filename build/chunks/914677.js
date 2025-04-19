@@ -3,8 +3,8 @@ r.d(t, {
   Z: () => f
 }), r(388685);
 var n = r(200651),
-  s = r(192379),
-  i = r(780384),
+  i = r(192379),
+  s = r(780384),
   l = r(410030),
   o = r(119269),
   a = r(3504);
@@ -50,15 +50,15 @@ let c = "url(#gradient)",
       progressCircleStrokeSize: g = 2,
       progressCircleVariation: y,
       progressCircleStroke: C
-    } = e, x = 43 + g / 2, j = 2 * Math.PI * x, [h, O] = s.useState(f);
-    s.useEffect(() => {
+    } = e, x = 43 + g / 2, j = 2 * Math.PI * x, [h, O] = i.useState(f);
+    i.useEffect(() => {
       let e = setTimeout(() => {
         O(t)
       }, 200);
       return () => clearTimeout(e)
     }, [t]);
     let _ = (0, l.ZP)(),
-      m = (0, i.ap)(_),
+      m = (0, s.ap)(_),
       b = d(y),
       S = u(y, m),
       E = null != C ? C : p(m, y);

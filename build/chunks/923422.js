@@ -5,9 +5,9 @@ r.d(t, {
 var n = r(200651),
   i = r(192379),
   o = r(481060),
-  c = r(239091),
-  a = r(230711),
-  l = r(493544),
+  l = r(239091),
+  c = r(230711),
+  a = r(493544),
   s = r(108843),
   u = r(100527),
   d = r(906732),
@@ -29,17 +29,17 @@ let x = (0, s.Z)(function(e) {
     webBuildOverride: t,
     onSelect: r,
     onInteraction: s
-  } = e, [u, x] = i.useState(!1), w = (0, y.Z)(), E = (0, h.Z)(), k = (0, j.Z)(), N = (0, f.Z)(), D = (0, v.Z)(), C = (0, m.Z)(), W = (0, O.Z)(), I = (0, S.Z)(), {
-    analyticsLocations: B
-  } = (0, d.ZP)(), T = i.useMemo(() => (0, b.j)(), []);
-  async function A() {
+  } = e, [u, x] = i.useState(!1), w = (0, y.Z)(), E = (0, h.Z)(), k = (0, j.Z)(), D = (0, f.Z)(), C = (0, v.Z)(), I = (0, m.Z)(), B = (0, O.Z)(), T = (0, S.Z)(), {
+    analyticsLocations: N
+  } = (0, d.ZP)(), A = i.useMemo(() => (0, b.j)(), []);
+  async function M() {
     try {
       x(!0), await (0, p.bF)(), window.location.reload(!0)
     } catch (e) {
       x(!1)
     }
   }
-  let M = e => {
+  let _ = e => {
       switch (e) {
         case P.oAB.GAMES:
           return w;
@@ -48,39 +48,39 @@ let x = (0, s.Z)(function(e) {
         case P.oAB.APPEARANCE:
           return k;
         case P.oAB.ACCESSIBILITY:
-          return N;
-        case P.oAB.VOICE:
           return D;
-        case P.oAB.TEXT:
+        case P.oAB.VOICE:
           return C;
-        case P.oAB.EXPERIMENTS:
-          return W;
-        case P.oAB.DEVELOPER_OPTIONS:
+        case P.oAB.TEXT:
           return I;
+        case P.oAB.EXPERIMENTS:
+          return B;
+        case P.oAB.DEVELOPER_OPTIONS:
+          return T;
         default:
           return null
       }
     },
-    _ = (0, g.VO)().filter(e => {
+    R = (0, g.VO)().filter(e => {
       let {
         section: t
       } = e;
-      return t !== l.ID.HEADER && t !== l.ID.CUSTOM && t !== l.ID.DIVIDER && "logout" !== t
+      return t !== a.ID.HEADER && t !== a.ID.CUSTOM && t !== a.ID.DIVIDER && "logout" !== t
     }).filter(e => null == e.predicate || e.predicate());
   return (0, n.jsx)(d.Gt, {
-    value: B,
+    value: N,
     children: (0, n.jsxs)(o.v2r, {
       navId: "user-settings-cog",
-      onClose: c.Zy,
-      "aria-label": Z.NW.string(Z.t.opYYHh),
+      onClose: l.Zy,
+      "aria-label": Z.intl.string(Z.t.opYYHh),
       onSelect: r,
       onInteraction: s,
-      children: [_.map(e => {
+      children: [R.map(e => {
         var t, r;
         let {
           section: i,
-          label: c,
-          onClick: l
+          label: l,
+          onClick: a
         } = e, s = i.replace(/\W/gi, "_");
         return (0, n.jsx)(o.sNh, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
@@ -102,15 +102,15 @@ let x = (0, s.Z)(function(e) {
         }({
           id: s
         }, {
-          label: c,
-          action: () => null != l ? l() : function(e, t) {
+          label: l,
+          action: () => null != a ? a() : function(e, t) {
             let r = Object.values(P.oAB).filter(t => t === e)[0];
-            null != r && a.Z.open(r, void 0, {
+            null != r && c.Z.open(r, void 0, {
               analyticsLocations: t
             })
-          }(i, B)
+          }(i, N)
         }), r = r = {
-          children: M(i)
+          children: _(i)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
           var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -121,11 +121,11 @@ let x = (0, s.Z)(function(e) {
         })(Object(r)).forEach(function(e) {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
         }), t), s)
-      }), e.user.isStaff() && T.length > 0 ? (0, n.jsx)(o.sNh, {
+      }), e.user.isStaff() && A.length > 0 ? (0, n.jsx)(o.sNh, {
         label: "Build Overrides",
         id: "build_overrides",
         children: (0, n.jsx)(o.kSQ, {
-          children: T.map(e => (0, n.jsx)(o.k5B, {
+          children: A.map(e => (0, n.jsx)(o.k5B, {
             id: "input-".concat(e.payload),
             group: "build_overrides",
             label: e.id,
@@ -139,8 +139,8 @@ let x = (0, s.Z)(function(e) {
         children: (0, n.jsx)(o.sNh, {
           id: "clear-build-override",
           disabled: u,
-          label: Z.NW.string(Z.t["/Nz9ra"]),
-          action: A,
+          label: Z.intl.string(Z.t["/Nz9ra"]),
+          action: M,
           color: "danger"
         })
       }) : null]

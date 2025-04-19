@@ -20,7 +20,7 @@ let d = () => (0, r.jsxs)("div", {
     }), (0, r.jsx)(o.Text, {
       color: "header-primary",
       variant: "text-md/normal",
-      children: l.NW.string(l.t["5z/hlJ"])
+      children: l.intl.string(l.t["5z/hlJ"])
     })]
   }),
   f = e => {
@@ -54,7 +54,7 @@ let d = () => (0, r.jsxs)("div", {
         className: c,
         style: e,
         children: n ? (0, r.jsx)(o.FNi, {
-          message: l.NW.string(l.t.fjcCk5),
+          message: l.intl.string(l.t.fjcCk5),
           type: o.ToastType.SUCCESS,
           id: "success_message_toast"
         }) : (0, r.jsx)(o.FNi, {

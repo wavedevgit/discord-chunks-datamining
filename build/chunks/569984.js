@@ -8,8 +8,8 @@ var v, O = n(392711),
   I = n(754700),
   S = n(887003),
   T = n(442837),
-  N = n(570140),
-  A = n(497505),
+  A = n(570140),
+  N = n(497505),
   C = n(918701),
   R = n(184299),
   P = n(5881),
@@ -58,7 +58,7 @@ let k = new Map,
   U = 1e3;
 
 function G() {
-  r = !1, i = !1, a = new Map, o = new Map, s = new Map, l = 0, c = new Set, u = new Set, d = new Set, f = new Set, k = new Map, p = new Map, h = new Map, m = new Map, g = null, E = new Map, _ = new Set, b = new Map, y = new Map, eA()
+  r = !1, i = !1, a = new Map, o = new Map, s = new Map, l = 0, c = new Set, u = new Set, d = new Set, f = new Set, k = new Map, p = new Map, h = new Map, m = new Map, g = null, E = new Map, _ = new Set, b = new Map, y = new Map, eN()
 }
 
 function B(e, t) {
@@ -99,7 +99,7 @@ function H(e) {
   return (null == r ? void 0 : r.tag) !== S.w.REWARD_CODE ? null : r.rewardCode
 }
 
-function W(e, t) {
+function Y(e, t) {
   let n = new Map(h);
   n.set(e, t.items), h = n;
   let r = a.get(e),
@@ -118,12 +118,12 @@ function W(e, t) {
   }
 }
 
-function Y(e) {
+function W(e) {
   null != m.get(e) && (m = new Map(m)).delete(e)
 }
 
 function K() {
-  eA(), G()
+  eN(), G()
 }
 
 function z() {
@@ -137,11 +137,11 @@ function q(e) {
   } = e;
   r = !1, a = new Map;
   let i = new Map;
-  for (let e of t) a.set(e.id, e), i.set(e.id, (0, C.zi)(e)), e.targetedContent.includes(A.jn.QUEST_BAR) && (0, P.T)({
+  for (let e of t) a.set(e.id, e), i.set(e.id, (0, C.zi)(e)), e.targetedContent.includes(N.jn.QUEST_BAR) && (0, P.T)({
     location: w.dr.QUESTS_STORE
   }).log("Delivered ".concat(e.config.messages.questName, " (").concat(e.id, ")"));
   for (let e of (y = i, o = new Map, n)) o.set(e.id, e);
-  eN()
+  eA()
 }
 
 function Q() {
@@ -171,7 +171,7 @@ function ee(e) {
   } = e;
   _.add(t), F(t, {
     userStatus: r
-  }), null != n && Y(n)
+  }), null != n && W(n)
 }
 
 function et(e) {
@@ -190,7 +190,7 @@ function en(e) {
   let {
     streamKey: t
   } = e;
-  Y(t)
+  W(t)
 }
 
 function er(e) {
@@ -255,7 +255,7 @@ function ed(e) {
     questId: t,
     entitlements: n
   } = e, r = new Set(u);
-  r.delete(t), u = r, W(t, n)
+  r.delete(t), u = r, Y(t, n)
 }
 
 function ef(e) {
@@ -297,7 +297,7 @@ function eg(e) {
   let {
     streamKey: t
   } = e;
-  Y(t)
+  W(t)
 }
 
 function eE(e) {
@@ -387,13 +387,13 @@ function eT() {
   }), e && (y = t, eR.emitChange())
 }
 
-function eN() {
+function eA() {
   null === j && (eT(), j = setInterval(() => {
     eT()
   }, U))
 }
 
-function eA() {
+function eN() {
   null !== j && (clearInterval(j), j = null)
 }
 G();
@@ -466,7 +466,7 @@ class eC extends(v = T.ZP.Store) {
   }
 }
 D(eC, "displayName", "QuestsStore");
-let eR = new eC(N.Z, {
+let eR = new eC(A.Z, {
     LOGOUT: K,
     QUESTS_FETCH_CURRENT_QUESTS_BEGIN: z,
     QUESTS_FETCH_CURRENT_QUESTS_SUCCESS: q,

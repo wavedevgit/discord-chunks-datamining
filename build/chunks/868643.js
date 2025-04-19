@@ -8,12 +8,12 @@ var a = n(192379),
   o = n(430198),
   i = n(592125),
   c = n(430824),
-  s = n(630388),
-  l = n(981631);
-let u = l.iLy.CROSSPOSTED | l.iLy.FAILED_TO_MENTION_SOME_ROLES_IN_THREAD | l.iLy.GUILD_FEED_HIDDEN | l.iLy.HAS_SNAPSHOT | l.iLy.HAS_THREAD | l.iLy.IS_CROSSPOST | l.iLy.IS_VOICE_MESSAGE | l.iLy.SHOULD_SHOW_LINK_NOT_DISCORD_WARNING | l.iLy.SUPPRESS_EMBEDS | l.iLy.SUPPRESS_NOTIFICATIONS | l.iLy.URGENT | l.iLy.IS_COMPONENTS_V2;
+  l = n(630388),
+  s = n(981631);
+let u = s.iLy.CROSSPOSTED | s.iLy.FAILED_TO_MENTION_SOME_ROLES_IN_THREAD | s.iLy.GUILD_FEED_HIDDEN | s.iLy.HAS_SNAPSHOT | s.iLy.HAS_THREAD | s.iLy.IS_CROSSPOST | s.iLy.IS_VOICE_MESSAGE | s.iLy.SHOULD_SHOW_LINK_NOT_DISCORD_WARNING | s.iLy.SUPPRESS_EMBEDS | s.iLy.SUPPRESS_NOTIFICATIONS | s.iLy.URGENT | s.iLy.IS_COMPONENTS_V2;
 
 function d(e) {
-  return e.state !== l.yb.SEND_FAILED && !!l.V$x.FORWARDABLE.has(e.type) && null == e.poll && null == e.activity && null == e.call && null == e.activityInstance && 0 === (0, s.Ge)(e.flags, u) && !0
+  return e.state !== s.yb.SEND_FAILED && !!s.V$x.FORWARDABLE.has(e.type) && null == e.poll && null == e.activity && null == e.call && null == e.activityInstance && 0 === (0, l.Ge)(e.flags, u) && !0
 }
 
 function p(e) {
@@ -28,7 +28,7 @@ function m(e) {
     var t, n;
     if (null == e) return !0;
     let a = null == (t = i.Z.getChannel(e.channel_id)) ? void 0 : t.guild_id;
-    return !!(null != a && (null == (n = c.Z.getGuild(a)) ? void 0 : n.hasFeature(l.oNc.FORWARDING_DISABLED))) || null != a && o.Z.isChannelOrThreadParentGated(a, e.channel_id)
+    return !!(null != a && (null == (n = c.Z.getGuild(a)) ? void 0 : n.hasFeature(s.oNc.FORWARDING_DISABLED))) || null != a && o.Z.isChannelOrThreadParentGated(a, e.channel_id)
   });
   return a.useMemo(() => !t && null != e && d(e), [t, e])
 }

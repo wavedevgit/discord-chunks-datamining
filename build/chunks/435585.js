@@ -154,14 +154,14 @@ function u(e, t, n, u, d) {
         }, c(n))
       }))
     }, [b, t, d, u, n, p]),
-    N = r.useCallback((e, t) => {
+    D = r.useCallback((e, t) => {
       f({
         questId: b,
         questContent: e,
         questContentCTA: t
       })
     }, [b, f]),
-    D = r.useCallback(e => {
+    P = r.useCallback(e => {
       if (null != t.current) {
         var r, l;
         p({
@@ -186,7 +186,7 @@ function u(e, t, n, u, d) {
         })
       }
     }, [p, b, d, g, u, n, t]),
-    P = r.useCallback((e, r) => {
+    T = r.useCallback((e, r) => {
       var l, o;
       if (null == t.current) return;
       let m = null == (l = t.current) ? void 0 : l.error,
@@ -215,10 +215,10 @@ function u(e, t, n, u, d) {
     trackQuestVideoResumed: C,
     trackQuestVideoPaused: j,
     trackQuestVideoFocusChange: y,
-    trackQuestContentClick: N,
+    trackQuestContentClick: D,
     trackQuestVideoBufferingStarted: _,
     trackQuestVideoBufferingEnded: x,
-    trackWatchTimeAnalytics: D,
+    trackWatchTimeAnalytics: P,
     trackQuestVideoFullscreenChanged: r.useCallback(e => {
       null != t.current && p({
         questId: b,
@@ -229,7 +229,7 @@ function u(e, t, n, u, d) {
         }, c(n))
       })
     }, [b, t, u, n, p, d]),
-    trackQuestVideoError: P,
+    trackQuestVideoError: T,
     trackQuestVideoVolumeChanged: r.useCallback(e => {
       null != t.current && p({
         questId: b,

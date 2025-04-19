@@ -27,9 +27,9 @@ var i = n(200651),
   j = n(981631),
   C = n(65154),
   S = n(388032),
-  N = n(884751);
+  Z = n(884751);
 
-function Z(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -67,7 +67,7 @@ let P = r.memo(function(e) {
       channel: r,
       context: o
     } = e, l = null == (t = n.user) ? void 0 : t.id;
-    return (0, a.e7)([y.Z], () => null != n.user && null != o && null != r && y.Z.isLocalVideoDisabled(l, o), [l, n.user, o, r]) ? null : (0, i.jsx)(f.ZP, Z({}, e))
+    return (0, a.e7)([y.Z], () => null != n.user && null != o && null != r && y.Z.isLocalVideoDisabled(l, o), [l, n.user, o, r]) ? null : (0, i.jsx)(f.ZP, N({}, e))
   }),
   T = r.memo(function(e) {
     let {
@@ -88,7 +88,7 @@ let P = r.memo(function(e) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("6524")]).then(n.bind(n, 27900));
-        return n => (0, i.jsx)(e, w(Z({}, n), {
+        return n => (0, i.jsx)(e, w(N({}, n), {
           user: o,
           mediaEngineContext: t,
           onWatchStream: () => {
@@ -120,7 +120,7 @@ let P = r.memo(function(e) {
       children: o.map(e => (0, i.jsx)(P, {
         participant: e,
         width: s,
-        className: N.tile,
+        className: Z.tile,
         containerStyle: m,
         fit: h.L.COVER,
         channel: a,
@@ -160,9 +160,9 @@ let P = r.memo(function(e) {
         opacity: c.opacity
       }), [c.opacity]),
       O = r.useMemo(() => l()({
-        [N.videoList]: !0,
-        [N.vertical]: !m,
-        [N.hidden]: !g && a
+        [Z.videoList]: !0,
+        [Z.vertical]: !m,
+        [Z.hidden]: !g && a
       }), [m, g, a]);
     return 0 !== n.length || a ? null == u ? null : (0, i.jsx)("div", {
       ref: f,
@@ -181,7 +181,7 @@ let P = r.memo(function(e) {
     }) : h ? (0, i.jsx)("div", {
       ref: f,
       children: (0, i.jsx)(x.E, {
-        emptyText: S.NW.string(S.t["aTiM4+"]),
+        emptyText: S.intl.string(S.t["aTiM4+"]),
         icon: s.Odl,
         absolute: !0
       })
@@ -233,7 +233,7 @@ function A(e) {
         height: n
       }
     })
-  }, [s]), (0, i.jsx)(k, w(Z({}, e), {
+  }, [s]), (0, i.jsx)(k, w(N({}, e), {
     channel: t,
     participants: v,
     participantsVersion: l,

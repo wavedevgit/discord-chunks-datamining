@@ -4,8 +4,8 @@ l.r(n), l.d(n, {
 }), l(953529);
 var t = l(200651),
   r = l(192379),
-  s = l(269210),
-  i = l(752843),
+  i = l(269210),
+  s = l(752843),
   a = l(481060),
   o = l(757746),
   c = l(930155),
@@ -21,17 +21,17 @@ function j(e) {
   var n, l;
   let {
     appId: j,
-    subscriptionType: N,
-    onClose: f,
-    skuId: b,
+    subscriptionType: f,
+    onClose: b,
+    skuId: N,
     guildId: S,
     transitionState: g,
     onHeaderTitleClick: k
   } = e, {
     data: O
-  } = (0, c.H)(b), I = O[0], {
+  } = (0, c.H)(N), I = O[0], {
     data: y
-  } = (0, o.Z)(b), T = r.useMemo(() => {
+  } = (0, o.Z)(N), T = r.useMemo(() => {
     var e;
     return (null == y ? void 0 : y.thumbnail) != null && null != (e = x.Z.toURLSafe((0, m._W)(j, y.thumbnail, 256))) ? e : void 0
   }, [j, null == y ? void 0 : y.thumbnail]), R = r.useMemo(() => {
@@ -46,27 +46,27 @@ function j(e) {
     openModal: C,
     subscriptionPurchaseButtonState: E
   } = (0, u.Z)({
-    skuId: b,
+    skuId: N,
     initialSubscribeForGuild: null != S ? S : void 0
   });
   return null == y ? null : (0, t.jsx)(h.A, {
     appId: j,
-    skuId: b,
+    skuId: N,
     transitionState: g,
-    onHeaderTitleClick: null != k ? k : f,
-    onClose: f,
+    onHeaderTitleClick: null != k ? k : b,
+    onClose: b,
     footer: (0, t.jsx)(p.pV, {
       onClick: C,
       appId: j,
-      subscriptionType: N,
-      skuId: b,
+      subscriptionType: f,
+      skuId: N,
       subscriptionPlan: I,
       state: E
     }),
     children: (0, t.jsx)(v.i, {
       appId: j,
-      skuId: b,
-      benefits: null != R ? R.map(e => (0, t.jsx)(s.Gm, {
+      skuId: N,
+      benefits: null != R ? R.map(e => (0, t.jsx)(i.Gm, {
         header: e.title,
         icon: e.icon,
         description: e.description
@@ -74,8 +74,8 @@ function j(e) {
       description: null != (n = y.description) ? n : void 0,
       imgSrc: T,
       title: null != (l = null == I ? void 0 : I.name) ? l : y.summary,
-      tag: (0, t.jsx)(i.Z, {
-        type: N
+      tag: (0, t.jsx)(s.Z, {
+        type: f
       }),
       FallbackIcon: a.Vh5
     })

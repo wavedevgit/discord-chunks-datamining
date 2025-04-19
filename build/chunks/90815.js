@@ -1,13 +1,13 @@
 /** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  q: () => s
+  q: () => l
 });
 var r = n(200651);
 n(192379);
 var i = n(952265);
 
-function s(e) {
+function l(e) {
   let {
     demonetized: t = !1
   } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};

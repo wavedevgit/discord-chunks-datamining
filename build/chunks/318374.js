@@ -92,8 +92,8 @@ function v(e) {
     overflowCountColor: I = "interactive-normal",
     overflowCountClassName: S,
     hideOverflowCount: T = !1,
-    disableUsernameTooltip: N = !1,
-    disableUserPopout: A = !1,
+    disableUsernameTooltip: A = !1,
+    disableUserPopout: N = !1,
     onClick: C,
     onFocus: R,
     onUserClick: P,
@@ -110,7 +110,7 @@ function v(e) {
           guildId: s,
           channelId: h,
           nick: f.ZP.getNickname(s, h, e),
-          disablePopout: "function" == typeof A ? A(e.id) : A,
+          disablePopout: "function" == typeof N ? N(e.id) : N,
           onClick: P,
           onPopoutRequestClose: () => {
             L(!1), null == w || w()
@@ -141,7 +141,7 @@ function v(e) {
         let n = _.ZP.getName(e),
           a = t === u && !i,
           l = o()(p.avatar, x, a && p.isLast);
-        return N ? (0, r.jsx)("div", {
+        return A ? (0, r.jsx)("div", {
           className: l,
           children: (0, r.jsx)(c.qEK, {
             src: e.getAvatarURL(s, 24),

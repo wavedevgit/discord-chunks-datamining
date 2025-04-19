@@ -1,15 +1,15 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  w: () => l
+  w: () => a
 });
-var r = n(442837),
-  i = n(271383),
+var i = n(442837),
+  r = n(271383),
   s = n(430824),
-  a = n(353093);
+  l = n(353093);
 
-function l() {
-  return (0, r.Wu)([s.Z, i.ZP], () => Object.values(s.Z.getGuilds()).filter(e => {
+function a() {
+  return (0, i.Wu)([s.Z, r.ZP], () => Object.values(s.Z.getGuilds()).filter(e => {
     var t, n;
-    return (0, a.up)(e) && (null == (t = i.ZP.getSelfMember(e.id)) ? void 0 : t.joinedAt) != null && (null == (n = e.profile) ? void 0 : n.tag) != null
+    return (0, l.up)(e) && (null == (t = r.ZP.getSelfMember(e.id)) ? void 0 : t.joinedAt) != null && (null == (n = e.profile) ? void 0 : n.tag) != null
   }))
 }

@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => y
+  Z: () => I
 }), n(388685);
 var r = n(192379),
   i = n(166516),
@@ -20,20 +20,20 @@ var r = n(192379),
   _ = n(981631),
   E = n(388032);
 let O = new Set(["Blink", "Gecko", "WebKit"]),
-  N = _.dG4;
-if (g.isPlatformEmbedded) N = e => m.ZP.setBadge(e);
+  y = _.dG4;
+if (g.isPlatformEmbedded) y = e => m.ZP.setBadge(e);
 else if (O.has(o().layout)) {
   let e = new(l())({
     animation: "none"
   });
-  N = t => {
+  y = t => {
     try {
       (0, b.PR)(t), e.badge(-1 === t ? "•" : t)
     } catch (e) {}
   }
 }
 
-function y() {
+function I() {
   let e = (0, s.e7)([f.Z], () => f.Z.hasIncomingCalls()),
     t = (0, s.e7)([d.default, h.Z, p.Z, c.Z], () => {
       let e = d.default.getTotalMentionCount(),
@@ -47,13 +47,13 @@ function y() {
     if (!e) return;
     let t = m.ZP.bounceDock("critical"),
       n = (0, b.EM)({
-        messages: [E.NW.string(E.t["fk1/bW"])],
+        messages: [E.intl.string(E.t["fk1/bW"])],
         count: 50
       });
     return () => {
       null == t || t(), n()
     }
   }, [e]), r.useEffect(() => {
-    N(t)
-  }, [t]), r.useEffect(() => () => N(0), [])
+    y(t)
+  }, [t]), r.useEffect(() => () => y(0), [])
 }

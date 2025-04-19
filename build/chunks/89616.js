@@ -4,8 +4,8 @@ s.d(t, {
 }), s(388685);
 var n = s(200651),
   l = s(192379),
-  a = s(481060),
-  i = s(365007),
+  i = s(481060),
+  a = s(365007),
   c = s(388032),
   o = s(17379);
 
@@ -18,7 +18,7 @@ function r(e) {
   async function f(e) {
     e.preventDefault(), u(!0);
     try {
-      await (0, i.WQ)(r.id, h), s()
+      await (0, a.WQ)(r.id, h), s()
     } catch (e) {
       g(e.message)
     } finally {
@@ -26,36 +26,36 @@ function r(e) {
     }
   }
   return l.useEffect(() => {
-    if (t === a.Dvm.ENTERED) {
+    if (t === i.Dvm.ENTERED) {
       var e;
       null == (e = k.current) || e.focus()
     }
-  }, [t]), (0, n.jsxs)(a.Y0X, {
+  }, [t]), (0, n.jsxs)(i.Y0X, {
     transitionState: t,
-    children: [(0, n.jsxs)(a.xBx, {
+    children: [(0, n.jsxs)(i.xBx, {
       separator: !1,
       className: o.header,
-      children: [(0, n.jsx)(a.Text, {
+      children: [(0, n.jsx)(i.Text, {
         color: "header-secondary",
         variant: "text-lg/bold",
         className: o.subtitle,
-        children: c.NW.string(c.t.YjuMsb)
-      }), (0, n.jsx)(a.olH, {
+        children: c.intl.string(c.t.YjuMsb)
+      }), (0, n.jsx)(i.olH, {
         onClick: s,
         className: o.modalCloseButton
       })]
     }), (0, n.jsxs)("form", {
       onSubmit: f,
-      children: [(0, n.jsx)(a.hzk, {
+      children: [(0, n.jsx)(i.hzk, {
         className: o.content,
-        children: (0, n.jsx)(a.xJW, {
-          title: c.NW.string(c.t["7yEgJS"]),
+        children: (0, n.jsx)(i.xJW, {
+          title: c.intl.string(c.t["7yEgJS"]),
           error: m,
           required: !0,
           children: (0, n.jsx)("div", {
-            children: (0, n.jsx)(a.oil, {
+            children: (0, n.jsx)(i.oil, {
               inputRef: k,
-              "aria-label": c.NW.string(c.t["7yEgJS"]),
+              "aria-label": c.intl.string(c.t["7yEgJS"]),
               placeholder: r.name,
               value: h,
               minLength: 1,
@@ -66,20 +66,20 @@ function r(e) {
             })
           })
         })
-      }), (0, n.jsxs)(a.mzw, {
-        children: [(0, n.jsx)(a.zxk, {
+      }), (0, n.jsxs)(i.mzw, {
+        children: [(0, n.jsx)(i.zxk, {
           type: "submit",
-          color: a.zxk.Colors.BRAND,
-          size: a.zxk.Sizes.MEDIUM,
+          color: i.zxk.Colors.BRAND,
+          size: i.zxk.Sizes.MEDIUM,
           submitting: d,
           disabled: 0 === h.length || h.length > 32,
-          children: c.NW.string(c.t.i4jeWV)
-        }), (0, n.jsx)(a.zxk, {
+          children: c.intl.string(c.t.i4jeWV)
+        }), (0, n.jsx)(i.zxk, {
           className: o.cancel,
-          look: a.zxk.Looks.LINK,
-          color: a.zxk.Colors.PRIMARY,
+          look: i.zxk.Looks.LINK,
+          color: i.zxk.Colors.PRIMARY,
           onClick: s,
-          children: c.NW.string(c.t["ETE/oK"])
+          children: c.intl.string(c.t["ETE/oK"])
         })]
       })]
     })]

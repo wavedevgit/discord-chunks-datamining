@@ -1,8 +1,8 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => r
+  Z: () => i
 });
-let r = (0, n(818083).B)({
+let i = (0, n(818083).B)({
   kind: "user",
   id: "2024-01_expanded_gift_entry_points_gift_inventory",
   label: "Expanded Gift Entry Points - Gift Inventory",

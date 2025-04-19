@@ -27,7 +27,7 @@ function p(e) {
   if (!(0, l.Z)(t) && !(0, u.gr)(n)) return null;
   if (!g) return (0, r.jsx)(a.sNh, {
     id: "connect-crunchyroll",
-    label: _.NW.formatToPlainString(_.t.XWSHTU, {
+    label: _.intl.formatToPlainString(_.t.XWSHTU, {
       platform: s.Z.get(f.ABu.CRUNCHYROLL).name
     }),
     action: () => {
@@ -40,7 +40,7 @@ function p(e) {
   let E = n.extra.url;
   return null == E || "" === E ? null : (0, r.jsx)(a.sNh, {
     id: "watch-on-crunchyroll",
-    label: _.NW.string(_.t.OpxQVF),
+    label: _.intl.string(_.t.OpxQVF),
     action: () => {
       null == h || h({
         action: "PRESS_WATCH_ON_CRUNCHYROLL_MENU_ITEM"

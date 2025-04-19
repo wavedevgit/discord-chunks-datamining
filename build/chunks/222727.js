@@ -1,12 +1,12 @@
 /** Chunk was on 76346 **/
 r.d(t, {
-  U: () => i
+  U: () => s
 });
 var n = r(990547),
-  s = r(213609);
+  i = r(213609);
 
-function i(e, t) {
-  (0, s.Z)({
+function s(e, t) {
+  (0, i.Z)({
     type: n.ImpressionTypes.VIEW,
     name: n.ImpressionNames.LOCALIZED_PRICING_UPSELL_VIEWED,
     properties: {

@@ -47,7 +47,7 @@ function T(e) {
   return e
 }
 
-function N(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,8 +58,8 @@ function N(e, t) {
   return n
 }
 
-function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
+function N(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -72,7 +72,7 @@ function R(e) {
     guildId: a,
     channelId: h,
     profileType: S,
-    animateOnHover: N,
+    animateOnHover: A,
     onOpenProfile: R,
     className: P,
     previewStatus: w
@@ -96,15 +96,15 @@ function R(e) {
     [I.panel]: S === y.y0.PANEL
   }, P), {
     avatarDecorationSrc: H,
-    avatarSrc: W,
-    eventHandlers: Y
+    avatarSrc: Y,
+    eventHandlers: W
   } = (0, E.Z)({
     user: t,
     guildId: null != n ? n.guildId : a,
     size: V,
-    animateOnHover: N
+    animateOnHover: A
   }), K = (0, r.jsx)(C, {
-    src: W,
+    src: Y,
     avatarDecoration: H,
     size: V,
     "aria-label": t.username,
@@ -115,10 +115,10 @@ function R(e) {
     statusTooltip: !0,
     statusTooltipDelay: y.vB
   });
-  return null == R ? (0, r.jsx)("div", A(T({}, Y), {
+  return null == R ? (0, r.jsx)("div", N(T({}, W), {
     className: Z,
     children: K
-  })) : (0, r.jsx)(l.P3F, A(T({}, Y), {
+  })) : (0, r.jsx)(l.P3F, N(T({}, W), {
     className: o()(Z, I.clickable),
     focusProps: {
       ringClassName: I.focusRing

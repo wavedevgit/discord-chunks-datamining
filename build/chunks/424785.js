@@ -28,9 +28,9 @@ var i = n(120356),
   x = n(680089),
   E = n(592125),
   I = n(430824),
-  N = n(607744),
-  P = n(496675),
-  w = n(306680),
+  P = n(607744),
+  w = n(496675),
+  N = n(306680),
   Z = n(9156),
   T = n(979651),
   A = n(934415),
@@ -42,9 +42,9 @@ var i = n(120356),
   U = n(647086),
   G = n(388032),
   B = n(915887),
-  W = n(185346);
+  V = n(185346);
 
-function V(e, t, n) {
+function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -53,20 +53,20 @@ function V(e, t, n) {
   }) : e[t] = n, e
 }
 
-function F(e) {
+function H(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      V(e, t, n[t])
+      F(e, t, n[t])
     })
   }
   return e
 }
 
-function H(e, t) {
+function z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -78,7 +78,7 @@ function H(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class z extends R.ZP {
+class W extends R.ZP {
   getVoiceStatesCount() {
     var e;
     let {
@@ -177,10 +177,10 @@ class z extends R.ZP {
               }
               return i
             }(o, ["onClick", "onContextMenu"]);
-            return (0, r.jsxs)(L.ZP, H(F({
+            return (0, r.jsxs)(L.ZP, z(H({
               className: B.iconVisibility,
               iconClassName: l()({
-                [W.iconLive]: null != f
+                [V.iconLive]: null != f
               }),
               channel: e,
               selected: !O && t,
@@ -216,13 +216,13 @@ class z extends R.ZP {
     return p && (j = c(j)), d && (j = o(a(j))), j
   }
   constructor(...e) {
-    super(...e), V(this, "state", {
+    super(...e), F(this, "state", {
       shouldShowGuildVerificationPopout: !1
-    }), V(this, "closeGuildVerificationPopout", () => {
+    }), F(this, "closeGuildVerificationPopout", () => {
       this.setState({
         shouldShowGuildVerificationPopout: !1
       })
-    }), V(this, "handleClick", () => {
+    }), F(this, "handleClick", () => {
       let {
         channel: e,
         locked: t,
@@ -232,13 +232,13 @@ class z extends R.ZP {
       null != i && (0, g.n)(i) && (0, f.hk)(i), r && this.setState({
         shouldShowGuildVerificationPopout: !0
       }), t || n || e.isRoleSubscriptionTemplatePreviewChannel() || (0, _.Cq)(e), __OVERLAY__ || (0, y.Kh)(e.id)
-    }), V(this, "handleClickChat", () => {
+    }), F(this, "handleClickChat", () => {
       let {
         channel: e,
         locked: t
       } = this.props;
       __OVERLAY__ || t || (0, y.Kh)(e.id)
-    }), V(this, "handleContextMenu", e => {
+    }), F(this, "handleContextMenu", e => {
       let {
         channel: t
       } = this.props, i = I.Z.getGuild(t.getGuildId());
@@ -246,12 +246,12 @@ class z extends R.ZP {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("18320"), n.e("83331"), n.e("81070")]).then(n.bind(n, 213202));
-        return n => (0, r.jsx)(e, H(F({}, n), {
+        return n => (0, r.jsx)(e, z(H({}, n), {
           channel: t,
           guild: i
         }))
       })
-    }), V(this, "renderPopout", () => {
+    }), F(this, "renderPopout", () => {
       let {
         channel: e
       } = this.props, {
@@ -263,14 +263,14 @@ class z extends R.ZP {
         closePopout: this.closeGuildVerificationPopout
       });
       throw Error("VoiceChannel.renderPopout: There must always be something to render")
-    }), V(this, "renderOpenChatButton", () => {
+    }), F(this, "renderOpenChatButton", () => {
       let {
         channel: e,
         locked: t,
         forceShowButtons: n
       } = this.props;
       if (!t) return (0, r.jsx)(s.ua7, {
-        text: G.NW.string(G.t.ZXxLQk),
+        text: G.intl.string(G.t.ZXxLQk),
         children: t => {
           let {
             onMouseEnter: i,
@@ -283,7 +283,7 @@ class z extends R.ZP {
             onClick: () => {
               a.Z.updateChatOpen(e.id, !0), this.handleClickChat()
             },
-            "aria-label": G.NW.string(G.t.ZXxLQk),
+            "aria-label": G.intl.string(G.t.ZXxLQk),
             onMouseEnter: i,
             onMouseLeave: o,
             onFocus: c,
@@ -296,12 +296,12 @@ class z extends R.ZP {
           })
         }
       })
-    }), V(this, "getTooltipText", () => {
+    }), F(this, "getTooltipText", () => {
       let {
         connected: e
       } = this.props;
-      return this.isFull() && !e ? G.NW.string(G.t.rZfiNj) : null
-    }), V(this, "renderSubtitle", () => {
+      return this.isFull() && !e ? G.intl.string(G.t.rZfiNj) : null
+    }), F(this, "renderSubtitle", () => {
       var e;
       let t = null == (e = this.props.stageInstance) ? void 0 : e.topic;
       return null == t ? null : (0, r.jsx)(p.Z, {
@@ -310,7 +310,7 @@ class z extends R.ZP {
     })
   }
 }
-let Y = (0, u.B)((0, d.Q)(z));
+let Y = (0, u.B)((0, d.Q)(W));
 
 function K(e) {
   let {
@@ -320,18 +320,18 @@ function K(e) {
     isFavoriteCategory: l,
     collapsed: s,
     voiceStates: a
-  } = e, c = (0, o.cj)([w.ZP], () => ({
-    unread: w.ZP.hasUnread(n.id),
-    mentionCount: w.ZP.getMentionCount(n.id)
-  })), u = (0, o.e7)([Z.ZP], () => Z.ZP.resolveUnreadSetting(n)), d = (0, o.cj)([E.Z, N.Z, P.Z], () => {
+  } = e, c = (0, o.cj)([N.ZP], () => ({
+    unread: N.ZP.hasUnread(n.id),
+    mentionCount: N.ZP.getMentionCount(n.id)
+  })), u = (0, o.e7)([Z.ZP], () => Z.ZP.resolveUnreadSetting(n)), d = (0, o.cj)([E.Z, P.Z, w.Z], () => {
     let e = E.Z.getChannel(n.parent_id),
-      r = N.Z.getCheck(n.guild_id);
+      r = P.Z.getCheck(n.guild_id);
     return {
-      canManageChannel: null != t && P.Z.can(M.Plq.MANAGE_CHANNELS, n),
-      canReorderChannel: !0 !== i && (t.id === U._ || (null != e ? P.Z.can(M.Plq.MANAGE_CHANNELS, e) : P.Z.can(M.Plq.MANAGE_CHANNELS, t))),
-      canMoveMembers: P.Z.can(M.Plq.MOVE_MEMBERS, n),
-      locked: !P.Z.can(M.Plq.CONNECT, n),
-      bypassLimit: P.Z.can(M.Plq.MOVE_MEMBERS, n),
+      canManageChannel: null != t && w.Z.can(M.Plq.MANAGE_CHANNELS, n),
+      canReorderChannel: !0 !== i && (t.id === U._ || (null != e ? w.Z.can(M.Plq.MANAGE_CHANNELS, e) : w.Z.can(M.Plq.MANAGE_CHANNELS, t))),
+      canMoveMembers: w.Z.can(M.Plq.MOVE_MEMBERS, n),
+      locked: !w.Z.can(M.Plq.CONNECT, n),
+      bypassLimit: w.Z.can(M.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
   }), h = (0, o.e7)([x.Z], () => x.Z.isCollapsed(n.parent_id)), p = (0, S.ZP)(n.id), f = (0, o.e7)([C.Z], () => C.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, O.Rk)(n.id, v.pV.AUDIENCE), {
@@ -346,7 +346,7 @@ function K(e) {
     needSubscriptionToAccess: y,
     enableConnectedUserLimit: I || n.userLimit > 0 && n.userLimit < M.xGv
   }), A = e.connected && null == T;
-  return (0, r.jsx)(Y, H(F({
+  return (0, r.jsx)(Y, z(H({
     categoryCollapsed: h,
     connectAction: p,
     numAudience: g,

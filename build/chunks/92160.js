@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  s = n.n(i),
-  l = n(481060),
+  l = n.n(i),
+  s = n(481060),
   a = n(388032),
   o = n(53134);
 
@@ -24,48 +24,48 @@ function c(e) {
     disabled: p
   } = e;
   return (0, r.jsxs)("div", {
-    className: s()(t, o.enableContainer),
-    children: [n ? (0, r.jsx)(l.dz2, {
+    className: l()(t, o.enableContainer),
+    children: [n ? (0, r.jsx)(s.dz2, {
       size: "custom",
       color: "currentColor",
       width: 24,
       height: 24,
-      className: s()(o.activeCircle, {
+      className: l()(o.activeCircle, {
         [o.animate]: u
       })
-    }) : (0, r.jsx)(l.vdY, {
+    }) : (0, r.jsx)(s.vdY, {
       size: "custom",
       color: "currentColor",
       width: 24,
       height: 24,
-      className: s()(o.editCircle, {
+      className: l()(o.editCircle, {
         [o.animate]: u
       })
     }), (0, r.jsxs)("div", {
       className: o.enableDescription,
-      children: [(0, r.jsx)(l.Text, {
+      children: [(0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         children: m
-      }), (0, r.jsx)(l.Text, {
+      }), (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         children: g
       })]
     }), (0, r.jsxs)("div", {
       className: o.buttonContainer,
-      children: [null == c ? null : (0, r.jsx)(l.zxk, {
+      children: [null == c ? null : (0, r.jsx)(s.zxk, {
         className: o.previewButton,
-        look: l.zxk.Looks.LINK,
-        size: l.zxk.Sizes.SMALL,
+        look: s.zxk.Looks.LINK,
+        size: s.zxk.Sizes.SMALL,
         onClick: c,
         disabled: p,
-        color: l.zxk.Colors.PRIMARY,
-        children: null != i ? i : a.NW.string(a.t["5U0kLy"])
-      }), (0, r.jsx)(l.zxk, {
+        color: s.zxk.Colors.PRIMARY,
+        children: null != i ? i : a.intl.string(a.t["5U0kLy"])
+      }), (0, r.jsx)(s.zxk, {
         disabled: null == d || p,
-        size: l.zxk.Sizes.SMALL,
-        color: n ? l.zxk.Colors.RED : l.zxk.Colors.BRAND,
+        size: s.zxk.Sizes.SMALL,
+        color: n ? s.zxk.Colors.RED : s.zxk.Colors.BRAND,
         onClick: d,
-        children: n ? a.NW.string(a.t.R9GHyc) : a.NW.string(a.t.JFfinp)
+        children: n ? a.intl.string(a.t.R9GHyc) : a.intl.string(a.t.JFfinp)
       })]
     })]
   })

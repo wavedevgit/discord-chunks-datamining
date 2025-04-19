@@ -1,10 +1,10 @@
 /** Chunk was on 77942 **/
 n.d(e, {
-  Z: () => v
+  Z: () => x
 });
 var o = n(200651),
-  r = n(192379),
-  i = n(442837),
+  i = n(192379),
+  r = n(442837),
   a = n(481060),
   l = n(100527),
   c = n(906732),
@@ -18,28 +18,28 @@ var o = n(200651),
   b = n(486324),
   g = n(474936),
   C = n(388032),
-  N = n(886563);
+  v = n(886563);
 
-function v(t) {
+function x(t) {
   let {
     analyticsSection: e,
     type: n
-  } = t, v = (0, i.e7)([d.default], () => d.default.getCurrentUser()), x = m.ZP.canUseAnimatedAvatar(v), A = m.ZP.canUsePremiumProfileCustomization(v), E = n === b.pC.BANNER && A || n === b.pC.AVATAR && x, {
-    sourceAnalyticsLocations: y
+  } = t, x = (0, r.e7)([d.default], () => d.default.getCurrentUser()), A = m.ZP.canUseAnimatedAvatar(x), E = m.ZP.canUsePremiumProfileCustomization(x), y = n === b.pC.BANNER && E || n === b.pC.AVATAR && A, {
+    sourceAnalyticsLocations: N
   } = (0, c.ZP)(l.Z.PREMIUM_PREVIEW_UPSELL_HEADER);
-  if (r.useEffect(() => {
-      E || f.default.track(p.rMx.PREMIUM_UPSELL_VIEWED, {
+  if (i.useEffect(() => {
+      y || f.default.track(p.rMx.PREMIUM_UPSELL_VIEWED, {
         type: e,
-        location_stack: y
+        location_stack: N
       })
-    }, [E, e, y]), E) return null;
+    }, [y, e, N]), y) return null;
   let h = (0, o.jsx)(_.Z, {
-    className: N.__invalid_getNitroLink,
+    className: v.__invalid_getNitroLink,
     size: a.zxk.Sizes.SMALL,
     look: a.zxk.Looks.LINK,
     color: a.zxk.Colors.LINK,
     subscriptionTier: g.Si.TIER_2,
-    buttonText: C.NW.format(C.t["944tDg"], {}),
+    buttonText: C.intl.format(C.t["944tDg"], {}),
     showIcon: !1,
     premiumModalAnalyticsLocation: {
       section: e,
@@ -49,8 +49,8 @@ function v(t) {
   });
   return (0, o.jsx)(u.Z, {
     reducedRightPadding: !0,
-    className: N.nitroPreviewUpsell,
-    text: C.NW.format(C.t.Og8039, {}),
+    className: v.nitroPreviewUpsell,
+    text: C.intl.format(C.t.Og8039, {}),
     textSize: s.Z.Sizes.SIZE_14,
     textColor: s.Z.Colors.HEADER_PRIMARY,
     button: h

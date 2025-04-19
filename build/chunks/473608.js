@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  O: () => N
+  O: () => A
 }), n(388685), n(314940);
 var r = n(200651),
   i = n(512722),
@@ -101,7 +101,7 @@ let I = e => {
       })
     })
   },
-  N = e => {
+  A = e => {
     var t;
     let {
       product: n,

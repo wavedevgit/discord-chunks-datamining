@@ -28,14 +28,14 @@ function y(e) {
     specMap: h
   } = e, m = g.Plq[i], y = null != (n = null == (t = h[m.toString()]) ? void 0 : t.title) ? n : (0, u.wt)(m), C = f._o.has(m), x = (0, a.e7)([d.Z], () => d.Z.getRoles(p.id));
   return (0, r.jsx)(s.ua7, {
-    "aria-label": b.NW.string(b.t["0g8Xd3"]),
+    "aria-label": b.intl.string(b.t["0g8Xd3"]),
     tooltipClassName: _.roleTooltipContainer,
     tooltipContentClassName: _.roleTooltipContentContainer,
     allowOverflow: !0,
     text: (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
-        children: C ? b.NW.string(b.t["GEuu/P"]) : b.NW.string(b.t.wgGiCg)
+        children: C ? b.intl.string(b.t["GEuu/P"]) : b.intl.string(b.t.wgGiCg)
       }), l.map(e => (0, r.jsx)("div", {
         className: _.roleTooltipItem,
         children: (0, r.jsx)(c.Z, {
@@ -80,7 +80,7 @@ let C = i.memo(function(e) {
       children: (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "text-positive",
-        children: b.NW.string(b.t.sXhykZ)
+        children: b.intl.string(b.t.sXhykZ)
       })
     });
     let e = [];
@@ -105,14 +105,14 @@ let C = i.memo(function(e) {
       children: [(0, r.jsx)(s.Text, {
         variant: "eyebrow",
         color: "header-secondary",
-        children: b.NW.string(b.t.ZCq2nJ)
+        children: b.intl.string(b.t.ZCq2nJ)
       }), (0, r.jsxs)(s.P3F, {
         className: _.viewAllPermissions,
         onClick: () => n(m.k.PERMISSIONS),
         children: [(0, r.jsx)(s.Text, {
           variant: "eyebrow",
           color: "interactive-normal",
-          children: b.NW.format(b.t["0x6aTk"], {
+          children: b.intl.format(b.t["0x6aTk"], {
             count: x
           })
         }), (0, r.jsx)(s.Fbu, {

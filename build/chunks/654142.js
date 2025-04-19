@@ -81,9 +81,9 @@ let y = i.memo(function(e) {
     for (let e of t)(e.length < n || 0 === r.length) && (r.push(e), n -= e.length);
     return "".concat(r.join(", ")).concat(r.length < t.length ? ", ..." : "")
   }(t), I = (0, f.Z)(t), {
-    mentionCount: N,
-    isMentionLowImportance: P,
-    unread: w
+    mentionCount: P,
+    isMentionLowImportance: w,
+    unread: N
   } = (0, l.cj)([u.default], () => ({
     mentionCount: j.map(e => u.default.getMentionCount(e)).reduce((e, t) => e + t, 0),
     isMentionLowImportance: j.every(e => u.default.getIsMentionLowImportance(e)),
@@ -99,17 +99,17 @@ let y = i.memo(function(e) {
         folderId: _,
         folderName: O,
         folderColor: v,
-        unread: w || N > 0
+        unread: N || P > 0
       }))
     })
-  }, [_, O, v, w, N]);
+  }, [_, O, v, N, P]);
   return (0, r.jsx)(p.Z, b(m({}, y), {
     folderNode: t,
     expanded: x,
     selected: null != S && j.includes(S),
-    mentionCount: N,
-    isMentionLowImportance: P,
-    unread: w,
+    mentionCount: P,
+    isMentionLowImportance: w,
+    unread: N,
     mediaState: I,
     defaultFolderName: E,
     onExpandCollapse: Z,

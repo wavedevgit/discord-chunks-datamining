@@ -33,27 +33,27 @@ let o = 1e6,
   s = 1e3;
 
 function l(e) {
-  if (e < o) return r.NW.formatToPlainString(r.t.OiHat7, {
+  if (e < o) return r.intl.formatToPlainString(r.t.OiHat7, {
     value: e
   });
   let t = (e / o).toFixed(1);
-  return r.NW.formatToPlainString(r.t.Iku48P, {
+  return r.intl.formatToPlainString(r.t.Iku48P, {
     value: t
   })
 }
 
 function c(e, t) {
-  if (e < s) return r.NW.formatToPlainString(r.t.OiHat7, {
+  if (e < s) return r.intl.formatToPlainString(r.t.OiHat7, {
     value: Math.floor(e)
   });
-  if (e < o) return r.NW.formatToPlainString(r.t["84R4TU"], {
+  if (e < o) return r.intl.formatToPlainString(r.t["84R4TU"], {
     value: Math.floor(e / s)
   });
   let n = Math.floor(10 * e / o) / 10,
     i = new Intl.NumberFormat(t, {
       maximumFractionDigits: 1
     }).format(n);
-  return r.NW.formatToPlainString(r.t.Iku48P, {
+  return r.intl.formatToPlainString(r.t.Iku48P, {
     value: i
   })
 }

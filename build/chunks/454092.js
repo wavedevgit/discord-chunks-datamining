@@ -11,14 +11,14 @@ var r, i = n(668781),
 
 function c(e, t) {
   let n;
-  0 === e ? n = a.NW.format(a.t["/S6f5+"], {}) : 1 === e ? n = a.NW.format(a.t.EBhv4e, {
+  0 === e ? n = a.intl.format(a.t["/S6f5+"], {}) : 1 === e ? n = a.intl.format(a.t.EBhv4e, {
     name: t
-  }) : 2 === e && (n = a.NW.format(a.t["59Dbw8"], {
+  }) : 2 === e && (n = a.intl.format(a.t["59Dbw8"], {
     name: t
   })), i.Z.show({
-    title: a.NW.string(a.t.vElC9f),
+    title: a.intl.string(a.t.vElC9f),
     body: n,
-    cancelText: a.NW.string(a.t.psXQHB),
+    cancelText: a.intl.string(a.t.psXQHB),
     onCancel() {
       window.open(l.Z.getArticleURL(o.BhN.APPLICATION_COMMAND_PERMISSIONS_LOCKOUT))
     }

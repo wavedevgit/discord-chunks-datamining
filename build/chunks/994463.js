@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   l = n(192379),
   s = n(525654),
-  a = n.n(s),
-  i = n(748780),
+  i = n.n(s),
+  a = n(748780),
   o = n(782682);
 
 function E(e, t, n) {
@@ -38,7 +38,7 @@ class c extends l.Component {
       x: e,
       y: t
     } = this.state;
-    "Firefox" !== a().name && (i.Z.animate(e, {
+    "Firefox" !== i().name && (a.Z.animate(e, {
       loop: !0,
       toValueMin: -74,
       toValueMax: 95,
@@ -46,7 +46,7 @@ class c extends l.Component {
       friction: 5,
       tension: 1,
       shouldLoop: this.shouldLoop
-    }), i.Z.animate(t, {
+    }), a.Z.animate(t, {
       loop: !0,
       toValueMin: -59,
       toValueMax: 75,
@@ -83,7 +83,7 @@ class c extends l.Component {
             children: [(0, r.jsx)("mask", {
               id: "search-index-foreground-mask-b",
               fill: "#fff",
-              children: (0, r.jsx)(i.Z.use, {
+              children: (0, r.jsx)(a.Z.use, {
                 style: u(this.state),
                 className: o.mask,
                 xlinkHref: "#search-index-foreground-mask-a"
@@ -347,7 +347,7 @@ class c extends l.Component {
                 strokeLinejoin: "round"
               })]
             })]
-          }), (0, r.jsxs)(i.Z.g, {
+          }), (0, r.jsxs)(a.Z.g, {
             className: o.magnifyingGlass,
             style: u(this.state),
             children: [(0, r.jsx)("path", {
@@ -393,8 +393,8 @@ class c extends l.Component {
   }
   constructor(...e) {
     super(...e), E(this, "state", {
-      x: new i.Z.Value(0),
-      y: new i.Z.Value(0)
+      x: new a.Z.Value(0),
+      y: new a.Z.Value(0)
     }), E(this, "_isMounted", !1), E(this, "shouldLoop", () => this._isMounted)
   }
 }

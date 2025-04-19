@@ -22,10 +22,10 @@ var r = n(310644),
 
 function b(e, t, n) {
   (0, d.Z)(2, arguments);
-  var m, g, b, v, O, I, S, T, N, A, C, R, P, w, D, L, x, M, k = String(t),
+  var m, g, b, v, O, I, S, T, A, N, C, R, P, w, D, L, x, M, k = String(t),
     j = (0, f.j)(),
     U = null != (m = null != (g = null == n ? void 0 : n.locale) ? g : j.locale) ? m : _.Z,
-    G = (0, u.Z)(null != (b = null != (v = null != (O = null != (I = null == n ? void 0 : n.firstWeekContainsDate) ? I : null == n || null == (S = n.locale) || null == (T = S.options) ? void 0 : T.firstWeekContainsDate) ? O : j.firstWeekContainsDate) ? v : null == (N = j.locale) || null == (A = N.options) ? void 0 : A.firstWeekContainsDate) ? b : 1);
+    G = (0, u.Z)(null != (b = null != (v = null != (O = null != (I = null == n ? void 0 : n.firstWeekContainsDate) ? I : null == n || null == (S = n.locale) || null == (T = S.options) ? void 0 : T.firstWeekContainsDate) ? O : j.firstWeekContainsDate) ? v : null == (A = j.locale) || null == (N = A.options) ? void 0 : N.firstWeekContainsDate) ? b : 1);
   if (!(G >= 1 && G <= 7)) throw RangeError("firstWeekContainsDate must be between 1 and 7 inclusively");
   var B = (0, u.Z)(null != (C = null != (R = null != (P = null != (w = null == n ? void 0 : n.weekStartsOn) ? w : null == n || null == (D = n.locale) || null == (L = D.options) ? void 0 : L.weekStartsOn) ? P : j.weekStartsOn) ? R : null == (x = j.locale) || null == (M = x.options) ? void 0 : M.weekStartsOn) ? C : 0);
   if (!(B >= 0 && B <= 6)) throw RangeError("weekStartsOn must be between 0 and 6 inclusively");

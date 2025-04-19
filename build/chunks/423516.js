@@ -18,7 +18,7 @@ let d = function(e) {
     text: l,
     hasConnectedChannel: d,
     textVariant: h = "text-md/medium"
-  } = e, f = (0, s.Q3)("RTCConnectionStatusText"), p = n ? u.NW.string(u.t.IlHdW1) : u.NW.string(u.t.WsOisr);
+  } = e, f = (0, s.Q3)("RTCConnectionStatusText"), p = n ? u.intl.string(u.t.IlHdW1) : u.intl.string(u.t.WsOisr);
   return (0, r.jsx)(a.Z, {
     className: i()(t, c.hoverableStatus),
     hoverText: d ? f ? (0, r.jsx)(o.Text, {

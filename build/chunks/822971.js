@@ -135,13 +135,13 @@ e.exports = function(e) {
         match: /""/
       }, e.BACKSLASH_ESCAPE]
     },
-    N = {
+    A = {
       scope: "string",
       begin: /"""/,
       end: /"""/,
       relevance: 2
     },
-    A = {
+    N = {
       scope: "subst",
       begin: /\{/,
       end: /\}/,
@@ -155,7 +155,7 @@ e.exports = function(e) {
         match: /\{\{/
       }, {
         match: /\}\}/
-      }, e.BACKSLASH_ESCAPE, A]
+      }, e.BACKSLASH_ESCAPE, N]
     },
     R = {
       scope: "string",
@@ -167,7 +167,7 @@ e.exports = function(e) {
         match: /\}\}/
       }, {
         match: /""/
-      }, e.BACKSLASH_ESCAPE, A]
+      }, e.BACKSLASH_ESCAPE, N]
     },
     P = {
       scope: "string",
@@ -177,14 +177,14 @@ e.exports = function(e) {
         match: /\{\{/
       }, {
         match: /\}\}/
-      }, A],
+      }, N],
       relevance: 2
     },
     w = {
       scope: "string",
       match: i(/'/, o(/[^\\']/, /\\(?:.|\d{3}|x[a-fA-F\d]{2}|u[a-fA-F\d]{4}|U[a-fA-F\d]{8})/), /'/)
     };
-  return A.contains = [R, C, T, S, w, n, c, d, E, v, O, I, _, h], {
+  return N.contains = [R, C, T, S, w, n, c, d, E, v, O, I, _, h], {
     name: "F#",
     aliases: ["fs", "f#"],
     keywords: l,
@@ -193,13 +193,13 @@ e.exports = function(e) {
       "computation-expression": "keyword"
     },
     contains: [n, {
-      variants: [P, R, C, N, T, S, w]
+      variants: [P, R, C, A, T, S, w]
     }, c, d, y, {
       scope: "meta",
       begin: /\[</,
       end: />\]/,
       relevance: 2,
-      contains: [d, N, T, S, w, I]
+      contains: [d, A, T, S, w, I]
     }, b, E, v, O, I, _, h]
   }
 }

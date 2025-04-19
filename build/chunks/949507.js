@@ -4,8 +4,8 @@ n.d(t, {
 }), n(953529);
 var r = n(200651);
 n(192379);
-var a = n(120356),
-  i = n.n(a),
+var i = n(120356),
+  a = n.n(i),
   l = n(481060),
   s = n(410030),
   o = n(686546),
@@ -24,7 +24,7 @@ function x(e) {
   let {
     guild: t,
     className: n,
-    onClick: a
+    onClick: i
   } = e, x = (0, s.ZP)(), v = new p.ZP({
     name: t.name,
     icon: t.icon
@@ -45,9 +45,9 @@ function x(e) {
     size: 50
   });
   return (0, r.jsxs)(l.P3F, {
-    className: i()(_.card, n),
-    onClick: a,
-    "aria-label": g.NW.string(g.t.RB4L29),
+    className: a()(_.card, n),
+    onClick: i,
+    "aria-label": g.intl.string(g.t.RB4L29),
     children: [(0, r.jsxs)("div", {
       className: _.cardHeader,
       children: [(0, r.jsx)("img", {
@@ -101,7 +101,7 @@ function x(e) {
           }), (0, r.jsx)(l.Text, {
             variant: "text-xs/normal",
             color: "header-secondary",
-            children: g.NW.format(g.t.zRl6XV, {
+            children: g.intl.format(g.t.zRl6XV, {
               count: t.approximate_member_count
             })
           })]

@@ -27,12 +27,12 @@ let y = (e, t, n, r) => {
     let i = b(r),
       a = s.ZP.getName(t.guild_id, t.id, n),
       o = e.extra.game_name;
-    return E.NW.formatToMarkdownString(i, {
+    return E.intl.formatToMarkdownString(i, {
       gameName: o,
       userName: a
     }).replaceAll("*", "")
   },
-  v = (e, t) => E.NW.formatToPlainString(E.t.tAwI1t, {
+  v = (e, t) => E.intl.formatToPlainString(E.t.tAwI1t, {
     username: t.username,
     activity: e.extra.game_name
   }),
@@ -52,21 +52,21 @@ let y = (e, t, n, r) => {
       details: S,
       appName: T
     } = (0, g.n)(n), {
-      primaryColor: N,
-      secondaryColor: A
+      primaryColor: A,
+      secondaryColor: N
     } = (0, d.Z)(null == O ? void 0 : O.src), C = (0, c.yA)(n), R = (0, c.Nq)(n), P = i.useCallback(e => {
       if (null != t && null != I && null != C && null != R && (0, _.qy)(R)) return (0, u.SO)({
         entry: n,
         applicationImageSrc: null == O ? void 0 : O.src,
         avatarSrcs: [I.getAvatarURL(null == t ? void 0 : t.guild_id, 128)],
         description: y(n, t, I, R),
-        timestamp: E.NW.formatToPlainString(E.t.YL7UEx, {
+        timestamp: E.intl.formatToPlainString(E.t.YL7UEx, {
           hours: Math.round(C / o.Z.Seconds.HOUR)
         }),
-        colors: [N, A],
+        colors: [A, N],
         channelId: e
       })
-    }, [null == O ? void 0 : O.src, t, C, n, N, R, A, I]);
+    }, [null == O ? void 0 : O.src, t, C, n, A, R, N, I]);
     if (null == I || null == C || null == R || !(0, _.qy)(R)) return null;
     let w = null != n.extra.platform ? f.v[n.extra.platform] : null;
     return (0, r.jsxs)(h.yR, {
@@ -74,7 +74,7 @@ let y = (e, t, n, r) => {
         channel: t,
         headerIcons: null == w ? null : (0, r.jsx)(m.Z, {
           Icon: w,
-          "aria-label": E.NW.string(E.t.YR4cHB)
+          "aria-label": E.intl.string(E.t.YR4cHB)
         }),
         entry: n,
         userDescription: E.t.rPqqtr,

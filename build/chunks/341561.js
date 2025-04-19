@@ -47,8 +47,8 @@ function I(e) {
 }
 let S = 8,
   T = 4,
-  N = 4,
-  A = 40,
+  A = 4,
+  N = 40,
   C = 6;
 
 function R(e, t) {
@@ -76,7 +76,7 @@ let D = {
     let a = r.allowSoundmoji && (0, o.dX)({
         location: "queryResults"
       }),
-      s = r.allowStickers || a ? 0 : A,
+      s = r.allowStickers || a ? 0 : N,
       u = b.rnv + s,
       {
         emojis: {
@@ -105,7 +105,7 @@ let D = {
     let _ = [];
     a && (_ = h.ZP.querySoundmoji(n, e).map(e => ({
       sound: e
-    })).slice(0, N), "-" === n[0] && (_ = _.filter(e => e.sound.name === n)));
+    })).slice(0, A), "-" === n[0] && (_ = _.filter(e => e.sound.name === n)));
     let p = d.slice(0, Math.max(C, u - f.length - _.length));
     return {
       results: {
@@ -150,7 +150,7 @@ let D = {
         onHover: d,
         onClick: f,
         titleWithQuery: y.t.ksAVYm,
-        titleWithoutQuery: y.NW.string(y.t.sMOuub),
+        titleWithoutQuery: y.intl.string(y.t.sMOuub),
         Component: a.ZP.Emoji,
         getProps: e => ({
           emoji: e,
@@ -167,7 +167,7 @@ let D = {
         onHover: d,
         onClick: p,
         titleWithQuery: 0 === t.length ? y.t.ksAVYm : null,
-        titleWithoutQuery: 0 === t.length ? y.NW.string(y.t.sMOuub) : null,
+        titleWithoutQuery: 0 === t.length ? y.intl.string(y.t.sMOuub) : null,
         Component: a.ZP.EmojiUpsell,
         getProps: e => {
           let {
@@ -190,7 +190,7 @@ let D = {
         onHover: d,
         onClick: f,
         titleWithQuery: y.t.uferGB,
-        titleWithoutQuery: y.NW.string(y.t["fT+Yjo"]),
+        titleWithoutQuery: y.intl.string(y.t["fT+Yjo"]),
         Component: a.ZP.Sticker,
         getProps: e => {
           let {
@@ -217,7 +217,7 @@ let D = {
         onHover: d,
         onClick: f,
         titleWithQuery: y.t["0cKBGB"],
-        titleWithoutQuery: y.NW.string(y.t.EHlAMT),
+        titleWithoutQuery: y.intl.string(y.t.EHlAMT),
         Component: a.ZP.Soundmoji,
         getProps: e => {
           let {

@@ -57,20 +57,20 @@ function T(e, t) {
   return n
 }
 
-function N(e, t) {
+function A(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function A(e) {
+function N(e) {
   let {
     summary: t,
     channel: f,
     members: b,
     guildId: I,
     unread: T,
-    onClick: A
+    onClick: N
   } = e, [C, R] = i.useState(!1), P = (0, u.Ye)(h.default.extractTimestamp(t.startId)), w = (0, a.e7)([m.Z], () => m.Z.summaryFeedback(t)), D = (e, n) => {
     e.stopPropagation(), (0, g.Z)({
       summary: t,
@@ -82,14 +82,14 @@ function A(e) {
       let {
         default: e
       } = await n.e("12891").then(n.bind(n, 519620));
-      return n => (0, r.jsx)(e, N(S({}, n), {
+      return n => (0, r.jsx)(e, A(S({}, n), {
         summary: t
       }))
     })
   };
   return (0, r.jsxs)(o.P3F, {
     className: O.container,
-    onClick: A,
+    onClick: N,
     onContextMenu: x,
     onMouseEnter: () => R(!0),
     onMouseLeave: () => R(!1),
@@ -182,7 +182,7 @@ function C(e) {
     children: t.map((e, t) => {
       var i;
       let a = null != (i = n[t]) ? i : [];
-      return (0, r.jsx)(A, {
+      return (0, r.jsx)(N, {
         summary: e,
         channel: o,
         members: a,

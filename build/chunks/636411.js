@@ -26,7 +26,7 @@ function y(e) {
   var t, n;
   let {
     onDismiss: i
-  } = e, y = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), v = m.NW.string(m.t["eikz4+"]), O = (0, d.N)(), I = (0, u.Ng)(), S = (null == O ? void 0 : O.subscription_trial) != null || null != I, T = {
+  } = e, y = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), v = m.intl.string(m.t["eikz4+"]), O = (0, d.N)(), I = (0, u.Ng)(), S = (null == O ? void 0 : O.subscription_trial) != null || null != I, T = {
     object: p.qAy.BUTTON_CTA,
     section: p.jXE.SUPER_REACTION_PICKER
   };
@@ -35,7 +35,7 @@ function y(e) {
     children: [(0, r.jsx)(s.P3F, {
       onClick: i,
       className: g.closeButton,
-      "aria-label": m.NW.string(m.t.WAI6xs),
+      "aria-label": m.intl.string(m.t.WAI6xs),
       children: (0, r.jsx)(s.Dio, {
         size: "md",
         color: "currentColor"
@@ -57,7 +57,7 @@ function y(e) {
       }), S ? (0, r.jsx)(f.ZP, {
         type: h.cd.BURST_REACTION_QUICK_ACTION_UPSELL,
         subscriptionTier: null != (n = null == O || null == (t = O.subscription_trial) ? void 0 : t.sku_id) ? n : h.Si.TIER_2,
-        headingText: m.NW.string(m.t.Wfl5zs),
+        headingText: m.intl.string(m.t.Wfl5zs),
         analyticsLocationObject: T,
         discountOffer: I,
         trialOffer: O,
@@ -74,7 +74,7 @@ function y(e) {
           }), (0, r.jsx)(s.X6q, {
             className: g.headerText,
             variant: "heading-xl/bold",
-            children: m.NW.string(m.t.Wfl5zs)
+            children: m.intl.string(m.t.Wfl5zs)
           })]
         }), (0, r.jsx)(s.Text, {
           className: g.subheaderText,
@@ -84,7 +84,7 @@ function y(e) {
           className: g.ctaActionWrapper,
           children: (0, r.jsx)(_.Z, {
             subscriptionTier: h.Si.TIER_2,
-            buttonText: m.NW.string(m.t.sEAnVF)
+            buttonText: m.intl.string(m.t.sEAnVF)
           })
         })]
       })]

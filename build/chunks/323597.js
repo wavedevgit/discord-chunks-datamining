@@ -27,22 +27,22 @@ function E(e) {
       canAccessChannel: f.Z.can(e.accessPermissions, e),
       canManageChannel: f.Z.can(e.isThread() ? O.Plq.MANAGE_THREADS : O.Plq.MANAGE_CHANNELS, e)
     }), [e]),
-    N = (0, a.e7)([c.Z], () => {
+    _ = (0, a.e7)([c.Z], () => {
       var t;
       return null != (t = c.Z.getCount(e.id)) ? t : 0
     }, [e.id]),
     {
-      firstMessage: _
+      firstMessage: v
     } = (0, a.e7)([s.Z], () => s.Z.getMessage(e.id), [e.id]),
-    v = t && (E || n && N < 1),
-    h = t && n && !E && N > 0 && null != _;
-  return b && (E || v || h) ? (0, i.jsx)(r.sNh, {
+    h = t && (E || n && _ < 1),
+    y = t && n && !E && _ > 0 && null != v;
+  return b && (E || h || y) ? (0, i.jsx)(r.sNh, {
     id: "delete-channel",
-    label: e.type === O.d4z.GUILD_CATEGORY ? p.NW.string(p.t.ifbXnJ) : e.isForumPost() ? v ? p.NW.string(p.t.nEOg1N) : p.NW.string(p.t.xwMqDw) : e.isThread() ? p.NW.string(p.t.H7vTe3) : p.NW.string(p.t["8D8Rsb"]),
+    label: e.type === O.d4z.GUILD_CATEGORY ? p.intl.string(p.t.ifbXnJ) : e.isForumPost() ? h ? p.intl.string(p.t.nEOg1N) : p.intl.string(p.t.xwMqDw) : e.isThread() ? p.intl.string(p.t.H7vTe3) : p.intl.string(p.t["8D8Rsb"]),
     color: "danger",
     action: () => {
       (0, u.w)(e, function() {
-        h ? o.Z.deleteMessage(e.id, g.default.castChannelIdAsMessageId(e.id)) : l.ZP.deleteChannel(e.id)
+        y ? o.Z.deleteMessage(e.id, g.default.castChannelIdAsMessageId(e.id)) : l.ZP.deleteChannel(e.id)
       })
     }
   }) : null

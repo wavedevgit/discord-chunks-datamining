@@ -54,13 +54,13 @@ let g = function(e) {
     isFocused: _,
     isActive: E,
     onOtherHover: O,
-    className: N
-  } = e, [y, I] = i.useState(!1), [v, C] = i.useState(!1), S = () => {
-    I(!0), !_ || E || v || null == O || O()
+    className: y
+  } = e, [I, v] = i.useState(!1), [C, S] = i.useState(!1), N = () => {
+    v(!0), !_ || E || C || null == O || O()
   }, T = () => {
-    I(!1)
+    v(!1)
   }, P = (e, t) => {
-    null != t && (C(!0), (0, u.jW)(e, async () => {
+    null != t && (S(!0), (0, u.jW)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("69220"), n.e("86423")]).then(n.bind(n, 881351));
@@ -69,7 +69,7 @@ let g = function(e) {
       }))
     }, {
       onClose: () => {
-        C(!1)
+        S(!1)
       }
     }))
   };
@@ -81,12 +81,12 @@ let g = function(e) {
         right: -8
       },
       children: (0, r.jsx)(o.Z.div, f(h({
-        className: a()(p.messageRequestItem, N, {
-          [p.active]: E || v,
+        className: a()(p.messageRequestItem, y, {
+          [p.active]: E || C,
           [p.firstItem]: 0 === t
         }),
         onContextMenu: e => P(e, g),
-        onMouseEnter: S,
+        onMouseEnter: N,
         onMouseLeave: T,
         onClick: null != b ? b : void 0,
         style: {
@@ -94,7 +94,7 @@ let g = function(e) {
           opacity: 1
         }
       }, e), {
-        children: l(y || E || v)
+        children: l(I || E || C)
       }))
     })
   })

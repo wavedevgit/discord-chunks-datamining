@@ -1,22 +1,22 @@
 /** Chunk was on 48157 **/
 n.d(t, {
-  A: () => a
+  A: () => l
 });
 var r = n(200651);
 n(192379);
 var i = n(481060);
 
-function a(e) {
+function l(e) {
   let {
     message: t,
-    initialAnswerId: a
+    initialAnswerId: l
   } = e;
   (0, i.ZDy)(async () => {
     let {
       default: e
     } = await n.e("74590").then(n.bind(n, 651081));
     return n => {
-      var i, l;
+      var i, a;
       return (0, r.jsx)(e, (i = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -34,18 +34,18 @@ function a(e) {
           })
         }
         return e
-      }({}, n), l = l = {
+      }({}, n), a = a = {
         message: t,
-        initialAnswerId: a
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+        initialAnswerId: l
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(l)).forEach(function(e) {
-        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+      })(Object(a)).forEach(function(e) {
+        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
       }), i))
     }
   })

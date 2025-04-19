@@ -1,6 +1,6 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => B
+  Z: () => U
 }), n(388685);
 var i = n(200651),
   r = n(192379),
@@ -22,9 +22,9 @@ var i = n(200651),
   v = n(499254),
   C = n(541099),
   g = n(827498),
-  N = n(496158),
-  j = n(676161),
-  P = n(660090),
+  j = n(496158),
+  P = n(676161),
+  N = n(660090),
   E = n(783097),
   O = n(176412),
   A = n(870205),
@@ -79,7 +79,7 @@ function k(e) {
     children: [(0, i.jsx)(u.Rny, {
       className: w.commandFocusBlock,
       children: h
-    }), p ? (0, i.jsx)(a.F, {}) : (0, i.jsx)(W, {
+    }), p ? (0, i.jsx)(a.F, {}) : (0, i.jsx)(D, {
       context: l,
       command: o,
       sectionName: c
@@ -134,14 +134,14 @@ function M() {
   })
 }
 
-function W(e) {
+function D(e) {
   let {
     context: t,
     command: n,
     sectionName: l
   } = e;
   (0, f.PL)(!0, !0), (0, f.em)(t, !0, !0);
-  let o = (0, N.D)(t),
+  let o = (0, j.D)(t),
     [a, c] = r.useState(!1),
     d = r.useCallback(async e => {
       if ("channel" !== t.type) return;
@@ -179,13 +179,13 @@ function W(e) {
     color: u.zxk.Colors.PRIMARY,
     className: w.commandSentCTAButton,
     innerClassName: w.commandSentCTAButtonInner,
-    "aria-label": T.NW.formatToPlainString(T.t.UXw6W1, {
+    "aria-label": T.intl.formatToPlainString(T.t.UXw6W1, {
       commandName: n.untranslatedName
     }),
     children: [(0, i.jsx)(u.Text, {
       variant: "text-sm/medium",
       color: "currentColor",
-      children: T.NW.string(T.t.TXNS7e)
+      children: T.intl.string(T.t.TXNS7e)
     }), (0, i.jsx)(s.U, {
       size: "xs",
       color: "currentColor"
@@ -193,7 +193,7 @@ function W(e) {
   })
 }
 
-function D(e) {
+function B(e) {
   let {
     context: t,
     commands: n,
@@ -222,7 +222,7 @@ function D(e) {
   })
 }
 
-function B(e) {
+function U(e) {
   var t;
   let {
     context: n,
@@ -254,14 +254,14 @@ function B(e) {
     setSortOrder: _,
     commands: y,
     canSort: x
-  } = (0, P.Z)({
+  } = (0, N.Z)({
     sectionId: l.id,
     commandsByActiveSection: u
   });
   r.useEffect(() => {
     c(l.id)
   }, [l.id, c]);
-  let v = (0, j.Z)({
+  let v = (0, P.Z)({
     context: n,
     commands: y,
     limit: 5
@@ -270,17 +270,17 @@ function B(e) {
     s(y.length > 0)
   }, [s, y]), m || 0 !== y.length) ? (0, i.jsxs)("ul", {
     className: w.contentContainer,
-    children: [(0, i.jsx)(D, {
+    children: [(0, i.jsx)(B, {
       context: n,
       section: f,
       commands: v,
-      headerName: T.NW.string(T.t.acSE0t),
+      headerName: T.intl.string(T.t.acSE0t),
       sectionName: o
-    }), (0, i.jsx)(D, {
+    }), (0, i.jsx)(B, {
       context: n,
       section: f,
       commands: m ? Z : y,
-      headerName: T.NW.string(T.t.DUU9Ly),
+      headerName: T.intl.string(T.t.DUU9Ly),
       sectionName: o,
       children: x && (0, i.jsx)(A.Z, {
         sortOrder: b,

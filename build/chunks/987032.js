@@ -166,7 +166,7 @@ let o = (0, r.B)({
   ]);
 
 function l(e) {
-  return void 0 !== e && s.has(e) ? s.get(e) : a.NW.string(a.t.jdPblp)
+  return void 0 !== e && s.has(e) ? s.get(e) : a.intl.string(a.t.jdPblp)
 }
 let c = new Map([
   ["arzte_und_apotheker_bank", "\xc4rzte- und Apothekerbank"],
@@ -199,5 +199,5 @@ let c = new Map([
 ]);
 
 function u(e) {
-  return void 0 !== e && c.has(e) ? c.get(e) : a.NW.string(a.t.jdPblp)
+  return void 0 !== e && c.has(e) ? c.get(e) : a.intl.string(a.t.jdPblp)
 }

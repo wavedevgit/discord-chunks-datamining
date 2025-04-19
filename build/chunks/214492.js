@@ -3,11 +3,11 @@ n.d(t, {
   hs: () => _,
   oF: () => b
 }), n(388685);
-var r = n(913527),
-  i = n.n(r),
+var i = n(913527),
+  r = n.n(i),
   s = n(442837),
-  a = n(780384),
-  l = n(410030),
+  l = n(780384),
+  a = n(410030),
   o = n(726542),
   c = n(835473),
   d = n(594190),
@@ -19,7 +19,7 @@ var r = n(913527),
   f = n(701488);
 
 function b() {
-  let e = (0, s.Wu)([d.ZP, m.Z, g.Z], () => d.ZP.getGamesSeen(!1).filter(e => !!(0, d.FZ)(e, [d.ZP, m.Z, g.Z]).detectable && null != e.lastLaunched && 30 >= i()().diff(e.lastLaunched, "days")).map(e => {
+  let e = (0, s.Wu)([d.ZP, m.Z, g.Z], () => d.ZP.getGamesSeen(!1).filter(e => !!(0, d.FZ)(e, [d.ZP, m.Z, g.Z]).detectable && null != e.lastLaunched && 30 >= r()().diff(e.lastLaunched, "days")).map(e => {
       var t, n;
       return null != (n = e.id) ? n : null == (t = m.Z.getGameByGameData(e)) ? void 0 : t.id
     })),
@@ -39,13 +39,13 @@ function b() {
 
 function _() {
   let e = (0, s.e7)([u.Z], () => u.Z.getAccounts()),
-    t = (0, l.ZP)(),
+    t = (0, a.ZP)(),
     n = e.length;
   return {
     assets: e.filter(e => h.vbS.has(e.type) && e.showActivity).slice(0, n > 4 ? 3 : 4).map(e => {
       let n = o.Z.get(e.type);
       return {
-        src: (0, a.wj)(t) ? n.icon.darkSVG : n.icon.lightSVG,
+        src: (0, l.wj)(t) ? n.icon.darkSVG : n.icon.lightSVG,
         alt: n.name
       }
     }),

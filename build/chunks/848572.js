@@ -3,7 +3,7 @@
 n.d(t, {
   GG: () => v,
   Rw: () => T,
-  SI: () => N,
+  SI: () => A,
   Vq: () => E,
   a1: () => y,
   y3: () => O
@@ -110,7 +110,7 @@ let b = () => {
   },
   T = () => {
     let e = (0, a.e7)([l.default], () => l.default.getCurrentUser()),
-      t = N(null == e ? void 0 : e.id),
+      t = A(null == e ? void 0 : e.id),
       n = I(),
       r = S();
     return null != t ? g(h({}, t), {
@@ -118,7 +118,7 @@ let b = () => {
       status: "earned"
     }) : null != r ? r : null
   },
-  N = e => {
+  A = e => {
     let t = (0, f.l)(e);
     return null == t ? null : _.vK[t]
   }

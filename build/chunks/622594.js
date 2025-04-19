@@ -4,8 +4,8 @@ n.d(t, {
 }), n(388685);
 var l = n(200651),
   a = n(192379),
-  r = n(120356),
-  i = n.n(r),
+  i = n(120356),
+  r = n.n(i),
   s = n(259580),
   o = n(70956),
   u = n(586826),
@@ -17,7 +17,7 @@ let h = a.memo(function(e) {
   let {
     playing: t,
     onPausePlayback: n,
-    onPlaybackChange: r,
+    onPlaybackChange: i,
     onChangePosition: h,
     disabled: g = !1
   } = e, p = function(e) {
@@ -39,13 +39,13 @@ let h = a.memo(function(e) {
     return e
   }({}, f.nl), {
     audio: y
-  } = (0, u.p)(), b = null != y, v = a.useRef(null), x = a.useRef(null), j = a.useRef(null), [N, w] = a.useState(0), [C, S] = a.useState(0), [O, P] = a.useState(0), [E, k] = a.useState(!1), [Z, M] = a.useState(!1), [I, T] = a.useState(!1), [_, D] = a.useState(0), [R, F] = a.useState(-1), W = a.useMemo(() => _ / p.fineTuningScale, [p.fineTuningScale, _]);
+  } = (0, u.p)(), b = null != y, v = a.useRef(null), x = a.useRef(null), j = a.useRef(null), [w, N] = a.useState(0), [C, S] = a.useState(0), [O, P] = a.useState(0), [E, k] = a.useState(!1), [Z, M] = a.useState(!1), [I, T] = a.useState(!1), [_, D] = a.useState(0), [R, F] = a.useState(-1), z = a.useMemo(() => _ / p.fineTuningScale, [p.fineTuningScale, _]);
   a.useEffect(() => {
     if (null == y) return;
     let e = y.duration * o.Z.Millis.SECOND;
-    w(0), S(0), P(e), D(e)
+    N(0), S(0), P(e), D(e)
   }, [y]);
-  let z = a.useCallback((e, t) => {
+  let A = a.useCallback((e, t) => {
       if (n(), 0 === e.button) switch (t) {
         case 0:
           k(!0);
@@ -57,7 +57,7 @@ let h = a.memo(function(e) {
           T(!0)
       }
     }, [n]),
-    A = a.useCallback(e => {
+    B = a.useCallback(e => {
       switch (e) {
         case 0:
           k(!1);
@@ -70,46 +70,46 @@ let h = a.memo(function(e) {
       }
       F(-1)
     }, []),
-    B = a.useCallback(e => {
+    L = a.useCallback(e => {
       if (null == y || !E) return;
       let t = parseInt(e.target.value),
         n = t > O ? O : t;
-      r((0, c.my)(n)), w(n), S(n)
-    }, [y, r, O, E]),
-    L = a.useCallback(e => {
+      i((0, c.my)(n)), N(n), S(n)
+    }, [y, i, O, E]),
+    U = a.useCallback(e => {
       if (null == y || !Z) return;
       let t = parseInt(e.target.value);
-      t < N ? (r((0, c.my)(N)), S(N)) : t > O ? (r((0, c.my)(O)), S(O)) : (r((0, c.my)(t)), S(t))
-    }, [y, r, O, Z, N]),
-    U = a.useCallback(e => {
+      t < w ? (i((0, c.my)(w)), S(w)) : t > O ? (i((0, c.my)(O)), S(O)) : (i((0, c.my)(t)), S(t))
+    }, [y, i, O, Z, w]),
+    G = a.useCallback(e => {
       if (null == y || !I) return;
       let t = parseInt(e.target.value),
-        n = t > N ? t : N;
-      r((0, c.my)(N)), S(N), P(n)
-    }, [y, r, I, N]);
+        n = t > w ? t : w;
+      i((0, c.my)(w)), S(w), P(n)
+    }, [y, i, I, w]);
   return a.useEffect(() => {
     null != h && b && h({
-      startPositionMs: N,
+      startPositionMs: w,
       endPositionMs: O,
       playheadPositionMs: C
     })
-  }, [N, O, h, b, C]), a.useEffect(() => {
+  }, [w, O, h, b, C]), a.useEffect(() => {
     let e;
     if (null != y) return t && (e = setInterval(() => {
-      y.currentTime < (0, c.my)(O) ? y.currentTime >= (0, c.my)(C) && S(y.currentTime * o.Z.Millis.SECOND) : (n((0, c.my)(N)), S(N))
+      y.currentTime < (0, c.my)(O) ? y.currentTime >= (0, c.my)(C) && S(y.currentTime * o.Z.Millis.SECOND) : (n((0, c.my)(w)), S(w))
     }, 16)), () => {
       clearInterval(e)
     }
-  }, [y, O, n, C, t, N]), a.useEffect(() => {
+  }, [y, O, n, C, t, w]), a.useEffect(() => {
     if (p.fineTuningDelay <= 0) return;
     let e = setTimeout(() => {
-      E && N == N && -1 === R ? F(N) : I && O == O && -1 === R ? F(O) : Z && C == C && -1 === R && F(C)
+      E && w == w && -1 === R ? F(w) : I && O == O && -1 === R ? F(O) : Z && C == C && -1 === R && F(C)
     }, p.fineTuningDelay);
     return () => {
       clearTimeout(e)
     }
-  }, [p.fineTuningDelay, I, O, R, Z, C, E, N]), (0, l.jsxs)("div", {
-    className: i()(m.timeline, {
+  }, [p.fineTuningDelay, I, O, R, Z, C, E, w]), (0, l.jsxs)("div", {
+    className: r()(m.timeline, {
       [m.initialized]: b
     }),
     children: [(0, l.jsxs)("div", {
@@ -118,57 +118,57 @@ let h = a.memo(function(e) {
         className: m.rangeHandleFrame,
         children: [(0, l.jsx)("input", {
           ref: v,
-          className: i()(m.rangeHandle, m.rangeHandleStart),
+          className: r()(m.rangeHandle, m.rangeHandleStart),
           type: "range",
-          min: (0, c.ao)(R, W, _),
-          max: (0, c.MN)(R, W, _),
-          value: N,
-          onChange: B,
-          onMouseDown: e => z(e, 0),
-          onMouseUp: () => A(0),
+          min: (0, c.ao)(R, z, _),
+          max: (0, c.MN)(R, z, _),
+          value: w,
+          onChange: L,
+          onMouseDown: e => A(e, 0),
+          onMouseUp: () => B(0),
           disabled: !b || g
         }), (0, l.jsx)("input", {
           ref: j,
-          className: i()(m.rangeHandle, m.rangeHandleEnd),
+          className: r()(m.rangeHandle, m.rangeHandleEnd),
           type: "range",
-          min: (0, c.ao)(R, W, _),
-          max: (0, c.MN)(R, W, _),
+          min: (0, c.ao)(R, z, _),
+          max: (0, c.MN)(R, z, _),
           value: O,
-          onChange: U,
-          onMouseDown: e => z(e, 2),
-          onMouseUp: () => A(2),
+          onChange: G,
+          onMouseDown: e => A(e, 2),
+          onMouseUp: () => B(2),
           disabled: !b || g
         })]
       }), (0, l.jsx)("div", {
         className: m.__invalid_handlePlayheadTrack,
         children: (0, l.jsx)("input", {
           ref: x,
-          className: i()(m.rangeHandle, m.rangeHandlePlayhead),
+          className: r()(m.rangeHandle, m.rangeHandlePlayhead),
           type: "range",
-          min: (0, c.ao)(R, W, _),
-          max: (0, c.MN)(R, W, _),
+          min: (0, c.ao)(R, z, _),
+          max: (0, c.MN)(R, z, _),
           value: C,
-          onChange: L,
-          onMouseDown: e => z(e, 1),
-          onMouseUp: () => A(1),
+          onChange: U,
+          onMouseDown: e => A(e, 1),
+          onMouseUp: () => B(1),
           disabled: !b || g
         })
       })]
     }), (0, l.jsxs)("div", {
       className: m.handleContainer,
       children: [(0, l.jsxs)("div", {
-        className: i()(m.handleFrame, {
+        className: r()(m.handleFrame, {
           [m.startDragging]: E,
           [m.endDragging]: I
         }),
         style: {
-          left: "".concat((0, c.pN)(N, R, W, _), "%"),
-          right: "".concat((0, c.kD)(O, R, W, _), "%")
+          left: "".concat((0, c.pN)(w, R, z, _), "%"),
+          right: "".concat((0, c.kD)(O, R, z, _), "%")
         },
         children: [(0, l.jsx)("div", {
-          className: i()(m.handleIconFrame, m.handleIconFrameStart),
+          className: r()(m.handleIconFrame, m.handleIconFrameStart),
           children: (0, l.jsx)("div", {
-            className: i()(m.handleIconContainer, m.__invalid_start),
+            className: r()(m.handleIconContainer, m.__invalid_start),
             children: (0, l.jsx)(s.Z, {
               direction: s.Z.Directions.RIGHT,
               className: m.handleIcon,
@@ -177,9 +177,9 @@ let h = a.memo(function(e) {
             })
           })
         }), (0, l.jsx)("div", {
-          className: i()(m.handleIconFrame, m.handleIconFrameEnd),
+          className: r()(m.handleIconFrame, m.handleIconFrameEnd),
           children: (0, l.jsx)("div", {
-            className: i()(m.handleIconContainer, m.__invalid_end),
+            className: r()(m.handleIconContainer, m.__invalid_end),
             children: (0, l.jsx)(s.Z, {
               direction: s.Z.Directions.LEFT,
               className: m.handleIcon,
@@ -191,11 +191,11 @@ let h = a.memo(function(e) {
       }), (0, l.jsx)("div", {
         className: m.playheadTrack,
         children: (0, l.jsx)("div", {
-          className: i()(m.playhead, {
+          className: r()(m.playhead, {
             [m.dragging]: Z || E || I || t
           }),
           style: {
-            left: "".concat((0, c.pN)(C, R, W, _), "%")
+            left: "".concat((0, c.pN)(C, R, z, _), "%")
           }
         })
       })]
@@ -203,7 +203,7 @@ let h = a.memo(function(e) {
       className: m.waveformContainer,
       children: (0, l.jsx)(d.Z, {
         fineTuning: R,
-        fineTuningResolution: W,
+        fineTuningResolution: z,
         duration: _
       })
     })]

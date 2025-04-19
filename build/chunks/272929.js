@@ -99,7 +99,7 @@ function f(e) {
         duration: 1e3
       })
     }, "animate-always"),
-    v = C ? c.NW.formatToPlainString(c.t.D8Drx8, {
+    v = C ? c.intl.formatToPlainString(c.t.D8Drx8, {
       seconds: n
     }) : void 0,
     j = _ ? s.d : s.Z;

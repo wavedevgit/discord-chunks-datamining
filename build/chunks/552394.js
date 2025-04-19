@@ -1,66 +1,66 @@
 /** Chunk was on 88452 **/
-n.d(s, {
-  default: () => o
+a.d(t, {
+  default: () => r
 });
-var t = n(200651);
-n(192379);
-var i = n(481060),
-  d = n(447564),
-  e = n(921944),
-  c = n(388032),
-  r = n(938219);
+var i = a(200651);
+a(192379);
+var s = a(481060),
+  d = a(447564),
+  e = a(921944),
+  l = a(388032),
+  c = a(938219);
 
-function o(a) {
+function r(n) {
   let {
-    transitionState: s,
-    channel: n,
+    transitionState: t,
+    channel: a,
     markAsDismissed: d
-  } = a;
-  return (0, t.jsx)(i.Y0X, {
-    size: i.CgR.DYNAMIC,
-    transitionState: s,
-    children: (0, t.jsx)(l, {
+  } = n;
+  return (0, i.jsx)(s.Y0X, {
+    size: s.CgR.DYNAMIC,
+    transitionState: t,
+    children: (0, i.jsx)(o, {
       markAsDismissed: d,
-      channel: n
+      channel: a
     })
   })
 }
 
-function l(a) {
+function o(n) {
   let {
-    channel: s,
-    markAsDismissed: n
-  } = a;
-  return (0, t.jsxs)("div", {
-    className: r.modal,
-    children: [(0, t.jsx)("img", {
-      className: r.img,
+    channel: t,
+    markAsDismissed: a
+  } = n;
+  return (0, i.jsxs)("div", {
+    className: c.modal,
+    children: [(0, i.jsx)("img", {
+      className: c.img,
       src: "https://cdn.discordapp.com/assets/content/28f991389d76cad2f134080324967f70d380d072bca7ac88595287fd7f8f45e5.png",
-      alt: c.NW.string(c.t.UygxRk)
-    }), (0, t.jsxs)("div", {
-      className: r.body,
-      children: [(0, t.jsx)(i.X6q, {
+      alt: l.intl.string(l.t.UygxRk)
+    }), (0, i.jsxs)("div", {
+      className: c.body,
+      children: [(0, i.jsx)(s.X6q, {
         variant: "heading-lg/bold",
-        children: c.NW.string(c.t.DSyT5O)
-      }), (0, t.jsx)(i.Text, {
+        children: l.intl.string(l.t.DSyT5O)
+      }), (0, i.jsx)(s.Text, {
         variant: "text-sm/normal",
-        children: c.NW.format(c.t["0n58Li"], {
-          channel_name: s.name
+        children: l.intl.format(l.t["0n58Li"], {
+          channel_name: t.name
         })
       })]
-    }), (0, t.jsxs)("div", {
-      className: r.footer,
-      children: [(0, t.jsx)(i.zxk, {
+    }), (0, i.jsxs)("div", {
+      className: c.footer,
+      children: [(0, i.jsx)(s.zxk, {
         onClick: () => {
-          n(e.L.USER_DISMISS), (0, i.pTH)()
+          a(e.L.USER_DISMISS), (0, s.pTH)()
         },
-        color: i.Ttl.PRIMARY,
-        children: c.NW.string(c.t.i5lSbW)
-      }), (0, t.jsx)(i.zxk, {
+        color: s.Ttl.PRIMARY,
+        children: l.intl.string(l.t.i5lSbW)
+      }), (0, i.jsx)(s.zxk, {
         onClick: () => {
-          n(e.L.TAKE_ACTION), (0, d.k)(s, "HDStreamingPotionUpsellModal")
+          a(e.L.TAKE_ACTION), (0, d.k)(t, "HDStreamingPotionUpsellModal")
         },
-        children: c.NW.string(c.t.w1qPc3)
+        children: l.intl.string(l.t.w1qPc3)
       })]
     })]
   })

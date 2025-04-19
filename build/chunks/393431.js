@@ -1,10 +1,10 @@
 /** Chunk was on 56944 **/
-n.d(t, {
+n.d(e, {
   Z: () => a
 });
-var r = n(200651);
+var l = n(200651);
 n(192379);
-var l = n(481060),
+var r = n(481060),
   i = n(906732),
   o = n(453925),
   u = n(821564),
@@ -12,11 +12,11 @@ var l = n(481060),
 
 function a() {
   let {
-    analyticsLocations: e
+    analyticsLocations: t
   } = (0, i.ZP)();
-  return [(0, r.jsx)(l.kSQ, {
-    children: (0, u.Z)(e)
-  }, "input-mode-items"), (0, r.jsxs)(l.kSQ, {
-    children: [(0, o.Z)(e), (0, c.Z)(e)]
+  return [(0, l.jsx)(r.kSQ, {
+    children: (0, u.Z)(t)
+  }, "input-mode-items"), (0, l.jsxs)(r.kSQ, {
+    children: [(0, o.Z)(t), (0, c.Z)(t)]
   }, "input-output")]
 }

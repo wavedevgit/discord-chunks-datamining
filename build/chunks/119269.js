@@ -3,8 +3,8 @@ r.d(t, {
   Qo: () => C,
   ZP: () => j
 });
-var n, s = r(200651),
-  i = r(192379),
+var n, i = r(200651),
+  s = r(192379),
   l = r(120356),
   o = r.n(l),
   a = r(442837),
@@ -20,12 +20,12 @@ let x = e => {
     let {
       avatarDecoAssetId: t,
       avatarDecoAssetDescription: r
-    } = e, n = i.useMemo(() => (0, d.Z)(t, c.EFr.SIZE_120, !1), [t]);
-    return (0, s.jsx)("div", {
+    } = e, n = s.useMemo(() => (0, d.Z)(t, c.EFr.SIZE_120, !1), [t]);
+    return (0, i.jsx)("div", {
       className: y.avatarDecoContainer,
-      children: (0, s.jsx)("div", {
+      children: (0, i.jsx)("div", {
         className: y.avatarDeco,
-        children: (0, s.jsx)("img", {
+        children: (0, i.jsx)("img", {
           className: y.avatarDecoImage,
           alt: r,
           src: n
@@ -38,7 +38,7 @@ let x = e => {
       showAnimations: t = !0,
       iconClassName: r,
       staticPercentage: n,
-      innerCircleClassName: i,
+      innerCircleClassName: s,
       progressCircleStrokeSize: l,
       backgroundCircleSize: c,
       percentage: d,
@@ -51,9 +51,9 @@ let x = e => {
       circleColor: b,
       circleStroke: S
     } = e, E = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), v = t && !E;
-    return (0, s.jsx)("div", {
+    return (0, i.jsx)("div", {
       className: o()(y.progressCircle, r),
-      children: (0, s.jsx)(g.Z, {
+      children: (0, i.jsx)(g.Z, {
         animationClassName: o()(y.activeProgressCircle, {
           [y.activeProgressCircleAnimation]: v,
           [null != m ? m : ""]: v
@@ -66,18 +66,18 @@ let x = e => {
         children: (() => {
           switch (j) {
             case 0:
-              return (0, s.jsx)(p.Z, {
+              return (0, i.jsx)(p.Z, {
                 className: v ? y.nitroGemAnimation : void 0,
-                backgroundColor: o()(y.gemBackgroundFill, i),
+                backgroundColor: o()(y.gemBackgroundFill, s),
                 backgroundCircleSize: c
               });
             case 1:
-              return (0, s.jsx)(f.Z, {
+              return (0, i.jsx)(f.Z, {
                 circleColor: b,
                 ellipseOpacity: _
               });
             case 2:
-              if (null != h) return (0, s.jsx)(x, {
+              if (null != h) return (0, i.jsx)(x, {
                 avatarDecoAssetId: h,
                 avatarDecoAssetDescription: O
               });

@@ -1,43 +1,43 @@
 /** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  Z: () => l
+  Z: () => s
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  s = n(282338);
+  l = n(282338);
 
-function l(e) {
+function s(e) {
   let {
     step: t,
     header: n,
-    children: l
+    children: s
   } = e;
   return (0, r.jsxs)("div", {
-    className: s.triggerContainer,
+    className: l.triggerContainer,
     children: [(0, r.jsx)("div", {
-      className: s.triggerCounterContainer,
+      className: l.triggerCounterContainer,
       children: (0, r.jsx)("div", {
-        className: s.stepCountIcon,
+        className: l.stepCountIcon,
         children: (0, r.jsx)(i.Text, {
-          className: s.stepCount,
+          className: l.stepCount,
           variant: "text-sm/bold",
           children: t
         })
       })
     }), (0, r.jsxs)("div", {
-      className: s.triggerMainContainer,
+      className: l.triggerMainContainer,
       children: [(0, r.jsx)("div", {
-        className: s.__invalid_triggerHeaderContainer,
+        className: l.__invalid_triggerHeaderContainer,
         children: (0, r.jsx)(i.Text, {
-          className: s.triggerHeader,
+          className: l.triggerHeader,
           variant: "text-sm/normal",
           children: n
         })
-      }), null != l && (0, r.jsx)("div", {
-        className: s.triggerSettingsContainer,
-        children: l
+      }), null != s && (0, r.jsx)("div", {
+        className: l.triggerSettingsContainer,
+        children: s
       })]
     })]
   })

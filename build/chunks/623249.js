@@ -53,12 +53,12 @@ function w(e) {
     onClose: P
   } = e, E = (0, g.sf)(n);
   null == E && P();
-  let [N, T] = (0, o.useState)(s), A = (0, g.KX)(), R = (0, m.O5)(), B = null == (t = (0, f.WD)()) ? void 0 : t.getId(), k = (0, i.e7)([d.Z], () => d.Z.useReducedMotion), q = (0, j.g2)({
+  let [T, N] = (0, o.useState)(s), A = (0, g.KX)(), R = (0, m.O5)(), B = null == (t = (0, f.WD)()) ? void 0 : t.getId(), k = (0, i.e7)([d.Z], () => d.Z.useReducedMotion), q = (0, j.g2)({
     useReducedMotion: k,
     className: _.colorTransition
-  }), D = N.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), W = (0, h.Bz)(E), I = (0, i.e7)([p.Z], () => p.Z.getState().theme), M = (0, l.wj)(I) ? v.BRd.DARK : v.BRd.LIGHT, {
-    startConsoleQuest: L,
-    startingConsoleQuest: Z
+  }), D = T.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), I = (0, h.Bz)(E), M = (0, i.e7)([p.Z], () => p.Z.getState().theme), L = (0, l.wj)(M) ? v.BRd.DARK : v.BRd.LIGHT, {
+    startConsoleQuest: Z,
+    startingConsoleQuest: W
   } = (0, g.GI)({
     questId: E.id,
     beforeRequest: () => {
@@ -69,7 +69,7 @@ function w(e) {
       })
     },
     afterRequest: e => {
-      q.stopAnimation(), T(e)
+      q.stopAnimation(), N(e)
     }
   });
   return (0, r.jsxs)(c.Y0X, {
@@ -95,7 +95,7 @@ function w(e) {
         })]
       }), (0, r.jsx)(c.X6q, {
         variant: "heading-xl/bold",
-        children: y.NW.string(y.t.W5lmKi)
+        children: y.intl.string(y.t.W5lmKi)
       }), (0, r.jsx)(c.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
@@ -109,17 +109,17 @@ function w(e) {
         children: [(0, r.jsx)(c.Text, {
           variant: "eyebrow",
           color: "header-secondary",
-          children: y.NW.string(y.t["+/hZMz"])
+          children: y.intl.string(y.t["+/hZMz"])
         }), (0, r.jsxs)(c.P3F, {
           className: a()(_.refreshWrapper, {
-            [_.disabled]: Z
+            [_.disabled]: W
           }),
-          onClick: L,
+          onClick: Z,
           children: [q.render(), (0, r.jsx)(c.Text, {
             variant: "text-sm/medium",
             color: "currentColor",
             className: _.colorTransition,
-            children: y.NW.string(y.t.wzzjk5)
+            children: y.intl.string(y.t.wzzjk5)
           })]
         })]
       }), (0, r.jsxs)("div", {
@@ -128,14 +128,14 @@ function w(e) {
           icon: (0, r.jsx)(c.pzj, {
             size: "sm"
           }),
-          text: y.NW.string(y.t.br3uIi)
+          text: y.intl.string(y.t.br3uIi)
         }), (0, r.jsx)(S, {
           icon: (0, r.jsx)(c.iWm, {
             size: "sm"
           }),
-          text: y.NW.string(y.t.XF4wuL),
-          errors: W ? void 0 : D.map(e => e.message),
-          gameTile: W ? (0, r.jsx)(c.ua7, {
+          text: y.intl.string(y.t.XF4wuL),
+          errors: I ? void 0 : D.map(e => e.message),
+          gameTile: I ? (0, r.jsx)(c.ua7, {
             "aria-label": E.config.messages.gameTitle,
             text: () => (0, r.jsxs)("div", {
               className: _.tooltip,
@@ -145,7 +145,7 @@ function w(e) {
               }), (0, r.jsx)(c.Text, {
                 variant: "text-xs/normal",
                 color: "text-muted",
-                children: y.NW.string(y.t.STpNEB)
+                children: y.intl.string(y.t.STpNEB)
               })]
             }),
             children: e => {
@@ -153,7 +153,7 @@ function w(e) {
               return (0, r.jsx)("img", (t = O({}, e), n = n = {
                 className: _.gameTile,
                 alt: E.config.messages.gameTitle,
-                src: (0, b.fh)(E, b.eC.GAME_TILE, M).url
+                src: (0, b.fh)(E, b.eC.GAME_TILE, L).url
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
@@ -174,7 +174,7 @@ function w(e) {
         size: c.PhG.MIN,
         onClick: P,
         className: _.footerCloseButton,
-        children: y.NW.string(y.t.cpT0Cg)
+        children: y.intl.string(y.t.cpT0Cg)
       }), (0, r.jsx)(c.zxk, {
         look: c.iLD.LINK,
         color: c.Ttl.PRIMARY,
@@ -187,7 +187,7 @@ function w(e) {
             impressionId: B
           })
         },
-        children: y.NW.string(y.t["qiS+xs"])
+        children: y.intl.string(y.t["qiS+xs"])
       })]
     })]
   })

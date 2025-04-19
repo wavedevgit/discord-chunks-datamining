@@ -60,7 +60,7 @@ function b(e, t) {
 function y() {
   return (0, r.jsx)(o.IGR, {
     color: l.Z.BG_BRAND,
-    text: p.NW.string(p.t.y2b7CA)
+    text: p.intl.string(p.t.y2b7CA)
   })
 }
 
@@ -76,24 +76,24 @@ function v(e) {
     appContext: S = f.IlC.APP
   } = e, {
     id: T
-  } = t, N = (0, i.e7)([d.default], () => {
+  } = t, A = (0, i.e7)([d.default], () => {
     var e;
     return (null == (e = d.default.getCurrentUser()) ? void 0 : e.id) === T
   }, [T]), {
-    isIgnored: A,
+    isIgnored: N,
     isBlocked: C
   } = (0, i.cj)([u.Z], () => ({
     isIgnored: u.Z.isIgnored(T),
     isBlocked: u.Z.isBlocked(T)
   }), [T]), R = [a.z.IGNORE_USER_NEW_BADGE], [P, w] = (0, c.US)(R), D = P === a.z.IGNORE_USER_NEW_BADGE;
-  return N || C ? null : (0, r.jsx)(o.sNh, {
+  return A || C ? null : (0, r.jsx)(o.sNh, {
     id: "ignore",
     color: "default",
-    label: A ? p.NW.string(p.t["8wXU9P"]) : (0, r.jsxs)("div", {
+    label: N ? p.intl.string(p.t["8wXU9P"]) : (0, r.jsxs)("div", {
       className: h.label,
-      children: [p.NW.string(p.t.ytCpKi), D ? (0, r.jsx)(y, {}) : null]
+      children: [p.intl.string(p.t.ytCpKi), D ? (0, r.jsx)(y, {}) : null]
     }),
-    action: A ? () => {
+    action: N ? () => {
       null == O || O(), s.Z.unignoreUser(T, null != I ? I : "use-ignore-user-item-web", null != m ? m : void 0)
     } : () => {
       D && w(_.L.TAKE_ACTION), (0, o.ZDy)(async () => {

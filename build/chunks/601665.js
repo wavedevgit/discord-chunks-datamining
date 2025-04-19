@@ -27,7 +27,7 @@ var r = n(200651),
   S = n(388032),
   T = n(200669);
 
-function N(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -36,14 +36,14 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      N(e, t, n[t])
+      A(e, t, n[t])
     })
   }
   return e
@@ -53,7 +53,7 @@ function C(e) {
   let {
     user: t,
     currentUser: n,
-    guildId: N,
+    guildId: A,
     channelId: C,
     messageId: R,
     roleId: P,
@@ -67,25 +67,25 @@ function C(e) {
   } = (0, c.ZP)([...M, l.Z.BITE_SIZE_PROFILE_POPOUT]), j = (0, d.ZB)({
     layout: "POPOUT",
     userId: t.id,
-    guildId: N,
+    guildId: A,
     channelId: C,
     messageId: R,
     roleId: P
-  }), U = (0, _.ZP)(t.id, N), G = (0, a.e7)([u.Z], () => null != N ? u.Z.getGuild(N) : null), B = i.useRef(null), F = (0, s.Z)(B);
+  }), U = (0, _.ZP)(t.id, A), G = (0, a.e7)([u.Z], () => null != A ? u.Z.getGuild(A) : null), B = i.useRef(null), F = (0, s.Z)(B);
   i.useEffect(() => {
     null == L || L(null == B ? void 0 : B.current)
   }, [B, L]);
   let V = e => {
-      null == D || D(), (0, y.openUserProfileModal)(A({
+      null == D || D(), (0, y.openUserProfileModal)(N({
         sourceAnalyticsLocations: k,
         hideRestrictedProfile: !0
       }, j, e))
     },
     Z = () => x ? null : (0, r.jsx)(o.sNh, {
       id: "view-profile",
-      label: S.NW.string(S.t["+Xp3ho"]),
+      label: S.intl.string(S.t["+Xp3ho"]),
       action: () => {
-        V(), (0, f.pQ)(A({
+        V(), (0, f.pQ)(N({
           action: "PRESS_VIEW_PROFILE",
           analyticsLocations: k
         }, j))
@@ -110,7 +110,7 @@ function C(e) {
             profileType: I.y0.BITE_SIZE,
             children: (0, r.jsx)(g.Z, {
               user: t,
-              guildId: N,
+              guildId: A,
               viewProfileItem: Z(),
               onCloseProfile: D
             })
@@ -119,12 +119,12 @@ function C(e) {
             children: [(0, r.jsx)(h.Z, {
               user: t,
               displayProfile: U,
-              guildId: N,
+              guildId: A,
               profileType: I.y0.BITE_SIZE
             }), (0, r.jsx)(p.Z, {
               user: t,
               displayProfile: U,
-              guildId: N,
+              guildId: A,
               channelId: C,
               profileType: I.y0.BITE_SIZE,
               onOpenProfile: x ? void 0 : V
@@ -145,7 +145,7 @@ function C(e) {
             onClose: D
           }), (0, r.jsx)(O.Z, {
             user: t,
-            guildId: N,
+            guildId: A,
             channelId: C,
             onClose: D
           })]

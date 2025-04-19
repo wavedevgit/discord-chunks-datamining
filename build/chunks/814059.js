@@ -11,18 +11,18 @@ let s = e => {
   let t = Math.max(0, i()(e).diff(i()(), "s"));
   if (t < 2 * a.Z.Seconds.HOUR) {
     let e = Math.round(t / a.Z.Seconds.MINUTE);
-    return o.NW.formatToPlainString(o.t["2JbxRE"], {
+    return o.intl.formatToPlainString(o.t["2JbxRE"], {
       count: e
     })
   }
   if (t < a.Z.Seconds.DAY) {
     let e = Math.round(t / a.Z.Seconds.HOUR);
-    return o.NW.formatToPlainString(o.t.V9Ebys, {
+    return o.intl.formatToPlainString(o.t.V9Ebys, {
       count: e
     })
   } {
     let e = Math.round(t / a.Z.Seconds.DAY);
-    return o.NW.formatToPlainString(o.t.OQFxHh, {
+    return o.intl.formatToPlainString(o.t.OQFxHh, {
       count: e
     })
   }

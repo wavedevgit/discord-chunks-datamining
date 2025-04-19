@@ -61,7 +61,7 @@ function h(e) {
   return (0, s.q)(t.id), (0, r.jsx)(c.tG, f({
     action: "PRESS_APP_STOREFRONT",
     icon: a.EOn,
-    text: u.NW.string(u.t.V7j5aW),
+    text: u.intl.string(u.t.V7j5aW),
     color: a.Ttl.BRAND,
     themeColor: "none",
     onClick: n

@@ -1,10 +1,10 @@
 /** Chunk was on 99989 **/
-n.d(t, {
+n.d(e, {
   Z: () => E
 }), n(388685);
 var r = n(200651),
-  c = n(192379),
-  l = n(374470),
+  l = n(192379),
+  c = n(374470),
   i = n(442837),
   s = n(481060),
   o = n(295866),
@@ -14,108 +14,108 @@ var r = n(200651),
   p = n(981631),
   b = n(388032);
 
-function f(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
+function f(t) {
+  for (var e = 1; e < arguments.length; e++) {
+    var n = null != arguments[e] ? arguments[e] : {},
       r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
+      return Object.getOwnPropertyDescriptor(n, t).enumerable
+    }))), r.forEach(function(e) {
       var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
+      r = n[e], e in t ? Object.defineProperty(t, e, {
         value: r,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : e[t] = r
+      }) : t[e] = r
     })
   }
-  return e
+  return t
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
+function h(t, e) {
+  return e = null != e ? e : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(e)) : (function(t, e) {
+    var n = Object.keys(t);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
+      var r = Object.getOwnPropertySymbols(t);
       n.push.apply(n, r)
     }
     return n
-  })(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
+  })(Object(e)).forEach(function(n) {
+    Object.defineProperty(t, n, Object.getOwnPropertyDescriptor(e, n))
+  }), t
 }
 
-function E(e) {
+function E(t) {
   let {
-    text: t = "",
+    text: e = "",
     target: n
-  } = e, E = (0, i.e7)([a.Z], () => a.Z.isEnabled()), O = (0, i.e7)([a.Z], () => a.Z.hasLearnedWord(t), [t]), j = c.useRef(h(f({}, e), {
+  } = t, E = (0, i.e7)([a.Z], () => a.Z.isEnabled()), O = (0, i.e7)([a.Z], () => a.Z.hasLearnedWord(e), [e]), j = l.useRef(h(f({}, t), {
     spellcheckEnabled: E
   }));
-  j.current = h(f({}, e), {
+  j.current = h(f({}, t), {
     spellcheckEnabled: E
   });
-  let y = c.useRef(!1),
-    [k, N] = c.useState(!1),
-    [g, m] = c.useState([]),
-    S = c.useCallback(() => {
+  let y = l.useRef(!1),
+    [k, g] = l.useState(!1),
+    [m, S] = l.useState([]),
+    x = l.useCallback(() => {
       let {
-        spellcheckEnabled: e,
-        text: t,
+        spellcheckEnabled: t,
+        text: e,
         onHeightUpdate: n
       } = j.current;
-      e && (0, d.Gb)() && Promise.all([(0, d.f5)(t, !0), (0, d.WA)(t, !0)]).then(e => {
-        let [t, r] = e;
-        y.current && (N(t), m(r), n())
+      t && (0, d.Gb)() && Promise.all([(0, d.f5)(e, !0), (0, d.WA)(e, !0)]).then(t => {
+        let [e, r] = t;
+        y.current && (g(e), S(r), n())
       })
     }, []),
-    x = c.useCallback(() => {
-      if ((0, l.k)(n, HTMLInputElement) || (0, l.k)(n, HTMLTextAreaElement)) {
+    P = l.useCallback(() => {
+      if ((0, c.k)(n, HTMLInputElement) || (0, c.k)(n, HTMLTextAreaElement)) {
         let {
-          selectionStart: e,
-          selectionEnd: t,
+          selectionStart: t,
+          selectionEnd: e,
           value: r
         } = n;
-        n.value = "", n.value = r, "email" !== n.type && (n.selectionStart = e, n.selectionEnd = t)
+        n.value = "", n.value = r, "email" !== n.type && (n.selectionStart = t, n.selectionEnd = e)
       }
     }, [n]);
-  return (c.useEffect(() => {
-    let e = (0, d.RD)(S);
+  return (l.useEffect(() => {
+    let t = (0, d.RD)(x);
     return y.current = !0, () => {
-      y.current = !1, e()
+      y.current = !1, t()
     }
-  }, [S]), c.useEffect(() => {
-    S()
-  }, [t, E, S]), (0, d.Gb)()) ? [g.map((e, t) => (0, r.jsx)(s.sNh, {
-    id: "correction-".concat(t),
-    label: e,
+  }, [x]), l.useEffect(() => {
+    x()
+  }, [e, E, x]), (0, d.Gb)()) ? [m.map((t, e) => (0, r.jsx)(s.sNh, {
+    id: "correction-".concat(e),
+    label: t,
     action: () => {
-      (0, d.Rs)(e), n.focus()
+      (0, d.Rs)(t), n.focus()
     }
-  }, "correction-".concat(t))), (0, r.jsxs)(r.Fragment, {
+  }, "correction-".concat(e))), (0, r.jsxs)(r.Fragment, {
     children: [k ? (0, r.jsx)(s.sNh, {
       id: "add-to-dictionary",
-      label: b.NW.string(b.t.HJmG1N),
+      label: b.intl.string(b.t.HJmG1N),
       action: () => {
-        (0, o.D0)(t), x()
+        (0, o.D0)(e), P()
       }
     }) : null, O && (0, r.jsx)(s.sNh, {
       id: "remove-from-dictionary",
-      label: b.NW.string(b.t.xXqIX1),
+      label: b.intl.string(b.t.xXqIX1),
       action: () => {
-        (0, o.lE)(t), x()
+        (0, o.lE)(e), P()
       }
     }), (0, r.jsx)(s.S89, {
       id: "spellcheck",
-      label: b.NW.string(b.t.TKkotb),
+      label: b.intl.string(b.t.TKkotb),
       checked: E,
       action: () => {
-        (0, o.kY)(), x()
+        (0, o.kY)(), P()
       }
     }), E ? (0, r.jsx)(s.sNh, {
       id: "languages",
-      label: b.NW.string(b.t.OlOHDA),
+      label: b.intl.string(b.t.OlOHDA),
       action: () => window.open(u.Z.getArticleURL(p.BhN.SPELLCHECK))
     }) : null]
   })] : [null, null]

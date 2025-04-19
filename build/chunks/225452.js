@@ -1,15 +1,15 @@
 /** Chunk was on 83051 **/
-r.d(t, {
-  D: () => n
+n.d(t, {
+  D: () => i
 });
 
-function n(e) {
+function i(e) {
   return e.map((e, t) => {
-    var r, n;
+    var n, i;
     return {
       file: e.file,
-      name: null != (n = e.id) ? n : "attachment_".concat(t),
-      filename: null == (r = e.file) ? void 0 : r.name
+      name: null != (i = e.id) ? i : "attachment_".concat(t),
+      filename: null == (n = e.file) ? void 0 : n.name
     }
   })
 }

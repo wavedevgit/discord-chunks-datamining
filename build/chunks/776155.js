@@ -1,19 +1,19 @@
 /** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  Z: () => s
+  Z: () => l
 }), n(388685);
 var r = n(192379),
   i = n(295141);
 
-function s(e) {
-  let [t, n] = r.useState(!0), [s, l] = r.useState(), [a, o] = r.useState(), c = r.useCallback(async e => {
-    n(!0), l(void 0);
+function l(e) {
+  let [t, n] = r.useState(!0), [l, s] = r.useState(), [a, o] = r.useState(), c = r.useCallback(async e => {
+    n(!0), s(void 0);
     try {
       let t = await i.HT(e);
       o(t)
     } catch (e) {
-      l(e)
+      s(e)
     } finally {
       n(!1)
     }
@@ -22,7 +22,7 @@ function s(e) {
     c(e)
   }, [e, c]), {
     isLoading: t,
-    error: s,
+    error: l,
     highlightedCreatorDetails: a
   }
 }

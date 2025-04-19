@@ -18,9 +18,9 @@ let a = function(e) {
   let {
     endDate: t
   } = e, r = Date.now(), i = (0, s.TD)(r, t), a = r > t.getTime(), c = i.days > 0 ? 36e5 : 1e3, h = (0, n.Z)(t, c, void 0, a);
-  return a || Object.values(h).every(e => 0 === e) ? null : h.days > 0 ? o.NW.formatToPlainString(o.t.f0QaSU, {
+  return a || Object.values(h).every(e => 0 === e) ? null : h.days > 0 ? o.intl.formatToPlainString(o.t.f0QaSU, {
     days: h.days
-  }) : o.NW.formatToPlainString(o.t["3MT4MT"], {
+  }) : o.intl.formatToPlainString(o.t["3MT4MT"], {
     hours: l(h.hours),
     minutes: l(h.minutes),
     seconds: l(h.seconds)

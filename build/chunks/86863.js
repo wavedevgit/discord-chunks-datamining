@@ -35,7 +35,7 @@ let h = e => {
     size: l.PhG.SMALL,
     color: l.zxk.Colors.PRIMARY,
     onClick: () => (function(e, t, n) {
-      let i = p.NW.formatToPlainString(p.t.QWGvxM, {
+      let i = p.intl.formatToPlainString(p.t.QWGvxM, {
         applicationName: e.name
       });
       (0, l.h7j)(e => (0, r.jsx)(a.default, function(e) {
@@ -56,11 +56,11 @@ let h = e => {
         }
         return e
       }({
-        title: p.NW.string(p.t.DT39Aw),
+        title: p.intl.string(p.t.DT39Aw),
         body: i,
-        confirmText: p.NW.string(p.t.xUqheH),
+        confirmText: p.intl.string(p.t.xUqheH),
         confirmColor: l.Ttl.RED,
-        cancelText: p.NW.string(p.t["ETE/oK"]),
+        cancelText: p.intl.string(p.t["ETE/oK"]),
         onConfirm: t
       }, e))), u.default.track(d.rMx.APP_MANAGE_CTA_CLICKED, {
         application_id: e.id,
@@ -68,6 +68,6 @@ let h = e => {
         channel_type: n.type
       })
     })(f, b, n),
-    children: p.NW.string(p.t["5S3sQE"])
+    children: p.intl.string(p.t["5S3sQE"])
   })
 }

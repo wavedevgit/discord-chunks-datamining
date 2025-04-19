@@ -7,9 +7,9 @@ n.d(t, {
   _3: () => R,
   _F: () => w,
   _b: () => I,
-  dA: () => A,
+  dA: () => N,
   jZ: () => C,
-  mH: () => N,
+  mH: () => A,
   uk: () => S
 }), n(388685);
 var r = n(192379),
@@ -89,7 +89,7 @@ function T(e, t) {
   }
 }
 
-function N(e, t, n) {
+function A(e, t, n) {
   return {
     content_id: e,
     content_name: I(e),
@@ -98,7 +98,7 @@ function N(e, t, n) {
   }
 }
 
-function A(e) {
+function N(e) {
   let {
     questId: t,
     event: n,
@@ -131,10 +131,10 @@ function R(e) {
     impressionId: o,
     trackGuildAndChannelMetadata: s = !1
   } = e, l = (0, f.qe)(n);
-  A({
+  N({
     questId: t,
     event: m.rMx.QUEST_CONTENT_CLICKED,
-    properties: y(E({}, l, N(n, i, a)), {
+    properties: y(E({}, l, A(n, i, a)), {
       cta_name: r,
       impression_id: o
     }),
@@ -150,10 +150,10 @@ function P(e) {
     mode: r,
     prevMode: i
   } = e;
-  A({
+  N({
     questId: n,
     event: m.rMx.QUEST_BAR_MODE_CHANGED,
-    properties: y(E({}, N(t)), {
+    properties: y(E({}, A(t)), {
       mode: r,
       previous_mode: i
     })
@@ -171,7 +171,7 @@ function w() {
       trackGuildAndChannelMetadata: a = !1,
       shouldExtendSession: o = !1
     } = t;
-    A({
+    N({
       questId: n,
       event: r,
       properties: y(E({}, i), {
@@ -198,7 +198,7 @@ function D() {
     e({
       questId: n,
       event: m.rMx.QUEST_CONTENT_CLICKED,
-      properties: y(E({}, (0, f.eE)(l), N(r, a, o)), {
+      properties: y(E({}, (0, f.eE)(l), A(r, a, o)), {
         cta_name: i
       }),
       trackGuildAndChannelMetadata: s,

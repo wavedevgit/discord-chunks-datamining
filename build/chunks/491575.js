@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => y
+  Z: () => I
 });
 var r = n(200651),
   i = n(192379),
@@ -20,8 +20,8 @@ var r = n(200651),
   _ = n(145604),
   E = n(718813),
   O = n(981631),
-  N = n(273034);
-let y = i.memo(function() {
+  y = n(273034);
+let I = i.memo(function() {
   let e = i.useRef(null),
     t = i.useCallback(t => {
       let {
@@ -38,9 +38,9 @@ let y = i.memo(function() {
     b.S.unsubscribe(O.CkL.SHAKE_APP, t)
   }), [t]), (0, h.Z)(), (0, r.jsxs)(o.F0h, {
     ref: e,
-    className: N.app,
+    className: y.app,
     children: [(0, r.jsx)(E.Z, {
-      className: N.layers,
+      className: y.layers,
       children: (0, r.jsx)(s.Z, {})
     }), (0, r.jsx)(f.Z, {}), (0, r.jsx)(c.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(g.Z, {}), (0, r.jsx)(o.c43, {})]
   })

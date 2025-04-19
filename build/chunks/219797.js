@@ -1,17 +1,17 @@
 /** Chunk was on 48157 **/
 n.d(t, {
-  L9: () => I,
-  ZK: () => S,
-  d4: () => C,
+  L9: () => N,
+  ZK: () => I,
+  d4: () => S,
   dS: () => E,
-  jY: () => j,
-  q7: () => N,
+  jY: () => C,
+  q7: () => j,
   vZ: () => O
 }), n(953529), n(997841);
 var r = n(200651),
   i = n(192379),
-  a = n(442837),
-  l = n(993365),
+  l = n(442837),
+  a = n(993365),
   o = n(981729),
   s = n(481060),
   c = n(543651),
@@ -88,18 +88,18 @@ function E(e) {
 function O(e) {
   var t;
   let n = e.item.originalItem,
-    a = i.useCallback(() => {
+    l = i.useCallback(() => {
       var e;
       return (0, m.yE)(null != (e = n.flags) ? e : 0, _.J0y.IS_CLIP) ? (0, r.jsxs)(o.DY, {
-        text: b.NW.string(b.t["/fgfWl"]),
+        text: b.intl.string(b.t["/fgfWl"]),
         className: x.clipPill,
         children: [(0, r.jsx)(s.AlX, {
           size: "xs",
           color: "currentColor"
-        }), (0, r.jsx)(l.x, {
+        }), (0, r.jsx)(a.x, {
           variant: "text-xs/semibold",
           color: "always-white",
-          children: b.NW.string(b.t.oA4afH)
+          children: b.intl.string(b.t.oA4afH)
         })]
       }) : null
     }, [n]),
@@ -113,7 +113,7 @@ function O(e) {
     placeholder: n.placeholder,
     placeholderVersion: n.placeholder_version,
     srcIsAnimated: (0, m.yE)(null != (t = n.flags) ? t : 0, _.J0y.IS_ANIMATED),
-    renderOverlayContent: a,
+    renderOverlayContent: l,
     sourceMetadata: {
       message: e.message,
       identifier: {
@@ -126,7 +126,7 @@ function O(e) {
   })))
 }
 
-function N(e) {
+function j(e) {
   let t = e.item.originalItem;
   return (0, g.hX)(v(y({}, e), {
     fileSize: t.size,
@@ -135,14 +135,14 @@ function N(e) {
   }))
 }
 
-function j(e) {
+function C(e) {
   let {
     message: t,
     item: n
-  } = e, r = n.originalItem, a = i.useCallback((e, n, i) => {
-    var a;
-    (0, u.tb)(t.id, null != (a = r.duration_secs) ? a : null, n, t.author.id)
-  }, [t, r.duration_secs]), l = i.useCallback((e, n) => {
+  } = e, r = n.originalItem, l = i.useCallback((e, n, i) => {
+    var l;
+    (0, u.tb)(t.id, null != (l = r.duration_secs) ? l : null, n, t.author.id)
+  }, [t, r.duration_secs]), a = i.useCallback((e, n) => {
     var i;
     (0, u.EW)(t.id, null != (i = r.duration_secs) ? i : null, e, t.author.id, n)
   }, [t, r.duration_secs]), o = i.useCallback(e => {
@@ -155,13 +155,13 @@ function j(e) {
     src: r.url,
     durationSecs: r.duration_secs,
     waveform: r.waveform,
-    onPlay: a,
-    onPause: l,
+    onPlay: l,
+    onPause: a,
     onError: o
   }))
 }
 
-function C(e) {
+function S(e) {
   let t = e.item.originalItem;
   return (0, g.xi)(v(y({}, e), {
     url: t.url,
@@ -171,7 +171,7 @@ function C(e) {
   }))
 }
 
-function S(e) {
+function I(e) {
   let t = e.item.originalItem;
   return (0, g.ur)(v(y({}, e), {
     url: t.url,
@@ -180,7 +180,7 @@ function S(e) {
   }))
 }
 
-function I(e) {
+function N(e) {
   return "CLIP" === e.item.type ? (0, r.jsx)(T, {
     attachment: e.item.originalItem,
     message: e.message
@@ -192,9 +192,9 @@ function T(e) {
   let {
     attachment: n,
     message: i
-  } = e, l = i.channel_id, o = (0, a.e7)([d.Z], () => {
+  } = e, a = i.channel_id, o = (0, l.e7)([d.Z], () => {
     var e;
-    return null == (e = d.Z.getBasicChannel(l)) ? void 0 : e.guild_id
+    return null == (e = d.Z.getBasicChannel(a)) ? void 0 : e.guild_id
   }), {
     clip_created_at: s,
     clip_participants: u,

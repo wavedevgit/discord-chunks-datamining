@@ -22,7 +22,7 @@ function u(e, t) {
     children: (0, r.jsx)(l.sNh, {
       id: "report-app",
       color: "danger",
-      label: c.NW.string(c.t.NgA5vr),
+      label: c.intl.string(c.t.NgA5vr),
       action: () => (0, a.uu)({
         application: e,
         entrypoint: "activity_ui_channel_call",

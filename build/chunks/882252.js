@@ -33,7 +33,7 @@ let f = () => ({
   minutes: c.t.nFt9cn,
   hours: c.t.jzCewc,
   days: c.t.U4I0s7,
-  month: c.NW.string(c.t["nBNJ/P"])
+  month: c.intl.string(c.t["nBNJ/P"])
 });
 
 function _(e, t) {

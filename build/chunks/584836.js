@@ -13,7 +13,7 @@ var o = n(481060),
 function a(e, t) {
   return t === l.IlC.POPOUT ? null : (0, r.jsx)(o.sNh, {
     id: "nav-server-settings",
-    label: u.NW.string(u.t["154/bG"]),
+    label: u.intl.string(u.t["154/bG"]),
     action: () => {
       (0, i.xf)(), c.Z.open(e, l.pNK.MODERATION)
     }

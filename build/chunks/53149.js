@@ -1,56 +1,56 @@
 /** Chunk was on 83545 **/
-e.d(n, {
+i.d(n, {
   default: () => u
 });
-var s = e(200651);
-e(192379);
-var i = e(442837),
-  a = e(481060),
-  o = e(87051),
-  l = e(9156),
-  r = e(621600),
-  c = e(388032),
-  d = e(278502);
+var e = i(200651);
+i(192379);
+var s = i(442837),
+  a = i(481060),
+  l = i(87051),
+  o = i(9156),
+  r = i(621600),
+  c = i(388032),
+  d = i(278502);
 let u = t => {
   let {
     onClose: n,
-    channelId: e,
+    channelId: i,
     transitionState: u
-  } = t, x = (0, i.e7)([l.ZP], () => l.ZP.isChannelMuted(null, e));
-  return (0, s.jsxs)(a.Y0X, {
+  } = t, x = (0, s.e7)([o.ZP], () => o.ZP.isChannelMuted(null, i));
+  return (0, e.jsxs)(a.Y0X, {
     transitionState: u,
     size: a.CgR.SMALL,
-    "aria-label": c.NW.string(c.t.uAmAiI),
-    children: [(0, s.jsx)(a.olH, {
+    "aria-label": c.intl.string(c.t.uAmAiI),
+    children: [(0, e.jsx)(a.olH, {
       className: d.closeButton,
       onClick: n
-    }), (0, s.jsxs)(a.hzk, {
+    }), (0, e.jsxs)(a.hzk, {
       className: d.content,
-      children: [(0, s.jsx)("div", {
+      children: [(0, e.jsx)("div", {
         className: d.iconContainer,
-        children: x ? (0, s.jsx)(a.owu, {
+        children: x ? (0, e.jsx)(a.owu, {
           size: "md"
-        }) : (0, s.jsx)(a.Dkj, {
+        }) : (0, e.jsx)(a.Dkj, {
           size: "md"
         })
-      }), (0, s.jsx)(a.X6q, {
+      }), (0, e.jsx)(a.X6q, {
         className: d.heading,
         variant: "heading-xl/bold",
-        children: x ? c.NW.string(c.t["4rg7cH"]) : c.NW.string(c.t.uAmAiI)
-      }), (0, s.jsx)(a.Text, {
+        children: x ? c.intl.string(c.t["4rg7cH"]) : c.intl.string(c.t.uAmAiI)
+      }), (0, e.jsx)(a.Text, {
         className: d.infoText,
         variant: "text-md/normal",
         color: "text-normal",
-        children: x ? c.NW.string(c.t["5vton5"]) : c.NW.string(c.t.mscFJS)
-      }), (0, s.jsx)(a.zxk, {
+        children: x ? c.intl.string(c.t["5vton5"]) : c.intl.string(c.t.mscFJS)
+      }), (0, e.jsx)(a.zxk, {
         className: d.button,
         color: x ? a.zxk.Colors.PRIMARY : a.zxk.Colors.RED,
         onClick: () => {
-          o.Z.updateChannelOverrideSettings(null, e, {
+          l.Z.updateChannelOverrideSettings(null, i, {
             muted: !x
           }, x ? r.ZB.Unmuted : r.ZB.Muted), n()
         },
-        children: x ? c.NW.string(c.t.YqAjX1) : c.NW.string(c.t["w4m94+"])
+        children: x ? c.intl.string(c.t.YqAjX1) : c.intl.string(c.t["w4m94+"])
       })]
     })]
   })

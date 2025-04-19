@@ -1,7 +1,7 @@
 /** Chunk was on 95468 **/
 n.d(t, {
-  Z: () => r,
-  b: () => i
+  Z: () => i,
+  b: () => r
 });
 let l = (0, n(818083).B)({
     kind: "user",
@@ -18,9 +18,9 @@ let l = (0, n(818083).B)({
       }
     }]
   }),
-  r = l;
+  i = l;
 
-function i() {
+function r() {
   return l.getCurrentConfig({
     location: "68acbb_1"
   }, {

@@ -26,7 +26,7 @@ function _(e) {
   a()(null != i, "Expected selectedSkuId"), a()(null != _, "Expected application");
   let p = n[i];
   a()(null != p, "Expected sku");
-  let h = d.NW.formatToPlainString(d.t.wK0IbG, {
+  let h = d.intl.formatToPlainString(d.t.wK0IbG, {
     applicationName: _.name,
     itemName: p.name
   });
@@ -44,7 +44,7 @@ function _(e) {
         className: f.divider
       }), (0, r.jsx)(o.zxk, {
         onClick: t,
-        children: d.NW.string(d.t.cpT0Cg)
+        children: d.intl.string(d.t.cpT0Cg)
       })]
     })]
   })

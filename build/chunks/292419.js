@@ -24,7 +24,7 @@ let f = (e, t) => ({
       size: 48
     }) : void 0
   }),
-  _ = e => (null == e ? void 0 : e.errorCode) === 429 ? d.NW.string(d.t.fitPBQ) : d.NW.string(d.t.VCsUJi),
+  _ = e => (null == e ? void 0 : e.errorCode) === 429 ? d.intl.string(d.t.fitPBQ) : d.intl.string(d.t.VCsUJi),
   p = (e, t, n) => {
     let r = (null == e ? void 0 : e.data.interactionType) === i.B8.MESSAGE_COMPONENT && (null == e ? void 0 : e.state) === a.F.FAILED ? e.data.componentId : null;
     if (null != (null != r ? E(n, r) : null)) {
@@ -140,7 +140,7 @@ function v(e, t, n) {
           default: e.default,
           description: e.description,
           emoji: null != e.emoji ? f(e.emoji, y) : void 0
-        })), placeholder: null != (a = e.placeholder) ? a : d.NW.string(d.t.Otr6W1), minValues: e.min_values, maxValues: e.max_values
+        })), placeholder: null != (a = e.placeholder) ? a : d.intl.string(d.t.Otr6W1), minValues: e.min_values, maxValues: e.max_values
       };
     case i.re.TEXT_INPUT:
       return {
@@ -148,19 +148,19 @@ function v(e, t, n) {
       };
     case i.re.USER_SELECT:
       return {
-        type: i.re.USER_SELECT, id: O(n), customId: e.custom_id, disabled: e.disabled, placeholder: null != (u = e.placeholder) ? u : d.NW.string(d.t.Otr6W1), minValues: e.min_values, maxValues: e.max_values, defaultValues: e.default_values
+        type: i.re.USER_SELECT, id: O(n), customId: e.custom_id, disabled: e.disabled, placeholder: null != (u = e.placeholder) ? u : d.intl.string(d.t.Otr6W1), minValues: e.min_values, maxValues: e.max_values, defaultValues: e.default_values
       };
     case i.re.ROLE_SELECT:
       return {
-        type: i.re.ROLE_SELECT, id: O(n), customId: e.custom_id, disabled: e.disabled, placeholder: null != (_ = e.placeholder) ? _ : d.NW.string(d.t.Otr6W1), minValues: e.min_values, maxValues: e.max_values, defaultValues: e.default_values
+        type: i.re.ROLE_SELECT, id: O(n), customId: e.custom_id, disabled: e.disabled, placeholder: null != (_ = e.placeholder) ? _ : d.intl.string(d.t.Otr6W1), minValues: e.min_values, maxValues: e.max_values, defaultValues: e.default_values
       };
     case i.re.MENTIONABLE_SELECT:
       return {
-        type: i.re.MENTIONABLE_SELECT, id: O(n), customId: e.custom_id, disabled: e.disabled, placeholder: null != (p = e.placeholder) ? p : d.NW.string(d.t.Otr6W1), minValues: e.min_values, maxValues: e.max_values, defaultValues: e.default_values
+        type: i.re.MENTIONABLE_SELECT, id: O(n), customId: e.custom_id, disabled: e.disabled, placeholder: null != (p = e.placeholder) ? p : d.intl.string(d.t.Otr6W1), minValues: e.min_values, maxValues: e.max_values, defaultValues: e.default_values
       };
     case i.re.CHANNEL_SELECT:
       return {
-        type: i.re.CHANNEL_SELECT, id: O(n), customId: e.custom_id, disabled: e.disabled, placeholder: null != (m = e.placeholder) ? m : d.NW.string(d.t.Otr6W1), minValues: e.min_values, maxValues: e.max_values, channelTypes: e.channel_types, defaultValues: e.default_values
+        type: i.re.CHANNEL_SELECT, id: O(n), customId: e.custom_id, disabled: e.disabled, placeholder: null != (m = e.placeholder) ? m : d.intl.string(d.t.Otr6W1), minValues: e.min_values, maxValues: e.max_values, channelTypes: e.channel_types, defaultValues: e.default_values
       };
     case i.re.SECTION: {
       let t = e.components.map((e, t) => b(e, t)).filter(l.lm),

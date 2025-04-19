@@ -4,8 +4,8 @@ n.d(e, {
 }), n(415506);
 var i = n(570140),
   r = n(710845),
-  o = n(209492),
-  l = n(981631);
+  l = n(209492),
+  o = n(981631);
 let a = new r.Z("CloudSync");
 class s {
   constructor(t) {
@@ -26,14 +26,14 @@ async function c(t, e) {
     branchId: e
   });
   try {
-    if ((n = await o.j(t, e, r)).type === l.QCD.CONFLICT) throw i.Z.dispatch({
+    if ((n = await l.j(t, e, r)).type === o.QCD.CONFLICT) throw i.Z.dispatch({
       type: "GAME_CLOUD_SYNC_CONFLICT",
       applicationId: t,
       branchId: e,
       next: n.next,
       remote: n.remote
     }), new s("Conflict in cloud sync.");
-    (n.type === l.QCD.PULL || n.type === l.QCD.PUSH) && a.info("Sync complete", n)
+    (n.type === o.QCD.PULL || n.type === o.QCD.PUSH) && a.info("Sync complete", n)
   } catch (n) {
     if (n instanceof s) throw n;
     throw i.Z.dispatch({

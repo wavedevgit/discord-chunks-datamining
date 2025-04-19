@@ -99,7 +99,7 @@ function y(e, t) {
       return n;
     case "utf8":
     case "utf-8":
-      return Y(e).length;
+      return W(e).length;
     case "ucs2":
     case "ucs-2":
     case "utf16le":
@@ -110,7 +110,7 @@ function y(e, t) {
     case "base64":
       return q(e).length;
     default:
-      if (i) return r ? -1 : Y(e).length;
+      if (i) return r ? -1 : W(e).length;
       t = ("" + t).toLowerCase(), i = !0
   }
 }
@@ -208,16 +208,16 @@ function T(e, t, n, r) {
   return o
 }
 
-function N(e, t, n, r) {
-  return Q(Y(t, e.length - n), e, n, r)
+function A(e, t, n, r) {
+  return Q(W(t, e.length - n), e, n, r)
 }
 
-function A(e, t, n, r) {
+function N(e, t, n, r) {
   return Q(K(t), e, n, r)
 }
 
 function C(e, t, n, r) {
-  return A(e, t, n, r)
+  return N(e, t, n, r)
 }
 
 function R(e, t, n, r) {
@@ -381,9 +381,9 @@ r = 0x7fffffff, c.TYPED_ARRAY_SUPPORT = function e() {
       return T(this, e, t, n);
     case "utf8":
     case "utf-8":
-      return N(this, e, t, n);
-    case "ascii":
       return A(this, e, t, n);
+    case "ascii":
+      return N(this, e, t, n);
     case "latin1":
     case "binary":
       return C(this, e, t, n);
@@ -616,13 +616,13 @@ c.prototype.slice = function(e, t) {
 };
 var H = /[^+/0-9A-Za-z-_]/g;
 
-function W(e) {
+function Y(e) {
   if ((e = (e = e.split("=")[0]).trim().replace(H, "")).length < 2) return "";
   for (; e.length % 4 != 0;) e += "=";
   return e
 }
 
-function Y(e, t) {
+function W(e, t) {
   t = t || 1 / 0;
   for (var n, r = e.length, i = null, a = [], o = 0; o < r; ++o) {
     if ((n = e.charCodeAt(o)) > 55295 && n < 57344) {
@@ -668,7 +668,7 @@ function z(e, t) {
 }
 
 function q(e) {
-  return i.toByteArray(W(e))
+  return i.toByteArray(Y(e))
 }
 
 function Q(e, t, n, r) {

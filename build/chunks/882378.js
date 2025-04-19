@@ -21,9 +21,9 @@ var r = n(200651),
 let y = i.memo(function(e) {
   let {
     channel: t
-  } = e, y = (0, u.h)(t.id), C = (0, d.o)(t.id), x = (0, p.M)(t.id), v = (0, o.f9)(), j = (0, l.e7)([f.Z], () => f.Z.hasLayers()), O = i.useCallback(() => C ? b.NW.string(b.t["16QyDg"]) : null != x ? b.NW.string(b.t.kCN9i4) : null, [C, x]), E = i.useMemo(() => (C || null != x) && !v && !j, [C, x, v, j]), [N, I] = i.useState(O());
+  } = e, y = (0, u.h)(t.id), C = (0, d.o)(t.id), x = (0, p.M)(t.id), v = (0, o.f9)(), j = (0, l.e7)([f.Z], () => f.Z.hasLayers()), O = i.useCallback(() => C ? b.intl.string(b.t["16QyDg"]) : null != x ? b.intl.string(b.t.kCN9i4) : null, [C, x]), E = i.useMemo(() => (C || null != x) && !v && !j, [C, x, v, j]), [I, P] = i.useState(O());
   i.useEffect(() => {
-    null != x && null != y && (a.uvj.announce(b.NW.string(b.t.acsXuL)), setTimeout(() => {
+    null != x && null != y && (a.uvj.announce(b.intl.string(b.t.acsXuL)), setTimeout(() => {
       (0, c.T)(t.id, [x.id])
     }, 5e3), (0, h.KQ)({
       channelId: t.id,
@@ -32,7 +32,7 @@ let y = i.memo(function(e) {
       warningType: x.type,
       isNudgeWarning: null != x,
       viewName: h.pb.SAFETY_TOOLS_NUDGE_TOOLTIP
-    })), C && (a.uvj.announce(b.NW.string(b.t["1dxCqK"])), setTimeout(() => {
+    })), C && (a.uvj.announce(b.intl.string(b.t["1dxCqK"])), setTimeout(() => {
       (0, c.Ot)(t.id)
     }, 5e3))
   }, [t, x, y, C]), (0, s.ZP)(() => {
@@ -46,9 +46,9 @@ let y = i.memo(function(e) {
     })
   }), i.useEffect(() => {
     let e = O();
-    null != e && I(e)
+    null != e && P(e)
   }, [C, x, O]);
-  let P = i.useCallback(() => {
+  let S = i.useCallback(() => {
     null != x && (0, c.T)(t.id, [x.id]), null != y && ((0, a.ZDy)(async () => {
       let {
         default: e
@@ -80,15 +80,15 @@ let y = i.memo(function(e) {
   }, [x, y, t]);
   return null == y ? null : (0, r.jsx)(a.ua7, {
     forceOpen: E,
-    text: N,
+    text: I,
     color: a.FGA.BRAND,
     position: "bottom",
     tooltipClassName: _.tooltip,
     tooltipContentClassName: _.tooltipContent,
     children: () => (0, r.jsx)(m.ZP.Icon, {
       icon: a.b7C,
-      onClick: P,
-      tooltip: b.NW.string(b.t.rpc2qq),
+      onClick: S,
+      tooltip: b.intl.string(b.t.rpc2qq),
       tooltipDisabled: null != x
     })
   })

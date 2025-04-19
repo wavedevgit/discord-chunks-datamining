@@ -107,14 +107,14 @@ let y = Object.freeze({
             className: s()(_.icon, {
               [_.visible]: !t
             }),
-            "aria-label": f.NW.string(f.t["5h0QOD"])
+            "aria-label": f.intl.string(f.t["5h0QOD"])
           }), (0, i.jsx)(d.Dio, {
             size: "md",
             color: "currentColor",
             className: s()(_.clear, {
               [_.visible]: t
             }),
-            "aria-label": f.NW.string(f.t.VkKicX)
+            "aria-label": f.intl.string(f.t.VkKicX)
           })]
         })
       })
@@ -141,7 +141,7 @@ class O extends(r = a.PureComponent) {
         autoFocus: n,
         onClear: r,
         className: a,
-        placeholder: o = f.NW.string(f.t["5h0QOD"]),
+        placeholder: o = f.intl.string(f.t["5h0QOD"]),
         iconClassName: l,
         onKeyDown: u,
         onKeyUp: d,
@@ -153,9 +153,9 @@ class O extends(r = a.PureComponent) {
         onBlur: I,
         onFocus: S,
         autoComplete: T,
-        inputProps: N,
-        hideSearchIcon: A,
-        "aria-label": C = f.NW.string(f.t["5h0QOD"])
+        inputProps: A,
+        hideSearchIcon: N,
+        "aria-label": C = f.intl.string(f.t["5h0QOD"])
       } = e,
       R = E(e, ["query", "autoFocus", "onClear", "className", "placeholder", "iconClassName", "onKeyDown", "onKeyUp", "onKeyPress", "isLoading", "size", "disabled", "onChange", "onBlur", "onFocus", "autoComplete", "inputProps", "hideSearchIcon", "aria-label"]);
     return (0, i.jsx)(c.t, {
@@ -169,7 +169,7 @@ class O extends(r = a.PureComponent) {
       }, R), {
         children: (0, i.jsxs)("div", {
           className: _.inner,
-          children: [(0, i.jsx)("input", g(h({}, N), {
+          children: [(0, i.jsx)("input", g(h({}, A), {
             onFocus: S,
             onBlur: I,
             className: _.input,
@@ -184,7 +184,7 @@ class O extends(r = a.PureComponent) {
             autoComplete: T,
             "aria-label": C,
             ref: this.inputRef
-          })), !A && (0, i.jsx)(v, {
+          })), !N && (0, i.jsx)(v, {
             size: b,
             hasContent: t.length > 0,
             onClear: r,

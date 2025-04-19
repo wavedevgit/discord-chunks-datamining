@@ -44,14 +44,14 @@ let g = () => {
     null !== E.current && ((0, o.Mr3)(E.current), E.current = null)
   }
   return i.useEffect(() => (g ? E.current = (0, o.h7j)(e => (0, r.jsx)(l.default, m({
-    title: p.NW.string(p.t.eotlXF),
-    body: p.NW.formatToPlainString(p.t.Lw6KXV, {
+    title: p.intl.string(p.t.eotlXF),
+    body: p.intl.formatToPlainString(p.t.Lw6KXV, {
       game: null == t ? void 0 : t.name
     }),
-    secondaryConfirmText: p.NW.string(p.t["5E9SBw"]),
+    secondaryConfirmText: p.intl.string(p.t["5E9SBw"]),
     onConfirmSecondary: () => s.Z.clearPTTAdminWarning(),
     onConfirm: () => window.open(f.Z.getArticleURL(_.BhN.PUSH_TO_TALK_ADMINISTRATOR_MODE), "_blank"),
-    confirmText: p.NW.string(p.t.psXQHB)
+    confirmText: p.intl.string(p.t.psXQHB)
   }, e))) : b(), () => {
     b()
   }), [t, g]), null

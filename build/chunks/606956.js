@@ -2,10 +2,10 @@
 s.d(n, {
   Z: () => u
 });
-var t, l, o, i = s(442837),
+var t, l, i, o = s(442837),
   a = s(570140);
 let r = {};
-class c extends(o = i.ZP.Store) {
+class c extends(i = o.ZP.Store) {
   getFollowerStatsForChannel(e) {
     return r[e]
   }

@@ -1,7 +1,7 @@
 /** Chunk was on 64040 **/
 n.d(t, {
-  E: () => N,
-  Z: () => P
+  E: () => P,
+  Z: () => w
 }), n(388685), n(539854);
 var r, i = n(200651),
   l = n(192379),
@@ -46,52 +46,52 @@ function S(e) {
 }
 let x = {
   [O.vxO.INSTALLING]: {
-    [f.J6.NONE]: (e, t) => v.NW.formatToPlainString(v.t["p+2sEx"], {
+    [f.J6.NONE]: (e, t) => v.intl.formatToPlainString(v.t["p+2sEx"], {
       name: e
     }),
-    [f.J6.SECONDS]: (e, t) => v.NW.formatToPlainString(v.t["/0NgPD"], {
+    [f.J6.SECONDS]: (e, t) => v.intl.formatToPlainString(v.t["/0NgPD"], {
       name: e,
       timeRemaining: t
     }),
-    [f.J6.MINUTES]: (e, t) => v.NW.formatToPlainString(v.t.ZIwMzs, {
+    [f.J6.MINUTES]: (e, t) => v.intl.formatToPlainString(v.t.ZIwMzs, {
       name: e,
       timeRemaining: t
     }),
-    [f.J6.HOURS]: (e, t) => v.NW.formatToPlainString(v.t["3IQDUl"], {
+    [f.J6.HOURS]: (e, t) => v.intl.formatToPlainString(v.t["3IQDUl"], {
       name: e,
       timeRemaining: t
     })
   },
   [O.vxO.UPDATING]: {
-    [f.J6.NONE]: (e, t) => v.NW.formatToPlainString(v.t["6F9QzM"], {
+    [f.J6.NONE]: (e, t) => v.intl.formatToPlainString(v.t["6F9QzM"], {
       name: e
     }),
-    [f.J6.SECONDS]: (e, t) => v.NW.formatToPlainString(v.t["2OVgVl"], {
+    [f.J6.SECONDS]: (e, t) => v.intl.formatToPlainString(v.t["2OVgVl"], {
       name: e,
       timeRemaining: t
     }),
-    [f.J6.MINUTES]: (e, t) => v.NW.formatToPlainString(v.t.mgQg1N, {
+    [f.J6.MINUTES]: (e, t) => v.intl.formatToPlainString(v.t.mgQg1N, {
       name: e,
       timeRemaining: t
     }),
-    [f.J6.HOURS]: (e, t) => v.NW.formatToPlainString(v.t["aTdq4+"], {
+    [f.J6.HOURS]: (e, t) => v.intl.formatToPlainString(v.t["aTdq4+"], {
       name: e,
       timeRemaining: t
     })
   },
   [O.vxO.REPAIRING]: {
-    [f.J6.NONE]: (e, t) => v.NW.formatToPlainString(v.t["p+2sEx"], {
+    [f.J6.NONE]: (e, t) => v.intl.formatToPlainString(v.t["p+2sEx"], {
       name: e
     }),
-    [f.J6.SECONDS]: (e, t) => v.NW.formatToPlainString(v.t["/0NgPD"], {
+    [f.J6.SECONDS]: (e, t) => v.intl.formatToPlainString(v.t["/0NgPD"], {
       name: e,
       timeRemaining: t
     }),
-    [f.J6.MINUTES]: (e, t) => v.NW.formatToPlainString(v.t.ZIwMzs, {
+    [f.J6.MINUTES]: (e, t) => v.intl.formatToPlainString(v.t.ZIwMzs, {
       name: e,
       timeRemaining: t
     }),
-    [f.J6.HOURS]: (e, t) => v.NW.formatToPlainString(v.t["3IQDUl"], {
+    [f.J6.HOURS]: (e, t) => v.intl.formatToPlainString(v.t["3IQDUl"], {
       name: e,
       timeRemaining: t
     })
@@ -104,7 +104,7 @@ class E extends l.PureComponent {
       isPaused: t
     } = this.props;
     if (e.type === O.vxO.UPDATING || e.type === O.vxO.REPAIRING || e.type === O.vxO.INSTALLING) {
-      if (t) return v.NW.string(v.t["5oxtFR"]);
+      if (t) return v.intl.string(v.t["5oxtFR"]);
       else if (e.stage === O.f07.PATCHING || e.stage === O.f07.REPAIRING) return (0, i.jsx)(_.Z, {
         getHistoricalTotalBytes: m.Z.getHistoricalTotalBytesWritten,
         updateInterval: 5e3,
@@ -115,7 +115,7 @@ class E extends l.PureComponent {
   }
   render() {
     let e = this.renderText();
-    return null != e ? e : v.NW.string(v.t.cw57am)
+    return null != e ? e : v.intl.string(v.t.cw57am)
   }
   constructor(...e) {
     super(...e), j(this, "renderProgressBody", (e, t) => {
@@ -167,7 +167,7 @@ class I extends(r = l.PureComponent) {
       firstState: t,
       isPaused: n
     } = this.props;
-    return null == e || null == t ? v.NW.string(v.t.cw57am) : (0, i.jsx)(E, {
+    return null == e || null == t ? v.intl.string(v.t.cw57am) : (0, i.jsx)(E, {
       application: e,
       state: t,
       isPaused: n
@@ -229,7 +229,7 @@ class I extends(r = l.PureComponent) {
   }
 }
 
-function N(e, t) {
+function P(e, t) {
   return e.reduce((e, n) => {
     let {
       applicationId: r,
@@ -241,9 +241,9 @@ function N(e, t) {
 j(I, "defaultProps", {
   strokeSize: h._3P.StrokeSizes.MEDIUM
 });
-let P = c.ZP.connectStores([b.Z, m.Z, p.Z], () => {
+let w = c.ZP.connectStores([b.Z, m.Z, p.Z], () => {
   let e = b.Z.activeItems,
-    t = N(e, m.Z),
+    t = P(e, m.Z),
     {
       total: n,
       progress: r

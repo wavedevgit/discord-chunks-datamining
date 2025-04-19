@@ -54,7 +54,7 @@ function T(e) {
   return e
 }
 
-function N(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -65,8 +65,8 @@ function N(e, t) {
   return n
 }
 
-function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
+function N(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -114,7 +114,7 @@ function L(e) {
       returnRef: O,
       animation: S = "default"
     } = e,
-    N = C(e, ["transitionState", "children", "size", "role", "className", "fullscreenOnMobile", "hideShadow", "onAnimationEnd", "returnRef", "animation"]);
+    A = C(e, ["transitionState", "children", "size", "role", "className", "fullscreenOnMobile", "hideShadow", "onAnimationEnd", "returnRef", "animation"]);
   let R = n === y.Dv.ENTERING || n === y.Dv.ENTERED,
     {
       reducedMotion: P
@@ -130,23 +130,23 @@ function L(e) {
       onRest: b
     }, "animate-always"),
     L = i.useRef(null),
-    x = null != N["aria-label"],
-    M = null != N["aria-labelledby"],
+    x = null != A["aria-label"],
+    M = null != A["aria-labelledby"],
     k = i.useId(),
-    j = null != (t = N["aria-labelledby"]) ? t : k,
+    j = null != (t = A["aria-labelledby"]) ? t : k,
     U = i.useMemo(() => ({
       headerId: j,
       headerIdIsManaged: M
     }), [j, M]);
   return (0, r.jsx)(y.zM.Provider, {
     value: U,
-    children: (0, r.jsx)(_.V, A(T({
+    children: (0, r.jsx)(_.V, N(T({
       className: I.focusLock,
       role: h,
       returnRef: O,
       impressionType: l.ImpressionTypes.MODAL,
       "aria-labelledby": x ? void 0 : U.headerId
-    }, N), {
+    }, A), {
       children: (0, r.jsx)(s.animated.div, {
         className: o()(m, I.root, w[f], {
           [I.fullscreenOnMobile]: g,
@@ -202,7 +202,7 @@ function k(e) {
     scrollerRef: i,
     scrollbarType: a
   } = e, s = C(e, ["className", "children", "scrollerRef", "scrollbarType"]), l = M(a);
-  return (0, r.jsx)(l, A(T({
+  return (0, r.jsx)(l, N(T({
     className: o()(I.content, t),
     ref: i
   }, s), {
@@ -233,7 +233,7 @@ function j(e) {
 function U(e) {
   return (0, r.jsx)(f.zx, {
     focusProps: e.focusProps,
-    "aria-label": O.NW.string(O.t.cpT0Cg),
+    "aria-label": O.intl.string(O.t.cpT0Cg),
     look: f.zx.Looks.BLANK,
     size: f.zx.Sizes.NONE,
     onClick: e.onClick,

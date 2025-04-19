@@ -5,8 +5,8 @@ n.d(t, {
 }), n(953529);
 var r = n(200651),
   i = n(192379),
-  s = n(120356),
-  l = n.n(s),
+  l = n(120356),
+  s = n.n(l),
   a = n(481060),
   o = n(603211),
   c = n(734893),
@@ -51,21 +51,21 @@ function x(e, t) {
 let b = function(e) {
   let {
     guildId: t,
-    resourceChannel: s,
+    resourceChannel: l,
     index: b,
     onDragComplete: j,
-    onDragStart: N,
-    onDragReset: _
+    onDragStart: _,
+    onDragReset: v
   } = e, {
-    title: v,
-    channelId: O,
-    description: C
-  } = s, y = d.Z.getChannel(O), I = null;
-  null != y && (0, c.k3)(y) || (I = p.NW.string(p.t.kTdL8f));
-  let E = null == C || 0 === C.length,
+    title: O,
+    channelId: C,
+    description: y
+  } = l, N = d.Z.getChannel(C), I = null;
+  null != N && (0, c.k3)(N) || (I = p.intl.string(p.t.kTdL8f));
+  let E = null == y || 0 === y.length,
     S = u.ZP.getResourceChannelIconURL({
-      channelId: s.channelId,
-      icon: s.icon
+      channelId: l.channelId,
+      icon: l.icon
     }),
     {
       drag: T,
@@ -74,37 +74,37 @@ let b = function(e) {
       setIsDraggable: R
     } = (0, o.Z)({
       type: "RESOURCE_CHANNEL",
-      optionId: s.channelId,
+      optionId: l.channelId,
       index: b,
-      onDragStart: N,
+      onDragStart: _,
       onDragComplete: j,
-      onDragReset: _
+      onDragReset: v
     }),
     Z = i.useCallback(e => {
-      (0, m.XG)(s.channelId, e)
-    }, [s.channelId]),
+      (0, m.XG)(l.channelId, e)
+    }, [l.channelId]),
     D = i.useCallback((e, n) => {
       let r = g.Z.getSettings();
-      null != r && ((0, m.XG)(s.channelId, e), (0, m.oo)(t, r).then(() => {
+      null != r && ((0, m.XG)(l.channelId, e), (0, m.oo)(t, r).then(() => {
         (0, m.mM)(t, e.channelId, n)
       }))
-    }, [t, s]),
+    }, [t, l]),
     A = i.useCallback(() => (0, a.ZDy)(async () => {
       let {
         default: e
       } = await n.e("84725").then(n.bind(n, 462499));
       return n => (0, r.jsx)(e, x(f({}, n), {
         guildId: t,
-        resourceChannel: s,
+        resourceChannel: l,
         onSave: Z,
-        onDelete: () => (0, m.Hz)(s.channelId),
+        onDelete: () => (0, m.Hz)(l.channelId),
         onIconUpload: D
       }))
-    }), [t, s, Z, D]);
-  return null == y ? null : (0, r.jsxs)("div", {
+    }), [t, l, Z, D]);
+  return null == N ? null : (0, r.jsxs)("div", {
     className: h.resourceChannelContainer,
     children: [(0, r.jsxs)("div", {
-      className: l()(h.resourceChannel, {
+      className: s()(h.resourceChannel, {
         [h.dropIndicatorBefore]: null != P && b < P,
         [h.dropIndicatorAfter]: null != P && b > P,
         [h.resourceChannelError]: null != I
@@ -137,16 +137,16 @@ let b = function(e) {
           className: h.resourceChannelTitle,
           variant: "text-md/semibold",
           color: "header-primary",
-          children: v
+          children: O
         }), !E && (0, r.jsx)(a.Text, {
           className: h.resourceChannelDescription,
           variant: "text-xs/medium",
           color: "text-muted",
           lineClamp: 1,
-          children: C
+          children: y
         })]
       }), (0, r.jsx)(a.ua7, {
-        text: p.NW.string(p.t.bt75u7),
+        text: p.intl.string(p.t.bt75u7),
         children: e => (0, r.jsxs)(a.zxk, x(f({}, e), {
           className: h.resourceChannelEditButton,
           innerClassName: h.resourceChannelEditButtonInner,
@@ -156,7 +156,7 @@ let b = function(e) {
             size: "md",
             color: "currentColor"
           }), (0, r.jsx)(a.nn4, {
-            children: p.NW.string(p.t.bt75u7)
+            children: p.intl.string(p.t.bt75u7)
           })]
         }))
       })]

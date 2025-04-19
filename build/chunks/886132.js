@@ -72,9 +72,9 @@ let u = e => {
       shouldHideRoleSubscriptionCTA: f,
       onOpenPremiumSettings: _
     } = e, p = null;
-    return t === r.w6.APPLICATION && null != n ? i.NW.formatToPlainString(i.t.uERlTU, {
+    return t === r.w6.APPLICATION && null != n ? i.intl.formatToPlainString(i.t.uERlTU, {
       appName: n.name
-    }) : a ? o ? d ? f && s ? i.NW.string(i.t.xFb68v) : s ? u ? i.NW.string(i.t.vLklfH) : i.NW.string(i.t["g8i/bW"]) : i.NW.string(i.t.Eoynp6) : c ? i.NW.string(i.t.hU4kIS) : i.NW.string(i.t.GM0xaW) : l ? i.NW.string(i.t.xE9WGh) : i.NW.string(i.t["0LMpW1"]) : o ? f && s ? i.NW.string(i.t.xFb68v) : s ? u ? i.NW.string(i.t.vLklfH) : i.NW.string(i.t["g8i/bW"]) : c ? i.NW.string(i.t.ICPhqa) : i.NW.string(i.t.jQy3aG) : l ? i.NW.string(i.t.FJ6Z09) : i.NW.format(i.t.U6vLcH, {
+    }) : a ? o ? d ? f && s ? i.intl.string(i.t.xFb68v) : s ? u ? i.intl.string(i.t.vLklfH) : i.intl.string(i.t["g8i/bW"]) : i.intl.string(i.t.Eoynp6) : c ? i.intl.string(i.t.hU4kIS) : i.intl.string(i.t.GM0xaW) : l ? i.intl.string(i.t.xE9WGh) : i.intl.string(i.t["0LMpW1"]) : o ? f && s ? i.intl.string(i.t.xFb68v) : s ? u ? i.intl.string(i.t.vLklfH) : i.intl.string(i.t["g8i/bW"]) : c ? i.intl.string(i.t.ICPhqa) : i.intl.string(i.t.jQy3aG) : l ? i.intl.string(i.t.FJ6Z09) : i.intl.format(i.t.U6vLcH, {
       openPremiumSettings: _
     })
   },
@@ -87,11 +87,11 @@ let u = e => {
     } = e, o = n && !r, s = !n && a, l = !t && (o || s);
     return t && s ? {
       type: "JOIN_GUILD",
-      text: i.NW.string(i.t.riu2R0),
+      text: i.intl.string(i.t.riu2R0),
       description: null
     } : l ? {
       type: "GET_PREMIUM",
-      text: i.NW.string(i.t["gl/XHB"]),
+      text: i.intl.string(i.t["gl/XHB"]),
       description: null
     } : {
       type: "UNAVAILABLE",

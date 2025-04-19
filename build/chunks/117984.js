@@ -2,11 +2,11 @@
 n.d(t, {
   CM: () => p,
   UT: () => O,
-  _Z: () => _,
+  _Z: () => v,
   kj: () => f,
   oC: () => g,
   s3: () => b,
-  uA: () => N,
+  uA: () => _,
   xh: () => E
 }), n(388685);
 var i = n(524437),
@@ -92,13 +92,13 @@ function b(e) {
   }, a.fy.FREQUENT_USER_ACTION)
 }
 
-function N(e, t) {
+function _(e, t) {
   a.hW.updateAsync("favorites", n => {
     n.favoriteChannels[e].parentId = null != t ? t : "0"
   }, a.fy.FREQUENT_USER_ACTION)
 }
 
-function _() {
+function v() {
   a.hW.updateAsync("favorites", e => {
     e.muted = !e.muted
   }, a.fy.INFREQUENT_USER_ACTION)

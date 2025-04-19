@@ -28,7 +28,7 @@ function m(e) {
       hours: String(n).padStart(2, "0"),
       minutes: String(r).padStart(2, "0"),
       seconds: String(i).padStart(2, "0"),
-      countdownString: u.NW.formatToPlainString(u.t.U0Hhr6, {
+      countdownString: u.intl.formatToPlainString(u.t.U0Hhr6, {
         duration: new Date(0, 0, 0, n, r, i)
       })
     }
@@ -200,7 +200,7 @@ function v(e) {
       }), (0, r.jsx)(c.Text, {
         variant: null != t ? t : "text-sm/medium",
         color: "header-primary",
-        children: u.NW.string(u.t.VZsY3t)
+        children: u.intl.string(u.t.VZsY3t)
       })]
     }), (0, r.jsx)("div", {
       className: _.digitsContainer,

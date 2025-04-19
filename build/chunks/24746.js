@@ -3,9 +3,9 @@ n.d(t, {
   Z: () => b
 }), n(953529), n(388685);
 var r = n(200651),
-  a = n(192379),
-  i = n(120356),
-  l = n.n(i),
+  i = n(192379),
+  a = n(120356),
+  l = n.n(a),
   s = n(477660),
   o = n.n(s),
   c = n(481060),
@@ -20,8 +20,8 @@ function _(e) {
   let {
     description: t,
     supportsMarkdown: n
-  } = e, [i, s] = a.useState(!1), o = a.useRef(null);
-  a.useEffect(() => {
+  } = e, [a, s] = i.useState(!1), o = i.useRef(null);
+  i.useEffect(() => {
     if (null == o.current) return;
     let e = new ResizeObserver(() => {
       var e, t, n, r;
@@ -29,7 +29,7 @@ function _(e) {
     });
     return e.observe(o.current), () => e.disconnect()
   }, []);
-  let [u, p] = a.useState(!1), _ = a.useCallback(() => {
+  let [u, p] = i.useState(!1), _ = i.useCallback(() => {
     p(e => !e)
   }, []);
   return (0, r.jsxs)(r.Fragment, {
@@ -52,7 +52,7 @@ function _(e) {
         color: "text-normal",
         children: t
       })
-    }), i || u ? (0, r.jsx)(f, {
+    }), a || u ? (0, r.jsx)(f, {
       isShowingMore: u,
       onToggle: _
     }) : null]
@@ -63,12 +63,12 @@ function f(e) {
   let {
     onToggle: t,
     isShowingMore: n
-  } = e, i = a.useMemo(() => (0, r.jsxs)("div", {
+  } = e, a = i.useMemo(() => (0, r.jsxs)("div", {
     className: m.showMoreContent,
     children: [(0, r.jsx)(c.Text, {
       variant: "text-md/semibold",
       color: "interactive-normal",
-      children: n ? p.NW.string(p.t["vtfc4+"]) : p.NW.string(p.t.ZDRyur)
+      children: n ? p.intl.string(p.t["vtfc4+"]) : p.intl.string(p.t.ZDRyur)
     }), n ? (0, r.jsx)(c.u04, {
       size: "md",
       color: "currentColor",
@@ -84,7 +84,7 @@ function f(e) {
     onClick: t,
     children: [(0, r.jsx)("div", {
       className: m.divider
-    }), i, (0, r.jsx)("div", {
+    }), a, (0, r.jsx)("div", {
       className: m.divider
     })]
   })
@@ -92,8 +92,8 @@ function f(e) {
 let b = function(e) {
   var t, n;
   let {
-    application: i
-  } = e, l = null == (t = i.directory_entry) ? void 0 : t.detailed_description, s = null == (n = i.directory_entry) ? void 0 : n.short_description, o = a.useMemo(() => null != l && l.length > 0 ? (0, r.jsx)(_, {
+    application: a
+  } = e, l = null == (t = a.directory_entry) ? void 0 : t.detailed_description, s = null == (n = a.directory_entry) ? void 0 : n.short_description, o = i.useMemo(() => null != l && l.length > 0 ? (0, r.jsx)(_, {
     description: l,
     supportsMarkdown: !0
   }) : null != s && s.length > 0 ? (0, r.jsx)(_, {
@@ -105,7 +105,7 @@ let b = function(e) {
     children: [(0, r.jsx)(c.X6q, {
       variant: "heading-lg/semibold",
       color: "header-primary",
-      children: p.NW.string(p.t.txraKS)
+      children: p.intl.string(p.t.txraKS)
     }), o]
   })
 }

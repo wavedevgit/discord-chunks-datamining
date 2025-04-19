@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   l = n(192379),
   o = n(913527),
-  a = n.n(o),
-  i = n(399606),
+  i = n.n(o),
+  a = n(399606),
   s = n(481060),
   c = n(740900),
   u = n(241559),
@@ -20,10 +20,10 @@ function f(e) {
   let {
     guild: t,
     onSubmit: o
-  } = e, f = (0, i.e7)([d.Z], () => d.Z.getMembersCountByGuildId(t.id, c.R_.NEW_GUILD_MEMBER), [t.id]), h = (0, i.e7)([d.Z], () => {
+  } = e, f = (0, a.e7)([d.Z], () => d.Z.getMembersCountByGuildId(t.id, c.R_.NEW_GUILD_MEMBER), [t.id]), h = (0, a.e7)([d.Z], () => {
     let e = d.Z.getNewMemberTimestamp(t.id);
-    return a()(e).format("h:mm A")
-  }, [t.id]), j = (0, i.e7)([d.Z], () => d.Z.hasDefaultSearchStateByGuildId(t.id), [t.id]), g = l.useCallback(() => {
+    return i()(e).format("h:mm A")
+  }, [t.id]), j = (0, a.e7)([d.Z], () => d.Z.hasDefaultSearchStateByGuildId(t.id), [t.id]), g = l.useCallback(() => {
     (0, C.YO)(t.id), null == o || o()
   }, [t.id, o]), x = l.useCallback(() => {
     j ? g() : (0, s.ZDy)(async () => {
@@ -63,7 +63,7 @@ function f(e) {
         }), n))
       }
     })
-  }, [g, j]), v = new Intl.NumberFormat(m.NW.currentLocale).format(f), O = (0, u.nX)(t.id), y = (0, u.xC)(t.id), N = l.useMemo(() => 1 + +!!O + +!!y, [O, y]);
+  }, [g, j]), v = new Intl.NumberFormat(m.intl.currentLocale).format(f), O = (0, u.nX)(t.id), y = (0, u.xC)(t.id), _ = l.useMemo(() => 1 + +!!O + +!!y, [O, y]);
   return 0 === f ? null : (0, r.jsxs)("tr", {
     className: p.newMembersNotice,
     onClick: x,
@@ -72,13 +72,13 @@ function f(e) {
       children: (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "always-white",
-        children: m.NW.format(m.t["/i5uJy"], {
+        children: m.intl.format(m.t["/i5uJy"], {
           count: v,
           date: h
         })
       })
     }), (0, r.jsx)("td", {
-      colSpan: N
+      colSpan: _
     }), (0, r.jsx)("td", {
       colSpan: 2,
       children: (0, r.jsx)("div", {
@@ -93,7 +93,7 @@ function f(e) {
             color: "always-white",
             className: p.memberNoticeAction,
             children: [(0, r.jsx)("div", {
-              children: m.NW.string(m.t.rkyOzM)
+              children: m.intl.string(m.t.rkyOzM)
             }), (0, r.jsx)(s.tBG, {
               size: "custom",
               color: "currentColor",

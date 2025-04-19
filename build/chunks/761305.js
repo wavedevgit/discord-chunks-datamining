@@ -1,11 +1,11 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => N
+  Z: () => b
 }), n(35282), n(388685);
 var r, i = n(200651),
-  s = n(192379),
-  o = n(593473),
-  l = n(442837),
+  l = n(192379),
+  s = n(593473),
+  o = n(442837),
   a = n(544891),
   c = n(108427),
   u = n(601964),
@@ -24,11 +24,11 @@ function _(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-l.ZP.initialize();
-class x extends(r = s.PureComponent) {
+o.ZP.initialize();
+class x extends(r = l.PureComponent) {
   componentDidMount() {
     let e = (0, h.Z)(this.props.location),
-      t = (0, o.parse)(this.props.location.search);
+      t = (0, s.parse)(this.props.location.search);
     a.tn.post({
       url: p.ANM.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS,
       body: {
@@ -69,15 +69,15 @@ class x extends(r = s.PureComponent) {
     return (0, i.jsxs)(g.ZP, {
       children: [(0, i.jsx)(g.Dx, {
         className: f.marginBottom8,
-        children: m.NW.string(m.t.Z33eiI)
+        children: m.intl.string(m.t.Z33eiI)
       }), (0, i.jsx)(g.DK, {
-        children: m.NW.format(m.t.NRWtfH, {
+        children: m.intl.format(m.t.NRWtfH, {
           guildName: n.name
         })
       }), (0, i.jsx)(g.zx, {
         className: f.marginTop40,
         onClick: () => t(e),
-        children: m.NW.string(m.t.fIv16O)
+        children: m.intl.string(m.t.fIv16O)
       }), (0, i.jsx)(g.zx, {
         className: f.marginTop8,
         color: g.zx.Colors.LINK,
@@ -85,7 +85,7 @@ class x extends(r = s.PureComponent) {
         onClick: () => {
           t(p.Z5c.USER_GUILD_NOTIFICATION_SETTINGS(n.id))
         },
-        children: m.NW.string(m.t["cGmT/P"])
+        children: m.intl.string(m.t["cGmT/P"])
       })]
     })
   }
@@ -100,13 +100,13 @@ class x extends(r = s.PureComponent) {
         className: f.marginBottom20
       }), (0, i.jsx)(g.Dx, {
         className: f.marginBottom8,
-        children: m.NW.string(m.t.ox9hIS)
+        children: m.intl.string(m.t.ox9hIS)
       }), (0, i.jsx)(g.DK, {
-        children: m.NW.string(m.t["/dcuR0"])
+        children: m.intl.string(m.t["/dcuR0"])
       }), (0, i.jsx)(g.zx, {
         className: f.marginTop40,
         onClick: () => t(e),
-        children: m.NW.string(m.t.fIv16O)
+        children: m.intl.string(m.t.fIv16O)
       })]
     })
   }
@@ -128,6 +128,6 @@ class x extends(r = s.PureComponent) {
 _(x, "defaultProps", {
   transitionTo: e => n.g.location.assign(e)
 });
-let N = l.ZP.connectStores([d.Z], () => ({
+let b = o.ZP.connectStores([d.Z], () => ({
   defaultRoute: d.Z.defaultRoute
 }))(x)

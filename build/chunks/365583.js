@@ -75,7 +75,7 @@ function O(e) {
   });
   return null == f ? null : (0, r.jsx)(a.sNh, {
     id: "manage-privacy",
-    label: g.NW.string(g.t.anfNPT),
+    label: g.intl.string(g.t.anfNPT),
     action: () => {
       null == l || l({
         action: "PRESS_MANAGE_PRIVACY_MENU_ITEM"

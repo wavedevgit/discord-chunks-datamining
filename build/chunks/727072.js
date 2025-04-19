@@ -1,9 +1,9 @@
 /** Chunk was on 93375 **/
 n.d(t, {
-  I2: () => N,
-  RD: () => p,
+  I2: () => p,
+  RD: () => A,
   mY: () => j,
-  pH: () => A
+  pH: () => _
 }), n(539854), n(388685);
 var r = n(192379),
   l = n(359959),
@@ -141,7 +141,7 @@ let d = {},
     return (null != (r = null == (n = O.getState().rules[e]) ? void 0 : n[t]) ? r : []).length
   };
 
-function N(e) {
+function p(e) {
   let [t, n] = r.useState(!1), [i, a] = O(e => [e.syncRules, e.fetching], l.X);
   return [t, r.useCallback(async () => {
     if (!a && null != e) try {
@@ -152,8 +152,8 @@ function N(e) {
   }, [e, a, i])]
 }
 
-function p(e) {
-  let [t, n] = N(e);
+function A(e) {
+  let [t, n] = p(e);
   return r.useEffect(() => {
     (async () => {
       await n()
@@ -161,7 +161,7 @@ function p(e) {
   }, [e, n]), [t, n]
 }
 
-function A(e) {
+function _(e) {
   return O(t => {
     var n;
     return {

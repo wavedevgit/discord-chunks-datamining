@@ -82,9 +82,9 @@ function T(e, t, n) {
   if (403 === i) switch (a && a.code) {
     case E.evJ.TOO_MANY_REACTIONS:
       o.Z.show({
-        title: b.NW.string(b.t.lFddsb),
-        body: b.NW.string(b.t.h27eIi),
-        confirmText: b.NW.string(b.t.BddRzc)
+        title: b.intl.string(b.t.lFddsb),
+        body: b.intl.string(b.t.h27eIi),
+        confirmText: b.intl.string(b.t.BddRzc)
       });
       break;
     case E.evJ.REACTION_BLOCKED:
@@ -96,7 +96,7 @@ function T(e, t, n) {
   return !0
 }
 
-function N(e, t, n, r, i) {
+function A(e, t, n, r, i) {
   var o, s;
   a.Z.dispatch({
     type: e,
@@ -110,7 +110,7 @@ function N(e, t, n, r, i) {
   })
 }
 
-function A(e) {
+function N(e) {
   let {
     channelId: t,
     messageId: n,
@@ -135,7 +135,7 @@ async function R(e) {
     limit: o,
     after: s,
     type: c
-  } = e, u = c === l.O.VOTE ? C(t, n, i) : A({
+  } = e, u = c === l.O.VOTE ? C(t, n, i) : N({
     channelId: t,
     messageId: n,
     emoji: i
@@ -164,16 +164,16 @@ async function P(e, t, n) {
     f = null != u && !!u.burst,
     p = null != u && !!u.isRetry;
   if (!p && k(e, t, n, f)) return void o.Z.show({
-    title: b.NW.string(b.t["uaUU/v"]),
-    body: b.NW.string(b.t.psMorq),
-    confirmText: b.NW.string(b.t["NX+WJC"])
+    title: b.intl.string(b.t["uaUU/v"]),
+    body: b.intl.string(b.t.psMorq),
+    confirmText: b.intl.string(b.t["NX+WJC"])
   });
   let h = await M(n, f);
-  return N("MESSAGE_REACTION_ADD", e, t, n, {
+  return A("MESSAGE_REACTION_ADD", e, t, n, {
     burst: f,
     colors: h
   }), await c.Z.unarchiveThreadIfNecessary(e), r.tn.put({
-    url: A({
+    url: N({
       channelId: e,
       messageId: t,
       emoji: n,
@@ -197,7 +197,7 @@ async function P(e, t, n) {
         action: "react"
       }, (0, s.hH)(null == i ? void 0 : i.guild_id), (0, s.v_)(i)))
     }
-    f ? (i.uv.announce(b.NW.formatToPlainString(b.t["RJlG+f"], {
+    f ? (i.uv.announce(b.intl.formatToPlainString(b.t["RJlG+f"], {
       name: n.name
     })), g.Z.triggerFullscreenAnimation({
       channelId: e,
@@ -205,7 +205,7 @@ async function P(e, t, n) {
       emoji: I(v({}, n), {
         animated: !1
       })
-    })) : i.uv.announce(b.NW.formatToPlainString(b.t.ol4acH, {
+    })) : i.uv.announce(b.intl.formatToPlainString(b.t.ol4acH, {
       name: n.name
     }))
   }).catch(r => {
@@ -214,11 +214,11 @@ async function P(e, t, n) {
       isRetry: !0
     }), {
       isRetry: p
-    }) && (N("MESSAGE_REACTION_REMOVE", e, t, n, {
+    }) && (A("MESSAGE_REACTION_REMOVE", e, t, n, {
       burst: f
-    }), f ? i.uv.announce(b.NW.formatToPlainString(b.t["fJeu8/"], {
+    }), f ? i.uv.announce(b.intl.formatToPlainString(b.t["fJeu8/"], {
       name: n.name
-    })) : i.uv.announce(b.NW.formatToPlainString(b.t.UUn5V1, {
+    })) : i.uv.announce(b.intl.formatToPlainString(b.t.UUn5V1, {
       name: n.name
     })))
   })
@@ -278,11 +278,11 @@ async function x(e) {
     userId: s,
     options: u
   } = e, d = null != u && !!u.burst, f = null != u && !!u.isRetry;
-  N("MESSAGE_REACTION_REMOVE", t, n, a, {
+  A("MESSAGE_REACTION_REMOVE", t, n, a, {
     userId: s,
     burst: d
   }), await c.Z.unarchiveThreadIfNecessary(t), r.tn.del({
-    url: A({
+    url: N({
       channelId: t,
       messageId: n,
       emoji: a,
@@ -297,9 +297,9 @@ async function x(e) {
     oldFormErrors: !0,
     rejectWithError: !1
   }).then(() => {
-    (null == u ? void 0 : u.burst) ? i.uv.announce(b.NW.formatToPlainString(b.t["3l9f6u"], {
+    (null == u ? void 0 : u.burst) ? i.uv.announce(b.intl.formatToPlainString(b.t["3l9f6u"], {
       name: a.name
-    })): i.uv.announce(b.NW.formatToPlainString(b.t["DQxi+/"], {
+    })): i.uv.announce(b.intl.formatToPlainString(b.t["DQxi+/"], {
       name: a.name
     }))
   }).catch(async e => {
@@ -317,13 +317,13 @@ async function x(e) {
         isRetry: f
       })) {
       let e = await M(a, d);
-      N("MESSAGE_REACTION_ADD", t, n, a, {
+      A("MESSAGE_REACTION_ADD", t, n, a, {
         userId: s,
         burst: d,
         colors: e
-      }), (null == u ? void 0 : u.burst) ? i.uv.announce(b.NW.formatToPlainString(b.t.OamVbW, {
+      }), (null == u ? void 0 : u.burst) ? i.uv.announce(b.intl.formatToPlainString(b.t.OamVbW, {
         name: a.name
-      })) : i.uv.announce(b.NW.formatToPlainString(b.t["tD9+b2"], {
+      })) : i.uv.announce(b.intl.formatToPlainString(b.t["tD9+b2"], {
         name: a.name
       }))
     }

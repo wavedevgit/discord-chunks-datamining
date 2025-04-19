@@ -10,8 +10,8 @@ r.d(t, {
   qY: () => j
 }), r(388685);
 var n = r(544891),
-  s = r(570140),
-  i = r(367907),
+  i = r(570140),
+  s = r(367907),
   l = r(430824),
   o = r(496675),
   a = r(823379),
@@ -56,7 +56,7 @@ function C(e) {
 
 function x(e) {
   var t, r, n;
-  let s = {
+  let i = {
     id: null != (t = e.id) ? t : c.default.fromTimestamp(Date.now()),
     name: e.name,
     guildId: e.guild_id,
@@ -70,7 +70,7 @@ function x(e) {
     exemptChannels: new Set(null != (r = e.exempt_channels) ? r : []),
     exemptRoles: new Set(null != (n = e.exempt_roles) ? n : [])
   };
-  return null != s.triggerMetadata && delete s.triggerMetadata.keywordLists, s
+  return null != i.triggerMetadata && delete i.triggerMetadata.keywordLists, i
 }
 async function j(e) {
   let t = y(e),
@@ -123,9 +123,9 @@ async function b(e, t, r) {
 }
 
 function S(e, t, r) {
-  let s = l.Z.getGuild(e);
-  null != s && o.Z.can(f.Plq.MANAGE_GUILD, s) && (0, p.UV)(() => {
-    (0, i.yw)(f.rMx.GUILD_AUTOMOD_FEEDBACK, {
+  let i = l.Z.getGuild(e);
+  null != i && o.Z.can(f.Plq.MANAGE_GUILD, i) && (0, p.UV)(() => {
+    (0, s.yw)(f.rMx.GUILD_AUTOMOD_FEEDBACK, {
       feedback_type: u.x2.MENTION_RAID_REMOVE_RESTRICTION,
       decision_id: t
     }), n.tn.post({
@@ -136,7 +136,7 @@ function S(e, t, r) {
 }
 
 function E(e) {
-  s.Z.dispatch({
+  i.Z.dispatch({
     type: "AUTO_MODERATION_MENTION_RAID_NOTICE_DISMISS",
     guildId: e
   })

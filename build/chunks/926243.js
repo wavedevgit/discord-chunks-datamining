@@ -62,9 +62,9 @@ function T(e, t) {
   }), e
 }
 
-function N(e, t) {
+function A(e, t) {
   if (null == e) return {};
-  var n, r, i = A(e, t);
+  var n, r, i = N(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -72,7 +72,7 @@ function N(e, t) {
   return i
 }
 
-function A(e, t) {
+function N(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -94,16 +94,16 @@ let C = (e, t) => "".concat(e, ":").concat(t),
       size: E,
       surrogateCodePoint: O,
       allowAnimatedEmoji: S,
-      selectedItemClassName: A,
+      selectedItemClassName: N,
       inNitroLockedSection: C
-    } = e, R = N(e, ["emoji", "isFavorite", "isLargeSize", "isMediumSize", "isInspected", "isDisabled", "showPulse", "columnIndex", "rowIndex", "size", "surrogateCodePoint", "allowAnimatedEmoji", "selectedItemClassName", "inNitroLockedSection"]);
+    } = e, R = A(e, ["emoji", "isFavorite", "isLargeSize", "isMediumSize", "isInspected", "isDisabled", "showPulse", "columnIndex", "rowIndex", "size", "surrogateCodePoint", "allowAnimatedEmoji", "selectedItemClassName", "inNitroLockedSection"]);
     let P = (0, s.e7)([g.Z], () => n.type === f.B.GUILD ? g.Z.getGuild(n.guildId) : void 0, [n]),
       w = () => {
         let e = n.allNamesString;
-        return ((null == P ? void 0 : P.name) != null && (e = y.NW.formatToPlainString(y.t["nXv4/P"], {
+        return ((null == P ? void 0 : P.name) != null && (e = y.intl.formatToPlainString(y.t["nXv4/P"], {
           names: e,
           guildName: P.name
-        })), i) ? y.NW.formatToPlainString(y.t["9FI9Z2"], {
+        })), i) ? y.intl.formatToPlainString(y.t["9FI9Z2"], {
           names: e
         }) : e
       },
@@ -114,7 +114,7 @@ let C = (e, t) => "".concat(e, ":").concat(t),
           [v.emojiItemLarge]: a,
           [v.emojiItemMedium]: c,
           [v.emojiItemSelected]: u,
-          [null != A ? A : ""]: u,
+          [null != N ? N : ""]: u,
           [v.showPulse]: _
         }),
         "data-type": p.S.EMOJI,
@@ -149,7 +149,7 @@ function P(e) {
     isScrolling: v,
     isUsingKeyboardNavigation: O,
     showEmojiFavoriteTooltip: S,
-    surrogateCodePoint: A,
+    surrogateCodePoint: N,
     selectedItemClassName: P,
     getEmojiItemProps: w,
     isMediumSize: D,
@@ -161,15 +161,15 @@ function P(e) {
     isBurstReaction: U,
     rowPosition: G,
     inNitroLockedSection: B
-  } = e, [F, V] = i.useState(""), Z = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), H = (0, s.e7)([d.ZP], () => d.ZP.getDisambiguatedEmojiContext(p), [p]), W = i.useRef(null), {
-    emoji: Y,
+  } = e, [F, V] = i.useState(""), Z = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), H = (0, s.e7)([d.ZP], () => d.ZP.getDisambiguatedEmojiContext(p), [p]), Y = i.useRef(null), {
+    emoji: W,
     size: K,
     isDisabled: z,
     columnIndex: q
   } = t, Q = e => {
     if (e.stopPropagation(), v.current || O.current) return;
     let n = e.altKey;
-    n && !d.ZP.getDisambiguatedEmojiContext().isFavoriteEmojiWithoutFetchingLatest(Y) && k(a), (0, h.Kw)(h.v6.FAVORITE_EMOJI_TOOLTIP), b(t, {
+    n && !d.ZP.getDisambiguatedEmojiContext().isFavoriteEmojiWithoutFetchingLatest(W) && k(a), (0, h.Kw)(h.v6.FAVORITE_EMOJI_TOOLTIP), b(t, {
       isFinalSelection: !e.shiftKey,
       toggleFavorite: n
     })
@@ -191,14 +191,14 @@ function P(e) {
       ref: l,
       tabIndex: c,
       onFocus: u
-    } = s, d = N(s, ["ref", "tabIndex", "onFocus"]);
+    } = s, d = A(s, ["ref", "tabIndex", "onFocus"]);
     return (0, i.createElement)("li", T(I({}, d), {
       key: a,
-      ref: W
+      ref: Y
     }), F !== C(q, f) && (0, r.jsx)(R, {
       ref: l,
-      emoji: Y,
-      isFavorite: H.isFavoriteEmojiWithoutFetchingLatest(Y),
+      emoji: W,
+      isFavorite: H.isFavoriteEmojiWithoutFetchingLatest(W),
       isLargeSize: L,
       isMediumSize: D,
       isInspected: o,
@@ -210,10 +210,10 @@ function P(e) {
       onMouseEnter: t,
       onMouseLeave: n,
       onClick: e => {
-        if (null != W.current && null != G && null != j && !e.shiftKey && null != Y.name && U && !Z && M) {
-          let e = null == Y.id ? _.ZP.convertNameToSurrogate(Y.name) : Y.name,
-            t = W.current.getBoundingClientRect();
-          t.x = G.x + (q + 1) * K, V(C(q, f)), (0, m.U)(j, e, Y.id, t)
+        if (null != Y.current && null != G && null != j && !e.shiftKey && null != W.name && U && !Z && M) {
+          let e = null == W.id ? _.ZP.convertNameToSurrogate(W.name) : W.name,
+            t = Y.current.getBoundingClientRect();
+          t.x = G.x + (q + 1) * K, V(C(q, f)), (0, m.U)(j, e, W.id, t)
         }
         Q(e)
       },
@@ -222,13 +222,13 @@ function P(e) {
       columnIndex: q,
       rowIndex: f,
       size: K,
-      surrogateCodePoint: A,
+      surrogateCodePoint: N,
       selectedItemClassName: P,
       inNitroLockedSection: B
     }))
   };
   return S ? (0, r.jsx)(l.ua7, {
-    text: y.NW.formatToPlainString(y.t.glqNsb, {
+    text: y.intl.formatToPlainString(y.t.glqNsb, {
       key: (0, E.isMac)() ? "Opt" : "Alt"
     }),
     position: "top",

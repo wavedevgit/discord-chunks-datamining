@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => _
 });
 var r = n(200651),
-  a = n(192379),
-  i = n(793030),
+  i = n(192379),
+  a = n(793030),
   l = n(823379),
   s = n(216780),
   o = n(560893),
@@ -19,7 +19,7 @@ var r = n(200651),
 function _(e) {
   let {
     application: t
-  } = e, n = a.useMemo(() => {
+  } = e, n = i.useMemo(() => {
     var e, n, r;
     return null != (r = (null != (n = null == (e = t.directory_entry) ? void 0 : e.carousel_items) ? n : []).map(s.RF).filter(l.lm)) ? r : []
   }, [t]);
@@ -42,10 +42,10 @@ function _(e) {
       className: g.informationContainer,
       children: [(0, r.jsx)("div", {
         className: g.divider
-      }), (0, r.jsx)(i.X6, {
+      }), (0, r.jsx)(a.X6, {
         variant: "heading-lg/semibold",
         color: "header-primary",
-        children: h.NW.string(h.t["mD+J/v"])
+        children: h.intl.string(h.t["mD+J/v"])
       }), (0, r.jsx)(u.Z, {
         application: t,
         view: "embedded"

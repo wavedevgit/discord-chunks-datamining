@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => N
 });
 var r = n(200651),
   i = n(192379),
@@ -63,7 +63,7 @@ function S(e, t) {
 
 function T(e, t) {
   if (null == e) return {};
-  var n, r, i = N(e, t);
+  var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -71,17 +71,17 @@ function T(e, t) {
   return i
 }
 
-function N(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let A = i.forwardRef(function(e, t) {
+let N = i.forwardRef(function(e, t) {
   var a, v, I;
-  let N, {
-      canRemove: A,
+  let A, {
+      canRemove: N,
       className: C,
       role: R,
       onRemove: P,
@@ -108,7 +108,7 @@ let A = i.forwardRef(function(e, t) {
         } = await n.e("5396").then(n.bind(n, 731646));
         return t => (0, r.jsx)(e, S(O({}, t), {
           id: R.id,
-          label: b.NW.string(b.t.sMsaLi)
+          label: b.intl.string(b.t.sMsaLi)
         }))
       })
     }, [R.id]),
@@ -116,23 +116,23 @@ let A = i.forwardRef(function(e, t) {
     V = null != (v = R.colorString) ? v : F,
     Z = null != (I = (0, l.wK)(V, .6)) ? I : void 0,
     H = u.Z.unsafe_rawColors.WHITE_500.css,
-    W = (0, l._i)(V);
-  null != W && .3 > (0, l.Bd)(W) && (H = u.Z.unsafe_rawColors.PRIMARY_630.css);
-  let Y = (0, E.X)(w, R.colorStrings);
-  N = G ? (0, r.jsx)(p.Z, {
+    Y = (0, l._i)(V);
+  null != Y && .3 > (0, l.Bd)(Y) && (H = u.Z.unsafe_rawColors.PRIMARY_630.css);
+  let W = (0, E.X)(w, R.colorStrings);
+  A = G ? (0, r.jsx)(p.Z, {
     className: y.roleFlowerStar,
-    iconClassName: A ? y.roleVerifiedIcon : void 0,
+    iconClassName: N ? y.roleVerifiedIcon : void 0,
     color: V,
     size: 14
   }) : "dot" === U ? (0, r.jsx)(d.FhE, {
     className: y.roleDot,
     color: V,
     background: !1,
-    colors: Y,
+    colors: W,
     tooltip: !1
   }) : (0, r.jsx)(d.xko, {
     color: V,
-    colors: Y,
+    colors: W,
     className: y.roleCircle
   });
   let K = i.useMemo(() => {
@@ -141,8 +141,8 @@ let A = i.forwardRef(function(e, t) {
         borderColor: D ? void 0 : Z
       }, null != (t = e.style) ? t : {})
     }, [Z, D, e.style]),
-    z = () => A ? (0, r.jsx)(d.DY3, {
-      text: b.NW.string(b.t.u3RVsL),
+    z = () => N ? (0, r.jsx)(d.DY3, {
+      text: b.intl.string(b.t.u3RVsL),
       children: (0, r.jsxs)(d.P3F, {
         className: o()(y.roleRemoveButtonCanRemove, y.roleRemoveButton),
         onClick: P,
@@ -151,10 +151,10 @@ let A = i.forwardRef(function(e, t) {
           focusClassName: y.roleRemoveIconFocused
         },
         "aria-hidden": !1,
-        "aria-label": b.NW.formatToPlainString(b.t.QrxwhY, {
+        "aria-label": b.intl.formatToPlainString(b.t.QrxwhY, {
           roleName: R.name
         }),
-        children: [N, (0, r.jsx)(d.Dio, {
+        children: [A, (0, r.jsx)(d.Dio, {
           size: "md",
           color: H,
           className: y.roleRemoveIcon,
@@ -168,10 +168,10 @@ let A = i.forwardRef(function(e, t) {
         focusClassName: y.roleRemoveIconFocused
       },
       "aria-hidden": !0,
-      "aria-label": b.NW.formatToPlainString(b.t.QrxwhY, {
+      "aria-label": b.intl.formatToPlainString(b.t.QrxwhY, {
         roleName: R.name
       }),
-      children: N
+      children: A
     });
   return (0, r.jsx)(d.tEY, {
     children: (0, r.jsxs)("div", S(O({

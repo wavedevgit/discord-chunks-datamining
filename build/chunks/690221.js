@@ -8,7 +8,7 @@ var n = r(200651),
   s = r(703656),
   c = r(981631);
 
-function a(e) {
+function i(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -27,7 +27,7 @@ function a(e) {
   return e
 }
 
-function i(e, t) {
+function a(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -67,7 +67,7 @@ let u = o.forwardRef(function(e, t) {
     y = o.useCallback(e => {
       e.metaKey || e.shiftKey || 0 !== e.button || (e.preventDefault(), e.stopPropagation(), null != r && (0, s.uL)(r), null == b || b())
     }, [r, b]),
-    m = (0, n.jsx)("a", i(a({
+    m = (0, n.jsx)("a", a(i({
       ref: t,
       href: r,
       onClick: y,
@@ -75,7 +75,7 @@ let u = o.forwardRef(function(e, t) {
     }, d), {
       children: u
     }));
-  return (0, n.jsx)(l.tEY, i(a({}, f), {
+  return (0, n.jsx)(l.tEY, a(i({}, f), {
     children: m
   }))
 })

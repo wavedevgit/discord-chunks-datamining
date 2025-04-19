@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => I
+  Z: () => v
 }), n(388685);
 var r = n(200651);
 n(192379);
@@ -22,7 +22,7 @@ var i = n(481060),
   E = n(981631),
   O = n(65154);
 
-function N(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,7 +30,7 @@ function N(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class y extends p.Z {
+class I extends p.Z {
   _initialize() {
     super._initialize(), __OVERLAY__ || l.Z.subscribe("OVERLAY_SOUNDBOARD_SOUNDS_FETCH_REQUEST", this._handleOverlaySoundboardSoundsFetchRequest)
   }
@@ -39,13 +39,13 @@ class y extends p.Z {
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, N(this, "playingSoundsWeb", new Map), N(this, "_stopAndClearSounds", () => {
+    super(...e), t = this, y(this, "playingSoundsWeb", new Map), y(this, "_stopAndClearSounds", () => {
       c.Z.supports(O.AN.SAMPLE_PLAYBACK) && c.Z.getMediaEngine().eachConnection(e => {
         e.stopAllSamplesLocalPlayback()
       }), this.playingSoundsWeb.forEach(e => {
         e.pause(), e.src = ""
       }), this.playingSoundsWeb = new Map
-    }), N(this, "_playSound", async function(e) {
+    }), y(this, "_playSound", async function(e) {
       let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1,
         r = arguments.length > 2 ? arguments[2] : void 0,
         i = arguments.length > 3 ? arguments[3] : void 0,
@@ -61,9 +61,9 @@ class y extends p.Z {
       } finally {
         (0, h.R)(e, r)
       }
-    }), N(this, "_handleOverlaySoundboardSoundsFetchRequest", () => {
+    }), y(this, "_handleOverlaySoundboardSoundsFetchRequest", () => {
       (0, h.w)()
-    }), N(this, "_handleOpenEducationModal", (e, t) => {
+    }), y(this, "_handleOpenEducationModal", (e, t) => {
       if (null == e) return;
       let l = s.Z.getChannel(t),
         c = d.ZP.getKeybindForAction(E.kg4.SOUNDBOARD_HOLD);
@@ -80,7 +80,7 @@ class y extends p.Z {
               "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                 return Object.getOwnPropertyDescriptor(n, e).enumerable
               }))), r.forEach(function(t) {
-                N(e, t, n[t])
+                y(e, t, n[t])
               })
             }
             return e
@@ -103,4 +103,4 @@ class y extends p.Z {
     })
   }
 }
-let I = new y
+let v = new I

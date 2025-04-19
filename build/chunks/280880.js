@@ -82,13 +82,13 @@ function E(e) {
     canCreateExpressions: g
   } = (0, s.XJ)(t);
   return (0, r.jsx)(o.ua7, {
-    text: c.NW.string(c.t["fHo+z8"]),
+    text: c.intl.string(c.t["fHo+z8"]),
     shouldShow: !g,
     children: e => (0, r.jsx)("li", h(_({
       className: u.soundButtonWrapper
     }, e), {
       children: (0, r.jsx)(o.kL8, h(_({}, p), {
-        "aria-label": c.NW.formatToPlainString(c.t.c1qVYm, {
+        "aria-label": c.intl.formatToPlainString(c.t.c1qVYm, {
           guildName: t.name
         }),
         className: a()(f ? d.soundAddButtonRefresh : d.soundAddButton, {
@@ -106,7 +106,7 @@ function E(e) {
             variant: "text-xs/medium",
             color: g ? void 0 : "text-muted",
             className: d.soundAddTextRefresh,
-            children: c.NW.string(c.t["8Fu/S0"])
+            children: c.intl.string(c.t["8Fu/S0"])
           })]
         }) : (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(o.qJs, {
@@ -115,7 +115,7 @@ function E(e) {
           }), (0, r.jsx)(o.Text, {
             variant: "text-xs/semibold",
             color: g ? "currentColor" : "text-muted",
-            children: c.NW.string(c.t["8Fu/S0"])
+            children: c.intl.string(c.t["8Fu/S0"])
           })]
         })
       }))

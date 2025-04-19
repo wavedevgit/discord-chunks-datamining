@@ -1,11 +1,11 @@
 /** Chunk was on 48157 **/
 n.d(t, {
-  Z: () => N
+  Z: () => j
 }), n(388685), n(953529);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  l = n.n(a),
+  l = n(120356),
+  a = n.n(l),
   o = n(442837),
   s = n(481060),
   c = n(447543),
@@ -24,35 +24,35 @@ var r = n(200651),
   E = n(388032),
   O = n(583136);
 
-function N(e) {
+function j(e) {
   let {
     invite: t,
     isMemberOfGuild: n,
-    inviterId: a,
+    inviterId: l,
     onTransitionToInviteChannel: c,
     onAcceptInstantInvite: d
-  } = e, p = i.useRef(null), [f, h] = i.useState(!0), [N, C] = i.useState(!1), S = t.state === v.r2o.ACCEPTING, I = (0, o.e7)([u.Z], () => u.Z.useReducedMotion);
+  } = e, p = i.useRef(null), [f, h] = i.useState(!0), [j, S] = i.useState(!1), I = t.state === v.r2o.ACCEPTING, N = (0, o.e7)([u.Z], () => u.Z.useReducedMotion);
   i.useLayoutEffect(() => {
     var e, t;
-    C((null != (t = null == (e = p.current) ? void 0 : e.clientHeight) ? t : 0) > 328)
-  }, [C]);
+    S((null != (t = null == (e = p.current) ? void 0 : e.clientHeight) ? t : 0) > 328)
+  }, [S]);
   let T = (0, m.PC)(t),
     P = i.useCallback(() => {
-      N && f && h(!1)
-    }, [f, N]),
+      j && f && h(!1)
+    }, [f, j]),
     A = i.useCallback(() => {
-      N && (f || h(!0))
-    }, [f, N]),
+      j && (f || h(!0))
+    }, [f, j]),
     w = i.useMemo(() => {
       var e;
-      return N && (null == (e = p.current) ? void 0 : e.clientHeight) != null ? {
+      return j && (null == (e = p.current) ? void 0 : e.clientHeight) != null ? {
         height: f ? 328 : p.current.clientHeight + 24 + 65,
-        transition: I ? void 0 : "height 0.2s ease"
+        transition: N ? void 0 : "height 0.2s ease"
       } : {}
-    }, [f, N, I]);
+    }, [f, j, N]);
   return null == T ? (0, r.jsx)(y.Z, {}) : (0, r.jsxs)(s.P3F, {
-    className: l()(O.guildInviteContainer, {
-      [O.clickable]: N && f
+    className: a()(O.guildInviteContainer, {
+      [O.clickable]: j && f
     }),
     onClick: P,
     style: w,
@@ -78,7 +78,7 @@ function N(e) {
           profile: T
         })]
       })]
-    }), N && !f ? (0, r.jsx)(s.zxk, {
+    }), j && !f ? (0, r.jsx)(s.zxk, {
       look: s.zxk.Looks.LINK,
       color: s.zxk.Colors.TRANSPARENT,
       size: s.zxk.Sizes.NONE,
@@ -88,13 +88,13 @@ function N(e) {
       children: (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "interactive-normal",
-        children: E.NW.string(E.t.xdCLeH)
+        children: E.intl.string(E.t.xdCLeH)
       })
     }) : null, (0, r.jsxs)("div", {
-      className: l()(O.footer, {
-        [O.floatingFooter]: N
+      className: a()(O.footer, {
+        [O.floatingFooter]: j
       }),
-      children: [N && f ? (0, r.jsx)("div", {
+      children: [j && f ? (0, r.jsx)("div", {
         className: O.gradient
       }) : null, (0, r.jsxs)("div", {
         className: O.footerContent,
@@ -102,12 +102,12 @@ function N(e) {
           className: O.separator
         }), (0, r.jsx)("div", {
           className: O.buttonContainer,
-          children: (0, r.jsx)(j, {
+          children: (0, r.jsx)(C, {
             invite: t,
             profile: T,
             isMemberOfGuild: n,
-            inviterId: a,
-            submitting: S,
+            inviterId: l,
+            submitting: I,
             onTransitionToInviteChannel: c,
             onAcceptInstantInvite: d
           })
@@ -117,12 +117,12 @@ function N(e) {
   })
 }
 
-function j(e) {
+function C(e) {
   let {
     invite: t,
     profile: n,
-    isMemberOfGuild: a,
-    inviterId: l,
+    isMemberOfGuild: l,
+    inviterId: a,
     submitting: o,
     onTransitionToInviteChannel: s,
     onAcceptInstantInvite: u
@@ -132,13 +132,13 @@ function j(e) {
   } = (0, f.ZP)(n, f.F3.INVITE), {
     analyticsLocations: _
   } = (0, p.ZP)(d.Z.INVITE_EMBED), b = i.useCallback(() => {
-    let e = a ? "transition" : "accept";
+    let e = l ? "transition" : "accept";
     (0, c.r$)({
       invite: t,
       action: e,
-      inviter_id: l
+      inviter_id: a
     }, _)
-  }, [t, l, _, a]);
+  }, [t, a, _, l]);
   return null == g ? null : (0, r.jsx)(h.o, {
     guildId: m,
     ctaType: g,

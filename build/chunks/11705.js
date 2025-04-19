@@ -33,7 +33,7 @@ let m = e => {
         children: [!n && (0, r.jsx)(a.v, {}), (0, r.jsxs)(i.Text, {
           variant: "text-xs/normal",
           className: _.tierPrice,
-          children: [(0, o.T4)(v.price, v.currency), " ", u.NW.format(u.t.isLGyc, {
+          children: [(0, o.T4)(v.price, v.currency), " ", u.intl.format(u.t.isLGyc, {
             period: (0, l.JE)({
               interval: v.interval,
               interval_count: v.interval_count

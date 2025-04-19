@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(236413),
-  s = n(961926),
-  l = n(314224),
+  l = n(961926),
+  s = n(314224),
   a = n(849715),
   o = n(591026),
   c = n(813922);
@@ -18,7 +18,7 @@ function d(e) {
     isLoading: n,
     onChangeRule: d
   } = e;
-  return null == t ? null : (0, i.DO)(t) ? (0, r.jsx)(l.Z, {
+  return null == t ? null : (0, i.DO)(t) ? (0, r.jsx)(s.Z, {
     rule: t,
     isLoading: n,
     onChangeRule: d
@@ -26,7 +26,7 @@ function d(e) {
     rule: t,
     isLoading: n,
     onChangeRule: d
-  }) : (0, i.Fn)(t) ? (0, r.jsx)(s.Z, {
+  }) : (0, i.Fn)(t) ? (0, r.jsx)(l.Z, {
     rule: t,
     isLoading: n,
     onChangeRule: d

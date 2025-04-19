@@ -13,10 +13,10 @@ var r = n(200651),
   E = n(906732),
   d = n(963249),
   _ = n(450839),
-  N = n(163684),
-  I = n(518638),
-  O = n(748770),
-  T = n(594174),
+  I = n(163684),
+  O = n(518638),
+  T = n(748770),
+  N = n(594174),
   S = n(626135),
   R = n(74538),
   A = n(243778),
@@ -28,10 +28,10 @@ var r = n(200651),
 let m = e => {
   let {
     dismissibleContent: t
-  } = e, n = (0, I.a0)(), m = (0, o.e7)([T.default], () => R.ZP.isPremiumExactly(T.default.getCurrentUser(), C.p9.TIER_2)), {
+  } = e, n = (0, O.a0)(), m = (0, o.e7)([N.default], () => R.ZP.isPremiumExactly(N.default.getCurrentUser(), C.p9.TIER_2)), {
     enabled: g,
     getNitroCTA: y
-  } = N.g.useExperiment({
+  } = I.g.useExperiment({
     location: "OutboundPromotionNotice"
   }, {
     autoTrackExposure: !1,
@@ -83,17 +83,17 @@ let m = e => {
       }), e)
     })
   }, [b, h]), k = i.useCallback(() => {
-    c.Z.open(P.oAB.INVENTORY), O.ZP.dismissOutboundPromotionNotice()
+    c.Z.open(P.oAB.INVENTORY), T.ZP.dismissOutboundPromotionNotice()
   }, []), Z = i.useCallback(() => {
     S.default.track(P.rMx.OUTBOUND_PROMOTION_NOTICE_CLICKED), y ? M() : k()
   }, [y, M, k]);
   if (null == n) return null;
-  let L = e => (0, r.jsxs)(s.qXd, {
+  let j = e => (0, r.jsxs)(s.qXd, {
     color: s.DM8.PREMIUM_TIER_2,
     children: [(0, r.jsx)(s.RyX, {
       noticeType: P.kVF.OUTBOUND_PROMOTION,
       onClick: () => {
-        O.ZP.dismissOutboundPromotionNotice(), null !== e && e(p.L.USER_DISMISS)
+        T.ZP.dismissOutboundPromotionNotice(), null !== e && e(p.L.USER_DISMISS)
       }
     }), (0, r.jsx)(s.SrA, {
       size: "md",
@@ -102,15 +102,15 @@ let m = e => {
     }), g ? y ? (0, r.jsxs)(l.xv, {
       variant: "text-sm/normal",
       className: f.text,
-      children: [D.NW.string(D.t["5JMiOj"]), " ", D.NW.format(D.t.fjSvsL, {
+      children: [D.intl.string(D.t["5JMiOj"]), " ", D.intl.format(D.t.fjSvsL, {
         onClick: k
       })]
-    }) : D.NW.string(D.t["5JMiOj"]) : D.NW.string(D.t["Pzh+Gx"]), (0, r.jsx)(s.NoS, {
+    }) : D.intl.string(D.t["5JMiOj"]) : D.intl.string(D.t["Pzh+Gx"]), (0, r.jsx)(s.NoS, {
       noticeType: P.kVF.OUTBOUND_PROMOTION,
       onClick: () => {
         Z(), null !== e && e(p.L.TAKE_ACTION)
       },
-      children: y ? D.NW.string(D.t.pj0XBA) : D.NW.string(D.t.jVcuVV)
+      children: y ? D.intl.string(D.t.pj0XBA) : D.intl.string(D.t.jVcuVV)
     })]
   });
   return U ? (0, r.jsx)(A.O1, {
@@ -126,7 +126,7 @@ let m = e => {
         visibleContent: t,
         markAsDismissed: n
       } = e;
-      if (t === a.z.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR) return L(n)
+      if (t === a.z.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR) return j(n)
     }
-  }) : L(null)
+  }) : j(null)
 }

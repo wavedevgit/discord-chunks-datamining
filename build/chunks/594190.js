@@ -29,8 +29,8 @@ var i, a = n(392711),
   I = n(77498),
   S = n(283595),
   T = n(417363),
-  N = n(626135),
-  A = n(70956),
+  A = n(626135),
+  N = n(70956),
   C = n(877481),
   R = n(823379),
   P = n(358085),
@@ -157,8 +157,8 @@ let B = new m.Z("RunningGameStore"),
     }],
     name: p.Z.get(x.ABu.SPOTIFY).name
   }],
-  W = [],
-  Y = !0,
+  Y = [],
+  W = !0,
   K = new Set,
   z = [],
   q = [],
@@ -318,7 +318,7 @@ function eO() {
 
 function eI(e) {
   let [t, n, r] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [eq, I.Z, S.Z], i = G(j({}, e), {
-    played: null != e.lastFocused && 0 !== e.lastFocused ? l()(new Date(e.lastFocused * A.Z.Millis.SECOND)).fromNow() : " ",
+    played: null != e.lastFocused && 0 !== e.lastFocused ? l()(new Date(e.lastFocused * N.Z.Millis.SECOND)).fromNow() : " ",
     overlay: eb(e),
     verified: n.isGameInDatabase(e),
     detectable: ey(e)
@@ -356,17 +356,17 @@ function eT() {
       })
     }
     return t
-  }, []), e && eN(), e
+  }, []), e && eA(), e
 }
 
-function eN() {
+function eA() {
   if (!__OVERLAY__ && P.isPlatformEmbedded) {
     let e = [...z, ...o().values(et.gameOverrides)];
     w.ZP.setGameCandidateOverrides(e)
   }
 }
 
-function eA(e) {
+function eN(e) {
   return null != $[e.exePath] ? x.GQo.DISCORD : /steamapps/.test(e.cmdLine) ? x.GQo.STEAM : /-epicapp/.test(e.cmdLine) ? x.GQo.EPIC : e.distributor
 }
 
@@ -416,7 +416,7 @@ function eD(e) {
 }
 
 function eL() {
-  Y = !1
+  W = !1
 }
 
 function ex(e) {
@@ -447,11 +447,11 @@ function ej(e) {
   } else t = eg(r), r.hidden && (ee[t] = !0), r.hidden = !1;
   (null == r.lastFocused || 0 === r.lastFocused) && (r.lastFocused = Math.floor(Date.now() / 1e3)), et.gameOverrides[t] = G(j({}, r), {
     add: !0
-  }), eC(Q), eN(), eO(), em()
+  }), eC(Q), eA(), eO(), em()
 }
 
 function eU() {
-  eN()
+  eA()
 }
 
 function eG(e) {
@@ -471,11 +471,11 @@ function eF(e) {
     }
   }).filter(e => {
     if (el.has(e.pid) || ec.has(e.cleanedExePath)) return !1;
-    let t = W.some(t => e.cleanedExePath.includes(t));
+    let t = Y.some(t => e.cleanedExePath.includes(t));
     return t && el.add(e.pid), t
   }).map(e => e.cleanedExePath);
-  t.length > 0 && N.default.track(x.rMx.GAME_DETECTION_DEBUGGING_KEYWORD_MATCH, {
-    keywords: W,
+  t.length > 0 && A.default.track(x.rMx.GAME_DETECTION_DEBUGGING_KEYWORD_MATCH, {
+    keywords: Y,
     paths: t,
     debugging_level: eu,
     interval_seconds: ed
@@ -498,7 +498,7 @@ function eZ(e) {
   let {
     game: t
   } = e, n = ey(t);
-  et.enableDetection[eg(t)] = !n, eO(), N.default.track(x.rMx.USER_SETTINGS_GAME_DETECTION_TOGGLE, {
+  et.enableDetection[eg(t)] = !n, eO(), A.default.track(x.rMx.USER_SETTINGS_GAME_DETECTION_TOGGLE, {
     enabled: !n
   })
 }
@@ -514,17 +514,17 @@ function eH(e) {
   let i = !1;
   Q.forEach(n => {
     eg(n) === t && (n.name = e.newName, i = !0)
-  }), eN(), eO(), i && em()
-}
-
-function eW(e) {
-  let t = eg(e.game);
-  delete et.gameOverrides[t], delete et.enableOverlay[t], delete et.enableDetection[t], et.gamesSeen = et.gamesSeen.filter(e => eg(e) !== t), ee[t] && (Q.forEach(e => {
-    t === eg(e) && (e.hidden = !0)
-  }), delete ee[t], em()), eN(), eO()
+  }), eA(), eO(), i && em()
 }
 
 function eY(e) {
+  let t = eg(e.game);
+  delete et.gameOverrides[t], delete et.enableOverlay[t], delete et.enableDetection[t], et.gamesSeen = et.gamesSeen.filter(e => eg(e) !== t), ee[t] && (Q.forEach(e => {
+    t === eg(e) && (e.hidden = !0)
+  }), delete ee[t], em()), eA(), eO()
+}
+
+function eW(e) {
   var t;
   if (__OVERLAY__ || !P.isPlatformEmbedded) return;
   let n = w.ZP.getDiscordUtils().notifyGameLaunched;
@@ -568,7 +568,7 @@ function eK() {
   }), e = e.filter(e => null != e.executables && e.executables.length > 0), w.ZP.setObservedGamesCallback(e, e => {
     let n = [],
       i = {};
-    e = e.filter(e => (e.distributor = eA(e), e.isLauncher = e.isLauncher || t.has(e.exeName), e.isLauncher && null != e.id && (i[e.id] = e), e.windowHandle = eP(e.pid, e.windowHandle), null == H.find(t => {
+    e = e.filter(e => (e.distributor = eN(e), e.isLauncher = e.isLauncher || t.has(e.exeName), e.isLauncher && null != e.id && (i[e.id] = e), e.windowHandle = eP(e.pid, e.windowHandle), null == H.find(t => {
       let {
         name: n
       } = t;
@@ -579,7 +579,7 @@ function eK() {
       type: "RUNNING_STREAMER_TOOLS_CHANGE",
       count: ei
     })), Q = e, J = n, r = i, em()
-  }), eN()
+  }), eA()
 });
 class ez extends(i = c.ZP.Store) {
   initialize() {
@@ -596,7 +596,7 @@ class ez extends(i = c.ZP.Store) {
     if (o().values(null != (t = a.gameOverrides) ? t : {}).forEach(e => {
         let t = eg(e);
         et.gameOverrides[t] = e
-      }), et.enableOverlay = null != (n = a.enableOverlay) ? n : {}, et.enableOverlayV3 = null != (r = a.enableOverlayV3) ? r : {}, et.enableDetection = null != (i = a.enableDetection) ? i : {}, eN(), Array.isArray(a.gamesSeen))
+      }), et.enableOverlay = null != (n = a.enableOverlay) ? n : {}, et.enableOverlayV3 = null != (r = a.enableOverlayV3) ? r : {}, et.enableDetection = null != (i = a.enableDetection) ? i : {}, eA(), Array.isArray(a.gamesSeen))
       for (let e of a.gamesSeen) "number" == typeof e.id && (e.nativeProcessObserverId = e.id, delete e.id, s = !0);
     this.waitFor(I.Z, g.Z), Z = a.gamesSeen, this.syncWith([g.Z], eK), this.syncWith([S.Z, I.Z, T.Z], o().throttle(eT, 1e3)), s && eO()
   }
@@ -680,7 +680,7 @@ class ez extends(i = c.ZP.Store) {
     return null != (n = null == (t = J.find(t => (0, E.Z)(e, t.windowHandle))) ? void 0 : t.name) ? n : null
   }
   get canShowAdminWarning() {
-    return Y
+    return W
   }
   isDetectionEnabled(e) {
     return ey(e)
@@ -702,9 +702,9 @@ let eq = new ez(d.Z, {
     RUNNING_GAME_TOGGLE_OVERLAY: eV,
     RUNNING_GAME_TOGGLE_DETECTION: eZ,
     RUNNING_GAME_EDIT_NAME: eH,
-    RUNNING_GAME_DELETE_ENTRY: eW,
+    RUNNING_GAME_DELETE_ENTRY: eY,
     GAMES_DATABASE_UPDATE: en,
-    GAME_LAUNCH_SUCCESS: eY,
+    GAME_LAUNCH_SUCCESS: eW,
     GAME_DETECTION_WATCH_CANDIDATE_GAMES_START: eU,
     GAME_DETECTION_DEBUGGING_START: eG,
     GAME_DETECTION_DEBUGGING_STOP: eB,

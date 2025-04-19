@@ -20,12 +20,12 @@ var r = n(200651),
   _ = n(984370),
   E = n(518311),
   O = n(199104),
-  N = n(108427),
-  y = n(210887),
-  I = n(974042),
-  v = n(849862),
-  C = n(666286),
-  S = n(596957),
+  y = n(108427),
+  I = n(210887),
+  v = n(974042),
+  C = n(849862),
+  S = n(666286),
+  N = n(596957),
   T = n(981631),
   P = n(723359),
   j = n(388032),
@@ -35,7 +35,7 @@ function Z() {
   return (0, r.jsx)("div", {
     className: A.inviteToolbar,
     children: (0, r.jsx)(E.Z, {
-      tooltip: j.NW.string(j.t.HfOgAw)
+      tooltip: j.intl.string(j.t.HfOgAw)
     })
   })
 }
@@ -51,14 +51,14 @@ let x = function(e) {
       l.replace(T.Z5c.ME)
     })
   }, [l, n]), i.useEffect(() => {
-    p.Y(T.Z5c.FRIENDS), (0, N.e)("friends")
+    p.Y(T.Z5c.FRIENDS), (0, y.e)("friends")
   }, []);
-  let x = (0, c.e7)([y.Z], () => y.Z.theme),
-    L = (0, v.If)(),
+  let x = (0, c.e7)([I.Z], () => I.Z.theme),
+    L = (0, C.If)(),
     {
       section: w,
       rows: R
-    } = (0, c.cj)([I.ZP], () => I.ZP.getState()),
+    } = (0, c.cj)([v.ZP], () => v.ZP.getState()),
     D = (0, c.e7)([b.Z], () => b.Z.getSuggestionCount()),
     k = i.useMemo(() => R.getRelationshipCounts(), [R]);
   i.useEffect(() => {
@@ -69,26 +69,26 @@ let x = function(e) {
     },
     U = (0, g.Dt)(),
     G = (0, g.Dt)(),
-    W = [{
+    V = [{
       id: T.pJs.ONLINE,
       show: !E || R.filter(T.pJs.ONLINE).length > 0,
-      content: j.NW.string(j.t.b9w3bG),
+      content: j.intl.string(j.t.b9w3bG),
       className: A.item
     }, {
       id: T.pJs.ALL,
       show: !E || k[T.OGo.FRIEND] > 0,
-      content: j.NW.string(j.t.PfjFjY),
+      content: j.intl.string(j.t.PfjFjY),
       className: A.item
     }, {
       id: T.pJs.PENDING,
       show: !E || R.filter(T.pJs.PENDING).length > 0,
       content: (0, r.jsxs)(r.Fragment, {
-        children: [j.NW.string(j.t.p6IHGB), L > 0 && (0, r.jsx)(u.mAB, {
+        children: [j.intl.string(j.t.p6IHGB), L > 0 && (0, r.jsx)(u.mAB, {
           count: L,
           className: A.badge
         })]
       }),
-      ariaLabel: j.NW.formatToPlainString(j.t.OAC0Z2, {
+      ariaLabel: j.intl.formatToPlainString(j.t.OAC0Z2, {
         count: L.toString()
       }),
       className: A.item
@@ -96,12 +96,12 @@ let x = function(e) {
       id: T.pJs.SUGGESTIONS,
       show: D > 0,
       content: (0, r.jsxs)(r.Fragment, {
-        children: [j.NW.string(j.t["8rSi19"]), (0, r.jsx)(u.mAB, {
+        children: [j.intl.string(j.t["8rSi19"]), (0, r.jsx)(u.mAB, {
           count: D,
           className: A.badge
         })]
       }),
-      ariaLabel: j.NW.formatToPlainString(j.t.AbMQp6, {
+      ariaLabel: j.intl.formatToPlainString(j.t.AbMQp6, {
         count: D.toString()
       }),
       className: A.item
@@ -109,16 +109,16 @@ let x = function(e) {
       id: T.pJs.ADD_FRIEND,
       show: !0,
       content: (0, r.jsx)("span", {
-        children: j.NW.string(j.t.j0wbEx)
+        children: j.intl.string(j.t.j0wbEx)
       }),
-      ariaLabel: j.NW.string(j.t.j0wbEx),
+      ariaLabel: j.intl.string(j.t.j0wbEx),
       className: a()(A.item, A.addFriend)
     }];
   return (0, r.jsxs)("main", {
     className: A.container,
-    "aria-label": j.NW.string(j.t.TdEu5e),
+    "aria-label": j.intl.string(j.t.TdEu5e),
     children: [(0, r.jsx)(f.yY, {
-      location: j.NW.string(j.t.TdEu5e)
+      location: j.intl.string(j.t.TdEu5e)
     }), (0, r.jsx)(u.f6W, {
       theme: x,
       children: e => (0, r.jsxs)(_.Z, {
@@ -132,14 +132,14 @@ let x = function(e) {
           "aria-hidden": !0
         }), (0, r.jsx)(_.Z.Title, {
           id: U,
-          children: j.NW.string(j.t.TdEu5e)
+          children: j.intl.string(j.t.TdEu5e)
         }), (0, r.jsx)(_.Z.Divider, {}), (0, r.jsx)(u.njP, {
-          "aria-label": j.NW.string(j.t.TdEu5e),
+          "aria-label": j.intl.string(j.t.TdEu5e),
           selectedItem: w,
           type: "top-pill",
           onItemSelect: M,
           className: A.tabBar,
-          children: W.filter(e => e.show).map(e => (0, r.jsx)(u.njP.Item, {
+          children: V.filter(e => e.show).map(e => (0, r.jsx)(u.njP.Item, {
             id: e.id,
             className: e.className,
             "aria-label": e.ariaLabel,
@@ -153,7 +153,7 @@ let x = function(e) {
         id: w,
         className: A.peopleColumn,
         "aria-labelledby": G,
-        children: w === T.pJs.ADD_FRIEND ? (0, r.jsx)(C.Z, {}) : (0, r.jsx)(S.Z, {
+        children: w === T.pJs.ADD_FRIEND ? (0, r.jsx)(S.Z, {}) : (0, r.jsx)(N.Z, {
           titleId: G
         })
       }), (0, r.jsx)("div", {

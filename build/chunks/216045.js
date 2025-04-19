@@ -1,12 +1,12 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => G
+  Z: () => F
 }), n(388685);
-var r = n(200651),
-  i = n(192379),
+var i = n(200651),
+  r = n(192379),
   s = n(512722),
-  a = n.n(s),
-  l = n(442837),
+  l = n.n(s),
+  a = n(442837),
   o = n(704215),
   c = n(622535),
   d = n(481060),
@@ -18,16 +18,16 @@ var r = n(200651),
   f = n(906732),
   b = n(475977),
   _ = n(605236),
-  N = n(243778),
-  x = n(957730),
-  E = n(442933),
-  j = n(53691),
-  C = n(267717),
-  O = n(296810),
-  S = n(678135),
-  v = n(610794),
-  T = n(935147),
-  I = n(643879),
+  x = n(243778),
+  E = n(957730),
+  j = n(442933),
+  C = n(53691),
+  O = n(267717),
+  S = n(296810),
+  v = n(678135),
+  T = n(610794),
+  I = n(935147),
+  N = n(643879),
   y = n(373230),
   A = n(246946),
   P = n(25990),
@@ -36,66 +36,66 @@ var r = n(200651),
   Z = n(74538),
   w = n(413182),
   k = n(695346),
-  W = n(265159),
-  L = n(532495),
-  B = n(981631),
-  M = n(921944),
-  U = n(388032),
-  V = n(775274);
+  L = n(265159),
+  B = n(532495),
+  M = n(981631),
+  U = n(921944),
+  V = n(388032),
+  G = n(775274);
 
-function G() {
+function F() {
   var e, t;
-  let n = (0, l.e7)([R.default], () => {
+  let n = (0, a.e7)([R.default], () => {
       let e = R.default.getCurrentUser();
-      return a()(null != e, "UserSettingsProfileCustomization: user cannot be undefined"), e
+      return l()(null != e, "UserSettingsProfileCustomization: user cannot be undefined"), e
     }),
-    s = (0, l.e7)([A.Z], () => A.Z.hidePersonalInformation),
-    G = (0, l.cj)([P.Z], () => P.Z.getAllPending()),
+    s = (0, a.e7)([A.Z], () => A.Z.hidePersonalInformation),
+    F = (0, a.cj)([P.Z], () => P.Z.getAllPending()),
     {
-      pendingBio: F,
-      pendingAvatar: H
-    } = G,
-    z = function(e, t) {
+      pendingBio: H,
+      pendingAvatar: z
+    } = F,
+    Y = function(e, t) {
       if (null == e) return {};
-      var n, r, i = function(e, t) {
+      var n, i, r = function(e, t) {
         if (null == e) return {};
-        var n, r, i = {},
+        var n, i, r = {},
           s = Object.keys(e);
-        for (r = 0; r < s.length; r++) n = s[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-        return i
+        for (i = 0; i < s.length; i++) n = s[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+        return r
       }(e, t);
       if (Object.getOwnPropertySymbols) {
         var s = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
       }
-      return i
-    }(G, ["pendingBio", "pendingAvatar"]),
-    Y = (0, I.SD)({
+      return r
+    }(F, ["pendingBio", "pendingAvatar"]),
+    W = (0, N.SD)({
       userId: n.id,
-      image: H
+      image: z
     }),
-    K = (0, l.e7)([P.Z], () => P.Z.showNotice()),
-    q = k.dN.useSetting() && null != F ? x.ZP.parse(void 0, F).content : F,
+    K = (0, a.e7)([P.Z], () => P.Z.showNotice()),
+    q = k.dN.useSetting() && null != H ? E.ZP.parse(void 0, H).content : H,
     X = Z.ZP.canUsePremiumProfileCustomization(n),
     {
       analyticsLocations: Q
-    } = (0, f.ZP)(h.Z.PROFILE),
+    } = (0, f.ZP)(h.Z.USER_SETTINGS_USER_PROFILE),
     J = (0, y.T)({
       location: "UserSettingsProfileCustomization"
     }),
     $ = (0, _.wE)(o.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE),
     ee = J && !$;
-  i.useEffect(() => {
+  r.useEffect(() => {
     ee && (0, _.EW)(o.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE, {
       forceTrack: !0
     })
   }, [ee]);
-  let et = (0, E.H)("UserSettingsProfileCustomization"),
-    [en, er] = (0, N.US)(et ? [o.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE] : []),
-    ei = en === o.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE;
-  i.useEffect(() => {
-    ei && er(M.L.TAKE_ACTION)
-  }, [ei, er]), i.useEffect(() => () => u.Z.wait(m.W3), []);
+  let et = (0, j.H)("UserSettingsProfileCustomization"),
+    [en, ei] = (0, x.US)(et ? [o.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE] : []),
+    er = en === o.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE;
+  r.useEffect(() => {
+    er && ei(U.L.TAKE_ACTION)
+  }, [er, ei]), r.useEffect(() => () => u.Z.wait(m.W3), []);
   let es = "UserSettingsProfileCustomization";
   (0, p.j)({
     location: es + " auto on",
@@ -104,76 +104,76 @@ function G() {
     location: es + " auto off",
     autoTrackExposure: !1
   });
-  let [ea, el] = i.useState(!1), {
+  let [el, ea] = r.useState(!1), {
     showRedesign: eo
   } = w.b.useExperiment({
     location: "profile customization"
-  }), ec = !X, ed = i.useRef(null);
-  return s ? (0, r.jsx)(g.Z, {}) : (0, r.jsxs)(f.Gt, {
+  }), ec = !X, ed = r.useRef(null);
+  return s ? (0, i.jsx)(g.Z, {}) : (0, i.jsxs)(f.Gt, {
     value: Q,
-    children: [(0, r.jsx)(b.Z, {}), (0, r.jsx)(O.Z, {
-      profilePreview: (0, r.jsx)(S.Z, (e = function(e) {
+    children: [(0, i.jsx)(b.Z, {}), (0, i.jsx)(S.Z, {
+      profilePreview: (0, i.jsx)(v.Z, (e = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            i = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
+          }))), i.forEach(function(t) {
+            var i;
+            i = n[t], t in e ? Object.defineProperty(e, t, {
+              value: i,
               enumerable: !0,
               configurable: !0,
               writable: !0
-            }) : e[t] = r
+            }) : e[t] = i
           })
         }
         return e
       }({
         user: n,
         canUsePremiumCustomization: X,
-        onUpsellClick: W.Z,
+        onUpsellClick: L.Z,
         pendingBio: q
-      }, z), t = t = {
-        pendingAvatar: Y,
+      }, Y), t = t = {
+        pendingAvatar: W,
         showNameplatePreview: !0
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
+          var i = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, i)
         }
         return n
       })(Object(t)).forEach(function(n) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
       }), e)),
-      children: (0, r.jsx)(L.Z, {})
-    }), eo && (0, r.jsx)(v.Z, {}), (0, r.jsx)(c.$, {
+      children: (0, i.jsx)(B.Z, {})
+    }), eo && (0, i.jsx)(T.Z, {}), (0, i.jsx)(c.$, {
       innerRef: ed,
-      onChange: e => el(e),
+      onChange: e => ea(e),
       threshold: .25,
       active: ec,
-      children: (0, r.jsx)("div", {
+      children: (0, i.jsx)("div", {
         ref: ed,
-        children: (0, r.jsx)(T.Z, {
+        children: (0, i.jsx)(I.Z, {
           user: n,
           shouldShow: ec,
-          isVisible: ea
+          isVisible: el
         })
       })
-    }), ec && !K && (0, r.jsx)(j.p, {
-      className: V.floatingNitroUpsell,
-      showUpsell: ec && !ea,
-      text: U.NW.format(U.t.TmfgIy, {
-        onClick: () => (0, C.y)()
+    }), ec && !K && (0, i.jsx)(C.p, {
+      className: G.floatingNitroUpsell,
+      showUpsell: ec && !el,
+      text: V.intl.format(V.t.TmfgIy, {
+        onClick: () => (0, O.y)()
       }),
       textVariant: "heading-md/medium",
-      button: (0, r.jsxs)(d.gtL, {
-        className: V.floatingNitroButton,
-        innerClassName: V.floatingNitroButtonInner,
+      button: (0, i.jsxs)(d.gtL, {
+        className: G.floatingNitroButton,
+        innerClassName: G.floatingNitroButtonInner,
         onClick: () => {
           var e;
-          D.default.track(B.rMx.TRY_IT_OUT_PRESET_CLICKED, {
+          D.default.track(M.rMx.TRY_IT_OUT_PRESET_CLICKED, {
             cta_variant: "floating_action_button"
           }), null == ed || null == (e = ed.current) || e.scrollIntoView({
             behavior: "smooth"
@@ -181,13 +181,13 @@ function G() {
         },
         color: d.zxk.Colors.GREEN,
         size: d.PhG.MEDIUM,
-        children: [(0, r.jsx)(d.SrA, {
+        children: [(0, i.jsx)(d.SrA, {
           size: "sm",
           color: "currentColor"
-        }), (0, r.jsx)(d.Text, {
+        }), (0, i.jsx)(d.Text, {
           variant: "text-sm/medium",
           color: "currentColor",
-          children: U.NW.string(U.t.uw9zIy)
+          children: V.intl.string(V.t.uw9zIy)
         })]
       })
     })]

@@ -1,12 +1,12 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => N
+  Z: () => x
 });
-var r = n(200651),
-  i = n(192379),
+var i = n(200651),
+  r = n(192379),
   s = n(120356),
-  a = n.n(s),
-  l = n(442837),
+  l = n.n(s),
+  a = n(442837),
   o = n(481060),
   c = n(921801),
   d = n(663389),
@@ -22,78 +22,78 @@ function _(e) {
   let {
     label: t,
     onChange: n,
-    enabled: i,
+    enabled: r,
     subLabel: s
   } = e;
-  return (0, r.jsx)(o.j7V, {
-    value: !!i,
+  return (0, i.jsx)(o.j7V, {
+    value: !!r,
     onChange: n,
     note: s,
     children: t
   })
 }
 
-function N() {
-  let e = (0, l.e7)([d.Z], () => d.Z.getSubsection()),
-    t = i.createRef(),
+function x() {
+  let e = (0, a.e7)([d.Z], () => d.Z.getSubsection()),
+    t = r.createRef(),
     {
       categories: n,
       initialized: s
-    } = (0, l.cj)([m.Z], () => m.Z.getEmailSettings());
-  i.useEffect(() => {
+    } = (0, a.cj)([m.Z], () => m.Z.getEmailSettings());
+  r.useEffect(() => {
     if (null == s)(0, u.Y7)();
     else if (e === g.vG.toUpperCase()) {
       var n;
       null == t || null == (n = t.current) || n.scrollIntoView(!0)
     }
   }, [s, t, e]);
-  let N = g.M0.reduce((e, t) => e || !!n[t], !1),
-    x = {
+  let x = g.M0.reduce((e, t) => e || !!n[t], !1),
+    E = {
       [g.$Z.COMMUNICATION]: p.s6.NOTIFICATIONS_EMAILS_COMMUNICATION,
       [g.$Z.SOCIAL]: p.s6.NOTIFICATIONS_EMAILS_SOCIAL,
       [g.$Z.UPDATES_AND_ANNOUNCEMENTS]: p.s6.NOTIFICATIONS_EMAILS_ANNOUNCEMENTS_AND_UPDATES,
       [g.$Z.TIPS]: p.s6.NOTIFICATIONS_EMAILS_TIPS,
       [g.$Z.RECOMMENDATIONS_AND_EVENTS]: p.s6.NOTIFICATIONS_EMAILS_RECOMMENDATIONS_AND_EVENTS
     };
-  return s ? (0, r.jsxs)(c.F, {
+  return s ? (0, i.jsxs)(c.F, {
     setting: p.s6.NOTIFICATIONS_EMAILS,
-    children: [(0, r.jsx)("div", {
+    children: [(0, i.jsx)("div", {
       ref: t
-    }), (0, r.jsxs)(o.hjN, {
+    }), (0, i.jsxs)(o.hjN, {
       className: b.marginTop40,
       tag: o.RB0.H1,
-      title: h.NW.string(h.t.TPchzM),
+      title: h.intl.string(h.t.TPchzM),
       children: [g.Od.map(e => {
         let {
           category: t,
-          label: i,
+          label: r,
           subLabel: s
-        } = e, a = x[t], l = (0, r.jsx)(_, {
-          label: i(),
+        } = e, l = E[t], a = (0, i.jsx)(_, {
+          label: r(),
           subLabel: s(),
           enabled: n[t],
           onChange: e => {
             (0, u.pR)(t, e)
           }
-        }, i());
-        return null != a ? (0, r.jsx)(c.F, {
-          setting: a,
-          children: l
-        }, i()) : l
-      }), (0, r.jsxs)(c.F, {
+        }, r());
+        return null != l ? (0, i.jsx)(c.F, {
+          setting: l,
+          children: a
+        }, r()) : a
+      }), (0, i.jsxs)(c.F, {
         setting: p.s6.NOTIFICATIONS_EMAILS_UNSUBSCRIBE_FROM_ALL_MARKETING_EMAILS,
-        children: [(0, r.jsx)(o.zxk, {
+        children: [(0, i.jsx)(o.zxk, {
           className: f.marketingUnsubscribeButton,
-          disabled: !N,
+          disabled: !x,
           look: o.iLD.LINK,
           color: o.Ttl.LINK,
           onClick: u.oc,
-          children: h.NW.string(h.t.Ra9Pws)
-        }), (0, r.jsx)(o.R94, {
+          children: h.intl.string(h.t.Ra9Pws)
+        }), (0, i.jsx)(o.R94, {
           type: o.geA.DESCRIPTION,
-          children: h.NW.string(h.t.iYjQ8f)
-        }), (0, r.jsx)(o.$i$, {
-          className: a()(b.marginTop40, b.marginBottom40)
+          children: h.intl.string(h.t.iYjQ8f)
+        }), (0, i.jsx)(o.$i$, {
+          className: l()(b.marginTop40, b.marginBottom40)
         })]
       })]
     })]

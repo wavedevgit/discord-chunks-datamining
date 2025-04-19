@@ -1,6 +1,6 @@
 /** Chunk was on 5863 **/
 n.d(t, {
-  Z: () => v
+  Z: () => j
 }), n(388685);
 var i = n(200651),
   s = n(192379),
@@ -15,44 +15,44 @@ var i = n(200651),
   g = n(197115),
   m = n(474936),
   x = n(981631),
-  N = n(388032),
-  p = n(749044);
+  p = n(388032),
+  v = n(749044);
 
-function v(e) {
+function j(e) {
   let {
     onClose: t
   } = e, n = (0, a.O)(), {
-    analyticsLocations: v
-  } = (0, d.ZP)(), [j, S] = s.useState(!1), f = s.useCallback(e => {
-    !j && e && (h.default.track(x.rMx.PREMIUM_UPSELL_VIEWED, {
+    analyticsLocations: j
+  } = (0, d.ZP)(), [S, N] = s.useState(!1), f = s.useCallback(e => {
+    !S && e && (h.default.track(x.rMx.PREMIUM_UPSELL_VIEWED, {
       type: m.cd.CUSTOM_NOTIFICATION_SOUNDS_SETTINGS_UPSELL,
       location: n.location,
-      location_stack: v
-    }), S(!0))
-  }, [n.location, v, j]), b = (0, o.O)(f, .8, !0);
+      location_stack: j
+    }), N(!0))
+  }, [n.location, j, S]), b = (0, o.O)(f, .8, !0);
   return (0, i.jsxs)("div", {
     ref: b,
-    className: p.container,
+    className: v.container,
     children: [(0, i.jsx)(l.SrA, {
       size: "md",
       color: c.JX.PREMIUM_TIER_2,
-      className: p.nitroWheel
+      className: v.nitroWheel
     }), (0, i.jsxs)(l.Text, {
-      className: p.text,
+      className: v.text,
       variant: "text-sm/normal",
-      children: [N.NW.string(N.t["Pb0O6+"]), " ", (0, i.jsx)(u.Z, {
+      children: [p.intl.string(p.t["Pb0O6+"]), " ", (0, i.jsx)(u.Z, {
         onClick: () => {
           t(), r.Z.open(x.oAB.PREMIUM)
         },
-        children: N.NW.string(N.t.hvVgAQ)
+        children: p.intl.string(p.t.hvVgAQ)
       })]
     }), (0, i.jsx)("div", {
-      className: p.nitroButton,
+      className: v.nitroButton,
       children: (0, i.jsx)(g.Z, {
         showGradient: !0,
-        buttonText: N.NW.string(N.t.pj0XBA),
+        buttonText: p.intl.string(p.t.pj0XBA),
         size: l.zxk.Sizes.SMALL,
-        shinyButtonClassName: p.nitroButton,
+        shinyButtonClassName: v.nitroButton,
         subscriptionTier: m.Si.TIER_2,
         premiumModalAnalyticsLocation: {
           section: x.jXE.PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL

@@ -54,7 +54,7 @@ function m(e) {
     }
     return i
   }(e, ["onClose", "analytics"]);
-  let m = d.NW.format(d.t["7aNIkZ"], {
+  let m = d.intl.format(d.t["7aNIkZ"], {
     onPressMore: function() {
       (0, o.Z)(), t(), c.default.track(u.rMx.PREMIUM_PROMOTION_OPENED, {
         location_section: u.jXE.VOICE_CHANNEL_EFFECTS_UPSELL_MODAL,
@@ -63,7 +63,7 @@ function m(e) {
     }
   });
   return (0, r.jsx)(s.Z, f({
-    title: d.NW.string(d.t.K49fZG),
+    title: d.intl.string(d.t.K49fZG),
     glowUp: m,
     body: m,
     artContainerClassName: p.artContainer,

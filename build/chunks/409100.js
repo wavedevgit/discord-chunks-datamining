@@ -64,14 +64,14 @@ let E = e => {
       shouldShowReferralTrialCopy: a,
       subscriptionTrial: o
     } = e;
-    return t && a ? f.NW.string(f.t.bXTClZ) : t && (n === d.Si.TIER_2 || i) ? (0, s.Rt)({
+    return t && a ? f.intl.string(f.t.bXTClZ) : t && (n === d.Si.TIER_2 || i) ? (0, s.Rt)({
       intervalType: null == o ? void 0 : o.interval,
       intervalCount: null == o ? void 0 : o.interval_count
-    }) : t ? f.NW.formatToPlainString(f.t.nTmm2t, {
+    }) : t ? f.intl.formatToPlainString(f.t.nTmm2t, {
       freeTrialText: r
     }) : void 0
   },
-  b = (e, t, n, r) => t || n ? f.NW.string(f.t.fkPGam) : e === d.Si.TIER_2 ? f.NW.formatToPlainString(f.t.bkQ4bG, {
+  b = (e, t, n, r) => t || n ? f.intl.string(f.t.fkPGam) : e === d.Si.TIER_2 ? f.intl.formatToPlainString(f.t.bkQ4bG, {
     percent: r
   }) : void 0,
   y = e => {
@@ -86,17 +86,17 @@ let E = e => {
       paymentModalBanner: I
     } = e, S = m(e, ["forceInverted", "subscriptionTier", "hasActivePromotion", "isPersistentCTA", "useShorterCTA", "showGradient", "confirmationFooter", "paymentModalBanner"]);
     let T = (0, o.ZP)(),
-      N = !v && ((0, i.wj)(T) || t),
-      A = (0, c.N)(),
-      C = null == A ? void 0 : A.subscription_trial,
+      A = !v && ((0, i.wj)(T) || t),
+      N = (0, c.N)(),
+      C = null == N ? void 0 : N.subscription_trial,
       R = (0, s.a5)({
         intervalType: null == C ? void 0 : C.interval,
         intervalCount: null == C ? void 0 : C.interval_count
       }),
       P = (0, l.Ng)(),
       w = null != C && n === C.sku_id,
-      D = (null == A ? void 0 : A.trial_id) === d.a7,
-      L = p ? f.NW.string(f.t.J61px8) : null != P ? b(n, y, g, P.discount.amount) : E({
+      D = (null == N ? void 0 : N.trial_id) === d.a7,
+      L = p ? f.intl.string(f.t.J61px8) : null != P ? b(n, y, g, P.discount.amount) : E({
         showTrialCTA: w,
         subscriptionTier: n,
         trialDurationCopy: R,
@@ -105,8 +105,8 @@ let E = e => {
         subscriptionTrial: C
       });
     return (0, r.jsx)(u.Z, h({
-      color: N ? a.Ttl.BRAND_INVERTED : a.Ttl.BRAND,
-      buttonShineClassName: "buttonShineClassName" in S ? S.buttonShineClassName : N ? _.brandShine : void 0,
+      color: A ? a.Ttl.BRAND_INVERTED : a.Ttl.BRAND,
+      buttonShineClassName: "buttonShineClassName" in S ? S.buttonShineClassName : A ? _.brandShine : void 0,
       buttonText: L,
       buttonTextClassName: w ? _.freeTrialText : void 0,
       onlyShineOnHover: !0,

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651);
 n(192379);
-var i = n(120356),
-  l = n.n(i),
+var l = n(120356),
+  i = n.n(l),
   s = n(216404);
 
 function a(e) {
@@ -13,7 +13,7 @@ function a(e) {
     separator: t = !1
   } = e;
   return (0, r.jsx)("div", {
-    className: l()(s.divider, {
+    className: i()(s.divider, {
       [s.separator]: t
     })
   })

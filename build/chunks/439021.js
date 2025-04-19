@@ -41,7 +41,7 @@ function u(e) {
       paymentRequestWallet: _
     } = e,
     p = {
-      paymentLabel: o.NW.string(o.t.ZURqX1),
+      paymentLabel: o.intl.string(o.t.ZURqX1),
       paymentRequestRef: f,
       renderConnectorView: !0,
       onStripePaymentMethodReceived: l,
@@ -57,7 +57,7 @@ function u(e) {
   return t = "applePay" === _ ? (0, r.jsx)(a.Ch, c({}, p)) : (0, r.jsx)(a.Tr, c({}, p)), (0, r.jsx)("div", {
     className: s.body,
     children: (0, r.jsx)(i.hjN, {
-      title: o.NW.string(o.t.eQ2bLi),
+      title: o.intl.string(o.t.eQ2bLi),
       children: t
     })
   })

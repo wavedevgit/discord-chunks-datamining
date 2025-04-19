@@ -31,7 +31,7 @@ let o = 60,
       p = d(),
       h = (e, t) => {
         let r = _(e, f, n ? p : void 0);
-        return null == r ? null : "string" == typeof r ? r : a.NW.formatToPlainString(r, {
+        return null == r ? null : "string" == typeof r ? r : a.intl.formatToPlainString(r, {
           count: t
         })
       };

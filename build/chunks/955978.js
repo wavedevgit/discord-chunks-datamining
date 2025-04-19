@@ -42,7 +42,7 @@ function y(e, t, n) {
           variant: "text-sm/medium",
           color: "interactive-normal",
           className: g.bodyText,
-          children: m.NW.format(m.t["q7/rgo"], {
+          children: m.intl.format(m.t["q7/rgo"], {
             username: null != I ? I : O.username,
             gameName: x,
             gameIcon: () => null != _ || null != E ? (0, i.jsx)(s.Z, {

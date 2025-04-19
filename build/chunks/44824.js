@@ -62,7 +62,7 @@ function d(e) {
     className: c,
     playable: h = !0,
     renderImageComponent: m,
-    alt: p = o.NW.string(o.t.I5gL2N),
+    alt: p = o.intl.string(o.t.I5gL2N),
     sourceMetadata: g
   } = e, b = function(e, l) {
     if (null == e) return {};

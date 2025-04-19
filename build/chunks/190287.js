@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(539854);
 var r = n(200651),
   i = n(192379),
-  s = n(442837),
-  l = n(481060),
+  l = n(442837),
+  s = n(481060),
   a = n(596454),
   o = n(318766),
   c = n(907040),
@@ -26,18 +26,18 @@ let h = e => {
       reasonMinLength: x,
       reasonMaxLength: b,
       placeholder: j,
-      position: N
-    } = e, [_, v] = i.useState(!1), O = (0, s.e7)([u.Z], () => u.Z.isGuildMetadataLoaded());
+      position: _
+    } = e, [v, O] = i.useState(!1), C = (0, l.e7)([u.Z], () => u.Z.isGuildMetadataLoaded());
     return (0, r.jsxs)("div", {
       className: p.reasonContainer,
-      children: [(0, r.jsx)(l.yRy, {
+      children: [(0, r.jsx)(s.yRy, {
         onRequestClose: () => {
-          v(!1)
+          O(!1)
         },
-        shouldShow: _,
+        shouldShow: v,
         position: "right",
         align: "top",
-        animation: l.yRy.Animation.NONE,
+        animation: s.yRy.Animation.NONE,
         renderPopout: e => {
           let {
             closePopout: t
@@ -55,7 +55,7 @@ let h = e => {
           children: (0, r.jsx)(o.Z, {
             active: !1,
             onClick: () => {
-              v(!0)
+              O(!0)
             },
             tabIndex: 0,
             renderButtonContents: null != d ? () => (0, r.jsx)(a.Z, {
@@ -66,7 +66,7 @@ let h = e => {
         })
       }), (0, r.jsxs)("div", {
         className: p.inputContainer,
-        children: [(0, r.jsx)(l.oil, {
+        children: [(0, r.jsx)(s.oil, {
           inputClassName: p.reason,
           placeholder: j,
           value: n,
@@ -76,14 +76,14 @@ let h = e => {
             g(e)
           },
           defaultDirty: (null == n ? void 0 : n.length) > 0
-        }, "text-input-".concat(N, "-").concat(O)), (null != (t = null == n ? void 0 : n.length) ? t : 0) > 0 || null != d ? (0, r.jsx)(l.zxk, {
+        }, "text-input-".concat(_, "-").concat(C)), (null != (t = null == n ? void 0 : n.length) ? t : 0) > 0 || null != d ? (0, r.jsx)(s.zxk, {
           className: p.clearStatusButton,
           onClick: f,
-          look: l.zxk.Looks.BLANK,
-          size: l.zxk.Sizes.NONE,
+          look: s.zxk.Looks.BLANK,
+          size: s.zxk.Sizes.NONE,
           tabIndex: -1,
           "aria-hidden": !0,
-          children: (0, r.jsx)(l.k$p, {
+          children: (0, r.jsx)(s.k$p, {
             size: "md",
             color: "currentColor",
             className: p.clearStatusIcon
@@ -97,8 +97,8 @@ let h = e => {
       reasonMinLength: t,
       reasonMaxLength: n,
       guildId: i,
-      reasons: s
-    } = e, l = [g.NW.string(g.t["9dhBGh"]), g.NW.string(g.t["8RmhKC"]), g.NW.string(g.t["2t0V8/"]), g.NW.string(g.t.l8WqCQ)], a = [];
+      reasons: l
+    } = e, s = [g.intl.string(g.t["9dhBGh"]), g.intl.string(g.t["8RmhKC"]), g.intl.string(g.t["2t0V8/"]), g.intl.string(g.t.l8WqCQ)], a = [];
     for (let e = 0; e < 4; e++) a.push((0, r.jsx)(h, function(e, t) {
       return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
@@ -129,24 +129,24 @@ let h = e => {
       return e
     }({
       position: e,
-      placeholder: l[e]
-    }, s[e]), {
+      placeholder: s[e]
+    }, l[e]), {
       onSetReason: t => {
-        let n = [...s],
-          r = Object.assign({}, s[e], {
+        let n = [...l],
+          r = Object.assign({}, l[e], {
             reason: t
           });
         n[e] = r, (0, d.P$)(i, n)
       },
       onSelectEmoji: t => {
-        let n = [...s],
-          r = Object.assign({}, s[e], {
+        let n = [...l],
+          r = Object.assign({}, l[e], {
             emoji_name: t.optionallyDiverseSequence
           });
         n[e] = r, (0, d.P$)(i, n)
       },
       onClearPressed: () => {
-        let t = [...s],
+        let t = [...l],
           n = {
             reason: "",
             emoji_name: null

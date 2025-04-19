@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(793903),
   S = n(213609),
   T = n(613413),
-  N = n(94795),
-  A = n(327943),
+  A = n(94795),
+  N = n(327943),
   C = n(907459),
   R = n(559407),
   P = n(556766),
@@ -45,8 +45,8 @@ var r = n(200651),
   V = n(84615),
   Z = n(429142),
   H = n(813744),
-  W = n(311476),
-  Y = n(746106),
+  Y = n(311476),
+  W = n(746106),
   K = n(210887),
   z = n(978781),
   q = n(314897),
@@ -141,43 +141,43 @@ let em = (0, et.Un)({
       skipsSettingDefaultPageTitle: n
     } = e, {
       pathname: a
-    } = (0, l.TH)(), f = (0, $.getPlatform)(), b = c.tq || c.Em, q = (0, u.e7)([K.Z], () => K.Z.darkSidebar ? ec.BRd.DARK : void 0), J = (0, k.Q3)("AppSkeleton"), et = (0, u.e7)([v.Z], () => v.Z.useForcedColors ? "yes" : "no"), [es, el, ef] = (0, u.Wu)([w.Z], () => [w.Z.isEditorOpen, w.Z.isCoachmark, w.Z.isPreview]), [e_, ep] = (0, u.Wu)([A.Z], () => [A.Z.isEditorOpen, A.Z.isUpsellPreview]), eh = (0, u.e7)([Q.Z], () => Q.Z.getLayers().includes(ec.S9g.USER_SETTINGS)), eb = (0, u.e7)([X.default], () => ee.ZP.canUseClientThemes(X.default.getCurrentUser())), ey = es && !eh, ev = e_ && !eh, eO = [];
+    } = (0, l.TH)(), f = (0, $.getPlatform)(), b = c.tq || c.Em, q = (0, u.e7)([K.Z], () => K.Z.darkSidebar ? ec.BRd.DARK : void 0), J = (0, k.Q3)("AppSkeleton"), et = (0, u.e7)([v.Z], () => v.Z.useForcedColors ? "yes" : "no"), [es, el, ef] = (0, u.Wu)([w.Z], () => [w.Z.isEditorOpen, w.Z.isCoachmark, w.Z.isPreview]), [e_, ep] = (0, u.Wu)([N.Z], () => [N.Z.isEditorOpen, N.Z.isUpsellPreview]), eh = (0, u.e7)([Q.Z], () => Q.Z.getLayers().includes(ec.S9g.USER_SETTINGS)), eb = (0, u.e7)([X.default], () => ee.ZP.canUseClientThemes(X.default.getCurrentUser())), ey = es && !eh, ev = e_ && !eh, eO = [];
     eh || !el || eb || eO.push(d.z.CLIENT_THEMES_COACHMARK);
     let [eI, eS] = (0, B.US)(eO, eu.R.SIDEBAR, !0);
     eO.push(d.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK);
     let eT = eI === d.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK,
-      eN = eI === d.z.CLIENT_THEMES_COACHMARK;
+      eA = eI === d.z.CLIENT_THEMES_COACHMARK;
     i.useEffect(() => {
       null == (0, l.LX)(a, {
         path: "invite",
         exact: !1,
         strict: !1
-      }) && eT && !eN && ((0, N.nJ)(), p.Z.dispatch({
+      }) && eT && !eA && ((0, A.nJ)(), p.Z.dispatch({
         type: "APP_ICON_TRACK_IMPRESSION",
         markAsDismissed: eS
       }))
-    }, [eT, eN, eS, a]);
-    let eA = i.useRef(document.body),
-      eC = ey || eN,
-      eR = ev && !eN,
+    }, [eT, eA, eS, a]);
+    let eN = i.useRef(document.body),
+      eC = ey || eA,
+      eR = ev && !eA,
       eP = ef || ep,
       {
         enabled: ew
-      } = W.Z.useExperiment({
+      } = Y.Z.useExperiment({
         location: "AppSkeleton"
       }, {
         autoTrackExposure: eP && (eC || eR),
         disable: !eP
       }),
       eD = "".concat(J ? "enabled" : "disabled").concat(et);
-    return (0, j.G)(), (0, r.jsx)(Y.w, {
+    return (0, j.G)(), (0, r.jsx)(W.w, {
       children: (0, r.jsxs)(O.Z, {
         children: [(0, r.jsx)(er.Z, {
           skipsSettingDefaultPageTitle: n
         }), (0, r.jsx)(E.T, {
           children: (0, r.jsx)(ei.Z, {
             children: (0, r.jsxs)(_.JcV, {
-              containerRef: eA,
+              containerRef: eN,
               children: [(0, r.jsx)(eo.Co, {}), (0, r.jsx)(ea.ZP, {}), (0, r.jsx)(s.OU, {}), (0, r.jsx)(y.Wu, {
                 appContext: ec.IlC.APP,
                 renderWindow: window,
@@ -204,20 +204,20 @@ let em = (0, et.Un)({
                         })
                       })
                     }), (0, r.jsx)(P.Z, {}), (0, r.jsx)(h.Z, {}), eC && !ew && (0, r.jsx)(D.Z, {
-                      markAsDismissed: eN ? eS : () => {
+                      markAsDismissed: eA ? eS : () => {
                         (0, G.EW)(d.z.CLIENT_THEMES_COACHMARK, {
                           dismissAction: eu.L.INDIRECT_ACTION,
                           forceTrack: !0
                         })
                       },
-                      showClientThemesCoachmark: eN
+                      showClientThemesCoachmark: eA
                     }), eR && !ew && (0, r.jsx)(C.Z, {
                       isCoachmark: eT,
                       markAsDismissed: eS
                     }), (eC || eR) && ew && (0, r.jsx)(z.Z, {
                       initialTab: eR ? z._.APP_ICONS : z._.CLIENT_THEMES,
                       markAsDismissed: eS,
-                      isCoachmark: eN
+                      isCoachmark: eA
                     }), (0, r.jsx)(en.Z, {}), (0, r.jsx)(U.Z, {
                       mobile: b
                     })]

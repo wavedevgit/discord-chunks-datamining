@@ -27,8 +27,8 @@ var i = n(200651),
   j = n(699516),
   C = n(594174),
   S = n(979651),
-  N = n(823379),
-  Z = n(136015),
+  Z = n(823379),
+  N = n(136015),
   w = n(981631),
   P = n(388032),
   T = n(688095);
@@ -37,7 +37,7 @@ let k = e => [e.userId, ... function(e) {
     if (null == t) return [];
     let n = t.username,
       i = (0, m.e3)(t);
-    return Array.from(new Set([n, i.nick, ...Object.values(i.names)].flat().filter(N.lm)))
+    return Array.from(new Set([n, i.nick, ...Object.values(i.names)].flat().filter(Z.lm)))
   }(e)],
   A = {
     searchType: y.S.FUZZY,
@@ -48,7 +48,7 @@ let k = e => [e.userId, ... function(e) {
         channel: i,
         voiceStates: r
       } = e;
-      return [i.name, i.id, i.guild_id, null != (n = null == (t = x.Z.getGuild(i.guild_id)) ? void 0 : t.name) ? n : "", ...r.flatMap(e => k(e))].filter(N.lm)
+      return [i.name, i.id, i.guild_id, null != (n = null == (t = x.Z.getGuild(i.guild_id)) ? void 0 : t.name) ? n : "", ...r.flatMap(e => k(e))].filter(Z.lm)
     },
     throttleMs: 100
   },
@@ -62,9 +62,9 @@ let k = e => [e.userId, ... function(e) {
     let {
       channel: t,
       query: n
-    } = e, [o] = (0, a.e7)([S.Z], () => [S.Z.getVoiceStatesForChannel(t.id), S.Z.getVoiceStateVersion()], [t.id], Z.Q), [l, c] = r.useState([]);
+    } = e, [o] = (0, a.e7)([S.Z], () => [S.Z.getVoiceStatesForChannel(t.id), S.Z.getVoiceStateVersion()], [t.id], N.Q), [l, c] = r.useState([]);
     (0, O.BO)(n, Object.values(o), c, D);
-    let u = (0, a.Wu)([S.Z, C.default, b.Z, j.Z], () => Object.values(S.Z.getVoiceStatesForChannel(t.id)).map(e => C.default.getUser(e.userId)).filter(N.lm).sort((e, t) => {
+    let u = (0, a.Wu)([S.Z, C.default, b.Z, j.Z], () => Object.values(S.Z.getVoiceStatesForChannel(t.id)).map(e => C.default.getUser(e.userId)).filter(Z.lm).sort((e, t) => {
         var i, r, o, a;
         if (l.length > 0 && "" !== n.trim()) {
           if (l.some(t => t.userId === e.id)) return -1;
@@ -111,14 +111,14 @@ let k = e => [e.userId, ... function(e) {
         className: T.guildIconWrapper,
         children: (0, i.jsx)(d.b, {
           guildId: o.id,
-          guildName: null != (t = o.name) ? t : P.NW.string(P.t.DmIUGB),
+          guildName: null != (t = o.name) ? t : P.intl.string(P.t.DmIUGB),
           guildIcon: o.icon,
           iconSize: 32
         })
       })
     })
   }),
-  W = r.memo(function(e) {
+  M = r.memo(function(e) {
     var t;
     let {
       channelId: n,
@@ -169,7 +169,7 @@ let k = e => [e.userId, ... function(e) {
       })]
     })
   }),
-  M = r.memo(function(e) {
+  z = r.memo(function(e) {
     let {
       emptyText: t
     } = e;
@@ -182,7 +182,7 @@ let k = e => [e.userId, ... function(e) {
       })
     })
   }),
-  z = r.memo(function(e) {
+  V = r.memo(function(e) {
     let {
       sectionHeader: t,
       channelIds: n,
@@ -208,9 +208,9 @@ let k = e => [e.userId, ... function(e) {
         })
       }), (0, i.jsxs)(g, {
         className: T.channelList,
-        children: [a && 0 === n.length && (0, i.jsx)(M, {
-          emptyText: P.NW.string(P.t.nxSS09)
-        }), n.map(e => (0, i.jsx)(W, {
+        children: [a && 0 === n.length && (0, i.jsx)(z, {
+          emptyText: P.intl.string(P.t.nxSS09)
+        }), n.map(e => (0, i.jsx)(M, {
           channelId: e,
           isHighlighted: e === d,
           currentVoiceChannel: o,
@@ -223,7 +223,7 @@ let k = e => [e.userId, ... function(e) {
     })
   });
 
-function V(e) {
+function U(e) {
   let {
     searchQuery: t,
     currentVoiceChannel: n,
@@ -245,7 +245,7 @@ function V(e) {
           if (null == n) return e;
           let i = _.Z.getChannel(n);
           return null != i && I.Z.can(w.Plq.CONNECT, i) && e.add(n), e
-        }, new Set)).filter(N.lm), [e])
+        }, new Set)).filter(Z.lm), [e])
       }(),
       t = (0, a.Wu)([g.Z, _.Z, I.Z], () => {
         let t = g.Z.getChannelHistory(),
@@ -262,16 +262,16 @@ function V(e) {
   }();
   return o.length > 0 || c.length > 0 ? (0, i.jsxs)(s.zJl, {
     className: l()(T.channelList, T.channelListWrapper),
-    children: [o.length > 0 && (0, i.jsx)(z, {
-      sectionHeader: P.NW.string(P.t.lnk2NT),
+    children: [o.length > 0 && (0, i.jsx)(V, {
+      sectionHeader: P.intl.string(P.t.lnk2NT),
       channelIds: o.slice(0, 3),
       hasQuery: !1,
       query: t,
       currentVoiceChannel: n,
       onSelect: r,
       scrollable: !1
-    }), c.length > 0 && (0, i.jsx)(z, {
-      sectionHeader: P.NW.string(P.t["0lvb9P"]),
+    }), c.length > 0 && (0, i.jsx)(V, {
+      sectionHeader: P.intl.string(P.t["0lvb9P"]),
       channelIds: c.slice(0, 8),
       hasQuery: !1,
       query: t,
@@ -279,12 +279,12 @@ function V(e) {
       onSelect: r,
       scrollable: !1
     })]
-  }) : (0, i.jsx)(M, {
-    emptyText: P.NW.string(P.t["3ET7Aw"])
+  }) : (0, i.jsx)(z, {
+    emptyText: P.intl.string(P.t["3ET7Aw"])
   })
 }
 
-function U(e) {
+function W(e) {
   e.stopPropagation()
 }
 
@@ -319,11 +319,11 @@ function G(e) {
       count: v ? 20 : h.length
     },
     _ = r.useMemo(() => ({
-      onMouseDown: U,
-      onMouseMove: U,
-      onMouseUp: U,
-      onMouseEnter: U,
-      onMouseLeave: U
+      onMouseDown: W,
+      onMouseMove: W,
+      onMouseUp: W,
+      onMouseEnter: W,
+      onMouseLeave: W
     }), []);
   return (0, i.jsxs)("div", (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -351,7 +351,7 @@ function G(e) {
         autoFocus: !0,
         query: d,
         size: s.E1j.Sizes.MEDIUM,
-        placeholder: P.NW.string(P.t.UyA6SU),
+        placeholder: P.intl.string(P.t.UyA6SU),
         onClear: () => {
           p("")
         },
@@ -361,11 +361,11 @@ function G(e) {
         },
         className: T.searchBar,
         inputProps: {
-          "aria-label": P.NW.string(P.t.UyA6SU)
+          "aria-label": P.intl.string(P.t.UyA6SU)
         }
       })
-    }), y ? (0, i.jsx)(z, {
-      sectionHeader: v ? P.NW.format(P.t.qdXiQ0, b) : P.NW.format(P.t["Aq+8wM"], b),
+    }), y ? (0, i.jsx)(V, {
+      sectionHeader: v ? P.intl.format(P.t.qdXiQ0, b) : P.intl.format(P.t["Aq+8wM"], b),
       channelIds: h.map(e => {
         let {
           channel: t
@@ -376,7 +376,7 @@ function G(e) {
       query: d,
       currentVoiceChannel: o,
       onSelect: g
-    }) : (0, i.jsx)(V, {
+    }) : (0, i.jsx)(U, {
       searchQuery: d,
       currentVoiceChannel: o,
       onSelect: g

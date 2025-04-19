@@ -25,13 +25,13 @@ let g = [16, 16, 14, 14, 12, 10, 8],
       guild: r,
       disabled: p,
       small: v,
-      loading: N = !1,
-      description: A,
-      memberCount: T,
+      loading: A = !1,
+      description: T,
+      memberCount: N,
       presenceCount: C,
       className: P
     } = e, y = (0, o.ZP)(), [O, D] = l.useState(!1);
-    if (null == r || N) return (0, n.jsx)("div", {
+    if (null == r || A) return (0, n.jsx)("div", {
       className: a()(P, m.card, m.cardPlaceholder, {
         [m.cardSmall]: v,
         [m.cardDisabled]: p
@@ -47,7 +47,7 @@ let g = [16, 16, 14, 14, 12, 10, 8],
       id: r.id,
       icon: r.icon,
       size: 40
-    })) ? i : void 0, F = null != r.description ? r.description : A, V = null != T ? T : null == r ? void 0 : r.memberCount, x = null != C ? C : null == r ? void 0 : r.presenceCount, G = null;
+    })) ? i : void 0, F = null != r.description ? r.description : T, V = null != N ? N : null == r ? void 0 : r.memberCount, x = null != C ? C : null == r ? void 0 : r.presenceCount, G = null;
     if (null != j) G = (0, n.jsx)("img", {
       src: j,
       alt: "",
@@ -132,9 +132,9 @@ let g = [16, 16, 14, 14, 12, 10, 8],
               className: m.dotOnline
             }), (0, n.jsx)(u.Text, {
               variant: "text-xs/normal",
-              children: v ? _.NW.formatToPlainString(_.t.YMor7u, {
+              children: v ? _.intl.formatToPlainString(_.t.YMor7u, {
                 count: x
-              }) : _.NW.formatToPlainString(_.t["LC+S+v"], {
+              }) : _.intl.formatToPlainString(_.t["LC+S+v"], {
                 membersOnline: x
               })
             })]
@@ -144,9 +144,9 @@ let g = [16, 16, 14, 14, 12, 10, 8],
               className: m.dotOffline
             }), (0, n.jsx)(u.Text, {
               variant: "text-xs/normal",
-              children: v ? _.NW.formatToPlainString(_.t.YMor7u, {
+              children: v ? _.intl.formatToPlainString(_.t.YMor7u, {
                 count: V
-              }) : _.NW.formatToPlainString(_.t.zRl6XV, {
+              }) : _.intl.formatToPlainString(_.t.zRl6XV, {
                 count: V
               })
             })]

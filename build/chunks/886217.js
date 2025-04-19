@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => N
 }), n(804061), n(704826), n(35282);
 var r = n(200651),
   i = n(192379),
@@ -32,16 +32,16 @@ let T = (e, t, n, r) => {
     let i = S(r),
       a = f.ZP.getName(t.guild_id, t.id, n),
       o = e.extra.artist.name;
-    return I.NW.formatToMarkdownString(i, {
+    return I.intl.formatToMarkdownString(i, {
       artist: o,
       userName: a
     }).replaceAll("*", "")
   },
-  N = (e, t) => I.NW.formatToPlainString(I.t.Osmpr6, {
+  A = (e, t) => I.intl.formatToPlainString(I.t.Osmpr6, {
     username: t.username,
     artist: e.extra.artist.name
   }),
-  A = e => {
+  N = e => {
     let {
       channel: t,
       entry: n,
@@ -49,7 +49,7 @@ let T = (e, t, n, r) => {
       onVoiceChannelPreview: f
     } = e, {
       parent_title: S,
-      provider: A,
+      provider: N,
       image_url: C
     } = n.extra.media, R = n.extra.artist.name, P = (0, s.e7)([c.default], () => c.default.getUser(n.author_id)), {
       primaryColor: w,
@@ -85,10 +85,10 @@ let T = (e, t, n, r) => {
         onClickThumbnail: k,
         channel: t,
         entry: n,
-        headerIcons: A === o.p.SPOTIFY ? (0, r.jsx)(y.Z, {
+        headerIcons: N === o.p.SPOTIFY ? (0, r.jsx)(y.Z, {
           onClick: M,
           Icon: u.Z,
-          "aria-label": I.NW.string(I.t["0ZB/XF"])
+          "aria-label": I.intl.string(I.t["0ZB/XF"])
         }) : null,
         userDescription: I.t.CcVI1d,
         title: S,
@@ -106,7 +106,7 @@ let T = (e, t, n, r) => {
           user: P,
           channel: t,
           generateReactionImage: x,
-          reactionImageAltText: N(n, P),
+          reactionImageAltText: A(n, P),
           entry: n
         })
       })]

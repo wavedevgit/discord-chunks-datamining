@@ -193,16 +193,16 @@
     T = function(e) {
       return S(e) && "function" == typeof e.then
     },
-    N = function(e) {
+    A = function(e) {
       return S(e) && "function" == typeof e.elements && "function" == typeof e.createToken && "function" == typeof e.createPaymentMethod && "function" == typeof e.confirmCardPayment
     },
-    A = "[object Object]",
+    N = "[object Object]",
     C = function e(t, n) {
       if (!S(t) || !S(n)) return t === n;
       var r = Array.isArray(t);
       if (r !== Array.isArray(n)) return !1;
-      var i = Object.prototype.toString.call(t) === A;
-      if (i !== (Object.prototype.toString.call(n) === A)) return !1;
+      var i = Object.prototype.toString.call(t) === N;
+      if (i !== (Object.prototype.toString.call(n) === N)) return !1;
       if (!i && !r) return t === n;
       var a = Object.keys(t),
         o = Object.keys(n);
@@ -227,7 +227,7 @@
     P = "Invalid prop `stripe` supplied to `Elements`. We recommend using the `loadStripe` utility from `@stripe/stripe-js`. See https://stripe.com/docs/stripe-js/react#elements-props-stripe for details.",
     w = function(e) {
       var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : P;
-      if (null === e || N(e)) return e;
+      if (null === e || A(e)) return e;
       throw Error(t)
     },
     D = function(e) {
@@ -341,13 +341,13 @@
       var n = s(e, B);
       return t ? r(r({}, n), t) : r(r({}, n), e.session())
     },
-    W = "Invalid prop `stripe` supplied to `CustomCheckoutProvider`. We recommend using the `loadStripe` utility from `@stripe/stripe-js`. See https://stripe.com/docs/stripe-js/react#elements-props-stripe for details.",
-    Y = function(e) {
+    Y = "Invalid prop `stripe` supplied to `CustomCheckoutProvider`. We recommend using the `loadStripe` utility from `@stripe/stripe-js`. See https://stripe.com/docs/stripe-js/react#elements-props-stripe for details.",
+    W = function(e) {
       var n = e.stripe,
         r = e.options,
         i = e.children,
         a = t.useMemo(function() {
-          return D(n, W)
+          return D(n, Y)
         }, [n]),
         o = l(t.useState(null), 2),
         s = o[0],
@@ -406,7 +406,7 @@
         value: g
       }, i)) : null
     };
-  Y.propTypes = {
+  W.propTypes = {
     stripe: v.any,
     options: v.shape({
       clientSecret: v.string.isRequired,
@@ -452,8 +452,8 @@
             v = n.onShippingAddressChange,
             S = n.onShippingRateChange,
             T = z("mounts <".concat(r, ">")),
-            N = "elements" in T ? T.elements : null,
-            A = "customCheckoutSdk" in T ? T.customCheckoutSdk : null,
+            A = "elements" in T ? T.elements : null,
+            N = "customCheckoutSdk" in T ? T.customCheckoutSdk : null,
             C = l(t.useState(null), 2),
             P = C[0],
             w = C[1],
@@ -462,11 +462,11 @@
           O(P, "blur", u), O(P, "focus", d), O(P, "escape", p), O(P, "click", h), O(P, "loaderror", m), O(P, "loaderstart", g), O(P, "networkschange", E), O(P, "confirm", b), O(P, "cancel", y), O(P, "shippingaddresschange", v), O(P, "shippingratechange", S), O(P, "change", _), f && (i = "expressCheckout" === e ? f : function() {
             f(P)
           }), O(P, "ready", i), t.useLayoutEffect(function() {
-            if (null === D.current && null !== L.current && (N || A)) {
+            if (null === D.current && null !== L.current && (A || N)) {
               var t = null;
-              A ? t = A.createElement(e, c) : N && (t = N.create(e, c)), D.current = t, w(t), t && t.mount(L.current)
+              N ? t = N.createElement(e, c) : A && (t = A.create(e, c)), D.current = t, w(t), t && t.mount(L.current)
             }
-          }, [N, A, c]);
+          }, [A, N, c]);
           var x = I(c);
           return t.useEffect(function() {
             if (D.current) {
@@ -623,5 +623,5 @@
     eI = X("paymentMethodMessaging", J),
     eS = X("affirmMessage", J),
     eT = X("afterpayClearpayMessage", J);
-  e.AddressElement = ev, e.AffirmMessageElement = eS, e.AfterpayClearpayMessageElement = eT, e.AuBankAccountElement = es, e.CardCvcElement = ed, e.CardElement = el, e.CardExpiryElement = eu, e.CardNumberElement = ec, e.CustomCheckoutProvider = Y, e.Elements = k, e.ElementsConsumer = G, e.EmbeddedCheckout = ea, e.EmbeddedCheckoutProvider = en, e.EpsBankElement = em, e.ExpressCheckoutElement = eE, e.FpxBankElement = ef, e.IbanElement = e_, e.IdealBankElement = ep, e.LinkAuthenticationElement = ey, e.P24BankElement = eh, e.PaymentElement = eg, e.PaymentMethodMessagingElement = eI, e.PaymentRequestButtonElement = eb, e.ShippingAddressElement = eO, e.useCustomCheckout = q, e.useElements = U, e.useStripe = eo
+  e.AddressElement = ev, e.AffirmMessageElement = eS, e.AfterpayClearpayMessageElement = eT, e.AuBankAccountElement = es, e.CardCvcElement = ed, e.CardElement = el, e.CardExpiryElement = eu, e.CardNumberElement = ec, e.CustomCheckoutProvider = W, e.Elements = k, e.ElementsConsumer = G, e.EmbeddedCheckout = ea, e.EmbeddedCheckoutProvider = en, e.EpsBankElement = em, e.ExpressCheckoutElement = eE, e.FpxBankElement = ef, e.IbanElement = e_, e.IdealBankElement = ep, e.LinkAuthenticationElement = ey, e.P24BankElement = eh, e.PaymentElement = eg, e.PaymentMethodMessagingElement = eI, e.PaymentRequestButtonElement = eb, e.ShippingAddressElement = eO, e.useCustomCheckout = q, e.useElements = U, e.useStripe = eo
 })

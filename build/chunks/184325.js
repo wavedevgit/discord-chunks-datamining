@@ -27,8 +27,8 @@ var i = n(120356),
   I = n(221292),
   S = n(485341),
   T = n(687158),
-  N = n(228168),
-  A = n(981631),
+  A = n(228168),
+  N = n(981631),
   C = n(215023),
   R = n(474936),
   P = n(681642),
@@ -87,7 +87,7 @@ function k(e) {
   } = (0, O.KZ)(), B = E.default.getCurrentUser(), F = (0, y.yd)(null == B ? void 0 : B.premiumType, R.p9.TIER_2), V = (0, T.Of)(null != (t = null == B ? void 0 : B.id) ? t : null), Z = (0, S.Z)(V).some(e => e.id === m.l.ORB_PROFILE_BADGE);
   return (0, r.jsx)("div", {
     className: a()(D.container, i),
-    "aria-label": w.NW.string(w.t.VWV0y8),
+    "aria-label": w.intl.string(w.t.VWV0y8),
     role: "group",
     children: n.map((e, t) => {
       var n;
@@ -107,12 +107,12 @@ function k(e) {
             analyticsSource: l.Z.VIRTUAL_CURRENCY_ORB_PROFILE_BADGE
           });
           if (E) {
-            if (t.preventDefault(), b.default.track(A.rMx.TIERED_TENURE_BADGE_CLICKED, {
+            if (t.preventDefault(), b.default.track(N.rMx.TIERED_TENURE_BADGE_CLICKED, {
                 badge: e.id,
                 premium_type: F,
                 viewed_user_id: null == g ? void 0 : g.userId
               }), F) {
-              (null == g ? void 0 : g.userId) === (null == B ? void 0 : B.id) ? (0, h.uL)(A.Z5c.NITRO_HOME) : (0, f.k)({
+              (null == g ? void 0 : g.userId) === (null == B ? void 0 : B.id) ? (0, h.uL)(N.Z5c.NITRO_HOME) : (0, f.k)({
                 analyticsLocations: j,
                 displayProfile: g
               }), null == L || L();
@@ -136,7 +136,7 @@ function k(e) {
           if (null != n) return null == L || L(), n(t)
         },
         O = () => {
-          e.id === S.i && b.default.track(A.rMx.QUEST_CONTENT_VIEWED, x({}, (0, _.mH)(p.jn.QUEST_BADGE))), G({
+          e.id === S.i && b.default.track(N.rMx.QUEST_CONTENT_VIEWED, x({}, (0, _.mH)(p.jn.QUEST_BADGE))), G({
             action: "HOVER_BADGE"
           }), (0, I.Qf)(x({
             badge: e.id,
@@ -152,7 +152,7 @@ function k(e) {
         text: T,
         "aria-label": e.description,
         forceOpen: null != k && k(e.id),
-        delay: N.vB,
+        delay: A.vB,
         children: (0, r.jsx)(o.eee, {
           onClick: y,
           onMouseEnter: O,
@@ -160,7 +160,7 @@ function k(e) {
           children: (0, r.jsx)("img", {
             alt: " ",
             "aria-hidden": !0,
-            src: null != (n = e.iconSrc) ? n : (0, N.Ej)(e.icon),
+            src: null != (n = e.iconSrc) ? n : (0, A.Ej)(e.icon),
             className: a()(D.badge, d)
           })
         })

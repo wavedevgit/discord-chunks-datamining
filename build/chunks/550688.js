@@ -26,9 +26,9 @@ function b(e) {
     iconSrc: f,
     currentPoints: b,
     onPurchase: y
-  } = e, h = "string" == typeof t ? t : p.NW.format(t, {
+  } = e, h = "string" == typeof t ? t : p.intl.format(t, {
     numPurchasing: 0
-  }), x = "string" == typeof t ? t : p.NW.formatToPlainString(t, {
+  }), x = "string" == typeof t ? t : p.intl.formatToPlainString(t, {
     numPurchasing: 0
   });
   return (0, r.jsx)(l.Z, {
@@ -36,7 +36,7 @@ function b(e) {
     text: (0, r.jsx)(d.Z, {
       name: h,
       description: n,
-      pointsDescription: 0 !== o ? p.NW.format(s, {
+      pointsDescription: 0 !== o ? p.intl.format(s, {
         points: o,
         grassIconHook: a.Z
       }) : null

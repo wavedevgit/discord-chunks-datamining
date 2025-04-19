@@ -53,8 +53,8 @@ function w(e) {
   i.useEffect(() => {
     O.Z.fetchFriendMembersIfNotFetched(t.id, x)
   }, [t.id, x]);
-  let N = (0, o.e7)([b.ZP], () => b.ZP.getMembers(t.id)),
-    P = i.useMemo(() => l()(N).filter(e => !!x.includes(e.userId) && null != g.default.getUser(e.userId)).sortBy(e => {
+  let P = (0, o.e7)([b.ZP], () => b.ZP.getMembers(t.id)),
+    v = i.useMemo(() => l()(P).filter(e => !!x.includes(e.userId) && null != g.default.getUser(e.userId)).sortBy(e => {
       var t;
       let r = g.default.getUser(e.userId);
       return (null != r ? null != (t = e.nick) ? t : r.username : "").toLocaleLowerCase()
@@ -106,8 +106,8 @@ function w(e) {
           }, s), e.userId)
         }
       }, i.id)
-    }).value(), [x, t.id, t.ownerId, N]),
-    v = O.Z.isFetchingFriendsForGuild(t.id);
+    }).value(), [x, t.id, t.ownerId, P]),
+    F = O.Z.isFetchingFriendsForGuild(t.id);
   return (0, n.jsxs)(u.Y0X, {
     transitionState: s,
     size: u.CgR.SMALL,
@@ -121,9 +121,9 @@ function w(e) {
           children: (0, n.jsx)(u.iFz, {})
         }), (0, n.jsx)(u.X6q, {
           variant: "heading-lg/semibold",
-          children: y.NW.format(v ? y.t.EtQnZm : y.t.OgMdNT, {
+          children: y.intl.format(F ? y.t.EtQnZm : y.t.OgMdNT, {
             guildName: t.name,
-            numFriends: P.length
+            numFriends: v.length
           })
         })]
       }), (0, n.jsx)(u.olH, {
@@ -131,8 +131,8 @@ function w(e) {
       })]
     }), (0, n.jsxs)(u.hzk, {
       className: I.content,
-      children: [v && (0, n.jsx)(u.$jN, {}), (0, n.jsx)(u.Ttm, {
-        children: P
+      children: [F && (0, n.jsx)(u.$jN, {}), (0, n.jsx)(u.Ttm, {
+        children: v
       })]
     })]
   })

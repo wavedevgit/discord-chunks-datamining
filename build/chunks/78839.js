@@ -61,8 +61,8 @@ let g = null,
   I = !1,
   S = null,
   T = !1,
-  N = !1,
-  A = null,
+  A = !1,
+  N = null,
   C = new o.Z("SubscriptionStore");
 
 function R(e) {
@@ -155,23 +155,23 @@ function L(e) {
 }
 
 function x() {
-  N = !0
+  A = !0
 }
 
 function M(e) {
   let {
     eligible: t
   } = e;
-  A = t, N = !1
+  N = t, A = !1
 }
 
 function k(e) {
   let {} = e;
-  A = !1, N = !1
+  N = !1, A = !1
 }
 
 function j() {
-  g = null, E = null, b = null, y = null, v = null, O = !1, I = !1, S = null, T = !1, N = !1
+  g = null, E = null, b = null, y = null, v = null, O = !1, I = !1, S = null, T = !1, A = !1
 }
 
 function U(e) {
@@ -256,10 +256,10 @@ class F extends(r = i.ZP.Store) {
     return S
   }
   getIsSubscriptionEligibleForReward() {
-    return A
+    return N
   }
   getIsFetchingSubscriptionRewardEligibility() {
-    return N
+    return A
   }
 }
 _(F, "displayName", "SubscriptionStore");

@@ -1,18 +1,18 @@
 /** Chunk was on 44114 **/
 n.d(t, {
   C: () => s,
-  L: () => a
+  L: () => l
 });
-var r = n(818083),
-  i = n(987338);
-let s = (0, r.B)({
+var i = n(818083),
+  r = n(987338);
+let s = (0, i.B)({
     kind: "user",
     id: "2025-04_unread_dm_dots_desktop",
     label: "Unread DM Dots (Desktop)",
     defaultConfig: {
       showUnreadDots: !1
     },
-    commonTriggerPoint: i.$P.CONNECTION_OPEN,
+    commonTriggerPoint: r.$P.CONNECTION_OPEN,
     treatments: [{
       id: 1,
       label: "Show DM Dots",
@@ -21,7 +21,7 @@ let s = (0, r.B)({
       }
     }]
   }),
-  a = e => s.useExperiment({
+  l = e => s.useExperiment({
     location: e
   }, {
     autoTrackExposure: !1

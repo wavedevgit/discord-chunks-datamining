@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  O: () => E
+  O: () => N
 }), n(388685);
 var a = n(200651),
   r = n(192379),
@@ -302,7 +302,7 @@ let p = [{
       })]
     })
   },
-  N = () => {
+  E = () => {
     let {
       previewEnabled: e,
       setPreviewEnabled: t,
@@ -347,7 +347,7 @@ let p = [{
       })]
     })
   },
-  E = () => {
+  N = () => {
     let [e, t] = r.useState("preview");
     return (0, a.jsxs)("div", {
       className: x.container,
@@ -366,7 +366,7 @@ let p = [{
         optionClassName: x.panelModeControlOption
       }), (0, a.jsx)(l.LZC, {
         size: 8
-      }), "preview" === e && (0, a.jsx)(N, {}), "validate" === e && (0, a.jsx)(O, {}), (0, a.jsx)(l.LZC, {
+      }), "preview" === e && (0, a.jsx)(E, {}), "validate" === e && (0, a.jsx)(O, {}), (0, a.jsx)(l.LZC, {
         size: 16
       }), (0, a.jsx)(i.Z, {
         className: x.divider

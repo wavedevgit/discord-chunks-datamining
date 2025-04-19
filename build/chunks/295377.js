@@ -2,11 +2,11 @@
 n.d(t, {
   Z: () => R
 }), n(388685), n(953529);
-var r = n(200651),
-  i = n(192379),
+var i = n(200651),
+  r = n(192379),
   s = n(91192),
-  a = n(442837),
-  l = n(524437),
+  l = n(442837),
+  a = n(524437),
   o = n(481060),
   c = n(540059),
   d = n(695346),
@@ -18,37 +18,37 @@ var r = n(200651),
   f = n(88658),
   b = n(660243),
   _ = n(981631),
-  N = n(703115),
-  x = n(526761),
-  E = n(676654),
-  j = n(388032),
-  C = n(530435);
+  x = n(703115),
+  E = n(526761),
+  j = n(676654),
+  C = n(388032),
+  O = n(530435);
 
-function O(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      i = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    }))), i.forEach(function(t) {
+      var i;
+      i = n[t], t in e ? Object.defineProperty(e, t, {
+        value: i,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : e[t] = r
+      }) : e[t] = i
     })
   }
   return e
 }
 
-function S(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var i = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, i)
     }
     return n
   })(Object(t)).forEach(function(n) {
@@ -56,47 +56,47 @@ function S(e, t) {
   }), e
 }
 
-function v(e) {
+function T(e) {
   let {
     guildId: t
-  } = e, n = (0, c.Q3)("GuildItem"), l = (0, a.e7)([m.Z], () => m.Z.getGuild(t)), g = (0, a.e7)([u.Z], () => u.Z.getMemberCount(t)), h = !d.SE.useSetting().includes(t), b = (0, o.dQu)(o.TVs.modules.guildbar.AVATAR_SIZE), v = (0, s.Ie)(null != t ? t : _.lds), T = i.useCallback(e => {
+  } = e, n = (0, c.Q3)("GuildItem"), a = (0, l.e7)([m.Z], () => m.Z.getGuild(t)), g = (0, l.e7)([u.Z], () => u.Z.getMemberCount(t)), h = !d.SE.useSetting().includes(t), b = (0, o.dQu)(o.TVs.modules.guildbar.AVATAR_SIZE), T = (0, s.Ie)(null != t ? t : _.lds), I = r.useCallback(e => {
     let n = (0, f._o)();
     e ? n.delete(t) : n.add(t), d.SE.updateSetting([...n]), p.default.track(_.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
-      action: N.Y.RESTRICT_GUILD_ACTIVITY_STATUS_TOGGLE,
-      ingress: x.f4.USER_SETTINGS_ACTIVITY_PRIVACY,
+      action: x.Y.RESTRICT_GUILD_ACTIVITY_STATUS_TOGGLE,
+      ingress: E.f4.USER_SETTINGS_ACTIVITY_PRIVACY,
       guild_id: t
     })
   }, [t]);
-  return null == l ? null : (0, r.jsx)("div", {
-    className: C.guildRow,
-    children: (0, r.jsx)(o.j7V, {
-      className: C.serverOptionSwitchContainer,
+  return null == a ? null : (0, i.jsx)("div", {
+    className: O.guildRow,
+    children: (0, i.jsx)(o.j7V, {
+      className: O.serverOptionSwitchContainer,
       value: h,
       onChange: () => {
-        T(!h)
+        I(!h)
       },
       hideBorder: !0,
-      children: (0, r.jsxs)("div", {
-        className: C.guildInfo,
-        children: [(0, r.jsx)(o.aRk, {
-          className: C.guildIcon,
-          children: (0, r.jsx)(o.LYs, S(O({
-            ariaLabel: l.toString(),
-            name: l.toString(),
-            icon: l.getIconURL(2 * b, !1, n)
-          }, v), {
+      children: (0, i.jsxs)("div", {
+        className: O.guildInfo,
+        children: [(0, i.jsx)(o.aRk, {
+          className: O.guildIcon,
+          children: (0, i.jsx)(o.LYs, v(S({
+            ariaLabel: a.toString(),
+            name: a.toString(),
+            icon: a.getIconURL(2 * b, !1, n)
+          }, T), {
             role: "treeitem"
           }))
-        }), (0, r.jsx)(o.Text, {
-          className: C.guildText,
+        }), (0, i.jsx)(o.Text, {
+          className: O.guildText,
           variant: "text-md/medium",
           lineClamp: 1,
           color: "text-normal",
-          children: l.toString()
-        }), (0, r.jsx)(o.Text, {
+          children: a.toString()
+        }), (0, i.jsx)(o.Text, {
           variant: "text-xs/normal",
-          className: C.guildSubtitle,
-          children: j.NW.formatToPlainString(E.Z.obBqMj, {
+          className: O.guildSubtitle,
+          children: C.intl.formatToPlainString(j.default.obBqMj, {
             count: null != g ? g : 0
           })
         })]
@@ -105,68 +105,68 @@ function v(e) {
   })
 }
 
-function T() {
+function I() {
   let e = d.G6.useSetting(),
     t = d.Wz.useSetting(),
     n = e => {
       d.Wz.updateSetting(e)
     },
     s = [{
-      value: l.E5.ON,
-      label: j.NW.string(j.t.UzGMHx)
+      value: a.E5.ON,
+      label: C.intl.string(C.t.UzGMHx)
     }, {
-      value: l.E5.ON_FOR_LARGE_GUILDS,
-      label: j.NW.string(j.t.OFqxQU)
+      value: a.E5.ON_FOR_LARGE_GUILDS,
+      label: C.intl.string(C.t.OFqxQU)
     }, {
-      value: l.E5.OFF,
-      label: j.NW.string(j.t.MIgNPD)
+      value: a.E5.OFF,
+      label: C.intl.string(C.t.MIgNPD)
     }],
-    c = (0, a.e7)([g.ZP], () => g.ZP.getFlattenedGuildIds()),
-    u = i.useCallback(() => {
+    c = (0, l.e7)([g.ZP], () => g.ZP.getFlattenedGuildIds()),
+    u = r.useCallback(() => {
       let e = (0, f._o)();
       c.some(t => e.has(t)) ? d.SE.updateSetting([]) : d.SE.updateSetting(c)
     }, [c]);
-  return (0, r.jsxs)(o.hjN, {
+  return (0, i.jsxs)(o.hjN, {
     tag: o.RB0.H5,
-    title: j.NW.string(E.Z.o0peVV),
-    titleClassName: C.title,
-    children: [(0, r.jsxs)(o.xJW, {
+    title: C.intl.string(j.default.o0peVV),
+    titleClassName: O.title,
+    children: [(0, i.jsxs)(o.xJW, {
       tag: o.RB0.H5,
-      title: j.NW.string(E.Z.eAQM7u),
-      className: C.defaultSetting,
-      children: [(0, r.jsx)(o.R94, {
+      title: C.intl.string(j.default.eAQM7u),
+      className: O.defaultSetting,
+      children: [(0, i.jsx)(o.R94, {
         type: o.R94.Types.DESCRIPTION,
-        className: C.description,
-        children: j.NW.string(E.Z.lKsV2t)
-      }), (0, r.jsx)(o.q4e, {
+        className: O.description,
+        children: C.intl.string(j.default.lKsV2t)
+      }), (0, i.jsx)(o.q4e, {
         options: s,
         value: t,
         onChange: e => n(e)
       })]
-    }), (0, r.jsx)("div", {
-      children: (0, r.jsxs)(o.xJW, {
+    }), (0, i.jsx)("div", {
+      children: (0, i.jsxs)(o.xJW, {
         tag: o.RB0.H5,
-        title: j.NW.string(E.Z.f3ZvjI),
-        children: [(0, r.jsx)(o.R94, {
+        title: C.intl.string(j.default.f3ZvjI),
+        children: [(0, i.jsx)(o.R94, {
           type: o.R94.Types.DESCRIPTION,
-          className: C.description,
-          children: j.NW.string(E.Z.tHLm2N)
-        }), !e && (0, r.jsx)(o.Wn, {
+          className: O.description,
+          children: C.intl.string(j.default.tHLm2N)
+        }), !e && (0, i.jsx)(o.Wn, {
           messageType: o.QYI.WARNING,
-          className: C.ignoredWarning,
-          children: j.NW.string(E.Z.mUwVAQ)
-        }), (0, r.jsx)(o.zJl, {
+          className: O.ignoredWarning,
+          children: C.intl.string(j.default.mUwVAQ)
+        }), (0, i.jsx)(o.zJl, {
           fade: !0,
-          className: C.scroller,
-          children: c.map(e => (0, r.jsx)(v, {
+          className: O.scroller,
+          children: c.map(e => (0, i.jsx)(T, {
             guildId: e
           }, e))
-        }), (0, r.jsx)("div", {
-          className: C.toggleAll,
-          children: (0, r.jsx)(o.zxk, {
+        }), (0, i.jsx)("div", {
+          className: O.toggleAll,
+          children: (0, i.jsx)(o.zxk, {
             look: o.zxk.Looks.LINK,
             onClick: u,
-            children: j.NW.string(E.Z.gJ8jlZ)
+            children: C.intl.string(j.default.gJ8jlZ)
           })
         })]
       })
@@ -174,11 +174,11 @@ function T() {
   })
 }
 
-function I() {
-  return (0, r.jsx)(o.hjN, {
+function N() {
+  return (0, i.jsx)(o.hjN, {
     tag: o.RB0.H5,
-    title: j.NW.string(E.Z["+RndDg"]),
-    children: (0, r.jsx)(b.r, {})
+    title: C.intl.string(j.default["+RndDg"]),
+    children: (0, i.jsx)(b.r, {})
   })
 }
 
@@ -186,24 +186,24 @@ function y() {
   let e = !d.G6.useSetting(),
     t = d.cP.useSetting(),
     n = d.Ou.useSetting();
-  return (0, r.jsxs)(o.hjN, {
+  return (0, i.jsxs)(o.hjN, {
     tag: o.RB0.H5,
-    title: j.NW.string(j.t["5gexRU"]),
-    titleClassName: C.title,
-    children: [(0, r.jsx)(o.j7V, {
+    title: C.intl.string(C.t["5gexRU"]),
+    titleClassName: O.title,
+    children: [(0, i.jsx)(o.j7V, {
       disabled: e,
       hideBorder: !0,
       onChange: e => d.cP.updateSetting(e),
-      note: j.NW.string(j.t.IjucAA),
+      note: C.intl.string(C.t.IjucAA),
       value: t,
-      children: j.NW.string(j.t.eVdoIy)
-    }), (0, r.jsx)(o.j7V, {
+      children: C.intl.string(C.t.eVdoIy)
+    }), (0, i.jsx)(o.j7V, {
       disabled: e,
       hideBorder: !0,
       onChange: e => d.Ou.updateSetting(e),
-      note: j.NW.string(j.t.oCONqK),
+      note: C.intl.string(C.t.oCONqK),
       value: n,
-      children: j.NW.string(j.t["tuKl+v"])
+      children: C.intl.string(C.t["tuKl+v"])
     })]
   })
 }
@@ -211,37 +211,37 @@ function y() {
 function A(e) {
   let {
     onScrollToGuildsSection: t
-  } = e, i = d.G6.useSetting(), s = () => {
+  } = e, r = d.G6.useSetting(), s = () => {
     (0, o.ZDy)(async () => {
       let {
         default: e
       } = await n.e("83909").then(n.bind(n, 932374));
-      return n => (0, r.jsx)(e, S(O({}, n), {
+      return n => (0, i.jsx)(e, v(S({}, n), {
         onScrollToGuildsSection: t
       }))
     })
-  }, a = h.isPlatformEmbedded ? j.NW.string(j.t.MznbeH) : j.NW.string(j.t.oKqC4u);
-  return (0, r.jsx)(o.hjN, {
+  }, l = h.isPlatformEmbedded ? C.intl.string(C.t.MznbeH) : C.intl.string(C.t.oKqC4u);
+  return (0, i.jsx)(o.hjN, {
     tag: o.RB0.H5,
-    title: j.NW.string(j.t.Wspazs),
-    className: C.allActivitySharingTitle,
-    children: (0, r.jsx)(o.j7V, {
-      value: i,
+    title: C.intl.string(C.t.Wspazs),
+    className: O.allActivitySharingTitle,
+    children: (0, i.jsx)(o.j7V, {
+      value: r,
       onChange: e => {
         e ? d.G6.updateSetting(e) : s()
       },
-      note: a,
-      children: j.NW.string(j.t["4q/Ewc"])
+      note: l,
+      children: C.intl.string(C.t["4q/Ewc"])
     })
   })
 }
 
 function P() {
-  return (0, r.jsx)(o.hjN, {
-    className: C.privacyAndTerms,
-    children: (0, r.jsx)(o.ToO, {
+  return (0, i.jsx)(o.hjN, {
+    className: O.privacyAndTerms,
+    children: (0, i.jsx)(o.ToO, {
       type: o.ToO.Types.PRIMARY,
-      body: j.NW.format(j.t.xvCsx8, {
+      body: C.intl.format(C.t.xvCsx8, {
         termsLink: _.EYA.TERMS,
         privacyLink: _.EYA.PRIVACY
       })
@@ -251,23 +251,23 @@ function P() {
 let R = function(e) {
   let {
     className: t
-  } = e, n = (0, i.useRef)(null);
-  return (0, r.jsxs)(o.hjN, {
+  } = e, n = (0, r.useRef)(null);
+  return (0, i.jsxs)(o.hjN, {
     className: t,
     tag: o.RB0.H1,
-    title: j.NW.string(j.t["6x5uWV"]),
-    children: [(0, r.jsx)(A, {
+    title: C.intl.string(C.t["6x5uWV"]),
+    children: [(0, i.jsx)(A, {
       onScrollToGuildsSection: () => {
         null != n.current && n.current.scrollIntoView({
           behavior: "smooth"
         })
       }
-    }), (0, r.jsx)(I, {}), (0, r.jsx)(o.$i$, {
-      className: C.divider
-    }), (0, r.jsx)("div", {
+    }), (0, i.jsx)(N, {}), (0, i.jsx)(o.$i$, {
+      className: O.divider
+    }), (0, i.jsx)("div", {
       ref: n
-    }), (0, r.jsx)(T, {}), (0, r.jsx)(o.$i$, {
-      className: C.divider
-    }), (0, r.jsx)(y, {}), (0, r.jsx)(P, {})]
+    }), (0, i.jsx)(I, {}), (0, i.jsx)(o.$i$, {
+      className: O.divider
+    }), (0, i.jsx)(y, {}), (0, i.jsx)(P, {})]
   })
 }

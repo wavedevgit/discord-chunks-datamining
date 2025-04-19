@@ -2,13 +2,13 @@
 "use strict";
 n.d(t, {
   Bd: () => i,
-  I5: () => s,
-  tq: () => l,
+  I5: () => l,
+  tq: () => s,
   uz: () => a,
   ye: () => r
 }), n(388685);
 let r = new Set(["Enter", "Tab"]),
   i = new Set(["z", "y"]),
-  s = 5e3,
-  l = 100,
+  l = 5e3,
+  s = 100,
   a = /[\n\t\r\f\v\x10]/

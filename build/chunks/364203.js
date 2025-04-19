@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(626135),
   S = n(839606),
   T = n(411149),
-  N = n(988290),
-  A = n(721359),
+  A = n(988290),
+  N = n(721359),
   C = n(640963),
   R = n(628309),
   P = n(680783),
@@ -92,7 +92,7 @@ function H(e) {
     children: [(0, r.jsxs)("div", {
       className: M.badgeAndCloseRow,
       children: [(0, r.jsx)(d.lBU, {
-        text: x.NW.string(x.t.oW0eUV)
+        text: x.intl.string(x.t.oW0eUV)
       }), (0, r.jsx)(d.olH, {
         className: M.coachmarkCloseIcon,
         onClick: () => {
@@ -105,18 +105,18 @@ function H(e) {
       className: M.coachmarkHeaderTextContainer,
       children: [(0, r.jsx)(d.X6q, {
         variant: "heading-lg/extrabold",
-        children: x.NW.string(x.t.dFhhcX)
+        children: x.intl.string(x.t.dFhhcX)
       }), (0, r.jsx)(d.Text, {
         className: M.subtitle,
         variant: "text-xs/medium",
         color: "text-muted",
-        children: x.NW.string(x.t.u7Hzjo)
+        children: x.intl.string(x.t.u7Hzjo)
       })]
     })]
   })
 }
 
-function W(e) {
+function Y(e) {
   let {
     isPremiumTier2Subscriber: t,
     handleClose: n
@@ -126,11 +126,11 @@ function W(e) {
     children: [(0, r.jsxs)("div", {
       children: [(0, r.jsx)(d.X6q, {
         variant: "heading-md/semibold",
-        children: x.NW.string(x.t.EJ4k19)
+        children: x.intl.string(x.t.EJ4k19)
       }), (0, r.jsx)(d.Text, {
         className: M.subtitle,
         variant: "text-sm/medium",
-        children: t ? x.NW.string(x.t.MnUZLS) : x.NW.string(x.t.frNDKS)
+        children: t ? x.intl.string(x.t.MnUZLS) : x.intl.string(x.t.frNDKS)
       })]
     }), (0, r.jsx)(d.olH, {
       className: M.closeContainer,
@@ -143,7 +143,7 @@ function W(e) {
   })
 }
 
-function Y(e) {
+function W(e) {
   let {
     isSelected: t,
     onSelect: n,
@@ -231,7 +231,7 @@ function K(e) {
     return () => {
       clearTimeout(e), u(!1)
     }
-  }, [t, a]), (0, r.jsxs)(Y, {
+  }, [t, a]), (0, r.jsxs)(W, {
     isSelected: t,
     onSelect: n,
     selectionId: l,
@@ -256,12 +256,12 @@ function z(e) {
     isSelected: t,
     onSelect: n
   } = e;
-  return (0, r.jsx)(Y, {
+  return (0, r.jsx)(W, {
     isSelected: t,
     onSelect: n,
     selectionId: F,
-    tooltipText: x.NW.string(x.t["C/MRFx"]),
-    label: x.NW.string(x.t["C/MRFx"]),
+    tooltipText: x.intl.string(x.t["C/MRFx"]),
+    label: x.intl.string(x.t["C/MRFx"]),
     className: M.wallpaperRemoveSelection,
     children: (0, r.jsx)(d.t6m, {
       size: "lg",
@@ -293,7 +293,7 @@ function q(e) {
           selected: t
         }), a(t)
       },
-      children: x.NW.string(x.t["3nPvdH"])
+      children: x.intl.string(x.t["3nPvdH"])
     }), (0, r.jsxs)(d.Kqy, {
       direction: "horizontal",
       justify: "end",
@@ -308,12 +308,12 @@ function q(e) {
           }), o()
         },
         disabled: n,
-        children: x.NW.string(x.t["ETE/oK"])
+        children: x.intl.string(x.t["ETE/oK"])
       }), (0, r.jsx)(d.zxk, {
         onClick: s,
         disabled: !t,
         submitting: n,
-        children: x.NW.string(x.t["1Qm829"])
+        children: x.intl.string(x.t["1Qm829"])
       })]
     })]
   })
@@ -329,7 +329,7 @@ function Q() {
       variant: "text-sm/medium",
       color: "text-muted",
       className: M.nonTier2FooterText,
-      children: x.NW.format(x.t["0Tapv7"], {
+      children: x.intl.format(x.t["0Tapv7"], {
         onClickNitro: () => {
           I.default.track(w.rMx.CHAT_WALLPAPER_NITRO_LINK_CLICKED), (0, y.uL)(w.Z5c.NITRO_HOME)
         }
@@ -337,7 +337,7 @@ function Q() {
     }), (0, r.jsx)(b.Z, {
       className: M.getNitroButton,
       buttonTextClassName: M.getNitroButtonText,
-      subscribeButtonText: x.NW.string(x.t.JST6jo),
+      subscribeButtonText: x.intl.string(x.t.JST6jo),
       subscriptionTier: L.Si.TIER_2,
       showGradient: !0,
       size: d.zxk.Sizes.MEDIUM
@@ -355,8 +355,8 @@ let X = function(e) {
     activePickerChannelId: c,
     closePicker: h,
     setPreviewWallpaperId: m
-  } = (0, S.B)(), g = (0, P.Z)(c), b = (0, E.m)(L.p9.TIER_2), [y, k] = i.useState(!1), j = (0, N.e)(y), U = (0, R.u)();
-  (0, A.W)();
+  } = (0, S.B)(), g = (0, P.Z)(c), b = (0, E.m)(L.p9.TIER_2), [y, k] = i.useState(!1), j = (0, A.e)(y), U = (0, R.u)();
+  (0, N.W)();
   let G = (0, u.e7)([T.Z], () => T.Z.isFetchingWallpapers),
     B = (0, u.e7)([T.Z], () => T.Z.failedToFetchWallpapers),
     F = (0, u.e7)([T.Z], () => T.Z.getWallpaperById(null == g ? void 0 : g.wallpaperId)),
@@ -367,7 +367,7 @@ let X = function(e) {
   }, [V]), i.useEffect(() => {
     null != F && k(F.isBlurred && b)
   }, [F, b]);
-  let Y = i.useCallback(() => {
+  let W = i.useCallback(() => {
       h()
     }, [h]),
     {
@@ -375,7 +375,7 @@ let X = function(e) {
       updateChatWallpaper: J
     } = (0, C.x)({
       channelId: c,
-      onUpdateComplete: Y
+      onUpdateComplete: W
     }),
     $ = i.useCallback(function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : D.L.USER_DISMISS;
@@ -393,7 +393,7 @@ let X = function(e) {
         channel_id: c,
         channel_type: null == e ? void 0 : e.type
       }), J(c, g.wallpaperId, () => {
-        (0, d.showToast)((0, d.createToast)(x.NW.string(x.t.F8FvU1), d.ToastType.FAILURE))
+        (0, d.showToast)((0, d.createToast)(x.intl.string(x.t.F8FvU1), d.ToastType.FAILURE))
       })
     }, [c, g, J, y]),
     et = i.useCallback(e => {
@@ -437,7 +437,7 @@ let X = function(e) {
       variant: "text-sm/medium",
       color: "text-muted",
       className: M.errorText,
-      children: x.NW.string(x.t.F8FvU1)
+      children: x.intl.string(x.t.F8FvU1)
     })]
   }) : G ? (0, r.jsx)("div", {
     className: M.loadingContainer,
@@ -479,7 +479,7 @@ let X = function(e) {
         children: [(null == s ? void 0 : s.pickerType) === S.j.COACHMARK ? (0, r.jsx)(H, {
           handleClose: $,
           isPremiumTier2Subscriber: b
-        }) : (0, r.jsx)(W, {
+        }) : (0, r.jsx)(Y, {
           handleClose: $,
           isPremiumTier2Subscriber: b
         }), (0, r.jsx)("div", {

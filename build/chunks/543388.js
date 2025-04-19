@@ -30,7 +30,7 @@ function u(e) {
       }), (0, n.jsx)(o.Text, {
         variant: "text-md/normal",
         color: "interactive-active",
-        children: c.NW.format(c.t.J3s8JC, {
+        children: c.intl.format(c.t.J3s8JC, {
           applicationName: t.name
         })
       })]
@@ -47,7 +47,7 @@ function m(e) {
   return (0, n.jsx)(o.ua7, {
     hideOnClick: !0,
     position: "top",
-    "aria-label": c.NW.string(c.t["5nMcv7"]),
+    "aria-label": c.intl.string(c.t["5nMcv7"]),
     tooltipClassName: s.gameMessageTooltip,
     tooltipContentClassName: s.gameMessageTooltipContent,
     text: (0, n.jsx)(u, {

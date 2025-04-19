@@ -55,12 +55,12 @@ function u(e, t) {
       }), e
     }, [t, u, d, _]),
     O = (0, r.useMemo)(() => !(0, o.oc)(g, E), [g, E]),
-    N = (0, r.useMemo)(() => Date.now() - h < 6e5, [h]);
+    y = (0, r.useMemo)(() => Date.now() - h < 6e5, [h]);
   return (0, r.useEffect)(() => {
     if (!n || b) return;
     let t = Date.now() - f < 6e5;
-    null != m && t || (O || !N) && (0, o.Ov)(e, E)
-  }, [n, b, m, f, N, O, E, e]), {
+    null != m && t || (O || !y) && (0, o.Ov)(e, E)
+  }, [n, b, m, f, y, O, E, e]), {
     isFetchingShopHome: b,
     fetchShopHomeError: m,
     shopBlocks: p,

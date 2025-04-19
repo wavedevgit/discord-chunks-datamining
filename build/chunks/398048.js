@@ -14,7 +14,7 @@ function u(e, t) {
   let u = (0, c.e7)([i.Z], () => i.Z.can(o.Plq.MANAGE_CHANNELS, e), [e]);
   return __OVERLAY__ || !u ? null : (0, r.jsx)(l.sNh, {
     id: "clone-channel",
-    label: a.NW.string(a.t.dEaPc3),
+    label: a.intl.string(a.t.dEaPc3),
     action: () => (0, l.ZDy)(async () => {
       let {
         default: c

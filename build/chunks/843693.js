@@ -92,7 +92,7 @@ let v = 7,
 function T(e) {
   return null != e && (e.value > 0 || (null == e ? void 0 : e.multiplier) > 1)
 }
-let N = new a.h(function(e) {
+let A = new a.h(function(e) {
     let {
       messageId: t,
       channelId: n,
@@ -111,7 +111,7 @@ let N = new a.h(function(e) {
     } = e;
     return "".concat(n, "-").concat(r, "-").concat(t)
   }),
-  A = e => {
+  N = e => {
     let {
       userId: t,
       channelId: n
@@ -122,14 +122,14 @@ let N = new a.h(function(e) {
 function C(e) {
   var t, n, r, i, a, s;
   let l = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-    c = S.get(A(e)),
+    c = S.get(N(e)),
     u = E(m({}, c, e), {
       value: null != (n = null != (t = e.value) ? t : null == c ? void 0 : c.value) ? n : 0,
       multiplier: Math.min(null != (i = null != (r = e.multiplier) ? r : null == c ? void 0 : c.multiplier) ? i : 1, v),
       decayInterval: null != (a = null == c ? void 0 : c.decayInterval) ? a : new o.Xp
     });
-  S.set(A(e), u), l && (null == (s = u.decayInterval) || s.start(O, () => {
-    let e = S.get(A(u));
+  S.set(N(e), u), l && (null == (s = u.decayInterval) || s.start(O, () => {
+    let e = S.get(N(u));
     if (null != e) {
       let n = u.multiplier !== e.multiplier && u.value !== e.value;
       if (e.value <= 0 || n) {
@@ -146,7 +146,7 @@ function C(e) {
 }
 
 function R(e) {
-  N.set(e.messageId, e)
+  A.set(e.messageId, e)
 }
 
 function P(e) {
@@ -182,7 +182,7 @@ function L(e) {
   if (!d.Z.isEnabled()) return !1;
   let s = l.default.getId();
   if (!D(null == a ? void 0 : a.id, s, o, I)) return !1;
-  let c = S.get(A({
+  let c = S.get(N({
     userId: null != (t = null == a ? void 0 : a.id) ? t : "???",
     channelId: r
   }));
@@ -200,14 +200,14 @@ class x extends(r = i.ZP.Store) {
     this.waitFor(l.default, c.Z)
   }
   getComboScore(e, t) {
-    let n = S.get(A({
+    let n = S.get(N({
       userId: e,
       channelId: t
     }));
     return null == n ? 0 : (0, f.Eo)(n)
   }
   getUserCombo(e, t) {
-    return S.get(A({
+    return S.get(N({
       userId: e,
       channelId: t
     }))
@@ -218,11 +218,11 @@ class x extends(r = i.ZP.Store) {
   }
   getMessageCombo(e) {
     var t;
-    let n = N.get(e);
+    let n = A.get(e);
     return null != (t = null == n ? void 0 : n.combo) ? t : void 0
   }
   getMostRecentMessageCombo(e) {
-    let t = N.values(e);
+    let t = A.values(e);
     return t[t.length - 1]
   }
   getUserComboShakeIntensity(e, t, n, r) {

@@ -24,10 +24,10 @@ var d = function(e) {
 
 function f() {
   return [{
-    name: c.NW.string(c.t.uoorxs),
+    name: c.intl.string(c.t.uoorxs),
     value: 0
   }, {
-    name: c.NW.string(c.t.lwZCFR),
+    name: c.intl.string(c.t.lwZCFR),
     value: 1
   }]
 }

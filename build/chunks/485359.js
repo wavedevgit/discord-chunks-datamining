@@ -52,10 +52,10 @@ class h extends c.Z {
       if (!n) {
         let e = "audio" !== t;
         (0, o.h7j)(t => (0, r.jsx)(l.default, p({
-          title: e ? f.NW.string(f.t.OqloHx) : f.NW.string(f.t["kI+OOT"]),
-          body: e ? f.NW.string(f.t.l3P7Ky) : f.NW.string(f.t.l3jwOT),
+          title: e ? f.intl.string(f.t.OqloHx) : f.intl.string(f.t["kI+OOT"]),
+          body: e ? f.intl.string(f.t.l3P7Ky) : f.intl.string(f.t.l3jwOT),
           onConfirm: () => window.open(u.Z.getArticleURL(i), "_blank"),
-          confirmText: f.NW.string(f.t.psXQHB)
+          confirmText: f.intl.string(f.t.psXQHB)
         }, t)))
       }
     })

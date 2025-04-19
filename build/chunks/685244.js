@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   l = n(192379),
   o = n(498607),
-  a = n.n(o),
-  i = n(200100),
+  i = n.n(o),
+  a = n(200100),
   s = n(748780),
   c = n(692547),
   u = n(481060),
@@ -58,7 +58,7 @@ function f(e) {
   var {
     value: t,
     children: n,
-    equalityFn: o = a(),
+    equalityFn: o = i(),
     style: s
   } = e, f = function(e, t) {
     if (null == e) return {};
@@ -100,13 +100,13 @@ function f(e) {
       range: [0, 1],
       output: ["".concat(x, "00"), "".concat(v, "27")]
     }),
-    N = null != s ? m(C({}, s), {
+    _ = null != s ? m(C({}, s), {
       backgroundColor: y
     }) : {
       backgroundColor: y
     };
-  return (0, r.jsx)(i.animated.tr, m(C({}, f), {
-    style: N,
+  return (0, r.jsx)(a.animated.tr, m(C({}, f), {
+    style: _,
     children: n
   }))
 }

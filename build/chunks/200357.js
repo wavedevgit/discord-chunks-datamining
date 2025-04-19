@@ -4,9 +4,9 @@ n.d(t, {
 }), n(388685), n(35282);
 var s = n(200651),
   i = n(192379),
-  r = n(120356),
-  o = n.n(r),
-  l = n(217986),
+  l = n(120356),
+  r = n.n(l),
+  o = n(217986),
   a = n(481060),
   h = n(600164),
   c = n(259580),
@@ -32,10 +32,10 @@ class f extends i.PureComponent {
       open: n
     } = this.state, {
       className: i,
-      submitting: r
-    } = this.props, [, l] = e.split("+");
+      submitting: l
+    } = this.props, [, o] = e.split("+");
     return (0, s.jsxs)(h.Z, {
-      className: o()(p.phoneField, E.elevationLow, i),
+      className: r()(p.phoneField, E.elevationLow, i),
       align: h.Z.Align.CENTER,
       grow: 0,
       children: [(0, s.jsxs)(a.zxk, {
@@ -45,14 +45,14 @@ class f extends i.PureComponent {
         innerClassName: p.countryButtonInner,
         onClick: this.handleTogglePopout,
         children: [(0, s.jsxs)(h.Z, {
-          className: o()(p.countryCodeContainer, m.marginReset),
+          className: r()(p.countryCodeContainer, m.marginReset),
           justify: h.Z.Justify.CENTER,
           children: [(0, s.jsx)("div", {
             className: p.plusSign,
             children: "+"
           }), (0, s.jsx)("div", {
             className: p.countryCode,
-            children: l
+            children: o
           })]
         }), (0, s.jsx)(c.Z, {
           foreground: p.phoneFieldExpand,
@@ -61,7 +61,7 @@ class f extends i.PureComponent {
           height: 16
         })]
       }), (0, s.jsx)("input", {
-        "aria-label": u.NW.string(u.t["64bX0N"]),
+        "aria-label": u.intl.string(u.t["64bX0N"]),
         className: p.inputField,
         value: t,
         onChange: this.handleChange,
@@ -70,9 +70,9 @@ class f extends i.PureComponent {
       }), (0, s.jsx)(a.zxk, {
         className: p.sendButton,
         size: a.PhG.SMALL,
-        submitting: r,
+        submitting: l,
         onClick: this.handleSubmit,
-        children: u.NW.string(u.t.TXNS7e)
+        children: u.intl.string(u.t.TXNS7e)
       }), n ? (0, s.jsx)(d.Z, {
         onClick: this.handleClick
       }) : null]
@@ -111,7 +111,7 @@ class f extends i.PureComponent {
         phone: null != n ? n : ""
       })
     });
-    let [t, n] = l.Z.find(e => "United States" === e.name).phoneCountryCode.split(" ");
+    let [t, n] = o.Z.find(e => "United States" === e.name).phoneCountryCode.split(" ");
     this.state = {
       countryCode: t,
       phone: null != n ? n : "",

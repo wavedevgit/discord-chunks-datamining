@@ -25,7 +25,7 @@ let h = (0, c.Q)() || !1,
         icon: l.vqy,
         "aria-hidden": !0
       }), (0, r.jsx)(a.Z.Title, {
-        children: d.NW.string(d.t.cw57am)
+        children: d.intl.string(d.t.cw57am)
       }), (0, r.jsx)(a.Z.Divider, {}), (0, r.jsxs)(l.njP, {
         type: "top-pill",
         selectedItem: t,
@@ -68,10 +68,10 @@ let h = (0, c.Q)() || !1,
         },
         children: [(0, r.jsx)(l.njP.Item, {
           id: u.Z5c.APPLICATION_LIBRARY,
-          children: d.NW.string(d.t.p7ARTE)
+          children: d.intl.string(d.t.p7ARTE)
         }), f ? (0, r.jsx)(l.njP.Item, {
           id: u.Z5c.APPLICATION_LIBRARY_SETTINGS,
-          children: d.NW.string(d.t["3D5yo6"])
+          children: d.intl.string(d.t["3D5yo6"])
         }) : null]
       })]
     })

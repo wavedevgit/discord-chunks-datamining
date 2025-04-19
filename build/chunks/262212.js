@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(200651),
   o = n(192379),
   a = n(120356),
-  s = n.n(a),
-  c = n(481060),
-  i = n(762762),
+  i = n.n(a),
+  s = n(481060),
+  c = n(762762),
   l = n(690786),
   u = n(827397),
   d = n(279604),
@@ -71,15 +71,15 @@ function _(e) {
     powerup: t,
     isActive: n,
     compact: o
-  } = e, a = n ? (0, r.jsx)(c.mTd, {
+  } = e, a = n ? (0, r.jsx)(s.mTd, {
     size: "sm",
     color: "currentColor"
-  }) : (0, r.jsx)(c.$Eu, {
+  }) : (0, r.jsx)(s.$Eu, {
     size: "sm",
     color: "currentColor"
-  }), s = b.NW.string(n ? f.Z.TZsu1d : f.Z.gSxlHR);
+  }), i = b.intl.string(n ? f.default.TZsu1d : f.default.gSxlHR);
   return (0, r.jsxs)(r.Fragment, {
-    children: [!o && s, !o && (0, r.jsx)("span", {
+    children: [!o && i, !o && (0, r.jsx)("span", {
       className: m.dot,
       children: "•"
     }), a, (0, r.jsx)("span", {
@@ -94,21 +94,21 @@ function v(e) {
     powerup: n,
     onClick: o
   } = e, a = g(e, ["guildId", "powerup", "onClick"]);
-  let s = (0, u.Z)(t, n),
+  let i = (0, u.Z)(t, n),
     {
-      onShowMore: i
+      onShowMore: c
     } = (0, d.ZP)(t, n),
     l = p.uc.has(n.skuId);
-  return (0, r.jsx)(c.zxk, j(O({
+  return (0, r.jsx)(s.zxk, j(O({
     className: m.primaryButton,
     innerClassName: m.buttonInner,
     wrapperClassName: m.buttonWrapper,
     grow: !0,
     onClick: e => {
-      null == o || o(e), l ? null == s || s(e) : null == i || i()
+      null == o || o(e), l ? null == i || i(e) : null == c || c()
     }
   }, a), {
-    children: l ? b.NW.string(f.Z["g5Ds6+"]) : b.NW.string(b.t["OBCR+v"])
+    children: l ? b.intl.string(f.default["g5Ds6+"]) : b.intl.string(b.t["OBCR+v"])
   }))
 }
 
@@ -124,42 +124,42 @@ function I(e) {
     isLoading: I,
     error: x,
     onShowDeactivate: y
-  } = (0, d.ZP)(t, n), N = null != (0, l.Z)(t, n), {
-    disabled: k,
-    reason: h
-  } = (0, i.Z)(t, n, N);
+  } = (0, d.ZP)(t, n), k = null != (0, l.Z)(t, n), {
+    disabled: h,
+    reason: C
+  } = (0, c.Z)(t, n, k);
   return o.useEffect(() => {
     null == u || u(x)
-  }, [x, u]), (0, r.jsx)(c.ua7, {
+  }, [x, u]), (0, r.jsx)(s.ua7, {
     delay: 100,
-    "aria-label": null != h ? h : N ? b.NW.string(f.Z.TZsu1d) : void 0,
-    text: null != h ? h : N ? (0, r.jsxs)("div", {
+    "aria-label": null != C ? C : k ? b.intl.string(f.default.TZsu1d) : void 0,
+    text: null != C ? C : k ? (0, r.jsxs)("div", {
       className: m.tooltipContainer,
-      children: [(0, r.jsx)(c.Text, {
+      children: [(0, r.jsx)(s.Text, {
         variant: "text-xs/semibold",
-        children: b.NW.string(f.Z.TZsu1d)
-      }), (0, r.jsx)(c.Text, {
+        children: b.intl.string(f.default.TZsu1d)
+      }), (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
-        children: b.NW.formatToPlainString(f.Z["5HQUzM"], {
+        children: b.intl.formatToPlainString(f.default["5HQUzM"], {
           boostCount: n.cost
         })
       })]
     }) : void 0,
-    children: e => (0, r.jsx)(c.zxk, j(O(j(O({}, e), {
+    children: e => (0, r.jsx)(s.zxk, j(O(j(O({}, e), {
       className: m.secondaryButton,
       innerClassName: m.buttonInner,
-      wrapperClassName: s()(m.secondaryButton, {
+      wrapperClassName: i()(m.secondaryButton, {
         [m.buttonWrapper]: !0 === p.grow
       }),
-      color: N ? c.Ttl.PRIMARY : c.Ttl.BRAND,
-      "aria-label": b.NW.string(N ? f.Z.TZsu1d : f.Z.gSxlHR),
-      disabled: k,
-      onClick: N ? y : v,
+      color: k ? s.Ttl.PRIMARY : s.Ttl.BRAND,
+      "aria-label": b.intl.string(k ? f.default.TZsu1d : f.default.gSxlHR),
+      disabled: h,
+      onClick: k ? y : v,
       submitting: I
     }), p), {
       children: (0, r.jsx)(_, {
         powerup: n,
-        isActive: N,
+        isActive: k,
         compact: a
       })
     }))
@@ -172,16 +172,16 @@ function x(e) {
     guildId: n,
     powerup: o,
     onError: a
-  } = e, c = null != (0, l.Z)(n, o), i = !c;
+  } = e, s = null != (0, l.Z)(n, o), c = !s;
   return (0, r.jsxs)("div", {
-    className: s()(m.container, t),
+    className: i()(m.container, t),
     children: [(0, r.jsx)(I, {
       guildId: n,
       powerup: o,
       onError: a,
-      grow: i,
-      compact: !i
-    }), c && (0, r.jsx)(v, {
+      grow: c,
+      compact: !c
+    }), s && (0, r.jsx)(v, {
       guildId: n,
       powerup: o
     })]

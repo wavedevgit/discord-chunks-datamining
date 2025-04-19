@@ -48,12 +48,12 @@ function m(e) {
     affinity: e,
     applyMask: t !== p.length - 1,
     size: d.EF.SIZE_32
-  }, e.id)), m = e => null != e.globalName ? e.globalName : e.username, E = i.useMemo(() => 3 === p.length ? f.NW.formatToPlainString(f.t.c7ETJC, {
+  }, e.id)), m = e => null != e.globalName ? e.globalName : e.username, E = i.useMemo(() => 3 === p.length ? f.intl.formatToPlainString(f.t.c7ETJC, {
     username: m(p[2])
-  }) : 2 === p.length ? f.NW.formatToPlainString(f.t.st8Rh4, {
+  }) : 2 === p.length ? f.intl.formatToPlainString(f.t.st8Rh4, {
     username: m(p[1]),
     otherUsername: m(p[0])
-  }) : 1 === p.length ? f.NW.formatToPlainString(f.t.dpjXPD, {
+  }) : 1 === p.length ? f.intl.formatToPlainString(f.t.dpjXPD, {
     username: m(p[0])
   }) : "", [p]);
   if (0 === p.length) return null;

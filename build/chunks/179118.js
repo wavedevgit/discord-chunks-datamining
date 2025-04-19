@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(246946),
   S = n(594174),
   T = n(572004),
-  N = n(669079),
-  A = n(74538),
+  A = n(669079),
+  N = n(74538),
   C = n(51144),
   R = n(987209),
   P = n(981631),
@@ -50,14 +50,14 @@ function M(e) {
     isSendingMessage: y
   } = e, [O, S] = i.useState(u.kO8.Modes.DEFAULT), M = (0, c.e7)([I.Z], () => I.Z.enabled), j = f || null != l && null != h, U = (null == a ? void 0 : a.productLine) === P.POd.COLLECTIBLES, G = (0, E.Z)(), {
     selectedGiftingPromotionReward: B
-  } = (0, R.wD)(), F = null == G ? void 0 : G.giftPurchaseConfirmation, V = (0, g.tK)(null == B ? void 0 : B.skuId), Z = (0, g.a5)(s) && null != V && null != F, H = () => null != s ? s.skuId : null != a ? a.id : null, W = () => {
+  } = (0, R.wD)(), F = null == G ? void 0 : G.giftPurchaseConfirmation, V = (0, g.tK)(null == B ? void 0 : B.skuId), Z = (0, g.a5)(s) && null != V && null != F, H = () => null != s ? s.skuId : null != a ? a.id : null, Y = () => {
     let e;
-    return null != b ? D.NW.string(D.t.qB8ayc) : null == s ? null : (e = s.interval === w.rV.MONTH ? j ? Z ? F.monthGiftText : D.t["4ZJ+7e"] : D.t["P+z55e"] : j ? Z ? F.yearGiftText : D.t.p0pZXF : D.t.bXqk3t, D.NW.format(e, {
-      skuName: (0, A.aq)(s.id),
+    return null != b ? D.intl.string(D.t.qB8ayc) : null == s ? null : (e = s.interval === w.rV.MONTH ? j ? Z ? F.monthGiftText : D.t["4ZJ+7e"] : D.t["P+z55e"] : j ? Z ? F.yearGiftText : D.t.p0pZXF : D.t.bXqk3t, D.intl.format(e, {
+      skuName: (0, N.aq)(s.id),
       intervalCount: s.intervalCount
     }))
-  }, Y = () => null != h || f && null == b ? D.NW.string(D.t.zOmK9P) : null != b ? D.NW.string(D.t.d1lrmZ) : D.NW.string(D.t["/s1xR0"]), K = (e, t) => {
-    null != a && (0, N.dM)(new v.Z({
+  }, W = () => null != h || f && null == b ? D.intl.string(D.t.zOmK9P) : null != b ? D.intl.string(D.t.d1lrmZ) : D.intl.string(D.t["/s1xR0"]), K = (e, t) => {
+    null != a && (0, A.dM)(new v.Z({
       code: t,
       maxUses: 1
     }), a), (0, T.JG)(e, () => S(u.kO8.Modes.SUCCESS), () => S(u.kO8.Modes.ERROR)), setTimeout(() => {
@@ -68,21 +68,21 @@ function M(e) {
     if (null == t) return null;
     switch (O) {
       case u.kO8.Modes.SUCCESS:
-        e = D.NW.string(D.t.XVvPjY);
+        e = D.intl.string(D.t.XVvPjY);
         break;
       case u.kO8.Modes.ERROR:
-        e = D.NW.string(D.t.i4GM3N);
+        e = D.intl.string(D.t.i4GM3N);
         break;
       default:
-        e = D.NW.string(D.t.OpuAlJ)
+        e = D.intl.string(D.t.OpuAlJ)
     }
     return (0, r.jsxs)("div", {
       className: L.giftCodeSection,
       children: [(0, r.jsx)(u.vwX, {
-        children: D.NW.string(D.t["/dG4ND"])
+        children: D.intl.string(D.t["/dG4ND"])
       }), null != t && (0, r.jsx)(u.kO8, {
-        hideMessage: M ? D.NW.string(D.t["0RLn4+"]) : null,
-        value: (0, N.Nz)(t),
+        hideMessage: M ? D.intl.string(D.t["0RLn4+"]) : null,
+        value: (0, A.Nz)(t),
         mode: O,
         text: e,
         onCopy: e => K(e, t),
@@ -92,24 +92,24 @@ function M(e) {
         buttonLook: u.iLD.LINK
       }), (0, r.jsx)("div", {
         className: L.subtext,
-        children: D.NW.string(D.t.QWKUpq)
+        children: D.intl.string(D.t.QWKUpq)
       })]
     })
   }, q = () => {
-    let e = (0, N.MY)(h, U),
+    let e = (0, A.MY)(h, U),
       {
         removeGiftRecipientUI: n
       } = m.m.getCurrentConfig({
         location: "GiftPurchaseConfirmation"
       }, {
         autoTrackExposure: !1,
-        disable: __BILLING_STANDALONE__ || e !== N.xr.CUSTOM_STYLE
+        disable: __BILLING_STANDALONE__ || e !== A.xr.CUSTOM_STYLE
       }),
       i = !n && null == b;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: L.blurb,
-        children: W()
+        children: Y()
       }), i && (0, r.jsx)(k, {
         giftCode: t,
         onClose: d
@@ -131,7 +131,7 @@ function M(e) {
       children: [" ", C.ZP.getUserTag(h)]
     }), (0, r.jsx)("div", {
       className: L.giftSentMessage,
-      children: W()
+      children: Y()
     })]
   });
   return y ? (0, r.jsxs)("div", {
@@ -159,7 +159,7 @@ function M(e) {
         [L.header]: null == l && !U,
         [L.headerCustomGifting]: null != l && !U
       }),
-      children: Y()
+      children: W()
     }), f && null != h && null == b || j ? Q() : q()]
   })
 }
@@ -177,17 +177,17 @@ let k = e => {
   } = (0, c.cj)([y.Z], () => ({
     userAffinities: y.Z.getUserAffinitiesUserIds(),
     isLoading: y.Z.getFetching()
-  })), I = Array.from(E.values()), T = (0, c.e7)([O.Z], () => O.Z.getFriendIDs()), N = l().difference(T, I), A = [...I, ...N], R = (0, c.e7)([S.default], () => S.default.filter(e => A.includes(e.id) && !e.bot), [A]);
+  })), I = Array.from(E.values()), T = (0, c.e7)([O.Z], () => O.Z.getFriendIDs()), A = l().difference(T, I), N = [...I, ...A], R = (0, c.e7)([S.default], () => S.default.filter(e => N.includes(e.id) && !e.bot), [N]);
   if (null == R || 0 === R.length) return null;
-  let P = l().sortBy(R, e => A.indexOf(e.id));
+  let P = l().sortBy(R, e => N.indexOf(e.id));
   return (0, r.jsxs)("div", {
     className: L.giftRecipientSection,
     children: [(0, r.jsx)(u.vwX, {
-      children: D.NW.string(D.t.MJw05e)
+      children: D.intl.string(D.t.MJw05e)
     }), (0, r.jsxs)("div", {
       className: L.giftRecipient,
       children: [(0, r.jsx)(u.VcW, {
-        placeholder: D.NW.string(D.t.J019jY),
+        placeholder: D.intl.string(D.t.J019jY),
         wrapperClassName: L.giftRecipientInputWrapper,
         className: s ? L.giftRecipientInputError : void 0,
         renderOptionPrefix: e => (null == e ? void 0 : e.value) == null ? null : (0, r.jsx)(_.Z, {
@@ -216,11 +216,11 @@ let k = e => {
             p(!0), g(!1)
           })
         },
-        children: D.NW.string(D.t["+EgwQk"])
+        children: D.intl.string(D.t["+EgwQk"])
       })]
     }), (0, r.jsx)("div", {
       className: s ? L.subtextError : L.subtext,
-      children: s ? D.NW.string(D.t.jo5Vbm) : D.NW.string(D.t["8/N3v7"])
+      children: s ? D.intl.string(D.t.jo5Vbm) : D.intl.string(D.t["8/N3v7"])
     })]
   })
 }

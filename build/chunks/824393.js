@@ -28,8 +28,8 @@ var r = n(200651),
   I = n(272008),
   S = n(497505),
   T = n(981631),
-  N = n(675654),
-  A = n(474936),
+  A = n(675654),
+  N = n(474936),
   C = n(388032),
   R = n(639220),
   P = n(851750),
@@ -43,7 +43,7 @@ function L(e) {
     onClose: p,
     quest: m,
     location: g
-  } = e, E = i.useRef(null), [b, y] = i.useState(null), v = i.useRef(new s.qA), O = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), T = (null == (t = m.userStatus) ? void 0 : t.claimedAt) != null, [A, C] = i.useState({
+  } = e, E = i.useRef(null), [b, y] = i.useState(null), v = i.useRef(new s.qA), O = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), T = (null == (t = m.userStatus) ? void 0 : t.claimedAt) != null, [N, C] = i.useState({
     state: "loading"
   });
   i.useEffect(() => {
@@ -63,9 +63,9 @@ function L(e) {
       })
     })
   }, [m, g, T]);
-  let P = "loading" === A.state,
-    w = !O && !T && "claimed" === A.state,
-    D = "claimed" === A.state && null != A.entitlements && A.entitlements.items.some(e => e.consumed);
+  let P = "loading" === N.state,
+    w = !O && !T && "claimed" === N.state,
+    D = "claimed" === N.state && null != N.entitlements && N.entitlements.items.some(e => e.consumed);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.O_, {
       ref: y,
@@ -82,22 +82,22 @@ function L(e) {
         hideShadow: !0,
         children: P ? (0, r.jsx)(c.$jN, {
           type: c.$jN.Type.SPINNING_CIRCLE
-        }) : "error" === A.state ? (0, r.jsx)(x, {
-          errorReason: A.errorReason,
+        }) : "error" === N.state ? (0, r.jsx)(x, {
+          errorReason: N.errorReason,
           onClose: p
         }) : D ? (0, r.jsx)(k, {
-          duration: M(null != (u = null == (n = A.entitlements) ? void 0 : n.items) ? u : []),
+          duration: M(null != (u = null == (n = N.entitlements) ? void 0 : n.items) ? u : []),
           onClose: p
         }) : (0, r.jsx)(j, {
-          duration: M(null != (d = null == (a = A.entitlements) ? void 0 : a.items) ? d : []),
+          duration: M(null != (d = null == (a = N.entitlements) ? void 0 : a.items) ? d : []),
           onClose: p
         })
       })
     }), w && (0, r.jsx)(h.Z, {
       confettiTarget: E.current,
       confettiCanvas: b,
-      sprites: N.CA,
-      colors: N.Br
+      sprites: A.CA,
+      colors: A.Br
     })]
   })
 }
@@ -105,7 +105,7 @@ function L(e) {
 function x(e) {
   let {
     onClose: t
-  } = e, n = C.NW.string(C.t.PbaUtr);
+  } = e, n = C.intl.string(C.t.PbaUtr);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(c.xBx, {
       separator: !1,
@@ -113,7 +113,7 @@ function x(e) {
       children: [(0, r.jsx)(c.X6q, {
         className: R.errorTitle,
         variant: "heading-xl/medium",
-        children: C.NW.string(C.t["UleS9/"])
+        children: C.intl.string(C.t["UleS9/"])
       }), (0, r.jsx)(c.olH, {
         onClick: t,
         className: R.errorModalCloseButton
@@ -130,7 +130,7 @@ function x(e) {
         color: c.zxk.Colors.BRAND,
         size: c.zxk.Sizes.MEDIUM,
         onClick: t,
-        children: C.NW.string(C.t.cpT0Cg)
+        children: C.intl.string(C.t.cpT0Cg)
       })
     })]
   })
@@ -138,9 +138,9 @@ function x(e) {
 
 function M(e) {
   let t = (0, O.xG)(e.map(e => e.skuId));
-  return t % 24 == 0 ? C.NW.formatToPlainString(C.t["Cz1G9/"], {
+  return t % 24 == 0 ? C.intl.formatToPlainString(C.t["Cz1G9/"], {
     days: t / 24
-  }) : C.NW.formatToPlainString(C.t.J9Lu4u, {
+  }) : C.intl.formatToPlainString(C.t.J9Lu4u, {
     hours: t
   })
 }
@@ -156,7 +156,7 @@ function k(e) {
   }), s = (0, y.vc)(o.endsAt, "L"), l = i.useCallback(() => {
     (0, g.$)(n)
   }, [n]);
-  return o.fractionalState === A.a$.NONE ? (0, r.jsx)("div", {
+  return o.fractionalState === N.a$.NONE ? (0, r.jsx)("div", {
     className: R.spinnerContainer,
     children: (0, r.jsx)(c.$jN, {
       type: c.$jN.Type.SPINNING_CIRCLE
@@ -185,13 +185,13 @@ function k(e) {
         className: R.beta
       }), (0, r.jsx)(E.C, {
         className: R.nitroHeading,
-        premiumType: A.p9.TIER_2,
+        premiumType: N.p9.TIER_2,
         type: E.C.Types.PREMIUM_ACTIVATED,
         theme: a
       }), (0, r.jsx)(c.Text, {
         variant: "text-md/normal",
         className: R.text,
-        children: C.NW.format(C.t.tgc1oq, {
+        children: C.intl.format(C.t.tgc1oq, {
           helpCenterLink: v.Z.getArticleURL(T.BhN.FRACTIONAL_PREMIUM_ABOUT),
           duration: t,
           expirationDate: s
@@ -199,7 +199,7 @@ function k(e) {
       }), (0, r.jsx)(c.zxk, {
         className: R.cta,
         onClick: l,
-        children: C.NW.string(C.t["eQX+go"])
+        children: C.intl.string(C.t["eQX+go"])
       })]
     })]
   })
@@ -220,7 +220,7 @@ function j(e) {
       type: c.$jN.Type.SPINNING_CIRCLE
     })
   });
-  let d = a.isFractionalPremiumActive ? C.NW.string(C.t["1ku8i4"]) : C.NW.format(C.t.fI1nLy, {
+  let d = a.isFractionalPremiumActive ? C.intl.string(C.t["1ku8i4"]) : C.intl.format(C.t.fI1nLy, {
     helpCenterLink: v.Z.getArticleURL(T.BhN.FRACTIONAL_PREMIUM_ABOUT),
     duration: t
   });
@@ -233,7 +233,7 @@ function j(e) {
         children: [(0, r.jsx)("img", {
           className: R.headerBackground,
           src: P,
-          alt: C.NW.string(C.t["8SsCa2"])
+          alt: C.intl.string(C.t["8SsCa2"])
         }), (0, r.jsx)(m.Z, {
           className: R.beta
         }), (0, r.jsxs)("div", {
@@ -241,7 +241,7 @@ function j(e) {
           children: [(0, r.jsx)("div", {
             children: (0, r.jsx)("img", {
               src: D,
-              alt: C.NW.string(C.t.OhPMam),
+              alt: C.intl.string(C.t.OhPMam),
               height: 120
             })
           }), (0, r.jsx)(c.olH, {
@@ -256,7 +256,7 @@ function j(e) {
         children: [(0, r.jsx)(c.X6q, {
           variant: "heading-lg/bold",
           className: R.heading,
-          children: C.NW.string(C.t["+PHEo6"])
+          children: C.intl.string(C.t["+PHEo6"])
         }), (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
           className: R.text,
@@ -264,7 +264,7 @@ function j(e) {
         }), (0, r.jsx)(c.zxk, {
           className: R.cta2,
           onClick: l,
-          children: C.NW.string(C.t.LnsQGR)
+          children: C.intl.string(C.t.LnsQGR)
         })]
       })]
     })

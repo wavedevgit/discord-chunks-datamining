@@ -5,16 +5,16 @@ r.d(t, {
   kL: () => c,
   zJ: () => l
 });
-var n, s, i = r(388032),
+var n, i, s = r(388032),
   l = 12633 == r.j ? ((n = {})[n.NAME = 1] = "NAME", n[n.PRICE_ASC = 2] = "PRICE_ASC", n[n.PRICE_DESC = 3] = "PRICE_DESC", n[n.NEWEST_ARRIVALS = 4] = "NEWEST_ARRIVALS", n) : null,
-  o = ((s = {})[s.SUBS_FIRST = 1] = "SUBS_FIRST", s[s.PRODUCTS_FIRST = 2] = "PRODUCTS_FIRST", s);
+  o = ((i = {})[i.SUBS_FIRST = 1] = "SUBS_FIRST", i[i.PRODUCTS_FIRST = 2] = "PRODUCTS_FIRST", i);
 
 function a(e) {
   return ({
-    4: i.NW.string(i.t["5tzSRE"]),
-    2: i.NW.string(i.t["WWIr5+"]),
-    3: i.NW.string(i.t.WlSInZ),
-    1: i.NW.string(i.t.uOU7Pz)
+    4: s.intl.string(s.t["5tzSRE"]),
+    2: s.intl.string(s.t["WWIr5+"]),
+    3: s.intl.string(s.t.WlSInZ),
+    1: s.intl.string(s.t.uOU7Pz)
   })[e]
 }
 let c = [4, 2, 3, 1]

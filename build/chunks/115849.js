@@ -6,9 +6,9 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  u = n(512722),
-  c = n.n(u),
-  l = n(481060),
+  l = n(512722),
+  u = n.n(l),
+  c = n(481060),
   d = n(194359),
   o = n(313201),
   p = n(540059),
@@ -84,18 +84,18 @@ function E(e, t) {
 
 function w(e) {
   let {
-    placeholder: t = g.NW.string(g.t["Rn/sLi"])
-  } = e, n = i.createRef(), s = i.createRef(), [u, o] = i.useReducer(E, v), {
+    placeholder: t = g.intl.string(g.t["Rn/sLi"])
+  } = e, n = i.createRef(), s = i.createRef(), [l, o] = i.useReducer(E, v), {
     canSend: x,
     hint: R,
     success: w,
     error: T
-  } = u, N = (0, p.Q3)("AddFriendInput");
+  } = l, k = (0, p.Q3)("AddFriendInput");
   return i.useEffect(() => {
-    null != w && (c()(null != n.current, "Input is submitting when not mounted"), n.current.value = "", n.current.focus())
+    null != w && (u()(null != n.current, "Input is submitting when not mounted"), n.current.value = "", n.current.focus())
   }, [w, n]), (0, r.jsxs)("form", {
     onSubmit: e => {
-      e.preventDefault(), c()(null != n.current, "Input is submitted when not mounted");
+      e.preventDefault(), u()(null != n.current, "Input is submitted when not mounted");
       let t = n.current.value.trim();
       !t.includes("#") && t.startsWith("@") && (t = t.substring(1));
       let r = (0, f.Zy)(t);
@@ -110,7 +110,7 @@ function w(e) {
         }
       }).then(() => o({
         type: "SUCCESS",
-        text: g.NW.format(g.t.Rtl1Eh, {
+        text: g.intl.format(g.t.Rtl1Eh, {
           discordTag: t
         })
       }), e => {
@@ -124,19 +124,19 @@ function w(e) {
     autoComplete: "off",
     children: [(0, r.jsxs)("div", {
       className: m.addFriendWumpusWrapper,
-      children: [(0, r.jsx)(l.R94, {
+      children: [(0, r.jsx)(c.R94, {
         id: _,
-        type: l.R94.Types.DESCRIPTION,
-        children: (0, r.jsx)(l.Text, {
+        type: c.R94.Types.DESCRIPTION,
+        children: (0, r.jsx)(c.Text, {
           tag: "div",
           variant: "heading-md/normal",
-          children: g.NW.string(g.t["Rn/sLi"])
+          children: g.intl.string(g.t["Rn/sLi"])
         })
-      }), N ? (0, r.jsx)("img", {
+      }), k ? (0, r.jsx)("img", {
         src: j,
         alt: "Wumpus Waving"
       }) : null]
-    }), (0, r.jsx)(l.tEY, {
+    }), (0, r.jsx)(c.tEY, {
       focusTarget: n,
       ringTarget: s,
       ringClassName: m.ring,
@@ -146,7 +146,7 @@ function w(e) {
           [m.success]: w,
           [m.error]: T
         }),
-        children: [(0, r.jsx)(l.oil, {
+        children: [(0, r.jsx)(c.oil, {
           id: O,
           inputRef: n,
           className: m.addFriendInput,
@@ -154,7 +154,7 @@ function w(e) {
           onKeyPress: e => {
             let t = e.currentTarget.value;
             if (e.key !== b.mR.Enter && t.includes("#")) {
-              c()(null != n.current, "Input is handling keypress when not mounted");
+              u()(null != n.current, "Input is handling keypress when not mounted");
               let r = t.indexOf("#"),
                 i = n.current.selectionStart,
                 s = e.key === b.mR.Backspace || e.key === b.mR.ArrowRight || e.key === b.mR.ArrowLeft,
@@ -188,22 +188,22 @@ function w(e) {
           className: m.addFriendHint,
           "aria-hidden": !0,
           children: R
-        }), (0, r.jsx)(l.zxk, {
-          size: l.zxk.Sizes.SMALL,
+        }), (0, r.jsx)(c.zxk, {
+          size: c.zxk.Sizes.SMALL,
           disabled: !x,
           type: "submit",
-          children: g.NW.string(g.t["PMsq/f"])
+          children: g.intl.string(g.t["PMsq/f"])
         })]
       })
-    }), null != T && (0, r.jsx)(l.R94, {
+    }), null != T && (0, r.jsx)(c.R94, {
       role: "alert",
       id: S,
-      type: l.R94.Types.ERROR,
+      type: c.R94.Types.ERROR,
       className: y.marginTop8,
       children: T
-    }), null != w && (0, r.jsx)(l.R94, {
+    }), null != w && (0, r.jsx)(c.R94, {
       role: "status",
-      type: l.R94.Types.SUCCESS,
+      type: c.R94.Types.SUCCESS,
       className: y.marginTop8,
       children: w
     })]

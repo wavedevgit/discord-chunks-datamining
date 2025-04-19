@@ -17,7 +17,7 @@ function u(t, n, e) {
     writable: !0
   }) : t[n] = e, t
 }
-let d = () => [c.NW.string(c.t["6m/6nJ"]), c.NW.string(c.t.n7dksL), c.NW.string(c.t["1LyF1t"]), c.NW.string(c.t.QJyuxc)];
+let d = () => [c.intl.string(c.t["6m/6nJ"]), c.intl.string(c.t.n7dksL), c.intl.string(c.t["1LyF1t"]), c.intl.string(c.t.QJyuxc)];
 class h extends(l = a.PureComponent) {
   componentDidMount() {
     let {
@@ -59,7 +59,7 @@ class h extends(l = a.PureComponent) {
     } = this.props;
     if (t === 1 / 0) return (0, s.jsx)("span", {
       className: e,
-      "aria-label": c.NW.string(c.t.PqEzn5),
+      "aria-label": c.intl.string(c.t.PqEzn5),
       children: "∞"
     });
     let a = (0, r.TD)(Date.now(), t, l);

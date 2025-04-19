@@ -61,9 +61,9 @@ function S(e) {
     let e = y.length > 0,
       n = t.config.messages.gameTitle;
     return {
-      header: e ? C.NW.formatToPlainString(C.t["28Ql29"], {
+      header: e ? C.intl.formatToPlainString(C.t["28Ql29"], {
         gameTitle: n
-      }) : C.NW.formatToPlainString(C.t.gX0Qc3, {
+      }) : C.intl.formatToPlainString(C.t.gX0Qc3, {
         gameTitle: n
       }),
       renderBody: e ? () => (0, r.jsx)(r.Fragment, {
@@ -73,7 +73,7 @@ function S(e) {
               s = (0, h.C9)(e),
               a = (0, h._j)(e);
             return (0, r.jsx)(w, {
-              children: C.NW.format(s, {
+              children: C.intl.format(s, {
                 account_name: null == o ? void 0 : o.name,
                 onClick: () => {
                   (0, h.fY)({
@@ -96,7 +96,7 @@ function S(e) {
         className: O.microphoneUnitBodyText,
         color: "text-muted",
         variant: "text-xxs/normal",
-        children: C.NW.format(C.t.GXqvCw, {
+        children: C.intl.format(C.t.GXqvCw, {
           gameTitle: n
         })
       })
@@ -186,14 +186,14 @@ let P = function(e) {
         isComplete: o || s || l
       }, {
         renderContent: () => (0, r.jsx)(y.y3, {
-          children: C.NW.formatToPlainString(C.t["+8JB6e"], {
+          children: C.intl.formatToPlainString(C.t["+8JB6e"], {
             gameTitle: i
           })
         }),
         isComplete: s || l
       }, {
         renderContent: () => (0, r.jsx)(y.y3, {
-          children: C.NW.formatToPlainString(C.t.HhfrYW, {
+          children: C.intl.formatToPlainString(C.t.HhfrYW, {
             numMinutes: n.targetMinutes
           })
         }),
@@ -205,7 +205,7 @@ let P = function(e) {
     }
   }, [a, c.length, t, n.targetMinutes]);
   return (0, r.jsxs)(y.ZP, {
-    heading: C.NW.string(C.t.UPWlJi),
+    heading: C.intl.string(C.t.UPWlJi),
     steps: u,
     children: [i && (0, r.jsx)(y.Om, {
       quest: t

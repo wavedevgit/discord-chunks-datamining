@@ -56,7 +56,7 @@ class f extends i.Component {
       circle: (0, r.jsx)(p, {
         IconComponent: o.Que
       }),
-      smallHeader: u.NW.string(u.t.u81aYW),
+      smallHeader: u.intl.string(u.t.u81aYW),
       text: (0, s.vc)(e.releaseDate, "LL")
     });
     if (e.type === c.AzA.RELEASE_DATE) return (0, r.jsx)(h, {
@@ -64,7 +64,7 @@ class f extends i.Component {
       circle: (0, r.jsx)(p, {
         IconComponent: o.Que
       }),
-      smallHeader: u.NW.string(u.t.qpwaNT),
+      smallHeader: u.intl.string(u.t.qpwaNT),
       text: (0, s.vc)(e.releaseDate, "LL")
     });
     if (e.type === c.AzA.EARLY_ACCESS)
@@ -74,7 +74,7 @@ class f extends i.Component {
           IconComponent: o.d$P,
           className: d.earlyAccess
         }),
-        smallHeader: u.NW.string(u.t.HYys0t),
+        smallHeader: u.intl.string(u.t.HYys0t),
         text: (0, s.vc)(e.releaseDate, "LL")
       });
       else return (0, r.jsx)(h, {
@@ -83,7 +83,7 @@ class f extends i.Component {
           IconComponent: o.d$P,
           className: d.earlyAccess
         }),
-        text: u.NW.string(u.t.HYys0t)
+        text: u.intl.string(u.t.HYys0t)
       });
     return e.type === c.AzA.FLAVOR_TEXT ? (0, r.jsx)(h, {
       circle: (0, r.jsx)(p, {
@@ -97,7 +97,7 @@ class f extends i.Component {
         IconComponent: o.SrA,
         className: d.premiumCircle
       }),
-      text: u.NW.string(u.t.R9SwVl)
+      text: u.intl.string(u.t.R9SwVl)
     }) : null
   }
 }

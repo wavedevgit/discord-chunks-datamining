@@ -64,11 +64,11 @@ function h(e) {
         ConfirmModal: e
       } = await Promise.resolve().then(n.bind(n, 481060));
       return n => (0, r.jsx)(e, p(f({
-        header: u.NW.formatToPlainString(u.t["GOFk9/"], {
+        header: u.intl.formatToPlainString(u.t["GOFk9/"], {
           name: _
         }),
-        confirmText: u.NW.string(u.t["cY+Ooa"]),
-        cancelText: u.NW.string(u.t["ETE/oK"]),
+        confirmText: u.intl.string(u.t["cY+Ooa"]),
+        cancelText: u.intl.string(u.t["ETE/oK"]),
         onConfirm: () => s.Z.removeFriend({
           userId: t.id,
           applicationId: i,
@@ -77,7 +77,7 @@ function h(e) {
       }, n), {
         children: (0, r.jsx)(a.Text, {
           variant: "text-md/normal",
-          children: u.NW.format(u.t.dsU5bm, {
+          children: u.intl.format(u.t.dsU5bm, {
             name: _,
             gameName: o
           })
@@ -89,7 +89,7 @@ function h(e) {
     user: t,
     gameRelationships: d,
     menuItemId: "remove-game-friend",
-    label: u.NW.string(u.t["RLcE6+"]),
+    label: u.intl.string(u.t["RLcE6+"]),
     onClick: h,
     color: "danger"
   })

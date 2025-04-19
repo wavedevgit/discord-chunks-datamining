@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(49308),
   S = n(117652),
   T = n(126982),
-  N = n(981631),
-  A = n(302800),
+  A = n(981631),
+  N = n(302800),
   C = n(215023),
   R = n(231338),
   P = n(770977);
@@ -88,7 +88,7 @@ function M(e) {
     returnRef: V
   } = e, {
     analyticsLocations: Z
-  } = (0, d.ZP)([...F, u.Z.COLLECTIBLES_PAYMENT_MODAL]), H = i.useRef(new s.qA), [W, Y] = i.useState(null), [K, z] = i.useState(!1), q = i.useMemo(() => (0, A.UY)({
+  } = (0, d.ZP)([...F, u.Z.COLLECTIBLES_PAYMENT_MODAL]), H = i.useRef(new s.qA), [Y, W] = i.useState(null), [K, z] = i.useState(!1), q = i.useMemo(() => (0, N.UY)({
     purchaseType: C.o8.FIAT,
     skuId: k
   }), [k]), Q = (0, l.Wu)([f.Z], () => f.Z.recommendedGiftSkuIds, []), X = null != k ? [k] : Q, J = null != (t = X[0]) ? t : null, $ = null != k && p.Rm.has(k), ee = i.useCallback(() => {
@@ -108,7 +108,7 @@ function M(e) {
   }), er = i.useMemo(() => [y.WA, ...j ? [S.Dd] : [], O.n, ...y.yp, y.wo, {
     key: g.h8.CONFIRM,
     renderStep: e => (0, r.jsx)(I.x, x(D({}, e), {
-      confettiCanvas: W,
+      confettiCanvas: Y,
       analyticsLocations: Z,
       hideConfetti: null != q
     })),
@@ -116,11 +116,11 @@ function M(e) {
       bodyClassName: P.modalOverrideBody,
       sliderBodyClassName: P.modalOverrideSliderBody
     }
-  }], [Z, W, q, j]);
+  }], [Z, Y, q, j]);
   return (0, r.jsxs)(d.Gt, {
     value: Z,
     children: [(0, r.jsx)(s.O_, {
-      ref: Y,
+      ref: W,
       className: P.confettiCanvas,
       environment: H.current
     }), (0, r.jsx)(_.i, {
@@ -131,7 +131,7 @@ function M(e) {
     }), (0, r.jsx)(m.PaymentContextProvider, {
       loadId: M,
       stepConfigs: er,
-      applicationId: N.XAJ,
+      applicationId: A.XAJ,
       skuIDs: X,
       isGift: j,
       activeSubscription: null,
@@ -145,7 +145,7 @@ function M(e) {
           children: (0, r.jsx)(b.PaymentModal, {
             onClose: et,
             onComplete: ee,
-            applicationId: N.XAJ,
+            applicationId: A.XAJ,
             skuId: J,
             initialPlanId: null,
             analyticsLocations: Z,

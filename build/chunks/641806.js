@@ -1,11 +1,11 @@
 /** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  $: () => s
+  $: () => l
 });
 var r = n(970648),
   i = n(981631);
-async function s(e) {
+async function l(e) {
   let t = r.Z.generateNonce();
   try {
     let n = await r.Z.createHandoffToken(t);

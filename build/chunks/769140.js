@@ -27,8 +27,8 @@ var i = n(120356),
   I = n(430824),
   S = n(496675),
   T = n(158776),
-  N = n(938475),
-  A = n(960870),
+  A = n(938475),
+  N = n(960870),
   C = n(139793),
   R = n(652853),
   P = n(336383),
@@ -52,21 +52,21 @@ function H(e) {
     currentUser: n,
     stream: i,
     className: H,
-    onClose: W
+    onClose: Y
   } = e, {
-    profileType: Y,
+    profileType: W,
     theme: K
   } = (0, R.z)(), z = {
-    [F.fullSize]: Y === j.y0.FULL_SIZE,
-    [B.fullSize]: Y === j.y0.FULL_SIZE
-  }, q = (0, o.e7)([I.Z], () => I.Z.getGuild(null == i ? void 0 : i.guildId)), Q = (0, o.e7)([O.Z], () => O.Z.getChannel(null == i ? void 0 : i.channelId)), X = (0, o.Wu)([N.ZP], () => null != Q ? N.ZP.getVoiceStatesForChannel(Q).map(e => {
+    [F.fullSize]: W === j.y0.FULL_SIZE,
+    [B.fullSize]: W === j.y0.FULL_SIZE
+  }, q = (0, o.e7)([I.Z], () => I.Z.getGuild(null == i ? void 0 : i.guildId)), Q = (0, o.e7)([O.Z], () => O.Z.getChannel(null == i ? void 0 : i.channelId)), X = (0, o.Wu)([A.ZP], () => null != Q ? A.ZP.getVoiceStatesForChannel(Q).map(e => {
     let {
       user: t
     } = e;
     return t
   }) : []), J = (0, o.e7)([T.Z], () => T.Z.findActivity(t.id, e => (0, d.Z)(e) && !(0, f.Z)(e))), {
     analyticsLocations: $
-  } = (0, p.ZP)(_.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), ee = (0, A.Z)({
+  } = (0, p.ZP)(_.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), ee = (0, N.Z)({
     display: "live",
     voiceChannelId: null == Q ? void 0 : Q.id,
     user: t,
@@ -85,7 +85,7 @@ function H(e) {
         t = e => {
           e.stopPropagation(), ee({
             action: "PRESS_IMAGE"
-          }), l.default.selectVoiceChannel(i.channelId), (0, c.iV)(i), null == W || W()
+          }), l.default.selectVoiceChannel(i.channelId), (0, c.iV)(i), null == Y || Y()
         };
       return null == el && er ? (0, r.jsx)("div", {
         className: e,
@@ -98,7 +98,7 @@ function H(e) {
         children: [(0, r.jsx)("img", {
           alt: "",
           src: K === U.BRd.LIGHT ? Z : V
-        }), Y !== j.y0.FULL_SIZE && (0, r.jsxs)(r.Fragment, {
+        }), W !== j.y0.FULL_SIZE && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.Text, {
             className: F.overlayText,
             variant: "text-sm/medium",
@@ -106,7 +106,7 @@ function H(e) {
             children: (0, E.P9)(ea)
           }), (0, r.jsx)(s.Text, {
             variant: "text-sm/medium",
-            children: eo ? G.NW.string(G.t.uQZTBQ) : G.NW.string(G.t.pgUTZG)
+            children: eo ? G.intl.string(G.t.uQZTBQ) : G.intl.string(G.t.pgUTZG)
           })]
         })]
       }) : (0, r.jsxs)(s.P3F, {
@@ -118,7 +118,7 @@ function H(e) {
           alt: "",
           src: el,
           className: F.image
-        }), Y !== j.y0.FULL_SIZE && (0, r.jsxs)(r.Fragment, {
+        }), W !== j.y0.FULL_SIZE && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.Text, {
             className: F.overlayText,
             variant: "text-sm/medium",
@@ -133,16 +133,16 @@ function H(e) {
       })
     },
     eu = () => {
-      if (Y !== j.y0.FULL_SIZE) return null;
+      if (W !== j.y0.FULL_SIZE) return null;
       let e = e => {
           e.stopPropagation(), null == ee || ee({
             action: "OPEN_VOICE_CHANNEL"
-          }), Q.isGuildStageVoice() ? (0, v.Cq)(Q) : (l.default.selectVoiceChannel(Q.id), (0, b.Kh)(Q.id)), null == W || W()
+          }), Q.isGuildStageVoice() ? (0, v.Cq)(Q) : (l.default.selectVoiceChannel(Q.id), (0, b.Kh)(Q.id)), null == Y || Y()
         },
         n = e => {
           e.stopPropagation(), ee({
             action: "OPEN_VOICE_GUILD"
-          }), (0, y.X)(q.id), null == W || W()
+          }), (0, y.X)(q.id), null == Y || Y()
         };
       return (0, r.jsxs)("div", {
         className: B.details,
@@ -163,7 +163,7 @@ function H(e) {
             })]
           }), (0, r.jsx)(D.Z, {
             variant: "text-xs/normal",
-            text: G.NW.formatToPlainString(G.t["hq/Qzc"], {
+            text: G.intl.formatToPlainString(G.t["hq/Qzc"], {
               guildName: q.name
             }),
             onClick: n
@@ -185,19 +185,19 @@ function H(e) {
         })]
       })
     },
-    ed = () => Y === j.y0.FULL_SIZE ? null : (0, r.jsx)(L.Z, {
+    ed = () => W === j.y0.FULL_SIZE ? null : (0, r.jsx)(L.Z, {
       user: t,
       guild: q,
       channel: Q,
       onAction: ee,
-      onClose: W
+      onClose: Y
     }),
     ef = () => t.id === n.id ? null : (0, r.jsx)("div", {
       className: a()(B.actions, z),
       children: (0, r.jsx)(M.Z, {
         channel: Q,
         onAction: ee,
-        onClose: W
+        onClose: Y
       })
     });
   return (0, r.jsx)(p.Gt, {
@@ -206,26 +206,26 @@ function H(e) {
       ref: et,
       className: H,
       onAction: ee,
-      onClose: W,
+      onClose: Y,
       children: [(0, r.jsx)(w.Z, {
-        text: null != J ? G.NW.formatToPlainString(G.t["4CQq9f"], {
+        text: null != J ? G.intl.formatToPlainString(G.t["4CQq9f"], {
           name: J.name
-        }) : G.NW.string(G.t["Jpkr/v"]),
+        }) : G.intl.string(G.t["Jpkr/v"]),
         tags: (0, r.jsx)(h.ZP, {
           size: h.OH.SMALL
         }),
         contextMenu: (0, r.jsx)(k.Z, {
           display: "live",
           user: t,
-          onClose: W
+          onClose: Y
         })
       }), (0, r.jsxs)("div", {
         className: B.body,
         children: [(0, r.jsxs)("div", {
           className: a()(B.content, z),
-          children: [ec(), eu(), Y === j.y0.FULL_SIZE && ef()]
+          children: [ec(), eu(), W === j.y0.FULL_SIZE && ef()]
         }), ed()]
-      }), Y !== j.y0.FULL_SIZE && ef()]
+      }), W !== j.y0.FULL_SIZE && ef()]
     })
   })
 }

@@ -35,12 +35,12 @@ function v(e) {
     profileType: S
   } = (0, h.z)(), T = (0, _.Z)(v);
   if (!(0, i.e7)([f.Z], () => f.Z.can(E.Plq.VIEW_CHANNEL, v))) return null;
-  let N = e => {
+  let A = e => {
       e.stopPropagation(), (0, d.X)(n.id), null == O || O({
         action: "OPEN_VOICE_GUILD"
       }), null == I || I()
     },
-    A = e => {
+    N = e => {
       e.stopPropagation(), o.default.selectVoiceChannel(v.id), (0, u.Kh)(v.id), null == O || O({
         action: "OPEN_VOICE_CHANNEL"
       }), null == I || I()
@@ -60,7 +60,7 @@ function v(e) {
           guild: n,
           size: c.Z.Sizes.SMOL,
           className: b.guildIcon,
-          onClick: N
+          onClick: A
         })
       }), (0, r.jsx)(a.Fbu, {
         size: "xxs",
@@ -73,7 +73,7 @@ function v(e) {
           color: a.TVs.colors.INTERACTIVE_NORMAL,
           className: b.voiceIcon
         }), (0, r.jsx)(a.P3F, {
-          onClick: A,
+          onClick: N,
           className: b.clickableText,
           children: (0, r.jsx)(a.Text, {
             variant: "text-xs/normal",

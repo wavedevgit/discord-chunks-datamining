@@ -2,7 +2,7 @@
 n.d(t, {
   Z: () => f
 }), n(35282);
-var r, a, i = n(200651);
+var r, i, a = n(200651);
 n(192379);
 var l = n(477660),
   s = n.n(l),
@@ -33,7 +33,7 @@ function g(e) {
   return e
 }
 let _ = /^discord.gg\/[a-zA-Z0-9-]+/,
-  f = (r = g({}, h.Z.rules), a = a = {
+  f = (r = g({}, h.Z.rules), i = i = {
     heading: g({}, d.i.heading),
     image: g({}, s().defaultRules.image),
     inviteLink: {
@@ -61,20 +61,20 @@ let _ = /^discord.gg\/[a-zA-Z0-9-]+/,
           }
         }
       },
-      react: (e, t, n) => (0, i.jsx)(o.eee, {
+      react: (e, t, n) => (0, a.jsx)(o.eee, {
         onClick: t => {
           t.preventDefault(), e.onClick()
         },
         children: (0, m.S)(e, t, n)
       }, n.key)
     }
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
       var r = Object.getOwnPropertySymbols(e);
       n.push.apply(n, r)
     }
     return n
-  })(Object(a)).forEach(function(e) {
-    Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
+  })(Object(i)).forEach(function(e) {
+    Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
   }), r)

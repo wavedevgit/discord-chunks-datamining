@@ -6,8 +6,8 @@ var n = r(200651);
 r(192379);
 var A = r(866442),
   a = r(481060),
-  o = r(388032),
-  l = r(838997);
+  l = r(388032),
+  o = r(838997);
 
 function i(e) {
   let {
@@ -16,11 +16,11 @@ function i(e) {
     textVariant: i = "text-xs/medium"
   } = e, s = (0, a.dQu)(a.TVs.colors.INTERACTIVE_NORMAL).hex();
   return (0, n.jsx)("div", {
-    className: l.roleTagContainer,
+    className: o.roleTagContainer,
     children: (0, n.jsxs)("div", {
-      className: l.roleTag,
+      className: o.roleTag,
       children: [(0, n.jsx)("div", {
-        className: l.roleColor,
+        className: o.roleColor,
         style: {
           backgroundColor: (0, A.Rf)(r.color)
         }
@@ -31,7 +31,7 @@ function i(e) {
         variant: i,
         color: "text-normal",
         children: [(0, n.jsx)(a.nn4, {
-          children: o.NW.string(o.t.RnyseH)
+          children: l.intl.string(l.t.RnyseH)
         }), r.name]
       }), !0 === t && (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(a.LZC, {

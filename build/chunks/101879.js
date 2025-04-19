@@ -21,12 +21,12 @@ function d() {
     children: [(0, r.jsx)(l.RyX, {
       onClick: () => t(u.L.DISMISS),
       noticeType: c.kVF.IGNORE_USER_FEEDBACK_NAGBAR
-    }), E.NW.string(E.t.XkeW9P), (0, r.jsx)(l.NoS, {
+    }), E.intl.string(E.t.XkeW9P), (0, r.jsx)(l.NoS, {
       onClick: () => {
         (0, a.v3)(), t(u.L.TAKE_ACTION)
       },
       noticeType: c.kVF.IGNORE_USER_FEEDBACK_NAGBAR,
-      children: E.NW.string(E.t.vcdNKi)
+      children: E.intl.string(E.t.vcdNKi)
     })]
   })
 }

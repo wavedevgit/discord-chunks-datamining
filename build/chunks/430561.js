@@ -64,7 +64,7 @@ function f(e) {
 function g(e) {
   let {
     onClick: t
-  } = e, n = c.NW.string(c.t["3D5yo6"]);
+  } = e, n = c.intl.string(c.t["3D5yo6"]);
   return (0, r.jsx)(a.ua7, {
     text: n,
     "aria-label": n,
@@ -83,7 +83,7 @@ function O(e) {
   let {
     widgetId: t,
     showAllStreams: n
-  } = e, i = n ? c.NW.string(c.t.q2B3rq) : c.NW.string(c.t.JKGi6u), f = () => {
+  } = e, i = n ? c.intl.string(c.t.q2B3rq) : c.intl.string(c.t.JKGi6u), f = () => {
     (0, s.zG)(t, {
       showAllStreams: !n
     })
@@ -106,7 +106,7 @@ function m(e) {
   let {
     id: t,
     pinned: n
-  } = e, i = n ? c.NW.string(c.t.cSu80t) : c.NW.string(c.t.cM8Vnp);
+  } = e, i = n ? c.intl.string(c.t.cSu80t) : c.intl.string(c.t.cM8Vnp);
   return (0, r.jsx)(a.ua7, {
     text: i,
     "aria-label": i,

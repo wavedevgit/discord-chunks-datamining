@@ -48,12 +48,12 @@ let _ = e => {
     notPhoneVerified: C,
     newAccount: j,
     newMember: S
-  } = (0, l.e7)([d.Z], () => d.Z.getCheck(r), [r]), x = 0 === t ? g.NW.string(g.t["6zY8BA"]) : null, E = null, I = null;
-  return (0 === t && (O ? (E = g.NW.string(g.t.IRxUlJ), I = g.NW.string(g.t.fiNVio)) : C ? (E = g.NW.string(g.t.vW8iUF), I = g.NW.string(g.t["50gfOj"])) : v ? (E = g.NW.string(g.t.vdSOp6), I = g.NW.string(g.t.lm1UKi)) : S ? (E = g.NW.formatToPlainString(g.t.v1ktYW, {
+  } = (0, l.e7)([d.Z], () => d.Z.getCheck(r), [r]), x = 0 === t ? g.intl.string(g.t["6zY8BA"]) : null, E = null, I = null;
+  return (0 === t && (O ? (E = g.intl.string(g.t.IRxUlJ), I = g.intl.string(g.t.fiNVio)) : C ? (E = g.intl.string(g.t.vW8iUF), I = g.intl.string(g.t["50gfOj"])) : v ? (E = g.intl.string(g.t.vdSOp6), I = g.intl.string(g.t.lm1UKi)) : S ? (E = g.intl.formatToPlainString(g.t.v1ktYW, {
     min: p.YeM.MEMBER_AGE
-  }), I = g.NW.string(g.t.BddRzc)) : j && (E = g.NW.formatToPlainString(g.t["sncw4+"], {
+  }), I = g.intl.string(g.t.BddRzc)) : j && (E = g.intl.formatToPlainString(g.t["sncw4+"], {
     min: p.YeM.ACCOUNT_AGE
-  }), I = g.NW.string(g.t.BddRzc))), null == x || null == E) ? null : (0, i.jsxs)(o.VqE, {
+  }), I = g.intl.string(g.t.BddRzc))), null == x || null == E) ? null : (0, i.jsxs)(o.VqE, {
     className: m.container,
     "aria-labelledby": _,
     children: [(0, i.jsx)("img", {
@@ -86,13 +86,13 @@ let _ = e => {
             }) : v && (s.Z.verifyResend(), (0, o.h7j)(e => {
               var t, n, r;
               return (0, i.jsx)(o.ConfirmModal, (n = b({
-                header: g.NW.string(g.t.LykQYm),
-                confirmText: g.NW.string(g.t.BddRzc),
+                header: g.intl.string(g.t.LykQYm),
+                confirmText: g.intl.string(g.t.BddRzc),
                 confirmButtonColor: o.zxk.Colors.BRAND
               }, e), r = r = {
                 children: (0, i.jsx)(o.Text, {
                   variant: "text-md/normal",
-                  children: g.NW.format(g.t.azKEPz, {
+                  children: g.intl.format(g.t.azKEPz, {
                     email: null == (t = h.default.getCurrentUser()) ? void 0 : t.email
                   })
                 })
@@ -114,7 +114,7 @@ let _ = e => {
           onClick: y,
           look: o.zxk.Looks.BLANK,
           className: m.cancel,
-          children: g.NW.string(g.t.oEAioK)
+          children: g.intl.string(g.t.oEAioK)
         }) : null]
       })]
     })]

@@ -55,7 +55,7 @@ class v extends f.Z {
       message: n
     } = e;
     (0, a.ZDy)(async () => e => (0, r.jsx)(s.default, b({
-      title: g.NW.formatToPlainString(g.t.hbiAOz, {
+      title: g.intl.formatToPlainString(g.t.hbiAOz, {
         code: t
       }),
       body: n
@@ -63,12 +63,12 @@ class v extends f.Z {
   }
   showLaunchErrorModal(e) {
     (0, a.ZDy)(async () => t => (0, r.jsx)(s.default, b({
-      title: g.NW.string(g.t.PtobXV),
+      title: g.intl.string(g.t.PtobXV),
       body: e
     }, t)))
   }
   showDevShelfOverrideEnabled() {
-    (0, a.showToast)((0, a.createToast)(g.NW.string(g.t.JfA7IC), a.ToastType.SUCCESS))
+    (0, a.showToast)((0, a.createToast)(g.intl.string(g.t.JfA7IC), a.ToastType.SUCCESS))
   }
   leaveActivity(e) {
     let {

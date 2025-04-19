@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(793030),
-  l = n(442837),
+  l = n(793030),
+  a = n(442837),
   o = n(902704),
   s = n(692547),
   c = n(481060),
@@ -23,23 +23,23 @@ var r = n(200651),
   v = n(594174),
   E = n(100604),
   O = n(694784),
-  N = n(39154),
-  j = n(245216),
-  C = n(388032),
-  S = n(752386);
+  j = n(39154),
+  C = n(245216),
+  S = n(388032),
+  I = n(752386);
 
-function I() {
+function N() {
   return (0, r.jsxs)("div", {
-    className: S.headerContainer,
-    children: [(0, r.jsx)(j.Z, {
+    className: I.headerContainer,
+    children: [(0, r.jsx)(C.Z, {
       size: "xs",
-      className: S.headerIcon,
+      className: I.headerIcon,
       color: s.Z.colors.TEXT_LOW_CONTRAST
-    }), (0, r.jsx)(a.xv, {
-      className: S.headerText,
+    }), (0, r.jsx)(l.xv, {
+      className: I.headerText,
       variant: "text-sm/semibold",
       color: "text-low-contrast",
-      children: C.NW.string(C.t.ToyvLi)
+      children: S.intl.string(S.t.ToyvLi)
     })]
   })
 }
@@ -49,18 +49,18 @@ function T(e) {
     message: t,
     snapshot: n,
     index: d
-  } = e, p = i.useMemo(() => new E.r(t, n, d), [t, n, d]), m = (0, l.e7)([g.Z, v.default, y.Z, x.Z, b.Z, u.Z], () => p.getForwardInfo(g.Z, v.default, y.Z, x.Z, b.Z, u.Z).footerInfo, [p], o.Z), f = i.useCallback(() => {
+  } = e, p = i.useMemo(() => new E.r(t, n, d), [t, n, d]), m = (0, a.e7)([g.Z, v.default, y.Z, x.Z, b.Z, u.Z], () => p.getForwardInfo(g.Z, v.default, y.Z, x.Z, b.Z, u.Z).footerInfo, [p], o.Z), f = i.useCallback(() => {
     (0, O.Z)(t)
   }, [t]);
   return null == m ? null : (0, r.jsxs)(c.P3F, {
-    className: S.footerContainer,
+    className: I.footerContainer,
     onClick: f,
     children: [null != m.originIconUrl ? (0, r.jsx)("img", {
-      className: S.originIcon,
+      className: I.originIcon,
       src: m.originIconUrl,
       alt: ""
-    }) : null, (0, r.jsx)(a.xv, {
-      className: S.footerText,
+    }) : null, (0, r.jsx)(l.xv, {
+      className: I.footerText,
       variant: "text-sm/medium",
       color: "none",
       children: "".concat(m.originLabel, "  •  ").concat(m.timestampLabel)
@@ -75,9 +75,9 @@ function P(e) {
   var t;
   let {
     message: n,
-    snapshot: a,
+    snapshot: l,
     index: o
-  } = e, s = i.useMemo(() => (0, N.Z)(n, a), [n, a]), c = h.RS.useSetting(), u = h.NA.useSetting(), b = (0, l.e7)([_.Z], () => _.Z.isDeveloper), x = (0, d.A)((null != (t = s.editedTimestamp) ? t : s.timestamp).valueOf()), {
+  } = e, s = i.useMemo(() => (0, j.Z)(n, l), [n, l]), c = h.RS.useSetting(), u = h.NA.useSetting(), b = (0, a.e7)([_.Z], () => _.Z.isDeveloper), x = (0, d.A)((null != (t = s.editedTimestamp) ? t : s.timestamp).valueOf()), {
     content: y,
     hasSpoilerEmbeds: v
   } = (0, m.Z)(s, {
@@ -89,14 +89,14 @@ function P(e) {
     allowLinks: !0,
     allowDevLinks: b,
     previewLinkTarget: !0
-  }), E = (0, l.e7)([g.Z], () => g.Z.getChannel(n.channel_id)), O = h.jU.useSetting();
+  }), E = (0, a.e7)([g.Z], () => g.Z.getChannel(n.channel_id)), O = h.jU.useSetting();
   return null == E ? null : (0, r.jsxs)("div", {
-    className: S.container,
+    className: I.container,
     children: [(0, r.jsx)("div", {
-      className: S.quote
+      className: I.quote
     }), (0, r.jsxs)("div", {
-      className: S.content,
-      children: [(0, r.jsx)(I, {}), (0, r.jsx)(p.ZP, {
+      className: I.content,
+      children: [(0, r.jsx)(N, {}), (0, r.jsx)(p.ZP, {
         message: s,
         content: y
       }), (0, f.Z)({
@@ -111,7 +111,7 @@ function P(e) {
         renderThreadAccessory: !1
       }), (0, r.jsx)(T, {
         message: n,
-        snapshot: a,
+        snapshot: l,
         index: o
       })]
     })]

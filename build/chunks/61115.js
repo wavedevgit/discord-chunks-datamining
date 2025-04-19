@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  C: () => A,
+  C: () => N,
   default: () => T
 }), n(388685);
 var r = n(200651),
@@ -69,7 +69,7 @@ function T(e) {
     transitionState: a,
     onClose: o,
     onSubmit: f
-  } = e, p = (0, _.B4)(t), [b, v] = i.useState(0), [T, A] = (0, l.q_F)(() => ({
+  } = e, p = (0, _.B4)(t), [b, v] = i.useState(0), [T, N] = (0, l.q_F)(() => ({
     from: {
       width: "0%"
     },
@@ -82,7 +82,7 @@ function T(e) {
       choice_id: e.key
     }))
   }, P = async e => {
-    1 === e && (await A({
+    1 === e && (await N({
       width: "100%"
     }), o())
   };
@@ -119,7 +119,7 @@ function T(e) {
           })]
         }), (0, r.jsx)(l.hzk, {
           className: g.modalContent,
-          children: n.choices.map(e => (0, r.jsx)(N, {
+          children: n.choices.map(e => (0, r.jsx)(A, {
             choice: e,
             onClick: R
           }, e.key))
@@ -134,18 +134,18 @@ function T(e) {
             className: g.asset
           }), (0, r.jsx)(l.X6q, {
             variant: "heading-lg/semibold",
-            children: m.NW.string(m.t.KTjjrK)
+            children: m.intl.string(m.t.KTjjrK)
           }), (0, r.jsx)(l.Text, {
             variant: "text-md/normal",
             color: "text-muted",
-            children: m.NW.string(m.t.AvbrEB)
+            children: m.intl.string(m.t.AvbrEB)
           })]
         }), (0, r.jsx)(l.mzw, {
           children: (0, r.jsxs)("div", {
             className: g.closeButtonContainer,
             children: [(0, r.jsx)(l.zxk, {
               onClick: o,
-              children: m.NW.string(m.t.cpT0Cg)
+              children: m.intl.string(m.t.cpT0Cg)
             }), (0, r.jsx)(s.animated.div, {
               className: g.progressOverlay,
               style: T
@@ -157,7 +157,7 @@ function T(e) {
   })
 }
 
-function N(e) {
+function A(e) {
   let {
     className: t,
     choice: n,
@@ -173,7 +173,7 @@ function N(e) {
   })
 }
 
-function A(e) {
+function N(e) {
   let t = !1;
   (0, l.ZDy)(async () => {
     let {

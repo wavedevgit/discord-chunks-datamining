@@ -26,8 +26,8 @@ var r = n(278074),
   I = n(539573),
   S = n(926526),
   T = n(826581),
-  N = n(409059),
-  A = n(264229),
+  A = n(409059),
+  N = n(264229),
   C = n(413605),
   R = n(366980),
   P = n(779832),
@@ -45,8 +45,8 @@ var r = n(278074),
   V = n(328908),
   Z = n(992970),
   H = n(576645),
-  W = n(317951),
-  Y = n(287941),
+  Y = n(317951),
+  W = n(287941),
   K = n(643266),
   z = n(617136);
 n(807092);
@@ -118,8 +118,8 @@ function eI(e, t) {
 }
 let eS = new E.Z("MessageActionCreators"),
   eT = new E.Z("MessageQueue"),
-  eN = !1;
-class eA {
+  eA = !1;
+class eN {
   markComplete() {
     this.completed = !0
   }
@@ -151,7 +151,7 @@ function eC(e) {
       overrideProperties: o
     });
     else if (t === m.g.TEMPLATE) {
-      let e = N.Z.getGuildTemplate(l);
+      let e = A.Z.getGuildTemplate(l);
       if (null == e || e.state === eE.Rj.RESOLVING) return;
       c.ZP.trackWithMetadata(eg.rMx.GUILD_TEMPLATE_LINK_SENT, {
         guild_template_code: l,
@@ -194,7 +194,7 @@ function eR(e) {
     location: o,
     suggested: s = null,
     overrideProperties: l = {}
-  } = e, u = et.default.getId(), d = er.Z.getInvite(r), f = (0, A.fU)(r), _ = null != d && (0, C.P1)(d), h = null == d || null == (t = d.target_application) ? void 0 : t.id;
+  } = e, u = et.default.getId(), d = er.Z.getInvite(r), f = (0, N.fU)(r), _ = null != d && (0, C.P1)(d), h = null == d || null == (t = d.target_application) ? void 0 : t.id;
   null != h && _ && (0, p.z$)(h, p.Un.ACTIVITY_INVITE, u);
   let m = en.Z.getChannel(i);
   if (null != m) {
@@ -261,33 +261,33 @@ function ew(e, t) {
 let eD = {
     [eg.evJ.EMAIL_VERIFICATION_REQUIRED]: {
       messageName: "BOT_REQUIRES_EMAIL_VERIFICATION",
-      messageGetter: () => eb.NW.string(eb.t.k1Cjqq)
+      messageGetter: () => eb.intl.string(eb.t.k1Cjqq)
     },
     [eg.evJ.INVALID_MESSAGE_SEND_USER]: {
       messageName: "BOT_DM_SEND_FAILED_WITH_HELP_LINK",
-      messageGetter: () => eb.NW.formatToPlainString(eb.t.CTMXwM, {
+      messageGetter: () => eb.intl.formatToPlainString(eb.t.CTMXwM, {
         helpUrl: e_.Z.getArticleURL(eg.BhN.DM_COULD_NOT_BE_DELIVERED)
       })
     },
     [eg.evJ.RATE_LIMIT_DM_OPEN]: {
       messageName: "BOT_DM_RATE_LIMITED",
-      messageGetter: () => eb.NW.string(eb.t.E8nbNT)
+      messageGetter: () => eb.intl.string(eb.t.E8nbNT)
     },
     [eg.evJ.SEND_MESSAGE_TEMPORARILY_DISABLED]: {
       messageName: "BOT_DM_SEND_MESSAGE_TEMPORARILY_DISABLED",
-      messageGetter: () => eb.NW.string(eb.t.aRUbam)
+      messageGetter: () => eb.intl.string(eb.t.aRUbam)
     },
     [eg.evJ.SLOWMODE_RATE_LIMITED]: {
       messageName: "BOT_DM_SEND_MESSAGE_TEMPORARILY_DISABLED",
-      messageGetter: () => eb.NW.string(eb.t.aRUbam)
+      messageGetter: () => eb.intl.string(eb.t.aRUbam)
     },
     [eg.evJ.INVALID_MESSAGE_SEND_GAME_FRIEND_DM]: {
       messageName: "BOT_DM_SEND_MESSAGE_INVALID_FOR_GAME_FRIEND",
-      messageGetter: () => eb.NW.string(eb.t["/meGhY"])
+      messageGetter: () => eb.intl.string(eb.t["/meGhY"])
     },
     [eg.evJ.INVALID_MESSAGE_SEND_PROVISIONAL_ACCOUNT_OFFLINE]: {
       messageName: "BOT_DM_SEND_MESSAGE_INVALID_OFFLINE_PROVISIONAL_ACCOUNT",
-      messageGetter: () => eb.NW.string(eb.t.Oc1Zj4)
+      messageGetter: () => eb.intl.string(eb.t.Oc1Zj4)
     }
   },
   eL = {
@@ -356,13 +356,13 @@ let eD = {
     sendClydeError(e) {
       let t, n, r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0,
         i = en.Z.getChannel(e);
-      null != i && (r === eg.evJ.SLOWMODE_RATE_LIMITED ? (t = eb.NW.formatToPlainString(eb.t.IWntYm, {
+      null != i && (r === eg.evJ.SLOWMODE_RATE_LIMITED ? (t = eb.intl.formatToPlainString(eb.t.IWntYm, {
         seconds: i.rateLimitPerUser
-      }), n = "SLOWMODE_RATE_LIMITED") : r === eg.evJ.INVALID_MESSAGE_SEND_USER ? (t = eb.NW.formatToPlainString(eb.t.CTMXwM, {
+      }), n = "SLOWMODE_RATE_LIMITED") : r === eg.evJ.INVALID_MESSAGE_SEND_USER ? (t = eb.intl.formatToPlainString(eb.t.CTMXwM, {
         helpUrl: e_.Z.getArticleURL(eg.BhN.DM_COULD_NOT_BE_DELIVERED)
-      }), n = "INVALID_MESSAGE_SEND_USER") : r === eg.evJ.TOO_MANY_THREADS ? (t = i.isForumLikeChannel() || i.isForumPost() ? eb.NW.string(eb.t["/jUd29"]) : eb.NW.string(eb.t["5EMPAw"]), n = "TOO_MANY_THREADS") : r === eg.evJ.TOO_MANY_ANNOUNCEMENT_THREADS ? (t = eb.NW.string(eb.t["aY+lLC"]), n = "TOO_MANY_ANNOUNCEMENT_THREADS") : r === eg.evJ.HARMFUL_LINK_MESSAGE_BLOCKED ? (t = eb.NW.formatToPlainString(eb.t.zSG3Q0, {
+      }), n = "INVALID_MESSAGE_SEND_USER") : r === eg.evJ.TOO_MANY_THREADS ? (t = i.isForumLikeChannel() || i.isForumPost() ? eb.intl.string(eb.t["/jUd29"]) : eb.intl.string(eb.t["5EMPAw"]), n = "TOO_MANY_THREADS") : r === eg.evJ.TOO_MANY_ANNOUNCEMENT_THREADS ? (t = eb.intl.string(eb.t["aY+lLC"]), n = "TOO_MANY_ANNOUNCEMENT_THREADS") : r === eg.evJ.HARMFUL_LINK_MESSAGE_BLOCKED ? (t = eb.intl.formatToPlainString(eb.t.zSG3Q0, {
         helpUrl: eg.EYA.HARMFUL_LINKS
-      }), n = "HARMFUL_LINK_MESSAGE_BLOCKED") : r in eD ? (n = eD[r].messageName, t = eD[r].messageGetter()) : (t = eb.NW.formatToPlainString(eb.t.CTMXwM, {
+      }), n = "HARMFUL_LINK_MESSAGE_BLOCKED") : r in eD ? (n = eD[r].messageName, t = eD[r].messageGetter()) : (t = eb.intl.formatToPlainString(eb.t.CTMXwM, {
         helpUrl: e_.Z.getArticleURL(eg.BhN.DM_COULD_NOT_BE_DELIVERED)
       }), n = "SEND_FAILED (".concat(r, ")")), eL.sendBotMessage(e, t, n))
     },
@@ -378,16 +378,16 @@ let eD = {
       }).with({
         isDM: !0
       }, () => ({
-        message: eb.NW.string(eb.t.PoyOY2),
+        message: eb.intl.string(eb.t.PoyOY2),
         messageName: "BOT_DM_EXPLICIT_CONTENT"
       })).with({
         isDM: !1,
         isGDM: !0
       }, () => ({
-        message: eb.NW.string(eb.t.PoyOY2),
+        message: eb.intl.string(eb.t.PoyOY2),
         messageName: "BOT_GDM_EXPLICIT_CONTENT"
       })).otherwise(() => ({
-        message: eb.NW.string(eb.t.bNMQVF),
+        message: eb.intl.string(eb.t.bNMQVF),
         messageName: "BOT_GUILD_EXPLICIT_CONTENT"
       })), l = (0, M.r)();
       eL.sendBotMessage(e, a, s, l), (0, b.aP)({
@@ -528,7 +528,7 @@ let eD = {
         type: "LOAD_MESSAGES"
       });
       let v = null == E ? void 0 : E.messageId,
-        O = new eA;
+        O = new eN;
       return d || this.fetchLocalMessages(t, n, r, a, O), i.tn.get({
         url: eg.ANM.MESSAGES(t),
         query: {
@@ -821,9 +821,9 @@ let eD = {
     },
     validateMessage(e, t, n) {
       let r, i;
-      return e.some(e => e.animated) && !ep.ZP.canUseAnimatedEmojis(t) ? (r = eb.NW.string(eb.t.msFJy8), i = "INVALID_ANIMATED_EMOJI_BODY") : ea.Z.canWithPartialContext(eg.Plq.USE_EXTERNAL_EMOJIS, {
+      return e.some(e => e.animated) && !ep.ZP.canUseAnimatedEmojis(t) ? (r = eb.intl.string(eb.t.msFJy8), i = "INVALID_ANIMATED_EMOJI_BODY") : ea.Z.canWithPartialContext(eg.Plq.USE_EXTERNAL_EMOJIS, {
         channelId: n
-      }) ? (r = eb.NW.string(eb.t.FzugNj), i = "INVALID_EXTERNAL_EMOJI_BODY_UPGRADE") : (r = eb.NW.string(eb.t.Q87rIy), i = "INVALID_EXTERNAL_EMOJI_BODY"), {
+      }) ? (r = eb.intl.string(eb.t.FzugNj), i = "INVALID_EXTERNAL_EMOJI_BODY_UPGRADE") : (r = eb.intl.string(eb.t.Q87rIy), i = "INVALID_EXTERNAL_EMOJI_BODY"), {
         errorMessage: r,
         errorMessageName: i
       }
@@ -852,8 +852,8 @@ let eD = {
           contentInventoryEntry: v
         } = n,
         O = null != (i = n.flags) ? i : 0,
-        [N, A] = (0, X.Z)(c);
-      N && (c = A, O = (0, ed.pj)(O, eg.iLy.SUPPRESS_NOTIFICATIONS));
+        [A, N] = (0, X.Z)(c);
+      A && (c = N, O = (0, ed.pj)(O, eg.iLy.SUPPRESS_NOTIFICATIONS));
       let C = (null == (r = n.messageReference) ? void 0 : r.type) === eg.Uvt.FORWARD;
       if ("" === c && null == _ && null == m && null == y && null == v && !C) return Promise.resolve();
       let R = null != E ? eg.uaV.REPLY : eg.uaV.DEFAULT,
@@ -873,8 +873,8 @@ let eD = {
         });
         (0, U.EL)(e, t.id), null != m && (t.sticker_items = m.map(e => Q.Z.getStickerById(e)).filter(e => null != e)), eL.receiveMessage(e, t, !0, n)
       }
-      if (!eN && null != u && u.length > 0) {
-        eN = !0;
+      if (!eA && null != u && u.length > 0) {
+        eA = !0;
         let t = ec.default.getCurrentUser(),
           {
             errorMessage: n,
@@ -922,7 +922,7 @@ let eD = {
               poll: y
             });
             let r = (0, H.ZC)(s.body);
-            null != r && ((0, F.gA)(W.D1), (0, Y.I)({
+            null != r && ((0, F.gA)(Y.D1), (0, W.I)({
               name: r.name,
               id: r.id
             }, void 0, !0, Z.LL.MessageSent));
@@ -1068,7 +1068,7 @@ let eD = {
             }
           })
         }
-        n.hasErr ? a.uv.announce(eb.NW.string(eb.t.Atp7FB)) : r ? a.uv.announce(eb.NW.string(eb.t.Hym4i4)) : a.uv.announce(eb.NW.string(eb.t["0x1HBA"])), eL.endEditMessage(e, n.hasErr ? void 0 : n), eL.focusMessage({
+        n.hasErr ? a.uv.announce(eb.intl.string(eb.t.Atp7FB)) : r ? a.uv.announce(eb.intl.string(eb.t.Hym4i4)) : a.uv.announce(eb.intl.string(eb.t["0x1HBA"])), eL.endEditMessage(e, n.hasErr ? void 0 : n), eL.focusMessage({
           channelId: e,
           messageId: t
         })
@@ -1102,7 +1102,7 @@ let eD = {
             id: t,
             channelId: e
           }).then(() => {
-            a.uv.announce(eb.NW.string(eb.t.RYMs7u))
+            a.uv.announce(eb.intl.string(eb.t.RYMs7u))
           })
         };
       n ? r() : (await J.Z.unarchiveThreadIfNecessary(e), i.tn.del({
@@ -1135,12 +1135,12 @@ let eD = {
       rejectWithError: !1
     }).catch(e => {
       let t;
-      t = 429 === e.status ? eb.NW.formatToPlainString(eb.t["77cuq6"], {
+      t = 429 === e.status ? eb.intl.formatToPlainString(eb.t["77cuq6"], {
         retryAfter: Math.floor(e.body.retry_after / 60)
-      }) : eb.NW.string(eb.t.z2gyND), em.Z.show({
-        title: eb.NW.string(eb.t.Vd1hs7),
+      }) : eb.intl.string(eb.t.z2gyND), em.Z.show({
+        title: eb.intl.string(eb.t.Vd1hs7),
         body: t,
-        confirmText: eb.NW.string(eb.t.BddRzc)
+        confirmText: eb.intl.string(eb.t.BddRzc)
       })
     }),
     trackInvite: eR

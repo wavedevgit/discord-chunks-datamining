@@ -9,7 +9,7 @@ function r(e) {
 }
 
 function i(e) {
-  return !!e && !!e[Y]
+  return !!e && !!e[W]
 }
 
 function a(e) {
@@ -20,7 +20,7 @@ function a(e) {
     if (null === t) return !0;
     var n = Object.hasOwnProperty.call(t, "constructor") && t.constructor;
     return n === Object || "function" == typeof n && Function.toString.call(n) === z
-  }(e) || Array.isArray(e) || !!e[W] || !!(null == (t = e.constructor) ? void 0 : t[W]) || f(e) || _(e))
+  }(e) || Array.isArray(e) || !!e[Y] || !!(null == (t = e.constructor) ? void 0 : t[Y]) || f(e) || _(e))
 }
 
 function o(e, t, n) {
@@ -32,7 +32,7 @@ function o(e, t, n) {
 }
 
 function s(e) {
-  var t = e[Y];
+  var t = e[W];
   return t ? t.i > 3 ? t.i - 4 : t.i : Array.isArray(e) ? 1 : f(e) ? 2 : 3 * !!_(e)
 }
 
@@ -68,7 +68,7 @@ function p(e) {
 function h(e) {
   if (Array.isArray(e)) return Array.prototype.slice.call(e);
   var t = Q(e);
-  delete t[Y];
+  delete t[W];
   for (var n = q(t), r = 0; r < n.length; r++) {
     var i = n[r],
       a = t[i];
@@ -114,7 +114,7 @@ function O(e, t) {
 }
 
 function I(e) {
-  S(e), e.p.forEach(N), e.p = null
+  S(e), e.p.forEach(A), e.p = null
 }
 
 function S(e) {
@@ -131,21 +131,21 @@ function T(e) {
   }
 }
 
-function N(e) {
-  var t = e[Y];
+function A(e) {
+  var t = e[W];
   0 === t.i || 1 === t.i ? t.j() : t.g = !0
 }
 
-function A(e, t) {
+function N(e, t) {
   t._ = t.p.length;
   var n = t.p[0],
     i = void 0 !== e && e !== n;
-  return t.h.O || b("ES5").S(t, e, i), i ? (n[Y].P && (I(t), r(4)), a(e) && (e = C(t, e), t.l || P(t, e)), t.u && b("Patches").M(n[Y].t, e, t.u, t.s)) : e = C(t, n, []), I(t), t.u && t.v(t.u, t.s), e !== H ? e : void 0
+  return t.h.O || b("ES5").S(t, e, i), i ? (n[W].P && (I(t), r(4)), a(e) && (e = C(t, e), t.l || P(t, e)), t.u && b("Patches").M(n[W].t, e, t.u, t.s)) : e = C(t, n, []), I(t), t.u && t.v(t.u, t.s), e !== H ? e : void 0
 }
 
 function C(e, t, n) {
   if (E(t)) return t;
-  var r = t[Y];
+  var r = t[W];
   if (!r) return o(t, function(i, a) {
     return R(e, r, t, i, a, n)
   }, !0), t;
@@ -180,7 +180,7 @@ function P(e, t, n) {
 }
 
 function w(e, t) {
-  var n = e[Y];
+  var n = e[W];
   return (n ? p(n) : e)[t]
 }
 
@@ -232,7 +232,7 @@ function k(e) {
   return i(e) || r(22, e),
     function e(t) {
       if (!a(t)) return t;
-      var n, r = t[Y],
+      var n, r = t[W],
         i = s(t);
       if (r) {
         if (!r.P && (r.i < 4 || !b("ES5").K(r))) return r.t;
@@ -264,8 +264,8 @@ var U, G, B = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
   V = "undefined" != typeof Set,
   Z = "undefined" != typeof Proxy && void 0 !== Proxy.revocable && "undefined" != typeof Reflect,
   H = B ? Symbol.for("immer-nothing") : ((U = {})["immer-nothing"] = !0, U),
-  W = B ? Symbol.for("immer-draftable") : "__$immer_draftable",
-  Y = B ? Symbol.for("immer-state") : "__$immer_state",
+  Y = B ? Symbol.for("immer-draftable") : "__$immer_draftable",
+  W = B ? Symbol.for("immer-state") : "__$immer_state",
   K = "undefined" != typeof Symbol && Symbol.iterator || "@@iterator",
   z = "" + Object.prototype.constructor,
   q = "undefined" != typeof Reflect && Reflect.ownKeys ? Reflect.ownKeys : void 0 !== Object.getOwnPropertySymbols ? function(e) {
@@ -280,7 +280,7 @@ var U, G, B = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
   X = {},
   J = {
     get: function(e, t) {
-      if (t === Y) return e;
+      if (t === W) return e;
       var n = p(e);
       if (!l(n, t)) return function(e, t, n) {
         var r, i = D(t, n);
@@ -300,7 +300,7 @@ var U, G, B = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
       if (null == r ? void 0 : r.set) return r.set.call(e.k, n), !0;
       if (!e.P) {
         var i = w(p(e), t),
-          a = null == i ? void 0 : i[Y];
+          a = null == i ? void 0 : i[W];
         if (a && a.t === n) return e.o[t] = n, e.R[t] = !1, !0;
         if (d(n, i) && (void 0 !== n || l(e.t, t))) return !0;
         x(e), L(e)
@@ -368,10 +368,10 @@ var ee = new(function() {
             d ? I(c) : S(c)
           }
           return "undefined" != typeof Promise && o instanceof Promise ? o.then(function(e) {
-            return O(c, i), A(e, c)
+            return O(c, i), N(e, c)
           }, function(e) {
             throw I(c), e
-          }) : (O(c, i), A(o, c))
+          }) : (O(c, i), N(o, c))
         }
         if (!e || "object" != typeof e) {
           if (void 0 === (o = n(e)) && (o = e), o === H && (o = void 0), t.D && m(o, !0), i) {
@@ -402,10 +402,10 @@ var ee = new(function() {
       a(e) || r(8), i(e) && (e = k(e));
       var t = T(this),
         n = M(this, e, void 0);
-      return n[Y].C = !0, S(t), n
+      return n[W].C = !0, S(t), n
     }, t.finishDraft = function(e, t) {
-      var n = (e && e[Y]).A;
-      return O(n, t), A(void 0, n)
+      var n = (e && e[W]).A;
+      return O(n, t), N(void 0, n)
     }, t.setAutoFreeze = function(e) {
       this.D = e
     }, t.setUseProxies = function(e) {

@@ -1,8 +1,8 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  l: () => i
+  l: () => r
 });
-let r = (0, n(818083).B)({
+let i = (0, n(818083).B)({
   kind: "user",
   id: "2025-03_toggle_camera_keybind",
   label: "Toggle Camera Keybind",
@@ -18,10 +18,10 @@ let r = (0, n(818083).B)({
   }]
 });
 
-function i() {
+function r() {
   let {
     enabled: e
-  } = r.getCurrentConfig({
+  } = i.getCurrentConfig({
     location: "keybinds"
   }, {
     autoTrackExposure: !1

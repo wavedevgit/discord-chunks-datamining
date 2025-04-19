@@ -2,13 +2,13 @@
 n.d(r, {
   f: () => o
 });
-var e = n(63063),
-  i = n(981631),
+var i = n(63063),
+  e = n(981631),
   a = n(388032);
 
 function o() {
-  return a.NW.format(a.t["+ALa7+"], {
-    fullTermsUrl: e.Z.getArticleURL(i.BhN.CREATOR_TERMS),
-    creatorRevenuePolicyUrl: e.Z.getArticleURL(i.BhN.CREATOR_POLICY)
+  return a.intl.format(a.t["+ALa7+"], {
+    fullTermsUrl: i.Z.getArticleURL(e.BhN.CREATOR_TERMS),
+    creatorRevenuePolicyUrl: i.Z.getArticleURL(e.BhN.CREATOR_POLICY)
   })
 }

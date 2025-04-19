@@ -1,53 +1,53 @@
 /** Chunk was on 15915 **/
-a.d(e, {
+e.d(i, {
   default: () => c
 });
-var i = a(200651);
-a(192379);
-var n = a(481060),
-  s = a(626135),
-  l = a(39604),
-  r = a(981631),
-  d = a(388032),
-  o = a(931009);
+var n = e(200651);
+e(192379);
+var a = e(481060),
+  l = e(626135),
+  s = e(39604),
+  r = e(981631),
+  d = e(388032),
+  o = e(931009);
 
 function c(t) {
   let {
-    transitionState: e,
-    onClose: a,
+    transitionState: i,
+    onClose: e,
     onBeforeDelete: c,
     onAfterDelete: h,
     clip: m
   } = t;
-  return (0, i.jsxs)(n.Y0X, {
-    size: n.CgR.SMALL,
-    transitionState: e,
+  return (0, n.jsxs)(a.Y0X, {
+    size: a.CgR.SMALL,
+    transitionState: i,
     className: o.__invalid_modal,
-    children: [(0, i.jsxs)(n.hzk, {
+    children: [(0, n.jsxs)(a.hzk, {
       className: o.modalContent,
-      children: [(0, i.jsxs)("div", {
+      children: [(0, n.jsxs)("div", {
         className: o.header,
-        children: [(0, i.jsx)(n.X6q, {
+        children: [(0, n.jsx)(a.X6q, {
           className: o.__invalid_title,
           variant: "text-md/semibold",
           color: "header-primary",
-          children: d.NW.string(d.t.Lzhui4)
-        }), (0, i.jsx)(n.olH, {
-          onClick: a
+          children: d.intl.string(d.t.Lzhui4)
+        }), (0, n.jsx)(a.olH, {
+          onClick: e
         })]
-      }), (0, i.jsx)(n.Text, {
+      }), (0, n.jsx)(a.Text, {
         variant: "text-md/medium",
         color: "text-normal",
         className: o.__invalid_body,
-        children: d.NW.string(d.t.yxCBqq)
+        children: d.intl.string(d.t.yxCBqq)
       })]
-    }), (0, i.jsx)(n.mzw, {
-      children: (0, i.jsx)(n.zxk, {
-        color: n.zxk.Colors.RED,
+    }), (0, n.jsx)(a.mzw, {
+      children: (0, n.jsx)(a.zxk, {
+        color: a.zxk.Colors.RED,
         onClick: function() {
-          null == c || c(), l.sS(m.filepath), h(), s.default.track(r.rMx.CLIP_DELETED)
+          null == c || c(), s.sS(m.filepath), h(), l.default.track(r.rMx.CLIP_DELETED)
         },
-        children: d.NW.string(d.t.VRWPDg)
+        children: d.intl.string(d.t.VRWPDg)
       })
     })]
   })

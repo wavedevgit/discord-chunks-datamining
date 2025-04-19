@@ -5,9 +5,9 @@ r.d(t, {
 var n = r(200651),
   c = r(192379),
   l = r(481060),
-  o = r(388032);
+  i = r(388032);
 
-function i(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -63,42 +63,42 @@ function a(e) {
   let [u, b] = c.useState({
     Account: {
       value: "Account",
-      label: o.NW.string(o.t["rfe/x8"]),
+      label: i.intl.string(i.t["rfe/x8"]),
       checked: !1
     },
     Analytics: {
       value: "Analytics",
-      label: o.NW.string(o.t["j+d6RE"]),
+      label: i.intl.string(i.t["j+d6RE"]),
       checked: !1
     },
     Activities: {
       value: "Activities",
-      label: o.NW.string(o.t.KO88BQ),
+      label: i.intl.string(i.t.KO88BQ),
       checked: !1
     },
     Messages: {
       value: "Messages",
-      label: o.NW.string(o.t["0dO1t7"]),
+      label: i.intl.string(i.t["0dO1t7"]),
       checked: !1
     },
     Programs: {
       value: "Programs",
-      label: o.NW.string(o.t.M4ddeX),
+      label: i.intl.string(i.t.M4ddeX),
       checked: !1
     },
     Servers: {
       value: "Servers",
-      label: o.NW.string(o.t.JN9c39),
+      label: i.intl.string(i.t.JN9c39),
       checked: !1
     }
   }), p = e => (t, r) => {
-    b(t => s(i({}, t), {
-      [e]: s(i({}, t[e]), {
+    b(t => s(o({}, t), {
+      [e]: s(o({}, t[e]), {
         checked: r
       })
     }))
   };
-  return (0, n.jsxs)(l.ConfirmModal, s(i({}, t, a), {
+  return (0, n.jsxs)(l.ConfirmModal, s(o({}, t, a), {
     onConfirm: () => {
       let e = Object.keys(u).filter(e => u[e].checked).map(e => u[e].value);
       null == r || r(e)

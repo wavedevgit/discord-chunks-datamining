@@ -2,12 +2,12 @@
 n.d(t, {
   Z: () => _
 }), n(388685);
-var r = n(200651);
+var i = n(200651);
 n(192379);
-var i = n(512722),
-  s = n.n(i),
-  a = n(481060),
-  l = n(100527),
+var r = n(512722),
+  s = n.n(r),
+  l = n(481060),
+  a = n(100527),
   o = n(906732),
   c = n(509545),
   d = n(74538),
@@ -21,7 +21,7 @@ var i = n(512722),
 function b(e) {
   let t, {
       subscription: n,
-      withOverheadSeparator: i
+      withOverheadSeparator: r
     } = e,
     {
       analyticsLocations: b
@@ -30,40 +30,40 @@ function b(e) {
       subscriptionId: n.id,
       renewal: !0,
       analyticsLocations: b,
-      analyticsLocation: l.Z.PREMIUM_SUBSCRIPTION_FINE_PRINT_CONTENT
+      analyticsLocation: a.Z.PREMIUM_SUBSCRIPTION_FINE_PRINT_CONTENT
     });
   if (null == _) return null;
-  let N = i ? f.finePrintWithOverheadSeparator : f.finePrint,
-    x = _.invoiceItems.find(e => {
+  let x = r ? f.finePrintWithOverheadSeparator : f.finePrint,
+    E = _.invoiceItems.find(e => {
       let {
         subscriptionPlanId: t
       } = e;
       return (0, d.uZ)(t)
     });
-  if (null == x) return null;
-  let E = x.subscriptionPlanId,
-    j = c.Z.get(E);
-  s()(null != j, "Missing plan");
-  let C = (0, u.T4)(_.total, _.currency);
-  return j.interval === g.rV.YEAR ? t = h.NW.format(h.t["jPz/39"], {
-    price: C,
+  if (null == E) return null;
+  let j = E.subscriptionPlanId,
+    C = c.Z.get(j);
+  s()(null != C, "Missing plan");
+  let O = (0, u.T4)(_.total, _.currency);
+  return C.interval === g.rV.YEAR ? t = h.intl.format(h.t["jPz/39"], {
+    price: O,
     termsUrl: p.EYA.TERMS,
     paidURL: p.EYA.PAID_TERMS,
     privacyUrl: p.EYA.PRIVACY
-  }) : j.interval === g.rV.MONTH && (t = 1 === j.intervalCount ? h.NW.format(h.t.m27GpK, {
-    price: C,
+  }) : C.interval === g.rV.MONTH && (t = 1 === C.intervalCount ? h.intl.format(h.t.m27GpK, {
+    price: O,
     termsUrl: p.EYA.TERMS,
     paidURL: p.EYA.PAID_TERMS,
     privacyUrl: p.EYA.PRIVACY
-  }) : h.NW.format(h.t["9xf5V1"], {
-    price: C,
+  }) : h.intl.format(h.t["9xf5V1"], {
+    price: O,
     termsUrl: p.EYA.TERMS,
     paidURL: p.EYA.PAID_TERMS,
     privacyUrl: p.EYA.PRIVACY,
-    intervalCount: j.intervalCount
-  })), (0, r.jsx)(a.Text, {
+    intervalCount: C.intervalCount
+  })), (0, i.jsx)(l.Text, {
     color: "text-muted",
-    className: N,
+    className: x,
     variant: "text-xs/normal",
     children: t
   })
@@ -74,7 +74,7 @@ function _(e) {
     subscription: t,
     withOverheadSeparator: n
   } = e;
-  return t.status === p.O0b.CANCELED || t.isPurchasedExternally ? null : (0, r.jsx)(b, {
+  return t.status === p.O0b.CANCELED || t.isPurchasedExternally ? null : (0, i.jsx)(b, {
     subscription: t,
     withOverheadSeparator: n
   })

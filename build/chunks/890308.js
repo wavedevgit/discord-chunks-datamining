@@ -30,15 +30,15 @@ e = n.nmd(e),
       throw RangeError(v[e])
     }
 
-    function N(e, t) {
+    function A(e, t) {
       for (var n = e.length, r = []; n--;) r[n] = t(e[n]);
       return r
     }
 
-    function A(e, t) {
+    function N(e, t) {
       var n = e.split("@"),
         r = "";
-      return n.length > 1 && (r = n[0] + "@", e = n[1]), r + N((e = e.replace(y, ".")).split("."), t).join(".")
+      return n.length > 1 && (r = n[0] + "@", e = n[1]), r + A((e = e.replace(y, ".")).split("."), t).join(".")
     }
 
     function C(e) {
@@ -47,7 +47,7 @@ e = n.nmd(e),
     }
 
     function R(e) {
-      return N(e, function(e) {
+      return A(e, function(e) {
         var t = "";
         return e > 65535 && (e -= 65536, t += S(e >>> 10 & 1023 | 55296), e = 56320 | 1023 & e), t += S(e)
       }).join("")
@@ -82,27 +82,27 @@ e = n.nmd(e),
     }
 
     function x(e) {
-      var t, n, r, i, a, o, s, l, _, p, E, b, y, v, O, N = [];
-      for (o = 0, b = (e = C(e)).length, t = m, n = 0, a = h; o < b; ++o)(E = e[o]) < 128 && N.push(S(E));
-      for (r = i = N.length, i && N.push(g); r < b;) {
+      var t, n, r, i, a, o, s, l, _, p, E, b, y, v, O, A = [];
+      for (o = 0, b = (e = C(e)).length, t = m, n = 0, a = h; o < b; ++o)(E = e[o]) < 128 && A.push(S(E));
+      for (r = i = A.length, i && A.push(g); r < b;) {
         for (s = c, o = 0; o < b; ++o)(E = e[o]) >= t && E < s && (s = E);
         for (s - t > I((c - n) / (y = r + 1)) && T("overflow"), n += (s - t) * y, t = s, o = 0; o < b; ++o)
           if ((E = e[o]) < t && ++n > c && T("overflow"), E == t) {
-            for (l = n, _ = u; !(l < (p = _ <= a ? d : _ >= a + f ? f : _ - a)); _ += u) O = l - p, v = u - p, N.push(S(w(p + O % v, 0))), l = I(O / v);
-            N.push(S(w(l, 0))), a = D(n, y, r == i), n = 0, ++r
+            for (l = n, _ = u; !(l < (p = _ <= a ? d : _ >= a + f ? f : _ - a)); _ += u) O = l - p, v = u - p, A.push(S(w(p + O % v, 0))), l = I(O / v);
+            A.push(S(w(l, 0))), a = D(n, y, r == i), n = 0, ++r
           }++ n, ++t
       }
-      return N.join("")
+      return A.join("")
     }
 
     function M(e) {
-      return A(e, function(e) {
+      return N(e, function(e) {
         return E.test(e) ? L(e.slice(4).toLowerCase()) : e
       })
     }
 
     function k(e) {
-      return A(e, function(e) {
+      return N(e, function(e) {
         return b.test(e) ? "xn--" + x(e) : e
       })
     }

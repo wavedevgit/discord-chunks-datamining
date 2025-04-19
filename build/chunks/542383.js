@@ -1,11 +1,11 @@
 /** Chunk was on 68784 **/
 n.d(t, {
-  Z: () => o
+  Z: () => l
 });
 var r = n(192379),
   a = n(358085);
 
-function o(e) {
+function l(e) {
   let t = r.useRef(e);
   return r.useEffect(() => {
     t.current = e
@@ -13,9 +13,9 @@ function o(e) {
     let n = e.ctrlKey && !(e.altKey || e.metaKey || e.shiftKey),
       r = e.metaKey && !(e.altKey || e.ctrlKey || e.shiftKey),
       {
-        disabled: o = !1,
-        onSubmit: l
+        disabled: l = !1,
+        onSubmit: o
       } = t.current;
-    "enter" === e.key.toLowerCase() && ("macos" === (0, a.getOS)() ? r : n) && !o && (e.preventDefault(), l())
+    "enter" === e.key.toLowerCase() && ("macos" === (0, a.getOS)() ? r : n) && !l && (e.preventDefault(), o())
   }, [])
 }

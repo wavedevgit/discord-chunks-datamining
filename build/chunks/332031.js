@@ -15,7 +15,7 @@ function d(e, t) {
   let n = (0, l.e7)([a.Z], () => (0, o.Z)(a.Z.findActivity(e, e => e.type === s.IIU.STREAMING)), [e]);
   return null == n ? null : (0, i.jsx)(r.sNh, {
     id: "watch-stream",
-    label: u.NW.string(u.t["7Xq/nZ"]),
+    label: u.intl.string(u.t["7Xq/nZ"]),
     action: () => {
       null == t || t(), window.open(n, "_blank")
     }

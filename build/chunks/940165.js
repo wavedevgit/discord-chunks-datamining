@@ -26,7 +26,7 @@ function b(t) {
     isPlaying: y
   } = (0, l.Z)();
   return (0, r.jsxs)(c.P3F, {
-    "aria-label": u.NW.string(u.t.RscU7O),
+    "aria-label": u.intl.string(u.t.RscU7O),
     className: i()(O.container, n, {
       [O.containerActive]: y
     }),

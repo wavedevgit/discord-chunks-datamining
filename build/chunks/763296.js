@@ -33,9 +33,9 @@ let E = new Map,
   I = new Set,
   S = new Map,
   T = !1,
-  N = [];
+  A = [];
 
-function A() {
+function N() {
   E.clear(), b.clear(), S.clear(), T = !1, O = 0, v = 0
 }
 
@@ -86,7 +86,7 @@ function x(e) {
   let {
     guildId: t
   } = e;
-  N = N.includes(t) ? a().without(N, t) : [...N, t]
+  A = A.includes(t) ? a().without(A, t) : [...A, t]
 }
 
 function M(e) {
@@ -169,13 +169,13 @@ function H(e) {
   y.has(t) ? y.delete(t) : y.add(t)
 }
 
-function W(e) {
+function Y(e) {
   let {
     soundboardStoreState: t
   } = e;
   E = new Map(_.default.entries(t.soundboardSounds)), I = new Set(t.favoritedSoundIds), y = new Set(t.localSoundboardMutes)
 }
-class Y extends(r = o.ZP.Store) {
+class W extends(r = o.ZP.Store) {
   initialize() {
     this.waitFor(c.Z), V(c.Z.settings)
   }
@@ -237,12 +237,12 @@ class Y extends(r = o.ZP.Store) {
     return 2 === O && 2 === v
   }
   getShownAllGuildIds() {
-    return N
+    return A
   }
 }
-g(Y, "displayName", "SoundboardStore");
-let K = new Y(s.Z, {
-  LOGOUT: A,
+g(W, "displayName", "SoundboardStore");
+let K = new W(s.Z, {
+  LOGOUT: N,
   GUILD_SOUNDBOARD_FETCH: R,
   GUILD_SOUNDBOARD_SOUND_CREATE: D,
   GUILD_SOUNDBOARD_SOUND_UPDATE: D,
@@ -259,5 +259,5 @@ let K = new Y(s.Z, {
   SOUNDBOARD_SOUNDS_RECEIVED: P,
   GUILD_DELETE: w,
   AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: H,
-  OVERLAY_INITIALIZE: W
+  OVERLAY_INITIALIZE: Y
 })

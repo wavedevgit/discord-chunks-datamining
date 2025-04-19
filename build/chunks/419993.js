@@ -95,9 +95,9 @@ class S extends(r = a.Component) {
       error: e,
       maxLength: t,
       minLength: n
-    } = this.props, r = this.getIsOverflowing() ? p.NW.formatToPlainString(p.t.ICT5S0, {
+    } = this.props, r = this.getIsOverflowing() ? p.intl.formatToPlainString(p.t.ICT5S0, {
       maxLength: t
-    }) : null, i = this.getIsUnderflowing() ? p.NW.formatToPlainString(p.t["62rk1N"], {
+    }) : null, i = this.getIsUnderflowing() ? p.intl.formatToPlainString(p.t["62rk1N"], {
       minLength: n
     }) : null;
     return null != e && "" === e || null === e ? null : void 0 !== e ? e : !1 === this.state.dirty ? null : null != r ? r : i
@@ -128,11 +128,11 @@ class S extends(r = a.Component) {
       id: I,
       rows: S,
       flex: T,
-      autosize: N,
-      required: A,
+      autosize: A,
+      required: N,
       onInvalid: C,
       inputRef: R
-    } = this.props, P = N ? _.l : "textarea", w = this.hasError(), D = null != (t = this.props["aria-labelledby"]) ? t : null == (e = this.context) ? void 0 : e.titleId, L = this.getAriaDescribedBy();
+    } = this.props, P = A ? _.l : "textarea", w = this.hasError(), D = null != (t = this.props["aria-labelledby"]) ? t : null == (e = this.context) ? void 0 : e.titleId, L = this.getAriaDescribedBy();
     return (0, i.jsxs)("div", {
       className: s()(m.inputWrapper, {
         [h.flex]: T
@@ -163,7 +163,7 @@ class S extends(r = a.Component) {
             minLength: l,
             maxLength: f ? void 0 : u,
             spellCheck: E,
-            required: A,
+            required: N,
             onChange: this.onChange,
             onBlur: this.onBlur,
             onFocus: this.onFocus,
@@ -174,12 +174,12 @@ class S extends(r = a.Component) {
           })
         }), null != l && (0, i.jsx)(d.n, {
           id: y,
-          children: p.NW.format(p.t["bmQU//"], {
+          children: p.intl.format(p.t["bmQU//"], {
             minLength: l
           })
         }), null != u && (0, i.jsx)(d.n, {
           id: v,
-          children: p.NW.format(p.t["+DFxLS"], {
+          children: p.intl.format(p.t["+DFxLS"], {
             maxLength: u
           })
         }), this.renderCharacterCount(), this.renderMaxLength()]

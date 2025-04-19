@@ -58,12 +58,12 @@ function T(e, t) {
   return n
 }
 
-function N(e, t) {
+function A(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let A = ["image/jpeg", "image/png", "image/webp", "image/gif", "image/avif", "video/quicktime", "video/mp4"];
+let N = ["image/jpeg", "image/png", "image/webp", "image/gif", "image/avif", "video/quicktime", "video/mp4"];
 
 function C(e) {
   let {
@@ -89,10 +89,10 @@ function C(e) {
           className: O.tags,
           children: [null != t && "" !== t ? (0, r.jsx)("span", {
             className: O.altTag,
-            children: v.NW.string(v.t.QEW819)
+            children: v.intl.string(v.t.QEW819)
           }) : null, s && n ? (0, r.jsx)("span", {
             className: O.altTag,
-            children: v.NW.string(v.t["F+x38P"])
+            children: v.intl.string(v.t["F+x38P"])
           }) : null]
         })]
       })
@@ -112,7 +112,7 @@ function R(e) {
     height: 0
   }), p = s === y.q.SMALL;
   i.useEffect(() => {
-    if (null == t || !1 === A.includes(t.type)) return;
+    if (null == t || !1 === N.includes(t.type)) return;
     let e = URL.createObjectURL(t);
     d(e);
     let n = new Image;
@@ -146,11 +146,11 @@ function R(e) {
       })
     }, [u, p, n, f]),
     m = i.useCallback(() => {
-      null != u && (0, l.h7j)(e => (0, r.jsx)(l.Y0X, N(S({
+      null != u && (0, l.h7j)(e => (0, r.jsx)(l.Y0X, A(S({
         className: O.__invalid_modal
       }, e), {
         size: l.CgR.DYNAMIC,
-        "aria-label": v.NW.string(v.t.X4IxWF),
+        "aria-label": v.intl.string(v.t.X4IxWF),
         children: h(!1, !0)
       })))
     }, [u, h]);
@@ -239,7 +239,7 @@ function w(e) {
       className: O.tags,
       children: n.spoiler ? (0, r.jsx)("span", {
         className: O.altTag,
-        children: v.NW.string(v.t["F+x38P"])
+        children: v.intl.string(v.t["F+x38P"])
       }) : null
     })
   })
@@ -256,11 +256,11 @@ function D(e) {
     canEdit: g = !0,
     hideFileName: I = !1,
     clip: T
-  } = e, A = null != T, C = (h = A ? y.q.CLIP : h) === y.q.SMALL, R = (0, s.e7)([m.Z], () => {
+  } = e, N = null != T, C = (h = N ? y.q.CLIP : h) === y.q.SMALL, R = (0, s.e7)([m.Z], () => {
     var e;
     return null == (e = m.Z.getChannel(t)) ? void 0 : e.guild_id
   }), P = e => {
-    e.stopPropagation(), (0, l.h7j)(e => (0, r.jsx)(u.default, N(S({}, e), {
+    e.stopPropagation(), (0, l.h7j)(e => (0, r.jsx)(u.default, A(S({}, e), {
       draftType: n,
       upload: a,
       channelId: t,
@@ -284,7 +284,7 @@ function D(e) {
         className: o()({
           [O.action]: C
         }),
-        tooltip: A ? v.NW.string(v.t.MYgdY2) : v.NW.string(v.t.cuurzM),
+        tooltip: N ? v.intl.string(v.t.MYgdY2) : v.intl.string(v.t.cuurzM),
         onClick: () => c.Z.update(t, a.id, n, {
           spoiler: !a.spoiler
         }),
@@ -301,11 +301,11 @@ function D(e) {
             [O.actionBarIcon]: C
           })
         })
-      }) : null, g && !A ? (0, r.jsx)(b.Z, {
+      }) : null, g && !N ? (0, r.jsx)(b.Z, {
         className: o()({
           [O.action]: C
         }),
-        tooltip: v.NW.string(v.t.Y8ujqq),
+        tooltip: v.intl.string(v.t.Y8ujqq),
         onClick: P,
         children: (0, r.jsx)(l.vdY, {
           size: "xs",
@@ -318,7 +318,7 @@ function D(e) {
         className: o()({
           [O.action]: C
         }),
-        tooltip: A ? v.NW.string(v.t.MskAXV) : v.NW.string(v.t.vN7REx),
+        tooltip: N ? v.intl.string(v.t.MskAXV) : v.intl.string(v.t.vN7REx),
         onClick: () => c.Z.remove(t, a.id, n),
         dangerous: !0,
         children: (0, r.jsx)(l.XHJ, {
@@ -342,14 +342,14 @@ function D(e) {
     children: [(0, r.jsx)(w, {
       upload: a,
       size: h
-    }), !I && !A && (0, r.jsx)("div", {
+    }), !I && !N && (0, r.jsx)("div", {
       className: O.filenameContainer,
       children: (0, r.jsx)(l.Text, {
         className: O.filename,
         variant: "text-sm/normal",
         children: null != p ? p : a.filename
       })
-    }), A && (0, r.jsxs)(r.Fragment, {
+    }), N && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(f.Z, {
         className: O.clipsFooter,
         createdAt: E.default.extractTimestamp(T.id),
@@ -360,7 +360,7 @@ function D(e) {
       }), (0, r.jsx)(l.IGR, {
         color: _.Z.BG_BRAND,
         className: O.clipsBadge,
-        text: v.NW.string(v.t.oA4afH)
+        text: v.intl.string(v.t.oA4afH)
       })]
     })]
   })

@@ -72,7 +72,7 @@ function m(e) {
   return O ? null : (0, r.jsx)(a.sNh, {
     id: "block",
     color: null != S ? S : "default",
-    label: I ? d.NW.string(d.t.XyHpKC) : d.NW.string(d.t.l4EmaW),
+    label: I ? d.intl.string(d.t.XyHpKC) : d.intl.string(d.t.l4EmaW),
     action: I ? () => {
       null == E || E(), o.Z.unblockUser(v, {
         location: b

@@ -23,7 +23,7 @@ function f(e) {
   l.useEffect(() => {
     (0, c.N)(r)
   }, [r]);
-  let b = null != (t = null == g ? void 0 : g.name) ? t : d.NW.string(d.t.ZTNur6),
+  let b = null != (t = null == g ? void 0 : g.name) ? t : d.intl.string(d.t.ZTNur6),
     m = null != g ? (0, n.jsx)(s.Z, {
       children: g.content,
       className: p.markdown

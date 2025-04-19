@@ -52,7 +52,7 @@ let b = e => {
         children: null == b ? void 0 : b.name
       }), i ? null : (0, n.jsx)(a.Text, {
         variant: "text-sm/normal",
-        children: d.NW.string(d.t.my5jxM)
+        children: d.intl.string(d.t.my5jxM)
       })]
     }) : null]
   })

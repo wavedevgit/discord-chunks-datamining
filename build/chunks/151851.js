@@ -27,10 +27,10 @@ var i = n(120356),
 let I = "#ffffff",
   S = e => y.ZP.close(e),
   T = e => y.ZP.minimize(e),
-  N = (e, t) => {
+  A = (e, t) => {
     (0, b.isMac)() && !t.altKey ? y.ZP.fullscreen(e) : y.ZP.maximize(e)
   },
-  A = e => {
+  N = e => {
     let {
       children: t,
       windowKey: n,
@@ -39,19 +39,19 @@ let I = "#ffffff",
     } = e, l = (0, r.jsx)(s.P3F, {
       className: O.winButtonClose,
       onClick: () => S(n),
-      "aria-label": v.NW.string(v.t.ZdNUj4),
+      "aria-label": v.intl.string(v.t.ZdNUj4),
       tabIndex: -1,
       children: (0, r.jsx)(_.Z, {})
     }), c = (0, r.jsx)(s.P3F, {
       className: O.winButtonMinMax,
-      onClick: e => N(n, e),
-      "aria-label": v.NW.string(v.t.G1u0hI),
+      onClick: e => A(n, e),
+      "aria-label": v.intl.string(v.t.G1u0hI),
       tabIndex: -1,
       children: (0, r.jsx)(h.Z, {})
     }), u = (0, r.jsx)(s.P3F, {
       className: O.winButtonMinMax,
       onClick: () => T(n),
-      "aria-label": v.NW.string(v.t.CxOC4e),
+      "aria-label": v.intl.string(v.t.CxOC4e),
       tabIndex: -1,
       children: (0, r.jsx)(g.Z, {})
     }), d = (0, r.jsxs)(r.Fragment, {
@@ -92,7 +92,7 @@ let I = "#ffffff",
           children: [(0, r.jsx)(s.P3F, {
             className: O.macButtonClose,
             onClick: () => S(n),
-            "aria-label": v.NW.string(v.t.ZdNUj4),
+            "aria-label": v.intl.string(v.t.ZdNUj4),
             tabIndex: -1,
             children: (0, r.jsx)(p.Z, {
               color: "#4c0000"
@@ -100,15 +100,15 @@ let I = "#ffffff",
           }), (0, r.jsx)(s.P3F, {
             className: O.macButtonMinimize,
             onClick: () => T(n),
-            "aria-label": v.NW.string(v.t.CxOC4e),
+            "aria-label": v.intl.string(v.t.CxOC4e),
             tabIndex: -1,
             children: (0, r.jsx)(E.Z, {
               color: "#975500"
             })
           }), (0, r.jsx)(s.P3F, {
             className: O.macButtonMaximize,
-            onClick: e => N(n, e),
-            "aria-label": v.NW.string(v.t["2nM3Pj"]),
+            onClick: e => A(n, e),
+            "aria-label": v.intl.string(v.t["2nM3Pj"]),
             tabIndex: -1,
             children: (0, r.jsx)(m.Z, {
               color: "#006500"
@@ -135,7 +135,7 @@ function R(e) {
   if (f) return null;
   switch (n) {
     case b.PlatformTypes.WINDOWS:
-      return (0, r.jsx)(A, {
+      return (0, r.jsx)(N, {
         windowKey: i,
         themeOverride: s,
         hasOpenLayer: _

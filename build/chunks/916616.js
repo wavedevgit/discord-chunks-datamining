@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  E: () => N
+  E: () => A
 });
 var r = n(200651),
   i = n(192379),
@@ -77,7 +77,7 @@ function T(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let N = i.forwardRef((e, t) => {
+let A = i.forwardRef((e, t) => {
   let n;
   var {
     className: a,
@@ -90,7 +90,7 @@ let N = i.forwardRef((e, t) => {
     width: y,
     height: O,
     maxWidth: T = y,
-    maxHeight: N = O,
+    maxHeight: A = O,
     minWidth: P = 0,
     minHeight: w = 0,
     mediaLayoutType: D,
@@ -108,7 +108,7 @@ let N = i.forwardRef((e, t) => {
       } = e;
       return (0, r.jsx)("img", {
         className: null != a ? a : void 0,
-        alt: null != i ? i : m.NW.string(m.t.X4IxWF),
+        alt: null != i ? i : m.intl.string(m.t.X4IxWF),
         src: t,
         style: R(n, o)
       })
@@ -120,14 +120,14 @@ let N = i.forwardRef((e, t) => {
     useFullWidth: V = !1,
     srcIsAnimated: Z
   } = e, H = S(e, ["className", "imageClassName", "readyState", "src", "placeholder", "placeholderVersion", "alt", "width", "height", "maxWidth", "maxHeight", "minWidth", "minHeight", "mediaLayoutType", "limitResponsiveWidth", "accessory", "zoomable", "original", "children", "renderAccessory", "onClick", "tabIndex", "dataSafeSrc", "useFullWidth", "srcIsAnimated"]);
-  let W = i.useRef(null),
-    Y = i.useRef(null);
+  let Y = i.useRef(null),
+    W = i.useRef(null);
   if (1 === y && 1 === O) return null;
   let K = (0, d.Tj)({
       width: y,
       height: O,
       maxWidth: T,
-      maxHeight: N,
+      maxHeight: A,
       minWidth: P,
       minHeight: w
     }),
@@ -138,7 +138,7 @@ let N = i.forwardRef((e, t) => {
     alt: b,
     className: s,
     mediaLayoutType: D
-  }) : c !== p.zo9.LOADING && (n = (0, r.jsx)(A, {
+  }) : c !== p.zo9.LOADING && (n = (0, r.jsx)(N, {
     size: K,
     mediaLayoutType: D,
     alt: b
@@ -152,8 +152,8 @@ let N = i.forwardRef((e, t) => {
   });
   let q = null != U ? U() : null;
   return q = null != q ? q : x, (0, r.jsx)(l.tEY, {
-    ringTarget: W,
-    focusTarget: Y,
+    ringTarget: Y,
+    focusTarget: W,
     children: (0, r.jsxs)("div", I(v({
       ref: t,
       className: o()(g.imageWrapper, {
@@ -169,16 +169,16 @@ let N = i.forwardRef((e, t) => {
         "aria-hidden": !0,
         className: g.originalLink,
         href: k,
-        ref: W,
+        ref: Y,
         "data-role": "img",
         "data-safe-src": null != F ? F : f
       }), null != G ? (0, r.jsx)(l.P3F, {
         className: g.clickableWrapper,
         tabIndex: null != B ? B : 0,
         onClick: G,
-        "aria-label": null != b ? b : m.NW.string(m.t.X4IxWF),
+        "aria-label": null != b ? b : m.intl.string(m.t.X4IxWF),
         "aria-describedby": u.r5,
-        innerRef: Y,
+        innerRef: W,
         focusProps: {
           enabled: !1
         },
@@ -191,7 +191,7 @@ let N = i.forwardRef((e, t) => {
   })
 });
 
-function A(e) {
+function N(e) {
   let {
     size: t,
     mediaLayoutType: n,
@@ -203,7 +203,7 @@ function A(e) {
     children: (0, r.jsx)("img", {
       src: (0, s.ap)(a) ? b : E,
       className: g.imageError,
-      alt: null != i ? i : m.NW.string(m.t.X4IxWF)
+      alt: null != i ? i : m.intl.string(m.t.X4IxWF)
     })
   })
 }
@@ -263,4 +263,4 @@ function w(e) {
     aspectRatio: "".concat(t, " / ").concat(n)
   }
 }
-N.displayName = "Image"
+A.displayName = "Image"

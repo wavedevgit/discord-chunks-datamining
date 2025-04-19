@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(699516),
   S = n(885110),
   T = n(111583),
-  N = n(594174),
-  A = n(451478),
+  A = n(594174),
+  N = n(451478),
   C = n(626135),
   R = n(823379),
   P = n(5192),
@@ -128,7 +128,7 @@ class F extends i.PureComponent {
       }) : (0, r.jsx)("div", {
         className: L.activityInviteEducationArrow
       }), (0, r.jsx)("span", {
-        children: D.NW.format(D.t["i/MoCg"], {
+        children: D.intl.format(D.t["i/MoCg"], {
           game: e.name,
           dismissOnClick: this.handleDismissInviteEducation
         })
@@ -179,26 +179,26 @@ function Z(e) {
     isComboing: g
   } = e, {
     rateLimitPerUser: E
-  } = u, y = N.default.getCurrentUser(), v = O.Z.getGuild(t), S = E > 0, T = f ? [] : l()(s).keys().filter(e => e !== (null == y ? void 0 : y.id)).reject(e => I.Z.isBlockedOrIgnored(e)).map(e => N.default.getUser(e)).filter(R.lm).map(e => P.ZP.getName(t, u.id, e)).value(), A = (0, m.R6)("TypingUsers");
+  } = u, y = A.default.getCurrentUser(), v = O.Z.getGuild(t), S = E > 0, T = f ? [] : l()(s).keys().filter(e => e !== (null == y ? void 0 : y.id)).reject(e => I.Z.isBlockedOrIgnored(e)).map(e => A.default.getUser(e)).filter(R.lm).map(e => P.ZP.getName(t, u.id, e)).value(), N = (0, m.R6)("TypingUsers");
   if (0 === T.length && !S && !g) return i && null != n ? (0, r.jsx)(F, {
     activity: n,
     isFocused: a,
-    isRefreshChatInputEnabled: A
+    isRefreshChatInputEnabled: N
   }) : (0, r.jsx)(V, {
     channel: u,
     guild: v
   });
   let [C, w, x] = T, M = "";
-  return 1 === T.length ? M = D.NW.format(D.t.lJ9sZW, {
+  return 1 === T.length ? M = D.intl.format(D.t.lJ9sZW, {
     a: C
-  }) : 2 === T.length ? M = D.NW.format(D.t.rB0CUV, {
+  }) : 2 === T.length ? M = D.intl.format(D.t.rB0CUV, {
     a: C,
     b: w
-  }) : 3 === T.length ? M = D.NW.format(D.t.StKTho, {
+  }) : 3 === T.length ? M = D.intl.format(D.t.StKTho, {
     a: C,
     b: w,
     c: x
-  }) : T.length > 3 && (M = D.NW.string(D.t.uVDhqa)), (0, r.jsxs)("div", {
+  }) : T.length > 3 && (M = D.intl.string(D.t.uVDhqa)), (0, r.jsxs)("div", {
     className: o()(L.typing, {
       "stop-animation": !a,
       [L.isComboing]: p && g
@@ -215,7 +215,7 @@ function Z(e) {
         "aria-atomic": !0,
         children: M
       })]
-    }), A ? null : (0, r.jsx)(h.Z, {
+    }), N ? null : (0, r.jsx)(h.Z, {
       channel: u,
       isThreadCreation: f
     }), p && g && (0, r.jsx)(b.Z, {
@@ -238,7 +238,7 @@ function H(e) {
       showInviteEducation: s,
       activity: a,
       typingUsers: (0, c.e7)([T.Z], () => T.Z.getTypingUsers(t.id)),
-      isFocused: (0, c.e7)([A.Z], () => A.Z.isFocused()),
+      isFocused: (0, c.e7)([N.Z], () => N.Z.isFocused()),
       guildId: t.guild_id,
       isComboing: null != o,
       channel: t,

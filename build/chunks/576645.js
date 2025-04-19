@@ -38,8 +38,8 @@ var r = n(192379),
   I = n(111810),
   S = n(896835),
   T = n(477931),
-  N = n(981631),
-  A = n(37113);
+  A = n(981631),
+  N = n(37113);
 let C = 35e5,
   R = 1e4,
   P = new o.Yd("HDStreamingConsumableModal"),
@@ -68,7 +68,7 @@ let C = 35e5,
       }
     }, [o, i]);
     let p = (0, r.useMemo)(() => 0 === c.length || !c.some(e => null == e || e < C), [c]);
-    return ((null == t ? void 0 : t.premiumTier) === N.Eu4.NONE || (null == t ? void 0 : t.premiumTier) === N.Eu4.TIER_1) && p && !a
+    return ((null == t ? void 0 : t.premiumTier) === A.Eu4.NONE || (null == t ? void 0 : t.premiumTier) === A.Eu4.TIER_1) && p && !a
   },
   D = (e, t) => {
     let n = (0, s.e7)([g.default], () => {
@@ -126,7 +126,7 @@ function k(e) {
     if (null != t && t.channelId === e.id) {
       let e = p.Z.getState().goLiveSource;
       (0, y.x8)(null == e ? void 0 : e.quality);
-      let t = (0, u.s_)(A.LY.RESOLUTION_1440, A.ws.FPS_60, e);
+      let t = (0, u.s_)(N.LY.RESOLUTION_1440, N.ws.FPS_60, e);
       l.Z.setGoLiveSource(t)
     }
   })
@@ -141,7 +141,7 @@ function j() {
 }
 
 function U(e) {
-  b.default.track(N.rMx.CONSUMABLE_HD_STREAMING_ENTRYPOINT, {
+  b.default.track(A.rMx.CONSUMABLE_HD_STREAMING_ENTRYPOINT, {
     location: e
   })
 }
@@ -149,7 +149,7 @@ function U(e) {
 function G(e) {
   let t = (0, s.e7)([_.Z], () => _.Z.getGuild(null == e ? void 0 : e.guild_id)),
     n = (0, S.j)("VoiceEffectsActionBar");
-  return ((null == t ? void 0 : t.premiumTier) === N.Eu4.NONE || (null == t ? void 0 : t.premiumTier) === N.Eu4.TIER_1) && (null == e ? void 0 : e.type) === N.d4z.GUILD_VOICE && !(null == e ? void 0 : e.isHDStreamSplashed) && n
+  return ((null == t ? void 0 : t.premiumTier) === A.Eu4.NONE || (null == t ? void 0 : t.premiumTier) === A.Eu4.TIER_1) && (null == e ? void 0 : e.type) === A.d4z.GUILD_VOICE && !(null == e ? void 0 : e.isHDStreamSplashed) && n
 }
 
 function B(e, t, n, r) {
@@ -178,5 +178,5 @@ let Z = () => {
     entitlement: e,
     numPotions: t
   } = x(O.D1);
-  return null != e && e.type === N.qc2.PURCHASE && null != t && t > 0
+  return null != e && e.type === A.qc2.PURCHASE && null != t && t > 0
 }

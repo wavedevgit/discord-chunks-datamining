@@ -21,7 +21,7 @@ let f = e => {
     return (0, r.jsx)("img", {
       className: d.icon,
       src: a,
-      alt: u.NW.formatToPlainString(u.t.g6KdFh, {
+      alt: u.intl.formatToPlainString(u.t.g6KdFh, {
         fileType: i
       }),
       title: i
@@ -57,7 +57,7 @@ let f = e => {
             }) : null]
           }), (0, r.jsx)("div", {
             className: d.progressContainer,
-            children: _ ? u.NW.string(u.t.jfKTen) : (0, r.jsx)(l.Exd, {
+            children: _ ? u.intl.string(u.t.jfKTen) : (0, r.jsx)(l.Exd, {
               className: d.progress,
               percent: i
             })

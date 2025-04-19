@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => Y,
+  Z: () => W,
   x: () => j
 }), n(388685);
 var r = n(200651),
@@ -27,8 +27,8 @@ var r = n(200651),
   I = n(518950),
   S = n(594174),
   T = n(709586),
-  N = n(624138),
-  A = n(51144),
+  A = n(624138),
+  N = n(51144),
   C = n(981631),
   R = n(674563),
   P = n(524484),
@@ -73,7 +73,7 @@ function k(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = (0, N.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
+let j = (0, A.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
   U = 3,
   G = i.memo(function(e) {
     let {
@@ -82,7 +82,7 @@ let j = (0, N.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       ownerTooltipText: i
     } = e;
     return null != t && t && null == n ? (0, r.jsx)(l.ua7, {
-      text: null != i ? i : w.NW.string(w.t.pclUFB),
+      text: null != i ? i : w.intl.string(w.t.pclUFB),
       children: e => (0, r.jsx)(l.CEn, k(x({
         size: "md",
         color: "currentColor"
@@ -97,7 +97,7 @@ let j = (0, N.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       onClickPremiumGuildIcon: n
     } = e;
     return null == t ? null : (0, r.jsx)(l.ua7, {
-      text: w.NW.formatToPlainString(w.t.IWkAq6, {
+      text: w.intl.formatToPlainString(w.t.IWkAq6, {
         date: t
       }),
       children: e => (0, r.jsx)(l.P3F, {
@@ -202,7 +202,7 @@ let j = (0, N.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       })]
     })
   }),
-  W = i.memo(function(e) {
+  Y = i.memo(function(e) {
     let {
       hideSubtext: t,
       activities: n,
@@ -238,7 +238,7 @@ let j = (0, N.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       hasQuest: null != f
     })
   }),
-  Y = i.memo(function(e) {
+  W = i.memo(function(e) {
     var t;
     let {
       selected: n = !1,
@@ -252,7 +252,7 @@ let j = (0, N.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       nick: E,
       user: b,
       currentUser: T,
-      activities: N,
+      activities: A,
       applicationStream: R,
       status: P,
       shouldAnimateStatus: w = !1,
@@ -262,7 +262,7 @@ let j = (0, N.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       guildId: G,
       className: B,
       nameplate: F,
-      hideClanTag: Y = !1,
+      hideClanTag: W = !1,
       hideSubtext: K = !1,
       onMouseDown: z,
       onKeyDown: q,
@@ -277,7 +277,7 @@ let j = (0, N.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       id: ei,
       tabIndex: ea,
       itemProps: eo
-    } = e, es = null == b ? void 0 : b.id, el = A.ZP.useName(b), ec = (null == (t = S.default.getCurrentUser()) ? void 0 : t.id) === es, eu = i.useRef(null), [ed, ef] = i.useState(!1), [e_, ep] = i.useState(null), {
+    } = e, es = null == b ? void 0 : b.id, el = N.ZP.useName(b), ec = (null == (t = S.default.getCurrentUser()) ? void 0 : t.id) === es, eu = i.useRef(null), [ed, ef] = i.useState(!1), [e_, ep] = i.useState(null), {
       voiceChannel: eh
     } = (0, f.Z)({
       userId: es,
@@ -299,12 +299,12 @@ let j = (0, N.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
     i.useEffect(() => {
       n && eI(!1)
     }, [n]);
-    let eS = (0, v.Fr)(N),
+    let eS = (0, v.Fr)(A),
       eT = null != eS && !ec && n && !eO,
-      eN = i.useCallback(() => {
+      eA = i.useCallback(() => {
         ef(!0)
       }, []),
-      eA = i.useCallback(() => {
+      eN = i.useCallback(() => {
         ef(!1)
       }, []),
       eC = i.useCallback(e => {
@@ -341,8 +341,8 @@ let j = (0, N.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
         onKeyDown: q,
         onMouseDown: z,
         onContextMenu: X,
-        onMouseEnter: eN,
-        onMouseLeave: eA,
+        onMouseEnter: eA,
+        onMouseLeave: eN,
         hovered: ed,
         name: null == p ? (0, r.jsx)("span", {
           className: D.username,
@@ -351,7 +351,7 @@ let j = (0, N.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
             colorString: a,
             name: null != E ? E : el,
             roleColorStrings: ev,
-            hideClanTag: Y,
+            hideClanTag: W,
             user: b,
             guildId: G
           })
@@ -364,7 +364,7 @@ let j = (0, N.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
               colorString: a,
               name: null != E ? E : el,
               roleColorStrings: ev,
-              hideClanTag: Y,
+              hideClanTag: W,
               user: b,
               guildId: G
             })
@@ -373,7 +373,7 @@ let j = (0, N.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
         avatar: (0, r.jsx)(H, {
           user: b,
           shouldAnimateStatus: w,
-          activities: N,
+          activities: A,
           status: P,
           eventHandlers: ey,
           avatarSrc: eb,
@@ -385,9 +385,9 @@ let j = (0, N.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
           currentUser: T
         }),
         nameplate: F,
-        subText: (0, r.jsx)(W, {
+        subText: (0, r.jsx)(Y, {
           hideSubtext: K,
-          activities: N,
+          activities: A,
           status: P,
           applicationStream: R,
           voiceStatusChannel: eg,

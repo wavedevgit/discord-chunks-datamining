@@ -14,9 +14,9 @@ var i = n(200651),
   u = n(764260),
   p = n(422559),
   f = n(430824),
-  N = n(768581),
-  m = n(700785),
-  E = n(645041),
+  m = n(768581),
+  E = n(700785),
+  N = n(645041),
   S = n(981631),
   I = n(921944),
   h = n(135899),
@@ -48,7 +48,7 @@ function g(e) {
     headerText: a,
     headerSubtext: o,
     step: s
-  } = e, r = N.ZP.getGuildIconURL({
+  } = e, r = m.ZP.getGuildIconURL({
     id: t.id,
     icon: t.icon,
     size: 120
@@ -113,7 +113,7 @@ function b(e) {
     })]
   })
 }
-let y = e => e.toString() === S.Plq.MENTION_EVERYONE.toString() ? O.NW.string(O.t.yCpsQ0) : (0, p.wt)(e);
+let y = e => e.toString() === S.Plq.MENTION_EVERYONE.toString() ? O.intl.string(O.t.yCpsQ0) : (0, p.wt)(e);
 
 function R(e) {
   let {
@@ -126,7 +126,7 @@ function R(e) {
       className: T.tableHeader,
       variant: "text-xs/semibold",
       color: "text-muted",
-      children: 0 === n ? O.NW.string(O.t["0WZKIy"]) : O.NW.string(O.t.xU8RDg)
+      children: 0 === n ? O.intl.string(O.t["0WZKIy"]) : O.intl.string(O.t.xU8RDg)
     }), (0, i.jsx)("div", {
       className: T.permissionsTable,
       children: t.map((e, t) => (0, i.jsxs)("div", {
@@ -154,7 +154,7 @@ function C(e) {
       className: T.tableHeader,
       variant: "text-xs/semibold",
       color: "text-muted",
-      children: 2 === n ? O.NW.string(O.t.FgMS6u) : O.NW.string(O.t.Yo5qlp)
+      children: 2 === n ? O.intl.string(O.t.FgMS6u) : O.intl.string(O.t.Yo5qlp)
     }), (0, i.jsx)("div", {
       className: T.permissionsTable,
       children: t.map((e, t) => (0, i.jsxs)("div", {
@@ -211,10 +211,10 @@ function L(e) {
           secondaryColor: l.Z.unsafe_rawColors.WHITE_100.css
         }), (0, i.jsx)(c.Text, {
           variant: "text-md/normal",
-          children: O.NW.format(O.t.K8Eg4O, {
+          children: O.intl.format(O.t.K8Eg4O, {
             infoHook: () => (0, i.jsx)(c.ua7, {
-              text: O.NW.string(O.t["3h2WyM"]),
-              "aria-label": O.NW.string(O.t["3h2WyM"]),
+              text: O.intl.string(O.t["3h2WyM"]),
+              "aria-label": O.intl.string(O.t["3h2WyM"]),
               children: e => (0, i.jsx)(c.d3s, x({
                 size: "xs",
                 color: "currentColor",
@@ -232,7 +232,7 @@ function L(e) {
           secondaryColor: l.Z.unsafe_rawColors.WHITE_100.css
         }), (0, i.jsx)(c.Text, {
           variant: "text-md/normal",
-          children: O.NW.string(O.t.LfeFFh)
+          children: O.intl.string(O.t.LfeFFh)
         }), (0, i.jsx)(b, {
           guild: t
         })]
@@ -256,7 +256,7 @@ function v(e) {
     children: [(0, i.jsx)(c.zxk, {
       onClick: t,
       submitting: 1 === o,
-      children: 0 === o ? a ? O.NW.string(O.t.R7GC7e) : O.NW.string(O.t.iOSdAQ) : O.NW.string(O.t.mVuDq6)
+      children: 0 === o ? a ? O.intl.string(O.t.R7GC7e) : O.intl.string(O.t.iOSdAQ) : O.intl.string(O.t.mVuDq6)
     }), 0 === o ? (0, i.jsx)(c.zxk, {
       look: c.zxk.Looks.LINK,
       onClick: n,
@@ -264,7 +264,7 @@ function v(e) {
       children: (0, i.jsx)(c.Text, {
         variant: "text-sm/semibold",
         color: "header-primary",
-        children: O.NW.string(O.t.gWQZvr)
+        children: O.intl.string(O.t.gWQZvr)
       })
     }) : null]
   })
@@ -277,11 +277,11 @@ function U(e) {
     isDefaultNotificationsAllMessages: s,
     transitionState: l,
     onClose: d
-  } = e, [p, N] = a.useState(0), b = a.useMemo(() => {
+  } = e, [p, m] = a.useState(0), b = a.useMemo(() => {
     let e = [],
       n = [];
     return h.$X.map(i => {
-      m.oz(i, t) ? e.push(i) : n.push(i)
+      E.oz(i, t) ? e.push(i) : n.push(i)
     }), {
       enabledPermissions: e,
       disabledPermissions: n
@@ -322,8 +322,8 @@ function U(e) {
     className: T.modal,
     children: [(0, i.jsx)(g, {
       guild: t,
-      headerText: n ? O.NW.string(O.t["7/ux19"]) : O.NW.string(O.t["sRcn4+"]),
-      headerSubtext: n ? O.NW.string(O.t.aliKPz) : O.NW.string(O.t.F4KDOD),
+      headerText: n ? O.intl.string(O.t["7/ux19"]) : O.intl.string(O.t["sRcn4+"]),
+      headerSubtext: n ? O.intl.string(O.t.aliKPz) : O.intl.string(O.t.F4KDOD),
       step: p
     }), (0, i.jsx)(L, {
       guild: t,
@@ -334,10 +334,10 @@ function U(e) {
     }), (0, i.jsx)(v, {
       onConfirm: () => {
         var e, i;
-        n || (C(), d(), (0, E.Qd)(r.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (e = null == t ? void 0 : t.id) ? e : "", !0, I.L.PRIMARY)), 0 === p ? (N(1), setTimeout(() => N(2), 3e3)) : 2 === p && (C(), d(), (0, E.Qd)(r.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (i = null == t ? void 0 : t.id) ? i : "", !0, I.L.PRIMARY))
+        n || (C(), d(), (0, N.Qd)(r.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (e = null == t ? void 0 : t.id) ? e : "", !0, I.L.PRIMARY)), 0 === p ? (m(1), setTimeout(() => m(2), 3e3)) : 2 === p && (C(), d(), (0, N.Qd)(r.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (i = null == t ? void 0 : t.id) ? i : "", !0, I.L.PRIMARY))
       },
       onDismiss: () => {
-        d(), (0, E.Qd)(r.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, t.id, !0, I.L.DISMISS)
+        d(), (0, N.Qd)(r.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, t.id, !0, I.L.DISMISS)
       },
       step: p,
       canEveryoneModerate: n

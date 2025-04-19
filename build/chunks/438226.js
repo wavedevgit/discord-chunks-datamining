@@ -8,7 +8,7 @@ n.d(t, {
 var r = n(5192),
   i = n(561308),
   a = n(388032);
-let o = (e, t) => a.NW.formatToPlainString(a.t.tAwI1t, {
+let o = (e, t) => a.intl.formatToPlainString(a.t.tAwI1t, {
     username: t.username,
     activity: e.extra.game_name
   }),
@@ -20,7 +20,7 @@ let o = (e, t) => a.NW.formatToPlainString(a.t.tAwI1t, {
     let i = s(e),
       o = r.ZP.getName(null == t ? void 0 : t.guild_id, null == t ? void 0 : t.id, n),
       l = e.extra.game_name;
-    return a.NW.formatToMarkdownString(i, {
+    return a.intl.formatToMarkdownString(i, {
       gameName: l,
       userName: o
     }).replaceAll("*", "")
@@ -32,7 +32,7 @@ let o = (e, t) => a.NW.formatToPlainString(a.t.tAwI1t, {
       users: o,
       countOthers: s
     } = e, l = (0, i.kr)(t) ? a.t.QaUWPT : a.t["7j/5mp"];
-    return a.NW.formatToMarkdownString(l, {
+    return a.intl.formatToMarkdownString(l, {
       gameName: t.extra.game_name,
       user1: r.ZP.getName(null == n ? void 0 : n.guild_id, null == n ? void 0 : n.id, o[0]),
       user2: r.ZP.getName(null == n ? void 0 : n.guild_id, null == n ? void 0 : n.id, o[1]),

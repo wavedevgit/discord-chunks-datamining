@@ -51,7 +51,7 @@ function N(e) {
     children: [(0, t.jsx)(o.FmF, {
       size: "xs",
       color: c.Z.unsafe_rawColors.WHITE_500.css
-    }), C.NW.string(C.t.b0y3DA)]
+    }), C.intl.string(C.t.b0y3DA)]
   }) : (0, t.jsxs)(o.gtL, {
     color: o.zxk.Colors.GREEN,
     className: _.editButton,
@@ -60,7 +60,7 @@ function N(e) {
     children: [(0, t.jsx)(p.Z, {
       height: 16,
       width: 16
-    }), C.NW.string(C.t["+7XY39"])]
+    }), C.intl.string(C.t["+7XY39"])]
   })
 }
 let y = r.memo(function(e) {
@@ -148,7 +148,7 @@ let y = r.memo(function(e) {
                   }), r))
                 }
               }),
-              children: C.NW.string(C.t.VINpSE)
+              children: C.intl.string(C.t.VINpSE)
             })]
           })
         })]

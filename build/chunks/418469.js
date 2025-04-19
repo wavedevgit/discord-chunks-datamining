@@ -63,12 +63,12 @@ function p(e, t, f) {
   return null == e ? null : h ? (0, r.jsx)(a.sNh, {
     id: "report-stream-problem",
     color: "danger",
-    label: d.NW.string(d.t.sdnCxc),
+    label: d.intl.string(d.t.sdnCxc),
     action: v,
     icon: a.P4T
   }) : (0, r.jsx)(a.sNh, {
     id: "report-stream-problem",
-    label: d.NW.string(d.t.sdnCxc),
+    label: d.intl.string(d.t.sdnCxc),
     action: v
   })
 }

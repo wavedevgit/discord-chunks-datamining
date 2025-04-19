@@ -45,7 +45,7 @@ function m(n) {
       variant: "eyebrow",
       color: "interactive-normal",
       className: d.applicationsHeader,
-      children: p.NW.string(p.t.PHjkRE)
+      children: p.intl.string(p.t.PHjkRE)
     }), (0, i.jsx)("div", {
       className: d.applicationsContainer,
       children: t.map(n => {
@@ -88,7 +88,7 @@ function h(n) {
     onCompleteApplication: r
   } = n;
   return (0, i.jsx)(c.Y0X, {
-    "aria-label": p.NW.string(p.t.syl6HR),
+    "aria-label": p.intl.string(p.t.syl6HR),
     size: c.CgR.SMALL,
     transitionState: e,
     className: d.container,
@@ -99,7 +99,7 @@ function h(n) {
         children: [(0, i.jsx)(c.X6q, {
           className: d.title,
           variant: "heading-md/bold",
-          children: p.NW.string(p.t.syl6HR)
+          children: p.intl.string(p.t.syl6HR)
         }), (0, i.jsx)(c.olH, {
           onClick: t
         })]

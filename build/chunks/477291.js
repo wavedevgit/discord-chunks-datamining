@@ -64,7 +64,7 @@ function f(e, t, n) {
     channelId: t.id,
     location: "Summary divider",
     rating: o
-  }), (0, i.showToast)((0, i.createToast)(s.NW.string(s.t["d9+vQ0"]), i.ToastType.SUCCESS))
+  }), (0, i.showToast)((0, i.createToast)(s.intl.string(s.t["d9+vQ0"]), i.ToastType.SUCCESS))
 }
 
 function _(e) {

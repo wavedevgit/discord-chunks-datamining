@@ -57,26 +57,26 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let N = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
-  w = {
+let w = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
+  P = {
     opacity: 0,
     transform: "translate3d(100%, 0, 0)"
   },
-  P = {
+  R = {
     opacity: 1,
     transform: "translate3d(0%, 0, 0)"
   },
-  R = {
+  A = {
     opacity: 0
   },
-  A = {
+  C = {
     opacity: 1
   },
-  C = {
-    borderRadius: "".concat(N, "px ").concat(N, "px ").concat(N, "px ").concat(N, "px")
-  },
   T = {
-    borderRadius: "0px ".concat(N, "px ").concat(N, "px 0px")
+    borderRadius: "".concat(w, "px ").concat(w, "px ").concat(w, "px ").concat(w, "px")
+  },
+  N = {
+    borderRadius: "0px ".concat(w, "px ").concat(w, "px 0px")
   },
   D = {
     mass: 1,
@@ -90,23 +90,23 @@ let N = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
         isUpsellEnabled: s,
         shape: d,
         size: g,
-        didTrackUpsellViewed: N,
-        setDidTrackUpsellViewed: w,
-        className: P,
-        premiumIndicator: R
+        didTrackUpsellViewed: w,
+        setDidTrackUpsellViewed: P,
+        className: R,
+        premiumIndicator: A
       } = e,
-      A = (0, b.Wc)(o),
+      C = (0, b.Wc)(o),
       {
-        analyticsLocations: C
+        analyticsLocations: T
       } = (0, p.ZP)(),
-      T = null != (0, y.Z)(o);
+      N = null != (0, y.Z)(o);
     try {
-      t = (0, b.nG)(A)
+      t = (0, b.nG)(C)
     } catch (e) {
       t = !1
     }
     try {
-      i = (0, b.tR)(A)
+      i = (0, b.tR)(C)
     } catch (e) {
       i = !1
     }
@@ -127,20 +127,20 @@ let N = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
         })
       }, [k, D, M]);
     if (l.useEffect(() => {
-        !N && D && (v.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
+        !w && D && (v.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
           type: I.cd.STREAM_QUALITY_INDICATOR,
           has_premium_stream_fps: t,
           has_premium_stream_resolution: i,
-          location_stack: C
-        }), w(!0))
-      }, [t, i, D, N, w, C]), null == A) return null;
-    let W = (0, r.jsx)(f.ua7, {
-      text: T ? _.NW.string(_.t.q8TiVl) : D ? _.NW.string(_.t.IHgpEh) : _.NW.string(_.t.vLb0VV),
+          location_stack: T
+        }), P(!0))
+      }, [t, i, D, w, P, T]), null == C) return null;
+    let F = (0, r.jsx)(f.ua7, {
+      text: N ? _.intl.string(_.t.q8TiVl) : D ? _.intl.string(_.t.IHgpEh) : _.intl.string(_.t.vLb0VV),
       position: "bottom",
       color: f.ua7.Colors.GREY,
       children: e => (0, r.jsxs)(f.P3F, x(Z({}, e), {
         onClick: U,
-        className: a()(j.qualityIndicator, g, E.eE[d], T ? j.qualityIndicatorLowQuality : j.qualityIndicatorFullQuality, {
+        className: a()(j.qualityIndicator, g, E.eE[d], N ? j.qualityIndicatorLowQuality : j.qualityIndicatorFullQuality, {
           [j.clickable]: k && D
         }),
         children: [D ? (0, r.jsx)(f.SrA, {
@@ -149,16 +149,16 @@ let N = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
           className: j.premiumStreamIcon
         }) : null, (0, r.jsx)("span", {
           className: j.qualityResolution,
-          children: (0, b.ml)(A.maxResolution)
+          children: (0, b.ml)(C.maxResolution)
         }), (0, r.jsx)("span", {
-          children: (0, b.bp)(A.maxFrameRate)
+          children: (0, b.bp)(C.maxFrameRate)
         })]
       }))
     });
     return (0, r.jsx)(f.IGR, {
-      text: W,
-      className: a()(P, j.qualityIndicatorBadge, {
-        [j.qualityIndicatorBadgePremium]: D && R
+      text: F,
+      className: a()(R, j.qualityIndicatorBadge, {
+        [j.qualityIndicatorBadgePremium]: D && A
       }),
       color: c.Z.unsafe_rawColors.PRIMARY_500.css,
       shape: d
@@ -182,14 +182,14 @@ let N = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
     }, [t]);
     let S = (0, f.Yzy)(v, {
         enter: {
-          from: h.enabled ? R : w,
-          to: h.enabled ? A : P
+          from: h.enabled ? A : P,
+          to: h.enabled ? C : R
         },
-        leave: h.enabled ? R : w,
+        leave: h.enabled ? A : P,
         config: D
       }, "animate-always"),
       y = (0, f.q_F)({
-        to: v ? T : C,
+        to: v ? N : T,
         config: D
       }, "animate-always");
     return (e => {

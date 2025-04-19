@@ -6,9 +6,9 @@ var n = r(200651);
 r(192379);
 var i = r(120356),
   o = r.n(i),
-  s = r(481060),
-  c = r(367907),
-  l = r(357352),
+  l = r(481060),
+  s = r(367907),
+  c = r(357352),
   a = r(434404),
   d = r(626135),
   u = r(629481),
@@ -24,7 +24,7 @@ function b(e) {
     className: f.row,
     children: t.map(e => (0, n.jsx)("div", {
       className: f.pill,
-      children: (0, n.jsx)(s.Text, {
+      children: (0, n.jsx)(l.Text, {
         variant: "text-sm/normal",
         children: e
       })
@@ -38,10 +38,10 @@ function j(e) {
     showCTA: r,
     responsive: i = !0
   } = e, j = [
-    [p.NW.string(p.t["73h51N"]), p.NW.string(p.t["gbjs//"])],
-    [p.NW.string(p.t.mCoH0d), p.NW.string(p.t["l/BuSE"])],
-    [p.NW.string(p.t.psQktr), p.NW.string(p.t.nMhIZW)],
-    [p.NW.string(p.t["0ItLmJ"]), p.NW.string(p.t.yQHqsL)]
+    [p.intl.string(p.t["73h51N"]), p.intl.string(p.t["gbjs//"])],
+    [p.intl.string(p.t.mCoH0d), p.intl.string(p.t["l/BuSE"])],
+    [p.intl.string(p.t.psQktr), p.intl.string(p.t.nMhIZW)],
+    [p.intl.string(p.t["0ItLmJ"]), p.intl.string(p.t.yQHqsL)]
   ];
   return (0, n.jsx)("div", {
     className: o()({
@@ -58,15 +58,15 @@ function j(e) {
           }, "pill-row-".concat(t)))
         }), (0, n.jsxs)("div", {
           className: f.ctaContent,
-          children: [(0, n.jsx)(s.Text, {
+          children: [(0, n.jsx)(l.Text, {
             variant: "text-lg/medium",
             color: "header-primary",
-            children: p.NW.string(p.t["67arYG"])
-          }), r && (0, n.jsxs)(s.gtL, {
-            size: s.zxk.Sizes.MEDIUM,
+            children: p.intl.string(p.t["67arYG"])
+          }), r && (0, n.jsxs)(l.gtL, {
+            size: l.zxk.Sizes.MEDIUM,
             className: f.getStartedButton,
             innerClassName: f.getStartedButtonContents,
-            shineSize: s.gtL.ShineSizes.SMALL,
+            shineSize: l.gtL.ShineSizes.SMALL,
             onClick: () => {
               var e, r;
               d.default.track(C.rMx.GUILD_SHOP_PREVIEW_CLICK, (e = function(e) {
@@ -86,7 +86,7 @@ function j(e) {
                   })
                 }
                 return e
-              }({}, (0, c.hH)(t)), r = r = {
+              }({}, (0, s.hH)(t)), r = r = {
                 action_taken: u.mz.GET_STARTED_CLICK
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
                 var r = Object.keys(e);
@@ -99,7 +99,7 @@ function j(e) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               }), e)), a.Z.open(t, C.pNK.GUILD_PRODUCTS)
             },
-            children: [p.NW.string(p.t.oyzLpK), (0, n.jsx)(s.ZSh, {
+            children: [p.intl.string(p.t.oyzLpK), (0, n.jsx)(l.ZSh, {
               size: "md",
               color: "currentColor",
               className: f.getStartedArrow
@@ -109,11 +109,11 @@ function j(e) {
       }), (0, n.jsxs)("div", {
         className: f.muralImageContainer,
         children: [(0, n.jsx)("img", {
-          src: (0, l.b)("server_products/storefront/preview-mural.png"),
+          src: (0, c.b)("server_products/storefront/preview-mural.png"),
           alt: "",
           className: f.muralImage
         }), (0, n.jsx)("img", {
-          src: (0, l.b)("server_products/storefront/preview-mural-reduced.png"),
+          src: (0, c.b)("server_products/storefront/preview-mural-reduced.png"),
           alt: "",
           className: f.muralImageReducedWidth
         })]

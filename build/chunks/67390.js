@@ -23,6 +23,6 @@ function s(e) {
       [c.md]: "md" === r
     }),
     src: l,
-    alt: a.NW.string(a.t.htEhYm)
+    alt: a.intl.string(a.t.htEhYm)
   })
 }

@@ -47,7 +47,7 @@ function T(e) {
   return e
 }
 
-function N(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,8 +58,8 @@ function N(e, t) {
   return n
 }
 
-function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
+function N(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -68,11 +68,11 @@ let C = 150;
 function R(e, t) {
   switch (e) {
     case y.fO.ACTIVITY:
-      return O.NW.formatToPlainString(O.t.TCM94e, {
+      return O.intl.formatToPlainString(O.t.TCM94e, {
         numUsers: t
       });
     case y.fO.STREAM:
-      return O.NW.formatToPlainString(O.t.BR7Tnp, {
+      return O.intl.formatToPlainString(O.t.BR7Tnp, {
         numViewers: t
       });
     default:
@@ -155,7 +155,7 @@ function L(e) {
     compact: b = !1,
     disableInteraction: O = !1,
     maxVisibleUsers: S = 3
-  } = e, N = i.useRef(null), R = (0, p.Z)(), [L, x] = i.useState(!1), M = i.useRef(new u.sW(C, () => x(!1))), k = (0, c.Wu)([m.Z, g.default], () => {
+  } = e, A = i.useRef(null), R = (0, p.Z)(), [L, x] = i.useState(!1), M = i.useRef(new u.sW(C, () => x(!1))), k = (0, c.Wu)([m.Z, g.default], () => {
     if (s.type === y.fO.STREAM) {
       let e = m.Z.getViewerIds(s.id);
       return e.length > 0 ? e.map(e => g.default.getUser(e)).filter(E.lm) : D
@@ -176,7 +176,7 @@ function L(e) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("69220"), n.e("70686")]).then(n.bind(n, 881351));
-        return n => (0, r.jsx)(e, A(T({}, n), {
+        return n => (0, r.jsx)(e, N(T({}, n), {
           user: t
         }))
       }, {
@@ -207,7 +207,7 @@ function L(e) {
       onMouseEnter: j,
       onMouseLeave: U,
       children: (0, r.jsx)(d.yRy, {
-        targetElementRef: N,
+        targetElementRef: A,
         renderPopout: () => (0, r.jsx)(P, {
           participantType: s.type,
           handleUserContextMenu: G,
@@ -219,7 +219,7 @@ function L(e) {
         shouldShow: L && !R,
         position: "top",
         children: () => (0, r.jsx)("div", {
-          ref: N,
+          ref: A,
           className: o()(I.viewers, h),
           children: B
         })

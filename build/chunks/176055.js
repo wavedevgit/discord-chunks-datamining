@@ -20,12 +20,12 @@ var r = n(200651),
   _ = n(769654),
   E = n(601964),
   O = n(430824),
-  N = n(843445),
-  y = n(981631),
-  I = n(388032),
-  v = n(629811);
+  y = n(843445),
+  I = n(981631),
+  v = n(388032),
+  C = n(629811);
 
-function C(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -33,27 +33,27 @@ function C(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class S extends i.PureComponent {
+class N extends i.PureComponent {
   renderMemberInfo() {
     let {
       approximateMemberCount: e,
       approximatePresenceCount: t
     } = this.props.guild;
     return null == e || null == t ? null : (0, r.jsxs)(f.Z, {
-      className: v.memberInfo,
+      className: C.memberInfo,
       align: f.Z.Align.CENTER,
       children: [(0, r.jsx)("div", {
-        className: v.dotOnline
+        className: C.dotOnline
       }), (0, r.jsx)("span", {
-        className: v.memberText,
-        children: I.NW.format(I.t["LC+S+v"], {
+        className: C.memberText,
+        children: v.intl.format(v.t["LC+S+v"], {
           membersOnline: t
         })
       }), (0, r.jsx)("div", {
-        className: v.dotOffline
+        className: C.dotOffline
       }), (0, r.jsx)("span", {
-        className: v.memberText,
-        children: I.NW.format(I.t.zRl6XV, {
+        className: C.memberText,
+        children: v.intl.format(v.t.zRl6XV, {
           count: e
         })
       })]
@@ -71,42 +71,42 @@ class S extends i.PureComponent {
     } = this.props;
     if (t && n) return null;
     let u = new E.ZP(e),
-      d = I.NW.string(I.t.pxwdrK),
+      d = v.intl.string(v.t.pxwdrK),
       p = this.handleJoinOrView,
       m = c.zxk.Looks.FILLED,
       b = c.zxk.Colors.PRIMARY;
-    return l ? n ? (m = c.zxk.Looks.OUTLINED, b = v.buttonColorInGuild, d = (0, r.jsxs)(f.Z, {
+    return l ? n ? (m = c.zxk.Looks.OUTLINED, b = C.buttonColorInGuild, d = (0, r.jsxs)(f.Z, {
       align: f.Z.Align.CENTER,
       children: [(0, r.jsx)("div", {
-        children: I.NW.string(I.t.cEnaW1)
+        children: v.intl.string(v.t.cEnaW1)
       }), (0, r.jsx)(c.dz2, {
         size: "md",
         color: "currentColor",
-        className: v.joinedCheckmark
+        className: C.joinedCheckmark
       })]
-    })) : i && t && (d = I.NW.string(I.t.XpeFYm)) : (d = I.NW.string(I.t.dKhVQE), p = this.handleLogin), (0, r.jsxs)("div", {
-      className: a()(o, s === N.b.SMALL ? v.inviteSmall : v.inviteLarge),
+    })) : i && t && (d = v.intl.string(v.t.XpeFYm)) : (d = v.intl.string(v.t.dKhVQE), p = this.handleLogin), (0, r.jsxs)("div", {
+      className: a()(o, s === y.b.SMALL ? C.inviteSmall : C.inviteLarge),
       children: [(0, r.jsx)(h.Z, {
-        children: I.NW.string(I.t.s1KcLi)
+        children: v.intl.string(v.t.s1KcLi)
       }), (0, r.jsxs)("div", {
-        className: v.content,
+        className: C.content,
         children: [(0, r.jsxs)("div", {
-          className: v.info,
+          className: C.info,
           children: [(0, r.jsx)(g.Z, {
             guild: u,
             active: !0,
             size: g.Z.Sizes.LARGE,
-            className: v.guildIcon
+            className: C.guildIcon
           }), (0, r.jsxs)("div", {
-            className: v.infoText,
+            className: C.infoText,
             children: [(0, r.jsx)("div", {
-              className: v.name,
+              className: C.name,
               children: e.name
             }), this.renderMemberInfo()]
           })]
         }), (0, r.jsx)(c.zxk, {
           size: c.zxk.Sizes.SMALL,
-          className: v.actionButton,
+          className: C.actionButton,
           fullWidth: !0,
           color: b,
           look: m,
@@ -117,7 +117,7 @@ class S extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), C(this, "handleJoinOrView", async () => {
+    super(...e), S(this, "handleJoinOrView", async () => {
       let {
         guild: e,
         skuId: t,
@@ -129,14 +129,14 @@ class S extends i.PureComponent {
       else try {
         await u.Z.joinGuild(e.id, {
           lurker: !0,
-          source: y.vtS.APPLICATION_STORE
+          source: I.vtS.APPLICATION_STORE
         }), i()
       } catch (e) {}
-    }), C(this, "handleLogin", () => {
+    }), S(this, "handleLogin", () => {
       let e = {
-        redirect_to: y.Z5c.APPLICATION_STORE_LISTING_SKU(this.props.skuId)
+        redirect_to: I.Z5c.APPLICATION_STORE_LISTING_SKU(this.props.skuId)
       };
-      (0, b.uL)(y.Z5c.LOGIN, {
+      (0, b.uL)(I.Z5c.LOGIN, {
         search: (0, o.stringify)(e),
         source: "verified_guild_invite"
       })
@@ -151,4 +151,4 @@ let T = (0, p.Z)(s.ZP.connectStores([O.Z, m.Z], e => {
     isInGuild: null != O.Z.getGuild(t.id) && !n,
     isLurking: n
   }
-})(S))
+})(N))

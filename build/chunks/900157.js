@@ -25,11 +25,11 @@ var r = n(200651),
   j = n(979651),
   O = n(664342),
   E = n(124368),
-  N = n(981631),
-  I = n(388032),
-  P = n(591837);
+  I = n(981631),
+  P = n(388032),
+  S = n(591837);
 
-function S(e) {
+function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function S(e) {
   return e
 }
 
-function Z(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -82,9 +82,9 @@ function T(e) {
       if (null == A || L.current) return;
       L.current = !0;
       let e = (0, p.K)(C.Z.getChannel(A.id), !0);
-      (0, d.yw)(N.rMx.CHANNEL_OPENED, Z(S({}, e, (0, d.$H)(A.id)), {
+      (0, d.yw)(I.rMx.CHANNEL_OPENED, N(Z({}, e, (0, d.$H)(A.id)), {
         channel_view: T
-      })), (0, h.a)(N.rMx.CHANNEL_OPENED_CLICKSTREAM, {
+      })), (0, h.a)(I.rMx.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: A.id
       })
     }, [A, T]), null == A || null == w) return null;
@@ -98,7 +98,7 @@ function T(e) {
       draftType: x.d.ChannelMessage
     }), (0, r.jsx)(b.ZP, {
       toolbar: D,
-      "aria-label": I.NW.string(I.t.Pwe8tL),
+      "aria-label": P.intl.string(P.t.Pwe8tL),
       children: (0, _.ud)({
         channel: A,
         channelName: R,
@@ -109,7 +109,7 @@ function T(e) {
             let {
               default: e
             } = await n.e("40157").then(n.bind(n, 422200));
-            return t => (0, r.jsx)(e, Z(S({}, t), {
+            return t => (0, r.jsx)(e, N(Z({}, t), {
               channel: A
             }))
           })
@@ -119,7 +119,7 @@ function T(e) {
         }
       })
     }), (0, r.jsx)("div", {
-      className: P.chat,
+      className: S.chat,
       children: (0, r.jsx)(m.Z, {
         channel: A,
         guild: w,

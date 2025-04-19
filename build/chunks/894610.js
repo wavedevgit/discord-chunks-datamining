@@ -5,33 +5,33 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  s = n(755930),
-  l = n(267101),
+  l = n(755930),
+  s = n(267101),
   a = n(388032),
   o = n(963877);
-let c = (0, s.Yn)([(0, s.nn)({
+let c = (0, l.Yn)([(0, l.nn)({
   key: "LISTING_NAME",
   cellClassName: o.listingNameColumn,
-  renderHeader: () => (0, r.jsx)(s.qN, {
-    children: a.NW.string(a.t.OGpGqK)
+  renderHeader: () => (0, r.jsx)(l.qN, {
+    children: a.intl.string(a.t.OGpGqK)
   }),
-  sort: (0, s.Qg)(e => e.listing.name.toLowerCase())
-}), (0, s.GW)({
+  sort: (0, l.Qg)(e => e.listing.name.toLowerCase())
+}), (0, l.GW)({
   key: "PAYMENTS_COUNT",
   cellClassName: o.paymentsCountColumn,
-  renderHeader: () => (0, r.jsx)(s.qN, {
-    children: a.NW.string(a.t.vpHXJy)
+  renderHeader: () => (0, r.jsx)(l.qN, {
+    children: a.intl.string(a.t.vpHXJy)
   }),
   getCount: e => e.paymentsCount,
-  sort: (0, s.Qg)(e => {
+  sort: (0, l.Qg)(e => {
     var t;
     return null != (t = e.paymentsCount) ? t : 0
   })
-}), (0, s.i$)({
+}), (0, l.i$)({
   key: "PRICE",
   cellClassName: o.priceColumn,
-  renderHeader: () => (0, r.jsx)(s.qN, {
-    children: a.NW.string(a.t.VodAGR)
+  renderHeader: () => (0, r.jsx)(l.qN, {
+    children: a.intl.string(a.t.VodAGR)
   }),
   getAmount(e) {
     let {
@@ -39,7 +39,7 @@ let c = (0, s.Yn)([(0, s.nn)({
     } = e;
     return t.price_tier
   },
-  sort: (0, s.Qg)(e => {
+  sort: (0, l.Qg)(e => {
     var t;
     return null != (t = e.listing.price_tier) ? t : 0
   })
@@ -49,7 +49,7 @@ function d(e) {
   let {
     earningsData: t,
     guildId: n
-  } = e, a = (0, l.ue)(n, {
+  } = e, a = (0, s.ue)(n, {
     publishedOnly: !1
   }), o = t.currentPeriod, d = i.useMemo(() => a.map(e => {
     var t, n, r;
@@ -86,7 +86,7 @@ function d(e) {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
     }), n
   }).filter(e => e.listing.published || e.paymentsCount > 0), [a, null == o ? void 0 : o.ppgs]);
-  return null == a || 0 === a.length ? null : (0, r.jsx)(s.ZP, {
+  return null == a || 0 === a.length ? null : (0, r.jsx)(l.ZP, {
     columns: c,
     data: d,
     initialSortKey: "LISTING_NAME"

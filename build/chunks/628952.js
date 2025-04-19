@@ -71,9 +71,9 @@ let O = e => {
   } = (0, _.T)(t), {
     giftRecipient: S,
     giftRecipientError: T
-  } = (0, c.wD)(), N = (0, s.e7)([f.default], () => f.default.getCurrentUser()), A = (0, p.k)(I);
+  } = (0, c.wD)(), A = (0, s.e7)([f.default], () => f.default.getCurrentUser()), N = (0, p.k)(I);
   if (null == I) return null;
-  let [C] = I.items, R = () => C.type === o.Z.AVATAR_DECORATION ? m.NW.string(m.t["7v0T9P"]) : C.type === o.Z.PROFILE_EFFECT ? m.NW.string(m.t.wR5wOj) : null, P = null != S && S.id !== (null == N ? void 0 : N.id), w = () => {
+  let [C] = I.items, R = () => C.type === o.Z.AVATAR_DECORATION ? m.intl.string(m.t["7v0T9P"]) : C.type === o.Z.PROFILE_EFFECT ? m.intl.string(m.t.wR5wOj) : null, P = null != S && S.id !== (null == A ? void 0 : A.id), w = () => {
     null != t && null != E && E(t)
   };
   return (0, r.jsxs)("div", {
@@ -82,7 +82,7 @@ let O = e => {
       className: g.previewTitleContainer,
       children: [(0, r.jsx)(l.vwX, {
         className: g.previewTitle,
-        children: m.NW.string(m.t.PpoJzs)
+        children: m.intl.string(m.t.PpoJzs)
       }), P && (0, r.jsx)(l.yRy, {
         preload: () => (0, d.Z)(S.id, S.getAvatarURL(null, 80)),
         renderPopout: e => (0, r.jsx)(u.Z, v(b({}, e), {
@@ -100,7 +100,7 @@ let O = e => {
           children: (0, r.jsx)(l.Text, {
             variant: "text-xs/medium",
             color: "text-link",
-            children: m.NW.string(m.t["2GnJQE"])
+            children: m.intl.string(m.t["2GnJQE"])
           })
         }))
       }, S.id)]
@@ -120,7 +120,7 @@ let O = e => {
           className: g.previewTextContainer,
           children: [(0, r.jsx)(l.Text, {
             variant: "text-md/semibold",
-            children: A
+            children: N
           }), (0, r.jsx)(l.X6q, {
             variant: "heading-sm/medium",
             color: "header-secondary",

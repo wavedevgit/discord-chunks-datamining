@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => g
 });
 var r = n(200651),
-  a = n(192379),
-  i = n(442837),
+  i = n(192379),
+  a = n(442837),
   l = n(322665),
   s = n(17845),
   o = n(374939),
@@ -20,12 +20,12 @@ let g = function(e) {
     tabId: n,
     onSelectApplication: g,
     onScroll: _
-  } = e, f = a.useRef(null), b = a.useCallback(() => {
+  } = e, f = i.useRef(null), b = i.useCallback(() => {
     var e;
     null == (e = f.current) || e.scrollTo({
       to: 0
     })
-  }, []), x = (0, i.e7)([u.Z], () => u.Z.getCategories()), v = a.useMemo(() => x.find(e => e.id === n), [x, n]), C = a.useMemo(() => null != v ? (0, d.v)(v) : "", [v]);
+  }, []), x = (0, a.e7)([u.Z], () => u.Z.getCategories()), v = i.useMemo(() => x.find(e => e.id === n), [x, n]), C = i.useMemo(() => null != v ? (0, d.v)(v) : "", [v]);
   return (0, r.jsxs)(c.Z, {
     onScroll: _,
     ref: f,

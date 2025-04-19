@@ -40,7 +40,7 @@ function f(e) {
       }), null != c && (0, r.jsx)(l.X6q, {
         variant: "heading-xl/semibold",
         color: "header-primary",
-        children: p.NW.format(p.t.jDV3i4, {
+        children: p.intl.format(p.t.jDV3i4, {
           username: c.globalName
         })
       })]

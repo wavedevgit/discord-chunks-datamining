@@ -21,7 +21,7 @@ function h(e) {
   } = null != (t = (0, u.rq)(h)) ? t : {}, p = (0, i.e7)([c.Z], () => c.Z.getStageInstanceByChannel(f), [f]), g = l.useRef(null), y = l.useCallback(() => {
     let e = a.Z.getChannel(f);
     null != e && s.Cq(e)
-  }, [f]), O = null != (n = null == p ? void 0 : p.topic) ? n : h.name, N = d.NW.formatToPlainString(d.t["T+DNAA"], {
+  }, [f]), O = null != (n = null == p ? void 0 : p.topic) ? n : h.name, b = d.intl.formatToPlainString(d.t["T+DNAA"], {
     channel: O
   });
   return (0, r.jsx)("div", {
@@ -33,7 +33,7 @@ function h(e) {
       },
       children: (0, r.jsx)(o.X6q, {
         variant: "heading-sm/semibold",
-        children: N
+        children: b
       })
     })
   })
@@ -44,7 +44,7 @@ class f {
   }
   createHeader(e) {
     return {
-      subtitle: d.NW.string(d.t["+AJFJy"]),
+      subtitle: d.intl.string(d.t["+AJFJy"]),
       icon: null
     }
   }

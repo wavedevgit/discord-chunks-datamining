@@ -76,11 +76,11 @@ function j(e) {
       }))
     })
   }
-  let N = null != (i = null != (t = null == j ? void 0 : j.nick) ? t : g.ZP.getName(y)) ? i : "???",
-    I = null == j ? void 0 : j.colorString;
+  let I = null != (i = null != (t = null == j ? void 0 : j.nick) ? t : g.ZP.getName(y)) ? i : "???",
+    P = null == j ? void 0 : j.colorString;
   return null == y ? (0, r.jsx)("span", {
     className: l()(C.threadCreatorName, C.unknownCreatorName),
-    children: N
+    children: I
   }) : (0, r.jsx)(u.Gt, {
     value: _,
     children: (0, r.jsx)(h.Z, {
@@ -94,8 +94,8 @@ function j(e) {
         className: C.threadCreatorName,
         onContextMenu: E,
         children: (0, r.jsx)(a.PUh, {
-          name: N,
-          color: null != I ? I : void 0,
+          name: I,
+          color: null != P ? P : void 0,
           roleColors: O
         })
       }))
@@ -119,7 +119,7 @@ function O(e) {
       color: "header-secondary",
       children: (0, r.jsx)("div", {
         className: C.subtitle,
-        children: y.NW.format(y.t.imPXd3, {
+        children: y.intl.format(y.t.imPXd3, {
           usernameHook: (e, n) => (0, r.jsx)(j, {
             userId: t.ownerId,
             channel: t
@@ -129,7 +129,7 @@ function O(e) {
     }), t.type === _.d4z.PRIVATE_THREAD ? (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
-      children: y.NW.string(y.t["1awbZG"])
+      children: y.intl.string(y.t["1awbZG"])
     }) : null]
   })
 }

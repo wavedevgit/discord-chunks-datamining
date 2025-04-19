@@ -1,6 +1,6 @@
 /** Chunk was on 40419 **/
 n.d(t, {
-  Z: () => N
+  Z: () => I
 });
 var r = n(544891),
   i = n(570140),
@@ -13,7 +13,7 @@ var r = n(544891),
   E = n(937111),
   d = n(981631),
   _ = n(388032);
-let N = {
+let I = {
   fetchGuildJoinRequest: async e => {
     let t = await r.tn.get({
         url: d.ANM.GUILD_JOIN_REQUEST_BY_ID(e),
@@ -39,7 +39,7 @@ let N = {
         type: "GUILD_JOIN_REQUESTS_FETCH_START"
       });
       try {
-        var N;
+        var I;
         let e = await r.tn.get({
             url: d.ANM.GUILD_JOIN_REQUESTS(t),
             query: {
@@ -51,7 +51,7 @@ let N = {
             rejectWithError: !1
           }),
           s = e.body.total,
-          c = (null != (N = e.body.guild_join_requests) ? N : []).map(E.j);
+          c = (null != (I = e.body.guild_join_requests) ? I : []).map(E.j);
         return i.Z.dispatch({
           type: "GUILD_JOIN_REQUESTS_FETCH_SUCCESS",
           status: n,
@@ -112,8 +112,8 @@ let N = {
       },
       rejectWithError: !1
     }).catch(e => (e && e.body && e.body.code === d.evJ.REQUEST_TO_JOIN_USER_INELIGIBLE && l.Z.show({
-      title: _.NW.string(_.t.DxJj4e),
-      body: _.NW.string(_.t.rSAOk5)
+      title: _.intl.string(_.t.DxJj4e),
+      body: _.intl.string(_.t.rSAOk5)
     }), Promise.reject(e)));
     i.Z.dispatch({
       type: "GUILD_JOIN_REQUEST_UPDATE",

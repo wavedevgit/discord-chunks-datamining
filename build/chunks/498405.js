@@ -101,8 +101,8 @@ function m(e) {
   }, [n]);
   let {
     focusPath: O
-  } = b, [I, S] = r.useState(!1), [T, N] = r.useState(!1), [{
-    onItemFocusMemoizer: A,
+  } = b, [I, S] = r.useState(!1), [T, A] = r.useState(!1), [{
+    onItemFocusMemoizer: N,
     onItemMouseEnterMemoizer: C
   }] = r.useState(() => ({
     onItemFocusMemoizer: new o.$o(e => () => {
@@ -112,7 +112,7 @@ function m(e) {
       })
     }),
     onItemMouseEnterMemoizer: new o.$o(e => () => {
-      N(!1), y({
+      A(!1), y({
         type: i.B.SET_FOCUS_PATH,
         path: e.split(d)
       })
@@ -126,14 +126,14 @@ function m(e) {
       case a.Us.NAVIGATE_DOWN:
       case a.Us.NAVIGATE_IN:
       case a.Us.NAVIGATE_OUT:
-        e.preventDefault(), e.stopPropagation(), N(!0), v({
+        e.preventDefault(), e.stopPropagation(), A(!0), v({
           type: n
         });
         return;
       case a.Us.SELECT_FOCUSED_ITEM:
         var r;
         if (e.repeat || h(e.target)) return;
-        if (e.preventDefault(), e.stopPropagation(), N(!1), v({
+        if (e.preventDefault(), e.stopPropagation(), A(!1), v({
             type: n
           }), null != c) return void c(O);
         let i = p(null != (r = e.target.ownerDocument) ? r : document, _(t, O));
@@ -182,10 +182,10 @@ function m(e) {
       role: a,
       id: (0, o.qR)(t, s),
       tabIndex: -1,
-      onFocus: i ? A.get(s) : () => {},
+      onFocus: i ? N.get(s) : () => {},
       onMouseEnter: i ? C.get(s) : () => {}
     })
-  }, [t, L, A, C]);
+  }, [t, L, N, C]);
   return r.useMemo(() => ({
     dispatch: v,
     getContainerProps: x,

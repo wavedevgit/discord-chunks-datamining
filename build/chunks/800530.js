@@ -1,6 +1,6 @@
 /** Chunk was on 80144 **/
 n.d(t, {
-  Cg: () => N,
+  Cg: () => m,
   Cp: () => M,
   Cs: () => b,
   EY: () => T,
@@ -17,7 +17,7 @@ n.d(t, {
   qS: () => h,
   s: () => C,
   sQ: () => u,
-  wo: () => m
+  wo: () => N
 });
 var o, i, s, r, l, a, c, _ = n(990547),
   d = n(981631);
@@ -32,9 +32,9 @@ function E(e, t, n) {
 }
 class u {}
 E(u, "TOS_LINK", "https://discord.com/terms"), E(u, "COMMUNITY_GUIDELINES", "https://discord.com/guidelines"), E(u, "APPEALS_LINK", "https://support.discord.com/hc/requests/new?ticket_form_id=360000029731"), E(u, "WARNING_SYSTEM_HELPCENTER_LINK", "https://support.discord.com/hc/articles/18210965981847"), E(u, "AGE_VERIFICATION_LINK", "https://support.discord.com/hc/requests/new?ticket_form_id=360000029731"), E(u, "SPAM_LINK", "https://support.discord.com/hc/requests/new?ticket_form_id=360000029731&tf_360055270593=__dc.ticket_form-tnsv1_appeals_other_questions__"), E(u, "LEARN_MORE_UU_APPEAL_LINK", "https://support.discord.com/hc/articles/360041820932");
-class N {}
-E(N, "CLASSIFICATION_ID", "classification_id"), E(N, "INCIDENT_TIMESTAMP", "incident_time");
-var m = ((o = {}).POLICY_VIOLATION_DETAIL = "policy_violation_detail", o.LEARN_MORE_LINK = "learn_more_link", o);
+class m {}
+E(m, "CLASSIFICATION_ID", "classification_id"), E(m, "INCIDENT_TIMESTAMP", "incident_time");
+var N = ((o = {}).POLICY_VIOLATION_DETAIL = "policy_violation_detail", o.LEARN_MORE_LINK = "learn_more_link", o);
 class I {}
 E(I, "ICON_TYPE", "icon_type"), E(I, "HEADER", "header"), E(I, "BODY", "body"), E(I, "CTAS", "ctas"), E(I, "TIMESTAMP", "timestamp"), E(I, "THEME", "theme"), E(I, "CLIENT_VERSION_MESSAGE", "client_version_message"), E(I, "LEARN_MORE_LINK", "learn_more_link"), E(I, "CLASSIFICATION_ID", "classification_id");
 var L = ((i = {})[i.ViewViolationDetail = 0] = "ViewViolationDetail", i[i.ViewViolationsDropdown = 1] = "ViewViolationsDropdown", i[i.ClickLetUsKnow = 2] = "ClickLetUsKnow", i[i.ClickAgeVerificationLink = 3] = "ClickAgeVerificationLink", i[i.ClickSpamWebformLink = 4] = "ClickSpamWebformLink", i[i.ClickLearnMoreLink = 5] = "ClickLearnMoreLink", i[i.ClickCommunityGuidelinesLink = 6] = "ClickCommunityGuidelinesLink", i[i.ClickWarningSystemHelpcenterLink = 7] = "ClickWarningSystemHelpcenterLink", i),

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  s = n(690221),
-  l = n(431516);
+  l = n(690221),
+  s = n(431516);
 
 function a(e) {
   return e
@@ -19,9 +19,9 @@ function o(e) {
   } = e, {
     isUserMFAEnabled: o,
     isModerationMFAEnabled: c
-  } = (0, l.N)(), d = i.useCallback(async () => {
+  } = (0, s.N)(), d = i.useCallback(async () => {
     await t(), null == n || n()
-  }, [t, n]), u = i.useCallback(e => (0, r.jsx)(s.Z, {
+  }, [t, n]), u = i.useCallback(e => (0, r.jsx)(l.Z, {
     onClick: d,
     children: e
   }), [d]);

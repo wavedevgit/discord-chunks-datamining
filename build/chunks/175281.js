@@ -54,9 +54,9 @@ function I(e) {
       return null
   }
 }
-let N = [g.Q2.MESSAGE, g.Q2.NAVIGATION, g.Q2.VOICE_AND_VIDEO, g.Q2.CHAT, g.Q2.MISCELLANEOUS];
+let P = [g.Q2.MESSAGE, g.Q2.NAVIGATION, g.Q2.VOICE_AND_VIDEO, g.Q2.CHAT, g.Q2.MISCELLANEOUS];
 
-function P(e) {
+function w(e) {
   let {
     showBackdrop: t
   } = e;
@@ -67,11 +67,11 @@ function P(e) {
   })
 }
 
-function w() {
+function N() {
   let e = i.useMemo(() => u()((0, g.Rv)()).groupBy(e => e.group).value(), []);
   return (0, r.jsx)("div", {
     className: S.keyboardShortcutList,
-    children: N.map(t => {
+    children: P.map(t => {
       let n = e[t],
         i = (0, g.UD)(t),
         l = (0, g.U6)(t);
@@ -138,13 +138,13 @@ class Z extends i.PureComponent {
         className: S.modalTitle,
         children: [(0, r.jsx)("div", {
           className: S.content,
-          children: j.NW.string(j.t["1BdUt7"])
+          children: j.intl.string(j.t["1BdUt7"])
         }), (0, r.jsx)(f.M2$, {
           shortcut: "mod+/"
         })]
       }), (0, r.jsx)("div", {
         className: S.modalSubtitle,
-        children: j.NW.string(j.t["2t19lZ"])
+        children: j.intl.string(j.t["2t19lZ"])
       }), (0, r.jsxs)("div", {
         className: S.ddrArrows,
         children: [(0, r.jsx)(T, {
@@ -172,7 +172,7 @@ class Z extends i.PureComponent {
         ref: this.scrollerRef,
         fade: !0,
         children: (0, r.jsx)(f.y5t, {
-          children: (0, r.jsx)(w, {})
+          children: (0, r.jsx)(N, {})
         })
       })]
     })
@@ -292,14 +292,14 @@ function A(e) {
     useReducedMotion: y.Z.useReducedMotion
   }));
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(P, {
+    children: [(0, r.jsx)(w, {
       showBackdrop: a
     }), (0, r.jsx)(f.Y0X, {
       className: o()(S.noBackground, {
         [S.noShadow]: l
       }),
       size: f.CgR.DYNAMIC,
-      "aria-label": j.NW.string(j.t.T9DA2N),
+      "aria-label": j.intl.string(j.t.T9DA2N),
       transitionState: t,
       children: (0, r.jsx)(p.W, {
         component: "div",

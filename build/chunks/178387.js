@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(793030),
-  s = n(442837),
-  l = n(100527),
+  l = n(442837),
+  s = n(100527),
   a = n(906732),
   o = n(496675),
   c = n(999382),
@@ -22,10 +22,10 @@ var i = n(793030),
 function x() {
   let {
     analyticsLocations: e
-  } = (0, a.ZP)(l.Z.GUILD_SETTINGS_BOOST_PERKS_PAGE), t = (0, s.e7)([c.Z], () => c.Z.getProps().guild, []), {
+  } = (0, a.ZP)(s.Z.GUILD_SETTINGS_BOOST_PERKS_PAGE), t = (0, l.e7)([c.Z], () => c.Z.getProps().guild, []), {
     isGuildAdmin: n,
     canManageGuild: x
-  } = (0, s.cj)([o.Z], () => ({
+  } = (0, l.cj)([o.Z], () => ({
     isGuildAdmin: null != t && o.Z.can(p.Plq.ADMINISTRATOR, t),
     canManageGuild: null != t && o.Z.can(p.Plq.MANAGE_GUILD, t)
   }));
@@ -36,7 +36,7 @@ function x() {
       children: [(0, r.jsx)(i.X6, {
         variant: "heading-lg/semibold",
         color: "header-primary",
-        children: h.NW.string(h.t.UKgg5O)
+        children: h.intl.string(h.t.UKgg5O)
       }), (0, r.jsx)(g.w, {
         canManageGuild: x,
         premiumProgressBarEnabled: t.premiumProgressBarEnabled

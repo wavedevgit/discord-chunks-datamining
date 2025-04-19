@@ -1,13 +1,13 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  r: () => a
+  r: () => l
 });
-var r = n(192379),
-  i = n(88658),
+var i = n(192379),
+  r = n(88658),
   s = n(695346);
 
-function a() {
+function l() {
   let e = s.xq.useSetting(),
-    t = r.useMemo(() => (0, i.bL)(e), [e]);
+    t = i.useMemo(() => (0, r.bL)(e), [e]);
   return t.mutualGuilds && !t.all
 }

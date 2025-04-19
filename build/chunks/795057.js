@@ -71,7 +71,7 @@ function g(e) {
     children: [(0, r.jsx)(i.X6q, {
       color: "header-primary",
       variant: "text-xs/semibold",
-      children: null == s ? u.NW.string(u.t["7Rdjmp"]) : u.NW.formatToPlainString(u.t.coKAb2, {
+      children: null == s ? u.intl.string(u.t["7Rdjmp"]) : u.intl.formatToPlainString(u.t.coKAb2, {
         rewardsDuration: s
       })
     }), (0, r.jsx)("ul", {

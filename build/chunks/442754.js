@@ -28,11 +28,11 @@ function p(e) {
   if (!n || e.isThread()) return null;
   if (e.isCategory()) return (0, r.jsx)(l.sNh, {
     id: "opt-into-category",
-    label: p ? d.NW.string(d.t["3zySTE"]) : d.NW.string(d.t["9mysCg"]),
+    label: p ? d.intl.string(d.t["3zySTE"]) : d.intl.string(d.t["9mysCg"]),
     action: () => O()
   });
-  let g = f ? d.NW.string(d.t.z7I3gY) : d.NW.string(d.t["N2c/Ul"]),
-    j = f ? d.NW.string(d.t.M5PWSU) : d.NW.string(d.t.RMpwZm);
+  let g = f ? d.intl.string(d.t.z7I3gY) : d.intl.string(d.t["N2c/Ul"]),
+    j = f ? d.intl.string(d.t.M5PWSU) : d.intl.string(d.t.RMpwZm);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.sNh, {
       id: "opt-in-favorite-channel",
@@ -44,11 +44,11 @@ function p(e) {
       }
     }), b ? (0, r.jsx)(l.sNh, {
       id: "opt-out-category",
-      label: d.NW.string(d.t.jNphKS),
+      label: d.intl.string(d.t.jNphKS),
       action: () => y()
     }) : (0, r.jsx)(l.sNh, {
       id: "opt-into-channel",
-      label: p ? d.NW.string(d.t["3zySTE"]) : d.NW.string(d.t["9mysCg"]),
+      label: p ? d.intl.string(d.t["3zySTE"]) : d.intl.string(d.t["9mysCg"]),
       action: () => O()
     })]
   })

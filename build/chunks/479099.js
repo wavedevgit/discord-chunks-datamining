@@ -66,7 +66,7 @@ function v(e) {
     name: I,
     emojiId: M,
     emojiName: P
-  } = t, E = null != T, [S, A] = l.useState(!1), w = (0, c.e7)([g.ZP], () => null != M ? g.ZP.getUsableCustomEmojiById(M) : null), N = E || null != v, D = (!E || !S) && (null != M || null != P), k = 0 === a, z = l.useRef(null), L = (0, c.e7)([p.Z], () => p.Z.keyboardModeEnabled), R = e => {
+  } = t, E = null != T, [S, A] = l.useState(!1), w = (0, c.e7)([g.ZP], () => null != M ? g.ZP.getUsableCustomEmojiById(M) : null), D = E || null != v, k = (!E || !S) && (null != M || null != P), z = 0 === a, L = l.useRef(null), R = (0, c.e7)([p.Z], () => p.Z.keyboardModeEnabled), N = e => {
     let a = _.Sb.getSetting();
     f.wS && a && (0, u.jW)(e, async () => {
       let {
@@ -77,9 +77,9 @@ function v(e) {
       }))
     })
   }, Z = (0, i.jsxs)(i.Fragment, {
-    children: [D ? (0, i.jsx)(m.Z, {
+    children: [k ? (0, i.jsx)(m.Z, {
       className: o()(b.emoji, {
-        [b.small]: k
+        [b.small]: z
       }),
       emojiId: M,
       emojiName: P,
@@ -93,7 +93,7 @@ function v(e) {
         className: b.close
       })
     }), (0, i.jsx)(d.Text, {
-      variant: k ? "text-xs/semibold" : "text-sm/semibold",
+      variant: z ? "text-xs/semibold" : "text-sm/semibold",
       lineClamp: 1,
       color: "currentColor",
       children: I
@@ -102,23 +102,23 @@ function v(e) {
     key: t.id,
     className: o()(b.pill, {
       [b.disabled]: r,
-      [b.clickable]: N,
-      [b.small]: k,
+      [b.clickable]: D,
+      [b.small]: z,
       [b.selected]: O
     }, x),
     onClick: e => {
-      null == v || v(e), null == T || T(t), L || null == z.current || z.current.blur()
+      null == v || v(e), null == T || T(t), R || null == L.current || L.current.blur()
     },
-    onContextMenu: e => R(e),
+    onContextMenu: e => N(e),
     onMouseEnter: () => E && A(!0),
     onMouseLeave: () => E && A(!1)
   }, B = (0, s.JA)("forum-tag-".concat(t.id));
-  return N ? (0, i.jsx)(d.P3F, C(y(C(y({}, B), {
-    innerRef: z,
+  return D ? (0, i.jsx)(d.P3F, C(y(C(y({}, B), {
+    innerRef: L,
     focusProps: {
-      ringTarget: z
+      ringTarget: L
     },
-    "aria-label": null != j ? j : h.NW.formatToPlainString(h.t.iyRTLi, {
+    "aria-label": null != j ? j : h.intl.formatToPlainString(h.t.iyRTLi, {
       tagName: I
     }),
     role: "button",
@@ -137,7 +137,7 @@ function T(e) {
     size: a = 1
   } = e, l = 0 === a;
   return (0, i.jsx)(d.ua7, {
-    "aria-label": h.NW.string(h.t["P/y+sr"]),
+    "aria-label": h.intl.string(h.t["P/y+sr"]),
     text: (0, i.jsx)(i.Fragment, {
       children: t.map(e => (0, i.jsx)(v, {
         tag: e,

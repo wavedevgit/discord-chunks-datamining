@@ -1,6 +1,6 @@
 /** Chunk was on 61366 **/
 n.d(t, {
-  Z: () => c
+  Z: () => l
 });
 var o = n(200651);
 n(192379);
@@ -9,12 +9,12 @@ var r = n(159277),
   s = n(981631),
   a = n(927923);
 
-function c(e) {
+function l(e) {
   let {
     authToken: t,
     onContinue: n,
-    onError: c,
-    onClose: l
+    onError: l,
+    onClose: c
   } = e;
   return (0, o.jsx)(i.h, {
     platformType: s.ABu.XBOX,
@@ -22,7 +22,7 @@ function c(e) {
     scopes: a.tA,
     authToken: t,
     onContinue: n,
-    onError: c,
-    onClose: l
+    onError: l,
+    onClose: c
   })
 }

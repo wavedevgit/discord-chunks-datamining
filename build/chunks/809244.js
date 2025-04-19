@@ -9,10 +9,10 @@ var r = n(687516),
 function o(e, t, n) {
   let o = (0, r.Cf)(n),
     a = i.ZP.getName(e.getGuildId(), e.id, t);
-  return null == n ? a : (null == o ? void 0 : o.name) != null ? l.NW.formatToPlainString(l.t["9jpVOT"], {
+  return null == n ? a : (null == o ? void 0 : o.name) != null ? l.intl.formatToPlainString(l.t["9jpVOT"], {
     applicationName: null == o ? void 0 : o.name,
     username: a
-  }) : l.NW.formatToPlainString(l.t["+h0Z5+"], {
+  }) : l.intl.formatToPlainString(l.t["+h0Z5+"], {
     username: a
   })
 }

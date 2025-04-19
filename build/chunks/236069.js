@@ -19,7 +19,7 @@ function s(e) {
     analyticsLocations: n,
     analyticsLocation: s,
     openWithoutBackstack: !0
-  }), E = u ? o.NW.string(o.t["6ndMcn"]) : o.NW.string(o.t["0eiu6O"]), d = u ? o.NW.string(o.t.S09nw8) : o.NW.string(o.t.tEttXV);
+  }), E = u ? o.intl.string(o.t["6ndMcn"]) : o.intl.string(o.t["0eiu6O"]), d = u ? o.intl.string(o.t.S09nw8) : o.intl.string(o.t.tEttXV);
   return (0, r.jsxs)(i.qXd, {
     color: i.DM8.CUSTOM,
     className: a.quarantineNotice,

@@ -93,10 +93,10 @@ class b extends(r = l.PureComponent) {
       className: f.tutorialMessages,
       children: [(0, i.jsx)("div", {
         className: f.searchMessage,
-        children: p.NW.string(p.t.Mp0IGB)
+        children: p.intl.string(p.t.Mp0IGB)
       }), (0, i.jsx)("div", {
         className: f.selectMessage,
-        children: p.NW.string(p.t["3CbpwM"])
+        children: p.intl.string(p.t["3CbpwM"])
       })]
     })
   }

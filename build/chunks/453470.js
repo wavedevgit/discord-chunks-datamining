@@ -29,9 +29,9 @@ function v(e) {
     senderId: j
   } = e, O = (0, _.E4)(), E = i.useCallback(() => {
     (0, p.T)(t, [v])
-  }, [t, v]), N = (0, b.t)({
+  }, [t, v]), I = (0, b.t)({
     location: C.zr
-  }), I = e => {
+  }), P = e => {
     a.Z.updateChannelOverrideSettings(null, t, {
       muted: !0
     }, g.ZB.Muted), c.Z.showMuteSuccessToast(j, t), (0, f.qc)({
@@ -41,7 +41,7 @@ function v(e) {
       warningType: h.pj.LIKELY_ATO,
       cta: e
     }), E()
-  }, P = () => {
+  }, S = () => {
     (0, o.ZDy)(async () => {
       let {
         default: e
@@ -57,7 +57,7 @@ function v(e) {
           channelId: t,
           warningId: v,
           senderId: j,
-          description: x.NW.string(x.t["/uid3t"]),
+          description: x.intl.string(x.t["/uid3t"]),
           safetyTipRows: O.map((e, t) => (0, r.jsx)(u.q, {
             listType: "numbered",
             index: t,
@@ -65,11 +65,11 @@ function v(e) {
             description: e.description
           }, t)),
           actionRows: [(0, r.jsx)(d.ZP, {
-            title: x.NW.string(x.t.ftIK2N),
-            description: x.NW.string(x.t.w2ve0t),
-            buttonText: x.NW.string(x.t.ftIK2N),
+            title: x.intl.string(x.t.ftIK2N),
+            description: x.intl.string(x.t.w2ve0t),
+            buttonText: x.intl.string(x.t.ftIK2N),
             onButtonPress: () => {
-              I(f.NM.USER_MODAL_MUTE), l()
+              P(f.NM.USER_MODAL_MUTE), l()
             }
           }, "likely-ato-mute")],
           learnMore: (0, r.jsx)(o.P3F, {
@@ -83,7 +83,7 @@ function v(e) {
             children: (0, r.jsx)(o.X6q, {
               variant: "heading-sm/medium",
               color: "text-link",
-              children: x.NW.format(x.t.UkH129, {
+              children: x.intl.format(x.t.UkH129, {
                 learnMoreLink: _.D8
               })
             })
@@ -93,7 +93,7 @@ function v(e) {
     })
   };
   return (i.useEffect(() => {
-    N && ((0, f.MC)(y.rMx.SAFETY_WARNING_VIEWED, {
+    I && ((0, f.MC)(y.rMx.SAFETY_WARNING_VIEWED, {
       channelId: t,
       warningId: v,
       senderId: j,
@@ -101,19 +101,19 @@ function v(e) {
     }), s.Z.increment({
       name: l.V.SAFETY_WARNING_VIEW
     }))
-  }, [t, v, j, N]), N) ? (0, r.jsx)(m.Q, {
+  }, [t, v, j, I]), I) ? (0, r.jsx)(m.Q, {
     channelId: t,
     warningId: v,
     senderId: j,
     warningType: h.pj.LIKELY_ATO,
-    header: x.NW.string(x.t.R8UsiI),
-    description: x.NW.string(x.t.lI8nQk),
+    header: x.intl.string(x.t.R8UsiI),
+    description: x.intl.string(x.t.lI8nQk),
     onDismiss: E,
     buttons: [{
-      text: x.NW.string(x.t.tC1pvL),
+      text: x.intl.string(x.t.tC1pvL),
       color: o.zxk.Colors.BRAND,
       onclick: () => {
-        P(), (0, f.qc)({
+        S(), (0, f.qc)({
           channelId: t,
           warningId: v,
           senderId: j,
@@ -122,9 +122,9 @@ function v(e) {
         })
       }
     }, {
-      text: x.NW.string(x.t.ftIK2N),
+      text: x.intl.string(x.t.ftIK2N),
       color: o.zxk.Colors.PRIMARY,
-      onclick: () => I(f.NM.USER_BANNER_MUTE)
+      onclick: () => P(f.NM.USER_BANNER_MUTE)
     }]
   }) : null
 }

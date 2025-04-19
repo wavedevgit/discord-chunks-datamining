@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(544891),
   i = n(570140),
-  a = n(881052),
-  l = n(981631);
+  l = n(881052),
+  a = n(981631);
 
 function o(e) {
   i.Z.dispatch({
@@ -22,7 +22,7 @@ async function s(e) {
   });
   try {
     let t = (await r.tn.get({
-      url: l.ANM.MEDIA_POST_RESHARE_GET_PREVIEW(e),
+      url: a.ANM.MEDIA_POST_RESHARE_GET_PREVIEW(e),
       rejectWithError: !0
     })).body;
     i.Z.dispatch({
@@ -40,13 +40,13 @@ async function s(e) {
 async function c(e) {
   try {
     return (await r.tn.post({
-      url: l.ANM.UNFURL_EMBED_URLS,
+      url: a.ANM.UNFURL_EMBED_URLS,
       body: {
         urls: e
       },
       rejectWithError: !1
     })).body
   } catch (e) {
-    throw new a.Hx(e)
+    throw new l.Hx(e)
   }
 }

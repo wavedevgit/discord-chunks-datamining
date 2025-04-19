@@ -56,11 +56,11 @@ function _(e) {
   }, [t, d]), p = i.useMemo(() => {
     switch (null == t ? void 0 : t.type) {
       case a.Z.AVATAR_DECORATION:
-        return c.NW.format(c.t["aFR/EB"], {
+        return c.intl.format(c.t["aFR/EB"], {
           onClick: _
         });
       case a.Z.PROFILE_EFFECT:
-        return c.NW.format(c.t.eWNOND, {
+        return c.intl.format(c.t.eWNOND, {
           onClick: _
         })
     }

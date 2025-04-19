@@ -16,10 +16,10 @@ var t, l = i(200651),
   m = i(496675),
   x = i(725436),
   g = i(274311),
-  N = i(854698),
-  j = i(285784),
-  p = i(95291),
-  C = i(742593),
+  j = i(854698),
+  p = i(285784),
+  C = i(95291),
+  N = i(742593),
   y = i(810561),
   f = i(187443),
   k = i(131154),
@@ -69,7 +69,7 @@ function O(e) {
     canManageAllEvents: t
   } = (0, v.XJ)(n), r = (0, c.e7)([m.Z], () => !n.isGuildVocal() || m.Z.can(E.Plq.CONNECT, n), [n]), h = a.useMemo(() => (0, u.Z)(n), [n]), x = (0, d.KS)(n);
   return (0, l.jsx)(o.ua7, {
-    text: w.NW.string(w.t.nHjY9P),
+    text: w.intl.string(w.t.nHjY9P),
     shouldShow: !r && null != i,
     children: e => (0, l.jsxs)(o.P3F, S(Z({}, e), {
       className: s()(I.inline, I.channelContainer, {
@@ -78,7 +78,7 @@ function O(e) {
       }),
       onClick: i,
       children: [(0, l.jsx)(o.ua7, {
-        text: w.NW.string(w.t["48WXaW"]),
+        text: w.intl.string(w.t["48WXaW"]),
         shouldShow: t && h && r && null != i,
         children: e => null != x ? (0, l.jsx)(x, S(Z({}, e), {
           color: "currentColor",
@@ -164,10 +164,10 @@ function P(e) {
     onContextMenu: G,
     onJoinClick: L,
     onJoinGuildClick: X,
-    onGoToGuildClick: W,
-    onRsvpClick: R,
-    onStartClick: M,
-    onInviteClick: z,
+    onGoToGuildClick: R,
+    onRsvpClick: M,
+    onStartClick: z,
+    onInviteClick: W,
     onEndClick: U,
     onClick: D,
     isNew: J,
@@ -177,8 +177,8 @@ function P(e) {
     recurrenceId: B
   } = e, K = (0, g.Q)(t, c), Q = c === b.WX.EXTERNAL, Y = Q ? e => e.stopPropagation() : void 0, F = [];
   if (null != q && null != event) {
-    let e = (0, N.Ho)(q);
-    F = (0, N.PJ)(4, e, new Date(V.scheduled_start_time))
+    let e = (0, j.Ho)(q);
+    F = (0, j.PJ)(4, e, new Date(V.scheduled_start_time))
   }
   let $ = F.length > 0;
   return (0, l.jsxs)(o.kL8, {
@@ -193,9 +193,9 @@ function P(e) {
       className: s()(I.padding, {
         [I.isRecurring]: $
       }),
-      children: [0 === d && (0, l.jsx)(p.Z, {
+      children: [0 === d && (0, l.jsx)(C.Z, {
         source: h
-      }), (0, l.jsx)(C.ZP, {
+      }), (0, l.jsx)(N.ZP, {
         creator: a,
         name: r,
         description: u,
@@ -229,14 +229,14 @@ function P(e) {
           isUserLurking: m,
           isMember: E,
           rsvped: T,
-          onRsvpClick: R,
+          onRsvpClick: M,
           onJoinGuildClick: X,
-          onGoToGuildClick: W,
+          onGoToGuildClick: R,
           guildName: null == i ? void 0 : i.name,
           canInvite: O,
           isChannelPublic: K,
-          onInviteClick: z
-        }) : (0, l.jsx)(j.ZP, {
+          onInviteClick: W
+        }) : (0, l.jsx)(p.ZP, {
           entityType: c,
           isJoined: x,
           isActive: v,
@@ -246,9 +246,9 @@ function P(e) {
           isChannelPublic: K,
           onContextMenu: G,
           onJoinClick: L,
-          onRsvpClick: R,
-          onStartClick: M,
-          onInviteClick: z,
+          onRsvpClick: M,
+          onStartClick: z,
+          onInviteClick: W,
           onEndClick: U
         })]
       }), $ && (0, l.jsx)("hr", {

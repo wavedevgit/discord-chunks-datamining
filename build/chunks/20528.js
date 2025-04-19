@@ -46,8 +46,8 @@ function S(e) {
   return e
 }
 let T = (0, r.debounce)(o.xc, 1e3),
-  N = new i.V7,
   A = new i.V7,
+  N = new i.V7,
   C = 3 * b.Z.Millis.MINUTE,
   R = 5 * b.Z.Millis.SECOND,
   P = 12 * b.Z.Millis.SECOND,
@@ -71,7 +71,7 @@ function L(e, t) {
 }
 
 function x(e, t) {
-  g.Z.getAllActiveStreamKeys().includes(e) || A.start(t ? P : R, () => {
+  g.Z.getAllActiveStreamKeys().includes(e) || N.start(t ? P : R, () => {
     a.Z.dispatch({
       type: "STREAM_TIMED_OUT",
       streamKey: e
@@ -108,7 +108,7 @@ class M extends s.Z {
       let {
         streamKey: n
       } = e;
-      A.stop();
+      N.stop();
       let {
         ownerId: r,
         guildId: i
@@ -117,17 +117,17 @@ class M extends s.Z {
       let a = p.Z.getMemberCount(i);
       null == a || a < 2 || a > v.tB || u.eo.getSetting() && T(n)
     }), I(this, "handleStreamUpdate", () => {
-      A.stop()
+      N.stop()
     }), I(this, "handleStreamDelete", e => {
       let {
         reason: t,
         streamKey: n
       } = e;
-      A.stop(), t === O.si2.STREAM_FULL && ((0, l.kr)(S({
+      N.stop(), t === O.si2.STREAM_FULL && ((0, l.kr)(S({
         type: l.u.STREAM_FULL
       }, (0, c.rT)(n))), (0, o.aP)(n, !1), this.platformShowStreamFull())
     }), I(this, "handleStreamClose", () => {
-      N.stop(), A.stop()
+      A.stop(), N.stop()
     }), I(this, "handleVoiceChannelSelect", e => {
       let {
         channelId: t
@@ -155,8 +155,8 @@ class M extends s.Z {
         if (this.platformHandleVoiceStateUpdate(e), t !== f.default.getId() && null != n) {
           if (i && D(n, t)) return;
           let e = d.Z.getActiveStreamForUser(t, r);
-          if (null != e && e.channelId === n && (i || e.state === O.jm8.ENDED || N.start(C, () => (0, o.aP)((0, y.V9)(e), !1)), i && e.state === O.jm8.ENDED)) {
-            N.stop();
+          if (null != e && e.channelId === n && (i || e.state === O.jm8.ENDED || A.start(C, () => (0, o.aP)((0, y.V9)(e), !1)), i && e.state === O.jm8.ENDED)) {
+            A.stop();
             let e = d.Z.getStreamForUser(t, r);
             if (null == e) return;
             (0, o.rn)(e)

@@ -22,19 +22,19 @@ let l = e => {
         className: s.awaitingWrapper,
         children: [(0, r.jsx)(i.X6q, {
           variant: "heading-xl/bold",
-          children: o.NW.string(o.t.Q03WWV)
+          children: o.intl.string(o.t.Q03WWV)
         }), (0, r.jsxs)("p", {
           children: [(0, r.jsx)(i.Text, {
             variant: "text-md/normal",
-            children: o.NW.string(o.t.BxPxhI)
+            children: o.intl.string(o.t.BxPxhI)
           }), (0, r.jsx)("br", {}), (0, r.jsx)(i.Text, {
             variant: "text-md/normal",
-            children: o.NW.string(o.t.Y3fdOj)
+            children: o.intl.string(o.t.Y3fdOj)
           }), (0, r.jsx)("br", {}), (0, r.jsxs)(i.Text, {
             variant: "text-md/normal",
-            children: [o.NW.string(o.t.Paa4v7), "\xa0", n ? o.NW.string(o.t.StGVvL) : (0, r.jsx)(i.eee, {
+            children: [o.intl.string(o.t.Paa4v7), "\xa0", n ? o.intl.string(o.t.StGVvL) : (0, r.jsx)(i.eee, {
               onClick: a,
-              children: o.NW.string(o.t.Ex7sk5)
+              children: o.intl.string(o.t.Ex7sk5)
             })]
           })]
         })]
@@ -49,7 +49,7 @@ let l = e => {
         "data-testid": "continue",
         color: i.zxk.Colors.BRAND,
         disabled: !0,
-        children: o.NW.string(o.t.g8vPz8)
+        children: o.intl.string(o.t.g8vPz8)
       })
     })
   })

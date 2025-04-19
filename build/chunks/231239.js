@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => o
 }), n(35282);
 var l = n(990547),
-  r = n(283693),
-  i = n(570140),
+  i = n(283693),
+  r = n(570140),
   s = n(573261),
   a = n(981631);
 let o = {
@@ -20,7 +20,7 @@ let o = {
         var t;
         let n = !1,
           l = null == e || null == (t = e.body) ? void 0 : t.email_domain;
-        return null != l && (n = -1 !== l.split(".").indexOf("edu")), (0, r.iG)({
+        return null != l && (n = -1 !== l.split(".").indexOf("edu")), (0, i.iG)({
           is_edu_email: n
         })
       }
@@ -40,7 +40,7 @@ let o = {
       properties: e => {
         var t;
         let n = null == e || null == (t = e.body) ? void 0 : t.has_matching_guild;
-        return (0, r.iG)({
+        return (0, i.iG)({
           has_matching_guild: n
         })
       }
@@ -60,12 +60,12 @@ let o = {
         },
         rejectWithError: !1
       })).body.guild) ? void 0 : t.id;
-      i.Z.dispatch({
+      r.Z.dispatch({
         type: "HUB_VERIFY_EMAIL_SUCCESS",
         guildId: n
       })
     } catch (e) {
-      i.Z.dispatch({
+      r.Z.dispatch({
         type: "HUB_VERIFY_EMAIL_FAILURE",
         errors: e.body
       })
@@ -73,7 +73,7 @@ let o = {
   },
   async verifyCode(e, t, n) {
     if (null != e) try {
-      var r;
+      var i;
       let o = await s.Z.post({
           url: a.ANM.HUB_EMAIL_VERIFY_CODE,
           body: {
@@ -86,13 +86,13 @@ let o = {
           },
           rejectWithError: !1
         }),
-        c = null == (r = o.body.guild) ? void 0 : r.id;
-      return i.Z.dispatch({
+        c = null == (i = o.body.guild) ? void 0 : i.id;
+      return r.Z.dispatch({
         type: "HUB_VERIFY_EMAIL_SUCCESS",
         guildId: c
       }), o.body
     } catch (e) {
-      throw i.Z.dispatch({
+      throw r.Z.dispatch({
         type: "HUB_VERIFY_EMAIL_FAILURE",
         errors: e.body
       }), e

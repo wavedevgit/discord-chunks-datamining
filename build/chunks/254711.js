@@ -27,8 +27,8 @@ var r = n(512722),
   I = n(51144),
   S = n(895924),
   T = n(689079),
-  N = n(981631),
-  A = n(590433),
+  A = n(981631),
+  N = n(590433),
   C = n(388032);
 
 function R(e, t, n) {
@@ -79,14 +79,14 @@ let L = n(227419).Z,
       id: T.bi.BUILT_IN,
       type: S.Qi.BUILT_IN,
       get name() {
-        return C.NW.string(C.t.fI5MTU)
+        return C.intl.string(C.t.fI5MTU)
       }
     },
     [T.bi.FRECENCY]: {
       id: T.bi.FRECENCY,
       type: S.Qi.BUILT_IN,
       get name() {
-        return C.NW.string(C.t["+cGVV1"])
+        return C.intl.string(C.t["+cGVV1"])
       }
     }
   },
@@ -98,20 +98,20 @@ let L = n(227419).Z,
     inputType: S.iw.BUILT_IN_TEXT,
     applicationId: T.bi.BUILT_IN,
     get untranslatedDescription() {
-      return C.NW.string(C.t.j5xUSU)
+      return C.intl.string(C.t.j5xUSU)
     },
     get displayDescription() {
-      return C.NW.string(C.t.j5xUSU)
+      return C.intl.string(C.t.j5xUSU)
     },
     options: [{
       name: "message",
       displayName: "message",
       type: f.jw.STRING,
       get description() {
-        return C.NW.string(C.t.JewOra)
+        return C.intl.string(C.t.JewOra)
       },
       get displayDescription() {
-        return C.NW.string(C.t.JewOra)
+        return C.intl.string(C.t.JewOra)
       }
     }],
     execute: e => {
@@ -129,20 +129,20 @@ let L = n(227419).Z,
     inputType: S.iw.BUILT_IN_TEXT,
     applicationId: T.bi.BUILT_IN,
     get untranslatedDescription() {
-      return C.NW.string(C.t.nrQRcX)
+      return C.intl.string(C.t.nrQRcX)
     },
     get displayDescription() {
-      return C.NW.string(C.t.nrQRcX)
+      return C.intl.string(C.t.nrQRcX)
     },
     options: [{
       name: "message",
       displayName: "message",
       type: f.jw.STRING,
       get description() {
-        return C.NW.string(C.t.EI80t7)
+        return C.intl.string(C.t.EI80t7)
       },
       get displayDescription() {
-        return C.NW.string(C.t.EI80t7)
+        return C.intl.string(C.t.EI80t7)
       }
     }],
     execute: e => {
@@ -160,20 +160,20 @@ let L = n(227419).Z,
     inputType: S.iw.BUILT_IN_TEXT,
     applicationId: T.bi.BUILT_IN,
     get untranslatedDescription() {
-      return C.NW.string(C.t.pnnn8f)
+      return C.intl.string(C.t.pnnn8f)
     },
     get displayDescription() {
-      return C.NW.string(C.t.pnnn8f)
+      return C.intl.string(C.t.pnnn8f)
     },
     options: [{
       name: "message",
       displayName: "message",
       type: f.jw.STRING,
       get description() {
-        return C.NW.string(C.t.ETs6go)
+        return C.intl.string(C.t.ETs6go)
       },
       get displayDescription() {
-        return C.NW.string(C.t.ETs6go)
+        return C.intl.string(C.t.ETs6go)
       }
     }],
     execute: e => {
@@ -191,20 +191,20 @@ let L = n(227419).Z,
     inputType: S.iw.BUILT_IN_TEXT,
     applicationId: T.bi.BUILT_IN,
     get untranslatedDescription() {
-      return C.NW.string(C.t.jZcIiY)
+      return C.intl.string(C.t.jZcIiY)
     },
     get displayDescription() {
-      return C.NW.string(C.t.jZcIiY)
+      return C.intl.string(C.t.jZcIiY)
     },
     options: [{
       name: "message",
       displayName: "message",
       type: f.jw.STRING,
       get description() {
-        return C.NW.string(C.t["k+sw9v"])
+        return C.intl.string(C.t["k+sw9v"])
       },
       get displayDescription() {
-        return C.NW.string(C.t["k+sw9v"])
+        return C.intl.string(C.t["k+sw9v"])
       },
       required: !0
     }],
@@ -212,7 +212,7 @@ let L = n(227419).Z,
       let {
         channel: t
       } = e;
-      return null != t && !t.isPrivate() && E.OW.getSetting() && y.Z.can(N.Plq.SEND_TTS_MESSAGES, t)
+      return null != t && !t.isPrivate() && E.OW.getSetting() && y.Z.can(A.Plq.SEND_TTS_MESSAGES, t)
     },
     execute: e => {
       var t;
@@ -229,20 +229,20 @@ let L = n(227419).Z,
     inputType: S.iw.BUILT_IN_TEXT,
     applicationId: T.bi.BUILT_IN,
     get untranslatedDescription() {
-      return C.NW.string(C.t.UGO8fX)
+      return C.intl.string(C.t.UGO8fX)
     },
     get displayDescription() {
-      return C.NW.string(C.t.UGO8fX)
+      return C.intl.string(C.t.UGO8fX)
     },
     options: [{
       name: "message",
       displayName: "message",
       type: f.jw.STRING,
       get description() {
-        return C.NW.string(C.t.RWTgNT)
+        return C.intl.string(C.t.RWTgNT)
       },
       get displayDescription() {
-        return C.NW.string(C.t.RWTgNT)
+        return C.intl.string(C.t.RWTgNT)
       },
       required: !0
     }],
@@ -261,20 +261,20 @@ let L = n(227419).Z,
     inputType: S.iw.BUILT_IN_TEXT,
     applicationId: T.bi.BUILT_IN,
     get untranslatedDescription() {
-      return C.NW.string(C.t.v0eDdX)
+      return C.intl.string(C.t.v0eDdX)
     },
     get displayDescription() {
-      return C.NW.string(C.t.v0eDdX)
+      return C.intl.string(C.t.v0eDdX)
     },
     options: [{
       name: "message",
       displayName: "message",
       type: f.jw.STRING,
       get description() {
-        return C.NW.string(C.t.D13pbW)
+        return C.intl.string(C.t.D13pbW)
       },
       get displayDescription() {
-        return C.NW.string(C.t.D13pbW)
+        return C.intl.string(C.t.D13pbW)
       },
       required: !0
     }],
@@ -282,7 +282,7 @@ let L = n(227419).Z,
       var t;
       let n = null != (t = x(e, "message")) ? t : "";
       return {
-        content: (0, N.XmY)(n).trim()
+        content: (0, A.XmY)(n).trim()
       }
     }
   }, {
@@ -293,27 +293,27 @@ let L = n(227419).Z,
     inputType: S.iw.BUILT_IN,
     applicationId: T.bi.BUILT_IN,
     get untranslatedDescription() {
-      return C.NW.string(C.t.jiHfS0)
+      return C.intl.string(C.t.jiHfS0)
     },
     get displayDescription() {
-      return C.NW.string(C.t.jiHfS0)
+      return C.intl.string(C.t.jiHfS0)
     },
     options: [{
       name: "new_nick",
       displayName: "new_nick",
       type: f.jw.STRING,
       get description() {
-        return C.NW.string(C.t.WTSzVl)
+        return C.intl.string(C.t.WTSzVl)
       },
       get displayDescription() {
-        return C.NW.string(C.t.WTSzVl)
+        return C.intl.string(C.t.WTSzVl)
       }
     }],
     predicate: e => {
       let {
         channel: t
       } = e;
-      return null != t && !t.isPrivate() && (y.Z.can(N.Plq.CHANGE_NICKNAME, t) || y.Z.can(N.Plq.MANAGE_NICKNAMES, t))
+      return null != t && !t.isPrivate() && (y.Z.can(A.Plq.CHANGE_NICKNAME, t) || y.Z.can(A.Plq.MANAGE_NICKNAMES, t))
     },
     execute: (e, t) => {
       var n;
@@ -323,7 +323,7 @@ let L = n(227419).Z,
       } = t;
       if (null == r || null == i) return;
       let a = null != (n = x(e, "new_nick")) ? n : "";
-      l.Z.changeNickname(r.id, i.id, N.ME, a || "")
+      l.Z.changeNickname(r.id, i.id, A.ME, a || "")
     }
   }, {
     id: "-10",
@@ -333,20 +333,20 @@ let L = n(227419).Z,
     inputType: S.iw.BUILT_IN,
     applicationId: T.bi.BUILT_IN,
     get untranslatedDescription() {
-      return C.NW.string(C.t.t6ZAS0)
+      return C.intl.string(C.t.t6ZAS0)
     },
     get displayDescription() {
-      return C.NW.string(C.t.t6ZAS0)
+      return C.intl.string(C.t.t6ZAS0)
     },
     options: [{
       name: "name",
       displayName: "name",
       type: f.jw.STRING,
       get description() {
-        return C.NW.string(C.t.TffOfX)
+        return C.intl.string(C.t.TffOfX)
       },
       get displayDescription() {
-        return C.NW.string(C.t.TffOfX)
+        return C.intl.string(C.t.TffOfX)
       },
       required: !0
     }, {
@@ -354,10 +354,10 @@ let L = n(227419).Z,
       displayName: "message",
       type: f.jw.STRING,
       get description() {
-        return C.NW.string(C.t.QXfSfX)
+        return C.intl.string(C.t.QXfSfX)
       },
       get displayDescription() {
-        return C.NW.string(C.t.QXfSfX)
+        return C.intl.string(C.t.QXfSfX)
       },
       required: !0
     }],
@@ -382,20 +382,20 @@ let L = n(227419).Z,
     inputType: S.iw.BUILT_IN,
     applicationId: T.bi.BUILT_IN,
     get untranslatedDescription() {
-      return C.NW.string(C.t["03N0UF"])
+      return C.intl.string(C.t["03N0UF"])
     },
     get displayDescription() {
-      return C.NW.string(C.t["03N0UF"])
+      return C.intl.string(C.t["03N0UF"])
     },
     options: [{
       name: "user",
       displayName: "user",
       type: f.jw.USER,
       get description() {
-        return C.NW.string(C.t.gF8IpK)
+        return C.intl.string(C.t.gF8IpK)
       },
       get displayDescription() {
-        return C.NW.string(C.t.gF8IpK)
+        return C.intl.string(C.t.gF8IpK)
       },
       required: !0
     }, {
@@ -403,10 +403,10 @@ let L = n(227419).Z,
       displayName: "reason",
       type: f.jw.STRING,
       get description() {
-        return C.NW.string(C.t.QWldgo)
+        return C.intl.string(C.t.QWldgo)
       },
       get displayDescription() {
-        return C.NW.string(C.t.QWldgo)
+        return C.intl.string(C.t.QWldgo)
       },
       required: !1
     }],
@@ -414,7 +414,7 @@ let L = n(227419).Z,
       let {
         guild: t
       } = e;
-      return y.Z.can(N.Plq.KICK_MEMBERS, t)
+      return y.Z.can(A.Plq.KICK_MEMBERS, t)
     },
     execute: (e, t) => {
       var n;
@@ -424,16 +424,16 @@ let L = n(227419).Z,
       } = t;
       if (null == r || null == i) return;
       let a = null != (n = x(e, "user")) ? n : "";
-      if (!y.Z.canManageUser(N.Plq.KICK_MEMBERS, a, r)) return void d.Z.sendBotMessage(i.id, C.NW.string(C.t["6RIwPD"]));
+      if (!y.Z.canManageUser(A.Plq.KICK_MEMBERS, a, r)) return void d.Z.sendBotMessage(i.id, C.intl.string(C.t["6RIwPD"]));
       (async () => {
         var t;
         let n = v.default.getUser(a);
         if (null == n) throw Error();
-        await u.Z.kickUser(r.id, a, null != (t = x(e, "reason")) ? t : ""), d.Z.sendBotMessage(i.id, C.NW.formatToPlainString(C.t["9wzHDQ"], {
+        await u.Z.kickUser(r.id, a, null != (t = x(e, "reason")) ? t : ""), d.Z.sendBotMessage(i.id, C.intl.formatToPlainString(C.t["9wzHDQ"], {
           user: I.ZP.getUserTag(n)
         }))
       })().catch(() => {
-        d.Z.sendBotMessage(i.id, C.NW.string(C.t.l0gNlp))
+        d.Z.sendBotMessage(i.id, C.intl.string(C.t.l0gNlp))
       })
     }
   }, {
@@ -444,20 +444,20 @@ let L = n(227419).Z,
     inputType: S.iw.BUILT_IN,
     applicationId: T.bi.BUILT_IN,
     get untranslatedDescription() {
-      return C.NW.string(C.t.HWuskp)
+      return C.intl.string(C.t.HWuskp)
     },
     get displayDescription() {
-      return C.NW.string(C.t.HWuskp)
+      return C.intl.string(C.t.HWuskp)
     },
     options: [{
       name: "user",
       displayName: "user",
       type: f.jw.USER,
       get description() {
-        return C.NW.string(C.t.z3XPjo)
+        return C.intl.string(C.t.z3XPjo)
       },
       get displayDescription() {
-        return C.NW.string(C.t.z3XPjo)
+        return C.intl.string(C.t.z3XPjo)
       },
       required: !0
     }, {
@@ -465,40 +465,40 @@ let L = n(227419).Z,
       displayName: "delete_messages",
       type: f.jw.INTEGER,
       get description() {
-        return C.NW.string(C.t.smrvAw)
+        return C.intl.string(C.t.smrvAw)
       },
       get displayDescription() {
-        return C.NW.string(C.t.smrvAw)
+        return C.intl.string(C.t.smrvAw)
       },
       required: !0,
       get choices() {
         return [{
-          name: C.NW.string(C.t["4obaMT"]),
-          displayName: C.NW.string(C.t["4obaMT"]),
+          name: C.intl.string(C.t["4obaMT"]),
+          displayName: C.intl.string(C.t["4obaMT"]),
           value: 0
         }, {
-          name: C.NW.string(C.t.RKpitb),
-          displayName: C.NW.string(C.t.RKpitb),
+          name: C.intl.string(C.t.RKpitb),
+          displayName: C.intl.string(C.t.RKpitb),
           value: O.Z.Seconds.HOUR
         }, {
-          name: C.NW.string(C.t["8WfJZ2"]),
-          displayName: C.NW.string(C.t["8WfJZ2"]),
+          name: C.intl.string(C.t["8WfJZ2"]),
+          displayName: C.intl.string(C.t["8WfJZ2"]),
           value: 6 * O.Z.Seconds.HOUR
         }, {
-          name: C.NW.string(C.t.p1up7u),
-          displayName: C.NW.string(C.t.p1up7u),
+          name: C.intl.string(C.t.p1up7u),
+          displayName: C.intl.string(C.t.p1up7u),
           value: 12 * O.Z.Seconds.HOUR
         }, {
-          name: C.NW.string(C.t.XuVkkJ),
-          displayName: C.NW.string(C.t.XuVkkJ),
+          name: C.intl.string(C.t.XuVkkJ),
+          displayName: C.intl.string(C.t.XuVkkJ),
           value: O.Z.Seconds.DAY
         }, {
-          name: C.NW.string(C.t.gMcDS0),
-          displayName: C.NW.string(C.t.gMcDS0),
+          name: C.intl.string(C.t.gMcDS0),
+          displayName: C.intl.string(C.t.gMcDS0),
           value: 3 * O.Z.Seconds.DAY
         }, {
-          name: C.NW.string(C.t.FA7IUl),
-          displayName: C.NW.string(C.t.FA7IUl),
+          name: C.intl.string(C.t.FA7IUl),
+          displayName: C.intl.string(C.t.FA7IUl),
           value: 7 * O.Z.Seconds.DAY
         }]
       }
@@ -507,10 +507,10 @@ let L = n(227419).Z,
       displayName: "reason",
       type: f.jw.STRING,
       get description() {
-        return C.NW.string(C.t.dG4noa)
+        return C.intl.string(C.t.dG4noa)
       },
       get displayDescription() {
-        return C.NW.string(C.t.dG4noa)
+        return C.intl.string(C.t.dG4noa)
       },
       required: !1
     }],
@@ -518,7 +518,7 @@ let L = n(227419).Z,
       let {
         guild: t
       } = e;
-      return y.Z.can(N.Plq.BAN_MEMBERS, t)
+      return y.Z.can(A.Plq.BAN_MEMBERS, t)
     },
     execute: (e, t) => {
       var n;
@@ -528,18 +528,18 @@ let L = n(227419).Z,
       } = t;
       if (null == r || null == i) return;
       let a = null != (n = x(e, "user")) ? n : "";
-      if (!y.Z.canManageUser(N.Plq.BAN_MEMBERS, a, r)) return void d.Z.sendBotMessage(i.id, C.NW.string(C.t.R27LJi));
+      if (!y.Z.canManageUser(A.Plq.BAN_MEMBERS, a, r)) return void d.Z.sendBotMessage(i.id, C.intl.string(C.t.R27LJi));
       (async () => {
         var t, n;
         if ("" === a) throw Error();
         let o = null != (t = x(e, "delete_messages")) ? t : 0,
           s = null != (n = x(e, "reason")) ? n : "",
           l = v.default.getUser(a);
-        await u.Z.banUser(r.id, a, o, s), d.Z.sendBotMessage(i.id, C.NW.formatToPlainString(C.t.YflWdH, {
+        await u.Z.banUser(r.id, a, o, s), d.Z.sendBotMessage(i.id, C.intl.formatToPlainString(C.t.YflWdH, {
           user: null != l ? I.ZP.getUserTag(l) : a
         }))
       })().catch(() => {
-        d.Z.sendBotMessage(i.id, C.NW.string(C.t.w2J6Qk))
+        d.Z.sendBotMessage(i.id, C.intl.string(C.t.w2J6Qk))
       })
     }
   }, {
@@ -550,20 +550,20 @@ let L = n(227419).Z,
     inputType: S.iw.BUILT_IN,
     applicationId: T.bi.BUILT_IN,
     get untranslatedDescription() {
-      return C.NW.string(C.t.KkPcen)
+      return C.intl.string(C.t.KkPcen)
     },
     get displayDescription() {
-      return C.NW.string(C.t.KkPcen)
+      return C.intl.string(C.t.KkPcen)
     },
     options: [{
       name: "user",
       displayName: "user",
       type: f.jw.USER,
       get description() {
-        return C.NW.string(C.t.UU3VRk)
+        return C.intl.string(C.t.UU3VRk)
       },
       get displayDescription() {
-        return C.NW.string(C.t.UU3VRk)
+        return C.intl.string(C.t.UU3VRk)
       },
       required: !0
     }, {
@@ -571,14 +571,14 @@ let L = n(227419).Z,
       displayName: "duration",
       type: f.jw.INTEGER,
       get description() {
-        return C.NW.string(C.t.SNqN1d)
+        return C.intl.string(C.t.SNqN1d)
       },
       get displayDescription() {
-        return C.NW.string(C.t.SNqN1d)
+        return C.intl.string(C.t.SNqN1d)
       },
       required: !0,
       get choices() {
-        return (0, A.tr)().map(e => D(P({}, e), {
+        return (0, N.tr)().map(e => D(P({}, e), {
           name: e.label,
           displayName: e.label
         }))
@@ -588,10 +588,10 @@ let L = n(227419).Z,
       displayName: "reason",
       type: f.jw.STRING,
       get description() {
-        return C.NW.string(C.t.akHScH)
+        return C.intl.string(C.t.akHScH)
       },
       get displayDescription() {
-        return C.NW.string(C.t.akHScH)
+        return C.intl.string(C.t.akHScH)
       },
       required: !1
     }],
@@ -599,7 +599,7 @@ let L = n(227419).Z,
       let {
         guild: t
       } = e;
-      return y.Z.can(N.Plq.MODERATE_MEMBERS, t)
+      return y.Z.can(A.Plq.MODERATE_MEMBERS, t)
     },
     execute: (e, t) => {
       let {
@@ -608,7 +608,7 @@ let L = n(227419).Z,
       } = t;
       if (null == n || null == r) return;
       let i = x(e, "user");
-      if (!(0, _.F)(n.id, i)) return void d.Z.sendBotMessage(r.id, C.NW.string(C.t.F5pqSU));
+      if (!(0, _.F)(n.id, i)) return void d.Z.sendBotMessage(r.id, C.intl.string(C.t.F5pqSU));
       (async () => {
         var t, a;
         let s = null != (t = x(e, "duration")) ? t : "",
@@ -621,12 +621,12 @@ let L = n(227419).Z,
           communicationDisabledUntilTimestamp: o()().add(s, "s").toISOString(),
           duration: s,
           reason: l
-        }), d.Z.sendBotMessage(r.id, C.NW.formatToPlainString(C.t.BbRV6u, {
+        }), d.Z.sendBotMessage(r.id, C.intl.formatToPlainString(C.t.BbRV6u, {
           user: I.ZP.getUserTag(c),
           duration: s
         }))
       })().catch(() => {
-        d.Z.sendBotMessage(r.id, C.NW.string(C.t["+mWyVl"]))
+        d.Z.sendBotMessage(r.id, C.intl.string(C.t["+mWyVl"]))
       })
     }
   }, {
@@ -637,20 +637,20 @@ let L = n(227419).Z,
     inputType: S.iw.BUILT_IN,
     applicationId: T.bi.BUILT_IN,
     get untranslatedDescription() {
-      return C.NW.string(C.t.Dg8XZ2)
+      return C.intl.string(C.t.Dg8XZ2)
     },
     get displayDescription() {
-      return C.NW.string(C.t.Dg8XZ2)
+      return C.intl.string(C.t.Dg8XZ2)
     },
     options: [{
       name: "user",
       displayName: "user",
       type: f.jw.USER,
       get description() {
-        return C.NW.string(C.t["KmVq/P"])
+        return C.intl.string(C.t["KmVq/P"])
       },
       get displayDescription() {
-        return C.NW.string(C.t["KmVq/P"])
+        return C.intl.string(C.t["KmVq/P"])
       },
       required: !0
     }, {
@@ -658,15 +658,15 @@ let L = n(227419).Z,
       displayName: "message",
       type: f.jw.STRING,
       get description() {
-        return C.NW.string(C.t.oGUuOD)
+        return C.intl.string(C.t.oGUuOD)
       },
       get displayDescription() {
-        return C.NW.string(C.t.oGUuOD)
+        return C.intl.string(C.t.oGUuOD)
       },
       required: !0,
       get maxLength() {
         var j;
-        return (null == (j = v.default.getCurrentUser()) ? void 0 : j.premiumType) ? N.en1 : N.J6R
+        return (null == (j = v.default.getCurrentUser()) ? void 0 : j.premiumType) ? A.en1 : A.J6R
       }
     }],
     execute: (e, t) => {
@@ -685,7 +685,7 @@ let L = n(227419).Z,
           i()(null != t, "Newly created PrivateChannel is null"), d.Z.sendMessage(t.id, p.ZP.parse(t, o))
         })
       })().catch(() => {
-        d.Z.sendBotMessage(r.id, C.NW.string(C.t["3XaE9/"]))
+        d.Z.sendBotMessage(r.id, C.intl.string(C.t["3XaE9/"]))
       })
     }
   }],

@@ -31,12 +31,12 @@ function b(e) {
     O = {};
   if (v) {
     let e = x ? (0, r.jsxs)(r.Fragment, {
-      children: [g.NW.string(g.t["+KSnWV"]), (0, r.jsx)(l.rgF, {
+      children: [g.intl.string(g.t["+KSnWV"]), (0, r.jsx)(l.rgF, {
         size: "xs",
         color: c.Z.HEADER_PRIMARY
       })]
-    }) : g.NW.string(g.t.hvVgAQ);
-    O.message = g.NW.string(g.t.Bt2N7O), O.subtitle = g.NW.string(g.t["n/Vzk5"]), O.buttonText = e, O.onButtonClick = () => {
+    }) : g.intl.string(g.t.hvVgAQ);
+    O.message = g.intl.string(g.t.Bt2N7O), O.subtitle = g.intl.string(g.t["n/Vzk5"]), O.buttonText = e, O.onButtonClick = () => {
       if (x) {
         open(m.D2), d.default.track(f.rMx.CHANGE_LOG_CTA_CLICKED, {
           cta_type: "chat_blocker",
@@ -46,7 +46,7 @@ function b(e) {
       }
       open(p.Z.getArticleURL(f.BhN.SYSTEM_DMS))
     }, O.imageSrc = n(780961)
-  } else j && (O.message = g.NW.string(g.t["9T6N5+"]), O.buttonText = g.NW.string(g.t.XyHpKC), O.onButtonClick = () => {
+  } else j && (O.message = g.intl.string(g.t["9T6N5+"]), O.buttonText = g.intl.string(g.t.XyHpKC), O.onButtonClick = () => {
     o.Z.unblockUser(_.getRecipientId())
   });
   return (0, r.jsx)(h.Z, (t = function(e) {

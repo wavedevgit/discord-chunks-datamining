@@ -32,13 +32,13 @@ function p(e) {
   } = e, I = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), S = m ? d.nL.WINTER : d.nL.DEFAULT, T = () => {
     switch (t) {
       case s.h8.PLAN_SELECT:
-        return h === d.p9.TIER_0 ? f.NW.string(f.t.rk4Uu7) : f.NW.string(f.t["7YWj6+"]);
+        return h === d.p9.TIER_0 ? f.intl.string(f.t.rk4Uu7) : f.intl.string(f.t["7YWj6+"]);
       case s.h8.ADD_PAYMENT_STEPS:
-        return f.NW.string(f.t.vHqbJC);
+        return f.intl.string(f.t.vHqbJC);
       case s.h8.REVIEW:
-        return f.NW.string(f.t.wKaVLC);
+        return f.intl.string(f.t.wKaVLC);
       default:
-        return f.NW.string(f.t["7YWj6+"])
+        return f.intl.string(f.t["7YWj6+"])
     }
   };
   return v && (0, l.pO)(O) && t !== s.h8.CONFIRM ? (0, r.jsxs)(a.xBx, {

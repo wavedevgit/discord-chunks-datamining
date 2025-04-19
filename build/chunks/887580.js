@@ -73,15 +73,15 @@ function y(e) {
     T = () => {
       null != O && (S ? (0, u.rX)(n, null) : (0, u.rX)(n, O.value))
     },
-    N = (0, r.jsx)(b, {
+    A = (0, r.jsx)(b, {
       url: t
     }),
-    A = null;
-  return (1 === I && null != O ? A = (0, r.jsx)(o.Text, {
+    N = null;
+  return (1 === I && null != O ? N = (0, r.jsx)(o.Text, {
     variant: "text-xs/normal",
     color: "text-muted",
     children: O.label
-  }) : null != p && (A = (0, r.jsxs)(o.Text, {
+  }) : null != p && (N = (0, r.jsxs)(o.Text, {
     variant: "text-xs/normal",
     color: "text-muted",
     children: ["Server Config: ", c.Z.getExperimentBucketName(p.bucket)]
@@ -102,8 +102,8 @@ function y(e) {
             children: [(0, r.jsx)(o.Text, {
               variant: "text-md/semibold",
               children: y.title
-            }), A]
-          }), N]
+            }), N]
+          }), A]
         })
       })
     }), (0, r.jsx)(o.Kqy, {

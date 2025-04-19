@@ -150,7 +150,7 @@ class T extends(r = a.PureComponent) {
       barStyles: I,
       fillStyles: S,
       mini: T,
-      hideBubble: A,
+      hideBubble: N,
       defaultValue: C,
       orientation: R,
       onValueRender: P,
@@ -191,8 +191,8 @@ class T extends(r = a.PureComponent) {
         }, t)
       }) : null,
       H = null != P ? P(t) : "".concat(F.toFixed(0), "%"),
-      W = null != (e = null == D ? void 0 : D(t)) ? e : void 0;
-    return (0, i.jsx)(N, {
+      Y = null != (e = null == D ? void 0 : D(t)) ? e : void 0;
+    return (0, i.jsx)(A, {
       active: n,
       keyboardFocused: r && h.Z.keyboardModeEnabled,
       children: e => {
@@ -216,7 +216,7 @@ class T extends(r = a.PureComponent) {
             "aria-label": U,
             "aria-labelledby": G,
             "aria-describedby": B,
-            "aria-valuetext": W,
+            "aria-valuetext": Y,
             role: "slider",
             tabIndex: 0,
             onKeyDown: this.handleKeyDown,
@@ -247,7 +247,7 @@ class T extends(r = a.PureComponent) {
               children: (0, i.jsx)(p.u, {
                 color: p.u.Colors.GREY,
                 hideOnClick: !1,
-                text: A || E ? null : H,
+                text: N || E ? null : H,
                 forceOpen: n || r && h.Z.keyboardModeEnabled,
                 children: e => (0, i.jsx)("div", v(b({}, e), {
                   className: s()(g.grabber, x),
@@ -459,7 +459,7 @@ class T extends(r = a.PureComponent) {
   }
 }
 
-function N(e) {
+function A(e) {
   let {
     active: t,
     keyboardFocused: n,

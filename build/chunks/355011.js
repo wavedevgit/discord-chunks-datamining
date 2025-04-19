@@ -10,10 +10,10 @@ let i = e => {
     width: t = 24,
     height: n = 24,
     color: i = "currentColor",
-    className: s
+    className: l
   } = e;
   return (0, r.jsx)("svg", {
-    className: s,
+    className: l,
     width: t,
     height: n,
     viewBox: "0 0 14 12",

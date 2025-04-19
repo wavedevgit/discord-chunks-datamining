@@ -1,10 +1,10 @@
 /** Chunk was on 99989 **/
-n.d(t, {
+n.d(e, {
   default: () => b
 }), n(388685);
 var r = n(200651),
-  c = n(192379),
-  l = n(374470),
+  l = n(192379),
+  c = n(374470),
   i = n(481060),
   s = n(239091),
   o = n(886036),
@@ -13,36 +13,36 @@ var r = n(200651),
   d = n(998502),
   p = n(388032);
 
-function b(e) {
+function b(t) {
   let {
-    text: t,
+    text: e,
     target: n,
     onHeightUpdate: b,
     onSelect: f,
     isChannelTextArea: h = !1
-  } = e, E = c.useCallback(() => {
-    (0, s.Zy)(), (0, l.k)(n, HTMLElement) && (n.focus(), setTimeout(() => n.focus(), 0))
+  } = t, E = l.useCallback(() => {
+    (0, s.Zy)(), (0, c.k)(n, HTMLElement) && (n.focus(), setTimeout(() => n.focus(), 0))
   }, [n]), [O, j] = (0, a.Z)({
-    text: t,
+    text: e,
     target: n,
     onHeightUpdate: b
   }), y = (0, o.Z)();
-  if (!u.isPlatformEmbedded || !((0, l.k)(n, HTMLInputElement) || (0, l.k)(n, HTMLTextAreaElement))) return null;
-  let k = "" !== t ? [(0, r.jsx)(i.sNh, {
+  if (!u.isPlatformEmbedded || !((0, c.k)(n, HTMLInputElement) || (0, c.k)(n, HTMLTextAreaElement))) return null;
+  let k = "" !== e ? [(0, r.jsx)(i.sNh, {
     id: "copy",
-    label: p.NW.string(p.t.OpuAlJ),
+    label: p.intl.string(p.t.OpuAlJ),
     hint: (0, u.isMac)() ? "⌘C" : "Ctrl+C",
-    action: () => d.ZP.copy(t)
+    action: () => d.ZP.copy(e)
   }, "copy"), (0, r.jsx)(i.sNh, {
     id: "cut",
-    label: p.NW.string(p.t.pNPVhY),
+    label: p.intl.string(p.t.pNPVhY),
     hint: (0, u.isMac)() ? "⌘X" : "Ctrl+X",
     action: () => setTimeout(() => d.ZP.cut(), 0)
   }, "cut")] : null;
   return (0, r.jsxs)(i.v2r, {
     navId: "textarea-context",
     onClose: E,
-    "aria-label": p.NW.string(p.t.NWlDSE),
+    "aria-label": p.intl.string(p.t.NWlDSE),
     onSelect: f,
     children: [h && (0, r.jsx)(i.kSQ, {
       children: y
@@ -53,7 +53,7 @@ function b(e) {
     }), (0, r.jsxs)(i.kSQ, {
       children: [k, (0, r.jsx)(i.sNh, {
         id: "paste",
-        label: p.NW.string(p.t.lMUxVl),
+        label: p.intl.string(p.t.lMUxVl),
         hint: (0, u.isMac)() ? "⌘V" : "Ctrl+V",
         action: () => setTimeout(() => d.ZP.paste(), 0)
       })]

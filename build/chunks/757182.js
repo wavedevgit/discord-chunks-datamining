@@ -83,6 +83,6 @@ function p(e) {
     onClick: _,
     fullWidth: !0
   }, u), {
-    children: s.NW.string(s.t["I6JG4+"])
+    children: s.intl.string(s.t["I6JG4+"])
   }), "play-activity")
 }

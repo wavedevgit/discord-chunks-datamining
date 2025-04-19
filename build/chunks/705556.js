@@ -52,7 +52,7 @@ function m(e) {
   } = (0, u.KZ)();
   return E ? null == b ? (0, r.jsx)(d.tG, {
     action: "EDIT_PROFILE",
-    text: f.NW.string(f.t.s5vZlZ),
+    text: f.intl.string(f.t.s5vZlZ),
     icon: a.vdY,
     autoFocus: !0,
     fullWidth: p,
@@ -71,11 +71,11 @@ function m(e) {
         onClose: () => {
           t(), null == g || g()
         },
-        "aria-label": f.NW.string(f.t.AXIHpa),
+        "aria-label": f.intl.string(f.t.AXIHpa),
         children: [(0, r.jsx)(a.sNh, {
           id: "edit-server-profile",
-          label: f.NW.string(f.t["PKQB/P"]),
-          subtext: f.NW.string(f.t.VYHWKC),
+          label: f.intl.string(f.t["PKQB/P"]),
+          subtext: f.intl.string(f.t.VYHWKC),
           action: () => {
             O({
               action: "EDIT_GUILD_PROFILE"
@@ -83,8 +83,8 @@ function m(e) {
           }
         }), (0, r.jsx)(a.sNh, {
           id: "edit-main-profile",
-          label: f.NW.string(f.t.HmFaFB),
-          subtext: f.NW.string(f.t["+EERMj"]),
+          label: f.intl.string(f.t.HmFaFB),
+          subtext: f.intl.string(f.t["+EERMj"]),
           action: () => {
             O({
               action: "EDIT_PROFILE"
@@ -94,7 +94,7 @@ function m(e) {
       })
     },
     children: e => (0, r.jsx)(d.tG, h({
-      text: f.NW.string(f.t.s5vZlZ),
+      text: f.intl.string(f.t.s5vZlZ),
       icon: a.vdY,
       autoFocus: !0,
       fullWidth: p

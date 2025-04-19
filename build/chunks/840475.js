@@ -20,11 +20,11 @@ var r, i, a, o = n(848120),
   I = O.enforce,
   S = O.get,
   T = l.Int8Array,
-  N = T && T.prototype,
-  A = l.Uint8ClampedArray,
-  C = A && A.prototype,
+  A = T && T.prototype,
+  N = l.Uint8ClampedArray,
+  C = N && N.prototype,
   R = T && E(T),
-  P = N && E(N),
+  P = A && E(A),
   w = Object.prototype,
   D = l.TypeError,
   L = y("toStringTag"),
@@ -72,7 +72,7 @@ var r, i, a, o = n(848120),
     if (c(e) && (!b || g(R, e))) return e;
     throw new D(_(e) + " is not a typed array constructor")
   },
-  W = function(e, t, n, r) {
+  Y = function(e, t, n, r) {
     if (s) {
       if (n)
         for (var i in U) {
@@ -84,10 +84,10 @@ var r, i, a, o = n(848120),
               a.prototype[e] = t
             } catch (e) {}
           }
-        }(!P[e] || n) && h(P, e, n ? t : k && N[e] || t, r)
+        }(!P[e] || n) && h(P, e, n ? t : k && A[e] || t, r)
     }
   },
-  Y = function(e, t, n) {
+  W = function(e, t, n) {
     var r, i;
     if (s) {
       if (b) {
@@ -125,8 +125,8 @@ e.exports = {
   TYPED_ARRAY_TAG: j && x,
   aTypedArray: Z,
   aTypedArrayConstructor: H,
-  exportTypedArrayMethod: W,
-  exportTypedArrayStaticMethod: Y,
+  exportTypedArrayMethod: Y,
+  exportTypedArrayStaticMethod: W,
   getTypedArrayConstructor: F,
   isView: B,
   isTypedArray: V,

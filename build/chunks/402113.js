@@ -91,6 +91,6 @@ function g(e) {
     fullRegionButton: g,
     onClick: b,
     iconComponent: i.PBZ,
-    label: u.NW.string(u.t["R/FK4O"])
+    label: u.intl.string(u.t["R/FK4O"])
   }))
 }

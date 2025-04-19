@@ -1,14 +1,14 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => l
+  Z: () => a
 });
-var r = n(200651);
+var i = n(200651);
 n(192379);
-var i = n(200100),
+var r = n(200100),
   s = n(481060),
-  a = n(777742);
+  l = n(777742);
 
-function l(e) {
+function a(e) {
   let {
     text: t
   } = e, n = (0, s.Yzy)(t, {
@@ -25,10 +25,10 @@ function l(e) {
       clamp: !0
     }
   });
-  return (0, r.jsx)("div", {
-    className: a.container,
-    children: n((e, t) => (0, r.jsx)(i.animated.div, {
-      className: a.animatedText,
+  return (0, i.jsx)("div", {
+    className: l.container,
+    children: n((e, t) => (0, i.jsx)(r.animated.div, {
+      className: l.animatedText,
       style: e,
       children: t
     }))

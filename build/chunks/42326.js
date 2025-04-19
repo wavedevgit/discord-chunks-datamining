@@ -31,10 +31,10 @@ function g(e) {
       node: null
     };
     let n = null == (t = (0, u.hp)(e)) ? void 0 : t.errorCode,
-      l = p.NW.formatToPlainString(p.t["ejOT9/"], {
+      l = p.intl.formatToPlainString(p.t["ejOT9/"], {
         errorCode: n
       }),
-      i = p.NW.format(p.t.If5Q0t, {
+      i = p.intl.format(p.t.If5Q0t, {
         errorCode: n,
         helpDeskURL: d.Z.getArticleURL(m.BhN.AV_ERROR_CODES)
       }),

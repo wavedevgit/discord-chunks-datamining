@@ -1,66 +1,66 @@
 /** Chunk was on 34684 **/
-r.d(t, {
+r.d(e, {
   Z: () => p
 });
 var n = r(200651),
   o = r(192379),
-  a = r(392711),
-  c = r(481060),
-  i = r(765250),
+  i = r(392711),
+  a = r(481060),
+  c = r(765250),
   l = r(444295),
   u = r(388032);
-let s = (0, a.throttle)((e, t) => {
-  (0, l.JS)(e.type, {
-    opacity: t
+let s = (0, i.throttle)((t, e) => {
+  (0, l.JS)(t.type, {
+    opacity: e
   })
 }, 1e3);
 
-function p(e) {
-  let t = o.useCallback(t => s(e, t), [e]);
-  return (0, n.jsx)(c.II_, {
+function p(t) {
+  let e = o.useCallback(e => s(t, e), [t]);
+  return (0, n.jsx)(a.II_, {
     id: "opacity",
     "aria-haspopup": !0,
-    label: u.NW.string(u.t.OVovCQ),
+    label: u.intl.string(u.t.OVovCQ),
     control: (r, o) => {
-      var a, l;
-      return (0, n.jsx)(c._wy, (a = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {},
+      var i, l;
+      return (0, n.jsx)(a._wy, (i = function(t) {
+        for (var e = 1; e < arguments.length; e++) {
+          var r = null != arguments[e] ? arguments[e] : {},
             n = Object.keys(r);
-          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(r, e).enumerable
-          }))), n.forEach(function(t) {
+          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(t) {
+            return Object.getOwnPropertyDescriptor(r, t).enumerable
+          }))), n.forEach(function(e) {
             var n;
-            n = r[t], t in e ? Object.defineProperty(e, t, {
+            n = r[e], e in t ? Object.defineProperty(t, e, {
               value: n,
               enumerable: !0,
               configurable: !0,
               writable: !0
-            }) : e[t] = n
+            }) : t[e] = n
           })
         }
-        return e
+        return t
       }({}, r), l = l = {
         ref: o,
-        value: 100 * e.opacity,
+        value: 100 * t.opacity,
         maxValue: 100,
         onChange: r => {
-          (0, i.nv)({
-            widgetId: e.id,
+          (0, c.nv)({
+            widgetId: t.id,
             opacity: r / 100
-          }), t(Math.floor(r))
+          }), e(Math.floor(r))
         },
-        "aria-label": u.NW.string(u.t.kbFsAA)
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-        var r = Object.keys(e);
+        "aria-label": u.intl.string(u.t.kbFsAA)
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(t, e) {
+        var r = Object.keys(t);
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e);
+          var n = Object.getOwnPropertySymbols(t);
           r.push.apply(r, n)
         }
         return r
-      })(Object(l)).forEach(function(e) {
-        Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(l, e))
-      }), a))
+      })(Object(l)).forEach(function(t) {
+        Object.defineProperty(i, t, Object.getOwnPropertyDescriptor(l, t))
+      }), i))
     }
   })
 }

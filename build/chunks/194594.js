@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => j,
   x: () => x
 }), n(539854);
-var r, a = n(200651),
-  i = n(192379),
+var r, i = n(200651),
+  a = n(192379),
   l = n(120356),
   s = n.n(l),
   o = n(442837),
@@ -67,12 +67,12 @@ function j(e) {
     className: j,
     textVariant: y = "text-sm/normal",
     compact: I,
-    guildIconSize: N = x.LARGE,
-    guildsClassName: O
-  } = e, P = (0, o.e7)([p.default], () => p.default.locale), S = new Intl.ListFormat(P), E = null != (n = null == (t = l.directory_entry) ? void 0 : t.guild_count) ? n : 0, T = null != (r = null == c ? void 0 : c.length) ? r : 0, A = Math.max(0, E - T), {
+    guildIconSize: O = x.LARGE,
+    guildsClassName: P
+  } = e, S = (0, o.e7)([p.default], () => p.default.locale), E = new Intl.ListFormat(S), N = null != (n = null == (t = l.directory_entry) ? void 0 : t.guild_count) ? n : 0, T = null != (r = null == c ? void 0 : c.length) ? r : 0, A = Math.max(0, N - T), {
     shownMutualGuilds: L,
     hiddenMutualGuilds: R
-  } = i.useMemo(() => {
+  } = a.useMemo(() => {
     let e = [],
       t = [];
     return null == c || c.forEach(n => {
@@ -81,71 +81,71 @@ function j(e) {
       shownMutualGuilds: e,
       hiddenMutualGuilds: t
     }
-  }, [c, h]), Z = R.length, k = function(e, t, n, r, a) {
+  }, [c, h]), Z = R.length, k = function(e, t, n, r, i) {
     if (0 === t && 0 === e) return null;
-    if (t > 0 && 0 === n) return g.NW.formatToPlainString(g.t.pnzE1t, {
+    if (t > 0 && 0 === n) return g.intl.formatToPlainString(g.t.pnzE1t, {
       mutualGuildCount: t
     });
-    let i = t > 0 ? g.t.YR8PSE : g.t.GQjq6e,
+    let a = t > 0 ? g.t.YR8PSE : g.t.GQjq6e,
       l = new Intl.NumberFormat(r, {
-        notation: a ? "compact" : "standard",
+        notation: i ? "compact" : "standard",
         compactDisplay: "short"
       });
-    return g.NW.formatToPlainString(i, {
+    return g.intl.formatToPlainString(a, {
       guildCount: l.format(e),
       mutualGuildCount: t,
       nonMutualGuildCount: l.format(n)
     })
-  }(E, T, A, P, I);
-  return 0 === L.length && null == k ? null : (0, a.jsxs)("div", {
+  }(N, T, A, S, I);
+  return 0 === L.length && null == k ? null : (0, i.jsxs)("div", {
     className: s()(j, _.wrapper),
-    children: [(0, a.jsx)("div", {
-      className: s()(_.icons, O),
-      children: L.length > 0 ? (0, a.jsxs)(a.Fragment, {
+    children: [(0, i.jsx)("div", {
+      className: s()(_.icons, P),
+      children: L.length > 0 ? (0, i.jsxs)(i.Fragment, {
         children: [L.map((e, t) => {
           let n = t === L.length - 1 && 0 === Z,
             r = m.ZP.getGuildIconURL({
               id: e.id,
               icon: e.icon,
-              size: N,
+              size: O,
               canAnimate: !1
             }),
-            l = (0, a.jsx)(d.ua7, {
+            l = (0, i.jsx)(d.ua7, {
               text: e.name,
               position: "top",
-              children: e => (0, a.jsx)("img", b(f({}, e), {
-                className: s()(_.icon, C[N]),
+              children: e => (0, i.jsx)("img", b(f({}, e), {
+                className: s()(_.icon, C[O]),
                 src: r,
                 alt: ""
               }))
             });
-          return n ? (0, a.jsx)(i.Fragment, {
+          return n ? (0, i.jsx)(a.Fragment, {
             children: l
-          }, e.id) : (0, a.jsx)(u.ZP, {
+          }, e.id) : (0, i.jsx)(u.ZP, {
             className: _.iconMask,
-            height: N,
-            width: N,
+            height: O,
+            width: O,
             mask: u.ZP.Masks.VOICE_USER_SUMMARY_ITEM,
             children: l
           }, e.id)
-        }), Z > 0 ? (0, a.jsx)(d.ua7, {
-          text: g.NW.formatToPlainString(g.t.m6oRrK, {
-            appNames: S.format(R.map(e => e.name))
+        }), Z > 0 ? (0, i.jsx)(d.ua7, {
+          text: g.intl.formatToPlainString(g.t.m6oRrK, {
+            appNames: E.format(R.map(e => e.name))
           }),
           position: "top",
-          children: e => (0, a.jsxs)("div", b(f({}, e), {
-            className: s()(_.moreGuilds, v[N]),
+          children: e => (0, i.jsxs)("div", b(f({}, e), {
+            className: s()(_.moreGuilds, v[O]),
             children: ["+", Z]
           }))
         }) : null]
-      }) : (0, a.jsx)(d.QTo, {
+      }) : (0, i.jsx)(d.QTo, {
         size: "custom",
         color: "currentColor",
-        width: N,
-        height: N,
+        width: O,
+        height: O,
         className: _.defaultIcon
       })
-    }), null != k ? (0, a.jsx)(d.Text, {
+    }), null != k ? (0, i.jsx)(d.Text, {
       variant: y,
       color: "header-secondary",
       children: k

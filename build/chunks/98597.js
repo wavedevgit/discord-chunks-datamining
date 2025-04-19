@@ -1,10 +1,10 @@
 /** Chunk was on 64040 **/
 n.d(t, {
-  CN: () => P,
+  CN: () => w,
   ZP: () => L,
   eP: () => A,
   hR: () => T,
-  jo: () => w
+  jo: () => N
 });
 var r, i = n(200651),
   l = n(192379),
@@ -51,7 +51,7 @@ function I(e) {
   return e
 }
 
-function N(e, t) {
+function P(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -64,11 +64,11 @@ function N(e, t) {
   }), e
 }
 
-function P(e, t, n) {
+function w(e, t, n) {
   return null != t && !!t && !(0, C.ig)(n, e.type)
 }
 
-function w(e, t) {
+function N(e, t) {
   return null == t ? x.containerDefault : e > t ? x.containerDragAfter : x.containerDragBefore
 }
 
@@ -80,7 +80,7 @@ function Z(e) {
     onContextMenu: l
   } = e;
   return (0, i.jsx)(c.ua7, {
-    text: S.NW.string(S.t.OBr7Cw),
+    text: S.intl.string(S.t.OBr7Cw),
     children: e => {
       let {
         onMouseEnter: o,
@@ -92,7 +92,7 @@ function Z(e) {
         className: s()(x.iconItem, n ? x.alwaysShown : void 0, r ? x.iconWithChannelInfo : x.iconNoChannelInfo),
         onClick: l,
         tabIndex: t,
-        "aria-label": S.NW.string(S.t.OBr7Cw),
+        "aria-label": S.intl.string(S.t.OBr7Cw),
         onMouseEnter: o,
         onMouseLeave: a,
         onFocus: u,
@@ -121,7 +121,7 @@ function T(e) {
     u.ZP.open(t.id)
   }
   return (0, i.jsx)(c.ua7, {
-    text: S.NW.string(S.t["3gUsJS"]),
+    text: S.intl.string(S.t["3gUsJS"]),
     children: e => {
       let {
         onMouseEnter: t,
@@ -133,7 +133,7 @@ function T(e) {
         className: s()(x.iconItem, l ? x.alwaysShown : void 0, o ? x.iconWithChannelInfo : x.iconNoChannelInfo),
         onClick: d,
         tabIndex: r,
-        "aria-label": S.NW.string(S.t["3gUsJS"]),
+        "aria-label": S.intl.string(S.t["3gUsJS"]),
         onMouseEnter: t,
         onMouseLeave: n,
         onFocus: a,
@@ -160,8 +160,8 @@ function A(e) {
     entrypoints: v
   } = (0, h._k)({
     location: "channel_base"
-  }), C = (0, a.e7)([_.Z], () => _.Z.getGuild(t.getGuildId())), E = (0, a.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), P = (0, a.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), w = (0, a.e7)([O.Z], () => (0, p.b)(O.Z, C, t, E)), Z = (0, a.e7)([O.Z], () => O.Z.can(j.Plq.CREATE_INSTANT_INVITE, t) ? S.NW.string(S.t.zJrgTE) : S.NW.string(S.t.Sd8Ix8)), T = v ? S.NW.string(S.t["EE+P0N"]) : Z, A = l.useRef(null);
-  if (o || !w) return null;
+  }), C = (0, a.e7)([_.Z], () => _.Z.getGuild(t.getGuildId())), E = (0, a.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), w = (0, a.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), N = (0, a.e7)([O.Z], () => (0, p.b)(O.Z, C, t, E)), Z = (0, a.e7)([O.Z], () => O.Z.can(j.Plq.CREATE_INSTANT_INVITE, t) ? S.intl.string(S.t.zJrgTE) : S.intl.string(S.t.Sd8Ix8)), T = v ? S.intl.string(S.t["EE+P0N"]) : Z, A = l.useRef(null);
+  if (o || !N) return null;
 
   function R() {
     if (null != C) {
@@ -170,12 +170,12 @@ function A(e) {
         let {
           default: r
         } = await Promise.all([n.e("7654"), n.e("17439")]).then(n.bind(n, 560114));
-        return n => (0, i.jsx)(r, N(I({}, n), {
+        return n => (0, i.jsx)(r, P(I({}, n), {
           guild: C,
           channel: t,
           streamUserId: 1 === e.length ? e[0].ownerId : null,
           source: j.t4x.GUILD_CHANNELS,
-          guildScheduledEvent: P
+          guildScheduledEvent: w
         }))
       })
     }
@@ -197,7 +197,7 @@ function A(e) {
     })
   })), (0, i.jsx)(c.ua7, {
     text: T,
-    children: e => (0, i.jsx)(c.P3F, N(I({
+    children: e => (0, i.jsx)(c.P3F, P(I({
       className: s()(x.iconItem, f ? x.alwaysShown : void 0, b ? x.iconWithChannelInfo : x.iconNoChannelInfo)
     }, e), {
       onClick: R,
@@ -215,12 +215,12 @@ function R(e) {
     (0, f._U)(t.guild_id, t.id)
   };
   return (0, i.jsx)(c.ua7, {
-    text: S.NW.string(S.t.ROh4T0),
-    children: e => (0, i.jsx)(c.P3F, N(I({
+    text: S.intl.string(S.t.ROh4T0),
+    children: e => (0, i.jsx)(c.P3F, P(I({
       className: x.iconItem
     }, e), {
       onClick: n,
-      "aria-label": S.NW.string(S.t.ROh4T0),
+      "aria-label": S.intl.string(S.t.ROh4T0),
       children: (0, i.jsx)(c.Dio, {
         size: "xs",
         color: "currentColor",
@@ -239,12 +239,12 @@ function D(e) {
     })
   };
   return (0, i.jsx)(c.ua7, {
-    text: S.NW.string(S.t["N2c/Ul"]),
-    children: e => (0, i.jsx)(c.P3F, N(I({
+    text: S.intl.string(S.t["N2c/Ul"]),
+    children: e => (0, i.jsx)(c.P3F, P(I({
       className: x.iconItem
     }, e), {
       onClick: n,
-      "aria-label": S.NW.string(S.t["N2c/Ul"]),
+      "aria-label": S.intl.string(S.t["N2c/Ul"]),
       children: (0, i.jsx)(c.dz2, {
         size: "xs",
         color: "currentColor",
@@ -258,7 +258,7 @@ class L extends(r = l.PureComponent) {
     let {
       onContextMenu: t
     } = e;
-    return (0, i.jsx)(Z, N(I({}, this.props), {
+    return (0, i.jsx)(Z, P(I({}, this.props), {
       onContextMenu: t
     }))
   }
@@ -279,7 +279,7 @@ class L extends(r = l.PureComponent) {
       position: e,
       sortingPosition: t
     } = this.props;
-    return w(e, t)
+    return N(e, t)
   }
   isDisabled() {
     let {
@@ -287,7 +287,7 @@ class L extends(r = l.PureComponent) {
       sorting: t,
       sortingType: n
     } = this.props;
-    return P(e, t, n)
+    return w(e, t, n)
   }
 }
 E(L, "defaultProps", {

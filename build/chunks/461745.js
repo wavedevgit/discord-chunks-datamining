@@ -50,7 +50,7 @@ let E = e => {
       },
       tabIndex: t ? 0 : -1,
       "aria-hidden": !t,
-      "aria-label": h.NW.string(h.t["78fJND"]),
+      "aria-label": h.intl.string(h.t["78fJND"]),
       focusProps: {
         offset: 4
       },
@@ -162,7 +162,7 @@ class b extends(n = s.Component) {
     let {
       autoFocus: e,
       query: t,
-      placeholder: l = h.NW.string(h.t.LzcpeX),
+      placeholder: l = h.intl.string(h.t.LzcpeX),
       themeOverride: n,
       disabled: r,
       onClear: s,
@@ -172,9 +172,9 @@ class b extends(n = s.Component) {
       onActivate: y,
       className: b,
       inputProps: v,
-      focusAfterReady: N
-    } = this.props, C = null != t && t.length > 0, m = !1, R = [];
-    return null != f && f.length > 0 && ("string" == typeof f[0] ? f.forEach((e, t) => R.push((0, a.jsxs)(u.eee, {
+      focusAfterReady: C
+    } = this.props, m = null != t && t.length > 0, R = !1, N = [];
+    return null != f && f.length > 0 && ("string" == typeof f[0] ? f.forEach((e, t) => N.push((0, a.jsxs)(u.eee, {
       focusProps: {
         offset: 4
       },
@@ -184,9 +184,9 @@ class b extends(n = s.Component) {
         size: "md",
         color: "currentColor",
         className: d.close,
-        "aria-label": h.NW.string(h.t.N86XcH)
+        "aria-label": h.intl.string(h.t.N86XcH)
       })]
-    }, t))) : (m = !0, f.forEach((e, t) => R.push((0, a.jsxs)(u.eee, {
+    }, t))) : (R = !0, f.forEach((e, t) => N.push((0, a.jsxs)(u.eee, {
       className: i()(d.tag, d.richTag),
       onClick: this.handleRemoveTag.bind(this, t),
       children: [("MEMBER" === e.type || "USER" === e.type) && null != e.avatar && (0, a.jsx)(u.qEK, {
@@ -209,7 +209,7 @@ class b extends(n = s.Component) {
         size: "md",
         color: "currentColor",
         className: d.close,
-        "aria-label": h.NW.string(h.t.N86XcH)
+        "aria-label": h.intl.string(h.t.N86XcH)
       })]
     }, t))))), (0, a.jsx)(u.tEY, {
       focusTarget: this.ref,
@@ -226,7 +226,7 @@ class b extends(n = s.Component) {
             style: {
               maxHeight: p
             },
-            children: [R, (0, a.jsx)("input", function(e) {
+            children: [N, (0, a.jsx)("input", function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var l = null != arguments[t] ? arguments[t] : {},
                   n = Object.keys(l);
@@ -239,7 +239,7 @@ class b extends(n = s.Component) {
               return e
             }({
               className: i()(d.input, {
-                [d.richTagInput]: m
+                [d.richTagInput]: R
               }),
               type: "text",
               ref: this.ref,
@@ -251,12 +251,12 @@ class b extends(n = s.Component) {
               onFocus: this.handleFocus,
               disabled: r,
               "aria-disabled": r,
-              autoFocus: !N && e,
+              autoFocus: !C && e,
               onMouseDown: y
             }, this.defaultInputProps, v)), null != s ? (0, a.jsx)(E, {
               size: o,
               themeOverride: n,
-              hasContent: C,
+              hasContent: m,
               onClear: this.handleClear
             }) : null]
           })

@@ -55,7 +55,7 @@ class p extends a.Z {
       addFilesTo: n
     } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
     super.upload({
-      name: c.NW.string(c.t.jfKTen)
+      name: c.intl.string(c.t.jfKTen)
     }, t, e);
     let r = new AbortController;
     try {

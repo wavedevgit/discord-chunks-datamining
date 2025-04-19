@@ -1,8 +1,8 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  ZP: () => i
+  ZP: () => r
 });
-let r = (0, n(818083).B)({
+let i = (0, n(818083).B)({
     kind: "user",
     id: "2023-12_pause_subscriptions_experiment",
     label: "Pause Subscriptions Experiment",
@@ -17,16 +17,16 @@ let r = (0, n(818083).B)({
       }
     }]
   }),
-  i = e => {
+  r = e => {
     let {
       location: t,
       autoTrackExposure: n = !0,
-      trackExposureOptions: i = {}
+      trackExposureOptions: r = {}
     } = e;
-    return r.useExperiment({
+    return i.useExperiment({
       location: t
     }, {
       autoTrackExposure: n,
-      trackExposureOptions: i
+      trackExposureOptions: r
     })
   }

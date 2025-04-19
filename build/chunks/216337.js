@@ -34,11 +34,11 @@ let f = () => n.e("43841").then(n.t.bind(n, 737848, 19)).then(e => {
         className: h.textContainer,
         children: [(0, r.jsx)(o.X6q, {
           variant: "heading-md/semibold",
-          children: p.NW.string(p.t.OmBThI)
+          children: p.intl.string(p.t.OmBThI)
         }), (0, r.jsx)(o.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: p.NW.string(p.t.zcs5kp)
+          children: p.intl.string(p.t.zcs5kp)
         })]
       })]
     }) : null : (0, r.jsx)("div", {

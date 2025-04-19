@@ -68,29 +68,29 @@ function m(e) {
     return (null == (e = u.default.getCurrentUser()) ? void 0 : e.id) === E
   }, [E]), O = (0, l.n)({
     userId: E
-  }), [I, S] = (0, a.Wu)([c.Z], () => [c.Z.isFriend(E), c.Z.isBlocked(E)], [E]), [T, N] = i.useState(!1);
+  }), [I, S] = (0, a.Wu)([c.Z], () => [c.Z.isFriend(E), c.Z.isBlocked(E)], [E]), [T, A] = i.useState(!1);
   if (y || v) return null;
 
-  function A() {
+  function N() {
     (0, o.ZDy)(async () => {
       let {
         ConfirmModal: e
       } = await Promise.resolve().then(n.bind(n, 878678));
       return t => (0, r.jsx)(e, h(_({
-        header: d.NW.formatToPlainString(d.t.fPLvZW, {
+        header: d.intl.formatToPlainString(d.t.fPLvZW, {
           name: b
         }),
-        confirmText: d.NW.string(d.t.cvSt1N),
-        cancelText: d.NW.string(d.t["ETE/oK"]),
+        confirmText: d.intl.string(d.t.cvSt1N),
+        cancelText: d.intl.string(d.t["ETE/oK"]),
         onConfirm: () => {
           s.Z.removeFriend(E, {
             location: f
-          }), N(!1), null == m || m()
+          }), A(!1), null == m || m()
         }
       }, t), {
         children: (0, r.jsx)(o.Text, {
           variant: "text-md/normal",
-          children: d.NW.format(d.t.l5FFq6, {
+          children: d.intl.format(d.t.l5FFq6, {
             name: b
           })
         })
@@ -101,18 +101,18 @@ function m(e) {
   }
   return I ? (0, r.jsx)(o.sNh, {
     id: "remove-friend",
-    label: d.NW.string(d.t.cvSt1N),
-    action: A
+    label: d.intl.string(d.t.cvSt1N),
+    action: N
   }) : (0, r.jsx)(o.sNh, {
     id: "add-friend",
-    label: T ? d.NW.string(d.t.xMH6vL) : O,
+    label: T ? d.intl.string(d.t.xMH6vL) : O,
     action: () => {
       T || (s.Z.addRelationship({
         userId: E,
         context: {
           location: f
         }
-      }), N(!0), null == p || p())
+      }), A(!0), null == p || p())
     },
     disabled: S || T && !I
   })

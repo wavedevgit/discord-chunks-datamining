@@ -19,7 +19,7 @@ function l(e) {
   return n ? (0, r.jsx)("footer", {
     className: s.footer,
     children: !l && (0, r.jsx)(i.tG, {
-      text: o.NW.string(o.t.hZkfwc),
+      text: o.intl.string(o.t.hZkfwc),
       fullWidth: !0
     })
   }) : (0, r.jsx)("footer", {

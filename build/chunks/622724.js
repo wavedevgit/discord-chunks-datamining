@@ -29,7 +29,7 @@ function p(e) {
   return !m || g || t.isNonUserBot() ? null : (0, r.jsx)(a.sNh, {
     id: "report-user",
     color: s,
-    label: _.NW.string(_.t.A1MM3N),
+    label: _.intl.string(_.t.A1MM3N),
     action: () => (0, l.pX)(t, n === f.ME ? void 0 : n, d, h)
   })
 }

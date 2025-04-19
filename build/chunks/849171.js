@@ -1,11 +1,11 @@
 /** Chunk was on 75862 **/
 n.d(t, {
   Ix: () => k,
-  OV: () => F,
+  OV: () => V,
   V_: () => U,
-  Ym: () => W,
+  Ym: () => F,
   ZP: () => H,
-  ac: () => V,
+  ac: () => Y,
   bn: () => L,
   nR: () => M
 }), n(388685);
@@ -33,13 +33,13 @@ var r, l = n(200651),
   j = n(906732),
   Z = n(890280),
   x = n(835473),
-  N = n(522474),
-  w = n(314897),
-  P = n(819640),
-  R = n(594174),
-  A = n(823379),
-  C = n(5192),
-  T = n(388032),
+  w = n(522474),
+  P = n(314897),
+  R = n(819640),
+  A = n(594174),
+  C = n(823379),
+  T = n(5192),
+  N = n(388032),
   D = n(754438),
   M = ((r = {})[r.SMALL = 0] = "SMALL", r[r.MEDIUM = 1] = "MEDIUM", r[r.LARGE = 2] = "LARGE", r);
 let L = 1024,
@@ -49,11 +49,11 @@ function U(e) {
   return e > 400 ? 2 : +(e > 300)
 }
 
-function W(e) {
+function F(e) {
   return e > 400 ? [c.EFr.SIZE_56, 56] : e > 300 ? [c.EFr.SIZE_32, 32] : [c.EFr.SIZE_24, 24]
 }
 
-function F(e) {
+function V(e) {
   let {
     avatarSize: t,
     guildId: n,
@@ -67,7 +67,7 @@ function F(e) {
     max: 4,
     renderUser: e => {
       if (null == e) return null;
-      let t = C.ZP.getName(n, r, e);
+      let t = T.ZP.getName(n, r, e);
       return (0, l.jsx)(c.DY3, {
         text: t,
         color: c.FGA.GREY,
@@ -81,7 +81,7 @@ function F(e) {
   })
 }
 
-function V(e) {
+function Y(e) {
   switch (e) {
     case 2:
       return c.zxk.Sizes.LARGE;
@@ -92,23 +92,23 @@ function V(e) {
   }
 }
 
-function Y(e) {
+function W(e) {
   var t, n;
   let {
     participants: r,
     application: a,
     channel: E,
     width: h
-  } = e, v = U(h), [S] = W(h), b = (0, u.Wu)([R.default, w.default], () => Array.from(r).map(e => (0, p.J)(e, w.default) ? null : R.default.getUser(e.userId)).filter(A.lm)), y = (0, u.e7)([f.ZP], () => {
+  } = e, v = U(h), [S] = F(h), b = (0, u.Wu)([A.default, P.default], () => Array.from(r).map(e => (0, p.J)(e, P.default) ? null : A.default.getUser(e.userId)).filter(C.lm)), y = (0, u.e7)([f.ZP], () => {
     var e;
     return null != (e = f.ZP.getEmbeddedActivitiesForChannel(E.id).find(e => e.applicationId === a.id)) ? e : f.ZP.getEmbeddedActivitiesForStartingChannel(E.id).find(e => e.applicationId === a.id)
   }), {
     analyticsLocations: O
-  } = (0, j.ZP)(), I = (0, d.O)(), _ = C.ZP.getName(E.getGuildId(), E.id, null == b ? void 0 : b[0]), x = (0, g.s5)({
-    userId: null == (t = R.default.getCurrentUser()) ? void 0 : t.id,
+  } = (0, j.ZP)(), I = (0, d.O)(), _ = T.ZP.getName(E.getGuildId(), E.id, null == b ? void 0 : b[0]), x = (0, g.s5)({
+    userId: null == (t = A.default.getCurrentUser()) ? void 0 : t.id,
     channelId: E.id,
     application: a
-  }) === g.Fw.CAN_JOIN, N = null != (n = E.getGuildId()) ? n : void 0, P = i.useId(), M = a.id, L = i.useMemo(() => ({
+  }) === g.Fw.CAN_JOIN, w = null != (n = E.getGuildId()) ? n : void 0, R = i.useId(), M = a.id, L = i.useMemo(() => ({
     channel: E,
     type: "channel"
   }), [E]), {
@@ -116,13 +116,13 @@ function Y(e) {
   } = (0, Z.Z)({
     applicationId: M,
     context: L,
-    launchingComponentId: P
+    launchingComponentId: R
   });
   return (0, l.jsxs)("div", {
     className: D.splash,
-    children: [(0, l.jsx)(F, {
+    children: [(0, l.jsx)(V, {
       avatarSize: S,
-      guildId: N,
+      guildId: w,
       channelId: E.id,
       users: b
     }), (0, l.jsx)(c.Text, {
@@ -131,10 +131,10 @@ function Y(e) {
         [D.medium]: 1 === v
       }),
       variant: "text-sm/normal",
-      children: b.length > 1 ? T.NW.formatToPlainString(T.t.cpe6CA, {
+      children: b.length > 1 ? N.intl.formatToPlainString(N.t.cpe6CA, {
         username: _,
         count: b.length - 1
-      }) : T.NW.formatToPlainString(T.t["7Uuia2"], {
+      }) : N.intl.formatToPlainString(N.t["7Uuia2"], {
         username: _
       })
     }), (0, l.jsx)(c.Text, {
@@ -153,17 +153,17 @@ function Y(e) {
             activityChannelId: E.id,
             locationObject: I.location,
             analyticsLocations: O,
-            componentId: P,
+            componentId: R,
             instanceId: y.compositeInstanceId,
             isContextlessActivity: y.location.kind === s.E.CONTEXTLESS
           })
         },
         submitting: k,
-        size: V(v),
+        size: Y(v),
         className: D.button,
         look: c.iLD.FILLED,
         color: c.zxk.Colors.WHITE,
-        children: T.NW.string(T.t["4i2vj4"])
+        children: N.intl.string(N.t["4i2vj4"])
       }) : null
     })]
   })
@@ -186,16 +186,16 @@ function H(e) {
     applicationId: c,
     names: k,
     size: L
-  }), g = !r && f, y = !f, Z = !f && !r, w = (0, u.e7)([P.Z, N.Z], () => (0, I.Z)({
-    LayerStore: P.Z,
-    PopoutWindowStore: N.Z
+  }), g = !r && f, y = !f, Z = !f && !r, P = (0, u.e7)([R.Z, w.Z], () => (0, I.Z)({
+    LayerStore: R.Z,
+    PopoutWindowStore: w.Z
   }));
   return i.useEffect(() => {
-    if (g && null != d && !w) {
+    if (g && null != d && !P) {
       let e = (0, O.Z)(d.location.id, d.applicationId);
       (0, b.jy)(e)
     }
-  }, [g, d, w]), (0, l.jsx)(j.Gt, {
+  }, [g, d, P]), (0, l.jsx)(j.Gt, {
     value: s,
     children: (0, l.jsxs)("div", {
       className: D.container,
@@ -206,7 +206,7 @@ function H(e) {
         className: D.splashImage,
         alt: m.name,
         src: p
-      }) : null, Z && null != m && (0, l.jsx)(Y, {
+      }) : null, Z && null != m && (0, l.jsx)(W, {
         width: n,
         channel: o,
         participants: t.participants,

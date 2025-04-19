@@ -45,10 +45,10 @@ let _ = () => {
     s.Z.interact()
   }
   return i.useEffect(() => (e ? t.current = (0, o.h7j)(e => (0, r.jsx)(l.default, f({
-    title: u.NW.string(u.t.dLLxCw),
-    body: u.NW.string(u.t["64lmt7"]),
+    title: u.intl.string(u.t.dLLxCw),
+    body: u.intl.string(u.t["64lmt7"]),
     onConfirm: d,
-    confirmText: u.NW.string(u.t.BddRzc)
+    confirmText: u.intl.string(u.t.BddRzc)
   }, e))) : n(), () => {
     n()
   }), [e]), null

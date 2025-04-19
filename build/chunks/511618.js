@@ -56,7 +56,7 @@ let h = 3,
       className: p.upsell,
       children: [(0, r.jsx)(o.z5, {
         children: (0, r.jsx)(o.BR, {
-          children: _.NW.format(_.t["uEky4+"], {
+          children: _.intl.format(_.t["uEky4+"], {
             count: t.length
           })
         })

@@ -1,6 +1,6 @@
 /** Chunk was on 32652 **/
 B.d(g, {
-  Z: () => d
+  Z: () => o
 }), B(388685);
 var C = B(200651),
   Q = B(192379),
@@ -15,15 +15,15 @@ var C = B(200651),
   r = B(116175),
   t = B(817239),
   n = B(388032),
-  o = B(602268);
-let d = function(A) {
+  d = B(602268);
+let o = function(A) {
   let {
     className: g,
     guildId: B,
     badge: w,
-    primaryColor: d,
-    secondaryColor: M
-  } = A, [s, L] = Q.useState(!1), X = Q.useMemo(() => e.go.every(A => A.primary !== d || A.secondary !== M), [d, M]);
+    primaryColor: o,
+    secondaryColor: s
+  } = A, [M, L] = Q.useState(!1), X = Q.useMemo(() => e.go.every(A => A.primary !== o || A.secondary !== s), [o, s]);
 
   function c(A) {
     let g = {};
@@ -32,13 +32,13 @@ let d = function(A) {
   return (0, C.jsxs)("div", {
     className: g,
     children: [(0, C.jsx)(E.vwX, {
-      className: o.sectionTitle,
-      children: n.NW.string(t.Z.zSbMdX)
+      className: d.sectionTitle,
+      children: n.intl.string(t.default.zSbMdX)
     }), (0, C.jsxs)("div", {
-      className: o.pickerGrid,
+      className: d.pickerGrid,
       children: [e.go.map(A => (0, C.jsx)(E.P3F, {
-        className: D()(o.pickerItem, {
-          [o.pickerItemSelected]: A.primary === d && A.secondary === M
+        className: D()(d.pickerItem, {
+          [d.pickerItemSelected]: A.primary === o && A.secondary === s
         }),
         onClick: () => c(A),
         children: (0, C.jsx)(v.A, {
@@ -51,8 +51,8 @@ let d = function(A) {
       }, "".concat(A.primary).concat(A.secondary))), (0, C.jsx)(I.Z, {
         showSecondaryColor: r.ME[w] >= 2,
         palette: {
-          primary: d,
-          secondary: M
+          primary: o,
+          secondary: s
         },
         onPrimaryColorChange: A => {
           c({
@@ -64,7 +64,7 @@ let d = function(A) {
             secondary: (0, f.Rf)(A)
           })
         },
-        shouldShow: s,
+        shouldShow: M,
         onRequestClose: () => L(!1),
         children: A => {
           var g, B;
@@ -89,8 +89,8 @@ let d = function(A) {
             onClick: () => {
               L(A => !A)
             },
-            className: D()(o.pickerItem, {
-              [o.pickerItemSelected]: X
+            className: D()(d.pickerItem, {
+              [d.pickerItemSelected]: X
             }),
             children: (0, C.jsx)(E.ilE, {
               size: "custom",

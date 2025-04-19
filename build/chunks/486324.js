@@ -2,12 +2,12 @@
 "use strict";
 n.d(t, {
   C5: () => y,
-  Ff: () => N,
+  Ff: () => A,
   Ij: () => m,
   L0: () => s,
   MY: () => h,
   N8: () => _,
-  PB: () => A,
+  PB: () => N,
   SP: () => I,
   SW: () => O,
   US: () => o,
@@ -53,9 +53,9 @@ let a = 568,
   I = 552 / (17 / 6),
   S = 552 / (16 / 9),
   T = 220.8,
-  N = r.HE.width / r.HE.height,
-  A = a / N,
-  C = o / N;
+  A = r.HE.width / r.HE.height,
+  N = a / A,
+  C = o / A;
 var R = function(e) {
   return e[e.CROP_GIF_START = 0] = "CROP_GIF_START", e[e.CROP_GIF_COMPLETE = 1] = "CROP_GIF_COMPLETE", e[e.CROP_GIF_ERROR = 2] = "CROP_GIF_ERROR", e
 }({})

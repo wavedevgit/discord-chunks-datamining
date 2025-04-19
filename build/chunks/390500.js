@@ -28,13 +28,13 @@ let c = function(e) {
       children: [(0, r.jsx)(l.X6q, {
         variant: "heading-lg/semibold",
         color: "header-primary",
-        children: (null == n ? void 0 : n.name) != null ? o.NW.formatToPlainString(o.t["0Qlu//"], {
+        children: (null == n ? void 0 : n.name) != null ? o.intl.formatToPlainString(o.t["0Qlu//"], {
           guildName: n.name
-        }) : o.NW.string(o.t["5iLvS0"])
+        }) : o.intl.string(o.t["5iLvS0"])
       }), (0, r.jsx)(l.Text, {
         variant: "text-md/medium",
         color: "header-secondary",
-        children: o.NW.string(o.t.FdsK4u)
+        children: o.intl.string(o.t.FdsK4u)
       })]
     }), (0, r.jsx)(l.zxk, {
       fullWidth: !0,
@@ -42,7 +42,7 @@ let c = function(e) {
       look: l.zxk.Looks.FILLED,
       color: l.zxk.Colors.RED,
       size: l.zxk.Sizes.LARGE,
-      children: o.NW.string(o.t.g9tK0t)
+      children: o.intl.string(o.t.g9tK0t)
     })]
   })
 }

@@ -32,10 +32,10 @@ function p(e, t) {
     quiet_mode_enabled: e,
     quiet_mode_enabled_old: n
   }), l.Z.getStatus() === d.Skl.DND && e && null == t && i.Z.show({
-    title: f.NW.string(f.t["B+cbLS"]),
-    body: f.NW.string(f.t.CYVgLC),
-    cancelText: f.NW.string(f.t.f3Pet7),
-    confirmText: f.NW.string(f.t.BddRzc),
+    title: f.intl.string(f.t["B+cbLS"]),
+    body: f.intl.string(f.t.CYVgLC),
+    cancelText: f.intl.string(f.t.f3Pet7),
+    confirmText: f.intl.string(f.t.BddRzc),
     onConfirm: () => {
       (0, a.Z)({
         nextStatus: d.Skl.ONLINE

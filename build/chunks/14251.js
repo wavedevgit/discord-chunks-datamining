@@ -31,17 +31,17 @@ let u = (e, t) => {
         className: c.username,
         children: l.ZP.getName(n, i, e)
       });
-    return t >= 4 ? o.NW.format(o.t.qfo6KS, {
+    return t >= 4 ? o.intl.format(o.t.qfo6KS, {
       usernameHook1: () => d(u[0]),
       usernameHook2: () => d(u[1]),
       numberOfOtherUsers: t - e.length
-    }) : 3 === t ? o.NW.format(o.t["67ZE+/"], {
+    }) : 3 === t ? o.intl.format(o.t["67ZE+/"], {
       usernameHook1: () => d(u[0]),
       usernameHook2: () => d(u[1])
-    }) : 2 === t ? o.NW.format(o.t.veV4IC, {
+    }) : 2 === t ? o.intl.format(o.t.veV4IC, {
       usernameHook1: () => d(u[0]),
       usernameHook2: () => d(u[1])
-    }) : o.NW.format(o.t["4WHCtr"], {
+    }) : o.intl.format(o.t["4WHCtr"], {
       usernameHook: () => d(u[0])
     })
   }

@@ -35,13 +35,13 @@ function g(e) {
       }
       return i
     }(e, ["applicationId"]);
-  let [_, E] = i.useState(!1), [O] = (0, o.Z)([m]), N = null != (g = null == O ? void 0 : O.name) ? g : "This Activity";
+  let [_, E] = i.useState(!1), [O] = (0, o.Z)([m]), y = null != (g = null == O ? void 0 : O.name) ? g : "This Activity";
   i.useEffect(() => {
     c.default.track(d.rMx.OPEN_MODAL, {
       type: f
     })
   }, []);
-  let y = () => {
+  let I = () => {
     let e = "temporary";
     _ && (e = "permanent", a.ZP.updatedUnsyncedSettings({
       disableActivityHardwareAccelerationPrompt: !0
@@ -69,16 +69,16 @@ function g(e) {
     return e
   }({
     className: h.root,
-    "aria-label": p.NW.string(p.t.NQkK4u)
+    "aria-label": p.intl.string(p.t.NQkK4u)
   }, b), n = n = {
     children: [(0, r.jsxs)(l.xBx, {
       separator: !1,
       children: [(0, r.jsx)(l.Text, {
         className: h.__invalid_header,
         variant: "text-lg/normal",
-        children: p.NW.string(p.t.NQkK4u)
+        children: p.intl.string(p.t.NQkK4u)
       }), (0, r.jsx)(l.olH, {
-        onClick: y,
+        onClick: I,
         className: h.closeButton
       })]
     }), (0, r.jsx)(l.hzk, {
@@ -86,8 +86,8 @@ function g(e) {
       children: (0, r.jsx)(l.Text, {
         variant: "text-md/normal",
         className: h.__invalid_ratingBody,
-        children: p.NW.format(p.t.B9eiaG, {
-          applicationName: N
+        children: p.intl.format(p.t.B9eiaG, {
+          applicationName: y
         })
       })
     }), (0, r.jsxs)(l.mzw, {
@@ -100,12 +100,12 @@ function g(e) {
         onChange: () => E(!_),
         children: (0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
-          children: p.NW.string(p.t["5E9SBw"])
+          children: p.intl.string(p.t["5E9SBw"])
         })
       }), (0, r.jsx)(l.zxk, {
         color: l.zxk.Colors.PRIMARY,
-        onClick: y,
-        children: p.NW.string(p.t["Ibf5/v"])
+        onClick: I,
+        children: p.intl.string(p.t["Ibf5/v"])
       }), (0, r.jsx)(l.zxk, {
         color: l.zxk.Colors.BRAND,
         onClick: () => {
@@ -113,7 +113,7 @@ function g(e) {
             application_id: m
           }), u.ZP.setEnableHardwareAcceleration(!0)
         },
-        children: p.NW.string(p.t["/wlDqq"])
+        children: p.intl.string(p.t["/wlDqq"])
       })]
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

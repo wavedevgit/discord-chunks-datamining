@@ -33,8 +33,8 @@ let g = "33kozedd0zs6fbauka98psnc7zwom2s",
   I = 128,
   S = null,
   T = 0,
-  N = null,
-  A = new Set,
+  A = null,
+  N = new Set,
   C = {};
 
 function R(e) {
@@ -71,7 +71,7 @@ class D {
     this._started || (this._started = !0, _.Z.isFetching() ? c.Z.fetch() : this._check())
   }
   stop() {
-    this._started = !1, N = null, T = 0, null != this._nextCheck && clearTimeout(this._nextCheck), l.Z.dispatch({
+    this._started = !1, A = null, T = 0, null != this._nextCheck && clearTimeout(this._nextCheck), l.Z.dispatch({
       type: "STREAMING_UPDATE",
       stream: null
     })
@@ -114,7 +114,7 @@ class D {
   }
   async _checkYouTube(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
-    if (N = null, e.revoked || A.has(e.id)) return null;
+    if (A = null, e.revoked || N.has(e.id)) return null;
     try {
       var n;
       let {
@@ -144,7 +144,7 @@ class D {
       } = r[0], l = {
         large_image: null != (n = (0, d.f)(h.ABu.YOUTUBE, o.high.url)) ? n : void 0
       }, c = null != a && "" !== a ? a.slice(0, I) : void 0;
-      return N = {
+      return A = {
         url: b(i),
         name: u.Z.get(h.ABu.YOUTUBE).name,
         details: c,
@@ -152,7 +152,7 @@ class D {
       }
     } catch (n) {
       if (401 === n.status && null == t) return c.Z.refreshAccessToken(e.type, e.id).then(t => this._checkYouTube(e, t)).catch(() => null);
-      return 403 === n.status && A.add(e.id), null
+      return 403 === n.status && N.add(e.id), null
     }
   }
   _check() {
@@ -166,7 +166,7 @@ class D {
       if (this._started) {
         var t;
         let n = null == (t = e.find(e => "fulfilled" === e.status && null != e.value)) ? void 0 : t.value;
-        null == n && null != N && (n = N), l.Z.dispatch({
+        null == n && null != A && (n = A), l.Z.dispatch({
           type: "STREAMING_UPDATE",
           stream: n
         })

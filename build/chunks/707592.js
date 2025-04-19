@@ -60,7 +60,7 @@ function u(e) {
       onChange: l,
       value: n.response,
       autofocus: t,
-      placeholder: r.NW.string(r.t["Sqn+Wl"])
+      placeholder: r.intl.string(r.t["Sqn+Wl"])
     })
   })
 }

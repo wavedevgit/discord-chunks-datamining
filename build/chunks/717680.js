@@ -4,10 +4,10 @@ n.d(t, {
 }), n(388685);
 var r = n(192379);
 let i = !1,
-  a = new Set;
+  l = new Set;
 
-function l(e) {
-  e !== i && (i = e, a.forEach(e => e(i)))
+function a(e) {
+  e !== i && (i = e, l.forEach(e => e(i)))
 }
 
 function o() {
@@ -16,17 +16,17 @@ function o() {
     let e = e => {
       t(e)
     };
-    return a.add(e), () => {
-      a.delete(e)
+    return l.add(e), () => {
+      l.delete(e)
     }
   }, []), e
 }
 window.addEventListener("keydown", e => {
-  l(e.shiftKey)
+  a(e.shiftKey)
 }), window.addEventListener("keyup", e => {
-  l(e.shiftKey)
+  a(e.shiftKey)
 }), window.addEventListener("mousemove", e => {
-  l(e.shiftKey)
+  a(e.shiftKey)
 }), window.addEventListener("blur", () => {
-  l(!1)
+  a(!1)
 })

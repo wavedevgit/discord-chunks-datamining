@@ -1,22 +1,22 @@
 /** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  Z: () => s
+  Z: () => l
 }), n(388685);
 var r = n(192379),
   i = n(586739);
-let s = function() {
+let l = function() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
     {
       refreshOnDepChange: t
     } = e,
-    [n, s] = r.useState([]),
-    [l, a] = r.useState(!0),
+    [n, l] = r.useState([]),
+    [s, a] = r.useState(!0),
     o = async () => {
       a(!0);
       try {
         let e = await i.Z.fetchTeams(!0);
-        s(e.body)
+        l(e.body)
       } catch (e) {}
       a(!1)
     }, c = r.useRef(!0);
@@ -24,7 +24,7 @@ let s = function() {
     (c.current || t) && (c.current = !1, o())
   }, [t]), {
     teams: n,
-    loading: l,
+    loading: s,
     refresh: o
   }
 }

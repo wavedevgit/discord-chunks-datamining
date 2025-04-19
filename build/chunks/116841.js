@@ -1,8 +1,8 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  c: () => i
+  c: () => r
 });
-let r = (0, n(987170).Z)({
+let i = (0, n(987170).Z)({
   kind: "user",
   id: "2025-03_activity_privacy_per_guild_settings",
   label: "Show per-guild activity privacy settings",
@@ -18,8 +18,8 @@ let r = (0, n(987170).Z)({
   }]
 });
 
-function i(e) {
-  return r.useExperiment({
+function r(e) {
+  return i.useExperiment({
     location: e
   }, {
     autoTrackExposure: !0

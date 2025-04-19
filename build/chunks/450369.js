@@ -1,7 +1,7 @@
 /** Chunk was on 3656 **/
 n.d(t, {
-  Q: () => W,
-  Z: () => G
+  Q: () => U,
+  Z: () => F
 });
 var r = n(200651),
   i = n(192379),
@@ -26,11 +26,11 @@ var r = n(200651),
   j = n(880395),
   O = n(670188),
   E = n(221241),
-  N = n(199902),
-  I = n(314897),
-  P = n(430824),
-  S = n(496675),
-  Z = n(979651),
+  I = n(199902),
+  P = n(314897),
+  S = n(430824),
+  Z = n(496675),
+  N = n(979651),
   T = n(88751),
   A = n(252132),
   w = n(248400),
@@ -69,8 +69,8 @@ function D(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let W = 16 / 9,
-  U = e => {
+let U = 16 / 9,
+  B = e => {
     let {
       stageParticipant: t,
       rtcParticipant: n,
@@ -98,7 +98,7 @@ let W = 16 / 9,
       }, e), {
         children: (0, r.jsx)(A.Z, {
           participant: n,
-          aspectRatio: W,
+          aspectRatio: U,
           blocked: f,
           ignored: m,
           channel: l,
@@ -114,7 +114,7 @@ let W = 16 / 9,
       }))
     })
   },
-  B = e => {
+  G = e => {
     let {
       stageParticipant: t,
       rtcParticipant: n,
@@ -129,15 +129,15 @@ let W = 16 / 9,
       id: m,
       blocked: g,
       ignored: _
-    } = t, j = (0, s.Wu)([N.Z], () => N.Z.getAllActiveStreams(), []), {
+    } = t, j = (0, s.Wu)([I.Z], () => I.Z.getAllActiveStreams(), []), {
       selectedParticipant: O,
       largeStream: E
     } = (0, s.cj)([b.Z], () => ({
       selectedParticipant: null != l ? b.Z.getSelectedParticipant(l.id) : null,
       largeStream: null != l && b.Z.getStageStreamSize(l.id)
-    })), I = i.useCallback((e, t) => {
+    })), P = i.useCallback((e, t) => {
       if (e.type === k.fO.STREAM && 0 === j.filter(t => (0, C.V9)(t) === e.id && t.state !== R.jm8.ENDED).length) {
-        if (!(0, x.p9)(l, Z.Z, P.Z, S.Z, y.Z)[0]) return;
+        if (!(0, x.p9)(l, N.Z, S.Z, Z.Z, y.Z)[0]) return;
         (0, p.rn)((0, C.my)(e.id), {
           forceMultiple: t.shiftKey
         })
@@ -145,7 +145,7 @@ let W = 16 / 9,
     }, [j, l, O, E]);
     return (0, r.jsx)(A.Z, {
       participant: n,
-      aspectRatio: W,
+      aspectRatio: U,
       fit: n.type === k.fO.USER ? v.L.COVER : void 0,
       blocked: g,
       ignored: _,
@@ -153,7 +153,7 @@ let W = 16 / 9,
       className: M.tile,
       inCall: !0,
       inPopout: h,
-      onClick: I,
+      onClick: P,
       onContextMenu: d,
       paused: !1,
       pulseSpeakingIndicator: !f.enabled,
@@ -161,7 +161,7 @@ let W = 16 / 9,
       children: a && n.type === k.fO.USER && (0, r.jsx)(w.Z, {})
     }, m)
   },
-  G = i.memo(function(e) {
+  F = i.memo(function(e) {
     var t;
     let {
       participant: i,
@@ -169,7 +169,7 @@ let W = 16 / 9,
       width: c
     } = e, {
       newestAnalyticsLocation: u
-    } = (0, m.ZP)(f.Z.STAGE_TILE), p = (0, h.bp)(), y = l.getGuildId(), C = I.default.getId(), {
+    } = (0, m.ZP)(f.Z.STAGE_TILE), p = (0, h.bp)(), y = l.getGuildId(), C = P.default.getId(), {
       simplifiedSettingsEnabled: x
     } = (0, E.Z)({
       location: "StageTile"
@@ -177,9 +177,9 @@ let W = 16 / 9,
     o()(null != y, "Channel cannot be guildless");
     let {
       user: v
-    } = i, O = (0, s.e7)([b.Z], () => b.Z.getParticipant(l.id, i.id), [l.id, i.id]), N = (0, s.e7)([T.ZP], () => T.ZP.isModerator(v.id, l.id), [l.id, v.id]);
+    } = i, O = (0, s.e7)([b.Z], () => b.Z.getParticipant(l.id, i.id), [l.id, i.id]), I = (0, s.e7)([T.ZP], () => T.ZP.isModerator(v.id, l.id), [l.id, v.id]);
     if (null == O || O.type === k.fO.ACTIVITY || O.type === k.fO.PRESENCE_EMBEDDED_ACTIVITY) return null;
-    let P = e => {
+    let S = e => {
         (0, g.h)({
           type: a.ImpressionTypes.MENU,
           name: a.ImpressionNames.CALL_TILE_CONTEXT_MENU,
@@ -190,11 +190,11 @@ let W = 16 / 9,
           }
         })
       },
-      S = (e, t, i, o) => {
+      Z = (e, t, i, o) => {
         switch (e.type) {
           case k.fO.HIDDEN_STREAM:
           case k.fO.STREAM:
-            P(k.TH.STREAM), (0, d.jW)(t, async () => {
+            S(k.TH.STREAM), (0, d.jW)(t, async () => {
               let {
                 default: t
               } = await n.e("22183").then(n.bind(n, 987281));
@@ -214,7 +214,7 @@ let W = 16 / 9,
             return;
           case k.fO.USER:
           default:
-            if (P(k.TH.USER), x && i) return (0, j.D)(t, v, l, {
+            if (S(k.TH.USER), x && i) return (0, j.D)(t, v, l, {
               context: p
             }, (e, t) => (0, _.o)({
               menuName: e,
@@ -245,25 +245,25 @@ let W = 16 / 9,
             })
         }
       };
-    return O.type !== k.fO.USER || (null == (t = O.voiceState) ? void 0 : t.selfVideo) ? (0, r.jsx)(B, {
+    return O.type !== k.fO.USER || (null == (t = O.voiceState) ? void 0 : t.selfVideo) ? (0, r.jsx)(G, {
       stageParticipant: i,
       rtcParticipant: O,
       channel: l,
       guildId: y,
       user: v,
       width: c,
-      isModerator: N,
-      onContextMenu: S,
+      isModerator: I,
+      onContextMenu: Z,
       inPopout: p === R.IlC.POPOUT
-    }) : (0, r.jsx)(U, {
+    }) : (0, r.jsx)(B, {
       stageParticipant: i,
       rtcParticipant: O,
       channel: l,
       guildId: y,
       user: v,
       width: c,
-      isModerator: N,
-      onContextMenu: S,
+      isModerator: I,
+      onContextMenu: Z,
       inPopout: p === R.IlC.POPOUT
     })
   })

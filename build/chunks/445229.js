@@ -49,7 +49,7 @@ function h(e) {
       className: f.__invalid_header,
       children: (0, r.jsxs)(s.vwX, {
         className: f.title,
-        children: [p.NW.string(p.t.WTozwc), (0, r.jsxs)("div", {
+        children: [p.intl.string(p.t.WTozwc), (0, r.jsxs)("div", {
           className: f.userCountPill,
           children: [(0, r.jsx)(s.Text, {
             color: "text-normal",

@@ -2,11 +2,11 @@
 n.d(t, {
   Z: () => f
 }), n(388685);
-var r = n(200651),
-  i = n(192379),
+var i = n(200651),
+  r = n(192379),
   s = n(704215),
-  a = n(481060),
-  l = n(906732),
+  l = n(481060),
+  a = n(906732),
   o = n(243778),
   c = n(158947),
   d = n(318110),
@@ -21,34 +21,34 @@ function f(e) {
     user: t
   } = e, {
     analyticsLocations: n
-  } = (0, l.ZP)(), f = t.nameplate, {
+  } = (0, a.ZP)(), f = t.nameplate, {
     pendingNameplate: b,
     pendingErrors: _
-  } = (0, u._A)(), N = [s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE], [x, E] = (0, o.US)(N), j = x === s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, C = i.useCallback(() => {
-    E(g.L.TAKE_ACTION), (0, d.f)({
+  } = (0, u._A)(), x = [s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE], [E, j] = (0, o.US)(x), C = E === s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, O = r.useCallback(() => {
+    j(g.L.TAKE_ACTION), (0, d.f)({
       analyticsLocations: n
     })
-  }, [n, E]), O = i.useCallback(() => {
+  }, [n, j]), S = r.useCallback(() => {
     (0, u.Wh)(null)
   }, []);
-  return (0, r.jsx)(m.Z, {
-    title: p.NW.string(p.t.x5CoXV),
-    titleIcon: j ? (0, r.jsx)(c.Z, {
+  return (0, i.jsx)(m.Z, {
+    title: p.intl.string(p.t.x5CoXV),
+    titleIcon: C ? (0, i.jsx)(c.Z, {
       className: h.newBadge
     }) : void 0,
     errors: _,
-    children: (0, r.jsxs)("div", {
+    children: (0, i.jsxs)("div", {
       className: h.section,
-      children: [(0, r.jsx)(a.zxk, {
-        size: a.zxk.Sizes.SMALL,
-        onClick: C,
-        children: p.NW.string(p.t.NzNLv7)
-      }), (void 0 === b ? null != f : null != b) && (0, r.jsx)(a.zxk, {
-        size: a.zxk.Sizes.SMALL,
-        color: a.zxk.Colors.PRIMARY,
-        look: a.zxk.Looks.LINK,
+      children: [(0, i.jsx)(l.zxk, {
+        size: l.zxk.Sizes.SMALL,
         onClick: O,
-        children: p.NW.string(p.t.Vskkdn)
+        children: p.intl.string(p.t.NzNLv7)
+      }), (void 0 === b ? null != f : null != b) && (0, i.jsx)(l.zxk, {
+        size: l.zxk.Sizes.SMALL,
+        color: l.zxk.Colors.PRIMARY,
+        look: l.zxk.Looks.LINK,
+        onClick: S,
+        children: p.intl.string(p.t.Vskkdn)
       })]
     })
   })

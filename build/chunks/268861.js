@@ -28,11 +28,11 @@ function d(e) {
         children: [(0, i.jsx)(l.X6q, {
           variant: "heading-xl/medium",
           color: "header-primary",
-          children: c.NW.string(c.t.jzjJQk)
+          children: c.intl.string(c.t.jzjJQk)
         }), (0, i.jsx)(l.Text, {
           variant: "text-md/normal",
           color: "text-muted",
-          children: c.NW.string(c.t["5dOfxc"])
+          children: c.intl.string(c.t["5dOfxc"])
         })]
       }), (0, i.jsxs)("div", {
         className: u.widgetCalloutContainer,
@@ -41,28 +41,28 @@ function d(e) {
           children: [(0, i.jsx)(l.qjv, {}), (0, i.jsx)(l.Text, {
             variant: "text-md/medium",
             color: "interactive-normal",
-            children: c.NW.string(c.t.S6VRyM)
+            children: c.intl.string(c.t.S6VRyM)
           })]
         }), (0, i.jsxs)("div", {
           className: u.widgetCallout,
           children: [(0, i.jsx)(l.Dkj, {}), (0, i.jsx)(l.Text, {
             variant: "text-md/medium",
             color: "interactive-normal",
-            children: c.NW.string(c.t.xq8CKS)
+            children: c.intl.string(c.t.xq8CKS)
           })]
         }), (0, i.jsxs)("div", {
           className: u.widgetCallout,
           children: [(0, i.jsx)(l.Odl, {}), (0, i.jsx)(l.Text, {
             variant: "text-md/medium",
             color: "interactive-normal",
-            children: c.NW.string(c.t.GwpRe3)
+            children: c.intl.string(c.t.GwpRe3)
           })]
         }), (0, i.jsxs)("div", {
           className: u.widgetCallout,
           children: [(0, i.jsx)(l.KY1, {}), (0, i.jsx)(l.Text, {
             variant: "text-md/medium",
             color: "interactive-normal",
-            children: c.NW.string(c.t.VUoC5O)
+            children: c.intl.string(c.t.VUoC5O)
           })]
         })]
       })]

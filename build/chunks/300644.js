@@ -1,10 +1,10 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  O: () => i
+  O: () => r
 });
-var r = n(63063);
-let i = {
+var i = n(63063);
+let r = {
   binds: ["mod+shift+h", "f1"],
   comboKeysBindGlobal: !0,
-  action: () => (window.open(r.w), !1)
+  action: () => (window.open(i.w), !1)
 }

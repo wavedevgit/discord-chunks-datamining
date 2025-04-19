@@ -17,7 +17,7 @@ function c(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let u = l.NW.currentLocale;
+let u = l.intl.currentLocale;
 
 function d() {
   var e, t;
@@ -36,7 +36,7 @@ class _ extends(r = i.ZP.Store) {
     return u
   }
   get systemLocale() {
-    return l.Kj
+    return l.systemLocale
   }
 }
 c(_, "displayName", "LocaleStore");

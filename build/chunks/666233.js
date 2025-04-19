@@ -24,7 +24,7 @@ let h = function(e) {
   return null == (0, l.e7)([a.default], () => null != h ? h : a.default.getCurrentUser()) ? null : (0, r.jsxs)(r.Fragment, {
     children: [j && (0, r.jsx)(o.Ih, {
       icon: i.b7C,
-      text: x.NW.string(x.t.v2z4c3),
+      text: x.intl.string(x.t.v2z4c3),
       meetsRequirement: !0
     }), n.map((e, t) => (function(e, t) {
       switch (e.field_type) {

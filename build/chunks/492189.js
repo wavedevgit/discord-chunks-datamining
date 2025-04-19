@@ -23,8 +23,8 @@ var r = n(98405),
   I = n(713411),
   S = n(568033),
   T = n(769827),
-  N = n(264750).f,
-  A = n(522169),
+  A = n(264750).f,
+  N = n(522169),
   C = n(920029).forEach,
   R = n(108015),
   P = n(573078),
@@ -42,8 +42,8 @@ var r = n(98405),
   V = c.ArrayBuffer,
   Z = V.prototype,
   H = c.DataView,
-  W = l.NATIVE_ARRAY_BUFFER_VIEWS,
-  Y = l.TYPED_ARRAY_TAG,
+  Y = l.NATIVE_ARRAY_BUFFER_VIEWS,
+  W = l.TYPED_ARRAY_TAG,
   K = l.TypedArray,
   z = l.TypedArrayPrototype,
   q = l.isTypedArray,
@@ -70,10 +70,10 @@ var r = n(98405),
   en = function(e, t, n) {
     return ee(e, t = E(t)) && v(n) && b(n, "value") && !b(n, "get") && !b(n, "set") && !n.configurable && (!b(n, "writable") || n.writable) && (!b(n, "enumerable") || n.enumerable) ? (e[t] = n.value, e) : G(e, t, n)
   };
-o ? (W || (D.f = et, w.f = en, J(z, "buffer"), J(z, "byteOffset"), J(z, "byteLength"), J(z, "length")), r({
+o ? (Y || (D.f = et, w.f = en, J(z, "buffer"), J(z, "byteOffset"), J(z, "byteLength"), J(z, "length")), r({
   target: "Object",
   stat: !0,
-  forced: !W
+  forced: !Y
 }, {
   getOwnPropertyDescriptor: et,
   defineProperty: en
@@ -105,11 +105,11 @@ o ? (W || (D.f = et, w.f = en, J(z, "buffer"), J(z, "byteOffset"), J(z, "byteLen
         enumerable: !0
       })
     };
-  W ? s && (E = t(function(e, t, n, r) {
+  Y ? s && (E = t(function(e, t, n, r) {
     return u(e, b), M(function() {
-      return v(t) ? $(t) ? void 0 !== r ? new _(t, m(n, o), r) : void 0 !== n ? new _(t, m(n, o)) : new _(t) : q(t) ? L(E, t) : a(A, E, t) : new _(h(t))
+      return v(t) ? $(t) ? void 0 !== r ? new _(t, m(n, o), r) : void 0 !== n ? new _(t, m(n, o)) : new _(t) : q(t) ? L(E, t) : a(N, E, t) : new _(h(t))
     }(), e, E)
-  }), T && T(E, K), C(N(_), function(e) {
+  }), T && T(E, K), C(A(_), function(e) {
     e in E || f(E, e, _[e])
   }), E.prototype = b) : (E = t(function(e, t, n, r) {
     u(e, b);
@@ -124,7 +124,7 @@ o ? (W || (D.f = et, w.f = en, J(z, "buffer"), J(z, "byteOffset"), J(z, "byteLen
         } else if ((s = p(r) * o) + d > f) throw new F(X);
         l = s / o
       } else if (q(t)) return L(E, t);
-    else return a(A, E, t);
+    else return a(N, E, t);
     else i = new V(s = (l = h(t)) * o);
     for (j(e, {
         buffer: i,
@@ -133,12 +133,12 @@ o ? (W || (D.f = et, w.f = en, J(z, "buffer"), J(z, "byteOffset"), J(z, "byteLen
         length: l,
         view: new H(i)
       }); c < l;) P(e, c++)
-  }), T && T(E, K), b = E.prototype = I(z)), b.constructor !== E && f(b, "constructor", E), U(b).TypedArrayConstructor = E, Y && f(b, Y, l);
+  }), T && T(E, K), b = E.prototype = I(z)), b.constructor !== E && f(b, "constructor", E), U(b).TypedArrayConstructor = E, W && f(b, W, l);
   var w = E !== _;
   y[l] = E, r({
     global: !0,
     constructor: !0,
     forced: w,
-    sham: !W
+    sham: !Y
   }, y), Q in E || f(E, Q, o), Q in b || f(b, Q, o), R(l)
 }) : e.exports = function() {}

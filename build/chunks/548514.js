@@ -3,9 +3,9 @@ n.d(t, {
   Z: () => D
 }), n(388685), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(35282);
 var r = n(200651),
-  a = n(192379),
-  i = n(120356),
-  l = n.n(i),
+  i = n(192379),
+  a = n(120356),
+  l = n.n(a),
   s = n(873546),
   o = n(442837),
   c = n(481060),
@@ -24,11 +24,11 @@ var r = n(200651),
   j = n(594174),
   y = n(626135),
   I = n(572004),
-  N = n(135431),
-  O = n(881294),
-  P = n(258971),
-  S = n(98449),
-  E = n(981631),
+  O = n(135431),
+  P = n(881294),
+  S = n(258971),
+  E = n(98449),
+  N = n(981631),
   T = n(388032),
   A = n(284944);
 let L = "start_application_install",
@@ -50,7 +50,7 @@ function Z(e) {
     align: "top",
     animation: c.yRy.Animation.NONE,
     children: e => {
-      var t, a;
+      var t, i;
       return (0, r.jsx)(c.zxk, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -76,21 +76,21 @@ function Z(e) {
           [A.small]: "sm" === n
         }),
         innerClassName: A.innerIconButton,
-        "aria-label": T.NW.string(T.t.UKOtz8)
-      }, e), a = a = {
+        "aria-label": T.intl.string(T.t.UKOtz8)
+      }, e), i = i = {
         children: (0, r.jsx)(c.xhG, {
           size: "xs",
           color: "currentColor"
         })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(a)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(a, e))
+      })(Object(i)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
       }), t))
     }
   })
@@ -100,17 +100,17 @@ function k(e) {
   let {
     application: t,
     variant: n,
-    size: i,
+    size: a,
     color: o
   } = e, {
     onClickInstallApplication: d,
     canInstall: u
   } = function(e) {
-    let t = (0, O.nu)(),
-      n = a.useCallback(() => {
+    let t = (0, P.nu)(),
+      n = i.useCallback(() => {
         var t;
-        let n = null != (t = P.z8.getField("guildId")) ? t : void 0;
-        (0, N.L)({
+        let n = null != (t = S.z8.getField("guildId")) ? t : void 0;
+        (0, O.L)({
           applicationId: e.id,
           customInstallUrl: e.custom_install_url,
           installParams: e.install_params,
@@ -119,7 +119,7 @@ function k(e) {
           source: "product_page"
         })
       }, [e]);
-    return a.useEffect(() => {
+    return i.useEffect(() => {
       let e = new URL(location.href);
       if (t && "true" === e.searchParams.get(L)) {
         e.searchParams.delete(L);
@@ -127,11 +127,11 @@ function k(e) {
         (0, v.dL)(t), n()
       }
     }, [t, n]), {
-      onClickInstallApplication: a.useCallback(() => {
-        if ((0, O.zZ)(E.rMx.APP_DIRECTORY_INSTALL_CLICKED, {
+      onClickInstallApplication: i.useCallback(() => {
+        if ((0, P.zZ)(N.rMx.APP_DIRECTORY_INSTALL_CLICKED, {
             application_id: e.id
           }), (s.tq || s.Em) && null == e.custom_install_url) {
-          let t = (0, N.E)({
+          let t = (0, O.E)({
             applicationId: e.id,
             customInstallUrl: e.custom_install_url,
             installParams: e.install_params,
@@ -141,19 +141,19 @@ function k(e) {
         }
         if (t) n();
         else {
-          let t = P.z8.getField("guildId");
-          y.default.track(E.rMx.APPLICATION_ADD_TO_SERVER_CLICKED, {
+          let t = S.z8.getField("guildId");
+          y.default.track(N.rMx.APPLICATION_ADD_TO_SERVER_CLICKED, {
             application_id: e.id,
             guild_id: t,
             auth_type: null != e.custom_install_url ? "custom_url" : "in_app",
             source: "product_page",
             device_platform: s.tq ? "mobile_web" : "desktop_web"
-          }), (0, O.rf)({
+          }), (0, P.rf)({
             [L]: "true"
           })
         }
       }, [e, n, t]),
-      canInstall: a.useMemo(() => (0, f.Eb)({
+      canInstall: i.useMemo(() => (0, f.Eb)({
         customInstallUrl: e.custom_install_url,
         installParams: e.install_params,
         integrationTypesConfig: e.integration_types_config
@@ -165,10 +165,10 @@ function k(e) {
     size: c.zxk.Sizes.ICON,
     color: o,
     className: l()(A.iconButton, {
-      [A.small]: "sm" === i
+      [A.small]: "sm" === a
     }),
     onClick: d,
-    "aria-label": T.NW.string(T.t.NgXl3N),
+    "aria-label": T.intl.string(T.t.NgXl3N),
     innerClassName: A.innerIconButton,
     disabled: !u,
     children: (0, r.jsx)(c.svS, {
@@ -176,11 +176,11 @@ function k(e) {
       color: "currentColor"
     })
   }) : (0, r.jsx)(c.zxk, {
-    size: "sm" === i ? c.zxk.Sizes.SMALL : c.zxk.Sizes.MEDIUM,
+    size: "sm" === a ? c.zxk.Sizes.SMALL : c.zxk.Sizes.MEDIUM,
     color: o,
     onClick: d,
     disabled: !u,
-    children: "small" === n ? T.NW.string(T.t.qRZ35u) : T.NW.string(T.t.NgXl3N)
+    children: "small" === n ? T.intl.string(T.t.qRZ35u) : T.intl.string(T.t.NgXl3N)
   })
 }
 
@@ -188,8 +188,8 @@ function w(e) {
   let {
     variant: t,
     size: n,
-    onClick: a,
-    isSubmitting: i
+    onClick: i,
+    isSubmitting: a
   } = e;
   return "icon" === t ? (0, r.jsx)(c.zxk, {
     look: c.zxk.Looks.FILLED,
@@ -199,9 +199,9 @@ function w(e) {
       [A.small]: "sm" === n
     }),
     innerClassName: A.innerIconButton,
-    onClick: a,
-    submitting: i,
-    "aria-label": T.NW.string(T.t.QO7rOz),
+    onClick: i,
+    submitting: a,
+    "aria-label": T.intl.string(T.t.QO7rOz),
     children: (0, r.jsx)(c.o1U, {
       size: "xs",
       color: "currentColor"
@@ -209,45 +209,45 @@ function w(e) {
   }) : (0, r.jsx)(c.zxk, {
     size: "sm" === n ? c.zxk.Sizes.SMALL : c.zxk.Sizes.MEDIUM,
     color: c.zxk.Colors.BRAND,
-    onClick: a,
-    submitting: i,
-    children: T.NW.string(T.t.QO7rOz)
+    onClick: i,
+    submitting: a,
+    children: T.intl.string(T.t.QO7rOz)
   })
 }
-let D = a.forwardRef(function(e, t) {
+let D = i.forwardRef(function(e, t) {
   let {
     application: n,
-    size: i
+    size: a
   } = e, s = h.J.useExperiment({
     location: "UserSettingsAuthedApps"
   }, {
     autoTrackExposure: !0
-  }).enabled, f = e => "".concat(location.protocol, "//").concat(location.host).concat(E.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(e)), {
+  }).enabled, f = e => "".concat(location.protocol, "//").concat(location.host).concat(N.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(e)), {
     analyticsLocations: y
-  } = (0, m.ZP)(), N = a.useCallback(() => {
-    (0, O.zZ)(E.rMx.APP_DIRECTORY_APPLICATION_LINK_COPIED, {
+  } = (0, m.ZP)(), O = i.useCallback(() => {
+    (0, P.zZ)(N.rMx.APP_DIRECTORY_APPLICATION_LINK_COPIED, {
       application_id: n.id
-    }), (0, I.JG)(f(n.id), () => (0, c.showToast)((0, c.createToast)(T.NW.string(T.t["L/PwZW"]), c.ToastType.SUCCESS)))
-  }, [n.id]), P = (0, o.e7)([C.default], () => C.default.locale), L = a.useCallback(() => {
-    (0, d.Z)((0, S.G)({
+    }), (0, I.JG)(f(n.id), () => (0, c.showToast)((0, c.createToast)(T.intl.string(T.t["L/PwZW"]), c.ToastType.SUCCESS)))
+  }, [n.id]), S = (0, o.e7)([C.default], () => C.default.locale), L = i.useCallback(() => {
+    (0, d.Z)((0, E.G)({
       id: n.id,
       name: n.name,
-      locale: P
+      locale: S
     }))
-  }, [P, n]), D = (0, b.Z)({
+  }, [S, n]), D = (0, b.Z)({
     id: n.id,
-    label: T.NW.string(T.t["FfCL+/"]),
-    onSuccess: () => (0, c.showToast)((0, c.createToast)(T.NW.string(T.t.eNjAam), c.ToastType.SUCCESS))
+    label: T.intl.string(T.t["FfCL+/"]),
+    onSuccess: () => (0, c.showToast)((0, c.createToast)(T.intl.string(T.t.eNjAam), c.ToastType.SUCCESS))
   }), M = (0, x.Z)({
     application: n,
     onItemClick: () => {
-      (0, O.zZ)(E.rMx.APP_DIRECTORY_APPLICATION_LINK_COPIED, {
+      (0, P.zZ)(N.rMx.APP_DIRECTORY_APPLICATION_LINK_COPIED, {
         application_id: n.id
       })
     }
-  }), G = a.useCallback((e, t) => (0, r.jsxs)(c.v2r, {
+  }), G = i.useCallback((e, t) => (0, r.jsxs)(c.v2r, {
     navId: "application-directory-profile",
-    "aria-label": T.NW.string(T.t["/7I4/P"]),
+    "aria-label": T.intl.string(T.t["/7I4/P"]),
     onClose: t,
     onSelect: void 0,
     children: [s && (0, r.jsx)(c.kSQ, {
@@ -255,33 +255,33 @@ let D = a.forwardRef(function(e, t) {
     }), e ? (0, r.jsx)(c.kSQ, {
       children: (0, r.jsx)(c.sNh, {
         id: "copy",
-        label: T.NW.string(T.t.z4sP5O),
-        action: N,
+        label: T.intl.string(T.t.z4sP5O),
+        action: O,
         icon: c.xPt
       })
     }) : null, (0, r.jsx)(c.kSQ, {
       children: (0, r.jsx)(c.sNh, {
         id: "report",
-        label: T.NW.string(T.t.NgA5vr),
+        label: T.intl.string(T.t.NgA5vr),
         color: "danger",
         action: L
       })
     }), null != D ? (0, r.jsx)(c.kSQ, {
       children: D
     }) : null]
-  }), [D, L, N, s, M]), {
+  }), [D, L, O, s, M]), {
     onClickLaunchActivity: z,
     isSubmitting: B
   } = function(e, t) {
     var n;
     let r = e.id,
-      i = null == e || null == (n = e.bot) ? void 0 : n.id,
-      l = null != i && (0, _.BQ)(e) && (0, _.ye)(e),
-      [s, c] = a.useState(!1),
-      d = (0, O.nu)(),
+      a = null == e || null == (n = e.bot) ? void 0 : n.id,
+      l = null != a && (0, _.BQ)(e) && (0, _.ye)(e),
+      [s, c] = i.useState(!1),
+      d = (0, P.nu)(),
       m = (0, o.e7)([j.default], () => j.default.getCurrentUser()),
       h = (0, o.e7)([u.ZP], () => u.ZP.getCurrentEmbeddedActivity()),
-      f = a.useCallback(async (t, n, r) => {
+      f = i.useCallback(async (t, n, r) => {
         if (null != h && h.applicationId === e.id) {
           let e = h.location;
           (0, p.Z)("guild_id" in e ? e.guild_id : null, e);
@@ -297,93 +297,93 @@ let D = a.forwardRef(function(e, t) {
         } catch (e) {}
         c(!1)
       }, [h, e.id]);
-    a.useEffect(() => {
+    i.useEffect(() => {
       let e = new URL(location.href),
         n = "true" === e.searchParams.get(R);
-      if (d && l && n && null != i && null != m) {
+      if (d && l && n && null != a && null != m) {
         e.searchParams.delete(R);
         let n = e.pathname + e.search;
-        (0, v.dL)(n), f(i, r, t)
+        (0, v.dL)(n), f(a, r, t)
       }
-    }, [d, l, i, r, t, m, f]);
-    let b = a.useCallback(async () => {
-      if (null != i) {
-        if ((0, O.zZ)(E.rMx.APP_DIRECTORY_LAUNCH_CLICKED, {
+    }, [d, l, a, r, t, m, f]);
+    let b = i.useCallback(async () => {
+      if (null != a) {
+        if ((0, P.zZ)(N.rMx.APP_DIRECTORY_LAUNCH_CLICKED, {
             application_id: r
-          }), !d) return void(0, O.rf)({
+          }), !d) return void(0, P.rf)({
           [R]: "true"
         });
-        await f(i, r, t)
+        await f(a, r, t)
       }
-    }, [i, r, t, d, f]);
+    }, [a, r, t, d, f]);
     return {
       onClickLaunchActivity: l ? b : void 0,
       isSubmitting: s
     }
-  }(n, y), W = null != z, U = W ? c.zxk.Colors.PRIMARY : c.zxk.Colors.BRAND;
+  }(n, y), U = null != z, F = U ? c.zxk.Colors.PRIMARY : c.zxk.Colors.BRAND;
   return (0, r.jsxs)("div", {
     ref: t,
     children: [(0, r.jsxs)("div", {
       className: l()(A.actionContainer, A.wide),
-      children: [W && (0, r.jsx)(w, {
+      children: [U && (0, r.jsx)(w, {
         variant: "normal",
-        size: i,
+        size: a,
         onClick: z,
         isSubmitting: B
       }), (0, r.jsx)(k, {
         application: n,
         variant: "normal",
-        size: i,
-        color: U
+        size: a,
+        color: F
       }), I.wS ? (0, r.jsx)(c.zxk, {
         look: c.zxk.Looks.FILLED,
         size: c.zxk.Sizes.ICON,
         color: c.zxk.Colors.PRIMARY,
         className: l()(A.iconButton, {
-          [A.small]: "sm" === i
+          [A.small]: "sm" === a
         }),
         innerClassName: A.innerIconButton,
-        "aria-label": T.NW.string(T.t.z4sP5O),
-        onClick: N,
+        "aria-label": T.intl.string(T.t.z4sP5O),
+        onClick: O,
         children: (0, r.jsx)(c.xPt, {
           size: "xs",
           color: "currentColor"
         })
       }) : null, (0, r.jsx)(Z, {
         renderDropdown: e => G(!1, e),
-        size: i
+        size: a
       })]
     }), (0, r.jsxs)("div", {
       className: l()(A.actionContainer, A.small),
-      children: [W && (0, r.jsx)(w, {
+      children: [U && (0, r.jsx)(w, {
         variant: "normal",
-        size: i,
+        size: a,
         onClick: z,
         isSubmitting: B
       }), (0, r.jsx)(k, {
         application: n,
         variant: "small",
-        size: i,
-        color: U
+        size: a,
+        color: F
       }), (0, r.jsx)(Z, {
         renderDropdown: e => G(I.wS, e),
-        size: i
+        size: a
       })]
     }), (0, r.jsxs)("div", {
       className: l()(A.actionContainer, A.tiny),
-      children: [W && (0, r.jsx)(w, {
+      children: [U && (0, r.jsx)(w, {
         variant: "icon",
-        size: i,
+        size: a,
         onClick: z,
         isSubmitting: B
       }), (0, r.jsx)(k, {
         application: n,
         variant: "icon",
-        size: i,
-        color: U
+        size: a,
+        color: F
       }), (0, r.jsx)(Z, {
         renderDropdown: e => G(I.wS, e),
-        size: i
+        size: a
       })]
     })]
   })

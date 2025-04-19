@@ -2,7 +2,7 @@
 n.d(t, {
   U: () => P,
   Uf: () => I,
-  ng: () => C
+  ng: () => N
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -19,15 +19,15 @@ var r = n(200651),
   p = n(213931),
   h = n(767157),
   y = n(112440),
-  N = n(671105),
-  g = n(552958),
-  j = n(981631),
-  _ = n(921944),
-  m = n(871465),
-  v = n(388032),
-  x = n(394049);
+  g = n(671105),
+  j = n(552958),
+  _ = n(981631),
+  m = n(921944),
+  v = n(871465),
+  x = n(388032),
+  C = n(394049);
 
-function C(e, t) {
+function N(e, t) {
   let n = b.Y.useExperiment({
       location: "guild_context_menu"
     }, {
@@ -49,19 +49,19 @@ function P() {
     }),
     [t] = (0, s.cv)([a.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE]);
   return e.enabled && e.nestedEntry && t === a.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE && (0, r.jsx)(o.IGR, {
-    className: x.newBadge,
-    text: v.NW.string(v.t.y2b7CA)
+    className: C.newBadge,
+    text: x.intl.string(x.t.y2b7CA)
   })
 }
 
-function T(e, t, a, C) {
+function T(e, t, a, N) {
   var I, P;
-  let T = (0, N.OR)(e),
-    S = (0, N._c)(e, t),
+  let T = (0, g.OR)(e),
+    S = (0, g._c)(e, t),
     E = (0, l.e7)([d.default], () => d.default.getCurrentUser()),
     w = (0, l.e7)([u.ZP], () => u.ZP.isMuted(e), [e]),
     A = f.ZP.canUseCustomNotificationSounds(E),
-    D = A ? null != S ? S : T : m.YC.CLASSIC,
+    D = A ? null != S ? S : T : v.YC.CLASSIC,
     U = b.Y.useExperiment({
       location: "guild_context_menu"
     }, {
@@ -70,25 +70,25 @@ function T(e, t, a, C) {
     [M, Z] = i.useState(!1),
     {
       playSound: k
-    } = (0, g.Z)(),
+    } = (0, j.Z)(),
     [R, G] = (0, s.cv)([a]),
     L = R === a;
   if (i.useEffect(() => () => {
-      M && G(_.L.TAKE_ACTION)
+      M && G(m.L.TAKE_ACTION)
     }, [M, G]), !U) return null;
-  let W = n => {
-      if (k(n), G(_.L.TAKE_ACTION), !A && n !== m.YC.CLASSIC) {
+  let F = n => {
+      if (k(n), G(m.L.TAKE_ACTION), !A && n !== v.YC.CLASSIC) {
         (0, h.Z)(n, "contextMenu"), (0, y.Z)();
         return
       }
       null != t ? (0, p.M)(e, t, D, n, "contextMenu") : (0, p.t)(e, D, n, "contextMenu")
     },
-    F = A ? o.Text : O.Z,
-    Y = (0, m.LB)(),
-    z = null != (P = null == (I = Y.find(e => e.value === D)) ? void 0 : I.label) ? P : v.NW.string(v.t.p3Hg5e),
-    B = (0, r.jsx)(o.IGR, {
-      className: x.newBadge,
-      text: v.NW.string(v.t.y2b7CA)
+    Y = A ? o.Text : O.Z,
+    z = (0, v.LB)(),
+    B = null != (P = null == (I = z.find(e => e.value === D)) ? void 0 : I.label) ? P : x.intl.string(x.t.p3Hg5e),
+    V = (0, r.jsx)(o.IGR, {
+      className: C.newBadge,
+      text: x.intl.string(x.t.y2b7CA)
     });
   return (0, r.jsx)(o.sNh, {
     id: "notification-sounds",
@@ -97,30 +97,30 @@ function T(e, t, a, C) {
         isFocused: t
       } = e;
       return t && Z(t), (0, r.jsxs)("div", {
-        className: x.rootContainer,
+        className: C.rootContainer,
         children: [(0, r.jsxs)("div", {
-          children: [L && "top" === C && B, (0, r.jsxs)("div", {
-            className: x.headerContainer,
-            children: [(0, r.jsx)(F, {
-              className: x.text,
+          children: [L && "top" === N && V, (0, r.jsxs)("div", {
+            className: C.headerContainer,
+            children: [(0, r.jsx)(Y, {
+              className: C.text,
               color: t ? "always-white" : void 0,
               variant: "text-sm/medium",
-              children: v.NW.string(v.t.mrqSOj)
+              children: x.intl.string(x.t.mrqSOj)
             }), (0, r.jsx)(o.SrA, {
               size: "xs",
-              className: x.nitroWheel,
+              className: C.nitroWheel,
               color: t ? "white" : A ? void 0 : c.JX.PREMIUM_TIER_2
             })]
-          }), null != z && (0, r.jsx)(F, {
-            className: x.text,
+          }), null != B && (0, r.jsx)(Y, {
+            className: C.text,
             color: t ? "always-white" : void 0,
             variant: "text-xs/normal",
-            children: z
+            children: B
           })]
-        }), L && "trailing" === C && B]
+        }), L && "trailing" === N && V]
       })
     },
-    action: e !== j.aIL ? () => (0, o.ZDy)(async () => {
+    action: e !== _.aIL ? () => (0, o.ZDy)(async () => {
       let {
         default: t
       } = await Promise.all([n.e("5863"), n.e("48445")]).then(n.bind(n, 751212));
@@ -159,13 +159,13 @@ function T(e, t, a, C) {
     }) : void 0,
     hasSubmenu: !0,
     children: (0, r.jsxs)(o.kSQ, {
-      children: [Y.map((e, t) => (0, r.jsxs)(i.Fragment, {
-        children: [A || e.value === m.YC.CLASSIC ? (0, r.jsx)(o.k5B, {
+      children: [z.map((e, t) => (0, r.jsxs)(i.Fragment, {
+        children: [A || e.value === v.YC.CLASSIC ? (0, r.jsx)(o.k5B, {
           id: e.label,
           group: "notification-preset",
-          checked: (null != D ? D : m.YC.CLASSIC) === e.value,
+          checked: (null != D ? D : v.YC.CLASSIC) === e.value,
           label: e.label,
-          action: () => W(e.value)
+          action: () => F(e.value)
         }) : (0, r.jsx)(o.sNh, {
           id: e.label,
           label: t => {
@@ -173,26 +173,26 @@ function T(e, t, a, C) {
               isFocused: n
             } = t;
             return (0, r.jsxs)("div", {
-              className: x.labelContainer,
+              className: C.labelContainer,
               children: [(0, r.jsx)(O.Z, {
                 color: n ? "always-white" : void 0,
                 variant: "text-sm/medium",
                 children: e.label
               }), (0, r.jsx)(o.g8d, {
-                className: x.playButton,
+                className: C.playButton,
                 color: n ? o.TVs.colors.INTERACTIVE_ACTIVE : o.TVs.colors.INTERACTIVE_NORMAL
               })]
             })
           },
-          action: () => W(e.value)
-        }), e.value === m.YC.CLASSIC ? (0, r.jsx)(o.Clw, {}) : null]
+          action: () => F(e.value)
+        }), e.value === v.YC.CLASSIC ? (0, r.jsx)(o.Clw, {}) : null]
       }, t)), w && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(o.Clw, {}), (0, r.jsx)(o.sNh, {
           id: "label",
           label: (0, r.jsx)(o.Text, {
-            className: x.mutedLabel,
+            className: C.mutedLabel,
             variant: "text-sm/medium",
-            children: v.NW.string(v.t["a9G/ER"])
+            children: x.intl.string(x.t["a9G/ER"])
           })
         })]
       })]

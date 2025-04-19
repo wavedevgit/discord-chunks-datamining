@@ -1,8 +1,8 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  D: () => i
+  D: () => r
 });
-let r = (0, n(818083).B)({
+let i = (0, n(818083).B)({
   kind: "user",
   id: "2023-03_text_playground_settings_pane",
   label: "Text Playground",
@@ -18,8 +18,8 @@ let r = (0, n(818083).B)({
   }]
 });
 
-function i() {
-  return r.getCurrentConfig({
+function r() {
+  return i.getCurrentConfig({
     location: "26c832_1"
   }, {
     autoTrackExposure: !0

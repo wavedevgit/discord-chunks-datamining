@@ -1,9 +1,9 @@
 /** Chunk was on 10778 **/
-r.d(t, {
-  R: () => n
+n.d(t, {
+  R: () => r
 });
-var s = r(837748);
+var i = n(837748);
 
-function n(e) {
-  return (0, s.Z)(e).author
+function r(e) {
+  return (0, i.Z)(e).author
 }

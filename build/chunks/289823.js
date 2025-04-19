@@ -1,6 +1,6 @@
 /** Chunk was on 87337 **/
 n.d(t, {
-  Z: () => N
+  Z: () => g
 });
 var r = n(200651),
   s = n(192379),
@@ -124,17 +124,17 @@ let m = {
       status: u.QS.DIAGONAL_FACEPILE_STATUS_120
     }
   },
-  N = function(e) {
+  g = function(e) {
     var t, {
         backSrc: n,
         frontSrc: i,
         size: o,
         isTyping: f,
         status: E,
-        style: N,
-        className: g
+        style: g,
+        className: x
       } = e,
-      x = function(e, t) {
+      S = function(e, t) {
         if (null == e) return {};
         var n, r, s = function(e, t) {
           if (null == e) return {};
@@ -150,7 +150,7 @@ let m = {
         return s
       }(e, ["backSrc", "frontSrc", "size", "isTyping", "status", "style", "className"]);
     let {
-      size: S
+      size: N
     } = c.ny6[o], {
       statusCoords: p,
       frontAvatarOffsetPx: L,
@@ -158,7 +158,7 @@ let m = {
       backAvatarSizePx: j
     } = s.useMemo(() => {
       var e;
-      let t = "".concat(S, "-").concat(f);
+      let t = "".concat(N, "-").concat(f);
       return null != (e = A[t]) ? e : function(e, t, n) {
         let r = c.ny6[e],
           s = r.size / (d.z3 + d.o),
@@ -173,7 +173,7 @@ let m = {
           };
         return A[n] = o, o
       }(o, f, t)
-    }, [S, f, o]), b = (t = null != E, f ? m[o].typing : t ? m[o].status : m[o].default);
+    }, [N, f, o]), b = (t = null != E, f ? m[o].typing : t ? m[o].status : m[o].default);
     return (0, r.jsxs)("div", {
       style: function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -193,16 +193,16 @@ let m = {
         }
         return e
       }({
-        width: S,
-        height: S
-      }, N),
-      "aria-label": x["aria-label"],
-      "aria-hidden": x["aria-hidden"],
-      className: a()(_.container, g),
+        width: N,
+        height: N
+      }, g),
+      "aria-label": S["aria-label"],
+      "aria-hidden": S["aria-hidden"],
+      className: a()(_.container, x),
       children: [(0, r.jsxs)(u.ZP, {
         mask: b,
-        height: S,
-        width: S,
+        height: N,
+        width: N,
         children: [(0, r.jsx)("img", {
           src: n,
           alt: "",

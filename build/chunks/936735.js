@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  s = n(772848),
-  l = n(442837),
+  l = n(772848),
+  s = n(442837),
   a = n(339085),
   o = n(231053),
   c = n(183023),
@@ -20,13 +20,13 @@ function m(e) {
   } = e, m = null == t ? void 0 : t.id, {
     memberCount: g,
     onlineCount: p
-  } = (0, l.cj)([d.Z], () => {
+  } = (0, s.cj)([d.Z], () => {
     var e, t;
     return {
       memberCount: null != (e = d.Z.getMemberCount(m)) ? e : 1234,
       onlineCount: null != (t = d.Z.getOnlineCount(m)) ? t : 1234
     }
-  }, [m]), h = i.useRef((0, s.Z)()), f = i.useMemo(() => {
+  }, [m]), h = i.useRef((0, l.Z)()), f = i.useMemo(() => {
     var e, r;
     if (null != n) return o.JO.createFromDiscoverableGuild(n);
     if (null == t) return null;

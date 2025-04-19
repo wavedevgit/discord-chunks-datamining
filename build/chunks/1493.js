@@ -1,18 +1,18 @@
 /** Chunk was on 18259 **/
 r.d(n, {
-  default: () => i
+  default: () => o
 }), r(388685);
 var t = r(200651),
   a = r(192379),
   s = r(481060),
   l = r(388032),
-  o = r(910282);
+  i = r(910282);
 
-function i(e) {
+function o(e) {
   let {
     onConfirm: n,
     onClose: r,
-    validationText: i,
+    validationText: o,
     errorText: c,
     header: d,
     className: x,
@@ -23,9 +23,9 @@ function i(e) {
     children: g
   } = e, [j, k] = a.useState(""), [b, f] = a.useState(null), C = a.Children.count(g) > 0 ? (0, t.jsx)(s.Zbd, {
     type: s.Zbd.Types.WARNING,
-    className: o.card,
+    className: i.card,
     children: (0, t.jsx)(s.Text, {
-      className: o.warning,
+      className: i.warning,
       variant: "text-md/normal",
       children: g
     })
@@ -35,7 +35,7 @@ function i(e) {
     className: x,
     children: (0, t.jsxs)("form", {
       onSubmit: function(e) {
-        if (e.preventDefault(), j.toLowerCase() !== i.toLowerCase()) return void f(c);
+        if (e.preventDefault(), j.toLowerCase() !== o.toLowerCase()) return void f(c);
         null == n || n(), r()
       },
       children: [(0, t.jsx)(s.xBx, {
@@ -47,7 +47,7 @@ function i(e) {
       }), (0, t.jsxs)(s.hzk, {
         children: [C, (0, t.jsxs)(s.xJW, {
           title: p,
-          className: o.spacing,
+          className: i.spacing,
           children: [(0, t.jsx)(s.oil, {
             id: "text-entry-confirm",
             type: "text",
@@ -58,7 +58,7 @@ function i(e) {
           }), null != b && "" !== b ? (0, t.jsx)(s.Text, {
             color: "text-danger",
             variant: "text-xs/normal",
-            className: o.error,
+            className: i.error,
             children: b
           }) : null]
         })]
@@ -66,12 +66,12 @@ function i(e) {
         children: [(0, t.jsx)(s.zxk, {
           type: "submit",
           color: s.zxk.Colors.RED,
-          children: null != h ? h : l.NW.string(l.t["cY+Ooa"])
+          children: null != h ? h : l.intl.string(l.t["cY+Ooa"])
         }), (0, t.jsx)(s.zxk, {
           onClick: r,
           look: s.zxk.Looks.LINK,
           color: s.zxk.Colors.PRIMARY,
-          children: null != u ? u : l.NW.string(l.t["ETE/oK"])
+          children: null != u ? u : l.intl.string(l.t["ETE/oK"])
         })]
       })]
     })

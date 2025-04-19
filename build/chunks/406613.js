@@ -1,10 +1,10 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  F: () => a
+  F: () => l
 });
-var r = n(818083),
-  i = n(984134);
-let s = (0, r.B)({
+var i = n(818083),
+  r = n(984134);
+let s = (0, i.B)({
   kind: "user",
   id: "2025-01_voice_and_video_settings_refresh",
   label: "Voice and Video Settings Refresh",
@@ -20,13 +20,13 @@ let s = (0, r.B)({
   }]
 });
 
-function a(e) {
+function l(e) {
   let {
     location: t,
     autoTrackExposure: n = !0
   } = e, {
-    isInHoldout: r
-  } = i.h.useExperiment({
+    isInHoldout: i
+  } = r.h.useExperiment({
     location: t
   }, {
     autoTrackExposure: n
@@ -34,7 +34,7 @@ function a(e) {
   return s.useExperiment({
     location: t
   }, {
-    disable: r,
+    disable: i,
     autoTrackExposure: n
   })
 }

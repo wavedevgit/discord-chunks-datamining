@@ -1,14 +1,14 @@
 /** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  Z: () => s
+  Z: () => l
 }), n(388685);
 var r = n(999153),
   i = n(584922);
 
-function s(e, t, n, s) {
+function l(e, t, n, l) {
   let [{
-    isDragging: l
+    isDragging: s
   }, a, o] = (0, r.c)({
     type: t,
     item: () => ({
@@ -23,16 +23,16 @@ function s(e, t, n, s) {
       if (null == e.current) return;
       let i = t.index;
       if (i === n) return;
-      let l = e.current.getBoundingClientRect(),
-        a = (l.bottom - l.top) / 2,
-        o = r.getClientOffset().y - l.top;
-      (!(i < n) || !(o < a)) && (i > n && o > a || (s(i, n), t.index = n))
+      let s = e.current.getBoundingClientRect(),
+        a = (s.bottom - s.top) / 2,
+        o = r.getClientOffset().y - s.top;
+      (!(i < n) || !(o < a)) && (i > n && o > a || (l(i, n), t.index = n))
     }
   });
   return {
     drag: a,
     dragPreview: o,
     drop: c,
-    isDragging: l
+    isDragging: s
   }
 }

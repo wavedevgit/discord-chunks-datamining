@@ -5,12 +5,12 @@ var i = n(200651),
   r = n(149765),
   s = n(481060),
   o = n(570140),
-  a = n(700785);
+  l = n(700785);
 __OVERLAY__ && o.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) {
   var {
     clientId: t,
     authorizeProps: {
-      authorizations: l,
+      authorizations: a,
       permissions: c
     }
   } = e, d = function(e, t) {
@@ -40,7 +40,7 @@ __OVERLAY__ && o.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) 
       location: n
     })
   }
-  let p = a.Hn;
+  let p = l.Hn;
   try {
     p = r.vB(null != c ? c : 0)
   } catch (e) {}(0, s.ZDy)(async () => {
@@ -67,7 +67,7 @@ __OVERLAY__ && o.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) 
         }
         return e
       }({}, t, d), r = r = {
-        authorizations: new Map(l),
+        authorizations: new Map(a),
         permissions: p,
         callback: h
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

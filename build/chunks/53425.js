@@ -34,7 +34,7 @@ let m = i.memo(function(e) {
     className: g.container,
     children: (0, r.jsxs)("ul", {
       role: "group",
-      "aria-label": f.NW.formatToPlainString(f.t.EiyIi4, {
+      "aria-label": f.intl.formatToPlainString(f.t.EiyIi4, {
         channelName: t.name
       }),
       children: [(0, r.jsx)("div", {

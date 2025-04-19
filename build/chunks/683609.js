@@ -1,5 +1,5 @@
 /** Chunk was on 98335 **/
-n.d(t, {
+n.d(e, {
   Z: () => s
 });
 var r = n(200651);
@@ -11,34 +11,34 @@ var i = n(481060),
   o = n(981631),
   u = n(388032);
 
-function s(e) {
-  return null == e ? null : (0, r.jsx)(i.S89, {
+function s(t) {
+  return null == t ? null : (0, r.jsx)(i.S89, {
     id: "on-overlay",
-    label: u.NW.string(u.t.rgZKg4),
+    label: u.intl.string(u.t.rgZKg4),
     action: function() {
-      if (null == e) return;
-      let t = (0, c.x9)(e.getFlags(), o.eHb.OVERLAY_DISABLED);
-      l.h(e.id, e.branchId, t), a.default.track(o.rMx.APPLICATION_SETTINGS_UPDATED, function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
+      if (null == t) return;
+      let e = (0, c.x9)(t.getFlags(), o.eHb.OVERLAY_DISABLED);
+      l.h(t.id, t.branchId, e), a.default.track(o.rMx.APPLICATION_SETTINGS_UPDATED, function(t) {
+        for (var e = 1; e < arguments.length; e++) {
+          var n = null != arguments[e] ? arguments[e] : {},
             r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
+            return Object.getOwnPropertyDescriptor(n, t).enumerable
+          }))), r.forEach(function(e) {
             var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
+            r = n[e], e in t ? Object.defineProperty(t, e, {
               value: r,
               enumerable: !0,
               configurable: !0,
               writable: !0
-            }) : e[t] = r
+            }) : t[e] = r
           })
         }
-        return e
+        return t
       }({
-        overlay_disabled: (0, c.yE)(t, o.eHb.OVERLAY_DISABLED)
-      }, e.getAnalyticsData()))
+        overlay_disabled: (0, c.yE)(e, o.eHb.OVERLAY_DISABLED)
+      }, t.getAnalyticsData()))
     },
-    checked: e.hasFlag(o.eHb.OVERLAY_DISABLED)
+    checked: t.hasFlag(o.eHb.OVERLAY_DISABLED)
   })
 }

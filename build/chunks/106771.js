@@ -27,7 +27,7 @@ function y(e) {
     query: v,
     searchResultsPosition: C,
     onClickAppCardFriends: g
-  } = e, N = r.useCallback(e => {
+  } = e, j = r.useCallback(e => {
     if ((0, u.BQ)(y)) {
       let t = y instanceof s.ZP ? y : s.ZP.createFromServer(y);
       (0, o.vq)(e, e => (0, i.jsx)(p.Z, function(e) {
@@ -52,8 +52,8 @@ function y(e) {
       }, e)))
     }
   }, [y]), {
-    iconURL: j,
-    name: P,
+    iconURL: P,
+    name: N,
     description: E
   } = r.useMemo(() => (0, u.sl)(y, {
     fakeAppIconURL: _
@@ -81,11 +81,11 @@ function y(e) {
     className: b.clickable,
     innerRef: e => A.current = e,
     onClick: x,
-    onContextMenu: N,
+    onContextMenu: j,
     children: (0, i.jsxs)(l.Rny, {
       className: b.focusBlock,
       children: [(0, i.jsx)(m.Z, {
-        src: j,
+        src: P,
         className: b.icon,
         "aria-hidden": !0,
         rendersPlaceholder: !0
@@ -95,7 +95,7 @@ function y(e) {
           variant: "heading-md/semibold",
           color: "header-primary",
           lineClamp: 1,
-          children: null != (t = null == n ? void 0 : n.displayName) ? t : P
+          children: null != (t = null == n ? void 0 : n.displayName) ? t : N
         }), T ? (0, i.jsx)(f.Z, {
           friends: S,
           onClick: g,
@@ -111,7 +111,7 @@ function y(e) {
         className: b.cmdAppName,
         variant: "text-sm/normal",
         color: "text-secondary",
-        children: P
+        children: N
       }) : null, (0, i.jsx)("div", {
         className: b.underline
       })]

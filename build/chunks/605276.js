@@ -38,7 +38,7 @@ function Z(e) {
         className: I.sidebarCardHeader,
         variant: "heading-md/bold",
         color: "header-primary",
-        children: v.NW.string(v.t["6YriCA"])
+        children: v.intl.string(v.t["6YriCA"])
       }), (0, t.jsx)(i.Text, {
         className: I.guildDescription,
         variant: "text-md/normal",
@@ -53,7 +53,7 @@ function Z(e) {
             className: I.guildInfoText,
             variant: "text-xs/normal",
             color: "text-muted",
-            children: v.NW.format(v.t.QAdRCw, {
+            children: v.intl.format(v.t.QAdRCw, {
               online: null == l ? void 0 : l.presenceCount,
               total: null == l ? void 0 : l.memberCount
             })
@@ -153,7 +153,7 @@ let y = r.memo(function(e) {
           className: I.sidebarCardHeader,
           variant: "heading-md/bold",
           color: "header-primary",
-          children: v.NW.string(v.t.xwY4LS)
+          children: v.intl.string(v.t.xwY4LS)
         }), (0, t.jsx)("div", {
           className: I.resourceChannelsList,
           children: l.map(e => (0, t.jsx)(O, {

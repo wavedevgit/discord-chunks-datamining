@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => S
+  Z: () => N
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -20,12 +20,12 @@ var r = n(200651),
   _ = n(381416),
   E = n(523924),
   O = n(390500),
-  N = n(981631),
-  y = n(898625),
-  I = n(388032),
-  v = n(74816);
+  y = n(981631),
+  I = n(898625),
+  v = n(388032),
+  C = n(74816);
 
-function C(e) {
+function S(e) {
   let {
     guild: t,
     width: n,
@@ -35,32 +35,32 @@ function C(e) {
     splash: null == t ? void 0 : t.splash
   }) : null, [null == t ? void 0 : t.splash, null == t ? void 0 : t.id]), o = (0, c.N)(a);
   return null == a ? (0, r.jsx)("div", {
-    className: v.defaultGradient
+    className: C.defaultGradient
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Z, {
-      className: v.splash,
+      className: C.splash,
       src: a,
-      imageClassName: v.cover,
+      imageClassName: C.cover,
       width: n,
       height: l
     }), null != o && (0, r.jsx)("div", {
-      className: v.splashGradient,
+      className: C.splashGradient,
       style: {
         background: "linear-gradient(180deg, ".concat((0, h.aD)(o, .16), " 0%, ").concat((0, h.aD)(o, 1), " 100%)")
       }
     }), (0, r.jsx)("div", {
-      className: v.splashGradient
+      className: C.splashGradient
     })]
   })
 }
-let S = e => {
+let N = e => {
   let {
     guildId: t
   } = e, {
     ref: n,
     width: s,
     height: c
-  } = (0, o.ZP)(), [p, h] = i.useState(y.hO.INITIAL), S = (0, l.e7)([b.Z], () => b.Z.getRequest(t)), T = (0, l.e7)([d.Z], () => d.Z.getGuild(t)), {
+  } = (0, o.ZP)(), [p, h] = i.useState(I.hO.INITIAL), N = (0, l.e7)([b.Z], () => b.Z.getRequest(t)), T = (0, l.e7)([d.Z], () => d.Z.getGuild(t)), {
     hasFetchedRequestToJoinGuilds: P,
     guildPreviewDisabled: j
   } = (0, l.cj)([b.Z], () => ({
@@ -68,12 +68,12 @@ let S = e => {
     guildPreviewDisabled: b.Z.getJoinRequestGuild(t)
   }));
   i.useEffect(() => {
-    null != T && (0, u.uL)(N.Z5c.CHANNEL(t))
+    null != T && (0, u.uL)(y.Z5c.CHANNEL(t))
   }, [T, t]), i.useEffect(() => {
     P || f.Z.fetchRequestToJoinGuilds()
   }, [P]);
   let A = i.useCallback(() => {
-      h(Math.max(p, y.hO.FILLING)), f.Z.removeGuildJoinRequest(t), (0, u.uL)(N.Z5c.ME)
+      h(Math.max(p, I.hO.FILLING)), f.Z.removeGuildJoinRequest(t), (0, u.uL)(y.Z5c.ME)
     }, [t, p]),
     Z = (e, t) => () => {
       (0, a.h7j)(n => {
@@ -96,10 +96,10 @@ let S = e => {
           }
           return e
         }({
-          header: I.NW.string(I.t.y0CVen),
-          cancelText: I.NW.string(I.t.oEAioK),
+          header: v.intl.string(v.t.y0CVen),
+          cancelText: v.intl.string(v.t.oEAioK),
           onConfirm: t,
-          confirmText: I.NW.string(I.t.p89ACg),
+          confirmText: v.intl.string(v.t.p89ACg),
           confirmButtonColor: a.zxk.Colors.RED
         }, n), l = l = {
           children: (0, r.jsx)(a.Text, {
@@ -121,23 +121,23 @@ let S = e => {
     },
     x = async () => {
       await f.Z.resetGuildJoinRequest(t), (0, g.hk)(t)
-    }, L = Z(I.NW.format(I.t["9ZezpK"], {
+    }, L = Z(v.intl.format(v.t["9ZezpK"], {
       name: null == j ? void 0 : j.name
-    }), A), w = Z(I.NW.format(I.t.fJwWVl, {
+    }), A), w = Z(v.intl.format(v.t.fJwWVl, {
       name: null == j ? void 0 : j.name
     }), A);
   return (0, r.jsxs)("div", {
-    className: v.page,
+    className: C.page,
     ref: n,
-    children: [(0, r.jsx)(C, {
+    children: [(0, r.jsx)(S, {
       guild: j,
       height: c,
       width: s
     }), (0, r.jsx)("div", {
-      className: v.contentWrapper,
+      className: C.contentWrapper,
       children: (() => {
-        if (null == S) return null;
-        switch (S.applicationStatus) {
+        if (null == N) return null;
+        switch (N.applicationStatus) {
           case m.wB.SUBMITTED:
             return (0, r.jsx)(O.Z, {
               onWithdrawApplication: L,
@@ -145,11 +145,11 @@ let S = e => {
             });
           case m.wB.REJECTED:
             return (0, r.jsx)(E.Z, {
-              reapplyText: I.NW.string(I.t.I1LYVl),
+              reapplyText: v.intl.string(v.t.I1LYVl),
               onReapply: x,
-              confirmText: I.NW.string(I.t.g9tK0t),
+              confirmText: v.intl.string(v.t.g9tK0t),
               onWithdrawApplication: L,
-              rejectionReason: S.rejectionReason,
+              rejectionReason: N.rejectionReason,
               guild: j
             });
           default:
@@ -161,7 +161,7 @@ let S = e => {
         }
       })()
     }), (0, r.jsx)("div", {
-      className: v.dragRegion
+      className: C.dragRegion
     })]
   })
 }

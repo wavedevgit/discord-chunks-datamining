@@ -38,10 +38,10 @@ function b() {
         children: e
       }), (0, a.jsx)(h.Z9, {
         name: "System",
-        children: p.Kj
+        children: p.systemLocale
       }), (0, a.jsx)(h.Z9, {
         name: "@discord/intl",
-        children: p.NW.currentLocale
+        children: p.intl.currentLocale
       }), (0, a.jsx)(h.Z9, {
         name: "common i18n",
         children: o.Z.getLocale()

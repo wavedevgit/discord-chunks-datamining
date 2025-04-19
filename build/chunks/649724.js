@@ -59,7 +59,7 @@ class h extends(r = a.PureComponent) {
   }
   render() {
     let e, {
-        text: t = d.NW.string(d.t.OpuAlJ),
+        text: t = d.intl.string(d.t.OpuAlJ),
         mode: n,
         hideMessage: r,
         className: a,

@@ -76,7 +76,7 @@ function _(e) {
   });
   return null == h ? null : (0, r.jsx)(i.sNh, {
     id: "game-profile",
-    label: u.NW.string(u.t.ajHoOj),
+    label: u.intl.string(u.t.ajHoOj),
     action: e => {
       null == l || l({
         action: "PRESS_VIEW_GAME_PROFILE_MENU_ITEM"

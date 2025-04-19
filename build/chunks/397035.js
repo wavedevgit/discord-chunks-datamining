@@ -33,7 +33,7 @@ function d(e) {
     }, [p.extra.url]);
   return null != v && (d = {
     href: o.Z.format(v),
-    ariaDescription: u.NW.formatToPlainString(u.t.aFFQ3t, {
+    ariaDescription: u.intl.formatToPlainString(u.t.aFFQ3t, {
       title: y
     })
   }), t = function(e) {

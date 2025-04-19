@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(592125),
   S = n(430824),
   T = n(496675),
-  N = n(158776),
-  A = n(938475),
+  A = n(158776),
+  N = n(938475),
   C = n(960870),
   R = n(139793),
   P = n(510659),
@@ -45,8 +45,8 @@ var r = n(200651),
   V = n(228168),
   Z = n(981631),
   H = n(388032),
-  W = n(227832),
-  Y = n(162509),
+  Y = n(227832),
+  W = n(162509),
   K = n(924482),
   z = n(774797);
 
@@ -65,14 +65,14 @@ function q(e) {
     interactionSource: et,
     interactionSourceId: en
   } = (0, P.Xo)(), er = {
-    [Y.fullSize]: $ === V.y0.FULL_SIZE,
-    [W.fullSize]: $ === V.y0.FULL_SIZE
-  }, ei = (0, s.e7)([S.Z], () => S.Z.getGuild(null == a ? void 0 : a.guildId)), ea = (0, s.e7)([I.Z], () => I.Z.getChannel(null == a ? void 0 : a.channelId)), eo = (0, s.Wu)([A.ZP], () => null != ea ? A.ZP.getVoiceStatesForChannel(ea).map(e => {
+    [W.fullSize]: $ === V.y0.FULL_SIZE,
+    [Y.fullSize]: $ === V.y0.FULL_SIZE
+  }, ei = (0, s.e7)([S.Z], () => S.Z.getGuild(null == a ? void 0 : a.guildId)), ea = (0, s.e7)([I.Z], () => I.Z.getChannel(null == a ? void 0 : a.channelId)), eo = (0, s.Wu)([N.ZP], () => null != ea ? N.ZP.getVoiceStatesForChannel(ea).map(e => {
     let {
       user: t
     } = e;
     return t
-  }) : []), es = (0, s.e7)([N.Z], () => N.Z.findActivity(t.id, e => (0, f.Z)(e) && !(0, _.Z)(e))), {
+  }) : []), es = (0, s.e7)([A.Z], () => A.Z.findActivity(t.id, e => (0, f.Z)(e) && !(0, _.Z)(e))), {
     analyticsLocations: el
   } = (0, h.ZP)(p.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), ec = (0, C.Z)({
     display: "live",
@@ -89,7 +89,7 @@ function q(e) {
   } = (0, E.Z)(a.guildId, a.channelId, a.ownerId), eh = (0, s.e7)([T.Z], () => null != ea && T.Z.canBasicChannel(Z.S7T.CONNECT, ea)), em = (0, d.Z)(ep ? null : e_), eg = ep || null == e_ ? em : e_;
   if (null == ei || null == ea || !1 === a.discoverable || null === $) return null;
   let eE = () => {
-      let e = o()(Y.preview, er),
+      let e = o()(W.preview, er),
         t = e => {
           e.stopPropagation(), ec({
             action: "PRESS_IMAGE"
@@ -99,8 +99,8 @@ function q(e) {
         className: e,
         children: (0, r.jsx)(l.$jN, {})
       }) : null == eg ? (0, r.jsxs)(l.P3F, {
-        className: o()(e, Y.overlay, {
-          [Y.clickable]: ed
+        className: o()(e, W.overlay, {
+          [W.clickable]: ed
         }),
         onClick: ed ? t : void 0,
         children: [(0, r.jsx)("img", {
@@ -108,34 +108,34 @@ function q(e) {
           src: ee === Z.BRd.LIGHT ? z : K
         }), $ !== V.y0.FULL_SIZE && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(l.Text, {
-            className: Y.overlayText,
+            className: W.overlayText,
             variant: "text-sm/medium",
             color: "always-white",
             children: (0, b.P9)(ef)
           }), (0, r.jsx)(l.Text, {
             variant: "text-sm/medium",
-            children: eh ? H.NW.string(H.t.uQZTBQ) : H.NW.string(H.t.pgUTZG)
+            children: eh ? H.intl.string(H.t.uQZTBQ) : H.intl.string(H.t.pgUTZG)
           })]
         })]
       }) : (0, r.jsxs)(l.P3F, {
-        className: o()(e, Y.overlay, {
-          [Y.clickable]: ed
+        className: o()(e, W.overlay, {
+          [W.clickable]: ed
         }),
         onClick: ed ? t : void 0,
         children: [(0, r.jsx)("img", {
           alt: "",
           src: eg,
-          className: Y.image
+          className: W.image
         }), $ !== V.y0.FULL_SIZE && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(l.Text, {
-            className: Y.overlayText,
+            className: W.overlayText,
             variant: "text-sm/medium",
             color: "always-white",
             children: (0, b.P9)(ef)
           }), (0, r.jsx)(l.gw7, {
             size: "xs",
             color: "currentColor",
-            className: Y.clyde
+            className: W.clyde
           })]
         })]
       })
@@ -153,25 +153,25 @@ function q(e) {
           }), (0, v.X)(ei.id), null == Q || Q()
         };
       return (0, r.jsxs)("div", {
-        className: W.details,
+        className: Y.details,
         children: [(0, r.jsxs)("div", {
           children: [(0, r.jsxs)(l.X6q, {
             variant: "heading-sm/semibold",
             color: "text-normal",
-            className: W.voiceChannelHeading,
+            className: Y.voiceChannelHeading,
             children: [(0, r.jsx)(G.Z, {
               channel: ea,
               size: "xxs",
               color: l.TVs.colors.TEXT_NORMAL,
-              className: W.voiceIcon
+              className: Y.voiceIcon
             }), (0, r.jsx)(l.P3F, {
-              className: o()(W.clickableText, W.inline),
+              className: o()(Y.clickableText, Y.inline),
               onClick: e,
               children: ea.name
             })]
           }), (0, r.jsx)(j.Z, {
             variant: "text-xs/normal",
-            text: H.NW.formatToPlainString(H.t["hq/Qzc"], {
+            text: H.intl.formatToPlainString(H.t["hq/Qzc"], {
               guildName: ei.name
             }),
             onClick: n
@@ -201,7 +201,7 @@ function q(e) {
       onClose: Q
     }),
     ev = () => t.id === n.id ? null : (0, r.jsx)("div", {
-      className: o()(W.actions, er),
+      className: o()(Y.actions, er),
       children: (0, r.jsx)(B.Z, {
         channel: ea,
         onAction: ec,
@@ -210,9 +210,9 @@ function q(e) {
     }),
     eO = e_,
     eI = et === V.n_.ACTIVITY && en === eO,
-    eS = null != es ? H.NW.formatToPlainString(H.t["4CQq9f"], {
+    eS = null != es ? H.intl.formatToPlainString(H.t["4CQq9f"], {
       name: es.name
-    }) : H.NW.string(H.t["Jpkr/v"]);
+    }) : H.intl.string(H.t["Jpkr/v"]);
   return (0, r.jsx)(h.Gt, {
     value: el,
     children: (0, r.jsx)(x.Z, {
@@ -230,7 +230,7 @@ function q(e) {
         children: () => (0, r.jsx)(D.Z, {
           ref: J,
           user: t,
-          className: W.toolbarContainer,
+          className: Y.toolbarContainer,
           interactionSourceId: eO,
           sourceType: V.n_.ACTIVITY,
           onAction: ec,
@@ -246,7 +246,7 @@ function q(e) {
           children: (0, r.jsxs)(M.Z, {
             ref: eu,
             className: o()(q, {
-              [W.hoisted]: eI
+              [Y.hoisted]: eI
             }),
             onAction: ec,
             onClose: Q,
@@ -256,9 +256,9 @@ function q(e) {
                 size: m.OH.SMALL
               })
             }), (0, r.jsxs)("div", {
-              className: W.body,
+              className: Y.body,
               children: [(0, r.jsxs)("div", {
-                className: o()(W.content, er),
+                className: o()(Y.content, er),
                 children: [eE(), eb(), $ === V.y0.FULL_SIZE && ev()]
               }), ey()]
             }), $ !== V.y0.FULL_SIZE && ev()]

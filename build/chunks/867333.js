@@ -69,11 +69,11 @@ function v(e) {
     action: I
   } = e, {
     onInteraction: S
-  } = i.useContext(c.p), T = i.useRef(null), N = (0, f.Q3)("MenuRadioItem");
+  } = i.useContext(c.p), T = i.useRef(null), A = (0, f.Q3)("MenuRadioItem");
   i.useEffect(() => {
     v && (0, u.F)(T)
   }, [v]);
-  let A = i.useCallback(e => {
+  let N = i.useCallback(e => {
     I(e), null == S || S({
       type: c.U.RADIO
     })
@@ -84,7 +84,7 @@ function v(e) {
       [m.disabled]: b,
       [m.focused]: v
     }),
-    onClick: b ? void 0 : A
+    onClick: b ? void 0 : N
   }, O), {
     "aria-checked": a,
     "aria-disabled": b,
@@ -96,7 +96,7 @@ function v(e) {
       })]
     }), (0, r.jsx)("div", {
       className: m.iconContainer,
-      children: N ? (0, r.jsx)(d.Fj9, {
+      children: A ? (0, r.jsx)(d.Fj9, {
         checked: a,
         disabled: b,
         radioItemIconClassName: m.radioIcon

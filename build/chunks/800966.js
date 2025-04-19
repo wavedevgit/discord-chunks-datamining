@@ -64,7 +64,7 @@ function g(e) {
       alt: "HD Streaming Nitro Perk"
     }), (0, r.jsx)(a.zxk, {
       className: h.closeButton,
-      "aria-label": p.NW.string(p.t.cpT0Cg),
+      "aria-label": p.intl.string(p.t.cpT0Cg),
       look: a.zxk.Looks.BLANK,
       size: a.zxk.Sizes.NONE,
       onClick: () => {
@@ -82,7 +82,7 @@ function g(e) {
         children: [(0, r.jsx)(a.Text, {
           className: h.infoText,
           variant: "text-sm/medium",
-          children: p.NW.format(p.t.ruvD7u, {})
+          children: p.intl.format(p.t.ruvD7u, {})
         }), (0, r.jsxs)("div", {
           className: h.poweredByNitroContainer,
           children: [(0, r.jsx)(a.SrA, {
@@ -90,7 +90,7 @@ function g(e) {
           }), (0, r.jsx)(a.Text, {
             className: h.infoText,
             variant: "text-sm/medium",
-            children: p.NW.string(p.t["BMw+7O"])
+            children: p.intl.string(p.t["BMw+7O"])
           })]
         })]
       })

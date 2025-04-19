@@ -87,10 +87,10 @@ function O(e) {
   let {
     parentAnalyticsLocation: E
   } = (0, u.ZP)(), {
-    disabled: N
-  } = O, I = i.useRef(null), P = (0, s.e7)([d.Z], () => d.Z.getChatOpen(n), [n]), {
-    isShowing: S,
-    unreadCount: Z,
+    disabled: I
+  } = O, P = i.useRef(null), S = (0, s.e7)([d.Z], () => d.Z.getChatOpen(n), [n]), {
+    isShowing: Z,
+    unreadCount: N,
     mentionCount: T
   } = function(e) {
     let {
@@ -112,8 +112,8 @@ function O(e) {
       mentionCount: n
     }
   }(n), A = i.useCallback(() => {
-    (0, p.v)(E, p.d.CHAT, !P), null == h || h(), !P && m && (null == _ || _()), c.Z.updateChatOpen(n, !P)
-  }, [n, P, h, m, _, E]), w = i.useCallback(e => {
+    (0, p.v)(E, p.d.CHAT, !S), null == h || h(), !S && m && (null == _ || _()), c.Z.updateChatOpen(n, !S)
+  }, [n, S, h, m, _, E]), w = i.useCallback(e => {
     let {
       className: t
     } = e;
@@ -123,11 +123,11 @@ function O(e) {
     })
   }, [n]), R = i.useCallback(() => {
     var e;
-    null == (e = I.current) || e.focus()
+    null == (e = P.current) || e.focus()
   }, []);
   (0, g.yp)({
     event: C.CkL.FOCUS_CHAT_BUTTON,
-    handler: N ? null : R
+    handler: I ? null : R
   });
   let [k, M] = i.useState(!1), L = i.useCallback(() => {
     f && M(!0)
@@ -143,10 +143,10 @@ function O(e) {
       clearTimeout(e)
     }
   }, [k]);
-  let D = [t = f && N ? x.NW.string(x.t.DPgc5u) : P ? x.NW.string(x.t.nthdxM) : x.NW.string(x.t["5KxXrK"])];
-  return T > 0 && D.push(x.NW.formatToPlainString(x.t["3l1GOz"], {
+  let D = [t = f && I ? x.intl.string(x.t.DPgc5u) : S ? x.intl.string(x.t.nthdxM) : x.intl.string(x.t["5KxXrK"])];
+  return T > 0 && D.push(x.intl.formatToPlainString(x.t["3l1GOz"], {
     mentionCount: T
-  })), Z > 0 && D.push(x.NW.string(x.t.x5zAGR)), (0, r.jsx)(y.Z, function(e) {
+  })), N > 0 && D.push(x.intl.string(x.t.x5zAGR)), (0, r.jsx)(y.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -164,14 +164,14 @@ function O(e) {
     }
     return e
   }({
-    buttonRef: I,
+    buttonRef: P,
     onClick: A,
     label: t,
     "aria-label": D.join(", "),
     iconComponent: w,
     tooltipPosition: "bottom",
     wrapperClassName: o()(l, null != a && {
-      [a]: S
+      [a]: Z
     }),
     forceTooltipOpen: k
   }, O))

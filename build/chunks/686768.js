@@ -1,5 +1,5 @@
 /** Chunk was on 22447 **/
-n.d(t, {
+n.d(e, {
   default: () => m
 }), n(953529);
 var o = n(200651),
@@ -13,14 +13,14 @@ var o = n(200651),
   d = n(81643),
   E = n(981631),
   u = n(800530),
-  N = n(388032),
-  I = n(579474);
-let m = function(e) {
+  I = n(388032),
+  N = n(579474);
+let m = function(t) {
   let {
-    transitionState: t,
+    transitionState: e,
     entryPoint: n,
     onClose: m
-  } = e, {
+  } = t, {
     loading: T,
     initiateAgeVerification: L
   } = (0, d.WD)(m), S = i.useMemo(() => (0, s.Z)(), []);
@@ -28,9 +28,9 @@ let m = function(e) {
     (0, _.lA)(S, _.d_.RETRY, n)
   }, [S, n]);
   let A = i.useMemo(() => [{
-    title: N.NW.string(N.t.lx3Owc),
-    description: N.NW.string(N.t["N5+M3d"]),
-    buttonText: N.NW.string(N.t.JrEDy8),
+    title: I.intl.string(I.t.lx3Owc),
+    description: I.intl.string(I.t["N5+M3d"]),
+    buttonText: I.intl.string(I.t.JrEDy8),
     buttonColor: r.zxk.Colors.BRAND,
     buttonIcon: r.Gr1,
     buttonIconColor: r.TVs.colors.WHITE,
@@ -39,9 +39,9 @@ let m = function(e) {
       L(), (0, _.x3)(S, _.d_.RETRY, _.sU.GET_STARTED)
     }
   }, {
-    title: N.NW.string(N.t.NpmOHx),
-    description: N.NW.string(N.t.FevsfH),
-    buttonText: N.NW.string(N.t.NpmOHx),
+    title: I.intl.string(I.t.NpmOHx),
+    description: I.intl.string(I.t.FevsfH),
+    buttonText: I.intl.string(I.t.NpmOHx),
     buttonColor: r.zxk.Colors.PRIMARY,
     buttonIcon: r.Gr1,
     buttonIconColor: r.TVs.colors.TEXT_PRIMARY,
@@ -50,24 +50,24 @@ let m = function(e) {
     }
   }], [L, S, T]);
   return (0, o.jsx)(r.Y0X, {
-    transitionState: t,
-    className: I.root,
+    transitionState: e,
+    className: N.root,
     children: (0, o.jsxs)(r.hzk, {
-      className: I.content,
+      className: N.content,
       children: [(0, o.jsxs)("div", {
-        className: I.headersContainer,
+        className: N.headersContainer,
         children: [(0, o.jsx)(r.X6q, {
           variant: "heading-xl/bold",
-          children: N.NW.string(N.t.Bx15q6)
+          children: I.intl.string(I.t.Bx15q6)
         }), (0, o.jsx)(r.X6q, {
           variant: "heading-md/medium",
           color: "text-normal",
-          children: N.NW.string(N.t["bG+/SE"])
+          children: I.intl.string(I.t["bG+/SE"])
         }), (0, o.jsx)(r.olH, {
-          className: I.modalClose,
+          className: N.modalClose,
           onClick: m
         })]
-      }), A.map((e, t) => {
+      }), A.map((t, e) => {
         let {
           title: n,
           description: i,
@@ -77,7 +77,7 @@ let m = function(e) {
           buttonIconColor: a,
           buttonLoading: _,
           onPress: d
-        } = e;
+        } = t;
         return (0, o.jsx)(l.ZP, {
           title: n,
           description: i,
@@ -87,12 +87,12 @@ let m = function(e) {
           buttonIcon: c,
           buttonIconColor: a.css,
           buttonLoading: _
-        }, t)
+        }, e)
       }), (0, o.jsx)(r.Text, {
         variant: "text-xs/medium",
         color: "text-muted",
-        className: I.learnMore,
-        children: N.NW.format(N.t.RV75dn, {
+        className: N.learnMore,
+        children: I.intl.format(I.t.RV75dn, {
           handleOnHelpUrlHook: () => {
             a.Z.openUrl(c.Z.getArticleURL(E.BhN.TIGGER_PAWTECT_UK_AND_AUS_ONLY_LEARN_MORE)), (0, _.x3)(S, _.d_.RETRY, _.sU.LEARN_MORE)
           }

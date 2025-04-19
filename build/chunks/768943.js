@@ -99,11 +99,11 @@ function T() {
   m = !0
 }
 
-function N() {
+function A() {
   m = !0, h.clear(), y.clear(), b.clear()
 }
 
-function A(e) {
+function N(e) {
   let {
     savedMessages: t
   } = e;
@@ -270,8 +270,8 @@ class B extends(r = i.ZP.Store) {
 u(B, "displayName", "SavedMessagesStore");
 let F = new B(o.Z, {
   POST_CONNECTION_OPEN: T,
-  LOGOUT: N,
-  SAVED_MESSAGES_UPDATE: A,
+  LOGOUT: A,
+  SAVED_MESSAGES_UPDATE: N,
   SAVED_MESSAGE_CREATE: C,
   SAVED_MESSAGE_DELETE: R,
   MESSAGE_DELETE: w,

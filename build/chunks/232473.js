@@ -1,11 +1,11 @@
 /** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  C: () => s
+  C: () => l
 });
 var r = n(544891),
   i = n(981631);
-let s = async (e, t) => (await r.tn.get({
+let l = async (e, t) => (await r.tn.get({
   url: i.ANM.PAYMENT_PAYOUT_GROUPS(e),
   query: t,
   rejectWithError: !1

@@ -1,14 +1,14 @@
 /** Chunk was on 23491 **/
 n.d(t, {
-  Q: () => a
+  Q: () => r
 }), n(388685);
 var i = n(192379),
-  r = n(542094);
+  l = n(542094);
 
-function a(e) {
+function r(e) {
   let [t, n] = i.useState(e);
   return i.useLayoutEffect(() => {
-    if (e === r.JS.LEAVE) {
+    if (e === l.JS.LEAVE) {
       let t = setTimeout(() => n(e), 100);
       return () => clearTimeout(t)
     }

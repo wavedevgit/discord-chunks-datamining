@@ -37,8 +37,8 @@ var r = n(990547),
   I = n(957730),
   S = n(48854),
   T = n(835873),
-  N = n(973616),
-  A = n(314897),
+  A = n(973616),
+  N = n(314897),
   C = n(592125),
   R = n(430824),
   P = n(496675),
@@ -56,8 +56,8 @@ var r = n(990547),
   V = n(16609),
   Z = n(224189),
   H = n(374065),
-  W = n(917107),
-  Y = n(89425),
+  Y = n(917107),
+  W = n(89425),
   K = n(275920),
   z = n(701488);
 n(918559);
@@ -116,8 +116,8 @@ async function en(e) {
     joinUserId: y,
     joinSessionId: I,
     secret: T,
-    inviterUserId: N,
-    instanceId: A,
+    inviterUserId: A,
+    instanceId: N,
     isContextlessActivity: R,
     onConfirmActivityLaunchChecksAlertOpen: P
   } = e, D = C.Z.getChannel(r), L = null != (t = null == D ? void 0 : D.getGuildId()) ? t : void 0, x = (0, G.sq)();
@@ -133,7 +133,7 @@ async function en(e) {
       analyticsLocations: l,
       source: h,
       commandOrigin: _,
-      inviterUserId: N,
+      inviterUserId: A,
       launchParams: {
         customId: b,
         referrerId: E
@@ -152,7 +152,7 @@ async function en(e) {
         source: h,
         partyId: m,
         referrerId: E,
-        inviterUserId: N
+        inviterUserId: A
       }), s && null != r) {
       if (!er(a, D)) throw new v.Z(v.Z.Reasons.INVALID_CHANNEL);
       let e = await ei({
@@ -180,7 +180,7 @@ async function en(e) {
         joinUserId: y,
         joinSessionId: I,
         secret: T,
-        instanceId: A,
+        instanceId: N,
         isContextlessActivity: R
       });
       if (null == g || g(), "failure" === e.result) throw new v.Z(v.Z.Reasons.LEGACY_LAUNCH_CLIENT_VALIDATION_FAILED, e.reason)
@@ -339,7 +339,7 @@ async function ea(e) {
       instanceId: f,
       isContextlessActivity: _
     } = e,
-    p = A.default.getSessionId(),
+    p = N.default.getSessionId(),
     h = w.default.getCurrentUser(),
     m = n;
   if (null == m) return {
@@ -373,8 +373,8 @@ async function ea(e) {
   if (v !== H.jy.CAN_LAUNCH) {
     let e = 4;
     return v === H.jy.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION ? (e = 5, (0, T.w)()) : v === H.jy.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS && (e = 6, s.Z.show({
-      title: J.NW.string(J.t["IOy+Iy"]),
-      body: J.NW.string(J.t.UXoQTk),
+      title: J.intl.string(J.t["IOy+Iy"]),
+      body: J.intl.string(J.t.UXoQTk),
       hideActionSheet: !1
     })), {
       result: "failure",
@@ -395,10 +395,10 @@ async function ea(e) {
     reason: 7
   };
   if (null != y) {
-    let e = (0, W.Z)(y.id),
+    let e = (0, Y.Z)(y.id),
       n = z.wP.includes(y.type);
     if (e) {
-      if (!await (0, Y.Z)({
+      if (!await (0, W.Z)({
           channelId: y.id,
           bypassChangeModal: null != t
         })) return {
@@ -505,7 +505,7 @@ async function es() {
         rejectWithError: !0
       }),
       t = e.body.applications,
-      n = t.map(e => N.ZP.createFromServer(e));
+      n = t.map(e => A.ZP.createFromServer(e));
     o.Z.dispatch({
       type: "DEVELOPER_ACTIVITY_SHELF_FETCH_SUCCESS",
       applications: n,
@@ -608,7 +608,7 @@ async function eu(e) {
       applications: c
     }), {
       activityConfigs: l,
-      applications: c.map(e => N.ZP.createFromServer(e))
+      applications: c.map(e => A.ZP.createFromServer(e))
     }
   } catch (e) {
     return o.Z.dispatch({

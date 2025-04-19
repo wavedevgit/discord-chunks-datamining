@@ -20,24 +20,24 @@ var r = n(200651),
   _ = n(617136),
   E = n(113434),
   O = n(497505),
-  N = n(475595),
-  y = n(352084),
-  I = n(125011),
-  v = n(685613),
-  C = n(981631),
-  S = n(388032),
+  y = n(475595),
+  I = n(352084),
+  v = n(125011),
+  C = n(685613),
+  S = n(981631),
+  N = n(388032),
   T = n(45017);
 let P = (0, i.memo)(function(e) {
   var t, n, l, P, j, A;
   let {
     quest: Z
-  } = e, [x, L] = (0, i.useState)(!1), [w, R] = (0, i.useState)(24), [D, k] = (0, i.useState)(!1), M = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, i.useRef)(null), W = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
-    ref: V,
-    height: B = 0
-  } = (0, p.ZP)(), H = (0, h.ZP)(), F = (0, E.B6)(null == (t = Z.userStatus) ? void 0 : t.claimedAt, {
+  } = e, [x, L] = (0, i.useState)(!1), [w, R] = (0, i.useState)(24), [D, k] = (0, i.useState)(!1), M = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, i.useRef)(null), V = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
+    ref: B,
+    height: H = 0
+  } = (0, p.ZP)(), F = (0, h.ZP)(), z = (0, E.B6)(null == (t = Z.userStatus) ? void 0 : t.claimedAt, {
     month: "numeric",
     day: "numeric"
-  }), z = null != (j = null == (n = Z.userStatus) ? void 0 : n.claimedTier) ? j : 0, Y = Z.config.rewards[z], K = (null == Y ? void 0 : Y.type) === s.w.FRACTIONAL_PREMIUM, q = (null == Y ? void 0 : Y.type) === s.w.COLLECTIBLE, Q = (null == Y ? void 0 : Y.type) === s.w.VIRTUAL_CURRENCY, X = null == Y || null == (P = Y.collectibleProduct) || null == (l = P.items) ? void 0 : l[0], J = (null == X ? void 0 : X.type) === o.Z.AVATAR_DECORATION ? X : null;
+  }), W = null != (j = null == (n = Z.userStatus) ? void 0 : n.claimedTier) ? j : 0, Y = Z.config.rewards[W], K = (null == Y ? void 0 : Y.type) === s.w.FRACTIONAL_PREMIUM, q = (null == Y ? void 0 : Y.type) === s.w.COLLECTIBLE, Q = (null == Y ? void 0 : Y.type) === s.w.VIRTUAL_CURRENCY, X = null == Y || null == (P = Y.collectibleProduct) || null == (l = P.items) ? void 0 : l[0], J = (null == X ? void 0 : X.type) === o.Z.AVATAR_DECORATION ? X : null;
   (0, p.PM)(M, e => {
     let {
       height: t
@@ -48,10 +48,10 @@ let P = (0, i.memo)(function(e) {
       i = G.current.getBoundingClientRect();
     R((r.top - n.top - i.height) / 2)
   });
-  let $ = (0, u.wj)(H),
+  let $ = (0, u.wj)(F),
     ee = (0, i.useMemo)(() => null != Z.config.cosponsorMetadata, [Z]),
-    et = (0, i.useMemo)(() => (0, N.fh)(Z, N.eC.REWARD), [Z]),
-    en = x ? B + 8 : 0,
+    et = (0, i.useMemo)(() => (0, y.fh)(Z, y.eC.REWARD), [Z]),
+    en = x ? H + 8 : 0,
     er = (0, _.mH)(O.jn.TROPHY_CASE_CARD),
     {
       content_position: ei,
@@ -73,7 +73,7 @@ let P = (0, i.memo)(function(e) {
       return i
     }(er, ["content_position", "row_index"]),
     eo = () => {
-      L(!0), b.default.track(C.rMx.QUEST_HOVER, function(e) {
+      L(!0), b.default.track(S.rMx.QUEST_HOVER, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -96,7 +96,7 @@ let P = (0, i.memo)(function(e) {
     },
     es = () => L(!1),
     ec = e => {
-      k(!0), b.default.track(C.rMx.QUEST_ASSET_LOADING_FAILURE, {
+      k(!0), b.default.track(S.rMx.QUEST_ASSET_LOADING_FAILURE, {
         source: e,
         asset_id: e,
         quest_id: Z.id
@@ -113,7 +113,7 @@ let P = (0, i.memo)(function(e) {
       className: a()(T.container, {
         [T.hovered]: x
       }),
-      children: [null != W && q && null != J && (0, r.jsx)("div", {
+      children: [null != V && q && null != J && (0, r.jsx)("div", {
         ref: G,
         className: T.decoWrapper,
         style: {
@@ -121,12 +121,12 @@ let P = (0, i.memo)(function(e) {
         },
         children: (0, r.jsx)(f.Z, {
           avatarDecorationOverride: J,
-          user: W,
+          user: V,
           guildId: null
         })
-      }), K ? (0, r.jsx)(y.Z, {
+      }), K ? (0, r.jsx)(I.Z, {
         className: T.image
-      }) : Q ? (0, r.jsx)(I.Z, {
+      }) : Q ? (0, r.jsx)(v.Z, {
         className: T.image
       }) : et.isAnimated ? (0, r.jsx)(g.Z, {
         className: T.assetBlurred,
@@ -152,7 +152,7 @@ let P = (0, i.memo)(function(e) {
         style: {
           transform: "translateY(-".concat(en, "px)")
         },
-        children: (0, r.jsx)(v.ZP, {
+        children: (0, r.jsx)(C.ZP, {
           logotypeClassName: a()(T.logo, {
             [T.logoWithCosponsor]: ee
           }),
@@ -160,13 +160,13 @@ let P = (0, i.memo)(function(e) {
           withGameTile: !1
         })
       }), (0, r.jsxs)("div", {
-        ref: V,
+        ref: B,
         className: T.details,
         children: [(0, r.jsx)(d.X6q, {
           className: T.title,
           variant: "heading-md/semibold",
           color: "always-white",
-          children: S.NW.format(S.t.EAYZAg, {
+          children: N.intl.format(N.t.EAYZAg, {
             questName: Z.config.messages.questName
           })
         }), (0, r.jsx)(d.Text, {
@@ -175,9 +175,9 @@ let P = (0, i.memo)(function(e) {
           style: {
             opacity: $ ? 1 : .75
           },
-          children: S.NW.format(S.t.kXVcV1, {
+          children: N.intl.format(N.t.kXVcV1, {
             reward: Y.name,
-            claimedDate: F
+            claimedDate: z
           })
         })]
       })]

@@ -61,19 +61,19 @@ function T(e) {
   let y, {
       selected: O,
       channel: T,
-      entry: A
+      entry: N
     } = e,
     C = T.guild_id,
     R = (0, p.Z)({
       guildId: C,
-      leaderboardId: A.extra.leaderboard_id,
+      leaderboardId: N.extra.leaderboard_id,
       intervalOffset: 0
     }),
     {
       rankChanges: P
     } = (0, h.Z)({
       guildId: C,
-      leaderboardId: A.extra.leaderboard_id,
+      leaderboardId: N.extra.leaderboard_id,
       intervalStart: null != (E = null == R ? void 0 : R.interval_start) ? E : ""
     }),
     w = (0, a.e7)([u.default], () => u.default.getId()),
@@ -92,7 +92,7 @@ function T(e) {
   });
   let k = (0, s.q)(null == R || null == (t = R.settings) ? void 0 : t.application_id);
   if (null == R || null == k) return null;
-  if (0 === R.users.length || null == D || null == x) return (0, r.jsx)(N, {
+  if (0 === R.users.length || null == D || null == x) return (0, r.jsx)(A, {
     application: k,
     selected: O
   });
@@ -101,9 +101,9 @@ function T(e) {
   } = R.guild_settings, U = null != (b = null == L || null == (f = L.statistics) || null == (n = f[j]) ? void 0 : n.value) ? b : 0, {
     currentRank: G
   } = D;
-  return y = D.userId === w ? v.NW.formatToPlainString(v.t["eU+JxM"], {
+  return y = D.userId === w ? v.intl.formatToPlainString(v.t["eU+JxM"], {
     rank: G
-  }) : v.NW.formatToPlainString(v.t["8BLSQ0"], {
+  }) : v.intl.formatToPlainString(v.t["8BLSQ0"], {
     rank: G,
     username: M
   }), (0, r.jsxs)(c.Zb, {
@@ -129,7 +129,7 @@ function T(e) {
   })
 }
 
-function N(e) {
+function A(e) {
   let {
     selected: t,
     application: n
@@ -142,11 +142,11 @@ function N(e) {
       }), (0, r.jsx)(o.LZC, {
         size: 2
       }), (0, r.jsx)(c.ll, {
-        children: v.NW.string(v.t["t+b0DA"])
+        children: v.intl.string(v.t["t+b0DA"])
       }), (0, r.jsx)(l.Gk, {
         location: l.Gt.CARD,
         children: (0, r.jsx)(m.ZR, {
-          text: v.NW.string(v.t.zX8HUl)
+          text: v.intl.string(v.t.zX8HUl)
         })
       })]
     }), (0, r.jsx)(E.Z, {

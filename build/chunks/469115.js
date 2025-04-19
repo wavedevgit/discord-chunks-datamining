@@ -24,7 +24,7 @@ let s = [{
       stop: 93.07
     }],
     angle: 180,
-    getName: () => o.NW.string(o.t.kCdS4e),
+    getName: () => o.intl.string(o.t.kCdS4e),
     midpointPercentage: 27
   }, {
     id: i.Us.CITRUS_SHERBERT,
@@ -37,7 +37,7 @@ let s = [{
       stop: 67.09
     }],
     angle: 180,
-    getName: () => o.NW.string(o.t.S4UnEx),
+    getName: () => o.intl.string(o.t.S4UnEx),
     midpointPercentage: 27
   }, {
     id: i.Us.RETRO_RAINCLOUD,
@@ -56,7 +56,7 @@ let s = [{
       stop: 73.12
     }],
     angle: 148.71,
-    getName: () => o.NW.string(o.t["48xnKS"]),
+    getName: () => o.intl.string(o.t["48xnKS"]),
     midpointPercentage: 50
   }, {
     id: i.Us.HANAMI,
@@ -72,7 +72,7 @@ let s = [{
       stop: 68.78
     }],
     angle: 38.08,
-    getName: () => o.NW.string(o.t.G4HsBA),
+    getName: () => o.intl.string(o.t.G4HsBA),
     midpointPercentage: 50
   }, {
     id: i.Us.SUNRISE,
@@ -88,7 +88,7 @@ let s = [{
       stop: 76.04
     }],
     angle: 154.19,
-    getName: () => o.NW.string(o.t["NAt88/"]),
+    getName: () => o.intl.string(o.t["NAt88/"]),
     midpointPercentage: 50
   }, {
     id: i.Us.COTTON_CANDY,
@@ -101,7 +101,7 @@ let s = [{
       stop: 94.28
     }],
     angle: 180.14,
-    getName: () => o.NW.string(o.t.godtzM),
+    getName: () => o.intl.string(o.t.godtzM),
     midpointPercentage: 50
   }, {
     id: i.Us.LOFI_VIBES,
@@ -120,7 +120,7 @@ let s = [{
       stop: 96.23
     }],
     angle: 179.52,
-    getName: () => o.NW.string(o.t.hlS2xs),
+    getName: () => o.intl.string(o.t.hlS2xs),
     midpointPercentage: 27
   }, {
     id: i.Us.DESERT_KHAKI,
@@ -136,7 +136,7 @@ let s = [{
       stop: 52.11
     }],
     angle: 38.99,
-    getName: () => o.NW.string(o.t["abMn9/"]),
+    getName: () => o.intl.string(o.t["abMn9/"]),
     midpointPercentage: 50
   }],
   l = a.BR.DARK,
@@ -151,7 +151,7 @@ let s = [{
       stop: 71.25
     }],
     angle: 141.68,
-    getName: () => o.NW.string(o.t.JKDra2),
+    getName: () => o.intl.string(o.t.JKDra2),
     midpointPercentage: 35
   }, {
     id: i.Us.CHROMA_GLOW,
@@ -173,7 +173,7 @@ let s = [{
       stop: 76.45
     }],
     angle: 128.92,
-    getName: () => o.NW.string(o.t.kwc8Ul),
+    getName: () => o.intl.string(o.t.kwc8Ul),
     midpointPercentage: 15
   }, {
     id: i.Us.FOREST,
@@ -195,7 +195,7 @@ let s = [{
       stop: 83.54
     }],
     angle: 162.27,
-    getName: () => o.NW.string(o.t["TeA/j4"]),
+    getName: () => o.intl.string(o.t["TeA/j4"]),
     midpointPercentage: 50
   }, {
     id: i.Us.CRIMSON_MOON,
@@ -208,7 +208,7 @@ let s = [{
       stop: 72
     }],
     angle: 64.92,
-    getName: () => o.NW.string(o.t.blIucn),
+    getName: () => o.intl.string(o.t.blIucn),
     midpointPercentage: 30
   }, {
     id: i.Us.MIDNIGHT_BLURPLE,
@@ -221,7 +221,7 @@ let s = [{
       stop: 61.92
     }],
     angle: 48.17,
-    getName: () => o.NW.string(o.t.O1yOXF),
+    getName: () => o.intl.string(o.t.O1yOXF),
     midpointPercentage: 24
   }, {
     id: i.Us.MARS,
@@ -234,7 +234,7 @@ let s = [{
       stop: 74.62
     }],
     angle: 170.82,
-    getName: () => o.NW.string(o.t["1swi9v"]),
+    getName: () => o.intl.string(o.t["1swi9v"]),
     midpointPercentage: 50
   }, {
     id: i.Us.DUSK,
@@ -247,7 +247,7 @@ let s = [{
       stop: 85.99
     }],
     angle: 180,
-    getName: () => o.NW.string(o.t.So2Wur),
+    getName: () => o.intl.string(o.t.So2Wur),
     midpointPercentage: 50
   }, {
     id: i.Us.UNDER_THE_SEA,
@@ -263,7 +263,7 @@ let s = [{
       stop: 96.35
     }],
     angle: 179.14,
-    getName: () => o.NW.string(o.t["a22o4+"]),
+    getName: () => o.intl.string(o.t["a22o4+"]),
     midpointPercentage: 50
   }, {
     id: i.Us.RETRO_STORM,
@@ -282,7 +282,7 @@ let s = [{
       stop: 73.12
     }],
     angle: 148.71,
-    getName: () => o.NW.string(o.t.Bf294e),
+    getName: () => o.intl.string(o.t.Bf294e),
     midpointPercentage: 61
   }, {
     id: i.Us.NEON_NIGHTS,
@@ -298,7 +298,7 @@ let s = [{
       stop: 100
     }],
     angle: 180,
-    getName: () => o.NW.string(o.t["p+XCtb"]),
+    getName: () => o.intl.string(o.t["p+XCtb"]),
     midpointPercentage: 50
   }, {
     id: i.Us.STRAWBERRY_LEMONADE,
@@ -314,7 +314,7 @@ let s = [{
       stop: 80.72
     }],
     angle: 161.03,
-    getName: () => o.NW.string(o.t["d5Ar+v"]),
+    getName: () => o.intl.string(o.t["d5Ar+v"]),
     midpointPercentage: 32
   }, {
     id: i.Us.AURORA,
@@ -336,7 +336,7 @@ let s = [{
       stop: 92.5
     }],
     angle: 239.16,
-    getName: () => o.NW.string(o.t.Je1FWF),
+    getName: () => o.intl.string(o.t.Je1FWF),
     midpointPercentage: 34
   }, {
     id: i.Us.SEPIA,
@@ -349,7 +349,7 @@ let s = [{
       stop: 60.35
     }],
     angle: 69.98,
-    getName: () => o.NW.string(o.t["Z+Un4+"]),
+    getName: () => o.intl.string(o.t["Z+Un4+"]),
     midpointPercentage: 50
   }],
   u = {
@@ -363,7 +363,7 @@ let s = [{
       stop: 64.54
     }],
     angle: 47.61,
-    getName: () => o.NW.string(o.t.Mfoe3t),
+    getName: () => o.intl.string(o.t.Mfoe3t),
     midpointPercentage: 50
   },
   d = {
@@ -377,22 +377,22 @@ let s = [{
       stop: 96
     }],
     angle: 180,
-    getName: () => o.NW.string(o.t.mFinbW),
+    getName: () => o.intl.string(o.t.mFinbW),
     midpointPercentage: 50
   },
   f = [...s, ...c, u, d],
   _ = [u, ...c, ...s, d],
   p = [{
     theme: l,
-    getName: () => o.NW.string(o.t.b8Cei4)
+    getName: () => o.intl.string(o.t.b8Cei4)
   }, {
     theme: a.BR.LIGHT,
-    getName: () => o.NW.string(o.t.K2sFfn)
+    getName: () => o.intl.string(o.t.K2sFfn)
   }, {
     theme: a.BR.MIDNIGHT,
-    getName: () => o.NW.string(o.t.pQwSpa)
+    getName: () => o.intl.string(o.t.pQwSpa)
   }, {
     theme: "system",
-    getName: () => o.NW.string(o.t.zlvNOj)
+    getName: () => o.intl.string(o.t.zlvNOj)
   }],
   h = (0, r.keyBy)(f, "id")

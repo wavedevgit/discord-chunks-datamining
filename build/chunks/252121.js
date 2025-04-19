@@ -5,15 +5,15 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  s = n(236413),
-  l = n(564488);
+  l = n(236413),
+  s = n(564488);
 
 function a(e) {
   let {
     guildId: t,
     triggerType: n
-  } = e, a = i.useMemo(() => () => (0, s.ep)(t, n), [t, n]), [o] = i.useState(a);
-  return (0, r.jsx)(l.Z, {
+  } = e, a = i.useMemo(() => () => (0, l.ep)(t, n), [t, n]), [o] = i.useState(a);
+  return (0, r.jsx)(s.Z, {
     rule: o
   })
 }

@@ -20,26 +20,26 @@ var r = n(200651),
   _ = n(746728),
   E = n(140700),
   O = n(665807),
-  N = n(188493),
-  y = n(294330),
-  I = n(981631),
-  v = n(984503);
-let C = Object.freeze({
+  y = n(188493),
+  I = n(294330),
+  v = n(981631),
+  C = n(984503);
+let S = Object.freeze({
     top: 0,
     bottom: 0,
     left: 32,
     right: 202
   }),
-  S = Object.freeze({
+  N = Object.freeze({
     top: 0,
     bottom: 0,
     left: 32,
     right: 32
   }),
   T = {
-    page: I.ZY5.GUILD_DISCOVERY,
-    object: I.qAy.CARD,
-    section: I.jXE.DISCOVER_SEARCH
+    page: v.ZY5.GUILD_DISCOVERY,
+    object: v.qAy.CARD,
+    section: v.jXE.DISCOVER_SEARCH
   },
   P = s().throttle(h.c6, 1e3, {
     leading: !1,
@@ -54,36 +54,36 @@ function j(e) {
   } = e, {
     guildIds: s,
     loading: h,
-    searchResultsQuery: I,
+    searchResultsQuery: v,
     loadMore: j,
     searchCategoryId: A
   } = (0, b.f)({
     loadId: t
-  }), Z = 0 === s.length && !h, x = i.useContext(d.AnalyticsContext), [L, w] = i.useState((0, m.PM)()), [R, D] = i.useState(!0), k = i.useRef(R), [M, U] = i.useState(3), G = i.useRef(M), W = i.useRef(null), V = i.useCallback(e => {
+  }), Z = 0 === s.length && !h, x = i.useContext(d.AnalyticsContext), [L, w] = i.useState((0, m.PM)()), [R, D] = i.useState(!0), k = i.useRef(R), [M, U] = i.useState(3), G = i.useRef(M), V = i.useRef(null), B = i.useCallback(e => {
     if (null != e && !Z && !h) 336 * (s.length / M) <= e.height && j()
-  }, [Z, h, s.length, M, j]), B = i.useCallback(e => {
+  }, [Z, h, s.length, M, j]), H = i.useCallback(e => {
     let t = e.contentRect;
     if (null == t) return;
     let n = t.width;
     n < 1024 && k.current ? (k.current = !1, D(!1)) : n > 1024 && !k.current && (k.current = !0, D(!0));
     let r = 1;
     for (n -= 450 * !!R, n -= 280; n > 0;) n -= 264, r += 1;
-    r !== G.current && (G.current = r, U(r)), V(t)
-  }, [R, V]), H = (0, u.y)(B, [R, V]);
+    r !== G.current && (G.current = r, U(r)), B(t)
+  }, [R, B]), F = (0, u.y)(H, [R, B]);
   i.useEffect(() => {
     w((0, m.PM)())
-  }, [I]), i.useEffect(() => {
+  }, [v]), i.useEffect(() => {
     P({
       loadId: t,
       searchId: L,
-      query: I,
+      query: v,
       guildResults: s.map(f.Z.getGuild).filter(p.lm),
       analyticsContext: x,
       categoryId: A
     })
-  }, [x, s, t, A, L, I]);
-  let F = i.useCallback(e => n(e, A), [n, A]),
-    z = i.useMemo(() => h ? [s.length, 0] : [s.length], [s.length, h]),
+  }, [x, s, t, A, L, v]);
+  let z = i.useCallback(e => n(e, A), [n, A]),
+    W = i.useMemo(() => h ? [s.length, 0] : [s.length], [s.length, h]),
     Y = i.useCallback((e, n, i) => {
       switch (e) {
         case 0:
@@ -92,14 +92,14 @@ function j(e) {
               paddingLeft: n.left,
               width: n.width - 16
             },
-            className: a()(v.heading, {
-              [v.headingTopbar]: !R
+            className: a()(C.heading, {
+              [C.headingTopbar]: !R
             }),
             children: [!R && (0, r.jsxs)("div", {
-              className: v.headingFilters,
+              className: C.headingFilters,
               children: [(0, r.jsx)(E.Z, {
                 loadId: t
-              }), (0, r.jsx)(N.Z, {
+              }), (0, r.jsx)(y.Z, {
                 loadId: t
               })]
             }), Z && (0, r.jsx)(O.Z, {
@@ -108,8 +108,8 @@ function j(e) {
           }, i);
         case 1:
           return (0, r.jsx)(c.$jN, {
-            className: a()(v.spinner, {
-              [v.spinnerWithSidebar]: R
+            className: a()(C.spinner, {
+              [C.spinnerWithSidebar]: R
             })
           }, i)
       }
@@ -148,7 +148,7 @@ function j(e) {
     X = i.useCallback(async (e, t, n, r) => {
       var i, a;
       await l(e, t, n, r);
-      let o = null == (a = W.current) || null == (i = a.getScrollerState()) ? void 0 : i.scrollTop;
+      let o = null == (a = V.current) || null == (i = a.getScrollerState()) ? void 0 : i.scrollTop;
       null != o && g.Z.setState({
         scrollPosition: o
       })
@@ -159,16 +159,16 @@ function j(e) {
         let e = s[t];
         return (0, r.jsx)("div", {
           style: n,
-          children: (0, r.jsx)(y.ZP, {
+          children: (0, r.jsx)(I.ZP, {
             guildId: e,
             onClick: async e => await X(e, t, A, T),
-            onView: e => F(e)
+            onView: e => z(e)
           })
         }, i)
       }
-    }, [s, X, F, A]);
+    }, [s, X, z, A]);
   i.useEffect(() => {
-    let e = W.current;
+    let e = V.current;
     return () => {
       var t;
       let n = null == e || null == (t = e.getScrollerState()) ? void 0 : t.scrollTop;
@@ -180,7 +180,7 @@ function j(e) {
     let e = g.Z.getField("scrollPosition");
     null != e && setTimeout(() => {
       var t;
-      null == (t = W.current) || t.scrollTo({
+      null == (t = V.current) || t.scrollTo({
         to: e,
         animate: !1,
         callback: () => {
@@ -193,21 +193,21 @@ function j(e) {
   }, []);
   let $ = i.useMemo(() => (0, o.debounce)(() => {
       var e;
-      let t = null == (e = W.current) ? void 0 : e.getScrollerState();
+      let t = null == (e = V.current) ? void 0 : e.getScrollerState();
       if (null == t) return;
       let n = t.scrollTop + t.offsetHeight;
       t.scrollHeight - n < 240 && j()
     }, 100, {
       leading: !0
     }), [j]),
-    ee = R ? C : S;
+    ee = R ? S : N;
   return (0, r.jsx)("div", {
-    className: v.container,
-    ref: H,
+    className: C.container,
+    ref: F,
     children: (0, r.jsx)(c.GMG, {
-      ref: W,
-      className: v.masonryList,
-      sections: z,
+      ref: V,
+      className: C.masonryList,
+      sections: W,
       columns: M,
       itemGutter: 16,
       padding: ee,
@@ -219,15 +219,15 @@ function j(e) {
       chunkSize: 24,
       onScroll: $,
       renderAccessory: e => R ? (0, r.jsx)("div", {
-        className: v.sidebar,
+        className: C.sidebar,
         style: {
           height: e
         },
         children: (0, r.jsxs)("div", {
-          className: v.sidebarContent,
+          className: C.sidebarContent,
           children: [(0, r.jsx)("div", {
-            className: v.sidebarLanguageSelect,
-            children: (0, r.jsx)(N.Z, {
+            className: C.sidebarLanguageSelect,
+            children: (0, r.jsx)(y.Z, {
               loadId: t
             })
           }), (0, r.jsx)(_.Z, {

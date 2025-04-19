@@ -1,38 +1,38 @@
 /** Chunk was on 14466 **/
-r.d(i, {
-  default: () => a
+n.d(i, {
+  default: () => c
 });
-var e = r(200651);
-r(192379);
-var n = r(481060),
-  s = r(388032),
-  c = r(915935);
+var r = n(200651);
+n(192379);
+var e = n(481060),
+  s = n(388032),
+  l = n(915935);
 
-function a(t) {
+function c(t) {
   let {
     onClose: i,
-    transitionState: r,
-    body: a
+    transitionState: n,
+    body: c
   } = t;
-  return (0, e.jsxs)(n.Y0X, {
-    transitionState: r,
-    children: [(0, e.jsx)(n.xBx, {
+  return (0, r.jsxs)(e.Y0X, {
+    transitionState: n,
+    children: [(0, r.jsx)(e.xBx, {
       separator: !1,
-      children: (0, e.jsx)(n.vwX, {
+      children: (0, r.jsx)(e.vwX, {
         tag: "h2",
-        className: c.title,
-        children: s.NW.string(s.t.KTjjrK)
+        className: l.title,
+        children: s.intl.string(s.t.KTjjrK)
       })
-    }), (0, e.jsx)(n.hzk, {
-      children: "string" == typeof a ? (0, e.jsx)(n.Text, {
+    }), (0, r.jsx)(e.hzk, {
+      children: "string" == typeof c ? (0, r.jsx)(e.Text, {
         variant: "text-md/normal",
-        children: a
-      }) : a
-    }), (0, e.jsx)(n.mzw, {
-      children: (0, e.jsx)(n.zxk, {
-        color: n.zxk.Colors.BRAND,
+        children: c
+      }) : c
+    }), (0, r.jsx)(e.mzw, {
+      children: (0, r.jsx)(e.zxk, {
+        color: e.zxk.Colors.BRAND,
         onClick: i,
-        children: s.NW.string(s.t.i4jeWV)
+        children: s.intl.string(s.t.i4jeWV)
       })
     })]
   })

@@ -4,13 +4,13 @@ n.d(t, {
   DG: () => g,
   FO: () => T,
   I6: () => I,
-  J7: () => A,
+  J7: () => N,
   JM: () => S,
   Jw: () => m,
   WL: () => y,
   ak: () => h,
   d$: () => b,
-  eE: () => N,
+  eE: () => A,
   ic: () => E,
   pX: () => O,
   sq: () => p,
@@ -211,7 +211,7 @@ function T(e, t) {
   })
 }
 
-function N(e, t) {
+function A(e, t) {
   let n = new o.ZP({});
   P(l.BM.MESSAGE, {
     message_id: void 0,
@@ -226,7 +226,7 @@ function N(e, t) {
     emailToken: e
   })
 }
-async function A(e, t, n) {
+async function N(e, t, n) {
   try {
     await (0, c.ox)({
       name: l.b.MESSAGE,

@@ -29,8 +29,8 @@ var r = n(98405),
       if (e.name === I && 25 === e.code) return e.constructor
     }
   }(),
-  N = T && T.prototype,
-  A = S.prototype,
+  A = T && T.prototype,
+  N = S.prototype,
   C = b.set,
   R = b.getterFor(O),
   P = "stack" in new S(O),
@@ -53,7 +53,7 @@ var r = n(98405),
       i.name = O, c(this, "stack", l(1, E(i.stack, 1)))
     }
   },
-  L = D.prototype = s(A),
+  L = D.prototype = s(N),
   x = function(e) {
     return {
       enumerable: !0,
@@ -71,12 +71,12 @@ var k = o(function() {
     return !(new T instanceof S)
   }),
   j = k || o(function() {
-    return A.toString !== h || "2: 1" !== String(new T(1, 2))
+    return N.toString !== h || "2: 1" !== String(new T(1, 2))
   }),
   U = k || o(function() {
     return 25 !== new T(1, "DataCloneError").code
   }),
-  G = k || 25 !== T[I] || 25 !== N[I],
+  G = k || 25 !== T[I] || 25 !== A[I],
   B = v ? j || U || G : k;
 r({
   global: !0,
@@ -92,7 +92,7 @@ for (var Z in j && (v || T === F) && u(V, "toString", h), U && y && T === F && d
   })), g)
   if (f(g, Z)) {
     var H = g[Z],
-      W = H.s,
-      Y = l(6, H.c);
-    f(F, W) || c(F, W, Y), f(V, W) || c(V, W, Y)
+      Y = H.s,
+      W = l(6, H.c);
+    f(F, Y) || c(F, Y, W), f(V, Y) || c(V, Y, W)
   }

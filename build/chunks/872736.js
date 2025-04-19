@@ -1,22 +1,22 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => l
+  Z: () => a
 });
-var r = n(200651);
+var i = n(200651);
 n(192379);
-var i = n(481060),
+var r = n(481060),
   s = n(695346),
-  a = n(388032);
+  l = n(388032);
 
-function l(e) {
+function a(e) {
   let t = s.R_.useSetting();
-  return (0, r.jsx)(i.j7V, {
+  return (0, i.jsx)(r.j7V, {
     hideBorder: !0,
     value: !t,
     onChange: () => s.R_.updateSetting(!t),
-    note: t ? null : a.NW.formatToPlainString(a.t.aYhclZ, {
+    note: t ? null : l.intl.formatToPlainString(l.t.aYhclZ, {
       username: e.legacyUsername
     }),
-    children: a.NW.string(a.t["3cWDuL"])
+    children: l.intl.string(l.t["3cWDuL"])
   })
 }

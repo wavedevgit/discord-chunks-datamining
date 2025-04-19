@@ -5,23 +5,23 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  s = n(442837),
-  l = n(481060),
+  l = n(442837),
+  s = n(481060),
   a = n(594174),
   o = n(981631);
 
 function c(e) {
   let t = (null == e ? void 0 : e.hasFeature(o.oNc.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING)) === !0,
     c = (null == e ? void 0 : e.hasFeature(o.oNc.ROLE_SUBSCRIPTIONS_ENABLED)) === !0,
-    d = (0, s.e7)([a.default], () => a.default.getCurrentUser()),
+    d = (0, l.e7)([a.default], () => a.default.getCurrentUser()),
     u = (null == e ? void 0 : e.isOwner(d)) === !0;
   i.useEffect(() => {
-    null != e && t && u && (0, l.ZDy)(async () => {
+    null != e && t && u && (0, s.ZDy)(async () => {
       let {
         default: t
       } = await n.e("710").then(n.bind(n, 32342));
       return n => {
-        var i, s;
+        var i, l;
         return (0, r.jsx)(t, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -39,18 +39,18 @@ function c(e) {
             })
           }
           return e
-        }({}, n), s = s = {
+        }({}, n), l = l = {
           guildId: e.id,
           requireTeamSetup: c
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(s)).forEach(function(e) {
-          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
+        })(Object(l)).forEach(function(e) {
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
         }), i))
       }
     })

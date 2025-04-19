@@ -1,12 +1,12 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => N
+  Z: () => x
 });
-var r = n(200651),
-  i = n(192379),
+var i = n(200651),
+  r = n(192379),
   s = n(120356),
-  a = n.n(s),
-  l = n(481060),
+  l = n.n(s),
+  a = n(481060),
   o = n(906732),
   c = n(642619),
   d = n(626135),
@@ -19,61 +19,61 @@ var r = n(200651),
   b = n(388032),
   _ = n(482470);
 
-function N(e) {
+function x(e) {
   let {
     user: t,
     guild: n,
     className: s,
-    sectionTitle: N,
-    forcedDivider: x = !1,
-    withTutorial: E = !1,
-    showBorder: j = !1,
-    isTryItOutFlow: C = !1,
-    initialSelectedEffectId: O
-  } = e, S = (0, m.Kg)(t, n), v = u.ZP.canUsePremiumProfileCustomization(t), {
-    analyticsLocations: T
+    sectionTitle: x,
+    forcedDivider: E = !1,
+    withTutorial: j = !1,
+    showBorder: C = !1,
+    isTryItOutFlow: O = !1,
+    initialSelectedEffectId: S
+  } = e, v = (0, m.Kg)(t, n), T = u.ZP.canUsePremiumProfileCustomization(t), {
+    analyticsLocations: I
   } = (0, o.ZP)(), {
-    pendingProfileEffectId: I,
+    pendingProfileEffectId: N,
     errors: y
-  } = (0, m.bd)(n), A = i.useCallback(() => (0, c.H)({
-    analyticsLocations: T,
-    initialSelectedEffectId: O,
+  } = (0, m.bd)(n), A = r.useCallback(() => (0, c.H)({
+    analyticsLocations: I,
+    initialSelectedEffectId: S,
     guild: n
-  }), [T, O, n]);
-  i.useEffect(() => {
-    v && d.default.track(h.rMx.PREMIUM_UPSELL_VIEWED, {
+  }), [I, S, n]);
+  r.useEffect(() => {
+    T && d.default.track(h.rMx.PREMIUM_UPSELL_VIEWED, {
       type: f.cd.PROFILE_EFFECTS_INLINE_SETTINGS,
-      location_stack: T
+      location_stack: I
     })
-  }, [v, T]);
+  }, [T, I]);
   let P = null != n,
-    R = E ? l.gtL : l.zxk;
-  return (0, r.jsx)(g.Z, {
-    forcedDivider: x,
+    R = j ? a.gtL : a.zxk;
+  return (0, i.jsx)(g.Z, {
+    forcedDivider: E,
     borderType: p.Y.PREMIUM,
     hasBackground: !0,
-    title: N,
-    showBorder: j,
+    title: x,
+    showBorder: C,
     errors: y,
     className: s,
-    children: (0, r.jsxs)("div", {
+    children: (0, i.jsxs)("div", {
       className: _.buttonsContainer,
-      children: [(0, r.jsx)(R, {
-        size: l.zxk.Sizes.SMALL,
+      children: [(0, i.jsx)(R, {
+        size: a.zxk.Sizes.SMALL,
         onClick: A,
-        className: a()({
-          [_.buttonHighlighted]: E
+        className: l()({
+          [_.buttonHighlighted]: j
         }),
-        children: b.NW.string(b.t["0nEVoK"])
-      }), (C || void 0 !== I ? null != I : null != S) && (0, r.jsx)(l.zxk, {
+        children: b.intl.string(b.t["0nEVoK"])
+      }), (O || void 0 !== N ? null != N : null != v) && (0, i.jsx)(a.zxk, {
         className: _.removeButton,
-        color: l.zxk.Colors.PRIMARY,
-        look: l.zxk.Looks.LINK,
-        size: l.zxk.Sizes.SMALL,
+        color: a.zxk.Colors.PRIMARY,
+        look: a.zxk.Looks.LINK,
+        size: a.zxk.Sizes.SMALL,
         onClick: function() {
-          (0, m.s6)(null, S, null == n ? void 0 : n.id)
+          (0, m.s6)(null, v, null == n ? void 0 : n.id)
         },
-        children: P ? b.NW.string(b.t.GJ3Fcn) : b.NW.string(b.t["Ld+f5e"])
+        children: P ? b.intl.string(b.t.GJ3Fcn) : b.intl.string(b.t["Ld+f5e"])
       })]
     })
   })

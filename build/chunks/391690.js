@@ -124,7 +124,7 @@ function T(e) {
   n.delete(t), r.installationPaths = n, E(t), y(t)
 }
 
-function N(e) {
+function A(e) {
   let {
     path: t,
     label: n,
@@ -134,7 +134,7 @@ function N(e) {
   null != n && "" !== n && r.pathLabels[t] !== n && b(t, n), i && r.defaultInstallationPath !== t && (r.defaultInstallationPath = t)
 }
 
-function A(e) {
+function N(e) {
   let {
     metadataPayload: t
   } = e;
@@ -177,7 +177,7 @@ class C extends(i = a.ZP.PersistedStore) {
   }
   getLabelFromPath(e) {
     var t, n;
-    return e === m ? u.NW.string(u.t.VdDrjo) : null != (n = null != (t = s.Z.fileManager.basename(e)) ? t : e.replace(/[/\\]+$/, "").split(/[/\\]+/g).slice(-1)[0]) ? n : "?"
+    return e === m ? u.intl.string(u.t.VdDrjo) : null != (n = null != (t = s.Z.fileManager.basename(e)) ? t : e.replace(/[/\\]+$/, "").split(/[/\\]+/g).slice(-1)[0]) ? n : "?"
   }
 }
 d(C, "displayName", "InstallationManagerStore"), d(C, "persistKey", "InstallationManagerStore");
@@ -187,7 +187,7 @@ let R = new C(o.Z, {
   DISPATCH_APPLICATION_CANCEL: O,
   INSTALLATION_LOCATION_ADD: S,
   INSTALLATION_LOCATION_REMOVE: T,
-  INSTALLATION_LOCATION_UPDATE: N,
-  INSTALLATION_LOCATION_FETCH_METADATA: A,
+  INSTALLATION_LOCATION_UPDATE: A,
+  INSTALLATION_LOCATION_FETCH_METADATA: N,
   DISPATCH_APPLICATION_ADD_TO_INSTALLATIONS: v
 })

@@ -77,14 +77,14 @@ function T(e) {
   null == _[t] && (_[t] = {}), _[t][n] = u.LU.LOADED_FAILURE
 }
 
-function N(e) {
+function A(e) {
   let {
     id: t
   } = e;
   h = t
 }
 
-function A(e) {
+function N(e) {
   let {
     changelogDate: t
   } = e;
@@ -149,6 +149,6 @@ let P = new R(o.Z, {
   CHANGE_LOG_SET_CONFIG: I,
   CHANGE_LOG_FETCH_SUCCESS: S,
   CHANGE_LOG_FETCH_FAILED: T,
-  CHANGE_LOG_SET_OVERRIDE: N,
-  CHANGE_LOG_MARK_SEEN: A
+  CHANGE_LOG_SET_OVERRIDE: A,
+  CHANGE_LOG_MARK_SEEN: N
 })

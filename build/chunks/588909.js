@@ -1,6 +1,6 @@
 /** Chunk was on 89298 **/
 n.d(t, {
-  Z: () => N
+  Z: () => Z
 }), n(388685);
 var i = n(200651);
 n(192379);
@@ -68,7 +68,7 @@ function S(e) {
   })
 }
 
-function N(e, t) {
+function Z(e, t) {
   let {
     trackView: c,
     trackClick: u
@@ -79,14 +79,14 @@ function N(e, t) {
   for (let r of t) switch (r.type) {
     case O.nc.WELCOME: {
       let t = (null == e ? void 0 : e.altId) != null ? p.Z.getApplicationActivity(e.altId) : (null == e ? void 0 : e.id) != null ? p.Z.getApplicationActivity(e.id) : null;
-      null != t && (0, s.Z)(t, v.xjy.JOIN) && (_.cancelText = E.NW.string(E.t["6F9ivr"]), _.onCancelClick = (e, n) => {
+      null != t && (0, s.Z)(t, v.xjy.JOIN) && (_.cancelText = E.intl.string(E.t["6F9ivr"]), _.onCancelClick = (e, n) => {
         u("unlock"), a.Z.updateNotificationStatus(n), a.Z.setInputLocked(!1, (0, h.getPID)()), (0, l.h7)(t, !1, v.IlC.POPOUT)
       });
       break
     }
     case O.nc.GO_LIVE_VOICE:
     case O.nc.GO_LIVE_NON_VOICE:
-      _.confirmText = E.NW.string(E.t.U76Ft7), _.onConfirmClick = (e, t) => {
+      _.confirmText = E.intl.string(E.t.U76Ft7), _.onConfirmClick = (e, t) => {
         u("unlock"), a.Z.updateNotificationStatus(t), a.Z.setInputLocked(!1, (0, h.getPID)()), (0, o.ZD)(async () => {
           let {
             default: e
@@ -115,9 +115,9 @@ function N(e, t) {
         })
       })
   }
-  let N = (0, d.un)(r.z.OVERLAY_OOP_WELCOME_NUX),
-    Z = N ? E.NW.string(E.t.KWDIrq) : E.NW.string(E.t["prl+ra"]),
-    w = N ? void 0 : E.NW.string(E.t.R3CpPT),
+  let Z = (0, d.un)(r.z.OVERLAY_OOP_WELCOME_NUX),
+    N = Z ? E.intl.string(E.t.KWDIrq) : E.intl.string(E.t["prl+ra"]),
+    w = Z ? void 0 : E.intl.string(E.t.R3CpPT),
     P = null != e ? (0, i.jsx)(S, {
       game: e
     }) : (0, i.jsx)("img", {
@@ -127,25 +127,25 @@ function N(e, t) {
     });
   return C(j({
     icon: P,
-    title: Z,
+    title: N,
     body: w,
-    hint: () => (0, g.Q)((0, y.P)(), E.t["z8/sgI"], E.NW.string(E.t.jZkzVF), !0),
-    confirmText: N ? void 0 : E.NW.string(E.t.TxyTbm),
-    onConfirmClick: N ? void 0 : () => {
-      u("unlock"), a.Z.setInputLocked(!1, (0, h.getPID)()), N || (0, d.EW)(r.z.OVERLAY_OOP_WELCOME_NUX)
+    hint: () => (0, g.Q)((0, y.P)(), E.t["z8/sgI"], E.intl.string(E.t.jZkzVF), !0),
+    confirmText: Z ? void 0 : E.intl.string(E.t.TxyTbm),
+    onConfirmClick: Z ? void 0 : () => {
+      u("unlock"), a.Z.setInputLocked(!1, (0, h.getPID)()), Z || (0, d.EW)(r.z.OVERLAY_OOP_WELCOME_NUX)
     }
   }, _), {
     onNotificationShow: e => {
       var t;
-      c(), N || (0, d.EW)(r.z.OVERLAY_OOP_WELCOME_NUX), null == (t = _.onNotificationShow) || t.call(_, e)
+      c(), Z || (0, d.EW)(r.z.OVERLAY_OOP_WELCOME_NUX), null == (t = _.onNotificationShow) || t.call(_, e)
     },
     onNotificationClick: (e, t) => {
       var n;
-      u("unlock"), a.Z.setInputLocked(!1, (0, h.getPID)()), N || (0, d.EW)(r.z.OVERLAY_OOP_WELCOME_NUX), null == (n = _.onNotificationClick) || n.call(_, e, t)
+      u("unlock"), a.Z.setInputLocked(!1, (0, h.getPID)()), Z || (0, d.EW)(r.z.OVERLAY_OOP_WELCOME_NUX), null == (n = _.onNotificationClick) || n.call(_, e, t)
     },
     onDismissClick: (e, t) => {
       var n;
-      u("dismiss"), N || (0, d.EW)(r.z.OVERLAY_OOP_WELCOME_NUX), null == (n = _.onDismissClick) || n.call(_, e, t)
+      u("dismiss"), Z || (0, d.EW)(r.z.OVERLAY_OOP_WELCOME_NUX), null == (n = _.onDismissClick) || n.call(_, e, t)
     }
   })
 }

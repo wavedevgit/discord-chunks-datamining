@@ -32,11 +32,11 @@ function E(e) {
   } = e, S = u.ZP.getApplicationIconURL({
     id: E.id,
     icon: E.icon
-  }), T = u.ZP.getUserAvatarURL(n), N = i.useMemo(() => I.some(e => (0, _.sg)(e)) ? (0, r.jsxs)(r.Fragment, {
+  }), T = u.ZP.getUserAvatarURL(n), A = i.useMemo(() => I.some(e => (0, _.sg)(e)) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.x, {
       variant: "text-lg/normal",
       color: "header-secondary",
-      children: m.NW.string(m.t.uT1CPT)
+      children: m.intl.string(m.t.uT1CPT)
     }), (0, r.jsx)(a.X6, {
       variant: "heading-xxl/bold",
       color: "header-primary",
@@ -53,11 +53,11 @@ function E(e) {
     }), y.length > 0 ? (0, r.jsx)(l.x, {
       variant: "text-md/normal",
       color: "header-secondary",
-      children: m.NW.string(m.t.jFbDnJ)
+      children: m.intl.string(m.t.jFbDnJ)
     }) : (0, r.jsx)(l.x, {
       variant: "text-md/normal",
       color: "header-secondary",
-      children: m.NW.string(m.t["X+Fdpq"])
+      children: m.intl.string(m.t["X+Fdpq"])
     })]
   }), [y.length, E, b, I]);
   return (0, r.jsxs)("header", {
@@ -85,12 +85,12 @@ function E(e) {
         size: h.EF.SIZE_80,
         "aria-label": n.username
       })]
-    }), N, v ? (0, r.jsx)("div", {
+    }), A, v ? (0, r.jsx)("div", {
       className: g.currentUser,
       children: (0, r.jsxs)(l.x, {
         variant: "text-sm/normal",
         color: "text-muted",
-        children: [m.NW.format(m.t.qRvpYW, {
+        children: [m.intl.format(m.t.qRvpYW, {
           userHook: () => (0, r.jsxs)(l.x, {
             className: g.currentUserTag,
             variant: "text-sm/normal",
@@ -104,7 +104,7 @@ function E(e) {
           tag: "a",
           className: g.logoutLink,
           onClick: () => (0, f.c$)(O, "oauth2_logout"),
-          children: m.NW.string(m.t["yV/hjI"])
+          children: m.intl.string(m.t["yV/hjI"])
         })]
       })
     }) : null]

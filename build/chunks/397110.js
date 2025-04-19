@@ -32,12 +32,12 @@ function C(e) {
     mutualFriendsCount: j,
     mutualFriends: O,
     mutualGuilds: E
-  } = (0, u.Z)(t), N = !t.bot && null != j && j > 0, I = null != E && E.length > 0;
-  return N || I ? (0, r.jsxs)(h.Z.Overlay, {
+  } = (0, u.Z)(t), I = !t.bot && null != j && j > 0, P = null != E && E.length > 0;
+  return I || P ? (0, r.jsxs)(h.Z.Overlay, {
     className: y.overlay,
-    children: [I && (0, r.jsx)(b.Z, {
+    children: [P && (0, r.jsx)(b.Z, {
       section: "MUTUAL_GUILDS",
-      header: _.NW.string(_.t["4lTDZm"]),
+      header: _.intl.string(_.t["4lTDZm"]),
       listClassName: y.list,
       items: E.map(e => {
         let {
@@ -52,11 +52,11 @@ function C(e) {
           onSelect: () => (0, s.X)(n.id)
         }, n.id)
       })
-    }), I && N && (0, r.jsx)(p.Z, {
+    }), P && I && (0, r.jsx)(p.Z, {
       className: y.divider
-    }), N && (0, r.jsx)(b.Z, {
+    }), I && (0, r.jsx)(b.Z, {
       section: "MUTUAL_FRIENDS",
-      header: _.NW.string(_.t["0mTJ3t"]),
+      header: _.intl.string(_.t["0mTJ3t"]),
       listClassName: y.list,
       onExpand: () => (0, d.Z)(t.id, v),
       items: null == O ? Array.from({

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => N
 });
 var r = n(200651),
   i = n(192379),
@@ -62,7 +62,7 @@ function T(e, t) {
   }), e
 }
 
-function N(e) {
+function A(e) {
   let {
     userId: t,
     className: a,
@@ -89,18 +89,18 @@ function N(e) {
   })
 }
 
-function A(e) {
+function N(e) {
   let {
     className: t,
     userId: i,
     channelId: d,
     parsedUserId: O,
     content: S,
-    inlinePreview: A = !1,
+    inlinePreview: N = !1,
     viewingChannelId: C
   } = e, {
     analyticsLocations: R
-  } = (0, c.ZP)(l.Z.USER_MENTION), P = (0, o.e7)([E.default], () => E.default.getUser(i)), w = (0, o.e7)([p.Z], () => p.Z.getChannel(d)), D = null != w ? w.getGuildId() : null, L = A || null == P || null == D || null == d ? void 0 : e => {
+  } = (0, c.ZP)(l.Z.USER_MENTION), P = (0, o.e7)([E.default], () => E.default.getUser(i)), w = (0, o.e7)([p.Z], () => p.Z.getChannel(d)), D = null != w ? w.getGuildId() : null, L = N || null == P || null == D || null == d ? void 0 : e => {
     null != w && (0, s.jW)(e, async () => {
       let {
         default: e
@@ -113,7 +113,7 @@ function A(e) {
       }))
     })
   }, x = y.ZP.useName(P), M = (0, o.e7)([p.Z, h.ZP, g.Z], () => b.ZP.getNickname(D, d, P)), k = m.Z.getGuild(D), j = (0, u.Ib)(k, w) && i === v.fL ? v.jM : null;
-  if (null == P) return (0, r.jsx)(N, {
+  if (null == P) return (0, r.jsx)(A, {
     userId: O,
     className: t,
     children: S
@@ -125,7 +125,7 @@ function A(e) {
   }, e), {
     children: "@".concat(null != M ? M : x)
   }));
-  return A ? (0, r.jsx)(c.Gt, {
+  return N ? (0, r.jsx)(c.Gt, {
     value: R,
     children: U()
   }) : (0, r.jsx)(c.Gt, {

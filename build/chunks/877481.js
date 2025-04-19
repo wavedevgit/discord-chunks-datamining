@@ -61,9 +61,9 @@ let y = new i.Z("Games"),
   I = null,
   S = 250,
   T = 12e4,
-  N = 36e5;
+  A = 36e5;
 
-function A() {
+function N() {
   return null != I ? Promise.resolve(I) : (0, f.isDesktop)() ? p.ZP.ensureModule("discord_game_utils").then(() => {
     let e = p.ZP.getGameUtils();
     return null != e && null != e.findLaunchable ? (I = e, e) : Promise.reject(Error("game utils not found"))
@@ -96,8 +96,8 @@ async function P(e) {
       return t === h.GQo.BATTLENET
     }))), 0 === e.length) throw Error("No remaining launchable queries");
   let t = Date.now();
-  t > O && (O = t + N, v = {});
-  let n = await A();
+  t > O && (O = t + A, v = {});
+  let n = await N();
   for (let t of e) {
     let e = v[t.id];
     if (null != e) return e;
@@ -160,7 +160,7 @@ let L = {
       return d.Z.launch(_, p, E.name, r)
     })
   },
-  removeShortcuts: e => (0, f.isWindows)() ? A().then(t => {
+  removeShortcuts: e => (0, f.isWindows)() ? N().then(t => {
     var n, r;
     return null != (r = null == (n = t.removeShortcuts) ? void 0 : n.call(t, e)) && r
   }) : Promise.resolve(!1),
@@ -168,19 +168,19 @@ let L = {
     if (null == i || !(0, f.isWindows)()) return Promise.resolve(!1);
     let a = "discord:///library/".concat(r, "/launch"),
       o = "".concat(i, "\\icon.ico");
-    return A().then(r => {
+    return N().then(r => {
       var i, s;
       return null != (s = null == (i = r.createShortcuts) ? void 0 : i.call(r, e, t, n, a, o)) && s
     })
   },
   isGameLaunchable: e => P(R(e)).then(e => null != e).catch(() => !1),
   launchGame: e => l.Z.isConnected(e) ? Promise.resolve() : P(R(e)).then(D),
-  isProtocolRegistered: e => A().then(t => {
+  isProtocolRegistered: e => N().then(t => {
     var n, r;
     return null != (r = null == (n = t.isProtocolSchemeRegistered) ? void 0 : n.call(t, e)) && r
   }),
   setRecentGames(e) {
-    A().then(t => {
+    N().then(t => {
       var n;
       return null == (n = t.setRecentGames) ? void 0 : n.call(t, e)
     }).catch(() => {})

@@ -27,8 +27,8 @@ var r = n(200651),
   I = n(768762),
   S = n(197115),
   T = n(210887),
-  N = n(727939),
-  A = n(981631),
+  A = n(727939),
+  N = n(981631),
   C = n(921944),
   R = n(474936),
   P = n(388032),
@@ -63,7 +63,7 @@ function M(e) {
   let {
     isCoachmark: t
   } = e, n = (0, y.q)();
-  return i.useEffect(() => ((0, E.Kq)(), n(A.rMx.CLIENT_THEME_PREVIEW_VIEWED), () => n(A.rMx.CLIENT_THEME_PREVIEW_CLOSED)), [n]), (0, r.jsx)(v.ZP, {
+  return i.useEffect(() => ((0, E.Kq)(), n(N.rMx.CLIENT_THEME_PREVIEW_VIEWED), () => n(N.rMx.CLIENT_THEME_PREVIEW_CLOSED)), [n]), (0, r.jsx)(v.ZP, {
     type: v.yH.EDITOR,
     children: (0, r.jsx)(v.ZP.BasicAndGradient, {
       isEditor: !0,
@@ -94,16 +94,16 @@ function j(e) {
     isCoachmark: l
   }).with({
     isCoachmark: !0
-  }, () => P.NW.string(P.t.cpT0Cg)).with({
+  }, () => P.intl.string(P.t.cpT0Cg)).with({
     isPreview: !0
-  }, () => P.NW.string(P.t["dqH+qq"])).otherwise(() => P.NW.string(P.t.Olc2Ky)), h = i.useCallback(() => 1 === t ? void(0, c.ZDy)(async () => {
+  }, () => P.intl.string(P.t["dqH+qq"])).otherwise(() => P.intl.string(P.t.Olc2Ky)), h = i.useCallback(() => 1 === t ? void(0, c.ZDy)(async () => {
     let {
       default: e
     } = await n.e("69052").then(n.bind(n, 184250));
     return t => (0, r.jsx)(e, L({
       analyticsSource: _.Z.APP_ICON_EDITOR,
       analyticsLocation: {
-        section: A.jXE.SETTINGS_APP_ICONS
+        section: N.jXE.SETTINGS_APP_ICONS
       }
     }, t))
   }) : 0 === t ? void(0, c.ZDy)(async () => {
@@ -113,7 +113,7 @@ function j(e) {
     return t => (0, r.jsx)(e, L({
       analyticsSource: _.Z.CLIENT_THEMES_EDITOR,
       analyticsLocation: {
-        section: A.jXE.SETTINGS_CLIENT_THEMES
+        section: N.jXE.SETTINGS_CLIENT_THEMES
       }
     }, t))
   }) : void 0, [t]);
@@ -128,7 +128,7 @@ function j(e) {
       }), (0, r.jsx)(c.Text, {
         className: w.footerText,
         variant: "text-sm/medium",
-        children: P.NW.format(P.t.x2dQxM, {
+        children: P.intl.format(P.t.x2dQxM, {
           onClick: h
         })
       })]
@@ -150,7 +150,7 @@ function j(e) {
         subscriptionTier: R.Si.TIER_2,
         showGradient: !0,
         fullWidth: !0,
-        buttonText: P.NW.string(P.t.pj0XBA)
+        buttonText: P.intl.string(P.t.pj0XBA)
       })]
     })]
   })
@@ -162,19 +162,19 @@ function U(e) {
     markAsDismissed: n,
     isCoachmark: a
   } = e, [o, s] = i.useState(t), d = i.useMemo(() => [{
-    name: P.NW.string(P.t.Ksh3io),
+    name: P.intl.string(P.t.Ksh3io),
     value: 0
   }, {
-    name: P.NW.string(P.t.RPh2oq),
+    name: P.intl.string(P.t.RPh2oq),
     value: 1
   }], []), _ = (0, l.e7)([b.Z], () => b.Z.isPreview), m = (0, l.e7)([h.Z], () => h.Z.isUpsellPreview), g = _ || m, v = i.useMemo(() => T.Z.theme, []), O = (0, y.J)(), I = i.useCallback(() => {
     _ && O(), m && (0, p.O7)()
-  }, [_, m, O]), S = (0, f.Z)(null, g ? I : A.dG4), R = i.useCallback(() => {
+  }, [_, m, O]), S = (0, f.Z)(null, g ? I : N.dG4), R = i.useCallback(() => {
     g && (0, u.ZI)({
       theme: v
     }), (0, p.G8)(), (0, E.Mo)(), I(), null == n || n(C.L.DISMISS)
   }, [I, n, g, v]);
-  return (0, r.jsx)(N.Z, {
+  return (0, r.jsx)(A.Z, {
     className: w.draggableContainer,
     children: (0, r.jsxs)("div", {
       ref: S,
@@ -185,7 +185,7 @@ function U(e) {
           className: w.headerContainer,
           children: [(0, r.jsx)(c.X6q, {
             variant: "heading-lg/extrabold",
-            children: P.NW.string(P.t.viGN6e)
+            children: P.intl.string(P.t.viGN6e)
           }), (0, r.jsx)(c.olH, {
             className: w.closeContainer,
             innerClassName: w.closeInner,

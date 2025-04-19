@@ -5,8 +5,8 @@ r.d(t, {
 var n = r(200651),
   a = r(192379),
   i = r(120356),
-  s = r.n(i),
-  l = r(692547),
+  l = r.n(i),
+  s = r(692547),
   o = r(481060),
   c = r(600164),
   d = r(4912),
@@ -18,7 +18,7 @@ class p extends a.PureComponent {
       label: e
     } = this.props;
     return m.includes(e) ? (0, n.jsx)(d.Z, {
-      color: l.Z.unsafe_rawColors.YELLOW_300.css,
+      color: s.Z.unsafe_rawColors.YELLOW_300.css,
       className: u.valueIcon
     }) : null
   }
@@ -29,10 +29,10 @@ class p extends a.PureComponent {
       valueRendered: r,
       section: a,
       label: i,
-      renderGraph: l
+      renderGraph: s
     } = this.props;
     return (0, n.jsxs)(c.Z, {
-      className: s()(u.item, t),
+      className: l()(u.item, t),
       direction: c.Z.Direction.VERTICAL,
       basis: "50%",
       children: [(0, n.jsxs)(c.Z, {
@@ -55,11 +55,11 @@ class p extends a.PureComponent {
             children: r
           })]
         })]
-      }), null !== l && (0, n.jsx)(c.Z.Child, {
+      }), null !== s && (0, n.jsx)(c.Z.Child, {
         className: u.graph,
         children: (0, n.jsx)(o.R94, {
           type: o.geA.DESCRIPTION,
-          children: l
+          children: s
         })
       }, null != a ? "".concat(a, "-").concat(i) : i), (0, n.jsx)(o.$i$, {
         className: u.divider

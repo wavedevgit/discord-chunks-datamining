@@ -4,9 +4,9 @@ n.d(t, {
 });
 var r = n(454585),
   l = n(551452),
-  a = n(532901);
+  i = n(532901);
 
-function i(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,20 +37,20 @@ function c(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let s = c(i({}, r.Z.guildEventRules.link), {
-    react: (0, a.Z)({
+let s = c(a({}, r.Z.guildEventRules.link), {
+    react: (0, i.Z)({
       enableBuildOverrides: !1,
       mustConfirmExternalLink: !0
     }).react
   }),
-  o = c(i({}, r.Z.guildEventRules.channelMention), {
+  o = c(a({}, r.Z.guildEventRules.channelMention), {
     react: (0, l.Z)({
       enableBuildOverrides: !1,
       shouldCloseDefaultModals: !0,
       shouldStopPropagation: !0
     }).react
   }),
-  u = r.Z.reactParserFor(c(i({}, r.Z.guildEventRules), {
+  u = r.Z.reactParserFor(c(a({}, r.Z.guildEventRules), {
     link: s,
     channelMention: o
   }))

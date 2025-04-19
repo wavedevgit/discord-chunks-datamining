@@ -30,8 +30,8 @@ var r = n(200651),
   I = n(91140),
   S = n(227172),
   T = n(551228),
-  N = n(678869),
-  A = n(278399),
+  A = n(678869),
+  N = n(278399),
   C = n(886217),
   R = n(555672),
   P = n(644548),
@@ -103,7 +103,7 @@ let V = 72,
 function H(e) {
   return (null == e ? void 0 : e.type) === E.so.CONTENT_INVENTORY ? V : 0
 }
-let W = e => {
+let Y = e => {
     var {
       entry: t
     } = e, n = B(e, ["entry"]);
@@ -121,7 +121,7 @@ let W = e => {
           entry: t
         }));
       case l.s.TOP_ARTIST:
-        return (0, r.jsx)(A.ZP, G(j({}, n), {
+        return (0, r.jsx)(N.ZP, G(j({}, n), {
           entry: t
         }));
       case l.s.LISTENED_SESSION:
@@ -140,7 +140,7 @@ let W = e => {
         return null
     }
   },
-  Y = e => {
+  W = e => {
     var {
       closePopout: t
     } = e, n = B(e, ["closePopout"]);
@@ -183,7 +183,7 @@ let W = e => {
           entry: n
         }));
       case l.s.LISTENED_SESSION:
-        return (0, r.jsx)(N.Z, G(j({}, i), {
+        return (0, r.jsx)(A.Z, G(j({}, i), {
           entry: n
         }));
       case l.s.LAUNCHED_ACTIVITY:
@@ -216,10 +216,10 @@ let W = e => {
       guildId: p.channel.guild_id,
       requestId: p.requestId,
       richPresenceName: O ? I : void 0
-    }), [I, p.channel.guild_id, p.channel.id, p.entry, p.requestId, O]), T = i.useRef(!1), [N, A] = i.useState(!1), [C, R] = i.useState(!1), P = (0, c.e7)([_.Z], () => _.Z.keyboardModeEnabled);
+    }), [I, p.channel.guild_id, p.channel.id, p.entry, p.requestId, O]), T = i.useRef(!1), [A, N] = i.useState(!1), [C, R] = i.useState(!1), P = (0, c.e7)([_.Z], () => _.Z.keyboardModeEnabled);
     i.useEffect(() => {
-      N && P && R(!0)
-    }, [N, P]);
+      A && P && R(!0)
+    }, [A, P]);
     let w = i.useCallback(e => {
         v && (0, f.jW)(e, async () => {
           let {
@@ -246,7 +246,7 @@ let W = e => {
       }), []),
       F = () => {
         T.current = !1, setTimeout(() => {
-          T.current || (A(!1), R(P))
+          T.current || (N(!1), R(P))
         }, 100)
       };
     return (0, r.jsx)("div", {
@@ -254,7 +254,7 @@ let W = e => {
         p.entry.content_type !== l.s.LEADERBOARD || (0, h.un)(u.z.LEADERBOARD_NUX_COACHMARK) || (0, h.EW)(u.z.LEADERBOARD_NUX_COACHMARK, {
           dismissAction: M.L.SECONDARY
         }), T.current = !0, setTimeout(() => {
-          T.current && A(!0), U(S)
+          T.current && N(!0), U(S)
         }, 100)
       },
       onMouseLeave: F,
@@ -265,7 +265,7 @@ let W = e => {
           } = e;
           return (0, r.jsx)(z.Provider, {
             value: F,
-            children: (0, r.jsx)(Y, j({
+            children: (0, r.jsx)(W, j({
               closePopout: t,
               updatePopoutPosition: D,
               trackRankingItemInteraction: k
@@ -273,7 +273,7 @@ let W = e => {
           })
         },
         position: "left",
-        shouldShow: N,
+        shouldShow: A,
         positionKey: m,
         onRequestOpen: () => U(S),
         onRequestClose: () => {
@@ -294,10 +294,10 @@ let W = e => {
               }
             },
             onClick: () => {
-              N || A(!0)
+              A || N(!0)
             },
             onContextMenu: w,
-            children: (0, r.jsx)(W, G(j({}, p), {
+            children: (0, r.jsx)(Y, G(j({}, p), {
               selected: n,
               hovered: T.current
             }))

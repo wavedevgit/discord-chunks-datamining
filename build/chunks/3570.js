@@ -5,17 +5,17 @@ n.d(t, {
 });
 var r = n(536285),
   i = n(703656),
-  s = n(314897),
-  o = n(358085),
-  l = n(981631);
-let a = o.isPlatformEmbedded ? l.dG4 : (e, t) => {
-    if (!(0, i.DB)()) return r.default.request(l.Etm.DEEP_LINK, {
+  l = n(314897),
+  s = n(358085),
+  o = n(981631);
+let a = s.isPlatformEmbedded ? o.dG4 : (e, t) => {
+    if (!(0, i.DB)()) return r.default.request(o.Etm.DEEP_LINK, {
       type: e,
       params: t
     })
   },
-  c = o.isPlatformEmbedded ? l.dG4 : (e, t) => {
-    if (!s.default.isAuthenticated()) {
+  c = s.isPlatformEmbedded ? o.dG4 : (e, t) => {
+    if (!l.default.isAuthenticated()) {
       var n, r;
       return a(e, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -35,7 +35,7 @@ let a = o.isPlatformEmbedded ? l.dG4 : (e, t) => {
         }
         return e
       }({}, t || {}), r = r = {
-        fingerprint: s.default.getFingerprint()
+        fingerprint: l.default.getFingerprint()
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

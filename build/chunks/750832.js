@@ -1,11 +1,11 @@
 /** Chunk was on 44114 **/
 n.d(t, {
   SI: () => c,
-  nS: () => l
+  nS: () => a
 });
-var r = n(81643),
-  i = n(818083);
-let s = (0, i.B)({
+var i = n(81643),
+  r = n(818083);
+let s = (0, r.B)({
     kind: "user",
     id: "2025-02_dm_defaults_new_users",
     label: "Default DM Settings - New Users",
@@ -32,7 +32,7 @@ let s = (0, i.B)({
       }
     }]
   }),
-  a = (0, i.B)({
+  l = (0, r.B)({
     kind: "user",
     id: "2025-02_dm_defaults",
     label: "Default DM Settings",
@@ -59,8 +59,8 @@ let s = (0, i.B)({
       }
     }]
   }),
-  l = e => {
-    let t = a.useExperiment({
+  a = e => {
+    let t = l.useExperiment({
         location: e
       }, {
         autoTrackExposure: !1
@@ -73,7 +73,7 @@ let s = (0, i.B)({
     return t.dmOffByDefault || n.dmOffByDefault
   },
   o = e => {
-    let t = a.getCurrentConfig({
+    let t = l.getCurrentConfig({
         location: e
       }, {
         autoTrackExposure: !1
@@ -85,4 +85,4 @@ let s = (0, i.B)({
       });
     return t.messageRequestOnByDefault || n.messageRequestOnByDefault
   },
-  c = () => (0, r.sf)() && o("shouldAgeVerifyForDMDefaultOff")
+  c = () => (0, i.sf)() && o("shouldAgeVerifyForDMDefaultOff")

@@ -61,8 +61,8 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let N = new _.Z("ChoosePaymentSourceType"),
-  A = {
+let A = new _.Z("ChoosePaymentSourceType"),
+  N = {
     [E.HeQ.CARD]: p.ZP.Types.UNKNOWN,
     [E.HeQ.PAYPAL]: p.ZP.Types.PAYPAL,
     [E.HeQ.SOFORT]: p.ZP.Types.SOFORT,
@@ -137,7 +137,7 @@ class M extends i.PureComponent {
     var e;
     let t = null != (e = this.props.paymentRequestWallets) ? e : [];
     if (0 === t.length || !this.arePaymentRequestWalletsLoading()) return;
-    N.warn("Payment request wallets failed to load in time: ".concat(t.join(", "), ". Max time allowed: ").concat(L, " ms"));
+    A.warn("Payment request wallets failed to load in time: ".concat(t.join(", "), ". Max time allowed: ").concat(L, " ms"));
     let n = t.reduce((e, t) => T(I({}, e), {
       ["".concat(t, "Loaded")]: !0
     }), {});
@@ -163,7 +163,7 @@ class M extends i.PureComponent {
   createPaymentButtons(e) {
     return e.map(e => {
       var t;
-      let n = A[e],
+      let n = N[e],
         i = h.Wo[e](),
         a = null == (t = this.props.localizedPromo) ? void 0 : t.paymentSourceTypes.includes(e);
       return (0, r.jsx)(l.zxk, {
@@ -174,7 +174,7 @@ class M extends i.PureComponent {
             className: y.buttonIcon,
             type: n
           }), i, a && (0, r.jsx)(l.IGR, {
-            text: b.NW.string(b.t.y2b7CA),
+            text: b.intl.string(b.t.y2b7CA),
             className: y.newPaymentBadge,
             disableColor: !0
           })]
@@ -196,7 +196,7 @@ class M extends i.PureComponent {
       isEligibleForTrial: _ = !1
     } = this.props, p = null != (e = this.props.paymentRequestWallets) ? e : [], h = {
       iconClassName: y.buttonIcon,
-      paymentLabel: b.NW.string(b.t.ZURqX1),
+      paymentLabel: b.intl.string(b.t.ZURqX1),
       onStripePaymentMethodReceived: a,
       onChooseType: n,
       paymentRequestPaymentContext: d
@@ -228,7 +228,7 @@ class M extends i.PureComponent {
         children: (0, r.jsxs)(l.P3F, {
           onClick: () => this.toggleAllPayments(),
           className: o()(v.flex, y.allPaymentsToggleButton),
-          children: [b.NW.string(b.t["4uiQm5"]), (0, r.jsx)(u.Z, {
+          children: [b.intl.string(b.t["4uiQm5"]), (0, r.jsx)(u.Z, {
             open: t
           })]
         })
@@ -250,7 +250,7 @@ class M extends i.PureComponent {
       children: [_ && (0, r.jsx)("hr", {
         className: y.SeparatorUpper
       }), (0, r.jsx)(l.hjN, {
-        title: _ ? b.NW.string(b.t.tywMsb) : b.NW.string(b.t["8lqkf3"]),
+        title: _ ? b.intl.string(b.t.tywMsb) : b.intl.string(b.t["8lqkf3"]),
         className: i,
         children: S
       }), _ && (0, r.jsx)("hr", {

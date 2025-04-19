@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  s = n(120356),
-  l = n.n(s),
+  l = n(120356),
+  s = n.n(l),
   a = n(442837),
   o = n(692547),
   c = n(481060),
@@ -20,12 +20,12 @@ var r = n(200651),
   x = n(239721),
   b = n(438825),
   j = n(236140),
-  N = n(37069),
-  _ = n(518513),
-  v = n(168179),
-  O = n(348986),
-  C = n(930065),
-  y = n(345669);
+  _ = n(37069),
+  v = n(518513),
+  O = n(168179),
+  C = n(348986),
+  y = n(930065),
+  N = n(345669);
 
 function I(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -61,8 +61,8 @@ function E(e, t) {
 let S = () => [{
     icon: c.IeX,
     color: o.Z.unsafe_rawColors.GREEN_360.css,
-    header: f.NW.string(f.t.oVQF29),
-    body: f.NW.format(f.t.A6G7am, {
+    header: f.intl.string(f.t.oVQF29),
+    body: f.intl.format(f.t.A6G7am, {
       featureHook: (e, t) => (0, r.jsx)("strong", {
         className: x.featuredText,
         children: e
@@ -71,11 +71,11 @@ let S = () => [{
   }, {
     icon: c.IeX,
     color: o.Z.unsafe_rawColors.PARTNER.css,
-    header: f.NW.string(f.t["0rJl9/"]),
-    body: f.NW.format(f.t.XsCNk5, {
+    header: f.intl.string(f.t["0rJl9/"]),
+    body: f.intl.format(f.t.XsCNk5, {
       infoHook: () => (0, r.jsx)(c.ua7, {
-        text: f.NW.string(f.t.kPJlTk),
-        "aria-label": f.NW.string(f.t.kPJlTk),
+        text: f.intl.string(f.t.kPJlTk),
+        "aria-label": f.intl.string(f.t.kPJlTk),
         children: e => (0, r.jsx)(c.d3s, I({
           size: "xs",
           color: "currentColor",
@@ -90,35 +90,35 @@ let S = () => [{
   }, {
     icon: c.d3s,
     color: o.Z.unsafe_rawColors.RED_360.css,
-    header: f.NW.string(f.t.W2kLJC),
-    body: f.NW.string(f.t.hyNkHx)
+    header: f.intl.string(f.t.W2kLJC),
+    body: f.intl.string(f.t.hyNkHx)
   }],
   T = [{
-    iconSrc: O,
+    iconSrc: C,
     name: "Pokemon GO Paris",
     position: [-230, -100]
   }, {
-    iconSrc: C,
+    iconSrc: y,
     name: "Python",
     position: [-180, -100],
     faded: !0,
     rightAlign: !0
   }, {
-    iconSrc: _,
+    iconSrc: v,
     name: "Learn Latin",
     position: [-280, -30],
     faded: !0
   }, {
-    iconSrc: v,
+    iconSrc: O,
     name: "r/leagueoflegends",
     position: [-320, -30],
     rightAlign: !0
   }, {
-    iconSrc: y,
+    iconSrc: N,
     name: "Sneaker Fans",
     position: [-250, 40]
   }, {
-    iconSrc: N,
+    iconSrc: _,
     name: "Hogwarts School",
     position: [-270, 40],
     faded: !0,
@@ -129,8 +129,8 @@ let S = () => [{
       icon: t,
       color: n,
       size: i = 24,
-      header: s,
-      body: l
+      header: l,
+      body: s
     } = e;
     return (0, r.jsxs)("div", {
       className: x.featureCard,
@@ -145,11 +145,11 @@ let S = () => [{
       }), (0, r.jsx)(c.X6q, {
         variant: "heading-md/semibold",
         className: x.featureHeader,
-        children: s
+        children: l
       }), (0, r.jsx)(c.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: l
+        children: s
       })]
     })
   },
@@ -158,7 +158,7 @@ let S = () => [{
       iconSrc: t,
       name: n,
       position: i,
-      faded: s,
+      faded: l,
       rightAlign: a,
       imageCoordinates: o
     } = e, d = {
@@ -166,8 +166,8 @@ let S = () => [{
       top: o[1] + i[1]
     };
     return (0, r.jsxs)("div", {
-      className: l()(x.guildDetails, {
-        [x.faded]: s
+      className: s()(x.guildDetails, {
+        [x.faded]: l
       }),
       style: d,
       children: [(0, r.jsx)("div", {
@@ -187,22 +187,22 @@ let S = () => [{
   R = e => {
     let {
       guild: t
-    } = e, [n, s] = i.useState(0), [l, o] = i.useState(0), [N, _] = i.useState(), v = (0, a.e7)([m.Z], () => m.Z.can(p.Plq.ADMINISTRATOR, t)), O = null == N ? void 0 : N.offsetWidth, C = null == N ? void 0 : N.offsetHeight;
+    } = e, [n, l] = i.useState(0), [s, o] = i.useState(0), [_, v] = i.useState(), O = (0, a.e7)([m.Z], () => m.Z.can(p.Plq.ADMINISTRATOR, t)), C = null == _ ? void 0 : _.offsetWidth, y = null == _ ? void 0 : _.offsetHeight;
     i.useEffect(() => {
-      null != O && s(O / 2), null != C && o(C / 2)
-    }, [O, C, s, o]), i.useEffect(() => {
+      null != C && l(C / 2), null != y && o(y / 2)
+    }, [C, y, l, o]), i.useEffect(() => {
       (0, d.Kw)(h.v.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL)
     }, []);
-    let y = () => {
+    let N = () => {
       u.Z.open()
     };
     return (0, r.jsxs)("div", {
       className: x.container,
       children: [(0, r.jsxs)("div", {
         className: x.banner,
-        ref: e => _(e),
+        ref: e => v(e),
         children: [T.map(e => (0, r.jsx)(w, E(I({}, e), {
-          imageCoordinates: [n, l]
+          imageCoordinates: [n, s]
         }), e.name)), (0, r.jsx)("img", {
           alt: "",
           src: b,
@@ -215,35 +215,35 @@ let S = () => [{
         })]
       }), (0, r.jsx)(c.X6q, {
         variant: "heading-xl/semibold",
-        children: f.NW.string(f.t["M/gBcH"])
+        children: f.intl.string(f.t["M/gBcH"])
       }), (0, r.jsx)(c.Text, {
         color: "header-secondary",
         variant: "text-md/normal",
         className: x.body,
-        children: f.NW.format(f.t["52EgsL"], {
+        children: f.intl.format(f.t["52EgsL"], {
           helpdeskArticle: g.Z.getArticleURL(p.BhN.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES)
         })
       }), (0, r.jsx)(c.ua7, {
-        text: v ? null : f.NW.string(f.t["pjG+T0"]),
-        "aria-label": v ? void 0 : f.NW.string(f.t["pjG+T0"]),
+        text: O ? null : f.intl.string(f.t["pjG+T0"]),
+        "aria-label": O ? void 0 : f.intl.string(f.t["pjG+T0"]),
         children: e => (0, r.jsx)(c.zxk, E(I({
-          onClick: y,
+          onClick: N,
           className: x.button,
-          disabled: !v
+          disabled: !O
         }, e), {
-          children: f.NW.string(f.t.LhlgY2)
+          children: f.intl.string(f.t.LhlgY2)
         }))
       }), (0, r.jsx)("hr", {
         className: x.separator
       }), (0, r.jsx)(c.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: f.NW.string(f.t.OzLWLC)
+        children: f.intl.string(f.t.OzLWLC)
       }), (0, r.jsx)(c.Text, {
         color: "header-secondary",
         className: x.body,
         variant: "text-sm/normal",
-        children: f.NW.format(f.t.rjhrqK, {
+        children: f.intl.format(f.t.rjhrqK, {
           helpdeskArticle: g.Z.getArticleURL(p.BhN.GUILD_COMMUNITY_FEATURE)
         })
       }), (0, r.jsx)("div", {

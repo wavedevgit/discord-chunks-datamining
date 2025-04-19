@@ -52,13 +52,13 @@ function b(e) {
       iconNode: u,
       children: (0, r.jsxs)("div", {
         className: m.blockedMessageText,
-        children: [f.NW.format(o, {
+        children: [f.intl.format(o, {
           count: i
         }), " —", " ", (0, r.jsx)(s.P3F, {
           tag: "span",
           onClick: n,
           className: m.blockedAction,
-          children: t ? f.NW.string(f.t.fgq1go) : f.NW.string(f.t.XJuakJ)
+          children: t ? f.intl.string(f.t.fgq1go) : f.intl.string(f.t.XJuakJ)
         })]
       })
     })

@@ -32,8 +32,8 @@ function g(e) {
         color: "currentColor",
         className: m.bannerIcon
       }),
-      bannerHeader: f.NW.string(f.t["9UoK6e"]),
-      bannerSubtext: f.NW.format(f.t["4ZwD5O"], {
+      bannerHeader: f.intl.string(f.t["9UoK6e"]),
+      bannerSubtext: f.intl.format(f.t["4ZwD5O"], {
         link: h.cu
       }),
       containerStyles: m.bannerContainer,

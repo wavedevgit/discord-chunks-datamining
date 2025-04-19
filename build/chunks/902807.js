@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  s = n(120356),
-  l = n.n(s),
+  l = n(120356),
+  s = n.n(l),
   a = n(200100),
   o = n(481060),
   c = n(386476);
@@ -17,18 +17,18 @@ class d extends i.Component {
       {
         icon: i
       } = n,
-      s = function(e, t) {
+      l = function(e, t) {
         if (null == e) return {};
         var n, r, i = function(e, t) {
           if (null == e) return {};
           var n, r, i = {},
-            s = Object.keys(e);
-          for (r = 0; r < s.length; r++) n = s[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+            l = Object.keys(e);
+          for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
           return i
         }(e, t);
         if (Object.getOwnPropertySymbols) {
-          var s = Object.getOwnPropertySymbols(e);
-          for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+          var l = Object.getOwnPropertySymbols(e);
+          for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
         }
         return i
       }(n, ["icon"]);
@@ -51,7 +51,7 @@ class d extends i.Component {
       return e
     }({
       size: "md"
-    }, s), t = t = {
+    }, l), t = t = {
       color: "currentColor"
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
@@ -71,11 +71,11 @@ let u = (0, a.animated)(d),
       className: t,
       name: n,
       icon: i,
-      iconClassName: s
+      iconClassName: l
     } = e, a = (0, o.Yzy)({
       name: n,
       icon: i,
-      iconClassName: s
+      iconClassName: l
     }, {
       key: e => e.name,
       initial: null,
@@ -90,7 +90,7 @@ let u = (0, a.animated)(d),
       }
     }, "animate-always");
     return (0, r.jsx)("div", {
-      className: l()(c.crossfade, t),
+      className: s()(c.crossfade, t),
       children: a((e, t) => {
         let {
           icon: n,
@@ -98,7 +98,7 @@ let u = (0, a.animated)(d),
         } = t;
         return (0, r.jsx)(u, {
           icon: n,
-          className: l()(c.icon, i),
+          className: s()(c.icon, i),
           style: e
         })
       })

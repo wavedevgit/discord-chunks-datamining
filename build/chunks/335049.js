@@ -20,11 +20,11 @@ var r = n(200651),
   x = n(592125),
   j = n(271383),
   O = n(430824),
-  N = n(246946),
-  y = n(594174),
-  v = n(51144),
-  _ = n(981631),
-  C = n(388032),
+  y = n(246946),
+  v = n(594174),
+  _ = n(51144),
+  C = n(981631),
+  N = n(388032),
   I = n(555781);
 
 function S(e) {
@@ -75,7 +75,7 @@ function P(e) {
       } = await n.e("5396").then(n.bind(n, 731646));
       return t => (0, r.jsx)(e, E(S({}, t), {
         id: l,
-        label: C.NW.string(C.t.oJ1Mu7)
+        label: N.intl.string(N.t.oJ1Mu7)
       }))
     })
   }, [l]);
@@ -120,7 +120,7 @@ function w(e) {
     categoryName: f
   } = (0, d.cj)([x.Z], () => {
     if (c === n) return {
-      name: C.NW.string(C.t["7YqSGx"]),
+      name: N.intl.string(N.t["7YqSGx"]),
       icon: u.VL1
     };
     let e = x.Z.getChannel(n),
@@ -151,7 +151,7 @@ function w(e) {
       className: I.tag,
       variant: "text-sm/normal",
       children: ["(", f, ")"]
-    }) : null, l ? (0, r.jsx)(W, {
+    }) : null, l ? (0, r.jsx)(k, {
       tooltipText: a
     }) : null]
   })
@@ -189,13 +189,13 @@ function T(e) {
       width: 23,
       height: 23,
       className: o()(I.shield, I.image),
-      color: null != (t = b.colorString) ? t : (0, c.Rf)(_.p6O)
+      color: null != (t = b.colorString) ? t : (0, c.Rf)(C.p6O)
     }), (0, r.jsx)(u.Text, {
       className: I.roleName,
       color: "header-primary",
       variant: "text-md/normal",
       children: b.name
-    }), s ? (0, r.jsx)(W, {
+    }), s ? (0, r.jsx)(k, {
       tooltipText: m
     }) : null]
   })
@@ -208,10 +208,10 @@ function Z(e) {
     isLocked: i,
     lockTooltipText: l,
     openEntryContextMenu: o
-  } = e, a = (0, d.e7)([y.default], () => y.default.getUser(n)), s = (0, d.e7)([j.ZP], () => {
+  } = e, a = (0, d.e7)([v.default], () => v.default.getUser(n)), s = (0, d.e7)([j.ZP], () => {
     var e;
     return null == (e = j.ZP.getMember(t.id, n)) ? void 0 : e.nick
-  }, [t.id, n]), c = (0, d.e7)([N.Z], () => N.Z.hidePersonalInformation);
+  }, [t.id, n]), c = (0, d.e7)([y.Z], () => y.Z.hidePersonalInformation);
   return null == a ? null : (0, r.jsxs)("div", {
     onContextMenu: o,
     className: I.identifier,
@@ -228,14 +228,14 @@ function Z(e) {
     }), c ? null : (0, r.jsx)(u.Text, {
       className: I.tag,
       variant: "text-sm/normal",
-      children: v.ZP.getUserTag(a)
-    }), i ? (0, r.jsx)(W, {
+      children: _.ZP.getUserTag(a)
+    }), i ? (0, r.jsx)(k, {
       tooltipText: l
     }) : null]
   })
 }
 
-function W(e) {
+function k(e) {
   let {
     tooltipText: t
   } = e;

@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(536442),
   S = n(140465),
   T = n(775412),
-  N = n(104494),
-  A = n(639119),
+  A = n(104494),
+  N = n(639119),
   C = n(53691),
   R = n(75145),
   P = n(631771),
@@ -45,8 +45,8 @@ var r = n(200651),
   V = n(149203),
   Z = n(981631),
   H = n(957825),
-  W = n(474936),
-  Y = n(388032),
+  Y = n(474936),
+  W = n(388032),
   K = n(297961);
 let z = 0,
   q = 0,
@@ -74,8 +74,8 @@ let z = 0,
       setCollapsedSections: g,
       getEmojiItemProps: v,
       getEmojiRowProps: T,
-      isScrolling: N,
-      isUsingKeyboardNavigation: A,
+      isScrolling: A,
+      isUsingKeyboardNavigation: N,
       allowAnimatedEmoji: C,
       channelGuildId: P,
       channelId: w,
@@ -83,7 +83,7 @@ let z = 0,
       isBurstReaction: x,
       listHeaderClassName: M,
       activeSectionIndex: k,
-      upsellGlowOpacity: W,
+      upsellGlowOpacity: Y,
       emojiListRef: z
     } = e, er = (0, h.O)(), eo = i.useRef(Z.xAR), es = i.useMemo(() => "" !== n ? d.Z.convert.toCodePoint(n) : "", [n]), el = i.useCallback(e => {
       let t = m[e],
@@ -132,8 +132,8 @@ let z = 0,
         onSelectSoundmoji: f,
         getEmojiItemProps: v,
         getEmojiRowProps: T,
-        isScrolling: N,
-        isUsingKeyboardNavigation: A,
+        isScrolling: A,
+        isUsingKeyboardNavigation: N,
         rowIndex: e,
         allowAnimatedEmoji: C,
         showEmojiFavoriteTooltip: ef,
@@ -146,7 +146,7 @@ let z = 0,
         inNitroLockedSection: i.isNitroLocked,
         handleScrollUpOnSectionCollapse: o
       }, e)
-    }), [a, m, s, es, ed, c, f, v, T, N, A, C, ef, P, w, D, x, z]);
+    }), [a, m, s, es, ed, c, f, v, T, A, N, C, ef, P, w, D, x, z]);
     i.useEffect(() => () => {
       var e, t;
       return null == (t = e_.cache) || null == (e = t.clear) ? void 0 : e.call(t)
@@ -182,7 +182,7 @@ let z = 0,
             onClick: () => {
               (0, b.hr)(H.X1.SOUNDBOARD), L.default.track(Z.rMx.SOUNDMOJI_EMOJI_PICKER_VIEW_ALL_CLICK)
             },
-            children: Y.NW.string(Y.t.rUEjBQ)
+            children: W.intl.string(W.t.rUEjBQ)
           }) : void 0;
         return (0, r.jsx)(O.Z, {
           className: o()(K.header, M, {
@@ -212,10 +212,10 @@ let z = 0,
         }, e)
       }, [t, m, ec, el]),
       eg = i.useCallback(e => ec(e) ? eh ? (0, r.jsx)(R.fi, {}) : (0, r.jsx)(R.ZP, {
-        glowOpacity: W
+        glowOpacity: Y
       }) : el(e) ? (0, r.jsx)("div", {
         className: K.nitroBottomDivider
-      }) : null, [W, ec, el, eh]),
+      }) : null, [Y, ec, el, eh]),
       eE = i.useCallback(e => ec(e) ? ei : el(e) ? ea : 0, [ec, el]),
       eb = i.useCallback(e => {
         var n;
@@ -258,7 +258,7 @@ let z = 0,
       location: ee
     } = (0, h.O)(), {
       analyticsLocations: et
-    } = (0, m.ZP)(), [en, er] = i.useState(0), [ei, ea] = i.useState(!1), [el, ec] = i.useState(0), eu = (0, A.N)(), ed = (0, N.Ng)(), ef = ei && !$ && !c.tq, e_ = null != eu || null != ed, {
+    } = (0, m.ZP)(), [en, er] = i.useState(0), [ei, ea] = i.useState(!1), [el, ec] = i.useState(0), eu = (0, N.N)(), ed = (0, A.Ng)(), ef = ei && !$ && !c.tq, e_ = null != eu || null != ed, {
       enabled: ep
     } = P.G.useExperiment({
       location: "Premium Emoji Roadblock"
@@ -305,7 +305,7 @@ let z = 0,
       nitroLockedSectionStates: f,
       setShowUpsell: ea,
       setUpsellGlowOpacity: ec
-    }), eN = (0, v.Qs)({
+    }), eA = (0, v.Qs)({
       activeCategoryIndex: q,
       isScrolling: H,
       listRef: a,
@@ -319,16 +319,16 @@ let z = 0,
       activeCategoryIndex: q,
       listRef: a
     });
-    let eA = i.useCallback(e => {
-        eT(e), eN(e)
-      }, [eT, eN]),
+    let eN = i.useCallback(e => {
+        eT(e), eA(e)
+      }, [eT, eA]),
       eC = f.length > 0;
 
     function eR() {
-      if (!eh) return Y.NW.string(Y.t.EtmOFh);
+      if (!eh) return W.intl.string(W.t.EtmOFh);
       {
-        let e = (0, M.Px)(W.p9.TIER_2);
-        return Y.NW.format(Y.t.gMVjeX, {
+        let e = (0, M.Px)(Y.p9.TIER_2);
+        return W.intl.format(W.t.gMVjeX, {
           nitroTierName: e,
           onClick: () => {
             d({
@@ -344,13 +344,13 @@ let z = 0,
       if (eh) {
         var e;
         let t = (0, T.J0)();
-        return null != (e = (0, M.fr)(t)) ? e : Y.NW.string(Y.t.BmJkbW)
+        return null != (e = (0, M.fr)(t)) ? e : W.intl.string(W.t.BmJkbW)
       }
-      return Y.NW.string(Y.t.BmJkbW)
+      return W.intl.string(W.t.BmJkbW)
     }
     return i.useEffect(() => {
       ei && L.default.track(Z.rMx.PREMIUM_UPSELL_VIEWED, {
-        type: W.cd.EMOJI_PICKER_FLOATING_UPSELL,
+        type: Y.cd.EMOJI_PICKER_FLOATING_UPSELL,
         location: ee,
         location_stack: et
       })
@@ -362,7 +362,7 @@ let z = 0,
         role: "none presentation",
         className: K.list,
         listPadding: em,
-        onScroll: eA,
+        onScroll: eN,
         renderRow: eg,
         renderSection: eE,
         renderSectionHeader: eb,
@@ -376,7 +376,7 @@ let z = 0,
         stickyHeaders: !0,
         ref: a
       }) : (0, r.jsx)(p.Z, {
-        message: Y.NW.string(Y.t.IxxiKC),
+        message: W.intl.string(W.t.IxxiKC),
         className: K.noSearchResultsContainer
       }), $ || c.tq ? null : (0, r.jsx)(C.p, {
         showUpsell: ei,

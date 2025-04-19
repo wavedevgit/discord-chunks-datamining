@@ -1,5 +1,5 @@
 /** Chunk was on 98335 **/
-n.d(t, {
+n.d(e, {
   Z: () => f
 });
 var r = n(200651);
@@ -15,22 +15,22 @@ var i = n(442837),
   b = n(592745),
   p = n(388032);
 
-function f(e, t) {
-  let n = (0, i.e7)([a.ZP], () => a.ZP.getRunningVerifiedApplicationIds().includes(e.id), [e.id]),
+function f(t, e) {
+  let n = (0, i.e7)([a.ZP], () => a.ZP.getRunningVerifiedApplicationIds().includes(t.id), [t.id]),
     f = (0, i.e7)([o.Z, b.Z, u.Z, c.Z], () => (0, s.t)({
       LibraryApplicationStore: o.Z,
       LaunchableGameStore: b.Z,
       DispatchApplicationStore: u.Z,
       ConnectedAppsStore: c.Z,
-      applicationId: e.id,
-      branchId: e.branchId
-    }), [e.branchId, e.id]);
+      applicationId: t.id,
+      branchId: t.branchId
+    }), [t.branchId, t.id]);
   return n || !f ? null : (0, r.jsx)(l.sNh, {
     id: "launch",
-    label: p.NW.string(p.t.XKUw8v),
-    action: () => d.playApplication(e.id, e, {
+    label: p.intl.string(p.t.XKUw8v),
+    action: () => d.playApplication(t.id, t, {
       analyticsParams: {
-        location: t
+        location: e
       }
     })
   })

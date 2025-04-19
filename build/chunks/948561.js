@@ -27,8 +27,8 @@ var r = n(952639),
   I = n(735020),
   S = n(774863),
   T = n(590773),
-  N = n(799525),
-  A = n(981631),
+  A = n(799525),
+  N = n(981631),
   C = n(526761);
 
 function R(e, t, n) {
@@ -208,7 +208,7 @@ function V(e) {
   }
   let n = e.filter(e => (0, y.OR)(e) && (0, O.HH)(e)),
     r = e.map(e => {
-      if (A.OBS.has(e.type) && null != e.messageReference) {
+      if (N.OBS.has(e.type) && null != e.messageReference) {
         let t = f.Z.getMessageByReference(e.messageReference);
         if (t.state === f.Y.LOADED && null != t.message && (0, y.OR)(t.message) && (0, O.HH)(t.message)) return t.message
       }
@@ -284,7 +284,7 @@ function H(e) {
   }), t.length > 0 && (G(t), !0)
 }
 
-function W(e) {
+function Y(e) {
   var t, n, r, i, a, o;
   let {
     message: s
@@ -303,7 +303,7 @@ function W(e) {
   })
 }
 
-function Y(e) {
+function W(e) {
   var t, n;
   let {
     channelId: r,
@@ -373,7 +373,7 @@ function J(e) {
   let {
     channelId: t
   } = e;
-  return (0, N.U)(), null != t && t === g.Z.getChannelId() && et(t)
+  return (0, A.U)(), null != t && t === g.Z.getChannelId() && et(t)
 }
 
 function $(e) {
@@ -406,8 +406,8 @@ class en extends c.Z {
       LOAD_THREADS_SUCCESS: Q,
       LOAD_ARCHIVED_THREADS_SUCCESS: Q,
       SIDEBAR_VIEW_CHANNEL: X,
-      MESSAGE_CREATE: Y,
-      MESSAGE_UPDATE: W,
+      MESSAGE_CREATE: W,
+      MESSAGE_UPDATE: Y,
       LOGOUT: x,
       SEARCH_FINISH: z,
       MOD_VIEW_SEARCH_FINISH: z,

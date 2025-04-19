@@ -38,7 +38,7 @@ let l = e => {
       children: [(0, n.jsx)(c.X6q, {
         id: i,
         variant: "heading-xl/extrabold",
-        children: a.NW.string(a.t.EouHws)
+        children: a.intl.string(a.t.EouHws)
       }), (0, n.jsx)(c.olH, {
         className: s.closeButton,
         onClick: l
@@ -48,14 +48,14 @@ let l = e => {
       children: (0, n.jsx)(c.Text, {
         variant: "text-md/normal",
         className: s.contentText,
-        children: a.NW.string(a.t.zNPBMD)
+        children: a.intl.string(a.t.zNPBMD)
       })
     }), (0, n.jsx)(c.mzw, {
       children: (0, n.jsx)(c.zxk, {
         className: s.button,
         size: c.zxk.Sizes.MIN,
         onClick: l,
-        children: a.NW.string(a.t.BddRzc)
+        children: a.intl.string(a.t.BddRzc)
       })
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

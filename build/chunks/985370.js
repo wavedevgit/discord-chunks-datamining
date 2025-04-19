@@ -31,11 +31,11 @@ let v = e => {
     isHovered: j,
     setIsHovered: O,
     onMouseEnter: E,
-    onMouseLeave: N,
-    cancelTimers: I
-  } = (0, p.Z)(200, 300), [P, S] = i.useState(!1), Z = (0, a.e7)([f.Z], () => f.Z.effectCooldownEndTime), T = i.useMemo(() => null != Z ? (Z.getTime() - Date.now()) / 1e3 : 0, [Z]), {
+    onMouseLeave: I,
+    cancelTimers: P
+  } = (0, p.Z)(200, 300), [S, Z] = i.useState(!1), N = (0, a.e7)([f.Z], () => f.Z.effectCooldownEndTime), T = i.useMemo(() => null != N ? (N.getTime() - Date.now()) / 1e3 : 0, [N]), {
     seconds: A
-  } = (0, c.Z)(null != Z ? Z : new Date), w = A > 0, {
+  } = (0, c.Z)(null != N ? N : new Date), w = A > 0, {
     mode: R
   } = (0, m.ZP)({
     location: "ActionBarSoundboardButton"
@@ -48,34 +48,34 @@ let v = e => {
     location: "ActionBarSoundboardButton"
   }), {
     parentAnalyticsLocation: D
-  } = (0, u.ZP)(), W = i.useCallback(e => {
-    "focus" !== e.type && (P || w || E())
-  }, [P, w, E]), U = i.useCallback(() => {
-    P || N()
-  }, [N, P]), B = i.useCallback((e, t) => {
-    I(), S(!P), l === y.D.EMOJI ? null == v || v(void 0) : null == v || v(y.D.EMOJI), (!j || P) && (null == t || t(e))
-  }, [I, P, j, v, l]), G = (j || P) && (l === y.D.EMOJI || null == l);
+  } = (0, u.ZP)(), U = i.useCallback(e => {
+    "focus" !== e.type && (S || w || E())
+  }, [S, w, E]), B = i.useCallback(() => {
+    S || I()
+  }, [I, S]), G = i.useCallback((e, t) => {
+    P(), Z(!S), l === y.D.EMOJI ? null == v || v(void 0) : null == v || v(y.D.EMOJI), (!j || S) && (null == t || t(e))
+  }, [P, S, j, v, l]), F = (j || S) && (l === y.D.EMOJI || null == l);
   return (0, r.jsx)(s.yRy, {
-    shouldShow: G,
+    shouldShow: F,
     animation: k ? s.yRy.Animation.FADE : s.yRy.Animation.TRANSLATE,
     animationPosition: k ? "top" : "bottom",
     position: "bottom",
     align: "center",
     spacing: 16,
     onRequestClose: () => {
-      O(!1), S(!1), null == v || v(void 0)
+      O(!1), Z(!1), null == v || v(void 0)
     },
     renderPopout: e => {
       let {
         closePopout: n
       } = e;
       return (0, r.jsx)(_.Z, {
-        isHovered: G,
+        isHovered: F,
         channel: t,
         closePopout: n,
         onMouseEnter: E,
-        onMouseLeave: U,
-        onFocus: () => S(!0)
+        onMouseLeave: B,
+        onFocus: () => Z(!0)
       })
     },
     children: e => {
@@ -85,19 +85,19 @@ let v = e => {
       } = e;
       return (0, r.jsx)(h.Z, {
         isCenterButton: !0,
-        color: P ? M ? "primaryDark" : R === m.BK.GroupedButtonsRedMic || L ? "green" : void 0 : void 0,
+        color: S ? M ? "primaryDark" : R === m.BK.GroupedButtonsRedMic || L ? "green" : void 0 : void 0,
         totalCooldownSeconds: T,
         remainingCooldownSeconds: A,
         className: o()(!k && x.controlButton, n),
         onKeyDown: e => {
-          e.keyCode === C.yXg.ENTER && e.keyCode === C.yXg.SPACE && B(e, i)
+          e.keyCode === C.yXg.ENTER && e.keyCode === C.yXg.SPACE && G(e, i)
         },
         onClick: e => {
-          (0, d.v)(D, d.d.EMOJI), B(e, t)
+          (0, d.v)(D, d.d.EMOJI), G(e, t)
         },
-        onMouseEnter: W,
-        onMouseLeave: U,
-        isActive: P
+        onMouseEnter: U,
+        onMouseLeave: B,
+        isActive: S
       })
     }
   })

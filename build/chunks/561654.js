@@ -3,11 +3,11 @@
 n.d(t, {
   Z: () => u
 }), n(388685);
-var r, i, s, l = n(442837),
+var r, i, l, s = n(442837),
   a = n(570140),
   o = n(430824);
 let c = new Map;
-class d extends(r = l.ZP.Store) {
+class d extends(r = s.ZP.Store) {
   initialize() {
     this.waitFor(o.Z)
   }
@@ -15,12 +15,12 @@ class d extends(r = l.ZP.Store) {
     return c.get(e)
   }
 }
-s = "GuildRoleConnectionsConfigurationStore", (i = "displayName") in d ? Object.defineProperty(d, i, {
-  value: s,
+l = "GuildRoleConnectionsConfigurationStore", (i = "displayName") in d ? Object.defineProperty(d, i, {
+  value: l,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : d[i] = s;
+}) : d[i] = l;
 let u = new d(a.Z, {
   GUILD_ROLE_CONNECTIONS_CONFIGURATIONS_FETCH_SUCCESS: e => {
     let {

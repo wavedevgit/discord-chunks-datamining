@@ -29,8 +29,8 @@ let u = 20,
       sectionHeaderHeight: I,
       sectionFooterHeight: S,
       renderUpsell: T,
-      setShowUpsell: N
-    } = e, A = i.useRef(!1), C = i.useRef(null), R = (0, s.Iu)(e => e.searchQuery), P = d.useStore(e => e.activeCategoryIndex), w = n.map(e => (0, o._O)(e.categoryInfo) ? {
+      setShowUpsell: A
+    } = e, N = i.useRef(!1), C = i.useRef(null), R = (0, s.Iu)(e => e.searchQuery), P = d.useStore(e => e.activeCategoryIndex), w = n.map(e => (0, o._O)(e.categoryInfo) ? {
       isNitroLocked: e.categoryInfo.isNitroLocked
     } : {
       isNitroLocked: !1
@@ -38,10 +38,10 @@ let u = 20,
       listRef: C,
       searchQuery: R,
       nitroLockedSectionStates: w,
-      setShowUpsell: N
+      setShowUpsell: A
     }), L = (0, l.Qs)({
       activeCategoryIndex: P,
-      isScrolling: A,
+      isScrolling: N,
       listRef: C,
       onActiveCategoryIndexChange: d.setActiveCategoryIndex,
       scrollOffset: u,

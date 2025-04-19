@@ -1,30 +1,30 @@
 /** Chunk was on 69422 **/
 "use strict";
-r.d(t, {
+n.d(t, {
   Z: () => u
 });
-var n, o, i, a = r(442837),
-  s = r(570140);
-let c = null;
-class l extends(i = a.ZP.Store) {
+var r, o, i, a = n(442837),
+  s = n(570140);
+let l = null;
+class c extends(i = a.ZP.Store) {
   hasAction() {
-    return null != c
+    return null != l
   }
   getAction() {
-    return c
+    return l
   }
 }
 
 function d(e) {
-  c = e.requiredAction
+  l = e.requiredAction
 }
-o = "UserRequiredActionStore", (n = "displayName") in l ? Object.defineProperty(l, n, {
+o = "UserRequiredActionStore", (r = "displayName") in c ? Object.defineProperty(c, r, {
   value: o,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : l[n] = o;
-let u = new l(s.Z, {
+}) : c[r] = o;
+let u = new c(s.Z, {
   CONNECTION_OPEN: d,
   USER_REQUIRED_ACTION_UPDATE: d
 })

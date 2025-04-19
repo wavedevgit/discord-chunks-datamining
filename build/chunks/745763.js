@@ -1,33 +1,33 @@
 /** Chunk was on 3865 **/
-t.d(e, {
-  default: () => i
+l.d(t, {
+  default: () => d
 });
-var l = t(200651);
-t(192379);
-var o = t(481060),
-  a = t(239091),
-  c = t(358085),
-  s = t(998502),
-  r = t(89013),
-  d = t(388032);
+var e = l(200651);
+l(192379);
+var o = l(481060),
+  a = l(239091),
+  c = l(358085),
+  i = l(998502),
+  s = l(89013),
+  r = l(388032);
 
-function i(n) {
+function d(n) {
   let {
-    text: e,
-    onSelect: t
-  } = n, i = (0, r.Z)(e);
-  return c.isPlatformEmbedded ? (0, l.jsxs)(o.v2r, {
+    text: t,
+    onSelect: l
+  } = n, d = (0, s.Z)(t);
+  return c.isPlatformEmbedded ? (0, e.jsxs)(o.v2r, {
     navId: "text-context",
     onClose: a.Zy,
-    "aria-label": d.NW.string(d.t.s285pq),
-    onSelect: t,
-    children: [(0, l.jsx)(o.kSQ, {
-      children: i
-    }), (0, l.jsx)(o.kSQ, {
-      children: (0, l.jsx)(o.sNh, {
+    "aria-label": r.intl.string(r.t.s285pq),
+    onSelect: l,
+    children: [(0, e.jsx)(o.kSQ, {
+      children: d
+    }), (0, e.jsx)(o.kSQ, {
+      children: (0, e.jsx)(o.sNh, {
         id: "copy",
-        label: d.NW.string(d.t.OpuAlJ),
-        action: () => s.ZP.copy(e)
+        label: r.intl.string(r.t.OpuAlJ),
+        action: () => i.ZP.copy(t)
       })
     })]
   }) : null

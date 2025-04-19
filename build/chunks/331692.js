@@ -4,14 +4,14 @@ n.d(t, {
 });
 var i = n(200651);
 n(192379);
-var a = n(481060),
-  l = n(570140),
+var l = n(481060),
+  a = n(570140),
   r = n(103879),
   o = n(800530);
 let s = {
   open(e, t) {
-    (0, a.ZDy)(async () => {
-      l.Z.dispatch({
+    (0, l.ZDy)(async () => {
+      a.Z.dispatch({
         type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_OPEN"
       });
       let {
@@ -42,17 +42,17 @@ let s = {
     })
   },
   close() {
-    l.Z.dispatch({
+    a.Z.dispatch({
       type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_CLOSE"
     })
   },
   success() {
-    l.Z.dispatch({
+    a.Z.dispatch({
       type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_SUBMIT_SUCCESS"
     })
   },
   start_verification_check() {
-    l.Z.dispatch({
+    a.Z.dispatch({
       type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_START_POLL"
     }), setTimeout(() => (0, r._w)(), o.TX)
   }

@@ -68,14 +68,14 @@ let y = i.memo(function(e) {
         className: m.progressBarText,
         children: [(0, r.jsx)(s.X6q, {
           variant: "heading-sm/bold",
-          children: g.NW.string(g.t.SnrR39)
+          children: g.intl.string(g.t.SnrR39)
         }), (0, r.jsxs)("div", {
           className: m.rightContainer,
           children: [(0, r.jsx)(s.Text, {
             variant: "text-xs/medium",
             color: "text-muted",
             className: m.rightText,
-            children: g.NW.format(g.t.eqZ1lZ, {
+            children: g.intl.format(g.t.eqZ1lZ, {
               numberHook: b,
               total: C.toString(),
               completed: v.toString()

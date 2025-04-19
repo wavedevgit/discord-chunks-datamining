@@ -20,7 +20,7 @@ var r = n(200651),
   f = n(73433);
 
 function b(e, t) {
-  return e.type === p.uaV.VOICE_HANGOUT_INVITE ? "" : e.hasFlag(p.iLy.SOURCE_MESSAGE_DELETED) ? g.NW.string(g.t.JOtgS0) : t
+  return e.type === p.uaV.VOICE_HANGOUT_INVITE ? "" : e.hasFlag(p.iLy.SOURCE_MESSAGE_DELETED) ? g.intl.string(g.t.JOtgS0) : t
 }
 
 function h(e, t) {
@@ -61,7 +61,7 @@ let y = o.memo(function(e) {
         isInline: !1,
         children: (0, r.jsxs)("span", {
           className: m.edited,
-          children: ["(", g.NW.string(g.t.C8sXIC), ")"]
+          children: ["(", g.intl.string(g.t.C8sXIC), ")"]
         })
       })]
     })]

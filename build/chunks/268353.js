@@ -57,7 +57,7 @@ function h(e) {
   var {
     enabled: t
   } = e, n = _(e, ["enabled"]);
-  let i = t ? u.NW.string(u.t.Z7MyND) : u.NW.string(u.t.OIDkcn),
+  let i = t ? u.intl.string(u.t.Z7MyND) : u.intl.string(u.t.OIDkcn),
     o = t ? a.wvt : a.NpZ;
   return (0, r.jsx)(c.Z, f({
     label: i,

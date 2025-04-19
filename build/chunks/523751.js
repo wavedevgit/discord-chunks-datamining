@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(284363),
   S = n(854218),
   T = n(682947),
-  N = n(981631),
-  A = n(388032),
+  A = n(981631),
+  N = n(388032),
   C = n(90235);
 
 function R(e, t, n) {
@@ -161,7 +161,7 @@ function k(e) {
       children: (0, r.jsx)(u.Text, {
         variant: "text-xs/semibold",
         color: "always-white",
-        children: A.NW.format(A.t["dR/SVF"], {
+        children: N.intl.format(N.t["dR/SVF"], {
           count: t.premiumSubscriberCount
         })
       })
@@ -208,7 +208,7 @@ function U(e) {
       tooltipPosition: v,
       className: O,
       flowerStarClassName: T,
-      iconClassName: A,
+      iconClassName: N,
       badgeStrokeColor: R,
       badgeColor: w,
       disableBoostClick: x,
@@ -224,16 +224,16 @@ function U(e) {
     V = (0, s.e7)([g.Z], () => g.Z.theme),
     Z = (0, S.XX)(_),
     H = (0, I.i)(Z),
-    W = i.useMemo(() => Z.premium && F && !x, [x, Z.premium, F]),
-    Y = i.useCallback(e => {
-      W && (e.stopPropagation(), e.preventDefault(), (0, h.f)({
+    Y = i.useMemo(() => Z.premium && F && !x, [x, Z.premium, F]),
+    W = i.useCallback(e => {
+      Y && (e.stopPropagation(), e.preventDefault(), (0, h.f)({
         guildId: _.id,
         location: {
-          section: N.jXE.GUILD_HEADER,
-          object: N.qAy.BOOST_GEM_ICON
+          section: A.jXE.GUILD_HEADER,
+          object: A.qAy.BOOST_GEM_ICON
         }
       }))
-    }, [W, _.id]);
+    }, [Y, _.id]);
   if (H === I.Q.NONE) return null;
   if (H === I.Q.CLAN) {
     let e = (0, d.ky)(_.id, null == (l = _.profile) ? void 0 : l.badge, B);
@@ -247,7 +247,7 @@ function U(e) {
       }),
       tooltipContentClassName: C.tooltipRemovePadding,
       children: t => (0, r.jsx)(u.P3F, D(P({}, t), {
-        onClick: Y,
+        onClick: W,
         className: o()(C.clanBadgeContainer, O),
         children: (0, r.jsx)(f.KQ, {
           src: e,
@@ -282,8 +282,8 @@ function U(e) {
     }),
     tooltipContentClassName: C.tooltipRemovePadding,
     children: e => (0, r.jsx)(u.P3F, {
-      onClick: Y,
-      tabIndex: W ? 0 : -1,
+      onClick: W,
+      tabIndex: Y ? 0 : -1,
       children: (0, r.jsx)(m.Z, D(P({}, e), {
         className: O,
         flowerStarClassName: T,
@@ -295,7 +295,7 @@ function U(e) {
           size: "custom",
           width: er,
           height: er,
-          className: A,
+          className: N,
           color: null != t ? t : "currentColor"
         })
       }))

@@ -1,25 +1,25 @@
 /** Chunk was on 53195 **/
 i.d(t, {
-  default: () => l
+  default: () => r
 });
 var a = i(200651);
 i(192379);
 var e = i(481060),
   c = i(239091),
   d = i(294299),
-  r = i(388032);
+  l = i(388032);
 
-function l(n) {
+function r(n) {
   let {
     libraryApplication: t,
     onPlay: i,
-    onSelect: l
+    onSelect: r
   } = n, u = (0, d.Z)(t, i);
   return (0, a.jsx)(e.v2r, {
     navId: "launch-context",
     onClose: c.Zy,
-    "aria-label": r.NW.string(r.t.tKobzc),
-    onSelect: l,
+    "aria-label": l.intl.string(l.t.tKobzc),
+    onSelect: r,
     children: u
   })
 }

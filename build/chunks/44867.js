@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  s = n(442837),
-  l = n(481060),
+  l = n(442837),
+  s = n(481060),
   a = n(999382),
   o = n(845377),
   c = n(976288),
@@ -20,7 +20,7 @@ function g(e) {
     settingsView: n,
     requireTerms: g,
     rules: p
-  } = e, h = (0, s.e7)([a.Z], () => a.Z.getProps().guild);
+  } = e, h = (0, l.e7)([a.Z], () => a.Z.getProps().guild);
   if (i.useEffect(() => {
       null != h && t(h.id)
     }, [t, h]), null == h) return null;
@@ -30,20 +30,20 @@ function g(e) {
         guild: h,
         guildId: h.id,
         headerContent: (0, r.jsxs)("div", {
-          children: [(0, r.jsx)(l.X6q, {
+          children: [(0, r.jsx)(s.X6q, {
             variant: "text-md/semibold",
             color: "header-primary",
             className: m.header,
-            children: u.NW.format(u.t.n1LDQE, {
+            children: u.intl.format(u.t.n1LDQE, {
               removedHook: (e, t) => (0, r.jsx)("strong", {
                 className: m.danger,
                 children: e
               }, t)
             })
-          }), (0, r.jsx)(l.Text, {
+          }), (0, r.jsx)(s.Text, {
             variant: "text-sm/medium",
             color: "text-secondary",
-            children: u.NW.string(u.t.Qgaw3d)
+            children: u.intl.string(u.t.Qgaw3d)
           })]
         })
       });
@@ -58,9 +58,9 @@ function g(e) {
       return (0, r.jsx)(o.Z, {
         guild: h,
         guildId: h.id,
-        headerContent: (0, r.jsx)(l.X6q, {
+        headerContent: (0, r.jsx)(s.X6q, {
           variant: "heading-md/semibold",
-          children: u.NW.format(u.t["+6Hylp"], {
+          children: u.intl.format(u.t["+6Hylp"], {
             doesNotHook: (e, t) => (0, r.jsx)("strong", {
               className: m.danger,
               children: e
@@ -69,6 +69,6 @@ function g(e) {
         })
       });
     default:
-      return (0, r.jsx)(l.$jN, {})
+      return (0, r.jsx)(s.$jN, {})
   }
 }

@@ -35,7 +35,7 @@ class p extends i.PureComponent {
       isRefreshEnabled: u
     } = this.props, p = (0, r.jsx)("div", {
       className: c.operations,
-      children: s.NW.format(s.t.wDsPXl, {
+      children: s.intl.format(s.t.wDsPXl, {
         onCancel: () => o(l.id),
         onSave: this.onClickSave
       })

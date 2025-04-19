@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  s = n(723047),
-  l = n(727843),
+  l = n(723047),
+  s = n(727843),
   a = n(290348),
   o = n(764163),
   c = n(861345),
@@ -50,25 +50,25 @@ function p() {
   let {
     editStateId: e,
     guildId: t
-  } = (0, l.N)(), [n, p] = a.R7(e);
+  } = (0, s.N)(), [n, p] = a.R7(e);
 
   function h(e, t) {
     let {
       name: r,
       description: i,
-      emojiId: s,
-      emojiName: l
+      emojiId: l,
+      emojiName: s
     } = e, a = [...n], o = {
       name: r,
       description: i,
-      emoji_id: s,
-      emoji_name: l,
+      emoji_id: l,
+      emoji_name: s,
       ref_type: d.Qs.INTANGIBLE,
       ref_id: void 0
     };
     null != t ? a[t] = o : a.push(o), p(a)
   }
-  let f = (0, s.mY)();
+  let f = (0, l.mY)();
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.p, {
       benefits: n,
@@ -99,7 +99,7 @@ function p() {
         })))
       },
       disabled: f,
-      children: u.NW.string(u.t["6dwqo6"])
+      children: u.intl.string(u.t["6dwqo6"])
     })]
   })
 }

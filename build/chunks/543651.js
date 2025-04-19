@@ -43,7 +43,7 @@ let g = function(e) {
       }) : (0, r.jsx)(c.Text, {
         variant: "text-md/semibold",
         color: "text-muted",
-        children: h.NW.string(h.t.Cyxddn)
+        children: h.intl.string(h.t.Cyxddn)
       }), (0, r.jsxs)(c.Text, {
         variant: "text-xs/medium",
         color: "text-muted",

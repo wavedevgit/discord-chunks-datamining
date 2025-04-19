@@ -1,15 +1,15 @@
 /** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  S: () => l
+  S: () => s
 });
 var r = n(544891),
   i = n(570140),
-  s = n(981631);
+  l = n(981631);
 
-function l(e) {
+function s(e) {
   return r.tn.get({
-    url: s.ANM.GUILD_TOP_READ_CHANNELS(e),
+    url: l.ANM.GUILD_TOP_READ_CHANNELS(e),
     oldFormErrors: !0,
     rejectWithError: !1
   }).then(t => {

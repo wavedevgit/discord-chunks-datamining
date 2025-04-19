@@ -94,9 +94,9 @@ let m = e => {
     className: a()(d.gameIcon, b, g)
   }) : null;
   let v = null == n ? void 0 : n.name,
-    O = null != v && "" !== v ? u.NW.formatToPlainString(u.t.tiKyYm, {
+    O = null != v && "" !== v ? u.intl.formatToPlainString(u.t.tiKyYm, {
       applicationName: v
-    }) : u.NW.string(u.t["2B/phI"]);
+    }) : u.intl.string(u.t["2B/phI"]);
   return (0, r.jsx)("img", {
     alt: O,
     src: t,

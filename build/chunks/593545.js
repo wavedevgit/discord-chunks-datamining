@@ -133,11 +133,11 @@ function S(e) {
     setExpanded: n,
     isWholeFile: i,
     numLines: a
-  } = e, o = p.NW.formatToPlainString(i ? p.t.Go5Vvr : p.t.yJcYam, {
+  } = e, o = p.intl.formatToPlainString(i ? p.t.Go5Vvr : p.t.yJcYam, {
     lines: a
   });
   return (0, r.jsx)(l.ua7, {
-    text: "".concat(t ? p.NW.string(p.t.iTcumZ) : p.NW.string(p.t.dcl9MT), " (").concat(o, ")"),
+    text: "".concat(t ? p.intl.string(p.t.iTcumZ) : p.intl.string(p.t.dcl9MT), " (").concat(o, ")"),
     children: e => (0, r.jsxs)(l.P3F, y(E({}, e), {
       className: h.toggleExpandSection,
       onClick: () => {
@@ -145,7 +145,7 @@ function S(e) {
       },
       children: [(0, r.jsx)(f.Z, {
         direction: t ? f.Z.Directions.UP : f.Z.Directions.DOWN
-      }), t ? p.NW.string(p.t.iTcumZ) : p.NW.string(p.t.dcl9MT)]
+      }), t ? p.intl.string(p.t.iTcumZ) : p.intl.string(p.t.dcl9MT)]
     }))
   })
 }
@@ -170,7 +170,7 @@ function T(e) {
         children: (0, _.IC)(i)
       }))
     }), (0, r.jsx)(l.ua7, {
-      text: "".concat(p.NW.string(p.t["1WjMbG"]), " ").concat(a),
+      text: "".concat(p.intl.string(p.t["1WjMbG"]), " ").concat(a),
       children: e => (0, r.jsx)(l.eee, y(E({}, e), {
         className: h.downloadSection,
         href: t,
@@ -186,7 +186,7 @@ function T(e) {
   })
 }
 
-function N(e) {
+function A(e) {
   let {
     language: t,
     setLanguage: n
@@ -198,11 +198,11 @@ function N(e) {
         closePopout: i
       } = e;
       return (0, r.jsx)(l.VqE, {
-        "aria-label": p.NW.string(p.t.utm4qq),
+        "aria-label": p.intl.string(p.t.utm4qq),
         children: (0, r.jsx)(l.hQY, {
           className: h.languageSelector,
           multiSelect: !1,
-          placeholder: p.NW.string(p.t.Gofftb),
+          placeholder: p.intl.string(p.t.Gofftb),
           value: new Set([t]),
           autoFocus: !0,
           onChange: e => {
@@ -218,7 +218,7 @@ function N(e) {
       })
     },
     children: e => (0, r.jsx)(l.ua7, {
-      text: p.NW.string(p.t.utm4qq),
+      text: p.intl.string(p.t.utm4qq),
       children: t => (0, r.jsx)(l.nF$, y(E({
         size: "md",
         color: "currentColor"
@@ -229,9 +229,9 @@ function N(e) {
   })
 }
 
-function A(e) {
+function N(e) {
   return (0, r.jsx)(l.ua7, {
-    text: p.NW.string(p.t["0PQYk5"]),
+    text: p.intl.string(p.t["0PQYk5"]),
     children: t => (0, r.jsx)(l.P3F, y(E({}, t), {
       className: h.openFullPreviewSection,
       onClick: () => {
@@ -259,9 +259,9 @@ function C(e) {
     bytesLeft: g,
     className: E
   } = e, b = null == s ? void 0 : s.split("\n"), y = null != (t = null == b ? void 0 : b.length) ? t : 0, v = c ? 100 : 6, O = 0 === g, C = "";
-  O && c && y > v ? C = "\n..." : O || (C = "..."), "" !== C && (O ? C += " " + p.NW.formatToPlainString(p.t.DQnFp6, {
+  O && c && y > v ? C = "\n..." : O || (C = "..."), "" !== C && (O ? C += " " + p.intl.formatToPlainString(p.t.DQnFp6, {
     lines: y - v
-  }) : C += " " + p.NW.formatToPlainString(p.t["1+gGcH"], {
+  }) : C += " " + p.intl.formatToPlainString(p.t["1+gGcH"], {
     formattedBytes: (0, _.IC)(g)
   }));
   let R = (null == b ? void 0 : b.slice(0, v).join("\n")) + C,
@@ -289,7 +289,7 @@ function C(e) {
           setExpanded: d,
           isWholeFile: O,
           numLines: y
-        }), (0, r.jsx)(A, {
+        }), (0, r.jsx)(N, {
           url: n,
           fileName: i,
           fileSize: a,
@@ -303,7 +303,7 @@ function C(e) {
         url: n,
         fileName: i,
         fileSize: a
-      }), (0, r.jsx)(N, {
+      }), (0, r.jsx)(A, {
         language: f,
         setLanguage: m
       })]
@@ -321,11 +321,11 @@ function R(e) {
     fileContents: c,
     bytesLeft: u
   } = e, [d, f] = i.useState(s), m = null != c ? c : "";
-  return 0 !== u && (m += "... ".concat(p.NW.formatToPlainString(p.t["1+gGcH"], {
+  return 0 !== u && (m += "... ".concat(p.intl.formatToPlainString(p.t["1+gGcH"], {
     formattedBytes: (0, _.IC)(u)
   }))), (0, r.jsx)(l.Y0X, {
     transitionState: o,
-    "aria-label": p.NW.string(p.t.qxQjc3),
+    "aria-label": p.intl.string(p.t.qxQjc3),
     size: l.CgR.LARGE,
     className: h.modalRoot,
     children: (0, r.jsxs)("div", {
@@ -348,7 +348,7 @@ function R(e) {
           url: t,
           fileName: n,
           fileSize: a
-        }), (0, r.jsx)(N, {
+        }), (0, r.jsx)(A, {
           language: d,
           setLanguage: f
         })]

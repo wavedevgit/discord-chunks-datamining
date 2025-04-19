@@ -17,9 +17,9 @@ let m = e => {
       thresholdNumber: a,
       currentLabel: o,
       isPercent: m = !1
-    } = e, h = null != a ? Math.floor(r / a * 100) : 0, x = d.NW.formatToPlainString(d.t.YMor7u, {
+    } = e, h = null != a ? Math.floor(r / a * 100) : 0, x = d.intl.formatToPlainString(d.t.YMor7u, {
       count: r
-    }), u = null != a ? d.NW.formatToPlainString(d.t.YMor7u, {
+    }), u = null != a ? d.intl.formatToPlainString(d.t.YMor7u, {
       count: a
     }) : "--", g = (0, i.dQu)(n.Z.unsafe_rawColors.RED_400).hex(), p = (0, i.dQu)(n.Z.unsafe_rawColors.YELLOW_300).hex();
     return (0, s.jsxs)(s.Fragment, {
@@ -81,7 +81,7 @@ let m = e => {
             "aria-describedby": "health-score-details-requirement-explain",
             variant: "text-xs/normal",
             color: "header-secondary",
-            children: d.NW.string(d.t["A+mTPj"])
+            children: d.intl.string(d.t["A+mTPj"])
           })]
         })]
       })]
@@ -100,53 +100,53 @@ let m = e => {
         healthScore: p
       } = n,
       {
-        avg_nonnew_participators: N,
-        avg_nonnew_communicators: _,
-        perc_ret_w1_intentful: j
+        avg_nonnew_participators: _,
+        avg_nonnew_communicators: j,
+        perc_ret_w1_intentful: b
       } = p;
-    if (!g && null != N && N < 40 && (a = (0, s.jsxs)("div", {
+    if (!g && null != _ && _ < 40 && (a = (0, s.jsxs)("div", {
         className: c.failingBlock,
         children: [(0, s.jsx)(i.X6q, {
           className: c.marginAfter,
           variant: "heading-md/semibold",
-          children: d.NW.string(d.t.sEzDIS)
+          children: d.intl.string(d.t.sEzDIS)
         }), (0, s.jsx)(i.Text, {
           variant: "text-sm/normal",
-          children: d.NW.string(d.t.zNp3Ki)
-        }), (0, s.jsx)(m, {
-          currentNumber: N,
-          thresholdNumber: 40,
-          currentLabel: d.NW.string(d.t.BtTX9P)
-        })]
-      })), !g && null != _ && _ < 20 && (t = (0, s.jsxs)("div", {
-        className: c.failingBlock,
-        children: [(0, s.jsx)(i.X6q, {
-          className: c.marginAfter,
-          variant: "heading-md/semibold",
-          children: d.NW.string(d.t.fWQTbm)
-        }), (0, s.jsx)(i.Text, {
-          variant: "text-sm/normal",
-          children: d.NW.string(d.t.Tl8MR0)
+          children: d.intl.string(d.t.zNp3Ki)
         }), (0, s.jsx)(m, {
           currentNumber: _,
-          thresholdNumber: 20,
-          currentLabel: d.NW.string(d.t.PFQI7u)
+          thresholdNumber: 40,
+          currentLabel: d.intl.string(d.t.BtTX9P)
         })]
-      })), !u && null != j) {
-      let e = Math.floor(100 * j);
+      })), !g && null != j && j < 20 && (t = (0, s.jsxs)("div", {
+        className: c.failingBlock,
+        children: [(0, s.jsx)(i.X6q, {
+          className: c.marginAfter,
+          variant: "heading-md/semibold",
+          children: d.intl.string(d.t.fWQTbm)
+        }), (0, s.jsx)(i.Text, {
+          variant: "text-sm/normal",
+          children: d.intl.string(d.t.Tl8MR0)
+        }), (0, s.jsx)(m, {
+          currentNumber: j,
+          thresholdNumber: 20,
+          currentLabel: d.intl.string(d.t.PFQI7u)
+        })]
+      })), !u && null != b) {
+      let e = Math.floor(100 * b);
       r = (0, s.jsxs)("div", {
         className: c.failingBlock,
         children: [(0, s.jsx)(i.X6q, {
           className: c.marginAfter,
           variant: "heading-md/semibold",
-          children: d.NW.string(d.t.YF6x29)
+          children: d.intl.string(d.t.YF6x29)
         }), (0, s.jsx)(i.Text, {
           variant: "text-sm/normal",
-          children: d.NW.format(d.t.kMBzFh, {})
+          children: d.intl.format(d.t.kMBzFh, {})
         }), (0, s.jsx)(m, {
           currentNumber: e,
           thresholdNumber: 10,
-          currentLabel: d.NW.string(d.t.WpwyIi),
+          currentLabel: d.intl.string(d.t.WpwyIi),
           isPercent: !0
         })]
       })
@@ -162,11 +162,11 @@ let m = e => {
           variant: "heading-xl/semibold",
           className: c.modalHeader,
           id: x,
-          children: d.NW.string(d.t["+GHxPz"])
+          children: d.intl.string(d.t["+GHxPz"])
         }), (0, s.jsx)(i.Text, {
           className: c.marginAfter,
           variant: "text-sm/normal",
-          children: d.NW.string(d.t.QOs3XF)
+          children: d.intl.string(d.t.QOs3XF)
         }), (0, s.jsx)("div", {
           className: c.separator
         }), a, t, r, (0, s.jsx)("div", {
@@ -179,7 +179,7 @@ let m = e => {
           children: [(0, s.jsx)("sup", {
             "aria-hidden": !0,
             children: "1 "
-          }), d.NW.string(d.t.tN5kb2)]
+          }), d.intl.string(d.t.tN5kb2)]
         })]
       }), (0, s.jsx)(i.olH, {
         onClick: h,

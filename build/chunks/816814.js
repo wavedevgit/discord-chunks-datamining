@@ -1,23 +1,23 @@
 /** Chunk was on 69422 **/
 "use strict";
-r.d(t, {
+n.d(t, {
   Z: () => s
 });
-var n = r(544891),
-  o = r(570140),
-  i = r(325067),
-  a = r(981631);
+var r = n(544891),
+  o = n(570140),
+  i = n(325067),
+  a = n(981631);
 let s = {
   enable(e) {
     let {
       code: t,
-      secret: r
+      secret: n
     } = e;
-    return n.tn.post({
+    return r.tn.post({
       url: a.ANM.MFA_TOTP_ENABLE,
       body: {
         code: t,
-        secret: r
+        secret: n
       },
       oldFormErrors: !0,
       rejectWithError: !1
@@ -28,7 +28,7 @@ let s = {
     }))
   },
   disable() {
-    n.tn.post({
+    r.tn.post({
       url: a.ANM.MFA_TOTP_DISABLE,
       oldFormErrors: !0,
       rejectWithError: !1
@@ -46,7 +46,7 @@ let s = {
   },
   enableSMS: () => (o.Z.dispatch({
     type: "MFA_SMS_TOGGLE"
-  }), n.tn.post({
+  }), r.tn.post({
     url: a.ANM.MFA_SMS_ENABLE,
     oldFormErrors: !0,
     rejectWithError: !1
@@ -59,7 +59,7 @@ let s = {
   })),
   disableSMS: e => (o.Z.dispatch({
     type: "MFA_SMS_TOGGLE"
-  }), n.tn.post({
+  }), r.tn.post({
     url: a.ANM.MFA_SMS_DISABLE,
     body: {
       password: e
@@ -73,7 +73,7 @@ let s = {
       type: "MFA_SMS_TOGGLE_COMPLETE"
     }), e
   })),
-  sendMFABackupCodesVerificationKeyEmail: e => n.tn.post({
+  sendMFABackupCodesVerificationKeyEmail: e => r.tn.post({
     url: a.ANM.MFA_SEND_VERIFICATION_KEY,
     body: {
       password: e
@@ -91,14 +91,14 @@ let s = {
   }),
   confirmViewBackupCodes(e, t) {
     let {
-      viewNonce: r,
+      viewNonce: n,
       regenerateNonce: s
     } = i.Z.getNonces();
-    return n.tn.post({
+    return r.tn.post({
       url: a.ANM.MFA_CODES_VERIFICATION,
       body: {
         key: e,
-        nonce: t ? s : r,
+        nonce: t ? s : n,
         regenerate: t
       },
       oldFormErrors: !0,

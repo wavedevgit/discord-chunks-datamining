@@ -106,7 +106,7 @@ function Z(e, t) {
     L === N.i.SUCCEEDED && (o.Z.dispatch({
       type: "CLEAR_INTERACTION_MODAL_STATE",
       customId: i
-    }), t()), L === N.i.ERRORED && f(A.NW.string(A.t.uJgdEh))
+    }), t()), L === N.i.ERRORED && f(A.intl.string(A.t.uJgdEh))
   }, [g, L, t, i]);
   let {
     applicationIconURL: b,

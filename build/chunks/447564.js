@@ -1,12 +1,12 @@
 /** Chunk was on 48157 **/
 n.d(t, {
-  default: () => N,
+  default: () => j,
   k: () => O
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(311570),
-  l = n(692547),
+  l = n(311570),
+  a = n(692547),
   o = n(481060),
   s = n(100527),
   c = n(906732),
@@ -50,11 +50,11 @@ let O = (e, t) => {
       channel: e
     }, n))
   }, {
-    modalKey: j
+    modalKey: C
   })
 };
 
-function N(e) {
+function j(e) {
   let {
     transitionState: t,
     channel: n
@@ -62,17 +62,17 @@ function N(e) {
   return (0, r.jsx)(o.Y0X, {
     size: o.CgR.DYNAMIC,
     transitionState: t,
-    children: (0, r.jsx)(C, {
+    children: (0, r.jsx)(S, {
       channel: n
     })
   })
 }
-let j = "HD_STREAMING_POTION_MODAL_KEY";
+let C = "HD_STREAMING_POTION_MODAL_KEY";
 
-function C(e) {
+function S(e) {
   let {
     channel: t
-  } = e, n = (0, m.T$)(t), [l, u] = (0, i.useState)(!1), {
+  } = e, n = (0, m.T$)(t), [a, u] = (0, i.useState)(!1), {
     price: h,
     fetchingPrice: g,
     error: _
@@ -82,58 +82,58 @@ function C(e) {
     error: v
   } = (0, m.t6)(f.FX), E = _ || v, {
     analyticsLocations: O
-  } = (0, c.ZP)([s.Z.HD_STREAMING_POTION_MODAL]), N = null != x && !x.consumed;
+  } = (0, c.ZP)([s.Z.HD_STREAMING_POTION_MODAL]), j = null != x && !x.consumed;
   (0, i.useEffect)(() => () => {
     E && (0, p.SN)(f.FX)
-  }, [x, t, l, E]);
-  let j = (0, i.useCallback)(() => {
+  }, [x, t, a, E]);
+  let C = (0, i.useCallback)(() => {
       (0, p.Zu)(t.id), (0, o.pTH)()
     }, [t.id]),
-    C = (0, i.useCallback)(() => {
+    S = (0, i.useCallback)(() => {
       (0, d.Z)({
         skuId: f.FX,
         analyticsLocations: O,
-        onComplete: j,
-        variantsReturnStyle: a.v.INDIVIDUAL_PRODUCTS
+        onComplete: C,
+        variantsReturnStyle: l.v.INDIVIDUAL_PRODUCTS
       })
-    }, [O, j]),
-    I = (0, i.useMemo)(() => () => t.isHDStreamSplashed ? 4 : n ? (null == x ? void 0 : x.type) === b.qc2.DEVELOPER_GIFT ? 1 : 2 * !!N : 3, [t.isHDStreamSplashed, n, null == x ? void 0 : x.type, N]),
-    T = (0, i.useMemo)(() => I(), [I]);
-  return (0, r.jsx)(S, {
+    }, [O, C]),
+    N = (0, i.useMemo)(() => () => t.isHDStreamSplashed ? 4 : n ? (null == x ? void 0 : x.type) === b.qc2.DEVELOPER_GIFT ? 1 : 2 * !!j : 3, [t.isHDStreamSplashed, n, null == x ? void 0 : x.type, j]),
+    T = (0, i.useMemo)(() => N(), [N]);
+  return (0, r.jsx)(I, {
     channel: t,
     buttonState: T,
     price: h,
     onActionClick: () => {
-      u(!0), (N ? j : C)()
+      u(!0), (j ? C : S)()
     },
     loading: g || !y
   })
 }
-let S = e => {
+let I = e => {
     let {
       channel: t,
       buttonState: n,
       price: i,
-      onActionClick: a,
-      loading: l
+      onActionClick: l,
+      loading: a
     } = e;
-    return l ? (0, r.jsx)(Z, {}) : null == i ? (0, r.jsx)(w, {}) : (0, r.jsxs)(r.Fragment, {
+    return a ? (0, r.jsx)(Z, {}) : null == i ? (0, r.jsx)(w, {}) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
         className: y.modal,
-        children: [(0, r.jsx)(I, {}), (0, r.jsx)(T, {
+        children: [(0, r.jsx)(N, {}), (0, r.jsx)(T, {
           channel: t
         })]
       }), (0, r.jsx)(P, {
         buttonState: n,
         price: i,
-        onActionClick: a
+        onActionClick: l
       })]
     })
   },
-  I = () => (0, r.jsx)("img", {
+  N = () => (0, r.jsx)("img", {
     className: y.image,
     src: "https://cdn.discordapp.com/assets/premium/roadblocks/hd_streaming.png",
-    alt: x.NW.string(x.t.DdigcX)
+    alt: x.intl.string(x.t.DdigcX)
   }),
   T = e => {
     let {
@@ -146,21 +146,21 @@ let S = e => {
           className: y.heading,
           children: [(0, r.jsx)(o.X6q, {
             variant: "heading-lg/bold",
-            children: x.NW.string(x.t.K04rOD)
+            children: x.intl.string(x.t.K04rOD)
           }), (0, r.jsx)(u.Z, {})]
         }), (0, r.jsx)(o.Text, {
           variant: "text-sm/normal",
-          children: x.NW.string(x.t.lq40Pz)
+          children: x.intl.string(x.t.lq40Pz)
         }), (0, r.jsx)(o.Text, {
           color: "text-link",
           variant: "text-sm/normal",
-          children: x.NW.format(x.t["1wV4qq"], {
+          children: x.intl.format(x.t["1wV4qq"], {
             helpCenterLink: h.Z.getArticleURL(b.BhN.HD_STREAMING_POTION)
           })
         }), (0, r.jsx)(o.Text, {
           color: "text-muted",
           variant: "text-xs/medium",
-          children: x.NW.string(x.t.qk07Mj)
+          children: x.intl.string(x.t.qk07Mj)
         })]
       }), (0, r.jsx)("div", {
         className: y.divider
@@ -168,7 +168,7 @@ let S = e => {
         className: y.applyingTo,
         children: [(0, r.jsx)(o.Text, {
           variant: "eyebrow",
-          children: x.NW.string(x.t.tZyXg4)
+          children: x.intl.string(x.t.tZyXg4)
         }), (0, r.jsx)(_.Z, {
           channel: t
         })]
@@ -185,10 +185,10 @@ let S = e => {
       className: y.footer,
       children: [(0, r.jsx)(o.zxk, {
         onClick: () => {
-          (0, o.Mr3)(j)
+          (0, o.Mr3)(C)
         },
         color: o.zxk.Colors.PRIMARY,
-        children: x.NW.string(x.t.Avt5KS)
+        children: x.intl.string(x.t.Avt5KS)
       }), (0, r.jsx)(A, {
         buttonState: t,
         price: n,
@@ -201,13 +201,13 @@ let S = e => {
       buttonState: t,
       price: n,
       onActionClick: i
-    } = e, a = x.NW.formatToPlainString(x.t.S9LAdX, {
+    } = e, l = x.intl.formatToPlainString(x.t.S9LAdX, {
       price: (0, g.T4)(n.amount, n.currency)
     });
     if (3 === t || 4 === t) {
       let e = {
-        3: x.NW.string(x.t.Qrh2BQ),
-        4: x.NW.string(x.t.utRdl5)
+        3: x.intl.string(x.t.Qrh2BQ),
+        4: x.intl.string(x.t.utRdl5)
       } [t];
       return (0, r.jsx)(o.ua7, {
         tooltipContentClassName: y.tooltip,
@@ -216,7 +216,7 @@ let S = e => {
           var t, n;
           return (0, r.jsx)(o.zxk, (t = E({}, e), n = n = {
             disabled: !0,
-            children: a
+            children: l
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -231,16 +231,16 @@ let S = e => {
       })
     }
     let s = {
-      0: a,
-      1: x.NW.string(x.t.sl6Tcn),
-      2: x.NW.string(x.t.XJ9INj)
+      0: l,
+      1: x.intl.string(x.t.sl6Tcn),
+      2: x.intl.string(x.t.XJ9INj)
     } [t];
     return (0, r.jsx)(o.zxk, {
       onClick: i,
       children: (0, r.jsxs)("div", {
         className: y.buttonCopy,
         children: [(0, r.jsx)(o.hh5, {
-          color: l.Z.colors.WHITE,
+          color: a.Z.colors.WHITE,
           size: "sm"
         }), s]
       })
@@ -256,7 +256,7 @@ let S = e => {
         height: 190
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
-        children: x.NW.string(x.t.sIA0OD)
+        children: x.intl.string(x.t.sIA0OD)
       })]
     })
   }),

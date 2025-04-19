@@ -62,7 +62,7 @@ function b(e) {
         muted: !n
       }, u.UE.muted(!n)) : y(e => !e)
     },
-    x = f.NW.string(f.t.h850Sk);
+    x = f.intl.string(f.t.h850Sk);
   return (0, r.jsx)(o.yRy, {
     shouldShow: _,
     animation: o.yRy.Animation.NONE,
@@ -73,7 +73,7 @@ function b(e) {
     renderPopout: e => (0, r.jsx)(p.Z, g(m({}, e), {
       channel: t,
       navId: "channel-context",
-      label: f.NW.string(f.t.Xm41aW)
+      label: f.intl.string(f.t.Xm41aW)
     })),
     clickTrap: !0,
     children: (e, t) => {

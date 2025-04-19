@@ -115,12 +115,12 @@ let v = function(e) {
     }
     return a.join("")
   },
-  N = function(e) {
+  A = function(e) {
     return b(e, function(e) {
       return u.test(e) ? S(e.slice(4).toLowerCase()) : e
     })
   },
-  A = function(e) {
+  N = function(e) {
     return b(e, function(e) {
       return d.test(e) ? "xn--" + T(e) : e
     })
@@ -133,6 +133,6 @@ e.exports = {
   },
   decode: S,
   encode: T,
-  toASCII: A,
-  toUnicode: N
+  toASCII: N,
+  toUnicode: A
 }

@@ -206,20 +206,20 @@ let T = {
       switch (e) {
         case 429:
           throw (0, o.Zy)(), a.Z.show({
-            title: E.NW.string(E.t.MmIrpa),
-            body: E.NW.string(E.t.yjpDQ0),
-            confirmText: E.NW.string(E.t.XNGT1N)
+            title: E.intl.string(E.t.MmIrpa),
+            body: E.intl.string(E.t.yjpDQ0),
+            confirmText: E.intl.string(E.t.XNGT1N)
           }), O(y({}, t), {
-            message: E.NW.string(E.t.yjpDQ0)
+            message: E.intl.string(E.t.yjpDQ0)
           });
         case 403:
           throw O(y({}, t), {
-            message: E.NW.string(E.t["8T1rxM"])
+            message: E.intl.string(E.t["8T1rxM"])
           });
         default:
           var l, d;
           throw O(y({}, t), {
-            message: null != (d = (l = new s.Hx(t), l.getAnyErrorMessage())) ? d : E.NW.string(E.t.R0RpRU)
+            message: null != (d = (l = new s.Hx(t), l.getAnyErrorMessage())) ? d : E.intl.string(E.t.R0RpRU)
           })
       }
     }

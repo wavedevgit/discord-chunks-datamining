@@ -7,8 +7,8 @@ var n = r(200651),
   l = r(481060),
   s = r(782568),
   c = r(690221),
-  a = r(460181),
-  i = r(388032),
+  i = r(460181),
+  a = r(388032),
   u = r(835362);
 let b = [{
   preBold: "That's pretty...",
@@ -43,13 +43,13 @@ function f(e) {
     asanaTask: f
   } = e;
   o.useEffect(() => {
-    (0, a.GN)("success", .1)
+    (0, i.GN)("success", .1)
   }, []);
   let d = o.useRef(b[Math.floor(Math.random() * b.length)]).current;
   return (0, n.jsx)(l.Y0X, {
     className: u.bugReporterSubmitModalRoot,
     transitionState: t,
-    "aria-label": i.NW.string(i.t.mCCdws),
+    "aria-label": a.intl.string(a.t.mCCdws),
     children: (0, n.jsxs)(l.hzk, {
       style: {
         overflow: "hidden",

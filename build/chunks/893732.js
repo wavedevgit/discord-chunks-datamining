@@ -29,16 +29,16 @@ function a(e) {
       children: [(0, r.jsx)(i.X6q, {
         variant: "heading-md/semibold",
         className: o.headerText,
-        children: l.NW.string(l.t.LIIyeH)
+        children: l.intl.string(l.t.LIIyeH)
       }), (0, r.jsx)(i.Text, {
         variant: "text-sm/normal",
-        children: l.NW.format(l.t["4/6vQk"], {
+        children: l.intl.format(l.t["4/6vQk"], {
           guildName: n
         })
       }), (0, r.jsx)(i.zxk, {
         onClick: t,
         className: o.button,
-        children: l.NW.string(l.t.BddRzc)
+        children: l.intl.string(l.t.BddRzc)
       })]
     })]
   })

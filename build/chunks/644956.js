@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(670188),
   S = n(592125),
   T = n(271383),
-  N = n(430824),
-  A = n(594174),
+  A = n(430824),
+  N = n(594174),
   C = n(51144),
   R = n(388032),
   P = n(73433),
@@ -93,10 +93,10 @@ function j(e) {
     guildId: i,
     channelId: a,
     role: o
-  } = e, s = (0, l.e7)([N.Z], () => {
+  } = e, s = (0, l.e7)([A.Z], () => {
     var e;
-    return null == (e = N.Z.getGuild(i)) ? void 0 : e.ownerId
-  }, [i]), c = (0, l.e7)([A.default], () => A.default.getUser(t.userId), [t.userId]), f = (0, l.e7)([S.Z], () => S.Z.getChannel(a), [a]);
+    return null == (e = A.Z.getGuild(i)) ? void 0 : e.ownerId
+  }, [i]), c = (0, l.e7)([N.default], () => N.default.getUser(t.userId), [t.userId]), f = (0, l.e7)([S.Z], () => S.Z.getChannel(a), [a]);
   return null == c || null == f ? null : (0, r.jsx)(I.Z, {
     userId: t.userId,
     guildId: i,
@@ -152,21 +152,21 @@ function U(e) {
     }
   });
   let d = (0, E.Z)(a),
-    _ = (0, l.e7)([N.Z], () => {
+    _ = (0, l.e7)([A.Z], () => {
       var e;
-      return null == (e = N.Z.getGuild(a)) ? void 0 : e.getEveryoneRoleId()
+      return null == (e = A.Z.getGuild(a)) ? void 0 : e.getEveryoneRoleId()
     }, [a]),
-    p = (0, l.Wu)([T.ZP, A.default], () => {
+    p = (0, l.Wu)([T.ZP, N.default], () => {
       let e = T.ZP.getMembers(a),
         t = null == n || n === _ ? e : e.filter(e => e.roles.includes(n));
-      return o()(t).filter(e => null != A.default.getUser(e.userId)).sortBy(e => {
+      return o()(t).filter(e => null != N.default.getUser(e.userId)).sortBy(e => {
         var t;
-        return null != (t = e.nick) ? t : C.ZP.getName(A.default.getUser(e.userId))
+        return null != (t = e.nick) ? t : C.ZP.getName(N.default.getUser(e.userId))
       }).value()
     }, [a, n, _]),
-    h = (0, l.e7)([N.Z], () => {
+    h = (0, l.e7)([A.Z], () => {
       let e = null != n ? n : _;
-      return null == e ? null : N.Z.getRole(a, e)
+      return null == e ? null : A.Z.getRole(a, e)
     }, [a, n, _]),
     g = null == n ? null : null == d ? void 0 : d[n],
     b = i.useMemo(() => null != h ? p.map(e => (0, r.jsx)(j, {
@@ -176,7 +176,7 @@ function U(e) {
       role: h
     }, e.userId)) : [], [s, a, h, p]);
   if (null == h) return null;
-  let y = null == g ? h.name : R.NW.formatToPlainString(R.t.CuAQkJ, {
+  let y = null == g ? h.name : R.intl.formatToPlainString(R.t.CuAQkJ, {
     title: h.name,
     count: g
   });
@@ -188,7 +188,7 @@ function U(e) {
       className: P.roleScroller,
       children: [(0, r.jsx)(m.Z, {
         className: P.roleHeader,
-        "aria-label": R.NW.formatToPlainString(R.t.UaqbkZ, {
+        "aria-label": R.intl.formatToPlainString(R.t.UaqbkZ, {
           title: h.name,
           count: b.length
         }),
@@ -198,7 +198,7 @@ function U(e) {
         })
       }), b, null == g || g <= b.length ? null : (0, r.jsx)(m.Z, {
         className: P.roleHeader,
-        children: R.NW.formatToPlainString(R.t["9oMmZG"], {
+        children: R.intl.formatToPlainString(R.t["9oMmZG"], {
           count: g - b.length
         })
       })]
@@ -218,14 +218,14 @@ function G(e) {
     inlinePreview: f = !1
   } = e, {
     analyticsLocations: m
-  } = (0, h.ZP)(p.Z.ROLE_MENTION), g = (0, l.e7)([_.Z], () => _.Z.roleStyle), E = (0, v.$V)(u, "RoleMention"), I = (null != t && 0 !== t || null != n && null != n.primaryColor) && !f, S = I && "dot" === g, T = I && "username" === g, N = E && null != n && null != n.secondaryColor ? (0, O.f)(n) : null, A = e => (0, r.jsxs)(y.Z, M(L({
+  } = (0, h.ZP)(p.Z.ROLE_MENTION), g = (0, l.e7)([_.Z], () => _.Z.roleStyle), E = (0, v.$V)(u, "RoleMention"), I = (null != t && 0 !== t || null != n && null != n.primaryColor) && !f, S = I && "dot" === g, T = I && "username" === g, A = E && null != n && null != n.secondaryColor ? (0, O.f)(n) : null, N = e => (0, r.jsxs)(y.Z, M(L({
     className: P.roleMention,
     color: T ? t : null,
-    roleColors: T ? N : null
+    roleColors: T ? A : null
   }, e), {
     children: [S && null != t && (0, r.jsx)(c.FhE, {
       color: (0, s.Rf)(t),
-      colors: N,
+      colors: A,
       className: w.roleDot,
       background: !1,
       tooltip: !1
@@ -239,7 +239,7 @@ function G(e) {
   });
   return !C || f || null == a || null == u || null == i && "@everyone" !== o ? (0, r.jsx)(h.Gt, {
     value: m,
-    children: A()
+    children: N()
   }) : (0, r.jsx)(h.Gt, {
     value: m,
     children: (0, r.jsx)(c.yRy, {
@@ -253,7 +253,7 @@ function G(e) {
         popoutProps: e
       }),
       position: "right",
-      children: A
+      children: N
     })
   })
 }

@@ -35,7 +35,7 @@ function h(e) {
         variant: "text-sm/normal",
         color: "none",
         className: p.emptyPreviewText,
-        children: null != a ? a : _.NW.string(_.t.uQZTBQ)
+        children: null != a ? a : _.intl.string(_.t.uQZTBQ)
       })]
     })
   })
@@ -60,7 +60,7 @@ function m(e) {
     isLoading: E,
     noText: a,
     noImage: o,
-    previewText: m ? void 0 : _.NW.string(_.t.pgUTZG)
+    previewText: m ? void 0 : _.intl.string(_.t.pgUTZG)
   }) : (0, r.jsx)("div", {
     className: n,
     children: (0, r.jsx)("img", {

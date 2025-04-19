@@ -67,10 +67,10 @@ function I(e) {
     textValue: I,
     maxCharacterCount: S,
     showRemainingCharsAfterCount: T,
-    className: N
-  } = e, A = (0, o.e7)([f.default], () => _.ZP.canUseIncreasedMessageLength(f.default.getCurrentUser())), C = (0, u.Z)(), R = null != S ? S : C, P = null != (b = null != T ? T : S) ? b : C / 10, w = I.length, D = null != v.upsellLongMessages && (null != w ? w : 0) > h.J6R && A, L = null != v.upsellLongMessages && !A, x = (null == (n = (0, d.N)()) || null == (t = n.subscription_trial) ? void 0 : t.sku_id) === m.Si.TIER_2, M = R - w, k = M > P, j = M < 0 && x, U = 0 === M ? g.NW.string(g.t.tU6YQ0) : M > 0 ? g.NW.formatToPlainString(g.t.qH8uFR, {
+    className: A
+  } = e, N = (0, o.e7)([f.default], () => _.ZP.canUseIncreasedMessageLength(f.default.getCurrentUser())), C = (0, u.Z)(), R = null != S ? S : C, P = null != (b = null != T ? T : S) ? b : C / 10, w = I.length, D = null != v.upsellLongMessages && (null != w ? w : 0) > h.J6R && N, L = null != v.upsellLongMessages && !N, x = (null == (n = (0, d.N)()) || null == (t = n.subscription_trial) ? void 0 : t.sku_id) === m.Si.TIER_2, M = R - w, k = M > P, j = M < 0 && x, U = 0 === M ? g.intl.string(g.t.tU6YQ0) : M > 0 ? g.intl.formatToPlainString(g.t.qH8uFR, {
     count: M
-  }) : g.NW.string(g.t.YSRIqa), {
+  }) : g.intl.string(g.t.YSRIqa), {
     analyticsLocations: G
   } = (0, c.ZP)(l.Z.CHARACTER_COUNT);
   if (!(D && M >= 0 || !k || L && !k)) return null;
@@ -78,11 +78,11 @@ function I(e) {
   return (0, r.jsx)(c.Gt, {
     value: G,
     children: (0, r.jsxs)("div", {
-      className: a()(N, E.characterCount),
+      className: a()(A, E.characterCount),
       children: [(0, r.jsxs)("div", {
         className: E.flairContainer,
         children: [D && B ? (0, r.jsx)(s.ua7, {
-          text: g.NW.formatToPlainString(g.t.vcvHa2, {
+          text: g.intl.formatToPlainString(g.t.vcvHa2, {
             maxLength: R
           }),
           position: "top",
@@ -104,7 +104,7 @@ function I(e) {
           }))
         })]
       }), (0, r.jsx)(s.nn4, {
-        children: g.NW.format(g.t.qH8uFR, {
+        children: g.intl.format(g.t.qH8uFR, {
           count: M
         })
       }), L && !k ? (0, r.jsx)(p.Z, {

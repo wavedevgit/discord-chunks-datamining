@@ -27,7 +27,7 @@ function g(e) {
   return (0, r.jsxs)(l.hjN, {
     children: [(0, r.jsx)(l.R94, {
       type: l.geA.DESCRIPTION,
-      children: u.NW.format(u.t["5u+aV1"], {
+      children: u.intl.format(u.t["5u+aV1"], {
         helpdeskArticle: s.Z.getArticleURL(d.BhN.CHANNEL_FOLLOWING)
       })
     }), (0, r.jsx)(l.$i$, {
@@ -49,11 +49,11 @@ function g(e) {
           className: p.emptyStateImage
         }), (0, r.jsx)(l.X6q, {
           variant: "heading-md/semibold",
-          children: u.NW.string(u.t.gzuVHx)
+          children: u.intl.string(u.t.gzuVHx)
         }), (0, r.jsx)(l.zxk, {
           className: p.emptyStateButton,
           onClick: t,
-          children: u.NW.string(u.t["ZwSt+f"])
+          children: u.intl.string(u.t["ZwSt+f"])
         })]
       })
     }(x, () => open(s.Z.getArticleURL(d.BhN.CHANNEL_FOLLOWING)))]

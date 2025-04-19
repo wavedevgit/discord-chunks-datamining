@@ -22,7 +22,7 @@ function l(e) {
   }, "content").trim() : "", _ = t.required, p = "" === f;
   if (null == n) return _ ? {
     success: !1,
-    error: s.NW.string(s.t.JZJQLy)
+    error: s.intl.string(s.t.JZJQLy)
   } : {
     success: !0
   };
@@ -30,7 +30,7 @@ function l(e) {
     success: !0
   } : _ ? {
     success: !1,
-    error: s.NW.string(s.t.JZJQLy)
+    error: s.intl.string(s.t.JZJQLy)
   } : {
     success: !1,
     error: (0, o.al)(t)

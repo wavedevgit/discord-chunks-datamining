@@ -1,13 +1,13 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  g: () => j
+  g: () => C
 }), n(539854);
-var r = n(200651);
+var i = n(200651);
 n(192379);
-var i = n(442837),
+var r = n(442837),
   s = n(780384),
-  a = n(481060),
-  l = n(44315),
+  l = n(481060),
+  a = n(44315),
   o = n(540059),
   c = n(210887),
   d = n(598077),
@@ -19,82 +19,82 @@ var i = n(442837),
   f = n(726745),
   b = n(251423),
   _ = n(383832),
-  N = n(981631),
-  x = n(388032),
-  E = n(965695);
+  x = n(981631),
+  E = n(388032),
+  j = n(965695);
 
-function j(e) {
-  let t = (0, i.e7)([m.default], () => m.default.getCurrentUser()),
-    n = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation),
-    j = (0, i.e7)([c.Z], () => (0, s.wj)(c.Z.theme)),
-    C = (0, o.R6)("useMultiAccountMenuItems"),
+function C(e) {
+  let t = (0, r.e7)([m.default], () => m.default.getCurrentUser()),
+    n = (0, r.e7)([u.Z], () => u.Z.hidePersonalInformation),
+    C = (0, r.e7)([c.Z], () => (0, s.wj)(c.Z.theme)),
+    O = (0, o.R6)("useMultiAccountMenuItems"),
     {
-      multiAccountUsers: O
+      multiAccountUsers: S
     } = (0, b.L)(),
-    S = e => {
-      e !== (null == t ? void 0 : t.id) && (g.default.track(N.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
+    v = e => {
+      e !== (null == t ? void 0 : t.id) && (g.default.track(x.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
         location: {
-          section: N.jXE.USER_PROFILE
+          section: x.jXE.USER_PROFILE
         }
       }), h.yD(e))
     },
-    v = O.map(i => {
-      let s = new d.Z(i),
+    T = S.map(r => {
+      let s = new d.Z(r),
         o = s.id === (null == t ? void 0 : t.id),
-        c = i.tokenStatus === f.q.INVALID,
+        c = r.tokenStatus === f.q.INVALID,
         u = n ? null : "#".concat(s.discriminator);
-      return (0, r.jsx)(a.sNh, {
+      return (0, i.jsx)(l.sNh, {
         id: s.id,
-        focusedClassName: E.focused,
+        focusedClassName: j.focused,
         label: e => {
           let {
             isFocused: t
           } = e;
-          return (0, r.jsxs)("div", {
-            className: E.userMenuItem,
-            children: [(0, r.jsx)(a.qEK, {
+          return (0, i.jsxs)("div", {
+            className: j.userMenuItem,
+            children: [(0, i.jsx)(l.qEK, {
               src: s.getAvatarURL(void 0, 40),
-              size: a.EFr.SIZE_24,
-              "aria-label": i.username
-            }), (0, r.jsxs)("div", {
-              className: E.userMenuUsername,
-              children: [(0, r.jsx)(a.Text, {
-                className: E.userMenuText,
+              size: l.EFr.SIZE_24,
+              "aria-label": r.username
+            }), (0, i.jsxs)("div", {
+              className: j.userMenuUsername,
+              children: [(0, i.jsx)(l.Text, {
+                className: j.userMenuText,
                 variant: "text-sm/normal",
                 children: p.ZP.getUserTag(s, {
                   mode: "username",
                   identifiable: n ? "never" : "always"
                 })
-              }), !s.isPomelo() && (0, r.jsx)(a.Text, {
-                className: E.userMenuDiscriminator,
+              }), !s.isPomelo() && (0, i.jsx)(l.Text, {
+                className: j.userMenuDiscriminator,
                 variant: "text-sm/normal",
                 children: u
               })]
-            }), o && (0, r.jsx)(a.owK, {
+            }), o && (0, i.jsx)(l.owK, {
               size: "sm",
-              color: (0, l.Lq)(t ? N.Ilk.WHITE_500 : N.Ilk.BRAND_500),
-              secondaryColor: (0, l.Lq)(t && j || t && !C && !j ? N.Ilk.BRAND_500 : N.Ilk.WHITE_500),
-              className: E.activeIcon
-            }), c && (0, r.jsx)(a.P4T, {
-              color: (0, l.Lq)(N.Ilk.RED_400),
-              secondaryColor: (0, l.Lq)(t && j || t && !C && !j ? N.Ilk.BRAND_500 : N.Ilk.WHITE_500),
+              color: (0, a.Lq)(t ? x.Ilk.WHITE_500 : x.Ilk.BRAND_500),
+              secondaryColor: (0, a.Lq)(t && C || t && !O && !C ? x.Ilk.BRAND_500 : x.Ilk.WHITE_500),
+              className: j.activeIcon
+            }), c && (0, i.jsx)(l.P4T, {
+              color: (0, a.Lq)(x.Ilk.RED_400),
+              secondaryColor: (0, a.Lq)(t && C || t && !O && !C ? x.Ilk.BRAND_500 : x.Ilk.WHITE_500),
               size: "xs",
-              className: E.activeIcon
+              className: j.activeIcon
             })]
           })
         },
         action: () => {
-          null == e || e(), c ? (0, _.Z)() : S(s.id)
+          null == e || e(), c ? (0, _.Z)() : v(s.id)
         }
       }, s.id)
     });
-  return v.push((0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.Clw, {}), (0, r.jsx)(a.sNh, {
+  return T.push((0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsx)(l.Clw, {}), (0, i.jsx)(l.sNh, {
       id: "manage-accounts",
-      label: x.NW.string(x.t.WbFpq6),
+      label: E.intl.string(E.t.WbFpq6),
       action: () => {
         null == e || e(), (0, _.Z)()
       }
     })]
-  })), v
+  })), T
 }

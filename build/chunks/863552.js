@@ -12,7 +12,7 @@ function i(e) {
       height: c = 24,
       color: s = "currentColor"
     } = e,
-    a = function(e, t) {
+    l = function(e, t) {
       if (null == e) return {};
       var r, n, o = function(e, t) {
         if (null == e) return {};
@@ -44,7 +44,7 @@ function i(e) {
       })
     }
     return e
-  }({}, (0, o.Z)(a)), r = r = {
+  }({}, (0, o.Z)(l)), r = r = {
     width: i,
     height: c,
     viewBox: "0 0 20 20",

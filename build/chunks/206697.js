@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(657707),
-  l = n(793030),
+  l = n(657707),
+  a = n(793030),
   o = n(481060),
   s = n(100527),
   c = n(436774),
@@ -32,11 +32,11 @@ function x() {
         className: g.header,
         variant: "heading-xl/semibold",
         color: "text-normal",
-        children: h.NW.string(h.t.erEf2t)
-      }), (0, r.jsx)(l.xv, {
+        children: h.intl.string(h.t.erEf2t)
+      }), (0, r.jsx)(a.xv, {
         variant: "text-md/medium",
         color: "text-muted",
-        children: h.NW.string(h.t.NaRCXV)
+        children: h.intl.string(h.t.NaRCXV)
       })]
     })
   }) : (0, r.jsxs)("div", {
@@ -51,11 +51,11 @@ function x() {
         className: g.header,
         variant: "heading-xl/semibold",
         color: "text-normal",
-        children: h.NW.string(h.t.w4DRbW)
-      }), (0, r.jsx)(l.xv, {
+        children: h.intl.string(h.t.w4DRbW)
+      }), (0, r.jsx)(a.xv, {
         variant: "text-md/medium",
         color: "text-muted",
-        children: h.NW.string(h.t.F6u3Ex)
+        children: h.intl.string(h.t.F6u3Ex)
       })]
     }), (0, r.jsx)(y, {})]
   })
@@ -88,16 +88,16 @@ function y() {
         source: s.Z.FOR_LATER_POPOUT
       }, t))
     }), []),
-    p = h.NW.format(h.t.qXh3fn, {
+    p = h.intl.format(h.t.qXh3fn, {
       nitroTierName: e,
       onClick: t
     });
   return (0, r.jsxs)("div", {
     className: g.upsellContainer,
-    children: [(0, r.jsx)(a.SrA, {
+    children: [(0, r.jsx)(l.SrA, {
       size: "md",
       color: c.JX.PREMIUM_TIER_2
-    }), (0, r.jsx)(l.xv, {
+    }), (0, r.jsx)(a.xv, {
       variant: "text-xs/medium",
       color: "header-primary",
       className: g.upsellText,

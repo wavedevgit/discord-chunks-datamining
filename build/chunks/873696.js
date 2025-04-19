@@ -14,7 +14,7 @@ function i(e) {
       };
     case "go-live":
       return {
-        subtitle: r.NW.string(r.t.Pa817u)
+        subtitle: r.intl.string(r.t.Pa817u)
       }
   }
   return null

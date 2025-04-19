@@ -16,7 +16,7 @@ let i = e => r.default.compare("992549565104128000", e) > -1,
   },
   o = (e, n, t) => {
     let r = a(e, t);
-    return "0" === r ? u.NW.string(u.t.eXHkho) : u.NW.formatToPlainString(n, {
+    return "0" === r ? u.intl.string(u.t.eXHkho) : u.intl.formatToPlainString(n, {
       count: r
     })
   },

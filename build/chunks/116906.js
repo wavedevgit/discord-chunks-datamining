@@ -31,14 +31,14 @@ function _(e) {
     displayProfile: _,
     guildId: Z,
     subsection: O,
-    onClose: N
+    onClose: P
   } = e, {
-    voiceActivityStatusEnabled: P
+    voiceActivityStatusEnabled: E
   } = (0, l.U)({
     location: "UserProfileModalActivity"
   }), {
-    live: E,
-    recent: S,
+    live: S,
+    recent: N,
     stream: T
   } = (0, u.Z)(n.id), {
     voiceChannel: A,
@@ -49,7 +49,7 @@ function _(e) {
   }), L = (0, o.e7)([s.Z], () => s.Z.isFetchingUserOutbox(n.id)), w = n.id === t.id, R = (0, o.e7)([a.Z, c.Z], () => {
     let e = w ? a.Z.getStatus() : c.Z.getStatus(n.id);
     return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
-  }), M = E.length > 0 || null != T, U = P && null == T && null == C && null != A, B = S.length > 0;
+  }), M = S.length > 0 || null != T, U = E && null == T && null == C && null != A, B = N.length > 0;
   return !R && (M || U) || B || !L ? (0, r.jsxs)(i.zJl, {
     className: v.scroller,
     fade: !0,
@@ -58,37 +58,37 @@ function _(e) {
         user: n,
         currentUser: t,
         voiceChannel: A,
-        onClose: N
+        onClose: P
       }), null != T && (0, r.jsx)(h.Z, {
         location: "UserProfileModalActivity",
         user: n,
         currentUser: t,
         stream: T,
-        onClose: N,
+        onClose: P,
         profileGuildId: null == _ ? void 0 : _.guildId
-      }), E.map((e, o) => (0, r.jsx)(b.Z, {
+      }), S.map((e, o) => (0, r.jsx)(b.Z, {
         user: n,
         currentUser: t,
         activity: e,
-        onClose: N,
+        onClose: P,
         profileGuildId: null == _ ? void 0 : _.guildId
       }, "live-".concat(o)))]
     }) : null, B ? (0, r.jsx)(p.Z, {
-      heading: j.NW.string(j.t.M0zgnZ),
-      subheading: w ? j.NW.format(j.t["4bk9Ag"], {
+      heading: j.intl.string(j.t.M0zgnZ),
+      subheading: w ? j.intl.format(j.t["4bk9Ag"], {
         learnMoreHook: (e, n) => (0, r.jsx)(i.eee, {
           href: d.Z.getArticleURL(I.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, n)
       }) : void 0,
       scrollIntoView: O === y.Tb.RECENT_ACTIVITY,
-      children: S.map(e => (0, r.jsx)(m.Z, {
+      children: N.map(e => (0, r.jsx)(m.Z, {
         location: "UserProfileModalActivity",
         user: n,
         currentUser: t,
         entry: e,
         profileGuildId: null == _ ? void 0 : _.guildId,
-        onClose: N
+        onClose: P
       }, e.id))
     }) : null]
   }) : (0, r.jsx)("div", {

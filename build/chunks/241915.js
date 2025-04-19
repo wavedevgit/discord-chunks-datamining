@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => A,
+  Z: () => N,
   _: () => T
 }), n(388685);
 var r, i = n(200651),
@@ -313,7 +313,7 @@ h(T, "defaultProps", {
   hidden: !1,
   roundCorners: !0
 });
-let N = e => {
+let A = e => {
     let {
       selectedPIPWindow: t,
       pipWindows: n,
@@ -362,4 +362,4 @@ let N = e => {
       children: g()
     })
   },
-  A = a.memo(N)
+  N = a.memo(A)

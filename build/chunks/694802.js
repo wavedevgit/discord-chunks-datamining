@@ -43,11 +43,11 @@ let c = function(e) {
   } = e, n = (0, s.qb)(t);
   if (0 === n.length) return null;
   let o = n.at(0);
-  return o === a.NW.string(a.t.BV6xDg) ? (0, r.jsx)(l, {
-    header: a.NW.string(a.t.onh6cn),
-    children: a.NW.string(a.t.arVHRE)
-  }) : o === a.NW.string(a.t.MFGxFB) ? (0, r.jsx)(l, {
-    header: a.NW.string(a.t.JPihZG),
-    children: a.NW.string(a.t.MFGxFB)
+  return o === a.intl.string(a.t.BV6xDg) ? (0, r.jsx)(l, {
+    header: a.intl.string(a.t.onh6cn),
+    children: a.intl.string(a.t.arVHRE)
+  }) : o === a.intl.string(a.t.MFGxFB) ? (0, r.jsx)(l, {
+    header: a.intl.string(a.t.JPihZG),
+    children: a.intl.string(a.t.MFGxFB)
   }) : null
 }

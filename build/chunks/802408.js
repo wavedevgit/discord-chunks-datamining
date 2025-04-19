@@ -62,7 +62,7 @@ function m(e) {
   return (0, r.jsxs)("div", {
     className: d.container,
     children: [(0, r.jsx)("img", {
-      alt: u.NW.string(u.t.X4IxWF),
+      alt: u.intl.string(u.t.X4IxWF),
       src: c.getImageUrl((0, a.wj)(_), f),
       className: d.coachmark
     }), (0, r.jsxs)("div", {
@@ -84,7 +84,7 @@ function m(e) {
     }), (0, r.jsx)(o.P3F, {
       onClick: t,
       className: d.closeButton,
-      "aria-label": u.NW.string(u.t.cpT0Cg),
+      "aria-label": u.intl.string(u.t.cpT0Cg),
       children: (0, r.jsx)(o.Dio, {
         size: "md",
         color: "currentColor",

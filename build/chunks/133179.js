@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651);
 n(192379);
-var i = n(120356),
-  l = n.n(i),
+var l = n(120356),
+  i = n.n(l),
   s = n(481060),
   a = n(600164),
   o = n(873270);
@@ -15,10 +15,10 @@ function c(e) {
     source: t,
     selectedSource: n
   } = e, {
-    id: i,
+    id: l,
     name: c,
     url: d
-  } = t, u = (null == n ? void 0 : n.id) === i;
+  } = t, u = (null == n ? void 0 : n.id) === l;
   return (0, r.jsxs)(a.Z, {
     direction: a.Z.Direction.VERTICAL,
     justify: a.Z.Justify.CENTER,
@@ -30,12 +30,12 @@ function c(e) {
         style: {
           backgroundImage: "url(".concat(d, ")")
         },
-        className: l()(o.sourceThumbnail, {
+        className: i()(o.sourceThumbnail, {
           [o.selected]: u
         })
       })
     }), (0, r.jsx)(s.Text, {
-      className: l()(o.sourceName, {
+      className: i()(o.sourceName, {
         [o.selected]: u
       }),
       variant: "text-sm/normal",

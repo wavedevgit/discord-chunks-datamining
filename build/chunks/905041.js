@@ -1,11 +1,11 @@
 /** Chunk was on 96473 **/
 e.d(n, {
-  Z: () => N
+  Z: () => O
 }), e(35282), e(539854), e(388685);
 var l = e(200651);
 e(192379);
-var r = e(481060),
-  i = e(378409),
+var i = e(481060),
+  r = e(378409),
   a = e(976853),
   o = e(902676),
   u = e(626135),
@@ -36,45 +36,45 @@ function p(t) {
 }
 let b = /^(tel|sms|mailto):([^?;]+)/;
 
-function N(t, n, e, N) {
-  let O = (0, a.Z)(null == e ? void 0 : e.getChannelId());
-  if (!s.isPlatformEmbedded || null == t || "" === t || O || (null == N ? void 0 : N.shouldHideMediaOptions) === !0 || !(0, i.Jj)(t)) return null;
-  let g = (0, o.F)(t),
-    y = t => {
+function O(t, n, e, O) {
+  let g = (0, a.Z)(null == e ? void 0 : e.getChannelId());
+  if (!s.isPlatformEmbedded || null == t || "" === t || g || (null == O ? void 0 : O.shouldHideMediaOptions) === !0 || !(0, r.Jj)(t)) return null;
+  let y = (0, o.F)(t),
+    _ = t => {
       u.default.track(f.rMx.CONTEXT_MENU_LINK_COPIED, p({
-        hostname: g
-      }, (0, v.v)())), d.ZP.copy(t), (0, r.showToast)((0, r.createToast)(h.NW.string(h.t["L/PwZW"]), r.ToastType.SUCCESS))
+        hostname: y
+      }, (0, v.v)())), d.ZP.copy(t), (0, i.showToast)((0, i.createToast)(h.intl.string(h.t["L/PwZW"]), i.ToastType.SUCCESS))
     },
-    _ = e => {
+    m = e => {
       u.default.track(f.rMx.CONTEXT_MENU_LINK_OPENED, p({
-        hostname: g
+        hostname: y
       }, (0, v.v)())), (0, c.q)({
         href: t,
         trusted: (0, c.r)(t, n),
         shouldConfirm: !0
       }, e)
     },
-    m = [],
-    Z = t.match(b);
-  if (null != Z) {
-    let t = h.NW.string("mailto" === Z[1] ? h.t.ZYLVKi : h.t["3zozoa"]);
-    m.push((0, l.jsx)(r.sNh, {
+    Z = [],
+    C = t.match(b);
+  if (null != C) {
+    let t = h.intl.string("mailto" === C[1] ? h.t.ZYLVKi : h.t["3zozoa"]);
+    Z.push((0, l.jsx)(i.sNh, {
       id: "copy-native-contact",
       label: t,
       action: () => {
-        y(Z[2])
+        _(C[2])
       }
     }, "copy-native-contact"))
   }
-  return [(0, l.jsx)(r.sNh, {
+  return [(0, l.jsx)(i.sNh, {
     id: "copy-native-link",
-    label: h.NW.string(h.t.WqhZsr),
+    label: h.intl.string(h.t.WqhZsr),
     action: () => {
-      y(t)
+      _(t)
     }
-  }, "copy-native-link"), ...m, (0, l.jsx)(r.sNh, {
+  }, "copy-native-link"), ...Z, (0, l.jsx)(i.sNh, {
     id: "open-native-link",
-    label: h.NW.string(h.t.wuRE8P),
-    action: t => _(t)
+    label: h.intl.string(h.t.wuRE8P),
+    action: t => m(t)
   }, "open-native-link")]
 }

@@ -43,27 +43,27 @@ function g(e) {
     switch (n) {
       case _.sE.IS_MEMBER:
         return {
-          text: m.NW.string(m.t.IRoQXl), onClick: s
+          text: m.intl.string(m.t.IRoQXl), onClick: s
         };
       case _.sE.ADOPT_TAG:
         return {
-          text: m.NW.string(m.t.cQDYRk), onClick: y
+          text: m.intl.string(m.t.cQDYRk), onClick: y
         };
       case _.sE.HAS_APPLICATION:
         return {
-          text: m.NW.string(m.t["4yfIDg"]), onClick: v
+          text: m.intl.string(m.t["4yfIDg"]), onClick: v
         };
       case _.sE.APPLY_TO_JOIN:
         return {
-          text: m.NW.string(m.t["7XdMW1"]), onClick: f
+          text: m.intl.string(m.t["7XdMW1"]), onClick: f
         };
       case _.sE.LURK_DISCOVERABLE:
         return {
-          text: m.NW.string(m.t.eb9gDA), onClick: O
+          text: m.intl.string(m.t.eb9gDA), onClick: O
         };
       case _.sE.JOIN_VIA_INVITE:
         return {
-          text: m.NW.string(m.t.eb9gDA), onClick: u
+          text: m.intl.string(m.t.eb9gDA), onClick: u
         };
       default:
         return {

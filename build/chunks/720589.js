@@ -18,11 +18,11 @@ var l = n(200651),
   f = n(984933),
   p = n(430824),
   x = n(496675),
-  N = n(699516),
-  j = n(944486),
-  C = n(594174),
-  M = n(626135),
-  _ = n(709054),
+  j = n(699516),
+  C = n(944486),
+  M = n(594174),
+  _ = n(626135),
+  N = n(709054),
   v = n(981631),
   y = n(388032),
   S = n(455864);
@@ -37,7 +37,7 @@ function Z(e, t, n) {
 }
 class O extends r.PureComponent {
   componentDidMount() {
-    M.default.track(v.rMx.OPEN_MODAL, {
+    _.default.track(v.rMx.OPEN_MODAL, {
       type: "Follow Channel Modal",
       num_guild_permissions: Object.keys(this.props.guilds).length,
       location: "Chat Input Blocker - Follow Channel"
@@ -48,7 +48,7 @@ class O extends r.PureComponent {
         let {
           channel: t
         } = e;
-        return "general" === (0, h.F6)(t, C.default, N.Z)
+        return "general" === (0, h.F6)(t, M.default, j.Z)
       }),
       n = null != t ? t : e[0];
     return null != n ? n.channel.id : null
@@ -66,12 +66,12 @@ class O extends r.PureComponent {
         submitting: n,
         onClick: this.handleFollow,
         disabled: null == e || null == t,
-        children: y.NW.string(y.t["3aOv+v"])
+        children: y.intl.string(y.t["3aOv+v"])
       }), (0, l.jsx)(o.zxk, {
         look: o.zxk.Looks.LINK,
         color: o.zxk.Colors.PRIMARY,
         onClick: s,
-        children: y.NW.string(y.t["ETE/oK"])
+        children: y.intl.string(y.t["ETE/oK"])
       })]
     })
   }
@@ -83,7 +83,7 @@ class O extends r.PureComponent {
       selectedGuildId: n,
       selectedChannelId: s,
       errorMessage: a
-    } = this.state, i = _.default.keys(e).map(t => {
+    } = this.state, i = N.default.keys(e).map(t => {
       let {
         guild: n
       } = e[t];
@@ -99,15 +99,15 @@ class O extends r.PureComponent {
       } = e;
       return {
         value: t.id,
-        label: (0, h.F6)(t, C.default, N.Z),
+        label: (0, h.F6)(t, M.default, j.Z),
         channel: t,
         category: n
       }
-    }), c = 0 === i.length, g = c ? y.NW.string(y.t["6b6QoK"]) : y.NW.string(y.t.Z0quyM);
+    }), c = 0 === i.length, g = c ? y.intl.string(y.t["6b6QoK"]) : y.intl.string(y.t.Z0quyM);
     return (0, l.jsxs)(r.Fragment, {
       children: [(0, l.jsx)(o.xJW, {
         className: S.bottomMargin,
-        title: y.NW.string(y.t.xFn72t),
+        title: y.intl.string(y.t.xFn72t),
         children: (0, l.jsx)(o.VcW, {
           value: n,
           options: i,
@@ -126,7 +126,7 @@ class O extends r.PureComponent {
         })
       }), (0, l.jsx)(o.xJW, {
         className: S.bottomMargin,
-        title: y.NW.string(y.t.PDn2fX),
+        title: y.intl.string(y.t.PDn2fX),
         children: (0, l.jsx)(o.VcW, {
           value: s,
           options: d,
@@ -163,19 +163,19 @@ class O extends r.PureComponent {
       children: [(0, l.jsx)(o.X6q, {
         variant: "heading-lg/semibold",
         id: this.state.headerId,
-        children: y.NW.string(y.t.mvPFbG)
+        children: y.intl.string(y.t.mvPFbG)
       }), (0, l.jsx)(o.Text, {
         color: "text-muted",
         className: a()(S.topMargin, {
           [S.formMargin]: !e
         }),
         variant: "text-sm/normal",
-        children: y.NW.string(y.t.kbpkxM)
+        children: y.intl.string(y.t.kbpkxM)
       }), e ? (0, l.jsx)(o.Text, {
         className: a()(S.formMargin, S.topMargin),
         color: "text-danger",
         variant: "text-sm/normal",
-        children: y.NW.string(y.t["DrNm//"])
+        children: y.intl.string(y.t["DrNm//"])
       }) : null]
     })
   }
@@ -275,10 +275,10 @@ class O extends r.PureComponent {
         })
       }).catch(e => {
         e.body.code === v.evJ.TOO_MANY_WEBHOOKS ? this.setState({
-          errorMessage: y.NW.string(y.t["1eZ4aG"]),
+          errorMessage: y.intl.string(y.t["1eZ4aG"]),
           submitting: !1
         }) : this.setState({
-          errorMessage: y.NW.string(y.t.LgwhuL),
+          errorMessage: y.intl.string(y.t.LgwhuL),
           submitting: !1
         })
       }))
@@ -300,7 +300,7 @@ class O extends r.PureComponent {
     }
   }
 }
-let k = i.ZP.connectStores([p.Z, b.Z, f.ZP, x.Z, j.Z], e => {
+let k = i.ZP.connectStores([p.Z, b.Z, f.ZP, x.Z, C.Z], e => {
   let {
     channel: t
   } = e, n = p.Z.getGuild(t.guild_id), l = Object.values(p.Z.getGuilds()).reduce((e, t) => {
@@ -315,7 +315,7 @@ let k = i.ZP.connectStores([p.Z, b.Z, f.ZP, x.Z, j.Z], e => {
       guild: t,
       channels: n
     }), e
-  }, {}), r = j.Z.getLastChannelFollowingDestination();
+  }, {}), r = C.Z.getLastChannelFollowingDestination();
   return {
     guildToFollow: n,
     channelNameToFollow: t.name,

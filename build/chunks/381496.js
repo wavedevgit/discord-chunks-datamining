@@ -1,11 +1,11 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  j: () => a
+  j: () => l
 });
-var r = n(544891),
-  i = n(570140),
+var i = n(544891),
+  r = n(570140),
   s = n(981631);
-let a = () => r.tn.get({
+let l = () => i.tn.get({
   url: s.ANM.GUILD_AFFINITIES,
   oldFormErrors: !0,
   rejectWithError: !1
@@ -15,12 +15,12 @@ let a = () => r.tn.get({
       guild_affinities: t
     }
   } = e;
-  i.Z.dispatch({
+  r.Z.dispatch({
     type: "LOAD_GUILD_AFFINITIES_SUCCESS",
     guildAffinities: t
   })
 }, () => {
-  i.Z.dispatch({
+  r.Z.dispatch({
     type: "LOAD_GUILD_AFFINITIES_FAILURE"
   })
 })

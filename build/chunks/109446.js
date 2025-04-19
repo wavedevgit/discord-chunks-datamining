@@ -42,7 +42,7 @@ function j(e) {
       className: C.title,
       variant: "text-xs/bold",
       color: "header-secondary",
-      children: t.isForumLikeChannel() ? v.NW.string(v.t.ioVdOz) : v.NW.string(v.t.VNYs2t)
+      children: t.isForumLikeChannel() ? v.intl.string(v.t.ioVdOz) : v.intl.string(v.t.VNYs2t)
     }), l.slice(0, t.isForumLikeChannel() ? l.length : c).map(e => (0, r.jsx)(S, {
       thread: e
     }, e.id)).filter(e => i.isValidElement(e)).slice(0, c), (0, r.jsx)(a.P3F, {
@@ -77,7 +77,7 @@ function j(e) {
       children: (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "none",
-        children: v.NW.string(v.t["4qdZ9/"])
+        children: v.intl.string(v.t["4qdZ9/"])
       })
     })]
   })

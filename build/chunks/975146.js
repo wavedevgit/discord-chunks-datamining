@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  a = n.n(i),
-  l = n(481060),
+  l = n.n(i),
+  a = n(481060),
   o = n(871499),
   s = n(388032),
   c = n(486748);
@@ -17,12 +17,12 @@ function u(e) {
     count: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(c.root, c.comboIcon, t),
-    children: [(0, r.jsx)(l.BFJ, {
+    className: l()(c.root, c.comboIcon, t),
+    children: [(0, r.jsx)(a.BFJ, {
       size: "md",
       color: "currentColor",
       className: c.icon
-    }), null != n && (0, r.jsx)(l.Text, {
+    }), null != n && (0, r.jsx)(a.Text, {
       color: "none",
       className: c.count,
       variant: "text-md/normal",
@@ -39,13 +39,13 @@ function d(e) {
     var n, r, i = function(e, t) {
       if (null == e) return {};
       var n, r, i = {},
-        a = Object.keys(e);
-      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        l = Object.keys(e);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var l = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
   }(e, ["count"]);
@@ -67,7 +67,7 @@ function d(e) {
     }
     return e
   }({
-    label: s.NW.string(s.t.jNqDh4),
+    label: s.intl.string(s.t.jNqDh4),
     iconComponent: e => {
       let {
         className: n

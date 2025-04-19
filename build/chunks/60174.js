@@ -4,8 +4,8 @@ n.d(t, {
 }), n(997841), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  l = n.n(a),
+  l = n(120356),
+  a = n.n(l),
   o = n(954955),
   s = n.n(o),
   c = n(507274),
@@ -23,12 +23,12 @@ var r = n(200651),
   v = n(566006),
   E = n(981631),
   O = n(185923),
-  N = n(474936),
-  j = n(388032),
-  C = n(92254),
-  S = n(588429);
+  j = n(474936),
+  C = n(388032),
+  S = n(92254),
+  I = n(588429);
 
-function I(e, t, n) {
+function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -44,7 +44,7 @@ function T(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      I(e, t, n[t])
+      N(e, t, n[t])
     })
   }
   return e
@@ -56,7 +56,7 @@ class P extends i.Component {
       message: t,
       className: n,
       children: i,
-      useChatFontScaling: a,
+      useChatFontScaling: l,
       tabIndex: o = 0
     } = this.props, {
       isReactionPickerActive: s
@@ -64,13 +64,13 @@ class P extends i.Component {
     if (c || (0, b.yE)(t.flags, E.iLy.EPHEMERAL)) return null;
     let f = _.default.getCurrentUser(),
       h = (0, x.I5)(f),
-      g = m ? j.NW.string(j.t.Kfcszs) : j.NW.string(j.t.lfIHs7);
+      g = m ? C.intl.string(C.t.Kfcszs) : C.intl.string(C.t.lfIHs7);
     !h && m && (g = (0, r.jsx)(p.X, {
-      tooltipText: j.NW.string(j.t.Kfcszs)
+      tooltipText: C.intl.string(C.t.Kfcszs)
     }));
-    let N = a ? S : C,
+    let j = l ? I : S,
       {
-        canShowImprovedReactionButton: I
+        canShowImprovedReactionButton: N
       } = y.Z.getCurrentConfig({
         location: "ButtonAddReaction"
       }, {
@@ -79,8 +79,8 @@ class P extends i.Component {
       P = {
         size: "sm",
         color: "currentColor",
-        className: l()(N.icon, {
-          [N.largeIcon]: I
+        className: a()(j.icon, {
+          [j.largeIcon]: N
         })
       };
     return (0, r.jsx)(u.yRy, {
@@ -90,16 +90,16 @@ class P extends i.Component {
       renderPopout: this.renderReactionPopout,
       position: "right",
       children: (e, t) => {
-        var a, s;
+        var l, s;
         let {
           isShown: c
         } = t;
         return (0, r.jsx)(u.DY3, {
           text: g,
           color: u.FGA.PRIMARY,
-          "aria-label": m ? j.NW.string(j.t.Kfcszs) : j.NW.string(j.t.lfIHs7),
-          tooltipClassName: N.__invalid_addReactionTooltip,
-          children: (0, r.jsxs)(u.P3F, (a = T({}, e), s = s = {
+          "aria-label": m ? C.intl.string(C.t.Kfcszs) : C.intl.string(C.t.lfIHs7),
+          tooltipClassName: j.__invalid_addReactionTooltip,
+          children: (0, r.jsxs)(u.P3F, (l = T({}, e), s = s = {
             innerRef: this.ref,
             tabIndex: o,
             onClick: e => {
@@ -107,12 +107,12 @@ class P extends i.Component {
             },
             onMouseEnter: () => (0, d.x)(O.qR.AddReactionPopoutMouseEntered),
             onFocus: () => (0, d.x)(O.qR.AddReactionPopoutFocused),
-            className: l()(N.reactionBtn, {
-              [N.active]: c,
-              [N.largeReactionBtn]: I
+            className: a()(j.reactionBtn, {
+              [j.active]: c,
+              [j.largeReactionBtn]: N
             }, n),
             children: [m ? (0, r.jsx)(u.Pt5, T({}, P)) : (0, r.jsx)(u.EO4, T({}, P)), i]
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
@@ -120,16 +120,16 @@ class P extends i.Component {
             }
             return n
           })(Object(s)).forEach(function(e) {
-            Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(s, e))
-          }), a))
+            Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(s, e))
+          }), l))
         })
       }
     })
   }
   constructor(...e) {
-    super(...e), I(this, "state", {
+    super(...e), N(this, "state", {
       isReactionPickerActive: !1
-    }), I(this, "ref", i.createRef()), I(this, "onAddReaction", (e, t) => {
+    }), N(this, "ref", i.createRef()), N(this, "onAddReaction", (e, t) => {
       if (null == e) return;
       let {
         channel: n,
@@ -139,11 +139,11 @@ class P extends i.Component {
       (0, f.rU)(n.id, r.id, (0, h.g1)(e), i ? f.TW.FORUM_TOOLBAR : f.TW.MESSAGE_INLINE_BUTTON, {
         burst: t
       })
-    }), I(this, "handleReactionPickerToggle", () => {
+    }), N(this, "handleReactionPickerToggle", () => {
       this.setState(e => ({
         isReactionPickerActive: !e.isReactionPickerActive
       }))
-    }), I(this, "handleAddReactionClick", e => {
+    }), N(this, "handleAddReactionClick", e => {
       let {
         type: t,
         channel: n
@@ -152,20 +152,20 @@ class P extends i.Component {
       let r = _.default.getCurrentUser();
       t !== v.O.BURST || (0, x.I5)(r) || (0, m.m)({
         analytics: {
-          type: N.cd.BURST_REACTION_UPSELL,
+          type: j.cd.BURST_REACTION_UPSELL,
           page: null != n.getGuildId() ? E.ZY5.GUILD_CHANNEL : E.ZY5.DM_CHANNEL,
           section: (0, h.s4)(n),
           object: E.qAy.INLINE_REACTION_PICKER_UPSELL
         }
       }), this.handleReactionPickerToggle()
-    }), I(this, "renderReactionPopout", e => {
+    }), N(this, "renderReactionPopout", e => {
       let {
         closePopout: t
       } = e, {
         type: n,
         channel: i,
-        message: a
-      } = this.props, l = T({
+        message: l
+      } = this.props, a = T({
         openPopoutType: "message_reaction_emoji_picker"
       }, n === v.O.BURST && {
         openPopoutType: "message_super_reaction_emoji_picker",
@@ -178,8 +178,8 @@ class P extends i.Component {
         onSelectEmoji: (e, n, r) => {
           this.onAddReaction(e, r), n && (r ? s()(t, 150)() : t())
         },
-        analyticsOverride: l,
-        messageId: a.id
+        analyticsOverride: a,
+        messageId: l.id
       });
       return (0, r.jsx)(c.M.Consumer, {
         children: e => {
@@ -187,7 +187,7 @@ class P extends i.Component {
             inDialog: t
           } = e;
           return t ? (0, r.jsx)(u.VqE, {
-            "aria-label": j.NW.string(j.t["7Xqzdn"]),
+            "aria-label": C.intl.string(C.t["7Xqzdn"]),
             children: o
           }) : o
         }

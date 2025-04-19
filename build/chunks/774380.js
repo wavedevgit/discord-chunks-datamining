@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(442837),
-  s = n(481060),
-  l = n(98278),
+  l = n(481060),
+  s = n(98278),
   a = n(823188),
   o = n(594174),
   c = n(74538),
@@ -17,20 +17,20 @@ var i = n(442837),
 let g = e => {
     let {
       onOpenPremiumClick: t
-    } = e, n = (0, r.jsx)(s.zxk, {
+    } = e, n = (0, r.jsx)(l.zxk, {
       className: m.tier0Button,
-      color: s.zxk.Colors.BRAND_INVERTED,
+      color: l.zxk.Colors.BRAND_INVERTED,
       onClick: () => {
-        (0, l.z)(), null != t && t()
+        (0, s.z)(), null != t && t()
       },
-      children: u.NW.string(u.t.hvVgAQ)
+      children: u.intl.string(u.t.hvVgAQ)
     });
     return (0, r.jsxs)("div", {
       className: m.tier0Container,
-      children: [(0, r.jsx)(s.X6q, {
+      children: [(0, r.jsx)(l.X6q, {
         className: m.tier0Heading,
         variant: "heading-xxl/extrabold",
-        children: u.NW.string(u.t["qUl+Ky"])
+        children: u.intl.string(u.t["qUl+Ky"])
       }), (0, r.jsx)(a.wp, {
         className: m.tier0Card,
         ctaButton: n,

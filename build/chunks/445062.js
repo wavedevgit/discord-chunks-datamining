@@ -50,7 +50,7 @@ function u(e, t) {
 }
 
 function d(e) {
-  return e ? o.NW.string(o.t.S5anIS) : o.NW.string(o.t.q3O3Jy)
+  return e ? o.intl.string(o.t.S5anIS) : o.intl.string(o.t.q3O3Jy)
 }
 
 function f(e) {

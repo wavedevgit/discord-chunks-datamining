@@ -2,9 +2,9 @@
 "use strict";
 n.d(t, {
   $7: () => X,
-  $e: () => Y,
+  $e: () => W,
   GJ: () => y,
-  Gy: () => A,
+  Gy: () => N,
   RD: () => q,
   RZ: () => x,
   Tj: () => J,
@@ -13,14 +13,14 @@ n.d(t, {
   X0: () => O,
   Yh: () => K,
   Yk: () => z,
-  _A: () => W,
+  _A: () => Y,
   aq: () => S,
   cR: () => V,
   iI: () => B,
   ik: () => R,
   kA: () => L,
   nT: () => Q,
-  pM: () => N,
+  pM: () => A,
   yv: () => H,
   zB: () => Z
 }), n(642613), n(539854);
@@ -92,7 +92,7 @@ function I(e, t) {
 }
 
 function S() {
-  let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : g.NW.string(g.t.gnsna2);
+  let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : g.intl.string(g.t.gnsna2);
   return [{
     rowType: h.aC.EMPTY_STATE,
     colorString: (0, i.Rf)(m.p6O),
@@ -110,16 +110,16 @@ function T(e, t, n, i) {
   return (null == i ? void 0 : i[t]) != null && (o = i[t]), null == o || !r.e$(o.allow, n)
 }
 
-function N(e, t) {
+function A(e, t) {
   return _.default.castGuildIdAsEveryoneGuildRoleId(e) === t
 }
 
-function A(e, t) {
-  return !N(e, t)
+function N(e, t) {
+  return !A(e, t)
 }
 
 function C(e, t) {
-  return !N(e.id, t.id)
+  return !A(e.id, t.id)
 }
 
 function R(e, t, n, r) {
@@ -145,12 +145,12 @@ function D(e, t, n, i, a) {
 
 function L(e, t, n, r, i) {
   let a = [];
-  return 0 === (a = w(e, t, n, r, i).sort(I).map(e => O(e))).length ? S(g.NW.string(g.t.nZfHsb)) : a
+  return 0 === (a = w(e, t, n, r, i).sort(I).map(e => O(e))).length ? S(g.intl.string(g.t.nZfHsb)) : a
 }
 
 function x(e, t, n, i, a) {
   let o = [];
-  return 0 === (o = D(e, t, n, i, a).sort(I).map(e => O(e, r.e$(e.permissions, i)))).length ? S(g.NW.string(g.t.nZfHsb)) : o
+  return 0 === (o = D(e, t, n, i, a).sort(I).map(e => O(e, r.e$(e.permissions, i)))).length ? S(g.intl.string(g.t.nZfHsb)) : o
 }
 
 function M(e, t) {
@@ -203,17 +203,17 @@ function V(e, t, n, r, i) {
 function Z(e, t) {
   switch (e) {
     case h.aC.ROLE:
-      return g.NW.string(g.t.ZxoFOD);
+      return g.intl.string(g.t.ZxoFOD);
     case h.aC.OWNER:
-      return g.NW.string(g.t.NWhYJi);
+      return g.intl.string(g.t.NWhYJi);
     case h.aC.ADMINISTRATOR:
-      return g.NW.string(g.t.dwlcc3);
+      return g.intl.string(g.t.dwlcc3);
     case h.aC.MEMBER:
-      return t ? g.NW.string(g.t.UAJxZm) : null;
+      return t ? g.intl.string(g.t.UAJxZm) : null;
     case h.aC.USER:
-      return g.NW.string(g.t.KD6OJC);
+      return g.intl.string(g.t.KD6OJC);
     case h.aC.GUILD:
-      return g.NW.string(g.t["5qyruL"]);
+      return g.intl.string(g.t["5qyruL"]);
     case h.aC.EMPTY_STATE:
       return null
   }
@@ -222,28 +222,28 @@ function Z(e, t) {
 function H(e) {
   switch (e) {
     case h.aC.ROLE:
-      return g.NW.string(g.t["Gzc/a2"]);
+      return g.intl.string(g.t["Gzc/a2"]);
     case h.aC.OWNER:
-      return g.NW.string(g.t.icuNBA);
+      return g.intl.string(g.t.icuNBA);
     case h.aC.ADMINISTRATOR:
-      return g.NW.string(g.t.eTmN5e);
+      return g.intl.string(g.t.eTmN5e);
     case h.aC.MEMBER:
-      return g.NW.string(g.t["Gzc/a2"]);
+      return g.intl.string(g.t["Gzc/a2"]);
     case h.aC.EMPTY_STATE:
     default:
       return null
   }
 }
 
-function W(e, t, n) {
+function Y(e, t, n) {
   let i = e.permissionOverwrites[e.guild_id];
   null == i && (i = f.we(e.guild_id));
   let a = b({}, i);
   return a.deny = r.Od(a.deny, t), a.allow = r.Od(a.allow, t), n || (a.deny = r.IH(a.deny, t)), a
 }
 
-function Y(e, t, n) {
-  let r = W(e, t, n);
+function W(e, t, n) {
+  let r = Y(e, t, n);
   (0, a.kY)(e, r.id, r.allow, r.deny)
 }
 
@@ -287,11 +287,11 @@ function X(e) {
   switch (e) {
     case m.d4z.GUILD_TEXT:
     case m.d4z.GUILD_ANNOUNCEMENT:
-      return g.NW.format(g.t.ZDtA0d, {});
+      return g.intl.format(g.t.ZDtA0d, {});
     case m.d4z.GUILD_VOICE:
-      return g.NW.format(g.t.iZAMt7, {});
+      return g.intl.format(g.t.iZAMt7, {});
     case m.d4z.GUILD_CATEGORY:
-      return g.NW.format(g.t.PhnARU, {});
+      return g.intl.format(g.t.PhnARU, {});
     default:
       return null
   }

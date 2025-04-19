@@ -30,7 +30,7 @@ function y() {
         height: 16
       }), (0, r.jsx)(a.X6q, {
         variant: "heading-md/semibold",
-        children: b.NW.string(b.t.kj3tz8)
+        children: b.intl.string(b.t.kj3tz8)
       })]
     }), (0, r.jsx)("div", {
       children: (0, r.jsx)(a.M2$, {

@@ -34,8 +34,8 @@ let v = [],
   I = null,
   S = new Set,
   T = l.z.LATEST_ACTIVITY,
-  N = s.z.MATCH_SOME,
-  A = 0,
+  A = s.z.MATCH_SOME,
+  N = 0,
   C = [],
   R = !1,
   P = [],
@@ -73,7 +73,7 @@ function U(e, t) {
 }
 
 function G() {
-  C = [], r = null, I = null, S = new Set, T = l.z.LATEST_ACTIVITY, N = s.z.MATCH_SOME, A = 0, P = [], w = o().chain(v), D = o().chain(v), x.clear(), L.clear()
+  C = [], r = null, I = null, S = new Set, T = l.z.LATEST_ACTIVITY, A = s.z.MATCH_SOME, N = 0, P = [], w = o().chain(v), D = o().chain(v), x.clear(), L.clear()
 }
 
 function B() {
@@ -103,9 +103,9 @@ function V(e) {
       id: t
     } = e;
     return t
-  }), A = 0, R = !0), 0 !== L.size && (P = P.filter(e => !L.has(e)), L.clear()), 0 !== x.size && (P = Array.from(new Set([...P, ...x])), x.clear()), ((null == e ? void 0 : e.refreshThreadIds) || (null == e ? void 0 : e.sortThreadIds)) && (D = o().chain(P).sort(j(l.z.LATEST_ACTIVITY)), w = o().chain(P).sort(j(l.z.CREATION_DATE)));
+  }), N = 0, R = !0), 0 !== L.size && (P = P.filter(e => !L.has(e)), L.clear()), 0 !== x.size && (P = Array.from(new Set([...P, ...x])), x.clear()), ((null == e ? void 0 : e.refreshThreadIds) || (null == e ? void 0 : e.sortThreadIds)) && (D = o().chain(P).sort(j(l.z.LATEST_ACTIVITY)), w = o().chain(P).sort(j(l.z.CREATION_DATE)));
   let n = (T === l.z.LATEST_ACTIVITY ? D : w).value(),
-    i = (C = 0 === S.size ? n : n.filter(U(S, N))).find(e => k(e));
+    i = (C = 0 === S.size ? n : n.filter(U(S, A))).find(e => k(e));
   r = null == i ? null : i
 }
 
@@ -138,16 +138,16 @@ function H(e) {
   }
 }
 
-function W(e) {
+function Y(e) {
   let {
     channel: t,
     isNewlyCreated: n
   } = e;
   if (null == t.parent_id || t.parent_id !== I || !n) return !1;
-  t.ownerId !== _.default.getId() ? A++ : O = t.id
+  t.ownerId !== _.default.getId() ? N++ : O = t.id
 }
 
-function Y(e) {
+function W(e) {
   let {
     channel: t
   } = e;
@@ -187,7 +187,7 @@ class Q extends(i = c.ZP.Store) {
     this.waitFor(p.Z, d.Z, m.Z, h.ZP)
   }
   getNewThreadCount() {
-    return A
+    return N
   }
   getCanAckThreads() {
     return R
@@ -196,8 +196,8 @@ class Q extends(i = c.ZP.Store) {
     let i = e !== I,
       a = !(0, g.OL)(n, S),
       o = t !== T,
-      s = r !== N;
-    return I = e, S = n, T = t, N = r, i ? V({
+      s = r !== A;
+    return I = e, S = n, T = t, A = r, i ? V({
       refreshThreadIds: !0
     }) : o ? V({
       sortThreadIds: !0
@@ -222,9 +222,9 @@ let X = new Q(u.Z, {
   CHANNEL_SELECT: B,
   CHANNEL_DELETE: K,
   THREAD_LIST_SYNC: Z,
-  THREAD_CREATE: W,
+  THREAD_CREATE: Y,
   THREAD_UPDATE: H,
-  THREAD_DELETE: Y,
+  THREAD_DELETE: W,
   RESORT_THREADS: z,
   CHANNEL_ACK: q
 })

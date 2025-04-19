@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(990547),
-  l = n(91192),
+  l = n(990547),
+  a = n(91192),
   o = n(481060),
   s = n(724757),
   c = n(213609),
@@ -21,8 +21,8 @@ function m(e) {
     loadMore: f
   } = e, h = i.useRef(null), g = (0, s.Z)("for-you", h);
   (0, c.Z)({
-    type: a.ImpressionTypes.VIEW,
-    name: a.ImpressionNames.NOTIFICATION_CENTER_LANDING,
+    type: l.ImpressionTypes.VIEW,
+    name: l.ImpressionNames.NOTIFICATION_CENTER_LANDING,
     properties: {
       empty: 0 === n.length
     }
@@ -34,25 +34,25 @@ function m(e) {
     let t = null == (e = h.current) ? void 0 : e.getScrollerState();
     null != t && t.scrollHeight - t.scrollTop - t.offsetHeight < 1500 && f()
   };
-  return t ? 0 === n.length ? (0, r.jsx)(u.v, {}) : (0, r.jsx)(l.bG, {
+  return t ? 0 === n.length ? (0, r.jsx)(u.v, {}) : (0, r.jsx)(a.bG, {
     navigator: g,
-    children: (0, r.jsx)(l.SJ, {
+    children: (0, r.jsx)(a.SJ, {
       children: e => {
         var t, i, {
-            ref: a
+            ref: l
           } = e,
-          l = function(e, t) {
+          a = function(e, t) {
             if (null == e) return {};
             var n, r, i = function(e, t) {
               if (null == e) return {};
               var n, r, i = {},
-                a = Object.keys(e);
-              for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+                l = Object.keys(e);
+              for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
               return i
             }(e, t);
             if (Object.getOwnPropertySymbols) {
-              var a = Object.getOwnPropertySymbols(e);
-              for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+              var l = Object.getOwnPropertySymbols(e);
+              for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
             }
             return i
           }(e, ["ref"]);
@@ -77,9 +77,9 @@ function m(e) {
           className: p.container,
           ref: e => {
             var t;
-            h.current = e, a.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null
+            h.current = e, l.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null
           }
-        }, l), i = i = {
+        }, a), i = i = {
           onScroll: _,
           children: [(0, r.jsx)(d.U, {
             items: n

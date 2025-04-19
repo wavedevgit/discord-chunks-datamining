@@ -1,17 +1,17 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => l
+  Z: () => a
 });
-var r = n(200651);
+var i = n(200651);
 n(192379);
-var i = n(603963),
+var r = n(603963),
   s = n(894939),
-  a = n(726985);
+  l = n(726985);
 
-function l() {
-  return (0, r.jsx)(i.Z, {
-    webSetting: a.s6.VOICE_AND_VIDEO_SOUNDS,
-    children: (0, r.jsx)(s.Z, {
+function a() {
+  return (0, i.jsx)(r.Z, {
+    webSetting: l.s6.VOICE_AND_VIDEO_SOUNDS,
+    children: (0, i.jsx)(s.Z, {
       refreshStyles: !0
     })
   })

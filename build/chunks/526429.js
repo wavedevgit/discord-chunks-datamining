@@ -19,14 +19,14 @@ class O extends(n = o.ZP.Store) {
     let e = c.L3.map(e => p.find(t => t.categoryId === e)).filter(s.lm);
     return [{
       categoryId: c.Hk,
-      name: d.NW.string(d.t.Ym2Ri4)
+      name: d.intl.string(d.t.Ym2Ri4)
     }, ...e]
   }
   getClanDiscoveryCategories() {
     let e = c.L3.map(e => p.find(t => t.categoryId === e)).filter(s.lm);
     return [{
       categoryId: c.Hk,
-      name: d.NW.string(d.t.QToH29)
+      name: d.intl.string(d.t.QToH29)
     }, ...e]
   }
   getAllCategories() {
@@ -36,7 +36,7 @@ class O extends(n = o.ZP.Store) {
     return u
   }
   getCategoryName(e) {
-    return e === c.Hk ? d.NW.string(d.t.Ym2Ri4) : E[e]
+    return e === c.Hk ? d.intl.string(d.t.Ym2Ri4) : E[e]
   }
 }
 a = "GuildDiscoveryCategoryStore", (i = "displayName") in O ? Object.defineProperty(O, i, {

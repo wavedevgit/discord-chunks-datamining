@@ -1,16 +1,16 @@
 /** Chunk was on 48157 **/
 n.d(t, {
-  Z: () => a
+  Z: () => l
 }), n(388685);
 var r = n(192379),
   i = n(393238);
 
-function a() {
+function l() {
   let {
     ref: e,
     width: t
-  } = (0, i.ZP)(), [n, a] = r.useState();
+  } = (0, i.ZP)(), [n, l] = r.useState();
   return r.useEffect(() => {
-    null == n && null != t && a(t)
+    null == n && null != t && l(t)
   }, [n, t]), [e, n]
 }

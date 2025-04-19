@@ -71,11 +71,11 @@ function _(e) {
       children: [(0, r.jsx)(i.X6q, {
         className: s.text,
         variant: "heading-sm/semibold",
-        children: o.NW.string(o.t["YMI+UV"])
+        children: o.intl.string(o.t["YMI+UV"])
       }), (0, r.jsx)(i.Text, {
         className: s.text,
         variant: "text-sm/normal",
-        children: o.NW.string(o.t.BIBwbm)
+        children: o.intl.string(o.t.BIBwbm)
       })]
     }), (0, r.jsx)("div", {
       className: s.buttonContainer,
@@ -83,7 +83,7 @@ function _(e) {
         className: s.ctaButton,
         color: i.zxk.Colors.BRAND_INVERTED,
         onClick: () => n(),
-        children: o.NW.string(o.t.RzWDqa)
+        children: o.intl.string(o.t.RzWDqa)
       })
     }), (0, r.jsx)("div", {
       className: s.pointer

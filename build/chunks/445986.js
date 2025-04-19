@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => x
 }), n(35282), n(539854), n(388685);
 var r = n(200651),
-  a = n(192379),
-  i = n(481060),
+  i = n(192379),
+  a = n(481060),
   l = n(33122),
   s = n(761705),
   o = n(9807),
@@ -50,18 +50,18 @@ function h(e, t) {
 
 function g(e, t) {
   if (null == e) return {};
-  var n, r, a = function(e, t) {
+  var n, r, i = function(e, t) {
     if (null == e) return {};
-    var n, r, a = {},
-      i = Object.keys(e);
-    for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
-    return a
+    var n, r, i = {},
+      a = Object.keys(e);
+    for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    return i
   }(e, t);
   if (Object.getOwnPropertySymbols) {
-    var i = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
-  return a
+  return i
 }
 
 function _(e) {
@@ -71,8 +71,8 @@ let f = e => {
   var {
     index: t,
     items: n
-  } = e, a = g(e, ["index", "items"]);
-  let i = n[t],
+  } = e, i = g(e, ["index", "items"]);
+  let a = n[t],
     l = 0,
     o = [];
   for (let e of n)
@@ -82,33 +82,33 @@ let f = e => {
         height: n,
         src: r
       } = e;
-      e === i && (l = o.length), o.push({
+      e === a && (l = o.length), o.push({
         src: _(r),
         width: t,
         height: n
       })
-    } return (0, r.jsx)(s.Z, h(m({}, a), {
+    } return (0, r.jsx)(s.Z, h(m({}, i), {
     items: o,
     startWith: l
   }))
 };
-class b extends a.Component {
+class b extends i.Component {
   render() {
     let e = this.props,
       {
         pageSize: t
       } = e,
       n = g(e, ["pageSize"]),
-      a = t === c.b.SMALL ? o.Z : l.Z;
-    return (0, r.jsx)(a, h(m({}, n), {
+      i = t === c.b.SMALL ? o.Z : l.Z;
+    return (0, r.jsx)(i, h(m({}, n), {
       onCurrentItemClick: this.handleCurrentItemClick
     }))
   }
   constructor(...e) {
     super(...e), p(this, "handleCurrentItemClick", (e, t) => {
-      e.type !== d.s9s.IMG || (0, i.$sL)() || (0, i.h7j)(e => (0, r.jsx)(i.Y0X, h(m({
-        size: i.CgR.DYNAMIC,
-        "aria-label": u.NW.string(u.t.X4IxWF)
+      e.type !== d.s9s.IMG || (0, a.$sL)() || (0, a.h7j)(e => (0, r.jsx)(a.Y0X, h(m({
+        size: a.CgR.DYNAMIC,
+        "aria-label": u.intl.string(u.t.X4IxWF)
       }, e), {
         children: (0, r.jsx)(f, h(m({}, e), {
           index: t,

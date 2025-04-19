@@ -35,12 +35,12 @@ function h(e) {
     children: [h && (0, r.jsx)(o.xv, {
       variant: "text-sm/semibold",
       color: "header-secondary",
-      children: _.NW.string(_.t["oC/fU1"])
+      children: _.intl.string(_.t["oC/fU1"])
     }), m && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.xv, {
         variant: "text-sm/semibold",
         color: "header-secondary",
-        children: _.NW.string(_.t.HXz5Ag)
+        children: _.intl.string(_.t.HXz5Ag)
       }), (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(o.xv, {
           variant: "text-sm/semibold",
@@ -49,7 +49,7 @@ function h(e) {
         }), (0, r.jsx)(o.xv, {
           variant: "text-sm/semibold",
           color: "header-secondary",
-          children: _.NW.format(_.t.PrtAq6, {
+          children: _.intl.format(_.t.PrtAq6, {
             unignoreHook: (e, n) => (0, r.jsx)(l.eee, {
               onClick: () => c.Z.unignoreUser(t.id, "UserProfileRemediatedNotice"),
               children: e

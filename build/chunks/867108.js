@@ -17,7 +17,7 @@ function p(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : d.pNK.ROLES;
   return (0, i.e7)([c.Z], () => c.Z.canImpersonateRole(e, t)) ? (0, r.jsx)(l.sNh, {
     id: "view-as-role",
-    label: u.NW.string(u.t.arFPfH),
+    label: u.intl.string(u.t.arFPfH),
     icon: l.ZSh,
     action: () => {
       o.Z.close(), (0, a.iD)(e.id, {

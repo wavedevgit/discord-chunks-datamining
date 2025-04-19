@@ -27,8 +27,8 @@ var r = n(200651),
   I = n(31074),
   S = n(206295),
   T = n(91140),
-  N = n(297781),
-  A = n(591853),
+  A = n(297781),
+  N = n(591853),
   C = n(410441),
   R = n(797342),
   P = n(981631),
@@ -87,8 +87,8 @@ let x = {
       primaryColor: V,
       secondaryColor: Z
     } = (0, S.Z)(null == j ? void 0 : j.src), H = (0, o.e7)([_.default], () => _.default.locale), {
-      streamPreviewUrl: W,
-      stream: Y
+      streamPreviewUrl: Y,
+      stream: W
     } = (0, b.Z)(n), {
       displayParticipants: K,
       participant1: z,
@@ -113,18 +113,18 @@ let x = {
       })
     }, [null == j ? void 0 : j.src, t, K, n, H, Q, z, q, V, Z, U]);
     if (null == U) return null;
-    let en = (0, r.jsx)(N.Gk, {
-        location: null == W ? N.Gt.POPOUT : N.Gt.STREAMING_POPOUT,
+    let en = (0, r.jsx)(A.Gk, {
+        location: null == Y ? A.Gt.POPOUT : A.Gt.STREAMING_POPOUT,
         children: T.W.map((e, t) => (0, r.jsx)(e, {
           entry: n
         }, t))
       }),
-      er = null == Y ? (0, r.jsx)(A.wG, {
+      er = null == W ? (0, r.jsx)(N.wG, {
         channel: t,
         headerIcons: null == J ? null : (0, r.jsx)(C.Z, {
           onClick: ee,
           Icon: J,
-          "aria-label": w.NW.string(w.t.YR4cHB)
+          "aria-label": w.intl.string(w.t.YR4cHB)
         }),
         userDescription: (0, y.kr)(n) ? w.t.vPg1JS : w.t.rPqqtr,
         title: B,
@@ -134,32 +134,32 @@ let x = {
         disableGameProfileLinks: p,
         onUserPopoutClosed: M,
         trackRankingItemInteraction: k
-      }) : (0, r.jsx)(A.jL, {
+      }) : (0, r.jsx)(N.jL, {
         channel: t,
         title: n.extra.game_name,
         subtitle: G,
         badges: en,
         userDescription: w.t["6oWFUF"],
         entry: n,
-        stream: Y,
+        stream: W,
         onUserPopoutClosed: M,
         trackRankingItemInteraction: k
       }),
       ei = [(0, l.Z)(F, P.xjy.JOIN) || (0, c.Z)(F) ? (0, r.jsx)(d.Z, {
         activity: F,
         user: U,
-        ButtonComponent: e => (0, r.jsx)(A.Ll, L({
+        ButtonComponent: e => (0, r.jsx)(N.Ll, L({
           IconComponent: s.iWm
         }, e))
       }) : null, (0, u.Z)(F) ? (0, r.jsx)(f.Z, {
         activity: F,
-        ButtonComponent: e => (0, r.jsx)(A.Ll, L({
+        ButtonComponent: e => (0, r.jsx)(N.Ll, L({
           IconComponent: s.tEF
         }, e))
       }) : null].filter(m.lm);
-    return (0, r.jsxs)(A.yR, {
-      children: [er, (0, r.jsx)(A.St, {
-        children: (0, r.jsx)(A.WT, {
+    return (0, r.jsxs)(N.yR, {
+      children: [er, (0, r.jsx)(N.St, {
+        children: (0, r.jsx)(N.WT, {
           onReaction: h,
           onVoiceChannelPreview: D,
           user: U,

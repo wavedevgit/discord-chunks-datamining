@@ -60,7 +60,7 @@ function y(e, t) {
   let {
     disabled: n,
     type: a
-  } = e, [m, E] = (0, d.Iu)(e => [e.activeView, e.pickerId], s.X), y = i.useContext(c.ZP), v = !1, [O, I] = i.useState(!1), S = m === _.X1.STICKER, T = !1, N = i.useCallback(() => {
+  } = e, [m, E] = (0, d.Iu)(e => [e.activeView, e.pickerId], s.X), y = i.useContext(c.ZP), v = !1, [O, I] = i.useState(!1), S = m === _.X1.STICKER, T = !1, A = i.useCallback(() => {
     (0, d.RO)(_.X1.STICKER, a)
   }, [a]);
   i.useEffect(() => {
@@ -79,7 +79,7 @@ function y(e, t) {
     }
   }, [y]);
   let {
-    Component: A,
+    Component: N,
     events: C,
     play: R
   } = (0, l.z)(), P = (0, u.Q3)("ChannelStickerPickerButton");
@@ -94,16 +94,16 @@ function y(e, t) {
       })
     }, C), {
       onClick: () => {
-        N(), R()
+        A(), R()
       },
       isActive: S,
-      "aria-label": p.NW.string(p.t.rZpidX),
+      "aria-label": p.intl.string(p.t.rZpidX),
       "aria-expanded": S,
       "aria-haspopup": "dialog",
       "aria-controls": E,
       sparkle: v,
       notification: T ? f.j.UPDATE : null,
-      children: (0, r.jsx)(A, {
+      children: (0, r.jsx)(N, {
         size: P ? "refresh_sm" : void 0,
         color: "currentColor"
       })

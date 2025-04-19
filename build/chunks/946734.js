@@ -1,6 +1,6 @@
 /** Chunk was on 3656 **/
 n.d(t, {
-  Z: () => I
+  Z: () => P
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -33,7 +33,7 @@ function E(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class N {
+class I {
   updateData(e) {
     let {
       userId: t,
@@ -79,7 +79,7 @@ class N {
         }).filter(y.lm)]
       }).value()
     })), E(this, "renderMoreAvatars", () => (0, r.jsx)(s.DY3, {
-      text: j.NW.string(j.t.UTjREx),
+      text: j.intl.string(j.t.UTjREx),
       position: "bottom",
       children: (0, r.jsx)(s.P3F, {
         className: O.moreAvatars,
@@ -104,7 +104,7 @@ class N {
   }
 }
 
-function I(e) {
+function P(e) {
   let {
     channel: t
   } = e, n = t.getRecipientId(), l = (0, h.gc)(n), o = Array(l.length).fill(null), {
@@ -114,7 +114,7 @@ function I(e) {
       userId: t,
       channelId: n,
       analyticsLocations: r
-    } = e, l = (0, a.e7)([b.default], () => b.default.getUser(t), [t]), [o] = i.useState(() => new N({
+    } = e, l = (0, a.e7)([b.default], () => b.default.getUser(t), [t]), [o] = i.useState(() => new I({
       user: l,
       userId: t,
       channelId: n,
@@ -138,7 +138,7 @@ function I(e) {
     children: [(0, r.jsx)(C.iz, {
       className: O.divider
     }), (0, r.jsx)(s.IGR, {
-      text: j.NW.string(j.t.l1QVfn),
+      text: j.intl.string(j.t.l1QVfn),
       disableColor: !0,
       className: O.akaBadge
     }), l.length > 0 ? (0, r.jsx)(c.Z, {

@@ -23,7 +23,7 @@ n.d(t, {
   RS: () => eh,
   R_: () => eD,
   Rt: () => eB,
-  SE: () => eA,
+  SE: () => eN,
   Sb: () => ev,
   Sh: () => ek,
   T4: () => R,
@@ -43,7 +43,7 @@ n.d(t, {
   cP: () => G,
   co: () => eu,
   d$: () => k,
-  d4: () => A,
+  d4: () => N,
   dN: () => m,
   eR: () => y,
   eo: () => x,
@@ -51,11 +51,11 @@ n.d(t, {
   fq: () => b,
   fv: () => T,
   fz: () => I,
-  gR: () => Y,
+  gR: () => W,
   gw: () => ej,
   h2: () => K,
   hg: () => eU,
-  iG: () => W,
+  iG: () => Y,
   iH: () => eR,
   jU: () => X,
   kJ: () => H,
@@ -144,10 +144,10 @@ let I = (0, u.Zc)("notifications", "reactionNotifications", e => null != e ? e :
     value: !!e
   })),
   T = (0, u.Zc)("notifications", "focusModeExpiresAtMs", e => null != e ? e : "0", e => e),
-  N = [],
-  A = (0, u.Zc)("textAndImages", "emojiPickerCollapsedSections", e => null != e ? e : N, e => e),
-  C = (0, u.Zc)("textAndImages", "stickerPickerCollapsedSections", e => null != e ? e : N, e => e),
-  R = (0, u.Zc)("textAndImages", "soundboardPickerCollapsedSections", e => null != e ? e : N, e => e),
+  A = [],
+  N = (0, u.Zc)("textAndImages", "emojiPickerCollapsedSections", e => null != e ? e : A, e => e),
+  C = (0, u.Zc)("textAndImages", "stickerPickerCollapsedSections", e => null != e ? e : A, e => e),
+  R = (0, u.Zc)("textAndImages", "soundboardPickerCollapsedSections", e => null != e ? e : A, e => e),
   P = (0, u.Zc)("textAndImages", "viewImageDescriptions", e => {
     var t;
     return null != (t = null == e ? void 0 : e.value) && t
@@ -212,8 +212,8 @@ let I = (0, u.Zc)("notifications", "reactionNotifications", e => null != e ? e :
 }, e => a.D5.create({
   value: e
 }));
-let W = (0, u.Zc)("privacy", "defaultGuildsRestricted", e => null != e && e, e => e),
-  Y = (0, u.Zc)("privacy", "defaultGuildsRestrictedV2", e => null == e ? void 0 : e.value, e => a.D5.create({
+let Y = (0, u.Zc)("privacy", "defaultGuildsRestricted", e => null != e && e, e => e),
+  W = (0, u.Zc)("privacy", "defaultGuildsRestrictedV2", e => null == e ? void 0 : e.value, e => a.D5.create({
     value: e
   })),
   K = (0, u.Zc)("privacy", "restrictedGuildIds", e => null != e ? e : [], e => e);
@@ -437,8 +437,8 @@ let ev = (0, u.KM)((0, u.Zc)("appearance", "developerMode", e => null != e && e,
     var e;
     return null == (e = d.Z.getOverride("animateStickers")) ? void 0 : e.value
   })),
-  eN = [],
-  eA = (0, u.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eN, e => e),
+  eA = [],
+  eN = (0, u.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eA, e => e),
   eC = [],
   eR = (0, u.Zc)("privacy", "activityJoiningRestrictedGuildIds", e => null != e ? e : eC, e => e),
   eP = (0, u.TG)({

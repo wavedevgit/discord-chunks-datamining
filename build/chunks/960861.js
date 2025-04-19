@@ -38,8 +38,8 @@ var O = function(e) {
 let I = !1,
   S = 0,
   T = 0,
-  N = !1,
-  A = {};
+  A = !1,
+  N = {};
 
 function C() {
   return d.Z.supports(b.AN.NATIVE_SCREENSHARE_PICKER)
@@ -51,9 +51,9 @@ function R() {
 
 function P() {
   let e = R() && (T > 0 || I && 0 === S);
-  if (e !== N) {
+  if (e !== A) {
     var t, n;
-    N = e, null == (n = d.Z.getMediaEngine()) || null == (t = n.setNativeDesktopVideoSourcePickerActive) || t.call(n, N)
+    A = e, null == (n = d.Z.getMediaEngine()) || null == (t = n.setNativeDesktopVideoSourcePickerActive) || t.call(n, A)
   }
 }
 
@@ -86,8 +86,8 @@ function k() {
   var e;
   return {
     sourceId: "prepicked:0",
-    nativePickerStyleUsed: A.lastPresentedPickerStyle,
-    sourceName: null != (e = x()) ? e : y.NW.string(y.t["KKcy9/"])
+    nativePickerStyleUsed: N.lastPresentedPickerStyle,
+    sourceName: null != (e = x()) ? e : y.intl.string(y.t["KKcy9/"])
   }
 }
 class j extends(i = o.ZP.Store) {
@@ -104,7 +104,7 @@ class j extends(i = o.ZP.Store) {
     (0, E.t)()
   }
   getPickerState() {
-    return A
+    return N
   }
   getLastPickedContent() {
     return r
@@ -125,7 +125,7 @@ function U(e) {
     existing: t,
     content: n
   } = e;
-  if (A = {
+  if (N = {
       lastPickerAction: 1
     }, r = n, 0 === S && !t) {
     let e = c.Z.getChannel(_.Z.getVoiceChannelId());
@@ -134,7 +134,7 @@ function U(e) {
 }
 
 function G() {
-  A = {
+  N = {
     lastPickerAction: 2
   }
 }
@@ -143,7 +143,7 @@ function B(e) {
   let {
     error: t
   } = e;
-  A = {
+  N = {
     lastPickerAction: 3,
     lastPickerError: t
   }
@@ -153,14 +153,14 @@ function F(e) {
   let {
     style: t
   } = e;
-  A = {
+  N = {
     lastPickerAction: 0,
     lastPresentedPickerStyle: t
   }
 }
 
 function V() {
-  A = {}
+  N = {}
 }
 v(j, "displayName", "NativeScreenSharePickerStore");
 let Z = new j(s.Z, {

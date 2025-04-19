@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  s = n(399606),
-  l = n(852860),
+  l = n(399606),
+  s = n(852860),
   a = n(999382),
   o = n(8426),
   c = n(969632),
@@ -15,20 +15,20 @@ var r = n(200651),
 function u(e) {
   let {
     guildId: t
-  } = e, n = (0, s.e7)([c.Z], () => c.Z.getSettings()), a = (0, s.e7)([c.Z], () => c.Z.getSubmitting()), u = i.useCallback(() => {
+  } = e, n = (0, l.e7)([c.Z], () => c.Z.getSettings()), a = (0, l.e7)([c.Z], () => c.Z.getSubmitting()), u = i.useCallback(() => {
     try {
       (0, o.oo)(t, n)
     } catch (e) {}
   }, [t, n]);
-  return (0, r.jsx)(l.Z, {
+  return (0, r.jsx)(s.Z, {
     onSave: u,
     onReset: o.bj,
     submitting: a,
-    onSaveText: d.NW.string(d.t.R3BPHx)
+    onSaveText: d.intl.string(d.t.R3BPHx)
   })
 }
 let m = function() {
-  let e = (0, s.e7)([a.Z], () => a.Z.getGuild());
+  let e = (0, l.e7)([a.Z], () => a.Z.getGuild());
   return null == e ? null : (0, r.jsx)(u, {
     guildId: e.id
   })

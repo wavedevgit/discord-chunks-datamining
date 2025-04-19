@@ -2,12 +2,12 @@
 n.d(t, {
   Z: () => m
 });
-var r = n(200651);
+var i = n(200651);
 n(192379);
-var i = n(873546),
+var r = n(873546),
   s = n(481060),
-  a = n(270237),
-  l = n(584825),
+  l = n(270237),
+  a = n(584825),
   o = n(892729),
   c = n(949914),
   d = n(388032),
@@ -17,30 +17,30 @@ let m = e => {
     onGoBack: t
   } = e, n = (0, o.Z)(), {
     loading: m
-  } = (0, l.sp)(n);
-  return ((0, a.Z)(i.tq ? "role-subscriptions-user-setting" : void 0), m) ? (0, r.jsx)(s.$jN, {}) : 0 === n.length ? null : (0, r.jsxs)("div", {
+  } = (0, a.sp)(n);
+  return ((0, l.Z)(r.tq ? "role-subscriptions-user-setting" : void 0), m) ? (0, i.jsx)(s.$jN, {}) : 0 === n.length ? null : (0, i.jsxs)("div", {
     className: u.__invalid_container,
-    children: [(0, r.jsxs)(s.zxk, {
+    children: [(0, i.jsxs)(s.zxk, {
       look: s.zxk.Looks.BLANK,
       innerClassName: u.backButtonContents,
       onClick: t,
-      children: [(0, r.jsx)(s.ZSh, {
+      children: [(0, i.jsx)(s.ZSh, {
         size: "md",
         color: "currentColor",
         className: u.arrowIcon
-      }), d.NW.string(d.t.hqyhKS)]
-    }), (0, r.jsx)(s.LZC, {
+      }), d.intl.string(d.t.hqyhKS)]
+    }), (0, i.jsx)(s.LZC, {
       size: 10
-    }), (0, r.jsx)(s.vwX, {
+    }), (0, i.jsx)(s.vwX, {
       tag: "h1",
-      children: d.NW.string(d.t["KzCF//"])
-    }), (0, r.jsx)(s.Text, {
+      children: d.intl.string(d.t["KzCF//"])
+    }), (0, i.jsx)(s.Text, {
       variant: "text-sm/normal",
       className: u.pageDescription,
-      children: d.NW.string(d.t["Y+ucR0"])
-    }), (0, r.jsx)("div", {
+      children: d.intl.string(d.t["Y+ucR0"])
+    }), (0, i.jsx)("div", {
       className: u.subscriptionsContainer,
-      children: n.map(e => (0, r.jsx)(c.Z, {
+      children: n.map(e => (0, i.jsx)(c.Z, {
         subscription: e
       }, e.id))
     })]

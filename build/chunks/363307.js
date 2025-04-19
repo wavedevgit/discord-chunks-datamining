@@ -1,6 +1,6 @@
 /** Chunk was on 67544 **/
 n.d(t, {
-  Z: () => N
+  Z: () => v
 }), n(388685);
 var r = n(200651),
   s = n(192379),
@@ -37,61 +37,61 @@ function h(e) {
   return e
 }
 let x = () => [{
-  title: b.NW.string(g.Z.edfgq6),
+  title: b.intl.string(g.default.edfgq6),
   color: c.Z.BUTTON_POSITIVE_BACKGROUND,
-  primaryButtonCTA: b.NW.string(b.t.BddRzc),
-  secondaryButtonCTA: b.NW.string(b.t.f3Pet7),
+  primaryButtonCTA: b.intl.string(b.t.BddRzc),
+  secondaryButtonCTA: b.intl.string(b.t.f3Pet7),
   primaryButtonPoints: 1e3,
   secondaryButtonPoints: 500,
   closeButtonPoints: 200
 }, {
-  title: b.NW.string(g.Z.isjTh4),
+  title: b.intl.string(g.default.isjTh4),
   color: c.Z.BUTTON_DANGER_BACKGROUND,
   closeButtonPoints: 200
 }, {
-  title: b.NW.string(g.Z["1aOLws"]),
+  title: b.intl.string(g.default["1aOLws"]),
   color: c.Z.BG_BRAND,
-  primaryButtonCTA: b.NW.string(b.t["+TBKLy"]),
+  primaryButtonCTA: b.intl.string(b.t["+TBKLy"]),
   primaryButtonPoints: -1e3,
   closeButtonPoints: 200
 }, {
-  title: b.NW.string(g.Z.M3lUXV),
+  title: b.intl.string(g.default.M3lUXV),
   color: c.Z.BG_BRAND,
-  primaryButtonCTA: b.NW.string(b.t.f3Pet7),
+  primaryButtonCTA: b.intl.string(b.t.f3Pet7),
   primaryButtonPoints: 700,
   closeButtonPoints: 200
 }, {
-  title: b.NW.string(g.Z.StUVd3),
+  title: b.intl.string(g.default.StUVd3),
   color: c.Z.BUTTON_POSITIVE_BACKGROUND,
-  primaryButtonCTA: b.NW.string(b.t["3xjX0d"]),
+  primaryButtonCTA: b.intl.string(b.t["3xjX0d"]),
   primaryButtonPoints: 2e3,
   closeButtonPoints: 200
 }, {
-  title: b.NW.string(g.Z.vHm2PD),
+  title: b.intl.string(g.default.vHm2PD),
   color: c.Z.BUTTON_POSITIVE_BACKGROUND,
-  primaryButtonCTA: b.NW.string(g.Z.ZOqU29),
+  primaryButtonCTA: b.intl.string(g.default.ZOqU29),
   primaryButtonPoints: 1e3,
   closeButtonPoints: 200
 }, {
-  title: b.NW.string(g.Z.vNywt7),
+  title: b.intl.string(g.default.vNywt7),
   color: c.Z.BUTTON_DANGER_BACKGROUND,
-  primaryButtonCTA: b.NW.string(b.t["9iFR6+"]),
+  primaryButtonCTA: b.intl.string(b.t["9iFR6+"]),
   primaryButtonPoints: -200,
   closeButtonPoints: 200
 }];
 
-function N(e) {
+function v(e) {
   let {
     isPaused: t
-  } = e, n = (0, s.useRef)(null), [c, g] = (0, s.useState)((0, o.sample)(x())), [b, N] = (0, s.useState)({}), [v, O] = (0, s.useState)({
+  } = e, n = (0, s.useRef)(null), [c, g] = (0, s.useState)((0, o.sample)(x())), [b, v] = (0, s.useState)({}), [O, j] = (0, s.useState)({
     x: 0,
     y: 0
-  }), j = (e, t) => {
+  }), N = (e, t) => {
     var n, r;
-    O({
+    j({
       x: e.clientX,
       y: e.clientY
-    }), N((n = h({}, b), r = r = {
+    }), v((n = h({}, b), r = r = {
       [(0, a.Z)()]: t
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var n = Object.keys(e);
@@ -125,7 +125,7 @@ function N(e) {
           color: i.zxk.Colors.WHITE,
           onClick: t => {
             var r;
-            j(t, c.primaryButtonPoints), null == (r = n.current) || r.removeDrop(e), g((0, o.sample)(x()))
+            N(t, c.primaryButtonPoints), null == (r = n.current) || r.removeDrop(e), g((0, o.sample)(x()))
           },
           children: c.primaryButtonCTA
         }), (null == c ? void 0 : c.secondaryButtonCTA) != null && (0, r.jsx)(d.Z, {
@@ -134,7 +134,7 @@ function N(e) {
           color: i.zxk.Colors.WHITE,
           onClick: t => {
             var r;
-            j(t, c.secondaryButtonPoints), null == (r = n.current) || r.removeDrop(e), g((0, o.sample)(x()))
+            N(t, c.secondaryButtonPoints), null == (r = n.current) || r.removeDrop(e), g((0, o.sample)(x()))
           },
           children: c.secondaryButtonCTA
         }), null != c && (0, r.jsx)(u.Z, {
@@ -144,7 +144,7 @@ function N(e) {
           },
           onClick: t => {
             var r;
-            j(t, c.closeButtonPoints), null == (r = n.current) || r.removeDrop(e), g((0, o.sample)(x()))
+            N(t, c.closeButtonPoints), null == (r = n.current) || r.removeDrop(e), g((0, o.sample)(x()))
           },
           children: (0, r.jsx)(i.Dio, {
             size: "md",
@@ -155,12 +155,12 @@ function N(e) {
     }), (0, r.jsx)(f.Z, {
       renderedPoints: b,
       onRemovePoint: e => {
-        N(t => {
+        v(t => {
           let n = h({}, t);
           return delete n[e], n
         })
       },
-      offset: v,
+      offset: O,
       fullWidth: !1
     })]
   })

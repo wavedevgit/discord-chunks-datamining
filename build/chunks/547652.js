@@ -9,8 +9,8 @@ var r = n(200651),
   a = n(442837),
   c = n(481060),
   u = n(668781),
-  s = n(239091),
-  l = n(883385),
+  l = n(239091),
+  s = n(883385),
   d = n(108843),
   f = n(100527),
   b = n(299206),
@@ -22,10 +22,10 @@ var r = n(200651),
   v = n(710111),
   h = n(981631),
   m = n(388032);
-let j = (0, d.Z)((0, l.Z)(function(e) {
+let j = (0, d.Z)((0, s.Z)(function(e) {
   let {
     soundGuild: t,
-    sound: l,
+    sound: s,
     activeCallGuildId: d,
     onSelect: f
   } = e, h = function(e, t) {
@@ -76,10 +76,10 @@ let j = (0, d.Z)((0, l.Z)(function(e) {
     }, [t, e]);
     return i ? (0, r.jsx)(c.sNh, {
       id: "edit-soundboard-sound",
-      label: m.NW.string(m.t.ponZcH),
+      label: m.intl.string(m.t.ponZcH),
       action: u
     }, "edit-soundboard-sound") : null
-  }(l, t), j = function(e) {
+  }(s, t), j = function(e) {
     let {
       soundId: t
     } = e, n = o.useCallback(async () => {
@@ -102,28 +102,28 @@ let j = (0, d.Z)((0, l.Z)(function(e) {
         y.isPlatformEmbedded ? await w.ZP.saveFile(e, a) : (0, i.saveAs)(r, a)
       } catch (e) {
         u.Z.show({
-          title: m.NW.string(m.t.mK3tDA),
-          body: m.NW.string(m.t.jLlfDA),
-          confirmText: m.NW.string(m.t.BddRzc)
+          title: m.intl.string(m.t.mK3tDA),
+          body: m.intl.string(m.t.jLlfDA),
+          confirmText: m.intl.string(m.t.BddRzc)
         })
       }
     }, [t]);
     return e.guildId === v.X8 ? null : (0, r.jsx)(c.sNh, {
       id: "download-soundboard-sound",
-      label: m.NW.string(m.t["/fzLLC"]),
+      label: m.intl.string(m.t["/fzLLC"]),
       action: n
     }, "download-soundboard-sound")
-  }(l), S = (0, g.Z)(l, d), N = (0, b.Z)({
-    id: l.soundId,
-    label: m.NW.string(m.t.HJikXl)
+  }(s), S = (0, g.Z)(s, d), P = (0, b.Z)({
+    id: s.soundId,
+    label: m.intl.string(m.t.HJikXl)
   });
   return (0, r.jsx)(c.v2r, {
     navId: "sound-button-context",
-    onClose: s.Zy,
-    "aria-label": m.NW.string(m.t.liqwPD),
+    onClose: l.Zy,
+    "aria-label": m.intl.string(m.t.liqwPD),
     onSelect: f,
     children: (0, r.jsxs)(c.kSQ, {
-      children: [h, S, j, N]
+      children: [h, S, j, P]
     })
   })
 }, {

@@ -26,8 +26,8 @@ var r = n(200651),
   I = n(271668),
   S = n(404295),
   T = n(326133),
-  N = n(405701),
-  A = n(570220),
+  A = n(405701),
+  N = n(570220),
   C = n(540059),
   R = n(28546),
   P = n(805680),
@@ -45,8 +45,8 @@ var r = n(200651),
   V = n(665906),
   Z = n(695346),
   H = n(271383),
-  W = n(496675),
-  Y = n(944486),
+  Y = n(496675),
+  W = n(944486),
   K = n(398327),
   z = n(117530),
   q = n(594174),
@@ -112,7 +112,7 @@ function eb(e, t) {
 let ey = 450;
 
 function ev(e) {
-  return e !== Y.Z.getChannelId()
+  return e !== W.Z.getChannelId()
 }
 
 function eO(e, t) {
@@ -183,7 +183,7 @@ function eT(e) {
   }, [e])
 }
 
-function eN(e) {
+function eA(e) {
   let {
     editorRef: t,
     disabled: n,
@@ -209,7 +209,7 @@ function eN(e) {
   }, [n, r, a, o.drafts.type, t, l, s])
 }
 
-function eA(e, t) {
+function eN(e, t) {
   return i.useCallback((n, r, i) => {
     let a = e.current;
     null != n && null != a && (Q.default.track(ef.rMx.SOUNDMOJI_SELECT, {
@@ -301,10 +301,10 @@ function eL(e, t, n, r) {
       let n = q.default.getCurrentUser();
       return null != (t = null != i && null != n ? null == (e = H.ZP.getMember(i, n.id)) ? void 0 : e.isPending : null) && t
     }),
-    s = (0, _.cj)([W.Z], () => {
+    s = (0, _.cj)([Y.Z], () => {
       var i, a;
       let s = e.isPrivate(),
-        l = W.Z.computePermissions(e),
+        l = Y.Z.computePermissions(e),
         c = f.e$(l, ef.Plq.CREATE_PUBLIC_THREADS) || f.e$(l, ef.Plq.CREATE_PRIVATE_THREADS),
         u = (!(null == (i = t.permissions) ? void 0 : i.requireCreateTherads) || c) && (!(null == (a = t.permissions) ? void 0 : a.requireSendMessages) || f.e$(l, ef.Plq.SEND_MESSAGES)),
         d = u && f.e$(l, ef.Plq.ATTACH_FILES),
@@ -376,8 +376,8 @@ function ej(e, t) {
     textValue: F,
     richValue: V,
     className: H,
-    innerClassName: W,
-    editorClassName: Y,
+    innerClassName: Y,
+    editorClassName: W,
     id: z,
     required: q,
     disabled: Q,
@@ -399,8 +399,8 @@ function ej(e, t) {
     onKeyDown: eV,
     onSubmit: eZ,
     promptToUpload: eH,
-    highlighted: eW,
-    canMentionRoles: eY,
+    highlighted: eY,
+    canMentionRoles: eW,
     canMentionChannels: eK,
     maxCharacterCount: ez,
     showRemainingCharsAfterCount: eq,
@@ -455,13 +455,13 @@ function ej(e, t) {
     isSubmitButtonEnabled: E.Z.isSubmitButtonEnabled
   })), tS = (0, _.e7)([K.Z], () => K.Z.isEnabled()), tT = i.useRef(F);
   tT.current = F;
-  let tN = i.useCallback((e, t, n) => {
+  let tA = i.useCallback((e, t, n) => {
     var r;
     t === e_.GI && "" === tT.current && (null == (r = ep.commands) ? void 0 : r.enabled) && (null == e6 || e6()), null == eU || eU(e, t, n)
   }, [eU, e6, null == (a = ep.commands) ? void 0 : a.enabled]);
   eC(ep, tp);
   let {
-    eventEmitter: tA,
+    eventEmitter: tN,
     handleEditorSelectionChanged: tC
   } = eR(tr, F, V), {
     submitting: tR,
@@ -471,14 +471,14 @@ function ej(e, t) {
     autocompleteRef: tD,
     handleMaybeShowAutocomplete: tL,
     handleHideAutocomplete: tx
-  } = eP(), tM = eS(tP, ep, tr), tk = eT(tr), tj = eN({
+  } = eP(), tM = eS(tP, ep, tr), tk = eT(tr), tj = eA({
     editorRef: tr,
     disabled: tp,
     textValue: F,
     channelId: ea.id,
     chatInputType: ep,
     submit: eZ
-  }), tU = eA(tr, ea), tG = i.useCallback(() => {
+  }), tU = eN(tr, ea), tG = i.useCallback(() => {
     var e;
     return null == ta || null == (e = ta.current) ? void 0 : e.hide()
   }, []), {
@@ -489,12 +489,12 @@ function ej(e, t) {
     handleEnter: tZ,
     handleMoveSelection: tH
   } = eM(tD, tn, ty), {
-    expressionPickerView: tW,
-    shouldHideExpressionPicker: tY,
+    expressionPickerView: tY,
+    shouldHideExpressionPicker: tW,
     handleAutocompleteVisibilityChange: tK,
     handleOuterClick: tz
-  } = ex(ep, tA, tr);
-  (0, ee.S)(tA, ea.guild_id, ea.id);
+  } = ex(ep, tN, tr);
+  (0, ee.S)(tN, ea.guild_id, ea.id);
   let tq = null != ej,
     tQ = tp && !((tf || t_) && tg) || tR && (null == (s = ep.submit) ? void 0 : s.useDisabledStylesOnSubmit),
     tX = null;
@@ -553,8 +553,8 @@ function ej(e, t) {
         children: [nt, ne]
       })]
     }) : null;
-  return (0, r.jsx)(A.f6, {
-    value: tA,
+  return (0, r.jsx)(N.f6, {
+    value: tN,
     children: (0, r.jsxs)(y.Gt, {
       value: e7,
       children: [t$ && tE ? (0, r.jsx)(ed.Z, {
@@ -571,7 +571,7 @@ function ej(e, t) {
         className: o()(H, {
           [eh.channelTextArea]: !0,
           [eh.channelTextAreaDisabled]: tQ,
-          [eh.highlighted]: eW,
+          [eh.highlighted]: eY,
           [eh.textAreaMobileThemed]: d.tq,
           [eh.inlineContainer]: t6,
           [eh.flushContainer]: t8
@@ -581,7 +581,7 @@ function ej(e, t) {
         }), (0, r.jsxs)("div", {
           ref: ti,
           onScroll: tG,
-          className: o()(W, {
+          className: o()(Y, {
             [eh.scrollableContainer]: !0,
             [eh.themedBackground]: !e3,
             [eh.hasStackedBar]: t1.stacked.length > 0
@@ -624,7 +624,7 @@ function ej(e, t) {
                 maxCharacterCount: null != ez ? ez : tv,
                 allowNewLines: eQ,
                 "aria-describedby": eJ,
-                onChange: tN,
+                onChange: tA,
                 onResize: tF,
                 onBlur: eB,
                 onFocus: eF,
@@ -644,12 +644,12 @@ function ej(e, t) {
                   [eh.textAreaThreadCreation]: ep === et.Ie.THREAD_CREATION,
                   [eh.profileBioInput]: ep === et.Ie.PROFILE_BIO_INPUT,
                   [eh.overlayInlineReply]: ep === et.Ie.OVERLAY_INLINE_REPLY
-                }, Y),
+                }, W),
                 "aria-labelledby": e$
               })
             }), e9 ? (0, r.jsxs)("div", {
               className: eh.rightAccessories,
-              children: [t4 ? (0, r.jsx)(N.Z, {
+              children: [t4 ? (0, r.jsx)(A.Z, {
                 channel: ea
               }) : null, null != (x = null == ev ? void 0 : ev()) ? x : null, (null == (l = ep.submit) ? void 0 : l.button) != null && ((null == (u = ep.submit) ? void 0 : u.ignorePreference) || tO) ? (0, r.jsx)(er.Z, {
                 onClick: tw,
@@ -664,7 +664,7 @@ function ej(e, t) {
         }), (0, r.jsx)(T.Z, {
           ref: tD,
           channel: ea,
-          canMentionRoles: eY,
+          canMentionRoles: eW,
           canMentionChannels: eK,
           useNewSlashCommands: tb,
           canOnlyUseTextCommands: tq,
@@ -672,7 +672,7 @@ function ej(e, t) {
           canSendSoundmoji: null == (h = ep.soundmoji) ? void 0 : h.allowSending,
           textValue: F,
           focused: em,
-          expressionPickerView: tW,
+          expressionPickerView: tY,
           type: ep,
           targetRef: tt,
           editorRef: tr,
@@ -680,7 +680,7 @@ function ej(e, t) {
           onSendSticker: tj,
           onVisibilityChange: tK,
           editorHeight: tB,
-          setValue: (e, t) => null == tN ? void 0 : tN(null, e, t),
+          setValue: (e, t) => null == tA ? void 0 : tA(null, e, t),
           position: e1
         }), (0, r.jsx)(k.Z, {
           textValue: F,
@@ -694,7 +694,7 @@ function ej(e, t) {
           submitButtonVisible: (null == (v = ep.submit) ? void 0 : v.button) && (null != (j = null == (R = ep.submit) ? void 0 : R.ignorePreference) ? j : tO),
           stickerIconVisible: null != (G = null == (w = ep.stickers) ? void 0 : w.button) && G && !(to && null != (B = null == (L = ep.confetti) ? void 0 : L.button) && B)
         }) : null, e2]
-      }), tY ? null : (0, r.jsx)(P.Z, {
+      }), tW ? null : (0, r.jsx)(P.Z, {
         positionTargetRef: tt,
         type: ep,
         onSelectGIF: tM,

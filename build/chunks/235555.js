@@ -87,7 +87,7 @@ class E extends i.PureComponent {
       } = this.props;
       return (0, r.jsx)(c.Z, {
         party: e,
-        header: b.NW.formatToPlainString(b.t.I9et19, {
+        header: b.intl.formatToPlainString(b.t.I9et19, {
           count: e.length
         })
       })

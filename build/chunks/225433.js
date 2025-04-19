@@ -23,7 +23,7 @@ function h(e) {
     look: h = c.DEFAULT
   } = e;
   return (0, n.jsx)(o.P3F, {
-    "aria-label": null != i ? i : l.NW.string(l.t.N86XcH),
+    "aria-label": null != i ? i : l.intl.string(l.t.N86XcH),
     className: s()(a.button, h, t),
     onClick: r
   })

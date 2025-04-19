@@ -32,11 +32,11 @@ function j(e) {
     iframeUrl: x
   } = (0, f.b8)(e), {
     width: I,
-    height: N
-  } = (0, u.Z)(), M = o.useMemo(() => {
-    let e = Math.min((N - g - 2 * v) * 16 / 9, m);
+    height: M
+  } = (0, u.Z)(), N = o.useMemo(() => {
+    let e = Math.min((M - g - 2 * v) * 16 / 9, m);
     return Math.max(h, Math.min(I - 2 * v, e))
-  }, [I, N]);
+  }, [I, M]);
   return (0, r.jsx)(i.Y0X, (n = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -59,7 +59,7 @@ function j(e) {
     className: O.root,
     children: (0, r.jsxs)("div", {
       style: {
-        width: M
+        width: N
       },
       children: [(0, r.jsxs)(i.xBx, {
         separator: !1,
@@ -91,7 +91,7 @@ function j(e) {
           className: O.closeButtonContainer,
           look: i.zxk.Looks.BLANK,
           size: i.zxk.Sizes.NONE,
-          "aria-label": p.NW.string(p.t.WAI6xs),
+          "aria-label": p.intl.string(p.t.WAI6xs),
           children: (0, r.jsx)(i.Dio, {
             size: "md",
             color: "currentColor",

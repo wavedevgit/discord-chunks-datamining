@@ -39,7 +39,7 @@ function s(e) {
 
 function d() {
   return (0, r.jsx)(s, {
-    label: u.NW.string(u.t["I+02Gh"]),
+    label: u.intl.string(u.t["I+02Gh"]),
     backgroundColor: "#207B8D",
     icon: i.T$Z
   })
@@ -47,7 +47,7 @@ function d() {
 
 function p() {
   return (0, r.jsx)(s, {
-    label: u.NW.string(u.t.TgsPaG),
+    label: u.intl.string(u.t.TgsPaG),
     icon: i.vdY,
     iconColor: (0, l.Lq)(a.Ilk.PRIMARY_330)
   })

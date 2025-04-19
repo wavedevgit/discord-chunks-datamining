@@ -22,14 +22,14 @@ let _ = e => {
     let {
       handleTransition: t,
       featuredBlockRecord: n
-    } = e, a = b.Z.getCategory(o.T.ROBERT), u = (0, p.c)("CollectiblesFeedShop") && null != a, d = (0, c.H)("CollectiblesFeedShop"), _ = b.Z.getCategory(o.T.ANIME_V2), C = l.useMemo(() => h.NW.string(new Date > g.gJ ? h.t.l0CjbW : h.t.uPewb2), []);
+    } = e, a = b.Z.getCategory(o.T.ROBERT), u = (0, p.c)("CollectiblesFeedShop") && null != a, d = (0, c.H)("CollectiblesFeedShop"), _ = b.Z.getCategory(o.T.ANIME_V2), C = l.useMemo(() => h.intl.string(new Date > g.gJ ? h.t.l0CjbW : h.t.uPewb2), []);
     return (0, r.jsx)("div", {
       className: i()(m.col2, m.centeredSection),
       children: null == n ? void 0 : n.subblocks.map((e, n) => {
         if (e.type === s.O.CATEGORY) {
-          let l = null != e.unpublishedAt ? h.NW.string(h.t["h/uBCQ"]) : "1341506445245415424" === e.categoryStoreListingId ? h.NW.string(h.t.PsL3bW) : e.categoryStoreListingId === (null == _ ? void 0 : _.storeListingId) ? h.NW.string(h.t["o/oRJC"]) : void 0,
+          let l = null != e.unpublishedAt ? h.intl.string(h.t["h/uBCQ"]) : "1341506445245415424" === e.categoryStoreListingId ? h.intl.string(h.t.PsL3bW) : e.categoryStoreListingId === (null == _ ? void 0 : _.storeListingId) ? h.intl.string(h.t["o/oRJC"]) : void 0,
             i = u && e.categoryStoreListingId === (null == a ? void 0 : a.storeListingId) ? C : l,
-            o = 0 === n ? d ? h.NW.string(h.t["x41/V1"]) : l : i;
+            o = 0 === n ? d ? h.intl.string(h.t["x41/V1"]) : l : i;
           return (0, r.jsx)(f.q, {
             subblock: e,
             badgeText: o,
@@ -46,7 +46,7 @@ let _ = e => {
       categories: n
     } = e, l = (0, p.c)("CollectiblesFeedShop") && null != b.Z.getCategory(o.T.ROBERT);
     if (null == n || n.length < 2) return u.Z.captureMessage("Collectible Featured Block requires at least 2 categories"), null;
-    let [a, s] = n, c = (null == a ? void 0 : a.unpublishedAt) != null ? h.NW.string(h.t["h/uBCQ"]) : void 0, _ = h.NW.string(new Date > g.gJ ? h.t.l0CjbW : h.t.uPewb2), C = l ? _ : h.NW.string(h.t["o/oRJC"]);
+    let [a, s] = n, c = (null == a ? void 0 : a.unpublishedAt) != null ? h.intl.string(h.t["h/uBCQ"]) : void 0, _ = h.intl.string(new Date > g.gJ ? h.t.l0CjbW : h.t.uPewb2), C = l ? _ : h.intl.string(h.t["o/oRJC"]);
     return (0, r.jsx)("div", {
       className: i()(m.col2, m.centeredSection),
       children: (0, r.jsxs)(d.k0, {

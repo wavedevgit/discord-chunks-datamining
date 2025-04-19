@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  c = n(239091),
-  l = n(410575),
+  l = n(239091),
+  c = n(410575),
   o = n(108843),
   a = n(100527),
   s = n(299206),
@@ -23,15 +23,15 @@ let p = (0, o.Z)(function(e) {
     userId: t.id
   }), p = (0, s.Z)({
     id: t.id,
-    label: b.NW.string(b.t["/AXYnJ"])
+    label: b.intl.string(b.t["/AXYnJ"])
   }), O = (0, u.Z)(t.id), h = t.isNonUserBot();
-  return (0, r.jsx)(l.Z, {
+  return (0, r.jsx)(c.Z, {
     context: n,
     object: f.qAy.CONTEXT_MENU,
     children: (0, r.jsxs)(i.v2r, {
       navId: "user-context",
-      onClose: c.Zy,
-      "aria-label": b.NW.string(b.t.liqwPD),
+      onClose: l.Zy,
+      "aria-label": b.intl.string(b.t.liqwPD),
       onSelect: o,
       children: [(0, r.jsxs)(i.kSQ, {
         children: [!h && a, !h && O]

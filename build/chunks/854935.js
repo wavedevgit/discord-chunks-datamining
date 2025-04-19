@@ -1,6 +1,6 @@
 /** Chunk was on 3656 **/
 n.d(t, {
-  Z: () => S
+  Z: () => Z
 });
 var r = n(200651);
 n(192379);
@@ -26,16 +26,16 @@ var i = n(442837),
   j = n(530),
   O = n(827313),
   E = n(228168),
-  N = n(981631),
-  I = n(388032),
-  P = n(420890);
+  I = n(981631),
+  P = n(388032),
+  S = n(420890);
 
-function S(e) {
+function Z(e) {
   let {
     user: t,
     currentUser: n,
-    displayProfile: S,
-    channel: Z,
+    displayProfile: Z,
+    channel: N,
     isHovering: T,
     onOpenProfile: A
   } = e, {
@@ -51,15 +51,15 @@ function S(e) {
     return null == (e = d.Z.getUserProfile(t.id)) ? void 0 : e.application
   });
   return (0, r.jsxs)("div", {
-    className: P.body,
+    className: S.body,
     children: [(0, r.jsx)(j.Z, {
       user: t,
       profileType: E.y0.PANEL,
-      nickname: u.ZP.getName(null, Z.id, t),
-      pronouns: null == S ? void 0 : S.pronouns,
+      nickname: u.ZP.getName(null, N.id, t),
+      pronouns: null == Z ? void 0 : Z.pronouns,
       onOpenProfile: A,
       tags: (0, r.jsx)(h.Z, {
-        displayProfile: S,
+        displayProfile: Z,
         profileType: E.y0.PANEL
       }),
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
@@ -71,10 +71,10 @@ function S(e) {
           onOpenProfile: A
         })]
       })
-    }), w === N.OGo.PENDING_INCOMING && (0, r.jsx)(v.Z.Overlay, {
+    }), w === I.OGo.PENDING_INCOMING && (0, r.jsx)(v.Z.Overlay, {
       children: (0, r.jsx)(_.Z, {
         user: t,
-        channelId: Z.id,
+        channelId: N.id,
         applicationId: R
       })
     }), k.map(e => (0, r.jsx)(v.Z.Overlay, {
@@ -82,26 +82,26 @@ function S(e) {
         user: t,
         isGameRelationship: !0,
         applicationId: e.applicationId,
-        channelId: Z.id
+        channelId: N.id
       })
     }, e.applicationId)), (0, r.jsx)(C.Z, {
       user: t,
-      className: P.card
+      className: S.card
     }), t.isProvisional && (0, r.jsx)(a.wQ, {
       userId: t.id,
       headingColor: "header-primary"
     }), (0, r.jsx)(m.Z, {
       user: t,
       currentUser: n,
-      displayProfile: S,
-      className: P.card
+      displayProfile: Z,
+      className: S.card
     }), (0, r.jsxs)(v.Z.Overlay, {
-      className: P.overlay,
-      children: [!L && (null == S ? void 0 : S.bio) != null && (null == S ? void 0 : S.bio) !== "" && (0, r.jsx)(x.Z, {
-        heading: I.NW.string(I.t["61W33d"]),
+      className: S.overlay,
+      children: [!L && (null == Z ? void 0 : Z.bio) != null && (null == Z ? void 0 : Z.bio) !== "" && (0, r.jsx)(x.Z, {
+        heading: P.intl.string(P.t["61W33d"]),
         headingColor: "header-primary",
         children: (0, r.jsx)(f.Z, {
-          userBio: S.bio,
+          userBio: Z.bio,
           animateOnHover: !0,
           isHovering: T,
           userId: t.id
@@ -109,15 +109,15 @@ function S(e) {
       }), (null == D ? void 0 : D.popularApplicationCommandIds) != null && (0, r.jsx)(p.Z, {
         applicationId: D.id,
         commandIds: D.popularApplicationCommandIds,
-        channel: Z
+        channel: N
       }), M.length > 0 && (0, r.jsx)(x.Z, {
-        heading: I.NW.string(I.t["Uv/eT0"]),
+        heading: P.intl.string(P.t["Uv/eT0"]),
         headingColor: "header-primary",
         children: (0, r.jsx)(b.Z, {
           applicationIds: M
         })
       }), (0, r.jsx)(x.Z, {
-        heading: t.bot ? I.NW.string(I.t["A//N4u"]) : I.NW.string(I.t.a6XYDw),
+        heading: t.bot ? P.intl.string(P.t["A//N4u"]) : P.intl.string(P.t.a6XYDw),
         headingColor: "header-primary",
         children: (0, r.jsx)(y.Z, {
           userId: t.id

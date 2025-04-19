@@ -13,7 +13,7 @@ var o = n(481060),
 function a(e, t) {
   return t === l.IlC.POPOUT ? null : (0, r.jsx)(o.sNh, {
     id: "report-raid",
-    label: u.NW.string(u.t.cswId3),
+    label: u.intl.string(u.t.cswId3),
     action: () => {
       (0, i.xf)(), (0, c.J)(e)
     }

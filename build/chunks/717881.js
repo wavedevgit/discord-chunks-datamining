@@ -106,13 +106,13 @@ let S = a.Z.Types,
         var e;
         return p.Z.getChannel(null == (e = m.Z.getVoiceStateForUser(n.id)) ? void 0 : e.channelId)
       }),
-      N = (0, l.e7)([d.Z], () => i ? d.Z.getAnyStreamForUser(n.id) : null),
-      P = (0, l.e7)([f.Z, m.Z, p.Z], () => {
+      P = (0, l.e7)([d.Z], () => i ? d.Z.getAnyStreamForUser(n.id) : null),
+      E = (0, l.e7)([f.Z, m.Z, p.Z], () => {
         var e, r;
         return (0, o.Z)(t, b.xjy.EMBEDDED) ? f.Z.getGuild(null == (e = p.Z.getChannel(null == (r = m.Z.getVoiceStateForSession(n.id, null == t ? void 0 : t.session_id)) ? void 0 : r.channelId)) ? void 0 : e.getGuildId()) : null
       }),
-      E = (0, l.e7)([f.Z], () => null != N ? f.Z.getGuild(N.guildId) : null),
-      Z = (0, l.e7)([c.Z], () => {
+      Z = (0, l.e7)([f.Z], () => null != P ? f.Z.getGuild(P.guildId) : null),
+      I = (0, l.e7)([c.Z], () => {
         if (null != t)
           if (null != t.application_id) return c.Z.getApplication(t.application_id);
           else return c.Z.getApplicationByName(t.name);
@@ -121,13 +121,13 @@ let S = a.Z.Types,
     return (null == t ? void 0 : t.type) === b.IIU.HANG_STATUS ? null : (0, r.jsx)(a.Z, y(h({}, S), {
       activity: t,
       user: n,
-      application: Z,
+      application: I,
       hideHeader: g,
-      activityGuild: null != P ? P : E,
+      activityGuild: null != E ? E : Z,
       showChannelDetails: O,
       channel: O ? j : void 0,
       renderActions: s ? () => (0, r.jsx)(v, y(h({}, S), {
-        applicationStream: N,
+        applicationStream: P,
         activity: t,
         user: n
       })) : null,

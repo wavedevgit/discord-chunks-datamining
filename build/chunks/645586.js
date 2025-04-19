@@ -1,10 +1,10 @@
 /** Chunk was on 7232 **/
 s.d(e, {
-  default: () => N
+  default: () => f
 }), s(953529), s(388685);
 var n = s(200651),
-  a = s(192379),
-  i = s(442837),
+  i = s(192379),
+  a = s(442837),
   c = s(481060),
   r = s(355467),
   o = s(505649),
@@ -23,7 +23,7 @@ function m(t, e, s) {
     writable: !0
   }) : t[e] = s, t
 }
-class x extends a.Component {
+class x extends i.Component {
   componentDidMount() {
     l.default.track(d.rMx.OPEN_MODAL, {
       type: d.jXE.PAYMENT_AUTHENTICATION_MODAL
@@ -40,13 +40,13 @@ class x extends a.Component {
     } = this.state;
     switch (t) {
       case 0:
-        return p.NW.string(p.t.N65Zra);
+        return p.intl.string(p.t.N65Zra);
       case 2:
-        return p.NW.string(p.t.DPgrRk);
+        return p.intl.string(p.t.DPgrRk);
       case 3:
-        return p.NW.string(p.t.xypuIi);
+        return p.intl.string(p.t.xypuIi);
       default:
-        return p.NW.string(p.t.uEoQdH)
+        return p.intl.string(p.t.uEoQdH)
     }
   }
   getImageStyle() {
@@ -70,18 +70,18 @@ class x extends a.Component {
     } = this.props;
     switch (t) {
       case 0:
-        return p.NW.format(p.t.RoxWER, {
+        return p.intl.format(p.t.RoxWER, {
           price: (0, u.T4)(e.amount, e.currency),
           item: e.description
         });
       case 2:
-        return p.NW.string(p.t.PZskfn);
+        return p.intl.string(p.t.PZskfn);
       case 3:
-        return p.NW.format(p.t["j0tI/f"], {
+        return p.intl.format(p.t["j0tI/f"], {
           item: e.description
         });
       default:
-        return p.NW.string(p.t.BAr3rK)
+        return p.intl.string(p.t.BAr3rK)
     }
   }
   renderButtons() {
@@ -90,24 +90,24 @@ class x extends a.Component {
     } = this.state, {
       disableAuthentication: e
     } = this.props;
-    return 0 === t ? (0, n.jsxs)(a.Fragment, {
+    return 0 === t ? (0, n.jsxs)(i.Fragment, {
       children: [(0, n.jsx)(c.zxk, {
         color: c.Ttl.BRAND,
         disabled: e,
         onClick: this.handleAuthenticate,
-        children: p.NW.string(p.t.VAqBoK)
+        children: p.intl.string(p.t.VAqBoK)
       }), (0, n.jsx)(c.zxk, {
         look: c.zxk.Looks.LINK,
         size: c.zxk.Sizes.NONE,
         color: c.zxk.Colors.PRIMARY,
         onClick: this.cancelPayment,
         className: g.cancelButton,
-        children: p.NW.string(p.t["2NeVoa"])
+        children: p.intl.string(p.t["2NeVoa"])
       })]
     }) : (0, n.jsx)(c.zxk, {
       color: c.Ttl.BRAND,
       onClick: this.close,
-      children: p.NW.string(p.t.cpT0Cg)
+      children: p.intl.string(p.t.cpT0Cg)
     })
   }
   render() {
@@ -183,6 +183,6 @@ class x extends a.Component {
     })
   }
 }
-let N = i.ZP.connectStores([o.Z], () => ({
+let f = a.ZP.connectStores([o.Z], () => ({
   disableAuthentication: o.Z.isAwaitingAuthentication
 }))(x)

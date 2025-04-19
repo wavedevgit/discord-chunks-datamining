@@ -1,17 +1,17 @@
 /** Chunk was on 59650 **/
 n.d(e, {
-  Z: () => i
+  Z: () => o
 }), n(953529);
 var r = n(200651);
 n(192379);
 var s = n(481060),
-  o = n(948582);
+  i = n(948582);
 
-function i(t) {
+function o(t) {
   let {
     heroImageSrc: e,
     heroImageAlt: n,
-    children: i,
+    children: o,
     header: c,
     description: a
   } = t;
@@ -19,11 +19,11 @@ function i(t) {
     children: [(0, r.jsx)("img", {
       src: e,
       alt: n,
-      className: o.heroImage
+      className: i.heroImage
     }), (0, r.jsxs)(s.hzk, {
-      className: o.body,
+      className: i.body,
       children: [(0, r.jsxs)("div", {
-        className: o.textContainer,
+        className: i.textContainer,
         children: [(0, r.jsx)(s.X6q, {
           variant: "heading-xl/semibold",
           color: "header-primary",
@@ -31,10 +31,10 @@ function i(t) {
         }), null != a && (0, r.jsx)(s.Text, {
           variant: "text-md/medium",
           color: "header-secondary",
-          className: o.description,
+          className: i.description,
           children: a
         })]
-      }), i]
+      }), o]
     })]
   })
 }

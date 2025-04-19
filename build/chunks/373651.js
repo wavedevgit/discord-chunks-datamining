@@ -1,6 +1,6 @@
 /** Chunk was on 57197 **/
 t.d(n, {
-  default: () => N
+  default: () => A
 });
 var r = t(200651);
 t(192379);
@@ -57,12 +57,12 @@ function E(e) {
     onSelect: t
   } = e, a = (0, O.Z)(n), c = (0, x.Z)(n), u = (0, p.l)(n), _ = (0, p.P)(n), m = (0, s.Z)(n), g = (0, b.Z)(n), C = (0, h.Z)(n), v = (0, Z.ZP)(n), P = (0, w.Z)(n), k = (0, y.Z)(n), S = (0, d.Z)({
     id: n.id,
-    label: I.NW.string(I.t.gFHI3t)
+    label: I.intl.string(I.t.gFHI3t)
   }), T = (0, l.Z)(n), E = (0, j.ZP)(n), L = (0, f.Mn)("ChannelContextFavoritesMenu");
   return (0, r.jsxs)(i.v2r, {
     navId: "channel-context",
     onClose: o.Zy,
-    "aria-label": I.NW.string(I.t.Xm41aW),
+    "aria-label": I.intl.string(I.t.Xm41aW),
     onSelect: t,
     children: [(0, r.jsx)(i.kSQ, {
       children: a
@@ -89,14 +89,14 @@ function L(e) {
     channel: n,
     guild: t,
     onSelect: a
-  } = e, c = (0, O.Z)(n), u = (0, x.Z)(n), _ = (0, p.l)(n), s = (0, p.P)(n), b = (0, k.Z)(n), h = (0, Z.ZP)(n), S = (0, y.Z)(n), T = (0, v.Z)(n, t), E = (0, m.Z)(n, t), L = (0, g.Z)(n, t), N = (0, C.Z)(n), A = (0, d.Z)({
+  } = e, c = (0, O.Z)(n), u = (0, x.Z)(n), _ = (0, p.l)(n), s = (0, p.P)(n), b = (0, k.Z)(n), h = (0, Z.ZP)(n), S = (0, y.Z)(n), T = (0, v.Z)(n, t), E = (0, m.Z)(n, t), L = (0, g.Z)(n, t), A = (0, C.Z)(n), N = (0, d.Z)({
     id: n.id,
-    label: I.NW.string(I.t.gFHI3t)
+    label: I.intl.string(I.t.gFHI3t)
   }), U = (0, l.Z)(n), M = (0, P.Z)(n, "list_text_channel_context_menu"), D = (0, w.Z)(n), B = (0, j.ZP)(n), W = (0, f.Mn)("ChannelContextMenuNormal");
   return (0, r.jsxs)(i.v2r, {
     navId: "channel-context",
     onClose: o.Zy,
-    "aria-label": I.NW.string(I.t.Xm41aW),
+    "aria-label": I.intl.string(I.t.Xm41aW),
     onSelect: a,
     children: [(0, r.jsxs)(i.kSQ, {
       children: [c, _]
@@ -105,17 +105,17 @@ function L(e) {
     }, "channel-actions"), (0, r.jsxs)(i.kSQ, {
       children: [h, W ? B : D]
     }, "notifications"), (0, r.jsxs)(i.kSQ, {
-      children: [S, E, L, N]
+      children: [S, E, L, A]
     }, "admin-actions"), (0, r.jsx)(i.kSQ, {
       children: U
     }), (0, r.jsx)(i.kSQ, {
       children: s
     }), (0, r.jsx)(i.kSQ, {
-      children: A
+      children: N
     }, "developer-actions")]
   })
 }
-let N = (0, c.Z)((0, a.Z)(function(e) {
+let A = (0, c.Z)((0, a.Z)(function(e) {
   return (0, _.Z)() ? (0, r.jsx)(E, T({}, e)) : (0, r.jsx)(L, T({}, e))
 }, {
   object: S.qAy.CONTEXT_MENU

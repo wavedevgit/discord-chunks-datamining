@@ -31,38 +31,38 @@ function h(e) {
   return t && (x.push({
     type: "UPLOAD_A_FILE",
     icon: i.xD0,
-    display: d.NW.string(d.t["d3+iYm"])
+    display: d.intl.string(d.t["d3+iYm"])
   }), x.push({
     type: "UPLOAD_TEXT_AS_FILE",
     icon: i.xD0,
-    display: d.NW.string(d.t["G9s+EB"])
+    display: d.intl.string(d.t["G9s+EB"])
   })), h && t && y !== u.IlC.POPOUT && x.push({
     type: "CLIPS",
     icon: i.AlX,
-    display: d.NW.string(d.t.o034cn),
+    display: d.intl.string(d.t.o034cn),
     badgeVal: g,
     badgeColor: a.Z.BG_BRAND
   }), n && x.push({
     type: "CREATE_THREAD",
     icon: i.YPH,
-    display: d.NW.string(d.t.rBIGBA)
+    display: d.intl.string(d.t.rBIGBA)
   }), b && x.push({
     type: "POLL",
     icon: i.QDj,
-    display: d.NW.string(d.t.Flr51t)
+    display: d.intl.string(d.t.Flr51t)
   }), r && p && x.push({
     type: "SLASH_COMMAND",
     icon: i.jje,
-    display: d.NW.string(d.t.Bbvp6O)
+    display: d.intl.string(d.t.Bbvp6O)
   }), _ && x.push({
     type: "ACTIVITY",
     icon: i.nG3,
-    display: d.NW.string(d.t["16Lfra"])
+    display: d.intl.string(d.t["16Lfra"])
   }), m.forEach(e => {
     !(0, l.Z)(e, u.xjy.EMBEDDED) && (e.type === u.IIU.PLAYING && (0, l.Z)(e, u.xjy.JOIN) && x.push({
       type: "INVITE_TO_GAME",
       icon: i.xoD,
-      display: d.NW.formatToPlainString(d.t["KHLo+P"], {
+      display: d.intl.formatToPlainString(d.t["KHLo+P"], {
         channel: (0, o.F6)(f, c.default, s.Z, !0),
         game: null != e ? e.name : ""
       }),
@@ -70,7 +70,7 @@ function h(e) {
     }), e.type === u.IIU.LISTENING && (0, l.Z)(e, u.xjy.SYNC) && x.push({
       type: "INVITE_TO_LISTEN",
       icon: i.iOO,
-      display: d.NW.formatToPlainString(d.t.I479p6, {
+      display: d.intl.formatToPlainString(d.t.I479p6, {
         channel: (0, o.F6)(f, c.default, s.Z, !0),
         name: null != e ? e.name : ""
       }),
@@ -78,7 +78,7 @@ function h(e) {
     }), e.type === u.IIU.WATCHING && (0, l.Z)(e, u.xjy.SYNC) && x.push({
       type: "INVITE_TO_WATCH",
       icon: i.tEF,
-      display: d.NW.formatToPlainString(d.t["EvCP/v"], {
+      display: d.intl.formatToPlainString(d.t["EvCP/v"], {
         channel: (0, o.F6)(f, c.default, s.Z, !0),
         name: null != e ? e.name : ""
       }),
@@ -87,6 +87,6 @@ function h(e) {
   }), C && x.push({
     type: "SCHEDULED_MESSAGE",
     icon: i.T39,
-    display: d.NW.string(d.t["3+ii4O"])
+    display: d.intl.string(d.t["3+ii4O"])
   }), x
 }

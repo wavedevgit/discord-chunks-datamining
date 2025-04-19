@@ -57,13 +57,13 @@ function T(e, t) {
   return n
 }
 
-function N(e, t) {
+function A(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function A(e, t) {
+function N(e, t) {
   if (null == e) return {};
   var n, r, i = C(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -104,9 +104,9 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
       enlargeOnInteraction: V = !1,
       channel: Z,
       currentUser: H,
-      checkSendability: W = !0
+      checkSendability: Y = !0
     } = e, {
-      location: Y
+      location: W
     } = (0, d.O)(), K = B + 2 * G, z = i.useMemo(() => ({
       gridColumnGap: T,
       gridTemplateColumns: "repeat(auto-fill, ".concat(K, "px)"),
@@ -117,7 +117,7 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
       height: B,
       padding: G
     }), [G, B]), [Q, X] = (0, f.Z)(null, 300);
-    return (0, r.jsx)("div", N(S({
+    return (0, r.jsx)("div", A(S({
       className: O.row,
       style: z
     }, null == I ? void 0 : I(k)), {
@@ -136,7 +136,7 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
           P = () => {
             e.type === m.al.CREATE_STICKER && (p.default.track(y.rMx.OPEN_MODAL, {
               type: y.jXE.CREATE_STICKER_MODAL,
-              location: Y
+              location: W
             }), (0, c.ZDy)(async () => {
               let {
                 default: t
@@ -152,10 +152,10 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
             tabIndex: K,
             onFocus: z
           } = U,
-          J = A(U, ["ref", "tabIndex", "onFocus"]);
+          J = N(U, ["ref", "tabIndex", "onFocus"]);
         switch (e.type) {
           case m.al.CREATE_STICKER:
-            return (0, r.jsx)("div", N(S({}, J), {
+            return (0, r.jsx)("div", A(S({}, J), {
               children: (0, r.jsxs)(c.P3F, {
                 "aria-label": e.name,
                 className: o()(O.createSticker, j, {
@@ -179,7 +179,7 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
                 }), (0, r.jsx)(c.Text, {
                   color: "interactive-active",
                   variant: "text-xs/normal",
-                  children: v.NW.string(v.t["+nEuqq"])
+                  children: v.intl.string(v.t["+nEuqq"])
                 })]
               })
             }), e.guild_id);
@@ -193,7 +193,7 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
                   return t => (0, r.jsx)(e, S({}, t))
                 })
               };
-            return (0, i.createElement)("div", N(S({}, J), {
+            return (0, i.createElement)("div", A(S({}, J), {
               key: e.sticker.id
             }), (0, r.jsxs)(c.P3F, {
               className: o()(O.sticker, j, {
@@ -219,7 +219,7 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
                   className: o()(O.stickerNode, {
                     [O.stickerNodeDimmed]: V && !f && null != C && -1 !== C.rowIndex && -1 !== C.columnIndex,
                     [O.stickerNodeHidden]: I,
-                    [O.stickerUnsendable]: W && !(0, h.kl)(e.sticker, H, Z)
+                    [O.stickerUnsendable]: Y && !(0, h.kl)(e.sticker, H, Z)
                   }),
                   disableAnimation: !f && !a,
                   enlargeOnInteraction: V,

@@ -20,7 +20,7 @@ function f(e) {
     user: n,
     channel: f
   } = e, g = (0, c.K)(), m = i.useCallback(() => {
-    (0, l.showToast)((0, l.createToast)(p.NW.string(p.t.EDYbS0), l.ToastType.FAILURE))
+    (0, l.showToast)((0, l.createToast)(p.intl.string(p.t.EDYbS0), l.ToastType.FAILURE))
   }, []), b = i.useCallback(() => {
     o.Z.closeChannelSidebar(s.uZ)
   }, []), _ = i.useCallback(() => {
@@ -28,17 +28,17 @@ function f(e) {
   }, [f.id, g]), {
     acceptMessageRequest: E,
     rejectMessageRequest: O,
-    isAcceptLoading: N,
-    isRejectLoading: y,
-    isUserProfileLoading: I,
-    isOptimisticAccepted: v,
-    isOptimisticRejected: C
+    isAcceptLoading: y,
+    isRejectLoading: I,
+    isUserProfileLoading: v,
+    isOptimisticAccepted: C,
+    isOptimisticRejected: S
   } = (0, u.m)({
     user: n,
     onAcceptSuccess: _,
     onRejectSuccess: b,
     onError: m
-  }), S = N || y || I || v || C;
+  }), N = y || I || v || C || S;
   return (0, r.jsxs)("div", {
     className: h.container,
     children: [(0, r.jsx)(d.Z, {
@@ -54,9 +54,9 @@ function f(e) {
         onClick: e => {
           e.stopPropagation(), O(f.id)
         },
-        disabled: S,
-        submitting: y || C,
-        children: p.NW.string(p.t.B2nygY)
+        disabled: N,
+        submitting: I || S,
+        children: p.intl.string(p.t.B2nygY)
       }), (0, r.jsx)(l.zxk, {
         className: h.button,
         color: l.Ttl.BRAND,
@@ -64,9 +64,9 @@ function f(e) {
         onClick: e => {
           e.stopPropagation(), E(f.id)
         },
-        disabled: S,
-        submitting: N || I || v,
-        children: p.NW.string(p.t.Kz8Pws)
+        disabled: N,
+        submitting: y || v || C,
+        children: p.intl.string(p.t.Kz8Pws)
       })]
     })]
   })

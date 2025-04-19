@@ -1,8 +1,8 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => r
+  Z: () => i
 });
-let r = (0, n(818083).B)({
+let i = (0, n(818083).B)({
   kind: "user",
   id: "2025-01_q1_marketing_premium_card",
   label: "2025 Q1 Collectible Deco Marketing Moment Premium Card on Nitro Home",

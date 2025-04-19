@@ -3,8 +3,8 @@
 n.d(t, {
   Z: () => E
 });
-var r, i, s = n(200651),
-  l = n(192379),
+var r, i, l = n(200651),
+  s = n(192379),
   a = n(512722),
   o = n.n(a),
   c = n(913527),
@@ -18,10 +18,10 @@ var r, i, s = n(200651),
   x = n(755930),
   b = n(334820),
   j = n(198139),
-  N = n(388032),
-  _ = n(282427);
+  _ = n(388032),
+  v = n(282427);
 
-function v(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,54 +39,54 @@ function v(e) {
   }
   return e
 }
-let O = e => {
+let C = e => {
   let {
     dateUtc: t
   } = e;
-  return (0, s.jsx)(u.Text, {
+  return (0, l.jsx)(u.Text, {
     variant: "text-md/medium",
     color: "interactive-active",
     children: d()(t).utc().format("MMMM YYYY")
   })
 };
 
-function C(e) {
+function y(e) {
   let {
     item: t
   } = e, {
     ppgStatus: n,
     payoutStatus: r,
     ppgDeferralReasons: i,
-    periodEndDate: l
-  } = (0, f.j0)(t), a = null != l ? d()(l).add(15, "days").toISOString() : void 0, o = (0, m.Zo)(a, "MMM D");
+    periodEndDate: s
+  } = (0, f.j0)(t), a = null != s ? d()(s).add(15, "days").toISOString() : void 0, o = (0, m.Zo)(a, "MMM D");
   switch (n) {
     case j.x_.OPEN:
-      return (0, s.jsxs)(s.Fragment, {
-        children: [null != o ? N.NW.formatToPlainString(N.t.I6YOjY, {
+      return (0, l.jsxs)(l.Fragment, {
+        children: [null != o ? _.intl.formatToPlainString(_.t.I6YOjY, {
           payoutDate: o
-        }) : N.NW.string(N.t.G5ATX1), (0, s.jsx)(p.Z, {
-          className: _.statusScheduledIcon
+        }) : _.intl.string(_.t.G5ATX1), (0, l.jsx)(p.Z, {
+          className: v.statusScheduledIcon
         })]
       });
     case j.x_.CANCELED:
-      return (0, s.jsxs)(s.Fragment, {
-        children: [N.NW.string(N.t["0SrNPz"]), (0, s.jsx)(u.k$p, {
+      return (0, l.jsxs)(l.Fragment, {
+        children: [_.intl.string(_.t["0SrNPz"]), (0, l.jsx)(u.k$p, {
           size: "md",
           color: "currentColor",
-          className: _.statusErrorIcon
+          className: v.statusErrorIcon
         })]
       });
     case j.x_.PAYOUT_DEFERRED:
-      if ((null == i ? void 0 : i.includes(j.XL.PAYOUT_SEIZED)) === !0) return (0, s.jsxs)(s.Fragment, {
-        children: [N.NW.string(N.t["0SrNPz"]), (0, s.jsx)(u.k$p, {
+      if ((null == i ? void 0 : i.includes(j.XL.PAYOUT_SEIZED)) === !0) return (0, l.jsxs)(l.Fragment, {
+        children: [_.intl.string(_.t["0SrNPz"]), (0, l.jsx)(u.k$p, {
           size: "md",
           color: "currentColor",
-          className: _.statusErrorIcon
+          className: v.statusErrorIcon
         })]
       });
-      return (0, s.jsxs)(s.Fragment, {
-        children: [N.NW.string(N.t.OtZ5k5), (0, s.jsx)(h.Z, {
-          className: _.statusDeferredIcon
+      return (0, l.jsxs)(l.Fragment, {
+        children: [_.intl.string(_.t.OtZ5k5), (0, l.jsx)(h.Z, {
+          className: v.statusDeferredIcon
         })]
       })
   }
@@ -99,60 +99,60 @@ function C(e) {
     case j.jw.PENDING_FUNDS:
     case j.jw.CANCELED:
     case j.jw.ERROR:
-      return (0, s.jsxs)(s.Fragment, {
-        children: [null != o ? N.NW.formatToPlainString(N.t.I6YOjY, {
+      return (0, l.jsxs)(l.Fragment, {
+        children: [null != o ? _.intl.formatToPlainString(_.t.I6YOjY, {
           payoutDate: o
-        }) : N.NW.string(N.t.ubdQTk), (0, s.jsx)(p.Z, {
-          className: _.statusScheduledIcon
+        }) : _.intl.string(_.t.ubdQTk), (0, l.jsx)(p.Z, {
+          className: v.statusScheduledIcon
         })]
       });
     case j.jw.PAID:
-      return (0, s.jsxs)(s.Fragment, {
-        children: [N.NW.string(N.t.eoSslJ), (0, s.jsx)(u.owK, {
+      return (0, l.jsxs)(l.Fragment, {
+        children: [_.intl.string(_.t.eoSslJ), (0, l.jsx)(u.owK, {
           size: "md",
           color: "currentColor",
-          className: _.statusPaidIcon
+          className: v.statusPaidIcon
         })]
       });
     case j.jw.DEFERRED:
     case j.jw.DEFERRED_INTERNAL:
     case j.jw.REJECTED:
     case j.jw.RISK_REVIEW:
-      return (0, s.jsxs)(s.Fragment, {
-        children: [g.Z.getStatusErrorText(r), (0, s.jsx)(u.k$p, {
+      return (0, l.jsxs)(l.Fragment, {
+        children: [g.Z.getStatusErrorText(r), (0, l.jsx)(u.k$p, {
           size: "md",
           color: "currentColor",
-          className: _.statusErrorIcon
+          className: v.statusErrorIcon
         })]
       })
   }
   return null
 }
-let y = (0, x.i$)({
+let N = (0, x.i$)({
     key: "AMOUNT ",
-    cellClassName: _.amountColumn,
+    cellClassName: v.amountColumn,
     renderHeader() {
-      let e = (0, s.jsx)(u.ua7, {
-        text: N.NW.string(N.t.q3PkLy),
-        children: e => (0, s.jsx)(u.d3s, v({
+      let e = (0, l.jsx)(u.ua7, {
+        text: _.intl.string(_.t.q3PkLy),
+        children: e => (0, l.jsx)(u.d3s, O({
           size: "xs",
           color: "currentColor",
-          className: _.amountDisclaimer
+          className: v.amountDisclaimer
         }, e))
       });
-      return (0, s.jsxs)(x.qN, {
-        children: [N.NW.string(N.t.VodAGR), e]
+      return (0, l.jsxs)(x.qN, {
+        children: [_.intl.string(_.t.VodAGR), e]
       })
     },
     getAmount: e => e.amount
   }),
   I = (0, b.rM)([(0, b.Fd)({
     key: "PERIOD",
-    cellClassName: _.periodColumn,
-    renderHeader: () => (0, s.jsx)(x.qN, {
-      children: N.NW.string(N.t.fThnXV)
+    cellClassName: v.periodColumn,
+    renderHeader: () => (0, l.jsx)(x.qN, {
+      children: _.intl.string(_.t.fThnXV)
     }),
-    renderContent: e => (0, s.jsx)(O, {
+    renderContent: e => (0, l.jsx)(C, {
       dateUtc: e.periodStartingAt
     }),
     renderExpandedContent(e, t) {
@@ -160,13 +160,13 @@ let y = (0, x.i$)({
       let {
         ListingIdLabel: n
       } = t;
-      return (0, s.jsx)(n, {
+      return (0, l.jsx)(n, {
         listingId: e.listingId
       })
     }
-  }), (0, b.Fd)((r = v({}, y), i = i = {
-    renderContent: y.render,
-    renderExpandedContent: (e, t) => y.render(e, t)
+  }), (0, b.Fd)((r = O({}, N), i = i = {
+    renderContent: N.render,
+    renderExpandedContent: (e, t) => N.render(e, t)
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -178,23 +178,23 @@ let y = (0, x.i$)({
     Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
   }), r)), (0, x.wy)({
     key: "STATUS ",
-    cellClassName: _.statusColumn,
+    cellClassName: v.statusColumn,
     renderHeader() {
-      let e = (0, s.jsx)(u.ua7, {
-        text: N.NW.string(N.t.cIGvZG),
-        children: e => (0, s.jsx)(u.d3s, v({
+      let e = (0, l.jsx)(u.ua7, {
+        text: _.intl.string(_.t.cIGvZG),
+        children: e => (0, l.jsx)(u.d3s, O({
           size: "xs",
           color: "currentColor",
-          className: _.statusDisclaimer
+          className: v.statusDisclaimer
         }, e))
       });
-      return (0, s.jsxs)(x.qN, {
-        children: [N.NW.string(N.t.oypxx8), e]
+      return (0, l.jsxs)(x.qN, {
+        children: [_.intl.string(_.t.oypxx8), e]
       })
     },
-    renderContent: e => (0, s.jsx)(x.bL, {
-      className: _.statusCell,
-      children: (0, s.jsx)(C, {
+    renderContent: e => (0, l.jsx)(x.bL, {
+      className: v.statusCell,
+      children: (0, l.jsx)(y, {
         item: e
       })
     })
@@ -218,10 +218,10 @@ function E(e) {
         amount: null == (n = e.ppgs[t]) ? void 0 : n.amount
       }
     })
-  }), a = l.useMemo(() => v({
+  }), a = s.useMemo(() => O({
     ListingIdLabel: t
   }, r), [r, t]);
-  return (0, s.jsx)(x.ZP, {
+  return (0, l.jsx)(x.ZP, {
     columns: I,
     data: i,
     cellProps: a

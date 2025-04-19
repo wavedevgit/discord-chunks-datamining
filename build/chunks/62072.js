@@ -1,6 +1,6 @@
 /** Chunk was on 3656 **/
 n.d(t, {
-  Z: () => S
+  Z: () => Z
 });
 var r = n(192379),
   i = n(904245),
@@ -25,18 +25,18 @@ var r = n(192379),
   j = n(418476),
   O = n(901461),
   E = n(432376),
-  N = n(996861),
-  I = n(981631);
+  I = n(996861),
+  P = n(981631);
 
-function P(e) {
-  return _.Z.can(I.Plq.MANAGE_MESSAGES, e)
+function S(e) {
+  return _.Z.can(P.Plq.MANAGE_MESSAGES, e)
 }
-let S = function(e, t, n) {
-  let S = r.useRef(n);
-  return S.current = n, r.useCallback(n => {
-    if (!S.current || n.target !== n.currentTarget) return;
+let Z = function(e, t, n) {
+  let Z = r.useRef(n);
+  return Z.current = n, r.useCallback(n => {
+    if (!Z.current || n.target !== n.currentTarget) return;
     let r = !n.altKey && !n.ctrlKey && !n.metaKey && !n.shiftKey,
-      Z = n.altKey && !(n.ctrlKey || n.metaKey || n.shiftKey),
+      N = n.altKey && !(n.ctrlKey || n.metaKey || n.shiftKey),
       T = n.ctrlKey && !(n.altKey || n.metaKey || n.shiftKey),
       A = n.metaKey && !(n.altKey || n.ctrlKey || n.shiftKey),
       w = n.shiftKey && !(n.altKey || n.ctrlKey || n.metaKey),
@@ -46,16 +46,16 @@ let S = function(e, t, n) {
     let M = p.default.getId();
     switch (n.key.toLowerCase()) {
       case "backspace":
-        r && (P(k) || R.canDeleteOwnMessage(M)) && (n.preventDefault(), (0, N.$Z)(k, R, n));
+        r && (S(k) || R.canDeleteOwnMessage(M)) && (n.preventDefault(), (0, I.$Z)(k, R, n));
         break;
       case "c":
         ((0, x.isMac)() ? A : T) && y.wS && (n.preventDefault(), (0, y.JG)(R.content));
         break;
       case "e":
-        r && !k.isSystemDM() && (0, j.Z)(R, M) && (n.preventDefault(), (0, N.Hd)(k, R));
+        r && !k.isSystemDM() && (0, j.Z)(R, M) && (n.preventDefault(), (0, I.Hd)(k, R));
         break;
       case "p":
-        (r || w) && !k.isSystemDM() && !(0, O.Z)(R) && (P(k) || k.isPrivate()) && (n.preventDefault(), (0, N.rY)(k, R, n));
+        (r || w) && !k.isSystemDM() && !(0, O.Z)(R) && (S(k) || k.isPrivate()) && (n.preventDefault(), (0, I.rY)(k, R, n));
         break;
       case "+":
         (r || w) && function(e) {
@@ -67,18 +67,18 @@ let S = function(e, t, n) {
               channel: e,
               canChat: t,
               renderReactions: n,
-              canAddNewReactions: t && _.Z.can(I.Plq.ADD_REACTIONS, e),
+              canAddNewReactions: t && _.Z.can(P.Plq.ADD_REACTIONS, e),
               isLurking: null != e.guild_id && a.Z.isLurking(e.guild_id),
               isGuest: null != e.guild_id && m.ZP.isCurrentUserGuest(e.guild_id),
               isActiveChannelOrUnarchivableThread: (0, c.RG)(e)
             });
           return !r && n
-        }(k) && (n.preventDefault(), C.S.dispatchKeyed(I.LPv.TOGGLE_REACTION_POPOUT, R.id, {
+        }(k) && (n.preventDefault(), C.S.dispatchKeyed(P.LPv.TOGGLE_REACTION_POPOUT, R.id, {
           emojiPicker: !0
         }));
         break;
       case "r":
-        (r || w) && (0, s.o)(k, R) && (n.preventDefault(), (0, N.HH)(k, R, n));
+        (r || w) && (0, s.o)(k, R) && (n.preventDefault(), (0, I.HH)(k, R, n));
         break;
       case "f":
         (r || w) && (0, l.h)(R) && (n.preventDefault(), (0, o.l8)({
@@ -88,16 +88,16 @@ let S = function(e, t, n) {
         break;
       case "t":
         if (r && (0, c.ki)(k, R)) n.preventDefault(), (0, u.R6)(k, R, "Message Shortcut");
-        else if (R.hasFlag(I.iLy.HAS_THREAD)) {
+        else if (R.hasFlag(P.iLy.HAS_THREAD)) {
           let e = h.Z.getChannel(v.default.castMessageIdAsChannelId(R.id));
           null != e && (r || w) && (n.preventDefault(), (0, u.ok)(e, w))
         }
         break;
       case "enter":
-        Z && (n.preventDefault(), (0, N.B8)(k, R));
+        N && (n.preventDefault(), (0, I.B8)(k, R));
         break;
       case "escape":
-        f.Z.isEditing(k.id, R.id) ? i.Z.endEditMessage(k.id) : C.S.dispatch(I.CkL.TEXTAREA_FOCUS)
+        f.Z.isEditing(k.id, R.id) ? i.Z.endEditMessage(k.id) : C.S.dispatch(P.CkL.TEXTAREA_FOCUS)
     }
   }, [e, t])
 }

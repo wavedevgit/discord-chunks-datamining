@@ -4,8 +4,8 @@ r.d(t, {
   g: () => c
 }), r(388685);
 var n = r(192379),
-  a = r(442837),
-  i = r(146282),
+  i = r(442837),
+  a = r(146282),
   l = r(327220),
   s = r(959580),
   o = r(371177);
@@ -21,9 +21,9 @@ function u(e) {
   let {
     feed: t,
     filters: r
-  } = (0, a.cj)([i.Z], () => ({
-    feed: i.Z.getFeed(e),
-    filters: i.Z.getFilters()
+  } = (0, i.cj)([a.Z], () => ({
+    feed: a.Z.getFeed(e),
+    filters: a.Z.getFilters()
   })), u = n.useMemo(() => {
     let e = null == t ? void 0 : t.entries.map(e => e.content);
     return null != r ? null == e ? void 0 : e.filter(e => c(r, e)) : e

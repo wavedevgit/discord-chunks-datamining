@@ -38,7 +38,7 @@ let u = i.forwardRef(function(e, t) {
       children: [(0, r.jsx)(s.Z, {
         foreground: c.unreadPillCapStroke,
         className: c.unreadPillCap
-      }), l.NW.string(l.t.y2b7CA)]
+      }), l.intl.string(l.t.y2b7CA)]
     }) : null]
   })
 })

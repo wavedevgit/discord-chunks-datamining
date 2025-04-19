@@ -1,12 +1,12 @@
 /** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => O
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  s = n(120356),
-  l = n.n(s),
+  l = n(120356),
+  s = n.n(l),
   a = n(392711),
   o = n(999153),
   c = n(584922),
@@ -44,19 +44,19 @@ function b(e) {
     switch (t) {
       case p.QJ.MULTIPLE_CHOICE:
         return {
-          icon: m.jE$, text: h.NW.string(h.t.ooKh3t)
+          icon: m.jE$, text: h.intl.string(h.t.ooKh3t)
         };
       case p.QJ.PARAGRAPH:
         return {
-          icon: m.OvV, text: h.NW.string(h.t.gG0JBA)
+          icon: m.OvV, text: h.intl.string(h.t.gG0JBA)
         };
       case p.QJ.TEXT_INPUT:
         return {
-          icon: (0, m.GSL)(g.Z), text: h.NW.string(h.t.w6Q9w8)
+          icon: (0, m.GSL)(g.Z), text: h.intl.string(h.t.w6Q9w8)
         };
       case p.QJ.TERMS:
         return {
-          icon: m.snC, text: h.NW.string(h.t["3pz9t7"])
+          icon: m.snC, text: h.intl.string(h.t["3pz9t7"])
         };
       default:
         return null
@@ -80,7 +80,7 @@ function j(e) {
     title: t,
     children: n,
     onEdit: i,
-    onRemove: s,
+    onRemove: l,
     canRemove: a,
     actionsLocation: o,
     fieldStyle: c,
@@ -107,17 +107,17 @@ function j(e) {
     }), "footer" === o && (0, r.jsxs)(m.hjN, {
       className: f.containerFooter,
       children: [(0, r.jsx)(m.ua7, {
-        text: h.NW.string(h.t.FoxyPT),
+        text: h.intl.string(h.t.FoxyPT),
         shouldShow: !a,
         children: e => {
           var t, n;
           return (0, r.jsx)(m.zxk, (t = x({}, e), n = n = {
-            className: l()(f.removeButton, f.button),
+            className: s()(f.removeButton, f.button),
             size: m.zxk.Sizes.SMALL,
             look: m.zxk.Looks.BLANK,
-            onClick: s,
+            onClick: l,
             disabled: !a,
-            children: h.NW.string(h.t.N86XcH)
+            children: h.intl.string(h.t.N86XcH)
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -134,24 +134,24 @@ function j(e) {
         size: m.zxk.Sizes.SMALL,
         color: m.zxk.Colors.PRIMARY,
         onClick: i,
-        children: h.NW.string(h.t.bt75u7)
+        children: h.intl.string(h.t.bt75u7)
       })]
     })]
   })
 }
-let N = "FORM_FIELD";
+let _ = "FORM_FIELD";
 
-function _(e) {
+function v(e) {
   let {
     index: t,
     field: n,
-    isDropHovered: s,
+    isDropHovered: l,
     onDrop: d,
     fieldStyle: g
   } = e, h = (0, a.debounce)(async (e, t, n) => {
     await d(e, t, n)
-  }), b = i.useRef(null), [, _] = (0, o.c)({
-    type: N,
+  }), b = i.useRef(null), [, v] = (0, o.c)({
+    type: _,
     item: {
       index: t,
       field: n
@@ -159,32 +159,32 @@ function _(e) {
     end: (e, t) => {
       null == e || t.didDrop() || h(e.field, null, !0)
     }
-  }), [, v] = (0, c.L)({
-    accept: N,
+  }), [, O] = (0, c.L)({
+    accept: _,
     hover: (e, n) => {
       var r;
       let {
         index: i
-      } = e, s = null == (r = b.current) ? void 0 : r.getBoundingClientRect(), l = n.getClientOffset();
-      if (null == s || null == l) return;
-      let a = (s.bottom - s.top) / 2,
-        o = l.y - s.top;
+      } = e, l = null == (r = b.current) ? void 0 : r.getBoundingClientRect(), s = n.getClientOffset();
+      if (null == l || null == s) return;
+      let a = (l.bottom - l.top) / 2,
+        o = s.y - l.top;
       i < t && o < a || i > t && o < a || i === t || h(e.field, t, !1)
     },
     drop: e => {
       h(e.field, t, !0)
     }
   });
-  return i.useLayoutEffect(() => (_(v(b)), () => {
-    v(null), _(null)
-  }), [_, v]), (0, r.jsxs)("div", {
+  return i.useLayoutEffect(() => (v(O(b)), () => {
+    O(null), v(null)
+  }), [v, O]), (0, r.jsxs)("div", {
     ref: b,
     "data-dnd-name": "field-".concat(t),
-    className: l()(f.dragContainer, {
-      [f.dropHovered]: s
+    className: s()(f.dragContainer, {
+      [f.dropHovered]: l
     }),
     children: [(0, r.jsx)("div", {
-      className: l()(f.dragIconContainer, {
+      className: s()(f.dragIconContainer, {
         [f.compact]: g === p.it.COMPACT
       }),
       children: (0, r.jsx)(m.Vni, {
@@ -196,30 +196,30 @@ function _(e) {
   })
 }
 
-function v(e) {
+function O(e) {
   return (0, r.jsxs)("div", {
-    className: l()(f.formFieldContainer, {
+    className: s()(f.formFieldContainer, {
       [f.compact]: e.fieldStyle === p.it.COMPACT
     }),
     children: [(0, r.jsx)("div", {
       className: f.spacingContainer,
-      children: e.isDragEnabled ? (0, r.jsx)(_, x({}, e)) : (0, r.jsx)(j, x({}, e))
+      children: e.isDragEnabled ? (0, r.jsx)(v, x({}, e)) : (0, r.jsx)(j, x({}, e))
     }), "side" === e.actionsLocation && (0, r.jsxs)("div", {
-      className: l()(f.actionButtonsContainer, {
+      className: s()(f.actionButtonsContainer, {
         [f.compact]: e.fieldStyle === p.it.COMPACT,
         [f.canRemove]: e.canRemove
       }),
       children: [(0, r.jsx)(m.P3F, {
         className: f.actionButton,
         onClick: e.onEdit,
-        "aria-label": h.NW.string(h.t.bt75u7),
+        "aria-label": h.intl.string(h.t.bt75u7),
         children: (0, r.jsx)(m.vdY, {
           size: "xs"
         })
       }), e.canRemove && (0, r.jsx)(m.P3F, {
         className: f.actionButton,
         onClick: e.onRemove,
-        "aria-label": h.NW.string(h.t.N86XcH),
+        "aria-label": h.intl.string(h.t.N86XcH),
         children: (0, r.jsx)(m.XHJ, {
           size: "xs"
         })

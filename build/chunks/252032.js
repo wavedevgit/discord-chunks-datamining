@@ -45,21 +45,21 @@ function j(e) {
   } = t, {
     id: c
   } = n, m = t.getGuildId(), b = (0, l.e7)([h.Z], () => h.Z.getGuild(m), [m]), _ = t.type === C.d4z.GUILD_ANNOUNCEMENT, j = null != b && b.hasFeature(C.oNc.NEWS), E = _ && j, {
-    editingMessage: N,
-    editingTextValue: I,
-    editingRichValue: P
+    editingMessage: I,
+    editingTextValue: P,
+    editingRichValue: S
   } = (0, l.cj)([p.Z], () => ({
     editingMessage: p.Z.getEditingMessage(s),
     editingTextValue: p.Z.getEditingTextValue(s),
     editingRichValue: p.Z.getEditingRichValue(s)
-  }), [s]), S = (0, l.e7)([d.default], () => d.default.getId()), Z = i.useCallback((e, n, r) => {
+  }), [s]), Z = (0, l.e7)([d.default], () => d.default.getId()), N = i.useCallback((e, n, r) => {
     let {
       content: i
-    } = r, l = f.Z.can(C.Plq.MANAGE_MESSAGES, t), s = null != N && null != N.author ? N.author.id : null;
-    return E && (s === S || l) && null != N && (0, g.yE)(N.flags, C.iLy.CROSSPOSTED) ? a.Z.confirmEdit(e, n, i) : o.Z.editMessage(e, n, {
+    } = r, l = f.Z.can(C.Plq.MANAGE_MESSAGES, t), s = null != I && null != I.author ? I.author.id : null;
+    return E && (s === Z || l) && null != I && (0, g.yE)(I.flags, C.iLy.CROSSPOSTED) ? a.Z.confirmEdit(e, n, i) : o.Z.editMessage(e, n, {
       content: i
     }), Promise.resolve()
-  }, [N, E, S, t]), T = i.useCallback(e => {
+  }, [I, E, Z, t]), T = i.useCallback(e => {
     var t, n;
     return (0, i.createElement)(O, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -92,16 +92,16 @@ function j(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   }, [c]), A = (0, u.R6)("EditorWrapper");
-  return null != I && null != P ? (0, r.jsx)(y.Z, {
+  return null != P && null != S ? (0, r.jsx)(y.Z, {
     ref: void 0,
     channel: t,
     message: n,
-    textValue: I,
-    richValue: P,
+    textValue: P,
+    richValue: S,
     onCancel: o.Z.endEditMessage,
     onChange: o.Z.updateEditMessage,
     onConfirmDelete: a.Z.confirmDelete,
-    saveMessage: Z,
+    saveMessage: N,
     validateEdit: v,
     isRefreshEnabled: A,
     children: T

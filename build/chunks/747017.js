@@ -32,8 +32,8 @@ function v(e) {
     iconClassName: I,
     textSize: S = "xs",
     animate: T = !0,
-    hasQuest: N = !1,
-    hideEmoji: A = !1,
+    hasQuest: A = !1,
+    hideEmoji: N = !1,
     hideTooltip: C = !1
   } = e;
   (0, u.Z)(null == t ? void 0 : t.id);
@@ -92,7 +92,7 @@ function v(e) {
       let e = P.emoji,
         t = P.state;
       return (0, r.jsxs)(r.Fragment, {
-        children: [null != e && !A && (0, r.jsx)(f.Z, {
+        children: [null != e && !N && (0, r.jsx)(f.Z, {
           emoji: e,
           animate: T,
           hideTooltip: C,
@@ -113,6 +113,6 @@ function v(e) {
       variant: "text-".concat(S, "/normal"),
       className: o()(y.text, y.dot, O),
       children: E.l
-    }), x(), N && (0, r.jsx)(_.Z, {})]
+    }), x(), A && (0, r.jsx)(_.Z, {})]
   })
 }

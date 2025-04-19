@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(85960),
-  s = n(489776),
-  l = n(252121),
+  l = n(489776),
+  s = n(252121),
   a = n(564488);
 
 function o(e) {
@@ -20,13 +20,13 @@ function o(e) {
     perGuildMaxCount: d
   } = i.I6[o], u = 0 === n.length, m = d > n.length && !u;
   return (0, r.jsxs)(r.Fragment, {
-    children: [u && (0, r.jsx)(l.Z, {
+    children: [u && (0, r.jsx)(s.Z, {
       guildId: t,
       triggerType: o
     }), n.map(e => (0, r.jsx)(a.Z, {
       rule: e,
       initWithEdit: c
-    }, e.id)), m && (0, r.jsx)(s.Z, {
+    }, e.id)), m && (0, r.jsx)(l.Z, {
       guildId: t,
       triggerType: o
     })]

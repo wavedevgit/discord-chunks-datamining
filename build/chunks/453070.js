@@ -8,7 +8,7 @@ n.d(t, {
   Sd: () => M,
   XW: () => x,
   el: () => S,
-  fP: () => N,
+  fP: () => A,
   fQ: () => T,
   t$: () => I
 }), n(539854), n(388685), n(290780);
@@ -32,7 +32,7 @@ var r = n(192379),
   y = n(981631),
   v = n(388032);
 let O = e => {
-    N();
+    A();
     let t = (0, i.e7)([g.Z], () => g.Z.hasLoadedStickerPacks);
     r.useEffect(() => {
       t && null == g.Z.getStickerPack(e) && (0, h.FQ)(e)
@@ -91,7 +91,7 @@ let O = e => {
             g > O && g > u && null != i && I > t.length && l.push({
               type: E.al.CREATE_STICKER,
               guild_id: i.id,
-              name: v.NW.string(v.t["UwF+Cw"]),
+              name: v.intl.string(v.t["UwF+Cw"]),
               gridSectionIndex: g,
               rowIndex: m,
               columnIndex: l.length,
@@ -121,12 +121,12 @@ let O = e => {
       return !1
     }, [t, e])
   },
-  N = () => {
+  A = () => {
     r.useEffect(() => {
       (0, h.$p)()
     }, [])
   },
-  A = e => {
+  N = e => {
     let t = (0, i.e7)([g.Z], () => g.Z.getAllGuildStickers()),
       n = (0, i.Wu)([u.ZP, l.Z], () => {
         let e = u.ZP.getFlattenedGuildIds(),
@@ -205,19 +205,19 @@ let L = e => {
         frequentlyUsedStickers: m.Z.stickerFrecencyWithoutFetchingLatest.frequently
       }), []),
       o = (0, i.e7)([d.default], () => d.default.getCurrentUser()),
-      s = A(e);
+      s = N(e);
     return r.useMemo(() => {
       var r;
       let i = n.map(b.z);
       return [{
         type: E.Ih.FAVORITE,
         id: E.Ih.FAVORITE,
-        name: v.NW.string(v.t.y3LQCA),
+        name: v.intl.string(v.t.y3LQCA),
         stickers: t
       }, {
         type: E.Ih.RECENT,
         id: E.Ih.RECENT,
-        name: v.NW.string(v.t["6hjpXV"]),
+        name: v.intl.string(v.t["6hjpXV"]),
         stickers: null != (r = null == a ? void 0 : a.filter(t => {
           if ((0, b.J8)(t)) {
             var r, i;

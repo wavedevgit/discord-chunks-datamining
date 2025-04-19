@@ -5,9 +5,9 @@ n.d(t, {
 var r = n(200651),
   o = n(192379),
   a = n(481060),
-  s = n(604857),
-  c = n(17622),
-  i = n(418630),
+  i = n(604857),
+  s = n(17622),
+  c = n(418630),
   l = n(942570);
 
 function u(e) {
@@ -50,29 +50,29 @@ function u(e) {
     }
     return e
   }({
-    className: i.modal,
+    className: c.modal,
     size: a.CgR.DYNAMIC
   }, f), n = n = {
     children: [(0, r.jsxs)(a.hzk, {
-      className: i.modalContentContainer,
+      className: c.modalContentContainer,
       scrollbarType: "none",
       children: [(0, r.jsx)("img", {
         alt: "",
         src: l,
-        className: i.boostImage
+        className: c.boostImage
       }), (0, r.jsxs)("div", {
-        className: i.contentContainer,
+        className: c.contentContainer,
         children: [(0, r.jsx)(a.X6q, {
           variant: "heading-xl/extrabold",
           children: d.title
-        }), (0, r.jsx)(c.Z, {
+        }), (0, r.jsx)(s.Z, {
           powerup: d
         }), null != b && (0, r.jsx)(a.Text, {
           color: "status-danger",
           variant: "text-sm/semibold",
           children: b
-        }), (0, r.jsx)(s.Z, {
-          className: i.footer,
+        }), (0, r.jsx)(i.Z, {
+          className: c.footer,
           guildId: u,
           powerup: d,
           onError: m,
@@ -80,7 +80,7 @@ function u(e) {
         })]
       })]
     }), (0, r.jsx)(a.olH, {
-      className: i.close,
+      className: c.close,
       onClick: p
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

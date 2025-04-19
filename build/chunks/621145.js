@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => D
 }), n(388685), n(457542);
 var i = n(200651),
-  a = n(192379),
-  l = n(392711),
+  l = n(192379),
+  a = n(392711),
   r = n(442837),
   o = n(481060),
   s = n(640108),
@@ -27,10 +27,10 @@ var i = n(200651),
   w = n(709054),
   A = n(236289),
   P = n(788080),
-  N = n(800530),
-  T = n(981631),
-  C = n(217702),
-  S = n(966378);
+  T = n(800530),
+  C = n(981631),
+  S = n(217702),
+  N = n(966378);
 
 function k(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -64,16 +64,16 @@ function I(e, t) {
   }), e
 }
 let L = (e, t, n, i) => {
-    let a = e.attachments.map(e => {
-      var n, i, a, l;
+    let l = e.attachments.map(e => {
+      var n, i, l, a;
       let r = I(k({}, e), {
         filename: (0, P.eS)(e),
         size: 0,
         proxy_url: e.url
       });
       return (0, c.CO)(e.filename) || (0, c.NU)(e.filename) ? I(k({}, r), {
-        width: null != (a = null == (n = t[e.id]) ? void 0 : n.width) ? a : N.Sv,
-        height: null != (l = null == (i = t[e.id]) ? void 0 : i.height) ? l : N.EY
+        width: null != (l = null == (n = t[e.id]) ? void 0 : n.width) ? l : T.Sv,
+        height: null != (a = null == (i = t[e.id]) ? void 0 : i.height) ? a : T.EY
       }) : r
     });
     return (0, u.e5)(I(k({}, (0, p.ZP)({
@@ -85,12 +85,12 @@ let L = (e, t, n, i) => {
       },
       nonce: e.id,
       content: e.content,
-      type: T.uaV.DEFAULT,
-      channelId: T.lds
+      type: C.uaV.DEFAULT,
+      channelId: C.lds
     })), {
       timestamp: new Date(w.default.extractTimestamp(e.id)).toISOString(),
-      attachments: a,
-      state: T.yb.SENT
+      attachments: l,
+      state: C.yb.SENT
     }))
   },
   U = e => {
@@ -100,28 +100,28 @@ let L = (e, t, n, i) => {
       attachments: n
     } = t;
     if (0 === n.length) return null;
-    let a = (e, t, n) => {
-        let a = N.Sv,
-          r = N.EY;
+    let l = (e, t, n) => {
+        let l = T.Sv,
+          r = T.EY;
         if (null != t.width && null != t.height) {
           let e = (0, _.Dc)({
             width: t.width,
             height: t.height,
-            maxWidth: N.Sv,
-            maxHeight: N.EY
+            maxWidth: T.Sv,
+            maxHeight: T.EY
           });
-          a = (0, l.clamp)(Math.round(t.width * e), 0, N.Sv), r = (0, l.clamp)(Math.round(t.height * e), 0, N.EY)
+          l = (0, a.clamp)(Math.round(t.width * e), 0, T.Sv), r = (0, a.clamp)(Math.round(t.height * e), 0, T.EY)
         }
         return (0, i.jsx)("div", {
           style: {
-            width: n ? a : "100%",
+            width: n ? l : "100%",
             height: n ? r : "100%"
           },
           children: (0, i.jsx)(s.ZP, {
             className: e.className,
             forceExternal: !1,
             src: t.url,
-            width: n ? a : "100%",
+            width: n ? l : "100%",
             height: n ? r : "100%",
             responsive: !0,
             volume: e.volume,
@@ -148,7 +148,7 @@ let L = (e, t, n, i) => {
       return (0, d.dn)(e.originalItem, t)
     }
     return (0, i.jsx)("div", {
-      className: S.classificationEvidenceMessageAttachment,
+      className: N.classificationEvidenceMessageAttachment,
       children: (0, i.jsx)(x.Z, {
         items: n.map(e => ({
           item: {
@@ -162,12 +162,12 @@ let L = (e, t, n, i) => {
             contentType: e.content_type
           },
           message: t,
-          mediaLayoutType: C.hV.MOSAIC,
+          mediaLayoutType: S.hV.MOSAIC,
           autoPlayGif: !1,
           canRemoveItem: !1,
           isSingleMosaicItem: r,
-          onRemoveItem: l.noop,
-          renderVideoComponent: t => a(t, e, r),
+          onRemoveItem: a.noop,
+          renderVideoComponent: t => l(t, e, r),
           renderImageComponent: e => (0, i.jsx)(g.dS, I(k({}, e), {
             hiddenSpoilers: !0,
             shouldHideMediaOptions: !0,
@@ -187,15 +187,15 @@ let L = (e, t, n, i) => {
 function D(e) {
   var t, n;
   let {
-    flaggedContent: l
-  } = e, s = (0, r.e7)([E.default], () => E.default.getCurrentUser()), [d, u] = a.useState({}), [m, p] = a.useState(!0), g = (0, r.e7)([A.Z], () => A.Z.getUsername()), y = l[0], x = L(y, d, s, g), _ = (0, h.ZP)(x), w = null != (t = x.getGuildId()) ? t : void 0, P = (0, O.Z)(_), N = (0, j.Z)(x, {
+    flaggedContent: a
+  } = e, s = (0, r.e7)([E.default], () => E.default.getCurrentUser()), [d, u] = l.useState({}), [m, p] = l.useState(!0), g = (0, r.e7)([A.Z], () => A.Z.getUsername()), y = a[0], x = L(y, d, s, g), _ = (0, h.ZP)(x), w = null != (t = x.getGuildId()) ? t : void 0, P = (0, O.Z)(_), T = (0, j.Z)(x, {
     hideSimpleEmbedContent: !1,
     allowList: !1,
     allowHeading: !1,
     allowLinks: !1,
     previewLinkTarget: !1
   });
-  return (a.useEffect(() => {
+  return (l.useEffect(() => {
     Promise.all(y.attachments.filter(e => {
       let {
         filename: t
@@ -227,7 +227,7 @@ function D(e) {
       [e.id]: t
     }))))).finally(() => p(!1))
   }, [y.attachments]), "" === x.content && 0 === x.attachments.length) ? null : (0, i.jsx)("div", {
-    className: S.classificationEvidenceCard,
+    className: N.classificationEvidenceCard,
     children: m ? (0, i.jsx)(o.$jN, {}) : (0, i.jsx)(f.Z, {
       compact: !1,
       childrenHeader: (0, b.Z)({
@@ -249,7 +249,7 @@ function D(e) {
       }),
       childrenMessageContent: (0, v.Z)({
         message: x
-      }, N.content),
+      }, T.content),
       hasThread: !1,
       hasReply: !1,
       authorHasGradientRole: P,

@@ -43,7 +43,7 @@ function f(e) {
   let o = (0, a.Z)(n);
   return (0, r.jsx)(r.Fragment, {
     children: n.buttons.map((e, a) => (0, r.jsx)(l.tG, {
-      text: o ? c.NW.string(c.t["I6JG4+"]) : e,
+      text: o ? c.intl.string(c.t["I6JG4+"]) : e,
       className: u.customButton,
       fullWidth: !0,
       onClick: e => {

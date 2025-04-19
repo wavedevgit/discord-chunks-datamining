@@ -23,9 +23,9 @@ function g(e) {
     analyticsLocations: b
   } = (0, s.ZP)([...m, o.Z.ACTIVITY_DETAIL_PAGE]), {
     applicationId: _
-  } = g.params, [E] = (0, c.Z)([_]), O = null == E || null == (t = E.bot) ? void 0 : t.id, N = (0, i.e7)([d.default], () => d.default.getCurrentUser());
+  } = g.params, [E] = (0, c.Z)([_]), O = null == E || null == (t = E.bot) ? void 0 : t.id, y = (0, i.e7)([d.default], () => d.default.getCurrentUser());
   return r.useEffect(() => {
-    null != O && null != N && (async () => {
+    null != O && null != y && (async () => {
       try {
         var e;
         let t = new URL(location.href),
@@ -45,11 +45,11 @@ function g(e) {
         })
       } catch (e) {}
     })()
-  }, [b, _, O, N]), r.useEffect(() => {
+  }, [b, _, O, y]), r.useEffect(() => {
     let e = setTimeout(() => {
       null == O && l.Z.show({
-        title: f.NW.string(f.t.PtobXV),
-        body: f.NW.string(f.t["IOy+Iy"])
+        title: f.intl.string(f.t.PtobXV),
+        body: f.intl.string(f.t["IOy+Iy"])
       })
     }, 5e3);
     return () => {

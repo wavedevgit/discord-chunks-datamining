@@ -84,24 +84,24 @@ function m(e, t, n) {
       experimental_useStack: S
     } = u, T = p(u, ["children", "className", "dir", "orientation", "fade", "customTheme", "paddingFix", "style", "gap", "experimental_useStack"]);
     let {
-      scrollerRef: N,
-      getScrollerState: A
-    } = (0, c.Ke)(), C = (0, c.t2)(N, E);
+      scrollerRef: A,
+      getScrollerState: N
+    } = (0, c.Ke)(), C = (0, c.t2)(A, E);
     i.useImperativeHandle(f, () => d({
-      getScrollerNode: () => N.current,
-      getScrollerState: A
-    }, (0, c.Ue)(N, A, C, E)), [N, A, E, C]);
+      getScrollerNode: () => A.current,
+      getScrollerState: N
+    }, (0, c.Ue)(A, N, C, E)), [A, N, E, C]);
     let R = (0, c.tT)({
       paddingFix: v,
       orientation: E,
       dir: g,
       className: m,
-      scrollerRef: N,
+      scrollerRef: A,
       specs: a
     });
     return S ? (0, r.jsx)(l.K, _(d({
       gap: I,
-      ref: N,
+      ref: A,
       className: o()(m, {
         [e]: !0,
         [t]: b,
@@ -111,11 +111,11 @@ function m(e, t, n) {
       dir: g
     }, T), {
       children: (0, r.jsxs)(s.Jc, {
-        containerRef: N,
+        containerRef: A,
         children: [h, R]
       })
     })) : (0, r.jsx)("div", _(d({
-      ref: N,
+      ref: A,
       className: o()(m, {
         [e]: !0,
         [t]: b,
@@ -125,7 +125,7 @@ function m(e, t, n) {
       dir: g
     }, T), {
       children: (0, r.jsxs)(s.Jc, {
-        containerRef: N,
+        containerRef: A,
         children: [h, R]
       })
     }))

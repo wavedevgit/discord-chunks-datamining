@@ -29,10 +29,10 @@ let b = ["#51BC9D"],
     } = e, {
       completionSpring: _,
       startCompletionAnimation: C
-    } = (0, f.G)(), O = (null == (t = j.userStatus) ? void 0 : t.completedAt) != null, w = o.useRef(!1), S = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), P = o.useRef(null), E = (0, d.e7)([m.Z], () => m.Z.hasLayers()), N = (0, u.Z)(E), [T, A] = o.useState(null), [R, B] = o.useState(null), k = o.useRef(new i.qA({
+    } = (0, f.G)(), O = (null == (t = j.userStatus) ? void 0 : t.completedAt) != null, w = o.useRef(!1), S = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), P = o.useRef(null), E = (0, d.e7)([m.Z], () => m.Z.hasLayers()), T = (0, u.Z)(E), [N, A] = o.useState(null), [R, B] = o.useState(null), k = o.useRef(new i.qA({
       gravity: 0,
       wind: 0
-    })), q = (0, i.uR)(T, R), D = o.useCallback(() => {
+    })), q = (0, i.uR)(N, R), D = o.useCallback(() => {
       if (S) return;
       let e = v.current,
         t = P.current;
@@ -110,14 +110,14 @@ let b = ["#51BC9D"],
           Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
         }), a), 100)
       }
-    }, [v, P, q, S]), W = (0, u.Z)(y);
+    }, [v, P, q, S]), I = (0, u.Z)(y);
     return (o.useEffect(() => {
-      O && y && !W && (C(), D())
-    }, [y, O, C, D, W]), o.useEffect(() => {
-      O && !E && N && setTimeout(() => {
+      O && y && !I && (C(), D())
+    }, [y, O, C, D, I]), o.useEffect(() => {
+      O && !E && T && setTimeout(() => {
         C(), D()
       }, 200)
-    }, [O, N, E, C, D]), o.useEffect(() => {
+    }, [O, T, E, C, D]), o.useEffect(() => {
       q.isReady && (!w.current && O && (C(), D()), w.current = O)
     }, [O, w, D, C, q]), S) ? null : (0, r.jsxs)("div", {
       className: x.wrapper,

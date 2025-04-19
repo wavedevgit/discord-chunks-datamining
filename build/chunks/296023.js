@@ -17,10 +17,10 @@ function a(e) {
   return r.useMemo(() => {
     if (null == n) return;
     let e = new Date(n);
-    return null != a ? o.NW.format(o.t["xPrJ+v"], {
+    return null != a ? o.intl.format(o.t["xPrJ+v"], {
       username: a.username,
       linkedAtDate: e
-    }) : o.NW.formatToPlainString(o.t.EyygeH, {
+    }) : o.intl.formatToPlainString(o.t.EyygeH, {
       linkedAtDate: e
     })
   }, [n, a])

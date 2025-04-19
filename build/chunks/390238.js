@@ -6,8 +6,8 @@ var r = n(200651),
   t = n(192379),
   o = n(120356),
   d = n.n(o),
-  s = n(995899),
-  i = n(442837),
+  i = n(995899),
+  s = n(442837),
   l = n(481060),
   c = n(607070),
   u = n(530618),
@@ -17,8 +17,8 @@ var r = n(200651),
   g = n(918701),
   f = n(475595),
   x = n(566078),
-  N = n(644646),
-  j = n(114732),
+  j = n(644646),
+  N = n(114732),
   _ = n(46140),
   v = n(675654),
   w = n(388032),
@@ -31,8 +31,8 @@ function R(e) {
     onClose: o,
     quest: h,
     location: g,
-    reward: N
-  } = e, _ = t.useRef(null), [w, R] = t.useState(null), S = t.useRef(new s.qA), y = (0, i.e7)([c.Z], () => c.Z.useReducedMotion), A = t.useMemo(() => (0, f.fh)(h, f.eC.HERO), [h]), M = (null == (a = h.userStatus) ? void 0 : a.claimedAt) != null, [T, q] = t.useState(M ? "claimed" : "loading");
+    reward: j
+  } = e, _ = t.useRef(null), [w, R] = t.useState(null), S = t.useRef(new i.qA), y = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), A = t.useMemo(() => (0, f.fh)(h, f.eC.HERO), [h]), M = (null == (a = h.userStatus) ? void 0 : a.claimedAt) != null, [T, q] = t.useState(M ? "claimed" : "loading");
   t.useEffect(() => {
     if (!M) {
       let e = x.r.build(h.config),
@@ -42,7 +42,7 @@ function R(e) {
   }, [h, g, M]);
   let B = "loading" === T;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(s.O_, {
+    children: [(0, r.jsx)(i.O_, {
       ref: R,
       className: p.confettiCanvas,
       environment: S.current
@@ -57,11 +57,11 @@ function R(e) {
         hideShadow: !0,
         children: B ? (0, r.jsx)(l.$jN, {
           type: l.$jN.Type.SPINNING_CIRCLE
-        }) : "error" === T ? (0, r.jsx)(j.Z, {
+        }) : "error" === T ? (0, r.jsx)(N.Z, {
           onClose: o
         }) : (0, r.jsx)(k, {
           quest: h,
-          rewardName: N.messages.name,
+          rewardName: j.messages.name,
           backgroundUrl: A.url,
           location: g,
           onClose: o
@@ -100,7 +100,7 @@ function k(e) {
         className: p.headerForeground,
         children: [(0, r.jsx)("div", {
           className: p.previewContainer,
-          children: (0, r.jsx)(N.Z, {
+          children: (0, r.jsx)(j.Z, {
             autoplay: !0,
             className: p.rewardTile,
             learnMoreStyle: null,
@@ -123,12 +123,12 @@ function k(e) {
           variant: "heading-lg/bold",
           color: "always-white",
           className: p.heading,
-          children: w.NW.string(w.t["0/Yz+f"])
+          children: w.intl.string(w.t["0/Yz+f"])
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "always-white",
           className: p.text,
-          children: w.NW.format(w.t["v1u/zs"], {
+          children: w.intl.format(w.t["v1u/zs"], {
             rewardName: n
           })
         })]
@@ -143,12 +143,12 @@ function S(e) {
     location: n,
     onClose: o,
     transitionState: d
-  } = e, s = t.useMemo(() => (0, g.K)(a.config), [a]);
-  return null == s ? null : (0, r.jsx)(R, {
+  } = e, i = t.useMemo(() => (0, g.K)(a.config), [a]);
+  return null == i ? null : (0, r.jsx)(R, {
     onClose: o,
     transitionState: d,
     quest: a,
     location: n,
-    reward: s
+    reward: i
   })
 }

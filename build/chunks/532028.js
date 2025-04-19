@@ -12,7 +12,7 @@ function i(e) {
     case 1:
       return e[0].name;
     case 2:
-      return r.NW.formatToPlainString(r.t["G/lpQU"], {
+      return r.intl.formatToPlainString(r.t["G/lpQU"], {
         item1: e[0].name,
         item2: e[1].name
       });
@@ -24,7 +24,7 @@ function i(e) {
           return t
         }).join(", "),
         n = e[e.length - 1];
-      return r.NW.formatToPlainString(r.t.PIMwen, {
+      return r.intl.formatToPlainString(r.t.PIMwen, {
         items: t,
         last: n.name
       })

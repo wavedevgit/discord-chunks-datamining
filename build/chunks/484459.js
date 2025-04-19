@@ -27,12 +27,12 @@ function _(e, t) {
     guildId: I,
     channelId: S,
     joinRequestId: T,
-    abortSignal: N
+    abortSignal: A
   } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
   if ("" === e || u.Z.isFetchingProfile(e, I)) return Promise.resolve();
-  let A = u.Z.getUserProfile(e),
-    C = Date.now() - (null != (h = null == A ? void 0 : A.fetchEndedAt) ? h : 0) >= f;
-  if (((null == A || null == (n = A.fetchError) ? void 0 : n.status) === 404 || (null == A || null == (_ = A.fetchError) ? void 0 : _.status) === 429) && !C) return Promise.resolve();
+  let N = u.Z.getUserProfile(e),
+    C = Date.now() - (null != (h = null == N ? void 0 : N.fetchEndedAt) ? h : 0) >= f;
+  if (((null == N || null == (n = N.fetchError) ? void 0 : n.status) === 404 || (null == N || null == (_ = N.fetchError) ? void 0 : _.status) === 429) && !C) return Promise.resolve();
   let R = u.Z.getGuildMemberProfile(e, I),
     P = u.Z.getMutualGuilds(e),
     w = u.Z.getMutualFriends(e),
@@ -40,7 +40,7 @@ function _(e, t) {
     L = null == w && b,
     x = null == D && E,
     M = null == P && g || L || x,
-    k = null == I ? null == A : null == R,
+    k = null == I ? null == N : null == R,
     j = !k && (C || M);
   if (!k && !j) return Promise.resolve();
   (0, s.z)(), null != t && (0, a.vM)(t);
@@ -52,7 +52,7 @@ function _(e, t) {
     friendToken: y,
     guildId: I,
     joinRequestId: T,
-    abortSignal: N,
+    abortSignal: A,
     connectionsRoleId: null == I || null == (p = (0, o.Ur)({
       guildMember: c.ZP.getMember(I, e),
       channel: l.Z.getChannel(S)

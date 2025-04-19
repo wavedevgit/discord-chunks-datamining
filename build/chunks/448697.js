@@ -73,7 +73,7 @@ function g() {
         children: [(0, r.jsx)(l.Text, {
           variant: "text-sm/semibold",
           color: "always-white",
-          children: f.NW.format(f.t["r+uZYW"], {
+          children: f.intl.format(f.t["r+uZYW"], {
             progress: n
           })
         }), (0, r.jsx)(l.zxk, {
@@ -83,7 +83,7 @@ function g() {
           children: (0, r.jsx)(l.Text, {
             variant: "text-sm/normal",
             color: "always-white",
-            children: f.NW.string(f.t["ETE/oK"])
+            children: f.intl.string(f.t["ETE/oK"])
           })
         })]
       }), (0, r.jsx)(l.Exd, {

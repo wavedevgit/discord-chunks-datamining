@@ -1,5 +1,5 @@
 /** Chunk was on 98335 **/
-n.d(t, {
+n.d(e, {
   Z: () => o
 });
 var r = n(200651);
@@ -9,45 +9,45 @@ var i = n(442837),
   a = n(131951),
   c = n(388032);
 
-function o(e) {
-  return (0, i.e7)([a.Z], () => a.Z.hasContext(e.id), [e.id]) ? (0, r.jsx)(l.sNh, {
+function o(t) {
+  return (0, i.e7)([a.Z], () => a.Z.hasContext(t.id), [t.id]) ? (0, r.jsx)(l.sNh, {
     id: "ingame-voice",
-    label: c.NW.string(c.t["pOul5+"]),
+    label: c.intl.string(c.t["pOul5+"]),
     action: () => (0, l.ZDy)(async () => {
       let {
-        default: t
+        default: e
       } = await n.e("66063").then(n.bind(n, 344516));
       return n => {
         var i, l;
-        return (0, r.jsx)(t, (i = function(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
+        return (0, r.jsx)(e, (i = function(t) {
+          for (var e = 1; e < arguments.length; e++) {
+            var n = null != arguments[e] ? arguments[e] : {},
               r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
+              return Object.getOwnPropertyDescriptor(n, t).enumerable
+            }))), r.forEach(function(e) {
               var r;
-              r = n[t], t in e ? Object.defineProperty(e, t, {
+              r = n[e], e in t ? Object.defineProperty(t, e, {
                 value: r,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-              }) : e[t] = r
+              }) : t[e] = r
             })
           }
-          return e
+          return t
         }({}, n), l = l = {
-          mediaEngineContext: e.id,
-          title: e.name
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-          var n = Object.keys(e);
+          mediaEngineContext: t.id,
+          title: t.name
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(t, e) {
+          var n = Object.keys(t);
           if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
+            var r = Object.getOwnPropertySymbols(t);
             n.push.apply(n, r)
           }
           return n
-        })(Object(l)).forEach(function(e) {
-          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+        })(Object(l)).forEach(function(t) {
+          Object.defineProperty(i, t, Object.getOwnPropertyDescriptor(l, t))
         }), i))
       }
     })

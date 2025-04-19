@@ -14,7 +14,7 @@ var i = n(481060),
 
 function u(e) {
   let {
-    giftMessage: t = l.NW.string(l.t.DrgnS0)
+    giftMessage: t = l.intl.string(l.t.DrgnS0)
   } = e, {
     isGift: n,
     giftRecipient: u

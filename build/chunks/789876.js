@@ -65,11 +65,11 @@
     l.length ? S() : c = 0
   }
 
-  function N(e) {
+  function A(e) {
     return p++, l.push(e), S(), p
   }
 
-  function A(e) {
+  function N(e) {
     var t = e - 1 - m;
     l[t] && (l[t] = null)
   }
@@ -93,7 +93,7 @@
         })
       }
     }(a.requestIdleCallback)
-  } else a.requestIdleCallback = N, a.cancelIdleCallback = A, a.document && document.addEventListener && (a.addEventListener("scroll", v, !0), a.addEventListener("resize", v), document.addEventListener("focus", v, !0), document.addEventListener("mouseover", v, !0), ["click", "keypress", "touchstart", "mousedown"].forEach(function(e) {
+  } else a.requestIdleCallback = A, a.cancelIdleCallback = N, a.document && document.addEventListener && (a.addEventListener("scroll", v, !0), a.addEventListener("resize", v), document.addEventListener("focus", v, !0), document.addEventListener("mouseover", v, !0), ["click", "keypress", "touchstart", "mousedown"].forEach(function(e) {
     document.addEventListener(e, v, {
       capture: !0,
       passive: !0
@@ -104,7 +104,7 @@
     attributes: !0
   }));
   return {
-    request: N,
-    cancel: A
+    request: A,
+    cancel: N
   }
 })

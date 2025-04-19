@@ -2,10 +2,10 @@
 n.d(t, {
   Z: () => d
 }), n(388685);
-var r, i = n(442837),
+var i, r = n(442837),
   s = n(570140);
 
-function a(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -13,17 +13,17 @@ function a(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let l = [];
+let a = [];
 
 function o() {
-  l = []
+  a = []
 }
-class c extends(r = i.ZP.Store) {
+class c extends(i = r.ZP.Store) {
   getSessions() {
-    return l
+    return a
   }
 }
-a(c, "displayName", "AuthSessionsStore");
+l(c, "displayName", "AuthSessionsStore");
 let d = new c(s.Z, {
   LOGOUT: o,
   LOGIN_SUCCESS: o,
@@ -31,16 +31,16 @@ let d = new c(s.Z, {
     let {
       sessions: t
     } = e;
-    l = t.map(e => {
+    a = t.map(e => {
       var t, n;
       return t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            i = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            a(e, t, n[t])
+          }))), i.forEach(function(t) {
+            l(e, t, n[t])
           })
         }
         return e
@@ -49,8 +49,8 @@ let d = new c(s.Z, {
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
+          var i = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, i)
         }
         return n
       })(Object(n)).forEach(function(e) {
@@ -61,12 +61,12 @@ let d = new c(s.Z, {
   LOGOUT_AUTH_SESSIONS_SUCCESS: function(e) {
     let {
       sessionIdHashes: t
-    } = e, n = [...l], r = !1;
+    } = e, n = [...a], i = !1;
     for (let e of t) {
       let t = n.findIndex(t => t.id_hash === e);
-      t >= 0 && (n.splice(t, 1), r = !0)
+      t >= 0 && (n.splice(t, 1), i = !0)
     }
-    if (!r) return !1;
-    l = n
+    if (!i) return !1;
+    a = n
   }
 })

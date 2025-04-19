@@ -28,8 +28,8 @@ function s(t, e) {
         } catch (e) {
           let t = e instanceof o.Hx ? e.getAnyErrorMessage() : void 0;
           a.Z.show({
-            title: c.NW.string(c.t.R0RpRU),
-            body: null != t ? t : c.NW.string(c.t.eAn6z8)
+            title: c.intl.string(c.t.R0RpRU),
+            body: null != t ? t : c.intl.string(c.t.eAn6z8)
           })
         } finally {
           s(!1)

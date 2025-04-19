@@ -59,8 +59,8 @@ function v(e) {
     applicationStream: S,
     onAction: j
   } = e, {
-    activeStream: N,
-    watchingOtherStream: P
+    activeStream: P,
+    watchingOtherStream: E
   } = (0, l.cj)([d.Z], () => ({
     activeStream: d.Z.getActiveStreamForApplicationStream(S),
     watchingOtherStream: null != S && d.Z.getAllActiveStreamsForChannel(S.channelId).filter(e => {
@@ -69,22 +69,22 @@ function v(e) {
       } = e;
       return t !== S.ownerId
     }).length > 0
-  })), E = (0, l.e7)([p.Z], () => p.Z.getChannel(null == S ? void 0 : S.channelId)), [Z, I] = (0, u.wq)(E), x = (0, c.Aq)(), C = null != N && null != S && N.state !== g.jm8.ENDED && N.ownerId === S.ownerId, T = e => {
-    null != S && (null == j || j(), a.default.selectVoiceChannel(S.channelId), C || (0, s.iV)(S, {
+  })), Z = (0, l.e7)([p.Z], () => p.Z.getChannel(null == S ? void 0 : S.channelId)), [I, x] = (0, u.wq)(Z), C = (0, c.Aq)(), T = null != P && null != S && P.state !== g.jm8.ENDED && P.ownerId === S.ownerId, N = e => {
+    null != S && (null == j || j(), a.default.selectVoiceChannel(S.channelId), T || (0, s.iV)(S, {
       forceMultiple: e
-    }), x.dispatch(g.CkL.POPOUT_CLOSE), f.S.dispatch(g.CkL.MODAL_CLOSE), o.Z.popAll())
+    }), C.dispatch(g.CkL.POPOUT_CLOSE), f.S.dispatch(g.CkL.MODAL_CLOSE), o.Z.popAll())
   };
   if (null == S) return null;
-  let A = (0, u.P9)(I);
-  t ? A = b.NW.string(b.t.XvBdeX) : C && (A = b.NW.string(b.t.JH1SJy));
+  let A = (0, u.P9)(x);
+  t ? A = b.intl.string(b.t.XvBdeX) : T && (A = b.intl.string(b.t.JH1SJy));
   let w = {
     color: n,
     look: v
   };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(m.Z, y(h({
-      disabled: t || C || !Z,
-      onClick: () => T(!1)
+      disabled: t || T || !I,
+      onClick: () => N(!1)
     }, w), {
       fullWidth: !0,
       children: [(0, r.jsx)(i.hGI, {
@@ -92,12 +92,12 @@ function v(e) {
         color: "currentColor",
         className: O.streamIcon
       }), A]
-    }), "play"), P && !C ? (0, r.jsx)(i.ua7, {
-      text: b.NW.string(b.t.wCrzur),
+    }), "play"), E && !T ? (0, r.jsx)(i.ua7, {
+      text: b.intl.string(b.t.wCrzur),
       children: e => (0, r.jsx)(m.Z, y(h(y(h({}, e), {
         onClick: () => {
           var t;
-          null == (t = e.onClick) || t.call(e), T(!0)
+          null == (t = e.onClick) || t.call(e), N(!0)
         }
       }), w), {
         className: O.iconButton,

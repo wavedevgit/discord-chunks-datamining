@@ -25,9 +25,9 @@ var n, r = t(200651),
   j = t(785992),
   O = t(400266),
   E = t(592125),
-  N = t(52824),
-  C = t(626135),
-  S = t(585483),
+  C = t(52824),
+  S = t(626135),
+  N = t(585483),
   P = t(55935),
   T = t(408433),
   A = t(956664),
@@ -39,9 +39,9 @@ var n, r = t(200651),
   B = t(388032),
   V = t(94488),
   _ = t(166011),
-  W = t(73433);
+  D = t(73433);
 
-function D(e, l, t) {
+function W(e, l, t) {
   return l in e ? Object.defineProperty(e, l, {
     value: t,
     enumerable: !0,
@@ -57,7 +57,7 @@ function F(e) {
     "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
       return Object.getOwnPropertyDescriptor(t, e).enumerable
     }))), n.forEach(function(l) {
-      D(e, l, t[l])
+      W(e, l, t[l])
     })
   }
   return e
@@ -98,7 +98,7 @@ function G(e) {
     onPlay: j,
     onPause: O,
     onEnded: E,
-    onControlsHide: C,
+    onControlsHide: S,
     onControlsShow: P,
     onVolumeChange: T,
     onMute: H,
@@ -106,11 +106,11 @@ function G(e) {
     placeholder: R,
     placeholderVersion: B,
     sourceMetadata: _
-  } = e, [W, D] = i.useState(y), F = null != c && null == c.proxyURL, Z = i.useCallback(() => D(!1), [D]), G = e => {
-    e.preventDefault(), e.stopPropagation(), null == j || j(!1), D(!0), F && (S.S.dispatch(L.CkL.VIDEO_EMBED_PLAYBACK_STARTED), S.S.subscribeOnce(L.CkL.VIDEO_EMBED_PLAYBACK_STARTED, Z))
+  } = e, [D, W] = i.useState(y), F = null != c && null == c.proxyURL, Z = i.useCallback(() => W(!1), [W]), G = e => {
+    e.preventDefault(), e.stopPropagation(), null == j || j(!1), W(!0), F && (N.S.dispatch(L.CkL.VIDEO_EMBED_PLAYBACK_STARTED), N.S.subscribeOnce(L.CkL.VIDEO_EMBED_PLAYBACK_STARTED, Z))
   };
   i.useEffect(() => () => {
-    F && S.S.unsubscribe(L.CkL.VIDEO_EMBED_PLAYBACK_STARTED, Z)
+    F && N.S.unsubscribe(L.CkL.VIDEO_EMBED_PLAYBACK_STARTED, Z)
   }, [F, Z]);
   let {
     width: U,
@@ -124,7 +124,7 @@ function G(e) {
     maxHeight: u
   });
   U = Math.max(Y.width, 150), z = Math.max(Y.height, 144);
-  let q = (0, N.q)(d);
+  let q = (0, C.q)(d);
   if (null != c && null != c.proxyURL) return (0, r.jsx)("div", {
     className: a()(V.embedVideo, n),
     children: b({
@@ -146,12 +146,12 @@ function G(e) {
       onPlay: j,
       onPause: O,
       onMute: H,
-      onControlsHide: C,
+      onControlsHide: S,
       onControlsShow: P,
       sourceMetadata: _
     })
   });
-  if (W && null != c) {
+  if (D && null != c) {
     let e, l = !0 === w || "function" == typeof w && w(),
       t = {
         width: U,
@@ -257,8 +257,8 @@ function U(e) {
   return (0, r.jsx)(v.Z, {
     className: a()(V.embedVideo, l),
     original: t,
-    poster: (0, N.q)(o),
-    src: (0, N.q)(u),
+    poster: (0, C.q)(o),
+    src: (0, C.q)(u),
     alt: h,
     width: o.width,
     height: o.height,
@@ -392,7 +392,7 @@ class z extends(n = i.PureComponent) {
         } = r;
         return i({
           containerClassName: V.embedThumbnail,
-          src: (0, N.q)(l),
+          src: (0, C.q)(l),
           original: l.url,
           width: l.width,
           height: l.height,
@@ -525,7 +525,7 @@ class z extends(n = i.PureComponent) {
           channelId: null != (r = null == e ? void 0 : e.id) ? r : "",
           location: o.I.CONTEXTUAL_IMAGE,
           withCommands: !0
-        }), C.default.track(L.rMx.IMAGE_HOVERED, {
+        }), S.default.track(L.rMx.IMAGE_HOVERED, {
           guild_id: null == e ? void 0 : e.guild_id,
           channel_id: null == e ? void 0 : e.id,
           image_recommendations_shown: this.props.showImageRecs
@@ -541,7 +541,7 @@ class z extends(n = i.PureComponent) {
       isVisible: o = !0,
       image: u,
       isGalleryImage: d = !1,
-      alt: c = B.NW.string(B.t.X4IxWF),
+      alt: c = B.intl.string(B.t.X4IxWF),
       allImages: h = null
     } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, {
       renderImageComponent: m,
@@ -553,7 +553,7 @@ class z extends(n = i.PureComponent) {
       sourceMetadata: w
     } = this.state;
     if (null == u) return null;
-    let j = (0, N.q)(u),
+    let j = (0, C.q)(u),
       {
         srcToOnClickOverride: O,
         srcToHandlePreloadImage: E
@@ -564,13 +564,13 @@ class z extends(n = i.PureComponent) {
         original: e.url,
         srcIsAnimated: e.srcIsAnimated
       })), {}, "Embed"),
-      C = y.ZP.isAnimated({
-        src: (0, N.q)(u),
+      S = y.ZP.isAnimated({
+        src: (0, C.q)(u),
         original: u.url,
         animated: !1,
         srcIsAnimated: u.srcIsAnimated
       }),
-      S = {
+      N = {
         containerClassName: a()(p, {
           [V.embedMedia]: !d,
           [V.embedImage]: !d,
@@ -578,7 +578,7 @@ class z extends(n = i.PureComponent) {
         }),
         imageContainerClassName: d ? V.galleryImageContainer : void 0,
         imageClassName: d ? V.embedGalleryImageElement : void 0,
-        src: (0, N.q)(u),
+        src: (0, C.q)(u),
         alt: null == u.description || "" === u.description ? c : u.description,
         responsive: !0,
         limitResponsiveWidth: !d,
@@ -605,9 +605,9 @@ class z extends(n = i.PureComponent) {
           let {
             disableAnimations: t
           } = l;
-          return m(Z(F({}, S), {
+          return m(Z(F({}, N), {
             autoPlay: f && !t && !s,
-            renderAccessory: C ? e : null,
+            renderAccessory: S ? e : null,
             handlePreloadImage: E[j],
             onClick: O[j],
             onMouseEnter: () => this.handleImageHover(!0, u, A),
@@ -863,7 +863,7 @@ class z extends(n = i.PureComponent) {
       },
       className: V.embedSuppressButton,
       onClick: e,
-      "aria-label": B.NW.string(B.t.GT3fNz),
+      "aria-label": B.intl.string(B.t.GT3fNz),
       children: (0, r.jsx)(u.Dio, {
         size: "xs",
         color: "currentColor"
@@ -963,7 +963,7 @@ class z extends(n = i.PureComponent) {
   }
   constructor(...e) {
     var l;
-    super(...e), l = this, D(this, "state", F({
+    super(...e), l = this, W(this, "state", F({
       isVisible: null == this.props.obscureReason,
       videoControlsShown: !1,
       isImageHovered: !1,
@@ -975,15 +975,15 @@ class z extends(n = i.PureComponent) {
           embedIndex: this.props.embedIndex
         }
       }
-    }, (0, T.vP)(this.props.embed))), D(this, "onReveal", () => {
+    }, (0, T.vP)(this.props.embed))), W(this, "onReveal", () => {
       this.setState({
         isVisible: !0
       })
-    }), D(this, "onToggleObscurity", () => {
+    }), W(this, "onToggleObscurity", () => {
       this.setState({
         isVisible: !this.state.isVisible
       })
-    }), D(this, "renderInlineMediaEmbed", function() {
+    }), W(this, "renderInlineMediaEmbed", function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
         {
           obscureReason: t,
@@ -1003,7 +1003,7 @@ class z extends(n = i.PureComponent) {
         },
         children: l.renderMedia(e)
       })
-    }), D(this, "renderEmbedContent", function() {
+    }), W(this, "renderEmbedContent", function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
         {
           className: t,
@@ -1021,7 +1021,7 @@ class z extends(n = i.PureComponent) {
           footer: p
         } = l.renderAll();
       return (0, r.jsx)("article", {
-        className: a()(t, V.embedFull, W.markup, {
+        className: a()(t, V.embedFull, D.markup, {
           [V.isHidden]: e,
           [V.spoilerEmbed]: i === w.wk.SPOILER,
           [V.hiddenExplicitEmbed]: null != i && [w.wk.EXPLICIT_CONTENT, w.wk.POTENTIAL_EXPLICIT_CONTENT].includes(i),
@@ -1046,7 +1046,7 @@ class z extends(n = i.PureComponent) {
     })
   }
 }
-D(z, "defaultProps", {
+W(z, "defaultProps", {
   hideMedia: !1,
   allowFullScreen: !0,
   maxThumbnailWidth: 80,

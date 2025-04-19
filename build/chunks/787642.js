@@ -57,14 +57,14 @@ function O() {
       children: [(0, r.jsx)(l.vwX, {
         tag: t ? "h1" : "h2",
         className: m.title,
-        children: g.NW.string(g.t.IuMx1d)
+        children: g.intl.string(g.t.IuMx1d)
       }), t ? (0, r.jsx)(l.R94, {
         id: _,
         type: l.R94.Types.DESCRIPTION,
         children: (0, r.jsx)(l.Text, {
           tag: "div",
           variant: "heading-md/normal",
-          children: g.NW.string(g.t.DwevPj)
+          children: g.intl.string(g.t.DwevPj)
         })
       }) : null]
     }), (0, r.jsxs)("div", {
@@ -75,7 +75,7 @@ function O() {
         size: 240
       }), e.name, () => {
         n(e.id)
-      })), E(l.Jmo, g.NW.string(g.t.AhKnz8), () => {
+      })), E(l.Jmo, g.intl.string(g.t.AhKnz8), () => {
         d.default.track(f.rMx.ADD_FRIEND_OTHER_PLACES_DISCOVERY_CLICKED), (0, s.uL)(f.Z5c.GUILD_DISCOVERY)
       })]
     })]

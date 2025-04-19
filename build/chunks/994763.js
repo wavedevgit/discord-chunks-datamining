@@ -30,13 +30,13 @@ var i = t(200651),
   M = t(359191),
   x = t(896007),
   G = t(978946),
-  N = t(981631),
-  _ = t(388032);
+  _ = t(981631),
+  N = t(388032);
 
 function T(e) {
   let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
     t = arguments.length > 2 ? arguments[2] : void 0;
-  c.ZP.trackWithMetadata(N.rMx.SETTINGS_PANE_VIEWED, {
+  c.ZP.trackWithMetadata(_.rMx.SETTINGS_PANE_VIEWED, {
     settings_type: "guild",
     origin_pane: n,
     destination_pane: e,
@@ -82,7 +82,7 @@ class A extends l.PureComponent {
       canAccessMembersPage: g,
       canViewGuildAnalytics: h
     } = this.props;
-    t !== n && T(t, n), (i || l || a || r || s || c || d || g || u || p) && (d || t !== N.pNK.AUDIT_LOG) && (a || t !== N.pNK.ROLES) && (c || t !== N.pNK.EMOJI) && (c || t !== N.pNK.STICKERS) && (c || t !== N.pNK.SOUNDBOARD) && (r || t !== N.pNK.BANS) && (h || t !== N.pNK.ANALYTICS) && (g || t !== N.pNK.MEMBERS) || (0, o.xf)()
+    t !== n && T(t, n), (i || l || a || r || s || c || d || g || u || p) && (d || t !== _.pNK.AUDIT_LOG) && (a || t !== _.pNK.ROLES) && (c || t !== _.pNK.EMOJI) && (c || t !== _.pNK.STICKERS) && (c || t !== _.pNK.SOUNDBOARD) && (r || t !== _.pNK.BANS) && (h || t !== _.pNK.ANALYTICS) && (g || t !== _.pNK.MEMBERS) || (0, o.xf)()
   }
   render() {
     var e, n;
@@ -109,7 +109,7 @@ class A extends l.PureComponent {
       onboardingEnabled: w,
       welcomeScreenEmpty: P,
       guildMetadata: M,
-      isGuildSettingsFoundationEnabled: N
+      isGuildSettingsFoundationEnabled: _
     } = this.props;
     if (null == s) return null;
     let T = (0, x.vE)({
@@ -133,7 +133,7 @@ class A extends l.PureComponent {
         welcomeScreenEmpty: P,
         guildMetadata: M,
         section: a,
-        isGuildSettingsFoundationEnabled: N
+        isGuildSettingsFoundationEnabled: _
       }),
       k = (null == (n = T.find(e => e.section === a)) || null == (e = n.predicate) ? void 0 : e.call(n)) !== !1,
       A = (0, G.r)(s.id);
@@ -144,7 +144,7 @@ class A extends l.PureComponent {
         section: k && null != a ? a : A,
         onSetSection: E.Z.setSection,
         onClose: o.xf,
-        title: "" !== s.toString() ? s.toString() : _.NW.string(_.t["154/bG"]),
+        title: "" !== s.toString() ? s.toString() : N.intl.string(N.t["154/bG"]),
         sections: T
       }), (0, i.jsx)(f.d, {
         guildId: s.id
@@ -163,11 +163,11 @@ function B() {
     isGuildMetadataLoaded: x
   } = (0, a.cj)([P.Z], () => P.Z.getProps()), {
     analyticsLocations: G
-  } = (0, d.ZP)(s.Z.GUILD_SETTINGS), _ = (0, a.e7)([C.Z], () => C.Z.theme), T = (0, a.e7)([C.Z], () => C.Z.darkSidebar ? N.BRd.DARK : void 0), B = (0, a.e7)([Z.ZP], () => null != o ? Z.ZP.getChannels(o.id).SELECTABLE : null, [o]), D = (0, a.cj)([j.Z], () => null != o ? j.Z.getGuildPermissionProps(o) : k), I = null == o ? void 0 : o.id, R = (0, a.e7)([j.Z], () => null != o && j.Z.canAccessGuildSettings(o));
+  } = (0, d.ZP)(s.Z.GUILD_SETTINGS), N = (0, a.e7)([C.Z], () => C.Z.theme), T = (0, a.e7)([C.Z], () => C.Z.darkSidebar ? _.BRd.DARK : void 0), B = (0, a.e7)([Z.ZP], () => null != o ? Z.ZP.getChannels(o.id).SELECTABLE : null, [o]), D = (0, a.cj)([j.Z], () => null != o ? j.Z.getGuildPermissionProps(o) : k), I = null == o ? void 0 : o.id, R = (0, a.e7)([j.Z], () => null != o && j.Z.canAccessGuildSettings(o));
   l.useEffect(() => {
     x || null == I || (0, u.aC)(I)
   }, [x, I]);
-  let F = null != (e = null == o ? void 0 : o.hasFeature(N.oNc.COMMUNITY)) && e;
+  let F = null != (e = null == o ? void 0 : o.hasFeature(_.oNc.COMMUNITY)) && e;
   l.useEffect(() => {
     null != I && F && ((0, p.eM)(I), (0, v.RM)(I))
   }, [I, F]), l.useEffect(() => {
@@ -183,8 +183,8 @@ function B() {
   }, [I, D.canManageGuild]), l.useEffect(() => {
     R || E.Z.close()
   }, [R]);
-  let W = (0, a.e7)([M.Z], () => M.Z.getCurrentPage()),
-    U = (0, a.e7)([g.Z], () => null != I && g.Z.getEnabled(I)),
+  let U = (0, a.e7)([M.Z], () => M.Z.getCurrentPage()),
+    W = (0, a.e7)([g.Z], () => null != I && g.Z.getEnabled(I)),
     V = (0, a.e7)([O.Z], () => null != I && O.Z.isEmpty(I)),
     q = (0, y.F)(I).length > 0,
     Y = (0, w.Dj)({
@@ -213,7 +213,7 @@ function B() {
     }({
       guild: o,
       section: r,
-      theme: _,
+      theme: N,
       sidebarTheme: T,
       channels: B,
       showDirtyGuildTemplateIndicator: K,
@@ -222,8 +222,8 @@ function B() {
     }, D), t = t = {
       canUnlinkChannels: q,
       canViewGuildAnalytics: D.canViewGuildAnalytics,
-      onboardingStep: W,
-      onboardingEnabled: U,
+      onboardingStep: U,
+      onboardingEnabled: W,
       welcomeScreenEmpty: V,
       guildMetadata: f,
       isGuildSettingsFoundationEnabled: Y

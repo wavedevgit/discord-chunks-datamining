@@ -142,12 +142,12 @@ var r = function(e) {
     return o
   }
 
-  function N(e, t) {
+  function A(e, t) {
     for (var n = []; t-- > 0;) n.push(0);
     return n.concat(e)
   }
 
-  function A(e, t) {
+  function N(e, t) {
     var n = Math.max(e.length, t.length);
     if (n <= 30) return S(e, t);
     n = Math.ceil(n / 2);
@@ -155,10 +155,10 @@ var r = function(e) {
       i = e.slice(0, n),
       a = t.slice(n),
       o = t.slice(0, n),
-      s = A(i, o),
-      l = A(r, a),
-      c = A(b(i, r), b(o, a)),
-      u = b(b(s, N(v(v(c, s), l), n)), N(l, 2 * n));
+      s = N(i, o),
+      l = N(r, a),
+      c = N(b(i, r), b(o, a)),
+      u = b(b(s, A(v(v(c, s), l), n)), A(l, 2 * n));
     return h(u), u
   }
 
@@ -334,7 +334,7 @@ var r = function(e) {
       if ((n = Math.abs(a)) < t) return new c(T(i, n), o);
       a = _(n)
     }
-    return C(i.length, a.length) ? new c(A(i, a), o) : new c(S(i, a), o)
+    return C(i.length, a.length) ? new c(N(i, a), o) : new c(S(i, a), o)
   }, c.prototype.times = c.prototype.multiply, u.prototype._multiplyBySmall = function(e) {
     return f(e.value * this.value) ? new u(e.value * this.value) : R(Math.abs(e.value), _(Math.abs(this.value)), this.sign !== e.sign)
   }, c.prototype._multiplyBySmall = function(e) {
@@ -565,15 +565,15 @@ var r = function(e) {
   var Z = 0x40000000,
     H = (t & -t) * (t & -t) | 0x40000000;
 
-  function W(e) {
+  function Y(e) {
     var n = e.value,
       r = "number" == typeof n ? n | Z : "bigint" == typeof n ? n | BigInt(Z) : n[0] + n[1] * t | H;
     return r & -r
   }
 
-  function Y(e, t) {
+  function W(e, t) {
     if (0 >= t.compareTo(e)) {
-      var n = Y(e, t.square(t)),
+      var n = W(e, t.square(t)),
         i = n.p,
         a = n.e,
         o = i.multiply(t);
@@ -603,10 +603,10 @@ var r = function(e) {
     if (e = ea(e).abs(), t = ea(t).abs(), e.equals(t)) return e;
     if (e.isZero()) return t;
     if (t.isZero()) return e;
-    for (var n, r, i = l[1]; e.isEven() && t.isEven();) n = z(W(e), W(t)), e = e.divide(n), t = t.divide(n), i = i.multiply(n);
-    for (; e.isEven();) e = e.divide(W(e));
+    for (var n, r, i = l[1]; e.isEven() && t.isEven();) n = z(Y(e), Y(t)), e = e.divide(n), t = t.divide(n), i = i.multiply(n);
+    for (; e.isEven();) e = e.divide(Y(e));
     do {
-      for (; t.isEven();) t = t.divide(W(t));
+      for (; t.isEven();) t = t.divide(Y(t));
       e.greater(t) && (r = t, t = e, e = r), t = t.subtract(e)
     } while (!t.isZero());
     return i.isUnit() ? e : e.multiply(i)
@@ -631,7 +631,7 @@ var r = function(e) {
   }
   c.prototype.bitLength = function() {
     var e = this;
-    return (0 > e.compareTo(r(0)) && (e = e.negate().subtract(r(1))), 0 === e.compareTo(r(0))) ? r(0) : r(Y(e, r(2)).e).add(r(1))
+    return (0 > e.compareTo(r(0)) && (e = e.negate().subtract(r(1))), 0 === e.compareTo(r(0))) ? r(0) : r(W(e, r(2)).e).add(r(1))
   }, d.prototype.bitLength = u.prototype.bitLength = c.prototype.bitLength;
   var J = function(e, t, n, r) {
     n = n || o, e = String(e), r || (e = e.toLowerCase(), n = n.toLowerCase());

@@ -33,8 +33,8 @@ function E(e) {
     location: "UserProfileActivityVoiceChannelButtons"
   });
   if (!v) return null;
-  let I = () => b === h.y0.FULL_SIZE ? g.NW.string(g.t["3xjX0d"]) : t.isDM() || t.isGroupDM() ? g.NW.string(g.t["7hwn2N"]) : t.isGuildStageVoice() ? g.NW.string(g.t.Acqcoq) : g.NW.string(g.t.BXxdl5),
-    S = () => b === h.y0.FULL_SIZE ? g.NW.string(g.t.VJlc0d) : t.isDM() || t.isGroupDM() ? g.NW.string(g.t.ozoE2N) : t.isGuildStageVoice() ? g.NW.string(g.t["7vb2cX"]) : g.NW.string(g.t["96ANUF"]);
+  let I = () => b === h.y0.FULL_SIZE ? g.intl.string(g.t["3xjX0d"]) : t.isDM() || t.isGroupDM() ? g.intl.string(g.t["7hwn2N"]) : t.isGuildStageVoice() ? g.intl.string(g.t.Acqcoq) : g.intl.string(g.t.BXxdl5),
+    S = () => b === h.y0.FULL_SIZE ? g.intl.string(g.t.VJlc0d) : t.isDM() || t.isGroupDM() ? g.intl.string(g.t.ozoE2N) : t.isGuildStageVoice() ? g.intl.string(g.t["7vb2cX"]) : g.intl.string(g.t["96ANUF"]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(p.tG, {
       text: y ? I() : S(),
@@ -47,7 +47,7 @@ function E(e) {
       }
     }), O && t.isGuildVocal() && (0, r.jsx)(p.ef, {
       icon: i.kBi,
-      tooltipText: y ? g.NW.string(g.t.kkKapK) : g.NW.string(g.t.ZXxLQk),
+      tooltipText: y ? g.intl.string(g.t.kkKapK) : g.intl.string(g.t.ZXxLQk),
       themeColor: y ? "secondary" : "primary",
       onClick: e => {
         e.stopPropagation(), null == n || n({

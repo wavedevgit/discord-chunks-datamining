@@ -36,25 +36,25 @@ function P(e) {
     sendMessage: E,
     transitionState: S,
     onClose: A
-  } = e, w = (0, d.Dt)(), N = (0, l.e7)([p.Z], () => p.Z.getChannel(n), [n]), D = (0, l.e7)([_.Z], () => _.Z.getGuild(null == N ? void 0 : N.getGuildId()), [N]), k = (0, l.e7)([p.Z], () => p.Z.getChannel(null == N ? void 0 : N.parent_id), [N]), z = null == (t = P[0]) ? void 0 : t.item, [L, R] = i.useState(null);
+  } = e, w = (0, d.Dt)(), D = (0, l.e7)([p.Z], () => p.Z.getChannel(n), [n]), k = (0, l.e7)([_.Z], () => _.Z.getGuild(null == D ? void 0 : D.getGuildId()), [D]), z = (0, l.e7)([p.Z], () => p.Z.getChannel(null == D ? void 0 : D.parent_id), [D]), L = null == (t = P[0]) ? void 0 : t.item, [R, N] = i.useState(null);
   i.useEffect(() => {
-    null != z && (0, m.Fq)(z.file, (e, t) => R(e), j.dG)
-  }, [z]);
-  let Z = null != z && null != L ? {
-      src: L,
+    null != L && (0, m.Fq)(L.file, (e, t) => N(e), j.dG)
+  }, [L]);
+  let Z = null != L && null != R ? {
+      src: R,
       width: v.TJ,
       height: v.Lp,
       spoiler: P[0].spoiler,
       alt: P[0].description
     } : null,
     [U, B] = i.useState(!1),
-    W = i.useCallback(() => {
+    G = i.useCallback(() => {
       (0, x.xI)({
         added: !1
       }), E(), A()
     }, [E, A]),
-    G = i.useCallback(() => {
-      null != N && null != D && ((0, x.xI)({
+    F = i.useCallback(() => {
+      null != D && null != k && ((0, x.xI)({
         added: !0
       }), function(e) {
         let {
@@ -82,14 +82,14 @@ function P(e) {
           addFilesTo: "attachments"
         })
       }({
-        thread: N,
+        thread: D,
         attachments: P,
         setIsUploading: B,
-        guild: D,
+        guild: k,
         onClose: A
       }))
-    }, [N, P, B, D, A]);
-  return null == k ? null : (0, a.jsxs)(r.Y0X, {
+    }, [D, P, B, k, A]);
+  return null == z ? null : (0, a.jsxs)(r.Y0X, {
     transitionState: S,
     size: r.CgR.SMALL,
     className: M.modalRoot,
@@ -100,15 +100,15 @@ function P(e) {
         variant: "heading-md/semibold",
         className: M.header,
         id: w,
-        children: I.NW.string(I.t.hMWWMT)
+        children: I.intl.string(I.t.hMWWMT)
       }), (0, a.jsx)(r.Text, {
         variant: "text-md/normal",
         className: M.__invalid_body,
-        children: I.NW.string(I.t.zMsUsr)
+        children: I.intl.string(I.t.zMsUsr)
       }), (0, a.jsx)("div", {
         className: M.forumPost,
         children: (0, a.jsx)(T.oL, {
-          channel: k,
+          channel: z,
           children: (0, a.jsx)(v.ZP, {
             threadId: n,
             goToThread: j.dG,
@@ -123,20 +123,20 @@ function P(e) {
         className: M.cancelButton,
         disabled: U,
         onClick: A,
-        children: I.NW.string(I.t["ETE/oK"])
+        children: I.intl.string(I.t["ETE/oK"])
       }), (0, a.jsx)(r.zxk, {
         color: r.zxk.Colors.PRIMARY,
         className: M.dontAddButton,
         disabled: U,
-        onClick: W,
-        children: I.NW.string(I.t["8rKVHB"])
+        onClick: G,
+        children: I.intl.string(I.t["8rKVHB"])
       }), (0, a.jsx)(r.zxk, {
         color: r.zxk.Colors.BRAND,
         className: M.__invalid_button,
         submitting: U,
-        onClick: G,
+        onClick: F,
         autoFocus: !0,
-        children: I.NW.string(I.t.d611xM)
+        children: I.intl.string(I.t.d611xM)
       })]
     })]
   })

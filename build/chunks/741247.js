@@ -22,7 +22,7 @@ function c(e) {
   } = e, c = (0, o.Z)(n, t);
   return 0 === c.length ? null : (0, r.jsx)(i.v2r, {
     navId: "guild-settings-role-context",
-    "aria-label": a.NW.string(a.t["337Ja2"]),
+    "aria-label": a.intl.string(a.t["337Ja2"]),
     onClose: l.Zy,
     onSelect: s,
     children: c

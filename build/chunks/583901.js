@@ -142,7 +142,7 @@ function I(e) {
     theme: p.BRd.DARKER
   }, () => m.darkerIcon).with({
     theme: p.BRd.MIDNIGHT
-  }, () => m.midnightIcon).otherwise(() => m.darkIcon), E = (0, o.EQ)(t).with(p.BRd.LIGHT, () => h.NW.string(h.t.K2sFfn)).with(p.BRd.DARK, () => _ ? h.NW.string(h.t.SMPT1t) : h.NW.string(h.t.b8Cei4)).with(p.BRd.DARKER, () => h.NW.string(h.t.b8Cei4)).with(p.BRd.MIDNIGHT, () => h.NW.string(h.t.Do4ZJy)).with("system", () => h.NW.string(h.t["7rOU6u"])).exhaustive();
+  }, () => m.midnightIcon).otherwise(() => m.darkIcon), E = (0, o.EQ)(t).with(p.BRd.LIGHT, () => h.intl.string(h.t.K2sFfn)).with(p.BRd.DARK, () => _ ? h.intl.string(h.t.SMPT1t) : h.intl.string(h.t.b8Cei4)).with(p.BRd.DARKER, () => h.intl.string(h.t.b8Cei4)).with(p.BRd.MIDNIGHT, () => h.intl.string(h.t.Do4ZJy)).with("system", () => h.intl.string(h.t["7rOU6u"])).exhaustive();
   return (0, r.jsx)(O, {
     onSelect: i,
     isSelected: n,

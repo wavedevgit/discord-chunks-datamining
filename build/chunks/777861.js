@@ -10,8 +10,8 @@ var i = n(481060),
   a = n(388032);
 
 function o(e) {
-  return null == e || null == e.end_time ? null : a.NW.formatToPlainString(a.t.j7h4AA, {
-    endTime: new Date(e.end_time).toLocaleString(a.NW.currentLocale, {
+  return null == e || null == e.end_time ? null : a.intl.formatToPlainString(a.t.j7h4AA, {
+    endTime: new Date(e.end_time).toLocaleString(a.intl.currentLocale, {
       month: "numeric",
       day: "numeric",
       hour: "numeric",

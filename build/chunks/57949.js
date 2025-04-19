@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(772848),
-  a = n(481060),
-  l = n(159351),
+  l = n(481060),
+  a = n(159351),
   o = n(667),
   s = n(626135),
   c = n(981631);
@@ -19,12 +19,12 @@ function u(e) {
   } = e, p = !1, m = (0, i.Z)(), f = t.id, h = () => {
     p = !0
   };
-  (0, a.ZDy)(async () => {
+  (0, l.ZDy)(async () => {
     let {
       default: e
     } = await n.e("88806").then(n.bind(n, 578780));
     return n => {
-      var i, a;
+      var i, l;
       return (0, r.jsx)(e, (i = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -42,7 +42,7 @@ function u(e) {
           })
         }
         return e
-      }({}, n), a = a = {
+      }({}, n), l = l = {
         applicationId: t.application_id,
         skuId: f,
         sourceAnalyticsLocations: d,
@@ -52,15 +52,15 @@ function u(e) {
         },
         loadId: m,
         onComplete: h
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(a)).forEach(function(e) {
-        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
+      })(Object(l)).forEach(function(e) {
+        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
       }), i))
     }
   }, {
@@ -71,7 +71,7 @@ function u(e) {
         is_gift: !1,
         sku_id: f,
         location_stack: Array.isArray(d) ? d : [d]
-      }), (0, l.fw)(), (0, o.p)()
+      }), (0, a.fw)(), (0, o.p)()
     },
     onCloseRequest: c.dG4
   })

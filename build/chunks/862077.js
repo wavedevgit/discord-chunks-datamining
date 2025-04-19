@@ -52,8 +52,8 @@ function S(e) {
     setPopoutRef: O,
     channelId: S,
     messageId: T,
-    roleId: N,
-    openedAt: A,
+    roleId: A,
+    openedAt: N,
     onHide: C,
     newAnalyticsLocations: R = []
   } = e, P = (0, a.e7)([c.Z], () => c.Z.isBlocked(t.id)), {
@@ -64,7 +64,7 @@ function S(e) {
     guildId: n,
     channelId: S,
     messageId: T,
-    roleId: N
+    roleId: A
   }), L = i.useRef(null), x = (0, _.ZP)(t.id, n);
   i.useEffect(() => {
     null == O || O(null == L ? void 0 : L.current)
@@ -74,7 +74,7 @@ function S(e) {
     value: w,
     children: (0, r.jsx)(d.Mt, {
       value: D,
-      openedAt: A,
+      openedAt: N,
       fetchStartedAt: null == x ? void 0 : x.fetchStartedAt,
       fetchEndedAt: null == x ? void 0 : x.fetchEndedAt,
       isLoaded: null == x ? void 0 : x.isLoaded,
@@ -101,10 +101,10 @@ function S(e) {
                   guildId: n
                 }), (0, r.jsx)(o.X6q, {
                   variant: "heading-lg/bold",
-                  children: b.NW.string(b.t.b33pLC)
+                  children: b.intl.string(b.t.b33pLC)
                 }), (0, r.jsx)(o.Text, {
                   variant: "text-sm/medium",
-                  children: b.NW.format(P ? b.t["8F+WNz"] : b.t["/cZp5u"], {
+                  children: b.intl.format(P ? b.t["8F+WNz"] : b.t["/cZp5u"], {
                     username: u.ZP.getName(n, S, t)
                   })
                 })]

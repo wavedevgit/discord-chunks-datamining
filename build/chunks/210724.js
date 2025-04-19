@@ -30,7 +30,7 @@ var r = n(200651),
   P = n(981631),
   E = n(414444);
 
-function N(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,7 +49,7 @@ function N(e) {
   return e
 }
 
-function T(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -86,7 +86,7 @@ function R(e) {
   }), B = (0, y.qN)({
     quest: s,
     location: S.dr.QUESTS_BAR
-  }), k = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), q = (0, l.e7)([p.Z], () => p.Z.hasLayers()), D = o.useRef(null), W = o.useMemo(() => (0, x.q8)(s), [s]), I = (null == (t = s.userStatus) ? void 0 : t.enrolledAt) != null, M = (0, d.Z)(I), L = (null == (n = s.userStatus) ? void 0 : n.completedAt) != null, Z = (0, d.Z)(L), {
+  }), k = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), q = (0, l.e7)([p.Z], () => p.Z.hasLayers()), D = o.useRef(null), I = o.useMemo(() => (0, x.q8)(s), [s]), M = (null == (t = s.userStatus) ? void 0 : t.enrolledAt) != null, L = (0, d.Z)(M), Z = (null == (n = s.userStatus) ? void 0 : n.completedAt) != null, W = (0, d.Z)(Z), {
     hasError: V,
     isLoading: Q
   } = (0, v.d7)(), U = o.useContext(w.T) || R && B && !Q, H = o.useRef(U), F = (0, O.B)(s, U && !V), z = o.useRef(-1), X = o.useRef(!1), [K, Y] = o.useState(!1), [G, J] = o.useState(!1), [$, ee] = o.useState(!0), [et, en] = o.useState(!0), [er, eo] = o.useState(F.preEnrollmentExpandedHeight), es = o.useRef(null), ea = o.useCallback(e => {
@@ -99,10 +99,10 @@ function R(e) {
   }, [ei, ea]), ec = o.useCallback(() => {
     Y(!0)
   }, []), ed = o.useCallback(() => {
-    Y(!1), X.current || L || ea(!1)
-  }, [L, ea]), eu = o.useCallback(() => {
-    Y(!1), L || ea(!1), X.current = !1
-  }, [L, ea]), ep = o.useCallback(function() {
+    Y(!1), X.current || Z || ea(!1)
+  }, [Z, ea]), eu = o.useCallback(() => {
+    Y(!1), Z || ea(!1), X.current = !1
+  }, [Z, ea]), ep = o.useCallback(function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
     if (G) return;
     let {
@@ -118,7 +118,7 @@ function R(e) {
     (0, m.dA)({
       questId: s.id,
       event: P.rMx.QUEST_HOVER,
-      properties: T(N({}, (0, m.mH)(g.jn.QUEST_BAR)), {
+      properties: N(T({}, (0, m.mH)(g.jn.QUEST_BAR)), {
         impression_id: null == (e = D.current) ? void 0 : e.getId()
       }),
       shouldExtendSession: !0
@@ -130,21 +130,21 @@ function R(e) {
     (0, m.dA)({
       questId: s.id,
       event: P.rMx.QUEST_HOVER_OFF,
-      properties: T(N({}, (0, m.mH)(g.jn.QUEST_BAR)), {
+      properties: N(T({}, (0, m.mH)(g.jn.QUEST_BAR)), {
         impression_id: null == (e = D.current) ? void 0 : e.getId()
       })
     }), X.current = !1, ef()
   }, [ef, s]);
   o.useLayoutEffect(() => {
-    L && F.shouldExpandOnQuestComplete && el()
-  }, [el, L, F.shouldExpandOnQuestComplete]), o.useLayoutEffect(() => {
-    I && !M && X.current && el()
-  }, [el, I, M]), o.useLayoutEffect(() => {
-    L || !I || M || X.current || ea(!1)
-  }, [I, L, M, ea]), o.useLayoutEffect(() => {
+    Z && F.shouldExpandOnQuestComplete && el()
+  }, [el, Z, F.shouldExpandOnQuestComplete]), o.useLayoutEffect(() => {
+    M && !L && X.current && el()
+  }, [el, M, L]), o.useLayoutEffect(() => {
+    Z || !M || L || X.current || ea(!1)
+  }, [M, Z, L, ea]), o.useLayoutEffect(() => {
     U !== H.current && en(!1), H.current = U
   }, [U]);
-  let eh = I ? S.XZ : S.R4,
+  let eh = M ? S.XZ : S.R4,
     [{
       expansionSpring: eb
     }, ej] = (0, c.q_F)(() => ({
@@ -187,22 +187,22 @@ function R(e) {
     }
   });
   return (o.useEffect(() => {
-    W && (0, _.loadVideoQuestModal)()
-  }, [W]), o.useLayoutEffect(() => {
-    L && !Z && F.canCollapseOnBlur && ei()
-  }, [L, el, F.canCollapseOnBlur, ei, Z]), o.useEffect(() => {
+    I && (0, _.loadVideoQuestModal)()
+  }, [I]), o.useLayoutEffect(() => {
+    Z && !W && F.canCollapseOnBlur && ei()
+  }, [Z, el, F.canCollapseOnBlur, ei, W]), o.useEffect(() => {
     var e, t;
     V && (0, m.dA)({
       questId: s.id,
       event: P.rMx.QUEST_CONTENT_RENDERING_FAILURE,
-      properties: T(N({}, (0, m.mH)(g.jn.QUEST_BAR)), {
+      properties: N(T({}, (0, m.mH)(g.jn.QUEST_BAR)), {
         reason: "asset_loading_error",
         impression_id: null == (e = D.current) ? void 0 : e.getId()
       })
     }), R || (0, m.dA)({
       questId: s.id,
       event: P.rMx.QUEST_CONTENT_RENDERING_FAILURE,
-      properties: T(N({}, (0, m.mH)(g.jn.QUEST_BAR)), {
+      properties: N(T({}, (0, m.mH)(g.jn.QUEST_BAR)), {
         reason: "not_eligible_for_quest",
         impression_id: null == (t = D.current) ? void 0 : t.getId()
       })
@@ -238,11 +238,11 @@ function R(e) {
           children: (0, r.jsx)(i.animated.div, {
             className: a()(E.contentWrapper, {
               [E.contentWrapperExpanded]: G,
-              [E.contentWrapperAccepted]: I
+              [E.contentWrapperAccepted]: M
             }),
             style: {
               backgroundColor: F.preEnrollmentBackgroundColor,
-              backgroundImage: I ? F.postEnrollmentBackgroundImage : void 0
+              backgroundImage: M ? F.postEnrollmentBackgroundImage : void 0
             },
             children: (0, r.jsx)(C.t, {
               springConfig: eh,

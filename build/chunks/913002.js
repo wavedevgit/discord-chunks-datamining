@@ -79,7 +79,7 @@ function O(e) {
     g({
       action: "PRESS_EDIT_CUSTOM_STATUS"
     }), v(m), null == a || a()
-  }, N = () => {
+  }, A = () => {
     g({
       action: "PRESS_CLEAR_CUSTOM_STATUS"
     }), f.Ok.updateSetting(void 0)
@@ -91,13 +91,13 @@ function O(e) {
     }),
     children: [(0, r.jsx)(l.DY3, {
       targetElementRef: E,
-      text: p.NW.string(p.t.bt75u7),
+      text: p.intl.string(p.t.bt75u7),
       delay: S,
       "aria-label": !1,
       children: (0, r.jsx)(d.zx, {
         ref: E,
         className: o()(h.button, h.left),
-        "aria-label": p.NW.string(p.t.QdHxoq),
+        "aria-label": p.intl.string(p.t.QdHxoq),
         "aria-haspopup": "dialog",
         onClick: T,
         children: (0, r.jsx)(l.vdY, {
@@ -106,14 +106,14 @@ function O(e) {
         })
       })
     }), (0, r.jsx)(l.DY3, {
-      text: p.NW.string(p.t.VkKicX),
+      text: p.intl.string(p.t.VkKicX),
       delay: S,
       "aria-label": !1,
       children: (0, r.jsx)(d.zx, {
         ref: b,
         className: o()(h.button, h.right),
-        "aria-label": p.NW.string(p.t.wfYTHR),
-        onClick: N,
+        "aria-label": p.intl.string(p.t.wfYTHR),
+        onClick: A,
         children: (0, r.jsx)(l.XHJ, {
           size: "xs",
           colorClass: h.icon

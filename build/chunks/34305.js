@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => N
+  Z: () => y
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -62,11 +62,11 @@ class E extends i.PureComponent {
             children: null != i ? i : d.Z.getLabelFromPath(n)
           }), o ? (0, r.jsx)("span", {
             className: m.defaultIndicator,
-            children: g.NW.string(g.t.bBvAEB)
+            children: g.intl.string(g.t.bBvAEB)
           }) : null]
         }), null != u && null != e && null != t ? (0, r.jsx)(s.Z, {
           className: m.rowBody,
-          hoverText: g.NW.formatToPlainString(g.t.Fxo9e3, {
+          hoverText: g.intl.formatToPlainString(g.t.Fxo9e3, {
             available: e,
             total: t
           }),
@@ -81,7 +81,7 @@ class E extends i.PureComponent {
         disabled: null != l,
         color: a.zxk.Colors.PRIMARY,
         onClick: this.handleStartEditing,
-        children: g.NW.string(g.t.bt75u7)
+        children: g.intl.string(g.t.bt75u7)
       })]
     })
   }
@@ -99,14 +99,14 @@ class E extends i.PureComponent {
       children: (0, r.jsxs)(c.Z, {
         children: [this.renderDiskUsageCircle(), (0, r.jsxs)(c.Z.Child, {
           children: [(0, r.jsx)(a.xJW, {
-            title: g.NW.string(g.t.AJkKCA),
+            title: g.intl.string(g.t.AJkKCA),
             children: (0, r.jsx)(a.oil, {
               value: n,
               placeholder: d.Z.getLabelFromPath(e),
               onChange: this.handleLabelChange
             })
           }), (0, r.jsx)(a.xJW, {
-            title: g.NW.string(g.t.lnUCwc),
+            title: g.intl.string(g.t.lnUCwc),
             className: b.marginTop20,
             children: (0, r.jsx)(a.oil, {
               disabled: !0,
@@ -118,7 +118,7 @@ class E extends i.PureComponent {
             disabled: this.props.isDefault,
             className: m.defaultLocationCheckbox,
             onChange: this.handleToggleDefault,
-            children: g.NW.string(g.t.Z2MWuL)
+            children: g.intl.string(g.t.Z2MWuL)
           }), (0, r.jsx)(a.$i$, {
             className: m.separator
           }), (0, r.jsxs)(c.Z, {
@@ -128,7 +128,7 @@ class E extends i.PureComponent {
               color: a.zxk.Colors.RED,
               look: a.zxk.Looks.OUTLINED,
               onClick: this.handleRemoveLocation,
-              children: g.NW.string(g.t.iBUzS0)
+              children: g.intl.string(g.t.iBUzS0)
             }), (0, r.jsxs)(c.Z, {
               justify: c.Z.Justify.END,
               children: [(0, r.jsx)(a.zxk, {
@@ -136,13 +136,13 @@ class E extends i.PureComponent {
                 color: a.zxk.Colors.PRIMARY,
                 look: a.zxk.Looks.LINK,
                 onClick: this.handleStopEditing,
-                children: g.NW.string(g.t["ETE/oK"])
+                children: g.intl.string(g.t["ETE/oK"])
               }), (0, r.jsx)(a.zxk, {
                 disabled: e === this.props.path && n === this.props.label && i === this.props.isDefault,
                 size: a.zxk.Sizes.SMALL,
                 color: a.zxk.Colors.GREEN,
                 onClick: this.handleSaveChanges,
-                children: g.NW.string(g.t.R3BPHx)
+                children: g.intl.string(g.t.R3BPHx)
               })]
             })]
           })]
@@ -191,15 +191,15 @@ class E extends i.PureComponent {
           }
           return e
         }({}, e), n = n = {
-          header: g.NW.string(g.t.iBUzS0),
-          confirmText: g.NW.string(g.t.iBUzS0),
-          cancelText: g.NW.string(g.t["ETE/oK"]),
+          header: g.intl.string(g.t.iBUzS0),
+          confirmText: g.intl.string(g.t.iBUzS0),
+          cancelText: g.intl.string(g.t["ETE/oK"]),
           onConfirm: () => {
             this.handleStopEditing(), (0, o.iD)(this.props.path)
           },
           children: (0, r.jsx)(a.Text, {
             variant: "text-md/normal",
-            children: g.NW.string(g.t["1XqeW1"])
+            children: g.intl.string(g.t["1XqeW1"])
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
@@ -247,7 +247,7 @@ class O extends i.PureComponent {
     } = this.state;
     return (0, r.jsxs)(a.hjN, {
       className: m.wrapper,
-      title: g.NW.string(g.t.aLszkJ),
+      title: g.intl.string(g.t.aLszkJ),
       children: [e.map(e => {
         let {
           path: l,
@@ -268,7 +268,7 @@ class O extends i.PureComponent {
           disabled: !h.isPlatformEmbedded,
           onClick: this.handleAddInstallationLocation,
           size: a.zxk.Sizes.SMALL,
-          children: g.NW.string(g.t.pnZ2ur)
+          children: g.intl.string(g.t.pnZ2ur)
         })
       })]
     })
@@ -287,7 +287,7 @@ class O extends i.PureComponent {
     })
   }
 }
-let N = l.ZP.connectStores([d.Z], () => ({
+let y = l.ZP.connectStores([d.Z], () => ({
   installationPaths: d.Z.installationPaths,
   installationPathsMetadata: d.Z.installationPathsMetadata,
   defaultInstallationPath: d.Z.defaultInstallationPath

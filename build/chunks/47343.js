@@ -14,9 +14,9 @@ var i = t(200651),
   m = t(626135),
   _ = t(44609),
   p = t(731971),
-  N = t(981631),
-  x = t(388032),
-  g = t(190981);
+  x = t(981631),
+  g = t(388032),
+  N = t(190981);
 let h = () => {
   var e;
   let [n, t] = l.useState(!1), a = c.G6.useSetting(), {
@@ -34,36 +34,36 @@ let h = () => {
     location: "InviteSettingsControls"
   });
   return (0, i.jsxs)("div", {
-    className: r()(g.editProfileContainer, {
-      [g.opened]: n
+    className: r()(N.editProfileContainer, {
+      [N.opened]: n
     }),
     children: [(0, i.jsxs)(s.P3F, {
-      className: g.header,
+      className: N.header,
       onClick: () => {
-        n || m.default.track(N.rMx.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED, {
+        n || m.default.track(x.rMx.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED, {
           guild_id: A,
           invite_code: T
         }), t(!n)
       },
       children: [(0, i.jsx)("div", {
-        className: g.headerIconWrapper,
+        className: N.headerIconWrapper,
         children: (0, i.jsx)(s.ewm, {
           size: "md"
         })
       }), (0, i.jsxs)("div", {
-        className: g.title,
+        className: N.title,
         children: [(0, i.jsx)(s.Text, {
           variant: "eyebrow",
           color: "header-secondary",
-          children: x.NW.string(x.t.A5wHQ0)
+          children: g.intl.string(g.t.A5wHQ0)
         }), (0, i.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "interactive-normal",
-          children: x.NW.string(x.t.UKCSER)
+          children: g.intl.string(g.t.UKCSER)
         })]
       }), (0, i.jsx)("div", {
-        className: r()(g.caret, {
-          [g.opened]: n
+        className: r()(N.caret, {
+          [N.opened]: n
         }),
         children: (0, i.jsx)(d.Z, {
           width: 18,
@@ -72,31 +72,31 @@ let h = () => {
         })
       })]
     }), (0, i.jsxs)("div", {
-      className: r()(g.customizationSection, {
-        [g.opened]: n
-      }, L ? null : g.condensed),
+      className: r()(N.customizationSection, {
+        [N.opened]: n
+      }, L ? null : N.condensed),
       children: [L && (0, i.jsxs)("div", {
-        className: g.serverNickname,
+        className: N.serverNickname,
         children: [(0, i.jsx)(s.Text, {
           variant: "eyebrow",
           color: "header-secondary",
-          children: x.NW.string(x.t.me1lRk)
+          children: g.intl.string(g.t.me1lRk)
         }), (0, i.jsx)(s.oil, {
-          placeholder: x.NW.string(x.t["09Q8ys"]),
-          maxLength: N.l$U,
+          placeholder: g.intl.string(g.t["09Q8ys"]),
+          maxLength: x.l$U,
           value: h,
           onChange: v
         })]
       }), (0, i.jsx)(u.Z, {
-        title: x.NW.string(x.t["/2ed39"]),
+        title: g.intl.string(g.t["/2ed39"]),
         value: E,
         onChange: j
       }), a && (0, i.jsx)(u.Z, {
-        title: x.NW.string(x.t.bN4m1N),
+        title: g.intl.string(g.t.bN4m1N),
         value: I,
         onChange: S
       }), P && (0, i.jsx)(u.Z, {
-        title: x.NW.string(x.t["0nZCqK"]),
+        title: g.intl.string(g.t["0nZCqK"]),
         value: f,
         onChange: C
       })]

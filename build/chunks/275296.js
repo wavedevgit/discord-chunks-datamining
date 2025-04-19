@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  s = n(630388),
-  l = n(402148),
+  l = n(630388),
+  s = n(402148),
   a = n(981631),
   o = n(388032),
   c = n(477038);
@@ -15,7 +15,7 @@ let d = e => {
   let {
     role: t
   } = e;
-  return (0, s.yE)(t.flags, a.aO5.IN_PROMPT) ? (0, l.F)(t) ? (0, r.jsxs)("div", {
+  return (0, l.yE)(t.flags, a.aO5.IN_PROMPT) ? (0, s.F)(t) ? (0, r.jsxs)("div", {
     className: c.notice,
     children: [(0, r.jsx)(i.P4T, {
       size: "custom",
@@ -25,7 +25,7 @@ let d = e => {
       className: c.noticeIconPowerful
     }), (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
-      children: o.NW.string(o.t.YRbgX1)
+      children: o.intl.string(o.t.YRbgX1)
     })]
   }) : (0, r.jsxs)("div", {
     className: c.notice,
@@ -37,7 +37,7 @@ let d = e => {
       className: c.noticeIcon
     }), (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
-      children: o.NW.string(o.t.mqeO2t)
+      children: o.intl.string(o.t.mqeO2t)
     })]
   }) : null
 }

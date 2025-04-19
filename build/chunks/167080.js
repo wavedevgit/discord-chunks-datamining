@@ -92,7 +92,7 @@ let m = e => {
     target: h,
     rel: f,
     className: n,
-    "aria-label": c.NW.string(c.t["1WjMbG"]),
+    "aria-label": c.intl.string(c.t["1WjMbG"]),
     focusProps: E
   }, y), {
     children: g
@@ -102,7 +102,7 @@ let m = e => {
     target: h,
     rel: f,
     className: n,
-    "aria-label": c.NW.string(c.t["1WjMbG"]),
+    "aria-label": c.intl.string(c.t["1WjMbG"]),
     focusProps: E
   }, y), {
     children: (0, r.jsx)(o._8t, {

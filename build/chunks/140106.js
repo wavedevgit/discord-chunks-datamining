@@ -4,34 +4,34 @@ n.d(t, {
   P5: () => h,
   es: () => m
 });
-var r = n(200651);
+var l = n(200651);
 n(192379);
-var l = n(347715),
-  o = n(481060),
-  i = n(668781),
+var r = n(347715),
+  i = n(481060),
+  o = n(668781),
   a = n(493683),
   c = n(100527),
   s = n(346486),
   u = n(486324),
   d = n(388032);
-let p = (e, t) => (0, o.ZDy)(async () => {
+let p = (e, t) => (0, i.ZDy)(async () => {
     let {
-      default: l
+      default: r
     } = await Promise.all([n.e("91689"), n.e("89289"), n.e("36016")]).then(n.bind(n, 28130));
-    return n => (0, r.jsx)(l, function(e) {
+    return n => (0, l.jsx)(r, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          l = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = n[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
+        }))), l.forEach(function(t) {
+          var l;
+          l = n[t], t in e ? Object.defineProperty(e, t, {
+            value: l,
             enumerable: !0,
             configurable: !0,
             writable: !0
-          }) : e[t] = r
+          }) : e[t] = l
         })
       }
       return e
@@ -40,7 +40,7 @@ let p = (e, t) => (0, o.ZDy)(async () => {
       onComplete: e,
       uploadType: u.pC.AVATAR,
       showUpsellHeader: !1,
-      modalTitle: d.NW.string(d.t["6yrpFR"]),
+      modalTitle: d.intl.string(d.t["6yrpFR"]),
       analyticsLocation: c.Z.GROUP_DM_ICON_EDITOR,
       analyticsLocations: t,
       allowRecentAvatarsSelection: !1
@@ -54,11 +54,11 @@ let p = (e, t) => (0, o.ZDy)(async () => {
   m = e => {
     var t;
     if ((null == e || null == (t = e.body) ? void 0 : t.retry_after) != null) {
-      let t = (0, l.Z)(new Date, e.body.retry_after);
-      i.Z.show({
-        title: d.NW.string(d.t["Whhv4+"]),
-        body: d.NW.format(d.t.VIJkAw, {
-          duration: (0, r.jsx)(s.Z, {
+      let t = (0, r.Z)(new Date, e.body.retry_after);
+      o.Z.show({
+        title: d.intl.string(d.t["Whhv4+"]),
+        body: d.intl.format(d.t.VIJkAw, {
+          duration: (0, l.jsx)(s.Z, {
             showUnits: !0,
             deadline: t
           })

@@ -39,14 +39,14 @@ function _(e) {
       maxMembers: null == t ? void 0 : t.maxMembers
     }
   }), O = (0, i.e7)([s.Z], () => null != v ? s.Z.getMemberCount(v) : 0), E = null != j && (null != O ? O : 0) >= j, {
-    approveRequest: N,
-    rejectRequest: I,
-    submitting: P
+    approveRequest: I,
+    rejectRequest: P,
+    submitting: S
   } = (0, f.s)(null == C ? void 0 : C.guildId, null == C ? void 0 : C.userId, null == C ? void 0 : C.joinRequestId);
   return null != C && C.applicationStatus === h.wB.SUBMITTED && x ? (0, r.jsxs)("div", {
     className: b.buttons,
     children: [(0, r.jsx)(l.ua7, {
-      text: g.NW.string(g.t.cdPGbG),
+      text: g.intl.string(g.t.cdPGbG),
       shouldShow: E,
       children: e => {
         var t, n;
@@ -69,11 +69,11 @@ function _(e) {
           return e
         }({}, e), n = n = {
           color: l.zxk.Colors.GREEN,
-          submitting: P,
-          onClick: N,
+          submitting: S,
+          onClick: I,
           size: l.PhG.SMALL,
           disabled: E,
-          children: g.NW.string(g.t.BzjDQE)
+          children: g.intl.string(g.t.BzjDQE)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -87,10 +87,10 @@ function _(e) {
       }
     }), (0, r.jsx)(l.zxk, {
       color: l.zxk.Colors.RED,
-      onClick: I,
+      onClick: P,
       size: l.PhG.SMALL,
-      disabled: P || C.applicationStatus !== h.wB.SUBMITTED,
-      children: g.NW.string(g.t.hDtbs7)
+      disabled: S || C.applicationStatus !== h.wB.SUBMITTED,
+      children: g.intl.string(g.t.hDtbs7)
     }), n && (0, r.jsx)(l.zxk, {
       color: l.zxk.Colors.TRANSPARENT,
       onClick: () => {
@@ -104,7 +104,7 @@ function _(e) {
         })
       },
       size: l.PhG.SMALL,
-      children: g.NW.string(g.t.iXAna2)
+      children: g.intl.string(g.t.iXAna2)
     }), _ && (0, r.jsx)(o.ZP.Divider, {})]
   }) : null
 }

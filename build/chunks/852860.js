@@ -22,10 +22,10 @@ let u = function(e) {
     onSaveButtonColor: b,
     disabled: g,
     saveButtonTooltip: x
-  } = e, j = i.useRef(null), [v, N] = i.useState(!1);
+  } = e, j = i.useRef(null), [v, _] = i.useState(!1);
   return i.useEffect(() => {
     function e() {
-      N(!0), setTimeout(() => N(!1), 1e3)
+      _(!0), setTimeout(() => _(!1), 1e3)
     }
     return o.S.subscribe(s.CkL.EMPHASIZE_NOTICE, e), () => {
       o.S.unsubscribe(s.CkL.EMPHASIZE_NOTICE, e)
@@ -42,7 +42,7 @@ let u = function(e) {
           className: c.shrinkingContainer,
           children: (0, r.jsx)("div", {
             className: c.message,
-            children: null != (t = null != u ? u : n) ? t : a.NW.string(a.t.GP7JLC)
+            children: null != (t = null != u ? u : n) ? t : a.intl.string(a.t.GP7JLC)
           })
         }), (0, r.jsxs)("div", {
           className: c.actions,
@@ -53,7 +53,7 @@ let u = function(e) {
             look: l.zxk.Looks.LINK,
             onClick: m,
             children: (0, r.jsx)("span", {
-              children: null != p ? p : a.NW.string(a.t.yBZMsb)
+              children: null != p ? p : a.intl.string(a.t.yBZMsb)
             })
           }), null != f ? (0, r.jsx)(l.ua7, {
             text: x,
@@ -83,7 +83,7 @@ let u = function(e) {
                 disabled: g,
                 onClick: f
               }, e), n = n = {
-                children: null != h ? h : a.NW.string(a.t.K344S0)
+                children: null != h ? h : a.intl.string(a.t.K344S0)
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {

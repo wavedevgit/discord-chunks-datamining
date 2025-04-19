@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  q: () => N
+  q: () => A
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -77,7 +77,7 @@ function T(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let N = e => {
+let A = e => {
   let {
     isShopGift: t,
     className: n,
@@ -86,8 +86,8 @@ let N = e => {
     giftRecipient: y,
     selectedGiftStyle: O,
     setSelectedGiftStyle: T,
-    emojiConfetti: N,
-    soundEffect: A,
+    emojiConfetti: A,
+    soundEffect: N,
     setEmojiConfetti: C,
     setSoundEffect: R
   } = (0, l.wD)(), [P, w] = i.useState(!1), D = i.useRef(null), L = (0, s.arW)({
@@ -125,14 +125,14 @@ let N = e => {
         children: [(0, r.jsx)("div", {
           className: b.sound,
           children: (0, r.jsx)(c.Z, {
-            sound: A,
+            sound: N,
             onSelect: Z
           })
         }), (0, r.jsx)("div", {
           className: b.emoji,
           children: (0, r.jsx)(h.Z, {
             setEmojiConfetti: C,
-            emojiConfetti: null == N ? void 0 : N
+            emojiConfetti: null == A ? void 0 : A
           })
         })]
       })]
@@ -143,7 +143,7 @@ let N = e => {
         e.target === e.currentTarget && (null == (t = D.current) || t.focus())
       },
       className: o()(b.giftBoxOptionContainer, a),
-      "aria-label": E.NW.string(E.t.v54NrK),
+      "aria-label": E.intl.string(E.t.v54NrK),
       ref: x
     }, M), {
       children: null != V && V.map((e, t) => (0, r.jsx)(m.m, {

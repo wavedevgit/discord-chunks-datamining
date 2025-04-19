@@ -19,7 +19,7 @@ function u(e) {
         applicationId: t.extra.application_id
       })
     },
-    ariaDescription: s.NW.formatToPlainString(s.t.NTHttL, {
+    ariaDescription: s.intl.formatToPlainString(s.t.NTHttL, {
       title: d
     })
   };

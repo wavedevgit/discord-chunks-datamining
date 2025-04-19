@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  s = n(481060),
-  l = n(906732),
+  l = n(481060),
+  s = n(906732),
   a = n(70086),
   o = n(949640),
   c = n(981631),
@@ -22,7 +22,7 @@ function p(e) {
     buttonClassName: p
   } = e, {
     analyticsLocations: h
-  } = (0, l.ZP)(), f = t.hasFeature(c.oNc.BANNER), x = i.useCallback(e => {
+  } = (0, s.ZP)(), f = t.hasFeature(c.oNc.BANNER), x = i.useCallback(e => {
     let {
       imageUri: n,
       file: r
@@ -37,9 +37,9 @@ function p(e) {
       perks: (0, d.XO)()
     })
   }, [h, t]);
-  return f ? (0, r.jsx)(s.zxk, {
+  return f ? (0, r.jsx)(l.zxk, {
     disabled: !(f && n),
-    color: s.zxk.Colors.BRAND,
+    color: l.zxk.Colors.BRAND,
     className: p,
     onClick: () => (0, o.mw)({
       uploadType: u.pC.GUILD_BANNER,
@@ -51,7 +51,7 @@ function p(e) {
       },
       analyticsLocations: h
     }),
-    children: g.NW.string(g.t.yG2pUl)
+    children: g.intl.string(g.t.yG2pUl)
   }) : (0, r.jsx)(a.P, {
     className: p,
     onClick: b

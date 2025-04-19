@@ -20,26 +20,26 @@ var r = n(200651),
   _ = n(626135),
   E = n(70956),
   O = n(225559),
-  N = n(910436),
-  y = n(203028),
-  I = n(358924),
-  v = n(292140),
-  C = n(525296),
-  S = n(981631),
+  y = n(910436),
+  I = n(203028),
+  v = n(358924),
+  C = n(292140),
+  S = n(525296),
+  N = n(981631),
   T = n(674563),
   P = n(388032),
   j = n(370168);
 let A = 15 * E.Z.Millis.MINUTE,
-  Z = (0, C.Z)(function(e) {
+  Z = (0, S.Z)(function(e) {
     let {
       party: t,
       onUserContextMenu: n,
       onChannelContextMenu: l,
       quest: a
-    } = e, o = (0, r.jsx)(y.Z, {
+    } = e, o = (0, r.jsx)(I.Z, {
       party: t,
       onUserContextMenu: n
-    }), c = (0, r.jsx)(N.Z, {
+    }), c = (0, r.jsx)(y.Z, {
       party: t,
       onChannelContextMenu: l,
       quest: a
@@ -53,21 +53,21 @@ let A = 15 * E.Z.Millis.MINUTE,
         var t, n;
         return (null == (t = e.game) ? void 0 : t.name) != null && (null == (n = e.game) ? void 0 : n.type) === T.wW.GAME
       }).map(e => e.game.name);
-      _.default.track(S.rMx.NOW_PLAYING_CARD_HOVERED, {
+      _.default.track(N.rMx.NOW_PLAYING_CARD_HOVERED, {
         num_users: g,
         num_streams: m,
         num_activities: b,
         in_voice_channel: E,
         games_detected: e
       })
-    }, [g, m, b, E, h]), C = s()(O, A);
+    }, [g, m, b, E, h]), S = s()(O, A);
     return null != o || null != c ? (0, r.jsx)(u.yRy, {
       position: "left",
       renderPopout: e => {
         let {
           closePopout: n
         } = e;
-        return (0, r.jsx)(v.Z, {
+        return (0, r.jsx)(C.Z, {
           party: t,
           close: n
         })
@@ -78,7 +78,7 @@ let A = 15 * E.Z.Millis.MINUTE,
         let {
           isShown: l
         } = t;
-        return (0, r.jsx)(I.Z, (n = function(e) {
+        return (0, r.jsx)(v.Z, (n = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -96,7 +96,7 @@ let A = 15 * E.Z.Millis.MINUTE,
           }
           return e
         }({}, e), i = i = {
-          onMouseEnter: C,
+          onMouseEnter: S,
           "aria-haspopup": "menu",
           className: j.itemCard,
           active: l,
@@ -163,12 +163,12 @@ function L() {
     children: [(0, r.jsx)(u.X6q, {
       variant: "heading-md/semibold",
       className: j.emptyHeader,
-      children: P.NW.string(P.t["ngJ/5u"])
+      children: P.intl.string(P.t["ngJ/5u"])
     }), (0, r.jsx)(u.Text, {
       color: "none",
       className: j.emptyText,
       variant: "text-sm/normal",
-      children: P.NW.string(P.t["99ZWxc"])
+      children: P.intl.string(P.t["99ZWxc"])
     })]
   }) : (0, r.jsx)("div", {
     className: j.emptyCard,

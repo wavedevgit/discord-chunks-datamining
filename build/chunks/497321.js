@@ -33,7 +33,7 @@ class h extends(r = a.Component) {
           [_.disabled]: this.props.disableButton
         }),
         onClick: this.handleClick,
-        children: f.NW.string(f.t.Br1ls7)
+        children: f.intl.string(f.t.Br1ls7)
       })]
     })
   }

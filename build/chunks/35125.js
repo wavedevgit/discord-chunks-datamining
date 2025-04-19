@@ -36,7 +36,7 @@ function s(e) {
     guildId: i,
     roleSubscriptionData: l
   });
-  return u.NW.format(o, a)
+  return u.intl.format(o, a)
 }
 
 function d(e) {
@@ -56,7 +56,7 @@ function d(e) {
     guildId: i,
     roleSubscriptionData: l
   });
-  return u.NW.formatToParts(o, a)
+  return u.intl.formatToParts(o, a)
 }
 
 function p(e, t) {
@@ -111,7 +111,7 @@ function f(e) {
       showWithDuration: E,
       isRenewal: f
     } = p(l, o);
-  return t = E ? f ? u.t.OQ0OU1 : u.t["+N9bxs"] : f ? u.t.OxP1ND : u.t["6Z1E+/"], u.NW.formatToParts(t, {
+  return t = E ? f ? u.t.OQ0OU1 : u.t["+N9bxs"] : f ? u.t.OxP1ND : u.t["6Z1E+/"], u.intl.formatToParts(t, {
     guildName: null == s ? void 0 : s.name,
     tierName: null == o ? void 0 : o.tier_name,
     username: n,

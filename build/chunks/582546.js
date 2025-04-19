@@ -32,7 +32,7 @@ function h(e) {
   if ("recent" !== m || !(0, c.AZ)(h)) return null;
   if (!y) return (0, r.jsx)(a.sNh, {
     id: "connect-spotify",
-    label: p.NW.formatToPlainString(p.t.XWSHTU, {
+    label: p.intl.formatToPlainString(p.t.XWSHTU, {
       platform: _.ai
     }),
     action: () => {
@@ -45,7 +45,7 @@ function h(e) {
   let v = (0, s.dU)(h) ? null == (t = h.extra.entries[0]) ? void 0 : t.media : h.extra.media;
   return null == v ? null : (0, r.jsx)(a.sNh, {
     id: "play-on-spotify",
-    label: p.NW.string(p.t.rRffNz),
+    label: p.intl.string(p.t.rRffNz),
     action: () => {
       null == g || g({
         action: "PRESS_PLAY_ON_SPOTIFY_MENU_ITEM"

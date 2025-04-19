@@ -38,7 +38,7 @@ let m = a(450390),
   x = e => {
     var t, a;
     return (0, r.jsx)(s.zxk, (t = h({}, e), a = a = {
-      "aria-label": i.NW.string(i.t.cpT0Cg),
+      "aria-label": i.intl.string(i.t.cpT0Cg),
       look: s.zxk.Looks.BLANK,
       size: s.zxk.Sizes.NONE,
       children: (0, r.jsx)("img", {
@@ -109,12 +109,12 @@ let m = a(450390),
       ctaOnClick: a,
       transitionState: c
     } = e, n = (0, o.Dt)(), d = [{
-      header: i.NW.string(i.t["2Nvn8/"]),
-      subHeader: i.NW.string(i.t.F1lGFx),
+      header: i.intl.string(i.t["2Nvn8/"]),
+      subHeader: i.intl.string(i.t.F1lGFx),
       staticAsset: p.Z
     }, {
-      header: i.NW.string(i.t["1IEs7+"]),
-      subHeader: i.NW.string(i.t.mej05u),
+      header: i.intl.string(i.t["1IEs7+"]),
+      subHeader: i.intl.string(i.t.mej05u),
       staticAsset: f.Z
     }];
     return (0, r.jsxs)(s.Y0X, {
@@ -134,11 +134,11 @@ let m = a(450390),
         children: [(0, r.jsx)(s.X6q, {
           variant: "display-md",
           className: l.header,
-          children: i.NW.string(i.t.XKlAys)
+          children: i.intl.string(i.t.XKlAys)
         }), (0, r.jsx)(s.X6q, {
           variant: "heading-lg/semibold",
           className: l.subHeader,
-          children: i.NW.string(i.t.icWQKi)
+          children: i.intl.string(i.t.icWQKi)
         }), d.length > 0 && (0, r.jsx)("div", {
           className: l.featureCardGroup,
           children: d.map((e, t) => (0, r.jsx)(_, h({}, e), "".concat(e.header, "_").concat(t)))
@@ -146,7 +146,7 @@ let m = a(450390),
           onClick: a,
           color: l.buttonColor,
           className: l.button,
-          children: i.NW.string(i.t.ynollp)
+          children: i.intl.string(i.t.ynollp)
         })]
       })]
     })

@@ -1,6 +1,6 @@
 /** Chunk was on 13351 **/
 n.d(t, {
-  Z: () => u
+  Z: () => l
 }), n(415506);
 var r = n(200651);
 n(192379);
@@ -26,7 +26,7 @@ function c(e) {
   }
   return e
 }
-let u = {
+let l = {
   openSecureFramesStreamVerification: function(e, t) {
     (0, i.ZDy)(async () => {
       let i = (await n.e("94904").then(n.bind(n, 660250))).default;
@@ -36,7 +36,7 @@ let u = {
       }, n))
     })
   },
-  openSecureFramesUserVerificationModal: function(e, t, o, u) {
+  openSecureFramesUserVerificationModal: function(e, t, o, l) {
     o() && (0, i.ZDy)(async () => {
       let i = (await n.e("33397").then(n.bind(n, 963410))).default;
       return n => (0, r.jsx)(i, c({
@@ -44,15 +44,15 @@ let u = {
         channelId: t
       }, n))
     }, {
-      contextKey: u === a.IlC.POPOUT ? i.u1M : i.z1l
+      contextKey: l === a.IlC.POPOUT ? i.u1M : i.z1l
     })
   },
   openSecureFramesUpdateConfirmation: function(e) {
     let {
       title: t,
       subtitle: a,
-      confirmText: u = o.NW.string(o.t["cY+Ooa"]),
-      onConfirm: l
+      confirmText: l = o.intl.string(o.t["cY+Ooa"]),
+      onConfirm: u
     } = e;
     (0, i.ZDy)(async () => {
       let {
@@ -62,9 +62,9 @@ let u = {
         var s, E;
         return (0, r.jsx)(e, (s = c({
           header: t,
-          confirmText: u,
-          cancelText: o.NW.string(o.t["ETE/oK"]),
-          onConfirm: l
+          confirmText: l,
+          cancelText: o.intl.string(o.t["ETE/oK"]),
+          onConfirm: u
         }, n), E = E = {
           children: (0, r.jsx)(i.Text, {
             variant: "text-sm/normal",

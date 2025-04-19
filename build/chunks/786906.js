@@ -1,14 +1,14 @@
 /** Chunk was on 63141 **/
 "use strict";
 n.d(t, {
-  Z: () => N
+  Z: () => Z
 }), n(388685);
 var i = n(200651),
   r = n(192379),
   s = n(120356),
   o = n.n(s),
-  a = n(442837),
-  l = n(481060),
+  l = n(442837),
+  a = n(481060),
   c = n(13245),
   d = n(287734),
   u = n(933557),
@@ -47,10 +47,10 @@ class C extends r.Component {
       isBlocked: o
     } = this.props;
     if (!(0, f.hv)(n.type)) return null;
-    let a = l.Csw,
+    let l = a.Csw,
       c = !1;
-    return r ? s ? (e = x.NW.string(x.t["4ry6ys"]), a = l.gkL) : e = x.NW.string(x.t["0D/6R0"]) : o ? (e = x.NW.string(x.t.PHzjvb), t = l.ua7.Colors.RED, c = !0) : e = x.NW.string(x.t.focH1t), (0, i.jsx)(h.Z.Icon, {
-      icon: a,
+    return r ? s ? (e = x.intl.string(x.t["4ry6ys"]), l = a.gkL) : e = x.intl.string(x.t["0D/6R0"]) : o ? (e = x.intl.string(x.t.PHzjvb), t = a.ua7.Colors.RED, c = !0) : e = x.intl.string(x.t.focH1t), (0, i.jsx)(h.Z.Icon, {
+      icon: l,
       tooltip: e,
       onClick: this.handleClickCall,
       tooltipColor: t,
@@ -64,7 +64,7 @@ class C extends r.Component {
       locked: n,
       channel: r,
       channelName: s,
-      guild: a,
+      guild: l,
       onMouseDown: c,
       onContextMenu: d,
       isPreviewingInGame: u,
@@ -75,9 +75,9 @@ class C extends r.Component {
     return g && !n ? (0, i.jsxs)(b.ZP.Bar, {
       className: E.opacityHeader,
       children: [(0, i.jsx)(O.Z, {}), (0, i.jsx)(h.Z.Icon, {
-        icon: l.Dio,
+        icon: a.Dio,
         onClick: this.handleCloseOpacitySettings,
-        tooltip: x.NW.string(x.t.cpT0Cg)
+        tooltip: x.intl.string(x.t.cpT0Cg)
       })]
     }) : (0, i.jsx)(b.ZP.Background, {
       opacityOverride: n || u ? null : 1,
@@ -90,7 +90,7 @@ class C extends r.Component {
           channelId: r.id,
           toolbar: this.renderWidgetButtons(),
           transparent: !0,
-          children: [u || n || f ? null : (0, i.jsx)(l.Vni, {
+          children: [u || n || f ? null : (0, i.jsx)(a.Vni, {
             size: "custom",
             color: "currentColor",
             className: o()(E.dragIcon, t),
@@ -99,7 +99,7 @@ class C extends r.Component {
           }), (0, p.ud)({
             channel: r,
             channelName: s
-          }), n ? null : (0, p.v0)(r, a)]
+          }), n ? null : (0, p.v0)(r, l)]
         })
       })
     })
@@ -142,14 +142,14 @@ class C extends r.Component {
         locked: e,
         handlePin: t,
         pinned: n
-      } = this.props, s = n ? x.NW.string(x.t.cSu80t) : x.NW.string(x.t.cM8Vnp);
+      } = this.props, s = n ? x.intl.string(x.t.cSu80t) : x.intl.string(x.t.cM8Vnp);
       return e ? null : (0, i.jsxs)(r.Fragment, {
         children: [this.renderCallButton(), n ? (0, i.jsx)(h.Z.Icon, {
-          icon: l._S3,
-          tooltip: x.NW.string(x.t.OVovCQ),
+          icon: a._S3,
+          tooltip: x.intl.string(x.t.OVovCQ),
           onClick: this.handleOpenOpacitySettings
         }) : null, (0, i.jsx)(h.Z.Icon, {
-          icon: n ? l.QVc : l.k5M,
+          icon: n ? a.QVc : a.k5M,
           tooltip: s,
           selected: n,
           onClick: t
@@ -159,7 +159,7 @@ class C extends r.Component {
   }
 }
 
-function N(e) {
+function Z(e) {
   var {
     channel: t
   } = e, n = function(e, t) {
@@ -177,14 +177,14 @@ function N(e) {
     }
     return r
   }(e, ["channel"]);
-  let r = (0, a.e7)([_.Z, m.Z], () => {
+  let r = (0, l.e7)([_.Z, m.Z], () => {
       let e = _.Z.getVoiceChannelId();
       return m.Z.getChannel(e)
     }),
-    s = (0, a.e7)([y.Z], () => y.Z.getGuild(t.guild_id)),
-    o = (0, a.e7)([g.Z], () => g.Z.isCallActive(t.id)),
-    l = (0, u.ZP)(t),
-    c = (0, a.e7)([v.Z], () => !!t.isDM() && null != t.getRecipientId() && v.Z.isBlocked(t.getRecipientId()));
+    s = (0, l.e7)([y.Z], () => y.Z.getGuild(t.guild_id)),
+    o = (0, l.e7)([g.Z], () => g.Z.isCallActive(t.id)),
+    a = (0, u.ZP)(t),
+    c = (0, l.e7)([v.Z], () => !!t.isDM() && null != t.getRecipientId() && v.Z.isBlocked(t.getRecipientId()));
   return (0, i.jsx)(C, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -198,7 +198,7 @@ function N(e) {
     return e
   }({
     channel: t,
-    channelName: l,
+    channelName: a,
     guild: s,
     channelHasActiveCall: o,
     userIsInChannelCall: null != r && r.id === t.id,

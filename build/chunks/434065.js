@@ -2,14 +2,14 @@
 n.d(t, {
   r: () => l
 });
-var r = n(290486),
-  i = n(731965);
-let l = (0, r.U)(e => ({
+var i = n(290486),
+  r = n(731965);
+let l = (0, i.U)(e => ({
   favoriteAdded: !1,
-  notifyFavoriteAdded: () => (0, i.j)(() => e({
+  notifyFavoriteAdded: () => (0, r.j)(() => e({
     favoriteAdded: !0
   })),
-  clearFavoriteAdded: () => (0, i.j)(() => e({
+  clearFavoriteAdded: () => (0, r.j)(() => e({
     favoriteAdded: !1
   }))
 }))

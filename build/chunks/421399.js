@@ -90,10 +90,10 @@ function T(e) {
     analyticsLocations: B
   } = (0, d.ZP)(p.Z.USERNAME), z = T ? "@" : "", {
     nick: U,
-    colorString: W,
-    colorStrings: H,
-    colorRoleName: J
-  } = r, V = (0, s.e7)([m.Z], () => m.Z.roleStyle), X = "username" === V, Y = (0, O.X$)(), $ = (0, g.Z)(null != _ ? _ : G, "BaseUsername"), q = (0, x.Z)(n), Q = $ && null != H && null != H.primaryColor && null != H.secondaryColor, K = X && Q, ee = (0, u.Icv)(null == H ? void 0 : H.primaryColor, null == H ? void 0 : H.secondaryColor, null == H ? void 0 : H.tertiaryColor, "username"), {
+    colorString: H,
+    colorStrings: J,
+    colorRoleName: V
+  } = r, X = (0, s.e7)([m.Z], () => m.Z.roleStyle), Y = "username" === X, W = (0, O.X$)(), $ = (0, g.Z)(null != _ ? _ : G, "BaseUsername"), q = (0, x.Z)(n), Q = $ && null != J && null != J.primaryColor && null != J.secondaryColor, K = Y && Q, ee = (0, u.Icv)(null == J ? void 0 : J.primaryColor, null == J ? void 0 : J.secondaryColor, null == J ? void 0 : J.tertiaryColor, "username"), {
     text: et,
     gradient: er
   } = K ? ee : {
@@ -102,10 +102,10 @@ function T(e) {
   }, en = {
     className: a()([P.username, K && et.gradientClassName, K && er.gradientClassName]),
     style: (() => {
-      if (X) return K && null != H ? N(S({}, et.gradientStyle), {
-        textDecorationColor: null == H ? void 0 : H.primaryColor
-      }) : null != W ? {
-        color: W
+      if (Y) return K && null != J ? N(S({}, et.gradientStyle), {
+        textDecorationColor: null == J ? void 0 : J.primaryColor
+      }) : null != H ? {
+        color: H
       } : void 0
     })(),
     onClick: Z,
@@ -168,16 +168,16 @@ function T(e) {
     value: B,
     children: [null != ea && w ? (0, l.jsxs)(l.Fragment, {
       children: [" ", ea, " "]
-    }) : null, "dot" === V ? (0, l.jsx)(u.FhE, {
-      color: W,
-      colors: Q ? H : null,
-      name: J,
+    }) : null, "dot" === X ? (0, l.jsx)(u.FhE, {
+      color: H,
+      colors: Q ? J : null,
+      name: V,
       className: P.roleDot
     }) : null, eo, !w && (0, l.jsx)(b.ZP, {
       primaryGuild: r.primaryGuild,
       userId: n.author.id,
       contextGuildId: G,
       className: P.clanTagChiplet
-    }), null != ec ? ec : null, null == ea || w ? null : ea, null != n && (0, h.f)(n) && Y && D ? (0, l.jsx)(R, {}) : null]
+    }), null != ec ? ec : null, null == ea || w ? null : ea, null != n && (0, h.f)(n) && W && D ? (0, l.jsx)(R, {}) : null]
   })
 }

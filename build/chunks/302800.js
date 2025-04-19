@@ -31,7 +31,7 @@ var h = function(e) {
   return e[e.NONE = 0] = "NONE", e[e.TOOLTIP = 1] = "TOOLTIP", e[e.COACHTIP = 2] = "COACHTIP", e[e.COACHTIP_HEADLINE_ONLY = 3] = "COACHTIP_HEADLINE_ONLY", e[e.BADGE = 4] = "BADGE", e
 }({});
 let m = e => e === i.T.TIDE ? {
-  label: () => s.NW.string(s.t["h/uBCQ"]),
+  label: () => s.intl.string(s.t["h/uBCQ"]),
   iconSrc: _.Z,
   style: {
     background: "linear-gradient(180deg, #103A8B -7.5%, #3390FD 128.75%)",

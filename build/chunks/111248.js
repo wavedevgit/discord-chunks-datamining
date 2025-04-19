@@ -31,19 +31,19 @@ function _(e) {
     return [e, i.useCallback(e => {
       s.K.set(b, e), t(e)
     }, [])]
-  }(), j = i.useRef(null), O = null == _.getGuildId() ? 70 : 50, E = (0, a.e7)([d.Z], () => d.Z.pipWidth(f.cL.CAMERA_PREVIEW)), N = y.length, I = E * N + 8 * (N - 1), P = i.useMemo(() => ({
-    minWidth: f.Rv[f.cL.CAMERA_PREVIEW] * N + 8 * (N - 1),
-    maxWidth: f.$i[f.cL.CAMERA_PREVIEW] * N + 8 * (N - 1)
-  }), [N]);
+  }(), j = i.useRef(null), O = null == _.getGuildId() ? 70 : 50, E = (0, a.e7)([d.Z], () => d.Z.pipWidth(f.cL.CAMERA_PREVIEW)), I = y.length, P = E * I + 8 * (I - 1), S = i.useMemo(() => ({
+    minWidth: f.Rv[f.cL.CAMERA_PREVIEW] * I + 8 * (I - 1),
+    maxWidth: f.$i[f.cL.CAMERA_PREVIEW] * I + 8 * (I - 1)
+  }), [I]);
   i.useLayoutEffect(() => {
     var e;
     null == (e = j.current) || e.ensureIsInPosition()
   }, [y.length]);
-  let S = i.useCallback(e => {
-      let t = 0 === N ? e : (e - 8 * (N - 1)) / N;
+  let Z = i.useCallback(e => {
+      let t = 0 === I ? e : (e - 8 * (I - 1)) / I;
       c.d7(t, f.cL.CAMERA_PREVIEW)
-    }, [N]),
-    Z = i.useCallback((e, t) => {
+    }, [I]),
+    N = i.useCallback((e, t) => {
       v(t)
     }, [v]);
   return (0, r.jsx)("div", {
@@ -51,17 +51,17 @@ function _(e) {
     children: (0, r.jsx)(u._, {
       position: x,
       id: 0,
-      width: I,
+      width: P,
       ref: j,
-      onMove: Z,
-      onResize: S,
+      onMove: N,
+      onResize: Z,
       maxX: t,
       maxY: l,
       edgeOffsetTop: O,
       edgeOffsetBottom: 70,
       edgeOffsetLeft: 16,
       edgeOffsetRight: 16,
-      resizeConfig: P,
+      resizeConfig: S,
       children: (0, r.jsx)("div", {
         className: m.tileContainer,
         children: y.map(e => (0, r.jsx)(p.ZP, {

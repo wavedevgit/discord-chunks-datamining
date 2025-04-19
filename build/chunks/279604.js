@@ -115,12 +115,12 @@ function y(e, t) {
         }, n))
       })
     })
-  }, [E, t, x, y, S]), N = i.useCallback(e => (e.stopPropagation(), E(!1)), [E]);
+  }, [E, t, x, y, S]), P = i.useCallback(e => (e.stopPropagation(), E(!1)), [E]);
   return {
     isLoading: _,
     error: v,
     onActivate: I,
-    onDeactivate: N,
+    onDeactivate: P,
     onShowDeactivate: i.useCallback(i => {
       i.stopPropagation(), (0, o.ZDy)(async () => {
         let {

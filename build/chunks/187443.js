@@ -28,9 +28,9 @@ function c(e) {
   return (0, r.jsxs)("div", {
     className: o.container,
     children: [null != u ? (0, r.jsx)(l.ua7, {
-      text: s.NW.string(s.t.UKOtz8),
+      text: s.intl.string(s.t.UKOtz8),
       position: "top",
-      "aria-label": s.NW.string(s.t.bt75u7),
+      "aria-label": s.intl.string(s.t.bt75u7),
       children: e => {
         var t, n;
         return (0, r.jsx)(l.P3F, (t = function(e) {
@@ -88,14 +88,14 @@ function c(e) {
       size: l.zxk.Sizes.SMALL,
       onClick: d,
       color: l.zxk.Colors.GREEN,
-      children: s.NW.string(s.t["N+TB5u"])
+      children: s.intl.string(s.t["N+TB5u"])
     }) : null, b ? null : (0, r.jsx)(l.zxk, {
       className: o.button,
       innerClassName: o.innerButton,
       size: l.zxk.Sizes.SMALL,
       onClick: g,
       color: l.zxk.Colors.GREEN,
-      children: s.NW.format(s.t["4BiO8f"], {
+      children: s.intl.format(s.t["4BiO8f"], {
         guildName: x
       })
     })]

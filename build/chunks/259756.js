@@ -1,8 +1,8 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Xi: () => i
+  Xi: () => r
 });
-let r = (0, n(818083).B)({
+let i = (0, n(818083).B)({
   kind: "user",
   id: "2024-02_family_center_vc_join",
   label: "Family Center VC Join",
@@ -18,16 +18,16 @@ let r = (0, n(818083).B)({
   }]
 });
 
-function i(e) {
+function r(e) {
   let {
     location: t,
     autoTrackExposure: n = !1
   } = e, {
-    enabled: i
-  } = r.useExperiment({
+    enabled: r
+  } = i.useExperiment({
     location: t
   }, {
     autoTrackExposure: n
   });
-  return i
+  return r
 }

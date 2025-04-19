@@ -4,8 +4,8 @@ n.d(t, {
 }), n(388685), n(539854);
 var r = n(192379),
   i = n(835473),
-  a = n(497089);
-let l = new Set([a.O7.INCOMING_GAME_FRIEND_REQUESTS, a.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, a.O7.INCOMING_FRIEND_REQUESTS, a.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED]);
+  l = n(497089);
+let a = new Set([l.O7.INCOMING_GAME_FRIEND_REQUESTS, l.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, l.O7.INCOMING_FRIEND_REQUESTS, l.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED]);
 
 function o(e) {
   let t = r.useMemo(() => {
@@ -16,7 +16,7 @@ function o(e) {
         applicationId: r,
         type: i
       } = e;
-      l.has(i) && (null == r || t.has(r) || (t.add(r), n.push(r)))
+      a.has(i) && (null == r || t.has(r) || (t.add(r), n.push(r)))
     }), n
   }, [e]);
   return (0, i.Z)(t)

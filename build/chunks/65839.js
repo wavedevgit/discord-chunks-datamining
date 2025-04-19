@@ -46,23 +46,23 @@ let x = e => {
         children: [(0, r.jsx)(s.X6q, {
           variant: "heading-xl/semibold",
           className: _.searchTitle,
-          children: g.NW.string(g.t.IT7qoK)
+          children: g.intl.string(g.t.IT7qoK)
         }), (0, r.jsx)(s.Text, {
           variant: "text-md/normal",
           className: _.searchSubtitle,
-          children: g.NW.string(g.t["5PoYtr"])
+          children: g.intl.string(g.t["5PoYtr"])
         }), (0, r.jsx)(s.Rj2, {
           searchTerm: t,
           className: _.searchBox,
           inputClassName: _.searchBoxInput,
           closeIconClassName: _.closeIcon,
           searchIconClassName: _.searchIcon,
-          label: g.NW.string(g.t.nL2wKC),
-          placeholder: g.NW.string(g.t.nL2wKC),
+          label: g.intl.string(g.t.nL2wKC),
+          placeholder: g.intl.string(g.t.nL2wKC),
           onChange: n,
           onClear: i,
           onKeyPress: l,
-          cta: null != t && t.length > 0 ? g.NW.string(g.t["CU+6oK"]) : null
+          cta: null != t && t.length > 0 ? g.intl.string(g.t["CU+6oK"]) : null
         })]
       })
     })]
@@ -105,7 +105,7 @@ function v(e) {
             children: (0, r.jsx)(s.X6q, {
               variant: "heading-xl/semibold",
               color: "always-white",
-              children: g.NW.format(g.t.WphZ6e, {
+              children: g.intl.format(g.t.WphZ6e, {
                 categoryName: "Midjourney"
               })
             })
@@ -138,9 +138,9 @@ let j = e => {
     categoryCounts: j,
     allEntriesCount: O,
     isLoading: E
-  } = e, N = (0, a.e7)([u.Z], () => u.Z.getGuild(t.getGuildId()));
-  return null != N && N.hasFeature(m.oNc.SHARD) ? (0, r.jsx)(v, {
-    guild: N,
+  } = e, I = (0, a.e7)([u.Z], () => u.Z.getGuild(t.getGuildId()));
+  return null != I && I.hasFeature(m.oNc.SHARD) ? (0, r.jsx)(v, {
+    guild: I,
     directoryEntries: n,
     handleCreateOrAddGuild: l,
     isLoading: E
@@ -166,7 +166,7 @@ let j = e => {
           children: [(0, r.jsx)(s.njP.Item, {
             className: _.tabBarItem,
             id: f.AR.ALL,
-            children: "".concat(g.NW.string(g.t.hEAa2d), " (").concat(O, ")")
+            children: "".concat(g.intl.string(g.t.hEAa2d), " (").concat(O, ")")
           }, f.AR.ALL), (0, f.b7)(t.id).map(e => {
             let {
               value: t,

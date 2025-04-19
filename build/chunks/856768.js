@@ -29,7 +29,7 @@ function g(e) {
   } = e;
   return (0, t.jsx)(s.Z, {
     className: d()(x.section, l),
-    title: m.NW.string(m.t.ref7Ki),
+    title: m.intl.string(m.t.ref7Ki),
     hideDivider: a,
     forcedDivider: !0,
     children: (0, t.jsx)(j, {
@@ -76,6 +76,6 @@ function j(e) {
     options: p,
     renderOptionPrefix: C,
     renderOptionSuffix: d,
-    placeholder: m.NW.string(m.t["kMgj+f"])
+    placeholder: m.intl.string(m.t["kMgj+f"])
   })
 }

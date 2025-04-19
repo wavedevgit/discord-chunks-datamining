@@ -52,7 +52,7 @@ function m(e) {
       a(Date.now()), _(e => e + 1)
     },
     S = o > 0 && m - o < 1e3,
-    N = (0, u.Yzy)(y > 0 && y < m && m - y < E, {
+    Z = (0, u.Yzy)(y > 0 && y < m && m - y < E, {
       from: {
         opacity: 0
       },
@@ -64,12 +64,12 @@ function m(e) {
       },
       config: f
     }),
-    [Z, w] = r.useState(!1);
+    [N, w] = r.useState(!1);
   if (r.useEffect(() => {
       b > 10 && w(!0)
-    }, [b]), Z) throw Error("ClickZoneDebugWidget crashed, too many clicks");
+    }, [b]), N) throw Error("ClickZoneDebugWidget crashed, too many clicks");
   return t && !n ? null : (0, i.jsx)(i.Fragment, {
-    children: N((e, t) => t && (0, i.jsx)(c.animated.div, {
+    children: Z((e, t) => t && (0, i.jsx)(c.animated.div, {
       style: e,
       className: h.clickZoneDebugContainer,
       children: (0, i.jsx)(p.Z, {

@@ -74,7 +74,7 @@ let I = {
       })
     },
     renderTitle: () => (0, i.jsx)(y.PI, {
-      children: _.NW.string(_.t.UPvOiY)
+      children: _.intl.string(_.t.UPvOiY)
     }),
     renderButtons: (e, t) => (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(y.ls, {
@@ -131,7 +131,7 @@ let I = {
       }) : null
     },
     renderTitle: () => (0, i.jsx)(y.PI, {
-      children: _.NW.string(_.t.nFv3GR)
+      children: _.intl.string(_.t.nFv3GR)
     }),
     renderButtons: (e, t) => (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(y.ls, {
@@ -236,7 +236,7 @@ let I = {
       }) : null
     },
     renderTitle: () => (0, i.jsx)(y.PI, {
-      children: _.NW.string(_.t["386XRk"])
+      children: _.intl.string(_.t["386XRk"])
     }),
     renderButtons(e, t) {
       var o;
@@ -308,7 +308,7 @@ let I = {
       })
     },
     renderTitle: () => (0, i.jsx)(y.PI, {
-      children: _.NW.string(_.t.gnKWdX)
+      children: _.intl.string(_.t.gnKWdX)
     }),
     renderButtons: (e, t) => (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(y.ls, {
@@ -338,7 +338,7 @@ let I = {
       })
     },
     renderTitle: () => (0, i.jsx)(y.PI, {
-      children: _.NW.string(_.t["6gwSFR"])
+      children: _.intl.string(_.t["6gwSFR"])
     }),
     renderButtons: () => null,
     predicate: () => (0, l.Rb)("ActivityPopout").allowActivityWidget && !(0, o.X)("FriendsPopout")
@@ -353,7 +353,7 @@ let I = {
       })
     },
     renderTitle: () => (0, i.jsx)(y.PI, {
-      children: _.NW.string(_.t.TdEu5e)
+      children: _.intl.string(_.t.TdEu5e)
     }),
     renderButtons: () => null,
     predicate: () => (0, o.X)("FriendsPopout")

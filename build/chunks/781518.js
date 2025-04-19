@@ -3,11 +3,11 @@
 n.d(t, {
   Ai: () => O,
   PW: () => I,
-  Tu: () => A,
+  Tu: () => N,
   am: () => v,
   hP: () => y,
   hY: () => S,
-  k1: () => N,
+  k1: () => A,
   rC: () => b,
   wO: () => T
 }), n(358797);
@@ -187,7 +187,7 @@ function T(e, t) {
   }), e))
 }
 
-function N() {
+function A() {
   !c.Z.isProtocolRegistered() && (0, l.isDesktop)() && s.Z.isProtocolRegistered(u.M5).then(e => {
     a.Z.dispatch({
       type: "SPOTIFY_SET_PROTOCOL_REGISTERED",
@@ -196,7 +196,7 @@ function N() {
   })
 }
 
-function A(e, t) {
+function N(e, t) {
   a.Z.dispatch({
     type: "SPOTIFY_SET_ACTIVE_DEVICE",
     accountId: e,

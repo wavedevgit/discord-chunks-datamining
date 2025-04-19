@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(392711),
   l = n(493683),
   s = n(212819),
-  a = n(938078),
-  i = n(823385),
+  i = n(938078),
+  a = n(823385),
   o = n(592125),
   u = n(496675),
   c = n(594174),
@@ -49,7 +49,7 @@ async function y(e) {
 }
 
 function g(e) {
-  if ("user" !== e.type) return (0, a.Z)(e.id);
+  if ("user" !== e.type) return (0, i.Z)(e.id);
   {
     let t = c.default.getUser(e.id);
     return null != t ? {
@@ -95,9 +95,9 @@ function O(e) {
   } = e;
   if (n) return j(x(t, f));
   let b = null != c && c.length > 0 ? c.map(e => g(e)) : [],
-    p = i.Z.getChannelHistory(),
-    h = p.length > 0 ? p.map(e => (0, a.Z)(e)) : [],
-    m = s.length > 0 ? s.map(e => (0, a.Z)(e.id)) : [],
+    p = a.Z.getChannelHistory(),
+    h = p.length > 0 ? p.map(e => (0, i.Z)(e)) : [],
+    m = s.length > 0 ? s.map(e => (0, i.Z)(e.id)) : [],
     y = x([...b, null != o ? g(o) : null, ...h, ...m], f),
     O = (null == u ? void 0 : u.find(e => (0, r.isEqual)(e, d))) != null,
     v = null == d || O ? [] : [d.id];

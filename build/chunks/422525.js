@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(200651);
 n(192379);
 var r = n(481060),
-  s = n(40851),
-  l = n(749681),
+  l = n(40851),
+  s = n(749681),
   o = n(258971),
   a = n(434404),
   c = n(956324),
@@ -16,7 +16,7 @@ var r = n(481060),
   b = n(388032);
 
 function p(e) {
-  let t = (0, s.Aq)(),
+  let t = (0, l.Aq)(),
     n = (0, c.Z)(e);
   if (__OVERLAY__ || !n) return null;
   let p = n => {
@@ -24,14 +24,14 @@ function p(e) {
   };
   return (0, i.jsx)(r.sNh, {
     id: "guild-settings",
-    label: b.NW.string(b.t["154/bG"]),
+    label: b.intl.string(b.t["154/bG"]),
     action: () => p(),
     children: (0, u.t)(e).map(t => {
       let {
         section: n,
-        label: s
+        label: l
       } = t;
-      if (null == s) return null;
+      if (null == l) return null;
       switch (n) {
         case d.pNK.DELETE:
           return null;
@@ -39,13 +39,13 @@ function p(e) {
           return (0, i.jsx)(r.sNh, {
             id: n,
             action: () => p(n),
-            label: b.NW.string(b.t.nRtNqq)
+            label: b.intl.string(b.t.nRtNqq)
           }, n);
         case d.pNK.APP_DIRECTORY:
           return (0, i.jsx)(r.sNh, {
             id: n,
             action: () => {
-              (0, l.transitionToGlobalDiscovery)({
+              (0, s.transitionToGlobalDiscovery)({
                 tab: g.GlobalDiscoveryTab.APPS,
                 newSessionState: {
                   guildId: e.id,
@@ -55,13 +55,13 @@ function p(e) {
                 }
               })
             },
-            label: s
+            label: l
           }, n);
         default:
           return (0, i.jsx)(r.sNh, {
             id: n,
             action: () => p(n),
-            label: s
+            label: l
           }, n)
       }
     })

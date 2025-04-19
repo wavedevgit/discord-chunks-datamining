@@ -6,7 +6,7 @@ n.d(t, {
   Cb: () => F,
   Hu: () => V,
   L1: () => K,
-  Ow: () => Y,
+  Ow: () => W,
   PZ: () => z,
   WA: () => k,
   Wx: () => R,
@@ -16,7 +16,7 @@ n.d(t, {
   dF: () => j,
   jD: () => D,
   lf: () => M,
-  pF: () => W,
+  pF: () => Y,
   sl: () => B,
   vJ: () => x,
   yJ: () => U,
@@ -76,13 +76,13 @@ function T(e, t) {
   return n
 }
 
-function N(e, t) {
+function A(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function A(e, t) {
+function N(e, t) {
   if (null == e) return {};
   var n, r, i = C(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -108,11 +108,11 @@ function P(e) {
 }
 
 function w(e) {
-  return P(e) ? e.name : O.NW.string(O.t.UB2gGx)
+  return P(e) ? e.name : O.intl.string(O.t.UB2gGx)
 }
 
 function D(e) {
-  return P(e) ? e.description : O.NW.string(O.t.X9fusr)
+  return P(e) ? e.description : O.intl.string(O.t.X9fusr)
 }
 
 function L(e) {
@@ -185,9 +185,9 @@ function G(e) {
       }
     } catch (e) {
       throw i.Z.show({
-        title: O.NW.string(O.t["aHO//v"]),
-        body: O.NW.string(O.t.kuzKHB),
-        confirmText: O.NW.string(O.t["5911LS"]),
+        title: O.intl.string(O.t["aHO//v"]),
+        body: O.intl.string(O.t.kuzKHB),
+        confirmText: O.intl.string(O.t["5911LS"]),
         onConfirm: () => p()
       }), e
     }
@@ -200,9 +200,9 @@ function B(e) {
     {
       fakeAppIconURL: n
     } = t,
-    r = A(t, ["fakeAppIconURL"]);
+    r = N(t, ["fakeAppIconURL"]);
   return P(e) ? {
-    iconURL: h.ZP.getApplicationIconURL(N(S({}, r), {
+    iconURL: h.ZP.getApplicationIconURL(A(S({}, r), {
       id: e.id,
       icon: e.icon
     })),
@@ -210,8 +210,8 @@ function B(e) {
     description: e.description
   } : {
     iconURL: null != n ? n : null,
-    name: O.NW.string(O.t.UB2gGx),
-    description: O.NW.string(O.t.X9fusr)
+    name: O.intl.string(O.t.UB2gGx),
+    description: O.intl.string(O.t.X9fusr)
   }
 }
 
@@ -232,18 +232,18 @@ function H(e) {
   return null == e ? "" : (e.charAt(0).toLocaleUpperCase() + e.slice(1)).replaceAll("_", " ")
 }
 
-function W(e) {
+function Y(e) {
   let t = [];
   for (let n of e) {
     let e = n.application_directory_collection_items.filter(e => e.type === r.C.APPLICATION && L(e.application));
-    0 !== e.length && t.push(N(S({}, n), {
+    0 !== e.length && t.push(A(S({}, n), {
       application_directory_collection_items: e
     }))
   }
   return t
 }
 
-function Y(e) {
+function W(e) {
   return {
     applicationId: e.id,
     customInstallUrl: e.customInstallUrl,

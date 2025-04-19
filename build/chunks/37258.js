@@ -66,7 +66,7 @@ function h(e) {
   } = (0, s.KZ)(), g = (0, a.Aq)(), E = (0, a.bp)();
   return (0, r.jsx)(i.sNh, {
     id: "user-profile",
-    label: null != t ? t : u.NW.string(u.t.LYju5O),
+    label: null != t ? t : u.intl.string(u.t.LYju5O),
     action: () => {
       null == n || n(), (0, l.openUserProfileModal)(f({
         sourceAnalyticsLocations: h,

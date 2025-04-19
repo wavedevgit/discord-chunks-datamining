@@ -1,6 +1,6 @@
 /** Chunk was on 3656 **/
 n.d(t, {
-  Z: () => P
+  Z: () => S
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -60,10 +60,10 @@ let O = e => {
     return (0, b.m$)({
       channelId: t.id
     }) ? (0, r.jsx)(a.ua7, {
-      text: C.NW.string(C.t.QyZ4TU),
+      text: C.intl.string(C.t.QyZ4TU),
       children: e => (0, r.jsx)(a.tQf, j(v({}, e), {
         size: "xs",
-        "aria-label": C.NW.string(C.t.VHXh8f),
+        "aria-label": C.intl.string(C.t.VHXh8f),
         color: a.TVs.colors.INTERACTIVE_NORMAL
       }))
     }) : null
@@ -125,7 +125,7 @@ let O = e => {
       }
     })
   },
-  N = e => {
+  I = e => {
     let {
       channel: t,
       children: n,
@@ -141,7 +141,7 @@ let O = e => {
         children: [n, !1 === m ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsxs)(E, {
             channel: t,
-            tooltipText: C.NW.string(v),
+            tooltipText: C.intl.string(v),
             onClick: _,
             className: x.clickableTitle,
             children: [(0, r.jsx)(a.Text, {
@@ -178,19 +178,19 @@ let O = e => {
         children: [(0, r.jsx)(a.Text, {
           variant: "text-xs/medium",
           color: "header-muted",
-          children: C.NW.string(C.t.a7oCBg)
+          children: C.intl.string(C.t.a7oCBg)
         }), (0, r.jsx)(a.Text, {
           variant: "text-xs/medium",
           color: "header-muted",
           className: x.visibleLink,
-          children: C.NW.format(C.t.HVqAgI, {
+          children: C.intl.format(C.t.HVqAgI, {
             onCancel: () => b(!1)
           })
         })]
       })]
     }) : (0, r.jsxs)(E, {
       channel: t,
-      tooltipText: C.NW.string(v),
+      tooltipText: C.intl.string(v),
       onClick: _,
       className: o()(x.hoverableContainer, x.clickableTitle),
       children: [n, (0, r.jsx)(a.Text, {
@@ -204,7 +204,7 @@ let O = e => {
       })]
     })
   },
-  I = e => {
+  P = e => {
     let {
       channel: t,
       children: n
@@ -229,7 +229,7 @@ let O = e => {
       })]
     })
   },
-  P = e => {
+  S = e => {
     let {
       channel: t,
       legacyIconClassName: n
@@ -237,7 +237,7 @@ let O = e => {
       enabled: i,
       unifiedEditing: l
     } = (0, h.Ae)("header_bar", t.id);
-    return (0, r.jsx)(i ? N : I, {
+    return (0, r.jsx)(i ? I : P, {
       channel: t,
       inlineEditor: !l,
       children: (0, r.jsx)(m.v, {

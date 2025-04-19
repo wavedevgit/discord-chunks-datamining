@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  a = n(857395),
-  l = n(739566),
+  l = n(857395),
+  a = n(739566),
   o = n(834129),
   s = n(388032);
 
@@ -14,7 +14,7 @@ function c(e) {
   let {
     children: t,
     messageReference: n,
-    guildName: l
+    guildName: a
   } = e;
   if (null == n) return (0, r.jsx)(i.eee, {
     children: t
@@ -26,28 +26,28 @@ function c(e) {
   } = n;
   return null == o ? (0, r.jsx)(i.eee, {
     children: t
-  }) : (0, r.jsx)(a.Z, {
+  }) : (0, r.jsx)(l.Z, {
     guildId: o,
     channelId: s,
     messageId: c,
-    name: l,
+    name: a,
     children: e => {
-      var n, a;
+      var n, l;
       let {
-        "aria-controls": l,
+        "aria-controls": a,
         "aria-expanded": o
       } = e, s = function(e, t) {
         if (null == e) return {};
         var n, r, i = function(e, t) {
           if (null == e) return {};
           var n, r, i = {},
-            a = Object.keys(e);
-          for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+            l = Object.keys(e);
+          for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
           return i
         }(e, t);
         if (Object.getOwnPropertySymbols) {
-          var a = Object.getOwnPropertySymbols(e);
-          for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+          var l = Object.getOwnPropertySymbols(e);
+          for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
         }
         return i
       }(e, ["aria-controls", "aria-expanded"]);
@@ -68,17 +68,17 @@ function c(e) {
           })
         }
         return e
-      }({}, s), a = a = {
+      }({}, s), l = l = {
         children: t
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(a)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(a, e))
+      })(Object(l)).forEach(function(e) {
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
       }), n))
     }
   })
@@ -88,12 +88,12 @@ function u(e) {
   let {
     usernameHook: t,
     message: i,
-    compact: a
+    compact: l
   } = e, {
     content: u,
     timestamp: d,
     messageReference: p
-  } = i, m = (0, l.ZP)(i), f = t(m), h = (null != u ? u : "").split(" ").slice(0, -1).join(" "), g = s.NW.format(s.t["47CZc3"], {
+  } = i, m = (0, a.ZP)(i), f = t(m), h = (null != u ? u : "").split(" ").slice(0, -1).join(" "), g = s.intl.format(s.t["47CZc3"], {
     username: m.nick,
     usernameHook: f,
     webhookName: u,
@@ -106,7 +106,7 @@ function u(e) {
   return (0, r.jsx)(o.Z, {
     icon: n(570111),
     timestamp: d,
-    compact: a,
+    compact: l,
     children: g
   })
 }

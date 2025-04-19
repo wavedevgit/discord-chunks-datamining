@@ -4,8 +4,8 @@ n.r(t), n.d(t, {
 }), n(388685);
 var r = n(200651),
   l = n(192379),
-  o = n(120356),
-  i = n.n(o),
+  i = n(120356),
+  o = n.n(i),
   s = n(200100),
   a = n(442837),
   c = n(481060),
@@ -18,10 +18,10 @@ var r = n(200651),
   x = n(480608),
   g = n(160404),
   j = n(703656),
-  N = n(546247),
-  v = n(430824),
-  _ = n(768581),
-  b = n(302221),
+  v = n(546247),
+  _ = n(430824),
+  b = n(768581),
+  N = n(302221),
   C = n(549817),
   O = n(45966),
   E = n(819553),
@@ -37,25 +37,25 @@ function D(e) {
     guildId: t
   } = e, {
     ref: n,
-    width: o,
+    width: i,
     height: D
   } = (0, m.ZP)(), T = (0, p.Q3)("GuildOnboardingPage"), R = (0, a.Wu)([O.Z], () => O.Z.getOnboardingPromptsForOnboarding(t)), M = (0, a.e7)([O.Z], () => O.Z.getEnabled(t)), A = l.useCallback((e, n, r) => {
     C.Z.selectOption(t, e, n, r)
   }, [t]), S = l.useCallback(() => {
     C.Z.completeOnboarding(t, R)
-  }, [t, R]), B = (0, a.e7)([v.Z], () => v.Z.getGuild(t)), F = l.useMemo(() => null == B ? null : _.ZP.getGuildSplashURL({
+  }, [t, R]), B = (0, a.e7)([_.Z], () => _.Z.getGuild(t)), F = l.useMemo(() => null == B ? null : b.ZP.getGuildSplashURL({
     id: B.id,
     splash: B.splash
-  }), [B]), W = (0, h.N)(F), L = (0, a.e7)([E.ZP], () => E.ZP.getCurrentOnboardingStep(t)), [z, U] = l.useState(null != F ? null : "cover"), G = l.useCallback(e => {
-    U(L), C.Z.setUserOnboardingStep(t, e)
-  }, [t, L]), V = (0, a.e7)([g.Z], () => g.Z.isFullServerPreview(t)), q = (0, a.e7)([E.ZP], () => E.ZP.getOnboardingStatus(t)), H = null != R && R.length > 0, X = l.useCallback(() => {
-    (0, E.kp)(q) && M && H ? G(0) : S()
-  }, [q, M, H, G, S]);
+  }), [B]), L = (0, h.N)(F), z = (0, a.e7)([E.ZP], () => E.ZP.getCurrentOnboardingStep(t)), [U, G] = l.useState(null != F ? null : "cover"), V = l.useCallback(e => {
+    G(z), C.Z.setUserOnboardingStep(t, e)
+  }, [t, z]), q = (0, a.e7)([g.Z], () => g.Z.isFullServerPreview(t)), H = (0, a.e7)([E.ZP], () => E.ZP.getOnboardingStatus(t)), W = null != R && R.length > 0, X = l.useCallback(() => {
+    (0, E.kp)(H) && M && W ? V(0) : S()
+  }, [H, M, W, V, S]);
   l.useEffect(() => {
     if (!E.ZP.shouldShowOnboarding(t)) return u.Z.escapeToDefaultChannel(t);
     (0, x.E)(t)
   }, [t]);
-  let Y = (0, c.Yzy)(L, {
+  let Y = (0, c.Yzy)(z, {
       config: s.config.default,
       from: {
         scale: .8,
@@ -65,7 +65,7 @@ function D(e) {
         scale: 1,
         opacity: 1
       }
-    }, "cover" !== z && null !== z ? "animate-never" : "respect-motion-settings"),
+    }, "cover" !== U && null !== U ? "animate-never" : "respect-motion-settings"),
     K = E.ZP.shouldShowOnboarding(t),
     J = null == B;
   if (l.useEffect(() => {
@@ -77,22 +77,22 @@ function D(e) {
       }
     }, [K, J, t]), !E.ZP.shouldShowOnboarding(t) || null == B) return null;
   let Q = () => {
-    switch (L) {
+    switch (z) {
       case "cover":
         return (0, r.jsx)(I.ZP, {
           guild: B,
           onboardingStatus: E.uX.READY,
           onStart: X,
-          disableTracking: V
+          disableTracking: q
         });
       case "rules":
         return (0, r.jsx)(Z.Z, {
-          setCurrentStep: G,
+          setCurrentStep: V,
           previousPromptIndex: R.length - 1,
           guild: B,
           prompts: R,
           completeOnboarding: S,
-          disableTracking: V
+          disableTracking: q
         });
       case null:
         return null;
@@ -100,32 +100,32 @@ function D(e) {
         return (0, r.jsx)(k.Z, {
           guild: B,
           prompts: R,
-          step: L,
+          step: z,
           selectOption: A,
           completeOnboarding: S,
-          setCurrentStep: G,
-          disableTracking: V
+          setCurrentStep: V,
+          disableTracking: q
         })
     }
   };
   return (0, r.jsxs)("div", {
-    className: i()(w.main, {
+    className: o()(w.main, {
       [w.fullBorderWithGradient]: null == F && T
     }),
     ref: n,
     children: [null != F ? (0, r.jsx)(f.Z, {
       className: w.artwork,
       src: F,
-      width: o,
+      width: i,
       height: D,
       imageClassName: w.cover
-    }) : T ? (0, r.jsx)(N.Z, {}) : (0, r.jsx)(d.Z, {
+    }) : T ? (0, r.jsx)(v.Z, {}) : (0, r.jsx)(d.Z, {
       className: w.artwork,
       preserveAspectRatio: "xMinYMin slice"
-    }), null != W && (0, r.jsx)("div", {
+    }), null != L && (0, r.jsx)("div", {
       className: w.gradient,
       style: {
-        background: "linear-gradient(180deg, ".concat((0, b.aD)(W, .16), " 0%, ").concat((0, b.aD)(W, 1), " 100%)")
+        background: "linear-gradient(180deg, ".concat((0, N.aD)(L, .16), " 0%, ").concat((0, N.aD)(L, 1), " 100%)")
       }
     }), T && null == F ? null : (0, r.jsx)("div", {
       className: w.gradient
@@ -137,12 +137,12 @@ function D(e) {
         style: e,
         children: Q()
       }, l)
-    }), "cover" === L && (0, r.jsx)("div", {
+    }), "cover" === z && (0, r.jsx)("div", {
       className: w.bottomCenterContent,
       children: (0, r.jsx)(c.X6q, {
         variant: "heading-sm/normal",
         color: "header-secondary",
-        children: P.NW.format(P.t.kI6UoK, {
+        children: P.intl.format(P.t.kI6UoK, {
           privacyLink: y.EYA.PRIVACY
         })
       })

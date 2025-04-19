@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  H: () => s,
+  H: () => l,
   c: () => i
 });
 var r = n(570140);
@@ -12,7 +12,7 @@ function i(e) {
   }))
 }
 
-function s() {
+function l() {
   r.Z.wait(() => r.Z.dispatch({
     type: "NUF_COMPLETE"
   }))

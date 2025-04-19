@@ -70,7 +70,7 @@ let C = e => {
           position: "top",
           header: (0, r.jsx)("div", {
             className: O.header,
-            children: _.NW.format(_.t["o+srEx"], {
+            children: _.intl.format(_.t["o+srEx"], {
               keybind: t,
               keybindHook: () => (0, r.jsx)("span", {
                 className: O.keybindHintKeys,
@@ -86,7 +86,7 @@ let C = e => {
             variant: "text-sm/normal",
             color: "always-white",
             className: O.bodyText,
-            children: _.NW.format(_.t.DWeRm5, {
+            children: _.intl.format(_.t.DWeRm5, {
               keybindHook: () => (0, r.jsx)("div", {
                 className: O.keyCombo,
                 children: t
@@ -118,9 +118,9 @@ let C = e => {
       keybindString: O,
       children: (0, r.jsx)(d.Z, {
         disabled: s,
-        tooltipText: null != u ? _.NW.formatToPlainString(_.t.HIMcv7, {
+        tooltipText: null != u ? _.intl.formatToPlainString(_.t.HIMcv7, {
           hotkey: f.BB(null == u ? void 0 : u.shortcut, !0)
-        }) : _.NW.string(_.t.s52pjo),
+        }) : _.intl.string(_.t.s52pjo),
         onClick: () => {
           (0, b.C1)(), (0, c.v)(e, c.d.CLIP)
         },

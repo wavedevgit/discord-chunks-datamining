@@ -5,8 +5,8 @@ n.d(t, {
 }), n(953529), n(388685);
 var r = n(200651),
   i = n(192379),
-  s = n(120356),
-  l = n.n(s),
+  l = n(120356),
+  s = n.n(l),
   a = n(481060),
   o = n(313201),
   c = n(259580),
@@ -18,14 +18,14 @@ function g(e) {
   let {
     intiallyExpanded: t = !1,
     title: n,
-    description: s,
+    description: l,
     children: g
   } = e, [p, h] = i.useState(t), f = () => h(e => !e), x = (0, o.Dt)();
   return (0, r.jsxs)("div", {
     className: m.container,
     children: [(0, r.jsx)(d.Z, {
-      className: l()(m.header, {
-        [m.headerWithDescription]: p && null != s
+      className: s()(m.header, {
+        [m.headerWithDescription]: p && null != l
       }),
       onClick: f,
       children: e => {
@@ -39,7 +39,7 @@ function g(e) {
             children: n
           }), (0, r.jsx)(a.P3F, {
             onClick: i(f),
-            "aria-label": u.NW.string(u.t.e5eQOz),
+            "aria-label": u.intl.string(u.t.e5eQOz),
             "aria-controls": x,
             "aria-expanded": p,
             focusProps: {
@@ -54,10 +54,10 @@ function g(e) {
       }
     }), p && (0, r.jsxs)("div", {
       id: x,
-      children: [null != s && (0, r.jsx)(a.R94, {
+      children: [null != l && (0, r.jsx)(a.R94, {
         type: a.R94.Types.DESCRIPTION,
         className: m.description,
-        children: s
+        children: l
       }), (0, r.jsx)("div", {
         className: m.divider
       }), (0, r.jsx)("div", {

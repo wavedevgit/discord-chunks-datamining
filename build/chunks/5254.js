@@ -21,10 +21,10 @@ function p(e, t, n) {
 }
 let f = {},
   g = 0,
-  N = !1,
-  h = !1;
+  h = !1,
+  O = !1;
 
-function O(e) {
+function y(e) {
   var t;
   let n = null != e.contact_names && e.contact_names.length >= 2 ? e.contact_names.slice(0, 2) : [];
   return {
@@ -35,7 +35,7 @@ function O(e) {
     contactNames: n
   }
 }
-class y extends(i = s.ZP.Store) {
+class N extends(i = s.ZP.Store) {
   initialize() {
     this.waitFor(c.default)
   }
@@ -52,14 +52,14 @@ class y extends(i = s.ZP.Store) {
     return f[e]
   }
 }
-p(y, "displayName", "FriendSuggestionStore");
-let m = new y(a.Z, {
+p(N, "displayName", "FriendSuggestionStore");
+let m = new N(a.Z, {
   CONNECTION_OPEN: function(e) {
-    f = {}, (g = e.friendSuggestionCount) > 0 ? (h = !0, !N && h && (N = !0, h = !1, u.Z.fetch())) : (0, d.Z)()
+    f = {}, (g = e.friendSuggestionCount) > 0 ? (O = !0, !h && O && (h = !0, O = !1, u.Z.fetch())) : (0, d.Z)()
   },
   FRIEND_SUGGESTION_CREATE: function(e) {
     var t, n;
-    let i = O(e.suggestion);
+    let i = y(e.suggestion);
     if (null != f[i.key]) return !1;
     g++, t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -90,9 +90,9 @@ let m = new y(a.Z, {
   },
   LOAD_FRIEND_SUGGESTIONS_SUCCESS: function(e) {
     var t;
-    N = !1, t = e.suggestions, f = l().chain(t).map(e => O(e)).keyBy(e => e.key).value(), g = l().keys(f).length
+    h = !1, t = e.suggestions, f = l().chain(t).map(e => y(e)).keyBy(e => e.key).value(), g = l().keys(f).length
   },
   LOAD_FRIEND_SUGGESTIONS_FAILURE: function() {
-    N = !1, f = {}
+    h = !1, f = {}
   }
 })

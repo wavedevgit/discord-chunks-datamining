@@ -26,16 +26,16 @@ function _(e) {
     return null != (r = null != (n = null == e ? void 0 : e.position) ? n : 0 - (null == t ? void 0 : t.position)) ? r : 0
   }).map(e => e.id), [t.roles, t.highestRoleId, n, l]), y = (0, a.e7)([c.Z], () => c.Z.getEnhancedMember(t.guildId, t.userId), [t.guildId, t.userId]), C = (0, u.zq)(y), x = (0, u.vN)(t), v = (0, a.e7)([h.Z], () => h.Z.can(m.Plq.MANAGE_ROLES, n), [n]);
   return null == n ? null : (0, r.jsx)(s.xJW, {
-    title: g.NW.string(g.t.LPJmLy),
+    title: g.intl.string(g.t.LPJmLy),
     titleClassName: b.infoTitle,
     children: (0, r.jsx)(f.WM, {
       children: (0, r.jsx)(f._2, {
         description: t.roles.length > 0 || v ? (0, r.jsxs)("div", {
           className: b.roleContainer,
           children: [(0, r.jsx)(s.ua7, {
-            "aria-label": g.NW.string(g.t["0g8Xd3"]),
+            "aria-label": g.intl.string(g.t["0g8Xd3"]),
             allowOverflow: !0,
-            text: g.NW.string(g.t["93S+lJ"]),
+            text: g.intl.string(g.t["93S+lJ"]),
             children: e => {
               let {
                 onMouseEnter: n,
@@ -56,9 +56,9 @@ function _(e) {
             role: l[e],
             guildId: t.guildId
           }, e)), v && (0, r.jsx)(s.ua7, {
-            "aria-label": g.NW.string(g.t.ljnBlp),
+            "aria-label": g.intl.string(g.t.ljnBlp),
             allowOverflow: !0,
-            text: g.NW.string(g.t.ljnBlp),
+            text: g.intl.string(g.t.ljnBlp),
             children: e => {
               let {
                 onMouseEnter: t,
@@ -83,7 +83,7 @@ function _(e) {
           className: b.noRoles,
           children: (0, r.jsx)(s.Text, {
             variant: "text-sm/normal",
-            children: g.NW.string(g.t.nZfHsb)
+            children: g.intl.string(g.t.nZfHsb)
           })
         })
       })

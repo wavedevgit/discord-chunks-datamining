@@ -7,8 +7,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  s = n(906732),
-  l = n(807582),
+  l = n(906732),
+  s = n(807582),
   a = n(949640),
   o = n(981631),
   c = n(30513),
@@ -24,7 +24,7 @@ function u(e) {
     targetPremiumGuildTier: m
   } = e, {
     analyticsLocations: g
-  } = (0, s.ZP)(), p = i.useCallback(e => {
+  } = (0, l.ZP)(), p = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, a.E6)({
       guild: t,
       analyticsLocations: g,
@@ -34,7 +34,7 @@ function u(e) {
       targetPremiumGuildTier: m
     })
   }, [g, c, o, t, u, m]);
-  return (0, r.jsx)(l.Z, {
+  return (0, r.jsx)(s.Z, {
     guild: t,
     guildFeature: n,
     className: d.guildFeatureAvailabilityIndicator,

@@ -31,11 +31,11 @@ function v(e) {
     channelId: _,
     displayProfile: Z,
     initialSection: O,
-    initialSubsection: N,
-    friendToken: P,
-    onClose: E
+    initialSubsection: P,
+    friendToken: E,
+    onClose: S
   } = e, {
-    relationshipType: S,
+    relationshipType: N,
     originApplicationId: T
   } = (0, o.cj)([l.Z], () => ({
     relationshipType: l.Z.getRelationshipType(t.id),
@@ -44,7 +44,7 @@ function v(e) {
     user: t,
     currentUser: v,
     guildId: x,
-    initialSubsection: N
+    initialSubsection: P
   });
   return (0, r.jsxs)("div", {
     className: j.body,
@@ -61,16 +61,16 @@ function v(e) {
       tags: (0, r.jsx)(a.Z, {
         displayProfile: Z,
         profileType: y.y0.FULL_SIZE,
-        onClose: E
+        onClose: S
       })
-    }), S === I.OGo.PENDING_INCOMING && (0, r.jsx)(b.Z.Overlay, {
+    }), N === I.OGo.PENDING_INCOMING && (0, r.jsx)(b.Z.Overlay, {
       className: j.bannerContainer,
       children: (0, r.jsx)(f.Z, {
         user: t,
         applicationId: T,
         guildId: null != (n = null == Z ? void 0 : Z.guildId) ? n : void 0,
         channelId: _,
-        friendToken: P,
+        friendToken: E,
         className: j.friendRequestBanner
       })
     }), A.map(e => (0, r.jsx)(b.Z.Overlay, {
@@ -88,7 +88,7 @@ function v(e) {
     }), C && (0, r.jsx)(d.Z, {
       className: j.bannerContainer,
       isPremiumUser: L,
-      onInteraction: E
+      onInteraction: S
     }), (0, r.jsx)(h.Z, {
       user: t,
       currentUser: v,
@@ -96,8 +96,8 @@ function v(e) {
       guildId: x,
       items: R,
       initialSection: O,
-      initialSubsection: N,
-      onClose: E
+      initialSubsection: P,
+      onClose: S
     })]
   })
 }

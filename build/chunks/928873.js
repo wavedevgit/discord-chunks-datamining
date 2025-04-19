@@ -224,7 +224,7 @@ function S(e) {
 function T(e) {
   if (e) return parseInt(e) > 0 ? e : void 0
 }
-class N {
+class A {
   constructor() {
     c(this, "targetElement"), c(this, "targetAncestry"), c(this, "boundingBox"), c(this, "className"), c(this, "offset", 0), c(this, "zIndex"), c(this, "container", null), c(this, "themeOptions"), c(this, "invalidate", () => null)
   }
@@ -311,9 +311,9 @@ class N {
     return t
   }
 }
-let A = new N;
-"u" > typeof window && A.setContainer(document.body);
-let C = a.createContext(A);
+let N = new A;
+"u" > typeof window && N.setContainer(document.body);
+let C = a.createContext(N);
 var R = function(e, t, n, r) {
   var i = n ? n.call(r, e, t) : void 0;
   if (void 0 !== i) return !!i;
@@ -360,7 +360,7 @@ function k(e) {
     containerRef: t,
     children: n,
     themeOptions: r
-  } = e, i = a.useRef(new N);
+  } = e, i = a.useRef(new A);
   return a.useEffect(() => {
     i.current.setContainer(t.current), i.current.setThemeOptions(r)
   }, [t.current]), (0, o.jsxs)(C.Provider, {

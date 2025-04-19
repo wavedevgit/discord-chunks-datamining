@@ -53,7 +53,7 @@ function d(e) {
   return (0, r.jsx)(l.tG, c({
     action: "SEND_MESSAGE",
     icon: o.kBi,
-    text: s.NW.string(s.t.zROXER),
+    text: s.intl.string(s.t.zROXER),
     onClick: () => {
       i.Z.openPrivateChannel({
         recipientIds: n
@@ -70,7 +70,7 @@ function u(e) {
   return (0, r.jsx)(l.ef, c({
     action: "SEND_MESSAGE",
     icon: o.kBi,
-    tooltipText: s.NW.string(s.t.zROXER),
+    tooltipText: s.intl.string(s.t.zROXER),
     onClick: () => {
       i.Z.openPrivateChannel({
         recipientIds: n

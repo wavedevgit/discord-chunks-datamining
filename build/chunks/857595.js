@@ -6,11 +6,11 @@ n.d(t, {
   Nv: () => C,
   Qj: () => _,
   TX: () => I,
-  Uv: () => A,
+  Uv: () => N,
   ZZ: () => d,
   Zt: () => y,
   cq: () => f,
-  eN: () => N,
+  eN: () => A,
   f1: () => h,
   gs: () => S,
   lq: () => m,
@@ -159,13 +159,13 @@ function T(e) {
   })
 }
 
-function N() {
+function A() {
   r.Z.dispatch({
     type: "ACCESSIBILITY_SUBMIT_BUTTON_TOGGLE"
   })
 }
 
-function A() {
+function N() {
   r.Z.dispatch({
     type: "ACCESSIBILITY_SYNC_PROFILE_THEME_WITH_USER_THEME_TOGGLE"
   })

@@ -44,28 +44,28 @@ function d(e) {
         }
       }
     }
-    let N = (0, l.vc)(e.timestamp, "LL");
-    N !== t && null == x && (_.push({
+    let I = (0, l.vc)(e.timestamp, "LL");
+    I !== t && null == x && (_.push({
       type: u.ys_.DIVIDER,
-      content: N,
-      contentKey: N
-    }), t = N);
-    let I = _[_.length - 1],
-      P = null,
-      S = (0, s.DQ)(e);
-    y = y || S;
-    let Z = function(e, t, n) {
+      content: I,
+      contentKey: I
+    }), t = I);
+    let P = _[_.length - 1],
+      S = null,
+      Z = (0, s.DQ)(e);
+    y = y || Z;
+    let N = function(e, t, n) {
       if (r.V.NON_COLLAPSIBLE.has(t.type));
       else if (t.blocked) return u.ys_.MESSAGE_GROUP_BLOCKED;
       else if (t.ignored) return u.ys_.MESSAGE_GROUP_IGNORED;
       else if ((0, s.P1)(e) && n) return u.ys_.MESSAGE_GROUP_SPAMMER;
       return null
-    }(p, e, S && m);
-    (null !== Z && ([P, I] = (E = v = I, null == v || v.type !== Z ? (O = {
-      type: Z,
+    }(p, e, Z && m);
+    (null !== N && ([S, P] = (E = v = P, null == v || v.type !== N ? (O = {
+      type: N,
       content: [],
       key: e.id
-    }, _.push(O)) : E = (O = v).content[O.content.length - 1], [O, E])), f === e.id && null != C) ? (null != I && I.type === u.ys_.DIVIDER ? I.unreadId = e.id : null !== P ? (j = P, e.isFirstMessageInForumPost(p) || j.content.push({
+    }, _.push(O)) : E = (O = v).content[O.content.length - 1], [O, E])), f === e.id && null != C) ? (null != P && P.type === u.ys_.DIVIDER ? P.unreadId = e.id : null !== S ? (j = S, e.isFirstMessageInForumPost(p) || j.content.push({
       type: u.ys_.DIVIDER,
       unreadId: e.id
     }), j.hasUnread = !0) : e.isFirstMessageInForumPost(p) || _.push({
@@ -81,7 +81,7 @@ function d(e) {
       content: T,
       groupId: T.id
     });
-    let A = (null == I ? void 0 : I.type) === u.ys_.MESSAGE ? d : I;
+    let A = (null == P ? void 0 : P.type) === u.ys_.MESSAGE ? d : P;
     (0, a.J)(p, A, e) && (n = e.id);
     let w = {
       type: e.type === u.uaV.THREAD_STARTER_MESSAGE ? u.ys_.THREAD_STARTER_MESSAGE : u.ys_.MESSAGE,
@@ -99,7 +99,7 @@ function d(e) {
       content: b.topic,
       contentKey: b.startId,
       isSummaryDivider: !0
-    }), null !== P ? (P.content.push(w), w.jumpTarget && (P.hasJumpTarget = !0)) : _.push(w), e.isFirstMessageInForumPost(p) && _.push({
+    }), null !== S ? (S.content.push(w), w.jumpTarget && (S.hasJumpTarget = !0)) : _.push(w), e.isFirstMessageInForumPost(p) && _.push({
       type: u.ys_.FORUM_POST_ACTION_BAR
     }), null != b && e.id === b.endId && b.count > 1 && _.push({
       type: u.ys_.DIVIDER,

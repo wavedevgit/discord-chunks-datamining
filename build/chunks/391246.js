@@ -23,8 +23,8 @@ var r = n(127849),
   I = n(190289),
   S = n(25124),
   T = n(199838),
-  N = s.PROPER,
-  A = s.CONFIGURABLE,
+  A = s.PROPER,
+  N = s.CONFIGURABLE,
   C = "ArrayBuffer",
   R = "DataView",
   P = "prototype",
@@ -42,8 +42,8 @@ var r = n(127849),
   V = r.Array,
   Z = r.RangeError,
   H = i(y),
-  W = i([].reverse),
-  Y = g.pack,
+  Y = i([].reverse),
+  W = g.pack,
   K = g.unpack,
   z = function(e) {
     return [255 & e]
@@ -58,10 +58,10 @@ var r = n(127849),
     return e[3] << 24 | e[2] << 16 | e[1] << 8 | e[0]
   },
   J = function(e) {
-    return Y(m(e), 23, 4)
+    return W(m(e), 23, 4)
   },
   $ = function(e) {
-    return Y(e, 52, 8)
+    return W(e, 52, 8)
   },
   ee = function(e, t, n) {
     c(e[P], t, {
@@ -79,7 +79,7 @@ var r = n(127849),
     var s = i.bytes,
       l = a + i.byteOffset,
       c = v(s, l, l + t);
-    return o ? c : W(c)
+    return o ? c : Y(c)
   },
   en = function(e, t, n, r, i, a) {
     var o = x(e),
@@ -90,16 +90,16 @@ var r = n(127849),
     for (var u = o.bytes, d = s + o.byteOffset, f = 0; f < t; f++) u[d + f] = l[c ? f : t - f - 1]
   };
 if (o) {
-  var er = N && k.name !== C;
+  var er = A && k.name !== C;
   !d(function() {
     k(1)
   }) || !d(function() {
     new k(-1)
   }) || d(function() {
-    return new k, new k(1.5), new k(NaN), 1 !== k.length || er && !A
+    return new k, new k(1.5), new k(NaN), 1 !== k.length || er && !N
   }) ? ((j = function(e) {
     return f(this, U), O(new k(h(e)), this, j)
-  })[P] = U, U.constructor = j, I(j, k)) : er && A && l(k, "name", C), b && E(B) !== F && b(B, F);
+  })[P] = U, U.constructor = j, I(j, k)) : er && N && l(k, "name", C), b && E(B) !== F && b(B, F);
   var ei = new G(new j(2)),
     ea = i(B.setInt8);
   ei.setInt8(0, 0x80000000), ei.setInt8(1, 0x80000001), (ei.getInt8(0) || !ei.getInt8(1)) && u(B, {

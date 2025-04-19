@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651);
 n(192379);
-var i = n(913527),
-  l = n.n(i),
+var l = n(913527),
+  i = n.n(l),
   s = n(793030),
   a = n(739566),
   o = n(942951),
@@ -19,14 +19,14 @@ function h(e) {
   var t;
   let {
     streamingUntil: n,
-    user: i,
+    user: l,
     channel: h
-  } = e, x = (0, a.JZ)(i, h), p = (0, o.l)({
-    user: i,
+  } = e, x = (0, a.JZ)(l, h), p = (0, o.l)({
+    user: l,
     channelId: h.id,
     guildId: h.guild_id,
     messageId: void 0
-  })(x), g = l()(n).diff(l()(), "hours");
+  })(x), g = i()(n).diff(i()(), "hours");
   return g <= 0 ? null : (0, r.jsxs)("div", {
     className: m.attribution,
     children: [(0, r.jsx)(c.Z, {
@@ -34,12 +34,12 @@ function h(e) {
     }), (0, r.jsxs)("div", {
       children: [(0, r.jsx)(s.X6, {
         variant: "heading-sm/bold",
-        children: f.NW.string(f.t.K04rOD)
+        children: f.intl.string(f.t.K04rOD)
       }), (0, r.jsx)(s.xv, {
         color: "text-muted",
         variant: "text-sm/medium",
-        children: f.NW.format(f.t.NZDuBg, {
-          actorName: null != (t = i.globalName) ? t : i.username,
+        children: f.intl.format(f.t.NZDuBg, {
+          actorName: null != (t = l.globalName) ? t : l.username,
           actorHook: p,
           num: g,
           helpCenterLink: d.Z.getArticleURL(u.BhN.HD_STREAMING_POTION)

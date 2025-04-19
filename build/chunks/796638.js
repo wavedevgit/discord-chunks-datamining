@@ -99,9 +99,9 @@ function h(e, t) {
       }
       let x = Z.filter(u.lm);
       S.current = (0, i.keyBy)((0, i.range)(x.length), e => x[e].id);
-      let N = [..._, ...x];
-      return null != v && (f && N.length >= y ? N[Math.max(0, N.length - 1)] = v : N.push(v)), {
-        visibleParticipants: N,
+      let w = [..._, ...x];
+      return null != v && (f && w.length >= y ? w[Math.max(0, w.length - 1)] = v : w.push(v)), {
+        visibleParticipants: w,
         participantTileWidth: O
       }
     }, [e, t, h, m, f, c, s, o, r]);

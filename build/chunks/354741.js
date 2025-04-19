@@ -4,10 +4,10 @@ n.r(t), n.d(t, {
 });
 var r = n(200651);
 n(192379);
-var a = n(481060),
-  i = n(493683),
-  o = n(239091),
-  l = n(883385),
+var i = n(481060),
+  a = n(493683),
+  l = n(239091),
+  o = n(883385),
   s = n(108843),
   c = n(947440),
   u = n(100527),
@@ -21,13 +21,13 @@ var a = n(481060),
   O = n(140106),
   g = n(122074),
   _ = n(314897),
-  N = n(858687),
-  j = n(461535),
-  m = n(776568),
-  C = n(981631),
-  E = n(388032);
+  j = n(858687),
+  m = n(461535),
+  C = n(776568),
+  E = n(981631),
+  P = n(388032);
 
-function P(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,90 +45,90 @@ function P(e) {
   }
   return e
 }
-let Z = (0, s.Z)((0, l.Z)(function(e) {
+let Z = (0, s.Z)((0, o.Z)(function(e) {
   let {
     channel: t,
-    selected: l,
+    selected: o,
     onSelect: s
-  } = e, Z = t.isOwner(_.default.getId()), w = (0, j.Z)(t), I = (0, m.ZP)(t), T = (0, g.Uf)(C.aIL, t.id, "top"), x = (0, N.Z)(t, l), A = (0, f.Z)({
+  } = e, Z = t.isOwner(_.default.getId()), w = (0, m.Z)(t), I = (0, C.ZP)(t), T = (0, g.Uf)(E.aIL, t.id, "top"), x = (0, j.Z)(t, o), A = (0, f.Z)({
     id: t.id,
-    label: E.NW.string(E.t.gFHI3t)
-  }), R = (0, c.Z)(t), U = (0, p.l)(t), S = (0, p.P)(t), W = (0, b.Z)(t), D = (0, h.Z)(t), F = (0, d.D)(t), k = (0, v.p1)(u.Z.GROUP_DM_CONTEXT_MENU, t.id), M = (0, v.I3)(u.Z.GROUP_DM_CONTEXT_MENU, t.id);
-  return null == t || t.isManaged() ? null : (0, r.jsxs)(a.v2r, {
+    label: P.intl.string(P.t.gFHI3t)
+  }), R = (0, c.Z)(t), U = (0, p.l)(t), S = (0, p.P)(t), D = (0, b.Z)(t), F = (0, h.Z)(t), k = (0, d.D)(t), M = (0, v.p1)(u.Z.GROUP_DM_CONTEXT_MENU, t.id), Q = (0, v.I3)(u.Z.GROUP_DM_CONTEXT_MENU, t.id);
+  return null == t || t.isManaged() ? null : (0, r.jsxs)(i.v2r, {
     navId: "gdm-context",
-    "aria-label": E.NW.string(E.t.Xm41aW),
-    onClose: o.Zy,
+    "aria-label": P.intl.string(P.t.Xm41aW),
+    onClose: l.Zy,
     onSelect: s,
-    children: [(0, r.jsx)(a.kSQ, {
+    children: [(0, r.jsx)(i.kSQ, {
       children: w
-    }), (0, r.jsxs)(a.kSQ, {
-      children: [U, W, D]
-    }), (0, r.jsxs)(a.kSQ, {
-      children: [Z ? (0, r.jsx)(a.sNh, {
+    }), (0, r.jsxs)(i.kSQ, {
+      children: [U, D, F]
+    }), (0, r.jsxs)(i.kSQ, {
+      children: [Z ? (0, r.jsx)(i.sNh, {
         id: "instant-invites",
-        label: E.NW.string(E.t.ngRFjY),
-        action: () => (0, a.ZDy)(async () => {
+        label: P.intl.string(P.t.ngRFjY),
+        action: () => (0, i.ZDy)(async () => {
           let {
             default: e
           } = await n.e("97573").then(n.bind(n, 892382));
-          return n => (0, r.jsx)(e, P({
+          return n => (0, r.jsx)(e, N({
             channelId: t.id
           }, n))
         })
-      }) : null, k && (M ? (0, r.jsx)(a.sNh, {
+      }) : null, M && (Q ? (0, r.jsx)(i.sNh, {
         id: "change-icon",
-        label: E.NW.string(E.t["6yrpFR"]),
+        label: P.intl.string(P.t["6yrpFR"]),
         action: () => (0, O.P5)(t.id, u.Z.GROUP_DM_CONTEXT_MENU)
-      }) : (0, r.jsx)(a.II_, {
+      }) : (0, r.jsx)(i.II_, {
         id: "change-icon",
         showDefaultFocus: !0,
         control: (e, n) => {
-          var o, l;
-          return (0, r.jsx)(a.TEe, (o = P({
+          var l, o;
+          return (0, r.jsx)(i.TEe, (l = N({
             onChange: n => {
               var r;
               let {
-                imageUri: a
+                imageUri: i
               } = n;
-              i.Z.setIcon(t.id, a), null == (r = e.onClose) || r.call(e)
+              a.Z.setIcon(t.id, i), null == (r = e.onClose) || r.call(e)
             },
             multiple: !1,
-            "aria-label": E.NW.string(E.t["6yrpFR"])
-          }, e), l = l = {
+            "aria-label": P.intl.string(P.t["6yrpFR"])
+          }, e), o = o = {
             ref: n
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
               n.push.apply(n, r)
             }
             return n
-          })(Object(l)).forEach(function(e) {
-            Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(l, e))
-          }), o))
+          })(Object(o)).forEach(function(e) {
+            Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(o, e))
+          }), l))
         },
-        label: E.NW.string(E.t["6yrpFR"])
-      })), k && null != t.icon ? (0, r.jsx)(a.sNh, {
+        label: P.intl.string(P.t["6yrpFR"])
+      })), M && null != t.icon ? (0, r.jsx)(i.sNh, {
         id: "remove-icon",
-        label: E.NW.string(E.t["uY+Nk5"]),
-        action: () => i.Z.setIcon(t.id, null)
-      }) : null, M && (0, r.jsx)(a.sNh, {
+        label: P.intl.string(P.t["uY+Nk5"]),
+        action: () => a.Z.setIcon(t.id, null)
+      }) : null, Q && (0, r.jsx)(i.sNh, {
         id: "edit-gdm",
-        label: E.NW.string(E.t["5Q9+/P"]),
+        label: P.intl.string(P.t["5Q9+/P"]),
         action: () => (0, y.B)(t.id, u.Z.GROUP_DM_CONTEXT_MENU)
-      }), F]
-    }), (0, r.jsx)(a.kSQ, {
+      }), k]
+    }), (0, r.jsx)(i.kSQ, {
       children: R
-    }), (0, r.jsxs)(a.kSQ, {
+    }), (0, r.jsxs)(i.kSQ, {
       children: [I, T]
-    }), (0, r.jsx)(a.kSQ, {
+    }), (0, r.jsx)(i.kSQ, {
       children: x
-    }), (0, r.jsx)(a.kSQ, {
+    }), (0, r.jsx)(i.kSQ, {
       children: S
-    }), (0, r.jsx)(a.kSQ, {
+    }), (0, r.jsx)(i.kSQ, {
       children: A
     })]
   })
 }, {
-  object: C.qAy.CONTEXT_MENU
+  object: E.qAy.CONTEXT_MENU
 }), [u.Z.CONTEXT_MENU, u.Z.GROUP_DM_MENU])

@@ -80,9 +80,9 @@ function C(e) {
       itemsForLayout: t.slice(0, r)
     }), 2 === r && (0, i.jsx)(w, {
       itemsForLayout: t.slice(0, r)
-    }), 0 === r ? (0, i.jsx)(N, {
+    }), 0 === r ? (0, i.jsx)(M, {
       itemsForLayout: t
-    }) : (0, i.jsx)(N, {
+    }) : (0, i.jsx)(M, {
       itemsForLayout: t.slice(r)
     })]
   })
@@ -169,7 +169,7 @@ function P(e) {
   })
 }
 
-function N(e) {
+function M(e) {
   let {
     itemsForLayout: t
   } = e;
@@ -182,7 +182,7 @@ function N(e) {
     }, e.item.uniqueId))
   })
 }
-let M = e => ({
+let N = e => ({
     className: l()(e, g.itemContentContainer),
     imgContainerClassName: g.lazyImgContainer,
     imgClassName: g.lazyImg
@@ -199,7 +199,7 @@ function A(e) {
     useFullWidth: r = !0,
     isSingleItem: l = !1,
     footer: s
-  } = e, a = t.item.type, u = y(f({}, t, "IMAGE" === a && M(t.className), "VIDEO" === a && T(t.className)), {
+  } = e, a = t.item.type, u = y(f({}, t, "IMAGE" === a && N(t.className), "VIDEO" === a && T(t.className)), {
     mediaLayoutType: p.hV.MOSAIC,
     maxWidth: n,
     maxHeight: o,

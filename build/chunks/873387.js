@@ -4,28 +4,28 @@ n.d(t, {
 });
 var r = n(149765),
   l = n(442837),
-  o = n(665906),
-  a = n(271383),
-  i = n(496675),
+  i = n(665906),
+  o = n(271383),
+  a = n(496675),
   c = n(594174),
   u = n(981631);
 
 function s(e) {
   let t = e.getGuildId(),
-    n = (0, l.e7)([a.ZP, c.default], () => {
+    n = (0, l.e7)([o.ZP, c.default], () => {
       var e, n;
       let r = c.default.getCurrentUser();
-      return null != (n = null != t && null != r ? null == (e = a.ZP.getMember(t, r.id)) ? void 0 : e.isPending : null) && n
+      return null != (n = null != t && null != r ? null == (e = o.ZP.getMember(t, r.id)) ? void 0 : e.isPending : null) && n
     }),
     {
       messagesDisabled: s
-    } = (0, l.cj)([i.Z], () => {
+    } = (0, l.cj)([a.Z], () => {
       let t = e.isPrivate(),
-        l = i.Z.computePermissions(e),
-        a = r.e$(l, u.Plq.SEND_MESSAGES),
-        c = (0, o.xl)(e);
+        l = a.Z.computePermissions(e),
+        o = r.e$(l, u.Plq.SEND_MESSAGES),
+        c = (0, i.xl)(e);
       return {
-        messagesDisabled: n || !t && !a || c
+        messagesDisabled: n || !t && !o || c
       }
     }, [e, n]);
   return !s

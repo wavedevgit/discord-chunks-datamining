@@ -1,26 +1,26 @@
 /** Chunk was on 522 **/
-t.d(r, {
-  default: () => h
+r.d(t, {
+  default: () => C
 });
-var n = t(200651),
-  a = t(192379),
-  s = t(442837),
-  o = t(481060),
-  c = t(198993),
-  l = t(639351),
-  i = t(63063),
-  d = t(258609),
-  u = t(259408),
-  m = t(893387),
-  f = t(927923),
-  x = t(981631),
-  p = t(388032),
-  _ = t(403883);
+var n = r(200651),
+  a = r(192379),
+  s = r(442837),
+  o = r(481060),
+  c = r(198993),
+  l = r(639351),
+  i = r(63063),
+  d = r(258609),
+  u = r(259408),
+  m = r(893387),
+  f = r(927923),
+  x = r(981631),
+  p = r(388032),
+  _ = r(403883);
 
-function N(e) {
+function h(e) {
   let {
-    step: r,
-    instructions: t
+    step: t,
+    instructions: r
   } = e;
   return (0, n.jsxs)("div", {
     className: _.cardRow,
@@ -29,44 +29,44 @@ function N(e) {
       children: (0, n.jsx)(o.Text, {
         variant: "text-sm/semibold",
         className: _.stepNumber,
-        children: r
+        children: t
       })
     }), (0, n.jsx)(o.Text, {
       variant: "text-sm/normal",
       color: "header-primary",
       className: _.instructions,
-      children: t
+      children: r
     })]
   })
 }
 
-function h(e) {
+function C(e) {
   let {
-    channel: r,
-    transitionState: t,
-    onClose: h
-  } = e, C = (0, s.e7)([d.Z], () => null != d.Z.getRemoteSessionId()), g = (0, u.Z)(r, {
+    channel: t,
+    transitionState: r,
+    onClose: C
+  } = e, g = (0, s.e7)([d.Z], () => null != d.Z.getRemoteSessionId()), j = (0, u.Z)(t, {
     forQRCode: !0
   });
   return a.useEffect(() => {
-    C && h()
-  }, [C, h]), a.useEffect(() => {
-    (0, m.Z)(r.id, f.YE.XBOX)
-  }, [r.id]), (0, n.jsxs)(o.Y0X, {
+    g && C()
+  }, [g, C]), a.useEffect(() => {
+    (0, m.Z)(t.id, f.YE.XBOX)
+  }, [t.id]), (0, n.jsxs)(o.Y0X, {
     size: o.CgR.DYNAMIC,
     className: _.modalRoot,
-    transitionState: t,
+    transitionState: r,
     children: [(0, n.jsxs)(o.xBx, {
       separator: !1,
       className: _.modalHeaderContainer,
       children: [(0, n.jsx)(o.X6q, {
         className: _.modalHeader,
         variant: "heading-xl/extrabold",
-        children: p.NW.string(p.t["f+Aijo"])
+        children: p.intl.string(p.t["f+Aijo"])
       }), (0, n.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "header-secondary",
-        children: p.NW.string(p.t.mYFmDQ)
+        children: p.intl.string(p.t.mYFmDQ)
       })]
     }), (0, n.jsx)(o.hzk, {
       className: _.content,
@@ -80,30 +80,30 @@ function h(e) {
             className: _.cardRow,
             children: [(0, n.jsx)(l.Z, {
               className: _.cardHeaderIcon
-            }), p.NW.string(p.t.ZNlYbG)]
-          }), (0, n.jsx)(N, {
+            }), p.intl.string(p.t.ZNlYbG)]
+          }), (0, n.jsx)(h, {
             step: 1,
-            instructions: p.NW.string(p.t.dDtkl5)
-          }), (0, n.jsx)(N, {
+            instructions: p.intl.string(p.t.dDtkl5)
+          }), (0, n.jsx)(h, {
             step: 2,
-            instructions: p.NW.string(p.t.IWuXjI)
+            instructions: p.intl.string(p.t.IWuXjI)
           }), (0, n.jsx)(o.Text, {
             variant: "text-sm/medium",
             children: (0, n.jsx)(o.eee, {
               className: _.learnMore,
               href: i.Z.getArticleURL(x.BhN.XBOX_CONNECTION),
-              children: p.NW.string(p.t.hvVgAQ)
+              children: p.intl.string(p.t.hvVgAQ)
             })
           })]
         }), (0, n.jsx)(c.ZP, {
           className: _.qrCode,
           size: 120,
-          text: g
+          text: j
         })]
       })
     }), (0, n.jsx)(o.olH, {
       className: _.closeButton,
-      onClick: h
+      onClick: C
     })]
   })
 }

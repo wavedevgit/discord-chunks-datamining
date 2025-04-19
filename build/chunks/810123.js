@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => b
 });
 var i, r = n(200651),
-  a = n(120356),
-  l = n.n(a),
+  l = n(120356),
+  a = n.n(l),
   s = n(468194),
   c = n(471445),
   o = n(686546),
@@ -22,7 +22,7 @@ let f = {
     let {
       className: n,
       iconClassName: i,
-      size: a,
+      size: l,
       channel: d,
       guild: b,
       locked: I,
@@ -30,8 +30,8 @@ let f = {
     } = e;
     if (null == b) return null;
     let _ = b.getIconURL(48),
-      g = p[a],
-      y = f[a],
+      g = p[l],
+      y = f[l],
       S = (0, c.KS)(d, b, {
         locked: I,
         hasActiveThreads: E
@@ -52,7 +52,7 @@ let f = {
             height: y
           }
         }) : (0, r.jsx)("div", {
-          className: l()(u.channelGuildIcon, u.acronym),
+          className: a()(u.channelGuildIcon, u.acronym),
           style: {
             fontSize: A.length - 1 > g.length ? g[g.length - 1] : g[A.length - 1],
             width: y,
@@ -61,7 +61,7 @@ let f = {
           children: A
         })
       }), (0, r.jsx)(S, {
-        className: l()(u.icon, u.iconWithGuildIcon, i),
+        className: a()(u.icon, u.iconWithGuildIcon, i),
         color: "currentColor"
       })]
     })

@@ -1,10 +1,10 @@
 /** Chunk was on 46746 **/
 n.d(t, {
-  M: () => l
+  M: () => i
 });
 var r = n(37113),
-  i = n(388032);
+  l = n(388032);
 
-function l(e) {
-  return e === r.LY.RESOLUTION_SOURCE ? i.NW.string(i.t.XjXqzs) : "".concat(e, "p")
+function i(e) {
+  return e === r.LY.RESOLUTION_SOURCE ? l.intl.string(l.t.XjXqzs) : "".concat(e, "p")
 }

@@ -38,8 +38,8 @@ function h(e) {
     id: "set-wallpaper",
     label: (0, r.jsxs)("div", {
       className: p.label,
-      children: [b.NW.string(b.t.GixvUl), (0, r.jsx)(a.IGR, {
-        text: b.NW.string(b.t.y2b7CA),
+      children: [b.intl.string(b.t.GixvUl), (0, r.jsx)(a.IGR, {
+        text: b.intl.string(b.t.y2b7CA),
         color: s.Z.BG_BRAND
       })]
     }),

@@ -71,14 +71,14 @@ function T(e) {
   g(t).editorState = n
 }
 
-function N(e) {
+function A(e) {
   let {
     searchId: t
   } = e;
   null != t && g(t)
 }
 
-function A(e) {
+function N(e) {
   var t, n;
   let {
     queryString: r,
@@ -326,11 +326,11 @@ class V extends(r = o.ZP.Store) {
 }
 p(V, "displayName", "SearchStore");
 let Z = new V(l.Z, {
-  SEARCH_START: A,
+  SEARCH_START: N,
   SEARCH_INDEXING: R,
   SEARCH_FINISH: P,
   SEARCH_EDITOR_STATE_CLEAR: w,
-  SEARCH_ENSURE_SEARCH_STATE: N,
+  SEARCH_ENSURE_SEARCH_STATE: A,
   SEARCH_EDITOR_STATE_CHANGE: T,
   SEARCH_SET_SHOW_BLOCKED_RESULTS: U,
   SEARCH_SCREEN_OPEN: x,

@@ -10,7 +10,7 @@ n.d(t, {
   dF: () => O,
   dX: () => L,
   iF: () => S,
-  kl: () => N,
+  kl: () => A,
   mn: () => T,
   p3: () => b,
   wC: () => E
@@ -102,7 +102,7 @@ function T(e) {
   })
 }
 
-function N(e, t, n) {
+function A(e, t, n) {
   let r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : () => !0,
     i = C(e, t, e => e.id, r);
   return n.forEach(t => {
@@ -118,7 +118,7 @@ function N(e, t, n) {
   }), i
 }
 
-function A(e, t) {
+function N(e, t) {
   return e.filter(e => {
     var n;
     return S(null == (n = t[e]) ? void 0 : n.channel)
@@ -145,7 +145,7 @@ function R(e, t) {
     r = s.ZP.getChannels(e)[s.sH],
     i = {};
   for (let e of r) i[e.channel.id] = e;
-  return [A(n.map(e => {
+  return [N(n.map(e => {
     let {
       id: t
     } = e;

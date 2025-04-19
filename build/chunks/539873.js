@@ -27,7 +27,7 @@ var r = n(200651),
   S = n(888090),
   T = n(716827);
 
-function N(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -36,14 +36,14 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      N(e, t, n[t])
+      A(e, t, n[t])
     })
   }
   return e
@@ -88,7 +88,7 @@ function D(e) {
   let {
     className: t,
     disabled: a,
-    isEditor: N,
+    isEditor: A,
     renderCTAButtons: C
   } = e, [w, D] = (0, s.Wu)([g.Z], () => [g.Z.getCurrentDesktopIcon(), g.Z.isUpsellPreview]), {
     enabled: L
@@ -110,11 +110,11 @@ function D(e) {
     U = P(k, ["ref"]),
     G = (0, f.Q3)("AppIconSelectionGroup"),
     B = e => {
-      if (L && !N && e !== E.aH.DEFAULT) return void(0, l.ZDy)(async () => {
+      if (L && !A && e !== E.aH.DEFAULT) return void(0, l.ZDy)(async () => {
         let {
           default: e
         } = await n.e("69052").then(n.bind(n, 184250));
-        return t => (0, r.jsx)(e, A({
+        return t => (0, r.jsx)(e, N({
           analyticsSource: u.Z.APP_ICON_SELECTOR,
           analyticsLocation: {
             section: v.jXE.SETTINGS_APPEARANCE_APP_ICON_PICKER,
@@ -129,7 +129,7 @@ function D(e) {
     };
   return (0, r.jsx)("div", {
     ref: x,
-    children: (0, r.jsx)("div", R(A({}, U), {
+    children: (0, r.jsx)("div", R(N({}, U), {
       ref: j,
       className: S.__invalid_container,
       children: (0, r.jsxs)("div", {
@@ -138,16 +138,16 @@ function D(e) {
           className: S.header,
           children: [(0, r.jsxs)("div", {
             className: S.headings,
-            children: [!N && (0, r.jsxs)("div", {
+            children: [!A && (0, r.jsxs)("div", {
               className: S.title,
               children: [(0, r.jsx)(l.X6q, {
                 className: S.titleText,
                 variant: G ? "text-lg/medium" : "text-md/medium",
-                children: I.NW.string(I.t.NThqT0)
+                children: I.intl.string(I.t.NThqT0)
               }), !L && (0, r.jsx)(h.Z, {
                 className: S.premiumIcon
               })]
-            }), L ? N ? null : (0, r.jsxs)("div", {
+            }), L ? A ? null : (0, r.jsxs)("div", {
               className: S.description,
               children: [(0, r.jsx)(l.SrA, {
                 size: "md",
@@ -155,7 +155,7 @@ function D(e) {
                 className: S.nitroWheel
               }), (0, r.jsx)(l.X6q, {
                 variant: "text-sm/normal",
-                children: I.NW.format(I.t.x2dQxM, {
+                children: I.intl.format(I.t.x2dQxM, {
                   onClick: () => {
                     (0, _.$)()
                   }
@@ -166,12 +166,12 @@ function D(e) {
               className: o()({
                 [T.subtext]: G
               }),
-              children: I.NW.string(I.t.IgENJi)
+              children: I.intl.string(I.t.IgENJi)
             })]
           }), null == C ? void 0 : C()]
         }), (0, r.jsx)("div", {
           className: o()(S.presets, {
-            [S.presetsJustified]: L && N
+            [S.presetsJustified]: L && A
           }),
           children: (0, y.wu)().filter(e => {
             let {
@@ -184,7 +184,7 @@ function D(e) {
             onSelect: e => B(e),
             disabled: a,
             tabIndex: 0 !== t || a ? void 0 : 0,
-            locked: L && !N && e.id !== E.aH.DEFAULT
+            locked: L && !A && e.id !== E.aH.DEFAULT
           }, e.id))
         })]
       })

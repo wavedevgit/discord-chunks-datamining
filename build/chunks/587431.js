@@ -1,15 +1,15 @@
 /** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  Z: () => l
+  Z: () => s
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  s = n(696936);
+  l = n(696936);
 
-function l(e) {
-  return (0, r.jsx)(s.Z, function(e) {
+function s(e) {
+  return (0, r.jsx)(l.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -27,7 +27,7 @@ function l(e) {
     }
     return e
   }({
-    color: s.W.RED,
+    color: l.W.RED,
     icon: i.k$p
   }, e))
 }

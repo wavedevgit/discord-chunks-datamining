@@ -53,7 +53,7 @@ function g() {
           variant: "text-xs/medium",
           color: "always-white",
           lineClamp: 1,
-          children: _.NW.string(_.t["BMw+7O"])
+          children: _.intl.string(_.t["BMw+7O"])
         })]
       }), (0, r.jsx)("div", {
         className: p.nitroTopDividerLockBorderReversed

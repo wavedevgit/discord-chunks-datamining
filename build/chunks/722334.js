@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  a = n.n(i),
-  l = n(481060),
+  l = n.n(i),
+  a = n(481060),
   o = n(626135),
   s = n(617136),
   c = n(497505),
@@ -24,9 +24,9 @@ function _(e) {
   } = e;
   return (0, r.jsx)("div", {
     className: h.buttonContainer,
-    children: (0, r.jsx)(l.zxk, {
+    children: (0, r.jsx)(a.zxk, {
       className: h.button,
-      color: l.Ttl.BRAND,
+      color: a.Ttl.BRAND,
       onClick: () => {
         (0, d.navigateToQuestHome)({
           fromContent: c.jn.EXCLUDED_QUEST_EMBED
@@ -52,7 +52,7 @@ function _(e) {
           cta_name: s.jZ.VIEW_QUESTS
         }, (0, s.mH)(c.jn.EXCLUDED_QUEST_EMBED)))
       },
-      children: f.NW.string(f.t.GURBQk)
+      children: f.intl.string(f.t.GURBQk)
     })
   })
 }
@@ -68,21 +68,21 @@ function b(e) {
     ref: e => {
       n.current = e
     },
-    className: a()(h.container, {
+    className: l()(h.container, {
       [h.wide]: "lg" === i,
       [h.tall]: "lg" !== i
     }),
     children: [(0, r.jsxs)("div", {
       className: h.contentContainer,
-      children: [(0, r.jsx)(l.X6q, {
+      children: [(0, r.jsx)(a.X6q, {
         variant: "lg" === i ? "heading-xl/bold" : "heading-lg/bold",
         color: "header-primary",
-        children: f.NW.string(f.t.vnP31d)
-      }), (0, r.jsx)(l.Text, {
+        children: f.intl.string(f.t.vnP31d)
+      }), (0, r.jsx)(a.Text, {
         variant: "lg" === i ? "text-sm/medium" : "text-xs/medium",
         color: "text-normal",
         className: h.__invalid_mobileWebCopy,
-        children: f.NW.string(f.t.nuWSYW)
+        children: f.intl.string(f.t.nuWSYW)
       }), (0, r.jsx)(_, {
         questId: t
       })]

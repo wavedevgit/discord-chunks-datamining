@@ -67,7 +67,7 @@ function h(e) {
     children: [(0, r.jsx)(c.X6q, {
       variant: "heading-sm/normal",
       className: _.sectionLabel,
-      children: f.NW.format(v, {
+      children: f.intl.format(v, {
         application: null != (t = null == n ? void 0 : n.name) ? t : ""
       })
     }), i.map(e => (0, d.CI)(e, i).map((t, n) => {
@@ -77,7 +77,7 @@ function h(e) {
         error: 0 === n ? null == m || null == (i = m[e]) ? void 0 : i[0] : void 0
       }, "".concat(e, "-").concat(n))
     })).flat(), O && (0, r.jsx)(p, {
-      text: f.NW.string(f.t.Ls2XRk)
+      text: f.intl.string(f.t.Ls2XRk)
     }), (0, r.jsx)(p, {
       text: y,
       isFake: !0

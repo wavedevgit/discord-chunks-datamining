@@ -3,7 +3,7 @@ n.d(t, {
   KJ: () => g,
   N0: () => j,
   k3: () => v,
-  lk: () => N,
+  lk: () => _,
   ng: () => x
 }), n(388685), n(457542), n(781311), n(953529);
 var r, i = n(192379),
@@ -35,7 +35,7 @@ function x(e, t, n) {
       let e = u.termRules.map(e => e.value.trim()).filter(e => "" !== e);
       r = [{
         field_type: f.QJ.TERMS,
-        label: b.NW.string(b.t["9suSIC"]),
+        label: b.intl.string(b.t["9suSIC"]),
         values: e,
         required: !0
       }]
@@ -73,7 +73,7 @@ function v(e, t) {
   }
 }
 
-function N(e) {
+function _(e) {
   let t = (0, p.rb)(e => e.hasUnsubmittedChanges);
   i.useEffect(() => ((0, p.a5)(!1), () => {
     (0, p.a5)(!1)

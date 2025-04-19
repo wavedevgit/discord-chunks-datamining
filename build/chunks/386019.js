@@ -64,7 +64,7 @@ function _(e) {
           onClose: () => {
             t(), v(!1)
           },
-          "aria-label": f.NW.string(f.t.PlAQz8),
+          "aria-label": f.intl.string(f.t.PlAQz8),
           onSelect: g,
           children: (0, r.jsx)(a.kSQ, {
             children: T

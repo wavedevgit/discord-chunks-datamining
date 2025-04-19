@@ -52,13 +52,13 @@ let s = () => n.e("49812").then(n.t.bind(n, 48603, 19)).then(e => {
             variant: "heading-lg/semibold",
             className: a.header,
             id: c,
-            children: o.NW.format(o.t.z9qozM, {
+            children: o.intl.format(o.t.z9qozM, {
               guildName: e.guildName
             })
           }), (0, r.jsx)(i.Text, {
             variant: "text-sm/medium",
             color: "header-secondary",
-            children: o.NW.string(o.t.nwpqyc)
+            children: o.intl.string(o.t.nwpqyc)
           }), (0, r.jsx)(i.zxk, {
             className: a.button,
             onClick: () => {
@@ -66,7 +66,7 @@ let s = () => n.e("49812").then(n.t.bind(n, 48603, 19)).then(e => {
             },
             fullWidth: !0,
             size: i.PhG.LARGE,
-            children: o.NW.string(o.t.NuzmOD)
+            children: o.intl.string(o.t.NuzmOD)
           })]
         })
       })]

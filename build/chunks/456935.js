@@ -1,23 +1,23 @@
 /** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  I9: () => l
+  I9: () => s
 }), n(200651), n(192379);
 var r = n(692547);
 n(481060), n(496675), n(484455);
 var i = n(981631),
-  s = n(388032);
+  l = n(388032);
 
-function l(e) {
+function s(e) {
   switch (e) {
     case i.sFg.LOW:
-      return s.NW.string(s.t.SsCK8P);
+      return l.intl.string(l.t.SsCK8P);
     case i.sFg.MEDIUM:
-      return s.NW.string(s.t.WwNoR0);
+      return l.intl.string(l.t.WwNoR0);
     case i.sFg.HIGH:
-      return s.NW.string(s.t.I2jMUF);
+      return l.intl.string(l.t.I2jMUF);
     case i.sFg.VERY_HIGH:
-      return s.NW.string(s.t.cJY8w8);
+      return l.intl.string(l.t.cJY8w8);
     default:
       return ""
   }

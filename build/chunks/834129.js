@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  a = n.n(i),
-  l = n(481060),
+  l = n.n(i),
+  a = n(481060),
   o = n(318713),
   s = n(614507);
 
@@ -15,7 +15,7 @@ function c(e) {
     icon: t,
     iconNode: n,
     timestamp: i,
-    timestampFormat: l,
+    timestampFormat: a,
     className: c,
     children: u,
     contentClassName: d,
@@ -25,28 +25,28 @@ function c(e) {
     compact: h = !1
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(c, {
+    className: l()(c, {
       [s.container]: !0,
       [s.compact]: h,
       [s.cozy]: !h
     }),
     children: [null != n && (0, r.jsx)("div", {
-      className: a()(s.iconContainer, m),
+      className: l()(s.iconContainer, m),
       children: n
     }), null != t && (0, r.jsx)("div", {
       className: s.iconContainer,
       children: (0, r.jsx)("div", {
         "data-accessibility": "desaturate",
-        className: a()(s.icon, s.iconSize, p),
+        className: l()(s.icon, s.iconSize, p),
         style: {
           backgroundImage: "url('".concat(t, "')")
         }
       })
     }), (0, r.jsxs)("div", {
-      className: a()(d, s.content),
+      className: l()(d, s.content),
       children: [u, null != i && (0, r.jsx)(o.Z, {
         timestamp: i,
-        timestampFormat: l,
+        timestampFormat: a,
         className: f
       })]
     })]
@@ -59,7 +59,7 @@ c.Action = e => {
   } = e;
   return (0, r.jsxs)("span", {
     className: s.action,
-    children: ["—", (0, r.jsx)(l.eee, {
+    children: ["—", (0, r.jsx)(a.eee, {
       onClick: t,
       className: s.actionAnchor,
       children: n

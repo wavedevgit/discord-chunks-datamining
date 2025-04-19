@@ -27,10 +27,10 @@ function _(e) {
       className: u.customGiftHeader,
       children: [(0, r.jsx)(a.Text, {
         variant: "text-md/bold",
-        children: c.NW.string(c.t.Hl2IgY)
+        children: c.intl.string(c.t.Hl2IgY)
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
-        children: c.NW.string(c.t.stGFAw)
+        children: c.intl.string(c.t.stGFAw)
       })]
     }), e]
   }), p = e => {
@@ -79,7 +79,7 @@ function _(e) {
           }), (0, r.jsx)(a.Text, {
             className: u.text,
             variant: "text-sm/semibold",
-            children: c.NW.string(c.t.Hl2IgY)
+            children: c.intl.string(c.t.Hl2IgY)
           })]
         }) : (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(a.Text, {

@@ -2,11 +2,11 @@
 n.d(t, {
   Z: () => u
 }), n(388685);
-var r = n(200651),
-  i = n(192379),
+var i = n(200651),
+  r = n(192379),
   s = n(120356),
-  a = n.n(s),
-  l = n(200100),
+  l = n.n(s),
+  a = n(200100),
   o = n(481060),
   c = n(320319),
   d = n(687588);
@@ -15,96 +15,96 @@ let u = e => {
     cards: t,
     className: n,
     cardType: s
-  } = e, u = () => window.innerWidth < 910 ? 1 : window.innerWidth < 1400 ? 2 : 3, [m, g] = i.useState(0), [p, h] = i.useState(u()), f = t.length;
-  i.useEffect(() => {
+  } = e, u = () => window.innerWidth < 910 ? 1 : window.innerWidth < 1400 ? 2 : 3, [m, g] = r.useState(0), [p, h] = r.useState(u()), f = t.length;
+  r.useEffect(() => {
     let e = () => {
       h(u())
     };
     return window.addEventListener("resize", e), () => {
       window.removeEventListener("resize", e)
     }
-  }, []), i.useEffect(() => {
+  }, []), r.useEffect(() => {
     g(e => f > p && e > f - p ? f - p : f <= p ? 0 : e)
   }, [f, p]);
   let b = m > 0,
-    _ = i.useCallback(e => ({
+    _ = r.useCallback(e => ({
       x: (e - m) * 100
     }), [m]),
-    [N, x] = (0, o.bYB)(t.length, _);
-  return i.useEffect(() => {
-    x(_)
-  }, [x, _]), (0, r.jsx)("div", {
+    [x, E] = (0, o.bYB)(t.length, _);
+  return r.useEffect(() => {
+    E(_)
+  }, [E, _]), (0, i.jsx)("div", {
     className: n,
-    children: (0, r.jsxs)("div", {
+    children: (0, i.jsxs)("div", {
       className: d.cardContainer,
-      children: [f > p && (0, r.jsx)(o.P3F, {
+      children: [f > p && (0, i.jsx)(o.P3F, {
         onClick: b ? () => {
           g(e => 0 === e ? f - p : e - 1)
         } : void 0,
-        className: a()({
+        className: l()({
           [d.leftArrow]: b,
           [d.inactiveArrow]: !b
         }),
-        children: (0, r.jsx)(o.whL, {
+        children: (0, i.jsx)(o.whL, {
           className: d.arrowIcon,
           colorClass: d.arrowIcon
         })
-      }), (0, r.jsx)("div", {
+      }), (0, i.jsx)("div", {
         className: d.cardInnerContainer,
-        children: N.map((e, n) => {
-          var i, a;
+        children: x.map((e, n) => {
+          var r, l;
           let {
             x: o
           } = e;
-          return (0, r.jsx)(l.animated.div, {
+          return (0, i.jsx)(a.animated.div, {
             className: d.card,
             style: {
               transform: null == o ? void 0 : o.to(e => "translate3d(".concat(e, "%,0,0)"))
             },
-            children: (0, r.jsx)(c.Z, (i = function(e) {
+            children: (0, i.jsx)(c.Z, (r = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
-                  r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                  i = Object.keys(n);
+                "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                   return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), r.forEach(function(t) {
-                  var r;
-                  r = n[t], t in e ? Object.defineProperty(e, t, {
-                    value: r,
+                }))), i.forEach(function(t) {
+                  var i;
+                  i = n[t], t in e ? Object.defineProperty(e, t, {
+                    value: i,
                     enumerable: !0,
                     configurable: !0,
                     writable: !0
-                  }) : e[t] = r
+                  }) : e[t] = i
                 })
               }
               return e
-            }({}, t[n]), a = a = {
+            }({}, t[n]), l = l = {
               cardType: s
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
-                var r = Object.getOwnPropertySymbols(e);
-                n.push.apply(n, r)
+                var i = Object.getOwnPropertySymbols(e);
+                n.push.apply(n, i)
               }
               return n
-            })(Object(a)).forEach(function(e) {
-              Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
-            }), i), "".concat(t[n].name, "_").concat(n, "_perks_card"))
+            })(Object(l)).forEach(function(e) {
+              Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
+            }), r), "".concat(t[n].name, "_").concat(n, "_perks_card"))
           }, "".concat(t[n].name, "_").concat(n, "_animated_div"))
         })
-      }), f > p && (0, r.jsx)(o.P3F, {
+      }), f > p && (0, i.jsx)(o.P3F, {
         onClick: () => {
           g(e => e >= f - p ? 0 : e + 1)
         },
         className: d.rightArrow,
-        children: (0, r.jsx)(o.ZSh, {
+        children: (0, i.jsx)(o.ZSh, {
           className: d.arrowIcon,
           colorClass: d.arrowIcon
         })
-      }), f > p && (0, r.jsx)("div", {
+      }), f > p && (0, i.jsx)("div", {
         className: d.cardProgressBar,
         children: t.map((e, t) => {
-          if (!(t > f - p)) return (0, r.jsx)("div", {
+          if (!(t > f - p)) return (0, i.jsx)("div", {
             className: t === m ? d.selectedDot : d.dot
           }, "progress_bar_dot_".concat(t))
         })

@@ -36,37 +36,37 @@ function f(e, t, n, d) {
         isDefaultSound: f
       }).with({
         canSendSoundmojis: !1
-      }, () => u.NW.string(u.t.x2kyyM)).with({
+      }, () => u.intl.string(u.t.x2kyyM)).with({
         isDefaultSound: !0
-      }, () => u.NW.string(u.t.AabHen)).with({
+      }, () => u.intl.string(u.t.AabHen)).with({
         isInGuild: !1,
         isGuildDiscoverable: !1
-      }, () => u.NW.string(u.t.MRYt09)).with({
+      }, () => u.intl.string(u.t.MRYt09)).with({
         hasSoundmojiPermissions: !0,
         isInGuild: !0,
         isSoundFromDifferentGuild: !1
-      }, () => u.NW.string(u.t.p17MQE)).with({
+      }, () => u.intl.string(u.t.p17MQE)).with({
         hasSoundmojiPermissions: !0,
         isInGuild: !0,
         isSoundFromDifferentGuild: !0
-      }, () => u.NW.string(u.t.Lkbm5u)).with({
+      }, () => u.intl.string(u.t.Lkbm5u)).with({
         hasSoundmojiPermissions: !0,
         isInGuild: !1,
         isGuildDiscoverable: !0
-      }, () => u.NW.string(u.t.GTJmaW)).with({
+      }, () => u.intl.string(u.t.GTJmaW)).with({
         hasSoundmojiPermissions: !1,
         isInGuild: !0,
         isSoundFromDifferentGuild: !1
-      }, () => u.NW.string(u.t["sj/imZ"])).with({
+      }, () => u.intl.string(u.t["sj/imZ"])).with({
         hasSoundmojiPermissions: !1,
         isInGuild: !0,
         isSoundFromDifferentGuild: !0,
         canSendSoundmojis: !0
-      }, () => u.NW.string(u.t["3Ru2//"])).with({
+      }, () => u.intl.string(u.t["3Ru2//"])).with({
         hasSoundmojiPermissions: !1,
         isInGuild: !1,
         isGuildDiscoverable: !0
-      }, () => u.NW.string(u.t.qRkWhY)).exhaustive()
+      }, () => u.intl.string(u.t.qRkWhY)).exhaustive()
     }, [f, d, _, n, h, p])
   }
 }

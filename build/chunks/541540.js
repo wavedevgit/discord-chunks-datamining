@@ -1,12 +1,12 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => x
+  Z: () => E
 }), n(388685), n(415506);
-var r = n(200651),
-  i = n(192379),
+var i = n(200651),
+  r = n(192379),
   s = n(442837),
-  a = n(481060),
-  l = n(533307),
+  l = n(481060),
+  a = n(533307),
   o = n(600164),
   c = n(930114),
   d = n(246946),
@@ -28,10 +28,10 @@ function f(e, t, n) {
 function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      i = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
+    }))), i.forEach(function(t) {
       f(e, t, n[t])
     })
   }
@@ -42,15 +42,15 @@ function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var i = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, i)
     }
     return n
   })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class N extends i.Component {
+class x extends r.Component {
   get analyticsLocation() {
     let {
       analyticsContext: {
@@ -67,34 +67,34 @@ class N extends i.Component {
     } = this.props, {
       codeInput: t,
       submitting: n,
-      hasError: i,
+      hasError: r,
       isPromoCode: s
     } = this.state;
-    return (0, r.jsxs)(a.hjN, {
-      tag: a.RB0.H1,
-      title: p.NW.string(p.t["il+VCg"]),
-      children: [(0, r.jsx)(a.vwX, {
-        children: p.NW.string(p.t.SeKIoa)
-      }), (0, r.jsx)("form", {
+    return (0, i.jsxs)(l.hjN, {
+      tag: l.RB0.H1,
+      title: p.intl.string(p.t["il+VCg"]),
+      children: [(0, i.jsx)(l.vwX, {
+        children: p.intl.string(p.t.SeKIoa)
+      }), (0, i.jsx)("form", {
         onSubmit: this.handleSubmit,
-        children: (0, r.jsxs)(o.Z, {
-          children: [(0, r.jsx)(a.oil, {
+        children: (0, i.jsxs)(o.Z, {
+          children: [(0, i.jsx)(l.oil, {
             type: e ? "password" : "text",
             value: t,
             onChange: this.handleChange,
             placeholder: "WUMP-AAAAA-BBBBB-CCCCC",
-            error: !s && i ? p.NW.string(p.t.Y11a2t) : null,
+            error: !s && r ? p.intl.string(p.t.Y11a2t) : null,
             className: h.codeRedemptionInput
-          }), (0, r.jsx)(a.zxk, {
+          }), (0, i.jsx)(l.zxk, {
             type: "submit",
             submitting: n,
-            children: p.NW.string(p.t.KIpp7O)
+            children: p.intl.string(p.t.KIpp7O)
           })]
         })
-      }), s ? (0, r.jsx)(a.Text, {
+      }), s ? (0, i.jsx)(l.Text, {
         className: h.errorMessage,
         variant: "text-sm/normal",
-        children: p.NW.format(p.t.gPt3PD, {
+        children: p.intl.format(p.t.gPt3PD, {
           promoLink: () => {
             window.open("https://discord.com/billing/promotions/".concat(t))
           }
@@ -127,7 +127,7 @@ class N extends i.Component {
         submitting: !0
       });
       try {
-        let e = await l.Z.resolveGiftCode(n);
+        let e = await a.Z.resolveGiftCode(n);
         if (null != e && null != e.giftCode.promotion) throw this.setState({
           isPromoCode: !0
         }), Error("Cannnot redeem promotion code as gift");
@@ -154,10 +154,10 @@ class N extends i.Component {
   }
 }
 
-function x() {
-  let e = i.useContext(u.AnalyticsContext),
+function E() {
+  let e = r.useContext(u.AnalyticsContext),
     t = (0, s.e7)([d.Z], () => d.Z.enabled);
-  return (0, r.jsx)(N, {
+  return (0, i.jsx)(x, {
     analyticsContext: e,
     obscureInput: t
   })

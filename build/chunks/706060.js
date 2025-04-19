@@ -2,11 +2,11 @@
 n.d(t, {
   Z: () => m
 }), n(388685), n(642613), n(539854);
-var r = n(200651),
-  i = n(192379),
+var i = n(200651),
+  r = n(192379),
   s = n(772848),
-  a = n(481060),
-  l = n(259580),
+  l = n(481060),
+  a = n(259580),
   o = n(991346),
   c = n(152049);
 
@@ -15,7 +15,7 @@ function d(e) {
     setting: t,
     hasChildren: n
   } = e;
-  return (0, r.jsx)(a.Text, {
+  return (0, i.jsx)(l.Text, {
     variant: n ? "text-md/bold" : "text-md/normal",
     children: t
   })
@@ -26,40 +26,40 @@ function u(e) {
     setting: t,
     children: n,
     depth: o
-  } = e, [m, g] = i.useState(1 === o), p = i.useCallback(() => {
+  } = e, [m, g] = r.useState(1 === o), p = r.useCallback(() => {
     g(!m)
   }, [m, g]);
-  if (0 === n.length) return (0, r.jsx)("div", {
+  if (0 === n.length) return (0, i.jsx)("div", {
     style: {
       marginLeft: 8 * o
     },
     className: c.settingNode,
-    children: (0, r.jsx)(d, {
+    children: (0, i.jsx)(d, {
       setting: t,
       hasChildren: !1
     })
   }, (0, s.Z)());
-  let h = m ? (0, r.jsx)("div", {
+  let h = m ? (0, i.jsx)("div", {
     className: c.settingNodeChildren,
-    children: n.sort((e, t) => e.setting.localeCompare(t.setting)).sort((e, t) => e.children.length - t.children.length).map(e => (0, r.jsx)(u, {
+    children: n.sort((e, t) => e.setting.localeCompare(t.setting)).sort((e, t) => e.children.length - t.children.length).map(e => (0, i.jsx)(u, {
       setting: e.setting,
       children: e.children,
       depth: o + 1
     }, (0, s.Z)()))
   }) : null;
-  return (0, r.jsxs)("div", {
+  return (0, i.jsxs)("div", {
     style: {
       marginLeft: 8 * o
     },
     className: c.settingNode,
-    children: [(0, r.jsxs)(a.P3F, {
+    children: [(0, i.jsxs)(l.P3F, {
       className: c.headerBar,
       onClick: p,
-      children: [(0, r.jsx)(d, {
+      children: [(0, i.jsx)(d, {
         setting: t,
         hasChildren: n.length > 0
-      }), (0, r.jsx)(l.Z, {
-        direction: m ? l.Z.Directions.DOWN : l.Z.Directions.RIGHT,
+      }), (0, i.jsx)(a.Z, {
+        direction: m ? a.Z.Directions.DOWN : a.Z.Directions.RIGHT,
         className: c.headerCaret
       })]
     }), h]
@@ -87,24 +87,24 @@ function m() {
       children: []
     })
   });
-  let i = [...t.children];
-  for (; i.length > 0;) {
-    let e = i.shift();
+  let r = [...t.children];
+  for (; r.length > 0;) {
+    let e = r.shift();
     if (null == e) continue;
     let t = n.filter(t => t.parent === e.setting).map(e => ({
       setting: e.setting,
       children: []
     }));
-    e.children = t, i.push(...t)
+    e.children = t, r.push(...t)
   }
-  return (0, r.jsxs)("div", {
+  return (0, i.jsxs)("div", {
     className: c.root,
-    children: [(0, r.jsx)(a.X6q, {
+    children: [(0, i.jsx)(l.X6q, {
       variant: "heading-lg/bold",
       children: "Settings Tree"
-    }), (0, r.jsx)("div", {
+    }), (0, i.jsx)("div", {
       className: c.tree,
-      children: t.children.sort((e, t) => e.setting.localeCompare(t.setting)).map(e => (0, r.jsx)(u, {
+      children: t.children.sort((e, t) => e.setting.localeCompare(t.setting)).map(e => (0, i.jsx)(u, {
         setting: e.setting,
         children: e.children,
         depth: 1

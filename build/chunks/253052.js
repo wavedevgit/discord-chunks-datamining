@@ -35,7 +35,7 @@ function u() {
     let r = s({}, e),
       l = r[o.w5];
     return null == l ? r : (r[o.w5] = (t = s({}, l), n = n = {
-      name: l.disabled ? a.NW.string(a.t.xlUg0t) : l.name.replace(c, a.NW.string(a.t.bBvAEB))
+      name: l.disabled ? a.intl.string(a.t.xlUg0t) : l.name.replace(c, a.intl.string(a.t.bBvAEB))
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

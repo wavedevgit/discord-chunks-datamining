@@ -25,11 +25,11 @@ var r = n(200651),
   j = n(752305),
   O = n(951211),
   E = n(981631),
-  N = n(921944),
-  I = n(489887),
-  P = n(388032),
-  S = n(725776);
-let Z = RegExp("(.*)```(\\w+)\\n(.*)```(.*)", "s");
+  I = n(921944),
+  P = n(489887),
+  S = n(388032),
+  Z = n(725776);
+let N = RegExp("(.*)```(\\w+)\\n(.*)```(.*)", "s");
 
 function T() {
   let e = (0, o.e7)([_.Z], () => _.Z.hasCurrentUserSentMessageSinceAppStart()),
@@ -38,7 +38,7 @@ function T() {
   let [n] = (0, f.cv)(t);
   return i.useEffect(() => () => {
     n === a.z.ACTIVITIES_CHAT_MENU_NEW_BADGE && (0, h.EW)(a.z.ACTIVITIES_CHAT_MENU_NEW_BADGE, {
-      dismissAction: N.L.TAKE_ACTION
+      dismissAction: I.L.TAKE_ACTION
     })
   }, [n]), (0, r.jsx)(m.ZP, {
     contentTypes: t,
@@ -47,7 +47,7 @@ function T() {
         visibleContent: t
       } = e;
       return t === a.z.ACTIVITIES_CHAT_MENU_NEW_BADGE ? (0, r.jsx)(s.IGR, {
-        text: P.NW.string(P.t.y2b7CA),
+        text: S.intl.string(S.t.y2b7CA),
         color: l.Z.BUTTON_DANGER_BACKGROUND
       }) : null
     }
@@ -75,17 +75,17 @@ function A(e) {
     (0, b.R6)(t, void 0, "Plus Button")
   }
 
-  function W() {
+  function U() {
     y.default.track(E.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), R("/", (0, j.JM)("/"))
   }
 
-  function U() {
+  function B() {
     k()
   }
 
-  function B() {
+  function G() {
     (0, h.EW)(a.z.POLLS_CHAT_INPUT_COACHMARK, {
-      dismissAction: N.L.TAKE_ACTION
+      dismissAction: I.L.TAKE_ACTION
     }), (0, s.ZDy)(async () => {
       let {
         default: e
@@ -123,11 +123,11 @@ function A(e) {
         }), i))
       }
     }, {
-      modalKey: I.$z
+      modalKey: P.$z
     })
   }
 
-  function G() {
+  function F() {
     y.default.track(E.rMx.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
       channel_type: t.type,
       channel_id: t.id,
@@ -141,11 +141,11 @@ function A(e) {
     })
   }
 
-  function F() {
+  function H() {
     let e = w,
       n = "txt",
       r = "",
-      i = w.match(Z);
+      i = w.match(N);
     null != i && (r = i[1], n = i[2], e = i[3], r += i[4]), (0, v.d)([(0, x.dp)(new Blob([e], {
       type: "text/plain"
     }), "message.".concat(n), "text/plain")], t, A), C.S.dispatchToLastSubscribed(E.CkL.CLEAR_TEXT), "" !== r && C.S.dispatchToLastSubscribed(E.CkL.INSERT_TEXT, {
@@ -162,20 +162,20 @@ function A(e) {
     onSelect: _,
     navId: "channel-attach",
     onClose: m,
-    "aria-label": P.NW.string(P.t.Xm41aW),
-    className: S.menu,
+    "aria-label": S.intl.string(S.t.Xm41aW),
+    className: Z.menu,
     children: o.map(function(e) {
       var n;
       let i = (0, r.jsxs)("div", {
-        className: S.optionLabel,
+        className: Z.optionLabel,
         children: [(0, r.jsx)(e.icon, {
-          className: S.optionIcon,
+          className: Z.optionIcon,
           color: "currentColor"
         }), (0, r.jsx)("div", {
-          className: S.optionName,
+          className: Z.optionName,
           children: e.display
         }), null != e.badgeVal && e.badgeVal > 0 && (0, r.jsx)(s.mAB, {
-          className: S.badge,
+          className: Z.badge,
           color: null != (n = e.badgeColor) ? n : l.Z.STATUS_DANGER,
           count: e.badgeVal
         })]
@@ -192,19 +192,19 @@ function A(e) {
           return (0, r.jsx)(s.sNh, {
             id: "upload-text-as-file",
             label: i,
-            action: F
+            action: H
           }, "upload-text-as-file");
         case O.r.CLIPS:
           return (0, r.jsx)(s.sNh, {
             id: "clips",
             label: i,
-            action: U
+            action: B
           }, "clips");
         case O.r.POLL:
           return (0, r.jsx)(s.sNh, {
             id: "poll",
             label: i,
-            action: B
+            action: G
           }, "poll");
         case O.r.INVITE_TO_PLAY_GAME:
           return (0, r.jsx)(s.sNh, {
@@ -258,13 +258,13 @@ function A(e) {
           return (0, r.jsx)(s.sNh, {
             id: "SLASH_COMMAND",
             label: i,
-            action: W
+            action: U
           }, "SLASH_COMMAND");
         case O.r.ACTIVITY:
           return (0, r.jsx)(s.sNh, {
             id: "activity",
             label: i,
-            action: G,
+            action: F,
             hint: (0, r.jsx)(T, {})
           }, "activity");
         case O.r.SCHEDULED_MESSAGE:

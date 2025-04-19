@@ -20,12 +20,12 @@ var r = n(200651),
   _ = n(23434),
   E = n(1964),
   O = n(762756),
-  N = n(308569),
-  y = n(981631),
-  I = n(815660),
-  v = n(388032);
+  y = n(308569),
+  I = n(981631),
+  v = n(815660),
+  C = n(388032);
 
-function C(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function C(e) {
   return e
 }
 
-function S(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -78,9 +78,9 @@ function T() {
         let {
           default: e
         } = await n.e("35401").then(n.bind(n, 284549));
-        return t => (0, r.jsx)(e, C({}, t))
+        return t => (0, r.jsx)(e, S({}, t))
       }, {
-        modalKey: N.F0,
+        modalKey: y.F0,
         Layer: g.ZP
       })
     },
@@ -89,28 +89,28 @@ function T() {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 607018));
-        return t => (0, r.jsx)(e, C({
+        return t => (0, r.jsx)(e, S({
           reason: m.L.USER_ACTION_REQUIRED
         }, t))
       }, {
-        modalKey: I.M,
+        modalKey: v.M,
         Layer: g.ZP
       })
     };
   return i.useEffect(() => (h.Z.disable(), () => {
     h.Z.enable()
   }), []), i.useEffect(() => {
-    (null == A ? void 0 : A[0]) === y.PUi.PHONE && (null == T ? void 0 : T[0]) === y.PUi.EMAIL && (0, s.ZDy)(async () => {
+    (null == A ? void 0 : A[0]) === I.PUi.PHONE && (null == T ? void 0 : T[0]) === I.PUi.EMAIL && (0, s.ZDy)(async () => {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 468026));
-      return t => (0, r.jsx)(e, S(C({}, t), {
-        title: v.NW.string(v.t.KLnLIC),
-        body: v.NW.string(v.t.XGbCq6),
-        confirmText: v.NW.string(v.t["3oK4q6"])
+      return t => (0, r.jsx)(e, N(S({}, t), {
+        title: C.intl.string(C.t.KLnLIC),
+        body: C.intl.string(C.t.XGbCq6),
+        confirmText: C.intl.string(C.t["3oK4q6"])
       }))
     }, {
-      modalKey: N.HR,
+      modalKey: y.HR,
       Layer: g.ZP,
       onCloseCallback: Z
     })
@@ -119,7 +119,7 @@ function T() {
     captchaKey: P,
     onCaptchaVerify: e => {
       o.tn.post({
-        url: y.ANM.CAPTCHA,
+        url: I.ANM.CAPTCHA,
         body: {
           captcha_key: e
         },
@@ -131,7 +131,7 @@ function T() {
     },
     theme: t,
     onClick: e => {
-      e === y.PUi.EMAIL_OR_PHONE || e === y.PUi.EMAIL || e === y.PUi.REVERIFY_EMAIL ? Z() : x()
+      e === I.PUi.EMAIL_OR_PHONE || e === I.PUi.EMAIL || e === I.PUi.REVERIFY_EMAIL ? Z() : x()
     },
     onLogout: () => {
       (0, s.ZDy)(async () => {
@@ -139,15 +139,15 @@ function T() {
           ConfirmModal: e,
           Text: t
         } = await Promise.resolve().then(n.bind(n, 481060));
-        return n => (0, r.jsx)(e, S(C({
-          header: v.NW.string(v.t["2jxGen"]),
-          confirmText: v.NW.string(v.t["2jxGen"]),
-          cancelText: v.NW.string(v.t["ETE/oK"]),
+        return n => (0, r.jsx)(e, N(S({
+          header: C.intl.string(C.t["2jxGen"]),
+          confirmText: C.intl.string(C.t["2jxGen"]),
+          cancelText: C.intl.string(C.t["ETE/oK"]),
           onConfirm: () => c.Z.logout("verification")
         }, n), {
           children: (0, r.jsx)(t, {
             variant: "text-md/normal",
-            children: v.NW.string(v.t.SUnWBA)
+            children: C.intl.string(C.t.SUnWBA)
           })
         }))
       }, {

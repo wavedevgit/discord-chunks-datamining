@@ -2,12 +2,12 @@
 r.d(t, {
   Z: () => h
 }), r(388685);
-var s = r(200651),
-  n = r(192379),
+var n = r(200651),
+  s = r(192379),
   i = r(404759),
   o = r.n(i),
-  a = r(423650),
-  l = r.n(a),
+  l = r(423650),
+  a = r.n(l),
   u = r(481060),
   c = r(388032),
   p = r(843196);
@@ -20,23 +20,23 @@ function d(e, t, r) {
     writable: !0
   }) : e[t] = r, e
 }
-class h extends n.Component {
+class h extends s.Component {
   render() {
     let {
       selectedValue: e
     } = this.state;
-    return (0, s.jsxs)(n.Fragment, {
-      children: [(0, s.jsx)(u.X6q, {
+    return (0, n.jsxs)(s.Fragment, {
+      children: [(0, n.jsx)(u.X6q, {
         className: p.prompt,
         variant: "heading-md/semibold",
         children: this.props.prompt
-      }), (0, s.jsx)("hr", {
+      }), (0, n.jsx)("hr", {
         className: p.separator
-      }), (0, s.jsx)(u.Text, {
+      }), (0, n.jsx)(u.Text, {
         className: p.selectYourAnswer,
         variant: "text-xs/normal",
-        children: c.NW.string(c.t.YeiLeH)
-      }), (0, s.jsx)(u.FXm, {
+        children: c.intl.string(c.t.YeiLeH)
+      }), (0, n.jsx)(u.FXm, {
         options: this.getQuestionOptions(),
         onChange: this.handleOptionChange,
         value: e
@@ -46,7 +46,7 @@ class h extends n.Component {
   constructor(...e) {
     super(...e), d(this, "state", {
       selectedValue: null
-    }), d(this, "getQuestionOptions", o()(() => l()(this.props.options.map(e => ({
+    }), d(this, "getQuestionOptions", o()(() => a()(this.props.options.map(e => ({
       name: e.copy,
       value: e.house
     }))))), d(this, "handleOptionChange", e => {

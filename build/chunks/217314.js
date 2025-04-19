@@ -28,7 +28,7 @@ function f(e) {
     });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.nn4, {
-      children: p.NW.string(p.t.EJRzg4)
+      children: p.intl.string(p.t.EJRzg4)
     }), null != f && !n && (0, r.jsx)("div", {
       children: (0, r.jsx)(l.qEK, {
         status: m,
@@ -49,7 +49,7 @@ function f(e) {
           position: "bottom",
           children: null != b ? b : u.ZP.getName(f)
         }), y && (0, r.jsx)(l.ua7, {
-          text: p.NW.string(p.t.QyZ4TU),
+          text: p.intl.string(p.t.QyZ4TU),
           children: e => {
             var t, n;
             return (0, r.jsx)(l.tQf, (t = function(e) {
@@ -71,7 +71,7 @@ function f(e) {
               return e
             }({}, e), n = n = {
               size: "xs",
-              "aria-label": p.NW.string(p.t.VHXh8f),
+              "aria-label": p.intl.string(p.t.VHXh8f),
               color: l.TVs.colors.INTERACTIVE_NORMAL,
               className: h.secureFramesIcon
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

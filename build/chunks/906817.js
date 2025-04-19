@@ -92,11 +92,11 @@ let O = i.memo(function(e) {
       });
     case d.p2:
       return (0, r.jsx)(h.P, {
-        name: v ? g.NW.string(g.t.mlPMCw) : g.NW.string(g.t.k8fFjo)
+        name: v ? g.intl.string(g.t.mlPMCw) : g.intl.string(g.t.k8fFjo)
       });
     case b.recentsSectionNumber:
       return (0, r.jsx)(h.P, {
-        name: g.NW.string(g.t.gKcrqK),
+        name: g.intl.string(g.t.gKcrqK),
         onDismiss: C
       });
     case b.voiceChannelsSectionNumber: {

@@ -3,9 +3,9 @@ n.d(t, {
   Z: () => f
 }), n(388685);
 var r = n(200651),
-  i = n(192379),
-  l = n(120356),
-  s = n.n(l),
+  l = n(192379),
+  i = n(120356),
+  s = n.n(i),
   a = n(481060),
   o = n(493773),
   c = n(958707),
@@ -16,9 +16,9 @@ function f(e) {
   let {
     title: t,
     scrollerClassName: n,
-    scrollerInnerClassName: l,
+    scrollerInnerClassName: i,
     children: f
-  } = e, m = i.useRef(null), [h, x] = i.useState(!1), [p, g] = i.useState(!1), _ = i.useCallback(() => {
+  } = e, m = l.useRef(null), [h, x] = l.useState(!1), [p, g] = l.useState(!1), _ = l.useCallback(() => {
     let {
       current: e
     } = m;
@@ -37,7 +37,7 @@ function f(e) {
       className: n,
       children: (0, r.jsx)(a.Den, {
         ref: m,
-        className: s()(u.scrollerInner, l, {
+        className: s()(u.scrollerInner, i, {
           [u.bottomSeparator]: p
         }),
         onScroll: _,

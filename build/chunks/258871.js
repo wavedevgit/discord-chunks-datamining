@@ -58,9 +58,9 @@ let y = [{
       let {
         numEvents: t
       } = e;
-      return t > 0 ? g.NW.formatToPlainString(g.t.IBdqSk, {
+      return t > 0 ? g.intl.formatToPlainString(g.t.IBdqSk, {
         number: t
-      }) : g.NW.string(g.t.tlopTE)
+      }) : g.intl.string(g.t.tlopTE)
     },
     handler: e => (0, o.ZDy)(async () => {
       let {
@@ -77,7 +77,7 @@ let y = [{
       color: "currentColor",
       className: e
     }),
-    getName: () => g.NW.string(g.t.K50GHR),
+    getName: () => g.intl.string(g.t.K50GHR),
     handler: (e, t) => (0, u.XU)(e.id, t.id)
   }, {
     key: "ADD_SERVERS",
@@ -86,7 +86,7 @@ let y = [{
       color: "currentColor",
       className: e
     }),
-    getName: () => g.NW.string(g.t.emRpdX),
+    getName: () => g.intl.string(g.t.emRpdX),
     handler: (e, t) => (0, o.ZDy)(async () => {
       let {
         default: i
@@ -102,7 +102,7 @@ let y = [{
     renderIcon: e => (0, r.jsx)(o.ejJ, {
       className: e
     }),
-    getName: () => g.NW.string(g.t.MJQOuL),
+    getName: () => g.intl.string(g.t.MJQOuL),
     handler: (e, t) => (0, o.ZDy)(async () => {
       let {
         default: i

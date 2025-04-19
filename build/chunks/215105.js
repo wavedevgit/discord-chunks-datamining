@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => N
 }), n(388685), n(781311);
 var r = n(200651),
   i = n(192379),
@@ -37,18 +37,18 @@ let S = (0, f.kt)({
     } = e;
     switch (r) {
       case y.n_.ACTIVITY:
-        let a = O.NW.formatToPlainString(O.t.WmvMCg, {
+        let a = O.intl.formatToPlainString(O.t.WmvMCg, {
             username: n
           }),
           o = "\n> ".concat(i);
         return null != i ? "".concat(E.jd).concat(a, "*").concat(o, "\n").concat(t) : "".concat(E.jd).concat(a, "*\n").concat(t);
       case y.n_.AVATAR:
-        let s = O.NW.formatToPlainString(O.t.lpaBsL, {
+        let s = O.intl.formatToPlainString(O.t.lpaBsL, {
           username: n
         });
         return "".concat(E.jd).concat(s, "*\n").concat(t);
       case y.n_.STATUS:
-        let l = O.NW.formatToPlainString(O.t.lFXgFR, {
+        let l = O.intl.formatToPlainString(O.t.lFXgFR, {
             username: n
           }),
           c = "\n> ".concat(i);
@@ -57,7 +57,7 @@ let S = (0, f.kt)({
         (0, _.vE)(r)
     }
   },
-  N = e => {
+  A = e => {
     switch (e) {
       case y.n_.ACTIVITY:
         return O.t.Qn081N;
@@ -70,7 +70,7 @@ let S = (0, f.kt)({
     }
   };
 
-function A(e) {
+function N(e) {
   let {
     user: t,
     guildId: n,
@@ -79,7 +79,7 @@ function A(e) {
     sourceType: f,
     sourceDetails: _,
     setPopoutRef: E,
-    modalKey: A,
+    modalKey: N,
     onAction: C,
     onClose: R,
     entry: P
@@ -138,13 +138,13 @@ function A(e) {
         [I.customProfileTheme]: null != L
       }),
       children: (0, r.jsx)(d.Z, {
-        parentModalKey: A,
+        parentModalKey: N,
         emojiPickerCloseOnModalOuterClick: !0,
         className: I.input,
         innerClassName: I.inputInner,
         editorClassName: I.editor,
         type: c.Ie.USER_PROFILE_REPLY,
-        placeholder: O.NW.formatToPlainString(N(f), {
+        placeholder: O.intl.formatToPlainString(A(f), {
           username: p.ZP.getName(n, a, t)
         }),
         channel: S,

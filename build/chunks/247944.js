@@ -12,8 +12,8 @@ var i = n(545594),
 let s = n(848304),
   c = () => (0, r.jsx)(i.i, {
     bannerIcon: s,
-    bannerHeader: a.NW.string(a.t.EouHws),
-    bannerSubtext: a.NW.format(a.t.PThBen, {
+    bannerHeader: a.intl.string(a.t.EouHws),
+    bannerSubtext: a.intl.format(a.t.PThBen, {
       appealLink: o.Z
     })
   })

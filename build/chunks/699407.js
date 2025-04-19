@@ -76,13 +76,13 @@ let p = 1500,
       waitFor: T
     } = e;
 
-    function N(e) {
+    function A(e) {
       if (null != i) return i;
       let t = e.fingerprint || c();
       return null != t ? (0, o.s)(t) : null
     }
 
-    function A() {
+    function N() {
       return 0 !== y.length && (null != i ? null != r : null != c())
     }
 
@@ -90,13 +90,13 @@ let p = 1500,
       let {
         shouldFlushOnNextTick: t = !1
       } = e;
-      null == v && A() && (v = t ? setTimeout(R, 0) : g(R, {
+      null == v && N() && (v = t ? setTimeout(R, 0) : g(R, {
         timeout: m
       }))
     }
 
     function R() {
-      if (v = null, !A()) return;
+      if (v = null, !N()) return;
       let e = y.slice();
       y = [], P(e).then(() => {
         e.forEach(e => {
@@ -160,7 +160,7 @@ let p = 1500,
             client_heartbeat_session_id: o
           }, n),
           resolve: a
-        }, l = N(s);
+        }, l = A(s);
         null != l && (s.properties.client_uuid = E.generate(l)), y.push(s), y.length > h && (y = y.slice(-h)), r ? C({
           shouldFlushOnNextTick: !0
         }) : C({

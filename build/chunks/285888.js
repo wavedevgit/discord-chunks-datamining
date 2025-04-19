@@ -204,11 +204,11 @@ class O extends(n = o.Component) {
         searchable: _,
         styleOverrides: k,
         isMulti: A,
-        placeholder: N,
-        filterOption: j,
-        closeMenuOnSelect: T = !0
+        placeholder: j,
+        filterOption: T,
+        closeMenuOnSelect: C = !0
       } = t,
-      C = v({}, function(e, t) {
+      M = v({}, function(e, t) {
         if (null == e) return {};
         var r, n, a = function(e, t) {
           if (null == e) return {};
@@ -223,22 +223,22 @@ class O extends(n = o.Component) {
         }
         return a
       }(t, ["className", "selectClassName", "error", "valueRenderer", "optionRenderer", "multiValueRenderer", "options", "value", "autofocus", "disabled", "clearable", "searchable", "styleOverrides", "isMulti", "placeholder", "filterOption", "closeMenuOnSelect"]));
-    null != O && (C.autoFocus = O), null != E && (C.isDisabled = E), null != x && (C.isClearable = x), null != _ && (C.isSearchable = _);
-    let M = {
+    null != O && (M.autoFocus = O), null != E && (M.isDisabled = E), null != x && (M.isClearable = x), null != _ && (M.isSearchable = _);
+    let w = {
       IndicatorSeparator: () => null
     };
-    if (null != i && (M.Option = e => (0, l.jsx)(c.c.Option, m(v({}, e), {
+    if (null != i && (w.Option = e => (0, l.jsx)(c.c.Option, m(v({}, e), {
         children: i(e.data)
-      }))), null != o && (M.SingleValue = e => (0, l.jsx)(c.c.SingleValue, m(v({}, e), {
+      }))), null != o && (w.SingleValue = e => (0, l.jsx)(c.c.SingleValue, m(v({}, e), {
         children: o(e.data)
-      }))), null != p && (M.MultiValue = e => p(e.data)), A && Array.isArray(y)) {
+      }))), null != p && (w.MultiValue = e => p(e.data)), A && Array.isArray(y)) {
       let t = {};
       b.forEach(e => {
         t[String(e.value)] = e
       }), e = y.map(e => t[String(e)])
     } else {
-      var w;
-      e = null != y && null != (w = b.find(e => e.value === y)) ? w : null
+      var R;
+      e = null != y && null != (R = b.find(e => e.value === y)) ? R : null
     }
     return (0, l.jsx)(d.tEY, {
       focused: this.state.isFocused && !this.state.isOpen,
@@ -248,23 +248,23 @@ class O extends(n = o.Component) {
           [f.error]: null != a
         }),
         ref: this._containerRef,
-        children: [(0, l.jsx)(u.ZP, m(v({}, C), {
+        children: [(0, l.jsx)(u.ZP, m(v({}, M), {
           className: n,
           ref: this._selectRef,
           isMulti: A,
-          components: M,
+          components: w,
           options: b,
           styles: null != k ? k : g,
           onFocus: this.handleFocus,
           onBlur: this.handleBlur,
           onMenuOpen: this.handleMenuOpen,
           onMenuClose: this.handleMenuClose,
-          closeMenuOnSelect: T,
+          closeMenuOnSelect: C,
           value: e,
           onKeyDown: this.handleKeyDown,
-          placeholder: null != N ? N : h.NW.string(h.t.XqMe3N),
-          noOptionsMessage: () => h.NW.string(h.t["Xe+fJC"]),
-          filterOption: j
+          placeholder: null != j ? j : h.intl.string(h.t.XqMe3N),
+          noOptionsMessage: () => h.intl.string(h.t["Xe+fJC"]),
+          filterOption: T
         })), null != a ? (0, l.jsx)("div", {
           className: f.errorMessage,
           children: a

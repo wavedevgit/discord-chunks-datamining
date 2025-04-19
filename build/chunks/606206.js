@@ -17,7 +17,7 @@ var l, i = n(442837),
   y = n(55589),
   O = n(981631);
 
-function N(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,14 +25,14 @@ function N(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let b = [s.h8.TEXT_CHANNEL, s.h8.GROUP_DM, s.h8.USER],
-  v = null,
+let v = [s.h8.TEXT_CHANNEL, s.h8.GROUP_DM, s.h8.USER],
   m = null,
-  x = [],
+  x = null,
+  N = [],
   C = [];
 
 function E(e) {
-  x = [...x, e], C = C.map(e => {
+  N = [...N, e], C = C.map(e => {
     var t, n;
     return t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -41,12 +41,12 @@ function E(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          N(e, t, n[t])
+          b(e, t, n[t])
         })
       }
       return e
     }({}, e), n = n = {
-      sent: x.includes(e.data.record.id)
+      sent: N.includes(e.data.record.id)
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -61,19 +61,19 @@ function E(e) {
 }
 
 function j() {
-  v = null, null != r && (r.destroy(), r = null), null != m && m()
+  m = null, null != r && (r.destroy(), r = null), null != x && x()
 }
 
 function I() {
-  let e = null != v && null != v.application_id ? h.Z.getApplicationActivity(v.application_id) : null;
-  if (null != v && (null == e || null == e.party || null == e.party.id)) return j()
+  let e = null != m && null != m.application_id ? h.Z.getApplicationActivity(m.application_id) : null;
+  if (null != m && (null == e || null == e.party || null == e.party.id)) return j()
 }
 class P extends(l = i.ZP.Store) {
   initialize() {
     this.waitFor(h.Z)
   }
   getActivity() {
-    return v
+    return m
   }
   getQuery() {
     var e;
@@ -83,10 +83,10 @@ class P extends(l = i.ZP.Store) {
     return C
   }
 }
-N(P, "displayName", "ActivityInviteModalStore");
+b(P, "displayName", "ActivityInviteModalStore");
 let S = new P(o.Z, {
     ACTIVITY_INVITE_MODAL_OPEN: function(e) {
-      v = e.activity, m = e.resolve, x = [], null == r && (r = new s.ZP((e, t) => {
+      m = e.activity, x = e.resolve, N = [], null == r && (r = new s.ZP((e, t) => {
         C = ("" === t.trim() ? function() {
           let e = [];
           return y.Z.getPrivateChannelIds().forEach(t => {
@@ -114,7 +114,7 @@ let S = new P(o.Z, {
               } = e;
               return {
                 type: s.h8.USER,
-                sent: x.includes(t.id),
+                sent: N.includes(t.id),
                 status: f.Z.getStatus(t.id),
                 data: e
               }
@@ -125,7 +125,7 @@ let S = new P(o.Z, {
               } = e, n = c.Z.getChannel(t.parent_id), r = d.Z.getGuild(t.guild_id);
               return {
                 type: s.h8.TEXT_CHANNEL,
-                sent: x.includes(t.id),
+                sent: N.includes(t.id),
                 categoryName: null != n ? (0, u.F6)(n, g.default, p.Z) : "",
                 guildName: null != r ? r.toString() : "",
                 data: e
@@ -137,7 +137,7 @@ let S = new P(o.Z, {
               } = e;
               return {
                 type: s.h8.GROUP_DM,
-                sent: x.includes(t.id),
+                sent: N.includes(t.id),
                 data: e
               }
             }
@@ -145,7 +145,7 @@ let S = new P(o.Z, {
               return null
           }
         }).filter(e => null != e), S.emitChange()
-      }, b, 100)), r.search("")
+      }, v, 100)), r.search("")
     },
     ACTIVITY_INVITE_MODAL_QUERY: function(e) {
       let {
@@ -154,18 +154,18 @@ let S = new P(o.Z, {
       null != r && r.search(t)
     },
     ACTIVITY_INVITE_MODAL_SEND: function(e) {
-      if (null == v) return;
+      if (null == m) return;
       let t = e.channelId,
         n = e.userId;
       null != t ? a.Z.sendActivityInvite({
         channelId: t,
         type: O.mFx.JOIN,
-        activity: v,
+        activity: m,
         location: "Channel Text Area - Invite to Join Modal"
       }).then(() => E(t)) : null != n && a.Z.sendActivityInviteUser({
         userId: n,
         type: O.mFx.JOIN,
-        activity: v,
+        activity: m,
         location: "Channel Text Area - Invite to Join Modal"
       }).then(() => E(n))
     },
@@ -174,7 +174,7 @@ let S = new P(o.Z, {
       let {
         locked: t
       } = e;
-      return !!t && null != v && (j(), !0)
+      return !!t && null != m && (j(), !0)
     },
     LOCAL_ACTIVITY_UPDATE: I,
     RPC_APP_DISCONNECTED: I

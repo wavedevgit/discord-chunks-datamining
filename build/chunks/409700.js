@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Dp: () => A,
+  Dp: () => N,
   Hh: () => C,
   ZP: () => R,
   hq: () => T
@@ -74,7 +74,7 @@ function T() {
     onClick: e => e.stopPropagation(),
     children: [(0, r.jsx)(c.Text, {
       variant: "text-sm/normal",
-      children: E.NW.string(E.t["2JbvKy"])
+      children: E.intl.string(E.t["2JbvKy"])
     }), (0, r.jsx)(c.iRW, {
       onValueChange: t,
       className: b.slider,
@@ -84,7 +84,7 @@ function T() {
   })
 }
 
-function N(e) {
+function A(e) {
   let {
     sound: t,
     forceShowBetaLabel: n = !1
@@ -109,7 +109,7 @@ function N(e) {
         variant: "text-xs/medium",
         color: "always-white",
         className: b.infoNitroText,
-        children: E.NW.string(E.t["BMw+7O"])
+        children: E.intl.string(E.t["BMw+7O"])
       }), (0, r.jsx)(c.IGR, {
         text: "BETA",
         color: s.Z.BG_BRAND,
@@ -119,13 +119,13 @@ function N(e) {
   })
 }
 
-function A(e) {
+function N(e) {
   let {
     sound: t
   } = e;
   return (0, r.jsxs)("div", {
     className: o()(b.infoContainer, b.infoTooltip),
-    children: [(0, r.jsx)(N, {
+    children: [(0, r.jsx)(A, {
       sound: t
     }), (0, r.jsxs)("div", {
       className: b.infoSoundContainer,
@@ -143,7 +143,7 @@ function A(e) {
         className: b.infoSoundInnerContainer,
         children: (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: E.NW.string(E.t.D6eYmZ)
+          children: E.intl.string(E.t.D6eYmZ)
         })
       })]
     })]
@@ -216,7 +216,7 @@ function R(e) {
     children: [(0, r.jsx)(C, {
       setTooltipShowing: i,
       renderPopout: () => (0, r.jsx)(T, {}),
-      tooltipText: E.NW.string(E.t["19lt29"]),
+      tooltipText: E.intl.string(E.t["19lt29"]),
       position: "top",
       children: (0, r.jsx)(c.gj8, {
         size: "md",
@@ -229,7 +229,7 @@ function R(e) {
         sound: t,
         channel: n
       }, e)),
-      tooltipText: E.NW.string(E.t.KVbJU1),
+      tooltipText: E.intl.string(E.t.KVbJU1),
       position: "right",
       children: (0, r.jsx)(c.d3s, {
         size: "md",
