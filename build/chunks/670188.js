@@ -109,7 +109,7 @@ function T(e) {
   } = e, R = y(e, ["children", "user", "currentUser", "guildId", "channelId", "messageId", "roleId", "disableUserProfileLink", "newAnalyticsLocations", "appContext", "avatarUrl", "preload", "renderPopout", "onRequestOpen", "onRequestClose", "onClosePopout", "shouldShow", "shouldPreload"]);
   let P = i.useRef(void 0),
     w = i.useCallback(() => null != v ? v() : (0, d.Z)(n.id, null != E ? E : n.getAvatarURL(s, O), {
-      withMutualGuilds: n.id != n.id,
+      withMutualGuilds: n.id !== a.id,
       withMutualFriends: !n.bot && n.id !== a.id,
       guildId: s,
       channelId: l
