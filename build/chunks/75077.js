@@ -1,114 +1,119 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Dp: () => g,
-  Gw: () => h,
-  Op: () => E,
-  gx: () => b,
-  iG: () => f,
-  mN: () => j,
-  oo: () => p,
-  sP: () => x
+  Dp: () => p,
+  Gw: () => f,
+  Op: () => j,
+  gx: () => _,
+  iG: () => b,
+  mN: () => C,
+  oo: () => h,
+  sP: () => E
 }), n(539854), n(314940);
 var i = n(278074),
   r = n(442837),
   s = n(780384),
-  l = n(594174),
-  a = n(78839),
-  o = n(74538),
-  c = n(391110),
-  d = n(474936),
-  u = n(735825),
-  m = n(388032);
-let g = e => {
+  l = n(442933),
+  a = n(594174),
+  o = n(78839),
+  c = n(74538),
+  d = n(391110),
+  u = n(474936),
+  m = n(735825),
+  g = n(388032);
+let p = e => {
     switch (e) {
-      case u.EB.PENDING:
-        return m.intl.string(m.t["9o4F4+"]);
-      case u.EB.REDEEMABLE:
-      case u.EB.REDEEMED:
-        return m.intl.string(m.t["3R9pPD"]);
+      case m.EB.PENDING:
+        return g.intl.string(g.t["9o4F4+"]);
+      case m.EB.REDEEMABLE:
+      case m.EB.REDEEMED:
+        return g.intl.string(g.t["3R9pPD"]);
       default:
         return ""
     }
   },
-  p = e => {
+  h = e => {
     switch (e) {
-      case u.EB.PENDING:
-        return m.intl.string(m.t.nlcs6O);
-      case u.EB.REDEEMABLE:
-      case u.EB.REDEEMED:
-        return m.intl.string(m.t.F915ra);
+      case m.EB.PENDING:
+        return g.intl.string(g.t.nlcs6O);
+      case m.EB.REDEEMABLE:
+      case m.EB.REDEEMED:
+        return g.intl.string(g.t.F915ra);
       default:
         return
     }
   },
-  h = e => {
+  f = e => {
     switch (e) {
-      case u.EB.PENDING:
-        return m.intl.string(m.t.LAFMBQ);
-      case u.EB.REDEEMABLE:
-      case u.EB.REDEEMED:
-        return m.intl.string(m.t["4cCWPT"]);
+      case m.EB.PENDING:
+        return g.intl.string(g.t.LAFMBQ);
+      case m.EB.REDEEMABLE:
+      case m.EB.REDEEMED:
+        return g.intl.string(g.t["4cCWPT"]);
       default:
         return
     }
   };
 
-function f(e, t) {
+function b(e, t) {
   switch (e) {
-    case u.EB.PENDING:
-      return null != t ? m.intl.formatToPlainString(m.t.a1eKDg, {
+    case m.EB.PENDING:
+      return null != t ? g.intl.formatToPlainString(g.t.a1eKDg, {
         days: t
       }) : "";
-    case u.EB.REDEEMABLE:
-      return m.intl.string(m.t.B9eJyc);
-    case u.EB.REDEEMED:
-      return m.intl.string(m.t.hpy7PD);
+    case m.EB.REDEEMABLE:
+      return g.intl.string(g.t.B9eJyc);
+    case m.EB.REDEEMED:
+      return g.intl.string(g.t.hpy7PD);
     default:
       return ""
   }
 }
-let b = (e, t, n) => (0, s.wj)(e) ? t : n,
-  _ = e => {
+let _ = (e, t, n) => (0, s.wj)(e) ? t : n,
+  x = e => {
     let {
       cards: t,
       perksCards: n,
       isFullScreen: i,
       showTenureCard: r
-    } = e, s = i ? 3 : 2, l = e => {
+    } = e, s = i ? 3 : 2, a = l.e.getCurrentConfig({
+      location: "NitroHome"
+    }).canPurchase, o = e => {
       let {
         card: n
       } = e;
       t.length < s && t.push(n)
-    }, a = () => {
-      l({
+    }, c = () => {
+      o({
         card: n.specialShopPerks
       })
-    }, o = C();
-    return null != n.collectibleDeco && l({
+    }, d = O();
+    return a && o({
+      card: n.nameplates
+    }), null != n.collectibleDeco && o({
       card: n.collectibleDeco
-    }), null != n.tenureBadge && l({
+    }), null != n.tenureBadge && o({
       card: n.tenureBadge
-    }), null != n.tenureRewardCollectible && !0 === r && l({
+    }), null != n.tenureRewardCollectible && !0 === r && o({
       card: n.tenureRewardCollectible
-    }), l({
+    }), o({
       card: n.permadecos
-    }), i && o ? (0 === t.length && a(), l({
+    }), i && d ? (0 === t.length && c(), o({
       card: n.newAppStylesUpdateJune2024
-    }), l({
+    }), o({
       card: n.serverProfiles
-    })) : i && !o && (l({
+    })) : i && !d && (o({
       card: n.referralProgram
-    }), l({
+    }), o({
       card: n.newAppStylesUpdateJune2024
-    }), l({
+    }), o({
       card: n.serverProfiles
-    })), l({
+    })), o({
       card: n.earlyAccess
-    }), a(), l({
+    }), a || c(), o({
       card: n.unlimitedSuperReactions
     }), t
   },
-  x = e => {
+  E = e => {
     let {
       perksCards: t,
       variant: n,
@@ -117,72 +122,72 @@ let b = (e, t, n) => (0, s.wj)(e) ? t : n,
       isPremiumSubscriber: l,
       fractionalState: a,
       isInReverseTrial: o
-    } = e, u = [];
+    } = e, c = [];
     switch (n) {
-      case c.R0.PERKS_DISCOVERABILITY:
-        u = (0, i.EQ)({
+      case d.R0.PERKS_DISCOVERABILITY:
+        c = (0, i.EQ)({
           isPremiumSubscriber: l,
           fractionalState: a
         }).with({
           isPremiumSubscriber: !1
         }, () => [t.profiles, t.moreEmojiPower, t.largeUploads, t.hdVideo, t.clientThemes, t.customAppIcons]).with({
-          fractionalState: d.a$.FP_ONLY
+          fractionalState: u.a$.FP_ONLY
         }, () => [t.profiles, t.clientThemes, t.hdVideo]).otherwise(() => [t.profiles, t.clientThemes, t.serverBoosts]);
         break;
-      case c.R0.WHATS_NEW:
-        u = _({
-          cards: u,
+      case d.R0.WHATS_NEW:
+        c = x({
+          cards: c,
           perksCards: t,
           isFullScreen: r,
           showTenureCard: s
         });
         break;
-      case c.R0.CARD_CAROUSEL_FIRST_ROW:
-        u = (0, i.EQ)({
+      case d.R0.CARD_CAROUSEL_FIRST_ROW:
+        c = (0, i.EQ)({
           isPremiumSubscriber: l
         }).with({
           isPremiumSubscriber: !1
         }, () => [t.serverBoosts, t.superReactions, t.earlyAccessSeeAllVariant, t.specialShopPerks]).otherwise(() => [t.customAppIcons, t.moreEmojiPower, t.customSoundsEverywhere, t.specialStickerAccess]);
         break;
-      case c.R0.CARD_CAROUSEL_SECOND_ROW:
-        u = (0, i.EQ)({
+      case d.R0.CARD_CAROUSEL_SECOND_ROW:
+        c = (0, i.EQ)({
           isPremiumSubscriber: l,
           fractionalState: a
         }).with({
           isPremiumSubscriber: !1
         }, () => [t.customSoundsEverywhere, t.specialStickerAccess]).with({
-          fractionalState: d.a$.FP_ONLY
+          fractionalState: u.a$.FP_ONLY
         }, () => o ? [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.greyServerBoosts, t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions]).otherwise(() => [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions]);
         break;
-      case c.R0.CARD_CAROUSEL_THIRD_ROW:
-        u = (0, i.EQ)({
+      case d.R0.CARD_CAROUSEL_THIRD_ROW:
+        c = (0, i.EQ)({
           fractionalState: a
         }).with({
-          fractionalState: d.a$.FP_ONLY
+          fractionalState: u.a$.FP_ONLY
         }, () => o ? [t.entranceSoundsSeeAllVariation] : [t.entranceSoundsSeeAllVariation, t.greyBadge]).otherwise(() => [t.entranceSoundsSeeAllVariation, t.badge])
     }
-    return r || (u = u.filter(e => !e.hideOnNarrowScreen)), u
+    return r || (c = c.filter(e => !e.hideOnNarrowScreen)), c
   },
-  E = e => {
-    let t = (0, r.e7)([a.ZP], () => a.ZP.getPremiumTypeSubscription()),
-      n = null != t ? o.ZP.getPremiumPlanItem(t) : null,
-      i = (null != n ? o.ZP.getSkuIdForPlan(n.planId) : null) === d.Si.TIER_2;
+  j = e => {
+    let t = (0, r.e7)([o.ZP], () => o.ZP.getPremiumTypeSubscription()),
+      n = null != t ? c.ZP.getPremiumPlanItem(t) : null,
+      i = (null != n ? c.ZP.getSkuIdForPlan(n.planId) : null) === u.Si.TIER_2;
     return e ? i ? {
-      title: m.intl.string(m.t.Aw5DRk),
-      subtitle: m.intl.string(m.t.aHdO6u)
+      title: g.intl.string(g.t.Aw5DRk),
+      subtitle: g.intl.string(g.t.aHdO6u)
     } : {
-      title: m.intl.string(m.t.N30YEx),
-      subtitle: m.intl.string(m.t.GTUdNT)
+      title: g.intl.string(g.t.N30YEx),
+      subtitle: g.intl.string(g.t.GTUdNT)
     } : {
-      title: m.intl.string(m.t["Uh3+CA"]),
-      subtitle: m.intl.string(m.t["5TFEXl"])
+      title: g.intl.string(g.t["Uh3+CA"]),
+      subtitle: g.intl.string(g.t["5TFEXl"])
     }
   },
-  j = () => {
-    let e = (0, r.e7)([l.default], () => l.default.getCurrentUser());
-    return (0, o.I5)(e)
-  },
   C = () => {
-    let e = l.default.getCurrentUser();
-    return (0, o.M5)(e, d.p9.TIER_2)
+    let e = (0, r.e7)([a.default], () => a.default.getCurrentUser());
+    return (0, c.I5)(e)
+  },
+  O = () => {
+    let e = a.default.getCurrentUser();
+    return (0, c.M5)(e, u.p9.TIER_2)
   }
