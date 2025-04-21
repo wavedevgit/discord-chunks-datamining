@@ -1,6 +1,6 @@
 /**
   Module ID: 78900
-  Original File Name: f20541b4d837fcda
+  Original File Name: 8ffea6e73b9fc150
 **/
 .wrapper_b76891 {
     align-items: center;
@@ -374,6 +374,7 @@
 .topRow_b5b7aa {
     display: flex;
     flex-direction: row;
+    gap: 16px;
     justify-content: flex-end
 }
 
@@ -410,10 +411,6 @@
 
 .utilButtonWrapper_b5b7aa:active,.utilButtonWrapper_b5b7aa:focus,.utilButtonWrapper_b5b7aa:hover {
     background-color: hsl(var(--primary-700-hsl)/.7)
-}
-
-.utilButtonWrapper_b5b7aa:not(:last-child) {
-    margin-right: 16px
 }
 
 .theme-light .utilButtonWrapper_b5b7aa {
@@ -2582,4 +2579,4 @@
     padding-top: 10px
 }
 
-/*# sourceMappingURL=f20541b4d837fcda.css.map*/
+/*# sourceMappingURL=8ffea6e73b9fc150.css.map*/
