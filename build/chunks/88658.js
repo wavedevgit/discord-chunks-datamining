@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 n.d(t, {
   $6: () => x,
-  YK: () => o,
+  YK: () => s,
   _o: () => d,
   bL: () => m,
   gl: () => c,
@@ -13,9 +13,9 @@ var a = n(695346),
 n(626135);
 var i = n(981631);
 n(388032);
-let s = 864e5 * i.eBq;
+let o = 864e5 * i.eBq;
 
-function o() {
+function s() {
   let e = a.h2.getSetting();
   return 0 === r.Z.totalUnavailableGuilds && (e = e.filter(e => null != l.Z.getGuild(e))), new Set(e)
 }
@@ -48,5 +48,5 @@ function m(e) {
 }
 
 function x(e, t) {
-  return !!(!t.verified || t.isStaff()) || null != e && s > Date.now() - new Date(e.created_at).getTime()
+  return !!(!t.verified || t.isStaff()) || null != e && o > Date.now() - new Date(e.created_at).getTime()
 }

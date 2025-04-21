@@ -6,9 +6,9 @@ var a = n(200651),
   r = n(192379),
   l = n(120356),
   i = n.n(l),
-  s = n(392711),
-  o = n(913527),
-  c = n.n(o),
+  o = n(392711),
+  s = n(913527),
+  c = n.n(s),
   d = n(481060),
   u = n(570140),
   m = n(665149),
@@ -18,8 +18,8 @@ var a = n(200651),
   b = n(572004),
   f = n(55935),
   v = n(428530),
-  g = n(257785),
-  j = n(484036),
+  j = n(257785),
+  g = n(484036),
   _ = n(681619),
   y = n(621060),
   C = n(981631),
@@ -73,16 +73,16 @@ let P = [{
       actionLog: n
     } = e, r = c()(n.createdAt);
     return (0, a.jsxs)(a.Fragment, {
-      children: [(0, a.jsxs)(g.E, {
+      children: [(0, a.jsxs)(j.E, {
         className: O.actionProperties,
-        children: [(0, a.jsx)(g.Z9, {
+        children: [(0, a.jsx)(j.Z9, {
           name: "Created at",
           children: (0, a.jsx)("time", {
             dateTime: null == (t = n.createdAt) ? void 0 : t.toISOString(),
             title: (0, f.vc)(r, "LLLL"),
             children: (0, f.Y4)(r)
           })
-        }), (0, a.jsxs)(g.Z9, {
+        }), (0, a.jsxs)(j.Z9, {
           name: "Total Time",
           children: [N(n.totalTime), " ms"]
         })]
@@ -145,16 +145,16 @@ function w(e) {
       })
     }
   }] : P, [t]), {
-    TabBar: s,
-    renderSelectedTab: o
+    TabBar: o,
+    renderSelectedTab: s
   } = (0, y.ZP)({
     tabs: l
   }, [l]);
-  return (0, a.jsxs)(j.Z, {
+  return (0, a.jsxs)(g.Z, {
     className: O.subPanel,
     minHeight: 100,
     initialHeight: n,
-    children: [(0, a.jsx)(s, {}), (0, a.jsxs)(m.ZP, {
+    children: [(0, a.jsx)(o, {}), (0, a.jsxs)(m.ZP, {
       className: i()(E.headerBar, O.subPanelHeaderBar),
       children: [(0, a.jsx)(m.ZP.Icon, {
         icon: d.xVZ,
@@ -179,7 +179,7 @@ function w(e) {
           }))
         }
       })]
-    }), o({
+    }), s({
       actionLog: t
     })]
   })
@@ -223,7 +223,7 @@ function R() {
     [t, n] = r.useState(""),
     l = function(e) {
       let [t, n] = r.useState(e.logs), a = r.useCallback(() => {
-        (0, s.debounce)(() => {
+        (0, o.debounce)(() => {
           n([...e.logs])
         }, 500)()
       }, [e]);
@@ -231,23 +231,23 @@ function R() {
         e.off("log", a)
       }), [e, a]), t
     }(u.Z.actionLogger),
-    o = r.useMemo(() => l.map(e => ({
+    s = r.useMemo(() => l.map(e => ({
       key: e.id.toString(),
       actionLog: e
     })), [l]),
-    [c, m] = r.useState(o),
-    [x, p] = r.useState(o),
+    [c, m] = r.useState(s),
+    [x, p] = r.useState(s),
     [b, f] = r.useState(!1),
-    [v, g] = r.useState(),
-    j = r.useCallback(e => {
+    [v, j] = r.useState(),
+    g = r.useCallback(e => {
       p(e)
     }, []);
-  (0, h.BO)(t, b ? c : o, j, I);
+  (0, h.BO)(t, b ? c : s, g, I);
   let y = r.useCallback(e => {
-      m(o), f(e)
-    }, [o]),
+      m(s), f(e)
+    }, [s]),
     C = t.trim().length > 0,
-    N = r.useMemo(() => C ? x : b ? c : o, [o, x, C, b, c]);
+    N = r.useMemo(() => C ? x : b ? c : s, [s, x, C, b, c]);
   return (0, a.jsxs)("div", {
     ref: e,
     className: i()(E.panel, O.panel),
@@ -271,7 +271,7 @@ function R() {
       columns: k,
       data: N,
       selectedRowKey: null == v ? void 0 : v.id.toString(),
-      onClickRow: e => g(e.actionLog)
+      onClickRow: e => j(e.actionLog)
     }), null != v && (0, a.jsx)(w, {
       actionLog: v,
       initialHeight: null != e.current ? e.current.clientHeight / 2 : 300

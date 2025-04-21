@@ -6,13 +6,13 @@ var a = n(200651),
   r = n(192379),
   l = n(120356),
   i = n.n(l),
-  s = n(481060),
-  o = n(310752),
+  o = n(481060),
+  s = n(310752),
   c = n(897842),
   d = n(731994),
   u = n(792351);
 let m = () => {
-    (0, s.ZDy)(async () => {
+    (0, o.ZDy)(async () => {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 897842));
@@ -49,7 +49,7 @@ let m = () => {
       className: t,
       onDrop: n
     } = e, [l, h] = r.useState(!1), p = r.useRef(null), b = r.useCallback(e => {
-      x(e), h(!0), (0, s.Mr3)(c.A)
+      x(e), h(!0), (0, o.Mr3)(c.A)
     }, []), f = r.useCallback(e => {
       x(e), h(!1)
     }, []), v = r.useCallback(async e => {
@@ -74,22 +74,22 @@ let m = () => {
         }),
         children: (0, a.jsxs)("div", {
           className: u.inner,
-          children: [(0, a.jsx)(o.Z, {
+          children: [(0, a.jsx)(s.Z, {
             icons: d.J6
-          }), (0, a.jsx)(s.X6q, {
+          }), (0, a.jsx)(o.X6q, {
             variant: "heading-lg/bold",
             children: "Upload Shop Assets"
           }), (0, a.jsxs)("div", {
             className: u.instructions,
-            children: [(0, a.jsx)(s.Text, {
+            children: [(0, a.jsx)(o.Text, {
               variant: "text-sm/normal",
               children: "Drop file(s) into this panel to preview Shop assets!"
-            }), (0, a.jsxs)(s.Text, {
+            }), (0, a.jsxs)(o.Text, {
               variant: "text-sm/normal",
-              children: ["Click", (0, a.jsx)(s.idN, {
+              children: ["Click", (0, a.jsx)(o.idN, {
                 className: u.questionIcon,
                 size: "xs",
-                color: s.TVs.colors.TEXT_NORMAL
+                color: o.TVs.colors.TEXT_NORMAL
               }), "above for more instructions."]
             })]
           })]

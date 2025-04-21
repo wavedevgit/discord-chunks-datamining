@@ -6,8 +6,8 @@ var a = n(200651),
   r = n(192379),
   l = n(164484),
   i = n(913527),
-  s = n.n(i),
-  o = n(330711),
+  o = n.n(i),
+  s = n(330711),
   c = n(442837),
   d = n(481060),
   u = n(665149),
@@ -44,10 +44,10 @@ function b() {
         children: p.intl.currentLocale
       }), (0, a.jsx)(h.Z9, {
         name: "common i18n",
-        children: o.Z.getLocale()
+        children: s.Z.getLocale()
       }), (0, a.jsx)(h.Z9, {
         name: "Moment",
-        children: s().locale()
+        children: o().locale()
       })]
     }), (0, a.jsxs)(u.ZP, {
       children: [(0, a.jsx)(u.ZP.Icon, {

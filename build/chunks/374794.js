@@ -1,18 +1,18 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => o
+  Z: () => s
 });
 var a = n(200651);
 n(192379);
 var r = n(120356),
   l = n.n(r),
   i = n(481060),
-  s = n(53281);
+  o = n(53281);
 
-function o(e) {
+function s(e) {
   var t, n, {
       children: r,
-      className: o,
+      className: s,
       innerClassName: c,
       onChange: d,
       "aria-label": u,
@@ -40,7 +40,7 @@ function o(e) {
   return (0, a.jsx)(i.tEY, {
     within: !0,
     children: (0, a.jsxs)("div", {
-      className: l()(o, (0, i.nYM)((t = function(e) {
+      className: l()(s, (0, i.nYM)((t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             a = Object.keys(n);
@@ -75,7 +75,7 @@ function o(e) {
         "aria-hidden": !0,
         className: c,
         children: r
-      }), (0, a.jsx)(s.Z, {
+      }), (0, a.jsx)(o.Z, {
         tabIndex: 0,
         onChange: d,
         filters: x,

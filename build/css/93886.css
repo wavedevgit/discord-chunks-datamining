@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 21e194b9a3740231
+  Original File Name: a34dadc91843ff52
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -1472,6 +1472,30 @@
     white-space: pre
 }
 
+.colorInputContainer_f1a68f {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    margin: 8px 0
+}
+
+.resetButton_f1a68f {
+    background: none;
+    border: none;
+    border-radius: 4px;
+    color: var(--text-normal);
+    cursor: pointer;
+    padding: 4px
+}
+
+.resetButton_f1a68f:hover {
+    background-color: var(--background-modifier-hover)
+}
+
+.resetButton_f1a68f:active {
+    background-color: var(--background-modifier-active)
+}
+
 .icon__2a871 {
     color: var(--white-500);
     height: 12px;
@@ -2741,4 +2765,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=21e194b9a3740231.css.map*/
+/*# sourceMappingURL=a34dadc91843ff52.css.map*/

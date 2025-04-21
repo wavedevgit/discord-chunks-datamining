@@ -6,8 +6,8 @@ var a = n(200651),
   r = n(192379),
   l = n(120356),
   i = n.n(l),
-  s = n(772848),
-  o = n(442837),
+  o = n(772848),
+  s = n(442837),
   c = n(481060),
   d = n(765250),
   u = n(13245),
@@ -18,8 +18,8 @@ var a = n(200651),
   b = n(829907),
   f = n(610394),
   v = n(352527),
-  g = n(355863),
-  j = n(449224),
+  j = n(355863),
+  g = n(449224),
   _ = n(808506),
   y = n(572004),
   C = n(70956),
@@ -65,7 +65,7 @@ function I(e, t) {
 let R = {
     [N.Odu.CLICK_ZONE_DEBUG]: e => I(k({
       type: N.Odu.CLICK_ZONE_DEBUG,
-      id: (0, s.Z)(),
+      id: (0, o.Z)(),
       layoutId: e,
       anchor: {
         top: .35,
@@ -75,12 +75,12 @@ let R = {
         width: 100,
         height: 100
       }
-    }, g.Z.getWidgetDefaultSettings(N.Odu.CLICK_ZONE_DEBUG)), {
+    }, j.Z.getWidgetDefaultSettings(N.Odu.CLICK_ZONE_DEBUG)), {
       pinned: !0
     }),
     [N.Odu.PERFORMANCE_DEBUG]: e => I(k({
       type: N.Odu.PERFORMANCE_DEBUG,
-      id: (0, s.Z)(),
+      id: (0, o.Z)(),
       layoutId: e,
       anchor: {
         top: .1,
@@ -91,7 +91,7 @@ let R = {
         width: "auto",
         height: "auto"
       }
-    }, g.Z.getWidgetDefaultSettings(N.Odu.PERFORMANCE_DEBUG)), {
+    }, j.Z.getWidgetDefaultSettings(N.Odu.PERFORMANCE_DEBUG)), {
       pinned: !0
     })
   },
@@ -123,7 +123,7 @@ function L(e) {
 function A(e) {
   let {
     trackedGame: t
-  } = e, n = (0, o.e7)([x.ZP], () => x.ZP.getGameForPID(t.pid)), r = (0, o.e7)([j.Z], () => j.Z.getGameForPID(t.pid));
+  } = e, n = (0, s.e7)([x.ZP], () => x.ZP.getGameForPID(t.pid)), r = (0, s.e7)([g.Z], () => g.Z.getGameForPID(t.pid));
   return (0, a.jsxs)("div", {
     className: P.panelGroup,
     children: [(0, a.jsx)(c.Text, {
@@ -199,7 +199,7 @@ function A(e) {
 function D(e) {
   let {
     pid: t
-  } = e, n = (0, o.cj)([_.default], () => _.default.getOverlayPIDStatuses()), r = (0, o.cj)([p.default], () => p.default.getTrackedGames()), l = (0, o.e7)([_.default], () => _.default.isInputLocked(t), [t]), i = (0, o.e7)([_.default], () => _.default.DEV_isInputLockedV3(t), [t]), s = (0, o.e7)([_.default], () => _.default.DEV_isInputLocked(t), [t]), d = (0, o.e7)([_.default], () => _.default.isReady(t), [t]);
+  } = e, n = (0, s.cj)([_.default], () => _.default.getOverlayPIDStatuses()), r = (0, s.cj)([p.default], () => p.default.getTrackedGames()), l = (0, s.e7)([_.default], () => _.default.isInputLocked(t), [t]), i = (0, s.e7)([_.default], () => _.default.DEV_isInputLockedV3(t), [t]), o = (0, s.e7)([_.default], () => _.default.DEV_isInputLocked(t), [t]), d = (0, s.e7)([_.default], () => _.default.isReady(t), [t]);
   return (0, a.jsxs)("div", {
     children: [(0, a.jsx)(c.Text, {
       variant: "text-md/semibold",
@@ -250,7 +250,7 @@ function D(e) {
     }), (0, a.jsx)(c.Text, {
       variant: "text-sm/normal",
       color: "text-primary",
-      children: "isInputLockedV2: ".concat(s)
+      children: "isInputLockedV2: ".concat(o)
     }), (0, a.jsx)(c.Text, {
       variant: "text-sm/normal",
       color: "text-primary",
@@ -260,7 +260,7 @@ function D(e) {
 }
 
 function z(e) {
-  let t = Z(Object.values((0, o.Wu)([g.Z], () => g.Z.getWidgetsForLayout(T.$))), e);
+  let t = Z(Object.values((0, s.Wu)([j.Z], () => j.Z.getWidgetsForLayout(T.$))), e);
   return [t, () => {
     if (null != t)(0, d.E9)(t.id);
     else {
@@ -274,7 +274,7 @@ function z(e) {
 
 function M() {
   var e, t;
-  let [n, l] = z(N.Odu.CLICK_ZONE_DEBUG), [s, d] = z(N.Odu.PERFORMANCE_DEBUG), g = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ClickZones)), j = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.WidgetAreas)), y = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.DisabledGPUBoost)), T = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ForceGPUBoost)), S = (0, o.e7)([p.default], () => p.default.getForcedRenderMode()), [R, Z] = r.useState({}), [L, M] = r.useState(S), B = e => {
+  let [n, l] = z(N.Odu.CLICK_ZONE_DEBUG), [o, d] = z(N.Odu.PERFORMANCE_DEBUG), j = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ClickZones)), g = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.WidgetAreas)), y = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.DisabledGPUBoost)), T = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ForceGPUBoost)), S = (0, s.e7)([p.default], () => p.default.getForcedRenderMode()), [R, Z] = r.useState({}), [L, M] = r.useState(S), B = e => {
     M(e), u.Z.forceRenderMode(e)
   }, U = [{
     label: m.R5.UNSET,
@@ -290,7 +290,7 @@ function M() {
     value: m.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION
   }].map(e => I(k({}, e), {
     label: "".concat(e.label, " ").concat(S === e.value ? "(current)" : "")
-  })), G = (0, o.cj)([p.default], () => p.default.getTrackedGames()), F = (0, o.e7)([_.default], () => _.default.getFocusedPID()), V = (0, o.e7)([_.default], () => _.default.isFocusedPidOutOfProcess()), H = (0, O.getPID)(), W = (0, o.e7)([p.default], () => p.default.isOverlayOOPEnabledForPid(H), [H]), [X, K] = (0, o.Wu)([v.Z], () => [v.Z.enabled, v.Z.keepOpen]), Y = (0, o.e7)([x.ZP], () => x.ZP.getRunningGames());
+  })), G = (0, s.cj)([p.default], () => p.default.getTrackedGames()), F = (0, s.e7)([_.default], () => _.default.getFocusedPID()), V = (0, s.e7)([_.default], () => _.default.isFocusedPidOutOfProcess()), H = (0, O.getPID)(), W = (0, s.e7)([p.default], () => p.default.isOverlayOOPEnabledForPid(H), [H]), [X, K] = (0, s.Wu)([v.Z], () => [v.Z.enabled, v.Z.keepOpen]), Y = (0, s.e7)([x.ZP], () => x.ZP.getRunningGames());
   r.useEffect(() => {
     Z(e => {
       for (let t of Object.keys(G)) e[Number(t)] = G[Number(t)];
@@ -350,7 +350,7 @@ function M() {
           text: "Enables a red border around click zones to help with debugging.",
           children: e => (0, a.jsx)("div", I(k({}, e), {
             children: (0, a.jsx)(c.XZJ, {
-              value: g,
+              value: j,
               onChange: () => ee(),
               size: 18,
               type: c.XZJ.Types.INVERTED,
@@ -368,7 +368,7 @@ function M() {
           text: "Enables a border around any widgets that are rendered on screen that are pinned (even if they are hidden). Blue = pinned widgets, Gray = unpinned widgets",
           children: e => (0, a.jsx)("div", I(k({}, e), {
             children: (0, a.jsx)(c.XZJ, {
-              value: j,
+              value: g,
               onChange: () => et(),
               size: 18,
               type: c.XZJ.Types.INVERTED,
@@ -441,7 +441,7 @@ function M() {
           text: "Creates a widget that shows the overlay's window performance metrics.",
           children: e => (0, a.jsx)("div", I(k({}, e), {
             children: (0, a.jsx)(c.XZJ, {
-              value: null != s,
+              value: null != o,
               onChange: () => d(),
               size: 18,
               type: c.XZJ.Types.INVERTED,

@@ -6,8 +6,8 @@ var a = n(200651),
   r = n(192379),
   l = n(120356),
   i = n.n(l),
-  s = n(442837),
-  o = n(481060),
+  o = n(442837),
+  s = n(481060),
   c = n(665149),
   d = n(428530),
   u = n(484036),
@@ -30,7 +30,7 @@ function f(e) {
     return e(), t.addChangeListener(e), () => {
       t.removeChangeListener(e)
     }
-  }, [t, n]), (0, a.jsx)(o.zJl, {
+  }, [t, n]), (0, a.jsx)(s.zJl, {
     className: p.inspectorContainer,
     children: (0, a.jsx)(d.Z, {
       data: l
@@ -47,7 +47,7 @@ let v = [{
       return t.getName()
     }
   }],
-  g = [{
+  j = [{
     id: "local",
     name: "Local Variables",
     group: x.v0.NONE,
@@ -80,7 +80,7 @@ let v = [{
     }
   }];
 
-function j(e) {
+function g(e) {
   let {
     store: t,
     initialHeight: n
@@ -88,7 +88,7 @@ function j(e) {
     TabBar: r,
     renderSelectedTab: l
   } = (0, x.ZP)({
-    tabs: g
+    tabs: j
   }, []);
   return (0, a.jsxs)(u.Z, {
     className: p.subPanel,
@@ -97,7 +97,7 @@ function j(e) {
     children: [(0, a.jsx)(r, {}), (0, a.jsxs)(c.ZP, {
       className: i()(h.headerBar, p.subPanelHeaderBar),
       children: [(0, a.jsx)(c.ZP.Icon, {
-        icon: o.lO_,
+        icon: s.lO_,
         tooltip: t.getName()
       }), (0, a.jsx)(c.ZP.Title, {
         children: t.getName()
@@ -111,7 +111,7 @@ function j(e) {
 function _() {
   let e = r.useRef(null),
     [t, n] = r.useState(""),
-    l = s.yh.getAll(),
+    l = o.yh.getAll(),
     c = r.useMemo(() => l.map(e => ({
       key: e._dispatchToken,
       store: e
@@ -128,9 +128,9 @@ function _() {
     className: i()(h.panel, p.panel),
     children: [(0, a.jsx)("div", {
       className: p.toolbar,
-      children: (0, a.jsx)(o.E1j, {
+      children: (0, a.jsx)(s.E1j, {
         className: p.searchBar,
-        size: o.E1j.Sizes.SMALL,
+        size: s.E1j.Sizes.SMALL,
         query: t,
         onChange: n,
         onClear: () => n(""),
@@ -142,7 +142,7 @@ function _() {
       data: c,
       selectedRowKey: d,
       onClickRow: e => u(e.key)
-    }), null != x && (0, a.jsx)(j, {
+    }), null != x && (0, a.jsx)(g, {
       store: x,
       initialHeight: null != e.current ? e.current.clientHeight / 2 : 300
     })]
