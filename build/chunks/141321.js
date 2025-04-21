@@ -25,7 +25,7 @@ function x(e) {
     onClose: n,
     className: x,
     "data-jump-section": y
-  } = e, v = i.useRef(null), E = (0, l.e7)([m.default], () => m.default.getCurrentUser()), O = (0, o.Q3)("RecentsButton"), j = i.useRef(null), C = (0, l.e7)([p.ZP], () => (null == E ? void 0 : E.id) != null && p.ZP.getMentionCount(E.id, g.W.NOTIFICATION_CENTER) > 0), {
+  } = e, E = i.useRef(null), v = (0, l.e7)([m.default], () => m.default.getCurrentUser()), O = (0, o.Q3)("RecentsButton"), j = i.useRef(null), C = (0, l.e7)([p.ZP], () => (null == v ? void 0 : v.id) != null && p.ZP.getMentionCount(v.id, g.W.NOTIFICATION_CENTER) > 0), {
     enabled: S
   } = c.Z.useExperiment({
     location: "RecentsButton"
@@ -50,7 +50,7 @@ function x(e) {
           recentsPopoutShown: t
         }), (0, r.jsx)(d.U, {
           location: "inbox-button",
-          targetElementRef: v,
+          targetElementRef: E,
           children: (0, r.jsx)(u.JO, (l = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
@@ -69,7 +69,7 @@ function x(e) {
             }
             return e
           }({}, n), o = o = {
-            ref: v,
+            ref: E,
             className: x,
             onClick: e,
             icon: a.xx7,

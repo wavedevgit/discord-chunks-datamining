@@ -78,18 +78,19 @@ function D(e) {
     searchResults: m,
     blockCount: g,
     ignoreCount: b,
-    onChangePage: _
+    onChangePage: _,
+    onClick: y
   } = e, {
-    offset: y,
-    totalResults: x,
-    isSearching: v,
-    showBlockedResults: j
-  } = n, E = i.useCallback(e => {
-    if (v) return;
+    offset: x,
+    totalResults: v,
+    isSearching: j,
+    showBlockedResults: E
+  } = n, I = i.useCallback(e => {
+    if (j) return;
     let t = e - 1;
     null == _ || _(t), d.oO(l, t)
-  }, [l, v, _]), I = i.useCallback(e => {
-    if (e.blocked) c.Z.show({
+  }, [l, j, _]), Z = i.useCallback((e, t) => {
+    if (null == y || y(e, t), e.blocked) c.Z.show({
       title: R.intl.string(R.t["j7eA/v"]),
       body: R.intl.formatToPlainString(R.t.dTNNgo, {
         name: e.author.username
@@ -110,13 +111,13 @@ function D(e) {
         search_id: S.Z.getAnalyticsId(l)
       }), (0, C.uL)(w.Z5c.CHANNEL(n, e.channel_id, e.id))
     }
-  }, [l]), Z = i.useMemo(() => {
+  }, [y, l]), N = i.useMemo(() => {
     let e;
     if (null == m) return [];
     let t = 0;
     return m.reduce((n, r) => {
       let i = r.find(e => e.isSearchHit);
-      if (!j && null != i && (P.Z.isBlockedForMessage(i) || P.Z.isIgnoredForMessage(i))) return n;
+      if (!E && null != i && (P.Z.isBlockedForMessage(i) || P.Z.isIgnoredForMessage(i))) return n;
       let l = O.Z.getChannel(r[0].channel_id);
       return null == l || ((null == e || e !== l.id) && n.push({
         channel: l,
@@ -124,9 +125,9 @@ function D(e) {
         startIndex: t
       }), t += 1, n[n.length - 1].results.push(r), e = null == l ? void 0 : l.id), n
     }, [])
-  }, [m, j]), N = i.useRef([]), A = Z.reduce((e, t) => e + 1 + t.results.length, 0), D = i.useCallback((e, t) => {
+  }, [m, E]), A = i.useRef([]), D = N.reduce((e, t) => e + 1 + t.results.length, 0), U = i.useCallback((e, t) => {
     if (!h.Z.keyboardModeEnabled) return;
-    let n = N.current,
+    let n = A.current,
       r = null != t ? n[t] : void 0;
     if (null == r || null == r.hitRef.current) return;
     let i = r.hitRef.current.getClientRects()[0];
@@ -134,16 +135,16 @@ function D(e) {
       var t;
       null == (t = document.getElementById(e)) || t.focus()
     })
-  }, [f]), U = i.useCallback(e => {
-    let t = N.current[e];
+  }, [f]), G = i.useCallback(e => {
+    let t = A.current[e];
     null == t || t.jumpTo()
-  }, []), G = (0, a.ZP)({
+  }, []), F = (0, a.ZP)({
     navId: "search-results",
-    itemCount: A,
+    itemCount: D,
     focusedIndex: 0,
-    setFocus: D,
-    onSelect: U
-  }), F = S.Z.getQuery(l), H = S.Z.getSearchType(l) === w.aib.FAVORITES, V = (0, p.nC)(null != (t = null == F ? void 0 : F.content) ? t : ""), z = Z.map(e => {
+    setFocus: U,
+    onSelect: G
+  }), H = S.Z.getQuery(l), V = S.Z.getSearchType(l) === w.aib.FAVORITES, z = (0, p.nC)(null != (t = null == H ? void 0 : H.content) ? t : ""), W = N.map(e => {
     let {
       channel: t,
       results: n,
@@ -152,41 +153,41 @@ function D(e) {
     return (0, r.jsx)(B, {
       channel: t,
       results: n,
-      highlighter: V,
+      highlighter: z,
       startIndex: i,
-      resultRefs: N,
-      totalResults: x,
+      resultRefs: A,
+      totalResults: v,
       scrollTo: f,
       searchId: l,
       renderEmbeds: o,
-      offset: y,
-      jumpToMessage: I,
-      listNavigator: G,
-      favoriteSearch: H
+      offset: x,
+      jumpToMessage: Z,
+      listNavigator: F,
+      favoriteSearch: V
     }, "".concat(t.id, "-").concat(i))
   });
-  z.push();
-  let W = i.useRef(null);
+  W.push();
+  let Y = i.useRef(null);
   i.useLayoutEffect(() => {
     var e;
-    null == (e = W.current) || e.focus()
+    null == (e = Y.current) || e.focus()
   }, [m]);
-  let Y = (0, s.mFp)();
+  let q = (0, s.mFp)();
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", L(M({
-      ref: W
-    }, G.getContainerProps(), Y), {
-      "aria-busy": v,
-      children: z
+      ref: Y
+    }, F.getContainerProps(), q), {
+      "aria-busy": j,
+      children: W
     })), g > 0 || b > 0 ? (0, r.jsxs)(s.P3F, {
       tag: "div",
       className: k.resultsBlocked,
-      onClick: () => d.QY(l, !j),
+      onClick: () => d.QY(l, !E),
       children: [(0, r.jsx)("div", {
         className: k.resultsBlockedImage
       }), (0, r.jsx)("div", {
         className: k.__invalid_resultsBlockedText,
-        children: j ? g > 0 && b > 0 ? R.intl.formatToPlainString(R.t["OvJs9/"], {
+        children: E ? g > 0 && b > 0 ? R.intl.formatToPlainString(R.t["OvJs9/"], {
           count: g + b
         }) : g > 0 ? R.intl.formatToPlainString(R.t["n/1QFR"], {
           count: g
@@ -200,10 +201,10 @@ function D(e) {
           count: b
         })
       })]
-    }) : null, !v && !H && (0, r.jsx)(T.Z, {
-      changePage: E,
-      offset: y,
-      totalResults: x,
+    }) : null, !j && !V && (0, r.jsx)(T.Z, {
+      changePage: I,
+      offset: x,
+      totalResults: v,
       pageLength: w.vpv
     })]
   })

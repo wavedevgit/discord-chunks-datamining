@@ -79,7 +79,7 @@ function y() {
   return _(d.ME, e, t)
 }
 
-function v(e) {
+function E(e) {
   let {
     relationship: t
   } = e;
@@ -91,7 +91,7 @@ function v(e) {
     null != n && n.delete(t.id)
   }
 }
-class E extends(r = a.ZP.Store) {
+class v extends(r = a.ZP.Store) {
   initialize() {
     this.syncWith([u.Z], y), this.waitFor(u.Z, c.Z)
   }
@@ -105,8 +105,8 @@ class E extends(r = a.ZP.Store) {
     return f
   }
 }
-p(E, "displayName", "GamePartyStore");
-let O = new E(o.Z, {
+p(v, "displayName", "GamePartyStore");
+let O = new v(o.Z, {
   CONNECTION_OPEN_SUPPLEMENTAL: function(e) {
     let {
       guilds: t,
@@ -181,8 +181,8 @@ let O = new E(o.Z, {
     } = e;
     return null != n && x(t, n.map(e => e.presence))
   },
-  RELATIONSHIP_ADD: v,
-  RELATIONSHIP_UPDATE: v,
+  RELATIONSHIP_ADD: E,
+  RELATIONSHIP_UPDATE: E,
   RELATIONSHIP_REMOVE: function(e) {
     let {
       relationship: t

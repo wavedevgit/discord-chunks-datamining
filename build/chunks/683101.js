@@ -121,9 +121,10 @@ class b extends i.PureComponent {
       null != e && (e.preventDefault(), e.stopPropagation());
       let {
         onJump: t,
-        result: n
-      } = this.props, r = n.find(e => e.isSearchHit);
-      null != r && t(r)
+        result: n,
+        index: r
+      } = this.props, i = n.find(e => e.isSearchHit);
+      null != i && t(i, r)
     }), f(this, "handleMessageClick", e => {
       if (function(e, t) {
           var n;

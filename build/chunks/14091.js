@@ -12,40 +12,28 @@ var r = n(200651),
   u = n(481060),
   d = n(447543),
   p = n(603263),
-  h = n(367907),
-  f = n(210887),
-  m = n(695346),
+  h = n(410030),
+  f = n(695346),
+  m = n(592125),
   g = n(768119),
   b = n(944486),
   _ = n(585483),
-  y = n(251285),
-  C = n(406326),
-  x = n(994463),
-  v = n(619753),
-  j = n(981631),
-  O = n(388032),
-  E = n(682065);
+  y = n(652399),
+  C = n(251285),
+  x = n(406326),
+  v = n(994463),
+  j = n(619753),
+  O = n(981631),
+  E = n(388032),
+  I = n(682065);
 
-function I(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
     configurable: !0,
     writable: !0
   }) : e[t] = n, e
-}
-
-function P(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      I(e, t, n[t])
-    })
-  }
-  return e
 }
 class S extends i.Component {
   componentDidMount() {
@@ -59,30 +47,32 @@ class S extends i.Component {
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, I(this, "autoAnalytics", function() {
+    super(...e), t = this, P(this, "autoAnalytics", function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null;
-      if (null == t.props.searchAnalyticsId) return;
+      if (null == t.props.searchAnalyticsId || t.props.isSearching) return;
       let n = 0,
         r = 0,
         i = 0,
         l = 0;
       null != t.props.searchResults && s()(t.props.searchResults).flatten().filter(e => e.isSearchHit).forEach(e => {
         null != e.content && "" !== e.content && (n++, /https?:\/\/[^\s]+/.test(e.content) && l++), null != e.embeds && e.embeds.length > 0 && i++, null != e.attachments && e.attachments.length > 0 && r++
-      }), h.ZP.trackWithMetadata(j.rMx.SEARCH_RESULT_VIEWED, {
-        search_type: t.props.searchType,
-        search_id: t.props.searchAnalyticsId,
-        prev_search_id: e !== t.props.searchAnalyticsId ? e : null,
-        is_error: t.props.searchHasError,
+      }), 0 === n ? (0, y.Qb)({
+        searchType: t.props.searchType
+      }) : (0, y.hM)({
+        searchType: t.props.searchType,
+        searchAnalyticsId: t.props.searchAnalyticsId,
+        prevSearchId: e !== t.props.searchAnalyticsId ? e : null,
+        isError: t.props.searchHasError,
         limit: t.props.searchLimit,
         offset: t.props.searchOffset,
         page: Math.floor(t.props.searchOffset / t.props.searchLimit) + 1,
-        total_results: t.props.searchTotalResults,
-        page_results: null != t.props.searchResults ? t.props.searchResults.length : null,
-        is_indexing: t.props.searchIsIndexing,
-        page_num_messages: n,
-        page_num_links: l,
-        page_num_embeds: i,
-        page_num_attach: r
+        totalResults: t.props.searchTotalResults,
+        pageResults: null != t.props.searchResults ? t.props.searchResults.length : null,
+        isIndexing: t.props.searchIsIndexing,
+        pageNumMessages: n,
+        pageNumLinks: l,
+        pageNumEmbeds: i,
+        pageNumAttachments: r
       })
     })
   }
@@ -92,19 +82,19 @@ let Z = e => {
     children: t
   } = e;
   return (0, r.jsx)("div", {
-    className: E.emptyResultsWrap,
+    className: I.emptyResultsWrap,
     children: (0, r.jsx)("div", {
-      className: E.emptyResultsContent,
+      className: I.emptyResultsContent,
       children: t
     })
   })
 };
 class N extends i.PureComponent {
   componentDidMount() {
-    _.S.subscribe(j.CkL.SEARCH_RESULTS_CLOSE, this.handleSearchResultsClose)
+    _.S.subscribe(O.CkL.SEARCH_RESULTS_CLOSE, this.handleSearchResultsClose)
   }
   componentWillUnmount() {
-    _.S.unsubscribe(j.CkL.SEARCH_RESULTS_CLOSE, this.handleSearchResultsClose)
+    _.S.unsubscribe(O.CkL.SEARCH_RESULTS_CLOSE, this.handleSearchResultsClose)
   }
   componentDidUpdate(e) {
     let {
@@ -121,7 +111,7 @@ class N extends i.PureComponent {
       searchMode: (null == n ? void 0 : n.sort_by) != null && null != n.sort_order ? p.Vj({
         sort_by: n.sort_by,
         sort_order: n.sort_order
-      }) : j.QIO.NEWEST
+      }) : O.QIO.NEWEST
     })
   }
   render() {
@@ -133,32 +123,34 @@ class N extends i.PureComponent {
       offset: i,
       hasError: l,
       totalResults: o,
-      isHistoricalIndexing: a
+      isHistoricalIndexing: a,
+      isSearching: s
     } = this.props.search;
     return (0, r.jsxs)("section", {
-      className: E.searchResultsWrap,
-      "aria-label": O.intl.string(O.t.zkoeq6),
+      className: I.searchResultsWrap,
+      "aria-label": E.intl.string(E.t.zkoeq6),
       children: [this.renderHeader(), (0, r.jsx)(u.Den, {
         ref: this.scrollerRef,
-        className: E.scroller,
+        className: I.scroller,
         children: this.renderContent()
       }), (0, r.jsx)(S, {
         searchType: t,
         searchAnalyticsId: e,
         searchResults: n,
         searchOffset: i,
-        searchLimit: j.vpv,
+        searchLimit: O.vpv,
         searchHasError: l,
         searchTotalResults: o,
-        searchIsIndexing: a
+        searchIsIndexing: a,
+        isSearching: s
       })]
     })
   }
   constructor(...e) {
-    super(...e), I(this, "state", {
-      searchMode: j.QIO.NEWEST,
+    super(...e), P(this, "state", {
+      searchMode: O.QIO.NEWEST,
       searchQuery: null
-    }), I(this, "scrollerRef", i.createRef()), I(this, "scrollTo", (e, t, n) => {
+    }), P(this, "scrollerRef", i.createRef()), P(this, "scrollTo", (e, t, n) => {
       let r = this.scrollerRef.current;
       if (null == r) return;
       let i = r.getScrollerState().scrollTop - e;
@@ -167,9 +159,9 @@ class N extends i.PureComponent {
         animate: t,
         callback: n
       })
-    }), I(this, "selectChannel", e => {
+    }), P(this, "selectChannel", e => {
       e !== b.Z.getChannelId() && d.ZP.transitionToInviteChannelSync(e)
-    }), I(this, "searchPrevious", () => {
+    }), P(this, "searchPrevious", () => {
       let {
         searchId: e,
         search: {
@@ -177,7 +169,7 @@ class N extends i.PureComponent {
         }
       } = this.props;
       t || p.jn(e)
-    }), I(this, "searchNext", () => {
+    }), P(this, "searchNext", () => {
       let {
         searchId: e,
         search: {
@@ -185,27 +177,28 @@ class N extends i.PureComponent {
         }
       } = this.props;
       t || p.m$(e)
-    }), I(this, "handleSearchResultsClose", () => {
+    }), P(this, "handleSearchResultsClose", () => {
       let {
         searchId: e
       } = this.props;
       p.qt(e)
-    }), I(this, "searchByMode", e => {
+    }), P(this, "searchByMode", e => {
       let {
         searchId: t,
         search: {
           isSearching: n
-        }
+        },
+        searchAnalyticsId: r
       } = this.props, {
-        searchMode: r
+        searchMode: i
       } = this.state;
-      e === r || n || (h.ZP.trackWithMetadata(j.rMx.SEARCH_RESULT_SORT_CHANGED, {
-        search_id: g.Z.getAnalyticsId(t),
-        new_sort_type: e
+      e === i || n || ((0, y.zW)({
+        searchAnalyticsId: r,
+        mode: e
       }), p.Nz(t, e), this.setState({
         searchMode: e
       }))
-    }), I(this, "toggleShowBlockedMessages", () => {
+    }), P(this, "toggleShowBlockedMessages", () => {
       let {
         searchId: e,
         search: {
@@ -213,7 +206,7 @@ class N extends i.PureComponent {
         }
       } = this.props;
       p.QY(e, !t)
-    }), I(this, "renderHeader", () => {
+    }), P(this, "renderHeader", () => {
       let {
         searchMode: e
       } = this.state, {
@@ -222,7 +215,7 @@ class N extends i.PureComponent {
         isHistoricalIndexing: i,
         documentsIndexed: l
       } = this.props.search;
-      return (0, r.jsx)(C.Z, {
+      return (0, r.jsx)(x.Z, {
         searchMode: e,
         searchByMode: this.searchByMode,
         totalResults: t,
@@ -230,38 +223,61 @@ class N extends i.PureComponent {
         isIndexing: i,
         documentsIndexed: l
       })
-    }), I(this, "renderIndexing", () => {
-      let e = g.Z.getSearchType(this.props.searchId) === j.aib.GUILD ? O.intl.string(O.t.AXPbZm) : O.intl.string(O.t.Q0JJjo);
+    }), P(this, "renderIndexing", () => {
+      let e = g.Z.getSearchType(this.props.searchId) === O.aib.GUILD ? E.intl.string(E.t.AXPbZm) : E.intl.string(E.t.Q0JJjo);
       return (0, r.jsxs)(Z, {
-        children: [(0, r.jsx)(x.Z, {}), (0, r.jsx)("div", {
-          className: (E.emptyResultsText, E.stillIndexing),
+        children: [(0, r.jsx)(v.Z, {}), (0, r.jsx)("div", {
+          className: (I.emptyResultsText, I.stillIndexing),
           children: e
         })]
       })
-    }), I(this, "renderNoResults", () => {
+    }), P(this, "renderNoResults", () => {
       let {
         showNoResultsAlt: e
-      } = this.props.search, t = e ? O.intl.string(O.t["VrK/2d"]) : O.intl.string(O.t.V6nAfH);
+      } = this.props.search, t = e ? E.intl.string(E.t["VrK/2d"]) : E.intl.string(E.t.V6nAfH);
       return (0, r.jsxs)(Z, {
         children: [(0, r.jsx)("div", {
-          className: o()(E.noResultsImage, {
-            [E.alt]: e
+          className: o()(I.noResultsImage, {
+            [I.alt]: e
           })
         }), (0, r.jsx)("div", {
-          className: o()(E.emptyResultsText, E.noResults, {
-            [E.alt]: e
+          className: o()(I.emptyResultsText, I.noResults, {
+            [I.alt]: e
           }),
           children: t
         })]
       })
-    }), I(this, "renderError", () => (0, r.jsxs)(Z, {
+    }), P(this, "renderError", () => (0, r.jsxs)(Z, {
       children: [(0, r.jsx)("div", {
-        className: E.errorImage
+        className: I.errorImage
       }), (0, r.jsx)("div", {
-        className: o()(E.emptyResultsText, E.errorMessage),
-        children: O.intl.string(O.t.uvDZBQ)
+        className: o()(I.emptyResultsText, I.errorMessage),
+        children: E.intl.string(E.t.uvDZBQ)
       })]
-    })), I(this, "renderContent", () => {
+    })), P(this, "handleSearchResultClick", (e, t) => {
+      let n = m.Z.getChannel(e.channel_id),
+        r = null != n ? n.getGuildId() : null,
+        {
+          searchType: i,
+          searchAnalyticsId: l
+        } = this.props,
+        {
+          offset: o,
+          totalResults: a
+        } = this.props.search;
+      (0, y.sL)({
+        searchType: i,
+        searchAnalyticsId: l,
+        guildId: r,
+        channelId: e.channel_id,
+        pageResults: null != this.props.searchResults ? this.props.searchResults.length : null,
+        totalResults: a,
+        limit: O.vpv,
+        page: Math.floor(o / O.vpv) + 1,
+        offset: o,
+        index: t
+      })
+    }), P(this, "renderContent", () => {
       let {
         searchResults: e,
         blockCount: t,
@@ -272,9 +288,10 @@ class N extends i.PureComponent {
         isIndexing: o,
         hasError: a
       } = this.props.search;
-      return a ? this.renderError() : o ? this.renderIndexing() : l ? null : i > 0 ? (0, r.jsx)(v.Z, {
+      return a ? this.renderError() : o ? this.renderIndexing() : l ? null : i > 0 ? (0, r.jsx)(j.Z, {
         search: this.props.search,
         searchResults: e,
+        onClick: this.handleSearchResultClick,
         blockCount: t,
         ignoreCount: n,
         searchId: this.props.searchId,
@@ -286,34 +303,29 @@ class N extends i.PureComponent {
 }
 
 function T(e) {
-  var t, n;
   let {
-    searchId: i
-  } = e, l = (0, c.cj)([g.Z], () => g.Z.getResultsState(i), [i]);
-  return (0, r.jsx)(N, P((t = P({
-    searchId: i,
-    search: l
-  }, (0, c.cj)([g.Z], () => ({
-    searchAnalyticsId: g.Z.getAnalyticsId(i),
+    searchId: t
+  } = e, n = (0, c.cj)([g.Z], () => g.Z.getResultsState(t), [t]), {
+    searchAnalyticsId: i,
+    searchType: l
+  } = (0, c.cj)([g.Z], () => ({
+    searchAnalyticsId: g.Z.getAnalyticsId(t),
     searchType: g.Z.getSearchType()
-  }), [i]), (0, y.Z)(i)), n = n = {
-    renderEmbeds: m.NA.useSetting(),
-    developerMode: m.Sb.useSetting()
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(n)).forEach(function(e) {
-    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-  }), t), (0, c.cj)([f.Z], () => {
-    let {
-      theme: e
-    } = f.Z;
-    return {
-      theme: e
-    }
-  })))
+  }), [t]), o = (0, h.ZP)(), {
+    searchResults: a,
+    ignoreCount: s,
+    blockCount: u
+  } = (0, C.Z)(t);
+  return (0, r.jsx)(N, {
+    searchId: t,
+    search: n,
+    searchAnalyticsId: i,
+    searchType: l,
+    searchResults: a,
+    ignoreCount: s,
+    blockCount: u,
+    renderEmbeds: f.NA.useSetting(),
+    developerMode: f.Sb.useSetting(),
+    theme: o
+  })
 }

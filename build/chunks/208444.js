@@ -24,11 +24,11 @@ function x(e, t) {
     isDiscoverable: n,
     customInstallUrl: x,
     installParams: y,
-    integrationTypesConfig: v
-  } = e, E = (0, f.Eb)({
+    integrationTypesConfig: E
+  } = e, v = (0, f.Eb)({
     customInstallUrl: x,
     installParams: y,
-    integrationTypesConfig: v
+    integrationTypesConfig: E
   }), O = (0, i.e7)([p.Z], () => {
     var e;
     return null != (e = p.Z.getGuildId()) ? e : void 0
@@ -51,7 +51,7 @@ function x(e, t) {
         }
       })
     }
-  } : E ? {
+  } : v ? {
     label: b.intl.string(b.t.NgXl3N),
     trackingArea: h.j_.ADD_APP,
     onClick() {
@@ -59,10 +59,10 @@ function x(e, t) {
         applicationId: e.id,
         customInstallUrl: x,
         installParams: y,
-        integrationTypesConfig: v,
+        integrationTypesConfig: E,
         guildId: O,
         source: "app_message_embed"
       })
     }
-  } : void 0, [e.id, C, S, x, y, v, E, t, O])
+  } : void 0, [e.id, C, S, x, y, E, v, t, O])
 }
