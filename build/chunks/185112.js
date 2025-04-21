@@ -39,7 +39,8 @@ let d = 10,
       if (null == t || !i.Z.isVideoEnabled()) return null;
       let n = (0, l.hj)(t, r.default.getId());
       return null == n ? null : n.short.frameRate < d || n.long.frameRate < d ? [u({
-        type: o.u.CAMERA_SEND_LOW_FPS
+        type: o.u.CAMERA_SEND_LOW_FPS,
+        userId: r.default.getId()
       }, (0, s.Y9)())] : void 0
     },
     makeErrorContextKey: e => "".concat(e.mediaSessionId)
