@@ -1,4 +1,4 @@
-/** Chunk was on 75862 **/
+/** Chunk was on 81489 **/
 n.d(t, {
   L: () => m,
   Z: () => p
@@ -37,7 +37,7 @@ let p = i.memo(function(e) {
     paused: g
   });
   let {
-    onReady: I
+    onReady: Z
   } = (0, u.Z)({
     streamId: t,
     userId: S,
@@ -45,9 +45,9 @@ let p = i.memo(function(e) {
     videoSpinnerContext: v,
     streamKey: b,
     paused: g
-  }), Z = i.useCallback(() => {
-    O(!1), I()
-  }, [I]);
+  }), j = i.useCallback(() => {
+    O(!1), Z()
+  }, [Z]);
   return (0, l.jsxs)("div", {
     className: o()(f.wrapper, r),
     children: [null != t && (0, l.jsx)(a, {
@@ -56,7 +56,7 @@ let p = i.memo(function(e) {
       }, m),
       streamId: t,
       onResize: n,
-      onReady: Z,
+      onReady: j,
       paused: g
     }), g ? null : (0, l.jsx)("div", {
       className: o()(f.previewWrapper, {

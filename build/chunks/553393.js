@@ -267,7 +267,7 @@ function F(e) {
 }
 
 function V(e) {
-  return null == e.quest ? null : (0, r.jsx)(A.A, {
+  return null == e.quest || e.isQuestEnrollmentBlocked ? null : (0, r.jsx)(A.A, {
     questOrQuests: e.quest,
     questContent: S.jn.MEMBERS_LIST,
     trackGuildAndChannelMetadata: !0,

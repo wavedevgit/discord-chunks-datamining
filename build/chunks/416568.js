@@ -42,8 +42,8 @@ var r = n(200651),
   G = n(257351),
   B = n(474109),
   V = n(741616),
-  H = n(187835),
-  F = n(118122),
+  F = n(187835),
+  H = n(118122),
   z = n(193154),
   W = n(602147),
   Y = n(222059),
@@ -296,8 +296,8 @@ function ed(e) {
     }),
     {
       shouldShow: eV,
-      questId: eH,
-      onDiscoveryButtonClick: eF
+      questId: eF,
+      onDiscoveryButtonClick: eH
     } = eB,
     ez = es(eB, ["shouldShow", "questId", "onDiscoveryButtonClick"]),
     eW = eU && eV,
@@ -308,10 +308,10 @@ function ed(e) {
     }, e.id)),
     eK = (0, r.jsx)(W.Z, {
       ref: eG,
-      questId: eW ? eH : void 0,
+      questId: eW ? eF : void 0,
       selected: eT,
       className: er.discoveryIcon,
-      onClick: eW ? eF : void 0
+      onClick: eW ? eH : void 0
     }),
     eq = eW ? (0, r.jsx)(N.fO, eo(el({
       targetElementRef: eG,
@@ -362,10 +362,10 @@ function ed(e) {
                 "aria-label": en.intl.string(en.t["7hB4kp"]),
                 gap: "xs",
                 children: eL.map((e, t) => eD(e, t, eL.length))
-              }), eY, (0, r.jsx)(Q.Z, {}), n ? null : (0, r.jsx)(F.Z, {
+              }), eY, (0, r.jsx)(Q.Z, {}), n ? null : (0, r.jsx)(H.Z, {
                 disableTooltip: b.length > 0,
                 lastTargetNode: eL[eL.length - 1]
-              }), n ? null : eq, t ? null : (0, r.jsx)(H.Z, {})]
+              }), n ? null : eq, t ? null : (0, r.jsx)(F.Z, {})]
             })
           })
         })), (0, r.jsx)(B.Z, {
@@ -485,8 +485,8 @@ function eh(e) {
     }),
     {
       shouldShow: eV,
-      questId: eH,
-      onDiscoveryButtonClick: eF
+      questId: eF,
+      onDiscoveryButtonClick: eH
     } = eB,
     ez = es(eB, ["shouldShow", "questId", "onDiscoveryButtonClick"]),
     eW = eU && eV,
@@ -497,10 +497,10 @@ function eh(e) {
     }, e.id)),
     eK = (0, r.jsx)(W.Z, {
       ref: eG,
-      questId: eW ? eH : void 0,
+      questId: eW ? eF : void 0,
       selected: eT,
       className: er.discoveryIcon,
-      onClick: eW ? eF : void 0
+      onClick: eW ? eH : void 0
     }),
     eq = eW ? (0, r.jsx)(N.fO, eo(el({
       targetElementRef: eG,
@@ -556,10 +556,10 @@ function eh(e) {
                   gap: "xs",
                   "aria-label": en.intl.string(en.t["7hB4kp"]),
                   children: eL.map((e, t) => eD(e, t, eL.length))
-                }), eY, (0, r.jsx)(Q.Z, {}), n ? null : (0, r.jsx)(F.Z, {
+                }), eY, (0, r.jsx)(Q.Z, {}), n ? null : (0, r.jsx)(H.Z, {
                   disableTooltip: b.length > 0,
                   lastTargetNode: eL[eL.length - 1]
-                }), n ? null : eq, t ? null : (0, r.jsx)(H.Z, {})]
+                }), n ? null : eq, t ? null : (0, r.jsx)(F.Z, {})]
               })]
             })]
           }), (0, r.jsx)(B.Z, {

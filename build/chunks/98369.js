@@ -1,6 +1,6 @@
-/** Chunk was on 75862 **/
+/** Chunk was on 81489 **/
 n.d(t, {
-  Z: () => j
+  Z: () => _
 }), n(388685), n(410992), n(227481), n(730884), n(20464), n(341884), n(364341), n(629680), n(505025), n(918970), n(121784), n(644351), n(146733);
 var r, l, i, a = n(442837),
   o = n(46973),
@@ -40,7 +40,7 @@ function O() {
   return S = r, l
 }
 
-function I(e) {
+function Z(e) {
   let {
     userId: t
   } = e;
@@ -60,10 +60,10 @@ function I(e) {
   return n || r || l
 }
 
-function Z() {
+function j() {
   h.clear(), v.clear(), S = !1
 }
-class _ extends(r = a.ZP.Store) {
+class I extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(p.Z, E.Z, d.Z, f.Z)
   }
@@ -77,20 +77,20 @@ class _ extends(r = a.ZP.Store) {
     return h.get(e)
   }
 }
-i = "SecureFramesVerifiedStore", (l = "displayName") in _ ? Object.defineProperty(_, l, {
+i = "SecureFramesVerifiedStore", (l = "displayName") in I ? Object.defineProperty(I, l, {
   value: i,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : _[l] = i;
-let j = new _(s.Z, {
-  CONNECTION_OPEN: Z,
+}) : I[l] = i;
+let _ = new I(s.Z, {
+  CONNECTION_OPEN: j,
   VOICE_CHANNEL_SELECT: function(e) {
     let {
       channelId: t
     } = e;
     if (t === b) return !1;
-    b = t, Z()
+    b = t, j()
   },
   RTC_CONNECTION_STATE: function(e) {
     let {
@@ -104,20 +104,20 @@ let j = new _(s.Z, {
         if (null == t) return !1;
         return v.delete(t), O();
       case o.Yn.DEFAULT:
-        Z()
+        j()
     }
   },
   RTC_CONNECTION_ROSTER_MAP_UPDATE: function(e) {
     let {
       userIds: t
-    } = e, n = c.default.getId(), r = t.reduce((e, t) => n === t ? e : !!I({
+    } = e, n = c.default.getId(), r = t.reduce((e, t) => n === t ? e : !!Z({
       userId: t
     }) || e, !1), l = y(), i = O();
     return r || l || i
   },
-  SECURE_FRAMES_TRANSIENT_KEY_CREATE: I,
-  SECURE_FRAMES_TRANSIENT_KEY_DELETE: I,
-  SECURE_FRAMES_VERIFIED_KEY_CREATE: I,
-  SECURE_FRAMES_VERIFIED_KEY_DELETE: I,
-  SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: I
+  SECURE_FRAMES_TRANSIENT_KEY_CREATE: Z,
+  SECURE_FRAMES_TRANSIENT_KEY_DELETE: Z,
+  SECURE_FRAMES_VERIFIED_KEY_CREATE: Z,
+  SECURE_FRAMES_VERIFIED_KEY_DELETE: Z,
+  SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: Z
 })

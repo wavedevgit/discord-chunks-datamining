@@ -160,8 +160,8 @@ function Z(e) {
     }),
     z = F || H ? G.total - U.total : -U.total,
     {
-      interval: Y,
-      intervalCount: W
+      interval: W,
+      intervalCount: Y
     } = L,
     K = A.intl.format(A.t["0W23cn"], {
       endDate: G.subscriptionPeriodStart
@@ -186,7 +186,7 @@ function Z(e) {
           label: A.intl.format(A.t["Vg+LRk"], {
             subscriptionCount: 1
           }),
-          value: (0, T.og)((0, T.T4)(z, l.currency), Y, W),
+          value: (0, T.og)((0, T.T4)(z, l.currency), W, Y),
           className: P.invoiceCancelRow
         }), null != V && V.length > 0 ? (0, i.jsxs)("div", {
           children: [(0, i.jsx)(b.UN, {}), (0, i.jsx)(E.nd, {

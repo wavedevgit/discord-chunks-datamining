@@ -76,9 +76,9 @@ function D() {
     })),
     B = (0, a.e7)([C.Z], () => C.Z.getChannelId(N.I_8)),
     V = (0, a.e7)([v.Z], () => v.Z.getChannel(B)),
-    H = (0, _.Z)(e => e.guildId) === N.I_8,
+    F = (0, _.Z)(e => e.guildId) === N.I_8,
     {
-      badge: F,
+      badge: H,
       unread: z
     } = (0, I.Z)(G),
     W = function(e) {
@@ -112,14 +112,14 @@ function D() {
         activity: g
       })
     }(G),
-    Y = F > 0 ? (0, y.N)(F) : null,
+    Y = H > 0 ? (0, y.N)(H) : null,
     K = (0, f.Q3)("FavoritesButton"),
     q = i.useCallback(() => {
       L()
     }, [L]);
   return (0, r.jsxs)(m.H, {
     children: [(0, r.jsx)(g.Z, {
-      selected: H,
+      selected: F,
       hovered: k,
       unread: z && !U,
       className: T.pill
@@ -127,20 +127,20 @@ function D() {
       onShow: q,
       children: (0, r.jsx)(P.S, {
         children: (0, r.jsx)(c.aRk, {
-          selected: K || H || k,
+          selected: K || F || k,
           upperBadge: W,
           lowerBadge: Y,
           children: (0, r.jsx)(c.LYs, (e = A({}, l), t = t = {
             ariaLabel: Z.intl.formatToPlainString(Z.t["/uzRsr"], {
               guildName: Z.intl.string(Z.t.wMWycn),
-              mentions: F
+              mentions: H
             }),
-            "aria-selected": H,
+            "aria-selected": F,
             to: {
               pathname: N.Z5c.CHANNEL(N.I_8, B),
               state: R
             },
-            selected: H || k,
+            selected: F || k,
             onMouseEnter: () => M(!0),
             onMouseLeave: () => M(!1),
             onMouseDown: function() {

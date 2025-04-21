@@ -54,8 +54,8 @@ let G = function(e) {
     F = (0, a.e7)([I.ZP], () => I.ZP.hasFetchedSubscriptions()),
     H = (0, a.e7)([T.default], () => T.default.getCurrentUser()),
     z = null == H ? void 0 : H.id,
-    Y = (0, Z.N)(),
-    W = (0, D.Ng)(),
+    W = (0, Z.N)(),
+    Y = (0, D.Ng)(),
     K = (0, _.V)(),
     [q, X] = r.useState(!0),
     Q = r.useRef(0),
@@ -78,8 +78,8 @@ let G = function(e) {
       await Promise.all([u.jg(), (0, m.X8)(), u.tZ(), (0, g.Y2)(ee, null, M.JjL.DISCOVERY), null != z && et && J && (0, S.Z)(z)]), Q.current = Date.now() - e, X(!1)
     })
   }, [ee, z, et, J]), r.useEffect(() => {
-    n && (null != Y || null != W) && (0, P.a)(Y, W)
-  }, [n, Y, W]), r.useEffect(() => {
+    n && (null != W || null != Y) && (0, P.a)(W, Y)
+  }, [n, W, Y]), r.useEffect(() => {
     q || N.default.track(M.rMx.PREMIUM_MARKETING_PAGE_VIEWED, {
       location_stack: s,
       load_duration_ms: Q.current

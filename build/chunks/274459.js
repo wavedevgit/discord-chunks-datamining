@@ -1,4 +1,4 @@
-/** Chunk was on 75862 **/
+/** Chunk was on 81489 **/
 n.d(t, {
   Z: () => h
 }), n(388685);
@@ -25,7 +25,7 @@ function h(e) {
   } = e, {
     emoji: h,
     sentAt: v
-  } = n, S = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), [b, y] = l.useState(!0), O = !S, I = (0, o.Yzy)(b, {
+  } = n, S = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), [b, y] = l.useState(!0), O = !S, Z = (0, o.Yzy)(b, {
     from: {
       rotate: -120
     },
@@ -50,7 +50,7 @@ function h(e) {
     }, O ? p : m), () => {
       null != e && clearTimeout(e)
     }
-  }, [v, t, O]), O) ? null : I((e, t) => {
+  }, [v, t, O]), O) ? null : Z((e, t) => {
     var n;
     let {
       rotate: l

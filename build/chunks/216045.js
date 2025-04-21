@@ -55,7 +55,7 @@ function F() {
       pendingBio: H,
       pendingAvatar: z
     } = F,
-    Y = function(e, t) {
+    W = function(e, t) {
       if (null == e) return {};
       var n, i, r = function(e, t) {
         if (null == e) return {};
@@ -70,7 +70,7 @@ function F() {
       }
       return r
     }(F, ["pendingBio", "pendingAvatar"]),
-    W = (0, N.SD)({
+    Y = (0, N.SD)({
       userId: n.id,
       image: z
     }),
@@ -134,8 +134,8 @@ function F() {
         canUsePremiumCustomization: X,
         onUpsellClick: L.Z,
         pendingBio: q
-      }, Y), t = t = {
-        pendingAvatar: W,
+      }, W), t = t = {
+        pendingAvatar: Y,
         showNameplatePreview: !0
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);

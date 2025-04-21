@@ -55,14 +55,14 @@ let I = i.memo(function(e) {
       parentAnalyticsLocation: B
     } = (0, p.ZP)(),
     V = E(k, L, D),
-    H = i.useCallback(() => {
+    F = i.useCallback(() => {
       o()(null != L, "Received null activity"), (0, f.v)(B, f.d.INVITE), v.default.track(j.rMx.OPEN_MODAL, {
         type: "Send Join Invite",
         application_id: L.application_id,
         location: M.location
       }), (0, c.h7)(L, !1)
     }, [L, M, B]),
-    F = i.useCallback((e, t) => () => {
+    H = i.useCallback((e, t) => () => {
       (0, f.v)(B, f.d.LEAVE_ACTIVITY), h.Z.leaveActivity({
         location: t,
         applicationId: e,
@@ -138,12 +138,12 @@ let I = i.memo(function(e) {
     })) : null,
     K = V && null == D ? (0, r.jsx)(C.Z, {
       tooltipText: x.intl.string(x.t["hC/Ze3"]),
-      onClick: H,
+      onClick: F,
       icon: a.ejJ
     }) : null,
     q = null == D ? null : (0, r.jsx)(C.Z, {
       tooltipText: x.intl.string(x.t["R/FK4O"]),
-      onClick: F(D.applicationId, D.location),
+      onClick: H(D.applicationId, D.location),
       icon: a.PBZ
     }),
     Q = null == P ? null : (0, r.jsx)(g.Z, {});

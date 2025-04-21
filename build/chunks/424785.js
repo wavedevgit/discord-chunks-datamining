@@ -44,7 +44,7 @@ var i = n(120356),
   B = n(915887),
   V = n(185346);
 
-function H(e, t, n) {
+function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -53,14 +53,14 @@ function H(e, t, n) {
   }) : e[t] = n, e
 }
 
-function F(e) {
+function H(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      H(e, t, n[t])
+      F(e, t, n[t])
     })
   }
   return e
@@ -177,7 +177,7 @@ class W extends R.ZP {
               }
               return i
             }(o, ["onClick", "onContextMenu"]);
-            return (0, r.jsxs)(L.ZP, z(F({
+            return (0, r.jsxs)(L.ZP, z(H({
               className: B.iconVisibility,
               iconClassName: l()({
                 [V.iconLive]: null != f
@@ -216,13 +216,13 @@ class W extends R.ZP {
     return p && (j = c(j)), d && (j = o(a(j))), j
   }
   constructor(...e) {
-    super(...e), H(this, "state", {
+    super(...e), F(this, "state", {
       shouldShowGuildVerificationPopout: !1
-    }), H(this, "closeGuildVerificationPopout", () => {
+    }), F(this, "closeGuildVerificationPopout", () => {
       this.setState({
         shouldShowGuildVerificationPopout: !1
       })
-    }), H(this, "handleClick", () => {
+    }), F(this, "handleClick", () => {
       let {
         channel: e,
         locked: t,
@@ -232,13 +232,13 @@ class W extends R.ZP {
       null != i && (0, g.n)(i) && (0, f.hk)(i), r && this.setState({
         shouldShowGuildVerificationPopout: !0
       }), t || n || e.isRoleSubscriptionTemplatePreviewChannel() || (0, _.Cq)(e), __OVERLAY__ || (0, y.Kh)(e.id)
-    }), H(this, "handleClickChat", () => {
+    }), F(this, "handleClickChat", () => {
       let {
         channel: e,
         locked: t
       } = this.props;
       __OVERLAY__ || t || (0, y.Kh)(e.id)
-    }), H(this, "handleContextMenu", e => {
+    }), F(this, "handleContextMenu", e => {
       let {
         channel: t
       } = this.props, i = I.Z.getGuild(t.getGuildId());
@@ -246,12 +246,12 @@ class W extends R.ZP {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("18320"), n.e("83331"), n.e("81070")]).then(n.bind(n, 213202));
-        return n => (0, r.jsx)(e, z(F({}, n), {
+        return n => (0, r.jsx)(e, z(H({}, n), {
           channel: t,
           guild: i
         }))
       })
-    }), H(this, "renderPopout", () => {
+    }), F(this, "renderPopout", () => {
       let {
         channel: e
       } = this.props, {
@@ -263,7 +263,7 @@ class W extends R.ZP {
         closePopout: this.closeGuildVerificationPopout
       });
       throw Error("VoiceChannel.renderPopout: There must always be something to render")
-    }), H(this, "renderOpenChatButton", () => {
+    }), F(this, "renderOpenChatButton", () => {
       let {
         channel: e,
         locked: t,
@@ -296,12 +296,12 @@ class W extends R.ZP {
           })
         }
       })
-    }), H(this, "getTooltipText", () => {
+    }), F(this, "getTooltipText", () => {
       let {
         connected: e
       } = this.props;
       return this.isFull() && !e ? G.intl.string(G.t.rZfiNj) : null
-    }), H(this, "renderSubtitle", () => {
+    }), F(this, "renderSubtitle", () => {
       var e;
       let t = null == (e = this.props.stageInstance) ? void 0 : e.topic;
       return null == t ? null : (0, r.jsx)(p.Z, {
@@ -346,7 +346,7 @@ function K(e) {
     needSubscriptionToAccess: y,
     enableConnectedUserLimit: I || n.userLimit > 0 && n.userLimit < M.xGv
   }), A = e.connected && null == T;
-  return (0, r.jsx)(Y, z(F({
+  return (0, r.jsx)(Y, z(H({
     categoryCollapsed: h,
     connectAction: p,
     numAudience: g,

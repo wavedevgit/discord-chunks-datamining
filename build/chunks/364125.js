@@ -1,4 +1,4 @@
-/** Chunk was on 75862 **/
+/** Chunk was on 81489 **/
 n.d(t, {
   Z: () => d
 });
@@ -37,7 +37,7 @@ function d(e) {
     m && null != g && (e.stopPropagation(), E.current && S("handleMouseMove", g, e))
   }, [S, g, m]), O = r.useCallback(e => {
     m && null != g && (e.stopPropagation(), E.current = !1, S("handleMouseUp", g, e))
-  }, [S, g, m]), I = r.useCallback(e => {
+  }, [S, g, m]), Z = r.useCallback(e => {
     E.current && null != g && S("handleMouseEnter", g, e)
   }, [S, g]);
   return r.useEffect(() => {
@@ -50,7 +50,7 @@ function d(e) {
       m && null != g && e.stopPropagation()
     }, [g, m]),
     handleMouseDown: b,
-    handleMouseEnter: I,
+    handleMouseEnter: Z,
     handleMouseMove: y,
     handleMouseUp: O
   }

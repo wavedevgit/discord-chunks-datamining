@@ -131,20 +131,20 @@ let P = i.memo(function(e) {
         }
         return i
       }(U, ["role", "tabIndex"]),
-      H = i.useRef(null),
       F = i.useRef(null),
+      H = i.useRef(null),
       z = (0, r.jsxs)("li", {
         className: t,
         "data-dnd-name": l.name,
         children: [(0, r.jsx)(c.tEY, {
-          focusTarget: H,
-          ringTarget: F,
+          focusTarget: F,
+          ringTarget: H,
           offset: {
             left: 4,
             right: 4
           },
           children: (0, r.jsxs)("div", {
-            ref: F,
+            ref: H,
             className: o()(x.iconVisibility, x.wrapper, {
               [x.collapsed]: R,
               [x.muted]: A,
@@ -152,7 +152,7 @@ let P = i.memo(function(e) {
             }),
             onContextMenu: k,
             children: [(0, r.jsxs)(c.P3F, E(S({
-              innerRef: H,
+              innerRef: F,
               className: x.mainContent,
               tabIndex: B
             }, V), {

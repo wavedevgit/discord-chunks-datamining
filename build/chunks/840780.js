@@ -42,8 +42,8 @@ var r = n(200651),
   G = n(690221),
   B = n(231664),
   V = n(759198),
-  H = n(970731),
-  F = n(131704),
+  F = n(970731),
+  H = n(131704),
   z = n(199902),
   W = n(314897),
   Y = n(592125),
@@ -227,7 +227,7 @@ class ey extends i.PureComponent {
         size: R.Z.Sizes.SMALL
       }), (0, r.jsxs)("div", {
         className: ep.info,
-        children: [t, null != l && (0, F.Qm)(l.type) ? b : (0, r.jsx)(eb, {
+        children: [t, null != l && (0, H.Qm)(l.type) ? b : (0, r.jsx)(eb, {
           timestamps: f
         })]
       })]
@@ -237,8 +237,8 @@ class ey extends i.PureComponent {
       align: "center",
       spacing: 16,
       shouldShow: u,
-      renderPopout: () => (0, r.jsx)(H.ZP, {
-        color: H.BD.PRIMARY,
+      renderPopout: () => (0, r.jsx)(F.ZP, {
+        color: F.BD.PRIMARY,
         header: eh.intl.string(eh.t.ON4pBg),
         content: eh.intl.string(eh.t["8PAfND"]),
         buttonCTA: eh.intl.string(eh.t.WAI6xs),
@@ -250,7 +250,7 @@ class ey extends i.PureComponent {
         onClick: () => {
           d(ed.L.USER_DISMISS)
         },
-        caretPosition: H.DF.BOTTOM_CENTER
+        caretPosition: F.DF.BOTTOM_CENTER
       }),
       children: e => (0, r.jsx)(h.P3F, em(eg({}, e), {
         className: o()(ep.gameWrapper, ep.clickableGameWrapper, {
@@ -302,10 +302,10 @@ class ey extends i.PureComponent {
       } = this.props;
       a()(null != t, "Channel is null during navigation click"), a()(null != n, "Activity null during navigation click"), g.Z.channelListScrollTo(null != (e = t.guild_id) ? e : ec.ME, t.id), !(0, _.R)({
         isContextless: n.location.kind === c.E.CONTEXTLESS
-      }) && ((0, F.vd)(t.type) && f.Z.selectParticipant(t.id, (0, E.gN)({
+      }) && ((0, H.vd)(t.type) && f.Z.selectParticipant(t.id, (0, E.gN)({
         applicationId: n.applicationId,
         instanceId: n.compositeInstanceId
-      })), (0, F.Qm)(t.type) && (0, v.tg)(eu.Ez.PANEL))
+      })), (0, H.Qm)(t.type) && (0, v.tg)(eu.Ez.PANEL))
     })
   }
 }
@@ -349,7 +349,7 @@ let e_ = (0, b.Z)(function(e) {
     M = null != g && g.ownerId === o && g.state !== ec.jm8.ENDED,
     G = (0, u.e7)([et.default, $.Z], () => null != p ? (0, I.F6)(p, et.default, $.Z) : void 0),
     V = (0, B.Z)(),
-    [H, F] = i.useState(!1),
+    [F, H] = i.useState(!1),
     {
       showsActivityPopoutQuickRefocusNUX: el,
       markActivityPopoutQuickRefocusNUXAsDismissed: eo
@@ -385,8 +385,8 @@ let e_ = (0, b.Z)(function(e) {
     channelName: G,
     guildForConnectedChannel: f,
     streamQualityIndicator: V,
-    isForceShowSharingPopout: H,
-    setIsForceShowSharingPopout: F,
+    isForceShowSharingPopout: F,
+    setIsForceShowSharingPopout: H,
     showsActivityPopoutQuickRefocusNUX: el,
     markActivityPopoutQuickRefocusNUXAsDismissed: eo
   }))

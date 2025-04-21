@@ -167,7 +167,7 @@ function I(e) {
     onCtxMenuClose: M,
     onCtxMenuOpen: L,
     onCtxMenuSelect: Z
-  } = e, W = (0, j.q8)(m), V = o.useMemo(() => (0, y.fh)(m, y.eC.HERO), [m]), Q = (0, p.ZP)(), U = ((0, c.wj)(Q) ? N.BRd.DARK : N.BRd.LIGHT) === N.BRd.DARK, H = o.useContext(l.S).reducedMotion.enabled, F = (0, h.tP)(m), z = (null == (t = m.userStatus) ? void 0 : t.claimedAt) != null, X = o.useRef(C), K = o.useRef(null), Y = (0, h.B6)(m.config.expiresAt, {
+  } = e, W = (0, j.q8)(m), V = o.useMemo(() => (0, y.fh)(m, y.eC.HERO), [m]), Q = (0, p.ZP)(), U = ((0, c.wj)(Q) ? N.BRd.DARK : N.BRd.LIGHT) === N.BRd.DARK, H = o.useContext(l.S).reducedMotion.enabled, z = (0, h.tP)(m), F = (null == (t = m.userStatus) ? void 0 : t.claimedAt) != null, X = o.useRef(C), K = o.useRef(null), Y = (0, h.B6)(m.config.expiresAt, {
     month: "numeric",
     day: "numeric"
   }), G = (null == (n = m.userStatus) ? void 0 : n.enrolledAt) != null, J = (null == (s = m.userStatus) ? void 0 : s.completedAt) != null, $ = (0, v.h)(m, E.dr.QUEST_HOME_DESKTOP), ee = o.useCallback(() => {
@@ -280,7 +280,7 @@ function I(e) {
             children: A.intl.format(A.t.buEvBw, {
               brandName: null != (u = null == (i = m.config.cosponsorMetadata) ? void 0 : i.name) ? u : m.config.messages.gamePublisher
             })
-          }), F || z ? null : (0, r.jsx)(d.Text, {
+          }), z || F ? null : (0, r.jsx)(d.Text, {
             variant: "text-sm/medium",
             color: U ? "text-muted" : "always-white",
             children: A.intl.format(A.t["7D8r4O"], {

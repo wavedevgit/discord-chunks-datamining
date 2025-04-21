@@ -141,7 +141,7 @@ function H(e) {
   })
 }
 
-function F(e) {
+function z(e) {
   let {
     quest: t,
     taskDetails: n
@@ -168,7 +168,7 @@ function F(e) {
   })
 }
 
-function z(e) {
+function F(e) {
   return (0, r.jsx)(u.Text, {
     className: W.description,
     variant: "text-xs/normal",
@@ -222,10 +222,10 @@ function X(e) {
             children: Z.intl.format(Z.t.EQa7oq, {
               questName: t.config.messages.questName
             })
-          }), O ? (0, r.jsx)(F, {
+          }), O ? (0, r.jsx)(z, {
             quest: t,
             taskDetails: n
-          }) : (0, r.jsx)(z, {
+          }) : (0, r.jsx)(F, {
             quest: t,
             taskDetails: n
           })]
@@ -319,7 +319,7 @@ function K(e) {
     onCtxMenuOpen: x,
     onCtxMenuClose: j,
     onCtxMenuSelect: y
-  } = e, _ = (null == (t = n.userStatus) ? void 0 : t.completedAt) != null, C = s.percentComplete > 0, O = (0, g.z)(n), [w, S, P] = (0, g.me)(n, s), H = o.useRef(null), F = (0, g.B6)(n.config.expiresAt), z = (0, g._s)({
+  } = e, _ = (null == (t = n.userStatus) ? void 0 : t.completedAt) != null, C = s.percentComplete > 0, O = (0, g.z)(n), [w, S, P] = (0, g.me)(n, s), H = o.useRef(null), z = (0, g.B6)(n.config.expiresAt), F = (0, g._s)({
     quest: n
   }), X = (0, b.q8)(n), K = (0, g.Jf)(n), Y = o.useCallback(() => {
     (0, T.openVideoQuestModal)(n)
@@ -345,7 +345,7 @@ function K(e) {
           variant: "text-xxs/medium",
           className: a()(W.flex, W.headerText),
           children: Z.intl.format(Z.t["pX+fmp"], {
-            expirationDate: F
+            expirationDate: z
           })
         }), (0, r.jsx)(E.r, {
           onOpen: x,
@@ -404,7 +404,7 @@ function K(e) {
           quest: n,
           useReducedMotion: m,
           isExpanded: p,
-          awaitingConsoleConnections: z,
+          awaitingConsoleConnections: F,
           hasMadeProgress: C,
           isProgressing: O,
           activeScreen: w,

@@ -120,8 +120,8 @@ let A = (0, C.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
         },
         config: k
       }), "respect-motion-settings", [M, C, B, G]),
-      H = t.premiumTier < L && M >= I.oCV[L],
-      F = () => {
+      F = t.premiumTier < L && M >= I.oCV[L],
+      H = () => {
         (0, f.yw)(I.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
           location: {
             section: I.jXE.PREMIUM_GUILD_PROGRESS_BAR
@@ -153,7 +153,7 @@ let A = (0, C.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
     let Y = (0, a.JA)("boosts-".concat(t.id));
     return (0, r.jsx)("li", {
       children: (0, r.jsx)(d.ua7, {
-        text: H ? P.intl.formatToPlainString(w.default["9CtPjo"], {
+        text: F ? P.intl.formatToPlainString(w.default["9CtPjo"], {
           perk: (0, v.nW)(L)
         }) : D ? P.intl.string(P.t["Y+V9go"]) : P.intl.formatToPlainString(P.t.UyDKl5, {
           levelName: (0, v.nW)(L)
@@ -171,7 +171,7 @@ let A = (0, C.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
               right: 4
             }
           },
-          onClick: F,
+          onClick: H,
           className: o()(N.container, {
             [N.containerWithMargin]: n
           }),

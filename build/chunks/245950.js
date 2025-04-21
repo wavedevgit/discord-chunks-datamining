@@ -29,7 +29,7 @@ function p(e) {
   let _ = null == n ? void 0 : function(e) {
     let {
       subscription: t
-    } = e, n = s()(t.currentPeriodEnd).format("M/D/YY"), i = null != t.price ? (0, o.T4)(t.price, t.currency) : "", r = s()(t.createdAt).format("M/D/YY"), l = t.status === m.O0b.CANCELED, a = t.status === m.O0b.PAST_DUE, c = null != t.trialId;
+    } = e, n = s()(t.currentPeriodEnd).format("M/D/YY"), i = null != t.price ? (0, o.T4)(t.price, t.currency) : "", r = s()(t.createdAt).format("M/D/YY"), l = t.status === m.O0b.CANCELED, a = t.status === m.O0b.PAST_DUE, c = t.hasActiveTrial;
     return {
       memberSince: r,
       nextRenewalDate: n,

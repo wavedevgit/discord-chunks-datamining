@@ -51,7 +51,7 @@ let L = (e, t, n, a) => {
     }).map(e => e.subscription_plans[0].id),
     H = (0, I.V)(z),
     G = null != H,
-    Y = (null == z ? void 0 : z.trialId) != null,
+    Y = !!(null == z ? void 0 : z.hasActiveTrial),
     {
       loading: q,
       getTrialPurchaseEligibility: X

@@ -1,16 +1,17 @@
 /** Chunk was on web.js **/
 "use strict";
 n.r(t), n.d(t, {
-  loadVideoQuestModal: () => Z,
-  maybeShowSurveyForQuest: () => V,
-  navigateToQuestHome: () => F,
-  openAppWithQuest: () => W,
-  openDisclosureModal: () => B,
+  loadVideoQuestModal: () => H,
+  maybeShowSurveyForQuest: () => Z,
+  navigateToQuestHome: () => V,
+  openAppWithQuest: () => K,
+  openDisclosureModal: () => F,
   openQuestInGameRewardModal: () => U,
+  openQuestMinorEnrollmentBlockModal: () => B,
   openQuestOrbsRewardModal: () => G,
   openQuestsNitroRewardModal: () => j,
   openQuestsRewardCodeModal: () => k,
-  openVideoQuestModal: () => H
+  openVideoQuestModal: () => Y
 });
 var r = n(200651);
 n(192379);
@@ -145,7 +146,18 @@ function G(e, t) {
   })
 }
 
-function B(e, t) {
+function B(e) {
+  (0, s.ZDy)(async () => {
+    let {
+      default: t
+    } = await n.e("58641").then(n.bind(n, 828664));
+    return n => (0, r.jsx)(t, L(w({}, n), {
+      location: e
+    }))
+  })
+}
+
+function F(e, t) {
   (0, g._3)({
     questId: e.id,
     questContent: t.content,
@@ -163,7 +175,7 @@ function B(e, t) {
   })
 }
 
-function F() {
+function V() {
   let {
     fromContent: e,
     questId: t
@@ -180,7 +192,7 @@ function F() {
   }), (0, u.uL)(C.Z5c.QUEST_HOME + n)
 }
 
-function V(e) {
+function Z(e) {
   let t = (0, I.T)({
       quest: e
     }),
@@ -197,17 +209,17 @@ function V(e) {
   })
 }
 
-function Z() {
+function H() {
   return Promise.all([n.e("66816"), n.e("27458"), n.e("32249"), n.e("60333")]).then(n.bind(n, 536687))
 }
 
-function H(e) {
+function Y(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     n = (0, i.Z)();
   (0, s.ZDy)(async () => {
     let {
       default: i
-    } = await Z();
+    } = await H();
     return a => (0, r.jsx)(i, L(w({}, a), {
       openStartClockTime: performance.now(),
       questId: e.id,
@@ -245,7 +257,7 @@ function H(e) {
   })
 }
 
-function Y(e) {
+function W(e) {
   var t;
   let n = null == (t = platform.os) ? void 0 : t.family,
     r = "quest";
@@ -262,8 +274,8 @@ function Y(e) {
   return "discord://"
 }
 
-function W(e) {
-  let t = Y(e),
+function K(e) {
+  let t = W(e),
     n = (0, a.zS)(t);
   null != n && h.default.track(C.rMx.DEEP_LINK_CLICKED, {
     fingerprint: (0, o.K)(n.fingerprint),

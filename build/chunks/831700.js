@@ -42,8 +42,8 @@ var r = n(200651),
   G = n(979651),
   B = n(934415),
   V = n(63063),
-  H = n(98597),
-  F = n(648501),
+  F = n(98597),
+  H = n(648501),
   z = n(473403),
   W = n(830993),
   Y = n(653577),
@@ -87,7 +87,7 @@ function et(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class en extends H.ZP {
+class en extends F.ZP {
   componentWillUnmount() {
     this.activitiesHideTimeout.stop()
   }
@@ -481,7 +481,7 @@ function ei(e) {
   }), p = (0, s.e7)([G.Z], () => G.Z.hasVideo(n.id)), g = (0, f.ZP)(n), m = (0, y.ZP)(n), b = (0, S.qY)(n.id), {
     isSubscriptionGated: _,
     needSubscriptionToAccess: O
-  } = (0, x.Z)(n.id), C = (0, v.Z)(), j = (0, s.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), E = e.connected || (null == C ? void 0 : C.channelId) === n.id, I = (0, F.Z)({
+  } = (0, x.Z)(n.id), C = (0, v.Z)(), j = (0, s.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), E = e.connected || (null == C ? void 0 : C.channelId) === n.id, I = (0, H.Z)({
     channel: n,
     isChannelSelected: o,
     isChannelCollapsed: a,

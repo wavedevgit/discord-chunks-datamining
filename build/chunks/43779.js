@@ -74,8 +74,8 @@ function w(e) {
     }), w)
   }), Q = (null == (n = P.userStatus) ? void 0 : n.completedAt) != null, U = (null == (s = P.userStatus) ? void 0 : s.claimedAt) != null, {
     completedRatio: H,
-    completedRatioDisplay: F
-  } = (0, p.I)(P), z = (0, p.Bd)(P), X = o.useCallback(e => (0, r.jsx)(c.Text, {
+    completedRatioDisplay: z
+  } = (0, p.I)(P), F = (0, p.Bd)(P), X = o.useCallback(e => (0, r.jsx)(c.Text, {
     variant: "text-md/semibold",
     color: "text-normal",
     tag: "span",
@@ -84,13 +84,13 @@ function w(e) {
   }, "".concat(P.id, "_reward")), [P.id]), K = o.useMemo(() => U ? X(q) : _.intl.format(_.t["0IUT4e"], {
     rewardWithArticleHook: () => X(I)
   }), [q, U, X, I]), Y = o.useMemo(() => {
-    if (null != z) return (0, r.jsx)(c.Text, {
+    if (null != F) return (0, r.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
       className: C.description,
-      children: z
+      children: F
     })
-  }, [z]), G = (0, l.e7)([u.Z], () => u.Z.useReducedMotion);
+  }, [F]), G = (0, l.e7)([u.Z], () => u.Z.useReducedMotion);
   return (0, r.jsxs)("div", {
     className: C.container,
     children: [(0, r.jsxs)(i.animated.div, {
@@ -114,7 +114,7 @@ function w(e) {
             quest: P,
             size: 76,
             percentComplete: H,
-            percentCompleteText: T && !(0, m.zi)(P) ? F : void 0,
+            percentCompleteText: T && !(0, m.zi)(P) ? z : void 0,
             children: (0, r.jsx)("div", {
               className: C.circularRewardTileWrapper,
               children: (0, r.jsx)(h.Z, {

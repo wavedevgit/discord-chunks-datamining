@@ -1,4 +1,4 @@
-/** Chunk was on 75862 **/
+/** Chunk was on 81489 **/
 n.d(t, {
   Z: () => a
 }), n(539854);
@@ -43,6 +43,6 @@ function a(e) {
       outlineColor: y
     } = (0, r.bg)(t.userId, u, c, s),
     O = S(y, 6 + i.q2),
-    I = null != O && h(O);
-  I && (0, l.I)(n, O.x, O.y, y, i.q2), S(b, 6), I && (0, l.T)(n, O.x, O.y, t.userId)
+    Z = null != O && h(O);
+  Z && (0, l.I)(n, O.x, O.y, y, i.q2), S(b, 6), Z && (0, l.T)(n, O.x, O.y, t.userId)
 }

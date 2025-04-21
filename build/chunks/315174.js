@@ -321,15 +321,15 @@ let A = i.memo(function(e) {
     headerClassName: N,
     communityInfoVisible: A,
     hasSubheader: D
-  } = e, L = v.hasFeature(O.oNc.ANIMATED_BANNER), k = (0, h.Z)(v), M = !k && v.hasCommunityInfoSubheader(), U = !k && A, G = (0, y.xR)(C) && L && !g, [B, V] = i.useState(!1), H = i.useRef(!1), F = i.useRef(null), z = i.useRef(void 0), W = m.QK.getSetting();
+  } = e, L = v.hasFeature(O.oNc.ANIMATED_BANNER), k = (0, h.Z)(v), M = !k && v.hasCommunityInfoSubheader(), U = !k && A, G = (0, y.xR)(C) && L && !g, [B, V] = i.useState(!1), F = i.useRef(!1), H = i.useRef(null), z = i.useRef(void 0), W = m.QK.getSetting();
   i.useEffect(() => {
-    if (G && t && !H.current && W) return V(!0), z.current = setTimeout(() => {
+    if (G && t && !F.current && W) return V(!0), z.current = setTimeout(() => {
       V(!1)
     }, 5e3), () => {
       clearTimeout(z.current)
     }
   }, [G, t, W]), i.useEffect(() => {
-    H.current = t
+    F.current = t
   }, [t]);
   let Y = () => {
       let {
@@ -351,13 +351,13 @@ let A = i.memo(function(e) {
       onContextMenu: c,
       ariaControls: _,
       ariaExpanded: b,
-      guildHeaderRef: F
+      guildHeaderRef: H
     };
   return (0, r.jsx)(u.f6W, {
     theme: t ? O.BRd.DARK : void 0,
     children: e => (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        ref: F,
+        ref: H,
         className: o()(l, {
           [j.container]: !0,
           [j.clickable]: !q && null != s,

@@ -89,12 +89,12 @@ function R(e) {
   }), k = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), q = (0, l.e7)([p.Z], () => p.Z.hasLayers()), D = o.useRef(null), I = o.useMemo(() => (0, x.q8)(s), [s]), M = (null == (t = s.userStatus) ? void 0 : t.enrolledAt) != null, L = (0, d.Z)(M), Z = (null == (n = s.userStatus) ? void 0 : n.completedAt) != null, W = (0, d.Z)(Z), {
     hasError: V,
     isLoading: Q
-  } = (0, v.d7)(), U = o.useContext(w.T) || R && B && !Q, H = o.useRef(U), F = (0, O.B)(s, U && !V), z = o.useRef(-1), X = o.useRef(!1), [K, Y] = o.useState(!1), [G, J] = o.useState(!1), [$, ee] = o.useState(!0), [et, en] = o.useState(!0), [er, eo] = o.useState(F.preEnrollmentExpandedHeight), es = o.useRef(null), ea = o.useCallback(e => {
+  } = (0, v.d7)(), U = o.useContext(w.T) || R && B && !Q, H = o.useRef(U), z = (0, O.B)(s, U && !V), F = o.useRef(-1), X = o.useRef(!1), [K, Y] = o.useState(!1), [G, J] = o.useState(!1), [$, ee] = o.useState(!0), [et, en] = o.useState(!0), [er, eo] = o.useState(z.preEnrollmentExpandedHeight), es = o.useRef(null), ea = o.useCallback(e => {
     ee(!1), J(e)
   }, []), ei = o.useCallback(() => {
     var e, t;
-    eo((null != (t = null == (e = es.current) ? void 0 : e.offsetHeight) ? t : 84) + 2 * F.paddingVertical)
-  }, [F.paddingVertical]), el = o.useCallback(() => {
+    eo((null != (t = null == (e = es.current) ? void 0 : e.offsetHeight) ? t : 84) + 2 * z.paddingVertical)
+  }, [z.paddingVertical]), el = o.useCallback(() => {
     ei(), ea(!0)
   }, [ei, ea]), ec = o.useCallback(() => {
     Y(!0)
@@ -108,12 +108,12 @@ function R(e) {
     let {
       withDelay: t = !1
     } = e;
-    t ? z.current = window.setTimeout(el, 75) : el()
+    t ? F.current = window.setTimeout(el, 75) : el()
   }, [el, G]), em = o.useCallback(() => {
     ep()
   }, [ep]), ef = o.useCallback(() => {
-    window.clearTimeout(z.current), F.canCollapseOnBlur && !K && (X.current || ea(!1))
-  }, [K, F, ea]), eg = o.useCallback(() => {
+    window.clearTimeout(F.current), z.canCollapseOnBlur && !K && (X.current || ea(!1))
+  }, [K, z, ea]), eg = o.useCallback(() => {
     var e;
     (0, m.dA)({
       questId: s.id,
@@ -136,8 +136,8 @@ function R(e) {
     }), X.current = !1, ef()
   }, [ef, s]);
   o.useLayoutEffect(() => {
-    Z && F.shouldExpandOnQuestComplete && el()
-  }, [el, Z, F.shouldExpandOnQuestComplete]), o.useLayoutEffect(() => {
+    Z && z.shouldExpandOnQuestComplete && el()
+  }, [el, Z, z.shouldExpandOnQuestComplete]), o.useLayoutEffect(() => {
     M && !L && X.current && el()
   }, [el, M, L]), o.useLayoutEffect(() => {
     Z || !M || L || X.current || ea(!1)
@@ -189,8 +189,8 @@ function R(e) {
   return (o.useEffect(() => {
     I && (0, _.loadVideoQuestModal)()
   }, [I]), o.useLayoutEffect(() => {
-    Z && !W && F.canCollapseOnBlur && ei()
-  }, [Z, el, F.canCollapseOnBlur, ei, W]), o.useEffect(() => {
+    Z && !W && z.canCollapseOnBlur && ei()
+  }, [Z, el, z.canCollapseOnBlur, ei, W]), o.useEffect(() => {
     var e, t;
     V && (0, m.dA)({
       questId: s.id,
@@ -209,10 +209,10 @@ function R(e) {
     })
   }, [V, R, s.id]), R && (U || !et || Q) && !V) ? (0, r.jsx)(j.A, {
     questOrQuests: s,
-    questContent: F.trackingCtx.content,
+    questContent: z.trackingCtx.content,
     overrideVisibility: !q && U,
     children: (e, t) => {
-      let n = F.component;
+      let n = z.component;
       return D.current = t.current, (0, r.jsxs)("div", {
         className: E.mask,
         children: [U && (0, r.jsx)(A, {
@@ -232,7 +232,7 @@ function R(e) {
             color: s.config.colors.secondary,
             height: ev.to({
               range: [0, 1],
-              output: [0, !F.canCollapseOnBlur && G ? er : 70]
+              output: [0, !z.canCollapseOnBlur && G ? er : 70]
             })
           },
           children: (0, r.jsx)(i.animated.div, {
@@ -241,8 +241,8 @@ function R(e) {
               [E.contentWrapperAccepted]: M
             }),
             style: {
-              backgroundColor: F.preEnrollmentBackgroundColor,
-              backgroundImage: M ? F.postEnrollmentBackgroundImage : void 0
+              backgroundColor: z.preEnrollmentBackgroundColor,
+              backgroundImage: M ? z.postEnrollmentBackgroundImage : void 0
             },
             children: (0, r.jsx)(C.t, {
               springConfig: eh,

@@ -65,9 +65,9 @@ function D(e) {
     className: A.downloadProgress,
     determineOwnVisibility: !1
   }));
-  let H = p || v || O,
-    F = (0, r.jsx)(a.aRk, {
-      selected: U || H,
+  let F = p || v || O,
+    H = (0, r.jsx)(a.aRk, {
+      selected: U || F,
       lowerBadge: b > 0 ? (0, P.Ne)(b) : null,
       upperBadge: V,
       lowerBadgeSize: {
@@ -102,7 +102,7 @@ function D(e) {
             }, 1e3)
           }
         },
-        selected: H,
+        selected: F,
         ariaLabel: T.intl.string(T.t.YUU0RE),
         "aria-owns": "guild-list-unread-dms",
         "aria-selected": p
@@ -145,7 +145,7 @@ function D(e) {
           hideOnClick: !0,
           text: B,
           selected: p,
-          children: F
+          children: H
         })]
       })
     })

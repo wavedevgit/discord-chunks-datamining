@@ -1,4 +1,4 @@
-/** Chunk was on 75862 **/
+/** Chunk was on 81489 **/
 n.d(t, {
   U: () => E,
   Z: () => h
@@ -46,15 +46,15 @@ function h(e) {
     fallbackColor: b,
     outlineColorDark: y,
     outlineColorLight: O,
-    streamerId: I,
-    deadDrawables: Z
+    streamerId: Z,
+    deadDrawables: j
   } = e;
   h.save();
-  let _ = u.Z.getEmojiImage(null != (n = null != (t = a.emojiId) ? t : a.emojiName) ? n : ""),
-    j = (0, d.np)(a.x, v),
-    x = (0, d.np)(a.y, S),
+  let I = u.Z.getEmojiImage(null != (n = null != (t = a.emojiId) ? t : a.emojiName) ? n : ""),
+    _ = (0, d.np)(a.x, v),
+    P = (0, d.np)(a.y, S),
     {
-      outlineColor: P
+      outlineColor: x
     } = (0, d.bg)(a.userId, y, O, b);
   g(a, e => {
       e.x += e.xSpeed * window.devicePixelRatio, e.y += e.ySpeed * window.devicePixelRatio, e.opacity -= e.opacitySpeed, e.opacity <= 0 && (0, o.j)(() => {
@@ -86,11 +86,11 @@ function h(e) {
           return r.particles[e.id] = o, r.lastSpawned[e.id] = Date.now(), r
         })
       })
-    }(a, j, x), (0, f.I)(h, j, x, P, m.q2), (0, f.T)(h, j, x, a.userId), g(a, e => (function(e, t, n) {
+    }(a, _, P), (0, f.I)(h, _, P, x, m.q2), (0, f.T)(h, _, P, a.userId), g(a, e => (function(e, t, n) {
       if (null == t) return;
       let r = n.size * window.devicePixelRatio,
         l = n.x - r / 2 * window.devicePixelRatio,
         i = n.y - 1.2 * r * window.devicePixelRatio;
       e.globalAlpha = n.opacity, e.drawImage(t, r / 2 + l, r / 2 + i, r, r)
-    })(h, _, e)), a.lastUpdatedAt + m.FO < Date.now() && (0, s.ZZ)(I, a), a.state !== c.f.STOP || Object.keys(null != (r = E.getState().particles[a.id]) ? r : {}).length > 0 || Z.push(a), h.restore()
+    })(h, I, e)), a.lastUpdatedAt + m.FO < Date.now() && (0, s.ZZ)(Z, a), a.state !== c.f.STOP || Object.keys(null != (r = E.getState().particles[a.id]) ? r : {}).length > 0 || j.push(a), h.restore()
 }

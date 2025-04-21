@@ -97,8 +97,8 @@ let Z = o.forwardRef(function(e, t) {
     isExpanded: Q,
     isExpansionAnimationComplete: U,
     onCtxMenuOpen: H,
-    onCtxMenuClose: F,
-    onCtxMenuSelect: z,
+    onCtxMenuClose: z,
+    onCtxMenuSelect: F,
     quest: X,
     useReducedMotion: K
   } = e, Y = (0, l.e7)([j.Z], () => j.Z.isEnrolling(X.id), [X]), G = (0, x.aM)(), J = (0, b.B6)(X.config.expiresAt), $ = w.r.build(X.config), ee = (0, b.B6)($.rewardsExpireAt), et = o.useMemo(() => (0, O.fh)(X, O.eC.HERO), [X]), en = (0, A.tP)($.application.id), er = $.features.has(R.S7.START_QUEST_CTA) ? g.jZ.START_QUEST : g.jZ.ACCEPT_QUEST, eo = $.features.has(R.S7.START_QUEST_CTA) ? q.intl.string(q.t.E80Bdn) : q.intl.string(q.t.l7E81t), es = o.useCallback(() => {
@@ -183,8 +183,8 @@ let Z = o.forwardRef(function(e, t) {
             })]
           }), (0, r.jsx)(N.r, {
             onOpen: H,
-            onClose: F,
-            onSelect: z,
+            onClose: z,
+            onSelect: F,
             questContent: v.jn.QUEST_BAR,
             quest: X,
             shouldShowDisclosure: !1,
@@ -227,8 +227,8 @@ let Z = o.forwardRef(function(e, t) {
               color: "always-white"
             }), (0, r.jsx)(N.r, {
               onOpen: H,
-              onClose: F,
-              onSelect: z,
+              onClose: z,
+              onSelect: F,
               questContent: v.jn.QUEST_BAR,
               quest: X,
               shouldShowDisclosure: !0,
