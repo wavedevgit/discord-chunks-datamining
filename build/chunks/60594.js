@@ -128,9 +128,7 @@ function ef(e) {
     soundshareEnabled: ej
   } = (0, m.cj)([R.Z], () => R.Z.getState()), ev = l.useRef(Date.now()), eb = (0, m.e7)([L.Z, k.Z], () => k.Z.getChannel(L.Z.getVoiceChannelId())), eS = (0, m.e7)([N.ZP, G.Z], () => (0, z.isWindows)() ? (0, X.Z)(N.ZP, G.Z) : null), eC = (0, m.e7)([b.ZP], () => b.ZP.getCurrentEmbeddedActivity()), ey = (null == eC ? void 0 : eC.location.kind) === f.E.CONTEXTLESS, eZ = (0, y.q)(null == eC ? void 0 : eC.applicationId), [eI, ew] = l.useState(null);
   l.useEffect(() => {
-    (0, v.R)({
-      isContextless: ey
-    }) && (async () => {
+    (0, v.R)() && (async () => {
       var e;
       ew(await (null === j.Z || void 0 === j.Z || null == (e = j.Z.window) ? void 0 : e.getMediaSourceId("DISCORD_ACTIVITY_POPOUT")))
     })()

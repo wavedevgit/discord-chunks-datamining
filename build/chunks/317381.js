@@ -290,9 +290,7 @@ function ec(e) {
     participants: u,
     embeddedActivity: L,
     inviterUserId: T
-  }), (0, E.R)({
-    isContextless: c.kind === a.E.CONTEXTLESS
-  }) ? (J = A.Ez.ACTIVITY_POPOUT_WINDOW, s.Z.wait(() => {
+  }), (0, E.R)() ? (J = A.Ez.ACTIVITY_POPOUT_WINDOW, s.Z.wait(() => {
     s.Z.dispatch({
       type: "ACTIVITY_POPOUT_WINDOW_OPEN"
     })
@@ -479,8 +477,9 @@ function eN(e) {
     channelId: t
   } = e;
   if (null == r) return;
-  let n = (0, O.pY)(r);
-  null != n && n !== t && J === A.Ez.PANEL && (J = A.Ez.PIP)
+  let n = r.kind === a.E.CONTEXTLESS,
+    i = (0, O.pY)(r);
+  (n || null != i) && i !== t && J === A.Ez.PANEL && (J = A.Ez.PIP)
 }
 
 function eC(e, t) {

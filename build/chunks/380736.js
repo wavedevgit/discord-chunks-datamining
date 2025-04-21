@@ -39,12 +39,12 @@ let O = r.memo(function(e) {
     body: P,
     title: k,
     renderFooter: E,
-    contentOpacity: S,
-    status: Z,
+    contentOpacity: Z,
+    status: S,
     containerRef: z,
     className: N,
     wrapperClassName: T
-  } = e, [D, M] = r.useState(!1), R = n || D || Z === f._1z.FOCUSED, L = (0, c.e7)([m.ZP], () => m.ZP.isInputLocked((0, d.getPID)()));
+  } = e, [D, M] = r.useState(!1), R = n || D || S === f._1z.FOCUSED, L = (0, c.e7)([m.ZP], () => m.ZP.isInputLocked((0, d.getPID)()));
   r.useEffect(() => {
     null == o || o()
   }, [o]);
@@ -82,7 +82,7 @@ let O = r.memo(function(e) {
             children: [(0, i.jsxs)(s.animated.div, {
               className: g.iconAndDetails,
               style: {
-                opacity: S
+                opacity: Z
               },
               children: [null == w ? null : "string" == typeof w ? (0, i.jsx)(a.qEK, {
                 src: w,
@@ -215,9 +215,9 @@ function j(e) {
     null == f || f(e, d)
   }, [f, d]), E = r.useCallback(e => {
     null == v || v(e, d)
-  }, [v, d]), S = r.useCallback((e, t) => null == g ? void 0 : g(e, d, t), [g, d]), {
+  }, [v, d]), Z = r.useCallback((e, t) => null == g ? void 0 : g(e, d, t), [g, d]), {
     props: {
-      onNotificationShow: Z,
+      onNotificationShow: S,
       onDismissClick: z,
       renderFooter: N,
       onNotificationClick: T,
@@ -278,7 +278,7 @@ function j(e) {
         onNotificationClick: null != m ? P : void 0,
         onConfirmClick: null != f ? k : void 0,
         onCancelClick: null != v ? E : void 0,
-        renderFooter: S,
+        renderFooter: Z,
         expand: !1,
         index: l,
         locked: s,
