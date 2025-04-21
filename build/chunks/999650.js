@@ -4,7 +4,8 @@ n.d(t, {
   Pe: () => et,
   Pr: () => Y,
   Qe: () => J,
-  ZP: () => er,
+  ZP: () => ei,
+  co: () => er,
   nB: () => en
 }), n(388685), n(413496), n(433524), n(35282), n(781311), n(704826), n(290780);
 var r = n(658722),
@@ -447,4 +448,10 @@ function en(e) {
     return i()(e.toLowerCase(), n)
   }).take(t).value()
 }
-let er = ee
+
+function er(e) {
+  if (0 === e.length) return !1;
+  let t = e.toLowerCase().replace(/^@/, "");
+  return y.intl.string(y.t.Qf3ptr).startsWith(t) || b.ME.substring(1).startsWith(t)
+}
+let ei = ee
