@@ -28,40 +28,41 @@ function p(e) {
     className: E,
     isTryItOut: b,
     onOpenProfile: y,
-    nicknameVariant: v = "heading-lg/bold",
-    pronounsVariant: O = "text-sm/medium"
-  } = e, I = {
+    onClose: v,
+    nicknameVariant: O = "heading-lg/bold",
+    pronounsVariant: I = "text-sm/medium"
+  } = e, S = {
     [_.biteSize]: n === d.y0.BITE_SIZE,
     [_.fullSize]: n === d.y0.FULL_SIZE,
     [_.panel]: n === d.y0.PANEL
-  }, S = e => null == y ? e : (0, r.jsx)(o.P3F, {
+  }, T = e => null == y ? e : (0, r.jsx)(o.P3F, {
     onClick: y,
     className: _.clickableUsername,
     children: e
-  }), T = null != g && g.length > 0, A = (0, l.D)(t);
+  }), A = null != g && g.length > 0, N = (0, l.D)(t);
   return (0, r.jsxs)("div", {
     className: a()(_.container, {
-      [_.bot]: null != A
+      [_.bot]: null != N
     }, E),
     children: [(0, r.jsxs)("div", {
       className: _.usernameRow,
-      children: [S((0, r.jsx)(o.X6q, {
-        className: a()(_.nickname, I),
-        variant: v,
+      children: [T((0, r.jsx)(o.X6q, {
+        className: a()(_.nickname, S),
+        variant: O,
         children: h
-      })), null != A && (0, r.jsx)(c.Z, {
-        type: A,
+      })), null != N && (0, r.jsx)(c.Z, {
+        type: N,
         verified: t.isVerifiedBot()
       }), null != m && (0, r.jsx)("div", {
-        className: a()(_.nicknameIcons, I),
+        className: a()(_.nicknameIcons, S),
         children: m
       })]
     }), (0, r.jsxs)("div", {
-      className: a()(_.tags, I, {
-        [_.pronouns]: T,
-        [_.bot]: null != A
+      className: a()(_.tags, S, {
+        [_.pronouns]: A,
+        [_.bot]: null != N
       }),
-      children: [!t.isProvisional && S((0, r.jsx)(s.Z, {
+      children: [!t.isProvisional && T((0, r.jsx)(s.Z, {
         user: t,
         usernameIcon: i,
         forceUsername: !0,
@@ -70,7 +71,7 @@ function p(e) {
         usernameClass: _.userTagUsername,
         discriminatorClass: _.userTagDiscriminator,
         hideBotTag: !0
-      })), T && (0, r.jsxs)(r.Fragment, {
+      })), A && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           "aria-hidden": "true",
           className: _.dotSpacer
@@ -79,7 +80,7 @@ function p(e) {
           text: f.intl.string(f.t.GI2A8P),
           delay: d.vB,
           children: (0, r.jsx)(o.Text, {
-            variant: O,
+            variant: I,
             className: _.pronounsText,
             color: "header-primary",
             children: g
@@ -88,7 +89,8 @@ function p(e) {
       }), (0, r.jsx)(u.ZP, {
         userId: t.id,
         containerClassName: _.clanTagContainer,
-        className: _.clanTag
+        className: _.clanTag,
+        onClose: v
       }), p]
     })]
   })

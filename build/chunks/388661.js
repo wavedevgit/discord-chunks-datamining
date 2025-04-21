@@ -12,8 +12,8 @@ var C = B(200651),
   I = B(63063),
   P = B(434404),
   e = B(999382),
-  r = B(981631),
-  t = B(817239),
+  t = B(981631),
+  r = B(817239),
   n = B(388032),
   d = B(602268);
 let o = function(A) {
@@ -30,7 +30,7 @@ let o = function(A) {
     className: g,
     children: [(0, C.jsx)(f.vwX, {
       className: d.sectionTitle,
-      children: n.intl.string(t.default["tN+8pK"])
+      children: n.intl.string(r.default["tN+8pK"])
     }), (0, C.jsxs)("div", {
       className: d.tagContainer,
       children: [(0, C.jsx)("div", {
@@ -61,15 +61,15 @@ let o = function(A) {
         children: (0, C.jsx)(f.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
-          children: n.intl.string(t.default.UbC8y8)
+          children: n.intl.string(r.default.UbC8y8)
         })
       })]
     }), c && (0, C.jsx)(v.Z, {
       className: d.tagChangeInfoBox,
       children: (0, C.jsx)(f.Text, {
         variant: "text-xs/medium",
-        children: n.intl.format(t.default["4ZKDXl"], {
-          articleUrl: I.Z.getArticleURL(r.BhN.SERVER_TAGS)
+        children: n.intl.format(r.default["4ZKDXl"], {
+          articleUrl: I.Z.getArticleURL(t.BhN.SERVER_TAGS)
         })
       })
     })]

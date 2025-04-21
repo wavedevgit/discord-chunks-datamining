@@ -12,8 +12,8 @@ var C = B(200651),
   I = B(229190),
   P = B(434404),
   e = B(254925),
-  r = B(116175),
-  t = B(817239),
+  t = B(116175),
+  r = B(817239),
   n = B(388032),
   d = B(602268);
 let o = function(A) {
@@ -33,7 +33,7 @@ let o = function(A) {
     className: g,
     children: [(0, C.jsx)(E.vwX, {
       className: d.sectionTitle,
-      children: n.intl.string(t.default.zSbMdX)
+      children: n.intl.string(r.default.zSbMdX)
     }), (0, C.jsxs)("div", {
       className: d.pickerGrid,
       children: [e.go.map(A => (0, C.jsx)(E.P3F, {
@@ -49,7 +49,7 @@ let o = function(A) {
           secondaryTintColor: A.secondary
         })
       }, "".concat(A.primary).concat(A.secondary))), (0, C.jsx)(I.Z, {
-        showSecondaryColor: r.ME[w] >= 2,
+        showSecondaryColor: t.ME[w] >= 2,
         palette: {
           primary: o,
           secondary: s
