@@ -70,17 +70,17 @@ let I = {
       category: a,
       heroBlock: o,
       tab: _
-    } = e, x = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), L = (0, s.e7)([f.Z], () => f.Z.isFocused()), N = (0, s.e7)([p.default], () => p.default.getCurrentUser()), A = (0, k.u)(), R = l.useMemo(() => null != o ? o : T(a), [o, a]), {
-      isPreviewingStaticBanner: Z,
+    } = e, x = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), L = (0, s.e7)([f.Z], () => f.Z.isFocused()), N = (0, s.e7)([p.default], () => p.default.getCurrentUser()), A = (0, k.u)(), Z = l.useMemo(() => null != o ? o : T(a), [o, a]), {
+      isPreviewingStaticBanner: R,
       bannerOverrides: F,
       bannerStyleOverrides: H,
       heroLogo: D,
       heroBannerStatic: M,
       heroBannerAnimated: W
-    } = (0, y.hr)(R), V = null == F ? void 0 : F.heroBanner, U = l.useMemo(() => A(R.rankedSkuIds), [t, A, R.rankedSkuIds]), G = (0, C.a)()(U), z = (0, v.l)(G).slice(0, 4), q = (0, S.St)(z), Y = _ === P.AW.ORBS ? w.intl.string(w.t.hvVgAQ) : w.intl.formatToPlainString(w.t.wvKYCg, {
-      category_name: R.name
+    } = (0, y.hr)(Z), V = null == F ? void 0 : F.heroBanner, U = l.useMemo(() => A(Z.rankedSkuIds), [t, A, Z.rankedSkuIds]), G = (0, C.a)()(U), z = (0, v.l)(G).slice(0, 4), q = (0, S.St)(z), Y = _ === P.AW.ORBS ? w.intl.string(w.t.hvVgAQ) : w.intl.formatToPlainString(w.t.wvKYCg, {
+      category_name: Z.name
     });
-    return null != N && (t || R !== I) ? (0, r.jsxs)("div", {
+    return null != N && (t || Z !== I) ? (0, r.jsxs)("div", {
       className: i()(B.heroBlock, {
         [B.responsiveHero]: null == H ? void 0 : H.responsive
       }),
@@ -89,7 +89,7 @@ let I = {
         style: (null == H ? void 0 : H.backgroundStyle) != null ? {
           background: H.backgroundStyle
         } : void 0,
-        children: [null == W || x || !L || Z ? (0, r.jsx)("div", {
+        children: [null == W || x || !L || R ? (0, r.jsx)("div", {
           className: B.bannerImage,
           style: {
             backgroundImage: "url(".concat(M, ")")
@@ -124,28 +124,28 @@ let I = {
             className: B.heroHeaderBadgeLogoSummaryContainer
           }) : (0, r.jsxs)("div", {
             className: B.heroHeaderBadgeLogoSummaryContainer,
-            children: [null != R.unpublishedAt && (0, r.jsx)(c.IGR, {
+            children: [null != Z.unpublishedAt && (0, r.jsx)(c.IGR, {
               disableColor: !0,
               text: w.intl.string(w.t["h/uBCQ"]),
               className: B.limitedTimeBadge
             }), (0, r.jsxs)("div", {
               className: B.heroLogoNameContainer,
-              children: [null != R.logoUrl && (0, r.jsx)("img", {
+              children: [null != Z.logoUrl && (0, r.jsx)("img", {
                 className: B.heroHeaderLogo,
                 src: D,
-                alt: R.name
-              }), null != R.title && (0, r.jsx)(c.X6q, {
+                alt: Z.name
+              }), null != Z.title && (0, r.jsx)(c.X6q, {
                 variant: "heading-xxl/bold",
                 className: B.title,
                 color: "header-primary",
-                children: R.title
+                children: Z.title
               }), (0, r.jsx)(c.Text, {
                 variant: _ === P.AW.ORBS ? "text-lg/medium" : "text-md/normal",
                 className: _ === P.AW.ORBS ? B.orbsSubHeaderText : (null == F ? void 0 : F.showDarkBannerText) ? B.subHeaderTextDark : B.subHeaderText,
-                style: null != R.bannerTextColor ? {
-                  color: R.bannerTextColor
+                style: null != Z.bannerTextColor ? {
+                  color: Z.bannerTextColor
                 } : void 0,
-                children: R.summary
+                children: Z.summary
               })]
             })]
           }), !t && (0, r.jsx)("div", {
@@ -154,7 +154,7 @@ let I = {
               className: B.heroHeaderButton,
               color: c.Ttl.WHITE,
               onClick: () => {
-                _ === P.AW.ORBS ? (0, u.Z)(g.Z.getArticleURL(E.BhN.VIRTUAL_CURRENCY_LEARN_MORE)) : n("shop latest category hero", R.categorySkuId)
+                _ === P.AW.ORBS ? (0, u.Z)(g.Z.getArticleURL(E.BhN.VIRTUAL_CURRENCY_LEARN_MORE)) : n("shop latest category hero", Z.categorySkuId)
               },
               children: Y
             })

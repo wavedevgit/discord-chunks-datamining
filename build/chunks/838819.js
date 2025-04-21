@@ -36,8 +36,8 @@ var r = n(200651),
   L = n(223143),
   N = n(298228),
   A = n(309956),
-  R = n(193227),
-  Z = n(426171),
+  Z = n(193227),
+  R = n(426171),
   F = n(752053),
   H = n(963102),
   D = n(508498),
@@ -50,9 +50,9 @@ var r = n(200651),
   q = n(981631),
   Y = n(921944),
   $ = n(420212),
-  K = n(474936),
-  X = n(484920);
-let J = e => {
+  X = n(474936),
+  J = n(484920);
+let K = e => {
     let {
       isFullScreen: t,
       tab: n
@@ -128,14 +128,19 @@ let J = e => {
         claimError: ew,
         refreshCategories: eB
       } = (0, L.ZP)({
-        location: "CollectiblesShop.web"
+        location: "CollectiblesShop.web",
+        logPerf: !0
+      }, {
+        sessionId: er,
+        tab: a,
+        isFullScreen: n
       }),
       eI = null != (t = null != eP ? eP : eE) ? t : ew;
     (0, v.P)();
     let eT = (0, N.O)(eS),
       eL = l.useRef(null),
       [eN, eA] = l.useState(!1);
-    (0, Z.Kp)({
+    (0, R.Kp)({
       isFetchingCategories: ek,
       isLayer: ex,
       initialItemCardRef: eL
@@ -153,28 +158,28 @@ let J = e => {
       }
     }, [et, u, er, ef, eg, eh, eo, ei, ee, en]), l.useEffect(() => {
       null == ej || ey || y.default.track(q.rMx.PREMIUM_UPSELL_VIEWED, {
-        type: K.cd.COLLECTIBLES_SHOP,
+        type: X.cd.COLLECTIBLES_SHOP,
         location_stack: et
       })
     }, [ey, et, ej]);
     let {
-      dismissShopButtonDC: eR
+      dismissShopButtonDC: eZ
     } = (0, W.Z)();
     l.useEffect(() => {
-      eR(), (0, m.un)(c.z.COLLECTIBLES_GIFTING_COACHMARK) || (0, m.EW)(c.z.COLLECTIBLES_GIFTING_COACHMARK, {
+      eZ(), (0, m.un)(c.z.COLLECTIBLES_GIFTING_COACHMARK) || (0, m.EW)(c.z.COLLECTIBLES_GIFTING_COACHMARK, {
         dismissAction: Y.L.AUTO_DISMISS,
         forceTrack: !0
       })
-    }, [eR]), l.useEffect(() => {
+    }, [eZ]), l.useEffect(() => {
       n || (0, p.Y)(q.Z5c.COLLECTIBLES_SHOP)
     }, [n]);
-    let eZ = l.useCallback(() => {
+    let eR = l.useCallback(() => {
         eB()
       }, [eB]),
       {
         setCategoryRef: eF,
         handleScrollToCategory: eH
-      } = (0, Z.xV)(el.current),
+      } = (0, R.xV)(el.current),
       {
         reducedMotion: eD
       } = l.useContext(b.Sfi),
@@ -203,13 +208,13 @@ let J = e => {
         }
         eH(t)
       }
-    }, [eH, n, eD.enabled, es, eG, ez, eq, eV, eU]), e$ = (0, B.b)("Collectibles Shop Button"), eK = l.useMemo(() => {
+    }, [eH, n, eD.enabled, es, eG, ez, eq, eV, eU]), e$ = (0, B.b)("Collectibles Shop Button"), eX = l.useMemo(() => {
       if (!eG) return eT;
       let e = (eV - 1) * ez;
       return eT.slice(e, e + ez)
-    }, [eT, eG, ez, eV]), eX = l.useRef(null), eJ = l.useCallback(e => {
-      eU(e), null != el.current && null != eX.current ? el.current.scrollTo({
-        to: eX.current.getBoundingClientRect().top
+    }, [eT, eG, ez, eV]), eJ = l.useRef(null), eK = l.useCallback(e => {
+      eU(e), null != el.current && null != eJ.current ? el.current.scrollTo({
+        to: eJ.current.getBoundingClientRect().top
       }) : null != el.current && el.current.scrollTo({
         to: 0
       })
@@ -228,11 +233,11 @@ let J = e => {
           onClose: eO,
           shouldAddEventListener: n && !ex,
           children: [(0, r.jsx)("div", {
-            className: X.shop,
+            className: J.shop,
             ref: n ? eM : eW,
             tabIndex: -1,
             children: (0, r.jsx)(b.Den, {
-              className: X.shopScroll,
+              className: J.shopScroll,
               ref: el,
               onScroll: () => {
                 if (ea(), null != el.current) {
@@ -241,10 +246,10 @@ let J = e => {
                 }
               },
               children: (0, r.jsxs)("div", {
-                className: i()(X.shopViewWrapper, {
-                  [X.visible]: eo === z.f7.VISIBLE,
-                  [X.in]: eo === z.f7.IN,
-                  [X.out]: eo === z.f7.OUT
+                className: i()(J.shopViewWrapper, {
+                  [J.visible]: eo === z.f7.VISIBLE,
+                  [J.in]: eo === z.f7.IN,
+                  [J.out]: eo === z.f7.OUT
                 }),
                 children: [(0, r.jsx)(H.I, {
                   isFullScreen: n,
@@ -264,7 +269,7 @@ let J = e => {
                         includeUnpublished: eC.toString()
                       }
                     }), (0, r.jsx)(F.Z, {
-                      onRetry: eZ,
+                      onRetry: eR,
                       errorOrigin: F.i.SHOP_PAGE,
                       errorMessage: null == eP ? void 0 : eP.message
                     })
@@ -281,15 +286,15 @@ let J = e => {
                       });
                     case z.AW.CATALOG:
                       return (0, r.jsx)("div", {
-                        className: X.pageWrapper,
+                        className: J.pageWrapper,
                         children: (0, r.jsxs)("main", {
-                          className: i()(X.page, {
-                            [X.pageFullscreen]: n,
-                            [X.pageWithPagination]: eG && (null == eT ? void 0 : eT.length) > ez
+                          className: i()(J.page, {
+                            [J.pageFullscreen]: n,
+                            [J.pageWithPagination]: eG && (null == eT ? void 0 : eT.length) > ez
                           }),
-                          children: [(0, r.jsx)(R.Z, {
+                          children: [(0, r.jsx)(Z.Z, {
                             isFetchingCategories: ek,
-                            sortedCategories: eK,
+                            sortedCategories: eX,
                             setCategoryRef: eF,
                             isPremiumUser: ey,
                             initialItemCardRef: eL,
@@ -297,13 +302,13 @@ let J = e => {
                             isGiftEasterEggEnabled: eN,
                             isFullScreen: n
                           }), eG && eT.length > ez && (0, r.jsx)("div", {
-                            className: X.paginationContainer,
+                            className: J.paginationContainer,
                             children: (0, r.jsx)("div", {
                               children: (0, r.jsx)(d.D, {
                                 currentPage: eV,
                                 totalCount: eT.length,
                                 pageSize: ez,
-                                onPageChange: eJ,
+                                onPageChange: eK,
                                 disablePaginationGap: !0
                               })
                             })
@@ -316,7 +321,7 @@ let J = e => {
                 }(ei)]
               })
             })
-          }), eN && (0, r.jsx)(M.Z, {}), J({
+          }), eN && (0, r.jsx)(M.Z, {}), K({
             isFullScreen: n,
             tab: a
           }) && (0, r.jsxs)(r.Fragment, {

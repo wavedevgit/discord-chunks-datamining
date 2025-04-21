@@ -44,7 +44,7 @@ let j = e => {
         unpublishedCategoriesShown: j,
         cacheDisabled: x
       })
-    }, []);
+    }, [u]);
     let {
       isFetchingShopHome: k,
       fetchShopHomeError: P,
@@ -53,7 +53,12 @@ let j = e => {
     } = (0, d.E)(u, {
       noCache: x,
       includeUnpublished: j,
-      includeBundles: !0
+      includeBundles: !0,
+      logPerf: !0
+    }, {
+      sessionId: S,
+      tab: u,
+      isFullScreen: v
     }), B = l.useCallback(() => {
       w()
     }, [w]);
