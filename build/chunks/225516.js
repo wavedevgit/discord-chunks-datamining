@@ -1,7 +1,7 @@
 /** Chunk was on 89289 **/
 n.d(t, {
-  B: () => d,
-  N: () => f
+  B: () => f,
+  N: () => d
 });
 var r = n(544891),
   l = n(481060),
@@ -11,7 +11,7 @@ var r = n(544891),
   o = n(482207),
   c = n(981631),
   u = n(388032);
-async function f() {
+async function d() {
   if (o.Z.shouldFetch) {
     a.Z.dispatch({
       type: "RECENT_AVATARS_FETCH_START"
@@ -81,7 +81,7 @@ async function f() {
     }
   }
 }
-async function d(e) {
+async function f(e) {
   try {
     await r.tn.del({
       url: c.ANM.RECENT_AVATARS_DELETE(e),

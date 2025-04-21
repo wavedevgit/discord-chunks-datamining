@@ -19,8 +19,8 @@ var i = n(200651),
   _ = n(566620),
   y = n(127255),
   x = n(880308),
-  v = n(427996),
-  C = n(367907),
+  C = n(427996),
+  v = n(367907),
   g = n(10718),
   j = n(895924),
   P = n(835473),
@@ -73,7 +73,7 @@ function en(e) {
     setSearchQuery: o,
     setScroller: a,
     isScrollCloseToBottom: s
-  } = e, c = (0, m.e7)([b.Z], () => b.Z.getIsEnabled(), []), u = n === R._b.TEXT && "channel" === t.type && null != t.channel && !t.channel.isPrivate(), d = (0, D.Yn)(n), p = !(0, D.Yn)(n), h = n === R._b.TEXT, [y, x] = eu(!0), [v, C] = eu(u), [g, j] = eu(d), [P, N] = eu(p), E = y && v && g && P, O = (d || u) && !E, A = p && c;
+  } = e, c = (0, m.e7)([b.Z], () => b.Z.getIsEnabled(), []), u = n === R._b.TEXT && "channel" === t.type && null != t.channel && !t.channel.isPrivate(), d = (0, D.Yn)(n), p = !(0, D.Yn)(n), h = n === R._b.TEXT, [y, x] = eu(!0), [C, v] = eu(u), [g, j] = eu(d), [P, N] = eu(p), E = y && C && g && P, O = (d || u) && !E, A = p && c;
   r.useEffect(() => {
     var e;
     let n = "channel" === t.type ? null == (e = t.channel) ? void 0 : e.guild_id : void 0;
@@ -107,7 +107,7 @@ function en(e) {
           onEmptyState: x
         }), u && "channel" === t.type && (0, i.jsx)(ea, {
           context: t,
-          onEmptyState: C
+          onEmptyState: v
         }), d && (0, i.jsx)(es, {
           context: t,
           entrypoint: n,
@@ -131,7 +131,7 @@ function ei() {
       className: J.developerShelfControlsLabel,
       variant: "text-sm/normal",
       children: Q.intl.string(Q.t.tZ3FNj)
-    }), (0, i.jsx)(v.W, {
+    }), (0, i.jsx)(C.W, {
       hideSearch: !0
     })]
   })
@@ -143,7 +143,7 @@ function er(e) {
     setSearchQuery: n,
     placeholder: l
   } = e, a = r.useRef(null), [s, c] = r.useState(!1), u = r.useMemo(() => o().debounce(e => {
-    (0, C.yw)(q.rMx.APP_LAUNCHER_SEARCH_QUERY_TYPED, {
+    (0, v.yw)(q.rMx.APP_LAUNCHER_SEARCH_QUERY_TYPED, {
       query: e,
       source: w.Z.entrypoint(),
       location: j.Vh.APP_LAUNCHER_HOME
@@ -152,7 +152,7 @@ function er(e) {
     leading: !1,
     trailing: !0
   }), []), d = r.useCallback(() => n(""), [n]), p = r.useCallback(() => {
-    c(!0), (0, C.yw)(q.rMx.APP_LAUNCHER_SEARCH_FOCUSED, {
+    c(!0), (0, v.yw)(q.rMx.APP_LAUNCHER_SEARCH_FOCUSED, {
       source: w.Z.entrypoint(),
       location: j.Vh.APP_LAUNCHER_HOME
     })
@@ -220,7 +220,7 @@ function el(e) {
     sectionName: R.L3.RECENT_APPS
   });
   r.useEffect(() => {
-    s || 0 !== p.length && (0, C.yw)(q.rMx.APP_LAUNCHER_FRECENTS_SEEN, {
+    s || 0 !== p.length && (0, v.yw)(q.rMx.APP_LAUNCHER_FRECENTS_SEEN, {
       num: p.length,
       section_name: R.L3.RECENT_APPS,
       location: R.G0.HOME,
@@ -559,16 +559,16 @@ function ec(e) {
     sectionName: _,
     sectionOverallPosition: u
   }), {
-    trackSectionImpressionRef: v
+    trackSectionImpressionRef: C
   } = (0, W.Z)({
     sectionName: _,
     numItems: b.length,
     numVisibleItems: y.length
-  }), C = l.type !== p.o.SMALL_BANNER_CARDS;
+  }), v = l.type !== p.o.SMALL_BANNER_CARDS;
   return (0, i.jsxs)("div", {
     children: [(0, i.jsx)("div", {
       ref: e => {
-        v.current = e
+        C.current = e
       },
       children: (0, i.jsx)(F.Z, {
         title: l.title,
@@ -597,7 +597,7 @@ function ec(e) {
           resultsPosition: n,
           location: j.Vh.APP_LAUNCHER_HOME,
           installOnDemand: s,
-          enableVideoBanner: C,
+          enableVideoBanner: v,
           sectionOverallPosition: u,
           overrideImageUrl: r,
           showsPromoted: c
@@ -632,7 +632,7 @@ function ed(e) {
   } : {
     items: i.slice(0, l),
     handleViewMore: () => {
-      (0, C.yw)(q.rMx.APP_LAUNCHER_SECTION_VIEW_MORE, {
+      (0, v.yw)(q.rMx.APP_LAUNCHER_SECTION_VIEW_MORE, {
         section_name: o,
         source: w.Z.entrypoint(),
         num: i.length

@@ -1,8 +1,8 @@
-/** Chunk was on 64040 **/
+/** Chunk was on 95124 **/
 n.d(t, {
   Sr: () => j,
-  Xq: () => S,
-  Zg: () => x
+  Xq: () => x,
+  Zg: () => S
 }), n(415506);
 var r = n(186070),
   i = n(185514),
@@ -62,11 +62,11 @@ let j = {
     [O.EkH.CALL_START]: r.FI,
     [O.EkH.QUICKSWITCHER_SHOW]: c.$
   },
-  S = {
+  x = {
     [O.EkH.QUICKSWITCHER_SHOW]: c.$
   };
 
-function x() {
+function S() {
   return [{
     description: v.intl.string(v.t.bx4Uy8),
     binds: C(O.EkH.SERVER_PREV, O.EkH.SERVER_NEXT)

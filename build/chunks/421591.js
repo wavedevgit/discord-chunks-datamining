@@ -1,6 +1,6 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => v
+  Z: () => C
 }), n(388685), n(482853);
 var i = n(200651),
   r = n(192379),
@@ -24,7 +24,7 @@ let y = {
   x = {
     height: (0, d.DK)()
   },
-  v = r.memo(r.forwardRef(function(e, t) {
+  C = r.memo(r.forwardRef(function(e, t) {
     let {
       context: n,
       entrypoint: l,
@@ -54,7 +54,7 @@ let y = {
         className: _.contentWrapper,
         children: (0, i.jsx)(s.Gt, {
           value: d,
-          children: (0, i.jsx)(C, {
+          children: (0, i.jsx)(v, {
             initHistory: u,
             children: (0, i.jsx)(g, {
               context: n,
@@ -66,7 +66,7 @@ let y = {
     })
   }));
 
-function C(e) {
+function v(e) {
   let {
     initHistory: t,
     children: n
@@ -153,21 +153,21 @@ function g(e) {
   }(o), {
     currentView: b,
     getMostRecentHistoryItemByType: y,
-    setSlideReady: v
+    setSlideReady: C
   } = (0, u.hH)();
   r.useEffect(() => {
-    v(!1)
-  }, [null == b ? void 0 : b.type, v]);
-  let C = r.useCallback(() => {
-    v(!0)
-  }, [v]);
+    C(!1)
+  }, [null == b ? void 0 : b.type, C]);
+  let v = r.useCallback(() => {
+    C(!0)
+  }, [C]);
   if (null == b) return null;
   let g = y(u.gc.LIST),
     j = y(u.gc.APPLICATION);
   return (0, i.jsxs)(l.MyZ, {
     activeSlide: b.type,
     width: h.Gy,
-    onSlideReady: C,
+    onSlideReady: v,
     children: [(0, i.jsx)(l.Mi4, {
       id: u.gc.HOME,
       children: (0, i.jsx)("div", {

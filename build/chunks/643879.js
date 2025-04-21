@@ -1,12 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  SD: () => b,
-  Z1: () => h,
-  cN: () => E,
-  fD: () => f,
-  mh: () => g,
-  pC: () => _
+  SD: () => g,
+  Z1: () => _,
+  cN: () => m,
+  fD: () => d,
+  mh: () => h
 }), n(35282), n(953529);
 var r = n(664751),
   i = n(134432),
@@ -14,10 +13,9 @@ var r = n(664751),
   o = n(823379),
   s = n(72703),
   l = n(981631),
-  c = n(485696),
-  u = n(388032);
+  c = n(388032);
 
-function d(e) {
+function u(e) {
   let {
     storageHash: t,
     canAnimate: n = !1,
@@ -30,7 +28,7 @@ function d(e) {
   return null == i ? "jpg" : r && a.$k ? "webp" : "png"
 }
 
-function f(e) {
+function d(e) {
   let {
     userId: t,
     avatarId: n,
@@ -39,8 +37,8 @@ function f(e) {
     allowWebp: s = !0,
     size: c
   } = e, {
-    CDN_HOST: u
-  } = window.GLOBAL_ENV, f = null != u ? "".concat(location.protocol, "//").concat(u) : location.protocol + window.GLOBAL_ENV.API_ENDPOINT, _ = d({
+    CDN_HOST: d
+  } = window.GLOBAL_ENV, f = null != d ? "".concat(location.protocol, "//").concat(d) : location.protocol + window.GLOBAL_ENV.API_ENDPOINT, _ = u({
     storageHash: a,
     canAnimate: o,
     allowWebp: s
@@ -50,40 +48,31 @@ function f(e) {
   return "".concat(f).concat(l.ANM.ARCHIVED_AVATAR(t, n, a, _)).concat(p)
 }
 
+function f(e) {
+  return null == e ? c.intl.string(c.t.lqaIxM) : e.split(",")[0]
+}
+
 function _(e) {
-  let t = e ? c.zW : c.PH,
-    n = c.zW - t;
-  return {
-    recentAvatarsLimit: t,
-    numberOfLockedAvatarSlots: n
-  }
-}
-
-function p(e) {
-  return null == e ? u.intl.string(u.t.lqaIxM) : e.split(",")[0]
-}
-
-function h(e) {
   let {
     filename: t,
     assetOrigin: n = s.q.NEW_ASSET
   } = null != e ? e : {};
   if (n === s.q.ARCHIVED_ASSET) return;
-  let r = null != t ? t : u.intl.string(u.t.lqaIxM),
-    i = new Date().toLocaleString(u.intl.currentLocale, {
+  let r = null != t ? t : c.intl.string(c.t.lqaIxM),
+    i = new Date().toLocaleString(c.intl.currentLocale, {
       year: "numeric",
       day: "numeric",
       month: "long",
       hour: "numeric",
       minute: "numeric"
     });
-  return u.intl.formatToPlainString(n === s.q.EDITED_ARCHIVED_ASSET ? u.t.eC2sZm : u.t["DYil9/"], {
+  return c.intl.formatToPlainString(n === s.q.EDITED_ARCHIVED_ASSET ? c.t.eC2sZm : c.t["DYil9/"], {
     name: r,
     dateTime: i
   })
 }
 
-function m(e) {
+function p(e) {
   switch (e) {
     case "gif":
       return "image/gif";
@@ -96,20 +85,20 @@ function m(e) {
   }
 }
 
-function g(e, t) {
-  let n = d({
+function h(e, t) {
+  let n = u({
       storageHash: e,
       canAnimate: !0,
       allowWebp: !1
     }),
-    r = p(t);
+    r = f(t);
   return {
     filename: "".concat(r, ".").concat(n),
-    type: m(n)
+    type: p(n)
   }
 }
 
-function E(e) {
+function m(e) {
   let {
     assetOrigin: t = s.q.NEW_ASSET,
     imageUri: n,
@@ -134,14 +123,14 @@ function E(e) {
   }
 }
 
-function b(e) {
+function g(e) {
   let {
     userId: t,
     image: n,
     size: r = 80,
     canAnimate: i = !0
   } = e;
-  return null != n && "string" != typeof n ? n.assetOrigin === s.q.ARCHIVED_ASSET ? f({
+  return null != n && "string" != typeof n ? n.assetOrigin === s.q.ARCHIVED_ASSET ? d({
     userId: t,
     avatarId: n.originalAsset.id,
     storageHash: n.originalAsset.storageHash,

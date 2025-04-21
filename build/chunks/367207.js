@@ -1,4 +1,4 @@
-/** Chunk was on 64040 **/
+/** Chunk was on 95124 **/
 n.d(t, {
   Z: () => k
 }), n(415506), n(388685);
@@ -24,8 +24,8 @@ var i = n(392711),
   v = n(514701),
   C = n(6242),
   j = n(467721),
-  S = n(757692),
-  x = n(937579),
+  x = n(757692),
+  S = n(937579),
   E = n(522558),
   I = n(11352),
   P = n(474936),
@@ -123,7 +123,7 @@ class L extends a.Z {
       let e = f.default.getCurrentUser();
       if (null != e && e.verified) {
         let t = !(0, b.I5)(e) && g.Z.shouldFetchOffer();
-        await (0, x.T)("PremiumManager", t)
+        await (0, S.T)("PremiumManager", t)
       }
       o.Z.dispatch({
         type: "PREMIUM_MARKETING_DATA_READY"
@@ -165,7 +165,7 @@ class L extends a.Z {
     }), A(this, "_maybeSendViewerUpsellMessage", (0, i.debounce)((e, t, n) => {
       var r, i;
       let l = u.Z.getSelectedParticipant(e),
-        o = (0, S.o)(l, n),
+        o = (0, x.o)(l, n),
         {
           sendNitroMessage: a
         } = (0, C.TD)(o),

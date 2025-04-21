@@ -1,4 +1,4 @@
-/** Chunk was on 64040 **/
+/** Chunk was on 95124 **/
 n.d(t, {
   ZP: () => A,
   wD: () => w
@@ -25,7 +25,7 @@ var r = n(200651),
   C = n(388032),
   j = n(917669);
 
-function S(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function S(e) {
   return e
 }
 
-function x(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -109,7 +109,7 @@ function I(e) {
     children: c && (0, r.jsx)(u.ua7, {
       text: C.intl.string(C.t.O8lDIy),
       position: "right",
-      children: e => (0, r.jsxs)("div", x(S({
+      children: e => (0, r.jsxs)("div", S(x({
         className: j.communityInfoPill
       }, e), {
         children: [(0, r.jsx)(u.enf, {
@@ -240,7 +240,7 @@ function T(e) {
       let {
         default: e
       } = await Promise.all([n.e("7654"), n.e("17439")]).then(n.bind(n, 560114));
-      return t => (0, r.jsx)(e, x(S({}, t), {
+      return t => (0, r.jsx)(e, S(x({}, t), {
         guild: l,
         source: O.t4x.GUILD_HEADER
       }))
@@ -248,7 +248,7 @@ function T(e) {
       let {
         default: e
       } = await n.e("88358").then(n.bind(n, 598402));
-      return t => (0, r.jsx)(e, S({}, t))
+      return t => (0, r.jsx)(e, x({}, t))
     })
   }, [p, l]);
   return (0, r.jsxs)(r.Fragment, {
@@ -260,7 +260,7 @@ function T(e) {
       spacing: 4,
       children: e => {
         var n;
-        return (0, r.jsxs)(u.P3F, x(S({
+        return (0, r.jsxs)(u.P3F, S(x({
           className: j.guildDropdown,
           "aria-label": C.intl.formatToPlainString(C.t.xMXpl5, {
             guildName: null != (n = null == l ? void 0 : l.toString()) ? n : ""
@@ -288,7 +288,7 @@ function T(e) {
     }), l.id !== v._ && (0, r.jsx)(u.ua7, {
       text: C.intl.string(C.t.Sd8Ix8),
       position: "bottom",
-      children: e => (0, r.jsx)(u.P3F, x(S({
+      children: e => (0, r.jsx)(u.P3F, S(x({
         className: j.inviteButton
       }, e), {
         onClick: () => {
@@ -321,15 +321,15 @@ let A = i.memo(function(e) {
     headerClassName: N,
     communityInfoVisible: A,
     hasSubheader: D
-  } = e, L = v.hasFeature(O.oNc.ANIMATED_BANNER), k = (0, h.Z)(v), M = !k && v.hasCommunityInfoSubheader(), U = !k && A, G = (0, y.xR)(C) && L && !g, [B, V] = i.useState(!1), F = i.useRef(!1), H = i.useRef(null), z = i.useRef(void 0), W = m.QK.getSetting();
+  } = e, L = v.hasFeature(O.oNc.ANIMATED_BANNER), k = (0, h.Z)(v), M = !k && v.hasCommunityInfoSubheader(), U = !k && A, G = (0, y.xR)(C) && L && !g, [B, V] = i.useState(!1), H = i.useRef(!1), F = i.useRef(null), z = i.useRef(void 0), W = m.QK.getSetting();
   i.useEffect(() => {
-    if (G && t && !F.current && W) return V(!0), z.current = setTimeout(() => {
+    if (G && t && !H.current && W) return V(!0), z.current = setTimeout(() => {
       V(!1)
     }, 5e3), () => {
       clearTimeout(z.current)
     }
   }, [G, t, W]), i.useEffect(() => {
-    F.current = t
+    H.current = t
   }, [t]);
   let Y = () => {
       let {
@@ -351,13 +351,13 @@ let A = i.memo(function(e) {
       onContextMenu: c,
       ariaControls: _,
       ariaExpanded: b,
-      guildHeaderRef: H
+      guildHeaderRef: F
     };
   return (0, r.jsx)(u.f6W, {
     theme: t ? O.BRd.DARK : void 0,
     children: e => (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        ref: H,
+        ref: F,
         className: o()(l, {
           [j.container]: !0,
           [j.clickable]: !q && null != s,
@@ -377,9 +377,9 @@ let A = i.memo(function(e) {
           }),
           children: [(0, r.jsx)("div", {
             className: o()(j.headerContent, j.primaryInfo),
-            children: q ? (0, r.jsx)(T, x(S({}, Q), {
+            children: q ? (0, r.jsx)(T, S(x({}, Q), {
               children: w
-            })) : (0, r.jsx)(Z, x(S({}, Q), {
+            })) : (0, r.jsx)(Z, S(x({}, Q), {
               children: w
             }))
           }), M && (0, r.jsx)(I, {

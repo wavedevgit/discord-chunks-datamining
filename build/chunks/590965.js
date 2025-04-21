@@ -1,4 +1,4 @@
-/** Chunk was on 64040 **/
+/** Chunk was on 95124 **/
 let r;
 n.d(t, {
   Z: () => I
@@ -42,9 +42,9 @@ function O(e) {
 let v = b.IlC.APP,
   C = !1,
   j = !1,
-  S = [];
+  x = [];
 
-function x() {
+function S() {
   C = !0
 }
 class E extends(i = l.ZP.Store) {
@@ -53,11 +53,11 @@ class E extends(i = l.ZP.Store) {
   }
   isOpen() {
     let e = __OVERLAY__ ? b.IlC.OVERLAY : b.IlC.APP;
-    return !!(C && S.length > 0 && v === e)
+    return !!(C && x.length > 0 && v === e)
   }
   getProps() {
     return {
-      invite: S.length > 0 ? S[0][0] : null,
+      invite: x.length > 0 ? x[0][0] : null,
       error: null != r && "" !== r ? r : null,
       submitting: j
     }
@@ -65,8 +65,8 @@ class E extends(i = l.ZP.Store) {
 }
 _(E, "displayName", "InviteModalStore");
 let I = new E(o.Z, {
-  OVERLAY_INITIALIZE: x,
-  CONNECTION_OPEN: x,
+  OVERLAY_INITIALIZE: S,
+  CONNECTION_OPEN: S,
   CONNECTION_CLOSED: function() {
     C = !1
   },
@@ -99,7 +99,7 @@ let I = new E(o.Z, {
         }
       }
     }
-    if (S.some(e => {
+    if (x.some(e => {
         let [n] = e;
         return n.code === t.code
       })) return !1;
@@ -132,11 +132,11 @@ let I = new E(o.Z, {
       };
       return null != d && (f.channel = O({}, d)), null != h && (f.guild = new u.ZP(h)), null != e.inviter && (f.inviter = O({}, e.inviter)), f
     }(t);
-    S.push([n, e.resolve])
+    x.push([n, e.resolve])
   },
   INVITE_MODAL_CLOSE: function() {
-    if (r = null, j = !1, S.length > 0) {
-      let [, e] = S.shift();
+    if (r = null, j = !1, x.length > 0) {
+      let [, e] = x.shift();
       null != e && e()
     }
   },

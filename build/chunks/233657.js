@@ -1,4 +1,4 @@
-/** Chunk was on 64040 **/
+/** Chunk was on 95124 **/
 n.d(t, {
   Z: () => y
 });
@@ -71,7 +71,7 @@ function y(e) {
     }), (0, a.EW)(l.z.GUILD_HEADER_EVENT_UPSELL)
   }
   let j = (0, c.ZP)(t.id),
-    S = j.length > 0 ? f.intl.formatToPlainString(f.t.IBdqSk, {
+    x = j.length > 0 ? f.intl.formatToPlainString(f.t.IBdqSk, {
       number: j.length
     }) : f.intl.string(f.t.tlopTE);
   return (0, r.jsx)(h.m, {
@@ -81,7 +81,7 @@ function y(e) {
       color: "currentColor",
       className: e
     }),
-    text: S,
+    text: x,
     selected: y,
     onClick: C,
     onContextMenu: e => {

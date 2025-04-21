@@ -1,4 +1,4 @@
-/** Chunk was on 64040 **/
+/** Chunk was on 95124 **/
 n.d(t, {
   Z: () => _
 });
@@ -74,9 +74,9 @@ function _(e) {
     mode: v,
     mentionCount: C,
     targetChannelId: j
-  } = "bottom" === t ? p : _, S = v === f.x.HIDDEN, x = (0, c.q_F)({
+  } = "bottom" === t ? p : _, x = v === f.x.HIDDEN, S = (0, c.q_F)({
     to: {
-      transform: S ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
+      transform: x ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
     },
     config: b
   }, O ? "respect-motion-settings" : "animate-never"), E = i.useCallback(e => {
@@ -89,8 +89,8 @@ function _(e) {
     }),
     children: (0, r.jsx)(s.animated.div, {
       className: m.containerPadding,
-      style: x,
-      "aria-hidden": S,
+      style: S,
+      "aria-hidden": x,
       children: v === f.x.HIDDEN ? (0, r.jsx)("div", {
         className: o()(m.bar, m.emptyBar)
       }) : v === f.x.UNREAD ? (0, r.jsxs)(c.P3F, {

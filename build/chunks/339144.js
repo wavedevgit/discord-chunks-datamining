@@ -1,4 +1,4 @@
-/** Chunk was on 64040 **/
+/** Chunk was on 95124 **/
 n.d(t, {
   J: () => I,
   y: () => E
@@ -24,8 +24,8 @@ var r = n(200651),
   v = n(626135),
   C = n(870569),
   j = n(981631),
-  S = n(388032),
-  x = n(390648);
+  x = n(388032),
+  S = n(390648);
 
 function E(e, t, n) {
   return null != e && (null != n ? n.applicationId === e.id : null != t && t.application_id === e.id && t.type === j.IIU.PLAYING && (0, d.Z)(t, j.xjy.JOIN))
@@ -55,14 +55,14 @@ let I = i.memo(function(e) {
       parentAnalyticsLocation: B
     } = (0, p.ZP)(),
     V = E(k, L, D),
-    F = i.useCallback(() => {
+    H = i.useCallback(() => {
       o()(null != L, "Received null activity"), (0, f.v)(B, f.d.INVITE), v.default.track(j.rMx.OPEN_MODAL, {
         type: "Send Join Invite",
         application_id: L.application_id,
         location: M.location
       }), (0, c.h7)(L, !1)
     }, [L, M, B]),
-    H = i.useCallback((e, t) => () => {
+    F = i.useCallback((e, t) => () => {
       (0, f.v)(B, f.d.LEAVE_ACTIVITY), h.Z.leaveActivity({
         location: t,
         applicationId: e,
@@ -123,12 +123,12 @@ let I = i.memo(function(e) {
       isContextless: D.location.kind === s.E.CONTEXTLESS
     })) && (Z || w) ? (Z ? (t = !1, l = () => {
       z(), (0, f.v)(B, f.d.STREAM, !1)
-    }, d = a.g5r, I = S.intl.string(S.t.S5anIS)) : A ? (t = !1, l = () => {
+    }, d = a.g5r, I = x.intl.string(x.t.S5anIS)) : A ? (t = !1, l = () => {
       W(), (0, f.v)(B, f.d.STREAM, !0)
-    }, d = a.hGI, I = null != R ? S.intl.formatToPlainString(S.t.AB5gT0, {
+    }, d = a.hGI, I = null != R ? x.intl.formatToPlainString(x.t.AB5gT0, {
       game: R.name
-    }) : S.intl.string(S.t.FeUKeH)) : (t = !0, l = null, d = a.hGI, I = null != T && (0, _.vd)(T.type) ? S.intl.string(S.t.uQn9Bw) : null != N ? S.intl.string(S.t.fBXEoK) : S.intl.string(S.t.n3feND)), (0, r.jsx)("div", {
-      className: x.panelButtonContainer,
+    }) : x.intl.string(x.t.FeUKeH)) : (t = !0, l = null, d = a.hGI, I = null != T && (0, _.vd)(T.type) ? x.intl.string(x.t.uQn9Bw) : null != N ? x.intl.string(x.t.fBXEoK) : x.intl.string(x.t.n3feND)), (0, r.jsx)("div", {
+      className: S.panelButtonContainer,
       children: (0, r.jsx)(C.Z, {
         tooltipText: I,
         disabled: t,
@@ -137,18 +137,18 @@ let I = i.memo(function(e) {
       })
     })) : null,
     K = V && null == D ? (0, r.jsx)(C.Z, {
-      tooltipText: S.intl.string(S.t["hC/Ze3"]),
-      onClick: F,
+      tooltipText: x.intl.string(x.t["hC/Ze3"]),
+      onClick: H,
       icon: a.ejJ
     }) : null,
     q = null == D ? null : (0, r.jsx)(C.Z, {
-      tooltipText: S.intl.string(S.t["R/FK4O"]),
-      onClick: H(D.applicationId, D.location),
+      tooltipText: x.intl.string(x.t["R/FK4O"]),
+      onClick: F(D.applicationId, D.location),
       icon: a.PBZ
     }),
     Q = null == P ? null : (0, r.jsx)(g.Z, {});
   return null == Y && null == K && null == q ? null : (0, r.jsxs)("div", {
-    className: x.actions,
+    className: S.actions,
     children: [Y, K, null != q ? q : Q]
   })
 })

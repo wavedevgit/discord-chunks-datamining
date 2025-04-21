@@ -1,4 +1,4 @@
-/** Chunk was on 71704 **/
+/** Chunk was on 78701 **/
 n.d(t, {
   T: () => o,
   c: () => i
@@ -15,6 +15,12 @@ let i = (0, r.B)({
   treatments: [{
     id: 1,
     label: "Allow users to select from recently uploaded avatars",
+    config: {
+      enabled: !0
+    }
+  }, {
+    id: 2,
+    label: "Allow users to select from recently uploaded avatars. These users have always had access to the higher limit regardless of subscription status.",
     config: {
       enabled: !0
     }

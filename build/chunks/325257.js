@@ -1,4 +1,4 @@
-/** Chunk was on 64040 **/
+/** Chunk was on 95124 **/
 n.d(t, {
   Z: () => M
 }), n(388685);
@@ -23,8 +23,8 @@ var r = n(200651),
   v = n(271383),
   C = n(771845),
   j = n(727258),
-  S = n(276952),
-  x = n(249792),
+  x = n(276952),
+  S = n(249792),
   E = n(40153),
   I = n(593618),
   P = n(252686),
@@ -90,8 +90,8 @@ let M = i.memo(function(e) {
     setRef: G,
     onDragStart: B,
     onDragEnd: V,
-    route: F,
-    guild: H,
+    route: H,
+    guild: F,
     animatable: z,
     selected: W = !1,
     unread: Y = !1,
@@ -142,22 +142,22 @@ let M = i.memo(function(e) {
     [eC] = i.useState(() => new d.sW(70, () => ev(!0)));
   i.useEffect(() => () => eC.cancel(), [eC]);
   let ej = i.useCallback(() => {
-      if (null != F) return void(0, _.uL)(F, {
+      if (null != H) return void(0, _.uL)(H, {
         state: L
       });
       (0, O.X)(eo, {
         state: L
       })
-    }, [eo, F]),
-    eS = i.useCallback(() => {
-      if (null != F || null == H || q || !et) return;
-      let e = (0, y.V)(H.id);
-      null != e && p.Z.preload(H.id, e)
-    }, [F, H, q, et]),
-    ex = (0, u.e7)([v.ZP], () => v.ZP.isCurrentUserGuest(eo)),
+    }, [eo, H]),
+    ex = i.useCallback(() => {
+      if (null != H || null == F || q || !et) return;
+      let e = (0, y.V)(F.id);
+      null != e && p.Z.preload(F.id, e)
+    }, [H, F, q, et]),
+    eS = (0, u.e7)([v.ZP], () => v.ZP.isCurrentUserGuest(eo)),
     eE = i.useCallback(e => {
-      null == H || ex || J(e, H)
-    }, [H, J, ex]),
+      null == F || eS || J(e, F)
+    }, [F, J, eS]),
     eI = i.useCallback(e => {
       if ("ArrowLeft" === e.key && null != es) {
         var t;
@@ -172,9 +172,9 @@ let M = i.memo(function(e) {
       null == G || G(eo, e)
     }, [eo, G]),
     eN = (0, h.dQu)(h.TVs.modules.guildbar.AVATAR_SIZE);
-  if (null == H) return null;
-  let eZ = eO || ey ? (0, r.jsx)(x.Z, {
-      guild: H,
+  if (null == F) return null;
+  let eZ = eO || ey ? (0, r.jsx)(S.Z, {
+      guild: F,
       show: eO,
       active: W,
       onAnimationStart: function() {
@@ -185,10 +185,10 @@ let M = i.memo(function(e) {
       }
     }) : (0, r.jsx)(h.LYs, D(R({
       ariaLabel: T.intl.formatToPlainString(T.t["/uzRsr"], {
-        guildName: H.toString(),
+        guildName: F.toString(),
         mentions: Q
       }),
-      name: H.toString(),
+      name: F.toString(),
       onClick: ej,
       onMouseEnter: function() {
         ee || em(!0)
@@ -196,10 +196,10 @@ let M = i.memo(function(e) {
       onMouseLeave: function() {
         ee || em(!1)
       },
-      onMouseDown: eS,
+      onMouseDown: ex,
       onContextMenu: eE,
       onKeyDown: eI,
-      icon: H.getIconURL(2 * eN, eb && z, ea),
+      icon: F.getIconURL(2 * eN, eb && z, ea),
       selected: W || eb
     }, ef), {
       "aria-setsize": ei,
@@ -212,7 +212,7 @@ let M = i.memo(function(e) {
       ref: $ ? e => {
         ep(e)
       } : void 0,
-      "data-dnd-name": H.toString(),
+      "data-dnd-name": F.toString(),
       style: {
         scale: null == er ? 1 : er
       },
@@ -232,18 +232,18 @@ let M = i.memo(function(e) {
     });
   return (0, r.jsxs)(w.H, {
     ref: ew,
-    children: [(0, r.jsx)(S.Z, {
+    children: [(0, r.jsx)(x.Z, {
       hovered: !eh && eb,
       selected: !eh && W,
       unread: !eh && Y,
       className: A.pill
     }), (0, r.jsx)(I.Z, {
-      guild: H,
+      guild: F,
       disabled: ee,
       isDragging: eh,
       children: eT
     }), $ ? (0, r.jsx)(E.ZP, {
-      name: H.name,
+      name: F.name,
       targetNode: U,
       onDragOverChanged: eP
     }) : null]

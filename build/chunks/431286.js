@@ -1,4 +1,4 @@
-/** Chunk was on 64040 **/
+/** Chunk was on 95124 **/
 n.d(t, {
   i: () => j
 }), n(388685);
@@ -36,9 +36,9 @@ function j() {
     enabled: j
   } = (0, m.W)({
     location: "virtual_currency_announcement_modal"
-  }), [S, x] = (0, h.US)(j ? [s.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], ...y.b.useSelectedDismissibleContent), E = (0, c.s9z)(c.JQI);
+  }), [x, S] = (0, h.US)(j ? [s.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], ...y.b.useSelectedDismissibleContent), E = (0, c.s9z)(c.JQI);
   i.useEffect(() => {
-    j && !t && S === s.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL && (e || E || (u.Z.dispatch({
+    j && !t && x === s.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL && (e || E || (u.Z.dispatch({
       type: "VIRTUAL_CURRENCY_ONBOARDING_MODAL_OPEN"
     }), (0, a.ZD)(async () => {
       let {
@@ -49,13 +49,13 @@ function j() {
           onClose: n,
           transitionState: i
         } = t, o = async () => {
-          await n(), x(O.L.USER_DISMISS)
+          await n(), S(O.L.USER_DISMISS)
         };
         return (0, r.jsx)(e, {
           transitionState: i,
           onClose: o,
           ctaOnClick: () => {
-            x(O.L.TAKE_ACTION), (0, d.EW)(s.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK, {
+            S(O.L.TAKE_ACTION), (0, d.EW)(s.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK, {
               dismissAction: O.L.INDIRECT_ACTION,
               groupName: O.R.VIRTUAL_CURRENCY_ONBOARDING
             }), (0, d.EW)(s.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, {
@@ -75,8 +75,8 @@ function j() {
     }, {
       modalKey: C,
       onCloseRequest: () => {
-        x(O.L.USER_DISMISS), (0, c.Mr3)(C)
+        S(O.L.USER_DISMISS), (0, c.Mr3)(C)
       }
     })))
-  }, [S, j, t, x, e, E])
+  }, [x, j, t, S, e, E])
 }

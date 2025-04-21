@@ -1,4 +1,4 @@
-/** Chunk was on 64040 **/
+/** Chunk was on 95124 **/
 n.d(t, {
   PD: () => D,
   ZP: () => M,
@@ -25,8 +25,8 @@ var r = n(200651),
   v = n(267642),
   C = n(624138),
   j = n(667815),
-  S = n(531572),
-  x = n(26323),
+  x = n(531572),
+  S = n(26323),
   E = n(30513),
   I = n(981631),
   P = n(388032),
@@ -100,9 +100,9 @@ let A = (0, C.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
       withMargin: n
     } = e, l = (0, m.Q3)("GuildBoostingSidebarDisplay"), {
       analyticsLocations: u
-    } = (0, g.ZP)(p.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY), b = (0, v.Jh)(t.id), C = (0, y.Z)(t.id), A = (0, v.FZ)(b), D = null == A, L = null != A ? A : b, M = (0, c.e7)([S.Z], () => {
+    } = (0, g.ZP)(p.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY), b = (0, v.Jh)(t.id), C = (0, y.Z)(t.id), A = (0, v.FZ)(b), D = null == A, L = null != A ? A : b, M = (0, c.e7)([x.Z], () => {
       var e;
-      return null != (e = S.Z.getCountForGuild(t.id)) ? e : 0
+      return null != (e = x.Z.getCountForGuild(t.id)) ? e : 0
     }), U = (0, c.e7)([_.Z], () => _.Z.can(I.Plq.MANAGE_GUILD, t));
     i.useEffect(() => {
       M !== C && (0, j.v)(t.id, C)
@@ -120,15 +120,15 @@ let A = (0, C.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
         },
         config: k
       }), "respect-motion-settings", [M, C, B, G]),
-      F = t.premiumTier < L && M >= I.oCV[L],
-      H = () => {
+      H = t.premiumTier < L && M >= I.oCV[L],
+      F = () => {
         (0, f.yw)(I.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
           location: {
             section: I.jXE.PREMIUM_GUILD_PROGRESS_BAR
           },
           guild_id: t.id,
           location_stack: u
-        }), (0, x.Z)({
+        }), (0, S.Z)({
           analyticsLocations: u,
           analyticsSourceLocation: {
             page: I.ZY5.GUILD_CHANNEL,
@@ -153,7 +153,7 @@ let A = (0, C.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
     let Y = (0, a.JA)("boosts-".concat(t.id));
     return (0, r.jsx)("li", {
       children: (0, r.jsx)(d.ua7, {
-        text: F ? P.intl.formatToPlainString(w.default["9CtPjo"], {
+        text: H ? P.intl.formatToPlainString(w.default["9CtPjo"], {
           perk: (0, v.nW)(L)
         }) : D ? P.intl.string(P.t["Y+V9go"]) : P.intl.formatToPlainString(P.t.UyDKl5, {
           levelName: (0, v.nW)(L)
@@ -171,7 +171,7 @@ let A = (0, C.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
               right: 4
             }
           },
-          onClick: H,
+          onClick: F,
           className: o()(N.container, {
             [N.containerWithMargin]: n
           }),

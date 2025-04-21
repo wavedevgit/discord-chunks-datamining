@@ -1,4 +1,4 @@
-/** Chunk was on 64040 **/
+/** Chunk was on 95124 **/
 n.d(t, {
   Z: () => ei
 }), n(388685), n(415506);
@@ -23,8 +23,8 @@ var r = n(200651),
   v = n(446226),
   C = n(305325),
   j = n(281956),
-  S = n(66999),
-  x = n(554747),
+  x = n(66999),
+  S = n(554747),
   E = n(378844),
   I = n(340541),
   P = n(335353),
@@ -42,8 +42,8 @@ var r = n(200651),
   G = n(979651),
   B = n(934415),
   V = n(63063),
-  F = n(98597),
-  H = n(648501),
+  H = n(98597),
+  F = n(648501),
   z = n(473403),
   W = n(830993),
   Y = n(653577),
@@ -87,7 +87,7 @@ function et(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class en extends F.ZP {
+class en extends H.ZP {
   componentWillUnmount() {
     this.activitiesHideTimeout.stop()
   }
@@ -213,8 +213,8 @@ class en extends F.ZP {
       hasActiveEvent: v,
       embeddedApps: C,
       isSubscriptionGated: j,
-      isFavoriteSuggestion: S,
-      withGuildIcon: x
+      isFavoriteSuggestion: x,
+      withGuildIcon: S
     } = this.props, {
       shouldShowActivities: E,
       shouldShowGuildVerificationPopout: w
@@ -267,7 +267,7 @@ class en extends F.ZP {
                   }),
                   hasActiveEvent: v,
                   channel: e,
-                  selected: !S && t,
+                  selected: !x && t,
                   connected: n,
                   unread: n ? i : void 0,
                   resolvedUnreadSetting: l,
@@ -281,7 +281,7 @@ class en extends F.ZP {
                     this.handleContextMenu(e), null == d || d()
                   },
                   connectDragPreview: g,
-                  isFavoriteSuggestion: S,
+                  isFavoriteSuggestion: x,
                   "aria-label": (0, m.ZP)({
                     channel: e,
                     unread: i,
@@ -294,11 +294,11 @@ class en extends F.ZP {
                     channel: e,
                     embeddedApps: C
                   }),
-                  withGuildIcon: x
+                  withGuildIcon: S
                 }, h), {
-                  children: [S && (0, r.jsxs)(r.Fragment, {
+                  children: [x && (0, r.jsxs)(r.Fragment, {
                     children: [this.renderAcceptSuggestionButton(), this.renderRemoveSuggestionButton()]
-                  }), !S && (0, r.jsxs)(r.Fragment, {
+                  }), !x && (0, r.jsxs)(r.Fragment, {
                     children: [this.renderOpenChatButton(), this.renderInviteButton(), N ? this.renderOptionsButton({
                       onContextMenu: this.handleContextMenu
                     }) : this.renderEditButton(), this.renderChannelInfo(), this.renderHDSplashedIcon()]
@@ -478,10 +478,10 @@ function ei(e) {
       bypassLimit: k.Z.can(q.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), p = (0, s.e7)([G.Z], () => G.Z.hasVideo(n.id)), g = (0, f.ZP)(n), m = (0, y.ZP)(n), b = (0, x.qY)(n.id), {
+  }), p = (0, s.e7)([G.Z], () => G.Z.hasVideo(n.id)), g = (0, f.ZP)(n), m = (0, y.ZP)(n), b = (0, S.qY)(n.id), {
     isSubscriptionGated: _,
     needSubscriptionToAccess: O
-  } = (0, S.Z)(n.id), C = (0, v.Z)(), j = (0, s.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), E = e.connected || (null == C ? void 0 : C.channelId) === n.id, I = (0, H.Z)({
+  } = (0, x.Z)(n.id), C = (0, v.Z)(), j = (0, s.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), E = e.connected || (null == C ? void 0 : C.channelId) === n.id, I = (0, F.Z)({
     channel: n,
     isChannelSelected: o,
     isChannelCollapsed: a,

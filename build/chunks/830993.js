@@ -1,4 +1,4 @@
-/** Chunk was on 64040 **/
+/** Chunk was on 95124 **/
 n.d(t, {
   Z: () => P
 }), n(388685), n(539854);
@@ -23,8 +23,8 @@ var r = n(200651),
   v = n(561788),
   C = n(876548),
   j = n(543432),
-  S = n(981631),
-  x = n(388032),
+  x = n(981631),
+  S = n(388032),
   E = n(642317),
   I = n(656855);
 
@@ -52,7 +52,7 @@ function P(e) {
   let C = (0, u.ZP)(o),
     j = Array.from((0, u.uF)(C).values()),
     I = null != (t = null == g ? void 0 : g.filter(y.lm)) ? t : [],
-    P = e => t => [S.IIU.PLAYING, S.IIU.WATCHING].includes(t.type) && (null != t.assets || null != t.state || null != t.details || null != t.party) && (null == t.session_id || t.session_id === e.voiceState.sessionId) || t.type === S.IIU.LISTENING,
+    P = e => t => [x.IIU.PLAYING, x.IIU.WATCHING].includes(t.type) && (null != t.assets || null != t.state || null != t.details || null != t.party) && (null == t.session_id || t.session_id === e.voiceState.sessionId) || t.type === x.IIU.LISTENING,
     N = (0, s.e7)([m.Z], () => {
       let e = {};
       return I.forEach(t => {
@@ -64,7 +64,7 @@ function P(e) {
               members: [],
               activity: n
             };
-          a.members.push(t), (0, d.Z)(a.activity, S.xjy.JOIN) || (a.activity = n), e[s] = a
+          a.members.push(t), (0, d.Z)(a.activity, x.xjy.JOIN) || (a.activity = n), e[s] = a
         }
       }), Object.values(e)
     }, [I], s.pF);
@@ -103,7 +103,7 @@ function P(e) {
         children: (0, r.jsx)(a.Text, {
           variant: "text-xs/normal",
           tag: "span",
-          children: x.intl.format(x.t.ePyoY2, {
+          children: S.intl.format(S.t.ePyoY2, {
             onClick: () => {
               (0, a.ZDy)(async () => {
                 let {
@@ -155,7 +155,7 @@ function w(e) {
     channel: t,
     isChannelSelected: n,
     voiceStatesCount: i
-  } = e, l = (0, s.e7)([g.Z], () => !g.Z.can(S.Plq.CONNECT, t)), a = (0, s.e7)([b.Z], () => b.Z.hasVideo(t.id)), c = (0, _.ZP)({
+  } = e, l = (0, s.e7)([g.Z], () => !g.Z.can(x.Plq.CONNECT, t)), a = (0, s.e7)([b.Z], () => b.Z.hasVideo(t.id)), c = (0, _.ZP)({
     channel: t,
     locked: l,
     video: a,

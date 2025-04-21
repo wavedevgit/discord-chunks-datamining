@@ -112,7 +112,7 @@ let x = e => {
                   lineClamp: 1,
                   children: S
                 }), (0, n.jsx)(p.Gk, {
-                  location: p.Gt.GAME_PROFILE,
+                  location: p.Gt.APP_LAUNCHER,
                   children: f.W.map((e, r) => (0, n.jsx)(e, {
                     entry: t
                   }, r))

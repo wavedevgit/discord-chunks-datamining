@@ -1,4 +1,4 @@
-/** Chunk was on 64040 **/
+/** Chunk was on 95124 **/
 n.d(t, {
   j: () => O
 }), n(388685);
@@ -42,7 +42,7 @@ let O = e => {
     return c && n && !o ? t ? m.N.Activity : m.N.ActivityNux : null
   }({
     isForceShowSharingPopout: n
-  }), S = (0, i.useRef)(null);
+  }), x = (0, i.useRef)(null);
   return ((0, i.useEffect)(() => {
     n && f.default.track(b.rMx.OPEN_POPOUT, {
       type: "SharingPrivacyPopout"
@@ -60,7 +60,7 @@ let O = e => {
           }), O(!1), C(!1)
         };
         return (0, r.jsx)(s.yRy, {
-          targetElementRef: S,
+          targetElementRef: x,
           shouldShow: !0,
           spacing: -2,
           position: "top",
@@ -77,7 +77,7 @@ let O = e => {
             })
           },
           children: () => (0, r.jsx)(s.P3F, {
-            innerRef: S,
+            innerRef: x,
             onClick: e,
             children: t
           })

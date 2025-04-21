@@ -1,4 +1,4 @@
-/** Chunk was on 64040 **/
+/** Chunk was on 95124 **/
 n.d(t, {
   Z: () => N
 }), n(388685), n(361932), n(187205), n(539854);
@@ -24,15 +24,15 @@ var i = n(120356),
   v = n(709054),
   C = n(853856),
   j = n(981631),
-  S = n(388032),
-  x = n(714509),
+  x = n(388032),
+  S = n(714509),
   E = n(375613);
 
 function I(e, t) {
   return 0 === t.length ? null : (0, r.jsxs)("div", {
-    className: x.row,
+    className: S.row,
     children: [(0, r.jsx)(e, {
-      className: x.activityIcon,
+      className: S.activityIcon,
       color: "currentColor"
     }), (0, r.jsx)(h.Z, {
       guildId: void 0,
@@ -64,7 +64,7 @@ function P() {
       for (let t of i) e += f.Z.getParticipantCount(t, g.pV.AUDIENCE);
       return e
     }),
-    S = (0, a.Wu)([m.Z], () => m.Z.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [t]),
+    x = (0, a.Wu)([m.Z], () => m.Z.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [t]),
     E = (0, a.Wu)([d.ZP], () => {
       let e = d.ZP.getEmbeddedActivitiesByChannel(),
         n = [];
@@ -75,25 +75,25 @@ function P() {
       return n
     }, [t]),
     P = (0, a.Wu)([y.default], () => E.map(e => y.default.getUser(e)), [E]),
-    w = (0, a.Wu)([y.default], () => S.map(e => y.default.getUser(e)), [S]),
-    N = I(c.gj8, l.filter(e => !S.includes(e.id) && !E.includes(e.id))),
+    w = (0, a.Wu)([y.default], () => x.map(e => y.default.getUser(e)), [x]),
+    N = I(c.gj8, l.filter(e => !x.includes(e.id) && !E.includes(e.id))),
     Z = 0 === o.length ? null : (0, r.jsxs)("div", {
-      className: x.row,
+      className: S.row,
       children: [(0, r.jsx)(c.ewx, {
         size: "lg",
         color: "currentColor",
-        className: x.activityIcon
+        className: S.activityIcon
       }), (0, r.jsx)(h.Z, {
         guildId: void 0,
         users: o,
         max: 3
       }), (0, r.jsxs)("div", {
-        className: x.stageListenerPill,
+        className: S.stageListenerPill,
         children: [(0, r.jsx)(c.VWR, {
           size: "xs",
           color: "currentColor"
         }), (0, r.jsx)(c.Text, {
-          className: x.stageListenerCount,
+          className: S.stageListenerCount,
           color: "text-normal",
           variant: "text-xs/medium",
           children: p
@@ -117,10 +117,10 @@ function P() {
 function w() {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: l()(x.row, x.rowGuildName),
+      className: l()(S.row, S.rowGuildName),
       children: (0, r.jsx)("span", {
-        className: l()(x.guildNameText, x.guildNameTextLimitedSize),
-        children: S.intl.string(S.t.wMWycn)
+        className: l()(S.guildNameText, S.guildNameTextLimitedSize),
+        children: x.intl.string(x.t.wMWycn)
       })
     }), (0, r.jsx)(P, {})]
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 94270 **/
+/** Chunk was on 95124 **/
 e.exports = {
   lineClamp: "lineClamp__0b48b"
 }

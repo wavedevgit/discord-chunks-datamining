@@ -1,4 +1,4 @@
-/** Chunk was on 64040 **/
+/** Chunk was on 95124 **/
 n.d(t, {
   Z: () => y
 });
@@ -32,9 +32,9 @@ function y(e) {
         guild_id: t.guild_id
       })
     }, [v, t.id, t.guild_id]), null == t.guild_id) return null;
-  let S = o()(m.statusDiv, n && C ? m.hoverable : null);
+  let x = o()(m.statusDiv, n && C ? m.hoverable : null);
   return v ? (0, r.jsx)(a.P3F, {
-    className: S,
+    className: x,
     onClick: C ? _ : void 0,
     children: (0, r.jsx)(a.Text, {
       variant: "text-xs/medium",
@@ -46,7 +46,7 @@ function y(e) {
       })
     })
   }) : n && C && (!j || l) ? (0, r.jsxs)(a.P3F, {
-    className: S,
+    className: x,
     onClick: _,
     children: [(0, r.jsx)(a.Text, {
       variant: "text-xs/medium",

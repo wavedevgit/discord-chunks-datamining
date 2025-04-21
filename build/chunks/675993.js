@@ -20,8 +20,8 @@ var i = n(200651),
   _ = n(427996),
   y = n(906732),
   x = n(706302),
-  v = n(812236),
-  C = n(835473),
+  C = n(812236),
+  v = n(835473),
   g = n(146282),
   j = n(26033),
   P = n(70097),
@@ -88,12 +88,12 @@ function F(e) {
   } = e, x = r.useMemo(() => {
     var e;
     return null != (e = (0, S.jD)(l)) ? e : ""
-  }, [l]), v = (0, d.e7)([f.Z], () => f.Z.inDevModeForApplication(l.id)), {
-    isSlideReady: C
+  }, [l]), C = (0, d.e7)([f.Z], () => f.Z.inDevModeForApplication(l.id)), {
+    isSlideReady: v
   } = (0, T.hH)(), [N, E] = r.useState(!1);
   r.useEffect(() => {
-    C && E(!0)
-  }, [C]);
+    v && E(!0)
+  }, [v]);
   let O = null != a,
     R = A.PM.useExperiment({
       location: "AppLauncherProfile"
@@ -202,7 +202,7 @@ function F(e) {
           application: l
         }), x.length > 0 ? (0, i.jsx)(Q, {
           description: x
-        }) : null, v ? (0, i.jsx)("div", {
+        }) : null, C ? (0, i.jsx)("div", {
           className: U.developerShelfControlsContainer,
           children: (0, i.jsx)(_.W, {
             hideSearch: !0,
@@ -212,7 +212,7 @@ function F(e) {
           context: n,
           application: l,
           sectionName: p,
-          isDeveloperOfThisApp: v,
+          isDeveloperOfThisApp: C,
           hasCommands: b
         })]
       }), R.enabled || Z ? null : (0, i.jsx)(z, {
@@ -324,7 +324,7 @@ function Y(e) {
     sectionName: a,
     hasCommands: s,
     isDeveloperOfThisApp: c
-  } = e, u = (0, v.Fs)(n, l.id), d = (0, C.q)(l.id), f = null == d || null == (t = d.bot) ? void 0 : t.id, h = (0, x.Z)({
+  } = e, u = (0, C.Fs)(n, l.id), d = (0, v.q)(l.id), f = null == d || null == (t = d.bot) ? void 0 : t.id, h = (0, x.Z)({
     context: n,
     application: l,
     botUserId: f

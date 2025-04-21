@@ -1,4 +1,4 @@
-/** Chunk was on 64040 **/
+/** Chunk was on 95124 **/
 n.d(t, {
   Z: () => R
 });
@@ -23,8 +23,8 @@ var r = n(200651),
   v = n(876548),
   C = n(25601),
   j = n(207055),
-  S = n(981631),
-  x = n(124368),
+  x = n(981631),
+  S = n(124368),
   E = n(388032),
   I = n(915887),
   P = n(768107),
@@ -163,10 +163,10 @@ let R = i.memo(function(e) {
     mentionCount: b.ZP.getMentionCount(t.id),
     isMentionLowImportance: b.ZP.getIsMentionLowImportance(t.id)
   })), B = (0, a.e7)([f.Z], () => f.Z.isMuted(t.id)), V = i.useCallback(e => {
-    (0, g.ok)(t, !e.shiftKey, x.on.CHANNEL_LIST)
-  }, [t]), F = i.useCallback(() => {
+    (0, g.ok)(t, !e.shiftKey, S.on.CHANNEL_LIST)
+  }, [t]), H = i.useCallback(() => {
     u.Z.preload(t.guild_id, t.id)
-  }, [t.guild_id, t.id]), H = i.useCallback(e => {
+  }, [t.guild_id, t.id]), F = i.useCallback(e => {
     let i = m.Z.getChannel(t.id);
     null != i && (0, d.jW)(e, async () => {
       let {
@@ -228,8 +228,8 @@ let R = i.memo(function(e) {
           [P.modeUnreadImportant]: !B && !l && M,
           [P.withGuildIcon]: D
         }),
-        onMouseDown: F,
-        onContextMenu: H,
+        onMouseDown: H,
+        onContextMenu: F,
         children: [!M || B || l ? null : (0, r.jsx)("div", {
           className: o()(P.unread, P.unreadImportant)
         }), (0, r.jsx)(c.P3F, Z(N({}, K), {
@@ -265,7 +265,7 @@ let R = i.memo(function(e) {
       collapsed: !w,
       collapsedMax: 6,
       voiceStates: L,
-      location: S.Sbl.GUILD_CHANNEL_LIST
+      location: x.Sbl.GUILD_CHANNEL_LIST
     })]
   })
 })

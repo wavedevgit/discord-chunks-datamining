@@ -1,6 +1,6 @@
-/** Chunk was on 64040 **/
+/** Chunk was on 95124 **/
 n.d(t, {
-  m: () => S
+  m: () => x
 });
 var r = n(200651),
   i = n(192379),
@@ -24,19 +24,19 @@ var r = n(200651),
   C = n(388032),
   j = n(990252);
 
-function S(e) {
+function x(e) {
   let {
     guild: t,
-    selected: S
-  } = e, x = (0, h.Z)(t), E = (0, u.wE)(o.z.CHANNEL_BROWSER_NEW_BADGE_NUX), I = (0, l.Wu)([p.Z], () => Array.from(p.Z.getNewChannelIds(t.id)).filter(e => p.Z.shouldIndicateNewChannel(t.id, e))), P = (0, l.e7)([g.ZP], () => g.ZP.hasUnread(t.id, v.W.GUILD_ONBOARDING_QUESTION)), w = I.length > b.Cb, N = (0, l.e7)([d.Z, g.ZP], () => {
+    selected: x
+  } = e, S = (0, h.Z)(t), E = (0, u.wE)(o.z.CHANNEL_BROWSER_NEW_BADGE_NUX), I = (0, l.Wu)([p.Z], () => Array.from(p.Z.getNewChannelIds(t.id)).filter(e => p.Z.shouldIndicateNewChannel(t.id, e))), P = (0, l.e7)([g.ZP], () => g.ZP.hasUnread(t.id, v.W.GUILD_ONBOARDING_QUESTION)), w = I.length > b.Cb, N = (0, l.e7)([d.Z, g.ZP], () => {
     let e = d.Z.lastFetchedAt(t.id),
       n = g.ZP.lastMessageId(t.id, v.W.GUILD_ONBOARDING_QUESTION);
     if (null == n) return !1;
     let r = m.default.extractTimestamp(n);
     return null != e && e > r
   }), Z = i.useCallback(() => {
-    (0, f.uL)(_.Z5c.CHANNEL(t.id, x ? O.oC.CUSTOMIZE_COMMUNITY : O.oC.CHANNEL_BROWSER))
-  }, [t.id, x]), T = i.useCallback(e => {
+    (0, f.uL)(_.Z5c.CHANNEL(t.id, S ? O.oC.CUSTOMIZE_COMMUNITY : O.oC.CHANNEL_BROWSER))
+  }, [t.id, S]), T = i.useCallback(e => {
     (0, c.jW)(e, async () => {
       let {
         default: e
@@ -75,7 +75,7 @@ function S(e) {
       }
     })
   }, [t]), A = null;
-  return E && !P && !w || S || N || (A = (0, r.jsx)(a.IGR, {
+  return E && !P && !w || x || N || (A = (0, r.jsx)(a.IGR, {
     color: s.Z.colors.BADGE_BRAND_BG.css,
     text: C.intl.string(C.t.y2b7CA),
     className: j.newChannel
@@ -86,8 +86,8 @@ function S(e) {
       color: "currentColor",
       className: e
     }),
-    text: x ? C.intl.string(C.t.h9mGOD) : C.intl.string(C.t.et6wam),
-    selected: S,
+    text: S ? C.intl.string(C.t.h9mGOD) : C.intl.string(C.t.et6wam),
+    selected: x,
     onClick: Z,
     onContextMenu: T,
     trailing: A

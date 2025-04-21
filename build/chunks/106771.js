@@ -24,8 +24,8 @@ function y(e) {
     command: n,
     application: y,
     onClick: x,
-    query: v,
-    searchResultsPosition: C,
+    query: C,
+    searchResultsPosition: v,
     onClickAppCardFriends: g
   } = e, j = r.useCallback(e => {
     if ((0, u.BQ)(y)) {
@@ -66,8 +66,8 @@ function y(e) {
   } = (0, h.Z)({
     applicationId: y.id,
     commandId: null == n ? void 0 : n.id,
-    query: v,
-    searchResultsPosition: C
+    query: C,
+    searchResultsPosition: v
   }), {
     enabled: I
   } = c.X.useExperiment({

@@ -1,4 +1,4 @@
-/** Chunk was on 64040 **/
+/** Chunk was on 95124 **/
 n.d(t, {
   Z: () => E
 }), n(388685);
@@ -24,7 +24,7 @@ let v = (0, m.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
   C = (0, m.Mg)(u.Z.FOLDER_ITEM_GUILD_ICON_SIZE),
   j = ["13px 4px 4px 4px", "4px 13px 4px 4px", "4px 4px 4px 13px", "4px 4px 13px 4px"];
 
-function S(e) {
+function x(e) {
   let {
     guildId: t,
     animate: n,
@@ -47,7 +47,7 @@ function S(e) {
   })
 }
 
-function x(e) {
+function S(e) {
   let t, n, {
       folderNode: l,
       hovered: o,
@@ -62,7 +62,7 @@ function x(e) {
     m = g === y.Wyy,
     b = f.map(e => e.id),
     [_, j] = i.useState(!1),
-    [x, E] = i.useState(c),
+    [S, E] = i.useState(c),
     I = u ? c ? 22 : -11 : c ? 0 : -C,
     P = (0, d.q_F)({
       transform: "translate3d(0, ".concat(I, "px, 0)"),
@@ -77,7 +77,7 @@ function x(e) {
       }
     }, "animate-always"),
     w = _ ? P : void 0;
-  (_ || x) && (t = (0, r.jsx)(s.animated.div, {
+  (_ || S) && (t = (0, r.jsx)(s.animated.div, {
     style: w,
     className: O.expandedFolderIconWrapper,
     children: (0, r.jsx)(d.ROc, {
@@ -87,10 +87,10 @@ function x(e) {
         color: (0, a.Rf)(g)
       }
     })
-  })), (_ || !x) && (n = (0, r.jsx)(s.animated.div, {
+  })), (_ || !S) && (n = (0, r.jsx)(s.animated.div, {
     style: w,
     className: O.closedFolderIconWrapper,
-    children: b.slice(0, 4).map((e, t) => (0, r.jsx)(S, {
+    children: b.slice(0, 4).map((e, t) => (0, r.jsx)(x, {
       index: t,
       guildId: e,
       animate: o
@@ -122,7 +122,7 @@ function E(e) {
     folderIconContentClassName: v,
     folderIconContent: C,
     onClick: j,
-    onContextMenu: S,
+    onContextMenu: x,
     onHoverChange: E,
     onKeyDown: I,
     treeItemProps: {
@@ -183,7 +183,7 @@ function E(e) {
         [O.hover]: T
       }),
       onClick: j,
-      onContextMenu: S,
+      onContextMenu: x,
       onMouseEnter: R,
       onMouseLeave: D,
       onKeyDown: I,
@@ -205,7 +205,7 @@ function E(e) {
       }), null != C ? (0, r.jsx)("div", {
         className: o()(O.expandedFolderIconWrapper, v),
         children: C
-      }) : (0, r.jsx)(x, {
+      }) : (0, r.jsx)(S, {
         folderNode: l,
         hovered: T,
         expanded: a

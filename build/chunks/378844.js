@@ -1,4 +1,4 @@
-/** Chunk was on 64040 **/
+/** Chunk was on 95124 **/
 n.d(t, {
   R: () => y,
   Z: () => _
@@ -47,13 +47,13 @@ let _ = e => {
     notEmailVerified: v,
     notPhoneVerified: C,
     newAccount: j,
-    newMember: S
-  } = (0, l.e7)([d.Z], () => d.Z.getCheck(r), [r]), x = 0 === t ? g.intl.string(g.t["6zY8BA"]) : null, E = null, I = null;
-  return (0 === t && (O ? (E = g.intl.string(g.t.IRxUlJ), I = g.intl.string(g.t.fiNVio)) : C ? (E = g.intl.string(g.t.vW8iUF), I = g.intl.string(g.t["50gfOj"])) : v ? (E = g.intl.string(g.t.vdSOp6), I = g.intl.string(g.t.lm1UKi)) : S ? (E = g.intl.formatToPlainString(g.t.v1ktYW, {
+    newMember: x
+  } = (0, l.e7)([d.Z], () => d.Z.getCheck(r), [r]), S = 0 === t ? g.intl.string(g.t["6zY8BA"]) : null, E = null, I = null;
+  return (0 === t && (O ? (E = g.intl.string(g.t.IRxUlJ), I = g.intl.string(g.t.fiNVio)) : C ? (E = g.intl.string(g.t.vW8iUF), I = g.intl.string(g.t["50gfOj"])) : v ? (E = g.intl.string(g.t.vdSOp6), I = g.intl.string(g.t.lm1UKi)) : x ? (E = g.intl.formatToPlainString(g.t.v1ktYW, {
     min: p.YeM.MEMBER_AGE
   }), I = g.intl.string(g.t.BddRzc)) : j && (E = g.intl.formatToPlainString(g.t["sncw4+"], {
     min: p.YeM.ACCOUNT_AGE
-  }), I = g.intl.string(g.t.BddRzc))), null == x || null == E) ? null : (0, i.jsxs)(o.VqE, {
+  }), I = g.intl.string(g.t.BddRzc))), null == S || null == E) ? null : (0, i.jsxs)(o.VqE, {
     className: m.container,
     "aria-labelledby": _,
     children: [(0, i.jsx)("img", {
@@ -65,7 +65,7 @@ let _ = e => {
       children: [(0, i.jsx)(o.X6q, {
         variant: "heading-md/semibold",
         id: _,
-        children: x
+        children: S
       }), (0, i.jsx)(o.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",

@@ -1,4 +1,4 @@
-/** Chunk was on 64040 **/
+/** Chunk was on 95124 **/
 n.d(t, {
   Z: () => Q
 }), n(415506), n(388685), n(35282), n(290780);
@@ -22,8 +22,8 @@ var r, i = n(200651),
   v = n(888369),
   C = n(430824),
   j = n(306680),
-  S = n(944486),
-  x = n(938475),
+  x = n(944486),
+  S = n(938475),
   E = n(483360),
   I = n(585483),
   P = n(63063),
@@ -100,7 +100,7 @@ class V extends(r = l.Component) {
 k(V, "defaultProps", {
   unread: !1
 });
-let F = c.ZP.connectStores([j.ZP, O.Z], e => {
+let H = c.ZP.connectStores([j.ZP, O.Z], e => {
     let {
       channel: t
     } = e;
@@ -111,13 +111,13 @@ let F = c.ZP.connectStores([j.ZP, O.Z], e => {
       category: O.Z.getChannel(t.parent_id)
     }
   })(V),
-  H = c.ZP.connectStores([x.ZP], e => {
+  F = c.ZP.connectStores([S.ZP], e => {
     let {
       channel: t
     } = e;
     if (null == t.guild_id) throw Error("ConnectedVoiceChannel - somehow we got a voice channel with no guild_id...");
     return {
-      voiceStates: x.ZP.getVoiceStates(t.guild_id)[t.id]
+      voiceStates: S.ZP.getVoiceStates(t.guild_id)[t.id]
     }
   })(V),
   z = c.ZP.connectStores([v.default], e => {
@@ -391,7 +391,7 @@ class q extends l.PureComponent {
             } = await Promise.all([n.e("79695"), n.e("53912"), n.e("2016")]).then(n.bind(n, 354741));
             return n => (0, i.jsx)(e, U(M({}, n), {
               channel: t.record,
-              selected: S.Z.getChannelId() === t.record.id,
+              selected: x.Z.getChannelId() === t.record.id,
               onSelect: w.Cp
             }))
           });
@@ -470,7 +470,7 @@ class q extends l.PureComponent {
             children: n.record.text
           }, "".concat(n.type, "-").concat(n.record.id));
         case f.h8.TEXT_CHANNEL:
-          return (0, i.jsx)(F, {
+          return (0, i.jsx)(H, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
             onClick: () => this.selectResult(n),
@@ -481,7 +481,7 @@ class q extends l.PureComponent {
             score: l ? n.score : void 0
           }, "".concat(n.type, "-").concat(n.record.id));
         case f.h8.VOICE_CHANNEL:
-          return (0, i.jsx)(H, {
+          return (0, i.jsx)(F, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
             onClick: () => this.selectResult(n),

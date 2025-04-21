@@ -1,4 +1,4 @@
-/** Chunk was on 64040 **/
+/** Chunk was on 95124 **/
 n.d(t, {
   Z: () => y
 }), n(539854), n(388685);
@@ -70,7 +70,7 @@ let y = i.memo(function(e) {
     name: O,
     color: v,
     children: C
-  } = t, j = C.map(e => e.id), S = (0, a.Z)(e => e.guildId), x = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(_)), E = function(e) {
+  } = t, j = C.map(e => e.id), x = (0, a.Z)(e => e.guildId), S = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(_)), E = function(e) {
     let t = e.children.map(e => {
         let t = e.id,
           n = d.Z.getGuild(t);
@@ -105,8 +105,8 @@ let y = i.memo(function(e) {
   }, [_, O, v, N, P]);
   return (0, r.jsx)(p.Z, b(m({}, y), {
     folderNode: t,
-    expanded: x,
-    selected: null != S && j.includes(S),
+    expanded: S,
+    selected: null != x && j.includes(x),
     mentionCount: P,
     isMentionLowImportance: w,
     unread: N,

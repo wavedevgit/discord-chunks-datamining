@@ -1,4 +1,4 @@
-/** Chunk was on 64040 **/
+/** Chunk was on 95124 **/
 n.d(t, {
   Z: () => ep
 }), n(388685);
@@ -23,8 +23,8 @@ var r = n(200651),
   v = n(906732),
   C = n(358221),
   j = n(540059),
-  S = n(706590),
-  x = n(940777),
+  x = n(706590),
+  S = n(940777),
   E = n(41776),
   I = n(905423),
   P = n(802718),
@@ -42,8 +42,8 @@ var r = n(200651),
   G = n(257351),
   B = n(474109),
   V = n(741616),
-  F = n(187835),
-  H = n(118122),
+  H = n(187835),
+  F = n(118122),
   z = n(193154),
   W = n(602147),
   Y = n(222059),
@@ -205,7 +205,7 @@ function ed(e) {
     return [e, e.version]
   }), p = (0, h.e7)([E.Z], () => E.Z.lurkingGuildIds()), b = i.useMemo(() => n ? [] : p, [p, n]), _ = (0, h.Wu)([R.Z, A.ZP], () => k.default.keys(R.Z.getGuilds()).filter(e => A.ZP.isCurrentUserGuest(e))), G = b.concat(_), ei = (0, h.e7)([C.Z], () => C.Z.isFullscreenInContext()), ea = (0, h.e7)([R.Z], () => R.Z.getGeoRestrictedGuilds()), [ed, eh] = i.useState(!1), ep = i.useCallback(() => eh(!0), []), ef = i.useCallback(() => eh(!1), []), eg = i.useRef(!1), [em] = i.useState(() => new f.V7), eb = i.useRef(null), ey = i.useRef(null), e_ = (0, u.OP)(), {
     ref: eO
-  } = e_, ev = es(e_, ["ref"]), eC = (0, m.mFp)(), [ej, eS] = i.useState(!1), [ex, eE] = i.useState(!1), eI = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), eP = (0, m.dQu)(g.Z.space.SPACE_XS), ew = i.useMemo(() => new eu(d, eS, eE, () => {
+  } = e_, ev = es(e_, ["ref"]), eC = (0, m.mFp)(), [ej, ex] = i.useState(!1), [eS, eE] = i.useState(!1), eI = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), eP = (0, m.dQu)(g.Z.space.SPACE_XS), ew = i.useMemo(() => new eu(d, ex, eE, () => {
     var e, t;
     null == (e = eb.current) || e.calculateState(), null == (t = ey.current) || t.calculateState()
   }, ec(eI, a, eP)), [eI, eP, d, a]);
@@ -280,7 +280,7 @@ function ed(e) {
       }
     }, [ep, ef, ed, ew.setNodeRef]),
     eL = d.getRoots(),
-    ek = (0, S.Z)(),
+    ek = (0, x.Z)(),
     eM = (0, P.U)(),
     {
       enabled: eU
@@ -296,8 +296,8 @@ function ed(e) {
     }),
     {
       shouldShow: eV,
-      questId: eF,
-      onDiscoveryButtonClick: eH
+      questId: eH,
+      onDiscoveryButtonClick: eF
     } = eB,
     ez = es(eB, ["shouldShow", "questId", "onDiscoveryButtonClick"]),
     eW = eU && eV,
@@ -308,10 +308,10 @@ function ed(e) {
     }, e.id)),
     eK = (0, r.jsx)(W.Z, {
       ref: eG,
-      questId: eW ? eF : void 0,
+      questId: eW ? eH : void 0,
       selected: eT,
       className: er.discoveryIcon,
-      onClick: eW ? eH : void 0
+      onClick: eW ? eF : void 0
     }),
     eq = eW ? (0, r.jsx)(N.fO, eo(el({
       targetElementRef: eG,
@@ -345,13 +345,13 @@ function ed(e) {
               className: o()({
                 [er.scroller]: !0,
                 [er.scrolling]: ej,
-                [er.isScrolledToBottom]: ex
+                [er.isScrolledToBottom]: eS
               }),
               experimental_useStack: a,
               gap: "xs",
               ref: ew.scrollerRef,
               onScroll: ew.handleScroll,
-              children: [(0, r.jsx)(Y.u, {}), ek ? (0, r.jsx)(x.Z, {}) : null, (0, r.jsx)(K.Z, {
+              children: [(0, r.jsx)(Y.u, {}), ek ? (0, r.jsx)(S.Z, {}) : null, (0, r.jsx)(K.Z, {
                 isOnHubVerificationRoute: eA
               }), (0, r.jsx)(V.Z, {}), eM, G.map(e => (0, r.jsx)(ee.Z, {
                 guildId: e
@@ -362,10 +362,10 @@ function ed(e) {
                 "aria-label": en.intl.string(en.t["7hB4kp"]),
                 gap: "xs",
                 children: eL.map((e, t) => eD(e, t, eL.length))
-              }), eY, (0, r.jsx)(Q.Z, {}), n ? null : (0, r.jsx)(H.Z, {
+              }), eY, (0, r.jsx)(Q.Z, {}), n ? null : (0, r.jsx)(F.Z, {
                 disableTooltip: b.length > 0,
                 lastTargetNode: eL[eL.length - 1]
-              }), n ? null : eq, t ? null : (0, r.jsx)(F.Z, {})]
+              }), n ? null : eq, t ? null : (0, r.jsx)(H.Z, {})]
             })
           })
         })), (0, r.jsx)(B.Z, {
@@ -394,7 +394,7 @@ function eh(e) {
     return [e, e.version]
   }), p = (0, h.e7)([E.Z], () => E.Z.lurkingGuildIds()), b = i.useMemo(() => n ? [] : p, [p, n]), _ = (0, h.Wu)([R.Z, A.ZP], () => k.default.keys(R.Z.getGuilds()).filter(e => A.ZP.isCurrentUserGuest(e))), G = b.concat(_), ei = (0, h.e7)([C.Z], () => C.Z.isFullscreenInContext()), ea = (0, h.e7)([R.Z], () => R.Z.getGeoRestrictedGuilds()), [ed, eh] = i.useState(!1), ep = i.useCallback(() => eh(!0), []), ef = i.useCallback(() => eh(!1), []), eg = i.useRef(!1), [em] = i.useState(() => new f.V7), eb = i.useRef(null), ey = i.useRef(null), e_ = (0, u.OP)(), {
     ref: eO
-  } = e_, ev = es(e_, ["ref"]), eC = (0, m.mFp)(), [ej, eS] = i.useState(!1), [ex, eE] = i.useState(!1), eI = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), eP = (0, m.dQu)(g.Z.space.SPACE_XS), ew = i.useMemo(() => new eu(d, eS, eE, () => {
+  } = e_, ev = es(e_, ["ref"]), eC = (0, m.mFp)(), [ej, ex] = i.useState(!1), [eS, eE] = i.useState(!1), eI = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), eP = (0, m.dQu)(g.Z.space.SPACE_XS), ew = i.useMemo(() => new eu(d, ex, eE, () => {
     var e, t;
     null == (e = eb.current) || e.calculateState(), null == (t = ey.current) || t.calculateState()
   }, ec(eI, a, eP)), [eI, eP, d, a]);
@@ -469,7 +469,7 @@ function eh(e) {
       }
     }, [ep, ef, ed, ew.setNodeRef]),
     eL = d.getRoots(),
-    ek = (0, S.Z)(),
+    ek = (0, x.Z)(),
     eM = (0, P.U)(),
     {
       enabled: eU
@@ -485,8 +485,8 @@ function eh(e) {
     }),
     {
       shouldShow: eV,
-      questId: eF,
-      onDiscoveryButtonClick: eH
+      questId: eH,
+      onDiscoveryButtonClick: eF
     } = eB,
     ez = es(eB, ["shouldShow", "questId", "onDiscoveryButtonClick"]),
     eW = eU && eV,
@@ -497,10 +497,10 @@ function eh(e) {
     }, e.id)),
     eK = (0, r.jsx)(W.Z, {
       ref: eG,
-      questId: eW ? eF : void 0,
+      questId: eW ? eH : void 0,
       selected: eT,
       className: er.discoveryIcon,
-      onClick: eW ? eH : void 0
+      onClick: eW ? eF : void 0
     }),
     eq = eW ? (0, r.jsx)(N.fO, eo(el({
       targetElementRef: eG,
@@ -526,7 +526,7 @@ function eh(e) {
             className: er.itemsContainer,
             children: [(0, r.jsxs)("div", {
               className: er.topSection,
-              children: [(0, r.jsx)(Y.u, {}), ek ? (0, r.jsx)(x.Z, {}) : null, (0, r.jsx)(K.Z, {
+              children: [(0, r.jsx)(Y.u, {}), ek ? (0, r.jsx)(S.Z, {}) : null, (0, r.jsx)(K.Z, {
                 isOnHubVerificationRoute: eA
               }), eM, G.map(e => (0, r.jsx)(ee.Z, {
                 guildId: e
@@ -546,7 +546,7 @@ function eh(e) {
               }), (0, r.jsxs)(m.xVE, {
                 className: o()(er.scroller, er.scrollerBottomSection, {
                   [er.scrolling]: ej,
-                  [er.isScrolledToBottom]: ex
+                  [er.isScrolledToBottom]: eS
                 }),
                 experimental_useStack: a,
                 gap: "xs",
@@ -556,10 +556,10 @@ function eh(e) {
                   gap: "xs",
                   "aria-label": en.intl.string(en.t["7hB4kp"]),
                   children: eL.map((e, t) => eD(e, t, eL.length))
-                }), eY, (0, r.jsx)(Q.Z, {}), n ? null : (0, r.jsx)(H.Z, {
+                }), eY, (0, r.jsx)(Q.Z, {}), n ? null : (0, r.jsx)(F.Z, {
                   disableTooltip: b.length > 0,
                   lastTargetNode: eL[eL.length - 1]
-                }), n ? null : eq, t ? null : (0, r.jsx)(F.Z, {})]
+                }), n ? null : eq, t ? null : (0, r.jsx)(H.Z, {})]
               })]
             })]
           }), (0, r.jsx)(B.Z, {

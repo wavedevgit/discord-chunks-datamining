@@ -1,4 +1,4 @@
-/** Chunk was on 64040 **/
+/** Chunk was on 95124 **/
 e.exports = {
   previewChannelRow: "previewChannelRow_d59199",
   selected: "selected_d59199",

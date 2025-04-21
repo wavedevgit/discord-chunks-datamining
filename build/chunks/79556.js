@@ -1,4 +1,4 @@
-/** Chunk was on 64040 **/
+/** Chunk was on 95124 **/
 n.d(t, {
   Z: () => U
 }), n(388685);
@@ -23,8 +23,8 @@ var r = n(200651),
   v = n(430824),
   C = n(496675),
   j = n(306680),
-  S = n(9156),
-  x = n(594174),
+  x = n(9156),
+  S = n(594174),
   E = n(109446),
   I = n(98597),
   P = n(648501),
@@ -104,11 +104,11 @@ class k extends I.ZP {
       forceTopLevelThread: v,
       embeddedApps: C,
       resolvedUnreadSetting: j,
-      withGuildIcon: S,
-      enableActivities: x
+      withGuildIcon: x,
+      enableActivities: S
     } = this.props, E = (0, b.jW)({
       location: "text_channel"
-    }).entrypoints, I = x && null != C && C.length > 0, P = (0, g.D)(O), N = (0, r.jsx)("li", {
+    }).entrypoints, I = S && null != C && C.length > 0, P = (0, g.D)(O), N = (0, r.jsx)("li", {
       className: o()(this.getClassName(), {
         [A.disabled]: this.isDisabled(),
         [A.selected]: n
@@ -141,7 +141,7 @@ class k extends I.ZP {
           isFavoriteSuggestion: _,
           channelTypeOverride: v ? Z.d4z.GUILD_TEXT : void 0,
           resolvedUnreadSetting: j,
-          withGuildIcon: S,
+          withGuildIcon: x,
           "aria-label": (0, f.ZP)({
             channel: e,
             unread: l,
@@ -226,7 +226,7 @@ class k extends I.ZP {
         }))
       });
       if (t.type === Z.d4z.DM) {
-        let i = x.default.getUser(t.getRecipientId());
+        let i = S.default.getUser(t.getRecipientId());
         null != i && (0, u.jW)(e, async () => {
           let {
             default: e
@@ -269,7 +269,7 @@ function U(e) {
     unread: j.ZP.hasUnread(t.id),
     ackMessageId: j.ZP.ackMessageId(t.id),
     isLowImportanceMention: j.ZP.getIsMentionLowImportance(t.id)
-  })), f = (0, s.e7)([S.ZP], () => S.ZP.resolveUnreadSetting(t)), g = (0, s.cj)([O.Z, C.Z], () => {
+  })), f = (0, s.e7)([x.ZP], () => x.ZP.resolveUnreadSetting(t)), g = (0, s.cj)([O.Z, C.Z], () => {
     let e = O.Z.getChannel(t.parent_id);
     return {
       canManageChannel: C.Z.can(Z.Plq.MANAGE_CHANNELS, t),
@@ -278,8 +278,8 @@ function U(e) {
   }), b = (0, s.e7)([y.Z], () => y.Z.shouldIndicateNewChannel(n.id, t.id)), {
     needSubscriptionToAccess: v,
     isSubscriptionGated: E
-  } = (0, m.Z)(t.id), I = (0, s.e7)([S.ZP], () => S.ZP.isFavorite(n.id, t.id)), w = (0, s.e7)([x.default], () => {
-    let e = x.default.getCurrentUser();
+  } = (0, m.Z)(t.id), I = (0, s.e7)([x.ZP], () => x.ZP.isFavorite(n.id, t.id)), w = (0, s.e7)([S.default], () => {
+    let e = S.default.getCurrentUser();
     return null != e && (!t.isNSFW() || e.nsfwAllowed)
   }, [t]), N = (0, h.NX)(t.id), A = (0, P.Z)({
     channel: t,

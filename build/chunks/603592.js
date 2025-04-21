@@ -1,4 +1,4 @@
-/** Chunk was on 64040 **/
+/** Chunk was on 95124 **/
 n.d(t, {
   Z: () => f
 }), n(388685);
@@ -26,8 +26,8 @@ let f = i.forwardRef(function(e, t) {
     lowerBadge: v,
     lowerBadgeSize: C,
     showPill: j = !0,
-    className: S,
-    "aria-label": x,
+    className: x,
+    "aria-label": S,
     children: E,
     onMouseEnter: I,
     onMouseLeave: P,
@@ -74,11 +74,11 @@ let f = i.forwardRef(function(e, t) {
             null == P || P(), A(!1)
           },
           onMouseDown: w,
-          className: o()(p.circleIconButton, S, {
+          className: o()(p.circleIconButton, x, {
             [p.selected]: y || T
           }),
           onClick: g,
-          "aria-label": "string" == typeof _ && null == x ? _ : x,
+          "aria-label": "string" == typeof _ && null == S ? _ : S,
           "aria-selected": y,
           onContextMenu: m,
           focusProps: {

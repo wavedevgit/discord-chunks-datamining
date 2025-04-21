@@ -1,4 +1,4 @@
-/** Chunk was on 64040 **/
+/** Chunk was on 95124 **/
 n.d(t, {
   I: () => A,
   N: () => T
@@ -62,7 +62,7 @@ function j(e) {
   })
 }
 
-function S(e) {
+function x(e) {
   let {
     children: t,
     closePopout: n
@@ -100,13 +100,13 @@ function S(e) {
   })
 }
 
-function x(e) {
+function S(e) {
   let {
     closePopout: t
   } = e, {
     analyticsLocations: n
   } = (0, h.ZP)(d.Z.SHARING_CONTROLS_COACHMARK), r = p.G6.useSetting();
-  return (0, i.jsxs)(S, {
+  return (0, i.jsxs)(x, {
     closePopout: t,
     children: [(0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
@@ -134,7 +134,7 @@ function E(e) {
   } = e, {
     analyticsLocations: n
   } = (0, h.ZP)(d.Z.SHARING_CONTROLS_COACHMARK), r = p.G6.useSetting();
-  return (0, i.jsxs)(S, {
+  return (0, i.jsxs)(x, {
     children: [(0, i.jsx)(o.X6, {
       variant: "heading-sm/semibold",
       color: "header-primary",
@@ -163,7 +163,7 @@ function I(e) {
   let {
     closePopout: t
   } = e, n = p.G6.useSetting();
-  return (0, i.jsxs)(S, {
+  return (0, i.jsxs)(x, {
     closePopout: t,
     children: [(0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
@@ -185,7 +185,7 @@ function P(e) {
   let {
     closePopout: t
   } = e, n = p.G6.useSetting();
-  return (0, i.jsxs)(S, {
+  return (0, i.jsxs)(x, {
     closePopout: t,
     children: [(0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
@@ -206,7 +206,7 @@ function P(e) {
 
 function w() {
   let e = p.G6.useSetting();
-  return (0, i.jsxs)(S, {
+  return (0, i.jsxs)(x, {
     children: [(0, i.jsx)(j, {
       showCurrentGame: e
     }), (0, i.jsx)(c.$i$, {
@@ -225,7 +225,7 @@ function N(e) {
   let {
     closePopout: t
   } = e;
-  return (0, i.jsxs)(S, {
+  return (0, i.jsxs)(x, {
     children: [(0, i.jsx)(o.X6, {
       variant: "heading-sm/semibold",
       color: "header-primary",
@@ -253,7 +253,7 @@ function N(e) {
 
 function Z() {
   let e = p.G6.useSetting();
-  return (0, i.jsxs)(S, {
+  return (0, i.jsxs)(x, {
     children: [(0, i.jsx)(j, {
       showCurrentGame: e,
       shouldShowStatus: !0
@@ -280,7 +280,7 @@ function A(e) {
       r()
     }, [r]), o) {
     case 0:
-      return (0, i.jsx)(x, {
+      return (0, i.jsx)(S, {
         closePopout: n
       });
     case 1:

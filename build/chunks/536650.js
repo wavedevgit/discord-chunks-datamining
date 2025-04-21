@@ -30,16 +30,16 @@ function _(e) {
     name: _,
     iconURL: y,
     scrollerRef: x,
-    sectionName: v
-  } = e, C = (0, o.ap)((0, s.ZP)()), g = r.useRef(null), j = r.useRef(null), P = r.useRef(null), N = r.useRef(null), E = (0, a.dQu)(a.TVs.colors.BG_BASE_PRIMARY).hex(), O = (0, c.ZP)("number" == typeof y ? "" : y, null != E ? E : ""), A = r.useMemo(() => {
+    sectionName: C
+  } = e, v = (0, o.ap)((0, s.ZP)()), g = r.useRef(null), j = r.useRef(null), P = r.useRef(null), N = r.useRef(null), E = (0, a.dQu)(a.TVs.colors.BG_BASE_PRIMARY).hex(), O = (0, c.ZP)("number" == typeof y ? "" : y, null != E ? E : ""), A = r.useMemo(() => {
     var e, t;
-    let n = (0, l.compact)([u.Z.parseHexString(O), u.Z.parseHexString(C ? "#000000" : "#ffffff")]);
+    let n = (0, l.compact)([u.Z.parseHexString(O), u.Z.parseHexString(v ? "#000000" : "#ffffff")]);
     return null != (t = null == (e = (0, d.k8)({
       colors: n,
       ratio: 5,
       saturationFactor: .6
     })) ? void 0 : e.toHexString()) ? t : O
-  }, [O, C]), I = b(g), S = b(j), T = r.useCallback(() => {
+  }, [O, v]), I = b(g), S = b(j), T = r.useCallback(() => {
     var e, t, n, i;
     let r = x.current,
       o = g.current,
@@ -54,12 +54,12 @@ function _(e) {
         p = u - c,
         m = (0, l.clamp)(t - d, p + 1, u + 20),
         f = p === m ? 1 : (0, l.clamp)((e - p) / (m - p), 0, 1);
-      o.style.filter = "brightness(".concat(1 + ((C ? 1.4 : .6) - 1) * f, ")"), o.style.backgroundColor = "color-mix(in oklab,".concat(O, " ").concat((1 - f) * 100, "%, ").concat(A, ")"), a.style.opacity = "".concat(0 + +f), a.style.transform = "translateY(".concat((i = c / 4) + (0 - i) * f, "px)"), null != s && (s.style.opacity = "".concat(1 + -1 * f))
+      o.style.filter = "brightness(".concat(1 + ((v ? 1.4 : .6) - 1) * f, ")"), o.style.backgroundColor = "color-mix(in oklab,".concat(O, " ").concat((1 - f) * 100, "%, ").concat(A, ")"), a.style.opacity = "".concat(0 + +f), a.style.transform = "translateY(".concat((i = c / 4) + (0 - i) * f, "px)"), null != s && (s.style.opacity = "".concat(1 + -1 * f))
     }
-  }, [A, O, null == S ? void 0 : S.height, C, x, null == I ? void 0 : I.height]);
+  }, [A, O, null == S ? void 0 : S.height, v, x, null == I ? void 0 : I.height]);
   return r.useEffect(() => {
     T()
-  }, [T, C]), r.useEffect(() => {
+  }, [T, v]), r.useEffect(() => {
     let e = x.current,
       t = () => {
         T()
@@ -97,7 +97,7 @@ function _(e) {
         application: t,
         context: n,
         className: h.headerButton,
-        sectionName: v
+        sectionName: C
       })
     }) : null, (0, i.jsx)("div", {
       ref: j,

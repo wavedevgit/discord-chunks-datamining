@@ -1,6 +1,6 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => v
+  Z: () => C
 }), n(388685);
 var i = n(200651),
   r = n(192379),
@@ -20,12 +20,12 @@ var i = n(200651),
   y = n(388032),
   x = n(854408);
 
-function v(e) {
+function C(e) {
   let {
     context: t,
     application: n,
-    sectionName: v,
-    primaryEntryPointCommand: C,
+    sectionName: C,
+    primaryEntryPointCommand: v,
     buttonSize: g = l.PhG.MEDIUM,
     playSolo: j = !1
   } = e, P = r.useId(), N = r.useCallback(() => {
@@ -45,7 +45,7 @@ function v(e) {
     context: t
   }), L = u.PM.useExperiment({
     location: "AppPrimaryEntryPointButton()"
-  }), w = r.useMemo(() => (0, f.XZ)(C.displayName), [C.displayName]), {
+  }), w = r.useMemo(() => (0, f.XZ)(v.displayName), [v.displayName]), {
     onActivityItemSelected: R,
     buttonColor: Z,
     buttonText: k
@@ -53,7 +53,7 @@ function v(e) {
     context: t,
     application: n,
     location: a.Vh.APP_LAUNCHER_APPLICATION_VIEW,
-    sectionName: v,
+    sectionName: C,
     commandName: w,
     autoDismissOnClick: T === o.JS.LEAVE,
     launchingComponentId: P,

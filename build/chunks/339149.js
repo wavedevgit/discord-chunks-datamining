@@ -1,4 +1,4 @@
-/** Chunk was on 64040 **/
+/** Chunk was on 95124 **/
 n.d(t, {
   E: () => P,
   Z: () => w
@@ -32,7 +32,7 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function S(e) {
   }
   return e
 }
-let x = {
+let S = {
   [O.vxO.INSTALLING]: {
     [f.J6.NONE]: (e, t) => v.intl.formatToPlainString(v.t["p+2sEx"], {
       name: e
@@ -131,7 +131,7 @@ class E extends l.PureComponent {
       if (null == l || null == o || null == i) return null;
       let a = e[e.length - 1] / t * 1e3,
         c = 0 !== a ? Math.max(1, (o - l) / a) : null,
-        u = x[s],
+        u = S[s],
         d = null != u ? Object.keys(u) : [],
         {
           unit: h,
@@ -193,7 +193,7 @@ class I extends(r = l.PureComponent) {
         "aria-label": !1,
         children: n => {
           var r, l;
-          return (0, i.jsx)("div", (r = S({}, n), l = l = {
+          return (0, i.jsx)("div", (r = x({}, n), l = l = {
             children: (0, i.jsx)(h._3P, {
               percent: e,
               colorOverride: t ? u.Z.unsafe_rawColors.PRIMARY_500.css : null,
@@ -274,6 +274,6 @@ let w = c.ZP.connectStores([b.Z, m.Z, p.Z], () => {
   }(e, ["determineOwnVisibility"]);
   return t ? (0, i.jsx)(d.W, {
     component: l.Fragment,
-    children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(I, S({}, n)) : null
-  }) : (0, i.jsx)(I, S({}, n))
+    children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(I, x({}, n)) : null
+  }) : (0, i.jsx)(I, x({}, n))
 })

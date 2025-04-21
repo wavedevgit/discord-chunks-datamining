@@ -1,8 +1,5 @@
-/** Chunk was on web.js **/
-"use strict";
+/** Chunk was on 78701 **/
 n.d(t, {
-  PH: () => i,
-  zW: () => r
+  iZ: () => r
 });
-let r = 6,
-  i = 2
+let r = 6

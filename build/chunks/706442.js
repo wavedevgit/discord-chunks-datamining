@@ -1,4 +1,4 @@
-/** Chunk was on 64040 **/
+/** Chunk was on 95124 **/
 e.exports = {
   chatWallpaperDMListCoachmarkArt: "chatWallpaperDMListCoachmarkArt_f36944"
 }

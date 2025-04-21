@@ -1,4 +1,4 @@
-/** Chunk was on 64040 **/
+/** Chunk was on 95124 **/
 n.d(t, {
   Z: () => D
 }), n(388685), n(539854);
@@ -23,8 +23,8 @@ var r = n(200651),
   v = n(592125),
   C = n(944486),
   j = n(979651),
-  S = n(709054),
-  x = n(853856),
+  x = n(709054),
+  S = n(853856),
   E = n(593214),
   I = n(919755),
   P = n(110977),
@@ -70,15 +70,15 @@ function D() {
     {
       favoriteServerMuted: U,
       favoriteChannels: G
-    } = (0, a.cj)([x.Z], () => ({
-      favoriteChannels: x.Z.getFavoriteChannels(),
-      favoriteServerMuted: x.Z.favoriteServerMuted
+    } = (0, a.cj)([S.Z], () => ({
+      favoriteChannels: S.Z.getFavoriteChannels(),
+      favoriteServerMuted: S.Z.favoriteServerMuted
     })),
     B = (0, a.e7)([C.Z], () => C.Z.getChannelId(N.I_8)),
     V = (0, a.e7)([v.Z], () => v.Z.getChannel(B)),
-    F = (0, _.Z)(e => e.guildId) === N.I_8,
+    H = (0, _.Z)(e => e.guildId) === N.I_8,
     {
-      badge: H,
+      badge: F,
       unread: z
     } = (0, I.Z)(G),
     W = function(e) {
@@ -91,7 +91,7 @@ function D() {
         }),
         i = (0, a.e7)([O.Z], () => O.Z.getAllApplicationStreams().some(t => null != e[t.channelId])),
         l = (0, a.e7)([j.Z], () => n && null != t && j.Z.hasVideo(t), [n, t]),
-        o = (0, a.Wu)([h.ZP], () => S.default.keys(e).reduce((e, t) => (e.push(...h.ZP.getEmbeddedActivitiesForChannel(t)), e), [])),
+        o = (0, a.Wu)([h.ZP], () => x.default.keys(e).reduce((e, t) => (e.push(...h.ZP.getEmbeddedActivitiesForChannel(t)), e), [])),
         s = (0, a.e7)([h.ZP], () => Array.from(h.ZP.getSelfEmbeddedActivities().values()).some(t => {
           let {
             location: n
@@ -112,14 +112,14 @@ function D() {
         activity: g
       })
     }(G),
-    Y = H > 0 ? (0, y.N)(H) : null,
+    Y = F > 0 ? (0, y.N)(F) : null,
     K = (0, f.Q3)("FavoritesButton"),
     q = i.useCallback(() => {
       L()
     }, [L]);
   return (0, r.jsxs)(m.H, {
     children: [(0, r.jsx)(g.Z, {
-      selected: F,
+      selected: H,
       hovered: k,
       unread: z && !U,
       className: T.pill
@@ -127,20 +127,20 @@ function D() {
       onShow: q,
       children: (0, r.jsx)(P.S, {
         children: (0, r.jsx)(c.aRk, {
-          selected: K || F || k,
+          selected: K || H || k,
           upperBadge: W,
           lowerBadge: Y,
           children: (0, r.jsx)(c.LYs, (e = A({}, l), t = t = {
             ariaLabel: Z.intl.formatToPlainString(Z.t["/uzRsr"], {
               guildName: Z.intl.string(Z.t.wMWycn),
-              mentions: H
+              mentions: F
             }),
-            "aria-selected": F,
+            "aria-selected": H,
             to: {
               pathname: N.Z5c.CHANNEL(N.I_8, B),
               state: R
             },
-            selected: F || k,
+            selected: H || k,
             onMouseEnter: () => M(!0),
             onMouseLeave: () => M(!1),
             onMouseDown: function() {

@@ -1,4 +1,4 @@
-/** Chunk was on 64040 **/
+/** Chunk was on 95124 **/
 n.d(t, {
   Z: () => b
 });
@@ -21,7 +21,7 @@ let b = i.memo(function(e) {
   let {
     guildNode: b,
     lowerBadge: y
-  } = e, _ = b.id, O = (0, l.e7)([h.Z], () => h.Z.getGuild(_)), v = (0, s.E)(O), C = (0, l.e7)([p.Z], () => p.Z.isFocused()), j = (0, l.e7)([u.Z], () => u.Z.isUnavailable(_)), S = (0, c.Z)(e => e.guildId), x = (0, f.Z)(_), {
+  } = e, _ = b.id, O = (0, l.e7)([h.Z], () => h.Z.getGuild(_)), v = (0, s.E)(O), C = (0, l.e7)([p.Z], () => p.Z.isFocused()), j = (0, l.e7)([u.Z], () => u.Z.isUnavailable(_)), x = (0, c.Z)(e => e.guildId), S = (0, f.Z)(_), {
     badge: E,
     unread: I,
     isMentionLowImportance: P
@@ -60,12 +60,12 @@ let b = i.memo(function(e) {
     guild: O,
     unavailable: j,
     animatable: C,
-    selected: S === _,
+    selected: x === _,
     badge: E,
     isMentionLowImportance: P,
     lowerBadge: N,
     unread: I,
-    mediaState: x,
+    mediaState: S,
     guildJoinRequestStatus: v
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

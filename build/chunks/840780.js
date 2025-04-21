@@ -1,4 +1,4 @@
-/** Chunk was on 64040 **/
+/** Chunk was on 95124 **/
 n.d(t, {
   Z: () => e_
 }), n(388685), n(539854);
@@ -23,8 +23,8 @@ var r = n(200651),
   v = n(566620),
   C = n(317381),
   j = n(736409),
-  S = n(367907),
-  x = n(835473),
+  x = n(367907),
+  S = n(835473),
   E = n(413523),
   I = n(933557),
   P = n(194082),
@@ -42,8 +42,8 @@ var r = n(200651),
   G = n(690221),
   B = n(231664),
   V = n(759198),
-  F = n(970731),
-  H = n(131704),
+  H = n(970731),
+  F = n(131704),
   z = n(199902),
   W = n(314897),
   Y = n(592125),
@@ -227,7 +227,7 @@ class ey extends i.PureComponent {
         size: R.Z.Sizes.SMALL
       }), (0, r.jsxs)("div", {
         className: ep.info,
-        children: [t, null != l && (0, H.Qm)(l.type) ? b : (0, r.jsx)(eb, {
+        children: [t, null != l && (0, F.Qm)(l.type) ? b : (0, r.jsx)(eb, {
           timestamps: f
         })]
       })]
@@ -237,8 +237,8 @@ class ey extends i.PureComponent {
       align: "center",
       spacing: 16,
       shouldShow: u,
-      renderPopout: () => (0, r.jsx)(F.ZP, {
-        color: F.BD.PRIMARY,
+      renderPopout: () => (0, r.jsx)(H.ZP, {
+        color: H.BD.PRIMARY,
         header: eh.intl.string(eh.t.ON4pBg),
         content: eh.intl.string(eh.t["8PAfND"]),
         buttonCTA: eh.intl.string(eh.t.WAI6xs),
@@ -250,7 +250,7 @@ class ey extends i.PureComponent {
         onClick: () => {
           d(ed.L.USER_DISMISS)
         },
-        caretPosition: F.DF.BOTTOM_CENTER
+        caretPosition: H.DF.BOTTOM_CENTER
       }),
       children: e => (0, r.jsx)(h.P3F, em(eg({}, e), {
         className: o()(ep.gameWrapper, ep.clickableGameWrapper, {
@@ -259,7 +259,7 @@ class ey extends i.PureComponent {
         onClick: () => {
           p.Z.dispatch({
             type: "ACTIVITY_POPOUT_WINDOW_OPEN"
-          }), u && d(ed.L.TAKE_ACTION), (0, S.yw)(ec.rMx.ACTIVITY_PANEL_GAME_CARD_ACTIVITY_POPOUT_REFOCUS_CLICKED)
+          }), u && d(ed.L.TAKE_ACTION), (0, x.yw)(ec.rMx.ACTIVITY_PANEL_GAME_CARD_ACTIVITY_POPOUT_REFOCUS_CLICKED)
         },
         children: y
       }))
@@ -302,10 +302,10 @@ class ey extends i.PureComponent {
       } = this.props;
       a()(null != t, "Channel is null during navigation click"), a()(null != n, "Activity null during navigation click"), g.Z.channelListScrollTo(null != (e = t.guild_id) ? e : ec.ME, t.id), !(0, _.R)({
         isContextless: n.location.kind === c.E.CONTEXTLESS
-      }) && ((0, H.vd)(t.type) && f.Z.selectParticipant(t.id, (0, E.gN)({
+      }) && ((0, F.vd)(t.type) && f.Z.selectParticipant(t.id, (0, E.gN)({
         applicationId: n.applicationId,
         instanceId: n.compositeInstanceId
-      })), (0, H.Qm)(t.type) && (0, v.tg)(eu.Ez.PANEL))
+      })), (0, F.Qm)(t.type) && (0, v.tg)(eu.Ez.PANEL))
     })
   }
 }
@@ -338,7 +338,7 @@ let e_ = (0, b.Z)(function(e) {
     b = (0, u.e7)([y.Z], () => y.Z.useReducedMotion),
     v = (0, u.e7)([C.ZP], () => C.ZP.getCurrentEmbeddedActivity()),
     j = (0, u.e7)([q.Z, X.Z, K.ZP], () => null != a ? D.JL(a, q.Z, X.Z, !1) : null != n && D.h_(K.ZP.getChannels(n), q.Z, X.Z).length > 0),
-    [S] = (0, x.Z)([null != (t = null != m && null != m.id ? m.id : null != s && null != s.id ? s.id : null != v ? v.applicationId : void 0) ? t : ""]),
+    [x] = (0, S.Z)([null != (t = null != m && null != m.id ? m.id : null != s && null != s.id ? s.id : null != v ? v.applicationId : void 0) ? t : ""]),
     E = (0, u.e7)([w.Z], () => w.Z.getFakeGameData()),
     P = (0, u.e7)([C.ZP], () => C.ZP.getCurrentEmbeddedActivity()),
     N = (0, O.Z0)() && null != P && (0, _.R)({
@@ -349,7 +349,7 @@ let e_ = (0, b.Z)(function(e) {
     M = null != g && g.ownerId === o && g.state !== ec.jm8.ENDED,
     G = (0, u.e7)([et.default, $.Z], () => null != p ? (0, I.F6)(p, et.default, $.Z) : void 0),
     V = (0, B.Z)(),
-    [F, H] = i.useState(!1),
+    [H, F] = i.useState(!1),
     {
       showsActivityPopoutQuickRefocusNUX: el,
       markActivityPopoutQuickRefocusNUXAsDismissed: eo
@@ -375,7 +375,7 @@ let e_ = (0, b.Z)(function(e) {
     embeddedActivity: v,
     userId: o,
     runningGame: null != E ? E : s,
-    application: S,
+    application: x,
     useReducedMotion: b,
     isStreaming: M,
     channel: p,
@@ -385,8 +385,8 @@ let e_ = (0, b.Z)(function(e) {
     channelName: G,
     guildForConnectedChannel: f,
     streamQualityIndicator: V,
-    isForceShowSharingPopout: F,
-    setIsForceShowSharingPopout: H,
+    isForceShowSharingPopout: H,
+    setIsForceShowSharingPopout: F,
     showsActivityPopoutQuickRefocusNUX: el,
     markActivityPopoutQuickRefocusNUXAsDismissed: eo
   }))

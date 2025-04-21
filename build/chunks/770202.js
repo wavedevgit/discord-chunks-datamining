@@ -1,4 +1,4 @@
-/** Chunk was on 64040 **/
+/** Chunk was on 95124 **/
 n.d(t, {
   Z: () => E
 }), n(415506), n(388685);
@@ -48,7 +48,7 @@ function j(e, t) {
   if (null == n) throw Error("TextChannel, preloadChannel: Channel does not have a guildId");
   a.Z.preload(n, t.id)
 }
-class S extends m.ZP {
+class x extends m.ZP {
   render() {
     let {
       channel: e,
@@ -120,7 +120,7 @@ class S extends m.ZP {
     })
   }
 }
-let x = (0, u.B)(S),
+let S = (0, u.B)(x),
   E = i.memo(function(e) {
     let {
       channel: t,
@@ -133,5 +133,5 @@ let x = (0, u.B)(S),
         canReorderChannel: !0 !== i && null != e ? g.Z.can(y.Plq.MANAGE_CHANNELS, e) : g.Z.can(y.Plq.MANAGE_CHANNELS, n)
       }
     });
-    return (0, r.jsx)(x, C({}, l, e))
+    return (0, r.jsx)(S, C({}, l, e))
   })
