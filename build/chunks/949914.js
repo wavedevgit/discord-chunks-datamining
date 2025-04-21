@@ -170,8 +170,8 @@ let L = e => {
       }
     }, {
       isCancelled: z,
-      isPastDue: Y,
-      subscriptionPrice: W,
+      isPastDue: W,
+      subscriptionPrice: Y,
       memberSince: K,
       nextRenewalDate: q,
       nextRenewalLabel: X,
@@ -181,7 +181,7 @@ let L = e => {
     }) : Q ? (0, i.jsx)(c.IGR, {
       text: D.intl.string(D.t["6antoq"]),
       color: a.Z.BRAND_500
-    }) : Y ? (0, i.jsx)(c.ua7, {
+    }) : W ? (0, i.jsx)(c.ua7, {
       text: D.intl.string(D.t.eSuJEx),
       children: e => (0, i.jsx)("div", k(w({}, e), {
         children: (0, i.jsx)(c.IGR, {
@@ -261,7 +261,7 @@ let L = e => {
             value: q
           }), (0, i.jsx)(L, {
             label: D.intl.string(D.t.dltUMD),
-            value: W,
+            value: Y,
             showInfoIcon: Q,
             infoIconTooltipText: Q ? D.intl.string(D.t["/q6fpa"]) : void 0
           }), (0, i.jsx)(L, {

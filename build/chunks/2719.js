@@ -76,7 +76,7 @@ function H(e, t) {
 }
 let z = Z.ZP.getEnableHardwareAcceleration() ? u.Xo$ : u.qEK;
 
-function Y(e) {
+function W(e) {
   var t, s;
   let {
     className: a,
@@ -167,7 +167,7 @@ function Y(e) {
   })
 }
 
-function W(e) {
+function Y(e) {
   var t, n;
   let {
     user: s,
@@ -522,13 +522,13 @@ function ee() {
         className: G.fieldList,
         children: [(0, i.jsx)(S.F, {
           setting: L.s6.ACCOUNT_DISPLAY_NAME,
-          children: (0, i.jsx)(W, {
+          children: (0, i.jsx)(Y, {
             className: G.fieldSpacerBottom,
             user: t
           })
         }), (0, i.jsx)(S.F, {
           setting: L.s6.ACCOUNT_USERNAME,
-          children: (0, i.jsx)(Y, {
+          children: (0, i.jsx)(W, {
             user: t
           })
         }), (0, i.jsx)(S.F, {

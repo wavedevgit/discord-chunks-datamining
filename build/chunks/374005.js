@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 n.d(t, {
   b: () => I
-}), n(388685);
+});
 var r = n(200651),
   i = n(192379),
   l = n(928873),
@@ -67,45 +67,28 @@ function y(e) {
 let I = i.memo(function() {
   let e = (0, c.Q3)("AppPanels"),
     t = i.useRef(null);
-  (0, a.PM)(t, e => {
+  return (0, a.PM)(t, e => {
     let {
       height: t
     } = e;
     document.body.style.setProperty("--custom-app-panels-height", "".concat(t, "px"))
-  }, []);
-  let n = i.useRef(null),
-    [o, s] = i.useState(!1);
-  return i.useLayoutEffect(() => {
-    if (null != n.current) {
-      let e = new ResizeObserver(e => {
-        s(e[0].contentRect.height > 0)
-      });
-      return e.observe(n.current), () => {
-        e.disconnect()
-      }
-    }
   }, []), (0, r.jsx)("section", {
     ref: t,
     className: O.panels,
     "aria-label": E.intl.string(E.t.StREWF),
     children: (0, r.jsxs)(l.Jc, {
       containerRef: t,
-      children: [(0, r.jsxs)("div", {
-        ref: n,
-        children: [e && (0, r.jsx)(m.Z, {}), (0, r.jsx)(f.Z, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(b.Z, {
-          section: _.jXE.ACTIVITY_PANEL,
-          children: (0, r.jsx)(y, {
-            className: O.activityPanel
-          })
-        }), (0, r.jsx)(b.Z, {
-          section: _.jXE.RTC_CONNECTION_PANEL,
-          children: (0, r.jsx)(h.Z, {})
-        })]
+      children: [e && (0, r.jsx)(m.Z, {}), (0, r.jsx)(f.Z, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(b.Z, {
+        section: _.jXE.ACTIVITY_PANEL,
+        children: (0, r.jsx)(y, {
+          className: O.activityPanel
+        })
+      }), (0, r.jsx)(b.Z, {
+        section: _.jXE.RTC_CONNECTION_PANEL,
+        children: (0, r.jsx)(h.Z, {})
       }), (0, r.jsx)(b.Z, {
         section: _.jXE.ACCOUNT_PANEL,
-        children: (0, r.jsx)(u.Z, {
-          topBarOpen: o
-        })
+        children: (0, r.jsx)(u.Z, {})
       })]
     })
   })
