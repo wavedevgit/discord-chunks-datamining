@@ -60,17 +60,20 @@ function H(e) {
   let {
     text: t,
     className: n,
-    colorOptions: i = 2
+    colorOptions: i = 2,
+    icon: o,
+    gap: s = !0
   } = e;
-  return (0, r.jsx)("div", {
+  return (0, r.jsxs)("div", {
     className: a()(n, G.freeTrialPill, {
       [G.freeTrialPillTier0GradientFill]: 1 === i,
       [G.freeTrialPillTier2GradientFill]: 3 === i,
       [G.freeTrialPillTier2OldGradientFill]: 4 === i,
       [G.lightBackgroundPill]: 5 === i,
-      [G.greyBackgroundPill]: 6 === i
+      [G.greyBackgroundPill]: 6 === i,
+      [G.freeTrialPillGap]: s
     }),
-    children: (0, r.jsx)(d.Text, {
+    children: [(0, r.jsx)(d.Text, {
       variant: "text-xs/bold",
       className: a()(G.freeTrialPillText, {
         [G.freeTrialPillTextInverted]: 0 !== i && 2 !== i,
@@ -78,7 +81,7 @@ function H(e) {
         [G.freeTrialPillTextTier2]: 2 === i || 6 === i
       }),
       children: t
-    })
+    }), o]
   })
 }
 

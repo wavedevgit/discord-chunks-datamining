@@ -1,6 +1,6 @@
 /**
   Module ID: 44114
-  Original File Name: b49b326a0154381e
+  Original File Name: 17010a525c1c968b
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -336,7 +336,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 {
-    font-size: 1rem;
+    font-size: 16px;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -8734,12 +8734,17 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 }
 
 .tooltip__3ce43 {
+    margin-bottom: 15px;
     text-align: center
 }
 
 .pillContainer__3ce43 {
     display: inline-block;
-    margin-top: 19px
+    margin-top: 5px
+}
+
+.pillIcon__3ce43 {
+    padding-right: 5px
 }
 
 .container__6f73d {
@@ -18263,4 +18268,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=b49b326a0154381e.css.map*/
+/*# sourceMappingURL=17010a525c1c968b.css.map*/
