@@ -1,6 +1,6 @@
 /**
   Module ID: 78331
-  Original File Name: 4418cea4259e7f0b
+  Original File Name: f8eb7b4d84b7cba4
 **/
 .modalRoot_db78b7 {
     width: var(--modal-width-medium)
@@ -35,7 +35,11 @@ main {
 
 .right_db78b7 {
     background: var(--background-tertiary);
+    box-sizing: border-box;
     display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
     padding: var(--space-xl)
 }
 
@@ -45,4 +49,4 @@ main {
     top: var(--space-lg)
 }
 
-/*# sourceMappingURL=4418cea4259e7f0b.css.map*/
+/*# sourceMappingURL=f8eb7b4d84b7cba4.css.map*/
