@@ -34,10 +34,6 @@ function o(e, t) {
       return {
         tooltipTitle: a.intl.string(a.t.K7iRio), tooltipDescription: a.intl.string(a.t.op2cJy)
       };
-    case r.Q.CLAN:
-      return {
-        tooltipTitle: a.intl.string(a.t["5K6LdX"]), tooltipDescription: a.intl.string(a.t.YwZfbm)
-      };
     default:
       return {
         tooltipTitle: a.intl.string(a.t.iZRkCw)

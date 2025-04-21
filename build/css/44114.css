@@ -1,6 +1,6 @@
 /**
   Module ID: 44114
-  Original File Name: 4f29ef176ae9962c
+  Original File Name: 0e5395daf8335887
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -1108,6 +1108,34 @@ h1.title_feb59c,h2.title_feb59c {
 .customStatusActionHoverText_b5ae07 {
     cursor: pointer;
     pointer-events: auto
+}
+
+.container__7e777 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    width: 181px
+}
+
+.header__7e777 {
+    line-height: 18px
+}
+
+.body__7e777 {
+    align-self: stretch;
+    line-height: 16px
+}
+
+.container__7e777 .art__7e777 {
+    align-self: center;
+    background-image: url(/assets/442e9d125a9c073f.svg);
+    height: 57px;
+    left: 8px;
+    position: absolute;
+    top: -30px;
+    width: 154px
 }
 
 .container_cdb3b1 {
@@ -18235,4 +18263,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=4f29ef176ae9962c.css.map*/
+/*# sourceMappingURL=0e5395daf8335887.css.map*/

@@ -25,11 +25,11 @@ var o = n(442837),
   g = n(594174),
   f = n(998502),
   S = n(981631),
-  U = n(490897),
-  h = n(915887),
-  L = n(768107);
+  h = n(490897),
+  U = n(915887),
+  p = n(768107);
 
-function p(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -61,12 +61,12 @@ function D(e, t) {
   }), e
 }
 let C = {
-  SELECTED: L.modeSelected,
-  CONNECTED: L.modeConnected,
-  UNREAD_IMPORTANT: L.modeUnreadImportant,
-  UNREAD_LESS_IMPORTANT: L.modeUnreadLessImportant,
-  MUTED: L.modeMuted,
-  LOCKED: L.modeLocked
+  SELECTED: p.modeSelected,
+  CONNECTED: p.modeConnected,
+  UNREAD_IMPORTANT: p.modeUnreadImportant,
+  UNREAD_LESS_IMPORTANT: p.modeUnreadLessImportant,
+  MUTED: p.modeMuted,
+  LOCKED: p.modeLocked
 };
 
 function M(e) {
@@ -121,8 +121,8 @@ let P = e => {
     } = e, c = (0, o.e7)([O.Z], () => O.Z.getGuild(l.guild_id), [l.guild_id]), d = l.type === S.d4z.DM || l.type === S.d4z.GROUP_DM, A = null;
     if (u && null != c && !d) A = (0, r.jsx)(T.Z, {
       size: T.E.SMALL_32,
-      className: L.iconContainerWithGuildIcon,
-      iconClassName: L.iconWithGuildIcon,
+      className: p.iconContainerWithGuildIcon,
+      iconClassName: p.iconWithGuildIcon,
       channel: l,
       guild: c,
       locked: s,
@@ -153,7 +153,7 @@ let P = e => {
       if (null == e) return null;
       A = (0, r.jsx)(e, {
         color: "currentColor",
-        className: i()(L.icon, t)
+        className: i()(p.icon, t)
       })
     }
     let I = u ? null == c ? void 0 : c.name : (0, _.bT)(l, c, s, a),
@@ -161,10 +161,10 @@ let P = e => {
     return (0, r.jsx)(E.ua7, {
       text: I,
       delay: 500,
-      children: e => (0, r.jsx)("div", D(p({}, e), {
+      children: e => (0, r.jsx)("div", D(L({}, e), {
         role: "img",
         "aria-label": N,
-        className: i()(L.iconContainer, n),
+        className: i()(p.iconContainer, n),
         children: A
       }))
     })
@@ -204,7 +204,7 @@ let P = e => {
       isFavoriteSuggestion: Y,
       withGuildIcon: q,
       hasActiveEvent: X = !1
-    } = e, J = W === U.i.ALL_MESSAGES || null != Z && Z > 0, Q = (0, a.JA)(s.id), {
+    } = e, J = W === h.i.ALL_MESSAGES || null != Z && Z > 0, Q = (0, a.JA)(s.id), {
       role: $
     } = Q, ee = function(e, t) {
       if (null == e) return {};
@@ -222,15 +222,15 @@ let P = e => {
       return l
     }(Q, ["role"]), et = l.useRef(null), en = l.useRef(null), er = (0, A.Z)(s), el = S.Z5c.CHANNEL(er, s.id), es = (0, c.ZP)(s), ei = s.isGuildVocal(), ea = (0, r.jsx)("div", {
       className: i()({
-        [L.favoritesSuggestion]: Y
+        [p.favoritesSuggestion]: Y
       }),
       ref: en,
-      children: (0, r.jsxs)(I.Z, D(p({
+      children: (0, r.jsxs)(I.Z, D(L({
         role: ei && !T ? "button" : "link",
         href: ei ? void 0 : el,
         target: "_blank",
         ref: et,
-        className: L.link,
+        className: p.link,
         onClick: () => null == g ? void 0 : g(s)
       }, ee), {
         "aria-label": w,
@@ -238,7 +238,7 @@ let P = e => {
           enabled: !1
         },
         children: [(0, r.jsxs)("div", {
-          className: L.linkTop,
+          className: p.linkTop,
           children: [(0, r.jsx)(P, {
             className: j,
             channel: s,
@@ -247,24 +247,24 @@ let P = e => {
             locked: N,
             withGuildIcon: q
           }), (0, r.jsx)(d.Z, {
-            className: i()(L.name, {
-              [L.activeEvent]: X
+            className: i()(p.name, {
+              [p.activeEvent]: X
             }),
             "aria-hidden": !0,
             children: null == o ? es : o
           }), l.Children.count(H) > 0 ? (0, r.jsx)("div", {
             onClick: M,
-            className: L.children,
+            className: p.children,
             children: H
           }) : null]
         }), null != y ? (0, r.jsx)("div", {
-          className: i()(L.linkBottom, {
-            [L.withGuildIcon]: q
+          className: i()(p.linkBottom, {
+            [p.withGuildIcon]: q
           }),
           children: (0, r.jsx)(E.Text, {
             color: null != G ? G : "text-muted",
             variant: "text-xs/medium",
-            className: L.subtitle,
+            className: p.subtitle,
             children: y
           })
         }) : null]
@@ -280,9 +280,9 @@ let P = e => {
       },
       children: (0, r.jsxs)("div", {
         ref: t,
-        className: i()(x, null != g || null != m || null != f || K ? L.wrapper : L.notInteractive, (() => {
-          if (_) return i()(h.selectedChannel, C.SELECTED);
-          if (T) return i()(h.selectedChannel, C.CONNECTED);
+        className: i()(x, null != g || null != m || null != f || K ? p.wrapper : p.notInteractive, (() => {
+          if (_) return i()(U.selectedChannel, C.SELECTED);
+          if (T) return i()(U.selectedChannel, C.CONNECTED);
           if (N) return C.LOCKED;
           if (u) return C.MUTED;
           if (O)
@@ -293,18 +293,18 @@ let P = e => {
           switch (e) {
             case S.d4z.GUILD_STAGE_VOICE:
             case S.d4z.GUILD_VOICE:
-              return L.typeVoice;
+              return p.typeVoice;
             case S.d4z.ANNOUNCEMENT_THREAD:
             case S.d4z.PUBLIC_THREAD:
             case S.d4z.PRIVATE_THREAD:
-              return L.typeThread;
+              return p.typeThread;
             case S.d4z.GUILD_ANNOUNCEMENT:
             case S.d4z.GUILD_TEXT:
             case S.d4z.GUILD_STORE:
             case S.d4z.GUILD_FORUM:
             case S.d4z.GUILD_MEDIA:
             default:
-              return L.typeDefault
+              return p.typeDefault
           }
         }(null != k ? k : F)),
         onMouseUp: e => null == m ? void 0 : m(e, s),
@@ -313,7 +313,7 @@ let P = e => {
         onMouseEnter: z,
         onMouseLeave: B,
         children: [u || !O ? null : (0, r.jsx)("div", {
-          className: i()(L.unread, J ? L.unreadImportant : void 0)
+          className: i()(p.unread, J ? p.unreadImportant : void 0)
         }), null != (n = null == b ? void 0 : b(ea)) ? n : ea]
       })
     })

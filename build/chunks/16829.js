@@ -23,7 +23,7 @@ var r = n(200651),
   f = n(388032),
   S = n(615133);
 
-function U(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function U(e) {
   return e
 }
 
-function h(e, t) {
+function U(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -54,10 +54,10 @@ function h(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = l.memo(function() {
+let p = l.memo(function() {
     return (0, r.jsx)(o.ua7, {
       text: f.intl.string(f.t["vu/MiY"]),
-      children: e => (0, r.jsx)(o.Text, h(U({}, e), {
+      children: e => (0, r.jsx)(o.Text, U(h({}, e), {
         variant: "text-sm/medium",
         color: "text-muted",
         className: S.unknownInvite,
@@ -65,10 +65,10 @@ let L = l.memo(function() {
       }))
     })
   }),
-  p = l.memo(function() {
+  L = l.memo(function() {
     return (0, r.jsx)(o.ua7, {
       text: f.intl.string(f.t.OrCp9v),
-      children: e => (0, r.jsx)(o.Text, h(U({}, e), {
+      children: e => (0, r.jsx)(o.Text, U(h({}, e), {
         variant: "text-sm/medium",
         color: "text-muted",
         className: S.unknownInvite,
@@ -284,9 +284,9 @@ function v(e) {
     case null == d:
     case null == n:
     case n === g.gq.UNSPECIFIED:
-      return (0, r.jsx)(L, U({}, _));
+      return (0, r.jsx)(p, h({}, _));
     case null != s && A:
-      return (0, r.jsxs)(o.P3F, h(U({
+      return (0, r.jsxs)(o.P3F, U(h({
         className: S.inviteContainer
       }, _), {
         "aria-label": (0, g.MS)(s),
@@ -303,7 +303,7 @@ function v(e) {
     case null != d:
       return (0, r.jsxs)("div", {
         className: i()(a && S.footerAlignment),
-        children: [(0, r.jsxs)(o.P3F, h(U({
+        children: [(0, r.jsxs)(o.P3F, U(h({
           className: S.inviteContainer
         }, _), {
           "aria-label": null == d ? void 0 : d.getJoinTypeLabel(null != t ? t : void 0),
@@ -323,7 +323,7 @@ function v(e) {
         })]
       });
     default:
-      return (0, r.jsx)(L, U({}, _))
+      return (0, r.jsx)(p, h({}, _))
   }
 }
 let b = l.memo(function(e) {
@@ -340,18 +340,18 @@ let b = l.memo(function(e) {
     }))
   }, [i, d]);
   let O = (0, a.e7)([A.Z], () => A.Z.hideInstantInvites, []);
-  if (null == c) return (0, r.jsx)(L, {});
+  if (null == c) return (0, r.jsx)(p, {});
   let {
     sourceInviteCode: R,
     joinSourceType: f,
     integrationType: S
-  } = c, h = null != f ? D[f] : null, C = null != (n = null == h ? void 0 : h.hasTooltip) && n;
-  return (f === g.gq.INVITE || f === g.gq.VANITY_URL || f === g.gq.MANUAL_MEMBER_VERIFICATION && null != R) && O ? (0, r.jsx)(p, {}) : (0, r.jsx)(M, {
+  } = c, U = null != f ? D[f] : null, C = null != (n = null == U ? void 0 : U.hasTooltip) && n;
+  return (f === g.gq.INVITE || f === g.gq.VANITY_URL || f === g.gq.MANUAL_MEMBER_VERIFICATION && null != R) && O ? (0, r.jsx)(L, {}) : (0, r.jsx)(M, {
     hasTooltip: C && !o,
     inviterUser: null != I ? I : null,
     guildId: i,
     joinSourceType: f,
-    children: e => (0, r.jsx)(v, U({
+    children: e => (0, r.jsx)(v, h({
       sourceInviteCode: R,
       joinSourceType: f,
       integrationType: S,

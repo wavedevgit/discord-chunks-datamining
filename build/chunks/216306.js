@@ -27,11 +27,11 @@ var r = n(192379),
   g = n(709054),
   f = n(981631),
   S = n(176505),
-  U = n(443063),
-  h = n(490897),
-  L = n(388032);
+  h = n(443063),
+  U = n(490897),
+  p = n(388032);
 
-function p(e, t) {
+function L(e, t) {
   e.index = t
 }
 
@@ -49,19 +49,17 @@ function D(e, t, n, l) {
         channel: r
       } = n;
       "null" === r.id && (e.null = t.null.filter(e => a(e, l))), e[r.id] = t[r.id].filter(e => a(e, l))
-    }), e._categories = t._categories.filter(t => "null" === t.channel.id || 0 === l.length || e[t.channel.id].length > 0), (0, c.Z)(e._categories, e).forEach(p), e
+    }), e._categories = t._categories.filter(t => "null" === t.channel.id || 0 === l.length || e[t.channel.id].length > 0), (0, c.Z)(e._categories, e).forEach(L), e
   }, [t, n, a, l])
 }
 
 function C(e) {
   let t = e.getSections(!1);
   if (t[A.wZ] > 0) switch (e.getGuildActionSection().getRow(0)) {
-    case U.z.GUILD_HOME:
+    case h.z.GUILD_HOME:
       return S.oC.GUILD_HOME;
-    case U.z.GUILD_ROLE_SUBSCRIPTIONS:
-      return S.oC.ROLE_SUBSCRIPTIONS;
-    case U.z.GUILD_MEMBER_APPLICATIONS:
-      return S.oC.MEMBER_APPLICATIONS
+    case h.z.GUILD_ROLE_SUBSCRIPTIONS:
+      return S.oC.ROLE_SUBSCRIPTIONS
   }
   for (let r = A.wd; r < e.voiceChannelsSectionNumber; r++)
     if (t[r] > 0) {
@@ -75,7 +73,7 @@ function M(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null;
   (0, T.n)(e, t), (0, u.y5)(t.map(e => ({
     channelId: e,
-    readStateType: h.W.CHANNEL,
+    readStateType: U.W.CHANNEL,
     messageId: R.ZP.lastMessageId(e)
   }))), null != n && (0, I.uL)(f.Z5c.CHANNEL(e, n))
 }
@@ -121,7 +119,7 @@ function v(e) {
 
 function b(e) {
   var t;
-  return L.intl.formatToPlainString(L.t["8N0BHR"], {
+  return p.intl.formatToPlainString(p.t["8N0BHR"], {
     timeAgo: a()(g.default.extractTimestamp(null != (t = R.ZP.lastMessageId(e)) ? t : e)).fromNow()
   })
 }

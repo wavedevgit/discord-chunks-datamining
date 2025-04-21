@@ -13,7 +13,7 @@ n(308083);
 var o = n(981631);
 async function c(e, t, n) {
   try {
-    null != e && !0 === t && (0, a.hx)({
+    null != e && !0 === t && (0, a.h)({
       guildId: e,
       userId: s.default.getId(),
       source: n

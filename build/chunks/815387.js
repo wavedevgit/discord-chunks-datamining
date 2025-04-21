@@ -334,7 +334,6 @@ let eR = Object.freeze({
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(eC.Z, {
           message: t,
-          guildId: i.guild_id,
           compact: n,
           usernameHook: o
         }), (0, r.jsx)(R.f, {

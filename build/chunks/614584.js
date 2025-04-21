@@ -69,13 +69,10 @@ let E = i.memo(function(e) {
   } = e, w = E.state === h.Y.LOADED ? E.message : void 0, R = (0, b.Uj)(w), k = (0, c.p)(), M = (0, u.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), L = i.useMemo(() => {
     if (null == w) return null;
     let e = (0, a.Z)(w);
-    if (e.type === x.uaV.USER_JOIN) {
-      let t = m.Z.getWelcomeMessageKind(I.guild_id);
-      return (0, o.Rp)(v.intl.formatToParts(m.Z.getSystemMessageUserJoin(e.id, t), {
-        username: null != R ? R.nick : e.author.username,
-        usernameHook: e => e
-      }))
-    }
+    if (e.type === x.uaV.USER_JOIN) return (0, o.Rp)(v.intl.formatToParts(m.Z.getSystemMessageUserJoin(e.id), {
+      username: null != R ? R.nick : e.author.username,
+      usernameHook: e => e
+    }));
     if (e.type === x.uaV.ROLE_SUBSCRIPTION_PURCHASE) return (0, o.Rp)((0, s.PA)({
       username: null != R ? R.nick : e.author.username,
       guildId: null == I ? void 0 : I.guild_id,
