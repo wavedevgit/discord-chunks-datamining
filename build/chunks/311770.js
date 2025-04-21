@@ -1,5 +1,5 @@
 /** Chunk was on 78331 **/
-l.d(t, {
+l.d(e, {
   EmojiStudioModal: () => g
 }), l(388685);
 var n = l(200651),
@@ -13,10 +13,10 @@ var n = l(200651),
   u = l(981631),
   h = l(388032),
   m = l(807179);
-let b = e => {
+let b = t => {
     let {
-      userImage: t
-    } = e, {
+      userImage: e
+    } = t, {
       guilds: l,
       currentGuildId: s
     } = j(), [d, i] = a.useState(s);
@@ -24,7 +24,7 @@ let b = e => {
       children: [(0, n.jsx)("div", {
         className: m.left,
         children: (0, n.jsx)("img", {
-          src: t.data,
+          src: e.data,
           alt: "Uploaded content"
         })
       }), (0, n.jsxs)("div", {
@@ -33,12 +33,12 @@ let b = e => {
           variant: "heading-lg/bold",
           children: h.intl.string(h.t.DU0dy8)
         }), (0, n.jsx)(o.q4e, {
-          options: l.map(e => ({
-            label: e.name,
-            value: e.id
+          options: l.map(t => ({
+            label: t.name,
+            value: t.id
           })),
           value: d,
-          onChange: e => i(e)
+          onChange: t => i(t)
         }), (0, n.jsx)(o.olH, {
           onClick: c.y,
           className: m.closeButton
@@ -46,13 +46,13 @@ let b = e => {
       })]
     })
   },
-  g = e => {
+  g = t => {
     let {
-      transitionState: t,
+      transitionState: e,
       userImage: l
-    } = e;
+    } = t;
     return (0, n.jsx)(o.Y0X, {
-      transitionState: t,
+      transitionState: e,
       size: o.CgR.LARGE,
       className: m.modalRoot,
       children: (0, n.jsx)(o.hzk, {
@@ -65,9 +65,9 @@ let b = e => {
     })
   },
   j = () => ({
-    guilds: (0, s.e7)([i.Z, r.Z], () => Object.values(i.Z.getGuilds()).filter(e => r.Z.can(u.Plq.CREATE_GUILD_EXPRESSIONS, e))),
+    guilds: (0, s.Wu)([i.Z, r.Z], () => Object.values(i.Z.getGuilds()).filter(t => r.Z.can(u.Plq.CREATE_GUILD_EXPRESSIONS, t))),
     currentGuildId: (0, s.e7)([d.Z, r.Z], () => {
-      let e = d.Z.getGuild();
-      return r.Z.can(u.Plq.CREATE_GUILD_EXPRESSIONS, e) && null != e ? e.id : null
+      let t = d.Z.getGuild();
+      return r.Z.can(u.Plq.CREATE_GUILD_EXPRESSIONS, t) && null != t ? t.id : null
     })
   })
