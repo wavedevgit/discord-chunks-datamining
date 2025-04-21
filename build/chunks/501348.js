@@ -66,7 +66,7 @@ function z(e) {
   return e
 }
 
-function W(e, t) {
+function Y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -78,7 +78,7 @@ function W(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let Y = {
+let W = {
     COZY: "cozy",
     COMPACT: "compact"
   },
@@ -88,31 +88,31 @@ let Y = {
   Q = "1337",
   J = e => {
     let t = 0;
-    return [(0, S.e5)(W(z({}, (0, v.ZP)({
+    return [(0, S.e5)(Y(z({}, (0, v.ZP)({
       channelId: Q,
       content: V.intl.string(V.t.oZxkEh)
     })), {
       state: B.yb.SENT,
       id: "".concat(t++)
-    })), (0, S.e5)(W(z({}, (0, v.ZP)({
+    })), (0, S.e5)(Y(z({}, (0, v.ZP)({
       channelId: Q,
       content: (0, d.wj)(e) ? V.intl.string(V.t["WGb/v7"]) : V.intl.string(V.t["62m4m5"])
     })), {
       state: B.yb.SENT,
       id: "".concat(t++)
-    })), (0, S.e5)(W(z({}, (0, v.ZP)({
+    })), (0, S.e5)(Y(z({}, (0, v.ZP)({
       channelId: Q,
       content: V.intl.string(V.t.a0Byo6)
     })), {
       state: B.yb.SENT,
       id: "".concat(t++)
-    })), (0, S.e5)(W(z({}, (0, v.ZP)({
+    })), (0, S.e5)(Y(z({}, (0, v.ZP)({
       channelId: Q,
       content: V.intl.string(V.t.bmwEWF)
     })), {
       state: B.yb.SENT,
       id: "".concat(t++)
-    })), (0, S.e5)(W(z({}, (0, v.ZP)({
+    })), (0, S.e5)(Y(z({}, (0, v.ZP)({
       channelId: Q,
       content: V.intl.string(V.t.hK9QW1)
     })), {
@@ -329,13 +329,13 @@ class ee extends r.Component {
       children: [(0, i.jsx)(u.FXm, {
         options: [{
           name: V.intl.string(V.t.KZIadn),
-          value: Y.COZY
+          value: W.COZY
         }, {
           name: V.intl.string(V.t["6+nTjY"]),
-          value: Y.COMPACT
+          value: W.COMPACT
         }],
         onChange: this.handleMessageDisplayModeChange,
-        value: this.props.messageDisplayCompact ? Y.COMPACT : Y.COZY
+        value: this.props.messageDisplayCompact ? W.COMPACT : W.COZY
       }), (0, i.jsx)(u.j7V, {
         value: this.props.messageDisplayCompact && this.props.displayCompactAvatars,
         disabled: !this.props.messageDisplayCompact,
@@ -493,7 +493,7 @@ class ee extends r.Component {
       let {
         value: t
       } = e;
-      Z.jU.updateSetting(t === Y.COMPACT), (0, f.ZZ)()
+      Z.jU.updateSetting(t === W.COMPACT), (0, f.ZZ)()
     }), H(this, "handleUIDensityChange", e => {
       let {
         value: t
@@ -567,13 +567,13 @@ class et extends ee {
         }), (0, i.jsx)(u.FXm, {
           options: [{
             name: V.intl.string(V.t.Jqj4cX),
-            value: Y.COZY
+            value: W.COZY
           }, {
             name: V.intl.string(V.t["1JNcPT"]),
-            value: Y.COMPACT
+            value: W.COMPACT
           }],
           onChange: this.handleMessageDisplayModeChange,
-          value: this.props.messageDisplayCompact ? Y.COMPACT : Y.COZY
+          value: this.props.messageDisplayCompact ? W.COMPACT : W.COZY
         }), this.props.messageDisplayCompact && (0, i.jsx)(u.j7V, {
           className: G.compactModeToggle,
           hideBorder: !0,
