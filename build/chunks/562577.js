@@ -1,10 +1,10 @@
 /** Chunk was on 31649 **/
 n.d(t, {
-  Z: () => p
+  Z: () => h
 });
 var l = n(200651),
-  a = n(120356),
-  r = n.n(a),
+  r = n(120356),
+  a = n.n(r),
   i = n(692547),
   o = n(481060),
   s = n(19391),
@@ -17,14 +17,14 @@ function f(e) {
   let {
     option: t,
     isSelected: n,
-    onClick: a
+    onClick: r
   } = e, c = (0, s.Z)(t.value);
   return (0, l.jsx)(o.DY3, {
     text: c,
     children: (0, l.jsx)(o.P3F, {
-      onClick: a,
+      onClick: r,
       "aria-pressed": n,
-      className: r()(m.customStatusLabelSelectorItem, n && m.customStatusLabelSelectorItemSelected),
+      className: a()(m.customStatusLabelSelectorItem, n && m.customStatusLabelSelectorItemSelected),
       "aria-label": n ? d.intl.formatToPlainString(d.t["+KXSFh"], {
         label: c
       }) : d.intl.formatToPlainString(d.t.mDVlTk, {
@@ -40,7 +40,7 @@ function f(e) {
   })
 }
 
-function p(e) {
+function h(e) {
   let {
     currentValue: t,
     onChange: n
