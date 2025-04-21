@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => S
 });
 var r = n(200651),
   i = n(192379),
@@ -10,10 +10,13 @@ var r = n(200651),
   s = n(97028),
   l = n(481060),
   c = n(686546),
-  u = n(562558),
-  d = n(1376);
+  u = n(810568),
+  d = n(168524),
+  f = n(214288),
+  _ = n(562558),
+  p = n(1376);
 
-function f(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,20 +25,20 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
 }
 
-function p(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,68 +49,78 @@ function p(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function E(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = 10,
-  g = 2;
+let b = 10,
+  y = 2;
 
-function E(e) {
+function v(e) {
   let {
     game: t,
     activityLevel: n,
     hideTooltip: i
-  } = e, a = t.getIconURL(24);
+  } = e, a = t.getIconURL(24), o = (0, f.B)(), _ = (0, d.Z)({
+    location: "GuildProfile",
+    source: u.m1.GuildProfile,
+    trackEntryPointImpression: !0,
+    applicationId: t.id
+  });
   if (null == a) return null;
-  let o = !i,
-    u = (null == n ? void 0 : n.level) === s.m.HIGH,
-    f = (0, r.jsx)(l.Text, {
+  let h = !i,
+    g = (null == n ? void 0 : n.level) === s.m.HIGH,
+    v = (0, r.jsx)(l.Text, {
       variant: "text-sm/medium",
       color: "interactive-active",
       children: t.name
-    });
-  return (0, r.jsx)(l.ua7, {
-    text: f,
-    position: "bottom",
-    "aria-label": t.name,
-    shouldShow: o,
-    children: e => (0, r.jsxs)("div", h(_({}, e), {
-      className: d.gameIcon,
-      children: [(0, r.jsx)("img", {
-        className: d.gameIconImage,
-        src: a,
-        alt: t.name
-      }), u && (0, r.jsx)(c.ZP, {
-        mask: c.QS.GAMEPLAY_HIGH_ACTIVITY_ICON,
-        width: m + 2 * g,
-        height: m + 2 * g,
-        className: d.gameActivityLevel,
-        children: (0, r.jsx)("div", {
-          className: d.gameActivityLevelInner,
-          children: (0, r.jsx)(l.YqE, {
-            color: l.TVs.unsafe_rawColors.ORANGE_330.css,
-            width: m,
-            height: m,
-            size: "custom"
+    }),
+    O = (0, r.jsx)(l.ua7, {
+      text: v,
+      position: "bottom",
+      "aria-label": t.name,
+      shouldShow: h,
+      children: e => (0, r.jsxs)("div", E(m({}, e), {
+        className: p.gameIcon,
+        children: [(0, r.jsx)("img", {
+          className: p.gameIconImage,
+          src: a,
+          alt: t.name
+        }), g && (0, r.jsx)(c.ZP, {
+          mask: c.QS.GAMEPLAY_HIGH_ACTIVITY_ICON,
+          width: b + 2 * y,
+          height: b + 2 * y,
+          className: p.gameActivityLevel,
+          children: (0, r.jsx)("div", {
+            className: p.gameActivityLevelInner,
+            children: (0, r.jsx)(l.YqE, {
+              color: l.TVs.unsafe_rawColors.ORANGE_330.css,
+              width: b,
+              height: b,
+              size: "custom"
+            })
           })
-        })
-      })]
-    }))
-  })
+        })]
+      }))
+    });
+  return o ? (0, r.jsx)(l.P3F, {
+    onClick: _,
+    className: p.gameIconWrapper,
+    children: O
+  }) : O
 }
 
-function b(e) {
+function O(e) {
   let {
     games: t,
     activity: n
   } = e;
   return (0, r.jsx)("div", {
-    className: d.extraGamesContainer,
+    className: p.extraGamesContainer,
     children: t.map(e => (0, r.jsxs)("div", {
-      className: d.extraGameRow,
-      children: [(0, r.jsx)(E, {
+      className: p.extraGameRow,
+      children: [(0, r.jsx)(v, {
         game: e,
         activityLevel: n[e.id]
       }), (0, r.jsx)(l.Text, {
@@ -119,14 +132,14 @@ function b(e) {
   })
 }
 
-function y(e) {
+function I(e) {
   let {
     game: t,
     activityLevel: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: d.favoriteGameContainer,
-    children: [(0, r.jsx)(E, {
+    className: p.favoriteGameContainer,
+    children: [(0, r.jsx)(v, {
       game: t,
       activityLevel: n,
       hideTooltip: !0
@@ -138,18 +151,18 @@ function y(e) {
   })
 }
 
-function v(e) {
+function S(e) {
   let {
     profile: t
   } = e, n = t.gameActivity, {
     gamesToDisplay: a,
     lastGameToDisplay: s,
     remainingGames: c
-  } = (0, u.Z)(t), f = i.useMemo(() => {
+  } = (0, _.Z)(t), u = i.useMemo(() => {
     if (null == s) return null;
     let e = s.getIconURL(24);
     if (null == e) return null;
-    if (0 === c.length) return (0, r.jsx)(E, {
+    if (0 === c.length) return (0, r.jsx)(v, {
       game: s,
       activityLevel: n[s.id]
     });
@@ -157,20 +170,20 @@ function v(e) {
     return (0, r.jsx)(l.ua7, {
       "aria-label": "",
       position: "bottom",
-      text: (0, r.jsx)(b, {
+      text: (0, r.jsx)(O, {
         games: t,
         activity: n
       }),
-      children: n => (0, r.jsxs)("div", h(_({}, n), {
-        className: o()(d.gameIcon, d.extraGameItem),
+      children: n => (0, r.jsxs)("div", E(m({}, n), {
+        className: o()(p.gameIcon, p.extraGameItem),
         children: [(0, r.jsx)("img", {
-          className: o()(d.gameIconImage, d.extraGameIconImage),
+          className: o()(p.gameIconImage, p.extraGameIconImage),
           src: e,
           alt: s.name
         }), (0, r.jsx)("div", {
-          className: d.extraGameOverlay
+          className: p.extraGameOverlay
         }), (0, r.jsx)("div", {
-          className: d.extraGameText,
+          className: p.extraGameText,
           children: (0, r.jsx)(l.Text, {
             variant: "text-xs/normal",
             color: "always-white",
@@ -181,16 +194,16 @@ function v(e) {
     })
   }, [s, c, n]);
   return null == a || 0 === a.length ? null : 1 === a.length ? (0, r.jsx)("div", {
-    className: d.container,
-    children: (0, r.jsx)(y, {
+    className: p.container,
+    children: (0, r.jsx)(I, {
       game: a[0],
       activityLevel: n[a[0].id]
     })
   }) : (0, r.jsxs)("div", {
-    className: d.container,
-    children: [a.map(e => (0, r.jsx)(E, {
+    className: p.container,
+    children: [a.map(e => (0, r.jsx)(v, {
       game: e,
       activityLevel: n[e.id]
-    }, e.id)), f]
+    }, e.id)), u]
   })
 }
