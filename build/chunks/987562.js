@@ -8,9 +8,9 @@ n.d(t, {
   YA: () => c,
   pv: () => s
 });
-var r, l, a, o = n(70956),
+var r, l, o, a = n(70956),
   i = n(388032);
-let s = 6 * o.Z.Millis.DAYS_30;
+let s = 6 * a.Z.Millis.DAYS_30;
 var c = ((r = {}).TOO_MANY_NOTIFICATIONS = "too_many_notifications", r.TEMPORARY_BREAK = "temporary_break", r.ANNOYING = "annoying", r.UNSAFE = "unsafe", r.SPAM = "spam", r.OTHER = "other", r);
 
 function u() {
@@ -51,7 +51,7 @@ function _() {
     label: i.intl.string(i.t.YicFbG)
   }]
 }
-var b = ((a = {}).CONFUSION = "confusion", a.DOES_NOT_ACHIEVE_WANTS = "does_not_achieve_wants", a.HARD_TO_ACCESS = "hard_to_access", a.SOMETHING_ELSE = "something_else", a);
+var b = ((o = {}).CONFUSION = "confusion", o.DOES_NOT_ACHIEVE_WANTS = "does_not_achieve_wants", o.HARD_TO_ACCESS = "hard_to_access", o.SOMETHING_ELSE = "something_else", o);
 
 function m() {
   return [{
