@@ -1,15 +1,15 @@
-/** Chunk was on 63958 **/
+/** Chunk was on 31975 **/
 "use strict";
-r.d(t, {
+n.d(t, {
   JE: () => l,
   ab: () => o,
   iG: () => a,
-  lL: () => h,
+  lL: () => u,
   rC: () => c
 });
-var n = r(293810),
-  i = r(474936),
-  s = r(388032);
+var r = n(293810),
+  i = n(474936),
+  s = n(388032);
 
 function o(e) {
   return "roles" in e ? "emoji-".concat(e.id) : "".concat(e.ref_type, "-").concat(e.emoji_id, "-").concat(e.name, "-").concat(e.ref_id)
@@ -18,7 +18,7 @@ function o(e) {
 function l(e) {
   let {
     interval: t,
-    interval_count: r
+    interval_count: n
   } = e;
   return s.intl.format(function(e) {
     switch (e) {
@@ -30,38 +30,38 @@ function l(e) {
         return s.t.cuSp8f
     }
   }(t), {
-    count: r
+    count: n
   })
 }
 
 function a(e) {
   let {
     interval: t,
-    interval_count: r
+    interval_count: n
   } = e;
   switch (t) {
     case i.rV.DAY:
-      if (r > 0 && r % 7 == 0) return s.intl.formatToPlainString(s.t.iVZYys, {
-        weeks: r / 7
+      if (n > 0 && n % 7 == 0) return s.intl.formatToPlainString(s.t.iVZYys, {
+        weeks: n / 7
       });
       return s.intl.formatToPlainString(s.t.jzH70d, {
-        days: r
+        days: n
       });
     case i.rV.MONTH:
       return s.intl.formatToPlainString(s.t.erUSmJ, {
-        months: r
+        months: n
       });
     case i.rV.YEAR:
       return s.intl.formatToPlainString(s.t.IfYQVF, {
-        years: r
+        years: n
       })
   }
 }
 
 function c(e) {
-  return e.ref_type === n.Qs.CHANNEL
+  return e.ref_type === r.Qs.CHANNEL
 }
 
-function h(e) {
-  return e.ref_type === n.Qs.INTANGIBLE
+function u(e) {
+  return e.ref_type === r.Qs.INTANGIBLE
 }

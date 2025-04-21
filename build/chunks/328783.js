@@ -34,17 +34,17 @@ let j = (0, o.hQ)(),
         value: t.id
       }), e
     }, []), [t]), v = r.useCallback(e => {
-      var t, n;
+      var t, n, r;
       if (null == e) return null;
-      let r = C.get(e.value);
-      if (null == r) return null;
-      let s = null == (t = r.profile) ? void 0 : t.tag;
-      return null == s ? null : (0, i.jsx)(h.Z, {
-        clanTag: s,
-        clanBadge: null == (n = r.profile) ? void 0 : n.badge,
-        guildId: r.id,
+      let s = C.get(e.value);
+      if (null == s) return null;
+      let l = null == (t = s.profile) ? void 0 : t.tag;
+      return null == l ? null : (0, i.jsx)(h.Z, {
+        clanTag: l,
+        clanBadge: null != (r = null == (n = s.profile) ? void 0 : n.badge) ? r : void 0,
+        guildId: s.id,
         guildName: e.label,
-        guildIcon: r.icon,
+        guildIcon: s.icon,
         guildIconSize: 32
       })
     }, [C]), T = r.useCallback(e => {

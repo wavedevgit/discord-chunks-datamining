@@ -1,11 +1,11 @@
-/** Chunk was on 63958 **/
+/** Chunk was on 31975 **/
 "use strict";
-r.d(t, {
+n.d(t, {
   Z: () => s
 });
-var n = r(442837),
-  i = r(592125);
+var r = n(442837),
+  i = n(592125);
 
 function s(e) {
-  return (0, n.Wu)([i.Z], () => e.filter(e => i.Z.hasChannel(e.ref_id)), [e])
+  return (0, r.Wu)([i.Z], () => e.filter(e => i.Z.hasChannel(e.ref_id)), [e])
 }

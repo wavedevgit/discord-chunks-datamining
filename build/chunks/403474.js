@@ -1,15 +1,15 @@
-/** Chunk was on 63958 **/
+/** Chunk was on 31975 **/
 "use strict";
-r.d(t, {
-  k: () => n
+n.d(t, {
+  k: () => r
 });
-let n = {
+let r = {
   id: "0",
   name: "",
   mentionable: !1,
   position: 0,
   hoist: !1,
-  permissions: r(981631).Plq.SEND_MESSAGES,
+  permissions: n(981631).Plq.SEND_MESSAGES,
   color: 0,
   colors: {
     primary_color: 0,

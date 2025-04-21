@@ -1,44 +1,44 @@
-/** Chunk was on 63958 **/
+/** Chunk was on 31975 **/
 "use strict";
-r.d(t, {
-  Z: () => f
+n.d(t, {
+  Z: () => p
 });
-var n = r(200651);
-r(192379);
-var i = r(481060),
-  s = r(201895),
-  o = r(471445),
-  l = r(823379),
-  a = r(303737),
-  c = r(293810),
-  h = r(388032),
-  v = r(310045);
+var r = n(200651);
+n(192379);
+var i = n(481060),
+  s = n(201895),
+  o = n(471445),
+  l = n(823379),
+  a = n(303737),
+  c = n(293810),
+  u = n(388032),
+  d = n(310045);
 
-function u(e) {
+function f(e) {
   let {
     channelId: t
-  } = e, r = (0, a.m7)(t);
-  if (null == r) return "[".concat(h.intl.string(h.t.bz1PZW), "]");
-  let l = r.isMediaChannel() ? i.XBm : (0, o.Th)(r.type);
-  return (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)(i.nn4, {
+  } = e, n = (0, a.m7)(t);
+  if (null == n) return "[".concat(u.intl.string(u.t.bz1PZW), "]");
+  let l = n.isMediaChannel() ? i.XBm : (0, o.Th)(n.type);
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(i.nn4, {
       children: (0, s.ZP)({
-        channel: r
+        channel: n
       })
-    }), (0, n.jsxs)("div", {
+    }), (0, r.jsxs)("div", {
       "aria-hidden": !0,
-      children: [null != l && (0, n.jsx)(l, {
-        className: v.icon,
+      children: [null != l && (0, r.jsx)(l, {
+        className: d.icon,
         "aria-hidden": !0
-      }), r.name]
+      }), n.name]
     })]
   })
 }
 
-function f(e) {
+function p(e) {
   switch (e.ref_type) {
     case c.Qs.CHANNEL:
-      return (0, n.jsx)(u, {
+      return (0, r.jsx)(f, {
         channelId: e.ref_id
       });
     case c.Qs.INTANGIBLE:

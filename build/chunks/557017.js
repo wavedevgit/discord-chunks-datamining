@@ -1,11 +1,11 @@
-/** Chunk was on 63958 **/
+/** Chunk was on 31975 **/
 "use strict";
-r.d(t, {
+n.d(t, {
   t: () => s
 });
-var n = r(818083),
-  i = r(987338);
-let s = (0, n.B)({
+var r = n(818083),
+  i = n(987338);
+let s = (0, r.B)({
   kind: "user",
   id: "2025-01_q1_marketing_messaging",
   label: "2025 Q1 Collectible Deco Marketing Moment",
