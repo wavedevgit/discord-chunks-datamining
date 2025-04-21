@@ -248,6 +248,7 @@ class ev extends l.PureComponent {
       V = e.isForumLikeChannel() ? (0, i.jsxs)("div", {
         children: [(0, i.jsxs)(h.xJW, {
           children: [(0, i.jsx)(h.vwX, {
+            error: this.getError("available_tags"),
             id: es,
             className: ei.formTitle,
             children: en.intl.string(en.t["P/y+sr"])
