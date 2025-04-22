@@ -139,7 +139,7 @@ function y(e) {
     return (0, i.jsxs)(i.Fragment, {
       children: [(() => {
         let e = t.paymentSourceId;
-        return (0, i.jsx)(h.Z, {
+        return (0, i.jsx)(h.ZP, {
           prependOption: null == e ? {
             label: T.intl.string(T.t.iA5vAw),
             value: null
@@ -151,7 +151,8 @@ function y(e) {
           onChange: W,
           onPaymentSourceAdd: K,
           dropdownLoading: M,
-          disabled: R
+          disabled: R,
+          paymentGatewayRestrictions: t.eligiblePaymentGateways
         })
       })(), null != t.paymentSourceId ? (0, i.jsx)(p.b, {
         currencies: n,

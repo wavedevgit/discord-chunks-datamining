@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => I
+  ZP: () => S
 }), n(415506), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -20,14 +20,15 @@ var r = n(200651),
 let g = "***@***.***",
   E = "****",
   b = "***",
-  y = new d.dm({
-    id: "new_payment_source_id",
+  y = "new_payment_source_id",
+  v = new d.dm({
+    id: y,
     brand: u.ZP.Types.UNKNOWN,
     type: _.HeQ.CARD
   });
 
-function v(e, t) {
-  if (e instanceof d.dm) return e.id === y.id ? {
+function O(e, t) {
+  if (e instanceof d.dm) return e.id === y ? {
     brand: null,
     label: h.intl.string(h.t.eQ2bLi)
   } : {
@@ -103,14 +104,14 @@ function v(e, t) {
   throw Error("Invalid Payment Source")
 }
 
-function O(e, t) {
+function I(e, t) {
   let n = null;
   return e && null != t && !t.canRedeemTrial() ? n = h.intl.string(h.t.SvheW1) : e && null != t && t.hasFlag(p.Cw.NEW) && (n = h.intl.format(h.t.d7ZLKC, {
     helpDeskArticle: f.Z.getArticleURL(_.BhN.PAYMENT_AUTHORIZATION_CHARGE)
   })), n
 }
 
-function I(e) {
+function S(e) {
   let {
     selectedPaymentSourceId: t,
     paymentSources: n,
@@ -122,19 +123,20 @@ function I(e) {
     disabled: g = !1,
     className: E,
     optionClassName: b,
-    dropdownLoading: I
-  } = e, S = 0 === n.length, T = e => {
-    if (e === y.id) null != _ && _();
+    dropdownLoading: S,
+    paymentGatewayRestrictions: T
+  } = e, A = 0 === n.length, N = e => {
+    if (e === y) null != _ && _();
     else {
       let t = n.find(t => t.id === e);
       null != f && f(t)
     }
-  }, A = [...null != a ? [a] : [], ...n, y].map((e, t) => {
+  }, C = [...null != a ? [a] : [], ...n, v].map((e, t) => {
     if (e instanceof d.ZP) {
       let {
         brand: t,
         label: n
-      } = v(e, c);
+      } = O(e, c), i = e === v || null == T || (null == T ? void 0 : T.includes(e.paymentGateway));
       return {
         value: e.id,
         label: (0, r.jsxs)("div", {
@@ -147,7 +149,8 @@ function I(e) {
             }),
             children: n
           })]
-        })
+        }),
+        disabled: !i
       }
     }
     return {
@@ -158,30 +161,34 @@ function I(e) {
         children: e.label
       })
     }
-  }), N = O(p, i.useMemo(() => n.find(e => e.id === t), [n, t]));
+  }), R = I(p, i.useMemo(() => n.find(e => e.id === t), [n, t]));
+  if (null == t && null != T && T.length > 0) {
+    let e = n.filter(e => T.includes(e.paymentGateway));
+    t = 0 === e.length ? y : e[0].id
+  }
   return (0, r.jsxs)(r.Fragment, {
-    children: [S ? (0, r.jsx)(l.zxk, {
+    children: [A ? (0, r.jsx)(l.zxk, {
       color: l.Ttl.BRAND,
       fullWidth: !0,
       onClick: _,
       children: h.intl.string(h.t.eQ2bLi)
     }) : (0, r.jsx)(l.q4e, {
-      options: A,
+      options: C,
       value: t,
-      onChange: T,
+      onChange: N,
       isDisabled: g,
       className: o()({
-        [m.paymentSourceHasWarning]: null != N
+        [m.paymentSourceHasWarning]: null != R
       }, E),
       optionClassName: b,
       placeholder: h.intl.string(h.t["8lqkf3"]),
       renderOptionValue: e => {
         let [t] = e;
-        return I ? (0, r.jsx)(l.$jN, {
+        return S ? (0, r.jsx)(l.$jN, {
           type: l.RAz.SPINNING_CIRCLE
         }) : t.label
       }
-    }), null != N ? (0, r.jsxs)("div", {
+    }), null != R ? (0, r.jsxs)("div", {
       className: m.paymentSourceWarning,
       children: [(0, r.jsx)(l.P4T, {
         size: "custom",
@@ -191,7 +198,7 @@ function I(e) {
         color: s.Z.unsafe_rawColors.YELLOW_300.css
       }), (0, r.jsx)(l.Text, {
         variant: "text-xs/normal",
-        children: N
+        children: R
       })]
     }) : null]
   })

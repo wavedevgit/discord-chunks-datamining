@@ -412,7 +412,9 @@ function M(e) {
     focusProps: {
       enabled: !1
     },
-    className: o()(b.option, t),
+    className: o()(b.option, t, {
+      [b.optionDisabled]: u
+    }),
     onClick: () => !u && a(n)
   }, f), {
     "aria-selected": s,

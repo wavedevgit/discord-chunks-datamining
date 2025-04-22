@@ -73,7 +73,11 @@ function S(e) {
       D(e), P(b.h8.CONFIRM)
     }, [P, D]),
     ea = r.useRef(null);
-  return q === h.A.PURCHASING ? (0, i.jsx)(v.Z, {}) : (0, i.jsxs)(i.Fragment, {
+  if (q === h.A.PURCHASING) return (0, i.jsx)(v.Z, {});
+  let eo = () => {
+    P(b.h8.ADD_PAYMENT_STEPS)
+  };
+  return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(g.Z, {
       className: O.breadcrumbs
     }), (0, i.jsxs)(j.C3, {
@@ -129,9 +133,7 @@ function S(e) {
         paymentSources: B,
         priceOptions: F,
         onPaymentSourceChange: e => K(null != e ? e.id : null),
-        onPaymentSourceAdd: () => {
-          P(b.h8.ADD_PAYMENT_STEPS)
-        },
+        onPaymentSourceAdd: eo,
         planId: W.id,
         setHasAcceptedTerms: J,
         legalTermsNodeRef: ea,
@@ -164,7 +166,8 @@ function S(e) {
         metadata: er ? void 0 : Q,
         backButtonEligible: l,
         invoiceError: en,
-        disablePurchase: (null == Q ? void 0 : Q.guild_id) == null && !er
+        disablePurchase: (null == Q ? void 0 : Q.guild_id) == null && !er,
+        onPaymentSourceAdd: eo
       })
     })]
   })
