@@ -294,7 +294,7 @@ function ec(e) {
     s.Z.dispatch({
       type: "ACTIVITY_POPOUT_WINDOW_OPEN"
     })
-  })) : J = P !== _.Z.getChannelId() || (0, S.Z)(P) ? c.kind === a.E.CONTEXTLESS ? A.Ez.PANEL : A.Ez.PIP : A.Ez.PANEL, X.set(eC(c.id, i), Date.now())
+  })) : P !== _.Z.getChannelId() || (0, S.Z)(P) ? c.kind === a.E.CONTEXTLESS ? (J = A.Ez.PANEL, $ = A.MI.NO_CHAT) : J = A.Ez.PIP : J = A.Ez.PANEL, X.set(eC(c.id, i), Date.now())
 }
 
 function eu(e) {

@@ -94,60 +94,57 @@ function G(e) {
       return ef.forEach(t => {
         null != t && void 0 !== t && e.set(t.userId, t)
       }), e
-    }, [ef]);
-  i.useEffect(() => {
-    ep && (0, E.gC)(k.MI.NO_CHAT)
-  }, [ep]);
-  let eg = function(e, t, n) {
-    let r = (0, p.Z)(e),
-      l = e !== r,
-      [o, a] = i.useState(!1);
-    i.useEffect(() => {
-      a(!0);
-      let e = setTimeout(() => a(!1), 50);
-      return () => clearTimeout(e)
-    }, [e]);
-    let s = !h.Z.useReducedMotion && (l || o);
-    return i.useMemo(() => {
-      var r, i;
-      let l = s ? {
-        transitionProperty: "height, max-height",
-        transitionDuration: "".concat(50, "ms"),
-        transitionTimingFunction: "ease-in-out"
-      } : void 0;
-      return e && null != t && null != n ? (r = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
-              enumerable: !0,
-              configurable: !0,
-              writable: !0
-            }) : e[t] = r
-          })
-        }
-        return e
-      }({}, l), i = i = {
-        minHeight: 200,
-        maxHeight: n,
-        height: t
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
-        }
-        return n
-      })(Object(i)).forEach(function(e) {
-        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
-      }), r) : l
-    }, [s, e, n, t])
-  }(ee, et, G);
+    }, [ef]),
+    eg = function(e, t, n) {
+      let r = (0, p.Z)(e),
+        l = e !== r,
+        [o, a] = i.useState(!1);
+      i.useEffect(() => {
+        a(!0);
+        let e = setTimeout(() => a(!1), 50);
+        return () => clearTimeout(e)
+      }, [e]);
+      let s = !h.Z.useReducedMotion && (l || o);
+      return i.useMemo(() => {
+        var r, i;
+        let l = s ? {
+          transitionProperty: "height, max-height",
+          transitionDuration: "".concat(50, "ms"),
+          transitionTimingFunction: "ease-in-out"
+        } : void 0;
+        return e && null != t && null != n ? (r = function(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: !0,
+                configurable: !0,
+                writable: !0
+              }) : e[t] = r
+            })
+          }
+          return e
+        }({}, l), i = i = {
+          minHeight: 200,
+          maxHeight: n,
+          height: t
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+          var n = Object.keys(e);
+          if (Object.getOwnPropertySymbols) {
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
+          }
+          return n
+        })(Object(i)).forEach(function(e) {
+          Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
+        }), r) : l
+      }, [s, e, n, t])
+    }(ee, et, G);
   if (null == z) return null;
   let eb = [];
   null != ed && (eb = Array.from(ed.embeddedActivity.userIds).map(e => v.default.getUser(e)).filter(e => null != e && void 0 !== e));
