@@ -30,8 +30,8 @@ var r = n(200651),
   A = n(409813),
   N = n(51499),
   C = n(586585),
-  P = n(614277),
-  R = n(35248),
+  R = n(614277),
+  P = n(35248),
   w = n(439021),
   D = n(698708),
   L = n(351402),
@@ -290,24 +290,24 @@ function eT(e) {
       steps: [...g, ...eu, ...E],
       methodType: K.He.IDEAL
     },
-    eP = {
+    eR = {
       steps: [...g, ...ed, ...E],
       methodType: K.He.CASH_APP
     };
 
-  function eR(e) {
+  function eP(e) {
     switch (e) {
       case A.h8.CREDIT_CARD_INFORMATION:
         return en;
       case A.h8.CASH_APP_INFORMATION:
-        return eP;
+        return eR;
       default:
         return {
           steps: [A.h8.ADD_PAYMENT_STEPS]
         }
     }
   }
-  let [ew, eD] = i.useState(m), [eL, ex] = i.useState(null), [eM, ek] = i.useState(eR(m)), {
+  let [ew, eD] = i.useState(m), [eL, ex] = i.useState(null), [eM, ek] = i.useState(eP(m)), {
     stripe: ej,
     contextMetadata: eU,
     activitySessionId: eG
@@ -403,7 +403,7 @@ function eT(e) {
               ek(eC), eH(A.h8.IDEAL_INFORMATION);
               break;
             case K.He.CASH_APP:
-              ek(eP), eH(A.h8.CASH_APP_INFORMATION);
+              ek(eR), eH(A.h8.CASH_APP_INFORMATION);
               break;
             case K.He.GIROPAY:
             case K.He.PAYSAFE_CARD:
@@ -522,14 +522,14 @@ function eT(e) {
     case A.h8.AWAITING_BROWSER_CHECKOUT_APPLE_PAY:
       n = (0, r.jsx)("div", {
         className: q.body,
-        children: (0, r.jsx)(R.M, {
+        children: (0, r.jsx)(P.M, {
           step: ew,
           onPurchaseComplete: () => y(ew),
           onHandoffFailure: () => {
             ek(en), eH(A.h8.CREDIT_CARD_INFORMATION)
           }
         })
-      }), o = (0, r.jsx)(R.a, {
+      }), o = (0, r.jsx)(P.a, {
         onPrimaryClick: () => {
           ek(en), eH(A.h8.CREDIT_CARD_INFORMATION)
         },
@@ -797,11 +797,11 @@ function eT(e) {
     children: [W && (0, r.jsx)(N.Z, {
       className: q.paymentModalBreadcrumbs,
       isEligibleForTrial: W
-    }), (0, r.jsxs)(P.C3, {
+    }), (0, r.jsxs)(R.C3, {
       children: [(0, r.jsx)(D.Z, {
         className: q.paymentModalError
       }), tO]
-    }), (0, r.jsx)(P.O3, {
+    }), (0, r.jsx)(R.O3, {
       children: tI
     })]
   }) : (0, r.jsx)(F.Z, {
@@ -838,7 +838,7 @@ function eA(e) {
     isValid: !1
   })), [m, g] = i.useState(""), [E, b] = i.useState(""), [y, O] = i.useState(() => ({
     token: null
-  })), [I, S, T, A, N] = (0, l.Wu)([x.Z], () => [x.Z.braintreeEmail, x.Z.braintreeNonce, x.Z.error, x.Z.venmoUsername, x.Z.adyenPaymentData]), [C, P] = (0, l.Wu)([M.Z], () => [M.Z.error, M.Z.isAwaitingAuthentication]);
+  })), [I, S, T, A, N] = (0, l.Wu)([x.Z], () => [x.Z.braintreeEmail, x.Z.braintreeNonce, x.Z.error, x.Z.venmoUsername, x.Z.adyenPaymentData]), [C, R] = (0, l.Wu)([M.Z], () => [M.Z.error, M.Z.isAwaitingAuthentication]);
   i.useEffect(() => {
     let e = e => {
       let {
@@ -853,7 +853,7 @@ function eA(e) {
       u.Z.unsubscribe("BRAINTREE_TOKENIZE_PAYPAL_SUCCESS", e), (0, _.fw)()
     }
   }, []);
-  let [R, w] = i.useState(!1), [D, L] = i.useState(!1), [U, G] = i.useState(null), B = i.useRef(null), F = (0, l.e7)([M.Z], () => M.Z.isAwaitingAuthentication), [Z, W] = (0, l.Wu)([j.Z], () => [j.Z.purchaseTokenAuthState, j.Z.purchaseTokenHash]);
+  let [P, w] = i.useState(!1), [D, L] = i.useState(!1), [U, G] = i.useState(null), B = i.useRef(null), F = (0, l.e7)([M.Z], () => M.Z.isAwaitingAuthentication), [Z, W] = (0, l.Wu)([j.Z], () => [j.Z.purchaseTokenAuthState, j.Z.purchaseTokenHash]);
   return i.useEffect(() => {
     null != U && null != B.current && B.current.scrollIntoView({
       behavior: "smooth"
@@ -869,7 +869,7 @@ function eA(e) {
     setTokenState: O,
     billingAddressState: p,
     setBillingAddressState: h,
-    isSubmittingCurrentStep: R,
+    isSubmittingCurrentStep: P,
     setIsSubmittingCurrentStep: w,
     hasRedirectURL: D,
     setHasRedirectURL: L,
@@ -878,7 +878,7 @@ function eA(e) {
     venmoUsername: A,
     adyenPaymentData: N,
     paymentError: null != C ? C : T,
-    paymentAuthenticationState: P ? V.wr.PENDING : null != C ? V.wr.ERROR : V.wr.NONE,
+    paymentAuthenticationState: R ? V.wr.PENDING : null != C ? V.wr.ERROR : V.wr.NONE,
     purchaseError: U,
     setPurchaseError: G,
     purchaseErrorBlockRef: B,

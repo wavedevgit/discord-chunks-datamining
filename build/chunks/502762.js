@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 });
 var r = n(200651),
   i = n(192379),
@@ -11,53 +11,49 @@ var r = n(200651),
   l = n(576635),
   c = n(213053),
   u = n(652853),
-  d = n(228168),
-  f = n(750883);
-let _ = Object.assign(i.forwardRef(function(e, t) {
+  d = n(750883);
+let f = Object.assign(i.forwardRef(function(e, t) {
   let {
     user: n,
     displayProfile: i,
     themeType: a,
-    className: _,
-    pendingThemeColors: p,
-    themeOverride: h,
-    children: m,
-    forceShowPremium: g = !1
+    className: f,
+    pendingThemeColors: _,
+    themeOverride: p,
+    children: h,
+    forceShowPremium: m = !1
   } = e, {
-    theme: E,
-    primaryColor: b,
-    secondaryColor: y
+    theme: g,
+    primaryColor: E,
+    secondaryColor: b
   } = (0, l.Z)({
     user: n,
     displayProfile: i,
-    pendingThemeColors: p,
-    isPreview: g
+    pendingThemeColors: _,
+    isPreview: m
   }), {
-    profileThemeStyle: v,
-    profileThemeClassName: O
+    profileThemeStyle: y,
+    profileThemeClassName: v
   } = (0, c.Z)({
-    theme: null != h ? h : E,
-    primaryColor: b,
-    secondaryColor: y
-  }), I = {
-    [f.biteSize]: a === d.lY.POPOUT,
-    [f.fullSize]: a === d.lY.MODAL,
-    [f.panel]: a === d.lY.SIDEBAR
-  };
+    theme: null != p ? p : g,
+    themeType: a,
+    primaryColor: E,
+    secondaryColor: b
+  });
   return (0, r.jsx)("div", {
-    className: o()(f.outer, O, I, _),
-    style: v,
+    className: o()(d.outer, v, f),
+    style: y,
     ref: t,
     children: (0, r.jsx)("div", {
-      className: o()(f.inner, I),
+      className: d.inner,
       children: (0, r.jsx)(s.ze6, {
-        theme: null != h ? h : E,
+        theme: null != p ? p : g,
         children: (0, r.jsx)(u.X, {
           themeType: a,
-          theme: null != h ? h : E,
-          primaryColor: b,
-          secondaryColor: y,
-          children: m
+          theme: null != p ? p : g,
+          primaryColor: E,
+          secondaryColor: b,
+          children: h
         })
       })
     })
@@ -67,16 +63,10 @@ let _ = Object.assign(i.forwardRef(function(e, t) {
     let {
       children: n,
       className: i
-    } = e, {
-      themeType: a
-    } = (0, u.z)(), s = {
-      [f.biteSize]: a === d.lY.POPOUT,
-      [f.fullSize]: a === d.lY.MODAL,
-      [f.panel]: a === d.lY.SIDEBAR
-    };
+    } = e;
     return (0, r.jsx)("div", {
       ref: t,
-      className: o()(f.overlay, s, i),
+      className: o()(d.overlay, i),
       children: n
     })
   })

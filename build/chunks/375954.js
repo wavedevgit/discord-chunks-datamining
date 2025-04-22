@@ -28,8 +28,8 @@ var r, i = n(392711),
   A = n(430824),
   N = n(496675),
   C = n(699516),
-  P = n(944486),
-  R = n(914010),
+  R = n(944486),
+  P = n(914010),
   w = n(594174),
   D = n(981631);
 
@@ -373,7 +373,7 @@ function ep(e) {
 }
 class eh extends(r = o.ZP.Store) {
   initialize() {
-    this.waitFor(w.default, O.Z, I.Z, T.ZP, E.default, P.Z, R.Z, A.Z, C.Z, S.ZP), this.syncWith([p.Z], () => {})
+    this.waitFor(w.default, O.Z, I.Z, T.ZP, E.default, R.Z, P.Z, A.Z, C.Z, S.ZP), this.syncWith([p.Z], () => {})
   }
   getMessages(e) {
     if (p.Z.hasViewingRoles()) {

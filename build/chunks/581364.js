@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $z: () => P,
+  $z: () => R,
   BH: () => N,
   BO: () => w,
   D7: () => x,
@@ -11,7 +11,7 @@ n.d(t, {
   X0: () => k,
   XA: () => j,
   Z8: () => O,
-  bD: () => R,
+  bD: () => P,
   nG: () => A,
   qJ: () => U,
   t0: () => G,
@@ -224,7 +224,7 @@ function C(e, t, n, r) {
   }), i.slice(0, r)
 }
 
-function P(e) {
+function R(e) {
   let t = e.type === u.jw.STRING,
     n = e.type === u.jw.CHANNEL,
     r = e.type === u.jw.USER || e.type === u.jw.MENTIONABLE,
@@ -240,7 +240,7 @@ function P(e) {
   }
 }
 
-function R(e) {
+function P(e) {
   return i()(e).subtract(1).toString()
 }
 let w = c.vB(0);

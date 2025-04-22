@@ -88,8 +88,8 @@ let N = function(e) {
     className: A,
     isTrialCTA: N,
     buttonText: C,
-    buttonTextClassName: P,
-    subscribeButtonText: R,
+    buttonTextClassName: R,
+    subscribeButtonText: P,
     iconClassName: w,
     postSuccessGuild: D,
     onSubscribeModalClose: L,
@@ -116,7 +116,7 @@ let N = function(e) {
       isTrialCTA: N,
       isGift: t,
       buttonTextOverride: C,
-      defaultTextOverride: R
+      defaultTextOverride: P
     }),
     X = e => {
       var a;
@@ -185,7 +185,7 @@ let N = function(e) {
       color: "currentColor",
       className: y.premiumIcon
     }), (0, r.jsx)("span", {
-      className: a()(y.buttonText, P),
+      className: a()(y.buttonText, R),
       children: Q.buttonText
     })]
   }));
@@ -201,7 +201,7 @@ let N = function(e) {
       color: "currentColor",
       className: y.giftIcon
     }), (0, r.jsx)("span", {
-      className: a()(y.buttonText, P),
+      className: a()(y.buttonText, R),
       children: Q.buttonText
     })]
   }));
@@ -225,7 +225,7 @@ let N = function(e) {
         color: "currentColor",
         className: a()(y.premiumIcon, w)
       }), (0, r.jsx)("span", {
-        className: a()(y.buttonText, P),
+        className: a()(y.buttonText, R),
         children: Q.buttonText
       })]
     }))

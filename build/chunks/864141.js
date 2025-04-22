@@ -30,8 +30,8 @@ var i = n(120356),
   A = n(788858),
   N = n(849755),
   C = n(384298),
-  P = n(670451),
-  R = n(228168),
+  R = n(670451),
+  P = n(228168),
   w = n(388032),
   D = n(227832);
 
@@ -83,26 +83,24 @@ function j(e) {
     onClose: M
   } = e, {
     themeType: j
-  } = (0, v.z)(), U = {
-    [D.fullSize]: j === R.lY.MODAL
-  }, {
-    analyticsLocations: G
-  } = (0, d.ZP)(u.Z.USER_PROFILE_VOICE_ACTIVITY_CARD), B = (0, b.Z)({
+  } = (0, v.z)(), {
+    analyticsLocations: U
+  } = (0, d.ZP)(u.Z.USER_PROFILE_VOICE_ACTIVITY_CARD), G = (0, b.Z)({
     display: "voice",
     activity: {
       type: "VOICE"
     },
     voiceChannelId: i.id,
     user: t,
-    analyticsLocations: G
-  }), V = (0, y.Z)({
+    analyticsLocations: U
+  }), B = (0, y.Z)({
     userId: t.id,
-    onAction: B
-  }), F = (0, s.e7)([m.Z], () => m.Z.getGuild(i.guild_id)), Z = (0, E.Z)(i), H = (0, f.ZP)(i), {
-    channelStatusEnabled: Y
+    onAction: G
+  }), V = (0, s.e7)([m.Z], () => m.Z.getGuild(i.guild_id)), F = (0, E.Z)(i), Z = (0, f.ZP)(i), {
+    channelStatusEnabled: H
   } = (0, g.D)({
     location: "UserProfileVoiceActivityCard"
-  }), W = () => i.isDM() || i.isGroupDM() ? w.intl.string(w.t["9FaEzs"]) : i.isGuildStageVoice() ? w.intl.string(w.t.QygGCA) : w.intl.string(w.t.msxteH), K = () => {
+  }), Y = () => i.isDM() || i.isGroupDM() ? w.intl.string(w.t["9FaEzs"]) : i.isGuildStageVoice() ? w.intl.string(w.t.QygGCA) : w.intl.string(w.t.msxteH), W = () => {
     if (t.id !== n.id) return null;
     let e = i.isDM() || i.isGroupDM() ? w.intl.string(w.t["+DsWbW"]) : w.intl.string(w.t.xOVEjY);
     return (0, r.jsx)(l.ua7, {
@@ -111,14 +109,14 @@ function j(e) {
         size: "xxs"
       }))
     })
-  }, z = () => {
+  }, K = () => {
     let e = e => {
-        e.stopPropagation(), null == B || B({
+        e.stopPropagation(), null == G || G({
           action: "OPEN_VOICE_CHANNEL"
         }), i.isGuildStageVoice() ? (0, h.Cq)(i) : (c.default.selectVoiceChannel(i.id), (0, _.Kh)(i.id)), null == M || M()
       },
       t = e => {
-        e.stopPropagation(), B({
+        e.stopPropagation(), G({
           action: "OPEN_VOICE_GUILD"
         }), (0, p.X)(i.guild_id), null == M || M()
       };
@@ -137,40 +135,40 @@ function j(e) {
           }), (0, r.jsx)(l.P3F, {
             className: a()(D.clickableText, D.inline),
             onClick: e,
-            children: H
+            children: Z
           })]
-        }), null != F && (0, r.jsx)(S.Z, {
+        }), null != V && (0, r.jsx)(S.Z, {
           variant: "text-xs/normal",
           text: w.intl.formatToPlainString(w.t["hq/Qzc"], {
-            guildName: F.name
+            guildName: V.name
           }),
           onClick: t
         })]
-      }), Y && i.isGuildVoice() && (0, r.jsx)(N.Z, {
+      }), H && i.isGuildVoice() && (0, r.jsx)(N.Z, {
         voiceChannel: i,
-        onAction: B,
+        onAction: G,
         onClose: M
       })]
     })
-  }, q = () => (0, r.jsx)("div", {
-    className: a()(D.actions, U),
+  }, z = () => (0, r.jsx)("div", {
+    className: D.actions,
     children: (0, r.jsx)(C.Z, {
       channel: i,
-      onAction: B,
+      onAction: G,
       onClose: M
     })
   });
   return (0, r.jsx)(d.Gt, {
-    value: G,
+    value: U,
     children: (0, r.jsxs)(O.Z, {
-      ref: V,
+      ref: B,
       className: a()(D.card, L),
-      onAction: B,
+      onAction: G,
       onClose: M,
       children: [(0, r.jsx)(I.Z, {
-        text: W(),
-        tags: K(),
-        contextMenu: (0, r.jsx)(P.Z, {
+        text: Y(),
+        tags: W(),
+        contextMenu: (0, r.jsx)(R.Z, {
           display: "voice",
           user: t,
           onClose: M
@@ -178,13 +176,13 @@ function j(e) {
       }), (0, r.jsx)("div", {
         className: D.body,
         children: (0, r.jsxs)("div", {
-          className: a()(D.content, U),
+          className: D.content,
           children: [(0, r.jsx)(T.Z, {
-            users: Z,
+            users: F,
             channel: i
-          }), z(), j === R.lY.MODAL && q()]
+          }), K(), j === P.lY.MODAL && z()]
         })
-      }), j !== R.lY.MODAL && q()]
+      }), j !== P.lY.MODAL && z()]
     })
   })
 }

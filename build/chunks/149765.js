@@ -10,8 +10,8 @@ n.d(t, {
   e$: () => T,
   fS: () => I,
   hX: () => b,
-  r0: () => P,
-  ug: () => R,
+  r0: () => R,
+  ug: () => P,
   vB: () => g
 }), n(368063);
 var r = n(654861),
@@ -204,12 +204,12 @@ function N(e, t) {
 function C(e, t) {
   return t === E ? e : v(e, b(e, t))
 }
-let P = p ? function(e) {
+let R = p ? function(e) {
     return BigInt(1) << BigInt(e)
   } : function(e) {
     return _.fromBit(e)
   },
-  R = p ? function(e, t) {
+  P = p ? function(e, t) {
     return Number(BigInt.asUintN(e, t))
   } : function(e, t) {
     return _.asUintN(e, t)

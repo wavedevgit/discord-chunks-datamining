@@ -33,8 +33,8 @@ function f(e, t) {
     A = (0, u.Z)("number" != typeof T ? T : (0, d.Z)(T, l.mv)),
     N = v === l.k5 ? l.YP : l.k5,
     C = e.rects.popper,
-    P = e.elements[I ? N : v],
-    R = (0, r.Z)((0, c.kK)(P) ? P : P.contextElement || (0, i.Z)(e.elements.popper), g, b, h),
+    R = e.elements[I ? N : v],
+    P = (0, r.Z)((0, c.kK)(R) ? R : R.contextElement || (0, i.Z)(e.elements.popper), g, b, h),
     w = (0, a.Z)(e.elements.reference),
     D = (0, o.Z)({
       reference: w,
@@ -45,10 +45,10 @@ function f(e, t) {
     L = (0, s.Z)(Object.assign({}, C, D)),
     x = v === l.k5 ? L : w,
     M = {
-      top: R.top - x.top + A.top,
-      bottom: x.bottom - R.bottom + A.bottom,
-      left: R.left - x.left + A.left,
-      right: x.right - R.right + A.right
+      top: P.top - x.top + A.top,
+      bottom: x.bottom - P.bottom + A.bottom,
+      left: P.left - x.left + A.left,
+      right: x.right - P.right + A.right
     },
     k = e.modifiersData.offset;
   if (v === l.k5 && k) {

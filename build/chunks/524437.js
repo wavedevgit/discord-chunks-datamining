@@ -15,12 +15,12 @@ n.d(t, {
   Us: () => y,
   X: () => u,
   Xr: () => _,
-  aV: () => eR,
+  aV: () => eP,
   az: () => H,
   bE: () => eo,
   c$: () => e2,
   dp: () => e0,
-  f9: () => R,
+  f9: () => P,
   hg: () => v,
   l1: () => O,
   n9: () => I,
@@ -109,7 +109,7 @@ class N extends o.C {
           a.versions = c.L.internalBinaryRead(e, e.uint32(), n, a.versions);
           break;
         case 2:
-          a.inbox = R.internalBinaryRead(e, e.uint32(), n, a.inbox);
+          a.inbox = P.internalBinaryRead(e, e.uint32(), n, a.inbox);
           break;
         case 3:
           a.guilds = D.internalBinaryRead(e, e.uint32(), n, a.guilds);
@@ -187,7 +187,7 @@ class N extends o.C {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    e.versions && c.L.internalBinaryWrite(e.versions, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), e.inbox && R.internalBinaryWrite(e.inbox, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), e.guilds && D.internalBinaryWrite(e.guilds, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), e.userContent && H.internalBinaryWrite(e.userContent, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), e.voiceAndVideo && Q.internalBinaryWrite(e.voiceAndVideo, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), e.textAndImages && en.internalBinaryWrite(e.textAndImages, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), e.notifications && ei.internalBinaryWrite(e.notifications, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), e.privacy && eo.internalBinaryWrite(e.privacy, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), e.debug && el.internalBinaryWrite(e.debug, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), e.gameLibrary && eu.internalBinaryWrite(e.gameLibrary, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), e.status && ef.internalBinaryWrite(e.status, t.tag(11, r.TD.LengthDelimited).fork(), n).join(), e.localization && em.internalBinaryWrite(e.localization, t.tag(12, r.TD.LengthDelimited).fork(), n).join(), e.appearance && ey.internalBinaryWrite(e.appearance, t.tag(13, r.TD.LengthDelimited).fork(), n).join(), e.guildFolders && eS.internalBinaryWrite(e.guildFolders, t.tag(14, r.TD.LengthDelimited).fork(), n).join(), e.favorites && eC.internalBinaryWrite(e.favorites, t.tag(15, r.TD.LengthDelimited).fork(), n).join(), e.audioContextSettings && ex.internalBinaryWrite(e.audioContextSettings, t.tag(16, r.TD.LengthDelimited).fork(), n).join(), e.communities && ek.internalBinaryWrite(e.communities, t.tag(17, r.TD.LengthDelimited).fork(), n).join(), e.broadcast && eF.internalBinaryWrite(e.broadcast, t.tag(18, r.TD.LengthDelimited).fork(), n).join(), e.clips && eH.internalBinaryWrite(e.clips, t.tag(19, r.TD.LengthDelimited).fork(), n).join(), e.forLater && ez.internalBinaryWrite(e.forLater, t.tag(20, r.TD.LengthDelimited).fork(), n).join(), e.safetySettings && eW.internalBinaryWrite(e.safetySettings, t.tag(21, r.TD.LengthDelimited).fork(), n).join(), e.icymiSettings && eQ.internalBinaryWrite(e.icymiSettings, t.tag(22, r.TD.LengthDelimited).fork(), n).join(), e.applications && eJ.internalBinaryWrite(e.applications, t.tag(23, r.TD.LengthDelimited).fork(), n).join(), e.ads && e4.internalBinaryWrite(e.ads, t.tag(24, r.TD.LengthDelimited).fork(), n).join();
+    e.versions && c.L.internalBinaryWrite(e.versions, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), e.inbox && P.internalBinaryWrite(e.inbox, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), e.guilds && D.internalBinaryWrite(e.guilds, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), e.userContent && H.internalBinaryWrite(e.userContent, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), e.voiceAndVideo && Q.internalBinaryWrite(e.voiceAndVideo, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), e.textAndImages && en.internalBinaryWrite(e.textAndImages, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), e.notifications && ei.internalBinaryWrite(e.notifications, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), e.privacy && eo.internalBinaryWrite(e.privacy, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), e.debug && el.internalBinaryWrite(e.debug, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), e.gameLibrary && eu.internalBinaryWrite(e.gameLibrary, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), e.status && ef.internalBinaryWrite(e.status, t.tag(11, r.TD.LengthDelimited).fork(), n).join(), e.localization && em.internalBinaryWrite(e.localization, t.tag(12, r.TD.LengthDelimited).fork(), n).join(), e.appearance && ey.internalBinaryWrite(e.appearance, t.tag(13, r.TD.LengthDelimited).fork(), n).join(), e.guildFolders && eS.internalBinaryWrite(e.guildFolders, t.tag(14, r.TD.LengthDelimited).fork(), n).join(), e.favorites && eC.internalBinaryWrite(e.favorites, t.tag(15, r.TD.LengthDelimited).fork(), n).join(), e.audioContextSettings && ex.internalBinaryWrite(e.audioContextSettings, t.tag(16, r.TD.LengthDelimited).fork(), n).join(), e.communities && ek.internalBinaryWrite(e.communities, t.tag(17, r.TD.LengthDelimited).fork(), n).join(), e.broadcast && eF.internalBinaryWrite(e.broadcast, t.tag(18, r.TD.LengthDelimited).fork(), n).join(), e.clips && eH.internalBinaryWrite(e.clips, t.tag(19, r.TD.LengthDelimited).fork(), n).join(), e.forLater && ez.internalBinaryWrite(e.forLater, t.tag(20, r.TD.LengthDelimited).fork(), n).join(), e.safetySettings && eW.internalBinaryWrite(e.safetySettings, t.tag(21, r.TD.LengthDelimited).fork(), n).join(), e.icymiSettings && eQ.internalBinaryWrite(e.icymiSettings, t.tag(22, r.TD.LengthDelimited).fork(), n).join(), e.applications && eJ.internalBinaryWrite(e.applications, t.tag(23, r.TD.LengthDelimited).fork(), n).join(), e.ads && e4.internalBinaryWrite(e.ads, t.tag(24, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     return !1 !== i && (!0 == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -201,7 +201,7 @@ class N extends o.C {
       no: 2,
       name: "inbox",
       kind: "message",
-      T: () => R
+      T: () => P
     }, {
       no: 3,
       name: "guilds",
@@ -316,7 +316,7 @@ class N extends o.C {
   }
 }
 let C = new N;
-class P extends o.C {
+class R extends o.C {
   create(e) {
     let t = {
       currentTab: 0,
@@ -367,7 +367,7 @@ class P extends o.C {
     }])
   }
 }
-let R = new P;
+let P = new R;
 class w extends o.C {
   create(e) {
     let t = {
@@ -2617,16 +2617,16 @@ class eN extends o.C {
           a = t.fixed64().toString();
           break;
         case 2:
-          o = eR.internalBinaryRead(t, t.uint32(), n);
+          o = eP.internalBinaryRead(t, t.uint32(), n);
           break;
         default:
           throw new globalThis.Error("unknown map entry field for field discord_protos.discord_users.v1.Favorites.favorite_channels")
       }
     }
-    e[null != a ? a : "0"] = null != o ? o : eR.create()
+    e[null != a ? a : "0"] = null != o ? o : eP.create()
   }
   internalBinaryWrite(e, t, n) {
-    for (let i of Object.keys(e.favoriteChannels)) t.tag(1, r.TD.LengthDelimited).fork().tag(1, r.TD.Bit64).fixed64(i), t.tag(2, r.TD.LengthDelimited).fork(), eR.internalBinaryWrite(e.favoriteChannels[i], t, n), t.join().join();
+    for (let i of Object.keys(e.favoriteChannels)) t.tag(1, r.TD.LengthDelimited).fork().tag(1, r.TD.Bit64).fixed64(i), t.tag(2, r.TD.LengthDelimited).fork(), eP.internalBinaryWrite(e.favoriteChannels[i], t, n), t.join().join();
     !1 !== e.muted && t.tag(2, r.TD.Varint).bool(e.muted);
     let i = n.writeUnknownFields;
     return !1 !== i && (!0 == i ? r.z.onWrite : i)(this.typeName, e, t), t
@@ -2639,7 +2639,7 @@ class eN extends o.C {
       K: 6,
       V: {
         kind: "message",
-        T: () => eR
+        T: () => eP
       }
     }, {
       no: 2,
@@ -2650,7 +2650,7 @@ class eN extends o.C {
   }
 }
 let eC = new eN;
-class eP extends o.C {
+class eR extends o.C {
   create(e) {
     let t = {
       nickname: "",
@@ -2719,7 +2719,7 @@ class eP extends o.C {
     }])
   }
 }
-let eR = new eP;
+let eP = new eR;
 class ew extends o.C {
   create(e) {
     let t = {

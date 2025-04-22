@@ -63,7 +63,7 @@ function C(e, t, n) {
   return (i !== e && e === I.I_8 && T.subscribeToGuild(i), null != r && r.isThread()) ? r.type === I.d4z.ANNOUNCEMENT_THREAD ? T.subscribeChannel(i, r.parent_id, n) : !!r.isActiveThread() && T.subscribeThreadMemberList(i, t, v.Z.getChannelId()) : T.subscribeChannel(i, t, n)
 }
 
-function P(e) {
+function R(e) {
   let {
     type: t
   } = e;
@@ -79,7 +79,7 @@ function P(e) {
   })
 }
 
-function R() {
+function P() {
   A(!1, !1)
 }
 
@@ -242,9 +242,9 @@ class z extends(i = s.ZP.Store) {
 }
 S(z, "displayName", "GuildSubscriptionsStore");
 let q = new z(l.Z, {
-  CONNECTION_OPEN: P,
-  CONNECTION_RESUMED: P,
-  CONNECTION_CLOSED: R,
+  CONNECTION_OPEN: R,
+  CONNECTION_RESUMED: R,
+  CONNECTION_CLOSED: P,
   IDLE: w,
   LOGOUT: D,
   VOICE_CHANNEL_SELECT: F,

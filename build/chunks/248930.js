@@ -27,45 +27,45 @@ function x(e) {
     profileGuildId: i,
     className: x,
     onClose: y,
-    hideContextMenu: O = !1
-  } = e, I = o.useRef(null), {
-    analyticsLocations: _
+    hideContextMenu: I = !1
+  } = e, O = o.useRef(null), {
+    analyticsLocations: Z
   } = (0, c.ZP)(s.Z.USER_PROFILE_RECENT_ACTIVITY_CARD), {
-    themeType: Z
+    themeType: _
   } = (0, m.z)(), {
     interactionSource: P,
-    interactionSourceId: A
-  } = (0, u.Xo)(), E = (0, d.Z)({
+    interactionSourceId: E
+  } = (0, u.Xo)(), N = (0, d.Z)({
     display: "recent",
     user: n,
     entry: t,
-    analyticsLocations: _
+    analyticsLocations: Z
   });
-  return null != Z && (0, a.Rh)(t) ? (0, r.jsx)(c.Gt, {
-    value: _,
+  return null != _ && (0, a.Rh)(t) ? (0, r.jsx)(c.Gt, {
+    value: Z,
     children: (0, r.jsx)(b.Z, {
-      targetElementRef: I,
+      targetElementRef: O,
       sourceType: j.n_.ACTIVITY,
       user: n,
       children: (0, r.jsx)(f.Z, {
         user: n,
         guildId: i,
-        themeType: Z,
+        themeType: _,
         sourceId: t.id,
         entry: t,
-        onAction: E,
+        onAction: N,
         sourceType: j.n_.ACTIVITY,
         children: () => (0, r.jsx)(p.Z, {
-          ref: I,
+          ref: O,
           user: n,
           className: v.toolbarContainer,
           interactionSourceId: t.id,
           sourceType: j.n_.ACTIVITY,
-          onAction: E,
-          onShowToolbar: () => E({
+          onAction: N,
+          onShowToolbar: () => N({
             action: "HOVER_ACTIVITY_CARD"
           }),
-          renderMoreButtonPopout: O ? void 0 : e => (0, r.jsx)(g.Z, {
+          renderMoreButtonPopout: I ? void 0 : e => (0, r.jsx)(g.Z, {
             display: "recent",
             entry: t,
             user: n,
@@ -77,7 +77,7 @@ function x(e) {
             user: n,
             onClose: y,
             className: l()(x, {
-              [v.hoisted]: P === j.n_.ACTIVITY && A === t.id
+              [v.hoisted]: P === j.n_.ACTIVITY && E === t.id
             })
           })
         })

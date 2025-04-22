@@ -29,8 +29,8 @@ var r = n(200651),
   A = n(988290),
   N = n(721359),
   C = n(640963),
-  P = n(628309),
-  R = n(680783),
+  R = n(628309),
+  P = n(680783),
   w = n(981631),
   D = n(921944),
   L = n(474936),
@@ -355,7 +355,7 @@ let X = function(e) {
     activePickerChannelId: c,
     closePicker: h,
     setPreviewWallpaperId: m
-  } = (0, S.B)(), g = (0, R.Z)(c), b = (0, E.m)(L.p9.TIER_2), [y, k] = i.useState(!1), j = (0, A.e)(y), U = (0, P.u)();
+  } = (0, S.B)(), g = (0, P.Z)(c), b = (0, E.m)(L.p9.TIER_2), [y, k] = i.useState(!1), j = (0, A.e)(y), U = (0, R.u)();
   (0, N.W)();
   let G = (0, u.e7)([T.Z], () => T.Z.isFetchingWallpapers),
     B = (0, u.e7)([T.Z], () => T.Z.failedToFetchWallpapers),

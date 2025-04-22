@@ -48,8 +48,8 @@ function T(e) {
 let A = "recentMentionFilterSettings",
   N = [],
   C = {},
-  P = {},
-  R = !1,
+  R = {},
+  P = !1,
   w = !0,
   D = s.K.get(A, {
     guildFilter: I.NgX.ALL_SERVERS,
@@ -82,7 +82,7 @@ function U(e) {
   let {
     guildId: t
   } = e;
-  R = !0, null == t && D.guildFilter === I.NgX.THIS_SERVER && z({
+  P = !0, null == t && D.guildFilter === I.NgX.THIS_SERVER && z({
     guildFilter: I.NgX.ALL_SERVERS
   })
 }
@@ -101,13 +101,13 @@ function B(e) {
   } = e, i = a().map(n, G);
   j({
     addedMessages: i
-  }), r ? N = N.concat(i) : (N = i, P = {}), a().forEach(i, e => {
-    P[e.id] = !0
-  }), R = !1, w = t, x = (0, l.zO)(), L = !0
+  }), r ? N = N.concat(i) : (N = i, R = {}), a().forEach(i, e => {
+    R[e.id] = !0
+  }), P = !1, w = t, x = (0, l.zO)(), L = !0
 }
 
 function V() {
-  R = !1
+  P = !1
 }
 
 function F(e) {
@@ -147,14 +147,14 @@ function Z(e) {
     })) return !1;
   let i = F(n, t);
   if (null == i) return !1;
-  (N = N.slice()).unshift(i), P[i.id] = !0, j({
+  (N = N.slice()).unshift(i), R[i.id] = !0, j({
     addedMessages: [i]
   })
 }
 
 function H(e) {
   let t = e.message.id;
-  if (null == P[String(t)]) return !1;
+  if (null == R[String(t)]) return !1;
   let n = a().findIndex(N, e => {
       let {
         id: n
@@ -166,8 +166,8 @@ function H(e) {
 }
 
 function Y(e) {
-  if (null == P[e]) return !1;
-  delete P[e], j({
+  if (null == R[e]) return !1;
+  delete R[e], j({
     deletedMessages: a().filter(N, t => {
       let {
         id: n
@@ -201,11 +201,11 @@ function z(e) {
   D = a().defaults(a().pick(e, ["guildFilter", "roleFilter", "everyoneFilter"]), D), s.K.set(A, D);
   let n = (e, n) => t[e] !== D[e] && D[e] === n,
     r = n("guildFilter", I.NgX.THIS_SERVER) || n("everyoneFilter", !1) || n("roleFilter", !1);
-  P = {};
+  R = {};
   let i = [];
   r && N.forEach(e => {
     let t = F(e);
-    null != t && (i.push(t), P[t.id] = !0)
+    null != t && (i.push(t), R[t.id] = !0)
   }), k(N = i), 0 === N.length && (L = !1)
 }
 
@@ -215,7 +215,7 @@ function q() {
 }
 
 function Q() {
-  N = [], P = {}, L = !1, M = !1, C = {}
+  N = [], R = {}, L = !1, M = !1, C = {}
 }
 
 function X(e) {
@@ -224,7 +224,7 @@ function X(e) {
   } = e, n = [];
   N = a().filter(N, e => {
     let r = m.Z.getChannel(e.channel_id);
-    return null != r && r.getGuildId() !== t.id || (delete P[e.id], n.push(e), !1)
+    return null != r && r.getGuildId() !== t.id || (delete R[e.id], n.push(e), !1)
   }), j({
     deletedMessages: n
   })
@@ -240,7 +240,7 @@ function $(e) {
   let {
     channel: t
   } = e, n = [];
-  N = a().filter(N, e => e.channel_id !== t.id || (delete P[e.id], n.push(e), !1)), j({
+  N = a().filter(N, e => e.channel_id !== t.id || (delete R[e.id], n.push(e), !1)), j({
     deletedMessages: n
   })
 }
@@ -256,7 +256,7 @@ function et(e) {
   j({
     deletedMessages: N.slice(t)
   });
-  for (let e = t; e < N.length; ++e) delete P[N[e].id];
+  for (let e = t; e < N.length; ++e) delete R[N[e].id];
   N.length > (N = N.slice(0, t)).length && (w = !0)
 }
 
@@ -277,10 +277,10 @@ class er extends(r = o.ZP.Store) {
     return L || N.length > 0 ? N : null
   }
   hasMention(e) {
-    return P[e]
+    return R[e]
   }
   get loading() {
-    return R
+    return P
   }
   get hasMore() {
     return w

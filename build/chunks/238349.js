@@ -37,8 +37,8 @@ let v = [],
   A = s.z.MATCH_SOME,
   N = 0,
   C = [],
-  P = !1,
-  R = [],
+  R = !1,
+  P = [],
   w = o().chain(v),
   D = o().chain(v),
   L = new Set,
@@ -73,7 +73,7 @@ function U(e, t) {
 }
 
 function G() {
-  C = [], r = null, I = null, S = new Set, T = l.z.LATEST_ACTIVITY, A = s.z.MATCH_SOME, N = 0, R = [], w = o().chain(v), D = o().chain(v), x.clear(), L.clear()
+  C = [], r = null, I = null, S = new Set, T = l.z.LATEST_ACTIVITY, A = s.z.MATCH_SOME, N = 0, P = [], w = o().chain(v), D = o().chain(v), x.clear(), L.clear()
 }
 
 function B() {
@@ -98,12 +98,12 @@ function V(e) {
 function F(e) {
   let t = p.Z.getChannel(I);
   if (null == t) return;
-  (null == e ? void 0 : e.refreshThreadIds) && (R = Object.values(d.Z.getThreadsForParent(t.guild_id, t.id)).map(e => {
+  (null == e ? void 0 : e.refreshThreadIds) && (P = Object.values(d.Z.getThreadsForParent(t.guild_id, t.id)).map(e => {
     let {
       id: t
     } = e;
     return t
-  }), N = 0, P = !0), 0 !== L.size && (R = R.filter(e => !L.has(e)), L.clear()), 0 !== x.size && (R = Array.from(new Set([...R, ...x])), x.clear()), ((null == e ? void 0 : e.refreshThreadIds) || (null == e ? void 0 : e.sortThreadIds)) && (D = o().chain(R).sort(j(l.z.LATEST_ACTIVITY)), w = o().chain(R).sort(j(l.z.CREATION_DATE)));
+  }), N = 0, R = !0), 0 !== L.size && (P = P.filter(e => !L.has(e)), L.clear()), 0 !== x.size && (P = Array.from(new Set([...P, ...x])), x.clear()), ((null == e ? void 0 : e.refreshThreadIds) || (null == e ? void 0 : e.sortThreadIds)) && (D = o().chain(P).sort(j(l.z.LATEST_ACTIVITY)), w = o().chain(P).sort(j(l.z.CREATION_DATE)));
   let n = (T === l.z.LATEST_ACTIVITY ? D : w).value(),
     i = (C = 0 === S.size ? n : n.filter(U(S, A))).find(e => k(e));
   r = null == i ? null : i
@@ -180,7 +180,7 @@ function q(e) {
     channelId: t
   } = e;
   if (null == t || t !== I) return !1;
-  P = !1
+  R = !1
 }
 class Q extends(i = c.ZP.Store) {
   initialize() {
@@ -190,7 +190,7 @@ class Q extends(i = c.ZP.Store) {
     return N
   }
   getCanAckThreads() {
-    return P
+    return R
   }
   getThreadIds(e, t, n, r) {
     let i = e !== I,

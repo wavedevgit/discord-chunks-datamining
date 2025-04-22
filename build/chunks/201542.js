@@ -78,9 +78,9 @@ let S = i.memo(function(e) {
       onVolumeHide: A,
       onPlay: N,
       onPause: C,
-      onError: P
+      onError: R
     } = e,
-    R = i.useRef(null),
+    P = i.useRef(null),
     [w, D] = i.useState(0),
     [L, x] = i.useState(S),
     [M, k] = i.useState(!1),
@@ -109,11 +109,11 @@ let S = i.memo(function(e) {
       G || X()
     }, [X, G]),
     $ = i.useCallback(() => {
-      let e = R.current;
+      let e = P.current;
       if (null == e) return;
       let t = e.error;
-      null == P || P(t)
-    }, [P]),
+      null == R || R(t)
+    }, [R]),
     ee = i.useCallback(e => {
       let t = (0, h.A)(e, 1);
       k(0 === t), W(t), null == d || d(t)
@@ -128,7 +128,7 @@ let S = i.memo(function(e) {
       B(!1), w === L && X()
     }, [w, L, X]),
     ei = i.useCallback(e => {
-      let t = R.current;
+      let t = P.current;
       if (null == L || null == t) return;
       let n = e * L;
       D(n), t.currentTime = n, F(!0), clearTimeout(K.current), K.current = void 0
@@ -156,19 +156,19 @@ let S = i.memo(function(e) {
     if (e || j)
       if (j) {
         var i, a;
-        ea.current = performance.now(), null == r || r(!1, t, (null != (a = null == (i = R.current) ? void 0 : i.duration) ? a : 0) * p.Z.Millis.SECOND)
+        ea.current = performance.now(), null == r || r(!1, t, (null != (a = null == (i = P.current) ? void 0 : i.duration) ? a : 0) * p.Z.Millis.SECOND)
       } else {
         let e = performance.now(),
           r = ea.current,
           i = null != r ? (e - r) / 1e3 : 0;
         null == n || n(t, i), ea.current = null
       }
-  }, [j]), O(R, j, D), I(n, j, U);
+  }, [j]), O(P, j, D), I(n, j, U);
   let el = j ? l.fpf : l.o1U,
     ec = j ? E.intl.string(E.t.ZcgDJS) : E.intl.string(E.t.RscU7O);
   t = "Safari" === platform.name ? (0, r.jsx)(i.Suspense, {
     children: (0, r.jsx)(y, {
-      ref: R,
+      ref: P,
       className: b.audioElement,
       src: n,
       preload: Z,
@@ -180,7 +180,7 @@ let S = i.memo(function(e) {
       volume: Y
     })
   }) : (0, r.jsx)(u.Z, {
-    ref: R,
+    ref: P,
     className: b.audioElement,
     controls: !1,
     preload: Z,

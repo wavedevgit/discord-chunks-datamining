@@ -78,37 +78,38 @@ function F() {
     q = k.dN.useSetting() && null != H ? E.ZP.parse(void 0, H).content : H,
     X = Z.ZP.canUsePremiumProfileCustomization(n),
     {
-      analyticsLocations: Q
+      analyticsLocations: Q,
+      newestAnalyticsLocation: J
     } = (0, f.ZP)(h.Z.USER_SETTINGS_USER_PROFILE),
-    J = (0, y.T)({
+    $ = (0, y.T)({
       location: "UserSettingsProfileCustomization"
     }),
-    $ = (0, _.wE)(o.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE),
-    ee = J && !$;
+    ee = (0, _.wE)(o.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE),
+    et = $ && !ee;
   r.useEffect(() => {
-    ee && (0, _.EW)(o.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE, {
+    et && (0, _.EW)(o.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE, {
       forceTrack: !0
     })
-  }, [ee]);
-  let et = (0, j.H)("UserSettingsProfileCustomization"),
-    [en, ei] = (0, x.US)(et ? [o.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE] : []),
-    er = en === o.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE;
+  }, [et]);
+  let en = (0, j.H)("UserSettingsProfileCustomization"),
+    [ei, er] = (0, x.US)(en ? [o.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE] : []),
+    es = ei === o.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE;
   r.useEffect(() => {
-    er && ei(U.L.TAKE_ACTION)
-  }, [er, ei]), r.useEffect(() => () => u.Z.wait(m.W3), []);
-  let es = "UserSettingsProfileCustomization";
+    es && er(U.L.TAKE_ACTION)
+  }, [es, er]), r.useEffect(() => () => u.Z.wait(m.W3), []);
+  let el = "UserSettingsProfileCustomization";
   (0, p.j)({
-    location: es + " auto on",
+    location: el + " auto on",
     autoTrackExposure: !0
   }), (0, p.j)({
-    location: es + " auto off",
+    location: el + " auto off",
     autoTrackExposure: !1
   });
-  let [el, ea] = r.useState(!1), {
-    showRedesign: eo
+  let [ea, eo] = r.useState(!1), {
+    showRedesign: ec
   } = w.b.useExperiment({
     location: "profile customization"
-  }), ec = !X, ed = r.useRef(null);
+  }), ed = !X, eu = r.useRef(null);
   return s ? (0, i.jsx)(g.Z, {}) : (0, i.jsxs)(f.Gt, {
     value: Q,
     children: [(0, i.jsx)(b.Z, {}), (0, i.jsx)(S.Z, {
@@ -148,24 +149,26 @@ function F() {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
       }), e)),
       children: (0, i.jsx)(B.Z, {})
-    }), eo && (0, i.jsx)(T.Z, {}), (0, i.jsx)(c.$, {
-      innerRef: ed,
-      onChange: e => ea(e),
+    }), ec && (0, i.jsx)(T.Z, {}), (0, i.jsx)(c.$, {
+      innerRef: eu,
+      onChange: e => eo(e),
       threshold: .25,
-      active: ec,
+      active: ed,
       children: (0, i.jsx)("div", {
-        ref: ed,
+        ref: eu,
         children: (0, i.jsx)(I.Z, {
           user: n,
-          shouldShow: ec,
-          isVisible: el
+          shouldShow: ed,
+          isVisible: ea
         })
       })
-    }), ec && !K && (0, i.jsx)(C.p, {
+    }), ed && !K && (0, i.jsx)(C.p, {
       className: G.floatingNitroUpsell,
-      showUpsell: ec && !el,
+      showUpsell: ed && !ea,
       text: V.intl.format(V.t.TmfgIy, {
-        onClick: () => (0, O.y)()
+        onClick: () => (0, O.y)({
+          analyticsSource: J
+        })
       }),
       textVariant: "heading-md/medium",
       button: (0, i.jsxs)(d.gtL, {
@@ -175,7 +178,7 @@ function F() {
           var e;
           D.default.track(M.rMx.TRY_IT_OUT_PRESET_CLICKED, {
             cta_variant: "floating_action_button"
-          }), null == ed || null == (e = ed.current) || e.scrollIntoView({
+          }), null == eu || null == (e = eu.current) || e.scrollIntoView({
             behavior: "smooth"
           })
         },

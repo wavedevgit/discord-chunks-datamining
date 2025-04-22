@@ -10,8 +10,8 @@ var O, I = n(392711),
   A = n(442837),
   N = n(570140),
   C = n(497505),
-  P = n(918701),
-  R = n(184299),
+  R = n(918701),
+  P = n(184299),
   w = n(5881),
   D = n(46140);
 
@@ -138,7 +138,7 @@ function Q(e) {
   } = e;
   r = !1, a = new Map;
   let s = new Map;
-  for (let e of t) a.set(e.id, e), s.set(e.id, (0, P.zi)(e)), e.targetedContent.includes(C.jn.QUEST_BAR) && (0, w.T)({
+  for (let e of t) a.set(e.id, e), s.set(e.id, (0, R.zi)(e)), e.targetedContent.includes(C.jn.QUEST_BAR) && (0, w.T)({
     location: D.dr.QUESTS_STORE
   }).log("Delivered ".concat(e.config.messages.questName, " (").concat(e.id, ")"));
   for (let e of (y = s, o = new Map, n)) o.set(e.id, e);
@@ -308,13 +308,13 @@ function eb(e) {
     location: D.dr.QUESTS_STORE
   });
   n.log("Received user status update for ".concat(t.quest_id), t);
-  let r = (0, P.U3)(t);
+  let r = (0, R.U3)(t);
   F(t.quest_id, {
     userStatus: r
   });
   let i = a.get(t.quest_id);
   if (null != i) {
-    let e = (0, P.zi)(i);
+    let e = (0, R.zi)(i);
     y.get(t.quest_id) !== e && (y = new Map(y).set(t.quest_id, e))
   }
   0 === Object.keys(r.progress).length && j.has(r.questId) && (n.log("Removing optimistic progress for ".concat(r.questId)), j.delete(r.questId))
@@ -326,10 +326,10 @@ function ey(e) {
   } = e;
   F(t.questId, {
     userStatus: t
-  }), null == t.claimedAt && (p = new Map(p)).delete(t.questId), null == t.enrolledAt && ((E = new Map(E)).delete(t.questId), R.ZP.getState().resetQuest(t.questId));
+  }), null == t.claimedAt && (p = new Map(p)).delete(t.questId), null == t.enrolledAt && ((E = new Map(E)).delete(t.questId), P.ZP.getState().resetQuest(t.questId));
   let n = a.get(t.questId);
   if (null != n) {
-    let e = (0, P.zi)(n);
+    let e = (0, R.zi)(n);
     y.get(t.questId) !== e && (y = new Map(y).set(t.questId, e))
   }
 }
@@ -384,7 +384,7 @@ function eA() {
   let e = !1,
     t = new Map(y);
   a.forEach((n, r) => {
-    !0 !== t.get(r) && ((0, P.zi)(n) ? (t.set(r, !0), e = !0) : t.has(r) || t.set(r, !1))
+    !0 !== t.get(r) && ((0, R.zi)(n) ? (t.set(r, !0), e = !0) : t.has(r) || t.set(r, !1))
   }), e && (y = t, ew.emitChange())
 }
 
@@ -398,14 +398,14 @@ function eC() {
   null !== U && (clearInterval(U), U = null)
 }
 
-function eP(e) {
+function eR(e) {
   let {
     quest_enrollment_blocked_until: t
   } = e;
   v = null != t ? new Date(t) : null
 }
 B();
-class eR extends(O = A.ZP.Store) {
+class eP extends(O = A.ZP.Store) {
   get quests() {
     return a
   }
@@ -476,8 +476,8 @@ class eR extends(O = A.ZP.Store) {
     return null != (t = y.get(e)) && t
   }
 }
-L(eR, "displayName", "QuestsStore");
-let ew = new eR(N.Z, {
+L(eP, "displayName", "QuestsStore");
+let ew = new eP(N.Z, {
     LOGOUT: z,
     QUESTS_FETCH_CURRENT_QUESTS_BEGIN: q,
     QUESTS_FETCH_CURRENT_QUESTS_SUCCESS: Q,
@@ -508,6 +508,6 @@ let ew = new eR(N.Z, {
     QUESTS_DELIVERY_OVERRIDE: ev,
     QUESTS_SELECT_TASK_PLATFORM: eO,
     QUESTS_UPDATE_OPTIMISTIC_PROGRESS: eI,
-    QUESTS_USER_COMPLETION_UPDATE: eP
+    QUESTS_USER_COMPLETION_UPDATE: eR
   }),
   eD = ew

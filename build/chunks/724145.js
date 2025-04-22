@@ -29,8 +29,8 @@ var r = n(200651),
   A = n(705262),
   N = n(981631),
   C = n(921944),
-  P = n(474936),
-  R = n(388032),
+  R = n(474936),
+  P = n(388032),
   w = n(595532);
 let D = () => (0, r.jsx)("div", {
     className: w.editorHeader,
@@ -41,7 +41,7 @@ let D = () => (0, r.jsx)("div", {
       }), (0, r.jsx)(u.X6q, {
         variant: "heading-md/bold",
         color: "always-white",
-        children: R.intl.string(R.t.POSLGR)
+        children: P.intl.string(P.t.POSLGR)
       })]
     })
   }),
@@ -63,7 +63,7 @@ let D = () => (0, r.jsx)("div", {
         })
       }), (0, r.jsx)(u.X6q, {
         variant: "heading-lg/extrabold",
-        children: R.intl.string(R.t["xSR+a2"])
+        children: P.intl.string(P.t["xSR+a2"])
       })]
     })
   },
@@ -89,8 +89,8 @@ let D = () => (0, r.jsx)("div", {
     };
     return (0, r.jsx)(E.Z, {
       size: u.zxk.Sizes.MEDIUM,
-      buttonText: _ ? R.intl.string(R.t.IJI7ys) : (null == p || null == (i = p.subscription_trial) ? void 0 : i.sku_id) === P.Si.TIER_2 ? b : R.intl.string(R.t.mr4K7O),
-      subscriptionTier: P.Si.TIER_2,
+      buttonText: _ ? P.intl.string(P.t.IJI7ys) : (null == p || null == (i = p.subscription_trial) ? void 0 : i.sku_id) === R.Si.TIER_2 ? b : P.intl.string(P.t.mr4K7O),
+      subscriptionTier: R.Si.TIER_2,
       onSubscribeModalClose: v
     })
   },
@@ -112,9 +112,9 @@ let D = () => (0, r.jsx)("div", {
       isCoachmark: !0
     }, {
       forceShowCloseButton: !0
-    }, () => R.intl.string(R.t.cpT0Cg)).with({
+    }, () => P.intl.string(P.t.cpT0Cg)).with({
       isPreview: !0
-    }, () => R.intl.string(R.t["dqH+qq"])).otherwise(() => R.intl.string(R.t.Olc2Ky));
+    }, () => P.intl.string(P.t["dqH+qq"])).otherwise(() => P.intl.string(P.t.Olc2Ky));
     return (0, r.jsxs)("div", {
       className: w.editorFooter,
       children: [a && (0, r.jsx)(x, {
@@ -149,7 +149,7 @@ function k(e) {
   })), f = (0, T.q)();
   i.useEffect(() => f(N.rMx.CLIENT_THEME_PREVIEW_VIEWED), [f]), i.useEffect(() => {
     s && v.default.track(N.rMx.PREMIUM_UPSELL_VIEWED, {
-      type: P.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
+      type: R.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
       location_stack: a
     })
   }, [s, a]);

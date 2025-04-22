@@ -16,8 +16,9 @@ var r = n(200651),
 function p(e) {
   var {
     uploadType: t,
-    className: n
-  } = e, a = function(e, t) {
+    analyticsSource: n,
+    className: a
+  } = e, p = function(e, t) {
     if (null == e) return {};
     var n, r, l = function(e, t) {
       if (null == e) return {};
@@ -31,24 +32,27 @@ function p(e) {
       for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
     }
     return l
-  }(e, ["uploadType", "className"]);
-  let p = l.useCallback(() => {
-      (0, o.s)(t, void 0)
-    }, [t]),
-    g = l.useMemo(() => {
+  }(e, ["uploadType", "analyticsSource", "className"]);
+  let g = l.useCallback(() => {
+      (0, o.s)({
+        uploadType: t,
+        analyticsSource: n
+      })
+    }, [t, n]),
+    m = l.useMemo(() => {
       switch (t) {
         case u.pC.AVATAR:
           return d.intl.format(d.t["pvw/HB"], {
-            onClick: p
+            onClick: g
           });
         case u.pC.BANNER:
           return d.intl.format(d.t.aCrz1d, {
-            onClick: p
+            onClick: g
           });
         default:
           return ""
       }
-    }, [t, p]);
+    }, [t, g]);
   return t !== u.pC.AVATAR && t !== u.pC.BANNER ? null : (0, r.jsx)(s.p, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -67,11 +71,11 @@ function p(e) {
     }
     return e
   }({
-    text: g,
+    text: m,
     button: d.intl.string(d.t.BmJkbW),
     buttonAnalyticsObject: {
       section: c.jXE.USER_PROFILE
     },
-    className: i()(f.container, n)
-  }, a))
+    className: i()(f.container, a)
+  }, p))
 }

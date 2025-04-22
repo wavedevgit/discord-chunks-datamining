@@ -8,7 +8,7 @@ n.d(t, {
   Ex: () => ew,
   Fg: () => q,
   G6: () => el,
-  H1: () => R,
+  H1: () => P,
   I0: () => L,
   JG: () => ex,
   L1: () => eO,
@@ -26,10 +26,10 @@ n.d(t, {
   SE: () => eN,
   Sb: () => ev,
   Sh: () => ek,
-  T4: () => P,
+  T4: () => R,
   UP: () => eo,
   Wp: () => eT,
-  Wz: () => eR,
+  Wz: () => eP,
   Xc: () => j,
   Xk: () => w,
   Xr: () => es,
@@ -56,7 +56,7 @@ n.d(t, {
   h2: () => K,
   hg: () => eU,
   iG: () => Y,
-  iH: () => eP,
+  iH: () => eR,
   jU: () => X,
   kJ: () => H,
   kU: () => J,
@@ -147,8 +147,8 @@ let I = (0, u.Zc)("notifications", "reactionNotifications", e => null != e ? e :
   A = [],
   N = (0, u.Zc)("textAndImages", "emojiPickerCollapsedSections", e => null != e ? e : A, e => e),
   C = (0, u.Zc)("textAndImages", "stickerPickerCollapsedSections", e => null != e ? e : A, e => e),
-  P = (0, u.Zc)("textAndImages", "soundboardPickerCollapsedSections", e => null != e ? e : A, e => e),
-  R = (0, u.Zc)("textAndImages", "viewImageDescriptions", e => {
+  R = (0, u.Zc)("textAndImages", "soundboardPickerCollapsedSections", e => null != e ? e : A, e => e),
+  P = (0, u.Zc)("textAndImages", "viewImageDescriptions", e => {
     var t;
     return null != (t = null == e ? void 0 : e.value) && t
   }, e => a.D5.create({
@@ -440,8 +440,8 @@ let ev = (0, u.KM)((0, u.Zc)("appearance", "developerMode", e => null != e && e,
   eA = [],
   eN = (0, u.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eA, e => e),
   eC = [],
-  eP = (0, u.Zc)("privacy", "activityJoiningRestrictedGuildIds", e => null != e ? e : eC, e => e),
-  eR = (0, u.TG)({
+  eR = (0, u.Zc)("privacy", "activityJoiningRestrictedGuildIds", e => null != e ? e : eC, e => e),
+  eP = (0, u.TG)({
     baseSetting: (0, u.Zc)("privacy", "defaultGuildsActivityRestricted", e => e, e => null != e ? e : i.E5.OFF),
     isEligible: () => (0, l.o0)("user_settings"),
     useIsEligible: () => (0, l.Yd)("user_settings"),

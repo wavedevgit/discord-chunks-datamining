@@ -24,15 +24,15 @@ function x(t) {
   let {
     analyticsSection: e,
     type: n
-  } = t, x = (0, r.e7)([d.default], () => d.default.getCurrentUser()), A = m.ZP.canUseAnimatedAvatar(x), E = m.ZP.canUsePremiumProfileCustomization(x), y = n === b.pC.BANNER && E || n === b.pC.AVATAR && A, {
+  } = t, x = (0, r.e7)([d.default], () => d.default.getCurrentUser()), A = m.ZP.canUseAnimatedAvatar(x), y = m.ZP.canUsePremiumProfileCustomization(x), E = n === b.pC.BANNER && y || n === b.pC.AVATAR && A, {
     sourceAnalyticsLocations: N
   } = (0, c.ZP)(l.Z.PREMIUM_PREVIEW_UPSELL_HEADER);
   if (i.useEffect(() => {
-      y || f.default.track(p.rMx.PREMIUM_UPSELL_VIEWED, {
+      E || f.default.track(p.rMx.PREMIUM_UPSELL_VIEWED, {
         type: e,
         location_stack: N
       })
-    }, [y, e, N]), y) return null;
+    }, [E, e, N]), E) return null;
   let h = (0, o.jsx)(_.Z, {
     className: v.__invalid_getNitroLink,
     size: a.zxk.Sizes.SMALL,

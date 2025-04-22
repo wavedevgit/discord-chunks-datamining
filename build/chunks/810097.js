@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => R,
+  ZP: () => P,
   _1: () => A,
   jd: () => N
 }), n(314940), n(388685);
@@ -70,13 +70,13 @@ let A = 2700,
     [b.n_.STATUS]: () => y.intl.string(y.t.TKdBCw),
     [b.n_.ACTIVITY]: () => y.intl.string(y.t.bSe71N)
   },
-  P = {
+  R = {
     [b.n_.AVATAR]: () => y.intl.string(y.t.xvN0fX),
     [b.n_.STATUS]: () => y.intl.string(y.t["C/vzS0"]),
     [b.n_.ACTIVITY]: () => y.intl.string(y.t.ObfsSk)
   };
 
-function R(e) {
+function P(e) {
   let {
     user: t,
     sourceType: n,
@@ -85,7 +85,7 @@ function R(e) {
     interactionSourceId: S,
     targetRef: A,
     onAction: N,
-    renderMoreButtonPopout: R
+    renderMoreButtonPopout: P
   } = e, w = i.useRef(null), D = (0, c.e7)([p.default], () => p.default.getId() === t.id), L = (0, h.Z)(t.id), {
     themeType: x
   } = (0, E.z)(), {
@@ -162,14 +162,14 @@ function R(e) {
       children: (0, r.jsx)(f.zx, {
         onClick: Z,
         className: v.button,
-        "aria-label": P[n](),
+        "aria-label": R[n](),
         "aria-haspopup": "dialog",
         children: (0, r.jsx)(d.n$P, {
           size: "xs",
           className: v.icon
         })
       })
-    }), null == R ? void 0 : R(e => {
+    }), null == P ? void 0 : P(e => {
       let t = () => {
         var t;
         k(w), null == (t = e.onClick) || t.call(e)

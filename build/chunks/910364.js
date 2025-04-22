@@ -21,14 +21,14 @@ var r = t(200651),
   v = t(687158),
   x = t(510659),
   y = t(113557),
-  O = t(867176),
-  I = t(451834),
-  _ = t(502762),
-  Z = t(544989),
+  I = t(867176),
+  O = t(451834),
+  Z = t(502762),
+  _ = t(544989),
   P = t(705556),
-  A = t(481932),
-  E = t(195387),
-  N = t(272510),
+  E = t(481932),
+  N = t(195387),
+  A = t(272510),
   T = t(4517),
   C = t(171368),
   S = t(62154),
@@ -76,8 +76,8 @@ function G(e) {
     guildId: G,
     channelId: U,
     messageId: k,
-    roleId: Y,
-    sessionId: V,
+    roleId: V,
+    sessionId: Y,
     friendToken: F,
     initialSection: W,
     initialSubsection: z,
@@ -92,11 +92,11 @@ function G(e) {
   } = (0, u.ZP)([...Q, d.Z.USER_PROFILE_MODAL]), ee = (0, g.ZB)({
     layout: "MODAL",
     userId: n.id,
-    sourceSessionId: V,
+    sourceSessionId: Y,
     guildId: G,
     channelId: U,
     messageId: k,
-    roleId: Y,
+    roleId: V,
     showGuildProfile: q
   }), en = (0, x.$m)(), et = (0, s.q_F)({
     opacity: +(null != en.interactionType),
@@ -126,25 +126,24 @@ function G(e) {
           className: L.root,
           hideShadow: !0,
           "aria-label": R.intl.string(R.t["3N/J2t"]),
-          children: [(0, r.jsxs)(_.Z, {
+          children: [(0, r.jsxs)(Z.Z, {
             user: n,
             displayProfile: er,
             themeType: M.lY.MODAL,
             ref: ed,
-            children: [(0, r.jsxs)(Z.Z, {
-              themeType: M.lY.MODAL,
-              children: [(0, r.jsx)(E.Z, {
+            children: [(0, r.jsxs)(_.Z, {
+              children: [(0, r.jsx)(N.Z, {
                 shouldShowTooltip: null === en.interactionType,
                 user: n,
                 guildId: G,
                 channelId: U,
                 onClose: X
-              }), (0, r.jsx)(A.Z, {
+              }), (0, r.jsx)(E.Z, {
                 shouldShowTooltip: null === en.interactionType,
                 themeType: M.lY.MODAL,
                 user: n,
                 friendToken: F
-              }), (0, r.jsx)(N.Z, {
+              }), (0, r.jsx)(A.Z, {
                 user: n,
                 guildId: G,
                 viewProfileItem: (null == eo ? void 0 : eo.guildId) == null ? null : (null == er ? void 0 : er.guildId) != null ? (0, r.jsx)(s.sNh, {
@@ -182,11 +181,11 @@ function G(e) {
                 })
               })]
             }), (0, r.jsxs)("header", {
-              children: [(0, r.jsx)(O.Z, {
+              children: [(0, r.jsx)(I.Z, {
                 user: n,
                 displayProfile: er,
                 themeType: M.lY.MODAL
-              }), (0, r.jsx)(I.Z, {
+              }), (0, r.jsx)(O.Z, {
                 userId: n.id,
                 onClose: X,
                 className: L.toast

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   ZP: () => er,
-  b2: () => R
+  b2: () => P
 }), n(388685);
 var r = n(952639),
   i = n.n(r),
@@ -31,7 +31,7 @@ var r = n(952639),
   N = n(981631),
   C = n(526761);
 
-function P(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -39,7 +39,7 @@ function P(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let R = 3e3,
+let P = 3e3,
   w = 800,
   D = {};
 
@@ -134,7 +134,7 @@ function G(e, t) {
       setAt: Date.now(),
       timeout: setTimeout(() => {
         j(e)
-      }, R)
+      }, P)
     })
   });
   let a = n || new Set(i.map(e => e.channel_id)).size > 1;
@@ -400,7 +400,7 @@ function et(e) {
 }
 class en extends c.Z {
   constructor(...e) {
-    super(...e), P(this, "actions", {
+    super(...e), R(this, "actions", {
       LOAD_MESSAGES_SUCCESS: K,
       LOAD_FORUM_POSTS: q,
       LOAD_THREADS_SUCCESS: Q,

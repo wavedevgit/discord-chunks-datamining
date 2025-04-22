@@ -73,8 +73,9 @@ function v(e) {
     isTryItOutFlow: T,
     onUpsellClick: A
   } = e, {
-    analyticsLocations: N
-  } = (0, l.ZP)(), C = (0, o.e7)([u.Z], () => u.Z.getStatus(t.id)), P = null == n || (null == i ? void 0 : i.canUsePremiumProfileCustomization) || d, R = (0, r.jsx)(y, {
+    analyticsLocations: N,
+    newestAnalyticsLocation: C
+  } = (0, l.ZP)(), R = (0, o.e7)([u.Z], () => u.Z.getStatus(t.id)), P = null == n || (null == i ? void 0 : i.canUsePremiumProfileCustomization) || d, w = (0, r.jsx)(y, {
     src: m,
     avatarDecoration: E,
     imageClassName: a()(I, {
@@ -82,13 +83,13 @@ function v(e) {
     }),
     size: s.EFr.SIZE_80,
     "aria-label": t.username,
-    status: C,
+    status: R,
     statusTooltip: !1,
     statusBackdropColor: null != O ? (0, s.QFD)(v) : void 0
   });
   return S ? (0, r.jsx)("div", {
     className: h.avatar,
-    children: R
+    children: w
   }) : P ? (0, r.jsx)(s.yRy, {
     renderPopout: e => {
       let {
@@ -97,7 +98,12 @@ function v(e) {
       return (0, r.jsx)(f.Z, {
         className: h.menu,
         onClose: t,
-        onChangeAvatar: () => (0, _.$r)(p.pC.AVATAR, null == n ? void 0 : n.id, T),
+        onChangeAvatar: () => (0, _.$r)({
+          uploadType: p.pC.AVATAR,
+          guildId: null == n ? void 0 : n.id,
+          analyticsSource: C,
+          isTryItOutFlow: T
+        }),
         onChangeAvatarDecoration: () => {
           (0, c.ps)({
             guild: null == n ? void 0 : n,
@@ -109,7 +115,7 @@ function v(e) {
     },
     children: e => (0, r.jsxs)(s.P3F, b(g({}, e), {
       className: a()(h.avatar, h.clickable),
-      children: [R, (0, r.jsx)(s.vdY, {
+      children: [w, (0, r.jsx)(s.vdY, {
         size: "custom",
         className: h.overlayIcon,
         width: 20,
@@ -120,7 +126,7 @@ function v(e) {
   }) : (0, r.jsxs)(s.P3F, {
     onClick: A,
     className: a()(h.avatar, h.clickable),
-    children: [R, (0, r.jsx)(s.SrA, {
+    children: [w, (0, r.jsx)(s.SrA, {
       size: "custom",
       className: h.overlayIcon,
       width: 20,

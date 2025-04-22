@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  A3: () => R,
+  A3: () => P,
   C1: () => H,
   DV: () => B,
   Gn: () => M,
@@ -14,7 +14,7 @@ n.d(t, {
   Y1: () => G,
   fe: () => k,
   jA: () => D,
-  kI: () => P,
+  kI: () => R,
   nV: () => K,
   q5: () => F,
   to: () => x,
@@ -47,7 +47,7 @@ var r = n(192379),
   A = n(957825),
   N = n(474936),
   C = n(388032);
-let P = function(e, t) {
+let R = function(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null == t ? void 0 : t.getGuildId(),
       i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
     (0, d.O)(n);
@@ -75,12 +75,12 @@ let P = function(e, t) {
         newlyAddedEmojis: N
       } = (0, O.Z)(n, e),
       {
-        allEmojis: P
+        allEmojis: R
       } = (0, v.Z)({
         topEmojis: A,
         newlyAddedEmojis: N
       }),
-      R = (0, o.e7)([l.ZP], () => l.ZP.getDisambiguatedEmojiContext(n), [n]),
+      P = (0, o.e7)([l.ZP], () => l.ZP.getDisambiguatedEmojiContext(n), [n]),
       w = (0, o.e7)([p.Z], () => {
         var e;
         return null == (e = p.Z.getGuild(n)) ? void 0 : e.name
@@ -91,7 +91,7 @@ let P = function(e, t) {
         location: "useEmojiCategories"
       });
     return r.useMemo(() => {
-      let r = R.getGroupedCustomEmoji(),
+      let r = P.getGroupedCustomEmoji(),
         o = h.ZP.getFlattenedGuildIds(),
         c = [],
         u = {
@@ -133,7 +133,7 @@ let P = function(e, t) {
           let {
             emojisDisabled: e,
             emojisUnfiltered: n
-          } = d(P);
+          } = d(R);
           if (null == n || 0 === n.length) return t;
           t.push({
             type: I.En.TOP_GUILD_EMOJI,
@@ -184,9 +184,9 @@ let P = function(e, t) {
         });
         return t
       }, x && i ? [u] : [])
-    }, [R, t, n, e, L, P, w, g, E, _, s, S, a, x, i])
+    }, [P, t, n, e, L, R, w, g, E, _, s, S, a, x, i])
   },
-  R = e => {
+  P = e => {
     let t = (null == e ? void 0 : e.getGuildId()) != null;
     g.default.track(S.rMx.PREMIUM_PROMOTION_OPENED, {
       location_page: t ? S.ZY5.GUILD_CHANNEL : S.ZY5.DM_CHANNEL,

@@ -101,7 +101,7 @@ function C(e, t) {
   return Object.keys(i.Z.getThreadsForParent(e, t)).length
 }
 
-function P(e) {
+function R(e) {
   let {
     loaded: t,
     firstMessage: n
@@ -109,13 +109,13 @@ function P(e) {
   return t ? n : null
 }
 
-function R(e) {
-  let t = P(e);
+function P(e) {
+  let t = R(e);
   return null == t ? 0 : t.reactions.length
 }
 
 function w(e) {
-  let t = P(e);
+  let t = R(e);
   return null == t ? 0 : t.reactions.reduce((e, t) => e + t.count, 0)
 }
 
@@ -131,7 +131,7 @@ function D(e) {
 }
 
 function L(e) {
-  let t = P(e);
+  let t = R(e);
   return null == t ? [] : t.attachments.map(e => {
     var t;
     return null != (t = e.content_type) ? t : "unknown"
@@ -182,7 +182,7 @@ function M(e) {
     forum_post_id: m.id,
     forum_post_first_message_id: f.default.castChannelIdAsMessageId(m.id),
     forum_post_num_reactions: w(m.id),
-    forum_post_num_unique_reactions: R(m.id),
+    forum_post_num_unique_reactions: P(m.id),
     forum_post_applied_tag_ids: D(m.id),
     forum_post_is_pinned: m.hasFlag(E.zZ.PINNED),
     forum_post_is_new: null == (i = h.Z.getReadStateSnapshotAnalytics(m.id)) ? void 0 : i.isNew,

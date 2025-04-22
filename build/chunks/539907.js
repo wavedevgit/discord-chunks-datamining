@@ -129,7 +129,7 @@ function C(e) {
   }
 }
 
-function P(e, t, n) {
+function R(e, t, n) {
   if (null != e && e < 0 && ("top" === n.position || "bottom" === n.position) && null != t && Math.abs(e) < (null == t ? void 0 : t.offsetHeight) && null != n.style) {
     let t = "top" === n.position ? "bottom" : "top",
       r = n.style[t];
@@ -142,7 +142,7 @@ function P(e, t, n) {
   return n
 }
 
-function R(e) {
+function P(e) {
   let {
     targetRef: t,
     overrideTargetRect: n
@@ -151,8 +151,8 @@ function R(e) {
 }
 
 function w(e, t) {
-  let n = R(e),
-    r = R(t);
+  let n = P(e),
+    r = P(t);
   return n.top === r.top && n.left === r.left
 }
 class D extends(r = a.Component) {
@@ -268,7 +268,7 @@ class D extends(r = a.Component) {
   calculatePositionStyle(e, t, n) {
     let {
       spacing: r = 0
-    } = this.props, i = R(this.props), a = n.getBoundingClientRect(), o = N(i, a.left, a.top);
+    } = this.props, i = P(this.props), a = n.getBoundingClientRect(), o = N(i, a.left, a.top);
     switch (e) {
       case "top":
         return this.getHorizontalAlignmentStyle(o, t, n, {
@@ -317,13 +317,13 @@ class D extends(r = a.Component) {
           style: i,
           nudge: a
         } = this.calculatePositionStyle(t, n, r);
-      if ((s = A(t, i, n, r)) > o) return P(s, n, {
+      if ((s = A(t, i, n, r)) > o) return R(s, n, {
         position: t,
         nudge: a,
         style: i
       })
     }
-    return P(o, n, {
+    return R(o, n, {
       position: e,
       nudge: a,
       style: i

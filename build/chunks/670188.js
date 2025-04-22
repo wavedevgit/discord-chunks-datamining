@@ -106,15 +106,15 @@ function T(e) {
     onClosePopout: A,
     shouldShow: N,
     shouldPreload: C = !0
-  } = e, P = y(e, ["children", "user", "currentUser", "guildId", "channelId", "messageId", "roleId", "disableUserProfileLink", "newAnalyticsLocations", "appContext", "avatarUrl", "preload", "renderPopout", "onRequestOpen", "onRequestClose", "onClosePopout", "shouldShow", "shouldPreload"]);
-  let R = i.useRef(void 0),
+  } = e, R = y(e, ["children", "user", "currentUser", "guildId", "channelId", "messageId", "roleId", "disableUserProfileLink", "newAnalyticsLocations", "appContext", "avatarUrl", "preload", "renderPopout", "onRequestOpen", "onRequestClose", "onClosePopout", "shouldShow", "shouldPreload"]);
+  let P = i.useRef(void 0),
     w = i.useCallback(() => null != v ? v() : (0, d.Z)(n.id, null != E ? E : n.getAvatarURL(s, O), {
       withMutualGuilds: n.id !== a.id,
       withMutualFriends: !n.bot && n.id !== a.id,
       guildId: s,
       channelId: l
     }), [v, a, n, E, s, l]),
-    D = i.useCallback(e => (null == R.current && (R.current = Date.now()), null != I) ? I(e) : (0, r.jsx)(f.Z, b(g({}, e), {
+    D = i.useCallback(e => (null == P.current && (P.current = Date.now()), null != I) ? I(e) : (0, r.jsx)(f.Z, b(g({}, e), {
       user: n,
       currentUser: a,
       guildId: s,
@@ -124,7 +124,7 @@ function T(e) {
       disableUserProfileLink: p,
       newAnalyticsLocations: h,
       appContext: m,
-      openedAt: R.current,
+      openedAt: P.current,
       closePopout: () => {
         e.closePopout(), null == A || A()
       }
@@ -135,12 +135,12 @@ function T(e) {
     preload: C ? w : void 0,
     renderPopout: D,
     onRequestOpen: () => {
-      null == R.current && (R.current = Date.now()), null == S || S()
+      null == P.current && (P.current = Date.now()), null == S || S()
     },
     onRequestClose: () => {
-      R.current = void 0, null == T || T()
+      P.current = void 0, null == T || T()
     }
-  }, P), {
+  }, R), {
     children: t
   }))
 }
@@ -161,8 +161,8 @@ function A(e) {
     preload: A,
     renderPopout: N,
     onRequestOpen: C,
-    onRequestClose: P,
-    onClosePopout: R,
+    onRequestClose: R,
+    onClosePopout: P,
     shouldShow: w,
     shouldPreload: D = !0
   } = e, L = y(e, ["children", "user", "currentUser", "guildId", "channelId", "messageId", "roleId", "disableUserProfileLink", "newAnalyticsLocations", "appContext", "avatarUrl", "preload", "renderPopout", "onRequestOpen", "onRequestClose", "onClosePopout", "shouldShow", "shouldPreload"]);
@@ -197,9 +197,9 @@ function A(e) {
       appContext: S,
       openedAt: x.current,
       closePopout: () => {
-        e.closePopout(), null == R || R()
+        e.closePopout(), null == P || P()
       }
-    })), [n, a, N, c, p, E, m, v, I, S, R, j]),
+    })), [n, a, N, c, p, E, m, v, I, S, P, j]),
     z = i.useCallback(() => {
       Y(), G.current = !0, D && (B.current = setTimeout(async () => {
         if (G.current) try {
@@ -229,7 +229,7 @@ function A(e) {
         null == x.current && (x.current = Date.now()), null == C || C()
       },
       onRequestClose: () => {
-        x.current = void 0, k(!1), null == P || P()
+        x.current = void 0, k(!1), null == R || R()
       }
     }, L), {
       children: t

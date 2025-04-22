@@ -29,8 +29,8 @@ var r = n(200651),
   A = n(189771),
   N = n(560688),
   C = n(88479),
-  P = n(136995),
-  R = n(25827),
+  R = n(136995),
+  P = n(25827),
   w = n(430824),
   D = n(131951),
   L = n(594174),
@@ -177,7 +177,7 @@ function ea(e) {
         } = e, {
           isShown: a
         } = t;
-        return (0, r.jsx)(R.C, {
+        return (0, r.jsx)(P.C, {
           buttonRef: g,
           join: !0,
           enabled: d,
@@ -201,7 +201,7 @@ function ea(e) {
           }
         })
       }
-    }), (0, r.jsx)(P.Z, {
+    }), (0, r.jsx)(R.Z, {
       channel: n,
       color: "join",
       centerButton: !0,
@@ -227,7 +227,7 @@ function eo(e) {
     id: I.id,
     icon: I.icon,
     size: er
-  }) : null, T = null != (t = (0, g.x)(h, er, !0)) ? t : S, A = (0, E.ZP)(h), [N, C] = (0, l.Wu)([D.Z], () => [D.Z.supports(H.AN.VIDEO), Object.keys(D.Z.getVideoDevices()).length]), P = null != I ? "".concat(A, ", ").concat(I.name) : A, R = (0, l.e7)([x.Z], () => x.Z.isFocused()), L = (0, l.e7)([j.Z], () => j.Z.getMode(h.id)), M = i.useCallback(e => {
+  }) : null, T = null != (t = (0, g.x)(h, er, !0)) ? t : S, A = (0, E.ZP)(h), [N, C] = (0, l.Wu)([D.Z], () => [D.Z.supports(H.AN.VIDEO), Object.keys(D.Z.getVideoDevices()).length]), R = null != I ? "".concat(A, ", ").concat(I.name) : A, P = (0, l.e7)([x.Z], () => x.Z.isFocused()), L = (0, l.e7)([j.Z], () => j.Z.getMode(h.id)), M = i.useCallback(e => {
     null != e.top && null != e.left && d.Z.move(e.left, e.top)
   }, []), G = (0, c.q_F)({
     value: +!!v,
@@ -260,7 +260,7 @@ function eo(e) {
         })
       }) : (0, r.jsx)(U.Z, {
         className: K.icon,
-        ringing: R,
+        ringing: P,
         src: null != T ? T : "",
         ringingType: U.Z.RingingType.INCOMING,
         size: v ? c.EFr.SIZE_40 : c.EFr.SIZE_80
@@ -270,7 +270,7 @@ function eo(e) {
           className: K.title,
           color: "header-primary",
           variant: v ? "text-md/semibold" : "text-lg/semibold",
-          children: P
+          children: R
         }), (0, r.jsx)(c.Text, {
           color: "header-secondary",
           className: K.subtitle,

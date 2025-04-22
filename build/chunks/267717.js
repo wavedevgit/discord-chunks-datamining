@@ -35,19 +35,22 @@ function g(e) {
 }
 
 function p(e) {
-  let t = l.default.getCurrentUser();
-  null != t && (0, r.ZDy)(async () => {
+  let {
+    analyticsSource: t,
+    onSubscribeFinish: s
+  } = e, a = l.default.getCurrentUser();
+  null != a && (0, r.ZDy)(async () => {
     let {
-      default: r
+      default: e
     } = await Promise.resolve().then(n.bind(n, 267717));
-    return n => (0, i.jsx)(r, g({
-      user: t,
-      analyticsSource: d.Sbl.PROFILE_PANEL,
+    return n => (0, i.jsx)(e, g({
+      user: a,
+      analyticsSource: t,
       analyticsLocation: {
         section: d.jXE.USER_PROFILE,
         object: d.qAy.BUTTON_CTA
       },
-      onSubscribeFinish: e
+      onSubscribeFinish: s
     }, n))
   })
 }

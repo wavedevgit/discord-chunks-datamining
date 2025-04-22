@@ -37,8 +37,8 @@ function v(e) {
     hideTooltip: C = !1
   } = e;
   (0, u.Z)(null == t ? void 0 : t.id);
-  let P = (null == a ? void 0 : a.discoverable) !== !1 ? a : null,
-    R = i.useMemo(() => {
+  let R = (null == a ? void 0 : a.discoverable) !== !1 ? a : null,
+    P = i.useMemo(() => {
       var e, t;
       let r = null == n ? void 0 : n.find(e => {
         let {
@@ -52,10 +52,10 @@ function v(e) {
     }, [n]);
   if ((0, l.e7)([d.Z], () => d.Z.isBlockedOrIgnored(null == t ? void 0 : t.id))) return null;
   let w = (null == t ? void 0 : t.bot) === !0,
-    D = (null == R ? void 0 : R.state) != null && "xs" === S,
+    D = (null == P ? void 0 : P.state) != null && "xs" === S,
     L = () => {
-      if (null != P) return (0, r.jsx)(h.Z, {
-        stream: P,
+      if (null != R) return (0, r.jsx)(h.Z, {
+        stream: R,
         game: null == n ? void 0 : n.find(c.Z),
         textVariant: "text-".concat(S, "/medium"),
         textClassName: O,
@@ -88,9 +88,9 @@ function v(e) {
       }) : null
     },
     x = () => {
-      if (null == R) return null;
-      let e = R.emoji,
-        t = R.state;
+      if (null == P) return null;
+      let e = P.emoji,
+        t = P.state;
       return (0, r.jsxs)(r.Fragment, {
         children: [null != e && !N && (0, r.jsx)(f.Z, {
           emoji: e,

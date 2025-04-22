@@ -29,8 +29,8 @@ var r = n(200651),
   A = n(669079),
   N = n(74538),
   C = n(51144),
-  P = n(987209),
-  R = n(981631),
+  R = n(987209),
+  P = n(981631),
   w = n(474936),
   D = n(388032),
   L = n(136266);
@@ -48,9 +48,9 @@ function M(e) {
     giftRecipient: h,
     giftMessageError: b,
     isSendingMessage: y
-  } = e, [O, S] = i.useState(u.kO8.Modes.DEFAULT), M = (0, c.e7)([I.Z], () => I.Z.enabled), j = f || null != l && null != h, U = (null == a ? void 0 : a.productLine) === R.POd.COLLECTIBLES, G = (0, E.Z)(), {
+  } = e, [O, S] = i.useState(u.kO8.Modes.DEFAULT), M = (0, c.e7)([I.Z], () => I.Z.enabled), j = f || null != l && null != h, U = (null == a ? void 0 : a.productLine) === P.POd.COLLECTIBLES, G = (0, E.Z)(), {
     selectedGiftingPromotionReward: B
-  } = (0, P.wD)(), V = null == G ? void 0 : G.giftPurchaseConfirmation, F = (0, g.tK)(null == B ? void 0 : B.skuId), Z = (0, g.a5)(s) && null != F && null != V, H = () => null != s ? s.skuId : null != a ? a.id : null, Y = () => {
+  } = (0, R.wD)(), V = null == G ? void 0 : G.giftPurchaseConfirmation, F = (0, g.tK)(null == B ? void 0 : B.skuId), Z = (0, g.a5)(s) && null != F && null != V, H = () => null != s ? s.skuId : null != a ? a.id : null, Y = () => {
     let e;
     return null != b ? D.intl.string(D.t.qB8ayc) : null == s ? null : (e = s.interval === w.rV.MONTH ? j ? Z ? V.monthGiftText : D.t["4ZJ+7e"] : D.t["P+z55e"] : j ? Z ? V.yearGiftText : D.t.p0pZXF : D.t.bXqk3t, D.intl.format(e, {
       skuName: (0, N.aq)(s.id),
@@ -177,9 +177,9 @@ let k = e => {
   } = (0, c.cj)([y.Z], () => ({
     userAffinities: y.Z.getUserAffinitiesUserIds(),
     isLoading: y.Z.getFetching()
-  })), I = Array.from(E.values()), T = (0, c.e7)([O.Z], () => O.Z.getFriendIDs()), A = l().difference(T, I), N = [...I, ...A], P = (0, c.e7)([S.default], () => S.default.filter(e => N.includes(e.id) && !e.bot), [N]);
-  if (null == P || 0 === P.length) return null;
-  let R = l().sortBy(P, e => N.indexOf(e.id));
+  })), I = Array.from(E.values()), T = (0, c.e7)([O.Z], () => O.Z.getFriendIDs()), A = l().difference(T, I), N = [...I, ...A], R = (0, c.e7)([S.default], () => S.default.filter(e => N.includes(e.id) && !e.bot), [N]);
+  if (null == R || 0 === R.length) return null;
+  let P = l().sortBy(R, e => N.indexOf(e.id));
   return (0, r.jsxs)("div", {
     className: L.giftRecipientSection,
     children: [(0, r.jsx)(u.vwX, {
@@ -201,7 +201,7 @@ let k = e => {
         onChange: e => {
           o(e), p(!1)
         },
-        options: R.map(e => ({
+        options: P.map(e => ({
           value: e,
           label: "".concat(C.ZP.getUserTag(e))
         }))

@@ -248,13 +248,13 @@
     return r * i
   }
 
-  function P(e, t, n, r) {
+  function R(e, t, n, r) {
     var i = e * r - t * n < 0 ? -1 : 1,
       a = e * n + t * r;
     return a > 1 && (a = 1), a < -1 && (a = -1), i * Math.acos(a)
   }
 
-  function R(e, t, n, r, i, a, o, s, l, c) {
+  function P(e, t, n, r, i, a, o, s, l, c) {
     var u = c * (e - n) / 2 + l * (t - r) / 2,
       d = -l * (e - n) / 2 + c * (t - r) / 2,
       f = o * o,
@@ -271,8 +271,8 @@
       O = (d - E) / s,
       I = (-u - g) / o,
       S = (-d - E) / s,
-      T = P(1, 0, v, O),
-      A = P(v, O, I, S);
+      T = R(1, 0, v, O),
+      A = R(v, O, I, S);
     return 0 === a && A > 0 && (A -= tp), 1 === a && A < 0 && (A += tp), [b, y, T, A]
   }
 
@@ -474,7 +474,7 @@
 
   function en(e, t, n, r, i) {
     var a, o;
-    if (i === eP(e, t, n, r) > 0)
+    if (i === eR(e, t, n, r) > 0)
       for (a = t; a < n; a += r) o = eA(a, e[a], e[a + 1], o);
     else
       for (a = n - r; a >= t; a -= r) o = eA(a, e[a], e[a + 1], o);
@@ -697,12 +697,12 @@
     this.i = e, this.x = t, this.y = n, this.prev = null, this.next = null, this.z = null, this.prevZ = null, this.nextZ = null, this.steiner = !1
   }
 
-  function eP(e, t, n, r) {
+  function eR(e, t, n, r) {
     for (var i = 0, a = t, o = n - r; a < n; a += r) i += (e[o] - e[a]) * (e[a + 1] + e[o + 1]), o = a;
     return i
   }
 
-  function eR(e, t) {
+  function eP(e, t) {
     var n = t.id,
       r = t.bbox,
       i = null == t.properties ? {} : t.properties,
@@ -898,7 +898,7 @@
         return e.area
       }).left; n.length > t;) ! function() {
       var t = n[0],
-        i = tR(n)[0][0],
+        i = tP(n)[0][0],
         a = n[i],
         o = eL(e, [t, a]);
       o.area = t.area + a.area, o.type = "Polygon", o.arcs = o.arcs[0], n.splice(i, 1), n.shift(), n.splice(r(n, o.area), 0, o)
@@ -1584,7 +1584,7 @@
       if (0 === d && 0 === f || 0 === n || 0 === r) return [];
       var _ = d * d / ((n = Math.abs(n)) * n) + f * f / ((r = Math.abs(r)) * r);
       _ > 1 && (n *= Math.sqrt(_), r *= Math.sqrt(_));
-      var p = R(e, t, s, l, a, o, n, r, c, u),
+      var p = P(e, t, s, l, a, o, n, r, c, u),
         h = [],
         m = p[2],
         g = p[3],
@@ -1724,12 +1724,12 @@
   et.deviation = function(e, t, n, r) {
     var i = t && t.length,
       a = i ? t[0] * n : e.length,
-      o = Math.abs(eP(e, 0, a, n));
+      o = Math.abs(eR(e, 0, a, n));
     if (i)
       for (var s = 0, l = t.length; s < l; s++) {
         var c = t[s] * n,
           u = s < l - 1 ? t[s + 1] * n : e.length;
-        o -= Math.abs(eP(e, c, u, n))
+        o -= Math.abs(eR(e, c, u, n))
       }
     var d = 0;
     for (s = 0; s < r.length; s += 3) {
@@ -1776,9 +1776,9 @@
       return "GeometryCollection" === t.type ? {
         type: "FeatureCollection",
         features: t.geometries.map(function(t) {
-          return eR(e, t)
+          return eP(e, t)
         })
-      } : eR(e, t)
+      } : eP(e, t)
     },
     tC = function(e, t) {
       function n(t) {
@@ -1826,14 +1826,14 @@
         i[e < 0 ? ~e : e] || s.push([e])
       }), s
     },
-    tP = function(e, t) {
+    tR = function(e, t) {
       for (var n = 0, r = e.length; n < r;) {
         var i = n + r >>> 1;
         e[i] < t ? n = i + 1 : r = i
       }
       return n
     },
-    tR = function(e) {
+    tP = function(e) {
       function t(e, t) {
         e.forEach(function(e) {
           e < 0 && (e = ~e);
@@ -1872,7 +1872,7 @@
           for (var d = u + 1; d < c; ++d) {
             var f, _ = l[u],
               p = l[d];
-            (f = a[_])[s = tP(f, p)] !== p && f.splice(s, 0, p), (f = a[p])[s = tP(f, _)] !== _ && f.splice(s, 0, _)
+            (f = a[_])[s = tR(f, p)] !== p && f.splice(s, 0, p), (f = a[p])[s = tR(f, _)] !== _ && f.splice(s, 0, _)
           }
       return a
     },

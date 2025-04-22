@@ -33,8 +33,8 @@ var r = n(200651),
   A = n(687476),
   N = n(761966),
   C = n(563927),
-  P = n(98278),
-  R = n(197115),
+  R = n(98278),
+  P = n(197115),
   w = n(703656),
   D = n(944486),
   L = n(914010),
@@ -323,7 +323,7 @@ let Q = 32,
           C(), M.default.track(V.rMx.PREMIUM_PROMOTION_OPENED, {
             location_page: $.page,
             location_section: $.section
-          }), (0, P.z)()
+          }), (0, R.z)()
         }
       }),
       ec = Q && en && !ea && (z && et || !z),
@@ -350,7 +350,7 @@ let Q = 32,
           C(), (null == S ? void 0 : S.id) != null && d.Z.transitionToGuildSync(S.id, {
             sourceLocationStack: [_.Z.GUILD_ROLE_SUBSCRIPTION_EMOJI_TEXT_POPOVER_UPSELL]
           }, F.oC.ROLE_SUBSCRIPTIONS)
-        }, n = !Q && X, i = () => e_ ? (0, r.jsx)(R.Z, {
+        }, n = !Q && X, i = () => e_ ? (0, r.jsx)(P.Z, {
           className: Y.ctaButton,
           subscriptionTier: Z.Si.TIER_2,
           size: u.zxk.Sizes.SMALL,
@@ -476,7 +476,7 @@ let Q = 32,
       type: _,
       description: p
     } = o, h = () => _ === G.$.GET_PREMIUM ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(R.Z, {
+      children: [(0, r.jsx)(P.Z, {
         subscriptionTier: Z.Si.TIER_2,
         buttonText: o.text,
         className: Y.ctaButton,

@@ -30,8 +30,8 @@ var r = n(200651),
   A = n(594174),
   N = n(709586),
   C = n(624138),
-  P = n(51144),
-  R = n(981631),
+  R = n(51144),
+  P = n(981631),
   w = n(674563),
   D = n(524484),
   L = n(388032),
@@ -185,7 +185,7 @@ let G = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       handleSetTypingRef: _,
       typingRef: p,
       currentUser: h
-    } = e, m = a === R.Skl.OFFLINE, g = n ? c.Xo$ : c.qEK, E = (0, u.Z)(i) ? R.Skl.STREAMING : a;
+    } = e, m = a === P.Skl.OFFLINE, g = n ? c.Xo$ : c.qEK, E = (0, u.Z)(i) ? P.Skl.STREAMING : a;
     return E = m ? void 0 : E, (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(g, U(k({}, o), {
         size: c.EFr.SIZE_32,
@@ -225,7 +225,7 @@ let G = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
         let {
           type: t
         } = e;
-        return t === R.IIU.CUSTOM_STATUS
+        return t === P.IIU.CUSTOM_STATUS
       }),
       user: l,
       channel: c
@@ -279,7 +279,7 @@ let G = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       id: eo,
       tabIndex: es,
       itemProps: el
-    } = e, ec = null == y ? void 0 : y.id, eu = P.ZP.useName(y), ed = (null == (t = A.default.getCurrentUser()) ? void 0 : t.id) === ec, ef = i.useRef(null), [e_, ep] = i.useState(!1), [eh, em] = i.useState(null), {
+    } = e, ec = null == y ? void 0 : y.id, eu = R.ZP.useName(y), ed = (null == (t = A.default.getCurrentUser()) ? void 0 : t.id) === ec, ef = i.useRef(null), [e_, ep] = i.useState(!1), [eh, em] = i.useState(null), {
       voiceChannel: eg
     } = (0, _.Z)({
       userId: ec,
@@ -303,10 +303,10 @@ let G = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
     }, [n]);
     let eN = (0, O.Fr)(C),
       eC = null != eN && !ed && n && !eT,
-      eP = i.useCallback(() => {
+      eR = i.useCallback(() => {
         ep(!0)
       }, []),
-      eR = i.useCallback(() => {
+      eP = i.useCallback(() => {
         ep(!1)
       }, []),
       ew = i.useCallback(e => {
@@ -336,7 +336,7 @@ let G = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
         ref: ef,
         selected: n,
         className: o()(x.member, F, {
-          [x.offline]: D === R.Skl.OFFLINE && !n,
+          [x.offline]: D === P.Skl.OFFLINE && !n,
           [x.flatBottom]: eC
         }),
         innerClassName: x.memberInner,
@@ -344,8 +344,8 @@ let G = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
         onKeyDown: X,
         onMouseDown: Q,
         onContextMenu: $,
-        onMouseEnter: eP,
-        onMouseLeave: eR,
+        onMouseEnter: eR,
+        onMouseLeave: eP,
         hovered: e_,
         name: null == h ? (0, r.jsx)("span", {
           className: x.username,

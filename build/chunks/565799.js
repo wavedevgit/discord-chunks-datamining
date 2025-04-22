@@ -34,11 +34,11 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 let A = "NO_GUILD",
-  N = new c.h(e => [R(e)], e => e.id),
+  N = new c.h(e => [P(e)], e => e.id),
   C = new Set,
-  P = {};
+  R = {};
 
-function R(e) {
+function P(e) {
   var t;
   return null != (t = e.getGuildId()) ? t : A
 }
@@ -59,15 +59,15 @@ function D(e) {
 }
 
 function L(e) {
-  let t = P[e];
+  let t = R[e];
   if (null != t) return t;
   let n = p.Z.getChannel(e);
   return null != n && n.isGuildStageVoice() && (D(n.guild_id), M(n)) ? x(e) : null
 }
 
 function x(e) {
-  let t = P[e];
-  return null == t && (t = new O.ZP(e), P[e] = t, t.rebuild()), t
+  let t = R[e];
+  return null == t && (t = new O.ZP(e), R[e] = t, t.rebuild()), t
 }
 
 function M(e) {
@@ -93,16 +93,16 @@ function U(e) {
 }
 
 function G(e) {
-  for (let t of N.values(e)) N.delete(t.id), delete P[t.id];
+  for (let t of N.values(e)) N.delete(t.id), delete R[t.id];
   C.delete(e)
 }
 
 function B(e) {
-  return null != e && (delete P[e], N.delete(e), !0)
+  return null != e && (delete R[e], N.delete(e), !0)
 }
 
 function V() {
-  C.clear(), N.clear(), P = {}
+  C.clear(), N.clear(), R = {}
 }
 
 function F(e, t, n) {

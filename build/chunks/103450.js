@@ -29,8 +29,8 @@ var r = n(192379),
   A = n(283595),
   N = n(496675),
   C = n(699516),
-  P = n(944486),
-  R = n(594174),
+  R = n(944486),
+  P = n(594174),
   w = n(979651),
   D = n(181106),
   L = n(417363),
@@ -56,7 +56,7 @@ function G(e) {
     [K, z] = r.useState(!1),
     q = null != (t = null == V ? void 0 : V.applicationId) ? t : null == B ? void 0 : B.application_id,
     Q = null != V || (0, g.Z)(B),
-    X = (0, a.e7)([R.default], () => R.default.getCurrentUser()),
+    X = (0, a.e7)([P.default], () => P.default.getCurrentUser()),
     J = F.id === (null == X ? void 0 : X.id),
     $ = (0, p.Z)({
       channelId: (0, _.pY)(null == V ? void 0 : V.location),
@@ -86,7 +86,7 @@ function G(e) {
       channelId: $,
       application: er
     }),
-    eo = (0, a.e7)([O.Z, T.Z, S.Z, C.Z, P.Z, w.Z, N.Z], () => null == V || ei ? (0, f.Z)({
+    eo = (0, a.e7)([O.Z, T.Z, S.Z, C.Z, R.Z, w.Z, N.Z], () => null == V || ei ? (0, f.Z)({
       user: F,
       activity: B,
       application: er,
@@ -97,7 +97,7 @@ function G(e) {
       GuildStore: T.Z,
       GuildMemberCountStore: S.Z,
       RelationshipStore: C.Z,
-      SelectedChannelStore: P.Z,
+      SelectedChannelStore: R.Z,
       VoiceStateStore: w.Z,
       PermissionStore: N.Z
     }) : ea === h.Fw.CAN_JOIN),
@@ -120,7 +120,7 @@ function G(e) {
       var n, r;
       if (null == ef || null == q) return;
       let i = (0, m.Z)(t, k.xjy.EMBEDDED),
-        a = P.Z.getVoiceChannelId(),
+        a = R.Z.getVoiceChannelId(),
         o = O.Z.getChannel(a);
       await s.Z.join({
         userId: e.id,
@@ -153,7 +153,7 @@ function G(e) {
           type: k.mFx.JOIN_REQUEST,
           userId: F.id,
           activity: B,
-          location: k.Sbl.PROFILE_POPOUT
+          location: k.Sbl.USER_ACTIVITY_ACTIONS
         })), null != e && l.default.selectPrivateChannel(e.id)
       }
       if (Q) {

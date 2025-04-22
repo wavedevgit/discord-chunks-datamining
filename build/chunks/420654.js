@@ -68,7 +68,7 @@ let b = 57.75,
       analyticsLocations: v
     } = (0, l.ZP)(), [O, I] = i.useState(null), [S, T] = i.useState(!1), [A, N] = i.useState(!1), C = e => {
       null != e && (I(e), T(!A && e.scrollHeight - e.clientHeight > 1), e.getBoundingClientRect().height > b && N(!0))
-    }, P = () => {
+    }, R = () => {
       null == n || n(), (0, d.openUserProfileModal)(E(m({}, y), {
         userId: t.id,
         sourceAnalyticsLocations: v,
@@ -76,14 +76,14 @@ let b = 57.75,
           section: f.jXE.BITE_SIZE_PROFILE_POPOUT
         }
       }))
-    }, R = e => {
+    }, P = e => {
       null == O || (null == O ? void 0 : O.contains(e.relatedTarget)) || (O.scrollTop = 0)
     };
     return h || null == a || "" === a ? null : (0, r.jsxs)("div", {
       children: [(0, r.jsx)("div", {
         ref: C,
         className: o()(p.descriptionClamp, A && p.maxBioHeight),
-        onBlur: R,
+        onBlur: P,
         children: (0, r.jsx)(u.Z, {
           userBio: a,
           setLineClamp: !1,
@@ -94,7 +94,7 @@ let b = 57.75,
         size: s.zxk.Sizes.NONE,
         className: p.viewFullBio,
         color: o()(p.viewFullBioColor, g && p.viewFullBioDisabled),
-        onClick: P,
+        onClick: R,
         children: (0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "none",

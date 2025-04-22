@@ -34,8 +34,8 @@ var r = n(200651),
   A = n(162685),
   N = n(424602),
   C = n(728345),
-  P = n(979200),
-  R = n(388905),
+  R = n(979200),
+  P = n(388905),
   w = n(560067),
   D = n(353926),
   L = n(341298),
@@ -157,9 +157,9 @@ function eg() {
     }, [e.search, a]), _ && !1 !== d) {
     let e;
     return e = !0 === d ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(R.Dx, {
+      children: [(0, r.jsx)(P.Dx, {
         children: el.intl.string(el.t.csrAMD)
-      }), (0, r.jsx)(R.DK, {
+      }), (0, r.jsx)(P.DK, {
         children: el.intl.string(el.t["m1+IBg"])
       }), (0, r.jsx)(h.zx, {
         onClick: () => c(!0),
@@ -167,7 +167,7 @@ function eg() {
         children: el.intl.string(el.t.fIv16O)
       })]
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(R.Dx, {
+      children: [(0, r.jsx)(P.Dx, {
         children: el.intl.string(el.t["Z+hCVV"])
       }), (0, r.jsx)(E.$, {})]
     }), (0, r.jsx)(en.G, {
@@ -234,7 +234,7 @@ function eE(e) {
 
 function eb(e) {
   var t, n, a, o, l, m;
-  let g, T, N, R, w, L, {
+  let g, T, N, P, w, L, {
       clientId: U,
       responseType: en,
       redirectUri: es,
@@ -254,8 +254,8 @@ function eb(e) {
       cancelCompletesFlow: eA = !0,
       isTrustedName: eN = !1,
       isEmbeddedFlow: eC = !1,
-      callback: eP,
-      callbackWithoutPost: eR,
+      callback: eR,
+      callbackWithoutPost: eP,
       onClose: ew,
       disclosures: eD,
       isExternalStandaloneOAuthPage: eL = !1
@@ -308,7 +308,7 @@ function eb(e) {
         let {
           disclosures: e,
           allAcked: t
-        } = await (0, P.de)(U);
+        } = await (0, R.de)(U);
         tl(!t), to(e)
       } catch (n) {
         let {
@@ -327,12 +327,12 @@ function eb(e) {
     }
   }, [U, eM, eD, to, eF, tl, eB]);
   let tc = i.useCallback(async e => {
-      if (null != eR) {
-        eH(!0), eR(e);
+      if (null != eP) {
+        eH(!0), eP(e);
         return
       }
       if (!e && !eA) {
-        null != eP && (eP({
+        null != eR && (eR({
           application: null == ej ? void 0 : ej.application,
           guild: e3
         }), null == ew || ew());
@@ -359,9 +359,9 @@ function eb(e) {
             allowMobilePush: e0
           }
         });
-        if (e && (await (0, P.x9)(U, ta), setTimeout(() => {
+        if (e && (await (0, R.x9)(U, ta), setTimeout(() => {
             v.Z.fetch()
-          }, 100)), null != eP) eP({
+          }, 100)), null != eR) eR({
           application: null == ej ? void 0 : ej.application,
           location: n.location,
           guild: e3
@@ -380,7 +380,7 @@ function eb(e) {
         let e = t.body;
         (null == e ? void 0 : e.message) != null && "" !== e.message ? eF(Error(e.message)) : eF(e), eB("AUTHORIZE_SCOPES"), eH(!1)
       }
-    }, [eR, eA, eP, null == ej ? void 0 : ej.application, e3, ew, U, tt, en, es, eu, ef, ep, eh, tr, eJ, ez, e4, eQ, ta, e0]),
+    }, [eP, eA, eR, null == ej ? void 0 : ej.application, e3, ew, U, tt, en, es, eu, ef, ep, eh, tr, eJ, ez, e4, eQ, ta, e0]),
     tu = i.useRef(!1),
     td = i.useCallback(async () => {
       if (!j.default.isAuthenticated()) return void(0, H.c$)(eM, "oauth2_error_not_authenticated");
@@ -585,7 +585,7 @@ function eb(e) {
   }
   if (ty && null != ej) {
     let e = null == (l = ej.bot) ? void 0 : l.approximate_guild_count;
-    R = (0, r.jsxs)(r.Fragment, {
+    P = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(q.Z, {
         application: ej.application,
         scopes: tt,
@@ -625,7 +625,7 @@ function eb(e) {
       children: (0, r.jsx)(h.zx, {
         onClick: null != N ? () => eB(N) : () => tc(!0),
         submitting: eZ,
-        disabled: null == R || tb,
+        disabled: null == P || tb,
         children: tb ? el.intl.string(el.t.BwwiSE) : null != N ? el.intl.string(el.t["3PatS0"]) : el.intl.string(el.t["y+/PEx"])
       })
     }) : (0, r.jsx)("div", {
@@ -653,7 +653,7 @@ function eb(e) {
     body: g,
     footer: L,
     nextStep: N,
-    appDetails: R,
+    appDetails: P,
     sendAuthorize: tc,
     hasContentBackground: tE,
     minimalPadding: tI

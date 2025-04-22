@@ -2,14 +2,14 @@
 "use strict";
 n.d(t, {
   B: () => D,
-  B5: () => P,
+  B5: () => R,
   Do: () => w,
   GX: () => k,
   HR: () => F,
   Hr: () => C,
   Je: () => A,
   Js: () => b,
-  KR: () => R,
+  KR: () => P,
   MO: () => U,
   N3: () => j,
   Oq: () => T,
@@ -261,7 +261,7 @@ function C(e) {
   }))
 }
 
-function P(e) {
+function R(e) {
   let {
     guildId: t,
     channelId: n,
@@ -278,7 +278,7 @@ function P(e) {
   }))
 }
 
-function R(e) {
+function P(e) {
   let {
     guildId: t,
     channelId: n,

@@ -87,10 +87,10 @@ async function O(e) {
     guild: A,
     handleSubscribeModalClose: N,
     disablePremiumUpsell: C,
-    inPopout: P,
-    applicationId: R,
+    inPopout: R,
+    applicationId: P,
     intent: w
-  } = e, D = P ? i.u1M : i.z1l, L = l.default.getCurrentUser();
+  } = e, D = R ? i.u1M : i.z1l, L = l.default.getCurrentUser();
   if (null == L) return;
   if (!L.verified) return void(0, i.ZDy)(async () => {
     let {
@@ -157,8 +157,8 @@ async function O(e) {
     disablePremiumUpsell: C,
     onSubscriptionConfirmation: S,
     onSubscribeComplete: T,
-    inPopout: P,
-    applicationId: R,
+    inPopout: R,
+    applicationId: P,
     intent: w
   })
 }

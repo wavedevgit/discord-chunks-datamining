@@ -1,6 +1,6 @@
 /** Chunk was on 38047 **/
 n.d(e, {
-  default: () => y
+  default: () => d
 });
 var r = n(200651);
 n(192379);
@@ -14,13 +14,13 @@ var o = n(442837),
   f = n(981631),
   p = n(486324),
   b = n(388032),
-  d = n(89671);
+  y = n(89671);
 
-function y(t) {
+function d(t) {
   var {
     onClose: e,
     source: n
-  } = t, y = function(t, e) {
+  } = t, d = function(t, e) {
     if (null == t) return {};
     var n, r, o = function(t, e) {
       if (null == t) return {};
@@ -60,13 +60,16 @@ function y(t) {
     }
     return t
   }({
-    artURL: d.Z,
+    artURL: y.Z,
     type: s.cd.CUSTOM_PROFILE_UPSELL,
     title: b.intl.string(b.t.BbsMm5),
     body: j,
     glowUp: j,
     onSecondaryClick: () => {
-      e(), (0, c.$r)(p.pC.BANNER)
+      e(), (0, c.$r)({
+        uploadType: p.pC.BANNER,
+        analyticsSource: n
+      })
     },
     secondaryCTA: b.intl.string(b.t.SpAQiY),
     analyticsSource: n,
@@ -75,5 +78,5 @@ function y(t) {
       object: f.qAy.BUTTON_CTA
     },
     onClose: e
-  }, y))
+  }, d))
 }

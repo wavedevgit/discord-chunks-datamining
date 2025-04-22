@@ -27,23 +27,23 @@ function y(e) {
   let {
     user: t,
     currentUser: y,
-    guildId: O,
-    channelId: I,
-    displayProfile: _,
-    initialSection: Z,
+    guildId: I,
+    channelId: O,
+    displayProfile: Z,
+    initialSection: _,
     initialSubsection: P,
-    friendToken: A,
-    onClose: E
+    friendToken: E,
+    onClose: N
   } = e, {
-    relationshipType: N,
+    relationshipType: A,
     originApplicationId: T
   } = (0, o.cj)([l.Z], () => ({
     relationshipType: l.Z.getRelationshipType(t.id),
     originApplicationId: l.Z.getOriginApplicationId(t.id)
-  })), C = (0, i.vh)(t.id), S = t.id === y.id, w = (0, c.I5)(y), M = s.ZP.useName(null == _ ? void 0 : _.guildId, I, t), R = (0, g.Z)({
+  })), C = (0, i.vh)(t.id), S = t.id === y.id, w = (0, c.I5)(y), M = s.ZP.useName(null == Z ? void 0 : Z.guildId, O, t), R = (0, g.Z)({
     user: t,
     currentUser: y,
-    guildId: O,
+    guildId: I,
     initialSubsection: P
   });
   return (0, r.jsxs)("div", {
@@ -51,33 +51,32 @@ function y(e) {
     children: [(0, r.jsx)(b.Z, {
       className: x.username,
       user: t,
-      themeType: j.lY.MODAL,
       nickname: M,
-      pronouns: null == _ ? void 0 : _.pronouns,
+      pronouns: null == Z ? void 0 : Z.pronouns,
       nicknameVariant: "heading-xl/bold",
       nicknameIcons: (0, r.jsx)(u.Z, {
         userId: t.id
       }),
       tags: (0, r.jsx)(a.Z, {
-        displayProfile: _,
+        displayProfile: Z,
         themeType: j.lY.MODAL,
-        onClose: E
+        onClose: N
       })
-    }), N === v.OGo.PENDING_INCOMING && (0, r.jsx)(m.Z.Overlay, {
+    }), A === v.OGo.PENDING_INCOMING && (0, r.jsx)(m.Z.Overlay, {
       className: x.bannerContainer,
       children: (0, r.jsx)(f.Z, {
         user: t,
         applicationId: T,
-        guildId: null != (n = null == _ ? void 0 : _.guildId) ? n : void 0,
-        channelId: I,
-        friendToken: A,
+        guildId: null != (n = null == Z ? void 0 : Z.guildId) ? n : void 0,
+        channelId: O,
+        friendToken: E,
         className: x.friendRequestBanner
       })
     }), C.map(e => (0, r.jsx)(m.Z.Overlay, {
       className: x.bannerContainer,
       children: (0, r.jsx)(f.Z, {
         user: t,
-        channelId: I,
+        channelId: O,
         isGameRelationship: !0,
         applicationId: e.applicationId,
         className: x.friendRequestBanner
@@ -88,16 +87,16 @@ function y(e) {
     }), S && (0, r.jsx)(d.Z, {
       className: x.bannerContainer,
       isPremiumUser: w,
-      onInteraction: E
+      onInteraction: N
     }), (0, r.jsx)(h.Z, {
       user: t,
       currentUser: y,
-      displayProfile: _,
-      guildId: O,
+      displayProfile: Z,
+      guildId: I,
       items: R,
-      initialSection: Z,
+      initialSection: _,
       initialSubsection: P,
-      onClose: E
+      onClose: N
     })]
   })
 }

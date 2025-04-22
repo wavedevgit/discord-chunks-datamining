@@ -50,7 +50,7 @@ function C(e) {
   return e
 }
 
-function P(e, t) {
+function R(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -61,8 +61,8 @@ function P(e, t) {
   return n
 }
 
-function R(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
+function P(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -209,7 +209,7 @@ function k(e) {
       badgeStrokeColor: I,
       badgeColor: T,
       disableBoostClick: N,
-      "aria-label": P = !1
+      "aria-label": R = !1
     } = e,
     D = w(e, ["guild", "tooltipColor", "tooltipPosition", "className", "flowerStarClassName", "iconClassName", "badgeStrokeColor", "badgeColor", "disableBoostClick", "aria-label"]);
   let x = (0, f.Q3)("GuildBadgeV2"),
@@ -251,7 +251,7 @@ function k(e) {
   return (0, r.jsx)(u.ua7, {
     color: l,
     position: d,
-    "aria-label": P,
+    "aria-label": R,
     text: (0, r.jsx)(M, {
       badgeType: B,
       guildTraits: G
@@ -260,7 +260,7 @@ function k(e) {
     children: e => (0, r.jsx)(u.P3F, {
       onClick: F,
       tabIndex: V ? 0 : -1,
-      children: (0, r.jsx)(p.Z, R(C({}, e), {
+      children: (0, r.jsx)(p.Z, P(C({}, e), {
         className: E,
         flowerStarClassName: b,
         allowFullSizedIcon: !0,

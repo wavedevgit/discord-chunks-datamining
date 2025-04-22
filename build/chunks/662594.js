@@ -3,8 +3,8 @@
 n.d(t, {
   CR: () => C,
   ZP: () => q,
-  oL: () => P,
-  so: () => R
+  oL: () => R,
+  so: () => P
 }), n(539854), n(642613), n(388685);
 var r, i = n(392711),
   a = n.n(i),
@@ -66,8 +66,8 @@ function N(e, t) {
   }), e
 }
 let C = "everyone",
-  P = 0;
-var R = function(e) {
+  R = 0;
+var P = function(e) {
   return e.GROUP = "GROUP", e.MEMBER = "MEMBER", e.CONTENT_INVENTORY = "CONTENT_INVENTORY", e.CONTENT_INVENTORY_GROUP = "CONTENT_INVENTORY_GROUP", e.HIDDEN_CONTENT_INVENTORY = "HIDDEN_CONTENT_INVENTORY", e.CONTENT_INVENTORY_LEADERBOARD = "CONTENT_INVENTORY_LEADERBOARD", e
 }({});
 

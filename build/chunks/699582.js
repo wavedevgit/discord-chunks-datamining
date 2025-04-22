@@ -402,7 +402,7 @@ function C(e) {
   return !(!i.expBCP47Syntax.test(e) || i.expVariantDupes.test(e) || i.expSingletonDupes.test(e))
 }
 
-function P(e) {
+function R(e) {
   var t, n;
   n = (e = e.toLowerCase()).split("-");
   for (var r = 1, a = n.length; r < a; r++)
@@ -414,7 +414,7 @@ function P(e) {
   return m.call(n, "-")
 }
 
-function R() {
+function P() {
   return r
 }
 
@@ -432,7 +432,7 @@ function D(e) {
       if (null == o || "string" != typeof o && "object" != typeof o) throw TypeError("String or Object type expected");
       var s = String(o);
       if (!C(s)) throw RangeError("'" + s + "' is not a structurally valid language tag");
-      s = P(s), -1 === d.call(t, s) && h.call(t, s)
+      s = R(s), -1 === d.call(t, s) && h.call(t, s)
     }
     i++
   }
@@ -462,7 +462,7 @@ function x(e, t) {
         c = a.indexOf("-u-");
       s["[[extension]]"] = l, s["[[extensionIndex]]"] = c
     }
-  } else s["[[locale]]"] = R();
+  } else s["[[locale]]"] = P();
   return s
 }
 

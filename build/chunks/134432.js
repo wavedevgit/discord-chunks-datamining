@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Q4: () => P,
+  Q4: () => R,
   Vv: () => S,
   oO: () => A,
   po: () => T,
@@ -154,7 +154,7 @@ function C(e) {
   return a = h.width, o = h.height, (a !== n || o !== r) && (p.width = 0 | a, p.height = 0 | o), i().isEmpty(p) || (_ += "?" + s.stringify(p)), _
 }
 
-function P(e) {
+function R(e) {
   let {
     src: t,
     width: n,

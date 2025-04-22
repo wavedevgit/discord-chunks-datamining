@@ -1,6 +1,6 @@
 /** Chunk was on 54636 **/
 t.d(n, {
-  Z: () => N
+  Z: () => A
 }), t(388685);
 var r = t(200651),
   o = t(192379),
@@ -21,19 +21,19 @@ var r = t(200651),
   v = t(502762),
   x = t(530),
   y = t(679332),
-  O = t(544989),
-  I = t(228168),
-  _ = t(981631),
-  Z = t(388032),
+  I = t(544989),
+  O = t(228168),
+  Z = t(981631),
+  _ = t(388032),
   P = t(405666),
-  A = t(349966),
-  E = t(923243);
+  E = t(349966),
+  N = t(923243);
 
-function N(e) {
+function A(e) {
   let {
     user: n,
     guildId: t,
-    channelId: N,
+    channelId: A,
     messageId: T,
     roleId: C,
     sessionId: S,
@@ -41,17 +41,17 @@ function N(e) {
     openedAt: M,
     onClose: R,
     sourceAnalyticsLocations: L = []
-  } = e, D = t === _.ME ? void 0 : t, B = (0, f.ZP)(n.id, D), {
+  } = e, D = t === Z.ME ? void 0 : t, B = (0, f.ZP)(n.id, D), {
     analyticsLocations: G
   } = (0, c.ZP)([...L, s.Z.USER_PROFILE_MODAL]), U = (0, u.ZB)({
     layout: "MODAL",
     userId: n.id,
     sourceSessionId: S,
     guildId: D,
-    channelId: N,
+    channelId: A,
     messageId: T,
     roleId: C
-  }), k = o.createRef(), Y = (0, l.Z)(k);
+  }), k = o.createRef(), V = (0, l.Z)(k);
   return (0, r.jsx)(c.Gt, {
     value: G,
     children: (0, r.jsx)(u.Mt, {
@@ -64,14 +64,13 @@ function N(e) {
         transitionState: w,
         className: P.root,
         hideShadow: !0,
-        "aria-label": Z.intl.string(Z.t["3N/J2t"]),
+        "aria-label": _.intl.string(_.t["3N/J2t"]),
         children: [(0, r.jsxs)(v.Z, {
           user: n,
           displayProfile: B,
-          themeType: I.lY.MODAL,
+          themeType: O.lY.MODAL,
           ref: k,
-          children: [(0, r.jsx)(O.Z, {
-            themeType: I.lY.MODAL,
+          children: [(0, r.jsx)(I.Z, {
             children: (0, r.jsx)(y.Z, {
               user: n
             })
@@ -79,15 +78,15 @@ function N(e) {
             children: [(0, r.jsx)(b.Z, {
               user: n,
               displayProfile: B,
-              themeType: I.lY.MODAL
+              themeType: O.lY.MODAL
             }), (0, r.jsx)("div", {
               className: P.headerInner,
               children: (0, r.jsx)(p.Z, {
                 user: n,
                 displayProfile: B,
                 guildId: D,
-                channelId: N,
-                themeType: I.lY.MODAL
+                channelId: A,
+                themeType: O.lY.MODAL
               })
             })]
           }), (0, r.jsxs)("div", {
@@ -95,44 +94,43 @@ function N(e) {
             children: [(0, r.jsx)(x.Z, {
               className: P.username,
               user: n,
-              themeType: I.lY.MODAL,
-              nickname: d.ZP.getName(D, N, n),
+              nickname: d.ZP.getName(D, A, n),
               pronouns: null == B ? void 0 : B.pronouns,
               nicknameVariant: "heading-xl/bold",
               tags: (0, r.jsx)(m.Z, {
                 displayProfile: B,
-                themeType: I.lY.MODAL,
+                themeType: O.lY.MODAL,
                 onClose: R
               })
             }), (0, r.jsxs)("div", {
-              className: E.container,
+              className: N.container,
               children: [(0, r.jsx)(i.njP, {
-                className: E.tabBar,
+                className: N.tabBar,
                 type: "top",
-                selectedItem: I.oh.BOT_INFO,
-                onItemSelect: _.dG4,
+                selectedItem: O.oh.BOT_INFO,
+                onItemSelect: Z.dG4,
                 children: (0, r.jsx)(i.njP.Item, {
-                  className: E.tabBarItem,
-                  id: I.oh.BOT_INFO,
-                  "aria-label": Z.intl.string(Z.t.jGoPJS),
+                  className: N.tabBarItem,
+                  id: O.oh.BOT_INFO,
+                  "aria-label": _.intl.string(_.t.jGoPJS),
                   children: (0, r.jsx)(i.Text, {
                     variant: "text-sm/normal",
-                    children: Z.intl.string(Z.t.jGoPJS)
+                    children: _.intl.string(_.t.jGoPJS)
                   })
-                }, I.oh.BOT_INFO)
+                }, O.oh.BOT_INFO)
               }), (0, r.jsxs)(i.zJl, {
                 fade: !0,
-                className: A.scroller,
+                className: E.scroller,
                 children: [(0, r.jsx)(h.Z, {
                   userId: n.id,
                   userBio: null == B ? void 0 : B.bio,
                   setLineClamp: !1
                 }), (0, r.jsx)(j.Z, {
-                  heading: Z.intl.string(Z.t["A//N4u"]),
+                  heading: _.intl.string(_.t["A//N4u"]),
                   children: (0, r.jsx)(g.Z, {
                     userId: n.id,
                     guildId: D,
-                    tooltipDelay: I.vB
+                    tooltipDelay: O.vB
                   })
                 })]
               })]
@@ -140,7 +138,7 @@ function N(e) {
           })]
         }), (null == B ? void 0 : B.profileEffectId) != null && (0, r.jsx)(a.Z, {
           profileEffectId: null == B ? void 0 : B.profileEffectId,
-          isHovering: Y
+          isHovering: V
         })]
       })
     })

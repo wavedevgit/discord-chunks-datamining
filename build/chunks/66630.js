@@ -26,8 +26,8 @@ var l = n(200651),
   C = n(74340),
   P = n(676035),
   y = n(346565),
-  T = n(562577),
-  N = n(926563),
+  N = n(562577),
+  T = n(926563),
   w = n(875425),
   E = n(981631),
   k = n(185923),
@@ -125,7 +125,7 @@ function L(e) {
     }), (0, l.jsxs)(s.hzk, {
       children: [null != z && (0, l.jsx)("div", {
         className: D.profilePreview,
-        children: (0, l.jsx)(N.Z, {
+        children: (0, l.jsx)(T.Z, {
           user: z,
           previewText: F,
           previewEmoji: H,
@@ -139,7 +139,7 @@ function L(e) {
         title: es,
         children: [M && (0, l.jsx)("div", {
           className: D.labelSelectorContainer,
-          children: (0, l.jsx)(T.Z, {
+          children: (0, l.jsx)(N.Z, {
             currentValue: Q,
             onChange: e => {
               let t = e === Q ? null : e;

@@ -63,7 +63,6 @@ function b(e) {
       inert: "",
       children: (0, l.jsx)(d.Z, {
         user: t,
-        themeType: f.lY.POPOUT,
         nickname: h.ZP.getName(null, null, t),
         pronouns: null == x ? void 0 : x.pronouns,
         tags: (0, l.jsx)(s.Z, {

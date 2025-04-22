@@ -90,10 +90,10 @@ function O(e) {
     } = e,
     N = !1,
     C = (0, i.Z)(),
-    P = e => {
+    R = e => {
       t = e
     },
-    R = u ? y : b;
+    P = u ? y : b;
   (0, a.ZDy)(async () => e => {
     var {
       onClose: t,
@@ -114,10 +114,10 @@ function O(e) {
         N = !0, null == O || O()
       },
       returnRef: i,
-      onStepChange: P
+      onStepChange: R
     }))
   }, {
-    modalKey: R,
+    modalKey: P,
     onCloseCallback: () => {
       N || c.default.track(f.rMx.PAYMENT_FLOW_CANCELED, {
         load_id: C,
@@ -132,7 +132,7 @@ function O(e) {
       })
     },
     onCloseRequest: () => {
-      null != t && v.has(t) && (0, a.Mr3)(R)
+      null != t && v.has(t) && (0, a.Mr3)(P)
     }
   })
 }

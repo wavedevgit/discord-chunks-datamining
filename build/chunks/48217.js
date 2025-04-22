@@ -12,29 +12,29 @@ var a = n(481060),
   s = n(30513),
   d = n(981631),
   u = n(388032),
-  f = n(309818);
+  _ = n(309818);
 
-function _(e) {
+function f(e) {
   let {
     guild: t,
     banner: n
   } = e;
   return (0, i.jsx)("div", {
-    className: f.guildBanner,
+    className: _.guildBanner,
     style: {
       backgroundImage: "url(".concat(n)
     },
     children: (0, i.jsxs)("div", {
-      className: f.guildHeader,
+      className: _.guildHeader,
       children: [(0, i.jsx)(l.Z, {
         guild: t,
         isBannerVisible: !0
       }), (0, i.jsx)(a.X6q, {
-        className: f.guildName,
+        className: _.guildName,
         variant: "heading-md/semibold",
         children: t.toString()
       }), (0, i.jsx)(o.Z, {
-        className: f.dropdown,
+        className: _.dropdown,
         open: !1
       })]
     })
@@ -48,8 +48,8 @@ function g(e) {
     guild: a,
     isGIF: o,
     banner: l
-  } = e, f = o ? (0, r._p)(d.oNc.ANIMATED_BANNER) : (0, r._p)(d.oNc.BANNER);
-  null != f && (0, c.Z)({
+  } = e, _ = o ? (0, r._p)(d.oNc.ANIMATED_BANNER) : (0, r._p)(d.oNc.BANNER);
+  null != _ && (0, c.Z)({
     analyticsLocations: t,
     analyticsSourceLocation: n,
     guild: a,
@@ -62,8 +62,8 @@ function g(e) {
         }) : u.intl.formatToPlainString(u.t.B253V1, {
           targetLevelOrPlan: n
         })
-      }(f, o),
-      image: (0, i.jsx)(_, {
+      }(_, o),
+      image: (0, i.jsx)(f, {
         guild: a,
         banner: l
       })

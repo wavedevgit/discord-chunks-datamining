@@ -91,8 +91,8 @@ let S = {
       tierMarkerAnimationPosition: N,
       totalAvailableBoostsCount: C
     } = e, {
-      analyticsLocations: P
-    } = (0, l.ZP)(), R = (0, c.Z)(), w = p.oCV[A], D = w - C, L = A <= N || b, x = L && A <= i.premiumTier, M = L && A < i.premiumTier, k = L && A === i.premiumTier, j = i.premiumTier < A && C >= w, {
+      analyticsLocations: R
+    } = (0, l.ZP)(), P = (0, c.Z)(), w = p.oCV[A], D = w - C, L = A <= N || b, x = L && A <= i.premiumTier, M = L && A < i.premiumTier, k = L && A === i.premiumTier, j = i.premiumTier < A && C >= w, {
       scaleFactor: U
     } = (0, s.q_F)({
       from: {
@@ -124,7 +124,7 @@ let S = {
 
     function B() {
       L && (j || (0, f.u)({
-        analyticsLocations: P,
+        analyticsLocations: R,
         analyticsLocation: {
           page: p.ZY5.PREMIUM_GUILD_USER_MODAL,
           section: p.jXE.PREMIUM_GUILD_USER_MODAL_PROGRESS_BAR,
@@ -135,7 +135,7 @@ let S = {
         guild: i
       }))
     }
-    let V = !x && R.fractionalState === h.a$.NONE,
+    let V = !x && P.fractionalState === h.a$.NONE,
       F = V ? s.P3F : "div",
       Z = V ? {
         onClick: B

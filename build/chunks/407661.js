@@ -98,7 +98,7 @@ function T(e) {
     colorString: O,
     colorStrings: T,
     colorRoleName: A
-  } = (0, u.ZP)(a), N = (0, d.X)(h, T), C = I(i, a), P = (0, p.NE)(i, a), R = n.showThreadPromptOnReply && C >= v && P, w = () => (0, _.uL)(E.Z5c.CHANNEL(i.getGuildId(), i.id, a.id));
+  } = (0, u.ZP)(a), N = (0, d.X)(h, T), C = I(i, a), R = (0, p.NE)(i, a), P = n.showThreadPromptOnReply && C >= v && R, w = () => (0, _.uL)(E.Z5c.CHANNEL(i.getGuildId(), i.id, a.id));
 
   function D(e) {
     e.stopPropagation(), (0, f.qx)(i.id, !s)
@@ -178,7 +178,7 @@ function T(e) {
             onClick: L
           })]
         })]
-      }), R && (0, r.jsx)(S, {
+      }), P && (0, r.jsx)(S, {
         channel: i,
         message: a,
         replyChainLength: C

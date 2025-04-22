@@ -30,8 +30,8 @@ var r = n(200651),
   A = n(517334),
   N = n(344185),
   C = n(199902),
-  P = n(984933),
-  R = n(699516),
+  R = n(984933),
+  P = n(699516),
   w = n(9156),
   D = n(594174),
   L = n(938475),
@@ -82,7 +82,7 @@ function V(e, t) {
 
 function F(e) {
   let t = e.id,
-    n = (0, c.Wu)([P.ZP, N.Z], () => [...P.ZP.getChannels(t)[P.Zb].filter(e => {
+    n = (0, c.Wu)([R.ZP, N.Z], () => [...R.ZP.getChannels(t)[R.Zb].filter(e => {
       let {
         channel: t
       } = e;
@@ -96,7 +96,7 @@ function F(e) {
     r = (0, A.ZP)(t),
     a = i.useMemo(() => r.map(e => e.id), [r]),
     o = (0, c.e7)([L.ZP], () => L.ZP.getVoiceStates(t), [t]),
-    s = (0, c.Wu)([R.Z], () => R.Z.getBlockedOrIgnoredIDs()),
+    s = (0, c.Wu)([P.Z], () => P.Z.getBlockedOrIgnoredIDs()),
     u = l().flatMap(n, t => {
       var n;
       if (t === e.afkChannelId) return [];

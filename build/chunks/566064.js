@@ -56,7 +56,7 @@ function f(e) {
     enabled: b,
     autoFocusElement: y,
     useVirtualFocus: v
-  } = e, O = r.useRef(b), I = u(c(t, f, _)), [S, T] = r.useState(!1), [A, N] = r.useState(!1), [C, P] = r.useState(!1), [R] = r.useState(() => new o.$o(e => {
+  } = e, O = r.useRef(b), I = u(c(t, f, _)), [S, T] = r.useState(!1), [A, N] = r.useState(!1), [C, R] = r.useState(!1), [P] = r.useState(() => new o.$o(e => {
     let [t, n] = e.split(",").map(Number);
     return () => {
       T(!0), g({
@@ -66,7 +66,7 @@ function f(e) {
       })
     }
   }));
-  r.useEffect(() => () => R.clean(), [R]);
+  r.useEffect(() => () => P.clean(), [P]);
   let w = r.useCallback(e => {
       if (!O.current || !y) return !1;
       e.focus()
@@ -85,9 +85,9 @@ function f(e) {
           type: i.s.SET_FOCUSED_POSITION,
           x: n,
           y: r
-        }), !e)) return void P(!0);
+        }), !e)) return void R(!0);
       let a = u(c(t, n, r));
-      null != a && (P(!0), w(a))
+      null != a && (R(!0), w(a))
     }, [g, f, _, m, t, w]),
     [x, M] = r.useState(!1);
   r.useEffect(() => {
@@ -105,7 +105,7 @@ function f(e) {
   r.useEffect(() => {
     S && A && null != I && (w(I), N(!1))
   }, [A, I]), r.useEffect(() => {
-    S && (C || D(f, _), P(!1))
+    S && (C || D(f, _), R(!1))
   }, [f, _]);
   let j = r.useCallback(e => {
       if (!O.current) return;
@@ -134,7 +134,7 @@ function f(e) {
           }), null != p ? p(f, _, e) : null != I && I.click()
       }
     }, [L, g, y, I, p, f, _]),
-    U = r.useCallback(e => e.currentTarget !== e.target ? (S || (T(!0), P(!0)), !1) : S ? (L(!1), !1) : void(E && null != I ? D(f, _) : L(!0)), [S, E, I, L, D, f, _]),
+    U = r.useCallback(e => e.currentTarget !== e.target ? (S || (T(!0), R(!0)), !1) : S ? (L(!1), !1) : void(E && null != I ? D(f, _) : L(!0)), [S, E, I, L, D, f, _]),
     G = r.useCallback(e => {
       if (e.target !== e.currentTarget) {
         if (e.currentTarget.contains(e.relatedTarget)) return !1;
@@ -159,10 +159,10 @@ function f(e) {
         "aria-colindex": e + 1,
         id: (0, o.NE)(t, e, n),
         tabIndex: E && e === f && n === _ ? 0 : -1,
-        onFocus: R.get("".concat(e, ",").concat(n))
+        onFocus: P.get("".concat(e, ",").concat(n))
       };
       return e === f && n === _ && (r.ref = k), r
-    }, [t, E, f, _, R, k]),
+    }, [t, E, f, _, P, k]),
     Z = r.useCallback(e => ({
       role: "row",
       "aria-rowindex": e + 1

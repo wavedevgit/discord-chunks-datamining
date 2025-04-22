@@ -44,7 +44,7 @@ function C(e) {
   T = null, h = !0
 }
 
-function P(e) {
+function R(e) {
   let {
     referrals_remaining: t,
     sent_user_ids: n,
@@ -55,7 +55,7 @@ function P(e) {
   S = null == r && a, h = !1, f = t, _ = new Set(n), T = r, p = i
 }
 
-function R(e) {
+function P(e) {
   let {} = e;
   S = !1, T = null, h = !1, b += 1, y = Date.now() + 1e3 * Math.pow(2, b)
 }
@@ -182,8 +182,8 @@ u(Z, "displayName", "ReferralTrialStore");
 let H = new Z(o.Z, {
   BILLING_REFERRAL_TRIAL_OFFER_UPDATE: U,
   BILLING_REFERRALS_REMAINING_FETCH_START: C,
-  BILLING_REFERRALS_REMAINING_FETCH_SUCCESS: P,
-  BILLING_REFERRALS_REMAINING_FETCH_FAIL: R,
+  BILLING_REFERRALS_REMAINING_FETCH_SUCCESS: R,
+  BILLING_REFERRALS_REMAINING_FETCH_FAIL: P,
   BILLING_CREATE_REFERRAL_SUCCESS: w,
   CREATE_REFERRALS_SUCCESS: D,
   BILLING_REFERRAL_RESOLVE_SUCCESS: x,

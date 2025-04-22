@@ -29,8 +29,8 @@ var r, i = n(392711),
   A = n(771845),
   N = n(594174),
   C = n(70956),
-  P = n(176354),
-  R = n(823379),
+  R = n(176354),
+  P = n(823379),
   w = n(226951),
   D = n(709054),
   L = n(906411),
@@ -237,13 +237,13 @@ class ef {
   }
   getFrequentlyUsedEmojisWithoutFetchingLatest() {
     if (this.ensureDisambiguated(), null != this.frequentlyUsed) return this.frequentlyUsed;
-    let e = e_.frequently.map(e => null != e.id ? this.getById(e.id) : k.ZP.getByName(e.name)).filter(R.lm),
+    let e = e_.frequently.map(e => null != e.id ? this.getById(e.id) : k.ZP.getByName(e.name)).filter(P.lm),
       t = (0, U.Z)(e);
     return this.frequentlyUsed = [...t.values()], this.frequentlyUsed
   }
   getFrequentlyUsedReactionEmojisWithoutFetchingLatest() {
     if (this.ensureDisambiguated(), null != this.frequentlyUsedReactionEmojis) return this.frequentlyUsedReactionEmojis;
-    let e = ep.frequently.map(e => null != e.id ? this.getById(e.id) : k.ZP.getByName(e.name)).filter(R.lm),
+    let e = ep.frequently.map(e => null != e.id ? this.getById(e.id) : k.ZP.getByName(e.name)).filter(P.lm),
       t = (0, U.Z)(e);
     return this.frequentlyUsedReactionEmojis = [...t.values()], this.frequentlyUsedReactionEmojis
   }
@@ -256,7 +256,7 @@ class ef {
     let n = (null != (t = null == (e = O.Z.frecencyWithoutFetchingLatest.favoriteEmojis) ? void 0 : e.emojis) ? t : []).map(e => {
         var t;
         return null != (t = this.getById(e)) ? t : k.ZP.getByName(e)
-      }).filter(R.lm),
+      }).filter(P.lm),
       r = (0, U.Z)(n);
     return this.favorites = [...r.values()], this.favoriteNamesAndIds = new Set(r.keys()), {
       favorites: this.favorites,
@@ -445,7 +445,7 @@ function eC(e) {
   eM([t]), ex([t])
 }
 
-function eP(e, t) {
+function eR(e, t) {
   let {
     canSplitFrecencyList: n
   } = x.Z.getCurrentConfig({
@@ -464,7 +464,7 @@ function eP(e, t) {
     for (let e of ["100", "100", "thumbsup", "thumbsup", "thumbsdown", "thumbsdown", "heart", "point_up", "eyes", "weary", "laughing", "white_check_mark", "x"]) ep.track(e)
 }
 
-function eR() {
+function eP() {
   var e, t, n, r, i, o;
   let s = null == (t = O.Z.settings.textAndImages) || null == (e = t.diversitySurrogate) ? void 0 : e.value;
   null != s && k.ZP.setDefaultDiversitySurrogate(s), ef.reset();
@@ -475,7 +475,7 @@ function eR() {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), q.pendingUsages), ep.overwriteHistory(a().mapValues(u, e => W(H({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
-  })), q.emojiReactionPendingUsages), eP(c, u)
+  })), q.emojiReactionPendingUsages), eR(c, u)
 }
 
 function ew(e) {
@@ -576,7 +576,7 @@ function eG(e) {
 }
 class eB extends(r = c.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(f.Z, S.Z, I.ZP, T.Z, v.default, b.Z, j.Z, N.default, m.Z), null != e && (null != e.pendingUsages && (q.pendingUsages = e.pendingUsages), null != e.emojiReactionPendingUsages && (q.emojiReactionPendingUsages = e.emojiReactionPendingUsages), null != e.expandedSectionsByGuildIds && (q.expandedSectionsByGuildIds = new Set(e.expandedSectionsByGuildIds))), this.syncWith([O.Z], eR), this.syncWith([m.Z], eD)
+    this.waitFor(f.Z, S.Z, I.ZP, T.Z, v.default, b.Z, j.Z, N.default, m.Z), null != e && (null != e.pendingUsages && (q.pendingUsages = e.pendingUsages), null != e.emojiReactionPendingUsages && (q.emojiReactionPendingUsages = e.emojiReactionPendingUsages), null != e.expandedSectionsByGuildIds && (q.expandedSectionsByGuildIds = new Set(e.expandedSectionsByGuildIds))), this.syncWith([O.Z], eP), this.syncWith([m.Z], eD)
   }
   getState() {
     return q
@@ -672,7 +672,7 @@ class eB extends(r = c.ZP.PersistedStore) {
     } else t = s;
     let u = null != n ? n.getGuildId() : null,
       d = ef.get(u).nameMatchesChain(t).reduce((e, t) => {
-        let r = P.ZP.getEmojiUnavailableReason({
+        let r = R.ZP.getEmojiUnavailableReason({
           emoji: t,
           channel: n,
           intention: a,

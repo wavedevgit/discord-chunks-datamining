@@ -23,8 +23,8 @@ var r, i, a, o = n(848120),
   A = T && T.prototype,
   N = l.Uint8ClampedArray,
   C = N && N.prototype,
-  P = T && E(T),
-  R = A && E(A),
+  R = T && E(T),
+  P = A && E(A),
   w = Object.prototype,
   D = l.TypeError,
   L = y("toStringTag"),
@@ -69,7 +69,7 @@ var r, i, a, o = n(848120),
     throw new D("Target is not a typed array")
   },
   H = function(e) {
-    if (c(e) && (!b || g(P, e))) return e;
+    if (c(e) && (!b || g(R, e))) return e;
     throw new D(_(e) + " is not a typed array constructor")
   },
   Y = function(e, t, n, r) {
@@ -84,7 +84,7 @@ var r, i, a, o = n(848120),
               a.prototype[e] = t
             } catch (e) {}
           }
-        }(!R[e] || n) && h(R, e, n ? t : k && A[e] || t, r)
+        }(!P[e] || n) && h(P, e, n ? t : k && A[e] || t, r)
     }
   },
   W = function(e, t, n) {
@@ -97,9 +97,9 @@ var r, i, a, o = n(848120),
               delete i[e]
             } catch (e) {}
         }
-        if (P[e] && !n) return;
+        if (R[e] && !n) return;
         try {
-          return h(P, e, n ? t : k && P[e] || t)
+          return h(R, e, n ? t : k && R[e] || t)
         } catch (e) {}
       }
       for (r in U)(i = l[r]) && (!i[e] || n) && h(i, e, t)
@@ -107,14 +107,14 @@ var r, i, a, o = n(848120),
   };
 for (r in U)(a = (i = l[r]) && i.prototype) ? I(a)[M] = i : k = !1;
 for (r in G)(a = (i = l[r]) && i.prototype) && (I(a)[M] = i);
-if ((!k || !c(P) || P === Function.prototype) && (P = function() {
+if ((!k || !c(R) || R === Function.prototype) && (R = function() {
     throw new D("Incorrect invocation")
   }, k))
-  for (r in U) l[r] && b(l[r], P);
-if ((!k || !R || R === w) && (R = P.prototype, k))
-  for (r in U) l[r] && b(l[r].prototype, R);
-if (k && E(C) !== R && b(C, R), s && !d(R, L))
-  for (r in j = !0, m(R, L, {
+  for (r in U) l[r] && b(l[r], R);
+if ((!k || !P || P === w) && (P = R.prototype, k))
+  for (r in U) l[r] && b(l[r].prototype, P);
+if (k && E(C) !== P && b(C, P), s && !d(P, L))
+  for (r in j = !0, m(P, L, {
       configurable: !0,
       get: function() {
         return u(this) ? this[x] : void 0
@@ -130,6 +130,6 @@ e.exports = {
   getTypedArrayConstructor: V,
   isView: B,
   isTypedArray: F,
-  TypedArray: P,
-  TypedArrayPrototype: R
+  TypedArray: R,
+  TypedArrayPrototype: P
 }

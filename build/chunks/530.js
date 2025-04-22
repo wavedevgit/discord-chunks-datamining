@@ -19,59 +19,54 @@ var i = n(120356),
 function p(e) {
   let {
     user: t,
-    themeType: n,
-    usernameIcon: i,
-    tags: p,
-    nickname: h,
-    nicknameIcons: m,
-    pronouns: g,
-    className: E,
-    isTryItOut: b,
-    onOpenProfile: y,
-    onClose: v,
-    nicknameVariant: O = "heading-lg/bold",
-    pronounsVariant: I = "text-sm/medium"
-  } = e, S = {
-    [_.biteSize]: n === d.lY.POPOUT,
-    [_.fullSize]: n === d.lY.MODAL,
-    [_.panel]: n === d.lY.SIDEBAR
-  }, T = e => null == y ? e : (0, r.jsx)(o.P3F, {
-    onClick: y,
+    usernameIcon: n,
+    tags: i,
+    nickname: p,
+    nicknameIcons: h,
+    pronouns: m,
+    className: g,
+    isTryItOut: E,
+    onOpenProfile: b,
+    onClose: y,
+    nicknameVariant: v = "heading-lg/bold",
+    pronounsVariant: O = "text-sm/medium"
+  } = e, I = e => null == b ? e : (0, r.jsx)(o.P3F, {
+    onClick: b,
     className: _.clickableUsername,
     children: e
-  }), A = null != g && g.length > 0, N = (0, l.D)(t);
+  }), S = null != m && m.length > 0, T = (0, l.D)(t);
   return (0, r.jsxs)("div", {
     className: a()(_.container, {
-      [_.bot]: null != N
-    }, E),
+      [_.bot]: null != T
+    }, g),
     children: [(0, r.jsxs)("div", {
       className: _.usernameRow,
-      children: [T((0, r.jsx)(o.X6q, {
-        className: a()(_.nickname, S),
-        variant: O,
-        children: h
-      })), null != N && (0, r.jsx)(c.Z, {
-        type: N,
+      children: [I((0, r.jsx)(o.X6q, {
+        className: _.nickname,
+        variant: v,
+        children: p
+      })), null != T && (0, r.jsx)(c.Z, {
+        type: T,
         verified: t.isVerifiedBot()
-      }), null != m && (0, r.jsx)("div", {
-        className: a()(_.nicknameIcons, S),
-        children: m
+      }), null != h && (0, r.jsx)("div", {
+        className: _.nicknameIcons,
+        children: h
       })]
     }), (0, r.jsxs)("div", {
-      className: a()(_.tags, S, {
-        [_.pronouns]: A,
-        [_.bot]: null != N
+      className: a()(_.tags, {
+        [_.pronouns]: S,
+        [_.bot]: null != T
       }),
-      children: [!t.isProvisional && T((0, r.jsx)(s.Z, {
+      children: [!t.isProvisional && I((0, r.jsx)(s.Z, {
         user: t,
-        usernameIcon: i,
+        usernameIcon: n,
         forceUsername: !0,
-        forcePomelo: b,
+        forcePomelo: E,
         className: _.userTag,
         usernameClass: _.userTagUsername,
         discriminatorClass: _.userTagDiscriminator,
         hideBotTag: !0
-      })), A && (0, r.jsxs)(r.Fragment, {
+      })), S && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           "aria-hidden": "true",
           className: _.dotSpacer
@@ -80,18 +75,18 @@ function p(e) {
           text: f.intl.string(f.t.GI2A8P),
           delay: d.vB,
           children: (0, r.jsx)(o.Text, {
-            variant: I,
+            variant: O,
             className: _.pronounsText,
             color: "header-primary",
-            children: g
+            children: m
           })
         })]
       }), (0, r.jsx)(u.ZP, {
         userId: t.id,
         containerClassName: _.clanTagContainer,
         className: _.clanTag,
-        onClose: v
-      }), p]
+        onClose: y
+      }), i]
     })]
   })
 }

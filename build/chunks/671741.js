@@ -95,7 +95,6 @@ function R(e) {
             className: A.backdrop
           }), (0, r.jsxs)(o.u2, {
             children: [(0, r.jsxs)(j.Z, {
-              themeType: N.lY.SIDEBAR,
               children: [(0, r.jsx)(O.Z, {
                 user: t,
                 themeType: N.lY.SIDEBAR,

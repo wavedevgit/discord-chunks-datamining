@@ -29,8 +29,8 @@ var r = n(664751),
   A = n(254854),
   N = n(981631),
   C = n(701488),
-  P = n(388032);
-let R = 3,
+  R = n(388032);
+let P = 3,
   w = 20;
 
 function D(e) {
@@ -169,7 +169,7 @@ async function M(e) {
       pids: e
     })
   }).catch(e => {
-    A.Z.show(N.kVF.LAUNCH_GAME_FAILURE, P.intl.string(P.t.YZEBdn)), l.Z.dispatch({
+    A.Z.show(N.kVF.LAUNCH_GAME_FAILURE, R.intl.string(R.t.YZEBdn)), l.Z.dispatch({
       type: "GAME_LAUNCH_FAIL",
       applicationId: t,
       error: I
@@ -332,7 +332,7 @@ let k = {
         distributor_application: L(i, a),
         executable: c,
         publisher: r,
-        report_version: R
+        report_version: P
       },
       retries: 1,
       oldFormErrors: !0,

@@ -4,7 +4,7 @@ n.d(t, {
   SW: () => N,
   T_: () => w,
   _v: () => D,
-  jd: () => R,
+  jd: () => P,
   pz: () => C,
   s5: () => T
 }), n(388685), n(467055), n(361932), n(187205), n(539854);
@@ -346,13 +346,13 @@ function C() {
   return n ? E() : null != (t = null == (e = A()) ? void 0 : e.getLayoutMap()) ? t : E()
 }
 
-function P(e) {
+function R(e) {
   var t, n;
   let r = e.toLocaleUpperCase();
   return null != (n = null == (t = A()) ? void 0 : t.findCodeFromKeyboardLayoutMap(r)) ? n : void 0
 }
 
-function R(e) {
+function P(e) {
   let t = b(e);
   if (null != t.key) {
     var n, r;
@@ -364,7 +364,7 @@ function R(e) {
 function w(e) {
   var t, n, r, i;
   let a = e.toLocaleUpperCase(),
-    o = P(a),
+    o = R(a),
     s = null != (n = null == (t = A()) ? void 0 : t.findKeyboardEventByKey(a, o)) ? n : null;
   if (null != s) return s;
   try {

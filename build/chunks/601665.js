@@ -55,8 +55,8 @@ function C(e) {
     currentUser: n,
     guildId: A,
     channelId: C,
-    messageId: P,
-    roleId: R,
+    messageId: R,
+    roleId: P,
     openedAt: w,
     closePopout: D,
     setPopoutRef: L,
@@ -69,8 +69,8 @@ function C(e) {
     userId: t.id,
     guildId: A,
     channelId: C,
-    messageId: P,
-    roleId: R
+    messageId: R,
+    roleId: P
   }), U = (0, _.ZP)(t.id, A), G = (0, a.e7)([u.Z], () => null != A ? u.Z.getGuild(A) : null), B = i.useRef(null), V = (0, s.Z)(B);
   i.useEffect(() => {
     null == L || L(null == B ? void 0 : B.current)
@@ -107,7 +107,6 @@ function C(e) {
           displayProfile: U,
           themeType: I.lY.POPOUT,
           children: [(0, r.jsx)(E.Z, {
-            themeType: I.lY.POPOUT,
             children: (0, r.jsx)(g.Z, {
               user: t,
               guildId: A,

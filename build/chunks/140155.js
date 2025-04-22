@@ -158,13 +158,13 @@ function C(e) {
   y.loading && (y.loading = !1, y.initialized = !0, y.errored = !1, y.isDataStale = !1, null != r && y.notifCenterIds.has(r) || (y.paginationHasMore = t.length > 0 && n, y.paginationCursor = t.length > 0 ? r : void 0), y.notifCenterItems = [...y.notifCenterItems, ...t.map(A).filter(e => !y.notifCenterIds.has(e.id))], y.notifCenterItems.sort((e, t) => f.default.compare(t.id, e.id)), t.forEach(e => y.notifCenterIds.add(e.id)))
 }
 
-function P(e) {
+function R(e) {
   let t = "NOTIFICATION_CENTER_ITEM_CREATE" === e.type ? A(e.item) : e.item;
   if (!y.initialized || !v(t) || y.notifCenterIds.has(t.id)) return !1;
   y.notifCenterIds.add(t.id), y.notifCenterItems = [t, ...y.notifCenterItems], y.notifCenterItems.sort((e, t) => f.default.compare(t.id, e.id))
 }
 
-function R(e) {
+function P(e) {
   let {
     id: t
   } = e;
@@ -369,9 +369,9 @@ let K = new W(a.Z, {
   NOTIFICATION_CENTER_ITEMS_ACK: D,
   NOTIFICATION_CENTER_ITEMS_ACK_FAILURE: L,
   GUILD_SCHEDULED_EVENT_UPDATE: Z,
-  NOTIFICATION_CENTER_ITEM_CREATE: P,
-  NOTIFICATION_CENTER_ITEM_DELETE: R,
-  NOTIFICATION_CENTER_ITEM_DELETE_FAILURE: P,
+  NOTIFICATION_CENTER_ITEM_CREATE: R,
+  NOTIFICATION_CENTER_ITEM_DELETE: P,
+  NOTIFICATION_CENTER_ITEM_DELETE_FAILURE: R,
   LOAD_NOTIFICATION_CENTER_ITEMS: S,
   LOAD_NOTIFICATION_CENTER_ITEMS_FAILURE: T,
   LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: C,

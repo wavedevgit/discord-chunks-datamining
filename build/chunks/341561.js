@@ -51,7 +51,7 @@ let S = 8,
   N = 40,
   C = 6;
 
-function P(e, t) {
+function R(e, t) {
   return (0, r.jsx)(f.Z, {
     sticker: e,
     isInteracting: t,
@@ -59,7 +59,7 @@ function P(e, t) {
   })
 }
 
-function R(e) {
+function P(e) {
   return "".concat(E.Iv).concat(e.name).concat(E.Iv)
 }
 
@@ -198,7 +198,7 @@ let D = {
             sticker: n
           } = e;
           return {
-            renderSticker: P,
+            renderSticker: R,
             queryMatch: t !== n.name.toLocaleLowerCase() ? t : void 0,
             sticker: n,
             key: n.id
@@ -249,7 +249,7 @@ let D = {
     } = e;
     if (a < t.length) {
       let e = t[a];
-      return o.insertText(R(e), w(e)), {
+      return o.insertText(P(e), w(e)), {
         type: g.z2.EMOJI,
         metadata: {
           emojiId: e.id,

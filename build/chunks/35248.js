@@ -60,7 +60,7 @@ let I = e => {
       {
         isGift: C
       } = (0, _.wD)(),
-      [P, R] = i.useState(!1);
+      [R, P] = i.useState(!1);
     switch (n) {
       case h.h8.AWAITING_BROWSER_CHECKOUT_GOOGLE_PAY:
         t = g.i$l.GOOGLE_PAY;
@@ -71,10 +71,10 @@ let I = e => {
     return i.useEffect(() => {
       let e = setTimeout(() => {
         var e;
-        P || (R(!0), (0, l.r5)(N.loadId), O(null != (e = null == u ? void 0 : u.id) ? e : E.Xh.PREMIUM_MONTH_TIER_2, C, N.loadId, o, t))
+        R || (P(!0), (0, l.r5)(N.loadId), O(null != (e = null == u ? void 0 : u.id) ? e : E.Xh.PREMIUM_MONTH_TIER_2, C, N.loadId, o, t))
       }, v);
       return () => clearTimeout(e)
-    }, [u, C, N, o, R, P, t]), i.useEffect(() => {
+    }, [u, C, N, o, P, R, t]), i.useEffect(() => {
       null !== T && (E.YQ.includes(T) && ((0, c.GZ)(T), (0, l.jg)()), f(T)), null !== A && d(A), S === N.loadId && I === m.Y.DONE && a()
     }, [f, d, I, S, T, A, N, a]), (0, r.jsxs)("div", {
       className: y.body,

@@ -54,7 +54,7 @@ function N(e) {
 function C(e) {
   var t, n, r, i, a, o;
   let s = l.default.getCurrentUser();
-  if (null == s) return P();
+  if (null == s) return R();
   p = null != (t = e.section) ? t : p, T = null != (n = e.section) ? n : p, null != e.subsection && null != p && (h[p] = e.subsection), null != e.scrollPosition && null != p && (m[p] = e.scrollPosition), v = !!e.openWithoutBackstack, f = c.QZA.OPEN, g = {}, b = d({}, E = {
     [c.oAB.ACCOUNT]: {
       userId: s.id,
@@ -69,11 +69,11 @@ function C(e) {
   }), O = null != (r = e.onClose) ? r : null, I = null != (i = e.analyticsLocation) ? i : null, S = null != (a = e.analyticsLocations) ? a : [], A = null != (o = e.impressionSource) ? o : null
 }
 
-function P() {
+function R() {
   f = c.QZA.CLOSED, y = !1, E = null, T = null, b = null, _ = null, p = null, h = {}, m = {}, O = null, I = null, S = [], A = null
 }
 
-function R(e) {
+function P(e) {
   var t;
   _ = p, p = e.section, I = null, S = null != (t = e.analyticsLocations) ? t : [], null != e.subsection && (h[p] = e.subsection)
 }
@@ -179,11 +179,11 @@ u(U, "displayName", "UserSettingsModalStore");
 let G = new U(s.Z, {
   USER_SETTINGS_MODAL_OPEN: N,
   USER_SETTINGS_MODAL_INIT: C,
-  USER_SETTINGS_MODAL_CLOSE: P,
-  LOGOUT: P,
+  USER_SETTINGS_MODAL_CLOSE: R,
+  LOGOUT: R,
   USER_SETTINGS_MODAL_SUBMIT: x,
   USER_SETTINGS_MODAL_SUBMIT_FAILURE: j,
-  USER_SETTINGS_MODAL_SET_SECTION: R,
+  USER_SETTINGS_MODAL_SET_SECTION: P,
   USER_SETTINGS_MODAL_CLEAR_SUBSECTION: w,
   USER_SETTINGS_MODAL_CLEAR_SCROLL_POSITION: D,
   USER_SETTINGS_MODAL_UPDATE_ACCOUNT: L,

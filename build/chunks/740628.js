@@ -69,38 +69,38 @@ function y(e) {
     guildId: m,
     items: b,
     initialSection: y = h.oh.USER_INFO,
-    initialSubsection: O,
-    onClose: I
+    initialSubsection: I,
+    onClose: O
   } = e, {
-    trackUserProfileAction: _
-  } = (0, a.KZ)(), Z = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), [{
+    trackUserProfileAction: Z
+  } = (0, a.KZ)(), _ = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), [{
     section: P,
-    subsection: A
-  }, E] = o.useState({
+    subsection: E
+  }, N] = o.useState({
     section: null != (d = null == (n = b.find(e => {
       let {
         section: n
       } = e;
       return n === y
     })) ? void 0 : n.section) ? d : null == (t = b[0]) ? void 0 : t.section,
-    subsection: O
+    subsection: I
   });
   o.useEffect(() => {
-    null == b.find(e => e.section === P) && E({
+    null == b.find(e => e.section === P) && N({
       section: b[0].section,
       subsection: void 0
     })
   }, [b, P]);
-  let N = o.useCallback(e => {
-    _({
+  let A = o.useCallback(e => {
+    Z({
       action: "PRESS_SECTION",
       section: e
-    }), E({
+    }), N({
       section: e,
       subsection: void 0
     })
-  }, [_, E]);
-  return Z ? (0, r.jsx)("div", {
+  }, [Z, N]);
+  return _ ? (0, r.jsx)("div", {
     className: v.container,
     children: (0, r.jsxs)("div", {
       className: j.empty,
@@ -117,7 +117,7 @@ function y(e) {
       className: v.tabBar,
       type: "top",
       selectedItem: P,
-      onItemSelect: N,
+      onItemSelect: A,
       children: b.map(e => {
         let {
           section: n,
@@ -136,12 +136,12 @@ function y(e) {
     }), (0, r.jsx)(x, {
       items: b,
       section: P,
-      subsection: A,
+      subsection: E,
       user: u,
       currentUser: f,
       displayProfile: p,
       guildId: m,
-      onClose: I
+      onClose: O
     })]
   })
 }

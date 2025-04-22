@@ -47,15 +47,15 @@ function I(e) {
 let S = 1e3;
 
 function T() {
-  let [e, t] = i.useState(!1), O = (0, l.VXO)(b.Xd), T = (0, E.Q3)("useDesktopRefreshOnboarding"), A = i.useMemo(() => T ? [o.z.DESKTOP_REFRESH_ONBOARDING_MODAL] : [], [T]), [N, C] = (0, _.US)(A), P = N === o.z.DESKTOP_REFRESH_ONBOARDING_MODAL, R = (0, a.e7)([h.default], () => h.default.getId());
+  let [e, t] = i.useState(!1), O = (0, l.VXO)(b.Xd), T = (0, E.Q3)("useDesktopRefreshOnboarding"), A = i.useMemo(() => T ? [o.z.DESKTOP_REFRESH_ONBOARDING_MODAL] : [], [T]), [N, C] = (0, _.US)(A), R = N === o.z.DESKTOP_REFRESH_ONBOARDING_MODAL, P = (0, a.e7)([h.default], () => h.default.getId());
   i.useLayoutEffect(() => {
-    T && null != R && g.default.age(R) < m.Z.Millis.DAY && (0, f.EW)(o.z.DESKTOP_REFRESH_ONBOARDING_MODAL);
+    T && null != P && g.default.age(P) < m.Z.Millis.DAY && (0, f.EW)(o.z.DESKTOP_REFRESH_ONBOARDING_MODAL);
     let e = "desktop_refresh_theme_migration_key",
       t = "true" === s.K.get(e);
-    P && T && !t && p.Z.theme === v.BR.DARK && null == d.Z.gradientPreset && !t && (s.K.set(e, "true"), (0, u.ZI)({
+    R && T && !t && p.Z.theme === v.BR.DARK && null == d.Z.gradientPreset && !t && (s.K.set(e, "true"), (0, u.ZI)({
       theme: v.BR.DARKER
     }))
-  }, [P, T, R]), i.useLayoutEffect(() => {
+  }, [R, T, P]), i.useLayoutEffect(() => {
     function e() {
       t(!0)
     }
@@ -77,11 +77,11 @@ function T() {
     })
   }, [T, C]);
   i.useEffect(() => {
-    if (T && P && !O && e) {
+    if (T && R && !O && e) {
       let e = setTimeout(() => {
         w()
       }, S);
       return () => clearTimeout(e)
     }
-  }, [e, O, P, T, w])
+  }, [e, O, R, T, w])
 }

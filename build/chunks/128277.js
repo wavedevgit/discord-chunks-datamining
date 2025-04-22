@@ -38,7 +38,7 @@ function C(e, t, n) {
   }) : e[t] = n, e
 }
 
-function P(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,7 +51,7 @@ function P(e) {
   return e
 }
 
-function R(e, t) {
+function P(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -63,7 +63,7 @@ function R(e, t) {
 }
 
 function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -74,30 +74,28 @@ function D(e) {
     currentUser: n,
     activity: a,
     className: C,
-    onClose: R
+    onClose: P
   } = e, {
     themeType: D
-  } = (0, E.z)(), L = {
-    [N.fullSize]: D === A.lY.MODAL
-  }, x = (0, _.Z)({
+  } = (0, E.z)(), L = (0, _.Z)({
     activity: a,
     user: t
-  }), M = (0, g.Z)(a), {
-    largeImage: k
+  }), x = (0, g.Z)(a), {
+    largeImage: M
   } = (0, d.FO)(a), {
-    analyticsLocations: j
-  } = (0, u.ZP)(c.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), U = (0, h.Z)({
+    analyticsLocations: k
+  } = (0, u.ZP)(c.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), j = (0, h.Z)({
     display: "live",
     user: t,
     activity: a,
-    entry: x,
-    analyticsLocations: j
-  }), G = (0, m.Z)({
+    entry: L,
+    analyticsLocations: k
+  }), U = (0, m.Z)({
     userId: t.id,
-    onAction: U
+    onAction: j
   });
   if (!(0, l.Z)(a)) return null;
-  let B = () => {
+  let G = () => {
       var e, n;
       let l = null != (n = null == (e = a.state) ? void 0 : e.split(";")) ? n : [];
       return 0 === l.length ? null : null == a.sync_id ? (0, r.jsx)(O.Z, {
@@ -109,7 +107,7 @@ function D(e) {
           children: [(0, r.jsx)(s.P3F, {
             className: o()(N.clickableText, N.inline),
             onClick: e => {
-              e.stopPropagation(), U({
+              e.stopPropagation(), j({
                 action: "OPEN_SPOTIFY_ARTIST"
               }), (0, p.d$)(a, t.id, n)
             },
@@ -118,7 +116,7 @@ function D(e) {
         }, n))
       })
     },
-    V = () => {
+    B = () => {
       let {
         timestamps: e
       } = a;
@@ -132,39 +130,39 @@ function D(e) {
         end: n
       })
     },
-    F = () => t.id === n.id ? null : (0, r.jsx)("div", {
-      className: o()(N.actions, L),
+    V = () => t.id === n.id ? null : (0, r.jsx)("div", {
+      className: N.actions,
       children: (0, r.jsx)(S.Z, {
         user: t,
         activity: a,
-        onAction: U
+        onAction: j
       })
     });
   return (0, r.jsx)(u.Gt, {
-    value: j,
+    value: k,
     children: (0, r.jsxs)(y.Z, {
-      ref: G,
+      ref: U,
       className: o()(N.card, C),
-      onAction: U,
-      onClose: R,
-      children: [(0, r.jsx)(v.Z, w(P({}, M), {
+      onAction: j,
+      onClose: P,
+      children: [(0, r.jsx)(v.Z, w(R({}, x), {
         contextMenu: (0, r.jsx)(T.Z, {
           display: "live",
           user: t,
           activity: a,
-          entry: x,
-          onClose: R
+          entry: L,
+          onClose: P
         })
       })), (0, r.jsx)("div", {
         className: N.body,
         children: (0, r.jsxs)("div", {
-          className: o()(N.content, L),
+          className: N.content,
           children: [(0, r.jsx)(f.E, {
-            image: k,
+            image: M,
             size: f.J.SIZE_60,
             className: N.clickableImage,
             onClick: e => {
-              e.stopPropagation(), U({
+              e.stopPropagation(), j({
                 action: "OPEN_SPOTIFY_ALBUM"
               }), (0, p.Z5)(a, t.id)
             }
@@ -175,19 +173,19 @@ function D(e) {
                 variant: "heading-sm/semibold",
                 text: a.details,
                 onClick: () => {
-                  U({
+                  j({
                     action: "OPEN_SPOTIFY_TRACK"
                   }), (0, p.aG)(a)
                 }
-              }), B()]
+              }), G()]
             }), (0, r.jsx)(b.Z, {
               user: t,
               activity: a,
               className: N.badges
-            }), V()]
-          }), D === A.lY.MODAL && F()]
+            }), B()]
+          }), D === A.lY.MODAL && V()]
         })
-      }), D !== A.lY.MODAL && F()]
+      }), D !== A.lY.MODAL && V()]
     })
   })
 }

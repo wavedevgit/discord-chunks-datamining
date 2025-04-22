@@ -65,9 +65,9 @@ function C(e, t) {
   }), e
 }
 
-function P(e, t) {
+function R(e, t) {
   if (null == e) return {};
-  var n, r, i = R(e, t);
+  var n, r, i = P(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -75,7 +75,7 @@ function P(e, t) {
   return i
 }
 
-function R(e, t) {
+function P(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -88,7 +88,7 @@ let w = 490,
   x = 200,
   M = 120,
   k = i.forwardRef(function(e, t) {
-    var n, a, T, N, R;
+    var n, a, T, N, P;
     let {
       channel: k,
       type: j,
@@ -154,7 +154,7 @@ let w = 490,
           children: e => {
             var {
               ref: t
-            } = e, n = P(e, ["ref"]);
+            } = e, n = R(e, ["ref"]);
             return (0, r.jsx)(c.h21, C(A({
               id: B,
               ref: e => {
@@ -179,7 +179,7 @@ let w = 490,
         targetRef: e.targetRef,
         overrideTargetRect: q,
         positionKey: X,
-        position: null != (R = e.position) ? R : "top",
+        position: null != (P = e.position) ? P : "top",
         align: "left",
         spacing: 8,
         autoInvert: !0,

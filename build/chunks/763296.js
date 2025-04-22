@@ -43,11 +43,11 @@ function C() {
   b.clear(), S.clear()
 }
 
-function P() {
+function R() {
   O = 1
 }
 
-function R(e) {
+function P(e) {
   let {
     updates: t
   } = e;
@@ -243,7 +243,7 @@ class W extends(r = o.ZP.Store) {
 g(W, "displayName", "SoundboardStore");
 let K = new W(s.Z, {
   LOGOUT: N,
-  GUILD_SOUNDBOARD_FETCH: P,
+  GUILD_SOUNDBOARD_FETCH: R,
   GUILD_SOUNDBOARD_SOUND_CREATE: D,
   GUILD_SOUNDBOARD_SOUND_UPDATE: D,
   GUILD_SOUNDBOARD_SOUND_DELETE: M,
@@ -256,7 +256,7 @@ let K = new W(s.Z, {
   USER_SETTINGS_PROTO_UPDATE: Z,
   SOUNDBOARD_FETCH_DEFAULT_SOUNDS: k,
   SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS: j,
-  SOUNDBOARD_SOUNDS_RECEIVED: R,
+  SOUNDBOARD_SOUNDS_RECEIVED: P,
   GUILD_DELETE: w,
   AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: H,
   OVERLAY_INITIALIZE: Y

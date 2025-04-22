@@ -72,9 +72,9 @@ let v = function(e) {
     A = S && null == v && null == O,
     N = S && null != v && null == O,
     C = S && null == v && null != O,
-    P = N || C;
+    R = N || C;
 
-  function R() {
+  function P() {
     null != I && (0, o.ZDy)(async () => {
       let {
         default: e
@@ -87,13 +87,13 @@ let v = function(e) {
   }
 
   function w() {
-    return A || P ? (0, l.Z)({
+    return A || R ? (0, l.Z)({
       platformType: p.ABu.RIOT_GAMES
-    }) : R()
+    }) : P()
   }
 
   function D() {
-    return A ? h.intl.string(h.t.w6VSSE) : P ? h.intl.string(h.t.CHNBdn) : h.intl.string(h.t["0yRXHx"])
+    return A ? h.intl.string(h.t.w6VSSE) : R ? h.intl.string(h.t.CHNBdn) : h.intl.string(h.t["0yRXHx"])
   }
 
   function L() {

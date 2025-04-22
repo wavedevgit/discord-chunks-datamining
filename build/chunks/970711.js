@@ -19,14 +19,14 @@ n.d(t, {
   G6: () => eH,
   H0: () => k,
   Hh: () => eO,
-  IU: () => eP,
+  IU: () => eR,
   KD: () => G,
   KE: () => eE,
   Mc: () => Y,
   OU: () => eS,
   On: () => ep,
   Or: () => e2,
-  R7: () => eR,
+  R7: () => eP,
   Rb: () => ek,
   Rs: () => eA,
   S: () => V,
@@ -250,8 +250,8 @@ function N(e, t, n) {
 function C(e, t, n, i) {
   r.closure526_externref_shim(e, t, n, i)
 }
-let P = ["omit", "same-origin", "include"],
-  R = ["same-origin", "no-cors", "cors", "navigate"],
+let R = ["omit", "same-origin", "include"],
+  P = ["same-origin", "no-cors", "cors", "navigate"],
   w = "undefined" == typeof FinalizationRegistry ? {
     register: () => {},
     unregister: () => {}
@@ -528,7 +528,7 @@ function eS(e, t) {
 }
 
 function eT(e, t) {
-  e.credentials = P[t]
+  e.credentials = R[t]
 }
 
 function eA(e, t) {
@@ -543,11 +543,11 @@ function eC(e, t, n) {
   e.method = l(t, n)
 }
 
-function eP(e, t) {
-  e.mode = R[t]
+function eR(e, t) {
+  e.mode = P[t]
 }
 
-function eR(e, t) {
+function eP(e, t) {
   e.signal = t
 }
 

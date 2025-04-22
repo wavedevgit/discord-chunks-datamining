@@ -63,10 +63,10 @@ let v = 2,
   A = null,
   N = !1,
   C = new Map,
-  P = (e, t) => {
+  R = (e, t) => {
     C = new Map(C.set(e, t))
   },
-  R = p.Z.Millis.HOUR,
+  P = p.Z.Millis.HOUR,
   w = async () => {
     if (0 !== v) return;
     let e = s.Z.database();
@@ -87,7 +87,7 @@ function D(e) {
     if (f.Z.isMember(e) && !C.has(e)) {
       let t = _.Z.getGuild(e);
       for (let e of n) L(e, !0, t);
-      P(e, n)
+      R(e, n)
     }
 }
 let L = function(e) {
@@ -164,7 +164,7 @@ let L = function(e) {
 
 function G(e) {
   let t = _.Z.getGuild(e.id);
-  null != t && null != e.stickers && (e.stickers.forEach(e => L(e, !0, t)), P(t.id, e.stickers))
+  null != t && null != e.stickers && (e.stickers.forEach(e => L(e, !0, t)), R(t.id, e.stickers))
 }
 
 function B(e) {
@@ -207,7 +207,7 @@ let F = () => {
       guildId: t,
       stickers: n
     } = e;
-    n.forEach(e => L(e)), P(t, n)
+    n.forEach(e => L(e)), R(t, n)
   },
   K = e => {
     var t, n;
@@ -215,7 +215,7 @@ let F = () => {
       guildId: r,
       sticker: i
     } = e, a = null != (t = C.get(r)) ? t : [];
-    P(r, [...null != (n = a.filter(e => e.id !== i.id)) ? n : [], i]), L(i)
+    R(r, [...null != (n = a.filter(e => e.id !== i.id)) ? n : [], i]), L(i)
   },
   z = e => {
     let {
@@ -238,7 +238,7 @@ let F = () => {
       I.delete(e.id), null != S && S.delete(e.id)
     });
     let a = r.map(e => i(e));
-    a.forEach(e => L(e)), P(n, a)
+    a.forEach(e => L(e)), R(n, a)
   };
 class Q extends(r = a.ZP.Store) {
   initialize() {
@@ -254,7 +254,7 @@ class Q extends(r = a.ZP.Store) {
     return w(), null == S && (S = new Map, k()), S
   }
   get hasLoadedStickerPacks() {
-    return null != A && A + R > Date.now()
+    return null != A && A + P > Date.now()
   }
   get isFetchingStickerPacks() {
     return N

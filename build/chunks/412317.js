@@ -123,14 +123,14 @@ function v(e) {
     hasIncomingPendingGameFriends: y
   } = (0, u.H)({
     userId: t.id
-  }), O = v.length > 0 || x || y;
+  }), I = v.length > 0 || x || y;
   return n || a === f.OGo.BLOCKED ? null : a === f.OGo.FRIEND || t.bot ? (0, r.jsx)("div", {
     className: m.multipleButtons,
     children: (0, r.jsx)(c.c, {
       userId: t.id,
       onClose: b
     })
-  }) : a === f.OGo.NONE && O ? (0, r.jsxs)("div", {
+  }) : a === f.OGo.NONE && I ? (0, r.jsxs)("div", {
     className: m.multipleButtons,
     children: [(0, r.jsx)(j, {
       user: t,

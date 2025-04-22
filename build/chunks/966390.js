@@ -29,8 +29,8 @@ var r = n(481060),
   A = n(623292),
   N = n(807092),
   C = n(467798),
-  P = n(703558),
-  R = n(117530),
+  R = n(703558),
+  P = n(117530),
   w = n(630388),
   D = n(226351),
   L = n(981631),
@@ -112,7 +112,7 @@ async function G(e) {
     });
 
   function Q() {
-    "" !== Y.content && "" === P.Z.getDraft(M, G) && a.Z.saveDraft(M, Y.content, G), 0 === R.Z.getUploadCount(M, G) && s.Z.setUploads({
+    "" !== Y.content && "" === R.Z.getDraft(M, G) && a.Z.saveDraft(M, Y.content, G), 0 === P.Z.getUploadCount(M, G) && s.Z.setUploads({
       channelId: M,
       uploads: j,
       draftType: G
@@ -249,7 +249,7 @@ function B(e) {
           })
         }
       })
-    }), "" !== f.content && "" === P.Z.getDraft(t, s) && a.Z.saveDraft(t, f.content, s)
+    }), "" !== f.content && "" === R.Z.getDraft(t, s) && a.Z.saveDraft(t, f.content, s)
   }), h.on("complete", e => {
     i.Z.dispatch({
       type: "UPLOAD_COMPLETE",
@@ -286,11 +286,11 @@ let V = {
     i.Z.dispatch({
       type: "UPLOAD_CANCEL_REQUEST",
       file: e
-    }), null != e.draftContent && null != e.channelId && "" === P.Z.getDraft(e.channelId, P.d.ChannelMessage) && i.Z.dispatch({
+    }), null != e.draftContent && null != e.channelId && "" === R.Z.getDraft(e.channelId, R.d.ChannelMessage) && i.Z.dispatch({
       type: "DRAFT_SAVE",
       channelId: e.channelId,
       draft: e.draftContent,
-      draftType: P.d.ChannelMessage
+      draftType: R.d.ChannelMessage
     })
   }
 }

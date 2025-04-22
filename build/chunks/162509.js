@@ -2,7 +2,6 @@
 "use strict";
 e.exports = {
   preview: "preview__3299f",
-  fullSize: "fullSize__3299f",
   image: "image__3299f",
   clickable: "clickable__3299f",
   overlay: "overlay__3299f",

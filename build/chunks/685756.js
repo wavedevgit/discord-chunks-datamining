@@ -95,14 +95,14 @@ function C(e) {
   }))
 }
 
-function P(e) {
+function R(e) {
   return "audio" === e ? d.Tr.AUDIO : "test" === e ? d.Tr.TEST : "screen" === e ? d.Tr.SCREEN : d.Tr.VIDEO
 }
 
-function R(e) {
+function P(e) {
   var t;
   return null != (t = null == e ? void 0 : e.map(e => ({
-    type: P(e.type),
+    type: R(e.type),
     rid: e.rid,
     ssrc: e.ssrc,
     rtxSsrc: e.rtx_ssrc,
@@ -166,7 +166,7 @@ class D extends o.Z {
           this.handleHeartbeatAck(r);
           break;
         case 12:
-          this.emit("video", r.user_id, r.audio_ssrc, r.video_ssrc, R(r.streams));
+          this.emit("video", r.user_id, r.audio_ssrc, r.video_ssrc, P(r.streams));
           break;
         case 11:
           this.emit("client-connect", r.user_ids);
@@ -279,7 +279,7 @@ class D extends o.Z {
   handleReady(e) {
     this.backoff.succeed();
     let t = Date.now() - this.connectionStartTime;
-    this.logger.info("[READY] took ".concat(t, " ms")), this.serverVersion >= 6 && this.send(16, {}), this.emit("ready", e.ip, e.port, e.modes, e.ssrc, R(e.streams), e.experiments)
+    this.logger.info("[READY] took ".concat(t, " ms")), this.serverVersion >= 6 && this.send(16, {}), this.emit("ready", e.ip, e.port, e.modes, e.ssrc, P(e.streams), e.experiments)
   }
   handleResumed(e) {
     this.backoff.succeed()

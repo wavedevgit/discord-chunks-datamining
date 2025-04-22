@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => R
+  Z: () => P
 }), n(388685);
 var r, i = n(442837),
   a = n(570140),
@@ -104,7 +104,7 @@ function C(e) {
     openid_params: r
   })
 }
-class P extends(r = i.ZP.Store) {
+class R extends(r = i.ZP.Store) {
   isJoining(e) {
     return E[e] || !1
   }
@@ -139,8 +139,8 @@ class P extends(r = i.ZP.Store) {
     return b.has(e)
   }
 }
-u(P, "displayName", "ConnectedAccountsStore");
-let R = new P(a.Z, {
+u(R, "displayName", "ConnectedAccountsStore");
+let P = new R(a.Z, {
   CONNECTION_OPEN: I,
   USER_CONNECTIONS_UPDATE: S,
   USER_CONNECTIONS_INTEGRATION_JOINING: T,

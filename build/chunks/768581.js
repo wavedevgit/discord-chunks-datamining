@@ -111,7 +111,7 @@ function C(e) {
   return null != window.GLOBAL_ENV.CDN_HOST ? "".concat(location.protocol, "//").concat(window.GLOBAL_ENV.CDN_HOST, "/emojis/").concat(t, ".").concat(s) + "?".concat(u).concat(c) : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + f.ANM.EMOJI(t, s)
 }
 
-function P(e, t) {
+function R(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     r = n ? v : y;
   if (null == e && null == t) return r[0];
@@ -119,7 +119,7 @@ function P(e, t) {
   return i > 0 ? r[i % I] : null != e ? r[a()(e).shiftRight(22).mod(r.length).toJSNumber()] : r[0]
 }
 
-function R(e) {
+function P(e) {
   let {
     id: t,
     avatar: n,
@@ -149,7 +149,7 @@ function w(e) {
     r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : f.IXf,
     i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null,
     a = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : O;
-  return null != (t = R(e, n, r, i, a)) ? t : P(e.id, e.discriminator, e.isProvisional)
+  return null != (t = P(e, n, r, i, a)) ? t : R(e.id, e.discriminator, e.isProvisional)
 }
 
 function D(e) {
@@ -340,7 +340,7 @@ function W(e) {
     fallbackAvatar: o = !0
   } = e;
   if (null != i && a) {
-    let e = R(i, !1, r);
+    let e = P(i, !1, r);
     if (null != e) return e
   }
   if (null != n) return N({
@@ -352,7 +352,7 @@ function W(e) {
     canAnimate: !1
   });
   if (null != i) {
-    let e = R(i, !1, r);
+    let e = P(i, !1, r);
     if (null != e) return e
   }
   if (o) return p
@@ -450,7 +450,7 @@ function et(e) {
 }
 let en = {
   getUserAvatarURL: w,
-  getDefaultAvatarURL: P,
+  getDefaultAvatarURL: R,
   getGuildMemberAvatarURL: L,
   getGuildMemberAvatarURLSimple: D,
   getGuildMemberAvatarSource: x,

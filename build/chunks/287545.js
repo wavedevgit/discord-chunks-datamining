@@ -30,8 +30,8 @@ var i = n(772848),
   A = n(585483),
   N = n(358085),
   C = n(624138),
-  P = n(24933),
-  R = n(115130),
+  R = n(24933),
+  P = n(115130),
   w = n(566620),
   D = n(317381),
   L = n(969345),
@@ -174,15 +174,15 @@ function et(e) {
   } = e, g = y.default.getId(), E = u.find(e => e.userId === g), b = null != (r = (0, U.pY)(h)) ? r : (0, U.wq)(h), I = null != (a = (0, U.jS)(h)) ? a : (0, U.hu)(h), A = v.Z.getChannel(b);
   if (c && null != A && A.isPrivate() && l && null == E && s.Z.selectParticipant(A.id, null), null == E) return;
   let N = O.Z.getMediaSessionId(),
-    R = f.compositeInstanceId,
+    P = f.compositeInstanceId,
     w = null == N && (null == A ? void 0 : A.isVocal()) === !0 && (null == A ? void 0 : A.isPrivate()) === !1;
-  if (null == R || w) return;
+  if (null == P || w) return;
   let x = (0, i.Z)(),
     M = "location" in f ? 2 : 1,
     k = S.default.getCurrentUser();
   if (null == k) return;
   let j = D.ZP.getShelfActivities(I),
-    G = P.Z.getState().shelfOrder,
+    G = R.Z.getState().shelfOrder,
     B = (0, L.Z)({
       applicationId: o,
       activityConfigs: j
@@ -194,7 +194,7 @@ function et(e) {
     H = p.Z.getRawThermalState(),
     Y = null != N ? [N] : [],
     z = {
-      activitySessionId: R,
+      activitySessionId: P,
       activityUserSessionId: x,
       launchId: f.launchId,
       mediaSessionIds: Y,
@@ -206,7 +206,7 @@ function et(e) {
     channel_id: b,
     guild_id: I,
     media_session_id: Y[0],
-    activity_session_id: R,
+    activity_session_id: P,
     application_id: o,
     location_stack: null == Q ? void 0 : Q.locations,
     user_premium_tier: k.premiumType,
@@ -305,10 +305,10 @@ class er extends c.Z {
         f = Z.intl.string(Z.t["IOy+Iy"]);
       if (i instanceof h.Z) {
         t = 0, r = i.reason;
-        let e = R.Z.getFetchState();
-        switch (E.Sb.getSetting() && e !== R.O.LOADED && await (0, w.$h)(), i.reason) {
+        let e = P.Z.getFetchState();
+        switch (E.Sb.getSetting() && e !== P.O.LOADED && await (0, w.$h)(), i.reason) {
           case h.Z.Reasons.PRIMARY_APP_COMMAND_NOT_FOUND:
-            R.Z.inDevModeForApplication(l) && (f = Z.intl.string(Z.t.hXRXf3));
+            P.Z.inDevModeForApplication(l) && (f = Z.intl.string(Z.t.hXRXf3));
             break;
           case h.Z.Reasons.INVALID_CHANNEL:
             f = Z.intl.string(Z.t.j29zCg);

@@ -84,7 +84,6 @@ function R(e) {
         themeOverride: M,
         children: [(0, r.jsxs)(l.u2, {
           children: [(0, r.jsx)(S.Z, {
-            themeType: Z.lY.SIDEBAR,
             children: (0, r.jsx)(I.Z, {
               user: t
             })
@@ -108,7 +107,6 @@ function R(e) {
             className: A.body,
             children: [(0, r.jsx)(E.Z, {
               user: t,
-              themeType: Z.lY.SIDEBAR,
               nickname: f.ZP.getName(null, n.id, t),
               pronouns: null == k ? void 0 : k.pronouns,
               onOpenProfile: R ? void 0 : F,

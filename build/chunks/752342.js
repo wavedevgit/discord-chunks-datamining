@@ -1,6 +1,6 @@
 /** Chunk was on 54636 **/
 t.d(n, {
-  Z: () => E
+  Z: () => N
 }), t(388685);
 var r = t(200651);
 t(192379);
@@ -22,19 +22,19 @@ var o = t(481060),
   v = t(544989),
   x = t(934861),
   y = t(4517),
-  O = t(740628),
-  I = t(398145),
-  _ = t(228168),
-  Z = t(981631),
+  I = t(740628),
+  O = t(398145),
+  Z = t(228168),
+  _ = t(981631),
   P = t(388032),
-  A = t(405666);
+  E = t(405666);
 
-function E(e) {
+function N(e) {
   let {
     user: n,
     currentUser: t,
-    guildId: E,
-    channelId: N,
+    guildId: N,
+    channelId: A,
     messageId: T,
     roleId: C,
     sessionId: S,
@@ -44,36 +44,35 @@ function E(e) {
     openedAt: L,
     onClose: D,
     sourceAnalyticsLocations: B = []
-  } = e, G = E === Z.ME ? void 0 : E, U = (0, a.ZP)(n.id, G), {
+  } = e, G = N === _.ME ? void 0 : N, U = (0, a.ZP)(n.id, G), {
     analyticsLocations: k
-  } = (0, l.ZP)([...B, i.Z.USER_PROFILE_MODAL]), Y = (0, c.ZB)({
+  } = (0, l.ZP)([...B, i.Z.USER_PROFILE_MODAL]), V = (0, c.ZB)({
     layout: "MODAL",
     userId: n.id,
     sourceSessionId: S,
     guildId: G,
-    channelId: N,
+    channelId: A,
     messageId: T,
     roleId: C
-  }), V = (0, I.Z)(n);
+  }), Y = (0, O.Z)(n);
   return (0, r.jsx)(l.Gt, {
     value: k,
     children: (0, r.jsx)(c.Mt, {
-      value: Y,
+      value: V,
       openedAt: L,
       fetchStartedAt: null == U ? void 0 : U.fetchStartedAt,
       fetchEndedAt: null == U ? void 0 : U.fetchEndedAt,
       isLoaded: null == U ? void 0 : U.isLoaded,
       children: (0, r.jsx)(o.Y0X, {
         transitionState: R,
-        className: A.root,
+        className: E.root,
         hideShadow: !0,
         "aria-label": P.intl.string(P.t["3N/J2t"]),
         children: (0, r.jsxs)(m.Z, {
           user: n,
           displayProfile: U,
-          themeType: _.lY.MODAL,
+          themeType: Z.lY.MODAL,
           children: [(0, r.jsx)(v.Z, {
-            themeType: _.lY.MODAL,
             children: (0, r.jsx)(g.Z, {
               user: n,
               guildId: G,
@@ -83,31 +82,31 @@ function E(e) {
             children: [(0, r.jsx)(f.Z, {
               user: n,
               displayProfile: U,
-              themeType: _.lY.MODAL
+              themeType: Z.lY.MODAL
             }), (0, r.jsxs)("div", {
-              className: A.headerInner,
+              className: E.headerInner,
               children: [(0, r.jsx)(d.Z, {
                 user: n,
                 displayProfile: U,
                 guildId: G,
-                channelId: N,
-                themeType: _.lY.MODAL
+                channelId: A,
+                themeType: Z.lY.MODAL
               }), (0, r.jsx)(y.Z, {
                 location: "BotUserProfileModal",
                 user: n,
-                themeType: _.lY.MODAL,
+                themeType: Z.lY.MODAL,
                 hasEntered: R === o.Dvm.ENTERED,
                 onCloseProfile: D
               }), (0, r.jsxs)("div", {
-                className: A.headerButtons,
+                className: E.headerButtons,
                 children: [(0, r.jsx)(x.c, {
                   userId: n.id,
                   onClose: D,
-                  className: A.messageTextButton
+                  className: E.messageTextButton
                 }), (0, r.jsx)(x.v, {
                   userId: n.id,
                   onClose: D,
-                  tooltipContainerClassName: A.messageIconButton
+                  tooltipContainerClassName: E.messageIconButton
                 }), (0, r.jsx)(j.Z, {
                   user: n,
                   guildId: G
@@ -117,12 +116,11 @@ function E(e) {
               })]
             })]
           }), (0, r.jsxs)("div", {
-            className: A.body,
+            className: E.body,
             children: [(0, r.jsx)(b.Z, {
-              className: A.username,
+              className: E.username,
               user: n,
-              themeType: _.lY.MODAL,
-              nickname: s.ZP.getName(G, N, n),
+              nickname: s.ZP.getName(G, A, n),
               pronouns: null == U ? void 0 : U.pronouns,
               nicknameVariant: "heading-xl/bold",
               nicknameIcons: (0, r.jsx)(p.Z, {
@@ -130,16 +128,16 @@ function E(e) {
               }),
               tags: (0, r.jsx)(u.Z, {
                 displayProfile: U,
-                themeType: _.lY.MODAL,
+                themeType: Z.lY.MODAL,
                 onClose: D
               })
-            }), (0, r.jsx)(O.Z, {
+            }), (0, r.jsx)(I.Z, {
               user: n,
               currentUser: t,
               displayProfile: U,
               guildId: G,
-              items: V,
-              initialSection: null != w ? w : _.oh.BOT_INFO,
+              items: Y,
+              initialSection: null != w ? w : Z.oh.BOT_INFO,
               initialSubsection: M,
               onClose: D
             })]

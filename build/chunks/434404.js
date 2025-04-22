@@ -66,7 +66,7 @@ function N(e, t) {
 
 function C(e, t) {
   if (null == e) return {};
-  var n, r, i = P(e, t);
+  var n, r, i = R(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -74,14 +74,14 @@ function C(e, t) {
   return i
 }
 
-function P(e, t) {
+function R(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let R = new s.Z("GuildSettingsActionCreators"),
+let P = new s.Z("GuildSettingsActionCreators"),
   w = {
     init(e, t, n, r) {
       a.Z.dispatch({
@@ -232,7 +232,7 @@ let R = new s.Z("GuildSettingsActionCreators"),
         discoverySplash: S,
         publicUpdatesChannelId: A,
         premiumProgressBarEnabled: C,
-        profile: P
+        profile: R
       } = t, w = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {}, D = N(T({
         name: n,
         description: r,
@@ -256,7 +256,7 @@ let R = new s.Z("GuildSettingsActionCreators"),
       }, null != C ? {
         premium_progress_bar_enabled: C
       } : null), {
-        profile: null != P ? (0, O.n1)(P) : P
+        profile: null != R ? (0, O.n1)(R) : R
       });
       return a.Z.dispatch({
         type: "GUILD_SETTINGS_SUBMIT"
@@ -277,7 +277,7 @@ let R = new s.Z("GuildSettingsActionCreators"),
         if (a.Z.dispatch({
             type: "GUILD_SETTINGS_SUBMIT_FAILURE",
             errors: e.body
-          }), R.error("Failed to save guild settings", {
+          }), P.error("Failed to save guild settings", {
             errors: e.body
           }), w.throwErr) throw e.body
       })

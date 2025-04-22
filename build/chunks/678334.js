@@ -35,8 +35,8 @@ function A(e) {
     onNext: A,
     legalTermsNodeRef: N,
     flashLegalTerms: C,
-    invoiceError: P,
-    planError: R,
+    invoiceError: R,
+    planError: P,
     onPurchaseError: w,
     baseAnalyticsData: D,
     flowStartTime: L,
@@ -98,7 +98,7 @@ function A(e) {
       t = null != q ? q : h.c;
     eN = null != e ? e[t] : null
   }
-  let eP = async () => {
+  let eR = async () => {
     await (0, y.H)({
       setPurchaseState: n,
       setHasAcceptedTerms: W,
@@ -129,19 +129,19 @@ function A(e) {
       giftInfoOptions: e_,
       invoicePreview: en
     })
-  }, eR = {
+  }, eP = {
     baseAnalyticsData: D,
     flowStartTime: L,
-    makePurchase: eP,
+    makePurchase: eR,
     onNext: A,
     onPurchaseError: w,
     paymentSource: eg,
     paymentSourceId: q,
     purchaseTokenAuthState: j,
     setPurchaseState: n
-  }, ew = i.useRef(eR);
+  }, ew = i.useRef(eP);
   i.useEffect(() => {
-    ew.current = eR
+    ew.current = eP
   }), i.useEffect(() => {
     let {
       makePurchase: e
@@ -153,8 +153,8 @@ function A(e) {
     align: c.Z.Align.CENTER,
     children: [(0, r.jsx)(p.Z, {
       legalTermsNodeRef: N,
-      invoiceError: P,
-      planError: R,
+      invoiceError: R,
+      planError: P,
       disablePurchase: V,
       flashLegalTerms: C,
       isSubmitting: eE,
@@ -163,7 +163,7 @@ function A(e) {
       planGroup: M,
       isPrepaid: eI,
       isTrial: F,
-      makePurchase: eP,
+      makePurchase: eR,
       needsPaymentSource: null == eg && !eS,
       onNext: A,
       inReverseTrial: er,

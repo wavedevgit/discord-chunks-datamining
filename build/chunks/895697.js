@@ -35,8 +35,8 @@ function N(e) {
     currentUser: n,
     displayProfile: N,
     guild: C,
-    isHovering: P,
-    onOpenProfile: R,
+    isHovering: R,
+    onOpenProfile: P,
     channelId: w,
     onClose: D
   } = e, L = c.ZP.getName(null == C ? void 0 : C.id, w, t), x = (0, i.e7)([u.Z], () => {
@@ -48,8 +48,7 @@ function N(e) {
     className: A.body,
     children: [(0, r.jsx)(m.Z, {
       user: t,
-      themeType: I.lY.POPOUT,
-      onOpenProfile: R,
+      onOpenProfile: P,
       nickname: L,
       pronouns: null == N ? void 0 : N.pronouns,
       tags: (0, r.jsx)(f.Z, {
@@ -62,13 +61,13 @@ function N(e) {
           userId: t.id
         }), !k && (0, r.jsx)(b.Z, {
           userId: t.id,
-          isHovering: P,
-          onOpenProfile: R
+          isHovering: R,
+          onOpenProfile: P
         })]
       })
     }), (0, r.jsx)(O.Z, {
       user: t,
-      onOpenProfile: e => null == R ? void 0 : R({
+      onOpenProfile: e => null == P ? void 0 : P({
         section: e
       })
     }), (0, r.jsxs)("div", {

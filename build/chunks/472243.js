@@ -68,7 +68,7 @@ function I(e) {
     maxCharacterCount: S,
     showRemainingCharsAfterCount: T,
     className: A
-  } = e, N = (0, o.e7)([f.default], () => _.ZP.canUseIncreasedMessageLength(f.default.getCurrentUser())), C = (0, u.Z)(), P = null != S ? S : C, R = null != (b = null != T ? T : S) ? b : C / 10, w = I.length, D = null != v.upsellLongMessages && (null != w ? w : 0) > h.J6R && N, L = null != v.upsellLongMessages && !N, x = (null == (n = (0, d.N)()) || null == (t = n.subscription_trial) ? void 0 : t.sku_id) === m.Si.TIER_2, M = P - w, k = M > R, j = M < 0 && x, U = 0 === M ? g.intl.string(g.t.tU6YQ0) : M > 0 ? g.intl.formatToPlainString(g.t.qH8uFR, {
+  } = e, N = (0, o.e7)([f.default], () => _.ZP.canUseIncreasedMessageLength(f.default.getCurrentUser())), C = (0, u.Z)(), R = null != S ? S : C, P = null != (b = null != T ? T : S) ? b : C / 10, w = I.length, D = null != v.upsellLongMessages && (null != w ? w : 0) > h.J6R && N, L = null != v.upsellLongMessages && !N, x = (null == (n = (0, d.N)()) || null == (t = n.subscription_trial) ? void 0 : t.sku_id) === m.Si.TIER_2, M = R - w, k = M > P, j = M < 0 && x, U = 0 === M ? g.intl.string(g.t.tU6YQ0) : M > 0 ? g.intl.formatToPlainString(g.t.qH8uFR, {
     count: M
   }) : g.intl.string(g.t.YSRIqa), {
     analyticsLocations: G
@@ -83,7 +83,7 @@ function I(e) {
         className: E.flairContainer,
         children: [D && B ? (0, r.jsx)(s.ua7, {
           text: g.intl.formatToPlainString(g.t.vcvHa2, {
-            maxLength: P
+            maxLength: R
           }),
           position: "top",
           children: e => (0, r.jsx)(s.SrA, y({

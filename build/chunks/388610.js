@@ -58,8 +58,8 @@ function A(e, t) {
 }
 let N = O.QZA.CLOSED,
   C = {},
-  P = {},
-  R = !1,
+  R = {},
+  P = !1,
   w = !1,
   D = null,
   L = ["name", "type", "topic_", "bitrate_", "userLimit_", "nsfw_", "flags_", "rateLimitPerUser_", "defaultThreadRateLimitPerUser", "defaultAutoArchiveDuration", "template", "defaultReactionEmoji", "rtcRegion", "videoQualityMode", "threadMetadata", "banner", "availableTags", "defaultSortOrder", "defaultForumLayout", "defaultTagSetting", "iconEmoji", "themeColor"];
@@ -93,20 +93,20 @@ function k(e) {
 }
 
 function j(e) {
-  r = e.section, i = e.subsection, null != o && r === O.CoT.INSTANT_INVITES && (R = !0, h.tn.get({
+  r = e.section, i = e.subsection, null != o && r === O.CoT.INSTANT_INVITES && (P = !0, h.tn.get({
     url: O.ANM.INSTANT_INVITES(o.id),
     oldFormErrors: !0,
     rejectWithError: !0
   }).then(e => {
-    R = !1, m.Z.dispatch({
+    P = !1, m.Z.dispatch({
       type: "CHANNEL_SETTINGS_LOADED_INVITES",
       invites: e.body
     })
-  }, () => R = !1))
+  }, () => P = !1))
 }
 
 function U() {
-  w = !1, N = O.QZA.CLOSED, r = null, o = a = null, s = null, P = {}
+  w = !1, N = O.QZA.CLOSED, r = null, o = a = null, s = null, R = {}
 }
 
 function G() {
@@ -184,17 +184,17 @@ function H(e) {
 }
 
 function Y(e) {
-  P = {}, e.invites.forEach(e => {
-    P[e.code] = H(e)
+  R = {}, e.invites.forEach(e => {
+    R[e.code] = H(e)
   })
 }
 
 function W(e) {
-  P = S({}, P), delete P[e.code]
+  R = S({}, R), delete R[e.code]
 }
 
 function K(e) {
-  P = A(S({}, P), {
+  R = A(S({}, R), {
     [e.invite.code]: H(e.invite)
   })
 }
@@ -251,8 +251,8 @@ class $ extends(c = p.ZP.Store) {
   }
   getInvites() {
     return {
-      invites: P,
-      loading: R
+      invites: R,
+      loading: P
     }
   }
   showNotice() {
@@ -274,7 +274,7 @@ class $ extends(c = p.ZP.Store) {
       channel: o,
       section: r,
       subsection: i,
-      invites: P,
+      invites: R,
       selectedOverwriteId: l,
       hasChanges: this.hasChanges(),
       analyticsLocation: D

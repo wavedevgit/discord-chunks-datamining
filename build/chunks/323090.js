@@ -27,31 +27,31 @@ function x(e) {
     currentUser: t,
     displayProfile: x,
     guildId: y,
-    subsection: O,
-    onClose: I
+    subsection: I,
+    onClose: O
   } = e, {
-    trackUserProfileAction: _
-  } = (0, d.KZ)(), Z = (0, o.e7)([c.Z], () => c.Z.getGuild(y)), P = (0, o.e7)([u.Z], () => {
+    trackUserProfileAction: Z
+  } = (0, d.KZ)(), _ = (0, o.e7)([c.Z], () => c.Z.getGuild(y)), P = (0, o.e7)([u.Z], () => {
     var e;
     return null == (e = u.Z.getUserProfile(n.id)) ? void 0 : e.application
-  }), A = (0, o.e7)([s.Z, a.Z], () => s.Z.getChannel(a.Z.getChannelId()));
+  }), E = (0, o.e7)([s.Z, a.Z], () => s.Z.getChannel(a.Z.getChannelId()));
   return (0, r.jsxs)(i.zJl, {
     fade: !0,
     className: v.scroller,
     children: [(null == x ? void 0 : x.bio) != null && (null == x ? void 0 : x.bio) !== "" && (0, r.jsx)(p.Z, {
       userBio: x.bio,
       setLineClamp: !1
-    }), (null == P ? void 0 : P.popularApplicationCommandIds) != null && null != A && (0, r.jsx)(f.Z, {
+    }), (null == P ? void 0 : P.popularApplicationCommandIds) != null && null != E && (0, r.jsx)(f.Z, {
       applicationId: P.id,
       commandIds: P.popularApplicationCommandIds,
-      channel: A,
+      channel: E,
       guildId: y,
-      onClick: I
-    }), null != Z && (0, r.jsx)(h.Z, {
+      onClick: O
+    }), null != _ && (0, r.jsx)(h.Z, {
       user: n,
       currentUser: t,
-      guild: Z,
-      scrollIntoView: O === g.Tb.ROLES
+      guild: _,
+      scrollIntoView: I === g.Tb.ROLES
     }), (0, r.jsx)(b.Z, {
       heading: j.intl.string(j.t["A//N4u"]),
       children: (0, r.jsx)(m.Z, {
@@ -61,12 +61,12 @@ function x(e) {
       })
     }), (0, r.jsx)(b.Z, {
       heading: j.intl.string(j.t["mQKv+v"]),
-      scrollIntoView: O === g.Tb.NOTE,
+      scrollIntoView: I === g.Tb.NOTE,
       children: (0, r.jsx)(l.Z, {
         userId: n.id,
         className: v.note,
-        autoFocus: O === g.Tb.NOTE,
-        onUpdate: () => _({
+        autoFocus: I === g.Tb.NOTE,
+        onUpdate: () => Z({
           action: "SET_NOTE"
         })
       })

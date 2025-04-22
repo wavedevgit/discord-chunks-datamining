@@ -82,14 +82,14 @@ let T = "deviceProperties",
   A = "referralProperties",
   N = {},
   C = {},
-  P = window.DiscordNative;
-if (null != P) {
-  let e, t = P.remoteApp.getVersion(),
-    n = P.process.platform,
-    i = P.os.release,
-    o = P.os.arch,
-    s = P.os.appArch,
-    l = P.remoteApp.getReleaseChannel(),
+  R = window.DiscordNative;
+if (null != R) {
+  let e, t = R.remoteApp.getVersion(),
+    n = R.process.platform,
+    i = R.os.release,
+    o = R.os.arch,
+    s = R.os.appArch,
+    l = R.remoteApp.getReleaseChannel(),
     c = (0, _.qf)();
   switch (n) {
     case "win32":
@@ -115,11 +115,11 @@ if (null != P) {
       system_locale: c,
       has_client_mods: (0, f.e)()
     }, (null == (a = d().name) ? void 0 : a.toLocaleLowerCase()) === "electron" && (r.browser_user_agent = d().ua || "", r.browser_version = d().version || ""), "linux" === n) {
-    let e = P.crashReporter.getMetadata();
+    let e = R.crashReporter.getMetadata();
     r.window_manager = e.wm, r.distro = e.distro
   } else "darwin" === n ? r.os_sdk_version = null == i ? void 0 : i.split(".")[0] : "win32" === n && (r.os_sdk_version = null == i ? void 0 : i.split(".")[2])
 }
-let R = "utm_source utm_medium utm_campaign utm_content utm_term".split(" ");
+let P = "utm_source utm_medium utm_campaign utm_content utm_term".split(" ");
 
 function w(e, t) {
   if (null == e) return "";
@@ -130,7 +130,7 @@ function w(e, t) {
 
 function D(e) {
   let t = {};
-  return R.forEach(n => {
+  return P.forEach(n => {
     let r = w(e, n);
     r.length > 0 && (t[n] = r)
   }), t
@@ -252,9 +252,9 @@ function Y() {
   let n = {},
     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
   r && (null == n.release_channel || "" === n.release_channel) && (n.release_channel = r.split("-")[0]);
-  let i = parseInt("392568", 10);
+  let i = parseInt("392598", 10);
   isNaN(i) || (n.client_build_number = i);
-  let a = null == P || null == (e = (t = P.remoteApp).getBuildNumber) ? void 0 : e.call(t);
+  let a = null == R || null == (e = (t = R.remoteApp).getBuildNumber) ? void 0 : e.call(t);
   return isNaN(a) || (n.native_build_number = a), n.client_event_source = H(), n.has_client_mods = (0, f.e)(), n
 }
 

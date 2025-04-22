@@ -5,7 +5,7 @@ n.d(t, {
   Fx: () => x,
   IM: () => D,
   J2: () => G,
-  r$: () => R
+  r$: () => P
 }), n(539854), n(388685), n(415506);
 var r = n(512722),
   i = n.n(r),
@@ -84,19 +84,19 @@ function T(e, t) {
 let A = new _.Z("ReadyPayloadUtils"),
   N = {},
   C = null,
-  P = {};
+  R = {};
 
-function R(e, t) {
+function P(e, t) {
   var n, {
       guilds: r,
       merged_members: i,
       merged_presences: a
     } = e,
     o = S(e, ["guilds", "merged_members", "merged_presences"]);
-  let s = M(P, null == a ? void 0 : a.friends),
+  let s = M(R, null == a ? void 0 : a.friends),
     l = null != (n = null == r ? void 0 : r.map((e, t) => {
-      let n = M(P, null == a ? void 0 : a.guilds[t]),
-        r = M(P, null == i ? void 0 : i[t]);
+      let n = M(R, null == a ? void 0 : a.guilds[t]),
+        r = M(R, null == i ? void 0 : i[t]);
       return I(v({}, e), {
         unavailable: void 0 === e.voice_states,
         presences: n,
@@ -111,7 +111,7 @@ function R(e, t) {
       voice_states: e.voice_states,
       unavailable: !1
     }));
-  return null != c && l.push(c), P = {}, I(v({}, o), {
+  return null != c && l.push(c), R = {}, I(v({}, o), {
     presences: s,
     guilds: l
   })
@@ -140,12 +140,12 @@ function D(e, t, n) {
     } = e,
     d = S(e, ["users", "relationships", "private_channels", "merged_members", "guilds"]);
   j(n);
-  let f = M(P = o().keyBy(a, e => e.id), s);
+  let f = M(R = o().keyBy(a, e => e.id), s);
   null == l || l.forEach(e => {
     let t = e.recipient_ids;
-    null != t && (e.recipients = t.map(e => (i()(null != P[e], "Missing user in compressed ready payload"), P[e]))), delete e.recipient_ids
+    null != t && (e.recipients = t.map(e => (i()(null != R[e], "Missing user in compressed ready payload"), R[e]))), delete e.recipient_ids
   });
-  let _ = null != (r = null == u ? void 0 : u.map((e, t) => !0 === e.unavailable ? e : (e.members = M(P, null == c ? void 0 : c[t]), U(e)))) ? r : [],
+  let _ = null != (r = null == u ? void 0 : u.map((e, t) => !0 === e.unavailable ? e : (e.members = M(R, null == c ? void 0 : c[t]), U(e)))) ? r : [],
     p = L(t, u, e => U(e));
   return null != p && _.push(p), I(v({}, d), {
     users: a,

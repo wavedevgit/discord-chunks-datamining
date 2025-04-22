@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => P
+  Z: () => R
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -65,7 +65,7 @@ function N(e, t) {
 }
 let C = h.ZP.getEnableHardwareAcceleration() ? l.Xo$ : l.qEK;
 
-function P(e) {
+function R(e) {
   let {
     user: t,
     displayProfile: n,
@@ -73,8 +73,8 @@ function P(e) {
     channelId: h,
     themeType: S,
     animateOnHover: A,
-    onOpenProfile: P,
-    className: R,
+    onOpenProfile: R,
+    className: P,
     previewStatus: w
   } = e, {
     theme: D
@@ -90,11 +90,7 @@ function P(e) {
   } = (0, s.cj)([_.Z], () => ({
     status: (0, c.Z)(U) ? v.Skl.STREAMING : _.Z.getStatus(t.id),
     isMobileOnline: _.Z.isMobileOnline(t.id)
-  })), V = void 0 !== w ? w : G, F = S === y.lY.MODAL ? l.EFr.SIZE_120 : l.EFr.SIZE_80, Z = o()(I.avatar, {
-    [I.biteSize]: S === y.lY.POPOUT,
-    [I.fullSize]: S === y.lY.MODAL,
-    [I.panel]: S === y.lY.SIDEBAR
-  }, R), {
+  })), V = void 0 !== w ? w : G, F = S === y.lY.MODAL ? l.EFr.SIZE_120 : l.EFr.SIZE_80, Z = o()(I.avatar, P), {
     avatarDecorationSrc: H,
     avatarSrc: Y,
     eventHandlers: W
@@ -108,14 +104,14 @@ function P(e) {
     avatarDecoration: H,
     size: F,
     "aria-label": t.username,
-    imageClassName: null != P ? I.overlay : void 0,
+    imageClassName: null != R ? I.overlay : void 0,
     status: k ? v.Skl.UNKNOWN : V,
     statusBackdropColor: M && !k ? (0, l.QFD)(D) : void 0,
     isMobile: B,
     statusTooltip: !0,
     statusTooltipDelay: y.vB
   });
-  return null == P ? (0, r.jsx)("div", N(T({}, W), {
+  return null == R ? (0, r.jsx)("div", N(T({}, W), {
     className: Z,
     children: K
   })) : (0, r.jsx)(l.P3F, N(T({}, W), {
@@ -127,7 +123,7 @@ function P(e) {
       x({
         action: "PRESS_VIEW_PROFILE",
         analyticsLocations: L
-      }), null == P || P()
+      }), null == R || R()
     },
     children: K
   }))

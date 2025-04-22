@@ -30,8 +30,8 @@ var r = n(200651),
   A = n(513202),
   N = n(162685),
   C = n(445446),
-  P = n(979200),
-  R = n(870822),
+  R = n(979200),
+  P = n(870822),
   w = n(600164),
   D = n(299206),
   L = n(726721),
@@ -162,7 +162,7 @@ let e_ = e => {
       i = er.intl.formatToPlainString(er.t.QWGvxM, {
         applicationName: e.name
       });
-    return (0, R.Z)(e) && (n = er.intl.formatToPlainString(er.t["paC+UV"], {
+    return (0, P.Z)(e) && (n = er.intl.formatToPlainString(er.t["paC+UV"], {
       applicationName: e.name
     }), i = (0, r.jsxs)(r.Fragment, {
       children: [er.intl.formatToPlainString(er.t.inM1Ym, {
@@ -267,7 +267,7 @@ let e_ = e => {
               children: e
             })]
           }, t)), null == u ? void 0 : u.map((t, n) => {
-            let i = (0, P.PM)(t);
+            let i = (0, R.PM)(t);
             return null != i ? (0, r.jsxs)("li", {
               className: ei.permission,
               children: [(0, r.jsx)(e_, {
@@ -378,7 +378,7 @@ let e_ = e => {
     }, [y]), T = N.w.useExperiment({
       location: "oauth2_authorize"
     }), A = a.bot, C = (0, _.e7)([G.Z], () => G.Z.getDMFromUserId(null == A ? void 0 : A.id)), {
-      appDMChannelMuteConfig: R,
+      appDMChannelMuteConfig: P,
       dmChannelMuted: D
     } = (0, _.cj)([F.ZP], () => null == C ? {
       appDMChannelMuteConfig: null,
@@ -406,7 +406,7 @@ let e_ = e => {
               children: e
             })]
           }, t)), null == d ? void 0 : d.map((t, n) => {
-            let i = (0, P.PM)(t);
+            let i = (0, R.PM)(t);
             return null != i ? (0, r.jsxs)("li", {
               className: ei.permission,
               children: [(0, r.jsx)(e_, {
@@ -567,8 +567,8 @@ let e_ = e => {
         hideBorder: !0,
         onChange: ec,
         className: ei.dmSettingsSwitch,
-        note: (null == R ? void 0 : R.end_time) != null ? er.intl.format(er.t.j7h4AA, {
-          endTime: new Date(R.end_time).toLocaleString(er.intl.currentLocale, {
+        note: (null == P ? void 0 : P.end_time) != null ? er.intl.format(er.t.j7h4AA, {
+          endTime: new Date(P.end_time).toLocaleString(er.intl.currentLocale, {
             month: "numeric",
             day: "numeric",
             hour: "numeric",

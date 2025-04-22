@@ -30,8 +30,8 @@ var r = n(200651),
   A = n(297781),
   N = n(591853),
   C = n(410441),
-  P = n(797342),
-  R = n(981631),
+  R = n(797342),
+  P = n(981631),
   w = n(388032);
 
 function D(e, t, n) {
@@ -83,7 +83,7 @@ let x = {
       details: G,
       appName: B,
       activity: V
-    } = (0, P.n)(n), {
+    } = (0, R.n)(n), {
       primaryColor: F,
       secondaryColor: Z
     } = (0, S.Z)(null == j ? void 0 : j.src), H = (0, o.e7)([_.default], () => _.default.locale), {
@@ -94,7 +94,7 @@ let x = {
       participant1: z,
       participant2: q,
       numOtherParticipants: Q
-    } = (0, E.Z)(n, 3), X = n.extra.platform, J = null != X ? x[X] : null, $ = X === a.z.XBOX ? R.ABu.XBOX : X === a.z.PLAYSTATION ? R.ABu.PLAYSTATION : void 0, ee = (0, I.Z)($), et = i.useCallback(e => {
+    } = (0, E.Z)(n, 3), X = n.extra.platform, J = null != X ? x[X] : null, $ = X === a.z.XBOX ? P.ABu.XBOX : X === a.z.PLAYSTATION ? P.ABu.PLAYSTATION : void 0, ee = (0, I.Z)($), et = i.useCallback(e => {
       if ((null == j ? void 0 : j.src) == null || null == t || null == U) return;
       let r = Q > 0 ? (0, O.VY)({
         entry: n,
@@ -145,7 +145,7 @@ let x = {
         onUserPopoutClosed: M,
         trackRankingItemInteraction: k
       }),
-      ei = [(0, l.Z)(V, R.xjy.JOIN) || (0, c.Z)(V) ? (0, r.jsx)(d.Z, {
+      ei = [(0, l.Z)(V, P.xjy.JOIN) || (0, c.Z)(V) ? (0, r.jsx)(d.Z, {
         activity: V,
         user: U,
         ButtonComponent: e => (0, r.jsx)(N.Ll, L({

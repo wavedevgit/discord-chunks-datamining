@@ -26,8 +26,8 @@ var f = 0,
   A = 256,
   N = 16,
   C = 17,
-  P = 18,
-  R = [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 0],
+  R = 18,
+  P = [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 0],
   w = [0, 0, 0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12, 13, 13],
   D = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 7],
   L = [16, 17, 18, 0, 8, 7, 9, 6, 10, 5, 11, 4, 12, 3, 13, 2, 14, 1, 15],
@@ -112,7 +112,7 @@ function Q(e, t, n) {
 function X() {
   var e, t, n, o, s, l = Array(I + 1);
   for (o = 0, n = 0; o < g - 1; o++)
-    for (e = 0, G[o] = n; e < 1 << R[o]; e++) U[n++] = o;
+    for (e = 0, G[o] = n; e < 1 << P[o]; e++) U[n++] = o;
   for (U[n - 1] = o, s = 0, o = 0; o < 16; o++)
     for (e = 0, B[o] = s; e < 1 << w[o]; e++) j[s++] = o;
   for (s >>= 7; o < y; o++)
@@ -123,7 +123,7 @@ function X() {
   for (; e <= 279;) M[2 * e + 1] = 7, e++, l[7]++;
   for (; e <= 287;) M[2 * e + 1] = 8, e++, l[8]++;
   for (Q(M, b + 1, l), e = 0; e < y; e++) k[2 * e + 1] = 5, k[2 * e] = K(e, 5);
-  r = new V(M, R, E + 1, b, I), i = new V(k, w, 0, y, I), a = new V([], D, 0, v, T)
+  r = new V(M, P, E + 1, b, I), i = new V(k, w, 0, y, I), a = new V([], D, 0, v, T)
 }
 
 function J(e) {
@@ -156,7 +156,7 @@ function en(e, t, n) {
 function er(e, t, n) {
   var r, i, a, o, s = 0;
   if (0 !== e.last_lit)
-    do r = e.pending_buf[e.d_buf + 2 * s] << 8 | e.pending_buf[e.d_buf + 2 * s + 1], i = e.pending_buf[e.l_buf + s], s++, 0 === r ? W(e, i, t) : (W(e, (a = U[i]) + E + 1, t), 0 !== (o = R[a]) && Y(e, i -= G[a], o), W(e, a = Z(--r), n), 0 !== (o = w[a]) && Y(e, r -= B[a], o)); while (s < e.last_lit);
+    do r = e.pending_buf[e.d_buf + 2 * s] << 8 | e.pending_buf[e.d_buf + 2 * s + 1], i = e.pending_buf[e.l_buf + s], s++, 0 === r ? W(e, i, t) : (W(e, (a = U[i]) + E + 1, t), 0 !== (o = P[a]) && Y(e, i -= G[a], o), W(e, a = Z(--r), n), 0 !== (o = w[a]) && Y(e, r -= B[a], o)); while (s < e.last_lit);
   W(e, A, t)
 }
 
@@ -180,7 +180,7 @@ function ea(e, t, n) {
     s = 0,
     l = 7,
     c = 4;
-  for (0 === o && (l = 138, c = 3), t[(n + 1) * 2 + 1] = 65535, r = 0; r <= n; r++) i = o, o = t[(r + 1) * 2 + 1], ++s < l && i === o || (s < c ? e.bl_tree[2 * i] += s : 0 !== i ? (i !== a && e.bl_tree[2 * i]++, e.bl_tree[2 * N]++) : s <= 10 ? e.bl_tree[2 * C]++ : e.bl_tree[2 * P]++, s = 0, a = i, 0 === o ? (l = 138, c = 3) : i === o ? (l = 6, c = 3) : (l = 7, c = 4))
+  for (0 === o && (l = 138, c = 3), t[(n + 1) * 2 + 1] = 65535, r = 0; r <= n; r++) i = o, o = t[(r + 1) * 2 + 1], ++s < l && i === o || (s < c ? e.bl_tree[2 * i] += s : 0 !== i ? (i !== a && e.bl_tree[2 * i]++, e.bl_tree[2 * N]++) : s <= 10 ? e.bl_tree[2 * C]++ : e.bl_tree[2 * R]++, s = 0, a = i, 0 === o ? (l = 138, c = 3) : i === o ? (l = 6, c = 3) : (l = 7, c = 4))
 }
 
 function eo(e, t, n) {
@@ -193,7 +193,7 @@ function eo(e, t, n) {
     if (i = o, o = t[(r + 1) * 2 + 1], !(++s < l) || i !== o) {
       if (s < c)
         do W(e, i, e.bl_tree); while (0 != --s);
-      else 0 !== i ? (i !== a && (W(e, i, e.bl_tree), s--), W(e, N, e.bl_tree), Y(e, s - 3, 2)) : s <= 10 ? (W(e, C, e.bl_tree), Y(e, s - 3, 3)) : (W(e, P, e.bl_tree), Y(e, s - 11, 7));
+      else 0 !== i ? (i !== a && (W(e, i, e.bl_tree), s--), W(e, N, e.bl_tree), Y(e, s - 3, 2)) : s <= 10 ? (W(e, C, e.bl_tree), Y(e, s - 3, 3)) : (W(e, R, e.bl_tree), Y(e, s - 11, 7));
       s = 0, a = i, 0 === o ? (l = 138, c = 3) : i === o ? (l = 6, c = 3) : (l = 7, c = 4)
     }
 }

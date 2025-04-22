@@ -64,11 +64,11 @@ function C(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let P = (e, t) => (0, r.jsx)(y.G0, {
+let R = (e, t) => (0, r.jsx)(y.G0, {
   columns: e
 }, t);
 
-function R(e) {
+function P(e) {
   var t;
   let n = l().sample(l().values(e));
   return {
@@ -121,7 +121,7 @@ class w extends i.PureComponent {
   }
   constructor(...e) {
     super(...e), T(this, "_masonryRef", i.createRef()), T(this, "state", {
-      favoritesTile: R(this.props.favorites),
+      favoritesTile: P(this.props.favorites),
       selectedIndex: {
         column: 0,
         row: 0
@@ -183,7 +183,7 @@ class w extends i.PureComponent {
       return 0 === a.length ? (0, r.jsx)(y.u$, {
         columns: e,
         width: t,
-        renderColumn: P
+        renderColumn: R
       }) : (0, r.jsx)(_.GMG, {
         ref: this._masonryRef,
         fade: !0,

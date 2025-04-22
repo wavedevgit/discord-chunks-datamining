@@ -65,9 +65,9 @@ function C(e, t) {
   }), e
 }
 
-function P(e, t) {
+function R(e, t) {
   if (null == e) return {};
-  var n, r, i = R(e, t);
+  var n, r, i = P(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -75,7 +75,7 @@ function P(e, t) {
   return i
 }
 
-function R(e, t) {
+function P(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -89,7 +89,7 @@ let w = e => {
     guild: a,
     buttonText: T,
     targetBoostedGuildTier: N,
-    onClose: R = () => {},
+    onClose: P = () => {},
     closeLayer: w = () => {},
     pauseAnimation: D = !1,
     applicationId: L,
@@ -97,7 +97,7 @@ let w = e => {
     withHighlight: M = !1,
     icon: k,
     intent: j
-  } = e, U = P(e, ["analyticsLocation", "analyticsSourceLocation", "guild", "buttonText", "targetBoostedGuildTier", "onClose", "closeLayer", "pauseAnimation", "applicationId", "handleSubscribeModalClose", "withHighlight", "icon", "intent"]), {
+  } = e, U = R(e, ["analyticsLocation", "analyticsSourceLocation", "guild", "buttonText", "targetBoostedGuildTier", "onClose", "closeLayer", "pauseAnimation", "applicationId", "handleSubscribeModalClose", "withHighlight", "icon", "intent"]), {
     analyticsLocations: G
   } = (0, d.ZP)(), B = (0, u.bp)() === v.IlC.POPOUT, [V, F] = i.useState(!1), Z = (0, s.e7)([m.default], () => m.default.getCurrentUser()), {
     fractionalState: H
@@ -115,7 +115,7 @@ let w = e => {
         analyticsSourceLocation: n,
         guild: a,
         numberOfBoostsToAdd: K,
-        onClose: R,
+        onClose: P,
         closeLayer: w,
         inPopout: B,
         applicationId: L,

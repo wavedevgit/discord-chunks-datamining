@@ -65,8 +65,8 @@ let v = "scientist:triggered",
   A = new u.Z("ExperimentStore"),
   N = !1,
   C = {},
-  P = new Map,
-  R = {},
+  R = new Map,
+  P = {},
   w = {
     rawUserExperiments: [],
     rawGuildExperiments: []
@@ -121,7 +121,7 @@ function z(e, t) {
 }
 
 function q(e, t) {
-  return P.get(e) === t
+  return R.get(e) === t
 }
 
 function Q(e) {
@@ -222,7 +222,7 @@ function Q(e) {
       fingerprint: o
     })
   }
-  c ? P.set(f, p) : (C[H(t, n, r, u)] = {
+  c ? R.set(f, p) : (C[H(t, n, r, u)] = {
     time: Date.now(),
     hash: Y(n)
   }, e_(C))
@@ -560,7 +560,7 @@ function ep(e) {
     buckets: a,
     commonTriggerPoint: o
   } = e;
-  R[t] = {
+  P[t] = {
     type: n,
     title: r,
     description: i,
@@ -576,7 +576,7 @@ function eh(e) {
     experimentBucket: r,
     experimentType: i,
     skipCleanup: a
-  } = e, o = null != i ? i : null == (t = R[n]) ? void 0 : t.type;
+  } = e, o = null != i ? i : null == (t = P[n]) ? void 0 : t.type;
   if (null == o) return !1;
   if (null == r ? (M = E({}, M), delete M[n], k = E({}, k), delete k[n]) : "user" === o ? M = y(E({}, M), {
       [n]: {
@@ -595,7 +595,7 @@ function eh(e) {
       }
     }), !a)
     for (let e of [M, k])
-      for (let t in e) null == R[t] && delete M[t];
+      for (let t in e) null == P[t] && delete M[t];
   ef()
 }
 
@@ -626,7 +626,7 @@ class eg extends f.Z {
     return N
   }
   hasRegisteredExperiment(e) {
-    return null != R[e]
+    return null != P[e]
   }
   getUserExperimentDescriptor(e) {
     if (j) {
@@ -678,7 +678,7 @@ class eg extends f.Z {
     })
   }
   getRegisteredExperiments() {
-    return R
+    return P
   }
   getAllExperimentOverrideDescriptors() {
     return j ? E({}, M, k) : {}
@@ -690,7 +690,7 @@ class eg extends f.Z {
   getAllExperimentAssignments() {
     let e = {},
       t = {};
-    for (let n in Object.keys(R).forEach(e => {
+    for (let n in Object.keys(P).forEach(e => {
         t[G("".concat(e))] = e
       }), D) {
       let r = t[n];

@@ -29,8 +29,8 @@ var r = n(200651),
   A = n(317381),
   N = n(531826),
   C = n(175894),
-  P = n(963614),
-  R = n(917107),
+  R = n(963614),
+  P = n(917107),
   w = n(208156),
   D = n(748492),
   L = n(701488),
@@ -108,7 +108,7 @@ function H(e) {
     })) : null,
     selectedParticipant: null != p ? E.Z.getSelectedParticipant(p.id) : null,
     participantsOpen: null != p && E.Z.getParticipantsOpen(p.id)
-  })), $ = W || null != q, ee = (0, R.Z)(null == p ? void 0 : p.id), et = ee && (null == X ? void 0 : X.type) !== k.fO.ACTIVITY, en = !ee && Z === x.Ez.PIP, er = $ && (et || en) && null == K, ei = F ? Z === x.Ez.PIP && !z : (!$ || er) && !z, ea = ei && null != O.Z.pipVideoWindow && null != O.Z.pipActivityWindow;
+  })), $ = W || null != q, ee = (0, P.Z)(null == p ? void 0 : p.id), et = ee && (null == X ? void 0 : X.type) !== k.fO.ACTIVITY, en = !ee && Z === x.Ez.PIP, er = $ && (et || en) && null == K, ei = F ? Z === x.Ez.PIP && !z : (!$ || er) && !z, ea = ei && null != O.Z.pipVideoWindow && null != O.Z.pipActivityWindow;
 
   function eo() {
     if (null != p) {
@@ -190,7 +190,7 @@ function H(e) {
           applicationId: V.applicationId
         })
       }
-    }, [null == V ? void 0 : V.applicationId, ei]), null == V || null == Y || (0, R.Z)(null == p ? void 0 : p.id) && null == Q || null == H) return null;
+    }, [null == V ? void 0 : V.applicationId, ei]), null == V || null == Y || (0, P.Z)(null == p ? void 0 : p.id) && null == Q || null == H) return null;
   let ec = Array.from(V.userIds).map(e => S.default.getUser(e)).filter(e => null != e),
     eu = {
       instance_id: null != (a = null != (n = V.compositeInstanceId) ? n : V.launchId) ? a : "",
@@ -236,7 +236,7 @@ function H(e) {
             [j.pipModeTall]: ei && C
           })
         }) : (0, r.jsx)(w.J, {
-          allowPopups: (0, P.h)(H),
+          allowPopups: (0, R.h)(H),
           referrerPolicy: L.um.has(V.applicationId) ? "no-referrer" : "origin",
           url: V.url,
           queryParams: eu,

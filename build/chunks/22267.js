@@ -32,7 +32,7 @@ let v = e => {
     showStatus: I,
     showWumpus: S,
     isPurchased: T = !1
-  } = e, A = (0, o.e7)([_.Z], () => (0, s.wj)(_.Z.theme)), N = null != n ? (0, m.EU)(n) : i, C = (0, o.e7)([p.Z], () => p.Z.getStatus(t.id)), P = A ? "#706F74" : "#aaaab2";
+  } = e, A = (0, o.e7)([_.Z], () => (0, s.wj)(_.Z.theme)), N = null != n ? (0, m.EU)(n) : i, C = (0, o.e7)([p.Z], () => p.Z.getStatus(t.id)), R = A ? "#706F74" : "#aaaab2";
   return (0, r.jsxs)("div", {
     className: a()(v, E.nameplatePreview, {
       [E.nameplatePurchased]: T && !O
@@ -67,7 +67,7 @@ let v = e => {
             size: l.EFr.SIZE_32,
             "aria-label": g.intl.string(g.t.cqpybG),
             status: l.Skl.ONLINE,
-            statusColor: P
+            statusColor: R
           }),
           name: (0, r.jsx)("div", {
             className: a()(E.placeholderUsername, E.placeholderUsernameColor)

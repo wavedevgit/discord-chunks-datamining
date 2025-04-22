@@ -29,8 +29,8 @@ var r = n(200651),
   A = n(981631),
   N = n(680278),
   C = n(388032),
-  P = n(840969),
-  R = n(501867);
+  R = n(840969),
+  P = n(501867);
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -110,18 +110,18 @@ function M(e) {
     e && E(!0)
   }, []), B = (0, d.O)(G), V = (0, v.Z)(n, b);
   return (0, r.jsxs)("div", {
-    className: o()(R.topPerksCard, R.animatedTopPerksCard, P.powerupCard, {
-      [R.animate]: g
+    className: o()(P.topPerksCard, P.animatedTopPerksCard, R.powerupCard, {
+      [P.animate]: g
     }),
     onMouseEnter: () => y(!0),
     onMouseLeave: () => y(!1),
     children: [(0, r.jsx)("div", {
-      className: R.intObserver,
+      className: P.intObserver,
       ref: B
     }), (0, r.jsx)("div", {
-      className: R.topPerksCardImageWrapper,
+      className: P.topPerksCardImageWrapper,
       children: (0, r.jsx)(s.animated.img, {
-        className: o()(R.topPerksCardImage, P.image),
+        className: o()(P.topPerksCardImage, R.image),
         src: V,
         alt: "",
         style: k
@@ -130,7 +130,7 @@ function M(e) {
       style: x(D({}, j), {
         transform: j.y.to(e => "translateY(".concat(e, "px)"))
       }),
-      className: o()(R.contentContainer, P.contentContainer),
+      className: o()(P.contentContainer, R.contentContainer),
       children: [(0, r.jsx)(h.xm, {
         heading: n.title,
         description: n.description,
@@ -140,26 +140,26 @@ function M(e) {
         isEnabled: c
       }), (0, r.jsxs)(s.animated.div, {
         style: U,
-        className: R.buttonsContainer,
+        className: P.buttonsContainer,
         children: [(0, r.jsx)(u.zxk, {
           grow: !0,
           onClick: w,
           color: u.zxk.Colors.BRAND,
-          className: R.button,
+          className: P.button,
           children: C.intl.string(C.t["oPAx7+"])
         }), _ && (0, r.jsx)(u.zxk, {
           grow: !0,
           onClick: L,
           color: u.zxk.Colors.PRIMARY,
-          className: R.button,
+          className: P.button,
           children: C.intl.string(C.t.GoCQxc)
         })]
       })]
     }), (0, r.jsx)(u.IGR, {
-      className: R.topPerksCardNew,
+      className: P.topPerksCardNew,
       text: C.intl.string(C.t.y2b7CA)
     }), g && (0, r.jsx)("div", {
-      className: R.shineLine
+      className: P.shineLine
     })]
   })
 }
@@ -176,9 +176,9 @@ let k = i.forwardRef((e, t) => {
     f = null != (n = null == d ? void 0 : d.catalog.get(T.Us.PERK)) ? n : [];
   return s && 0 !== f.length ? (0, r.jsxs)("div", {
     ref: t,
-    className: P.container,
+    className: R.container,
     children: [(0, r.jsxs)("div", {
-      className: P.headerContainer,
+      className: R.headerContainer,
       children: [(0, r.jsx)(l.X6, {
         variant: "heading-xxl/extrabold",
         children: C.intl.string(N.default.wjI18f)
@@ -192,7 +192,7 @@ let k = i.forwardRef((e, t) => {
         helpDeskArticle: g.Z.getArticleURL(A.BhN.GUILD_BOOSTING_FAQ)
       })
     }), (0, r.jsx)("div", {
-      className: P.powerupsContainer,
+      className: R.powerupsContainer,
       children: f.map(e => (0, r.jsx)(M, {
         guildId: a.id,
         powerup: e,

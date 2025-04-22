@@ -116,12 +116,12 @@ function C(e) {
   return null != (n = null == r ? void 0 : r.rawDescription) ? n : ""
 }
 
-function P(e) {
+function R(e) {
   let t = N(e, s.G.DECISION_OUTCOME);
   if (null != t) return t
 }
 
-function R(e) {
+function P(e) {
   let t = N(e, s.G.QUARANTINE_USER);
   if (null != t) return t
 }
@@ -204,8 +204,8 @@ function j(e, t) {
     l = D(e),
     c = w(e),
     u = L(e),
-    d = R(e),
-    f = P(e),
+    d = P(e),
+    f = R(e),
     _ = N(e, s.G.INTERACTION_CALLBACK_TYPE),
     h = N(e, s.G.APPLICATION_NAME);
   if (null != d) {

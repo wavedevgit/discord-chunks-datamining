@@ -1,6 +1,6 @@
 /** Chunk was on 54636 **/
 t.d(n, {
-  Z: () => Z
+  Z: () => _
 }), t(388685), t(953529);
 var r = t(200651),
   o = t(192379),
@@ -21,10 +21,10 @@ var r = t(200651),
   v = t(228168),
   x = t(981631),
   y = t(388032),
-  O = t(829441),
-  I = t(161068);
+  I = t(829441),
+  O = t(161068);
 
-function _(e) {
+function Z(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       r = Object.keys(t);
@@ -43,15 +43,15 @@ function _(e) {
   return e
 }
 
-function Z(e) {
+function _(e) {
   let {
     user: n,
     guildId: t,
-    channelId: Z,
+    channelId: _,
     messageId: P,
-    roleId: A,
-    transitionState: E,
-    openedAt: N,
+    roleId: E,
+    transitionState: N,
+    openedAt: A,
     onHide: T,
     showGuildProfile: C = !0,
     sourceAnalyticsLocations: S = []
@@ -61,9 +61,9 @@ function Z(e) {
     layout: "MODAL",
     userId: n.id,
     guildId: w,
-    channelId: Z,
+    channelId: _,
     messageId: P,
-    roleId: A,
+    roleId: E,
     showGuildProfile: C
   }), D = [{
     icon: l.owK,
@@ -76,13 +76,13 @@ function Z(e) {
     value: R,
     children: (0, r.jsx)(f.Mt, {
       value: L,
-      openedAt: N,
+      openedAt: A,
       fetchStartedAt: null == B ? void 0 : B.fetchStartedAt,
       fetchEndedAt: null == B ? void 0 : B.fetchEndedAt,
       isLoaded: null == B ? void 0 : B.isLoaded,
       children: (0, r.jsx)(l.Y0X, {
-        transitionState: E,
-        className: O.root,
+        transitionState: N,
+        className: I.root,
         hideShadow: !0,
         "aria-label": y.intl.string(y.t["3N/J2t"]),
         children: (0, r.jsx)(h.Z, {
@@ -91,19 +91,19 @@ function Z(e) {
           themeType: v.lY.MODAL,
           ref: G,
           children: (0, r.jsxs)("div", {
-            className: O.container,
+            className: I.container,
             children: [(0, r.jsx)("img", {
               alt: "",
-              src: I,
-              className: O.preview,
+              src: O,
+              className: I.preview,
               "aria-hidden": !0
             }), (0, r.jsxs)("div", {
-              className: O.body,
+              className: I.body,
               children: [(0, r.jsx)(b.Z, {
                 user: n,
                 guildId: w
               }), (0, r.jsxs)("div", {
-                className: O.headerContainer,
+                className: I.headerContainer,
                 children: [(0, r.jsx)(l.X6q, {
                   variant: "heading-xl/bold",
                   color: "header-primary",
@@ -112,11 +112,11 @@ function Z(e) {
                   variant: "text-md/medium",
                   color: "header-primary",
                   children: y.intl.format(M ? y.t["8F+WNz"] : y.t["/cZp5u"], {
-                    username: u.ZP.getName(w, Z, n)
+                    username: u.ZP.getName(w, _, n)
                   })
                 })]
               }), (0, r.jsx)("div", {
-                className: O.safetyTable,
+                className: I.safetyTable,
                 children: D.map((e, n) => {
                   let {
                     icon: t,
@@ -134,7 +134,7 @@ function Z(e) {
                   size: l.PhG.MEDIUM,
                   isBlocked: M,
                   onClick: () => {
-                    T(), (0, p.pQ)(_({
+                    T(), (0, p.pQ)(Z({
                       action: M ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                       analyticsLocations: R
                     }, L))
@@ -142,7 +142,7 @@ function Z(e) {
                 }), (0, r.jsx)(g.Z, {
                   userId: n.id,
                   onClick: () => {
-                    T(), (0, p.pQ)(_({
+                    T(), (0, p.pQ)(Z({
                       action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                       analyticsLocations: R
                     }, L))

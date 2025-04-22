@@ -54,7 +54,6 @@ function Z(e) {
     className: P.body,
     children: [(0, r.jsx)(j.Z, {
       user: t,
-      themeType: E.lY.SIDEBAR,
       nickname: u.ZP.getName(null, N.id, t),
       pronouns: null == Z ? void 0 : Z.pronouns,
       onOpenProfile: A,

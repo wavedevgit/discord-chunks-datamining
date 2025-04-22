@@ -4,7 +4,7 @@ n.d(t, {
   A8: () => w,
   Il: () => D,
   ZP: () => eY,
-  zS: () => R
+  zS: () => P
 }), n(388685), n(415506);
 var r, i = n(442837),
   a = n(570140),
@@ -40,7 +40,7 @@ function C(e, t, n) {
   }) : e[t] = n, e
 }
 
-function P(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,7 +52,7 @@ function P(e) {
   }
   return e
 }
-var R = function(e) {
+var P = function(e) {
   return e.HARDWARE_ACCELERATED_GPU_SCHEDULING_ENABLED = "HARDWARE_ACCELERATED_GPU_SCHEDULING_ENABLED", e.OVERLAY_UNLOCKED = "OVERLAY_UNLOCKED", e.OVERLAY_VIDEO_STREAM_RENDERING = "OVERLAY_VIDEO_STREAM_RENDERING", e.OVERLAY_RENDERING = "OVERLAY_RENDERING", e.DEV_FORCED_GPU_BOOST = "DEV_FORCED_GPU_BOOST", e
 }({});
 let w = "repaint-complete",
@@ -174,7 +174,7 @@ function ee(e, t) {
   var n, r;
   let i = null == (n = j[e]) ? void 0 : n.error,
     a = null == (r = j[e]) ? void 0 : r.error_description;
-  j[e] = P({}, j[e], t), null != i && (j[e].error = i), null != a && (j[e].error_description = a)
+  j[e] = R({}, j[e], t), null != i && (j[e].error = i), null != a && (j[e].error_description = a)
 }
 
 function et(e) {
@@ -425,11 +425,11 @@ async function eC(e) {
   e.overlayMethod === s.gl.OutOfProcess || e.overlayMethod === s.gl.OutOfProcessLimitedInteraction ? (null == G && await eO(), ei(e.pid, e.overlayMethod)) : ea(e.pid), eH.emitChange()
 }
 
-function eP(e) {
+function eR(e) {
   x.verbose("Updating OverlayMethod", e), eC(e)
 }
 
-function eR(e) {
+function eP(e) {
   let {
     pid: t,
     error: n
@@ -588,10 +588,10 @@ let eH = new eZ(a.Z, {
     OVERLAY_ACTIVATE_REGION: ej,
     OVERLAY_DEACTIVATE_ALL_REGIONS: eU,
     OVERLAY_RENDER_DEBUG_MODE: eG,
-    OVERLAY_UPDATE_OVERLAY_METHOD: eP,
+    OVERLAY_UPDATE_OVERLAY_METHOD: eR,
     OVERLAY_UPDATE_OVERLAY_STATE: eM,
     OVERLAY_SET_GPU_BOOST_REQUESTED: ew,
-    OVERLAY_CRASHED: eR,
+    OVERLAY_CRASHED: eP,
     OVERLAY_FOCUSED: ey
   }),
   eY = eH

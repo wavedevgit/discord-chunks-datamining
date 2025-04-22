@@ -39,7 +39,7 @@ function C(e, t, n) {
   }) : e[t] = n, e
 }
 
-function P(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,7 +52,7 @@ function P(e) {
   return e
 }
 
-function R(e, t) {
+function P(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -64,7 +64,7 @@ function R(e, t) {
 }
 
 function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -178,7 +178,7 @@ class k extends s.Z {
   _initializeEvents() {
     let e = !1;
     this.on(l.z.State, (e, t, n) => {
-      if (o.Z.wait(() => o.Z.dispatch(w(P({
+      if (o.Z.wait(() => o.Z.dispatch(w(R({
           type: "RTC_CONNECTION_STATE",
           state: e
         }, t, n), {
@@ -208,7 +208,7 @@ class k extends s.Z {
                 gpu_memory: i
               }
             }
-            let R = (null != e ? e : 0) + (null != t ? t : 0) + (null != n ? n : 0) + (null != r ? r : 0) + (null != i ? i : 0) + (null != a ? a : 0) + (null != c ? c : 0) + (null != g ? g : 0) + (null != m ? m : 0),
+            let P = (null != e ? e : 0) + (null != t ? t : 0) + (null != n ? n : 0) + (null != r ? r : 0) + (null != i ? i : 0) + (null != a ? a : 0) + (null != c ? c : 0) + (null != g ? g : 0) + (null != m ? m : 0),
               w = (null == O || null == (I = O.desktopSource) ? void 0 : I.sourcePid) != null ? _.ZP.getGameForPID(O.desktopSource.sourcePid) : null,
               {
                 gameName: D,
@@ -216,7 +216,7 @@ class k extends s.Z {
                 exe: x,
                 distributor: M
               } = (0, f.G8)(w);
-            v.default.track(A.rMx.SCREENSHARE_FINISHED, P({
+            v.default.track(A.rMx.SCREENSHARE_FINISHED, R({
               screenshare_frames: e,
               videohook_frames: t,
               hybrid_dxgi_frames: n,
@@ -229,7 +229,7 @@ class k extends s.Z {
               quartz_frames: c,
               screencapturekit_frames: g,
               go_live_camera_frames: m,
-              total_frames: R,
+              total_frames: P,
               desktop_capturer_type: u,
               media_session_id: E,
               rtc_connection_id: b,
@@ -316,7 +316,7 @@ class k extends s.Z {
   }
   _trackVideoStartStats() {
     let e = this.isOwner ? (0, T.Z)() : null;
-    v.default.track(A.rMx.VIDEO_STREAM_STARTED, w(P({}, this._getStreamAnalyticsProperties(), e), {
+    v.default.track(A.rMx.VIDEO_STREAM_STARTED, w(R({}, this._getStreamAnalyticsProperties(), e), {
       connection_type: g.Z.getType(),
       effective_connection_speed: g.Z.getEffectiveConnectionSpeed(),
       service_provider: g.Z.getServiceProvider(),
@@ -346,7 +346,7 @@ class k extends s.Z {
       } : {};
     o.getOutboundStats().forEach(t => {
       var r;
-      (null != (r = t.num_frames) ? r : 0) > 0 && v.default.track(A.rMx.VIDEO_STREAM_ENDED, w(P({}, a, i, s, this._videoStreamStats.getStats(), t, this._soundshareStats.getStats(), this._getStreamAnalyticsProperties(), _, p), {
+      (null != (r = t.num_frames) ? r : 0) > 0 && v.default.track(A.rMx.VIDEO_STREAM_ENDED, w(R({}, a, i, s, this._videoStreamStats.getStats(), t, this._soundshareStats.getStats(), this._getStreamAnalyticsProperties(), _, p), {
         app_hardware_acceleration_enabled: O.Z.getAppHardwareAccelerationEnabled(),
         channel_type: n,
         reason: e,
@@ -358,7 +358,7 @@ class k extends s.Z {
     }), o.getInboundParticipants().forEach(t => {
       var r;
       let l = o.getInboundStats(t);
-      (null != (r = null == l ? void 0 : l.num_frames) ? r : 0) > 0 && v.default.track(A.rMx.VIDEO_STREAM_ENDED, w(P({}, a, i, s, this._videoStreamStats.getStats(), l, this._soundshareStats.getStats(), this._getStreamAnalyticsProperties(), _, p), {
+      (null != (r = null == l ? void 0 : l.num_frames) ? r : 0) > 0 && v.default.track(A.rMx.VIDEO_STREAM_ENDED, w(R({}, a, i, s, this._videoStreamStats.getStats(), l, this._soundshareStats.getStats(), this._getStreamAnalyticsProperties(), _, p), {
         app_hardware_acceleration_enabled: O.Z.getAppHardwareAccelerationEnabled(),
         channel_type: n,
         reason: e,

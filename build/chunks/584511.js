@@ -95,18 +95,18 @@ function p(e) {
         children: [null == b ? void 0 : b(), t]
       }), N()]
     })
-  }, P = a()(u.wrapper, {
+  }, R = a()(u.wrapper, {
     [u.clickable]: null != v,
     [u.ringingOutgoing]: m && 0 === g,
     [u.ringingIncoming]: m && 1 === g
-  }, I), R = (0, s.pxk)(n), w = f({
-    height: R,
-    width: R
+  }, I), P = (0, s.pxk)(n), w = f({
+    height: P,
+    width: P
   }, y);
   return (0, r.jsx)("div", {
     style: w,
     onContextMenu: O,
-    className: P,
+    className: R,
     children: C()
   })
 }

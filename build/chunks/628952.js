@@ -73,7 +73,7 @@ let O = e => {
     giftRecipientError: T
   } = (0, c.wD)(), A = (0, s.e7)([f.default], () => f.default.getCurrentUser()), N = (0, p.k)(I);
   if (null == I) return null;
-  let [C] = I.items, P = () => C.type === o.Z.AVATAR_DECORATION ? m.intl.string(m.t["7v0T9P"]) : C.type === o.Z.PROFILE_EFFECT ? m.intl.string(m.t.wR5wOj) : null, R = null != S && S.id !== (null == A ? void 0 : A.id), w = () => {
+  let [C] = I.items, R = () => C.type === o.Z.AVATAR_DECORATION ? m.intl.string(m.t["7v0T9P"]) : C.type === o.Z.PROFILE_EFFECT ? m.intl.string(m.t.wR5wOj) : null, P = null != S && S.id !== (null == A ? void 0 : A.id), w = () => {
     null != t && null != E && E(t)
   };
   return (0, r.jsxs)("div", {
@@ -83,7 +83,7 @@ let O = e => {
       children: [(0, r.jsx)(l.vwX, {
         className: g.previewTitle,
         children: m.intl.string(m.t.PpoJzs)
-      }), R && (0, r.jsx)(l.yRy, {
+      }), P && (0, r.jsx)(l.yRy, {
         preload: () => (0, d.Z)(S.id, S.getAvatarURL(null, 80)),
         renderPopout: e => (0, r.jsx)(u.Z, v(b({}, e), {
           user: S,
@@ -124,7 +124,7 @@ let O = e => {
           }), (0, r.jsx)(l.X6q, {
             variant: "heading-sm/medium",
             color: "header-secondary",
-            children: P()
+            children: R()
           })]
         }), (0, r.jsx)(l.Text, {
           variant: "text-md/semibold",

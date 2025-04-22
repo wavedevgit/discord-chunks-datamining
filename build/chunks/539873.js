@@ -60,13 +60,13 @@ function C(e, t) {
   return n
 }
 
-function P(e, t) {
+function R(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function R(e, t) {
+function P(e, t) {
   if (null == e) return {};
   var n, r, i = w(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -107,7 +107,7 @@ function D(e) {
     {
       ref: j
     } = k,
-    U = R(k, ["ref"]),
+    U = P(k, ["ref"]),
     G = (0, f.Q3)("AppIconSelectionGroup"),
     B = e => {
       if (L && !A && e !== E.aH.DEFAULT) return void(0, l.ZDy)(async () => {
@@ -129,7 +129,7 @@ function D(e) {
     };
   return (0, r.jsx)("div", {
     ref: x,
-    children: (0, r.jsx)("div", P(N({}, U), {
+    children: (0, r.jsx)("div", R(N({}, U), {
       ref: j,
       className: S.__invalid_container,
       children: (0, r.jsxs)("div", {

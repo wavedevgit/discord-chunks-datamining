@@ -33,8 +33,8 @@ var r = n(192379),
   A = n(111361),
   N = n(392552),
   C = n(543241),
-  P = n(304852),
-  R = n(199257),
+  R = n(304852),
+  P = n(199257),
   w = n(149203),
   D = n(185923),
   L = n(388032);
@@ -109,7 +109,7 @@ let G = [D.Z5.DISALLOW_EXTERNAL, D.Z5.DISALLOW_CUSTOM],
     let {
       topEmojis: q,
       newlyAddedEmojis: Q
-    } = (0, R.Z)(F, l), X = (0, s.Wu)([O.ZP], () => O.ZP.getFlattenedGuildIds(), []), J = (0, s.e7)([c.ZP], () => c.ZP.expandedSectionsByGuildIds), {
+    } = (0, P.Z)(F, l), X = (0, s.Wu)([O.ZP], () => O.ZP.getFlattenedGuildIds(), []), J = (0, s.e7)([c.ZP], () => c.ZP.expandedSectionsByGuildIds), {
       canCreateExpressions: $
     } = (0, m.XJ)(V), ee = (0, s.e7)([I.default], () => I.default.getCurrentUser()), et = (0, A.I5)(ee), en = (0, g.B4)(), er = Z.getCustomEmoji(), ei = e => {
       if (e.type === u.B.GUILD) return e.guildId
@@ -150,10 +150,10 @@ let G = [D.Z5.DISALLOW_EXTERNAL, D.Z5.DISALLOW_CUSTOM],
               O = v.Z.getGuildId(),
               I = _.sectionId === w.En.TOP_GUILD_EMOJI,
               A = !I && null != y && O === y.id && b.length < (0, T.y4)(y),
-              P = I && b.length < f && !eo,
-              R = null != y && I && eo && es === N.B.WITH_TOP_LIST && ea[y.id].length < (0, T.y4)(y),
-              D = i && $ && null != y && (A || P || R);
-            D && R && b.length === f && b.shift();
+              R = I && b.length < f && !eo,
+              P = null != y && I && eo && es === N.B.WITH_TOP_LIST && ea[y.id].length < (0, T.y4)(y),
+              D = i && $ && null != y && (A || R || P);
+            D && P && b.length === f && b.shift();
             let x = b.length > m && null != y && _.isNitroLocked,
               U = x && !J.has(y.id);
             U && b.splice(m - 1);
@@ -284,7 +284,7 @@ let G = [D.Z5.DISALLOW_EXTERNAL, D.Z5.DISALLOW_CUSTOM],
             if (null != V) {
               let {
                 allEmojis: t
-              } = (0, P.J)({
+              } = (0, R.J)({
                 topEmojis: q,
                 newlyAddedEmojis: Q
               });

@@ -28,8 +28,8 @@ var r, i, a = n(200651),
   A = n(528472),
   N = n(455813),
   C = n(283756),
-  P = n(793148),
-  R = n(981631),
+  R = n(793148),
+  P = n(981631),
   w = n(217702),
   D = n(388032),
   L = n(480183),
@@ -244,7 +244,7 @@ class z extends(r = o.Component) {
         ref: this.setDurationRef
       }), (0, a.jsx)("div", {
         className: x.flex,
-        children: (0, a.jsx)(P.Z, {
+        children: (0, a.jsx)(R.Z, {
           ref: this.setVolumeButtonRef,
           muted: i,
           value: p,
@@ -394,7 +394,7 @@ class J {
     throw Error("uhoh")
   }
   sendEvent() {
-    this.analyticsEnabled && (null == this.errorCode && null == this.errorMessage && !1 === this.metadata.hasValidFrame && (this.errorCode = 4, this.errorMessage = "No valid video frames detected - codec may be unsupported"), v.default.track(R.rMx.MEDIA_PLAY_FINISHED, {
+    this.analyticsEnabled && (null == this.errorCode && null == this.errorMessage && !1 === this.metadata.hasValidFrame && (this.errorCode = 4, this.errorMessage = "No valid video frames detected - codec may be unsupported"), v.default.track(P.rMx.MEDIA_PLAY_FINISHED, {
       play_time_sec: this.playTimeSec,
       play_wall_time_ms: this.playWallTimeMs,
       first_play_waiting_ms: this.firstPlayWaitingMs,
@@ -1047,10 +1047,10 @@ class $ extends(i = o.PureComponent) {
       let {
         current: t
       } = this.mediaRef;
-      if (e.which === R.yXg.SPACE) e.preventDefault(), this.setPlay(!this.state.playing);
-      else if (e.which >= R.yXg.DIGIT_0 && e.which <= R.yXg.DIGIT_9 && null != t) {
+      if (e.which === P.yXg.SPACE) e.preventDefault(), this.setPlay(!this.state.playing);
+      else if (e.which >= P.yXg.DIGIT_0 && e.which <= P.yXg.DIGIT_9 && null != t) {
         e.preventDefault();
-        let n = (e.which - R.yXg.DIGIT_0) / 10;
+        let n = (e.which - P.yXg.DIGIT_0) / 10;
         t.currentTime = t.duration * n, this.setPlay(!0)
       }
     }), M(this, "handleError", e => {

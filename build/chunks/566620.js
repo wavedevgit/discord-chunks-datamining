@@ -40,8 +40,8 @@ var r = n(990547),
   A = n(973616),
   N = n(314897),
   C = n(592125),
-  P = n(430824),
-  R = n(496675),
+  R = n(430824),
+  P = n(496675),
   w = n(594174),
   D = n(979651),
   L = n(626135),
@@ -150,8 +150,8 @@ async function er(e) {
     isContextlessActivity: A,
     onConfirmActivityLaunchChecksAlertOpen: N
   } = e, C = null != p ? p : T, {
-    channelIdForLaunch: P,
-    channelForLaunch: R,
+    channelIdForLaunch: R,
+    channelForLaunch: P,
     guildIdForLaunch: D,
     channelIdForAnalytics: L,
     guildIdForAnalytics: x
@@ -163,7 +163,7 @@ async function er(e) {
   }), M = (0, G.sq)();
   if (!M) {
     var k;
-    if (null == D && !(null != (k = null == R ? void 0 : R.isPrivate()) && k)) return !1
+    if (null == D && !(null != (k = null == P ? void 0 : P.isPrivate()) && k)) return !1
   }
   let j = (0, S.r)();
   try {
@@ -171,7 +171,7 @@ async function er(e) {
       type: "EMBEDDED_ACTIVITY_LAUNCH_START",
       nonce: j,
       applicationId: n,
-      channelId: null != P ? P : null,
+      channelId: null != R ? R : null,
       componentId: c,
       analyticsLocations: a,
       source: _,
@@ -188,7 +188,7 @@ async function er(e) {
         userId: null == e ? void 0 : e.id,
         guildId: x,
         channelId: L,
-        channelType: null == R ? void 0 : R.type,
+        channelType: null == P ? void 0 : P.type,
         applicationId: n,
         locationObject: s,
         analyticsLocations: null != a ? a : [],
@@ -197,11 +197,11 @@ async function er(e) {
         referrerId: m,
         inviterUserId: I
       }), r) {
-      if (null == P || !ei(n, R)) throw new v.Z(v.Z.Reasons.INVALID_CHANNEL);
+      if (null == R || !ei(n, P)) throw new v.Z(v.Z.Reasons.INVALID_CHANNEL);
       let e = await ea({
         applicationId: n,
         nonce: j,
-        channelId: P,
+        channelId: R,
         guildId: D,
         commandOrigin: u,
         sectionName: d,
@@ -216,7 +216,7 @@ async function er(e) {
     } else {
       let e = await eo({
         applicationId: n,
-        channelId: P,
+        channelId: R,
         embeddedActivitiesManager: l,
         isStart: r,
         guildId: D,
@@ -232,7 +232,7 @@ async function er(e) {
       type: "EMBEDDED_ACTIVITY_LAUNCH_SUCCESS",
       nonce: j,
       applicationId: n,
-      channelId: null != P ? P : null
+      channelId: null != R ? R : null
     })
   } catch (t) {
     let e = A ? i.E.CONTEXTLESS : null != D ? i.E.GUILD_CHANNEL : i.E.PRIVATE_CHANNEL;
@@ -303,7 +303,7 @@ async function ea(e) {
     }
   }
   let I = C.Z.getChannel(r),
-    S = null != i ? P.Z.getGuild(i) : null;
+    S = null != i ? R.Z.getGuild(i) : null;
   if (null == I) return {
     result: "failure",
     reason: 3
@@ -410,8 +410,8 @@ async function eo(e) {
   let v = (0, H.e4)({
     channelId: i,
     ChannelStore: C.Z,
-    GuildStore: P.Z,
-    PermissionStore: R.Z,
+    GuildStore: R.Z,
+    PermissionStore: P.Z,
     VoiceStateStore: D.Z
   });
   if (v !== H.jy.CAN_LAUNCH) {

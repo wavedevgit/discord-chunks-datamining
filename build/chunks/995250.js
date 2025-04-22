@@ -89,10 +89,7 @@ function v(e) {
       interactionSource: I
     } = (0, l.Xo)(),
     S = o()(p.avatar, {
-      [p.hoisted]: I === _.n_.AVATAR || I === _.n_.STATUS,
-      [p.biteSize]: n === _.lY.POPOUT,
-      [p.fullSize]: n === _.lY.MODAL,
-      [p.panel]: n === _.lY.SIDEBAR
+      [p.hoisted]: I === _.n_.AVATAR || I === _.n_.STATUS
     });
   return (0, r.jsx)(f.Z, {
     targetElementRef: y,

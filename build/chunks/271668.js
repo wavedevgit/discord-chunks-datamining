@@ -29,8 +29,8 @@ var r = n(200651),
   A = n(826298),
   N = n(689079),
   C = n(981631),
-  P = n(388032),
-  R = n(702854),
+  R = n(388032),
+  P = n(702854),
   w = n(239840);
 let D = 512,
   L = 7,
@@ -157,7 +157,7 @@ let D = 512,
             padding: 0
           });
         return (0, r.jsx)(E.Z, {
-          className: R.categoryHeader,
+          className: P.categoryHeader,
           icon: a,
           children: t.name
         }, e)
@@ -171,15 +171,15 @@ let D = 512,
         return (0, r.jsxs)("ul", {
           role: "group",
           "aria-label": i.name,
-          className: o()(R.categorySection, {
-            [R.categorySectionLast]: n
+          className: o()(P.categorySection, {
+            [P.categorySectionLast]: n
           }),
           children: [t, 0 === a.length && (0, r.jsx)(c.Z, {
-            message: P.intl.format(P.t.WoQXT0, {
+            message: R.intl.format(R.t.WoQXT0, {
               applicationName: i.name
             }),
             noResultsImageURL: w,
-            className: R.noSearchResults
+            className: P.noSearchResults
           })]
         }, e)
       }, [q, Q]),
@@ -194,7 +194,7 @@ let D = 512,
           index: e,
           command: o,
           channel: n,
-          className: R.itemWrapper,
+          className: P.itemWrapper,
           selected: V === e,
           showImage: a.section.id !== o.applicationId,
           section: l,
@@ -209,11 +209,11 @@ let D = 512,
       (0, _.sJ)()
     }, []), (0, r.jsxs)(f.ZP, {
       id: ef,
-      className: R.outerWrapper,
-      innerClassName: R.wrapper,
+      className: P.outerWrapper,
+      innerClassName: P.wrapper,
       onMouseDown: F,
       children: [(0, r.jsx)(S.Z, {
-        className: R.rail,
+        className: P.rail,
         channel: n,
         sections: z,
         filteredSectionId: $,
@@ -222,7 +222,7 @@ let D = 512,
         applicationCommandListRef: H
       }), (0, r.jsx)(p.Z, {
         role: "listbox",
-        className: R.list,
+        className: P.list,
         listPadding: G,
         onScroll: er,
         renderRow: ed,

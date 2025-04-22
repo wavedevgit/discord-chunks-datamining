@@ -384,7 +384,7 @@ h(N, "Scenes", O);
 var C = function(e) {
   return e.ENTRY = "entry", e.IDLE = "idle", e.STARS = "stars", e.ERROR = "error", e.SUCCESS = "success", e
 }(C || {});
-let P = {
+let R = {
     entry: {
       BEG: 0,
       END: 180
@@ -408,34 +408,34 @@ let P = {
       END: 778
     }
   },
-  R = Object.freeze({
+  P = Object.freeze({
     WHITE: "#ebf0f7",
     PINK: "#fa6ef6"
   }),
   w = [{
     left: 29,
     top: 100,
-    color: R.WHITE
+    color: P.WHITE
   }, {
     left: 245,
     top: 11,
-    color: R.PINK
+    color: P.PINK
   }, {
     left: 393,
     top: 22,
-    color: R.WHITE
+    color: P.WHITE
   }, {
     left: 74,
     top: 30,
-    color: R.PINK
+    color: P.PINK
   }, {
     left: 188,
     top: 9,
-    color: R.WHITE
+    color: P.WHITE
   }, {
     left: 379,
     top: 97,
-    color: R.PINK
+    color: P.PINK
   }],
   D = Object.freeze({
     SCALE_INITIAL: 0,
@@ -547,7 +547,7 @@ class x extends(o = l.PureComponent) {
         className: p.guildBackground,
         importData: this.importData,
         nextScene: n ? "idle" : t,
-        sceneSegments: P,
+        sceneSegments: R,
         onScenePlay: r,
         onSceneComplete: i,
         pauseWhileUnfocused: a,

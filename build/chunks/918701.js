@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $H: () => eR,
+  $H: () => eP,
   $J: () => e1,
   AV: () => eu,
   B2: () => tm,
@@ -56,7 +56,7 @@ n.d(t, {
   lQ: () => Y,
   o9: () => eL,
   oo: () => eT,
-  pO: () => eP,
+  pO: () => eR,
   q6: () => z,
   q8: () => e0,
   qe: () => tE,
@@ -101,8 +101,8 @@ n(306560);
 var A = n(75137),
   N = n(566078),
   C = n(312046),
-  P = n(46140),
-  R = n(981631),
+  R = n(46140),
+  P = n(981631),
   w = n(701488),
   D = n(388032);
 
@@ -157,8 +157,8 @@ function G(e) {
     return console.error("Unknown config version '".concat(null == e || null == (t = e.config) ? void 0 : t.config_version, "'"), n), !1
   }
 }
-let B = e => e.application_id === w.Ev || e.platform === R.M7m.XBOX,
-  V = e => e.platform === R.M7m.PS4 || e.platform === R.M7m.PS5;
+let B = e => e.application_id === w.Ev || e.platform === P.M7m.XBOX,
+  V = e => e.platform === P.M7m.PS4 || e.platform === P.M7m.PS5;
 
 function F(e, t) {
   if (null == e) return !1;
@@ -405,13 +405,13 @@ function eu(e) {
 }
 
 function ed(e) {
-  return Object.keys(P.a_).includes(T.jn[e])
+  return Object.keys(R.a_).includes(T.jn[e])
 }
 
 function ef(e, t) {
   if (!ed(t)) return !1;
   let n = T.jn[t];
-  return (0, E.yE)(e.dismissedQuestContent, P.a_[n])
+  return (0, E.yE)(e.dismissedQuestContent, R.a_[n])
 }
 
 function e_(e) {
@@ -527,11 +527,11 @@ function eC(e) {
   return t.config.taskConfig.type === u.L.FIRST_PARTY && null != t.config.taskConfig.tasks[o.X.STREAM_ON_DESKTOP]
 }
 
-function eP(e) {
+function eR(e) {
   return e.config.taskConfig.type === u.L.FIRST_PARTY && null != e.config.taskConfig.tasks[o.X.PLAY_ACTIVITY]
 }
 
-function eR(e) {
+function eP(e) {
   return null != e && eN({
     quest: e
   })
@@ -539,7 +539,7 @@ function eR(e) {
 
 function ew(e) {
   let t = N.r.build(e.config).application.id;
-  return eP(e) && t === P.Ts
+  return eR(e) && t === R.Ts
 }
 
 function eD(e, t) {
@@ -665,10 +665,10 @@ let eM = (e, t) => {
   }) : e0(e) ? eF({
     quest: e,
     taskType: o.X.WATCH_VIDEO
-  }) : eR(e) ? eF({
+  }) : eP(e) ? eF({
     quest: e,
     taskType: o.X.PLAY_ON_DESKTOP
-  }) : eP(e) ? eF({
+  }) : eR(e) ? eF({
     quest: e,
     taskType: o.X.PLAY_ACTIVITY
   }) : eF({
@@ -738,7 +738,7 @@ function e4(e) {
 }
 
 function e5() {
-  f.Z.open(R.oAB.CONNECTIONS)
+  f.Z.open(P.oAB.CONNECTIONS)
 }
 
 function e6(e, t) {
@@ -796,7 +796,7 @@ function e7(e, t) {
 }
 
 function e9() {
-  return window.location.pathname.startsWith(R.Z5c.QUEST_HOME)
+  return window.location.pathname.startsWith(P.Z5c.QUEST_HOME)
 }
 
 function te(e) {
@@ -807,11 +807,11 @@ function te(e) {
 }
 
 function tt(e) {
-  return "xbox" === e.connected_account_type ? R.ABu.XBOX : R.ABu.PLAYSTATION
+  return "xbox" === e.connected_account_type ? P.ABu.XBOX : P.ABu.PLAYSTATION
 }
 
 function tn(e) {
-  return tt(e) === R.ABu.XBOX ? D.t.mytEv7 : D.t.iDiwb2
+  return tt(e) === P.ABu.XBOX ? D.t.mytEv7 : D.t.iDiwb2
 }
 
 function tr(e) {
@@ -856,7 +856,7 @@ function ta(e) {
     }),
     n = e$(e),
     r = [];
-  return t && r.push(P.cd.DESKTOP), n && r.push(P.cd.CONSOLE), r
+  return t && r.push(R.cd.DESKTOP), n && r.push(R.cd.CONSOLE), r
 }
 
 function to(e) {
@@ -875,10 +875,10 @@ function tl(e) {
     n = [];
   for (let e of t) switch (e) {
     case o.X.PLAY_ON_XBOX:
-      n.push(R.ABu.XBOX);
+      n.push(P.ABu.XBOX);
       break;
     case o.X.PLAY_ON_PLAYSTATION:
-      n.push(R.ABu.PLAYSTATION)
+      n.push(P.ABu.PLAYSTATION)
   }
   return n
 }
@@ -889,7 +889,7 @@ function tc(e) {
 
 function tu(e) {
   let t = e0(e),
-    n = eP(e);
+    n = eR(e);
   return t || n
 }
 
@@ -908,7 +908,7 @@ function tf(e) {
 
 function t_(e) {
   let t = tf(e);
-  return null != t && P.v6.has(t)
+  return null != t && R.v6.has(t)
 }
 let tp = e => e.percentComplete > 0 ? D.intl.formatToPlainString(D.t["c59/Tk"], {
   remainTime: eX(e)

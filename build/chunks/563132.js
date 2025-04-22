@@ -30,8 +30,8 @@ var r = n(200651),
   A = n(735521),
   N = n(583046),
   C = n(897829),
-  P = n(74179),
-  R = n(896246),
+  R = n(74179),
+  P = n(896246),
   w = n(320317),
   D = n(994427),
   L = n(814076),
@@ -103,7 +103,7 @@ function K(e) {
     paymentSourceId: el,
     setPaymentSourceId: ec,
     hasFetchedPaymentSources: eu
-  } = (0, P.Z)({
+  } = (0, R.Z)({
     isGift: K,
     activeSubscription: B,
     eligiblePaymentGateways: ea
@@ -130,9 +130,9 @@ function K(e) {
   }), [eT, eA] = (0, D.Z)(ey), {
     paymentError: eN,
     paymentAuthenticationState: eC
-  } = (0, R.Z)(), {
-    purchaseError: eP,
-    purchaseErrorBlockRef: eR,
+  } = (0, P.Z)(), {
+    purchaseError: eR,
+    purchaseErrorBlockRef: eP,
     setPurchaseError: ew
   } = (0, w.Z)(), eD = (0, u.Z)(() => {
     let e = null != O ? O : (0, l.Z)();
@@ -224,11 +224,11 @@ function K(e) {
       setPurchaseState: eA,
       paymentAuthenticationState: eC,
       paymentError: eN,
-      purchaseError: eP,
+      purchaseError: eR,
       setPurchaseError: ew,
       purchasePreviewError: ta,
       setPurchasePreviewError: to,
-      purchaseErrorBlockRef: eR,
+      purchaseErrorBlockRef: eP,
       purchaseTokenAuthState: eG,
       purchaseTokenHash: eB,
       browserCheckoutState: eV,

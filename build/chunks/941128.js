@@ -36,8 +36,8 @@ let y = [E.ff.AUTHENTICATION_FAILED, E.ff.NOT_ENTITLED],
   A = null,
   N = !1,
   C = new Map,
-  P = !1,
-  R = null;
+  R = !1,
+  P = null;
 
 function w() {
   let e = {
@@ -66,7 +66,7 @@ function L() {
       let e = d.default.getToken(),
         t = d.default.getId();
       if (null == e) throw Error("missing user token");
-      P = !p.Z.setCurrentTask(r, i, n, t, e)
+      R = !p.Z.setCurrentTask(r, i, n, t, e)
     }
   }
 }
@@ -210,7 +210,7 @@ function W(e) {
 function K() {
   for (let e of u.ZP.getRunningDiscordApplicationIds()) c.al(e, e);
   let e = u.ZP.getVisibleGame();
-  return S || null == e || e.pid === R || c.wO(), R = null == e ? null : e.pid, !1
+  return S || null == e || e.pid === P || c.wO(), P = null == e ? null : e.pid, !1
 }
 
 function z() {
@@ -255,7 +255,7 @@ class X extends(r = o.ZP.Store) {
     return x(e, t)
   }
   isCorruptInstallation() {
-    return P
+    return R
   }
 }
 b(X, "displayName", "DispatchManagerStore");

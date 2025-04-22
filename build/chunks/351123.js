@@ -26,10 +26,10 @@ var i = n(200651),
   N = n(277053),
   S = n(271383),
   w = n(430824),
-  Z = n(496675),
-  O = n(594174),
-  E = n(903386),
-  T = n(700785),
+  O = n(496675),
+  Z = n(594174),
+  T = n(903386),
+  E = n(700785),
   R = n(605436),
   _ = n(27544),
   I = n(415236),
@@ -274,10 +274,10 @@ function W(e) {
     isPrivateGuildChannel: r,
     roles: c,
     members: d
-  } = e, u = (0, a.e7)([Z.Z], () => Z.Z.can(A.Pl.ADMINISTRATOR, t)), h = T.Uu(A.Pl.VIEW_CHANNEL, t), g = T.Uu(A.Pl.ADMINISTRATOR, t);
+  } = e, u = (0, a.e7)([O.Z], () => O.Z.can(A.Pl.ADMINISTRATOR, t)), h = E.Uu(A.Pl.VIEW_CHANNEL, t), g = E.Uu(A.Pl.ADMINISTRATOR, t);
   async function m() {
     let e = l.accessPermissions,
-      s = O.default.getCurrentUser();
+      s = Z.default.getCurrentUser();
     if (!r && null != await (0, j.T)(t.id, l.id)) return void(0, o.ZDy)(async () => {
       let {
         ConfirmModal: e
@@ -384,7 +384,7 @@ function H(e) {
     })]
   })
 }
-let z = a.ZP.connectStores([N.Z, Z.Z, S.ZP, w.Z], () => {
+let z = a.ZP.connectStores([N.Z, O.Z, S.ZP, w.Z], () => {
   let e, t = N.Z.channel,
     n = N.Z.category,
     i = [],
@@ -403,7 +403,7 @@ let z = a.ZP.connectStores([N.Z, Z.Z, S.ZP, w.Z], () => {
     }
   }
   return {
-    canSyncChannel: null != n && Z.Z.can(A.Pl.MANAGE_ROLES, n),
+    canSyncChannel: null != n && O.Z.can(A.Pl.MANAGE_ROLES, n),
     category: n,
     channel: t,
     filteredMembers: l,
@@ -424,7 +424,7 @@ let z = a.ZP.connectStores([N.Z, Z.Z, S.ZP, w.Z], () => {
     isPrivateGuildChannel: h,
     locked: g,
     permissionUpdates: m
-  } = e, [p, f] = l.useState(!T.Uu(A.Pl.SEND_MESSAGES, s));
+  } = e, [p, f] = l.useState(!E.Uu(A.Pl.SEND_MESSAGES, s));
   if (null == s || null == d) return null;
   let j = {
     title: M.intl.string(M.t.BAZMBg),
@@ -445,7 +445,7 @@ let z = a.ZP.connectStores([N.Z, Z.Z, S.ZP, w.Z], () => {
     }) : (0, i.jsx)(P.Z, {
       buttonText: M.intl.string(M.t.NVwuHh),
       canSync: !0,
-      icon: (0, o.GSL)(E.Z),
+      icon: (0, o.GSL)(T.Z),
       noticeText: M.intl.format(M.t.OIhm0N, {
         categoryName: r.name
       }),
@@ -461,7 +461,7 @@ let z = a.ZP.connectStores([N.Z, Z.Z, S.ZP, w.Z], () => {
               let {
                 guild_id: e
               } = r, t = B({}, r.permissionOverwrites);
-              null != e && null == t[e] && (t[e] = T.we(e)), await (0, x.u)(s, t[e].deny, t[e].allow) && (0, u.wk)(s.id, {
+              null != e && null == t[e] && (t[e] = E.we(e)), await (0, x.u)(s, t[e].deny, t[e].allow) && (0, u.wk)(s.id, {
                 permissionOverwrites: Object.values(t)
               })
             }

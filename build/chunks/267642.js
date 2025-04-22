@@ -4,7 +4,7 @@ n.d(t, {
   A3: () => A,
   FZ: () => T,
   Hl: () => ee,
-  Je: () => P,
+  Je: () => R,
   Jh: () => M,
   KK: () => q,
   Oe: () => S,
@@ -14,7 +14,7 @@ n.d(t, {
   _k: () => F,
   _p: () => L,
   aq: () => G,
-  cP: () => R,
+  cP: () => P,
   e9: () => D,
   ee: () => X,
   f2: () => j,
@@ -72,12 +72,12 @@ let I = [E.Eu4.NONE, E.Eu4.TIER_1, E.Eu4.TIER_2, E.Eu4.TIER_3],
   A = (e, t) => null != t && t.hasFeature(E.oNc.MORE_STICKERS) && e === E.Eu4.TIER_3 ? o.D.MAX_STICKER_SLOTS : y.$8[e],
   N = e => y.pH[e],
   C = (e, t) => null != t && t.hasFeature(E.oNc.MORE_SOUNDBOARD) ? y.w1 : y._k[e],
-  P = e => {
+  R = e => {
     if (e === E.Eu4.NONE) return y._k[e];
     let t = I[I.indexOf(e) - 1];
     return y._k[e] - y._k[t]
   },
-  R = e => [{
+  P = e => [{
     tier: E.Eu4.TIER_1,
     title: v.intl.string(v.t["lK+WOT"]),
     perks: [{
@@ -96,7 +96,7 @@ let I = [E.Eu4.NONE, E.Eu4.TIER_1, E.Eu4.TIER_2, E.Eu4.TIER_3],
       icon: 8
     }, {
       title: v.intl.formatToPlainString(v.t.NRuk5u, {
-        soundCount: P(E.Eu4.TIER_1),
+        soundCount: R(E.Eu4.TIER_1),
         totalSoundCount: C(E.Eu4.TIER_1)
       }),
       description: v.intl.string(v.t.Oq7OVl),
@@ -139,7 +139,7 @@ let I = [E.Eu4.NONE, E.Eu4.TIER_1, E.Eu4.TIER_2, E.Eu4.TIER_3],
       icon: 8
     }, {
       title: v.intl.formatToPlainString(v.t.NRuk5u, {
-        soundCount: P(E.Eu4.TIER_2),
+        soundCount: R(E.Eu4.TIER_2),
         totalSoundCount: C(E.Eu4.TIER_2)
       }),
       description: v.intl.string(v.t.pEYlPT),
@@ -198,7 +198,7 @@ let I = [E.Eu4.NONE, E.Eu4.TIER_1, E.Eu4.TIER_2, E.Eu4.TIER_3],
       icon: 8
     }, {
       title: v.intl.formatToPlainString(v.t.NRuk5u, {
-        soundCount: P(E.Eu4.TIER_3),
+        soundCount: R(E.Eu4.TIER_3),
         totalSoundCount: C(E.Eu4.TIER_3)
       }),
       description: v.intl.string(v.t["8omJSU"]),

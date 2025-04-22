@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $6: () => R,
+  $6: () => P,
   MP: () => T,
   Mg: () => v,
   Nl: () => C,
   Ns: () => b,
   Rx: () => A,
   nX: () => w,
-  sc: () => P
+  sc: () => R
 }), n(388685), n(472816), n(794429), n(415506), n(539854), n(49124), n(413496), n(433524), n(35282), n(482853), n(781311);
 var r = n(403644),
   i = n.n(r),
@@ -418,7 +418,7 @@ function C(e) {
   return t.codecs = l()(t.codecs, o()), t
 }
 
-function P(e) {
+function R(e) {
   var t;
   let {
     codecs: n
@@ -429,7 +429,7 @@ function P(e) {
   }
 }
 
-function R(e) {
+function P(e) {
   if (!e.includes("a=fingerprint")) return E.error("Remote SDP does not include fingerprint!"), !1;
   if (!e.includes("a=ice-ufrag")) return E.error("Remote SDP does not include ICE user name!"), !1;
   if (!e.includes("a=ice-pwd")) return E.error("Remote SDP does not include ICE password!"), !1;

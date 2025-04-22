@@ -110,7 +110,7 @@ function C(e) {
   }, a))
 }
 
-function P(e, t) {
+function R(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
   return null != t ? E.intl.formatToPlainString(E.t["/6mw19"], {
     label: e,
@@ -118,7 +118,7 @@ function P(e, t) {
   }) : e
 }
 
-function R(e, t, n, r) {
+function P(e, t, n, r) {
   if (null == e) return null;
   if (r) switch (t) {
     case h.EF.SIZE_16:
@@ -359,7 +359,7 @@ function k(e) {
   } = e, T = {
     width: (0, h.px)(n),
     height: (0, h.px)(n)
-  }, A = null == p || m ? void 0 : P(p, E, y), N = S.size * g.hs, C = R(E, n, y, v), w = null != O && (0, r.jsx)("svg", {
+  }, A = null == p || m ? void 0 : R(p, E, y), N = S.size * g.hs, C = P(E, n, y, v), w = null != O && (0, r.jsx)("svg", {
     width: N + I,
     height: N,
     viewBox: "0 0 ".concat(N + I, " ").concat(N),
@@ -443,7 +443,7 @@ function U(e) {
     "aria-hidden": O = !1,
     "aria-label": S,
     imageClassName: T
-  } = e, A = n !== m.Skl.UNKNOWN ? n : null, N = (0, h.UC)(i), C = null != A ? Math.ceil((N.status * h.D6 - N.status) / 2) : 0, P = N.size + C, R = (0, u.vj)(A, a);
+  } = e, A = n !== m.Skl.UNKNOWN ? n : null, N = (0, h.UC)(i), C = null != A ? Math.ceil((N.status * h.D6 - N.status) / 2) : 0, R = N.size + C, P = (0, u.vj)(A, a);
   return (0, r.jsx)(k, I(v({}, e), {
     ariaLabel: S,
     ariaHidden: O,
@@ -451,9 +451,9 @@ function U(e) {
     specs: N,
     typingOffset: C,
     children: (0, r.jsxs)("svg", {
-      width: P,
-      height: P,
-      viewBox: "0 0 ".concat(P, " ").concat(P),
+      width: R,
+      height: R,
+      viewBox: "0 0 ".concat(R, " ").concat(R),
       className: o()(b.mask, b.svg),
       "aria-hidden": !0,
       children: [(0, r.jsx)("foreignObject", {
@@ -475,7 +475,7 @@ function U(e) {
         delay: E,
         children: e => (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("rect", I(v({}, e, D(N, A, s, l)), {
-            fill: R,
+            fill: P,
             mask: "url(#".concat((0, u.rs)(A, s, l), ")"),
             className: b.pointerEvents
           })), l ? (0, r.jsx)(c.b, {
@@ -519,8 +519,8 @@ function V(e) {
     src: y,
     status: O,
     statusColor: T,
-    statusTooltip: P = !1,
-    statusTooltipDelay: R,
+    statusTooltip: R = !1,
+    statusTooltipDelay: P,
     statusBackdropColor: w,
     "aria-hidden": D = !1,
     "aria-label": L,
@@ -610,18 +610,18 @@ function V(e) {
           className: U
         })
       }), null != w && x(w, l, en, O), (0, r.jsx)(d.u, {
-        text: P ? (0, p.u5)(O) : null,
+        text: R ? (0, p.u5)(O) : null,
         "aria-label": !1,
         position: "top",
         spacing: G(en.status, en.stroke, l, _),
-        delay: R,
+        delay: P,
         children: e => (0, r.jsxs)(s.animated.g, {
           transform: es.scale.to(e => "scale(".concat(e, ") ").concat(B(en, e, O))),
           children: [(0, r.jsxs)("svg", {
             width: er,
             height: ei,
             viewBox: "0 0 ".concat(er, " ").concat(ei),
-            className: P ? b.cursorDefault : void 0,
+            className: R ? b.cursorDefault : void 0,
             children: [(0, u.vP)(ee, en.status, H), (0, r.jsx)(s.animated.rect, {
               fill: $,
               width: er,

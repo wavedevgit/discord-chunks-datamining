@@ -11,8 +11,8 @@ var i = n(200651),
   s = n(906732),
   d = n(313201),
   u = n(455708),
-  f = n(222062),
-  _ = n(530329),
+  _ = n(222062),
+  f = n(530329),
   g = n(626135),
   p = n(488499),
   N = n(58384),
@@ -30,9 +30,10 @@ function b(e) {
     showUpsellHeader: E,
     analyticsPage: R
   } = e, [j, Z] = a.useState(!1), C = (0, r.vRw)(), v = (0, d.Dt)(), {
-    analyticsLocations: y
+    analyticsLocations: y,
+    newestAnalyticsLocation: I
   } = (0, s.ZP)(c.Z.GIF_PICKER);
-  async function I(e) {
+  async function k(e) {
     let {
       gifSrc: t
     } = e;
@@ -78,13 +79,14 @@ function b(e) {
   a.useEffect(() => {
     g.default.track(m.rMx.OPEN_MODAL, {
       type: m.jXE.GIF_PICKER_AVATAR_OR_BANNER_MODAL,
+      location_stack: y,
       location: {
         page: R
       }
     })
-  }, [R]);
-  let k = P === x.pC.AVATAR || P === x.pC.BANNER,
-    L = (0, f.M)(!k);
+  }, [y, R]);
+  let S = P === x.pC.AVATAR || P === x.pC.BANNER,
+    L = (0, _.M)(!S);
   return (0, i.jsx)(s.Gt, {
     value: y,
     children: (0, i.jsxs)(r.Y0X, {
@@ -115,13 +117,14 @@ function b(e) {
           className: l()(h.gifPicker, {
             [h.loadingOverlay]: j
           }),
-          onSelectGIF: I,
+          onSelectGIF: k,
           hideFavorites: !0
         }), j && (0, i.jsx)(r.$jN, {
           className: h.spinner
         })]
-      }), E && L && (0, i.jsx)(_.Z, {
+      }), E && L && (0, i.jsx)(f.Z, {
         uploadType: P,
+        analyticsSource: I,
         showUpsell: !0,
         className: h.nitroUpsell
       })]

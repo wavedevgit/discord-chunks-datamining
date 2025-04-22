@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  C: () => P,
+  C: () => R,
   Z: () => M
 }), n(953529), n(388685);
 var r = n(200651),
@@ -43,13 +43,13 @@ function C(e, t) {
   })
 }
 
-function P(e) {
+function R(e) {
   let t = "description" in e && null != e.description ? "".concat(e.name, ", ").concat(e.description) : e.name;
   return y.intl.formatToPlainString(y.t.rk6pOz, {
     stickerName: t
   })
 }
-let R = e => {
+let P = e => {
     let {
       children: t,
       hasError: n,
@@ -133,9 +133,9 @@ let R = e => {
     }, [o, t, u]), null == N) ? null : (0, r.jsx)("div", {
       role: "img",
       className: d,
-      "aria-label": S ? y.intl.string(y.t.yEvsKy) : P(o),
+      "aria-label": S ? y.intl.string(y.t.yEvsKy) : R(o),
       ref: _,
-      children: (0, r.jsx)(R, {
+      children: (0, r.jsx)(P, {
         hasError: S,
         isLoading: O,
         maskAsset: f,
@@ -185,7 +185,7 @@ let R = e => {
       children: (0, r.jsx)("div", {
         className: o()(l, v.__invalid_pngImageWrapper),
         ref: u,
-        children: (0, r.jsx)(R, {
+        children: (0, r.jsx)(P, {
           hasError: E,
           isLoading: m,
           maskAsset: c,
@@ -193,7 +193,7 @@ let R = e => {
           withLoadingIndicator: f,
           children: C((0, r.jsx)("img", {
             className: v.pngImage,
-            alt: P(n),
+            alt: R(n),
             src: A,
             draggable: !1,
             onError: w,

@@ -162,7 +162,6 @@ function Q(e) {
             children: [(0, i.jsx)(N.Z, {
               user: t,
               className: K.username,
-              themeType: Y.lY.POPOUT,
               nickname: L.ZP.getName(null, null, t),
               onOpenProfile: ee ? void 0 : ex,
               pronouns: null == et ? void 0 : et.pronouns,

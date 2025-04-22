@@ -117,8 +117,8 @@ function C(e) {
     guildId: t,
     leaderboardId: _
   }), {
-    leaderboardsDisabled: P
-  } = (0, h.O)(t, _), R = null != A && null != S ? () => {
+    leaderboardsDisabled: R
+  } = (0, h.O)(t, _), P = null != A && null != S ? () => {
     f.default.track(b.rMx.LEADERBOARD_USER_DATA_REFRESH_REQUESTED, {
       leaderboard_id: _,
       guild_id: t
@@ -126,7 +126,7 @@ function C(e) {
       riotConnectionId: S.id,
       lolConnectionId: A.id
     })
-  } : b.dG4, w = null == S || P ? y.intl.string(y.t["0yRXHx"]) : y.intl.string(y.t["KWpU6+"]), {
+  } : b.dG4, w = null == S || R ? y.intl.string(y.t["0yRXHx"]) : y.intl.string(y.t["KWpU6+"]), {
     lastUpdateRequested: D,
     statisticLastUpdatedDate: L
   } = (0, g.Z)({
@@ -160,7 +160,7 @@ function C(e) {
           children: [C.leaderboard_id === E.z && null != S && (0, r.jsx)(o.sNh, {
             id: "refresh-my-data",
             label: y.intl.string(y.t.iopWUV),
-            action: R,
+            action: P,
             disabled: x,
             subtext: M
           }), (0, r.jsx)(o.sNh, {

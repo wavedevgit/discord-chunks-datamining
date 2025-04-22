@@ -66,10 +66,10 @@ let y = ["discordapp.com/gifts", "discord.com/gifts"],
   A = "abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789",
   N = (e, t) => Array(t).fill(void 0).map(() => "[".concat(A, "]{").concat(e, "}")).join("-?"),
   C = N(4, 4),
-  P = N(4, 6),
-  R = N(5, 3),
+  R = N(4, 6),
+  P = N(5, 3),
   w = "WUMP-?",
-  D = [C, P, R, "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}"].join("|"),
+  D = [C, R, P, "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}"].join("|"),
   L = new RegExp("^(".concat(w, ")?(").concat(D, ")$")),
   x = "-";
 var M = function(e) {

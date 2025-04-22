@@ -96,8 +96,9 @@ function G(e) {
   (0, v.Z)(en, M.Y_.TRY_IT_OUT);
   let {
     analyticsLocations: ei,
-    sourceAnalyticsLocations: er
-  } = (0, d.ZP)(c.Z.USER_SETTINGS_TRY_OUT_PREMIUM), es = e => {
+    newestAnalyticsLocation: er,
+    sourceAnalyticsLocations: es
+  } = (0, d.ZP)(c.Z.USER_SETTINGS_TRY_OUT_PREMIUM), el = e => {
     if (e) {
       if ((0, a.I5)(q), (0, S.z5)(K), (0, S.ho)(X), null != J) {
         let e = m.Z.getProduct(J.skuId);
@@ -114,18 +115,18 @@ function G(e) {
       location: {
         page: L.ZY5.USER_SETTINGS
       },
-      location_stack: er
+      location_stack: es
     })
-  }, [er, G, F]);
-  let el = (null == (n = (0, b.N)()) || null == (t = n.subscription_trial) ? void 0 : t.sku_id) === B.Si.TIER_2,
-    ea = (0, f.Ng)(),
-    eo = (0, f.Wp)(ea, B.Si.TIER_2),
-    ec = "TryOutPremiumSection";
+  }, [es, G, F]);
+  let ea = (null == (n = (0, b.N)()) || null == (t = n.subscription_trial) ? void 0 : t.sku_id) === B.Si.TIER_2,
+    eo = (0, f.Ng)(),
+    ec = (0, f.Wp)(eo, B.Si.TIER_2),
+    ed = "TryOutPremiumSection";
   return ((0, o.j)({
-    location: ec + " auto on",
+    location: ed + " auto on",
     autoTrackExposure: !0
   }), (0, o.j)({
-    location: ec + " auto off",
+    location: ed + " auto off",
     autoTrackExposure: !1
   }), H) ? (0, i.jsx)(d.Gt, {
     value: ei,
@@ -198,24 +199,29 @@ function G(e) {
             initialSelectedEffectId: $,
             user: G,
             sectionTitle: U.intl.string(U.t.wR5wOj)
-          }, "effect"), !el && (0, i.jsx)(l.Text, {
+          }, "effect"), !ea && (0, i.jsx)(l.Text, {
             variant: "text-sm/normal",
             children: U.intl.string(U.t["smo74+"])
           })]
         })
-      }), !el && (0, i.jsx)(E.p, {
-        onSubscribeModalClose: es,
+      }), !ea && (0, i.jsx)(E.p, {
+        onSubscribeModalClose: el,
         className: V.floatingUpsell,
         showUpsell: !0,
         text: U.intl.format(U.t.TmfgIy, {
-          onClick: () => (0, C.y)(es)
+          onClick: () => {
+            (0, C.y)({
+              analyticsSource: er,
+              onSubscribeFinish: el
+            })
+          }
         }),
-        button: z ? U.intl.string(U.t.AfRWIy) : eo ? U.intl.formatToPlainString(U.t.bkQ4bG, {
-          percent: null == ea ? void 0 : ea.discount.amount
+        button: z ? U.intl.string(U.t.AfRWIy) : ec ? U.intl.formatToPlainString(U.t.bkQ4bG, {
+          percent: null == eo ? void 0 : eo.discount.amount
         }) : U.intl.string(U.t.pj0XBA),
         position: "inline",
         showShadow: !1
-      }), el && (0, i.jsxs)("div", {
+      }), ea && (0, i.jsxs)("div", {
         children: [(0, i.jsx)("div", {
           className: V.premiumTier2Divider
         }), (0, i.jsx)(j.ZP, {

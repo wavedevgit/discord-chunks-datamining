@@ -29,8 +29,8 @@ var r = n(654861),
   A = n(868616),
   N = n(450109),
   C = n(159846),
-  P = n(615830),
-  R = n(314897),
+  R = n(615830),
+  P = n(314897),
   w = n(592125),
   D = n(131951),
   L = n(19780),
@@ -475,8 +475,8 @@ class eb extends d.Z {
       active: !1
     });
     let u = D.Z.getMediaEngine(),
-      d = P.Z.getPersistentCodesEnabled(),
-      p = null != (s = R.default.getStaticAuthSessionId()) ? s : void 0,
+      d = R.Z.getPersistentCodesEnabled(),
+      p = null != (s = P.default.getStaticAuthSessionId()) ? s : void 0,
       h = u.connect(this.context, this.userId, eo({
         ssrc: i,
         address: t,

@@ -83,22 +83,22 @@ function C(e, t) {
   return [e, e.clone().add(1, t)]
 }
 
-function P(e) {
+function R(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
   return C(l()().startOf(e).add(t, e), e)
 }
 
-function R(e, t, n) {
+function P(e, t, n) {
   return C(l()(e, t).local(), n)
 }
 
 function w() {
   return {
-    [y.intl.string(y.t.HYiVER)]: () => P("day"),
-    [y.intl.string(y.t.cu86KC)]: () => P("day", -1),
-    [y.intl.string(y.t["FvBj//"])]: () => P("week"),
-    [y.intl.string(y.t["20uWCw"])]: () => P("month"),
-    [y.intl.string(y.t["dXC/ho"])]: () => P("year")
+    [y.intl.string(y.t.HYiVER)]: () => R("day"),
+    [y.intl.string(y.t.cu86KC)]: () => R("day", -1),
+    [y.intl.string(y.t["FvBj//"])]: () => R("week"),
+    [y.intl.string(y.t["20uWCw"])]: () => R("month"),
+    [y.intl.string(y.t["dXC/ho"])]: () => R("year")
   }
 }
 let D = "([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})",
@@ -125,7 +125,7 @@ function B(e) {
 function V(e, t) {
   let n, r, i = e.getFullMatch().trim().toLowerCase(),
     a = w()[i];
-  return null != a ? [n, r] = a() : T().has(i) ? [n, r] = R(i, "MMMM", "month") : A().has(i) ? [n, r] = R(i, "dddd", "day") : N().has(i) ? [n, r] = R(i, "YYYY", "year") : [n, r] = R(i, b.b2L, "day"), !!(n.isValid() && r.isValid()) && ("before" === t ? (r = n, n = null) : "after" === t && (n = r, r = null), e.setData("start", n), e.setData("end", r), !0)
+  return null != a ? [n, r] = a() : T().has(i) ? [n, r] = P(i, "MMMM", "month") : A().has(i) ? [n, r] = P(i, "dddd", "day") : N().has(i) ? [n, r] = P(i, "YYYY", "year") : [n, r] = P(i, b.b2L, "day"), !!(n.isValid() && r.isValid()) && ("before" === t ? (r = n, n = null) : "after" === t && (n = r, r = null), e.setData("start", n), e.setData("end", r), !0)
 }
 
 function F(e) {

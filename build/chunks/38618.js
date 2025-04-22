@@ -36,9 +36,9 @@ function C(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let P = window.DiscordNative;
+let R = window.DiscordNative;
 I.Wb.dispatcher.getDispatchHandler = T.Z;
-let R = new c.Z("ConnectionStore"),
+let P = new c.Z("ConnectionStore"),
   w = 100,
   D = 0,
   L = null,
@@ -46,15 +46,15 @@ let R = new c.Z("ConnectionStore"),
   M = null;
 
 function k() {
-  return I.Wb.isClosed() ? (R.verbose("Socket is reconnecting because of starting new session"), I.Wb.connect()) : (R.verbose("Socket is not reconnecting during a new session because it is not closed"), !1)
+  return I.Wb.isClosed() ? (P.verbose("Socket is reconnecting because of starting new session"), I.Wb.connect()) : (P.verbose("Socket is not reconnecting during a new session because it is not closed"), !1)
 }
 
 function j(e) {
-  e.isSwitchingAccount && I.RR.handleAccountSwitch(), R.verbose("Closing socket because of logout"), I.Wb.close()
+  e.isSwitchingAccount && I.RR.handleAccountSwitch(), P.verbose("Closing socket because of logout"), I.Wb.close()
 }
 
 function U() {
-  return R.verbose("session refresh dispatched", {
+  return P.verbose("session refresh dispatched", {
     isEstablished: I.Wb.isSessionEstablished()
   }), !!I.Wb.isSessionEstablished() && (I.Wb.close(), I.Wb.connect())
 }
@@ -64,7 +64,7 @@ async function G(e) {
     n = E.Z.getVoiceChannelId();
   if (null != n) {
     var r, i, a, o, s, c, u, d;
-    if ((null == (s = window) || null == (o = s.performance) || null == (a = o.getEntriesByType) || null == (i = a.call(o, "navigation")) || null == (r = i[0]) ? void 0 : r.type) !== "reload" && (null == (c = await (null == P || null == (d = P.processUtils) || null == (u = d.getLastCrash) ? void 0 : u.call(d))) ? void 0 : c.rendererCrashReason) == null && x) m.Z.setLastSessionVoiceChannelId(null != n ? n : null), l.default.selectVoiceChannel(null);
+    if ((null == (s = window) || null == (o = s.performance) || null == (a = o.getEntriesByType) || null == (i = a.call(o, "navigation")) || null == (r = i[0]) ? void 0 : r.type) !== "reload" && (null == (c = await (null == R || null == (d = R.processUtils) || null == (u = d.getLastCrash) ? void 0 : u.call(d))) ? void 0 : c.rendererCrashReason) == null && x) m.Z.setLastSessionVoiceChannelId(null != n ? n : null), l.default.selectVoiceChannel(null);
     else {
       let e = p.Z.getChannel(n);
       null != e && (t = {
@@ -77,7 +77,7 @@ async function G(e) {
 }
 
 function B() {
-  R.verbose("connection closed dispatched"), D = Date.now()
+  P.verbose("connection closed dispatched"), D = Date.now()
 }
 
 function V(e) {

@@ -39,7 +39,7 @@ function C(e, t, n) {
   }) : e[t] = n, e
 }
 
-function P(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,7 +52,7 @@ function P(e) {
   return e
 }
 
-function R(e, t) {
+function P(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -64,7 +64,7 @@ function R(e, t) {
 }
 
 function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -191,7 +191,7 @@ let G = {
   async transitionToGuildSync(e, t, n, r) {
     let i = U((await j(e)).id, n),
       a = t;
-    (null == t ? void 0 : t.hasOwnProperty("welcomeModalChannelId")) && null == t.welcomeModalChannelId && (a = w(P({}, t), {
+    (null == t ? void 0 : t.hasOwnProperty("welcomeModalChannelId")) && null == t.welcomeModalChannelId && (a = w(R({}, t), {
       welcomeModalChannelId: null != i ? i : void 0
     })), (0, c.Z)(A.Z5c.CHANNEL(e, i, r), a), await new Promise(setImmediate)
   },
@@ -335,7 +335,7 @@ let G = {
       unicodeEmoji: i
     } = n, o = D(n, ["icon", "unicodeEmoji"]), s = null === r || (null == r ? void 0 : r.startsWith("data:")) ? r : void 0, c = await a.tn.patch({
       url: A.ANM.GUILD_ROLE(e, t),
-      body: w(P({}, o), {
+      body: w(R({}, o), {
         icon: s,
         unicode_emoji: i
       }),

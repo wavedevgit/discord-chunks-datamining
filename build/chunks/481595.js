@@ -29,8 +29,8 @@ var r = n(200651),
   A = n(630388),
   N = n(669079),
   C = n(987209),
-  P = n(563132),
-  R = n(45572),
+  R = n(563132),
+  P = n(45572),
   w = n(435020),
   D = n(119226),
   L = n(982204),
@@ -77,7 +77,7 @@ function U(e) {
     devShelfFetchState: q,
     setPurchasePreviewError: Q,
     hasPaymentSources: X
-  } = (0, P.JL)(), {
+  } = (0, R.JL)(), {
     isGift: J,
     giftRecipient: $
   } = (0, C.wD)(), ee = J && (0, N.pO)($), {
@@ -97,7 +97,7 @@ function U(e) {
   let el = (0, l.e7)([h.Z, S.Z], () => S.Z.inTestModeForApplication(U.id) || h.Z.inDevModeForApplication(U.id), [U.id]),
     ec = (0, l.e7)([y.Z], () => y.Z.enabled),
     eu = s.M.EEA_COUNTRIES.has(v.Z.ipCountryCodeWithFallback),
-    ed = G === R.A.PURCHASING || G === R.A.COMPLETED,
+    ed = G === P.A.PURCHASING || G === P.A.COMPLETED,
     ef = (0, w.m)(B, V),
     e_ = null != ef ? ef.type : null;
   i.useEffect(() => {

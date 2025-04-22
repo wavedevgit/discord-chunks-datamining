@@ -27,7 +27,7 @@ function m(e) {
     onItemClick: y
   } = e, v = null != (t = null == g ? void 0 : g.id) ? t : null == m ? void 0 : m.id, O = f.Z.getGuild(E), I = (0, a.e7)([_.Z], () => null != O ? _.Z.can(p.Plq.MANAGE_GUILD, O) : null), S = !0, T = !0, A = (0, c.LD)(E, T), N = (0, c.PL)(S, T), {
     isUserApp: C,
-    isGuildApp: P
+    isGuildApp: R
   } = i.useMemo(() => {
     var e, t, n, r;
     if (null == v) return {
@@ -50,7 +50,7 @@ function m(e) {
   i.useEffect(() => {
     n(360606)
   }, []);
-  let R = i.useCallback(() => {
+  let P = i.useCallback(() => {
       (null == O ? void 0 : O.id) != null && (u.Z.open(O.id, p.pNK.INTEGRATIONS), s.Z.setSection(p.b4C.APPLICATION, v), null == y || y())
     }, [v, null == O ? void 0 : O.id, y]),
     w = i.useCallback(() => {
@@ -62,10 +62,10 @@ function m(e) {
     }, [g, y, m]);
   if (b === p.IlC.POPOUT) return null;
   let D = [];
-  return P && I && D.push((0, r.jsx)(o.sNh, {
+  return R && I && D.push((0, r.jsx)(o.sNh, {
     id: "manage-server-integration",
     label: h.intl.string(h.t.IuSJT0),
-    action: R
+    action: P
   }, "manage-server-integration")), C && D.push((0, r.jsx)(o.sNh, {
     id: "manage-authorized-app",
     label: h.intl.string(h.t.V8ruv7),
