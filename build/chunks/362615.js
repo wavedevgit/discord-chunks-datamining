@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  c: () => p
+  c: () => h
 }), n(539854);
 var r = n(358221),
   i = n(569545),
@@ -11,9 +11,10 @@ var r = n(358221),
   l = n(557457),
   c = n(458725),
   u = n(442741),
-  d = n(150457);
+  d = n(150457),
+  f = n(981631);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,29 +23,29 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
-let p = {
+let h = {
   getActiveErrors: () => (0, d.LN)() ? a.Z.getAllActiveStreams().reduce((e, t) => {
     var n;
     let a = null == (n = s.Z.getRTCConnection((0, i.V9)(t))) ? void 0 : n.getMediaEngineConnectionId();
-    if (null == a || t.ownerId === o.default.getId()) return e;
-    let f = (0, d.hj)(a, t.ownerId);
-    if (null == f) return e;
-    let p = r.Z.getParticipant(t.channelId, (0, i.V9)(t));
-    if (null == p) return e;
-    let h = (0, l.Wc)(p);
-    return null == h || (f.short.frameRate < (0, d.dj)(h.maxFrameRate) || f.long.frameRate < (0, d.dj)(h.maxFrameRate)) && e.push(_({
+    if (null == a || t.ownerId === o.default.getId() || t.state === f.jm8.PAUSED) return e;
+    let _ = (0, d.hj)(a, t.ownerId);
+    if (null == _) return e;
+    let h = r.Z.getParticipant(t.channelId, (0, i.V9)(t));
+    if (null == h) return e;
+    let m = (0, l.Wc)(h);
+    return null == m || (_.short.frameRate < (0, d.dj)(m.maxFrameRate) || _.long.frameRate < (0, d.dj)(m.maxFrameRate)) && e.push(p({
       type: c.u.STREAM_VIEW_LOW_FPS
     }, (0, u.rT)((0, i.V9)(t)))), e
   }, []) : null,
