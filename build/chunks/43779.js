@@ -20,8 +20,8 @@ var r = n(200651),
   b = n(65443),
   j = n(69439),
   v = n(46140),
-  y = n(642145),
-  _ = n(388032),
+  _ = n(642145),
+  y = n(388032),
   C = n(882067);
 let O = async () => await n.e("67963").then(n.t.bind(n, 145193, 19));
 
@@ -60,7 +60,7 @@ function w(e) {
         })
       }
       return e
-    }({}, y.Y), S = S = {
+    }({}, _.Y), S = S = {
       clamp: !0
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(w, Object.getOwnPropertyDescriptors(S)) : (function(e, t) {
       var n = Object.keys(e);
@@ -74,23 +74,23 @@ function w(e) {
     }), w)
   }), Q = (null == (n = P.userStatus) ? void 0 : n.completedAt) != null, U = (null == (s = P.userStatus) ? void 0 : s.claimedAt) != null, {
     completedRatio: H,
-    completedRatioDisplay: z
-  } = (0, p.I)(P), F = (0, p.Bd)(P), X = o.useCallback(e => (0, r.jsx)(c.Text, {
+    completedRatioDisplay: F
+  } = (0, p.I)(P), z = (0, p.Bd)(P), X = o.useCallback(e => (0, r.jsx)(c.Text, {
     variant: "text-md/semibold",
     color: "text-normal",
     tag: "span",
     className: C.header,
     children: e
-  }, "".concat(P.id, "_reward")), [P.id]), K = o.useMemo(() => U ? X(q) : _.intl.format(_.t["0IUT4e"], {
+  }, "".concat(P.id, "_reward")), [P.id]), K = o.useMemo(() => U ? X(q) : y.intl.format(y.t["0IUT4e"], {
     rewardWithArticleHook: () => X(I)
   }), [q, U, X, I]), Y = o.useMemo(() => {
-    if (null != F) return (0, r.jsx)(c.Text, {
+    if (null != z) return (0, r.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
       className: C.description,
-      children: F
+      children: z
     })
-  }, [F]), G = (0, l.e7)([u.Z], () => u.Z.useReducedMotion);
+  }, [z]), G = (0, l.e7)([u.Z], () => u.Z.useReducedMotion);
   return (0, r.jsxs)("div", {
     className: C.container,
     children: [(0, r.jsxs)(i.animated.div, {
@@ -114,7 +114,7 @@ function w(e) {
             quest: P,
             size: 76,
             percentComplete: H,
-            percentCompleteText: T && !(0, m.zi)(P) ? z : void 0,
+            percentCompleteText: T && !(0, m.zi)(P) ? F : void 0,
             children: (0, r.jsx)("div", {
               className: C.circularRewardTileWrapper,
               children: (0, r.jsx)(h.Z, {
@@ -142,7 +142,7 @@ function w(e) {
           variant: "eyebrow",
           color: "text-brand",
           className: C.questName,
-          children: _.intl.format(_.t.EAYZAg, {
+          children: y.intl.format(y.t.EAYZAg, {
             questName: P.config.messages.questName
           })
         }), (0, r.jsx)(c.Text, {

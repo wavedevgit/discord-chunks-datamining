@@ -25,7 +25,7 @@ function h(e) {
     contentPosition: c,
     rowIndex: u,
     impressionRef: h
-  } = e, [b, j] = o.useState(!1), [v, y] = o.useState([]), _ = (0, l.qb)(t), C = o.useMemo(() => (0, d.q8)(t), [t]), O = (0, i._F)(), w = o.useCallback(() => {
+  } = e, [b, j] = o.useState(!1), [v, _] = o.useState([]), y = (0, l.qb)(t), C = o.useMemo(() => (0, d.q8)(t), [t]), O = (0, i._F)(), w = o.useCallback(() => {
     j(!0), O({
       questId: t.id,
       event: g.rMx.QUEST_HOVER,
@@ -52,14 +52,14 @@ function h(e) {
       quest: t,
       isHovering: b,
       errorHints: v,
-      warningHints: _
+      warningHints: y
     }), (0, r.jsx)(f.Z, {
       quest: t,
       questContent: s,
       isHovering: b,
       contentPosition: c,
       rowIndex: u,
-      onReceiveErrorHints: y
+      onReceiveErrorHints: _
     })]
   })
 }

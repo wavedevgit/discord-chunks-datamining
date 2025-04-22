@@ -25,9 +25,9 @@ let b = ["#51BC9D"],
       overlayRef: s,
       quest: j,
       progressBarRef: v,
-      isExpanded: y
+      isExpanded: _
     } = e, {
-      completionSpring: _,
+      completionSpring: y,
       startCompletionAnimation: C
     } = (0, f.G)(), O = (null == (t = j.userStatus) ? void 0 : t.completedAt) != null, w = o.useRef(!1), S = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), P = o.useRef(null), E = (0, d.e7)([m.Z], () => m.Z.hasLayers()), T = (0, u.Z)(E), [N, A] = o.useState(null), [R, B] = o.useState(null), k = o.useRef(new i.qA({
       gravity: 0,
@@ -110,10 +110,10 @@ let b = ["#51BC9D"],
           Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
         }), a), 100)
       }
-    }, [v, P, q, S]), I = (0, u.Z)(y);
+    }, [v, P, q, S]), I = (0, u.Z)(_);
     return (o.useEffect(() => {
-      O && y && !I && (C(), D())
-    }, [y, O, C, D, I]), o.useEffect(() => {
+      O && _ && !I && (C(), D())
+    }, [_, O, C, D, I]), o.useEffect(() => {
       O && !E && T && setTimeout(() => {
         C(), D()
       }, 200)
@@ -126,12 +126,12 @@ let b = ["#51BC9D"],
       children: [(0, r.jsx)(c.animated.div, {
         className: x.background,
         style: {
-          opacity: _
+          opacity: y
         }
       }), (0, r.jsx)(c.animated.div, {
         className: a()(x.borders, x.bordersTopLeft),
         style: {
-          opacity: _
+          opacity: y
         }
       }), (0, r.jsxs)(c.animated.div, {
         className: x.confettiWrapper,
@@ -154,7 +154,7 @@ let b = ["#51BC9D"],
         }), null != s.current && (0, l.createPortal)((0, r.jsx)(c.animated.div, {
           className: a()(x.borders, x.bordersBottom),
           style: {
-            opacity: _
+            opacity: y
           }
         }), s.current)]
       })]

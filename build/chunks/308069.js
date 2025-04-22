@@ -25,8 +25,8 @@ let j = e => {
     onCtxMenuSelect: s,
     onCtxMenuOpen: j,
     onCtxMenuClose: v,
-    useReducedMotion: y,
-    isExpanded: _,
+    useReducedMotion: _,
+    isExpanded: y,
     isExpansionAnimationComplete: C
   } = e, O = (0, d.aM)(), w = o.useCallback(() => {
     (0, g.openDisclosureModal)(t, {
@@ -39,7 +39,7 @@ let j = e => {
       ctaContent: c.jZ.OPEN_GAME_LINK,
       impressionId: O
     })
-  }, [O, t]), P = _ && C, E = (0, r.jsx)(l.P3F, {
+  }, [O, t]), P = y && C, E = (0, r.jsx)(l.P3F, {
     onClick: S,
     className: a()(b.clickable, {
       [b.logo]: P
@@ -74,7 +74,7 @@ let j = e => {
       expansionSpring: n,
       isFullyExpanded: P,
       partnerBranding: E,
-      useReducedMotion: y
+      useReducedMotion: _
     }), (0, r.jsxs)(i.animated.div, {
       className: b.promotedBadgeWrapper,
       style: {

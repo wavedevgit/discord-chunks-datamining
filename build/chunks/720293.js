@@ -11,7 +11,7 @@ var r = n(475595),
   }({});
 
 function o(e, t) {
-  var n, r, i, a, o, s, l, c, u;
+  var n, r, i, a, o, s, l, c, u, d, f, _, p, h, m;
   switch (e) {
     case "video_player_video":
       return null == (n = t.config.videoMetadata) ? void 0 : n.assets.videoPlayerVideo;
@@ -26,11 +26,11 @@ function o(e, t) {
     case "video_player_transcript":
       return null == (s = t.config.videoMetadata) ? void 0 : s.assets.videoPlayerTranscript;
     case "quest_bar_preview_video":
-      return null == (l = t.config.videoMetadata) ? void 0 : l.assets.questBarPreviewVideo;
+      return null != (u = null != (c = null == (l = t.config.videoMetadata) ? void 0 : l.assets.questBarPreviewVideo) ? c : t.config.assets.questBarHeroVideo) ? u : void 0;
     case "quest_bar_preview_thumbnail":
-      return null == (c = t.config.videoMetadata) ? void 0 : c.assets.questBarPreviewThumbnail;
+      return null != (_ = null == (d = t.config.videoMetadata) ? void 0 : d.assets.questBarPreviewThumbnail) ? _ : null == (f = t.config.videoMetadata) ? void 0 : f.assets.videoPlayerThumbnail;
     case "quest_home_video":
-      return null == (u = t.config.videoMetadata) ? void 0 : u.assets.questHomeVideo;
+      return null != (m = null != (h = null == (p = t.config.videoMetadata) ? void 0 : p.assets.questHomeVideo) ? h : t.config.assets.heroVideo) ? m : void 0;
     default:
       return
   }

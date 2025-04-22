@@ -88,7 +88,7 @@ function v(e) {
   })
 }
 
-function y(e) {
+function _(e) {
   let {
     quest: t,
     xboxAccounts: n,
@@ -138,7 +138,7 @@ function y(e) {
   })
 }
 
-function _(e) {
+function y(e) {
   let {
     xboxAndPlaystationAccounts: t,
     quest: n
@@ -158,6 +158,6 @@ function C(e) {
       color: "text-muted",
       variant: "text-xs/medium",
       children: x.intl.string(x.t.EJFSvL)
-    }), t ? (0, r.jsx)(y, b({}, e)) : (0, r.jsx)(_, b({}, e))]
+    }), t ? (0, r.jsx)(_, b({}, e)) : (0, r.jsx)(y, b({}, e))]
   })
 }

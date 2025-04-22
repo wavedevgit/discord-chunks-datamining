@@ -20,8 +20,8 @@ var r = n(200651),
   b = n(113434),
   j = n(569984),
   v = n(497505),
-  y = n(918701),
-  _ = n(865364),
+  _ = n(918701),
+  y = n(865364),
   C = n(373370),
   O = n(475595),
   w = n(566078),
@@ -74,7 +74,7 @@ function L(e) {
     style: t,
     onClick: n
   } = e;
-  return (0, _.O)({
+  return (0, y.O)({
     location: R.dr.QUESTS_BAR,
     autoTrackExposure: !0
   }) ? (0, r.jsx)(u.zxk, {
@@ -90,15 +90,15 @@ function L(e) {
 let Z = o.forwardRef(function(e, t) {
   var n, s;
   let {
-    children: _,
+    children: y,
     className: Z,
     collapsedHeight: W,
     expansionSpring: V,
     isExpanded: Q,
     isExpansionAnimationComplete: U,
     onCtxMenuOpen: H,
-    onCtxMenuClose: z,
-    onCtxMenuSelect: F,
+    onCtxMenuClose: F,
+    onCtxMenuSelect: z,
     quest: X,
     useReducedMotion: K
   } = e, Y = (0, l.e7)([j.Z], () => j.Z.isEnrolling(X.id), [X]), G = (0, x.aM)(), J = (0, b.B6)(X.config.expiresAt), $ = w.r.build(X.config), ee = (0, b.B6)($.rewardsExpireAt), et = o.useMemo(() => (0, O.fh)(X, O.eC.HERO), [X]), en = (0, A.tP)($.application.id), er = $.features.has(R.S7.START_QUEST_CTA) ? g.jZ.START_QUEST : g.jZ.ACCEPT_QUEST, eo = $.features.has(R.S7.START_QUEST_CTA) ? q.intl.string(q.t.E80Bdn) : q.intl.string(q.t.l7E81t), es = o.useCallback(() => {
@@ -110,12 +110,12 @@ let Z = o.forwardRef(function(e, t) {
     quest: X,
     location: v.jn.QUEST_BAR
   }), ei = o.useCallback(() => {
-    (0, y.FE)(X, {
+    (0, _.FE)(X, {
       content: v.jn.QUEST_BAR,
       ctaContent: g.jZ.OPEN_GAME_LINK,
       impressionId: G
     })
-  }, [G, X]), el = $.features.has(R.S7.POST_ENROLLMENT_CTA), ec = (0, b.Rf)(X), ed = (0, b.Jf)(X), eu = null != ed ? ed.progress > 0 : ec.progressSeconds > 0, ep = (null == (n = X.userStatus) ? void 0 : n.enrolledAt) != null, em = (null == (s = X.userStatus) ? void 0 : s.completedAt) != null, ef = o.useMemo(() => (0, y.Xv)(X.config), [X.config]), eg = Q && U, ex = (0, C.DD)({
+  }, [G, X]), el = $.features.has(R.S7.POST_ENROLLMENT_CTA), ec = (0, b.Rf)(X), ed = (0, b.Jf)(X), eu = null != ed ? ed.progress > 0 : ec.progressSeconds > 0, ep = (null == (n = X.userStatus) ? void 0 : n.enrolledAt) != null, em = (null == (s = X.userStatus) ? void 0 : s.completedAt) != null, ef = o.useMemo(() => (0, _.Xv)(X.config), [X.config]), eg = Q && U, ex = (0, C.DD)({
     quest: X,
     taskDetails: ec,
     location: R.dr.QUESTS_BAR,
@@ -146,7 +146,7 @@ let Z = o.forwardRef(function(e, t) {
         output: [0, W]
       })], (e, t) => "translateY(calc(".concat(e, "% + ").concat(t, "px))"))
     },
-    children: [_, (0, r.jsx)("div", {
+    children: [y, (0, r.jsx)("div", {
       "aria-hidden": !eg,
       children: ep ? (0, r.jsxs)("div", {
         className: D.questAcceptedContent,
@@ -165,7 +165,7 @@ let Z = o.forwardRef(function(e, t) {
               children: [(0, r.jsx)(u.X6q, {
                 color: "always-white",
                 variant: "heading-sm/semibold",
-                children: (0, y.AV)({
+                children: (0, _.AV)({
                   quest: X,
                   taskDetails: ec,
                   thirdPartyTaskDetails: null != ed ? ed : void 0
@@ -183,8 +183,8 @@ let Z = o.forwardRef(function(e, t) {
             })]
           }), (0, r.jsx)(N.r, {
             onOpen: H,
-            onClose: z,
-            onSelect: F,
+            onClose: F,
+            onSelect: z,
             questContent: v.jn.QUEST_BAR,
             quest: X,
             shouldShowDisclosure: !1,
@@ -227,8 +227,8 @@ let Z = o.forwardRef(function(e, t) {
               color: "always-white"
             }), (0, r.jsx)(N.r, {
               onOpen: H,
-              onClose: z,
-              onSelect: F,
+              onClose: F,
+              onSelect: z,
               questContent: v.jn.QUEST_BAR,
               quest: X,
               shouldShowDisclosure: !0,

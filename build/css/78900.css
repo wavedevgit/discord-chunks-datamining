@@ -1,6 +1,6 @@
 /**
   Module ID: 78900
-  Original File Name: 8ffea6e73b9fc150
+  Original File Name: e6e64b35d05ae938
 **/
 .wrapper_b76891 {
     align-items: center;
@@ -346,15 +346,33 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
+    opacity: 1;
+    transition: opacity .7s;
     width: auto;
     z-index: 0
 }
 
-.heroAsset_b5b7aa,.overlay_b5b7aa {
-    border-radius: 8px 8px 0 0
+.heroAssetVideo_b5b7aa {
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .4s;
+    width: 100%
+}
+
+.hidden_b5b7aa {
+    opacity: 0
+}
+
+.visible_b5b7aa {
+    opacity: 1
 }
 
 .overlay_b5b7aa {
+    border-radius: 8px 8px 0 0;
     height: 170px;
     left: 0;
     position: absolute;
@@ -481,10 +499,6 @@
     top: 0;
     transition: opacity .3s;
     width: 100%
-}
-
-.videoOverlayVisible_b5b7aa {
-    opacity: 1
 }
 
 .rewardTileContainer__8a22c {
@@ -2579,4 +2593,4 @@
     padding-top: 10px
 }
 
-/*# sourceMappingURL=8ffea6e73b9fc150.css.map*/
+/*# sourceMappingURL=e6e64b35d05ae938.css.map*/

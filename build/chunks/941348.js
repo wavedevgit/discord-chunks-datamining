@@ -24,13 +24,13 @@ let p = function(e) {
     quest: b,
     useReducedMotion: j,
     collapsedHeight: v
-  } = e, y = o.useRef(null), _ = o.useRef(null), C = (null == (t = b.userStatus) ? void 0 : t.enrolledAt) != null, O = (0, s.Rf)(b);
+  } = e, _ = o.useRef(null), y = o.useRef(null), C = (null == (t = b.userStatus) ? void 0 : t.enrolledAt) != null, O = (0, s.Rf)(b);
   return (0, r.jsxs)(i.p, {
     expandedContentRef: n,
-    collapsedContentRef: y,
+    collapsedContentRef: _,
     expansionSpring: p,
     children: [(0, r.jsx)(l.Z, {
-      ref: y,
+      ref: _,
       className: u.content,
       expansionSpring: p,
       isExpanded: m,
@@ -45,7 +45,7 @@ let p = function(e) {
       onCtxMenuOpen: g,
       onCtxMenuClose: x,
       onCtxMenuSelect: h,
-      overlayRef: _,
+      overlayRef: y,
       isExpanded: m,
       isExpansionAnimationComplete: f,
       quest: b,
@@ -68,7 +68,7 @@ let p = function(e) {
         })]
       })
     }), (0, r.jsx)("div", {
-      ref: _,
+      ref: y,
       className: u.overlay
     })]
   })
