@@ -172,7 +172,7 @@ function ep(e) {
     user: s,
     displayProfile: i,
     forceShowPremium: !0,
-    profileType: null,
+    themeType: null,
     className: q.profileCard,
     children: [(0, r.jsx)(M.b, {
       user: s,

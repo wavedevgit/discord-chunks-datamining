@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   SK: () => G,
-  ZP: () => V,
+  ZP: () => F,
   sK: () => B
 }), n(953529), n(388685);
 var r = n(200651),
@@ -32,7 +32,7 @@ var r = n(200651),
   N = n(892561),
   C = n(494536);
 
-function R(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -41,14 +41,14 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 
-function P(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      R(e, t, n[t])
+      P(e, t, n[t])
     })
   }
   return e
@@ -146,9 +146,9 @@ function B(e) {
     icon: I,
     description: N,
     presenceCount: C,
-    memberCount: R,
+    memberCount: P,
     emojis: w
-  } = a, U = v, G = (0, s.e7)([m.default], () => m.default.getId()), B = (0, s.e7)([g.ZP], () => g.ZP.isMember(U, G), [U, G]), [F, V] = i.useState(!1), Z = e => {
+  } = a, U = v, G = (0, s.e7)([m.default], () => m.default.getId()), B = (0, s.e7)([g.ZP], () => g.ZP.isMember(U, G), [U, G]), [V, F] = i.useState(!1), Z = e => {
     if (e.stopPropagation(), B)(0, h.XU)(U, c, d);
     else {
       let e = {
@@ -158,7 +158,7 @@ function B(e) {
       };
       (0, b.Ub)(U, e)
     }
-    V(!0)
+    F(!0)
   }, H = E.ZP.getGuildDiscoverySplashURL({
     id: v,
     splash: O,
@@ -235,7 +235,7 @@ function B(e) {
               membersOnline: C
             })
           })]
-        }) : null, null != R ? (0, r.jsxs)("div", {
+        }) : null, null != P ? (0, r.jsxs)("div", {
           className: A.memberCount,
           children: [(0, r.jsx)("div", {
             className: A.dotOffline
@@ -243,7 +243,7 @@ function B(e) {
             variant: "text-xs/normal",
             className: A.memberText,
             children: T.intl.format(T.t.zRl6XV, {
-              count: R
+              count: P
             })
           })]
         }) : null]
@@ -268,7 +268,7 @@ function B(e) {
             });
             return (0, r.jsx)(u.ua7, {
               text: ":".concat(e.name, ":"),
-              children: e => (0, r.jsx)("img", D(P({}, e), {
+              children: e => (0, r.jsx)("img", D(R({}, e), {
                 width: j,
                 height: j,
                 src: t,
@@ -290,7 +290,7 @@ function B(e) {
         color: u.zxk.Colors.BRAND,
         size: u.zxk.Sizes.SMALL,
         onClick: Z,
-        submitting: F,
+        submitting: V,
         autoFocus: !0,
         children: T.intl.string(T.t["K+WeR0"])
       })]
@@ -298,7 +298,7 @@ function B(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     guildId: t,
     channelId: n,
@@ -325,10 +325,10 @@ function F(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   return (0, O.h)() ? (0, r.jsx)(I.Z, {
     setPopoutRef: e.setPopoutRef,
     guildId: e.guildId,
     name: e.name
-  }) : (0, r.jsx)(F, P({}, e))
+  }) : (0, r.jsx)(V, R({}, e))
 }

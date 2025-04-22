@@ -30,9 +30,9 @@ var r = n(200651),
   A = n(998502),
   N = n(981631),
   C = n(188785),
-  R = n(436620);
+  P = n(436620);
 
-function P(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -48,7 +48,7 @@ function w(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      P(e, t, n[t])
+      R(e, t, n[t])
     })
   }
   return e
@@ -106,12 +106,12 @@ let x = (0, h.Un)({
     webpackId: 832462,
     name: "LinkConnectedAccount"
   }),
-  F = (0, h.Un)({
+  V = (0, h.Un)({
     createPromise: () => n.e("46455").then(n.bind(n, 924339)),
     webpackId: 924339,
     name: "LinkAuthorize"
   }),
-  V = (0, h.Un)({
+  F = (0, h.Un)({
     createPromise: () => Promise.all([n.e("53419"), n.e("69773")]).then(n.bind(n, 197528)),
     webpackId: 197528,
     name: "ActivateDevice"
@@ -192,7 +192,7 @@ class er extends i.Component {
       migrationStatus: n,
       skipsSettingDefaultPageTitle: i
     } = this.props;
-    return e = n === g.P.IN_PROGRESS ? null : R.KO ? T.isPlatformEmbedded ? (0, r.jsxs)(o.rs, {
+    return e = n === g.P.IN_PROGRESS ? null : P.KO ? T.isPlatformEmbedded ? (0, r.jsxs)(o.rs, {
       children: [t ? null : (0, r.jsx)(o.AW, {
         path: N.Z5c.ACCOUNT_STANDING,
         component: q
@@ -267,13 +267,13 @@ class er extends i.Component {
         component: B
       }), (0, r.jsx)(p.Z, {
         path: N.Z5c.CONNECTION_LINK_AUTHORIZE(":type"),
-        component: F
+        component: V
       }), (0, r.jsx)(p.Z, {
         path: N.Z5c.ACTIVATE,
-        component: V
+        component: F
       }), (0, r.jsx)(p.Z, {
         path: N.Z5c.ACTIVATE_HANDOFF,
-        component: V
+        component: F
       }), (0, r.jsx)(p.Z, {
         path: N.Z5c.CONNECTIONS_AUTHORIZE_CONTINUE(":type"),
         component: X

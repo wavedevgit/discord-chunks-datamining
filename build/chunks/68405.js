@@ -1,16 +1,16 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  PF: () => V,
+  PF: () => F,
   R7: () => k,
   Tg: () => U,
   UU: () => G,
   gK: () => j,
-  hM: () => P,
+  hM: () => R,
   iy: () => B,
   mO: () => x,
-  t1: () => R,
-  uL: () => F,
+  t1: () => P,
+  uL: () => V,
   v2: () => M,
   yC: () => L
 }), n(704826), n(35282);
@@ -92,7 +92,7 @@ function A(e, t) {
 let N = 250,
   C = /-/g;
 
-function R(e) {
+function P(e) {
   let t = null != e ? {
     [e]: 1
   } : {};
@@ -104,7 +104,7 @@ function R(e) {
   })
 }
 
-function P(e, t) {
+function R(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
   var {
     startTime: r
@@ -125,7 +125,7 @@ function P(e, t) {
 
 function w(e, t, n) {
   let r = Date.now();
-  R(t), o.tn.get({
+  P(t), o.tn.get({
     url: E.ANM.GIFS_SEARCH,
     query: {
       q: e,
@@ -138,7 +138,7 @@ function w(e, t, n) {
     rejectWithError: !0
   }).then(i => {
     let a = i.body;
-    P(a, t, {
+    R(a, t, {
       startTime: r,
       limit: n
     }), l.Z.dispatch({
@@ -261,7 +261,7 @@ function U() {
 
 function G(e) {
   let t = Date.now();
-  R(E.wI2.TRENDING_GIFS), o.tn.get({
+  P(E.wI2.TRENDING_GIFS), o.tn.get({
     url: E.ANM.GIFS_TRENDING_GIFS,
     query: {
       media_format: _.Z.getSelectedFormat(),
@@ -275,7 +275,7 @@ function G(e) {
     let {
       body: r
     } = n;
-    P(r, E.wI2.TRENDING_GIFS, {
+    R(r, E.wI2.TRENDING_GIFS, {
       startTime: t,
       limit: e
     }), l.Z.dispatch({
@@ -294,7 +294,7 @@ function B(e) {
   return null == t ? e : (0, u.MO)(t) ? (0, u.q5)(t).toString() : e
 }
 
-function F(e) {
+function V(e) {
   f.DZ.updateAsync("favoriteGifs", t => {
     var n;
     let r = null != (n = i().max(Object.values(t.gifs).map(e => e.order))) ? n : 0;
@@ -311,7 +311,7 @@ function F(e) {
   }, b.fy.INFREQUENT_USER_ACTION)
 }
 
-function V(e) {
+function F(e) {
   f.DZ.updateAsync("favoriteGifs", t => {
     e in t.gifs ? delete t.gifs[e] : delete t.gifs[B(e)], p.default.track(E.rMx.GIF_UNFAVORITED, {
       total_num_favorited: i().size(t.gifs)

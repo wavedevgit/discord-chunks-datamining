@@ -30,28 +30,28 @@ let u = 20,
       sectionFooterHeight: S,
       renderUpsell: T,
       setShowUpsell: A
-    } = e, N = i.useRef(!1), C = i.useRef(null), R = (0, s.Iu)(e => e.searchQuery), P = d.useStore(e => e.activeCategoryIndex), w = n.map(e => (0, o._O)(e.categoryInfo) ? {
+    } = e, N = i.useRef(!1), C = i.useRef(null), P = (0, s.Iu)(e => e.searchQuery), R = d.useStore(e => e.activeCategoryIndex), w = n.map(e => (0, o._O)(e.categoryInfo) ? {
       isNitroLocked: e.categoryInfo.isNitroLocked
     } : {
       isNitroLocked: !1
     }), D = (0, l.Uf)({
       listRef: C,
-      searchQuery: R,
+      searchQuery: P,
       nitroLockedSectionStates: w,
       setShowUpsell: A
     }), L = (0, l.Qs)({
-      activeCategoryIndex: P,
+      activeCategoryIndex: R,
       isScrolling: N,
       listRef: C,
       onActiveCategoryIndexChange: d.setActiveCategoryIndex,
       scrollOffset: u,
-      searchQuery: R
+      searchQuery: P
     }), x = i.useCallback(e => {
       D(e), L(e)
     }, [D, L]);
     return (0, l.Xs)({
-      searchQuery: R,
-      activeCategoryIndex: P,
+      searchQuery: P,
+      activeCategoryIndex: R,
       listRef: C
     }), i.useImperativeHandle(t, () => ({
       scrollTo: function() {
@@ -91,7 +91,7 @@ let u = 20,
       }
     }), []), (0, r.jsxs)("div", {
       className: c.wrapper,
-      children: [R.length > 0 && !f && null != b ? b() : (0, r.jsx)(a.Z, {
+      children: [P.length > 0 && !f && null != b ? b() : (0, r.jsx)(a.Z, {
         role: "none presentation",
         listPadding: _,
         onScroll: x,

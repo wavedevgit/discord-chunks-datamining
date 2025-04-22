@@ -24,8 +24,8 @@ var r, i, a = n(754793),
   A = 3,
   N = 4,
   C = 5,
-  R = 6,
-  P = 7,
+  P = 6,
+  R = 7,
   w = 8,
   D = 9,
   L = 10,
@@ -36,8 +36,8 @@ var r, i, a = n(754793),
   U = 15,
   G = 16,
   B = 17,
-  F = 18,
-  V = 19,
+  V = 18,
+  F = 19,
   Z = 20,
   H = 21,
   Y = 22,
@@ -178,11 +178,11 @@ function ep(e, t) {
         }
         n.length = eo, n.head && (n.head.extra_len = eo), 512 & n.flags && (eA[0] = 255 & eo, eA[1] = eo >>> 8 & 255, n.check = s(n.check, eA, 2, 0)), eo = 0, es = 0
       } else n.head && (n.head.extra = null);
-      n.mode = R;
-    case R:
-      if (1024 & n.flags && ((eu = n.length) > er && (eu = er), eu && (n.head && (ev = n.head.extra_len - n.length, n.head.extra || (n.head.extra = Array(n.head.extra_len)), a.arraySet(n.head.extra, r, et, eu, ev)), 512 & n.flags && (n.check = s(n.check, r, eu, et)), er -= eu, et += eu, n.length -= eu), n.length)) break i;
-      n.length = 0, n.mode = P;
+      n.mode = P;
     case P:
+      if (1024 & n.flags && ((eu = n.length) > er && (eu = er), eu && (n.head && (ev = n.head.extra_len - n.length, n.head.extra || (n.head.extra = Array(n.head.extra_len)), a.arraySet(n.head.extra, r, et, eu, ev)), 512 & n.flags && (n.check = s(n.check, r, eu, et)), er -= eu, et += eu, n.length -= eu), n.length)) break i;
+      n.length = 0, n.mode = R;
+    case R:
       if (2048 & n.flags) {
         if (0 === er) break i;
         eu = 0;
@@ -279,8 +279,8 @@ function ep(e, t) {
         e.msg = "too many length or distance symbols", n.mode = $;
         break
       }
-      n.have = 0, n.mode = F;
-    case F:
+      n.have = 0, n.mode = V;
+    case V:
       for (; n.have < n.ncode;) {
         for (; es < 3;) {
           if (0 === er) break i;
@@ -295,8 +295,8 @@ function ep(e, t) {
         e.msg = "invalid code lengths set", n.mode = $;
         break
       }
-      n.have = 0, n.mode = V;
-    case V:
+      n.have = 0, n.mode = F;
+    case F:
       for (; n.have < n.nlen + n.ndist;) {
         for (; eh = (eT = n.lencode[eo & (1 << n.lenbits) - 1]) >>> 24, em = eT >>> 16 & 255, eg = 65535 & eT, !(eh <= es);) {
           if (0 === er) break i;

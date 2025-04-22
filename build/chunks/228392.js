@@ -2,14 +2,14 @@
 "use strict";
 n.d(t, {
   B: () => D,
-  B5: () => R,
+  B5: () => P,
   Do: () => w,
   GX: () => k,
-  HR: () => V,
+  HR: () => F,
   Hr: () => C,
   Je: () => A,
   Js: () => b,
-  KR: () => P,
+  KR: () => R,
   MO: () => U,
   N3: () => j,
   Oq: () => T,
@@ -22,7 +22,7 @@ n.d(t, {
   nE: () => G,
   nH: () => I,
   qs: () => E,
-  qz: () => F,
+  qz: () => V,
   ws: () => x,
   xI: () => M,
   zI: () => y
@@ -261,7 +261,7 @@ function C(e) {
   }))
 }
 
-function R(e) {
+function P(e) {
   let {
     guildId: t,
     channelId: n,
@@ -278,7 +278,7 @@ function R(e) {
   }))
 }
 
-function P(e) {
+function R(e) {
   let {
     guildId: t,
     channelId: n,
@@ -383,7 +383,7 @@ function B(e) {
   })
 }
 
-function F() {
+function V() {
   r.ZP.trackWithMetadata(_.rMx.OPEN_MODAL, {
     type: "Forum Channel Upsell Modal",
     location: {
@@ -392,7 +392,7 @@ function F() {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     guildId: t,
     channelId: n

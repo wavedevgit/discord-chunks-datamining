@@ -64,8 +64,8 @@ let v = Symbol("NO GUILD ID"),
   A = 0x7fffffff,
   N = new Map,
   C = new Map,
-  R = new Map,
   P = new Map,
+  R = new Map,
   w = new Map,
   D = new Map,
   L = new Map,
@@ -78,9 +78,9 @@ function U(e) {
   let t = N.get(e);
   if ((null == t ? void 0 : t.profileEffectExpiresAt) == null) return;
   let n = 1e3 * t.profileEffectExpiresAt + h.Cm - Date.now();
-  if (n <= 0) t.profileEffectId = void 0, t.profileEffectExpiresAt = void 0, R.delete(e), el.emitChange();
+  if (n <= 0) t.profileEffectId = void 0, t.profileEffectExpiresAt = void 0, P.delete(e), el.emitChange();
   else {
-    let t = R.get(e);
+    let t = P.get(e);
     if (null == t) return;
     t.start(Math.min(A, n), () => U(e))
   }
@@ -91,7 +91,7 @@ function G(e, t) {
   if (null == n) return;
   let r = n.get(t);
   if ((null == r ? void 0 : r.profileEffectExpiresAt) == null) return;
-  let i = P.get(e),
+  let i = R.get(e),
     a = 1e3 * r.profileEffectExpiresAt + h.Cm - Date.now();
   if (a <= 0) n.set(t, y(E({}, r), {
     profileEffectId: void 0,
@@ -109,14 +109,14 @@ function B() {
   O.clear(), I.clear(), N.clear(), C.clear(), w.clear(), D.clear(), L.clear(), k = !1
 }
 
-function F(e) {
+function V(e) {
   let {
     userId: t
   } = e;
   I.add(t)
 }
 
-function V(e) {
+function F(e) {
   let {
     userId: t
   } = e;
@@ -141,7 +141,7 @@ function H(e) {
 }
 
 function Y(e) {
-  var t, n, r, i, s, l, c, d, f, h, g, b, A, M, k, B, F, V, H, Y, K, z, q, Q, X, J, $;
+  var t, n, r, i, s, l, c, d, f, h, g, b, A, M, k, B, V, F, H, Y, K, z, q, Q, X, J, $;
   let {
     userProfile: ee,
     fetchStartedAt: et
@@ -197,8 +197,8 @@ function Y(e) {
       bio: null != (B = null == (c = ee.user_profile) ? void 0 : c.bio) ? B : "",
       profileEffectId: null == (f = ee.user_profile) || null == (d = f.profile_effect) ? void 0 : d.id,
       profileEffectExpiresAt: null == (g = ee.user_profile) || null == (h = g.profile_effect) ? void 0 : h.expires_at,
-      pronouns: null != (F = null == (b = ee.user_profile) ? void 0 : b.pronouns) ? F : "",
-      connectedAccounts: null != (V = ee.connected_accounts.filter(e => o.Z.isSupported(e.type))) ? V : [],
+      pronouns: null != (V = null == (b = ee.user_profile) ? void 0 : b.pronouns) ? V : "",
+      connectedAccounts: null != (F = ee.connected_accounts.filter(e => o.Z.isSupported(e.type))) ? F : [],
       applicationRoleConnections: null != (H = ee.application_role_connections) ? H : [],
       premiumSince: er,
       premiumType: ee.premium_type,
@@ -220,7 +220,7 @@ function Y(e) {
       badges: eo
     }), (null == (M = ee.user_profile) || null == (A = M.profile_effect) ? void 0 : A.expires_at) != null) {
     let e = new a.V7;
-    R.set(ee.user.id, e), U(ee.user.id)
+    P.set(ee.user.id, e), U(ee.user.id)
   }
   if (null != ee.guild_member_profile) {
     let e = {
@@ -244,11 +244,11 @@ function Y(e) {
     }
     if ((null == ($ = ee.guild_member_profile) || null == (J = $.profile_effect) ? void 0 : J.expires_at) != null) {
       let e = new a.V7,
-        t = P.get(ee.user.id);
+        t = R.get(ee.user.id);
       if (null != t) t.set(ee.guild_member_profile.guild_id, e);
       else {
         let t = new Map;
-        t.set(ee.guild_member_profile.guild_id, e), P.set(ee.user.id, t)
+        t.set(ee.guild_member_profile.guild_id, e), R.set(ee.user.id, t)
       }
       G(ee.user.id, ee.guild_member_profile.guild_id)
     }
@@ -329,7 +329,7 @@ function q(e) {
       profileEffectExpiresAt: u
     })), null != u) {
     let e = new a.V7;
-    R.set(t, e), U(t)
+    P.set(t, e), U(t)
   }
 }
 
@@ -360,11 +360,11 @@ function Q(e) {
       profileEffectExpiresAt: d
     })), null != d) {
     let e = new a.V7,
-      r = P.get(t);
+      r = R.get(t);
     if (null != r) r.set(n, e);
     else {
       let r = new Map;
-      r.set(n, e), P.set(t, r)
+      r.set(n, e), R.set(t, r)
     }
     G(t, n)
   }
@@ -485,9 +485,9 @@ class es extends f.Z {
       USER_PROFILE_UPDATE_SUCCESS: J,
       USER_PROFILE_UPDATE_FAILURE: $,
       USER_PROFILE_PIN_BADGES_ON_CLIENT: ee,
-      MUTUAL_FRIENDS_FETCH_START: F,
+      MUTUAL_FRIENDS_FETCH_START: V,
       MUTUAL_FRIENDS_FETCH_SUCCESS: H,
-      MUTUAL_FRIENDS_FETCH_FAILURE: V,
+      MUTUAL_FRIENDS_FETCH_FAILURE: F,
       USER_UPDATE: et,
       GUILD_MEMBER_UPDATE: et,
       GUILD_JOIN: en,

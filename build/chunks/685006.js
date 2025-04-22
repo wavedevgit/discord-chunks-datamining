@@ -1,6 +1,6 @@
 /** Chunk was on 3656 **/
 n.d(t, {
-  ZP: () => P,
+  ZP: () => S,
   xL: () => I
 });
 var r = n(200651),
@@ -36,7 +36,7 @@ let O = (0, a.U)(() => ({
   },
   I = O;
 
-function P(e) {
+function S(e) {
   let {
     context: t,
     entryPointCommandButtonRef: n,
@@ -62,7 +62,7 @@ function P(e) {
   }, [c, f]), j = null != y && y.filter(e => e.type === u.yU.CHAT || e.type === u.yU.PRIMARY_ENTRY_POINT).length > 0, O = !o && null != a && !0 === j;
   return (i.useEffect(() => (E(O), () => {
     E(!1)
-  }), [O]), O) ? (0, r.jsx)(S, {
+  }), [O]), O) ? (0, r.jsx)(P, {
     context: t,
     application: a,
     primaryEntryPointCommand: s,
@@ -72,7 +72,7 @@ function P(e) {
   }) : null
 }
 
-function S(e) {
+function P(e) {
   let {
     context: t,
     application: n,

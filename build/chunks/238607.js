@@ -80,9 +80,9 @@ function S(e) {
     location: "ActivityButton"
   }, {
     autoTrackExposure: !0
-  }), R = C ? a.iWm : a.jje;
+  }), P = C ? a.iWm : a.jje;
   if (null == N && null != n && (0, l.Z)(n)) return (0, r.jsx)(g.tG, {
-    icon: R,
+    icon: P,
     text: b.intl.string(b.t.RscU7O),
     color: a.Ttl.BRAND,
     themeColor: "none",
@@ -104,7 +104,7 @@ function S(e) {
   });
   if (null == N) return null;
   let {
-    isJoining: P,
+    isJoining: R,
     handleJoinRequest: w,
     buttonCTA: D,
     tooltip: L,
@@ -117,7 +117,7 @@ function S(e) {
       icon: a.YVR,
       text: D,
       disabled: !x,
-      submitting: P,
+      submitting: R,
       fullWidth: !0,
       onClick: e => {
         e.stopPropagation(), null == y || y({
@@ -131,7 +131,7 @@ function S(e) {
       icon: a.iWm,
       text: D,
       disabled: !x,
-      submitting: P,
+      submitting: R,
       fullWidth: !0,
       onClick: e => {
         e.stopPropagation(), null == y || y({

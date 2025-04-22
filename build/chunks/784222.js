@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Bg: () => F,
+  Bg: () => V,
   Ni: () => Z,
   YH: () => B,
   ld: () => U,
-  rf: () => V
+  rf: () => F
 }), n(388685), n(539854);
 var r = n(192379),
   i = n(392711),
@@ -33,8 +33,8 @@ var r = n(192379),
   A = n(111361),
   N = n(392552),
   C = n(543241),
-  R = n(304852),
-  P = n(199257),
+  P = n(304852),
+  R = n(199257),
   w = n(149203),
   D = n(185923),
   L = n(388032);
@@ -92,7 +92,7 @@ let G = [D.Z5.DISALLOW_EXTERNAL, D.Z5.DISALLOW_CUSTOM],
       emojiPaddingHorizontal: x,
       emojiSpriteSize: k,
       shouldShowSoundmojiInEmojiPicker: U
-    } = e, B = (0, s.e7)([c.ZP], () => c.ZP.categories), F = (0, s.e7)([y.Z], () => y.Z.getGuild(null == t ? void 0 : t.getGuildId()), [t]), V = null == t ? null : t.getGuildId(), Z = (0, s.e7)([c.ZP], () => c.ZP.getDisambiguatedEmojiContext(V), [V]), H = (0, C.NJ)(V), Y = (0, C.wC)(V), W = (0, C.q5)(V), {
+    } = e, B = (0, s.e7)([c.ZP], () => c.ZP.categories), V = (0, s.e7)([y.Z], () => y.Z.getGuild(null == t ? void 0 : t.getGuildId()), [t]), F = null == t ? null : t.getGuildId(), Z = (0, s.e7)([c.ZP], () => c.ZP.getDisambiguatedEmojiContext(F), [F]), H = (0, C.NJ)(F), Y = (0, C.wC)(F), W = (0, C.q5)(F), {
       canSplitFrecencyList: K
     } = (0, d.S)({
       location: "useEmojiGrid",
@@ -109,9 +109,9 @@ let G = [D.Z5.DISALLOW_EXTERNAL, D.Z5.DISALLOW_CUSTOM],
     let {
       topEmojis: q,
       newlyAddedEmojis: Q
-    } = (0, P.Z)(V, l), X = (0, s.Wu)([O.ZP], () => O.ZP.getFlattenedGuildIds(), []), J = (0, s.e7)([c.ZP], () => c.ZP.expandedSectionsByGuildIds), {
+    } = (0, R.Z)(F, l), X = (0, s.Wu)([O.ZP], () => O.ZP.getFlattenedGuildIds(), []), J = (0, s.e7)([c.ZP], () => c.ZP.expandedSectionsByGuildIds), {
       canCreateExpressions: $
-    } = (0, m.XJ)(F), ee = (0, s.e7)([I.default], () => I.default.getCurrentUser()), et = (0, A.I5)(ee), en = (0, g.B4)(), er = Z.getCustomEmoji(), ei = e => {
+    } = (0, m.XJ)(V), ee = (0, s.e7)([I.default], () => I.default.getCurrentUser()), et = (0, A.I5)(ee), en = (0, g.B4)(), er = Z.getCustomEmoji(), ei = e => {
       if (e.type === u.B.GUILD) return e.guildId
     }, ea = r.useMemo(() => a().groupBy(er, ei), [er]), {
       enabled: eo,
@@ -150,16 +150,16 @@ let G = [D.Z5.DISALLOW_EXTERNAL, D.Z5.DISALLOW_CUSTOM],
               O = v.Z.getGuildId(),
               I = _.sectionId === w.En.TOP_GUILD_EMOJI,
               A = !I && null != y && O === y.id && b.length < (0, T.y4)(y),
-              R = I && b.length < f && !eo,
-              P = null != y && I && eo && es === N.B.WITH_TOP_LIST && ea[y.id].length < (0, T.y4)(y),
-              D = i && $ && null != y && (A || R || P);
-            D && P && b.length === f && b.shift();
+              P = I && b.length < f && !eo,
+              R = null != y && I && eo && es === N.B.WITH_TOP_LIST && ea[y.id].length < (0, T.y4)(y),
+              D = i && $ && null != y && (A || P || R);
+            D && R && b.length === f && b.shift();
             let x = b.length > m && null != y && _.isNitroLocked,
               U = x && !J.has(y.id);
             U && b.splice(m - 1);
             let G = eo && D && !h,
               B = Math.ceil((D || x ? b.length + 1 : b.length) / f),
-              F = [];
+              V = [];
             for (let e = 0; e < B; e++) {
               let t = 0 === e,
                 n = e * f - (G && e > 0 ? 1 : 0),
@@ -186,9 +186,9 @@ let G = [D.Z5.DISALLOW_EXTERNAL, D.Z5.DISALLOW_CUSTOM],
                   rowIndex: d,
                   columnIndex: 0,
                   visibleRowIndex: u
-                }, ...i]), F.push(i), !h) {
+                }, ...i]), V.push(i), !h) {
                 if (!eo && D && e === B - 1) {
-                  let t = F[e];
+                  let t = V[e];
                   t.push({
                     type: 1,
                     guildId: y.id,
@@ -200,7 +200,7 @@ let G = [D.Z5.DISALLOW_EXTERNAL, D.Z5.DISALLOW_CUSTOM],
                   })
                 }
                 if (x && e === B - 1) {
-                  let t = F[e];
+                  let t = V[e];
                   t.push({
                     type: 2,
                     guildId: y.id,
@@ -216,11 +216,11 @@ let G = [D.Z5.DISALLOW_EXTERNAL, D.Z5.DISALLOW_CUSTOM],
               }
               d++
             }
-            let V = h ? 0 : B,
+            let F = h ? 0 : B,
               Z = j(M({}, _), {
                 count: o.length
               });
-            r.push(Z), e.push(V)
+            r.push(Z), e.push(F)
           };
         if (null != p) 0 !== p.unlocked.length && g(p.unlocked, {
           type: w.En.SEARCH_RESULTS,
@@ -278,19 +278,19 @@ let G = [D.Z5.DISALLOW_EXTERNAL, D.Z5.DISALLOW_CUSTOM],
                   isNitroLocked: s
                 })
               };
-              if (null != F && n(F.id), (0, D.Gt)(l))
-                for (let e of X)(null == F || F.id !== e) && n(e)
+              if (null != V && n(V.id), (0, D.Gt)(l))
+                for (let e of X)(null == V || V.id !== e) && n(e)
             } else if (e === w.UX.TOP_GUILD_EMOJI) {
-            if (null != F) {
+            if (null != V) {
               let {
                 allEmojis: t
-              } = (0, R.J)({
+              } = (0, P.J)({
                 topEmojis: q,
                 newlyAddedEmojis: Q
               });
               t.length > 0 && g(t, {
                 categoryId: e,
-                guild: y.Z.getGuild(F.id),
+                guild: y.Z.getGuild(V.id),
                 type: w.En.TOP_GUILD_EMOJI,
                 sectionId: w.En.TOP_GUILD_EMOJI,
                 count: t.length,
@@ -341,12 +341,12 @@ let G = [D.Z5.DISALLOW_EXTERNAL, D.Z5.DISALLOW_CUSTOM],
         rowCountBySection: e,
         sectionDescriptors: r
       }
-    }, [Z, h, k, x, p, n, eo, es, ea, i, $, J, t, l, q, Q, et, B, F, X, K, z, W, Y, H, en, el, U])
+    }, [Z, h, k, x, p, n, eo, es, ea, i, $, J, t, l, q, Q, et, B, V, X, K, z, W, Y, H, en, el, U])
   };
-var F = function(e) {
+var V = function(e) {
   return e[e.PREMIUM = 0] = "PREMIUM", e[e.ROLE_SUBSCRIPTION = 1] = "ROLE_SUBSCRIPTION", e
 }({});
-let V = e => {
+let F = e => {
     let {
       pickerIntention: t,
       selectedChannel: n,

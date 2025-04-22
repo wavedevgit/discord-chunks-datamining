@@ -79,8 +79,8 @@ let S = new d.Z("PopoutWindowStore"),
   A = {},
   N = {},
   C = {},
-  R = {},
-  P = new Set,
+  P = {},
+  R = new Set,
   w = "app-mount",
   D = () => X.emitChange(),
   L = s().debounce(D, 150),
@@ -114,7 +114,7 @@ function j(e) {
   let t = N[e];
   a()(null != t, "Popout window was null during unmount"), t.removeEventListener("focus", D), t.removeEventListener("blur", D), t.removeEventListener("resize", L);
   let n = C[e];
-  a()(null != n, "Window root was null while unmounting"), n.unmount(), delete N[e], delete A[e], delete R[e], delete C[e]
+  a()(null != n, "Window root was null while unmounting"), n.unmount(), delete N[e], delete A[e], delete P[e], delete C[e]
 }
 
 function U(e, t, r) {
@@ -133,7 +133,7 @@ function G(e, t) {
 
 function B(e) {
   let t = N[e],
-    n = R[e];
+    n = P[e];
   if (null == t) return void S.warn("Failed to open window", e);
   let r = t.document;
   (0, h.uF)(r, D), t.addEventListener("focus", D), t.addEventListener("blur", D), t.addEventListener("resize", L), x ? M(e, t) : G(e, t);
@@ -141,7 +141,7 @@ function B(e) {
   a()(null != i, "No render target for popout!"), C[e] = i, i.render(n(e))
 }
 
-function F(e) {
+function V(e) {
   let {
     key: t,
     features: n,
@@ -177,11 +177,11 @@ function F(e) {
     })
   }
   let E = window.open(g.Z5c.POPOUT_WINDOW, t, (0, m.Z)(d));
-  E.windowKey = t, i ? S.verbose("Opening out of process overlay window", t) : null == E || E.focus(), N[t] = E, R[t] = r, _.isPlatformEmbedded && (p.ZP.setAlwaysOnTop(t, f), A[t] = f, p.ZP.isAlwaysOnTop(t).then(e => A[t] = e)), P.add(t)
+  E.windowKey = t, i ? S.verbose("Opening out of process overlay window", t) : null == E || E.focus(), N[t] = E, P[t] = r, _.isPlatformEmbedded && (p.ZP.setAlwaysOnTop(t, f), A[t] = f, p.ZP.isAlwaysOnTop(t).then(e => A[t] = e)), R.add(t)
 }
 
-function V(e) {
-  P.has(e) && (B(e), P.delete(e), X.emitChange())
+function F(e) {
+  R.has(e) && (B(e), R.delete(e), X.emitChange())
 }
 
 function Z(e) {
@@ -199,7 +199,7 @@ function H(e) {
   let n = t.discordPopoutEvent;
   if (null != n.key) switch (n.type) {
     case g.l9w.LOADED:
-      return V(n.key);
+      return F(n.key);
     case g.l9w.UNLOADED:
       return Z(n.key)
   }
@@ -276,7 +276,7 @@ class Q extends(r = c.ZP.PersistedStore) {
     return T
   }
   isWindowFullyInitialized(e) {
-    return null != N[e] && null != C[e] && null != R[e]
+    return null != N[e] && null != C[e] && null != P[e]
   }
   isWindowFullScreen(e) {
     var t, n;
@@ -289,7 +289,7 @@ class Q extends(r = c.ZP.PersistedStore) {
 }
 E(Q, "displayName", "PopoutWindowStore"), E(Q, "persistKey", "PopoutWindowStore");
 let X = new Q(u.Z, {
-    POPOUT_WINDOW_OPEN: F,
+    POPOUT_WINDOW_OPEN: V,
     POPOUT_WINDOW_ADD_STYLESHEET: q,
     POPOUT_WINDOW_CLOSE: W,
     POPOUT_WINDOW_SET_ALWAYS_ON_TOP: z,

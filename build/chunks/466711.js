@@ -50,7 +50,7 @@ function C(e) {
   return e
 }
 
-function R(e, t) {
+function P(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -61,8 +61,8 @@ function R(e, t) {
   return n
 }
 
-function P(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+function R(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -92,7 +92,7 @@ function D(e) {
     var t;
     i(), null == (t = e.onClick) || t.call(e)
   };
-  return (0, r.jsx)(v.Z, P(C({
+  return (0, r.jsx)(v.Z, R(C({
     innerClassName: A.button,
     "aria-label": S.intl.string(S.t.Z1RnTk),
     isActive: !1,
@@ -127,15 +127,15 @@ function x(e) {
     channel: E
   } = e, {
     analyticsLocations: v
-  } = (0, u.ZP)(c.Z.GIFT_BUTTON), [S, A] = i.useState(!1), N = (0, a.e7)([m.Z], () => !(null === m.Z || void 0 === m.Z ? void 0 : m.Z.hasLayers())), C = (0, a.e7)([g.default], () => g.default.getCurrentUser()), R = null != C ? b.default.age(C.id) : 0, {
-    giftBoxAnimation: P,
+  } = (0, u.ZP)(c.Z.GIFT_BUTTON), [S, A] = i.useState(!1), N = (0, a.e7)([m.Z], () => !(null === m.Z || void 0 === m.Z ? void 0 : m.Z.hasLayers())), C = (0, a.e7)([g.default], () => g.default.getCurrentUser()), P = null != C ? b.default.age(C.id) : 0, {
+    giftBoxAnimation: R,
     trinketsAnimation: x
-  } = null != (t = null == n ? void 0 : n.chatGiftIcon) ? t : {}, M = (0, p.u)(), k = void 0 !== M && !s && N && R >= L, [j, U] = (0, f.XR)(k ? o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, d.t)(o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), G = null != j, B = S || G, F = (0, y.Ft)(E);
+  } = null != (t = null == n ? void 0 : n.chatGiftIcon) ? t : {}, M = (0, p.u)(), k = void 0 !== M && !s && N && P >= L, [j, U] = (0, f.XR)(k ? o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, d.t)(o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), G = null != j, B = S || G, V = (0, y.Ft)(E);
   if (s) return null;
-  let V = () => {
+  let F = () => {
       (0, _.Z)({
         isGift: !0,
-        giftRecipient: null == F ? void 0 : F,
+        giftRecipient: null == V ? void 0 : V,
         initialPlanId: null,
         analyticsLocations: v,
         analyticsObject: {
@@ -147,10 +147,10 @@ function x(e) {
       })
     },
     Z = () => {
-      A(!1), U(I.L.TAKE_ACTION), V()
+      A(!1), U(I.L.TAKE_ACTION), F()
     },
-    H = void 0 !== P ? (0, r.jsx)(w, {
-      config: P,
+    H = void 0 !== R ? (0, r.jsx)(w, {
+      config: R,
       hovered: B,
       onClick: Z
     }) : void 0 !== x ? (0, r.jsx)(D, {
@@ -168,7 +168,7 @@ function x(e) {
     },
     children: void 0 !== M && G ? (0, r.jsx)(h.Z, {
       onComplete: () => A(!1),
-      onCheckItOutClick: V,
+      onCheckItOutClick: F,
       markAsDismissed: U,
       config: M,
       children: H

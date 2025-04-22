@@ -29,8 +29,8 @@ var r = n(200651),
   A = n(453070),
   N = n(926491),
   C = n(457040),
-  R = n(740492),
-  P = n(585483),
+  P = n(740492),
+  R = n(585483),
   w = n(5967),
   D = n(28546),
   L = n(957825),
@@ -42,7 +42,7 @@ var r = n(200651),
   G = n(388032),
   B = n(460594);
 
-function F(e, t, n) {
+function V(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -51,14 +51,14 @@ function F(e, t, n) {
   }) : e[t] = n, e
 }
 
-function V(e) {
+function F(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      F(e, t, n[t])
+      V(e, t, n[t])
     })
   }
   return e
@@ -107,7 +107,7 @@ let K = L.Om + k.Su.MEDIUM,
       autoFocus: a = !1,
       "aria-controls": s
     } = e, l = Y(e, ["isActive", "className", "viewType", "autoFocus", "aria-controls"]);
-    return (0, r.jsx)(p.zxk, H(V({
+    return (0, r.jsx)(p.zxk, H(F({
       role: "tab",
       autoFocus: a,
       "aria-controls": t ? s : void 0
@@ -131,7 +131,7 @@ let K = L.Om + k.Su.MEDIUM,
       positionContainerRef: t,
       drawerRef: n,
       orientation: r
-    } = e, a = (0, d.e7)([R.ZP], () => R.ZP.expressionPickerWidth), [o, s] = i.useState(window.innerWidth), [c, u] = i.useState(null != a ? a : L._j.MIN), f = i.useMemo(() => {
+    } = e, a = (0, d.e7)([P.ZP], () => P.ZP.expressionPickerWidth), [o, s] = i.useState(window.innerWidth), [c, u] = i.useState(null != a ? a : L._j.MIN), f = i.useMemo(() => {
       switch (c) {
         case L._j.MIN:
           return L.Om;
@@ -175,9 +175,9 @@ function Q(e) {
   let {
     positionTargetRef: l,
     hideGifFavorites: h,
-    includeCreateEmojiButton: R,
-    onSelectGIF: F,
-    onSelectEmoji: V,
+    includeCreateEmojiButton: P,
+    onSelectGIF: V,
+    onSelectEmoji: F,
     onSelectSticker: Z,
     onSelectSound: H,
     channel: Y,
@@ -212,7 +212,7 @@ function Q(e) {
       n = n.parentNode
     }(0, D._Q)();
     let r = null == (t = (0, w.uB)(e)) ? void 0 : t.activeElement;
-    (null == r || "BODY" === r.tagName) && P.S.dispatchToLastSubscribed(x.CkL.TEXTAREA_FOCUS)
+    (null == r || "BODY" === r.tagName) && R.S.dispatchToLastSubscribed(x.CkL.TEXTAREA_FOCUS)
   }, [$, ep, e_]), em = i.useCallback(() => {
     (0, D._Q)()
   }, []);
@@ -220,8 +220,8 @@ function Q(e) {
     let e = () => {
       es === L.X1.GIF && (0, D._Q)()
     };
-    return ec.addEventListener("mousedown", eh), ec.addEventListener("contextmenu", eh), eu.subscribe(x.CkL.POPOUT_CLOSE, em), P.S.subscribe(x.CkL.CLOSE_GIF_PICKER, e), () => {
-      ec.removeEventListener("mousedown", eh), ec.removeEventListener("contextmenu", eh), eu.unsubscribe(x.CkL.POPOUT_CLOSE, em), P.S.unsubscribe(x.CkL.CLOSE_GIF_PICKER, e)
+    return ec.addEventListener("mousedown", eh), ec.addEventListener("contextmenu", eh), eu.subscribe(x.CkL.POPOUT_CLOSE, em), R.S.subscribe(x.CkL.CLOSE_GIF_PICKER, e), () => {
+      ec.removeEventListener("mousedown", eh), ec.removeEventListener("contextmenu", eh), eu.unsubscribe(x.CkL.POPOUT_CLOSE, em), R.S.unsubscribe(x.CkL.CLOSE_GIF_PICKER, e)
     }
   }, [es, em, eh, ec, eu]), (0, p.Tbt)(et);
   let [eg, eE] = (0, y.US)(ef ? [f.z.SOUNDMOJI_BADGE] : [], void 0, !1), [eb, ey] = i.useState(!1);
@@ -243,7 +243,7 @@ function Q(e) {
       }), en.current = !0)
     }
   });
-  let ev = (null == (t = W.gifs) ? void 0 : t.allowSending) && !c.tq && null != F,
+  let ev = (null == (t = W.gifs) ? void 0 : t.allowSending) && !c.tq && null != V,
     eO = (null == (n = W.stickers) ? void 0 : n.allowSending) && null != Z,
     eI = i.useCallback((e, t) => null == H ? void 0 : H(e, "emoji_picker", t), [H]),
     eS = i.useCallback((e, t) => null == H ? void 0 : H(e, "soundboard_picker", t), [H]),
@@ -343,7 +343,7 @@ function Q(e) {
                   er.current = e
                 }
               }) : null, es === L.X1.GIF && ev ? (0, r.jsx)(O.Z, {
-                onSelectGIF: F,
+                onSelectGIF: V,
                 hideFavorites: h,
                 persistSearch: !0
               }) : null, es === L.X1.EMOJI ? (0, r.jsx)(v.Z, {
@@ -352,11 +352,11 @@ function Q(e) {
                 persistSearch: !0,
                 channel: Y,
                 containerWidth: ea,
-                includeCreateEmojiButton: R,
+                includeCreateEmojiButton: P,
                 emojiSize: null != ea && ea < K ? k.Su.MEDIUM : k.Su.LARGE,
                 pickerIntention: j.Hz.CHAT,
                 closePopout: em,
-                onSelectEmoji: V,
+                onSelectEmoji: F,
                 onSelectSoundmoji: eI,
                 ref: e => {
                   er.current = e

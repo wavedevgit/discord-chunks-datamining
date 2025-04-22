@@ -8,7 +8,7 @@ n.d(t, {
   Ex: () => ew,
   Fg: () => q,
   G6: () => el,
-  H1: () => P,
+  H1: () => R,
   I0: () => L,
   JG: () => ex,
   L1: () => eO,
@@ -26,14 +26,14 @@ n.d(t, {
   SE: () => eN,
   Sb: () => ev,
   Sh: () => ek,
-  T4: () => R,
+  T4: () => P,
   UP: () => eo,
   Wp: () => eT,
-  Wz: () => eP,
+  Wz: () => eR,
   Xc: () => j,
   Xk: () => w,
   Xr: () => es,
-  YC: () => eF,
+  YC: () => eV,
   Yk: () => eS,
   _O: () => C,
   _j: () => eL,
@@ -56,7 +56,7 @@ n.d(t, {
   h2: () => K,
   hg: () => eU,
   iG: () => Y,
-  iH: () => eR,
+  iH: () => eP,
   jU: () => X,
   kJ: () => H,
   kU: () => J,
@@ -72,7 +72,7 @@ n.d(t, {
   x4: () => ep,
   xM: () => er,
   xq: () => z,
-  zA: () => V,
+  zA: () => F,
   zY: () => eM
 }), n(388685);
 var r = n(442837),
@@ -147,8 +147,8 @@ let I = (0, u.Zc)("notifications", "reactionNotifications", e => null != e ? e :
   A = [],
   N = (0, u.Zc)("textAndImages", "emojiPickerCollapsedSections", e => null != e ? e : A, e => e),
   C = (0, u.Zc)("textAndImages", "stickerPickerCollapsedSections", e => null != e ? e : A, e => e),
-  R = (0, u.Zc)("textAndImages", "soundboardPickerCollapsedSections", e => null != e ? e : A, e => e),
-  P = (0, u.Zc)("textAndImages", "viewImageDescriptions", e => {
+  P = (0, u.Zc)("textAndImages", "soundboardPickerCollapsedSections", e => null != e ? e : A, e => e),
+  R = (0, u.Zc)("textAndImages", "viewImageDescriptions", e => {
     var t;
     return null != (t = null == e ? void 0 : e.value) && t
   }, e => a.D5.create({
@@ -198,8 +198,8 @@ let I = (0, u.Zc)("notifications", "reactionNotifications", e => null != e ? e :
   }, e => a.D5.create({
     value: e
   })),
-  F = [],
-  V = (0, u.Zc)("privacy", "messageRequestRestrictedGuildIds", e => null != e ? e : F, e => e),
+  V = [],
+  F = (0, u.Zc)("privacy", "messageRequestRestrictedGuildIds", e => null != e ? e : V, e => e),
   Z = (0, u.Zc)("privacy", "defaultMessageRequestRestricted", e => null == e ? void 0 : e.value, e => a.D5.create({
     value: e
   })),
@@ -440,8 +440,8 @@ let ev = (0, u.KM)((0, u.Zc)("appearance", "developerMode", e => null != e && e,
   eA = [],
   eN = (0, u.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eA, e => e),
   eC = [],
-  eR = (0, u.Zc)("privacy", "activityJoiningRestrictedGuildIds", e => null != e ? e : eC, e => e),
-  eP = (0, u.TG)({
+  eP = (0, u.Zc)("privacy", "activityJoiningRestrictedGuildIds", e => null != e ? e : eC, e => e),
+  eR = (0, u.TG)({
     baseSetting: (0, u.Zc)("privacy", "defaultGuildsActivityRestricted", e => e, e => null != e ? e : i.E5.OFF),
     isEligible: () => (0, l.o0)("user_settings"),
     useIsEligible: () => (0, l.Yd)("user_settings"),
@@ -532,4 +532,4 @@ let eU = (0, u.Zc)("appearance", "timestampHourCycle", e => null != e ? e : i.hg
 (0, u.Zc)("appearance", "launchPadMode", e => null != e ? e : i.l1.LAUNCH_PAD_DISABLED, e => e), (0, u.Zc)("appearance", "swipeRightToLeftMode", e => null != e ? e : i.n9.SWIPE_RIGHT_TO_LEFT_UNSET, e => e);
 let eG = (0, u.Zc)("userContent", "lastReceivedChangelogId", e => null != e ? e : "0", e => e),
   eB = (0, u.Zc)("safetySettings", "ignoreProfileSpeedbumpDisabled", e => null != e && e, e => e),
-  eF = (0, u.Zc)("appearance", "uiDensity", e => e === i.Pi.UNSET_UI_DENSITY ? i.Pi.DEFAULT : null != e ? e : i.Pi.DEFAULT, e => e)
+  eV = (0, u.Zc)("appearance", "uiDensity", e => e === i.Pi.UNSET_UI_DENSITY ? i.Pi.DEFAULT : null != e ? e : i.Pi.DEFAULT, e => e)

@@ -95,8 +95,8 @@ function v(e) {
     disableUsernameTooltip: A = !1,
     disableUserPopout: N = !1,
     onClick: C,
-    onFocus: R,
-    onUserClick: P,
+    onFocus: P,
+    onUserClick: R,
     onUserPopoutRequestClose: w
   } = e, [D, L] = i.useState(!1), x = b(v);
 
@@ -111,7 +111,7 @@ function v(e) {
           channelId: h,
           nick: f.ZP.getNickname(s, h, e),
           disablePopout: "function" == typeof N ? N(e.id) : N,
-          onClick: P,
+          onClick: R,
           onPopoutRequestClose: () => {
             L(!1), null == w || w()
           },
@@ -167,7 +167,7 @@ function v(e) {
         onRequestClose: () => L(!1),
         children: () => (0, r.jsx)(c.zxk, {
           className: o()(p.overflow, x, S),
-          onFocus: R,
+          onFocus: P,
           onClick: e => {
             null == C || C(e), L(!0)
           },

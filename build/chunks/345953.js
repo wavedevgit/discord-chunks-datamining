@@ -86,14 +86,14 @@ function C(e) {
   }
 }
 
-function R(e) {
+function P(e) {
   return o.JY.create({
     muted: !1,
     volume: A(e)
   })
 }
 
-function P() {
+function R() {
   s.K.get(T(f.default.getId())) || g.hW.updateAsync("audioContextSettings", e => {
     let t = !1;
     for (let [n, r] of Object.entries(_.Z.getState().settingsByContext)) {
@@ -130,11 +130,11 @@ function w(e, t, n, r) {
     o = (0, m.z)(n);
   if (null == o) return !1;
   let s = e[o];
-  return s[t] = null != (i = s[t]) ? i : R(n), r(s[t]), s[t].modifiedAt = String(Date.now()), a && N(s, t, n), C(s), !0
+  return s[t] = null != (i = s[t]) ? i : P(n), r(s[t]), s[t].modifiedAt = String(Date.now()), a && N(s, t, n), C(s), !0
 }
 
 function D() {
-  P()
+  R()
 }
 let L = i().debounce(() => {
   U()
@@ -195,21 +195,21 @@ function B(e) {
   n !== f.default.getId() && M(t, n, _.Z.isLocalMute(n, t))
 }
 
-function F(e) {
+function V(e) {
   let {
     context: t,
     userId: n
   } = e;
   n !== f.default.getId() && k(t, n, d.Z.isLocalSoundboardMuted(n))
 }
-class V extends l.Z {
+class F extends l.Z {
   constructor(...e) {
     super(...e), b(this, "actions", {
       POST_CONNECTION_OPEN: D,
       AUDIO_SET_LOCAL_VOLUME: G,
       AUDIO_TOGGLE_LOCAL_MUTE: B,
-      AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: F
+      AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: V
     })
   }
 }
-let Z = new V
+let Z = new F

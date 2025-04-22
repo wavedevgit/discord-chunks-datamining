@@ -104,12 +104,12 @@ function N(e) {
 function C() {
   T = !1
 }
-let R = e => "guild-join-request=".concat(e),
-  P = (e, t) => "guild-".concat(e, "-").concat(t);
+let P = e => "guild-join-request=".concat(e),
+  R = (e, t) => "guild-".concat(e, "-").concat(t);
 
 function w(e) {
   let t = [];
-  return t.push(R(e.joinRequestId)), t.push(P(e.guildId, e.applicationStatus)), t
+  return t.push(P(e.joinRequestId)), t.push(R(e.guildId, e.applicationStatus)), t
 }
 let D = new s.h(w, e => "".concat(e.joinRequestId)),
   L = new s.h(w, e => "".concat(e.joinRequestId)),
@@ -151,20 +151,20 @@ function B(e) {
     guildId: t,
     action: n
   } = e;
-  D.values(P(t, f.wB.SUBMITTED)).forEach(e => {
+  D.values(R(t, f.wB.SUBMITTED)).forEach(e => {
     j(g(h({}, e), {
       applicationStatus: n
     }))
   }), O(t, 0)
 }
-let F = {};
+let V = {};
 
-function V(e) {
+function F(e) {
   let {
     guildId: t,
     applicationTab: n
   } = e;
-  n !== F[t] && (F[t] = n)
+  n !== V[t] && (V[t] = n)
 }
 let Z = {};
 
@@ -176,7 +176,7 @@ function H(e) {
   } = e;
   if (r === Z[n]) return;
   Z[n] = r;
-  let i = null != (t = F[n]) ? t : f.wB.SUBMITTED;
+  let i = null != (t = V[n]) ? t : f.wB.SUBMITTED;
   "REVIEW_APPLICATION" !== i && ((0, d.bk)(i) && x.clear(), (0, d.Nd)(i) && L.clear())
 }
 let Y = {};
@@ -195,7 +195,7 @@ class q extends(r = o.ZP.Store) {
     return K[e]
   }
   getRequests(e, t) {
-    let n = P(e, t);
+    let n = R(e, t);
     return (0, d.bk)(t) ? x.values(n) : (0, d.Nd)(t) ? L.values(n) : D.values(n)
   }
   getSubmittedGuildJoinRequestTotal(e) {
@@ -212,7 +212,7 @@ class q extends(r = o.ZP.Store) {
   getSelectedApplicationTab(e) {
     var t;
     let n = f.wB.SUBMITTED;
-    return null != (t = F[e]) ? t : n
+    return null != (t = V[e]) ? t : n
   }
   getSelectedSortOrder(e) {
     var t;
@@ -233,7 +233,7 @@ let Q = new q(l.Z, {
   GUILD_JOIN_REQUEST_CREATE: U,
   GUILD_JOIN_REQUEST_UPDATE: U,
   GUILD_JOIN_REQUEST_DELETE: G,
-  GUILD_JOIN_REQUESTS_SET_APPLICATION_TAB: V,
+  GUILD_JOIN_REQUESTS_SET_APPLICATION_TAB: F,
   GUILD_JOIN_REQUESTS_SET_SORT_ORDER: H,
   GUILD_JOIN_REQUESTS_SET_SELECTED: W
 })

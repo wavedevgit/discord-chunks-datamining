@@ -29,8 +29,8 @@ var r = n(654861),
   A = n(868616),
   N = n(450109),
   C = n(159846),
-  R = n(615830),
-  P = n(314897),
+  P = n(615830),
+  R = n(314897),
   w = n(592125),
   D = n(131951),
   L = n(19780),
@@ -41,8 +41,8 @@ var r = n(654861),
   U = n(12647),
   G = n(630388),
   B = n(931619),
-  F = n(358085),
-  V = n(591759),
+  V = n(358085),
+  F = n(591759),
   Z = n(579806),
   H = n(859401),
   Y = n(437263),
@@ -127,7 +127,7 @@ class eb extends d.Z {
       let {
         hostname: n,
         port: r
-      } = null != (t = V.Z.toURLSafe(e)) ? t : {}, i = null != r ? parseInt(r) : NaN;
+      } = null != (t = F.Z.toURLSafe(e)) ? t : {}, i = null != r ? parseInt(r) : NaN;
       null != n && (80 === i || 443 === i) && (e = "".concat(ec, "//").concat(n)), this._endpoint = e + "/", this.hostname = n
     }
   }
@@ -147,14 +147,14 @@ class eb extends d.Z {
   }
   destroy() {
     var e, t, n, r, i, a, o;
-    if (this.logger.info("Destroy RTCConnection"), B.Z.removeOnlineCallback(this._handleNetworkOnline), B.Z.removeOfflineCallback(this._handleNetworkOffline), (0, F.isDesktop)() && (null == (a = (o = this).powerMonitorListener) || a.call(o)), en.w.off(en.e.IncomingVideoEnabledChanged, this.incomingVideoEnabledChanged), en.w.off(en.e.WindowVisibilityChanged, this.windowVisibilityChanged), this._backoff.cancel(), this._cleanupSocket(), null == (e = this._voiceQuality) || e.stop(), this._voiceQuality = null, clearInterval(this._voiceQualityPeriodicStatsInterval), this._voiceQualityPeriodicStatsInterval = null, this._voiceQualityPeriodicStatsSequenceId = 0, null == (t = this._systemResponsiveness) || t.stop(), this._systemResponsiveness = null, this._noiseCancellationError = 0, null == (n = this._voiceDuration) || n.stop(), this._voiceDuration = null, null == (r = this._videoQuality) || r.stop(), this._videoQuality = null, this._videoHealthManager = null, this._secureFramesState = null, null == (i = this._localMediaSinkWantsManager) || i.reset(), null != this._connection) {
+    if (this.logger.info("Destroy RTCConnection"), B.Z.removeOnlineCallback(this._handleNetworkOnline), B.Z.removeOfflineCallback(this._handleNetworkOffline), (0, V.isDesktop)() && (null == (a = (o = this).powerMonitorListener) || a.call(o)), en.w.off(en.e.IncomingVideoEnabledChanged, this.incomingVideoEnabledChanged), en.w.off(en.e.WindowVisibilityChanged, this.windowVisibilityChanged), this._backoff.cancel(), this._cleanupSocket(), null == (e = this._voiceQuality) || e.stop(), this._voiceQuality = null, clearInterval(this._voiceQualityPeriodicStatsInterval), this._voiceQualityPeriodicStatsInterval = null, this._voiceQualityPeriodicStatsSequenceId = 0, null == (t = this._systemResponsiveness) || t.stop(), this._systemResponsiveness = null, this._noiseCancellationError = 0, null == (n = this._voiceDuration) || n.stop(), this._voiceDuration = null, null == (r = this._videoQuality) || r.stop(), this._videoQuality = null, this._videoHealthManager = null, this._secureFramesState = null, null == (i = this._localMediaSinkWantsManager) || i.reset(), null != this._connection) {
       let e = this._connection;
       this._connection = null, e.destroy()
     }
     this.removeAllListeners(), this._destroyed = !0
   }
   shouldSendSpeaking(e, t) {
-    if ((0, F.isWeb)()) return !0;
+    if ((0, V.isWeb)()) return !0;
     let n = (0, G.yE)(e, ei.Dg.PRIORITY),
       r = (0, G.yE)(this._lastSentSpeakingStatus, ei.Dg.PRIORITY);
     return (this._lastSentSSRC !== t || n !== r) && (void 0 !== this._lastSentSSRC || e !== ei.Dg.NONE) && (this._lastSentSSRC === t || e !== ei.Dg.NONE) && (this._lastSentSpeakingStatus = e, this._lastSentSSRC = t, !0)
@@ -475,8 +475,8 @@ class eb extends d.Z {
       active: !1
     });
     let u = D.Z.getMediaEngine(),
-      d = R.Z.getPersistentCodesEnabled(),
-      p = null != (s = P.default.getStaticAuthSessionId()) ? s : void 0,
+      d = P.Z.getPersistentCodesEnabled(),
+      p = null != (s = R.default.getStaticAuthSessionId()) ? s : void 0,
       h = u.connect(this.context, this.userId, eo({
         ssrc: i,
         address: t,
@@ -1060,7 +1060,7 @@ class eb extends d.Z {
         this.logger.info("Go Live Media sink wants: ".concat(JSON.stringify(e))), this._socket.mediaSinkWants(e), null == (t = this._connection) || t.setLocalVideoSinkWants(e)
       }
     }));
-    this._remoteVideoSinkWants = z.Yy, en.w.on(en.e.IncomingVideoEnabledChanged, this.incomingVideoEnabledChanged), en.w.on(en.e.WindowVisibilityChanged, this.windowVisibilityChanged), x.ZP.shouldRecordNextConnection() ? (this._recordingEnabled = !0, g.TC(!1)) : this._recordingEnabled = !1, this._soundshareStats = new q.Z, B.Z.addOnlineCallback(this._handleNetworkOnline), B.Z.addOfflineCallback(this._handleNetworkOffline), (0, F.isDesktop)() && (this.powerMonitorListener = Z.Z.remotePowerMonitor.on("resume", this._handlePowerResume)), this._supportedBandwidthEstimationExperiments = [], this._bandwidthEstimationExperiment = null, D.Z.getMediaEngine().getSupportedBandwidthEstimationExperiments(e => {
+    this._remoteVideoSinkWants = z.Yy, en.w.on(en.e.IncomingVideoEnabledChanged, this.incomingVideoEnabledChanged), en.w.on(en.e.WindowVisibilityChanged, this.windowVisibilityChanged), x.ZP.shouldRecordNextConnection() ? (this._recordingEnabled = !0, g.TC(!1)) : this._recordingEnabled = !1, this._soundshareStats = new q.Z, B.Z.addOnlineCallback(this._handleNetworkOnline), B.Z.addOfflineCallback(this._handleNetworkOffline), (0, V.isDesktop)() && (this.powerMonitorListener = Z.Z.remotePowerMonitor.on("resume", this._handlePowerResume)), this._supportedBandwidthEstimationExperiments = [], this._bandwidthEstimationExperiment = null, D.Z.getMediaEngine().getSupportedBandwidthEstimationExperiments(e => {
       this._supportedBandwidthEstimationExperiments = e
     })
   }

@@ -29,8 +29,8 @@ var r = n(200651),
   A = n(195387),
   N = n(272510),
   C = n(4517),
-  R = n(171368),
-  P = n(978395),
+  P = n(171368),
+  R = n(978395),
   w = n(161572),
   D = n(228168),
   L = n(981631),
@@ -83,8 +83,8 @@ function B(e) {
     guildId: k,
     channelId: U,
     messageId: B,
-    roleId: F,
-    openedAt: V,
+    roleId: V,
+    openedAt: F,
     closePopout: Z,
     setPopoutRef: H,
     disableUserProfileLink: Y = __OVERLAY__,
@@ -92,13 +92,13 @@ function B(e) {
     appContext: K = L.IlC.APP
   } = e, {
     analyticsLocations: z
-  } = (0, d.ZP)([...W, u.Z.BITE_SIZE_PROFILE_POPOUT]), q = (0, m.ZB)({
+  } = (0, d.ZP)([...W, u.Z.USER_PROFILE_POPOUT]), q = (0, m.ZB)({
     layout: "POPOUT",
     userId: t.id,
     guildId: k,
     channelId: U,
     messageId: B,
-    roleId: F
+    roleId: V
   }), Q = (0, o.e7)([h.Z], () => null != k ? h.Z.getGuild(k) : null), X = i.useMemo(() => null != k ? {
     [k]: [t.id]
   } : {}, [k, t.id]);
@@ -121,7 +121,7 @@ function B(e) {
     }),
     ei = i.useMemo(() => (0, _.Z)(), []),
     ea = e => {
-      null == Z || Z(), (0, R.openUserProfileModal)(G(j({
+      null == Z || Z(), (0, P.openUserProfileModal)(G(j({
         sourceAnalyticsLocations: z,
         hideRestrictedProfile: !0,
         customStatusPrompt: ei
@@ -143,7 +143,7 @@ function B(e) {
     value: z,
     children: (0, r.jsx)(m.Mt, {
       value: q,
-      openedAt: V,
+      openedAt: F,
       fetchStartedAt: null == $ ? void 0 : $.fetchStartedAt,
       fetchEndedAt: null == $ ? void 0 : $.fetchEndedAt,
       isLoaded: null == $ ? void 0 : $.isLoaded,
@@ -155,12 +155,12 @@ function B(e) {
           children: [(0, r.jsxs)(I.Z, {
             user: t,
             displayProfile: $,
-            profileType: D.y0.BITE_SIZE,
+            themeType: D.lY.POPOUT,
             children: [null != et.interactionType && (0, r.jsx)(a.animated.div, {
               style: en,
               className: M.backdrop
             }), (0, r.jsxs)(S.Z, {
-              profileType: D.y0.BITE_SIZE,
+              themeType: D.lY.POPOUT,
               children: [(0, r.jsx)(A.Z, {
                 shouldShowTooltip: null === et.interactionType,
                 user: t,
@@ -170,7 +170,7 @@ function B(e) {
                 appContext: K
               }), (0, r.jsx)(T.Z, {
                 shouldShowTooltip: null === et.interactionType,
-                profileType: D.y0.BITE_SIZE,
+                themeType: D.lY.POPOUT,
                 user: t
               }), t.id !== n.id && (0, r.jsx)(N.Z, {
                 user: t,
@@ -184,7 +184,7 @@ function B(e) {
                 user: t,
                 displayProfile: $,
                 guildId: k,
-                profileType: D.y0.BITE_SIZE
+                themeType: D.lY.POPOUT
               }), (0, r.jsx)(O.Z, {
                 userId: t.id,
                 className: M.toast,
@@ -195,18 +195,18 @@ function B(e) {
                 displayProfile: $,
                 guildId: k,
                 channelId: U,
-                profileType: D.y0.BITE_SIZE,
+                themeType: D.lY.POPOUT,
                 onOpenProfile: Y ? void 0 : ea
               }), (0, r.jsx)(C.Z, {
                 location: "UserProfilePopout",
                 user: t,
                 guildId: k,
                 channelId: U,
-                profileType: D.y0.BITE_SIZE,
+                themeType: D.lY.POPOUT,
                 onCloseProfile: Z,
                 prompt: er ? ei : null
               })]
-            }), (0, r.jsx)(P.Z, {
+            }), (0, r.jsx)(R.Z, {
               user: t,
               currentUser: n,
               displayProfile: $,

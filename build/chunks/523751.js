@@ -50,7 +50,7 @@ function C(e) {
   return e
 }
 
-function R(e, t) {
+function P(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -61,8 +61,8 @@ function R(e, t) {
   return n
 }
 
-function P(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+function R(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -209,7 +209,7 @@ function k(e) {
       badgeStrokeColor: I,
       badgeColor: T,
       disableBoostClick: N,
-      "aria-label": R = !1
+      "aria-label": P = !1
     } = e,
     D = w(e, ["guild", "tooltipColor", "tooltipPosition", "className", "flowerStarClassName", "iconClassName", "badgeStrokeColor", "badgeColor", "disableBoostClick", "aria-label"]);
   let x = (0, f.Q3)("GuildBadgeV2"),
@@ -221,16 +221,16 @@ function k(e) {
     U = (0, s.e7)([h.Z], () => h.Z.theme),
     G = (0, O.XX)(o),
     B = (0, v.i)(G),
-    F = i.useMemo(() => G.premium && j && !N, [N, G.premium, j]),
-    V = i.useCallback(e => {
-      F && (e.stopPropagation(), e.preventDefault(), (0, _.f)({
+    V = i.useMemo(() => G.premium && j && !N, [N, G.premium, j]),
+    F = i.useCallback(e => {
+      V && (e.stopPropagation(), e.preventDefault(), (0, _.f)({
         guildId: o.id,
         location: {
           section: S.jXE.GUILD_HEADER,
           object: S.qAy.BOOST_GEM_ICON
         }
       }))
-    }, [F, o.id]);
+    }, [V, o.id]);
   if (B === v.Q.NONE) return null;
   let {
     IconComponent: Z,
@@ -251,16 +251,16 @@ function k(e) {
   return (0, r.jsx)(u.ua7, {
     color: l,
     position: d,
-    "aria-label": R,
+    "aria-label": P,
     text: (0, r.jsx)(M, {
       badgeType: B,
       guildTraits: G
     }),
     tooltipContentClassName: A.tooltipRemovePadding,
     children: e => (0, r.jsx)(u.P3F, {
-      onClick: V,
-      tabIndex: F ? 0 : -1,
-      children: (0, r.jsx)(p.Z, P(C({}, e), {
+      onClick: F,
+      tabIndex: V ? 0 : -1,
+      children: (0, r.jsx)(p.Z, R(C({}, e), {
         className: E,
         flowerStarClassName: b,
         allowFullSizedIcon: !0,

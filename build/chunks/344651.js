@@ -30,8 +30,8 @@ var a = n(442837),
   A = n(509545),
   N = n(78839),
   C = n(936101),
-  R = n(868158),
-  P = n(483012),
+  P = n(868158),
+  R = n(483012),
   w = n(955132);
 
 function D(e, t, n) {
@@ -91,7 +91,7 @@ function j(e, t) {
   return i
 }
 let U = new d.Z("ConnectionStore"),
-  G = new P.Z(w.Wb, (e, t) => {
+  G = new R.Z(w.Wb, (e, t) => {
     var n;
     e = null != e ? e : {
       type: "CHANNEL_UPDATES",
@@ -105,7 +105,7 @@ let U = new d.Z("ConnectionStore"),
       }));
     return e.channels.push(null != a ? a : r), e
   }, e => "CHANNEL_UPDATE" !== e),
-  B = new P.Z(w.Wb, (e, t) => ((e = null == e ? {
+  B = new R.Z(w.Wb, (e, t) => ((e = null == e ? {
     type: "SOUNDBOARD_SOUNDS_RECEIVED",
     updates: []
   } : e).updates.push({
@@ -121,11 +121,11 @@ let U = new d.Z("ConnectionStore"),
       guildId: t.guild_id
     }))
   }), e), e => "SOUNDBOARD_SOUNDS" !== e),
-  F = new P.Z(w.Wb, (e, t) => ((e = null != e ? e : {
+  V = new R.Z(w.Wb, (e, t) => ((e = null != e ? e : {
     type: "GUILD_MEMBERS_CHUNK_BATCH",
     chunks: []
   }).chunks.push(t), e), e => "GUILD_MEMBERS_CHUNK" !== e),
-  V = new P.Z(w.Wb, (e, t) => ((e = null == e ? {
+  F = new R.Z(w.Wb, (e, t) => ((e = null == e ? {
     type: "PRESENCE_UPDATES",
     updates: []
   } : e).updates.push(t), e), e => "PRESENCE_UPDATE" !== e && "GUILD_MEMBERS_CHUNK" !== e),
@@ -229,7 +229,7 @@ function X(e) {
     clientStatus: o,
     processedAtTimestamp: s
   } = e;
-  V.add({
+  F.add({
     guildId: t,
     user: n,
     status: r,
@@ -242,7 +242,7 @@ function X(e) {
 Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id]), e => {
   m.Z.initialGuild.measure(() => {
     a.ZP.Emitter.batched(() => {
-      let t = R.Fx(e, w.Wb.identifyStartTime);
+      let t = P.Fx(e, w.Wb.identifyStartTime);
       null != S.default.getCurrentUser() && (K({
         type: "GUILD_CREATE",
         guild: t
@@ -273,7 +273,7 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
   m.Z.readySupplemental.measure(() => {
     a.ZP.Emitter.batched(() => {
       var t, n;
-      e = m.Z.hydrateReadySupplemental.measure(() => R.r$(e, w.Wb.identifyStartTime));
+      e = m.Z.hydrateReadySupplemental.measure(() => P.r$(e, w.Wb.identifyStartTime));
       let r = e => e.map(e => ({
           user: e.user,
           status: e.status,
@@ -329,7 +329,7 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
   }), 2e3)
 }), Y(["READY"], e => {
   var t;
-  let n = R.Eb(),
+  let n = P.Eb(),
     r = e.guilds.filter(e => {
       var t, n;
       return !e.unavailable && "partial" === e.data_mode && ((null != (t = e.partial_updates.channels) ? t : []).length > 0 || (null != (n = e.partial_updates.deleted_channel_ids) ? n : []).length > 0 || void 0)
@@ -344,7 +344,7 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
   });
   m.Z.ready.measure(() => {
     a.ZP.Emitter.batched(() => {
-      let t = (e = m.Z.hydrateReady.measure(() => R.IM(e, w.Wb.identifyStartTime, n))).private_channels.map(e => (0, E.q_)(e)),
+      let t = (e = m.Z.hydrateReady.measure(() => P.IM(e, w.Wb.identifyStartTime, n))).private_channels.map(e => (0, E.q_)(e)),
         r = e.guilds.filter(e => !0 === e.unavailable && !0 !== e.geo_restricted).map(e => e.id),
         i = e.guilds.filter(e => !0 !== e.unavailable),
         a = e.guilds.filter(e => !0 === e.geo_restricted);
@@ -612,7 +612,7 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
     guildId: e.id
   });
   else {
-    let t = R.J2(e);
+    let t = P.J2(e);
     s.Z.createGuild(t), K({
       type: "VOICE_STATE_UPDATES",
       voiceStates: t.voice_states.map(e => {
@@ -658,7 +658,7 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
   })
 }), H(["GUILD_MEMBERS_CHUNK"], e => {
   a.ZP.Emitter.batched(() => {
-    F.add({
+    V.add({
       guildId: e.guild_id,
       members: e.members,
       notFound: e.not_found
@@ -680,7 +680,7 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
         clientStatus: i,
         processedAtTimestamp: s
       })
-    }), P.Z.flush("GUILD_MEMBERS_CHUNK")
+    }), R.Z.flush("GUILD_MEMBERS_CHUNK")
   })
 }), H(["THREAD_MEMBER_LIST_UPDATE"], e => {
   a.ZP.Emitter.batched(() => {
@@ -707,7 +707,7 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
         clientStatus: i,
         processedAtTimestamp: s
       })
-    }), P.Z.flush()
+    }), R.Z.flush()
   })
 }), H(["GUILD_BAN_ADD", "GUILD_BAN_REMOVE", "GUILD_MEMBER_ADD", "GUILD_MEMBER_UPDATE", "GUILD_MEMBER_REMOVE"], (e, t) => {
   K({
@@ -1116,7 +1116,7 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
         case "INSERT":
           t(i)
       }
-    }), P.Z.flush(), K({
+    }), R.Z.flush(), K({
       type: "GUILD_MEMBER_LIST_UPDATE",
       guildId: e.guild_id,
       id: e.id,

@@ -63,11 +63,11 @@ let O = {},
   A = {},
   N = {},
   C = null,
-  R = {};
+  P = {};
 
-function P() {
-  for (let e in O = {}, A = {}, I = {}, S = {}, T = {}, C = f.Z.getChannelId(), R) clearTimeout(R[e]);
-  R = {}, p.Z.forEachGuild(e => {
+function R() {
+  for (let e in O = {}, A = {}, I = {}, S = {}, T = {}, C = f.Z.getChannelId(), P) clearTimeout(P[e]);
+  P = {}, p.Z.forEachGuild(e => {
     D(e)
   }), L()
 }
@@ -159,7 +159,7 @@ function U(e) {
     channels: t
   } = e;
   for (let e of t)
-    if (e.isNSFW() !== G(e.guild_id, e.parent_id)) return void P();
+    if (e.isNSFW() !== G(e.guild_id, e.parent_id)) return void R();
   return !1
 }
 
@@ -187,12 +187,12 @@ function B(e) {
   return null != t.guild_id && null != t.parent_id && (t.guild_id in O && t.parent_id in O[t.guild_id] && (delete O[t.guild_id][t.parent_id], n = !0), t.guild_id in I && t.parent_id in I[t.guild_id] && (delete I[t.guild_id][t.parent_id], n = !0), t.guild_id in A && t.parent_id in A[t.guild_id] && (_.default.keys(A[t.guild_id][t.parent_id]).forEach(J), delete A[t.guild_id][t.parent_id], n = !0), t.guild_id in S && t.parent_id in S[t.guild_id] && (delete S[t.guild_id][t.parent_id], n = !0), t.guild_id in T && t.parent_id in T[t.guild_id] && (delete T[t.guild_id][t.parent_id], n = !0), n && M(t.guild_id, t.parent_id)), n
 }
 
-function F(e) {
+function V(e) {
   let t = c.Z.getChannel(e.id);
   return null != t && !!p.Z.isActive(e.guildId, t.parent_id, e.id) && k(t.guild_id, t.parent_id, t.id)
 }
 
-function V(e) {
+function F(e) {
   let t = c.Z.getChannel(e.channelId);
   if (null == t) Z();
   else {
@@ -268,7 +268,7 @@ function W(e) {
 }
 
 function K(e) {
-  V(e), z()
+  F(e), z()
 }
 
 function z() {
@@ -295,7 +295,7 @@ function Q(e, t) {
 }
 
 function X(e) {
-  R[e.id] = setTimeout(() => {
+  P[e.id] = setTimeout(() => {
     let t = c.Z.getChannel(e.id);
     null != t && s.Z.dispatch({
       type: "THREAD_UPDATE",
@@ -305,7 +305,7 @@ function X(e) {
 }
 
 function J(e) {
-  e in R && (clearTimeout(R[e]), delete R[e])
+  e in P && (clearTimeout(P[e]), delete P[e])
 }
 
 function $(e, t, n, r) {
@@ -407,30 +407,30 @@ class el extends(r = o.ZP.Store) {
 }
 E(el, "displayName", "ActiveJoinedThreadsStore");
 let ec = new el(s.Z, {
-  CONNECTION_OPEN: P,
-  OVERLAY_INITIALIZE: P,
+  CONNECTION_OPEN: R,
+  OVERLAY_INITIALIZE: R,
   THREAD_LIST_SYNC: W,
-  LOAD_THREADS_SUCCESS: P,
-  LOAD_ARCHIVED_THREADS_SUCCESS: P,
-  SEARCH_FINISH: P,
-  MOD_VIEW_SEARCH_FINISH: P,
+  LOAD_THREADS_SUCCESS: R,
+  LOAD_ARCHIVED_THREADS_SUCCESS: R,
+  SEARCH_FINISH: R,
+  MOD_VIEW_SEARCH_FINISH: R,
   GUILD_CREATE: Y,
-  GUILD_DELETE: P,
-  CURRENT_USER_UPDATE: P,
+  GUILD_DELETE: R,
+  CURRENT_USER_UPDATE: R,
   THREAD_CREATE: j,
   THREAD_UPDATE: j,
   THREAD_DELETE: j,
   CHANNEL_UPDATES: U,
   CHANNEL_DELETE: B,
-  THREAD_MEMBER_UPDATE: F,
-  THREAD_MEMBERS_UPDATE: F,
-  LOAD_MESSAGES_SUCCESS: V,
-  MESSAGE_CREATE: V,
-  MESSAGE_DELETE: V,
-  MESSAGE_DELETE_BULK: V,
-  MESSAGE_ACK: V,
-  CHANNEL_ACK: V,
-  CHANNEL_LOCAL_ACK: V,
+  THREAD_MEMBER_UPDATE: V,
+  THREAD_MEMBERS_UPDATE: V,
+  LOAD_MESSAGES_SUCCESS: F,
+  MESSAGE_CREATE: F,
+  MESSAGE_DELETE: F,
+  MESSAGE_DELETE_BULK: F,
+  MESSAGE_ACK: F,
+  CHANNEL_ACK: F,
+  CHANNEL_LOCAL_ACK: F,
   CHANNEL_SELECT: K,
   PASSIVE_UPDATE_V2: H,
   WINDOW_FOCUS: Z,

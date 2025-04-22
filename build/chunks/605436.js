@@ -9,15 +9,15 @@ n.d(t, {
   RZ: () => x,
   Tj: () => J,
   W: () => I,
-  Wx: () => P,
+  Wx: () => R,
   X0: () => O,
   Yh: () => K,
   Yk: () => z,
   _A: () => Y,
   aq: () => S,
-  cR: () => V,
+  cR: () => F,
   iI: () => B,
-  ik: () => R,
+  ik: () => P,
   kA: () => L,
   nT: () => Q,
   pM: () => A,
@@ -122,12 +122,12 @@ function C(e, t) {
   return !A(e.id, t.id)
 }
 
-function R(e, t, n, r) {
+function P(e, t, n, r) {
   let i = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : () => !0;
   return Object.values(t).filter(t => !y(t) && T(n, t.id, r) && C(e, t) && i(t.name)).sort(I).map(e => O(e))
 }
 
-function P(e, t, n, i) {
+function R(e, t, n, i) {
   let a = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : () => !0;
   return Object.values(t).filter(t => !y(t) && T(n, t.id, i) && C(e, t) && a(t.name)).sort(I).map(e => O(e, r.e$(e.permissions, i)))
 }
@@ -192,12 +192,12 @@ function B(e, t, n, r) {
   return e.map(c.default.getUser).filter(d.lm).filter(e => !n.isOwner(e) && T(t, e.id, r) && (i(M(e, n)) || i(e.username) || i(e.discriminator))).map(e => U(e, n)).sort(G)
 }
 
-function F(e, t, n, r, i) {
+function V(e, t, n, r, i) {
   return e.map(c.default.getUser).filter(d.lm).filter(e => !T(t, e.id, r, i) || k(e, n))
 }
 
-function V(e, t, n, r, i) {
-  return F(e, t, n, r, i).map(e => U(e, n)).sort(G)
+function F(e, t, n, r, i) {
+  return V(e, t, n, r, i).map(e => U(e, n)).sort(G)
 }
 
 function Z(e, t) {

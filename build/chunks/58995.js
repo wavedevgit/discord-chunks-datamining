@@ -30,7 +30,7 @@ var r = n(200651),
   N = n(870751),
   C = n(302195);
 
-function R(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -39,14 +39,14 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 
-function P(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      R(e, t, n[t])
+      P(e, t, n[t])
     })
   }
   return e
@@ -120,14 +120,14 @@ function M(e) {
     channel: n
   } = e, {
     analyticsLocations: a
-  } = (0, f.ZP)(d.Z.GIFT_BUTTON), [o, u] = i.useState(!1), y = (0, s.e7)([E.Z], () => !(null === E.Z || void 0 === E.Z ? void 0 : E.Z.hasLayers())), R = (0, s.e7)([b.default], () => b.default.getCurrentUser()), w = null != R ? v.default.age(R.id) : 0, M = !t && y && w >= L, {
+  } = (0, f.ZP)(d.Z.GIFT_BUTTON), [o, u] = i.useState(!1), y = (0, s.e7)([E.Z], () => !(null === E.Z || void 0 === E.Z ? void 0 : E.Z.hasLayers())), P = (0, s.e7)([b.default], () => b.default.getCurrentUser()), w = null != P ? v.default.age(P.id) : 0, M = !t && y && w >= L, {
     enabled: k
   } = m.O.useExperiment({
     location: "gift-button"
   }), j = [];
   k && M && j.push(l.z.NITROWEEN_COACHMARKS);
-  let [U, G] = (0, p.US)(j), B = null != U, F = (0, O.Ft)(n), {
-    Component: V,
+  let [U, G] = (0, p.US)(j), B = null != U, V = (0, O.Ft)(n), {
+    Component: F,
     events: Z,
     play: H
   } = (0, c.$)();
@@ -135,7 +135,7 @@ function M(e) {
   let Y = () => {
     (0, h.Z)({
       isGift: !0,
-      giftRecipient: null == F ? void 0 : F,
+      giftRecipient: null == V ? void 0 : V,
       giftMessage: A.intl.string(A.t["rX/m/f"]),
       initialPlanId: null,
       analyticsLocations: a,
@@ -159,7 +159,7 @@ function M(e) {
       onComplete: () => u(!1),
       onCheckItOutClick: Y,
       markAsDismissed: G
-    }), (0, r.jsx)(I.Z, D(P({
+    }), (0, r.jsx)(I.Z, D(R({
       innerClassName: C.button,
       "aria-label": A.intl.string(A.t.Z1RnTk),
       isActive: !1,
@@ -170,7 +170,7 @@ function M(e) {
       }
     }, Z), {
       children: (0, r.jsx)(x, {
-        animatedIconComponent: V,
+        animatedIconComponent: F,
         hovered: o,
         isCoachmarkDismissed: !B
       })

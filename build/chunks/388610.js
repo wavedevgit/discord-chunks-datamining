@@ -58,8 +58,8 @@ function A(e, t) {
 }
 let N = O.QZA.CLOSED,
   C = {},
-  R = {},
-  P = !1,
+  P = {},
+  R = !1,
   w = !1,
   D = null,
   L = ["name", "type", "topic_", "bitrate_", "userLimit_", "nsfw_", "flags_", "rateLimitPerUser_", "defaultThreadRateLimitPerUser", "defaultAutoArchiveDuration", "template", "defaultReactionEmoji", "rtcRegion", "videoQualityMode", "threadMetadata", "banner", "availableTags", "defaultSortOrder", "defaultForumLayout", "defaultTagSetting", "iconEmoji", "themeColor"];
@@ -93,20 +93,20 @@ function k(e) {
 }
 
 function j(e) {
-  r = e.section, i = e.subsection, null != o && r === O.CoT.INSTANT_INVITES && (P = !0, h.tn.get({
+  r = e.section, i = e.subsection, null != o && r === O.CoT.INSTANT_INVITES && (R = !0, h.tn.get({
     url: O.ANM.INSTANT_INVITES(o.id),
     oldFormErrors: !0,
     rejectWithError: !0
   }).then(e => {
-    P = !1, m.Z.dispatch({
+    R = !1, m.Z.dispatch({
       type: "CHANNEL_SETTINGS_LOADED_INVITES",
       invites: e.body
     })
-  }, () => P = !1))
+  }, () => R = !1))
 }
 
 function U() {
-  w = !1, N = O.QZA.CLOSED, r = null, o = a = null, s = null, R = {}
+  w = !1, N = O.QZA.CLOSED, r = null, o = a = null, s = null, P = {}
 }
 
 function G() {
@@ -117,14 +117,14 @@ function B() {
   a = o, N = O.QZA.OPEN
 }
 
-function F(e) {
+function V(e) {
   var t;
   N = O.QZA.OPEN, C = Object.keys(null != (t = e.errors) ? t : {}).reduce((t, n) => {
     let r = e.errors[n];
     return (0, u.isArray)(r) ? t[n] = r.join("\n") : t[n] = r, t
   }, {})
 }
-let V = d().debounce(() => {
+let F = d().debounce(() => {
   if (null == o || null == a) return !1;
   let e = o.toJS(),
     t = a.toJS();
@@ -164,7 +164,7 @@ function Z(e) {
     locked: f
   }))), null != _ && (o = o.set("threadMetadata", A(S({}, o.threadMetadata), {
     invitable: _
-  }))), null != p && (o = o.set("defaultAutoArchiveDuration", p)), null != h && (o = o.set("template", h)), null != n && (o = o.set("type", n)), void 0 !== g && (o = o.set("rtcRegion", g)), null != E && (o = o.set("videoQualityMode", E)), void 0 !== m && (o = o.set("defaultReactionEmoji", m)), null != b && (o = o.set("availableTags", b)), null != y && (o = o.set("defaultSortOrder", y)), null != O && (o = o.set("defaultTagSetting", O)), null != v && (o = o.set("defaultForumLayout", v)), void 0 !== I && (o = o.set("iconEmoji", I)), null != T && (o = o.set("themeColor", T)), V()
+  }))), null != p && (o = o.set("defaultAutoArchiveDuration", p)), null != h && (o = o.set("template", h)), null != n && (o = o.set("type", n)), void 0 !== g && (o = o.set("rtcRegion", g)), null != E && (o = o.set("videoQualityMode", E)), void 0 !== m && (o = o.set("defaultReactionEmoji", m)), null != b && (o = o.set("availableTags", b)), null != y && (o = o.set("defaultSortOrder", y)), null != O && (o = o.set("defaultTagSetting", O)), null != v && (o = o.set("defaultForumLayout", v)), void 0 !== I && (o = o.set("iconEmoji", I)), null != T && (o = o.set("themeColor", T)), F()
 }
 
 function H(e) {
@@ -184,17 +184,17 @@ function H(e) {
 }
 
 function Y(e) {
-  R = {}, e.invites.forEach(e => {
-    R[e.code] = H(e)
+  P = {}, e.invites.forEach(e => {
+    P[e.code] = H(e)
   })
 }
 
 function W(e) {
-  R = S({}, R), delete R[e.code]
+  P = S({}, P), delete P[e.code]
 }
 
 function K(e) {
-  R = A(S({}, R), {
+  P = A(S({}, P), {
     [e.invite.code]: H(e.invite)
   })
 }
@@ -251,8 +251,8 @@ class $ extends(c = p.ZP.Store) {
   }
   getInvites() {
     return {
-      invites: R,
-      loading: P
+      invites: P,
+      loading: R
     }
   }
   showNotice() {
@@ -274,7 +274,7 @@ class $ extends(c = p.ZP.Store) {
       channel: o,
       section: r,
       subsection: i,
-      invites: R,
+      invites: P,
       selectedOverwriteId: l,
       hasChanges: this.hasChanges(),
       analyticsLocation: D
@@ -287,7 +287,7 @@ let ee = new $(m.Z, {
     CHANNEL_SETTINGS_OPEN: M,
     CHANNEL_SETTINGS_SUBMIT: G,
     CHANNEL_SETTINGS_SUBMIT_SUCCESS: B,
-    CHANNEL_SETTINGS_SUBMIT_FAILURE: F,
+    CHANNEL_SETTINGS_SUBMIT_FAILURE: V,
     CHANNEL_SETTINGS_CLOSE: U,
     CHANNEL_PERMISSIONS_PUT_OVERWRITE_SUCCESS: Q,
     CHANNEL_PERMISSIONS_DELETE_OVERWRITE_SUCCESS: Q,

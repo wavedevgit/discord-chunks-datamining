@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   ZP: () => er,
-  b2: () => P
+  b2: () => R
 }), n(388685);
 var r = n(952639),
   i = n.n(r),
@@ -31,7 +31,7 @@ var r = n(952639),
   N = n(981631),
   C = n(526761);
 
-function R(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -39,7 +39,7 @@ function R(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let P = 3e3,
+let R = 3e3,
   w = 800,
   D = {};
 
@@ -134,7 +134,7 @@ function G(e, t) {
       setAt: Date.now(),
       timeout: setTimeout(() => {
         j(e)
-      }, P)
+      }, R)
     })
   });
   let a = n || new Set(i.map(e => e.channel_id)).size > 1;
@@ -183,7 +183,7 @@ function B(e) {
   }
 }
 
-function F(e) {
+function V(e) {
   function t(e) {
     return null != e
   }
@@ -202,7 +202,7 @@ function F(e) {
   }
 }
 
-function V(e) {
+function F(e) {
   function t(e) {
     return null != e
   }
@@ -229,7 +229,7 @@ function Z(e, t) {
     messagesPendingScan: n,
     attributesByChannelId: r,
     attributesByMessageId: i
-  } = F(e);
+  } = V(e);
   return b.default.entries(r).forEach(e => {
     let [t, n] = e;
     (0, O.IV)({
@@ -259,7 +259,7 @@ function H(e) {
     messagesPendingScan: t,
     attributesByChannelId: n,
     attributesByMessageId: r
-  } = V(e);
+  } = F(e);
   return b.default.entries(n).forEach(e => {
     let [t, n] = e;
     (0, O.IV)({
@@ -400,7 +400,7 @@ function et(e) {
 }
 class en extends c.Z {
   constructor(...e) {
-    super(...e), R(this, "actions", {
+    super(...e), P(this, "actions", {
       LOAD_MESSAGES_SUCCESS: K,
       LOAD_FORUM_POSTS: q,
       LOAD_THREADS_SUCCESS: Q,

@@ -29,8 +29,8 @@ var r = n(200651),
   A = n(430824),
   N = n(594174),
   C = n(51144),
-  R = n(388032),
-  P = n(73433),
+  P = n(388032),
+  R = n(73433),
   w = n(83902);
 
 function D(e, t, n) {
@@ -176,19 +176,19 @@ function U(e) {
       role: h
     }, e.userId)) : [], [s, a, h, p]);
   if (null == h) return null;
-  let y = null == g ? h.name : R.intl.formatToPlainString(R.t.CuAQkJ, {
+  let y = null == g ? h.name : P.intl.formatToPlainString(P.t.CuAQkJ, {
     title: h.name,
     count: g
   });
   return (0, r.jsx)("div", M(L({
-    className: P.rolePopout,
+    className: R.rolePopout,
     ref: u
   }, t), {
     children: (0, r.jsxs)(c.Ttm, {
-      className: P.roleScroller,
+      className: R.roleScroller,
       children: [(0, r.jsx)(m.Z, {
-        className: P.roleHeader,
-        "aria-label": R.intl.formatToPlainString(R.t.UaqbkZ, {
+        className: R.roleHeader,
+        "aria-label": P.intl.formatToPlainString(P.t.UaqbkZ, {
           title: h.name,
           count: b.length
         }),
@@ -197,8 +197,8 @@ function U(e) {
           children: y
         })
       }), b, null == g || g <= b.length ? null : (0, r.jsx)(m.Z, {
-        className: P.roleHeader,
-        children: R.intl.formatToPlainString(R.t["9oMmZG"], {
+        className: R.roleHeader,
+        children: P.intl.formatToPlainString(P.t["9oMmZG"], {
           count: g - b.length
         })
       })]
@@ -219,7 +219,7 @@ function G(e) {
   } = e, {
     analyticsLocations: m
   } = (0, h.ZP)(p.Z.ROLE_MENTION), g = (0, l.e7)([_.Z], () => _.Z.roleStyle), E = (0, v.$V)(u, "RoleMention"), I = (null != t && 0 !== t || null != n && null != n.primaryColor) && !f, S = I && "dot" === g, T = I && "username" === g, A = E && null != n && null != n.secondaryColor ? (0, O.f)(n) : null, N = e => (0, r.jsxs)(y.Z, M(L({
-    className: P.roleMention,
+    className: R.roleMention,
     color: T ? t : null,
     roleColors: T ? A : null
   }, e), {

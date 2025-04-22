@@ -29,8 +29,8 @@ var r = n(200651),
   A = n(660579),
   N = n(652853),
   C = n(64621),
-  R = n(979038),
-  P = n(448980),
+  P = n(979038),
+  R = n(448980),
   w = n(336383),
   D = n(194811),
   L = n(373826),
@@ -41,8 +41,8 @@ var r = n(200651),
   U = n(228168),
   G = n(981631),
   B = n(701488),
-  F = n(388032),
-  V = n(227832);
+  V = n(388032),
+  F = n(227832);
 
 function Z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -81,9 +81,9 @@ function Y(e) {
   } = e, X = i.useRef(null), {
     analyticsLocations: J
   } = (0, _.ZP)(f.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), {
-    profileType: $
+    themeType: $
   } = (0, N.z)(), ee = {
-    [V.fullSize]: $ === U.y0.FULL_SIZE
+    [F.fullSize]: $ === U.lY.MODAL
   }, {
     interactionSource: et,
     interactionSourceId: en
@@ -121,7 +121,7 @@ function Y(e) {
       image: es,
       smallImage: el,
       size: h.J.SIZE_60,
-      className: V.clickableImage,
+      className: F.clickableImage,
       aspectRatio: e,
       onClick: e => {
         e.stopPropagation(), ei({
@@ -132,11 +132,11 @@ function Y(e) {
   }, ed = () => {
     var e;
     return (0, d.Z)(Z) && null != K ? (0, r.jsxs)("div", {
-      className: V.voiceChannelText,
+      className: F.voiceChannelText,
       children: [(0, r.jsx)(s.gj8, {
         size: "xxs",
         color: s.TVs.colors.TEXT_NORMAL,
-        className: V.voiceIcon
+        className: F.voiceIcon
       }), (0, r.jsx)(L.Z, {
         variant: "heading-sm/semibold",
         text: K.name
@@ -151,7 +151,7 @@ function Y(e) {
   }, ef = () => {
     if ((0, d.Z)(Z) && null != W) return (0, r.jsx)(L.Z, {
       variant: "text-xs/normal",
-      text: F.intl.formatToPlainString(F.t["hq/Qzc"], {
+      text: V.intl.formatToPlainString(V.t["hq/Qzc"], {
         guildName: W.name
       }),
       onClick: () => {
@@ -180,7 +180,7 @@ function Y(e) {
     if (Z.type === G.IIU.WATCHING) return null;
     if ((0, u.Z)(Z)) return ep();
     if ((0, E.dS)(Z) && (null == (e = Z.party) ? void 0 : e.size) != null && (null == (t = Z.party) ? void 0 : t.size.length) >= 2) {
-      let e = F.intl.formatToPlainString(F.t["JC/3x8"], {
+      let e = V.intl.formatToPlainString(V.t["JC/3x8"], {
         numSpeakers: null == (i = Z.party) ? void 0 : i.size[0],
         numListeners: (null == (a = Z.party) ? void 0 : a.size[1]) - (null == (o = Z.party) ? void 0 : o.size[0])
       });
@@ -196,27 +196,27 @@ function Y(e) {
   }, ep = () => {
     var e, t, n, i;
     return (null == (e = Z.party) ? void 0 : e.size) == null && Z.application_id === B.Zc ? (0, r.jsxs)("div", {
-      className: V.gameState,
+      className: F.gameState,
       children: [(0, r.jsx)(L.Z, {
         variant: "text-xs/normal",
         text: Z.state
       }), (0, r.jsx)(L.Z, {
         variant: "text-xs/normal",
-        text: F.intl.formatToPlainString(F.t["u//9Bw"], {
+        text: V.intl.formatToPlainString(V.t["u//9Bw"], {
           count: "0",
           max: null != (i = null == Y ? void 0 : Y.getMaxParticipants()) ? i : 0
         })
       })]
     }) : (0, c.Z)(Z) && (null == (t = Z.party) ? void 0 : t.size) != null && (null == (n = Z.party) ? void 0 : n.size.length) >= 2 ? (0, r.jsxs)("div", {
-      className: V.gameState,
+      className: F.gameState,
       children: [(0, r.jsx)(L.Z, {
         variant: "text-xs/normal",
         text: Z.state
       }), (0, r.jsx)(L.Z, {
         variant: "text-xs/normal",
-        text: 0 === Z.party.size[1] ? F.intl.formatToPlainString(F.t.IM4J4e, {
+        text: 0 === Z.party.size[1] ? V.intl.formatToPlainString(V.t.IM4J4e, {
           count: Z.party.size[0]
-        }) : F.intl.formatToPlainString(F.t["u//9Bw"], {
+        }) : V.intl.formatToPlainString(V.t["u//9Bw"], {
           count: Z.party.size[0],
           max: Z.party.size[1]
         })
@@ -238,7 +238,7 @@ function Y(e) {
   }, em = () => null == ec ? (0, r.jsxs)("div", {
     children: [ed(), ef(), e_()]
   }) : (0, r.jsxs)(s.P3F, {
-    className: V.clickableText,
+    className: F.clickableText,
     onClick: e => {
       e.stopPropagation(), ei({
         action: "PRESS_TEXT"
@@ -252,8 +252,8 @@ function Y(e) {
     onAction: ei,
     onClose: Q
   }), eE = () => n.id === a.id ? null : (0, r.jsx)("div", {
-    className: o()(V.actions, ee),
-    children: (0, r.jsx)(R.Z, {
+    className: o()(F.actions, ee),
+    children: (0, r.jsx)(P.Z, {
       activity: Z,
       user: n,
       onAction: ei,
@@ -272,7 +272,7 @@ function Y(e) {
       children: (0, r.jsx)(T.Z, {
         user: n,
         guildId: z,
-        profileType: $,
+        themeType: $,
         sourceId: eb,
         sourceDetails: null == er ? (0, O.Z)(Z) : null,
         entry: er,
@@ -281,7 +281,7 @@ function Y(e) {
         children: () => (0, r.jsx)(A.Z, {
           ref: X,
           user: n,
-          className: V.toolbarContainer,
+          className: F.toolbarContainer,
           interactionSourceId: eb,
           sourceType: U.n_.ACTIVITY,
           onAction: ei,
@@ -299,24 +299,24 @@ function Y(e) {
           children: (0, r.jsxs)(w.Z, {
             ref: ea,
             className: o()(q, {
-              [V.hoisted]: ey
+              [F.hoisted]: ey
             }),
             onAction: ei,
             onClose: Q,
             children: [(0, r.jsx)(D.Z, H({}, eo)), (0, r.jsxs)("div", {
-              className: V.body,
+              className: F.body,
               children: [(0, r.jsxs)("div", {
-                className: o()(V.content, ee),
+                className: o()(F.content, ee),
                 children: [!n.bot && eu(), (0, r.jsxs)("div", {
-                  className: V.details,
-                  children: [em(), !n.bot && (0, r.jsx)(P.Z, {
+                  className: F.details,
+                  children: [em(), !n.bot && (0, r.jsx)(R.Z, {
                     user: n,
                     activity: Z,
-                    className: V.badges
+                    className: F.badges
                   }), eh()]
-                }), $ === U.y0.FULL_SIZE && eE()]
+                }), $ === U.lY.MODAL && eE()]
               }), eg()]
-            }), $ !== U.y0.FULL_SIZE && eE()]
+            }), $ !== U.lY.MODAL && eE()]
           })
         })
       })

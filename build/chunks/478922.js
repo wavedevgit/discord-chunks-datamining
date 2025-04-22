@@ -94,8 +94,8 @@ function g(e, t, n) {
         renderSection: A,
         renderItem: N,
         getSectionProps: C,
-        itemGutter: R,
-        removeEdgeItemGutters: P,
+        itemGutter: P,
+        removeEdgeItemGutters: R,
         sectionGutter: w,
         padding: D,
         paddingVertical: L,
@@ -107,8 +107,8 @@ function g(e, t, n) {
         renderAccessory: G,
         onItemVisibilityChange: B
       } = n,
-      F = h(n, ["onScroll", "dir", "sections", "columns", "getItemKey", "getItemHeight", "getSectionHeight", "chunkSize", "renderSection", "renderItem", "getSectionProps", "itemGutter", "removeEdgeItemGutters", "sectionGutter", "padding", "paddingVertical", "paddingHorizontal", "fade", "className", "style", "maxContentWidth", "renderAccessory", "onItemVisibilityChange"]);
-    let V = i.useRef(null),
+      V = h(n, ["onScroll", "dir", "sections", "columns", "getItemKey", "getItemHeight", "getSectionHeight", "chunkSize", "renderSection", "renderItem", "getSectionProps", "itemGutter", "removeEdgeItemGutters", "sectionGutter", "padding", "paddingVertical", "paddingHorizontal", "fade", "className", "style", "maxContentWidth", "renderAccessory", "onItemVisibilityChange"]);
+    let F = i.useRef(null),
       Z = i.useRef(null),
       H = i.useRef({}),
       [Y, W] = i.useState(!1),
@@ -139,8 +139,8 @@ function g(e, t, n) {
       getItemHeight: I,
       getSectionHeight: S,
       chunkSize: T,
-      itemGutter: R,
-      removeEdgeItemGutters: P,
+      itemGutter: P,
+      removeEdgeItemGutters: R,
       sectionGutter: w,
       padding: D,
       paddingVertical: L,
@@ -173,8 +173,8 @@ function g(e, t, n) {
       getScrollerState: q
     }, (0, c.Ue)(K, q, ei)), [K, q, ea, ei, eo]);
     let el = (0, i.useCallback)(e => {
-      er(1), null == V.current ? W(!0) : clearTimeout(V.current), V.current = setTimeout(() => {
-        V.current = null, W(!1)
+      er(1), null == F.current ? W(!0) : clearTimeout(F.current), F.current = setTimeout(() => {
+        F.current = null, W(!1)
       }, 200), null != E && E(e)
     }, [E, er]);
     return i.useLayoutEffect(() => {
@@ -188,7 +188,7 @@ function g(e, t, n) {
         [u.scrolling]: Y
       }),
       style: (0, c.uT)(j)
-    }, F), {
+    }, V), {
       children: [null != (g = null == G ? void 0 : G(ee)) ? g : null, (0, i.useMemo)(() => (0, r.jsx)(l.J, {
         containerRef: Z,
         children: (0, r.jsx)("div", {

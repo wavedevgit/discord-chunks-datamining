@@ -3,7 +3,7 @@
 n.d(t, {
   Ir: () => z,
   J: () => K,
-  YN: () => V,
+  YN: () => F,
   ZP: () => Q,
   iZ: () => H
 }), n(388685);
@@ -33,8 +33,8 @@ var r = n(200651),
   A = n(678869),
   N = n(278399),
   C = n(886217),
-  R = n(555672),
-  P = n(644548),
+  P = n(555672),
+  R = n(644548),
   w = n(335326),
   D = n(268010),
   L = n(797342),
@@ -82,7 +82,7 @@ function G(e, t) {
 
 function B(e, t) {
   if (null == e) return {};
-  var n, r, i = F(e, t);
+  var n, r, i = V(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -90,18 +90,18 @@ function B(e, t) {
   return i
 }
 
-function F(e, t) {
+function V(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let V = 72,
+let F = 72,
   Z = 2e3;
 
 function H(e) {
-  return (null == e ? void 0 : e.type) === E.so.CONTENT_INVENTORY ? V : 0
+  return (null == e ? void 0 : e.type) === E.so.CONTENT_INVENTORY ? F : 0
 }
 let Y = e => {
     var {
@@ -117,7 +117,7 @@ let Y = e => {
           entry: t
         }));
       case l.s.TOP_GAME:
-        return (0, r.jsx)(R.ZP, G(j({}, n), {
+        return (0, r.jsx)(P.ZP, G(j({}, n), {
           entry: t
         }));
       case l.s.TOP_ARTIST:
@@ -175,7 +175,7 @@ let Y = e => {
           entry: n
         }));
       case l.s.TOP_GAME:
-        return (0, r.jsx)(P.Z, G(j({}, i), {
+        return (0, r.jsx)(R.Z, G(j({}, i), {
           entry: n
         }));
       case l.s.TOP_ARTIST:
@@ -216,10 +216,10 @@ let Y = e => {
       guildId: p.channel.guild_id,
       requestId: p.requestId,
       richPresenceName: O ? I : void 0
-    }), [I, p.channel.guild_id, p.channel.id, p.entry, p.requestId, O]), T = i.useRef(!1), [A, N] = i.useState(!1), [C, R] = i.useState(!1), P = (0, c.e7)([_.Z], () => _.Z.keyboardModeEnabled);
+    }), [I, p.channel.guild_id, p.channel.id, p.entry, p.requestId, O]), T = i.useRef(!1), [A, N] = i.useState(!1), [C, P] = i.useState(!1), R = (0, c.e7)([_.Z], () => _.Z.keyboardModeEnabled);
     i.useEffect(() => {
-      A && P && R(!0)
-    }, [A, P]);
+      A && R && P(!0)
+    }, [A, R]);
     let w = i.useCallback(e => {
         v && (0, f.jW)(e, async () => {
           let {
@@ -244,9 +244,9 @@ let Y = e => {
         leading: !0,
         trailing: !1
       }), []),
-      F = () => {
+      V = () => {
         T.current = !1, setTimeout(() => {
-          T.current || (N(!1), R(P))
+          T.current || (N(!1), P(R))
         }, 100)
       };
     return (0, r.jsx)("div", {
@@ -257,14 +257,14 @@ let Y = e => {
           T.current && N(!0), U(S)
         }, 100)
       },
-      onMouseLeave: F,
+      onMouseLeave: V,
       children: (0, r.jsx)(d.yRy, {
         renderPopout: e => {
           let {
             closePopout: t
           } = e;
           return (0, r.jsx)(z.Provider, {
-            value: F,
+            value: V,
             children: (0, r.jsx)(W, j({
               closePopout: t,
               updatePopoutPosition: D,
@@ -277,7 +277,7 @@ let Y = e => {
         positionKey: m,
         onRequestOpen: () => U(S),
         onRequestClose: () => {
-          C && F()
+          C && V()
         },
         spacing: 8,
         children: (e, t) => {

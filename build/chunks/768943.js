@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => F
+  Z: () => V
 }), n(415506), n(388685);
 var r, i = n(442837),
   a = n(759174),
@@ -117,14 +117,14 @@ function C(e) {
   I(t)
 }
 
-function R(e) {
+function P(e) {
   let {
     savedMessageData: t
   } = e;
   return S(t)
 }
 
-function P(e) {
+function R(e) {
   let {
     messageId: t,
     channelId: n
@@ -142,7 +142,7 @@ function w(e) {
     id: t,
     channelId: n
   } = e;
-  return P({
+  return R({
     messageId: t,
     channelId: n
   })
@@ -153,7 +153,7 @@ function D(e) {
     ids: t,
     channelId: n
   } = e;
-  for (let e of t) P({
+  for (let e of t) R({
     messageId: e,
     channelId: n
   })
@@ -268,12 +268,12 @@ class B extends(r = i.ZP.Store) {
   }
 }
 u(B, "displayName", "SavedMessagesStore");
-let F = new B(o.Z, {
+let V = new B(o.Z, {
   POST_CONNECTION_OPEN: T,
   LOGOUT: A,
   SAVED_MESSAGES_UPDATE: N,
   SAVED_MESSAGE_CREATE: C,
-  SAVED_MESSAGE_DELETE: R,
+  SAVED_MESSAGE_DELETE: P,
   MESSAGE_DELETE: w,
   MESSAGE_DELETE_BULK: D,
   MESSAGE_UPDATE: L,

@@ -166,8 +166,8 @@ function O(e, t, n, a) {
       sections: A,
       sectionHeight: N,
       rowHeight: C,
-      footerHeight: R = 0,
-      sidebarHeight: P,
+      footerHeight: P = 0,
+      sidebarHeight: R,
       listHeaderHeight: w = 0,
       renderSection: D,
       renderRow: L,
@@ -178,8 +178,8 @@ function O(e, t, n, a) {
       wrapSection: U,
       getAnchorId: G,
       paddingTop: B,
-      paddingBottom: F,
-      fade: V = !1,
+      paddingBottom: V,
+      fade: F = !1,
       customTheme: Z = !1,
       chunkSize: H,
       style: Y,
@@ -218,11 +218,11 @@ function O(e, t, n, a) {
       sections: A,
       sectionHeight: N,
       rowHeight: C,
-      footerHeight: R,
-      sidebarHeight: P,
+      footerHeight: P,
+      sidebarHeight: R,
       listHeaderHeight: w,
       paddingTop: B,
-      paddingBottom: F,
+      paddingBottom: V,
       chunkSize: H,
       getScrollerState: eo,
       getAnchorId: G
@@ -282,7 +282,7 @@ function O(e, t, n, a) {
       onScroll: ev,
       className: o()(g, {
         [e]: !0,
-        [t]: V,
+        [t]: F,
         [n]: Z,
         [d.scrolling]: en
       }),
@@ -315,9 +315,9 @@ function O(e, t, n, a) {
       }), [J, W, K, z, q, Q, el, X, ec, k, j, D, L, x, U, es]), i.useMemo(() => v({
         isSidebarVisible: eu,
         renderSidebar: M,
-        sidebarHeight: P,
+        sidebarHeight: R,
         isListVisible: 0 !== ec.length
-      }), [eu, M, P, ec.length])]
+      }), [eu, M, R, ec.length])]
     }))
   })
 }

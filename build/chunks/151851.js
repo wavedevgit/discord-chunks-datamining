@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => R
+  Z: () => P
 });
 var r = n(200651);
 n(192379);
@@ -124,7 +124,7 @@ let I = "#ffffff",
     })
   };
 
-function R(e) {
+function P(e) {
   let {
     focused: t,
     type: n,

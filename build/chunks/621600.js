@@ -157,9 +157,9 @@ function I(e, t, n, s, d, _) {
     T = I(A(e, t), n),
     N = v(S, T, "RETURN_PREVIOUS_WHEN_CHANGED"),
     C = a.Z.getChannel(t),
-    R = null != (g = N("channel_flags")) ? g : 0,
-    P = (null != (E = T.channel_flags) ? E : 0) ^ R,
-    w = 0 === (0, l.M1)(P, f.ic.FAVORITED, f.ic.OPT_IN_ENABLED),
+    P = null != (g = N("channel_flags")) ? g : 0,
+    R = (null != (E = T.channel_flags) ? E : 0) ^ P,
+    w = 0 === (0, l.M1)(R, f.ic.FAVORITED, f.ic.OPT_IN_ENABLED),
     D = null != (y = null == (h = o.Z.getLastMessage(t)) ? void 0 : h.type) ? y : null;
   r.ZP.trackWithMetadata(c.rMx.NOTIFICATION_SETTINGS_UPDATED, m(p({}, T, i.Z.getStats(e)), {
     location: _,

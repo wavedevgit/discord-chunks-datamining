@@ -17,9 +17,9 @@ n.d(t, {
   f: () => H,
   m7: () => M,
   n8: () => K,
-  pQ: () => V,
+  pQ: () => F,
   v1: () => Z,
-  wO: () => F
+  wO: () => V
 });
 var r = n(200651),
   i = n(192379),
@@ -83,9 +83,9 @@ function C(e, t) {
   }), e
 }
 
-function R(e, t) {
+function P(e, t) {
   if (null == e) return {};
-  var n, r, i = P(e, t);
+  var n, r, i = R(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -93,7 +93,7 @@ function R(e, t) {
   return i
 }
 
-function P(e, t) {
+function R(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -102,10 +102,10 @@ function P(e, t) {
 }
 let w = {
   [c.s.TOP_ARTIST]: [W],
-  [c.s.PLAYED_GAME]: [U, G, j, z, F, H, K, Z, V],
+  [c.s.PLAYED_GAME]: [U, G, j, z, V, H, K, Z, F],
   [c.s.TOP_GAME]: [Y],
   [c.s.WATCHED_MEDIA]: [q, Q],
-  [c.s.LAUNCHED_ACTIVITY]: [U, G, j, z, K, V]
+  [c.s.LAUNCHED_ACTIVITY]: [U, G, j, z, K, F]
 };
 var D = function(e) {
   return e[e.CARD = 0] = "CARD", e[e.POPOUT = 1] = "POPOUT", e[e.STREAMING_POPOUT = 2] = "STREAMING_POPOUT", e[e.GAME_PROFILE = 3] = "GAME_PROFILE", e[e.USER_PROFILE = 4] = "USER_PROFILE", e[e.EMBED = 5] = "EMBED", e[e.LEADERBOARD_POPOUT = 6] = "LEADERBOARD_POPOUT", e[e.OVERLAY = 7] = "OVERLAY", e[e.FRIENDS_POPOUT = 8] = "FRIENDS_POPOUT", e[e.APP_LAUNCHER = 9] = "APP_LAUNCHER", e
@@ -119,7 +119,7 @@ function x() {
 function M(e) {
   var {
     children: t
-  } = e, n = R(e, ["children"]);
+  } = e, n = P(e, ["children"]);
   return (0, r.jsx)("div", C(A({
     className: S.badgeContainer
   }, n), {
@@ -248,7 +248,7 @@ function B(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     entry: t
   } = e, {
@@ -261,7 +261,7 @@ function F(e) {
   }) : null
 }
 
-function V(e) {
+function F(e) {
   let {
     entry: t
   } = e, {

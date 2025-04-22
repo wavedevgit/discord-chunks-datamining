@@ -80,10 +80,10 @@ function A(e) {
     guildId: t,
     channelId: n
   } = e, r = !1;
-  return n !== S && (S = null != n ? n : null, null != n && p.Xyh.test(n) && (r = !0, I.track(n), R.pendingUsages.push({
+  return n !== S && (S = null != n ? n : null, null != n && p.Xyh.test(n) && (r = !0, I.track(n), P.pendingUsages.push({
     key: n,
     timestamp: Date.now()
-  }))), t !== T && (T = null != t ? t : null, null != t && p.Xyh.test(t) && (r = !0, I.track(t), R.pendingUsages.push({
+  }))), t !== T && (T = null != t ? t : null, null != t && p.Xyh.test(t) && (r = !0, I.track(t), P.pendingUsages.push({
     key: t,
     timestamp: Date.now()
   }))), r
@@ -96,7 +96,7 @@ function N(e) {
     },
     wasSaved: n
   } = e;
-  return t === h.yP.FRECENCY_AND_FAVORITES_SETTINGS && !!n && (R.pendingUsages = [], !0)
+  return t === h.yP.FRECENCY_AND_FAVORITES_SETTINGS && !!n && (P.pendingUsages = [], !0)
 }
 
 function C() {
@@ -105,20 +105,20 @@ function C() {
   if (null == t) return !1;
   I.overwriteHistory(a().mapValues(t, e => b(g({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
-  })), R.pendingUsages)
+  })), P.pendingUsages)
 }
-let R = {
+let P = {
   pendingUsages: []
 };
-class P extends(r = o.ZP.PersistedStore) {
+class R extends(r = o.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(_.Z, f.Z), null != e && (e.pendingUsages = e.pendingUsages.filter(e => null != e && p.Xyh.test(e.key)), R = e), this.syncWith([c.Z], C)
+    this.waitFor(_.Z, f.Z), null != e && (e.pendingUsages = e.pendingUsages.filter(e => null != e && p.Xyh.test(e.key)), P = e), this.syncWith([c.Z], C)
   }
   getState() {
-    return R
+    return P
   }
   hasPendingUsage() {
-    return R.pendingUsages.length > 0
+    return P.pendingUsages.length > 0
   }
   get frecencyWithoutFetchingLatest() {
     return I
@@ -141,8 +141,8 @@ class P extends(r = o.ZP.PersistedStore) {
     return v
   }
 }
-m(P, "displayName", "FrecencyStore"), m(P, "persistKey", "FrecencyStore");
-let w = new P(s.Z, {
+m(R, "displayName", "FrecencyStore"), m(R, "persistKey", "FrecencyStore");
+let w = new R(s.Z, {
   CHANNEL_SELECT: A,
   VOICE_CHANNEL_SELECT: A,
   USER_SETTINGS_PROTO_UPDATE: N

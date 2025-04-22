@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Cg: () => P,
+  Cg: () => R,
   Y0: () => L,
   YA: () => G,
   fM: () => D,
@@ -73,7 +73,7 @@ function N(e, t) {
 
 function C(e, t) {
   if (null == e) return {};
-  var n, r, i = R(e, t);
+  var n, r, i = P(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -81,14 +81,14 @@ function C(e, t) {
   return i
 }
 
-function R(e, t) {
+function P(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-var P = function(e) {
+var R = function(e) {
   return e.SMALL = "small", e.MEDIUM = "medium", e.LARGE = "large", e.DYNAMIC = "dynamic", e
 }({});
 let w = Object.freeze({
@@ -115,13 +115,13 @@ function L(e) {
       animation: S = "default"
     } = e,
     A = C(e, ["transitionState", "children", "size", "role", "className", "fullscreenOnMobile", "hideShadow", "onAnimationEnd", "returnRef", "animation"]);
-  let R = n === y.Dv.ENTERING || n === y.Dv.ENTERED,
+  let P = n === y.Dv.ENTERING || n === y.Dv.ENTERED,
     {
-      reducedMotion: P
+      reducedMotion: R
     } = i.useContext(d.S),
     D = (0, u.q)({
-      opacity: +!!R,
-      transform: R || P.enabled || "subtle" === S ? "scale(1)" : "scale(0.7)",
+      opacity: +!!P,
+      transform: P || R.enabled || "subtle" === S ? "scale(1)" : "scale(0.7)",
       config: {
         duration: 200,
         easing: c.Z.Easing.out(c.Z.Easing.quad),

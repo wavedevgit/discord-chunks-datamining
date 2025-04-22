@@ -74,7 +74,7 @@ function v(e) {
     onUpsellClick: A
   } = e, {
     analyticsLocations: N
-  } = (0, l.ZP)(), C = (0, o.e7)([u.Z], () => u.Z.getStatus(t.id)), R = null == n || (null == i ? void 0 : i.canUsePremiumProfileCustomization) || d, P = (0, r.jsx)(y, {
+  } = (0, l.ZP)(), C = (0, o.e7)([u.Z], () => u.Z.getStatus(t.id)), P = null == n || (null == i ? void 0 : i.canUsePremiumProfileCustomization) || d, R = (0, r.jsx)(y, {
     src: m,
     avatarDecoration: E,
     imageClassName: a()(I, {
@@ -88,8 +88,8 @@ function v(e) {
   });
   return S ? (0, r.jsx)("div", {
     className: h.avatar,
-    children: P
-  }) : R ? (0, r.jsx)(s.yRy, {
+    children: R
+  }) : P ? (0, r.jsx)(s.yRy, {
     renderPopout: e => {
       let {
         closePopout: t
@@ -109,7 +109,7 @@ function v(e) {
     },
     children: e => (0, r.jsxs)(s.P3F, b(g({}, e), {
       className: a()(h.avatar, h.clickable),
-      children: [P, (0, r.jsx)(s.vdY, {
+      children: [R, (0, r.jsx)(s.vdY, {
         size: "custom",
         className: h.overlayIcon,
         width: 20,
@@ -120,7 +120,7 @@ function v(e) {
   }) : (0, r.jsxs)(s.P3F, {
     onClick: A,
     className: a()(h.avatar, h.clickable),
-    children: [P, (0, r.jsx)(s.SrA, {
+    children: [R, (0, r.jsx)(s.SrA, {
       size: "custom",
       className: h.overlayIcon,
       width: 20,

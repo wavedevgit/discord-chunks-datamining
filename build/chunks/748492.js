@@ -33,8 +33,8 @@ var i = n(120356),
   A = n(636449),
   N = n(884338),
   C = n(349619),
-  R = n(981631),
-  P = n(231338),
+  P = n(981631),
+  R = n(231338),
   w = n(388032),
   D = n(816083),
   L = n(992955);
@@ -66,7 +66,7 @@ function M(e) {
     idle: x,
     selectedParticipant: M,
     embeddedActivity: k
-  } = e, j = (0, c.bp)() === R.IlC.POPOUT, U = (0, o.e7)([T.Z], () => T.Z.isVideoEnabled()), G = (0, o.e7)([T.Z], () => Object.values(T.Z.getVideoDevices())[0]), B = !1 === (null == (t = null == G ? void 0 : G.disabled) || t), F = (0, d.Z)([s])[0], V = (0, m.Z)(a), {
+  } = e, j = (0, c.bp)() === P.IlC.POPOUT, U = (0, o.e7)([T.Z], () => T.Z.isVideoEnabled()), G = (0, o.e7)([T.Z], () => Object.values(T.Z.getVideoDevices())[0]), B = !1 === (null == (t = null == G ? void 0 : G.disabled) || t), V = (0, d.Z)([s])[0], F = (0, m.Z)(a), {
     parentAnalyticsLocation: Z
   } = (0, u.ZP)(), H = e => {
     (0, _.v)(Z, _.d.CAMERA, e), l.Z.setVideoEnabled(e)
@@ -84,7 +84,7 @@ function M(e) {
       className: L.topControls,
       children: (0, r.jsx)(b.r, {
         idle: x,
-        title: null != (i = null != (n = null == F ? void 0 : F.name) ? n : null == a ? void 0 : a.name) ? i : "",
+        title: null != (i = null != (n = null == V ? void 0 : V.name) ? n : null == a ? void 0 : a.name) ? i : "",
         onJumpToChannel: w,
         preventIdleComponent: E.Z
       })
@@ -99,7 +99,7 @@ function M(e) {
           className: D.leftPipIcon,
           enabled: U,
           cameraUnavailable: !B,
-          hasPermission: V,
+          hasPermission: F,
           onChange: H,
           onCameraUnavailable: Y
         }), null != a && (0, r.jsx)(E.Z, {
@@ -121,7 +121,7 @@ function M(e) {
           className: D.rightPipIcon,
           popoutOpen: !1,
           onOpenPopout: W,
-          onClosePopout: P.Vq
+          onClosePopout: R.Vq
         }), (0, r.jsx)(v.Z, {
           applicationId: s,
           location: k.location,

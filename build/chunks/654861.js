@@ -166,11 +166,11 @@ var r = function(e) {
     return -.012 * e - .012 * t + 15e-6 * e * t > 0
   }
 
-  function R(e, n, r) {
+  function P(e, n, r) {
     return e < t ? new c(T(n, e), r) : new c(S(n, _(e)), r)
   }
 
-  function P(e) {
+  function R(e) {
     var n, r, i, a, o = e.length,
       s = m(o + o),
       l = t;
@@ -336,18 +336,18 @@ var r = function(e) {
     }
     return C(i.length, a.length) ? new c(N(i, a), o) : new c(S(i, a), o)
   }, c.prototype.times = c.prototype.multiply, u.prototype._multiplyBySmall = function(e) {
-    return f(e.value * this.value) ? new u(e.value * this.value) : R(Math.abs(e.value), _(Math.abs(this.value)), this.sign !== e.sign)
+    return f(e.value * this.value) ? new u(e.value * this.value) : P(Math.abs(e.value), _(Math.abs(this.value)), this.sign !== e.sign)
   }, c.prototype._multiplyBySmall = function(e) {
-    return 0 === e.value ? l[0] : 1 === e.value ? this : -1 === e.value ? this.negate() : R(Math.abs(e.value), this.value, this.sign !== e.sign)
+    return 0 === e.value ? l[0] : 1 === e.value ? this : -1 === e.value ? this.negate() : P(Math.abs(e.value), this.value, this.sign !== e.sign)
   }, u.prototype.multiply = function(e) {
     return ea(e)._multiplyBySmall(this)
   }, u.prototype.times = u.prototype.multiply, d.prototype.multiply = function(e) {
     return new d(this.value * ea(e).value)
   }, d.prototype.times = d.prototype.multiply, c.prototype.square = function() {
-    return new c(P(this.value), !1)
+    return new c(R(this.value), !1)
   }, u.prototype.square = function() {
     var e = this.value * this.value;
-    return f(e) ? new u(e) : new c(P(_(Math.abs(this.value))), !1)
+    return f(e) ? new u(e) : new c(R(_(Math.abs(this.value))), !1)
   }, d.prototype.square = function(e) {
     return new d(this.value * this.value)
   }, c.prototype.divmod = function(e) {
@@ -520,11 +520,11 @@ var r = function(e) {
   var G = U.length,
     B = U[G - 1];
 
-  function F(e) {
+  function V(e) {
     return Math.abs(e) <= t
   }
 
-  function V(e, t, n) {
+  function F(e, t, n) {
     t = ea(t);
     for (var i = e.isNegative(), a = t.isNegative(), o = i ? e.not() : e, s = a ? t.not() : t, l = 0, c = 0, u = null, d = null, f = []; !o.isZero() || !s.isZero();) l = (u = x(o, B))[1].toJSNumber(), i && (l = B - 1 - l), c = (d = x(s, B))[1].toJSNumber(), a && (c = B - 1 - c), o = u[0], s = d[0], f.push(n(l, c));
     for (var _ = 0 !== n(+!!i, +!!a) ? r(-1) : r(0), p = f.length - 1; p >= 0; p -= 1) _ = _.multiply(B).add(r(f[p]));
@@ -532,7 +532,7 @@ var r = function(e) {
   }
   c.prototype.shiftLeft = function(e) {
     var t = ea(e).toJSNumber();
-    if (!F(t)) throw Error(String(t) + " is too large for shifting.");
+    if (!V(t)) throw Error(String(t) + " is too large for shifting.");
     if (t < 0) return this.shiftRight(-t);
     var n = this;
     if (n.isZero()) return n;
@@ -540,7 +540,7 @@ var r = function(e) {
     return n.multiply(U[t])
   }, d.prototype.shiftLeft = u.prototype.shiftLeft = c.prototype.shiftLeft, c.prototype.shiftRight = function(e) {
     var t, n = ea(e).toJSNumber();
-    if (!F(n)) throw Error(String(n) + " is too large for shifting.");
+    if (!V(n)) throw Error(String(n) + " is too large for shifting.");
     if (n < 0) return this.shiftLeft(-n);
     for (var r = this; n >= G;) {
       if (r.isZero() || r.isNegative() && r.isUnit()) return r;
@@ -550,15 +550,15 @@ var r = function(e) {
   }, d.prototype.shiftRight = u.prototype.shiftRight = c.prototype.shiftRight, c.prototype.not = function() {
     return this.negate().prev()
   }, d.prototype.not = u.prototype.not = c.prototype.not, c.prototype.and = function(e) {
-    return V(this, e, function(e, t) {
+    return F(this, e, function(e, t) {
       return e & t
     })
   }, d.prototype.and = u.prototype.and = c.prototype.and, c.prototype.or = function(e) {
-    return V(this, e, function(e, t) {
+    return F(this, e, function(e, t) {
       return e | t
     })
   }, d.prototype.or = u.prototype.or = c.prototype.or, c.prototype.xor = function(e) {
-    return V(this, e, function(e, t) {
+    return F(this, e, function(e, t) {
       return e ^ t
     })
   }, d.prototype.xor = u.prototype.xor = c.prototype.xor;

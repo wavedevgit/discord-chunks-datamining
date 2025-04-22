@@ -35,8 +35,8 @@ function A(e) {
     onNext: A,
     legalTermsNodeRef: N,
     flashLegalTerms: C,
-    invoiceError: R,
-    planError: P,
+    invoiceError: P,
+    planError: R,
     onPurchaseError: w,
     baseAnalyticsData: D,
     flowStartTime: L,
@@ -47,8 +47,8 @@ function A(e) {
     openInvoiceId: U,
     metadata: G,
     backButtonEligible: B,
-    disablePurchase: F,
-    isTrial: V = !1,
+    disablePurchase: V,
+    isTrial: F = !1,
     onPaymentSourceAdd: Z
   } = e, {
     selectedPlan: H,
@@ -98,7 +98,7 @@ function A(e) {
       t = null != q ? q : h.c;
     eN = null != e ? e[t] : null
   }
-  let eR = async () => {
+  let eP = async () => {
     await (0, y.H)({
       setPurchaseState: n,
       setHasAcceptedTerms: W,
@@ -129,19 +129,19 @@ function A(e) {
       giftInfoOptions: e_,
       invoicePreview: en
     })
-  }, eP = {
+  }, eR = {
     baseAnalyticsData: D,
     flowStartTime: L,
-    makePurchase: eR,
+    makePurchase: eP,
     onNext: A,
     onPurchaseError: w,
     paymentSource: eg,
     paymentSourceId: q,
     purchaseTokenAuthState: j,
     setPurchaseState: n
-  }, ew = i.useRef(eP);
+  }, ew = i.useRef(eR);
   i.useEffect(() => {
-    ew.current = eP
+    ew.current = eR
   }), i.useEffect(() => {
     let {
       makePurchase: e
@@ -153,17 +153,17 @@ function A(e) {
     align: c.Z.Align.CENTER,
     children: [(0, r.jsx)(p.Z, {
       legalTermsNodeRef: N,
-      invoiceError: R,
-      planError: P,
-      disablePurchase: F,
+      invoiceError: P,
+      planError: R,
+      disablePurchase: V,
       flashLegalTerms: C,
       isSubmitting: eE,
       premiumSubscription: t,
       isGift: ei,
       planGroup: M,
       isPrepaid: eI,
-      isTrial: V,
-      makePurchase: eR,
+      isTrial: F,
+      makePurchase: eP,
       needsPaymentSource: null == eg && !eS,
       onNext: A,
       inReverseTrial: er,

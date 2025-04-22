@@ -19,7 +19,7 @@ var i = n(120356),
 function p(e) {
   let {
     user: t,
-    profileType: n,
+    themeType: n,
     usernameIcon: i,
     tags: p,
     nickname: h,
@@ -32,9 +32,9 @@ function p(e) {
     nicknameVariant: O = "heading-lg/bold",
     pronounsVariant: I = "text-sm/medium"
   } = e, S = {
-    [_.biteSize]: n === d.y0.BITE_SIZE,
-    [_.fullSize]: n === d.y0.FULL_SIZE,
-    [_.panel]: n === d.y0.PANEL
+    [_.biteSize]: n === d.lY.POPOUT,
+    [_.fullSize]: n === d.lY.MODAL,
+    [_.panel]: n === d.lY.SIDEBAR
   }, T = e => null == y ? e : (0, r.jsx)(o.P3F, {
     onClick: y,
     className: _.clickableUsername,

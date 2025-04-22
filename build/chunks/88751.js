@@ -106,7 +106,7 @@ function C(e) {
   return null != n && null != t && S(n.id, t)
 }
 
-function R(e) {
+function P(e) {
   let {
     voiceStates: t
   } = e;
@@ -119,7 +119,7 @@ function R(e) {
   }, !1)
 }
 
-function P(e) {
+function R(e) {
   return T(e.guildId)
 }
 
@@ -169,8 +169,8 @@ let x = new L(s.Z, {
   GUILD_MEMBER_REMOVE: C,
   GUILD_MEMBER_UPDATE: C,
   GUILD_ROLE_UPDATE: N,
-  PASSIVE_UPDATE_V2: P,
-  VOICE_STATE_UPDATES: R,
+  PASSIVE_UPDATE_V2: R,
+  VOICE_STATE_UPDATES: P,
   GUILD_CREATE: D,
   GUILD_DELETE: D
 })

@@ -29,8 +29,8 @@ var r = n(512722),
   A = n(14639),
   N = n(639655),
   C = n(610308),
-  R = n(91247),
-  P = n(508569),
+  P = n(91247),
+  R = n(508569),
   w = n(183139),
   D = n(645436),
   L = n(833508),
@@ -77,7 +77,7 @@ function U(e, t) {
 let G = new m.Z("GatewaySocket"),
   B = new C.Z;
 
-function F(e) {
+function V(e) {
   let t, {
     gatewayURL: n,
     newCallback: r,
@@ -105,7 +105,7 @@ function F(e) {
     } null == t && ((t = (0, L.Z)(n)).binaryType = "arraybuffer"), r(t), c && i(u, f), null != d && d.forEach(a), t.onopen = () => i(u, f), t.onmessage = a, t.onclose = s, t.onerror = o
 }
 
-function V() {}
+function F() {}
 let Z = 4,
   H = 1001,
   Y = "Stream end encountered",
@@ -165,7 +165,7 @@ class $ extends w.Z {
       this._handleClose(!1, 0, "The connection timed out after ".concat(e, " ms - did not receive OP_HELLO in time.")), this.setResumeUrl(null)
     }, K);
     let i = new URL(n);
-    i.searchParams.append("encoding", t), i.searchParams.append("v", r.toString()), null != e && i.searchParams.append("compress", e), F({
+    i.searchParams.append("encoding", t), i.searchParams.append("v", r.toString()), null != e && i.searchParams.append("compress", e), V({
       gatewayURL: i.toString(),
       newCallback: e => {
         this.webSocket = e, this.compressionHandler.bindWebSocket(e)
@@ -234,7 +234,7 @@ class $ extends w.Z {
   _handleHello(e) {
     let t = this.heartbeatInterval = e.heartbeat_interval,
       n = Date.now() - this.connectionStartTime;
-    G.verbose("[HELLO] via ".concat((0, R.TO)(e), ", ") + "heartbeat interval: ".concat(t, ", ") + "took ".concat(n, " ms")), this._startHeartbeater()
+    G.verbose("[HELLO] via ".concat((0, P.TO)(e), ", ") + "heartbeat interval: ".concat(t, ", ") + "took ".concat(n, " ms")), this._startHeartbeater()
   }
   _handleReconnect() {
     G.verbose("[RECONNECT] gateway requested I reconnect."), this._cleanup(e => e.close(4e3)), this.connectionState = T.Z.WILL_RECONNECT, this._connect()
@@ -247,9 +247,9 @@ class $ extends w.Z {
     if ("READY" === t) {
       let t = e.session_id;
       this.sessionId = t;
-      let n = (0, R.TO)(e);
+      let n = (0, P.TO)(e);
       s.Z.setServerTrace(n), G.info("[READY] took ".concat(r, "ms, as ").concat(t)), G.verbose("".concat(n)), this.connectionState = T.Z.SESSION_ESTABLISHED, this.gatewayBackoff.succeed(), this.iosGoingAwayEventCount = 0, this.setResumeUrl(e.resume_gateway_url)
-    } else "READY_SUPPLEMENTAL" === t ? (G.info("[READY_SUPPLEMENTAL] took ".concat(r, "ms")), this.connectionState = T.Z.SESSION_ESTABLISHED, this.gatewayBackoff.succeed(), this.iosGoingAwayEventCount = 0) : "RESUMED" === t && (G.verbose((0, R.TO)(e)), this.connectionState = T.Z.SESSION_ESTABLISHED, this.gatewayBackoff.succeed(), this.iosGoingAwayEventCount = 0);
+    } else "READY_SUPPLEMENTAL" === t ? (G.info("[READY_SUPPLEMENTAL] took ".concat(r, "ms")), this.connectionState = T.Z.SESSION_ESTABLISHED, this.gatewayBackoff.succeed(), this.iosGoingAwayEventCount = 0) : "RESUMED" === t && (G.verbose((0, P.TO)(e)), this.connectionState = T.Z.SESSION_ESTABLISHED, this.gatewayBackoff.succeed(), this.iosGoingAwayEventCount = 0);
     this.dispatcher.receiveDispatch(e, t, n)
   }
   handleResumeDispatched() {
@@ -339,11 +339,11 @@ class $ extends w.Z {
   _cleanup(e) {
     c.ZP.Emitter.resume(), this._stopHeartbeater(), this._clearHelloTimeout();
     let t = this.webSocket;
-    this.webSocket = null, null != t && (t.onopen = V, t.onmessage = V, t.onerror = V, t.onclose = V, null == e || e(t)), this.gatewayBackoff.cancel(), this.compressionHandler.close(), this.compressionHandler = (0, N.I)(B)
+    this.webSocket = null, null != t && (t.onopen = F, t.onmessage = F, t.onerror = F, t.onclose = F, null == e || e(t)), this.gatewayBackoff.cancel(), this.compressionHandler.close(), this.compressionHandler = (0, N.I)(B)
   }
   _doResume() {
     var e;
-    this.connectionState = T.Z.RESUMING, this.dispatcher.resumeAnalytics = (0, R.zH)(Date.now() - this.connectionStartTime), G.info("[RESUME] resuming session ".concat(null != (e = this.sessionId) ? e : "", ", seq: ").concat(this.seq)), this.send(w.j.RESUME, {
+    this.connectionState = T.Z.RESUMING, this.dispatcher.resumeAnalytics = (0, P.zH)(Date.now() - this.connectionStartTime), G.info("[RESUME] resuming session ".concat(null != (e = this.sessionId) ? e : "", ", seq: ").concat(this.seq)), this.send(w.j.RESUME, {
       token: this.token,
       session_id: this.sessionId,
       seq: this.seq
@@ -496,6 +496,6 @@ class $ extends w.Z {
       if (!n || this.isSessionEstablished()) try {
         null != this.webSocket && this.webSocket.send(r)
       } catch (e) {} else G.warn("Attempted to send while not being in a connected state opcode: ".concat(e))
-    }), this.dispatcher = new P.Z(this), this.gatewayBackoff = new o.Z(1e3, 6e4), this.connectionState_ = T.Z.CLOSED, this.webSocket = null, this.seq = 0, this.sessionId = null, this.token = null, this.initialHeartbeatTimeout = null, this.expeditedHeartbeatTimeout = null, this.lastHeartbeatTime = null, this.lastHeartbeatAckTime = null, this.helloTimeout = null, this.heartbeatInterval = null, this.heartbeater = null, this.heartbeatAck = !0, this.connectionStartTime = 0, this.identifyStartTime = 0, this.nextReconnectIsImmediate = !1, this.compressionHandler = (0, N.I)(B), this.hasConnectedOnce = !1, this.isFastConnect = !1, this.identifyCount = 0, this.iosGoingAwayEventCount = 0
+    }), this.dispatcher = new R.Z(this), this.gatewayBackoff = new o.Z(1e3, 6e4), this.connectionState_ = T.Z.CLOSED, this.webSocket = null, this.seq = 0, this.sessionId = null, this.token = null, this.initialHeartbeatTimeout = null, this.expeditedHeartbeatTimeout = null, this.lastHeartbeatTime = null, this.lastHeartbeatAckTime = null, this.helloTimeout = null, this.heartbeatInterval = null, this.heartbeater = null, this.heartbeatAck = !0, this.connectionStartTime = 0, this.identifyStartTime = 0, this.nextReconnectIsImmediate = !1, this.compressionHandler = (0, N.I)(B), this.hasConnectedOnce = !1, this.isFastConnect = !1, this.identifyCount = 0, this.iosGoingAwayEventCount = 0
   }
 }

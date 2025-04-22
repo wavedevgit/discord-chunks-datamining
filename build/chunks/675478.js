@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  BU: () => R,
+  BU: () => P,
   Bn: () => w,
   DZ: () => A,
   PS: () => C,
@@ -11,7 +11,7 @@ n.d(t, {
   bE: () => j,
   fy: () => g.fy,
   hW: () => T,
-  nm: () => P,
+  nm: () => R,
   po: () => L,
   sr: () => k,
   w9: () => x,
@@ -278,11 +278,11 @@ function C(e, t, n) {
   return T.updateAsync("guilds", n => (0, m.u0)(n, e, t), n)
 }
 
-function R(e, t, n, r) {
+function P(e, t, n, r) {
   return C(e, e => (0, m.uL)(e, t, n), r)
 }
 
-function P(e) {
+function R(e) {
   return T.updateAsync("userContent", t => {
     if ((0, _.jl)(t.dismissedContents, e)) return !1;
     t.dismissedContents = (0, _.GV)(t.dismissedContents, e)

@@ -45,8 +45,8 @@ var i = n(200651),
   F = n(635921),
   H = n(177839),
   z = n(794484),
-  W = n(392521),
-  Y = n(349803),
+  Y = n(392521),
+  W = n(349803),
   K = n(179984),
   q = n(706542),
   X = n(851001),
@@ -114,12 +114,12 @@ let ep = e => {
           setIsAllPerksVisible: r,
           previousComponent: $.MQ.MARKETING
         }) : void 0
-      }), n && !a && (0, i.jsx)(W.ZP, {
+      }), n && !a && (0, i.jsx)(Y.ZP, {
         className: el.pdSparklesTop,
-        variant: W.u0.TOP
-      }), n && !a && (0, i.jsx)(W.ZP, {
+        variant: Y.u0.TOP
+      }), n && !a && (0, i.jsx)(Y.ZP, {
         className: el.pdSparklesBottom,
-        variant: W.u0.BOTTOM
+        variant: Y.u0.BOTTOM
       })]
     }) : null
   },
@@ -132,7 +132,7 @@ let ep = e => {
     (0, _.z)(b.X);
     let H = G === en.EZ.ApplicationStoreHome,
       z = r.useRef(null),
-      W = r.useRef(null),
+      Y = r.useRef(null),
       et = r.useRef(null),
       eb = r.useRef(null),
       e_ = r.useRef(null),
@@ -158,7 +158,7 @@ let ep = e => {
       eF = null !== eG && eG !== en.Si.TIER_2 ? en.Si.TIER_2 : null,
       eH = (0, y.n)(),
       ez = null != eH,
-      [eW, eY] = r.useState(!1),
+      [eY, eW] = r.useState(!1),
       eK = (0, A.N)(),
       eq = null == eK || null == (t = eK.subscription_trial) ? void 0 : t.sku_id,
       eX = (0, S.Nx)(),
@@ -300,7 +300,7 @@ let ep = e => {
               poster: em.Z,
               loop: !0,
               className: el.heroHeadingV2Art,
-              ref: W,
+              ref: Y,
               children: (0, i.jsx)("source", {
                 src: eL ? eu.Z : eg.Z,
                 type: eL ? er.m.MP4 : er.m.WEBM
@@ -320,7 +320,7 @@ let ep = e => {
         }), (0, i.jsx)(ef, {
           isFullscreen: B,
           inOfferExperience: eX,
-          setIsAllPerksVisible: eY,
+          setIsAllPerksVisible: eW,
           hasRenderedOnce: eB,
           isMarketingPageV2Enabled: eN,
           isReducedMotion: ej
@@ -350,7 +350,7 @@ let ep = e => {
           }) : null]
         }), !eN && (0, i.jsx)("div", {
           className: B ? el.footerSpacingFullscreen : el.footerSpacing
-        }), (0, i.jsx)(Y.Z, {
+        }), (0, i.jsx)(W.Z, {
           isVisible: !ey && !eD && !eP && eB,
           isFullscreen: B,
           subscriptionTier: eF,
@@ -393,8 +393,8 @@ let ep = e => {
         children: e6
       }), (0, i.jsx)(ee.Z, {
         previousComponent: $.MQ.MARKETING,
-        isAllPerksVisible: eW,
-        setIsAllPerksVisible: eY,
+        isAllPerksVisible: eY,
+        setIsAllPerksVisible: eW,
         isFullScreen: B
       })]
     }) : e6

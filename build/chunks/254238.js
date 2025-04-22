@@ -5,7 +5,7 @@ n.d(t, {
   On: () => T,
   Vv: () => I,
   _: () => S,
-  bp: () => R,
+  bp: () => P,
   ef: () => O,
   s6: () => v,
   sh: () => D
@@ -169,14 +169,14 @@ async function C(e) {
   }), n
 }
 
-function R(e, t) {
+function P(e, t) {
   o.Z.dispatch({
     type: "GAME_CONSOLE_SELECT_DEVICE",
     platform: e,
     deviceId: t
   })
 }
-async function P(e, t, n, i) {
+async function R(e, t, n, i) {
   let s;
   o.Z.dispatch({
     type: "GAME_CONSOLE_DEVICE_SEND_COMMAND_START",
@@ -241,5 +241,5 @@ async function w(e, t, n) {
 async function D(e, t, n) {
   await _.Z.maybeShowPTTAlert(e), await v();
   let r = await A();
-  await P(e, t, n, r), (0, h.Z)(n.id, e)
+  await R(e, t, n, r), (0, h.Z)(n.id, e)
 }

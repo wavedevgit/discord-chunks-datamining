@@ -154,7 +154,7 @@ function C() {
   i = null, b = null, y = null, A()
 }
 
-function R(e) {
+function P(e) {
   let {
     voiceStates: t
   } = e;
@@ -170,7 +170,7 @@ function R(e) {
   }, !1)
 }
 
-function P(e) {
+function R(e) {
   if (null == r || null != e.guildId && e.guildId !== r.guildId || null != e.channelId && e.channelId !== r.channelId) return !1;
   r.connect(e.endpoint, e.token)
 }
@@ -231,7 +231,7 @@ function B(e) {
   return e.connection === r
 }
 
-function F(e) {
+function V(e) {
   let {
     userId: t,
     context: n,
@@ -240,7 +240,7 @@ function F(e) {
   null == r || r.setSimulcastDebugOverride(t, n, i)
 }
 
-function V(e) {
+function F(e) {
   let {
     streamId: t,
     width: n,
@@ -347,10 +347,10 @@ let H = new Z(s.Z, __OVERLAY__ ? {} : {
   RTC_CONNECTION_SECURE_FRAMES_UPDATE: G,
   RTC_CONNECTION_CLIENT_CONNECT: G,
   RTC_CONNECTION_CLIENT_DISCONNECT: G,
-  VIDEO_SIZE_UPDATE: V,
-  VOICE_STATE_UPDATES: R,
+  VIDEO_SIZE_UPDATE: F,
+  VOICE_STATE_UPDATES: P,
   VOICE_CHANNEL_SELECT: k,
-  VOICE_SERVER_UPDATE: P,
+  VOICE_SERVER_UPDATE: R,
   CLEAR_REMOTE_DISCONNECT_VOICE_CHANNEL_ID: w,
   REMOTE_SESSION_CONNECT: w,
   CLEAR_LAST_SESSION_VOICE_CHANNEL_ID: D,
@@ -359,7 +359,7 @@ let H = new Z(s.Z, __OVERLAY__ ? {} : {
   THREAD_DELETE: M,
   CALL_DELETE: x,
   APP_STATE_UPDATE: j,
-  RTC_DEBUG_SET_SIMULCAST_OVERRIDE: F
+  RTC_DEBUG_SET_SIMULCAST_OVERRIDE: V
 });
 Promise.resolve().then(n.bind(n, 626135)).then(e => {
   let {

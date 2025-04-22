@@ -1,6 +1,6 @@
 /** Chunk was on 3656 **/
 n.d(t, {
-  Z: () => P
+  Z: () => S
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -104,7 +104,7 @@ class I {
   }
 }
 
-function P(e) {
+function S(e) {
   let {
     channel: t
   } = e, n = t.getRecipientId(), l = (0, h.gc)(n), o = Array(l.length).fill(null), {

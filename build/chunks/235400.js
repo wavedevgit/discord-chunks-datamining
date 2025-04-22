@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  default: () => R
+  default: () => P
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -41,8 +41,8 @@ function C(e) {
     isTryItOutFlow: S,
     guild: C
   } = e, {
-    pendingAvatarDecoration: R,
-    setPendingAvatarDecoration: P,
+    pendingAvatarDecoration: P,
+    setPendingAvatarDecoration: R,
     savedAvatarDecoration: w
   } = (0, g.Z)({
     analyticsLocations: l,
@@ -52,27 +52,27 @@ function C(e) {
     var e, t;
     if (null != E) return E;
     let r = (0, u.iC)(a, n);
-    return null != b ? null != (e = r.find(e => e.id === b)) ? e : null : void 0 !== R ? R : null == w ? null : null != (t = r.find(e => (0, v.sr)(e, w))) ? t : null
+    return null != b ? null != (e = r.find(e => e.id === b)) ? e : null : void 0 !== P ? P : null == w ? null : null != (t = r.find(e => (0, v.sr)(e, w))) ? t : null
   }), {
     product: x,
     purchase: M
-  } = (0, d.Z)(null == D ? void 0 : D.skuId), k = y.ZP.canUseCollectibles(t), j = i.useRef(null), U = (0, _.Z)(l), G = (0, v.sr)(D, void 0 === R ? w : R), B = e => {
+  } = (0, d.Z)(null == D ? void 0 : D.skuId), k = y.ZP.canUseCollectibles(t), j = i.useRef(null), U = (0, _.Z)(l), G = (0, v.sr)(D, void 0 === P ? w : P), B = e => {
     L(e), null != e && U(e)
-  }, F = () => {
-    P(D), f()
-  }, V = i.useCallback(e => {
+  }, V = () => {
+    R(D), f()
+  }, F = i.useCallback(e => {
     f(), (0, c.mK)({
       analyticsLocations: l,
       analyticsSource: s.Z.EDIT_AVATAR_DECORATION_MODAL,
       initialProductSkuId: e
     })
   }, [l, f]), Z = (0, p.M)(), H = () => null != M && (!(0, u.qS)(M) || k) || null === D ? (0, r.jsx)(o.zxk, {
-    onClick: F,
+    onClick: V,
     disabled: G,
     children: A.intl.string(A.t.d6sv6u)
   }) : null == M && (k || !(0, u.G1)(x)) ? (0, r.jsx)(o.zxk, {
     className: N.modalFooterShopButton,
-    onClick: () => V(null == x ? void 0 : x.skuId),
+    onClick: () => F(null == x ? void 0 : x.skuId),
     children: A.intl.string(A.t.fYfGgI)
   }) : (0, r.jsx)(m.Z, {
     subscriptionTier: T.Si.TIER_2,
@@ -99,7 +99,7 @@ function C(e) {
         pendingAvatarDecoration: D,
         selectedAvatarDecorationRef: j,
         onSelect: B,
-        onOpenShop: V
+        onOpenShop: F
       }), (0, r.jsx)(O.Z, {
         className: N.modalPreview,
         user: t,
@@ -122,7 +122,7 @@ function C(e) {
   })
 }
 
-function R(e) {
+function P(e) {
   let {
     transitionState: t,
     analyticsLocations: n,

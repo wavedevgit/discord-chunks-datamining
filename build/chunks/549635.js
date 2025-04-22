@@ -98,9 +98,9 @@ function T(e) {
       alt: T,
       type: A,
       maxWidth: C,
-      maxHeight: R
+      maxHeight: P
     } = n,
-    P = O(n, ["width", "height", "url", "proxyUrl", "alt", "type", "maxWidth", "maxHeight"]),
+    R = O(n, ["width", "height", "url", "proxyUrl", "alt", "type", "maxWidth", "maxHeight"]),
     {
       zoomed: w,
       setZoomed: D
@@ -112,7 +112,7 @@ function T(e) {
     let e = S(I);
     if (null == e) return null;
     let t = null != (M = n.renderLinkComponent) ? M : d.iT;
-    return (0, r.jsx)(c.Z, v(b({}, P), {
+    return (0, r.jsx)(c.Z, v(b({}, R), {
       src: L,
       width: p,
       height: E,
@@ -131,7 +131,7 @@ function T(e) {
       onContextMenu: f
     }))
   }
-  return "IMAGE" === A && (t = x ? (0, r.jsx)(l.ZP, v(b({}, P), {
+  return "IMAGE" === A && (t = x ? (0, r.jsx)(l.ZP, v(b({}, R), {
     src: L,
     width: p,
     height: E,

@@ -29,8 +29,8 @@ var r = n(200651),
   A = n(988290),
   N = n(721359),
   C = n(640963),
-  R = n(628309),
-  P = n(680783),
+  P = n(628309),
+  R = n(680783),
   w = n(981631),
   D = n(921944),
   L = n(474936),
@@ -76,8 +76,8 @@ function G(e, t) {
   }), e
 }
 let B = 88,
-  F = "remove-wallpaper",
-  V = .5,
+  V = "remove-wallpaper",
+  F = .5,
   Z = 250;
 
 function H(e) {
@@ -168,7 +168,7 @@ function W(e) {
         })
       })
     }, {
-      threshold: V
+      threshold: F
     });
     return null != m.current && e.observe(m.current), () => {
       e.disconnect()
@@ -259,7 +259,7 @@ function z(e) {
   return (0, r.jsx)(W, {
     isSelected: t,
     onSelect: n,
-    selectionId: F,
+    selectionId: V,
     tooltipText: x.intl.string(x.t["C/MRFx"]),
     label: x.intl.string(x.t["C/MRFx"]),
     className: M.wallpaperRemoveSelection,
@@ -355,18 +355,18 @@ let X = function(e) {
     activePickerChannelId: c,
     closePicker: h,
     setPreviewWallpaperId: m
-  } = (0, S.B)(), g = (0, P.Z)(c), b = (0, E.m)(L.p9.TIER_2), [y, k] = i.useState(!1), j = (0, A.e)(y), U = (0, R.u)();
+  } = (0, S.B)(), g = (0, R.Z)(c), b = (0, E.m)(L.p9.TIER_2), [y, k] = i.useState(!1), j = (0, A.e)(y), U = (0, P.u)();
   (0, N.W)();
   let G = (0, u.e7)([T.Z], () => T.Z.isFetchingWallpapers),
     B = (0, u.e7)([T.Z], () => T.Z.failedToFetchWallpapers),
-    F = (0, u.e7)([T.Z], () => T.Z.getWallpaperById(null == g ? void 0 : g.wallpaperId)),
-    V = i.useRef(null),
+    V = (0, u.e7)([T.Z], () => T.Z.getWallpaperById(null == g ? void 0 : g.wallpaperId)),
+    F = i.useRef(null),
     Z = i.useRef(null);
   (0, d.Tbt)(Z), i.useEffect(() => {
-    Z.current = V.current
-  }, [V]), i.useEffect(() => {
-    null != F && k(F.isBlurred && b)
-  }, [F, b]);
+    Z.current = F.current
+  }, [F]), i.useEffect(() => {
+    null != V && k(V.isBlurred && b)
+  }, [V, b]);
   let W = i.useCallback(() => {
       h()
     }, [h]),
@@ -397,12 +397,12 @@ let X = function(e) {
       })
     }, [c, g, J, y]),
     et = i.useCallback(e => {
-      if ((null == F ? void 0 : F.designGroupId) != null) {
+      if ((null == V ? void 0 : V.designGroupId) != null) {
         var t;
-        let n = U[F.designGroupId].find(t => t.isBlurred === e);
+        let n = U[V.designGroupId].find(t => t.isBlurred === e);
         m(null != (t = null == n ? void 0 : n.id) ? t : null)
       } else k(e)
-    }, [null == F ? void 0 : F.designGroupId, U, m]),
+    }, [null == V ? void 0 : V.designGroupId, U, m]),
     en = i.useCallback(e => {
       let t = U[e];
       if (null == t) return;
@@ -418,12 +418,12 @@ let X = function(e) {
   i.useEffect(() => {
     let e = e => {
       var t;
-      Z.current = (null == (t = V.current) ? void 0 : t.contains(e.target)) ? V.current : null
+      Z.current = (null == (t = F.current) ? void 0 : t.contains(e.target)) ? F.current : null
     };
     return document.addEventListener("mousedown", e), () => {
       document.removeEventListener("mousedown", e)
     }
-  }, [V]);
+  }, [F]);
   let ei = null == c && (null == s ? void 0 : s.pickerType) !== S.j.COACHMARK,
     ea = null;
   return ea = B || ei ? (0, r.jsxs)("div", {
@@ -454,7 +454,7 @@ let X = function(e) {
           }), m(null)
         }
       }), j.map(e => (0, r.jsx)(K, {
-        isSelected: (null == F ? void 0 : F.designGroupId) === e.designGroupId,
+        isSelected: (null == V ? void 0 : V.designGroupId) === e.designGroupId,
         onSelect: en,
         chatWallpaperMetadata: e
       }, e.id))]
@@ -474,7 +474,7 @@ let X = function(e) {
       topOffset: 88,
       children: (0, r.jsxs)("div", {
         className: M.container,
-        ref: V,
+        ref: F,
         onKeyDown: er,
         children: [(null == s ? void 0 : s.pickerType) === S.j.COACHMARK ? (0, r.jsx)(H, {
           handleClose: $,
@@ -485,7 +485,7 @@ let X = function(e) {
         }), (0, r.jsx)("div", {
           className: M.divider
         }), (0, r.jsx)(d.JcV, {
-          containerRef: V,
+          containerRef: F,
           children: ea
         })]
       })

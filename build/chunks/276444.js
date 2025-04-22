@@ -44,7 +44,7 @@ function C(e) {
   T = null, h = !0
 }
 
-function R(e) {
+function P(e) {
   let {
     referrals_remaining: t,
     sent_user_ids: n,
@@ -55,7 +55,7 @@ function R(e) {
   S = null == r && a, h = !1, f = t, _ = new Set(n), T = r, p = i
 }
 
-function P(e) {
+function R(e) {
   let {} = e;
   S = !1, T = null, h = !1, b += 1, y = Date.now() + 1e3 * Math.pow(2, b)
 }
@@ -123,7 +123,7 @@ function B() {
   O = !0
 }
 
-function F(e) {
+function V(e) {
   let {
     users: t,
     nextIndex: n
@@ -131,7 +131,7 @@ function F(e) {
   O = !1, v = t, I = n
 }
 
-function V() {
+function F() {
   O = !1
 }
 class Z extends(r = a.ZP.Store) {
@@ -182,15 +182,15 @@ u(Z, "displayName", "ReferralTrialStore");
 let H = new Z(o.Z, {
   BILLING_REFERRAL_TRIAL_OFFER_UPDATE: U,
   BILLING_REFERRALS_REMAINING_FETCH_START: C,
-  BILLING_REFERRALS_REMAINING_FETCH_SUCCESS: R,
-  BILLING_REFERRALS_REMAINING_FETCH_FAIL: P,
+  BILLING_REFERRALS_REMAINING_FETCH_SUCCESS: P,
+  BILLING_REFERRALS_REMAINING_FETCH_FAIL: R,
   BILLING_CREATE_REFERRAL_SUCCESS: w,
   CREATE_REFERRALS_SUCCESS: D,
   BILLING_REFERRAL_RESOLVE_SUCCESS: x,
   BILLING_REFERRAL_RESOLVE_FAIL: M,
   REFERRALS_FETCH_ELIGIBLE_USER_START: B,
-  REFERRALS_FETCH_ELIGIBLE_USER_SUCCESS: F,
-  REFERRALS_FETCH_ELIGIBLE_USER_FAIL: V,
+  REFERRALS_FETCH_ELIGIBLE_USER_SUCCESS: V,
+  REFERRALS_FETCH_ELIGIBLE_USER_FAIL: F,
   LOAD_MESSAGES_SUCCESS: j,
   MESSAGE_CREATE: k,
   LOAD_MESSAGES_AROUND_SUCCESS: j,

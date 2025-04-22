@@ -10,8 +10,8 @@ var O, I = n(392711),
   A = n(442837),
   N = n(570140),
   C = n(497505),
-  R = n(918701),
-  P = n(184299),
+  P = n(918701),
+  R = n(184299),
   w = n(5881),
   D = n(46140);
 
@@ -61,17 +61,17 @@ function B() {
   r = !1, i = !1, a = new Map, o = new Map, s = new Map, l = 0, c = new Set, u = new Set, d = new Set, f = new Set, j = new Map, p = new Map, h = new Map, m = new Map, g = null, E = new Map, _ = new Set, b = new Map, y = new Map, eC(), v = null
 }
 
-function F(e, t) {
+function V(e, t) {
   var n, r, i, a;
   if (null != t.userStatus)
     for (let o of Object.values(null != (r = null == (n = t.userStatus) ? void 0 : n.progress) ? r : {})) !(0, I.isNil)(o) && S.T.DESKTOP.has(o.eventName) && ((null == (i = o.heartbeat) ? void 0 : i.lastBeatAt) != null ? _.add(e) : (null == (a = o.heartbeat) ? void 0 : a.lastBeatAt) == null && _.delete(e))
 }
 
-function V(e, t) {
+function F(e, t) {
   let n = (a = new Map(a)).get(e);
   if (null != n) {
     let r = x({}, n, t);
-    F(e, t), a.set(e, r)
+    V(e, t), a.set(e, r)
   }
 }
 
@@ -84,7 +84,7 @@ function H(e, t) {
   Z(e, t);
   let n = a.get(e),
     r = null == n ? void 0 : n.userStatus;
-  null != r && null == r.claimedAt && V(e, {
+  null != r && null == r.claimedAt && F(e, {
     userStatus: k(x({}, r), {
       claimedAt: t.claimedAt
     })
@@ -109,7 +109,7 @@ function W(e, t) {
     let n = Y({
       entitlements: t
     });
-    null != n && Z(e, n), V(e, {
+    null != n && Z(e, n), F(e, {
       userStatus: k(x({}, i), {
         claimedAt: t.claimedAt,
         claimedTier: null != (o = null == n ? void 0 : n.tier) ? o : null
@@ -138,7 +138,7 @@ function Q(e) {
   } = e;
   r = !1, a = new Map;
   let s = new Map;
-  for (let e of t) a.set(e.id, e), s.set(e.id, (0, R.zi)(e)), e.targetedContent.includes(C.jn.QUEST_BAR) && (0, w.T)({
+  for (let e of t) a.set(e.id, e), s.set(e.id, (0, P.zi)(e)), e.targetedContent.includes(C.jn.QUEST_BAR) && (0, w.T)({
     location: D.dr.QUESTS_STORE
   }).log("Delivered ".concat(e.config.messages.questName, " (").concat(e.id, ")"));
   for (let e of (y = s, o = new Map, n)) o.set(e.id, e);
@@ -170,7 +170,7 @@ function et(e) {
     streamKey: n,
     userStatus: r
   } = e;
-  _.add(t), V(t, {
+  _.add(t), F(t, {
     userStatus: r
   }), null != n && K(n)
 }
@@ -210,7 +210,7 @@ function eo(e) {
   let {
     enrolledQuestUserStatus: t
   } = e;
-  V(t.questId, {
+  F(t.questId, {
     userStatus: t
   }), ei(t.questId)
 }
@@ -282,7 +282,7 @@ function em(e) {
   let {
     dismissedQuestUserStatus: t
   } = e;
-  V(t.questId, {
+  F(t.questId, {
     userStatus: t
   }), ep(t.questId)
 }
@@ -308,13 +308,13 @@ function eb(e) {
     location: D.dr.QUESTS_STORE
   });
   n.log("Received user status update for ".concat(t.quest_id), t);
-  let r = (0, R.U3)(t);
-  V(t.quest_id, {
+  let r = (0, P.U3)(t);
+  F(t.quest_id, {
     userStatus: r
   });
   let i = a.get(t.quest_id);
   if (null != i) {
-    let e = (0, R.zi)(i);
+    let e = (0, P.zi)(i);
     y.get(t.quest_id) !== e && (y = new Map(y).set(t.quest_id, e))
   }
   0 === Object.keys(r.progress).length && j.has(r.questId) && (n.log("Removing optimistic progress for ".concat(r.questId)), j.delete(r.questId))
@@ -324,12 +324,12 @@ function ey(e) {
   let {
     previewQuestUserStatus: t
   } = e;
-  V(t.questId, {
+  F(t.questId, {
     userStatus: t
-  }), null == t.claimedAt && (p = new Map(p)).delete(t.questId), null == t.enrolledAt && ((E = new Map(E)).delete(t.questId), P.ZP.getState().resetQuest(t.questId));
+  }), null == t.claimedAt && (p = new Map(p)).delete(t.questId), null == t.enrolledAt && ((E = new Map(E)).delete(t.questId), R.ZP.getState().resetQuest(t.questId));
   let n = a.get(t.questId);
   if (null != n) {
-    let e = (0, R.zi)(n);
+    let e = (0, P.zi)(n);
     y.get(t.questId) !== e && (y = new Map(y).set(t.questId, e))
   }
 }
@@ -384,7 +384,7 @@ function eA() {
   let e = !1,
     t = new Map(y);
   a.forEach((n, r) => {
-    !0 !== t.get(r) && ((0, R.zi)(n) ? (t.set(r, !0), e = !0) : t.has(r) || t.set(r, !1))
+    !0 !== t.get(r) && ((0, P.zi)(n) ? (t.set(r, !0), e = !0) : t.has(r) || t.set(r, !1))
   }), e && (y = t, ew.emitChange())
 }
 
@@ -398,14 +398,14 @@ function eC() {
   null !== U && (clearInterval(U), U = null)
 }
 
-function eR(e) {
+function eP(e) {
   let {
     quest_enrollment_blocked_until: t
   } = e;
   v = null != t ? new Date(t) : null
 }
 B();
-class eP extends(O = A.ZP.Store) {
+class eR extends(O = A.ZP.Store) {
   get quests() {
     return a
   }
@@ -476,8 +476,8 @@ class eP extends(O = A.ZP.Store) {
     return null != (t = y.get(e)) && t
   }
 }
-L(eP, "displayName", "QuestsStore");
-let ew = new eP(N.Z, {
+L(eR, "displayName", "QuestsStore");
+let ew = new eR(N.Z, {
     LOGOUT: z,
     QUESTS_FETCH_CURRENT_QUESTS_BEGIN: q,
     QUESTS_FETCH_CURRENT_QUESTS_SUCCESS: Q,
@@ -508,6 +508,6 @@ let ew = new eP(N.Z, {
     QUESTS_DELIVERY_OVERRIDE: ev,
     QUESTS_SELECT_TASK_PLATFORM: eO,
     QUESTS_UPDATE_OPTIMISTIC_PROGRESS: eI,
-    QUESTS_USER_COMPLETION_UPDATE: eR
+    QUESTS_USER_COMPLETION_UPDATE: eP
   }),
   eD = ew

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Qk: () => N,
-  WG: () => P,
+  WG: () => R,
   ZP: () => w
 }), n(388685);
 var r = n(200651),
@@ -60,7 +60,7 @@ function C(e, t) {
   return (e % t + t) % t
 }
 
-function R(e) {
+function P(e) {
   let {
     children: t,
     isObscured: n,
@@ -88,7 +88,7 @@ function R(e) {
   })
 }
 
-function P(e, t) {
+function R(e, t) {
   if ("IMAGE" === e.type) {
     if (!(0, m._H)(e)) return void(0, d.po)(e.url);
     N({
@@ -114,16 +114,16 @@ function w(e) {
   } = e, [f, _] = i.useState(a), p = i.useRef(a), {
     zoomed: m,
     setZoomed: N
-  } = (0, E.Y)(), P = i.useCallback(e => {
+  } = (0, E.Y)(), R = i.useCallback(e => {
     _(e = C(e, t.length)), p.current = e, null == n || n(e), N(!1)
   }, [n, t, N]);
   i.useEffect(() => {
-    let e = () => P(p.current + 1),
-      t = () => P(p.current - 1);
+    let e = () => R(p.current + 1),
+      t = () => R(p.current - 1);
     return h.S.subscribe(S.CkL.MODAL_CAROUSEL_NEXT, e), h.S.subscribe(S.CkL.MODAL_CAROUSEL_PREV, t), () => {
       h.S.unsubscribe(S.CkL.MODAL_CAROUSEL_NEXT, e), h.S.unsubscribe(S.CkL.MODAL_CAROUSEL_PREV, t)
     }
-  }, [P, N]);
+  }, [R, N]);
   let w = t[f],
     D = (0, u.KP)({
       type: u.lJ.GenericMedia,
@@ -155,7 +155,7 @@ function w(e) {
     }), (0, r.jsx)(b.Z, {
       items: t,
       currentIndex: f,
-      children: (e, t) => (0, r.jsx)(R, {
+      children: (e, t) => (0, r.jsx)(P, {
         isObscured: !m && D,
         src: w.url,
         children: n => (0, r.jsx)(I.Z, {
@@ -170,7 +170,7 @@ function w(e) {
       children: e => (0, r.jsx)(v.Z, {
         items: t,
         currentIndex: f,
-        onGalleryItemClick: P,
+        onGalleryItemClick: R,
         className: e
       })
     })]

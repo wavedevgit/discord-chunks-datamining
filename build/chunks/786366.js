@@ -50,7 +50,7 @@ function f(e) {
   }), {
     hasMessageContent: f,
     hasGuildPresences: p,
-    hasGuildMembers: b
+    hasGuildMembers: m
   } = (0, s.w)({
     flags: null == t ? void 0 : t.flags
   });
@@ -65,7 +65,7 @@ function f(e) {
       icon: l.iWm,
       title: a.intl.string(a.t.awYSsL),
       description: a.intl.string(a.t.TpsXoK)
-    }), b && (0, r.jsx)(u, {
+    }), m && (0, r.jsx)(u, {
       icon: l.BFJ,
       title: a.intl.string(a.t.WuKeSE),
       description: a.intl.string(a.t.wOBmtb)

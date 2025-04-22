@@ -32,7 +32,7 @@ function v(e) {
     onAction: O,
     onClose: I
   } = e, {
-    profileType: S
+    themeType: S
   } = (0, h.z)(), T = (0, _.Z)(v);
   if (!(0, i.e7)([f.Z], () => f.Z.can(E.Plq.VIEW_CHANNEL, v))) return null;
   let A = e => {
@@ -45,9 +45,9 @@ function v(e) {
         action: "OPEN_VOICE_CHANNEL"
       }), null == I || I()
     },
-    C = S === g.y0.FULL_SIZE,
-    R = S === g.y0.PANEL,
-    P = !C && !R;
+    C = S === g.lY.MODAL,
+    P = S === g.lY.SIDEBAR,
+    R = !C && !P;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(p.Z, {
       className: b.voiceChannelDivider
@@ -96,7 +96,7 @@ function v(e) {
           })
         },
         onUserClick: e => e.stopPropagation(),
-        disableUserPopout: !!P || (e => e === t.id)
+        disableUserPopout: !!R || (e => e === t.id)
       })]
     })]
   })

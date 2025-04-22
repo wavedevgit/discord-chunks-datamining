@@ -65,9 +65,9 @@ function C(e, t) {
   }), e
 }
 
-function R(e, t) {
+function P(e, t) {
   if (null == e) return {};
-  var n, r, i = P(e, t);
+  var n, r, i = R(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -75,7 +75,7 @@ function R(e, t) {
   return i
 }
 
-function P(e, t) {
+function R(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -88,18 +88,18 @@ let w = 490,
   x = 200,
   M = 120,
   k = i.forwardRef(function(e, t) {
-    var n, a, T, N, P;
+    var n, a, T, N, R;
     let {
       channel: k,
       type: j,
       editorHeight: U,
       onVisibilityChange: G
-    } = e, B = (0, h.Dt)(), F = (0, l.e7)([E.Z], () => {
+    } = e, B = (0, h.Dt)(), V = (0, l.e7)([E.Z], () => {
       var e;
       return null != (e = E.Z.getGuild(k.guild_id)) ? e : null
-    }, [k.guild_id]), V = i.useRef(null), [Z, H, Y] = (0, O.Z)(C(A({}, e), {
-      guild: F
-    }), t, V), W = (null == (n = j.autocomplete) ? void 0 : n.forceChatLayer) ? g.ZP : m.ZP, K = (0, _.DJ)(Z.selectedIndex);
+    }, [k.guild_id]), F = i.useRef(null), [Z, H, Y] = (0, O.Z)(C(A({}, e), {
+      guild: V
+    }), t, F), W = (null == (n = j.autocomplete) ? void 0 : n.forceChatLayer) ? g.ZP : m.ZP, K = (0, _.DJ)(Z.selectedIndex);
     (0, p.KR)(B, Z.isVisible, K), b.Z.trackExposure({
       location: "6e9811_1"
     });
@@ -126,7 +126,7 @@ let w = 490,
       results: Z.query.results,
       selectedIndex: Z.selectedIndex,
       channel: k,
-      guild: F,
+      guild: V,
       query: Z.query.queryText,
       options: Z.query.options,
       onHover: e => H.onResultHover(e),
@@ -154,12 +154,12 @@ let w = 490,
           children: e => {
             var {
               ref: t
-            } = e, n = R(e, ["ref"]);
+            } = e, n = P(e, ["ref"]);
             return (0, r.jsx)(c.h21, C(A({
               id: B,
               ref: e => {
                 var n;
-                t.current = null != (n = null == e ? void 0 : e.getScrollerNode()) ? n : null, V.current = e
+                t.current = null != (n = null == e ? void 0 : e.getScrollerNode()) ? n : null, F.current = e
               }
             }, n), {
               className: S.scroller,
@@ -179,7 +179,7 @@ let w = 490,
         targetRef: e.targetRef,
         overrideTargetRect: q,
         positionKey: X,
-        position: null != (P = e.position) ? P : "top",
+        position: null != (R = e.position) ? R : "top",
         align: "left",
         spacing: 8,
         autoInvert: !0,

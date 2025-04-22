@@ -29,8 +29,8 @@ var r = n(200651),
   A = n(189771),
   N = n(560688),
   C = n(88479),
-  R = n(136995),
-  P = n(25827),
+  P = n(136995),
+  R = n(25827),
   w = n(430824),
   D = n(131951),
   L = n(594174),
@@ -41,8 +41,8 @@ var r = n(200651),
   U = n(584511),
   G = n(793865),
   B = n(522651),
-  F = n(795318),
-  V = n(354459),
+  V = n(795318),
+  F = n(354459),
   Z = n(981631),
   H = n(65154),
   Y = n(388032),
@@ -163,8 +163,8 @@ function ea(e) {
         } = e;
         return (0, r.jsx)(G.Z, {
           onClose: t,
-          onInteraction: (0, F.u)("VideoDeviceMenu", s, {
-            entrypoint: V.A5.CARET
+          onInteraction: (0, V.u)("VideoDeviceMenu", s, {
+            entrypoint: F.A5.CARET
           })
         })
       },
@@ -177,7 +177,7 @@ function ea(e) {
         } = e, {
           isShown: a
         } = t;
-        return (0, r.jsx)(P.C, {
+        return (0, r.jsx)(R.C, {
           buttonRef: g,
           join: !0,
           enabled: d,
@@ -201,7 +201,7 @@ function ea(e) {
           }
         })
       }
-    }), (0, r.jsx)(R.Z, {
+    }), (0, r.jsx)(P.Z, {
       channel: n,
       color: "join",
       centerButton: !0,
@@ -227,7 +227,7 @@ function eo(e) {
     id: I.id,
     icon: I.icon,
     size: er
-  }) : null, T = null != (t = (0, g.x)(h, er, !0)) ? t : S, A = (0, E.ZP)(h), [N, C] = (0, l.Wu)([D.Z], () => [D.Z.supports(H.AN.VIDEO), Object.keys(D.Z.getVideoDevices()).length]), R = null != I ? "".concat(A, ", ").concat(I.name) : A, P = (0, l.e7)([x.Z], () => x.Z.isFocused()), L = (0, l.e7)([j.Z], () => j.Z.getMode(h.id)), M = i.useCallback(e => {
+  }) : null, T = null != (t = (0, g.x)(h, er, !0)) ? t : S, A = (0, E.ZP)(h), [N, C] = (0, l.Wu)([D.Z], () => [D.Z.supports(H.AN.VIDEO), Object.keys(D.Z.getVideoDevices()).length]), P = null != I ? "".concat(A, ", ").concat(I.name) : A, R = (0, l.e7)([x.Z], () => x.Z.isFocused()), L = (0, l.e7)([j.Z], () => j.Z.getMode(h.id)), M = i.useCallback(e => {
     null != e.top && null != e.left && d.Z.move(e.left, e.top)
   }, []), G = (0, c.q_F)({
     value: +!!v,
@@ -242,7 +242,7 @@ function eo(e) {
     return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
   }, [h]);
   let B = L === Z.WtW.VIDEO && N && C > 0,
-    F = (0, r.jsxs)(r.Fragment, {
+    V = (0, r.jsxs)(r.Fragment, {
       children: [null != I && null == S ? (0, r.jsx)("div", {
         className: o()(K.icon, W.wrapper, W.ringingIncoming),
         children: (0, r.jsx)(b.ZP, {
@@ -260,7 +260,7 @@ function eo(e) {
         })
       }) : (0, r.jsx)(U.Z, {
         className: K.icon,
-        ringing: P,
+        ringing: R,
         src: null != T ? T : "",
         ringingType: U.Z.RingingType.INCOMING,
         size: v ? c.EFr.SIZE_40 : c.EFr.SIZE_80
@@ -270,7 +270,7 @@ function eo(e) {
           className: K.title,
           color: "header-primary",
           variant: v ? "text-md/semibold" : "text-lg/semibold",
-          children: R
+          children: P
         }), (0, r.jsx)(c.Text, {
           color: "header-secondary",
           className: K.subtitle,
@@ -279,7 +279,7 @@ function eo(e) {
         })]
       })]
     }),
-    V = B ? $ : ee,
+    F = B ? $ : ee,
     q = (0, l.e7)([x.Z], () => x.Z.windowSize());
   return (0, r.jsx)(m.Gt, {
     value: y,
@@ -301,15 +301,15 @@ function eo(e) {
             [K.previewCamera]: v
           }, e),
           style: J(Q({}, n), {
-            width: G.value.interpolate([0, 1], [V.width, et]),
-            minHeight: G.value.interpolate([0, 1], [V.height, en]),
-            translateX: G.value.interpolate([0, 1], [0, -1 * Math.abs(et - V.width) / 2])
+            width: G.value.interpolate([0, 1], [F.width, et]),
+            minHeight: G.value.interpolate([0, 1], [F.height, en]),
+            translateX: G.value.interpolate([0, 1], [0, -1 * Math.abs(et - F.width) / 2])
           }),
           children: [v ? (0, r.jsx)(ei, {
-            header: F
+            header: V
           }) : (0, r.jsx)("div", {
             className: K.mainChannelInfo,
-            children: F
+            children: V
           }), (0, r.jsx)(ea, {
             canVideo: B,
             channel: h,

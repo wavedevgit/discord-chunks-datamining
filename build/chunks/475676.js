@@ -64,41 +64,41 @@ function T(e) {
       entry: N
     } = e,
     C = T.guild_id,
-    R = (0, p.Z)({
+    P = (0, p.Z)({
       guildId: C,
       leaderboardId: N.extra.leaderboard_id,
       intervalOffset: 0
     }),
     {
-      rankChanges: P
+      rankChanges: R
     } = (0, h.Z)({
       guildId: C,
       leaderboardId: N.extra.leaderboard_id,
-      intervalStart: null != (E = null == R ? void 0 : R.interval_start) ? E : ""
+      intervalStart: null != (E = null == P ? void 0 : P.interval_start) ? E : ""
     }),
     w = (0, a.e7)([u.default], () => u.default.getId()),
     [D, L] = i.useMemo(() => {
-      let e = P.find(e => e.userId === w),
-        t = P[0],
+      let e = R.find(e => e.userId === w),
+        t = R[0],
         n = null != e ? e : t,
-        r = null == R ? void 0 : R.users.find(e => e.user_id === (null == n ? void 0 : n.userId));
+        r = null == P ? void 0 : P.users.find(e => e.user_id === (null == n ? void 0 : n.userId));
       return [n, r]
-    }, [R, P, w]),
+    }, [P, R, w]),
     x = (0, a.e7)([d.default], () => d.default.getUser(null == D ? void 0 : D.userId)),
     M = _.ZP.getName(C, void 0, x);
   S({
-    leaderboard: R,
+    leaderboard: P,
     guildId: C
   });
-  let k = (0, s.q)(null == R || null == (t = R.settings) ? void 0 : t.application_id);
-  if (null == R || null == k) return null;
-  if (0 === R.users.length || null == D || null == x) return (0, r.jsx)(A, {
+  let k = (0, s.q)(null == P || null == (t = P.settings) ? void 0 : t.application_id);
+  if (null == P || null == k) return null;
+  if (0 === P.users.length || null == D || null == x) return (0, r.jsx)(A, {
     application: k,
     selected: O
   });
   let {
     sort_by_statistic_id: j
-  } = R.guild_settings, U = null != (b = null == L || null == (f = L.statistics) || null == (n = f[j]) ? void 0 : n.value) ? b : 0, {
+  } = P.guild_settings, U = null != (b = null == L || null == (f = L.statistics) || null == (n = f[j]) ? void 0 : n.value) ? b : 0, {
     currentRank: G
   } = D;
   return y = D.userId === w ? v.intl.formatToPlainString(v.t["eU+JxM"], {

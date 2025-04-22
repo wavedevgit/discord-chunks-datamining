@@ -91,7 +91,7 @@ let A = i.forwardRef((e, t) => {
     height: O,
     maxWidth: T = y,
     maxHeight: A = O,
-    minWidth: P = 0,
+    minWidth: R = 0,
     minHeight: w = 0,
     mediaLayoutType: D,
     limitResponsiveWidth: L = !0,
@@ -110,14 +110,14 @@ let A = i.forwardRef((e, t) => {
         className: null != a ? a : void 0,
         alt: null != i ? i : m.intl.string(m.t.X4IxWF),
         src: t,
-        style: R(n, o)
+        style: P(n, o)
       })
     },
     renderAccessory: U,
     onClick: G,
     tabIndex: B,
-    dataSafeSrc: F,
-    useFullWidth: V = !1,
+    dataSafeSrc: V,
+    useFullWidth: F = !1,
     srcIsAnimated: Z
   } = e, H = S(e, ["className", "imageClassName", "readyState", "src", "placeholder", "placeholderVersion", "alt", "width", "height", "maxWidth", "maxHeight", "minWidth", "minHeight", "mediaLayoutType", "limitResponsiveWidth", "accessory", "zoomable", "original", "children", "renderAccessory", "onClick", "tabIndex", "dataSafeSrc", "useFullWidth", "srcIsAnimated"]);
   let Y = i.useRef(null),
@@ -128,7 +128,7 @@ let A = i.forwardRef((e, t) => {
       height: O,
       maxWidth: T,
       maxHeight: A,
-      minWidth: P,
+      minWidth: R,
       minHeight: w
     }),
     z = 0 !== K.width ? K.width / K.height : 1;
@@ -147,7 +147,7 @@ let A = i.forwardRef((e, t) => {
     aspectRatio: z,
     placeholder: h,
     placeholderVersion: E,
-    placeholderStyle: R(K, D),
+    placeholderStyle: P(K, D),
     children: n
   });
   let q = null != U ? U() : null;
@@ -161,7 +161,7 @@ let A = i.forwardRef((e, t) => {
         [g.imageWrapperBackground]: c !== p.zo9.READY,
         [g.clickable]: null != G
       }, a),
-      style: C(K, L, V, D)
+      style: C(K, L, F, D)
     }, H), {
       children: [null != k && (0, r.jsx)("a", {
         tabIndex: -1,
@@ -171,7 +171,7 @@ let A = i.forwardRef((e, t) => {
         href: k,
         ref: Y,
         "data-role": "img",
-        "data-safe-src": null != F ? F : f
+        "data-safe-src": null != V ? V : f
       }), null != G ? (0, r.jsx)(l.P3F, {
         className: g.clickableWrapper,
         tabIndex: null != B ? B : 0,
@@ -199,7 +199,7 @@ function N(e) {
   } = e, a = (0, c.ZP)();
   return (0, r.jsx)("div", {
     className: g.imageErrorWrapper,
-    style: P(t, n),
+    style: R(t, n),
     children: (0, r.jsx)("img", {
       src: (0, s.ap)(a) ? b : E,
       className: g.imageError,
@@ -222,7 +222,7 @@ function C(e, t, n, r) {
   } : e
 }
 
-function R(e, t) {
+function P(e, t) {
   switch (t) {
     case h.hV.MOSAIC:
       return {
@@ -235,7 +235,7 @@ function R(e, t) {
   }
 }
 
-function P(e, t) {
+function R(e, t) {
   switch (t) {
     case h.hV.MOSAIC:
       return {

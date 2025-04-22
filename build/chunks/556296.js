@@ -60,12 +60,12 @@ function C(e, t) {
   return n
 }
 
-function R(e, t) {
+function P(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let P = new f.Z("KeybindsStore"),
+let R = new f.Z("KeybindsStore"),
   w = {
     id: "1000",
     action: O.kg4.TOGGLE_MUTE,
@@ -99,8 +99,8 @@ let L = "1001",
   U = !0,
   G = {},
   B = !1,
-  F = !1,
-  V = [O.kg4.PUSH_TO_TALK, O.kg4.TOGGLE_OVERLAY_INPUT_LOCK, O.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET];
+  V = !1,
+  F = [O.kg4.PUSH_TO_TALK, O.kg4.TOGGLE_OVERLAY_INPUT_LOCK, O.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET];
 
 function Z(e) {
   switch (e) {
@@ -120,12 +120,12 @@ function H(e, t) {
 
 function Y() {
   let e = x();
-  null == l().find(k, t => e.action === t.action && t.enabled && t.shortcut.length > 0) && U && !F && (J(e), F = !0)
+  null == l().find(k, t => e.action === t.action && t.enabled && t.shortcut.length > 0) && U && !V && (J(e), V = !0)
 }
 
 function W() {
   let e = x();
-  F && (X(e.id), F = !1)
+  V && (X(e.id), V = !1)
 }
 
 function K() {
@@ -181,7 +181,7 @@ function J(e) {
     enabled: r
   } = e;
   if (0 === t.length || null == t || n === O.kg4.UNASSIGNED || !r) return;
-  if (null == G[n]) return void P.error("[kb store] KeybindStore: Looking for callback action ".concat(n, " but it doesn't exist in this version. Skipping"));
+  if (null == G[n]) return void R.error("[kb store] KeybindStore: Looking for callback action ".concat(n, " but it doesn't exist in this version. Skipping"));
   let i = e.id,
     a = G[n].keyEvents;
   e.action === O.kg4.TOGGLE_MUTE && z(), e.action === O.kg4.TOGGLE_OVERLAY_INPUT_LOCK && W(), Q(i, t, e => H(i, e), N({
@@ -201,7 +201,7 @@ function $(e) {
     managed: !1,
     params: {}
   }, e);
-  return k = R(N({}, k), {
+  return k = P(N({}, k), {
     [t.id]: t
   }), j += 1, t
 }
@@ -232,7 +232,7 @@ function er(e) {
   let {
     keybind: t
   } = e;
-  k = R(N({}, k), {
+  k = P(N({}, k), {
     [t.id]: t
   }), __OVERLAY__ || (m.default.track(O.rMx.USER_SETTINGS_KEYBIND_UPDATED, {
     keybind_action: t.action,
@@ -256,12 +256,12 @@ function ea(e) {
   let {
     keybinds: t
   } = e;
-  G = t, M = {}, j = 0, Object.values(k).filter(e => V.includes(e.action) && e.managed).length !== V.length && ec(), l().forEach(k, e => {
+  G = t, M = {}, j = 0, Object.values(k).filter(e => F.includes(e.action) && e.managed).length !== F.length && ec(), l().forEach(k, e => {
     j = Math.max(parseInt(e.id, 10), j) + 1;
     try {
       J(e)
     } catch (t) {
-      P.error("Failed to register keybind", e, t)
+      R.error("Failed to register keybind", e, t)
     }
   }), U = !0, null == r && (r = p.Z.subscribe({
     location: "KeybindsStore"
@@ -302,7 +302,7 @@ let el = [function() {
     else {
       if (null == t) return e || !1;
       er({
-        keybind: R(N({}, r), {
+        keybind: P(N({}, r), {
           shortcut: "string" == typeof t ? (0, y.Kd)(t) : t,
           context: n
         })
@@ -396,7 +396,7 @@ A(ed, "displayName", "KeybindsStore"), A(ed, "persistKey", "keybinds"), A(ed, "m
         r = (0, y.Kd)("`").map(e => e[1]);
       if (o()(n, r)) return e
     }
-    return R(N({}, e), {
+    return P(N({}, e), {
       [n]: t
     })
   }, {})
@@ -407,7 +407,7 @@ A(ed, "displayName", "KeybindsStore"), A(ed, "persistKey", "keybinds"), A(ed, "m
     if (null != i) {
       if (null == i.params || null == i.enabled) {
         var n;
-        i = R(N({}, i), {
+        i = P(N({}, i), {
           enabled: !1 !== i.enabled,
           params: null != (n = i.params) ? n : {}
         })
@@ -416,7 +416,7 @@ A(ed, "displayName", "KeybindsStore"), A(ed, "persistKey", "keybinds"), A(ed, "m
     }
   }
   return t
-}, e => l().reduce(e, (e, t, n) => t.action === O.kg4.TOGGLE_GO_LIVE_STREAMING && t.managed ? e : R(N({}, e), {
+}, e => l().reduce(e, (e, t, n) => t.action === O.kg4.TOGGLE_GO_LIVE_STREAMING && t.managed ? e : P(N({}, e), {
   [n]: t
 }), {})]);
 let ef = new ed(u.Z, {

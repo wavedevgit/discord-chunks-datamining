@@ -27,8 +27,8 @@ var y = n(807675),
 let A = 10,
   N = /^\/([a-zA-Z0-9-]+)$/,
   C = /^\/channels\/([0-9]+|@me)\/([0-9]+)$/,
-  R = /^\/(invite|template)\/([a-zA-Z0-9-]+)\/?\.?$/,
-  P = RegExp("^/events/(\\d+)(?:/)(\\d+)?((?:/)(\\d+))?"),
+  P = /^\/(invite|template)\/([a-zA-Z0-9-]+)\/?\.?$/,
+  R = RegExp("^/events/(\\d+)(?:/)(\\d+)?((?:/)(\\d+))?"),
   w = /^\/(application-directory|discovery\/applications)\/([0-9-]+)\/?((about|images|privacy)\/?)?$/,
   D = /^\/(application-directory|discovery\/applications)\/([0-9-]+)\/store\/?([0-9-]+)?\/?$/,
   L = /^\/activities\/([0-9-]+)\/?$/,
@@ -39,13 +39,13 @@ let A = 10,
   U = /^#itemSkuId=([0-9]+)$/,
   G = /dev:\/\/[\w-.~:\/?#\[\]@!$&'()*+,;=%]+/i,
   B = q(window.GLOBAL_ENV.INVITE_HOST),
-  F = q(window.GLOBAL_ENV.GUILD_TEMPLATE_HOST),
-  V = q(null != (o = window.GLOBAL_ENV.WEBAPP_ENDPOINT) ? o : "//canary.".concat(T.$R1)),
+  V = q(window.GLOBAL_ENV.GUILD_TEMPLATE_HOST),
+  F = q(null != (o = window.GLOBAL_ENV.WEBAPP_ENDPOINT) ? o : "//canary.".concat(T.$R1)),
   Z = q("//canary.".concat(T.$R1)),
   H = q("//ptb.".concat(T.$R1)),
   Y = q("discordapp.com"),
   W = q("discord.com"),
-  K = [O.Z.escape(null != (s = B.host) ? s : ""), O.Z.escape(null != (l = F.host) ? l : ""), O.Z.escape(null != (c = V.host) ? c : ""), O.Z.escape(null != (u = Y.host) ? u : ""), O.Z.escape(null != (d = W.host) ? d : "")].filter(Boolean),
+  K = [O.Z.escape(null != (s = B.host) ? s : ""), O.Z.escape(null != (l = V.host) ? l : ""), O.Z.escape(null != (c = F.host) ? c : ""), O.Z.escape(null != (u = Y.host) ? u : ""), O.Z.escape(null != (d = W.host) ? d : "")].filter(Boolean),
   z = RegExp("((https?://[^ ]*)|^|[^/][^/.])(".concat(K.join("|"), ")"), "g");
 
 function q(e) {
@@ -82,12 +82,12 @@ function $(e, t) {
 
 function ee(e) {
   var t, n, r, i;
-  return null != (i = null != (r = null != (n = null != (t = $(V, e)) ? t : $(Z, e)) ? n : $(H, e)) ? r : $(Y, e)) ? i : $(W, e)
+  return null != (i = null != (r = null != (n = null != (t = $(F, e)) ? t : $(Z, e)) ? n : $(H, e)) ? r : $(Y, e)) ? i : $(W, e)
 }
 
 function et(e) {
   if (null == e) return null;
-  let t = e.match(P);
+  let t = e.match(R);
   return null != t && t.length >= 4 ? {
     guildId: t[1],
     guildEventId: t[2],
@@ -105,8 +105,8 @@ function en(e) {
     primaryHostRemainingPath: null
   };
   let o = $(B, a),
-    s = $(F, a),
-    l = null != (i = null != (r = null != (n = null != (t = $(V, a)) ? t : $(Z, a)) ? n : $(H, a)) ? r : $(Y, a)) ? i : $(W, a);
+    s = $(V, a),
+    l = null != (i = null != (r = null != (n = null != (t = $(F, a)) ? t : $(Z, a)) ? n : $(H, a)) ? r : $(Y, a)) ? i : $(W, a);
   return {
     url: a,
     inviteHostRemainingPath: o,
@@ -143,7 +143,7 @@ function er(e) {
       let e = (0, b.mb)(i.substring(1), r.search);
       v.Z.getInvite(e), u(S.g.INVITE, e)
     }(null == l ? void 0 : l.match(N)) != null && u(S.g.TEMPLATE, l.substring(1));
-    let d = null == c ? void 0 : c.match(R);
+    let d = null == c ? void 0 : c.match(P);
     if (null != d) {
       let e = d[1].toUpperCase();
       if (e === S.g.INVITE) {

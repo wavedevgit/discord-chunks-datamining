@@ -18,26 +18,26 @@ function p(e) {
     autoFocus: n = !1,
     className: t,
     userId: p,
-    onUpdate: b
-  } = e, m = (0, i.e7)([a.Z], () => a.Z.hidePersonalInformation), {
+    onUpdate: m
+  } = e, b = (0, i.e7)([a.Z], () => a.Z.hidePersonalInformation), {
     loading: h,
     note: g
-  } = (0, c.Z)(p), y = o.useRef(null);
+  } = (0, c.Z)(p), j = o.useRef(null);
   return (o.useEffect(() => {
-    if (!n || m) return;
-    let e = y.current;
+    if (!n || b) return;
+    let e = j.current;
     (null == e ? void 0 : e.selectionStart) != null && (e.focus(), e.setSelection(e.value.length, e.value.length))
-  }, [n, m]), m) ? null : (0, r.jsx)("div", {
+  }, [n, b]), b) ? null : (0, r.jsx)("div", {
     className: t,
     children: (0, r.jsx)(l.lcI, {
-      ref: y,
+      ref: j,
       className: f.textarea,
       disabled: h,
       placeholder: h ? u.intl.string(u.t["WLKx//"]) : u.intl.string(u.t.VBhOe3),
       "aria-label": u.intl.string(u.t.PbMNh4),
       onBlur: e => {
         let n = e.currentTarget.value;
-        (null != g ? g : "") !== n && (null == b || b(), s.Z.updateNote(p, n))
+        (null != g ? g : "") !== n && (null == m || m(), s.Z.updateNote(p, n))
       },
       onKeyPress: e => {
         if (13 === e.which)

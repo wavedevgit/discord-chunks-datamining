@@ -37,7 +37,7 @@ function C(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -50,7 +50,7 @@ function R(e) {
   return e
 }
 
-function P(e, t) {
+function R(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -62,7 +62,7 @@ function P(e, t) {
 }
 
 function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -75,8 +75,8 @@ let D = new d.Z("ChannelRTCStore"),
   U = {},
   G = {},
   B = {},
-  F = {},
   V = {},
+  F = {},
   Z = {},
   H = {},
   Y = {};
@@ -199,7 +199,7 @@ function eo(e) {
     channelId: t,
     currentVoiceChannelId: n
   } = e;
-  return null != t ? delete j[t] : null != n && (delete V[n], delete H[n], $(n)), ea()
+  return null != t ? delete j[t] : null != n && (delete F[n], delete H[n], $(n)), ea()
 }
 
 function es(e) {
@@ -207,7 +207,7 @@ function es(e) {
     channelId: t,
     messageId: n
   } = e, r = ea(), i = E.Z.getChannel(t);
-  return null == t || null == n || (null == i ? void 0 : i.type) !== N.d4z.GUILD_VOICE && (null == i ? void 0 : i.type) !== N.d4z.GUILD_STAGE_VOICE || V[t] ? r : (Z[t] = !1, V[t] = !0, !0)
+  return null == t || null == n || (null == i ? void 0 : i.type) !== N.d4z.GUILD_VOICE && (null == i ? void 0 : i.type) !== N.d4z.GUILD_STAGE_VOICE || F[t] ? r : (Z[t] = !1, F[t] = !0, !0)
 }
 
 function el(e) {
@@ -290,7 +290,7 @@ function eg(e) {
     channelId: t,
     voiceParticipantsHidden: n
   } = e;
-  F[t] = n
+  V[t] = n
 }
 
 function eE(e) {
@@ -326,7 +326,7 @@ function ev(e) {
     channelId: t,
     chatOpen: n
   } = e;
-  V[t] = n, n && (Z[t] = !1)
+  F[t] = n, n && (Z[t] = !1)
 }
 
 function eO(e) {
@@ -334,7 +334,7 @@ function eO(e) {
     channelId: t,
     participantsListOpen: n
   } = e;
-  Z[t] = n, n && (V[t] = !1)
+  Z[t] = n, n && (F[t] = !1)
 }
 
 function eI(e) {
@@ -381,7 +381,7 @@ function eT(e) {
       id: t
     }
   } = e;
-  return delete V[t], delete Z[t], delete H[t], ei(t)
+  return delete F[t], delete Z[t], delete H[t], ei(t)
 }
 
 function eA(e) {
@@ -390,7 +390,7 @@ function eA(e) {
     layout: n,
     appContext: r
   } = e;
-  G[t] = w(R({}, G[t]), {
+  G[t] = w(P({}, G[t]), {
     [r]: n
   })
 }
@@ -415,7 +415,7 @@ function eC(e) {
   return Q(r, [n])
 }
 
-function eR(e) {
+function eP(e) {
   let {
     channelId: t,
     userId: n
@@ -423,7 +423,7 @@ function eR(e) {
   return Q(n, [t])
 }
 
-function eP(e) {
+function eR(e) {
   let {
     channelId: t,
     userId: n
@@ -482,11 +482,11 @@ function eM(e) {
 }
 class ek extends(r = l.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(h.Z, m.default, g.Z, E.Z, u.ZP, b.Z, y.Z, v.Z, O.default, I.Z, S.Z), this.syncWith([u.ZP], ec), this.syncWith([b.Z], eu), this.syncWith([f.Z], ea), (null == e ? void 0 : e.voiceParticipantsHidden) !== void 0 && Object.assign(F, null == e ? void 0 : e.voiceParticipantsHidden)
+    this.waitFor(h.Z, m.default, g.Z, E.Z, u.ZP, b.Z, y.Z, v.Z, O.default, I.Z, S.Z), this.syncWith([u.ZP], ec), this.syncWith([b.Z], eu), this.syncWith([f.Z], ea), (null == e ? void 0 : e.voiceParticipantsHidden) !== void 0 && Object.assign(V, null == e ? void 0 : e.voiceParticipantsHidden)
   }
   getState() {
     return {
-      voiceParticipantsHidden: F
+      voiceParticipantsHidden: V
     }
   }
   getParticipantsVersion(e) {
@@ -501,7 +501,7 @@ class ek extends(r = l.ZP.PersistedStore) {
     return null != (t = W(e).toArray(T.sI.SPEAKING)) ? t : L
   }
   getFilteredParticipants(e) {
-    return F[e] ? W(e).toArray(T.sI.FILTERED) : W(e).toArray()
+    return V[e] ? W(e).toArray(T.sI.FILTERED) : W(e).toArray()
   }
   getVideoParticipants(e) {
     var t;
@@ -528,7 +528,7 @@ class ek extends(r = l.ZP.PersistedStore) {
   }
   getVoiceParticipantsHidden(e) {
     var t;
-    return null != (t = F[e]) && t
+    return null != (t = V[e]) && t
   }
   getSelectedParticipantId(e) {
     let [t, n] = X(e);
@@ -562,10 +562,10 @@ class ek extends(r = l.ZP.PersistedStore) {
   }
   getChatOpen(e) {
     var t;
-    return null != (t = V[e]) && t
+    return null != (t = F[e]) && t
   }
   getAllChatOpen() {
-    return V
+    return F
   }
   getParticipantsListOpen(e) {
     var t;
@@ -607,8 +607,8 @@ let ej = new ek(c.Z, {
   STREAM_UPDATE_SELF_HIDDEN: eE,
   CHANNEL_RTC_UPDATE_CHAT_OPEN: ev,
   CHANNEL_RTC_UPDATE_PARTCIPANTS_LIST_OPEN: eO,
-  RTC_CONNECTION_VIDEO: eR,
-  RTC_CONNECTION_PLATFORM: eP,
+  RTC_CONNECTION_VIDEO: eP,
+  RTC_CONNECTION_PLATFORM: eR,
   AUDIO_SET_LOCAL_VIDEO_DISABLED: ew,
   MEDIA_ENGINE_VIDEO_SOURCE_QUALITY_CHANGED: eD,
   STREAM_CLOSE: eN,

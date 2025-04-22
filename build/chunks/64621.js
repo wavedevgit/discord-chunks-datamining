@@ -33,18 +33,18 @@ function T(e) {
     user: T,
     targetElementRef: A
   } = e, {
-    profileType: N
+    themeType: N
   } = (0, h.z)(), C = (0, p.T)({
     location: "UserProfilePopoutInteractionCoachmark"
-  }), R = (0, a.e7)([_.default], () => {
+  }), P = (0, a.e7)([_.default], () => {
     var e;
     return (null == (e = _.default.getCurrentUser()) ? void 0 : e.id) === T.id
-  }), P = (0, a.e7)([f.Z], () => f.Z.findActivity(T.id, e => {
+  }), R = (0, a.e7)([f.Z], () => f.Z.findActivity(T.id, e => {
     let {
       type: t
     } = e;
     return t === g.IIU.CUSTOM_STATUS
-  })), w = () => !R && N === m.y0.BITE_SIZE && (t === m.n_.AVATAR ? C && null == P : t === m.n_.STATUS ? C : t === m.n_.ACTIVITY && !C), [D, L] = i.useState(!1);
+  })), w = () => !P && N === m.lY.POPOUT && (t === m.n_.AVATAR ? C && null == R : t === m.n_.STATUS ? C : t === m.n_.ACTIVITY && !C), [D, L] = i.useState(!1);
   (0, l.Z)(() => L(!0), w() ? O : null);
   let {
     asset: x,
@@ -70,7 +70,7 @@ function T(e) {
     header: E.intl.string(E.t.XDBiPT),
     spacing: I,
     dismissibleContentType: o.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK_ACTIVITY
-  }, F = (0, c.N)(o.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK), V = D && !F ? [B] : [], [Z, H] = (0, u.US)(V);
+  }, V = (0, c.N)(o.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK), F = D && !V ? [B] : [], [Z, H] = (0, u.US)(F);
   return (0, r.jsx)(s.yRy, {
     targetElementRef: A,
     align: "center",

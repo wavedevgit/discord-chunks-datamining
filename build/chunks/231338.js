@@ -10,7 +10,7 @@ n.d(t, {
   BR: () => r.Z,
   BZ: () => z,
   Cw: () => w,
-  Cy: () => V,
+  Cy: () => F,
   EK: () => eh,
   ET: () => eg,
   Et: () => q,
@@ -36,11 +36,11 @@ n.d(t, {
   U9: () => _,
   Uk: () => N,
   V6: () => W,
-  Vq: () => F,
+  Vq: () => V,
   Vz: () => y,
   X5: () => m,
   X6: () => Y,
-  X7: () => P,
+  X7: () => R,
   XM: () => et,
   Zu: () => j,
   aO: () => eb,
@@ -52,7 +52,7 @@ n.d(t, {
   gg: () => E,
   ht: () => b,
   i$: () => O,
-  j8: () => R,
+  j8: () => P,
   j_: () => ed,
   lT: () => X,
   ld: () => C,
@@ -162,8 +162,8 @@ let S = new Map([
   A = new Set([7, 8, 9, 12, 10, 13, 14, 15, 16, 4, 3, 5, 17]),
   N = new Set([7, 9, 3, 5, 4, 14, 15, 16]),
   C = new Set([1, 2, 6, 8, 10, 11, 13, 12, 17]),
-  R = new Set([3, 4, 5, 14, 15, 16, 7, 9, 12]),
-  P = new Set([6]);
+  P = new Set([3, 4, 5, 14, 15, 16, 7, 9, 12]),
+  R = new Set([6]);
 var w = function(e) {
     return e[e.NEW = 1] = "NEW", e
   }({}),
@@ -249,8 +249,8 @@ let G = Object.freeze({
   B = function() {
     for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n]
   },
-  F = () => null,
-  V = () => Promise.resolve(),
+  V = () => null,
+  F = () => Promise.resolve(),
   Z = [G.KICK_MEMBERS, G.BAN_MEMBERS, G.ADMINISTRATOR, G.MANAGE_CHANNELS, G.MANAGE_GUILD, G.MANAGE_ROLES, G.MANAGE_MESSAGES, G.MANAGE_THREADS, G.MODERATE_MEMBERS],
   H = i.$e(...Z),
   Y = 1,

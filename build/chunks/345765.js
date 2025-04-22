@@ -37,11 +37,11 @@ let v = 4,
   A = new Set,
   N = new Map,
   C = null,
-  R = (0, r.debounce)(h.yK, 3e3, {
+  P = (0, r.debounce)(h.yK, 3e3, {
     trailing: !0
   });
 
-function P() {
+function R() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0;
   return Math.random() * (e + 1) * O
 }
@@ -79,7 +79,7 @@ function x() {
   let n = g.Z.getFeed(I);
   if ((null == n ? void 0 : n.refresh_stale_inbox_after_ms) != null && null == C) return;
   let r = (null == n ? void 0 : n.expired_at) == null ? 0 : new Date(n.expired_at).getTime() - Date.now(),
-    a = Math.max(0, null == C ? 0 : new Date(C).getTime() - Date.now(), r) + (t > 0 ? P() : 0);
+    a = Math.max(0, null == C ? 0 : new Date(C).getTime() - Date.now(), r) + (t > 0 ? R() : 0);
   w(I, {
     loading: !1,
     nextFetchDate: new Date(Date.now() + a)
@@ -115,7 +115,7 @@ async function M(e) {
     var i;
     let e = null != (i = N.get(t)) ? i : 0;
     if (e < v) {
-      let i = _.Z.Millis.MINUTE * Math.pow(2, e) + P(e);
+      let i = _.Z.Millis.MINUTE * Math.pow(2, e) + R(e);
       T.set(t, setTimeout(() => M({
         feedId: t,
         feature: n,
@@ -160,16 +160,16 @@ function B(e) {
   (null == n ? void 0 : n.refresh_stale_inbox_after_ms) != null && (C = new Date(Date.now() + (null != t ? t : n.refresh_stale_inbox_after_ms)).toUTCString(), x())
 }
 
-function F(e) {
+function V(e) {
   var t;
   let {
     connectionId: n,
     track: r
   } = e;
-  null != n && (null == (t = u.Z.getAccount(n, b.ABu.SPOTIFY)) ? void 0 : t.showActivity) && R(n, r)
+  null != n && (null == (t = u.Z.getAccount(n, b.ABu.SPOTIFY)) ? void 0 : t.showActivity) && P(n, r)
 }
 
-function V() {
+function F() {
   let {
     enabled: e
   } = p.iC.getCurrentConfig({
@@ -206,8 +206,8 @@ class H extends o.Z {
       CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: k,
       CONTENT_INVENTORY_MANUAL_REFRESH: G,
       CONTENT_INVENTORY_INBOX_STALE: B,
-      SPOTIFY_NEW_TRACK: F,
-      GAME_PROFILE_OPEN: V,
+      SPOTIFY_NEW_TRACK: V,
+      GAME_PROFILE_OPEN: F,
       OVERLAY_READY: Z
     })
   }

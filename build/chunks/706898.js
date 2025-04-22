@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  n: () => R
+  n: () => P
 }), n(704826), n(35282), n(415506), n(388685);
 var r, i, a = n(200651),
   o = n(192379),
@@ -252,7 +252,7 @@ m(C, "defaultProps", {
   look: "grey",
   disableItemStyles: !1
 });
-class R extends(i = o.Component) {
+class P extends(i = o.Component) {
   render() {
     let {
       className: e,
@@ -317,4 +317,4 @@ class R extends(i = o.Component) {
     })
   }
 }
-m(R, "Header", I), m(R, "Item", C), m(R, "Separator", S), m(R, "Panel", T)
+m(P, "Header", I), m(P, "Item", C), m(P, "Separator", S), m(P, "Panel", T)

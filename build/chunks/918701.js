@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $H: () => eP,
+  $H: () => eR,
   $J: () => e1,
   AV: () => eu,
   B2: () => tm,
@@ -39,7 +39,7 @@ n.d(t, {
   Xv: () => eE,
   ZZ: () => Z,
   Zp: () => tf,
-  _D: () => V,
+  _D: () => F,
   _j: () => tt,
   _p: () => ts,
   b7: () => eW,
@@ -56,7 +56,7 @@ n.d(t, {
   lQ: () => Y,
   o9: () => eL,
   oo: () => eT,
-  pO: () => eR,
+  pO: () => eP,
   q6: () => z,
   q8: () => e0,
   qe: () => tE,
@@ -101,8 +101,8 @@ n(306560);
 var A = n(75137),
   N = n(566078),
   C = n(312046),
-  R = n(46140),
-  P = n(981631),
+  P = n(46140),
+  R = n(981631),
   w = n(701488),
   D = n(388032);
 
@@ -157,19 +157,19 @@ function G(e) {
     return console.error("Unknown config version '".concat(null == e || null == (t = e.config) ? void 0 : t.config_version, "'"), n), !1
   }
 }
-let B = e => e.application_id === w.Ev || e.platform === P.M7m.XBOX,
-  F = e => e.platform === P.M7m.PS4 || e.platform === P.M7m.PS5;
+let B = e => e.application_id === w.Ev || e.platform === R.M7m.XBOX,
+  V = e => e.platform === R.M7m.PS4 || e.platform === R.M7m.PS5;
 
-function V(e, t) {
+function F(e, t) {
   if (null == e) return !1;
   let n = e.name.toLowerCase(),
     r = N.r.build(t.config).application.name.toLowerCase();
-  return B(e) || F(e) ? n === r : null != e.application_id && H(e.application_id, t)
+  return B(e) || V(e) ? n === r : null != e.application_id && H(e.application_id, t)
 }
 
 function Z(e, t) {
   for (let [n, r] of e)
-    if (V(t, r) && !W(r)) return r
+    if (F(t, r) && !W(r)) return r
 }
 
 function H(e, t) {
@@ -405,13 +405,13 @@ function eu(e) {
 }
 
 function ed(e) {
-  return Object.keys(R.a_).includes(T.jn[e])
+  return Object.keys(P.a_).includes(T.jn[e])
 }
 
 function ef(e, t) {
   if (!ed(t)) return !1;
   let n = T.jn[t];
-  return (0, E.yE)(e.dismissedQuestContent, R.a_[n])
+  return (0, E.yE)(e.dismissedQuestContent, P.a_[n])
 }
 
 function e_(e) {
@@ -527,11 +527,11 @@ function eC(e) {
   return t.config.taskConfig.type === u.L.FIRST_PARTY && null != t.config.taskConfig.tasks[o.X.STREAM_ON_DESKTOP]
 }
 
-function eR(e) {
+function eP(e) {
   return e.config.taskConfig.type === u.L.FIRST_PARTY && null != e.config.taskConfig.tasks[o.X.PLAY_ACTIVITY]
 }
 
-function eP(e) {
+function eR(e) {
   return null != e && eN({
     quest: e
   })
@@ -539,7 +539,7 @@ function eP(e) {
 
 function ew(e) {
   let t = N.r.build(e.config).application.id;
-  return eR(e) && t === R.Ts
+  return eP(e) && t === P.Ts
 }
 
 function eD(e, t) {
@@ -600,14 +600,14 @@ let eM = (e, t) => {
     return l + eU(e, t)
   },
   eB = .99,
-  eF = (e, t) => {
+  eV = (e, t) => {
     var n;
     let r = t.target;
     if ((null == (n = e.userStatus) ? void 0 : n.completedAt) != null) return r;
     let a = Math.min(r * eB, eG(e, t));
     return Math.max((0, i.floor)(a, 2), 0)
   },
-  eV = e => {
+  eF = e => {
     var t, n;
     let {
       quest: r,
@@ -619,7 +619,7 @@ let eM = (e, t) => {
       c = null != (n = s.tasks[l]) ? n : s.tasks[o.X.STREAM_ON_DESKTOP];
     if (null == c) throw Error("No task with type ".concat(i, " found for quest ").concat(r.id, "!"));
     let d = c.target,
-      f = eF(r, c);
+      f = eV(r, c);
     return {
       progressSeconds: f,
       targetSeconds: d,
@@ -642,13 +642,13 @@ let eM = (e, t) => {
         return null != i && null != a ? new Date(i).valueOf() > new Date(a).valueOf() ? -1 : 1 : null == i && null == a && (null == e ? void 0 : e.updatedAt) != null && (null == t ? void 0 : t.updatedAt) != null ? new Date(e.updatedAt).valueOf() > new Date(t.updatedAt).valueOf() ? -1 : 1 : null != i && null == a ? -1 : 1
       }).filter(b.lm)) {
       let t = eZ(e.eventName);
-      if (null != t && (null == i ? void 0 : i.has(t))) return eV({
+      if (null != t && (null == i ? void 0 : i.has(t))) return eF({
         quest: r,
         taskType: t,
         includeTaskTypes: i
       })
     }
-    return eV({
+    return eF({
       quest: r,
       includeTaskTypes: i
     })
@@ -662,16 +662,16 @@ let eM = (e, t) => {
   } : e$(e) ? eH({
     quest: e,
     includeTaskTypes: null != t ? t : e3(e) ? o.T.CONSOLE : o.T.ALL
-  }) : e0(e) ? eV({
+  }) : e0(e) ? eF({
     quest: e,
     taskType: o.X.WATCH_VIDEO
-  }) : eP(e) ? eV({
+  }) : eR(e) ? eF({
     quest: e,
     taskType: o.X.PLAY_ON_DESKTOP
-  }) : eR(e) ? eV({
+  }) : eP(e) ? eF({
     quest: e,
     taskType: o.X.PLAY_ACTIVITY
-  }) : eV({
+  }) : eF({
     quest: e,
     taskType: o.X.STREAM_ON_DESKTOP
   });
@@ -738,7 +738,7 @@ function e4(e) {
 }
 
 function e5() {
-  f.Z.open(P.oAB.CONNECTIONS)
+  f.Z.open(R.oAB.CONNECTIONS)
 }
 
 function e6(e, t) {
@@ -796,7 +796,7 @@ function e7(e, t) {
 }
 
 function e9() {
-  return window.location.pathname.startsWith(P.Z5c.QUEST_HOME)
+  return window.location.pathname.startsWith(R.Z5c.QUEST_HOME)
 }
 
 function te(e) {
@@ -807,11 +807,11 @@ function te(e) {
 }
 
 function tt(e) {
-  return "xbox" === e.connected_account_type ? P.ABu.XBOX : P.ABu.PLAYSTATION
+  return "xbox" === e.connected_account_type ? R.ABu.XBOX : R.ABu.PLAYSTATION
 }
 
 function tn(e) {
-  return tt(e) === P.ABu.XBOX ? D.t.mytEv7 : D.t.iDiwb2
+  return tt(e) === R.ABu.XBOX ? D.t.mytEv7 : D.t.iDiwb2
 }
 
 function tr(e) {
@@ -856,7 +856,7 @@ function ta(e) {
     }),
     n = e$(e),
     r = [];
-  return t && r.push(R.cd.DESKTOP), n && r.push(R.cd.CONSOLE), r
+  return t && r.push(P.cd.DESKTOP), n && r.push(P.cd.CONSOLE), r
 }
 
 function to(e) {
@@ -875,10 +875,10 @@ function tl(e) {
     n = [];
   for (let e of t) switch (e) {
     case o.X.PLAY_ON_XBOX:
-      n.push(P.ABu.XBOX);
+      n.push(R.ABu.XBOX);
       break;
     case o.X.PLAY_ON_PLAYSTATION:
-      n.push(P.ABu.PLAYSTATION)
+      n.push(R.ABu.PLAYSTATION)
   }
   return n
 }
@@ -889,7 +889,7 @@ function tc(e) {
 
 function tu(e) {
   let t = e0(e),
-    n = eR(e);
+    n = eP(e);
   return t || n
 }
 
@@ -908,7 +908,7 @@ function tf(e) {
 
 function t_(e) {
   let t = tf(e);
-  return null != t && R.v6.has(t)
+  return null != t && P.v6.has(t)
 }
 let tp = e => e.percentComplete > 0 ? D.intl.formatToPlainString(D.t["c59/Tk"], {
   remainTime: eX(e)

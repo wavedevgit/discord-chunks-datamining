@@ -29,8 +29,8 @@ var r = n(200651),
   A = n(4484),
   N = n(925994),
   C = n(981631),
-  R = n(388032),
-  P = n(302195);
+  P = n(388032),
+  R = n(302195);
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -75,13 +75,13 @@ let M = function() {
     for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n]
   },
   k = {
-    12: P.fontSize12Padding,
-    14: P.fontSize14Padding,
-    15: P.fontSize15Padding,
-    16: P.fontSize16Padding,
-    18: P.fontSize18Padding,
-    20: P.fontSize20Padding,
-    24: P.fontSize24Padding
+    12: R.fontSize12Padding,
+    14: R.fontSize14Padding,
+    15: R.fontSize15Padding,
+    16: R.fontSize16Padding,
+    18: R.fontSize18Padding,
+    20: R.fontSize20Padding,
+    24: R.fontSize24Padding
   };
 class j extends i.Component {
   componentDidMount() {
@@ -192,7 +192,7 @@ class j extends i.Component {
       placeholder: t,
       isPreviewing: n
     } = this.props;
-    return e && !n ? R.intl.string(R.t.IYKTTU) : t
+    return e && !n ? P.intl.string(P.t.IYKTTU) : t
   }
   render() {
     var e, t, n, i, a, s;
@@ -211,7 +211,7 @@ class j extends i.Component {
       spellcheckEnabled: v,
       useNewSlashCommands: S,
       canOnlyUseTextCommands: N,
-      className: R,
+      className: P,
       id: w,
       required: L,
       maxCharacterCount: M,
@@ -220,20 +220,20 @@ class j extends i.Component {
       "aria-labelledby": G,
       accessibilityLabel: B
     } = this.props, {
-      submitting: F,
-      popup: V
+      submitting: V,
+      popup: F
     } = this.state, Z = {
       channel: m,
-      className: o()(R, P.textArea, {
-        [P.textAreaSlate]: b,
-        [P.textAreaDisabled]: u || F
+      className: o()(P, R.textArea, {
+        [R.textAreaSlate]: b,
+        [R.textAreaDisabled]: u || V
       }),
       id: w,
       placeholder: this.getPlaceholder(),
       required: L,
       accessibilityLabel: B,
       disabled: u || !1,
-      submitting: F,
+      submitting: V,
       isEdit: g === O.Ie.EDIT,
       onFocus: this.handleFocus,
       onBlur: this.handleBlur,
@@ -249,20 +249,20 @@ class j extends i.Component {
       onKeyDown: _,
       onSubmit: h,
       textAreaPaddingClassName: o()(k[E], {
-        [P.textAreaWithoutAttachmentButton]: g !== O.Ie.NORMAL && g !== O.Ie.OVERLAY && g !== O.Ie.THREAD_CREATION && g !== O.Ie.SIDEBAR,
-        [P.textAreaForPostCreation]: g === O.Ie.CREATE_FORUM_POST,
-        [P.textAreaCustomGift]: g === O.Ie.CUSTOM_GIFT,
-        [P.textAreaForUserProfile]: g === O.Ie.USER_PROFILE,
-        [P.textAreaForOverlayInlineReply]: g === O.Ie.OVERLAY_INLINE_REPLY
+        [R.textAreaWithoutAttachmentButton]: g !== O.Ie.NORMAL && g !== O.Ie.OVERLAY && g !== O.Ie.THREAD_CREATION && g !== O.Ie.SIDEBAR,
+        [R.textAreaForPostCreation]: g === O.Ie.CREATE_FORUM_POST,
+        [R.textAreaCustomGift]: g === O.Ie.CUSTOM_GIFT,
+        [R.textAreaForUserProfile]: g === O.Ie.USER_PROFILE,
+        [R.textAreaForOverlayInlineReply]: g === O.Ie.OVERLAY_INLINE_REPLY
       }),
       spellcheckEnabled: v,
       useNewSlashCommands: S,
       disableAutoFocus: f.tq || null != (n = g.disableAutoFocus) && n,
       disableEnterToSubmit: null != (i = null == (e = g.submit) ? void 0 : e.disableEnterToSubmit) && i,
-      "aria-controls": null != (a = V.id) ? a : void 0,
+      "aria-controls": null != (a = F.id) ? a : void 0,
       "aria-haspopup": "listbox",
-      "aria-expanded": null !== V.id || void 0,
-      "aria-activedescendant": null != (s = V.activeDescendant) ? s : void 0,
+      "aria-expanded": null !== F.id || void 0,
+      "aria-activedescendant": null != (s = F.activeDescendant) ? s : void 0,
       "aria-invalid": l.length > M,
       "aria-describedby": U,
       "aria-labelledby": G,

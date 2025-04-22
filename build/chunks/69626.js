@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => P,
-  wz: () => R
+  ZP: () => R,
+  wz: () => P
 });
 var r = n(200651),
   i = n(192379),
@@ -171,7 +171,7 @@ function C(e) {
   })
 }
 
-function R(e) {
+function P(e) {
   let {
     commandId: t,
     commandName: n,
@@ -202,7 +202,7 @@ function R(e) {
   })
 }
 
-function P(e) {
+function R(e) {
   return {
     react: (e, t, n) => (0, r.jsx)(C, {
       node: e,

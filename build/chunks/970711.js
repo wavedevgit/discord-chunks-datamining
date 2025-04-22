@@ -13,23 +13,23 @@ n.d(t, {
   B8: () => S,
   BQ: () => eo,
   C2: () => eh,
-  Cn: () => V,
+  Cn: () => F,
   D7: () => ed,
   F8: () => q,
   G6: () => eH,
   H0: () => k,
   Hh: () => eO,
-  IU: () => eR,
+  IU: () => eP,
   KD: () => G,
   KE: () => eE,
   Mc: () => Y,
   OU: () => eS,
   On: () => ep,
   Or: () => e2,
-  R7: () => eP,
+  R7: () => eR,
   Rb: () => ek,
   Rs: () => eA,
-  S: () => F,
+  S: () => V,
   Tc: () => eD,
   UE: () => ef,
   V3: () => ex,
@@ -73,7 +73,7 @@ n.d(t, {
   oH: () => e$,
   oT: () => i,
   of: () => eB,
-  p0: () => eF,
+  p0: () => eV,
   pC: () => M,
   pj: () => eC,
   qb: () => Q,
@@ -85,7 +85,7 @@ n.d(t, {
   up: () => ev,
   w7: () => eN,
   xQ: () => eq,
-  xb: () => eV,
+  xb: () => eF,
   yR: () => U,
   z3: () => ec,
   z9: () => W,
@@ -250,8 +250,8 @@ function N(e, t, n) {
 function C(e, t, n, i) {
   r.closure526_externref_shim(e, t, n, i)
 }
-let R = ["omit", "same-origin", "include"],
-  P = ["same-origin", "no-cors", "cors", "navigate"],
+let P = ["omit", "same-origin", "include"],
+  R = ["same-origin", "no-cors", "cors", "navigate"],
   w = "undefined" == typeof FinalizationRegistry ? {
     register: () => {},
     unregister: () => {}
@@ -320,11 +320,11 @@ function B() {
   }, arguments)
 }
 
-function F(e) {
+function V(e) {
   return clearTimeout(e)
 }
 
-function V(e) {
+function F(e) {
   return clearTimeout(e)
 }
 
@@ -528,7 +528,7 @@ function eS(e, t) {
 }
 
 function eT(e, t) {
-  e.credentials = R[t]
+  e.credentials = P[t]
 }
 
 function eA(e, t) {
@@ -543,11 +543,11 @@ function eC(e, t, n) {
   e.method = l(t, n)
 }
 
-function eR(e, t) {
-  e.mode = P[t]
+function eP(e, t) {
+  e.mode = R[t]
 }
 
-function eP(e, t) {
+function eR(e, t) {
   e.signal = t
 }
 
@@ -597,13 +597,13 @@ function eB(e, t, n) {
   return e.then(t, n)
 }
 
-function eF(e, t) {
+function eV(e, t) {
   let n = h(t.url, r.__wbindgen_malloc, r.__wbindgen_realloc),
     i = f;
   g().setInt32(e + 4, i, !0), g().setInt32(e + 0, n, !0)
 }
 
-function eV(e) {
+function eF(e) {
   return e.value
 }
 

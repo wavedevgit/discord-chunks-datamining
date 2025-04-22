@@ -29,8 +29,8 @@ var r = n(392711),
   A = n(660199),
   N = n(364458),
   C = n(981631),
-  R = n(689079),
-  P = n(377668),
+  P = n(689079),
+  R = n(377668),
   w = n(388032);
 
 function D(e, t, n) {
@@ -77,7 +77,7 @@ let k = /^( *>>> +([\s\S]*))|^( *>(?!>>) +[^\n]*(\n *>(?!>>) +[^\n]*)*\n?)/,
   G = /^ *> ?/gm,
   B = /^((?:https?|steam):\/\/[^\s<]+[^<.,:;"'\]\s])/;
 
-function F(e) {
+function V(e) {
   let t = (0, b.yw)(e[1]);
   if (null == t) return {
     type: "text",
@@ -97,11 +97,11 @@ function F(e) {
     title: void 0
   }
 }
-let V = e => {
+let F = e => {
     let t = d.Z.getChannel(e);
     return null == t ? void 0 : t.getGuildId()
   },
-  Z = e => null != e.guildId ? f.Z.getGuild(e.guildId) : null != e.channelId ? f.Z.getGuild(V(e.channelId)) : null,
+  Z = e => null != e.guildId ? f.Z.getGuild(e.guildId) : null != e.channelId ? f.Z.getGuild(F(e.channelId)) : null,
   H = {
     newline: o().defaultRules.newline,
     paragraph: o().defaultRules.paragraph,
@@ -141,7 +141,7 @@ let V = e => {
     }),
     link: b.ZP,
     autolink: M(L({}, o().defaultRules.autolink), {
-      parse: F
+      parse: V
     }),
     mailto: M(L({}, o().defaultRules.mailto), {
       match: o().inlineRegex(/^<([^\s<>@]+@[^\s<>@]+\.[^\s<>@]+)>/),
@@ -183,7 +183,7 @@ let V = e => {
         }
         return n
       },
-      parse: F
+      parse: V
     }),
     strong: o().defaultRules.strong,
     em: o().defaultRules.em,
@@ -282,7 +282,7 @@ let V = e => {
           var l;
           r = null != (l = p.ZP.getNickname(o.getGuildId(), n.channelId, a)) ? l : h.ZP.getName(a)
         }
-        null == a && "@Clyde" === e[0] && (0, s.gJ)(Z(n), o) && (i = P.fL);
+        null == a && "@Clyde" === e[0] && (0, s.gJ)(Z(n), o) && (i = R.fL);
         let c = e[1],
           u = null != c && C.Xyh.test(c.trim()),
           f = u && n.unknownUserMentionPlaceholder ? "@".concat(w.intl.string(w.t.sKdZ6e)) : e[0];
@@ -325,7 +325,7 @@ let V = e => {
           type: "commandMention",
           id: e[2]
         };
-        let [, ...r] = e[1].split(" "), i = "".concat(e[2]).concat([...r].map(e => "".concat(R.oQ).concat(e)).join(""));
+        let [, ...r] = e[1].split(" "), i = "".concat(e[2]).concat([...r].map(e => "".concat(P.oQ).concat(e)).join(""));
         return {
           channelId: n.channelId,
           commandId: e[2],
@@ -415,7 +415,7 @@ let V = e => {
           itemContent: l(s),
           itemId: a,
           id: i,
-          guildId: V(n.channelId),
+          guildId: F(n.channelId),
           channelId: i
         }
       }

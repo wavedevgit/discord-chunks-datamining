@@ -39,20 +39,20 @@ function S(e) {
     upsellViewedTrackingData: A,
     onClose: N,
     onDisplay: C,
-    onLearnMore: R
-  } = e, P = (0, s.e7)([h.Z], () => h.Z.affinities), w = (0, s.e7)([h.Z], () => h.Z.hasFetched);
+    onLearnMore: P
+  } = e, R = (0, s.e7)([h.Z], () => h.Z.affinities), w = (0, s.e7)([h.Z], () => h.Z.hasFetched);
   i.useEffect(() => {
     !w && S && c.MH()
   }, [w, S]), i.useEffect(() => {
     _.default.track(y.rMx.PREMIUM_UPSELL_VIEWED, A), null == C || C()
   }, [C, A]);
-  let D = P.length > 1 && S,
+  let D = R.length > 1 && S,
     L = () => 2 === t ? O.hasTabParentContainer : 1 === t ? O.hasParentContainer : O.noParentContainer,
     x = () => {
       _.default.track(y.rMx.PREMIUM_PROMOTION_OPENED, {
         location_section: T,
         location_object: y.qAy.NAVIGATION_LINK
-      }), null == R || R(), (0, d.Z)(), N(), (0, u.xf)(), (0, f.uL)(y.Z5c.APPLICATION_STORE)
+      }), null == P || P(), (0, d.Z)(), N(), (0, u.xf)(), (0, f.uL)(y.Z5c.APPLICATION_STORE)
     },
     M = (0, m.N)(),
     k = i.useCallback(() => {
@@ -85,7 +85,7 @@ function S(e) {
           variant: "heading-xl/bold",
           children: a
         }), D && (0, r.jsx)(E.Z, {
-          affinities: P
+          affinities: R
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/medium",
           className: O.body,

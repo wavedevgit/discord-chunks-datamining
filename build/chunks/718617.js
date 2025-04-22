@@ -37,7 +37,7 @@ function C(e) {
     onClose: x,
     analyticsLocation: v,
     className: j
-  } = e, O = (0, o.e7)([p.ZP], () => p.ZP.getGuildSidebarState(C), [C]), E = null != (t = null == O ? void 0 : O.details.modViewPanel) ? t : b.k.INFO, I = (0, c.Z)(n), P = null == E ? null : E === b.k.INFO ? "backwards" : "forwards", S = (0, d.Z)(P), {
+  } = e, O = (0, o.e7)([p.ZP], () => p.ZP.getGuildSidebarState(C), [C]), E = null != (t = null == O ? void 0 : O.details.modViewPanel) ? t : b.k.INFO, I = (0, c.Z)(n), S = null == E ? null : E === b.k.INFO ? "backwards" : "forwards", P = (0, d.Z)(S), {
     reducedMotion: Z
   } = i.useContext(a.S), N = i.useCallback(e => {
     null != O && (0, h.r)(C, n, O.baseChannelId, {
@@ -103,8 +103,8 @@ function C(e) {
         }, Z.enabled ? {
           opacity: null == (o = e.value) ? void 0 : o.to(e => 1 - Math.abs(e))
         } : {
-          left: null == (a = e.value) ? void 0 : a.to(y("left", S)),
-          right: null == (s = e.value) ? void 0 : s.to(y("right", S))
+          left: null == (a = e.value) ? void 0 : a.to(y("left", P)),
+          right: null == (s = e.value) ? void 0 : s.to(y("right", P))
         }),
         children: function(e) {
           switch (e) {

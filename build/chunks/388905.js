@@ -6,11 +6,11 @@ n.d(t, {
   EJ: () => L,
   Ee: () => S,
   Hh: () => D,
-  II: () => R,
+  II: () => P,
   MC: () => C,
   Vj: () => N,
   ZP: () => k,
-  gO: () => P,
+  gO: () => R,
   i_: () => w,
   jQ: () => x,
   qE: () => A,
@@ -169,7 +169,7 @@ let C = e => {
   })
 };
 C.Sizes = o.EFr;
-let R = e => {
+let P = e => {
     let {
       label: t,
       error: n,
@@ -222,7 +222,7 @@ let R = e => {
       }) : null]
     })
   },
-  P = e => {
+  R = e => {
     let {
       className: t,
       children: n
@@ -325,7 +325,7 @@ let R = e => {
     let {
       className: t
     } = e;
-    return (0, r.jsxs)(P, {
+    return (0, r.jsxs)(R, {
       className: t,
       children: [(0, r.jsx)(T, {
         onClick: () => window.open((0, f.t3)()),

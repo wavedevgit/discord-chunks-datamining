@@ -92,13 +92,13 @@ function C() {
   return N(null != (t = d.Z.getGuildFolders()) ? t : [], null != (n = null == (e = d.Z.settings.guildFolders) ? void 0 : e.guildPositions) ? n : [])
 }
 
-function R() {
+function P() {
   var e, t;
   let n = d.Z.getGuildFolders();
   return !(null != r && a()(r, n)) && N(null != (r = n) ? r : [], null != (t = null == (e = d.Z.settings.guildFolders) ? void 0 : e.guildPositions) ? t : [])
 }
 
-function P(e) {
+function R(e) {
   let {
     sourceId: t,
     targetId: n,
@@ -203,7 +203,7 @@ function U(e, t) {
 }
 let G = (0, f.oH)((e, t) => e.sortedGuildNodes().map(e => e.id)),
   B = (0, f.oH)((e, t) => e.getRoots().map(A)),
-  F = (0, f.oH)((e, t) => {
+  V = (0, f.oH)((e, t) => {
     let n = [];
 
     function r(e) {
@@ -216,7 +216,7 @@ let G = (0, f.oH)((e, t) => e.sortedGuildNodes().map(e => e.id)),
     }
     return r(e.root), n
   }),
-  V = (0, f.oH)((e, t) => e.root.children.map(A));
+  F = (0, f.oH)((e, t) => e.root.children.map(A));
 class Z extends E.Z {
   initialize() {
     this.waitFor(g.Z, b.ZP, d.Z, h.Z, u.Z, p.Z, l.Z)
@@ -234,10 +234,10 @@ class Z extends E.Z {
     return G(S, S.version)
   }
   getFlattenedGuildFolderList() {
-    return F(S, S.version)
+    return V(S, S.version)
   }
   getCompatibleGuildFolders() {
-    return V(S, S.version)
+    return F(S, S.version)
   }
   getFastListGuildFolders() {
     return S.getRoots()
@@ -258,8 +258,8 @@ class Z extends E.Z {
       GUILD_CREATE: C,
       GUILD_DELETE: C,
       GUILD_MEMBER_ADD: x,
-      USER_SETTINGS_PROTO_UPDATE: R,
-      GUILD_MOVE_BY_ID: P,
+      USER_SETTINGS_PROTO_UPDATE: P,
+      GUILD_MOVE_BY_ID: R,
       GUILD_FOLDER_CREATE_LOCAL: w,
       GUILD_FOLDER_EDIT_LOCAL: D,
       GUILD_FOLDER_DELETE_LOCAL: L,

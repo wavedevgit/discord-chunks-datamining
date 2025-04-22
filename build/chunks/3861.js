@@ -32,8 +32,8 @@ let v = (0, a.Z)(e => {
     onContextMenuParticipant: O,
     onFullscreenParticipant: E,
     channel: I,
-    hasConnectPermission: P,
-    className: S,
+    hasConnectPermission: S,
+    className: P,
     inCall: Z,
     showParticipants: N = !0,
     paused: T = !1,
@@ -55,7 +55,7 @@ let v = (0, a.Z)(e => {
   }) : (null == I ? void 0 : I.isGuildVocal()) && !Z ? (0, r.jsx)(h.Z, {
     channel: I,
     participants: t,
-    hasConnectPermission: P
+    hasConnectPermission: S
   }) : k === y.WtW.VOICE ? (0, r.jsx)(c.Z, {
     guildId: I.guild_id,
     width: A,
@@ -91,7 +91,7 @@ let v = (0, a.Z)(e => {
     filteredParticipants: B,
     participants: t,
     popoutWindow: M,
-    className: S,
+    className: P,
     idle: R,
     height: w,
     width: A,

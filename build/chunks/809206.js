@@ -5,7 +5,7 @@ n.d(t, {
   I5: () => v,
   KP: () => S,
   Mn: () => b,
-  P6: () => R,
+  P6: () => P,
   S2: () => E,
   V3: () => y,
   W0: () => O,
@@ -228,7 +228,7 @@ function C() {
   })
 }
 
-function R() {
+function P() {
   o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM"
   })

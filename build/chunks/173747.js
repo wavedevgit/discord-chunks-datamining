@@ -36,14 +36,14 @@ let y = new Set,
   A = 10 * m.Z.Millis.MINUTE,
   N = 6 * m.Z.Millis.HOUR,
   C = 10 * m.Z.Millis.MINUTE,
-  R = new s.V7;
+  P = new s.V7;
 
-function P(e) {
-  R.start(e + Math.random() * A, c.o)
+function R(e) {
+  P.start(e + Math.random() * A, c.o)
 }
 
 function w() {
-  return P(N), D()
+  return R(N), D()
 }
 
 function D() {
@@ -138,7 +138,7 @@ function B(e) {
   null == I[t] && delete I[t]
 }
 
-function F(e) {
+function V(e) {
   let {
     branches: t
   } = e, n = {};
@@ -157,15 +157,15 @@ function F(e) {
     }
     T[t] = r
   }
-  P(N)
+  R(N)
 }
 
-function V() {
-  P(C)
+function F() {
+  R(C)
 }
 
 function Z() {
-  R.stop()
+  P.stop()
 }
 
 function H(e) {
@@ -213,8 +213,8 @@ let W = new Y(l.Z, {
   APPLICATION_BUILD_SIZE_FETCH_START: U,
   APPLICATION_BUILD_SIZE_FETCH_SUCCESS: G,
   APPLICATION_BUILD_SIZE_FETCH_FAIL: B,
-  APPLICATION_BRANCHES_FETCH_SUCCESS: F,
-  APPLICATION_BRANCHES_FETCH_FAIL: V,
+  APPLICATION_BRANCHES_FETCH_SUCCESS: V,
+  APPLICATION_BRANCHES_FETCH_FAIL: F,
   CONNECTION_CLOSED: Z,
   LOGOUT: Z,
   SKU_PURCHASE_SUCCESS: H

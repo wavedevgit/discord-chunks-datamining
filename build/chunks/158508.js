@@ -85,7 +85,7 @@ function v(e) {
   } = (0, i.cj)([u.Z], () => ({
     isIgnored: u.Z.isIgnored(T),
     isBlocked: u.Z.isBlocked(T)
-  }), [T]), R = [a.z.IGNORE_USER_NEW_BADGE], [P, w] = (0, c.US)(R), D = P === a.z.IGNORE_USER_NEW_BADGE;
+  }), [T]), P = [a.z.IGNORE_USER_NEW_BADGE], [R, w] = (0, c.US)(P), D = R === a.z.IGNORE_USER_NEW_BADGE;
   return A || C ? null : (0, r.jsx)(o.sNh, {
     id: "ignore",
     color: "default",

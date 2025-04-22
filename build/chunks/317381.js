@@ -38,7 +38,7 @@ function C(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,7 +51,7 @@ function R(e) {
   return e
 }
 
-function P(e, t) {
+function R(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -63,7 +63,7 @@ function P(e, t) {
 }
 
 function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -82,12 +82,12 @@ let D = {
   U = new Map,
   G = new Map,
   B = new Map,
-  F = "contextless-faux-channel-id";
+  V = "contextless-faux-channel-id";
 
-function V(e, t) {
+function F(e, t) {
   var n, r;
   let i = e;
-  return i = (0, m.yE)(null != (r = null == (n = u.Z.getApplication(t)) ? void 0 : n.flags) ? r : 0, N.udG.CONTEXTLESS_ACTIVITY) && (0, b.sq)() ? F : i, "".concat(t, ":").concat(i)
+  return i = (0, m.yE)(null != (r = null == (n = u.Z.getApplication(t)) ? void 0 : n.flags) ? r : 0, N.udG.CONTEXTLESS_ACTIVITY) && (0, b.sq)() ? V : i, "".concat(t, ":").concat(i)
 }
 let Z = new Map,
   H = new Map,
@@ -126,8 +126,8 @@ function en(e) {
     A = S.some(e => e === T),
     N = null == (t = p.find(e => e.userId === T)) ? void 0 : t.sessionId,
     C = p.some(e => (0, v.J)(e)),
-    P = k.get(u),
-    w = Z.get(V(null != m ? m : null, u)),
+    R = k.get(u),
+    w = Z.get(F(null != m ? m : null, u)),
     D = null == w ? void 0 : w.launchParams,
     x = {
       applicationId: u,
@@ -137,12 +137,12 @@ function en(e) {
       url: h,
       userIds: new Set(S),
       participants: p,
-      referrerId: null != (i = null == P ? void 0 : P.referrerId) ? i : null == D ? void 0 : D.referrerId,
-      customId: null != (a = null == P ? void 0 : P.customId) ? a : null == D ? void 0 : D.customId
+      referrerId: null != (i = null == R ? void 0 : R.referrerId) ? i : null == D ? void 0 : D.referrerId,
+      customId: null != (a = null == R ? void 0 : R.customId) ? a : null == D ? void 0 : D.customId
     };
-  A && null != P && k.set(P.applicationId, R({}, P, x));
+  A && null != R && k.set(R.applicationId, P({}, R, x));
   let M = !C;
-  null != P && c.id === P.location.id && u === P.applicationId && (!A && Array.from(P.userIds).some(e => e === T) || M) ? ei(P) : A && (null == P || P.applicationId !== u || P.location.id !== c.id) && (N === d.default.getSessionId() && ec({
+  null != R && c.id === R.location.id && u === R.applicationId && (!A && Array.from(R.userIds).some(e => e === T) || M) ? ei(R) : A && (null == R || R.applicationId !== u || R.location.id !== c.id) && (N === d.default.getSessionId() && ec({
     applicationId: u,
     launchId: f,
     compositeInstanceId: _,
@@ -157,8 +157,8 @@ function en(e) {
     channelId: null != m ? m : null,
     applicationId: u
   }));
-  let F = b.filter(e => e.applicationId !== u);
-  S.length > 0 && F.push(x), B.set(c.id, F);
+  let V = b.filter(e => e.applicationId !== u);
+  S.length > 0 && V.push(x), B.set(c.id, V);
   let H = (0, O.wq)(c);
   if (null != H) {
     let e = (null != (o = G.get(H)) ? o : []).filter(e => e.location.id !== c.id);
@@ -263,10 +263,10 @@ function ec(e) {
     referrerId: v,
     customId: I,
     inviterUserId: T
-  } = e, C = (0, y.ZP)(i), R = d.default.getSessionId();
-  if (null == C || null == R || (null == (t = k.get(i)) ? void 0 : t.location.id) === c.id) return !1;
-  let P = (0, O.pY)(c),
-    w = f.Z.getChannel(P),
+  } = e, C = (0, y.ZP)(i), P = d.default.getSessionId();
+  if (null == C || null == P || (null == (t = k.get(i)) ? void 0 : t.location.id) === c.id) return !1;
+  let R = (0, O.pY)(c),
+    w = f.Z.getChannel(R),
     D = null == w ? void 0 : w.getGuildId();
   if (null == p.default.getCurrentUser() || !(0, b.sq)() && null == D && !(null != (n = null == w ? void 0 : w.isPrivate()) && n)) return !1;
   r = c;
@@ -294,7 +294,7 @@ function ec(e) {
     s.Z.dispatch({
       type: "ACTIVITY_POPOUT_WINDOW_OPEN"
     })
-  })) : J = P !== _.Z.getChannelId() || (0, S.Z)(P) ? c.kind === a.E.CONTEXTLESS ? A.Ez.PANEL : A.Ez.PIP : A.Ez.PANEL, X.set(eC(c.id, i), Date.now())
+  })) : J = R !== _.Z.getChannelId() || (0, S.Z)(R) ? c.kind === a.E.CONTEXTLESS ? A.Ez.PANEL : A.Ez.PIP : A.Ez.PANEL, X.set(eC(c.id, i), Date.now())
 }
 
 function eu(e) {
@@ -319,7 +319,7 @@ function ef(e) {
   if (null == n) return !1;
   let r = k.get(null != (t = n.application_id) ? t : "");
   if (null == r) return !1;
-  k.set(r.applicationId, R({}, r))
+  k.set(r.applicationId, P({}, r))
 }
 
 function e_(e) {
@@ -327,7 +327,7 @@ function e_(e) {
     applicationId: t,
     config: n
   } = e, r = k.get(t);
-  null != r && k.set(r.applicationId, w(R({}, r), {
+  null != r && k.set(r.applicationId, w(P({}, r), {
     config: n
   }))
 }
@@ -406,7 +406,7 @@ function eb(e) {
     channelId: a,
     inviterUserId: o
   } = e;
-  Z.set(V(a, t), {
+  Z.set(F(a, t), {
     isLaunching: !0,
     componentId: n,
     inviterUserId: o,
@@ -437,7 +437,7 @@ function eO(e) {
     applicationId: t,
     channelId: n
   } = e;
-  Z.delete(V(n, t))
+  Z.delete(F(n, t))
 }
 
 function eI(e) {
@@ -486,18 +486,18 @@ function eC(e, t) {
   return "".concat(e, ":").concat(t)
 }
 
-function eR(e) {
+function eP(e) {
   let {
     key: t
   } = e;
   t === N.KJ3.ACTIVITY_POPOUT && (J = A.Ez.PIP)
 }
-class eP extends(i = o.ZP.PersistedStore) {
+class eR extends(i = o.ZP.PersistedStore) {
   initialize(e) {
     var t, n;
     let r = new Set(null != (t = null == e ? void 0 : e.everLaunchedActivities) ? t : []),
       i = new Set(null != (n = null == e ? void 0 : e.surfacesToShowNewActivityIndicator) ? n : []);
-    null != e && (D = w(R({}, e), {
+    null != e && (D = w(P({}, e), {
       everLaunchedActivities: r,
       surfacesToShowNewActivityIndicator: i
     }))
@@ -609,7 +609,7 @@ class eP extends(i = o.ZP.PersistedStore) {
     return D.everLaunchedActivities.has(e)
   }
   getLaunchState(e, t) {
-    if (null != e) return Z.get(V(null != t ? t : null, e))
+    if (null != e) return Z.get(F(null != t ? t : null, e))
   }
   getLaunchStates() {
     return Z
@@ -618,22 +618,22 @@ class eP extends(i = o.ZP.PersistedStore) {
     return ee
   }
 }
-C(eP, "displayName", "EmbeddedActivitiesStore"), C(eP, "persistKey", "EmbeddedActivities"), C(eP, "migrations", [e => w(R({}, e), {
+C(eR, "displayName", "EmbeddedActivitiesStore"), C(eR, "persistKey", "EmbeddedActivities"), C(eR, "migrations", [e => w(P({}, e), {
   seenFeaturedActivities: [],
   shouldShowNewActivityIndicator: !1
-}), e => (delete e.seenFeaturedActivities, R({}, e)), e => (delete e.seenActivities, R({}, e)), e => (delete e.currentFreeActivity, delete e.lastFreeActivityRotationTimestampMs, delete e.freePeriodActivities, delete e.shouldShowFreeActivityIndicator, R({}, e)), e => w(R({}, e), {
+}), e => (delete e.seenFeaturedActivities, P({}, e)), e => (delete e.seenActivities, P({}, e)), e => (delete e.currentFreeActivity, delete e.lastFreeActivityRotationTimestampMs, delete e.freePeriodActivities, delete e.shouldShowFreeActivityIndicator, P({}, e)), e => w(P({}, e), {
   seenNewActivities: {},
   seenUpdatedActivities: {}
 }), e => {
   var t;
   let n = new Set(null != (t = e.everLaunchedActivities) ? t : []);
-  return w(R({}, e), {
+  return w(P({}, e), {
     everLaunchedActivities: n
   })
-}, e => (delete e.usersHavePlayedByApp, R({}, e)), e => (e.surfacesToShowNewActivityIndicator = new Set, e.shouldShowNewActivityIndicator && e.surfacesToShowNewActivityIndicator.add(l.eR.VOICE_LAUNCHER), delete e.shouldShowNewActivityIndicator, R({}, e)), e => w(R({}, e), {
+}, e => (delete e.usersHavePlayedByApp, P({}, e)), e => (e.surfacesToShowNewActivityIndicator = new Set, e.shouldShowNewActivityIndicator && e.surfacesToShowNewActivityIndicator.add(l.eR.VOICE_LAUNCHER), delete e.shouldShowNewActivityIndicator, P({}, e)), e => w(P({}, e), {
   lastCheckedForBadgeableActivities: null
 })]);
-let ew = new eP(s.Z, {
+let ew = new eR(s.Z, {
     ACTIVITY_LAYOUT_MODE_UPDATE: eA,
     CONNECTION_OPEN_SUPPLEMENTAL: ea,
     GUILD_CREATE: eo,
@@ -654,6 +654,6 @@ let ew = new eP(s.Z, {
     EMBEDDED_ACTIVITY_SET_PANEL_MODE: eS,
     EMBEDDED_ACTIVITY_SET_FOCUSED_LAYOUT: eT,
     CHANNEL_SELECT: eN,
-    POPOUT_WINDOW_CLOSE: eR
+    POPOUT_WINDOW_CLOSE: eP
   }),
   eD = ew

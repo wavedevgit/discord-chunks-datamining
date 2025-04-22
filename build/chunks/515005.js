@@ -80,8 +80,8 @@ function C(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
-  P = (0, l.Mg)(O.__invalid_stickerPickerPreviewPadding),
+let P = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
+  R = (0, l.Mg)(O.__invalid_stickerPickerPreviewPadding),
   w = 250,
   D = i.memo(function(e) {
     let {
@@ -98,10 +98,10 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
       rowIndex: k,
       stickerClassName: j,
       stickerDescriptors: U,
-      stickerPadding: G = P,
-      stickerSize: B = R,
-      ownedStickerPacks: F,
-      enlargeOnInteraction: V = !1,
+      stickerPadding: G = R,
+      stickerSize: B = P,
+      ownedStickerPacks: V,
+      enlargeOnInteraction: F = !1,
       channel: Z,
       currentUser: H,
       checkSendability: Y = !0
@@ -124,16 +124,16 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
       children: U.map(e => {
         var d;
         let f = e.visibleRowIndex === (null == C ? void 0 : C.rowIndex) && e.columnIndex === (null == C ? void 0 : C.columnIndex),
-          I = e.type === m.al.STICKER && V && f,
+          I = e.type === m.al.STICKER && F && f,
           T = t => {
             if ((null == D ? void 0 : D.current) === !0 || (null == L ? void 0 : L.current) === !0) return;
             let n = t.altKey;
             n && e.type === m.al.STICKER && !(0, g.gM)(e.sticker.id) && X(e.sticker.id), null == M || M(e, n)
           },
-          R = (0, s.throttle)(() => {
+          P = (0, s.throttle)(() => {
             (null == D ? void 0 : D.current) === !0 || (null == L ? void 0 : L.current) === !0 || f || null == x || x(e)
           }, w),
-          P = () => {
+          R = () => {
             e.type === m.al.CREATE_STICKER && (p.default.track(y.rMx.OPEN_MODAL, {
               type: y.jXE.CREATE_STICKER_MODAL,
               location: W
@@ -163,11 +163,11 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
                 }),
                 innerRef: G,
                 tabIndex: K,
-                onFocus: null != z ? z : R,
-                onMouseMove: R,
-                onClick: P,
+                onFocus: null != z ? z : P,
+                onMouseMove: P,
+                onClick: R,
                 style: q,
-                children: [!V && (0, r.jsx)("div", {
+                children: [!F && (0, r.jsx)("div", {
                   className: O.inspectedIndicator
                 }), (0, r.jsx)("div", {
                   className: O.iconWrapper,
@@ -184,7 +184,7 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
               })
             }), e.guild_id);
           case m.al.STICKER: {
-            let s = t && null != F && (0, g.jl)(e.sticker) && !F.has(e.sticker.pack_id),
+            let s = t && null != V && (0, g.jl)(e.sticker) && !V.has(e.sticker.pack_id),
               l = e => {
                 (0, u.jW)(e, async () => {
                   let {
@@ -202,8 +202,8 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
               }),
               innerRef: G,
               tabIndex: K,
-              onFocus: null != z ? z : R,
-              onMouseMove: R,
+              onFocus: null != z ? z : P,
+              onMouseMove: P,
               onClick: T,
               onContextMenu: l,
               style: q,
@@ -213,16 +213,16 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
                 children: (0, E.C)(e.sticker)
               }), (0, r.jsxs)("div", {
                 "aria-hidden": !0,
-                children: [!V && (0, r.jsx)("div", {
+                children: [!F && (0, r.jsx)("div", {
                   className: O.inspectedIndicator
                 }), (0, r.jsx)(E.Z, {
                   className: o()(O.stickerNode, {
-                    [O.stickerNodeDimmed]: V && !f && null != C && -1 !== C.rowIndex && -1 !== C.columnIndex,
+                    [O.stickerNodeDimmed]: F && !f && null != C && -1 !== C.rowIndex && -1 !== C.columnIndex,
                     [O.stickerNodeHidden]: I,
                     [O.stickerUnsendable]: Y && !(0, h.kl)(e.sticker, H, Z)
                   }),
                   disableAnimation: !f && !a,
-                  enlargeOnInteraction: V,
+                  enlargeOnInteraction: F,
                   isInteracting: f,
                   maskAsset: f,
                   sticker: e.sticker,

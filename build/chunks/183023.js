@@ -33,8 +33,8 @@ var r = n(200651),
   A = n(687476),
   N = n(761966),
   C = n(563927),
-  R = n(98278),
-  P = n(197115),
+  P = n(98278),
+  R = n(197115),
   w = n(703656),
   D = n(944486),
   L = n(914010),
@@ -45,8 +45,8 @@ var r = n(200651),
   U = n(74538),
   G = n(886132),
   B = n(524444),
-  F = n(981631),
-  V = n(176505),
+  V = n(981631),
+  F = n(176505),
   Z = n(474936),
   H = n(388032),
   Y = n(239594);
@@ -92,8 +92,8 @@ function q(e, t) {
 let Q = 32,
   X = 12,
   J = () => ({
-    page: null != (0, l.e7)([L.Z], () => L.Z.getGuildId()) ? F.ZY5.GUILD_CHANNEL : F.ZY5.DM_CHANNEL,
-    section: F.jXE.EMOJI_UPSELL_POPOUT
+    page: null != (0, l.e7)([L.Z], () => L.Z.getGuildId()) ? V.ZY5.GUILD_CHANNEL : V.ZY5.DM_CHANNEL,
+    section: V.jXE.EMOJI_UPSELL_POPOUT
   }),
   $ = e => {
     let {
@@ -148,7 +148,7 @@ let Q = 32,
       size: c,
       canAnimate: !0
     }), f = (n = null == n || n) || t.isDiscoverable(), _ = () => {
-      t.isDiscoverable() ? (0, j.Ub)(a, {}) : n && (0, w.uL)(F.Z5c.CHANNEL(a, D.Z.getChannelId(a)))
+      t.isDiscoverable() ? (0, j.Ub)(a, {}) : n && (0, w.uL)(V.Z5c.CHANNEL(a, D.Z.getChannelId(a)))
     }, p = () => null != d && f ? (0, r.jsxs)(u.P3F, {
       "aria-label": l,
       onClick: _,
@@ -320,10 +320,10 @@ let Q = 32,
         isDiscoverable: X,
         shouldHideRoleSubscriptionCTA: ea,
         onOpenPremiumSettings: () => {
-          C(), M.default.track(F.rMx.PREMIUM_PROMOTION_OPENED, {
+          C(), M.default.track(V.rMx.PREMIUM_PROMOTION_OPENED, {
             location_page: $.page,
             location_section: $.section
-          }), (0, R.z)()
+          }), (0, P.z)()
         }
       }),
       ec = Q && en && !ea && (z && et || !z),
@@ -349,8 +349,8 @@ let Q = 32,
         }, t = () => {
           C(), (null == S ? void 0 : S.id) != null && d.Z.transitionToGuildSync(S.id, {
             sourceLocationStack: [_.Z.GUILD_ROLE_SUBSCRIPTION_EMOJI_TEXT_POPOVER_UPSELL]
-          }, V.oC.ROLE_SUBSCRIPTIONS)
-        }, n = !Q && X, i = () => e_ ? (0, r.jsx)(P.Z, {
+          }, F.oC.ROLE_SUBSCRIPTIONS)
+        }, n = !Q && X, i = () => e_ ? (0, r.jsx)(R.Z, {
           className: Y.ctaButton,
           subscriptionTier: Z.Si.TIER_2,
           size: u.zxk.Sizes.SMALL,
@@ -404,7 +404,7 @@ let Q = 32,
         var e, t;
         let n = null != I && !Q && X && (null != (t = null == I || null == (e = I.emojis) ? void 0 : e.length) ? t : 0) > 1,
           i = () => {
-            n && (null == w || w(), eh || k || M.default.track(F.rMx.EMOJI_UPSELL_POPOUT_MORE_EMOJIS_OPENED, ed), em(!eh))
+            n && (null == w || w(), eh || k || M.default.track(V.rMx.EMOJI_UPSELL_POPOUT_MORE_EMOJIS_OPENED, ed), em(!eh))
           },
           a = () => {
             let e = H.intl.string(H.t.pnsAS0);
@@ -476,7 +476,7 @@ let Q = 32,
       type: _,
       description: p
     } = o, h = () => _ === G.$.GET_PREMIUM ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(P.Z, {
+      children: [(0, r.jsx)(R.Z, {
         subscriptionTier: Z.Si.TIER_2,
         buttonText: o.text,
         className: Y.ctaButton,

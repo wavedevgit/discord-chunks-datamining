@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Pv: () => G,
-  e5: () => P,
+  e5: () => R,
   gx: () => w,
   lp: () => U,
   wi: () => D
@@ -82,7 +82,7 @@ function C(e) {
   return !1
 }
 
-function R(e) {
+function P(e) {
   var t;
   return new d.pi(T(I({}, e), {
     timestamp: new Date(e.timestamp),
@@ -96,16 +96,16 @@ function R(e) {
   }))
 }
 
-function P(e) {
+function R(e) {
   var t, n, r, i, o, s, c;
   let f, h, {
       reactions: m,
       interactionData: y
     } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
-    O = R(e),
+    O = P(e),
     S = null != (i = null == (t = e.mentions) ? void 0 : t.map(e => e.id)) ? i : [],
     A = null != (o = e.mention_roles) ? o : [],
-    P = null != (s = e.mention_channels) ? s : [],
+    R = null != (s = e.mention_channels) ? s : [],
     w = e.message_reference,
     D = N(e),
     L = null,
@@ -113,8 +113,8 @@ function P(e) {
     U = e.gifting_prompt,
     G = null != e.interaction ? u.Z.createFromServer(e.interaction) : null,
     B = e.type === v.uaV.THREAD_STARTER_MESSAGE ? null == (r = e.referenced_message) || null == (n = r.author) ? void 0 : n.id : void 0,
-    F = e.content;
-  return new d.ZP((e.type === v.uaV.PREMIUM_REFERRAL ? (f = E.default.isProbablyAValidSnowflake(e.content) ? e.content : void 0, F = "") : e.type === v.uaV.CHAT_WALLPAPER_SET && (h = (0, a.Z)(e.content), F = ""), C(e)) ? T(I({}, L), {
+    V = e.content;
+  return new d.ZP((e.type === v.uaV.PREMIUM_REFERRAL ? (f = E.default.isProbablyAValidSnowflake(e.content) ? e.content : void 0, V = "") : e.type === v.uaV.CHAT_WALLPAPER_SET && (h = (0, a.Z)(e.content), V = ""), C(e)) ? T(I({}, L), {
     id: e.id,
     channel_id: e.channel_id,
     type: v.uaV.DEFAULT,
@@ -129,7 +129,7 @@ function P(e) {
     mentionEveryone: e.mention_everyone,
     mentions: S,
     mentionRoles: A,
-    mentionChannels: P,
+    mentionChannels: R,
     messageReference: w,
     mentioned: (0, b.Sz)({
       userId: _.default.getId(),
@@ -139,7 +139,7 @@ function P(e) {
       mentionRoles: A
     }),
     giftCodes: (0, g.Fp)(e) ? (0, g.Q_)(null == e ? void 0 : e.embeds[0].url) : (0, g.Q_)(e.content),
-    content: F,
+    content: V,
     referralTrialOfferId: f,
     call: x(e.call, O.timestamp),
     messageSnapshots: j(e),
@@ -165,7 +165,7 @@ function w(e, t) {
 }
 
 function D(e, t) {
-  if (null != t.edited_timestamp) return P(t, {
+  if (null != t.edited_timestamp) return R(t, {
     reactions: e.reactions,
     interactionData: e.interactionData
   });
@@ -242,7 +242,7 @@ function j(e) {
       message: t
     } = e;
     return new d.Hx({
-      message: R(t)
+      message: P(t)
     })
   })
 }

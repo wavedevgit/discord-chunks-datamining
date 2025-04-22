@@ -26,8 +26,8 @@ var r = n(200651),
   O = n(502762),
   E = n(530),
   I = n(679332),
-  P = n(544989),
-  S = n(171368),
+  S = n(544989),
+  P = n(171368),
   Z = n(228168),
   N = n(388032),
   T = n(149385),
@@ -58,12 +58,12 @@ function R(e) {
     channel: n
   } = e, R = __OVERLAY__ || !(0, d.Z)(t.id), k = (0, b.ZP)(t.id), M = (0, s.ZP)(), L = i.useRef(Date.now()), {
     analyticsLocations: D
-  } = (0, u.ZP)(c.Z.PROFILE_PANEL), U = (0, m.ZB)({
+  } = (0, u.ZP)(c.Z.USER_PROFILE_SIDEBAR), U = (0, m.ZB)({
     layout: "SIDEBAR",
     userId: t.id,
     channelId: n.id
   }), B = i.useRef(null), G = (0, a.Z)(B), F = e => {
-    (0, S.openUserProfileModal)(w({
+    (0, P.openUserProfileModal)(w({
       sourceAnalyticsLocations: D,
       hideRestrictedProfile: !0
     }, U, e))
@@ -80,11 +80,11 @@ function R(e) {
         ref: B,
         user: t,
         displayProfile: k,
-        profileType: Z.y0.PANEL,
+        themeType: Z.lY.SIDEBAR,
         themeOverride: M,
         children: [(0, r.jsxs)(l.u2, {
-          children: [(0, r.jsx)(P.Z, {
-            profileType: Z.y0.PANEL,
+          children: [(0, r.jsx)(S.Z, {
+            themeType: Z.lY.SIDEBAR,
             children: (0, r.jsx)(I.Z, {
               user: t
             })
@@ -93,13 +93,13 @@ function R(e) {
             children: [(0, r.jsx)(C.Z, {
               user: t,
               displayProfile: k,
-              profileType: Z.y0.PANEL,
+              themeType: Z.lY.SIDEBAR,
               animateOnHover: !G
             }), (0, r.jsx)(_.Z, {
               user: t,
               displayProfile: k,
               channelId: n.id,
-              profileType: Z.y0.PANEL,
+              themeType: Z.lY.SIDEBAR,
               onOpenProfile: R ? void 0 : F
             }), t.isClyde() && (0, r.jsx)(p.Z, {
               className: T.headerTag
@@ -108,13 +108,13 @@ function R(e) {
             className: A.body,
             children: [(0, r.jsx)(E.Z, {
               user: t,
-              profileType: Z.y0.PANEL,
+              themeType: Z.lY.SIDEBAR,
               nickname: f.ZP.getName(null, n.id, t),
               pronouns: null == k ? void 0 : k.pronouns,
               onOpenProfile: R ? void 0 : F,
               tags: (0, r.jsx)(y.Z, {
                 displayProfile: k,
-                profileType: Z.y0.PANEL
+                themeType: Z.lY.SIDEBAR
               })
             }), (0, r.jsxs)(O.Z.Overlay, {
               className: A.overlay,

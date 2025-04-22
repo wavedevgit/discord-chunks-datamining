@@ -55,8 +55,8 @@ function T() {
 let A = T(),
   N = [],
   C = new Set,
-  R = {},
-  P = null;
+  P = {},
+  R = null;
 
 function w(e, t) {
   let n = new Date,
@@ -73,7 +73,7 @@ function D(e) {
 }
 
 function L() {
-  if (null != P) return void q(P);
+  if (null != R) return void q(R);
   if (k(), !f.Z.hasConsented(g.pjP.PERSONALIZATION)) return;
   let {
     enabled: e
@@ -95,7 +95,7 @@ function L() {
         n = d.Z.getUserAffinity(e);
       if (_.Z.getRelationshipType(e) === g.OGo.FRIEND && !_.Z.isIgnored(e) && null != n && n.affinity > 0 && null != t) {
         let n = new Date(t);
-        D(n) && (N.push(e), R[e] = {
+        D(n) && (N.push(e), P[e] = {
           friendsSince: n
         })
       }
@@ -118,7 +118,7 @@ function M() {
 }
 
 function k() {
-  N.length = 0, C.clear(), R = {}
+  N.length = 0, C.clear(), P = {}
 }
 
 function j() {
@@ -140,11 +140,11 @@ function B(e) {
   Z(t)
 }
 
-function F() {
+function V() {
   A.friendsTabBadgeLastDismissedTime = Date.now()
 }
 
-function V(e) {
+function F(e) {
   let {
     recipientUserId: t
   } = e;
@@ -179,7 +179,7 @@ function z(e) {
     total: t
   } = e;
   if (null == t) {
-    P = null, L();
+    R = null, L();
     return
   }
   q(t)
@@ -195,13 +195,13 @@ function q(e) {
     autoTrackExposure: !1
   });
   if (!t) return;
-  P = e;
+  R = e;
   let n = _.Z.getFriendIDs().filter(e => !_.Z.isIgnored(e));
   a().sampleSize(n, e).forEach(e => {
     let t = _.Z.getSince(e);
     if (null != t) {
       let n = new Date(t);
-      N.push(e), R[e] = {
+      N.push(e), P[e] = {
         friendsSince: n
       }
     }
@@ -235,14 +235,14 @@ class Q extends(r = l.ZP.PersistedStore) {
     return !(Date.now() - t <= I) && M()
   }
   getFriendAnniversaryYears(e) {
-    let t = R[e];
+    let t = P[e];
     return null == t ? 0 : x(t.friendsSince)
   }
   isGiftIntentMessageInCooldown(e) {
     return null != A.messageGiftIntentLastShownMap[e]
   }
   getDevToolTotalFriendAnniversaries() {
-    return P
+    return R
   }
 }
 E(Q, "displayName", "PremiumGiftingIntentStore"), E(Q, "persistKey", "PremiumGiftingIntentStore"), E(Q, "migrations", [e => {
@@ -258,8 +258,8 @@ let X = new Q(c.Z, {
   LOGOUT: U,
   MESSAGE_GIFT_INTENT_SHOWN: B,
   FRIENDS_LIST_GIFT_INTENTS_SHOWN: G,
-  FRIENDS_TAB_BADGE_DISMISS: F,
-  GIFT_INTENT_FLOW_PURCHASED_GIFT: V,
+  FRIENDS_TAB_BADGE_DISMISS: V,
+  GIFT_INTENT_FLOW_PURCHASED_GIFT: F,
   DEV_TOOLS_FRIENDS_LIST_GIFT_INTENTS_SHOWN_RESET: Y,
   DEV_TOOLS_GIFT_MESSAGE_COOLDOWN_RESET: W,
   DEV_TOOLS_FRIENDS_TAB_BADGE_COOLDOWN_RESET: K,

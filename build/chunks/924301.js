@@ -103,7 +103,7 @@ function C(e) {
   return null != e ? e : I
 }
 
-function R(e) {
+function P(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
     r = e.guild_scheduled_event_id;
@@ -112,7 +112,7 @@ function R(e) {
   null == S[r][i] && (S[r][i] = {}), S[r][i][e.user_id] = e, t && D(e), n && (v += 1)
 }
 
-function P(e) {
+function R(e) {
   var t, n, r, i;
   let a = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     o = C(e.guild_scheduled_event_exception_id),
@@ -190,14 +190,14 @@ function B(e) {
   return A(t), !0
 }
 
-function F(e) {
+function V(e) {
   let {
     guildScheduledEvent: t
   } = e;
   return N(t.id), !0
 }
 
-function V(e) {
+function F(e) {
   let {
     eventException: t
   } = e, n = y.get(t.event_id);
@@ -233,14 +233,14 @@ function Y(e) {
   let {
     guildScheduledEventUsers: t
   } = e;
-  return t.forEach(e => R(e, !1, !1)), v += 1, !0
+  return t.forEach(e => P(e, !1, !1)), v += 1, !0
 }
 
 function W(e) {
   let {
     guildScheduledEventUsers: t
   } = e;
-  return t.forEach(e => R(e, !1, !1)), v += 1, !0
+  return t.forEach(e => P(e, !1, !1)), v += 1, !0
 }
 
 function K(e) {
@@ -252,9 +252,9 @@ function K(e) {
     guildEventExceptionId: o,
     response: s
   } = e, l = C(o), c = null == (n = S[i]) || null == (t = n[l]) ? void 0 : t[r];
-  null != c && P(c, !1);
+  null != c && R(c, !1);
   let d = u.ZP.getMember(a, r);
-  return R({
+  return P({
     user_id: r,
     guild_scheduled_event_id: i,
     member: null != d ? d : void 0,
@@ -270,7 +270,7 @@ function z(e) {
     guildEventExceptionId: r,
     response: i
   } = e;
-  P({
+  R({
     user_id: t,
     guild_scheduled_event_id: n,
     guild_scheduled_event_exception_id: r,
@@ -375,15 +375,15 @@ let en = new et(l.Z, {
   FETCH_GUILD_EVENTS_FOR_GUILD: k,
   GUILD_SCHEDULED_EVENT_CREATE: B,
   GUILD_SCHEDULED_EVENT_UPDATE: B,
-  GUILD_SCHEDULED_EVENT_DELETE: F,
+  GUILD_SCHEDULED_EVENT_DELETE: V,
   GUILD_SCHEDULED_EVENT_USER_ADD: K,
   GUILD_SCHEDULED_EVENT_USER_REMOVE: z,
   GUILD_SCHEDULED_EVENT_RSVPS_FETCH_SUCESS: Y,
   GUILD_SCHEDULED_EVENT_USERS_FETCH_SUCCESS: W,
   GUILD_SCHEDULED_EVENT_USER_COUNTS_FETCH_SUCCESS: q,
   INVITE_RESOLVE_SUCCESS: X,
-  GUILD_SCHEDULED_EVENT_EXCEPTION_CREATE: V,
-  GUILD_SCHEDULED_EVENT_EXCEPTION_UPDATE: V,
+  GUILD_SCHEDULED_EVENT_EXCEPTION_CREATE: F,
+  GUILD_SCHEDULED_EVENT_EXCEPTION_UPDATE: F,
   GUILD_SCHEDULED_EVENT_EXCEPTION_DELETE: Z,
   GUILD_SCHEDULED_EVENT_EXCEPTIONS_DELETE: H,
   LOGOUT: Q

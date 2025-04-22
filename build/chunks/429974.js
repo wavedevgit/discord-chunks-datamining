@@ -73,8 +73,8 @@ async function O(e) {
       friendToken: A,
       analyticsLocation: N,
       showGuildProfile: C = !0,
-      appContext: R,
-      customStatusPrompt: P
+      appContext: P,
+      customStatusPrompt: R
     } = e,
     w = E(e, ["userId", "section", "subsection", "guildId", "channelId", "friendToken", "analyticsLocation", "showGuildProfile", "appContext", "customStatusPrompt"]);
   let D = d.default.getUser(b);
@@ -90,9 +90,9 @@ async function O(e) {
       assets: G,
       application_id: B
     } = null != M ? M : {},
-    F = null != B ? l.Z.getApplication(B) : null,
-    V = j ? p.j28.ONLINE_MOBILE : p.j28.ONLINE_DESKTOP,
-    Z = k === p.Skl.ONLINE ? V : k;
+    V = null != B ? l.Z.getApplication(B) : null,
+    F = j ? p.j28.ONLINE_MOBILE : p.j28.ONLINE_DESKTOP,
+    Z = k === p.Skl.ONLINE ? F : k;
   y = await (0, i.ZDy)(async () => {
     let {
       default: e
@@ -106,11 +106,11 @@ async function O(e) {
       initialSubsection: I,
       channelId: T,
       showGuildProfile: C,
-      customStatusPrompt: P
+      customStatusPrompt: R
     }, t, w))
   }, {
     modalKey: v(b, C ? S : void 0),
-    contextKey: (0, i.VnL)(null != R ? R : p.IlC.APP)
+    contextKey: (0, i.VnL)(null != P ? P : p.IlC.APP)
   }), f.default.track(p.rMx.OPEN_MODAL, g({
     type: "Profile Modal",
     guild_id: S,
@@ -118,7 +118,7 @@ async function O(e) {
     other_user_id: b,
     application_id: null != (a = null == M ? void 0 : M.application_id) ? a : null,
     application_name: null == M ? void 0 : M.name,
-    sku_id: null != (o = null == F ? void 0 : F.primarySkuId) ? o : null,
+    sku_id: null != (o = null == V ? void 0 : V.primarySkuId) ? o : null,
     is_friend: u.Z.isFriend(b),
     has_images: !!(null != (m = null == G ? void 0 : G.large_image) ? m : null == G ? void 0 : G.small_image),
     party_max: null == U || null == (t = U.size) ? void 0 : t[1],

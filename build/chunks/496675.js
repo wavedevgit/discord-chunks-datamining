@@ -36,9 +36,9 @@ function T(e, t, n) {
 let A = {},
   N = {},
   C = {},
-  R = 0;
+  P = 0;
 
-function P(e) {
+function R(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     n = A[e];
   if (null != n) return n;
@@ -61,7 +61,7 @@ function w(e) {
   if (null == i) return E.Hn;
   let o = i.getGuildId(),
     s = null != o && (u.Z.isLurking(o) || (null == (t = y.ZP.getMember(o, r.id)) ? void 0 : t.isPending));
-  return !i.isScheduledForDeletion() && !s && a().isEmpty(i.permissionOverwrites) && null != o ? P(o) : E.uB({
+  return !i.isScheduledForDeletion() && !s && a().isEmpty(i.permissionOverwrites) && null != o ? R(o) : E.uB({
     user: r,
     context: i,
     checkElevated: n
@@ -83,7 +83,7 @@ function L(e) {
 
 function x() {
   for (let e in A = {}, N = {}, C) C[e] += 1;
-  R += 1
+  P += 1
 }
 
 function M() {
@@ -120,7 +120,7 @@ function G(e) {
       context: n
     });
   if (N[n.id] === i) return !1;
-  N[n.id] = i, R += 1, L(n.getGuildId())
+  N[n.id] = i, P += 1, L(n.getGuildId())
 }
 
 function B(e) {
@@ -140,14 +140,14 @@ function B(e) {
       });
     N[t.id] !== i && (N[t.id] = i, L(t.getGuildId()), n = !0)
   }
-  return !!n && (R += 1, n)
+  return !!n && (P += 1, n)
 }
 
-function F() {
+function V() {
   return !0
 }
 
-function V(e) {
+function F(e) {
   var t;
   return (null == (t = O.default.getCurrentUser()) ? void 0 : t.id) === e.userId && (L(e.guildId), !0)
 }
@@ -175,7 +175,7 @@ function W(e) {
   let {
     channel: t
   } = e;
-  return delete N[t.id], R += 1, L(t.guild_id), !1
+  return delete N[t.id], P += 1, L(t.guild_id), !1
 }
 
 function K(e) {
@@ -186,7 +186,7 @@ function K(e) {
   let n = b.Z.getMutableBasicGuildChannelsForGuild(t);
   a().forEach(n, e => {
     delete N[e.id]
-  }), R += 1, L(t)
+  }), P += 1, L(t)
 }
 
 function z(e) {
@@ -200,7 +200,7 @@ function z(e) {
       context: n
     });
   if (i === N[n.id]) return !1;
-  N[n.id] = i, R += 1
+  N[n.id] = i, P += 1
 }
 
 function q(e) {
@@ -211,7 +211,7 @@ function q(e) {
   let n = b.Z.getMutableBasicGuildChannelsForGuild(t);
   a().forEach(n, e => {
     delete N[e.id]
-  }), R += 1, L(t)
+  }), P += 1, L(t)
 }
 
 function Q(e, t, n, r) {
@@ -222,7 +222,7 @@ function Q(e, t, n, r) {
       return null == i ? E.Hn : E.Og(e, Q(i, t, n, r), f.Z.hasJoined(e.id))
     }
     i = D(e.id)
-  } else e instanceof h.ZP && (i = P(e.id));
+  } else e instanceof h.ZP && (i = R(e.id));
   return void 0 !== t || void 0 !== n || void 0 !== r ? E.uB({
     user: O.default.getCurrentUser(),
     context: e,
@@ -240,7 +240,7 @@ class X extends(r = s.ZP.Store) {
     return p.Ec.has(e.type) ? w(e.id) : D(e.id)
   }
   getGuildPermissions(e) {
-    return P(e.id)
+    return R(e.id)
   }
   getGuildPermissionProps(e) {
     let t = O.default.getCurrentUser();
@@ -263,10 +263,10 @@ class X extends(r = s.ZP.Store) {
     }
   }
   canAccessMemberSafetyPage(e) {
-    return o.Db(P(e.id), S.N)
+    return o.Db(R(e.id), S.N)
   }
   canAccessGuildSettings(e) {
-    return o.Db(P(e.id), E.ym)
+    return o.Db(R(e.id), E.ym)
   }
   canWithPartialContext(e, t) {
     return "channelId" in t && "string" == typeof t.channelId ? this.can(e, b.Z.getChannel(t.channelId)) : "guildId" in t && "string" == typeof t.guildId && this.can(e, v.Z.getGuild(t.guildId))
@@ -313,12 +313,12 @@ class X extends(r = s.ZP.Store) {
     return null != (t = C[e]) ? t : 0
   }
   getChannelsVersion() {
-    return R
+    return P
   }
 }
 
 function J() {
-  N = {}, A = {}, C = {}, R = 0
+  N = {}, A = {}, C = {}, P = 0
 }
 T(X, "displayName", "PermissionStore");
 let $ = new X(l.Z, {
@@ -335,16 +335,16 @@ let $ = new X(l.Z, {
   GUILD_MEMBER_UPDATE: U,
   CURRENT_USER_UPDATE: U,
   CHANNEL_CREATE: G,
-  THREAD_CREATE: F,
-  THREAD_UPDATE: F,
-  THREAD_LIST_SYNC: F,
-  LOAD_THREADS_SUCCESS: F,
-  LOAD_ARCHIVED_THREADS_SUCCESS: F,
+  THREAD_CREATE: V,
+  THREAD_UPDATE: V,
+  THREAD_LIST_SYNC: V,
+  LOAD_THREADS_SUCCESS: V,
+  LOAD_ARCHIVED_THREADS_SUCCESS: V,
   CHANNEL_UPDATES: B,
   LOAD_MESSAGES_SUCCESS: H,
   SEARCH_FINISH: Y,
   MOD_VIEW_SEARCH_FINISH: Y,
-  THREAD_MEMBER_UPDATE: V,
+  THREAD_MEMBER_UPDATE: F,
   THREAD_MEMBERS_UPDATE: Z,
   CHANNEL_DELETE: W,
   GUILD_ROLE_CREATE: K,

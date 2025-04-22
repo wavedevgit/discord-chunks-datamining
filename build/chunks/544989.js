@@ -12,14 +12,14 @@ var i = n(120356),
 
 function l(e) {
   let {
-    profileType: t,
+    themeType: t,
     children: n
   } = e;
   return (0, r.jsx)("div", {
     className: a()(s.wrapper, {
-      [s.biteSize]: t === o.y0.BITE_SIZE,
-      [s.fullSize]: t === o.y0.FULL_SIZE,
-      [s.panel]: t === o.y0.PANEL
+      [s.biteSize]: t === o.lY.POPOUT,
+      [s.fullSize]: t === o.lY.MODAL,
+      [s.panel]: t === o.lY.SIDEBAR
     }),
     children: n
   })

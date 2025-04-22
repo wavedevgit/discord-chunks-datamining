@@ -35,7 +35,7 @@ function f(e) {
     user: t,
     displayProfile: n,
     guildId: f,
-    profileType: c.y0.BITE_SIZE,
+    themeType: c.lY.POPOUT,
     pendingBanner: p,
     pendingAccentColor: h,
     canUsePremiumProfileCustomization: _,

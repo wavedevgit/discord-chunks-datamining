@@ -2,11 +2,11 @@
 "use strict";
 n.d(t, {
   BU: () => tz,
-  CX: () => tR,
+  CX: () => tP,
   F3: () => ey,
   UE: () => tk,
   _7: () => eL,
-  mH: () => tV,
+  mH: () => tF,
   vt: () => eY
 });
 var r = n(653603),
@@ -63,8 +63,8 @@ var y = new WeakMap,
   A = new WeakMap,
   N = new WeakMap,
   C = new WeakMap,
-  R = new WeakMap,
   P = new WeakMap,
+  R = new WeakMap,
   w = new WeakMap,
   D = new WeakMap,
   L = new WeakMap,
@@ -75,8 +75,8 @@ var y = new WeakMap,
   U = new WeakMap,
   G = new WeakMap,
   B = new WeakMap,
-  F = Symbol("placeholder"),
-  V = Symbol("mark-placeholder"),
+  V = Symbol("placeholder"),
+  F = Symbol("mark-placeholder"),
   Z = globalThis.Text,
   H = e => e && e.ownerDocument && e.ownerDocument.defaultView || null,
   Y = e => K(e) && 8 === e.nodeType,
@@ -213,17 +213,17 @@ var y = new WeakMap,
         n = t.getRootNode();
       return (n instanceof Document || n instanceof ShadowRoot) && null != n.getSelection ? n : t.ownerDocument
     },
-    isFocused: e => !!P.get(e),
-    isReadOnly: e => !!R.get(e),
+    isFocused: e => !!R.get(e),
+    isReadOnly: e => !!P.get(e),
     blur(e) {
       var t = ey.toDOMNode(e, e),
         n = ey.findDocumentOrShadowRoot(e);
-      P.set(e, !1), n.activeElement === t && t.blur()
+      R.set(e, !1), n.activeElement === t && t.blur()
     },
     focus(e) {
       var t = ey.toDOMNode(e, e),
         n = ey.findDocumentOrShadowRoot(e);
-      P.set(e, !0), n.activeElement !== t && t.focus({
+      R.set(e, !0), n.activeElement !== t && t.focus({
         preventScroll: !0
       })
     },
@@ -447,7 +447,7 @@ var y = new WeakMap,
     }),
     hasSelectableTarget: (e, t) => ey.hasEditableTarget(e, t) || ey.isTargetInsideNonReadonlyVoid(e, t),
     isTargetInsideNonReadonlyVoid(e, t) {
-      if (R.get(e)) return !1;
+      if (P.get(e)) return !1;
       var n = ey.hasTarget(e, t) && ey.toSlateNode(e, t);
       return d.W_.isElement(n) && d.ML.isVoid(e, n)
     },
@@ -463,7 +463,7 @@ var y = new WeakMap,
   eS = (e, t) => {
     var n = g(e, ev),
       r = g(t, eO);
-    return e[F] === t[F] && eI(n, r)
+    return e[V] === t[V] && eI(n, r)
   },
   eT = (e, t) => {
     if (e.length !== t.length) return !1;
@@ -490,22 +490,22 @@ var y = new WeakMap,
       leaf: n,
       parent: r,
       text: i
-    } = e, a = eL(), o = ey.findPath(a, i), s = d.y$.parent(o), l = !0 === n[V];
+    } = e, a = eL(), o = ey.findPath(a, i), s = d.y$.parent(o), l = !0 === n[F];
     return a.isVoid(r) ? c.createElement(ew, {
       length: d.NB.string(r).length
     }) : "" !== n.text || r.children[r.children.length - 1] !== i || a.isInline(r) || "" !== d.ML.string(a, s) ? "" === n.text ? c.createElement(ew, {
       isMarkPlaceholder: l
-    }) : t && "\n" === n.text.slice(-1) ? c.createElement(eR, {
+    }) : t && "\n" === n.text.slice(-1) ? c.createElement(eP, {
       isTrailing: !0,
       text: n.text
-    }) : c.createElement(eR, {
+    }) : c.createElement(eP, {
       text: n.text
     }) : c.createElement(ew, {
       isLineBreak: !0,
       isMarkPlaceholder: l
     })
   },
-  eR = e => {
+  eP = e => {
     var {
       text: t,
       isTrailing: n = !1
@@ -513,11 +513,11 @@ var y = new WeakMap,
     return eN(() => {
       var e = i();
       r.current && r.current.textContent !== e && (r.current.textContent = e)
-    }), c.createElement(eP, {
+    }), c.createElement(eR, {
       ref: r
     }, a)
   },
-  eP = (0, c.memo)((0, c.forwardRef)((e, t) => c.createElement("span", {
+  eR = (0, c.memo)((0, c.forwardRef)((e, t) => c.createElement("span", {
     "data-slate-string": !0,
     ref: t
   }, e.children))),
@@ -568,7 +568,7 @@ var y = new WeakMap,
       parent: i,
       text: r
     });
-    if (t[F]) {
+    if (t[V]) {
       var p = {
         children: t.placeholder,
         attributes: {
@@ -598,7 +598,7 @@ var y = new WeakMap,
       text: r
     })
   },
-  eM = c.memo(ex, (e, t) => t.parent === e.parent && t.isLast === e.isLast && t.renderLeaf === e.renderLeaf && t.renderPlaceholder === e.renderPlaceholder && t.text === e.text && d.xv.equals(t.leaf, e.leaf) && t.leaf[F] === e.leaf[F]),
+  eM = c.memo(ex, (e, t) => t.parent === e.parent && t.isLast === e.isLast && t.renderLeaf === e.renderLeaf && t.renderPlaceholder === e.renderPlaceholder && t.text === e.text && d.xv.equals(t.leaf, e.leaf) && t.leaf[V] === e.leaf[V]),
   ek = e => {
     var {
       attributes: t,
@@ -640,7 +640,7 @@ var y = new WeakMap,
     var {
       decorations: t,
       element: n,
-      renderElement: r = e => c.createElement(eF, Object.assign({}, e)),
+      renderElement: r = e => c.createElement(eV, Object.assign({}, e)),
       renderPlaceholder: a,
       renderLeaf: o,
       selection: s
@@ -693,7 +693,7 @@ var y = new WeakMap,
     })
   },
   eB = c.memo(eG, (e, t) => e.element === t.element && e.renderElement === t.renderElement && e.renderLeaf === t.renderLeaf && e.renderPlaceholder === t.renderPlaceholder && eT(e.decorations, t.decorations) && (e.selection === t.selection || !!e.selection && !!t.selection && d.e6.equals(e.selection, t.selection))),
-  eF = e => {
+  eV = e => {
     var {
       attributes: t,
       children: n,
@@ -705,8 +705,8 @@ var y = new WeakMap,
       }
     }), n)
   },
-  eV = (0, c.createContext)(() => []),
-  eZ = () => (0, c.useContext)(eV),
+  eF = (0, c.createContext)(() => []),
+  eZ = () => (0, c.useContext)(eF),
   eH = (0, c.createContext)(!1),
   eY = () => (0, c.useContext)(eH),
   eW = e => {
@@ -1299,7 +1299,7 @@ function th(e) {
     if (!r && s && (a = s, r = ey.toSlateRange(t, s, {
         exactMatch: !1,
         suppressThrow: !0
-      })), r = null != (P = r) ? P : t.selection) {
+      })), r = null != (R = r) ? R : t.selection) {
       var l = !0;
       if (n.startsWith("delete")) {
         if (d.e6.isExpanded(r)) {
@@ -1358,8 +1358,8 @@ function th(e) {
             anchor: C
           } = r;
           if (l && d.e6.isCollapsed(r)) {
-            var R = d.NB.leaf(t, C.path);
-            if (C.offset < R.text.length) return m(C.path, {
+            var P = d.NB.leaf(t, C.path);
+            if (C.offset < P.text.length) return m(C.path, {
               text: "",
               start: C.offset,
               end: C.offset + 1
@@ -1369,7 +1369,7 @@ function th(e) {
             at: r
           });
         case "deleteContentBackward":
-          var P, w, {
+          var R, w, {
               anchor: D
             } = r,
             L = z(a) ? a.isCollapsed : !!(null != (w = a) && w.collapsed);
@@ -1621,8 +1621,8 @@ function tN(e) {
   return e
 }
 var tC = e => c.createElement(c.Fragment, null, eW(e)),
-  tR = e => {
-    var t, n, r = (0, c.useCallback)(e => c.createElement(tP, Object.assign({}, e)), []),
+  tP = e => {
+    var t, n, r = (0, c.useCallback)(e => c.createElement(tR, Object.assign({}, e)), []),
       {
         autoFocus: a,
         decorate: s = tw,
@@ -1647,7 +1647,7 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
         receivedUserInput: Z
       } = tI(),
       [, Y] = (0, c.useReducer)(e => e + 1, 0);
-    B.set(C, Y), R.set(C, _);
+    B.set(C, Y), P.set(C, _);
     var z = (0, c.useMemo)(() => ({
       isDraggingInternally: !1,
       isUpdatingSelection: !1,
@@ -1667,7 +1667,7 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
             } = e,
             n = ey.toDOMNode(C, C),
             r = e.getSelection();
-          if (t === n ? (z.latestElement = t, P.set(C, !0)) : P.delete(C), !r) return d.YR.deselect(C);
+          if (t === n ? (z.latestElement = t, R.set(C, !0)) : R.delete(C), !r) return d.YR.deselect(C);
           var {
             anchorNode: i,
             focusNode: a
@@ -1880,7 +1880,7 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
     if (f && 1 === C.children.length && 1 === Array.from(d.NB.texts(C)).length && "" === d.NB.string(C) && !L) {
       var en = d.ML.start(C, []);
       et.push({
-        [F]: !0,
+        [V]: !0,
         placeholder: f,
         anchor: en,
         focus: en
@@ -1899,7 +1899,7 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
         z.hasMarkPlaceholder = !0;
         var ed = Object.fromEntries(Object.keys(es).map(e => [e, null]));
         et.push(tN(tN(tN({
-          [V]: !0
+          [F]: !0
         }, ed), er), {}, {
           anchor: ei,
           focus: ei
@@ -1924,7 +1924,7 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
     var e_ = null == (t = S.get(C)) || null == (n = t.getBoundingClientRect()) ? void 0 : n.height;
     return c.createElement(eK.Provider, {
       value: _
-    }, c.createElement(eV.Provider, {
+    }, c.createElement(eF.Provider, {
       value: s
     }, c.createElement(e6, {
       node: j,
@@ -1979,7 +1979,7 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
               var i = t.getSelection();
               null == i || i.removeAllRanges()
             }
-            P.delete(C)
+            R.delete(C)
           }
         }
       }, [_, N.onBlur]),
@@ -2113,7 +2113,7 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
         if (!_ && !z.isUpdatingSelection && ey.hasEditableTarget(C, e.target) && !tL(e, N.onFocus)) {
           var t = ey.toDOMNode(C, C);
           if (z.latestElement = ey.findDocumentOrShadowRoot(C).activeElement, ec && e.target !== t) return void t.focus();
-          P.set(C, !0)
+          R.set(C, !0)
         }
       }, [_, N.onFocus]),
       onKeyDown: (0, c.useCallback)(e => {
@@ -2280,7 +2280,7 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
       selection: C.selection
     })))))
   },
-  tP = e => {
+  tR = e => {
     var {
       attributes: t,
       children: n
@@ -2333,14 +2333,14 @@ function tB(e) {
     onChange: r
   }
 }
-var tF = ["editor", "children", "onChange", "value"],
-  tV = e => {
+var tV = ["editor", "children", "onChange", "value"],
+  tF = e => {
     var {
       editor: t,
       children: n,
       onChange: r,
       value: i
-    } = e, a = g(e, tF), o = (0, c.useRef)(!1), [s, l] = c.useState(() => {
+    } = e, a = g(e, tV), o = (0, c.useRef)(!1), [s, l] = c.useState(() => {
       if (!d.NB.isNodeList(i)) throw Error("[Slate] value is invalid! Expected a list of elements but got: ".concat(d.o4.stringify(i)));
       if (!d.ML.isEditor(t)) throw Error("[Slate] editor is invalid! You passed: ".concat(d.o4.stringify(t)));
       return t.children = i, Object.assign(t, a), {

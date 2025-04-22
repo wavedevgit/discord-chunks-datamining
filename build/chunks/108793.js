@@ -38,10 +38,10 @@ function h(e) {
       return i
     }(e, ["userRef", "usernameSuggestionLoading", "oneClickFlow"]);
   let {
-    user: b,
-    editState: S,
+    user: S,
+    editState: b,
     onClose: x
-  } = y, j = (0, a.ZP)(b.id), N = function(e, t, n) {
+  } = y, j = (0, a.ZP)(S.id), v = function(e, t, n) {
     switch (e) {
       case g.Wq.EDIT_USERNAME:
         return {
@@ -72,7 +72,7 @@ function h(e) {
           header: f.intl.string(f.t["a/zCWl"]), subtitle: f.intl.string(f.t.gGz0sb)
         }
     }
-  }(S, u.ZP.getName(b), x), [v, T] = (0, o.q_F)(() => ({
+  }(b, u.ZP.getName(S), x), [N, T] = (0, o.q_F)(() => ({
     opacity: 0,
     y: 10
   }));
@@ -85,29 +85,29 @@ function h(e) {
         opacity: 0
       }
     })
-  }, [T, S]), (0, r.jsxs)("div", {
+  }, [T, b]), (0, r.jsxs)("div", {
     className: E.displayNameContainer,
     children: [(0, r.jsxs)(s.animated.div, {
       style: {
-        opacity: v.opacity,
-        y: v.y
+        opacity: N.opacity,
+        y: N.y
       },
       children: [(0, r.jsx)(o.X6q, {
         className: E.title,
         color: "header-primary",
         variant: "heading-xl/extrabold",
-        children: N.header
+        children: v.header
       }), (0, r.jsxs)("div", {
         className: E.subtitle,
         children: [(0, r.jsx)(o.X6q, {
           color: "header-secondary",
           variant: "heading-sm/medium",
-          children: N.subtitle
-        }), null != N.link && (0, r.jsx)(o.Text, {
+          children: v.subtitle
+        }), null != v.link && (0, r.jsx)(o.Text, {
           className: E.link,
           color: "header-secondary",
           variant: "text-sm/medium",
-          children: N.link
+          children: v.link
         })]
       })]
     }), (0, r.jsx)(d.Z, (t = function(e) {

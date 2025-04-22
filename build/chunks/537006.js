@@ -116,8 +116,8 @@ let S = function(e) {
     onInteraction: n,
     className: i
   } = e, {
-    profileType: l
-  } = (0, p.z)(), c = l === m.y0.FULL_SIZE;
+    themeType: l
+  } = (0, p.z)(), c = l === m.lY.MODAL;
   return (0, r.jsx)(u.ZP, {
     contentTypes: [o.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS],
     children: e => {

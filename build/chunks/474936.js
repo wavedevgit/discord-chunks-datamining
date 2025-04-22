@@ -19,7 +19,7 @@ n.d(t, {
   EZ: () => ek,
   F_: () => l,
   GP: () => T,
-  HO: () => eR,
+  HO: () => eP,
   Hk: () => K,
   IW: () => v,
   Lw: () => ey,
@@ -31,15 +31,15 @@ n.d(t, {
   QP: () => ew,
   RQ: () => eY,
   RU: () => eo,
-  Rg: () => F,
-  Rr: () => P,
+  Rg: () => V,
+  Rr: () => R,
   Rt: () => $,
   Se: () => e4,
   Si: () => _,
-  T7: () => eF,
+  T7: () => eV,
   TD: () => eG,
   TL: () => W,
-  Tp: () => eV,
+  Tp: () => eF,
   UA: () => D,
   UD: () => E,
   Ue: () => x,
@@ -49,7 +49,7 @@ n.d(t, {
   X2: () => eQ,
   XB: () => ep,
   Xh: () => m,
-  Y1: () => eP,
+  Y1: () => eR,
   YQ: () => p,
   Z1: () => b,
   Zh: () => c,
@@ -74,7 +74,7 @@ n.d(t, {
   h8: () => er,
   hX: () => eq,
   hs: () => ea,
-  i_: () => V,
+  i_: () => F,
   ih: () => eu,
   in: () => eE,
   jy: () => eZ,
@@ -311,8 +311,8 @@ let T = Object.freeze({
   A = new Set(["511651880837840896"]),
   N = 16,
   C = 8,
-  R = 5,
-  P = 30,
+  P = 5,
+  R = 30,
   w = 2,
   D = 3,
   L = 28,
@@ -323,8 +323,8 @@ let T = Object.freeze({
   U = "775514091874680832",
   G = "845031178288889946",
   B = 432e6,
-  F = 14,
-  V = "520373071933079552",
+  V = 14,
+  F = "520373071933079552",
   Z = "902329034132684800",
   H = "983601860436819968",
   Y = "983601860436819969",
@@ -338,7 +338,7 @@ let T = Object.freeze({
   $ = "1268347360493174784",
   ee = "1271484512081285191",
   et = "1161363847311785984",
-  en = [V, Z, H, Y, W, K, z, q, Q, X, J, $, ee, et],
+  en = [F, Z, H, Y, W, K, z, q, Q, X, J, $, ee, et],
   er = [X, J, ee],
   ei = [X, ee],
   ea = "1150904354090532864",
@@ -353,8 +353,8 @@ let T = Object.freeze({
   ep = 8,
   eh = 96,
   em = Object.freeze({
-    [V]: {
-      id: V,
+    [F]: {
+      id: F,
       skus: ["521847234246082599"]
     },
     [Z]: {
@@ -434,7 +434,7 @@ let eb = Object.freeze({
     [i.Eu4.TIER_2]: 36,
     [i.Eu4.TIER_3]: 48
   },
-  eR = Object.freeze({
+  eP = Object.freeze({
     [i.Eu4.NONE]: {
       features: [],
       limits: {
@@ -488,7 +488,7 @@ let eb = Object.freeze({
       }
     }
   }),
-  eP = ["978380692553465866", "1024422698568122368", "511651871736201216", "511651876987469824", "511651880837840896", "642251038925127690", "944037208325619722", "511651885459963904"];
+  eR = ["978380692553465866", "1024422698568122368", "511651871736201216", "511651876987469824", "511651880837840896", "642251038925127690", "944037208325619722", "511651885459963904"];
 var ew = function(e) {
     return e.SOUNDBOARD_PLAY = "soundboard play", e.PROFILE_THEME_COLOR = "profile_theme_color", e.PROFILE_BANNER = "profile_banner", e.ANIMATED_AVATAR = "animated_avatar", e.AVATAR_DECORATION = "avatar_decoration", e.CLIENT_THEME = "client_theme", e.SHARED_CANVAS = "shared_canvas", e.PROFILE_EFFECT = "profile_effect", e.PRESET = "preset", e
   }({}),
@@ -500,7 +500,7 @@ let eL = {
   "511651876987469824": N,
   "511651885459963904": N,
   "944037208325619722": C,
-  "642251038925127690": R
+  "642251038925127690": P
 };
 var ex = function(e) {
   return e.HIGH_STREAMING_QUALITY = "high_streaming_quality", e.MID_STREAMING_QUALITY = "mid_streaming_quality", e
@@ -534,10 +534,10 @@ let eG = Object.freeze({
       fileSize: eO
     }
   });
-var eF = function(e) {
+var eV = function(e) {
   return e.BOOST = "boost", e.DISMISS = "dismiss", e
 }({});
-let eV = new Set(["PL", "TR"]),
+let eF = new Set(["PL", "TR"]),
   eZ = [1, 2, 3],
   eH = [4, 5, 7, 6],
   eY = [12, 5, 7, 6],

@@ -26,8 +26,8 @@ var r = n(200651),
   O = n(592125),
   E = n(934415),
   I = n(572004),
-  P = n(456269),
-  S = n(109590),
+  S = n(456269),
+  P = n(109590),
   Z = n(228392),
   N = n(981631),
   T = n(388032),
@@ -77,13 +77,13 @@ function M(e) {
     width: D
   } = (0, p.ZP)(), [U, B] = i.useState(3), [G, F] = i.useState(!n), [H, V] = (0, h.Z)(!1, 2e3), z = (0, a.e7)([O.Z], () => O.Z.getChannel(t), [t]), {
     firstMessage: W
-  } = (0, S.cl)(z), Y = (0, a.e7)([v.Z], () => v.Z.hasJoined(t)), {
+  } = (0, P.cl)(z), Y = (0, a.e7)([v.Z], () => v.Z.hasJoined(t)), {
     disableReactionUpdates: q,
     disableReactionCreates: K,
     isLurking: X,
     isGuest: Q,
     isPendingMember: J
-  } = (0, b.Z)(z), $ = (0, a.e7)([O.Z], () => O.Z.getChannel(M)), ee = (0, P.Bs)($), et = (0, a.e7)([f.Z], () => f.Z.shouldDisplayPrompt(t) && !0 === n, [t, n]), en = i.useCallback(e => {
+  } = (0, b.Z)(z), $ = (0, a.e7)([O.Z], () => O.Z.getChannel(M)), ee = (0, S.Bs)($), et = (0, a.e7)([f.Z], () => f.Z.shouldDisplayPrompt(t) && !0 === n, [t, n]), en = i.useCallback(e => {
     let t = e[0];
     if (null != t && n) {
       let e = t.intersectionRect,

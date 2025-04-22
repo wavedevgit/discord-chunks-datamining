@@ -25,9 +25,9 @@ var r = "function" == typeof Map && Map.prototype,
   A = Math.floor,
   N = "function" == typeof BigInt ? BigInt.prototype.valueOf : null,
   C = Object.getOwnPropertySymbols,
-  R = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? Symbol.prototype.toString : null,
-  P = "function" == typeof Symbol && "object" == typeof Symbol.iterator,
-  w = "function" == typeof Symbol && Symbol.toStringTag && (typeof Symbol.toStringTag === P ? "object" : "symbol") ? Symbol.toStringTag : null,
+  P = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? Symbol.prototype.toString : null,
+  R = "function" == typeof Symbol && "object" == typeof Symbol.iterator,
+  w = "function" == typeof Symbol && Symbol.toStringTag && (typeof Symbol.toStringTag === R ? "object" : "symbol") ? Symbol.toStringTag : null,
   D = Object.prototype.propertyIsEnumerable,
   L = ("function" == typeof Reflect ? Reflect.getPrototypeOf : Object.getPrototypeOf) || ([].__proto__ === Array.prototype ? function(e) {
     return e.__proto__
@@ -65,48 +65,48 @@ function B(e, t, n) {
   return r + e + r
 }
 
-function F(e) {
+function V(e) {
   return b.call(String(e), /"/g, "&quot;")
 }
 
-function V(e) {
+function F(e) {
   return !w || !("object" == typeof e && (w in e || void 0 !== e[w]))
 }
 
 function Z(e) {
-  return "[object Array]" === ee(e) && V(e)
+  return "[object Array]" === ee(e) && F(e)
 }
 
 function H(e) {
-  return "[object Date]" === ee(e) && V(e)
+  return "[object Date]" === ee(e) && F(e)
 }
 
 function Y(e) {
-  return "[object RegExp]" === ee(e) && V(e)
+  return "[object RegExp]" === ee(e) && F(e)
 }
 
 function W(e) {
-  return "[object Error]" === ee(e) && V(e)
+  return "[object Error]" === ee(e) && F(e)
 }
 
 function K(e) {
-  return "[object String]" === ee(e) && V(e)
+  return "[object String]" === ee(e) && F(e)
 }
 
 function z(e) {
-  return "[object Number]" === ee(e) && V(e)
+  return "[object Number]" === ee(e) && F(e)
 }
 
 function q(e) {
-  return "[object Boolean]" === ee(e) && V(e)
+  return "[object Boolean]" === ee(e) && F(e)
 }
 
 function Q(e) {
-  if (P) return e && "object" == typeof e && e instanceof Symbol;
+  if (R) return e && "object" == typeof e && e instanceof Symbol;
   if ("symbol" == typeof e) return !0;
-  if (!e || "object" != typeof e || !R) return !1;
+  if (!e || "object" != typeof e || !P) return !1;
   try {
-    return R.call(e), !0
+    return P.call(e), !0
   } catch (e) {}
   return !1
 }
@@ -161,11 +161,11 @@ e.exports = function e(t, r, i, s) {
     return "[Function" + (O ? ": " + O : " (anonymous)") + "]" + (A.length > 0 ? " { " + S.call(A, ", ") + " }" : "")
   }
   if (Q(t)) {
-    var C = P ? b.call(String(t), /^(Symbol\(.*\))_[^)]*$/, "$1") : R.call(t);
-    return "object" != typeof t || P ? C : ed(C)
+    var C = R ? b.call(String(t), /^(Symbol\(.*\))_[^)]*$/, "$1") : P.call(t);
+    return "object" != typeof t || R ? C : ed(C)
   }
   if (el(t)) {
-    for (var k = "<" + v.call(String(t.nodeName)), G = t.attributes || [], V = 0; V < G.length; V++) k += " " + G[V].name + "=" + B(F(G[V].value), "double", l);
+    for (var k = "<" + v.call(String(t.nodeName)), G = t.attributes || [], F = 0; F < G.length; F++) k += " " + G[F].name + "=" + B(V(G[F].value), "double", l);
     return k += ">", t.childNodes && t.childNodes.length && (k += "..."), k += "</" + v.call(String(t.nodeName)) + ">"
   }
   if (Z(t)) {
@@ -374,13 +374,13 @@ function eg(e, t) {
     for (var a = 0; a < e.length; a++) i[a] = $(e, a) ? t(e[a], e) : ""
   }
   var o = "function" == typeof C ? C(e) : [];
-  if (P) {
+  if (R) {
     n = {};
     for (var s = 0; s < o.length; s++) n["$" + o[s]] = o[s]
   }
   for (var l in e)
     if ($(e, l) && (!r || String(Number(l)) !== l || !(l < e.length)))
-      if (P && n["$" + l] instanceof Symbol) continue;
+      if (R && n["$" + l] instanceof Symbol) continue;
       else O.call(/[^\w$]/, l) ? i.push(t(l, e) + ": " + t(e[l], e)) : i.push(l + ": " + t(e[l], e));
   if ("function" == typeof C)
     for (var c = 0; c < o.length; c++) D.call(e, o[c]) && i.push("[" + t(o[c]) + "]: " + t(e[o[c]], e));

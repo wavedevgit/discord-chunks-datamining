@@ -63,8 +63,8 @@ let S = 200,
   A = +_.Z.Millis.MINUTE,
   N = {},
   C = "content",
-  R = "file://",
-  P = !1,
+  P = "file://",
+  R = !1,
   w = 0,
   D = 0,
   L = 0,
@@ -74,7 +74,7 @@ let S = 200,
   j = !1;
 
 function U() {
-  P = !1
+  R = !1
 }
 
 function G(e, t) {
@@ -118,7 +118,7 @@ function B(e) {
                 } = n,
                 o = i,
                 s = l.Z.fileManager.join(e, r);
-              (0, h.isMac)() && !s.startsWith(R) && (s = "".concat(R).concat(s)), t = null != a ? l.Z.fileManager.join(e, a) : l.Z.fileManager.dirname(s), E[o] = I(v({}, n), {
+              (0, h.isMac)() && !s.startsWith(P) && (s = "".concat(P).concat(s)), t = null != a ? l.Z.fileManager.join(e, a) : l.Z.fileManager.dirname(s), E[o] = I(v({}, n), {
                 id: o,
                 fullExecutablePath: s,
                 fullWorkingDir: t
@@ -192,11 +192,11 @@ function B(e) {
   throw Error("Invalid Dispatch State. state=".concat(e.state.type))
 }
 
-function F(e) {
+function V(e) {
   return e.type === b.vxO.INSTALLING || e.type === b.vxO.UPDATING || e.type === b.vxO.REPAIRING ? e.networkProgress : null
 }
 
-function V(e) {
+function F(e) {
   return e.type === b.vxO.INSTALLING || e.type === b.vxO.UPDATING || e.type === b.vxO.REPAIRING ? e.diskProgress : null
 }
 
@@ -245,7 +245,7 @@ function X(e) {
   let {
     state: t
   } = e;
-  P = !0;
+  R = !0;
   let n = {},
     r = t.applications,
     i = null != t.currentTask ? t.currentTask.branchId : null,
@@ -254,9 +254,9 @@ function X(e) {
     for (let t in r[e]) {
       let o = (0, p.Tu)(e, t);
       if (n[o] = B(r[e][t]), null != N[o]) {
-        let e = Q(n, o, F);
+        let e = Q(n, o, V);
         e > 0 && K(w += e);
-        let r = Q(n, o, V);
+        let r = Q(n, o, F);
         r > 0 && q(D += r);
         let s = Q(n, o, Z);
         if (s > 0 && z(L += s), i === t) {
@@ -345,7 +345,7 @@ class J extends(r = o.ZP.Store) {
   }
   whenInitialized(e) {
     this.addConditionalChangeListener(() => {
-      if (P) return setImmediate(e), !1
+      if (R) return setImmediate(e), !1
     })
   }
 }

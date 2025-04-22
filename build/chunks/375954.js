@@ -28,8 +28,8 @@ var r, i = n(392711),
   A = n(430824),
   N = n(496675),
   C = n(699516),
-  R = n(944486),
-  P = n(914010),
+  P = n(944486),
+  R = n(914010),
   w = n(594174),
   D = n(981631);
 
@@ -85,14 +85,14 @@ function B(e) {
   i = i.truncate(n, r), c.Z.commit(i)
 }
 
-function F(e) {
+function V(e) {
   let {
     channelId: t
   } = e;
   M.log("Clearing messages for ".concat(t)), c.Z.clear(t), x.clear()
 }
 
-function V(e) {
+function F(e) {
   let {
     channelId: t,
     jump: n,
@@ -373,7 +373,7 @@ function ep(e) {
 }
 class eh extends(r = o.ZP.Store) {
   initialize() {
-    this.waitFor(w.default, O.Z, I.Z, T.ZP, E.default, R.Z, P.Z, A.Z, C.Z, S.ZP), this.syncWith([p.Z], () => {})
+    this.waitFor(w.default, O.Z, I.Z, T.ZP, E.default, P.Z, R.Z, A.Z, C.Z, S.ZP), this.syncWith([p.Z], () => {})
   }
   getMessages(e) {
     if (p.Z.hasViewingRoles()) {
@@ -444,11 +444,11 @@ let em = new eh(s.Z, {
   LOAD_MESSAGES: G,
   LOAD_MESSAGES_SUCCESS: Z,
   LOAD_MESSAGES_FAILURE: H,
-  LOAD_MESSAGES_SUCCESS_CACHED: V,
+  LOAD_MESSAGES_SUCCESS_CACHED: F,
   LOCAL_MESSAGES_LOADED: e_,
   LOAD_MESSAGE_INTERACTION_DATA_SUCCESS: $,
   TRUNCATE_MESSAGES: B,
-  CLEAR_MESSAGES: F,
+  CLEAR_MESSAGES: V,
   MESSAGE_CREATE: K,
   MESSAGE_SEND_FAILED: z,
   MESSAGE_SEND_FAILED_AUTOMOD: el,

@@ -63,10 +63,10 @@ let v = 2,
   A = null,
   N = !1,
   C = new Map,
-  R = (e, t) => {
+  P = (e, t) => {
     C = new Map(C.set(e, t))
   },
-  P = p.Z.Millis.HOUR,
+  R = p.Z.Millis.HOUR,
   w = async () => {
     if (0 !== v) return;
     let e = s.Z.database();
@@ -87,7 +87,7 @@ function D(e) {
     if (f.Z.isMember(e) && !C.has(e)) {
       let t = _.Z.getGuild(e);
       for (let e of n) L(e, !0, t);
-      R(e, n)
+      P(e, n)
     }
 }
 let L = function(e) {
@@ -164,7 +164,7 @@ let L = function(e) {
 
 function G(e) {
   let t = _.Z.getGuild(e.id);
-  null != t && null != e.stickers && (e.stickers.forEach(e => L(e, !0, t)), R(t.id, e.stickers))
+  null != t && null != e.stickers && (e.stickers.forEach(e => L(e, !0, t)), P(t.id, e.stickers))
 }
 
 function B(e) {
@@ -174,7 +174,7 @@ function B(e) {
   d.Z.isLurking(t.id) || (G(t), 1 === v && null == t.stickers && null != t.stickerUpdates && (v = 0))
 }
 
-function F(e) {
+function V(e) {
   var t;
   let {
     guild: n
@@ -183,7 +183,7 @@ function F(e) {
     null != S && S.delete(e.id), I.delete(e.id)
   }), C.delete(n.id), C = new Map(C)
 }
-let V = () => {
+let F = () => {
     v = 0, T = [], I.clear(), O.clear(), S = null, C.clear(), C = new Map(C), N = !1, A = null
   },
   Z = () => {
@@ -207,7 +207,7 @@ let V = () => {
       guildId: t,
       stickers: n
     } = e;
-    n.forEach(e => L(e)), R(t, n)
+    n.forEach(e => L(e)), P(t, n)
   },
   K = e => {
     var t, n;
@@ -215,7 +215,7 @@ let V = () => {
       guildId: r,
       sticker: i
     } = e, a = null != (t = C.get(r)) ? t : [];
-    R(r, [...null != (n = a.filter(e => e.id !== i.id)) ? n : [], i]), L(i)
+    P(r, [...null != (n = a.filter(e => e.id !== i.id)) ? n : [], i]), L(i)
   },
   z = e => {
     let {
@@ -238,7 +238,7 @@ let V = () => {
       I.delete(e.id), null != S && S.delete(e.id)
     });
     let a = r.map(e => i(e));
-    a.forEach(e => L(e)), R(n, a)
+    a.forEach(e => L(e)), P(n, a)
   };
 class Q extends(r = a.ZP.Store) {
   initialize() {
@@ -254,7 +254,7 @@ class Q extends(r = a.ZP.Store) {
     return w(), null == S && (S = new Map, k()), S
   }
   get hasLoadedStickerPacks() {
-    return null != A && A + P > Date.now()
+    return null != A && A + R > Date.now()
   }
   get isFetchingStickerPacks() {
     return N
@@ -289,8 +289,8 @@ let X = new Q(o.Z, {
   BACKGROUND_SYNC: U,
   CONNECTION_OPEN: j,
   GUILD_CREATE: B,
-  GUILD_DELETE: F,
-  LOGOUT: V,
+  GUILD_DELETE: V,
+  LOGOUT: F,
   STICKER_PACKS_FETCH_START: Z,
   STICKER_PACKS_FETCH_SUCCESS: H,
   STICKER_PACK_FETCH_SUCCESS: Y,

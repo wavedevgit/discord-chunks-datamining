@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  x: () => V
+  x: () => F
 });
 var r = n(771356),
   i = n(640490),
@@ -29,8 +29,8 @@ var r = n(771356),
   A = n(722565),
   N = n(711814),
   C = n(149334),
-  R = n(409863),
-  P = n(357196),
+  P = n(409863),
+  R = n(357196),
   w = n(658250),
   D = n(691545),
   L = n(58587),
@@ -41,8 +41,8 @@ var r = n(771356),
   U = n(263984),
   G = n(591501),
   B = n(595867),
-  F = n(345272);
-let V = {
+  V = n(345272);
+let F = {
   skye: {
     name: A.default.tzvUKy,
     iconURL: j.Z,
@@ -101,7 +101,7 @@ let V = {
   },
   ghost: {
     name: A.default.lFIyMz,
-    iconURL: P.Z,
+    iconURL: R.Z,
     splashGradient: "radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(84.38% 468.75% at 15.63% 100%, rgba(110, 73, 156, 0.50) 0%, rgba(110, 73, 156, 0.00) 100%)",
     baseColor: "#1D142A",
     styleKey: "ghost",
@@ -133,7 +133,7 @@ let V = {
   },
   villain: {
     name: A.default.kHmvdn,
-    iconURL: F.Z,
+    iconURL: V.Z,
     splashGradient: "radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(100% 555.56% at 0% 100%, rgba(219, 2, 34, 0.50) 0%, rgba(219, 2, 34, 0.00) 100%)",
     baseColor: "#3D0109",
     styleKey: "villain",
@@ -157,11 +157,11 @@ let V = {
   },
   deepfried: {
     name: A.default.qRFFLC,
-    iconURL: R.Z,
+    iconURL: P.Z,
     splashGradient: "radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(84.38% 468.75% at 15.63% 100%, rgba(253, 177, 45, 0.50) 0%, rgba(253, 177, 45, 0.00) 100%)",
     baseColor: "#3D2701",
     styleKey: "deepfried",
     previewSoundURLs: [s.Z, l.Z, c.Z]
   }
 };
-V.rachel = V.skye, V.alex = V.quinn, V.elliot = V.axel, V.sebastian = V.sebastien, V.justin = V.justus, V.taylor = V.harper, V.monique = V.solara
+F.rachel = F.skye, F.alex = F.quinn, F.elliot = F.axel, F.sebastian = F.sebastien, F.justin = F.justus, F.taylor = F.harper, F.monique = F.solara

@@ -26,8 +26,8 @@ var r = n(200651),
   O = n(611064),
   E = n(677432),
   I = n(178762),
-  P = n(868671),
-  S = n(82295),
+  S = n(868671),
+  P = n(82295),
   Z = n(91218),
   N = n(313201),
   T = n(540059),
@@ -137,7 +137,7 @@ let er = K.ZP.getEnableHardwareAcceleration(),
       premiumSince: j,
       nameplate: O,
       shouldShowPopoutOnHover: E
-    } = e, I = en(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate", "shouldShowPopoutOnHover"]), [P, S] = i.useState(!1), Z = null != j ? new Date(j) : null, N = i.useCallback(e => {
+    } = e, I = en(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate", "shouldShowPopoutOnHover"]), [S, P] = i.useState(!1), Z = null != j ? new Date(j) : null, N = i.useCallback(e => {
       (0, m.jW)(e, async () => {
         let {
           default: e
@@ -178,9 +178,9 @@ let er = K.ZP.getEnableHardwareAcceleration(),
       spacing: 16,
       onShiftClick: T,
       shouldShowOnHover: E,
-      shouldShow: P,
+      shouldShow: S,
       onRequestClose: () => {
-        S(!1)
+        P(!1)
       },
       children: e => {
         let {
@@ -207,14 +207,14 @@ let er = K.ZP.getEnableHardwareAcceleration(),
           guildId: C,
           isMobile: v,
           onClickPremiumGuildIcon: w,
-          selected: P,
+          selected: S,
           itemProps: I,
           nameplate: O,
           onClick: e => {
-            e.shiftKey ? null == T || T() : S(e => !e)
+            e.shiftKey ? null == T || T() : P(e => !e)
           },
           onMouseDown: e => {
-            P ? e.stopPropagation() : null == i || i(e)
+            S ? e.stopPropagation() : null == i || i(e)
           }
         }, a))
       }
@@ -260,7 +260,7 @@ let er = K.ZP.getEnableHardwareAcceleration(),
       children: (0, r.jsx)("div", {
         className: J.memberGroupsPlaceholder
       })
-    }) : (0, r.jsxs)(S.Z, {
+    }) : (0, r.jsxs)(P.Z, {
       className: J.membersGroup,
       children: [(0, r.jsx)(f.nn4, {
         children: Q.intl.format(Q.t.UaqbkZ, {
@@ -480,7 +480,7 @@ class eu extends i.Component {
       } = e.getScrollerState();
       this.props.updateMaxContentFeedRowSeen(n + t - 40)
     }, 50)), $(this, "getContentFeedGroup", () => {
-      let e = this.props.groups[P.T];
+      let e = this.props.groups[S.T];
       if ((0, O.R)(e)) return e
     }), $(this, "hasContentFeed", () => null != this.getContentFeedGroup()), $(this, "getRowHeightComputer", () => {
       let e = this.getContentFeedGroup(),
@@ -492,7 +492,7 @@ class eu extends i.Component {
           rows: n
         } = this.props, r = e.index;
         return function(e, i) {
-          if (e === P.T) {
+          if (e === S.T) {
             let e = n[r + 1 + i];
             return (0, I.iZ)(e)
           }
@@ -527,7 +527,7 @@ class eu extends i.Component {
           rowsVisible: n
         } = this.getDimensions();
       if (void 0 === n || 0 === n || null == t) return;
-      this.hasContentFeed() && (t = t.filter(e => e.section !== P.T));
+      this.hasContentFeed() && (t = t.filter(e => e.section !== S.T));
       let r = t.map(e => this.getRowProps(e)).slice(0, n + 1).filter(Y.lm);
       if (0 === r.length) return;
       let i = r.reduce((e, t) => {
@@ -557,7 +557,7 @@ function ed(e) {
     groups: p,
     version: m,
     updateMaxRowSeen: g
-  } = (0, P.H)({
+  } = (0, S.H)({
     memberStoreProps: s,
     channelId: t.id,
     guildId: t.guild_id
@@ -596,7 +596,7 @@ function ed(e) {
         requestAnimationFrame(() => setTimeout(e, 100))
       }
     })
-  }), []), S = (0, u.ZP)({
+  }), []), P = (0, u.ZP)({
     id: "members-".concat(t.id),
     setFocus: O,
     isEnabled: a,
@@ -608,7 +608,7 @@ function ed(e) {
     children: (0, r.jsx)("div", {
       className: o()(J.container, n),
       children: (0, r.jsx)(c.bG, {
-        navigator: S,
+        navigator: P,
         children: (0, r.jsx)(eu, et(ee({}, e, s), {
           version: m,
           groups: p,

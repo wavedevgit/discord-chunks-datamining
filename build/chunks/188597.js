@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   $s: () => C,
-  A0: () => R,
+  A0: () => P,
   Sg: () => T,
   ow: () => y,
   rQ: () => A,
@@ -161,7 +161,7 @@ function C(e) {
   return !0
 }
 
-function R(e, t) {
+function P(e, t) {
   switch (e) {
     case l.Z.ReasonCodes.TIMEOUT:
       let n = s.Z.getApplication(t);

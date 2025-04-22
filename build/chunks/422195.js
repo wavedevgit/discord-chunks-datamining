@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => F
+  Z: () => V
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -60,19 +60,19 @@ function C(e, t) {
   return n
 }
 
-function R(e, t) {
+function P(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let P = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
+let R = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
   w = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_ICON_SIZE),
   D = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_ICON_MARGIN),
   L = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_UNICODE_ICON_SIZE),
   x = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_CATEGORY_SEPARATOR_SIZE),
   M = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_CATEGORY_SEPARATOR_MARGIN_VERTICAL),
-  k = [P, P, P, P],
-  j = (w + D) * 2 + P,
+  k = [R, R, R, R],
+  j = (w + D) * 2 + R,
   U = x + 2 * M,
   G = 7,
   B = e => {
@@ -87,7 +87,7 @@ let P = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
       let f, g = (null == (c = n[0]) ? void 0 : c.type) === b.Ih.FAVORITE,
         A = +!!g,
         C = (null == (d = n[A]) ? void 0 : d.type) === b.Ih.RECENT,
-        P = n.length > 0,
+        R = n.length > 0,
         D = n.length;
       if (0 === a && g) return (0, r.jsx)("div", {
         role: "listitem",
@@ -96,7 +96,7 @@ let P = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
         children: (0, r.jsx)(l.P3F, {
           "aria-label": S.intl.string(S.t.y3LQCA),
           className: o()(T.stickerCategory, T.stickerCategoryGeneric, {
-            [T.stickerCategoryGenericDisabled]: P && !g,
+            [T.stickerCategoryGenericDisabled]: R && !g,
             [T.stickerCategoryGenericSelected]: !m && g && 0 === t
           }),
           onClick: s,
@@ -116,7 +116,7 @@ let P = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
         children: (0, r.jsx)(l.P3F, {
           "aria-label": S.intl.string(S.t.RxAmVF),
           className: o()(T.stickerCategory, T.stickerCategoryGeneric, {
-            [T.stickerCategoryGenericDisabled]: P && !C,
+            [T.stickerCategoryGenericDisabled]: R && !C,
             [T.stickerCategoryGenericSelected]: !m && C && t === A
           }),
           onClick: s,
@@ -159,7 +159,7 @@ let P = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
             role: "listitem",
             "aria-setsize": D,
             "aria-posinset": a,
-            children: (0, r.jsx)(l.P3F, R(N({}, e), {
+            children: (0, r.jsx)(l.P3F, P(N({}, e), {
               "aria-label": G,
               className: o()(T.stickerCategory, {
                 [T.firstPartyCategory]: U,
@@ -196,7 +196,7 @@ let P = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
       }, [s, a, d])
     }
   },
-  F = e => {
+  V = e => {
     let {
       stickersListRef: t,
       channel: n

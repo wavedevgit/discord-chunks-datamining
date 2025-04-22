@@ -26,8 +26,8 @@ var r = n(200651),
   O = n(481932),
   E = n(272510),
   I = n(4517),
-  P = n(171368),
-  S = n(854935),
+  S = n(171368),
+  P = n(854935),
   Z = n(397110),
   N = n(228168),
   T = n(388032),
@@ -59,7 +59,7 @@ function R(e) {
     channel: R
   } = e, k = __OVERLAY__, M = (0, g.ZP)(t.id), L = (0, c.ZP)(), D = i.useRef(Date.now()), {
     analyticsLocations: U
-  } = (0, d.ZP)(u.Z.PROFILE_PANEL), B = (0, f.ZB)({
+  } = (0, d.ZP)(u.Z.USER_PROFILE_SIDEBAR), B = (0, f.ZB)({
     layout: "SIDEBAR",
     userId: t.id,
     channelId: R.id
@@ -69,7 +69,7 @@ function R(e) {
       duration: 150
     }
   }), z = e => {
-    (0, P.openUserProfileModal)(w({
+    (0, S.openUserProfileModal)(w({
       sourceAnalyticsLocations: U,
       hideRestrictedProfile: !0
     }, B, e))
@@ -88,17 +88,17 @@ function R(e) {
           ref: G,
           user: t,
           displayProfile: M,
-          profileType: N.y0.PANEL,
+          themeType: N.lY.SIDEBAR,
           themeOverride: L,
           children: [null != H.interactionType && (0, r.jsx)(l.animated.div, {
             style: V,
             className: A.backdrop
           }), (0, r.jsxs)(o.u2, {
             children: [(0, r.jsxs)(j.Z, {
-              profileType: N.y0.PANEL,
+              themeType: N.lY.SIDEBAR,
               children: [(0, r.jsx)(O.Z, {
                 user: t,
-                profileType: N.y0.PANEL,
+                themeType: N.lY.SIDEBAR,
                 shouldShowTooltip: null === H.interactionType
               }), t.bot ? (0, r.jsx)(v.Z, {
                 user: t
@@ -110,7 +110,7 @@ function R(e) {
               children: [(0, r.jsx)(y.Z, {
                 user: t,
                 displayProfile: M,
-                profileType: N.y0.PANEL,
+                themeType: N.lY.SIDEBAR,
                 animateOnHover: !F,
                 className: A.banner
               }), (0, r.jsx)(C.Z, {
@@ -121,17 +121,17 @@ function R(e) {
                 user: t,
                 displayProfile: M,
                 channelId: R.id,
-                profileType: N.y0.PANEL,
+                themeType: N.lY.SIDEBAR,
                 onOpenProfile: k ? void 0 : z
               }), (0, r.jsx)(I.Z, {
                 location: "UserProfileSiebar",
                 user: t,
                 channelId: R.id,
-                profileType: N.y0.PANEL
+                themeType: N.lY.SIDEBAR
               }), t.isClyde() && (0, r.jsx)(p.Z, {
                 className: A.headerTag
               })]
-            }), (0, r.jsx)(S.Z, {
+            }), (0, r.jsx)(P.Z, {
               user: t,
               currentUser: n,
               displayProfile: M,

@@ -75,14 +75,14 @@ function N(e) {
     user: t,
     guildId: n,
     channelId: a,
-    profileType: s,
+    themeType: s,
     sourceType: f,
     sourceDetails: _,
     setPopoutRef: E,
     modalKey: N,
     onAction: C,
-    onClose: R,
-    entry: P
+    onClose: P,
+    entry: R
   } = e, {
     resetInteraction: w,
     setInteractionToast: D
@@ -94,7 +94,7 @@ function N(e) {
   i.useEffect(() => {
     null == E || E(null == G ? void 0 : G.current)
   }, [G, E]);
-  let F = async e => {
+  let V = async e => {
     if (null == e) return;
     f === y.n_.AVATAR ? C({
       action: "SEND_REPLY_AVATAR"
@@ -117,14 +117,14 @@ function N(e) {
         location: "UserProfileReplyPopout",
         openChannel: !1,
         whenReady: !1,
-        entry: P
+        entry: R
       })
     } catch (e) {}
     D(y.P.REPLY)
-  }, V = {
-    [I.biteSize]: s === y.y0.BITE_SIZE,
-    [I.panel]: s === y.y0.PANEL,
-    [I.fullSize]: s === y.y0.FULL_SIZE
+  }, F = {
+    [I.biteSize]: s === y.lY.POPOUT,
+    [I.panel]: s === y.lY.SIDEBAR,
+    [I.fullSize]: s === y.lY.MODAL
   }, Z = {
     [I.status]: f === y.n_.STATUS,
     [I.avatar]: f === y.n_.AVATAR,
@@ -134,7 +134,7 @@ function N(e) {
     ref: G,
     onKeyDown: B,
     children: (0, r.jsx)("div", {
-      className: o()(I.container, V, Z, {
+      className: o()(I.container, F, Z, {
         [I.customProfileTheme]: null != L
       }),
       children: (0, r.jsx)(d.Z, {
@@ -166,7 +166,7 @@ function N(e) {
             shouldRefocus: !1
           };
           try {
-            return await F(n), w(), null == R || R(), {
+            return await V(n), w(), null == P || P(), {
               shouldClear: !0,
               shouldRefocus: !1
             }

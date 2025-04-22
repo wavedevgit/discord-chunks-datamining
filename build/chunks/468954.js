@@ -71,8 +71,8 @@ function p(e) {
     renderCategoryList: A,
     renderHeaderAccessories: N,
     rowHeight: C,
-    sectionHeaderHeight: R,
-    sectionFooterHeight: P,
+    sectionHeaderHeight: P,
+    sectionFooterHeight: R,
     itemNodeWidth: w,
     listPaddingRight: D,
     itemNodeMargin: L,
@@ -82,7 +82,7 @@ function p(e) {
     renderHeader: j,
     renderUpsell: U,
     setShowUpsell: G
-  } = e, B = i.useRef(null), F = i.useRef(null), V = i.useRef(null), Z = 0 === t.length, H = (0, a.Iu)(e => e.searchQuery), Y = f.useStore(e => e.inspectedExpressionPosition), W = (0, o.ep)({
+  } = e, B = i.useRef(null), V = i.useRef(null), F = i.useRef(null), Z = 0 === t.length, H = (0, a.Iu)(e => e.searchQuery), Y = f.useStore(e => e.inspectedExpressionPosition), W = (0, o.ep)({
     gridWrapperRef: B,
     containerWidth: u,
     showingEmptyState: Z
@@ -107,7 +107,7 @@ function p(e) {
     isUsingKeyboardNavigation: en
   } = (0, o.t$)({
     columnCounts: Q,
-    expressionsListRef: F,
+    expressionsListRef: V,
     expressionsGrid: K,
     onSelectItem: p,
     store: f,
@@ -129,15 +129,15 @@ function p(e) {
     f.setBottomPosition(null != (t = null == (e = B.current) ? void 0 : e.getBoundingClientRect().bottom) ? t : null)
   }), i.useEffect(() => f.resetStoreState, [f.resetStoreState]), i.useLayoutEffect(() => {
     var e;
-    null == (e = V.current) || e.focus()
+    null == (e = F.current) || e.focus()
   }, []);
   let el = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.Z, {
-      ref: V,
+      ref: F,
       store: f,
       hasSendableExpressions: !0,
       onKeyDown: et,
-      expressionsListRef: F,
+      expressionsListRef: V,
       gridNavigatorId: M,
       defaultSearchPlaceholder: g,
       emptySearchPlaceholder: E
@@ -148,7 +148,7 @@ function p(e) {
       className: c.header,
       children: [" ", el, " "]
     }), Z && null != b ? b(c.emptyState) : (0, r.jsxs)(r.Fragment, {
-      children: [A(F), null != k && (0, r.jsx)("div", {
+      children: [A(V), null != k && (0, r.jsx)("div", {
         className: c.gridNoticeWrapper,
         children: k
       }), (0, r.jsx)("div", _(d({
@@ -158,7 +158,7 @@ function p(e) {
       }, ee), {
         children: null != W ? (0, r.jsx)(s.Z, {
           categories: t,
-          ref: F,
+          ref: V,
           store: f,
           hasSearchResults: m,
           listPadding: x,
@@ -171,8 +171,8 @@ function p(e) {
           rowCount: z,
           rowCountBySection: q,
           rowHeight: C,
-          sectionHeaderHeight: R,
-          sectionFooterHeight: P,
+          sectionHeaderHeight: P,
+          sectionFooterHeight: R,
           renderUpsell: U,
           setShowUpsell: G
         }) : null

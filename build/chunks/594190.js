@@ -32,8 +32,8 @@ var i, a = n(392711),
   A = n(626135),
   N = n(70956),
   C = n(877481),
-  R = n(823379),
-  P = n(358085),
+  P = n(823379),
+  R = n(358085),
   w = n(998502),
   D = n(145597),
   L = n(370862),
@@ -79,8 +79,8 @@ function G(e, t) {
   }), e
 }
 let B = new m.Z("RunningGameStore"),
-  F = "RunningGameStore",
-  V = !1,
+  V = "RunningGameStore",
+  F = !1,
   Z = [],
   H = [{
     executables: [{
@@ -289,8 +289,8 @@ function eE(e) {
   }
   return {
     source: L.d.DEFAULT,
-    enabledOOP: V || o,
-    enabledLegacy: V,
+    enabledOOP: F || o,
+    enabledLegacy: F,
     overlayMethod: o ? f.gl.OutOfProcess : f.gl.Disabled
   }
 }
@@ -313,7 +313,7 @@ function ev(e) {
 }
 
 function eO() {
-  u.K.set(F, et)
+  u.K.set(V, et)
 }
 
 function eI(e) {
@@ -360,7 +360,7 @@ function eT() {
 }
 
 function eA() {
-  if (!__OVERLAY__ && P.isPlatformEmbedded) {
+  if (!__OVERLAY__ && R.isPlatformEmbedded) {
     let e = [...z, ...o().values(et.gameOverrides)];
     w.ZP.setGameCandidateOverrides(e)
   }
@@ -387,15 +387,15 @@ function eC(e) {
       if (e.hidden) return;
       et.gamesSeen.unshift(e_(e))
     }
-  }), et.gamesSeen.sort((e, t) => t.lastFocused - e.lastFocused), eO(), C.Z.setRecentGames(eR().map(e => eI(e))))
+  }), et.gamesSeen.sort((e, t) => t.lastFocused - e.lastFocused), eO(), C.Z.setRecentGames(eP().map(e => eI(e))))
 }
 
-function eR() {
+function eP() {
   let e = o().values(et.gameOverrides);
   return et.gamesSeen.filter(e => void 0 === et.gameOverrides[eg(e)]).concat(e)
 }
 
-function eP(e, t) {
+function eR(e, t) {
   if (void 0 === t) {
     let t = w.ZP.getDiscordUtils();
     if (null != t && null != t.getWindowHandleFromPid) {
@@ -462,7 +462,7 @@ function eB() {
   eu = null, ed = null, el.clear()
 }
 
-function eF(e) {
+function eV(e) {
   let t = e.processes.map(e => {
     var t;
     return {
@@ -482,7 +482,7 @@ function eF(e) {
   })
 }
 
-function eV(e) {
+function eF(e) {
   let {
     game: t,
     newLegacyOverlayEnabledValue: n,
@@ -526,7 +526,7 @@ function eY(e) {
 
 function eW(e) {
   var t;
-  if (__OVERLAY__ || !P.isPlatformEmbedded) return;
+  if (__OVERLAY__ || !R.isPlatformEmbedded) return;
   let n = w.ZP.getDiscordUtils().notifyGameLaunched;
   if (null == n) return;
   let r = I.Z.getDetectableGame(e.applicationId);
@@ -535,7 +535,7 @@ function eW(e) {
 
 function eK() {
   g.Z.hasLoadedExperiments && Z.length > 0 && (eC(Z), Z = [])
-}!__OVERLAY__ && ((0, P.isDesktop)() || M.iP) && (en = function() {
+}!__OVERLAY__ && ((0, R.isDesktop)() || M.iP) && (en = function() {
   let e = [],
     t = new Set;
   r = {};
@@ -568,7 +568,7 @@ function eK() {
   }), e = e.filter(e => null != e.executables && e.executables.length > 0), w.ZP.setObservedGamesCallback(e, e => {
     let n = [],
       i = {};
-    e = e.filter(e => (e.distributor = eN(e), e.isLauncher = e.isLauncher || t.has(e.exeName), e.isLauncher && null != e.id && (i[e.id] = e), e.windowHandle = eP(e.pid, e.windowHandle), null == H.find(t => {
+    e = e.filter(e => (e.distributor = eN(e), e.isLauncher = e.isLauncher || t.has(e.exeName), e.isLauncher && null != e.id && (i[e.id] = e), e.windowHandle = eR(e.pid, e.windowHandle), null == H.find(t => {
       let {
         name: n
       } = t;
@@ -584,7 +584,7 @@ function eK() {
 class ez extends(i = c.ZP.Store) {
   initialize() {
     var e, t, n, r, i;
-    let a = null != (e = u.K.get(F)) ? e : {
+    let a = null != (e = u.K.get(V)) ? e : {
       gamesSeen: [],
       gameOverrides: {},
       enableOverlay: {},
@@ -618,7 +618,7 @@ class ez extends(i = c.ZP.Store) {
     return e
   }
   getRunningVerifiedApplicationIds() {
-    return this.getRunningGames().map(e => I.Z.getGameByName(e.name)).filter(R.lm).map(e => e.id)
+    return this.getRunningGames().map(e => I.Z.getGameByName(e.name)).filter(P.lm).map(e => e.id)
   }
   getGameForPID(e) {
     var t;
@@ -643,7 +643,7 @@ class ez extends(i = c.ZP.Store) {
   }
   getGamesSeen(e) {
     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-      n = eR();
+      n = eP();
     if (e) {
       let e = this.getVisibleGame();
       if (null != e) {
@@ -699,7 +699,7 @@ let eq = new ez(d.Z, {
     PERMISSION_CLEAR_ELEVATED_PROCESS: ek,
     PERMISSION_CONTINUE_NONELEVATED_PROCESS: eM,
     RUNNING_GAME_ADD_OVERRIDE: ej,
-    RUNNING_GAME_TOGGLE_OVERLAY: eV,
+    RUNNING_GAME_TOGGLE_OVERLAY: eF,
     RUNNING_GAME_TOGGLE_DETECTION: eZ,
     RUNNING_GAME_EDIT_NAME: eH,
     RUNNING_GAME_DELETE_ENTRY: eY,
@@ -708,6 +708,6 @@ let eq = new ez(d.Z, {
     GAME_DETECTION_WATCH_CANDIDATE_GAMES_START: eU,
     GAME_DETECTION_DEBUGGING_START: eG,
     GAME_DETECTION_DEBUGGING_STOP: eB,
-    GAME_DETECTION_DEBUGGING_TICK: eF
+    GAME_DETECTION_DEBUGGING_TICK: eV
   }),
   eQ = eq

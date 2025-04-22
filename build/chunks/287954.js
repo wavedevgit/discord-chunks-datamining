@@ -77,7 +77,7 @@ function m(e, t) {
     spacing: 8
   } : {
     position: "bottom",
-    align: t === c.y0.FULL_SIZE ? "center" : "left",
+    align: t === c.lY.MODAL ? "center" : "left",
     animationPosition: "top",
     spacing: 6
   }
@@ -88,17 +88,17 @@ function g(e) {
     user: t,
     guildId: n,
     channelId: u,
-    profileType: f,
+    themeType: f,
     onClose: h,
     children: g
-  } = e, E = p(e, ["user", "guildId", "channelId", "profileType", "onClose", "children"]);
+  } = e, E = p(e, ["user", "guildId", "channelId", "themeType", "onClose", "children"]);
   let {
     interactionType: b,
     interactionSource: y,
     resetInteraction: v,
     interactionSourceId: O,
     interactionPopoutTargetRef: I
-  } = (0, a.Xo)(), S = f === c.y0.FULL_SIZE ? (0, l.z)(t.id, n) : void 0, T = y === E.sourceType && b === c.P.REACT, A = y === E.sourceType && b === c.P.REPLY, N = (T || A) && O === E.sourceId;
+  } = (0, a.Xo)(), S = f === c.lY.MODAL ? (0, l.z)(t.id, n) : void 0, T = y === E.sourceType && b === c.P.REACT, A = y === E.sourceType && b === c.P.REPLY, N = (T || A) && O === E.sourceId;
   return (0, r.jsx)(i.yRy, _(d({
     targetElementRef: null != I ? I : void 0,
     renderPopout: e => {
@@ -109,7 +109,7 @@ function g(e) {
         user: t,
         guildId: n,
         channelId: u,
-        profileType: f,
+        themeType: f,
         onClose: h,
         modalKey: S,
         setPopoutRef: i

@@ -51,7 +51,7 @@ function g(e, t) {
     initialFrame: O,
     markers: I,
     onBeforeDismount: S
-  } = e, [T, A] = i.useState(null), N = i.useRef(null), C = i.useRef(null), R = i.useRef(null), P = "custom" === g ? {
+  } = e, [T, A] = i.useState(null), N = i.useRef(null), C = i.useRef(null), P = i.useRef(null), R = "custom" === g ? {
     width: E,
     height: b
   } : (0, u.m)(g), w = !(0, _.Z)("lottie_hover_multiple_loop"), D = i.useContext(c.S).reducedMotion.enabled, {
@@ -62,29 +62,29 @@ function g(e, t) {
   return (0, f.zq)(() => {
     var e, t;
     null == S || S({
-      finalFrame: null != (t = null == (e = R.current) ? void 0 : e.currentFrame) ? t : null
+      finalFrame: null != (t = null == (e = P.current) ? void 0 : e.currentFrame) ? t : null
     })
   }), i.useImperativeHandle(t, () => ({
     play: e => {
-      if (null == R.current) return;
+      if (null == P.current) return;
       let t = null == C.current;
       if (C.current = e, x) {
         let t = I[e];
-        R.current.resetSegments(!0), R.current.setSegment(t.start + t.duration, t.start + t.duration), R.current.stop()
+        P.current.resetSegments(!0), P.current.setSegment(t.start + t.duration, t.start + t.duration), P.current.stop()
       } else {
-        R.current.setLoop(!w && e.includes("hover")), R.current.resetSegments(!0);
+        P.current.setLoop(!w && e.includes("hover")), P.current.resetSegments(!0);
         let n = t && null != O && O >= I[e].start && O <= I[e].start + I[e].duration ? O : I[e].start;
-        R.current.playSegments([n, I[e].start + I[e].duration], !0)
+        P.current.playSegments([n, I[e].start + I[e].duration], !0)
       }
     },
     stop: () => {
-      if (null == R.current || x) return
+      if (null == P.current || x) return
     },
     stopIfPlaying: e => {
-      null == R.current || x || C.current === e && (R.current.resetSegments(!0), R.current.setSegment(I[e].start, I[e].start), R.current.stop())
+      null == P.current || x || C.current === e && (P.current.resetSegments(!0), P.current.setSegment(I[e].start, I[e].start), P.current.stop())
     },
-    getDuration: e => null == R.current ? null : R.current.getDuration(e),
-    getCurrentFrame: () => null == R.current ? null : R.current.currentFrame
+    getDuration: e => null == P.current ? null : P.current.getDuration(e),
+    getCurrentFrame: () => null == P.current ? null : P.current.currentFrame
   }), [x, w, I, O]), i.useEffect(() => {
     null == T && h().then(e => A(e.default))
   }, [T, h]), i.useEffect(() => (Promise.resolve().then(n.t.bind(n, 500923, 23)).then(e => {
@@ -98,7 +98,7 @@ function g(e, t) {
       let e = I[o];
       r = [x ? e.start : null != O ? O : e.start, e.start + e.duration]
     }
-    null != N.current && (R.current = i.loadAnimation({
+    null != N.current && (P.current = i.loadAnimation({
       container: N.current,
       renderer: "svg",
       loop: !1,
@@ -108,12 +108,12 @@ function g(e, t) {
     }))
   }), () => {
     var e;
-    null == (e = R.current) || e.destroy()
+    null == (e = P.current) || e.destroy()
   }), [T, I, O, x]), (0, r.jsx)("div", {
     style: m({
       "--__lottieIconColor": null != a && "string" == typeof a ? a : null == a ? void 0 : a.css,
       display: "flex"
-    }, P),
+    }, R),
     className: o()(p.lottieIcon, s ? void 0 : p.lottieIconColors, y),
     ref: N
   })

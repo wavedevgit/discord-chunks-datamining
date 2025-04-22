@@ -4,17 +4,17 @@ n.d(t, {
   A3: () => A,
   FZ: () => T,
   Hl: () => ee,
-  Je: () => R,
+  Je: () => P,
   Jh: () => M,
   KK: () => q,
   Oe: () => S,
   Qi: () => Y,
   Ro: () => O,
-  Vx: () => F,
-  _k: () => V,
+  Vx: () => V,
+  _k: () => F,
   _p: () => L,
   aq: () => G,
-  cP: () => P,
+  cP: () => R,
   e9: () => D,
   ee: () => X,
   f2: () => j,
@@ -72,12 +72,12 @@ let I = [E.Eu4.NONE, E.Eu4.TIER_1, E.Eu4.TIER_2, E.Eu4.TIER_3],
   A = (e, t) => null != t && t.hasFeature(E.oNc.MORE_STICKERS) && e === E.Eu4.TIER_3 ? o.D.MAX_STICKER_SLOTS : y.$8[e],
   N = e => y.pH[e],
   C = (e, t) => null != t && t.hasFeature(E.oNc.MORE_SOUNDBOARD) ? y.w1 : y._k[e],
-  R = e => {
+  P = e => {
     if (e === E.Eu4.NONE) return y._k[e];
     let t = I[I.indexOf(e) - 1];
     return y._k[e] - y._k[t]
   },
-  P = e => [{
+  R = e => [{
     tier: E.Eu4.TIER_1,
     title: v.intl.string(v.t["lK+WOT"]),
     perks: [{
@@ -96,7 +96,7 @@ let I = [E.Eu4.NONE, E.Eu4.TIER_1, E.Eu4.TIER_2, E.Eu4.TIER_3],
       icon: 8
     }, {
       title: v.intl.formatToPlainString(v.t.NRuk5u, {
-        soundCount: R(E.Eu4.TIER_1),
+        soundCount: P(E.Eu4.TIER_1),
         totalSoundCount: C(E.Eu4.TIER_1)
       }),
       description: v.intl.string(v.t.Oq7OVl),
@@ -139,7 +139,7 @@ let I = [E.Eu4.NONE, E.Eu4.TIER_1, E.Eu4.TIER_2, E.Eu4.TIER_3],
       icon: 8
     }, {
       title: v.intl.formatToPlainString(v.t.NRuk5u, {
-        soundCount: R(E.Eu4.TIER_2),
+        soundCount: P(E.Eu4.TIER_2),
         totalSoundCount: C(E.Eu4.TIER_2)
       }),
       description: v.intl.string(v.t.pEYlPT),
@@ -198,7 +198,7 @@ let I = [E.Eu4.NONE, E.Eu4.TIER_1, E.Eu4.TIER_2, E.Eu4.TIER_3],
       icon: 8
     }, {
       title: v.intl.formatToPlainString(v.t.NRuk5u, {
-        soundCount: R(E.Eu4.TIER_3),
+        soundCount: P(E.Eu4.TIER_3),
         totalSoundCount: C(E.Eu4.TIER_3)
       }),
       description: v.intl.string(v.t["8omJSU"]),
@@ -342,11 +342,11 @@ function B(e) {
   return e.sort((e, t) => null != e.endsAt && null != t.endsAt ? e.endsAt.getTime() - t.endsAt.getTime() : -1)
 }
 
-function F(e, t) {
-  return V(e, t) > 0
+function V(e, t) {
+  return F(e, t) > 0
 }
 
-function V(e, t) {
+function F(e, t) {
   var n;
   if ((null == (n = d.Z.getGuild(t)) ? void 0 : n.hasFeature(E.oNc.PREMIUM_TIER_3_OVERRIDE)) === !0) return 0;
   let r = M(t),
@@ -369,7 +369,7 @@ let Z = [{
 }];
 
 function H(e, t) {
-  let n = V(e, t);
+  let n = F(e, t);
   if (n > 0) {
     let t = B(e).filter(e => null != e.endsAt);
     return t[t.length - n].endsAt

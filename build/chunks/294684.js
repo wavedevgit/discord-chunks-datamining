@@ -27,8 +27,8 @@ var r = n(98405),
   A = n(530575),
   N = n(533610),
   C = n(800054),
-  R = n(682564),
-  P = n(338045),
+  P = n(682564),
+  R = n(338045),
   w = n(751736),
   D = n(992914),
   L = w("iterator"),
@@ -39,9 +39,9 @@ var r = n(98405),
   U = m.getterFor(M),
   G = a("fetch"),
   B = a("Request"),
-  F = a("Headers"),
-  V = B && B.prototype,
-  Z = F && F.prototype,
+  V = a("Headers"),
+  F = B && B.prototype,
+  Z = V && V.prototype,
   H = i.TypeError,
   Y = i.encodeURIComponent,
   W = String.fromCharCode,
@@ -152,15 +152,15 @@ var r = n(98405),
     var e = U(this),
       t = e.target,
       n = e.index++;
-    if (!t || n >= t.length) return e.target = null, R(void 0, !0);
+    if (!t || n >= t.length) return e.target = null, P(void 0, !0);
     var r = t[n];
     switch (e.kind) {
       case "keys":
-        return R(r.key, !1);
+        return P(r.key, !1);
       case "values":
-        return R(r.value, !1)
+        return P(r.value, !1)
     }
-    return R([r.key, r.value], !1)
+    return P([r.key, r.value], !1)
   }, !0),
   em = function(e) {
     this.entries = [], this.url = null, void 0 !== e && (I(e) ? this.parseObject(e) : this.parseQuery("string" == typeof e ? "?" === q(e, 0) ? en(e, 1) : e : S(e)))
@@ -214,13 +214,13 @@ var eg = function() {
 if (_(eE, {
     append: function(e, t) {
       var n = j(this);
-      P(arguments.length, 2), X(n.entries, {
+      R(arguments.length, 2), X(n.entries, {
         key: S(e),
         value: S(t)
       }), !c && this.length++, n.updateURL()
     },
     delete: function(e) {
-      for (var t = j(this), n = P(arguments.length, 1), r = t.entries, i = S(e), a = n < 2 ? void 0 : arguments[1], o = void 0 === a ? a : S(a), s = 0; s < r.length;) {
+      for (var t = j(this), n = R(arguments.length, 1), r = t.entries, i = S(e), a = n < 2 ? void 0 : arguments[1], o = void 0 === a ? a : S(a), s = 0; s < r.length;) {
         var l = r[s];
         if (l.key === i && (void 0 === o || l.value === o)) {
           if (ee(r, s, 1), void 0 !== o) break
@@ -230,19 +230,19 @@ if (_(eE, {
     },
     get: function(e) {
       var t = j(this).entries;
-      P(arguments.length, 1);
+      R(arguments.length, 1);
       for (var n = S(e), r = 0; r < t.length; r++)
         if (t[r].key === n) return t[r].value;
       return null
     },
     getAll: function(e) {
       var t = j(this).entries;
-      P(arguments.length, 1);
+      R(arguments.length, 1);
       for (var n = S(e), r = [], i = 0; i < t.length; i++) t[i].key === n && X(r, t[i].value);
       return r
     },
     has: function(e) {
-      for (var t = j(this).entries, n = P(arguments.length, 1), r = S(e), i = n < 2 ? void 0 : arguments[1], a = void 0 === i ? i : S(i), o = 0; o < t.length;) {
+      for (var t = j(this).entries, n = R(arguments.length, 1), r = S(e), i = n < 2 ? void 0 : arguments[1], a = void 0 === i ? i : S(i), o = 0; o < t.length;) {
         var s = t[o++];
         if (s.key === r && (void 0 === a || s.value === a)) return !0
       }
@@ -250,7 +250,7 @@ if (_(eE, {
     },
     set: function(e, t) {
       var n, r = j(this);
-      P(arguments.length, 1);
+      R(arguments.length, 1);
       for (var i = r.entries, a = !1, o = S(e), s = S(t), l = 0; l < i.length; l++)(n = i[l]).key === o && (a ? ee(i, l--, 1) : (a = !0, n.value = s));
       a || X(i, {
         key: o,
@@ -295,13 +295,13 @@ if (_(eE, {
     forced: !u
   }, {
     URLSearchParams: eg
-  }), !u && E(F)) {
+  }), !u && E(V)) {
   var eb = l(Z.has),
     ey = l(Z.set),
     ev = function(e) {
       if (I(e)) {
         var t, n = e.body;
-        if (v(n) === x) return eb(t = e.headers ? new F(e.headers) : new F, "content-type") || ey(t, "content-type", "application/x-www-form-urlencoded;charset=UTF-8"), T(e, {
+        if (v(n) === x) return eb(t = e.headers ? new V(e.headers) : new V, "content-type") || ey(t, "content-type", "application/x-www-form-urlencoded;charset=UTF-8"), T(e, {
           body: A(0, S(n)),
           headers: A(0, t)
         })
@@ -319,9 +319,9 @@ if (_(eE, {
       }
     }), E(B)) {
     var eO = function(e) {
-      return g(this, V), new B(e, arguments.length > 1 ? ev(arguments[1]) : {})
+      return g(this, F), new B(e, arguments.length > 1 ? ev(arguments[1]) : {})
     };
-    V.constructor = eO, eO.prototype = V, r({
+    F.constructor = eO, eO.prototype = F, r({
       global: !0,
       constructor: !0,
       dontCallGetSet: !0,

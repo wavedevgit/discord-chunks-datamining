@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => P
+  Z: () => R
 });
 var r = n(570140),
   i = n(710845),
@@ -86,9 +86,9 @@ let T = {
     enable: A,
     isNotSupported: N,
     trackToggleSelfMute: C,
-    trackToggleSelfDeaf: R
+    trackToggleSelfDeaf: P
   } = T = n(929782),
-  P = {
+  R = {
     enable: A,
     toggleSelfMute() {
       var e;
@@ -133,7 +133,7 @@ let T = {
         usedKeybind: n = !1,
         location: i
       } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-      N() || (R({
+      N() || (P({
         usedKeybind: n,
         location: i
       }), r.Z.dispatch({

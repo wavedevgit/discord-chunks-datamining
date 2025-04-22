@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => F
+  Z: () => V
 });
 var r = n(200651);
 n(192379);
@@ -30,8 +30,8 @@ var i = n(120356),
   A = n(194811),
   N = n(373826),
   C = n(315324),
-  R = n(262210),
-  P = n(670451),
+  P = n(262210),
+  R = n(670451),
   w = n(881530),
   D = n(228168),
   L = n(981631),
@@ -78,23 +78,23 @@ function B(e, t) {
   }), e
 }
 
-function F(e) {
+function V(e) {
   let {
     user: t,
     currentUser: n,
     activity: i,
     application: j,
     voiceGuild: G,
-    voiceChannel: F,
-    className: V,
+    voiceChannel: V,
+    className: F,
     onClose: Z,
     appContext: H
   } = e, {
     analyticsLocations: Y
   } = (0, f.ZP)(d.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), {
-    profileType: W
+    themeType: W
   } = (0, O.z)(), K = {
-    [k.fullSize]: W === D.y0.FULL_SIZE
+    [k.fullSize]: W === D.lY.MODAL
   }, z = (0, h.Z)({
     activity: i,
     user: t
@@ -139,7 +139,7 @@ function F(e) {
     })
   }, en = () => {
     var e;
-    return (0, u.Z)(i) && null != F ? (0, r.jsxs)("div", {
+    return (0, u.Z)(i) && null != V ? (0, r.jsxs)("div", {
       className: k.voiceChannelText,
       children: [(0, r.jsx)(o.gj8, {
         size: "xxs",
@@ -147,7 +147,7 @@ function F(e) {
         className: k.voiceIcon
       }), (0, r.jsx)(N.Z, {
         variant: "heading-sm/semibold",
-        text: F.name
+        text: V.name
       })]
     }) : (0, c.Z)(i) || (0, g.dS)(i) ? (0, r.jsx)(N.Z, {
       variant: "heading-sm/semibold",
@@ -239,7 +239,7 @@ function F(e) {
       start: e,
       end: t
     } = i.timestamps;
-    return (0, r.jsx)(R.Z, {
+    return (0, r.jsx)(P.Z, {
       start: e,
       end: t
     })
@@ -253,10 +253,10 @@ function F(e) {
       }), ee(e)
     },
     children: [en(), er(), ei()]
-  }), el = () => null == G || null == F ? null : (0, r.jsx)(C.Z, {
+  }), el = () => null == G || null == V ? null : (0, r.jsx)(C.Z, {
     user: t,
     guild: G,
-    channel: F,
+    channel: V,
     onAction: q,
     onClose: Z
   }), ec = () => t.id === n.id ? null : (0, r.jsx)("div", {
@@ -272,11 +272,11 @@ function F(e) {
     value: Y,
     children: (0, r.jsxs)(T.Z, {
       ref: Q,
-      className: a()(k.card, V),
+      className: a()(k.card, F),
       onAction: q,
       onClose: Z,
       children: [(0, r.jsx)(A.Z, B(U({}, X), {
-        contextMenu: (0, r.jsx)(P.Z, {
+        contextMenu: (0, r.jsx)(R.Z, {
           display: "live",
           user: t,
           activity: i,
@@ -295,9 +295,9 @@ function F(e) {
               activity: i,
               className: k.badges
             }), eo()]
-          }), W === D.y0.FULL_SIZE && ec()]
+          }), W === D.lY.MODAL && ec()]
         }), el()]
-      }), W !== D.y0.FULL_SIZE && ec()]
+      }), W !== D.lY.MODAL && ec()]
     })
   })
 }

@@ -41,8 +41,8 @@ var r, i = n(533937),
   A = n(143988),
   N = n(764459),
   C = n(138676),
-  R = n(365088),
-  P = n(947599),
+  P = n(365088),
+  R = n(947599),
   w = {},
   D = "undefined" != typeof Uint8Array && A ? A(Uint8Array) : r,
   L = {
@@ -115,8 +115,8 @@ var r, i = n(533937),
     "%WeakMap%": "undefined" == typeof WeakMap ? r : WeakMap,
     "%WeakRef%": "undefined" == typeof WeakRef ? r : WeakRef,
     "%WeakSet%": "undefined" == typeof WeakSet ? r : WeakSet,
-    "%Function.prototype.call%": P,
-    "%Function.prototype.apply%": R,
+    "%Function.prototype.call%": R,
+    "%Function.prototype.apply%": P,
     "%Object.defineProperty%": O,
     "%Object.getPrototypeOf%": N,
     "%Math.abs%": f,
@@ -204,21 +204,21 @@ var M = function e(t) {
   },
   j = n(390976),
   U = n(706165),
-  G = j.call(P, Array.prototype.concat),
-  B = j.call(R, Array.prototype.splice),
-  F = j.call(P, String.prototype.replace),
-  V = j.call(P, String.prototype.slice),
-  Z = j.call(P, RegExp.prototype.exec),
+  G = j.call(R, Array.prototype.concat),
+  B = j.call(P, Array.prototype.splice),
+  V = j.call(R, String.prototype.replace),
+  F = j.call(R, String.prototype.slice),
+  Z = j.call(R, RegExp.prototype.exec),
   H = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
   Y = /\\(\\)?/g,
   W = function(e) {
-    var t = V(e, 0, 1),
-      n = V(e, -1);
+    var t = F(e, 0, 1),
+      n = F(e, -1);
     if ("%" === t && "%" !== n) throw new c("invalid intrinsic syntax, expected closing `%`");
     if ("%" === n && "%" !== t) throw new c("invalid intrinsic syntax, expected opening `%`");
     var r = [];
-    return F(e, H, function(e, t, n, i) {
-      r[r.length] = n ? F(i, Y, "$1") : t || e
+    return V(e, H, function(e, t, n, i) {
+      r[r.length] = n ? V(i, Y, "$1") : t || e
     }), r
   },
   K = function(e, t) {
@@ -248,8 +248,8 @@ e.exports = function(e, t) {
   l && (r = l[0], B(n, G([0, 1], l)));
   for (var d = 1, f = !0; d < n.length; d += 1) {
     var _ = n[d],
-      p = V(_, 0, 1),
-      h = V(_, -1);
+      p = F(_, 0, 1),
+      h = F(_, -1);
     if (('"' === p || "'" === p || "`" === p || '"' === h || "'" === h || "`" === h) && p !== h) throw new c("property names with quotes must have matching quotes");
     if ("constructor" !== _ && f || (s = !0), r += "." + _, U(L, a = "%" + r + "%")) o = L[a];
     else if (null != o) {

@@ -120,7 +120,7 @@ function A(e) {
 function N(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : S(),
     n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : d.MoX.KEYBOARD_KEY,
-    r = R(e, t, n);
+    r = P(e, t, n);
   if (null != r) return r;
   let i = (0, u.T_)(e);
   return null != i ? i.keyCode : null
@@ -131,7 +131,7 @@ function C(e) {
   return "pause" === t || "break" === t ? "pause/break" : t
 }
 
-function R(e) {
+function P(e) {
   let t, n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : S(),
     r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : d.MoX.KEYBOARD_KEY;
   if (null == e) return null;
@@ -163,7 +163,7 @@ function R(e) {
   }
   return null != t ? t : null
 }
-let P = [
+let R = [
     ["META", "⌘"],
     ["RIGHT META", "RIGHT ⌘"],
     ["SHIFT", "⇧"],
@@ -188,12 +188,12 @@ let P = [
     ["SPACE", "␣"]
   ],
   w = e => {
-    for (let [t, n] of P)
+    for (let [t, n] of R)
       if (t === e.toUpperCase()) return n;
     return e
   },
   D = e => {
-    for (let [t, n] of P)
+    for (let [t, n] of R)
       if (n === e.toUpperCase()) return t.toLowerCase();
     return e
   },

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => F
+  Z: () => V
 }), n(388685), n(997841);
 var r = n(481060),
   i = n(570140),
@@ -29,8 +29,8 @@ var r = n(481060),
   A = n(623292),
   N = n(807092),
   C = n(467798),
-  R = n(703558),
-  P = n(117530),
+  P = n(703558),
+  R = n(117530),
   w = n(630388),
   D = n(226351),
   L = n(981631),
@@ -81,8 +81,8 @@ async function G(e) {
       uploads: j,
       draftType: G,
       parsedMessage: B,
-      options: F = {},
-      raiseEndpointErrors: V = !1
+      options: V = {},
+      raiseEndpointErrors: F = !1
     } = e,
     Z = new _.Z(L.ANM.MESSAGES(M)),
     H = new D.o,
@@ -91,15 +91,15 @@ async function G(e) {
       nonce: "",
       channel_id: M,
       type: L.uaV.DEFAULT,
-      sticker_ids: null == F ? void 0 : F.stickerIds,
-      poll: null == F ? void 0 : F.poll,
-      confetti_potion: (0, I.vY)(null == F ? void 0 : F.confettiPotionData),
-      scheduled_timestamp: null == F ? void 0 : F.scheduledTimestamp
+      sticker_ids: null == V ? void 0 : V.stickerIds,
+      poll: null == V ? void 0 : V.poll,
+      confetti_potion: (0, I.vY)(null == V ? void 0 : V.confettiPotionData),
+      scheduled_timestamp: null == V ? void 0 : V.scheduledTimestamp
     };
-  null != B && (Y.content = null == B ? void 0 : B.content), null != N.Z.getPendingReply(M) && (Y.type = L.uaV.REPLY, Y.message_reference = F.messageReference, Y.allowed_mentions = F.allowedMentions, (0, A.A6)(M));
+  null != B && (Y.content = null == B ? void 0 : B.content), null != N.Z.getPendingReply(M) && (Y.type = L.uaV.REPLY, Y.message_reference = V.messageReference, Y.allowed_mentions = V.allowedMentions, (0, A.A6)(M));
   let [W, K] = (0, C.Z)(Y.content);
   W && (Y.content = K, Y.flags = (0, w.pj)(null != (n = Y.flags) ? n : 0, L.iLy.SUPPRESS_NOTIFICATIONS));
-  let z = null != (r = F.nonce) ? r : (0, E.r)(),
+  let z = null != (r = V.nonce) ? r : (0, E.r)(),
     q = (0, g.ZP)({
       channelId: M,
       content: Y.content,
@@ -108,11 +108,11 @@ async function G(e) {
       messageReference: Y.message_reference,
       flags: Y.flags,
       nonce: z,
-      poll: (0, y.x9)(F.poll)
+      poll: (0, y.x9)(V.poll)
     });
 
   function Q() {
-    "" !== Y.content && "" === R.Z.getDraft(M, G) && a.Z.saveDraft(M, Y.content, G), 0 === P.Z.getUploadCount(M, G) && s.Z.setUploads({
+    "" !== Y.content && "" === P.Z.getDraft(M, G) && a.Z.saveDraft(M, Y.content, G), 0 === R.Z.getUploadCount(M, G) && s.Z.setUploads({
       channelId: M,
       uploads: j,
       draftType: G
@@ -163,7 +163,7 @@ async function G(e) {
       return
     }
     if (t !== L.evJ.GUILD_FILE_UPLOAD_RATE_LIMITED_ACCESS) {
-      if (V) H.reject(new c.Hx({
+      if (F) H.reject(new c.Hx({
         status: t,
         body: null != n ? n : {}
       }, t));
@@ -189,7 +189,7 @@ async function G(e) {
       name: n.name,
       id: n.id
     }, void 0, !0, O.LL.MessageSent))
-  }), null == F || null == (t = F.confettiPotionData) || t.callback(), await Z.uploadFiles(j, Y), H.resolve(), H.promise
+  }), null == V || null == (t = V.confettiPotionData) || t.callback(), await Z.uploadFiles(j, Y), H.resolve(), H.promise
 }
 
 function B(e) {
@@ -249,7 +249,7 @@ function B(e) {
           })
         }
       })
-    }), "" !== f.content && "" === R.Z.getDraft(t, s) && a.Z.saveDraft(t, f.content, s)
+    }), "" !== f.content && "" === P.Z.getDraft(t, s) && a.Z.saveDraft(t, f.content, s)
   }), h.on("complete", e => {
     i.Z.dispatch({
       type: "UPLOAD_COMPLETE",
@@ -258,7 +258,7 @@ function B(e) {
     })
   }), h.upload(n, f)
 }
-let F = {
+let V = {
   instantBatchUpload: function(e) {
     let {
       channelId: t,
@@ -286,11 +286,11 @@ let F = {
     i.Z.dispatch({
       type: "UPLOAD_CANCEL_REQUEST",
       file: e
-    }), null != e.draftContent && null != e.channelId && "" === R.Z.getDraft(e.channelId, R.d.ChannelMessage) && i.Z.dispatch({
+    }), null != e.draftContent && null != e.channelId && "" === P.Z.getDraft(e.channelId, P.d.ChannelMessage) && i.Z.dispatch({
       type: "DRAFT_SAVE",
       channelId: e.channelId,
       draft: e.draftContent,
-      draftType: R.d.ChannelMessage
+      draftType: P.d.ChannelMessage
     })
   }
 }

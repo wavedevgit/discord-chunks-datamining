@@ -65,8 +65,8 @@ let v = "scientist:triggered",
   A = new u.Z("ExperimentStore"),
   N = !1,
   C = {},
-  R = new Map,
-  P = {},
+  P = new Map,
+  R = {},
   w = {
     rawUserExperiments: [],
     rawGuildExperiments: []
@@ -88,9 +88,9 @@ function G(e) {
   }
 }
 let B = h.qO.map(e => G(e)),
-  F = 6048e5;
+  V = 6048e5;
 
-function V(e, t) {
+function F(e, t) {
   return e || B.includes(t)
 }
 
@@ -117,11 +117,11 @@ let W = Date.now(),
 
 function z(e, t) {
   let n = C[e];
-  return !(null == n || (K ? n.time < W : Date.now() - n.time > F)) && n.hash === t
+  return !(null == n || (K ? n.time < W : Date.now() - n.time > V)) && n.hash === t
 }
 
 function q(e, t) {
-  return R.get(e) === t
+  return P.get(e) === t
 }
 
 function Q(e) {
@@ -222,7 +222,7 @@ function Q(e) {
       fingerprint: o
     })
   }
-  c ? R.set(f, p) : (C[H(t, n, r, u)] = {
+  c ? P.set(f, p) : (C[H(t, n, r, u)] = {
     time: Date.now(),
     hash: Y(n)
   }, e_(C))
@@ -318,7 +318,7 @@ function et(e) {
       override: 0 === l,
       hashResult: null != u ? u : -1,
       aaMode: 1 === d,
-      triggerDebuggingEnabled: V(1 === f, t),
+      triggerDebuggingEnabled: F(1 === f, t),
       assignmentSource: r,
       sessionId: i,
       loadedFromCache: o,
@@ -338,7 +338,7 @@ function et(e) {
       holdoutName: null != d ? d : null,
       holdoutControlBucket: null != f ? f : null,
       aaMode: 1 === _,
-      triggerDebuggingEnabled: V(1 === p, t),
+      triggerDebuggingEnabled: F(1 === p, t),
       assignmentSource: r,
       sessionId: i,
       loadedFromCache: o,
@@ -484,7 +484,7 @@ function eu() {
   let t = e.e,
     n = Date.now(),
     r = !1;
-  for (let e in t) n - t[e].time > F && (delete t[e], r = !0);
+  for (let e in t) n - t[e].time > V && (delete t[e], r = !0);
   return r && e_(t), t
 }
 
@@ -560,7 +560,7 @@ function ep(e) {
     buckets: a,
     commonTriggerPoint: o
   } = e;
-  P[t] = {
+  R[t] = {
     type: n,
     title: r,
     description: i,
@@ -576,7 +576,7 @@ function eh(e) {
     experimentBucket: r,
     experimentType: i,
     skipCleanup: a
-  } = e, o = null != i ? i : null == (t = P[n]) ? void 0 : t.type;
+  } = e, o = null != i ? i : null == (t = R[n]) ? void 0 : t.type;
   if (null == o) return !1;
   if (null == r ? (M = E({}, M), delete M[n], k = E({}, k), delete k[n]) : "user" === o ? M = y(E({}, M), {
       [n]: {
@@ -595,7 +595,7 @@ function eh(e) {
       }
     }), !a)
     for (let e of [M, k])
-      for (let t in e) null == P[t] && delete M[t];
+      for (let t in e) null == R[t] && delete M[t];
   ef()
 }
 
@@ -626,7 +626,7 @@ class eg extends f.Z {
     return N
   }
   hasRegisteredExperiment(e) {
-    return null != P[e]
+    return null != R[e]
   }
   getUserExperimentDescriptor(e) {
     if (j) {
@@ -678,7 +678,7 @@ class eg extends f.Z {
     })
   }
   getRegisteredExperiments() {
-    return P
+    return R
   }
   getAllExperimentOverrideDescriptors() {
     return j ? E({}, M, k) : {}
@@ -690,7 +690,7 @@ class eg extends f.Z {
   getAllExperimentAssignments() {
     let e = {},
       t = {};
-    for (let n in Object.keys(P).forEach(e => {
+    for (let n in Object.keys(R).forEach(e => {
         t[G("".concat(e))] = e
       }), D) {
       let r = t[n];

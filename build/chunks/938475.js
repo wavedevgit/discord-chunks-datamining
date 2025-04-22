@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  PH: () => R,
-  ZP: () => V,
+  PH: () => P,
+  ZP: () => F,
   sQ: () => N
 }), n(388685);
 var r, i = n(392711),
@@ -63,7 +63,7 @@ let O = Object.freeze([]),
 
 function S(e) {
   let t = I[e];
-  return null == t && (t = new P(e), I[e] = t), t
+  return null == t && (t = new R(e), I[e] = t), t
 }
 
 function T(e, t) {
@@ -87,7 +87,7 @@ function C(e, t, n) {
   return A(n, T(e, t), t)
 }
 
-function R(e, t, n, r) {
+function P(e, t, n, r) {
   var i;
   let a = _.default.getUser(n),
     o = null == a;
@@ -109,14 +109,14 @@ function R(e, t, n, r) {
   };
   return o && (u._isPlaceholder = !0), u
 }
-class P {
+class R {
   updateVoiceState(e) {
     if (null != this._pending) return this._pending.add(e), !1;
     let t = p.Z.getVoiceState(this.guildId, e),
       n = this._voiceStates.get(e),
       r = _.default.getUser(e);
     if (null != t && null != r) {
-      if (null == n) return this._voiceStates.set(e, R(t, this.guildId, e)), !0;
+      if (null == n) return this._voiceStates.set(e, P(t, this.guildId, e)), !0;
       else if (n.voiceState !== t) {
         var i;
         let a = T(this.guildId, r),
@@ -154,7 +154,7 @@ class P {
   updateUsers() {
     return null == this._pending && this._voiceStates.values().reduce((e, t) => {
       let n = _.default.getUser(t.user.id);
-      return null != n && t.user !== n ? (this._voiceStates.set(n.id, R(t.voiceState, this.guildId, n.id, t)), !0) : e
+      return null != n && t.user !== n ? (this._voiceStates.set(n.id, P(t.voiceState, this.guildId, n.id, t)), !0) : e
     }, !1)
   }
   getUserIds() {
@@ -271,7 +271,7 @@ function B() {
     })
   })
 }
-class F extends(r = o.ZP.Store) {
+class V extends(r = o.ZP.Store) {
   initialize() {
     B(), this.waitFor(u.default, _.default, f.ZP, p.Z), this.syncWith([_.default], k)
   }
@@ -299,8 +299,8 @@ class F extends(r = o.ZP.Store) {
     return S(null != e ? e : g.ME).getVersion()
   }
 }
-E(F, "displayName", "SortedVoiceStateStore");
-let V = new F(l.Z, {
+E(V, "displayName", "SortedVoiceStateStore");
+let F = new V(l.Z, {
   CONNECTION_OPEN: w,
   OVERLAY_INITIALIZE: D,
   VOICE_CHANNEL_SELECT: M,

@@ -30,8 +30,8 @@ var r = n(200651),
   A = n(735521),
   N = n(583046),
   C = n(897829),
-  R = n(74179),
-  P = n(896246),
+  P = n(74179),
+  R = n(896246),
   w = n(320317),
   D = n(994427),
   L = n(814076),
@@ -51,7 +51,7 @@ function B(e, t, n) {
   }) : e[t] = n, e
 }
 
-function F(e) {
+function V(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -64,7 +64,7 @@ function F(e) {
   return e
 }
 
-function V(e, t) {
+function F(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -76,7 +76,7 @@ function V(e, t) {
 }
 
 function Z(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : V(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : F(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -87,7 +87,7 @@ function K(e) {
   let {
     loadId: O,
     activeSubscription: B,
-    stepConfigs: V,
+    stepConfigs: F,
     breadcrumbs: Y = [],
     skuIDs: W,
     isGift: K = !1,
@@ -103,7 +103,7 @@ function K(e) {
     paymentSourceId: el,
     setPaymentSourceId: ec,
     hasFetchedPaymentSources: eu
-  } = (0, R.Z)({
+  } = (0, P.Z)({
     isGift: K,
     activeSubscription: B,
     eligiblePaymentGateways: ea
@@ -125,14 +125,14 @@ function K(e) {
     breadcrumbsData: eI,
     previousStepRef: eS
   } = (0, M.Z)({
-    stepConfigs: V,
+    stepConfigs: F,
     breadcrumbs: Y
   }), [eT, eA] = (0, D.Z)(ey), {
     paymentError: eN,
     paymentAuthenticationState: eC
-  } = (0, P.Z)(), {
-    purchaseError: eR,
-    purchaseErrorBlockRef: eP,
+  } = (0, R.Z)(), {
+    purchaseError: eP,
+    purchaseErrorBlockRef: eR,
     setPurchaseError: ew
   } = (0, w.Z)(), eD = (0, u.Z)(() => {
     let e = null != O ? O : (0, l.Z)();
@@ -149,7 +149,7 @@ function K(e) {
     setSelectedSkuId: ek,
     setSelectedPlanId: ej,
     setSelectedPlanNotification: eU
-  } = (0, A.Z)(), [eG, eB] = (0, c.Wu)([E.Z], () => [E.Z.purchaseTokenAuthState, E.Z.purchaseTokenHash]), [eF, eV, eZ, eH] = (0, c.Wu)([j.Z], () => [j.Z.browserCheckoutState, j.Z.loadId, j.Z.skuId, j.Z.planId]), [eY, eW] = i.useState(null), [eK, ez] = i.useState(null), [eq, eQ] = i.useState(null), [eX, eJ] = i.useState(null), [e$, e0] = i.useState(null), [e1, e2] = i.useState(void 0), [e3, e4] = i.useState([]), e5 = i.useMemo(() => null == ex || (0, S.PV)(ex.id), [ex]), e6 = i.useRef(null != B ? B.planId : null);
+  } = (0, A.Z)(), [eG, eB] = (0, c.Wu)([E.Z], () => [E.Z.purchaseTokenAuthState, E.Z.purchaseTokenHash]), [eV, eF, eZ, eH] = (0, c.Wu)([j.Z], () => [j.Z.browserCheckoutState, j.Z.loadId, j.Z.skuId, j.Z.planId]), [eY, eW] = i.useState(null), [eK, ez] = i.useState(null), [eq, eQ] = i.useState(null), [eX, eJ] = i.useState(null), [e$, e0] = i.useState(null), [e1, e2] = i.useState(void 0), [e3, e4] = i.useState([]), e5 = i.useMemo(() => null == ex || (0, S.PV)(ex.id), [ex]), e6 = i.useRef(null != B ? B.planId : null);
   i.useEffect(() => {
     null == e6.current && null != B && (e6.current = B.planId)
   }, [B]);
@@ -191,7 +191,7 @@ function K(e) {
     [th, tm] = i.useState(null),
     tg = null != (o = null == B ? void 0 : B.inReverseTrial) && o && !K;
   return (0, r.jsx)(H.Provider, {
-    value: Z(F({
+    value: Z(V({
       stripe: ee,
       contextMetadata: eD,
       blockedPayments: et,
@@ -217,22 +217,22 @@ function K(e) {
       step: ey,
       setStep: ev,
       steps: eO,
-      stepConfigs: V,
+      stepConfigs: F,
       breadcrumbs: eI,
       previousStepRef: eS,
       purchaseState: eT,
       setPurchaseState: eA,
       paymentAuthenticationState: eC,
       paymentError: eN,
-      purchaseError: eR,
+      purchaseError: eP,
       setPurchaseError: ew,
       purchasePreviewError: ta,
       setPurchasePreviewError: to,
-      purchaseErrorBlockRef: eP,
+      purchaseErrorBlockRef: eR,
       purchaseTokenAuthState: eG,
       purchaseTokenHash: eB,
-      browserCheckoutState: eF,
-      browserCheckoutStateLoadId: eV,
+      browserCheckoutState: eV,
+      browserCheckoutStateLoadId: eF,
       browserCheckoutStateSkuId: eZ,
       browserCheckoutStatePlanId: eH,
       bodyNode: eY,

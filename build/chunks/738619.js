@@ -29,8 +29,8 @@ var r = n(200651),
   A = n(594174),
   N = n(451478),
   C = n(626135),
-  R = n(823379),
-  P = n(5192),
+  P = n(823379),
+  R = n(5192),
   w = n(981631),
   D = n(388032),
   L = n(486850);
@@ -92,7 +92,7 @@ function G(e, t) {
   return i
 }
 let B = [];
-class F extends i.PureComponent {
+class V extends i.PureComponent {
   componentDidMount() {
     this.timeout = setTimeout(() => {
       this.setState({
@@ -147,7 +147,7 @@ class F extends i.PureComponent {
   }
 }
 
-function V(e) {
+function F(e) {
   let {
     channel: t,
     guild: n
@@ -179,12 +179,12 @@ function Z(e) {
     isComboing: g
   } = e, {
     rateLimitPerUser: E
-  } = u, y = A.default.getCurrentUser(), v = O.Z.getGuild(t), S = E > 0, T = f ? [] : l()(s).keys().filter(e => e !== (null == y ? void 0 : y.id)).reject(e => I.Z.isBlockedOrIgnored(e)).map(e => A.default.getUser(e)).filter(R.lm).map(e => P.ZP.getName(t, u.id, e)).value(), N = (0, m.R6)("TypingUsers");
-  if (0 === T.length && !S && !g) return i && null != n ? (0, r.jsx)(F, {
+  } = u, y = A.default.getCurrentUser(), v = O.Z.getGuild(t), S = E > 0, T = f ? [] : l()(s).keys().filter(e => e !== (null == y ? void 0 : y.id)).reject(e => I.Z.isBlockedOrIgnored(e)).map(e => A.default.getUser(e)).filter(P.lm).map(e => R.ZP.getName(t, u.id, e)).value(), N = (0, m.R6)("TypingUsers");
+  if (0 === T.length && !S && !g) return i && null != n ? (0, r.jsx)(V, {
     activity: n,
     isFocused: a,
     isRefreshChatInputEnabled: N
-  }) : (0, r.jsx)(V, {
+  }) : (0, r.jsx)(F, {
     channel: u,
     guild: v
   });

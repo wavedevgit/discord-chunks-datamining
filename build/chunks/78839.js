@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => V,
+  ZP: () => F,
   sE: () => G
 }), n(539854), n(388685);
 var r, i = n(442837),
@@ -65,7 +65,7 @@ let g = null,
   N = null,
   C = new o.Z("SubscriptionStore");
 
-function R(e) {
+function P(e) {
   let {
     subscriptions: t
   } = e, n = {}, r = {}, i = [], a = [], o = c.default.getId();
@@ -85,7 +85,7 @@ function R(e) {
   }), g = n, E = r, y = i, v = a
 }
 
-function P(e) {
+function R(e) {
   let {
     activeSubscriptions: t,
     record: n
@@ -105,10 +105,10 @@ function w(e) {
     [n.id]: n
   }), U(n) && (E = m(p({}, E), {
     [n.id]: n
-  })), null != y && n.type === d.NYc.GUILD && (y = P({
+  })), null != y && n.type === d.NYc.GUILD && (y = R({
     activeSubscriptions: y,
     record: n
-  })), null != v && n.type === d.NYc.APPLICATION && (y = P({
+  })), null != v && n.type === d.NYc.APPLICATION && (y = R({
     activeSubscriptions: v,
     record: n
   }))
@@ -206,7 +206,7 @@ function B(e, t) {
   }
   return null
 }
-class F extends(r = i.ZP.Store) {
+class V extends(r = i.ZP.Store) {
   hasFetchedSubscriptions() {
     return null != g
   }
@@ -262,9 +262,9 @@ class F extends(r = i.ZP.Store) {
     return A
   }
 }
-_(F, "displayName", "SubscriptionStore");
-let V = new F(a.Z, {
-  BILLING_SUBSCRIPTION_FETCH_SUCCESS: R,
+_(V, "displayName", "SubscriptionStore");
+let F = new V(a.Z, {
+  BILLING_SUBSCRIPTION_FETCH_SUCCESS: P,
   BILLING_SUBSCRIPTION_UPDATE_SUCCESS: w,
   BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_SUCCESS: D,
   BILLING_PREVIOUS_PREMIUM_SUBSCRIPTION_FETCH_SUCCESS: L,

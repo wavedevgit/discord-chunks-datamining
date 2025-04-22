@@ -29,8 +29,8 @@ var r = n(873546),
   A = n(540709),
   N = n(881706),
   C = n(701190),
-  R = n(944486),
-  P = n(914010),
+  P = n(944486),
+  R = n(914010),
   w = n(771845),
   D = n(626135),
   L = n(591759),
@@ -86,12 +86,12 @@ function B(e) {
     } : null != (i = (0, p.Q)(o)) ? i : {
       applicationId: void 0,
       skuId: void 0
-    }, c = null != (a = P.Z.getGuildId()) ? a : void 0;
+    }, c = null != (a = R.Z.getGuildId()) ? a : void 0;
     return null == s ? (0, x.Z)(e) : (D.default.track(M.rMx.APP_DIRECTORY_PROFILE_EMBED_URL_CLICKED, {
       application_id: s,
       device_platform: r.tq ? "mobile_web" : "desktop_web",
       guild_id: c,
-      channel_id: R.Z.getChannelId()
+      channel_id: P.Z.getChannelId()
     }), n.e("11866").then(n.bind(n, 749681)).then(e => {
       let {
         transitionToGlobalDiscovery: t
@@ -178,8 +178,8 @@ function B(e) {
     host: w,
     hostname: j,
     pathname: B,
-    search: F,
-    hash: V
+    search: V,
+    hash: F
   } = null != (t = L.Z.toURLSafe(e)) ? t : {}, Z = L.Z.isDiscordHostname(null != j ? j : null) || L.Z.isDiscordLocalhost(null != w ? w : null, null != j ? j : null);
   if (Z && ((null == B ? void 0 : B.startsWith("/application-directory")) || (null == B ? void 0 : B.startsWith("/discovery/applications")))) {
     let e = B.split("/"),
@@ -191,7 +191,7 @@ function B(e) {
       let r, o, s;
       if (null == t || t.preventDefault(), i) {
         var l, c, u;
-        let e = new URLSearchParams(F);
+        let e = new URLSearchParams(V);
         r = null != (l = e.get("q")) ? l : void 0, o = null != (c = e.get("category_id")) ? c : void 0, s = null != (u = e.get("page")) ? u : void 0
       } else a && (o = e[4]);
       return n.e("11866").then(n.bind(n, 749681)).then(e => {
@@ -214,7 +214,7 @@ function B(e) {
       navigationReplace: !1,
       openChannel: !0
     };
-    return null != F && (e.search = F), null != V && (e.hash = V), t => (null == t || t.preventDefault(), (0, I.Z)(B, e), !0)
+    return null != V && (e.search = V), null != F && (e.hash = F), t => (null == t || t.preventDefault(), (0, I.Z)(B, e), !0)
   }
   if (null != B && Z) {
     let {
@@ -228,7 +228,7 @@ function B(e) {
   let H = (0, O.Ao)(B);
   if (null != B && Z && null != H) return e => {
     null == e || e.preventDefault();
-    let t = P.Z.getGuildId();
+    let t = R.Z.getGuildId();
     null != H.guildId && "" !== H.guildId && H.guildId !== t && (0, I.Z)(M.Z5c.CHANNEL(H.guildId));
     let n = y.ZP.getGuildScheduledEvent(H.guildEventId);
     return null != n && (0, b.bO)({

@@ -54,20 +54,20 @@ let y = (e, t, n, r) => {
     } = (0, g.n)(n), {
       primaryColor: A,
       secondaryColor: N
-    } = (0, d.Z)(null == O ? void 0 : O.src), C = (0, c.yA)(n), R = (0, c.Nq)(n), P = i.useCallback(e => {
-      if (null != t && null != I && null != C && null != R && (0, _.qy)(R)) return (0, u.SO)({
+    } = (0, d.Z)(null == O ? void 0 : O.src), C = (0, c.yA)(n), P = (0, c.Nq)(n), R = i.useCallback(e => {
+      if (null != t && null != I && null != C && null != P && (0, _.qy)(P)) return (0, u.SO)({
         entry: n,
         applicationImageSrc: null == O ? void 0 : O.src,
         avatarSrcs: [I.getAvatarURL(null == t ? void 0 : t.guild_id, 128)],
-        description: y(n, t, I, R),
+        description: y(n, t, I, P),
         timestamp: E.intl.formatToPlainString(E.t.YL7UEx, {
           hours: Math.round(C / o.Z.Seconds.HOUR)
         }),
         colors: [A, N],
         channelId: e
       })
-    }, [null == O ? void 0 : O.src, t, C, n, A, R, N, I]);
-    if (null == I || null == C || null == R || !(0, _.qy)(R)) return null;
+    }, [null == O ? void 0 : O.src, t, C, n, A, P, N, I]);
+    if (null == I || null == C || null == P || !(0, _.qy)(P)) return null;
     let w = null != n.extra.platform ? f.v[n.extra.platform] : null;
     return (0, r.jsxs)(h.yR, {
       children: [(0, r.jsx)(h.wG, {
@@ -93,7 +93,7 @@ let y = (e, t, n, r) => {
           onVoiceChannelPreview: b,
           user: I,
           channel: t,
-          generateReactionImage: P,
+          generateReactionImage: R,
           reactionImageAltText: v(n, I),
           entry: n
         })

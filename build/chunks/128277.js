@@ -38,7 +38,7 @@ function C(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,7 +51,7 @@ function R(e) {
   return e
 }
 
-function P(e, t) {
+function R(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -63,7 +63,7 @@ function P(e, t) {
 }
 
 function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -74,11 +74,11 @@ function D(e) {
     currentUser: n,
     activity: a,
     className: C,
-    onClose: P
+    onClose: R
   } = e, {
-    profileType: D
+    themeType: D
   } = (0, E.z)(), L = {
-    [N.fullSize]: D === A.y0.FULL_SIZE
+    [N.fullSize]: D === A.lY.MODAL
   }, x = (0, _.Z)({
     activity: a,
     user: t
@@ -118,7 +118,7 @@ function D(e) {
         }, n))
       })
     },
-    F = () => {
+    V = () => {
       let {
         timestamps: e
       } = a;
@@ -132,7 +132,7 @@ function D(e) {
         end: n
       })
     },
-    V = () => t.id === n.id ? null : (0, r.jsx)("div", {
+    F = () => t.id === n.id ? null : (0, r.jsx)("div", {
       className: o()(N.actions, L),
       children: (0, r.jsx)(S.Z, {
         user: t,
@@ -146,14 +146,14 @@ function D(e) {
       ref: G,
       className: o()(N.card, C),
       onAction: U,
-      onClose: P,
-      children: [(0, r.jsx)(v.Z, w(R({}, M), {
+      onClose: R,
+      children: [(0, r.jsx)(v.Z, w(P({}, M), {
         contextMenu: (0, r.jsx)(T.Z, {
           display: "live",
           user: t,
           activity: a,
           entry: x,
-          onClose: P
+          onClose: R
         })
       })), (0, r.jsx)("div", {
         className: N.body,
@@ -184,10 +184,10 @@ function D(e) {
               user: t,
               activity: a,
               className: N.badges
-            }), F()]
-          }), D === A.y0.FULL_SIZE && V()]
+            }), V()]
+          }), D === A.lY.MODAL && F()]
         })
-      }), D !== A.y0.FULL_SIZE && V()]
+      }), D !== A.lY.MODAL && F()]
     })
   })
 }

@@ -6,7 +6,7 @@ n.d(t, {
   NK: () => Z,
   OP: () => S,
   Sw: () => Y,
-  ZP: () => V,
+  ZP: () => F,
   ge: () => H,
   hU: () => U,
   nY: () => I,
@@ -116,12 +116,12 @@ function C(e) {
   return null != (n = null == r ? void 0 : r.rawDescription) ? n : ""
 }
 
-function R(e) {
+function P(e) {
   let t = N(e, s.G.DECISION_OUTCOME);
   if (null != t) return t
 }
 
-function P(e) {
+function R(e) {
   let t = N(e, s.G.QUARANTINE_USER);
   if (null != t) return t
 }
@@ -204,8 +204,8 @@ function j(e, t) {
     l = D(e),
     c = w(e),
     u = L(e),
-    d = P(e),
-    f = R(e),
+    d = R(e),
+    f = P(e),
     _ = N(e, s.G.INTERACTION_CALLBACK_TYPE),
     h = N(e, s.G.APPLICATION_NAME);
   if (null != d) {
@@ -284,7 +284,7 @@ function B(e) {
   }
 }
 
-function F(e) {
+function V(e) {
   let t = N(e, s.G.CHANNEL_ID),
     n = N(e, s.G.ALERT_ACTIONS_EXECUTION),
     r = (0, h.t)(n);
@@ -308,8 +308,8 @@ function F(e) {
   }
 }
 
-function V(e) {
-  let t = r.useMemo(() => F(e), [e]),
+function F(e) {
+  let t = r.useMemo(() => V(e), [e]),
     n = (0, f.e7)([_.Z], () => _.Z.getChannel(t.embedChannelId), [t.embedChannelId]);
   return O(y({}, t), {
     embedChannel: n
@@ -320,7 +320,7 @@ function Z(e) {
   if (null == e) return null;
   let {
     alertActionsExecution: t
-  } = F(e);
+  } = V(e);
   return null != t ? t : null
 }
 

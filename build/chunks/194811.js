@@ -20,7 +20,7 @@ function d(e) {
     platformIcon: i,
     contextMenu: d
   } = e, {
-    profileType: f
+    themeType: f
   } = (0, l.z)();
   return (null == t || "" === t) && null == d ? null : null == t || "" === t ? (0, r.jsx)("div", {
     className: a()(u.headerContextMenu, u.absolute),
@@ -29,7 +29,7 @@ function d(e) {
     className: u.header,
     children: [(0, r.jsxs)(o.X6q, {
       className: u.headerText,
-      variant: f === c.y0.PANEL ? "text-xs/semibold" : "text-xs/medium",
+      variant: f === c.lY.SIDEBAR ? "text-xs/semibold" : "text-xs/medium",
       color: "header-primary",
       children: [(0, r.jsx)(s.Z, {
         children: t

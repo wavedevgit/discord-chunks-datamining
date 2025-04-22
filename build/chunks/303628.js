@@ -60,13 +60,13 @@ function C(e, t) {
   return n
 }
 
-function R(e, t) {
+function P(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function P(e, t) {
+function R(e, t) {
   if (null == e) return {};
   var n, r, i = w(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -149,7 +149,7 @@ function L(e) {
       }), j(i)
     }
   }, [t, M.length, n]);
-  let F = (0, m.Q3)("ChannelAttachmentArea");
+  let V = (0, m.Q3)("ChannelAttachmentArea");
   return !w && 0 === C.length || w && 0 === M.length ? null : (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsx)(s.bG, {
       navigator: A,
@@ -157,8 +157,8 @@ function L(e) {
         children: e => {
           var {
             ref: i
-          } = e, s = P(e, ["ref"]);
-          return (0, r.jsx)("ul", R(N({
+          } = e, s = R(e, ["ref"]);
+          return (0, r.jsx)("ul", P(N({
             ref: i
           }, s), {
             className: o()(S.channelAttachmentArea, T.scrollbarGhost),
@@ -176,7 +176,7 @@ function L(e) {
           }))
         }
       })
-    }), n.drafts.type === E.d.FirstThreadMessage || F ? null : (0, r.jsx)(g.Z, {})]
+    }), n.drafts.type === E.d.FirstThreadMessage || V ? null : (0, r.jsx)(g.Z, {})]
   })
 }
 

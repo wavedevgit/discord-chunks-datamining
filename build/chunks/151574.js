@@ -29,8 +29,8 @@ var r = n(200651),
   A = n(280930),
   N = n(606301),
   C = n(278754),
-  R = n(981631),
-  P = n(388032),
+  P = n(981631),
+  R = n(388032),
   w = n(813567);
 
 function D(e, t, n) {
@@ -92,8 +92,8 @@ function j(e, t) {
 let U = 4,
   G = (0, u.Mg)(d.Z.EXPRESSION_SUGGESTIONS_CONTAINER_PADDING),
   B = (0, u.Mg)(d.Z.EXPRESSION_SUGGESTIONS_STICKER_SUGGESTION_SIZE),
-  F = 2 * B + (0, u.Mg)(d.Z.EXPRESSION_SUGGESTIONS_STICKER_SUGGESTION_MARGIN) + 2 * G,
-  V = () => Promise.resolve();
+  V = 2 * B + (0, u.Mg)(d.Z.EXPRESSION_SUGGESTIONS_STICKER_SUGGESTION_MARGIN) + 2 * G,
+  F = () => Promise.resolve();
 
 function Z(e) {
   let {
@@ -151,8 +151,8 @@ function H(e) {
   }, [o]), _ = (0, l.ZP)({
     id: "expression-suggestions-stickers",
     isEnabled: !0,
-    scrollToStart: V,
-    scrollToEnd: V,
+    scrollToStart: F,
+    scrollToEnd: F,
     orientation: c.hy.HORIZONTAL,
     setFocus: f,
     useVirtualFocus: !0
@@ -192,7 +192,7 @@ let Y = i.memo(function(e) {
     onSelectSticker: c,
     stickerIconVisible: u = !1,
     submitButtonVisible: d = !1
-  } = e, m = i.useContext(h.ZP), [O, I] = i.useState(null), [D, x] = i.useState(!1), [j, U] = i.useState(null), G = (0, g.Iu)(e => null != e.activeView), B = i.useRef(null), [V, Y] = i.useState(""), [W, K] = i.useState(""), [z, q] = i.useState(!1), [Q, X] = i.useState(!1), J = (0, A.Z)(V, D, a), {
+  } = e, m = i.useContext(h.ZP), [O, I] = i.useState(null), [D, x] = i.useState(!1), [j, U] = i.useState(null), G = (0, g.Iu)(e => null != e.activeView), B = i.useRef(null), [F, Y] = i.useState(""), [W, K] = i.useState(""), [z, q] = i.useState(!1), [Q, X] = i.useState(!1), J = (0, A.Z)(F, D, a), {
     analyticsLocations: $
   } = (0, p.ZP)(_.Z.EXPRESSION_SUGGESTIONS), {
     handleTextChange: ee,
@@ -243,7 +243,7 @@ let Y = i.memo(function(e) {
     }),
     es = (e, t) => {
       if (ea) {
-        if (T.default.track(R.rMx.AUTO_SUGGEST_EXPRESSION_SELECTED, {
+        if (T.default.track(P.rMx.AUTO_SUGGEST_EXPRESSION_SELECTED, {
             sticker_id: e.id,
             suggestion_trigger: W
           }), t === E.eb.SENDABLE) x(!0), c(e, y.V0.EXPRESSION_SUGGESTIONS), et.cancel(), Y("");
@@ -260,8 +260,8 @@ let Y = i.memo(function(e) {
     el = i.useRef([]),
     ec = i.useRef(!1);
   i.useEffect(() => {
-    ea && (el.current = J), ea !== ec.current && (m.emit(ea ? "sticker-suggestions-shown" : "sticker-suggestions-hidden"), ea && ((0, N.Tk)(V), K(V))), ec.current = ea
-  }, [m, ea, J, V]);
+    ea && (el.current = J), ea !== ec.current && (m.emit(ea ? "sticker-suggestions-shown" : "sticker-suggestions-hidden"), ea && ((0, N.Tk)(F), K(F))), ec.current = ea
+  }, [m, ea, J, F]);
   let eu = !ea,
     ed = ea ? J : el.current;
   return (0, r.jsx)(p.Gt, {
@@ -276,7 +276,7 @@ let Y = i.memo(function(e) {
       }),
       innerRef: B,
       style: {
-        minWidth: F
+        minWidth: V
       },
       onClick: () => {
         var e;
@@ -330,12 +330,12 @@ let Y = i.memo(function(e) {
             children: [(0, r.jsx)(f.Text, {
               className: w.descriptionText,
               style: {
-                maxWidth: F
+                maxWidth: V
               },
               variant: "text-sm/normal",
-              children: null != j ? P.intl.format(P.t["5gglIi"], {
+              children: null != j ? R.intl.format(R.t["5gglIi"], {
                 stickerName: null == (t = J[+j]) ? void 0 : t.sticker.name
-              }) : P.intl.format(P.t["8DjNnJ"], {
+              }) : R.intl.format(R.t["8DjNnJ"], {
                 upHook: (e, t) => (0, r.jsx)(f.M2$, {
                   shortcut: "up",
                   className: w.keybind
@@ -343,15 +343,15 @@ let Y = i.memo(function(e) {
               })
             }), (0, r.jsx)(f.P3F, {
               onClick: () => {
-                T.default.track(R.rMx.STICKER_SUGGESTIONS_ENABLED_TOGGLED, {
+                T.default.track(P.rMx.STICKER_SUGGESTIONS_ENABLED_TOGGLED, {
                   enabled: !1,
                   location: {
-                    section: R.jXE.EXPRESSION_PICKER
+                    section: P.jXE.EXPRESSION_PICKER
                   }
                 }), (0, C.AW)(!1)
               },
               children: (0, r.jsx)(f.ua7, {
-                text: P.intl.string(P.t.XNMs5u),
+                text: R.intl.string(R.t.XNMs5u),
                 children: e => (0, r.jsx)(f.Dio, M(L({
                   size: "md",
                   color: "currentColor"

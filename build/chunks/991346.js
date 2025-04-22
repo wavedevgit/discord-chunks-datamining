@@ -3,7 +3,7 @@ n.d(t, {
   Gj: () => G,
   Pt: () => V,
   VO: () => H,
-  ji: () => Y,
+  ji: () => W,
   q8: () => z
 }), n(836215), n(472816), n(794429), n(388685), n(467055), n(539854);
 var i = n(192379),
@@ -103,9 +103,9 @@ function V() {
     location: "settings"
   }), H = (0, g.Xo)({
     location: "settings"
-  }), z = null != (n = null == (e = y.default.getCurrentUser()) ? void 0 : e.isStaff()) && n, W = (0, O.y0)({
+  }), z = null != (n = null == (e = y.default.getCurrentUser()) ? void 0 : e.isStaff()) && n, Y = (0, O.y0)({
     location: "settings"
-  }), Y = (0, C.v4)({
+  }), W = (0, C.v4)({
     location: "settings"
   }), K = (0, o.Q)(), q = (0, E.Zy)({
     location: B.dr.USER_SETTINGS_SEARCH_GIFT_INVENTORY
@@ -141,8 +141,8 @@ function V() {
     shouldMergeGameSettings: F,
     isKeywordFilteringEnabled: H,
     isStaff: z,
-    isInappropriateConversationWarningEnabled: W,
-    isInapproprateConversationsDefaultOn: Y,
+    isInappropriateConversationWarningEnabled: Y,
+    isInapproprateConversationsDefaultOn: W,
     paymentsBlocked: K,
     isEligibleForQuests: q,
     showGiftNitro: X,
@@ -157,7 +157,7 @@ function V() {
     hasBlockedUsers: er,
     useRefreshedVoiceAndVideo: el,
     isEligibleForSensitiveContentDefaults: ea
-  }), [$, V, er, es, Q, ei, J, et, k, en, q, Y, W, H, M, z, ee, L, K, F, X, P, v, el, ea])
+  }), [$, V, er, es, Q, ei, J, et, k, en, q, W, Y, H, M, z, ee, L, K, F, X, P, v, el, ea])
 }
 
 function G(e) {
@@ -204,7 +204,7 @@ function G(e) {
 
 function F(e, t, n) {
   let i = [],
-    r = W(t),
+    r = Y(t),
     s = function(e, t) {
       let n = new Map;
       return null != t && t.forEach(t => {
@@ -305,15 +305,15 @@ function z(e) {
   return i.useMemo(() => F(n, t, new Set(e)), [n, t, e])
 }
 
-function W(e) {
+function Y(e) {
   return new Map(Object.entries(e).filter(e => {
     let [t, n] = e;
     return n.section !== l.ID.CUSTOM && null != n.searchableTitles && (null == n.predicate || n.predicate())
   }))
 }
 
-function Y(e) {
-  return Array.from(W(e).entries()).map(e => {
+function W(e) {
+  return Array.from(Y(e).entries()).map(e => {
     let [t, n] = e;
     return [t, n.searchableTitles]
   })

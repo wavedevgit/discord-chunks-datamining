@@ -29,9 +29,9 @@ var r = n(200651),
   A = n(463031),
   N = n(206583),
   C = n(388032),
-  R = n(667450);
+  P = n(667450);
 
-function P(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -47,7 +47,7 @@ function w(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      P(e, t, n[t])
+      R(e, t, n[t])
     })
   }
   return e
@@ -122,9 +122,9 @@ function j(e) {
   let {
     sort_by_statistic_id: A,
     sort_desc: N
-  } = t.guild_settings, P = t.settings.statistics[A];
+  } = t.guild_settings, R = t.settings.statistics[A];
   return (0, r.jsxs)("div", {
-    className: R.container,
+    className: P.container,
     style: {
       background: I
     },
@@ -132,28 +132,28 @@ function j(e) {
       userId: m[0].userId,
       leaderboard: t
     }), n ? null : (0, r.jsxs)("div", {
-      className: R.table,
+      className: P.table,
       children: [(0, r.jsxs)("div", {
-        className: R.headerRow,
+        className: P.headerRow,
         children: [(0, r.jsx)(o.Text, {
           variant: "text-xxs/medium",
-          className: R.headerRank,
+          className: P.headerRank,
           children: "#"
         }), (0, r.jsx)(o.Text, {
           variant: "text-xxs/medium",
-          className: R.headerPlayer,
+          className: P.headerPlayer,
           children: C.intl.string(C.t["6ii1+/"])
         }), (0, r.jsx)(o.Text, {
           variant: "text-xxs/medium",
-          className: R.headerValue,
+          className: P.headerValue,
           children: (0, E.s)({
             statisticId: A,
             sortDesc: N,
-            aggregationType: null == P ? void 0 : P.aggregation_type
+            aggregationType: null == R ? void 0 : R.aggregation_type
           })
         })]
       }), (0, r.jsxs)(o.u2D, {
-        className: R.rows,
+        className: P.rows,
         children: [m.map(e => (0, i.createElement)(G, L(w({}, e), {
           key: e.userId,
           guildId: t.guild_id,
@@ -175,14 +175,14 @@ function U(e) {
   return (0, r.jsx)(O.z, {
     imageUrl: n,
     children: (0, r.jsxs)("span", {
-      className: R.emptyTitleContainer,
+      className: P.emptyTitleContainer,
       children: [(0, r.jsx)(o.Text, {
         tag: "span",
         variant: "text-lg/normal",
-        className: R.emptyTitle,
+        className: P.emptyTitle,
         children: C.intl.string(C.t.BfRGk5)
       }), (0, r.jsx)(T.Z, {
-        className: R.emptyWinnerImage,
+        className: P.emptyWinnerImage,
         leaderboard: t
       })]
     })
@@ -199,7 +199,7 @@ function G(e) {
     locale: d,
     leaderboard: p,
     trackRankingItemInteraction: E
-  } = e, b = (0, a.e7)([_.default], () => _.default.getUser(t)), y = h.ZP.getName(c, void 0, b), v = null != u && u > n, [O, P] = i.useState("default"), D = (0, a.e7)([f.Z], () => {
+  } = e, b = (0, a.e7)([_.default], () => _.default.getUser(t)), y = h.ZP.getName(c, void 0, b), v = null != u && u > n, [O, R] = i.useState("default"), D = (0, a.e7)([f.Z], () => {
     let e = f.Z.getPrimaryActivity(t);
     return (null == e ? void 0 : e.application_id) != null && A.T.includes(e.application_id)
   }), {
@@ -217,12 +217,12 @@ function G(e) {
   }), j = async () => {
     try {
       let e = await M();
-      await g.ZP.copyImageBlob(e, k), P("copied"), null == E || E(N.xP.COPIED_LEADERBOARD_ROW)
+      await g.ZP.copyImageBlob(e, k), R("copied"), null == E || E(N.xP.COPIED_LEADERBOARD_ROW)
     } catch (e) {
-      P("error")
+      R("error")
     }
   }, U = (0, r.jsx)(o.Text, {
-    className: R.tooltip,
+    className: P.tooltip,
     variant: "text-sm/medium",
     children: "copied" === O ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.kSu, {
@@ -239,11 +239,11 @@ function G(e) {
     })
   });
   return (0, r.jsxs)("div", {
-    className: R.userRow,
+    className: P.userRow,
     children: [v ? (0, r.jsx)("div", {
-      className: R.rankChangeIndicator
+      className: P.rankChangeIndicator
     }) : null, (0, r.jsx)("div", {
-      className: R.userRank,
+      className: P.userRank,
       children: n <= 3 ? (0, r.jsx)(I._, {
         rank: n
       }) : (0, r.jsx)(o.Text, {
@@ -253,7 +253,7 @@ function G(e) {
         children: n
       })
     }), (0, r.jsxs)("div", {
-      className: R.userPlayer,
+      className: P.userPlayer,
       children: [(0, r.jsx)(o.qEK, {
         src: null == b ? void 0 : b.getAvatarURL(c, 16),
         size: o.EFr.SIZE_16,
@@ -271,33 +271,33 @@ function G(e) {
           size: 4,
           horizontal: !0
         }), (0, r.jsx)(T.Z, {
-          className: R.userWinnerImage,
+          className: P.userWinnerImage,
           leaderboard: p
         })]
-      }) : null, v ? (0, r.jsx)(F, {
+      }) : null, v ? (0, r.jsx)(V, {
         rankChange: u - n
       }) : null]
     }), (0, r.jsxs)("div", {
-      className: R.badgesContainer,
+      className: P.badgesContainer,
       children: [D && (0, r.jsx)(o.iWm, {
         size: "xs",
         color: o.TVs.colors.TEXT_POSITIVE,
-        className: R.liveIcon
+        className: P.liveIcon
       }), m.isPlatformEmbedded && (0, r.jsx)(o.ua7, {
         text: U,
         "aria-label": !1,
         shouldShow: !x,
-        onTooltipHide: () => P("default"),
+        onTooltipHide: () => R("default"),
         children: e => (0, r.jsx)(o.P3F, L(w({}, e), {
           onClick: x ? void 0 : j,
           "aria-busy": x,
-          className: R.copyLinkContainer,
+          className: P.copyLinkContainer,
           children: x ? (0, r.jsx)(o.$jN, {
             type: o.$jN.Type.SPINNING_CIRCLE_SIMPLE,
-            className: R.copySpinner
+            className: P.copySpinner
           }) : (0, r.jsx)(o.xPt, {
             size: "xs",
-            className: R.copyLink
+            className: P.copyLink
           })
         }))
       })]
@@ -315,23 +315,23 @@ function B(e) {
     leaderboard: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: R.joinLeaderboardCTAContainer,
+    className: P.joinLeaderboardCTAContainer,
     children: [(0, r.jsx)(o.Text, {
       variant: "text-xs/normal",
       children: C.intl.string(C.t.BfRGk5)
     }), (0, r.jsx)(T.Z, {
-      className: R.joinLeaderboardCTAWinnerImage,
+      className: P.joinLeaderboardCTAWinnerImage,
       leaderboard: t
     })]
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     rankChange: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: R.rankChangeBadge,
+    className: P.rankChangeBadge,
     children: [(0, r.jsx)(o.wj7, {
       size: "xxs",
       color: o.TVs.colors.TEXT_MUTED

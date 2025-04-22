@@ -6,7 +6,7 @@ n.d(t, {
   Od: () => w,
   Wj: () => x,
   gK: () => L,
-  oD: () => R,
+  oD: () => P,
   vH: () => C
 }), n(35282), n(704826), n(539854), n(388685);
 var r = n(192379),
@@ -42,12 +42,12 @@ function C(e) {
   return (0, O.Xu)(e) ? t ? 2 : 3 : 1
 }
 
-function R(e, t) {
+function P(e, t) {
   var n;
   return 3 === t || null != (n = e.isPrivate) && n
 }
 
-function P(e, t) {
+function R(e, t) {
   return e.length > t ? e.substring(0, t) + "..." : e
 }
 
@@ -56,9 +56,9 @@ function w(e, t) {
   let c = null == t ? null : m.Z.getMessage(e.id, t),
     u = null != (o = null == c || null == (r = c.embeds) || null == (n = r[0]) ? void 0 : n.rawTitle) ? o : "",
     d = null != (s = null == c || null == (a = c.poll) || null == (i = a.question) ? void 0 : i.text) ? s : "";
-  if ("" !== u) return P(u, 40);
+  if ("" !== u) return R(u, 40);
   {
-    if ("" !== d) return P(d, 80);
+    if ("" !== d) return R(d, 80);
     let t = f.ZP.unparse(null != (l = null == c ? void 0 : c.content) ? l : "", e.id, !0),
       n = (0, I.Z)(t.split("\n")[0], !0);
     n = n.replace(/^[ #-]+/, "");
@@ -77,7 +77,7 @@ function w(e, t) {
       if (t.length > 40) break;
       i = t
     }
-    return P(i, 40)
+    return R(i, 40)
   }
 }
 
@@ -95,7 +95,7 @@ function D(e) {
   return r.useCallback(async (e, r, _) => {
     var m;
     let g = null == n,
-      E = R(a, o),
+      E = P(a, o),
       b = null != (m = a.name) ? m : "";
     if ("" === b && d) {
       let e = w(t, n);

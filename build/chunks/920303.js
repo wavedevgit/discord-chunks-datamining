@@ -37,10 +37,10 @@ let y = 25,
   A = l.z.LATEST_ACTIVITY,
   N = [],
   C = 0,
-  R = s.z.MATCH_SOME;
+  P = s.z.MATCH_SOME;
 
-function P() {
-  v = !1, O = !0, I = !1, S = !1, T = null, A = l.z.LATEST_ACTIVITY, r = new Set, C = 0, N = [], R = s.z.MATCH_SOME
+function R() {
+  v = !1, O = !0, I = !1, S = !1, T = null, A = l.z.LATEST_ACTIVITY, r = new Set, C = 0, N = [], P = s.z.MATCH_SOME
 }
 
 function w(e, t) {
@@ -48,11 +48,11 @@ function w(e, t) {
 }
 
 function D(e) {
-  e.channelId === T && e.sortOrder === A && (0, m.OL)(e.tagFilter, r) && e.tagSetting === R || P(), T = e.channelId, A = e.sortOrder, r = e.tagFilter instanceof Set ? e.tagFilter : new Set(e.tagFilter), R = e.tagSetting, v = !0, O = !1
+  e.channelId === T && e.sortOrder === A && (0, m.OL)(e.tagFilter, r) && e.tagSetting === P || R(), T = e.channelId, A = e.sortOrder, r = e.tagFilter instanceof Set ? e.tagFilter : new Set(e.tagFilter), P = e.tagSetting, v = !0, O = !1
 }
 
 function L(e) {
-  if (e.channelId !== T || e.sortOrder !== A || !(0, m.OL)(e.tagFilter, r) || e.tagSetting !== R) return !1;
+  if (e.channelId !== T || e.sortOrder !== A || !(0, m.OL)(e.tagFilter, r) || e.tagSetting !== P) return !1;
   let t = e.threads.filter(e => _.AW.has(e.type)).map(e => e.id);
   N = N.concat(t);
   let n = p.Z.getChannel(T);
@@ -78,9 +78,9 @@ function M() {
   N = o()(p.Z.getAllThreadsForParent(T)).filter(e => e.isArchivedThread()).filter(t => {
     if (0 !== r.size) {
       var i, a;
-      if (R === s.z.MATCH_SOME) {
+      if (P === s.z.MATCH_SOME) {
         if ((null == (i = t.appliedTags) ? void 0 : i.some(e => r.has(e))) !== !0) return !1
-      } else if (R === s.z.MATCH_ALL) {
+      } else if (P === s.z.MATCH_ALL) {
         for (let e of r.values())
           if ((null == (a = t.appliedTags) ? void 0 : a.includes(e)) !== !0) return !1
       }
@@ -94,13 +94,13 @@ function M() {
 }
 
 function k(e) {
-  if (e.channelId !== T || e.sortOrder !== A || !(0, m.OL)(e.tagFilter, r) || e.tagSetting !== R) return !1;
+  if (e.channelId !== T || e.sortOrder !== A || !(0, m.OL)(e.tagFilter, r) || e.tagSetting !== P) return !1;
   v = !1, S = !0, O = !1
 }
 
 function j(e) {
   if (e.channel.id !== T) return !1;
-  P()
+  R()
 }
 
 function U(e) {
@@ -121,8 +121,8 @@ function B(e) {
   } = e;
   return T === t.parent_id && !!(0, d.yv)(t.id) && void U(t.id)
 }
-let F = [];
-class V extends(i = c.ZP.Store) {
+let V = [];
+class F extends(i = c.ZP.Store) {
   initialize() {
     this.waitFor(p.Z, E.Z, h.ZP)
   }
@@ -136,15 +136,15 @@ class V extends(i = c.ZP.Store) {
     return O
   }
   isLoading(e, t, n, i) {
-    return T === e && A === t && (0, m.OL)(r, n) && R === i ? v : (P(), !1)
+    return T === e && A === t && (0, m.OL)(r, n) && P === i ? v : (R(), !1)
   }
   getThreads(e, t, n, i) {
-    return T === e && A === t && (0, m.OL)(r, n) && R === i ? N : F
+    return T === e && A === t && (0, m.OL)(r, n) && P === i ? N : V
   }
 }
-b(V, "displayName", "ArchivedThreadsStore");
-let Z = new V(u.Z, {
-  CONNECTION_OPEN: P,
+b(F, "displayName", "ArchivedThreadsStore");
+let Z = new F(u.Z, {
+  CONNECTION_OPEN: R,
   THREAD_DELETE: G,
   THREAD_UPDATE: B,
   CHANNEL_DELETE: j,

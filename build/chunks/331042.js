@@ -30,8 +30,8 @@ var r = n(200651),
   A = n(350327),
   N = n(507808),
   C = n(594174),
-  R = n(626135),
-  P = n(585483),
+  P = n(626135),
+  R = n(585483),
   w = n(597688),
   D = n(1870),
   L = n(429368),
@@ -42,8 +42,8 @@ var r = n(200651),
   U = n(905357),
   G = n(328456),
   B = n(624377),
-  F = n(530618),
-  V = n(141011),
+  V = n(530618),
+  F = n(141011),
   Z = n(372654),
   H = n(197831),
   Y = n(508925),
@@ -256,7 +256,7 @@ let ec = 880,
       return null != e ? w.Z.getProduct(e) : void 0
     }, [O, I.skuId, I.type, T]), {
       confettiColors: N
-    } = (0, B.Z)(I.styles), R = (0, f.e7)([h.Z], () => h.Z.useReducedMotion), P = i.useRef(null), {
+    } = (0, B.Z)(I.styles), P = (0, f.e7)([h.Z], () => h.Z.useReducedMotion), R = i.useRef(null), {
       analyticsLocations: D
     } = (0, g.ZP)([...l, m.Z.COLLECTIBLES_COLLECTED_MODAL]), {
       collectedModalBackground: L
@@ -280,7 +280,7 @@ let ec = 880,
           className: ei.bannerContainer,
           children: [b ? (0, r.jsx)("div", {
             className: ei.promotionalBanner
-          }) : (0, r.jsx)(V.Z, {
+          }) : (0, r.jsx)(F.Z, {
             asset: L,
             size: (0, Z.ML)(ec),
             className: ei.decorationBanner,
@@ -288,7 +288,7 @@ let ec = 880,
           }), (0, r.jsx)(ef, {
             product: I,
             pairedProduct: A,
-            reducedMotion: R
+            reducedMotion: P
           })]
         }), (0, r.jsx)(eh, {
           product: I,
@@ -311,10 +311,10 @@ let ec = 880,
       value: D,
       children: [(0, r.jsx)("div", {
         className: ei.modalInner,
-        ref: P,
+        ref: R,
         children: x()
-      }), !s && !R && (0, r.jsx)(F.Z, {
-        confettiTarget: null != a ? a : P.current,
+      }), !s && !P && (0, r.jsx)(V.Z, {
+        confettiTarget: null != a ? a : R.current,
         confettiCanvas: o,
         sprites: (0, Z.vK)(I.categorySkuId),
         colors: null == N ? void 0 : N.map(e => e.toHexString())
@@ -346,7 +346,7 @@ let ec = 880,
     i.useEffect(() => {
       $.Vt.ORB_PROFILE_BADGE === n.skuId && (0, A.Ls)([(0, W.X2)()], ep)
     }, [n.skuId]);
-    let R = i.useMemo(() => null != l ? l : $.Vt.ORB_PROFILE_BADGE === n.skuId ? er.intl.string(en.default.nvaTQk) : g ? er.intl.format(new Date < $.a$ ? er.t.BhGU09 : er.t.Jfv5Qk, {
+    let P = i.useMemo(() => null != l ? l : $.Vt.ORB_PROFILE_BADGE === n.skuId ? er.intl.string(en.default.nvaTQk) : g ? er.intl.format(new Date < $.a$ ? er.t.BhGU09 : er.t.Jfv5Qk, {
         purchased_item: h,
         suggested_item: m
       }) : p && !f ? er.intl.string(er.t["1xr2SU"]) : er.intl.format(er.t.YNaxMj, {
@@ -361,7 +361,7 @@ let ec = 880,
         children: [(0, r.jsx)(_.zxk, {
           color: _.Ttl.BRAND,
           onClick: () => {
-            o(), P.S.dispatch(ee.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, {})
+            o(), R.S.dispatch(ee.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, {})
           },
           children: er.intl.string(en.default.yfwZu7)
         }), (0, r.jsx)(_.zxk, {
@@ -382,7 +382,7 @@ let ec = 880,
         className: ei.collectedTextContainer,
         children: [(0, r.jsx)(_.X6q, {
           variant: "heading-lg/bold",
-          children: R
+          children: P
         }), (0, r.jsx)(_.Text, {
           variant: "text-sm/normal",
           children: w
@@ -479,7 +479,7 @@ let ec = 880,
       analyticsLocations: S
     } = (0, g.ZP)([...s, m.Z.COLLECTIBLES_COLLECTED_MODAL]), T = i.useMemo(() => (0, x.jm)(b.type, b.skuId), [b.type, b.skuId]);
     return i.useEffect(() => {
-      R.default.track(ee.rMx.OPEN_MODAL, {
+      P.default.track(ee.rMx.OPEN_MODAL, {
         type: ee.jXE.COLLECTIBLES_SHOP_COLLECTED_MODAL,
         location_stack: S,
         sku_id: b.skuId,

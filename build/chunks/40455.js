@@ -107,8 +107,8 @@ class T extends o.Z {
     super({
       CACHE_LOADED_LAZY_NO_CACHE: M,
       CACHE_LOADED_LAZY: () => this.loadCache(),
-      CHANNEL_DELETE: P,
-      CHANNEL_UPDATES: R,
+      CHANNEL_DELETE: R,
+      CHANNEL_UPDATES: P,
       CONNECTION_OPEN_SUPPLEMENTAL: N,
       GUILD_DELETE: L,
       LOGIN_SUCCESS: x,
@@ -134,11 +134,11 @@ function C(e) {
   n && t === r && T.recordChannel(t), n || T.deleteChannel(t)
 }
 
-function R(e) {
+function P(e) {
   for (let t of e.channels) C(t)
 }
 
-function P(e) {
+function R(e) {
   T.deleteChannel(e.channel.id)
 }
 

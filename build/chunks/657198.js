@@ -122,11 +122,11 @@ let I = e => {
     A = (0, l.e7)([f.Z], () => f.Z.getUpload(n, a.optionName, d.d.SlashCommand), [n, a.optionName]),
     N = a.children[a.children.length - 1],
     C = null != N && h.LC.isText(N) && N.text.endsWith("\n"),
-    R = o()(g.inlineElement, g.optionPill, {
+    P = o()(g.inlineElement, g.optionPill, {
       [g.selectedPill]: O && y,
       [g.erroredPill]: (!O || !y) && T
     }),
-    P = i.useCallback(() => {
+    R = i.useCallback(() => {
       h.bN.isVoid(I, a) || p.Q.selectCommandOption(I, a.optionName, !0)
     }, [I, a]);
   return t = S === c.jw.ATTACHMENT ? (null == A ? void 0 : A.filename) != null ? (0, r.jsxs)("span", {
@@ -144,11 +144,11 @@ let I = e => {
       contentEditable: !1
     }) : null]
   }), (0, r.jsxs)("span", v(b({}, _), {
-    className: R,
+    className: P,
     children: [(0, r.jsxs)("span", {
       className: g.optionPillKey,
       contentEditable: !1,
-      onClick: P,
+      onClick: R,
       children: [a.optionDisplayName, "​"]
     }), t, (0, r.jsx)("span", {
       contentEditable: !1,

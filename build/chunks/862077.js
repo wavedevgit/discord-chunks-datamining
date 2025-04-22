@@ -55,10 +55,10 @@ function S(e) {
     roleId: A,
     openedAt: N,
     onHide: C,
-    newAnalyticsLocations: R = []
-  } = e, P = (0, a.e7)([c.Z], () => c.Z.isBlocked(t.id)), {
+    newAnalyticsLocations: P = []
+  } = e, R = (0, a.e7)([c.Z], () => c.Z.isBlocked(t.id)), {
     analyticsLocations: w
-  } = (0, l.ZP)([...R, P ? s.Z.BLOCKED_PROFILE_POPOUT : s.Z.IGNORED_PROFILE_POPOUT]), D = (0, d.ZB)({
+  } = (0, l.ZP)([...P, R ? s.Z.BLOCKED_PROFILE_POPOUT : s.Z.IGNORED_PROFILE_POPOUT]), D = (0, d.ZB)({
     layout: "POPOUT",
     userId: t.id,
     guildId: n,
@@ -69,7 +69,7 @@ function S(e) {
   i.useEffect(() => {
     null == O || O(null == L ? void 0 : L.current)
   }, [L, O]);
-  let M = P ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE";
+  let M = R ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE";
   return (0, r.jsx)(l.Gt, {
     value: w,
     children: (0, r.jsx)(d.Mt, {
@@ -84,7 +84,7 @@ function S(e) {
         children: (0, r.jsx)(h.Z, {
           user: t,
           displayProfile: x,
-          profileType: E.y0.BITE_SIZE,
+          themeType: E.lY.POPOUT,
           children: (0, r.jsxs)("div", {
             className: y.container,
             children: [(0, r.jsx)("img", {
@@ -104,14 +104,14 @@ function S(e) {
                   children: b.intl.string(b.t.b33pLC)
                 }), (0, r.jsx)(o.Text, {
                   variant: "text-sm/medium",
-                  children: b.intl.format(P ? b.t["8F+WNz"] : b.t["/cZp5u"], {
+                  children: b.intl.format(R ? b.t["8F+WNz"] : b.t["/cZp5u"], {
                     username: u.ZP.getName(n, S, t)
                   })
                 })]
               }), (0, r.jsxs)(o.Kqy, {
                 align: "center",
                 children: [(0, r.jsx)(g.Z, {
-                  isBlocked: P,
+                  isBlocked: R,
                   onClick: () => {
                     C(), (0, f.pQ)(I({
                       action: M,

@@ -43,11 +43,11 @@ function C() {
   b.clear(), S.clear()
 }
 
-function R() {
+function P() {
   O = 1
 }
 
-function P(e) {
+function R(e) {
   let {
     updates: t
   } = e;
@@ -134,7 +134,7 @@ let B = a().debounce((e, t) => {
   })
 }, 1e3);
 
-function F(e) {
+function V(e) {
   let {
     volume: t,
     location: n
@@ -142,7 +142,7 @@ function F(e) {
   B(t, n)
 }
 
-function V(e) {
+function F(e) {
   var t, n;
   let r = null != (n = null == e || null == (t = e.audioContextSettings) ? void 0 : t.user) ? n : {};
   for (let [e, t] of Object.entries(r)) t.soundboardMuted ? y.add(e) : y.delete(e);
@@ -159,7 +159,7 @@ function Z(e) {
   if (n === m.yP.FRECENCY_AND_FAVORITES_SETTINGS) {
     var i, a;
     I = new Set(null != (a = null == r || null == (i = r.favoriteSoundboardSounds) ? void 0 : i.soundIds) ? a : [])
-  } else n === m.yP.PRELOADED_USER_SETTINGS && V(r)
+  } else n === m.yP.PRELOADED_USER_SETTINGS && F(r)
 }
 
 function H(e) {
@@ -177,7 +177,7 @@ function Y(e) {
 }
 class W extends(r = o.ZP.Store) {
   initialize() {
-    this.waitFor(c.Z), V(c.Z.settings)
+    this.waitFor(c.Z), F(c.Z.settings)
   }
   getOverlaySerializedState() {
     return {
@@ -243,7 +243,7 @@ class W extends(r = o.ZP.Store) {
 g(W, "displayName", "SoundboardStore");
 let K = new W(s.Z, {
   LOGOUT: N,
-  GUILD_SOUNDBOARD_FETCH: R,
+  GUILD_SOUNDBOARD_FETCH: P,
   GUILD_SOUNDBOARD_SOUND_CREATE: D,
   GUILD_SOUNDBOARD_SOUND_UPDATE: D,
   GUILD_SOUNDBOARD_SOUND_DELETE: M,
@@ -251,12 +251,12 @@ let K = new W(s.Z, {
   GUILD_SOUNDBOARD_SOUND_PLAY_END: G,
   GUILD_SOUNDBOARD_SOUNDS_UPDATE: L,
   GUILD_SOUNDBOARD_TOGGLE_SHOW_ALL: x,
-  USER_SOUNDBOARD_SET_VOLUME: F,
+  USER_SOUNDBOARD_SET_VOLUME: V,
   VOICE_CHANNEL_SELECT: C,
   USER_SETTINGS_PROTO_UPDATE: Z,
   SOUNDBOARD_FETCH_DEFAULT_SOUNDS: k,
   SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS: j,
-  SOUNDBOARD_SOUNDS_RECEIVED: P,
+  SOUNDBOARD_SOUNDS_RECEIVED: R,
   GUILD_DELETE: w,
   AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: H,
   OVERLAY_INITIALIZE: Y

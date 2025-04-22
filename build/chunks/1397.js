@@ -26,8 +26,8 @@ var r = n(200651),
   O = n(33154),
   E = n(144114),
   I = n(703656),
-  P = n(210887),
-  S = n(606956),
+  S = n(210887),
+  P = n(606956),
   Z = n(271383),
   N = n(430824),
   T = n(607744),
@@ -326,7 +326,7 @@ function V(e) {
   let {
     channel: i,
     children: l
-  } = e, o = i.getGuildId(), s = (0, a.e7)([N.Z], () => N.Z.getGuild(o)), c = (0, a.e7)([T.Z], () => T.Z.getCheck(o)), u = i.type === M.d4z.GUILD_ANNOUNCEMENT && null != s && s.hasFeature(M.oNc.NEWS), d = (0, a.e7)([S.Z], () => u ? S.Z.getFollowerStatsForChannel(i.id) : null), h = (0, a.e7)([v.Z], () => v.Z.isLurking(o)), f = (0, a.e7)([w.default], () => w.default.getCurrentUser()), m = null != (t = null == f ? void 0 : f.isStaff()) && t, g = (0, a.e7)([Z.ZP], () => {
+  } = e, o = i.getGuildId(), s = (0, a.e7)([N.Z], () => N.Z.getGuild(o)), c = (0, a.e7)([T.Z], () => T.Z.getCheck(o)), u = i.type === M.d4z.GUILD_ANNOUNCEMENT && null != s && s.hasFeature(M.oNc.NEWS), d = (0, a.e7)([P.Z], () => u ? P.Z.getFollowerStatsForChannel(i.id) : null), h = (0, a.e7)([v.Z], () => v.Z.isLurking(o)), f = (0, a.e7)([w.default], () => w.default.getCurrentUser()), m = null != (t = null == f ? void 0 : f.isStaff()) && t, g = (0, a.e7)([Z.ZP], () => {
     var e, t;
     return null != f && null != (t = null == (e = Z.ZP.getMember(o, f.id)) ? void 0 : e.isPending) && t
   }), C = !!(0, _.Dc)(s), j = (g || c.notClaimed) && C, O = (0, a.e7)([x.Z], () => x.Z.shouldShowPopout(o)), E = (0, a.e7)([A.Z], () => A.Z.can(M.Plq.SEND_MESSAGES, i)), I = (0, a.e7)([y.Z], () => y.Z.getRequest(o)), k = F(G({}, c), {
@@ -335,7 +335,7 @@ function V(e) {
     isFollowable: u,
     shouldShowLurkerModeSuccessPopout: O,
     showLurkerModeUpsellPopout: h && null != s && R.Uu(M.Plq.SEND_MESSAGES, i),
-    theme: P.Z.theme,
+    theme: S.Z.theme,
     canSendMessages: E,
     channelFollowingUsersSeen: null != d ? d.usersSeenEver : null,
     hasVerificationGate: C,

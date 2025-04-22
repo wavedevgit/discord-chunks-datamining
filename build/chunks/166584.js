@@ -80,15 +80,15 @@ function C(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let R = 4,
-  P = 268,
+let P = 4,
+  R = 268,
   w = 2,
   D = e => {
     if (null == e) return 0;
     let {
       width: t
     } = e.getBoundingClientRect();
-    return t > 0 ? t + R : 0
+    return t > 0 ? t + P : 0
   };
 
 function L(e) {
@@ -104,34 +104,34 @@ function L(e) {
     onRemoveRole: I
   } = e, T = i.useRef({}), C = (e, t) => {
     null != t ? T.current[e] = t : delete T.current[e]
-  }, [L, x] = i.useState(d), [M, k] = i.useState(P), [j, U] = i.useState(!1), G = i.useRef(null), B = i.useRef(null), F = i.useRef(0);
+  }, [L, x] = i.useState(d), [M, k] = i.useState(R), [j, U] = i.useState(!1), G = i.useRef(null), B = i.useRef(null), V = i.useRef(0);
   i.useLayoutEffect(() => {
-    F.current = 0
+    V.current = 0
   }, [d]), i.useLayoutEffect(() => {
     if (j) return;
     let e = D(G.current),
       t = D(B.current),
       n = [],
-      r = P - e - t;
+      r = R - e - t;
     for (let e = 0; e < w; e++) {
-      let t = e === w - 1 ? r : P;
+      let t = e === w - 1 ? r : R;
       for (let e = 0, r = n.length; r < d.length; r++) {
         let i = d[r],
           a = T.current[i.id];
         if (null == a) {
-          0 === F.current && n.push(i);
+          0 === V.current && n.push(i);
           continue
         }
         let o = Math.min(a.getBoundingClientRect().width, t);
         if (e + o > t) break;
-        e += o + R, n.push(i)
+        e += o + P, n.push(i)
       }
     }
-    x(n.length === L.length ? L : n), k(r), F.current++
+    x(n.length === L.length ? L : n), k(r), V.current++
   }, [d, L, j]);
-  let V = i.useMemo(() => "roles-".concat((0, a.Z)()), []),
+  let F = i.useMemo(() => "roles-".concat((0, a.Z)()), []),
     Z = (0, o.ZP)({
-      id: V,
+      id: F,
       isEnabled: !0,
       scrollToStart: y.Cyb,
       scrollToEnd: y.Cyb,
@@ -147,7 +147,7 @@ function L(e) {
         role: e,
         guildId: l.id,
         style: {
-          maxWidth: j || i !== L.length - 1 ? P : M
+          maxWidth: j || i !== L.length - 1 ? R : M
         },
         disableBorderColor: !0,
         ref: t => C(e.id, t),

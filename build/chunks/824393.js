@@ -31,8 +31,8 @@ var r = n(200651),
   A = n(675654),
   N = n(474936),
   C = n(388032),
-  R = n(639220),
-  P = n(851750),
+  P = n(639220),
+  R = n(851750),
   w = n(946790),
   D = n(593639);
 
@@ -63,24 +63,24 @@ function L(e) {
       })
     })
   }, [m, g, T]);
-  let P = "loading" === N.state,
+  let R = "loading" === N.state,
     w = !O && !T && "claimed" === N.state,
     D = "claimed" === N.state && null != N.entitlements && N.entitlements.items.some(e => e.consumed);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.O_, {
       ref: y,
-      className: R.confettiCanvas,
+      className: P.confettiCanvas,
       environment: v.current
     }), (0, r.jsx)("div", {
       ref: E,
       children: (0, r.jsx)(c.Y0X, {
         transitionState: f,
         size: c.CgR.DYNAMIC,
-        className: o()(R.rootContainer, {
-          [R.rootContainerLoading]: P
+        className: o()(P.rootContainer, {
+          [P.rootContainerLoading]: R
         }),
         hideShadow: !0,
-        children: P ? (0, r.jsx)(c.$jN, {
+        children: R ? (0, r.jsx)(c.$jN, {
           type: c.$jN.Type.SPINNING_CIRCLE
         }) : "error" === N.state ? (0, r.jsx)(x, {
           errorReason: N.errorReason,
@@ -109,23 +109,23 @@ function x(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(c.xBx, {
       separator: !1,
-      className: R.errorHeader,
+      className: P.errorHeader,
       children: [(0, r.jsx)(c.X6q, {
-        className: R.errorTitle,
+        className: P.errorTitle,
         variant: "heading-xl/medium",
         children: C.intl.string(C.t["UleS9/"])
       }), (0, r.jsx)(c.olH, {
         onClick: t,
-        className: R.errorModalCloseButton
+        className: P.errorModalCloseButton
       })]
     }), (0, r.jsx)(c.hzk, {
-      className: R.errorContent,
+      className: P.errorContent,
       children: (0, r.jsx)(c.Text, {
         variant: "text-md/normal",
         children: n
       })
     }), (0, r.jsx)(c.mzw, {
-      className: R.errorModalFooter,
+      className: P.errorModalFooter,
       children: (0, r.jsx)(c.zxk, {
         color: c.zxk.Colors.BRAND,
         size: c.zxk.Sizes.MEDIUM,
@@ -157,47 +157,47 @@ function k(e) {
     (0, g.$)(n)
   }, [n]);
   return o.fractionalState === N.a$.NONE ? (0, r.jsx)("div", {
-    className: R.spinnerContainer,
+    className: P.spinnerContainer,
     children: (0, r.jsx)(c.$jN, {
       type: c.$jN.Type.SPINNING_CIRCLE
     })
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: R.nitroHeaderContainer,
+      className: P.nitroHeaderContainer,
       children: [(0, r.jsx)("div", {
-        className: R.nitroHeaderClouds
+        className: P.nitroHeaderClouds
       }), (0, r.jsx)(b.Z, {
-        className: R.nitroHeaderWordmark
+        className: P.nitroHeaderWordmark
       }), (0, r.jsx)(c.Eep, {
         src: w,
         width: 110,
         height: 82,
         zoomable: !1,
-        className: R.nitroHeaderWumpus
+        className: P.nitroHeaderWumpus
       }), (0, r.jsx)(c.olH, {
-        className: R.nitroHeaderClose,
+        className: P.nitroHeaderClose,
         onClick: n
       })]
     }), (0, r.jsxs)(c.mzw, {
-      className: R.footerContainer,
+      className: P.footerContainer,
       separator: !1,
       children: [(0, r.jsx)(m.Z, {
-        className: R.beta
+        className: P.beta
       }), (0, r.jsx)(E.C, {
-        className: R.nitroHeading,
+        className: P.nitroHeading,
         premiumType: N.p9.TIER_2,
         type: E.C.Types.PREMIUM_ACTIVATED,
         theme: a
       }), (0, r.jsx)(c.Text, {
         variant: "text-md/normal",
-        className: R.text,
+        className: P.text,
         children: C.intl.format(C.t.tgc1oq, {
           helpCenterLink: v.Z.getArticleURL(T.BhN.FRACTIONAL_PREMIUM_ABOUT),
           duration: t,
           expirationDate: s
         })
       }), (0, r.jsx)(c.zxk, {
-        className: R.cta,
+        className: P.cta,
         onClick: l,
         children: C.intl.string(C.t["eQX+go"])
       })]
@@ -215,7 +215,7 @@ function j(e) {
     u.Z.open(T.oAB.SUBSCRIPTIONS, null, {}), n()
   }, [n]);
   if (!a.fetched) return (0, r.jsx)("div", {
-    className: R.spinnerContainer,
+    className: P.spinnerContainer,
     children: (0, r.jsx)(c.$jN, {
       type: c.$jN.Type.SPINNING_CIRCLE
     })
@@ -227,17 +227,17 @@ function j(e) {
   return (0, r.jsx)(c.f6W, {
     theme: s,
     children: e => (0, r.jsxs)("div", {
-      className: o()(R.claimedRootContainer, e),
+      className: o()(P.claimedRootContainer, e),
       children: [(0, r.jsxs)("div", {
-        className: R.headerContainer,
+        className: P.headerContainer,
         children: [(0, r.jsx)("img", {
-          className: R.headerBackground,
-          src: P,
+          className: P.headerBackground,
+          src: R,
           alt: C.intl.string(C.t["8SsCa2"])
         }), (0, r.jsx)(m.Z, {
-          className: R.beta
+          className: P.beta
         }), (0, r.jsxs)("div", {
-          className: R.headerForeground,
+          className: P.headerForeground,
           children: [(0, r.jsx)("div", {
             children: (0, r.jsx)("img", {
               src: D,
@@ -245,24 +245,24 @@ function j(e) {
               height: 120
             })
           }), (0, r.jsx)(c.olH, {
-            className: R.close,
+            className: P.close,
             withCircleBackground: !0,
             onClick: n
           })]
         })]
       }), (0, r.jsxs)(c.mzw, {
-        className: R.footerContainer,
+        className: P.footerContainer,
         separator: !1,
         children: [(0, r.jsx)(c.X6q, {
           variant: "heading-lg/bold",
-          className: R.heading,
+          className: P.heading,
           children: C.intl.string(C.t["+PHEo6"])
         }), (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
-          className: R.text,
+          className: P.text,
           children: d
         }), (0, r.jsx)(c.zxk, {
-          className: R.cta2,
+          className: P.cta2,
           onClick: l,
           children: C.intl.string(C.t.LnsQGR)
         })]

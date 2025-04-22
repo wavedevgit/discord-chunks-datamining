@@ -29,8 +29,8 @@ var r = n(200651),
   A = n(158776),
   N = n(938475),
   C = n(960870),
-  R = n(139793),
-  P = n(510659),
+  P = n(139793),
+  R = n(510659),
   w = n(287954),
   D = n(660579),
   L = n(652853),
@@ -41,8 +41,8 @@ var r = n(200651),
   U = n(315324),
   G = n(788858),
   B = n(384298),
-  F = n(386019),
-  V = n(228168),
+  V = n(386019),
+  F = n(228168),
   Z = n(981631),
   H = n(388032),
   Y = n(227832),
@@ -59,14 +59,14 @@ function q(e) {
     onClose: Q,
     profileGuildId: X
   } = e, J = i.useRef(null), {
-    profileType: $,
+    themeType: $,
     theme: ee
   } = (0, L.z)(), {
     interactionSource: et,
     interactionSourceId: en
-  } = (0, P.Xo)(), er = {
-    [W.fullSize]: $ === V.y0.FULL_SIZE,
-    [Y.fullSize]: $ === V.y0.FULL_SIZE
+  } = (0, R.Xo)(), er = {
+    [W.fullSize]: $ === F.lY.MODAL,
+    [Y.fullSize]: $ === F.lY.MODAL
   }, ei = (0, s.e7)([S.Z], () => S.Z.getGuild(null == a ? void 0 : a.guildId)), ea = (0, s.e7)([I.Z], () => I.Z.getChannel(null == a ? void 0 : a.channelId)), eo = (0, s.Wu)([N.ZP], () => null != ea ? N.ZP.getVoiceStatesForChannel(ea).map(e => {
     let {
       user: t
@@ -80,7 +80,7 @@ function q(e) {
     user: t,
     stream: a,
     analyticsLocations: el
-  }), eu = (0, R.Z)({
+  }), eu = (0, P.Z)({
     userId: t.id,
     onAction: ec
   }), [ed, ef] = (0, b.wq)(ea), {
@@ -106,7 +106,7 @@ function q(e) {
         children: [(0, r.jsx)("img", {
           alt: "",
           src: ee === Z.BRd.LIGHT ? z : K
-        }), $ !== V.y0.FULL_SIZE && (0, r.jsxs)(r.Fragment, {
+        }), $ !== F.lY.MODAL && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(l.Text, {
             className: W.overlayText,
             variant: "text-sm/medium",
@@ -126,7 +126,7 @@ function q(e) {
           alt: "",
           src: eg,
           className: W.image
-        }), $ !== V.y0.FULL_SIZE && (0, r.jsxs)(r.Fragment, {
+        }), $ !== F.lY.MODAL && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(l.Text, {
             className: W.overlayText,
             variant: "text-sm/medium",
@@ -141,7 +141,7 @@ function q(e) {
       })
     },
     eb = () => {
-      if ($ !== V.y0.FULL_SIZE) return null;
+      if ($ !== F.lY.MODAL) return null;
       let e = e => {
           e.stopPropagation(), null == ec || ec({
             action: "OPEN_VOICE_CHANNEL"
@@ -193,7 +193,7 @@ function q(e) {
         })]
       })
     },
-    ey = () => $ === V.y0.FULL_SIZE ? null : (0, r.jsx)(U.Z, {
+    ey = () => $ === F.lY.MODAL ? null : (0, r.jsx)(U.Z, {
       user: t,
       guild: ei,
       channel: ea,
@@ -209,7 +209,7 @@ function q(e) {
       })
     }),
     eO = e_,
-    eI = et === V.n_.ACTIVITY && en === eO,
+    eI = et === F.n_.ACTIVITY && en === eO,
     eS = null != es ? H.intl.formatToPlainString(H.t["4CQq9f"], {
       name: es.name
     }) : H.intl.string(H.t["Jpkr/v"]);
@@ -217,27 +217,27 @@ function q(e) {
     value: el,
     children: (0, r.jsx)(x.Z, {
       targetElementRef: J,
-      sourceType: V.n_.ACTIVITY,
+      sourceType: F.n_.ACTIVITY,
       user: t,
       children: (0, r.jsx)(w.Z, {
         user: t,
         guildId: X,
-        profileType: $,
+        themeType: $,
         sourceId: eO,
         sourceDetails: eS,
-        sourceType: V.n_.ACTIVITY,
+        sourceType: F.n_.ACTIVITY,
         onAction: ec,
         children: () => (0, r.jsx)(D.Z, {
           ref: J,
           user: t,
           className: Y.toolbarContainer,
           interactionSourceId: eO,
-          sourceType: V.n_.ACTIVITY,
+          sourceType: F.n_.ACTIVITY,
           onAction: ec,
           onShowToolbar: () => ec({
             action: "HOVER_ACTIVITY_CARD"
           }),
-          renderMoreButtonPopout: e => (0, r.jsx)(F.Z, {
+          renderMoreButtonPopout: e => (0, r.jsx)(V.Z, {
             display: "live",
             user: t,
             onClose: Q,
@@ -259,9 +259,9 @@ function q(e) {
               className: Y.body,
               children: [(0, r.jsxs)("div", {
                 className: o()(Y.content, er),
-                children: [eE(), eb(), $ === V.y0.FULL_SIZE && ev()]
+                children: [eE(), eb(), $ === F.lY.MODAL && ev()]
               }), ey()]
-            }), $ !== V.y0.FULL_SIZE && ev()]
+            }), $ !== F.lY.MODAL && ev()]
           })
         })
       })

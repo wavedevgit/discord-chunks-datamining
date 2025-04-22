@@ -89,17 +89,17 @@ let E = e => {
       A = !v && ((0, i.wj)(T) || t),
       N = (0, c.N)(),
       C = null == N ? void 0 : N.subscription_trial,
-      R = (0, s.a5)({
+      P = (0, s.a5)({
         intervalType: null == C ? void 0 : C.interval,
         intervalCount: null == C ? void 0 : C.interval_count
       }),
-      P = (0, l.Ng)(),
+      R = (0, l.Ng)(),
       w = null != C && n === C.sku_id,
       D = (null == N ? void 0 : N.trial_id) === d.a7,
-      L = p ? f.intl.string(f.t.J61px8) : null != P ? b(n, y, g, P.discount.amount) : E({
+      L = p ? f.intl.string(f.t.J61px8) : null != R ? b(n, y, g, R.discount.amount) : E({
         showTrialCTA: w,
         subscriptionTier: n,
-        trialDurationCopy: R,
+        trialDurationCopy: P,
         isPersistentCTA: g,
         shouldShowReferralTrialCopy: D,
         subscriptionTrial: C

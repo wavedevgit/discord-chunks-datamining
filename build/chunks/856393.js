@@ -27,8 +27,8 @@ var r = n(200651),
   O = n(540059),
   E = n(788983),
   I = n(928518),
-  P = n(703656),
-  S = n(493754),
+  S = n(703656),
+  P = n(493754),
   Z = n(880831),
   N = n(73563),
   T = n(800965),
@@ -61,7 +61,7 @@ var r = n(200651),
 let ei = "HasBeenInStageChannel",
   el = (e, t) => () => {
     let n = e.getGuildId();
-    null != n && null != t && (0, P.XU)(n, t), E.hP(e)
+    null != n && null != t && (0, S.XU)(n, t), E.hP(e)
   },
   eo = () => {
     d.Z.wait(() => E.xv(ee.KJ3.CHANNEL_CALL_POPOUT))
@@ -118,7 +118,7 @@ function ec(e) {
   let {
     channel: t
   } = e, n = (0, f.bp)(), i = (0, s.e7)([L.Z], () => L.Z.can(ee.Plq.CREATE_INSTANT_INVITE, t)), l = (0, s.e7)([M.Z], () => M.Z.getGuild(t.guild_id)), o = (0, s.e7)([V.Z], () => V.Z.getStageInstanceByChannel(t.id)), a = i || (null == o ? void 0 : o.invite_code) != null, c = (0, O.Q3)("StageChannelInviteButton");
-  return null != l && a ? (0, r.jsx)(S.Z, {
+  return null != l && a ? (0, r.jsx)(P.Z, {
     size: c ? u.zxk.Sizes.MEDIUM : u.zxk.Sizes.SMALL,
     color: c ? u.zxk.Colors.TRANSPARENT : er.customInviteButtonColors,
     channel: t,
@@ -146,8 +146,8 @@ function eu(e) {
     j = (0, s.e7)([L.Z], () => L.Z.can(ee.Plq.CONNECT, n)),
     E = (0, F.w8)(n.id, H.pV.SPEAKER),
     I = (0, s.e7)([b.Z], () => b.Z.getSelectedParticipant(n.id)),
-    P = h && x !== ee.IlC.POPOUT,
-    S = (0, O.Q3)("StageChannelCallContent"),
+    S = h && x !== ee.IlC.POPOUT,
+    P = (0, O.Q3)("StageChannelCallContent"),
     [T, A] = i.useState(0),
     w = (0, u._q$)("StageChannelCall"),
     {
@@ -180,8 +180,8 @@ function eu(e) {
       height: "calc(100% - ".concat(U, ")"),
       paddingTop: U
     },
-    disableGradients: !!S && !v || 0 === T && N.e.TOP,
-    renderBottomLeft: () => S ? null : (0, r.jsx)(g.Gt, {
+    disableGradients: !!P && !v || 0 === T && N.e.TOP,
+    renderBottomLeft: () => P ? null : (0, r.jsx)(g.Gt, {
       value: C,
       children: (0, r.jsx)(ec, {
         channel: n
@@ -211,7 +211,7 @@ function eu(e) {
       showRequestToSpeakSidebar: c,
       channel: n
     }),
-    renderChatToasts: () => !M || _ || P ? null : (0, r.jsx)(y.ZP, {
+    renderChatToasts: () => !M || _ || S ? null : (0, r.jsx)(y.ZP, {
       children: (0, r.jsx)(Z.Z, {
         className: o()(er.chatToasts, {
           [er.rtsSidebarOpen]: c
@@ -223,11 +223,11 @@ function eu(e) {
     onPreventIdle: () => {},
     onAllowIdle: () => {},
     onForceIdle: () => {},
-    screenMessage: P ? {
+    screenMessage: S ? {
       mainText: en.intl.string(en.t.J5bXZW)
     } : null,
     idle: !1,
-    children: !P && t
+    children: !S && t
   })
 }
 
@@ -244,8 +244,8 @@ function ed(e) {
     popoutWindowAlwaysOnTop: I.Z.getIsAlwaysOnTop(ee.KJ3.CHANNEL_CALL_POPOUT)
   })), O = null != _ && !_.closed, {
     analyticsLocations: E
-  } = (0, g.ZP)(m.Z.STAGE_CHANNEL_CALL), P = (0, f.bp)(), {
-    chatOpen: S,
+  } = (0, g.ZP)(m.Z.STAGE_CHANNEL_CALL), S = (0, f.bp)(), {
+    chatOpen: P,
     participantsListOpen: Z
   } = (0, s.cj)([b.Z], () => ({
     chatOpen: b.Z.getChatOpen(t.id),
@@ -283,7 +283,7 @@ function ed(e) {
   let {
     width: A = 0,
     ref: w
-  } = (0, p.ZP)(), R = A - 550, k = !O || O && P === ee.IlC.POPOUT;
+  } = (0, p.ZP)(), R = A - 550, k = !O || O && S === ee.IlC.POPOUT;
   return (0, r.jsx)(g.Gt, {
     value: E,
     children: (0, r.jsxs)(y.B2, {
@@ -295,7 +295,7 @@ function ed(e) {
           children: e => (0, r.jsx)("div", {
             className: o()(er.callContainer, e, {
               [er.sidebarVisible]: l,
-              [er.sidebarOrChatVisible]: l || S || Z
+              [er.sidebarOrChatVisible]: l || P || Z
             }),
             children: (0, r.jsx)(eu, {
               channel: t,
@@ -304,16 +304,16 @@ function ed(e) {
               popoutWindow: _,
               popoutWindowAlwaysOnTop: j,
               popoutOpen: O,
-              chatOpen: S
+              chatOpen: P
             })
           })
         }), l ? (0, r.jsx)(W.Z, {
           channel: t,
           toggleRequestToSpeakSidebar: d,
-          chatOpen: S
+          chatOpen: P
         }) : null, (0, r.jsxs)("div", {
           className: er.channelChatWrapper,
-          children: [S && k && (0, r.jsx)(C.Z, {
+          children: [P && k && (0, r.jsx)(C.Z, {
             channel: t,
             guild: N,
             maxWidth: R

@@ -54,11 +54,11 @@ function C(e) {
   if (t !== p.pNK.INTEGRATIONS) return !1;
   if (null == r) {
     let e = _.Z.getGuildId();
-    null != e && (u.Z.fetchForGuild(e), O = !0), P(!1)
+    null != e && (u.Z.fetchForGuild(e), O = !0), R(!1)
   }
 }
 
-function R(e) {
+function P(e) {
   let {
     section: t,
     sectionId: n
@@ -66,7 +66,7 @@ function R(e) {
   i = t, N = n
 }
 
-function P(e) {
+function R(e) {
   if (null != (r = _.Z.getProps().guild) && d.Z.can(p.Plq.MANAGE_GUILD, r)) {
     let e = _.Z.getProps().integrations;
     null == e && (I = !0), g = null != e ? e : []
@@ -192,7 +192,7 @@ function B(e) {
   b = null, T = {}, A = !1
 }
 
-function F(e) {
+function V(e) {
   let {
     integrationId: t
   } = e, n = K(t);
@@ -200,7 +200,7 @@ function F(e) {
   y = n, b = null, v = null, T = {}, A = !1
 }
 
-function V() {
+function F() {
   y = null, T = {}, A = !1
 }
 
@@ -217,11 +217,11 @@ function H() {
 }
 
 function Y() {
-  return P(!1)
+  return R(!1)
 }
 
 function W() {
-  return P(!0)
+  return R(!0)
 }
 
 function K(e) {
@@ -304,11 +304,11 @@ let Q = new q(c.Z, __OVERLAY__ ? {} : {
     INTEGRATION_SETTINGS_SAVE_SUCCESS: W,
     GUILD_SETTINGS_INIT: C,
     GUILD_SETTINGS_SET_SECTION: C,
-    INTEGRATION_SETTINGS_SET_SECTION: R,
+    INTEGRATION_SETTINGS_SET_SECTION: P,
     INTEGRATION_SETTINGS_START_EDITING_COMMAND: G,
     INTEGRATION_SETTINGS_STOP_EDITING_COMMAND: B,
-    INTEGRATION_SETTINGS_START_EDITING_INTEGRATION: F,
-    INTEGRATION_SETTINGS_STOP_EDITING_INTEGRATION: V,
+    INTEGRATION_SETTINGS_START_EDITING_INTEGRATION: V,
+    INTEGRATION_SETTINGS_STOP_EDITING_INTEGRATION: F,
     INTEGRATION_SETTINGS_UPDATE_INTEGRATION: L,
     INTEGRATION_SETTINGS_UPDATE_WEBHOOK: x,
     INTEGRATION_SETTINGS_START_EDITING_WEBHOOK: Z,

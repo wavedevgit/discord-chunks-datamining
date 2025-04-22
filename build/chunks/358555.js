@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => R
+  Z: () => P
 });
 var r = n(200651);
 n(192379);
@@ -173,7 +173,7 @@ function C(e) {
   })
 }
 
-function R(e) {
+function P(e) {
   var {
     guild: t,
     disableBoostClick: n

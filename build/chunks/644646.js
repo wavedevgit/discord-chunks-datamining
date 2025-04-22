@@ -45,16 +45,16 @@ let O = function(e) {
         questId: a.id
       }), null == (n = e.onClick) || n.call(e, t)
     }, [S, a.id, e]),
-    R = i.useRef(null),
-    P = i.useRef(O),
+    P = i.useRef(null),
+    R = i.useRef(O),
     w = (0, p.Bg)(a.config);
   return i.useEffect(() => {
-    if (null != R.current) {
+    if (null != P.current) {
       if (!N.isAnimated || A) {
-        R.current.currentTime = 0, R.current.pause();
+        P.current.currentTime = 0, P.current.pause();
         return
       }
-      O && !P.current ? R.current.play() : !O && P.current && (R.current.currentTime = 0, R.current.pause()), P.current = O
+      O && !R.current ? P.current.play() : !O && R.current && (P.current.currentTime = 0, P.current.pause()), R.current = O
     }
   }, [O, N, A]), t = w ? (0, r.jsx)(E.Fl, {
     id: "QuestRewardTile_rewardTileNitro",
@@ -68,7 +68,7 @@ let O = function(e) {
       var t;
       return (0, r.jsx)(d.Z, {
         ref: t => {
-          e.current = t, R.current = t
+          e.current = t, P.current = t
         },
         autoPlay: !A && O,
         loop: !0,

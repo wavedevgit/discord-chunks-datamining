@@ -18,7 +18,7 @@ function f(e) {
   let {
     user: t,
     friendToken: n,
-    profileType: f,
+    themeType: f,
     shouldShowTooltip: _ = !1
   } = e, {
     newestAnalyticsLocation: p
@@ -30,7 +30,7 @@ function f(e) {
     userId: t.id
   }), y = g.length > 0 || E || b;
   if (null == t || t.bot || h || m === d.OGo.BLOCKED) return null;
-  if (m === d.OGo.NONE && y) return f === u.y0.FULL_SIZE ? null : (0, r.jsx)(l.l, {
+  if (m === d.OGo.NONE && y) return f === u.lY.MODAL ? null : (0, r.jsx)(l.l, {
     user: t,
     gameFriends: g,
     hasOutgoingPendingGameFriends: E,
@@ -42,7 +42,7 @@ function f(e) {
     case d.OGo.FRIEND:
     case d.OGo.PENDING_INCOMING:
     case d.OGo.PENDING_OUTGOING:
-      if (f === u.y0.FULL_SIZE && m !== d.OGo.FRIEND) return null;
+      if (f === u.lY.MODAL && m !== d.OGo.FRIEND) return null;
       return (0, r.jsx)(l.PE, {
         user: t,
         relationshipType: m,
@@ -50,7 +50,7 @@ function f(e) {
         shouldShowTooltip: _
       });
     default:
-      if (f === u.y0.FULL_SIZE) return null;
+      if (f === u.lY.MODAL) return null;
       return (0, r.jsx)(l.pM, {
         userId: t.id,
         shouldShowTooltip: _,

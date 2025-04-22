@@ -201,8 +201,8 @@ let I = /\b\B/,
   A = "\\b\\d+(\\.\\d+)?",
   N = "(-?)(\\b0[xX][a-fA-F0-9]+|(\\b\\d+(\\.\\d*)?|\\.\\d+)([eE][-+]?\\d+)?)",
   C = "\\b(0b[01]+)",
-  R = "!|!=|!==|%|%=|&|&&|&=|\\*|\\*=|\\+|\\+=|,|-|-=|/=|/|:|;|<<|<<=|<=|<|===|==|=|>>>=|>>=|>=|>>>|>>|>|\\?|\\[|\\{|\\(|\\^|\\^=|\\||\\|=|\\|\\||~",
-  P = (e = {}) => {
+  P = "!|!=|!==|%|%=|&|&&|&=|\\*|\\*=|\\+|\\+=|,|-|-=|/=|/|:|;|<<|<<=|<=|<|===|==|=|>>>=|>>=|>=|>>>|>>|>|\\?|\\[|\\{|\\(|\\^|\\^=|\\||\\|=|\\|\\||~",
+  R = (e = {}) => {
     let t = /^#![ ]*\//;
     return e.binary && (e.begin = m(t, /.*\b/, e.binary, /\b.*/)), i({
       scope: "meta",
@@ -273,12 +273,12 @@ let I = /\b\B/,
     begin: S,
     relevance: 0
   },
-  F = {
+  V = {
     scope: "title",
     begin: T,
     relevance: 0
   };
-var V = Object.freeze({
+var F = Object.freeze({
   __proto__: null,
   APOS_STRING_MODE: D,
   BACKSLASH_ESCAPE: w,
@@ -323,11 +323,11 @@ var V = Object.freeze({
   PHRASAL_WORDS_MODE: x,
   QUOTE_STRING_MODE: L,
   REGEXP_MODE: G,
-  RE_STARTERS_RE: R,
-  SHEBANG: P,
+  RE_STARTERS_RE: P,
+  SHEBANG: R,
   TITLE_MODE: B,
   UNDERSCORE_IDENT_RE: T,
-  UNDERSCORE_TITLE_MODE: F
+  UNDERSCORE_TITLE_MODE: V
 });
 
 function Z(e, t) {
@@ -591,10 +591,10 @@ let em = r,
       t += e.parentNode ? e.parentNode.className : "";
       let n = c.languageDetectRe.exec(t);
       if (n) {
-        let t = P(n[1]);
+        let t = R(n[1]);
         return t || (er(s.replace("{}", n[1])), er("Falling back to no-highlight mode for this block.", e)), t ? n[1] : "no-highlight"
       }
-      return t.split(/\s+/).find(e => u(e) || P(e))
+      return t.split(/\s+/).find(e => u(e) || R(e))
     }
 
     function g(e, t, n) {
@@ -750,10 +750,10 @@ let em = r,
         if (j > 1e5 && j > 3 * r.index) throw Error("potential infinite loop, way more iterations than matches");
         return x += a, a.length
       }
-      let N = P(e);
+      let N = R(e);
       if (!N) throw en(s.replace("{}", e)), Error('Unknown language: "' + e + '"');
       let C = ed(N),
-        R = "",
+        P = "",
         w = a || C,
         D = {},
         L = new c.__emitter(c);
@@ -776,9 +776,9 @@ let em = r,
           }
           A(t.substring(k))
         }
-        return L.finalize(), R = L.toHTML(), {
+        return L.finalize(), P = L.toHTML(), {
           language: e,
-          value: R,
+          value: P,
           relevance: M,
           illegal: !1,
           _emitter: L,
@@ -795,7 +795,7 @@ let em = r,
             index: k,
             context: t.slice(k - 100, k + 100),
             mode: n.mode,
-            resultSoFar: R
+            resultSoFar: P
           },
           _emitter: L
         };
@@ -826,13 +826,13 @@ let em = r,
     function O(e, t) {
       t = t || c.languages || Object.keys(r);
       let n = v(e),
-        i = t.filter(P).filter(D).map(t => b(t, e, !1));
+        i = t.filter(R).filter(D).map(t => b(t, e, !1));
       i.unshift(n);
       let [a, o] = i.sort((e, t) => {
         if (e.relevance !== t.relevance) return t.relevance - e.relevance;
         if (e.language && t.language) {
-          if (P(e.language).supersetOf === t.language) return 1;
-          else if (P(t.language).supersetOf === e.language) return -1
+          if (R(e.language).supersetOf === t.language) return 1;
+          else if (R(t.language).supersetOf === e.language) return -1
         }
         return 0
       }), s = a;
@@ -891,7 +891,7 @@ let em = r,
       document.querySelectorAll(c.cssSelector).forEach(S)
     }
 
-    function R(t, n) {
+    function P(t, n) {
       let i = null;
       try {
         i = n(e)
@@ -905,7 +905,7 @@ let em = r,
       })
     }
 
-    function P(e) {
+    function R(e) {
       return r[e = (e || "").toLowerCase()] || r[i[e]]
     }
 
@@ -918,7 +918,7 @@ let em = r,
     }
 
     function D(e) {
-      let t = P(e);
+      let t = R(e);
       return t && !t.disableAutodetect
     }
 
@@ -955,14 +955,14 @@ let em = r,
         },
         initHighlighting: T,
         initHighlightingOnLoad: A,
-        registerLanguage: R,
+        registerLanguage: P,
         unregisterLanguage: function(e) {
           for (let t of (delete r[e], Object.keys(i))) i[t] === e && delete i[t]
         },
         listLanguages: function() {
           return Object.keys(r)
         },
-        getLanguage: P,
+        getLanguage: R,
         registerAliases: w,
         autoDetection: D,
         inherit: eg,
@@ -982,8 +982,8 @@ let em = r,
         either: E,
         optional: h,
         anyNumberOfTimes: p
-      }, V) "object" == typeof V[n] && t(V[n]);
-    return Object.assign(e, V), e
+      }, F) "object" == typeof F[n] && t(F[n]);
+    return Object.assign(e, F), e
   },
   ev = ey({});
 ev.newInstance = () => ey({}), e.exports = ev, ev.HighlightJS = ev, ev.default = ev

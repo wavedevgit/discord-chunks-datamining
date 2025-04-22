@@ -5,7 +5,7 @@ n.d(t, {
   By: () => j,
   Lu: () => U,
   e9: () => Y,
-  hG: () => F,
+  hG: () => V,
   nd: () => H,
   yT: () => W
 }), n(415506), n(642613), n(388685);
@@ -44,7 +44,7 @@ function C(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -57,7 +57,7 @@ function R(e) {
   return e
 }
 
-function P(e, t) {
+function R(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -69,7 +69,7 @@ function P(e, t) {
 }
 
 function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -153,7 +153,7 @@ function M(e) {
       text: A.intl.format(A.t.UDop9f, {}),
       "aria-label": A.intl.string(A.t.P68ePD),
       tooltipClassName: N.invoiceItemTooltip,
-      children: e => (0, r.jsx)(u.idN, w(R({
+      children: e => (0, r.jsx)(u.idN, w(P({
         size: "md",
         color: "currentColor"
       }, e), {
@@ -189,7 +189,7 @@ function k(e) {
       text: n,
       "aria-label": i,
       tooltipClassName: N.invoiceItemTooltip,
-      children: e => (0, r.jsx)(u.idN, w(R({
+      children: e => (0, r.jsx)(u.idN, w(P({
         size: "md",
         color: "currentColor"
       }, e), {
@@ -288,7 +288,7 @@ function B(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     proratedInvoice: t,
     renewalInvoice: n,
@@ -310,7 +310,7 @@ function F(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     isUpdate: t,
     currentInvoice: n,
@@ -407,7 +407,7 @@ function H(e) {
     hideSubscriptionDetails: m = !1
   } = e, {
     analyticsLocations: g
-  } = (0, _.ZP)(), E = R({
+  } = (0, _.ZP)(), E = P({
     subscriptionId: null == t ? void 0 : t.id,
     renewal: !0,
     preventFetch: !s,
@@ -432,7 +432,7 @@ function H(e) {
           direction: v ? h.Z.Directions.UP : h.Z.Directions.DOWN,
           className: N.subscriptionDetailsToggleCaret
         })]
-      }), v ? (0, r.jsx)(V, {
+      }), v ? (0, r.jsx)(F, {
         isUpdate: s,
         currentInvoice: y,
         newInvoice: a,

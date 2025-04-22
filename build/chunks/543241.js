@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  A3: () => P,
+  A3: () => R,
   C1: () => H,
   DV: () => B,
   Gn: () => M,
@@ -14,11 +14,11 @@ n.d(t, {
   Y1: () => G,
   fe: () => k,
   jA: () => D,
-  kI: () => R,
+  kI: () => P,
   nV: () => K,
-  q5: () => V,
+  q5: () => F,
   to: () => x,
-  wC: () => F,
+  wC: () => V,
   y$: () => L
 }), n(290780), n(539854), n(388685), n(314940), n(704826), n(35282);
 var r = n(192379),
@@ -47,13 +47,13 @@ var r = n(192379),
   A = n(957825),
   N = n(474936),
   C = n(388032);
-let R = function(e, t) {
+let P = function(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null == t ? void 0 : t.getGuildId(),
       i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
     (0, d.O)(n);
     let a = (0, T.Gt)(e),
-      s = F(n),
-      _ = V(n),
+      s = V(n),
+      _ = F(n),
       {
         canSplitFrecencyList: g
       } = (0, c.S)({
@@ -75,12 +75,12 @@ let R = function(e, t) {
         newlyAddedEmojis: N
       } = (0, O.Z)(n, e),
       {
-        allEmojis: R
+        allEmojis: P
       } = (0, v.Z)({
         topEmojis: A,
         newlyAddedEmojis: N
       }),
-      P = (0, o.e7)([l.ZP], () => l.ZP.getDisambiguatedEmojiContext(n), [n]),
+      R = (0, o.e7)([l.ZP], () => l.ZP.getDisambiguatedEmojiContext(n), [n]),
       w = (0, o.e7)([p.Z], () => {
         var e;
         return null == (e = p.Z.getGuild(n)) ? void 0 : e.name
@@ -91,7 +91,7 @@ let R = function(e, t) {
         location: "useEmojiCategories"
       });
     return r.useMemo(() => {
-      let r = P.getGroupedCustomEmoji(),
+      let r = R.getGroupedCustomEmoji(),
         o = h.ZP.getFlattenedGuildIds(),
         c = [],
         u = {
@@ -133,7 +133,7 @@ let R = function(e, t) {
           let {
             emojisDisabled: e,
             emojisUnfiltered: n
-          } = d(R);
+          } = d(P);
           if (null == n || 0 === n.length) return t;
           t.push({
             type: I.En.TOP_GUILD_EMOJI,
@@ -184,9 +184,9 @@ let R = function(e, t) {
         });
         return t
       }, x && i ? [u] : [])
-    }, [P, t, n, e, L, R, w, g, E, _, s, S, a, x, i])
+    }, [R, t, n, e, L, P, w, g, E, _, s, S, a, x, i])
   },
-  P = e => {
+  R = e => {
     let t = (null == e ? void 0 : e.getGuildId()) != null;
     g.default.track(S.rMx.PREMIUM_PROMOTION_OPENED, {
       location_page: t ? S.ZY5.GUILD_CHANNEL : S.ZY5.DM_CHANNEL,
@@ -391,13 +391,13 @@ function B(e, t, n) {
   }, [t, n, e, i], o.pF)
 }
 
-function F(e) {
+function V(e) {
   return r.useEffect(() => {
     _.DZ.loadIfNecessary()
   }, []), (0, o.Wu)([l.ZP], () => l.ZP.getDisambiguatedEmojiContext(e).getFrequentlyUsedEmojisWithoutFetchingLatest())
 }
 
-function V(e) {
+function F(e) {
   return r.useEffect(() => {
     _.DZ.loadIfNecessary()
   }, []), (0, o.Wu)([l.ZP], () => l.ZP.getDisambiguatedEmojiContext(e).getFrequentlyUsedReactionEmojisWithoutFetchingLatest())

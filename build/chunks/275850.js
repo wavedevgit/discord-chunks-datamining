@@ -161,7 +161,7 @@ function S(e) {
         children: e.label
       })
     }
-  }), R = I(p, i.useMemo(() => n.find(e => e.id === t), [n, t]));
+  }), P = I(p, i.useMemo(() => n.find(e => e.id === t), [n, t]));
   if (null == t && null != T && T.length > 0) {
     let e = n.filter(e => T.includes(e.paymentGateway));
     t = 0 === e.length ? y : e[0].id
@@ -178,7 +178,7 @@ function S(e) {
       onChange: N,
       isDisabled: g,
       className: o()({
-        [m.paymentSourceHasWarning]: null != R
+        [m.paymentSourceHasWarning]: null != P
       }, E),
       optionClassName: b,
       placeholder: h.intl.string(h.t["8lqkf3"]),
@@ -188,7 +188,7 @@ function S(e) {
           type: l.RAz.SPINNING_CIRCLE
         }) : t.label
       }
-    }), null != R ? (0, r.jsxs)("div", {
+    }), null != P ? (0, r.jsxs)("div", {
       className: m.paymentSourceWarning,
       children: [(0, r.jsx)(l.P4T, {
         size: "custom",
@@ -198,7 +198,7 @@ function S(e) {
         color: s.Z.unsafe_rawColors.YELLOW_300.css
       }), (0, r.jsx)(l.Text, {
         variant: "text-xs/normal",
-        children: R
+        children: P
       })]
     }) : null]
   })

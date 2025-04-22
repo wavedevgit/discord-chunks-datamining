@@ -23,7 +23,7 @@ n.d(t, {
   sX: () => E,
   t2: () => S,
   tv: () => T,
-  u: () => R,
+  u: () => P,
   ut: () => g,
   vJ: () => a,
   xT: () => f
@@ -56,6 +56,6 @@ let a = 568,
   A = r.HE.width / r.HE.height,
   N = a / A,
   C = o / A;
-var R = function(e) {
+var P = function(e) {
   return e[e.CROP_GIF_START = 0] = "CROP_GIF_START", e[e.CROP_GIF_COMPLETE = 1] = "CROP_GIF_COMPLETE", e[e.CROP_GIF_ERROR = 2] = "CROP_GIF_ERROR", e
 }({})

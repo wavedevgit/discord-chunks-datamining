@@ -80,8 +80,8 @@ function T(e, t) {
 let A = 3,
   N = 80,
   C = 12,
-  R = 16,
-  P = () => N,
+  P = 16,
+  R = () => N,
   w = e => {
     var {
       children: t,
@@ -112,14 +112,14 @@ let A = 3,
       T = p.ZP.canUseCollectibles(t),
       A = o === m.$0.PREMIUM_PURCHASE && !T,
       C = i.useRef(null),
-      R = (0, d.Z)(null != a ? a : C),
+      P = (0, d.Z)(null != a ? a : C),
       {
-        avatarDecorationSrc: P
+        avatarDecorationSrc: R
       } = (0, g.Z)({
         user: t,
         avatarDecorationOverride: n,
         size: N,
-        onlyAnimateOnHover: !R
+        onlyAnimateOnHover: !P
       }),
       D = () => o === m.$0.PURCHASE || o === m.$0.PREMIUM_PURCHASE && T ? null : O ? (0, r.jsx)(u.lBU, {
         className: b.newBadge,
@@ -150,7 +150,7 @@ let A = 3,
     }, h), {
       children: [(0, r.jsx)("img", {
         className: b.presetDecorationImg,
-        src: P,
+        src: R,
         alt: n.label
       }), D()]
     }))
@@ -231,7 +231,7 @@ let A = 3,
         } = e;
         return t.length
       }),
-      sectionGutter: R,
+      sectionGutter: P,
       itemGutter: C,
       paddingHorizontal: C,
       paddingVertical: 0,
@@ -240,6 +240,6 @@ let A = 3,
       renderSection: f,
       getSectionHeight: e => c[e].height,
       getItemKey: (e, t) => c[e].items[t].id,
-      getItemHeight: P
+      getItemHeight: R
     })
   }

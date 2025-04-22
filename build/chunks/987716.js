@@ -89,8 +89,8 @@ let A = e => {
     emojiConfetti: A,
     soundEffect: N,
     setEmojiConfetti: C,
-    setSoundEffect: R
-  } = (0, l.wD)(), [P, w] = i.useState(!1), D = i.useRef(null), L = (0, s.arW)({
+    setSoundEffect: P
+  } = (0, l.wD)(), [R, w] = i.useState(!1), D = i.useRef(null), L = (0, s.arW)({
     orientation: "horizontal"
   }), {
     ref: x
@@ -101,13 +101,13 @@ let A = e => {
   }, {
     autoTrackExposure: G
   }), {
-    enabled: F
+    enabled: V
   } = _.O.useExperiment({
     location: "gift card"
-  }), V = null;
-  U && (V = G && B ? g.kJ : g.QI), F && (V = g.RQ);
+  }), F = null;
+  U && (F = G && B ? g.kJ : g.QI), V && (F = g.RQ);
   let Z = e => {
-    null != R && R(null == e ? void 0 : e)
+    null != P && P(null == e ? void 0 : e)
   };
   return (0, r.jsxs)("div", {
     children: [U && (0, r.jsxs)("div", {
@@ -137,7 +137,7 @@ let A = e => {
         })]
       })]
     }), (0, r.jsx)("div", I(v({
-      tabIndex: null != O || P ? void 0 : 0,
+      tabIndex: null != O || R ? void 0 : 0,
       onFocus: e => {
         var t;
         e.target === e.currentTarget && (null == (t = D.current) || t.focus())
@@ -146,7 +146,7 @@ let A = e => {
       "aria-label": E.intl.string(E.t.v54NrK),
       ref: x
     }, M), {
-      children: null != V && V.map((e, t) => (0, r.jsx)(m.m, {
+      children: null != F && F.map((e, t) => (0, r.jsx)(m.m, {
         isSelected: O === e,
         giftStyle: e,
         setSelectedGiftStyle: T,

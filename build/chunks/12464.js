@@ -50,10 +50,10 @@ let p = function(e) {
         }
       }
     }, [N, n]),
-    R = i.useCallback(e => {
+    P = i.useCallback(e => {
       v || e.empty || O(!0), null != p && p(e.complete), null != e.error && y(!1)
     }, [v, p]),
-    P = i.useCallback(() => {
+    R = i.useCallback(() => {
       y(!0), null == h || h()
     }, [h]),
     w = i.useCallback(() => {
@@ -65,27 +65,27 @@ let p = function(e) {
           let e = N.getElement(a.CardNumberElement);
           if (null == e) return;
           e.on("change", e => {
-            g !== e.brand && E(e.brand), e.empty && v ? S(d.intl.string(d.t.eOIfu7)) : null != e.error ? S(d.intl.string(d.t.x4pWtL)) : S(null), R(e)
-          }), e.on("focus", P), e.on("blur", w);
+            g !== e.brand && E(e.brand), e.empty && v ? S(d.intl.string(d.t.eOIfu7)) : null != e.error ? S(d.intl.string(d.t.x4pWtL)) : S(null), P(e)
+          }), e.on("focus", R), e.on("blur", w);
           break
         }
         case "cardExpiry": {
           let e = N.getElement(a.CardExpiryElement);
           if (null == e) return;
           e.on("change", e => {
-            null != e.error || e.empty && v ? S(d.intl.string(d.t["9/zZdn"])) : S(null), R(e)
-          }), e.on("focus", P), e.on("blur", w);
+            null != e.error || e.empty && v ? S(d.intl.string(d.t["9/zZdn"])) : S(null), P(e)
+          }), e.on("focus", R), e.on("blur", w);
           break
         }
         case "cardCvc": {
           let e = N.getElement(a.CardCvcElement);
           if (null == e) return;
           e.on("change", e => {
-            null != e.error || e.empty && v ? S(d.intl.string(d.t.ro4isb)) : S(null), R(e)
-          }), e.on("focus", P), e.on("blur", w)
+            null != e.error || e.empty && v ? S(d.intl.string(d.t.ro4isb)) : S(null), P(e)
+          }), e.on("focus", R), e.on("blur", w)
         }
       }
-    }, [w, R, P, g, N, v, n]);
+    }, [w, P, R, g, N, v, n]);
   i.useEffect(() => (D(), () => {
     C()
   }), [D, C]);

@@ -54,11 +54,11 @@ function d(e, t) {
 }
 
 function f(e) {
-  return F && e instanceof Map
+  return V && e instanceof Map
 }
 
 function _(e) {
-  return V && e instanceof Set
+  return F && e instanceof Set
 }
 
 function p(e) {
@@ -140,30 +140,30 @@ function N(e, t) {
   t._ = t.p.length;
   var n = t.p[0],
     i = void 0 !== e && e !== n;
-  return t.h.O || b("ES5").S(t, e, i), i ? (n[W].P && (I(t), r(4)), a(e) && (e = C(t, e), t.l || P(t, e)), t.u && b("Patches").M(n[W].t, e, t.u, t.s)) : e = C(t, n, []), I(t), t.u && t.v(t.u, t.s), e !== H ? e : void 0
+  return t.h.O || b("ES5").S(t, e, i), i ? (n[W].P && (I(t), r(4)), a(e) && (e = C(t, e), t.l || R(t, e)), t.u && b("Patches").M(n[W].t, e, t.u, t.s)) : e = C(t, n, []), I(t), t.u && t.v(t.u, t.s), e !== H ? e : void 0
 }
 
 function C(e, t, n) {
   if (E(t)) return t;
   var r = t[W];
   if (!r) return o(t, function(i, a) {
-    return R(e, r, t, i, a, n)
+    return P(e, r, t, i, a, n)
   }, !0), t;
   if (r.A !== e) return t;
-  if (!r.P) return P(e, r.t, !0), r.t;
+  if (!r.P) return R(e, r.t, !0), r.t;
   if (!r.I) {
     r.I = !0, r.A._--;
     var i = 4 === r.i || 5 === r.i ? r.o = h(r.k) : r.o,
       a = i,
       s = !1;
     3 === r.i && (a = new Set(i), i.clear(), s = !0), o(a, function(t, a) {
-      return R(e, r, i, t, a, n, s)
-    }), P(e, i, !1), n && e.u && b("Patches").N(r, n, e.u, e.s)
+      return P(e, r, i, t, a, n, s)
+    }), R(e, i, !1), n && e.u && b("Patches").N(r, n, e.u, e.s)
   }
   return r.o
 }
 
-function R(e, t, n, r, o, s, c) {
+function P(e, t, n, r, o, s, c) {
   if (i(o)) {
     var d = C(e, o, s && t && 3 !== t.i && !l(t.R, r) ? s.concat(r) : void 0);
     if (u(n, r, d), !i(d)) return;
@@ -171,11 +171,11 @@ function R(e, t, n, r, o, s, c) {
   } else c && n.add(o);
   if (a(o) && !E(o)) {
     if (!e.h.D && e._ < 1) return;
-    C(e, o), t && t.A.l || P(e, o)
+    C(e, o), t && t.A.l || R(e, o)
   }
 }
 
-function P(e, t, n) {
+function R(e, t, n) {
   void 0 === n && (n = !1), !e.l && e.h.D && e.m && m(t, n)
 }
 
@@ -260,8 +260,8 @@ n.d(t, {
   mv: () => i
 });
 var U, G, B = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
-  F = "undefined" != typeof Map,
-  V = "undefined" != typeof Set,
+  V = "undefined" != typeof Map,
+  F = "undefined" != typeof Set,
   Z = "undefined" != typeof Proxy && void 0 !== Proxy.revocable && "undefined" != typeof Reflect,
   H = B ? Symbol.for("immer-nothing") : ((U = {})["immer-nothing"] = !0, U),
   Y = B ? Symbol.for("immer-draftable") : "__$immer_draftable",

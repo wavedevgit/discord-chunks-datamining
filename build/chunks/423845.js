@@ -25,8 +25,8 @@ var r = n(620014),
   A = 2,
   N = 4,
   C = "[object Arguments]",
-  R = "[object Array]",
-  P = "[object Boolean]",
+  P = "[object Array]",
+  R = "[object Boolean]",
   w = "[object Date]",
   D = "[object Error]",
   L = "[object Function]",
@@ -37,8 +37,8 @@ var r = n(620014),
   U = "[object RegExp]",
   G = "[object Set]",
   B = "[object String]",
-  F = "[object Symbol]",
-  V = "[object WeakMap]",
+  V = "[object Symbol]",
+  F = "[object WeakMap]",
   Z = "[object ArrayBuffer]",
   H = "[object DataView]",
   Y = "[object Float32Array]",
@@ -52,29 +52,29 @@ var r = n(620014),
   $ = "[object Uint32Array]",
   ee = {};
 
-function et(e, t, n, R, P, w) {
+function et(e, t, n, P, R, w) {
   var D, M = t & T,
     k = t & A,
     U = t & N;
-  if (n && (D = P ? n(e, R, P, w) : n(e)), void 0 !== D) return D;
+  if (n && (D = R ? n(e, P, R, w) : n(e)), void 0 !== D) return D;
   if (!v(e)) return e;
   var G = E(e);
   if (G) {
     if (D = h(e), !M) return c(e, D)
   } else {
     var B = p(e),
-      F = B == L || B == x;
+      V = B == L || B == x;
     if (b(e)) return l(e, M);
-    if (B == j || B == C || F && !P) {
-      if (D = k || F ? {} : g(e), !M) return k ? d(e, s(D, e)) : u(e, o(D, e))
+    if (B == j || B == C || V && !R) {
+      if (D = k || V ? {} : g(e), !M) return k ? d(e, s(D, e)) : u(e, o(D, e))
     } else {
-      if (!ee[B]) return P ? e : {};
+      if (!ee[B]) return R ? e : {};
       D = m(e, B, M)
     }
   }
   w || (w = new r);
-  var V = w.get(e);
-  if (V) return V;
+  var F = w.get(e);
+  if (F) return F;
   w.set(e, D), O(e) ? e.forEach(function(r) {
     D.add(et(r, t, n, r, e, w))
   }) : y(e) && e.forEach(function(r, i) {
@@ -86,4 +86,4 @@ function et(e, t, n, R, P, w) {
     H && (r = e[i = r]), a(D, i, et(r, t, n, i, e, w))
   }), D
 }
-ee[C] = ee[R] = ee[Z] = ee[H] = ee[P] = ee[w] = ee[Y] = ee[W] = ee[K] = ee[z] = ee[q] = ee[M] = ee[k] = ee[j] = ee[U] = ee[G] = ee[B] = ee[F] = ee[Q] = ee[X] = ee[J] = ee[$] = !0, ee[D] = ee[L] = ee[V] = !1, e.exports = et
+ee[C] = ee[P] = ee[Z] = ee[H] = ee[R] = ee[w] = ee[Y] = ee[W] = ee[K] = ee[z] = ee[q] = ee[M] = ee[k] = ee[j] = ee[U] = ee[G] = ee[B] = ee[V] = ee[Q] = ee[X] = ee[J] = ee[$] = !0, ee[D] = ee[L] = ee[F] = !1, e.exports = et

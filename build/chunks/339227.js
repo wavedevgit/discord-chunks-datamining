@@ -248,7 +248,7 @@ function C(e) {
     originalMatch: e
   }
 }
-let R = {
+let P = {
     url: {
       parse: e => null == (0, u.yw)(e[1]) ? {
         type: "text",
@@ -291,9 +291,9 @@ let R = {
       }
     }
   },
-  P = /(-# +)/,
-  w = (0, _.Z)([T, R]),
-  D = (0, _.Z)([A, R]),
+  R = /(-# +)/,
+  w = (0, _.Z)([T, P]),
+  D = (0, _.Z)([A, P]),
   L = l._p(w),
   x = l._p(D),
   M = {
@@ -325,7 +325,7 @@ function U(e, t, n) {
       type: "paragraph",
       content: a(l, !0, i)
     };
-  F(r, l, c, 0, []);
+  V(r, l, c, 0, []);
   let u = B(r);
   return o.set(e, u), u
 }
@@ -372,7 +372,7 @@ function B(e) {
   return t
 }
 
-function F(e, t, n, r, a) {
+function V(e, t, n, r, a) {
   let {
     content: o,
     type: s,
@@ -489,7 +489,7 @@ function F(e, t, n, r, a) {
       let {
         before: n,
         after: i
-      } = V(t, s, r, l);
+      } = F(t, s, r, l);
       return r = H(e, t, n, r, "syntaxBefore"), a.push(s), r = Z(e, t, null != o ? o : "", r, a), a.pop(), r = H(e, t, i, r, "syntaxAfter"), W(t, r)
     }
     default:
@@ -497,7 +497,7 @@ function F(e, t, n, r, a) {
   }
 }
 
-function V(e, t, n, r) {
+function F(e, t, n, r) {
   if ("inlineCode" === t) return {
     before: r[1],
     after: r[1]
@@ -507,7 +507,7 @@ function V(e, t, n, r) {
     after: "_"
   };
   if ("subtext" === t) return {
-    before: P.exec(r.input)[1],
+    before: R.exec(r.input)[1],
     after: ""
   };
   let i = I["link" === t ? "url" : t];
@@ -524,7 +524,7 @@ function Z(e, t, n, r, i) {
     attributes: i,
     data: null
   }) : (n instanceof Array || (n = [n]), n.forEach(n => {
-    r = F(e, t, n, r, i)
+    r = V(e, t, n, r, i)
   })), W(t, r)
 }
 

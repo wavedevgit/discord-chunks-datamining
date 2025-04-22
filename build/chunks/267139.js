@@ -95,7 +95,7 @@ function C(e) {
   return "object" == typeof e && null !== e && e.$$typeof === n
 }
 
-function R(e) {
+function P(e) {
   var t = {
     "=": "=0",
     ":": "=2"
@@ -104,10 +104,10 @@ function R(e) {
     return t[e]
   })
 }
-var P = /\/+/g;
+var R = /\/+/g;
 
 function w(e, t) {
-  return "object" == typeof e && null !== e && null != e.key ? R("" + e.key) : t.toString(36)
+  return "object" == typeof e && null !== e && null != e.key ? P("" + e.key) : t.toString(36)
 }
 
 function D(e, t, i, a, o) {
@@ -127,9 +127,9 @@ function D(e, t, i, a, o) {
           l = !0
       }
   }
-  if (l) return o = o(l = e), e = "" === a ? "." + w(l, 0) : a, O(o) ? (i = "", null != e && (i = e.replace(P, "$&/") + "/"), D(o, t, i, "", function(e) {
+  if (l) return o = o(l = e), e = "" === a ? "." + w(l, 0) : a, O(o) ? (i = "", null != e && (i = e.replace(R, "$&/") + "/"), D(o, t, i, "", function(e) {
     return e
-  })) : null != o && (C(o) && (o = N(o, i + (!o.key || l && l.key === o.key ? "" : ("" + o.key).replace(P, "$&/") + "/") + e)), t.push(o)), 1;
+  })) : null != o && (C(o) && (o = N(o, i + (!o.key || l && l.key === o.key ? "" : ("" + o.key).replace(R, "$&/") + "/") + e)), t.push(o)), 1;
   if (l = 0, a = "" === a ? "." : a + ":", O(e))
     for (var c = 0; c < e.length; c++) {
       var u = a + w(s = e[c], c);

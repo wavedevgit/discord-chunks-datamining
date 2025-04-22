@@ -133,21 +133,21 @@ function c(e) {
         }]
       }), e.C_BLOCK_COMMENT_MODE, e.C_LINE_COMMENT_MODE]
     },
-    R = [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, S, T, A, N, {
+    P = [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, S, T, A, N, {
       match: /\$\d+/
     }, O];
-  I.contains = R.concat({
+  I.contains = P.concat({
     begin: /\{/,
     end: /\}/,
     keywords: E,
-    contains: ["self"].concat(R)
+    contains: ["self"].concat(P)
   });
-  let P = [].concat(C, I.contains),
-    w = P.concat([{
+  let R = [].concat(C, I.contains),
+    w = R.concat([{
       begin: /(\s*)\(/,
       end: /\)/,
       keywords: E,
-      contains: ["self"].concat(P)
+      contains: ["self"].concat(R)
     }]),
     D = {
       className: "params",
@@ -225,7 +225,7 @@ function c(e) {
       className: "property",
       relevance: 0
     },
-    F = {
+    V = {
       match: [/get|set/, /\s+/, d, /(?=\()/],
       className: {
         1: "keyword",
@@ -235,9 +235,9 @@ function c(e) {
         begin: /\(\)/
       }, D]
     },
-    V = "(\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)|" + e.UNDERSCORE_IDENT_RE + ")\\s*=>",
+    F = "(\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)|" + e.UNDERSCORE_IDENT_RE + ")\\s*=>",
     Z = {
-      match: [/const|var|let/, /\s+/, d, /\s*/, /=\s*/, /(async\s*)?/, c.lookahead(V)],
+      match: [/const|var|let/, /\s+/, d, /\s*/, /=\s*/, /(async\s*)?/, c.lookahead(F)],
       keywords: "async",
       className: {
         1: "keyword",
@@ -270,7 +270,7 @@ function c(e) {
       relevance: 0,
       contains: [C, e.REGEXP_MODE, {
         className: "function",
-        begin: V,
+        begin: F,
         returnBegin: !0,
         end: "\\s*=>",
         contains: [{
@@ -338,7 +338,7 @@ function c(e) {
         1: "title.function"
       },
       contains: [D]
-    }, G, j, L, F, {
+    }, G, j, L, V, {
       match: /\$[(.]/
     }]
   }

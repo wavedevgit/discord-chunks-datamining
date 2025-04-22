@@ -152,8 +152,8 @@ class T extends(r = a.PureComponent) {
       mini: T,
       hideBubble: N,
       defaultValue: C,
-      orientation: R,
-      onValueRender: P,
+      orientation: P,
+      onValueRender: R,
       renderMarker: w,
       getAriaValueText: D,
       barClassName: L,
@@ -164,9 +164,9 @@ class T extends(r = a.PureComponent) {
       "aria-label": U,
       "aria-labelledby": G,
       "aria-describedby": B
-    } = this.props, F = 0;
-    E ? null != o && (null != c ? F = o[c] : null != l && (F = o[l])) : F = this.scaleValue(t);
-    let V = "".concat(F, "%"),
+    } = this.props, V = 0;
+    E ? null != o && (null != c ? V = o[c] : null != l && (V = o[l])) : V = this.scaleValue(t);
+    let F = "".concat(V, "%"),
       Z = null != o && null != a ? o.map((e, t) => {
         let n = a[t],
           r = null != C && C === n,
@@ -190,7 +190,7 @@ class T extends(r = a.PureComponent) {
           })
         }, t)
       }) : null,
-      H = null != P ? P(t) : "".concat(F.toFixed(0), "%"),
+      H = null != R ? R(t) : "".concat(V.toFixed(0), "%"),
       Y = null != (e = null == D ? void 0 : D(t)) ? e : void 0;
     return (0, i.jsx)(A, {
       active: n,
@@ -211,7 +211,7 @@ class T extends(r = a.PureComponent) {
             "aria-valuemax": f,
             "aria-valuenow": t,
             "aria-disabled": m,
-            "aria-orientation": R,
+            "aria-orientation": P,
             "aria-hidden": j,
             "aria-label": U,
             "aria-labelledby": G,
@@ -239,7 +239,7 @@ class T extends(r = a.PureComponent) {
               children: (0, i.jsx)("div", {
                 className: g.barFill,
                 style: v(b({}, S), {
-                  width: V
+                  width: F
                 })
               })
             }), O, (0, i.jsx)("div", {
@@ -252,7 +252,7 @@ class T extends(r = a.PureComponent) {
                 children: e => (0, i.jsx)("div", v(b({}, e), {
                   className: s()(g.grabber, x),
                   style: v(b({}, M), {
-                    left: V
+                    left: F
                   }),
                   onMouseDown: this.handleMouseDown,
                   ref: this.grabberRef

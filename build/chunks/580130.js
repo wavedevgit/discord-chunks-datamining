@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => V
+  Z: () => F
 }), n(388685), n(539854);
 var r, i = n(392711),
   a = n.n(i),
@@ -46,7 +46,7 @@ function C(e) {
   g[e.id] = c.Z.createFromServer(e)
 }
 
-function R(e) {
+function P(e) {
   delete m[e.id];
   let t = b[e.application_id];
   null != t && t.delete(e.id);
@@ -57,7 +57,7 @@ function R(e) {
   }
 }
 
-function P(e) {
+function R(e) {
   let {
     applicationId: t
   } = e;
@@ -118,9 +118,9 @@ function G(e) {
 }
 
 function B(e) {
-  return R(e.entitlement)
+  return P(e.entitlement)
 }
-class F extends(r = s.yh) {
+class V extends(r = s.yh) {
   initialize() {
     this.syncWith([u.Z], () => !0)
   }
@@ -215,9 +215,9 @@ class F extends(r = s.yh) {
     }), t
   }
 }
-h(F, "displayName", "EntitlementStore");
-let V = new F(l.Z, {
-  ENTITLEMENT_FETCH_APPLICATION_START: P,
+h(V, "displayName", "EntitlementStore");
+let F = new V(l.Z, {
+  ENTITLEMENT_FETCH_APPLICATION_START: R,
   ENTITLEMENT_FETCH_APPLICATION_SUCCESS: w,
   ENTITLEMENT_FETCH_APPLICATION_FAIL: L,
   ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: D,

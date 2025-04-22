@@ -3,11 +3,11 @@
 n.d(t, {
   DH: () => B,
   Ks: () => G,
-  Ws: () => V,
+  Ws: () => F,
   g2: () => k,
   hf: () => x,
   k3: () => j,
-  qN: () => F,
+  qN: () => V,
   tP: () => M
 }), n(388685);
 var r = n(200651),
@@ -36,9 +36,9 @@ var r = n(200651),
   A = n(46140),
   N = n(981631),
   C = n(215023),
-  R = n(388032);
+  P = n(388032);
 
-function P(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -54,7 +54,7 @@ function w(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      P(e, t, n[t])
+      R(e, t, n[t])
     })
   }
   return e
@@ -162,10 +162,10 @@ let k = e => {
 
 function U(e) {
   return e.config.features.includes(A.S7.START_QUEST_CTA) ? {
-    text: R.intl.string(R.t.ToGcxM),
+    text: P.intl.string(P.t.ToGcxM),
     questContentCTA: h.jZ.START_QUEST
   } : {
-    text: R.intl.string(R.t.l7E81t),
+    text: P.intl.string(P.t.l7E81t),
     questContentCTA: h.jZ.ACCEPT_QUEST
   }
 }
@@ -191,7 +191,7 @@ function G(e) {
     quest: n
   }), I = (0, E.Rf)(n), S = i.useCallback(() => {
     (0, d.$)()
-  }, []), P = i.useCallback(() => {
+  }, []), R = i.useCallback(() => {
     (0, f.Y)({
       pageType: N.ZY5.GLOBAL_DISCOVERY_QUESTS,
       sectionType: N.jXE.QUEST_TILE_CTA,
@@ -208,9 +208,9 @@ function G(e) {
   return i.useMemo(() => {
     switch (r) {
       case E.OH.UNACCEPTED:
-        let e = R.intl.string(R.t.kUQLMD),
+        let e = P.intl.string(P.t.kUQLMD),
           t = h.jZ.ACCEPT_QUEST;
-        return p && (e = R.intl.string(R.t.umdNio), t = h.jZ.START_QUEST), b && ({
+        return p && (e = P.intl.string(P.t.umdNio), t = h.jZ.START_QUEST), b && ({
           text: e,
           questContentCTA: t
         } = U(n)), {
@@ -228,7 +228,7 @@ function G(e) {
       case E.OH.ACCEPTED:
       case E.OH.IN_PROGRESS:
         if (O && _) return {
-          text: R.intl.string(R.t.Cfye4u),
+          text: P.intl.string(P.t.Cfye4u),
           tooltipText: null,
           onClick: () => (0, v.gI)({
             quest: n
@@ -242,7 +242,7 @@ function G(e) {
         };
         if (p) return {
           text: (0, v.F9)(I),
-          tooltipText: R.intl.string(R.t.hsbwjo),
+          tooltipText: P.intl.string(P.t.hsbwjo),
           onClick: () => (0, T.openVideoQuestModal)(n)
         };
         if (b && n.config.features.includes(A.S7.START_QUEST_CTA)) {
@@ -251,18 +251,18 @@ function G(e) {
           } = U(n);
           return {
             text: e,
-            tooltipText: R.intl.string(R.t.hsbwjo),
+            tooltipText: P.intl.string(P.t.hsbwjo),
             onClick: () => {
               n.config.features.includes(A.S7.START_QUEST_CTA) && M()
             }
           }
         }
         return {
-          text: R.intl.string(R.t.cfY4PD), tooltipText: R.intl.string(R.t.hsbwjo), onClick: null
+          text: P.intl.string(P.t.cfY4PD), tooltipText: P.intl.string(P.t.hsbwjo), onClick: null
         };
       case E.OH.COMPLETED:
         return {
-          text: R.intl.string(R.t.cfY4PD), tooltipText: null, onClick: y
+          text: P.intl.string(P.t.cfY4PD), tooltipText: null, onClick: y
         };
       case E.OH.CLAIMED:
         let i = {
@@ -270,26 +270,26 @@ function G(e) {
           onClick: y
         };
         if (a) return L(w({}, i), {
-          text: R.intl.string(R.t.MAS7uL)
+          text: P.intl.string(P.t.MAS7uL)
         });
         if ((0, v.vQ)(n.config)) return L(w({}, i), {
-          text: R.intl.string(R.t.vTgCW1)
+          text: P.intl.string(P.t.vTgCW1)
         });
         if ((0, v.Bg)(n.config)) return {
           tooltipText: null,
           onClick: S,
-          text: R.intl.string(R.t["eQX+go"])
+          text: P.intl.string(P.t["eQX+go"])
         };
         else if ((0, v.xN)(n.config)) return {
           tooltipText: null,
-          text: R.intl.string(R.t.WYchdX),
-          onClick: P
+          text: P.intl.string(P.t.WYchdX),
+          onClick: R
         };
         return L(w({}, i), {
-          text: R.intl.string(R.t.bAGFz8)
+          text: P.intl.string(P.t.bAGFz8)
         })
     }
-  }, [r, p, O, _, y, a, n, o, s, u, D, I, S, P, b, M])
+  }, [r, p, O, _, y, a, n, o, s, u, D, I, S, R, b, M])
 }
 
 function B() {
@@ -299,7 +299,7 @@ function B() {
   })
 }
 
-function F(e) {
+function V(e) {
   var t;
   let {
     location: n,
@@ -319,10 +319,10 @@ function F(e) {
   return i && !d && !u && !a
 }
 
-function V(e) {
+function F(e) {
   let {
     location: t
-  } = e, n = F({
+  } = e, n = V({
     location: t,
     quest: B()
   });

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  q: () => R,
+  q: () => P,
   r: () => C
 });
 var r = n(477660),
@@ -36,14 +36,14 @@ function C(e, t) {
   return (null == r || r.type !== A.d4z.DM || !!I.Z.isFriend(null != (n = r.getRecipientId()) ? n : "")) && e === t
 }
 
-function R(e, t) {
+function P(e, t) {
   let r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [],
     I = arguments.length > 3 ? arguments[3] : void 0,
     {
       trusted: S,
       onClick: C,
-      onConfirm: R,
-      onCancel: P,
+      onConfirm: P,
+      onCancel: R,
       shouldConfirm: w,
       messageId: D,
       channelId: L
@@ -72,13 +72,13 @@ function R(e, t) {
     G = L,
     B = null;
   if (null != D && null != L) {
-    var F, V, Z;
+    var V, F, Z;
     let e = O.Z.getMessage(L, D),
       t = E.Z.getBasicChannel(L);
     k = null != (Z = null == t ? void 0 : t.guild_id) ? Z : null;
     let n = b.Z.getGuild(k),
-      r = (null == e || null == (F = e.messageReference) ? void 0 : F.guild_id) != null && (null == e ? void 0 : e.webhookId) != null && (null == e ? void 0 : e.hasFlag(A.iLy.IS_CROSSPOST)) && null != k;
-    r && (null == e || null == (V = e.messageReference) ? void 0 : V.guild_id) != null ? (U = e.messageReference.message_id, G = e.messageReference.channel_id, B = e.messageReference.guild_id) : B = k;
+      r = (null == e || null == (V = e.messageReference) ? void 0 : V.guild_id) != null && (null == e ? void 0 : e.webhookId) != null && (null == e ? void 0 : e.hasFlag(A.iLy.IS_CROSSPOST)) && null != k;
+    r && (null == e || null == (F = e.messageReference) ? void 0 : F.guild_id) != null ? (U = e.messageReference.message_id, G = e.messageReference.channel_id, B = e.messageReference.guild_id) : B = k;
     let i = (null == t ? void 0 : t.type) === A.d4z.GUILD_ANNOUNCEMENT && (null == n ? void 0 : n.hasFeature(A.oNc.COMMUNITY)) === !0,
       a = (null == e ? void 0 : e.hasFlag(A.iLy.EPHEMERAL)) === !0;
     j = null != e && !a && (r || i)
@@ -113,10 +113,10 @@ function R(e, t) {
           guildId: k,
           sourceChannelId: G,
           sourceGuildId: B
-        }), null != R) return void R();
+        }), null != P) return void P();
       (0, s.Z)(M)
     },
-    Y = null != P ? P : () => {};
+    Y = null != R ? R : () => {};
   if (null !== c.Z.isBlockedDomain(M)) {
     null == t || t.preventDefault(), l.Z.show(M);
     return

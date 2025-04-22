@@ -66,7 +66,7 @@ function N(e, t) {
 
 function C(e, t) {
   if (null == e) return {};
-  var n, r, i = R(e, t);
+  var n, r, i = P(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -74,7 +74,7 @@ function C(e, t) {
   return i
 }
 
-function R(e, t) {
+function P(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -82,7 +82,7 @@ function R(e, t) {
   return i
 }
 
-function P(e) {
+function R(e) {
   let {
     className: t
   } = e;
@@ -101,7 +101,7 @@ function w(e) {
     children: [(0, r.jsx)(u.ZP, {
       className: t,
       mask: u.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
-      children: (0, r.jsx)(P, {})
+      children: (0, r.jsx)(R, {})
     }), (0, r.jsx)(h.Z, {
       className: I.badgeUpgrade
     })]
@@ -116,11 +116,11 @@ function D(e) {
   } = e, h = C(e, ["hideBadges", "stream", "location"]);
   let {
     parentAnalyticsLocation: I
-  } = (0, s.ZP)(), S = (0, a.e7)([p.default], () => m.ZP.isPremium(p.default.getCurrentUser(), v.p9.TIER_1)), A = (0, a.e7)([_.Z], () => _.Z.getChannel(null == n ? void 0 : n.channelId)), R = i.useMemo(() => null != n ? [n] : [], [n]), D = i.useCallback(() => {
+  } = (0, s.ZP)(), S = (0, a.e7)([p.default], () => m.ZP.isPremium(p.default.getCurrentUser(), v.p9.TIER_1)), A = (0, a.e7)([_.Z], () => _.Z.getChannel(null == n ? void 0 : n.channelId)), P = i.useMemo(() => null != n ? [n] : [], [n]), D = i.useCallback(() => {
     null != A && (0, f.Z)(A.getGuildId(), A.id, b.jXE.STREAM_SETTINGS)
   }, [A]);
   if (null == n || null == A) return null;
-  let L = P;
+  let L = R;
   return t || S || (L = w), (0, r.jsx)(o.yRy, {
     position: "top",
     renderPopout: e => {
@@ -131,7 +131,7 @@ function D(e) {
         children: (0, r.jsx)(d.Z, {
           channel: A,
           currentUser: p.default.getCurrentUser(),
-          activeStreams: R,
+          activeStreams: P,
           onClose: t,
           showReportOption: !0,
           handleGoLive: D,

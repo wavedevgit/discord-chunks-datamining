@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.r(t), n.d(t, {
-  default: () => eR
+  default: () => eP
 }), n(358797), n(539854), n(415506);
 var i, a = n(213919),
   o = n(756647),
@@ -36,8 +36,8 @@ function A(e, t, n) {
 }
 let N = new m.Z("AuthenticationStore"),
   C = "fingerprint",
-  R = "user_id_cache",
-  P = null,
+  P = "user_id_cache",
+  R = null,
   w = null,
   D = null,
   L = null,
@@ -48,8 +48,8 @@ let N = new m.Z("AuthenticationStore"),
   U = !1,
   G = [],
   B = "",
-  F = !1,
-  V = null,
+  V = !1,
+  F = null,
   Z = !1,
   H = !1,
   Y = null,
@@ -136,7 +136,7 @@ function en(e) {
   let {
     isMultiAccount: t
   } = e;
-  j = S.u34.NONE, B = "", F = !1, V = null, r = null, t || (ee(), Q(!1))
+  j = S.u34.NONE, B = "", V = !1, F = null, r = null, t || (ee(), Q(!1))
 }
 
 function er() {
@@ -147,14 +147,14 @@ function ei(e) {
   let {
     token: t
   } = e;
-  j = S.u34.NONE, $(t), J(), B = "", F = !1, V = null, K = !1
+  j = S.u34.NONE, $(t), J(), B = "", V = !1, F = null, K = !1
 }
 
 function ea(e) {
   let {
     error: t
   } = e;
-  B = "", F = !1, V = null, j = null != (0, _.p)(t).date_of_birth ? S.u34.LOGIN_AGE_GATE : S.u34.NONE
+  B = "", V = !1, F = null, j = null != (0, _.p)(t).date_of_birth ? S.u34.LOGIN_AGE_GATE : S.u34.NONE
 }
 
 function eo() {
@@ -165,7 +165,7 @@ function es(e) {
   let {
     error: t
   } = e;
-  B = "", F = !1, V = null, K = !1, j = null != (0, _.F)(t).date_of_birth ? S.u34.LOGIN_AGE_GATE : S.u34.NONE
+  B = "", V = !1, F = null, K = !1, j = null != (0, _.F)(t).date_of_birth ? S.u34.LOGIN_AGE_GATE : S.u34.NONE
 }
 
 function el(e) {
@@ -176,7 +176,7 @@ function el(e) {
     backup: i,
     totp: a
   } = e;
-  null != t && (B = t, F = n, V = null != r ? r : null, H = i, Z = a), j = S.u34.MFA_STEP
+  null != t && (B = t, V = n, F = null != r ? r : null, H = i, Z = a), j = S.u34.MFA_STEP
 }
 
 function ec() {
@@ -227,7 +227,7 @@ function em(e) {
     auth: o,
     staticAuthSessionId: s
   } = e;
-  q("handleConnectionOpen called"), v.Z.setUser(n.id, n.username, null != (t = n.email) ? t : void 0, (0, E.Z)(n)), w = r, D = i, L = s, k = a, P = n.id, void 0 !== o && (G = o.authenticator_types), c.K.set(R, n.id)
+  q("handleConnectionOpen called"), v.Z.setUser(n.id, n.username, null != (t = n.email) ? t : void 0, (0, E.Z)(n)), w = r, D = i, L = s, k = a, R = n.id, void 0 !== o && (G = o.authenticator_types), c.K.set(P, n.id)
 }
 
 function eg(e) {
@@ -238,7 +238,7 @@ function eg(e) {
     analyticsToken: i,
     token: a
   } = e;
-  v.Z.setUser(n.id, n.username, null != (t = n.email) ? t : void 0, (0, E.Z)(n)), w = r, k = i, $(a), J(), P = n.id, c.K.set(R, n.id)
+  v.Z.setUser(n.id, n.username, null != (t = n.email) ? t : void 0, (0, E.Z)(n)), w = r, k = i, $(a), J(), R = n.id, c.K.set(P, n.id)
 }
 
 function eE(e) {
@@ -250,7 +250,7 @@ function eE(e) {
   if (4004 === t) {
     if (U || r(T.$$) || r(T.dG)) return void ev();
     b.default.track(S.rMx.APP_USER_DEAUTHENTICATED, {
-      user_id: c.K.get(R)
+      user_id: c.K.get(P)
     }), eO(), setImmediate(() => (0, g.uL)(S.Z5c.DEFAULT_LOGGED_OUT))
   }
 }
@@ -283,7 +283,7 @@ function eO(e) {
   null != (t = null == e ? void 0 : e.isSwitchingAccount) && t || (n && J(), Q()), s.ZP.PersistedStore.clearAll({
     omit: ["InstallationManagerStore", "AgeGateStore", "NativePermissionsStore", "MultiAccountStore", "DraftStore", "OverlayStoreV2", "StreamerModeStore", "LoginRequiredActionStore", "LayoutStore", "OverlaySettingsStore"],
     type: (null == e ? void 0 : e.isSwitchingAccount) ? "user-data-only" : "all"
-  }), I.Z.clearAll(), h.ZH(), v.Z.clearUser(), c.K.remove(R), P = null, w = null, j = (null == e ? void 0 : e.isSwitchingAccount) ? S.u34.LOGGING_IN : S.u34.NONE, B = "", V = null, F = !1, K = !1, z = !1
+  }), I.Z.clearAll(), h.ZH(), v.Z.clearUser(), c.K.remove(P), R = null, w = null, j = (null == e ? void 0 : e.isSwitchingAccount) ? S.u34.LOGGING_IN : S.u34.NONE, B = "", F = null, V = !1, K = !1, z = !1
 }
 
 function eI() {
@@ -298,7 +298,7 @@ function eT(e) {
   let {
     user: t
   } = e;
-  P = t.id, void 0 !== t.authenticator_types && (G = t.authenticator_types), c.K.set(R, t.id)
+  R = t.id, void 0 !== t.authenticator_types && (G = t.authenticator_types), c.K.set(P, t.id)
 }
 
 function eA(e) {
@@ -313,13 +313,13 @@ function eN() {
 }
 class eC extends(i = s.ZP.Store) {
   initialize() {
-    P = c.K.get(R), null == a.getToken() && Q(), this.addChangeListener(() => (0, p.u)(P))
+    R = c.K.get(P), null == a.getToken() && Q(), this.addChangeListener(() => (0, p.u)(R))
   }
   getLoginStatus() {
     return j
   }
   getId() {
-    return P
+    return R
   }
   getSessionId() {
     return w
@@ -347,15 +347,15 @@ class eC extends(i = s.ZP.Store) {
   }
   getMFAMethods() {
     let e = [];
-    return null != V && e.push({
+    return null != F && e.push({
       type: "webauthn",
-      challenge: V
+      challenge: F
     }), Z && e.push({
       type: "totp",
       backup_codes_allowed: H
     }), H && e.push({
       type: "backup"
-    }), F && e.push({
+    }), V && e.push({
       type: "sms"
     }), e
   }
@@ -380,7 +380,7 @@ class eC extends(i = s.ZP.Store) {
   }
 }
 A(eC, "displayName", "AuthenticationStore");
-let eR = new eC(u.Z, {
+let eP = new eC(u.Z, {
   CONNECTION_OPEN: em,
   OVERLAY_INITIALIZE: eg,
   CONNECTION_CLOSED: eE,

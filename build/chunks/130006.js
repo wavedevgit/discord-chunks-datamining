@@ -27,7 +27,7 @@ var r = n(98405),
   };
 e.exports = function(e, t, n, o, p, m, A) {
   l(n, t, o);
-  var N, C, R, P = function(e) {
+  var N, C, P, R = function(e) {
       if (e === p && M) return M;
       if (!y && e && e in L) return L[e];
       switch (e) {
@@ -46,17 +46,17 @@ e.exports = function(e, t, n, o, p, m, A) {
     D = !1,
     L = e.prototype,
     x = L[v] || L["@@iterator"] || p && L[p],
-    M = !y && x || P(p),
+    M = !y && x || R(p),
     k = "Array" === t && L.entries || x;
   if (k && (N = c(k.call(new e))) !== Object.prototype && N.next && (!a && c(N) !== b && (u ? u(N, b) : s(N[v]) || _(N, v, T)), d(N, w, !0, !0), a && (h[w] = T)), g && p === I && x && x.name !== I && (!a && E ? f(L, "name", I) : (D = !0, M = function() {
       return i(x, this)
     })), p)
     if (C = {
-        values: P(I),
-        keys: m ? M : P(O),
-        entries: P(S)
+        values: R(I),
+        keys: m ? M : R(O),
+        entries: R(S)
       }, A)
-      for (R in C) !y && !D && R in L || _(L, R, C[R]);
+      for (P in C) !y && !D && P in L || _(L, P, C[P]);
     else r({
       target: t,
       proto: !0,

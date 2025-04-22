@@ -34,12 +34,12 @@ function C(e) {
     user: t,
     currentUser: n,
     displayProfile: C,
-    guild: R,
-    isHovering: P,
+    guild: P,
+    isHovering: R,
     onOpenProfile: w,
     channelId: D,
     onClose: L
-  } = e, x = u.ZP.useName(null == R ? void 0 : R.id, D, t), {
+  } = e, x = u.ZP.useName(null == P ? void 0 : P.id, D, t), {
     relationshipType: M,
     originApplicationId: k
   } = (0, i.cj)([l.Z], () => ({
@@ -51,10 +51,10 @@ function C(e) {
     className: N.body,
     children: [(0, r.jsx)(b.Z, {
       user: t,
-      profileType: T.y0.BITE_SIZE,
+      themeType: T.lY.POPOUT,
       onOpenProfile: w,
       onClose: L,
-      usernameIcon: t.hasAvatarForGuild(null == R ? void 0 : R.id) && (0, r.jsx)(O.Z, {
+      usernameIcon: t.hasAvatarForGuild(null == P ? void 0 : P.id) && (0, r.jsx)(O.Z, {
         user: t,
         nickname: x
       }),
@@ -62,7 +62,7 @@ function C(e) {
       pronouns: null == C ? void 0 : C.pronouns,
       tags: (0, r.jsx)(f.Z, {
         displayProfile: C,
-        profileType: T.y0.BITE_SIZE,
+        themeType: T.lY.POPOUT,
         onClose: L
       }),
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
@@ -70,14 +70,14 @@ function C(e) {
           userId: t.id
         }), !U && (0, r.jsx)(y.Z, {
           userId: t.id,
-          isHovering: P,
+          isHovering: R,
           onOpenProfile: w
         })]
       })
     }), M === A.OGo.PENDING_INCOMING && (0, r.jsx)(E.Z.Overlay, {
       children: (0, r.jsx)(m.Z, {
         user: t,
-        guildId: null == R ? void 0 : R.id,
+        guildId: null == P ? void 0 : P.id,
         channelId: D,
         applicationId: k
       })
@@ -110,12 +110,12 @@ function C(e) {
       user: t,
       currentUser: n,
       displayProfile: C,
-      guildId: null == R ? void 0 : R.id,
+      guildId: null == P ? void 0 : P.id,
       onClose: L
-    }), null != R && (0, r.jsx)(I.Z, {
+    }), null != P && (0, r.jsx)(I.Z, {
       user: t,
       currentUser: n,
-      guild: R
+      guild: P
     })]
   })
 }

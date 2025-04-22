@@ -32,8 +32,8 @@ var r = n(98405),
   A = T && T.prototype,
   N = S.prototype,
   C = b.set,
-  R = b.getterFor(O),
-  P = "stack" in new S(O),
+  P = b.getterFor(O),
+  R = "stack" in new S(O),
   w = function(e) {
     return f(g, e) && g[e].m ? g[e].c : 0
   },
@@ -48,7 +48,7 @@ var r = n(98405),
         name: n,
         message: t,
         code: r
-      }), y || (this.name = n, this.message = t, this.code = r), P) {
+      }), y || (this.name = n, this.message = t, this.code = r), R) {
       var i = new S(t);
       i.name = O, c(this, "stack", l(1, E(i.stack, 1)))
     }
@@ -63,7 +63,7 @@ var r = n(98405),
   },
   M = function(e) {
     return x(function() {
-      return R(this)[e]
+      return P(this)[e]
     })
   };
 y && (d(L, "code", M("code")), d(L, "message", M("message")), d(L, "name", M("name"))), c(L, "constructor", l(1, D));
@@ -85,14 +85,14 @@ r({
 }, {
   DOMException: B ? D : T
 });
-var F = i(O),
-  V = F.prototype;
-for (var Z in j && (v || T === F) && u(V, "toString", h), U && y && T === F && d(V, "code", x(function() {
+var V = i(O),
+  F = V.prototype;
+for (var Z in j && (v || T === V) && u(F, "toString", h), U && y && T === V && d(F, "code", x(function() {
     return w(p(this).name)
   })), g)
   if (f(g, Z)) {
     var H = g[Z],
       Y = H.s,
       W = l(6, H.c);
-    f(F, Y) || c(F, Y, W), f(V, Y) || c(V, Y, W)
+    f(V, Y) || c(V, Y, W), f(F, Y) || c(F, Y, W)
   }

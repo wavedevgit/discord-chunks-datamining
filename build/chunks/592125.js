@@ -64,8 +64,8 @@ function N(e, t) {
   }), e
 }
 let C = new h.Z("ChannelStore"),
-  R = {},
   P = {},
+  R = {},
   w = {},
   D = {},
   L = null,
@@ -76,8 +76,8 @@ let C = new h.Z("ChannelStore"),
   U = {},
   G = new Set,
   B = {},
-  F = 0,
-  V = {},
+  V = 0,
+  F = {},
   Z = 0,
   H = 0,
   Y = !1;
@@ -95,7 +95,7 @@ class W {
     if (0 === t.length) return null;
     let n = c.Z.database();
     if (null == n || !t.some(e => !G.has(e))) return null;
-    let r = F;
+    let r = V;
     return (0, u.gs)("loadChannels", async () => {
       let e = t.map(e => {
           if (G.has(e)) return null;
@@ -112,7 +112,7 @@ class W {
         i = e.map(e => e.promise);
       try {
         let t = await Promise.all(i);
-        if (F !== r) return C.fileOnly("lastResetTime has changed, skipping loads for " + e.map(e => e.guildId)), null;
+        if (V !== r) return C.fileOnly("lastResetTime has changed, skipping loads for " + e.map(e => e.guildId)), null;
         let n = t.filter(e => !G.has(e.guildId));
         await l.Z.dispatch({
           type: "LOAD_CHANNELS",
@@ -138,12 +138,12 @@ function K(e, t, n) {
     return
   }
   let [a, s] = i;
-  for (let n of ((0, _.ZP)(a), 0 !== t && (H += 1), G.add(e), f.Z.restored(e), o.Z.mark("❗", "loaded guild channels (guild: ".concat(e, ")"), s), a)) Object.hasOwn(P, n.id) || et((0, g._H)(n));
+  for (let n of ((0, _.ZP)(a), 0 !== t && (H += 1), G.add(e), f.Z.restored(e), o.Z.mark("❗", "loaded guild channels (guild: ".concat(e, ")"), s), a)) Object.hasOwn(R, n.id) || et((0, g._H)(n));
   C.verbose("hydration complete (guild: ".concat(e, ", channels: ").concat(a.length, ", guilds_loaded: ").concat(H, ")"))
 }
 
 function z(e, t, n) {
-  if (!Object.hasOwn(P, e) && !Object.hasOwn(D, e) && !Object.hasOwn(x, e) && !Object.hasOwn(U, e) && 1 === t) {
+  if (!Object.hasOwn(R, e) && !Object.hasOwn(D, e) && !Object.hasOwn(x, e) && !Object.hasOwn(U, e) && 1 === t) {
     let r = f.Z.getBasicChannel(e);
     (null == r ? void 0 : r.guild_id) != null && K(r.guild_id, t, n)
   }
@@ -151,23 +151,23 @@ function z(e, t, n) {
 
 function q(e) {
   if (C.fileOnly("Deleting guild channels for ".concat(e)), null != w[e]) {
-    for (let t of b.default.keys(w[e])) delete P[t];
+    for (let t of b.default.keys(w[e])) delete R[t];
     delete w[e]
   }
 }
 
 function Q(e) {
   var t, n, r, i;
-  return z(e, 0, "getBasicChannel"), null != (i = null != (r = null != (n = null != (t = P[e]) ? t : D[e]) ? n : x[e]) ? r : U[e]) ? i : f.Z.getBasicChannel(e)
+  return z(e, 0, "getBasicChannel"), null != (i = null != (r = null != (n = null != (t = R[e]) ? t : D[e]) ? n : x[e]) ? r : U[e]) ? i : f.Z.getBasicChannel(e)
 }
 
 function X(e) {
   var t, n, r, i;
-  return z(e, 1, "getChannel"), null != (i = null != (r = null != (n = null != (t = P[e]) ? t : D[e]) ? n : x[e]) ? r : U[e]) ? i : V[e]
+  return z(e, 1, "getChannel"), null != (i = null != (r = null != (n = null != (t = R[e]) ? t : D[e]) ? n : x[e]) ? r : U[e]) ? i : F[e]
 }
 
 function J(e) {
-  e.isPrivate() ? (delete V[e.id], $(e)) : e.isThread() ? ee(e) : g.oj.has(e.type) && en(e)
+  e.isPrivate() ? (delete F[e.id], $(e)) : e.isThread() ? ee(e) : g.oj.has(e.type) && en(e)
 }
 
 function $(e) {
@@ -176,7 +176,7 @@ function $(e) {
 }
 
 function ee(e) {
-  let t = P[e.parent_id];
+  let t = R[e.parent_id];
   x[e.id] = e.merge({
     nsfw: (null == t ? void 0 : t.nsfw) === !0,
     parentChannelThreadType: null == t ? void 0 : t.type
@@ -192,7 +192,7 @@ function et(e) {
     id: r,
     guild_id: i
   } = e;
-  P[r] = e, w[i] = null != (t = w[i]) ? t : {}, w[i][r] = e, j[i] = (null != (n = j[i]) ? n : 0) + 1
+  R[r] = e, w[i] = null != (t = w[i]) ? t : {}, w[i][r] = e, j[i] = (null != (n = j[i]) ? n : 0) + 1
 }
 
 function en(e) {
@@ -209,8 +209,8 @@ function er(e) {
 
 function ei(e) {
   let t = w;
-  for (let n of (M = {}, P = {}, w = {}, x = {}, j = {}, V = {}, B = {}, F = Date.now(), L = e.initialPrivateChannels, e.initialPrivateChannels.forEach($), e.guilds)) "partial" === n.dataMode && (a().forEach(t[n.id], et), C.fileOnly("Restoring guild channels for ".concat(n.id, " #:").concat(eL(n.id)))), ea(n);
-  eP()
+  for (let n of (M = {}, R = {}, w = {}, x = {}, j = {}, F = {}, B = {}, V = Date.now(), L = e.initialPrivateChannels, e.initialPrivateChannels.forEach($), e.guilds)) "partial" === n.dataMode && (a().forEach(t[n.id], et), C.fileOnly("Restoring guild channels for ".concat(n.id, " #:").concat(eL(n.id)))), ea(n);
+  eR()
 }
 
 function ea(e) {
@@ -218,7 +218,7 @@ function ea(e) {
     for (let t of (C.fileOnly("GuildCreate contained full channels for ".concat(e.id, " #:").concat(e.channels.length)), q(e.id), G.add(e.id), f.Z.restored(e.id), e.channels)) et(t);
   if (null != e.channelUpdates) {
     let t = e.channelUpdates;
-    for (let n of ((t.writes.length > 0 || t.deletes.length > 0) && f.Z.invalidate(e.id), t.deletes)) ev(P[n]);
+    for (let n of ((t.writes.length > 0 || t.deletes.length > 0) && f.Z.invalidate(e.id), t.deletes)) ev(R[n]);
     for (let e of t.writes) et(e)
   }
   if (null != e.threads)
@@ -236,13 +236,13 @@ function es(e) {
   let {
     guilds: t
   } = e, n = w;
-  P = {}, w = {}, j = {}, t.forEach(e => {
+  R = {}, w = {}, j = {}, t.forEach(e => {
     if ("unavailable" === e.data_mode) C.fileOnly("Restoring guild channels b/c unavailable in bg sync, for ".concat(e.id, " #:").concat(eL(e.id))), a().forEach(n[e.id], et);
     else if ("partial" === e.data_mode) {
       var t, r;
       C.fileOnly("Restoring guild channels b/c partial in bg sync, for ".concat(e.id, " #:").concat(eL(e.id))), a().forEach(n[e.id], et);
       let i = null != (r = e.partial_updates.deleted_channel_ids) ? r : [];
-      i.length > 0 && (K(e.id, 1, "handleBackgroundSync"), i.forEach(e => ev(P[e]))), null == (t = e.partial_updates.channels) || t.forEach(t => et((0, g.q_)(t, e.id)))
+      i.length > 0 && (K(e.id, 1, "handleBackgroundSync"), i.forEach(e => ev(R[e]))), null == (t = e.partial_updates.channels) || t.forEach(t => et((0, g.q_)(t, e.id)))
     } else C.fileOnly("BG sync contained full channels for ".concat(e.id, " #:").concat(e.channels.length)), q(e.id), G.add(e.id), f.Z.restored(e.id), e.channels.forEach(t => et((0, g.q_)(t, e.id)))
   })
 }
@@ -253,12 +253,12 @@ function el(e) {
       channels: n
     }
     of e.channels)
-    for (let e of (C.fileOnly("Lazy loaded guild channels for ".concat(t)), (0, _.ZP)(n), G.add(t), f.Z.restored(t), n)) Object.hasOwn(P, e.id) || et((0, g._H)(e));
+    for (let e of (C.fileOnly("Lazy loaded guild channels for ".concat(t)), (0, _.ZP)(n), G.add(t), f.Z.restored(t), n)) Object.hasOwn(R, e.id) || et((0, g._H)(e));
   return !1
 }
 
 function ec() {
-  C.fileOnly("initializeClear()"), M = {}, P = {}, w = {}, j = {}, D = {}, V = {}, x = {}, G = new Set, B = {}, F = Date.now()
+  C.fileOnly("initializeClear()"), M = {}, R = {}, w = {}, j = {}, D = {}, F = {}, x = {}, G = new Set, B = {}, V = Date.now()
 }
 
 function eu(e) {
@@ -358,14 +358,14 @@ function ey(e) {
 function ev(e) {
   if (null == e) return;
   let t = e.guild_id;
-  e.id in D && delete D[e.id], e.id in P && delete P[e.id], e.id in x && delete x[e.id], null != t && null != w[t] && e.id in w[t] && delete w[t][e.id], er(e)
+  e.id in D && delete D[e.id], e.id in R && delete R[e.id], e.id in x && delete x[e.id], null != t && null != w[t] && e.id in w[t] && delete w[t][e.id], er(e)
 }
 
 function eO(e) {
   var t, n;
   let {
     channel: r
-  } = e, i = null != (n = null != (t = P[r.id]) ? t : D[r.id]) ? n : x[r.id];
+  } = e, i = null != (n = null != (t = R[r.id]) ? t : D[r.id]) ? n : x[r.id];
   if (null == i) return !1;
   ev(i), ey(i)
 }
@@ -403,20 +403,20 @@ function eC(e) {
     channels: r
   } = e;
   for (let e of t)
-    for (let t of e) eR(t.thread);
-  n.forEach(eR), null == r || r.forEach(e => {
+    for (let t of e) eP(t.thread);
+  n.forEach(eP), null == r || r.forEach(e => {
     let t = (0, g.q_)(e),
       n = null != X(e.id),
-      r = null != V[e.id];
-    t.isPrivate() && (!n || r) ? V[t.id] = t : n || J(t)
+      r = null != F[e.id];
+    t.isPrivate() && (!n || r) ? F[t.id] = t : n || J(t)
   })
 }
 
-function eR(e) {
+function eP(e) {
   null != e && !(e.id in x) && g.AW.has(e.type) && ee((0, g.q_)(e))
 }
 
-function eP() {
+function eR() {
   for (let e in U = {}, m.Z.getFavoriteChannels()) {
     let t = m.Z.getCategoryRecord(e);
     null != t && (U[e] = t)
@@ -428,7 +428,7 @@ function ew() {
 }
 class eD extends(r = s.ZP.Store) {
   initialize() {
-    this.waitFor(f.Z, O.default, v.Z, m.Z), this.syncWith([m.Z], eP)
+    this.waitFor(f.Z, O.default, v.Z, m.Z), this.syncWith([m.Z], eR)
   }
   hasChannel(e) {
     return null != Q(e)
@@ -441,22 +441,22 @@ class eD extends(r = s.ZP.Store) {
   }
   loadAllGuildAndPrivateChannelsFromDisk() {
     for (let e of v.Z.getGuildIds()) K(e, 1, "loadAllGuildAndPrivateChannelsFromDisk");
-    return T({}, P, D)
+    return T({}, R, D)
   }
   getChannelIds(e) {
     var t, n;
-    return (K(e, 0, "getChannelIds"), null == e) ? b.default.keys(D) : b.default.keys(null != (n = null != (t = f.Z.getGuildBasicChannels(e)) ? t : w[e]) ? n : R)
+    return (K(e, 0, "getChannelIds"), null == e) ? b.default.keys(D) : b.default.keys(null != (n = null != (t = f.Z.getGuildBasicChannels(e)) ? t : w[e]) ? n : P)
   }
   getMutablePrivateChannels() {
     return D
   }
   getMutableBasicGuildChannelsForGuild(e) {
     var t, n;
-    return K(e, 0, "getMutableBasicGuildChannelsForGuild"), null != (n = null != (t = f.Z.getGuildBasicChannels(e)) ? t : w[e]) ? n : R
+    return K(e, 0, "getMutableBasicGuildChannelsForGuild"), null != (n = null != (t = f.Z.getGuildBasicChannels(e)) ? t : w[e]) ? n : P
   }
   getMutableGuildChannelsForGuild(e) {
     var t;
-    return K(e, 1, "getMutableGuildChannelsForGuild"), null != (t = w[e]) ? t : R
+    return K(e, 1, "getMutableGuildChannelsForGuild"), null != (t = w[e]) ? t : P
   }
   getSortedPrivateChannels() {
     return a()(D).values().sort((e, t) => b.default.compare(e.lastMessageId, t.lastMessageId)).reverse().value()
@@ -487,7 +487,7 @@ class eD extends(r = s.ZP.Store) {
     return a().values(x).filter(t => t.guild_id === e)
   }
   getInitialOverlayState() {
-    return T({}, P, D, x)
+    return T({}, R, D, x)
   }
   getDebugInfo() {
     return {

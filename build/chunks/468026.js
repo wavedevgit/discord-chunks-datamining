@@ -33,8 +33,8 @@ let m = e => {
       transitionState: N,
       titleClassName: C
     } = e,
-    R = (0, _.Q3)("ConfirmModal"),
-    P = R ? o.zx.Sizes.MEDIUM : o.zx.Sizes.LARGE,
+    P = (0, _.Q3)("ConfirmModal"),
+    R = P ? o.zx.Sizes.MEDIUM : o.zx.Sizes.LARGE,
     w = () => {
       null == I || I(), null == O || O()
     },
@@ -46,7 +46,7 @@ let m = e => {
     };
   return null != g && "" !== g && (t = (0, r.jsx)(o.zx, {
     type: "button",
-    size: P,
+    size: R,
     color: o.zx.Colors.PRIMARY,
     onClick: w,
     className: h.secondaryButton,
@@ -54,7 +54,7 @@ let m = e => {
   })), null != y && "" !== y && (n = (0, r.jsx)(o.zx, {
     type: "submit",
     color: b,
-    size: P,
+    size: R,
     className: a()(h.primaryButton, null != t ? h.gutter : null),
     autoFocus: !0,
     children: y
@@ -75,7 +75,7 @@ let m = e => {
       onSubmit: D,
       className: h.form,
       children: [(0, r.jsx)(c.xB, {
-        children: null != A && R ? (0, r.jsx)(d.X6q, {
+        children: null != A && P ? (0, r.jsx)(d.X6q, {
           variant: "heading-lg/semibold",
           className: a()(h.title, C),
           children: A
@@ -88,17 +88,17 @@ let m = e => {
         className: h.modalContent,
         children: (0, r.jsx)(f.Z, {
           direction: f.Z.Direction.VERTICAL,
-          justify: R ? f.Z.Justify.START : f.Z.Justify.CENTER,
+          justify: P ? f.Z.Justify.START : f.Z.Justify.CENTER,
           className: h.content,
           children: null != m && (0, r.jsx)(u.x, {
             variant: "text-md/normal",
             className: h.body,
-            color: R ? "header-secondary" : "text-normal",
+            color: P ? "header-secondary" : "text-normal",
             children: m
           })
         })
       }), (0, r.jsxs)(c.mz, {
-        justify: R ? void 0 : f.Z.Justify.BETWEEN,
+        justify: P ? void 0 : f.Z.Justify.BETWEEN,
         wrap: f.Z.Wrap.WRAP,
         children: [n, t, i]
       })]

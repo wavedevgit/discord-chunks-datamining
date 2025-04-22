@@ -74,10 +74,10 @@ function h(e) {
     onClick: n
   } = e, c = _(e, ["text", "onClick"]);
   let {
-    profileType: d
+    themeType: d
   } = (0, o.z)(), p = "string" == typeof t ? t.trim() : t;
   if (null == p || "" === p) return null;
-  let h = () => d === s.y0.FULL_SIZE ? (0, r.jsx)(i.Text, f(u({
+  let h = () => d === s.lY.MODAL ? (0, r.jsx)(i.Text, f(u({
     color: "text-normal"
   }, c), {
     children: p

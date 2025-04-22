@@ -145,14 +145,14 @@ function C(e) {
   })
 }
 
-function R(e) {
+function P(e) {
   let {
     searchId: t
   } = e, n = g(t);
   n.isIndexing = !0, n.isHistoricalIndexing = !0, n.isSearching = !1
 }
 
-function P(e) {
+function R(e) {
   let {
     searchId: t
   } = e, n = g(t);
@@ -230,12 +230,12 @@ function B() {
   s.K.remove(y), I = {}
 }
 
-function F() {
+function V() {
   return null != S && w({
     searchId: S
   })
 }
-class V extends(r = o.ZP.Store) {
+class F extends(r = o.ZP.Store) {
   initialize() {
     this.waitFor(f.Z, d.Z);
     let e = s.K.get(y);
@@ -324,18 +324,18 @@ class V extends(r = o.ZP.Store) {
     }
   }
 }
-p(V, "displayName", "SearchStore");
-let Z = new V(l.Z, {
+p(F, "displayName", "SearchStore");
+let Z = new F(l.Z, {
   SEARCH_START: N,
-  SEARCH_INDEXING: R,
-  SEARCH_FINISH: P,
+  SEARCH_INDEXING: P,
+  SEARCH_FINISH: R,
   SEARCH_EDITOR_STATE_CLEAR: w,
   SEARCH_ENSURE_SEARCH_STATE: A,
   SEARCH_EDITOR_STATE_CHANGE: T,
   SEARCH_SET_SHOW_BLOCKED_RESULTS: U,
   SEARCH_SCREEN_OPEN: x,
   CHANNEL_SELECT: L,
-  CHANNEL_TOGGLE_MEMBERS_SECTION: F,
+  CHANNEL_TOGGLE_MEMBERS_SECTION: V,
   SEARCH_CLEAR_HISTORY: M,
   SEARCH_REMOVE_HISTORY: k,
   SEARCH_ADD_HISTORY: C,

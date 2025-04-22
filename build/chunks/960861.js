@@ -45,12 +45,12 @@ function C() {
   return d.Z.supports(b.AN.NATIVE_SCREENSHARE_PICKER)
 }
 
-function R() {
+function P() {
   return d.Z.getUseSystemScreensharePicker()
 }
 
-function P() {
-  let e = R() && (T > 0 || I && 0 === S);
+function R() {
+  let e = P() && (T > 0 || I && 0 === S);
   if (e !== A) {
     var t, n;
     A = e, null == (n = d.Z.getMediaEngine()) || null == (t = n.setNativeDesktopVideoSourcePickerActive) || t.call(n, A)
@@ -58,20 +58,20 @@ function P() {
 }
 
 function w() {
-  return (0, a.useEffect)(() => (S++, P(), () => {
-    0 == --S && P()
+  return (0, a.useEffect)(() => (S++, R(), () => {
+    0 == --S && R()
   }), [])
 }
 
 function D() {
-  return (0, a.useEffect)(() => (T++, P(), () => {
-    --T, P()
+  return (0, a.useEffect)(() => (T++, R(), () => {
+    --T, R()
   }), [])
 }
 
 function L() {
   let e = c.Z.getChannel(_.Z.getVoiceChannelId());
-  return I = null != e && (0, h.Z)(d.Z) && (0, p.JL)(e, u.Z, f.Z, !1), P(), !1
+  return I = null != e && (0, h.Z)(d.Z) && (0, p.JL)(e, u.Z, f.Z, !1), R(), !1
 }
 
 function x() {
@@ -98,7 +98,7 @@ class j extends(i = o.ZP.Store) {
     return C()
   }
   enabled() {
-    return R()
+    return P()
   }
   releasePickerStream() {
     (0, E.t)()
@@ -149,7 +149,7 @@ function B(e) {
   }
 }
 
-function F(e) {
+function V(e) {
   let {
     style: t
   } = e;
@@ -159,7 +159,7 @@ function F(e) {
   }
 }
 
-function V() {
+function F() {
   N = {}
 }
 v(j, "displayName", "NativeScreenSharePickerStore");
@@ -167,6 +167,6 @@ let Z = new j(s.Z, {
   NATIVE_SCREEN_SHARE_PICKER_UPDATE: U,
   NATIVE_SCREEN_SHARE_PICKER_CANCEL: G,
   NATIVE_SCREEN_SHARE_PICKER_ERROR: B,
-  NATIVE_SCREEN_SHARE_PICKER_PRESENT: F,
-  NATIVE_SCREEN_SHARE_PICKER_RELEASE: V
+  NATIVE_SCREEN_SHARE_PICKER_PRESENT: V,
+  NATIVE_SCREEN_SHARE_PICKER_RELEASE: F
 })

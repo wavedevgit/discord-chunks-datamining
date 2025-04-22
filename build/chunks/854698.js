@@ -4,16 +4,16 @@ n.d(t, {
   BP: () => X,
   DK: () => H,
   G3: () => p,
-  Ho: () => F,
+  Ho: () => V,
   Ib: () => h,
   P8: () => C,
-  PJ: () => V,
+  PJ: () => F,
   Rp: () => Y,
   Uq: () => G,
   Y4: () => B,
   hn: () => b,
   iA: () => M,
-  ib: () => R,
+  ib: () => P,
   lh: () => J,
   mF: () => q,
   ub: () => D,
@@ -88,15 +88,15 @@ function C(e) {
     label: _.intl.string(_.t["jYR/MT"])
   }), a
 }
-let R = () => {
+let P = () => {
     let e = a()().add(1, "hour"),
       t = e.hour();
     return e.minutes() >= 30 && (t += 1), e.hour(t).minutes(0).seconds(0)
   },
-  P = (e, t) => (0, l.vc)(e, e.get("years") === t.get("years") ? m : g),
+  R = (e, t) => (0, l.vc)(e, e.get("years") === t.get("years") ? m : g),
   w = (e, t) => {
     let n = (0, l.wY)(e.toDate(), t.toDate());
-    return n > 1 || n < 0 ? P(e, t) : (0, l.vc)(e, e.localeData().calendar(n < 1 ? "sameDay" : "nextDay", e, t))
+    return n > 1 || n < 0 ? R(e, t) : (0, l.vc)(e, e.localeData().calendar(n < 1 ? "sameDay" : "nextDay", e, t))
   };
 
 function D(e, t, n) {
@@ -106,7 +106,7 @@ function D(e, t, n) {
     o = null != t && r.isSame(i, "day");
   return {
     startDateTimeString: w(r, n),
-    endDateTimeString: null != i ? o ? i.format(E) : P(i, n) : void 0,
+    endDateTimeString: null != i ? o ? i.format(E) : R(i, n) : void 0,
     currentOrPastEvent: r <= n,
     upcomingEvent: r <= a()().add(1, "hour"),
     withinStartWindow: r <= a()().add(15, "minute"),
@@ -162,7 +162,7 @@ function B(e, t) {
   return null == e || null == t ? null == e && null == t : G(e.startDate, t.startDate) && G(e.endDate, t.endDate)
 }
 
-function F(e) {
+function V(e) {
   var t;
   let n = null != e.byWeekday ? [...e.byWeekday] : null,
     r = null == (t = e.byNWeekday) ? void 0 : t.map(e => new o.OG(e.day, e.n)),
@@ -180,7 +180,7 @@ function F(e) {
   })
 }
 
-function V(e, t, n) {
+function F(e, t, n) {
   let r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
     i = n > new Date ? n : new Date,
     a = new Date;
@@ -306,7 +306,7 @@ function q(e, t) {
 
 function Q(e, t) {
   if (null == t) return d.z.NONE;
-  let n = F(t);
+  let n = V(t);
   switch (n.options.freq) {
     case o.Ci.WEEKLY:
       if (n.options.interval < 1 || n.options.interval > 2) return d.z.NONE;

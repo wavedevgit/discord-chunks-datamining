@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $0: () => R,
+  $0: () => P,
   AN: () => k,
   Ct: () => A,
-  DU: () => F,
+  DU: () => V,
   EQ: () => B,
   Ej: () => S,
   ME: () => m,
@@ -17,7 +17,7 @@ n.d(t, {
   _O: () => T,
   _y: () => g,
   do: () => j,
-  g7: () => P,
+  g7: () => R,
   g_: () => p,
   hs: () => b,
   j4: () => C,
@@ -50,7 +50,7 @@ function f(e, t) {
   try {
     let n = d[t.premiumType];
     if (null == n) return u.warn("Cannot find the corresponding SKU to the user's premium type ".concat(t.premiumType)), !1;
-    let r = V[n];
+    let r = F[n];
     if (null == r) return u.warn("Cannot find the corresponding product catalog entry to the user's SKU ".concat(n, " and premium type ").concat(t.premiumType)), !1;
     return r.skuFeatures.includes(e)
   } catch (e) {
@@ -79,8 +79,8 @@ let p = new _(r.q.ANIMATED_EMOJIS),
   A = new _("appIcons"),
   N = new _(r.q.CLIENT_THEMES),
   C = new _("boostDiscount"),
-  R = new _("freeBoosts"),
-  P = new _(r.q.STREAM_MID_QUALITY),
+  P = new _("freeBoosts"),
+  R = new _(r.q.STREAM_MID_QUALITY),
   w = new _(r.q.STREAM_HIGH_QUALITY),
   D = new _(r.q.CUSTOM_NOTIFICATION_SOUNDS),
   L = new _("fancyVoiceChannelReactions"),
@@ -92,13 +92,13 @@ let j = new _(r.q.INCREASED_GUILD_LIMIT),
   U = new _(r.q.INCREASED_MESSAGE_LENGTH),
   G = new _("increasedVideoUploadQuality"),
   B = new _("uploadLargeFiles"),
-  F = new _(r.q.CHAT_WALLPAPERS),
-  V = Object.freeze({
+  V = new _(r.q.CHAT_WALLPAPERS),
+  F = Object.freeze({
     [c.Si.TIER_0]: new l.Z(c.Si.TIER_0, [p, h, m, I, k, G, B, A]),
-    [c.Si.TIER_1]: new l.Z(c.Si.TIER_1, [p, h, y, v, I, C, P, L, G, B, A]),
-    [c.Si.TIER_2]: new l.Z(c.Si.TIER_2, [p, h, m, g, E, y, v, O, I, S, N, C, R, P, w, L, x, M, k, j, U, G, B, A, T, D, b, F])
+    [c.Si.TIER_1]: new l.Z(c.Si.TIER_1, [p, h, y, v, I, C, R, L, G, B, A]),
+    [c.Si.TIER_2]: new l.Z(c.Si.TIER_2, [p, h, m, g, E, y, v, O, I, S, N, C, P, R, w, L, x, M, k, j, U, G, B, A, T, D, b, V])
   }),
-  Z = [C, R];
+  Z = [C, P];
 
 function H(e, t, n) {
   return !((0, s.U)("canUserUse", t) || null !== n && n === c.a$.FP_ONLY && Z.includes(e)) && e.getFeatureValue(t)

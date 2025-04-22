@@ -101,8 +101,8 @@ function N(e) {
     forceTooltipOpen: A = !1,
     buttonRef: N,
     grow: C,
-    "aria-label": R,
-    look: P,
+    "aria-label": P,
+    look: R,
     buttonText: w,
     size: D
   } = e;
@@ -110,7 +110,7 @@ function N(e) {
     children: (0, r.jsx)(l.ua7, {
       position: O,
       text: t,
-      "aria-label": R,
+      "aria-label": P,
       shouldShow: T,
       forceOpen: A,
       children: e => {
@@ -121,7 +121,7 @@ function N(e) {
           onMouseLeave: T
         } = e, A = S(e, ["onClick", "onContextMenu", "onMouseEnter", "onMouseLeave"]);
         return (0, r.jsxs)(l.zxk, I(v({
-          look: null != P ? P : l.zxk.Looks.BLANK,
+          look: null != R ? R : l.zxk.Looks.BLANK,
           size: null != D ? D : l.zxk.Sizes.NONE,
           onKeyDown: e => {
             null == i || i(e)
@@ -154,7 +154,7 @@ function N(e) {
           wrapperClassName: f,
           buttonRef: N,
           grow: C,
-          "aria-label": R
+          "aria-label": P
         }, A), {
           children: [(0, r.jsx)(h, {
             size: s.Z.md,
@@ -182,7 +182,7 @@ let C = {
     activeLight: b.activeLight,
     premiumGradient: b.premiumGradient
   },
-  R = {
+  P = {
     disconnect: b.disconnect,
     join: b.join,
     red: b.experimentRed,
@@ -194,7 +194,7 @@ let C = {
     activeLight: b.experimentActiveLight,
     premiumGradient: b.premiumGradient
   },
-  P = {
+  R = {
     disconnect: b.disconnect,
     join: b.join,
     red: b.redGlow,
@@ -226,20 +226,20 @@ function w(e) {
     U = null != a ? a : j,
     G = (0, c.Z)("(max-width: 456px)"),
     B = i.useRef(null),
-    F = i.useContext(h.h9),
+    V = i.useContext(h.h9),
     {
-      coloredIconsEnabled: V
+      coloredIconsEnabled: F
     } = (0, f.Z)({
       location: "CenterControlButton"
     });
   i.useEffect(() => {
-    null != B.current && (F ? B.current.pause() : B.current.play())
-  }, [F]);
+    null != B.current && (V ? B.current.pause() : B.current.play())
+  }, [V]);
   let Z = (0, _.Z)({
       location: "CenterControlButton"
     }),
     H = M || Z,
-    Y = H ? [b.experimentButton, V ? P[j] : R[j], x && null == T && b.fullRegionButton, V && !x && null != T && b.attachedButton] : [C[j]],
+    Y = H ? [b.experimentButton, F ? R[j] : P[j], x && null == T && b.fullRegionButton, F && !x && null != T && b.attachedButton] : [C[j]],
     W = null != (t = k.onContextMenu) ? t : T,
     K = (0, r.jsx)(N, I(v({}, k), {
       grow: !1,
@@ -248,14 +248,14 @@ function w(e) {
       className: o()(G ? y : null, b.staticButton, b.centerButton, s && b.active, ...Y)
     }));
   return G ? K : H ? (0, r.jsxs)("div", {
-    className: o()(V ? b.attachedCaretButtonContainer : b.caretButtonContainer, V && w && b.popoutOpen, y, x && null != T && [b.fullRegionDropdownButton, R[j]]),
+    className: o()(F ? b.attachedCaretButtonContainer : b.caretButtonContainer, F && w && b.popoutOpen, y, x && null != T && [b.fullRegionDropdownButton, P[j]]),
     children: [K, null != T ? (0, r.jsx)(m.Z, {
       children: (0, r.jsx)(l.P3F, {
         "aria-label": E.intl.string(E.t.PdRCRk),
         onClick: D ? void 0 : T,
         onContextMenu: D ? void 0 : T,
-        className: o()(b.contextMenuNubExperiment, V && !x && b.attachedCaret, V ? P[U] : R[U], {
-          [b.popoutOpen]: w && V,
+        className: o()(b.contextMenuNubExperiment, F && !x && b.attachedCaret, F ? R[U] : P[U], {
+          [b.popoutOpen]: w && F,
           [b.active]: w,
           [b.disabled]: D
         }),

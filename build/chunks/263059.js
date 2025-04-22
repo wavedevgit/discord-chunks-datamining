@@ -29,8 +29,8 @@ var r = n(200651),
   A = n(194811),
   N = n(373826),
   C = n(262210),
-  R = n(666984),
-  P = n(386019),
+  P = n(666984),
+  R = n(386019),
   w = n(228168),
   D = n(227832);
 
@@ -66,12 +66,12 @@ function M(e) {
     className: k,
     onClose: j
   } = e, U = i.useRef(null), {
-    profileType: G
+    themeType: G
   } = (0, O.z)(), B = {
-    [D.fullSize]: G === w.y0.FULL_SIZE
+    [D.fullSize]: G === w.lY.MODAL
   }, {
-    interactionSource: F,
-    interactionSourceId: V
+    interactionSource: V,
+    interactionSourceId: F
   } = (0, b.Xo)(), Z = (0, _.Z)({
     activity: L,
     user: n
@@ -127,7 +127,7 @@ function M(e) {
     },
     X = () => n.id === a.id ? null : (0, r.jsx)("div", {
       className: o()(D.actions, B),
-      children: (0, r.jsx)(R.Z, {
+      children: (0, r.jsx)(P.Z, {
         user: n,
         activity: L,
         onAction: K
@@ -135,7 +135,7 @@ function M(e) {
     });
   if (null === G) return null;
   let J = null != (t = L.application_id) ? t : L.name,
-    $ = F === w.n_.ACTIVITY && V === J;
+    $ = V === w.n_.ACTIVITY && F === J;
   return (0, r.jsx)(u.Gt, {
     value: W,
     children: (0, r.jsx)(I.Z, {
@@ -145,7 +145,7 @@ function M(e) {
       children: (0, r.jsx)(y.Z, {
         user: n,
         guildId: M,
-        profileType: G,
+        themeType: G,
         sourceId: J,
         sourceDetails: null == Z ? (0, E.Z)(L) : null,
         entry: Z,
@@ -161,7 +161,7 @@ function M(e) {
           onShowToolbar: () => K({
             action: "HOVER_ACTIVITY_CARD"
           }),
-          renderMoreButtonPopout: e => (0, r.jsx)(P.Z, {
+          renderMoreButtonPopout: e => (0, r.jsx)(R.Z, {
             display: "live",
             user: n,
             activity: L,
@@ -206,9 +206,9 @@ function M(e) {
                     activity: L,
                     className: D.badges
                   }), Q()]
-                }), G === w.y0.FULL_SIZE && X()]
+                }), G === w.lY.MODAL && X()]
               })
-            }), G !== w.y0.FULL_SIZE && X()]
+            }), G !== w.lY.MODAL && X()]
           })
         })
       })

@@ -82,8 +82,8 @@ let v = "US",
   A = (0, u.hQ)(),
   N = (0, u.hQ)(),
   C = (0, u.hQ)(),
-  R = (0, u.hQ)(),
   P = (0, u.hQ)(),
+  R = (0, u.hQ)(),
   w = (0, u.hQ)(),
   D = (0, u.hQ)();
 var L = function(e) {
@@ -146,7 +146,7 @@ let M = {
   }),
   G = e => ({
     name: "line2",
-    id: R,
+    id: P,
     title: () => _.intl.string(_.t.i2Z0gI),
     placeholder: () => _.intl.string(_.t.fKLoNj),
     autoComplete: "address-line2",
@@ -155,7 +155,7 @@ let M = {
   }),
   B = e => ({
     name: "city",
-    id: P,
+    id: R,
     title: () => _.intl.string(_.t.bUSWl5),
     autoComplete: "address-level2",
     placeholder: () => _.intl.string(_.t["5rRx39"]),
@@ -177,7 +177,7 @@ let M = {
     },
     renderInput: e => (0, i.jsx)(c.oil, m({}, e))
   }),
-  F = e => {
+  V = e => {
     let t, n;
     switch (e) {
       case v:
@@ -215,7 +215,7 @@ let M = {
       renderInput: e => (0, i.jsx)(c.oil, m({}, e))
     }
   },
-  V = e => {
+  F = e => {
     let t;
     switch (e) {
       case v:
@@ -278,15 +278,15 @@ let M = {
       [U],
       [G],
       [B],
-      [V, F]
+      [F, V]
     ],
     modalInternational: [
       [j],
       [U],
       [G],
       [B],
-      [V],
-      [F]
+      [F],
+      [V]
     ],
     modalUSWithName: [
       [j],
@@ -294,7 +294,7 @@ let M = {
       [U],
       [G],
       [B],
-      [V, F]
+      [F, V]
     ],
     modalInternationalWithName: [
       [j],
@@ -302,13 +302,13 @@ let M = {
       [U],
       [G],
       [B],
-      [V],
-      [F]
+      [F],
+      [V]
     ],
     settingsUS: [
       [k],
       [U, G],
-      [B, V, F],
+      [B, F, V],
       [j]
     ],
     settingsUSMobile: [
@@ -316,15 +316,15 @@ let M = {
       [U],
       [G],
       [B],
-      [V],
       [F],
+      [V],
       [j]
     ],
     settingsInternational: [
       [k],
       [U, G],
       [B],
-      [V, F],
+      [F, V],
       [j]
     ],
     settingsInternationalMobile: [
@@ -332,22 +332,22 @@ let M = {
       [U],
       [G],
       [B],
-      [V],
       [F],
+      [V],
       [j]
     ],
     settingsInternationalWithoutName: [
       [U, G],
       [B],
-      [V, F],
+      [F, V],
       [j]
     ],
     settingsInternationalWithoutNameMobile: [
       [U],
       [G],
       [B],
-      [V],
       [F],
+      [V],
       [j]
     ]
   };

@@ -107,11 +107,11 @@ function N() {
 }
 let C = () => !0;
 
-function R() {
+function P() {
   return null != d.ZP.getPremiumTypeSubscription() && (y.userDiscountOffers = {}, y.userTrialOffers = {}, !0)
 }
 
-function P() {
+function R() {
   let e = c.default.getCurrentUser();
   !(0, u.I5)(e) && Object.keys(y.userDiscountOffers).length > 0 && (0, s.T)("UserOfferStore", !0)
 }
@@ -129,7 +129,7 @@ function w() {
 }
 class D extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    y = null != e ? e : b, this.waitFor(c.default), this.syncWith([c.default], C), this.syncWith([d.ZP], R), this.syncWith([o.Z], w)
+    y = null != e ? e : b, this.waitFor(c.default), this.syncWith([c.default], C), this.syncWith([d.ZP], P), this.syncWith([o.Z], w)
   }
   getUserTrialOffer(e) {
     if (null !== e) return y.userTrialOffers[e]
@@ -218,8 +218,8 @@ let L = new D(a.Z, {
   BILLING_USER_OFFER_FETCH_SUCCESS: I,
   BILLING_USER_OFFER_ACKNOWLEDGED_SUCCESS: A,
   BILLING_USER_OFFER_FETCH_FAIL: S,
-  BILLING_PAYMENT_SOURCE_CREATE_SUCCESS: P,
-  BILLING_PAYMENT_SOURCE_UPDATE_SUCCESS: P,
-  BILLING_PAYMENT_SOURCE_REMOVE_SUCCESS: P,
+  BILLING_PAYMENT_SOURCE_CREATE_SUCCESS: R,
+  BILLING_PAYMENT_SOURCE_UPDATE_SUCCESS: R,
+  BILLING_PAYMENT_SOURCE_REMOVE_SUCCESS: R,
   LOGOUT: N
 })

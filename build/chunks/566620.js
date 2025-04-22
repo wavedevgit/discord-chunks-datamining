@@ -40,8 +40,8 @@ var r = n(990547),
   A = n(973616),
   N = n(314897),
   C = n(592125),
-  R = n(430824),
-  P = n(496675),
+  P = n(430824),
+  R = n(496675),
   w = n(594174),
   D = n(979651),
   L = n(626135),
@@ -52,8 +52,8 @@ var r = n(990547),
   U = n(595519),
   G = n(774226),
   B = n(317381),
-  F = n(882347),
-  V = n(16609),
+  V = n(882347),
+  F = n(16609),
   Z = n(224189),
   H = n(374065),
   Y = n(917107),
@@ -109,7 +109,7 @@ function en(e) {
       {
         channelId: t,
         guildId: n
-      } = null != e ? (0, V.dK)(e) : {
+      } = null != e ? (0, F.dK)(e) : {
         channelId: void 0,
         guildId: void 0
       };
@@ -150,8 +150,8 @@ async function er(e) {
     isContextlessActivity: A,
     onConfirmActivityLaunchChecksAlertOpen: N
   } = e, C = null != p ? p : T, {
-    channelIdForLaunch: R,
-    channelForLaunch: P,
+    channelIdForLaunch: P,
+    channelForLaunch: R,
     guildIdForLaunch: D,
     channelIdForAnalytics: L,
     guildIdForAnalytics: x
@@ -163,7 +163,7 @@ async function er(e) {
   }), M = (0, G.sq)();
   if (!M) {
     var k;
-    if (null == D && !(null != (k = null == P ? void 0 : P.isPrivate()) && k)) return !1
+    if (null == D && !(null != (k = null == R ? void 0 : R.isPrivate()) && k)) return !1
   }
   let j = (0, S.r)();
   try {
@@ -171,7 +171,7 @@ async function er(e) {
       type: "EMBEDDED_ACTIVITY_LAUNCH_START",
       nonce: j,
       applicationId: n,
-      channelId: null != R ? R : null,
+      channelId: null != P ? P : null,
       componentId: c,
       analyticsLocations: a,
       source: _,
@@ -188,7 +188,7 @@ async function er(e) {
         userId: null == e ? void 0 : e.id,
         guildId: x,
         channelId: L,
-        channelType: null == P ? void 0 : P.type,
+        channelType: null == R ? void 0 : R.type,
         applicationId: n,
         locationObject: s,
         analyticsLocations: null != a ? a : [],
@@ -197,11 +197,11 @@ async function er(e) {
         referrerId: m,
         inviterUserId: I
       }), r) {
-      if (null == R || !ei(n, P)) throw new v.Z(v.Z.Reasons.INVALID_CHANNEL);
+      if (null == P || !ei(n, R)) throw new v.Z(v.Z.Reasons.INVALID_CHANNEL);
       let e = await ea({
         applicationId: n,
         nonce: j,
-        channelId: R,
+        channelId: P,
         guildId: D,
         commandOrigin: u,
         sectionName: d,
@@ -216,7 +216,7 @@ async function er(e) {
     } else {
       let e = await eo({
         applicationId: n,
-        channelId: R,
+        channelId: P,
         embeddedActivitiesManager: l,
         isStart: r,
         guildId: D,
@@ -232,7 +232,7 @@ async function er(e) {
       type: "EMBEDDED_ACTIVITY_LAUNCH_SUCCESS",
       nonce: j,
       applicationId: n,
-      channelId: null != R ? R : null
+      channelId: null != P ? P : null
     })
   } catch (t) {
     let e = A ? i.E.CONTEXTLESS : null != D ? i.E.GUILD_CHANNEL : i.E.PRIVATE_CHANNEL;
@@ -303,7 +303,7 @@ async function ea(e) {
     }
   }
   let I = C.Z.getChannel(r),
-    S = null != i ? R.Z.getGuild(i) : null;
+    S = null != i ? P.Z.getGuild(i) : null;
   if (null == I) return {
     result: "failure",
     reason: 3
@@ -313,7 +313,7 @@ async function ea(e) {
       r = B.ZP.getCurrentEmbeddedActivity();
     (null == r ? void 0 : r.applicationId) != null && (e = g.Z.getApplication(null == r ? void 0 : r.applicationId));
     let i = w.default.getCurrentUser();
-    if (null != i && !await (0, F.p)({
+    if (null != i && !await (0, V.p)({
         applicationId: t,
         application: n,
         channel: I,
@@ -410,8 +410,8 @@ async function eo(e) {
   let v = (0, H.e4)({
     channelId: i,
     ChannelStore: C.Z,
-    GuildStore: R.Z,
-    PermissionStore: P.Z,
+    GuildStore: P.Z,
+    PermissionStore: R.Z,
     VoiceStateStore: D.Z
   });
   if (v !== H.jy.CAN_LAUNCH) {
@@ -426,7 +426,7 @@ async function eo(e) {
     }
   }
   let O = B.ZP.getCurrentEmbeddedActivity();
-  if ((null == O ? void 0 : O.applicationId) != null && (t = g.Z.getApplication(null == O ? void 0 : O.applicationId)), !(!o || await (0, F.p)({
+  if ((null == O ? void 0 : O.applicationId) != null && (t = g.Z.getApplication(null == O ? void 0 : O.applicationId)), !(!o || await (0, V.p)({
       applicationId: n,
       application: b,
       channel: y,
@@ -522,7 +522,7 @@ function es(e) {
     instanceId: null == i ? void 0 : i.launchId,
     showFeedback: r
   });
-  let a = (0, V.pY)(t);
+  let a = (0, F.pY)(t);
   if (null != a) {
     var s;
     let e = y.Z.getSelectedParticipantId(a),

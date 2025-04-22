@@ -50,23 +50,23 @@ function C(e) {
   return [s.tI.VIEW_CHANNEL, s.tI.VIEW_THREAD, s.tI.VIEW_MESSAGE_REQUEST].includes(e.type)
 }
 
-function R(e) {
+function P(e) {
   let t = !1;
   S && (S = !1, t = !0);
   let n = N(_.Z.getChannelId());
   return null != n && n in T && (delete T[n], t = !0), t && e ? e : !e
 }
 
-function P() {
-  O && (O = R(O)), v = R(v)
+function R() {
+  O && (O = P(O)), v = P(v)
 }
 
 function w() {
-  v && (v = R(v)), O = R(O)
+  v && (v = P(v)), O = P(O)
 }
 
 function D() {
-  I || l.S.dispatch(m.CkL.SEARCH_RESULTS_CLOSE), I = R(I)
+  I || l.S.dispatch(m.CkL.SEARCH_RESULTS_CLOSE), I = P(I)
 }
 
 function L(e) {
@@ -171,14 +171,14 @@ function B() {
   return e
 }
 
-function F(e) {
+function V(e) {
   let {
     baseChannelId: t
   } = e, n = N(t);
   null != n && delete T[n]
 }
 
-function V() {
+function F() {
   if (S === f.Z.isActive()) return !1;
   S = f.Z.isActive()
 }
@@ -192,7 +192,7 @@ class H extends(r = a.ZP.PersistedStore) {
       var t, n, r, i, a;
       v = null != (t = e.isMembersOpen) && t, O = null != (n = e.isSummariesOpen) && n, I = null == (r = e.isProfileOpen) || r, T = null != (i = e.sidebars) ? i : {}, A = null != (a = e.guildSidebars) ? a : {}
     }
-    this.syncWith([f.Z], V), this.syncWith([d.Z], B)
+    this.syncWith([f.Z], F), this.syncWith([d.Z], B)
   }
   getState() {
     return {
@@ -231,13 +231,13 @@ class H extends(r = a.ZP.PersistedStore) {
 }
 b(H, "displayName", "ChannelSectionStore"), b(H, "persistKey", "ChannelSectionStore2");
 let Y = new H(o.Z, {
-  CHANNEL_TOGGLE_MEMBERS_SECTION: P,
+  CHANNEL_TOGGLE_MEMBERS_SECTION: R,
   USER_PROFILE_SIDEBAR_TOGGLE_SECTION: D,
   CHANNEL_TOGGLE_SUMMARIES_SECTION: w,
   SIDEBAR_VIEW_CHANNEL: M,
   SIDEBAR_VIEW_GUILD: L,
   SIDEBAR_CREATE_THREAD: k,
-  SIDEBAR_CLOSE: F,
+  SIDEBAR_CLOSE: V,
   SIDEBAR_CLOSE_GUILD: x,
   CHANNEL_DELETE: j,
   CHANNEL_SELECT: Z,

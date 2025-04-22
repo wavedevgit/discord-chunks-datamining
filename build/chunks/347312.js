@@ -42,7 +42,7 @@ function C(e) {
   return n
 }
 
-function R(e, t) {
+function P(e, t) {
   if (null != e && null != t) {
     if (e.length < t) {
       let n = t - e.length;
@@ -52,7 +52,7 @@ function R(e, t) {
   }
 }
 
-function P(e) {
+function R(e) {
   let t;
   return Math.floor(((t = e <= g ? m : e >= b ? E : (Math.min(e, b) - g) / (b - g) * (E - m) + m) + v) / O) * O - v
 }
@@ -94,7 +94,7 @@ function M(e, t) {
     r = i.useMemo(() => w(t), [t]);
   return i.useMemo(() => {
     var e;
-    return null != (e = R(null != n ? n : [], r)) ? e : A
+    return null != (e = P(null != n ? n : [], r)) ? e : A
   }, [n, r])
 }
 
@@ -147,26 +147,26 @@ function G(e) {
   } = e, {
     ref: g,
     width: E
-  } = (0, c.ZP)(), b = i.useMemo(() => P(s), [s]), y = i.useRef(void 0), v = M(n, E), O = i.useRef(l), S = i.useRef(d), A = i.useRef(null), C = window.devicePixelRatio, {
-    lastBackgroundFillColor: R,
+  } = (0, c.ZP)(), b = i.useMemo(() => R(s), [s]), y = i.useRef(void 0), v = M(n, E), O = i.useRef(l), S = i.useRef(d), A = i.useRef(null), C = window.devicePixelRatio, {
+    lastBackgroundFillColor: P,
     backgroundFillColor: w,
     lastActiveFillColor: D,
     activeFillColor: k,
     lastInactiveFillColor: G,
     inactiveFillColor: B
-  } = j(l, d), F = {
+  } = j(l, d), V = {
     currentTime: a,
     duration: s,
     played: l
-  }, V = i.useRef(F);
+  }, F = i.useRef(V);
   i.useEffect(() => {
-    V.current = F
+    F.current = V
   }), i.useEffect(() => {
     let {
       currentTime: e,
       duration: t,
       played: n
-    } = V.current, r = L({
+    } = F.current, r = L({
       showAll: !n,
       currentTime: e,
       duration: t,
@@ -202,7 +202,7 @@ function G(e) {
       (O.current !== l || S.current !== d) && (O.current = l, S.current = d, A.current = n), null != A.current && n > A.current + N && (A.current = null);
       let s = r.height / C;
       i.clearRect(0, 0, r.width, r.height), i.beginPath();
-      let [c, u] = U(R, w, n, A.current);
+      let [c, u] = U(P, w, n, A.current);
       o = o || u, i.fillStyle = c;
       for (let e = 0; e < v.length; e++) x({
         context: i,
@@ -234,7 +234,7 @@ function G(e) {
     return e = requestAnimationFrame(t), () => {
       null != e && cancelAnimationFrame(e)
     }
-  }, [g, C, v, E, a, s, l, d, R, w, D, k, G, B]);
+  }, [g, C, v, E, a, s, l, d, P, w, D, k, G, B]);
   let [, Z] = (0, u.Z)({
     ref: g,
     onDrag: f,

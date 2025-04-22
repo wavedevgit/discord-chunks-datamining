@@ -29,9 +29,9 @@ var r = n(392711),
   A = n(51144),
   N = n(981631),
   C = n(185923),
-  R = n(388032);
+  P = n(388032);
 
-function P(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -47,7 +47,7 @@ function w(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      P(e, t, n[t])
+      R(e, t, n[t])
     })
   }
   return e
@@ -153,8 +153,8 @@ function j(e) {
 let U = u.Z.RULES,
   G = d.ZP,
   B = /^<@!?(\d+)>/,
-  F = /^<@&(\d+)>/,
-  V = /^<#(\d+)>/,
+  V = /^<@&(\d+)>/,
+  F = /^<#(\d+)>/,
   Z = /^<a?:(\w+):(\d+)>/,
   H = /(@everyone|@here|@Clyde)\b/,
   Y = {
@@ -164,8 +164,8 @@ let U = u.Z.RULES,
     inlineCode: k(U.inlineCode),
     codeBlock: k(U.codeBlock),
     rawUserMention: j(B),
-    rawRoleMention: j(F),
-    rawChannelMention: j(V),
+    rawRoleMention: j(V),
+    rawChannelMention: j(F),
     rawEmoji: j(Z),
     mention: {
       match(e, t, n) {
@@ -282,7 +282,7 @@ let U = u.Z.RULES,
       }
     },
     roleMention: {
-      match: o().anyScopeRegex(F),
+      match: o().anyScopeRegex(V),
       parse(e, t, n) {
         let {
           guild: r
@@ -299,7 +299,7 @@ let U = u.Z.RULES,
       }
     },
     channel: {
-      match: o().anyScopeRegex(V),
+      match: o().anyScopeRegex(F),
       parse(e) {
         let t = m.Z.getChannel(e[1]);
         return {
@@ -330,7 +330,7 @@ let U = u.Z.RULES,
     spoiler: {
       match: o().anyScopeRegex(N.$92),
       parse: () => ({
-        content: "<".concat(R.intl.string(R.t["F+x38P"]).toLowerCase(), ">")
+        content: "<".concat(P.intl.string(P.t["F+x38P"]).toLowerCase(), ">")
       })
     },
     staticRouteLink: {

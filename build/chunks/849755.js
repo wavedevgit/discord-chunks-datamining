@@ -29,7 +29,7 @@ function O(e) {
     onAction: n,
     onClose: a
   } = e, {
-    profileType: O
+    themeType: O
   } = (0, m.z)(), {
     analyticsLocations: I
   } = (0, c.ZP)(), S = (0, p.W)(t), T = (0, u.ZP)(t, !0), A = (0, s.e7)([f.Z], () => f.Z.getChannelStatus(t)), N = i.useMemo(() => null == A || "" === A ? null : _.Z.parseVoiceChannelStatus(A, !0, {
@@ -45,7 +45,7 @@ function O(e) {
   let C = e => {
     e.stopPropagation(), n({
       action: "PRESS_VOICE_CHANNEL_STATUS"
-    }), O === E.y0.BITE_SIZE && (null == a || a()), (0, d.Z)({
+    }), O === E.lY.POPOUT && (null == a || a()), (0, d.Z)({
       channel: t,
       sourceAnalyticsLocations: I
     })

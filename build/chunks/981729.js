@@ -84,8 +84,8 @@ var T = function(e) {
 let A = 16,
   N = 10,
   C = 8,
-  R = Object.freeze({}),
-  P = Object.freeze({
+  P = Object.freeze({}),
+  R = Object.freeze({
     top: E.tooltipTop,
     bottom: E.tooltipBottom,
     left: E.tooltipLeft,
@@ -147,7 +147,7 @@ let D = e => {
         } = e;
         return (0, i.jsxs)(c.animated.div, {
           onClick: l,
-          className: s()(E.tooltip, P[null != t ? t : r], P[a], {
+          className: s()(E.tooltip, R[null != t ? t : r], R[a], {
             [E.tooltipDisablePointerEvents]: h
           }, u),
           style: y({}, p, d),
@@ -234,7 +234,7 @@ class j extends(r = a.Component) {
       text: n,
       "aria-label": r
     } = this.props;
-    if (null == n) return t(R);
+    if (null == n) return t(P);
     "string" == typeof r ? e = r : "string" == typeof n && !1 !== r && (e = n);
     let o = {
       onClick: this.handleClick,

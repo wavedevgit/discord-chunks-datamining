@@ -72,8 +72,8 @@ function b(e) {
     action: A,
     onClose: N,
     onFocus: C,
-    className: R,
-    focusedClassName: P,
+    className: P,
+    focusedClassName: R,
     subMenuIconClassName: w,
     dontCloseOnActionIfHoldingShiftKey: D,
     dontCloseOnAction: L,
@@ -92,10 +92,10 @@ function b(e) {
     S && ((0, u.F)(U), null == C || C())
   }, [S, C]), (0, r.jsxs)(s.P, E(m({
     innerRef: U,
-    className: o()(p.item, p.labelContainer, _._[t], R, {
+    className: o()(p.item, p.labelContainer, _._[t], P, {
       [p.disabled]: I,
       [p.focused]: S,
-      [null != P ? P : ""]: S
+      [null != R ? R : ""]: S
     }),
     onClick: I ? void 0 : G,
     "aria-disabled": I

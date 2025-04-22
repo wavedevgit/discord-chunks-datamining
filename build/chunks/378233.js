@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  B0: () => R,
+  B0: () => P,
   Hc: () => L,
   J8: () => x,
   Q6: () => N,
   V9: () => j,
   WD: () => D,
-  X_: () => P,
+  X_: () => R,
   Zt: () => I,
   Zv: () => T,
   _V: () => A,
@@ -90,7 +90,7 @@ let {
   if (null == r) return null;
   let a = l.$k ? "webp" : "png";
   return n = null != E ? "".concat(location.protocol, "//").concat(E, "/app-assets/").concat(f.Ks, "/store/").concat(r, ".").concat(a) : "".concat(location.protocol).concat(p).concat(_.ANM.STORE_ASSET(f.Ks, r, a)), null != t && (n += "?size=".concat((0, i.oO)(t))), n
-}, R = e => null != e.match("development" !== m ? v : O), P = e => e.stickers.some(e => {
+}, P = e => null != e.match("development" !== m ? v : O), R = e => e.stickers.some(e => {
   let {
     format_type: t
   } = e;

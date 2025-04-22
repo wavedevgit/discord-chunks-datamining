@@ -106,20 +106,20 @@ function C(e) {
   A(t)
 }
 
-function R(e) {
+function P(e) {
   let {
     entitlements: t
   } = e;
   for (let e of t) null != e.sku && g(e.sku)
 }
 
-function P() {
+function R() {
   d = new Map, f = new Set, _ = new Set, p = new Map, h = new Map, m = new Map
 }
 
 function w() {
   if (r === s.default.locale) return !1;
-  r = s.default.locale, P()
+  r = s.default.locale, R()
 }
 class D extends(i = a.yh) {
   initialize() {
@@ -157,8 +157,8 @@ let L = new D(o.Z, {
   SKU_FETCH_SUCCESS: S,
   SKU_FETCH_FAIL: O,
   SKUS_FETCH_SUCCESS: T,
-  ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: R,
-  APPLICATION_STORE_CLEAR_DATA: P,
-  APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS: R,
-  ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: R
+  ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: P,
+  APPLICATION_STORE_CLEAR_DATA: R,
+  APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS: P,
+  ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: P
 })

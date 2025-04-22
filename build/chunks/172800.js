@@ -50,7 +50,7 @@ function C(e) {
   return e
 }
 
-function R(e, t) {
+function P(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -61,8 +61,8 @@ function R(e, t) {
   return n
 }
 
-function P(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+function R(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -89,7 +89,7 @@ let L = e => {
     emojiDescriptors: t,
     emojiSize: a,
     onSelect: N,
-    onSelectSoundmoji: R,
+    onSelectSoundmoji: P,
     onInspect: D,
     surrogateCodePoint: L,
     getEmojiItemProps: x,
@@ -99,8 +99,8 @@ let L = e => {
     rowIndex: U,
     allowAnimatedEmoji: G,
     showEmojiFavoriteTooltip: B,
-    channelGuildId: F,
-    category: V,
+    channelGuildId: V,
+    category: F,
     selectedItemClassName: Z,
     channelId: H,
     messageId: Y,
@@ -140,7 +140,7 @@ let L = e => {
           } = h, b = w(h, ["ref", "tabIndex", "onFocus"]), y = eo.rowIndex === _ && eo.columnIndex === p, v = () => {
             k.current || j.current || D(e)
           };
-          return (0, i.createElement)("li", P(C({}, b), {
+          return (0, i.createElement)("li", R(C({}, b), {
             key: t
           }), (0, r.jsx)(l.tEY, {
             children: (0, r.jsx)("button", {
@@ -225,7 +225,7 @@ let L = e => {
             selectedItemClassName: Z,
             onSelect: N,
             onInspect: D,
-            channelGuildId: F,
+            channelGuildId: V,
             getEmojiItemProps: x,
             isMediumSize: ef,
             isLargeSize: ed,
@@ -242,7 +242,7 @@ let L = e => {
           return
       }
     },
-    ep = e => (0, r.jsx)("ul", P(C({}, M(U)), {
+    ep = e => (0, r.jsx)("ul", R(C({}, M(U)), {
       className: o()(A.emojiListRow, {
         [A.emojiListRowLargeSize]: ed,
         [A.emojiListRowMediumSize]: ef
@@ -250,15 +250,15 @@ let L = e => {
       ref: eu,
       children: e.map(e_)
     }));
-  if (V === I.UX.SOUNDMOJI) return (0, r.jsx)("ul", {
+  if (F === I.UX.SOUNDMOJI) return (0, r.jsx)("ul", {
     className: A.emojiListRow,
     ref: eu,
     children: (0, r.jsx)(m.Z, {
       channelId: H,
-      onSelectSoundmoji: R
+      onSelectSoundmoji: P
     })
   });
-  if (V !== I.En.TOP_GUILD_EMOJI) return ep(t);
+  if (F !== I.En.TOP_GUILD_EMOJI) return ep(t);
   let eh = t.filter(e => {
       if (q && e.type === v.ld.CREATE_EMOJI) return !0;
       let t = e;

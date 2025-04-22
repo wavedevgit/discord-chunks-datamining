@@ -110,7 +110,7 @@ function C(e) {
   }, a))
 }
 
-function R(e, t) {
+function P(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
   return null != t ? E.intl.formatToPlainString(E.t["/6mw19"], {
     label: e,
@@ -118,7 +118,7 @@ function R(e, t) {
   }) : e
 }
 
-function P(e, t, n, r) {
+function R(e, t, n, r) {
   if (null == e) return null;
   if (r) switch (t) {
     case h.EF.SIZE_16:
@@ -359,7 +359,7 @@ function k(e) {
   } = e, T = {
     width: (0, h.px)(n),
     height: (0, h.px)(n)
-  }, A = null == p || m ? void 0 : R(p, E, y), N = S.size * g.hs, C = P(E, n, y, v), w = null != O && (0, r.jsx)("svg", {
+  }, A = null == p || m ? void 0 : P(p, E, y), N = S.size * g.hs, C = R(E, n, y, v), w = null != O && (0, r.jsx)("svg", {
     width: N + I,
     height: N,
     viewBox: "0 0 ".concat(N + I, " ").concat(N),
@@ -443,7 +443,7 @@ function U(e) {
     "aria-hidden": O = !1,
     "aria-label": S,
     imageClassName: T
-  } = e, A = n !== m.Skl.UNKNOWN ? n : null, N = (0, h.UC)(i), C = null != A ? Math.ceil((N.status * h.D6 - N.status) / 2) : 0, R = N.size + C, P = (0, u.vj)(A, a);
+  } = e, A = n !== m.Skl.UNKNOWN ? n : null, N = (0, h.UC)(i), C = null != A ? Math.ceil((N.status * h.D6 - N.status) / 2) : 0, P = N.size + C, R = (0, u.vj)(A, a);
   return (0, r.jsx)(k, I(v({}, e), {
     ariaLabel: S,
     ariaHidden: O,
@@ -451,9 +451,9 @@ function U(e) {
     specs: N,
     typingOffset: C,
     children: (0, r.jsxs)("svg", {
-      width: R,
-      height: R,
-      viewBox: "0 0 ".concat(R, " ").concat(R),
+      width: P,
+      height: P,
+      viewBox: "0 0 ".concat(P, " ").concat(P),
       className: o()(b.mask, b.svg),
       "aria-hidden": !0,
       children: [(0, r.jsx)("foreignObject", {
@@ -475,7 +475,7 @@ function U(e) {
         delay: E,
         children: e => (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("rect", I(v({}, e, D(N, A, s, l)), {
-            fill: P,
+            fill: R,
             mask: "url(#".concat((0, u.rs)(A, s, l), ")"),
             className: b.pointerEvents
           })), l ? (0, r.jsx)(c.b, {
@@ -506,7 +506,7 @@ function B(e, t, n) {
   return "translate(".concat(l, ", ").concat(c, ")")
 }
 
-function F(e) {
+function V(e) {
   let {
     fromIsMobile: t = !0,
     fromStatus: n,
@@ -519,14 +519,14 @@ function F(e) {
     src: y,
     status: O,
     statusColor: T,
-    statusTooltip: R = !1,
-    statusTooltipDelay: P,
+    statusTooltip: P = !1,
+    statusTooltipDelay: R,
     statusBackdropColor: w,
     "aria-hidden": D = !1,
     "aria-label": L,
     imageClassName: U,
-    pulseStatusIcon: F
-  } = e, V = (0, u.vj)(O, T), Z = i.useId(), H = i.useId(), [Y] = i.useState(() => v({
+    pulseStatusIcon: V
+  } = e, F = (0, u.vj)(O, T), Z = i.useId(), H = i.useId(), [Y] = i.useState(() => v({
     fill: a
   }, M({
     size: E,
@@ -534,13 +534,13 @@ function F(e) {
     isMobile: t,
     isTyping: !1
   }))), W = i.useMemo(() => v({
-    fill: V
+    fill: F
   }, M({
     size: E,
     status: O,
     isMobile: l,
     isTyping: _
-  })), [V, E, O, l, _]), K = (0, f.q_F)({
+  })), [F, E, O, l, _]), K = (0, f.q_F)({
     config: A,
     from: Y,
     to: W
@@ -560,14 +560,14 @@ function F(e) {
     from: {
       scale: 1
     },
-    to: F ? [{
+    to: V ? [{
       scale: .8
     }, {
       scale: 1.1
     }, {
       scale: 1
     }] : []
-  }, N() ? "animate-always" : "animate-never", [F, O]);
+  }, N() ? "animate-always" : "animate-never", [V, O]);
   return (0, r.jsx)(k, I(v({}, e), {
     ariaLabel: L,
     ariaHidden: D,
@@ -610,18 +610,18 @@ function F(e) {
           className: U
         })
       }), null != w && x(w, l, en, O), (0, r.jsx)(d.u, {
-        text: R ? (0, p.u5)(O) : null,
+        text: P ? (0, p.u5)(O) : null,
         "aria-label": !1,
         position: "top",
         spacing: G(en.status, en.stroke, l, _),
-        delay: P,
+        delay: R,
         children: e => (0, r.jsxs)(s.animated.g, {
           transform: es.scale.to(e => "scale(".concat(e, ") ").concat(B(en, e, O))),
           children: [(0, r.jsxs)("svg", {
             width: er,
             height: ei,
             viewBox: "0 0 ".concat(er, " ").concat(ei),
-            className: R ? b.cursorDefault : void 0,
+            className: P ? b.cursorDefault : void 0,
             children: [(0, u.vP)(ee, en.status, H), (0, r.jsx)(s.animated.rect, {
               fill: $,
               width: er,
@@ -646,7 +646,7 @@ function F(e) {
   }))
 }
 
-function V(e, t, n, r, i) {
+function F(e, t, n, r, i) {
   return null != n && null != t && (!!e || t !== n || t === m.Skl.ONLINE && r !== i)
 }
 let Z = i.memo(function(e) {
@@ -657,10 +657,10 @@ let Z = i.memo(function(e) {
   let {
     isMobile: o = !1,
     isTyping: s = !1
-  } = a, l = i.useRef(n), c = i.useRef(o), d = (0, u.vj)(n, t), f = i.useRef(d), _ = i.useRef(!1), p = _.current || V(s, n, l.current, o, c.current);
+  } = a, l = i.useRef(n), c = i.useRef(o), d = (0, u.vj)(n, t), f = i.useRef(d), _ = i.useRef(!1), p = _.current || F(s, n, l.current, o, c.current);
   return i.useLayoutEffect(() => {
     _.current = p, l.current = n, c.current = o, f.current = d
-  }, [n, o, d, p]), null != n && null != l.current && p ? (0, r.jsx)(F, I(v({}, a), {
+  }, [n, o, d, p]), null != n && null != l.current && p ? (0, r.jsx)(V, I(v({}, a), {
     status: n,
     statusColor: d,
     fromStatus: l.current,

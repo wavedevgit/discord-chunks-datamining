@@ -71,7 +71,7 @@ function T(e) {
 }
 
 function A(e, t) {
-  c.AW.has(e.type) && N(R(e), t)
+  c.AW.has(e.type) && N(P(e), t)
 }
 
 function N(e, t) {
@@ -82,10 +82,10 @@ function N(e, t) {
 
 function C(e) {
   var t;
-  null == (t = e.threads) || t.forEach(P)
+  null == (t = e.threads) || t.forEach(R)
 }
 
-function R(e) {
+function P(e) {
   if (!(e.id in O)) {
     var t;
     O[e.id] = {
@@ -99,7 +99,7 @@ function R(e) {
   return O[e.id]
 }
 
-function P(e) {
+function R(e) {
   A(e, t => {
     var n;
     null != e.messageCount && (t.count = e.messageCount);
@@ -111,7 +111,7 @@ function P(e) {
 function w(e) {
   if (null != e && !(e.id in O)) {
     let t = f.Z.getChannel(e.id);
-    if (null != t) return P(t), !0
+    if (null != t) return R(t), !0
   }
   return !1
 }
@@ -150,7 +150,7 @@ function k(e) {
   let {
     channel: t
   } = e;
-  P(t)
+  R(t)
 }
 
 function j(e) {
@@ -158,7 +158,7 @@ function j(e) {
     threads: t,
     mostRecentMessages: n
   } = e;
-  t.forEach(P), null == n || n.forEach(e => {
+  t.forEach(R), null == n || n.forEach(e => {
     let t = f.Z.getChannel(e.channel_id);
     null != t && e.type !== m.uaV.THREAD_STARTER_MESSAGE && A(t, t => {
       t.mostRecentRawMessage = e, t.mostRecentMessage = null
@@ -190,14 +190,14 @@ function B(e) {
   T(t.id)
 }
 
-function F(e) {
+function V(e) {
   let {
     channel: t
   } = e;
   delete O[t.id]
 }
 
-function V(e) {
+function F(e) {
   let {
     message: t,
     optimistic: n,
@@ -322,9 +322,9 @@ let Q = new q(s.Z, {
   RELATIONSHIP_REMOVE: z,
   SEARCH_FINISH: G,
   MOD_VIEW_SEARCH_FINISH: G,
-  THREAD_DELETE: F,
+  THREAD_DELETE: V,
   CHANNEL_DELETE: B,
-  MESSAGE_CREATE: V,
+  MESSAGE_CREATE: F,
   MESSAGE_UPDATE: H,
   MESSAGE_DELETE: Y,
   MESSAGE_DELETE_BULK: W,

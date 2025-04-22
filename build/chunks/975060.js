@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => V
+  Z: () => F
 });
 var r, i = n(442837),
   a = n(570140),
@@ -43,7 +43,7 @@ function C(e) {
   h = e.name, p = e.country, g = e.line1, E = e.line2, b = e.city, y = e.postalCode, v = e.state, m = e.email
 }
 
-function R(e) {
+function P(e) {
   let {
     stripePaymentMethod: t
   } = e;
@@ -55,7 +55,7 @@ function R(e) {
   C(n)
 }
 
-function P() {
+function R() {
   l = "", c = null
 }
 
@@ -124,7 +124,7 @@ function G(e) {
 function B() {
   T = !1, S = null
 }
-class F extends(r = i.ZP.Store) {
+class V extends(r = i.ZP.Store) {
   get stripePaymentMethod() {
     return d
   }
@@ -176,12 +176,12 @@ class F extends(r = i.ZP.Store) {
     return I
   }
 }
-s(F, "displayName", "NewPaymentSourceStore");
-let V = new F(a.Z, {
-  NEW_PAYMENT_SOURCE_STRIPE_PAYMENT_REQUEST_UPDATE: R,
+s(V, "displayName", "NewPaymentSourceStore");
+let F = new V(a.Z, {
+  NEW_PAYMENT_SOURCE_STRIPE_PAYMENT_REQUEST_UPDATE: P,
   NEW_PAYMENT_SOURCE_CARD_INFO_UPDATE: x,
   NEW_PAYMENT_SOURCE_ADDRESS_INFO_UPDATE: M,
-  BRAINTREE_TOKENIZE_PAYPAL_START: P,
+  BRAINTREE_TOKENIZE_PAYPAL_START: R,
   BRAINTREE_TOKENIZE_PAYPAL_SUCCESS: w,
   BRAINTREE_TOKENIZE_VENMO_START: D,
   BRAINTREE_TOKENIZE_VENMO_SUCCESS: L,

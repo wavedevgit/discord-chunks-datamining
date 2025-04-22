@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => R
+  Z: () => P
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -65,16 +65,16 @@ function N(e, t) {
 }
 let C = h.ZP.getEnableHardwareAcceleration() ? l.Xo$ : l.qEK;
 
-function R(e) {
+function P(e) {
   let {
     user: t,
     displayProfile: n,
     guildId: a,
     channelId: h,
-    profileType: S,
+    themeType: S,
     animateOnHover: A,
-    onOpenProfile: R,
-    className: P,
+    onOpenProfile: P,
+    className: R,
     previewStatus: w
   } = e, {
     theme: D
@@ -90,32 +90,32 @@ function R(e) {
   } = (0, s.cj)([_.Z], () => ({
     status: (0, c.Z)(U) ? v.Skl.STREAMING : _.Z.getStatus(t.id),
     isMobileOnline: _.Z.isMobileOnline(t.id)
-  })), F = void 0 !== w ? w : G, V = S === y.y0.FULL_SIZE ? l.EFr.SIZE_120 : l.EFr.SIZE_80, Z = o()(I.avatar, {
-    [I.biteSize]: S === y.y0.BITE_SIZE,
-    [I.fullSize]: S === y.y0.FULL_SIZE,
-    [I.panel]: S === y.y0.PANEL
-  }, P), {
+  })), V = void 0 !== w ? w : G, F = S === y.lY.MODAL ? l.EFr.SIZE_120 : l.EFr.SIZE_80, Z = o()(I.avatar, {
+    [I.biteSize]: S === y.lY.POPOUT,
+    [I.fullSize]: S === y.lY.MODAL,
+    [I.panel]: S === y.lY.SIDEBAR
+  }, R), {
     avatarDecorationSrc: H,
     avatarSrc: Y,
     eventHandlers: W
   } = (0, E.Z)({
     user: t,
     guildId: null != n ? n.guildId : a,
-    size: V,
+    size: F,
     animateOnHover: A
   }), K = (0, r.jsx)(C, {
     src: Y,
     avatarDecoration: H,
-    size: V,
+    size: F,
     "aria-label": t.username,
-    imageClassName: null != R ? I.overlay : void 0,
-    status: k ? v.Skl.UNKNOWN : F,
+    imageClassName: null != P ? I.overlay : void 0,
+    status: k ? v.Skl.UNKNOWN : V,
     statusBackdropColor: M && !k ? (0, l.QFD)(D) : void 0,
     isMobile: B,
     statusTooltip: !0,
     statusTooltipDelay: y.vB
   });
-  return null == R ? (0, r.jsx)("div", N(T({}, W), {
+  return null == P ? (0, r.jsx)("div", N(T({}, W), {
     className: Z,
     children: K
   })) : (0, r.jsx)(l.P3F, N(T({}, W), {
@@ -127,7 +127,7 @@ function R(e) {
       x({
         action: "PRESS_VIEW_PROFILE",
         analyticsLocations: L
-      }), null == R || R()
+      }), null == P || P()
     },
     children: K
   }))

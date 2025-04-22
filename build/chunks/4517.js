@@ -29,8 +29,8 @@ var r = n(200651),
   A = n(510659),
   N = n(287954),
   C = n(810097),
-  R = n(64621),
-  P = n(913002),
+  P = n(64621),
+  R = n(913002),
   w = n(228168),
   D = n(388032),
   L = n(484822);
@@ -92,8 +92,8 @@ function G(e, t) {
   return i
 }
 let B = 1.25,
-  F = 36,
-  V = 144,
+  V = 36,
+  F = 144,
   Z = 150,
   H = 150,
   Y = 300,
@@ -101,13 +101,13 @@ let B = 1.25,
 
 function K(e) {
   let {
-    profileType: t,
+    themeType: t,
     children: n,
     className: i
   } = e, a = {
-    [L.biteSize]: t === w.y0.BITE_SIZE,
-    [L.fullSize]: t === w.y0.FULL_SIZE,
-    [L.panel]: t === w.y0.PANEL
+    [L.biteSize]: t === w.lY.POPOUT,
+    [L.fullSize]: t === w.lY.MODAL,
+    [L.panel]: t === w.lY.SIDEBAR
   };
   return (0, r.jsx)("div", {
     className: o()(L.referenceContainer, a, i),
@@ -123,7 +123,7 @@ function K(e) {
 
 function z(e) {
   let {
-    profileType: t,
+    themeType: t,
     onCloseProfile: i,
     prompt: a
   } = e, {
@@ -133,9 +133,9 @@ function z(e) {
   } = (0, S.KZ)(), u = (0, m.Z)({
     location: "AddCustomStatusBubble"
   }), f = {
-    [L.biteSize]: t === w.y0.BITE_SIZE,
-    [L.fullSize]: t === w.y0.FULL_SIZE,
-    [L.panel]: t === w.y0.PANEL
+    [L.biteSize]: t === w.lY.POPOUT,
+    [L.fullSize]: t === w.lY.MODAL,
+    [L.panel]: t === w.lY.SIDEBAR
   }, _ = () => {
     c({
       action: "PRESS_ADD_CUSTOM_STATUS"
@@ -181,7 +181,7 @@ function z(e) {
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(K, {
-      profileType: t,
+      themeType: t,
       children: E
     }), (0, r.jsx)(d.P3F, {
       className: o()(L.container, L.editable, f),
@@ -213,7 +213,7 @@ let q = i.forwardRef(function(e, t) {
   let {
     emoji: l,
     text: p,
-    profileType: h,
+    themeType: h,
     animate: E,
     className: b,
     renderToolbar: y,
@@ -222,16 +222,16 @@ let q = i.forwardRef(function(e, t) {
     label: T,
     hasEntered: N = !0
   } = e, C = (0, A.yi)(), {
-    trackUserProfileAction: R
-  } = (0, S.KZ)(), P = {
-    [L.biteSize]: h === w.y0.BITE_SIZE,
-    [L.fullSize]: h === w.y0.FULL_SIZE,
-    [L.panel]: h === w.y0.PANEL
+    trackUserProfileAction: P
+  } = (0, S.KZ)(), R = {
+    [L.biteSize]: h === w.lY.POPOUT,
+    [L.fullSize]: h === w.lY.MODAL,
+    [L.panel]: h === w.lY.SIDEBAR
   }, x = (0, g.p)({
     location: "CustomStatusBubble"
   }), M = (0, m.Z)({
     location: "UserProfileCustomStatusBubble"
-  }), k = null != l ? B : 0, j = null != T && M ? W : 0, U = F + k + j, G = V + k + j, z = i.useRef(null), q = i.useRef(null), Q = i.useRef(null), X = i.useRef(U), J = i.useRef(G), $ = null != l && null == p && null == T, [ee, et] = i.useState(!1), [en, er] = i.useState(!0), [ei, ea] = i.useState(!$ && N), eo = N && ee;
+  }), k = null != l ? B : 0, j = null != T && M ? W : 0, U = V + k + j, G = F + k + j, z = i.useRef(null), q = i.useRef(null), Q = i.useRef(null), X = i.useRef(U), J = i.useRef(G), $ = null != l && null == p && null == T, [ee, et] = i.useState(!1), [en, er] = i.useState(!0), [ei, ea] = i.useState(!$ && N), eo = N && ee;
   i.useLayoutEffect(() => {
     if (et(!0), null == q.current || null == Q.current || !eo) return;
     let e = q.current.getBoundingClientRect().height,
@@ -295,17 +295,17 @@ let q = i.forwardRef(function(e, t) {
     em = null == ep || "" === p ? eh : ep,
     eg = (0, r.jsxs)("div", {
       ref: q,
-      className: o()(L.content, P),
+      className: o()(L.content, R),
       children: [ef, e_, em]
     }),
     eE = (0, r.jsxs)("div", {
       ref: Q,
-      className: o()(L.content, L.unclamped, P),
+      className: o()(L.content, L.unclamped, R),
       children: [ef, e_, em]
     }),
     eb = (0, r.jsx)("div", {
       ref: t,
-      className: o()(L.outer, P),
+      className: o()(L.outer, R),
       children: (0, r.jsx)("span", {
         className: L.inner,
         children: (0, r.jsxs)(s.animated.div, {
@@ -318,7 +318,7 @@ let q = i.forwardRef(function(e, t) {
       })
     }),
     ey = (0, r.jsxs)(K, {
-      profileType: h,
+      themeType: h,
       className: null != ef ? L.withLabel : void 0,
       children: [ef, eg, eE]
     });
@@ -329,13 +329,13 @@ let q = i.forwardRef(function(e, t) {
         ref: z,
         role: "tooltip",
         tabIndex: 0,
-        className: o()(L.container, P, b),
+        className: o()(L.container, R, b),
         "aria-label": D.intl.formatToPlainString(D.t.UpF5QU, {
           emoji: null != (n = null == l ? void 0 : l.name) ? n : "",
           status: p
         }),
         onMouseEnter: () => {
-          R({
+          P({
             action: "HOVER_CUSTOM_STATUS"
           }), ed(!0)
         },
@@ -354,7 +354,7 @@ let q = i.forwardRef(function(e, t) {
         ref: z,
         role: "tooltip",
         tabIndex: 0,
-        className: o()(L.container, P, b),
+        className: o()(L.container, R, b),
         "aria-label": D.intl.formatToPlainString(D.t.UpF5QU, {
           emoji: null != (a = null == l ? void 0 : l.name) ? a : "",
           status: p
@@ -367,7 +367,7 @@ let q = i.forwardRef(function(e, t) {
           (null == (t = z.current) ? void 0 : t.contains(e.relatedTarget)) || (O(!1), ed(!1))
         },
         onMouseEnter: () => {
-          R({
+          P({
             action: "HOVER_CUSTOM_STATUS"
           }), O(!0), ed(!0)
         },
@@ -392,7 +392,7 @@ function Q(e) {
     text: n,
     className: L.editable,
     onShowToolbar: l,
-    renderToolbar: e => (0, r.jsx)(P.Z, {
+    renderToolbar: e => (0, r.jsx)(R.Z, {
       isVisible: s,
       isExpandable: e,
       onCloseProfile: a
@@ -407,8 +407,8 @@ function X(e) {
     user: a,
     guildId: o,
     channelId: s,
-    profileType: l
-  } = e, c = U(e, ["emoji", "text", "user", "guildId", "channelId", "profileType"]);
+    themeType: l
+  } = e, c = U(e, ["emoji", "text", "user", "guildId", "channelId", "themeType"]);
   let {
     trackUserProfileAction: u
   } = (0, S.KZ)(), {
@@ -430,12 +430,12 @@ function X(e) {
     user: a,
     guildId: o,
     channelId: s,
-    profileType: l,
+    themeType: l,
     sourceDetails: T(),
     sourceType: w.n_.STATUS,
     onAction: u,
     onClose: () => v(!1),
-    children: () => (0, r.jsx)(R.Z, {
+    children: () => (0, r.jsx)(P.Z, {
       targetElementRef: g,
       sourceType: w.n_.STATUS,
       user: a,
@@ -443,7 +443,7 @@ function X(e) {
         ref: g,
         emoji: t,
         text: n,
-        profileType: l,
+        themeType: l,
         className: m ? L.hoisted : void 0,
         onShowToolbar: I,
         renderToolbar: e => (0, r.jsx)(C.ZP, {
@@ -498,9 +498,9 @@ function J(e) {
   }
   let N = null != (t = null == g ? void 0 : g.emoji) ? t : null,
     C = null != (n = null == g ? void 0 : g.state) ? n : null,
-    R = null != C && "" !== C ? C : null,
-    P = null != g ? (0, E.Z)(g) : null;
-  return null != N || null != R || O ? null == N && null == R ? (0, r.jsx)(h.Gt, {
+    P = null != C && "" !== C ? C : null,
+    R = null != g ? (0, E.Z)(g) : null;
+  return null != N || null != P || O ? null == N && null == P ? (0, r.jsx)(h.Gt, {
     value: y,
     children: (0, r.jsx)(z, M({
       onCloseProfile: o,
@@ -511,23 +511,23 @@ function J(e) {
     children: (0, r.jsx)(X, M({
       user: a,
       emoji: N,
-      text: R,
-      label: P
+      text: P,
+      label: R
     }, m))
   }) : O ? (0, r.jsx)(h.Gt, {
     value: y,
     children: (0, r.jsx)(Q, M({
       emoji: N,
-      text: R,
-      label: P,
+      text: P,
+      label: R,
       onCloseProfile: o
     }, m))
   }) : (0, r.jsx)(h.Gt, {
     value: y,
     children: (0, r.jsx)(q, M({
       emoji: N,
-      text: R,
-      label: P
+      text: P,
+      label: R
     }, m))
   }) : null
 }

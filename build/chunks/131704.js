@@ -7,7 +7,7 @@ n.d(t, {
   Ec: () => H,
   Em: () => z,
   Gz: () => e_,
-  Km: () => P,
+  Km: () => R,
   Lr: () => L,
   Q5: () => W,
   Qm: () => G,
@@ -24,10 +24,10 @@ n.d(t, {
   hv: () => M,
   iR: () => ea,
   jD: () => eU,
-  kt: () => eF,
+  kt: () => eV,
   mn: () => eD,
   nl: () => eE,
-  oj: () => R,
+  oj: () => P,
   ov: () => $,
   q_: () => ej,
   r8: () => S,
@@ -35,7 +35,7 @@ n.d(t, {
   tx: () => w,
   uC: () => Y,
   vc: () => Z,
-  vd: () => F,
+  vd: () => V,
   vg: () => en,
   xL: () => ee,
   zS: () => q,
@@ -108,10 +108,10 @@ function N(e) {
   return A.has(e)
 }
 let C = new Set([g.d4z.GUILD_TEXT, g.d4z.GUILD_ANNOUNCEMENT, g.d4z.GUILD_FORUM, g.d4z.GUILD_MEDIA, g.d4z.GUILD_VOICE, g.d4z.GUILD_STAGE_VOICE]),
-  R = new Set([g.d4z.GUILD_TEXT, g.d4z.GUILD_VOICE, g.d4z.GUILD_STAGE_VOICE, g.d4z.GUILD_CATEGORY, g.d4z.GUILD_ANNOUNCEMENT, g.d4z.GUILD_STORE, g.d4z.ANNOUNCEMENT_THREAD, g.d4z.PUBLIC_THREAD, g.d4z.PRIVATE_THREAD, g.d4z.GUILD_DIRECTORY, g.d4z.GUILD_FORUM, g.d4z.GUILD_MEDIA]);
+  P = new Set([g.d4z.GUILD_TEXT, g.d4z.GUILD_VOICE, g.d4z.GUILD_STAGE_VOICE, g.d4z.GUILD_CATEGORY, g.d4z.GUILD_ANNOUNCEMENT, g.d4z.GUILD_STORE, g.d4z.ANNOUNCEMENT_THREAD, g.d4z.PUBLIC_THREAD, g.d4z.PRIVATE_THREAD, g.d4z.GUILD_DIRECTORY, g.d4z.GUILD_FORUM, g.d4z.GUILD_MEDIA]);
 
-function P(e) {
-  return R.has(e)
+function R(e) {
+  return P.has(e)
 }
 g.d4z.GUILD_TEXT, g.d4z.GUILD_ANNOUNCEMENT, g.d4z.GUILD_FORUM, g.d4z.GUILD_MEDIA;
 let w = new Set([g.d4z.GUILD_VOICE, g.d4z.GUILD_STAGE_VOICE]);
@@ -137,13 +137,13 @@ function G(e) {
 }
 let B = new Set([g.d4z.DM, g.d4z.GROUP_DM, g.d4z.GUILD_VOICE, g.d4z.GUILD_STAGE_VOICE, g.d4z.PUBLIC_THREAD, g.d4z.PRIVATE_THREAD]);
 
-function F(e) {
+function V(e) {
   return B.has(e)
 }
-let V = new Set([g.d4z.GUILD_TEXT, g.d4z.GUILD_ANNOUNCEMENT, g.d4z.ANNOUNCEMENT_THREAD, g.d4z.PUBLIC_THREAD, g.d4z.PRIVATE_THREAD, g.d4z.GUILD_DIRECTORY, g.d4z.GUILD_FORUM, g.d4z.GUILD_MEDIA, g.d4z.DM, g.d4z.GROUP_DM]);
+let F = new Set([g.d4z.GUILD_TEXT, g.d4z.GUILD_ANNOUNCEMENT, g.d4z.ANNOUNCEMENT_THREAD, g.d4z.PUBLIC_THREAD, g.d4z.PRIVATE_THREAD, g.d4z.GUILD_DIRECTORY, g.d4z.GUILD_FORUM, g.d4z.GUILD_MEDIA, g.d4z.DM, g.d4z.GROUP_DM]);
 
 function Z(e) {
-  return V.has(e)
+  return F.has(e)
 }
 let H = new Set([g.d4z.ANNOUNCEMENT_THREAD, g.d4z.PUBLIC_THREAD, g.d4z.PRIVATE_THREAD]),
   Y = new Set([g.d4z.GUILD_TEXT, g.d4z.GUILD_ANNOUNCEMENT, g.d4z.GUILD_FORUM, g.d4z.GUILD_MEDIA]);
@@ -318,7 +318,7 @@ class eg extends ep {
     return this.type === g.d4z.GUILD_CATEGORY
   }
   isVocal() {
-    return F(this.type)
+    return V(this.type)
   }
   isGuildVocal() {
     return D(this.type)
@@ -596,7 +596,7 @@ class eC extends eg {
     super(e), this.availableTags = null != (t = e.availableTags) ? t : [], this.defaultAutoArchiveDuration = e.defaultAutoArchiveDuration, this.defaultForumLayout = e.defaultForumLayout, this.defaultReactionEmoji = e.defaultReactionEmoji, this.defaultSortOrder = e.defaultSortOrder, this.defaultTagSetting = e.defaultTagSetting, this.defaultThreadRateLimitPerUser = e.defaultThreadRateLimitPerUser, this.flags_ = e.flags_, this.iconEmoji = e.iconEmoji, this.lastMessageId = e.lastMessageId, this.lastPinTimestamp = e.lastPinTimestamp, this.memberListId = e.memberListId, this.nsfw_ = e.nsfw_, this.parent_id = e.parent_id, this.permissionOverwrites_ = null != (n = e.permissionOverwrites_) ? n : {}, this.position_ = e.position_, this.rateLimitPerUser_ = e.rateLimitPerUser_, this.template = e.template, this.themeColor = e.themeColor, this.topic_ = e.topic_, this.version = e.version
   }
 }
-class eR {
+class eP {
   getOrCompute(e) {
     let t = this.cache.get(e);
     if (null != t) return t;
@@ -609,11 +609,11 @@ class eR {
     b(this, "cache", void 0), this.cache = new(o())(e)
   }
 }
-let eP = new eR,
-  ew = new eR;
+let eR = new eP,
+  ew = new eP;
 class eD extends eg {
   static sortRecipients(e, t) {
-    let n = eP.getOrCompute(t);
+    let n = eR.getOrCompute(t);
     return [...null != e ? e : []].sort((e, t) => (ew.getOrCompute(e.id) ^ n) - (ew.getOrCompute(t.id) ^ n))
   }
   static fromServer(e) {
@@ -740,7 +740,7 @@ function ej(e, t) {
 }
 
 function eU(e) {
-  return eF(e)
+  return eV(e)
 }
 let eG = {
   [g.d4z.DM]: eL,
@@ -765,7 +765,7 @@ function eB(e) {
   return (0, d.gh)(e, r)
 }
 
-function eF(e) {
+function eV(e) {
   var t, n;
   return new(null != (n = eG[null != (t = e.type) ? t : g.d4z.GUILD_TEXT]) ? n : eE)(eh(e))
 }

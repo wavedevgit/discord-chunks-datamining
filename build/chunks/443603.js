@@ -99,8 +99,8 @@ function O(e) {
     onFocus: A,
     onBlur: N,
     pulse: C,
-    sparkle: R,
-    notification: P,
+    sparkle: P,
+    notification: R,
     "aria-label": w,
     "aria-expanded": D,
     "aria-haspopup": L,
@@ -111,7 +111,7 @@ function O(e) {
     let {
       component: t
     } = e;
-    return null != P ? (0, r.jsxs)("div", {
+    return null != R ? (0, r.jsxs)("div", {
       className: _.buttonContent,
       children: [(0, r.jsx)(c.ZP, {
         className: _.iconMask,
@@ -171,7 +171,7 @@ function O(e) {
           })
         })
       }, i) : void 0
-    }), R && (0, r.jsxs)("div", {
+    }), P && (0, r.jsxs)("div", {
       className: _.sparkleContainer,
       children: [(0, r.jsx)(f.Z, {
         className: _.sparkleStar

@@ -147,7 +147,7 @@ class m extends h {
     }))
   }
   mergeFromApplicationUpdate(e) {
-    var t, n, r, i, a, o, s, l, c, d, f, _, p, h, g, E, b, y, v, O, I, S, T, A, N, C, R, P, w, D, L, x, M, k, j, U, G, B, F, V, Z, H;
+    var t, n, r, i, a, o, s, l, c, d, f, _, p, h, g, E, b, y, v, O, I, S, T, A, N, C, P, R, w, D, L, x, M, k, j, U, G, B, V, F, Z, H;
     return new m({
       id: null != (t = e.id) ? t : this.id,
       name: null != (n = e.name) ? n : this.name,
@@ -175,8 +175,8 @@ class m extends h {
       bot: null != (A = e.bot) ? A : this.bot,
       flags: null != (N = e.flags) ? N : this.flags,
       maxParticipants: null != (C = e.maxParticipants) ? C : this.maxParticipants,
-      tags: null != (R = e.tags) ? R : this.tags,
-      embeddedActivityConfig: null != (P = e.embeddedActivityConfig) ? P : null != this.embeddedActivityConfig ? u({}, this.embeddedActivityConfig) : void 0,
+      tags: null != (P = e.tags) ? P : this.tags,
+      embeddedActivityConfig: null != (R = e.embeddedActivityConfig) ? R : null != this.embeddedActivityConfig ? u({}, this.embeddedActivityConfig) : void 0,
       type: null != (w = e.type) ? w : this.type,
       team: null != (D = e.team) ? D : this.team,
       roleConnectionsVerificationUrl: null != (L = e.roleConnectionsVerificationUrl) ? L : this.roleConnectionsVerificationUrl,
@@ -187,8 +187,8 @@ class m extends h {
       privacyPolicyUrl: null != (U = e.privacyPolicyUrl) ? U : this.privacyPolicyUrl,
       isVerified: null != (G = e.isVerified) ? G : this.isVerified,
       customInstallUrl: null != (B = e.customInstallUrl) ? B : this.customInstallUrl,
-      installParams: null != (F = e.installParams) ? F : this.installParams,
-      isDiscoverable: null != (V = e.isDiscoverable) ? V : this.isDiscoverable,
+      installParams: null != (V = e.installParams) ? V : this.installParams,
+      isDiscoverable: null != (F = e.isDiscoverable) ? F : this.isDiscoverable,
       directoryEntry: null != (Z = e.directoryEntry) ? Z : this.directoryEntry,
       categories: null != (H = e.categories) ? H : this.categories
     })

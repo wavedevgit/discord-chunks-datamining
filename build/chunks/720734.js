@@ -46,8 +46,8 @@ var i = n(200651),
   F = n(64220),
   H = n(359588),
   z = n(459115),
-  W = n(427217),
-  Y = n(132750),
+  Y = n(427217),
+  W = n(132750),
   K = n(526031),
   q = n(540059),
   X = n(605236),
@@ -100,8 +100,8 @@ var i = n(200651),
   eF = n(768581),
   eH = n(572004),
   ez = n(585483),
-  eW = n(70956),
-  eY = n(74538),
+  eY = n(70956),
+  eW = n(74538),
   eK = n(374023),
   eq = n(51144),
   eX = n(998502),
@@ -149,9 +149,9 @@ function e4(e, t) {
   }), e
 }
 let e5 = eX.ZP.getEnableHardwareAcceleration() ? f.Xo$ : f.qEK,
-  e7 = 2 * eW.Z.Millis.MINUTE,
-  te = 3 * eW.Z.Millis.SECOND,
-  tt = 30 * eW.Z.Millis.DAY;
+  e7 = 2 * eY.Z.Millis.MINUTE,
+  te = 3 * eY.Z.Millis.SECOND,
+  tt = 30 * eY.Z.Millis.DAY;
 
 function tn(e) {
   let {
@@ -304,7 +304,7 @@ class ti extends r.PureComponent {
       customStatusRTCEntrypointEnabled: c
     } = this.props;
     if (null == r) return null;
-    if (c) return (0, i.jsx)(Y.Z, {
+    if (c) return (0, i.jsx)(W.Z, {
       user: r,
       applicationStream: n,
       voiceChannel: a ? o : void 0,
@@ -337,7 +337,7 @@ class ti extends r.PureComponent {
     return null != d ? (0, i.jsx)(y.Z, {
       hoverText: l,
       forceHover: e,
-      children: (0, i.jsx)(W.Z, {
+      children: (0, i.jsx)(Y.Z, {
         activity: d,
         emojiClassName: e6.emoji,
         className: e6.customStatus
@@ -753,7 +753,7 @@ function ts() {
     L = (0, o.e7)([eL.Z], () => eL.Z.getGuildId()),
     B = (0, ep.D)(),
     M = (0, j.u)(),
-    U = eY.ZP.canUsePremiumGuildMemberProfile(t),
+    U = eW.ZP.canUsePremiumGuildMemberProfile(t),
     V = (null == t || null == (e = t.avatarDecoration) ? void 0 : e.skuId) === e1.rL,
     {
       voiceActivityStatusEnabled: G
@@ -765,8 +765,8 @@ function ts() {
     } = (0, eC.Z)({
       location: "Account"
     }),
-    W = (0, en.m)(),
-    [Y, K] = (0, ee.G)(null != L ? L : null),
+    Y = (0, en.m)(),
+    [W, K] = (0, ee.G)(null != L ? L : null),
     {
       enabled: q
     } = (0, z.Z)({
@@ -822,7 +822,7 @@ function ts() {
       avatar: [],
       settings: []
     };
-  return !R && (et && eo.settings.push(c.z.PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2), B && (1 === M ? eo.settings.push(c.z.USER_SAFETY_CONSUMER_EDUCATION_MUTE) : eo.settings.push(c.z.USER_SAFETY_CONSUMER_EDUCATION_BLOCK)), $ && eo.settings.push(c.z.SOUNDBOARD_VOLUME_EDUCATION), U && eo.settings.push(c.z.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK), V && eo.avatar.push(c.z.PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP), W && eo.avatar.push(c.z.EXPIRING_STATUS_COACHMARK), ea && eo.avatar.push(c.z.CUSTOM_STATUS_PROMPTS_COACHMARK)), (0, i.jsx)(P.Gt, {
+  return !R && (et && eo.settings.push(c.z.PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2), B && (1 === M ? eo.settings.push(c.z.USER_SAFETY_CONSUMER_EDUCATION_MUTE) : eo.settings.push(c.z.USER_SAFETY_CONSUMER_EDUCATION_BLOCK)), $ && eo.settings.push(c.z.SOUNDBOARD_VOLUME_EDUCATION), U && eo.settings.push(c.z.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK), V && eo.avatar.push(c.z.PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP), Y && eo.avatar.push(c.z.EXPIRING_STATUS_COACHMARK), ea && eo.avatar.push(c.z.CUSTOM_STATUS_PROMPTS_COACHMARK)), (0, i.jsx)(P.Gt, {
     value: ei,
     children: (0, i.jsx)(ti, {
       currentUser: t,
@@ -830,7 +830,7 @@ function ts() {
       applicationStream: d,
       voiceChannel: p,
       dismissibleContents: eo,
-      visibleRecurringAvatarDc: Y,
+      visibleRecurringAvatarDc: W,
       markRecurringAvatarDcAsDismissed: K,
       userTag: m,
       hidePrivateData: g,
@@ -940,11 +940,11 @@ function ta(e) {
   let z = r.useCallback(e => {
       j(e, F)
     }, [j, F]),
-    [W, Y] = r.useState(!1),
+    [Y, W] = r.useState(!1),
     K = r.useCallback(e => {
       var t;
       if ((0, a.k)(null == e ? void 0 : e.target, Node) && (null == (t = v.current) ? void 0 : t.contains(e.target))) return h.F;
-      Y(!1)
+      W(!1)
     }, []),
     [q, X] = r.useState(!1);
   return r.useEffect(() => {
@@ -998,7 +998,7 @@ function ta(e) {
         ignoreModalClicks: !0,
         onRequestOpen: eN.r5,
         onRequestClose: K,
-        shouldShow: W,
+        shouldShow: Y,
         renderPopout: e => {
           let {
             closePopout: t
@@ -1031,7 +1031,7 @@ function ta(e) {
           return (0, i.jsx)("div", {
             children: (0, i.jsx)(ey.B, {
               targetElementRef: T,
-              onCTA: () => Y(!0),
+              onCTA: () => W(!0),
               canBeShown: !s,
               children: (e, t) => (0, i.jsx)(eQ.Z, e9({
                 ref: T,
@@ -1065,7 +1065,7 @@ function ta(e) {
                 "aria-label": e3.intl.string(e3.t.Hapb4O),
                 disabled: c,
                 onClick: e => {
-                  null == t || t(), n(e), Y(!W)
+                  null == t || t(), n(e), W(!Y)
                 }
               }, r))
             })

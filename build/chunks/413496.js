@@ -26,8 +26,8 @@ var r = n(507604),
   A = i.RegExp,
   N = A.prototype,
   C = i.SyntaxError,
-  R = a(N.exec),
-  P = a("".charAt),
+  P = a(N.exec),
+  R = a("".charAt),
   w = a("".replace),
   D = a("".indexOf),
   L = a("".slice),
@@ -40,19 +40,19 @@ var r = n(507604),
   B = r && (!j || U || I || S || E(function() {
     return k[T] = !1, A(M) !== M || A(k) === k || "/a/i" !== String(A(M, "i"))
   })),
-  F = function(e) {
+  V = function(e) {
     for (var t, n = e.length, r = 0, i = "", a = !1; r <= n; r++) {
-      if ("\\" === (t = P(e, r))) {
-        i += t + P(e, ++r);
+      if ("\\" === (t = R(e, r))) {
+        i += t + R(e, ++r);
         continue
       }
       a || "." !== t ? ("[" === t ? a = !0 : "]" === t && (a = !1), i += t) : i += "[\\s\\S]"
     }
     return i
   },
-  V = function(e) {
+  F = function(e) {
     for (var t, n = e.length, r = 0, i = "", a = [], o = c(null), s = !1, l = !1, u = 0, d = ""; r <= n; r++) {
-      if ("\\" === (t = P(e, r))) t += P(e, ++r);
+      if ("\\" === (t = R(e, r))) t += R(e, ++r);
       else if ("]" === t) s = !1;
       else if (!s) switch (!0) {
         case "[" === t:
@@ -60,7 +60,7 @@ var r = n(507604),
           break;
         case "(" === t:
           if (i += t, "?:" === L(e, r + 1, r + 3)) continue;
-          R(x, L(e, r + 1)) && (r += 2, l = !0), u++;
+          P(x, L(e, r + 1)) && (r += 2, l = !0), u++;
           continue;
         case ">" === t && l:
           if ("" === d || b(o, d)) throw new C("Invalid capture group name");
@@ -79,7 +79,7 @@ if (o("RegExp", B)) {
         g = [],
         E = e;
       if (!u && h && m && e.constructor === Z) return e;
-      if ((h || d(N, e)) && (e = e.source, m && (t = p(E))), e = void 0 === e ? "" : _(e), t = void 0 === t ? "" : _(t), E = e, I && "dotAll" in M && (r = !!t && D(t, "s") > -1) && (t = w(t, /s/g, "")), n = t, U && "sticky" in M && (i = !!t && D(t, "y") > -1) && G && (t = w(t, /y/g, "")), S && (e = (a = V(e))[0], g = a[1]), o = s(A(e, t), u ? this : N, Z), (r || i || g.length) && (c = y(o), r && (c.dotAll = !0, c.raw = Z(F(e), n)), i && (c.sticky = !0), g.length && (c.groups = g)), e !== E) try {
+      if ((h || d(N, e)) && (e = e.source, m && (t = p(E))), e = void 0 === e ? "" : _(e), t = void 0 === t ? "" : _(t), E = e, I && "dotAll" in M && (r = !!t && D(t, "s") > -1) && (t = w(t, /s/g, "")), n = t, U && "sticky" in M && (i = !!t && D(t, "y") > -1) && G && (t = w(t, /y/g, "")), S && (e = (a = F(e))[0], g = a[1]), o = s(A(e, t), u ? this : N, Z), (r || i || g.length) && (c = y(o), r && (c.dotAll = !0, c.raw = Z(V(e), n)), i && (c.sticky = !0), g.length && (c.groups = g)), e !== E) try {
         l(o, "source", "" === E ? "(?:)" : E)
       } catch (e) {}
       return o

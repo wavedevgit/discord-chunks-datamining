@@ -71,13 +71,13 @@ function O(e) {
   } = e, I = (0, f.sU)({}), S = (0, s.useMemoOne)(() => (0, l.Z)(), [t]), T = i.useRef(null), A = (0, _.Z)(T, g, null == I ? window : I), N = v(b({}, E), {
     frame_id: S,
     platform: h.S4.DESKTOP
-  }), [C, R] = i.useState(!1), P = u.Z.theme, w = b({}, a);
+  }), [C, P] = i.useState(!1), R = u.Z.theme, w = b({}, a);
 
   function D(e) {
     var n;
     null == o || o(e.target), T.current = e.target, A(!0), null == (n = e.target.contentWindow) || n.postMessage([c.Z.HELLO, N], null != t ? t : "")
   }
-  return P === m.BRd.LIGHT ? w.colorScheme = "light" : w.colorScheme = "dark", i.useEffect(() => (d.S.dispatch(m.CkL.IFRAME_MOUNT, {
+  return R === m.BRd.LIGHT ? w.colorScheme = "light" : w.colorScheme = "dark", i.useEffect(() => (d.S.dispatch(m.CkL.IFRAME_MOUNT, {
     id: S
   }), () => {
     d.S.dispatch(m.CkL.IFRAME_UNMOUNT, {
@@ -88,7 +88,7 @@ function O(e) {
       let {
         resizing: t
       } = e;
-      R(t)
+      P(t)
     };
     return d.S.subscribe(m.CkL.MANUAL_IFRAME_RESIZING, e), () => {
       d.S.unsubscribe(m.CkL.MANUAL_IFRAME_RESIZING, e)

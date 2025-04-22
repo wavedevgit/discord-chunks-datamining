@@ -121,8 +121,8 @@ async function h(e, t) {
     invitable: A,
     availableTags: N,
     defaultSortOrder: C,
-    defaultForumLayout: R,
-    defaultTagSetting: P,
+    defaultForumLayout: P,
+    defaultTagSetting: R,
     iconEmoji: w,
     themeColor: D
   } = t, L = s.Z.getChannel(e);
@@ -161,8 +161,8 @@ async function h(e, t) {
         moderated: e.moderated
       })),
       default_sort_order: C,
-      default_forum_layout: R,
-      default_tag_setting: P,
+      default_forum_layout: P,
+      default_tag_setting: R,
       icon_emoji: null != w ? {
         id: w.id,
         name: w.name

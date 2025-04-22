@@ -50,15 +50,15 @@ let p = () => (0, r.jsx)("img", {
       onClick: g,
       onMouseDown: E,
       className: b
-    } = e, [y, v] = (0, i.useState)(!1), O = (0, i.useMemo)(() => m(a, y), [a, y]), [I, S] = (0, i.useState)(!1), [T, A] = (0, i.useState)(!1), [N, C] = (0, i.useState)(.9 * u.D2), R = null === n;
+    } = e, [y, v] = (0, i.useState)(!1), O = (0, i.useMemo)(() => m(a, y), [a, y]), [I, S] = (0, i.useState)(!1), [T, A] = (0, i.useState)(!1), [N, C] = (0, i.useState)(.9 * u.D2), P = null === n;
     (0, i.useEffect)(() => {
-      R && !I && (S(!0), setTimeout(() => {
+      P && !I && (S(!0), setTimeout(() => {
         A(!0)
       }, 500))
-    }, [R, S, I]), (0, i.useEffect)(() => {
-      T && !R && S(!1)
-    }, [R, T]);
-    let P = R || I,
+    }, [P, S, I]), (0, i.useEffect)(() => {
+      T && !P && S(!1)
+    }, [P, T]);
+    let R = P || I,
       w = I ? null : n,
       [D, L] = (0, i.useState)(null),
       x = (0, i.useRef)(null),
@@ -75,7 +75,7 @@ let p = () => (0, r.jsx)("img", {
         onSetAnimationDurationMS: C
       };
     return (0, r.jsx)(s.P3F, {
-      onClick: P ? void 0 : g,
+      onClick: R ? void 0 : g,
       className: d.clickable,
       children: (0, r.jsxs)("span", {
         onMouseDown: E,
@@ -84,17 +84,17 @@ let p = () => (0, r.jsx)("img", {
         id: h,
         ref: t,
         className: o()(d.container, O, b, {
-          [d.containerLoading]: P
+          [d.containerLoading]: R
         }),
         children: [(0, r.jsx)("div", {
-          className: o()(d.orbsLottieContainer, P ? d.orbIconloading : void 0),
+          className: o()(d.orbsLottieContainer, R ? d.orbIconloading : void 0),
           children: (0, r.jsx)(u.ZP, _({}, j))
         }), (0, r.jsx)(c.Z, {
           value: w,
           onValueChange: k,
           onValueReached: M,
           targetTotalCounterTime: N,
-          className: P ? d.counterLoading : void 0
+          className: R ? d.counterLoading : void 0
         }), f && (0, r.jsx)(p, {})]
       })
     })

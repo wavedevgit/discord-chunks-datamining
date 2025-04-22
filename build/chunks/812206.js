@@ -140,14 +140,14 @@ function C(e) {
   return n
 }
 
-function R(e) {
+function P(e) {
   let {
     libraryApplications: t
   } = e;
   for (let e of t) b(o.ZP.createFromServer(e.application))
 }
 
-function P(e) {
+function R(e) {
   let {
     applications: t
   } = e;
@@ -256,7 +256,7 @@ function B(e) {
   b(o.ZP.createFromServer(t.target_application))
 }
 
-function F(e) {
+function V(e) {
   let {
     storeListing: t
   } = e;
@@ -264,7 +264,7 @@ function F(e) {
   b(o.ZP.createFromServer(t.sku.application))
 }
 
-function V(e) {
+function F(e) {
   let {
     messages: t
   } = e;
@@ -359,7 +359,7 @@ let K = new W(a.Z, {
   APPLICATION_FETCH_SUCCESS: S,
   APPLICATION_FETCH_FAIL: N,
   APPLICATIONS_FETCH: C,
-  APPLICATIONS_FETCH_SUCCESS: P,
+  APPLICATIONS_FETCH_SUCCESS: R,
   APPLICATIONS_FETCH_FAIL: x,
   APPLICATION_UPDATE: I,
   APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS: M,
@@ -370,9 +370,9 @@ let K = new W(a.Z, {
   PAYMENT_UPDATE: U,
   INVITE_RESOLVE_SUCCESS: B,
   GIFT_CODE_RESOLVE_SUCCESS: G,
-  LIBRARY_FETCH_SUCCESS: R,
-  STORE_LISTING_FETCH_SUCCESS: F,
-  LOAD_MESSAGES_SUCCESS: V,
+  LIBRARY_FETCH_SUCCESS: P,
+  STORE_LISTING_FETCH_SUCCESS: V,
+  LOAD_MESSAGES_SUCCESS: F,
   APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS_SUCCESS: w,
   USER_PROFILE_FETCH_SUCCESS: D,
   APP_DM_OPEN: L,

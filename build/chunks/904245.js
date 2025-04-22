@@ -29,8 +29,8 @@ var r = n(278074),
   A = n(409059),
   N = n(264229),
   C = n(413605),
-  R = n(366980),
-  P = n(779832),
+  P = n(366980),
+  R = n(779832),
   w = n(786761),
   D = n(459618),
   L = n(541288),
@@ -41,8 +41,8 @@ var r = n(278074),
   U = n(64078),
   G = n(351780),
   B = n(79390),
-  F = n(980463),
-  V = n(328908),
+  V = n(980463),
+  F = n(328908),
   Z = n(992970),
   H = n(576645),
   Y = n(317951),
@@ -142,7 +142,7 @@ function eC(e) {
       type: t,
       code: l
     } = e;
-    if (t === m.g.INVITE) eR({
+    if (t === m.g.INVITE) eP({
       inviteKey: l,
       channelId: n,
       messageId: r,
@@ -185,7 +185,7 @@ function eC(e) {
   })
 }
 
-function eR(e) {
+function eP(e) {
   var t, n;
   let {
     inviteKey: r,
@@ -234,7 +234,7 @@ function eR(e) {
   }
 }
 
-function eP(e, t, n, r, i) {
+function eR(e, t, n, r, i) {
   (0, ef.Q_)(e).forEach(e => {
     let a = en.Z.getChannel(t);
     null != a && c.ZP.trackWithMetadata(eg.rMx.GIFT_CODE_SENT, {
@@ -684,7 +684,7 @@ let eD = {
       let a = await (0, K.Z)(e);
       if (null != a) return eL.sendMessage(a, t, r, i);
       let o = () => eL._sendMessage(e, t, i),
-        s = P.ZP.backgroundify(o, void 0),
+        s = R.ZP.backgroundify(o, void 0),
         l = null != (n = i.nonce) ? n : (0, M.r)();
       return (i = eI(ev({}, i), {
         nonce: l
@@ -720,7 +720,7 @@ let eD = {
       return null != o && (0, H.tv)(n, r, i, a) ? {
         confettiPotionData: {
           emoji: o,
-          callback: () => (0, V.Hb)(t)
+          callback: () => (0, F.Hb)(t)
         }
       } : {}
     },
@@ -749,7 +749,7 @@ let eD = {
       return ev({}, t, n, r, i)
     },
     sendInvite(e, t, n, r, i) {
-      let a = (0, R.Z)(t);
+      let a = (0, P.Z)(t);
       return null != i && (a = "".concat(i, "\n").concat(a)), eL._sendMessage(e, {
         content: a,
         tts: !1,
@@ -856,19 +856,19 @@ let eD = {
       A && (c = N, O = (0, ed.pj)(O, eg.iLy.SUPPRESS_NOTIFICATIONS));
       let C = (null == (r = n.messageReference) ? void 0 : r.type) === eg.Uvt.FORWARD;
       if ("" === c && null == _ && null == m && null == y && null == v && !C) return Promise.resolve();
-      let R = null != E ? eg.uaV.REPLY : eg.uaV.DEFAULT,
-        P = null != (a = n.nonce) ? a : (0, M.r)(),
-        w = P;
+      let P = null != E ? eg.uaV.REPLY : eg.uaV.DEFAULT,
+        R = null != (a = n.nonce) ? a : (0, M.r)(),
+        w = R;
       if (!1 !== n.eagerDispatch) {
         let t = (0, x.ZP)({
           channelId: e,
           content: c,
           tts: f,
-          type: R,
+          type: P,
           messageReference: E,
           allowedMentions: b,
           flags: 0 !== O ? O : void 0,
-          nonce: P,
+          nonce: R,
           poll: (0, B.x9)(y)
         });
         (0, U.EL)(e, t.id), null != m && (t.sticker_items = m.map(e => Q.Z.getStickerById(e)).filter(e => null != e)), eL.receiveMessage(e, t, !0, n)
@@ -887,7 +887,7 @@ let eD = {
         message: {
           channelId: e,
           content: c,
-          nonce: P,
+          nonce: R,
           tts: f,
           message_reference: E,
           allowed_mentions: b,
@@ -922,7 +922,7 @@ let eD = {
               poll: y
             });
             let r = (0, H.ZC)(s.body);
-            null != r && ((0, F.gA)(Y.D1), (0, W.I)({
+            null != r && ((0, V.gA)(Y.D1), (0, W.I)({
               name: r.name,
               id: r.id
             }, void 0, !0, Z.LL.MessageSent));
@@ -942,7 +942,7 @@ let eD = {
                 joinRequestUserId: n
               })
             }
-            D.Z.recordMessageSendApiResponse(P), o.Z.dispatch({
+            D.Z.recordMessageSendApiResponse(R), o.Z.dispatch({
               type: "SLOWMODE_RESET_COOLDOWN",
               slowmodeType: el.S.SendMessage,
               channelId: e
@@ -964,7 +964,7 @@ let eD = {
               messageId: s.body.id,
               location: null != p ? p : "chat_input",
               suggested: h
-            }), eP(c, e, s.body.id, null != p ? p : "chat_input", !!n.isGiftLinkSentOnBehalfOfUser), t(s)
+            }), eR(c, e, s.body.id, null != p ? p : "chat_input", !!n.isGiftLinkSentOnBehalfOfUser), t(s)
           } else {
             var f;
             eS.log("Failed to send message", {
@@ -1143,6 +1143,6 @@ let eD = {
         confirmText: eb.intl.string(eb.t.BddRzc)
       })
     }),
-    trackInvite: eR
+    trackInvite: eP
   },
   ex = eL

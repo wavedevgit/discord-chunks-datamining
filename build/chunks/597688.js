@@ -34,28 +34,28 @@ let m = new Map,
   A = null,
   N = !1,
   C = new Set,
-  R = new Map,
   P = new Map,
+  R = new Map,
   w = {},
   D = e => {
     let {
       skuId: t
     } = e;
-    (C = new Set(C)).add(t), (R = new Map(R)).delete(t), (P = new Map(P)).delete(t)
+    (C = new Set(C)).add(t), (P = new Map(P)).delete(t), (R = new Map(R)).delete(t)
   },
   L = e => {
     let {
       skuId: t,
       error: n
     } = e;
-    (C = new Set(C)).delete(t), (R = new Map(R)).set(t, n), (P = new Map(P)).set(t, Date.now())
+    (C = new Set(C)).delete(t), (P = new Map(P)).set(t, n), (R = new Map(R)).set(t, Date.now())
   },
   x = e => {
     let {
       skuId: t,
       product: n
     } = e;
-    O.set(t, n), (C = new Set(C)).delete(t), (R = new Map(R)).delete(t), (P = new Map(P)).delete(t)
+    O.set(t, n), (C = new Set(C)).delete(t), (P = new Map(P)).delete(t), (R = new Map(R)).delete(t)
   },
   M = e => {
     N = !0, r = void 0, a = void 0, w = e.options
@@ -102,7 +102,7 @@ let m = new Map,
   B = () => {
     v = m, O = g, T = y, i = void 0, N = !1, C = new Set, r = void 0, a = void 0, w = {}
   },
-  F = () => {
+  V = () => {
     if (!u.Z.hasLoadedExperiments) return;
     let {
       giftRecommendationAlgorithm: e
@@ -113,9 +113,9 @@ let m = new Map,
     });
     e !== A && (i = void 0), A = e
   };
-class V extends(o = l.ZP.Store) {
+class F extends(o = l.ZP.Store) {
   initialize() {
-    this.syncWith([f.default], B), this.syncWith([u.Z], F)
+    this.syncWith([f.default], B), this.syncWith([u.Z], V)
   }
   get isFetchingCategories() {
     return N
@@ -151,10 +151,10 @@ class V extends(o = l.ZP.Store) {
     return null != e ? O.get(e) : void 0
   }
   getProductFetchError(e) {
-    return null != e ? R.get(e) : void 0
+    return null != e ? P.get(e) : void 0
   }
   getProductFetchErrorTimestamp(e) {
-    return null != e ? P.get(e) : void 0
+    return null != e ? R.get(e) : void 0
   }
   getProductByStoreListingId(e) {
     return null != e ? I.get(e) : void 0
@@ -167,8 +167,8 @@ class V extends(o = l.ZP.Store) {
     return this.getCategory(null == t ? void 0 : t.categorySkuId)
   }
 }
-h(V, "displayName", "CollectiblesCategoryStore");
-let Z = new V(c.Z, {
+h(F, "displayName", "CollectiblesCategoryStore");
+let Z = new F(c.Z, {
   COLLECTIBLES_CATEGORIES_FETCH: M,
   COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: j,
   COLLECTIBLES_CATEGORIES_FETCH_FAILURE: k,

@@ -28,9 +28,9 @@ var i, a = n(392711),
   A = n(483360),
   N = n(823379),
   C = n(981631),
-  R = n(388032);
+  P = n(388032);
 
-function P(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -48,12 +48,12 @@ let w = "seenQSTutorial",
   U = null,
   G = [],
   B = null,
-  F = 0,
-  V = [],
+  V = 0,
+  F = [],
   Z = [];
 
 function H() {
-  j = y.Z.getGuildCount() >= 3 || o().size(m.Z.getMutablePrivateChannels()) >= 20, V = []
+  j = y.Z.getGuildCount() >= 3 || o().size(m.Z.getMutablePrivateChannels()) >= 20, F = []
 }
 
 function Y(e) {
@@ -122,11 +122,11 @@ function K() {
     let t = W(Z[e]);
     null != t && (t.type !== u.h8.TEXT_CHANNEL && t.type !== u.h8.VOICE_CHANNEL || v.Z.can(C.Plq.VIEW_CHANNEL, t.record)) && a.push(t)
   }
-  a.length > 0 && i.push((0, u.o6)(R.intl.string(R.t["80lOZ2"])), ...a);
+  a.length > 0 && i.push((0, u.o6)(P.intl.string(P.t["80lOZ2"])), ...a);
   let s = Y(e => e === r || Z.includes(e));
-  s.length > 0 && i.push((0, u.o6)(R.intl.string(R.t["4B63jY"])), ...s);
+  s.length > 0 && i.push((0, u.o6)(P.intl.string(P.t["4B63jY"])), ...s);
   let l = O.ZP.getMentionChannelIds().filter(e => e !== r && !Z.includes(e)).map(e => W(e)).filter(N.lm).reverse();
-  if (l.length > 0 && (i.push((0, u.o6)(R.intl.string(R.t["61Df19"]))), i = i.concat(l)), null != n) {
+  if (l.length > 0 && (i.push((0, u.o6)(P.intl.string(P.t["61Df19"]))), i = i.concat(l)), null != n) {
     let e = E.ZP.getSelectableChannelIds(n).filter(e => {
       let t = m.Z.getChannel(e);
       return !(null == t || e === r || Z.includes(e) || T.ZP.isChannelMuted(t.guild_id, e) || null != t.parent_id && T.ZP.isChannelMuted(t.guild_id, t.parent_id)) && (0, f.d)(t)
@@ -136,7 +136,7 @@ function K() {
         let t = W(n);
         null != t && e.push(t)
       }
-    }), e.length > 0 && (i.push((0, u.o6)(R.intl.string(R.t.ieCAhI))), i = i.concat(e))
+    }), e.length > 0 && (i.push((0, u.o6)(P.intl.string(P.t.ieCAhI))), i = i.concat(e))
   }
   return o()(i).uniqBy(e => e.record.id).value()
 }
@@ -145,27 +145,27 @@ function z(e, t) {
   switch (U) {
     case u.h8.USER: {
       let t = y.Z.getGuild(S.Z.getGuildId());
-      e.unshift((0, u.o6)(null != t ? R.intl.formatToPlainString(R.t.FREzQk, {
+      e.unshift((0, u.o6)(null != t ? P.intl.formatToPlainString(P.t.FREzQk, {
         name: t.name
-      }) : R.intl.string(R.t.XFYW1t))), G = e;
+      }) : P.intl.string(P.t.XFYW1t))), G = e;
       break
     }
     case u.h8.TEXT_CHANNEL:
-      e.unshift((0, u.o6)(R.intl.string(R.t.W26k4e))), G = e;
+      e.unshift((0, u.o6)(P.intl.string(P.t.W26k4e))), G = e;
       break;
     case u.h8.VOICE_CHANNEL:
-      e.unshift((0, u.o6)(R.intl.string(R.t.zUoI5O))), G = e;
+      e.unshift((0, u.o6)(P.intl.string(P.t.zUoI5O))), G = e;
       break;
     case u.h8.GUILD:
-      e.unshift((0, u.o6)(R.intl.string(R.t.olADPj))), G = e;
+      e.unshift((0, u.o6)(P.intl.string(P.t.olADPj))), G = e;
       break;
     case u.h8.APPLICATION:
-      e.unshift((0, u.o6)(R.intl.string(R.t.VwK1lZ))), G = e;
+      e.unshift((0, u.o6)(P.intl.string(P.t.VwK1lZ))), G = e;
       break;
     default:
       G = e
   }
-  if (t !== B) B = t, F = Math.max(t.length, F), M = (0, u.gJ)(u.a8.DOWN, -1, G);
+  if (t !== B) B = t, V = Math.max(t.length, V), M = (0, u.gJ)(u.a8.DOWN, -1, G);
   else {
     let e = G[M];
     null != e && e.type === u.h8.HEADER && (M = (0, u.gJ)(u.a8.DOWN, M, G))
@@ -182,7 +182,7 @@ function q(e) {
   null != a && o.add("guild:".concat(a)), r = null != r ? r : new u.ZP(J, x, null != i ? L : D, {
     frecencyBoosters: !0,
     blacklist: o
-  }), B = null, F = n.length, U = i, r.search(n)
+  }), B = null, V = n.length, U = i, r.search(n)
 }
 
 function Q(e) {
@@ -204,11 +204,11 @@ function X(e, t) {
 }
 
 function J(e, t) {
-  X(e = "" === (t = t.trim()).trim() ? K() : e, V) || (V = e, z(e, t))
+  X(e = "" === (t = t.trim()).trim() ? K() : e, F) || (F = e, z(e, t))
 }
 
 function $() {
-  B = null, F = 0, V = [], null != r && (r.destroy(), r = null)
+  B = null, V = 0, F = [], null != r && (r.destroy(), r = null)
 }
 
 function ee(e) {
@@ -282,11 +282,11 @@ class er extends(i = s.ZP.PersistedStore) {
       results: G,
       selectedIndex: M,
       seenTutorial: k,
-      maxQueryLength: F
+      maxQueryLength: V
     }
   }
 }
-P(er, "displayName", "QuickSwitcherStore"), P(er, "persistKey", "QuickSwitcherStore");
+R(er, "displayName", "QuickSwitcherStore"), R(er, "persistKey", "QuickSwitcherStore");
 let ei = new er(c.Z, {
     CONNECTION_OPEN: H,
     CONNECTION_OPEN_SUPPLEMENTAL: H,

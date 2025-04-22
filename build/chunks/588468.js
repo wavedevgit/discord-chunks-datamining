@@ -3,7 +3,7 @@
 n.d(t, {
   DJ: () => B,
   ZP: () => ea,
-  rp: () => F
+  rp: () => V
 }), n(415506), n(953529), n(388685);
 var r, i = n(200651),
   a = n(192379),
@@ -30,8 +30,8 @@ var r, i = n(200651),
   A = n(594174),
   N = n(768581),
   C = n(51144),
-  R = n(965386),
-  P = n(981631),
+  P = n(965386),
+  R = n(981631),
   w = n(185923),
   D = n(388032),
   L = n(256965);
@@ -97,10 +97,10 @@ function B(e) {
   return null != e ? "autocomplete-".concat(e) : null
 }
 
-function F(e) {
+function V(e) {
   return "autocomplete-".concat(e, "-title")
 }
-let V = a.createContext(null);
+let F = a.createContext(null);
 class Z extends a.PureComponent {
   isSelectable() {
     return this.selectable
@@ -173,12 +173,12 @@ class H extends Z {
       text: e,
       description: t
     } = this.props;
-    return (0, i.jsxs)(R.RX, {
-      children: [(0, i.jsx)(R.z5, {
-        children: (0, i.jsx)(R.BR, {
+    return (0, i.jsxs)(P.RX, {
+      children: [(0, i.jsx)(P.z5, {
+        children: (0, i.jsx)(P.BR, {
           children: e
         })
-      }), null != t ? (0, i.jsx)(R.dY, {
+      }), null != t ? (0, i.jsx)(P.dY, {
         children: t
       }) : null]
     })
@@ -190,9 +190,9 @@ function Y(e) {
   return (0, i.jsx)("div", {
     className: L.base,
     "aria-busy": !0,
-    children: (0, i.jsx)(R.RX, {
-      children: (0, i.jsx)(R.z5, {
-        children: (0, i.jsx)(R.BR, {
+    children: (0, i.jsx)(P.RX, {
+      children: (0, i.jsx)(P.z5, {
+        children: (0, i.jsx)(P.BR, {
           children: (0, i.jsx)("div", {
             className: L.autocompletePlaceholder,
             style: {
@@ -210,11 +210,11 @@ function W(e) {
     title: t,
     className: n,
     children: r
-  } = e, o = a.useContext(V);
+  } = e, o = a.useContext(F);
   return (0, i.jsx)("div", {
     className: L.base,
     children: (0, i.jsxs)(d.X6q, {
-      id: F(o.id),
+      id: V(o.id),
       className: s()(L.contentTitle, n),
       variant: "heading-deprecated-12/semibold",
       children: [t, r]
@@ -244,19 +244,19 @@ class z extends Z {
       hidePersonalInformation: a,
       guildId: o
     } = this.props, s = null == o ? T.Z.getNickname(t.id) : null;
-    return (0, i.jsxs)(R.RX, {
-      children: [(0, i.jsx)(R.Tw, {
+    return (0, i.jsxs)(P.RX, {
+      children: [(0, i.jsx)(P.Tw, {
         children: (0, i.jsx)(d.qEK, {
           size: d.EFr.SIZE_24,
           src: t.getAvatarURL(o, 24),
           "aria-hidden": !0,
           status: r
         })
-      }), (0, i.jsx)(R.z5, {
-        children: (0, i.jsx)(R.BR, {
+      }), (0, i.jsx)(P.z5, {
+        children: (0, i.jsx)(P.BR, {
           children: null != (e = null != n ? n : s) ? e : C.ZP.getName(t)
         })
-      }), (0, i.jsxs)(R.dY, {
+      }), (0, i.jsxs)(P.dY, {
         children: [C.ZP.getUserTag(t, {
           mode: "username",
           identifiable: a ? "never" : "always"
@@ -283,9 +283,9 @@ class q extends Z {
     } = (0, d.JUn)(null == a ? void 0 : a.primaryColor, null == a ? void 0 : a.secondaryColor, null == a ? void 0 : a.tertiaryColor, f.Z.useReducedMotion, "username"), h = l ? M({}, u ? _.gradientStyle : {
       color: null != r ? r : void 0
     }) : void 0;
-    return (0, i.jsxs)(R.RX, {
-      children: [(0, i.jsx)(R.z5, {
-        children: (0, i.jsxs)(R.BR, {
+    return (0, i.jsxs)(P.RX, {
+      children: [(0, i.jsx)(P.z5, {
+        children: (0, i.jsxs)(P.BR, {
           children: [o && (0, i.jsx)(d.FhE, {
             className: L.roleDot,
             color: r,
@@ -301,7 +301,7 @@ class q extends Z {
             children: ["@", e.name]
           })]
         })
-      }), t ? null : (0, i.jsx)(R.dY, {
+      }), t ? null : (0, i.jsx)(P.dY, {
         children: D.intl.string(D.t["/91tbm"])
       })]
     })
@@ -312,17 +312,17 @@ class Q extends Z {
     let {
       channel: e,
       category: t
-    } = this.props, n = e.type === P.d4z.GUILD_CATEGORY ? d.ROc : (0, g.KS)(e);
-    return (0, i.jsxs)(R.RX, {
-      children: [null != n && (0, i.jsx)(R.Tw, {
+    } = this.props, n = e.type === R.d4z.GUILD_CATEGORY ? d.ROc : (0, g.KS)(e);
+    return (0, i.jsxs)(P.RX, {
+      children: [null != n && (0, i.jsx)(P.Tw, {
         children: (0, i.jsx)(n, {
           className: L.icon
         })
-      }), (0, i.jsx)(R.z5, {
-        children: (0, i.jsx)(R.BR, {
+      }), (0, i.jsx)(P.z5, {
+        children: (0, i.jsx)(P.BR, {
           children: (0, m.F6)(e, A.default, T.Z)
         })
-      }), null != t ? (0, i.jsx)(R.dY, {
+      }), null != t ? (0, i.jsx)(P.dY, {
         children: t.name
       }) : null]
     })
@@ -333,19 +333,19 @@ class X extends Z {
     let {
       command: e
     } = this.props;
-    return (0, i.jsxs)(R.RX, {
-      children: [(0, i.jsx)(R.Tw, {
+    return (0, i.jsxs)(P.RX, {
+      children: [(0, i.jsx)(P.Tw, {
         children: (0, i.jsx)(d.XZC, {
           size: "xs",
           color: "currentColor",
           className: L.icon,
           colorClass: L.iconForeground
         })
-      }), (0, i.jsx)(R.z5, {
-        children: (0, i.jsx)(R.BR, {
+      }), (0, i.jsx)(P.z5, {
+        children: (0, i.jsx)(P.BR, {
           children: e.displayName
         })
-      }), (0, i.jsx)(R.dY, {
+      }), (0, i.jsx)(P.dY, {
         children: e.displayDescription
       })]
     })
@@ -392,14 +392,14 @@ class $ extends Z {
     }) : (0, i.jsx)("span", {
       className: L.emojiRaw,
       children: e.surrogates
-    }), o = null != n ? (0, i.jsx)(R.dY, {
+    }), o = null != n ? (0, i.jsx)(P.dY, {
       children: n.name
     }) : null;
-    return (0, i.jsxs)(R.RX, {
-      children: [(0, i.jsx)(R.Tw, {
+    return (0, i.jsxs)(P.RX, {
+      children: [(0, i.jsx)(P.Tw, {
         children: a
-      }), (0, i.jsx)(R.z5, {
-        children: (0, i.jsxs)(R.BR, {
+      }), (0, i.jsx)(P.z5, {
+        children: (0, i.jsxs)(P.BR, {
           children: [t, e.name, t]
         })
       }), o]
@@ -421,18 +421,18 @@ class ee extends Z {
       {
         hovered: l
       } = this.state;
-    return (0, O.jl)(s) ? n = null == (e = v.Z.getStickerPack(s.pack_id)) ? void 0 : e.name : (0, O.J8)(s) && (n = null == (t = S.Z.getGuild(s.guild_id)) ? void 0 : t.name), (0, i.jsxs)(R.RX, {
-      children: [(0, i.jsx)(R.Tw, {
+    return (0, O.jl)(s) ? n = null == (e = v.Z.getStickerPack(s.pack_id)) ? void 0 : e.name : (0, O.J8)(s) && (n = null == (t = S.Z.getGuild(s.guild_id)) ? void 0 : t.name), (0, i.jsxs)(P.RX, {
+      children: [(0, i.jsx)(P.Tw, {
         children: a(s, l || !0 === o)
-      }), (0, i.jsxs)(R.z5, {
-        children: [(0, i.jsx)(R.BR, {
+      }), (0, i.jsxs)(P.z5, {
+        children: [(0, i.jsx)(P.BR, {
           children: s.name
-        }), null != r && (0, i.jsx)(R.wL, {
+        }), null != r && (0, i.jsx)(P.wL, {
           children: D.intl.format(D.t.PAutaW, {
             queryMatch: r
           })
         })]
-      }), null != n && (0, i.jsx)(R.dY, {
+      }), null != n && (0, i.jsx)(P.dY, {
         children: n
       })]
     })
@@ -481,7 +481,7 @@ class ei extends(r = a.PureComponent) {
         id: o
       } = e,
       l = U(e, ["children", "className", "innerClassName", "id"]);
-    return a.Children.count(t) > 0 ? (0, i.jsx)(V.Provider, {
+    return a.Children.count(t) > 0 ? (0, i.jsx)(F.Provider, {
       value: {
         id: null != o ? o : ""
       },

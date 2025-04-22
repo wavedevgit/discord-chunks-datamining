@@ -3,13 +3,13 @@
 n.d(t, {
   D$: () => D,
   N4: () => U,
-  UI: () => P,
+  UI: () => R,
   Uu: () => A,
   _N: () => w,
   cS: () => L,
   cZ: () => G,
-  e1: () => V,
-  eQ: () => R,
+  e1: () => F,
+  eQ: () => P,
   fw: () => C,
   uY: () => x,
   x9: () => k
@@ -90,13 +90,13 @@ function C(e) {
   return e.replace(t, "")
 }
 
-function R(e) {
+function P(e) {
   for (let t of e.reactions)
     if (null == t.me_vote) return !0;
   return !1
 }
 
-function P(e) {
+function R(e) {
   return (0, l.e7)([h.Z], () => null != e && e.id !== c.V && !!y.TPd.POLLS.has(e.type) && (!!e.isPrivate() || h.Z.can(y.Plq.SEND_MESSAGES, e) && h.Z.can(y.Plq.SEND_POLLS, e)))
 }
 
@@ -186,7 +186,7 @@ function B(e, t) {
   return i()(a).reject(e => m.Z.isBlockedOrIgnored(e.id)).take(b.$J).map(e => E.ZP.getName(s, null == o ? void 0 : o.id, e)).value()
 }
 
-function F(e, t) {
+function V(e, t) {
   let n = Math.max(0, t - e.length);
   if (1 === e.length)
     if (n > 0) return v.intl.formatToPlainString(v.t["SV/iZm"], {
@@ -218,7 +218,7 @@ function F(e, t) {
   })
 }
 
-function V(e, t, n) {
+function F(e, t, n) {
   var r, i;
   let a = p.Z.getMessage(t, e);
   if (null == a) return "";
@@ -229,5 +229,5 @@ function V(e, t, n) {
     }),
     s = null != (i = null == o || null == (r = o.count_details) ? void 0 : r.vote) ? i : 0,
     l = B(a, n);
-  return 0 === l.length ? "" : F(l, s)
+  return 0 === l.length ? "" : V(l, s)
 }

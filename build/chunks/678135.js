@@ -41,7 +41,7 @@ function C(e) {
     pendingPronouns: E,
     pendingAvatar: A,
     pendingAvatarDecoration: C,
-    pendingNickname: P,
+    pendingNickname: R,
     pendingGlobalName: w,
     pendingThemeColors: D,
     pendingProfileEffectId: L,
@@ -52,8 +52,8 @@ function C(e) {
     hideCustomStatus: U = !1,
     hideBioSection: G = !1,
     hideMessageInput: B = !0,
-    hideExampleButton: F = !1,
-    pendingBadges: V,
+    hideExampleButton: V = !1,
+    pendingBadges: F,
     shouldOpenBadgeTooltip: Z,
     showNameplatePreview: H = !1
   } = e, Y = (0, f.ZP)(t.id, null == n ? void 0 : n.id), {
@@ -83,7 +83,7 @@ function C(e) {
     children: [(0, r.jsxs)(h.Z, {
       user: t,
       displayProfile: Y,
-      profileType: T.y0.BITE_SIZE,
+      themeType: T.lY.POPOUT,
       pendingThemeColors: D,
       className: o()(N.container, M),
       forceShowPremium: i,
@@ -119,7 +119,7 @@ function C(e) {
         }), !U && (0, r.jsx)(m.Z, {
           location: "UserProfilePreview",
           user: t,
-          profileType: T.y0.BITE_SIZE,
+          themeType: T.lY.POPOUT,
           disableEdit: j
         })]
       }), (0, r.jsx)(O.Z, {
@@ -127,26 +127,26 @@ function C(e) {
         displayProfile: Y,
         guild: n,
         pendingAvatar: A,
-        pendingNickname: P,
+        pendingNickname: R,
         pendingGlobalName: w,
         pendingBio: g,
         pendingPronouns: E,
         isTryItOutFlow: k,
         hideBioSection: G,
-        pendingBadges: V,
+        pendingBadges: F,
         shouldOpenBadgeTooltip: Z
       }), (0, r.jsx)(I.Z, {
         user: t,
         hideMessageInput: B,
-        hideExampleButton: F
+        hideExampleButton: V
       }), null != z && (0, r.jsx)(d.Z, {
         profileEffectId: z
       })]
-    }), X && H && (0, r.jsx)(R, {})]
+    }), X && H && (0, r.jsx)(P, {})]
   })
 }
 
-function R() {
+function P() {
   var e;
   let t = (0, s.e7)([E.default], () => E.default.getCurrentUser()),
     n = (0, s.e7)([g.Z], () => g.Z.getPendingNameplate()),

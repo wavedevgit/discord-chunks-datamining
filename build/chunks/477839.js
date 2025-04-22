@@ -10,14 +10,14 @@ n.d(t, {
   VU: () => eG,
   Vx: () => eM,
   Wq: () => ej,
-  YG: () => eP,
+  YG: () => eR,
   ZJ: () => ew,
   bO: () => eb,
   bl: () => eL,
   eg: () => eU,
-  h0: () => eR,
+  h0: () => eP,
   ne: () => eC,
-  oK: () => eF,
+  oK: () => eV,
   r7: () => eN,
   tH: () => ev,
   uv: () => eS,
@@ -50,8 +50,8 @@ var r = n(562858),
   A = n(29823),
   N = n(516038),
   C = n(590227),
-  R = n(968796),
-  P = n(659941),
+  P = n(968796),
+  R = n(659941),
   w = n(979233),
   D = n(483873),
   L = n(438390),
@@ -62,8 +62,8 @@ var r = n(562858),
   U = n(997278),
   G = n(835613),
   B = n(860300),
-  F = n(90754),
-  V = n(792257),
+  V = n(90754),
+  F = n(792257),
   Z = n(382123),
   H = n(62002),
   Y = n(399027),
@@ -245,7 +245,7 @@ let eT = () => ({
     description: s.intl.string(o.default.hjqDg4),
     pointsDescription: o.default.QMkrPj,
     cost: 2e4,
-    purchaseIconSrc: F
+    purchaseIconSrc: V
   },
   19: {
     name: s.intl.string(o.default.WmIwqK),
@@ -273,7 +273,7 @@ let eT = () => ({
     description: s.intl.string(o.default.KJ5fmZ),
     pointsDescription: o.default.C3Yi6u,
     cost: 2150,
-    purchaseIconSrc: V
+    purchaseIconSrc: F
   },
   23: {
     name: s.intl.string(o.default.Bq5anp),
@@ -422,7 +422,7 @@ let eN = () => ({
         } = e;
         return t < 1
       },
-      purchaseIconSrc: P
+      purchaseIconSrc: R
     },
     7: {
       itemId: 2,
@@ -586,7 +586,7 @@ let eN = () => ({
     type: r.h.ITEM,
     id: 28
   }],
-  eR = [{
+  eP = [{
     type: r.h.ITEM_UPGRADE,
     id: 0
   }, {
@@ -599,7 +599,7 @@ let eN = () => ({
     type: r.h.ITEM_UPGRADE,
     id: 7
   }],
-  eP = [{
+  eR = [{
     itemId: 7,
     purchasesRequired: 10
   }, {
@@ -723,7 +723,7 @@ let eL = {
       })
     },
     13: {
-      icon: R,
+      icon: P,
       name: s.intl.string(o.default.ihlJt7),
       description: s.intl.formatToPlainString(o.default.gNIyY2, {
         count: eL[13]
@@ -811,4 +811,4 @@ let ek = () => ({
   eU = 8,
   eG = "1349486948942745695",
   eB = "1349486948942745696",
-  eF = a.XAJ
+  eV = a.XAJ

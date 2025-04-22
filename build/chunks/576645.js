@@ -7,13 +7,13 @@ n.d(t, {
   R2: () => L,
   T$: () => w,
   Uu: () => k,
-  ZC: () => V,
+  ZC: () => F,
   Zm: () => D,
   bK: () => j,
   mx: () => U,
   t6: () => x,
   tv: () => B,
-  vY: () => F
+  vY: () => V
 }), n(388685);
 var r = n(192379),
   i = n(525654),
@@ -41,8 +41,8 @@ var r = n(192379),
   A = n(981631),
   N = n(37113);
 let C = 35e5,
-  R = 1e4,
-  P = new o.Yd("HDStreamingConsumableModal"),
+  P = 1e4,
+  R = new o.Yd("HDStreamingConsumableModal"),
   w = e => {
     let t = (0, s.e7)([_.Z], () => _.Z.getGuild(null == e ? void 0 : e.guild_id)),
       n = (0, s.e7)([g.default], () => {
@@ -57,14 +57,14 @@ let C = 35e5,
       [o, l] = (0, r.useState)(null),
       [c, u] = (0, r.useState)([]);
     (0, s.e7)([m.Z], () => {
-      if (null == o || Date.now() - o > R) {
+      if (null == o || Date.now() - o > P) {
         let e = i.map(e => {
           var t;
           let n = (0, d.V9)(e),
             r = m.Z.getRTCConnection(n);
           return null == r || null == (t = r.getVideoStats()) ? void 0 : t.inbound_bitrate_estimate_percentile99
         });
-        P.info("Setting bitrates", e), u(e), l(Date.now())
+        R.info("Setting bitrates", e), u(e), l(Date.now())
       }
     }, [o, i]);
     let p = (0, r.useMemo)(() => 0 === c.length || !c.some(e => null == e || e < C), [c]);
@@ -156,7 +156,7 @@ function B(e, t, n, r) {
   return !t && null == n && ("" !== e || null != r && r.length > 0)
 }
 
-function F(e) {
+function V(e) {
   if (null != e) return {
     message_emoji: {
       id: e.emoji.id,
@@ -165,7 +165,7 @@ function F(e) {
   }
 }
 
-function V(e) {
+function F(e) {
   if (null == e || null == e.potions || 0 === e.potions.length) return null;
   for (let r of e.potions) {
     var t, n;

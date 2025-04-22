@@ -11,8 +11,8 @@ n.d(t, {
   mE: () => B,
   oQ: () => A,
   rX: () => C,
-  rY: () => P,
-  rt: () => R,
+  rY: () => R,
+  rt: () => P,
   wR: () => j,
   wl: () => M
 }), n(415506), n(539854), n(388685);
@@ -80,7 +80,7 @@ function C(e, t) {
   return T(e, t, i.BN.ROLE)
 }
 
-function R(e) {
+function P(e) {
   return [{
     id: e,
     type: i.BN.ROLE,
@@ -89,7 +89,7 @@ function R(e) {
   }]
 }
 
-function P(e, t, n) {
+function R(e, t, n) {
   var r, i;
   let a = e.getGuildId(),
     s = n.getGuild(a),

@@ -26,8 +26,8 @@ var r = n(200651),
   O = n(592125),
   E = n(430824),
   I = n(496675),
-  P = n(699516),
-  S = n(768119),
+  S = n(699516),
+  P = n(768119),
   Z = n(944486),
   N = n(594174),
   T = n(101695),
@@ -108,7 +108,7 @@ function D(e) {
       let t = O.Z.getChannel(e.channel_id),
         n = null != t ? t.getGuildId() : null;
       u.Z.trackJump(e.channel_id, e.id, "Search Results", {
-        search_id: S.Z.getAnalyticsId(l)
+        search_id: P.Z.getAnalyticsId(l)
       }), (0, C.uL)(w.Z5c.CHANNEL(n, e.channel_id, e.id))
     }
   }, [y, l]), N = i.useMemo(() => {
@@ -117,7 +117,7 @@ function D(e) {
     let t = 0;
     return m.reduce((n, r) => {
       let i = r.find(e => e.isSearchHit);
-      if (!E && null != i && (P.Z.isBlockedForMessage(i) || P.Z.isIgnoredForMessage(i))) return n;
+      if (!E && null != i && (S.Z.isBlockedForMessage(i) || S.Z.isIgnoredForMessage(i))) return n;
       let l = O.Z.getChannel(r[0].channel_id);
       return null == l || ((null == e || e !== l.id) && n.push({
         channel: l,
@@ -144,7 +144,7 @@ function D(e) {
     focusedIndex: 0,
     setFocus: U,
     onSelect: G
-  }), H = S.Z.getQuery(l), V = S.Z.getSearchType(l) === w.aib.FAVORITES, z = (0, p.nC)(null != (t = null == H ? void 0 : H.content) ? t : ""), W = N.map(e => {
+  }), H = P.Z.getQuery(l), V = P.Z.getSearchType(l) === w.aib.FAVORITES, z = (0, p.nC)(null != (t = null == H ? void 0 : H.content) ? t : ""), W = N.map(e => {
     let {
       channel: t,
       results: n,
@@ -254,7 +254,7 @@ function B(e) {
     scrollTo: h,
     searchId: C,
     renderEmbeds: j,
-    offset: S,
+    offset: P,
     jumpToMessage: T,
     listNavigator: R,
     favoriteSearch: D
@@ -262,7 +262,7 @@ function B(e) {
     if (e === Z.Z.getChannelId()) return;
     let t = O.Z.getChannel(e);
     null != t && I.Z.can(w.Plq.VIEW_CHANNEL, t) && (0, x.Kh)(t.id)
-  }, []), H = null != o ? (0, f.F6)(o, N.default, P.Z, !1) : "???", V = D && null != o.guild_id ? null == (t = E.Z.getGuild(o.guild_id)) ? void 0 : t.name : null, z = (null == o ? void 0 : o.parent_id) != null ? O.Z.getChannel(o.parent_id) : null, W = null != (n = null == z ? void 0 : z.name) ? n : null, Y = null != (l = (0, m.KS)(o)) ? l : s.VL1, q = I.Z.can(w.Plq.MANAGE_MESSAGES, o), {
+  }, []), H = null != o ? (0, f.F6)(o, N.default, S.Z, !1) : "???", V = D && null != o.guild_id ? null == (t = E.Z.getGuild(o.guild_id)) ? void 0 : t.name : null, z = (null == o ? void 0 : o.parent_id) != null ? O.Z.getChannel(o.parent_id) : null, W = null != (n = null == z ? void 0 : z.name) ? n : null, Y = null != (l = (0, m.KS)(o)) ? l : s.VL1, q = I.Z.can(w.Plq.MANAGE_MESSAGES, o), {
     content: K
   } = (0, y.ZP)({
     content: H,
@@ -313,7 +313,7 @@ function B(e) {
           scrollTo: h,
           searchId: C,
           renderEmbeds: j,
-          searchOffset: S,
+          searchOffset: P,
           pageResultsLength: a.length,
           result: e,
           index: n,

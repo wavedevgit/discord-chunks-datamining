@@ -1,6 +1,6 @@
 /** Chunk was on 62880 **/
 t.d(n, {
-  Z: () => X
+  Z: () => V
 }), t(388685);
 var s = t(200651);
 t(192379);
@@ -15,30 +15,30 @@ var a = t(120356),
   m = t(827498),
   u = t(397698),
   j = t(541716),
-  E = t(379357),
-  p = t(26033),
-  y = t(358696),
-  h = t(740605),
-  v = t(370370),
-  _ = t(91140),
-  b = t(551228),
+  p = t(379357),
+  h = t(26033),
+  v = t(358696),
+  b = t(740605),
+  E = t(370370),
+  y = t(91140),
+  _ = t(551228),
   I = t(555672),
   Z = t(335326),
   P = t(297781),
-  S = t(797342),
-  N = t(810568),
-  g = t(168524),
-  T = t(592125),
+  N = t(797342),
+  g = t(810568),
+  T = t(168524),
+  O = t(592125),
   f = t(944486),
   C = t(960870),
-  O = t(139793),
+  S = t(139793),
   R = t(502762),
-  k = t(652853),
-  A = t(336383),
+  A = t(652853),
+  k = t(336383),
   L = t(373826),
-  U = t(228168),
-  F = t(981631),
-  G = t(616922),
+  Y = t(228168),
+  G = t(981631),
+  M = t(616922),
   z = t(227832);
 
 function w(e) {
@@ -60,7 +60,7 @@ function w(e) {
   return e
 }
 
-function Y(e) {
+function U(e) {
   let {
     user: n,
     entry: t,
@@ -68,47 +68,47 @@ function Y(e) {
     className: r,
     onClose: o
   } = e, {
-    profileType: x
-  } = (0, k.z)(), m = {
-    [z.fullSize]: x === U.y0.FULL_SIZE
+    themeType: x
+  } = (0, A.z)(), m = {
+    [z.fullSize]: x === Y.lY.MODAL
   }, {
     largeImage: u
-  } = (0, E.rv)({
+  } = (0, p.rv)({
     entry: t,
     showCoverImage: !1
   }), {
     appName: j
-  } = (0, S.n)(t), p = (0, g.Z)({
+  } = (0, N.n)(t), h = (0, T.Z)({
     location: "UserProfileRecentActivityCard",
     applicationId: t.extra.application_id,
-    source: N.m1.UserProfile,
+    source: g.m1.UserProfile,
     sourceUserId: n.id,
     trackEntryPointImpression: !0
   }), {
-    analyticsLocations: h
-  } = (0, d.ZP)(), v = (0, C.Z)({
+    analyticsLocations: b
+  } = (0, d.ZP)(), E = (0, C.Z)({
     display: "recent",
     user: n,
     entry: t,
-    analyticsLocations: h
-  }), b = (0, O.Z)({
+    analyticsLocations: b
+  }), _ = (0, S.Z)({
     userId: n.id,
-    onAction: v
+    onAction: E
   }), Z = () => t.content_type === l.s.TOP_GAME ? I.Hs.map((e, n) => (0, s.jsx)(e, {
     entry: t
-  }, "entry-".concat(n))) : _.W.map((e, n) => (0, s.jsx)(e, {
+  }, "entry-".concat(n))) : y.W.map((e, n) => (0, s.jsx)(e, {
     entry: t
   }, "entry-".concat(n)));
-  return null == p ? (0, s.jsxs)(R.Z.Overlay, {
+  return null == h ? (0, s.jsxs)(R.Z.Overlay, {
     className: i()(z.card, r),
-    ref: b,
+    ref: _,
     children: [a, (0, s.jsx)("div", {
       className: z.body,
       children: (0, s.jsxs)("div", {
         className: i()(z.content, m),
-        children: [(0, s.jsx)(y.E, {
+        children: [(0, s.jsx)(v.E, {
           image: u,
-          size: y.J.SIZE_60
+          size: v.J.SIZE_60
         }), (0, s.jsxs)("div", {
           className: z.details,
           children: [(0, s.jsx)("div", {
@@ -124,33 +124,33 @@ function Y(e) {
         })]
       })
     })]
-  }) : (0, s.jsxs)(A.Z, {
-    ref: b,
+  }) : (0, s.jsxs)(k.Z, {
+    ref: _,
     className: r,
-    subsection: U.Tb.RECENT_ACTIVITY,
-    onAction: v,
+    subsection: Y.Tb.RECENT_ACTIVITY,
+    onAction: E,
     onClose: o,
     children: [a, (0, s.jsx)("div", {
       className: z.body,
       children: (0, s.jsxs)("div", {
         className: i()(z.content, m),
-        children: [(0, s.jsx)(y.E, {
+        children: [(0, s.jsx)(v.E, {
           image: u,
-          size: y.J.SIZE_60,
+          size: v.J.SIZE_60,
           className: z.clickableImage,
           onClick: e => {
-            e.stopPropagation(), v({
+            e.stopPropagation(), E({
               action: "PRESS_IMAGE"
-            }), p(e), x !== U.y0.FULL_SIZE && (null == o || o())
+            }), h(e), x !== Y.lY.MODAL && (null == o || o())
           }
         }), (0, s.jsxs)("div", {
           className: z.details,
           children: [(0, s.jsx)(c.P3F, {
             className: z.clickableText,
             onClick: e => {
-              e.stopPropagation(), v({
+              e.stopPropagation(), E({
                 action: "PRESS_TEXT"
-              }), p(e), x !== U.y0.FULL_SIZE && (null == o || o())
+              }), h(e), x !== Y.lY.MODAL && (null == o || o())
             },
             children: (0, s.jsx)(L.Z, {
               variant: "heading-sm/semibold",
@@ -167,7 +167,7 @@ function Y(e) {
   })
 }
 
-function M(e) {
+function F(e) {
   let {
     user: n,
     entry: t,
@@ -175,49 +175,49 @@ function M(e) {
     className: l,
     onClose: r
   } = e, {
-    profileType: o
-  } = (0, k.z)(), x = {
-    [z.fullSize]: o === U.y0.FULL_SIZE
+    themeType: o
+  } = (0, A.z)(), x = {
+    [z.fullSize]: o === Y.lY.MODAL
   }, {
     largeImage: m
-  } = (0, E.rv)({
+  } = (0, p.rv)({
     entry: t
   }), {
     url: u
   } = t.extra, {
     analyticsLocations: j
-  } = (0, d.ZP)(), p = (0, C.Z)({
+  } = (0, d.ZP)(), h = (0, C.Z)({
     display: "recent",
     user: n,
     entry: t,
     analyticsLocations: j
-  }), v = (0, O.Z)({
+  }), E = (0, S.Z)({
     userId: n.id,
-    onAction: p
+    onAction: h
   });
-  return (0, s.jsxs)(A.Z, {
-    ref: v,
+  return (0, s.jsxs)(k.Z, {
+    ref: E,
     className: l,
-    subsection: U.Tb.RECENT_ACTIVITY,
-    onAction: p,
+    subsection: Y.Tb.RECENT_ACTIVITY,
+    onAction: h,
     onClose: r,
     children: [a, (0, s.jsx)("div", {
       className: z.body,
       children: (0, s.jsxs)("div", {
         className: i()(z.content, x),
-        children: [null == u || "" === u ? (0, s.jsx)(y.E, {
+        children: [null == u || "" === u ? (0, s.jsx)(v.E, {
           aspectRatio: "crunchyroll",
           image: m,
-          size: y.J.SIZE_60
-        }) : (0, s.jsx)(y.E, {
+          size: v.J.SIZE_60
+        }) : (0, s.jsx)(v.E, {
           aspectRatio: "crunchyroll",
           image: m,
-          size: y.J.SIZE_60,
+          size: v.J.SIZE_60,
           className: z.clickableImage,
           onClick: e => {
-            e.stopPropagation(), p({
+            e.stopPropagation(), h({
               action: "PRESS_IMAGE"
-            }), (0, h.Y)(u)
+            }), (0, b.Y)(u)
           }
         }), (0, s.jsxs)("div", {
           className: z.details,
@@ -232,9 +232,9 @@ function M(e) {
           }) : (0, s.jsxs)(c.P3F, {
             className: z.clickableText,
             onClick: e => {
-              e.stopPropagation(), p({
+              e.stopPropagation(), h({
                 action: "PRESS_TEXT"
-              }), (0, h.Y)(u)
+              }), (0, b.Y)(u)
             },
             children: [(0, s.jsx)(L.Z, {
               variant: "heading-sm/semibold",
@@ -256,7 +256,7 @@ function M(e) {
   })
 }
 
-function J(e) {
+function D(e) {
   var n, t;
   let {
     user: a,
@@ -265,68 +265,68 @@ function J(e) {
     className: c,
     onClose: o
   } = e, {
-    profileType: x
-  } = (0, k.z)(), m = {
-    [z.fullSize]: x === U.y0.FULL_SIZE
+    themeType: x
+  } = (0, A.z)(), m = {
+    [z.fullSize]: x === Y.lY.MODAL
   }, {
     largeImage: u
-  } = (0, E.rv)({
+  } = (0, p.rv)({
     entry: l
   }), {
     analyticsLocations: j
-  } = (0, d.ZP)(), p = (0, C.Z)({
+  } = (0, d.ZP)(), h = (0, C.Z)({
     display: "recent",
     user: a,
     entry: l,
     analyticsLocations: j
-  }), v = (0, O.Z)({
+  }), E = (0, S.Z)({
     userId: a.id,
-    onAction: p
-  }), _ = null == (n = l.extra.entries[0]) ? void 0 : n.media;
-  return null == _ ? null : (0, s.jsxs)(A.Z, {
-    ref: v,
+    onAction: h
+  }), y = null == (n = l.extra.entries[0]) ? void 0 : n.media;
+  return null == y ? null : (0, s.jsxs)(k.Z, {
+    ref: E,
     className: c,
-    subsection: U.Tb.RECENT_ACTIVITY,
-    onAction: p,
+    subsection: Y.Tb.RECENT_ACTIVITY,
+    onAction: h,
     onClose: o,
     children: [r, (0, s.jsx)("div", {
       className: z.body,
       children: (0, s.jsxs)("div", {
         className: i()(z.content, m),
-        children: [(0, s.jsx)(y.E, {
+        children: [(0, s.jsx)(v.E, {
           image: u,
-          size: y.J.SIZE_60,
+          size: v.J.SIZE_60,
           className: z.clickableImage,
           onClick: e => {
-            e.stopPropagation(), p({
+            e.stopPropagation(), h({
               action: "OPEN_SPOTIFY_ALBUM"
-            }), (0, h.o)(G.Hw.ALBUM, _.external_parent_id)
+            }), (0, b.o)(M.Hw.ALBUM, y.external_parent_id)
           }
         }), (0, s.jsxs)("div", {
           className: z.details,
           children: [(0, s.jsxs)("div", {
             children: [(0, s.jsx)(L.Z, {
               variant: "heading-sm/semibold",
-              text: _.title,
+              text: y.title,
               onClick: () => {
-                p({
+                h({
                   action: "OPEN_SPOTIFY_TRACK"
-                }), (0, h.o)(G.Hw.TRACK, _.external_id)
+                }), (0, b.o)(M.Hw.TRACK, y.external_id)
               }
             }), (0, s.jsx)(L.Z, {
               variant: "text-xs/normal",
-              text: null == (t = _.artists[0]) ? void 0 : t.name,
+              text: null == (t = y.artists[0]) ? void 0 : t.name,
               onClick: () => {
                 var e;
-                p({
+                h({
                   action: "OPEN_SPOTIFY_ARTIST"
-                }), (0, h.o)(G.Hw.ARTIST, null == (e = _.artists[0]) ? void 0 : e.external_id)
+                }), (0, b.o)(M.Hw.ARTIST, null == (e = y.artists[0]) ? void 0 : e.external_id)
               }
             })]
           }), (0, s.jsx)(P.Gk, {
             location: P.Gt.USER_PROFILE,
             className: z.badges,
-            children: b.te.map((e, n) => (0, s.jsx)(e, {
+            children: _.te.map((e, n) => (0, s.jsx)(e, {
               entry: l
             }, "entry-".concat(n)))
           })]
@@ -336,7 +336,7 @@ function J(e) {
   })
 }
 
-function V(e) {
+function J(e) {
   let {
     user: n,
     entry: t,
@@ -344,50 +344,50 @@ function V(e) {
     className: l,
     onClose: c
   } = e, {
-    profileType: p
-  } = (0, k.z)(), h = {
-    [z.fullSize]: p === U.y0.FULL_SIZE
+    themeType: h
+  } = (0, A.z)(), b = {
+    [z.fullSize]: h === Y.lY.MODAL
   }, {
-    largeImage: _
-  } = (0, E.rv)({
+    largeImage: y
+  } = (0, p.rv)({
     entry: t,
     showCoverImage: !1
   }), {
-    analyticsLocations: b,
+    analyticsLocations: _,
     newestAnalyticsLocation: I
   } = (0, d.ZP)(), Z = (0, C.Z)({
     display: "recent",
     user: n,
     entry: t,
-    analyticsLocations: b
-  }), S = (0, O.Z)({
+    analyticsLocations: _
+  }), N = (0, S.Z)({
     userId: n.id,
     onAction: Z
-  }), N = (0, o.bp)() === F.IlC.POPOUT, g = (0, r.e7)([T.Z, f.Z], () => T.Z.getChannel(f.Z.getChannelId())), R = () => {
-    null == c || c(), (null == g ? void 0 : g.isVocal()) ? (0, u.Z)({
+  }), g = (0, o.bp)() === G.IlC.POPOUT, T = (0, r.e7)([O.Z, f.Z], () => O.Z.getChannel(f.Z.getChannelId())), R = () => {
+    null == c || c(), (null == T ? void 0 : T.isVocal()) ? (0, u.Z)({
       context: {
         type: "channel",
-        channel: g
+        channel: T
       },
       analyticsLocation: I,
-      openInPopout: N
+      openInPopout: g
     }) : (0, x.__)(m._b.TEXT, j.Ie.NORMAL, {
       applicationId: t.extra.application_id
     })
   };
-  return (0, s.jsxs)(A.Z, {
-    ref: S,
+  return (0, s.jsxs)(k.Z, {
+    ref: N,
     className: l,
-    subsection: U.Tb.RECENT_ACTIVITY,
+    subsection: Y.Tb.RECENT_ACTIVITY,
     onAction: Z,
     onClose: c,
     children: [a, (0, s.jsx)("div", {
       className: z.body,
       children: (0, s.jsxs)("div", {
-        className: i()(z.content, h),
-        children: [(0, s.jsx)(y.E, {
-          image: _,
-          size: y.J.SIZE_60,
+        className: i()(z.content, b),
+        children: [(0, s.jsx)(v.E, {
+          image: y,
+          size: v.J.SIZE_60,
           className: z.clickableImage,
           onClick: e => {
             e.stopPropagation(), Z({
@@ -409,7 +409,7 @@ function V(e) {
           }), (0, s.jsx)(P.Gk, {
             location: P.Gt.USER_PROFILE,
             className: z.badges,
-            children: v.j.map((e, n) => (0, s.jsx)(e, {
+            children: E.j.map((e, n) => (0, s.jsx)(e, {
               entry: t
             }, "entry-".concat(n)))
           })]
@@ -419,7 +419,7 @@ function V(e) {
   })
 }
 
-function X(e) {
+function V(e) {
   var {
     entry: n
   } = e, t = function(e, n) {
@@ -437,13 +437,13 @@ function X(e) {
     }
     return a
   }(e, ["entry"]);
-  return (0, p.dX)(n) ? (0, s.jsx)(Y, w({
+  return (0, h.dX)(n) ? (0, s.jsx)(U, w({
     entry: n
-  }, t)) : (0, p.y0)(n) ? (0, s.jsx)(M, w({
+  }, t)) : (0, h.y0)(n) ? (0, s.jsx)(F, w({
     entry: n
-  }, t)) : (0, p.dU)(n) ? (0, s.jsx)(J, w({
+  }, t)) : (0, h.dU)(n) ? (0, s.jsx)(D, w({
     entry: n
-  }, t)) : (0, p.Mq)(n) ? (0, s.jsx)(V, w({
+  }, t)) : (0, h.Mq)(n) ? (0, s.jsx)(J, w({
     entry: n
   }, t)) : null
 }

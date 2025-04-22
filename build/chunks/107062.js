@@ -49,11 +49,11 @@ function C(e) {
   }
   return e
 }
-let R = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
+let P = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
     username: t.username,
     activity: e.extra.activity_name
   }),
-  P = (e, t, n) => {
+  R = (e, t, n) => {
     let r = A.t["bES+y8"],
       i = m.ZP.getName(t.guild_id, t.id, n),
       a = e.extra.activity_name;
@@ -97,8 +97,8 @@ let R = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
       primaryColor: U,
       secondaryColor: G
     } = (0, v.Z)(null == L ? void 0 : L.src), B = (0, a.e7)([p.default], () => p.default.locale), {
-      displayParticipants: F,
-      participant1: V,
+      displayParticipants: V,
+      participant1: F,
       participant2: Z,
       numOtherParticipants: H
     } = (0, E.Z)(n, 3), Y = () => {
@@ -110,19 +110,19 @@ let R = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
       let r = H > 0 ? w({
         entry: n,
         channel: t,
-        users: [V, Z],
+        users: [F, Z],
         countOthers: H
-      }) : P(n, t, x);
+      }) : R(n, t, x);
       return (0, y.C4)({
         entry: n,
         applicationImageSrc: null == L ? void 0 : L.src,
-        avatarSrcs: F.map(e => e.getAvatarURL(t.guild_id, 128)),
+        avatarSrcs: V.map(e => e.getAvatarURL(t.guild_id, 128)),
         description: r,
         timestamp: (0, b.yh)(n, B),
         colors: [U, G],
         channelId: e
       })
-    }, [null == L ? void 0 : L.src, t, F, n, B, H, V, Z, U, G, x]), {
+    }, [null == L ? void 0 : L.src, t, V, n, B, H, F, Z, U, G, x]), {
       enabled: K
     } = s.c.useExperiment({
       location: "MemberListAcitivtyContentPopout"
@@ -170,7 +170,7 @@ let R = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
           user: x,
           channel: t,
           generateReactionImage: W,
-          reactionImageAltText: R(n, x),
+          reactionImageAltText: P(n, x),
           entry: n,
           buttons: ee
         })

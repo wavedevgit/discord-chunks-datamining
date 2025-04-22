@@ -48,13 +48,13 @@ o("replace", function(e, t, n) {
     var p = c(i);
     p || (i = _(i));
     var m = o.global;
-    m && (P = o.unicode, o.lastIndex = 0);
+    m && (R = o.unicode, o.lastIndex = 0);
     for (var b = []; null !== (D = E(o, s)) && (I(b, D), m);) {
       ;
-      "" === _(D[0]) && (o.lastIndex = h(s, f(o.lastIndex), P))
+      "" === _(D[0]) && (o.lastIndex = h(s, f(o.lastIndex), R))
     }
-    for (var N = "", C = 0, R = 0; R < b.length; R++) {
-      for (var P, w, D = b[R], L = _(D[0]), x = y(v(d(D.index), s.length), 0), M = [], k = 1; k < D.length; k++) I(M, A(D[k]));
+    for (var N = "", C = 0, P = 0; P < b.length; P++) {
+      for (var R, w, D = b[P], L = _(D[0]), x = y(v(d(D.index), s.length), 0), M = [], k = 1; k < D.length; k++) I(M, A(D[k]));
       var j = D.groups;
       if (p) {
         var U = O([L], M, x, s);

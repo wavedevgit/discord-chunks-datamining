@@ -85,7 +85,7 @@ function C(e) {
   return y(t).updateMembersByMemberIds([n])
 }
 
-function R(e) {
+function P(e) {
   let {
     guildId: t,
     user: n
@@ -93,7 +93,7 @@ function R(e) {
   return y(t).removeMember(n.id)
 }
 
-function P(e) {
+function R(e) {
   let t = !1,
     n = y(e.guildId);
   return "GUILD_ROLE_DELETE" === e.type && (t = n.removeRoleFromSearchState(e.roleId)), n.rebuildAllMembers() || t
@@ -212,7 +212,7 @@ function B(e) {
   return U(e)
 }
 
-function F(e) {
+function V(e) {
   let {
     guildMembers: t
   } = e, n = !1;
@@ -222,7 +222,7 @@ function F(e) {
   }), n
 }
 
-function V(e) {
+function F(e) {
   let {
     guildId: t,
     members: n
@@ -396,8 +396,8 @@ g(X, "displayName", "MemberSafetyStore");
 let J = new X(a.Z, {
   CONNECTION_OPEN: G,
   CONNECTION_OPEN_SUPPLEMENTAL: B,
-  LOCAL_MESSAGES_LOADED: V,
-  CACHE_LOADED: F,
+  LOCAL_MESSAGES_LOADED: F,
+  CACHE_LOADED: V,
   PASSIVE_UPDATE_V2: Z,
   GUILD_CREATE: I,
   GUILD_DELETE: S,
@@ -405,9 +405,9 @@ let J = new X(a.Z, {
   GUILD_MEMBER_ADD: T,
   GUILD_MEMBER_UPDATE: T,
   GUILD_MEMBER_UPDATE_LOCAL: C,
-  GUILD_MEMBER_REMOVE: R,
-  GUILD_ROLE_UPDATE: P,
-  GUILD_ROLE_DELETE: P,
+  GUILD_MEMBER_REMOVE: P,
+  GUILD_ROLE_UPDATE: R,
+  GUILD_ROLE_DELETE: R,
   GUILD_MEMBER_PROFILE_UPDATE: k,
   GUILD_ROLE_MEMBER_REMOVE: w,
   GUILD_ROLE_MEMBER_ADD: w,

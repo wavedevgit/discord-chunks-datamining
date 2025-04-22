@@ -31,7 +31,7 @@ var r = n(512722),
   N = n(590433),
   C = n(388032);
 
-function R(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -40,14 +40,14 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 
-function P(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      R(e, t, n[t])
+      P(e, t, n[t])
     })
   }
   return e
@@ -578,7 +578,7 @@ let L = n(227419).Z,
       },
       required: !0,
       get choices() {
-        return (0, N.tr)().map(e => D(P({}, e), {
+        return (0, N.tr)().map(e => D(R({}, e), {
           name: e.label,
           displayName: e.label
         }))

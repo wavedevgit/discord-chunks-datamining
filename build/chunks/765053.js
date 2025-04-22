@@ -150,14 +150,14 @@ var m = {
       return e
     }, []).reverse()
   },
-  R = function(e, t) {
+  P = function(e, t) {
     if (Array.isArray(e) && e.length) {
       for (var n = 0; n < e.length; n += 1)
         if (e[n][t]) return !0
     }
     return !1
   },
-  P = function(e) {
+  R = function(e) {
     return Array.isArray(e) ? e.join("") : e
   },
   w = function(e, t) {
@@ -218,7 +218,7 @@ var m = {
           }, toString: function() {
             return function(e, t, n, r) {
               var i = M(n),
-                a = P(t);
+                a = R(t);
               return i ? "<" + e + ' data-rh="true" ' + i + ">" + x(a, r) + "</" + e + ">" : "<" + e + ' data-rh="true">' + x(a, r) + "</" + e + ">"
             }(e, t.title, t.titleAttributes, n)
           }
@@ -314,7 +314,7 @@ var m = {
     }
   },
   B = [],
-  F = function(e, t) {
+  V = function(e, t) {
     var n = this;
     void 0 === t && (t = "undefined" != typeof document), this.instances = [], this.value = {
       setHelmet: function(e) {
@@ -346,7 +346,7 @@ var m = {
       titleAttributes: {}
     }))
   },
-  V = r.createContext({}),
+  F = r.createContext({}),
   Z = a().shape({
     setHelmet: a().func,
     helmetInstances: a().shape({
@@ -359,10 +359,10 @@ var m = {
   Y = function(e) {
     function t(n) {
       var r;
-      return (r = e.call(this, n) || this).helmetData = new F(r.props.context, t.canUseDOM), r
+      return (r = e.call(this, n) || this).helmetData = new V(r.props.context, t.canUseDOM), r
     }
     return _(t, e), t.prototype.render = function() {
-      return r.createElement(V.Provider, {
+      return r.createElement(F.Provider, {
         value: this.helmetData.value
       }, this.props.children)
     }, t
@@ -421,7 +421,7 @@ var W = function(e, t) {
       d = e.titleAttributes;
     K(m.BODY, e.bodyAttributes), K(m.HTML, r),
       function(e, t) {
-        void 0 !== e && document.title !== e && (document.title = P(e)), K(m.TITLE, t)
+        void 0 !== e && document.title !== e && (document.title = R(e)), K(m.TITLE, t)
       }(u, d);
     var f = {
         baseTag: W(m.BASE, n),
@@ -475,7 +475,7 @@ var W = function(e, t) {
           styleTags: C(m.STYLE, ["cssText"], e),
           title: S(e),
           titleAttributes: A("titleAttributes", e),
-          prioritizeSeoTags: R(e, "prioritizeSeoTags")
+          prioritizeSeoTags: P(e, "prioritizeSeoTags")
         };
       Y.canUseDOM ? (t = a, q && cancelAnimationFrame(q), t.defer ? q = requestAnimationFrame(function() {
         z(t, function() {
@@ -595,10 +595,10 @@ var X = ["children"],
         n = h(e, J),
         i = f({}, n),
         a = n.helmetData;
-      return t && (i = this.mapChildrenToProps(t, i)), !a || a instanceof F || (a = new F(a.context, a.instances)), a ? r.createElement(Q, f({}, i, {
+      return t && (i = this.mapChildrenToProps(t, i)), !a || a instanceof V || (a = new V(a.context, a.instances)), a ? r.createElement(Q, f({}, i, {
         context: a.value,
         helmetData: void 0
-      })) : r.createElement(V.Consumer, null, function(e) {
+      })) : r.createElement(F.Consumer, null, function(e) {
         return r.createElement(Q, f({}, i, {
           context: e
         }))

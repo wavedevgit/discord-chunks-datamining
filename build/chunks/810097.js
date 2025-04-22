@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => P,
+  ZP: () => R,
   _1: () => A,
   jd: () => N
 }), n(314940), n(388685);
@@ -70,13 +70,13 @@ let A = 2700,
     [b.n_.STATUS]: () => y.intl.string(y.t.TKdBCw),
     [b.n_.ACTIVITY]: () => y.intl.string(y.t.bSe71N)
   },
-  R = {
+  P = {
     [b.n_.AVATAR]: () => y.intl.string(y.t.xvN0fX),
     [b.n_.STATUS]: () => y.intl.string(y.t["C/vzS0"]),
     [b.n_.ACTIVITY]: () => y.intl.string(y.t.ObfsSk)
   };
 
-function P(e) {
+function R(e) {
   let {
     user: t,
     sourceType: n,
@@ -85,20 +85,20 @@ function P(e) {
     interactionSourceId: S,
     targetRef: A,
     onAction: N,
-    renderMoreButtonPopout: P
+    renderMoreButtonPopout: R
   } = e, w = i.useRef(null), D = (0, c.e7)([p.default], () => p.default.getId() === t.id), L = (0, h.Z)(t.id), {
-    profileType: x
+    themeType: x
   } = (0, E.z)(), {
     onInteraction: M,
     onInteractionPopoutTargetRefChange: k
   } = (0, g.Xo)(), {
     live: j,
     stream: U
-  } = (0, m.Z)(t.id), G = !a && x !== b.y0.FULL_SIZE && (0, l.EQ)(n).with(b.n_.STATUS, () => 0 === j.length && null == U).with(b.n_.ACTIVITY, () => !0).with(b.n_.AVATAR, () => !1).exhaustive(), [B, F] = i.useState(G);
+  } = (0, m.Z)(t.id), G = !a && x !== b.lY.MODAL && (0, l.EQ)(n).with(b.n_.STATUS, () => 0 === j.length && null == U).with(b.n_.ACTIVITY, () => !0).with(b.n_.AVATAR, () => !1).exhaustive(), [B, V] = i.useState(G);
   if (i.useEffect(() => {
-      B && !G && F(!1)
+      B && !G && V(!1)
     }, [B, G]), t.bot || D || !L) return null;
-  let V = () => {
+  let F = () => {
       k(A), n === b.n_.AVATAR ? N({
         action: "PRESS_REACT_AVATAR"
       }) : n === b.n_.STATUS ? N({
@@ -109,7 +109,7 @@ function P(e) {
         interactionType: b.P.REACT,
         interactionSource: n,
         interactionSourceId: S
-      }), x === b.y0.BITE_SIZE && (0, _.EW)(u.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK)
+      }), x === b.lY.POPOUT && (0, _.EW)(u.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK)
     },
     Z = () => {
       k(A), n === b.n_.AVATAR ? N({
@@ -122,10 +122,10 @@ function P(e) {
         interactionType: b.P.REPLY,
         interactionSource: n,
         interactionSourceId: S
-      }), x === b.y0.BITE_SIZE && (0, _.EW)(u.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK)
+      }), x === b.lY.POPOUT && (0, _.EW)(u.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK)
     },
     H = e => {
-      e.animationName === (0, s.get)(v, "fadeInAndOut") && F(!1)
+      e.animationName === (0, s.get)(v, "fadeInAndOut") && V(!1)
     };
   return (0, r.jsxs)(f.ZP, {
     className: o()(v.popover, {
@@ -144,7 +144,7 @@ function P(e) {
       delay: 0,
       "aria-label": !1,
       children: (0, r.jsx)(f.zx, {
-        onClick: V,
+        onClick: F,
         className: v.button,
         "aria-label": C[n](),
         "aria-haspopup": "dialog",
@@ -162,14 +162,14 @@ function P(e) {
       children: (0, r.jsx)(f.zx, {
         onClick: Z,
         className: v.button,
-        "aria-label": R[n](),
+        "aria-label": P[n](),
         "aria-haspopup": "dialog",
         children: (0, r.jsx)(d.n$P, {
           size: "xs",
           className: v.icon
         })
       })
-    }), null == P ? void 0 : P(e => {
+    }), null == R ? void 0 : R(e => {
       let t = () => {
         var t;
         k(w), null == (t = e.onClick) || t.call(e)

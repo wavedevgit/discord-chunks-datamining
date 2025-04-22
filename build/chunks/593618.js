@@ -30,8 +30,8 @@ var r = n(200651),
   A = n(517334),
   N = n(344185),
   C = n(199902),
-  R = n(984933),
-  P = n(699516),
+  P = n(984933),
+  R = n(699516),
   w = n(9156),
   D = n(594174),
   L = n(938475),
@@ -64,7 +64,7 @@ function G(e) {
 
 function B(e, t) {
   if (null == e) return {};
-  var n, r, i = F(e, t);
+  var n, r, i = V(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -72,7 +72,7 @@ function B(e, t) {
   return i
 }
 
-function F(e, t) {
+function V(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -80,9 +80,9 @@ function F(e, t) {
   return i
 }
 
-function V(e) {
+function F(e) {
   let t = e.id,
-    n = (0, c.Wu)([R.ZP, N.Z], () => [...R.ZP.getChannels(t)[R.Zb].filter(e => {
+    n = (0, c.Wu)([P.ZP, N.Z], () => [...P.ZP.getChannels(t)[P.Zb].filter(e => {
       let {
         channel: t
       } = e;
@@ -96,7 +96,7 @@ function V(e) {
     r = (0, A.ZP)(t),
     a = i.useMemo(() => r.map(e => e.id), [r]),
     o = (0, c.e7)([L.ZP], () => L.ZP.getVoiceStates(t), [t]),
-    s = (0, c.Wu)([P.Z], () => P.Z.getBlockedOrIgnoredIDs()),
+    s = (0, c.Wu)([R.Z], () => R.Z.getBlockedOrIgnoredIDs()),
     u = l().flatMap(n, t => {
       var n;
       if (t === e.afkChannelId) return [];
@@ -221,7 +221,7 @@ function W(e) {
     numStageListeners: l,
     streamUsersToShow: f,
     embeddedActivitiesUsers: _
-  } = V(t), p = Z(u.gj8, a, n), h = H(n, s, l), m = Z(u.hGI, f, n), g = Z(i ? u.iWm : u.nG3, _, n), {
+  } = F(t), p = Z(u.gj8, a, n), h = H(n, s, l), m = Z(u.hGI, f, n), g = Z(i ? u.iWm : u.nG3, _, n), {
     isMuted: E,
     muteConfig: b
   } = (0, c.cj)([w.ZP], () => ({

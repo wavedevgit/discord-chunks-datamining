@@ -50,7 +50,7 @@ function C(e) {
   return e
 }
 
-function R(e, t) {
+function P(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -61,8 +61,8 @@ function R(e, t) {
   return n
 }
 
-function P(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+function R(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -242,7 +242,7 @@ class j {
       screentype_fullscreen_duration: r[l.Jx.FULLSCREEN],
       screentype_minimized_duration: r[l.Jx.MINIMIZED]
     };
-    return P(C({}, c), {
+    return R(C({}, c), {
       screentype_global_supported_duration: c.screentype_windowed_duration + c.screentype_maximized_duration + c.screentype_borderless_fullscreen_duration,
       screentype_global_unsupported_duration: c.screentype_fullscreen_duration,
       screentype_initial: l.Jx[this.game.fullscreenType],
@@ -314,7 +314,7 @@ class G {
       original_method: e
     }, a);
     let o = n.any_other_method;
-    return C(P(C({}, n), {
+    return C(R(C({}, n), {
       any_other_method: e !== o ? e : o
     }), a)
   }
@@ -385,7 +385,7 @@ class G {
       O = null != v.any_other_method ? s.gl[v.any_other_method] : null,
       I = b.enabledLegacy || b.enabledOOP;
     return {
-      usage: P(C(P(C({
+      usage: R(C(R(C({
         event_uuid: this.uuid,
         overlay_usage_stats_version: w
       }, this.notificationAnalytics.getAnalytics(), this.widgetAnalytics.getAnalytics(), this.screenAnalytics.getAnalytics(), m), {
@@ -474,14 +474,14 @@ function B(e) {
   for (let t of e.removed) G.destroy(t), L.verbose("handleRunningGamesChange removed", t)
 }
 
-function F(e) {
+function V(e) {
   if (e.pid === v.DEV_PID) return;
   let t = G.getByPid(e.pid);
   if (L.verbose("OVERLAY_SET_INPUT_LOCKED", t), null == t) return void L.error("OVERLAY_SET_INPUT_LOCKED: Unable to find game", e, G.debug);
   t.setLocked(e.locked)
 }
 
-function V(e) {
+function F(e) {
   var t;
   if (L.verbose("OVERLAY_NOTIFICATION_EVENT", e), null == e.gameName && null == e.gameId) return;
   let n = G.getByName(null != (t = e.gameName) ? t : e.gameId);
@@ -617,8 +617,8 @@ class et extends c.Z {
       MESSAGE_CREATE: ee.handleMessageCreate
     } : {
       OVERLAY_FOCUSED: H,
-      OVERLAY_NOTIFICATION_EVENT: V,
-      OVERLAY_SET_INPUT_LOCKED: F,
+      OVERLAY_NOTIFICATION_EVENT: F,
+      OVERLAY_SET_INPUT_LOCKED: V,
       OVERLAY_WIDGET_CHANGED: Z,
       OVERLAY_MESSAGE_EVENT_ACTION: W,
       RUNNING_GAMES_CHANGE: B,

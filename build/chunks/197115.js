@@ -88,8 +88,8 @@ let N = function(e) {
     className: A,
     isTrialCTA: N,
     buttonText: C,
-    buttonTextClassName: R,
-    subscribeButtonText: P,
+    buttonTextClassName: P,
+    subscribeButtonText: R,
     iconClassName: w,
     postSuccessGuild: D,
     onSubscribeModalClose: L,
@@ -100,8 +100,8 @@ let N = function(e) {
     giftMessage: U,
     shinyButtonClassName: G,
     showGradient: B = !1,
-    confirmationFooter: F,
-    paymentModalBanner: V
+    confirmationFooter: V,
+    paymentModalBanner: F
   } = e, Z = T(e, ["isGift", "subscriptionTier", "onClick", "size", "className", "isTrialCTA", "buttonText", "buttonTextClassName", "subscribeButtonText", "iconClassName", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "showIcon", "disableShine", "applicationId", "giftMessage", "shinyButtonClassName", "showGradient", "confirmationFooter", "paymentModalBanner"]);
   let H = (0, o.e7)([_.default], () => _.default.getCurrentUser()),
     Y = (0, o.e7)([h.Z], () => h.Z.isFocused()),
@@ -116,7 +116,7 @@ let N = function(e) {
       isTrialCTA: N,
       isGift: t,
       buttonTextOverride: C,
-      defaultTextOverride: P
+      defaultTextOverride: R
     }),
     X = e => {
       var a;
@@ -169,8 +169,8 @@ let N = function(e) {
         onClose: L,
         applicationId: j,
         giftMessage: U,
-        confirmationFooter: F,
-        paymentModalBanner: V
+        confirmationFooter: V,
+        paymentModalBanner: F
       })
     };
   if (N) return (0, r.jsxs)(s.zxk, S(O({
@@ -185,7 +185,7 @@ let N = function(e) {
       color: "currentColor",
       className: y.premiumIcon
     }), (0, r.jsx)("span", {
-      className: a()(y.buttonText, R),
+      className: a()(y.buttonText, P),
       children: Q.buttonText
     })]
   }));
@@ -201,7 +201,7 @@ let N = function(e) {
       color: "currentColor",
       className: y.giftIcon
     }), (0, r.jsx)("span", {
-      className: a()(y.buttonText, R),
+      className: a()(y.buttonText, P),
       children: Q.buttonText
     })]
   }));
@@ -225,7 +225,7 @@ let N = function(e) {
         color: "currentColor",
         className: a()(y.premiumIcon, w)
       }), (0, r.jsx)("span", {
-        className: a()(y.buttonText, R),
+        className: a()(y.buttonText, P),
         children: Q.buttonText
       })]
     }))

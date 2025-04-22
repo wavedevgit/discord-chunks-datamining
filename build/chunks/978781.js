@@ -30,8 +30,8 @@ var r = n(200651),
   A = n(727939),
   N = n(981631),
   C = n(921944),
-  R = n(474936),
-  P = n(388032),
+  P = n(474936),
+  R = n(388032),
   w = n(16534);
 
 function D(e, t, n) {
@@ -94,9 +94,9 @@ function j(e) {
     isCoachmark: l
   }).with({
     isCoachmark: !0
-  }, () => P.intl.string(P.t.cpT0Cg)).with({
+  }, () => R.intl.string(R.t.cpT0Cg)).with({
     isPreview: !0
-  }, () => P.intl.string(P.t["dqH+qq"])).otherwise(() => P.intl.string(P.t.Olc2Ky)), h = i.useCallback(() => 1 === t ? void(0, c.ZDy)(async () => {
+  }, () => R.intl.string(R.t["dqH+qq"])).otherwise(() => R.intl.string(R.t.Olc2Ky)), h = i.useCallback(() => 1 === t ? void(0, c.ZDy)(async () => {
     let {
       default: e
     } = await n.e("69052").then(n.bind(n, 184250));
@@ -128,7 +128,7 @@ function j(e) {
       }), (0, r.jsx)(c.Text, {
         className: w.footerText,
         variant: "text-sm/medium",
-        children: P.intl.format(P.t.x2dQxM, {
+        children: R.intl.format(R.t.x2dQxM, {
           onClick: h
         })
       })]
@@ -147,10 +147,10 @@ function j(e) {
         })
       }), a && (0, r.jsx)(S.Z, {
         className: w.footerButton,
-        subscriptionTier: R.Si.TIER_2,
+        subscriptionTier: P.Si.TIER_2,
         showGradient: !0,
         fullWidth: !0,
-        buttonText: P.intl.string(P.t.pj0XBA)
+        buttonText: R.intl.string(R.t.pj0XBA)
       })]
     })]
   })
@@ -162,14 +162,14 @@ function U(e) {
     markAsDismissed: n,
     isCoachmark: a
   } = e, [o, s] = i.useState(t), d = i.useMemo(() => [{
-    name: P.intl.string(P.t.Ksh3io),
+    name: R.intl.string(R.t.Ksh3io),
     value: 0
   }, {
-    name: P.intl.string(P.t.RPh2oq),
+    name: R.intl.string(R.t.RPh2oq),
     value: 1
   }], []), _ = (0, l.e7)([b.Z], () => b.Z.isPreview), m = (0, l.e7)([h.Z], () => h.Z.isUpsellPreview), g = _ || m, v = i.useMemo(() => T.Z.theme, []), O = (0, y.J)(), I = i.useCallback(() => {
     _ && O(), m && (0, p.O7)()
-  }, [_, m, O]), S = (0, f.Z)(null, g ? I : N.dG4), R = i.useCallback(() => {
+  }, [_, m, O]), S = (0, f.Z)(null, g ? I : N.dG4), P = i.useCallback(() => {
     g && (0, u.ZI)({
       theme: v
     }), (0, p.G8)(), (0, E.Mo)(), I(), null == n || n(C.L.DISMISS)
@@ -185,12 +185,12 @@ function U(e) {
           className: w.headerContainer,
           children: [(0, r.jsx)(c.X6q, {
             variant: "heading-lg/extrabold",
-            children: P.intl.string(P.t.viGN6e)
+            children: R.intl.string(R.t.viGN6e)
           }), (0, r.jsx)(c.olH, {
             className: w.closeContainer,
             innerClassName: w.closeInner,
             withCircleBackground: !0,
-            onClick: R
+            onClick: P
           })]
         }), (0, r.jsx)(c.sY7, {
           options: d,
@@ -211,7 +211,7 @@ function U(e) {
       }), (0, r.jsx)(j, {
         tab: o,
         isPreview: g,
-        onClose: R,
+        onClose: P,
         isCoachmark: !1
       })]
     })

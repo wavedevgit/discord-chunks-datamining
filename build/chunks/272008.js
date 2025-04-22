@@ -8,7 +8,7 @@ n.d(t, {
   OR: () => x,
   QB: () => A,
   T0: () => D,
-  Wf: () => P,
+  Wf: () => R,
   cT: () => U,
   eT: () => w,
   gU: () => B,
@@ -16,7 +16,7 @@ n.d(t, {
   is: () => O,
   lL: () => G,
   m0: () => S,
-  nE: () => R,
+  nE: () => P,
   pf: () => N,
   qm: () => k,
   w: () => j,
@@ -285,13 +285,13 @@ async function C(e, t) {
   }
 }
 
-function R(e) {
+function P(e) {
   a.Z.dispatch({
     type: "QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE",
     streamKey: e
   })
 }
-async function P(e) {
+async function R(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1;
   try {
     let n = await i.tn.post({

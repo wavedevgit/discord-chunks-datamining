@@ -30,8 +30,8 @@ var i = n(120356),
   A = n(938475),
   N = n(960870),
   C = n(139793),
-  R = n(652853),
-  P = n(336383),
+  P = n(652853),
+  R = n(336383),
   w = n(194811),
   D = n(373826),
   L = n(315324),
@@ -42,8 +42,8 @@ var i = n(120356),
   U = n(981631),
   G = n(388032),
   B = n(227832),
-  F = n(162509),
-  V = n(924482),
+  V = n(162509),
+  F = n(924482),
   Z = n(774797);
 
 function H(e) {
@@ -54,11 +54,11 @@ function H(e) {
     className: H,
     onClose: Y
   } = e, {
-    profileType: W,
+    themeType: W,
     theme: K
-  } = (0, R.z)(), z = {
-    [F.fullSize]: W === j.y0.FULL_SIZE,
-    [B.fullSize]: W === j.y0.FULL_SIZE
+  } = (0, P.z)(), z = {
+    [V.fullSize]: W === j.lY.MODAL,
+    [B.fullSize]: W === j.lY.MODAL
   }, q = (0, o.e7)([I.Z], () => I.Z.getGuild(null == i ? void 0 : i.guildId)), Q = (0, o.e7)([O.Z], () => O.Z.getChannel(null == i ? void 0 : i.channelId)), X = (0, o.Wu)([A.ZP], () => null != Q ? A.ZP.getVoiceStatesForChannel(Q).map(e => {
     let {
       user: t
@@ -81,7 +81,7 @@ function H(e) {
   } = (0, g.Z)(null == i ? void 0 : i.guildId, null == i ? void 0 : i.channelId, null == i ? void 0 : i.ownerId), [ei, ea] = (0, E.wq)(Q), eo = (0, o.e7)([S.Z], () => null != Q && S.Z.canBasicChannel(U.S7T.CONNECT, Q)), es = (0, u.Z)(er ? null : en), el = er || null == en ? es : en;
   if (null == q || null == Q || !1 === i.discoverable) return null;
   let ec = () => {
-      let e = a()(F.preview, z),
+      let e = a()(V.preview, z),
         t = e => {
           e.stopPropagation(), ee({
             action: "PRESS_IMAGE"
@@ -91,16 +91,16 @@ function H(e) {
         className: e,
         children: (0, r.jsx)(s.$jN, {})
       }) : null == el ? (0, r.jsxs)(s.P3F, {
-        className: a()(e, F.overlay, {
-          [F.clickable]: ei
+        className: a()(e, V.overlay, {
+          [V.clickable]: ei
         }),
         onClick: ei ? t : void 0,
         children: [(0, r.jsx)("img", {
           alt: "",
-          src: K === U.BRd.LIGHT ? Z : V
-        }), W !== j.y0.FULL_SIZE && (0, r.jsxs)(r.Fragment, {
+          src: K === U.BRd.LIGHT ? Z : F
+        }), W !== j.lY.MODAL && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.Text, {
-            className: F.overlayText,
+            className: V.overlayText,
             variant: "text-sm/medium",
             color: "always-white",
             children: (0, E.P9)(ea)
@@ -110,30 +110,30 @@ function H(e) {
           })]
         })]
       }) : (0, r.jsxs)(s.P3F, {
-        className: a()(e, F.overlay, {
-          [F.clickable]: ei
+        className: a()(e, V.overlay, {
+          [V.clickable]: ei
         }),
         onClick: ei ? t : void 0,
         children: [(0, r.jsx)("img", {
           alt: "",
           src: el,
-          className: F.image
-        }), W !== j.y0.FULL_SIZE && (0, r.jsxs)(r.Fragment, {
+          className: V.image
+        }), W !== j.lY.MODAL && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.Text, {
-            className: F.overlayText,
+            className: V.overlayText,
             variant: "text-sm/medium",
             color: "always-white",
             children: (0, E.P9)(ea)
           }), (0, r.jsx)(s.gw7, {
             size: "xs",
             color: "currentColor",
-            className: F.clyde
+            className: V.clyde
           })]
         })]
       })
     },
     eu = () => {
-      if (W !== j.y0.FULL_SIZE) return null;
+      if (W !== j.lY.MODAL) return null;
       let e = e => {
           e.stopPropagation(), null == ee || ee({
             action: "OPEN_VOICE_CHANNEL"
@@ -185,7 +185,7 @@ function H(e) {
         })]
       })
     },
-    ed = () => W === j.y0.FULL_SIZE ? null : (0, r.jsx)(L.Z, {
+    ed = () => W === j.lY.MODAL ? null : (0, r.jsx)(L.Z, {
       user: t,
       guild: q,
       channel: Q,
@@ -202,7 +202,7 @@ function H(e) {
     });
   return (0, r.jsx)(p.Gt, {
     value: $,
-    children: (0, r.jsxs)(P.Z, {
+    children: (0, r.jsxs)(R.Z, {
       ref: et,
       className: H,
       onAction: ee,
@@ -223,9 +223,9 @@ function H(e) {
         className: B.body,
         children: [(0, r.jsxs)("div", {
           className: a()(B.content, z),
-          children: [ec(), eu(), W === j.y0.FULL_SIZE && ef()]
+          children: [ec(), eu(), W === j.lY.MODAL && ef()]
         }), ed()]
-      }), W !== j.y0.FULL_SIZE && ef()]
+      }), W !== j.lY.MODAL && ef()]
     })
   })
 }

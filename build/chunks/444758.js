@@ -108,7 +108,7 @@ function C(e, t) {
   }
 }
 
-function R(e) {
+function P(e) {
   return {
     type: "channel",
     content: [D("")],
@@ -116,7 +116,7 @@ function R(e) {
   }
 }
 
-function P(e, t) {
+function R(e, t) {
   var n;
   let r = c.Z.getChannel(e),
     i = (0, s.$)(e, c.Z, a.Z, d.Z).isSubscriptionGated,
@@ -200,7 +200,7 @@ function M(e, t, n, r, i) {
 function k(e, t, n, r) {
   let i = A(e),
     a = N(t),
-    o = R(t.isForumPost);
+    o = P(t.isForumPost);
   if (n && r) {
     if (t.isForumPost) {
       let e = c.Z.getChannel(t.parentId);
@@ -248,7 +248,7 @@ function j(e, t, n, r) {
     if (e.isDm) return S(O({}, i), {
       guildId: b.ME,
       inContent: [N(e)],
-      content: [R(!1)]
+      content: [P(!1)]
     });
     else return L(r);
   let o = e.guildId === n;
@@ -264,7 +264,7 @@ let U = {
         type: "channelMention",
         id: r
       };
-      let i = P(r, n.mentionChannels);
+      let i = R(r, n.mentionChannels);
       return null == i ? M(null, r, null, T(n.channelId)) : j(i, null, T(n.channelId))
     }
   },
@@ -283,7 +283,7 @@ let U = {
           a = e[2],
           o = e[3];
         if (null == a) return w(r);
-        let s = P(a, null);
+        let s = R(a, null);
         return null == s ? M(i, a, o, T(n.channelId), r) : j(s, o, T(n.channelId), r)
       }
     },
@@ -298,9 +298,9 @@ let U = {
           o = e[3],
           s = e[4];
         if (null == a || null == o) return w(r);
-        let l = P(o, null);
+        let l = R(o, null);
         if (null != l) return j(l, s, T(n.channelId), r);
-        let c = P(a, null);
+        let c = R(a, null);
         return null != c ? j(c, s, T(n.channelId), r) : M(i, a, s, T(n.channelId), r)
       }
     }

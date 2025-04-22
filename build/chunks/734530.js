@@ -218,20 +218,20 @@
         };
       return u.every(_)
     },
-    R = function(e, t, n) {
+    P = function(e, t, n) {
       return S(e) ? Object.keys(e).reduce(function(i, o) {
         var s = !S(t) || !C(e[o], t[o]);
         return n.includes(o) ? (s && console.warn("Unsupported prop change: options.".concat(o, " is not a mutable property.")), i) : s ? r(r({}, i || {}), {}, a({}, o, e[o])) : i
       }, null) : null
     },
-    P = "Invalid prop `stripe` supplied to `Elements`. We recommend using the `loadStripe` utility from `@stripe/stripe-js`. See https://stripe.com/docs/stripe-js/react#elements-props-stripe for details.",
+    R = "Invalid prop `stripe` supplied to `Elements`. We recommend using the `loadStripe` utility from `@stripe/stripe-js`. See https://stripe.com/docs/stripe-js/react#elements-props-stripe for details.",
     w = function(e) {
-      var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : P;
+      var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : R;
       if (null === e || A(e)) return e;
       throw Error(t)
     },
     D = function(e) {
-      var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : P;
+      var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : R;
       if (T(e)) return {
         tag: "async",
         stripePromise: Promise.resolve(e).then(function(e) {
@@ -301,7 +301,7 @@
       var d = I(r);
       return t.useEffect(function() {
         if (s.elements) {
-          var e = R(r, d, ["clientSecret", "fonts"]);
+          var e = P(r, d, ["clientSecret", "fonts"]);
           e && s.elements.update(e)
         }
       }, [r, d, s.elements]), t.useEffect(function() {
@@ -327,9 +327,9 @@
     children: v.func.isRequired
   };
   var B = ["on", "session"],
-    F = t.createContext(null);
-  F.displayName = "CustomCheckoutSdkContext";
-  var V = function(e, t) {
+    V = t.createContext(null);
+  V.displayName = "CustomCheckoutSdkContext";
+  var F = function(e, t) {
       if (!e) throw Error("Could not find CustomCheckoutProvider context; You need to wrap the part of your app that ".concat(t, " in an <CustomCheckoutProvider> provider."));
       return e
     },
@@ -400,7 +400,7 @@
       var g = t.useMemo(function() {
         return H(d.customCheckoutSdk, s)
       }, [d.customCheckoutSdk, s]);
-      return d.customCheckoutSdk ? t.createElement(F.Provider, {
+      return d.customCheckoutSdk ? t.createElement(V.Provider, {
         value: d
       }, t.createElement(Z.Provider, {
         value: g
@@ -414,13 +414,13 @@
     }).isRequired
   };
   var K = function(e) {
-      return V(t.useContext(F), e)
+      return F(t.useContext(V), e)
     },
     z = function(e) {
-      var n = t.useContext(F),
+      var n = t.useContext(V),
         r = t.useContext(x);
       if (n && r) throw Error("You cannot wrap the part of your app that ".concat(e, " in both <CustomCheckoutProvider> and <Elements> providers."));
-      return n ? V(n, e) : M(r, e)
+      return n ? F(n, e) : M(r, e)
     },
     q = function() {
       K("calls useCustomCheckout()");
@@ -455,13 +455,13 @@
             A = "elements" in T ? T.elements : null,
             N = "customCheckoutSdk" in T ? T.customCheckoutSdk : null,
             C = l(t.useState(null), 2),
-            P = C[0],
+            R = C[0],
             w = C[1],
             D = t.useRef(null),
             L = t.useRef(null);
-          O(P, "blur", u), O(P, "focus", d), O(P, "escape", p), O(P, "click", h), O(P, "loaderror", m), O(P, "loaderstart", g), O(P, "networkschange", E), O(P, "confirm", b), O(P, "cancel", y), O(P, "shippingaddresschange", v), O(P, "shippingratechange", S), O(P, "change", _), f && (i = "expressCheckout" === e ? f : function() {
-            f(P)
-          }), O(P, "ready", i), t.useLayoutEffect(function() {
+          O(R, "blur", u), O(R, "focus", d), O(R, "escape", p), O(R, "click", h), O(R, "loaderror", m), O(R, "loaderstart", g), O(R, "networkschange", E), O(R, "confirm", b), O(R, "cancel", y), O(R, "shippingaddresschange", v), O(R, "shippingratechange", S), O(R, "change", _), f && (i = "expressCheckout" === e ? f : function() {
+            f(R)
+          }), O(R, "ready", i), t.useLayoutEffect(function() {
             if (null === D.current && null !== L.current && (A || N)) {
               var t = null;
               N ? t = N.createElement(e, c) : A && (t = A.create(e, c)), D.current = t, w(t), t && t.mount(L.current)
@@ -470,7 +470,7 @@
           var x = I(c);
           return t.useEffect(function() {
             if (D.current) {
-              var e = R(c, x, ["paymentRequest"]);
+              var e = P(c, x, ["paymentRequest"]);
               e && D.current.update(e)
             }
           }, [c, x]), t.useLayoutEffect(function() {

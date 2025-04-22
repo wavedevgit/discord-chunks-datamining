@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => F
+  Z: () => V
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -29,8 +29,8 @@ var r = n(200651),
   A = n(826298),
   N = n(689079),
   C = n(981631),
-  R = n(388032),
-  P = n(702854),
+  P = n(388032),
+  R = n(702854),
   w = n(239840);
 let D = 512,
   L = 7,
@@ -43,11 +43,11 @@ let D = 512,
   B = l().debounce(() => {
     (0, d.yw)(C.rMx.APPLICATION_COMMAND_BROWSER_SCROLLED)
   }, 300),
-  F = i.forwardRef(function(e, t) {
+  V = i.forwardRef(function(e, t) {
     let {
       channel: n,
       canOnlyUseTextCommands: a
-    } = e, s = i.useRef(!1), l = i.useRef(0), [F, Z] = i.useState(0), H = i.useRef(null), [Y, W] = i.useState(!1), K = m.Xn.useStore(e => e.activeCategoryIndex);
+    } = e, s = i.useRef(!1), l = i.useRef(0), [V, Z] = i.useState(0), H = i.useRef(null), [Y, W] = i.useState(!1), K = m.Xn.useStore(e => e.activeCategoryIndex);
     i.useEffect(() => {
       (0, d.yw)(C.rMx.APPLICATION_COMMAND_BROWSER_OPENED)
     }, []);
@@ -101,8 +101,8 @@ let D = 512,
     let ea = i.useCallback(e => e !== q.length - 1 || X ? M : 0, [q.length, X]),
       eo = Q.map(e => e.data.length);
     i.useEffect(() => {
-      null != H.current && Y && null != F && H.current.scrollRowIntoView(F)
-    }, [Y, F]), i.useLayoutEffect(() => {
+      null != H.current && Y && null != V && H.current.scrollRowIntoView(V)
+    }, [Y, V]), i.useLayoutEffect(() => {
       if (null != $) {
         var e;
         null == (e = H.current) || e.scrollToSectionTop(0)
@@ -125,13 +125,13 @@ let D = 512,
       }, [n.id]);
     i.useImperativeHandle(t, () => ({
       onTabOrEnter: e => {
-        if (null == F) return !e && (Z(0), !0);
-        if (null == F) return !1;
+        if (null == V) return !e && (Z(0), !0);
+        if (null == V) return !1;
         let t = 0,
           n = 0;
         for (let e of Q)
-          if (t = n, F < (n += e.data.length)) {
-            let n = e.data[F - t],
+          if (t = n, V < (n += e.data.length)) {
+            let n = e.data[V - t],
               r = z.find(e => e.id === n.applicationId);
             el(n, r, (0, I.tI)(e.section));
             break
@@ -141,10 +141,10 @@ let D = 512,
         if (0 === J.length) return !0;
         let t = X ? L : 0,
           n = J.length + t,
-          r = null == F ? 0 : F + e;
+          r = null == V ? 0 : V + e;
         return r >= n ? r = n - 1 : r < 0 && (r = 0), Z(r), W(!0), !0
       }
-    }), [J.length, Q, X, z, el, F]);
+    }), [J.length, Q, X, z, el, V]);
     let ec = i.useCallback(e => {
         let t = q[e];
         if (null == t) return null;
@@ -157,7 +157,7 @@ let D = 512,
             padding: 0
           });
         return (0, r.jsx)(E.Z, {
-          className: P.categoryHeader,
+          className: R.categoryHeader,
           icon: a,
           children: t.name
         }, e)
@@ -171,15 +171,15 @@ let D = 512,
         return (0, r.jsxs)("ul", {
           role: "group",
           "aria-label": i.name,
-          className: o()(P.categorySection, {
-            [P.categorySectionLast]: n
+          className: o()(R.categorySection, {
+            [R.categorySectionLast]: n
           }),
           children: [t, 0 === a.length && (0, r.jsx)(c.Z, {
-            message: R.intl.format(R.t.WoQXT0, {
+            message: P.intl.format(P.t.WoQXT0, {
               applicationName: i.name
             }),
             noResultsImageURL: w,
-            className: P.noSearchResults
+            className: R.noSearchResults
           })]
         }, e)
       }, [q, Q]),
@@ -194,8 +194,8 @@ let D = 512,
           index: e,
           command: o,
           channel: n,
-          className: P.itemWrapper,
-          selected: F === e,
+          className: R.itemWrapper,
+          selected: V === e,
           showImage: a.section.id !== o.applicationId,
           section: l,
           onClick: () => el(o, l, (0, I.tI)(a.section)),
@@ -203,17 +203,17 @@ let D = 512,
             Z(null), W(!1)
           }
         }, s)
-      }, [n, Q, el, z, F]),
+      }, [n, Q, el, z, V]),
       ef = (0, h.Dt)();
-    return (0, _.KR)(ef, !0, (0, f.DJ)(F)), i.useEffect(() => () => {
+    return (0, _.KR)(ef, !0, (0, f.DJ)(V)), i.useEffect(() => () => {
       (0, _.sJ)()
     }, []), (0, r.jsxs)(f.ZP, {
       id: ef,
-      className: P.outerWrapper,
-      innerClassName: P.wrapper,
-      onMouseDown: V,
+      className: R.outerWrapper,
+      innerClassName: R.wrapper,
+      onMouseDown: F,
       children: [(0, r.jsx)(S.Z, {
-        className: P.rail,
+        className: R.rail,
         channel: n,
         sections: z,
         filteredSectionId: $,
@@ -222,7 +222,7 @@ let D = 512,
         applicationCommandListRef: H
       }), (0, r.jsx)(p.Z, {
         role: "listbox",
-        className: P.list,
+        className: R.list,
         listPadding: G,
         onScroll: er,
         renderRow: ed,
@@ -239,6 +239,6 @@ let D = 512,
     })
   });
 
-function V(e) {
+function F(e) {
   e.preventDefault()
 }

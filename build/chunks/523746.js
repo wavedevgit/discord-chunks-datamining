@@ -156,7 +156,7 @@ function C(e) {
   })
 }
 
-function R(e) {
+function P(e) {
   let {
     channelId: t,
     unavailable: n
@@ -173,7 +173,7 @@ function R(e) {
   }, null != E[t] && delete E[t]
 }
 
-function P(e) {
+function R(e) {
   let {
     channelId: t
   } = e;
@@ -218,7 +218,7 @@ let D = new w(l.Z, {
   CHANNEL_DELETE: T,
   CALL_CREATE: A,
   CALL_UPDATE: C,
-  CALL_DELETE: R,
+  CALL_DELETE: P,
   CALL_ENQUEUE_RING: N,
-  VOICE_CHANNEL_SELECT: P
+  VOICE_CHANNEL_SELECT: R
 })

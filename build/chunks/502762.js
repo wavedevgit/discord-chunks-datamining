@@ -17,7 +17,7 @@ let _ = Object.assign(i.forwardRef(function(e, t) {
   let {
     user: n,
     displayProfile: i,
-    profileType: a,
+    themeType: a,
     className: _,
     pendingThemeColors: p,
     themeOverride: h,
@@ -40,9 +40,9 @@ let _ = Object.assign(i.forwardRef(function(e, t) {
     primaryColor: b,
     secondaryColor: y
   }), I = {
-    [f.biteSize]: a === d.y0.BITE_SIZE,
-    [f.fullSize]: a === d.y0.FULL_SIZE,
-    [f.panel]: a === d.y0.PANEL
+    [f.biteSize]: a === d.lY.POPOUT,
+    [f.fullSize]: a === d.lY.MODAL,
+    [f.panel]: a === d.lY.SIDEBAR
   };
   return (0, r.jsx)("div", {
     className: o()(f.outer, O, I, _),
@@ -53,7 +53,7 @@ let _ = Object.assign(i.forwardRef(function(e, t) {
       children: (0, r.jsx)(s.ze6, {
         theme: null != h ? h : E,
         children: (0, r.jsx)(u.X, {
-          profileType: a,
+          themeType: a,
           theme: null != h ? h : E,
           primaryColor: b,
           secondaryColor: y,
@@ -68,11 +68,11 @@ let _ = Object.assign(i.forwardRef(function(e, t) {
       children: n,
       className: i
     } = e, {
-      profileType: a
+      themeType: a
     } = (0, u.z)(), s = {
-      [f.biteSize]: a === d.y0.BITE_SIZE,
-      [f.fullSize]: a === d.y0.FULL_SIZE,
-      [f.panel]: a === d.y0.PANEL
+      [f.biteSize]: a === d.lY.POPOUT,
+      [f.fullSize]: a === d.lY.MODAL,
+      [f.panel]: a === d.lY.SIDEBAR
     };
     return (0, r.jsx)("div", {
       ref: t,

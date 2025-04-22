@@ -34,11 +34,11 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 let A = "NO_GUILD",
-  N = new c.h(e => [P(e)], e => e.id),
+  N = new c.h(e => [R(e)], e => e.id),
   C = new Set,
-  R = {};
+  P = {};
 
-function P(e) {
+function R(e) {
   var t;
   return null != (t = e.getGuildId()) ? t : A
 }
@@ -59,15 +59,15 @@ function D(e) {
 }
 
 function L(e) {
-  let t = R[e];
+  let t = P[e];
   if (null != t) return t;
   let n = p.Z.getChannel(e);
   return null != n && n.isGuildStageVoice() && (D(n.guild_id), M(n)) ? x(e) : null
 }
 
 function x(e) {
-  let t = R[e];
-  return null == t && (t = new O.ZP(e), R[e] = t, t.rebuild()), t
+  let t = P[e];
+  return null == t && (t = new O.ZP(e), P[e] = t, t.rebuild()), t
 }
 
 function M(e) {
@@ -93,19 +93,19 @@ function U(e) {
 }
 
 function G(e) {
-  for (let t of N.values(e)) N.delete(t.id), delete R[t.id];
+  for (let t of N.values(e)) N.delete(t.id), delete P[t.id];
   C.delete(e)
 }
 
 function B(e) {
-  return null != e && (delete R[e], N.delete(e), !0)
+  return null != e && (delete P[e], N.delete(e), !0)
 }
 
-function F() {
-  C.clear(), N.clear(), R = {}
+function V() {
+  C.clear(), N.clear(), P = {}
 }
 
-function V(e, t, n) {
+function F(e, t, n) {
   if (null == n || e.has(n)) return;
   let r = p.Z.getChannel(n);
   (null == r ? void 0 : r.isGuildStageVoice()) && (t.add(n), e.add(n))
@@ -118,7 +118,7 @@ function Z(e) {
   return t.reduce((e, t) => {
     if (null == t.guildId || !C.has(t.guildId)) return e;
     let r = new Set;
-    return (V(n, r, t.oldChannelId), V(n, r, t.channelId), 0 === r.size) ? e : U(t.userId, Array.from(r)) || e
+    return (F(n, r, t.oldChannelId), F(n, r, t.channelId), 0 === r.size) ? e : U(t.userId, Array.from(r)) || e
   }, !1)
 }
 
@@ -242,8 +242,8 @@ class et extends(r = l.ZP.Store) {
 }
 T(et, "displayName", "StageChannelParticipantStore");
 let en = new et(u.Z, {
-  CONNECTION_OPEN: F,
-  OVERLAY_INITIALIZE: F,
+  CONNECTION_OPEN: V,
+  OVERLAY_INITIALIZE: V,
   VOICE_STATE_UPDATES: Z,
   CHANNEL_DELETE: X,
   GUILD_MEMBERS_CHUNK_BATCH: H,

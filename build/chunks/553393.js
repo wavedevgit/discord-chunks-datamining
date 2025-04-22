@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => V
+  Z: () => F
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -29,8 +29,8 @@ var r = n(200651),
   A = n(602667),
   N = n(644646),
   C = n(667105),
-  R = n(341907),
-  P = n(46140),
+  P = n(341907),
+  R = n(46140),
   w = n(981631),
   D = n(231338),
   L = n(388032),
@@ -65,7 +65,7 @@ function B(e, t) {
   return null != e && null != t && (0, m.p9)(t, v.Z, b.Z, y.Z, h.Z)[0]
 }
 
-function F(e) {
+function V(e) {
   var t, n, h, m, b;
   let {
     quest: y,
@@ -73,8 +73,8 @@ function F(e) {
     applicationStream: A,
     position: M,
     closePopout: k,
-    updatePosition: F,
-    impressionRef: V
+    updatePosition: V,
+    impressionRef: F
   } = e, Z = (0, s.e7)([E.Z], () => {
     var e;
     return null != (e = E.Z.getChannel(null == A ? void 0 : A.channelId)) ? e : null
@@ -94,14 +94,14 @@ function F(e) {
     let e = er.current,
       t = v.current;
     if (null == e || null == t) return;
-    let n = new MutationObserver(() => F());
+    let n = new MutationObserver(() => V());
     return n.observe(e, {
       childList: !0,
       subtree: !0
     }), () => {
       n.disconnect()
     }
-  }, [v, er, F]);
+  }, [v, er, V]);
   let ei = (0, c.q_F)({
       from: {
         height: 0
@@ -134,7 +134,7 @@ function F(e) {
         questContent: S.jn.MEMBERS_LIST,
         questContentCTA: O.jZ.OPEN_DISCLOSURE,
         trackGuildAndChannelMetadata: !0
-      }), (0, R.openDisclosureModal)(y, {
+      }), (0, P.openDisclosureModal)(y, {
         content: S.jn.MEMBERS_LIST,
         ctaContent: O.jZ.OPEN_DISCLOSURE
       })
@@ -145,7 +145,7 @@ function F(e) {
         questContent: S.jn.MEMBERS_LIST,
         questContentCTA: O.jZ.LEARN_MORE,
         trackGuildAndChannelMetadata: !0
-      }), (0, R.navigateToQuestHome)({
+      }), (0, P.navigateToQuestHome)({
         fromContent: S.jn.MEMBERS_LIST,
         questId: y.id
       })
@@ -185,7 +185,7 @@ function F(e) {
     };
   return (0, r.jsx)(a.animated.div, {
     ref: e => {
-      V.current = e
+      F.current = e
     },
     "aria-expanded": ee,
     className: x.wrapper,
@@ -249,7 +249,7 @@ function F(e) {
               quest: y,
               questContent: S.jn.MEMBERS_LIST,
               learnMoreStyle: "icon",
-              location: P.dr.MEMBERS_LIST,
+              location: R.dr.MEMBERS_LIST,
               onClick: eo
             })]
           })
@@ -266,12 +266,12 @@ function F(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   return null == e.quest || e.isQuestEnrollmentBlocked ? null : (0, r.jsx)(A.A, {
     questOrQuests: e.quest,
     questContent: S.jn.MEMBERS_LIST,
     trackGuildAndChannelMetadata: !0,
-    children: t => (0, r.jsx)(F, k({
+    children: t => (0, r.jsx)(V, k({
       impressionRef: t
     }, e))
   })

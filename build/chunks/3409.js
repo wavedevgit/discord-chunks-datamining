@@ -30,8 +30,8 @@ var r = n(200651),
   A = n(409813),
   N = n(51499),
   C = n(586585),
-  R = n(614277),
-  P = n(35248),
+  P = n(614277),
+  R = n(35248),
   w = n(439021),
   D = n(698708),
   L = n(351402),
@@ -42,8 +42,8 @@ var r = n(200651),
   U = n(55563),
   G = n(358085),
   B = n(622999),
-  F = n(176919),
-  V = n(185139),
+  V = n(176919),
+  F = n(185139),
   Z = n(396955),
   H = n(559725),
   Y = n(439041),
@@ -252,7 +252,7 @@ function eT(e) {
       currentBreadcrumpStep: L,
       header: M,
       analyticsLocation: j,
-      hideBreadcrumbs: F = !1,
+      hideBreadcrumbs: V = !1,
       usePaymentModalStep: Z = !1,
       isEligibleForTrial: W = !1,
       allowDesktopRedirectPurchase: X = !1,
@@ -290,31 +290,31 @@ function eT(e) {
       steps: [...g, ...eu, ...E],
       methodType: K.He.IDEAL
     },
-    eR = {
+    eP = {
       steps: [...g, ...ed, ...E],
       methodType: K.He.CASH_APP
     };
 
-  function eP(e) {
+  function eR(e) {
     switch (e) {
       case A.h8.CREDIT_CARD_INFORMATION:
         return en;
       case A.h8.CASH_APP_INFORMATION:
-        return eR;
+        return eP;
       default:
         return {
           steps: [A.h8.ADD_PAYMENT_STEPS]
         }
     }
   }
-  let [ew, eD] = i.useState(m), [eL, ex] = i.useState(null), [eM, ek] = i.useState(eP(m)), {
+  let [ew, eD] = i.useState(m), [eL, ex] = i.useState(null), [eM, ek] = i.useState(eR(m)), {
     stripe: ej,
     contextMetadata: eU,
     activitySessionId: eG
-  } = (0, T.JL)(), eB = (0, l.e7)([x.Z], () => x.Z.redirectedPaymentSourceId), eF = (0, l.e7)([Y.Z], () => Y.Z.cashAppPayComponent), eV = {
+  } = (0, T.JL)(), eB = (0, l.e7)([x.Z], () => x.Z.redirectedPaymentSourceId), eV = (0, l.e7)([Y.Z], () => Y.Z.cashAppPayComponent), eF = {
     completeSteps: to,
     setIsSubmittingCurrentStep: h.setIsSubmittingCurrentStep
-  }, eZ = i.useRef(eV);
+  }, eZ = i.useRef(eF);
 
   function eH(e) {
     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
@@ -330,7 +330,7 @@ function eT(e) {
     })), y(ew, e), eH(m, !1)
   }
   i.useEffect(() => {
-    eZ.current = eV
+    eZ.current = eF
   }), i.useEffect(() => {
     let {
       completeSteps: e,
@@ -403,7 +403,7 @@ function eT(e) {
               ek(eC), eH(A.h8.IDEAL_INFORMATION);
               break;
             case K.He.CASH_APP:
-              ek(eR), eH(A.h8.CASH_APP_INFORMATION);
+              ek(eP), eH(A.h8.CASH_APP_INFORMATION);
               break;
             case K.He.GIROPAY:
             case K.He.PAYSAFE_CARD:
@@ -522,14 +522,14 @@ function eT(e) {
     case A.h8.AWAITING_BROWSER_CHECKOUT_APPLE_PAY:
       n = (0, r.jsx)("div", {
         className: q.body,
-        children: (0, r.jsx)(P.M, {
+        children: (0, r.jsx)(R.M, {
           step: ew,
           onPurchaseComplete: () => y(ew),
           onHandoffFailure: () => {
             ek(en), eH(A.h8.CREDIT_CARD_INFORMATION)
           }
         })
-      }), o = (0, r.jsx)(P.a, {
+      }), o = (0, r.jsx)(R.a, {
         onPrimaryClick: () => {
           ek(en), eH(A.h8.CREDIT_CARD_INFORMATION)
         },
@@ -629,7 +629,7 @@ function eT(e) {
       break;
     case A.h8.CASH_APP_INFORMATION:
       let tb = null != e6,
-        ty = null != eF;
+        ty = null != eV;
       n = (0, r.jsx)(eb, {}), o = (0, r.jsx)(eS, {
         onBack: () => eH(A.h8.PAYMENT_TYPE),
         primaryCTA: C.Z.CTAType.CONTINUE,
@@ -797,19 +797,19 @@ function eT(e) {
     children: [W && (0, r.jsx)(N.Z, {
       className: q.paymentModalBreadcrumbs,
       isEligibleForTrial: W
-    }), (0, r.jsxs)(R.C3, {
+    }), (0, r.jsxs)(P.C3, {
       children: [(0, r.jsx)(D.Z, {
         className: q.paymentModalError
       }), tO]
-    }), (0, r.jsx)(R.O3, {
+    }), (0, r.jsx)(P.O3, {
       children: tI
     })]
-  }) : (0, r.jsx)(V.Z, {
+  }) : (0, r.jsx)(F.Z, {
     steps: null != S ? S : eM.steps,
     currentStep: null != L ? L : ew,
     paymentError: h.paymentError,
     header: M,
-    hideBreadcrumbs: F,
+    hideBreadcrumbs: V,
     body: tO,
     footer: tI
   })
@@ -838,7 +838,7 @@ function eA(e) {
     isValid: !1
   })), [m, g] = i.useState(""), [E, b] = i.useState(""), [y, O] = i.useState(() => ({
     token: null
-  })), [I, S, T, A, N] = (0, l.Wu)([x.Z], () => [x.Z.braintreeEmail, x.Z.braintreeNonce, x.Z.error, x.Z.venmoUsername, x.Z.adyenPaymentData]), [C, R] = (0, l.Wu)([M.Z], () => [M.Z.error, M.Z.isAwaitingAuthentication]);
+  })), [I, S, T, A, N] = (0, l.Wu)([x.Z], () => [x.Z.braintreeEmail, x.Z.braintreeNonce, x.Z.error, x.Z.venmoUsername, x.Z.adyenPaymentData]), [C, P] = (0, l.Wu)([M.Z], () => [M.Z.error, M.Z.isAwaitingAuthentication]);
   i.useEffect(() => {
     let e = e => {
       let {
@@ -853,7 +853,7 @@ function eA(e) {
       u.Z.unsubscribe("BRAINTREE_TOKENIZE_PAYPAL_SUCCESS", e), (0, _.fw)()
     }
   }, []);
-  let [P, w] = i.useState(!1), [D, L] = i.useState(!1), [U, G] = i.useState(null), B = i.useRef(null), V = (0, l.e7)([M.Z], () => M.Z.isAwaitingAuthentication), [Z, W] = (0, l.Wu)([j.Z], () => [j.Z.purchaseTokenAuthState, j.Z.purchaseTokenHash]);
+  let [R, w] = i.useState(!1), [D, L] = i.useState(!1), [U, G] = i.useState(null), B = i.useRef(null), F = (0, l.e7)([M.Z], () => M.Z.isAwaitingAuthentication), [Z, W] = (0, l.Wu)([j.Z], () => [j.Z.purchaseTokenAuthState, j.Z.purchaseTokenHash]);
   return i.useEffect(() => {
     null != U && null != B.current && B.current.scrollIntoView({
       behavior: "smooth"
@@ -869,7 +869,7 @@ function eA(e) {
     setTokenState: O,
     billingAddressState: p,
     setBillingAddressState: h,
-    isSubmittingCurrentStep: P,
+    isSubmittingCurrentStep: R,
     setIsSubmittingCurrentStep: w,
     hasRedirectURL: D,
     setHasRedirectURL: L,
@@ -878,11 +878,11 @@ function eA(e) {
     venmoUsername: A,
     adyenPaymentData: N,
     paymentError: null != C ? C : T,
-    paymentAuthenticationState: R ? F.wr.PENDING : null != C ? F.wr.ERROR : F.wr.NONE,
+    paymentAuthenticationState: P ? V.wr.PENDING : null != C ? V.wr.ERROR : V.wr.NONE,
     purchaseError: U,
     setPurchaseError: G,
     purchaseErrorBlockRef: B,
-    isAuthenticating: V,
+    isAuthenticating: F,
     purchaseTokenAuthState: Z,
     purchaseTokenHash: W,
     epsBankState: E,

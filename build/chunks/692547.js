@@ -38,7 +38,7 @@ let {
   colors: l()(g, (e, t) => {
     let n = t;
     return {
-      css: P(n),
+      css: R(n),
       resolve(t) {
         let r = e[t.theme],
           i = r.raw,
@@ -61,7 +61,7 @@ let {
     let n = t,
       r = T[n];
     return {
-      css: P(n),
+      css: R(n),
       resolve(e) {
         var t;
         return N(r, null != (t = null == e ? void 0 : e.saturation) ? t : 1)
@@ -69,7 +69,7 @@ let {
     }
   }),
   shadows: l()(y, (e, t) => ({
-    css: P(t),
+    css: R(t),
     resolve: t => ({
       boxShadow: e[t.theme].boxShadow,
       filter: e[t.theme].filter,
@@ -120,13 +120,13 @@ function C(e, t, n) {
   return 1 !== t && (a = a.set("hsl.s", a.get("hsl.s") * t)), 1 !== i && (a = a.alpha(a.alpha() * i)), a
 }
 
-function R(e) {
+function P(e) {
   return e.toLowerCase().replace(/_/g, "-")
 }
 
-function P(e, t) {
-  let n = null != t ? R(t) : null,
-    r = R(e);
+function R(e, t) {
+  let n = null != t ? P(t) : null,
+    r = P(e);
   return "var(--".concat([n, r].filter(Boolean).join("-"), ")")
 }
 let w = A

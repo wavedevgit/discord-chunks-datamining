@@ -220,11 +220,11 @@ function C(e, t, n, r) {
   return N(e, t, n, r)
 }
 
-function R(e, t, n, r) {
+function P(e, t, n, r) {
   return Q(q(t), e, n, r)
 }
 
-function P(e, t, n, r) {
+function R(e, t, n, r) {
   return Q(z(t, e.length - n), e, n, r)
 }
 
@@ -388,12 +388,12 @@ r = 0x7fffffff, c.TYPED_ARRAY_SUPPORT = function e() {
     case "binary":
       return C(this, e, t, n);
     case "base64":
-      return R(this, e, t, n);
+      return P(this, e, t, n);
     case "ucs2":
     case "ucs-2":
     case "utf16le":
     case "utf-16le":
-      return P(this, e, t, n);
+      return R(this, e, t, n);
     default:
       if (a) throw TypeError("Unknown encoding: " + r);
       r = ("" + r).toLowerCase(), a = !0
@@ -450,16 +450,16 @@ function B(e, t, n, r, i, a) {
   if (n + r > e.length) throw RangeError("Index out of range")
 }
 
-function F(e, t, n, r, i, a) {
+function V(e, t, n, r, i, a) {
   if (n + r > e.length || n < 0) throw RangeError("Index out of range")
 }
 
-function V(e, t, n, r, i) {
-  return t *= 1, n >>>= 0, i || F(e, t, n, 4, 34028234663852886e22, -34028234663852886e22), a.write(e, t, n, r, 23, 4), n + 4
+function F(e, t, n, r, i) {
+  return t *= 1, n >>>= 0, i || V(e, t, n, 4, 34028234663852886e22, -34028234663852886e22), a.write(e, t, n, r, 23, 4), n + 4
 }
 
 function Z(e, t, n, r, i) {
-  return t *= 1, n >>>= 0, i || F(e, t, n, 8, 17976931348623157e292, -17976931348623157e292), a.write(e, t, n, r, 52, 8), n + 8
+  return t *= 1, n >>>= 0, i || V(e, t, n, 8, 17976931348623157e292, -17976931348623157e292), a.write(e, t, n, r, 52, 8), n + 8
 }
 c.prototype.slice = function(e, t) {
   var n = this.length;
@@ -573,9 +573,9 @@ c.prototype.slice = function(e, t) {
 }, c.prototype.writeInt32BE = function(e, t, n) {
   return e *= 1, t >>>= 0, n || B(this, e, t, 4, 0x7fffffff, -0x80000000), e < 0 && (e = 0xffffffff + e + 1), this[t] = e >>> 24, this[t + 1] = e >>> 16, this[t + 2] = e >>> 8, this[t + 3] = 255 & e, t + 4
 }, c.prototype.writeFloatLE = function(e, t, n) {
-  return V(this, e, t, !0, n)
+  return F(this, e, t, !0, n)
 }, c.prototype.writeFloatBE = function(e, t, n) {
-  return V(this, e, t, !1, n)
+  return F(this, e, t, !1, n)
 }, c.prototype.writeDoubleLE = function(e, t, n) {
   return Z(this, e, t, !0, n)
 }, c.prototype.writeDoubleBE = function(e, t, n) {

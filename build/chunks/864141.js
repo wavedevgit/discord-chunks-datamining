@@ -30,8 +30,8 @@ var i = n(120356),
   A = n(788858),
   N = n(849755),
   C = n(384298),
-  R = n(670451),
-  P = n(228168),
+  P = n(670451),
+  R = n(228168),
   w = n(388032),
   D = n(227832);
 
@@ -82,9 +82,9 @@ function j(e) {
     className: L,
     onClose: M
   } = e, {
-    profileType: j
+    themeType: j
   } = (0, v.z)(), U = {
-    [D.fullSize]: j === P.y0.FULL_SIZE
+    [D.fullSize]: j === R.lY.MODAL
   }, {
     analyticsLocations: G
   } = (0, d.ZP)(u.Z.USER_PROFILE_VOICE_ACTIVITY_CARD), B = (0, b.Z)({
@@ -95,10 +95,10 @@ function j(e) {
     voiceChannelId: i.id,
     user: t,
     analyticsLocations: G
-  }), F = (0, y.Z)({
+  }), V = (0, y.Z)({
     userId: t.id,
     onAction: B
-  }), V = (0, s.e7)([m.Z], () => m.Z.getGuild(i.guild_id)), Z = (0, E.Z)(i), H = (0, f.ZP)(i), {
+  }), F = (0, s.e7)([m.Z], () => m.Z.getGuild(i.guild_id)), Z = (0, E.Z)(i), H = (0, f.ZP)(i), {
     channelStatusEnabled: Y
   } = (0, g.D)({
     location: "UserProfileVoiceActivityCard"
@@ -139,10 +139,10 @@ function j(e) {
             onClick: e,
             children: H
           })]
-        }), null != V && (0, r.jsx)(S.Z, {
+        }), null != F && (0, r.jsx)(S.Z, {
           variant: "text-xs/normal",
           text: w.intl.formatToPlainString(w.t["hq/Qzc"], {
-            guildName: V.name
+            guildName: F.name
           }),
           onClick: t
         })]
@@ -163,14 +163,14 @@ function j(e) {
   return (0, r.jsx)(d.Gt, {
     value: G,
     children: (0, r.jsxs)(O.Z, {
-      ref: F,
+      ref: V,
       className: a()(D.card, L),
       onAction: B,
       onClose: M,
       children: [(0, r.jsx)(I.Z, {
         text: W(),
         tags: K(),
-        contextMenu: (0, r.jsx)(R.Z, {
+        contextMenu: (0, r.jsx)(P.Z, {
           display: "voice",
           user: t,
           onClose: M
@@ -182,9 +182,9 @@ function j(e) {
           children: [(0, r.jsx)(T.Z, {
             users: Z,
             channel: i
-          }), z(), j === P.y0.FULL_SIZE && q()]
+          }), z(), j === R.lY.MODAL && q()]
         })
-      }), j !== P.y0.FULL_SIZE && q()]
+      }), j !== R.lY.MODAL && q()]
     })
   })
 }

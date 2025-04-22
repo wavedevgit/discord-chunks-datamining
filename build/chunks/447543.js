@@ -32,8 +32,8 @@ var r = n(525654),
   A = n(82085),
   N = n(264229),
   C = n(652898),
-  R = n(895886),
-  P = n(143816),
+  P = n(895886),
+  R = n(143816),
   w = n(703656),
   D = n(922482),
   L = n(131704),
@@ -44,8 +44,8 @@ var r = n(525654),
   U = n(430824),
   G = n(607744),
   B = n(341165),
-  F = n(496675),
-  V = n(914010),
+  V = n(496675),
+  F = n(914010),
   Z = n(594174),
   H = n(626135),
   Y = n(70956),
@@ -129,7 +129,7 @@ function ed(e, t, n) {
   if ((null == n ? void 0 : n.targetType) === et.Iq.ROLE_SUBSCRIPTIONS_PURCHASE) return $.oC.ROLE_SUBSCRIPTIONS;
   if ((null == n ? void 0 : n.targetType) == null && !L.tx.has(t.type) && (0, O.s)(e)) return $.oC.GUILD_HOME;
   let a = M.Z.getChannel(t.id);
-  return F.Z.can(J.Plq.VIEW_CHANNEL, a) ? t.id : null != (i = null == (r = k.ZP.getDefaultChannel(e, !0, J.Plq.CREATE_INSTANT_INVITE)) ? void 0 : r.id) ? i : t.id
+  return V.Z.can(J.Plq.VIEW_CHANNEL, a) ? t.id : null != (i = null == (r = k.ZP.getDefaultChannel(e, !0, J.Plq.CREATE_INSTANT_INVITE)) ? void 0 : r.id) ? i : t.id
 }
 
 function ef(e, t) {
@@ -140,7 +140,7 @@ function ef(e, t) {
     welcomeModalChannelId: i,
     guildScheduledEvent: a
   } = null != t ? t : {}, o = n === J.d4z.GUILD_STAGE_VOICE, s = {
-    source: P.Z.INVITE_ACCEPT,
+    source: R.Z.INVITE_ACCEPT,
     navigationReplace: !0
   };
   return null != i && (s.welcomeModalChannelId = i), o && (s.state = en.Df), null != a && (s.guildScheduledEventId = a.id), e => null != r ? r(e, s) : (0, w.uL)(e, s)
@@ -159,7 +159,7 @@ function e_(e) {
     isGuestInvite: f,
     isApplicationBypassInvite: _
   } = null != i ? i : {};
-  if (!f && !_ && !(null == i ? void 0 : i.forceTransition) && s && V.Z.getGuildId() !== t) return;
+  if (!f && !_ && !(null == i ? void 0 : i.forceTransition) && s && F.Z.getGuildId() !== t) return;
   let {
     type: p
   } = r, E = M.Z.getChannel(r.id), O = ed(t, r, i), I = p === J.d4z.GUILD_STAGE_VOICE, S = J.Z5c.CHANNEL(t, O);
@@ -431,7 +431,7 @@ let ey = {
       callback: a,
       skipOnboarding: o
     } = e, s = (0, N.fU)(r), l = s.baseCode, c = x.default.getSessionId(), d = eu(i, s), _ = Z.default.getCurrentUser();
-    return null != (t = null == _ ? void 0 : _.hasFlag(J.xW$.QUARANTINED)) && t ? ((0, R.default)(), new Promise((e, t) => t(Error()))) : (f.Z.dispatch({
+    return null != (t = null == _ ? void 0 : _.hasFlag(J.xW$.QUARANTINED)) && t ? ((0, P.default)(), new Promise((e, t) => t(Error()))) : (f.Z.dispatch({
       type: "INVITE_ACCEPT",
       code: l
     }), u.tn.post({
