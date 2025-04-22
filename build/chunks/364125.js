@@ -19,7 +19,7 @@ function d(e) {
     stream: f,
     focused: m,
     canvas: p
-  } = e, E = r.useRef(!1), g = (0, l.e7)([i.Z], () => i.Z.getDrawMode()), h = (0, s.Z)((0, u.Z)(t.id, n, d), f), v = (0, s.Z)((0, c.Z)(t.id, n, d), f), S = r.useCallback((e, t, n) => {
+  } = e, E = r.useRef(!1), g = (0, l.e7)([i.Z], () => i.Z.getDrawMode()), v = (0, s.Z)((0, u.Z)(t.id, n, d), f), h = (0, s.Z)((0, c.Z)(t.id, n, d), f), S = r.useCallback((e, t, n) => {
     if (null == p) return;
     let {
       x: r,
@@ -27,11 +27,11 @@ function d(e) {
     } = (0, o.hn)(p, n);
     switch (t.type) {
       case a.W.LINE:
-        return h[e](t, r, l);
+        return v[e](t, r, l);
       case a.W.EMOJI_HOSE:
-        return v[e](t, r, l)
+        return h[e](t, r, l)
     }
-  }, [p, h, v]), b = r.useCallback(e => {
+  }, [p, v, h]), b = r.useCallback(e => {
     m && null != g && (e.stopPropagation(), E.current = !0, S("handleMouseDown", g, e))
   }, [S, g, m]), y = r.useCallback(e => {
     m && null != g && (e.stopPropagation(), E.current && S("handleMouseMove", g, e))

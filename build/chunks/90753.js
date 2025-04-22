@@ -1,6 +1,6 @@
 /** Chunk was on 81489 **/
 n.d(t, {
-  Z: () => h
+  Z: () => v
 }), n(539854);
 var r = n(192379),
   l = n(846519),
@@ -17,8 +17,8 @@ var r = n(192379),
   E = n(813900);
 let g = 1e3 / 60;
 
-function h(e, t, n, h) {
-  let v = (0, a.dQu)(i.Z.unsafe_rawColors.BRAND_500).hex(),
+function v(e, t, n, v) {
+  let h = (0, a.dQu)(i.Z.unsafe_rawColors.BRAND_500).hex(),
     S = (0, a.dQu)(i.Z.unsafe_rawColors.BLACK_500).hex(),
     b = (0, a.dQu)(i.Z.unsafe_rawColors.WHITE_500).hex(),
     y = r.useRef({}),
@@ -44,10 +44,10 @@ function h(e, t, n, h) {
         if (null == E) return;
         let {
           width: g,
-          height: h
-        } = f.getBoundingClientRect(), v = [];
+          height: v
+        } = f.getBoundingClientRect(), h = [];
         n.forEach(e => {
-          if (null == s.Z.getVoiceStateForChannel(a, e.userId)) return void v.push(e);
+          if (null == s.Z.getVoiceStateForChannel(a, e.userId)) return void h.push(e);
           ! function(e) {
             let {
               drawable: t,
@@ -91,26 +91,26 @@ function h(e, t, n, h) {
             drawable: e,
             context: E,
             canvasWidth: g,
-            canvasHeight: h,
+            canvasHeight: v,
             fallbackColor: r,
             outlineColorDark: o,
             outlineColorLight: c,
             linesDrawnAt: l,
-            deadDrawables: v,
+            deadDrawables: h,
             streamerId: i
           })
-        }), v.length > 0 && (0, u.fW)(v, i)
+        }), h.length > 0 && (0, u.fW)(h, i)
       }({
         canvasRef: e,
         drawables: n,
-        fallbackColor: v,
+        fallbackColor: h,
         linesDrawnAt: y,
         streamerId: t,
         outlineColorDark: S,
         outlineColorLight: b,
-        channelId: h
+        channelId: v
       })
-    }, [e, h, v, S, b]);
+    }, [e, v, h, S, b]);
   r.useEffect(() => {
     let t = new ResizeObserver(() => {
       let t = e.current;

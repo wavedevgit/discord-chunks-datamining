@@ -666,7 +666,7 @@ class e8 extends i.PureComponent {
         guildId: null == N ? void 0 : N.guild_id,
         location: "ChannelChat"
       }),
-      F = G && null != Z && null != N;
+      F = G && null != Z && null != N && null != N.guild_id;
     return (0, r.jsx)(y.Z, {
       page: (0, ew.mE)(this.props.channel),
       children: (0, r.jsx)(en.sW, {

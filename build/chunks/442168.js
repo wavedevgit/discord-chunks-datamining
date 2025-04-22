@@ -36,11 +36,11 @@ function E(e) {
 let g = {
     visibility: "hidden"
   },
-  h = {
+  v = {
     precision: 1e-4,
     duration: 300
   },
-  v = {
+  h = {
     tension: 150,
     friction: 20,
     precision: 1e-4,
@@ -94,7 +94,7 @@ function b(e) {
       enter: {
         opacity: 0
       },
-      config: h
+      config: v
     }, "animate-always"),
     R = (0, l.useRef)(null),
     N = (0, s.Yzy)(I, {
@@ -120,7 +120,7 @@ function b(e) {
           left: _.current.left + 12
         }
       })())),
-      config: b.enabled ? S : v,
+      config: b.enabled ? S : h,
       onRest: (e, t) => {
         null != t.item && null != I.find(e => e.timestamp === t.item.timestamp) && (0, c.Gh)(Z, t.item.timestamp)
       }

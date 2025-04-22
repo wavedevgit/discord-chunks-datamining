@@ -22,8 +22,8 @@ var r, l = n(200651),
   p = n(413458),
   E = n(16609),
   g = n(527805),
-  h = n(716600),
-  v = n(778569),
+  v = n(716600),
+  h = n(778569),
   S = n(563218),
   b = n(318891),
   y = n(884338),
@@ -98,8 +98,8 @@ function Y(e) {
     participants: r,
     application: a,
     channel: E,
-    width: h
-  } = e, v = U(h), [S] = V(h), b = (0, u.Wu)([R.default, w.default], () => Array.from(r).map(e => (0, p.J)(e, w.default) ? null : R.default.getUser(e.userId)).filter(N.lm)), y = (0, u.e7)([f.ZP], () => {
+    width: v
+  } = e, h = U(v), [S] = V(v), b = (0, u.Wu)([R.default, w.default], () => Array.from(r).map(e => (0, p.J)(e, w.default) ? null : R.default.getUser(e.userId)).filter(N.lm)), y = (0, u.e7)([f.ZP], () => {
     var e;
     return null != (e = f.ZP.getEmbeddedActivitiesForChannel(E.id).find(e => e.applicationId === a.id)) ? e : f.ZP.getEmbeddedActivitiesForStartingChannel(E.id).find(e => e.applicationId === a.id)
   }), {
@@ -127,8 +127,8 @@ function Y(e) {
       users: b
     }), (0, l.jsx)(c.Text, {
       className: o()(D.subheader, {
-        [D.small]: 0 === v,
-        [D.medium]: 1 === v
+        [D.small]: 0 === h,
+        [D.medium]: 1 === h
       }),
       variant: "text-sm/normal",
       children: b.length > 1 ? T.intl.formatToPlainString(T.t.cpe6CA, {
@@ -139,8 +139,8 @@ function Y(e) {
       })
     }), (0, l.jsx)(c.Text, {
       className: o()(D.header, {
-        [D.small]: 0 === v,
-        [D.medium]: 1 === v
+        [D.small]: 0 === h,
+        [D.medium]: 1 === h
       }),
       variant: "text-sm/normal",
       children: a.name
@@ -159,7 +159,7 @@ function Y(e) {
           })
         },
         submitting: k,
-        size: W(v),
+        size: W(h),
         className: D.button,
         look: c.iLD.FILLED,
         color: c.zxk.Colors.WHITE,
@@ -180,9 +180,9 @@ function H(e) {
     analyticsLocations: s
   } = (0, I.ZP)(j.Z.ACTIVITY_TILE), {
     applicationId: c
-  } = t, d = (0, h.Z)(), f = null != d && (0, E.pY)(d.location) === o.id && d.applicationId === c, [m] = (0, P.Z)([c]), {
+  } = t, d = (0, v.Z)(), f = null != d && (0, E.pY)(d.location) === o.id && d.applicationId === c, [m] = (0, P.Z)([c]), {
     url: p
-  } = (0, v.Z)({
+  } = (0, h.Z)({
     applicationId: c,
     names: k,
     size: L

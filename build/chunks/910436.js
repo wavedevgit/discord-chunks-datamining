@@ -113,6 +113,7 @@ function E(e) {
         t = null == (l = y.find(e => null != e)) ? void 0 : l.channel;
       null != t && T((0, r.jsx)(g.Z.EmbeddedActivitySection, {
         activity: j,
+        activityUser: x,
         participants: e,
         channel: t,
         guildId: t.guild_id

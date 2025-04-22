@@ -58,7 +58,7 @@ async function I(e) {
   if ((V || o.Z.getVoiceChannelId() === c) && null != F && F.applicationId === n && (V || (0, h.pY)(F.location) === o.Z.getVoiceChannelId())) return (0, y.Z)(U, F.location), Promise.resolve(!0);
   let Z = await (0, m.Z)(n, c),
     H = (0, u.Kb)(Z);
-  if (L && (H ? (c = void 0, j = void 0) : L = !1), !await (0, p.p)({
+  if (L && (H ? j = void 0 : L = !1), !await (0, p.p)({
       applicationId: n,
       application: Z,
       channel: j,

@@ -1,7 +1,7 @@
 /** Chunk was on 81489 **/
 n.d(t, {
   U: () => E,
-  Z: () => h
+  Z: () => v
 }), n(539854);
 var r = n(392711),
   l = n.n(r),
@@ -36,12 +36,12 @@ function g(e, t) {
   l()(null != (n = E.getState().particles[e.id]) ? n : {}).forEach(t)
 }
 
-function h(e) {
+function v(e) {
   var t, n, r;
   let {
     emojiHose: a,
-    context: h,
-    canvasWidth: v,
+    context: v,
+    canvasWidth: h,
     canvasHeight: S,
     fallbackColor: b,
     outlineColorDark: y,
@@ -49,9 +49,9 @@ function h(e) {
     streamerId: Z,
     deadDrawables: j
   } = e;
-  h.save();
+  v.save();
   let I = u.Z.getEmojiImage(null != (n = null != (t = a.emojiId) ? t : a.emojiName) ? n : ""),
-    _ = (0, d.np)(a.x, v),
+    _ = (0, d.np)(a.x, h),
     P = (0, d.np)(a.y, S),
     {
       outlineColor: x
@@ -86,11 +86,11 @@ function h(e) {
           return r.particles[e.id] = o, r.lastSpawned[e.id] = Date.now(), r
         })
       })
-    }(a, _, P), (0, f.I)(h, _, P, x, m.q2), (0, f.T)(h, _, P, a.userId), g(a, e => (function(e, t, n) {
+    }(a, _, P), (0, f.I)(v, _, P, x, m.q2), (0, f.T)(v, _, P, a.userId), g(a, e => (function(e, t, n) {
       if (null == t) return;
       let r = n.size * window.devicePixelRatio,
         l = n.x - r / 2 * window.devicePixelRatio,
         i = n.y - 1.2 * r * window.devicePixelRatio;
       e.globalAlpha = n.opacity, e.drawImage(t, r / 2 + l, r / 2 + i, r, r)
-    })(h, I, e)), a.lastUpdatedAt + m.FO < Date.now() && (0, s.ZZ)(Z, a), a.state !== c.f.STOP || Object.keys(null != (r = E.getState().particles[a.id]) ? r : {}).length > 0 || j.push(a), h.restore()
+    })(v, I, e)), a.lastUpdatedAt + m.FO < Date.now() && (0, s.ZZ)(Z, a), a.state !== c.f.STOP || Object.keys(null != (r = E.getState().particles[a.id]) ? r : {}).length > 0 || j.push(a), v.restore()
 }

@@ -13,8 +13,8 @@ var r, l, i, a = n(442837),
   p = n(729303),
   E = n(651941),
   g = n(981631);
-let h = new Map,
-  v = new Map,
+let v = new Map,
+  h = new Map,
   S = !1,
   b = null;
 
@@ -22,8 +22,8 @@ function y() {
   return f.Z.getAllActiveStreamKeys().reduce((e, t) => {
     let {
       ownerId: n
-    } = (0, u.my)(t), r = !0 === h.get(n), l = v.get(t) !== r;
-    return v.set(t, r), !!l || e
+    } = (0, u.my)(t), r = !0 === v.get(n), l = h.get(t) !== r;
+    return h.set(t, r), !!l || e
   }, !1)
 }
 
@@ -33,7 +33,7 @@ function O() {
     n = c.default.getId(),
     r = !0;
   for (let e of t)
-    if (n !== e && !0 !== h.get(e)) {
+    if (n !== e && !0 !== v.get(e)) {
       r = !1;
       break
     } let l = r !== S;
@@ -52,8 +52,8 @@ function Z(e) {
         r = E.Z.isKeyVerified(e, n) || p.Z.isKeyVerified(e, n),
         l = (0, m.UB)(e, [d.Z, f.Z]),
         i = r && !l,
-        a = i !== h.get(e);
-      return h.set(e, i), a
+        a = i !== v.get(e);
+      return v.set(e, i), a
     }(t),
     r = y(),
     l = O();
@@ -61,7 +61,7 @@ function Z(e) {
 }
 
 function j() {
-  h.clear(), v.clear(), S = !1
+  v.clear(), h.clear(), S = !1
 }
 class I extends(r = a.ZP.Store) {
   initialize() {
@@ -71,10 +71,10 @@ class I extends(r = a.ZP.Store) {
     return S
   }
   isStreamVerified(e) {
-    return v.get(e)
+    return h.get(e)
   }
   isUserVerified(e) {
-    return h.get(e)
+    return v.get(e)
   }
 }
 i = "SecureFramesVerifiedStore", (l = "displayName") in I ? Object.defineProperty(I, l, {
@@ -102,7 +102,7 @@ let _ = new I(s.Z, {
     switch (r) {
       case o.Yn.STREAM:
         if (null == t) return !1;
-        return v.delete(t), O();
+        return h.delete(t), O();
       case o.Yn.DEFAULT:
         j()
     }

@@ -22,8 +22,8 @@ function g(e) {
     className: n,
     avError: i
   } = e, g = "", {
-    text: h,
-    node: v
+    text: v,
+    node: h
   } = function(e) {
     var t;
     if (null == e) return {
@@ -46,7 +46,7 @@ function g(e) {
       }) : i
     }
   }(i);
-  null != t && null != h ? g = "".concat(t, " ").concat(h) : null != t && (g = t);
+  null != t && null != v ? g = "".concat(t, " ").concat(v) : null != t && (g = t);
   let [S] = l.useState(new o.V7), [b, y] = l.useState(!1);
 
   function O() {
@@ -65,11 +65,11 @@ function g(e) {
       children: (0, r.jsxs)("div", {
         onMouseEnter: Z,
         onMouseLeave: O,
-        children: [t, null != v && (0, r.jsx)(s.Text, {
+        children: [t, null != h && (0, r.jsx)(s.Text, {
           variant: "text-sm/semibold",
           color: "text-muted",
           className: E.errorCodeMessage,
-          children: v
+          children: h
         })]
       })
     }),

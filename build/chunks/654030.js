@@ -117,6 +117,7 @@ class G extends(r = l.PureComponent) {
       } = this.props;
       if (null != e && null != n && null != r && null != e.session_id && null != e.application_id) {
         var a, o;
+        let s = (0, m.Z)(e, L.xjy.EMBEDDED);
         c.Z.join({
           userId: n,
           sessionId: e.session_id,
@@ -126,9 +127,9 @@ class G extends(r = l.PureComponent) {
           source: L.Sbl.MESSAGE_EMBED,
           analyticsLocations: t,
           partyId: null == (a = e.party) ? void 0 : a.id,
-          embedded: (0, m.Z)(e, L.xjy.EMBEDDED),
+          embedded: s,
           activity: e
-        }), (0, h.Z)({
+        }), s || (0, h.Z)({
           type: L.q5t.JOIN,
           source: L.Sbl.MESSAGE_EMBED,
           userId: n,
