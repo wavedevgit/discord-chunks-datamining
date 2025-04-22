@@ -1,6 +1,6 @@
 /**
   Module ID: 10923
-  Original File Name: 8ae4ce1b84beb2bc
+  Original File Name: 1b1a1d72a287b8ea
 **/
 .editCard_a25a68 {
     background-color: var(--background-secondary);
@@ -5180,7 +5180,13 @@
     color: var(--interactive-active)
 }
 
+.rulesTable_c02108,.rulesTable_c02108>tbody {
+    display: block;
+    width: 100%
+}
+
 .ruleContainer_c02108 {
+    align-items: center;
     border-top: 1px solid var(--background-modifier-accent);
     display: flex;
     flex-direction: row;
@@ -5202,26 +5208,14 @@
     margin: 16px 0
 }
 
-.ruleItemHeader_c02108 {
-    margin: 0 0 16px
-}
-
-.ruleItemSwitch_c02108 {
-    margin-left: auto
-}
-
-.numericalRuleSubItemContainer_c02108,.numericalRuleSubText_c02108 {
+.numericalRuleSubItemContainer_c02108 {
     display: flex;
     flex-direction: row;
     width: 100%
 }
 
-.numericalRuleSubText_c02108 {
-    align-items: center
-}
-
 .numericalRuleInput_c02108 {
-    margin: -4px 4px 0;
+    margin: 0 var(--space-16);
     width: 50px
 }
 
@@ -12966,4 +12960,4 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=8ae4ce1b84beb2bc.css.map*/
+/*# sourceMappingURL=1b1a1d72a287b8ea.css.map*/
