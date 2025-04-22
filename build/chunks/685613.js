@@ -9,8 +9,8 @@ n(192379);
 var o = n(120356),
   l = n.n(o),
   a = n(692547),
-  c = n(469244),
-  u = n(780384),
+  c = n(780384),
+  u = n(481060),
   d = n(113434),
   m = n(475595),
   p = n(78826),
@@ -28,7 +28,7 @@ let j = function(e) {
     theme: h = x.BRd.DARK,
     withCosponsor: f = !0,
     withGameTile: j = !0
-  } = e, b = (0, u.wj)(h) ? x.BRd.DARK : x.BRd.LIGHT, C = (0, d.Gd)(s.id, b), v = f && null != s.config.cosponsorMetadata && null != C;
+  } = e, b = (0, c.wj)(h) ? x.BRd.DARK : x.BRd.LIGHT, C = (0, d.Gd)(s.id, b), v = f && null != s.config.cosponsorMetadata && null != C;
   return (0, i.jsxs)("div", {
     className: l()(g.partnerBranding, t),
     children: [j && (0, i.jsx)(p.Fl, {
@@ -67,7 +67,7 @@ let j = function(e) {
         style: {
           margin: "0 ".concat(o, "px")
         },
-        children: (0, i.jsx)(c.P, {
+        children: (0, i.jsx)(u.P$X, {
           className: g.cosponsorBrandSeparator,
           color: a.Z.colors.WHITE
         })

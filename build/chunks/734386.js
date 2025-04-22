@@ -26,8 +26,8 @@ var r = n(200651),
   O = n(594174),
   E = n(700785),
   I = n(51144),
-  S = n(396769),
-  P = n(967128),
+  P = n(396769),
+  S = n(967128),
   Z = n(318374),
   N = n(981631),
   T = n(388032),
@@ -67,16 +67,16 @@ function w(e) {
       return r || l
     }).value()
   }, [t, k]), U = j.Z.can(N.Plq.MANAGE_CHANNELS, t) || j.Z.can(N.Plq.MANAGE_ROLES, t), B = i.useCallback(() => l(!1), []);
-  return (0, r.jsxs)(P.ZP, {
+  return (0, r.jsxs)(S.ZP, {
     channelId: t.id,
-    children: [(0, r.jsx)(P.Kq, {
+    children: [(0, r.jsx)(S.Kq, {
       locked: !0,
       channelType: t.type
-    }), (0, r.jsx)(P.Ot, {
+    }), (0, r.jsx)(S.Ot, {
       children: T.intl.format(T.t.I3R7Vl, {
         channelName: a
       })
-    }), (0, r.jsx)(P.jz, {
+    }), (0, r.jsx)(S.jz, {
       children: T.intl.format(T.t.QuwqjI, {
         channelName: a,
         topicHook: () => x.Z.parseTopic(t.topic, !0, {
@@ -85,14 +85,14 @@ function w(e) {
       })
     }), U ? (0, r.jsxs)("div", {
       className: A.channelSettingButtons,
-      children: [(0, r.jsx)(S.Z, {
+      children: [(0, r.jsx)(P.Z, {
         label: T.intl.string(T.t.dMJ3Y2),
         onClick: () => l(!0),
         icon: (0, r.jsx)(p.BFJ, {
           size: "xs",
           color: "currentColor"
         })
-      }), (0, r.jsx)(S.Z, {
+      }), (0, r.jsx)(P.Z, {
         label: T.intl.string(T.t["3gUsJS"]),
         onClick: function() {
           h.ZP.open(t.id)

@@ -1,22 +1,20 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => u
+  Z: () => c
 }), n(388685);
 var i = n(200651),
   r = n(192379),
   s = n(692547),
-  l = n(531057),
-  a = n(865824),
-  o = n(481060),
-  c = n(388032),
-  d = n(244825);
+  l = n(481060),
+  a = n(388032),
+  o = n(244825);
 
-function u(e) {
+function c(e) {
   var t, n, {
-      children: u,
-      lineClamp: m = 2
+      children: c,
+      lineClamp: d = 2
     } = e,
-    g = function(e, t) {
+    u = function(e, t) {
       if (null == e) return {};
       var n, i, r = function(e, t) {
         if (null == e) return {};
@@ -31,38 +29,38 @@ function u(e) {
       }
       return r
     }(e, ["children", "lineClamp"]);
-  let [p, h] = r.useState(!1), [f, b] = r.useState(null), _ = null != f && (0, i.jsx)("button", {
-    className: d.button,
-    onClick: () => h(e => !e),
-    children: (0, i.jsxs)(o.Text, {
-      className: d.seeMore,
+  let [m, g] = r.useState(!1), [p, h] = r.useState(null), f = null != p && (0, i.jsx)("button", {
+    className: o.button,
+    onClick: () => g(e => !e),
+    children: (0, i.jsxs)(l.Text, {
+      className: o.seeMore,
       variant: "text-sm/medium",
       color: "text-brand",
-      children: [p ? c.intl.string(c.t["JQX/PT"]) : c.intl.string(c.t.Fbrd8P), p ? (0, i.jsx)(a.u, {
+      children: [m ? a.intl.string(a.t["JQX/PT"]) : a.intl.string(a.t.Fbrd8P), m ? (0, i.jsx)(l.u04, {
         color: s.Z.colors.TEXT_BRAND,
         size: "xs"
-      }) : (0, i.jsx)(l.C, {
+      }) : (0, i.jsx)(l.CJ0, {
         color: s.Z.colors.TEXT_BRAND,
         size: "xs"
       })]
     })
-  }), [x, E] = r.useState(null), j = r.useCallback(() => {
-    if (null == x) return;
+  }), [b, _] = r.useState(null), x = r.useCallback(() => {
+    if (null == b) return;
     let {
       scrollHeight: e,
       clientHeight: t
-    } = x;
-    e > t && b({
+    } = b;
+    e > t && h({
       truncatedHeight: t,
       expandedHeight: e
     })
-  }, [x]);
+  }, [b]);
   r.useEffect(() => {
-    requestAnimationFrame(j)
-  }, [j, u, m]);
-  let C = "auto";
-  return null != f && (C = p ? "".concat(f.expandedHeight, "px") : "".concat(f.truncatedHeight, "px")), (0, i.jsxs)("div", {
-    children: [(0, i.jsx)(o.Text, (t = function(e) {
+    requestAnimationFrame(x)
+  }, [x, c, d]);
+  let E = "auto";
+  return null != p && (E = m ? "".concat(p.expandedHeight, "px") : "".concat(p.truncatedHeight, "px")), (0, i.jsxs)("div", {
+    children: [(0, i.jsx)(l.Text, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           i = Object.keys(n);
@@ -79,14 +77,14 @@ function u(e) {
         })
       }
       return e
-    }({}, g), n = n = {
-      className: d.content,
-      lineClamp: p ? void 0 : m,
-      ref: E,
+    }({}, u), n = n = {
+      className: o.content,
+      lineClamp: m ? void 0 : d,
+      ref: _,
       style: {
-        height: C
+        height: E
       },
-      children: u
+      children: c
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -96,6 +94,6 @@ function u(e) {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t)), _]
+    }), t)), f]
   })
 }

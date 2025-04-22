@@ -26,9 +26,9 @@ var r = n(200651),
   O = n(388032),
   E = n(54433),
   I = n(44946),
-  S = n(12740);
+  P = n(12740);
 
-function P(e) {
+function S(e) {
   var t;
   let {
     log: n,
@@ -36,7 +36,7 @@ function P(e) {
     guild: a
   } = e, {
     analyticsLocations: d
-  } = (0, p.ZP)(), m = g.nm(n), C = g.QM(n), v = null == (t = g.V$(j.zUn.REASON, n)) ? void 0 : t.newValue, S = g.J5(n), P = (0, h.LJ)(n.id), Z = (0, c.e7)([y.ZP], () => null != n.userId ? y.ZP.getMember(l.guildId, n.userId) : null, [l.guildId, n.userId]), N = (0, _.X)(null == Z ? void 0 : Z.guildId, null == Z ? void 0 : Z.colorStrings), T = i.useCallback(e => t => {
+  } = (0, p.ZP)(), m = g.nm(n), C = g.QM(n), v = null == (t = g.V$(j.zUn.REASON, n)) ? void 0 : t.newValue, P = g.J5(n), S = (0, h.LJ)(n.id), Z = (0, c.e7)([y.ZP], () => null != n.userId ? y.ZP.getMember(l.guildId, n.userId) : null, [l.guildId, n.userId]), N = (0, _.X)(null == Z ? void 0 : Z.guildId, null == Z ? void 0 : Z.colorStrings), T = i.useCallback(e => t => {
     t.preventDefault(), t.stopPropagation(), null != e && (0, f.RE)(e, d)
   }, [d]), A = i.useCallback(() => null == n.user ? null : (0, r.jsx)(u.ua7, {
     text: O.intl.string(O.t.mvsi9v),
@@ -84,7 +84,7 @@ function P(e) {
         children: (0, r.jsx)(u.Text, {
           variant: "text-sm/medium",
           color: "header-primary",
-          children: P
+          children: S
         })
       })]
     }), null != v && (0, r.jsx)("div", {
@@ -98,7 +98,7 @@ function P(e) {
           children: v
         })]
       })
-    }), null == v && null != S && (0, r.jsx)("div", {
+    }), null == v && null != P && (0, r.jsx)("div", {
       className: E.auditLogSecondaryContainer,
       children: (0, r.jsxs)("div", {
         className: E.auditLogSecondary,
@@ -106,10 +106,10 @@ function P(e) {
           variant: "text-sm/normal",
           color: "text-muted",
           tag: "span",
-          children: S
+          children: P
         })]
       })
-    }), null == v && null == S && (0, r.jsx)("div", {
+    }), null == v && null == P && (0, r.jsx)("div", {
       className: E.auditLogSecondaryContainer,
       children: (0, r.jsx)("div", {
         className: E.auditLogSecondary,
@@ -142,9 +142,9 @@ function Z(e) {
     }(t.guildId, t.userId)
   }, [t.guildId, t.userId]), null == n || 0 === l.length) ? null : (0, r.jsx)(u.xJW, {
     title: O.intl.string(O.t.flCxLi),
-    titleClassName: S.infoTitle,
+    titleClassName: P.infoTitle,
     children: l.length > 0 ? (0, r.jsx)(v.WM, {
-      children: l.map(e => (0, r.jsx)(P, {
+      children: l.map(e => (0, r.jsx)(S, {
         log: e,
         member: t,
         guild: n

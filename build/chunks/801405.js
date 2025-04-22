@@ -35,7 +35,7 @@ function v(e) {
     parentAnalyticsLocation: j
   } = (0, c.ZP)(), O = n === y.IlC.POPOUT, E = i.useRef(null), {
     currentLayout: I,
-    mode: S
+    mode: P
   } = (0, l.cj)([u.Z], () => {
     let e = u.Z.getMode(t.id),
       r = n === y.IlC.POPOUT;
@@ -45,9 +45,9 @@ function v(e) {
       currentLayout: i,
       mode: e
     }
-  }, [t, n]), P = (0, l.e7)([f.Z], () => f.Z.getVoiceChannelId() === t.id, [t.id]);
+  }, [t, n]), S = (0, l.e7)([f.Z], () => f.Z.getVoiceChannelId() === t.id, [t.id]);
   i.useEffect(() => {
-    E.current = S
+    E.current = P
   });
   let Z = i.useRef(I),
     {
@@ -63,7 +63,7 @@ function v(e) {
       }
     }, [p, O, v]),
     A = o && !O,
-    w = S === y.WtW.VIDEO && P && !A,
+    w = P === y.WtW.VIDEO && S && !A,
     R = i.useCallback((e, r) => {
       r !== e && (a.Z.updateLayout(t.id, r, n), r === y.AEg.FULL_SCREEN && t.isPrivate() && g.S.dispatch(y.CkL.TEXTAREA_BLUR))
     }, [n, t]),
@@ -118,10 +118,10 @@ function v(e) {
       O && (0, b.isMac)() || t(I)
     }
   }, [I, O]), i.useEffect(() => {
-    null != T && E.current === y.WtW.VIDEO && S === y.WtW.VOICE && (0, _.Pr)(T, N)
-  }, [N, S, E, T]), i.useEffect(() => {
-    !P && O && x()
-  }, [P, O]), w) ? (0, r.jsx)(h.Z, {
+    null != T && E.current === y.WtW.VIDEO && P === y.WtW.VOICE && (0, _.Pr)(T, N)
+  }, [N, P, E, T]), i.useEffect(() => {
+    !S && O && x()
+  }, [S, O]), w) ? (0, r.jsx)(h.Z, {
     themeable: !1,
     node: T,
     guestWindow: p,

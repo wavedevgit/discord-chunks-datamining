@@ -26,8 +26,8 @@ var r = n(200651),
   O = n(82965),
   E = n(127379),
   I = n(981631),
-  S = n(921944),
-  P = n(388032),
+  P = n(921944),
+  S = n(388032),
   Z = n(393740);
 
 function N(e) {
@@ -73,7 +73,7 @@ function N(e) {
         visibleContent: i,
         markAsDismissed: l
       } = e, s = i === o.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP && !n && !M;
-      return !0 === $.current && !1 === s && l(S.L.AUTO_DISMISS), $.current !== s && ($.current = s), (0, r.jsx)(a.yRy, {
+      return !0 === $.current && !1 === s && l(P.L.AUTO_DISMISS), $.current !== s && ($.current = s), (0, r.jsx)(a.yRy, {
         targetElementRef: ee,
         fixed: !0,
         shouldShow: M && (N === E.D.ACTIVITY || null == N),
@@ -99,12 +99,12 @@ function N(e) {
             onMouseEnter: D,
             onMouseLeave: U,
             isHovered: M,
-            onClick: () => l(S.L.UNKNOWN)
+            onClick: () => l(P.L.UNKNOWN)
           }) : (0, r.jsx)(r.Fragment, {})
         },
         children: () => (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(a.ua7, {
-            text: P.intl.string(P.t.P8vmUl),
+            text: S.intl.string(S.t.P8vmUl),
             color: a.FGA.BRAND,
             forceOpen: !0,
             shouldShow: s,
@@ -137,7 +137,7 @@ function N(e) {
                   isActivityActive: z,
                   className: B ? "" : Z.controlButton,
                   onClick: () => {
-                    Q(), (i === o.z.ACTIVITIES_MINI_SHELF_SPARKLES || i === o.z.ACTIVITY_GDM_ROCKET_SPARKLE || i === o.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || i === o.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || i === o.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && l(S.L.TAKE_ACTION)
+                    Q(), (i === o.z.ACTIVITIES_MINI_SHELF_SPARKLES || i === o.z.ACTIVITY_GDM_ROCKET_SPARKLE || i === o.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || i === o.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || i === o.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && l(P.L.TAKE_ACTION)
                   },
                   onMouseEnter: Y,
                   onMouseLeave: U

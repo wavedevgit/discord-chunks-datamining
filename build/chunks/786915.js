@@ -50,8 +50,8 @@ function C(e) {
     guildScheduledEvent: O,
     shouldPrioritizeGroupPlusIcon: E = !1,
     embeddedActivity: I,
-    iconClassName: S,
-    look: P,
+    iconClassName: P,
+    look: S,
     size: Z,
     buttonText: N
   } = e, T = function(e, t) {
@@ -82,8 +82,8 @@ function C(e) {
     },
     iconComponent: null == t || E ? s.ejJ : s.gQj,
     label: null != t ? _.intl.string(_.t["OzOM/v"]) : _.intl.string(_.t["6F9ivr"]),
-    iconClassName: S,
-    look: P,
+    iconClassName: P,
+    look: S,
     size: Z,
     buttonText: N
   }) : null != k && null != C && m.Z.can(b.Plq.CREATE_INSTANT_INVITE, C) ? (0, r.jsx)(g.Z, y({
@@ -142,8 +142,8 @@ function C(e) {
     },
     iconComponent: null == t || E ? s.ejJ : s.gQj,
     label: null != t ? _.intl.string(_.t["OzOM/v"]) : _.intl.string(_.t["6F9ivr"]),
-    iconClassName: S,
-    look: P,
+    iconClassName: P,
+    look: S,
     size: Z,
     buttonText: N
   }, T)) : null

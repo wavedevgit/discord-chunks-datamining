@@ -153,7 +153,7 @@ function X(e) {
       timestampSec: 0,
       duration: 10
     }
-  }, c.X), eK = (0, _.km)(e => e.setVideoProgress), eW = (0, _.km)(e => e.muted), eX = (0, _.km)(e => e.volume), e$ = (0, d.e7)([v.Z], () => v.Z.useReducedMotion), eJ = (0, l.useRef)(null), e0 = (0, l.useRef)(null), e1 = l.useRef(!0), e2 = (null == (t = er.userStatus) ? void 0 : t.completedAt) != null, e6 = (0, _.km)(e => e.transcript), [e8, e4] = l.useState(null), [e3, e9] = l.useState(!1), [e7, e5] = l.useState(!1), [te, tt] = l.useState(null), tn = e2 ? null != (b = null == (n = eJ.current) ? void 0 : n.duration) ? b : 0 : Math.max(eH.maxTimestampSec, ey.progressSeconds), tr = l.useMemo(() => (0, D.T)({
+  }, c.X), eK = (0, _.km)(e => e.setVideoProgress), eW = (0, _.km)(e => e.muted), eX = (0, _.km)(e => e.volume), e$ = (0, d.e7)([v.Z], () => v.Z.useReducedMotion), eJ = (0, l.useRef)(null), e0 = (0, l.useRef)(null), e1 = l.useRef(!0), e2 = (null == (t = er.userStatus) ? void 0 : t.completedAt) != null, e6 = (0, _.km)(e => e.transcript), [e8, e4] = l.useState(null), [e9, e3] = l.useState(!1), [e7, e5] = l.useState(!1), [te, tt] = l.useState(null), tn = e2 ? null != (b = null == (n = eJ.current) ? void 0 : n.duration) ? b : 0 : Math.max(eH.maxTimestampSec, ey.progressSeconds), tr = l.useMemo(() => (0, D.T)({
     quest: er,
     location: Z.dr.VIDEO_MODAL
   }), [er]), {
@@ -230,7 +230,7 @@ function X(e) {
   } = (0, T.Z)({
     getCurrentVideoTime: ty,
     isPlaying: eh === R.rq.PLAYING,
-    isMetadataLoaded: e3,
+    isMetadataLoaded: e9,
     isInitialSeekComplete: e7,
     onAnalytics: tO,
     emitIntervalMs: 4e3,
@@ -437,7 +437,7 @@ function X(e) {
           tr.info("[QV] | handleLoadedData: loadingFirstChunk: ".concat(eT)), eT && (td(eL, null != eG.current ? Date.now() - eG.current : null), eN(!1), null != tc.current && (tc.current.config.minAutoBitrate = 8e5))
         },
         onLoadedMetadata: e => {
-          null != eJ.current && (tr.info("[QV] | handleLoadedMetadata | videoAssetId: ".concat(ta)), e9(!0), ta !== N.i.VIDEO_PLAYER_VIDEO_HLS && tI(ti), eW ? eJ.current.volume = 0 : eJ.current.volume = eX)
+          null != eJ.current && (tr.info("[QV] | handleLoadedMetadata | videoAssetId: ".concat(ta)), e3(!0), ta !== N.i.VIDEO_PLAYER_VIDEO_HLS && tI(ti), eW ? eJ.current.volume = 0 : eJ.current.volume = eX)
         },
         onLoadStart: () => {
           eG.current = Date.now(), tu(eL), tr.info("[QV] | handleLoadStart | loadingStartTime: ".concat(eG.current))
