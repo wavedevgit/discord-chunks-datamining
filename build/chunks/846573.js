@@ -1,8 +1,9 @@
-/** Chunk was on 85679 **/
-n.d(e, {
-  X: () => l
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  X: () => r
 });
-let l = (0, n(987170).Z)({
+let r = (0, n(987170).Z)({
   kind: "user",
   id: "2025-02_2025_client_platform_holdout",
   label: "Client Platform Holdout - H1 2025",

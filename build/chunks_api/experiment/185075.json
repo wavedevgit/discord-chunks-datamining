@@ -1,0 +1,1 @@
+{"id":"185075","type":"experiment","data":{"kind":"user","id":"2025-04_desktop_multiple_background_updates_2","label":"Support multiple native background updates","defaultConfig":{"nativeUpdateCount":1},"treatments":[{"id":1,"label":"Allow multiple native background updates","config":{"nativeUpdateCount":3}}]},"fromModule":{"id":"web.js"}}
