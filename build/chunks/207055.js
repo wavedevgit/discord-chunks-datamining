@@ -115,24 +115,24 @@ let R = [],
       voiceStates: c,
       collapsed: u,
       collapsedMax: d = 6,
-      tabIndex: h,
-      location: f,
-      numAudience: b,
-      withGuildIcon: y = !1,
-      className: C,
-      children: j
-    } = e, [O, E] = i.useState(null), [I, P] = i.useState(!1), S = i.useRef(null), T = (0, m.Es)(l.id, null != c ? c : R), k = i.useRef(new s.sW(50, () => {
-      E(S.current), S.current = null
-    })), M = i.useRef(new s.sW(175, () => {
-      E(null)
-    })), L = i.useCallback(e => {
-      t && (P(!0), M.current.cancel(), S.current = e, k.current.delay())
-    }, [t]), D = i.useCallback(e => {
-      t && (k.current.cancel(), O === e && (P(!1), M.current.delay()))
-    }, [t, O]), U = (0, a.Wu)([v.Z], () => {
+      tabIndex: f,
+      location: b,
+      numAudience: y,
+      withGuildIcon: C = !1,
+      className: j,
+      children: O
+    } = e, [E, I] = i.useState(null), [P, S] = i.useState(!1), T = i.useRef(null), k = (0, m.Es)(l.id, null != c ? c : R), M = i.useRef(new s.sW(50, () => {
+      I(T.current), T.current = null
+    })), L = i.useRef(new s.sW(175, () => {
+      I(null)
+    })), D = i.useCallback(e => {
+      t && (S(!0), L.current.cancel(), T.current = e, M.current.delay())
+    }, [t]), U = i.useCallback(e => {
+      t && (M.current.cancel(), E === e && (S(!1), L.current.delay()))
+    }, [t, E]), B = (0, a.Wu)([v.Z], () => {
       if (u) return [];
       let e = new Set;
-      return null == T || T.forEach(t => {
+      return null == k || k.forEach(t => {
         let {
           user: n
         } = t;
@@ -141,50 +141,52 @@ let R = [],
         })
       }), Array.from(e)
     });
-    (0, p.Z)(U);
-    let B = (() => {
-      if (null == T || 0 === T.length) return null;
-      let e = (u && T.length > d + 1 ? T.slice(0, d) : T).map(e => {
-        var t;
-        let {
-          user: i,
-          nick: o,
-          voiceState: a
-        } = e;
-        return (0, r.jsx)(w, {
-          user: i,
-          nick: o,
-          isSelfOnOtherClient: _.default.getId() === i.id && a.sessionId !== _.default.getSessionId(),
-          mute: a.isVoiceMuted(),
-          deaf: a.isVoiceDeafened(),
-          video: a.selfVideo,
-          serverMute: a.mute,
-          serverDeaf: a.deaf,
-          sessionId: null != (t = a.sessionId) ? t : "",
-          channel: l,
-          collapsed: u,
-          canDrag: n && x.Z.can(N.Plq.MOVE_MEMBERS, l),
-          showPreview: L,
-          hidePreview: D,
-          previewIsOpen: I,
-          shouldShowPreview: O === i.id,
-          tabIndex: h,
-          location: f
-        }, i.id)
-      });
-      return null != b && b > 0 ? e.push((0, r.jsx)(Z.ul, {
+    (0, p.Z)(B);
+    let G = (() => {
+      if (null == k || 0 === k.length) return null;
+      let e = u && k.length > d + 1 ? k.slice(0, d) : k,
+        t = h.Z.getGuildRingingUsers(l.id),
+        i = e.map(e => {
+          var i;
+          let {
+            user: o,
+            nick: a,
+            voiceState: s
+          } = e, c = t.has(o.id);
+          return (0, r.jsx)(w, {
+            user: o,
+            nick: a,
+            isSelfOnOtherClient: _.default.getId() === o.id && s.sessionId !== _.default.getSessionId(),
+            mute: s.isVoiceMuted(),
+            deaf: s.isVoiceDeafened(),
+            video: s.selfVideo,
+            serverMute: s.mute,
+            serverDeaf: s.deaf,
+            sessionId: null != (i = s.sessionId) ? i : "",
+            channel: l,
+            collapsed: u,
+            canDrag: n && x.Z.can(N.Plq.MOVE_MEMBERS, l),
+            showPreview: D,
+            hidePreview: U,
+            previewIsOpen: P,
+            shouldShowPreview: E === o.id,
+            tabIndex: f,
+            location: b
+          }, "voice-user-".concat(o.id, "-").concat(c))
+        });
+      return null != y && y > 0 ? i.push((0, r.jsx)(Z.ul, {
         collapsed: u,
-        numAudience: b
-      })) : u && T.length > d + 1 && e.push((0, r.jsx)(Z.XX, {
-        numUsers: T.length - d
-      })), e
+        numAudience: y
+      })) : u && k.length > d + 1 && i.push((0, r.jsx)(Z.XX, {
+        numUsers: k.length - d
+      })), i
     })();
-    return null == B && null == j ? null : (0, r.jsxs)(g.eJ, {
-      className: o()(C, A.list, {
+    return null == G && null == O ? null : (0, r.jsxs)(g.eJ, {
+      className: o()(j, A.list, {
         [A.collapsed]: u,
-        [A.withGuildIcon]: y
+        [A.withGuildIcon]: C
       }),
       collapsed: u,
-      children: [B, j]
+      children: [G, O]
     })
   }

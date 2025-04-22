@@ -83,8 +83,6 @@ function p(e) {
         })]
       }), (0, r.jsx)(u.ZP, {
         userId: t.id,
-        containerClassName: _.clanTagContainer,
-        className: _.clanTag,
         onClose: y
       }), i]
     })]

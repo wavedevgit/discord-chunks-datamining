@@ -26,8 +26,8 @@ var r = n(200651),
   j = n(314897),
   P = n(592125),
   E = n(979651),
-  Z = n(574254),
-  I = n(374129),
+  I = n(574254),
+  Z = n(374129),
   x = n(639351),
   C = n(630388),
   T = n(51144),
@@ -88,7 +88,7 @@ function M(e) {
     voicePlatform: j,
     application: P,
     guildId: E,
-    channelId: Z,
+    channelId: I,
     user: T,
     disconnected: L
   } = e, {
@@ -149,7 +149,7 @@ function M(e) {
     })
   }, "xbox")) : (S === w.YE.PLAYSTATION || j === A.wR.PLAYSTATION) && M.push((0, r.jsx)("div", {
     className: _.iconSpacing,
-    children: (0, r.jsx)(I.Z, {
+    children: (0, r.jsx)(Z.Z, {
       className: o()(_.icon, y)
     })
   }, "playstation")), h && M.push((0, r.jsx)(s.DY3, {
@@ -178,7 +178,7 @@ function M(e) {
         application: P,
         iconClassName: y,
         guildId: E,
-        channelId: Z,
+        channelId: I,
         userId: T.id
       }, "".concat(T.id, "-game"))
     })]
@@ -209,7 +209,7 @@ let U = l.forwardRef(function(e, t) {
       return l
     }(e, ["avatarContainerClass", "userNameClassName", "size", "selected", "disabled", "isOverlay"]);
   let {
-    onClick: I,
+    onClick: Z,
     onKeyDown: x,
     onDoubleClick: C,
     onContextMenu: w,
@@ -240,23 +240,23 @@ let U = l.forwardRef(function(e, t) {
   return l.useEffect(() => {
     let e = !1,
       t = () => {
-        e !== Z.Z.isOpen() && ((e = Z.Z.isOpen()) || eo(!1))
+        e !== I.Z.isOpen() && ((e = I.Z.isOpen()) || eo(!1))
       };
-    return Z.Z.addChangeListener(t), () => Z.Z.removeChangeListener(t)
+    return I.Z.addChangeListener(t), () => I.Z.removeChangeListener(t)
   }, []), (0, r.jsx)(s.kL8, {
     ref: t,
     className: o()(J, {
       [_.voiceUser]: !0,
       [_.overlap]: X,
       [_.selected]: p,
-      [_.clickable]: null != I,
+      [_.clickable]: null != Z,
       [_.userSmall]: d === N.ipw.SMALL,
       [_.userLarge]: d === N.ipw.LARGE,
       [_.disabled]: !p && f,
       [_.ringing]: q
     }),
     onClick: e => {
-      null == I || I(e, Q)
+      null == Z || Z(e, Q)
     },
     onDoubleClick: e => {
       null == C || C(e, Q)

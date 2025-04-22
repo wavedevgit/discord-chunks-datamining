@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(687516),
   P = n(718805),
   E = n(871118),
-  Z = n(981631),
-  I = n(388032),
+  I = n(981631),
+  Z = n(388032),
   x = n(768780);
 class C extends l.PureComponent {
   componentDidMount() {
@@ -33,7 +33,7 @@ class C extends l.PureComponent {
       user: e,
       streamApplication: t
     } = this.props;
-    v.default.track(Z.rMx.OPEN_POPOUT, {
+    v.default.track(I.rMx.OPEN_POPOUT, {
       type: "Stream Preview",
       other_user_id: e.id,
       application_id: null != t ? t.id : null,
@@ -93,8 +93,8 @@ class C extends l.PureComponent {
             channelId: n.channelId,
             analyticsParams: {
               location: {
-                page: Z.ZY5.GO_LIVE_MODAL,
-                section: Z.jXE.STREAM_VIEWER_POPOUT
+                page: I.ZY5.GO_LIVE_MODAL,
+                section: I.jXE.STREAM_VIEWER_POPOUT
               }
             },
             onAction: i
@@ -110,7 +110,7 @@ class C extends l.PureComponent {
           }), !a && (0, r.jsx)(p.Z, {
             type: p.Z.Types.INLINE,
             className: x.protip,
-            children: __OVERLAY__ ? I.intl.string(I.t["YRdw7+"]) : I.intl.string(I.t.CCTgbG)
+            children: __OVERLAY__ ? Z.intl.string(Z.t["YRdw7+"]) : Z.intl.string(Z.t.CCTgbG)
           })]
         })]
       })
@@ -138,10 +138,10 @@ function T(e) {
       }
       return l
     }(e, ["user", "channel"]);
-  let [c, d] = (0, a.Wu)([y.Z, b.Z, O.Z, f.Z], () => (0, S.p9)(o, y.Z, b.Z, O.Z, f.Z)), p = (0, a.e7)([m.Z], () => m.Z.getStreamForUser(i.id, o.getGuildId())), v = (0, a.e7)([m.Z], () => m.Z.getActiveStreamForApplicationStream(p)), P = (0, a.e7)([g.default], () => g.default.getId()), E = (0, j.Cf)(p), Z = (0, a.e7)([h.Z], () => (0, j.Um)(p, h.Z)), I = l.useMemo(() => ({
+  let [c, d] = (0, a.Wu)([y.Z, b.Z, O.Z, f.Z], () => (0, S.p9)(o, y.Z, b.Z, O.Z, f.Z)), p = (0, a.e7)([m.Z], () => m.Z.getStreamForUser(i.id, o.getGuildId())), v = (0, a.e7)([m.Z], () => m.Z.getActiveStreamForApplicationStream(p)), P = (0, a.e7)([g.default], () => g.default.getId()), E = (0, j.Cf)(p), I = (0, a.e7)([h.Z], () => (0, j.Um)(p, h.Z)), Z = l.useMemo(() => ({
     [o.guild_id]: [i.id]
   }), [o.guild_id, i.id]);
-  return (0, u.$)(I), (0, r.jsx)(C, (t = function(e) {
+  return (0, u.$)(Z), (0, r.jsx)(C, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -166,7 +166,7 @@ function T(e) {
     stream: p,
     activeStream: v,
     currentUserId: P,
-    activity: Z
+    activity: I
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
