@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => z
+  Z: () => K
 });
 var r, i = n(442837),
   a = n(433517),
@@ -90,8 +90,7 @@ let b = {
     alwaysShowLinkDecorations: !1,
     roleStyle: "username",
     submitButtonEnabled: !1,
-    syncProfileThemeWithUserTheme: !1,
-    hideGuildTags: !1
+    syncProfileThemeWithUserTheme: !1
   },
   y = b,
   v = {
@@ -236,16 +235,7 @@ function Y(e) {
     contrast: t
   })
 }
-
-function W(e) {
-  let {
-    hideTags: t
-  } = e;
-  y = m(p({}, y), {
-    hideGuildTags: t
-  })
-}
-class K extends(r = i.ZP.DeviceSettingsStore) {
+class W extends(r = i.ZP.DeviceSettingsStore) {
   initialize(e) {
     this.waitFor(c.Z), isNaN((y = p({}, b, null != e ? e : null)).fontSize) && (y.fontSize = d.yqN.FONT_SIZE_DEFAULT), 0 > f.fP.indexOf(null != y.messageGroupSpacing ? y.messageGroupSpacing : -1) && (y.messageGroupSpacing = null)
   }
@@ -353,14 +343,11 @@ class K extends(r = i.ZP.DeviceSettingsStore) {
   get roleStyle() {
     return y.roleStyle
   }
-  get hideTags() {
-    return y.hideGuildTags
-  }
   getUserAgnosticState() {
     return y
   }
 }
-_(K, "displayName", "AccessibilityStore"), _(K, "persistKey", "AccessibilityStore"), _(K, "migrations", [() => {
+_(W, "displayName", "AccessibilityStore"), _(W, "persistKey", "AccessibilityStore"), _(W, "migrations", [() => {
   let e = "a11yFontScale",
     t = "a11yZoom",
     n = "a11yColorblindMode",
@@ -415,8 +402,13 @@ _(K, "displayName", "AccessibilityStore"), _(K, "persistKey", "AccessibilityStor
     delete e.disableVoiceBackgrounds
   } catch (e) {}
   return e
+}, e => {
+  try {
+    delete e.hideGuildTags
+  } catch (e) {}
+  return e
 }]);
-let z = new K(s.Z, {
+let K = new W(s.Z, {
   ACCESSIBILITY_SET_FONT_SIZE: I,
   ACCESSIBILITY_SET_ZOOM: S,
   ACCESSIBILITY_RESET_TO_DEFAULT: T,
@@ -439,6 +431,5 @@ let z = new K(s.Z, {
   ACCESSIBILITY_SET_MESSAGE_GROUP_SPACING: H,
   ACCESSIBILITY_SUBMIT_BUTTON_TOGGLE: x,
   ACCESSIBILITY_SYNC_PROFILE_THEME_WITH_USER_THEME_TOGGLE: M,
-  ACCESSIBILITY_SET_CONTRAST: Y,
-  ACCESSIBILITY_SET_HIDE_TAGS: W
+  ACCESSIBILITY_SET_CONTRAST: Y
 })

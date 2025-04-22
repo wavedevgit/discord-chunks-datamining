@@ -130,8 +130,8 @@ function z(e) {
     [N, y] = r.useState(o.showActivity),
     [A, R] = r.useState(null),
     [M, G] = r.useState(null),
-    [z, Y] = r.useState(!1),
-    [W, K] = r.useState([]),
+    [z, W] = r.useState(!1),
+    [Y, K] = r.useState([]),
     q = (0, x.rR)(o.type),
     X = _.Z.get(q);
   r.useEffect(() => {
@@ -283,7 +283,7 @@ function z(e) {
           date: s
         })
       }, "member-since")));
-      let l = W.includes(e.id),
+      let l = Y.includes(e.id),
         a = U.intl.string(U.t.wzzjk5);
       if (null == r || 0 === r.length)
         if (!0 !== _.Z.get(e.type).hasMetadata) return null;
@@ -305,9 +305,9 @@ function z(e) {
         disabled: l,
         "aria-label": U.intl.string(U.t.sCkLYG),
         onClick: l ? void 0 : () => {
-          Y(!0), g.Z.refresh(e.type, e.id).finally(() => {
+          W(!0), g.Z.refresh(e.type, e.id).finally(() => {
             setTimeout(() => {
-              W.push(e.id), K(W), Y(!1)
+              Y.push(e.id), K(Y), W(!1)
             }, 2e3)
           })
         },
@@ -423,7 +423,7 @@ function z(e) {
   })
 }
 
-function Y() {
+function W() {
   return r.useEffect(() => () => {
     (0, O.EW)(o.z.NEW_CRUNCHYROLL_CONNECTION, {
       dismissAction: M.L.AUTO
@@ -445,7 +445,7 @@ function Y() {
   })
 }
 
-function W(e) {
+function Y(e) {
   let t = _.Z.get(e);
   (0, j.Z)({
     platformType: t.type
@@ -460,7 +460,7 @@ function K() {
   function e() {
     m.Z.dispatch({
       type: "CONNECTIONS_GRID_MODAL_SHOW",
-      onComplete: W
+      onComplete: Y
     })
   }
   let t = (0, x.fq)();
@@ -551,7 +551,7 @@ let X = () => {
     className: V.__invalid_connections,
     tag: u.RB0.H1,
     title: U.intl.string(U.t["3fe7U1"]),
-    children: [(0, i.jsx)(Y, {}), (0, i.jsx)(q, {
+    children: [(0, i.jsx)(W, {}), (0, i.jsx)(q, {
       fetching: t,
       accounts: n,
       theme: s,

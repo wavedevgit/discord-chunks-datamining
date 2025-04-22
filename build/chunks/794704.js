@@ -45,8 +45,8 @@ var i = n(200651),
   F = n(430561),
   H = n(131704),
   z = n(598077),
-  Y = n(189786),
-  W = n(199902),
+  W = n(189786),
+  Y = n(199902),
   K = n(77498),
   q = n(355863),
   X = n(283595),
@@ -341,8 +341,8 @@ function ev(e) {
     F = !b && !Z && E && !y,
     H = !E && !w && b && !D,
     z = (null == d ? void 0 : d.overlayMethod) === j.gl.Disabled,
-    Y = (null == d ? void 0 : d.state) === j.mM.OVERLAY_RENDERING && !z,
-    W = (null == d ? void 0 : d.state) != null && eO.has(d.state) && !z,
+    W = (null == d ? void 0 : d.state) === j.mM.OVERLAY_RENDERING && !z,
+    Y = (null == d ? void 0 : d.state) != null && eO.has(d.state) && !z,
     q = (null == d ? void 0 : d.overlayMethod) === j.gl.OutOfProcess,
     Q = (null == d ? void 0 : d.overlayMethod) === j.gl.OutOfProcessLimitedInteraction,
     J = (null == d ? void 0 : d.overlayMethod) === j.gl.Hook,
@@ -350,7 +350,7 @@ function ev(e) {
     ee = !b && !E,
     [et, en] = (() => {
       switch (!0) {
-        case Y && q:
+        case W && q:
           return [ed.intl.format(ed.t.hFVBIi, {
             overlayMethod: ed.intl.string(ed.t.a3eXS0),
             overlayMethodHook: function(e, t) {
@@ -362,7 +362,7 @@ function ev(e) {
               }, t)
             }
           }), null];
-        case Y && Q:
+        case W && Q:
           return [ed.intl.format(ed.t.hFVBIi, {
             overlayMethod: ed.intl.string(ed.t["506AbW"]),
             overlayMethodHook: function(e, t) {
@@ -374,7 +374,7 @@ function ev(e) {
               }, t)
             }
           }), null];
-        case Y && J:
+        case W && J:
           return [ed.intl.format(ed.t.hFVBIi, {
             overlayMethod: ed.intl.string(ed.t.bvlpDQ),
             overlayMethodHook: function(e, t) {
@@ -413,7 +413,7 @@ function ev(e) {
         case F:
         case H:
           return [ed.intl.string(ed.t.VWUn0d), null];
-        case W:
+        case Y:
           if (q) return [ed.intl.string(ed.t["s8+CFh"]), null];
           if (J) return [ed.intl.string(ed.t.JEEdqq), null];
           if (Q) return [ed.intl.string(ed.t.pzBMwc), null];
@@ -427,7 +427,7 @@ function ev(e) {
   (0, O.ZP)(() => {
     f.Z.getDetectableGames()
   });
-  let [ei, er] = r.useMemo(() => W ? ["text-muted", h.TVs.colors.TEXT_MUTED.css] : Y && Q ? ["text-warning", h.TVs.colors.TEXT_WARNING.css] : Y && q ? ["text-positive", h.TVs.colors.TEXT_POSITIVE.css] : Y && J ? ["text-primary", h.TVs.colors.TEXT_PRIMARY.css] : ["interactive-normal", h.TVs.colors.INTERACTIVE_NORMAL.css], [W, Y, Q, q, J]);
+  let [ei, er] = r.useMemo(() => Y ? ["text-muted", h.TVs.colors.TEXT_MUTED.css] : W && Q ? ["text-warning", h.TVs.colors.TEXT_WARNING.css] : W && q ? ["text-positive", h.TVs.colors.TEXT_POSITIVE.css] : W && J ? ["text-primary", h.TVs.colors.TEXT_PRIMARY.css] : ["interactive-normal", h.TVs.colors.INTERACTIVE_NORMAL.css], [Y, W, Q, q, J]);
   return null == l ? null : (0, i.jsxs)(eC, {
     onExpand: I,
     className: T ? eu.expandedContainer : void 0,
@@ -450,7 +450,7 @@ function ev(e) {
     description: et,
     hint: null != en ? en : void 0,
     header: (0, i.jsxs)(i.Fragment, {
-      children: [Y || W ? (0, i.jsx)(h.pzj, {
+      children: [W || Y ? (0, i.jsx)(h.pzj, {
         size: "xxs",
         color: er
       }) : (0, i.jsx)("div", {
@@ -808,7 +808,7 @@ function eD(e) {
     i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
     r = "456" + Math.floor(1e6 * Math.random());
   return {
-    voiceState: new Y.Z({
+    voiceState: new W.Z({
       channelId: "123",
       userId: r,
       sessionId: "789",
@@ -1097,7 +1097,7 @@ function eL(e) {
     runningGame: r,
     runningGameApplication: s
   } = function() {
-    let e = (0, g.e7)([W.Z], () => W.Z.getStreamerActiveStreamMetadata()),
+    let e = (0, g.e7)([Y.Z], () => Y.Z.getStreamerActiveStreamMetadata()),
       t = (0, g.e7)([N.ZP], () => {
         let e = N.ZP.getVisibleGame();
         return null == e ? null : e

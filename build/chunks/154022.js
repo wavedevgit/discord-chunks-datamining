@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => W
+  Z: () => Y
 }), n(388685);
 var i = n(200651),
   r = n(192379),
@@ -77,11 +77,11 @@ let G = (0, b.hQ)(),
   z = o().debounce(e => {
     (0, g.o2)(e)
   }, 250),
-  Y = o().debounce(e => {
+  W = o().debounce(e => {
     (0, S.Ct)(e)
   }, 250);
 
-function W(e) {
+function Y(e) {
   return (0, i.jsxs)(d.hjN, {
     tag: d.RB0.H1,
     title: k.intl.string(k.t.G0neg4),
@@ -98,24 +98,21 @@ function W(e) {
       setting: R.s6.ACCESSIBILITY_ROLE_STYLE,
       children: (0, i.jsx)(Q, {})
     }), (0, i.jsx)(O.F, {
-      setting: R.s6.ACCESSIBILITY_TAGS,
-      children: (0, i.jsx)(J, {})
-    }), (0, i.jsx)(O.F, {
       setting: R.s6.ACCESSIBILITY_PROFILE_COLORS,
-      children: (0, i.jsx)($, {})
+      children: (0, i.jsx)(J, {})
     }), (0, h.b)() ? (0, i.jsxs)(O.F, {
       setting: R.s6.ACCESSIBILITY_CONTRAST,
-      children: [(0, i.jsx)(ee, {}), " "]
+      children: [(0, i.jsx)($, {}), " "]
     }) : null, (0, i.jsx)(O.F, {
       setting: R.s6.ACCESSIBILITY_REDUCED_MOTION,
-      children: (0, i.jsx)(et, {})
+      children: (0, i.jsx)(ee, {})
     }), (0, i.jsx)(O.F, {
       setting: R.s6.ACCESSIBILITY_STICKERS,
-      children: (0, i.jsx)(en, {})
+      children: (0, i.jsx)(et, {})
     }), (0, i.jsx)(O.F, {
       setting: R.s6.ACCESSIBILITY_MESSAGES,
-      children: (0, i.jsx)(ei, {})
-    }), (0, i.jsx)(er, {}), (0, i.jsxs)(O.F, {
+      children: (0, i.jsx)(en, {})
+    }), (0, i.jsx)(ei, {}), (0, i.jsxs)(O.F, {
       setting: R.s6.ACCESSIBILITY_APPEARANCE_UPSELL,
       children: [(0, i.jsx)(d.$i$, {
         className: B.marginTop20
@@ -271,22 +268,6 @@ function Q() {
 }
 
 function J() {
-  let e = (0, c.e7)([p.Z], () => p.Z.hideTags);
-  return (0, i.jsx)(d.xJW, {
-    title: k.intl.string(k.t.UQt6dX),
-    className: B.marginTop20,
-    children: (0, i.jsx)(O.F, {
-      setting: R.s6.ACCESSIBILITY_TAGS_NAMES,
-      children: (0, i.jsx)(d.j7V, {
-        value: !e,
-        onChange: () => (0, g.Nv)(!e),
-        children: k.intl.string(k.t.UPwh1N)
-      })
-    })
-  })
-}
-
-function $() {
   let e = (0, c.e7)([p.Z], () => p.Z.syncProfileThemeWithUserTheme),
     t = r.useRef(null);
   return (0, A.Z)(t, P.rP.SYNC_PROFILE_THEME_WITH_USER_THEME), (0, i.jsx)(d.xJW, {
@@ -310,7 +291,7 @@ function $() {
   })
 }
 
-function ee() {
+function $() {
   let [e] = (0, c.Wu)([p.Z], () => [p.Z.syncForcedColors, p.Z.systemForcedColors]), [t, n] = r.useState(e);
   r.useEffect(() => {
     n(e)
@@ -337,7 +318,7 @@ function ee() {
   })
 }
 
-function et() {
+function ee() {
   let e = N.QK.useSetting(),
     t = N.Yk.useSetting(),
     {
@@ -410,7 +391,7 @@ function et() {
   })
 }
 
-function en() {
+function et() {
   let e = N.Wp.useSetting(),
     t = (0, c.e7)([y.Z], () => y.Z.getAppliedOverrideReasonKey("animateStickers")),
     n = r.useCallback(e => {
@@ -441,7 +422,7 @@ function en() {
   })
 }
 
-function ei() {
+function en() {
   let e = (0, c.e7)([p.Z], () => p.Z.isSubmitButtonEnabled),
     t = N.dN.useSetting(),
     n = r.useRef(null);
@@ -479,7 +460,7 @@ function ei() {
   })
 }
 
-function er() {
+function ei() {
   let e = N.OW.useSetting(),
     t = (0, c.e7)([v.Z], () => v.Z.speechRate),
     [n, s] = r.useState(!1);
@@ -539,7 +520,7 @@ function er() {
           initialValue: t,
           defaultValue: 1,
           stickToMarkers: !0,
-          onValueChange: Y,
+          onValueChange: W,
           onValueRender: e => "x".concat(e.toFixed(2)),
           onMarkerRender: e => 0 === e ? (0, i.jsx)("span", {
             className: L.ttsSliderMarker,
