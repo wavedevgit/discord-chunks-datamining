@@ -1,4 +1,4 @@
-/** Chunk was on 10923 **/
+/** Chunk was on 50629 **/
 "use strict";
 n.d(t, {
   FT: () => Y,
@@ -333,7 +333,7 @@ let z = d().throttle(h.OQ, 1e3),
       }), await (0, I._)(n, Y), x(!0)
     }, q = () => {
       null !== w.current && ((0, g.Mr3)(w.current), w.current = null)
-    }, J = async e => {
+    }, Q = async e => {
       w.current = await (0, g.ZDy)(async () => {
         let {
           default: t
@@ -342,7 +342,7 @@ let z = d().throttle(h.OQ, 1e3),
           processFiles: () => X(e)
         }, n))
       })
-    }, Q = (0, _.l)(e), $ = (0, v.h)({
+    }, J = (0, _.l)(e), $ = (0, v.h)({
       location: "guild_settings",
       autoTrackExposure: !0
     }) && W > 0;
@@ -350,7 +350,7 @@ let z = d().throttle(h.OQ, 1e3),
       className: U.emojiSettings,
       children: [0 === W ? null : (0, r.jsx)(b.Z, {
         className: U.emojiUploadContainer,
-        onDrop: J
+        onDrop: Q
       }), (0, r.jsxs)(g.hjN, {
         tag: g.RB0.H1,
         title: G.intl.string(G.t.sMOuub),
@@ -365,7 +365,7 @@ let z = d().throttle(h.OQ, 1e3),
             children: G.intl.format(G.t.TA1BR0, {
               count: H
             })
-          }), Q && (0, r.jsx)(g.R94, {
+          }), J && (0, r.jsx)(g.R94, {
             type: g.geA.DESCRIPTION,
             children: G.intl.format(G.t.uMkfTk, {
               onClick: () => D.Z.open(e.id, L.pNK.ROLE_SUBSCRIPTIONS, void 0, L.KsC.ROLE_SUBSCRIPTION_EMOJI)

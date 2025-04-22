@@ -258,10 +258,7 @@ let tr = [{
     return (0, Y.h)(() => (0, eA.openUserProfileModal)({
       userId: o,
       friendToken: i,
-      sourceAnalyticsLocations: [N.Z.URI_SCHEME],
-      analyticsLocation: {
-        section: e0.jXE.DIRECT_ROUTE_ACCESS
-      }
+      sourceAnalyticsLocations: [N.Z.URI_SCHEME]
     })), (0, r.jsx)(a.l_, {
       to: eG.Z.defaultRoute
     })

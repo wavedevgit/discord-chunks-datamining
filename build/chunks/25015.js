@@ -21,8 +21,8 @@ function d(e, t) {
     allowHeading: f = !1,
     allowList: b = !1,
     allowLinks: h = !1,
-    allowDevLinks: y = !1,
-    previewLinkTarget: _ = !1,
+    allowDevLinks: _ = !1,
+    previewLinkTarget: y = !1,
     viewingChannelId: O
   } = t, v = (0, o.p)();
   return r.useMemo(() => {
@@ -50,10 +50,10 @@ function d(e, t) {
       allowHeading: f,
       allowList: b,
       allowLinks: h,
-      allowDevLinks: y,
-      previewLinkTarget: _,
+      allowDevLinks: _,
+      previewLinkTarget: y,
       shouldFilterKeywords: v,
       viewingChannelId: O
     })
-  }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, d, p, g, m, f, b, h, _, v, y, O])
+  }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, d, p, g, m, f, b, h, y, v, _, O])
 }

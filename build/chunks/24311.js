@@ -1,43 +1,43 @@
-/** Chunk was on 69220 **/
+/** Chunk was on 98783 **/
 n.d(t, {
-  Z: () => g
+  Z: () => Z
 });
 var i = n(200651);
 n(192379);
 var l = n(442837),
   r = n(481060),
-  o = n(493683),
-  a = n(40851),
+  a = n(493683),
+  o = n(40851),
   s = n(740492),
   u = n(314897),
   d = n(592125),
   c = n(699516),
-  f = n(944486),
-  Z = n(981631),
+  g = n(944486),
+  f = n(981631),
   b = n(388032);
 
-function g(e) {
+function Z(e) {
   let {
     user: t,
-    context: g,
-    label: O,
+    context: Z,
+    label: m,
     joinCallVideo: v,
     id: p,
-    onCall: j
-  } = e, m = (0, a.Aq)(), h = (0, l.e7)([u.default], () => u.default.getId() === t.id), y = (0, l.e7)([c.Z], () => c.Z.isBlocked(t.id)), P = (0, l.e7)([f.Z, d.Z], () => f.Z.getVoiceChannelId() === d.Z.getDMFromUserId(t.id));
-  if (h || g === Z.IlC.POPOUT || P || t.bot || t.isProvisional) return null;
-  let x = () => {
-      null == j || j(), o.Z.openPrivateChannel({
+    onCall: O
+  } = e, h = (0, o.Aq)(), j = (0, l.e7)([u.default], () => u.default.getId() === t.id), x = (0, l.e7)([c.Z], () => c.Z.isBlocked(t.id)), _ = (0, l.e7)([g.Z, d.Z], () => g.Z.getVoiceChannelId() === d.Z.getDMFromUserId(t.id));
+  if (j || Z === f.IlC.POPOUT || _ || t.bot || t.isProvisional) return null;
+  let y = () => {
+      null == O || O(), a.Z.openPrivateChannel({
         recipientIds: t.id,
         joinCall: !0,
         joinCallVideo: v
-      }), m.dispatch(Z.CkL.POPOUT_CLOSE), (0, r.pTH)()
+      }), h.dispatch(f.CkL.POPOUT_CLOSE), (0, r.pTH)()
     },
-    S = !s.ZP.disableCallUserConfirmationPrompt;
+    N = !s.ZP.disableCallUserConfirmationPrompt;
   return (0, i.jsx)(r.sNh, {
     id: null != p ? p : "call",
-    label: null != O ? O : b.intl.string(b.t.JJogjo),
-    action: S ? () => {
+    label: null != m ? m : b.intl.string(b.t.JJogjo),
+    action: N ? () => {
       (0, r.ZDy)(async () => {
         let {
           default: e
@@ -60,10 +60,10 @@ function g(e) {
           }
           return e
         }({
-          onSubmit: x
+          onSubmit: y
         }, t))
       })
-    } : x,
-    disabled: y
+    } : y,
+    disabled: x
   })
 }

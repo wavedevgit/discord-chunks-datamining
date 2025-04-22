@@ -37,8 +37,8 @@ function h(e) {
   }
   return e
 }
-let y = l().defaultRules.link,
-  _ = {
+let _ = l().defaultRules.link,
+  y = {
     section: f.jXE.SETTINGS_CHANGELOG
   },
   O = e => {
@@ -63,7 +63,7 @@ let y = l().defaultRules.link,
           p = i.startsWith("/shop/fullscreen?source=1") || i.startsWith("/activities");
         return a = s || l ? e => {
           m.default.track(f.rMx.PREMIUM_PROMOTION_OPENED, {
-            location: _
+            location: y
           }), s ? d.Z.open(f.oAB.PREMIUM) : l && d.Z.open(f.oAB.HYPESQUAD_ONLINE), n.changeLog.track(f.rMx.CHANGE_LOG_CTA_CLICKED, {
             cta_type: "nitro"
           }), (0, c.Mr3)(b.Xd), e.preventDefault()
@@ -74,7 +74,7 @@ let y = l().defaultRules.link,
             target: i,
             cta_type: "inline_link"
           }, m.default.getCampaignParams(i)))
-        }, r = h({}, y.parse(e, t, n)), o = o = {
+        }, r = h({}, _.parse(e, t, n)), o = o = {
           callToAction: a
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
           var n = Object.keys(e);

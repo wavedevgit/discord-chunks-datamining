@@ -1,11 +1,11 @@
-/** Chunk was on 78331 **/
+/** Chunk was on 13912 **/
 n.d(l, {
-  H: () => o
+  H: () => r
 });
 var t = n(200651),
   a = n(426642),
-  r = n(839388);
-let o = e => {
+  i = n(839388);
+let r = e => {
   let {
     error: l,
     uploadErrorCode: n
@@ -16,7 +16,7 @@ let o = e => {
       filename: ""
     }
   }) : (0, t.jsx)("div", {
-    className: r.errorBanner,
+    className: i.errorBanner,
     children: (0, t.jsx)("p", {
       children: l
     })

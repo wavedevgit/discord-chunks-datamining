@@ -1,4 +1,4 @@
-/** Chunk was on 10923 **/
+/** Chunk was on 50629 **/
 "use strict";
 n.d(t, {
   Z: () => L
@@ -125,8 +125,8 @@ function M(e) {
     else if (b === I.PG.CUSTOMIZATION_QUESTIONS) return (0, r.jsx)(P.Zm, {});
     else if (b === I.PG.HOME_SETTINGS) return (0, r.jsx)(w.Z, {})
   }
-  let J = b === I.xh[I.xh.length - 1],
-    Q = async () => {
+  let Q = b === I.xh[I.xh.length - 1],
+    J = async () => {
       let e = y.Z.advancedMode;
       if (M) try {
         if (b === I.PG.DEFAULT_CHANNELS) await (0, j.DO)(t).then(() => e ? (0, C.rS)(t, {
@@ -148,13 +148,13 @@ function M(e) {
         step: I.PG[b],
         back: !1,
         skip: !M
-      })), (0, _.Nb)((0, I.lg)(b)), await Q() && (0, _.IG)(l, b)
+      })), (0, _.Nb)((0, I.lg)(b)), await J() && (0, _.IG)(l, b)
     }, ee = async () => {
       f.default.track(R.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, k(A({}, (0, p.hH)(l)), {
         step: I.PG[b],
         back: !0,
         skip: !1
-      })), await Q() && (0, _.Wy)(l, b)
+      })), await J() && (0, _.Wy)(l, b)
     }, et = null;
   B && (b === I.PG.SAFETY_CHECK ? et = (0, r.jsx)(S.j7, {}) : b === I.PG.DEFAULT_CHANNELS ? et = (0, r.jsx)(S.Io, {}) : b === I.PG.CUSTOMIZATION_QUESTIONS ? et = (0, r.jsx)(S.cZ, {}) : b === I.PG.HOME_SETTINGS && (et = (0, r.jsx)(S.g6, {})));
   let en = (0, r.jsx)(m.zxk, {
@@ -226,7 +226,7 @@ function M(e) {
                   variant: "text-sm/normal",
                   color: "status-warning",
                   children: Z.intl.string(Z.t.DhYsPD)
-                }) : null, J ? null : er]
+                }) : null, Q ? null : er]
               })]
             })
           })]

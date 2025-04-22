@@ -3,7 +3,7 @@
 n.d(t, {
   HR: () => h,
   L5: () => b,
-  ZP: () => y
+  ZP: () => _
 });
 var r = n(200651),
   o = n(192379),
@@ -32,7 +32,7 @@ function h(e, t) {
   } = e;
   return (0, c.Z)(e, t, ["message"]) && o.content === a.content && o.state === a.state && (null == (n = o.editedTimestamp) ? void 0 : n.toString()) === (null == (r = a.editedTimestamp) ? void 0 : r.toString())
 }
-let y = o.memo(function(e) {
+let _ = o.memo(function(e) {
   var t;
   let {
     className: n,
@@ -40,13 +40,13 @@ let y = o.memo(function(e) {
     children: s,
     content: c,
     onUpdate: h,
-    contentRef: y
-  } = e, _ = a.isEdited(), O = a.state === p.yb.SEND_FAILED, v = a.state === p.yb.SENDING, j = a.isCommandType(), x = null == (t = a.editedTimestamp) ? void 0 : t.toString(), C = o.useRef(!1);
+    contentRef: _
+  } = e, y = a.isEdited(), O = a.state === p.yb.SEND_FAILED, v = a.state === p.yb.SENDING, j = a.isCommandType(), x = null == (t = a.editedTimestamp) ? void 0 : t.toString(), P = o.useRef(!1);
   return o.useLayoutEffect(() => {
-    C.current ? null != h && h() : C.current = !0
+    P.current ? null != h && h() : P.current = !0
   }, [h, a.content, c, x, s]), (0, r.jsxs)("div", {
     id: (0, u.ut)(a),
-    ref: y,
+    ref: _,
     className: i()(n, f.markup, {
       [m.messageContent]: !0,
       [m.isSending]: v && !j,
@@ -54,7 +54,7 @@ let y = o.memo(function(e) {
       [m.isFailed]: O,
       [m.isUnsupported]: a.isUnsupported
     }),
-    children: [null != s ? s : b(a, c), _ && null != a.editedTimestamp && (0, r.jsxs)(r.Fragment, {
+    children: [null != s ? s : b(a, c), y && null != a.editedTimestamp && (0, r.jsxs)(r.Fragment, {
       children: [" ", (0, r.jsx)(d.Z, {
         timestamp: a.editedTimestamp,
         isEdited: !0,

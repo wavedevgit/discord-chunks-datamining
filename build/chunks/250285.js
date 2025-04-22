@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => p
+  Z: () => g
 }), n(388685);
 var i = n(200651),
   r = n(192379),
@@ -11,28 +11,24 @@ var i = n(200651),
   c = n(91192),
   d = n(906732),
   u = n(171368),
-  m = n(981631),
-  g = n(772599);
-let p = e => {
+  m = n(772599);
+let g = e => {
   let {
     userId: t,
     children: n,
     isLast: s,
-    className: p
-  } = e, [h, f] = r.useState(!1), {
-    analyticsLocations: b
-  } = (0, d.ZP)(), _ = r.useCallback(() => {
+    className: g
+  } = e, [p, h] = r.useState(!1), {
+    analyticsLocations: f
+  } = (0, d.ZP)(), b = r.useCallback(() => {
     (0, u.openUserProfileModal)({
       userId: t,
-      sourceAnalyticsLocations: b,
-      analyticsLocation: {
-        section: m.jXE.FAMILY_CENTER
-      }
+      sourceAnalyticsLocations: f
     })
-  }, [t, b]), x = () => {
-    f(!0)
-  }, E = () => {
-    f(!1)
+  }, [t, f]), _ = () => {
+    h(!0)
+  }, x = () => {
+    h(!1)
   };
   return (0, i.jsx)(c.mh, {
     id: t,
@@ -64,15 +60,15 @@ let p = e => {
           style: {
             opacity: 1
           },
-          className: l()(g.rowItem, p, {
-            [g.last]: s,
-            [g.active]: h
+          className: l()(m.rowItem, g, {
+            [m.last]: s,
+            [m.active]: p
           }),
-          onMouseEnter: x,
-          onMouseLeave: E,
-          onClick: _
+          onMouseEnter: _,
+          onMouseLeave: x,
+          onClick: b
         }, e), r = r = {
-          children: n(h)
+          children: n(p)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

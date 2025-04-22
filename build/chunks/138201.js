@@ -6,15 +6,15 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var l = n(120356),
-  i = n.n(l),
-  s = n(481060),
+  s = n.n(l),
+  i = n(481060),
   a = n(754363);
 
 function c(e) {
   let {
     title: t
   } = e;
-  return (0, r.jsx)(s.Text, {
+  return (0, r.jsx)(i.Text, {
     variant: "text-sm/semibold",
     color: "header-secondary",
     children: t
@@ -26,20 +26,20 @@ function o(e) {
     children: t,
     title: n,
     description: l,
-    accessibilityRole: i = "none",
+    accessibilityRole: s = "none",
     accessibilityLabel: o
   } = e;
   return (0, r.jsxs)("div", {
     className: a.tableRowGroup,
     children: [null != n && (0, r.jsx)(c, {
       title: n
-    }), null != l && (0, r.jsx)(s.Text, {
+    }), null != l && (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
       color: "text-secondary",
       children: l
     }), (0, r.jsx)("div", {
       className: a.content,
-      role: i,
+      role: s,
       "aria-label": o,
       children: t
     })]
@@ -56,9 +56,9 @@ function u(e) {
     iconClassName: u,
     color: d,
     buttonText: m,
-    buttonColor: p = s.zxk.Colors.PRIMARY,
-    buttonSize: f = s.zxk.Sizes.SMALL,
-    buttonLook: j = s.zxk.Looks.FILLED,
+    buttonColor: p = i.zxk.Colors.PRIMARY,
+    buttonSize: f = i.zxk.Sizes.SMALL,
+    buttonLook: j = i.zxk.Looks.FILLED,
     buttonDisabled: b,
     buttonIcon: x,
     buttonIconColor: v,
@@ -66,7 +66,7 @@ function u(e) {
     onButtonPress: h,
     listType: y = "icon",
     index: O
-  } = e, P = null != m ? (0, r.jsx)(s.zxk, {
+  } = e, P = null != m ? (0, r.jsx)(i.zxk, {
     className: a.button,
     size: f,
     color: p,
@@ -85,7 +85,7 @@ function u(e) {
   }) : void 0;
   return (0, r.jsxs)("div", {
     className: a.row,
-    children: ["numbered" === y && null != O ? (0, r.jsx)(s.X6q, {
+    children: ["numbered" === y && null != O ? (0, r.jsx)(i.X6q, {
       variant: "heading-md/semibold",
       color: "text-brand",
       className: a.number,
@@ -94,15 +94,15 @@ function u(e) {
       className: a.iconContainer,
       children: (0, r.jsx)(t, {
         color: null != d ? d : "currentColor",
-        className: i()(a.icon, u)
+        className: s()(a.icon, u)
       })
     }), (0, r.jsxs)("div", {
       className: a.textContainer,
-      children: [(0, r.jsx)(s.Text, {
+      children: [(0, r.jsx)(i.Text, {
         variant: l,
         color: "header-primary",
         children: n
-      }), null != c && (0, r.jsx)(s.Text, {
+      }), null != c && (0, r.jsx)(i.Text, {
         variant: o,
         color: "text-secondary",
         children: c

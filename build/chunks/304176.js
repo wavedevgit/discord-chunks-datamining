@@ -19,14 +19,14 @@ var o = n(442837),
   f = n(430824),
   b = n(944486),
   h = n(709586),
-  y = n(626135),
-  _ = n(524444),
+  _ = n(626135),
+  y = n(524444),
   O = n(981631),
   v = n(176505),
   j = n(388032),
   x = n(854422);
 
-function C(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,7 +45,7 @@ function C(e) {
   return e
 }
 
-function P(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -65,7 +65,7 @@ let T = e => {
     name: T
   } = t;
   (0, i.ZP)(() => {
-    y.default.track(O.rMx.OPEN_POPOUT, C({
+    _.default.track(O.rMx.OPEN_POPOUT, P({
       type: "Role Icon Popout",
       guild_id: n.id
     }, (0, s.v_)(m.Z.getChannel(b.Z.getChannelId(n.id)))))
@@ -77,7 +77,7 @@ let T = e => {
     }) : j.intl.formatToPlainString(j.t.UDDkGx, {
       name: T
     }),
-    N = P(C({}, t), {
+    N = C(P({}, t), {
       src: null == t.src ? t.src : (0, u.o)(t.src, 40),
       size: 40
     }),
@@ -92,14 +92,14 @@ let T = e => {
       })
     };
   return (0, r.jsx)(a.VqE, {
-    children: (0, r.jsx)(_.W_, {
+    children: (0, r.jsx)(y.W_, {
       children: (0, r.jsxs)("div", {
         className: x.popoutContainer,
         children: [(0, r.jsxs)("div", {
           className: x.mainContent,
           children: [(0, r.jsx)("div", {
             className: x.roleIconContainer,
-            children: (0, r.jsx)(c.Z, P(C({}, N), {
+            children: (0, r.jsx)(c.Z, C(P({}, N), {
               enableTooltip: !1,
               className: x.__invalid_roleIcon,
               enableHeight: !1

@@ -1,5 +1,5 @@
-/** Chunk was on 40835 **/
-a.exports = {
+/** Chunk was on 92643 **/
+e.exports = {
   confirmModal: "confirmModal__1b38b",
   discordTag: "discordTag__1b38b",
   avatarIcon: "avatarIcon__1b38b",

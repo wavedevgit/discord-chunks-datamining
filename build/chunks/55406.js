@@ -49,8 +49,8 @@ let p = a().defaultRules.lheading,
   f = a().defaultRules.image,
   b = a().defaultRules.list,
   h = a().defaultRules.blockQuote,
-  y = a().defaultRules.paragraph,
-  _ = /\{(.+?)}/,
+  _ = a().defaultRules.paragraph,
+  y = /\{(.+?)}/,
   O = /^\$(\w+?)\$/;
 r = n(235375);
 let v = e => {
@@ -58,8 +58,8 @@ let v = e => {
       transformUpperCase: t = !1
     } = e;
     return (e, n, r) => {
-      let o = _.exec(e[1]),
-        i = e[1].replace(_, "");
+      let o = y.exec(e[1]),
+        i = e[1].replace(y, "");
       return t && (i = i.toUpperCase()), {
         className: null != o ? o[1] : null,
         level: "=" === e[2] ? 1 : 2,
@@ -93,7 +93,7 @@ let v = e => {
     }), "function" == typeof r.customRules.lheading ? r.customRules.lheading(e) : r.customRules.lheading),
     heading: u({}, g, "function" == typeof r.customRules.heading ? r.customRules.heading(e) : r.customRules.heading),
     blockQuote: u({}, h, "function" == typeof r.customRules.blockQuote ? r.customRules.blockQuote(e) : r.customRules.blockQuote),
-    paragraph: u({}, y, "function" == typeof r.customRules.paragraph ? r.customRules.paragraph(e) : r.customRules.paragraph)
+    paragraph: u({}, _, "function" == typeof r.customRules.paragraph ? r.customRules.paragraph(e) : r.customRules.paragraph)
   }),
   x = e => ({
     lheading: u(d(u({}, p), {
@@ -102,26 +102,26 @@ let v = e => {
       })
     }), "function" == typeof r.customRules.lheading ? r.customRules.lheading(e) : r.customRules.lheading)
   }),
-  C = e => d(u({}, j(e)), {
+  P = e => d(u({}, j(e)), {
     newline: u({}, a().defaultRules.newline),
     text: l.ZP,
     list: i.Z,
     subtext: s.Z
   });
 
-function P(e) {
+function C(e) {
   return u({}, j(e))
 }
 let T = {
-  getDefaultRules: P,
+  getDefaultRules: C,
   getSpecialRules: e => u({}, j(e), x(e)),
-  getMessageRules: e => u({}, C(e))
+  getMessageRules: e => u({}, P(e))
 };
 
 function w(e, t, n) {
   return {
     hasSpoilerEmbeds: !1,
-    content: c.Z.reactParserFor(P(t))(e.content, !1, null != n ? {
+    content: c.Z.reactParserFor(C(t))(e.content, !1, null != n ? {
       changeLog: n
     } : {})
   }

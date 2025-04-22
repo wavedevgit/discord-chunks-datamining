@@ -1,6 +1,6 @@
 /** Chunk was on 70657 **/
 t.d(n, {
-  Qt: () => G,
+  Qt: () => Z,
   ZP: () => k
 }), t(953529);
 var i = t(200651),
@@ -20,15 +20,15 @@ var i = t(200651),
   f = t(15274),
   v = t(924301),
   h = t(725436),
-  E = t(978227),
-  C = t(236373),
+  C = t(978227),
+  E = t(236373),
   b = t(854698),
   x = t(405613),
   T = t(95291),
   y = t(742593),
   L = t(217804),
-  N = t(139712),
-  j = t(765305),
+  j = t(139712),
+  N = t(765305),
   S = t(388032),
   D = t(690606);
 let O = (e, n) => t => {
@@ -38,16 +38,16 @@ let O = (e, n) => t => {
     let i = m.Z.getChannel(e.channel_id);
     null != i && (t.stopPropagation(), (0, g.Cq)(i), null == n || n(t))
   },
-  G = (e, n) => {
+  Z = (e, n) => {
     switch (null == e ? void 0 : e.entity_type) {
-      case j.WX.STAGE_INSTANCE:
+      case N.WX.STAGE_INSTANCE:
         return U(e, n);
-      case j.WX.VOICE:
+      case N.WX.VOICE:
         return O(e, n)
     }
     return () => {}
   },
-  Z = (e, n) => n && [j.WX.STAGE_INSTANCE, j.WX.VOICE].includes(null == e ? void 0 : e.entity_type),
+  G = (e, n) => n && [N.WX.STAGE_INSTANCE, N.WX.VOICE].includes(null == e ? void 0 : e.entity_type),
   P = l.memo(function(e) {
     var n;
     let {
@@ -61,12 +61,12 @@ let O = (e, n) => t => {
     }, [t]), m = (0, L.u)(r, a), f = l.useCallback(e => {
       c && null != r && (e.stopPropagation(), (0, s.Bk)(r))
     }, [c, r]), v = l.useCallback(e => {
-      G(r)(e)
+      Z(r)(e)
     }, [r]);
     if (null == g) return null;
-    let E = null == m ? void 0 : m.IconComponent,
-      C = (0, i.jsxs)(i.Fragment, {
-        children: [null != E && (0, i.jsx)(E, {
+    let C = null == m ? void 0 : m.IconComponent,
+      E = (0, i.jsxs)(i.Fragment, {
+        children: [null != C && (0, i.jsx)(C, {
           size: "xs",
           color: "currentColor",
           className: D.channelIcon
@@ -102,11 +102,11 @@ let O = (e, n) => t => {
           })]
         }), (0, i.jsx)("div", {
           className: D.channelInfoContainer,
-          children: Z(r, c) ? (0, i.jsx)(o.P3F, {
+          children: G(r, c) ? (0, i.jsx)(o.P3F, {
             className: D.channelLocationLink,
             onClick: v,
-            children: C
-          }) : C
+            children: E
+          }) : E
         })]
       })]
     })
@@ -147,7 +147,7 @@ let O = (e, n) => t => {
       color: o.zxk.Colors.PRIMARY,
       look: g ? o.zxk.Looks.OUTLINED : o.zxk.Looks.FILLED,
       onClick: e => {
-        e.stopPropagation(), (0, N.Z)(t, l, n)
+        e.stopPropagation(), (0, j.Z)(t, l, n)
       },
       children: [g ? (0, i.jsx)(o.dz2, {
         size: "xs",
@@ -176,7 +176,7 @@ let O = (e, n) => t => {
       recurrenceId: c,
       onAcceptInstantInvite: u,
       onTransitionToInviteChannel: g
-    } = e, p = null != c ? c : null != t ? (0, b.DK)(t) : null, m = (null == t ? void 0 : t.recurrence_rule) == null || null == p || (0, b.Rp)((0, C.KV)(null == t ? void 0 : t.recurrence_rule), p), I = (0, E.Z)(t), h = l.useCallback(() => {
+    } = e, p = null != c ? c : null != t ? (0, b.DK)(t) : null, m = (null == t ? void 0 : t.recurrence_rule) == null || null == p || (0, b.Rp)((0, E.KV)(null == t ? void 0 : t.recurrence_rule), p), I = (0, C.Z)(t), h = l.useCallback(() => {
       s && null != t && (0, f.bO)({
         eventId: t.id,
         recurrenceId: p
@@ -184,8 +184,8 @@ let O = (e, n) => t => {
     }, [s, t, p]);
     if (null == t || !m) return null;
     let L = (0, v.xt)(t),
-      N = (0, v.Z2)(t),
-      S = t.entity_type === j.WX.EXTERNAL;
+      j = (0, v.Z2)(t),
+      S = t.entity_type === N.WX.EXTERNAL;
     return (0, i.jsx)(_.Z, {
       className: a()({
         [D.clickable]: s
@@ -213,7 +213,7 @@ let O = (e, n) => t => {
             isMember: s
           }), (0, i.jsx)(z, {
             isActive: L,
-            isEnded: N,
+            isEnded: j,
             isMember: s,
             guildId: t.guild_id,
             guildScheduledEventId: t.id,

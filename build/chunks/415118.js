@@ -1,6 +1,6 @@
 /** Chunk was on 26976 **/
 n.d(t, {
-  default: () => U
+  default: () => _
 });
 var l = n(200651);
 n(192379);
@@ -20,8 +20,8 @@ var i = n(481060),
   m = n(933409),
   h = n(389052),
   j = n(24311),
-  E = n(158508),
-  v = n(710631),
+  v = n(158508),
+  E = n(710631),
   p = n(297047),
   P = n(88966),
   y = n(712301),
@@ -31,42 +31,42 @@ var i = n(481060),
   x = n(931617),
   N = n(700994),
   I = n(332031),
-  A = n(981631),
-  T = n(388032);
-let U = (0, a.Z)((0, o.Z)(function(e) {
+  T = n(981631),
+  U = n(388032);
+let _ = (0, a.Z)((0, o.Z)(function(e) {
   let {
     user: t,
     guildId: n,
     showModalItems: o = !0,
     showMediaItems: a = !1,
     showChatItems: u = !0,
-    context: U,
-    onSelect: _
+    context: _,
+    onSelect: A
   } = e, D = {
-    page: A.ZY5.GUILD_CHANNEL,
-    section: A.jXE.CHAT_USERNAME,
-    object: A.qAy.CONTEXT_MENU_ITEM
+    page: T.ZY5.GUILD_CHANNEL,
+    section: T.jXE.CHAT_USERNAME,
+    object: T.qAy.CONTEXT_MENU_ITEM
   }, L = (0, M.Z)({
     userId: t.id,
     guildId: n
-  }), w = (0, p.Z)(t, n, U), k = (0, P.Z)(t.id, U), R = (0, I.Z)(t.id), B = (0, j.Z)({
+  }), w = (0, p.Z)(t, n, _), k = (0, P.Z)(t.id, _), R = (0, I.Z)(t.id), B = (0, j.Z)({
     user: t,
-    context: U
+    context: _
   }), V = (0, O.Z)({
     user: t,
     guildId: n,
-    context: U
+    context: _
   }), q = (0, Z.Z)({
     user: t
   }), G = (0, N.Z)(t.id), F = (0, C.Z)(t.id), Y = (0, c.Z)({
     guildId: n,
     userId: t.id,
     analyticsLocation: D,
-    context: U
+    context: _
   }), H = (0, f.Z)({
     user: t,
     guildId: n
-  }), Q = (0, v.Z)({
+  }), Q = (0, E.Z)({
     user: t,
     guildId: n
   }), K = (0, s.Z)(null, t), W = (0, g.Z)({
@@ -79,19 +79,19 @@ let U = (0, a.Z)((0, o.Z)(function(e) {
     user: t,
     guildId: n,
     location: "GuildUserContextMenu"
-  }), $ = (0, E.Z)({
+  }), $ = (0, v.Z)({
     user: t,
     guildId: n,
     location: "GuildUserContextMenu"
   }), ee = (0, m.Z)(t, n), et = (0, x.Z)(t.id, n), en = (0, y.Z)(t, n), el = (0, d.Z)({
     id: t.id,
-    label: T.intl.string(T.t["/AXYnJ"])
+    label: U.intl.string(U.t["/AXYnJ"])
   }), ei = t.isNonUserBot();
   return (0, l.jsxs)(i.v2r, {
     navId: "user-context",
     onClose: r.Zy,
-    "aria-label": T.intl.string(T.t.liqwPD),
-    onSelect: _,
+    "aria-label": U.intl.string(U.t.liqwPD),
+    onSelect: A,
     children: [!ei && (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsxs)(i.kSQ, {
         children: [o && L, u && w, k, B, o && V, o && q, R]
@@ -111,5 +111,5 @@ let U = (0, a.Z)((0, o.Z)(function(e) {
     })]
   })
 }, {
-  object: A.qAy.CONTEXT_MENU
+  object: T.qAy.CONTEXT_MENU
 }), [u.Z.CONTEXT_MENU, u.Z.GUILD_USER_MENU])

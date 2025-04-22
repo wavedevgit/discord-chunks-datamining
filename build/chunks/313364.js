@@ -1,4 +1,4 @@
-/** Chunk was on 10923 **/
+/** Chunk was on 50629 **/
 "use strict";
 n.d(t, {
   Z: () => S
@@ -38,10 +38,7 @@ function S(e) {
     null != e && (0, m.openUserProfileModal)({
       userId: e.userId,
       guildId: e.guildId,
-      sourceAnalyticsLocations: l,
-      analyticsLocation: {
-        section: y.jXE.GUILD_SETTINGS_MEMBERS
-      }
+      sourceAnalyticsLocations: l
     })
   }, [l]), w = i.useRef(null), R = i.useCallback(() => {
     var e;

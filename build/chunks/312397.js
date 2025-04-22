@@ -1,7 +1,7 @@
-/** Chunk was on 10923 **/
+/** Chunk was on 50629 **/
 "use strict";
 n.d(t, {
-  O: () => Q,
+  O: () => J,
   Z: () => ee
 }), n(953529), n(388685);
 var r = n(200651),
@@ -61,7 +61,7 @@ function q(e, t, n) {
   }) : e[t] = n, e
 }
 
-function J(e) {
+function Q(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -73,7 +73,7 @@ function J(e) {
   }
   return e
 }
-let Q = () => {
+let J = () => {
   let {
     guild: e,
     originalGuild: t,
@@ -545,7 +545,7 @@ class $ extends i.PureComponent {
         let {
           default: i
         } = await Promise.all([n.e("91689"), n.e("59732"), n.e("77942")]).then(n.bind(n, 712451));
-        return n => (0, r.jsx)(i, J({
+        return n => (0, r.jsx)(i, Q({
           onCrop: e => {
             let {
               imageUri: t
@@ -564,7 +564,7 @@ class $ extends i.PureComponent {
         let {
           default: i
         } = await Promise.all([n.e("91689"), n.e("59732"), n.e("77942")]).then(n.bind(n, 712451));
-        return n => (0, r.jsx)(i, J({
+        return n => (0, r.jsx)(i, Q({
           imageUri: e,
           file: t,
           onCrop: e => {

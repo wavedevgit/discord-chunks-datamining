@@ -1,4 +1,4 @@
-/** Chunk was on 69220 **/
+/** Chunk was on 98783 **/
 n.d(t, {
   Z: () => s
 }), n(388685);
@@ -6,23 +6,23 @@ var i = n(200651);
 n(192379);
 var l = n(442837),
   r = n(481060),
-  o = n(699516),
-  a = n(388032);
+  a = n(699516),
+  o = n(388032);
 
 function s(e) {
   let {
     user: t,
     onAction: s,
     appContext: u
-  } = e, d = t.id, [c, f] = (0, l.Wu)([o.Z], () => {
+  } = e, d = t.id, [c, g] = (0, l.Wu)([a.Z], () => {
     var e;
-    return [o.Z.isFriend(d), null != (e = o.Z.getNickname(d)) ? e : null]
+    return [a.Z.isFriend(d), null != (e = a.Z.getNickname(d)) ? e : null]
   }, [d]);
   if (!c) return null;
-  let Z = null == f ? a.intl.string(a.t.BGYkaG) : a.intl.string(a.t["8pOYUF"]);
+  let f = null == g ? o.intl.string(o.t.BGYkaG) : o.intl.string(o.t["8pOYUF"]);
   return (0, i.jsx)(r.sNh, {
-    id: null == f ? "add-friend-nickname" : "edit-friend-nickname",
-    label: Z,
+    id: null == g ? "add-friend-nickname" : "edit-friend-nickname",
+    label: f,
     action: () => {
       null == s || s(), (0, r.ZDy)(async () => {
         let {
@@ -47,7 +47,7 @@ function s(e) {
           return e
         }({
           user: t,
-          nickname: f
+          nickname: g
         }, n))
       }, {
         contextKey: null != u ? (0, r.VnL)(u) : void 0

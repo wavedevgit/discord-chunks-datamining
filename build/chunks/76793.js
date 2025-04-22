@@ -1,60 +1,64 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  q: () => _
+  q: () => x
 });
 var i = n(200651),
   r = n(192379),
   s = n(442837),
   l = n(481060),
   a = n(232567),
-  o = n(700582);
+  o = n(700582),
+  c = n(906732);
 n(90641), n(615830);
-var c = n(630759),
-  d = n(931500);
+var d = n(630759),
+  u = n(931500);
 n(921157);
-var u = n(171368),
-  m = n(594174),
-  g = n(51144),
-  p = n(388032),
-  h = n(552312);
+var m = n(171368),
+  g = n(594174),
+  p = n(51144),
+  h = n(388032),
+  f = n(552312);
 
-function f(e) {
+function b(e) {
   let {
     userId: t,
     count: n
-  } = e, d = (0, s.e7)([m.default], () => m.default.getUser(t)), f = g.ZP.getFormattedName(d), b = r.useCallback(() => {
-    (0, c.Zn)(t)
-  }, [t]), _ = r.useCallback(() => (0, u.openUserProfileModal)({
-    userId: t
-  }), [t]);
+  } = e, {
+    analyticsLocations: u
+  } = (0, c.ZP)(), b = (0, s.e7)([g.default], () => g.default.getUser(t)), _ = p.ZP.getFormattedName(b), x = r.useCallback(() => {
+    (0, d.Zn)(t)
+  }, [t]), E = r.useCallback(() => (0, m.openUserProfileModal)({
+    userId: t,
+    sourceAnalyticsLocations: u
+  }), [t, u]);
   return r.useEffect(() => {
     (0, a.PR)(t)
   }, [t]), (0, i.jsxs)("div", {
-    className: h.section,
-    children: [null != d && (0, i.jsx)(o.Z, {
-      className: h.avatar,
-      user: d,
+    className: f.section,
+    children: [null != b && (0, i.jsx)(o.Z, {
+      className: f.avatar,
+      user: b,
       size: l.EFr.SIZE_40
     }), (0, i.jsxs)("div", {
-      className: h.text,
+      className: f.text,
       children: [(0, i.jsx)(l.P3F, {
-        className: h.username,
-        onClick: _,
+        className: f.username,
+        onClick: E,
         children: (0, i.jsx)(l.Text, {
           variant: "text-md/semibold",
           color: "interactive-active",
-          children: f
+          children: _
         })
       }), (0, i.jsx)(l.Text, {
         variant: "text-md/medium",
         color: "header-secondary",
-        children: p.intl.format(p.t["/MBjYG"], {
+        children: h.intl.format(h.t["/MBjYG"], {
           count: n
         })
       })]
     }), (0, i.jsx)(l.P3F, {
-      onClick: b,
-      className: h.sectionIconContainer,
+      onClick: x,
+      className: f.sectionIconContainer,
       children: (0, i.jsx)(l.XHJ, {
         size: "xs"
       })
@@ -62,23 +66,23 @@ function f(e) {
   })
 }
 
-function b(e) {
+function _(e) {
   let {
     className: t,
     userId: n,
     verification: s,
     index: a
-  } = e, o = (0, c.bo)(s.timestamp), d = r.useCallback(() => {
-    (0, c.ZU)(n, s.verifiedKey)
+  } = e, o = (0, d.bo)(s.timestamp), c = r.useCallback(() => {
+    (0, d.ZU)(n, s.verifiedKey)
   }, [s.verifiedKey, n]);
   return (0, i.jsxs)("div", {
     className: t,
     children: [(0, i.jsxs)("div", {
-      className: h.text,
+      className: f.text,
       children: [(0, i.jsx)(l.Text, {
         variant: "text-sm/semibold",
         color: "interactive-active",
-        children: p.intl.format(p.t.N4qBBA, {
+        children: h.intl.format(h.t.N4qBBA, {
           index: a + 1
         })
       }), (0, i.jsx)(l.Text, {
@@ -87,8 +91,8 @@ function b(e) {
         children: o
       })]
     }), (0, i.jsx)(l.P3F, {
-      className: h.icon,
-      onClick: d,
+      className: f.icon,
+      onClick: c,
       children: (0, i.jsx)(l.Dio, {
         size: "md",
         color: l.TVs.colors.INTERACTIVE_NORMAL
@@ -97,22 +101,22 @@ function b(e) {
   })
 }
 
-function _(e) {
+function x(e) {
   let {
     userId: t
-  } = e, n = (0, d._)(t);
+  } = e, n = (0, u._)(t);
   return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(f, {
+    children: [(0, i.jsx)(b, {
       userId: t,
       count: n.length
     }), n.map((e, s) => (0, i.jsxs)(r.Fragment, {
-      children: [(0, i.jsx)(b, {
-        className: h.row,
+      children: [(0, i.jsx)(_, {
+        className: f.row,
         userId: t,
         index: s,
         verification: e
       }), s !== n.length - 1 && (0, i.jsx)("div", {
-        className: h.divider
+        className: f.divider
       })]
     }, "".concat(s, "-").concat(e.timestamp)))]
   })

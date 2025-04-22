@@ -1,49 +1,49 @@
-/** Chunk was on 60677 **/
-n.d(t, {
-  Z: () => m
+/** Chunk was on 92643 **/
+t.d(n, {
+  Z: () => g
 });
-var i = n(200651);
-n(192379);
-var r = n(442837),
-  l = n(692547),
-  o = n(481060),
-  s = n(493683),
-  a = n(129861),
-  d = n(700582),
-  c = n(594174),
-  u = n(388032),
-  g = n(837014);
+var r = t(200651);
+t(192379);
+var i = t(442837),
+  l = t(692547),
+  o = t(481060),
+  a = t(493683),
+  s = t(129861),
+  c = t(700582),
+  d = t(594174),
+  u = t(388032),
+  f = t(837014);
 
-function f(e) {
+function p(e) {
   let {
-    color: t,
-    className: n
+    color: n,
+    className: t
   } = e;
-  return (0, i.jsx)("svg", {
-    className: n,
+  return (0, r.jsx)("svg", {
+    className: t,
     height: "16",
     width: "80",
     viewBox: "0 0 80 16",
     xmlns: "http://www.w3.org/2000/svg",
-    children: (0, i.jsxs)("g", {
+    children: (0, r.jsxs)("g", {
       fill: "none",
       fillRule: "evenodd",
       opacity: ".6",
-      children: [(0, i.jsx)("path", {
+      children: [(0, r.jsx)("path", {
         d: "m0 0h80v16h-80z"
-      }), (0, i.jsxs)("g", {
-        stroke: t,
+      }), (0, r.jsxs)("g", {
+        stroke: n,
         strokeLinecap: "round",
         strokeLinejoin: "round",
         strokeWidth: "2",
-        children: [(0, i.jsx)("path", {
+        children: [(0, r.jsx)("path", {
           d: "m71 1h4v4.16"
-        }), (0, i.jsx)("path", {
+        }), (0, r.jsx)("path", {
           d: "m2 1h4v4.16",
           transform: "matrix(-1 0 0 1 8 0)"
-        }), (0, i.jsx)("path", {
+        }), (0, r.jsx)("path", {
           d: "m51 1h4m6 0h4m-24 0h4m-14 0h4m-14 0h4m-23 11v-2m9-9h4"
-        }), (0, i.jsx)("path", {
+        }), (0, r.jsx)("path", {
           d: "m72.13 10.474 2.869 3.12 2.631-3.12"
         })]
       })]
@@ -51,83 +51,83 @@ function f(e) {
   })
 }
 
-function m(e, t) {
-  let n = (0, r.e7)([c.default], () => c.default.getCurrentUser());
-  return null == n || t.ownerId !== n.id || e.id === n.id ? null : (0, i.jsx)(o.sNh, {
+function g(e, n) {
+  let t = (0, i.e7)([d.default], () => d.default.getCurrentUser());
+  return null == t || n.ownerId !== t.id || e.id === t.id ? null : (0, r.jsx)(o.sNh, {
     id: "make-dm-owner",
     color: "danger",
     label: u.intl.string(u.t["6t3CyM"]),
     action: () => {
-      (0, o.h7j)(r => {
-        var c, m;
-        return (0, i.jsxs)(o.ConfirmModal, (c = function(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-              i = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), i.forEach(function(t) {
-              var i;
-              i = n[t], t in e ? Object.defineProperty(e, t, {
-                value: i,
+      (0, o.h7j)(i => {
+        var d, g;
+        return (0, r.jsxs)(o.ConfirmModal, (d = function(e) {
+          for (var n = 1; n < arguments.length; n++) {
+            var t = null != arguments[n] ? arguments[n] : {},
+              r = Object.keys(t);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(t, e).enumerable
+            }))), r.forEach(function(n) {
+              var r;
+              r = t[n], n in e ? Object.defineProperty(e, n, {
+                value: r,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-              }) : e[t] = i
+              }) : e[n] = r
             })
           }
           return e
         }({
-          bodyClassName: g.confirmModal,
+          bodyClassName: f.confirmModal,
           header: u.intl.string(u.t.WZoUsr),
           confirmText: u.intl.string(u.t["cY+Ooa"]),
           cancelText: u.intl.string(u.t["ETE/oK"]),
-          onConfirm: () => s.Z.setDMOwner(t.id, e.id)
-        }, r), m = m = {
-          children: [(0, i.jsx)(f, {
+          onConfirm: () => a.Z.setDMOwner(n.id, e.id)
+        }, i), g = g = {
+          children: [(0, r.jsx)(p, {
             color: l.Z.unsafe_rawColors.PRIMARY_300.css
-          }), (0, i.jsxs)("div", {
-            className: g.fromToWrapper,
-            children: [(0, i.jsx)("div", {
-              className: g.from,
-              children: (0, i.jsx)(d.Z, {
-                user: n,
+          }), (0, r.jsxs)("div", {
+            className: f.fromToWrapper,
+            children: [(0, r.jsx)("div", {
+              className: f.from,
+              children: (0, r.jsx)(c.Z, {
+                user: t,
                 size: o.EFr.SIZE_80
               })
-            }), (0, i.jsx)("div", {
-              className: g.to,
-              children: (0, i.jsx)(d.Z, {
+            }), (0, r.jsx)("div", {
+              className: f.to,
+              children: (0, r.jsx)(c.Z, {
                 user: e,
                 size: o.EFr.SIZE_80
               })
             })]
-          }), (0, i.jsx)(o.Text, {
+          }), (0, r.jsx)(o.Text, {
             variant: "text-md/normal",
             children: u.intl.format(u.t.gsBb3N, {
-              usernameHook: (t, n) => (0, i.jsx)(a.Z, {
-                usernameIcon: (0, i.jsx)(o.qEK, {
-                  className: g.avatarIcon,
+              usernameHook: (n, t) => (0, r.jsx)(s.Z, {
+                usernameIcon: (0, r.jsx)(o.qEK, {
+                  className: f.avatarIcon,
                   src: e.getAvatarURL(void 0, 16),
                   size: o.EFr.SIZE_16,
                   "aria-hidden": !0
                 }),
-                className: g.discordTag,
-                usernameClass: g.username,
-                discriminatorClass: g.discriminator,
+                className: f.discordTag,
+                usernameClass: f.username,
+                discriminatorClass: f.discriminator,
                 user: e
-              }, n)
+              }, t)
             })
           })]
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(c, Object.getOwnPropertyDescriptors(m)) : (function(e, t) {
-          var n = Object.keys(e);
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(d, Object.getOwnPropertyDescriptors(g)) : (function(e, n) {
+          var t = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var i = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, i)
+            var r = Object.getOwnPropertySymbols(e);
+            t.push.apply(t, r)
           }
-          return n
-        })(Object(m)).forEach(function(e) {
-          Object.defineProperty(c, e, Object.getOwnPropertyDescriptor(m, e))
-        }), c))
+          return t
+        })(Object(g)).forEach(function(e) {
+          Object.defineProperty(d, e, Object.getOwnPropertyDescriptor(g, e))
+        }), d))
       })
     }
   })

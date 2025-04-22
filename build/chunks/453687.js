@@ -47,26 +47,26 @@ function p(e, t, n) {
     f = e.codedLinks.length > 0,
     b = e.hasFlag(a.iLy.HAS_THREAD),
     h = p || g || m || f || b || e.type === a.uaV.THREAD_CREATED,
-    y = p && e.content === e.embeds[0].url && e.embeds[0].type === a.hBH.GIFV,
-    _ = e.type !== a.uaV.DEFAULT || !y && "" !== e.content,
+    _ = p && e.content === e.embeds[0].url && e.embeds[0].type === a.hBH.GIFV,
+    y = e.type !== a.uaV.DEFAULT || !_ && "" !== e.content,
     O = (0, o.Z)(e),
     v = !O && (null == n ? void 0 : n.hasTimestamp) !== !1,
     j = l(e, t),
     x = s(e),
-    C = O ? "" : "".concat(u ? x : j, " ").concat(r.Z0);
-  if (_) {
+    P = O ? "" : "".concat(u ? x : j, " ").concat(r.Z0);
+  if (y) {
     let t = i(e);
-    C += " ".concat(t)
+    P += " ".concat(t)
   }
   if (h) {
     let t = d(e);
-    C += " ".concat(t)
+    P += " ".concat(t)
   }
   if (v) {
     let t = c(e);
-    C += " ".concat(r.fy, " ").concat(t)
+    P += " ".concat(r.fy, " ").concat(t)
   }
-  return C.trim()
+  return P.trim()
 }
 
 function g(e) {

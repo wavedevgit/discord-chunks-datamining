@@ -26,8 +26,8 @@ var l = n(481060),
   P = n(37258),
   x = n(700994),
   S = n(332031),
-  C = n(981631),
-  E = n(388032);
+  E = n(981631),
+  C = n(388032);
 let I = (0, a.Z)((0, o.Z)(function(e) {
   let {
     user: t,
@@ -37,7 +37,7 @@ let I = (0, a.Z)((0, o.Z)(function(e) {
     mediaEngineContext: u,
     onSelect: I,
     onInteraction: _,
-    appContext: U = C.IlC.APP
+    appContext: U = E.IlC.APP
   } = e, A = (0, P.Z)({
     userId: t.id,
     guildId: n,
@@ -65,12 +65,12 @@ let I = (0, a.Z)((0, o.Z)(function(e) {
     user: t
   }), H = (0, d.Z)({
     id: t.id,
-    label: E.intl.string(E.t["/AXYnJ"])
+    label: C.intl.string(C.t["/AXYnJ"])
   }), Q = (0, c.Z)(t), q = t.isNonUserBot();
   return (0, i.jsxs)(l.v2r, {
     navId: "user-context",
     onClose: r.Zy,
-    "aria-label": E.intl.string(E.t.liqwPD),
+    "aria-label": C.intl.string(C.t.liqwPD),
     onSelect: I,
     onInteraction: _,
     children: [!q && (0, i.jsxs)(i.Fragment, {
@@ -90,5 +90,5 @@ let I = (0, a.Z)((0, o.Z)(function(e) {
     })]
   })
 }, {
-  object: C.qAy.CONTEXT_MENU
+  object: E.qAy.CONTEXT_MENU
 }), [u.Z.CONTEXT_MENU, u.Z.USER_GENERIC_MENU])

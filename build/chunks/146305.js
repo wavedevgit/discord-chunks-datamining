@@ -1,4 +1,4 @@
-/** Chunk was on 10923 **/
+/** Chunk was on 50629 **/
 "use strict";
 n.d(t, {
   Z: () => eI
@@ -51,8 +51,8 @@ var r = n(200651),
   K = n(497666),
   X = n(324330),
   q = n(495300),
-  J = n(312397),
-  Q = n(651780),
+  Q = n(312397),
+  J = n(651780),
   $ = n(279542),
   ee = n(413335),
   et = n(665324),
@@ -166,9 +166,9 @@ let eI = {
         };
       case ej.pNK.OVERVIEW:
         return {
-          section: ej.pNK.OVERVIEW, impressionName: i.ImpressionNames.GUILD_SETTINGS_OVERVIEW, label: eO.intl.string(eO.t["/dp6yc"]), ariaLabel: eO.intl.string(eO.t["/dp6yc"]), element: J.Z, notice: {
+          section: ej.pNK.OVERVIEW, impressionName: i.ImpressionNames.GUILD_SETTINGS_OVERVIEW, label: eO.intl.string(eO.t["/dp6yc"]), ariaLabel: eO.intl.string(eO.t["/dp6yc"]), element: Q.Z, notice: {
             stores: [R.Z],
-            element: J.O
+            element: Q.O
           }
         };
       case ej.pNK.ROLES:
@@ -334,7 +334,7 @@ let eI = {
         };
       case ej.pNK.GUILD_PREMIUM:
         return {
-          section: ej.pNK.GUILD_PREMIUM, impressionName: i.ImpressionNames.GUILD_SETTINGS_BOOST_STATUS, label: eO.intl.string(eO.t["8+VX4+"]), ariaLabel: eO.intl.string(eO.t["8+VX4+"]), element: Q.Z, className: eC.serverBoostTabItem, icon: (0, r.jsx)(ee.Z, {
+          section: ej.pNK.GUILD_PREMIUM, impressionName: i.ImpressionNames.GUILD_SETTINGS_BOOST_STATUS, label: eO.intl.string(eO.t["8+VX4+"]), ariaLabel: eO.intl.string(eO.t["8+VX4+"]), element: J.Z, className: eC.serverBoostTabItem, icon: (0, r.jsx)(ee.Z, {
             className: eC.icon
           })
         };

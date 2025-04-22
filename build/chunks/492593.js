@@ -54,19 +54,19 @@ let g = function(e) {
     disableInteraction: f = !1,
     childrenRepliedMessage: b,
     childrenExecutedCommand: h,
-    childrenHeader: y,
-    childrenSystemMessage: _,
+    childrenHeader: _,
+    childrenSystemMessage: y,
     childrenButtons: O,
     childrenMessageContent: v,
     childrenAccessories: j,
     messageRef: x,
-    focusProps: C = {
+    focusProps: P = {
       offset: {
         left: 4,
         right: 4
       }
     },
-    hasThread: P,
+    hasThread: C,
     isSystemMessage: T,
     hasReply: w,
     authorHasGradientRole: S = !1,
@@ -88,7 +88,7 @@ let g = function(e) {
   }(e, ["className", "compact", "contentOnly", "zalgo", "preview", "disableInteraction", "childrenRepliedMessage", "childrenExecutedCommand", "childrenHeader", "childrenSystemMessage", "childrenButtons", "childrenMessageContent", "childrenAccessories", "messageRef", "focusProps", "hasThread", "isSystemMessage", "hasReply", "authorHasGradientRole", "guildId"]);
   let k = (0, c.Z)(I, "BaseMessage"),
     M = (0, s.e7)([l.Z], () => l.Z.useReducedMotion),
-    R = (0, r.jsx)(i.tEY, p(d({}, C), {
+    R = (0, r.jsx)(i.tEY, p(d({}, P), {
       children: (0, r.jsxs)("div", p(d({
         className: a()(t, {
           [u.gradient]: !!k && S,
@@ -99,7 +99,7 @@ let g = function(e) {
           [u.preview]: m,
           [u.cozy]: !n,
           [u.zalgo]: g,
-          [u.hasThread]: P,
+          [u.hasThread]: C,
           [u.isSystemMessage]: T,
           [u.hasReply]: w
         }),
@@ -108,7 +108,7 @@ let g = function(e) {
         role: "article",
         children: [b, h, (0, r.jsxs)("div", {
           className: u.contents,
-          children: [_, y, null == _ && v]
+          children: [y, _, null == y && v]
         }), j, null != O ? (0, r.jsx)("div", {
           className: u.buttonContainer,
           children: O

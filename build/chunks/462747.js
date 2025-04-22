@@ -21,7 +21,7 @@ var l = t(120356),
   v = t(388032),
   h = t(960689);
 
-function E(e) {
+function C(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       i = Object.keys(t);
@@ -40,7 +40,7 @@ function E(e) {
   return e
 }
 
-function C(e, n) {
+function E(e, n) {
   return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -137,7 +137,7 @@ function L(e) {
       let {
         isShown: _
       } = a;
-      return (0, i.jsxs)(d.P3F, C(E({
+      return (0, i.jsxs)(d.P3F, E(C({
         className: r()(h.listRow, h.interactiveRow, {
           [h.selected]: _
         }),
@@ -160,7 +160,7 @@ function L(e) {
   })
 }
 
-function N(e) {
+function j(e) {
   let {
     eventUsers: n,
     guildId: t,
@@ -179,7 +179,7 @@ function N(e) {
   })
 }
 
-function j(e) {
+function N(e) {
   let {
     children: n,
     style: t
@@ -196,7 +196,7 @@ function S(e) {
     children: n,
     height: t
   } = e;
-  return (0, i.jsx)(j, {
+  return (0, i.jsx)(N, {
     style: {
       height: t
     },
@@ -228,8 +228,8 @@ function D(e) {
   return r.length >= f.rC && u > f.rC && (_ = Math.max(u - r.length, 0)), 0 === r.length ? (0, i.jsx)(S, {
     height: c,
     children: (0, i.jsx)(x, {})
-  }) : (0, i.jsx)(j, {
-    children: (0, i.jsx)(N, {
+  }) : (0, i.jsx)(N, {
+    children: (0, i.jsx)(j, {
       eventUsers: r,
       guildId: n.guild_id,
       onContextMenu: function(e, n) {
@@ -237,7 +237,7 @@ function D(e) {
           let {
             default: e
           } = await Promise.all([t.e("79695"), t.e("69220"), t.e("70686")]).then(t.bind(t, 881351));
-          return t => (0, i.jsx)(e, C(E({}, t), {
+          return t => (0, i.jsx)(e, E(C({}, t), {
             user: n
           }))
         })
