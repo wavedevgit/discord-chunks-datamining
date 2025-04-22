@@ -58,7 +58,7 @@ let p = [{
       onCloseRequest: () => (0, l.Mr3)(s.g)
     })
   },
-  g = () => {
+  j = () => {
     (0, l.nfh)(s.c) ? (0, l.Mr3)(s.c) : (0, l.ZDy)(async () => {
       let {
         ShopPFXPreviewInstructionModal: e
@@ -69,7 +69,7 @@ let p = [{
       onCloseRequest: () => (0, l.Mr3)(s.c)
     })
   },
-  j = () => {
+  g = () => {
     let e = (0, o.lb)(),
       {
         previewProfileEffectId: t,
@@ -91,7 +91,7 @@ let p = [{
         }), (0, a.jsx)(l.zxk, {
           look: l.zxk.Looks.BLANK,
           size: l.zxk.Sizes.SMALL,
-          onClick: g,
+          onClick: j,
           className: x.instructionsButton,
           children: (0, a.jsx)(l.idN, {
             color: l.TVs.colors.BG_BRAND
@@ -338,7 +338,7 @@ let p = [{
             color: l.TVs.colors.BG_BRAND
           })
         })]
-      }), (0, a.jsx)(j, {}), (0, a.jsx)(_, {}), (0, a.jsx)(y, {
+      }), (0, a.jsx)(g, {}), (0, a.jsx)(_, {}), (0, a.jsx)(y, {
         clearAssets: o,
         clearIgnoredFiles: s
       }), (0, a.jsx)(C, {

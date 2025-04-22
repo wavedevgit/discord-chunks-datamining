@@ -18,8 +18,8 @@ var a = n(200651),
   b = n(835473),
   f = n(246992),
   v = n(681619),
-  g = n(810568),
-  j = n(168524),
+  j = n(810568),
+  g = n(168524),
   _ = n(77498),
   y = n(823379),
   C = n(550532),
@@ -116,10 +116,10 @@ function Z() {
       var e, t, n;
       return parseInt(R) > 0 ? R : null != (n = null == (e = _.Z.getGameByName(R)) ? void 0 : e.id) ? n : null == (t = p.Z.getApplicationByName(R)) ? void 0 : t.id
     }, [R]),
-    D = (0, j.Z)({
+    D = (0, g.Z)({
       applicationId: A,
       location: "DevToolsContentInventory",
-      source: g.m1.DevTools
+      source: j.m1.DevTools
     }),
     z = Object.entries(null != (t = m.K.get("GameProfileModal")) ? t : {}).filter(e => {
       let [t, n] = e;
@@ -129,7 +129,7 @@ function Z() {
       return t
     }),
     M = (0, b.Z)(z).filter(y.lm),
-    B = (0, u.e7)([C.Z], () => C.Z.getFakeGameToShow());
+    U = (0, u.e7)([C.Z], () => C.Z.getFakeGameToShow());
   return (0, a.jsx)("div", {
     className: k.panel,
     children: (0, a.jsxs)(x.zJl, {
@@ -227,7 +227,7 @@ function Z() {
             label: e,
             value: e
           })),
-          isSelected: e => e === B,
+          isSelected: e => e === U,
           select: function(e) {
             h.Z.dispatch({
               type: "CONTENT_INVENTORY_FORCE_SHOW_GAME_SHARING",
@@ -244,10 +244,10 @@ function Z() {
 let L = e => {
   let {
     application: t
-  } = e, n = (0, j.Z)({
+  } = e, n = (0, g.Z)({
     applicationId: t.id,
     location: "DevToolsContentInventory",
-    source: g.m1.DevTools
+    source: j.m1.DevTools
   });
   return (0, a.jsx)(x.P3F, {
     onClick: n,

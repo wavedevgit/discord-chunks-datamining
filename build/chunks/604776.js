@@ -18,7 +18,7 @@ var a = n(200651),
   b = n(123393),
   f = n(616257),
   v = n(173166);
-let g = e => {
+let j = e => {
     var t;
     let {
       entitlement: n,
@@ -51,7 +51,7 @@ let g = e => {
       })]
     })
   },
-  j = async () => (await s.tn.get({
+  g = async () => (await s.tn.get({
     url: h.ANM.ENTITLEMENTS_FOR_APPLICATION(p.CL),
     oldFormErrors: !0,
     query: {
@@ -100,7 +100,7 @@ function E() {
   }, I = async () => {
     try {
       t(!0);
-      let e = await j();
+      let e = await g();
       p(e)
     } finally {
       t(!1)
@@ -223,7 +223,7 @@ function E() {
             variant: "text-md/bold",
             children: "Active premium"
           }), (0, a.jsx)("div", {
-            children: E.map(e => (0, a.jsx)(g, {
+            children: E.map(e => (0, a.jsx)(j, {
               entitlement: e,
               active: !0,
               onDelete: () => w(e.id)
@@ -237,7 +237,7 @@ function E() {
             variant: "text-md/bold",
             children: "Unconsumed Fractional Premium"
           }), (0, a.jsx)("div", {
-            children: T.map(e => (0, a.jsx)(g, {
+            children: T.map(e => (0, a.jsx)(j, {
               entitlement: e
             }, e.id))
           })]

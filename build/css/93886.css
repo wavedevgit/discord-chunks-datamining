@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: a34dadc91843ff52
+  Original File Name: fe5efe8580278174
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -948,6 +948,10 @@
 
 .error__1f651,.formSection__1f651 {
     margin-top: var(--spacing-8)
+}
+
+.subscriptionTextContainer__1f651 {
+    margin-bottom: 15px
 }
 
 .panel_d6bcee {
@@ -2765,4 +2769,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=a34dadc91843ff52.css.map*/
+/*# sourceMappingURL=fe5efe8580278174.css.map*/

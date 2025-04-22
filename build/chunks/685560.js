@@ -18,8 +18,8 @@ var a = n(200651),
   b = n(899667),
   f = n(430824),
   v = n(914010),
-  g = n(981631),
-  j = n(444048);
+  j = n(981631),
+  g = n(444048);
 let _ = [s.z.GUILD_POWERUP_PERKS_COACHMARK, s.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK, s.z.GUILD_POWERUP_NOTIFICATION],
   y = [s.C.GUILD_POWERUP_LEVEL_1_COACHMARK, s.C.GUILD_POWERUP_LEVEL_2_COACHMARK, s.C.GUILD_POWERUP_LEVEL_3_COACHMARK, s.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, s.C.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK, s.C.GUILD_POWERUP_BOTH_SKU_PURCHASE_COACHMARK],
   C = [s.C.ADOPT_CLAN_IDENTITY_NOTICE];
@@ -44,7 +44,7 @@ function O(e) {
 }
 async function E(e, t, n) {
   await Promise.all(t.map(e => o.tn.patch({
-    url: g.ANM.APPLIED_BOOST_MODIFY_END_DATE(e.id),
+    url: j.ANM.APPLIED_BOOST_MODIFY_END_DATE(e.id),
     body: n ? {} : {
       ends_at: l()().add(1, "day")
     },
@@ -69,18 +69,18 @@ function N() {
       return null != t && null != (e = b.Z.getAppliedGuildBoostsForGuild(t)) ? e : []
     });
   if (null != t) return (0, a.jsxs)(c.zJl, {
-    className: j.container,
+    className: g.container,
     children: [(0, a.jsx)("div", {
-      className: j.section,
+      className: g.section,
       children: (0, a.jsx)(c.X6q, {
         variant: "heading-md/normal",
         children: "Current guild: ".concat(n)
       })
     }), (0, a.jsxs)("div", {
-      className: j.section,
+      className: g.section,
       children: [(0, a.jsx)(c.Text, {
         variant: "eyebrow",
-        className: j.header,
+        className: g.header,
         children: "Reset Notification Indicators"
       }), (0, a.jsx)(c.zxk, {
         onClick: () => {
@@ -89,7 +89,7 @@ function N() {
         children: "Reset"
       })]
     }), (0, a.jsxs)("div", {
-      className: j.section,
+      className: g.section,
       children: [(0, a.jsx)(c.Text, {
         variant: "eyebrow",
         children: "Set Warning State"
@@ -107,25 +107,25 @@ function N() {
         })]
       })]
     }), (0, a.jsxs)("div", {
-      className: j.section,
+      className: g.section,
       children: [(0, a.jsx)(c.Text, {
         variant: "eyebrow",
-        className: j.header,
+        className: g.header,
         children: "Reset User Level DCs"
       }), _.map(e => (0, a.jsx)(u.u, {
-        className: j.formSwitch,
+        className: g.formSwitch,
         contents: l,
         content: s.z[e],
         onChange: () => {}
       }, s.z[e]))]
     }), (0, a.jsxs)("div", {
-      className: j.section,
+      className: g.section,
       children: [(0, a.jsx)(c.Text, {
         variant: "eyebrow",
-        className: j.header,
+        className: g.header,
         children: "Reset Guild Level DCs"
       }), y.map(e => (0, a.jsx)(c.j7V, {
-        className: j.formSwitch,
+        className: g.formSwitch,
         onChange: n => {
           n ? (0, m.Qd)(e, t, !1) : ((0, h.Z1)(s.z.GUILD_POWERUP_NOTIFICATION), (0, m.c7)(e, t))
         },
@@ -136,12 +136,12 @@ function N() {
         })
       }, e))]
     }), (0, a.jsxs)("div", {
-      className: j.section,
+      className: g.section,
       children: [(0, a.jsx)(c.Text, {
         variant: "eyebrow",
         children: "Reset Server Tag Guild Level DCs"
       }), C.map(e => (0, a.jsx)(c.j7V, {
-        className: j.formSwitch,
+        className: g.formSwitch,
         onChange: n => {
           n ? (0, m.Qd)(e, t, !1) : ((0, h.Z1)(s.z.GUILD_POWERUP_NOTIFICATION), (0, m.c7)(e, t))
         },

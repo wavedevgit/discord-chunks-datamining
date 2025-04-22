@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => j
+  Z: () => g
 }), n(49124);
 var a = n(200651),
   r = n(192379),
@@ -37,7 +37,7 @@ function v(e) {
   return e
 }
 
-function g(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,7 +50,7 @@ function g(e, t) {
   }), e
 }
 
-function j() {
+function g() {
   return (0, a.jsx)("div", {
     className: f.container,
     children: (0, a.jsx)(_, {})
@@ -69,7 +69,7 @@ function _() {
       var e, t;
       return null != (t = null == (e = m.Z.getWallpaperById(n)) ? void 0 : e.default.secondary_color) ? t : "#000000"
     }),
-    j = r.useCallback(e => {
+    g = r.useCallback(e => {
       y(null == t ? void 0 : t.wallpaperId, e.target.value)
     }, [null == t ? void 0 : t.wallpaperId]),
     _ = r.useCallback(e => {
@@ -100,7 +100,7 @@ function _() {
     }), null != t && (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(u.ua7, {
         text: "The most prominent color in the wallpaper. This will be used to adjust the color tokens.",
-        children: e => (0, a.jsx)(s.X6, g(v({
+        children: e => (0, a.jsx)(s.X6, j(v({
           className: i()(f.subheader, f.hasTooltip),
           variant: "heading-md/semibold"
         }, e), {
@@ -111,7 +111,7 @@ function _() {
         children: [(0, a.jsx)("input", {
           type: "color",
           value: l,
-          onChange: j
+          onChange: g
         }), (0, a.jsx)(d.M0, {
           size: d.tT.SIZE_24,
           color: d.YX.TERTIARY,
@@ -123,7 +123,7 @@ function _() {
         })]
       }), (0, a.jsx)(u.ua7, {
         text: "The second most prominent color in the wallpaper. This will be used to adjust the color tokens.",
-        children: e => (0, a.jsx)(s.X6, g(v({
+        children: e => (0, a.jsx)(s.X6, j(v({
           className: i()(f.subheader, f.hasTooltip),
           variant: "heading-md/semibold"
         }, e), {

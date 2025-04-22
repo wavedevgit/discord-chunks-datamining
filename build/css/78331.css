@@ -1,7 +1,14 @@
 /**
   Module ID: 78331
-  Original File Name: f8eb7b4d84b7cba4
+  Original File Name: 802faef9715019c9
 **/
+.errorBanner__0c773 p {
+    background: var(--status-danger-background);
+    border-radius: var(--space-xs);
+    margin: 0;
+    padding: var(--space-sm)
+}
+
 .modalRoot_db78b7 {
     width: var(--modal-width-medium)
 }
@@ -49,4 +56,9 @@ main {
     top: var(--space-lg)
 }
 
-/*# sourceMappingURL=f8eb7b4d84b7cba4.css.map*/
+.uploadContainer_db78b7 {
+    display: grid;
+    gap: var(--space-sm)
+}
+
+/*# sourceMappingURL=802faef9715019c9.css.map*/

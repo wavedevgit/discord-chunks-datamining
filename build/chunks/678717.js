@@ -18,8 +18,8 @@ var a = n(200651),
   b = n(906467),
   f = n(259580),
   v = n(31336),
-  g = n(19759),
-  j = n(432877);
+  j = n(19759),
+  g = n(432877);
 n(381996);
 var _ = n(392750),
   y = n(926976),
@@ -40,10 +40,10 @@ var _ = n(392750),
   D = n(496025),
   z = n(442954),
   M = n(633001),
-  B = n(702904),
-  U = n(178821),
-  G = n(891401),
-  F = n(958328),
+  U = n(702904),
+  B = n(178821),
+  F = n(891401),
+  G = n(958328),
   V = n(315384),
   H = n(514866),
   W = n(384207),
@@ -65,7 +65,7 @@ function er(e) {
     onResize: n,
     onResizeEnd: r
   } = e, l = (0, d.Z)({
-    minDimension: g.h,
+    minDimension: j.h,
     resizableDomNodeRef: t,
     onElementResize: n,
     onElementResizeEnd: r,
@@ -127,7 +127,7 @@ function el(e) {
       id: "performance",
       name: "Performance",
       group: Q.v0.DEVELOPMENT,
-      render: () => (0, a.jsx)(U.ZP, {})
+      render: () => (0, a.jsx)(B.ZP, {})
     }), e.push({
       id: "feedback",
       name: "Feedback",
@@ -163,7 +163,7 @@ function el(e) {
       name: "Dev Overlays",
       group: Q.v0.DEVELOPMENT,
       render: () => (0, a.jsx)(I.Z, {
-        devSettingsCategory: j.zU.OVERLAYS
+        devSettingsCategory: g.zU.OVERLAYS
       })
     }), e.push({
       id: "messaging",
@@ -175,13 +175,13 @@ function el(e) {
       name: "Reporting",
       group: Q.v0.EXPERIMENTS,
       render: () => (0, a.jsx)(I.Z, {
-        devSettingsCategory: j.zU.REPORTING
+        devSettingsCategory: g.zU.REPORTING
       })
     }), e.push({
       id: "permissions",
       name: "Permissions",
       group: Q.v0.USERS,
-      render: () => (0, a.jsx)(F.Z, {})
+      render: () => (0, a.jsx)(G.Z, {})
     }), e.push({
       id: "modals",
       name: "Modals",
@@ -206,7 +206,7 @@ function el(e) {
       id: "perks",
       name: "Perks",
       group: Q.v0.PREMIUM,
-      render: () => (0, a.jsx)(G.Z, {})
+      render: () => (0, a.jsx)(F.Z, {})
     }), e.push({
       id: "potions",
       name: "Potions",
@@ -221,7 +221,7 @@ function el(e) {
       id: "payments",
       name: "Payments",
       group: Q.v0.BILLING,
-      render: () => (0, a.jsx)(B.Z, {})
+      render: () => (0, a.jsx)(U.Z, {})
     }), e.push({
       id: "subscriptions",
       name: "Subscriptions",
@@ -259,7 +259,7 @@ function el(e) {
     selectedTabId: d
   } = (0, Q.ZP)({
     tabs: l,
-    initialSelectedTabId: null != (t = g.Z.lastOpenTabId) ? t : void 0,
+    initialSelectedTabId: null != (t = j.Z.lastOpenTabId) ? t : void 0,
     onChangeTab: e => {
       (0, v.Qh)({
         lastOpenTabId: e
@@ -313,7 +313,7 @@ function el(e) {
 
 function ei() {
   let e = r.useRef(null),
-    t = (0, s.e7)([g.Z], () => g.Z.sidebarWidth),
+    t = (0, s.e7)([j.Z], () => j.Z.sidebarWidth),
     [n, l] = r.useState(null),
     i = r.useCallback(e => (0, v.Qh)({
       sidebarWidth: e
@@ -324,7 +324,7 @@ function ei() {
     ref: e,
     className: en.container,
     style: {
-      minWidth: g.h,
+      minWidth: j.h,
       width: n
     },
     "data-app-right-panel": !0,
@@ -340,7 +340,7 @@ function ei() {
 }
 
 function eo() {
-  return (0, s.e7)([g.Z], () => g.Z.displayTools) ? (0, a.jsx)("div", {
+  return (0, s.e7)([j.Z], () => j.Z.displayTools) ? (0, a.jsx)("div", {
     className: i()(en.container, en.mobileContainerExpanded),
     children: (0, a.jsx)("div", {
       className: en.sidebarContent,
