@@ -23,7 +23,7 @@ function x(e) {
   var t;
   let {
     invite: n,
-    author: x,
+    message: x,
     getAcceptInviteContext: y
   } = e, E = (0, l.e7)([p.default], () => p.default.getId()), v = (null == (t = n.inviter) ? void 0 : t.id) === E, O = n.state === g.r2o.ACCEPTING, {
     analyticsLocations: j
@@ -37,13 +37,15 @@ function x(e) {
     })), (0, o.r$)({
       invite: n,
       action: e,
-      inviter_id: x.id
+      inviter_id: x.author.id,
+      invite_message_id: x.id
     }, j)
   }, [n, x, j]), I = i.useCallback(() => {
     (0, o.r$)({
       invite: n,
       action: "accept",
-      inviter_id: x.id
+      inviter_id: x.author.id,
+      invite_message_id: x.id
     }, j);
     let e = y("Invite Button Embed");
     o.ZP.acceptInviteAndTransitionToInviteChannel({

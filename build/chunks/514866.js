@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => j
+  Z: () => g
 });
 var a = n(200651);
 n(192379);
@@ -40,7 +40,7 @@ let v = () => {
   })
 };
 
-function j() {
+function g() {
   let e = p.default.getCurrentUser(),
     t = null == e ? void 0 : e.isStaff(),
     n = x.Rt.useSetting();

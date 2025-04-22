@@ -27,10 +27,10 @@ let x = [{
 }];
 
 function h() {
-  let [e, t] = r.useState(null), [n, h] = r.useState(0), [p, b] = r.useState(1e3), [f, v] = r.useState(0), j = (0, l.e7)([c.Z], () => {
+  let [e, t] = r.useState(null), [n, h] = r.useState(0), [p, b] = r.useState(1e3), [f, v] = r.useState(0), g = (0, l.e7)([c.Z], () => {
     var t;
     return null === e ? null : null != (t = c.Z.getFeedbackConfig(e)) ? t : s.R[e]
-  }), g = Object.keys(s.R).map(e => ({
+  }), j = Object.keys(s.R).map(e => ({
     label: e,
     value: e
   })), _ = r.useMemo(() => null != e && f >= 0 && f <= 100 && n >= 0, [e, f, n]);
@@ -41,7 +41,7 @@ function h() {
       className: m.formElement,
       tag: i.RB0.H3,
       children: (0, a.jsx)(i.q4e, {
-        options: g,
+        options: j,
         value: e,
         onChange: e => {
           t(e)
@@ -53,7 +53,7 @@ function h() {
       title: "Override Survey Cooldown",
       className: m.formElement,
       tag: i.RB0.H3,
-      children: [null != j && (0, a.jsxs)(a.Fragment, {
+      children: [null != g && (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(d.Z, {
           className: m.formDividerTitle,
           children: (0, a.jsx)(i.Text, {
@@ -62,16 +62,16 @@ function h() {
           })
         }), (0, a.jsx)(i.Text, {
           variant: "text-sm/normal",
-          children: "".concat(j.cooldown / 1e3, " second(s) or")
+          children: "".concat(g.cooldown / 1e3, " second(s) or")
         }), (0, a.jsx)(i.Text, {
           variant: "text-sm/normal",
-          children: "".concat(j.cooldown / 6e4, " minute(s) or")
+          children: "".concat(g.cooldown / 6e4, " minute(s) or")
         }), (0, a.jsx)(i.Text, {
           variant: "text-sm/normal",
-          children: "".concat(j.cooldown / 36e5, " hour(s) or")
+          children: "".concat(g.cooldown / 36e5, " hour(s) or")
         }), (0, a.jsx)(i.Text, {
           variant: "text-sm/normal",
-          children: "".concat(j.cooldown / 864e5, " day(s)")
+          children: "".concat(g.cooldown / 864e5, " day(s)")
         })]
       }), (0, a.jsx)(d.Z, {
         className: m.formDividerTitle,
@@ -100,7 +100,7 @@ function h() {
       title: "Override Survey Chance",
       className: m.formElement,
       tag: i.RB0.H3,
-      children: [null != j && (0, a.jsxs)(a.Fragment, {
+      children: [null != g && (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(d.Z, {
           className: m.formDividerTitle,
           children: (0, a.jsx)(i.Text, {
@@ -109,7 +109,7 @@ function h() {
           })
         }), (0, a.jsx)(i.Text, {
           variant: "text-sm/normal",
-          children: "".concat(100 * j.chance, "%")
+          children: "".concat(100 * g.chance, "%")
         })]
       }), (0, a.jsx)(d.Z, {
         className: m.formDividerTitle,

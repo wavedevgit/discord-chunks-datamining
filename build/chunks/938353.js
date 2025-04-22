@@ -260,7 +260,7 @@ class e1 extends(r = l.Component) {
       } = t;
       if (n === O.g.INVITE) return this.shouldRenderInvite(r) ? (0, i.jsx)(eA.Z, {
         code: r,
-        author: e.author,
+        message: e,
         getAcceptInviteContext: this.getAcceptInviteContext
       }, r) : null;
       if (n === O.g.TEMPLATE) return (0, i.jsx)(D.Z, {
@@ -271,7 +271,7 @@ class e1 extends(r = l.Component) {
       }, r);
       if (n === O.g.CHANNEL_LINK) return (0, i.jsx)(eI.Z, {
         code: r,
-        messageData: e
+        message: e
       }, r);
       if (n === O.g.APP_DIRECTORY_PROFILE) return (0, i.jsx)(A.Z, {
         code: r,

@@ -120,8 +120,8 @@ function L(e) {
   var t, n;
   let l, {
       invite: a,
-      getAcceptInviteContext: o,
-      inviterId: u
+      message: o,
+      getAcceptInviteContext: u
     } = e,
     {
       approximate_member_count: h,
@@ -163,13 +163,14 @@ function L(e) {
       (0, d.r$)({
         invite: a,
         action: "accept",
-        inviter_id: u
+        inviter_id: o.author.id,
+        invite_message_id: o.id
       }, L), d.ZP.acceptInviteAndTransitionToInviteChannel({
         inviteKey: a.code,
-        context: o("Invite Button Embed"),
+        context: u("Invite Button Embed"),
         analyticsLocations: L
       })
-    }, [a, u, L, o]),
+    }, [a, o, L, u]),
     G = a.state === A.r2o.ACCEPTING,
     H = null != E;
   if (null == E) {

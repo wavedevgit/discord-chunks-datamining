@@ -28,7 +28,7 @@ function j(e) {
   let {
     invite: t,
     isMemberOfGuild: n,
-    inviterId: l,
+    message: l,
     onTransitionToInviteChannel: c,
     onAcceptInstantInvite: d
   } = e, p = i.useRef(null), [f, h] = i.useState(!0), [j, S] = i.useState(!1), I = t.state === E.r2o.ACCEPTING, N = (0, o.e7)([u.Z], () => u.Z.useReducedMotion);
@@ -106,7 +106,7 @@ function j(e) {
             invite: t,
             profile: T,
             isMemberOfGuild: n,
-            inviterId: l,
+            message: l,
             submitting: I,
             onTransitionToInviteChannel: c,
             onAcceptInstantInvite: d
@@ -122,7 +122,7 @@ function C(e) {
     invite: t,
     profile: n,
     isMemberOfGuild: l,
-    inviterId: a,
+    message: a,
     submitting: o,
     onTransitionToInviteChannel: s,
     onAcceptInstantInvite: u
@@ -136,7 +136,8 @@ function C(e) {
     (0, c.r$)({
       invite: t,
       action: e,
-      inviter_id: a
+      inviter_id: a.author.id,
+      invite_message_id: a.id
     }, _)
   }, [t, a, _, l]);
   return null == g ? null : (0, r.jsx)(h.o, {

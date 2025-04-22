@@ -13,11 +13,11 @@ var i = n(592125),
 function c(e) {
   let {
     code: t,
-    messageData: n
+    message: n
   } = e, [c, u] = t.split("/"), d = i.Z.getChannel(u), p = l.Z.getGuild(c);
   return null != d && d.isGuildVocal() && null != p && a.Z.can(s.Plq.VIEW_CHANNEL, d) && a.Z.can(s.Plq.CONNECT, d) ? (0, r.jsx)(o.Z, {
     guild: p,
     channel: d,
-    messageData: n
+    message: n
   }) : null
 }

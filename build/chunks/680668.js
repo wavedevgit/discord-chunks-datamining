@@ -29,10 +29,10 @@ function v(e) {
       onAcceptInstantInvite: N,
       guild: T,
       invite: P,
-      author: A,
+      message: A,
       currentUserId: w
     } = e,
-    Z = w === A.id,
+    Z = w === A.author.id,
     {
       channel: R,
       approximate_member_count: k,
@@ -62,7 +62,8 @@ function v(e) {
       U ? (I(), e = "transition") : (N(), e = "accept"), (0, o.r$)({
         invite: P,
         action: e,
-        inviter_id: A.id
+        inviter_id: A.author.id,
+        invite_message_id: A.id
       }, K)
     }, [P, A, K, U, I, N]);
   if (null == T) {

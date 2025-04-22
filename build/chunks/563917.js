@@ -14,7 +14,7 @@ let u = e => {
     invite: t,
     stageInstance: n,
     guild: u,
-    inviterId: d,
+    message: d,
     isMember: p,
     onTransitionToInviteChannel: m,
     onAcceptInstantInvite: f
@@ -25,7 +25,8 @@ let u = e => {
     p ? (m(), e = "transition") : (f(), e = "accept"), (0, l.r$)({
       invite: t,
       action: e,
-      inviter_id: d
+      inviter_id: d.author.id,
+      invite_message_id: d.id
     }, h)
   }, [t, d, h, p, m, f]);
   return (0, r.jsx)(c.Z, {

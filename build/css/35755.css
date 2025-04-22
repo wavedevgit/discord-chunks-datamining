@@ -1,6 +1,6 @@
 /**
   Module ID: 35755
-  Original File Name: 679ba4bd0db162bd
+  Original File Name: 7f7f76690e174864
 **/
 .brokenImageIcon_f68fcb {
     color: var(--background-accent);
@@ -445,6 +445,7 @@
 
 .profileEntryCard__655fa {
     align-items: center;
+    background-color: var(--background-primary);
     border-bottom: 1px solid var(--border-faint);
     cursor: pointer;
     display: flex;
@@ -454,8 +455,15 @@
     padding: 8px
 }
 
+.profileEntryCard__655fa:first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px
+}
+
 .profileEntryCard__655fa:last-child {
-    border-bottom: none
+    border-bottom: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px
 }
 
 .profileEntryCard__655fa:hover .reactions__655fa {
@@ -684,6 +692,7 @@
 
 .friendsWhoPlay__95856.container__95856 {
     gap: var(--spacing-16);
+    height: 100%;
     margin-bottom: 116px
 }
 
@@ -892,7 +901,8 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    justify-content: center
+    justify-content: center;
+    min-height: 100px
 }
 
 .friendsMotivationText__95856 p {
@@ -1634,4 +1644,4 @@
     border: 3px solid CanvasText
 }
 
-/*# sourceMappingURL=679ba4bd0db162bd.css.map*/
+/*# sourceMappingURL=7f7f76690e174864.css.map*/

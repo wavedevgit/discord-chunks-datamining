@@ -26,7 +26,7 @@ function E(e) {
       invite: E,
       currentUserId: v,
       guild: O,
-      inviterId: j,
+      message: j,
       onTransitionToInviteChannel: C,
       onAcceptInstantInvite: S
     } = e,
@@ -52,7 +52,8 @@ function E(e) {
       w ? (C(), e = "transition") : (S(), e = "accept"), (0, s.r$)({
         invite: E,
         action: e,
-        inviter_id: j
+        inviter_id: j.author.id,
+        invite_message_id: j.id
       }, A)
     }, [E, j, A, w, C, S]),
     U = null != O;

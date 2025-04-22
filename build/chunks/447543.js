@@ -261,13 +261,15 @@ function eE(e, t) {
   let {
     invite: r,
     action: i,
-    inviter_id: a
+    inviter_id: a,
+    invite_message_id: o
   } = e;
   H.default.track(J.rMx.INVITE_EMBED_ACTIONED, {
     action: i,
     invite_code: r.code,
     invite_type: null == (n = r.type) ? void 0 : n.toString(),
     inviter_id: null != a ? a : null,
+    invite_message_id: null != o ? o : null,
     location_stack: null != t ? t : null
   })
 }

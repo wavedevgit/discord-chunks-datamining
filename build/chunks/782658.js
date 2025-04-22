@@ -37,7 +37,7 @@ var r = n(200651),
 function R(e) {
   let {
     code: t,
-    author: n,
+    message: n,
     getAcceptInviteContext: R
   } = e, {
     invite: k,
@@ -90,7 +90,7 @@ function R(e) {
       currentUserId: G,
       guild: B,
       invite: M,
-      author: n
+      message: n
     });
   switch (M.state) {
     case w.r2o.RESOLVING:
@@ -100,12 +100,12 @@ function R(e) {
     case w.r2o.BANNED:
       W = (0, r.jsx)(N.Z, {
         banned: M.state === w.r2o.BANNED,
-        author: n
+        author: n.author
       });
       break;
     case w.r2o.ERROR:
       W = (0, r.jsx)(O.Z, {
-        author: n,
+        author: n.author,
         inviteError: D
       });
       break;
@@ -117,13 +117,13 @@ function R(e) {
             onAcceptInstantInvite: z,
             currentUserId: G,
             invite: M,
-            author: n
+            message: n
           });
           break;
         case h.wx.FRIEND:
           W = (0, r.jsx)(j.Z, {
             invite: M,
-            author: n,
+            message: n,
             getAcceptInviteContext: R
           });
           break;
@@ -133,7 +133,7 @@ function R(e) {
               onTransitionToInviteChannel: V,
               onAcceptInstantInvite: z,
               currentUserId: G,
-              inviterId: n.id,
+              message: n,
               guild: B,
               invite: M
             });
@@ -156,7 +156,7 @@ function R(e) {
               stageInstance: M.stage_instance,
               guild: M.guild,
               isMember: null != B,
-              inviterId: n.id,
+              message: n,
               onTransitionToInviteChannel: V,
               onAcceptInstantInvite: z
             });
@@ -164,13 +164,13 @@ function R(e) {
           }(0, h.P1)(M) && (W = (0, r.jsx)(v.Z, {
             invite: M,
             getAcceptInviteContext: R,
-            inviterId: n.id
+            message: n
           })), F && (0, p.lc)(M) && (W = (0, r.jsx)(I.Z, {
             onTransitionToInviteChannel: V,
             onAcceptInstantInvite: z,
             isMemberOfGuild: null != B,
             invite: M,
-            inviterId: n.id
+            message: n
           }))
       }
   }

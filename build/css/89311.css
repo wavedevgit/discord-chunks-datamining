@@ -1,6 +1,6 @@
 /**
   Module ID: 89311
-  Original File Name: 45dc00b4f84723c8
+  Original File Name: 6b140bb84d8e8c4d
 **/
 .fallback_b789ab {
     align-items: center;
@@ -300,6 +300,7 @@
 
 .profileEntryCard__655fa {
     align-items: center;
+    background-color: var(--background-primary);
     border-bottom: 1px solid var(--border-faint);
     cursor: pointer;
     display: flex;
@@ -309,8 +310,15 @@
     padding: 8px
 }
 
+.profileEntryCard__655fa:first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px
+}
+
 .profileEntryCard__655fa:last-child {
-    border-bottom: none
+    border-bottom: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px
 }
 
 .profileEntryCard__655fa:hover .reactions__655fa {
@@ -404,4 +412,4 @@
     margin-top: 8px
 }
 
-/*# sourceMappingURL=45dc00b4f84723c8.css.map*/
+/*# sourceMappingURL=6b140bb84d8e8c4d.css.map*/
