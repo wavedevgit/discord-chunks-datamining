@@ -194,13 +194,12 @@ function H(e) {
   let ec = Array.from(V.userIds).map(e => S.default.getUser(e)).filter(e => null != e),
     eu = {
       instance_id: null != (a = null != (n = V.compositeInstanceId) ? n : V.launchId) ? a : "",
-      channel_id: null == p ? void 0 : p.id,
       location_id: null == (t = V.location) ? void 0 : t.id,
       launch_id: V.launchId,
       referrer_id: V.referrerId,
       custom_id: V.customId
     };
-  return (null == p ? void 0 : p.guild_id) != null && (null == p ? void 0 : p.guild_id) !== "" && (eu.guild_id = p.guild_id), (0, r.jsx)(v.ZP, {
+  return (null == p ? void 0 : p.guild_id) != null && (null == p ? void 0 : p.guild_id) !== "" && (eu.guild_id = p.guild_id), (null == p ? void 0 : p.id) != null && (null == p ? void 0 : p.id) !== "" && (eu.channel_id = p.id), (0, r.jsx)(v.ZP, {
     timeout: 2e3,
     children: e => {
       var t, n;
