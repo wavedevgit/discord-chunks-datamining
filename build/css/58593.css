@@ -1,6 +1,6 @@
 /**
   Module ID: 58593
-  Original File Name: 9fb0f7008730945b
+  Original File Name: 1d9f2065e9b887f3
 **/
 @use postcss-pxtorem;
 
@@ -957,8 +957,8 @@
     margin: 0 0 0 .25rem
 }
 
-.gradient_c19a55:not(.reducedMotion_c19a55):hover [class*=gradientText] {
-    animation: gradient_c19a55 2.5s linear infinite
+.full-motion.app-focused:not(.hardware-acceleration-disabled) .gradient_c19a55:hover [class*=usernameGradient] {
+    animation: gradient_c19a55 1.5s linear infinite
 }
 
 @keyframes gradient_c19a55 {
@@ -1087,4 +1087,4 @@
     top: 0
 }
 
-/*# sourceMappingURL=9fb0f7008730945b.css.map*/
+/*# sourceMappingURL=1d9f2065e9b887f3.css.map*/

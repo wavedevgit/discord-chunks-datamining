@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
+  I: () => O,
   Z: () => C
 }), n(388685);
 var r = n(200651),
@@ -109,6 +110,7 @@ function T(e) {
   } = e, R = y(e, ["children", "user", "currentUser", "guildId", "channelId", "messageId", "roleId", "disableUserProfileLink", "newAnalyticsLocations", "appContext", "avatarUrl", "preload", "renderPopout", "onRequestOpen", "onRequestClose", "onClosePopout", "shouldShow", "shouldPreload"]);
   let P = i.useRef(void 0),
     w = i.useCallback(() => null != v ? v() : (0, d.Z)(n.id, null != E ? E : n.getAvatarURL(s, O), {
+      type: "popout",
       withMutualGuilds: n.id !== a.id,
       withMutualFriends: !n.bot && n.id !== a.id,
       guildId: s,
@@ -180,6 +182,7 @@ function A(e) {
     }, []);
   (0, s.zq)(Y);
   let W = i.useCallback(() => null != A ? A() : (0, d.Z)(n.id, null != T ? T : n.getAvatarURL(c, O), {
+      type: "popout",
       withMutualGuilds: n.id !== a.id,
       withMutualFriends: !n.bot && n.id !== a.id,
       guildId: c,

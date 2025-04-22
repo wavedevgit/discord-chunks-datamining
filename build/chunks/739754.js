@@ -1,9 +1,9 @@
 /** Chunk was on 91245 **/
 "use strict";
 n.d(t, {
-  ZP: () => y,
+  ZP: () => _,
   c4: () => h,
-  st: () => _
+  st: () => y
 });
 var r = n(200651),
   o = n(192379),
@@ -42,7 +42,7 @@ function h(e) {
   }
 }
 
-function _(e) {
+function y(e) {
   let {
     className: t,
     icon: n,
@@ -59,7 +59,7 @@ function _(e) {
     })]
   })
 }
-let y = o.memo(function(e) {
+let _ = o.memo(function(e) {
   let {
     message: t,
     className: n,
@@ -96,13 +96,13 @@ let y = o.memo(function(e) {
   }
   if (null == f) return null;
   let {
-    text: y,
+    text: _,
     icon: O,
     color: v
   } = f;
-  return (0, r.jsx)(_, {
+  return (0, r.jsx)(y, {
     icon: O,
-    text: y,
+    text: _,
     className: n,
     color: v
   })

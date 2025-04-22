@@ -43,7 +43,6 @@ async function l() {
     location: "preloadUserProfileForPopout"
   });
   await (0, a.Z)(e, t, s({
-    type: "popout",
     withMutualFriends: !0,
     withMutualGuilds: !0,
     waitForRefetch: f

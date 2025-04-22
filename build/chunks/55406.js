@@ -49,8 +49,8 @@ let p = a().defaultRules.lheading,
   f = a().defaultRules.image,
   b = a().defaultRules.list,
   h = a().defaultRules.blockQuote,
-  _ = a().defaultRules.paragraph,
-  y = /\{(.+?)}/,
+  y = a().defaultRules.paragraph,
+  _ = /\{(.+?)}/,
   O = /^\$(\w+?)\$/;
 r = n(235375);
 let v = e => {
@@ -58,8 +58,8 @@ let v = e => {
       transformUpperCase: t = !1
     } = e;
     return (e, n, r) => {
-      let o = y.exec(e[1]),
-        i = e[1].replace(y, "");
+      let o = _.exec(e[1]),
+        i = e[1].replace(_, "");
       return t && (i = i.toUpperCase()), {
         className: null != o ? o[1] : null,
         level: "=" === e[2] ? 1 : 2,
@@ -93,7 +93,7 @@ let v = e => {
     }), "function" == typeof r.customRules.lheading ? r.customRules.lheading(e) : r.customRules.lheading),
     heading: u({}, g, "function" == typeof r.customRules.heading ? r.customRules.heading(e) : r.customRules.heading),
     blockQuote: u({}, h, "function" == typeof r.customRules.blockQuote ? r.customRules.blockQuote(e) : r.customRules.blockQuote),
-    paragraph: u({}, _, "function" == typeof r.customRules.paragraph ? r.customRules.paragraph(e) : r.customRules.paragraph)
+    paragraph: u({}, y, "function" == typeof r.customRules.paragraph ? r.customRules.paragraph(e) : r.customRules.paragraph)
   }),
   x = e => ({
     lheading: u(d(u({}, p), {

@@ -1,7 +1,7 @@
 /** Chunk was on 91245 **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => _
 });
 var r = n(200651),
   o = n(192379),
@@ -18,24 +18,24 @@ var r = n(200651),
   f = n(235894),
   b = n(981631),
   h = n(388032),
-  _ = n(277586);
-let y = e => {
+  y = n(277586);
+let _ = e => {
   var t;
   let {
     message: n
-  } = e, y = o.useRef(null), O = (0, p.p7)("Message Header") && n.hasPotions(), v = s.Z.getChannel(n.getChannelId()), j = null == (t = n.potions) ? void 0 : t[0], x = o.useMemo(() => {
+  } = e, _ = o.useRef(null), O = (0, p.p7)("Message Header") && n.hasPotions(), v = s.Z.getChannel(n.getChannelId()), j = null == (t = n.potions) ? void 0 : t[0], x = o.useMemo(() => {
     var e;
     if (null == j) return null;
     let t = l.default.getUser(j.used_by);
     return null != (e = (0, u.y)(null == v ? void 0 : v.getGuildId(), null == v ? void 0 : v.id, t)) ? e : null == t ? void 0 : t.globalName
   }, [j, v]), P = o.useCallback(() => {
-    if (null != y.current && (0, f.Uw)(n)) {
+    if (null != _.current && (0, f.Uw)(n)) {
       let {
         x: e,
         y: t,
         width: r,
         height: o
-      } = y.current.getBoundingClientRect();
+      } = _.current.getBoundingClientRect();
       (0, g.Z)(n, {
         x: e,
         y: t,
@@ -74,8 +74,8 @@ let y = e => {
           }
           return e
         }({
-          ref: y,
-          className: _.potionBadge
+          ref: _,
+          className: y.potionBadge
         }, e), n = n = {
           children: [(0, r.jsx)(a.l22, {
             size: "custom",

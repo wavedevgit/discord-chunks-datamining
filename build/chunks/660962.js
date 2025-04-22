@@ -227,13 +227,20 @@ function et(e) {
 function en() {
   let e = (0, d.e7)([f.Z], () => f.Z.useReducedMotion),
     {
-      text: t,
-      gradient: n
-    } = (0, g.JUn)((0, c.Rf)(F.SK.primary_color), (0, c.Rf)(F.SK.secondary_color), (0, c.Rf)(F.SK.tertiary_color), e, "username");
+      gradientStyle: t,
+      gradientClassname: n
+    } = (0, g.JUn)({
+      primaryColor: (0, c.Rf)(F.SK.primary_color),
+      secondaryColor: (0, c.Rf)(F.SK.secondary_color),
+      tertiaryColor: (0, c.Rf)(F.SK.tertiary_color),
+      useReducedMotion: e,
+      roleStyle: "username",
+      includeConvenienceGlow: !0
+    });
   return (0, r.jsx)("span", {
-    style: q({}, t.gradientStyle),
-    className: s()(n.gradientClassName, t.gradientClassName),
-    "data-text": "magical",
+    style: q({}, t),
+    className: n,
+    "data-text": z.intl.string(H.default["+/IHLi"]),
     children: z.intl.string(H.default["+/IHLi"])
   })
 }

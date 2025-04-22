@@ -19,8 +19,8 @@ var o = n(442837),
   f = n(430824),
   b = n(944486),
   h = n(709586),
-  _ = n(626135),
-  y = n(524444),
+  y = n(626135),
+  _ = n(524444),
   O = n(981631),
   v = n(176505),
   j = n(388032),
@@ -65,7 +65,7 @@ let T = e => {
     name: T
   } = t;
   (0, i.ZP)(() => {
-    _.default.track(O.rMx.OPEN_POPOUT, P({
+    y.default.track(O.rMx.OPEN_POPOUT, P({
       type: "Role Icon Popout",
       guild_id: n.id
     }, (0, s.v_)(m.Z.getChannel(b.Z.getChannelId(n.id)))))
@@ -92,7 +92,7 @@ let T = e => {
       })
     };
   return (0, r.jsx)(a.VqE, {
-    children: (0, r.jsx)(y.W_, {
+    children: (0, r.jsx)(_.W_, {
       children: (0, r.jsxs)("div", {
         className: x.popoutContainer,
         children: [(0, r.jsxs)("div", {

@@ -5,8 +5,8 @@ r.d(t, {
 var n = r(200651);
 r(192379);
 var l = r(913527),
-  i = r.n(l),
-  o = r(481060),
+  o = r.n(l),
+  i = r(481060),
   a = r(925329),
   c = r(388032),
   s = r(965935);
@@ -22,12 +22,12 @@ function u(e) {
       game: t
     }), (0, n.jsxs)("div", {
       className: s.textContainer,
-      children: [(0, n.jsx)(o.Text, {
+      children: [(0, n.jsx)(i.Text, {
         className: s.timestamp,
         variant: "text-xs/medium",
         color: "text-muted",
-        children: i()(r).format("LLLL")
-      }), (0, n.jsx)(o.Text, {
+        children: o()(r).format("LLLL")
+      }), (0, n.jsx)(i.Text, {
         variant: "text-md/normal",
         color: "interactive-active",
         children: c.intl.format(c.t.J3s8JC, {
@@ -44,7 +44,7 @@ function m(e) {
     timestamp: r,
     children: l
   } = e;
-  return (0, n.jsx)(o.ua7, {
+  return (0, n.jsx)(i.ua7, {
     hideOnClick: !0,
     position: "top",
     "aria-label": c.intl.string(c.t["5nMcv7"]),
@@ -56,7 +56,7 @@ function m(e) {
     }),
     children: e => {
       var t, r;
-      return (0, n.jsx)(o.P3F, (t = function(e) {
+      return (0, n.jsx)(i.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
             n = Object.keys(r);
@@ -96,16 +96,16 @@ function p(e) {
     application: t,
     timestamp: r,
     compact: l,
-    children: i
+    children: o
   } = e;
   return (0, n.jsxs)(m, {
     application: t,
     timestamp: r,
-    children: [l ? null : (0, n.jsx)(o.iWm, {
+    children: [l ? null : (0, n.jsx)(i.iWm, {
       className: s.gameIcon,
       size: "custom",
       width: 14,
       height: 14
-    }), i]
+    }), o]
   })
 }

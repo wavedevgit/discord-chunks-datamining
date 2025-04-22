@@ -16,7 +16,7 @@ function u(e) {
   let {
     guildId: t,
     name: n
-  } = e, u = (0, i.dQu)(i.TVs.colors.BG_BASE_TERTIARY), d = (0, s.d)(u.hex());
+  } = e, u = (0, s.nv)(), d = (0, s.dG)(u.hex());
   return (0, r.jsxs)("div", {
     className: c.container,
     children: [(0, r.jsx)("div", {

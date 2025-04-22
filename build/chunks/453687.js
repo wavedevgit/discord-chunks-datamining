@@ -47,14 +47,14 @@ function p(e, t, n) {
     f = e.codedLinks.length > 0,
     b = e.hasFlag(a.iLy.HAS_THREAD),
     h = p || g || m || f || b || e.type === a.uaV.THREAD_CREATED,
-    _ = p && e.content === e.embeds[0].url && e.embeds[0].type === a.hBH.GIFV,
-    y = e.type !== a.uaV.DEFAULT || !_ && "" !== e.content,
+    y = p && e.content === e.embeds[0].url && e.embeds[0].type === a.hBH.GIFV,
+    _ = e.type !== a.uaV.DEFAULT || !y && "" !== e.content,
     O = (0, o.Z)(e),
     v = !O && (null == n ? void 0 : n.hasTimestamp) !== !1,
     j = l(e, t),
     x = s(e),
     P = O ? "" : "".concat(u ? x : j, " ").concat(r.Z0);
-  if (y) {
+  if (_) {
     let t = i(e);
     P += " ".concat(t)
   }
