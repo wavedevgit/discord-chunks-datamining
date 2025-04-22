@@ -42,8 +42,8 @@ function N() {
     Z = !I.MU.has(P),
     {
       searchQuery: x,
-      onSearchTextChange: L,
-      onClearSearch: w,
+      onSearchTextChange: w,
+      onClearSearch: L,
       onSearchSubmit: R,
       isSearchVisible: D
     } = (0, _.H)({
@@ -70,8 +70,8 @@ function N() {
     }),
     H = h.Z.useField("fetchedQuery"),
     F = i.useCallback(e => {
-      j(e), D && w()
-    }, [D, w, j]),
+      j(e), D && L()
+    }, [D, L, j]),
     z = i.useMemo(() => D ? T.filter(e => {
       let {
         id: t
@@ -107,7 +107,7 @@ function N() {
         scrollPosition: n
       }), D && (0, r.jsx)(s.Cm, {
         icon: l.j9r,
-        onClick: w
+        onClick: L
       }), D && (0, r.jsx)(l.X6q, {
         variant: "heading-lg/semibold",
         color: "header-primary",
@@ -118,8 +118,8 @@ function N() {
       }), Z && (0, r.jsx)(d.Z, {
         query: x,
         placeholder: C.intl.string(C.t["5h0QOD"]),
-        onTextChange: L,
-        onClear: w,
+        onTextChange: w,
+        onClear: L,
         onSubmit: R,
         onCollapsedClick: G,
         state: D ? v.GlobalDiscoverySearchBarState.DEFAULT : M,
@@ -131,7 +131,7 @@ function N() {
         scrollPosition: n
       }), D ? (0, r.jsx)(s.Cm, {
         icon: l.j9r,
-        onClick: w
+        onClick: L
       }) : (0, r.jsx)(s.aV, {
         icon: l.QTo
       }), !D && (0, r.jsx)(u.Z, {
@@ -150,8 +150,8 @@ function N() {
       }), Z && (0, r.jsx)(d.Z, {
         query: x,
         placeholder: C.intl.string(C.t["5h0QOD"]),
-        onTextChange: L,
-        onClear: w,
+        onTextChange: w,
+        onClear: L,
         onSubmit: R,
         onCollapsedClick: G,
         state: D ? v.GlobalDiscoverySearchBarState.DEFAULT : M,

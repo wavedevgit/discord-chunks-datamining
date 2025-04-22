@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: 1a7a9c260774df25
+  Original File Name: 66df285e370e67d1
 **/
 .container__74da2 {
     align-items: center;
@@ -6793,6 +6793,30 @@ html:not(.visual-refresh) .sidebar_c48ade:not(.hidden_c48ade) {
     margin-right: 2px
 }
 
+.premiumTrialBadge__94f65 {
+    align-items: center;
+    border-radius: 12px;
+    display: flex;
+    margin-left: auto;
+    padding: 0 6px;
+    pointer-events: all;
+    text-transform: uppercase
+}
+
+.premiumTrialAcknowledgedBadge__94f65,.premiumTrialBadge__94f65 {
+    background-color: var(--background-accent)
+}
+
+.theme-light .premiumTrialBadge__94f65 {
+    background-color: var(--background-tertiary)
+}
+
+.reverseTrialBadgeIcon__94f65 {
+    height: 14px;
+    margin-right: 4px;
+    width: 14px
+}
+
 .localizeBadge__51968 {
     background-color: rgba(79,84,92,.24)
 }
@@ -8611,4 +8635,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=1a7a9c260774df25.css.map*/
+/*# sourceMappingURL=66df285e370e67d1.css.map*/

@@ -32,9 +32,9 @@ var r = n(200651),
   A = n(741160),
   Z = n(829972),
   x = n(31932),
-  L = n(642301);
+  w = n(642301);
 
-function w(e) {
+function L(e) {
   null != e && h.Z.open(e.id, (0, f.r)(e.id), {
     section: v.jXE.PREMIUM_GUILD_PROGRESS_BAR
   }, v.KsC.DISPLAY)
@@ -124,8 +124,8 @@ let k = i.memo(function(e) {
               content: T.intl.format(T.t.ujItEh, {}),
               buttonCTA: T.intl.string(T.t.UzVPra),
               secondaryButtonCTA: T.intl.string(T.t["KkK/aG"]),
-              onSecondaryClick: () => w(),
-              onClick: () => w(i),
+              onSecondaryClick: () => L(),
+              onClick: () => L(i),
               markAsDismissed: U
             }),
             renderGuildHeaderDropdownButton: o
@@ -143,8 +143,8 @@ let k = i.memo(function(e) {
               content: T.intl.format(T.t.zK1hpq, {}),
               buttonCTA: T.intl.string(T.t.UzVPra),
               secondaryButtonCTA: T.intl.string(T.t["KkK/aG"]),
-              onSecondaryClick: () => w(),
-              onClick: () => w(i),
+              onSecondaryClick: () => L(),
+              onClick: () => L(i),
               markAsDismissed: U
             }),
             renderGuildHeaderDropdownButton: o
@@ -216,7 +216,7 @@ let k = i.memo(function(e) {
               secondaryButtonCTA: T.intl.string(T.t.f3Pet7),
               asset: (0, r.jsx)("img", {
                 alt: "",
-                src: L,
+                src: w,
                 className: j.fullWidthImage
               }),
               onClick: () => {

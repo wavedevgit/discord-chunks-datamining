@@ -1,6 +1,6 @@
 /**
   Module ID: 44114
-  Original File Name: 03731a3d281d0a2e
+  Original File Name: 2edfa6aae8380d4e
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -336,7 +336,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 {
-    font-size: 16px;
+    font-size: 1rem;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -8594,42 +8594,43 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 
 .banner__4524c {
     align-items: center;
-    -webkit-backdrop-filter: blur(7px);
-    backdrop-filter: blur(7px);
-    background: rgba(35,36,40,.7);
+    background: var(--background-surface-high);
     border-radius: 20px;
     display: flex;
-    flex-direction: column;
-    gap: 16px;
+    flex-direction: row;
+    height: 68px;
     justify-content: center;
-    margin-bottom: 40px;
-    padding: 32px 0;
+    margin: auto auto 40px;
+    padding: 16px 24px;
     position: relative;
-    width: 866px
+    width: 624px
 }
 
-.banner__4524c:before {
-    background: linear-gradient(180deg,#fff,hsla(0,0%,100%,0));
-    border-radius: 20px;
-    content: "";
-    inset: 0;
-    -webkit-mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
-    mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    padding: 1px;
-    pointer-events: none;
-    position: absolute
-}
-
-.body__4524c {
-    width: 799px
+.bodyContainer__4524c {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    text-align: left;
+    width: 400px
 }
 
 .trialPill__4524c {
     justify-content: center;
     position: absolute;
     top: -13px
+}
+
+.promoNitroButton__4524c {
+    margin-left: auto;
+    min-height: 40px;
+    min-width: 110px
+}
+
+.bannerArt__4524c {
+    height: 64px;
+    margin-right: 16px;
+    width: 64px
 }
 
 .container__3ce43 {
@@ -8694,6 +8695,13 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
     height: 40px
 }
 
+.reverseTrialGiftButton__3ce43 {
+    height: 40px;
+    margin: auto;
+    min-width: 183px;
+    position: relative
+}
+
 .subscribeButton__3ce43 {
     margin-right: 12px
 }
@@ -8711,6 +8719,7 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 }
 
 .reverseContainer__3ce43 {
+    gap: 40px;
     text-align: center;
     width: 100%
 }
@@ -8724,8 +8733,9 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 
 .reverseTrialHomeHeader__3ce43 {
     flex-shrink: 0;
-    gap: 32px;
-    height: 225px
+    margin-top: 96px;
+    position: relative;
+    width: 656px
 }
 
 .flexCentered__3ce43 {
@@ -18268,4 +18278,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=03731a3d281d0a2e.css.map*/
+/*# sourceMappingURL=2edfa6aae8380d4e.css.map*/

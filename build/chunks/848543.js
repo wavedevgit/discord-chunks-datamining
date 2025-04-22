@@ -82,16 +82,16 @@ function Z(e) {
   let Z = i.useRef(null),
     x = (0, m.Q3)("SoundBoardRTCPanelButton"),
     {
-      coloredIconsEnabled: L
+      coloredIconsEnabled: w
     } = (0, _.Z)({
       location: "ConnectedRTCConnection"
     }),
     {
-      mute: w,
+      mute: L,
       suppress: R
     } = (0, E.Z)(t),
     D = (0, o.e7)([O.Z], () => O.Z.isDeaf()),
-    k = w || R || D,
+    k = L || R || D,
     [M, U] = i.useState(!1),
     G = t.getGuildId(),
     V = (0, I.sR)({
@@ -148,8 +148,8 @@ function Z(e) {
       ref: Z,
       children: (0, r.jsx)(u.zxk, A(j(A(j({}, e, t), {
         className: a()(P.button, P.buttonColor, {
-          [P.buttonActive]: M && !L,
-          [P.greyButtonActive]: M && L,
+          [P.buttonActive]: M && !w,
+          [P.greyButtonActive]: M && w,
           [P.disabled]: k
         }),
         wrapperClassName: P.button,
@@ -174,7 +174,7 @@ function Z(e) {
         children: (0, r.jsx)(Y, {
           className: P.buttonIcon,
           size: "sm",
-          color: L ? "currentColor" : M ? "white" : u.TVs.colors.INTERACTIVE_ACTIVE
+          color: w ? "currentColor" : M ? "white" : u.TVs.colors.INTERACTIVE_ACTIVE
         })
       }))
     })
@@ -188,7 +188,7 @@ function Z(e) {
     value: F,
     children: (0, r.jsx)(u.ua7, {
       targetElementRef: Z,
-      text: w ? T.intl.string(T.t["Ox4/zc"]) : R ? T.intl.string(T.t["+YBKYG"]) : D ? T.intl.string(T.t.X1lQlp) : T.intl.string(T.t["6EJvHh"]),
+      text: L ? T.intl.string(T.t["Ox4/zc"]) : R ? T.intl.string(T.t["+YBKYG"]) : D ? T.intl.string(T.t.X1lQlp) : T.intl.string(T.t["6EJvHh"]),
       children: e => X(e)
     })
   })

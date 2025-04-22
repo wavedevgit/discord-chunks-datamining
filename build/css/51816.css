@@ -1,6 +1,6 @@
 /**
   Module ID: 51816
-  Original File Name: 17240d369ae78d33
+  Original File Name: a2929dbab1603a50
 **/
 .artContainer_ee7791 {
     margin-bottom: -55px;
@@ -16,7 +16,12 @@
 }
 
 .subHeader_ee7791 {
+    color: var(--text-secondary);
     margin-top: -14px
 }
 
-/*# sourceMappingURL=17240d369ae78d33.css.map*/
+.secondaryCTA_ee7791 {
+    color: var(--text-primary)
+}
+
+/*# sourceMappingURL=a2929dbab1603a50.css.map*/
