@@ -26,8 +26,8 @@ var r = n(200651),
   O = n(963838),
   E = n(535879),
   I = n(310892),
-  P = n(12168),
-  S = n(353368),
+  S = n(12168),
+  P = n(353368),
   Z = n(981631),
   N = n(354459),
   T = n(185923),
@@ -94,7 +94,7 @@ function U(e) {
     })
   }, [X, Q]);
   let J = T ? [a.z.VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP] : [],
-    $ = G === S.q.PREMIUM;
+    $ = G === P.q.PREMIUM;
   return (0, r.jsx)(h.ZP, {
     contentTypes: J,
     children: e => {
@@ -123,7 +123,7 @@ function U(e) {
             caretPosition: g.DF.RIGHT_CENTER
           })
         }),
-        children: () => (0, r.jsx)(P.Z, {
+        children: () => (0, r.jsx)(S.Z, {
           title: R.intl.string(R.t.Nn8lPz),
           channel: n,
           closePopout: m,

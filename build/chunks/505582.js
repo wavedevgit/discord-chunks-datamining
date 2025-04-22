@@ -26,8 +26,8 @@ var r = n(200651),
   O = n(502762),
   E = n(530),
   I = n(679332),
-  P = n(544989),
-  S = n(171368),
+  S = n(544989),
+  P = n(171368),
   Z = n(228168),
   N = n(388032),
   T = n(149385),
@@ -63,7 +63,7 @@ function R(e) {
     userId: t.id,
     channelId: n.id
   }), B = i.useRef(null), G = (0, a.Z)(B), F = e => {
-    (0, S.openUserProfileModal)(w({
+    (0, P.openUserProfileModal)(w({
       sourceAnalyticsLocations: D,
       hideRestrictedProfile: !0
     }, U, e))
@@ -83,7 +83,7 @@ function R(e) {
         themeType: Z.lY.SIDEBAR,
         themeOverride: M,
         children: [(0, r.jsxs)(l.u2, {
-          children: [(0, r.jsx)(P.Z, {
+          children: [(0, r.jsx)(S.Z, {
             children: (0, r.jsx)(I.Z, {
               user: t
             })

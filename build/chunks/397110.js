@@ -32,10 +32,10 @@ function C(e) {
     mutualFriendsCount: j,
     mutualFriends: O,
     mutualGuilds: E
-  } = (0, u.Z)(t), I = !t.bot && null != j && j > 0, P = null != E && E.length > 0;
-  return I || P ? (0, r.jsxs)(h.Z.Overlay, {
+  } = (0, u.Z)(t), I = !t.bot && null != j && j > 0, S = null != E && E.length > 0;
+  return I || S ? (0, r.jsxs)(h.Z.Overlay, {
     className: y.overlay,
-    children: [P && (0, r.jsx)(b.Z, {
+    children: [S && (0, r.jsx)(b.Z, {
       section: "MUTUAL_GUILDS",
       header: _.intl.string(_.t["4lTDZm"]),
       listClassName: y.list,
@@ -52,7 +52,7 @@ function C(e) {
           onSelect: () => (0, s.X)(n.id)
         }, n.id)
       })
-    }), P && I && (0, r.jsx)(p.Z, {
+    }), S && I && (0, r.jsx)(p.Z, {
       className: y.divider
     }), I && (0, r.jsx)(b.Z, {
       section: "MUTUAL_FRIENDS",
