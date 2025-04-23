@@ -7,7 +7,7 @@ var r = n(200651),
   o = n(120356),
   i = n.n(o),
   a = n(10106),
-  s = n(200100),
+  s = n(272573),
   c = n(359959),
   u = n(670081),
   d = n(442837),
@@ -153,7 +153,7 @@ function X(e) {
       timestampSec: 0,
       duration: 10
     }
-  }, c.X), eK = (0, _.km)(e => e.setVideoProgress), eW = (0, _.km)(e => e.muted), eX = (0, _.km)(e => e.volume), e$ = (0, d.e7)([v.Z], () => v.Z.useReducedMotion), eJ = (0, l.useRef)(null), e0 = (0, l.useRef)(null), e1 = l.useRef(!0), e2 = (null == (t = er.userStatus) ? void 0 : t.completedAt) != null, e6 = (0, _.km)(e => e.transcript), [e8, e4] = l.useState(null), [e9, e3] = l.useState(!1), [e7, e5] = l.useState(!1), [te, tt] = l.useState(null), tn = e2 ? null != (b = null == (n = eJ.current) ? void 0 : n.duration) ? b : 0 : Math.max(eH.maxTimestampSec, ey.progressSeconds), tr = l.useMemo(() => (0, D.T)({
+  }, c.X), eK = (0, _.km)(e => e.setVideoProgress), eW = (0, _.km)(e => e.muted), eX = (0, _.km)(e => e.volume), e$ = (0, d.e7)([v.Z], () => v.Z.useReducedMotion), eJ = (0, l.useRef)(null), e0 = (0, l.useRef)(null), e1 = l.useRef(!0), e2 = (null == (t = er.userStatus) ? void 0 : t.completedAt) != null, e6 = (0, _.km)(e => e.transcript), [e8, e4] = l.useState(null), [e7, e3] = l.useState(!1), [e9, e5] = l.useState(!1), [te, tt] = l.useState(null), tn = e2 ? null != (b = null == (n = eJ.current) ? void 0 : n.duration) ? b : 0 : Math.max(eH.maxTimestampSec, ey.progressSeconds), tr = l.useMemo(() => (0, D.T)({
     quest: er,
     location: Z.dr.VIDEO_MODAL
   }), [er]), {
@@ -230,8 +230,8 @@ function X(e) {
   } = (0, T.Z)({
     getCurrentVideoTime: ty,
     isPlaying: eh === R.rq.PLAYING,
-    isMetadataLoaded: e9,
-    isInitialSeekComplete: e7,
+    isMetadataLoaded: e7,
+    isInitialSeekComplete: e9,
     onAnalytics: tO,
     emitIntervalMs: 4e3,
     minSegmentDurationMs: 2e3
