@@ -18,9 +18,11 @@ function l(e) {
     entryPoint: c
   } = (0, s.sX)({
     location: t
-  }), u = (0, i.wj)((0, a.ZP)()), d = (0, r.e7)([o.Z], () => o.Z.getChannel(n));
+  }), u = s.qM.useExperiment({
+    location: t
+  }).lightMode, d = (0, i.wj)((0, a.ZP)()), f = (0, r.e7)([o.Z], () => o.Z.getChannel(n));
   return {
-    canAccessPicker: l && u && (null == d ? void 0 : d.isChatWallpaperEnabled) === !0,
+    canAccessPicker: l && (d || u) && (null == f ? void 0 : f.isChatWallpaperEnabled) === !0,
     entryPoint: c
   }
 }

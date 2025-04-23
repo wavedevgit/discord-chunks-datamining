@@ -52,6 +52,7 @@ function f(e, t) {
 function _(e) {
   let t = i.useRef(null);
   return (0, r.jsx)(o.Z, f(u({}, e), {
+    targetElementRef: t,
     children: e => (0, r.jsx)(a.ua7, {
       targetElementRef: t,
       text: s.intl.string(s.t.UKOtz8),

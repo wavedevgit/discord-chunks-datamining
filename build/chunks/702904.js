@@ -515,7 +515,7 @@ function v() {
       url: "/debug/payment-source",
       rejectWithError: !1
     }), await (0, s.tZ)()
-  }, E = async () => {
+  }, N = async () => {
     await i.tn.del({
       url: "/debug/rate-limits",
       rejectWithError: !1
@@ -567,7 +567,7 @@ function v() {
           children: "Delete All Payment Sources"
         }), (0, a.jsx)(o.zxk, {
           size: o.zxk.Sizes.SMALL,
-          onClick: E,
+          onClick: N,
           children: "Reset API Rate limits and reload app"
         })]
       }), (0, a.jsx)(o.Text, {

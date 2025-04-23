@@ -24,7 +24,7 @@ var a = n(200651),
   y = n(388032),
   C = n(459100),
   O = n(616257);
-let E = [{
+let N = [{
     key: "id",
     cellClassName: C.eventColumn,
     render(e) {
@@ -52,7 +52,7 @@ let E = [{
       return t.toLocaleString()
     }
   }],
-  N = [{
+  E = [{
     id: "details",
     name: "Details",
     group: _.v0.NONE,
@@ -137,7 +137,7 @@ function T() {
     TabBar: p,
     renderSelectedTab: v
   } = (0, _.ZP)({
-    tabs: N
+    tabs: E
   }, []), T = (0, u.e7)([b.Z], () => b.Z.trackTriggers), S = r.useCallback(e => {
     x.Z.dispatch({
       type: "SET_TRACK_TRIGGERS",
@@ -178,7 +178,7 @@ function T() {
         placeholder: "Search by experiment id"
       })]
     }), (0, a.jsx)(g.Z, {
-      columns: E,
+      columns: N,
       data: o,
       selectedRowKey: c,
       onClickRow: e => d(e.key)

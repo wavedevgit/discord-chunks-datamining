@@ -69,7 +69,7 @@ function _(e) {
   let {
     subscription: h,
     onUpdated: _
-  } = e, [y, C] = r.useState(!1), [O, E] = r.useState(!1), [N, T] = r.useState(null), S = e => (null == e && (e = h.status), e in v) ? v[e] : "Unknown status ".concat(e), P = e => {
+  } = e, [y, C] = r.useState(!1), [O, N] = r.useState(!1), [E, T] = r.useState(null), S = e => (null == e && (e = h.status), e in v) ? v[e] : "Unknown status ".concat(e), P = e => {
     let t = new Date(e);
     return u.default.fromTimestamp(t.getTime())
   }, w = async e => {
@@ -190,7 +190,7 @@ function _(e) {
       className: b.collapsablePane,
       children: [(0, a.jsxs)(s.P3F, {
         onClick: () => {
-          E(!O)
+          N(!O)
         },
         className: b.collapsablePaneHeader,
         children: [(0, a.jsx)("div", {
@@ -223,10 +223,10 @@ function _(e) {
             size: s.zxk.Sizes.SMALL,
             onClick: e => k(),
             children: "Renew Subscription"
-          }), null !== N && (0, a.jsx)(s.kzN, {
+          }), null !== E && (0, a.jsx)(s.kzN, {
             className: b.error,
             onDismiss: () => T(null),
-            children: N
+            children: E
           })]
         }), (0, a.jsx)(s.hjN, {
           title: "Override Premium Streak Start Date",

@@ -24,6 +24,9 @@ function u(e) {
     f = (0, i.wj)((0, a.ZP)()),
     _ = (0, s.sQ)({
       location: "ChatWallpaperSetSystemMessage"
+    }),
+    p = s.qM.useExperiment({
+      location: "ChatWallpaperSetSystemMessage"
     });
   return null == e ? void 0 : u === e && void 0 !== n ? {
     wallpaperId: n,
@@ -32,6 +35,6 @@ function u(e) {
     isViewable: _
   } : void 0 !== t ? {
     wallpaperId: t.wallpaperId,
-    isViewable: _ && d && f
+    isViewable: _ && d && (f || p.lightMode)
   } : void 0
 }

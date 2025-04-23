@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 992affca9b34d8dd
+  Original File Name: 989e97893fe19293
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -1456,17 +1456,19 @@
 }
 
 .subheader_f1a68f {
-    margin: 8px 0
+    margin: 12px 0 8px
 }
 
 .hasTooltip_f1a68f {
-    border-bottom: 2px dotted var(--border-normal)
+    border-bottom: 2px dotted var(--text-low-contrast)
 }
 
 .code_f1a68f {
     background-color: var(--background-tertiary);
     color: var(--text-secondary);
     font-family: monospace;
+    font-size: 11px;
+    line-height: 14px;
     overflow-x: auto;
     padding: 8px;
     scrollbar-color: var(--background-primary) var(--background-tertiary);
@@ -1476,6 +1478,10 @@
     white-space: pre
 }
 
+.slider_f1a68f {
+    width: 100%
+}
+
 .colorInputContainer_f1a68f {
     align-items: center;
     display: flex;
@@ -1483,21 +1489,16 @@
     margin: 8px 0
 }
 
+.slider_f1a68f {
+    margin: -8px 0
+}
+
 .resetButton_f1a68f {
-    background: none;
-    border: none;
-    border-radius: 4px;
-    color: var(--text-normal);
-    cursor: pointer;
-    padding: 4px
+    margin-top: 16px
 }
 
-.resetButton_f1a68f:hover {
-    background-color: var(--background-modifier-hover)
-}
-
-.resetButton_f1a68f:active {
-    background-color: var(--background-modifier-active)
+.explanation_f1a68f {
+    color: var(--text-muted)
 }
 
 .icon__2a871 {
@@ -2769,4 +2770,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=992affca9b34d8dd.css.map*/
+/*# sourceMappingURL=989e97893fe19293.css.map*/

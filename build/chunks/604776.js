@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => E
+  Z: () => N
 }), n(388685);
 var a = n(200651),
   r = n(192379),
@@ -90,8 +90,8 @@ let j = e => {
     value: o.a.PREMIUM_TIER_2_3_DAY
   }];
 
-function E() {
-  let [e, t] = r.useState(!1), [n, l] = r.useState(!1), [s, d] = r.useState(o.a.PREMIUM_TIER_2_1_HOUR), [m, p] = r.useState([]), [E, N] = r.useState([]), [T, S] = r.useState([]), P = async e => {
+function N() {
+  let [e, t] = r.useState(!1), [n, l] = r.useState(!1), [s, d] = r.useState(o.a.PREMIUM_TIER_2_1_HOUR), [m, p] = r.useState([]), [N, E] = r.useState([]), [T, S] = r.useState([]), P = async e => {
     await _(e), await I()
   }, w = async e => {
     await y(e), await I()
@@ -109,7 +109,7 @@ function E() {
   return r.useEffect(() => {
     I()
   }, []), r.useEffect(() => {
-    N(R(m)), S(Z(m))
+    E(R(m)), S(Z(m))
   }, [m]), (0, a.jsx)(c.zJl, {
     className: f.panel,
     children: (0, a.jsxs)("div", {
@@ -215,7 +215,7 @@ function E() {
               })
             })]
           })]
-        }), E.length > 0 && (0, a.jsxs)("div", {
+        }), N.length > 0 && (0, a.jsxs)("div", {
           children: [(0, a.jsx)(c.Text, {
             style: {
               marginTop: "15px"
@@ -223,7 +223,7 @@ function E() {
             variant: "text-md/bold",
             children: "Active premium"
           }), (0, a.jsx)("div", {
-            children: E.map(e => (0, a.jsx)(j, {
+            children: N.map(e => (0, a.jsx)(j, {
               entitlement: e,
               active: !0,
               onDelete: () => w(e.id)

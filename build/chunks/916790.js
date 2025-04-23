@@ -24,9 +24,9 @@ var a = n(200651),
   y = n(621060),
   C = n(981631),
   O = n(248520),
-  E = n(616257);
+  N = n(616257);
 
-function N(e) {
+function E(e) {
   return parseFloat(e.toFixed(3))
 }
 let T = [{
@@ -45,7 +45,7 @@ let T = [{
     let {
       trace: t
     } = e;
-    return "".concat(N(t.time), " ms")
+    return "".concat(E(t.time), " ms")
   }
 }];
 
@@ -84,7 +84,7 @@ let P = [{
           })
         }), (0, a.jsxs)(j.Z9, {
           name: "Total Time",
-          children: [N(n.totalTime), " ms"]
+          children: [E(n.totalTime), " ms"]
         })]
       }), (0, a.jsx)(d.zJl, {
         className: O.inspectorContainer,
@@ -126,11 +126,11 @@ function w(e) {
       } = e;
       return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)("div", {
-          className: i()(O.errorToolbar, E.toolbar),
+          className: i()(O.errorToolbar, N.toolbar),
           children: (0, a.jsx)("div", {
-            className: E.toolbarGroup,
+            className: N.toolbarGroup,
             children: (0, a.jsx)(d.zxk, {
-              className: E.toolbarButton,
+              className: N.toolbarButton,
               size: d.zxk.Sizes.MIN,
               onClick: () => console.error(t.error),
               children: "Log to Console"
@@ -155,13 +155,13 @@ function w(e) {
     minHeight: 100,
     initialHeight: n,
     children: [(0, a.jsx)(o, {}), (0, a.jsxs)(m.ZP, {
-      className: i()(E.headerBar, O.subPanelHeaderBar),
+      className: i()(N.headerBar, O.subPanelHeaderBar),
       children: [(0, a.jsx)(m.ZP.Icon, {
         icon: d.xVZ,
         tooltip: t.name
       }), (0, a.jsx)(m.ZP.Title, {
-        wrapperClassName: i()(E.headerTitle, E.dispatcherHeader),
-        className: E.headerTitleText,
+        wrapperClassName: i()(N.headerTitle, N.dispatcherHeader),
+        className: N.headerTitleText,
         children: t.name
       }), (0, a.jsx)(m.ZP.Icon, {
         icon: d.TIy,
@@ -204,7 +204,7 @@ let k = [{
       let {
         actionLog: t
       } = e;
-      return "".concat(N(t.totalTime), " ms")
+      return "".concat(E(t.totalTime), " ms")
     }
   }],
   I = {
@@ -247,10 +247,10 @@ function R() {
       m(s), f(e)
     }, [s]),
     C = t.trim().length > 0,
-    N = r.useMemo(() => C ? x : b ? c : s, [s, x, C, b, c]);
+    E = r.useMemo(() => C ? x : b ? c : s, [s, x, C, b, c]);
   return (0, a.jsxs)("div", {
     ref: e,
-    className: i()(E.panel, O.panel),
+    className: i()(N.panel, O.panel),
     children: [(0, a.jsxs)("div", {
       className: O.toolbar,
       children: [(0, a.jsx)("div", {
@@ -269,7 +269,7 @@ function R() {
       })]
     }), (0, a.jsx)(_.Z, {
       columns: k,
-      data: N,
+      data: E,
       selectedRowKey: null == v ? void 0 : v.id.toString(),
       onClickRow: e => j(e.actionLog)
     }), null != v && (0, a.jsx)(w, {
