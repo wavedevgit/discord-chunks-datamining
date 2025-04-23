@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: 66df285e370e67d1
+  Original File Name: b014921bd6c3f8e8
 **/
 .container__74da2 {
     align-items: center;
@@ -293,6 +293,12 @@
 .visual-refresh .icon__85643 {
     height: 16px;
     width: 16px
+}
+
+.visual-refresh .appIcon__85643 {
+    border-radius: 6px;
+    height: 20px;
+    width: 20px
 }
 
 .visual-refresh .guildIcon__85643 {
@@ -8635,4 +8641,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=66df285e370e67d1.css.map*/
+/*# sourceMappingURL=b014921bd6c3f8e8.css.map*/
