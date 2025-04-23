@@ -61,14 +61,14 @@ let E = i.memo(function(e) {
         location: k.location
       }), (0, a.h7)(D, !1)
     }, [D, k, G]),
-    F = i.useCallback((e, t) => () => {
+    H = i.useCallback((e, t) => () => {
       (0, p.v)(G, p.d.LEAVE_ACTIVITY), d.Z.leaveActivity({
         location: t,
         applicationId: e,
         showFeedback: !0
       })
     }, [G]),
-    H = i.useCallback(() => {
+    F = i.useCallback(() => {
       (0, b.Z)(P)
     }, [P]),
     z = i.useCallback(() => {
@@ -119,7 +119,7 @@ let E = i.memo(function(e) {
       })
     }, [Z, w, A, U, M]),
     W = (null != A || null == R || (0, c.R)()) && (N || I) ? (N ? (t = !1, l = () => {
-      H(), (0, p.v)(G, p.d.STREAM, !1)
+      F(), (0, p.v)(G, p.d.STREAM, !1)
     }, u = s.g5r, E = j.intl.string(j.t.S5anIS)) : T ? (t = !1, l = () => {
       z(), (0, p.v)(G, p.d.STREAM, !0)
     }, u = s.hGI, E = null != A ? j.intl.formatToPlainString(j.t.AB5gT0, {
@@ -140,7 +140,7 @@ let E = i.memo(function(e) {
     }) : null,
     K = null == R ? null : (0, r.jsx)(v.Z, {
       tooltipText: j.intl.string(j.t["R/FK4O"]),
-      onClick: F(R.applicationId, R.location),
+      onClick: H(R.applicationId, R.location),
       icon: s.PBZ
     }),
     q = null == P ? null : (0, r.jsx)(f.Z, {});

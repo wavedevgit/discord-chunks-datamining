@@ -100,7 +100,7 @@ class V extends(r = l.Component) {
 k(V, "defaultProps", {
   unread: !1
 });
-let F = c.ZP.connectStores([j.ZP, O.Z], e => {
+let H = c.ZP.connectStores([j.ZP, O.Z], e => {
     let {
       channel: t
     } = e;
@@ -111,7 +111,7 @@ let F = c.ZP.connectStores([j.ZP, O.Z], e => {
       category: O.Z.getChannel(t.parent_id)
     }
   })(V),
-  H = c.ZP.connectStores([S.ZP], e => {
+  F = c.ZP.connectStores([S.ZP], e => {
     let {
       channel: t
     } = e;
@@ -470,7 +470,7 @@ class q extends l.PureComponent {
             children: n.record.text
           }, "".concat(n.type, "-").concat(n.record.id));
         case f.h8.TEXT_CHANNEL:
-          return (0, i.jsx)(F, {
+          return (0, i.jsx)(H, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
             onClick: () => this.selectResult(n),
@@ -481,7 +481,7 @@ class q extends l.PureComponent {
             score: l ? n.score : void 0
           }, "".concat(n.type, "-").concat(n.record.id));
         case f.h8.VOICE_CHANNEL:
-          return (0, i.jsx)(H, {
+          return (0, i.jsx)(F, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
             onClick: () => this.selectResult(n),

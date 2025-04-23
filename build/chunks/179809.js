@@ -51,8 +51,8 @@ let E = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
       "aria-setsize": B,
       "aria-posinset": V
     } = e, {
-      id: F,
-      name: H,
+      id: H,
+      name: F,
       children: z
     } = t, [W, Y] = i.useState(!1), [K, q] = i.useState(!1), Q = W || K;
     i.useEffect(() => {
@@ -76,7 +76,7 @@ let E = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
       q(e)
     }, []), ee = i.useCallback(e => {
       ("ArrowRight" === e.key && !a || "ArrowLeft" === e.key && a) && L()
-    }, [L, a]), et = null != H && "" !== H ? H : null != N && "" !== N ? N : j.intl.string(j.t.xV9hVl), en = (0, c.Ie)("".concat(F)), er = "folder-items-".concat(F), ei = function(e) {
+    }, [L, a]), et = null != F && "" !== F ? F : null != N && "" !== N ? N : j.intl.string(j.t.xV9hVl), en = (0, c.Ie)("".concat(H)), er = "folder-items-".concat(H), ei = function(e) {
       let t = (0, d.dQu)(d.TVs.modules.guildbar.AVATAR_SIZE),
         n = (0, p.Q3)("FolderItem.useHeight"),
         r = (0, d.dQu)(d.TVs.space.SPACE_XS),
@@ -97,7 +97,7 @@ let E = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
       config: {
         duration: E
       }
-    }), eo = i.useCallback(e => null == n ? void 0 : n(F, e), [n, F]), es = (0, r.jsxs)(v.H, {
+    }), eo = i.useCallback(e => null == n ? void 0 : n(H, e), [n, H]), es = (0, r.jsxs)(v.H, {
       children: [(0, r.jsx)(b.Z, {
         disabled: X || a,
         hovered: W,

@@ -42,8 +42,8 @@ var r = n(200651),
   G = n(690221),
   B = n(231664),
   V = n(759198),
-  F = n(970731),
-  H = n(131704),
+  H = n(970731),
+  F = n(131704),
   z = n(199902),
   W = n(314897),
   Y = n(592125),
@@ -225,7 +225,7 @@ class ey extends i.PureComponent {
         size: R.Z.Sizes.SMALL
       }), (0, r.jsxs)("div", {
         className: ep.info,
-        children: [t, null != l && (0, H.Qm)(l.type) ? m : (0, r.jsx)(eb, {
+        children: [t, null != l && (0, F.Qm)(l.type) ? m : (0, r.jsx)(eb, {
           timestamps: d
         })]
       })]
@@ -235,8 +235,8 @@ class ey extends i.PureComponent {
       align: "center",
       spacing: 16,
       shouldShow: c,
-      renderPopout: () => (0, r.jsx)(F.ZP, {
-        color: F.BD.PRIMARY,
+      renderPopout: () => (0, r.jsx)(H.ZP, {
+        color: H.BD.PRIMARY,
         header: eh.intl.string(eh.t.ON4pBg),
         content: eh.intl.string(eh.t["8PAfND"]),
         buttonCTA: eh.intl.string(eh.t.WAI6xs),
@@ -248,7 +248,7 @@ class ey extends i.PureComponent {
         onClick: () => {
           u(ed.L.USER_DISMISS)
         },
-        caretPosition: F.DF.BOTTOM_CENTER
+        caretPosition: H.DF.BOTTOM_CENTER
       }),
       children: e => (0, r.jsx)(h.P3F, em(eg({}, e), {
         className: o()(ep.gameWrapper, ep.clickableGameWrapper, {
@@ -301,10 +301,10 @@ class ey extends i.PureComponent {
       a()(null != n, "Activity cannot be null during navigation click");
       let r = n.location.kind === c.E.CONTEXTLESS;
       if (!(0, _.R)() && r) return void(0, v.tg)(eu.Ez.PANEL);
-      a()(null != t, "Channel cannot be null during navigation click"), g.Z.channelListScrollTo(null != (e = t.guild_id) ? e : ec.ME, t.id), !(0, _.R)() && ((0, H.vd)(t.type) && f.Z.selectParticipant(t.id, (0, E.gN)({
+      a()(null != t, "Channel cannot be null during navigation click"), g.Z.channelListScrollTo(null != (e = t.guild_id) ? e : ec.ME, t.id), !(0, _.R)() && ((0, F.vd)(t.type) && f.Z.selectParticipant(t.id, (0, E.gN)({
         applicationId: n.applicationId,
         instanceId: n.compositeInstanceId
-      })), (0, H.Qm)(t.type) && (0, v.tg)(eu.Ez.PANEL))
+      })), (0, F.Qm)(t.type) && (0, v.tg)(eu.Ez.PANEL))
     })
   }
 }
@@ -346,9 +346,9 @@ let e_ = (0, b.Z)(function(e) {
     k = null != f && f.ownerId === o && f.state !== ec.jm8.ENDED,
     M = (0, u.e7)([et.default, $.Z], () => null != h ? (0, P.F6)(h, et.default, $.Z) : void 0),
     G = (0, B.Z)(),
-    [V, F] = i.useState(!1),
+    [V, H] = i.useState(!1),
     {
-      showsActivityPopoutQuickRefocusNUX: H,
+      showsActivityPopoutQuickRefocusNUX: F,
       markActivityPopoutQuickRefocusNUXAsDismissed: el
     } = function() {
       let e = [],
@@ -379,8 +379,8 @@ let e_ = (0, b.Z)(function(e) {
     guildForConnectedChannel: p,
     streamQualityIndicator: G,
     isForceShowSharingPopout: V,
-    setIsForceShowSharingPopout: F,
-    showsActivityPopoutQuickRefocusNUX: H,
+    setIsForceShowSharingPopout: H,
+    showsActivityPopoutQuickRefocusNUX: F,
     markActivityPopoutQuickRefocusNUXAsDismissed: el
   }))
 })

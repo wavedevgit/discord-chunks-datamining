@@ -1,6 +1,6 @@
 /** Chunk was on 322 **/
 n.d(t, {
-  Z: () => C
+  Z: () => j
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -8,19 +8,20 @@ var r = n(200651),
   o = n.n(l),
   s = n(442837),
   a = n(481060),
-  c = n(434479),
-  u = n(819640),
-  d = n(713081),
-  h = n(326660),
-  p = n(441536),
-  f = n(933104),
-  g = n(332538),
-  m = n(921944),
-  b = n(680278),
-  y = n(388032),
-  _ = n(388298);
+  c = n(100527),
+  u = n(434479),
+  d = n(819640),
+  h = n(713081),
+  p = n(326660),
+  f = n(441536),
+  g = n(933104),
+  m = n(332538),
+  b = n(921944),
+  y = n(680278),
+  _ = n(388032),
+  O = n(388298);
 
-function O(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +39,7 @@ function O(e) {
   }
   return e
 }
-let v = {
+let C = {
     animation: {
       BEG: 0,
       END: 75
@@ -48,62 +49,62 @@ let v = {
       END: 376
     }
   },
-  C = i.memo(function(e) {
+  j = i.memo(function(e) {
     let {
       guildId: t,
       selected: l
-    } = e, C = (0, g.ZP)(t), j = i.useCallback(() => {
+    } = e, j = (0, m.ZP)(t), x = i.useCallback(() => {
       var e;
-      (0, d.jd)(t), (0, p.Z)(t), null == C || null == (e = C.popout) || e.markAsDismissed(m.L.INDIRECT_ACTION)
-    }, [t, C]), x = i.useCallback(() => {
+      (0, h.jd)(t), (0, f.Z)(t, c.Z.GUILD_POWERUPS_CHANNEL_LIST_ROW), null == j || null == (e = j.popout) || e.markAsDismissed(b.L.INDIRECT_ACTION)
+    }, [t, j]), S = i.useCallback(() => {
       var e;
-      switch (null == C || null == (e = C.popout) ? void 0 : e.type) {
-        case h.J.LEVEL_REACHED:
-          return (0, r.jsx)(f.jG, O({
+      switch (null == j || null == (e = j.popout) ? void 0 : e.type) {
+        case p.J.LEVEL_REACHED:
+          return (0, r.jsx)(g.jG, v({
             guildId: t
-          }, C.popout));
-        case h.J.PERKS_AVAILABLE:
-          return (0, r.jsx)(f.$h, O({
+          }, j.popout));
+        case p.J.PERKS_AVAILABLE:
+          return (0, r.jsx)(g.$h, v({
             guildId: t
-          }, C.popout));
-        case h.J.PERKS_PURCHASABLE:
-          return (0, r.jsx)(f.yI, O({
+          }, j.popout));
+        case p.J.PERKS_PURCHASABLE:
+          return (0, r.jsx)(g.yI, v({
             guildId: t
-          }, C.popout));
+          }, j.popout));
         default:
           return (0, r.jsx)("div", {})
       }
-    }, [t, null == C ? void 0 : C.popout]), S = (0, a.s9z)(a.JQI), E = (0, s.e7)([u.Z], () => u.Z.hasLayers()), [P, I] = i.useState(null), w = null == P ? "animation" : "LOOP";
+    }, [t, null == j ? void 0 : j.popout]), E = (0, a.s9z)(a.JQI), P = (0, s.e7)([d.Z], () => d.Z.hasLayers()), [I, w] = i.useState(null), N = null == I ? "animation" : "LOOP";
     i.useEffect(() => {
-      (null == C ? void 0 : C.popout) == null && I(null)
-    }, [null == C ? void 0 : C.popout]);
-    let N = i.useCallback(e => {
-      I(e)
+      (null == j ? void 0 : j.popout) == null && w(null)
+    }, [null == j ? void 0 : j.popout]);
+    let Z = i.useCallback(e => {
+      w(e)
     }, []);
     return (0, r.jsx)(a.yRy, {
-      shouldShow: (null == C ? void 0 : C.popout) != null && !(S || E),
+      shouldShow: (null == j ? void 0 : j.popout) != null && !(E || P),
       nudgeAlignIntoViewport: !0,
       animationPosition: "bottom",
       position: "right",
-      renderPopout: x,
+      renderPopout: S,
       children: e => {
         var i, s;
-        return (0, r.jsx)(c.m, (i = O({}, e), s = s = {
-          className: _.container,
+        return (0, r.jsx)(u.m, (i = v({}, e), s = s = {
+          className: O.container,
           id: "skill-trees-".concat(t),
           renderIcon: e => (0, r.jsx)(a.$Eu, {
             size: "md",
             className: e,
             color: "currentColor"
           }),
-          background: (null == C ? void 0 : C.popout) != null && (0, r.jsx)("div", {
-            className: _.lottieContainer,
+          background: (null == j ? void 0 : j.popout) != null && (0, r.jsx)("div", {
+            className: O.lottieContainer,
             children: (0, r.jsx)(a.kci, {
-              nextScene: w,
-              className: _.lottie,
-              sceneSegments: v,
+              nextScene: N,
+              className: O.lottie,
+              sceneSegments: C,
               importData: () => n.e("50821").then(n.t.bind(n, 548421, 19)),
-              onScenePlay: N,
+              onScenePlay: Z,
               rendererSettings: {
                 preserveAspectRatio: "xMidYMid slice"
               }
@@ -111,14 +112,14 @@ let v = {
           }),
           text: (0, r.jsx)("span", {
             className: o()({
-              [_.textImportant]: (null == C ? void 0 : C.showUnread) === !0
+              [O.textImportant]: (null == j ? void 0 : j.showUnread) === !0
             }),
-            children: y.intl.string(b.default.yv3DJC)
+            children: _.intl.string(y.default.yv3DJC)
           }),
           selected: l,
-          onClick: j,
-          showUnread: (null == C ? void 0 : C.showUnread) === !0,
-          trailing: null == C ? void 0 : C.trailing
+          onClick: x,
+          showUnread: (null == j ? void 0 : j.showUnread) === !0,
+          trailing: null == j ? void 0 : j.trailing
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

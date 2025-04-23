@@ -63,8 +63,8 @@ let C = (e, t) => {
         A(b.L.USER_DISMISS)
       },
       V = C(R, null != D ? D : null),
-      F = j(V),
-      H = x(V);
+      H = j(V),
+      F = x(V);
     return (0, r.jsx)("div", {
       ref: k,
       children: (0, r.jsx)(s.yRy, {
@@ -76,13 +76,13 @@ let C = (e, t) => {
           ref: M,
           onClose: B,
           buttonText: _.intl.string(_.t["+IrDzM"]),
-          header: F,
+          header: H,
           art: (0, r.jsx)("img", {
             src: v.Z,
             alt: "",
             className: O.chatWallpaperDMListCoachmarkArt
           }),
-          body: H,
+          body: F,
           align: U
         }),
         children: () => t

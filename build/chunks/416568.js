@@ -42,8 +42,8 @@ var r = n(200651),
   G = n(257351),
   B = n(474109),
   V = n(741616),
-  F = n(187835),
-  H = n(118122),
+  H = n(187835),
+  F = n(118122),
   z = n(193154),
   W = n(602147),
   Y = n(222059),
@@ -221,10 +221,10 @@ function ed(e) {
       "aria-label": en.intl.string(en.t["7hB4kp"]),
       gap: "xs",
       children: a.map((e, t) => l(e, t, a.length))
-    }), c, (0, r.jsx)(Q.Z, {}), i ? null : (0, r.jsx)(H.Z, {
+    }), c, (0, r.jsx)(Q.Z, {}), i ? null : (0, r.jsx)(F.Z, {
       disableTooltip: o.length > 0,
       lastTargetNode: a[a.length - 1]
-    }), i ? null : t, n ? null : (0, r.jsx)(F.Z, {})]
+    }), i ? null : t, n ? null : (0, r.jsx)(H.Z, {})]
   })
 }
 
@@ -237,11 +237,11 @@ function eh(e) {
   } = e, a = (0, j.Q3)("GuildsBar"), [d] = (0, h.Wu)([D.ZP], () => {
     let e = D.ZP.getGuildsTree();
     return [e, e.version]
-  }), p = (0, h.e7)([E.Z], () => E.Z.lurkingGuildIds()), b = i.useMemo(() => n ? [] : p, [p, n]), _ = (0, h.e7)([C.Z], () => C.Z.isFullscreenInContext()), [x, S] = i.useState(!1), I = i.useCallback(() => S(!0), []), A = i.useCallback(() => S(!1), []), R = i.useRef(!1), [k] = i.useState(() => new f.V7), F = i.useRef(null), H = i.useRef(null), z = (0, u.OP)(), {
+  }), p = (0, h.e7)([E.Z], () => E.Z.lurkingGuildIds()), b = i.useMemo(() => n ? [] : p, [p, n]), _ = (0, h.e7)([C.Z], () => C.Z.isFullscreenInContext()), [x, S] = i.useState(!1), I = i.useCallback(() => S(!0), []), A = i.useCallback(() => S(!1), []), R = i.useRef(!1), [k] = i.useState(() => new f.V7), H = i.useRef(null), F = i.useRef(null), z = (0, u.OP)(), {
     ref: Y
   } = z, K = es(z, ["ref"]), Q = (0, m.mFp)(), [$, ee] = i.useState(!1), [ei, eh] = i.useState(!1), ep = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), ef = (0, m.dQu)(g.Z.space.SPACE_XS), eg = i.useMemo(() => new ec(d, ee, eh, () => {
     var e, t;
-    null == (e = F.current) || e.calculateState(), null == (t = H.current) || t.calculateState()
+    null == (e = H.current) || e.calculateState(), null == (t = F.current) || t.calculateState()
   }, function(e, t, n) {
     let r = t ? n : 8,
       i = e + r,
@@ -357,7 +357,7 @@ function eh(e) {
       children: ew
     })) : ew,
     eZ = (0, r.jsx)(B.Z, {
-      ref: F,
+      ref: H,
       isVisible: eg.isItemVisible,
       onJumpTo: eg.handleJumpToGuild,
       className: er.unreadMentionsIndicatorTop,
@@ -436,7 +436,7 @@ function eh(e) {
           })
         })), (0, r.jsx)(B.Z, {
           reverse: !0,
-          ref: H,
+          ref: F,
           isVisible: eg.isItemVisible,
           onJumpTo: eg.handleJumpToGuild,
           className: o()(er.unreadMentionsIndicatorBottom, {

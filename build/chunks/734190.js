@@ -164,9 +164,9 @@ let R = i.memo(function(e) {
     isMentionLowImportance: b.ZP.getIsMentionLowImportance(t.id)
   })), B = (0, a.e7)([f.Z], () => f.Z.isMuted(t.id)), V = i.useCallback(e => {
     (0, g.ok)(t, !e.shiftKey, S.on.CHANNEL_LIST)
-  }, [t]), F = i.useCallback(() => {
+  }, [t]), H = i.useCallback(() => {
     u.Z.preload(t.guild_id, t.id)
-  }, [t.guild_id, t.id]), H = i.useCallback(e => {
+  }, [t.guild_id, t.id]), F = i.useCallback(e => {
     let i = m.Z.getChannel(t.id);
     null != i && (0, d.jW)(e, async () => {
       let {
@@ -228,8 +228,8 @@ let R = i.memo(function(e) {
           [I.modeUnreadImportant]: !B && !l && M,
           [I.withGuildIcon]: D
         }),
-        onMouseDown: F,
-        onContextMenu: H,
+        onMouseDown: H,
+        onContextMenu: F,
         children: [!M || B || l ? null : (0, r.jsx)("div", {
           className: o()(I.unread, I.unreadImportant)
         }), (0, r.jsx)(c.P3F, Z(N({}, K), {
