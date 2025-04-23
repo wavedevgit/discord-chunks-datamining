@@ -6,8 +6,8 @@ var r = n(200651),
   s = n(192379),
   i = n(120356),
   o = n.n(i),
-  l = n(200100),
-  a = n(722770),
+  a = n(200100),
+  l = n(722770),
   c = n(442837),
   u = n(846519),
   d = n(481060),
@@ -64,8 +64,8 @@ function D(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let M = (0, l.animated)(d.CJ0),
-  A = (0, l.animated)(h.Z),
+let M = (0, a.animated)(d.CJ0),
+  A = (0, a.animated)(h.Z),
   Z = e => {
     var {
       quest: t,
@@ -86,7 +86,7 @@ let M = (0, l.animated)(d.CJ0),
       }
       return s
     }(e, ["quest", "location", "questContentPosition"]);
-    let [l, a] = s.useState(!1), c = s.useRef(new u.V7), m = (0, j.O5)();
+    let [a, l] = s.useState(!1), c = s.useRef(new u.V7), m = (0, j.O5)();
     s.useEffect(() => {
       let e = c.current;
       return function() {
@@ -100,12 +100,12 @@ let M = (0, l.animated)(d.CJ0),
         questContentCTA: j.jZ.COPY_QUEST_URL,
         questContentPosition: i
       }), (0, f.JG)((0, v.Rs)(t.id), () => {
-        a(!0), c.current.start(1e3, () => a(!1))
+        l(!0), c.current.start(1e3, () => l(!1))
       })
     };
     return (0, r.jsx)(d.ua7, {
-      forceOpen: l,
-      shouldShow: l,
+      forceOpen: a,
+      shouldShow: a,
       color: d.ua7.Colors.GREEN,
       text: R.intl.string(R.t.MSaeTU),
       children: () => (0, r.jsx)(d.zxk, D(I({}, o), {
@@ -134,18 +134,18 @@ let M = (0, l.animated)(d.CJ0),
     } = e, {
       ref: z,
       height: F
-    } = (0, m.ZP)(), [G, H] = s.useState(null), [X, V] = s.useState(null), Y = (0, x.Z)(e => {
+    } = (0, m.ZP)(), [G, H] = s.useState(null), [X, Y] = s.useState(null), V = (0, x.Z)(e => {
       let t = e.target;
-      H(t.offsetWidth), V(t.scrollWidth)
-    }), K = (0, p.y)(Y), J = (0, c.e7)([g.Z], () => g.Z.useReducedMotion), $ = s.useMemo(() => (0, y.fh)(h, y.eC.HERO), [h]), ee = s.useRef(null), et = (0, S.uq)(f), en = f === C.jn.QUESTS_EMBED, er = (0, b.t5)(h, P.dr.QUESTS_CARD, f), es = (null == (t = h.userStatus) ? void 0 : t.completedAt) != null, ei = (0, j.O5)(), eo = (0, b.B6)(h.config.expiresAt, {
+      H(t.offsetWidth), Y(t.scrollWidth)
+    }), K = (0, p.y)(V), J = (0, c.e7)([g.Z], () => g.Z.useReducedMotion), $ = s.useMemo(() => (0, y.fh)(h, y.eC.HERO), [h]), ee = s.useRef(null), et = (0, S.uq)(f), en = f === C.jn.QUESTS_EMBED, er = (0, b.t5)(h, P.dr.QUESTS_CARD, f), es = (null == (t = h.userStatus) ? void 0 : t.completedAt) != null, ei = (0, j.O5)(), eo = (0, b.B6)(h.config.expiresAt, {
       year: "numeric",
       month: "long",
       day: "numeric"
-    }), el = (0, b.B6)(T.r.build(h.config).rewardsExpireAt, {
+    }), ea = (0, b.B6)(T.r.build(h.config).rewardsExpireAt, {
       year: "numeric",
       month: "long",
       day: "numeric"
-    }), ea = s.useMemo(() => null != h.config.cosponsorMetadata, [h]), ec = e => {
+    }), el = s.useMemo(() => null != h.config.cosponsorMetadata, [h]), ec = e => {
       e.stopPropagation(), e.currentTarget.blur(), W(), ei({
         questId: h.id,
         questContent: f,
@@ -158,7 +158,7 @@ let M = (0, l.animated)(d.CJ0),
     }, [i, $]);
     let eu = (0, r.jsx)(O.ZP, {
       className: _.partnerBranding,
-      logotypeClassName: ea ? _.partnerBrandingLogotypes : void 0,
+      logotypeClassName: el ? _.partnerBrandingLogotypes : void 0,
       gameTileSize: O.fF.MEDIUM,
       quest: h,
       separatorSpacing: O.US.MEDIUM,
@@ -197,7 +197,7 @@ let M = (0, l.animated)(d.CJ0),
       }), (0, r.jsxs)("div", {
         className: _.header,
         "aria-expanded": B,
-        children: [(0, r.jsxs)(l.animated.div, {
+        children: [(0, r.jsxs)(a.animated.div, {
           className: o()(_.headerContent, {
             [_.headerContentEmbed]: en
           }),
@@ -207,7 +207,7 @@ let M = (0, l.animated)(d.CJ0),
               output: [S.DJ, 0]
             }) : void 0
           },
-          children: [et && (0, r.jsx)(l.animated.div, {
+          children: [et && (0, r.jsx)(a.animated.div, {
             className: _.headerCollapsedContent,
             style: {
               opacity: k.to({
@@ -242,7 +242,7 @@ let M = (0, l.animated)(d.CJ0),
                 })]
               })]
             })
-          }), (0, r.jsxs)(l.animated.div, {
+          }), (0, r.jsxs)(a.animated.div, {
             ref: e => {
               z.current = e
             },
@@ -284,7 +284,7 @@ let M = (0, l.animated)(d.CJ0),
                   variant: "text-xs/normal",
                   color: "always-white",
                   children: es ? R.intl.formatToPlainString(R.t.APddvL, {
-                    expirationDate: el
+                    expirationDate: ea
                   }) : u ? R.intl.formatToPlainString(R.t.v7xMw8, {
                     expirationDate: eo
                   }) : R.intl.formatToPlainString(R.t["pX+fmp"], {
@@ -298,7 +298,7 @@ let M = (0, l.animated)(d.CJ0),
               questContentPosition: Q
             })]
           })]
-        }), (0, r.jsxs)(l.animated.div, {
+        }), (0, r.jsxs)(a.animated.div, {
           className: _.iconsContainer,
           style: {
             top: et ? k.to({
@@ -313,7 +313,7 @@ let M = (0, l.animated)(d.CJ0),
             shouldShowDisclosure: !0,
             hideLearnMore: et,
             showShareLink: !u && en,
-            children: e => (0, r.jsx)(l.animated.div, {
+            children: e => (0, r.jsx)(a.animated.div, {
               style: {
                 opacity: k,
                 visibility: L || B ? "inherit" : "hidden"
@@ -324,7 +324,7 @@ let M = (0, l.animated)(d.CJ0),
                 "aria-label": R.intl.string(R.t.DEoVWV),
                 children: (0, r.jsx)(d.xhG, {
                   size: "md",
-                  color: a.Z.WHITE
+                  color: l.Z.WHITE
                 })
               }))
             })
@@ -339,7 +339,7 @@ let M = (0, l.animated)(d.CJ0),
                   output: [0, 180]
                 })
               },
-              color: a.Z.WHITE
+              color: l.Z.WHITE
             })
           })]
         })]

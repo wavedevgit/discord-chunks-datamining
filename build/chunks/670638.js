@@ -6,8 +6,8 @@ var r = n(200651),
   s = n(192379),
   i = n(442837),
   o = n(481060),
-  l = n(239091),
-  a = n(479531),
+  a = n(239091),
+  l = n(479531),
   c = n(390322),
   u = n(572004),
   d = n(63063),
@@ -60,11 +60,11 @@ function N(e) {
   var t;
   let n = (0, i.e7)([h.Z], () => h.Z.questDeliveryOverride, []),
     c = (0, j.GN)(e.questContent),
-    O = !(0, j.q8)(e.quest) && !(0, j.pO)(e.quest),
-    E = [f.jn.QUEST_BAR_V2, f.jn.QUEST_BAR].includes(e.questContent),
-    N = (0, j.zK)(e.quest, C.S7.DISMISSAL_SURVEY),
-    q = (0, m.O5)(),
-    S = (0, p.aM)(),
+    O = [f.jn.QUEST_BAR_V2, f.jn.QUEST_BAR].includes(e.questContent),
+    E = (0, j.zK)(e.quest, C.S7.DISMISSAL_SURVEY),
+    N = (0, m.O5)(),
+    q = (0, p.aM)(),
+    S = (0, g.Yj)(e.quest),
     {
       handleComplete: P,
       handleProgress: w,
@@ -77,31 +77,30 @@ function N(e) {
       (0, j.FE)(e.quest, {
         content: e.questContent,
         ctaContent: m.jZ.CONTEXT_MENU_OPEN_GAME_LINK,
-        impressionId: S
+        impressionId: q
       })
-    }, [S, e.quest, e.questContent]),
+    }, [q, e.quest, e.questContent]),
     M = s.useCallback(() => {
       (0, j.f2)(e.quest.id, {
         content: e.questContent,
         position: e.questContentPosition,
         ctaContent: m.jZ.CONTEXT_MENU_COPY_LINK,
-        impressionId: S
+        impressionId: q
       }), (0, o.showToast)((0, o.createToast)(T.intl.string(T.t["+5kSoa"]), o.ToastType.SUCCESS))
-    }, [S, e.quest.id, e.questContent, e.questContentPosition]),
-    A = e => (0, o.showToast)((0, o.createToast)(new a.Z(e, e.status).message, o.ToastType.FAILURE)),
+    }, [q, e.quest.id, e.questContent, e.questContentPosition]),
+    A = e => (0, o.showToast)((0, o.createToast)(new l.Z(e, e.status).message, o.ToastType.FAILURE)),
     Z = () => (0, x.is)(e.quest.id).catch(A),
-    k = s.useMemo(() => O ? T.t.lwQdjI : T.t.hvVgAQ, [O]),
-    L = s.useMemo(() => (0, r.jsx)(o.S89, {
+    k = s.useMemo(() => (0, r.jsx)(o.S89, {
       id: "delivery",
       label: "Show in Quest Bar",
       checked: (null == n ? void 0 : n.id) === e.quest.id,
       action: I
     }), [I, e.quest.id, null == n ? void 0 : n.id]),
-    B = e.shouldShowDisclosure && e.quest.id !== C.V6;
+    L = e.shouldShowDisclosure && e.quest.id !== C.V6;
   return (0, r.jsxs)(o.v2r, {
     variant: "fixed",
     onSelect: () => {
-      null != e.onSelect ? e.onSelect() : (0, l.Zy)()
+      null != e.onSelect ? e.onSelect() : (0, a.Zy)()
     },
     navId: "quests-entry",
     "aria-label": T.intl.string(T.t.ogxXGh),
@@ -109,7 +108,7 @@ function N(e) {
     children: [(0, r.jsxs)(o.kSQ, {
       children: [(0, r.jsx)(o.sNh, {
         id: "play-game",
-        label: T.intl.string(k),
+        label: S,
         action: D,
         icon: o.zFc
       }), !0 === e.showShareLink && (0, r.jsx)(o.sNh, {
@@ -123,7 +122,7 @@ function N(e) {
         id: "learn-more",
         label: T.intl.string(T.t.Ws2Bl5),
         action: () => {
-          q({
+          N({
             questId: e.quest.id,
             questContent: e.questContent,
             questContentPosition: e.questContentPosition,
@@ -134,7 +133,7 @@ function N(e) {
           })
         },
         icon: o.qDn
-      }), B && (0, r.jsx)(o.sNh, {
+      }), L && (0, r.jsx)(o.sNh, {
         id: "display-disclosure",
         label: T.intl.string(T.t.GcsZKC),
         action: () => {
@@ -142,25 +141,25 @@ function N(e) {
             content: e.questContent,
             position: e.questContentPosition,
             ctaContent: m.jZ.CONTEXT_MENU_OPEN_DISCLOSURE,
-            impressionId: S
+            impressionId: q
           })
         }
       }), c && (0, r.jsx)(o.sNh, {
         id: "hide-entrypoint",
         label: T.intl.string(T.t.NN79Ex),
         action: () => {
-          q({
+          N({
             questId: e.quest.id,
             questContent: e.questContent,
             questContentPosition: e.questContentPosition,
             questContentCTA: m.jZ.CONTEXT_MENU_HIDE_CONTENT
-          }), (0, j.GN)(e.questContent) && ((0, x.gl)(e.quest.id, e.questContent), N && E && (0, b.maybeShowSurveyForQuest)(e.quest))
+          }), (0, j.GN)(e.questContent) && ((0, x.gl)(e.quest.id, e.questContent), E && O && (0, b.maybeShowSurveyForQuest)(e.quest))
         },
         subtext: T.intl.string(T.t["1u3YPD"])
       })]
     }, "minor-actions"), e.quest.preview && (0, r.jsxs)(o.kSQ, {
       label: "Preview Controls",
-      children: [L, (0, r.jsx)(o.sNh, {
+      children: [k, (0, r.jsx)(o.sNh, {
         id: "dismiss",
         label: "Reset Dismissibility",
         action: R
@@ -212,8 +211,8 @@ function q(e) {
     children: t,
     onOpen: n,
     onClose: i,
-    preventIdle: l,
-    quest: a,
+    preventIdle: a,
+    quest: l,
     questContent: u,
     questContentPosition: d
   } = e, p = function(e, t) {
@@ -232,12 +231,12 @@ function q(e) {
     return s
   }(e, ["children", "onOpen", "onClose", "preventIdle", "quest", "questContent", "questContentPosition"]), x = (0, m.O5)(), g = s.useCallback(() => {
     x({
-      questId: a.id,
+      questId: l.id,
       questContent: u,
       questContentCTA: m.jZ.OPEN_CONTEXT_MENU,
       questContentPosition: d
     }), null != n && n()
-  }, [n, a.id, u, d, x]);
+  }, [n, l.id, u, d, x]);
   return (0, r.jsx)(o.yRy, {
     onRequestOpen: g,
     onRequestClose: i,
@@ -245,15 +244,15 @@ function q(e) {
       let {
         closePopout: t
       } = e;
-      return l ? (0, r.jsx)(c.Z, {
+      return a ? (0, r.jsx)(c.Z, {
         children: (0, r.jsx)(N, E(O({}, p), {
-          quest: a,
+          quest: l,
           questContent: u,
           questContentPosition: d,
           onClose: t
         }))
       }) : (0, r.jsx)(N, E(O({}, p), {
-        quest: a,
+        quest: l,
         questContent: u,
         questContentPosition: d,
         onClose: t
