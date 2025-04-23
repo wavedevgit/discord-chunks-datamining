@@ -103,14 +103,15 @@ let T = {
       })
     }
   },
-  updateVerificationForm: async (e, t, n) => {
+  updateVerificationForm: async (e, t, n, a) => {
     let {
-      body: a
+      body: o
     } = await r.tn.patch({
       url: g.ANM.GUILD_MEMBER_VERIFICATION(e),
       body: {
         form_fields: t,
-        enabled: n
+        enabled: n,
+        bulk_action: a
       },
       oldFormErrors: !0,
       rejectWithError: !1
@@ -119,9 +120,9 @@ let T = {
       type: "MEMBER_VERIFICATION_FORM_UPDATE",
       guildId: e,
       form: {
-        version: a.version,
-        description: a.description,
-        formFields: a.form_fields
+        version: o.version,
+        description: o.description,
+        formFields: o.form_fields
       }
     })
   },
