@@ -16,15 +16,15 @@ var r = n(200651),
   _ = n(785717),
   p = n(221292),
   h = n(687158),
-  m = n(899007),
-  g = n(648052),
-  E = n(867176),
-  b = n(280885),
-  y = n(502762),
-  v = n(530),
-  O = n(679332),
-  I = n(544989),
-  S = n(171368),
+  m = n(892001),
+  g = n(899007),
+  E = n(648052),
+  b = n(867176),
+  y = n(280885),
+  v = n(502762),
+  O = n(530),
+  I = n(679332),
+  S = n(544989),
   T = n(228168),
   A = n(388032),
   N = n(200669);
@@ -77,7 +77,7 @@ function P(e) {
     null == L || L(null == B ? void 0 : B.current)
   }, [B, L]);
   let F = () => {
-      null == x || x(), (0, S.openUserProfileModal)(R({
+      null == x || x(), (0, m.openUserProfileModal)(R({
         sourceAnalyticsLocations: U,
         hideRestrictedProfile: !0
       }, G))
@@ -104,23 +104,23 @@ function P(e) {
       children: (0, r.jsxs)(a.VqE, {
         ref: B,
         "aria-label": t.username,
-        children: [(0, r.jsxs)(y.Z, {
+        children: [(0, r.jsxs)(v.Z, {
           user: t,
           displayProfile: j,
           themeType: T.lY.POPOUT,
-          children: [(0, r.jsx)(I.Z, {
-            children: (0, r.jsx)(O.Z, {
+          children: [(0, r.jsx)(S.Z, {
+            children: (0, r.jsx)(I.Z, {
               user: t,
               viewProfileItem: H()
             })
           }), (0, r.jsxs)("header", {
             className: N.header,
-            children: [(0, r.jsx)(E.Z, {
+            children: [(0, r.jsx)(b.Z, {
               user: t,
               displayProfile: j,
               guildId: n,
               themeType: T.lY.POPOUT
-            }), (0, r.jsx)(m.Z, {
+            }), (0, r.jsx)(g.Z, {
               user: t,
               displayProfile: j,
               guildId: n,
@@ -133,16 +133,16 @@ function P(e) {
           }), (0, r.jsxs)(a.Ttm, {
             fade: !0,
             className: N.body,
-            children: [(0, r.jsx)(v.Z, {
+            children: [(0, r.jsx)(O.Z, {
               user: t,
               nickname: f.ZP.getName(n, C, t),
               onOpenProfile: Z ? F : void 0,
-              tags: (0, r.jsx)(g.Z, {
+              tags: (0, r.jsx)(E.Z, {
                 displayProfile: j,
                 themeType: T.lY.POPOUT,
                 onClose: x
               })
-            }), (0, r.jsx)(b.Z, {
+            }), (0, r.jsx)(y.Z, {
               userId: t.id,
               userBio: null == j ? void 0 : j.bio,
               setLineClamp: !1,

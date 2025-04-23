@@ -10,9 +10,9 @@ var r = n(200651),
   s = n(481060),
   l = n(906732),
   c = n(785717),
-  u = n(502762),
-  d = n(652853),
-  f = n(171368),
+  u = n(892001),
+  d = n(502762),
+  f = n(652853),
   _ = n(228168),
   p = n(388032),
   h = n(227832);
@@ -83,12 +83,12 @@ let O = i.forwardRef(function(e, t) {
   } = e, v = y(e, ["children", "className", "subsection", "onAction", "onClose"]);
   let {
     themeType: O
-  } = (0, d.z)(), {
+  } = (0, f.z)(), {
     analyticsLocations: I
   } = (0, l.ZP)(), {
     context: S
   } = (0, c.KZ)();
-  return O === _.lY.MODAL || (null == S ? void 0 : S.userId) == null ? (0, r.jsx)(u.Z.Overlay, b(g({
+  return O === _.lY.MODAL || (null == S ? void 0 : S.userId) == null ? (0, r.jsx)(d.Z.Overlay, b(g({
     ref: t,
     className: o()(h.card, i)
   }, v), {
@@ -102,13 +102,13 @@ let O = i.forwardRef(function(e, t) {
     onClick: () => {
       null == m || m({
         action: "PRESS_CARD"
-      }), (0, f.openUserProfileModal)(g({
+      }), (0, u.openUserProfileModal)(g({
         section: _.oh.ACTIVITY,
         sourceAnalyticsLocations: I,
         subsection: a
       }, S)), null == E || E()
     },
-    children: (0, r.jsx)(u.Z.Overlay, b(g({
+    children: (0, r.jsx)(d.Z.Overlay, b(g({
       ref: t,
       className: o()(h.card, i)
     }, v), {

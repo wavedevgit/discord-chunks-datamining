@@ -19,18 +19,18 @@ var i = n(200651),
   b = n(680295),
   _ = n(785717),
   x = n(687158),
-  E = n(899007),
-  j = n(648052),
-  C = n(867176),
-  O = n(537006),
-  S = n(483517),
-  v = n(483424),
-  T = n(681837),
-  I = n(502762),
-  N = n(530),
-  y = n(309494),
-  A = n(4517),
-  P = n(171368),
+  E = n(892001),
+  j = n(899007),
+  C = n(648052),
+  O = n(867176),
+  S = n(537006),
+  v = n(483517),
+  T = n(483424),
+  I = n(681837),
+  N = n(502762),
+  y = n(530),
+  A = n(309494),
+  P = n(4517),
   R = n(420654),
   D = n(695346),
   Z = n(158776),
@@ -115,7 +115,7 @@ function Q(e) {
     }),
     e_ = r.useMemo(() => (0, g.Z)(), []),
     ex = e => {
-      null == n || n(), (0, P.openUserProfileModal)(X({
+      null == n || n(), (0, E.openUserProfileModal)(X({
         customStatusPrompt: e_,
         sourceAnalyticsLocations: en
       }, ei, e))
@@ -131,23 +131,23 @@ function Q(e) {
       children: (0, i.jsx)(a.VqE, {
         ref: er,
         "aria-label": t.username,
-        children: (0, i.jsxs)(I.Z, {
+        children: (0, i.jsxs)(N.Z, {
           className: K.themeContainer,
           user: t,
           displayProfile: et,
           themeType: W.lY.POPOUT,
           children: [(0, i.jsxs)("header", {
             className: q.header,
-            children: [(0, i.jsx)(C.Z, {
+            children: [(0, i.jsx)(O.Z, {
               user: t,
               displayProfile: et,
               themeType: W.lY.POPOUT
-            }), (0, i.jsx)(E.Z, {
+            }), (0, i.jsx)(j.Z, {
               user: t,
               displayProfile: et,
               themeType: W.lY.POPOUT,
               onOpenProfile: ee ? void 0 : ex
-            }), (0, i.jsx)(A.Z, {
+            }), (0, i.jsx)(P.Z, {
               location: "UserProfileAccountPopout",
               user: t,
               themeType: W.lY.POPOUT,
@@ -159,22 +159,22 @@ function Q(e) {
             isHovering: es
           }), (0, i.jsxs)(a.Ttm, {
             className: K.body,
-            children: [(0, i.jsx)(N.Z, {
+            children: [(0, i.jsx)(y.Z, {
               user: t,
               className: K.username,
               nickname: L.ZP.getName(null, null, t),
               onOpenProfile: ee ? void 0 : ex,
               pronouns: null == et ? void 0 : et.pronouns,
-              tags: (0, i.jsx)(j.Z, {
+              tags: (0, i.jsx)(C.Z, {
                 displayProfile: et,
                 themeType: W.lY.POPOUT,
                 onClose: n,
                 shouldOpenBadgeTooltip: null != J ? e => e === J : void 0
               }),
               nicknameIcons: (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(T.Z, {
+                children: [(0, i.jsx)(I.Z, {
                   userId: t.id
-                }), (0, i.jsx)(y.Z, {
+                }), (0, i.jsx)(A.Z, {
                   user: t,
                   isHovering: es
                 })]
@@ -184,17 +184,17 @@ function Q(e) {
               bio: null == et ? void 0 : et.bio,
               hidePersonalInformation: ed,
               onClose: n
-            }), (0, i.jsx)(O.Z, {
+            }), (0, i.jsx)(S.Z, {
               isPremiumUser: ef,
               onInteraction: n
-            }), (0, i.jsx)(v.Z, {
+            }), (0, i.jsx)(T.Z, {
               user: t,
               currentUser: t,
               displayProfile: et,
               onClose: n
             }), (0, i.jsxs)("div", {
               className: K.menus,
-              children: [(0, i.jsx)(I.Z.Overlay, {
+              children: [(0, i.jsx)(N.Z.Overlay, {
                 className: K.menuOverlay,
                 children: (0, i.jsxs)(V.XE, {
                   id: "profile-".concat(t.id),
@@ -206,7 +206,7 @@ function Q(e) {
                     onClick: () => {
                       eh(), n()
                     }
-                  }), (0, i.jsx)(S.Z, {
+                  }), (0, i.jsx)(v.Z, {
                     className: K.menuDivider
                   }), (0, i.jsx)(V.V4, {
                     id: "set-status",
@@ -284,7 +284,7 @@ function Q(e) {
                     } : void 0
                   })]
                 })
-              }), (0, i.jsx)(I.Z.Overlay, {
+              }), (0, i.jsx)(N.Z.Overlay, {
                 className: K.menuOverlay,
                 children: (0, i.jsxs)(V.XE, {
                   id: "account-".concat(t.id),
@@ -308,7 +308,7 @@ function Q(e) {
                       })
                     }
                   }), !__OVERLAY__ && k.wS && em && (0, i.jsxs)(i.Fragment, {
-                    children: [(0, i.jsx)(S.Z, {
+                    children: [(0, i.jsx)(v.Z, {
                       className: K.menuDivider
                     }), (0, i.jsx)(V.V4, {
                       id: "copy-user-id",

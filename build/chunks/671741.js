@@ -1,4 +1,4 @@
-/** Chunk was on 3656 **/
+/** Chunk was on 30745 **/
 n.d(t, {
   Z: () => R
 });
@@ -17,16 +17,16 @@ var r = n(200651),
   m = n(221292),
   g = n(687158),
   b = n(510659),
-  _ = n(113557),
-  y = n(867176),
-  C = n(451834),
-  x = n(502762),
-  v = n(952124),
-  j = n(544989),
-  O = n(481932),
-  E = n(272510),
-  I = n(4517),
-  P = n(171368),
+  _ = n(892001),
+  y = n(113557),
+  C = n(867176),
+  x = n(451834),
+  v = n(502762),
+  j = n(952124),
+  O = n(544989),
+  E = n(481932),
+  I = n(272510),
+  P = n(4517),
   S = n(854935),
   Z = n(397110),
   N = n(228168),
@@ -69,7 +69,7 @@ function R(e) {
       duration: 150
     }
   }), z = e => {
-    (0, P.openUserProfileModal)(w({
+    (0, _.openUserProfileModal)(w({
       sourceAnalyticsLocations: U,
       hideRestrictedProfile: !0
     }, B, e))
@@ -84,7 +84,7 @@ function R(e) {
       isLoaded: null == M ? void 0 : M.isLoaded,
       children: (0, r.jsx)(b.NJ, {
         value: H,
-        children: (0, r.jsxs)(x.Z, {
+        children: (0, r.jsxs)(v.Z, {
           ref: G,
           user: t,
           displayProfile: M,
@@ -94,35 +94,35 @@ function R(e) {
             style: V,
             className: A.backdrop
           }), (0, r.jsxs)(o.u2, {
-            children: [(0, r.jsxs)(j.Z, {
-              children: [(0, r.jsx)(O.Z, {
+            children: [(0, r.jsxs)(O.Z, {
+              children: [(0, r.jsx)(E.Z, {
                 user: t,
                 themeType: N.lY.SIDEBAR,
                 shouldShowTooltip: null === H.interactionType
-              }), t.bot ? (0, r.jsx)(v.Z, {
+              }), t.bot ? (0, r.jsx)(j.Z, {
                 user: t
-              }) : (0, r.jsx)(E.Z, {
+              }) : (0, r.jsx)(I.Z, {
                 user: t
               })]
             }), (0, r.jsxs)("header", {
               className: A.header,
-              children: [(0, r.jsx)(y.Z, {
+              children: [(0, r.jsx)(C.Z, {
                 user: t,
                 displayProfile: M,
                 themeType: N.lY.SIDEBAR,
                 animateOnHover: !F,
                 className: A.banner
-              }), (0, r.jsx)(C.Z, {
+              }), (0, r.jsx)(x.Z, {
                 userId: t.id,
                 className: A.toast
-              }), (0, r.jsx)(_.Z, {
+              }), (0, r.jsx)(y.Z, {
                 location: "UserProfileSiebar",
                 user: t,
                 displayProfile: M,
                 channelId: R.id,
                 themeType: N.lY.SIDEBAR,
                 onOpenProfile: k ? void 0 : z
-              }), (0, r.jsx)(I.Z, {
+              }), (0, r.jsx)(P.Z, {
                 location: "UserProfileSiebar",
                 user: t,
                 channelId: R.id,

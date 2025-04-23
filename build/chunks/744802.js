@@ -1,57 +1,57 @@
-/** Chunk was on 54636 **/
+/** Chunk was on 40099 **/
 t.d(n, {
-  Z: () => c
+  Z: () => u
 });
-var r = t(200651);
+var l = t(200651);
 t(192379);
-var o = t(81570),
+var r = t(81570),
   i = t(527790),
-  l = t(248930);
+  o = t(248930);
 
 function s(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
-      r = Object.keys(t);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+      l = Object.keys(t);
+    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
       return Object.getOwnPropertyDescriptor(t, e).enumerable
-    }))), r.forEach(function(n) {
-      var r;
-      r = t[n], n in e ? Object.defineProperty(e, n, {
-        value: r,
+    }))), l.forEach(function(n) {
+      var l;
+      l = t[n], n in e ? Object.defineProperty(e, n, {
+        value: l,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : e[n] = r
+      }) : e[n] = l
     })
   }
   return e
 }
 
-function c(e) {
+function u(e) {
   var {
     location: n,
     user: t,
-    currentUser: c
+    currentUser: u
   } = e, a = function(e, n) {
     if (null == e) return {};
-    var t, r, o = function(e, n) {
+    var t, l, r = function(e, n) {
       if (null == e) return {};
-      var t, r, o = {},
+      var t, l, r = {},
         i = Object.keys(e);
-      for (r = 0; r < i.length; r++) t = i[r], n.indexOf(t) >= 0 || (o[t] = e[t]);
-      return o
+      for (l = 0; l < i.length; l++) t = i[l], n.indexOf(t) >= 0 || (r[t] = e[t]);
+      return r
     }(e, n);
     if (Object.getOwnPropertySymbols) {
       var i = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < i.length; r++) t = i[r], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (o[t] = e[t])
+      for (l = 0; l < i.length; l++) t = i[l], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (r[t] = e[t])
     }
-    return o
+    return r
   }(e, ["location", "user", "currentUser"]);
-  return (0, o.T)({
+  return (0, r.T)({
     location: n
-  }) && t.id !== c.id && !t.bot ? (0, r.jsx)(l.Z, s({
+  }) && t.id !== u.id && !t.bot ? (0, l.jsx)(o.Z, s({
     user: t
-  }, a)) : (0, r.jsx)(i.Z, s({
+  }, a)) : (0, l.jsx)(i.Z, s({
     user: t
   }, a))
 }

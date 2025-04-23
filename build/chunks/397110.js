@@ -1,4 +1,4 @@
-/** Chunk was on 3656 **/
+/** Chunk was on 30745 **/
 n.d(t, {
   Z: () => C
 });
@@ -12,9 +12,9 @@ var i = n(410030),
   c = n(785717),
   u = n(806729),
   d = n(857302),
-  p = n(483517),
-  h = n(502762),
-  f = n(171368),
+  p = n(892001),
+  h = n(483517),
+  f = n(502762),
   m = n(389190),
   g = n(428927),
   b = n(787439),
@@ -33,7 +33,7 @@ function C(e) {
     mutualFriends: O,
     mutualGuilds: E
   } = (0, u.Z)(t), I = !t.bot && null != j && j > 0, P = null != E && E.length > 0;
-  return I || P ? (0, r.jsxs)(h.Z.Overlay, {
+  return I || P ? (0, r.jsxs)(f.Z.Overlay, {
     className: y.overlay,
     children: [P && (0, r.jsx)(b.Z, {
       section: "MUTUAL_GUILDS",
@@ -52,7 +52,7 @@ function C(e) {
           onSelect: () => (0, s.X)(n.id)
         }, n.id)
       })
-    }), P && I && (0, r.jsx)(p.Z, {
+    }), P && I && (0, r.jsx)(h.Z, {
       className: y.divider
     }), I && (0, r.jsx)(b.Z, {
       section: "MUTUAL_FRIENDS",
@@ -81,7 +81,7 @@ function C(e) {
           status: l,
           onSelect: () => {
             var e, t;
-            (0, f.openUserProfileModal)((e = function(e) {
+            (0, p.openUserProfileModal)((e = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                   r = Object.keys(n);

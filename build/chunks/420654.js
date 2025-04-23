@@ -10,8 +10,8 @@ var r = n(200651),
   s = n(481060),
   l = n(906732),
   c = n(785717),
-  u = n(280885),
-  d = n(171368),
+  u = n(892001),
+  d = n(280885),
   f = n(388032),
   _ = n(383994);
 
@@ -68,7 +68,7 @@ let E = 57.75,
     } = (0, l.ZP)(), [v, O] = i.useState(null), [I, S] = i.useState(!1), [T, A] = i.useState(!1), N = e => {
       null != e && (O(e), S(!T && e.scrollHeight - e.clientHeight > 1), e.getBoundingClientRect().height > E && A(!0))
     }, C = () => {
-      null == n || n(), (0, d.openUserProfileModal)(g(h({}, b), {
+      null == n || n(), (0, u.openUserProfileModal)(g(h({}, b), {
         userId: t.id,
         sourceAnalyticsLocations: y
       }))
@@ -80,7 +80,7 @@ let E = 57.75,
         ref: N,
         className: o()(_.descriptionClamp, T && _.maxBioHeight),
         onBlur: R,
-        children: (0, r.jsx)(u.Z, {
+        children: (0, r.jsx)(d.Z, {
           userBio: a,
           setLineClamp: !1,
           textColor: "header-primary"

@@ -20,16 +20,16 @@ var r = n(200651),
   g = n(221292),
   E = n(687158),
   b = n(510659),
-  y = n(113557),
-  v = n(867176),
-  O = n(451834),
-  I = n(502762),
-  S = n(544989),
-  T = n(481932),
-  A = n(195387),
-  N = n(272510),
-  C = n(4517),
-  R = n(171368),
+  y = n(892001),
+  v = n(113557),
+  O = n(867176),
+  I = n(451834),
+  S = n(502762),
+  T = n(544989),
+  A = n(481932),
+  N = n(195387),
+  C = n(272510),
+  R = n(4517),
   P = n(978395),
   w = n(161572),
   D = n(228168),
@@ -121,7 +121,7 @@ function B(e) {
     }),
     ei = i.useMemo(() => (0, _.Z)(), []),
     ea = e => {
-      null == Z || Z(), (0, R.openUserProfileModal)(G(j({
+      null == Z || Z(), (0, y.openUserProfileModal)(G(j({
         sourceAnalyticsLocations: z,
         hideRestrictedProfile: !0,
         customStatusPrompt: ei
@@ -152,26 +152,26 @@ function B(e) {
         children: (0, r.jsxs)(s.VqE, {
           ref: J,
           "aria-label": t.username,
-          children: [(0, r.jsxs)(I.Z, {
+          children: [(0, r.jsxs)(S.Z, {
             user: t,
             displayProfile: $,
             themeType: D.lY.POPOUT,
             children: [null != et.interactionType && (0, r.jsx)(a.animated.div, {
               style: en,
               className: M.backdrop
-            }), (0, r.jsxs)(S.Z, {
-              children: [(0, r.jsx)(A.Z, {
+            }), (0, r.jsxs)(T.Z, {
+              children: [(0, r.jsx)(N.Z, {
                 shouldShowTooltip: null === et.interactionType,
                 user: t,
                 guildId: k,
                 channelId: U,
                 onClose: Z,
                 appContext: K
-              }), (0, r.jsx)(T.Z, {
+              }), (0, r.jsx)(A.Z, {
                 shouldShowTooltip: null === et.interactionType,
                 themeType: D.lY.POPOUT,
                 user: t
-              }), t.id !== n.id && (0, r.jsx)(N.Z, {
+              }), t.id !== n.id && (0, r.jsx)(C.Z, {
                 user: t,
                 guildId: k,
                 viewProfileItem: eo(),
@@ -179,16 +179,16 @@ function B(e) {
               })]
             }), (0, r.jsxs)("header", {
               className: M.header,
-              children: [(0, r.jsx)(v.Z, {
+              children: [(0, r.jsx)(O.Z, {
                 user: t,
                 displayProfile: $,
                 guildId: k,
                 themeType: D.lY.POPOUT
-              }), (0, r.jsx)(O.Z, {
+              }), (0, r.jsx)(I.Z, {
                 userId: t.id,
                 className: M.toast,
                 onClose: Z
-              }), (0, r.jsx)(y.Z, {
+              }), (0, r.jsx)(v.Z, {
                 location: "UserProfilePopout",
                 user: t,
                 displayProfile: $,
@@ -196,7 +196,7 @@ function B(e) {
                 channelId: U,
                 themeType: D.lY.POPOUT,
                 onOpenProfile: Y ? void 0 : ea
-              }), (0, r.jsx)(C.Z, {
+              }), (0, r.jsx)(R.Z, {
                 location: "UserProfilePopout",
                 user: t,
                 guildId: k,

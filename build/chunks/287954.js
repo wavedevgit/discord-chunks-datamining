@@ -7,9 +7,9 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   a = n(510659),
-  o = n(511341),
-  s = n(215105),
-  l = n(429974),
+  o = n(497805),
+  s = n(511341),
+  l = n(215105),
   c = n(228168);
 
 function u(e, t, n) {
@@ -98,13 +98,13 @@ function g(e) {
     resetInteraction: v,
     interactionSourceId: O,
     interactionPopoutTargetRef: I
-  } = (0, a.Xo)(), S = f === c.lY.MODAL ? (0, l.z)(t.id, n) : void 0, T = y === E.sourceType && b === c.P.REACT, A = y === E.sourceType && b === c.P.REPLY, N = (T || A) && O === E.sourceId;
+  } = (0, a.Xo)(), S = f === c.lY.MODAL ? (0, o.z)(t.id, n) : void 0, T = y === E.sourceType && b === c.P.REACT, A = y === E.sourceType && b === c.P.REPLY, N = (T || A) && O === E.sourceId;
   return (0, r.jsx)(i.yRy, _(d({
     targetElementRef: null != I ? I : void 0,
     renderPopout: e => {
       let {
         setPopoutRef: i
-      } = e, a = T ? o.Z : s.Z;
+      } = e, a = T ? s.Z : l.Z;
       return (0, r.jsx)(a, d({
         user: t,
         guildId: n,

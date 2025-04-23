@@ -28,7 +28,7 @@ function f(e) {
     {
       let {
         openUserProfileModal: t
-      } = n(171368);
+      } = n(892001);
       t({
         userId: e.id,
         sourceAnalyticsLocations: [o.Z.FRIEND_REQUEST_NOTIFICATION]
