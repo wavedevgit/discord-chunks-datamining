@@ -64,8 +64,8 @@ function x(e) {
   let {
     disableTooltip: t,
     lastTargetNode: n
-  } = e, s = (0, l.e7)([f.Z], () => f.Z.getGuilds()), x = i.useMemo(() => Object.values(s), [s]), S = (0, l.e7)([g.default], () => g.default.getCurrentUser()), E = i.useMemo(() => x.some(e => e.isOwner(S)), [x, S]), I = (0, o.s9z)(e => (0, o.DEQ)(e, _.PU)), {
-    analyticsLocations: P
+  } = e, s = (0, l.e7)([f.Z], () => f.Z.getGuilds()), x = i.useMemo(() => Object.values(s), [s]), S = (0, l.e7)([g.default], () => g.default.getCurrentUser()), E = i.useMemo(() => x.some(e => e.isOwner(S)), [x, S]), P = (0, o.s9z)(e => (0, o.DEQ)(e, _.PU)), {
+    analyticsLocations: I
   } = (0, a.ZP)(), w = (0, u.Q3)("CreateJoinGuildButton"), N = (0, r.jsx)(b.Z, {
     showPill: !1,
     id: "create-join-button",
@@ -78,12 +78,12 @@ function x(e) {
           page: y.Sbl.CREATE_JOIN_GUILD_MODAL,
           section: y.jXE.GUILD_CAP_UPSELL_MODAL
         },
-        analyticsLocations: P
+        analyticsLocations: I
       }) : c.Z.openCreateGuildModal({
         location: "Guild List"
       })
     },
-    selected: I,
+    selected: P,
     onContextMenu: j,
     tooltip: O.intl.string(O.t.l5WIbW),
     icon: w ? o.oFk : o.BRu

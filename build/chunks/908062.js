@@ -10,6 +10,6 @@ var r = n(442837),
 function s(e) {
   return (0, r.Wu)([l.Z], () => {
     let t = l.Z.getStateForGuild(e);
-    return null == t ? [] : Array.from(o.KW.values()).map(e => t.powerups.get(e)).filter(i.lm)
+    return null == t ? [] : Array.from(o.KW.values()).map(e => t.allPowerups[e]).filter(i.lm)
   })
 }

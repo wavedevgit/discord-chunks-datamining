@@ -23,8 +23,8 @@ let b = i.memo(function(e) {
     lowerBadge: y
   } = e, _ = b.id, O = (0, l.e7)([h.Z], () => h.Z.getGuild(_)), v = (0, s.E)(O), C = (0, l.e7)([p.Z], () => p.Z.isFocused()), j = (0, l.e7)([u.Z], () => u.Z.isUnavailable(_)), x = (0, c.Z)(e => e.guildId), S = (0, f.Z)(_), {
     badge: E,
-    unread: I,
-    isMentionLowImportance: P
+    unread: P,
+    isMentionLowImportance: I
   } = (0, l.cj)([d.default], () => ({
     badge: d.default.getMentionCount(_),
     isMentionLowImportance: d.default.getIsMentionLowImportance(_),
@@ -62,9 +62,9 @@ let b = i.memo(function(e) {
     animatable: C,
     selected: x === _,
     badge: E,
-    isMentionLowImportance: P,
+    isMentionLowImportance: I,
     lowerBadge: N,
-    unread: I,
+    unread: P,
     mediaState: S,
     guildJoinRequestStatus: v
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

@@ -32,7 +32,7 @@ function f(e) {
   return e
 }
 
-function g(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -44,7 +44,7 @@ function g(e, t) {
     Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
   }), e
 }
-let b = e => {
+let g = e => {
     var {
       position: t,
       color: r,
@@ -65,7 +65,7 @@ let b = e => {
       return o
     }(e, ["position", "color", "disabled"]);
     let u = (0, i.Bd)(null != r ? r : c.p6O) > .1;
-    return (0, n.jsx)("div", g(f({}, a), {
+    return (0, n.jsx)("div", b(f({}, a), {
       className: l()("left" === t ? p.colorPickerDropperLeft : p.colorPickerDropperRight, u ? p.lightRing : p.darkRing, {
         [p.disabled]: o
       }),
@@ -107,7 +107,7 @@ let b = e => {
         onRequestClose: i,
         children: e => (0, n.jsx)("div", {
           ref: r,
-          children: (0, n.jsx)(s.P3F, g(f({}, e), {
+          children: (0, n.jsx)(s.P3F, b(f({}, e), {
             className: p.colorSelectorPopoutContainer,
             onClick: c,
             "data-position": t ? "left" : "right",
@@ -115,7 +115,7 @@ let b = e => {
             children: (0, n.jsx)(s.ua7, {
               text: u.intl.string(t ? d.default.apbXbG : d.default.JaVq1d),
               position: "bottom",
-              children: e => (0, n.jsx)(b, g(f({}, e), {
+              children: e => (0, n.jsx)(g, b(f({}, e), {
                 position: t ? "left" : "right",
                 color: null != o ? o : 0,
                 disabled: _
@@ -164,7 +164,7 @@ function _(e) {
       }), null == y || y([e, t])
     }, [y]),
     B = o.useCallback((e, t) => {
-      E(r => g(f({}, r), {
+      E(r => b(f({}, r), {
         [e]: t
       }))
     }, []),
@@ -178,11 +178,11 @@ function _(e) {
           children: [(0, n.jsx)("div", {
             className: p.gradientSwatch,
             style: l
-          }), (0, n.jsx)(b, {
+          }), (0, n.jsx)(g, {
             position: "left",
             color: null != (t = k.start) ? t : c.p6O,
             disabled: d
-          }), (0, n.jsx)(b, {
+          }), (0, n.jsx)(g, {
             position: "right",
             color: null != (r = k.end) ? r : 0,
             disabled: d
@@ -224,7 +224,7 @@ function _(e) {
       value: P
     }), [D, P]),
     G = o.useCallback(e => {
-      let t = (0, n.jsx)(s.jHW, g(f({}, e), {
+      let t = (0, n.jsx)(s.jHW, b(f({}, e), {
         "aria-label": u.intl.string(u.t["FHBa//"])
       }));
       return d ? t : (0, n.jsx)(s.yRy, {
@@ -235,7 +235,7 @@ function _(e) {
           targetElementRef: C,
           text: u.intl.string(u.t["FHBa//"]),
           position: "bottom",
-          children: r => (0, n.jsx)("div", g(f({
+          children: r => (0, n.jsx)("div", b(f({
             ref: C
           }, r, e), {
             children: t
@@ -248,12 +248,12 @@ function _(e) {
       return d ? t : (0, n.jsx)(s.ua7, {
         text: u.intl.string(u.t.bBvAEB),
         position: "bottom",
-        children: e => (0, n.jsx)("div", g(f({}, e), {
+        children: e => (0, n.jsx)("div", b(f({}, e), {
           children: t
         }))
       })
     }, [d]);
-  return (0, n.jsx)(s.zH8, g(f({}, e), {
+  return (0, n.jsx)(s.zH8, b(f({}, e), {
     renderDefaultButton: W,
     renderCustomButton: G,
     renderGradientCustomButton: Z,

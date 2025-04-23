@@ -26,8 +26,8 @@ var r = n(200651),
   x = n(66999),
   S = n(554747),
   E = n(378844),
-  I = n(340541),
-  P = n(335353),
+  P = n(340541),
+  I = n(335353),
   w = n(896835),
   N = n(359110),
   Z = n(155409),
@@ -218,7 +218,7 @@ class en extends F.ZP {
     } = this.props, {
       shouldShowActivities: E,
       shouldShowGuildVerificationPopout: w
-    } = this.state, N = (0, I.jW)({
+    } = this.state, N = (0, P.jW)({
       location: "voice_channel"
     }).entrypoints, T = this.getVoiceStatesCount(), A = (0, r.jsxs)("li", {
       ref: this.ref,
@@ -257,7 +257,7 @@ class en extends F.ZP {
                 }
                 return i
               }(c, ["onClick", "onContextMenu"]);
-              return (0, r.jsx)(P.Z, {
+              return (0, r.jsx)(I.Z, {
                 channel: e,
                 children: (0, r.jsxs)(z.ZP, et(ee({
                   ref: this.channelItemRef,
@@ -481,7 +481,7 @@ function ei(e) {
   }), p = (0, s.e7)([G.Z], () => G.Z.hasVideo(n.id)), g = (0, f.ZP)(n), m = (0, y.ZP)(n), b = (0, S.qY)(n.id), {
     isSubscriptionGated: _,
     needSubscriptionToAccess: O
-  } = (0, x.Z)(n.id), C = (0, v.Z)(), j = (0, s.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), E = e.connected || (null == C ? void 0 : C.channelId) === n.id, I = (0, H.Z)({
+  } = (0, x.Z)(n.id), C = (0, v.Z)(), j = (0, s.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), E = e.connected || (null == C ? void 0 : C.channelId) === n.id, P = (0, H.Z)({
     channel: n,
     isChannelSelected: o,
     isChannelCollapsed: a,
@@ -490,7 +490,7 @@ function ei(e) {
     needSubscriptionToAccess: O,
     enableConnectedUserLimit: !0,
     enableActivities: !0
-  }), P = E && null == I;
+  }), I = E && null == P;
   return (0, r.jsx)(er, et(ee({
     channelName: m,
     embeddedApps: g,
@@ -502,8 +502,8 @@ function ei(e) {
   }, u, h, e), {
     connected: E,
     isFavoriteSuggestion: l && !j,
-    forceShowButtons: P,
-    channelInfo: I,
+    forceShowButtons: I,
+    channelInfo: P,
     resolvedUnreadSetting: d
   }))
 }

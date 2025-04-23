@@ -29,8 +29,8 @@ let f = i.forwardRef(function(e, t) {
     className: x,
     "aria-label": S,
     children: E,
-    onMouseEnter: I,
-    onMouseLeave: P,
+    onMouseEnter: P,
+    onMouseLeave: I,
     onMouseDown: w
   } = e, N = (0, c.Q3)("ButtonListItem"), Z = (0, s.Ie)(f), [T, A] = i.useState(!1);
   return (0, r.jsxs)(d.H, {
@@ -68,10 +68,10 @@ let f = i.forwardRef(function(e, t) {
         }({
           innerRef: t,
           onMouseEnter: () => {
-            null == I || I(), A(!0)
+            null == P || P(), A(!0)
           },
           onMouseLeave: () => {
-            null == P || P(), A(!1)
+            null == I || I(), A(!1)
           },
           onMouseDown: w,
           className: o()(p.circleIconButton, x, {

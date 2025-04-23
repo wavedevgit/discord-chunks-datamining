@@ -50,7 +50,7 @@ function j(e, t) {
   }), e
 }
 
-function g(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, o = function(e, t) {
     if (null == e) return {};
@@ -66,7 +66,7 @@ function g(e, t) {
   return o
 }
 
-function _(e) {
+function g(e) {
   let {
     powerup: t,
     isActive: n,
@@ -93,7 +93,7 @@ function v(e) {
     guildId: t,
     powerup: n,
     onClick: o
-  } = e, a = g(e, ["guildId", "powerup", "onClick"]);
+  } = e, a = _(e, ["guildId", "powerup", "onClick"]);
   let i = (0, u.Z)(t, n),
     {
       onShowMore: c
@@ -118,7 +118,7 @@ function I(e) {
     powerup: n,
     compact: a,
     onError: u
-  } = e, p = g(e, ["guildId", "powerup", "compact", "onError"]);
+  } = e, p = _(e, ["guildId", "powerup", "compact", "onError"]);
   let {
     onActivate: v,
     isLoading: I,
@@ -157,7 +157,7 @@ function I(e) {
       onClick: k ? y : v,
       submitting: I
     }), p), {
-      children: (0, r.jsx)(_, {
+      children: (0, r.jsx)(g, {
         powerup: n,
         isActive: k,
         compact: a

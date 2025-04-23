@@ -30,8 +30,8 @@ let f = i.forwardRef(function(e, t) {
     shouldUseHorizontalButtons: x = !1,
     showGIFTag: S = !1,
     dismissibleContent: E,
-    position: I = "top",
-    align: P = "center",
+    position: P = "top",
+    align: I = "center",
     art: w,
     isPremiumEarlyAccess: N = !1,
     maxWidth: Z = 280,
@@ -135,9 +135,9 @@ let f = i.forwardRef(function(e, t) {
         })
       }), (0, r.jsx)("div", {
         className: o()(p.pointer, A, {
-          [p.bottomPointer]: "top" === I,
-          [p.centerLeftPointer]: "right" === I && "center" === P,
-          [p.topLeftPointer]: "right" === I && "top" === P
+          [p.bottomPointer]: "top" === P,
+          [p.centerLeftPointer]: "right" === P && "center" === I,
+          [p.topLeftPointer]: "right" === P && "top" === I
         })
       })]
     })

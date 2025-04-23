@@ -88,7 +88,7 @@ function x(e) {
       name: l.V.SAFETY_WARNING_VIEW
     })
   }, [t, x, v]);
-  let S = () => {
+  let P = () => {
       (0, a.ZDy)(async () => {
         let {
           default: e
@@ -121,7 +121,7 @@ function x(e) {
                 buttonText: y.intl.string(y.t["5QYPOz"]),
                 buttonColor: a.zxk.Colors.RED,
                 onButtonPress: () => {
-                  l(), P(m.NM.USER_MODAL_BLOCK_CONFIRM, m.NM.USER_MODAL_BLOCK_CANCEL, S)
+                  l(), S(m.NM.USER_MODAL_BLOCK_CONFIRM, m.NM.USER_MODAL_BLOCK_CANCEL, P)
                 }
               }, "block-button")]
             })
@@ -129,7 +129,7 @@ function x(e) {
         }
       })
     },
-    P = (e, i, l) => {
+    S = (e, i, l) => {
       (0, a.ZDy)(async () => {
         let {
           default: o
@@ -190,7 +190,7 @@ function x(e) {
       text: y.intl.string(y.t["Qk/c4+"]),
       color: a.zxk.Colors.BRAND,
       onclick: () => {
-        S(), (0, m.qc)({
+        P(), (0, m.qc)({
           channelId: t,
           warningId: x,
           senderId: v,
@@ -201,7 +201,7 @@ function x(e) {
     }, ...j ? [] : [{
       text: y.intl.string(y.t.ie0QdH),
       color: a.zxk.Colors.RED,
-      onclick: () => P(m.NM.USER_BANNER_BLOCK_CONFIRM, m.NM.USER_BANNER_BLOCK_CANCEL)
+      onclick: () => S(m.NM.USER_BANNER_BLOCK_CONFIRM, m.NM.USER_BANNER_BLOCK_CANCEL)
     }]]
   })
 }

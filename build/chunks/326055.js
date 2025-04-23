@@ -31,7 +31,7 @@ function d(e) {
       }
       return o
     }(e, ["guildId", "powerup"]);
-  let [g, b] = o.useState(void 0), m = o.useMemo(() => {
+  let [b, g] = o.useState(void 0), m = o.useMemo(() => {
     switch (p.skuId) {
       case c.IN:
         return (0, n.jsx)(s.E, {
@@ -81,16 +81,16 @@ function d(e) {
             className: u.description,
             variant: "text-sm/normal",
             children: p.description
-          }), null != g && (0, n.jsx)(a.Text, {
+          }), null != b && (0, n.jsx)(a.Text, {
             className: u.error,
             color: "status-danger",
             variant: "text-sm/semibold",
-            children: g
+            children: b
           }), (0, n.jsx)(l.ZP, {
             className: u.footer,
             guildId: d,
             powerup: p,
-            onError: b
+            onError: g
           })]
         })]
       }), null != m && (0, n.jsx)("div", {

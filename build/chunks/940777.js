@@ -26,8 +26,8 @@ var r = n(200651),
   x = n(709054),
   S = n(853856),
   E = n(593214),
-  I = n(919755),
-  P = n(110977),
+  P = n(919755),
+  I = n(110977),
   w = n(603274),
   N = n(981631),
   Z = n(388032),
@@ -80,7 +80,7 @@ function D() {
     {
       badge: H,
       unread: z
-    } = (0, I.Z)(G),
+    } = (0, P.Z)(G),
     W = function(e) {
       let t = (0, a.e7)([C.Z], () => C.Z.getVoiceChannelId()),
         n = null != t && null != e[t],
@@ -125,7 +125,7 @@ function D() {
       className: T.pill
     }), (0, r.jsx)(w.Z, {
       onShow: q,
-      children: (0, r.jsx)(P.S, {
+      children: (0, r.jsx)(I.S, {
         children: (0, r.jsx)(c.aRk, {
           selected: K || F || k,
           upperBadge: W,

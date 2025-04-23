@@ -26,8 +26,8 @@ var r = n(200651),
   O = n(663924),
   E = n(533379),
   I = n(562129),
-  S = n(404295),
-  P = n(540059),
+  P = n(404295),
+  S = n(540059),
   Z = n(605236),
   N = n(819640),
   T = n(291407),
@@ -45,7 +45,7 @@ let B = i.forwardRef(function(e, t) {
     type: j,
     animateRef: O
   } = e, E = (0, s.e7)([x.Z], () => x.Z.shouldShowPopup() && x.Z.activeViewType() === j), {
-    badgeTreatment: S
+    badgeTreatment: P
   } = f.Y.useExperiment({
     location: "ChannelAppLauncherButton"
   }, {
@@ -60,7 +60,7 @@ let B = i.forwardRef(function(e, t) {
   } = (0, u.B)(), {
     Component: B,
     play: G
-  } = (0, d.P)(), F = (0, P.Q3)("ChannelAppLauncherButton");
+  } = (0, d.P)(), F = (0, S.Q3)("ChannelAppLauncherButton");
   i.useImperativeHandle(O, () => ({
     animate: () => {
       T.onMouseEnter()
@@ -68,36 +68,36 @@ let B = i.forwardRef(function(e, t) {
   }), [T]);
   let H = (0, g.a)({
       surface: h.eR.TEXT_LAUNCHER,
-      skipFetchingShelf: S === f.O.NONE
+      skipFetchingShelf: P === f.O.NONE
     }),
     V = i.useCallback(() => {
       (0, _.yw)(R.rMx.APP_LAUNCHER_ENTRYPOINT_BUTTON_CLICKED, {
         source: v._b.TEXT,
-        badge_type: H ? S.valueOf() : null
+        badge_type: H ? P.valueOf() : null
       }), E ? C.yT(v.ti.DISMISSED) : ((0, Z.EW)(c.z.DESKTOP_APP_LAUNCHER_ONBOARDING, {
         dismissAction: M.L.TAKE_ACTION
       }), C.__(v._b.TEXT, j), m.ux()), A()
-    }, [E, j, A, H, S]);
+    }, [E, j, A, H, P]);
   i.useEffect(() => {
     let e = setTimeout(() => {
-      S !== f.O.NONE && H && (U(), G(), (0, y.h)({
+      P !== f.O.NONE && H && (U(), G(), (0, y.h)({
         type: a.ImpressionTypes.VIEW,
         name: a.ImpressionNames.APP_LAUNCHER_BADGE,
         properties: {
           source: v._b.TEXT,
-          badge_type: S.valueOf()
+          badge_type: P.valueOf()
         }
       }))
     }, 1e3);
     return () => clearTimeout(e)
-  }, [U, G, S, H]);
+  }, [U, G, P, H]);
   let z = i.useMemo(() => {
     let e = (0, r.jsx)(N, {
       size: F ? "refresh_sm" : void 0,
       color: "currentColor"
     });
     if (!H) return e;
-    switch (S) {
+    switch (P) {
       case f.O.WORDLE_LOGO_ANIMATION:
         return (0, r.jsx)("div", {
           className: D.channelAppLauncherWordlePromo,
@@ -112,9 +112,9 @@ let B = i.forwardRef(function(e, t) {
       default:
         return e
     }
-  }, [N, B, S, F, H]);
+  }, [N, B, P, F, H]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [H && S === f.O.GLOWING_ANIMATION && (0, r.jsx)("div", {
+    children: [H && P === f.O.GLOWING_ANIMATION && (0, r.jsx)("div", {
       className: D.appLauncherGlow,
       children: (0, r.jsx)(w, {
         size: "custom",
@@ -124,7 +124,7 @@ let B = i.forwardRef(function(e, t) {
       })
     }), (0, r.jsxs)("div", {
       className: o()(D.buttonContainer, k.t4, {
-        [D.appLauncherCircleMask]: S === f.O.GLOWING_ANIMATION
+        [D.appLauncherCircleMask]: P === f.O.GLOWING_ANIMATION
       }),
       ref: t,
       children: [(0, r.jsx)(p.zxk, (n = function(e) {
@@ -173,7 +173,7 @@ let B = i.forwardRef(function(e, t) {
         return n
       })(Object(l)).forEach(function(e) {
         Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
-      }), n)), H && S === f.O.SIMPLE_BADGE && (0, r.jsx)(b.r, {
+      }), n)), H && P === f.O.SIMPLE_BADGE && (0, r.jsx)(b.r, {
         top: -1,
         right: -1,
         size: 7,
@@ -239,7 +239,7 @@ let F = i.memo(function(e) {
     chatInputType: n
   }), u = (0, w.Z)({
     type: n
-  }), d = (0, S.h9)(t.id), p = (0, s.e7)([x.Z], () => x.Z.appDMChannelsWithFailedLoads().has(t.id)), {
+  }), d = (0, P.h9)(t.id), p = (0, s.e7)([x.Z], () => x.Z.appDMChannelsWithFailedLoads().has(t.id)), {
     visible: h
   } = (0, A.xL)();
   return c ? (0, r.jsxs)("div", {

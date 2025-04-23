@@ -9,8 +9,8 @@ var r = t(200651),
   a = t(793030),
   l = t(481060),
   c = t(808189),
-  d = t(477415),
-  u = t(690786),
+  u = t(477415),
+  d = t(690786),
   p = t(838968),
   m = t(262212),
   x = t(279604),
@@ -20,7 +20,7 @@ var r = t(200651),
   g = t(568413),
   j = t(117172);
 
-function h(e) {
+function b(e) {
   let n, {
     active: t,
     nextActive: i,
@@ -42,7 +42,7 @@ function h(e) {
   })
 }
 
-function b(e) {
+function h(e) {
   let {
     index: n
   } = e, t = i.useMemo(() => {
@@ -82,16 +82,16 @@ function C(e) {
       powerup: s,
       nextPowerup: l
     } = e,
-    c = (0, d.Z)(t, s),
-    _ = (0, d.Z)(t, l),
-    f = null != (0, u.Z)(t, s) || c,
-    v = null != (0, u.Z)(t, l) || _,
+    c = (0, u.Z)(t, s),
+    _ = (0, u.Z)(t, l),
+    f = null != (0, d.Z)(t, s) || c,
+    v = null != (0, d.Z)(t, l) || _,
     [C, N] = i.useState(void 0);
   return (0, x.KT)(C), n = 0 === o ? "start" : null == l ? "end" : "middle", (0, r.jsxs)(p.Z, {
     guildId: t,
     powerup: s,
     className: g.card,
-    children: [(0, r.jsx)(h, {
+    children: [(0, r.jsx)(b, {
       position: n,
       active: f,
       nextActive: null != l ? v : void 0
@@ -100,7 +100,7 @@ function C(e) {
       children: [(0, r.jsx)(a.X6, {
         variant: "heading-md/bold",
         children: s.title
-      }), (0, r.jsx)(b, {
+      }), (0, r.jsx)(h, {
         index: o
       }), !c && (0, r.jsx)(p.u, {
         className: g.footer,

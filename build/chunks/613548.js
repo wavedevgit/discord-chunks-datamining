@@ -26,8 +26,8 @@ var r = n(200651),
   O = n(221241),
   E = n(44136),
   I = n(651183),
-  S = n(853476),
-  P = n(618158),
+  P = n(853476),
+  S = n(618158),
   Z = n(390322),
   N = n(616286),
   T = n(961048),
@@ -145,7 +145,7 @@ function Q(e) {
   }), eu = (0, b.Q3)("ChannelCallHeaderToolbar"), {
     preventIdle: ed,
     allowIdle: ep
-  } = (0, P.Y)("popup"), eh = [];
+  } = (0, S.Y)("popup"), eh = [];
   if (ei && !eo && !J) {
     let e = (null == et ? void 0 : et.type) === V.fO.STREAM ? (0, _.my)(et.id) : void 0,
       t = (null == et ? void 0 : et.type) === V.fO.ACTIVITY ? et.applicationId : void 0;
@@ -174,7 +174,7 @@ function Q(e) {
     participant: et,
     showQuality: !0,
     premiumIndicator: !1
-  }, "live-indicator"))), (null == et ? void 0 : et.type) === V.fO.USER && eh.push((0, r.jsx)(S.Z, {
+  }, "live-indicator"))), (null == et ? void 0 : et.type) === V.fO.USER && eh.push((0, r.jsx)(P.Z, {
     className: Y.button,
     userId: et.id
   }, "video-warning")), ee && !eo && eh.push((0, r.jsx)(u.yRy, {

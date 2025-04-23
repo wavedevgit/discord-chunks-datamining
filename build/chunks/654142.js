@@ -80,8 +80,8 @@ let y = i.memo(function(e) {
       r = [];
     for (let e of t)(e.length < n || 0 === r.length) && (r.push(e), n -= e.length);
     return "".concat(r.join(", ")).concat(r.length < t.length ? ", ..." : "")
-  }(t), I = (0, f.Z)(t), {
-    mentionCount: P,
+  }(t), P = (0, f.Z)(t), {
+    mentionCount: I,
     isMentionLowImportance: w,
     unread: N
   } = (0, l.cj)([u.default], () => ({
@@ -99,18 +99,18 @@ let y = i.memo(function(e) {
         folderId: _,
         folderName: O,
         folderColor: v,
-        unread: N || P > 0
+        unread: N || I > 0
       }))
     })
-  }, [_, O, v, N, P]);
+  }, [_, O, v, N, I]);
   return (0, r.jsx)(p.Z, b(m({}, y), {
     folderNode: t,
     expanded: S,
     selected: null != x && j.includes(x),
-    mentionCount: P,
+    mentionCount: I,
     isMentionLowImportance: w,
     unread: N,
-    mediaState: I,
+    mediaState: P,
     defaultFolderName: E,
     onExpandCollapse: Z,
     onContextMenu: T

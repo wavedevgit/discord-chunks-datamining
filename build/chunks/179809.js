@@ -1,6 +1,6 @@
 /** Chunk was on 95124 **/
 n.d(t, {
-  Z: () => P
+  Z: () => I
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -26,8 +26,8 @@ var r = n(200651),
   x = n(728492),
   S = n(335426);
 let E = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
-  I = (0, a.animated)(d.Kqy),
-  P = i.memo(function(e) {
+  P = (0, a.animated)(d.Kqy),
+  I = i.memo(function(e) {
     let {
       folderNode: t,
       setNodeRef: n,
@@ -35,7 +35,7 @@ let E = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
       expanded: a,
       mediaState: u,
       mentionCount: g = 0,
-      isMentionLowImportance: P,
+      isMentionLowImportance: I,
       unread: w = !1,
       defaultFolderName: N,
       useCircleMask: Z = !1,
@@ -124,7 +124,7 @@ let E = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
             sorting: A,
             mediaState: u,
             mentionCount: g,
-            isMentionLowImportance: P,
+            isMentionLowImportance: I,
             tooltipName: et,
             folderGroupId: er,
             onClick: L,
@@ -157,7 +157,7 @@ let E = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
         let {
           key: l
         } = i;
-        return n && (0, r.jsx)(I, {
+        return n && (0, r.jsx)(P, {
           as: "ul",
           gap: "xs",
           id: er,

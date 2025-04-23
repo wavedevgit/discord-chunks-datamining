@@ -1,6 +1,6 @@
 /** Chunk was on 95124 **/
 n.d(t, {
-  E: () => P,
+  E: () => I,
   Z: () => w
 }), n(388685), n(539854);
 var r, i = n(200651),
@@ -145,7 +145,7 @@ class E extends l.PureComponent {
     })
   }
 }
-class I extends(r = l.PureComponent) {
+class P extends(r = l.PureComponent) {
   componentWillAppear(e) {
     this.state.animationScale.setValue(1), e()
   }
@@ -229,7 +229,7 @@ class I extends(r = l.PureComponent) {
   }
 }
 
-function P(e, t) {
+function I(e, t) {
   return e.reduce((e, n) => {
     let {
       applicationId: r,
@@ -238,12 +238,12 @@ function P(e, t) {
     return null != l && e.push(l), e
   }, [])
 }
-j(I, "defaultProps", {
+j(P, "defaultProps", {
   strokeSize: h._3P.StrokeSizes.MEDIUM
 });
 let w = c.ZP.connectStores([b.Z, m.Z, p.Z], () => {
   let e = b.Z.activeItems,
-    t = P(e, m.Z),
+    t = I(e, m.Z),
     {
       total: n,
       progress: r
@@ -274,6 +274,6 @@ let w = c.ZP.connectStores([b.Z, m.Z, p.Z], () => {
   }(e, ["determineOwnVisibility"]);
   return t ? (0, i.jsx)(d.W, {
     component: l.Fragment,
-    children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(I, x({}, n)) : null
-  }) : (0, i.jsx)(I, x({}, n))
+    children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(P, x({}, n)) : null
+  }) : (0, i.jsx)(P, x({}, n))
 })

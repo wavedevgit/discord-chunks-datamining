@@ -1,6 +1,6 @@
 /** Chunk was on 95124 **/
 n.d(t, {
-  Z: () => I
+  Z: () => P
 });
 var r = n(200651);
 n(192379);
@@ -28,12 +28,12 @@ var i = n(442837),
   S = n(388032),
   E = n(990252);
 
-function I(e) {
+function P(e) {
   var t;
   let {
     channel: n,
-    isChannelSelected: I,
-    isChannelCollapsed: P,
+    isChannelSelected: P,
+    isChannelCollapsed: I,
     voiceStates: w,
     enableConnectedUserLimit: N,
     enableActivities: Z,
@@ -46,7 +46,7 @@ function I(e) {
     channel: n,
     locked: G,
     video: B || V,
-    selected: I
+    selected: P
   }), H = (0, i.e7)([d.Z], () => d.Z.getNewThreadCount(n.guild_id, n.id)), z = (0, a.n2)(n.guild_id, n.id), W = (0, i.e7)([h.Z], () => {
     var e, t;
     return null != (t = null == (e = h.Z.getGuild(n.guild_id)) ? void 0 : e.hasFeature(j.oNc.COMMUNITY)) && t
@@ -80,7 +80,7 @@ function I(e) {
     userCount: Y,
     video: B || V,
     channel: n
-  }) : P && (0, m.a)(w) && W ? (0, r.jsx)(o.IGR, {
+  }) : I && (0, m.a)(w) && W ? (0, r.jsx)(o.IGR, {
     text: S.intl.string(S.t.dI3q4u),
     color: l.Z.unsafe_rawColors.RED_400.css
   }) : null != Z && Z && (0, b.u)(U) ? (0, r.jsx)(O.Z, {

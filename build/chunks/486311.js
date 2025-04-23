@@ -73,12 +73,12 @@ let v = {
         default:
           return (0, r.jsx)("div", {})
       }
-    }, [t, null == C ? void 0 : C.popout]), S = (0, a.s9z)(a.JQI), E = (0, s.e7)([u.Z], () => u.Z.hasLayers()), [I, P] = i.useState(null), w = null == I ? "animation" : "LOOP";
+    }, [t, null == C ? void 0 : C.popout]), S = (0, a.s9z)(a.JQI), E = (0, s.e7)([u.Z], () => u.Z.hasLayers()), [P, I] = i.useState(null), w = null == P ? "animation" : "LOOP";
     i.useEffect(() => {
-      (null == C ? void 0 : C.popout) == null && P(null)
+      (null == C ? void 0 : C.popout) == null && I(null)
     }, [null == C ? void 0 : C.popout]);
     let N = i.useCallback(e => {
-      P(e)
+      I(e)
     }, []);
     return (0, r.jsx)(a.yRy, {
       shouldShow: (null == C ? void 0 : C.popout) != null && !(S || E),

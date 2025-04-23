@@ -31,8 +31,8 @@ function S(e, t, n) {
 }
 let E = i.memo(function(e) {
   let t, l, u, E, {
-      stream: I,
-      canGoLive: P,
+      stream: P,
+      canGoLive: I,
       guildId: w,
       isStreaming: N,
       channel: Z,
@@ -69,8 +69,8 @@ let E = i.memo(function(e) {
       })
     }, [G]),
     H = i.useCallback(() => {
-      (0, b.Z)(I)
-    }, [I]),
+      (0, b.Z)(P)
+    }, [P]),
     z = i.useCallback(() => {
       let e = null != Z && (0, y.vd)(Z.type) ? Z : null,
         t = null != e ? e.getGuildId() : w;
@@ -118,7 +118,7 @@ let E = i.memo(function(e) {
         }
       })
     }, [Z, w, A, U, M]),
-    W = (null != A || null == R || (0, c.R)()) && (N || P) ? (N ? (t = !1, l = () => {
+    W = (null != A || null == R || (0, c.R)()) && (N || I) ? (N ? (t = !1, l = () => {
       H(), (0, p.v)(G, p.d.STREAM, !1)
     }, u = s.g5r, E = j.intl.string(j.t.S5anIS)) : T ? (t = !1, l = () => {
       z(), (0, p.v)(G, p.d.STREAM, !0)
@@ -143,7 +143,7 @@ let E = i.memo(function(e) {
       onClick: F(R.applicationId, R.location),
       icon: s.PBZ
     }),
-    q = null == I ? null : (0, r.jsx)(f.Z, {});
+    q = null == P ? null : (0, r.jsx)(f.Z, {});
   return null == W && null == Y && null == K ? null : (0, r.jsxs)("div", {
     className: x.actions,
     children: [W, Y, null != K ? K : q]

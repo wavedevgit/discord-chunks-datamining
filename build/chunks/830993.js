@@ -1,6 +1,6 @@
 /** Chunk was on 95124 **/
 n.d(t, {
-  Z: () => P
+  Z: () => I
 }), n(388685), n(539854);
 var r = n(200651),
   i = n(192379),
@@ -26,9 +26,9 @@ var r = n(200651),
   x = n(981631),
   S = n(388032),
   E = n(642317),
-  I = n(656855);
+  P = n(656855);
 
-function P(e) {
+function I(e) {
   var t, l;
   let {
     channel: o,
@@ -51,12 +51,12 @@ function P(e) {
   (0, c.$)(v);
   let C = (0, u.ZP)(o),
     j = Array.from((0, u.uF)(C).values()),
-    I = null != (t = null == g ? void 0 : g.filter(y.lm)) ? t : [],
-    P = e => t => [x.IIU.PLAYING, x.IIU.WATCHING].includes(t.type) && (null != t.assets || null != t.state || null != t.details || null != t.party) && (null == t.session_id || t.session_id === e.voiceState.sessionId) || t.type === x.IIU.LISTENING,
+    P = null != (t = null == g ? void 0 : g.filter(y.lm)) ? t : [],
+    I = e => t => [x.IIU.PLAYING, x.IIU.WATCHING].includes(t.type) && (null != t.assets || null != t.state || null != t.details || null != t.party) && (null == t.session_id || t.session_id === e.voiceState.sessionId) || t.type === x.IIU.LISTENING,
     N = (0, s.e7)([m.Z], () => {
       let e = {};
-      return I.forEach(t => {
-        let n = m.Z.findActivity(t.user.id, P(t));
+      return P.forEach(t => {
+        let n = m.Z.findActivity(t.user.id, I(t));
         if (null != n && !(0, h.Z)(n)) {
           var r, i, l, o;
           let s = "".concat(null != (i = n.application_id) ? i : "", ":").concat(null != (l = null == (r = n.party) ? void 0 : r.id) ? l : t.user.id),
@@ -67,7 +67,7 @@ function P(e) {
           a.members.push(t), (0, d.Z)(a.activity, x.xjy.JOIN) || (a.activity = n), e[s] = a
         }
       }), Object.values(e)
-    }, [I], s.pF);
+    }, [P], s.pF);
   return N.length + j.length === 0 ? null : (0, r.jsxs)(a.Ttm, {
     className: E.container,
     children: [(0, r.jsx)(w, {
@@ -162,7 +162,7 @@ function w(e) {
     selected: n
   }), u = (0, s.e7)([f.Z], () => f.Z.getGuild(t.guild_id));
   return null == (0, p.KS)(t, u) ? null : (0, r.jsxs)("div", {
-    className: o()(E.popoutHeaderContainer, I.popoutHeaderContainer),
+    className: o()(E.popoutHeaderContainer, P.popoutHeaderContainer),
     children: [(0, r.jsx)(v.Z, {
       channel: t
     }), c ? (0, r.jsx)(C.Z, {

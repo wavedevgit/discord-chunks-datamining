@@ -96,7 +96,7 @@ function E(e) {
   })
 }
 
-function I(e) {
+function P(e) {
   let {
     guild: t,
     controller: n,
@@ -140,7 +140,7 @@ function I(e) {
   })
 }
 
-function P() {
+function I() {
   return (0, r.jsx)(u.r7p, {
     size: "custom",
     color: "currentColor",
@@ -187,7 +187,7 @@ function Z(e) {
     children: [(0, r.jsx)(_.Z, {
       guild: i,
       isBannerVisible: n
-    }), i.id === v._ && (0, r.jsx)(P, {}), (0, r.jsx)(N, {
+    }), i.id === v._ && (0, r.jsx)(I, {}), (0, r.jsx)(N, {
       guild: i
     }), null != l && (0, r.jsx)(u.P3F, {
       className: j.headerButton,
@@ -276,7 +276,7 @@ function T(e) {
             children: [(0, r.jsx)(_.Z, {
               guild: l,
               isBannerVisible: t
-            }), l.id === v._ && (0, r.jsx)(P, {}), (0, r.jsx)(N, {
+            }), l.id === v._ && (0, r.jsx)(I, {}), (0, r.jsx)(N, {
               guild: l
             })]
           }), (0, r.jsx)("div", {
@@ -316,7 +316,7 @@ let A = i.memo(function(e) {
     "aria-controls": _,
     guild: v,
     guildBanner: C,
-    animationOverlayHeight: P,
+    animationOverlayHeight: I,
     children: w,
     headerClassName: N,
     communityInfoVisible: A,
@@ -382,7 +382,7 @@ let A = i.memo(function(e) {
             })) : (0, r.jsx)(Z, S(x({}, Q), {
               children: w
             }))
-          }), M && (0, r.jsx)(I, {
+          }), M && (0, r.jsx)(P, {
             guild: v,
             controller: n,
             hasBanner: null != C,
@@ -404,7 +404,7 @@ let A = i.memo(function(e) {
         },
         onMouseLeave: () => V(!1),
         style: {
-          height: P
+          height: I
         }
       }) : null]
     })

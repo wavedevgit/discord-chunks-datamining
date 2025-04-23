@@ -38,7 +38,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,7 +51,7 @@ function I(e) {
   return e
 }
 
-function P(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -170,7 +170,7 @@ function A(e) {
         let {
           default: r
         } = await Promise.all([n.e("7654"), n.e("17439")]).then(n.bind(n, 560114));
-        return n => (0, i.jsx)(r, P(I({}, n), {
+        return n => (0, i.jsx)(r, I(P({}, n), {
           guild: C,
           channel: t,
           streamUserId: 1 === e.length ? e[0].ownerId : null,
@@ -197,7 +197,7 @@ function A(e) {
     })
   })), (0, i.jsx)(c.ua7, {
     text: T,
-    children: e => (0, i.jsx)(c.P3F, P(I({
+    children: e => (0, i.jsx)(c.P3F, I(P({
       className: s()(S.iconItem, f ? S.alwaysShown : void 0, b ? S.iconWithChannelInfo : S.iconNoChannelInfo)
     }, e), {
       onClick: R,
@@ -216,7 +216,7 @@ function R(e) {
   };
   return (0, i.jsx)(c.ua7, {
     text: x.intl.string(x.t.ROh4T0),
-    children: e => (0, i.jsx)(c.P3F, P(I({
+    children: e => (0, i.jsx)(c.P3F, I(P({
       className: S.iconItem
     }, e), {
       onClick: n,
@@ -240,7 +240,7 @@ function D(e) {
   };
   return (0, i.jsx)(c.ua7, {
     text: x.intl.string(x.t["N2c/Ul"]),
-    children: e => (0, i.jsx)(c.P3F, P(I({
+    children: e => (0, i.jsx)(c.P3F, I(P({
       className: S.iconItem
     }, e), {
       onClick: n,
@@ -258,21 +258,21 @@ class L extends(r = l.PureComponent) {
     let {
       onContextMenu: t
     } = e;
-    return (0, i.jsx)(Z, P(I({}, this.props), {
+    return (0, i.jsx)(Z, I(P({}, this.props), {
       onContextMenu: t
     }))
   }
   renderEditButton() {
-    return (0, i.jsx)(T, I({}, this.props))
+    return (0, i.jsx)(T, P({}, this.props))
   }
   renderInviteButton() {
-    return (0, i.jsx)(A, I({}, this.props))
+    return (0, i.jsx)(A, P({}, this.props))
   }
   renderRemoveSuggestionButton() {
-    return (0, i.jsx)(R, I({}, this.props))
+    return (0, i.jsx)(R, P({}, this.props))
   }
   renderAcceptSuggestionButton() {
-    return (0, i.jsx)(D, I({}, this.props))
+    return (0, i.jsx)(D, P({}, this.props))
   }
   getClassName() {
     let {

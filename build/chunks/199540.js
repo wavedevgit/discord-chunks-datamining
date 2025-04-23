@@ -63,9 +63,9 @@ function S(e) {
     b = f.map(e => e.id),
     [_, j] = i.useState(!1),
     [S, E] = i.useState(c),
-    I = u ? c ? 22 : -11 : c ? 0 : -C,
-    P = (0, d.q_F)({
-      transform: "translate3d(0, ".concat(I, "px, 0)"),
+    P = u ? c ? 22 : -11 : c ? 0 : -C,
+    I = (0, d.q_F)({
+      transform: "translate3d(0, ".concat(P, "px, 0)"),
       config: {
         duration: v
       },
@@ -76,7 +76,7 @@ function S(e) {
         j(!1), E(c)
       }
     }, "animate-always"),
-    w = _ ? P : void 0;
+    w = _ ? I : void 0;
   (_ || S) && (t = (0, r.jsx)(s.animated.div, {
     style: w,
     className: O.expandedFolderIconWrapper,
@@ -124,9 +124,9 @@ function E(e) {
     onClick: j,
     onContextMenu: x,
     onHoverChange: E,
-    onKeyDown: I,
+    onKeyDown: P,
     treeItemProps: {
-      onFocus: P
+      onFocus: I
     },
     "aria-setsize": w,
     "aria-posinset": N
@@ -186,8 +186,8 @@ function E(e) {
       onContextMenu: x,
       onMouseEnter: R,
       onMouseLeave: D,
-      onKeyDown: I,
-      onFocus: P,
+      onKeyDown: P,
+      onFocus: I,
       "aria-expanded": a,
       "aria-owns": y,
       focusProps: {

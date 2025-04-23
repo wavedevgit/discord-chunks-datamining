@@ -41,13 +41,13 @@ let C = (e, t) => {
       children: t,
       channelId: n,
       selectedChannelId: S
-    } = e, E = (0, a.wE)(o.z.CHAT_WALLPAPERS_PICKER_COACHMARK), I = (0, l.e7)([d.Z], () => d.Z.getLayers().includes(m.S9g.USER_SETTINGS)), P = S === n, {
+    } = e, E = (0, a.wE)(o.z.CHAT_WALLPAPERS_PICKER_COACHMARK), P = (0, l.e7)([d.Z], () => d.Z.getLayers().includes(m.S9g.USER_SETTINGS)), I = S === n, {
       canAccessPicker: w,
       entryPoint: N
     } = (0, p.m)({
       location: "ChatWallpaperDMListCoachmark",
       selectedChannelId: S
-    }), Z = N === h.FN.CONTEXT_MENU, [T, A] = (0, c.US)(E && Z && P && w && !I ? [o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK] : []), R = (0, u.m)(y.p9.TIER_2), D = (0, f.Z)(n), L = T === o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK, k = (0, i.useRef)(null), M = (0, i.useRef)(null), [U, G] = (0, i.useState)(g.U.TOP);
+    }), Z = N === h.FN.CONTEXT_MENU, [T, A] = (0, c.US)(E && Z && I && w && !P ? [o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK] : []), R = (0, u.m)(y.p9.TIER_2), D = (0, f.Z)(n), L = T === o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK, k = (0, i.useRef)(null), M = (0, i.useRef)(null), [U, G] = (0, i.useState)(g.U.TOP);
     if ((0, i.useLayoutEffect)(() => {
         if (null === k.current) return;
         let e = () => {

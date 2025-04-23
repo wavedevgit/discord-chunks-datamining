@@ -25,8 +25,8 @@ var r, i = n(200651),
   x = n(944486),
   S = n(938475),
   E = n(483360),
-  I = n(585483),
-  P = n(63063),
+  P = n(585483),
+  I = n(63063),
   w = n(51596),
   N = n(823385),
   Z = n(415795),
@@ -81,7 +81,7 @@ let G = {
     }), (0, i.jsx)("div", {
       className: L.emptyStateCTA,
       children: (0, i.jsx)(u.eee, {
-        href: P.Z.getArticleURL(R.BhN.QUICK_SWITCHER_TUTORIAL),
+        href: I.Z.getArticleURL(R.BhN.QUICK_SWITCHER_TUTORIAL),
         children: D.intl.string(D.t["4iPfEB"])
       })
     })]
@@ -237,7 +237,7 @@ class q extends l.PureComponent {
     })
   }
   focusNode(e) {
-    I.S.dispatch(R.CkL.QUICKSWITCHER_RESULT_FOCUS, {
+    P.S.dispatch(R.CkL.QUICKSWITCHER_RESULT_FOCUS, {
       node: e
     })
   }
@@ -255,7 +255,7 @@ class q extends l.PureComponent {
         textChannelSymbolHook: (e, t) => K(t, f.xQ.TEXT_CHANNEL, D.intl.string(D.t.wrwhub)),
         voiceChannelSymbolHook: (e, t) => K(t, f.xQ.VOICE_CHANNEL, D.intl.string(D.t["jz+hJi"])),
         guildSymbolHook: (e, t) => K(t, f.xQ.GUILD, D.intl.string(D.t.WuwCWl)),
-        helpdeskArticle: P.Z.getArticleURL(R.BhN.QUICK_SWITCHER_TUTORIAL)
+        helpdeskArticle: I.Z.getArticleURL(R.BhN.QUICK_SWITCHER_TUTORIAL)
       })
     })
   }

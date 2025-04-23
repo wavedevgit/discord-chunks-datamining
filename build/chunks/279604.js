@@ -83,7 +83,7 @@ function y(e, t) {
     }).finally(() => {
       O(!1)
     })
-  }, [e, t.skuId]), I = i.useCallback(e => {
+  }, [e, t.skuId]), P = i.useCallback(e => {
     if (e.stopPropagation(), null != x) return S < t.cost ? void(0, a.u)({
       analyticsLocation: {
         page: f.ZY5.GUILD_POWERUPS_OVERVIEW,
@@ -115,12 +115,12 @@ function y(e, t) {
         }, n))
       })
     })
-  }, [E, t, S, y, x]), P = i.useCallback(e => (e.stopPropagation(), E(!1)), [E]);
+  }, [E, t, S, y, x]), I = i.useCallback(e => (e.stopPropagation(), E(!1)), [E]);
   return {
     isLoading: _,
     error: v,
-    onActivate: I,
-    onDeactivate: P,
+    onActivate: P,
+    onDeactivate: I,
     onShowDeactivate: i.useCallback(i => {
       i.stopPropagation(), (0, o.ZDy)(async () => {
         let {

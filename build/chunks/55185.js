@@ -159,7 +159,7 @@ function E(e) {
   })
 }
 
-function I(e) {
+function P(e) {
   let {
     closePopout: t
   } = e, n = p.G6.useSetting();
@@ -181,7 +181,7 @@ function I(e) {
   })
 }
 
-function P(e) {
+function I(e) {
   let {
     closePopout: t
   } = e, n = p.G6.useSetting();
@@ -284,11 +284,11 @@ function A(e) {
         closePopout: n
       });
     case 1:
-      return (0, i.jsx)(I, {
+      return (0, i.jsx)(P, {
         closePopout: n
       });
     case 2:
-      return (0, i.jsx)(P, {
+      return (0, i.jsx)(I, {
         closePopout: n
       });
     case 3:

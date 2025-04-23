@@ -10,8 +10,8 @@ var i = t(793030),
   a = t(678558),
   l = t(343649),
   c = t(430824),
-  d = t(63063),
-  u = t(317169),
+  u = t(63063),
+  d = t(317169),
   p = t(639660),
   m = t(767218),
   x = t(981631),
@@ -25,8 +25,8 @@ function g(e) {
   } = e, t = (0, o.e7)([c.Z], () => c.Z.getGuild(n)), {
     available: g,
     spent: j,
-    total: h
-  } = (0, u.Z)(n);
+    total: b
+  } = (0, d.Z)(n);
   if (null != t) return (0, r.jsxs)("div", {
     className: v.container,
     children: [(0, r.jsxs)("div", {
@@ -38,7 +38,7 @@ function g(e) {
         className: v.learnMore,
         variant: "text-xs/semibold",
         children: f.intl.format(_.default.fXE30d, {
-          helpDeskArticle: d.Z.getArticleURL(x.BhN.GUILD_BOOSTING_FAQ)
+          helpDeskArticle: u.Z.getArticleURL(x.BhN.GUILD_BOOSTING_FAQ)
         })
       })]
     }), (0, r.jsxs)("div", {
@@ -50,7 +50,7 @@ function g(e) {
         count: j,
         type: m.b.SPENT
       }), (0, r.jsx)(m.Z, {
-        count: h,
+        count: b,
         type: m.b.TOTAL
       })]
     }), (0, r.jsx)(a.Z, {

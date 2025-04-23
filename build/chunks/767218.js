@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 t.d(n, {
   Z: () => p,
-  b: () => u
+  b: () => d
 });
 var r, i = t(200651);
 t(192379);
@@ -10,8 +10,8 @@ var o = t(657707),
   a = t(692547),
   l = t(680278),
   c = t(388032),
-  d = t(154142),
-  u = ((r = {})[r.AVAILABLE = 0] = "AVAILABLE", r[r.SPENT = 1] = "SPENT", r[r.TOTAL = 2] = "TOTAL", r);
+  u = t(154142),
+  d = ((r = {})[r.AVAILABLE = 0] = "AVAILABLE", r[r.SPENT = 1] = "SPENT", r[r.TOTAL = 2] = "TOTAL", r);
 
 function p(e) {
   let {
@@ -19,9 +19,9 @@ function p(e) {
     type: t
   } = e;
   return (0, i.jsxs)("div", {
-    className: d.container,
+    className: u.container,
     children: [(0, i.jsxs)("div", {
-      className: d.headerContainer,
+      className: u.headerContainer,
       children: [(0, i.jsx)(o.$Eu, {
         size: "sm",
         color: 0 !== t ? a.Z.colors.HEADER_MUTED : a.Z.unsafe_rawColors.GUILD_BOOSTING_PINK

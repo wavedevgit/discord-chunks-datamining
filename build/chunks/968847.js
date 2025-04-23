@@ -30,8 +30,8 @@ let S = {
     topBar: S,
     bottomBar: S
   },
-  I = {},
-  P = {};
+  P = {},
+  I = {};
 
 function w(e) {
   let t = g.Z.getChannel(e);
@@ -56,7 +56,7 @@ function T(e) {
   var t, n, r;
   let {
     guildChannels: i
-  } = C.Z.getGuildWithoutChangingGuildActionRows(e), l = i.getChannels(null != (t = P[e]) ? t : []);
+  } = C.Z.getGuildWithoutChangingGuildActionRows(e), l = i.getChannels(null != (t = I[e]) ? t : []);
   if (null == l || 0 === l.length) return !1;
   let o = null,
     s = null,
@@ -113,7 +113,7 @@ function T(e) {
   });
   let R = null != T && (null == E || "mentions" !== E.mode && "mentions" === T.mode),
     D = null != E && ("mentions" === E.mode || !R);
-  return I[e] = {
+  return P[e] = {
     topBar: R && null != T ? T : S,
     bottomBar: D && null != E ? E : S
   }, !0
@@ -166,7 +166,7 @@ class U extends(r = c.ZP.Store) {
   }
   getUnreadStateForGuildId(e) {
     var t;
-    return null != (t = I[e]) ? t : E
+    return null != (t = P[e]) ? t : E
   }
 }
 o = "ChannelListUnreadsStore", (l = "displayName") in U ? Object.defineProperty(U, l, {
@@ -181,7 +181,7 @@ let G = new U(u.Z, {
       guildId: t,
       channelIds: n
     } = e, r = m.Z.getGuild(t);
-    return null != r && !!r.hasFeature(j.oNc.COMMUNITY) && null != n && !a().isEqual(P[t], n) && (P[t] = n, T(t))
+    return null != r && !!r.hasFeature(j.oNc.COMMUNITY) && null != n && !a().isEqual(I[t], n) && (I[t] = n, T(t))
   },
   BULK_ACK: function(e) {
     let {
@@ -224,7 +224,7 @@ let G = new U(u.Z, {
       voiceStates: t
     } = e, n = y.Z.getGuildId();
     if (null == n || !new Set(t.map(e => e.guildId)).has(n)) return !1;
-    let r = I[n];
+    let r = P[n];
     return null != r && "voice-channels" === r.bottomBar.mode && A(n)
   },
   USER_GUILD_SETTINGS_CHANNEL_UPDATE: M,

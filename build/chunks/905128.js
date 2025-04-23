@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => T
-}), n(388685);
+});
 var r = n(442837),
   i = n(570140);
 
@@ -46,49 +46,53 @@ function l(e, t) {
 }
 let c = 864e5,
   u = 36e5,
-  d = new Map,
+  d = {},
   f = {},
   _ = {},
   p = {},
   h = {};
 
 function m(e) {
-  return Array.from(e.values()).reduce((e, t) => {
+  return Object.values(e).reduce((e, t) => {
     var n, r, i;
     return e + (null != (i = null == (r = t.sku) || null == (n = r.powerup_metadata) ? void 0 : n.boost_price) ? i : 0)
   }, 0)
 }
 
 function g(e) {
-  return d.has(e) || d.set(e, {
-    powerups: new Map,
-    unlocked: new Map,
-    catalog: new Map,
+  return null == d[e] && (d[e] = {
+    allPowerups: {},
+    unlockedPowerups: {},
+    powerupCatalog: {},
     appliedBoosts: 0
-  }), d.get(e)
+  }), d[e]
 }
 
 function E(e) {
   let {
     guildId: t,
-    powerups: n,
-    catalog: r
-  } = e, i = g(t), a = new Map(d);
-  a.set(t, l(o({}, i), {
-    powerups: n,
-    catalog: r
-  })), d = a, f[t] = Date.now(), p[t] = !0
+    allPowerups: n,
+    powerupCatalog: r
+  } = e, i = g(t);
+  d = l(o({}, d), {
+    [t]: l(o({}, i), {
+      allPowerups: n,
+      powerupCatalog: r
+    })
+  }), f[t] = Date.now(), p[t] = !0
 }
 
 function b(e) {
   let {
     guildId: t,
-    unlocked: n
-  } = e, r = g(t), i = m(n), a = new Map(d);
-  a.set(t, l(o({}, r), {
-    unlocked: n,
-    appliedBoosts: i
-  })), d = a, _[t] = Date.now(), h[t] = !0
+    unlockedPowerups: n
+  } = e, r = g(t), i = m(n);
+  d = l(o({}, d), {
+    [t]: l(o({}, r), {
+      unlockedPowerups: n,
+      appliedBoosts: i
+    })
+  }), _[t] = Date.now(), h[t] = !0
 }
 
 function y(e, t) {
@@ -97,13 +101,14 @@ function y(e, t) {
     entitlements: r
   } = e, i = g(n);
   r.forEach(e => {
-    t ? i.unlocked.set(e.sku_id, e) : i.unlocked.delete(e.sku_id)
+    t ? i.unlockedPowerups[e.sku_id] = e : delete i.unlockedPowerups[e.sku_id]
   });
-  let a = m(i.unlocked),
-    s = new Map(d);
-  s.set(n, l(o({}, i), {
-    appliedBoosts: a
-  })), d = s
+  let a = m(i.unlockedPowerups);
+  d = l(o({}, d), {
+    [n]: l(o({}, i), {
+      appliedBoosts: a
+    })
+  })
 }
 
 function v(e) {
@@ -115,11 +120,11 @@ function O(e) {
 }
 
 function I() {
-  d = new Map, f = {}, _ = {}
+  d = {}, f = {}, _ = {}
 }
 class S extends r.ZP.Store {
   getStateForGuild(e) {
-    return null != e ? d.get(e) : void 0
+    return null != e ? d[e] : void 0
   }
   shouldFetchCatalogForGuild(e) {
     let t = f[e];

@@ -28,7 +28,7 @@ var i = n(120356),
   S = n(714509),
   E = n(375613);
 
-function I(e, t) {
+function P(e, t) {
   return 0 === t.length ? null : (0, r.jsxs)("div", {
     className: S.row,
     children: [(0, r.jsx)(e, {
@@ -42,7 +42,7 @@ function I(e, t) {
   })
 }
 
-function P() {
+function I() {
   let e = (0, a.Wu)([C.Z, b.Z], () => v.default.keys(C.Z.getFavoriteChannels()).map(e => b.Z.getChannel(e)).filter(O.lm)),
     t = e.map(e => e.id),
     n = e.filter(e => e.type === j.d4z.GUILD_VOICE),
@@ -74,9 +74,9 @@ function P() {
       }
       return n
     }, [t]),
-    P = (0, a.Wu)([y.default], () => E.map(e => y.default.getUser(e)), [E]),
+    I = (0, a.Wu)([y.default], () => E.map(e => y.default.getUser(e)), [E]),
     w = (0, a.Wu)([y.default], () => x.map(e => y.default.getUser(e)), [x]),
-    N = I(c.gj8, l.filter(e => !x.includes(e.id) && !E.includes(e.id))),
+    N = P(c.gj8, l.filter(e => !x.includes(e.id) && !E.includes(e.id))),
     Z = 0 === o.length ? null : (0, r.jsxs)("div", {
       className: S.row,
       children: [(0, r.jsx)(c.ewx, {
@@ -100,7 +100,7 @@ function P() {
         })]
       })]
     }),
-    T = I(c.hGI, w.filter(e => null != e && !E.includes(e.id))),
+    T = P(c.hGI, w.filter(e => null != e && !E.includes(e.id))),
     {
       enabled: A
     } = u.c.useExperiment({
@@ -108,7 +108,7 @@ function P() {
     }, {
       autoTrackExposure: !0
     }),
-    R = I(A ? c.iWm : c.nG3, P);
+    R = P(A ? c.iWm : c.nG3, I);
   return (0, r.jsxs)(r.Fragment, {
     children: [Z, N, T, R]
   })
@@ -122,7 +122,7 @@ function w() {
         className: l()(S.guildNameText, S.guildNameTextLimitedSize),
         children: x.intl.string(x.t.wMWycn)
       })
-    }), (0, r.jsx)(P, {})]
+    }), (0, r.jsx)(I, {})]
   })
 }
 
