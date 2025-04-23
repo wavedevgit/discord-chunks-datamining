@@ -221,8 +221,8 @@ let U = l.forwardRef(function(e, t) {
     mute: Y,
     serverMute: B,
     guildId: G,
-    nick: W,
-    isGuest: z,
+    nick: z,
+    isGuest: W,
     flipped: H,
     className: J,
     overlap: X,
@@ -271,7 +271,7 @@ let U = l.forwardRef(function(e, t) {
       null == U || U(e, Q)
     },
     onKeyDown: x,
-    "aria-label": null != (n = null != K ? K : W) ? n : Q.username,
+    "aria-label": null != (n = null != K ? K : z) ? n : Q.username,
     focusProps: {
       offset: {
         right: 4
@@ -304,7 +304,7 @@ let U = l.forwardRef(function(e, t) {
               [_.username]: !0,
               [_.usernameSpeaking]: !Y && !B && V
             }),
-            children: [null != W ? W : T.ZP.getName(Q), z ? (0, r.jsxs)("span", {
+            children: [null != z ? z : T.ZP.getName(Q), W ? (0, r.jsxs)("span", {
               className: _.guestSuffix,
               children: ["\xa0", D.intl.string(D.t["pFO/Pj"])]
             }) : ""]

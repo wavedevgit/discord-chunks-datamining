@@ -1,6 +1,6 @@
 /**
   Module ID: 44114
-  Original File Name: f280e5329ac4faef
+  Original File Name: 2b2edbf7adf0de5b
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -9022,12 +9022,15 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 
 .previewContainerParent__038c3 {
     background: var(--background-secondary);
-    margin-bottom: -12px;
+    border-top-left-radius: var(--radius-md);
+    margin-top: -8px;
+    overflow-y: clip;
     padding: var(--spacing-32);
     padding-bottom: 0
 }
 
 .previewContainer__038c3 {
+    margin-bottom: -8px;
     text-align: start;
     width: 240px
 }
@@ -18278,4 +18281,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=f280e5329ac4faef.css.map*/
+/*# sourceMappingURL=2b2edbf7adf0de5b.css.map*/

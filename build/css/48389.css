@@ -1,6 +1,6 @@
 /**
   Module ID: 48389
-  Original File Name: 76300784905cac2b
+  Original File Name: 48f4888e898288ac
 **/
 .header__6e6ad {
     align-items: center;
@@ -112,12 +112,15 @@
 
 .previewContainerParent__038c3 {
     background: var(--background-secondary);
-    margin-bottom: -12px;
+    border-top-left-radius: var(--radius-md);
+    margin-top: -8px;
+    overflow-y: clip;
     padding: var(--spacing-32);
     padding-bottom: 0
 }
 
 .previewContainer__038c3 {
+    margin-bottom: -8px;
     text-align: start;
     width: 240px
 }
@@ -281,4 +284,4 @@
     text-transform: none
 }
 
-/*# sourceMappingURL=76300784905cac2b.css.map*/
+/*# sourceMappingURL=48f4888e898288ac.css.map*/

@@ -71,10 +71,10 @@ let k = e => {
     } = e, Y = (0, s.e7)([b.default], () => {
       let e = b.default.getCurrentUser();
       return a()(null != e, "UserActivityActions: currentUser cannot be undefined"), e
-    }), B = V === S.Y.STREAM_PREVIEW || null != o, G = (0, y.Z)(t), W = G || B ? f.Z.Direction.HORIZONTAL : f.Z.Direction.VERTICAL;
+    }), B = V === S.Y.STREAM_PREVIEW || null != o, G = (0, y.Z)(t), z = G || B ? f.Z.Direction.HORIZONTAL : f.Z.Direction.VERTICAL;
     if ((null == t ? void 0 : t.application_id) === w.bO) {
-      var z, H;
-      return z = function(e) {
+      var W, H;
+      return W = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -96,7 +96,7 @@ let k = e => {
         metadata: {
           button_urls: [w.U8]
         }
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(z, Object.getOwnPropertyDescriptors(H)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(W, Object.getOwnPropertyDescriptors(H)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
@@ -104,8 +104,8 @@ let k = e => {
         }
         return n
       })(Object(H)).forEach(function(e) {
-        Object.defineProperty(z, e, Object.getOwnPropertyDescriptor(H, e))
-      }), t = z, (0, r.jsx)(k, {
+        Object.defineProperty(W, e, Object.getOwnPropertyDescriptor(H, e))
+      }), t = W, (0, r.jsx)(k, {
         user: l,
         color: U,
         look: R,
@@ -113,11 +113,11 @@ let k = e => {
         onAction: F
       })
     }
-    let J = W === f.Z.Direction.VERTICAL;
+    let J = z === f.Z.Direction.VERTICAL;
     return (0, r.jsx)(f.Z, {
       grow: 0,
       align: f.Z.Align.STRETCH,
-      direction: W,
+      direction: z,
       wrap: J ? f.Z.Wrap.WRAP : f.Z.Wrap.NO_WRAP,
       className: i()(u, L.buttonsWrapper, J ? L.vertical : L.horizontal),
       children: (() => {

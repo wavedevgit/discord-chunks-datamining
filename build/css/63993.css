@@ -1,6 +1,6 @@
 /**
   Module ID: 63993
-  Original File Name: 2c4bcbaaefff48e5
+  Original File Name: a0c3a8e61909ff42
 **/
 .modal__038c3 {
     width: 650px
@@ -13,12 +13,15 @@
 
 .previewContainerParent__038c3 {
     background: var(--background-secondary);
-    margin-bottom: -12px;
+    border-top-left-radius: var(--radius-md);
+    margin-top: -8px;
+    overflow-y: clip;
     padding: var(--spacing-32);
     padding-bottom: 0
 }
 
 .previewContainer__038c3 {
+    margin-bottom: -8px;
     text-align: start;
     width: 240px
 }
@@ -355,4 +358,4 @@
     margin: 0
 }
 
-/*# sourceMappingURL=2c4bcbaaefff48e5.css.map*/
+/*# sourceMappingURL=a0c3a8e61909ff42.css.map*/

@@ -67,7 +67,7 @@ let G = {
     VoiceChannel: [108, 60],
     ActivityFeed: [900, 500]
   },
-  W = (0, f.Z)(class extends o.PureComponent {
+  z = (0, f.Z)(class extends o.PureComponent {
     render() {
       return (0, i.jsx)("div", {
         className: V.timestamp,
@@ -76,7 +76,7 @@ let G = {
     }
   });
 
-function z(e) {
+function W(e) {
   let {
     activity: t
   } = e, n = (0, m.ZP)(), r = function(e) {
@@ -390,7 +390,7 @@ class H extends(r = o.PureComponent) {
     let {
       timestamps: n
     } = e;
-    return null == n ? null : (0, A.Z)(e) ? (0, i.jsx)(W, {
+    return null == n ? null : (0, A.Z)(e) ? (0, i.jsx)(z, {
       timestamps: n
     }) : (0, i.jsx)(P.ZP, {
       start: n.start,
@@ -493,7 +493,7 @@ class H extends(r = o.PureComponent) {
             }), y, d ? null : S, u ? v : null]
           })]
         })
-      }), d ? v : null, (0, i.jsx)(z, {
+      }), d ? v : null, (0, i.jsx)(W, {
         activity: c
       })]
     })
