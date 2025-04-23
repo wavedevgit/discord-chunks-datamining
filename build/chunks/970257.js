@@ -1,7 +1,8 @@
 /** Chunk was on 37220 **/
 n.d(t, {
-  a4: () => s,
-  vc: () => c
+  Fi: () => s,
+  a4: () => c,
+  vc: () => u
 });
 var i = n(592125),
   r = n(650774),
@@ -10,16 +11,18 @@ var i = n(592125),
   o = n(981631);
 
 function s(e) {
-  return null != e && function(e) {
-    if (null == e) return !1;
-    let t = e.id,
-      n = a.default.getCurrentUser();
-    return null != n && n.id !== t && !0 !== e.system
-  }(e.author)
+  if (null == e) return !1;
+  let t = e.id,
+    n = a.default.getCurrentUser();
+  return null != n && n.id !== t && !0 !== e.system
 }
 
 function c(e) {
-  return null != e && s(e) && function(e) {
+  return null != e && s(e.author)
+}
+
+function u(e) {
+  return null != e && c(e) && function(e) {
     let t = i.Z.getChannel(e);
     if (null == t) return !1;
     if (t.type === o.d4z.DM || t.type === o.d4z.GROUP_DM) return !0;

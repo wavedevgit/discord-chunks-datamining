@@ -6,11 +6,11 @@ n.d(t, {
   HH: () => D,
   Hd: () => I,
   Xl: () => M,
-  dF: () => L,
-  eM: () => R,
+  dF: () => R,
+  eM: () => L,
   fB: () => Z,
-  gK: () => w,
-  mG: () => A,
+  gK: () => A,
+  mG: () => w,
   qe: () => C,
   rY: () => T,
   ts: () => k,
@@ -29,8 +29,8 @@ var u = n(623292),
   f = n(488131),
   g = n(314897),
   m = n(592125),
-  b = n(626135),
-  h = n(934415),
+  h = n(626135),
+  b = n(934415),
   p = n(572004),
   O = n(585483),
   y = n(709054),
@@ -49,10 +49,10 @@ function _(e, t, n) {
 }
 
 function Z(e, t) {
-  b.default.track(S.rMx.MESSAGE_LINK_COPIED, {
+  h.default.track(S.rMx.MESSAGE_LINK_COPIED, {
     message_id: t.id,
     channel: t.channel_id
-  }), (0, p.JG)((0, h.wR)(e.guild_id, e.id, t.id))
+  }), (0, p.JG)((0, b.wR)(e.guild_id, e.id, t.id))
 }
 
 function N(e, t, n) {
@@ -76,7 +76,7 @@ function M(e, t) {
   (0, a.Z)(e.id, t.id)
 }
 
-function A(e, t) {
+function w(e, t) {
   (0, j.Z)(e, t, void 0, E.Z.getOptions(t.id))
 }
 
@@ -91,7 +91,7 @@ function D(e, t, n) {
   }), O.S.dispatchToLastSubscribed(S.CkL.TEXTAREA_FOCUS)
 }
 
-function w(e, t) {
+function A(e, t) {
   (0, f.R6)(e, t, "Message")
 }
 
@@ -100,14 +100,14 @@ function C(e, t) {
   null != n && (0, f.ok)(n)
 }
 
-function L(e, t) {
+function R(e, t) {
   (0, d.z)({
     channelId: e.id,
     messageId: t.id
   })
 }
 
-function R(e, t) {
+function L(e, t) {
   (0, d.x)({
     channelId: e.id,
     messageId: t.id

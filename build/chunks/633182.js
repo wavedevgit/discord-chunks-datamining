@@ -1,48 +1,49 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  o: () => c
+  o: () => u
 });
 var r = n(592125),
   i = n(594174),
   a = n(5192),
   o = n(51144),
   s = n(484710),
-  l = n(388032);
+  l = n(388032),
+  c = n(776571);
 
-function c(e, t, n) {
-  var c;
-  let u = i.default.getUser(t),
-    d = r.Z.getChannel(n),
-    f = null != (c = a.ZP.getName(null == d ? void 0 : d.guild_id, null == d ? void 0 : d.id, u)) ? c : o.ZP.getGlobalName(u);
+function u(e, t, n) {
+  var u;
+  let d = i.default.getUser(t),
+    f = r.Z.getChannel(n),
+    _ = null != (u = a.ZP.getName(null == f ? void 0 : f.guild_id, null == f ? void 0 : f.id, d)) ? u : o.ZP.getGlobalName(d);
   switch (e) {
     case s.w.IGNORE_SUCCESS:
       return l.intl.formatToPlainString(l.t["+joqrK"], {
-        username: f
+        username: _
       });
     case s.w.UNIGNORE_SUCCESS:
       return l.intl.formatToPlainString(l.t.THExKS, {
-        username: f
+        username: _
       });
     case s.w.BLOCK_SUCCESS:
       return l.intl.formatToPlainString(l.t.XXPrIi, {
-        username: f
+        username: _
       });
     case s.w.UNBLOCK_SUCCESS:
       return l.intl.formatToPlainString(l.t.uExcGR, {
-        username: f
+        username: _
       });
     case s.w.MUTE_SUCCESS:
       return l.intl.formatToPlainString(l.t.X4NtYW, {
-        username: f
+        username: _
       });
     case s.w.UNMUTE_SUCCESS:
       return l.intl.formatToPlainString(l.t.tRaBfX, {
-        username: f
+        username: _
       });
     case s.w.REPORT_SUCCESS:
       return l.intl.formatToPlainString(l.t.FOptFR, {
-        username: f
+        username: _
       });
     case s.w.TIGGER_PAWTECT_ERROR:
       return l.intl.string(l.t.c6kn6O);
@@ -50,6 +51,8 @@ function c(e, t, n) {
       return l.intl.string(l.t.EnTLDg);
     case s.w.GENERIC_ERROR:
       return l.intl.string(l.t.zBpoc3);
+    case s.w.REPORT_TO_MOD_SUCCESS:
+      return l.intl.string(c.default.iBypeX);
     default:
       return l.intl.string(l.t["+c5xtb"])
   }
