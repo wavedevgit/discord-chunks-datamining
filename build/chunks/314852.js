@@ -190,10 +190,9 @@ function I(e) {
 
 function S(e) {
   let {
-    guildId: t,
-    channelType: n
+    channel: t
   } = e;
-  n === s.d4z.GUILD_ANNOUNCEMENT && _.delete(t)
+  t.type === s.d4z.GUILD_ANNOUNCEMENT && null != t.guild_id && _.delete(t.guild_id)
 }
 
 function T(e) {
@@ -253,7 +252,7 @@ let C = new N(a.Z, {
   MEMBER_VERIFICATION_FORM_UPDATE: O,
   INVITE_RESOLVE_SUCCESS: I,
   INSTANT_INVITE_CREATE_SUCCESS: I,
-  CREATE_CHANNEL_MODAL_SUBMIT: S,
+  CHANNEL_CREATE: S,
   GUILD_SETTINGS_SET_WIDGET: T,
   GUILD_UPDATE: A,
   GUILD_PROFILE_UPDATE_VISIBILITY: E,
