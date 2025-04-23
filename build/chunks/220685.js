@@ -10,13 +10,13 @@ var r = n(200651),
   a = n(512722),
   o = n.n(a),
   c = n(392711),
-  d = n.n(c),
-  u = n(442837),
+  u = n.n(c),
+  d = n(442837),
   m = n(692547),
   g = n(215569),
   p = n(481060),
-  h = n(484614),
-  f = n(852860),
+  f = n(484614),
+  h = n(852860),
   x = n(782568),
   b = n(367907),
   j = n(674180),
@@ -36,12 +36,12 @@ let E = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
       guild: l,
       canEnable: a
     } = e, c = (0, C.YB)(l.id), {
-      loading: u,
+      loading: d,
       updateSubscriptionsSettings: _
-    } = (0, C.QV)(), [O, P] = i.useState(l.hasFeature(y.oNc.CREATOR_STORE_PAGE)), [w, R] = i.useState(null != (t = null == c ? void 0 : c.store_page_primary_color) ? t : T), [Z, D] = i.useState(null == c ? void 0 : c.store_page_trailer_url), A = null == Z || null != Z.match(S), [k, L] = i.useState(null != (n = null == c ? void 0 : c.store_page_show_subscriber_count) && n), M = i.useRef(null == c ? void 0 : c.store_page_slug).current, G = O !== l.hasFeature(y.oNc.CREATOR_STORE_PAGE) || (null == c ? void 0 : c.store_page_primary_color) == null && w !== T || (null == c ? void 0 : c.store_page_primary_color) != null && w !== (null == c ? void 0 : c.store_page_primary_color) || Z !== (null == c ? void 0 : c.store_page_trailer_url) || null != k && k !== (null == c ? void 0 : c.store_page_show_subscriber_count), U = async () => {
+    } = (0, C.QV)(), [O, P] = i.useState(l.hasFeature(y.oNc.CREATOR_STORE_PAGE)), [w, R] = i.useState(null != (t = null == c ? void 0 : c.store_page_primary_color) ? t : T), [Z, D] = i.useState(null == c ? void 0 : c.store_page_trailer_url), k = null == Z || null != Z.match(S), [A, L] = i.useState(null != (n = null == c ? void 0 : c.store_page_show_subscriber_count) && n), M = i.useRef(null == c ? void 0 : c.store_page_slug).current, G = O !== l.hasFeature(y.oNc.CREATOR_STORE_PAGE) || (null == c ? void 0 : c.store_page_primary_color) == null && w !== T || (null == c ? void 0 : c.store_page_primary_color) != null && w !== (null == c ? void 0 : c.store_page_primary_color) || Z !== (null == c ? void 0 : c.store_page_trailer_url) || null != A && A !== (null == c ? void 0 : c.store_page_show_subscriber_count), U = async () => {
       o()(null != c, "Settings must be defined");
       let e = {};
-      O !== l.hasFeature(y.oNc.CREATOR_STORE_PAGE) && (e.store_page_enabled = O), ((null == c ? void 0 : c.store_page_primary_color) == null && w !== T || (null == c ? void 0 : c.store_page_primary_color) != null && w !== (null == c ? void 0 : c.store_page_primary_color)) && (e.store_page_primary_color = w), Z !== (null == c ? void 0 : c.store_page_trailer_url) && (e.store_page_trailer_url = Z), k !== (null == c ? void 0 : c.store_page_show_subscriber_count) && (e.store_page_show_subscriber_count = k), !d().isEmpty(e) && (await _(l.id, e), "store_page_enabled" in e && v.default.track(y.rMx.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_TOGGLED, function(e) {
+      O !== l.hasFeature(y.oNc.CREATOR_STORE_PAGE) && (e.store_page_enabled = O), ((null == c ? void 0 : c.store_page_primary_color) == null && w !== T || (null == c ? void 0 : c.store_page_primary_color) != null && w !== (null == c ? void 0 : c.store_page_primary_color)) && (e.store_page_primary_color = w), Z !== (null == c ? void 0 : c.store_page_trailer_url) && (e.store_page_trailer_url = Z), A !== (null == c ? void 0 : c.store_page_show_subscriber_count) && (e.store_page_show_subscriber_count = A), !u().isEmpty(e) && (await _(l.id, e), "store_page_enabled" in e && v.default.track(y.rMx.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_TOGGLED, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -63,7 +63,7 @@ let E = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
       }, (0, b.hH)(l.id))))
     }, B = y.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(M), F = null != Z && Z === (null == c ? void 0 : c.store_page_trailer_url), {
       shouldRestrictUpdatingCreatorMonetizationSettings: z
-    } = (0, j.gX)(l.id), H = z || !A;
+    } = (0, j.gX)(l.id), H = z || !k;
     return (0, r.jsxs)("div", {
       children: [(0, r.jsx)(p.vwX, {
         tag: "h1",
@@ -86,7 +86,7 @@ let E = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
       }), (0, r.jsxs)(p.xJW, {
         title: N.intl.string(N.t.N46WOj),
         disabled: z,
-        children: [(0, r.jsx)(h.Z, {
+        children: [(0, r.jsx)(f.Z, {
           value: B,
           className: s()({
             [I.disabled]: z
@@ -139,14 +139,14 @@ let E = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
         }), (0, r.jsx)(p.oil, {
           value: null != Z ? Z : void 0,
           onChange: e => D("" === e ? null : e),
-          error: A ? null : N.intl.string(N.t["1kL79f"]),
+          error: k ? null : N.intl.string(N.t["1kL79f"]),
           placeholder: N.intl.string(N.t["+I4gdX"]),
           className: I.trailerInputWrapper,
           inputClassName: s()(I.trailerInput, {
-            [I.error]: !A,
-            [I.trailerInputWithCheckmark]: F || !A
+            [I.error]: !k,
+            [I.trailerInputWithCheckmark]: F || !k
           }),
-          prefixElement: A && F && (0, r.jsx)(p.owK, {
+          prefixElement: k && F && (0, r.jsx)(p.owK, {
             size: "md",
             color: m.Z.unsafe_rawColors.BRAND_500.css,
             secondaryColor: m.Z.unsafe_rawColors.WHITE_500.css,
@@ -164,7 +164,7 @@ let E = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
           children: N.intl.string(N.t.iWBt3d)
         }), (0, r.jsx)(p.j7V, {
           className: I.premiumMemberCountSwitchContainer,
-          value: k,
+          value: A,
           hideBorder: !0,
           onChange: e => L(e),
           disabled: z,
@@ -196,8 +196,8 @@ let E = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
         component: "div",
         className: I.contentRegion,
         children: G && (0, r.jsx)(p.oXn, {
-          children: (0, r.jsx)(f.Z, {
-            submitting: u,
+          children: (0, r.jsx)(h.Z, {
+            submitting: d,
             onReset: () => {
               var e, t;
               P(l.hasFeature(y.oNc.CREATOR_STORE_PAGE)), R(null != (e = null == c ? void 0 : c.store_page_primary_color) ? e : T), D(null == c ? void 0 : c.store_page_trailer_url), L(null != (t = null == c ? void 0 : c.store_page_show_subscriber_count) && t)
@@ -211,7 +211,7 @@ let E = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
   };
 
 function w() {
-  let e = (0, u.e7)([_.Z], () => _.Z.getGuild()),
+  let e = (0, d.e7)([_.Z], () => _.Z.getGuild()),
     t = (0, O.f)(),
     n = (0, C.qi)(null == e ? void 0 : e.id).some(e => e.published);
   return null != e && t ? (0, r.jsx)(P, {
@@ -221,7 +221,7 @@ function w() {
 }
 
 function R() {
-  let e = (0, u.e7)([_.Z], () => _.Z.getGuild());
+  let e = (0, d.e7)([_.Z], () => _.Z.getGuild());
   return (0, r.jsx)(O.l, {
     guildId: null == e ? void 0 : e.id,
     refetchOnMount: !0,

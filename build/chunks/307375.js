@@ -1,7 +1,7 @@
 /** Chunk was on 50629 **/
 "use strict";
 n.d(t, {
-  h: () => h
+  h: () => f
 });
 var r = n(200651),
   i = n(192379),
@@ -10,43 +10,43 @@ var r = n(200651),
   a = n(442837),
   o = n(481060),
   c = n(496675),
-  d = n(63063),
-  u = n(384632),
+  u = n(63063),
+  d = n(384632),
   m = n(981631),
   g = n(388032),
   p = n(109303);
 
-function h(e) {
+function f(e) {
   let {
     activeType: t,
     onTypePicked: n,
     guild: l
-  } = e, h = l.hasFeature(m.oNc.COMMUNITY), f = (0, a.e7)([c.Z], () => c.Z.can(m.Plq.ADMINISTRATOR, l)), x = i.useMemo(() => {
-    let e = t === u.A.DISCOVERABLE && !f,
-      n = h && (t === u.A.DISCOVERABLE || f);
+  } = e, f = l.hasFeature(m.oNc.COMMUNITY), h = (0, a.e7)([c.Z], () => c.Z.can(m.Plq.ADMINISTRATOR, l)), x = i.useMemo(() => {
+    let e = t === d.A.DISCOVERABLE && !h,
+      n = f && (t === d.A.DISCOVERABLE || h);
     return [{
-      id: u.A.INVITE,
+      id: d.A.INVITE,
       title: g.intl.string(g.t["HQVS/P"]),
       body: g.intl.string(g.t.KzXzFR),
       icon: o.mBM,
       enabled: !e,
       ineligibleText: g.intl.string(g.t.LIZgwM)
     }, {
-      id: u.A.APPLY,
+      id: d.A.APPLY,
       title: g.intl.string(g.t.LrFEYW),
       body: g.intl.string(g.t.kJj2oK),
       icon: o._XJ,
       enabled: !e,
       ineligibleText: g.intl.string(g.t.LIZgwM)
     }, {
-      id: u.A.DISCOVERABLE,
+      id: d.A.DISCOVERABLE,
       title: g.intl.string(g.t.lhOHLy),
       body: g.intl.string(g.t.pqQylZ),
       icon: o.enf,
       enabled: n,
-      ineligibleText: h ? g.intl.string(g.t.iBpXPj) : g.intl.string(g.t["5TQ+eH"])
+      ineligibleText: f ? g.intl.string(g.t.iBpXPj) : g.intl.string(g.t["5TQ+eH"])
     }]
-  }, [t, h, f]);
+  }, [t, f, h]);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(o.X6q, {
       color: "header-primary",
@@ -57,7 +57,7 @@ function h(e) {
       variant: "text-sm/medium",
       className: p.bodyText,
       children: g.intl.format(g.t["Y/jYws"], {
-        helpdeskArticle: d.Z.getArticleURL(m.BhN.MEMBER_APPLICATIONS)
+        helpdeskArticle: u.Z.getArticleURL(m.BhN.MEMBER_APPLICATIONS)
       })
     }), (0, r.jsx)(o.njP, {
       selectedItem: t,

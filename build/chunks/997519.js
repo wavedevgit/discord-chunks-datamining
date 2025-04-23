@@ -14,17 +14,17 @@ function c(e, t) {
   let n = null == t ? void 0 : t.team,
     {
       payoutsByPeriod: c,
-      loading: d
+      loading: u
     } = (0, l.Z)(null == t ? void 0 : t.id, {
       groupType: o.uw.SERVER_ROLE_SUBSCRIPTION,
       teamId: null == n ? void 0 : n.id
     }),
-    u = (0, s.f)("useEarningMetrics"),
+    d = (0, s.f)("useEarningMetrics"),
     m = (0, a.Z)(e),
     {
       currentPeriod: g,
       previousPeriods: p,
-      metrics: h
+      metrics: f
     } = r.useMemo(() => {
       var e, t;
       let {
@@ -67,11 +67,11 @@ function c(e, t) {
       }
     }, [c, m]);
   return {
-    loading: d || !u,
+    loading: u || !d,
     team: n,
     currentPeriod: g,
     previousPeriods: p,
     allPeriods: c,
-    metrics: h
+    metrics: f
   }
 }

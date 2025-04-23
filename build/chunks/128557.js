@@ -159,7 +159,7 @@ function B(e) {
         h.ZP.trackWithMetadata(S.rMx.SERVER_SETUP_CTA_CLICKED, {
           setup_type: Z.Ft.CHANNEL_WELCOME,
           action: Z.j7.PERSONALIZE_SERVER
-        }), null != e && g.Z.open(e.id, (0, _.r)(e.id), {
+        }), null != e && g.Z.open(e.id, (0, _.r)(), {
           section: S.jXE.CHANNEL_WELCOME_CTA
         })
       }, [e]);

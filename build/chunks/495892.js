@@ -10,13 +10,13 @@ var r = n(200651),
   a = n(239091),
   o = n(132580),
   c = n(688465),
-  d = n(236413),
-  u = n(727072),
+  u = n(236413),
+  d = n(727072),
   m = n(85960),
   g = n(65912),
   p = n(457414),
-  h = n(154502),
-  f = n(295708),
+  f = n(154502),
+  h = n(295708),
   x = n(273504),
   b = n(388032),
   j = n(260324);
@@ -57,7 +57,7 @@ function O(e) {
   let {
     rule: t,
     triggerType: n
-  } = e, l = i.useMemo(() => null == t ? (0, m.V9)(n).map(e => (0, r.jsx)(h.Z, {
+  } = e, l = i.useMemo(() => null == t ? (0, m.V9)(n).map(e => (0, r.jsx)(f.Z, {
     actionType: e,
     triggerType: n
   }, e)) : (0, m.V9)(n).reduce((e, i) => {
@@ -68,7 +68,7 @@ function O(e) {
       } = e;
       return i === t
     });
-    return null == s || e.push((0, r.jsx)(h.Z, {
+    return null == s || e.push((0, r.jsx)(f.Z, {
       actionType: i,
       action: s,
       triggerType: null != (l = null == t ? void 0 : t.triggerType) ? l : n
@@ -126,7 +126,7 @@ function I(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: j.ruleTextContainer,
-      children: (0, r.jsx)(f.Z, {
+      children: (0, r.jsx)(h.Z, {
         rule: n,
         onChangeRule: i
       })
@@ -171,15 +171,15 @@ function S(e) {
     isLoading: c,
     saveRule: m
   } = (0, g.w)(), {
-    updateRule: h
-  } = (0, u.pH)(t.guildId), [f, x] = i.useState(t.enabled), C = (0, l.throttle)(async (e, n) => {
+    updateRule: f
+  } = (0, d.pH)(t.guildId), [h, x] = i.useState(t.enabled), C = (0, l.throttle)(async (e, n) => {
     if (n.preventDefault(), n.stopPropagation(), !c) {
       let e = v(_({}, t), {
-        enabled: !f
+        enabled: !h
       });
-      x(!f);
+      x(!h);
       let n = await m(e, []);
-      null != n && (h(n), x(n.enabled))
+      null != n && (f(n), x(n.enabled))
     }
   }, 300), I = e => {
     y(e), a(e)
@@ -190,7 +190,7 @@ function S(e) {
     headerSubtext: T,
     descriptionText: P,
     icon: w
-  } = o, R = !(0, d.Vb)(t);
+  } = o, R = !(0, u.Vb)(t);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: j.ruleIconContainer,
@@ -226,7 +226,7 @@ function S(e) {
       children: [(0, r.jsx)(s.rsf, {
         className: j.toggle,
         onChange: C,
-        checked: null != f && f
+        checked: null != h && h
       }), !n && (0, r.jsx)(s.ua7, {
         text: b.intl.string(b.t.UKOtz8),
         position: "top",
@@ -299,8 +299,8 @@ function P(e) {
     isEditMode: l,
     isDefaultRule: o,
     forceSetup: c,
-    onSetupRule: d,
-    onChangeRule: u
+    onSetupRule: u,
+    onChangeRule: d
   } = e, m = e => {
     null != t && (e.preventDefault(), e.stopPropagation(), (0, a.jW)(e, async () => {
       let {
@@ -312,11 +312,11 @@ function P(e) {
     }))
   }, g = (0, r.jsx)(T, {
     triggerType: i,
-    onSetupRule: d
+    onSetupRule: u
   });
   return null == t || c || (g = l ? (0, r.jsx)(I, {
     rule: t,
-    onChangeRule: u,
+    onChangeRule: d,
     onContextMenu: m
   }) : (0, r.jsx)(S, {
     rule: t,

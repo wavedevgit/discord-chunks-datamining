@@ -1,7 +1,7 @@
 /** Chunk was on 50629 **/
 "use strict";
 n.d(t, {
-  c: () => f
+  c: () => h
 });
 var r = n(200651),
   i = n(192379),
@@ -10,18 +10,18 @@ var r = n(200651),
   a = n(884858),
   o = n(813197),
   c = n(434404),
-  d = n(70086),
-  u = n(949640),
+  u = n(70086),
+  d = n(949640),
   m = n(981631),
   g = n(30513),
   p = n(200299),
-  h = n(388032);
+  f = n(388032);
 
-function f(e) {
+function h(e) {
   let {
     guild: t,
     canManageGuild: n,
-    buttonClassName: f
+    buttonClassName: h
   } = e, {
     analyticsLocations: x
   } = (0, s.ZP)(), b = t.hasFeature(m.oNc.INVITE_SPLASH), j = n && b, _ = i.useCallback(e => {
@@ -29,7 +29,7 @@ function f(e) {
       splash: e
     })
   }, []), v = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), (0, u.E6)({
+    e.preventDefault(), e.stopPropagation(), (0, d.E6)({
       guild: t,
       analyticsLocations: x,
       analyticsSection: m.jXE.GUILD_INVITE_BACKGROUND,
@@ -40,15 +40,15 @@ function f(e) {
   return b ? (0, r.jsxs)(l.zxk, {
     disabled: !j,
     color: l.Ttl.BRAND,
-    className: f,
-    children: [h.intl.string(h.t.yG2pUl), (0, r.jsx)(o.ZP, {
+    className: h,
+    children: [f.intl.string(f.t.yG2pUl), (0, r.jsx)(o.ZP, {
       disabled: !j,
       onChange: _,
       maxFileSizeBytes: p.B,
       onFileSizeError: () => (0, a.Z)(p.B)
     })]
-  }) : (0, r.jsx)(d.P, {
-    className: f,
+  }) : (0, r.jsx)(u.P, {
+    className: h,
     onClick: v
   })
 }

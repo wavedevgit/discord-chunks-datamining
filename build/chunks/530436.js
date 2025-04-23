@@ -18,7 +18,7 @@ function m(e) {
     error: n,
     onClose: m
   } = e, x = t.id, g = r.useCallback(() => {
-    m(), s.Z.open(x, c.pNK.INSTANT_INVITES)
+    m(), s.Z.open(x, c.pNK.INVITES)
   }, [x, m]), h = r.useCallback(e => (0, l.jsx)(i.P3F, {
     className: d.errorLink,
     onClick: g,

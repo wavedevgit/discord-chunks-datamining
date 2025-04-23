@@ -1,6 +1,6 @@
 /** Chunk was on 45094 **/
 n.d(t, {
-  Z: () => p
+  Z: () => u
 }), n(539854);
 var s = n(200651),
   i = n(192379),
@@ -8,38 +8,33 @@ var s = n(200651),
   r = n(481060),
   a = n(314852),
   o = n(65361),
-  d = n(600553),
-  c = n(63063),
-  h = n(981631),
-  u = n(388032);
+  d = n(63063),
+  c = n(981631),
+  h = n(388032);
 
-function p(e) {
+function u(e) {
   let {
     guildId: t,
     channelType: n,
-    className: p
+    className: u
   } = e, {
-    guildProfile: m,
-    fetchGuildProfile: g,
-    fetchStatus: C
-  } = (0, o.u)(t), N = (0, d.Dj)({
-    guildId: t,
-    location: "channel_create",
-    autoTrackExposure: !0
-  }), x = C !== a.a.FETCHED, I = null != m && l.Y.VISIBLE.has(m.visibility);
+    guildProfile: p,
+    fetchGuildProfile: m,
+    fetchStatus: g
+  } = (0, o.u)(t), C = g !== a.a.FETCHED, N = null != p && l.Y.VISIBLE.has(p.visibility);
   i.useEffect(() => {
-    g()
-  }, [t, g]);
-  let E = [];
-  if (n === h.d4z.GUILD_ANNOUNCEMENT && (E.push(u.intl.format(u.t.tI7KNT, {
-      documentationLink: c.Z.getArticleURL(h.BhN.ANNOUNCEMENT_CHANNELS)
-    })), !x && !I)) {
-    let e = N ? u.intl.string(u.t["2Ab4IS"]) : u.intl.string(u.t["/8VkyM"]);
-    E.push(e)
+    m()
+  }, [t, m]);
+  let x = [];
+  if (n === c.d4z.GUILD_ANNOUNCEMENT && (x.push(h.intl.format(h.t.tI7KNT, {
+      documentationLink: d.Z.getArticleURL(c.BhN.ANNOUNCEMENT_CHANNELS)
+    })), !C && !N)) {
+    let e = h.intl.string(h.t["2Ab4IS"]);
+    x.push(e)
   }
-  return 0 === E.length ? null : (0, s.jsx)(s.Fragment, {
-    children: E.map((e, t) => (0, s.jsx)(r.R94, {
-      className: p,
+  return 0 === x.length ? null : (0, s.jsx)(s.Fragment, {
+    children: x.map((e, t) => (0, s.jsx)(r.R94, {
+      className: u,
       type: r.R94.Types.DESCRIPTION,
       children: e
     }, "description-".concat(t)))

@@ -16,7 +16,7 @@ function c(e) {
     onConfirm: t,
     onCancel: n,
     channelId: c
-  } = e, d = (0, i.e7)([a.Z], () => null != c ? a.Z.getChannel(c) : null), u = (0, s.ZP)(d, !0);
+  } = e, u = (0, i.e7)([a.Z], () => null != c ? a.Z.getChannel(c) : null), d = (0, s.ZP)(u, !0);
   return (0, r.jsx)(l.sYh, {
     dismissable: !0,
     header: o.intl.string(o.t.S2eoq6),
@@ -26,8 +26,8 @@ function c(e) {
     onCancel: n,
     children: (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
-      children: null != d ? o.intl.format(o.t["1KT3Fh"], {
-        channelName: u
+      children: null != u ? o.intl.format(o.t["1KT3Fh"], {
+        channelName: d
       }) : o.intl.string(o.t.VOPUV1)
     })
   })

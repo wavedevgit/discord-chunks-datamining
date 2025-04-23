@@ -126,7 +126,7 @@ function em(e) {
   if (null == _) return eg();
   let p = I.Z.getProfile(n);
   o = s = _, l = c = p, J = X, ee = $, K = M.QZA.OPEN, z = {}, q = null, u = P.default.castGuildIdAsEveryoneGuildRoleId(n), er = s.mfaLevel, el = es, f = null, ei = d, eb({
-    section: null != (t = null != i ? i : r) ? t : (0, x.r)(n),
+    section: null != (t = null != i ? i : r) ? t : (0, x.r)(),
     subsection: null != a ? a : null
   })
 }
@@ -163,7 +163,6 @@ function eb(e) {
       invites: e.body
     })
   });
-  else if (r === M.pNK.WIDGET)(0, D.R)(s.id);
   else if (r === M.pNK.INTEGRATIONS || r === M.pNK.ROLES) {
     if (u = null, t !== e.section) return eK(e)
   } else r === M.pNK.MEMBERS ? u = s.getEveryoneRoleId() : r === M.pNK.VANITY_URL ? (0, L.U5)(s.id) : r === M.pNK.SAFETY && v.Z.dispatch({
@@ -195,7 +194,7 @@ function eI() {
 
 function eS(e) {
   var t;
-  K = M.QZA.OPEN, r = null != r ? r : (0, x.r)(null == s ? void 0 : s.id), i = null, z = null != (t = e.errors) ? t : {}
+  K = M.QZA.OPEN, r = null != r ? r : (0, x.r)(), i = null, z = null != (t = e.errors) ? t : {}
 }
 
 function eT() {

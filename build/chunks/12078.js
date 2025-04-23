@@ -10,13 +10,13 @@ var r = n(200651),
   a = n(442837),
   o = n(481060),
   c = n(686369),
-  d = n(813197),
-  u = n(430824),
+  u = n(813197),
+  d = n(430824),
   m = n(768581),
   g = n(921948),
   p = n(434404),
-  h = n(981631),
-  f = n(570911),
+  f = n(981631),
+  h = n(570911),
   x = n(388032),
   b = n(364313);
 
@@ -58,7 +58,7 @@ function v(e) {
     canManageGuild: n,
     handleClick: i,
     hasCustomBanner: l
-  } = e, a = (0, c.nv)(), d = (0, c.qw)(t, a.hex());
+  } = e, a = (0, c.nv)(), u = (0, c.qw)(t, a.hex());
   return (0, r.jsx)(o.ua7, {
     text: x.intl.string(x.t.W4Nd7e),
     children: e => (0, r.jsx)(o.P3F, _(j({}, e), {
@@ -67,7 +67,7 @@ function v(e) {
       "aria-label": x.intl.string(x.t.W4Nd7e),
       onClick: n ? i : void 0,
       style: {
-        background: (0, c.dG)(d)
+        background: (0, c.dG)(u)
       },
       className: s()(b.itemContainer, {
         [b.disabled]: !n
@@ -87,7 +87,7 @@ function O(e) {
     profile: n,
     onCustomBannerChange: l,
     canManageGuild: a
-  } = e, c = null != n.customBanner, u = i.useMemo(() => {
+  } = e, c = null != n.customBanner, d = i.useMemo(() => {
     if (null == n.customBanner) return null;
     let e = n.customBanner;
     return m.ff.test(e) ? e : m.ZP.getGuildDiscoverySplashURL({
@@ -97,9 +97,9 @@ function O(e) {
     })
   }, [n]);
   if (!t) return null;
-  let p = null != u ? (0, r.jsx)("img", {
+  let p = null != d ? (0, r.jsx)("img", {
     className: b.uploadedImage,
-    src: u,
+    src: d,
     alt: "",
     "aria-hidden": !0
   }) : (0, r.jsx)(o.dZu, {
@@ -125,7 +125,7 @@ function O(e) {
             width: 20,
             height: 20,
             color: "white"
-          }), (0, r.jsx)(d.ZP, {
+          }), (0, r.jsx)(u.ZP, {
             multiple: !1,
             tabIndex: 0,
             onChange: l,
@@ -142,8 +142,8 @@ function C(e) {
   let {
     profile: n,
     onCustomBannerChange: l,
-    canManageGuild: d
-  } = e, m = (0, a.e7)([u.Z], () => u.Z.getGuild(n.id)), g = null != (t = null == m ? void 0 : m.hasFeature(h.oNc.DISCOVERABLE)) && t, C = n.id, y = i.useCallback(e => () => {
+    canManageGuild: u
+  } = e, m = (0, a.e7)([d.Z], () => d.Z.getGuild(n.id)), g = null != (t = null == m ? void 0 : m.hasFeature(f.oNc.DISCOVERABLE)) && t, C = n.id, y = i.useCallback(e => () => {
     p.Z.updateGuildProfile(C, {
       brandColorPrimary: e,
       customBanner: null
@@ -155,10 +155,10 @@ function C(e) {
       className: b.grid,
       children: [(0, r.jsx)(v, {
         profile: n,
-        canManageGuild: d,
+        canManageGuild: u,
         handleClick: y(null),
         hasCustomBanner: g && null != n.customBanner
-      }), f.cb.map(e => {
+      }), h.cb.map(e => {
         let {
           name: t,
           color: n
@@ -166,15 +166,15 @@ function C(e) {
         return (0, r.jsx)(o.ua7, {
           text: t,
           children: e => (0, r.jsx)(o.P3F, _(j({}, e), {
-            "aria-disabled": !d,
-            tabIndex: d ? 0 : -1,
+            "aria-disabled": !u,
+            tabIndex: u ? 0 : -1,
             "aria-label": t,
-            onClick: d ? y(n) : void 0,
+            onClick: u ? y(n) : void 0,
             style: {
               background: (0, c.dG)(n)
             },
             className: s()(b.itemContainer, {
-              [b.disabled]: !d
+              [b.disabled]: !u
             }),
             children: (0, r.jsx)("div", {
               className: s()({
@@ -184,7 +184,7 @@ function C(e) {
           }))
         }, t)
       }), (0, r.jsx)(O, {
-        canManageGuild: d,
+        canManageGuild: u,
         isDiscoverable: g,
         profile: n,
         onCustomBannerChange: l

@@ -1,7 +1,7 @@
 /** Chunk was on 50629 **/
 "use strict";
 n.d(t, {
-  b: () => d
+  b: () => u
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -15,7 +15,7 @@ let c = async (e, t, n) => {
     file: t,
     image: n
   })
-}, d = () => {
+}, u = () => {
   let [e, t] = i.useState(!1);
   return (0, r.jsxs)(l.zxk, {
     tabIndex: -1,

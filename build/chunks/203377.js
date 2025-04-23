@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   G7: () => s,
-  LG: () => d,
+  LG: () => u,
   Pg: () => l,
   ZI: () => o,
   _0: () => a
@@ -19,7 +19,7 @@ let c = {
   system_channel_id: () => i.intl.string(i.t.NASFnp)
 };
 
-function d(e) {
+function u(e) {
   var t;
   if (0 === Object.keys(e).length) return null;
   let n = Object.keys(e)[0],

@@ -1,7 +1,7 @@
 /** Chunk was on 50629 **/
 "use strict";
 n.d(t, {
-  Z: () => d
+  Z: () => u
 });
 var r = n(200651);
 n(192379);
@@ -12,13 +12,13 @@ var i = n(399606),
   o = n(723047),
   c = n(388032);
 
-function d(e) {
+function u(e) {
   let {
     guildId: t,
-    application: d
-  } = e, u = (0, i.e7)([s.Z], () => s.Z.getGuild(t)), m = (0, i.e7)([a.default], () => a.default.getCurrentUser()), g = (0, o.mY)();
-  if (null == u || !u.isOwner(m)) return null;
-  let p = d.team;
+    application: u
+  } = e, d = (0, i.e7)([s.Z], () => s.Z.getGuild(t)), m = (0, i.e7)([a.default], () => a.default.getCurrentUser()), g = (0, o.mY)();
+  if (null == d || !d.isOwner(m)) return null;
+  let p = u.team;
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(l.R94, {
       type: l.R94.Types.DESCRIPTION,
@@ -56,7 +56,7 @@ function d(e) {
               }
               return e
             }({}, t), i = i = {
-              application: d
+              application: u
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {

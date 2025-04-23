@@ -10,13 +10,13 @@ var r = n(200651),
   a = n(481060),
   o = n(999382),
   c = n(279542),
-  d = n(823379),
-  u = n(63063),
+  u = n(823379),
+  d = n(63063),
   m = n(426563),
   g = n(727072),
   p = n(85960),
-  h = n(577330),
-  f = n(65912),
+  f = n(577330),
+  h = n(65912),
   x = n(51248),
   b = n(546513),
   j = n(572456),
@@ -33,7 +33,7 @@ function y(e) {
   } = e, {
     editingRule: I,
     setEditingRule: E
-  } = (0, f.V)(), {
+  } = (0, h.V)(), {
     guild: S,
     subsection: T
   } = (0, l.cj)([o.Z], () => o.Z.getProps()), P = null != (n = null != (t = null == S ? void 0 : S.id) ? t : y) ? n : v.lds, w = null != I, [R] = (0, g.RD)(P), {
@@ -41,12 +41,12 @@ function y(e) {
   } = (0, g.pH)(P), D = {
     [p.vh.MEMBERS]: O.intl.string(O.t.sx4E5u),
     [p.vh.CONTENT]: O.intl.string(O.t.fphZb2)
-  }, A = i.useMemo(() => Object.values(null != Z ? Z : {}).flat().filter(d.lm), [Z]), k = {
+  }, k = i.useMemo(() => Object.values(null != Z ? Z : {}).flat().filter(u.lm), [Z]), A = {
     isInEditMode: w,
     setEditingRule: E
-  }, L = i.useRef(k);
+  }, L = i.useRef(A);
   i.useEffect(() => {
-    L.current = k
+    L.current = A
   }), i.useEffect(() => {
     let {
       isInEditMode: e,
@@ -57,7 +57,7 @@ function y(e) {
   let M = i.useCallback((e, t) => {
       if (null != e) {
         var n, r;
-        return null != (r = null == (n = A.find(t => {
+        return null != (r = null == (n = k.find(t => {
           let {
             id: n
           } = t;
@@ -65,7 +65,7 @@ function y(e) {
         })) ? void 0 : n.name) ? r : null
       }
       return null != t ? p.I6[t].getDefaultRuleName() : null
-    }, [A]),
+    }, [k]),
     G = i.useMemo(() => {
       var e, t;
       return M(null != (e = null == I ? void 0 : I.id) ? e : null, null != (t = null == I ? void 0 : I.triggerType) ? t : null)
@@ -102,7 +102,7 @@ function y(e) {
           variant: "text-sm/medium",
           className: C.helpUrl,
           children: O.intl.format(O.t["B+sgGh"], {
-            helpUrl: u.Z.getArticleURL(v.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
+            helpUrl: d.Z.getArticleURL(v.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
           })
         })]
       }), (0, r.jsxs)("div", {
@@ -128,7 +128,7 @@ function y(e) {
           className: C.textBadge
         })]
       })]
-    }), R ? (0, r.jsx)(h.Z, {}) : Object.entries(U).map(e => {
+    }), R ? (0, r.jsx)(f.Z, {}) : Object.entries(U).map(e => {
       let [t, n] = e;
       if (0 === n.length) return (0, r.jsx)(i.Fragment, {}, t);
       let l = null != D[t] ? (0, r.jsx)(a.hjN, {
@@ -150,7 +150,7 @@ function y(e) {
       className: C.explicitContentFilterSection
     }), (0, r.jsx)(x.Z, {
       guildId: P,
-      existingRules: A
+      existingRules: k
     }), w && (0, r.jsx)("div", {
       className: C.endSpacer
     })]

@@ -1,6 +1,6 @@
 /** Chunk was on 33213 **/
 n.d(t, {
-  default: () => G
+  default: () => k
 });
 var i = n(200651);
 n(192379);
@@ -15,8 +15,8 @@ var r = n(512722),
   g = n(894059),
   b = n(340541),
   p = n(423589),
-  S = n(837949),
-  f = n(122074),
+  f = n(837949),
+  S = n(122074),
   O = n(314897),
   h = n(984933),
   E = n(594174),
@@ -72,16 +72,16 @@ function w(e) {
     onSelect: r,
     hideSettings: c
   } = e, u = t.id, w = h.ZP.getDefaultChannel(u), {
-    entrypoints: G
+    entrypoints: k
   } = (0, b._k)({
     location: "guild_context_menu"
-  }), k = (0, s.e7)([E.default], () => {
+  }), G = (0, s.e7)([E.default], () => {
     let e = E.default.getCurrentUser();
     return l()(null != e, "GuildContextMenu: user cannot be undefined"), t.isOwner(e)
   }, [t]), U = (0, I.Z)({
     guild: t,
     source: Z.t4x.GUILD_CONTEXT_MENU,
-    channel: G ? null : w
+    channel: k ? null : w
   }), C = (0, L.Z)(u), R = (0, P.Z)(t), B = (0, v.Z)(t), Y = (0, A.Z)(t), Q = (0, y.Z)({
     guildId: t.id,
     userId: O.default.getId(),
@@ -95,7 +95,7 @@ function w(e) {
     label: D.intl.string(D.t["94lLDw"])
   }), q = (0, N.Z)(t, {
     section: Z.jXE.GUILD_LIST
-  }), W = (0, S.Z)(t.id), X = (0, m.Z)(t.id), K = (0, f.ng)(t.id, !1), z = (0, _.Z)(t), J = (0, p.Mn)("GuildContextMenu"), $ = (0, x.p)(t);
+  }), W = (0, f.Z)(t.id), X = (0, m.Z)(t.id), K = (0, S.ng)(t.id, !1), z = (0, _.Z)(t), J = (0, p.Mn)("GuildContextMenu"), $ = (0, x.p)(t);
 
   function ee() {
     (0, o.ZDy)(async () => {
@@ -125,7 +125,7 @@ function w(e) {
           }))
         })
       }), Q]
-    }), k ? null : (0, i.jsx)(o.kSQ, {
+    }), G ? null : (0, i.jsx)(o.kSQ, {
       children: (0, i.jsx)(o.sNh, {
         id: "leave-guild",
         label: D.intl.string(D.t.Dv8gFR),
@@ -162,7 +162,7 @@ function w(e) {
     }), (0, i.jsxs)(o.kSQ, {
       children: [F, H]
     }), (0, i.jsxs)(o.kSQ, {
-      children: [z, !k && (0, i.jsx)(o.sNh, {
+      children: [z, !G && (0, i.jsx)(o.sNh, {
         id: "leave-guild",
         label: D.intl.string(D.t.J2TBi4),
         action: ee,
@@ -176,7 +176,7 @@ function w(e) {
   })
 }
 
-function G(e) {
+function k(e) {
   let {
     analyticsLocations: t
   } = (0, u.ZP)(c.Z.CONTEXT_MENU);

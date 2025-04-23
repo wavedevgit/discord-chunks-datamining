@@ -1,7 +1,7 @@
 /** Chunk was on 50629 **/
 "use strict";
 n.d(t, {
-  Z: () => d
+  Z: () => u
 });
 var r = n(200651);
 n(192379);
@@ -12,30 +12,30 @@ var i = n(346163),
   o = n(388032),
   c = n(289282);
 
-function d(e) {
+function u(e) {
   let t, {
       guild: n
     } = e,
     {
-      resubmittingEnableRequest: d,
-      resubmissionError: u,
+      resubmittingEnableRequest: u,
+      resubmissionError: d,
       createEnableRequest: m,
       resubmittedRequest: g,
       requestRejectedNoticeText: p,
-      reapplyNoticeText: h
+      reapplyNoticeText: f
     } = (0, i.Z)(n),
-    f = n.hasFeature(a.oNc.CREATOR_MONETIZABLE_RESTRICTED),
+    h = n.hasFeature(a.oNc.CREATOR_MONETIZABLE_RESTRICTED),
     x = n.hasFeature(a.oNc.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING);
-  if (null != u) return (0, r.jsx)(l.Z, {
+  if (null != d) return (0, r.jsx)(l.Z, {
     className: c.noticeContainer,
-    children: u.getAnyErrorMessage()
+    children: d.getAnyErrorMessage()
   });
   let b = null;
-  return null != p ? b = p : g ? b = o.intl.string(o.t.MyJpJS) : null != h ? (b = h, t = o.intl.string(o.t["YKw/NT"])) : x ? b = o.intl.string(o.t.e2g9sb) : f && (b = o.intl.string(o.t.rxI9sr)), null != b ? (0, r.jsx)(s.Z, {
+  return null != p ? b = p : g ? b = o.intl.string(o.t.MyJpJS) : null != f ? (b = f, t = o.intl.string(o.t["YKw/NT"])) : x ? b = o.intl.string(o.t.e2g9sb) : h && (b = o.intl.string(o.t.rxI9sr)), null != b ? (0, r.jsx)(s.Z, {
     className: c.noticeContainer,
     notice: b,
     ctaLabel: t,
-    ctaLoading: d,
+    ctaLoading: u,
     onClick: m
   }) : null
 }

@@ -1,8 +1,8 @@
 /** Chunk was on 50629 **/
 "use strict";
 n.d(t, {
-  V: () => h,
-  Z: () => f
+  V: () => f,
+  Z: () => h
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -11,13 +11,13 @@ var r = n(200651),
   a = n(239091),
   o = n(605436),
   c = n(741247),
-  d = n(243730),
-  u = n(852898),
+  u = n(243730),
+  d = n(852898),
   m = n(203377),
   g = n(388032),
   p = n(793944);
 
-function h() {
+function f() {
   let [e, t] = i.useState(!0);
   return {
     scrolledToTop: e,
@@ -27,22 +27,22 @@ function h() {
   }
 }
 
-function f(e) {
+function h(e) {
   let {
     guild: t,
-    role: h,
-    selectedSection: f,
+    role: f,
+    selectedSection: h,
     setSelectedSection: x
   } = e, b = i.useCallback(e => {
     x(e)
-  }, [x]), j = (0, l.e7)([d.Z], () => {
+  }, [x]), j = (0, l.e7)([u.Z], () => {
     var e;
-    return null == (e = d.Z.getRoleMemberCount(t.id)) ? void 0 : e[h.id]
-  }, [h.id, t.id]), _ = (0, o.pM)(t.id, h.id), v = (0, u.Z)(h);
+    return null == (e = u.Z.getRoleMemberCount(t.id)) ? void 0 : e[f.id]
+  }, [f.id, t.id]), _ = (0, o.pM)(t.id, f.id), v = (0, d.Z)(f);
   i.useEffect(() => {
     _ && x(m.ZI.PERMISSIONS)
   }, [_, x]);
-  let O = (0, c.e)(t, h);
+  let O = (0, c.e)(t, f);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: p.titleContainer,
@@ -51,7 +51,7 @@ function f(e) {
         color: "header-primary",
         variant: "text-md/semibold",
         children: g.intl.format(g.t.BUdGkJ, {
-          roleName: h.name
+          roleName: f.name
         })
       }), O ? (0, r.jsx)(s.P3F, {
         className: p.menu,
@@ -81,7 +81,7 @@ function f(e) {
                 return e
               }({}, n), l = l = {
                 guild: t,
-                role: h
+                role: f
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
@@ -107,7 +107,7 @@ function f(e) {
     }) : null, (0, r.jsxs)(s.njP, {
       className: p.tabBar,
       "aria-label": g.intl.string(g.t["+1H47u"]),
-      selectedItem: f,
+      selectedItem: h,
       type: "top",
       look: "brand",
       onItemSelect: b,

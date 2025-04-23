@@ -1,7 +1,7 @@
 /** Chunk was on 50629 **/
 "use strict";
 n.d(t, {
-  Z: () => f,
+  Z: () => h,
   n: () => g
 });
 var r, i = n(200651),
@@ -10,9 +10,9 @@ var r, i = n(200651),
   a = n.n(s),
   o = n(748780),
   c = n(215569),
-  d = n(65187);
+  u = n(65187);
 
-function u(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -28,7 +28,7 @@ function m(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      u(e, t, n[t])
+      d(e, t, n[t])
     })
   }
   return e
@@ -39,7 +39,7 @@ let p = {
   tension: 40,
   overshootClamping: !0
 };
-class h extends l.PureComponent {
+class f extends l.PureComponent {
   componentWillEnter(e) {
     var t, n;
     null == (t = (n = this.props).onAnimationStart) || t.call(n), this._animated.setValue(-this.props.direction), o.Z.spring(this._animated, m({
@@ -70,15 +70,15 @@ class h extends l.PureComponent {
   render() {
     return (0, i.jsx)(o.Z.div, {
       style: this.getStyle(),
-      className: d.item,
+      className: u.item,
       children: this.props.children
     })
   }
   constructor(e) {
-    super(e), u(this, "_animated", void 0), this._animated = new o.Z.Value(-1 * e.direction)
+    super(e), d(this, "_animated", void 0), this._animated = new o.Z.Value(-1 * e.direction)
   }
 }
-let f = e => {
+let h = e => {
   let {
     children: t,
     step: n,
@@ -89,8 +89,8 @@ let f = e => {
   } = e;
   return (0, i.jsx)(c.W, {
     component: "div",
-    className: a()(d.animator, l),
-    children: (0, i.jsx)(h, {
+    className: a()(u.animator, l),
+    children: (0, i.jsx)(f, {
       direction: r,
       onAnimationStart: s,
       onAnimationEnd: o,

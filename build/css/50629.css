@@ -1,6 +1,6 @@
 /**
   Module ID: 50629
-  Original File Name: 1b1a1d72a287b8ea
+  Original File Name: 8461df32a0023594
 **/
 .editCard_a25a68 {
     background-color: var(--background-secondary);
@@ -9785,175 +9785,6 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     width: 16px
 }
 
-.upsellButton__71816 {
-    align-items: center;
-    display: flex
-}
-
-.premiumUpsellBadge__71816 {
-    margin-right: 4px
-}
-
-.header__6e6ad {
-    align-items: center;
-    display: flex;
-    flex-direction: column
-}
-
-.subtitleText__6e6ad {
-    margin-bottom: 16px;
-    text-align: center
-}
-
-.guildBanner__6e6ad {
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 4px;
-    height: 180px;
-    margin-bottom: 24px;
-    width: 320px
-}
-
-.guildHeader__6e6ad {
-    align-items: center;
-    box-sizing: border-box;
-    display: flex;
-    filter: drop-shadow(0 1px 1px hsla(0,0%,0%,.8));
-    height: 48px;
-    padding: 0 16px;
-    transition: background-color .1s linear
-}
-
-.guildName__6e6ad {
-    flex: 1;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap
-}
-
-.dropdown__6e6ad,.guildName__6e6ad {
-    color: var(--white-500)
-}
-
-.upsell__0969c {
-    cursor: pointer
-}
-
-.guildFeatureAvailabilityIndicator__956b8 {
-    background-color: var(--background-secondary-alt);
-    border-radius: var(--radius-lg);
-    height: 18px;
-    margin-left: 4px;
-    padding: 1px 2px
-}
-
-.upsell__0e5b1 {
-    cursor: pointer
-}
-
-.flexRow__0982b {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    gap: 8px
-}
-
-.avatarUploaderDisabled_cd0bbe {
-    cursor: not-allowed
-}
-
-.iconError_cd0bbe {
-    margin-top: 8px;
-    text-align: center
-}
-
-.divider_cd0bbe {
-    border-top: 1px solid transparent;
-    border-color: var(--divider-strong);
-    margin-top: 40px;
-    padding-top: 40px
-}
-
-.error_cd0bbe,.iconError_cd0bbe {
-    color: var(--status-danger)
-}
-
-.avatarUploader_cd0bbe .avatarUploaderInner_cd0bbe,.avatarUploaderDisabled_cd0bbe .avatarUploaderInner_cd0bbe {
-    background-size: 100% 100%;
-    box-shadow: var(--shadow-high);
-    height: 100px;
-    width: 100px
-}
-
-.avatarUploader_cd0bbe .avatarUploaderInner_cd0bbe:hover {
-    box-shadow: var(--shadow-high),inset 0 0 120px rgba(0,0,0,.6)
-}
-
-.visual-refresh .avatarUploader_cd0bbe .avatarUploaderInner_cd0bbe:hover {
-    box-shadow: var(--shadow-high),inset 0 0 120px var(--opacity-black-80)
-}
-
-.avatarUploaderInnerEmpty_cd0bbe {
-    background-color: var(--bg-brand)
-}
-
-.flexFormTitle_cd0bbe {
-    display: flex;
-    margin-bottom: 8px
-}
-
-.guildFeatureAvailabilityIndicator_cd0bbe {
-    background-color: var(--background-secondary-alt);
-    border-radius: var(--radius-lg);
-    height: 18px;
-    margin-left: 4px;
-    padding: 1px 2px
-}
-
-.upsell_cd0bbe {
-    cursor: pointer
-}
-
-.progressBarImage_cd0bbe {
-    height: 252px;
-    width: 320px
-}
-
-.marginTop16_cd0bbe {
-    margin-top: 16px
-}
-
-.marginTop8_cd0bbe {
-    margin-top: 8px
-}
-
-.marginBottom0_cd0bbe {
-    margin-bottom: 0
-}
-
-.marginBottom8_cd0bbe {
-    margin-bottom: 8px
-}
-
-.marginTop20_cd0bbe {
-    margin-top: 20px
-}
-
-.marginBottom20_cd0bbe {
-    margin-bottom: 20px
-}
-
-.flexRow_cd0bbe {
-    flex-direction: row
-}
-
-.badgedItem_cd0bbe,.flexRow_cd0bbe {
-    align-items: center;
-    display: flex;
-    gap: 8px
-}
-
 .wrapper__176c7 {
     background: linear-gradient(90deg,var(--guild-boosting-blue-for-gradients),var(--guild-boosting-purple-for-gradients)) no-repeat;
     border-radius: 8px;
@@ -11221,6 +11052,100 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     justify-content: space-between
 }
 
+.upsellButton__71816 {
+    align-items: center;
+    display: flex
+}
+
+.premiumUpsellBadge__71816 {
+    margin-right: 4px
+}
+
+.header__6e6ad {
+    align-items: center;
+    display: flex;
+    flex-direction: column
+}
+
+.subtitleText__6e6ad {
+    margin-bottom: 16px;
+    text-align: center
+}
+
+.guildBanner__6e6ad {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4px;
+    height: 180px;
+    margin-bottom: 24px;
+    width: 320px
+}
+
+.guildHeader__6e6ad {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    filter: drop-shadow(0 1px 1px hsla(0,0%,0%,.8));
+    height: 48px;
+    padding: 0 16px;
+    transition: background-color .1s linear
+}
+
+.guildName__6e6ad {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.dropdown__6e6ad,.guildName__6e6ad {
+    color: var(--white-500)
+}
+
+.upsell__0969c {
+    cursor: pointer
+}
+
+.guildFeatureAvailabilityIndicator__956b8 {
+    background-color: var(--background-secondary-alt);
+    border-radius: var(--radius-lg);
+    height: 18px;
+    margin-left: 4px;
+    padding: 1px 2px
+}
+
+.container__68f37 {
+    display: flex;
+    flex-direction: row;
+    gap: 32px
+}
+
+.column__68f37 {
+    flex-basis: 50%
+}
+
+.title__68f37 {
+    align-items: center;
+    display: flex
+}
+
+.text__68f37 {
+    margin-bottom: 8px
+}
+
+.button__68f37 {
+    margin-top: 16px
+}
+
+.upsell__68f37 {
+    cursor: pointer
+}
+
+.upsell__0e5b1 {
+    cursor: pointer
+}
+
 .prefixInput__9d137 {
     border-radius: 3px;
     border-style: solid;
@@ -11327,60 +11252,6 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     margin-top: 16px
 }
 
-.description__46bca {
-    margin-bottom: 16px
-}
-
-.flexFormTitle__46bca {
-    align-items: center;
-    display: flex;
-    margin-bottom: 8px
-}
-
-.infoWrapper__60406 {
-    display: flex;
-    gap: 20px
-}
-
-.infoItem__60406 {
-    flex-basis: 50%
-}
-
-.divider__60406 {
-    margin: 40px 0
-}
-
-.spacing__60406 {
-    margin-bottom: 20px
-}
-
-.container__68f37 {
-    display: flex;
-    flex-direction: row;
-    gap: 32px
-}
-
-.column__68f37 {
-    flex-basis: 50%
-}
-
-.title__68f37 {
-    align-items: center;
-    display: flex
-}
-
-.text__68f37 {
-    margin-bottom: 8px
-}
-
-.button__68f37 {
-    margin-top: 16px
-}
-
-.upsell__68f37 {
-    cursor: pointer
-}
-
 .title_a2e6f9 {
     align-items: center;
     display: flex
@@ -11469,6 +11340,13 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 .switch__57c9c {
     margin-bottom: 0;
     margin-top: 0
+}
+
+.flexRow__0982b {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 8px
 }
 
 .description__80a8f {
@@ -12960,4 +12838,4 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=1b1a1d72a287b8ea.css.map*/
+/*# sourceMappingURL=8461df32a0023594.css.map*/

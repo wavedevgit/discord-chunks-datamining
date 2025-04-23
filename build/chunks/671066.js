@@ -11,8 +11,8 @@ var i = n(442837),
   a = n(592125),
   o = n(699516),
   c = n(594174),
-  d = n(556012),
-  u = n(388032),
+  u = n(556012),
+  d = n(388032),
   m = n(467397);
 
 function g(e) {
@@ -21,8 +21,8 @@ function g(e) {
     action: n,
     triggerType: g,
     toggled: p,
-    onToggleAction: h
-  } = e, f = e => () => h(e), x = (0, d.c)(n.type, n, g), b = null == (t = n.metadata) ? void 0 : t.channelId, j = (0, i.e7)([c.default, o.Z, a.Z], () => {
+    onToggleAction: f
+  } = e, h = e => () => f(e), x = (0, u.c)(n.type, n, g), b = null == (t = n.metadata) ? void 0 : t.channelId, j = (0, i.e7)([c.default, o.Z, a.Z], () => {
     let e = a.Z.getChannel(b);
     return null == e ? null : (0, s.F6)(e, c.default, o.Z)
   }, [b]);
@@ -53,21 +53,21 @@ function g(e) {
       }), p && (0, r.jsxs)(l.Text, {
         color: "text-muted",
         variant: "text-xs/medium",
-        children: [null != j && u.intl.format(u.t["8Sr/am"], {
+        children: [null != j && d.intl.format(d.t["8Sr/am"], {
           channelName: j
         }), (0, r.jsx)(l.P3F, {
-          onClick: f(!0),
+          onClick: h(!0),
           className: m.editChannel,
           tag: "span",
           role: "link",
-          children: u.intl.string(u.t["3gUsJS"])
+          children: d.intl.string(d.t["3gUsJS"])
         })]
       })]
     }), (0, r.jsx)("div", {
       children: (0, r.jsx)(l.XZJ, {
         type: l.XZJ.Types.INVERTED,
         value: p,
-        onChange: f(!1),
+        onChange: h(!1),
         className: m.__invalid_actionCheckbox
       })
     })]

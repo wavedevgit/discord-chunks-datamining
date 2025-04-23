@@ -10,8 +10,8 @@ var r = n(200651),
   a = n(999382),
   o = n(845377),
   c = n(976288),
-  d = n(386885),
-  u = n(388032),
+  u = n(386885),
+  d = n(388032),
   m = n(836090);
 
 function g(e) {
@@ -20,21 +20,21 @@ function g(e) {
     settingsView: n,
     requireTerms: g,
     rules: p
-  } = e, h = (0, l.e7)([a.Z], () => a.Z.getProps().guild);
+  } = e, f = (0, l.e7)([a.Z], () => a.Z.getProps().guild);
   if (i.useEffect(() => {
-      null != h && t(h.id)
-    }, [t, h]), null == h) return null;
+      null != f && t(f.id)
+    }, [t, f]), null == f) return null;
   switch (n) {
-    case d.U.DISQUALIFIED:
+    case u.U.DISQUALIFIED:
       return (0, r.jsx)(o.Z, {
-        guild: h,
-        guildId: h.id,
+        guild: f,
+        guildId: f.id,
         headerContent: (0, r.jsxs)("div", {
           children: [(0, r.jsx)(s.X6q, {
             variant: "text-md/semibold",
             color: "header-primary",
             className: m.header,
-            children: u.intl.format(u.t.n1LDQE, {
+            children: d.intl.format(d.t.n1LDQE, {
               removedHook: (e, t) => (0, r.jsx)("strong", {
                 className: m.danger,
                 children: e
@@ -43,24 +43,24 @@ function g(e) {
           }), (0, r.jsx)(s.Text, {
             variant: "text-sm/medium",
             color: "text-secondary",
-            children: u.intl.string(u.t.Qgaw3d)
+            children: d.intl.string(d.t.Qgaw3d)
           })]
         })
       });
-    case d.U.ELIGIBLE_DISABLED:
-    case d.U.ELIGIBLE_ENABLED:
+    case u.U.ELIGIBLE_DISABLED:
+    case u.U.ELIGIBLE_ENABLED:
       return (0, r.jsx)(c.d, {
         requireTerms: g,
         rules: p,
         settingsView: n
       });
-    case d.U.INELIGIBLE:
+    case u.U.INELIGIBLE:
       return (0, r.jsx)(o.Z, {
-        guild: h,
-        guildId: h.id,
+        guild: f,
+        guildId: f.id,
         headerContent: (0, r.jsx)(s.X6q, {
           variant: "heading-md/semibold",
-          children: u.intl.format(u.t["+6Hylp"], {
+          children: d.intl.format(d.t["+6Hylp"], {
             doesNotHook: (e, t) => (0, r.jsx)("strong", {
               className: m.danger,
               children: e

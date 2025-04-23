@@ -10,13 +10,13 @@ var r = n(200651),
   a = n(392711),
   o = n(442837),
   c = n(481060),
-  d = n(239091),
-  u = n(749210),
+  u = n(239091),
+  d = n(749210),
   m = n(493544),
   g = n(479531),
   p = n(118012),
-  h = n(210887),
-  f = n(246946),
+  f = n(210887),
+  h = n(246946),
   x = n(594174),
   b = n(251625),
   j = n(226951),
@@ -75,14 +75,14 @@ function D(e) {
     ban: s,
     hideDiscriminator: a,
     onClose: o
-  } = e, [d, m] = i.useState(!1), [h, f] = i.useState(null);
+  } = e, [u, m] = i.useState(!1), [f, h] = i.useState(null);
   async function x() {
     if (null != n) {
-      f(null), m(!0);
+      h(null), m(!0);
       try {
-        await u.Z.unbanUser(n.id, l.id), o()
+        await d.Z.unbanUser(n.id, l.id), o()
       } catch (e) {
-        f(new g.Z(e)), m(!1)
+        h(new g.Z(e)), m(!1)
       }
     }
   }
@@ -113,11 +113,11 @@ function D(e) {
       }), (0, r.jsx)(c.Text, {
         variant: "text-sm/normal",
         children: null != s.reason && "" !== s.reason ? s.reason : S.intl.string(S.t["t+2Zcn"])
-      }), null != h ? (0, r.jsx)(c.Text, {
+      }), null != f ? (0, r.jsx)(c.Text, {
         className: T.error,
         color: "text-danger",
         variant: "text-sm/normal",
-        children: h.getAnyErrorMessage()
+        children: f.getAnyErrorMessage()
       }) : null]
     }), (0, r.jsxs)(c.mzw, {
       className: T.footer,
@@ -125,7 +125,7 @@ function D(e) {
         onClick: x,
         look: c.zxk.Looks.LINK,
         color: c.zxk.Colors.RED,
-        submitting: d,
+        submitting: u,
         children: S.intl.string(S.t.UPcIa2)
       }), (0, r.jsx)(c.zxk, {
         onClick: o,
@@ -134,7 +134,7 @@ function D(e) {
     })]
   })
 }
-class A extends i.PureComponent {
+class k extends i.PureComponent {
   render() {
     let {
       user: e,
@@ -177,7 +177,7 @@ class A extends i.PureComponent {
         hideDiscriminator: n
       })))
     }), w(this, "handleContextMenu", e => {
-      (0, d.jW)(e, async () => {
+      (0, u.jW)(e, async () => {
         let {
           default: e
         } = await n.e("23835").then(n.bind(n, 768079));
@@ -188,7 +188,7 @@ class A extends i.PureComponent {
     })
   }
 }
-class k extends i.PureComponent {
+class A extends i.PureComponent {
   makeFilter(e) {
     if (null == e || 0 === e.length) return e => null != e;
     {
@@ -258,14 +258,14 @@ class k extends i.PureComponent {
         className: T.spinner,
         type: c.$jN.Type.SPINNING_CIRCLE
       }, "spinner");
-      let d = this.getSortedBans(l, o)[i],
-        u = null == l ? void 0 : l.get(null != (t = null == d ? void 0 : d.id) ? t : "");
-      if (null != d && null != u) return (0, r.jsx)(A, {
-        user: d,
-        ban: u,
+      let u = this.getSortedBans(l, o)[i],
+        d = null == l ? void 0 : l.get(null != (t = null == u ? void 0 : u.id) ? t : "");
+      if (null != u && null != d) return (0, r.jsx)(k, {
+        user: u,
+        ban: d,
         hideDiscriminator: s,
         guild: a
-      }, d.id)
+      }, u.id)
     }), w(this, "getSectionHeight", e => {
       if (e > 0) return 0;
       let {
@@ -326,7 +326,7 @@ class k extends i.PureComponent {
     })
   }
 }
-let L = o.ZP.connectStores([C.Z, h.Z, f.Z], () => {
+let L = o.ZP.connectStores([C.Z, f.Z, h.Z], () => {
   let {
     bans: e,
     guild: t,
@@ -336,10 +336,10 @@ let L = o.ZP.connectStores([C.Z, h.Z, f.Z], () => {
     searchQuery: null != n ? n : "",
     bans: e,
     guild: t,
-    theme: h.Z.theme,
-    streamerMode: f.Z.hidePersonalInformation
+    theme: f.Z.theme,
+    streamerMode: h.Z.hidePersonalInformation
   }
-})(k);
+})(A);
 
 function M() {
   var e;

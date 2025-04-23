@@ -10,13 +10,13 @@ var r = n(200651),
   a = n(481060),
   o = n(76535),
   c = n(395586),
-  d = n(204875),
-  u = n(715796),
+  u = n(204875),
+  d = n(715796),
   m = n(411667),
   g = n(434404),
   p = n(962086),
-  h = n(225675),
-  f = n(703656),
+  f = n(225675),
+  h = n(703656),
   x = n(430824),
   b = n(594174),
   j = n(63063),
@@ -38,8 +38,8 @@ function S(e) {
   } = (0, _.eD)(t), T = (0, s.e7)([x.Z], () => x.Z.getGuild(t)), P = (0, s.e7)([b.default], () => b.default.getCurrentUser()), w = (null == T ? void 0 : T.isOwner(P)) === !0, {
     loading: R
   } = (0, o.H)(t), [Z, D] = i.useState(n ? "manage_listings" : "payment");
-  (0, u.P)(T);
-  let A = i.useCallback(() => {
+  (0, d.P)(T);
+  let k = i.useCallback(() => {
     if (null == T) return;
     let e = x.Z.getRole(T.id, T.getEveryoneRoleId());
     if (null == e) return;
@@ -48,15 +48,15 @@ function S(e) {
       [e.id]: e
     };
     (0, p.iD)(T.id, {
-      type: h.z.SERVER_SHOP,
+      type: f.z.SERVER_SHOP,
       roles: t,
       initialTab: "guild_products",
       returnToSection: y.pNK.GUILD_PRODUCTS
-    }), (0, f.uL)(y.Z5c.CHANNEL(T.id, N.oC.GUILD_SHOP))
+    }), (0, h.uL)(y.Z5c.CHANNEL(T.id, N.oC.GUILD_SHOP))
   }, [T]);
   if (!S || R) return (0, r.jsx)(a.$jN, {});
   if (null == T) return null;
-  let k = (0, r.jsxs)(r.Fragment, {
+  let A = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(a.vwX, {
         tag: a.RB0.H1,
         children: I.intl.string(I.t.X6h2g4)
@@ -75,12 +75,12 @@ function S(e) {
       "aria-label": I.intl.string(I.t.X6h2g4),
       selectedItem: Z,
       onItemSelect: D,
-      children: [(0, r.jsx)(d.Z, {
+      children: [(0, r.jsx)(u.Z, {
         id: "basic_info",
         disabledTooltip: I.intl.string(I.t.NVDuUV),
         disabled: !n,
         children: I.intl.string(I.t.w27QAQ)
-      }), (0, r.jsx)(d.Z, {
+      }), (0, r.jsx)(u.Z, {
         id: "manage_listings",
         disabledTooltip: I.intl.string(I.t.NVDuUV),
         disabled: !n,
@@ -92,7 +92,7 @@ function S(e) {
       }) : null, n ? (0, r.jsx)("div", {
         className: E.previewButton,
         children: (0, r.jsx)(a.zxk, {
-          onClick: A,
+          onClick: k,
           color: a.zxk.Colors.PRIMARY,
           size: a.zxk.Sizes.SMALL,
           look: a.zxk.Looks.OUTLINED,
@@ -113,7 +113,7 @@ function S(e) {
     }) : (0, r.jsx)(a.$jN, {});
   return (0, r.jsxs)(c.AL, {
     guildId: t,
-    children: [k, (0, r.jsx)(m.Z, {
+    children: [A, (0, r.jsx)(m.Z, {
       guild: T
     }), (0, r.jsx)("div", {
       className: E.tabBarContainer,

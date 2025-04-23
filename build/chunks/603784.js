@@ -10,13 +10,13 @@ var r = n(200651),
   a = n(91192),
   o = n(442837),
   c = n(780384),
-  d = n(481060),
-  u = n(726542),
+  u = n(481060),
+  d = n(726542),
   m = n(100527),
   g = n(933557),
   p = n(670188),
-  h = n(210887),
-  f = n(598077),
+  f = n(210887),
+  h = n(598077),
   x = n(699516),
   b = n(594174),
   j = n(259580),
@@ -68,12 +68,12 @@ class T extends i.PureComponent {
     return (0, r.jsxs)("span", {
       onContextMenu: t,
       className: I.userHook,
-      children: [(0, r.jsx)(d.Text, {
+      children: [(0, r.jsx)(u.Text, {
         variant: "text-md/normal",
         children: _.ZP.getUserTag(e, {
           mode: "username"
         })
-      }), "0" !== e.discriminator && (0, r.jsxs)(d.Text, {
+      }), "0" !== e.discriminator && (0, r.jsxs)(u.Text, {
         variant: "text-xs/normal",
         className: I.discrim,
         children: ["#", e.discriminator]
@@ -86,41 +86,41 @@ let P = i.forwardRef((e, t) => {
       log: i,
       className: l,
       expanded: o,
-      guildId: h,
+      guildId: f,
       guild: _,
       onChannelContextMenu: P,
       onContentClick: w,
       onHeaderClick: R,
       onTargetContextMenu: Z,
       onUserContextMenu: D,
-      theme: A
+      theme: k
     } = e,
-    k = function() {
+    A = function() {
       let {
         changes: e
       } = i;
       return (i.actionType !== y.vB8.DELETE || i.action === y.rsA.MEMBER_BAN_ADD || i.action === y.rsA.MEMBER_KICK || i.action === y.rsA.MEMBER_PRUNE) && null != e && e.some(e => !(0, C.xO)(i, e))
     }(),
     L = I.headerDefault;
-  o ? L = I.headerExpanded : k && (L = I.headerClickable);
+  o ? L = I.headerExpanded : A && (L = I.headerClickable);
   let M = i.timestampStart.calendar(),
     G = i.timestampEnd.calendar();
-  n = M === G ? (0, r.jsx)(d.Text, {
+  n = M === G ? (0, r.jsx)(u.Text, {
     className: I.timestamp,
     variant: "text-sm/normal",
     children: M
-  }) : (0, r.jsxs)(d.Text, {
+  }) : (0, r.jsxs)(u.Text, {
     className: I.timestamp,
     variant: "text-sm/normal",
     children: [M, "—", G]
   });
-  let U = k ? R : y.dG4;
+  let U = A ? R : y.dG4;
   return (0, r.jsx)(a.mh, {
     id: i.id,
     children: e => (0, r.jsxs)("div", {
       ref: t,
       className: s()(I.auditLog, l),
-      children: [(0, r.jsxs)(d.P3F, S(E({
+      children: [(0, r.jsxs)(u.P3F, S(E({
         className: L,
         "aria-expanded": o,
         onClick: U
@@ -139,30 +139,30 @@ let P = i.forwardRef((e, t) => {
           } = i;
           if (null != e && null != t) return (0, r.jsx)(p.Z, {
             user: e,
-            guildId: h,
+            guildId: f,
             newAnalyticsLocations: [m.Z.AVATAR],
             children: e => {
               var t;
-              return (0, r.jsx)(d.qEK, S(E({}, e), {
+              return (0, r.jsx)(u.qEK, S(E({}, e), {
                 onClick: t => {
                   t.stopPropagation(), e.onClick(t)
                 },
                 className: I.avatar,
-                src: i.action === y.rsA.AUTO_MODERATION_BLOCK_MESSAGE || i.action === y.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || i.action === y.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || i.action === y.rsA.AUTO_MODERATION_QUARANTINE_USER ? (0, v.j)() : null == (t = i.user) ? void 0 : t.getAvatarURL(h, 40),
+                src: i.action === y.rsA.AUTO_MODERATION_BLOCK_MESSAGE || i.action === y.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || i.action === y.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || i.action === y.rsA.AUTO_MODERATION_QUARANTINE_USER ? (0, v.j)() : null == (t = i.user) ? void 0 : t.getAvatarURL(f, 40),
                 "aria-hidden": !0,
-                size: d.EFr.SIZE_40
+                size: u.EFr.SIZE_40
               }))
             }
           });
           if (null != n) {
-            let e = u.Z.get(n);
+            let e = d.Z.get(n);
             if (null != e) {
-              let t = (0, c.wj)(A) ? e.icon.darkSVG : e.icon.lightSVG;
-              return (0, r.jsx)(d.qEK, {
+              let t = (0, c.wj)(k) ? e.icon.darkSVG : e.icon.lightSVG;
+              return (0, r.jsx)(u.qEK, {
                 className: I.avatar,
                 src: t,
                 "aria-hidden": !0,
-                size: d.EFr.SIZE_40
+                size: u.EFr.SIZE_40
               })
             }
           }
@@ -189,12 +189,12 @@ let P = i.forwardRef((e, t) => {
                     }, t);
                     if (null != i.options.integration_type) {
                       var n;
-                      let e = u.Z.get(i.options.integration_type);
+                      let e = d.Z.get(i.options.integration_type);
                       return null != (n = null == e ? void 0 : e.name) ? n : N.intl.string(N.t["n+olu7"])
                     }
                     return N.intl.string(N.t["30mdIy"])
                   },
-                  targetHook: (e, t) => i.targetType === y.KFR.USER && i.target instanceof f.Z ? (0, r.jsx)(T, {
+                  targetHook: (e, t) => i.targetType === y.KFR.USER && i.target instanceof h.Z ? (0, r.jsx)(T, {
                     user: i.target,
                     onContextMenu: Z
                   }, t) : (0, r.jsx)("span", {
@@ -212,7 +212,7 @@ let P = i.forwardRef((e, t) => {
               }) : null
             }()
           }), n]
-        }), k ? (0, r.jsx)(j.Z, {
+        }), A ? (0, r.jsx)(j.Z, {
           className: I.expand,
           foreground: I.expandForeground,
           expanded: o,
@@ -229,8 +229,8 @@ let P = i.forwardRef((e, t) => {
   })
 });
 P.displayName = "GuildSettingsAuditLogEntry";
-let w = o.ZP.connectStores([h.Z], () => ({
-  theme: h.Z.theme
+let w = o.ZP.connectStores([f.Z], () => ({
+  theme: f.Z.theme
 }), {
   forwardRef: !0
 })(P)

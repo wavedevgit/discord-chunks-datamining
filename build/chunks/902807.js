@@ -10,7 +10,7 @@ var r = n(200651),
   a = n(200100),
   o = n(481060),
   c = n(386476);
-class d extends i.Component {
+class u extends i.Component {
   render() {
     var e, t;
     let n = this.props,
@@ -65,7 +65,7 @@ class d extends i.Component {
     }), e))
   }
 }
-let u = (0, a.animated)(d),
+let d = (0, a.animated)(u),
   m = function(e) {
     let {
       className: t,
@@ -96,7 +96,7 @@ let u = (0, a.animated)(d),
           icon: n,
           iconClassName: i
         } = t;
-        return (0, r.jsx)(u, {
+        return (0, r.jsx)(d, {
           icon: n,
           className: s()(c.icon, i),
           style: e

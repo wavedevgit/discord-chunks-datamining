@@ -29,20 +29,20 @@ function b() {
 
 function p(e) {
   var t, p;
-  let S = function(e) {
+  let f = function(e) {
       let {
         suppressEveryone: t,
         suppressRoles: n,
         mobilePush: p,
-        messageNotifications: S,
-        notifyHighlights: f
+        messageNotifications: f,
+        notifyHighlights: S
       } = (0, r.cj)([c.ZP], () => ({
         suppressEveryone: c.ZP.isSuppressEveryoneEnabled(e.id),
         suppressRoles: c.ZP.isSuppressRolesEnabled(e.id),
         mobilePush: c.ZP.isMobilePushEnabled(e.id),
         messageNotifications: c.ZP.getMessageNotifications(e.id),
         notifyHighlights: c.ZP.getNotifyHighlights(e.id)
-      }), [e.id]), O = f === d.gLR.DISABLED, h = (0, o.Z)(e.id);
+      }), [e.id]), O = S === d.gLR.DISABLED, h = (0, o.Z)(e.id);
 
       function E(t, n) {
         s.Z.updateGuildNotificationSettings(e.id, t, n)
@@ -62,7 +62,7 @@ function p(e) {
               action: () => E({
                 message_notifications: t
               }, u.UE.notifications(t)),
-              checked: t === S
+              checked: t === f
             }, t)
           })
         }), null != y && (0, i.jsx)(l.kSQ, {
@@ -104,15 +104,15 @@ function p(e) {
         })]
       })
     }(e),
-    f = (0, r.e7)([c.ZP], () => c.ZP.getMessageNotifications(e.id), [e.id]),
+    S = (0, r.e7)([c.ZP], () => c.ZP.getMessageNotifications(e.id), [e.id]),
     O = null == (p = b()) || null == (t = p.find(e => {
       let {
         setting: t
       } = e;
-      return t === f
+      return t === S
     })) ? void 0 : t.label,
     h = (0, a.U)();
-  return null != S ? (0, i.jsx)(l.sNh, {
+  return null != f ? (0, i.jsx)(l.sNh, {
     id: "guild-notifications",
     label: (0, i.jsxs)(i.Fragment, {
       children: [h, g.intl.string(g.t.h850Sk)]
@@ -155,6 +155,6 @@ function p(e) {
         }), r))
       }
     }),
-    children: S
+    children: f
   }) : null
 }

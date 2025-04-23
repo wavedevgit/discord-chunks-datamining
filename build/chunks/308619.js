@@ -1,7 +1,7 @@
 /** Chunk was on 50629 **/
 "use strict";
 n.d(t, {
-  Z: () => u
+  Z: () => d
 }), n(953529);
 var r = n(200651),
   i = n(192379),
@@ -10,36 +10,36 @@ var r = n(200651),
   a = n(699553),
   o = n(314852),
   c = n(434404),
-  d = n(999382);
+  u = n(999382);
 
-function u() {
-  let e = (0, l.e7)([d.Z], () => d.Z.getGuild()),
+function d() {
+  let e = (0, l.e7)([u.Z], () => u.Z.getGuild()),
     t = null == e ? void 0 : e.id,
-    n = (0, l.e7)([d.Z], () => d.Z.getProfileError()),
-    u = (0, l.e7)([d.Z], () => d.Z.getGuildProfile()),
+    n = (0, l.e7)([u.Z], () => u.Z.getProfileError()),
+    d = (0, l.e7)([u.Z], () => u.Z.getGuildProfile()),
     m = (0, l.e7)([o.Z], () => o.Z.getIsUpdating(t)),
     g = i.useMemo(() => null == n ? void 0 : n.getAnyErrorMessage(), [n]),
     p = i.useCallback(() => {
-      if (null == e || null == u) return;
+      if (null == e || null == d) return;
       let t = {
-        name: u.name,
-        description: u.description,
-        icon: u.icon,
-        brandColorPrimary: u.brandColorPrimary,
-        traits: u.traits,
-        visibility: u.visibility,
-        gameApplicationIds: u.gameApplicationIds,
-        customBanner: u.customBanner
+        name: d.name,
+        description: d.description,
+        icon: d.icon,
+        brandColorPrimary: d.brandColorPrimary,
+        traits: d.traits,
+        visibility: d.visibility,
+        gameApplicationIds: d.gameApplicationIds,
+        customBanner: d.customBanner
       };
       (0, a.pV)(e.id, t)
-    }, [e, u]),
-    h = i.useCallback(() => {
+    }, [e, d]),
+    f = i.useCallback(() => {
       null != t && c.Z.init(t)
     }, [t]);
   return (0, r.jsx)(s.Z, {
     submitting: m,
     errorMessage: g,
     onSave: p,
-    onReset: h
+    onReset: f
   })
 }

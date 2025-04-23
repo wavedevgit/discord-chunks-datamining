@@ -1,7 +1,7 @@
 /** Chunk was on 50629 **/
 "use strict";
 n.d(t, {
-  R: () => u
+  R: () => d
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -10,15 +10,15 @@ var r = n(200651),
   a = n(823379),
   o = n(434404),
   c = n(999382),
-  d = n(203377);
+  u = n(203377);
 
-function u() {
+function d() {
   let {
     guild: e,
     originalGuild: t,
     submitting: n,
-    errors: u
-  } = (0, l.cj)([c.Z], () => c.Z.getProps()), m = i.useMemo(() => (0, d.LG)(u), [u]), g = i.useCallback(async () => {
+    errors: d
+  } = (0, l.cj)([c.Z], () => c.Z.getProps()), m = i.useMemo(() => (0, u.LG)(d), [d]), g = i.useCallback(async () => {
     if (null == e) return Promise.resolve();
     let n = {
       systemChannelFlags: e.systemChannelFlags,

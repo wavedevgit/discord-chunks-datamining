@@ -1,7 +1,7 @@
 /** Chunk was on 50629 **/
 "use strict";
 n.d(t, {
-  Z: () => h
+  Z: () => f
 });
 var r = n(200651);
 n(192379);
@@ -11,31 +11,31 @@ var i = n(392711),
   a = n(230711),
   o = n(496675),
   c = n(594174),
-  d = n(434404),
-  u = n(449226),
+  u = n(434404),
+  d = n(449226),
   m = n(981631),
   g = n(388032),
   p = n(296205);
 
-function h(e) {
+function f(e) {
   let t, {
       guild: n
     } = e,
-    h = n.mfaLevel,
-    f = (0, l.e7)([o.Z], () => null != n && o.Z.can(m.Plq.MANAGE_GUILD, n), [n]),
+    f = n.mfaLevel,
+    h = (0, l.e7)([o.Z], () => null != n && o.Z.can(m.Plq.MANAGE_GUILD, n), [n]),
     x = (0, l.e7)([c.default], () => c.default.getCurrentUser()),
     b = n.isOwner(x),
     j = null == x ? void 0 : x.mfaEnabled,
-    _ = h === m.BpS.ELEVATED,
+    _ = f === m.BpS.ELEVATED,
     v = b && j,
     O = (0, i.throttle)(async e => {
-      v && await d.Z.updateMFALevel({
+      v && await u.Z.updateMFALevel({
         guildId: n.id,
         level: e ? m.BpS.ELEVATED : m.BpS.NONE,
         isEnabled: !e
       })
     }, 1e3);
-  if (!f) return null;
+  if (!h) return null;
   v || (t = b ? g.intl.format(g.t.nFwNyc, {
     settingsHook: () => a.Z.open(m.oAB.ACCOUNT)
   }) : g.intl.string(g.t["9Ghu4+"]));
@@ -55,14 +55,14 @@ function h(e) {
       })]
     }), !v || _ && C ? (0, r.jsx)(s.ua7, {
       text: C ? g.intl.string(g.t["KG1V/P"]) : b ? g.intl.string(g.t.NmsheX) : g.intl.string(g.t.LieBtb),
-      children: e => (0, r.jsx)(u.Z, {
+      children: e => (0, r.jsx)(d.Z, {
         checked: _,
         disabled: !0,
         onChange: O,
         className: p.bringToFront,
         tooltipProps: e
       })
-    }) : (0, r.jsx)(u.Z, {
+    }) : (0, r.jsx)(d.Z, {
       checked: _,
       onChange: O,
       className: p.bringToFront

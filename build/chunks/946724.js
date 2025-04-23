@@ -2,18 +2,18 @@
 "use strict";
 let r, i, l;
 n.d(t, {
-  Z: () => W,
+  Z: () => V,
   g: () => y
 }), n(388685), n(583741), n(953529);
 var s, a, o = n(392711),
   c = n.n(o),
-  d = n(149765),
-  u = n(866442),
+  u = n(149765),
+  d = n(866442),
   m = n(442837),
   g = n(570140),
   p = n(561654),
-  h = n(956226),
-  f = n(430824),
+  f = n(956226),
+  h = n(430824),
   x = n(990492),
   b = n(823379),
   j = n(700785),
@@ -40,11 +40,11 @@ let N = new Set,
   R = new Set,
   Z = new Map,
   D = new Map,
-  A = new Map;
+  k = new Map;
 
-function k() {
+function A() {
   if (null == r || null == T) return [];
-  let e = c()(f.Z.getRoles(r.id)).values().sortBy(e => {
+  let e = c()(h.Z.getRoles(r.id)).values().sortBy(e => {
     let {
       position: t
     } = e;
@@ -79,7 +79,7 @@ function L(e) {
 
 function M() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-  r = _.Z.getProps().guild, E = !1, S = !1, l = void 0, N.clear(), A.clear(), I = v.QZA.OPEN, G(P = [...T = null != r ? c()(f.Z.getRoles(r.id)).values().sortBy(e => {
+  r = _.Z.getProps().guild, E = !1, S = !1, l = void 0, N.clear(), k.clear(), I = v.QZA.OPEN, G(P = [...T = null != r ? c()(h.Z.getRoles(r.id)).values().sortBy(e => {
     let {
       position: t
     } = e;
@@ -118,7 +118,7 @@ function G(e) {
         tertiary_color: null != (l = e.colors.tertiary_color) ? l : null
       }
     }
-    A.set(e.id, {
+    k.set(e.id, {
       currentStyle: t,
       styleColors: n
     })
@@ -126,7 +126,7 @@ function G(e) {
 }
 let U = c().debounce(() => {
   let e = !1;
-  S && ((S = k().length > 0) || (e = !0)), [...N].forEach(t => {
+  S && ((S = A().length > 0) || (e = !0)), [...N].forEach(t => {
     var n;
     c().isEqual(F(t), (n = t, P.find(e => {
       let {
@@ -134,7 +134,7 @@ let U = c().debounce(() => {
       } = e;
       return t === n
     }))) && (N.delete(t), e = !0)
-  }), 0 === N.size && (E = !1), w && c().isEqual(Z, D) && (e = !0, w = !1), e && V.emitChange()
+  }), 0 === N.size && (E = !1), w && c().isEqual(Z, D) && (e = !0, w = !1), e && W.emitChange()
 }, 500);
 
 function B(e, t) {
@@ -171,7 +171,7 @@ function z(e) {
   if (null == r || t !== r.id || I === v.QZA.SUBMITTING) return !1;
   r = _.Z.getProps().guild;
   let n = [];
-  null != r && (n = c()(f.Z.getRoles(r.id)).values().sortBy(e => {
+  null != r && (n = c()(h.Z.getRoles(r.id)).values().sortBy(e => {
     let {
       position: t
     } = e;
@@ -188,21 +188,21 @@ function z(e) {
   }), 0 === N.size && (E = !1);
   let i = new Map;
   N.forEach(e => {
-    let t = A.get(e);
+    let t = k.get(e);
     null != t && i.set(e, t)
-  }), A.clear(), G(n), i.forEach((e, t) => {
-    A.set(t, e)
+  }), k.clear(), G(n), i.forEach((e, t) => {
+    k.set(t, e)
   }), S = !1, T = [...n]
 }
 class H extends(s = m.ZP.Store) {
   initialize() {
-    this.waitFor(_.Z, p.Z, f.Z)
+    this.waitFor(_.Z, p.Z, h.Z)
   }
   hasChanges() {
     return E || S || w
   }
   getRoleStyleData(e) {
-    return A.get(e)
+    return k.get(e)
   }
   get errorMessage() {
     return l
@@ -229,7 +229,7 @@ class H extends(s = m.ZP.Store) {
     return I
   }
   getSortDeltas() {
-    return k()
+    return A()
   }
   showNotice() {
     return this.hasChanges()
@@ -245,7 +245,7 @@ class H extends(s = m.ZP.Store) {
   }
 }
 C(H, "displayName", "GuildSettingsRolesStore");
-let V = new H(g.Z, __OVERLAY__ ? {} : {
+let W = new H(g.Z, __OVERLAY__ ? {} : {
     GUILD_SETTINGS_ROLES_INIT: () => M(),
     GUILD_SETTINGS_INIT: L,
     GUILD_SETTINGS_SET_SECTION: L,
@@ -267,7 +267,7 @@ let V = new H(g.Z, __OVERLAY__ ? {} : {
         permissions: l
       } = i;
       return B(i, {
-        permissions: l = r ? d.IH(l, n) : d.Od(l, n)
+        permissions: l = r ? u.IH(l, n) : u.Od(l, n)
       })
     },
     GUILD_SETTINGS_ROLES_UPDATE_PERMISSION_SET: function(e) {
@@ -309,14 +309,14 @@ let V = new H(g.Z, __OVERLAY__ ? {} : {
       let {
         id: t,
         color: n
-      } = e, r = 0 === n ? null : (0, u.Rf)(n), i = F(t);
+      } = e, r = 0 === n ? null : (0, d.Rf)(n), i = F(t);
       if (null == i) return !1;
-      let l = A.get(t);
+      let l = k.get(t);
       return null != l && (l.currentStyle = "solid", l.styleColors.solid = {
         primary_color: n,
         secondary_color: void 0,
         tertiary_color: void 0
-      }, A.set(t, l), B(i, {
+      }, k.set(t, l), B(i, {
         color: n,
         colorString: r,
         colors: {
@@ -338,9 +338,9 @@ let V = new H(g.Z, __OVERLAY__ ? {} : {
         currentStyle: r
       } = e, i = F(t);
       if (null == i) return !1;
-      let l = (0, h.D)(n),
-        s = A.get(t);
-      return null != s && (s.styleColors[r] = n, s.currentStyle = r, A.set(t, s), B(i, {
+      let l = (0, f.D)(n),
+        s = k.get(t);
+      return null != s && (s.styleColors[r] = n, s.currentStyle = r, k.set(t, s), B(i, {
         color: null != n.primary_color ? n.primary_color : void 0,
         colors: n,
         colorString: l.primaryColor,
@@ -386,14 +386,14 @@ let V = new H(g.Z, __OVERLAY__ ? {} : {
         currentStyle: r
       } = e, i = F(n);
       if (null == i) return !1;
-      let l = A.get(n);
+      let l = k.get(n);
       if (null == l) return !1;
-      A.set(n, {
+      k.set(n, {
         currentStyle: r,
         styleColors: l.styleColors
       });
       let s = l.styleColors[r],
-        a = (0, h.D)(s);
+        a = (0, f.D)(s);
       return B(i, {
         color: null != (t = s.primary_color) ? t : void 0,
         colors: s,
@@ -420,7 +420,7 @@ let V = new H(g.Z, __OVERLAY__ ? {} : {
       w = !0, R.add(r.id), D.set(r.id, n), U()
     },
     GUILD_SETTINGS_CLOSE: function() {
-      r = null, P = T = [], Z.clear(), N.clear(), A.clear(), D.clear(), R = new Set, E = !1, S = !1, w = !1, I = v.QZA.CLOSED
+      r = null, P = T = [], Z.clear(), N.clear(), k.clear(), D.clear(), R = new Set, E = !1, S = !1, w = !1, I = v.QZA.CLOSED
     },
     GUILD_ROLE_CREATE: z,
     GUILD_ROLE_UPDATE: z,
@@ -440,4 +440,4 @@ let V = new H(g.Z, __OVERLAY__ ? {} : {
       M(!1)
     }
   }),
-  W = V
+  V = W

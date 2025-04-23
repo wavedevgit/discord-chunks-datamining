@@ -11,7 +11,7 @@ var r = n(200651),
   o = n(388032),
   c = n(320705);
 
-function d(e) {
+function u(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -30,7 +30,7 @@ function d(e) {
   return e
 }
 
-function u(e, t) {
+function d(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,11 +49,11 @@ function m(e) {
     rule: n,
     onChangeRule: m,
     collapsed: g = !1
-  } = e, [p, h] = i.useState(!g), f = i.useCallback(() => {
-    h(!p)
-  }, [p, h]), x = i.useCallback(e => {
-    m(u(d({}, n), {
-      triggerMetadata: u(d({}, n.triggerMetadata), {
+  } = e, [p, f] = i.useState(!g), h = i.useCallback(() => {
+    f(!p)
+  }, [p, f]), x = i.useCallback(e => {
+    m(d(u({}, n), {
+      triggerMetadata: d(u({}, n.triggerMetadata), {
         regexPatterns: e
       })
     }))
@@ -73,7 +73,7 @@ function m(e) {
       } = e;
       return (0, r.jsx)(l.P3F, {
         onClick: e => {
-          f(), t(e)
+          h(), t(e)
         },
         children: (0, r.jsxs)("div", {
           className: c.header,

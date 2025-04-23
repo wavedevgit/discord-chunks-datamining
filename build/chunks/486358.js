@@ -11,13 +11,13 @@ var i = n(793030),
   a = n(100527),
   o = n(906732),
   c = n(34586),
-  d = n(496675),
-  u = n(999382),
+  u = n(496675),
+  d = n(999382),
   m = n(723914),
   g = n(30818),
   p = n(997698),
-  h = n(354031),
-  f = n(335438),
+  f = n(354031),
+  h = n(335438),
   x = n(166805),
   b = n(981631),
   j = n(388032),
@@ -25,7 +25,7 @@ var i = n(793030),
 let v = function() {
   let {
     analyticsLocations: e
-  } = (0, o.ZP)(a.Z.GUILD_SETTINGS_ENGAGEMENT_PAGE), t = (0, l.e7)([u.Z], () => u.Z.getProps().guild, []), n = (0, l.e7)([d.Z], () => null != t && d.Z.can(b.Plq.MANAGE_GUILD, t)), v = (0, c.E)(t), O = (0, s.l9)(null != t ? t : void 0);
+  } = (0, o.ZP)(a.Z.GUILD_SETTINGS_ENGAGEMENT_PAGE), t = (0, l.e7)([d.Z], () => d.Z.getProps().guild, []), n = (0, l.e7)([u.Z], () => null != t && u.Z.can(b.Plq.MANAGE_GUILD, t)), v = (0, c.E)(t), O = (0, s.l9)(null != t ? t : void 0);
   return null == t ? null : (0, r.jsx)(o.Gt, {
     value: e,
     children: (0, r.jsxs)("main", {
@@ -43,13 +43,13 @@ let v = function() {
           children: j.intl.string(j.t.XCGZFh)
         })]
       }), !0 === O && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(h.P, {
+        children: [(0, r.jsx)(f.P, {
           canManageGuild: n,
           features: t.features
         }), (0, r.jsx)("div", {
           className: _.divider
         })]
-      }), (0, r.jsx)(f.l, {
+      }), (0, r.jsx)(h.l, {
         canManageGuild: n,
         guild: t
       }), void 0 !== v && (0, r.jsxs)(r.Fragment, {

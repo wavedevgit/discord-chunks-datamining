@@ -10,13 +10,13 @@ var r = n(200651),
   a = n(852860),
   o = n(881052),
   c = n(456268),
-  d = n(863249),
-  u = n(246364),
+  u = n(863249),
+  d = n(246364),
   m = n(983736),
   g = n(571728),
   p = n(699553),
-  h = n(434404),
-  f = n(999382),
+  f = n(434404),
+  h = n(999382),
   x = n(654351),
   b = n(658666),
   j = n(384632),
@@ -61,15 +61,15 @@ function I(e) {
   var t;
   let {
     pendingState: l,
-    dirtyState: f,
+    dirtyState: h,
     originalGuild: b,
     settingsGuild: I,
     settingsMetadata: E,
     settingsProfile: S
-  } = e, T = I.id, [P, w] = i.useState(!1), [R, Z] = i.useState(null), D = I.hasFeature(v.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), A = null != (t = (0, g.A)({
+  } = e, T = I.id, [P, w] = i.useState(!1), [R, Z] = i.useState(null), D = I.hasFeature(v.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), k = null != (t = (0, g.A)({
     guildId: I.id
-  })) ? t : 0, k = i.useCallback(() => {
-    Z(null), h.Z.init(T, v.pNK.ACCESS)
+  })) ? t : 0, A = i.useCallback(() => {
+    Z(null), f.Z.init(T, v.pNK.ACCESS)
   }, [T]), L = i.useCallback(async e => {
     try {
       w(!0), await e(), Z(null)
@@ -78,7 +78,7 @@ function I(e) {
     }
   }, []), M = i.useCallback(async e => {
     try {
-      await h.Z.saveGuild(T, e, {
+      await f.Z.saveGuild(T, e, {
         throwErr: !0
       })
     } catch (e) {
@@ -88,13 +88,13 @@ function I(e) {
     }
   }, [T]), G = i.useCallback(async (e, t) => {
     try {
-      await d.ZP.updateVerificationForm(T, e, t)
+      await u.ZP.updateVerificationForm(T, e, t)
     } catch (e) {
       throw Z(new o.Hx(e).getAnyErrorMessage()), e
     }
   }, [T]), U = i.useCallback(async (e, t) => {
     let n = t.length > 0 ? [{
-      field_type: u.QJ.TERMS,
+      field_type: d.QJ.TERMS,
       label: C.intl.string(C.t["9suSIC"]),
       values: t,
       required: !0
@@ -113,7 +113,7 @@ function I(e) {
             features: e
           })
         }
-        f.verificationDirty && await U(e, n)
+        h.verificationDirty && await U(e, n)
       })
     } else if (l.joinType === j.A.APPLY) {
       let {
@@ -127,7 +127,7 @@ function I(e) {
             features: e
           })
         }
-        f.verificationDirty && await G([...e], !0), f.profileDirty && null != S && await (0, p.pV)(I.id, {
+        h.verificationDirty && await G([...e], !0), h.profileDirty && null != S && await (0, p.pV)(I.id, {
           visibility: S.visibility
         })
       })
@@ -137,7 +137,7 @@ function I(e) {
         termRules: t = []
       } = l, n = t.map(e => e.value.trim()).filter(e => "" !== e);
       L(async () => {
-        if (f.verificationDirty && await U(e, n), f.guildDirty) {
+        if (h.verificationDirty && await U(e, n), h.guildDirty) {
           (0, x.UA)(I, b);
           let e = new Set(I.features);
           e.add(v.oNc.DISCOVERABLE), e.delete(v.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), await M({
@@ -156,7 +156,7 @@ function I(e) {
         }
       })
     }
-  }, [l, L, I, f, M, U, S, G, b, E]), F = i.useCallback(() => {
+  }, [l, L, I, h, M, U, S, G, b, E]), F = i.useCallback(() => {
     var e;
     let t = e => {
         if (l.joinType === j.A.DISCOVERABLE && l.settingsView === _.U.ELIGIBLE_DISABLED) return void(0, s.ZDy)(async () => {
@@ -171,13 +171,13 @@ function I(e) {
         e()
       },
       i = e => {
-        if (D && A > 0 && l.joinType !== j.A.APPLY) return void(0, s.ZDy)(async () => {
+        if (D && k > 0 && l.joinType !== j.A.APPLY) return void(0, s.ZDy)(async () => {
           let {
             default: t
           } = await n.e("93884").then(n.bind(n, 826390));
           return n => (0, r.jsx)(t, N(y({}, n), {
             guildId: T,
-            submittedGuildJoinRequestsCount: A,
+            submittedGuildJoinRequestsCount: k,
             onConfirm: e
           }))
         });
@@ -192,13 +192,13 @@ function I(e) {
     }
     if (l.joinType === j.A.APPLY && !(null == (e = l.pendingVerificationFields) ? void 0 : e.some(e => (0, m._C)(e)))) return void Z(C.intl.string(C.t.HGVrIy));
     i(() => t(B))
-  }, [D, B, l, T, A]), z = l.joinType === j.A.DISCOVERABLE && l.settingsView === _.U.ELIGIBLE_DISABLED, H = null != I.description && E.primaryCategoryId !== O.o3 && E.keywords.length > 0;
+  }, [D, B, l, T, k]), z = l.joinType === j.A.DISCOVERABLE && l.settingsView === _.U.ELIGIBLE_DISABLED, H = null != I.description && E.primaryCategoryId !== O.o3 && E.keywords.length > 0;
   return (0, r.jsx)(a.Z, {
     message: z ? C.intl.string(C.t.V2G2Ym) : void 0,
     onSaveText: z ? C.intl.string(C.t["qjtt/v"]) : void 0,
     submitting: P,
     errorMessage: R,
-    onReset: k,
+    onReset: A,
     onSave: F,
     disabled: z && !H
   })
@@ -216,13 +216,13 @@ function E() {
     settingsMetadata: i,
     originalGuild: s,
     guildProfile: o
-  } = (0, l.cj)([f.Z], () => {
+  } = (0, l.cj)([h.Z], () => {
     let {
       guild: e,
       guildMetadata: t,
       originalGuild: n,
       profile: r
-    } = f.Z.getProps();
+    } = h.Z.getProps();
     return {
       settingsGuild: e,
       settingsMetadata: t,
@@ -232,7 +232,7 @@ function E() {
   });
   return null == e || null == n ? null : e.joinType === j.A.DISCOVERABLE && e.settingsView === _.U.INELIGIBLE ? (0, r.jsx)(a.Z, {
     message: C.intl.string(C.t.TEXwRk),
-    onReset: () => h.Z.init(n.id, v.pNK.ACCESS)
+    onReset: () => f.Z.init(n.id, v.pNK.ACCESS)
   }) : (0, r.jsx)(I, {
     pendingState: e,
     dirtyState: t,

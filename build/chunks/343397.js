@@ -1,7 +1,7 @@
 /** Chunk was on 50629 **/
 "use strict";
 n.d(t, {
-  Z: () => d
+  Z: () => u
 });
 var r = n(200651),
   i = n(192379),
@@ -11,17 +11,17 @@ var r = n(200651),
   o = n(999382),
   c = n(388032);
 
-function d(e) {
+function u(e) {
   let {
     profile: t,
     canManageGuild: n
-  } = e, d = t.id, u = (0, l.e7)([o.Z], () => o.Z.getError("name")), m = i.useCallback(e => {
+  } = e, u = t.id, d = (0, l.e7)([o.Z], () => o.Z.getError("name")), m = i.useCallback(e => {
     a.Z.updateGuild({
       name: e
-    }), a.Z.updateGuildProfile(d, {
+    }), a.Z.updateGuildProfile(u, {
       name: e
     })
-  }, [d]);
+  }, [u]);
   return (0, r.jsx)(s.xJW, {
     title: c.intl.string(c.t.X56QcH),
     children: (0, r.jsx)(s.oil, {
@@ -30,7 +30,7 @@ function d(e) {
       value: t.name,
       maxLength: 100,
       onChange: m,
-      error: u
+      error: d
     })
   })
 }

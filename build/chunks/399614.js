@@ -10,8 +10,8 @@ var r = n(200651),
   a = n(710344),
   o = n(734893),
   c = n(8426),
-  d = n(969632),
-  u = n(922112),
+  u = n(969632),
+  d = n(922112),
   m = n(388032),
   g = n(773100);
 
@@ -34,7 +34,7 @@ function p(e) {
   return e
 }
 
-function h(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,21 +46,21 @@ function h(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let f = [],
+let h = [],
   x = function(e) {
     let {
       guildId: t
-    } = e, x = (0, l.Wu)([d.Z], () => {
+    } = e, x = (0, l.Wu)([u.Z], () => {
       var e;
-      return null != (e = d.Z.getSettings().resourceChannels) ? e : f
-    }), b = i.useMemo(() => x.map(e => h(p({}, e), {
+      return null != (e = u.Z.getSettings().resourceChannels) ? e : h
+    }), b = i.useMemo(() => x.map(e => f(p({}, e), {
       id: e.channelId
     })), [x]), {
       handleDragStart: j,
       handleDragReset: _,
       handleDragComplete: v
     } = (0, a.Z)(b, c.lq), O = i.useCallback((e, n) => {
-      let r = d.Z.getSettings();
+      let r = u.Z.getSettings();
       null != r && ((0, c.r2)(e), (0, c.oo)(t, r).then(() => {
         (0, c.mM)(t, e.channelId, n)
       }))
@@ -69,7 +69,7 @@ let f = [],
         let {
           default: e
         } = await n.e("84725").then(n.bind(n, 462499));
-        return n => (0, r.jsx)(e, h(p({}, n), {
+        return n => (0, r.jsx)(e, f(p({}, n), {
           guildId: t,
           onSave: c.r2,
           onIconUpload: O
@@ -78,7 +78,7 @@ let f = [],
     }, [t, O]);
     return (0, r.jsxs)("div", {
       className: g.editResources,
-      children: [x.map((e, n) => (0, r.jsx)(u.Z, {
+      children: [x.map((e, n) => (0, r.jsx)(d.Z, {
         guildId: t,
         resourceChannel: e,
         index: n,

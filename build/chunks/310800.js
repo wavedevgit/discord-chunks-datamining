@@ -11,18 +11,18 @@ var i = n(481060),
   a = n(572004),
   o = n(495437),
   c = n(267101),
-  d = n(863663),
-  u = n(676651),
+  u = n(863663),
+  d = n(676651),
   m = n(613810),
   g = n(391181),
   p = n(388032),
-  h = n(520880);
-let f = "guild-product-listings-header";
+  f = n(520880);
+let h = "guild-product-listings-header";
 
 function x(e) {
   let {
     guildId: t,
-    handleCreateOrEditProduct: u
+    handleCreateOrEditProduct: d
   } = e, x = (0, c.ue)(t, {
     publishedOnly: !1
   }), {
@@ -60,21 +60,21 @@ function x(e) {
       }, n))
     })
   }, v = (e, t) => {
-    (0, a.JG)((0, d.ar)(e, t))
+    (0, a.JG)((0, u.ar)(e, t))
   }, O = x.length > 0;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.vwX, {
-      className: h.productListingsHeader,
-      id: f,
+      className: f.productListingsHeader,
+      id: h,
       children: O ? p.intl.string(p.t.RwuStb) : p.intl.string(p.t.WKMcMT)
     }), O ? (0, r.jsx)("ul", {
-      className: h.productListings,
-      "aria-labelledby": f,
+      className: f.productListings,
+      "aria-labelledby": h,
       children: x.map(e => (0, r.jsx)("li", {
         children: (0, r.jsx)(g.Z, {
           guildId: t,
           product: e,
-          onEditProduct: () => u(e.id),
+          onEditProduct: () => d(e.id),
           onUnpublishProduct: () => j(e.id),
           onDeleteProduct: () => _(e.id, e.name),
           onCopyProductLink: () => v(t, e.id),
@@ -100,12 +100,12 @@ function b(e) {
   } = e, {
     shouldRestrictUpdatingCreatorMonetizationSettings: n
   } = (0, s.gX)(t), l = e => {
-    u.h(t, e)
+    d.h(t, e)
   };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(i.zxk, {
-      className: h.addButton,
-      innerClassName: h.addButtonInner,
+      className: f.addButton,
+      innerClassName: f.addButtonInner,
       onClick: () => l(null),
       disabled: n,
       children: [(0, r.jsx)(i.qJs, {

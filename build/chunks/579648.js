@@ -10,13 +10,13 @@ var r = n(200651),
   a = n(570140),
   o = n(596454),
   c = n(524329),
-  d = n(823379),
-  u = n(999382),
+  u = n(823379),
+  d = n(999382),
   m = n(413584),
   g = n(388032),
   p = n(673305),
-  h = n(62311);
-let f = e => {
+  f = n(62311);
+let h = e => {
     let {
       setWelcomeView: t,
       setShowCreateModal: i
@@ -65,7 +65,7 @@ let f = e => {
           className: p.exampleModal,
           children: [(0, r.jsx)("img", {
             alt: "",
-            className: h.guildIcon,
+            className: f.guildIcon,
             src: n(691466),
             width: 64,
             height: 64
@@ -76,23 +76,23 @@ let f = e => {
           }), (0, r.jsx)(s.Text, {
             variant: "text-sm/normal",
             color: "header-secondary",
-            className: h.guildDescription,
+            className: f.guildDescription,
             children: g.intl.string(g.t.Xvsuk5)
           }), (0, r.jsx)(s.vwX, {
-            className: h.choiceHeader,
+            className: f.choiceHeader,
             children: g.intl.string(g.t["haj5+v"])
           }), (0, r.jsx)("div", {
-            className: h.options,
+            className: f.options,
             children: l.map(e => (0, r.jsxs)("div", {
               className: p.optionContainer,
               children: [(0, r.jsx)(o.Z, {
                 emojiName: e.emoji,
-                className: h.optionEmoji
+                className: f.optionEmoji
               }), (0, r.jsxs)("div", {
-                className: h.optionTextContainer,
+                className: f.optionTextContainer,
                 children: [(0, r.jsx)(s.Text, {
                   variant: "text-md/semibold",
-                  className: h.channelDescription,
+                  className: f.channelDescription,
                   children: e.description
                 }), (0, r.jsx)(s.Text, {
                   variant: "text-xs/normal",
@@ -109,7 +109,7 @@ let f = e => {
   x = () => {
     let {
       guild: e
-    } = (0, l.e7)([u.Z], () => u.Z.getProps()), [t, n] = i.useState(0), [o, g] = i.useState(!1);
+    } = (0, l.e7)([d.Z], () => d.Z.getProps()), [t, n] = i.useState(0), [o, g] = i.useState(!1);
     switch (i.useEffect(() => {
         null != e && a.Z.wait(() => {
           (0, c.RM)(e.id).then(e => {
@@ -122,7 +122,7 @@ let f = e => {
           type: s.$jN.Type.SPINNING_CIRCLE
         });
       case 1:
-        return (0, r.jsx)(f, {
+        return (0, r.jsx)(h, {
           setWelcomeView: n,
           setShowCreateModal: g
         });
@@ -132,6 +132,6 @@ let f = e => {
           showCreateModal: o
         });
       default:
-        return (0, d.vE)(t)
+        return (0, u.vE)(t)
     }
   }

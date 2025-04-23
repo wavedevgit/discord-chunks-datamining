@@ -11,8 +11,8 @@ var i = n(442837),
   a = n(45966),
   o = n(637853),
   c = n(889369),
-  d = n(974513),
-  u = n(290511),
+  u = n(974513),
+  d = n(290511),
   m = n(388032),
   g = n(974283);
 
@@ -20,7 +20,7 @@ function p(e) {
   let {
     guildId: t,
     scrollToQuestions: n
-  } = e, p = (0, i.e7)([a.Z], () => a.Z.isAdvancedMode(t)), h = (0, i.e7)([c.Z], () => c.Z.editedDefaultChannelIds), [f, x] = (0, o.VF)(t, h), [b, j] = (0, d.OA)(t, [...h]), _ = p ? j.length : x.length, v = p ? b.length : f.length, O = _ < u.md, C = v >= u.X, y = j.length - x.length, N = (0, r.jsx)(s.owK, {
+  } = e, p = (0, i.e7)([a.Z], () => a.Z.isAdvancedMode(t)), f = (0, i.e7)([c.Z], () => c.Z.editedDefaultChannelIds), [h, x] = (0, o.VF)(t, f), [b, j] = (0, u.OA)(t, [...f]), _ = p ? j.length : x.length, v = p ? b.length : h.length, O = _ < d.md, C = v >= d.X, y = j.length - x.length, N = (0, r.jsx)(s.owK, {
     size: "sm",
     color: l.Z.unsafe_rawColors.BRAND_500.css,
     secondaryColor: l.Z.unsafe_rawColors.WHITE_100.css,
@@ -30,7 +30,7 @@ function p(e) {
     className: g.icon,
     color: l.Z.colors.WHITE.css,
     secondaryColor: l.Z.colors.BACKGROUND_ACCENT.css
-  }), E = [Math.min(u.X, v) / u.md * 100, Math.min(u.md, _) / u.md * 100], S = !O && C ? [l.Z.colors.TEXT_POSITIVE.css, l.Z.colors.TEXT_POSITIVE.css] : [l.Z.colors.TEXT_BRAND.css, l.Z.colors.TEXT_MUTED.css];
+  }), E = [Math.min(d.X, v) / d.md * 100, Math.min(d.md, _) / d.md * 100], S = !O && C ? [l.Z.colors.TEXT_POSITIVE.css, l.Z.colors.TEXT_POSITIVE.css] : [l.Z.colors.TEXT_BRAND.css, l.Z.colors.TEXT_MUTED.css];
   return (0, r.jsxs)("div", {
     className: g.container,
     children: [(0, r.jsxs)("div", {
@@ -58,7 +58,7 @@ function p(e) {
         variant: "text-xs/normal",
         color: "text-muted",
         children: m.intl.format(m.t.k0COZW, {
-          count: u.md
+          count: d.md
         })
       })]
     }), (0, r.jsxs)("div", {
@@ -67,7 +67,7 @@ function p(e) {
         variant: "text-xs/normal",
         color: "text-muted",
         children: m.intl.format(m.t.PwXgS0, {
-          count: u.X
+          count: d.X
         })
       })]
     }), p && (0, r.jsxs)(r.Fragment, {

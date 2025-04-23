@@ -10,13 +10,13 @@ var r = n(200651),
   a = n(149765),
   o = n(442837),
   c = n(481060),
-  d = n(144991),
-  u = n(496675),
+  u = n(144991),
+  d = n(496675),
   m = n(594174),
   g = n(626135),
   p = n(233608),
-  h = n(700785),
-  f = n(764260),
+  f = n(700785),
+  h = n(764260),
   x = n(631969),
   b = n(95242),
   j = n(420966),
@@ -64,18 +64,18 @@ function S(e) {
     guild: t,
     role: n,
     locked: l
-  } = e, s = (0, o.e7)([m.default], () => m.default.getCurrentUser()), d = i.useMemo(() => h.uB({
+  } = e, s = (0, o.e7)([m.default], () => m.default.getCurrentUser()), u = i.useMemo(() => f.uB({
     user: s,
     context: t
-  }), [s, t]), u = i.useMemo(() => ({
+  }), [s, t]), d = i.useMemo(() => ({
     [n.id]: E(I({}, n), {
-      permissions: h.Hn
+      permissions: f.Hn
     })
-  }), [n]), g = i.useMemo(() => h.uB({
+  }), [n]), g = i.useMemo(() => f.uB({
     user: s,
     context: t,
-    roles: u
-  }), [s, t, u]), p = !a.fS(d, g);
+    roles: d
+  }), [s, t, d]), p = !a.fS(u, g);
   return (0, r.jsx)("div", {
     className: y.clearButtonWrapper,
     children: (0, r.jsx)(c.ua7, {
@@ -92,10 +92,10 @@ function S(e) {
           size: c.zxk.Sizes.TINY,
           look: c.zxk.Looks.LINK,
           color: c.zxk.Colors.LINK,
-          onClick: () => (0, f.TY)(n.id),
+          onClick: () => (0, h.TY)(n.id),
           onMouseEnter: t,
           onMouseLeave: i,
-          disabled: a.fS(n.permissions, h.Hn) || p || l,
+          disabled: a.fS(n.permissions, f.Hn) || p || l,
           children: C.intl.string(C.t["UYq7+P"])
         })
       }
@@ -121,7 +121,7 @@ function T(e) {
   });
 
   function s(e) {
-    return u.Z.can(e, t) ? !u.Z.can(e, t, null, {
+    return d.Z.can(e, t) ? !d.Z.can(e, t, null, {
       [n.id]: E(I({}, n), {
         permissions: a.Od(n.permissions, e)
       })
@@ -133,14 +133,14 @@ function T(e) {
       guild: t,
       role: n,
       locked: l
-    }), i.map((e, t) => (0, r.jsx)(d.Z, {
+    }), i.map((e, t) => (0, r.jsx)(u.Z, {
       className: y.permissionsForm,
       spec: e,
       permissions: n.permissions,
       locked: l,
       onChange: (e, t) => {
         if ("string" == typeof t) throw Error("Unexpected string `allow`");
-        (0, f.lO)(n.id, e, t)
+        (0, h.lO)(n.id, e, t)
       },
       permissionRender: s
     }, t))]
@@ -154,26 +154,26 @@ function P(e) {
     locked: l,
     setSelectedSection: a,
     initialSearchQuery: o
-  } = e, [d, u] = i.useState(null != o ? o : ""), m = i.useMemo(() => p.Z.generateGuildPermissionSpec(t), [t]).map(e => E(I({}, e), {
+  } = e, [u, d] = i.useState(null != o ? o : ""), m = i.useMemo(() => p.Z.generateGuildPermissionSpec(t), [t]).map(e => E(I({}, e), {
     permissions: e.permissions.filter(e => {
-      let t = d.trimStart().toLowerCase();
+      let t = u.trimStart().toLowerCase();
       return e.title.toLowerCase().includes(t) || null != e.description && e.description.toString().toLowerCase().includes(t)
     })
   })).filter(e => e.permissions.length > 0), {
-    headerHeight: h,
-    headerRef: f
+    headerHeight: f,
+    headerRef: h
   } = (0, b.Z)(0), {
     scrolledToTop: x,
     handleScroll: S
   } = (0, j.V)(), P = i.useRef(!1);
   return i.useEffect(() => {
-    P.current || "" === d.trimStart() || (g.default.track(O.rMx.SEARCH_STARTED, {
+    P.current || "" === u.trimStart() || (g.default.track(O.rMx.SEARCH_STARTED, {
       search_type: "Permissions"
     }), P.current = !0)
-  }, [d]), (0, r.jsx)(c.yWw, {
+  }, [u]), (0, r.jsx)(c.yWw, {
     className: y.scroller,
     style: {
-      scrollPaddingTop: h
+      scrollPaddingTop: f
     },
     onScroll: S,
     children: (0, r.jsxs)("div", {
@@ -182,7 +182,7 @@ function P(e) {
         className: s()(N.header, N.stickyHeader, {
           [N.stickyHeaderElevated]: !x
         }),
-        ref: f,
+        ref: h,
         children: [(0, r.jsx)(j.Z, {
           guild: t,
           role: n,
@@ -197,9 +197,9 @@ function P(e) {
           className: y.searchContainer,
           children: (0, r.jsx)(c.E1j, {
             size: c.E1j.Sizes.MEDIUM,
-            query: d,
-            onChange: u,
-            onClear: () => u(""),
+            query: u,
+            onChange: d,
+            onClear: () => d(""),
             placeholder: C.intl.string(C.t.OLJAk5),
             "aria-label": C.intl.string(C.t.OLJAk5)
           })

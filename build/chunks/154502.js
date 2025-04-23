@@ -18,8 +18,8 @@ function a(e) {
   } = e, c = (0, l.c)(null != (t = null == n ? void 0 : n.type) ? t : a, n, o);
   if (null == c) return null;
   let {
-    headerText: d,
-    helperText: u,
+    headerText: u,
+    helperText: d,
     icon: m
   } = c;
   return (0, r.jsxs)("div", {
@@ -39,12 +39,12 @@ function a(e) {
         className: s.actionTextHeader,
         variant: "text-xs/medium",
         color: "interactive-normal",
-        children: [d, null != u && (0, r.jsx)(i.Text, {
+        children: [u, null != d && (0, r.jsx)(i.Text, {
           className: s.actionTextHelper,
           variant: "text-xs/medium",
           color: "text-muted",
           tag: "span",
-          children: u
+          children: d
         })]
       })
     })]

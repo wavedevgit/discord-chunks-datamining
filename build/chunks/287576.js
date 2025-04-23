@@ -16,8 +16,8 @@ function c(e) {
     application: n,
     loading: c
   } = (0, i.Z)(e, a.wW.GUILD_ROLE_SUBSCRIPTIONS), {
-    payoutsByPeriod: d,
-    loading: u
+    payoutsByPeriod: u,
+    loading: d
   } = (0, s.Z)(null == n ? void 0 : n.id, {
     groupType: o.uw.GUILD_PRODUCT,
     teamId: null == n || null == (t = n.team) ? void 0 : t.id
@@ -29,16 +29,16 @@ function c(e) {
     let {
       currentPeriod: e,
       previousPeriods: t
-    } = (0, l.Br)(d), n = (0, l.Uj)(e, t[0]);
+    } = (0, l.Br)(u), n = (0, l.Uj)(e, t[0]);
     return {
       currentPeriod: e,
       previousPeriods: t,
       metrics: n
     }
-  }, [d]);
+  }, [u]);
   return {
-    loading: c || u,
-    payoutsByPeriod: d,
+    loading: c || d,
+    payoutsByPeriod: u,
     currentPeriod: m,
     previousPeriods: g,
     metrics: p,

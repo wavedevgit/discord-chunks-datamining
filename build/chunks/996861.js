@@ -41,7 +41,7 @@ var u = n(623292),
 
 function P(e) {
   let t = e.getGuildId();
-  null != t && s.Z.open(t, (0, c.r)(t))
+  null != t && s.Z.open(t, (0, c.r)())
 }
 
 function _(e, t, n) {

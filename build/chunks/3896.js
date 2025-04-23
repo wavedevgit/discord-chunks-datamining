@@ -10,8 +10,8 @@ var r = n(200651),
   a = n(481060),
   o = n(456935),
   c = n(259580),
-  d = n(981631),
-  u = n(388032),
+  u = n(981631),
+  d = n(388032),
   m = n(296205);
 
 function g(e) {
@@ -63,18 +63,18 @@ function g(e) {
       children: [(0, r.jsx)(a.X6q, {
         variant: "text-md/semibold",
         color: "header-primary",
-        children: u.intl.string(u.t.DpRdYG)
+        children: d.intl.string(d.t.DpRdYG)
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
-        children: u.intl.string(u.t.mA17eH)
+        children: d.intl.string(d.t.mA17eH)
       }), (0, r.jsx)("div", {
         className: m.__invalid_pillRow,
         children: (0, r.jsxs)(a.Text, {
           variant: "text-xs/medium",
           color: "interactive-normal",
           className: m.valuePill,
-          children: [l === d.sFg.VERY_HIGH ? (0, r.jsx)(a.AtH, {
+          children: [l === u.sFg.VERY_HIGH ? (0, r.jsx)(a.AtH, {
             size: "custom",
             color: "currentColor",
             width: 16,

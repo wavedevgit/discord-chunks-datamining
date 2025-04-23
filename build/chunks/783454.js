@@ -10,8 +10,8 @@ var r = n(200651),
   a = n(481060),
   o = n(313201),
   c = n(259580),
-  d = n(404203),
-  u = n(388032),
+  u = n(404203),
+  d = n(388032),
   m = n(551789);
 
 function g(e) {
@@ -20,14 +20,14 @@ function g(e) {
     title: n,
     description: l,
     children: g
-  } = e, [p, h] = i.useState(t), f = () => h(e => !e), x = (0, o.Dt)();
+  } = e, [p, f] = i.useState(t), h = () => f(e => !e), x = (0, o.Dt)();
   return (0, r.jsxs)("div", {
     className: m.container,
-    children: [(0, r.jsx)(d.Z, {
+    children: [(0, r.jsx)(u.Z, {
       className: s()(m.header, {
         [m.headerWithDescription]: p && null != l
       }),
-      onClick: f,
+      onClick: h,
       children: e => {
         let {
           areaRef: t,
@@ -38,8 +38,8 @@ function g(e) {
             variant: "heading-md/semibold",
             children: n
           }), (0, r.jsx)(a.P3F, {
-            onClick: i(f),
-            "aria-label": u.intl.string(u.t.e5eQOz),
+            onClick: i(h),
+            "aria-label": d.intl.string(d.t.e5eQOz),
             "aria-controls": x,
             "aria-expanded": p,
             focusProps: {

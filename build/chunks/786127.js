@@ -15,14 +15,14 @@ let o = function(e) {
     index: n,
     isDragEnabled: o,
     isDropHovered: c,
-    onDrop: d,
-    onEdit: u,
+    onDrop: u,
+    onEdit: d,
     onRemove: m,
     canRemove: g,
     actionsLocation: p,
-    fieldStyle: h
+    fieldStyle: f
   } = e, {
-    label: f,
+    label: h,
     placeholder: x
   } = t;
   return (0, r.jsx)(l.Z, {
@@ -30,13 +30,13 @@ let o = function(e) {
     index: n,
     isDragEnabled: o,
     isDropHovered: c,
-    onDrop: d,
-    onEdit: u,
+    onDrop: u,
+    onEdit: d,
     onRemove: m,
-    title: f,
+    title: h,
     canRemove: g,
     actionsLocation: p,
-    fieldStyle: h,
+    fieldStyle: f,
     children: (0, r.jsx)(i.Gi, {
       className: a.fieldBackground,
       placeholder: null != x ? x : s.intl.string(s.t["Sqn+Wl"]),

@@ -1,7 +1,7 @@
 /** Chunk was on 50629 **/
 "use strict";
 n.d(t, {
-  h: () => u
+  h: () => d
 }), n(583741);
 var r = n(192379),
   i = n(392711),
@@ -11,12 +11,12 @@ var r = n(192379),
   o = n(77498),
   c = n(570911);
 
-function d(e) {
+function u(e) {
   var t;
   return null != (t = c.gQ.get(e)) ? t : 0
 }
 
-function u() {
+function d() {
   let e = (0, s.e7)([o.Z], () => o.Z.games),
     t = r.useMemo(() => l()(e).filter(e => !((null == e ? void 0 : e.themes) != null && e.themes.includes(a.u.EROTIC))).map(e => ({
       value: e.id,
@@ -25,9 +25,9 @@ function u() {
       let {
         value: t
       } = e;
-      return d(t)
+      return u(t)
     }).reverse().value(), [e]),
-    n = r.useCallback((e, t) => d(t.item.value) - d(e.item.value), []);
+    n = r.useCallback((e, t) => u(t.item.value) - u(e.item.value), []);
   return {
     options: t,
     matchSorterOptions: r.useMemo(() => ({

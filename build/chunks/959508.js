@@ -10,13 +10,13 @@ var r = n(200651),
   a = n(442837),
   o = n(481060),
   c = n(603211),
-  d = n(710344),
-  u = n(637853),
+  u = n(710344),
+  d = n(637853),
   m = n(107862),
   g = n(259580),
   p = n(823379),
-  h = n(889369),
-  f = n(570961),
+  f = n(889369),
+  h = n(570961),
   x = n(208665),
   b = n(976983),
   j = n(290511),
@@ -31,7 +31,7 @@ function C(e) {
   let {
     guild: n,
     prompt: l,
-    disableAutofocus: d,
+    disableAutofocus: u,
     promptIndex: b,
     dragIndex: C,
     includeCount: I,
@@ -41,10 +41,10 @@ function C(e) {
     onPromptDragReset: P
   } = e, {
     dropdownsAllowed: w
-  } = (0, m.Ug)(n.id), R = (0, a.e7)([h.Z], () => h.Z.editedDefaultChannelIds), Z = w ? j.qm : j.M$, {
+  } = (0, m.Ug)(n.id), R = (0, a.e7)([f.Z], () => f.Z.editedDefaultChannelIds), Z = w ? j.qm : j.M$, {
     drag: D,
-    dragSourcePosition: A,
-    drop: k,
+    dragSourcePosition: k,
+    drop: A,
     setIsDraggable: L
   } = (0, c.Z)({
     type: "ONBOARDING_PROMPT_CARD",
@@ -56,29 +56,29 @@ function C(e) {
   }), M = (0, a.cj)([x.Z], () => {
     var e;
     return null != (e = x.Z.errors[b]) ? e : O
-  }), [G, U] = i.useState(!1), [B, F] = i.useState(!1), z = null != (t = M.options) ? t : M.optionErrors.filter(p.lm)[0], H = M.config, V = w && l.options.length >= j.fY, W = (0, u.kl)(n.id, Array.from(R), [l]).length - R.size, Y = i.useRef(null), K = i.useRef(b);
+  }), [G, U] = i.useState(!1), [B, F] = i.useState(!1), z = null != (t = M.options) ? t : M.optionErrors.filter(p.lm)[0], H = M.config, W = w && l.options.length >= j.fY, V = (0, d.kl)(n.id, Array.from(R), [l]).length - R.size, Y = i.useRef(null), K = i.useRef(b);
   return (i.useEffect(() => {
     K.current = b
   }), i.useLayoutEffect(() => {
     setTimeout(() => {
-      if (0 === K.current && !d) {
+      if (0 === K.current && !u) {
         var e;
         null == (e = Y.current) || e.focus()
       }
     }, 0)
-  }, [d]), G) ? (0, r.jsx)(o.tEY, {
+  }, [u]), G) ? (0, r.jsx)(o.tEY, {
     children: (0, r.jsxs)("div", {
       tabIndex: 0,
       onFocus: () => F(!0),
       onBlur: () => F(!1),
       onMouseLeave: () => F(!1),
       className: s()(v.container, {
-        [v.dropIndicatorBefore]: null != A && b < A,
-        [v.dropIndicatorAfter]: null != A && b > A,
+        [v.dropIndicatorBefore]: null != k && b < k,
+        [v.dropIndicatorAfter]: null != k && b > k,
         [v.containerFocused]: B
       }),
       ref: e => {
-        D(k(e))
+        D(A(e))
       },
       children: [(0, r.jsx)("div", {
         className: v.dragContainer,
@@ -113,7 +113,7 @@ function C(e) {
         className: v.removeButton,
         children: (0, r.jsx)(o.P3F, {
           className: v.closeIcon,
-          onClick: () => (0, f.fi)(n, l.id),
+          onClick: () => (0, h.fi)(n, l.id),
           children: (0, r.jsx)(o.XHJ, {
             size: "xs",
             color: "currentColor"
@@ -127,12 +127,12 @@ function C(e) {
       onFocus: () => F(!0),
       onBlur: () => F(!1),
       className: s()(v.container, {
-        [v.dropIndicatorBefore]: null != A && b < A,
-        [v.dropIndicatorAfter]: null != A && b > A,
+        [v.dropIndicatorBefore]: null != k && b < k,
+        [v.dropIndicatorAfter]: null != k && b > k,
         [v.containerFocused]: B
       }),
       ref: e => {
-        D(k(e))
+        D(A(e))
       },
       children: [(0, r.jsx)("div", {
         className: v.dragContainer,
@@ -155,7 +155,7 @@ function C(e) {
         inputClassName: v.titleInput,
         inputRef: Y,
         value: l.title,
-        onChange: e => (0, f.Kk)(n, l.id, {
+        onChange: e => (0, h.Kk)(n, l.id, {
           title: e
         }),
         placeholder: _.intl.string(_.t.QMCuCg),
@@ -168,7 +168,7 @@ function C(e) {
         className: v.optionsHeader,
         variant: "text-xs/semibold",
         color: "text-muted",
-        children: V ? _.intl.formatToPlainString(_.t.AbvhZG, {
+        children: W ? _.intl.formatToPlainString(_.t.AbvhZG, {
           count: l.options.length,
           total: Z
         }) : _.intl.formatToPlainString(_.t.b7VxYW, {
@@ -191,7 +191,7 @@ function C(e) {
             size: 20,
             type: o.XZJ.Types.INVERTED,
             value: !l.singleSelect,
-            onChange: (e, t) => (0, f.Kk)(n, l.id, {
+            onChange: (e, t) => (0, h.Kk)(n, l.id, {
               singleSelect: !t
             }),
             children: (0, r.jsx)(o.Text, {
@@ -203,7 +203,7 @@ function C(e) {
             size: 20,
             type: o.XZJ.Types.INVERTED,
             value: l.inOnboarding && l.required,
-            onChange: (e, t) => (0, f.Kk)(n, l.id, {
+            onChange: (e, t) => (0, h.Kk)(n, l.id, {
               required: t
             }),
             disabled: !l.inOnboarding,
@@ -211,7 +211,7 @@ function C(e) {
               variant: "text-sm/normal",
               color: "interactive-normal",
               children: I ? _.intl.formatToPlainString(_.t["0re8T0"], {
-                count: W
+                count: V
               }) : _.intl.string(_.t.Ur8Vrq)
             })
           }) : null]
@@ -228,7 +228,7 @@ function C(e) {
           className: v.removeButton,
           children: (0, r.jsx)(o.P3F, {
             className: v.closeIcon,
-            onClick: () => (0, f.fi)(n, l.id),
+            onClick: () => (0, h.fi)(n, l.id),
             children: (0, r.jsx)(o.XHJ, {
               size: "xs",
               color: "currentColor"
@@ -254,7 +254,7 @@ function y(e) {
   function a(e) {
     return (0, r.jsx)(o.P3F, {
       className: v.example,
-      onClick: () => (0, f.Kk)(n, t.id, {
+      onClick: () => (0, h.Kk)(n, t.id, {
         title: e
       }),
       children: (0, r.jsx)(o.Text, {
@@ -287,9 +287,9 @@ function N(e) {
     dropdownsAllowed: a
   } = (0, m.Ug)(t.id), o = a ? j.qm : j.M$, {
     handleDragStart: c,
-    handleDragReset: u,
+    handleDragReset: d,
     handleDragComplete: g
-  } = (0, d.Z)(n.options, e => (0, f.Kk)(t, n.id, {
+  } = (0, u.Z)(n.options, e => (0, h.Kk)(t, n.id, {
     options: e
   }));
   return (0, r.jsxs)("div", {
@@ -302,7 +302,7 @@ function N(e) {
       option: e,
       onDragStart: c,
       onDragComplete: g,
-      onDragReset: u,
+      onDragReset: d,
       hasError: null != s.optionErrors[a]
     }, e.id)), n.options.length < o ? (0, r.jsx)(b.B, {
       guild: t,

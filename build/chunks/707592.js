@@ -1,34 +1,34 @@
 /** Chunk was on 95140 **/
 t.d(n, {
-  Gi: () => c,
+  Gi: () => s,
   YJ: () => d,
   zY: () => u
 });
-var i = t(200651);
+var l = t(200651);
 t(192379);
-var l = t(481060),
+var i = t(481060),
   a = t(489813),
   o = t(592286),
   r = t(388032),
-  s = t(667084);
+  c = t(667084);
 
-function c(e) {
+function s(e) {
   let {
     value: n,
     placeholder: t,
     onChange: a,
     disabled: r,
-    autofocus: s,
-    className: c
+    autofocus: c,
+    className: s
   } = e;
-  return (0, i.jsx)(l.oil, {
-    inputClassName: c,
+  return (0, l.jsx)(i.oil, {
+    inputClassName: s,
     maxLength: o.tL,
     value: null != n ? n : "",
     placeholder: t,
     onChange: a,
     disabled: r,
-    autoFocus: s
+    autoFocus: c
   })
 }
 
@@ -36,10 +36,10 @@ function d(e) {
   let {
     formField: n
   } = e;
-  return (0, i.jsx)(a.CA, {
+  return (0, l.jsx)(a.CA, {
     title: n.label,
-    children: (0, i.jsx)(l.Kx8, {
-      className: s.disabledFieldBackground,
+    children: (0, l.jsx)(i.Kx8, {
+      className: c.disabledFieldBackground,
       value: n.response,
       disabled: !0,
       autoFocus: !0,
@@ -52,12 +52,12 @@ function u(e) {
   let {
     formField: n,
     autofocus: t,
-    onChange: l
+    onChange: i
   } = e;
-  return (0, i.jsx)(a.hK, {
+  return (0, l.jsx)(a.hK, {
     title: n.label,
-    children: (0, i.jsx)(c, {
-      onChange: l,
+    children: (0, l.jsx)(s, {
+      onChange: i,
       value: n.response,
       autofocus: t,
       placeholder: r.intl.string(r.t["Sqn+Wl"])

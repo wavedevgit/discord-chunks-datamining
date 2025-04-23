@@ -11,8 +11,8 @@ var r = n(200651),
   a = n(587431),
   o = n(756066),
   c = n(388032),
-  d = n(601781),
-  u = n(270395);
+  u = n(601781),
+  d = n(270395);
 
 function m(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -44,8 +44,8 @@ function p(e) {
   } = e;
   return (0, r.jsxs)(l.zxk, {
     color: l.Ttl.CUSTOM,
-    className: d.ineligibleButton,
-    innerClassName: d.ineligibleButtonContent,
+    className: u.ineligibleButton,
+    innerClassName: u.ineligibleButtonContent,
     grow: !0,
     onClick: function() {
       (0, l.ZDy)(async () => {
@@ -83,20 +83,20 @@ function p(e) {
   })
 }
 
-function h(e) {
+function f(e) {
   let {
     guild: t,
     checkboxText: n
   } = e, {
     canSubmitAcceptance: o,
-    error: u,
+    error: d,
     loading: m,
     submitAcceptTermsRequest: g
-  } = (0, s.Z)(t.id), [p, h] = i.useState(!1);
+  } = (0, s.Z)(t.id), [p, f] = i.useState(!1);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.XZJ, {
       onChange: function() {
-        h(e => !e)
+        f(e => !e)
       },
       size: 20,
       type: l.XZJ.Types.INVERTED,
@@ -109,24 +109,24 @@ function h(e) {
     }), (0, r.jsx)(l.LZC, {
       size: 24
     }), (0, r.jsx)(l.zxk, {
-      className: d.ctaButton,
+      className: u.ctaButton,
       disabled: !p || !o,
       grow: !0,
       onClick: g,
       size: l.zxk.Sizes.LARGE,
       submitting: m,
       children: c.intl.string(c.t.NL5ZNT)
-    }), null != u && (0, r.jsxs)(r.Fragment, {
+    }), null != d && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.LZC, {
         size: 24
       }), (0, r.jsx)(a.Z, {
-        children: u.getAnyErrorMessage()
+        children: d.getAnyErrorMessage()
       })]
     })]
   })
 }
 
-function f(e) {
+function h(e) {
   let {
     guild: t,
     monetizationEligibility: n
@@ -136,12 +136,12 @@ function f(e) {
     refreshEligibility: s,
     eligibility: a,
     eligibleForMonetization: c,
-    acceptTermsCheckboxText: d,
-    wasRejectedInV1: u
+    acceptTermsCheckboxText: u,
+    wasRejectedInV1: d
   } = n;
-  return c ? u ? (0, r.jsx)(o.Z, m({}, n)) : (0, r.jsx)(h, {
+  return c ? d ? (0, r.jsx)(o.Z, m({}, n)) : (0, r.jsx)(f, {
     guild: t,
-    checkboxText: d
+    checkboxText: u
   }) : (0, r.jsx)(p, {
     guild: t,
     eligibility: a,
@@ -157,13 +157,13 @@ function x(e) {
     monetizationEligibility: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: d.ctaContainer,
+    className: u.ctaContainer,
     children: [(0, r.jsx)("img", {
-      className: d.heroBanner,
-      src: u,
+      className: u.heroBanner,
+      src: d,
       alt: c.intl.string(c.t.Af4klJ)
     }), (0, r.jsxs)("div", {
-      className: d.ctaContent,
+      className: u.ctaContent,
       children: [(0, r.jsx)(l.X6q, {
         variant: "heading-xl/semibold",
         color: "header-primary",
@@ -176,7 +176,7 @@ function x(e) {
         children: c.intl.string(c.t["41wkMT"])
       }), (0, r.jsx)(l.LZC, {
         size: 24
-      }), (0, r.jsx)(f, {
+      }), (0, r.jsx)(h, {
         guild: t,
         monetizationEligibility: n
       })]

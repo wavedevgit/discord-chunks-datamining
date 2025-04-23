@@ -9,12 +9,12 @@ var r = n(192379),
   s = n(581050);
 
 function a(e) {
-  let [t, n] = r.useState(null != e), [a, o] = r.useState(), [c, d] = r.useState(), u = r.useCallback(async e => {
+  let [t, n] = r.useState(null != e), [a, o] = r.useState(), [c, u] = r.useState(), d = r.useCallback(async e => {
     n(!0), o(void 0);
     try {
-      var t, r, a, c, u;
+      var t, r, a, c, d;
       let n = await l.yk(e);
-      d({
+      u({
         isEligibleForMonetization: n.sufficient,
         hasSufficientMembers: n.size,
         hasEnabled2FA: n.mfa,
@@ -34,7 +34,7 @@ function a(e) {
         rejection: n.rejection,
         guildMemberCount: null == (a = n.health_score) ? void 0 : a.guild_size,
         communicatorCount: null == (c = n.health_score) ? void 0 : c.communicators,
-        retentionScore: null == (u = n.health_score) ? void 0 : u.perc_ret_w1
+        retentionScore: null == (d = n.health_score) ? void 0 : d.perc_ret_w1
       })
     } catch (e) {
       o(new i.Z(e))
@@ -47,7 +47,7 @@ function a(e) {
     loading: t,
     eligibility: c,
     refresh: r.useCallback(() => {
-      null != e && u(e)
-    }, [e, u])
+      null != e && d(e)
+    }, [e, d])
   }
 }

@@ -11,9 +11,9 @@ var i = n(481060),
   a = n(14920),
   o = n(961618),
   c = n(217684),
-  d = n(174618);
+  u = n(174618);
 
-function u(e) {
+function d(e) {
   let {
     imageSrc: t,
     description: n
@@ -40,7 +40,7 @@ function u(e) {
 
 function m() {
   let e = [{
-    imageSrc: d,
+    imageSrc: u,
     description: s.intl.string(s.t.lT0ZNT)
   }, {
     imageSrc: o,
@@ -58,7 +58,7 @@ function m() {
       size: 24
     }), (0, r.jsx)("div", {
       className: a.howItWorksContainer,
-      children: e.map(e => (0, r.jsx)(u, {
+      children: e.map(e => (0, r.jsx)(d, {
         imageSrc: e.imageSrc,
         description: e.description
       }, e.imageSrc))

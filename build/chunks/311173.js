@@ -10,14 +10,14 @@ var r = n(200651),
   a = n(481060),
   o = n(63063),
   c = n(256569),
-  d = n(858457),
-  u = n(273504),
+  u = n(858457),
+  d = n(273504),
   m = n(981631),
   g = n(388032),
   p = n(409866);
-let h = o.Z.getArticleURL(m.BhN.GUILD_AUTOMOD_REGEX);
+let f = o.Z.getArticleURL(m.BhN.GUILD_AUTOMOD_REGEX);
 
-function f(e) {
+function h(e) {
   let {
     hasErrors: t,
     text: n,
@@ -30,7 +30,7 @@ function f(e) {
       variant: "text-xs/medium",
       color: "text-danger",
       children: null != i ? i : g.intl.format(g.t.jKYAPj, {
-        helpArticle: h
+        helpArticle: f
       })
     })
   }) : (0, r.jsx)(a.Text, {
@@ -53,7 +53,7 @@ function x(e) {
     errors: b,
     validatePatternsChanged: j,
     validateEditingValueChanged: _
-  } = (0, d.Z)(l, a), [v] = i.useState(() => ({
+  } = (0, u.Z)(l, a), [v] = i.useState(() => ({
     tags: m,
     value: "",
     selections: [],
@@ -85,17 +85,17 @@ function x(e) {
       onChangeTags: C,
       onChangeNewTagValue: y,
       tagErrors: O,
-      maxTags: u.VW
-    }), (0, r.jsx)(f, {
+      maxTags: d.VW
+    }), (0, r.jsx)(h, {
       text: g.intl.format(g.t["PGC/AA"], {
-        helpArticle: h
+        helpArticle: f
       }),
       hasErrors: b.length > 0 || null != x,
       errorText: null != (n = null == (t = b.find(e => {
         let {
           pattern: t
         } = e;
-        return t === d.r
+        return t === u.r
       })) ? void 0 : t.message) ? n : null == x ? void 0 : x.message
     })]
   })

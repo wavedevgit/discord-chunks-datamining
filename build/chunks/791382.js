@@ -1,7 +1,7 @@
 /** Chunk was on 50629 **/
 "use strict";
 n.d(t, {
-  H: () => u,
+  H: () => d,
   Z: () => m
 });
 var r = n(200651);
@@ -12,8 +12,8 @@ var i = n(120356),
   a = n(264451),
   o = n(75775),
   c = n(388032),
-  d = n(243110);
-let u = e => {
+  u = n(243110);
+let d = e => {
     let {
       value: t,
       isPercent: n
@@ -21,17 +21,17 @@ let u = e => {
     if (null == t) return null;
     let {
       formattedValue: i,
-      isPositive: u
+      isPositive: d
     } = (0, a.m5)(t, n);
     return (0, r.jsxs)("div", {
-      className: d.trendContainer,
+      className: u.trendContainer,
       children: [(0, r.jsx)(o.Z, {
-        className: l()(d.chartLineIcon, {
-          [d.chartLineIconNegative]: !u
+        className: l()(u.chartLineIcon, {
+          [u.chartLineIconNegative]: !d
         })
       }), (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
-        className: d.trendDescription,
+        className: u.trendDescription,
         children: c.intl.format(c.t.OTHOvb, {
           value: i
         })
@@ -47,13 +47,13 @@ let u = e => {
       tooltip: a
     } = e;
     return (0, r.jsxs)("div", {
-      className: d.container,
+      className: u.container,
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsxs)("div", {
-          className: d.labelContainer,
+          className: u.labelContainer,
           children: [(0, r.jsx)(s.Text, {
             variant: "text-xs/medium",
-            className: d.label,
+            className: u.label,
             children: t
           }), null != a && (0, r.jsx)(s.ua7, {
             text: a,
@@ -77,15 +77,15 @@ let u = e => {
             }({
               size: "xs",
               color: "currentColor",
-              className: d.labelTooltipIcon
+              className: u.labelTooltipIcon
             }, e))
           }), null != n ? (0, r.jsx)(s.Text, {
             variant: "text-xs/normal",
-            className: d.sublabel,
+            className: u.sublabel,
             children: n
           }) : null]
         }), (0, r.jsx)(s.Text, {
-          className: d.value,
+          className: u.value,
           variant: "text-sm/normal",
           children: i
         })]

@@ -10,13 +10,13 @@ var r = n(200651),
   a = n(200100),
   o = n(442837),
   c = n(692547),
-  d = n(215569),
-  u = n(780384),
+  u = n(215569),
+  d = n(780384),
   m = n(481060),
   g = n(410030),
   p = n(367907),
-  h = n(768762),
-  f = n(626135),
+  f = n(768762),
+  h = n(626135),
   x = n(585483),
   b = n(999382),
   j = n(743475),
@@ -36,7 +36,7 @@ var r = n(200651),
   Z = n(388032),
   D = n(179556);
 
-function A(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -55,7 +55,7 @@ function A(e) {
   return e
 }
 
-function k(e, t) {
+function A(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -91,15 +91,15 @@ function M(e) {
     return null != e && !N.Z.isEducationUpsellDismissed(e)
   }), F = (0, g.ZP)(), z = i.useRef(null), [{
     spring: H
-  }, V] = (0, m.q_F)(() => ({
+  }, W] = (0, m.q_F)(() => ({
     spring: 0
   }), "animate-always");
   i.useEffect(() => {
     function e() {
-      V({
+      W({
         spring: 1,
         config: a.config.gentle
-      }), V({
+      }), W({
         spring: 0,
         config: a.config.gentle,
         delay: 1e3
@@ -108,10 +108,10 @@ function M(e) {
     return x.S.subscribe(R.CkL.EMPHASIZE_NOTICE, e), () => {
       x.S.unsubscribe(R.CkL.EMPHASIZE_NOTICE, e)
     }
-  }, [V]);
-  let W = (0, m.dQu)(c.Z.colors.BACKGROUND_FLOATING).hex(),
+  }, [W]);
+  let V = (0, m.dQu)(c.Z.colors.BACKGROUND_FLOATING).hex(),
     Y = (0, m.dQu)(c.Z.unsafe_rawColors.PRIMARY_160).hex(),
-    K = (0, u.wj)(F) ? W : Y,
+    K = (0, d.wj)(F) ? V : Y,
     X = H.to({
       range: [0, 1],
       output: [(0, m.dQu)(c.Z.unsafe_rawColors.WHITE_500).hex(), (0, m.dQu)(c.Z.colors.TEXT_NORMAL).hex()]
@@ -144,13 +144,13 @@ function M(e) {
       }
       return !0
     }, $ = async () => {
-      f.default.track(R.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, k(A({}, (0, p.hH)(l)), {
+      h.default.track(R.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, A(k({}, (0, p.hH)(l)), {
         step: I.PG[b],
         back: !1,
         skip: !M
       })), (0, _.Nb)((0, I.lg)(b)), await J() && (0, _.IG)(l, b)
     }, ee = async () => {
-      f.default.track(R.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, k(A({}, (0, p.hH)(l)), {
+      h.default.track(R.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, A(k({}, (0, p.hH)(l)), {
         step: I.PG[b],
         back: !0,
         skip: !1
@@ -168,9 +168,9 @@ function M(e) {
       disabled: B || U,
       children: (0, r.jsxs)("span", {
         className: D.button,
-        children: [(0, r.jsx)(h.Z, {
+        children: [(0, r.jsx)(f.Z, {
           className: D.arrow,
-          direction: h.Z.Directions.LEFT
+          direction: f.Z.Directions.LEFT
         }), Z.intl.string(Z.t["13/7kZ"])]
       })
     }),
@@ -186,13 +186,13 @@ function M(e) {
         style: {
           color: X
         },
-        children: [G ? Z.intl.string(Z.t.PDTjLC) : Z.intl.string(Z.t["5WxrcX"]), (0, r.jsx)(h.Z, {
+        children: [G ? Z.intl.string(Z.t.PDTjLC) : Z.intl.string(Z.t["5WxrcX"]), (0, r.jsx)(f.Z, {
           className: D.arrow,
-          direction: h.Z.Directions.RIGHT
+          direction: f.Z.Directions.RIGHT
         })]
       })
     });
-  return (0, r.jsx)(d.W, {
+  return (0, r.jsx)(u.W, {
     component: "div",
     children: (0, r.jsx)(m.oXn, {
       className: D.noticeRegion,

@@ -10,8 +10,8 @@ var r = n(200651),
   a = n(200100),
   o = n(481060),
   c = n(393238),
-  d = n(388032),
-  u = n(212787);
+  u = n(388032),
+  d = n(212787);
 let m = i.memo(function(e) {
   var t, n;
   let {
@@ -19,8 +19,8 @@ let m = i.memo(function(e) {
     children: m,
     isExpanded: g,
     isStuck: p,
-    onExpand: h,
-    disableAnimation: f,
+    onExpand: f,
+    disableAnimation: h,
     disableBackground: x
   } = e, [b, j] = i.useState(!0), [_, v] = i.useState(!1), {
     ref: O,
@@ -65,7 +65,7 @@ let m = i.memo(function(e) {
     onRest: () => {
       v(!0)
     }
-  }, b || f ? "animate-never" : "respect-motion-settings");
+  }, b || h ? "animate-never" : "respect-motion-settings");
   return i.useLayoutEffect(() => {
     v(!1), E(g)
   }, [g]), i.useLayoutEffect(() => {
@@ -74,22 +74,22 @@ let m = i.memo(function(e) {
     }, 100);
     return () => clearTimeout(e)
   }, []), (0, r.jsx)(o.P3F, {
-    className: s()(u.editCard, {
-      [u.toggled]: g,
-      [u.noBackground]: x
+    className: s()(d.editCard, {
+      [d.toggled]: g,
+      [d.noBackground]: x
     }),
     children: (0, r.jsxs)(a.animated.div, {
-      className: s()(u.contentExpandContainer, {
-        [u.showOverflow]: g && _
+      className: s()(d.contentExpandContainer, {
+        [d.showOverflow]: g && _
       }),
       style: S,
       children: [(0, r.jsx)(o.P3F, {
         innerRef: O,
-        onClick: p ? void 0 : h,
-        className: s()(u.innerHeader, {
-          [u.toggled]: g && p
+        onClick: p ? void 0 : f,
+        className: s()(d.innerHeader, {
+          [d.toggled]: g && p
         }),
-        "aria-label": d.intl.string(d.t.dcl9MT),
+        "aria-label": u.intl.string(u.t.dcl9MT),
         children: l
       }), (0, r.jsx)("div", {
         ref: y,

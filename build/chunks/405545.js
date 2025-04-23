@@ -16,27 +16,27 @@ let c = function(e) {
     index: n,
     isDragEnabled: i,
     isDropHovered: c,
-    onDrop: d,
-    onEdit: u,
+    onDrop: u,
+    onEdit: d,
     onRemove: m,
     canRemove: g,
     actionsLocation: p,
-    fieldStyle: h
+    fieldStyle: f
   } = e, {
-    label: f
+    label: h
   } = t;
   return (0, r.jsx)(a.Z, {
     field: t,
     index: n,
     isDragEnabled: i,
     isDropHovered: c,
-    onDrop: d,
-    onEdit: u,
+    onDrop: u,
+    onEdit: d,
     onRemove: m,
-    title: f,
+    title: h,
     canRemove: g,
     actionsLocation: p,
-    fieldStyle: h,
+    fieldStyle: f,
     children: (0, r.jsx)(s.BO, {
       field: t,
       value: void 0,

@@ -1,26 +1,21 @@
 /** Chunk was on 33213 **/
 n.d(t, {
-  t: () => c
+  t: () => a
 });
 var i = n(163400),
   r = n(995532),
   l = n(496675),
-  s = n(600553),
-  o = n(896007);
-let a = {
+  s = n(896007);
+let o = {
   HEADER: "HEADER",
   DIVIDER: "DIVIDER"
 };
 
-function c(e) {
+function a(e) {
   var t, n;
-  let c = l.Z.getGuildPermissionProps(e),
-    u = (0, i.p)(e.id).length > 0,
-    d = (0, s.i1)({
-      guildId: e.id,
-      location: "getGuildSettingsSections"
-    });
-  return o.ZP.generateSections((t = function(e) {
+  let a = l.Z.getGuildPermissionProps(e),
+    c = (0, i.p)(e.id).length > 0;
+  return s.ZP.generateSections((t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);
@@ -39,10 +34,9 @@ function c(e) {
     return e
   }({
     showDirtyGuildTemplateIndicator: !1
-  }, c), n = n = {
-    canUnlinkChannels: u,
-    welcomeScreenEmpty: r.Z.isEmpty(e.id),
-    isGuildSettingsFoundationEnabled: d
+  }, a), n = n = {
+    canUnlinkChannels: c,
+    welcomeScreenEmpty: r.Z.isEmpty(e.id)
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -56,6 +50,6 @@ function c(e) {
     let {
       section: t
     } = e;
-    return t !== a.HEADER && t !== a.DIVIDER
+    return t !== o.HEADER && t !== o.DIVIDER
   }).filter(e => null == e.predicate || e.predicate())
 }

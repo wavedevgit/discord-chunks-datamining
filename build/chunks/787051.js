@@ -8,7 +8,7 @@ var r = n(192379),
   l = n(53365);
 
 function s(e) {
-  let [t, n] = r.useState(!0), [s, a] = r.useState(), [o, c] = r.useState(), d = r.useCallback(async e => {
+  let [t, n] = r.useState(!0), [s, a] = r.useState(), [o, c] = r.useState(), u = r.useCallback(async e => {
     n(!0), a(void 0);
     try {
       let t = await l.wZ(e);
@@ -20,8 +20,8 @@ function s(e) {
     }
   }, []);
   return r.useEffect(() => {
-    d(e)
-  }, [e, d]), {
+    u(e)
+  }, [e, u]), {
     isLoading: t,
     error: s,
     creatorMonetizationOnboardingMarketing: o

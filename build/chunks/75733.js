@@ -10,13 +10,13 @@ var r = n(200651),
   a = n(481060),
   o = n(596454),
   c = n(225433),
-  d = n(318766),
-  u = n(907040),
+  u = n(318766),
+  d = n(907040),
   m = n(273039),
   g = n(176354),
   p = n(434404),
-  h = n(185923),
-  f = n(388032),
+  f = n(185923),
+  h = n(388032),
   x = n(186667),
   b = n(381109);
 
@@ -48,7 +48,7 @@ function v(e) {
     disabled: n,
     handleClearEmoji: l,
     handleSelectEmoji: s
-  } = e, p = i.useRef(null), f = i.useMemo(() => null == t || null == t.name ? null : function() {
+  } = e, p = i.useRef(null), h = i.useMemo(() => null == t || null == t.name ? null : function() {
     var e;
     let n = g.ZP.isCustomEmoji(t) ? t.name : t.surrogates;
     return (0, r.jsx)(o.Z, {
@@ -57,10 +57,10 @@ function v(e) {
       emojiName: n
     })
   }, [t]);
-  return n ? (0, r.jsx)(d.Z, {
+  return n ? (0, r.jsx)(u.Z, {
     tabIndex: -1,
     active: !1,
-    renderButtonContents: f
+    renderButtonContents: h
   }) : (0, r.jsx)(m.Z, {
     className: x.emojiWrapper,
     buttonClassName: x.removeButton,
@@ -74,10 +74,10 @@ function v(e) {
         let {
           closePopout: t
         } = e;
-        return (0, r.jsx)(u.Z, {
+        return (0, r.jsx)(d.Z, {
           closePopout: t,
           onSelectEmoji: s(t),
-          pickerIntention: h.Hz.GUILD_PROFILE
+          pickerIntention: f.Hz.GUILD_PROFILE
         })
       },
       children: (e, t) => {
@@ -85,11 +85,11 @@ function v(e) {
         let {
           isShown: l
         } = t;
-        return (0, r.jsx)(d.Z, (n = j({}, e), i = i = {
+        return (0, r.jsx)(u.Z, (n = j({}, e), i = i = {
           ref: p,
           tabIndex: 0,
           active: l,
-          renderButtonContents: f
+          renderButtonContents: h
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -112,15 +112,15 @@ function O(e) {
     index: l,
     onTraitUpdate: o,
     disabled: c
-  } = e, d = i.useCallback(() => {
+  } = e, u = i.useCallback(() => {
     o(t, l, {
       emoji: void 0
     })
-  }, [t, l, o]), u = i.useCallback(e => (n, r) => {
+  }, [t, l, o]), d = i.useCallback(e => (n, r) => {
     o(t, l, {
       emoji: null != n ? n : void 0
     }), r && e()
-  }, [t, l, o]), [m, g] = i.useState(!1), p = i.useCallback(() => g(!0), []), h = i.useCallback(() => g(!1), []), f = i.useCallback(e => {
+  }, [t, l, o]), [m, g] = i.useState(!1), p = i.useCallback(() => g(!0), []), f = i.useCallback(() => g(!1), []), h = i.useCallback(e => {
     o(t, l, {
       label: e
     })
@@ -129,20 +129,20 @@ function O(e) {
     "aria-disabled": c,
     disabled: c,
     value: n.label,
-    onChange: f,
+    onChange: h,
     maxLength: 24,
     prefixElement: (0, r.jsx)(v, {
       emoji: b,
       disabled: c,
-      handleClearEmoji: d,
-      handleSelectEmoji: u
+      handleClearEmoji: u,
+      handleSelectEmoji: d
     }),
     className: s()(x.traitContainer, {
       [x.traitContainerFocused]: m
     }),
     inputClassName: x.traitInput,
     onFocus: p,
-    onBlur: h
+    onBlur: f
   })
 }
 let C = [0, 1, 2, 3, 4];
@@ -162,10 +162,10 @@ function y(e) {
     children: [(0, r.jsxs)("div", {
       className: b.sectionHeader,
       children: [(0, r.jsx)(a.vwX, {
-        children: f.intl.string(f.t.S6JNrq)
+        children: h.intl.string(h.t.S6JNrq)
       }), (0, r.jsx)(a.R94, {
         type: "description",
-        children: f.intl.string(f.t.l7Ig5e)
+        children: h.intl.string(h.t.l7Ig5e)
       })]
     }), (0, r.jsx)("div", {
       className: x.grid,

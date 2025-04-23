@@ -10,13 +10,13 @@ var r = n(200651),
   a = n(481060),
   o = n(749210),
   c = n(493544),
-  d = n(607070),
-  u = n(714939),
+  u = n(607070),
+  d = n(714939),
   m = n(981631),
   g = n(388032),
   p = n(406116);
 
-function h(e) {
+function f(e) {
   let {
     color: t,
     children: n
@@ -33,7 +33,7 @@ function h(e) {
   })
 }
 
-function f(e) {
+function h(e) {
   let {
     guild: t,
     display: n
@@ -46,7 +46,7 @@ function f(e) {
       className: p.roles,
       children: t.roles.map((e, t) => (0, r.jsx)("div", {
         className: p.rolesRow,
-        children: e.map(e => (0, r.jsx)(h, {
+        children: e.map(e => (0, r.jsx)(f, {
           color: e.color,
           children: e.name
         }, e.name))
@@ -156,13 +156,13 @@ function x() {
   return i.useEffect(() => {
     s.current = e
   }), i.useEffect(() => {
-    if (d.Z.useReducedMotion) return;
+    if (u.Z.useReducedMotion) return;
     let e = setTimeout(() => l((t + 1) % s.current.length), 6332);
     return () => clearTimeout(e)
   }, [t]), (0, r.jsx)("div", {
     className: p.bannerContainer,
     "aria-hidden": !0,
-    children: e.map((e, n) => (0, r.jsx)(f, {
+    children: e.map((e, n) => (0, r.jsx)(h, {
       guild: e,
       display: n === t
     }, n))
@@ -174,9 +174,9 @@ function b(e) {
     guild: t,
     everyoneRole: n,
     setEditRoleId: l
-  } = e, [s, d] = i.useState(!1), m = async () => {
-    d(!0), await o.Z.createRole(t.id), d(!1)
-  }, h = i.useCallback(() => {
+  } = e, [s, u] = i.useState(!1), m = async () => {
+    u(!0), await o.Z.createRole(t.id), u(!1)
+  }, f = i.useCallback(() => {
     l(n.id)
   }, [l, n.id]);
   return (0, r.jsx)(c.NM, {
@@ -203,9 +203,9 @@ function b(e) {
         })]
       }), (0, r.jsx)(a.$i$, {
         className: p.divider
-      }), (0, r.jsx)(u.Z, {
+      }), (0, r.jsx)(d.Z, {
         role: n,
-        onClick: h
+        onClick: f
       })]
     })
   })

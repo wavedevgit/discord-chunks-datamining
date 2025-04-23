@@ -7,8 +7,8 @@ var r, i, l, s = n(442837),
   a = n(570140),
   o = n(40572),
   c = n(914010);
-let d = {},
-  u = {},
+let u = {},
+  d = {},
   m = 0;
 class g extends(l = s.ZP.Store) {
   initialize() {
@@ -19,10 +19,10 @@ class g extends(l = s.ZP.Store) {
   }
   getEmojiRevision(e) {
     var t;
-    return null != (t = d[e]) ? t : 0
+    return null != (t = u[e]) ? t : 0
   }
   getEmojis(e) {
-    return u[e]
+    return d[e]
   }
 }
 i = "GuildSettingsEmojiStore", (r = "displayName") in g ? Object.defineProperty(g, r, {
@@ -37,20 +37,20 @@ let p = new g(a.Z, {
       guildId: t,
       emojiId: n
     } = e;
-    u[t] = u[t].filter(e => e.id !== n)
+    d[t] = d[t].filter(e => e.id !== n)
   },
   EMOJI_FETCH_SUCCESS: function(e) {
     let {
       guildId: t,
       emojis: n
     } = e;
-    u[t] = n.map(e => new o.Z(e))
+    d[t] = n.map(e => new o.Z(e))
   },
   EMOJI_FETCH_FAILURE: function(e) {
     let {
       guildId: t
     } = e;
-    u[t] = []
+    d[t] = []
   },
   EMOJI_UPLOAD_START: function() {
     m++
@@ -63,6 +63,6 @@ let p = new g(a.Z, {
     let {
       guildId: n
     } = e;
-    d[n] = (null != (t = d[n]) ? t : 0) + 1
+    u[n] = (null != (t = u[n]) ? t : 0) + 1
   }
 })
