@@ -1,8 +1,8 @@
 /** Chunk was on 99014 **/
 n.d(t, {
-  Nn: () => I,
+  Nn: () => v,
   ZP: () => x,
-  ms: () => v
+  ms: () => g
 });
 var r = n(200651),
   o = n(192379),
@@ -66,7 +66,7 @@ function _(e, t) {
   return o
 }
 
-function g(e) {
+function I(e) {
   let {
     powerup: t,
     isActive: n,
@@ -88,7 +88,7 @@ function g(e) {
   })
 }
 
-function v(e) {
+function g(e) {
   var {
     guildId: t,
     powerup: n,
@@ -112,7 +112,7 @@ function v(e) {
   }))
 }
 
-function I(e) {
+function v(e) {
   var {
     guildId: t,
     powerup: n,
@@ -120,20 +120,20 @@ function I(e) {
     onError: u
   } = e, p = _(e, ["guildId", "powerup", "compact", "onError"]);
   let {
-    onActivate: v,
-    isLoading: I,
+    onActivate: g,
+    isLoading: v,
     error: x,
     onShowDeactivate: y
   } = (0, d.ZP)(t, n), k = null != (0, l.Z)(t, n), {
     disabled: h,
-    reason: C
+    reason: E
   } = (0, c.Z)(t, n, k);
   return o.useEffect(() => {
     null == u || u(x)
   }, [x, u]), (0, r.jsx)(s.ua7, {
     delay: 100,
-    "aria-label": null != C ? C : k ? b.intl.string(f.default.TZsu1d) : void 0,
-    text: null != C ? C : k ? (0, r.jsxs)("div", {
+    "aria-label": null != E ? E : k ? b.intl.string(f.default.TZsu1d) : void 0,
+    text: null != E ? E : k ? (0, r.jsxs)("div", {
       className: m.tooltipContainer,
       children: [(0, r.jsx)(s.Text, {
         variant: "text-xs/semibold",
@@ -154,10 +154,10 @@ function I(e) {
       color: k ? s.Ttl.PRIMARY : s.Ttl.BRAND,
       "aria-label": b.intl.string(k ? f.default.TZsu1d : f.default.gSxlHR),
       disabled: h,
-      onClick: k ? y : v,
-      submitting: I
+      onClick: k ? y : g,
+      submitting: v
     }), p), {
-      children: (0, r.jsx)(g, {
+      children: (0, r.jsx)(I, {
         powerup: n,
         isActive: k,
         compact: a
@@ -175,13 +175,13 @@ function x(e) {
   } = e, s = null != (0, l.Z)(n, o), c = !s;
   return (0, r.jsxs)("div", {
     className: i()(m.container, t),
-    children: [(0, r.jsx)(I, {
+    children: [(0, r.jsx)(v, {
       guildId: n,
       powerup: o,
       onError: a,
       grow: c,
       compact: !c
-    }), s && (0, r.jsx)(v, {
+    }), s && (0, r.jsx)(g, {
       guildId: n,
       powerup: o
     })]
