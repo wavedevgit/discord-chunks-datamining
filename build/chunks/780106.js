@@ -1,12 +1,12 @@
-/** Chunk was on 95124 **/
+/** Chunk was on 93886 **/
 n.d(t, {
-  O: () => o,
-  h: () => s
+  O: () => i,
+  h: () => o
 });
-var r = n(593472),
-  i = n(70956),
+var a = n(593472),
+  r = n(70956),
   l = n(981631);
-let o = {
+let i = {
     None: void 0,
     Terraria: {
       id: "356943499456937984",
@@ -23,10 +23,10 @@ let o = {
       pid: 1234,
       pidPath: [],
       windowHandle: "13229",
-      fullscreenType: r.Jx.BORDERLESS_FULLSCREEN,
+      fullscreenType: a.Jx.BORDERLESS_FULLSCREEN,
       isLauncher: !1,
-      start: Date.now() - i.Z.Millis.HOUR,
+      start: Date.now() - r.Z.Millis.HOUR,
       distributor: l.GQo.STEAM
     }
   },
-  s = Object.keys(o)
+  o = Object.keys(i)

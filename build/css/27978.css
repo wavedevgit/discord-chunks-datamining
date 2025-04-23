@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: d57648d636f7c698
+  Original File Name: 592869f0cfabfeb6
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -1872,7 +1872,7 @@ html:not(.visual-refresh) .footer__7c901 {
     margin-left: var(--spacing-12)
 }
 
-.container__91e7c {
+.container__394db {
     align-items: center;
     display: block;
     flex: 1 1 auto;
@@ -1882,19 +1882,19 @@ html:not(.visual-refresh) .footer__7c901 {
     white-space: nowrap
 }
 
-.container__91e7c .chipletContainer__91e7c {
+.container__394db .chipletContainer__394db {
     display: inline-block;
     overflow: hidden
 }
 
-.container__91e7c .chipletParent__91e7c {
+.container__394db .chipletParent__394db {
     display: inline;
     overflow: hidden;
     padding-left: 4px;
     position: relative
 }
 
-.container__91e7c .usernameContainer__91e7c {
+.container__394db .usernameContainer__394db {
     display: inline-block;
     flex: 1;
     margin-top: 2px;
@@ -1903,7 +1903,7 @@ html:not(.visual-refresh) .footer__7c901 {
     white-space: nowrap
 }
 
-.container__91e7c.isOverlayContainer__91e7c {
+.container__394db.isOverlayContainer__394db {
     align-content: center;
     background: var(--background-primary);
     border-radius: 4px;
@@ -1913,26 +1913,26 @@ html:not(.visual-refresh) .footer__7c901 {
     height: 20px
 }
 
-.container__91e7c.isOverlayContainer__91e7c .usernameContainer__91e7c {
+.container__394db.isOverlayContainer__394db .usernameContainer__394db {
     margin-top: 0
 }
 
-.container__91e7c.isOverlayContainer__91e7c .chipletContainer__91e7c,.container__91e7c.isOverlayContainer__91e7c .chipletParent__91e7c {
+.container__394db.isOverlayContainer__394db .chipletContainer__394db,.container__394db.isOverlayContainer__394db .chipletParent__394db {
     align-content: center;
     align-items: center;
     display: flex
 }
 
-.container__91e7c.isOverlayContainer__91e7c .chipletContainer__91e7c {
+.container__394db.isOverlayContainer__394db .chipletContainer__394db {
     margin: 0;
     padding: 1.5px
 }
 
-.container__91e7c.isOverlayContainer__91e7c .chipletContainer__91e7c.noPadding__91e7c {
+.container__394db.isOverlayContainer__394db .chipletContainer__394db.noPadding__394db {
     padding: 0
 }
 
-.isOverlayTag__91e7c {
+.isOverlayTag__394db {
     margin: 0
 }
 
@@ -2666,4 +2666,4 @@ html:not(.visual-refresh) .footer__7c901 {
     height: 100px
 }
 
-/*# sourceMappingURL=d57648d636f7c698.css.map*/
+/*# sourceMappingURL=592869f0cfabfeb6.css.map*/

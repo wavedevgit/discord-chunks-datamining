@@ -20,8 +20,8 @@ var r = n(200651),
   m = n(493773),
   b = n(607070),
   y = n(415635),
-  v = n(979264),
-  h = n(701362),
+  v = n(701362),
+  h = n(172751),
   j = n(670188),
   P = n(597998),
   S = n(199902),
@@ -272,7 +272,7 @@ let F = i.memo(function(e) {
       context: j
     }) || er, el = (0, s.e7)([S.Z], () => S.Z.getStreamForUser(a.id, x)), eo = null != el, ea = i.useCallback(() => {
       (A || null != eo) && _(null)
-    }, [_, A, eo]), es = i.useCallback(() => (0, r.jsx)(h.Z, {
+    }, [_, A, eo]), es = i.useCallback(() => (0, r.jsx)(v.Z, {
       user: a,
       channel: t,
       onWatch: () => {
@@ -325,7 +325,7 @@ let F = i.memo(function(e) {
             serverMute: J.mute || J.suppress,
             serverDeaf: J.deaf,
             disabled: !1
-          }), !C && (0, r.jsx)(v.ZP, {
+          }), !C && (0, r.jsx)(h.ZP, {
             primaryGuild: a.primaryGuild,
             userId: a.id,
             contextGuildId: x,
@@ -397,7 +397,7 @@ let F = i.memo(function(e) {
             variant: "text-xs/medium",
             color: "text-normal",
             children: u
-          }), !C && (0, r.jsx)(v.ZP, {
+          }), !C && (0, r.jsx)(h.ZP, {
             primaryGuild: a.primaryGuild,
             userId: a.id,
             contextGuildId: x,

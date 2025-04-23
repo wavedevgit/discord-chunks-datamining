@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: fe5efe8580278174
+  Original File Name: 992affca9b34d8dd
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -2330,7 +2330,7 @@
     margin-left: var(--spacing-12)
 }
 
-.container__91e7c {
+.container__394db {
     align-items: center;
     display: block;
     flex: 1 1 auto;
@@ -2340,19 +2340,19 @@
     white-space: nowrap
 }
 
-.container__91e7c .chipletContainer__91e7c {
+.container__394db .chipletContainer__394db {
     display: inline-block;
     overflow: hidden
 }
 
-.container__91e7c .chipletParent__91e7c {
+.container__394db .chipletParent__394db {
     display: inline;
     overflow: hidden;
     padding-left: 4px;
     position: relative
 }
 
-.container__91e7c .usernameContainer__91e7c {
+.container__394db .usernameContainer__394db {
     display: inline-block;
     flex: 1;
     margin-top: 2px;
@@ -2361,7 +2361,7 @@
     white-space: nowrap
 }
 
-.container__91e7c.isOverlayContainer__91e7c {
+.container__394db.isOverlayContainer__394db {
     align-content: center;
     background: var(--background-primary);
     border-radius: 4px;
@@ -2371,26 +2371,26 @@
     height: 20px
 }
 
-.container__91e7c.isOverlayContainer__91e7c .usernameContainer__91e7c {
+.container__394db.isOverlayContainer__394db .usernameContainer__394db {
     margin-top: 0
 }
 
-.container__91e7c.isOverlayContainer__91e7c .chipletContainer__91e7c,.container__91e7c.isOverlayContainer__91e7c .chipletParent__91e7c {
+.container__394db.isOverlayContainer__394db .chipletContainer__394db,.container__394db.isOverlayContainer__394db .chipletParent__394db {
     align-content: center;
     align-items: center;
     display: flex
 }
 
-.container__91e7c.isOverlayContainer__91e7c .chipletContainer__91e7c {
+.container__394db.isOverlayContainer__394db .chipletContainer__394db {
     margin: 0;
     padding: 1.5px
 }
 
-.container__91e7c.isOverlayContainer__91e7c .chipletContainer__91e7c.noPadding__91e7c {
+.container__394db.isOverlayContainer__394db .chipletContainer__394db.noPadding__394db {
     padding: 0
 }
 
-.isOverlayTag__91e7c {
+.isOverlayTag__394db {
     margin: 0
 }
 
@@ -2769,4 +2769,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=fe5efe8580278174.css.map*/
+/*# sourceMappingURL=992affca9b34d8dd.css.map*/

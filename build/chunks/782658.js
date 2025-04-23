@@ -165,7 +165,7 @@ function R(e) {
             invite: M,
             getAcceptInviteContext: R,
             message: n
-          })), F && (0, p.lc)(M) && (W = (0, r.jsx)(I.Z, {
+          })), F && (0, p.l)(M) && (W = (0, r.jsx)(I.Z, {
             onTransitionToInviteChannel: V,
             onAcceptInstantInvite: z,
             isMemberOfGuild: null != B,

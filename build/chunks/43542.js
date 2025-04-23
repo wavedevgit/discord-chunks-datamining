@@ -57,7 +57,7 @@ function g(e, t) {
 function E(e) {
   let {
     profile: t
-  } = e, n = (0, a.e7)([l.default], () => l.default.locale), p = (0, d.MP)(u.default.extractTimestamp(t.id), n), m = i.useMemo(() => {
+  } = e, n = (0, a.e7)([l.default], () => l.default.locale), p = (0, d.M)(u.default.extractTimestamp(t.id), n), m = i.useMemo(() => {
     let e = (0, c.$5)(t);
     return (0, r.jsx)(s.Z, {
       guild: e,

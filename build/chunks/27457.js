@@ -1,419 +1,419 @@
-/** Chunk was on 95124 **/
-n.d(t, {
-  BP: () => eg,
-  ZP: () => em
-}), n(388685);
-var r = n(200651),
-  i = n(192379),
-  l = n(120356),
-  o = n.n(l),
-  s = n(442837),
-  a = n(692547),
-  c = n(481060),
-  u = n(846027),
-  d = n(410575),
-  h = n(607070),
-  p = n(812206),
-  f = n(835473),
-  g = n(414910),
-  m = n(415635),
-  b = n(578976),
-  y = n(925329),
-  _ = n(649739),
-  O = n(37091),
-  v = n(6572),
-  C = n(352978),
-  j = n(936847),
-  x = n(512384),
-  S = n(33316),
-  E = n(576645),
-  P = n(210975),
-  I = n(695346),
-  w = n(937995),
-  N = n(456631),
-  Z = n(274459),
-  T = n(314897),
-  A = n(857192),
-  R = n(77498),
-  D = n(131951),
-  L = n(158776),
-  k = n(594174),
-  M = n(979651),
-  U = n(574254),
-  G = n(374129),
-  B = n(639351),
-  V = n(74538),
-  F = n(221241),
-  H = n(584729),
-  z = n(334374),
-  W = n(849171),
-  Y = n(607187),
-  K = n(624834),
-  q = n(833519),
-  Q = n(462061),
-  X = n(623825),
-  J = n(839662),
-  $ = n(981631),
-  ee = n(354459),
-  et = n(37113),
-  en = n(524484),
-  er = n(65154),
-  ei = n(388032),
-  el = n(519417);
+/** Chunk was on 55196 **/
+t.d(l, {
+  BP: () => ev,
+  ZP: () => ex
+}), t(388685);
+var n = t(200651),
+  i = t(192379),
+  s = t(120356),
+  r = t.n(s),
+  a = t(442837),
+  o = t(692547),
+  c = t(481060),
+  u = t(846027),
+  d = t(410575),
+  m = t(607070),
+  p = t(812206),
+  f = t(835473),
+  v = t(414910),
+  x = t(415635),
+  g = t(578976),
+  h = t(925329),
+  j = t(649739),
+  O = t(37091),
+  E = t(6572),
+  T = t(352978),
+  y = t(936847),
+  I = t(512384),
+  Z = t(33316),
+  S = t(576645),
+  C = t(210975),
+  N = t(695346),
+  b = t(937995),
+  _ = t(456631),
+  R = t(274459),
+  A = t(314897),
+  P = t(857192),
+  k = t(77498),
+  D = t(131951),
+  w = t(158776),
+  M = t(594174),
+  V = t(979651),
+  z = t(574254),
+  U = t(374129),
+  L = t(639351),
+  G = t(74538),
+  Y = t(221241),
+  B = t(584729),
+  H = t(334374),
+  F = t(849171),
+  X = t(607187),
+  K = t(624834),
+  W = t(833519),
+  q = t(462061),
+  J = t(623825),
+  Q = t(839662),
+  $ = t(981631),
+  ee = t(354459),
+  el = t(37113),
+  et = t(524484),
+  en = t(65154),
+  ei = t(388032),
+  es = t(519417);
 
-function eo(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+function er(e) {
+  for (var l = 1; l < arguments.length; l++) {
+    var t = null != arguments[l] ? arguments[l] : {},
+      n = Object.keys(t);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(t, e).enumerable
+    }))), n.forEach(function(l) {
+      var n;
+      n = t[l], l in e ? Object.defineProperty(e, l, {
+        value: n,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : e[t] = r
+      }) : e[l] = n
     })
   }
   return e
 }
 
-function es(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
+function ea(e, l) {
+  return l = null != l ? l : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(l)) : (function(e, l) {
+    var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var n = Object.getOwnPropertySymbols(e);
+      t.push.apply(t, n)
     }
-    return n
-  })(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+    return t
+  })(Object(l)).forEach(function(t) {
+    Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(l, t))
   }), e
 }
 
-function ea(e, t) {
+function eo(e, l) {
   if (null == e) return {};
-  var n, r, i = function(e, t) {
+  var t, n, i = function(e, l) {
     if (null == e) return {};
-    var n, r, i = {},
-      l = Object.keys(e);
-    for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    var t, n, i = {},
+      s = Object.keys(e);
+    for (n = 0; n < s.length; n++) t = s[n], l.indexOf(t) >= 0 || (i[t] = e[t]);
     return i
-  }(e, t);
+  }(e, l);
   if (Object.getOwnPropertySymbols) {
-    var l = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var s = Object.getOwnPropertySymbols(e);
+    for (n = 0; n < s.length; n++) t = s[n], !(l.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (i[t] = e[t])
   }
   return i
 }
 let ec = [ee.fO.ACTIVITY, ee.fO.PRESENCE_EMBEDDED_ACTIVITY],
   eu = i.memo(e => {
-    var t, n, l, a, y;
+    var l, t, s, o, h;
     let {
-      participant: U,
-      onDoubleClick: G,
-      onContextMenu: B,
-      onClick: X,
-      onMouseDown: ea,
+      participant: z,
+      onDoubleClick: U,
+      onContextMenu: L,
+      onClick: J,
+      onMouseDown: eo,
       onKeyDown: eu,
       className: ed,
-      style: eh,
-      containerStyle: eg,
-      channel: em,
-      width: eb,
-      inPopout: ey,
-      onVideoResize: e_,
+      style: em,
+      containerStyle: ev,
+      channel: ex,
+      width: eg,
+      inPopout: eh,
+      onVideoResize: ej,
       inCall: eO = !1,
-      selected: ev = !1,
-      noBorder: eC = !1,
-      noVideoRender: ej = !1,
-      focused: ex = !1,
-      blocked: eS = !1,
-      ignored: eE = !1,
-      fit: eP = C.L.CONTAIN,
-      paused: eI = !1,
-      pulseSpeakingIndicator: ew = !1,
-      forceIdle: eN = !1,
-      inOverlayPopout: eZ = !1
-    } = e, eT = i.useContext(w.h9) || eN, [eA, eR] = i.useState(!1), eD = I.Sb.useSetting(), eL = (0, s.e7)([A.default], () => A.default.isStreamInfoOverlayEnabled), [ek, eM] = i.useState(!1), eU = (0, s.e7)([T.default], () => T.default.getId()), eG = (0, s.e7)([k.default], () => k.default.getCurrentUser()), eB = U.type === ee.fO.ACTIVITY ? null : null == (t = U.user) ? void 0 : t.id, [eV] = (0, f.Z)(U.type === ee.fO.ACTIVITY ? [U.applicationId] : []), eF = (0, s.e7)([O.Z], () => O.Z.getEnabled()), eH = (0, s.e7)([D.Z], () => null != eB && D.Z.isLocalVideoDisabled(eB, (0, g.Z)(U.type)), [eB, U.type]), ez = (0, s.e7)([D.Z], () => null != eB ? D.Z.getVideoToggleState(eB, (0, g.Z)(U.type)) : $.ZUi.NONE, [eB, U.type]), eW = ez === $.ZUi.AUTO_PROBING, {
-      speaking: eY,
+      selected: eE = !1,
+      noBorder: eT = !1,
+      noVideoRender: ey = !1,
+      focused: eI = !1,
+      blocked: eZ = !1,
+      ignored: eS = !1,
+      fit: eC = T.L.CONTAIN,
+      paused: eN = !1,
+      pulseSpeakingIndicator: eb = !1,
+      forceIdle: e_ = !1,
+      inOverlayPopout: eR = !1
+    } = e, eA = i.useContext(b.h9) || e_, [eP, ek] = i.useState(!1), eD = N.Sb.useSetting(), ew = (0, a.e7)([P.default], () => P.default.isStreamInfoOverlayEnabled), [eM, eV] = i.useState(!1), ez = (0, a.e7)([A.default], () => A.default.getId()), eU = (0, a.e7)([M.default], () => M.default.getCurrentUser()), eL = z.type === ee.fO.ACTIVITY ? null : null == (l = z.user) ? void 0 : l.id, [eG] = (0, f.Z)(z.type === ee.fO.ACTIVITY ? [z.applicationId] : []), eY = (0, a.e7)([O.Z], () => O.Z.getEnabled()), eB = (0, a.e7)([D.Z], () => null != eL && D.Z.isLocalVideoDisabled(eL, (0, v.Z)(z.type)), [eL, z.type]), eH = (0, a.e7)([D.Z], () => null != eL ? D.Z.getVideoToggleState(eL, (0, v.Z)(z.type)) : $.ZUi.NONE, [eL, z.type]), eF = eH === $.ZUi.AUTO_PROBING, {
+      speaking: eX,
       ringing: eK,
-      hasVideo: eq
-    } = (0, J.Z)(U, eU), eQ = function(e, t, n) {
-      var r, i, l, o;
-      let a = t.type !== ee.fO.ACTIVITY ? t.user.id : t.applicationId,
-        c = (0, s.cj)([M.Z], () => {
-          var e, t, r;
-          let i = M.Z.getVoiceState(n, a);
+      hasVideo: eW
+    } = (0, Q.Z)(z, ez), eq = function(e, l, t) {
+      var n, i, s, r;
+      let o = l.type !== ee.fO.ACTIVITY ? l.user.id : l.applicationId,
+        c = (0, a.cj)([V.Z], () => {
+          var e, l, n;
+          let i = V.Z.getVoiceState(t, o);
           return {
             muted: null != (e = null == i ? void 0 : i.mute) && e,
-            deafened: null != (t = null == i ? void 0 : i.deaf) && t,
-            suppressed: null != (r = null == i ? void 0 : i.suppress) && r,
+            deafened: null != (l = null == i ? void 0 : i.deaf) && l,
+            suppressed: null != (n = null == i ? void 0 : i.suppress) && n,
             voiceChannelId: null == i ? void 0 : i.channelId
           }
         }),
-        u = (0, s.cj)([D.Z], () => {
-          let n = (0, g.Z)(t.type);
-          return e === a ? {
+        u = (0, a.cj)([D.Z], () => {
+          let t = (0, v.Z)(l.type);
+          return e === o ? {
             muted: !1,
             deafened: !1
           } : {
-            muted: D.Z.isLocalMute(a, n),
-            localVideoDisabled: D.Z.isLocalVideoDisabled(a, n),
-            localVideoAutoDisabled: D.Z.isLocalVideoAutoDisabled(a, n)
+            muted: D.Z.isLocalMute(o, t),
+            localVideoDisabled: D.Z.isLocalVideoDisabled(o, t),
+            localVideoAutoDisabled: D.Z.isLocalVideoAutoDisabled(o, t)
           }
-        }, [e, t.type, a]);
+        }, [e, l.type, o]);
       return {
         serverMuted: c.muted,
         serverDeafened: c.deafened,
         suppressed: c.suppressed,
         localMuted: u.muted,
-        muted: null != (l = t.type === ee.fO.USER && (null == (r = t.voiceState) ? void 0 : r.isVoiceMuted())) && l,
-        deafened: null != (o = t.type === ee.fO.USER && (null == (i = t.voiceState) ? void 0 : i.isVoiceDeafened())) && o
+        muted: null != (s = l.type === ee.fO.USER && (null == (n = l.voiceState) ? void 0 : n.isVoiceMuted())) && s,
+        deafened: null != (r = l.type === ee.fO.USER && (null == (i = l.voiceState) ? void 0 : i.isVoiceDeafened())) && r
       }
-    }(eU, U, em.getGuildId()), eX = U.type === ee.fO.STREAM && eB === eU, eJ = V.ZP.isPremium(eG);
+    }(ez, z, ex.getGuildId()), eJ = z.type === ee.fO.STREAM && eL === ez, eQ = G.ZP.isPremium(eU);
     i.useEffect(() => {
-      if (eX && !eJ && null != em.hdStreamingUntil && new Date(em.hdStreamingUntil) > new Date) {
+      if (eJ && !eQ && null != ex.hdStreamingUntil && new Date(ex.hdStreamingUntil) > new Date) {
         let e = setTimeout(() => {
           let e = D.Z.getGoLiveSource(),
-            t = (0, b.s_)(et.LY.RESOLUTION_720, et.ws.FPS_30, e);
-          u.Z.setGoLiveSource(t)
-        }, new Date(em.hdStreamingUntil).getTime() - Date.now());
+            l = (0, g.s_)(el.LY.RESOLUTION_720, el.ws.FPS_30, e);
+          u.Z.setGoLiveSource(l)
+        }, new Date(ex.hdStreamingUntil).getTime() - Date.now());
         return () => clearTimeout(e)
       }
-    }, [eX, eJ, em.hdStreamingUntil]);
-    let e$ = (0, s.e7)([N.Z], () => U.type === ee.fO.USER && null != eB ? N.Z.getEffectForUserId(eB) : null),
-      e0 = (0, s.e7)([M.Z], () => M.Z.getVoicePlatformForChannel(em.id, null != eB ? eB : $.lds)),
+    }, [eJ, eQ, ex.hdStreamingUntil]);
+    let e$ = (0, a.e7)([_.Z], () => z.type === ee.fO.USER && null != eL ? _.Z.getEffectForUserId(eL) : null),
+      e0 = (0, a.e7)([V.Z], () => V.Z.getVoicePlatformForChannel(ex.id, null != eL ? eL : $.lds)),
       {
         simplifiedSettingsEnabled: e1
-      } = (0, F.Z)({
+      } = (0, Y.Z)({
         location: "CallTile"
       }),
       {
-        showGameIcon: e3
-      } = _.ZP.useExperiment({
+        showGameIcon: e7
+      } = j.ZP.useExperiment({
         location: "voice_users"
       }, {
         autoTrackExposure: !1
       }),
-      e4 = (0, s.e7)([L.Z], () => e3 && null != eB ? L.Z.findActivity(eB, e => null != e.application_id && e.type === $.IIU.PLAYING) : null, [e3, eB]),
-      e2 = (0, s.e7)([R.Z], () => (null == e4 ? void 0 : e4.application_id) != null ? R.Z.getDetectableGame(e4.application_id) : null),
-      e6 = (0, s.e7)([p.Z], () => null != e2 && (null == e4 ? void 0 : e4.application_id) != null ? p.Z.getApplication(null == e4 ? void 0 : e4.application_id) : void 0),
-      e5 = (0, P.wV)({
-        userId: eB,
-        channelId: em.id
+      e9 = (0, a.e7)([w.Z], () => e7 && null != eL ? w.Z.findActivity(eL, e => null != e.application_id && e.type === $.IIU.PLAYING) : null, [e7, eL]),
+      e4 = (0, a.e7)([k.Z], () => (null == e9 ? void 0 : e9.application_id) != null ? k.Z.getDetectableGame(e9.application_id) : null),
+      e5 = (0, a.e7)([p.Z], () => null != e4 && (null == e9 ? void 0 : e9.application_id) != null ? p.Z.getApplication(null == e9 ? void 0 : e9.application_id) : void 0),
+      e3 = (0, C.wV)({
+        userId: eL,
+        channelId: ex.id
       }),
-      e8 = (0, P.zU)({
-        streamKey: U.type === ee.fO.STREAM ? U.id : null,
-        channelId: em.id
+      e6 = (0, C.zU)({
+        streamKey: z.type === ee.fO.STREAM ? z.id : null,
+        channelId: ex.id
       }),
-      e7 = i.useMemo(() => U.type === ee.fO.STREAM ? null != e8 && e8 : U.type === ee.fO.USER && null != e5 && e5, [e8, e5, U.type]);
+      e8 = i.useMemo(() => z.type === ee.fO.STREAM ? null != e6 && e6 : z.type === ee.fO.USER && null != e3 && e3, [e6, e3, z.type]);
     i.useEffect(() => {
-      eR(ex)
-    }, [ex]);
-    let [e9, te] = i.useState(!1), tt = i.useCallback(() => {
-      h.Z.useReducedMotion || te(!0)
+      ek(eI)
+    }, [eI]);
+    let [e2, le] = i.useState(!1), ll = i.useCallback(() => {
+      m.Z.useReducedMotion || le(!0)
     }, []);
-    (0, E.J)(em, tt);
-    let tn = i.useCallback(() => {
-        null != eB && u.Z.toggleLocalMute(eB, er.Yn.STREAM)
-      }, [eB]),
-      tr = i.useCallback(e => {
-        null == X || X(U, e)
-      }, [X, U]),
-      ti = i.useCallback(e => {
-        null == G || G(U, e)
-      }, [G, U]),
-      tl = i.useCallback((e, t, n) => {
-        null == B || B(U, e, t, n)
-      }, [B, U]),
-      to = null,
-      ts = null,
-      ta = "";
-    switch (U.type) {
+    (0, S.J)(ex, ll);
+    let lt = i.useCallback(() => {
+        null != eL && u.Z.toggleLocalMute(eL, en.Yn.STREAM)
+      }, [eL]),
+      ln = i.useCallback(e => {
+        null == J || J(z, e)
+      }, [J, z]),
+      li = i.useCallback(e => {
+        null == U || U(z, e)
+      }, [U, z]),
+      ls = i.useCallback((e, l, t) => {
+        null == L || L(z, e, l, t)
+      }, [L, z]),
+      lr = null,
+      la = null,
+      lo = "";
+    switch (z.type) {
       case ee.fO.STREAM:
-        to = (0, r.jsx)(q.Z, {
-          participant: U,
-          selected: ev,
-          width: eb,
-          fit: eP,
-          onVideoResize: e_,
-          paused: eI,
-          inPopout: ey,
-          focused: ex,
-          inOverlayPopout: eZ
-        }), ts = (0, r.jsx)(q._, {
-          participant: U,
-          selected: ev,
-          width: eb,
-          focused: ex,
-          idle: eT,
+        lr = (0, n.jsx)(W.Z, {
+          participant: z,
+          selected: eE,
+          width: eg,
+          fit: eC,
+          onVideoResize: ej,
+          paused: eN,
+          inPopout: eh,
+          focused: eI,
+          inOverlayPopout: eR
+        }), la = (0, n.jsx)(W._, {
+          participant: z,
+          selected: eE,
+          width: eg,
+          focused: eI,
+          idle: eA,
           premiumIndicator: !1
-        }), ta = ei.intl.formatToPlainString(ei.t.gHPz3d, {
-          streamerName: U.user.username
+        }), lo = ei.intl.formatToPlainString(ei.t.gHPz3d, {
+          streamerName: z.user.username
         });
         break;
       case ee.fO.USER:
-        to = (0, r.jsx)(Q.Z, {
-          channel: em,
+        lr = (0, n.jsx)(q.Z, {
+          channel: ex,
           inCall: eO,
-          participant: U,
-          fit: eP,
-          onVideoResize: e_,
-          paused: eI,
-          selected: ev,
-          width: eb,
-          blocked: eS,
-          ignored: eE,
-          noVideoRender: ej || eW,
-          pulseSpeakingIndicator: ew,
-          inOverlayPopout: eZ
-        }), ts = (0, r.jsx)(Q.T, {
-          participant: U,
-          channelId: em.id
-        }), ta = ei.intl.formatToPlainString(ei.t["iC/x/f"], {
-          username: U.user.username
+          participant: z,
+          fit: eC,
+          onVideoResize: ej,
+          paused: eN,
+          selected: eE,
+          width: eg,
+          blocked: eZ,
+          ignored: eS,
+          noVideoRender: ey || eF,
+          pulseSpeakingIndicator: eb,
+          inOverlayPopout: eR
+        }), la = (0, n.jsx)(q.T, {
+          participant: z,
+          channelId: ex.id
+        }), lo = ei.intl.formatToPlainString(ei.t["iC/x/f"], {
+          username: z.user.username
         });
         break;
       case ee.fO.ACTIVITY:
-        to = (0, r.jsx)(W.ZP, {
-          interactible: ex,
-          participant: U,
-          selected: ev,
-          channel: em,
-          width: eb
-        }), ta = ei.intl.formatToPlainString(ei.t.YCvOsL, {
-          activityName: null == eV ? void 0 : eV.name
+        lr = (0, n.jsx)(F.ZP, {
+          interactible: eI,
+          participant: z,
+          selected: eE,
+          channel: ex,
+          width: eg
+        }), lo = ei.intl.formatToPlainString(ei.t.YCvOsL, {
+          activityName: null == eG ? void 0 : eG.name
         });
         break;
       case ee.fO.PRESENCE_EMBEDDED_ACTIVITY:
-        to = (0, r.jsx)(K.Z, {
-          participant: U,
-          width: eb,
-          channelId: em.id
+        lr = (0, n.jsx)(K.Z, {
+          participant: z,
+          width: eg,
+          channelId: ex.id
         });
         break;
       case ee.fO.HIDDEN_STREAM:
-        to = (0, r.jsx)(q.Z, {
-          participant: U,
-          selected: ev,
-          width: eb,
-          fit: eP,
-          onVideoResize: e_,
-          paused: eI,
-          inPopout: ey,
-          focused: ex,
-          inOverlayPopout: eZ
+        lr = (0, n.jsx)(W.Z, {
+          participant: z,
+          selected: eE,
+          width: eg,
+          fit: eC,
+          onVideoResize: ej,
+          paused: eN,
+          inPopout: eh,
+          focused: eI,
+          inOverlayPopout: eR
         })
     }
-    let tc = i.useRef(null),
-      tu = U.type === ee.fO.STREAM ? c.pzj : c.Odl,
-      td = e1 ? ep : ef;
-    return (0, r.jsx)(d.Z, {
+    let lc = i.useRef(null),
+      lu = z.type === ee.fO.STREAM ? c.pzj : c.Odl,
+      ld = e1 ? ep : ef;
+    return (0, n.jsx)(d.Z, {
       section: $.jXE.VOICE_CHANNEL_TILE,
-      children: (0, r.jsxs)("div", {
-        className: o()(el.wrapper, {
-          [el.ringing]: eK
+      children: (0, n.jsxs)("div", {
+        className: r()(es.wrapper, {
+          [es.ringing]: eK
         }, ed),
-        style: eg,
+        style: ev,
         onMouseEnter: () => {
-          eM(!0)
+          eV(!0)
         },
         onMouseLeave: () => {
-          eM(!1)
+          eV(!1)
         },
-        children: [e9 && U.type === ee.fO.STREAM && (0, r.jsx)(S.Z, {
-          baseTileRef: tc.current,
-          cleanup: () => te(!1)
-        }), (0, r.jsxs)(x.Z, {
-          shakeLocation: en.oZ.VOICE_USER,
-          isShaking: eY,
-          className: el.tile,
-          children: [(0, r.jsx)(Y.Z, {
-            ref: tc,
-            className: o()(el.tile, {
-              [el.noBorder]: eC,
-              [el.noInteraction]: null == X,
-              [el.idle]: eT
+        children: [e2 && z.type === ee.fO.STREAM && (0, n.jsx)(Z.Z, {
+          baseTileRef: lc.current,
+          cleanup: () => le(!1)
+        }), (0, n.jsxs)(I.Z, {
+          shakeLocation: et.oZ.VOICE_USER,
+          isShaking: eX,
+          className: es.tile,
+          children: [(0, n.jsx)(X.Z, {
+            ref: lc,
+            className: r()(es.tile, {
+              [es.noBorder]: eT,
+              [es.noInteraction]: null == J,
+              [es.idle]: eA
             }),
-            noBorder: eC,
-            style: eh,
-            participantUserId: eB,
-            children: (0, r.jsxs)(c.kL8, {
-              "aria-label": ta,
-              className: el.tileChild,
-              onDoubleClick: ti,
-              onContextMenu: e => tl(e, e1 && U.type === ee.fO.STREAM),
-              onClick: tr,
-              onMouseDown: ea,
+            noBorder: eT,
+            style: em,
+            participantUserId: eL,
+            children: (0, n.jsxs)(c.kL8, {
+              "aria-label": lo,
+              className: es.tileChild,
+              onDoubleClick: li,
+              onContextMenu: e => ls(e, e1 && z.type === ee.fO.STREAM),
+              onClick: ln,
+              onMouseDown: eo,
               onKeyDown: eu,
               focusProps: {
                 offset: 1
               },
-              children: [null != e$ && null != eB ? (0, r.jsx)(Z.Z, {
+              children: [null != e$ && null != eL ? (0, n.jsx)(R.Z, {
                 voiceChannelEffect: e$,
-                onComplete: () => (0, N.H)(eB),
-                userId: eB
-              }) : null, U.type === ee.fO.USER ? (0, r.jsx)("div", {
-                className: el.voiceChannelEffectsContainer,
-                children: (0, r.jsx)(m.Z, {
-                  userId: eB,
-                  channelId: em.id,
-                  guildId: em.getGuildId(),
+                onComplete: () => (0, _.H)(eL),
+                userId: eL
+              }) : null, z.type === ee.fO.USER ? (0, n.jsx)("div", {
+                className: es.voiceChannelEffectsContainer,
+                children: (0, n.jsx)(x.Z, {
+                  userId: eL,
+                  channelId: ex.id,
+                  guildId: ex.getGuildId(),
                   containerDimensions: {
-                    width: null != (a = null == tc || null == (n = tc.current) ? void 0 : n.clientWidth) ? a : 0,
-                    height: null != (y = null == tc || null == (l = tc.current) ? void 0 : l.clientHeight) ? y : 0
+                    width: null != (o = null == lc || null == (t = lc.current) ? void 0 : t.clientWidth) ? o : 0,
+                    height: null != (h = null == lc || null == (s = lc.current) ? void 0 : s.clientHeight) ? h : 0
                   }
                 })
-              }) : null, to, eC ? null : (0, r.jsx)("div", {
-                className: el.indicators,
-                children: ts
-              }), ev ? (0, r.jsx)("div", {
-                className: el.selectedScreen,
-                children: (0, r.jsx)(tu, {
+              }) : null, lr, eT ? null : (0, n.jsx)("div", {
+                className: es.indicators,
+                children: la
+              }), eE ? (0, n.jsx)("div", {
+                className: es.selectedScreen,
+                children: (0, n.jsx)(lu, {
                   size: "md",
                   color: "currentColor",
-                  className: el.selectedIcon
+                  className: es.selectedIcon
                 })
-              }) : null, ec.includes(U.type) ? null : (0, r.jsx)(td, es(eo({
-                focused: ex,
-                width: eb,
+              }) : null, ec.includes(z.type) ? null : (0, n.jsx)(ld, ea(er({
+                focused: eI,
+                width: eg,
                 inCall: eO,
-                participantType: U.type,
-                hasVideo: null != eq && eq
-              }, eQ), {
-                idle: eT,
+                participantType: z.type,
+                hasVideo: null != eW && eW
+              }, eq), {
+                idle: eA,
                 platform: e0,
-                title: (0, H.Z)(em, U),
-                blocked: eS,
-                ignored: eE,
-                localVideoDisabled: eH,
-                videoToggleState: ez,
-                hideAudioIcon: eX,
-                onContextMenu: tl,
-                onToggleMute: tn,
-                participantUserId: eB,
-                application: e6,
-                secureFramesVerified: e7,
-                isHovered: ek
-              })), U.type === ee.fO.USER && eF ? (0, r.jsx)(v.Z, {
-                userId: U.id,
-                channelId: em.id
-              }) : null, eO && !eC ? (0, r.jsx)("div", {
-                className: o()(el.border, {
-                  [el.voiceChannelEffect]: !ex && null != e$,
-                  [el.speaking]: eY && !ex
+                title: (0, B.Z)(ex, z),
+                blocked: eZ,
+                ignored: eS,
+                localVideoDisabled: eB,
+                videoToggleState: eH,
+                hideAudioIcon: eJ,
+                onContextMenu: ls,
+                onToggleMute: lt,
+                participantUserId: eL,
+                application: e5,
+                secureFramesVerified: e8,
+                isHovered: eM
+              })), z.type === ee.fO.USER && eY ? (0, n.jsx)(E.Z, {
+                userId: z.id,
+                channelId: ex.id
+              }) : null, eO && !eT ? (0, n.jsx)("div", {
+                className: r()(es.border, {
+                  [es.voiceChannelEffect]: !eI && null != e$,
+                  [es.speaking]: eX && !eI
                 })
               }) : null]
             })
-          }), eD && eL && ek && (0, r.jsx)(z.Z, {
-            currentUserId: eU,
-            participant: U
-          }), (0, r.jsx)(j.Z, {
-            isFiring: eA,
-            callTileRef: tc.current
+          }), eD && ew && eM && (0, n.jsx)(H.Z, {
+            currentUserId: ez,
+            participant: z
+          }), (0, n.jsx)(y.Z, {
+            isFiring: eP,
+            callTileRef: lc.current
           })]
         })]
       })
@@ -422,30 +422,30 @@ let ec = [ee.fO.ACTIVITY, ee.fO.PRESENCE_EMBEDDED_ACTIVITY],
 
 function ed(e) {
   let {
-    participantType: t,
-    platform: n,
+    participantType: l,
+    platform: t,
     className: i
   } = e;
-  if (t === ee.fO.STREAM) return n === ee.wR.XBOX ? (0, r.jsx)(B.Z, {
+  if (l === ee.fO.STREAM) return t === ee.wR.XBOX ? (0, n.jsx)(L.Z, {
     className: i
-  }) : (0, r.jsx)(c.pzj, {
+  }) : (0, n.jsx)(c.pzj, {
     size: "md",
     color: "currentColor",
     className: i
   });
-  switch (n) {
+  switch (t) {
     case ee.wR.MOBILE:
-      return (0, r.jsx)(c.AtH, {
+      return (0, n.jsx)(c.AtH, {
         size: "xs",
         color: "currentColor",
         className: i
       });
     case ee.wR.XBOX:
-      return (0, r.jsx)(B.Z, {
+      return (0, n.jsx)(L.Z, {
         className: i
       });
     case ee.wR.PLAYSTATION:
-      return (0, r.jsx)(G.Z, {
+      return (0, n.jsx)(U.Z, {
         className: i
       });
     default:
@@ -453,34 +453,34 @@ function ed(e) {
   }
 }
 
-function eh(e) {
+function em(e) {
   let {
-    icon: t,
-    tooltipText: n,
+    icon: l,
+    tooltipText: t,
     hideWhenInactive: i,
-    onClick: l,
-    compact: s
+    onClick: s,
+    compact: a
   } = e;
-  return (0, r.jsx)(c.ua7, {
-    text: n,
+  return (0, n.jsx)(c.ua7, {
+    text: t,
     children: e => {
       var {
-        onClick: n
-      } = e, a = ea(e, ["onClick"]);
-      return (0, r.jsx)(c.zxk, es(eo({}, a), {
+        onClick: t
+      } = e, o = eo(e, ["onClick"]);
+      return (0, n.jsx)(c.zxk, ea(er({}, o), {
         onClick: e => {
-          e.stopPropagation(), null == n || n(), l(e)
+          e.stopPropagation(), null == t || t(), s(e)
         },
         onMouseDown: e => e.preventDefault(),
         color: c.Ttl.CUSTOM,
         size: c.PhG.ICON,
-        className: o()(el.overlayButton, {
-          [el.hideWhenInactive]: i,
-          [el.compact]: s
+        className: r()(es.overlayButton, {
+          [es.hideWhenInactive]: i,
+          [es.compact]: a
         }),
-        innerClassName: el.overlayButtonInner,
-        children: (0, r.jsx)(t, {
-          size: s ? "xs" : "refresh_sm",
+        innerClassName: es.overlayButtonInner,
+        children: (0, n.jsx)(l, {
+          size: a ? "xs" : "refresh_sm",
           color: "currentColor"
         })
       }))
@@ -490,142 +490,142 @@ function eh(e) {
 eu.displayName = "CallTile";
 let ep = i.memo(e => {
   let {
-    idle: t,
-    title: n,
-    width: l,
+    idle: l,
+    title: t,
+    width: s,
     focused: u,
     videoToggleState: d,
-    blocked: h,
+    blocked: m,
     ignored: p,
     participantType: f,
-    participantUserId: m,
-    platform: b,
-    secureFramesVerified: y,
-    onContextMenu: _,
+    participantUserId: x,
+    platform: g,
+    secureFramesVerified: h,
+    onContextMenu: j,
     muted: O,
-    deafened: v,
-    localMuted: C,
-    serverMuted: j,
-    serverDeafened: x,
-    hasVideo: S,
-    hideAudioIcon: E,
-    onToggleMute: P
-  } = e, I = (0, s.e7)([D.Z], () => null != m && D.Z.isLocalVideoAutoDisabled(m, (0, g.Z)(f)), [m, f]), w = (0, X.N)(l), N = (0, X.K)(l), [Z, T] = i.useState(!1);
+    deafened: E,
+    localMuted: T,
+    serverMuted: y,
+    serverDeafened: I,
+    hasVideo: Z,
+    hideAudioIcon: S,
+    onToggleMute: C
+  } = e, N = (0, a.e7)([D.Z], () => null != x && D.Z.isLocalVideoAutoDisabled(x, (0, v.Z)(f)), [x, f]), b = (0, J.N)(s), _ = (0, J.K)(s), [R, A] = i.useState(!1);
   i.useEffect(() => {
     let e = !1,
-      t = () => {
-        e !== U.Z.isOpen() && ((e = U.Z.isOpen()) || T(!1))
+      l = () => {
+        e !== z.Z.isOpen() && ((e = z.Z.isOpen()) || A(!1))
       };
-    return U.Z.addChangeListener(t), () => U.Z.removeChangeListener(t)
+    return z.Z.addChangeListener(l), () => z.Z.removeChangeListener(l)
   }, []);
-  let A = !E && f === ee.fO.STREAM && S && (!N || C),
-    R = function(e) {
+  let P = !S && f === ee.fO.STREAM && Z && (!_ || T),
+    k = function(e) {
       let {
-        localMuted: t,
-        serverMuted: n,
-        serverDeafened: r,
+        localMuted: l,
+        serverMuted: t,
+        serverDeafened: n,
         deafened: i,
-        muted: l
+        muted: s
       } = e;
-      return r ? c.Vm4 : n ? c.v0G : i ? c.wE8 : t ? c.v0G : l ? c.nRN : null
+      return n ? c.Vm4 : t ? c.v0G : i ? c.wE8 : l ? c.v0G : s ? c.nRN : null
     }({
-      localMuted: C,
-      serverMuted: j,
-      serverDeafened: x,
-      deafened: v,
+      localMuted: T,
+      serverMuted: y,
+      serverDeafened: I,
+      deafened: E,
       muted: O
     });
-  return (0, r.jsxs)("div", {
-    className: o()(el.overlayContainer, {
-      [el.compact]: N
+  return (0, n.jsxs)("div", {
+    className: r()(es.overlayContainer, {
+      [es.compact]: _
     }),
-    children: [(0, r.jsx)("div", {
-      className: o()(el.overlayTop, {
-        [el.small]: l < 195
+    children: [(0, n.jsx)("div", {
+      className: r()(es.overlayTop, {
+        [es.small]: s < 195
       }),
-      children: I || d === $.ZUi.AUTO_PROBING ? t ? (0, r.jsx)("div", {
-        className: el.status,
-        children: (0, r.jsx)(c.Amn, {
+      children: N || d === $.ZUi.AUTO_PROBING ? l ? (0, n.jsx)("div", {
+        className: es.status,
+        children: (0, n.jsx)(c.Amn, {
           size: "md",
           color: "currentColor"
         })
-      }) : (0, r.jsxs)("div", {
-        className: o()(el.overlayTitle, el.videoDisabledTitle),
-        children: [(0, r.jsx)("div", {
-          className: el.status,
-          children: (0, r.jsx)(c.Amn, {
+      }) : (0, n.jsxs)("div", {
+        className: r()(es.overlayTitle, es.videoDisabledTitle),
+        children: [(0, n.jsx)("div", {
+          className: es.status,
+          children: (0, n.jsx)(c.Amn, {
             size: "md",
             color: "currentColor"
           })
-        }), (0, r.jsx)(c.Text, {
+        }), (0, n.jsx)(c.Text, {
           variant: "text-sm/normal",
-          className: el.overlayTitleText,
+          className: es.overlayTitleText,
           children: ei.intl.string(ei.t.m2Hyj4)
         })]
       }) : null
-    }), !w && (0, r.jsxs)("div", {
-      className: o()(el.overlayBottom, {
-        [el.small]: l < 195
+    }), !b && (0, n.jsxs)("div", {
+      className: r()(es.overlayBottom, {
+        [es.small]: s < 195
       }),
-      children: [(0, r.jsxs)(c.Text, {
-        className: o()(el.experimentOverlayTitle, {
-          [el.compact]: N
+      children: [(0, n.jsxs)(c.Text, {
+        className: r()(es.experimentOverlayTitle, {
+          [es.compact]: _
         }),
         color: "none",
-        variant: N ? "text-sm/normal" : "text-md/normal",
-        children: [null != R && f === ee.fO.USER && (0, r.jsx)(R, {
-          className: o()(el.experimentTitleIcon, {
-            [el.compact]: N
+        variant: _ ? "text-sm/normal" : "text-md/normal",
+        children: [null != k && f === ee.fO.USER && (0, n.jsx)(k, {
+          className: r()(es.experimentTitleIcon, {
+            [es.compact]: _
           }),
           size: "xs",
           color: "currentColor"
-        }), h ? (0, r.jsx)("div", {
-          className: el.blocked,
-          children: (0, r.jsx)(c.t6m, {
+        }), m ? (0, n.jsx)("div", {
+          className: es.blocked,
+          children: (0, n.jsx)(c.t6m, {
             size: "lg",
-            className: el.blockedIcon,
-            color: a.Z.unsafe_rawColors.RED_400.css
+            className: es.blockedIcon,
+            color: o.Z.unsafe_rawColors.RED_400.css
           })
-        }) : null, p ? (0, r.jsx)("div", {
-          className: el.ignored,
-          children: (0, r.jsx)(c.kZF, {
+        }) : null, p ? (0, n.jsx)("div", {
+          className: es.ignored,
+          children: (0, n.jsx)(c.kZF, {
             size: "lg",
-            className: el.blockedIcon
+            className: es.blockedIcon
           })
-        }) : null, t ? null : (0, r.jsx)(ed, {
+        }) : null, l ? null : (0, n.jsx)(ed, {
           participantType: f,
-          platform: b,
-          className: o()(el.experimentTitleIcon, {
-            [el.compact]: N
+          platform: g,
+          className: r()(es.experimentTitleIcon, {
+            [es.compact]: _
           })
-        }), null == n || "" === n || t ? null : (0, r.jsx)("span", {
-          className: el.overlayTitleText,
-          children: n
-        }), y && (0, r.jsx)(c.ua7, {
+        }), null == t || "" === t || l ? null : (0, n.jsx)("span", {
+          className: es.overlayTitleText,
+          children: t
+        }), h && (0, n.jsx)(c.ua7, {
           text: ei.intl.string(ei.t.ZEem6O),
-          children: e => (0, r.jsx)(c.tQf, es(eo({}, e), {
-            className: el.secureFramesIcon,
+          children: e => (0, n.jsx)(c.tQf, ea(er({}, e), {
+            className: es.secureFramesIcon,
             size: "xs",
-            color: a.Z.colors.HEADER_PRIMARY,
+            color: o.Z.colors.HEADER_PRIMARY,
             "aria-label": ei.intl.string(ei.t.mR9cf3)
           }))
         })]
-      }), !u && (0, r.jsxs)("div", {
-        className: el.overlayButtonContainer,
-        children: [(0, r.jsx)(eh, {
+      }), !u && (0, n.jsxs)("div", {
+        className: es.overlayButtonContainer,
+        children: [(0, n.jsx)(em, {
           onClick: e => {
-            e.stopPropagation(), T(!0), _(e, !0, ee.A5.THREE_DOT)
+            e.stopPropagation(), A(!0), j(e, !0, ee.A5.THREE_DOT)
           },
           tooltipText: ei.intl.string(ei.t["+1H47u"]),
           icon: c.xhG,
-          hideWhenInactive: !Z,
-          compact: N
-        }), A && (0, r.jsx)(eh, {
-          onClick: P,
-          tooltipText: C ? ei.intl.string(ei.t.YqAjX1) : ei.intl.string(ei.t["w4m94+"]),
-          icon: C ? c.OyP : c.gj8,
-          hideWhenInactive: !C && !Z,
-          compact: N
+          hideWhenInactive: !R,
+          compact: _
+        }), P && (0, n.jsx)(em, {
+          onClick: C,
+          tooltipText: T ? ei.intl.string(ei.t.YqAjX1) : ei.intl.string(ei.t["w4m94+"]),
+          icon: T ? c.OyP : c.gj8,
+          hideWhenInactive: !T && !R,
+          compact: _
         })]
       })]
     })]
@@ -634,189 +634,189 @@ let ep = i.memo(e => {
 ep.displayName = "CallTileOverlayV2";
 let ef = i.memo(e => {
   let {
-    muted: t,
-    deafened: n,
+    muted: l,
+    deafened: t,
     localMuted: i,
-    serverMuted: l,
+    serverMuted: s,
     serverDeafened: u,
     idle: d,
-    title: h,
+    title: m,
     width: p,
     hasVideo: f,
-    inCall: m,
-    localVideoDisabled: b,
-    videoToggleState: _,
+    inCall: x,
+    localVideoDisabled: g,
+    videoToggleState: j,
     focused: O,
-    blocked: v,
-    ignored: C,
-    hideAudioIcon: j,
-    participantType: x,
-    participantUserId: S,
-    onContextMenu: E,
-    onToggleMute: P,
-    platform: I,
-    application: w,
-    secureFramesVerified: N
-  } = e, Z = null, T = null, A = null, R = (0, X.K)(p), L = (0, X.N)(p), k = (0, s.e7)([D.Z], () => null != S && D.Z.isLocalVideoAutoDisabled(S, (0, g.Z)(x)), [S, x]);
-  if (!j)
-    if (i && x === ee.fO.STREAM && f && !O) Z = (0, r.jsx)(c.ua7, {
+    blocked: E,
+    ignored: T,
+    hideAudioIcon: y,
+    participantType: I,
+    participantUserId: Z,
+    onContextMenu: S,
+    onToggleMute: C,
+    platform: N,
+    application: b,
+    secureFramesVerified: _
+  } = e, R = null, A = null, P = null, k = (0, J.K)(p), w = (0, J.N)(p), M = (0, a.e7)([D.Z], () => null != Z && D.Z.isLocalVideoAutoDisabled(Z, (0, v.Z)(I)), [Z, I]);
+  if (!y)
+    if (i && I === ee.fO.STREAM && f && !O) R = (0, n.jsx)(c.ua7, {
       text: ei.intl.string(ei.t.YqAjX1),
       children: e => {
         var {
-          onClick: t
-        } = e, n = ea(e, ["onClick"]);
-        return (0, r.jsx)(c.P3F, es(eo({}, n), {
+          onClick: l
+        } = e, t = eo(e, ["onClick"]);
+        return (0, n.jsx)(c.P3F, ea(er({}, t), {
           onClick: e => {
-            e.stopPropagation(), null == t || t(), P()
+            e.stopPropagation(), null == l || l(), C()
           },
-          className: o()(el.interactive, el.toggleMute, el.status),
-          children: (0, r.jsx)(c.OyP, {
+          className: r()(es.interactive, es.toggleMute, es.status),
+          children: (0, n.jsx)(c.OyP, {
             size: "md",
             color: "currentColor"
           })
         }))
       }
     });
-    else if (i || x !== ee.fO.STREAM || !f || R || O) {
+    else if (i || I !== ee.fO.STREAM || !f || k || O) {
     let e;
-    u ? e = c.Vm4 : l ? e = c.v0G : n ? e = c.wE8 : i ? e = c.v0G : t && (e = c.nRN), Z = null != (Z = null != e ? (0, r.jsx)(e, {
-      color: a.Z.colors.WHITE
-    }) : null) ? (0, r.jsx)("div", {
-      className: el.status,
-      children: Z
+    u ? e = c.Vm4 : s ? e = c.v0G : t ? e = c.wE8 : i ? e = c.v0G : l && (e = c.nRN), R = null != (R = null != e ? (0, n.jsx)(e, {
+      color: o.Z.colors.WHITE
+    }) : null) ? (0, n.jsx)("div", {
+      className: es.status,
+      children: R
     }) : null
-  } else Z = (0, r.jsx)(c.ua7, {
+  } else R = (0, n.jsx)(c.ua7, {
     text: ei.intl.string(ei.t["w4m94+"]),
     children: e => {
       var {
-        onClick: t
-      } = e, n = ea(e, ["onClick"]);
-      return (0, r.jsx)(c.P3F, es(eo({}, n), {
+        onClick: l
+      } = e, t = eo(e, ["onClick"]);
+      return (0, n.jsx)(c.P3F, ea(er({}, t), {
         onClick: e => {
-          e.stopPropagation(), null == t || t(), P()
+          e.stopPropagation(), null == l || l(), C()
         },
-        className: o()(el.interactive, el.toggleMute, el.status),
-        children: (0, r.jsx)(c.gj8, {
+        className: r()(es.interactive, es.toggleMute, es.status),
+        children: (0, n.jsx)(c.gj8, {
           size: "md",
           color: "currentColor"
         })
       }))
     }
   });
-  m && D.Z.supports(er.AN.VIDEO) || !f ? m && f && b && !k && (T = (0, r.jsx)(c.Amn, {
+  x && D.Z.supports(en.AN.VIDEO) || !f ? x && f && g && !M && (A = (0, n.jsx)(c.Amn, {
     size: "md",
     color: "currentColor"
-  })) : T = (0, r.jsx)(c.Odl, {
+  })) : A = (0, n.jsx)(c.Odl, {
     size: "md",
     color: "currentColor"
-  }), x === ee.fO.STREAM && !O && f && (A = (0, r.jsx)(c.ua7, {
+  }), I === ee.fO.STREAM && !O && f && (P = (0, n.jsx)(c.ua7, {
     text: ei.intl.string(ei.t["+1H47u"]),
     children: e => {
       var {
-        onClick: t
-      } = e, n = ea(e, ["onClick"]);
-      return (0, r.jsx)(c.P3F, es(eo({}, n), {
+        onClick: l
+      } = e, t = eo(e, ["onClick"]);
+      return (0, n.jsx)(c.P3F, ea(er({}, t), {
         onClick: e => {
-          e.stopPropagation(), null == t || t(), E(e)
+          e.stopPropagation(), null == l || l(), S(e)
         },
-        className: o()(el.status, el.interactive),
-        children: (0, r.jsx)(c.xhG, {
+        className: r()(es.status, es.interactive),
+        children: (0, n.jsx)(c.xhG, {
           size: "md",
           color: "currentColor"
         })
       }))
     }
   }));
-  let M = x === ee.fO.USER && null != w ? (0, r.jsx)(c.ua7, {
+  let V = I === ee.fO.USER && null != b ? (0, n.jsx)(c.ua7, {
     text: ei.intl.formatToPlainString(ei.t.Sq9xJy, {
-      game: w.name
+      game: b.name
     }),
-    children: e => (0, r.jsx)("div", es(eo({}, e), {
-      className: o()(el.gameIconContainer, {
-        [el.gameIconSmall]: p < 500
+    children: e => (0, n.jsx)("div", ea(er({}, e), {
+      className: r()(es.gameIconContainer, {
+        [es.gameIconSmall]: p < 500
       }),
-      children: (0, r.jsx)(y.Z, {
-        className: el.gameIcon,
-        game: w,
-        size: y.Z.Sizes.SMALL
+      children: (0, n.jsx)(h.Z, {
+        className: es.gameIcon,
+        game: b,
+        size: h.Z.Sizes.SMALL
       })
     }))
   }) : null;
-  return (0, r.jsxs)("div", {
-    className: el.overlayContainer,
-    children: [(0, r.jsx)("div", {
-      className: o()(el.overlayTop, {
-        [el.small]: p < 195
+  return (0, n.jsxs)("div", {
+    className: es.overlayContainer,
+    children: [(0, n.jsx)("div", {
+      className: r()(es.overlayTop, {
+        [es.small]: p < 195
       }),
-      children: k || _ === $.ZUi.AUTO_PROBING ? d ? (0, r.jsx)("div", {
-        className: el.status,
-        children: (0, r.jsx)(c.Amn, {
+      children: M || j === $.ZUi.AUTO_PROBING ? d ? (0, n.jsx)("div", {
+        className: es.status,
+        children: (0, n.jsx)(c.Amn, {
           size: "md",
           color: "currentColor"
         })
-      }) : (0, r.jsxs)("div", {
-        className: o()(el.overlayTitle, el.videoDisabledTitle),
-        children: [(0, r.jsx)("div", {
-          className: el.status,
-          children: (0, r.jsx)(c.Amn, {
+      }) : (0, n.jsxs)("div", {
+        className: r()(es.overlayTitle, es.videoDisabledTitle),
+        children: [(0, n.jsx)("div", {
+          className: es.status,
+          children: (0, n.jsx)(c.Amn, {
             size: "md",
             color: "currentColor"
           })
-        }), (0, r.jsx)(c.Text, {
+        }), (0, n.jsx)(c.Text, {
           variant: "text-sm/normal",
-          className: el.overlayTitleText,
+          className: es.overlayTitleText,
           children: ei.intl.string(ei.t.m2Hyj4)
         })]
       }) : null
-    }), (0, r.jsxs)("div", {
-      className: o()(el.overlayBottom, {
-        [el.small]: p < 195
+    }), (0, n.jsxs)("div", {
+      className: r()(es.overlayBottom, {
+        [es.small]: p < 195
       }),
-      children: [L ? (0, r.jsx)("div", {}) : (0, r.jsxs)(c.Text, {
-        className: o()(el.overlayTitle, {
-          [el.idle]: d
+      children: [w ? (0, n.jsx)("div", {}) : (0, n.jsxs)(c.Text, {
+        className: r()(es.overlayTitle, {
+          [es.idle]: d
         }),
         color: "none",
         variant: "text-md/normal",
-        children: [v ? (0, r.jsx)("div", {
-          className: el.blocked,
-          children: (0, r.jsx)(c.t6m, {
+        children: [E ? (0, n.jsx)("div", {
+          className: es.blocked,
+          children: (0, n.jsx)(c.t6m, {
             size: "lg",
-            className: el.blockedIcon,
-            color: a.Z.unsafe_rawColors.RED_400.css
+            className: es.blockedIcon,
+            color: o.Z.unsafe_rawColors.RED_400.css
           })
-        }) : null, C ? (0, r.jsx)("div", {
-          className: el.ignored,
-          children: (0, r.jsx)(c.kZF, {
+        }) : null, T ? (0, n.jsx)("div", {
+          className: es.ignored,
+          children: (0, n.jsx)(c.kZF, {
             size: "lg",
-            className: el.blockedIcon
+            className: es.blockedIcon
           })
-        }) : null, (0, r.jsx)(ed, {
-          participantType: x,
-          platform: I,
-          className: el.titleIcon
-        }), null != h && "" !== h ? (0, r.jsx)("span", {
-          className: el.overlayTitleText,
-          children: h
-        }) : null, N && (0, r.jsx)(c.ua7, {
+        }) : null, (0, n.jsx)(ed, {
+          participantType: I,
+          platform: N,
+          className: es.titleIcon
+        }), null != m && "" !== m ? (0, n.jsx)("span", {
+          className: es.overlayTitleText,
+          children: m
+        }) : null, _ && (0, n.jsx)(c.ua7, {
           text: ei.intl.string(ei.t.ZEem6O),
-          children: e => (0, r.jsx)(c.tQf, es(eo({}, e), {
-            className: el.secureFramesIcon,
+          children: e => (0, n.jsx)(c.tQf, ea(er({}, e), {
+            className: es.secureFramesIcon,
             size: "xs",
-            color: a.Z.colors.HEADER_PRIMARY,
+            color: o.Z.colors.HEADER_PRIMARY,
             "aria-label": ei.intl.string(ei.t.mR9cf3)
           }))
         })]
-      }), (0, r.jsxs)("div", {
-        className: el.statusContainer,
-        children: [null != T && (0, r.jsx)("div", {
-          className: el.status,
-          children: T
-        }), Z, A, M]
+      }), (0, n.jsxs)("div", {
+        className: es.statusContainer,
+        children: [null != A && (0, n.jsx)("div", {
+          className: es.status,
+          children: A
+        }), R, P, V]
       })]
     })]
   })
 });
 ef.displayName = "CallTileOverlay";
-let eg = C.L,
-  em = eu
+let ev = T.L,
+  ex = eu

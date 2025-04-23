@@ -12,15 +12,15 @@ var r = n(392711),
   a = n(2572),
   o = n(864106),
   s = n(579407),
-  l = n(502087),
-  c = n(168232),
-  u = n(598077),
-  d = n(630388),
-  f = n(823379),
-  _ = n(314897),
-  p = n(412788),
-  h = n(981631),
-  m = n(308083),
+  l = n(602210),
+  c = n(502087),
+  u = n(168232),
+  d = n(598077),
+  f = n(630388),
+  _ = n(823379),
+  p = n(314897),
+  h = n(412788),
+  m = n(981631),
   g = n(474936);
 
 function E(e, t, n) {
@@ -46,7 +46,7 @@ function O(e, t, n) {
 
 function I(e, t) {
   let n = b[e];
-  return !(null == n || (0, m.dM)(n.primaryGuild, t.primary_guild)) && (null == n.primaryGuild || null != t.primary_guild) && (n.primaryGuild = (0, m.lt)(t.primary_guild), b[n.id] = n, y++, !0)
+  return !(null == n || (0, l.d)(n.primaryGuild, t.primary_guild)) && (null == n.primaryGuild || null != t.primary_guild) && (n.primaryGuild = (0, l.l)(t.primary_guild), b[n.id] = n, y++, !0)
 }
 
 function S(e, t) {
@@ -54,11 +54,11 @@ function S(e, t) {
     case null == e.primaryGuild && null == t.primary_guild:
       break;
     case null != e.primaryGuild && null == t.primary_guild:
-    case (0, m.dM)(e.primaryGuild, t.primary_guild):
+    case (0, l.d)(e.primaryGuild, t.primary_guild):
       t.primary_guild = e.primaryGuild;
       break;
     default:
-      t.primary_guild = (0, m.lt)(t.primary_guild)
+      t.primary_guild = (0, l.l)(t.primary_guild)
   }
   return t
 }
@@ -66,7 +66,7 @@ function S(e, t) {
 function T(e) {
   let t = e.mfa_enabled;
   null != t && (e.mfaEnabled = t, delete e.mfa_enabled);
-  let n = (0, c.G)(e.premium_type);
+  let n = (0, u.G)(e.premium_type);
   void 0 !== n && (e.premiumType = n, delete e.premium_type);
   let r = e.nsfw_allowed;
   null != r && (e.nsfwAllowed = r, delete e.nsfw_allowed);
@@ -74,34 +74,34 @@ function T(e) {
   null != i && (e.ageVerificationStatus = i, delete e.age_verification_status);
   let a = e.public_flags;
   null != a && (e.publicFlags = a, delete e.public_flags);
-  let l = e.purchased_flags;
-  void 0 !== l && (e.purchasedFlags = l, delete e.purchased_flags);
-  let u = e.premium_usage_flags;
-  void 0 !== u && (e.premiumUsageFlags = u, delete e.premium_usage_flags), null === e.banner_color && delete e.banner_color;
-  let d = e.avatar_decoration_data;
-  void 0 !== d && (e.avatarDecorationData = (0, o.FG)(d), delete e.avatar_decoration_data);
-  let f = e.collectibles;
-  void 0 !== f && (delete e.collectibles, e.collectibles = (0, s.Xm)(f));
-  let _ = e.global_name;
-  void 0 !== _ && (e.globalName = _, delete e.global_name);
-  let p = e.primary_guild;
-  return void 0 !== p && (e.primary_guild = (0, m.lt)(p)), e
+  let c = e.purchased_flags;
+  void 0 !== c && (e.purchasedFlags = c, delete e.purchased_flags);
+  let d = e.premium_usage_flags;
+  void 0 !== d && (e.premiumUsageFlags = d, delete e.premium_usage_flags), null === e.banner_color && delete e.banner_color;
+  let f = e.avatar_decoration_data;
+  void 0 !== f && (e.avatarDecorationData = (0, o.FG)(f), delete e.avatar_decoration_data);
+  let _ = e.collectibles;
+  void 0 !== _ && (delete e.collectibles, e.collectibles = (0, s.Xm)(_));
+  let p = e.global_name;
+  void 0 !== p && (e.globalName = p, delete e.global_name);
+  let h = e.primary_guild;
+  return void 0 !== h && (e.primary_guild = (0, l.l)(h)), e
 }
 
 function A(e) {
-  return e.id !== _.default.getId()
+  return e.id !== p.default.getId()
 }
 
 function N(e) {
   let t, n = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     r = b[e.id],
-    i = void 0 !== e.id && e.id === _.default.getId();
-  if (null == r) void 0 !== (t = (r = new u.Z(e)).premiumType) && i && (r.premiumType = R((0, c.QI)(r), r.premiumType));
+    i = void 0 !== e.id && e.id === p.default.getId();
+  if (null == r) void 0 !== (t = (r = new d.Z(e)).premiumType) && i && (r.premiumType = R((0, u.QI)(r), r.premiumType));
   else if (n) {
     var a;
     let n = T(e);
-    void 0 !== (t = null != (a = n.premium_type) ? a : n.premiumType) && i && (0, c.VR)(n) && (n = C(n)), n = S(r, n), r = r.merge(n)
-  }(0, c.jX)((0, c.QI)(r), t, r.premiumType);
+    void 0 !== (t = null != (a = n.premium_type) ? a : n.premiumType) && i && (0, u.VR)(n) && (n = C(n)), n = S(r, n), r = r.merge(n)
+  }(0, u.jX)((0, u.QI)(r), t, r.premiumType);
   let o = b[e.id] !== r;
   return b[e.id] = r, o && y++, o
 }
@@ -109,14 +109,14 @@ function N(e) {
 function C(e) {
   var t;
   let n = null != (t = e.premium_type) ? t : e.premiumType,
-    r = R((0, c.VR)(e), n);
+    r = R((0, u.VR)(e), n);
   return void 0 !== e.premiumType ? e.premiumType = r : void 0 !== e.premium_type && (e.premium_type = r), e
 }
 
 function R(e, t) {
   if (!e) return t;
-  let n = l.Z.getPremiumTypeOverride(),
-    r = l.Z.getPremiumTypeActual();
+  let n = c.Z.getPremiumTypeOverride(),
+    r = c.Z.getPremiumTypeActual();
   return n === g.F_ ? r : n
 }
 
@@ -148,7 +148,7 @@ function w(e) {
     e.members.forEach(t => {
       O(t.user.id, e.id, t.avatar), I(t.user.id, t.user)
     })
-  }), null != b[_.default.getId()] && (b[v] = new u.Z({
+  }), null != b[p.default.getId()] && (b[v] = new d.Z({
     id: v,
     username: "Wumpus",
     discriminator: "0",
@@ -180,14 +180,14 @@ function L(e) {
 
 function x(e) {
   if (null != e.users)
-    for (let t of e.users) t.id in b && L(t) || (b[t.id] = new u.Z(t))
+    for (let t of e.users) t.id in b && L(t) || (b[t.id] = new d.Z(t))
 }
 
 function M(e) {
   let {
     user: t
   } = e;
-  t.id !== _.default.getId() && N(t)
+  t.id !== p.default.getId() && N(t)
 }
 
 function k(e) {
@@ -298,9 +298,9 @@ function K(e) {
   let {
     message: t
   } = e;
-  if (P(t, !0), null != t.flags && d.yE(t.flags, h.iLy.URGENT)) {
-    let e = b[_.default.getId()];
-    return null != e && (b[_.default.getId()] = e.set("flags", d.mB(e.flags, h.xW$.HAS_UNREAD_URGENT_MESSAGES, !0)), !0)
+  if (P(t, !0), null != t.flags && f.yE(t.flags, m.iLy.URGENT)) {
+    let e = b[p.default.getId()];
+    return null != e && (b[p.default.getId()] = e.set("flags", f.mB(e.flags, m.xW$.HAS_UNREAD_URGENT_MESSAGES, !0)), !0)
   }
   return !1
 }
@@ -441,7 +441,7 @@ function ec(e) {
       },
       avatar: s
     } = e;
-    n !== _.default.getId() && N({
+    n !== p.default.getId() && N({
       id: n,
       username: r,
       avatar: i,
@@ -482,7 +482,7 @@ function eh(e) {
     users: t
   } = e;
   t.forEach(e => {
-    null == b[e.id] && (b[e.id] = new u.Z(e))
+    null == b[e.id] && (b[e.id] = new d.Z(e))
   })
 }
 
@@ -562,7 +562,7 @@ function eI(e) {
 function eS(e) {
   let {
     members: t
-  } = e, n = _.default.getId();
+  } = e, n = p.default.getId();
   return t.reduce((e, t) => t.member.user.id === n ? e : N(t.member.user) || e, !1)
 }
 
@@ -583,35 +583,35 @@ function eA(e) {
 }
 
 function eN(e) {
-  let {} = e, t = b[_.default.getId()];
-  return null != t && (b[_.default.getId()] = t.set("ageVerificationStatus", i.F$.CLIENT_ONLY_PENDING), !0)
+  let {} = e, t = b[p.default.getId()];
+  return null != t && (b[p.default.getId()] = t.set("ageVerificationStatus", i.F$.CLIENT_ONLY_PENDING), !0)
 }
 
 function eC(e) {
   let {
     status: t
-  } = e, n = b[_.default.getId()];
-  return null != n && n.ageVerificationStatus === i.F$.CLIENT_ONLY_PENDING && (b[_.default.getId()] = n.set("ageVerificationStatus", t), !0)
+  } = e, n = b[p.default.getId()];
+  return null != n && n.ageVerificationStatus === i.F$.CLIENT_ONLY_PENDING && (b[p.default.getId()] = n.set("ageVerificationStatus", t), !0)
 }
-class eR extends p.Z {
+class eR extends h.Z {
   initialize() {
-    this.waitFor(_.default, l.Z)
+    this.waitFor(p.default, c.Z)
   }
   takeSnapshot() {
     let e = this.getCurrentUser();
     return {
       version: eR.LATEST_SNAPSHOT_VERSION,
       data: {
-        users: [e].filter(f.lm)
+        users: [e].filter(_.lm)
       }
     }
   }
   handleLoadCache(e) {
     let t = this.readSnapshot(eR.LATEST_SNAPSHOT_VERSION);
     if (null != t)
-      for (let e of t.users) b[e.id] = new u.Z(e);
+      for (let e of t.users) b[e.id] = new d.Z(e);
     if (null != e.users)
-      for (let t of e.users) t.id in b && L(t) || (b[t.id] = new u.Z(t));
+      for (let t of e.users) t.id in b && L(t) || (b[t.id] = new d.Z(t));
     for (let t of [e.privateChannels, e.initialGuildChannels])
       for (let e of t) {
         var n;
@@ -647,7 +647,7 @@ class eR extends p.Z {
     return t && n.sort((e, t) => e.username > t.username ? 1 : e.username < t.username ? -1 : 0), n
   }
   getCurrentUser() {
-    return b[_.default.getId()]
+    return b[p.default.getId()]
   }
   constructor() {
     super({

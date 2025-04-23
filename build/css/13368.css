@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: 6455f11d2eeef488
+  Original File Name: bcfff5efa6d45bcc
 **/
 .debugMode_fa952e {
     background-color: rgba(255,0,0,.25);
@@ -3597,7 +3597,7 @@
     color: var(--text-normal)
 }
 
-.container__91e7c {
+.container__394db {
     align-items: center;
     display: block;
     flex: 1 1 auto;
@@ -3607,19 +3607,19 @@
     white-space: nowrap
 }
 
-.container__91e7c .chipletContainer__91e7c {
+.container__394db .chipletContainer__394db {
     display: inline-block;
     overflow: hidden
 }
 
-.container__91e7c .chipletParent__91e7c {
+.container__394db .chipletParent__394db {
     display: inline;
     overflow: hidden;
     padding-left: 4px;
     position: relative
 }
 
-.container__91e7c .usernameContainer__91e7c {
+.container__394db .usernameContainer__394db {
     display: inline-block;
     flex: 1;
     margin-top: 2px;
@@ -3628,7 +3628,7 @@
     white-space: nowrap
 }
 
-.container__91e7c.isOverlayContainer__91e7c {
+.container__394db.isOverlayContainer__394db {
     align-content: center;
     background: var(--background-primary);
     border-radius: 4px;
@@ -3638,26 +3638,26 @@
     height: 20px
 }
 
-.container__91e7c.isOverlayContainer__91e7c .usernameContainer__91e7c {
+.container__394db.isOverlayContainer__394db .usernameContainer__394db {
     margin-top: 0
 }
 
-.container__91e7c.isOverlayContainer__91e7c .chipletContainer__91e7c,.container__91e7c.isOverlayContainer__91e7c .chipletParent__91e7c {
+.container__394db.isOverlayContainer__394db .chipletContainer__394db,.container__394db.isOverlayContainer__394db .chipletParent__394db {
     align-content: center;
     align-items: center;
     display: flex
 }
 
-.container__91e7c.isOverlayContainer__91e7c .chipletContainer__91e7c {
+.container__394db.isOverlayContainer__394db .chipletContainer__394db {
     margin: 0;
     padding: 1.5px
 }
 
-.container__91e7c.isOverlayContainer__91e7c .chipletContainer__91e7c.noPadding__91e7c {
+.container__394db.isOverlayContainer__394db .chipletContainer__394db.noPadding__394db {
     padding: 0
 }
 
-.isOverlayTag__91e7c {
+.isOverlayTag__394db {
     margin: 0
 }
 
@@ -4290,4 +4290,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     width: 96px
 }
 
-/*# sourceMappingURL=6455f11d2eeef488.css.map*/
+/*# sourceMappingURL=bcfff5efa6d45bcc.css.map*/

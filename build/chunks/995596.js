@@ -1,6 +1,6 @@
 /** Chunk was on 9924 **/
 n.d(t, {
-  Z: () => T
+  Z: () => N
 }), n(388685);
 var r = n(200651),
   l = n(192379),
@@ -65,7 +65,7 @@ let _ = e => [{
     })
   };
 
-function N(e) {
+function T(e) {
   let {
     onTabSelect: t,
     tabs: n,
@@ -144,14 +144,14 @@ function N(e) {
   })
 }
 
-function T(e) {
+function N(e) {
   let {
     guildId: t,
     currentTab: n,
     onTabSelect: i
-  } = e, [a, c] = l.useState(0), x = l.useRef(null), C = l.useRef(a), T = (0, j.A)({
+  } = e, [a, c] = l.useState(0), x = l.useRef(null), C = l.useRef(a), N = (0, j.A)({
     guildId: t
-  }), E = _(null != T ? T : 0), {
+  }), E = _(null != N ? N : 0), {
     lastVisibleIndex: S,
     onItemLayout: I,
     overflowItemsRef: P
@@ -184,7 +184,7 @@ function T(e) {
           })
         }, e.id)), (0, r.jsx)("div", {
           ref: P,
-          children: (0, r.jsx)(N, {
+          children: (0, r.jsx)(T, {
             tabs: A,
             onTabSelect: i,
             selectedTab: n
@@ -199,7 +199,7 @@ function T(e) {
           id: e.id,
           "aria-label": e.label,
           children: e.label
-        }, e.id)), 0 !== A.length ? (0, r.jsx)(N, {
+        }, e.id)), 0 !== A.length ? (0, r.jsx)(T, {
           tabs: A,
           onTabSelect: i,
           selectedTab: n

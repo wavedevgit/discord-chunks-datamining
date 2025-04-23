@@ -13,17 +13,17 @@ var r = n(200651),
   u = n(239091),
   m = n(700582),
   x = n(906732),
-  h = n(979264),
-  j = n(693546),
-  b = n(826581),
-  f = n(246364),
-  p = n(98493),
-  g = n(328977),
-  v = n(412222),
-  _ = n(223312),
+  h = n(693546),
+  j = n(826581),
+  b = n(246364),
+  f = n(98493),
+  p = n(328977),
+  g = n(412222),
+  v = n(223312),
+  _ = n(172751),
   C = n(768762),
-  N = n(171368),
-  T = n(598077),
+  T = n(171368),
+  N = n(598077),
   E = n(430824),
   S = n(51144),
   I = n(388032),
@@ -37,10 +37,10 @@ function w(e) {
     status: l
   } = e;
   switch (l) {
-    case f.wB.REJECTED:
+    case b.wB.REJECTED:
       t = I.t["7YSJ6e"], n = I.t.i05OUV;
       break;
-    case f.wB.APPROVED:
+    case b.wB.APPROVED:
       t = I.t.bv82GR, n = I.t.D4OUHR;
       break;
     default:
@@ -87,7 +87,7 @@ function A(e) {
             variant: "eyebrow",
             color: "interactive-normal",
             children: I.intl.string(I.t.EZ5QWF)
-          }), t === f.Nw.TIMESTAMP_ASC ? (0, r.jsx)(C.Z, {
+          }), t === b.Nw.TIMESTAMP_ASC ? (0, r.jsx)(C.Z, {
             className: P.sortIcon,
             direction: C.Z.Directions.UP
           }) : (0, r.jsx)(C.Z, {
@@ -116,7 +116,7 @@ let M = l.memo(function(e) {
     } = t, {
       analyticsLocations: s
     } = (0, x.ZP)(), o = l.useCallback(e => {
-      e.stopPropagation(), e.preventDefault(), (0, N.openUserProfileModal)({
+      e.stopPropagation(), e.preventDefault(), (0, T.openUserProfileModal)({
         userId: n.id,
         joinRequestId: i,
         sourceAnalyticsLocations: s
@@ -137,7 +137,7 @@ let M = l.memo(function(e) {
           children: (0, r.jsxs)(d.P3F, {
             onClick: o,
             className: y.nameContainer,
-            children: [n.globalName, (0, r.jsx)(h.ZP, {
+            children: [n.globalName, (0, r.jsx)(_.ZP, {
               primaryGuild: null == n ? void 0 : n.primaryGuild,
               userId: null == n ? void 0 : n.id,
               contextGuildId: a,
@@ -168,9 +168,9 @@ let M = l.memo(function(e) {
       guildId: s,
       createdAt: m,
       applicationStatus: x
-    } = t, h = l.useMemo(() => new T.Z(t.user), [t.user]), j = (0, g.L)({
+    } = t, h = l.useMemo(() => new N.Z(t.user), [t.user]), j = (0, p.L)({
       guildId: s
-    }), b = (0, c.e7)([E.Z], () => E.Z.getGuild(s)), p = x === f.wB.SUBMITTED, v = e => {
+    }), f = (0, c.e7)([E.Z], () => E.Z.getGuild(s)), g = x === b.wB.SUBMITTED, v = e => {
       (0, u.jW)(e, async () => {
         let {
           default: e
@@ -195,7 +195,7 @@ let M = l.memo(function(e) {
             }
             return e
           }({}, t), l = l = {
-            guild: b,
+            guild: f,
             user: h
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
@@ -232,7 +232,7 @@ let M = l.memo(function(e) {
         })
       }), (0, r.jsx)("td", {
         className: P.moreOptionsCol,
-        children: p && (0, r.jsx)(d.ua7, {
+        children: g && (0, r.jsx)(d.ua7, {
           text: I.intl.string(I.t.x8Nn4O),
           children: e => {
             let {
@@ -303,22 +303,22 @@ function D(e) {
   let {
     guildId: t,
     currentTab: n
-  } = e, i = l.useRef(null), a = (0, c.e7)([E.Z], () => E.Z.getGuild(t)), s = (0, v.C)({
+  } = e, i = l.useRef(null), a = (0, c.e7)([E.Z], () => E.Z.getGuild(t)), s = (0, g.C)({
     guildId: t
-  }), o = (0, c.e7)([b.Z], () => b.Z.isFetching()), {
+  }), o = (0, c.e7)([j.Z], () => j.Z.isFetching()), {
     guildJoinRequests: u
-  } = (0, _.j)({
+  } = (0, v.j)({
     guildId: t,
     applicationStatus: n,
     sortOrder: s
   }), {
     fetchNextPage: m
-  } = (0, p.m)({
+  } = (0, f.m)({
     guildId: t,
     guildJoinRequests: u
   }), x = l.useCallback(async () => {
-    let e = s === f.Nw.TIMESTAMP_ASC ? f.Nw.TIMESTAMP_DESC : f.Nw.TIMESTAMP_ASC;
-    j.Z.setSelectedSortOrder(t, e), await m(e, n)
+    let e = s === b.Nw.TIMESTAMP_ASC ? b.Nw.TIMESTAMP_DESC : b.Nw.TIMESTAMP_ASC;
+    h.Z.setSelectedSortOrder(t, e), await m(e, n)
   }, [s, t, m, n]);
   return null == a ? null : (0, r.jsx)("div", {
     className: O.mainTableContainer,
@@ -339,7 +339,7 @@ function D(e) {
             })
           }) : u.map(e => (0, r.jsx)(Z, {
             joinRequest: e,
-            onSelect: () => j.Z.setSelectedGuildJoinRequest(t, e)
+            onSelect: () => h.Z.setSelectedGuildJoinRequest(t, e)
           }, e.joinRequestId))
         })]
       })

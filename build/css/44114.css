@@ -1,6 +1,6 @@
 /**
   Module ID: 44114
-  Original File Name: 07bba203371d1f2a
+  Original File Name: f280e5329ac4faef
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -10868,26 +10868,26 @@ html .invoiceCancelRow_b9f95d {
     width: 8px
 }
 
-.container__8e864 {
+.container_ac239d {
     flex: 1;
     justify-content: space-between
 }
 
-.container__8e864,.guildPrefixContainer__8e864 {
+.container_ac239d,.guildPrefixContainer_ac239d {
     align-items: center;
     display: flex;
     min-width: 0
 }
 
-.guildPrefixContainer__8e864 {
+.guildPrefixContainer_ac239d {
     justify-content: center
 }
 
-.guildPrefixIcon__8e864 {
+.guildPrefixIcon_ac239d {
     flex: 1 0 auto
 }
 
-.details__8e864 {
+.details_ac239d {
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
@@ -10895,7 +10895,7 @@ html .invoiceCancelRow_b9f95d {
     padding-left: 8px
 }
 
-.guildName__8e864 {
+.guildName_ac239d {
     color: var(--header-primary);
     font-size: 16px;
     font-weight: 600;
@@ -10907,31 +10907,31 @@ html .invoiceCancelRow_b9f95d {
     width: 100%
 }
 
-.tag__8e864 {
+.tag_ac239d {
     background-color: var(--bg-surface-raised);
     border: 1px solid var(--border-strong);
     flex: 0;
     padding: 4px 8px
 }
 
-.badge__8e864 {
+.badge_ac239d {
     margin-right: 2px;
     vertical-align: top
 }
 
-.tagContainer__8e864 {
+.tagContainer_ac239d {
     flex: 0 0 auto
 }
 
-.subtitle_d541c3 {
+.subtitle__48064 {
     margin-bottom: 16px
 }
 
-.select_d541c3,.selectPopout_d541c3 {
+.select__48064,.selectPopout__48064 {
     gap: 8px
 }
 
-.newBadge_d541c3 {
+.newBadge__48064 {
     margin-left: var(--spacing-4)
 }
 
@@ -18278,4 +18278,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=07bba203371d1f2a.css.map*/
+/*# sourceMappingURL=f280e5329ac4faef.css.map*/

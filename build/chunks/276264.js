@@ -18,9 +18,9 @@ var r = n(200651),
   p = n(747017),
   h = n(385499),
   m = n(693728),
-  g = n(979264),
-  E = n(554300),
-  b = n(558602),
+  g = n(554300),
+  E = n(558602),
+  b = n(172751),
   y = n(736144),
   v = n(884902),
   O = n(113434),
@@ -162,7 +162,7 @@ let G = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
         name: i,
         className: x.name,
         roleColors: a
-      }), !o && (0, r.jsx)(g.ZP, {
+      }), !o && (0, r.jsx)(b.ZP, {
         primaryGuild: null == s ? void 0 : s.primaryGuild,
         userId: null == s ? void 0 : s.id,
         contextGuildId: l,
@@ -220,7 +220,7 @@ let G = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       status: a,
       applicationStream: o,
       voiceChannel: s
-    }), [n, a, o, s]), h = i.useMemo(() => !(0, b.Z)({
+    }), [n, a, o, s]), h = i.useMemo(() => !(0, E.Z)({
       activity: null == n ? void 0 : n.find(e => {
         let {
           type: t
@@ -250,7 +250,7 @@ let G = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       isOwner: f,
       ownerTooltipText: p,
       lostPermissionTooltipText: h,
-      isTyping: g = !1,
+      isTyping: E = !1,
       nick: b,
       user: y,
       currentUser: N,
@@ -332,7 +332,7 @@ let G = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       useRawTargetDimensions: !0,
       animation: c.yRy.Animation.NONE,
       spacing: -B,
-      children: () => (0, r.jsx)(E.Z, k({
+      children: () => (0, r.jsx)(g.Z, k({
         ref: ef,
         selected: n,
         className: o()(x.member, F, {
@@ -381,7 +381,7 @@ let G = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
           eventHandlers: eO,
           avatarSrc: ev,
           isMobile: M,
-          isTyping: g,
+          isTyping: E,
           avatarDecorationSrc: ey,
           handleSetTypingRef: ew,
           typingRef: eh,

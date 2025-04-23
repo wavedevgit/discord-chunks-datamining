@@ -16,8 +16,8 @@ var i = n(200651),
   f = n(40851),
   m = n(414910),
   g = n(194082),
-  y = n(979264),
-  O = n(871118),
+  y = n(871118),
+  O = n(172751),
   v = n(352978),
   b = n(833519),
   _ = n(839662),
@@ -192,7 +192,7 @@ function R(e) {
             color: "always-white",
             className: P.controlUserName,
             children: C.ZP.getName(n.stream.guildId, n.stream.channelId, s)
-          }), (0, i.jsx)(y.ZP, {
+          }), (0, i.jsx)(O.ZP, {
             primaryGuild: u.primaryGuild,
             userId: u.id,
             containerClassName: P.guildTag,
@@ -240,7 +240,7 @@ let M = new Set([N.jm8.ENDED, N.jm8.FAILED, N.jm8.PAUSED]),
       locked: r,
       widgetId: o,
       pinned: l
-    } = e, s = (0, a.e7)([E.Z], () => E.Z.getActiveStreamForUser(t.user.id, t.stream.guildId), [t.user.id, t.stream.guildId]), u = (0, f.bp)(), d = null != s && M.has(s.state), h = null != s, m = (0, Z.yA)(t.stream), y = (0, Z.xN)(t.stream);
+    } = e, s = (0, a.e7)([E.Z], () => E.Z.getActiveStreamForUser(t.user.id, t.stream.guildId), [t.user.id, t.stream.guildId]), u = (0, f.bp)(), d = null != s && M.has(s.state), h = null != s, m = (0, Z.yA)(t.stream), O = (0, Z.xN)(t.stream);
     return !h && r || d ? null : (0, i.jsxs)("div", {
       className: P.tile,
       children: [h && !r && (0, i.jsx)(g.ZP, {
@@ -261,7 +261,7 @@ let M = new Set([N.jm8.ENDED, N.jm8.FAILED, N.jm8.PAUSED]),
           children: (0, i.jsx)(b.Z, {
             participant: t,
             width: n,
-            fit: null != y ? y : v.L.CONTAIN,
+            fit: null != O ? O : v.L.CONTAIN,
             inPopout: !0,
             focused: !r,
             selected: !1,
@@ -271,7 +271,7 @@ let M = new Set([N.jm8.ENDED, N.jm8.FAILED, N.jm8.PAUSED]),
         })
       }) : (0, i.jsx)("div", {
         className: P.streamPreview,
-        children: (0, i.jsx)(O.Z, {
+        children: (0, i.jsx)(y.Z, {
           noText: !0,
           className: P.absoluteFill,
           stream: t.stream

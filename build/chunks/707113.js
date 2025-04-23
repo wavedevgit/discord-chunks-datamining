@@ -41,9 +41,9 @@ function p(e) {
     onMemberSelect: s
   } = e, p = t.id, g = (0, o.e7)([u.Z], () => u.Z.getEstimatedMemberSearchCountByGuildId(p), [p]), v = (0, d.$j)(p), _ = (0, d.M3)(p), C = l.useCallback(e => {
     null != e && (null == s || s(e))
-  }, [s]), N = (0, m.xb)(_, v, g), T = l.useRef(null), E = l.useRef(null), S = l.useCallback(() => {
+  }, [s]), T = (0, m.xb)(_, v, g), N = l.useRef(null), E = l.useRef(null), S = l.useCallback(() => {
     var e;
-    null == (e = T.current) || e.resetSearchText()
+    null == (e = N.current) || e.resetSearchText()
   }, []);
   return (0, r.jsx)("div", {
     className: a()(b.mainTableContainer, n),
@@ -53,15 +53,15 @@ function p(e) {
       orientation: "horizontal",
       children: [(0, r.jsx)(j.Z, {
         guild: t,
-        ref: T
+        ref: N
       }), (0, r.jsx)(f, {
         guild: t
       }), (0, r.jsx)(x.Z, {
         guild: t,
         onSelectRow: C,
-        searchState: N,
+        searchState: T,
         onResetForNewMembers: S
-      }), N !== m.po.SUCCESS_STILL_INDEXING && (0, r.jsx)(h.Z, {
+      }), T !== m.po.SUCCESS_STILL_INDEXING && (0, r.jsx)(h.Z, {
         guildId: t.id,
         onPageChange: i
       })]

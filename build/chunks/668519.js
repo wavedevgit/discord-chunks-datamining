@@ -1,11 +1,12 @@
-/** Chunk was on 95124 **/
-n.d(t, {
-  a: () => o,
-  s: () => s
+/** Chunk was on 79887 **/
+"use strict";
+r.d(t, {
+  a: () => i,
+  s: () => u
 });
-var r = n(818083),
-  i = n(984134);
-let l = (0, r.B)({
+var n = r(818083),
+  l = r(984134);
+let o = (0, n.B)({
   kind: "user",
   id: "2025-01_go_live_modal_refresh",
   label: "Go Live Modal Refresh",
@@ -41,29 +42,29 @@ let l = (0, r.B)({
   }]
 });
 
-function o(e) {
+function i(e) {
   let {
     location: t,
-    autoTrackExposure: n = !0
+    autoTrackExposure: r = !0
   } = e, {
-    isInHoldout: r
-  } = i.h.useExperiment({
+    isInHoldout: n
+  } = l.h.useExperiment({
     location: t
   }, {
-    autoTrackExposure: n
+    autoTrackExposure: r
   });
-  return l.useExperiment({
+  return o.useExperiment({
     location: t
   }, {
-    disable: r,
-    autoTrackExposure: n
+    disable: n,
+    autoTrackExposure: r
   })
 }
 
-function s(e) {
-  i.h.getCurrentConfig({
+function u(e) {
+  l.h.getCurrentConfig({
     location: e
-  }).isInHoldout || l.trackExposure({
+  }).isInHoldout || o.trackExposure({
     location: e
   })
 }

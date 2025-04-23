@@ -19,8 +19,8 @@ var r = n(200651),
   g = n(522651),
   b = n(795318),
   O = n(194082),
-  h = n(282256),
-  y = n(925329),
+  h = n(925329),
+  y = n(340044),
   v = n(880395),
   S = n(221241),
   j = n(314897),
@@ -193,7 +193,7 @@ let U = l.forwardRef(function(e, t) {
       disabled: f = !1,
       isOverlay: O = !1
     } = e,
-    y = function(e, t) {
+    h = function(e, t) {
       if (null == e) return {};
       var n, r, l = function(e, t) {
         if (null == e) return {};
@@ -230,7 +230,7 @@ let U = l.forwardRef(function(e, t) {
     ringing: q,
     user: Q,
     channelId: $
-  } = y, {
+  } = h, {
     parentAnalyticsLocation: ee
   } = (0, m.ZP)(), et = (0, u.bp)(), en = null != $ ? P.Z.getChannel($) : null, {
     simplifiedSettingsEnabled: er
@@ -320,7 +320,7 @@ let U = l.forwardRef(function(e, t) {
               source: O ? N.jXE.OVERLAY : N.Sbl.VOICE_PANEL
             }
           };
-        return !F || O ? (0, r.jsx)(h.Z, (e = L({}, l), t = t = {
+        return !F || O ? (0, r.jsx)(y.Z, (e = L({}, l), t = t = {
           children: n
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
           var n = Object.keys(e);
@@ -334,7 +334,7 @@ let U = l.forwardRef(function(e, t) {
         }), e)) : null
       }(), (0, r.jsx)(M, L({
         disabled: f
-      }, y)), er && (!F && el ? (0, r.jsx)(s.DY3, {
+      }, h)), er && (!F && el ? (0, r.jsx)(s.DY3, {
         text: D.intl.string(D.t["+1H47u"]),
         className: o()(_.optionsButtonContainer, {
           [_.optionsContainerActive]: ei
@@ -390,10 +390,10 @@ function R(e) {
     className: _.iconSpacing,
     children: (0, r.jsx)("div", {
       ref: m,
-      children: (0, r.jsx)(y.Z, {
+      children: (0, r.jsx)(h.Z, {
         className: o()(_.icon, n),
         game: t,
-        size: y.Z.Sizes.XSMALL,
+        size: h.Z.Sizes.XSMALL,
         onMouseEnter: () => {
           f.ZP.trackWithMetadata(N.rMx.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_HOVERED, {
             channel_id: a,
