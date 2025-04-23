@@ -28,8 +28,8 @@ var r = n(200651),
   I = n(44136),
   _ = (n(351483), n(249212)),
   P = n(853476),
-  x = n(981631),
-  w = n(65154),
+  w = n(981631),
+  x = n(65154),
   A = n(388032),
   R = n(519417);
 let N = s.EFr.SIZE_80,
@@ -103,7 +103,7 @@ function D(e) {
     user: Y,
     streamId: H,
     speaking: z
-  } = t, G = Y.id === W, K = (0, I.ZP)(t), B = (0, o.e7)([Z.Z], () => Z.Z.isFocused()), q = (0, o.e7)([v.Z], () => v.Z.getWindowFocused(x.KJ3.CHANNEL_CALL_POPOUT)), J = (0, o.e7)([O.Z], () => null != Y.id && O.Z.isLocalVideoDisabled(Y.id, (0, f.Z)(t.type)), [Y.id, t.type]), X = (0, o.e7)([y.ZP], () => y.ZP.isGuestOrLurker(n.guild_id, Y.id)), Q = j.ZP.getName(n.getGuildId(), n.id, Y) + (X ? " ".concat(A.intl.string(A.t["pFO/Pj"])) : ""), $ = z && (q || B), ee = s < 124 ? C : N, {
+  } = t, G = Y.id === W, K = (0, I.ZP)(t), B = (0, o.e7)([Z.Z], () => Z.Z.isFocused()), q = (0, o.e7)([v.Z], () => v.Z.getWindowFocused(w.KJ3.CHANNEL_CALL_POPOUT)), J = (0, o.e7)([O.Z], () => null != Y.id && O.Z.isLocalVideoDisabled(Y.id, (0, f.Z)(t.type)), [Y.id, t.type]), X = (0, o.e7)([y.ZP], () => y.ZP.isGuestOrLurker(n.guild_id, Y.id)), Q = j.ZP.getName(n.getGuildId(), n.id, Y) + (X ? " ".concat(A.intl.string(A.t["pFO/Pj"])) : ""), $ = z && (q || B), ee = s < 124 ? C : N, {
     avatarSrc: et,
     avatarDecorationSrc: en
   } = (0, h.Z)({
@@ -111,7 +111,7 @@ function D(e) {
     guildId: n.guild_id,
     size: ee,
     animateOnHover: !$
-  }), er = (0, o.e7)([d.Z], () => d.Z.getSelectedParticipant(n.id)), el = (0, p.Z)(w.Yn.DEFAULT, t.user.id), ei = (0, m.Z)(t.user.id), ea = {
+  }), er = (0, o.e7)([d.Z], () => d.Z.getSelectedParticipant(n.id)), el = (0, p.Z)(x.Yn.DEFAULT, t.user.id), ei = (0, m.Z)(t.user.id), ea = {
     channel: n,
     selectedParticipant: er,
     user: Y
@@ -125,7 +125,7 @@ function D(e) {
       user: n
     } = eo.current;
     e.isGuildStageVoice() && !K && (null == t ? void 0 : t.id) === n.id && u.Z.selectParticipant(e.id, null)
-  }, [K]), i && !J && !L && K && !S && null != F && O.Z.supports(w.AN.VIDEO)) ? null != el && null == ei ? (0, r.jsx)(_.Z, {
+  }, [K]), i && !J && !L && K && !S && null != F && O.Z.supports(x.AN.VIDEO)) ? null != el && null == ei ? (0, r.jsx)(_.Z, {
     avError: el,
     userId: t.id,
     width: s,

@@ -57,8 +57,8 @@ function P(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
-  w = {
+let w = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
+  x = {
     opacity: 0,
     transform: "translate3d(100%, 0, 0)"
   },
@@ -73,10 +73,10 @@ let x = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
     opacity: 1
   },
   C = {
-    borderRadius: "".concat(x, "px ").concat(x, "px ").concat(x, "px ").concat(x, "px")
+    borderRadius: "".concat(w, "px ").concat(w, "px ").concat(w, "px ").concat(w, "px")
   },
   T = {
-    borderRadius: "0px ".concat(x, "px ").concat(x, "px 0px")
+    borderRadius: "0px ".concat(w, "px ").concat(w, "px 0px")
   },
   D = {
     mass: 1,
@@ -90,8 +90,8 @@ let x = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
         isUpsellEnabled: s,
         shape: d,
         size: g,
-        didTrackUpsellViewed: x,
-        setDidTrackUpsellViewed: w,
+        didTrackUpsellViewed: w,
+        setDidTrackUpsellViewed: x,
         className: A,
         premiumIndicator: R
       } = e,
@@ -127,13 +127,13 @@ let x = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
         })
       }, [k, D, M]);
     if (l.useEffect(() => {
-        !x && D && (h.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
+        !w && D && (h.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
           type: Z.cd.STREAM_QUALITY_INDICATOR,
           has_premium_stream_fps: t,
           has_premium_stream_resolution: i,
           location_stack: C
-        }), w(!0))
-      }, [t, i, D, x, w, C]), null == N) return null;
+        }), x(!0))
+      }, [t, i, D, w, x, C]), null == N) return null;
     let V = (0, r.jsx)(f.ua7, {
       text: T ? j.intl.string(j.t.q8TiVl) : D ? j.intl.string(j.t.IHgpEh) : j.intl.string(j.t.vLb0VV),
       position: "bottom",
@@ -182,10 +182,10 @@ let x = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
     }, [t]);
     let S = (0, f.Yzy)(h, {
         enter: {
-          from: v.enabled ? R : w,
+          from: v.enabled ? R : x,
           to: v.enabled ? N : A
         },
-        leave: v.enabled ? R : w,
+        leave: v.enabled ? R : x,
         config: D
       }, "animate-always"),
       y = (0, f.q_F)({

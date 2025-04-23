@@ -70,7 +70,7 @@ function b(e) {
         left: t.left
       }
     },
-    x = e => {
+    w = e => {
       let t = null == O ? void 0 : O.getBoundingClientRect();
       if (_.current = t, e.timestamp !== j || null == t || n) return g;
       let {
@@ -84,10 +84,10 @@ function b(e) {
         width: 268
       }
     },
-    w = (0, l.useRef)(null),
+    x = (0, l.useRef)(null),
     A = (0, s.Yzy)(I, {
       keys: e => e.timestamp,
-      ref: w,
+      ref: x,
       from: {
         opacity: .2
       },
@@ -104,11 +104,11 @@ function b(e) {
         position: "fixed",
         visibility: "hidden",
         opacity: 1
-      }, b.enabled ? x(e) : P()),
+      }, b.enabled ? w(e) : P()),
       enter: e => [E({
         opacity: 1,
         visibility: "visible"
-      }, x(e))],
+      }, w(e))],
       leave: E({
         opacity: 0
       }, !b.enabled && E({
@@ -125,7 +125,7 @@ function b(e) {
         null != t.item && null != I.find(e => e.timestamp === t.item.timestamp) && (0, c.Gh)(Z, t.item.timestamp)
       }
     }, "animate-always");
-  return (0, i.useChain)([w, R], [0, .1], 3e3), (0, r.jsxs)(r.Fragment, {
+  return (0, i.useChain)([x, R], [0, .1], 3e3), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: p.hidden,
       ref: y
