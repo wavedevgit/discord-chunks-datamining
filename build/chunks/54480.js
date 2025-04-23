@@ -23,6 +23,9 @@ function l(e) {
   }).lightMode, d = (0, i.wj)((0, a.ZP)()), f = (0, r.e7)([o.Z], () => o.Z.getChannel(n));
   return {
     canAccessPicker: l && (d || u) && (null == f ? void 0 : f.isChatWallpaperEnabled) === !0,
-    entryPoint: c
+    entryPoint: c,
+    isChatWallpaperSetterExperimentEnabled: l,
+    isDarkTheme: d,
+    selectedChannel: f
   }
 }
