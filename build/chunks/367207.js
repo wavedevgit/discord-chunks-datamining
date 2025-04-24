@@ -107,7 +107,7 @@ class v extends o.Z {
     super(...e), y(this, "_premiumPaymentModalCloseResolve", null), y(this, "_premiumPaymentModalCloseReject", null), y(this, "_maybeFetchPremiumOffer", async () => {
       let e = u.default.getCurrentUser();
       if (null != e && e.verified) {
-        let t = !(0, h.I5)(e) && d.Z.shouldFetchOffer();
+        let t = (d.Z.canFractionalPremiumUserUseOffer() || !(0, h.I5)(e)) && d.Z.shouldFetchOffer();
         await (0, g.T)("PremiumManager", t)
       }
       l.Z.dispatch({

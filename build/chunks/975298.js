@@ -25,7 +25,7 @@ function b() {
     forceFetch: e
   } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {
     forceFetch: !1
-  }, t = (0, c.e7)([f.default], () => f.default.getCurrentUser()), n = (0, c.Wu)([p.Z], () => p.Z.getFractionalPremium(!1)), i = (0, c.e7)([p.Z], () => p.Z.fetchedAllEntitlements), s = (0, c.Wu)([p.Z], () => p.Z.getUnactivatedFractionalPremiumUnits()), b = (0, c.e7)([_.ZP], () => _.ZP.getPremiumTypeSubscription()), [y, v] = r.useState({
+  }, t = (0, c.e7)([f.default], () => f.default.getCurrentUser()), n = (0, c.Wu)([p.Z], () => p.Z.getFractionalPremium()), i = (0, c.e7)([p.Z], () => p.Z.fetchedAllEntitlements), s = (0, c.Wu)([p.Z], () => p.Z.getUnactivatedFractionalPremiumUnits()), b = (0, c.e7)([_.ZP], () => _.ZP.getPremiumTypeSubscription()), [y, v] = r.useState({
     isFractionalPremiumActive: !1,
     fractionalState: E.a$.NONE,
     startsAt: l()(0),
