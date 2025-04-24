@@ -79,9 +79,7 @@ function P(e) {
     }), (0, a.jsx)(d.P3F, {
       tag: "span",
       className: N.copyPropertyButton,
-      onClick: () => {
-        (0, b.JG)(JSON.stringify(l)), s(!0)
-      },
+      onClick: () => (0, b.JG)(JSON.stringify(l), () => s(!0)),
       children: i ? (0, a.jsx)(d.kmB, {
         color: "currentColor",
         size: "sm"
