@@ -1,6 +1,6 @@
 /**
   Module ID: 2900
-  Original File Name: 1d02ad0f4dc29f9b
+  Original File Name: 3e9d67261bca40f7
 **/
 .descriptionText__535f5 {
     color: var(--header-secondary);
@@ -3288,7 +3288,7 @@ html .progress__61462 {
     margin-left: 0
 }
 
-.partyMember_e45a82:last-child {
+.partyMember_e45a82:last-child,.partyMember_e45a82:last-child>.partyMember_e45a82 {
     -webkit-mask: none;
     mask: none
 }
@@ -11663,4 +11663,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=1d02ad0f4dc29f9b.css.map*/
+/*# sourceMappingURL=3e9d67261bca40f7.css.map*/
