@@ -1,4 +1,4 @@
-/** Chunk was on 30745 **/
+/** Chunk was on 6310 **/
 e.exports = {
   spacing: "spacing__89466",
   spacingTop: "spacingTop__89466",

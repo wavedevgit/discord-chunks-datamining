@@ -1,4 +1,4 @@
-/** Chunk was on 30745 **/
+/** Chunk was on 3656 **/
 e.exports = {
   sidebarContainer: "sidebarContainer__656be",
   loadingContainer: "loadingContainer__656be",

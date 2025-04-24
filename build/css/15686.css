@@ -1,0 +1,428 @@
+/**
+  Module ID: 15686
+  Original File Name: b44a166b534999c9
+**/
+.textarea__9daae {
+    background-color: transparent;
+    border: none;
+    box-sizing: border-box;
+    color: var(--text-normal);
+    font-size: 12px;
+    line-height: 14px;
+    max-height: 88px;
+    padding: 4px;
+    resize: none;
+    width: 100%
+}
+
+.textarea__9daae::-moz-placeholder {
+    color: var(--header-secondary)
+}
+
+.textarea__9daae::placeholder {
+    color: var(--header-secondary)
+}
+
+.textarea__9daae:focus {
+    background-color: var(--background-tertiary)
+}
+
+.connectedAccountVanityMetadata_fffe42 {
+    margin-top: 4px
+}
+
+.connectedAccountVanityMetadata_fffe42:not(:last-of-type) {
+    margin-right: 8px
+}
+
+.connectedAccountVanityMetadataTag_fffe42 {
+    background-color: var(--background-modifier-accent);
+    border-radius: 12px;
+    padding: 1px 8px
+}
+
+.connectedAccountVanityMetadataItem_fffe42 {
+    align-items: center;
+    display: flex
+}
+
+.connectedAccountVanityMetadataItemIcon_fffe42 {
+    height: 18px;
+    margin-right: 4px;
+    width: 18px
+}
+
+.paypalVerifiedTag_fffe42 {
+    background-color: var(--status-positive-background);
+    color: var(--white-500)!important
+}
+
+.left_caab99 {
+    transform: rotate(270deg)
+}
+
+.right_caab99 {
+    transform: rotate(90deg)
+}
+
+.down_caab99 {
+    transform: rotate(180deg)
+}
+
+.downRight_caab99 {
+    transform: rotate(135deg)
+}
+
+.upLeft_caab99 {
+    transform: rotate(315deg)
+}
+
+.discordMemberCreatedAt_e6abe8 {
+    display: flex;
+    gap: 10px
+}
+
+.discordMemberCreatedAtIconContainer_e6abe8 {
+    background-color: var(--background-modifier-hover);
+    border-radius: 50%;
+    color: var(--interactive-active);
+    height: 24px;
+    padding: 8px;
+    width: 24px
+}
+
+.discordMemberCreatedAtIcon_e6abe8 {
+    align-self: center
+}
+
+.discordMemberCreatedAtText_e6abe8 {
+    display: flex;
+    flex-direction: column
+}
+
+.connectedAccounts_e6abe8 {
+    display: flex;
+    flex-direction: row;
+    width: 100%
+}
+
+.connectedAccountsColumn_e6abe8 {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 8px)
+}
+
+.connectedAccountsColumn_e6abe8+.connectedAccountsColumn_e6abe8 {
+    margin-left: 16px
+}
+
+.connectedAccountContainer_e6abe8 {
+    border: 1px solid var(--user-profile-border);
+    border-radius: var(--radius-sm);
+    margin-top: 16px;
+    padding: 8px
+}
+
+.connectedAccountContainerWithMetadata_e6abe8 {
+    padding-bottom: 8px;
+    padding-top: 8px
+}
+
+.connectedAccount_e6abe8 {
+    align-items: center;
+    display: flex;
+    flex: 0 1;
+    gap: 8px
+}
+
+.connectedAccountChildren_e6abe8 {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 32px;
+    overflow: hidden
+}
+
+.connectedAccountChildrenNoIcon_e6abe8 {
+    margin-left: 0
+}
+
+.connectedAccountPoweredBy_e6abe8 {
+    color: var(--text-muted);
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 8px
+}
+
+.connectedAccountPoweredByText_e6abe8 {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 4px;
+    vertical-align: text-top
+}
+
+.connectedAccountIcon_e6abe8 {
+    flex-shrink: 0;
+    height: 24px;
+    width: 24px
+}
+
+.connectedAccountNameContainer_e6abe8 {
+    flex-grow: 1;
+    overflow: hidden
+}
+
+.connectedAccountNameContainerClickable_e6abe8 {
+    cursor: pointer
+}
+
+.connectedAccountName_e6abe8,.connectedAccountNameTextContainer_e6abe8 {
+    align-items: center;
+    display: flex;
+    overflow: hidden
+}
+
+.connectedAccountNameTextContainer_e6abe8 {
+    flex: 1
+}
+
+.connectedAccountNameText_e6abe8 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    user-select: text;
+    white-space: nowrap
+}
+
+.connectedAccountVerifiedIcon_e6abe8 {
+    margin-left: 4px
+}
+
+.connectedAccountHideIcon_e6abe8 {
+    color: var(--interactive-normal);
+    height: 14px;
+    margin: 2px;
+    width: 14px
+}
+
+.connectedAccountOpenIcon_e6abe8 {
+    color: var(--interactive-normal);
+    display: block;
+    height: 16px;
+    transform: rotate(45deg);
+    width: 16px
+}
+
+.connectedAccountOpenIcon_e6abe8:hover {
+    color: var(--interactive-hover)
+}
+
+.connectedAccountOpenIcon_e6abe8:active {
+    color: var(--interactive-active)
+}
+
+.memberSinceWrapper_c4eb81 {
+    align-items: center;
+    display: flex;
+    gap: 8px
+}
+
+.memberSince_c4eb81 {
+    align-items: center;
+    display: flex;
+    gap: 4px
+}
+
+.discordIcon_c4eb81 {
+    color: var(--interactive-normal);
+    height: 16px;
+    width: 16px
+}
+
+.divider_c4eb81 {
+    background-color: var(--interactive-normal);
+    border-radius: 50%;
+    height: 4px;
+    width: 4px
+}
+
+.multipleButtons_ea99c4 {
+    display: flex;
+    flex-grow: 0;
+    gap: 8px
+}
+
+.iconTextButton_ea99c4 {
+    align-items: center;
+    display: flex;
+    gap: 4px
+}
+
+.root_af8192 {
+    color: var(--text-normal);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    position: relative
+}
+
+.root__9c3be {
+    max-height: unset;
+    overflow: hidden;
+    position: relative;
+    width: unset
+}
+
+.visual-refresh .root__9c3be {
+    border: none;
+    border-radius: var(--radius-lg)
+}
+
+.toast__9c3be {
+    top: 8px
+}
+
+.backdrop__9c3be {
+    background: var(--bg-backdrop);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.backdrop__9c3be,.profile__9c3be {
+    border-top-left-radius: var(--radius-lg);
+    border-top-right-radius: var(--radius-lg)
+}
+
+.profile__9c3be {
+    background: var(--background-surface-high);
+    box-shadow: var(--shadow-medium);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 400px
+}
+
+.custom-user-profile-theme .profile__9c3be {
+    --profile-gradient-start: color-mix(in oklab,var(--profile-gradient-overlay-color) 60%,var(--profile-gradient-primary-color));
+    --profile-gradient-end: color-mix(in oklab,var(--profile-gradient-overlay-color) 60%,var(--profile-gradient-secondary-color));
+    background: linear-gradient(var(--profile-gradient-start),var(--profile-gradient-start) var(--custom-user-profile-banner-height),var(--profile-gradient-end))
+}
+
+.profileHeader__9c3be {
+    flex-shrink: 0;
+    min-height: calc(var(--custom-user-profile-banner-height) + 48px);
+    position: relative
+}
+
+.profileBody__9c3be {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 24px;
+    overflow: hidden;
+    padding: 8px 0
+}
+
+.profileUsername__9c3be {
+    padding: 0 32px
+}
+
+.profileUsernameTag__9c3be {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px
+}
+
+.profileButtons__9c3be {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    padding: 0 32px
+}
+
+.profileButtons__9c3be:empty {
+    display: none
+}
+
+.profileScroller__9c3be {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 32px
+}
+
+.profileHeading__9c3be {
+    color: var(--text-tertiary)
+}
+
+.profileConnections__9c3be {
+    margin-top: -16px
+}
+
+.profileAppConnections__9c3be {
+    margin-top: 0
+}
+
+.profileNote__9c3be {
+    margin: -4px
+}
+
+.profileNote__9c3be textarea {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 4px
+}
+
+.profileNote__9c3be textarea:hover {
+    border-color: var(--input-border)
+}
+
+.profileNote__9c3be textarea:focus {
+    background: var(--user-profile-note-background-focus);
+    border-color: var(--input-focused-border)
+}
+
+.profileNote__9c3be textarea:focus::-moz-placeholder {
+    color: transparent
+}
+
+.profileNote__9c3be textarea:focus::placeholder {
+    color: transparent
+}
+
+.visual-refresh .profileNote__9c3be textarea:focus,.visual-refresh .profileNote__9c3be textarea:focus:hover {
+    border-color: var(--input-focused-border)
+}
+
+.tabBar__9c3be {
+    border: none;
+    display: flex;
+    gap: 24px
+}
+
+.tabBar__9c3be .tabBarItem__9c3be {
+    padding-bottom: 11px
+}
+
+.visual-refresh .tabBar__9c3be .tabBarItem__9c3be:after {
+    background: var(--brand-500);
+    border-radius: 1px;
+    height: 3px;
+    left: 25%;
+    margin-top: -3px;
+    width: 40px
+}
+
+.custom-user-profile-theme .tabBar__9c3be .tabBarItem__9c3be:after {
+    background: var(--header-primary)
+}
+
+/*# sourceMappingURL=b44a166b534999c9.css.map*/

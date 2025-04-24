@@ -94,7 +94,7 @@ function P(e) {
   } = (0, g.Xo)(), {
     live: j,
     stream: U
-  } = (0, m.Z)(t.id), G = !a && x !== b.lY.MODAL && (0, l.EQ)(n).with(b.n_.STATUS, () => 0 === j.length && null == U).with(b.n_.ACTIVITY, () => !0).with(b.n_.AVATAR, () => !1).exhaustive(), [B, V] = i.useState(G);
+  } = (0, m.Z)(t.id), G = !a && x !== b.lY.MODAL && x !== b.lY.MODAL_V2 && (0, l.EQ)(n).with(b.n_.STATUS, () => 0 === j.length && null == U).with(b.n_.ACTIVITY, () => !0).with(b.n_.AVATAR, () => !1).exhaustive(), [B, V] = i.useState(G);
   if (i.useEffect(() => {
       B && !G && V(!1)
     }, [B, G]), t.bot || D || !L) return null;

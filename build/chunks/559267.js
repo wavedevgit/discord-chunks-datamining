@@ -1,4 +1,4 @@
-/** Chunk was on 30745 **/
+/** Chunk was on 3656 **/
 e.exports = {
   headerContainer: "headerContainer__9a59b",
   chatBubbleContainer: "chatBubbleContainer__9a59b",

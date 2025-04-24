@@ -40,8 +40,8 @@ function S(e) {
       selectedSkuId: Z,
       step: v,
       updatedSubscription: N,
-      startingPremiumSubscriptionPlanIdRef: A,
-      startingFractionalPremiumEndsAtRef: k
+      startingPremiumSubscriptionPlanIdRef: k,
+      startingFractionalPremiumEndsAtRef: A
     } = (0, x.JL)(),
     {
       isGift: U,
@@ -78,22 +78,22 @@ function S(e) {
   }, [K, z]), t = null != E ? E(O, J, N) : null != b ? (0, r.jsx)(c.VY, {}) : U ? (0, r.jsx)(c.TB, {
     planId: O.id,
     onClose: J
-  }) : A.current === O.id ? (0, r.jsx)(c.ZP, {
+  }) : k.current === O.id ? (0, r.jsx)(c.ZP, {
     planId: O.id,
     postSuccessGuild: y,
     onClose: J,
     paymentSourceType: Q,
     hideClose: W,
-    startingFractionalPremiumEndsAt: k.current
+    startingFractionalPremiumEndsAt: A.current
   }) : (0, r.jsx)(c.ZP, {
     followupSKUInfo: I,
-    startingPremiumSubscriptionPlanId: A.current,
+    startingPremiumSubscriptionPlanId: k.current,
     planId: O.id,
     onClose: J,
     isDowngrade: null != T && (0, p.GY)(T, O.id, l),
     paymentSourceType: Q,
     hideClose: W,
-    startingFractionalPremiumEndsAt: k.current
+    startingFractionalPremiumEndsAt: A.current
   }), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(f.C3, {
       children: [(0, r.jsx)(L.Z, {}), t]

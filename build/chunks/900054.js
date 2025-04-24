@@ -1,4 +1,4 @@
-/** Chunk was on 30745 **/
+/** Chunk was on 3656 **/
 e.exports = {
   friendWrapper: "friendWrapper_bbd192",
   friend: "friend_bbd192",

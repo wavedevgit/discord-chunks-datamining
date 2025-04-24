@@ -35,7 +35,7 @@ var r = n(200651),
   v = n(388032),
   N = n(236691);
 
-function A(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -53,7 +53,7 @@ function A(e) {
   }
   return e
 }
-let k = [h.h8.PLAN_SELECT, h.h8.ADD_PAYMENT_STEPS, h.h8.REVIEW, h.h8.CONFIRM];
+let A = [h.h8.PLAN_SELECT, h.h8.ADD_PAYMENT_STEPS, h.h8.REVIEW, h.h8.CONFIRM];
 
 function U(e) {
   let {
@@ -77,8 +77,8 @@ function U(e) {
     applicationId: M,
     guildId: v,
     referralTrialOfferId: N,
-    skuId: A,
-    returnRef: k,
+    skuId: k,
+    returnRef: A,
     skipConfirm: U = !1,
     continueSessionToInitialStep: w
   } = e, {
@@ -120,10 +120,10 @@ function U(e) {
     applicationId: M,
     guildId: v,
     referralTrialOfferId: N,
-    skuId: A,
+    skuId: k,
     shakeWhilePurchasing: !0,
     isDynamicModal: D,
-    returnRef: k,
+    returnRef: A,
     skipConfirm: U,
     continueSessionToInitialStep: w
   })
@@ -162,8 +162,8 @@ function R(e) {
     skuId: a,
     referralTrialOfferId: s
   })), f = (0, d.id)(C, c, u);
-  return (0, r.jsx)(m.J, (t = A({}, e), n = n = {
-    breadcrumbSteps: k,
+  return (0, r.jsx)(m.J, (t = k({}, e), n = n = {
+    breadcrumbSteps: A,
     onReturn: () => {
       let e = Object.values(o),
         t = e.length < 1 && null == i ? h.h8.PLAN_SELECT : h.h8.REVIEW;
@@ -184,10 +184,10 @@ function R(e) {
 }
 let F = [{
   key: null,
-  renderStep: e => (0, r.jsx)(j.I, A({}, e))
+  renderStep: e => (0, r.jsx)(j.I, k({}, e))
 }, {
   key: h.h8.SKU_SELECT,
-  renderStep: e => (0, r.jsx)(T.q, A({}, e)),
+  renderStep: e => (0, r.jsx)(T.q, k({}, e)),
   options: {
     renderHeader: !1,
     hideSlider: !0,
@@ -195,21 +195,21 @@ let F = [{
   }
 }, {
   key: h.h8.WHAT_YOU_LOSE,
-  renderStep: e => (0, r.jsx)(P.x, A({}, e)),
+  renderStep: e => (0, r.jsx)(P.x, k({}, e)),
   options: {
     renderHeader: !1,
     hideSlider: !0
   }
 }, {
   key: h.h8.PLAN_SELECT,
-  renderStep: e => (0, r.jsx)(b.x, A({}, e)),
+  renderStep: e => (0, r.jsx)(b.x, k({}, e)),
   options: {
     renderHeader: !0,
     useBreadcrumbLabel: e => w(e) ? null : v.intl.string(v.t["r+SebW"])
   }
 }, {
   key: h.h8.ADD_PAYMENT_STEPS,
-  renderStep: e => (0, r.jsx)(R, A({}, e)),
+  renderStep: e => (0, r.jsx)(R, k({}, e)),
   options: {
     renderHeader: !0,
     useBreadcrumbLabel: e => w(e) ? null : v.intl.string(v.t.Sb6wIy)
@@ -222,17 +222,17 @@ let F = [{
   renderStep: () => (0, r.jsx)(L.Z, {})
 }, {
   key: h.h8.REVIEW,
-  renderStep: e => (0, r.jsx)(S.l, A({}, e)),
+  renderStep: e => (0, r.jsx)(S.l, k({}, e)),
   options: {
     renderHeader: !0,
     useBreadcrumbLabel: e => w(e) ? v.intl.string(v.t.UKbp1N) : v.intl.string(v.t.QBnNHh)
   }
 }, {
   key: h.h8.CONFIRM,
-  renderStep: e => (0, r.jsx)(E.b, A({}, e))
+  renderStep: e => (0, r.jsx)(E.b, k({}, e))
 }, {
   key: h.h8.SELECT_FREE_SKU,
-  renderStep: e => (0, r.jsx)(y.S, A({}, e)),
+  renderStep: e => (0, r.jsx)(y.S, k({}, e)),
   options: {
     bodyClassName: N.selectFreeSku,
     isDynamicModal: !0
@@ -279,7 +279,7 @@ function B(e) {
           giftMessage: d,
           giftStyle: p,
           giftingOrigin: o,
-          children: (0, r.jsx)(U, A({}, e))
+          children: (0, r.jsx)(U, k({}, e))
         })
       })
     })

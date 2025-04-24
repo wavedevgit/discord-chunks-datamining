@@ -25,13 +25,13 @@ function p(e) {
     nicknameIcons: h,
     pronouns: m,
     className: g,
-    isTryItOut: E,
-    onOpenProfile: b,
-    onClose: y,
-    nicknameVariant: v = "heading-lg/bold",
-    pronounsVariant: O = "text-sm/medium"
-  } = e, I = e => null == b ? e : (0, r.jsx)(o.P3F, {
-    onClick: b,
+    tagClassName: E,
+    isTryItOut: b,
+    onOpenProfile: y,
+    onClose: v,
+    nicknameVariant: O = "heading-lg/bold"
+  } = e, I = e => null == y ? e : (0, r.jsx)(o.P3F, {
+    onClick: y,
     className: _.clickableUsername,
     children: e
   }), S = null != m && m.length > 0, T = (0, l.D)(t);
@@ -43,7 +43,7 @@ function p(e) {
       className: _.usernameRow,
       children: [I((0, r.jsx)(o.X6q, {
         className: _.nickname,
-        variant: v,
+        variant: O,
         children: p
       })), null != T && (0, r.jsx)(c.Z, {
         type: T,
@@ -61,8 +61,8 @@ function p(e) {
         user: t,
         usernameIcon: n,
         forceUsername: !0,
-        forcePomelo: E,
-        className: _.userTag,
+        forcePomelo: b,
+        className: a()(_.userTag, E),
         usernameClass: _.userTagUsername,
         discriminatorClass: _.userTagDiscriminator,
         hideBotTag: !0
@@ -75,15 +75,15 @@ function p(e) {
           text: f.intl.string(f.t.GI2A8P),
           delay: d.vB,
           children: (0, r.jsx)(o.Text, {
-            variant: O,
-            className: _.pronounsText,
+            className: a()(_.pronounsText, E),
+            variant: "text-sm/medium",
             color: "header-primary",
             children: m
           })
         })]
       }), (0, r.jsx)(u.ZP, {
         userId: t.id,
-        onClose: y
+        onClose: v
       }), i]
     })]
   })
