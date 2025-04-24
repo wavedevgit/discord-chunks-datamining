@@ -12,8 +12,8 @@ var s, a, o = n(392711),
   m = n(442837),
   g = n(570140),
   p = n(561654),
-  f = n(956226),
-  h = n(430824),
+  h = n(956226),
+  f = n(430824),
   x = n(990492),
   b = n(823379),
   j = n(700785),
@@ -44,7 +44,7 @@ let N = new Set,
 
 function A() {
   if (null == r || null == T) return [];
-  let e = c()(h.Z.getRoles(r.id)).values().sortBy(e => {
+  let e = c()(f.Z.getRoles(r.id)).values().sortBy(e => {
     let {
       position: t
     } = e;
@@ -79,7 +79,7 @@ function L(e) {
 
 function M() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-  r = _.Z.getProps().guild, E = !1, S = !1, l = void 0, N.clear(), k.clear(), I = v.QZA.OPEN, G(P = [...T = null != r ? c()(h.Z.getRoles(r.id)).values().sortBy(e => {
+  r = _.Z.getProps().guild, E = !1, S = !1, l = void 0, N.clear(), k.clear(), I = v.QZA.OPEN, G(P = [...T = null != r ? c()(f.Z.getRoles(r.id)).values().sortBy(e => {
     let {
       position: t
     } = e;
@@ -171,7 +171,7 @@ function z(e) {
   if (null == r || t !== r.id || I === v.QZA.SUBMITTING) return !1;
   r = _.Z.getProps().guild;
   let n = [];
-  null != r && (n = c()(h.Z.getRoles(r.id)).values().sortBy(e => {
+  null != r && (n = c()(f.Z.getRoles(r.id)).values().sortBy(e => {
     let {
       position: t
     } = e;
@@ -196,7 +196,7 @@ function z(e) {
 }
 class H extends(s = m.ZP.Store) {
   initialize() {
-    this.waitFor(_.Z, p.Z, h.Z)
+    this.waitFor(_.Z, p.Z, f.Z)
   }
   hasChanges() {
     return E || S || w
@@ -338,7 +338,7 @@ let W = new H(g.Z, __OVERLAY__ ? {} : {
         currentStyle: r
       } = e, i = F(t);
       if (null == i) return !1;
-      let l = (0, f.D)(n),
+      let l = (0, h.D)(n),
         s = k.get(t);
       return null != s && (s.styleColors[r] = n, s.currentStyle = r, k.set(t, s), B(i, {
         color: null != n.primary_color ? n.primary_color : void 0,
@@ -393,7 +393,7 @@ let W = new H(g.Z, __OVERLAY__ ? {} : {
         styleColors: l.styleColors
       });
       let s = l.styleColors[r],
-        a = (0, f.D)(s);
+        a = (0, h.D)(s);
       return B(i, {
         color: null != (t = s.primary_color) ? t : void 0,
         colors: s,

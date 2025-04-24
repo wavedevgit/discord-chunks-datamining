@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(303737),
   g = n(618748),
   p = n(500395),
-  f = n(975464),
-  h = n(981631),
+  h = n(975464),
+  f = n(981631),
   x = n(674563),
   b = n(94072);
 
@@ -31,11 +31,11 @@ function j() {
   i.useEffect(() => {
     null != t && (0, m.sO)(t) && (0, c.EW)(s.z.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE)
   }, [t]);
-  let O = (null == t ? void 0 : t.hasFeature(h.oNc.CREATOR_MONETIZABLE)) === !1 && (null == t ? void 0 : t.hasFeature(h.oNc.CREATOR_MONETIZABLE_PROVISIONAL)) === !1;
+  let O = (null == t ? void 0 : t.hasFeature(f.oNc.CREATOR_MONETIZABLE)) === !1 && (null == t ? void 0 : t.hasFeature(f.oNc.CREATOR_MONETIZABLE_PROVISIONAL)) === !1;
   return e = null == t || j ? (0, r.jsx)(a.$jN, {}) : null != v ? (0, r.jsx)(p.Z, {
     guild: t,
     config: v
-  }) : O ? (0, r.jsx)(f.Z, {
+  }) : O ? (0, r.jsx)(h.Z, {
     guild: t
   }) : (0, r.jsx)(g.Z, {
     guild: t,

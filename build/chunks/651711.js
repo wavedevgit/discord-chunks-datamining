@@ -23,7 +23,7 @@ function d(e) {
   } = (0, o.N)(), p = r.useCallback(async () => {
     var e, r;
     m ? g || await (null == n || null == (r = n.onRequireModeratorMFAClick) ? void 0 : r.call(n)) : await (null == n || null == (e = n.onEnableMFAClick) ? void 0 : e.call(n)), null == t || t()
-  }, [m, g, t, n]), f = (0, a.R)({
+  }, [m, g, t, n]), h = (0, a.R)({
     onEnableMFAClick: p
   });
   return r.useMemo(() => {
@@ -93,7 +93,7 @@ function d(e) {
         checkedLabel: u.intl.string(u.t.NqVyFh),
         uncheckedLabel: u.intl.string(u.t.VcDNIS),
         description: u.intl.format(u.t["7NzkfX"], {
-          enableMFAHook: f
+          enableMFAHook: h
         }),
         checked: e.hasEnabled2FA,
         actionLabel: i ? u.intl.string(u.t.BU4Dio) : void 0,
@@ -101,5 +101,5 @@ function d(e) {
       })
     }
     return !0 === d && o.sort(e => e.checked ? 0 : -1), o
-  }, [e, d, m, n, g, f, p])
+  }, [e, d, m, n, g, h, p])
 }

@@ -26,7 +26,7 @@ function m(e) {
       memberCount: null != (e = u.Z.getMemberCount(m)) ? e : 1234,
       onlineCount: null != (t = u.Z.getOnlineCount(m)) ? t : 1234
     }
-  }, [m]), f = i.useRef((0, l.Z)()), h = i.useMemo(() => {
+  }, [m]), h = i.useRef((0, l.Z)()), f = i.useMemo(() => {
     var e, r;
     if (null != n) return o.JO.createFromDiscoverableGuild(n);
     if (null == t) return null;
@@ -66,21 +66,21 @@ function m(e) {
     }), e))
   }, [n, t, g, p]), x = i.useMemo(() => {
     var e;
-    let t = null == h || null == (e = h.emojis) ? void 0 : e[0];
+    let t = null == f || null == (e = f.emojis) ? void 0 : e[0];
     return null != t ? {
       name: t.require_colons ? ":".concat(t.name, ":") : t.name,
       emojiId: t.id,
       animated: t.animated,
       jumboable: !0
     } : {}
-  }, [null == h ? void 0 : h.emojis]);
-  return null != h && h.isDiscoverable() ? (0, r.jsx)(c.UA, {
+  }, [null == f ? void 0 : f.emojis]);
+  return null != f && f.isDiscoverable() ? (0, r.jsx)(c.UA, {
     sourceType: o.w6.GUILD,
     expressionSourceApplication: null,
-    expressionSourceGuild: h,
+    expressionSourceGuild: f,
     node: x,
     closePopout: d.dG,
-    nonce: f.current,
+    nonce: h.current,
     demoMode: !0
   }) : null
 }

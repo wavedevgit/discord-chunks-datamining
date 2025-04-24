@@ -16,8 +16,8 @@ var r = n(200651),
   m = n(889369),
   g = n(983135),
   p = n(570961),
-  f = n(208665),
-  h = n(974513),
+  h = n(208665),
+  f = n(974513),
   x = n(716130),
   b = n(981631),
   j = n(290511),
@@ -28,7 +28,7 @@ function O(e) {
   let {
     guildId: t,
     prompts: n
-  } = e, a = (0, l.e7)([m.Z], () => m.Z.editedDefaultChannelIds), [c, d] = (0, u.dF)(t, n, [...a]), g = c.length, p = c.length + d.length, f = g / p * 100, h = Math.max(Math.ceil(85 * p / 100) - g, 0), [x, b] = i.useState(!1), j = x ? s.CJ0 : s.u04;
+  } = e, a = (0, l.e7)([m.Z], () => m.Z.editedDefaultChannelIds), [c, d] = (0, u.dF)(t, n, [...a]), g = c.length, p = c.length + d.length, h = g / p * 100, f = Math.max(Math.ceil(85 * p / 100) - g, 0), [x, b] = i.useState(!1), j = x ? s.CJ0 : s.u04;
   return (0, r.jsxs)("div", {
     className: v.channelCoverage,
     children: [(0, r.jsxs)(s.P3F, {
@@ -36,7 +36,7 @@ function O(e) {
       onClick: () => b(!x),
       children: [(0, r.jsxs)("div", {
         className: v.warningTextContainer,
-        children: [f <= 85 && (0, r.jsx)(s.P4T, {
+        children: [h <= 85 && (0, r.jsx)(s.P4T, {
           size: "xs",
           color: "currentColor",
           className: v.warning
@@ -52,8 +52,8 @@ function O(e) {
         className: v.progressContainer,
         children: [(0, r.jsx)(s.Exd, {
           className: v.coverageProgress,
-          foregroundColor: f > 85 ? "var(--status-positive)" : "var(--status-warning)",
-          percent: f
+          foregroundColor: h > 85 ? "var(--status-positive)" : "var(--status-warning)",
+          percent: h
         }), (0, r.jsx)(j, {
           size: "md",
           color: "currentColor",
@@ -86,7 +86,7 @@ function O(e) {
         })
       }), (0, r.jsx)("div", {
         className: v.channelCoverageHint,
-        children: h > 0 ? (0, r.jsxs)(r.Fragment, {
+        children: f > 0 ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.P4T, {
             size: "xs",
             color: "currentColor"
@@ -94,7 +94,7 @@ function O(e) {
             variant: "text-xs/normal",
             color: "text-muted",
             children: _.intl.format(_.t["sX889/"], {
-              numChannels: h
+              numChannels: f
             })
           })]
         }) : (0, r.jsx)(s.Text, {
@@ -121,7 +121,7 @@ function y(e) {
   let {
     guild: t,
     saveOnClose: n
-  } = e, a = (0, l.e7)([c.Z], () => c.Z.isLoading()), o = (0, l.e7)([f.Z], () => f.Z.editedOnboardingPrompts), u = (0, l.e7)([f.Z], () => f.Z.advancedMode), d = i.useRef(!1);
+  } = e, a = (0, l.e7)([c.Z], () => c.Z.isLoading()), o = (0, l.e7)([h.Z], () => h.Z.editedOnboardingPrompts), u = (0, l.e7)([h.Z], () => h.Z.advancedMode), d = i.useRef(!1);
   i.useEffect(() => {
     a || d.current || 0 !== o.length || (d.current = !0, u || (0, p.tS)(t, [(0, j.ae)()], !1))
   });
@@ -170,7 +170,7 @@ function y(e) {
         })
       }), (0, r.jsx)("div", {
         className: v.dot
-      }), (0, r.jsx)(h.Wu, {
+      }), (0, r.jsx)(f.Wu, {
         guildId: t.id
       })]
     }), (0, r.jsx)(O, {
@@ -188,7 +188,7 @@ function y(e) {
 
 function N() {
   let e = (0, l.e7)([d.Z], () => d.Z.getGuild()),
-    t = (0, l.e7)([f.Z], () => f.Z.submitting);
+    t = (0, l.e7)([h.Z], () => h.Z.submitting);
   return null == e ? null : (0, r.jsx)(a.Z, {
     onSave: () => {
       try {

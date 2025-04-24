@@ -19,8 +19,8 @@ let m = i.memo(function(e) {
     children: m,
     isExpanded: g,
     isStuck: p,
-    onExpand: f,
-    disableAnimation: h,
+    onExpand: h,
+    disableAnimation: f,
     disableBackground: x
   } = e, [b, j] = i.useState(!0), [_, v] = i.useState(!1), {
     ref: O,
@@ -65,7 +65,7 @@ let m = i.memo(function(e) {
     onRest: () => {
       v(!0)
     }
-  }, b || h ? "animate-never" : "respect-motion-settings");
+  }, b || f ? "animate-never" : "respect-motion-settings");
   return i.useLayoutEffect(() => {
     v(!1), E(g)
   }, [g]), i.useLayoutEffect(() => {
@@ -85,7 +85,7 @@ let m = i.memo(function(e) {
       style: S,
       children: [(0, r.jsx)(o.P3F, {
         innerRef: O,
-        onClick: p ? void 0 : f,
+        onClick: p ? void 0 : h,
         className: s()(d.innerHeader, {
           [d.toggled]: g && p
         }),

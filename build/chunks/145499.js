@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(678558),
   g = n(852679),
   p = n(357156),
-  f = n(713081),
-  h = n(50101),
+  h = n(713081),
+  f = n(50101),
   x = n(151494),
   b = n(639777),
   j = n(626135),
@@ -125,7 +125,7 @@ let w = (e, t) => e < (0, _.A3)(I.Eu4.NONE) ? I.Eu4.NONE : e < (0, _.A3)(I.Eu4.T
       return null != (e = v.Z.getStickersByGuildId(t.id)) ? e : []
     }, [t]), {
       analyticsLocations: u
-    } = (0, d.ZP)(), j = (0, x.Z)(t.id), Z = t.hasFeature(I.oNc.MORE_STICKERS) ? I.Eu4.TIER_3 : t.premiumTier, A = t.hasFeature(I.oNc.MORE_STICKERS) ? I.oCV[I.Eu4.TIER_3] : j, L = (0, h.Ek)(t.id, "GuildStickersTiers"), M = (0, b.Z)(t.id);
+    } = (0, d.ZP)(), j = (0, x.Z)(t.id), Z = t.hasFeature(I.oNc.MORE_STICKERS) ? I.Eu4.TIER_3 : t.premiumTier, A = t.hasFeature(I.oNc.MORE_STICKERS) ? I.oCV[I.Eu4.TIER_3] : j, L = (0, f.Ek)(t.id, "GuildStickersTiers"), M = (0, b.Z)(t.id);
     if (i.useEffect(() => {
         window.dispatchEvent(new Event("resize"))
       }, [c]), l) return (0, r.jsx)(o.$jN, {});
@@ -184,13 +184,13 @@ let w = (e, t) => e < (0, _.A3)(I.Eu4.NONE) ? I.Eu4.NONE : e < (0, _.A3)(I.Eu4.T
             onSetRef: u,
             tier: d,
             tiers: g,
-            tierIndex: h
+            tierIndex: f
           } = e,
           {
             canCreateExpressions: x,
             canManageGuildExpression: b
           } = (0, p.Gw)(t),
-          v = g[h - 1],
+          v = g[f - 1],
           O = null != v ? (0, _.A3)(v.tier) : 0,
           C = (0, _.A3)(d.tier, t),
           R = (0, _.ig)(d.tier),
@@ -212,10 +212,10 @@ let w = (e, t) => e < (0, _.A3)(I.Eu4.NONE) ? I.Eu4.NONE : e < (0, _.A3)(I.Eu4.T
           ee = !1;
         L && Q && (M ? ($ = () => {
           let e = E.Cp[d.tier];
-          null != e && (0, f.H6)(t.id, e)
+          null != e && (0, h.H6)(t.id, e)
         }, J = S.intl.string(S.t.g7lkra), t.premiumTier + 1 !== d.tier && (ee = !0, i = S.intl.string(S.t.mTMkY2))) : (ee = !0, i = S.intl.string(S.t.hwPEJS)));
-        let et = z === h + 1 && z > Z,
-          en = H || et || h > Z;
+        let et = z === f + 1 && z > Z,
+          en = H || et || f > Z;
         return et ? l = (0, r.jsx)(m.Z, {
           guild: t,
           size: o.zxk.Sizes.SMALL,
@@ -235,7 +235,7 @@ let w = (e, t) => e < (0, _.A3)(I.Eu4.NONE) ? I.Eu4.NONE : e < (0, _.A3)(I.Eu4.T
           tier: d,
           onSetRef: u,
           isAnimatedTo: a,
-          hasBottomMargin: h !== g.length - 1,
+          hasBottomMargin: f !== g.length - 1,
           withCardBody: !W,
           headerButton: l,
           showHeaderLockStatus: en,

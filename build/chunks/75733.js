@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(273039),
   g = n(176354),
   p = n(434404),
-  f = n(185923),
-  h = n(388032),
+  h = n(185923),
+  f = n(388032),
   x = n(186667),
   b = n(381109);
 
@@ -48,7 +48,7 @@ function v(e) {
     disabled: n,
     handleClearEmoji: l,
     handleSelectEmoji: s
-  } = e, p = i.useRef(null), h = i.useMemo(() => null == t || null == t.name ? null : function() {
+  } = e, p = i.useRef(null), f = i.useMemo(() => null == t || null == t.name ? null : function() {
     var e;
     let n = g.ZP.isCustomEmoji(t) ? t.name : t.surrogates;
     return (0, r.jsx)(o.Z, {
@@ -60,7 +60,7 @@ function v(e) {
   return n ? (0, r.jsx)(u.Z, {
     tabIndex: -1,
     active: !1,
-    renderButtonContents: h
+    renderButtonContents: f
   }) : (0, r.jsx)(m.Z, {
     className: x.emojiWrapper,
     buttonClassName: x.removeButton,
@@ -77,7 +77,7 @@ function v(e) {
         return (0, r.jsx)(d.Z, {
           closePopout: t,
           onSelectEmoji: s(t),
-          pickerIntention: f.Hz.GUILD_PROFILE
+          pickerIntention: h.Hz.GUILD_PROFILE
         })
       },
       children: (e, t) => {
@@ -89,7 +89,7 @@ function v(e) {
           ref: p,
           tabIndex: 0,
           active: l,
-          renderButtonContents: h
+          renderButtonContents: f
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -120,7 +120,7 @@ function O(e) {
     o(t, l, {
       emoji: null != n ? n : void 0
     }), r && e()
-  }, [t, l, o]), [m, g] = i.useState(!1), p = i.useCallback(() => g(!0), []), f = i.useCallback(() => g(!1), []), h = i.useCallback(e => {
+  }, [t, l, o]), [m, g] = i.useState(!1), p = i.useCallback(() => g(!0), []), h = i.useCallback(() => g(!1), []), f = i.useCallback(e => {
     o(t, l, {
       label: e
     })
@@ -129,7 +129,7 @@ function O(e) {
     "aria-disabled": c,
     disabled: c,
     value: n.label,
-    onChange: h,
+    onChange: f,
     maxLength: 24,
     prefixElement: (0, r.jsx)(v, {
       emoji: b,
@@ -142,7 +142,7 @@ function O(e) {
     }),
     inputClassName: x.traitInput,
     onFocus: p,
-    onBlur: f
+    onBlur: h
   })
 }
 let C = [0, 1, 2, 3, 4];
@@ -162,10 +162,10 @@ function y(e) {
     children: [(0, r.jsxs)("div", {
       className: b.sectionHeader,
       children: [(0, r.jsx)(a.vwX, {
-        children: h.intl.string(h.t.S6JNrq)
+        children: f.intl.string(f.t.S6JNrq)
       }), (0, r.jsx)(a.R94, {
         type: "description",
-        children: h.intl.string(h.t.l7Ig5e)
+        children: f.intl.string(f.t.l7Ig5e)
       })]
     }), (0, r.jsx)("div", {
       className: x.grid,

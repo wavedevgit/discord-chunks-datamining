@@ -16,8 +16,8 @@ var i = n(780384),
   m = n(26323),
   g = n(764260),
   p = n(981631),
-  f = n(30513),
-  h = n(388032),
+  h = n(30513),
+  f = n(388032),
   x = n(18346);
 
 function b(e) {
@@ -84,7 +84,7 @@ let _ = function(e) {
         object: p.qAy.BADGE
       },
       guild: t,
-      perks: (0, f.Yp)()
+      perks: (0, h.Yp)()
     }))
   }, S = (0, r.jsx)(u.Z, {
     className: x.availabilityIndicator,
@@ -102,11 +102,11 @@ let _ = function(e) {
     children: [(0, r.jsxs)(l.vwX, {
       className: x.formTitle,
       children: [(0, r.jsx)("div", {
-        children: h.intl.string(h.t.B9grJy)
+        children: f.intl.string(f.t.B9grJy)
       }), S]
     }), (0, r.jsx)(l.R94, {
       className: x.description,
-      children: h.intl.string(h.t.I3YQeX)
+      children: f.intl.string(f.t.I3YQeX)
     }), (0, r.jsxs)("div", {
       className: x.rolePreviewArea,
       children: [(0, r.jsx)("div", {
@@ -129,7 +129,7 @@ let _ = function(e) {
           object: p.qAy.UPLOAD_IMAGE
         }),
         disabled: _,
-        children: h.intl.string(h.t.mD1oGB)
+        children: f.intl.string(f.t.mD1oGB)
       }), null != C ? (0, r.jsx)(l.zxk, {
         className: x.button,
         color: (0, i.ap)(O) ? l.zxk.Colors.PRIMARY : l.zxk.Colors.TRANSPARENT,
@@ -138,7 +138,7 @@ let _ = function(e) {
           (0, g._l)(v.id, null, null)
         },
         disabled: _,
-        children: h.intl.string(h.t["uY+Nk5"])
+        children: f.intl.string(f.t["uY+Nk5"])
       }) : null]
     })]
   })

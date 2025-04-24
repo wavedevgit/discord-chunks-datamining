@@ -5,7 +5,7 @@ n.d(t, {
   Hz: () => C,
   To: () => E,
   XG: () => O,
-  _N: () => f,
+  _N: () => h,
   ad: () => _,
   bj: () => P,
   el: () => x,
@@ -15,7 +15,7 @@ n.d(t, {
   oo: () => I,
   q6: () => T,
   r2: () => v,
-  vR: () => h
+  vR: () => f
 }), n(361932), n(187205);
 var r = n(392711),
   i = n.n(r),
@@ -30,14 +30,14 @@ var r = n(392711),
   g = n(981631),
   p = n(388032);
 
-function f(e) {
+function h(e) {
   s.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_UPDATE_WELCOME_MESSAGE",
     welcomeMessage: e
   })
 }
 
-function h(e) {
+function f(e) {
   s.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_ADD_NEW_MEMBER_ACTION",
     action: e
@@ -203,7 +203,7 @@ function E(e, t) {
   }), n)))
 }
 async function S(e, t) {
-  var n, r, o, d, m, f, h, x, b;
+  var n, r, o, d, m, h, f, x, b;
   s.Z.dispatch({
     type: "GUILD_HOME_SETTINGS_UPDATE_START"
   });
@@ -223,8 +223,8 @@ async function S(e, t) {
       guild_id: e,
       welcome_message_author_id: (null != (d = null == a || null == (n = a.welcomeMessage) ? void 0 : n.authorIds) ? d : [])[0],
       welcome_message_length: null != (m = null == a || null == (o = a.welcomeMessage) || null == (r = o.message) ? void 0 : r.length) ? m : 0,
-      member_action_channel_ids: (null != (f = null == a ? void 0 : a.newMemberActions) ? f : []).map(e => e.channelId),
-      member_action_channel_actions: (null != (h = null == a ? void 0 : a.newMemberActions) ? h : []).map(e => e.actionType),
+      member_action_channel_ids: (null != (h = null == a ? void 0 : a.newMemberActions) ? h : []).map(e => e.channelId),
+      member_action_channel_actions: (null != (f = null == a ? void 0 : a.newMemberActions) ? f : []).map(e => e.actionType),
       resource_channel_ids: (null != (x = null == a ? void 0 : a.resourceChannels) ? x : []).map(e => e.channelId),
       enabled: null == a ? void 0 : a.enabled
     }), i.body

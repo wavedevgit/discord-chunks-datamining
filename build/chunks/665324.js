@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(232567),
   g = n(596454),
   p = n(410030),
-  f = n(100527),
-  h = n(906732),
+  h = n(100527),
+  f = n(906732),
   x = n(623624),
   b = n(357156),
   j = n(208049),
@@ -76,8 +76,8 @@ function B() {
   let e = (0, c.e7)([R.Z], () => R.Z.getProps().guild),
     {
       analyticsLocations: t
-    } = (0, h.ZP)(f.Z.GUILD_SETTINGS_SOUNDBOARD);
-  return null == e ? null : (0, r.jsx)(h.Gt, {
+    } = (0, f.ZP)(h.Z.GUILD_SETTINGS_SOUNDBOARD);
+  return null == e ? null : (0, r.jsx)(f.Gt, {
     value: t,
     children: (0, r.jsx)(d.hjN, {
       tag: d.RB0.H1,
@@ -198,13 +198,13 @@ function V(e) {
   i.useEffect(() => {
     (0, j.w)()
   }, []);
-  let f = i.useMemo(() => l.reduce((e, t) => (e[t.soundId] = new Audio((0, v.Z)(t.soundId)), e), {}), [l]),
-    h = 0 === l.length && !s;
+  let h = i.useMemo(() => l.reduce((e, t) => (e[t.soundId] = new Audio((0, v.Z)(t.soundId)), e), {}), [l]),
+    f = 0 === l.length && !s;
 
   function x(e) {
     var t;
     null == (t = o.current) || t.pause();
-    let n = f[e.soundId];
+    let n = h[e.soundId];
     null != n && (o.current = n, n.currentTime = 0, n.volume = (0, O.Z)(e.volume), n.play())
   }
   if (i.useEffect(() => () => {
@@ -234,9 +234,9 @@ function V(e) {
         children: A.intl.string(A.t.BohnsL)
       }), (0, r.jsx)("div", {
         className: L.buttons,
-        children: !h && C
+        children: !f && C
       })]
-    }), h ? (0, r.jsxs)(d.ubH, {
+    }), f ? (0, r.jsxs)(d.ubH, {
       theme: u,
       className: L.empty,
       children: [(0, r.jsx)(d.oxh, {
@@ -296,13 +296,13 @@ function Y(e) {
   } = e, {
     soundId: u,
     name: p,
-    user: f,
+    user: h,
     userId: x,
     emojiId: _,
     emojiName: v
   } = t, {
     analyticsLocations: O
-  } = (0, h.ZP)(), N = (0, c.e7)([I.default], () => null != f ? f : I.default.getUser(x), [x, f]), {
+  } = (0, f.ZP)(), N = (0, c.e7)([I.default], () => null != h ? h : I.default.getUser(x), [x, h]), {
     canManageGuildExpression: E
   } = (0, b.XJ)(o), T = i.useMemo(() => E(t), [t, E]), P = null != _ || null != v, [R, Z] = i.useState(!1), D = (0, C.z)(t, o.id);
   async function k() {

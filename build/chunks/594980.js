@@ -1,7 +1,7 @@
 /** Chunk was on 50629 **/
 "use strict";
 n.d(t, {
-  c: () => h
+  c: () => f
 });
 var r = n(200651),
   i = n(192379),
@@ -15,13 +15,13 @@ var r = n(200651),
   m = n(981631),
   g = n(30513),
   p = n(200299),
-  f = n(388032);
+  h = n(388032);
 
-function h(e) {
+function f(e) {
   let {
     guild: t,
     canManageGuild: n,
-    buttonClassName: h
+    buttonClassName: f
   } = e, {
     analyticsLocations: x
   } = (0, s.ZP)(), b = t.hasFeature(m.oNc.INVITE_SPLASH), j = n && b, _ = i.useCallback(e => {
@@ -40,15 +40,15 @@ function h(e) {
   return b ? (0, r.jsxs)(l.zxk, {
     disabled: !j,
     color: l.Ttl.BRAND,
-    className: h,
-    children: [f.intl.string(f.t.yG2pUl), (0, r.jsx)(o.ZP, {
+    className: f,
+    children: [h.intl.string(h.t.yG2pUl), (0, r.jsx)(o.ZP, {
       disabled: !j,
       onChange: _,
       maxFileSizeBytes: p.B,
       onFileSizeError: () => (0, a.Z)(p.B)
     })]
   }) : (0, r.jsx)(u.P, {
-    className: h,
+    className: f,
     onClick: v
   })
 }

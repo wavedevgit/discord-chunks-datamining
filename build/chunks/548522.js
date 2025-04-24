@@ -1,7 +1,7 @@
 /** Chunk was on 50629 **/
 "use strict";
 n.d(t, {
-  y: () => f
+  y: () => h
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -16,58 +16,58 @@ var r = n(200651),
   g = n(388032),
   p = n(539482);
 
-function f(e) {
+function h(e) {
   var t;
   let {
     guild: n,
     formFields: c
-  } = e, [f, x] = i.useState(c);
+  } = e, [h, x] = i.useState(c);
   i.useEffect(() => x(c), [c]);
   let b = null != (t = (0, a.A)({
       guildId: n.id
     })) ? t : 0,
     [j, _] = i.useState(null),
-    v = i.useMemo(() => null == f ? void 0 : f.some(e => (0, s.J)(e)), [f]),
-    O = i.useMemo(() => f.length === m.nx, [f]),
+    v = i.useMemo(() => null == h ? void 0 : h.some(e => (0, s.J)(e)), [h]),
+    O = i.useMemo(() => h.length === m.nx, [h]),
     C = i.useCallback(e => {
       d.Z.setPendingMemberVerificationRules(n.id, e), x(e), null != j && _(null)
     }, [j, n.id]),
     y = i.useCallback(e => {
-      C([...f, e])
-    }, [f, C]),
+      C([...h, e])
+    }, [h, C]),
     N = i.useCallback(e => {
-      C([...f.slice(0, e), ...f.slice(e + 1)])
-    }, [f, C]),
+      C([...h.slice(0, e), ...h.slice(e + 1)])
+    }, [h, C]),
     I = i.useCallback((e, t) => {
-      if (f[e] === t) return;
-      let n = [...f];
+      if (h[e] === t) return;
+      let n = [...h];
       n[e] = t, C(n)
-    }, [f, C]),
+    }, [h, C]),
     E = i.useCallback((e, t, n) => {
-      let r = f.indexOf(e),
-        i = [...f];
+      let r = h.indexOf(e),
+        i = [...h];
       null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), x(i)), n ? (C(i), null !== j && _(null)) : j !== t && _(t)
-    }, [j, f, C]);
+    }, [j, h, C]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.X6, {
       variant: "text-xs/bold",
       color: "text-muted",
       className: p.title,
       children: g.intl.format(g.t["sm+75u"], {
-        currentCount: f.length,
+        currentCount: h.length,
         maxCount: m.nx
       })
-    }), f.map(e => (0, u.a0)({
+    }), h.map(e => (0, u.a0)({
       dropHoveredIndex: j,
       formField: e,
       guild: n,
-      index: f.indexOf(e),
-      isDragEnabled: f.length > 1,
+      index: h.indexOf(e),
+      isDragEnabled: h.length > 1,
       submittedGuildJoinRequestsCount: b,
       removeFormField: N,
       updateFormField: I,
       updateFormFieldOrder: E,
-      canRemove: f.length > 1,
+      canRemove: h.length > 1,
       actionsLocation: "side",
       fieldStyle: s.it.COMPACT
     })), !O && (0, r.jsx)("div", {
@@ -77,13 +77,13 @@ function f(e) {
         guild: n,
         allowTerms: !v
       })
-    }), !O && (0, r.jsx)(h, {
+    }), !O && (0, r.jsx)(f, {
       addFormField: y
     })]
   })
 }
 
-function h(e) {
+function f(e) {
   let {
     addFormField: t
   } = e, n = i.useMemo(() => [{

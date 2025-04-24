@@ -21,8 +21,8 @@ function m(e) {
     revenueTrend: m,
     summaryMetricLabel: g,
     summaryMetricValue: p,
-    summaryMetricTrend: f,
-    summaryMetricTrendIsPercent: h
+    summaryMetricTrend: h,
+    summaryMetricTrendIsPercent: f
   } = e;
   return (0, r.jsx)(i.hjN, {
     title: u.intl.string(u.t.ofmOzc),
@@ -40,8 +40,8 @@ function m(e) {
           label: g,
           value: p,
           additionalContent: (0, r.jsx)(l.H, {
-            value: f,
-            isPercent: h
+            value: h,
+            isPercent: f
           })
         })]
       }), t]

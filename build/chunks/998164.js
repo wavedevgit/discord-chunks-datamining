@@ -34,7 +34,7 @@ function p(e) {
   return e
 }
 
-function f(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,7 +46,7 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = [];
+let f = [];
 
 function x() {
   return (0, r.jsx)("div", {
@@ -82,7 +82,7 @@ function b(e) {
       let {
         default: e
       } = await n.e("14653").then(n.bind(n, 380716));
-      return n => (0, r.jsx)(e, f(p({}, n), {
+      return n => (0, r.jsx)(e, h(p({}, n), {
         guildId: t,
         onSave: l
       }))
@@ -106,7 +106,7 @@ let j = function(e) {
     guildId: t
   } = e, n = (0, l.Wu)([u.Z], () => {
     var e;
-    return null != (e = u.Z.getSettings().newMemberActions) ? e : h
+    return null != (e = u.Z.getSettings().newMemberActions) ? e : f
   }), s = i.useCallback((e, n) => {
     (0, c.vR)(e);
     let r = u.Z.getSettings();
@@ -132,7 +132,7 @@ let j = function(e) {
     (0, c.Hr)(i);
     let l = u.Z.getSettings();
     (0, c.oo)(t, l, !0)
-  }, [n, t]), _ = n.map(e => f(p({}, e), {
+  }, [n, t]), _ = n.map(e => h(p({}, e), {
     id: e.channelId
   })), v = i.useCallback(e => {
     (0, c.hS)(e);

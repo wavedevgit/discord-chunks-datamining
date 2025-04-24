@@ -18,9 +18,9 @@ var r = n(200651),
   m = n(974513),
   g = n(290511),
   p = n(388032),
-  f = n(271254);
+  h = n(271254);
 
-function h(e) {
+function f(e) {
   let t, {
     title: n,
     description: i,
@@ -36,11 +36,11 @@ function h(e) {
         children: [(0, r.jsx)(s.dz2, {
           size: "xs",
           color: "currentColor",
-          className: f.checkmark
+          className: h.checkmark
         }), (0, r.jsx)(s.Text, {
           variant: "text-xs/semibold",
           color: "status-positive",
-          className: f.statusText,
+          className: h.statusText,
           children: p.intl.string(p.t.rPnzRU)
         })]
       });
@@ -50,11 +50,11 @@ function h(e) {
         children: [(0, r.jsx)(s.P4T, {
           size: "xs",
           color: "currentColor",
-          className: f.warning
+          className: h.warning
         }), (0, r.jsx)(s.Text, {
           variant: "text-xs/semibold",
           color: "status-warning",
-          className: f.statusText,
+          className: h.statusText,
           children: p.intl.string(p.t["yTa+dn"])
         })]
       });
@@ -64,24 +64,24 @@ function h(e) {
         children: [(0, r.jsx)(s.P4T, {
           size: "xs",
           color: "currentColor",
-          className: f.danger
+          className: h.danger
         }), (0, r.jsx)(s.Text, {
           variant: "text-xs/semibold",
           color: "status-danger",
-          className: f.statusText,
+          className: h.statusText,
           children: p.intl.string(p.t.EkokLy)
         })]
       })
   }
   return (0, r.jsxs)("div", {
-    className: f.onboardingStepContainer,
+    className: h.onboardingStepContainer,
     children: [(0, r.jsxs)("div", {
-      className: f.leftContainer,
+      className: h.leftContainer,
       children: [(0, r.jsx)("div", {
-        className: f.iconContainer,
+        className: h.iconContainer,
         children: l
       }), (0, r.jsxs)("div", {
-        className: f.onboardingStepText,
+        className: h.onboardingStepText,
         children: [(0, r.jsx)(s.X6q, {
           variant: "heading-md/semibold",
           children: n
@@ -92,17 +92,17 @@ function h(e) {
         })]
       })]
     }), (0, r.jsxs)("div", {
-      className: f.rightContainer,
+      className: h.rightContainer,
       children: [t, u, a ? (0, r.jsx)(s.zxk, {
-        className: f.cta,
+        className: h.cta,
         size: s.zxk.Sizes.SMALL,
         color: s.zxk.Colors.PRIMARY,
         look: s.zxk.Looks.OUTLINED,
         onClick: c,
         children: p.intl.string(p.t.bt75u7)
       }) : (0, r.jsxs)(s.zxk, {
-        className: f.cta,
-        innerClassName: f.ctaInner,
+        className: h.cta,
+        innerClassName: h.ctaInner,
         size: s.zxk.Sizes.SMALL,
         color: s.zxk.Colors.PRIMARY,
         onClick: c,
@@ -142,13 +142,13 @@ function j(e) {
     numDefaultChannels: g.md,
     numChattableChannels: g.X
   });
-  return (0, r.jsx)(h, {
+  return (0, r.jsx)(f, {
     title: C ? p.intl.string(p.t.YZookZ) : p.intl.string(p.t["4GSygo"]),
     description: y,
     icon: (0, r.jsx)(s.VL1, {
       size: "md",
       color: "currentColor",
-      className: f.channelIcon
+      className: h.channelIcon
     }),
     hasStarted: _ > 0 || C,
     status: v || O ? c ? "none" : "good" : "required",
@@ -162,7 +162,7 @@ function _(e) {
     onEdit: n,
     disableGoodStatus: i
   } = e, c = (0, l.Wu)([a.Z], () => a.Z.getDefaultChannelIds(t)), u = (0, l.Wu)([a.Z], () => a.Z.getOnboardingPrompts(t)), d = u.length, [m, g] = (0, o.dF)(t, u, c), x = m.length, b = m.length + g.length, j = x / b * 100, _ = (0, l.e7)([a.Z], () => a.Z.isAdvancedMode(t)), v = d > 0, O = "none";
-  return v && (j >= 85 && !i ? O = "good" : j < 85 && (O = "warning")), (0, r.jsx)(h, {
+  return v && (j >= 85 && !i ? O = "good" : j < 85 && (O = "warning")), (0, r.jsx)(f, {
     title: _ ? p.intl.string(p.t.AGjtFh) : p.intl.string(p.t.dqCzoa),
     description: p.intl.format(p.t.iuNisr, {
       numChannels: x,
@@ -177,7 +177,7 @@ function _(e) {
     icon: (0, r.jsx)(s.iFz, {
       size: "md",
       color: "currentColor",
-      className: f.channelIcon
+      className: h.channelIcon
     }),
     hasStarted: v,
     status: O,
@@ -198,17 +198,17 @@ function v(e) {
   x ? _ || (O = p.intl.string(p.t.wHOoyM)) : O = p.intl.string(p.t.wXFbgY);
   let C = null;
   return _ && g && (C = (0, r.jsx)(s.rsf, {
-    className: f.inlineSwitch,
+    className: h.inlineSwitch,
     checked: b,
     onChange: j,
     disabled: !x
-  })), (0, r.jsx)(h, {
+  })), (0, r.jsx)(f, {
     title: p.intl.string(p.t.mRHqsr),
     description: O,
     icon: (0, r.jsx)(s.Vy8, {
       size: "md",
       color: "currentColor",
-      className: f.channelIcon
+      className: h.channelIcon
     }),
     hasStarted: _,
     status: v,

@@ -1,7 +1,7 @@
 /** Chunk was on 50629 **/
 "use strict";
 n.d(t, {
-  A: () => h
+  A: () => f
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -15,24 +15,24 @@ var r = n(200651),
   m = n(217472),
   g = n(651390),
   p = n(388032),
-  f = n(52930);
+  h = n(52930);
 
-function h(e) {
+function f(e) {
   let {
     requireTerms: t,
     rules: n
-  } = e, l = (0, o.e7)([d.Z], () => d.Z.getProps().guild), h = null == l ? void 0 : l.id, x = i.useCallback(e => {
-    if (null == h || null == n) return null;
-    m.Z.setPendingInviteRules(h, e, [...n])
-  }, [h, n]), b = i.useCallback(e => {
-    if (null == h) return null;
-    m.Z.setPendingInviteRules(h, t, e)
-  }, [h, t]);
+  } = e, l = (0, o.e7)([d.Z], () => d.Z.getProps().guild), f = null == l ? void 0 : l.id, x = i.useCallback(e => {
+    if (null == f || null == n) return null;
+    m.Z.setPendingInviteRules(f, e, [...n])
+  }, [f, n]), b = i.useCallback(e => {
+    if (null == f) return null;
+    m.Z.setPendingInviteRules(f, t, e)
+  }, [f, t]);
   return null == l ? null : null == n ? (0, r.jsx)(c.$jN, {}) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: f.headerContainer,
+      className: h.headerContainer,
       children: [(0, r.jsxs)("div", {
-        className: f.headerText,
+        className: h.headerText,
         children: [(0, r.jsx)(a.X6, {
           variant: "heading-md/semibold",
           color: "header-primary",
@@ -41,7 +41,7 @@ function h(e) {
           tag: "p",
           variant: "text-sm/medium",
           color: "text-secondary",
-          className: f.bodyText,
+          className: h.bodyText,
           children: p.intl.string(p.t.SzpUBA)
         })]
       }), (0, r.jsx)(c.rsf, {
@@ -51,15 +51,15 @@ function h(e) {
     }), t && (0, r.jsx)(g.c, {
       guildId: l.id
     }), (0, r.jsx)("div", {
-      className: s()(f.rules, {
-        [f.disabled]: !t
+      className: s()(h.rules, {
+        [h.disabled]: !t
       }),
       children: (0, r.jsxs)("div", {
         inert: t ? void 0 : "",
         children: [(0, r.jsx)(a.X6, {
           variant: "text-xs/bold",
           color: "text-muted",
-          className: f.rulesHeader,
+          className: h.rulesHeader,
           children: p.intl.string(p.t.XcAzbm)
         }), (0, r.jsx)(u.k, {
           guild: l,

@@ -1,7 +1,7 @@
 /** Chunk was on 50629 **/
 "use strict";
 n.d(t, {
-  Z: () => h
+  Z: () => f
 }), n(388685), n(358797);
 var r = n(200651),
   i = n(192379),
@@ -33,7 +33,7 @@ function p(e) {
     className: g.resizeHandle
   })
 }
-let f = i.forwardRef(function(e, t) {
+let h = i.forwardRef(function(e, t) {
   let {
     children: n,
     onFocus: l,
@@ -67,7 +67,7 @@ let f = i.forwardRef(function(e, t) {
   })
 });
 
-function h(e) {
+function f(e) {
   var t;
   let {
     initialValue: n,
@@ -75,7 +75,7 @@ function h(e) {
     onChangeNewTagValue: c,
     tagErrors: d = {},
     placeholder: p,
-    className: h,
+    className: f,
     maxTags: x
   } = e, b = i.useRef(null), j = i.useRef(null), _ = i.useRef(null), v = (0, m.V)(n), {
     handlePasteEvent: O,
@@ -128,11 +128,11 @@ function h(e) {
       } else T(e, !0), M(!0)
     }, [S, T, D, Z]);
   return (0, r.jsxs)("div", {
-    className: s()(g.mainContainer, h),
+    className: s()(g.mainContainer, f),
     ref: j,
     tabIndex: 0,
     onKeyUp: N,
-    children: [(0, r.jsxs)(f, {
+    children: [(0, r.jsxs)(h, {
       ref: _,
       onClick: G,
       children: [Z.map((e, t) => (0, r.jsx)(u.Z, {

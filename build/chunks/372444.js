@@ -44,8 +44,8 @@ function g(e) {
     guild: u,
     className: g,
     textColor: p,
-    headerColor: f,
-    buttonProps: h
+    headerColor: h,
+    buttonProps: f
   } = e, {
     analyticsLocations: x
   } = (0, o.ZP)(a.Z.GUILD_BOOSTING_UPSELL_BANNER);
@@ -61,7 +61,7 @@ function g(e) {
         className: d.content,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-lg/semibold",
-          color: null != f ? f : "always-white",
+          color: null != h ? h : "always-white",
           className: d.header,
           children: t
         }), (0, r.jsx)(s.Text, {
@@ -75,7 +75,7 @@ function g(e) {
           guild: u,
           analyticsLocation: c,
           className: d.button,
-          buttonProps: h
+          buttonProps: f
         })
       })]
     })

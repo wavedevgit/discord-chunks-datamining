@@ -107,7 +107,7 @@ function c(e, t) {
         })
       }), e.preventDefault(), e.stopPropagation(), null == (t = n.current) || t.scrollToBottom())
     }, [d, n]),
-    f = r.useCallback(e => {
+    h = r.useCallback(e => {
       d(t => {
         let {
           tags: n,
@@ -121,7 +121,7 @@ function c(e, t) {
         }
       })
     }, [d]),
-    h = r.useCallback(e => t => {
+    f = r.useCallback(e => t => {
       d(n => {
         let {
           tags: r,
@@ -294,8 +294,8 @@ function c(e, t) {
       let t = e.metaKey || e.ctrlKey;
       "Backspace" === e.key ? O(e) : "a" === e.key && t ? y(e) : "Escape" === e.key ? j(e) : a.Bd.has(e.key) && t ? C(e) : "Meta" !== e.key && j(e)
     }, [C, O, y, j, l]),
-    handleRemoveTag: f,
-    handleTagChangeEvent: h,
+    handleRemoveTag: h,
+    handleTagChangeEvent: f,
     handleSelectTag: x,
     handleUnselectTag: b,
     handleResetTagSelections: j,

@@ -16,8 +16,8 @@ var i = n(780384),
   m = n(867861),
   g = n(860790),
   p = n(268953),
-  f = n(487703),
-  h = n(458050),
+  h = n(487703),
+  f = n(458050),
   x = n(334364),
   b = n(431712);
 
@@ -47,7 +47,7 @@ function _() {
       })]
     }), (0, r.jsx)("img", {
       className: c.roundAvatar,
-      src: f,
+      src: h,
       alt: o.intl.string(o.t.NgjpTE)
     })]
   })
@@ -203,7 +203,7 @@ function y() {
       })]
     }), (0, r.jsx)("img", {
       className: c.roleSubscriptionEarningIllo,
-      src: h,
+      src: f,
       alt: o.intl.string(o.t.fD9Wv7)
     })]
   })

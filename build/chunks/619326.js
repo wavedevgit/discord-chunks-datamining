@@ -16,7 +16,7 @@ var r = n(200651),
   g = n(388032),
   p = n(499650);
 
-function f(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function f(e) {
   return e
 }
 
-function h(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -113,7 +113,7 @@ function j(e) {
         colorHex: (0, a.Rf)(t)
       })
     });
-  return (0, r.jsxs)("div", h(f({
+  return (0, r.jsxs)("div", f(h({
     className: p.buttonsContainer,
     "aria-label": g.intl.string(g.t.FJjrIy),
     ref: C
@@ -122,7 +122,7 @@ function j(e) {
       className: s()(p.colorSwatch, {
         [p.disabled]: l
       }),
-      children: (0, r.jsxs)(o.P3F, h(f({
+      children: (0, r.jsxs)(o.P3F, f(h({
         onClick: l ? void 0 : function() {
           n(m.p6O)
         },
@@ -146,7 +146,7 @@ function j(e) {
       className: s()(p.colorSwatch, {
         [p.disabled]: l
       }),
-      children: [(0, r.jsxs)(o.P3F, h(f({
+      children: [(0, r.jsxs)(o.P3F, f(h({
         onClick: l ? void 0 : d,
         "aria-disabled": l
       }, I), {
@@ -167,11 +167,11 @@ function j(e) {
         })]
       })), !l && (0, r.jsx)(o.yRy, {
         onRequestOpen: d,
-        renderPopout: e => (0, r.jsx)(o.Z$W, h(f({}, e), {
+        renderPopout: e => (0, r.jsx)(o.Z$W, f(h({}, e), {
           value: t,
           onChange: x
         })),
-        children: e => (0, r.jsx)(o.P3F, h(f({}, e), {
+        children: e => (0, r.jsx)(o.P3F, f(h({}, e), {
           className: p.dropperIconButton,
           "aria-label": g.intl.string(g.t.Qp04hI),
           children: (0, r.jsx)(o.ilE, {

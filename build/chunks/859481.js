@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(949640),
   g = n(981631),
   p = n(30513),
-  f = n(388032),
-  h = n(919957);
+  h = n(388032),
+  f = n(919957);
 
 function x(e) {
   let {
@@ -26,7 +26,7 @@ function x(e) {
   if (null != t) return (0, r.jsx)(l.Text, {
     variant: "text-md/normal",
     color: "text-danger",
-    className: h.vanityInfo,
+    className: f.vanityInfo,
     children: (0, u.i)(null == t ? void 0 : t.code)
   });
   if (null != n && n.length > 0) {
@@ -34,8 +34,8 @@ function x(e) {
     return (0, r.jsx)(l.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
-      className: h.vanityInfo,
-      children: f.intl.format(f.t["1qTOvr"], {
+      className: f.vanityInfo,
+      children: h.intl.format(h.t["1qTOvr"], {
         urlText: e,
         urlValue: e
       })
@@ -58,17 +58,17 @@ function b(e) {
   }, []);
   return null == n ? (0, r.jsx)(l.$jN, {}) : (0, r.jsxs)(l.Zbd, {
     editable: !0,
-    className: h.editVanityUrlCard,
+    className: f.editVanityUrlCard,
     children: [(0, r.jsxs)("div", {
-      className: h.formTitleField,
+      className: f.formTitleField,
       children: [(0, r.jsx)(l.X6q, {
         variant: "heading-sm/semibold",
         color: "text-normal",
-        children: f.intl.string(f.t["6oJyq6"])
+        children: h.intl.string(h.t["6oJyq6"])
       }), n.length > 0 ? (0, r.jsx)(l.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        children: f.intl.format(f.t.MVWOUV, {
+        children: h.intl.format(h.t.MVWOUV, {
           uses: s
         })
       }) : null]
@@ -80,12 +80,12 @@ function b(e) {
       error: u,
       disabled: !d
     }), null != o && o.length > 0 ? (0, r.jsx)(l.zxk, {
-      className: h.removeVanityUrlButton,
+      className: f.removeVanityUrlButton,
       onClick: m,
       look: l.zxk.Looks.LINK,
       size: l.zxk.Sizes.MIN,
       color: l.zxk.Colors.RED,
-      children: f.intl.string(f.t["3ggb6O"])
+      children: h.intl.string(h.t["3ggb6O"])
     }) : null]
   })
 }
@@ -99,7 +99,7 @@ function j(e) {
     errorDetails: o
   } = e, {
     analyticsLocations: c
-  } = (0, s.ZP)(), f = i.useCallback(e => {
+  } = (0, s.ZP)(), h = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, m.E6)({
       guild: t,
       analyticsLocations: c,
@@ -117,8 +117,8 @@ function j(e) {
       originalVanityURLCode: a,
       hasError: null != o
     }) : (0, r.jsx)(d.P, {
-      onClick: f,
-      className: h.upsellButton
+      onClick: h,
+      className: f.upsellButton
     }), (0, r.jsx)(x, {
       errorDetails: o,
       originalVanityURLCode: a

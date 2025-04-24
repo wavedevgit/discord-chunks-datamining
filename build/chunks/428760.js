@@ -21,8 +21,8 @@ function d(e) {
     subtitleText: m,
     initialValue: g
   } = e, p = i.useMemo(() => null != g ? g : [], [g]), {
-    value: f,
-    onChange: h,
+    value: h,
+    onChange: f,
     errorMessage: x
   } = (0, o.Z)(t, g, n);
   return (0, r.jsxs)(r.Fragment, {
@@ -30,8 +30,8 @@ function d(e) {
       className: s()(u.keywordsContainer, l),
       children: [(0, r.jsx)(a.lcI, {
         className: s()(u.keywordsTextArea, d),
-        value: f,
-        onChange: h,
+        value: h,
+        onChange: f,
         placeholder: c.intl.string(c.t.UyaxJy)
       }), (0, r.jsx)(a.Text, {
         className: u.keywordsCounter,

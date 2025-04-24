@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(413584),
   g = n(388032),
   p = n(673305),
-  f = n(62311);
-let h = e => {
+  h = n(62311);
+let f = e => {
     let {
       setWelcomeView: t,
       setShowCreateModal: i
@@ -65,7 +65,7 @@ let h = e => {
           className: p.exampleModal,
           children: [(0, r.jsx)("img", {
             alt: "",
-            className: f.guildIcon,
+            className: h.guildIcon,
             src: n(691466),
             width: 64,
             height: 64
@@ -76,23 +76,23 @@ let h = e => {
           }), (0, r.jsx)(s.Text, {
             variant: "text-sm/normal",
             color: "header-secondary",
-            className: f.guildDescription,
+            className: h.guildDescription,
             children: g.intl.string(g.t.Xvsuk5)
           }), (0, r.jsx)(s.vwX, {
-            className: f.choiceHeader,
+            className: h.choiceHeader,
             children: g.intl.string(g.t["haj5+v"])
           }), (0, r.jsx)("div", {
-            className: f.options,
+            className: h.options,
             children: l.map(e => (0, r.jsxs)("div", {
               className: p.optionContainer,
               children: [(0, r.jsx)(o.Z, {
                 emojiName: e.emoji,
-                className: f.optionEmoji
+                className: h.optionEmoji
               }), (0, r.jsxs)("div", {
-                className: f.optionTextContainer,
+                className: h.optionTextContainer,
                 children: [(0, r.jsx)(s.Text, {
                   variant: "text-md/semibold",
-                  className: f.channelDescription,
+                  className: h.channelDescription,
                   children: e.description
                 }), (0, r.jsx)(s.Text, {
                   variant: "text-xs/normal",
@@ -122,7 +122,7 @@ let h = e => {
           type: s.$jN.Type.SPINNING_CIRCLE
         });
       case 1:
-        return (0, r.jsx)(h, {
+        return (0, r.jsx)(f, {
           setWelcomeView: n,
           setShowCreateModal: g
         });

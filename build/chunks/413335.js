@@ -32,7 +32,7 @@ function s(e) {
     }(e, ["size", "color", "width", "height"]);
   let g = (0, l.m)(o),
     p = null != (s = null == g ? void 0 : g.width) ? s : u,
-    f = null != (a = null == g ? void 0 : g.height) ? a : d;
+    h = null != (a = null == g ? void 0 : g.height) ? a : d;
   return (0, r.jsxs)("svg", (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -52,7 +52,7 @@ function s(e) {
     return e
   }({
     width: p,
-    height: f,
+    height: h,
     viewBox: "0 0 10 16",
     fill: "string" == typeof c ? c : c.css
   }, (0, i.Z)(m)), n = n = {

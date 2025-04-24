@@ -21,7 +21,7 @@ function m(e) {
   } = e, {
     editStateId: m,
     guildId: g
-  } = (0, l.N)(), [p, f] = a.GP(m, g);
+  } = (0, l.N)(), [p, h] = a.GP(m, g);
   return (0, r.jsx)(i.FXm, {
     className: d.__invalid_channelAccessSelect,
     radioItemClassName: d.__invalid_channelAccessSelectRadioButton,
@@ -31,7 +31,7 @@ function m(e) {
       let {
         value: t
       } = e;
-      return f(t)
+      return h(t)
     },
     options: [{
       name: u.intl.string(u.t["vs2T+P"]),

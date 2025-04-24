@@ -52,7 +52,7 @@ function p() {
     guildId: t
   } = (0, s.N)(), [n, p] = a.R7(e);
 
-  function f(e, t) {
+  function h(e, t) {
     let {
       name: r,
       description: i,
@@ -68,7 +68,7 @@ function p() {
     };
     null != t ? a[t] = o : a.push(o), p(a)
   }
-  let h = (0, l.mY)();
+  let f = (0, l.mY)();
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.p, {
       benefits: n,
@@ -76,7 +76,7 @@ function p() {
         (0, i.h7j)(i => (0, r.jsx)(o.DI, g(m({}, i), {
           guildId: t,
           initialData: n[e],
-          onSave: t => f(t, e),
+          onSave: t => h(t, e),
           onDelete: () => (function(e) {
             let t = [...n];
             t.splice(e, 1), p(t)
@@ -95,10 +95,10 @@ function p() {
       onClick: function() {
         (0, i.h7j)(e => (0, r.jsx)(o.DI, g(m({}, e), {
           guildId: t,
-          onSave: e => f(e)
+          onSave: e => h(e)
         })))
       },
-      disabled: h,
+      disabled: f,
       children: d.intl.string(d.t["6dwqo6"])
     })]
   })

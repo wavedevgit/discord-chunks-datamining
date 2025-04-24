@@ -15,8 +15,8 @@ var r, i = n(200651),
   m = n(481060),
   g = n(624138),
   p = n(981631),
-  f = n(680278),
-  h = n(388032),
+  h = n(680278),
+  f = n(388032),
   x = n(354444);
 
 function b(e, t, n) {
@@ -98,12 +98,12 @@ class y extends(r = l.Component) {
       color: m.ua7.Colors.BLACK,
       tooltipClassName: x.foregroundTooltip,
       children: [(0, i.jsx)("div", {
-        children: h.intl.format(h.t.gDsyBw, {
+        children: f.intl.format(f.t.gDsyBw, {
           numSubscriptions: e
         })
       }), null != a && a > 0 && null != l ? (0, i.jsx)("div", {
         className: x.tooltipMuted,
-        children: h.intl.format(h.t["2U9MDg"], {
+        children: f.intl.format(f.t["2U9MDg"], {
           number: a,
           tier: l.name
         })
@@ -118,14 +118,14 @@ class y extends(r = l.Component) {
     let n = Math.min(t, e.numRequired);
     return (0, i.jsx)("div", {
       children: this.getTierDisabled(e) ? (0, i.jsx)("div", {
-        children: h.intl.formatToPlainString(f.default["9CtPjo"], {
+        children: f.intl.formatToPlainString(h.default["9CtPjo"], {
           perk: e.name
         })
       }) : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
           children: e.name
         }), (0, i.jsx)("div", {
-          children: h.intl.format(h.t.AkLa6u, {
+          children: f.intl.format(f.t.AkLa6u, {
             subscribers: n,
             numRequired: e.numRequired
           })
@@ -145,9 +145,9 @@ class y extends(r = l.Component) {
       g = e.key === a[0].key,
       p = this.getTierDisabled(e);
     l = g ? x.tierFirst : p ? x.tierInProgress : d ? x.tierCurrent : u ? x.tierAccomplished : x.tierInProgress;
-    let f = e.y - (g ? 0 : v / 2),
-      h = this.state.tierMarkerActive >= t,
-      j = !g && d && h;
+    let h = e.y - (g ? 0 : v / 2),
+      f = this.state.tierMarkerActive >= t,
+      j = !g && d && f;
     return (0, i.jsx)(m.ua7, {
       text: this.renderTierMarkerTooltip(e),
       position: "right",
@@ -176,7 +176,7 @@ class y extends(r = l.Component) {
           }({}, e), r = r = {
             className: l,
             style: {
-              top: f,
+              top: h,
               transform: t.scale.interpolate(e => "scale(".concat(e, ")"))
             },
             children: j && (0, i.jsx)(m.dz2, {

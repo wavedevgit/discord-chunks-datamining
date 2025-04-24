@@ -33,7 +33,7 @@ function u(e) {
     }
     return i
   }(e, ["action", "children", "className", "onExpandChange", "loading"]);
-  let [g, p] = i.useState(!1), f = e => {
+  let [g, p] = i.useState(!1), h = e => {
     p(e), null == u || u(e)
   };
   return (0, r.jsx)(a.zF9, {
@@ -73,7 +73,7 @@ function u(e) {
           type: a.$jN.Type.PULSING_ELLIPSIS
         }) : t,
         onClick: e => {
-          f(!g), l(e)
+          h(!g), l(e)
         }
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);

@@ -1,8 +1,8 @@
 /** Chunk was on 50629 **/
 "use strict";
 n.d(t, {
-  V: () => f,
-  Z: () => h
+  V: () => h,
+  Z: () => f
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -17,7 +17,7 @@ var r = n(200651),
   g = n(388032),
   p = n(793944);
 
-function f() {
+function h() {
   let [e, t] = i.useState(!0);
   return {
     scrolledToTop: e,
@@ -27,22 +27,22 @@ function f() {
   }
 }
 
-function h(e) {
+function f(e) {
   let {
     guild: t,
-    role: f,
-    selectedSection: h,
+    role: h,
+    selectedSection: f,
     setSelectedSection: x
   } = e, b = i.useCallback(e => {
     x(e)
   }, [x]), j = (0, l.e7)([u.Z], () => {
     var e;
-    return null == (e = u.Z.getRoleMemberCount(t.id)) ? void 0 : e[f.id]
-  }, [f.id, t.id]), _ = (0, o.pM)(t.id, f.id), v = (0, d.Z)(f);
+    return null == (e = u.Z.getRoleMemberCount(t.id)) ? void 0 : e[h.id]
+  }, [h.id, t.id]), _ = (0, o.pM)(t.id, h.id), v = (0, d.Z)(h);
   i.useEffect(() => {
     _ && x(m.ZI.PERMISSIONS)
   }, [_, x]);
-  let O = (0, c.e)(t, f);
+  let O = (0, c.e)(t, h);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: p.titleContainer,
@@ -51,7 +51,7 @@ function h(e) {
         color: "header-primary",
         variant: "text-md/semibold",
         children: g.intl.format(g.t.BUdGkJ, {
-          roleName: f.name
+          roleName: h.name
         })
       }), O ? (0, r.jsx)(s.P3F, {
         className: p.menu,
@@ -81,7 +81,7 @@ function h(e) {
                 return e
               }({}, n), l = l = {
                 guild: t,
-                role: f
+                role: h
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
@@ -107,7 +107,7 @@ function h(e) {
     }) : null, (0, r.jsxs)(s.njP, {
       className: p.tabBar,
       "aria-label": g.intl.string(g.t["+1H47u"]),
-      selectedItem: h,
+      selectedItem: f,
       type: "top",
       look: "brand",
       onItemSelect: b,

@@ -16,8 +16,8 @@ var i = n(793030),
   m = n(464865),
   g = n(888125),
   p = n(981631),
-  f = n(388032),
-  h = n(162161);
+  h = n(388032),
+  f = n(162161);
 
 function x() {
   let {
@@ -32,27 +32,27 @@ function x() {
   return null == t ? null : (0, r.jsx)(a.Gt, {
     value: e,
     children: (0, r.jsxs)("main", {
-      className: h.container,
+      className: f.container,
       children: [(0, r.jsx)(i.X6, {
         variant: "heading-lg/semibold",
         color: "header-primary",
-        children: f.intl.string(f.t.UKgg5O)
+        children: h.intl.string(h.t.UKgg5O)
       }), (0, r.jsx)(g.w, {
         canManageGuild: x,
         premiumProgressBarEnabled: t.premiumProgressBarEnabled
       }), (0, r.jsx)("div", {
-        className: h.divider
+        className: f.divider
       }), (0, r.jsx)(u.A, {
         guild: t,
         canManageGuild: x
       }), (0, r.jsx)("div", {
-        className: h.divider
+        className: f.divider
       }), (0, r.jsx)(d.A, {
         guild: t,
         canManageGuild: x
       }), n ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
-          className: h.divider
+          className: f.divider
         }), (0, r.jsx)(m.V, {
           guild: t
         })]

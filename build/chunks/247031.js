@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(493544),
   g = n(479531),
   p = n(118012),
-  f = n(210887),
-  h = n(246946),
+  h = n(210887),
+  f = n(246946),
   x = n(594174),
   b = n(251625),
   j = n(226951),
@@ -75,14 +75,14 @@ function D(e) {
     ban: s,
     hideDiscriminator: a,
     onClose: o
-  } = e, [u, m] = i.useState(!1), [f, h] = i.useState(null);
+  } = e, [u, m] = i.useState(!1), [h, f] = i.useState(null);
   async function x() {
     if (null != n) {
-      h(null), m(!0);
+      f(null), m(!0);
       try {
         await d.Z.unbanUser(n.id, l.id), o()
       } catch (e) {
-        h(new g.Z(e)), m(!1)
+        f(new g.Z(e)), m(!1)
       }
     }
   }
@@ -113,11 +113,11 @@ function D(e) {
       }), (0, r.jsx)(c.Text, {
         variant: "text-sm/normal",
         children: null != s.reason && "" !== s.reason ? s.reason : S.intl.string(S.t["t+2Zcn"])
-      }), null != f ? (0, r.jsx)(c.Text, {
+      }), null != h ? (0, r.jsx)(c.Text, {
         className: T.error,
         color: "text-danger",
         variant: "text-sm/normal",
-        children: f.getAnyErrorMessage()
+        children: h.getAnyErrorMessage()
       }) : null]
     }), (0, r.jsxs)(c.mzw, {
       className: T.footer,
@@ -326,7 +326,7 @@ class A extends i.PureComponent {
     })
   }
 }
-let L = o.ZP.connectStores([C.Z, f.Z, h.Z], () => {
+let L = o.ZP.connectStores([C.Z, h.Z, f.Z], () => {
   let {
     bans: e,
     guild: t,
@@ -336,8 +336,8 @@ let L = o.ZP.connectStores([C.Z, f.Z, h.Z], () => {
     searchQuery: null != n ? n : "",
     bans: e,
     guild: t,
-    theme: f.Z.theme,
-    streamerMode: h.Z.hidePersonalInformation
+    theme: h.Z.theme,
+    streamerMode: f.Z.hidePersonalInformation
   }
 })(A);
 

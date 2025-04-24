@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(107862),
   g = n(259580),
   p = n(823379),
-  f = n(889369),
-  h = n(570961),
+  h = n(889369),
+  f = n(570961),
   x = n(208665),
   b = n(976983),
   j = n(290511),
@@ -41,7 +41,7 @@ function C(e) {
     onPromptDragReset: P
   } = e, {
     dropdownsAllowed: w
-  } = (0, m.Ug)(n.id), R = (0, a.e7)([f.Z], () => f.Z.editedDefaultChannelIds), Z = w ? j.qm : j.M$, {
+  } = (0, m.Ug)(n.id), R = (0, a.e7)([h.Z], () => h.Z.editedDefaultChannelIds), Z = w ? j.qm : j.M$, {
     drag: D,
     dragSourcePosition: k,
     drop: A,
@@ -113,7 +113,7 @@ function C(e) {
         className: v.removeButton,
         children: (0, r.jsx)(o.P3F, {
           className: v.closeIcon,
-          onClick: () => (0, h.fi)(n, l.id),
+          onClick: () => (0, f.fi)(n, l.id),
           children: (0, r.jsx)(o.XHJ, {
             size: "xs",
             color: "currentColor"
@@ -155,7 +155,7 @@ function C(e) {
         inputClassName: v.titleInput,
         inputRef: Y,
         value: l.title,
-        onChange: e => (0, h.Kk)(n, l.id, {
+        onChange: e => (0, f.Kk)(n, l.id, {
           title: e
         }),
         placeholder: _.intl.string(_.t.QMCuCg),
@@ -191,7 +191,7 @@ function C(e) {
             size: 20,
             type: o.XZJ.Types.INVERTED,
             value: !l.singleSelect,
-            onChange: (e, t) => (0, h.Kk)(n, l.id, {
+            onChange: (e, t) => (0, f.Kk)(n, l.id, {
               singleSelect: !t
             }),
             children: (0, r.jsx)(o.Text, {
@@ -203,7 +203,7 @@ function C(e) {
             size: 20,
             type: o.XZJ.Types.INVERTED,
             value: l.inOnboarding && l.required,
-            onChange: (e, t) => (0, h.Kk)(n, l.id, {
+            onChange: (e, t) => (0, f.Kk)(n, l.id, {
               required: t
             }),
             disabled: !l.inOnboarding,
@@ -228,7 +228,7 @@ function C(e) {
           className: v.removeButton,
           children: (0, r.jsx)(o.P3F, {
             className: v.closeIcon,
-            onClick: () => (0, h.fi)(n, l.id),
+            onClick: () => (0, f.fi)(n, l.id),
             children: (0, r.jsx)(o.XHJ, {
               size: "xs",
               color: "currentColor"
@@ -254,7 +254,7 @@ function y(e) {
   function a(e) {
     return (0, r.jsx)(o.P3F, {
       className: v.example,
-      onClick: () => (0, h.Kk)(n, t.id, {
+      onClick: () => (0, f.Kk)(n, t.id, {
         title: e
       }),
       children: (0, r.jsx)(o.Text, {
@@ -289,7 +289,7 @@ function N(e) {
     handleDragStart: c,
     handleDragReset: d,
     handleDragComplete: g
-  } = (0, u.Z)(n.options, e => (0, h.Kk)(t, n.id, {
+  } = (0, u.Z)(n.options, e => (0, f.Kk)(t, n.id, {
     options: e
   }));
   return (0, r.jsxs)("div", {

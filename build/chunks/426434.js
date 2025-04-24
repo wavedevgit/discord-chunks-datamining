@@ -1,7 +1,7 @@
 /** Chunk was on 50629 **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => h
 });
 var r = n(200651);
 n(192379);
@@ -17,16 +17,16 @@ var i = n(392711),
   g = n(388032),
   p = n(296205);
 
-function f(e) {
+function h(e) {
   let t, {
       guild: n
     } = e,
-    f = n.mfaLevel,
-    h = (0, l.e7)([o.Z], () => null != n && o.Z.can(m.Plq.MANAGE_GUILD, n), [n]),
+    h = n.mfaLevel,
+    f = (0, l.e7)([o.Z], () => null != n && o.Z.can(m.Plq.MANAGE_GUILD, n), [n]),
     x = (0, l.e7)([c.default], () => c.default.getCurrentUser()),
     b = n.isOwner(x),
     j = null == x ? void 0 : x.mfaEnabled,
-    _ = f === m.BpS.ELEVATED,
+    _ = h === m.BpS.ELEVATED,
     v = b && j,
     O = (0, i.throttle)(async e => {
       v && await u.Z.updateMFALevel({
@@ -35,7 +35,7 @@ function f(e) {
         isEnabled: !e
       })
     }, 1e3);
-  if (!h) return null;
+  if (!f) return null;
   v || (t = b ? g.intl.format(g.t.nFwNyc, {
     settingsHook: () => a.Z.open(m.oAB.ACCOUNT)
   }) : g.intl.string(g.t["9Ghu4+"]));

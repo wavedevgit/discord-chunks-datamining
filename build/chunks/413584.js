@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(481060),
   g = n(239091),
   p = n(596454),
-  f = n(493773),
-  h = n(607070),
+  h = n(493773),
+  f = n(607070),
   x = n(933557),
   b = n(471445),
   j = n(339085),
@@ -74,8 +74,8 @@ let M = "WELCOME_CHANNEL",
     let l, {
         guildId: a,
         welcomeChannel: o,
-        onEdit: f,
-        onChannelReorder: h,
+        onEdit: h,
+        onChannelReorder: f,
         isDropHovered: _,
         index: v
       } = e,
@@ -93,16 +93,16 @@ let M = "WELCOME_CHANNEL",
           index: v
         },
         end: (e, t) => {
-          null == e || t.didDrop() || h(e.channel, null, !0)
+          null == e || t.didDrop() || f(e.channel, null, !0)
         }
       }),
       [, F] = (0, u.L)({
         accept: M,
         hover: e => {
-          h(e.channel, v, !1)
+          f(e.channel, v, !1)
         },
         drop: e => {
-          h(e.channel, v, !0)
+          f(e.channel, v, !0)
         }
       });
     return i.useLayoutEffect(() => (B(F(y)), () => {
@@ -133,9 +133,9 @@ let M = "WELCOME_CHANNEL",
           return t => (0, r.jsx)(e, L(A({}, t), {
             guildId: a,
             welcomeChannel: o,
-            onChannelReorder: h,
+            onChannelReorder: f,
             setShowConfirmModal: C,
-            onEdit: f,
+            onEdit: h,
             index: v
           }))
         })
@@ -169,14 +169,14 @@ let M = "WELCOME_CHANNEL",
           return t => (0, r.jsx)(e, L(A({}, t), {
             welcomeChannel: o,
             guildId: a,
-            onSave: f
+            onSave: h
           }))
         }, {
           onCloseRequest: () => Z.Vq
         }),
         children: D.intl.string(D.t.bt75u7)
       }), O && (0, r.jsx)(N.Z, {
-        onConfirm: () => f(),
+        onConfirm: () => h(),
         onCancel: () => C(!1),
         channelId: o.channel_id
       })]
@@ -189,7 +189,7 @@ let M = "WELCOME_CHANNEL",
     } = e, {
       welcomeSettings: s,
       originalWelcomeSettings: a
-    } = (0, d.e7)([y.Z], () => y.Z.getSettingsProps()), c = (0, d.e7)([h.Z], () => h.Z.useReducedMotion), [u, g] = i.useState(null), [p, x] = i.useState(!1), [b, j] = i.useState(!1), {
+    } = (0, d.e7)([y.Z], () => y.Z.getSettingsProps()), c = (0, d.e7)([f.Z], () => f.Z.useReducedMotion), [u, g] = i.useState(null), [p, x] = i.useState(!1), [b, j] = i.useState(!1), {
       description: N,
       channels: I,
       enabled: T
@@ -226,7 +226,7 @@ let M = "WELCOME_CHANNEL",
         channels: i
       })), n ? (U(i), g(null)) : g(t)
     }, W = i.useRef(!1);
-    (0, f.ZP)(() => (null != t && l && (0, m.ZDy)(async () => {
+    (0, h.ZP)(() => (null != t && l && (0, m.ZDy)(async () => {
       let {
         default: e
       } = await n.e("39143").then(n.bind(n, 737868));

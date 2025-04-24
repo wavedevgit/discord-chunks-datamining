@@ -20,9 +20,9 @@ let o = function(e) {
     onRemove: m,
     canRemove: g,
     actionsLocation: p,
-    fieldStyle: f
+    fieldStyle: h
   } = e, {
-    label: h,
+    label: f,
     placeholder: x
   } = t;
   return (0, r.jsx)(l.Z, {
@@ -33,10 +33,10 @@ let o = function(e) {
     onDrop: u,
     onEdit: d,
     onRemove: m,
-    title: h,
+    title: f,
     canRemove: g,
     actionsLocation: p,
-    fieldStyle: f,
+    fieldStyle: h,
     children: (0, r.jsx)(i.Q8, {
       className: a.fieldBackground,
       placeholder: null != x ? x : s.intl.string(s.t["Sqn+Wl"]),

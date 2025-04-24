@@ -13,8 +13,8 @@ var r, i, l = n(200651),
   m = n(264451),
   g = n(759178),
   p = n(462087),
-  f = n(685201),
-  h = n(766434),
+  h = n(685201),
+  f = n(766434),
   x = n(755930),
   b = n(334820),
   j = n(198139),
@@ -58,7 +58,7 @@ function y(e) {
     payoutStatus: r,
     ppgDeferralReasons: i,
     periodEndDate: s
-  } = (0, h.j0)(t), a = null != s ? u()(s).add(15, "days").toISOString() : void 0, o = (0, m.Zo)(a, "MMM D");
+  } = (0, f.j0)(t), a = null != s ? u()(s).add(15, "days").toISOString() : void 0, o = (0, m.Zo)(a, "MMM D");
   switch (n) {
     case j.x_.OPEN:
       return (0, l.jsxs)(l.Fragment, {
@@ -85,7 +85,7 @@ function y(e) {
         })]
       });
       return (0, l.jsxs)(l.Fragment, {
-        children: [_.intl.string(_.t.OtZ5k5), (0, l.jsx)(f.Z, {
+        children: [_.intl.string(_.t.OtZ5k5), (0, l.jsx)(h.Z, {
           className: v.statusDeferredIcon
         })]
       })

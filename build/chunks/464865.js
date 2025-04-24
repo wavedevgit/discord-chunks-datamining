@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(586382),
   g = n(859481),
   p = n(981631),
-  f = n(388032),
-  h = n(50986);
+  h = n(388032),
+  f = n(50986);
 
 function x(e) {
   let {
@@ -38,15 +38,15 @@ function x(e) {
     null == O || v || (0, u.U5)(O)
   }, [v, O]), null == t) ? null : n ? (0, r.jsx)(a.Z, {}) : (0, r.jsxs)(s.hjN, {
     children: [(0, r.jsxs)(s.vwX, {
-      className: h.title,
-      children: [f.intl.string(f.t["5XZKy8"]), (0, r.jsx)(m.xl, {
+      className: f.title,
+      children: [h.intl.string(h.t["5XZKy8"]), (0, r.jsx)(m.xl, {
         guild: t
       })]
     }), (0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
-      className: h.description,
-      children: f.intl.format(f.t.koklFB, {
+      className: f.description,
+      children: h.intl.format(h.t.koklFB, {
         helpCenterArticle: c.Z.getArticleURL(p.BhN.GUILD_VANITY_URL)
       })
     }), (0, r.jsx)(g.z, {
