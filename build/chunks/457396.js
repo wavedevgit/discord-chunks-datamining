@@ -105,7 +105,7 @@ let G = "NitroTabButton",
       className: "",
       startsAt: eo,
       endsAt: es,
-      messageStyle: u.a.SHORT_TIME,
+      messageStyle: u.aj.SHORT_TIME,
       upperCase: !0
     })), en ? (E = (0, r.jsx)(S.Z, {}), I = 0) : ee ? (E = (0, r.jsx)(Z.S, {
       expiresAt: es,

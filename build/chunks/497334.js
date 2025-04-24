@@ -16,7 +16,7 @@ function d(e) {
   let {
     expiresAt: t,
     isAcknowledged: n
-  } = e, i = (0, o.Z)(t, o.a.SHORT_TIME);
+  } = e, i = (0, o.ZP)(t, o.aj.SHORT_TIME);
   return "" === i ? null : (i = i.toUpperCase(), n) ? (0, r.jsxs)("div", {
     className: l()(u.premiumTrialBadge, u.premiumTrialAcknowledgedBadge, {}),
     children: [(0, r.jsx)(a.T39, {
