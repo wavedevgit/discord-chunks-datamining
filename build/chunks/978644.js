@@ -1,4 +1,4 @@
-/** Chunk was on 3656 **/
+/** Chunk was on 21918 **/
 e.exports = {
   chatIcon: "chatIcon__233f8",
   badge: "badge__233f8"

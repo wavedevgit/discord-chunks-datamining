@@ -38,13 +38,13 @@ var i = n(200651),
   L = n(333031),
   R = n(371651),
   M = n(624864),
-  z = n(610394),
-  V = n(388627),
+  V = n(610394),
+  z = n(388627),
   U = n(319414),
   W = n(561064),
   G = n(987650),
-  F = n(757744),
-  B = n(981631),
+  B = n(757744),
+  F = n(981631),
   H = n(960972);
 let Y = !C.isPlatformEmbedded && !1,
   Q = Y ? (0, i.jsx)(f.Z, {
@@ -85,8 +85,8 @@ function J(e) {
         }
         return e
       }({}, t), r = r = {
-        layoutId: F.$,
-        version: F.H
+        layoutId: B.$,
+        version: B.H
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -117,7 +117,7 @@ let q = r.memo(function(e) {
           target: i,
           button: r
         } = e;
-        r === B.AeJ.PRIMARY && t === i && n()
+        r === F.AeJ.PRIMARY && t === i && n()
       },
       onContextMenu: J,
       children: r ? null : (0, i.jsx)(L.Z, {
@@ -157,10 +157,10 @@ function en() {
 }
 
 function ei(e) {
-  let t = z.ZP.isInputLocked((0, Z.getPID)());
-  "alt" !== e.key.toLowerCase() || t || ("keyup" === e.type.toLowerCase() ? j.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+  let t = V.default.isInputLocked((0, Z.getPID)());
+  "alt" !== e.key.toLowerCase() || t || ("keyup" === e.type.toLowerCase() ? j.S.dispatch(F.CkL.OVERLAY_V3_SHOW_WIDGETS, {
     show: !0
-  }) : "keydown" === e.type.toLowerCase() && j.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+  }) : "keydown" === e.type.toLowerCase() && j.S.dispatch(F.CkL.OVERLAY_V3_SHOW_WIDGETS, {
     show: !1
   }))
 }
@@ -174,13 +174,13 @@ function er(e) {
     incompatibleApp: f,
     hasZeroSizeDimension: C,
     keybind: k
-  } = (0, a.cj)([z.ZP, x.default, I.Z, _.ZP], () => {
+  } = (0, a.cj)([V.default, x.default, I.Z, _.ZP], () => {
     let e = I.Z.windowSize((0, N.ZY)(n)),
       t = _.ZP.getOverlayKeybind(),
       i = (0, Z.getPID)();
     return {
-      locked: z.ZP.isInputLocked(i),
-      focused: z.ZP.isFocused(i),
+      locked: V.default.isInputLocked(i),
+      focused: V.default.isFocused(i),
       incompatibleApp: x.default.incompatibleApp,
       hasZeroSizeDimension: 0 === e.height || 0 === e.width,
       keybind: null != t ? (0, S.BB)(t.shortcut, !0) : "???"
@@ -207,7 +207,7 @@ function er(e) {
     n.removeEventListener("keydown", ei), n.removeEventListener("keyup", ei), Y && (n.removeEventListener("focus", et), n.removeEventListener("blur", en))
   }), ! function() {
     let e = r.useRef(!1),
-      t = (0, V.pL)(),
+      t = (0, z.pL)(),
       n = b.Z.getVoiceChannelId(),
       i = y.Z.getChannel(n),
       o = null != i ? O.Z.getGuild(i.guild_id) : null,
@@ -244,12 +244,12 @@ function er(e) {
       }), 0 !== h.length && d.Z.overlayMounted(...h)
     }, [a, s, c, t, n, o, u])
   }(), r.useEffect(() => {
-    if (j.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+    if (j.S.dispatch(F.CkL.OVERLAY_V3_SHOW_WIDGETS, {
         show: !0
       }), o) {
       if ((0, s.Ay)(c.u1M), n.addEventListener("contextmenu", X, !1), null != K) {
         let e = Date.now() - K;
-        d.Z.track(B.rMx.OVERLAY_LOCKED, {
+        d.Z.track(F.rMx.OVERLAY_LOCKED, {
           unlocked_duration: e
         }), K = null
       }
@@ -257,11 +257,11 @@ function er(e) {
         n.removeEventListener("contextmenu", X, !1)
       }
     }
-    n.removeEventListener("contextmenu", X, !1), null == K && (K = Date.now(), d.Z.track(B.rMx.OVERLAY_UNLOCKED))
+    n.removeEventListener("contextmenu", X, !1), null == K && (K = Date.now(), d.Z.track(F.rMx.OVERLAY_UNLOCKED))
   }, [o, n]), (0, i.jsx)(h.Gt, {
     value: L,
     children: C || f ? null : (0, i.jsx)(c.f6W, {
-      theme: B.BRd.MIDNIGHT,
+      theme: F.BRd.MIDNIGHT,
       children: e => (0, i.jsxs)("div", {
         id: "overlay-container",
         className: l()(H.overlay, e),

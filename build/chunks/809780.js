@@ -1,4 +1,4 @@
-/** Chunk was on 2900 **/
+/** Chunk was on 24338 **/
 n.d(t, {
   As: () => G,
   ZP: () => Q,
@@ -21,8 +21,8 @@ var r, i, l = n(192379),
   b = n(601070),
   x = n(344185),
   y = n(569471),
-  v = n(723170),
-  E = n(675478),
+  E = n(723170),
+  v = n(675478),
   O = n(581883),
   j = n(131704),
   C = n(592125),
@@ -230,9 +230,9 @@ class z extends a.EventEmitter {
         collapsedChannels: i,
         loadState: l
       } = this.state, a = u().findIndex(r, e => e.channelId === t), o = r[a], s = !o.collapsed;
-      i[t] = s, (0, E.BU)(n, t, e => {
+      i[t] = s, (0, v.BU)(n, t, e => {
         e.collapsedInInbox = s
-      }, E.fy.FREQUENT_USER_ACTION), this.setState({
+      }, v.fy.FREQUENT_USER_ACTION), this.setState({
         scrollToChannelIndex: a,
         collapsedChannels: i,
         loadState: "done" !== l || s || o.isFullyLoaded ? l : "loaded",
@@ -367,7 +367,7 @@ function Y(e, t, n, r) {
         if (Date.now() - e > X) return 6
       }
       if (r.isThread()) {
-        let e = (0, v.J)(r);
+        let e = (0, E.J)(r);
         return e === M.iN.ALL_MESSAGES ? 4 : e === M.iN.NO_MESSAGES ? 7 : 5
       } {
         let n = Z.ZP.getChannelMessageNotifications(e, t),

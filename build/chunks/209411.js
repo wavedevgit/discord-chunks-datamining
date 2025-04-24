@@ -12,8 +12,8 @@ var r = n(200651),
   u = n(493773),
   d = n(743142),
   h = n(893607),
-  p = n(703656),
-  g = n(314897),
+  g = n(703656),
+  p = n(314897),
   f = n(781428),
   m = n(981631),
   _ = n(176505);
@@ -27,18 +27,18 @@ function x(e) {
             path: m.Z5c.CHANNEL(h.Hw.guildId(), h.Hw.channelId())
           });
           return (null == n || null == (t = n.params) ? void 0 : t.channelId) === _.oC.ROLE_SUBSCRIPTIONS
-        }(t)) p.dL(t);
+        }(t)) g.dL(t);
       else {
         var n;
-        (null != (n = e.transitionTo) ? n : p.uL)(t)
+        (null != (n = e.transitionTo) ? n : g.uL)(t)
       }
     }, [e.transitionTo]),
     {
       isAuthenticated: E,
       loginStatus: b
-    } = (0, o.cj)([g.default], () => ({
-      isAuthenticated: g.default.isAuthenticated(),
-      loginStatus: g.default.getLoginStatus()
+    } = (0, o.cj)([p.default], () => ({
+      isAuthenticated: p.default.isAuthenticated(),
+      loginStatus: p.default.getLoginStatus()
     })),
     {
       location: v,

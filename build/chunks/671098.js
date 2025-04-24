@@ -1,18 +1,18 @@
-/** Chunk was on 53745 **/
+/** Chunk was on 87918 **/
 n.d(t, {
-  n: () => a
+  n: () => u
 });
-var r = n(835913),
-  i = n(570140),
-  l = n(675478),
-  o = n(626135),
-  s = n(981631);
-async function a(e, t) {
-  await (0, l.PS)(e, e => (e.guildRecentsDismissedAt = r.E.fromDate(new Date), !0), l.fy.INFREQUENT_USER_ACTION), i.Z.dispatch({
+var i = n(835913),
+  l = n(570140),
+  a = n(675478),
+  r = n(626135),
+  o = n(981631);
+async function u(e, t) {
+  await (0, a.PS)(e, e => (e.guildRecentsDismissedAt = i.E.fromDate(new Date), !0), a.fy.INFREQUENT_USER_ACTION), l.Z.dispatch({
     type: "BULK_CLEAR_RECENTS",
     guildId: e,
     channelIds: t
-  }), o.default.track(s.rMx.CHANNEL_LIST_UPDATED, {
+  }), r.default.track(o.rMx.CHANNEL_LIST_UPDATED, {
     action_type: "recents_dismissed"
   })
 }

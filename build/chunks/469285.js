@@ -1,4 +1,4 @@
-/** Chunk was on 3656 **/
+/** Chunk was on 21918 **/
 e.exports = {
   spamBanner: "spamBanner_a2eac3",
   bannerTextContainer: "bannerTextContainer_a2eac3",

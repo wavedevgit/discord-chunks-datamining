@@ -54,7 +54,7 @@ function v(e) {
     locked: t,
     pinned: n,
     anchorLeft: o
-  } = e, v = (0, a.e7)([d.Z], () => d.Z.getSocket()), b = (0, a.e7)([f.ZP], () => f.ZP.isGPUBoosted());
+  } = e, v = (0, a.e7)([d.Z], () => d.Z.getSocket()), b = (0, a.e7)([f.default], () => f.default.isGPUBoosted());
   (0, u.nU)();
   let _ = (0, a.e7)([p.Z], () => p.Z.getWindow(m.$J)),
     [E, x] = (0, u.m8)(v),
@@ -75,23 +75,23 @@ function v(e) {
   (0, c.ZP)(() => (D(), () => {
     L()
   }));
-  let z = r.useCallback(() => {
+  let V = r.useCallback(() => {
       S(), A(), D()
     }, [S, A, D]),
-    [V, U] = r.useState(!0),
+    [z, U] = r.useState(!0),
     [W, G] = r.useState(!0),
-    [F, B] = r.useState(!0),
+    [B, F] = r.useState(!0),
     [H, Y] = r.useState(!0),
     [Q, K] = r.useState(!0);
   return t && !n ? null : (0, i.jsxs)("div", {
     className: l()(g.panelGroup, !o && g.rightAligned),
-    children: [(V || !t) && (0, i.jsxs)("div", {
+    children: [(z || !t) && (0, i.jsxs)("div", {
       className: g.measurement,
       children: [!t && (0, i.jsx)("div", {
         className: g.measurementCheckbox,
         children: (0, i.jsx)(s.XZJ, {
           size: 16,
-          value: V,
+          value: z,
           onChange: (e, t) => U(t)
         })
       }), (0, i.jsxs)(s.Text, {
@@ -125,14 +125,14 @@ function v(e) {
           children: [j.toFixed(2), "ms"]
         })]
       })]
-    }), (F || !t) && (0, i.jsxs)("div", {
+    }), (B || !t) && (0, i.jsxs)("div", {
       className: g.measurement,
       children: [!t && (0, i.jsx)("div", {
         className: g.measurementCheckbox,
         children: (0, i.jsx)(s.XZJ, {
           size: 16,
-          value: F,
-          onChange: (e, t) => B(t)
+          value: B,
+          onChange: (e, t) => F(t)
         })
       }), (0, i.jsxs)(s.Text, {
         variant: "text-md/normal",
@@ -217,7 +217,7 @@ function v(e) {
       className: g.bottomPanelButton,
       children: (0, i.jsx)(h.Z, {
         children: (0, i.jsx)(s.zxk, {
-          onClick: z,
+          onClick: V,
           children: "Reset Frame Data"
         })
       })

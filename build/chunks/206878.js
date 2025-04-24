@@ -106,11 +106,11 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
       let t = e.max > 1e6 ? "".concat(Math.round(e.max / 1e6), "MB") : "".concat(Math.round(e.max / 1e3), "KB");
       n("Files exceed the recommended size limit - make sure they are optimized!", ["".concat(i, " (max: ").concat(t, ")")])
     } else r > e.warn && a("Files are a tad chonky - are you sure they're optimized?", ["".concat(i)])
-  }, j = (e, t, n, a) => {
+  }, g = (e, t, n, a) => {
     let r = h[e];
     if (null != r)
       for (let e of t) e.name.endsWith(".txt") || v(r, e, n, a)
-  }, g = (e, t, n) => {
+  }, j = (e, t, n) => {
     for (let a of e) {
       let e = (0, r.BU)(a),
         l = null != e ? h[e] : null;
@@ -122,7 +122,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
       addError: n,
       addWarning: a
     } = e;
-    g(t.collectionFiles, n, a), f({
+    j(t.collectionFiles, n, a), f({
       names: t.collectionFiles.map(e => e.name),
       addError: n
     });
@@ -148,7 +148,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
           return e.substring(0, t > 0 ? t : e.length)
         }),
         addError: n
-      }), j(r.aB.PROFILE_EFFECT, l, n, a);
+      }), g(r.aB.PROFILE_EFFECT, l, n, a);
       let s = o.filter(e => !i.some(t => t.startsWith(e) && t.endsWith(".png"))).map(e => "".concat(t, "/").concat(e));
       s.length > 0 && n("Missing required PFX files with prefix", s), i.some(e => e.endsWith(".txt")) || n("PFX configs required - please include both exports! (exception: duplicate variant configs are optional)", [t]);
       let c = i.filter(e => !o.some(t => e.startsWith(t)) && !e.endsWith(".txt")).map(e => "".concat(t, "/").concat(e));
@@ -163,7 +163,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
     f({
       names: t.avatarDecorationFiles.map(e => e.name),
       addError: n
-    }), j(r.aB.AVATAR_DECORATION, t.avatarDecorationFiles, n, a)
+    }), g(r.aB.AVATAR_DECORATION, t.avatarDecorationFiles, n, a)
   }, C = (e, t, n) => {
     _({
       files: e,

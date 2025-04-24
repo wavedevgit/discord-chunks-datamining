@@ -135,7 +135,7 @@ function j(e) {
           throw Error("[getItemKey] Failed for section: ".concat(e))
       }
     }, [s]),
-    Q = i.useCallback(e => {
+    X = i.useCallback(e => {
       switch (e) {
         case 0:
           return 320;
@@ -145,7 +145,7 @@ function j(e) {
           throw Error("[getItemHeight] Failed for section: ".concat(e))
       }
     }, []),
-    X = i.useCallback(async (e, t, n, r) => {
+    Q = i.useCallback(async (e, t, n, r) => {
       var i, a;
       await l(e, t, n, r);
       let o = null == (a = V.current) || null == (i = a.getScrollerState()) ? void 0 : i.scrollTop;
@@ -161,12 +161,12 @@ function j(e) {
           style: n,
           children: (0, r.jsx)(I.ZP, {
             guildId: e,
-            onClick: async e => await X(e, t, A, T),
+            onClick: async e => await Q(e, t, A, T),
             onView: e => z(e)
           })
         }, i)
       }
-    }, [s, X, z, A]);
+    }, [s, Q, z, A]);
   i.useEffect(() => {
     let e = V.current;
     return () => {
@@ -215,7 +215,7 @@ function j(e) {
       renderSection: Y,
       getSectionHeight: K,
       getItemKey: q,
-      getItemHeight: Q,
+      getItemHeight: X,
       chunkSize: 24,
       onScroll: $,
       renderAccessory: e => R ? (0, r.jsx)("div", {

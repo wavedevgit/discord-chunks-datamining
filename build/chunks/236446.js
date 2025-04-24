@@ -12,8 +12,8 @@ var r = n(200651),
   u = n(388905),
   d = n(362762),
   h = n(409059),
-  p = n(659900),
-  g = n(962220),
+  g = n(659900),
+  p = n(962220),
   f = n(473855),
   m = n(306453),
   _ = n(929809),
@@ -29,8 +29,8 @@ var r = n(200651),
   y = n(260539),
   C = n(701476),
   P = n(630724),
-  A = n(436620),
-  Z = n(388032),
+  Z = n(436620),
+  A = n(388032),
   T = n(183170),
   R = n(20493);
 
@@ -45,13 +45,13 @@ function w(e, t, n) {
 c.ZP.initialize();
 class L extends i.PureComponent {
   componentDidMount() {
-    (0, x.e)("guildTemplate"), A.KO || j.Z.launch("discord://" + N.Z5c.GUILD_TEMPLATE(this.props.code), () => void 0)
+    (0, x.e)("guildTemplate"), Z.KO || j.Z.launch("discord://" + N.Z5c.GUILD_TEMPLATE(this.props.code), () => void 0)
   }
   componentDidUpdate(e) {
-    this.props.code !== e.code && g.Z.resolveGuildTemplate(this.props.code)
+    this.props.code !== e.code && p.Z.resolveGuildTemplate(this.props.code)
   }
   renderButton(e, t) {
-    return A.KO ? (0, r.jsx)(u.zx, {
+    return Z.KO ? (0, r.jsx)(u.zx, {
       className: R.marginTop40,
       onClick: t,
       children: e
@@ -73,20 +73,20 @@ class L extends i.PureComponent {
         className: R.marginBottom8
       }), (0, r.jsx)(u.Dx, {
         className: s()(R.marginTop8, R.marginBottom8),
-        children: Z.intl.string(Z.t.C7ZRNz)
+        children: A.intl.string(A.t.C7ZRNz)
       }), (0, r.jsx)(u.DK, {
-        children: Z.intl.string(Z.t.A6MwXF)
-      }), this.renderButton(Z.intl.string(Z.t.fIv16O), this.handleContinue)]
+        children: A.intl.string(A.t.A6MwXF)
+      }), this.renderButton(A.intl.string(A.t.fIv16O), this.handleContinue)]
     })
   }
   renderAppOpened() {
     return (0, r.jsxs)(u.ZP, {
       children: [(0, r.jsx)(u.Dx, {
         className: R.marginBottom8,
-        children: Z.intl.string(Z.t.csrAMD)
+        children: A.intl.string(A.t.csrAMD)
       }), (0, r.jsx)(u.DK, {
-        children: Z.intl.string(Z.t["m1+IBg"])
-      }), this.renderButton(Z.intl.string(Z.t.fIv16O), this.handleContinue)]
+        children: A.intl.string(A.t["m1+IBg"])
+      }), this.renderButton(A.intl.string(A.t.fIv16O), this.handleContinue)]
     })
   }
   renderAuthenticatedOrDownload() {
@@ -105,8 +105,8 @@ class L extends i.PureComponent {
   renderContinue() {
     return (0, r.jsxs)(u.ZP, {
       children: [(0, r.jsx)(u.Dx, {
-        children: Z.intl.string(Z.t.fOc4go)
-      }), this.renderButton(Z.intl.string(Z.t.fIv16O), this.handleContinue)]
+        children: A.intl.string(A.t.fOc4go)
+      }), this.renderButton(A.intl.string(A.t.fIv16O), this.handleContinue)]
     })
   }
   render() {
@@ -117,14 +117,14 @@ class L extends i.PureComponent {
       transitionTo: i,
       location: l
     } = this.props;
-    if (null == e) return this.renderSpinner(Z.intl.string(Z.t.ZTNur6));
+    if (null == e) return this.renderSpinner(A.intl.string(A.t.ZTNur6));
     if (t === N.kEZ.OPEN) return this.renderAppOpened();
-    if (t === N.kEZ.OPENING) return this.renderSpinner(Z.intl.string(Z.t["Z+hCVV"]));
+    if (t === N.kEZ.OPENING) return this.renderSpinner(A.intl.string(A.t["Z+hCVV"]));
     switch (e.state) {
       case y.Rj.RESOLVING:
-        return this.renderSpinner(Z.intl.string(Z.t["Z+hCVV"]));
+        return this.renderSpinner(A.intl.string(A.t["Z+hCVV"]));
       case y.Rj.RESOLVED:
-        if (n || !A.KO) return this.renderAuthenticatedOrDownload();
+        if (n || !Z.KO) return this.renderAuthenticatedOrDownload();
         if (this.props.login) return (0, r.jsx)(I.Z, {
           guildTemplate: e,
           transitionTo: i,
@@ -182,16 +182,16 @@ function k(e) {
   } = e, {
     form: n,
     handleSubmit: i
-  } = (0, p.Z)(t, !1);
+  } = (0, g.Z)(t, !1);
   E.Z.flowStep(P.MK.ORGANIC_GUILD_TEMPLATES, P.X2.GUILD_CREATE);
   let l = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.Dx, {
       className: T.header,
-      children: Z.intl.string(Z.t.UNFvtL)
+      children: A.intl.string(A.t.UNFvtL)
     }), n, (0, r.jsx)(u.zx, {
       className: T.createButton,
       onClick: i,
-      children: Z.intl.string(Z.t.xr59t7)
+      children: A.intl.string(A.t.xr59t7)
     })]
   });
   return (0, r.jsx)(O.Z, {

@@ -113,7 +113,7 @@ function y(e, t, n, a, o) {
   r.ZP.trackWithMetadata(c.rMx.NOTIFICATION_SETTINGS_UPDATED, m(p({}, g, i.Z.getStats(e)), {
     location: o,
     guild_id: e,
-    update_type: u.I.GUILD,
+    update_type: u.Ib.GUILD,
     label: a,
     guild_flags_old: E("guild_flags"),
     guild_is_muted_old: E("guild_is_muted"),
@@ -165,7 +165,7 @@ function I(e, t, n, s, d, _) {
     location: _,
     guild_id: e,
     channel_id: t,
-    update_type: u.I.CHANNEL,
+    update_type: u.Ib.CHANNEL,
     label: d,
     parent_id: null != C ? C.parent_id : null,
     channel_flags_old: N("channel_flags"),

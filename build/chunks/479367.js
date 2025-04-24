@@ -1,4 +1,4 @@
-/** Chunk was on 3656 **/
+/** Chunk was on 21918 **/
 e.exports = {
   akaBadge: "akaBadge__488b1",
   nicknames: "nicknames__488b1",

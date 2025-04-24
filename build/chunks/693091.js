@@ -1,13 +1,13 @@
 /** Chunk was on 3589 **/
 n.d(t, {
-  AS: () => l,
+  AS: () => o,
   S4: () => s,
   X4: () => u
 }), n(388685);
 var i = n(192379),
   r = n(481060);
 
-function o(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -15,7 +15,7 @@ function o(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class l {
+class o {
   updateState(e, t) {
     this.items = e;
     let n = this.locked !== t;
@@ -48,9 +48,9 @@ class l {
       let r = this.listeners.get(i.notification.id);
       if (null == r) continue;
       let {
-        offsetHeight: o
+        offsetHeight: l
       } = r.element;
-      (r.top !== t || r.height !== o || r.index !== n) && (e = !0), r.top = t, r.height = o, r.index = n, 0 === t && (this.matchHeight !== o && (e = !0), this.matchHeight = o), t += o + 8, n++
+      (r.top !== t || r.height !== l || r.index !== n) && (e = !0), r.top = t, r.height = l, r.index = n, 0 === t && (this.matchHeight !== l && (e = !0), this.matchHeight = l), t += l + 8, n++
     }
     e && this.broadcastLayoutUpdates()
   }
@@ -86,12 +86,12 @@ class l {
     return this.listeners.get(e)
   }
   constructor(e) {
-    o(this, "resizeObserver", void 0), o(this, "listeners", new Map), o(this, "queuedCompute", !1), o(this, "items", []), o(this, "matchHeight", 0), o(this, "locked", !0), o(this, "handleResize", e => {
+    l(this, "resizeObserver", void 0), l(this, "listeners", new Map), l(this, "queuedCompute", !1), l(this, "items", []), l(this, "matchHeight", 0), l(this, "locked", !0), l(this, "handleResize", e => {
       this.computeLayout()
     }), this.locked = e
   }
 }
-let s = i.createContext(new l(!0));
+let s = i.createContext(new o(!0));
 
 function c(e, t, n) {
   return t && 0 !== e ? 20 * Math.max(e / 5, 0) : n
@@ -103,7 +103,7 @@ let a = {
 };
 
 function u(e, t, n) {
-  let [o, l] = (0, r.q_F)(() => ({
+  let [l, o] = (0, r.q_F)(() => ({
     from: {
       opacity: 0,
       scale: 1,
@@ -111,7 +111,7 @@ function u(e, t, n) {
       height: 0,
       contentOpacity: 1
     }
-  }), void 0, []), u = i.useRef(l), d = i.useContext(s), h = i.useMemo(() => {
+  }), void 0, []), u = i.useRef(o), d = i.useContext(s), h = i.useMemo(() => {
     let t = !1;
     return n => {
       null == n ? d.unsubscribe(e) : d.subscribe(e, n, e => {
@@ -119,15 +119,15 @@ function u(e, t, n) {
           locked: n,
           matchHeight: i,
           height: r,
-          top: o,
-          index: l
+          top: l,
+          index: o
         } = e, {
           current: s
         } = u, d = {
-          opacity: n && l > 4 ? 0 : n ? Math.min(1 - l / 4, 1) : 1,
-          scale: n ? Math.min(1 - l / 4, 1) : 1,
-          transform: c(l, n, o),
-          contentOpacity: n && l > 0 ? 0 : 1,
+          opacity: n && o > 4 ? 0 : n ? Math.min(1 - o / 4, 1) : 1,
+          scale: n ? Math.min(1 - o / 4, 1) : 1,
+          transform: c(o, n, l),
+          contentOpacity: n && o > 0 ? 0 : 1,
           height: n ? i : r
         };
         s({
@@ -159,6 +159,6 @@ function u(e, t, n) {
     }
   }, [t, n, e, d]), {
     ref: h,
-    springs: o
+    springs: l
   }
 }

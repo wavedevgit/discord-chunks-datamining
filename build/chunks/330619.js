@@ -1,10 +1,10 @@
-/** Chunk was on 20875 **/
+/** Chunk was on 72283 **/
 n.d(t, {
-  R: () => l
+  R: () => o
 });
-var e = n(818083),
-  o = n(846573);
-let a = (0, e.B)({
+var i = n(818083),
+  r = n(846573);
+let l = (0, i.B)({
   kind: "user",
   id: "2025-04_win_electron_notifications",
   label: "Windows Electron Notifications",
@@ -20,17 +20,17 @@ let a = (0, e.B)({
   }]
 });
 
-function l(i) {
+function o(e) {
   let {
     location: t
-  } = i, {
+  } = e, {
     isInHoldout: n
-  } = o.X.getCurrentConfig({
+  } = r.X.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: !0
   });
-  return a.getCurrentConfig({
+  return l.getCurrentConfig({
     location: t
   }, {
     disable: n,

@@ -1,4 +1,4 @@
-/** Chunk was on 2900 **/
+/** Chunk was on 24338 **/
 n.d(t, {
   Z: () => m
 });
@@ -58,8 +58,8 @@ function m(e) {
       }
       return i
     }(e, ["message", "channel", "content", "className", "compact", "popoutProps", "hideTimestamp", "withFooter"]);
-  let v = (0, o.ZP)(i),
-    E = (0, a.Z)(v);
+  let E = (0, o.ZP)(i),
+    v = (0, a.Z)(E);
   return (0, r.jsx)("div", {
     className: l()({
       [d.withFooter]: x
@@ -80,7 +80,7 @@ function m(e) {
       childrenHeader: (0, r.jsx)(u.ZP, p({
         message: i,
         channel: m,
-        author: v,
+        author: E,
         guildId: null == m ? void 0 : m.guild_id,
         compact: g,
         hideTimestamp: b,
@@ -90,7 +90,7 @@ function m(e) {
       }, null != _ ? _ : {})),
       compact: g,
       guildId: null == m ? void 0 : m.guild_id,
-      authorHasGradientRole: E
+      authorHasGradientRole: v
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

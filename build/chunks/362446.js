@@ -1,9 +1,9 @@
-/** Chunk was on 97299 **/
+/** Chunk was on 77937 **/
 n.d(t, {
-  Z: () => f
+  Z: () => h
 });
-var r, l, i, o = n(442837),
-  a = n(570140),
+var l, r, i, a = n(442837),
+  o = n(570140),
   s = n(981631);
 let u = {};
 
@@ -19,10 +19,10 @@ function c(e) {
 }
 
 function d(e, t, n) {
-  let r = u[e = null != e ? e : "null"];
-  return null != r ? t(r) : n
+  let l = u[e = null != e ? e : "null"];
+  return null != l ? t(l) : n
 }
-class h extends(i = o.ZP.Store) {
+class f extends(i = a.ZP.Store) {
   getConnectionState(e) {
     return d(e, e => {
       let {
@@ -73,13 +73,13 @@ class h extends(i = o.ZP.Store) {
     }, null)
   }
 }
-l = "OverlayRTCConnectionStore", (r = "displayName") in h ? Object.defineProperty(h, r, {
-  value: l,
+r = "OverlayRTCConnectionStore", (l = "displayName") in f ? Object.defineProperty(f, l, {
+  value: r,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : h[r] = l;
-let f = new h(a.Z, {
+}) : f[l] = r;
+let h = new f(o.Z, {
   OVERLAY_INITIALIZE: function(e) {
     u = e.rtcConnectionStates
   },

@@ -49,8 +49,8 @@ var r = n(200651),
   Y = n(515753),
   K = n(831218),
   q = n(339149),
-  Q = n(981631),
-  X = n(675654),
+  X = n(981631),
+  Q = n(675654),
   J = n(474936),
   $ = n(388032),
   ee = n(332495),
@@ -133,13 +133,13 @@ let el = e => {
       className: et.friendsButtonContainer,
       children: [(0, r.jsx)(Y.Qj, er(en({
         onClick: () => {
-          h && (z.default.track(Q.rMx.GIFT_INTENT_BADGE_CLICKED, {
+          h && (z.default.track(X.rMx.GIFT_INTENT_BADGE_CLICKED, {
             gift_intent_type: J.hX.FRIEND_ANNIVERSARY
-          }), m.Z.setSection(Q.pJs.ALL), (0, x.Gk)())
+          }), m.Z.setSection(X.pJs.ALL), (0, x.Gk)())
         },
         interactiveClassName: h ? et.friendsBadge : void 0,
         selected: t,
-        route: Q.Z5c.FRIENDS,
+        route: X.Z5c.FRIENDS,
         icon: f.iFz,
         text: $.intl.string($.t.TdEu5e),
         onMouseEnter: () => {
@@ -155,8 +155,8 @@ let el = e => {
       })), h && !u && (0, r.jsx)(R.Z, {
         className: et.confetti,
         wind: 0,
-        sprites: X.CA,
-        spriteColors: X.Br,
+        sprites: Q.CA,
+        spriteColors: Q.Br,
         firing: g,
         confettiConfig: {
           opacity: {
@@ -182,7 +182,7 @@ let el = e => {
     let l = (0, c.JA)("library");
     return (0, r.jsx)(Y.Qj, er(en({
       selected: t,
-      route: Q.Z5c.APPLICATION_LIBRARY,
+      route: X.Z5c.APPLICATION_LIBRARY,
       icon: f.vqy,
       text: $.intl.string($.t.cw57am)
     }, i, l), {
@@ -206,10 +206,10 @@ let el = e => {
       channelId: i
     } = (0, S._)();
     if (!(0, T.a)()) return null;
-    let l = null == i ? void 0 : () => g.Z.preload(Q.ME, i);
+    let l = null == i ? void 0 : () => g.Z.preload(X.ME, i);
     return (0, r.jsx)(Y.Qj, er(en({
       selected: t,
-      route: Q.Z5c.MESSAGE_REQUESTS,
+      route: X.Z5c.MESSAGE_REQUESTS,
       icon: f._XJ,
       text: $.intl.string($.t.e7GWjY),
       onClick: l
@@ -223,7 +223,7 @@ let el = e => {
     } = e, n = $.intl.string(ee.default.Rkdixs), l = (0, c.JA)("family-center"), [a, o] = i.useState(!0);
     return (0, r.jsx)(Y.Qj, er(en({
       selected: t,
-      route: Q.Z5c.FAMILY_CENTER,
+      route: X.Z5c.FAMILY_CENTER,
       icon: f.BFJ,
       text: n,
       onMouseEnter: () => {
@@ -275,14 +275,14 @@ let el = e => {
 
 function ep(e) {
   switch (e) {
-    case Q.Z5c.APPLICATION_LIBRARY:
-      return Q.ZY5.LIBRARY;
-    case Q.Z5c.FRIENDS:
-      return Q.ZY5.FRIENDS_LIST;
-    case Q.Z5c.COLLECTIBLES_SHOP:
-      return Q.ZY5.COLLECTIBLES_SHOP
+    case X.Z5c.APPLICATION_LIBRARY:
+      return X.ZY5.LIBRARY;
+    case X.Z5c.FRIENDS:
+      return X.ZY5.FRIENDS_LIST;
+    case X.Z5c.COLLECTIBLES_SHOP:
+      return X.ZY5.COLLECTIBLES_SHOP
   }
-  return e.startsWith(Q.Z5c.APPLICATION_STORE) ? e === Q.Z5c.APPLICATION_STORE ? Q.ZY5.STORE_DIRECTORY_HOME : e.startsWith(Q.Z5c.APPLICATION_STORE) ? Q.ZY5.STORE_DIRECTORY_BROWSE : Q.ZY5.STORE_LISTING : Q.ZY5.DM_CHANNEL
+  return e.startsWith(X.Z5c.APPLICATION_STORE) ? e === X.Z5c.APPLICATION_STORE ? X.ZY5.STORE_DIRECTORY_HOME : e.startsWith(X.Z5c.APPLICATION_STORE) ? X.ZY5.STORE_DIRECTORY_BROWSE : X.ZY5.STORE_LISTING : X.ZY5.DM_CHANNEL
 }
 let eh = i.memo(function(e) {
   let {
@@ -333,35 +333,35 @@ let eh = i.memo(function(e) {
       showDMHeader: !0,
       listScrollerRef: E,
       children: [(0, r.jsx)(el, {
-        selected: null != m ? m === Q.Z5c.FRIENDS : l === Q.Z5c.FRIENDS
+        selected: null != m ? m === X.Z5c.FRIENDS : l === X.Z5c.FRIENDS
       }, "friends"), n && t ? (0, r.jsx)(ea, {
-        selected: null == m ? null != l && l.startsWith(Q.Z5c.APPLICATION_LIBRARY) : m.startsWith(Q.Z5c.APPLICATION_LIBRARY),
-        hideGameUpdateProgressIndicator: l === Q.Z5c.APPLICATION_LIBRARY
+        selected: null == m ? null != l && l.startsWith(X.Z5c.APPLICATION_LIBRARY) : m.startsWith(X.Z5c.APPLICATION_LIBRARY),
+        hideGameUpdateProgressIndicator: l === X.Z5c.APPLICATION_LIBRARY
       }, "library") : null, d ? (0, r.jsx)(es, {
-        selected: null == m ? null != l && l.startsWith(Q.Z5c.MESSAGE_REQUESTS) : m === Q.Z5c.MESSAGE_REQUESTS
+        selected: null == m ? null != l && l.startsWith(X.Z5c.MESSAGE_REQUESTS) : m === X.Z5c.MESSAGE_REQUESTS
       }, "message-requests") : null, c ? (0, r.jsx)(L.g, {
-        selected: null == m ? o : m.startsWith(Q.Z5c.APPLICATION_STORE),
-        route: Q.Z5c.APPLICATION_STORE,
+        selected: null == m ? o : m.startsWith(X.Z5c.APPLICATION_STORE),
+        route: X.Z5c.APPLICATION_STORE,
         locationState: {
           analyticsSource: {
             page: ep(l),
-            section: Q.jXE.NAVIGATION,
-            object: Q.qAy.NAVIGATION_LINK
+            section: X.jXE.NAVIGATION,
+            object: X.qAy.NAVIGATION_LINK
           }
         }
       }, "premium") : null, (0, r.jsx)(y.i, {
-        selected: m === Q.Z5c.COLLECTIBLES_SHOP || (null == l ? void 0 : l.startsWith(Q.Z5c.COLLECTIBLES_SHOP)),
+        selected: m === X.Z5c.COLLECTIBLES_SHOP || (null == l ? void 0 : l.startsWith(X.Z5c.COLLECTIBLES_SHOP)),
         listItemRef: _,
         listScrollerRef: E,
         locationState: {
           analyticsSource: {
             page: ep(l),
-            section: Q.jXE.NAVIGATION,
-            object: Q.qAy.NAVIGATION_LINK
+            section: X.jXE.NAVIGATION,
+            object: X.qAy.NAVIGATION_LINK
           }
         }
       }, "discord-shop"), p ? (0, r.jsx)(ec, {
-        selected: null != l && l.startsWith(Q.Z5c.FAMILY_CENTER) || null != m && m.startsWith(Q.Z5c.FAMILY_CENTER)
+        selected: null != l && l.startsWith(X.Z5c.FAMILY_CENTER) || null != m && m.startsWith(X.Z5c.FAMILY_CENTER)
       }, "family-center") : null, s ? (0, r.jsx)(ef, {}, "section-divider-top") : null, h ? (0, r.jsx)(O.Z, {
         bottomDivider: s ? (0, r.jsx)(ef, {}) : null
       }, "dm-quick-launcher") : null]
@@ -378,7 +378,7 @@ function ef() {
 function eg() {
   let e = (0, d.e7)([F.Z], () => F.Z.getHomeLink()),
     t = (0, d.e7)([H.Z], () => {
-      if (e === Q.Z5c.APPLICATION_STORE) return !0;
+      if (e === X.Z5c.APPLICATION_STORE) return !0;
       let t = (0, W.ZK)(e);
       if (null != t) {
         var n, r;
@@ -403,7 +403,7 @@ function eg() {
       return [t, n]
     }, o.X),
     p = (0, L.i)({
-      selected: null == u ? t : u.startsWith(Q.Z5c.APPLICATION_STORE)
+      selected: null == u ? t : u.startsWith(X.Z5c.APPLICATION_STORE)
     }),
     h = (0, T.a)(),
     f = function() {

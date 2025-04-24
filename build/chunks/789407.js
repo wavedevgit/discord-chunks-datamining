@@ -1,19 +1,19 @@
-/** Chunk was on 13368 **/
+/** Chunk was on 90564 **/
 n.d(t, {
-  XB: () => i,
-  ZP: () => l,
-  r9: () => c
+  XB: () => a,
+  ZP: () => o,
+  r9: () => u
 });
 var r = n(726542),
-  a = n(973616);
-let i = "spotify",
-  o = r.Z.get(i);
-class l extends a.ZP {
+  l = n(973616);
+let a = "spotify",
+  i = r.Z.get(a);
+class o extends l.ZP {
   getIconURL(e) {
-    return o.icon.lightPNG
+    return i.icon.lightPNG
   }
   constructor() {
-    super({}), this.id = i, this.name = o.name
+    super({}), this.id = a, this.name = i.name
   }
 }
-let c = new l
+let u = new o

@@ -11,8 +11,8 @@ var r, i = n(200651),
   u = n(601964),
   d = n(896797),
   h = n(129293),
-  p = n(388905),
-  g = n(981631),
+  g = n(388905),
+  p = n(981631),
   f = n(388032),
   m = n(20493);
 
@@ -30,7 +30,7 @@ class x extends(r = l.PureComponent) {
     let e = (0, h.Z)(this.props.location),
       t = (0, s.parse)(this.props.location.search);
     a.tn.post({
-      url: g.ANM.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS,
+      url: p.ANM.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS,
       body: {
         token: e,
         pixel_uuid: t.hash,
@@ -55,8 +55,8 @@ class x extends(r = l.PureComponent) {
     })), (0, c.e)("disable_server_highlight_notifications")
   }
   renderBusy() {
-    return (0, i.jsx)(p.ZP, {
-      children: (0, i.jsx)(p.Hh, {})
+    return (0, i.jsx)(g.ZP, {
+      children: (0, i.jsx)(g.Hh, {})
     })
   }
   renderSuccess() {
@@ -66,24 +66,24 @@ class x extends(r = l.PureComponent) {
     } = this.props, {
       guild: n
     } = this.state;
-    return (0, i.jsxs)(p.ZP, {
-      children: [(0, i.jsx)(p.Dx, {
+    return (0, i.jsxs)(g.ZP, {
+      children: [(0, i.jsx)(g.Dx, {
         className: m.marginBottom8,
         children: f.intl.string(f.t.Z33eiI)
-      }), (0, i.jsx)(p.DK, {
+      }), (0, i.jsx)(g.DK, {
         children: f.intl.format(f.t.NRWtfH, {
           guildName: n.name
         })
-      }), (0, i.jsx)(p.zx, {
+      }), (0, i.jsx)(g.zx, {
         className: m.marginTop40,
         onClick: () => t(e),
         children: f.intl.string(f.t.fIv16O)
-      }), (0, i.jsx)(p.zx, {
+      }), (0, i.jsx)(g.zx, {
         className: m.marginTop8,
-        color: p.zx.Colors.LINK,
-        look: p.zx.Looks.LINK,
+        color: g.zx.Colors.LINK,
+        look: g.zx.Looks.LINK,
         onClick: () => {
-          t(g.Z5c.USER_GUILD_NOTIFICATION_SETTINGS(n.id))
+          t(p.Z5c.USER_GUILD_NOTIFICATION_SETTINGS(n.id))
         },
         children: f.intl.string(f.t["cGmT/P"])
       })]
@@ -94,16 +94,16 @@ class x extends(r = l.PureComponent) {
       defaultRoute: e,
       transitionTo: t
     } = this.props;
-    return (0, i.jsxs)(p.ZP, {
-      children: [(0, i.jsx)(p.Ee, {
+    return (0, i.jsxs)(g.ZP, {
+      children: [(0, i.jsx)(g.Ee, {
         src: n(105020),
         className: m.marginBottom20
-      }), (0, i.jsx)(p.Dx, {
+      }), (0, i.jsx)(g.Dx, {
         className: m.marginBottom8,
         children: f.intl.string(f.t.ox9hIS)
-      }), (0, i.jsx)(p.DK, {
+      }), (0, i.jsx)(g.DK, {
         children: f.intl.string(f.t["/dcuR0"])
-      }), (0, i.jsx)(p.zx, {
+      }), (0, i.jsx)(g.zx, {
         className: m.marginTop40,
         onClick: () => t(e),
         children: f.intl.string(f.t.fIv16O)

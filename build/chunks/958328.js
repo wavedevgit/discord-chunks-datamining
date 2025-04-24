@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => g
+  Z: () => j
 });
 var a = n(200651);
 n(192379);
@@ -20,7 +20,7 @@ var r = n(120356),
   f = n(390094),
   v = n(616257);
 
-function j(e) {
+function g(e) {
   let {
     title: t,
     can: n
@@ -42,12 +42,12 @@ function j(e) {
   })
 }
 
-function g() {
+function j() {
   let e = (0, s.e7)([x.Z], () => x.Z.getChannelId()),
     t = (0, s.e7)([h.Z], () => h.Z.getGuildId()),
     n = (0, s.e7)([d.Z], () => d.Z.getChannel(e)),
     r = (0, s.e7)([u.Z], () => u.Z.getGuild(t)),
-    g = (0, s.e7)([m.Z], () => m.Z.computePermissions(n)),
+    j = (0, s.e7)([m.Z], () => m.Z.computePermissions(n)),
     _ = (0, s.e7)([m.Z], () => m.Z.computePermissions(r)),
     y = (0, c.ZP)(n, !0),
     O = null != n ? (0, b.IG)(n, !1, !0) : null,
@@ -56,8 +56,8 @@ function g() {
       let {
         title: t,
         flag: n
-      } = e, r = i.e$(g, n);
-      return (0, a.jsx)(j, {
+      } = e, r = i.e$(j, n);
+      return (0, a.jsx)(g, {
         title: t,
         can: r
       }, t)
@@ -67,7 +67,7 @@ function g() {
         title: t,
         flag: n
       } = e, r = i.e$(_, n);
-      return (0, a.jsx)(j, {
+      return (0, a.jsx)(g, {
         title: t,
         can: r
       }, t)

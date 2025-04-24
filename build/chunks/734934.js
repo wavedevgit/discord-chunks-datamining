@@ -28,7 +28,7 @@ function p(e, t) {
       value: e
     }), n.focusModeExpiresAtMs = e && null != t ? "".concat(Date.now() + t) : "0"
   }, s.fy.INFREQUENT_USER_ACTION), c.default.track(d.rMx.NOTIFICATION_SETTINGS_UPDATED, {
-    update_type: u.I.ACCOUNT,
+    update_type: u.Ib.ACCOUNT,
     quiet_mode_enabled: e,
     quiet_mode_enabled_old: n
   }), l.Z.getStatus() === d.Skl.DND && e && null == t && i.Z.show({

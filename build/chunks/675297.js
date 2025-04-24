@@ -1,4 +1,4 @@
-/** Chunk was on 2900 **/
+/** Chunk was on 24338 **/
 n.d(t, {
   H: () => x
 }), n(953529);
@@ -26,8 +26,8 @@ function x(e) {
     guildId: n,
     location: x,
     shouldShowFullDescriptionButton: y = !0,
-    hideRoleTag: v = !1,
-    lineClamp: E = 1,
+    hideRoleTag: E = !1,
+    lineClamp: v = 1,
     cardWidth: O,
     cardHeight: j,
     thumbnailHeight: C,
@@ -86,8 +86,8 @@ function x(e) {
     onTapCard: k,
     actionMenu: D,
     showOpaqueBackground: I,
-    hideRoleTag: v,
-    lineClamp: E,
+    hideRoleTag: E,
+    lineClamp: v,
     cardWidth: O,
     cardHeight: j,
     thumbnailHeight: C,

@@ -855,8 +855,8 @@ function eZ() {
     avatarSizeMode: ee.default.getAvatarSizeMode(),
     displayNameMode: ee.default.getDisplayNameMode(),
     displayUserMode: ee.default.getDisplayUserMode()
-  })), c = (0, p.e7)([Q.default], () => Q.default.getCurrentUser()), [d] = r.useState(() => [eD(ed.intl.string(ed.t.C0ZDvr), !0, !1), eD(ed.intl.string(ed.t.iOtj8P), !1, !1, !0), eD(ed.intl.string(ed.t["0oqNgI"]), !1, !0)]), u = (0, p.e7)([M.ZP, q.Z], () => {
-    let e = M.ZP.getWidgetByType(el.Odu.VOICE_V3);
+  })), c = (0, p.e7)([Q.default], () => Q.default.getCurrentUser()), [d] = r.useState(() => [eD(ed.intl.string(ed.t.C0ZDvr), !0, !1), eD(ed.intl.string(ed.t.iOtj8P), !1, !1, !0), eD(ed.intl.string(ed.t["0oqNgI"]), !1, !0)]), u = (0, p.e7)([M.default, q.Z], () => {
+    let e = M.default.getWidgetByType(el.Odu.VOICE_V3);
     if (null == e) return null;
     let t = q.Z.getWidget(e.id);
     return null != t && (0, V.Aw)(t) ? t : null

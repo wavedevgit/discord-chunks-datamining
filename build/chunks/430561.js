@@ -1,14 +1,14 @@
-/** Chunk was on 88712 **/
+/** Chunk was on 72283 **/
 n.d(t, {
-  GY: () => O,
-  PI: () => f,
-  RT: () => m,
+  GY: () => m,
+  PI: () => p,
+  RT: () => h,
   ls: () => g
 });
-var r = n(200651);
+var i = n(200651);
 n(192379);
-var i = n(120356),
-  l = n.n(i),
+var r = n(120356),
+  l = n.n(r),
   o = n(692547),
   a = n(481060),
   s = n(765250),
@@ -18,28 +18,28 @@ var i = n(120356),
 function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      i = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    }))), i.forEach(function(t) {
+      var i;
+      i = n[t], t in e ? Object.defineProperty(e, t, {
+        value: i,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : e[t] = r
+      }) : e[t] = i
     })
   }
   return e
 }
 
-function p(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var i = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, i)
     }
     return n
   })(Object(t)).forEach(function(n) {
@@ -47,13 +47,13 @@ function p(e, t) {
   }), e
 }
 
-function f(e) {
+function p(e) {
   let {
     children: t
   } = e;
-  return (0, r.jsx)("div", {
+  return (0, i.jsx)("div", {
     className: u.titleWrapper,
-    children: (0, r.jsx)(a.Text, {
+    children: (0, i.jsx)(a.Text, {
       variant: "text-xs/semibold",
       color: "header-primary",
       children: t
@@ -65,13 +65,13 @@ function g(e) {
   let {
     onClick: t
   } = e, n = c.intl.string(c.t["3D5yo6"]);
-  return (0, r.jsx)(a.ua7, {
+  return (0, i.jsx)(a.ua7, {
     text: n,
     "aria-label": n,
-    children: e => (0, r.jsx)(a.P3F, p(d({}, e), {
+    children: e => (0, i.jsx)(a.P3F, f(d({}, e), {
       className: u.button,
       onClick: t,
-      children: (0, r.jsx)(a.ewm, {
+      children: (0, i.jsx)(a.ewm, {
         size: "xxs",
         color: o.Z.colors.INTERACTIVE_ACTIVE
       })
@@ -79,22 +79,22 @@ function g(e) {
   })
 }
 
-function O(e) {
+function m(e) {
   let {
     widgetId: t,
     showAllStreams: n
-  } = e, i = n ? c.intl.string(c.t.q2B3rq) : c.intl.string(c.t.JKGi6u), f = () => {
+  } = e, r = n ? c.intl.string(c.t.q2B3rq) : c.intl.string(c.t.JKGi6u), p = () => {
     (0, s.zG)(t, {
       showAllStreams: !n
     })
   };
-  return (0, r.jsx)(a.ua7, {
-    text: i,
-    "aria-label": i,
-    children: e => (0, r.jsx)(a.P3F, p(d({}, e), {
+  return (0, i.jsx)(a.ua7, {
+    text: r,
+    "aria-label": r,
+    children: e => (0, i.jsx)(a.P3F, f(d({}, e), {
       className: l()(u.button, n && u.active),
-      onClick: f,
-      children: (0, r.jsx)(a.pzj, {
+      onClick: p,
+      children: (0, i.jsx)(a.pzj, {
         size: "xxs",
         color: n ? o.Z.colors.BG_BRAND : o.Z.colors.INTERACTIVE_ACTIVE
       })
@@ -102,18 +102,18 @@ function O(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     id: t,
     pinned: n
-  } = e, i = n ? c.intl.string(c.t.cSu80t) : c.intl.string(c.t.cM8Vnp);
-  return (0, r.jsx)(a.ua7, {
-    text: i,
-    "aria-label": i,
-    children: e => (0, r.jsx)(a.P3F, p(d({}, e), {
+  } = e, r = n ? c.intl.string(c.t.cSu80t) : c.intl.string(c.t.cM8Vnp);
+  return (0, i.jsx)(a.ua7, {
+    text: r,
+    "aria-label": r,
+    children: e => (0, i.jsx)(a.P3F, f(d({}, e), {
       className: l()(u.button, n && u.active),
       onClick: () => (0, s.xh)(t),
-      children: (0, r.jsx)(a.k5M, {
+      children: (0, i.jsx)(a.k5M, {
         size: "xxs",
         color: n ? o.Z.colors.BG_BRAND : o.Z.colors.INTERACTIVE_ACTIVE
       })

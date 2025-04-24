@@ -68,7 +68,7 @@ let h = [{
       onCloseRequest: () => (0, l.Mr3)(s.c)
     })
   },
-  j = () => {
+  g = () => {
     let e = (0, i.lb)(),
       {
         previewProfileEffectId: t,
@@ -104,7 +104,7 @@ let h = [{
       })]
     })
   },
-  g = () => {
+  j = () => {
     let {
       previewAvatarDecorationId: e,
       setPreviewAvatarDecorationId: t
@@ -337,7 +337,7 @@ let h = [{
             color: l.TVs.colors.BG_BRAND
           })
         })]
-      }), (0, a.jsx)(j, {}), (0, a.jsx)(g, {}), (0, a.jsx)(_, {
+      }), (0, a.jsx)(g, {}), (0, a.jsx)(j, {}), (0, a.jsx)(_, {
         clearAssets: s,
         clearIgnoredFiles: u
       }), (0, a.jsx)(y, {

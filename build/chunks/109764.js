@@ -1,30 +1,30 @@
-/** Chunk was on 67180 **/
-n.d(t, {
-  Z: () => f
+/** Chunk was on 22356 **/
+e.d(n, {
+  Z: () => h
 });
-var i = n(200651);
-n(192379);
-var r = n(399606),
-  l = n(481060),
-  a = n(228392),
-  o = n(592125),
-  u = n(934415),
-  d = n(572004),
-  c = n(981631),
-  s = n(388032);
+var i = e(200651);
+e(192379);
+var r = e(399606),
+  l = e(481060),
+  a = e(228392),
+  s = e(592125),
+  o = e(934415),
+  d = e(572004),
+  c = e(981631),
+  u = e(388032);
 
-function f(e, t, n) {
-  let f = (0, r.e7)([o.Z], () => null != e ? o.Z.getChannel(e.parent_id) : null);
-  return null == e ? null : (0, i.jsx)(l.sNh, {
+function h(t, n, e) {
+  let h = (0, r.e7)([s.Z], () => null != t ? s.Z.getChannel(t.parent_id) : null);
+  return null == t ? null : (0, i.jsx)(l.sNh, {
     id: "channel-copy-link",
-    label: s.intl.string(s.t.WqhZsr),
+    label: u.intl.string(u.t.WqhZsr),
     action: () => {
-      e.isForumPost() && (0, a.B)({
-        postId: e.id,
+      t.isForumPost() && (0, a.B)({
+        postId: t.id,
         location: {
           section: c.jXE.CONTEXT_MENU
         }
-      }), (0, d.JG)((0, u.EO)(e, f, t, n))
+      }), (0, d.JG)((0, o.EO)(t, h, n, e))
     }
   })
 }

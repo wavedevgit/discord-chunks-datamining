@@ -1,4 +1,4 @@
-/** Chunk was on 3656 **/
+/** Chunk was on 21918 **/
 e.exports = {
   permissionsGroupContainer: "permissionsGroupContainer__3f11f",
   permissionItemContainer: "permissionItemContainer__3f11f",

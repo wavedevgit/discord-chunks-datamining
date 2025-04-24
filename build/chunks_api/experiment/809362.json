@@ -1,1 +1,1 @@
-{"id":"809362","type":"experiment","data":{"kind":"user","id":"2025-04_culture_creation_holdout","label":"Culture Creation Holdout","defaultConfig":{"inHoldout":false},"treatments":[{"id":1,"label":"In Holdout","config":{"inHoldout":false}}]},"fromModule":{"id":"3656"}}
+{"id":"809362","type":"experiment","data":{"kind":"user","id":"2025-04_culture_creation_holdout","label":"Culture Creation Holdout","defaultConfig":{"inHoldout":false},"treatments":[{"id":1,"label":"In Holdout","config":{"inHoldout":false}}]},"fromModule":{"id":"21918"}}

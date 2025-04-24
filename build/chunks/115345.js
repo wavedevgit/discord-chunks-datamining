@@ -256,7 +256,7 @@ function Y(e) {
   }
 }
 async function W(e) {
-  await K(() => z()), await K(() => u.Z.setAccountFlag(C.c.USE_NEW_NOTIFICATIONS, !0));
+  await K(() => z()), await K(() => u.Z.setAccountFlag(C.ce.USE_NEW_NOTIFICATIONS, !0));
   let t = await K(() => f.Z.saveUserGuildSettingsBulk(e));
   l.Z.dispatch({
     type: "USER_GUILD_SETTINGS_FULL_UPDATE",
@@ -304,8 +304,8 @@ async function Q() {
       onConfirm: t,
       cancelText: "Cancel",
       onCancel: () => {}
-    })), await (0, T.xx)(e.id), await u.Z.setAccountFlag(C.c.USE_NEW_NOTIFICATIONS, !1)
-  } else await u.Z.setAccountFlag(C.c.USE_NEW_NOTIFICATIONS, !1)
+    })), await (0, T.xx)(e.id), await u.Z.setAccountFlag(C.ce.USE_NEW_NOTIFICATIONS, !1)
+  } else await u.Z.setAccountFlag(C.ce.USE_NEW_NOTIFICATIONS, !1)
 }
 
 function X(e) {

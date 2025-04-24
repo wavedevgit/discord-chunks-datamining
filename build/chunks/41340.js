@@ -28,14 +28,14 @@ let v = {
     [x.O0b.PAUSED]: "Paused",
     [x.O0b.PAUSE_PENDING]: "Pause Pending"
   },
-  j = {
+  g = {
     [h.Id.UNKNOWN]: "Unknown",
     [h.Id.ADMIN]: "Admin",
     [h.Id.USER]: "User",
     [h.Id.FRACTIONAL_PREMIUM]: "Fractional Premium",
     [h.Id.DEFERRED_START]: "Deferred Start"
   },
-  g = [{
+  j = [{
     label: "Unpaid",
     value: x.O0b.UNPAID
   }, {
@@ -145,7 +145,7 @@ function _(e) {
       }), h.status === x.O0b.PAUSED && (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsxs)(o.Text, {
           variant: "text-md/normal",
-          children: ["Pause Reason: ", h.pauseReason in j ? j[h.pauseReason] : "Unknown pause reason ".concat(h.pauseReason)]
+          children: ["Pause Reason: ", h.pauseReason in g ? g[h.pauseReason] : "Unknown pause reason ".concat(h.pauseReason)]
         }), null != h.pauseEndsAt && (0, a.jsxs)(o.Text, {
           variant: "text-md/normal",
           children: ["Pause Ends At: ", (0, d.vc)(h.pauseEndsAt, "LL")]
@@ -209,7 +209,7 @@ function _(e) {
           children: (0, a.jsx)(o.PhF, {
             serialize: e => S(e),
             isSelected: e => e === h.status,
-            options: g,
+            options: j,
             select: e => w({
               status: e
             }),

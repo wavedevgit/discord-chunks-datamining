@@ -1,4 +1,4 @@
-/** Chunk was on 2900 **/
+/** Chunk was on 24338 **/
 n.d(t, {
   K: () => S
 }), n(388685), n(314940);
@@ -21,7 +21,7 @@ var r = n(200651),
   x = n(388032),
   y = n(709893);
 
-function v(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -40,7 +40,7 @@ function v(e) {
   return e
 }
 
-function E(e) {
+function v(e) {
   let {
     percentage: t,
     label: n,
@@ -49,12 +49,12 @@ function E(e) {
   } = e, s = (0, p.Dt)(), {
     channelId: c,
     messageId: u
-  } = (0, b.pE)(), [g, _] = i.useState(""), [x, E] = i.useState(!1), O = "" !== g && x, j = i.useCallback(() => {
+  } = (0, b.pE)(), [g, _] = i.useState(""), [x, v] = i.useState(!1), O = "" !== g && x, j = i.useCallback(() => {
     _((0, h.e1)(u, c, a))
   }, [u, c, a]), C = i.useCallback(() => {
-    j(), E(!0)
+    j(), v(!0)
   }, [j]), S = i.useCallback(() => {
-    E(!1)
+    v(!1)
   }, []), I = i.useCallback(() => {
     (0, f.n)({
       channelId: c,
@@ -88,7 +88,7 @@ function E(e) {
         "aria-label": !1,
         children: e => {
           var t, n;
-          return (0, r.jsx)(d.zxk, (t = v({}, e), n = n = {
+          return (0, r.jsx)(d.zxk, (t = E({}, e), n = n = {
             onMouseEnter: C,
             onMouseLeave: S,
             onFocus: C,
@@ -208,7 +208,7 @@ function C(e) {
       children: t.pollMedia.text
     }), t.didSelfVote && (0, r.jsx)(o.T, {
       children: x.intl.string(x.t["8DAM+/"])
-    }), l && (0, r.jsx)(E, {
+    }), l && (0, r.jsx)(v, {
       percentage: t.votesPercentage,
       label: t.votes,
       canShowVoterDetails: s,
@@ -245,7 +245,7 @@ function S(e) {
     }
     return i
   }(e, ["isExpired", "answersInteraction", "canShowVoteCounts", "canTapAnswers"]);
-  return (0, r.jsx)(_.$e, v({
+  return (0, r.jsx)(_.$e, E({
     className: y.answersContainer,
     answerClassName: y.answer,
     answersInteraction: n,

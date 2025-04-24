@@ -12,8 +12,8 @@ var r = n(200651),
   u = n(388905),
   d = n(925329),
   h = n(479446),
-  p = n(981632),
-  g = n(594174),
+  g = n(981632),
+  p = n(594174),
   f = n(509545),
   m = n(55563),
   _ = n(296848),
@@ -23,7 +23,7 @@ var r = n(200651),
   v = n(378027),
   j = n(893354),
   I = n(20493);
-let O = o.ZP.connectStores([m.Z, c.Z, f.Z, g.default], e => {
+let O = o.ZP.connectStores([m.Z, c.Z, f.Z, p.default], e => {
   let {
     giftCode: t
   } = e, n = m.Z.get(t.skuId), {
@@ -33,7 +33,7 @@ let O = o.ZP.connectStores([m.Z, c.Z, f.Z, g.default], e => {
     sku: n,
     subscriptionPlan: null != r ? (0, _.oE)(r) : null,
     application: c.Z.getApplication(n.applicationId),
-    gifter: g.default.getUser(t.userId)
+    gifter: p.default.getUser(t.userId)
   }
 })(e => {
   let {
@@ -42,15 +42,15 @@ let O = o.ZP.connectStores([m.Z, c.Z, f.Z, g.default], e => {
     gifter: l,
     sku: o,
     application: c,
-    subscriptionPlan: g
+    subscriptionPlan: p
   } = e, f = null == l ? b.intl.string(b.t.lTGZAg) : b.intl.formatToPlainString(b.t.TjWdPT, {
     username: l.username
   }), m = o.name;
-  return null != g && (m = b.intl.formatToPlainString(g.interval === E.rV.MONTH ? b.t.CTpcCQ : b.t.rgPWGx, {
+  return null != p && (m = b.intl.formatToPlainString(p.interval === E.rV.MONTH ? b.t.CTpcCQ : b.t.rgPWGx, {
     skuName: o.name,
-    intervalCount: g.intervalCount
+    intervalCount: p.intervalCount
   })), (0, r.jsxs)(i.Fragment, {
-    children: [null != n.giftStyle ? (0, r.jsx)(p.Z, {
+    children: [null != n.giftStyle ? (0, r.jsx)(g.Z, {
       defaultAnimationState: h.SR.LOOP,
       giftStyle: n.giftStyle,
       className: v.seasonalIcon

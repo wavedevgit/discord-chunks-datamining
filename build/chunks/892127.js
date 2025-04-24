@@ -92,12 +92,12 @@ let I = r.memo(function(e) {
     zIndex: L,
     size: R,
     anchor: M
-  } = t, z = (0, h.w_)(R, P), V = (0, h.KR)(M, P), {
+  } = t, V = (0, h.w_)(R, P), z = (0, h.KR)(M, P), {
     minSize: U,
     resizeX: W,
     resizeY: G,
-    dragAnywhere: F
-  } = null != Z ? Z : {}, B = D || !N, H = r.useMemo(() => ({
+    dragAnywhere: B
+  } = null != Z ? Z : {}, F = D || !N, H = r.useMemo(() => ({
     minX: 0,
     minY: 0,
     maxX: P.width,
@@ -109,7 +109,7 @@ let I = r.memo(function(e) {
   })), [t, n, C]), Q = r.useCallback(e => null != o || null != I ? (0, i.jsxs)("div", {
     className: _.extrasContainer,
     children: [null == o ? void 0 : o(t), null == I ? void 0 : I(t, e)]
-  }) : null, [t, o, I]), K = (0, a.e7)([O.ZP], () => O.ZP.hasRenderDebugMode(y.G.WidgetAreas)), X = r.useMemo(() => {
+  }) : null, [t, o, I]), K = (0, a.e7)([O.default], () => O.default.hasRenderDebugMode(y.G.WidgetAreas)), X = r.useMemo(() => {
     if (null != j) return e => j(x(E({}, e), {
       widget: t
     }))
@@ -121,21 +121,21 @@ let I = r.memo(function(e) {
       [_.debugPinned]: K && D
     }, S),
     id: A,
-    size: z,
-    anchor: V,
+    size: V,
+    anchor: z,
     container: H,
     minSize: null != U ? U : {
       width: 0,
       height: 0
     },
-    hidden: !B,
+    hidden: !F,
     locked: N,
     resizeX: null != W && W,
     resizeY: null != G && G,
     style: {
       zIndex: L
     },
-    dragAnywhere: null != F && F,
+    dragAnywhere: null != B && B,
     active: !N,
     onUpdate: T,
     onClick: k,

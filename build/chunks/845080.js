@@ -1,4 +1,4 @@
-/** Chunk was on 27146 **/
+/** Chunk was on 92779 **/
 n.d(t, {
   Z: () => u
 });
@@ -19,7 +19,7 @@ function u(e) {
     isGroupStart: s = !0,
     roleIcon: d,
     hideTimestamp: p,
-    preview: E
+    preview: f
   } = e;
   return !(0, l.Z)(t) && (s || o) ? (0, r.jsx)(a, {
     message: t,
@@ -30,6 +30,6 @@ function u(e) {
     animate: u,
     roleIcon: d,
     hideTimestamp: p,
-    preview: E
+    preview: f
   }) : void 0
 }

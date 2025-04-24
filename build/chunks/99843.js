@@ -1,4 +1,4 @@
-/** Chunk was on 3656 **/
+/** Chunk was on 21918 **/
 n.d(t, {
   Z: () => S
 }), n(388685);
@@ -100,7 +100,7 @@ let O = e => {
         return (0, r.jsx)(a.P3F, j(v({}, p), {
           className: s,
           onClick: o,
-          onContextMenu: e => (0, c.jW)(e, () => Promise.all([n.e("79695"), n.e("20875"), n.e("70205"), n.e("53912"), n.e("518")]).then(n.bind(n, 354741)).then(e => {
+          onContextMenu: e => (0, c.jW)(e, () => Promise.all([n.e("79695"), n.e("53912"), n.e("84373")]).then(n.bind(n, 354741)).then(e => {
             let {
               default: n
             } = e;

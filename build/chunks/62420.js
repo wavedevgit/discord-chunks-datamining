@@ -1,6 +1,6 @@
 /** Chunk was on 53912 **/
 n.d(t, {
-  Z: () => s
+  Z: () => u
 }), n(539854), n(388685);
 var r = n(200651);
 n(192379);
@@ -10,20 +10,20 @@ var i = n(481060),
   o = n(362658),
   c = n(388032);
 
-function s(e) {
+function u(e) {
   let t = (0, a.Mt)(),
     n = (0, a.s4)(e.id),
-    s = (0, a.zv)(),
+    u = (0, a.zv)(),
     {
-      isFavoritesPerk: u
+      isFavoritesPerk: s
     } = (0, o.z)("useChannelMoveToCategory");
-  if (__OVERLAY__ || !t || null == n || !u) return null;
+  if (__OVERLAY__ || !t || null == n || !s) return null;
   let [d, f] = function(e) {
     let t = [],
       n = null;
     for (let r of e) null == r.id ? n = r : t.push(r);
     return [n, t]
-  }(s.filter(e => e.id !== (null == n ? void 0 : n.parentId)));
+  }(u.filter(e => e.id !== (null == n ? void 0 : n.parentId)));
 
   function O(e) {
     null != n && (0, l.uA)(n.id, e)

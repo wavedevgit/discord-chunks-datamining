@@ -12,8 +12,8 @@ var r = n(200651),
   u = n(388905),
   d = n(585483),
   h = n(573261),
-  p = n(720196),
-  g = n(981631),
+  g = n(720196),
+  p = n(981631),
   f = n(388032),
   m = n(578605),
   _ = n(20493);
@@ -59,11 +59,11 @@ function x(e) {
         onClick: () => {
           if (!b) {
             if (0 === N.length) {
-              I(f.intl.string(f.t.R98xDw)), d.S.dispatch(g.CkL.WAVE_EMPHASIZE);
+              I(f.intl.string(f.t.R98xDw)), d.S.dispatch(p.CkL.WAVE_EMPHASIZE);
               return
             }
             return null != O && S(null), null != j && I(null), t(""), v(!0), h.Z.post({
-              url: g.ANM.ACCOUNT_REVERT,
+              url: p.ANM.ACCOUNT_REVERT,
               body: {
                 token: E,
                 password: N
@@ -78,29 +78,29 @@ function x(e) {
                   email: n
                 }
               } = e;
-              y(""), t(n), l(p.n.SUCCESS)
+              y(""), t(n), l(g.n.SUCCESS)
             }).catch(e => {
               if (e instanceof Error) S(f.intl.formatToPlainString(f.t.aTVNen, {
-                statusPageURL: g.yXt.STATUS
+                statusPageURL: p.yXt.STATUS
               }));
               else {
                 let t = new c.Z(e);
                 t.hasFieldErrors() ? I(t.getAnyErrorMessage()) : S((function(e) {
                   switch (e) {
-                    case g.evJ.ACCOUNT_REVERT_INVALID_TOKEN:
+                    case p.evJ.ACCOUNT_REVERT_INVALID_TOKEN:
                       return f.intl.string(f.t["11zzGR"]);
-                    case g.evJ.ACCOUNT_REVERT_EMAIL_ALREADY_TAKEN:
+                    case p.evJ.ACCOUNT_REVERT_EMAIL_ALREADY_TAKEN:
                       return f.intl.string(f.t["6qmgaG"]);
-                    case g.evJ.ACCOUNT_REVERT_ACCOUNT_NOT_FOUND:
+                    case p.evJ.ACCOUNT_REVERT_ACCOUNT_NOT_FOUND:
                       return f.intl.string(f.t.bChnKi);
                     default:
                       return f.intl.format(f.t.aTVNen, {
-                        statusPageURL: g.yXt.STATUS
+                        statusPageURL: p.yXt.STATUS
                       })
                   }
                 })(t.code).toString())
               }
-              d.S.dispatch(g.CkL.WAVE_EMPHASIZE)
+              d.S.dispatch(p.CkL.WAVE_EMPHASIZE)
             }).finally(() => {
               v(!1)
             })
@@ -115,7 +115,7 @@ function x(e) {
       children: (0, r.jsx)(u.zx, {
         color: u.zx.Colors.PRIMARY,
         onClick: () => {
-          y(""), l(p.n.START)
+          y(""), l(g.n.START)
         },
         children: f.intl.string(f.t.rzxnQ0)
       })
