@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => E
+  Z: () => g
 }), n(388685);
 var r = n(433517),
   i = n(147913),
@@ -9,10 +9,9 @@ var r = n(433517),
   o = n(918505),
   s = n(548161),
   l = n(347649),
-  c = n(776319),
-  u = n(801461);
+  c = n(801461);
 
-function d(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -20,15 +19,15 @@ function d(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let f = 6048e5,
-  _ = "lastSawPomelo",
-  p = "lastSawPomeloMigration";
+let d = 6048e5,
+  f = "lastSawPomelo",
+  _ = "lastSawPomeloMigration";
 
-function h() {
-  r.K.set(_, Date.now())
+function p() {
+  r.K.set(f, Date.now())
 }
 
-function m() {
+function h() {
   if (!o.w8.getCurrentConfig({
       location: "b9eb97_1"
     }, {
@@ -36,24 +35,17 @@ function m() {
     }).enabled) return !1;
   let e = a.default.getCurrentUser();
   if (null == e || e.isPomelo() || !e.hasVerifiedEmailOrPhone()) return !1;
-  let t = (0, l.ov)() ? p : _,
+  let t = (0, l.ov)() ? _ : f,
     n = r.K.get(t);
-  return !(null != n && Date.now() - n < f)
+  return !(null != n && Date.now() - n < d)
 }
-class g extends i.Z {
+class m extends i.Z {
   constructor(...e) {
-    super(...e), d(this, "actions", {
+    super(...e), u(this, "actions", {
       POST_CONNECTION_OPEN: () => this.onPostConnectionOpen()
-    }), d(this, "onPostConnectionOpen", () => {
-      if (m()) {
-        let e = c.Z.getCurrentConfig({
-          location: "uu_one_click"
-        }, {
-          autoTrackExposure: !1
-        }).enabled;
-        (0, s.a)(u.Kq.APP_START, e, !1) && h()
-      }
+    }), u(this, "onPostConnectionOpen", () => {
+      h() && (0, s.a)(c.Kq.APP_START, !0, !1) && p()
     })
   }
 }
-let E = new g
+let g = new m

@@ -1,6 +1,6 @@
 /**
   Module ID: 39596
-  Original File Name: c96fdc44fb9d417a
+  Original File Name: 3d10fcce79e18005
 **/
 .container__4216d {
     align-items: center;
@@ -1065,8 +1065,8 @@
 }
 
 .markdownContainer__48344.markdownContainer__48344.markdownContainer__48344.markdownContainer__48344.containerSizedText__48344 {
-    font-size: 14px;
-    line-height: 19.25px
+    font-size: .875rem;
+    line-height: calc(var(--chat-markup-line-height)*.875)
 }
 
 .markdownContainer__48344.markdownContainer__48344.markdownContainer__48344.markdownContainer__48344>p:first-child {
@@ -1272,4 +1272,4 @@
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=c96fdc44fb9d417a.css.map*/
+/*# sourceMappingURL=3d10fcce79e18005.css.map*/
