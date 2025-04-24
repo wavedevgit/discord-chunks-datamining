@@ -2,8 +2,9 @@
 "use strict";
 n.d(t, {
   De: () => o,
-  Fv: () => d,
+  Fv: () => f,
   Mg: () => r.M,
+  TZ: () => d,
   Zg: () => l,
   _I: () => c,
   aF: () => s
@@ -38,4 +39,13 @@ function u(e) {
     r += null != (n = t[e]) ? n : e
   }), r.normalize("NFD").toLocaleLowerCase()
 }
-let d = null == String.prototype.normalize ? e => e : u
+
+function d(e) {
+  var t;
+  if (void 0 === (null == (t = Intl) ? void 0 : t.Segmenter)) return e.length;
+  let n = new Intl.Segmenter().segment(e),
+    r = 0;
+  for (let e of n) r += 1;
+  return r
+}
+let f = null == String.prototype.normalize ? e => e : u
