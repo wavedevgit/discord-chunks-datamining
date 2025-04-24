@@ -40,7 +40,7 @@ function h(e) {
   } = (0, c.f)({
     location: "PresenceActivityStatus"
   }), {
-    enabled: E
+    enableTopNavButton: E
   } = (0, s.C)({
     location: "PresenceActivityStatus"
   });

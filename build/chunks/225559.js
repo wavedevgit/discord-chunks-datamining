@@ -1,17 +1,17 @@
 /** Chunk was on 32220 **/
 n.d(t, {
-  L: () => l,
-  v: () => r
+  L: () => r,
+  v: () => l
 });
 var i = n(570140);
 
-function l() {
+function r() {
   i.Z.dispatch({
     type: "NOW_PLAYING_MOUNTED"
   })
 }
 
-function r() {
+function l() {
   i.Z.dispatch({
     type: "NOW_PLAYING_UNMOUNTED"
   })

@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => E
+  Z: () => N
 }), n(388685), n(410992), n(227481), n(730884), n(20464), n(341884), n(364341), n(629680), n(505025), n(918970), n(121784), n(644351), n(146733);
 var a = n(200651),
   r = n(913527),
@@ -42,7 +42,7 @@ function C(e) {
       return "ADOPT_CLAN_IDENTITY_NOTICE"
   }
 }
-async function N(e, t, n) {
+async function E(e, t, n) {
   await Promise.all(t.map(e => s.tn.patch({
     url: g.ANM.APPLIED_BOOST_MODIFY_END_DATE(e.id),
     body: n ? {} : {
@@ -52,7 +52,7 @@ async function N(e, t, n) {
   }))), (0, d.C0)(e), (0, x.Fm)(e, !0)
 }
 
-function E() {
+function N() {
   var e;
   let t = (0, i.e7)([v.Z], () => v.Z.getGuildId()),
     n = (0, i.e7)([f.Z], () => {
@@ -96,12 +96,12 @@ function E() {
       }), (0, a.jsxs)("div", {
         children: [(0, a.jsx)(c.zxk, {
           onClick: () => {
-            N(t, s.slice(Math.floor(s.length / 2)), !1)
+            E(t, s.slice(Math.floor(s.length / 2)), !1)
           },
           children: "Set Half Boosts expiring in 1 day"
         }), (0, a.jsx)(c.zxk, {
           onClick: () => {
-            N(t, s, !0)
+            E(t, s, !0)
           },
           children: "Reset End Date"
         })]

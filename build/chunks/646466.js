@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  O: () => N
+  O: () => E
 }), n(388685);
 var a = n(200651),
   r = n(192379),
@@ -346,7 +346,7 @@ let h = [{
       })]
     })
   },
-  N = () => {
+  E = () => {
     let [e, t] = r.useState("preview");
     return (0, a.jsxs)("div", {
       className: m.container,

@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: fd5e25895e07eac6
+  Original File Name: 83ebebbb8d2406b3
 **/
 .container__74da2 {
     align-items: center;
@@ -134,7 +134,7 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: 16px
+    padding: 16px 16px 0
 }
 
 .visual-refresh .chevronIcon_e73f2a {
@@ -162,10 +162,6 @@
 .searchContainer_e73f2a {
     border-bottom: 1px solid var(--background-modifier-accent);
     padding: 16px
-}
-
-.header_e73f2a+.searchContainer_e73f2a {
-    padding: 0 16px 16px
 }
 
 .list_e73f2a {
@@ -8703,4 +8699,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=fd5e25895e07eac6.css.map*/
+/*# sourceMappingURL=83ebebbb8d2406b3.css.map*/

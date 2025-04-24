@@ -65,7 +65,7 @@ function b(e) {
     hideText: g = !1,
     hideTooltip: b = !1
   } = e, y = (0, s.vjg)(s.Skl.ONLINE), v = (0, c.ZP)(t), O = t.isDM() || t.isGroupDM(), {
-    enabled: I
+    enableTopNavButton: I
   } = (0, u.C)({
     location: "VoiceActivityStatus"
   }), S = () => b || O ? (0, r.jsx)(d.Z, {

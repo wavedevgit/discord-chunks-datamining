@@ -24,10 +24,10 @@ var a = n(200651),
   y = n(572004),
   O = n(70956),
   C = n(145597),
-  N = n(246992),
-  E = n(981631),
-  T = n(757744),
-  S = n(388032),
+  E = n(246992),
+  N = n(981631),
+  S = n(757744),
+  T = n(388032),
   P = n(931207),
   w = n(616257);
 
@@ -63,8 +63,8 @@ function I(e, t) {
   }), e
 }
 let R = {
-    [E.Odu.CLICK_ZONE_DEBUG]: e => I(k({
-      type: E.Odu.CLICK_ZONE_DEBUG,
+    [N.Odu.CLICK_ZONE_DEBUG]: e => I(k({
+      type: N.Odu.CLICK_ZONE_DEBUG,
       id: (0, s.Z)(),
       layoutId: e,
       anchor: {
@@ -75,11 +75,11 @@ let R = {
         width: 100,
         height: 100
       }
-    }, g.Z.getWidgetDefaultSettings(E.Odu.CLICK_ZONE_DEBUG)), {
+    }, g.Z.getWidgetDefaultSettings(N.Odu.CLICK_ZONE_DEBUG)), {
       pinned: !0
     }),
-    [E.Odu.PERFORMANCE_DEBUG]: e => I(k({
-      type: E.Odu.PERFORMANCE_DEBUG,
+    [N.Odu.PERFORMANCE_DEBUG]: e => I(k({
+      type: N.Odu.PERFORMANCE_DEBUG,
       id: (0, s.Z)(),
       layoutId: e,
       anchor: {
@@ -91,7 +91,7 @@ let R = {
         width: "auto",
         height: "auto"
       }
-    }, g.Z.getWidgetDefaultSettings(E.Odu.PERFORMANCE_DEBUG)), {
+    }, g.Z.getWidgetDefaultSettings(N.Odu.PERFORMANCE_DEBUG)), {
       pinned: !0
     })
   },
@@ -116,7 +116,7 @@ function L(e) {
       (0, y.JG)(t, () => l(!0))
     },
     className: P.copyId,
-    children: ["Application Id: ", t, " ", n ? S.intl.string(S.t["t5VZ8/"]) : null]
+    children: ["Application Id: ", t, " ", n ? T.intl.string(T.t["t5VZ8/"]) : null]
   })
 }
 
@@ -260,13 +260,13 @@ function D(e) {
 }
 
 function M(e) {
-  let t = Z(Object.values((0, o.Wu)([g.Z], () => g.Z.getWidgetsForLayout(T.$))), e);
+  let t = Z(Object.values((0, o.Wu)([g.Z], () => g.Z.getWidgetsForLayout(S.$))), e);
   return [t, () => {
     if (null != t)(0, d.E9)(t.id);
     else {
       let t = R[e];
       if (null == t) return;
-      let n = t(T.$);
+      let n = t(S.$);
       (0, d.A4)(n)
     }
   }]
@@ -274,7 +274,7 @@ function M(e) {
 
 function z() {
   var e, t;
-  let [n, l] = M(E.Odu.CLICK_ZONE_DEBUG), [s, d] = M(E.Odu.PERFORMANCE_DEBUG), g = (0, o.e7)([f.default], () => f.default.hasRenderDebugMode(h.G.ClickZones)), j = (0, o.e7)([f.default], () => f.default.hasRenderDebugMode(h.G.WidgetAreas)), y = (0, o.e7)([f.default], () => f.default.hasRenderDebugMode(h.G.DisabledGPUBoost)), T = (0, o.e7)([f.default], () => f.default.hasRenderDebugMode(h.G.ForceGPUBoost)), S = (0, o.e7)([p.default], () => p.default.getForcedRenderMode()), [R, Z] = r.useState({}), [L, z] = r.useState(S), U = e => {
+  let [n, l] = M(N.Odu.CLICK_ZONE_DEBUG), [s, d] = M(N.Odu.PERFORMANCE_DEBUG), g = (0, o.e7)([f.default], () => f.default.hasRenderDebugMode(h.G.ClickZones)), j = (0, o.e7)([f.default], () => f.default.hasRenderDebugMode(h.G.WidgetAreas)), y = (0, o.e7)([f.default], () => f.default.hasRenderDebugMode(h.G.DisabledGPUBoost)), S = (0, o.e7)([f.default], () => f.default.hasRenderDebugMode(h.G.ForceGPUBoost)), T = (0, o.e7)([p.default], () => p.default.getForcedRenderMode()), [R, Z] = r.useState({}), [L, z] = r.useState(T), U = e => {
     z(e), u.Z.forceRenderMode(e)
   }, B = [{
     label: m.R5.UNSET,
@@ -289,7 +289,7 @@ function z() {
     label: m.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION,
     value: m.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION
   }].map(e => I(k({}, e), {
-    label: "".concat(e.label, " ").concat(S === e.value ? "(current)" : "")
+    label: "".concat(e.label, " ").concat(T === e.value ? "(current)" : "")
   })), G = (0, o.cj)([p.default], () => p.default.getTrackedGames()), F = (0, o.e7)([_.default], () => _.default.getFocusedPID()), V = (0, o.e7)([_.default], () => _.default.isFocusedPidOutOfProcess()), H = (0, C.getPID)(), W = (0, o.e7)([p.default], () => p.default.isOverlayOOPEnabledForPid(H), [H]), [X, K] = (0, o.Wu)([v.Z], () => [v.Z.enabled, v.Z.keepOpen]), Y = (0, o.e7)([x.ZP], () => x.ZP.getRunningGames());
   r.useEffect(() => {
     Z(e => {
@@ -404,7 +404,7 @@ function z() {
           text: "Forces GPU Boost, which can help with performance when games compete for GPU resources.",
           children: e => (0, a.jsx)("div", I(k({}, e), {
             children: (0, a.jsx)(c.XZJ, {
-              value: T,
+              value: S,
               onChange: () => ea(),
               size: 18,
               disabled: y,
@@ -465,7 +465,7 @@ function z() {
             isSelected: e => e === L,
             options: B,
             select: U,
-            popoutLayerContext: N.O$
+            popoutLayerContext: E.O$
           })
         }))
       }), ei.length > 0 && (0, a.jsx)(c.ua7, {

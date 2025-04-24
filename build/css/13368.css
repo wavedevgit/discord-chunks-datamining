@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: bcfff5efa6d45bcc
+  Original File Name: 54f8d01c910e3abc
 **/
 .debugMode_fa952e {
     background-color: rgba(255,0,0,.25);
@@ -762,7 +762,7 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: 16px
+    padding: 16px 16px 0
 }
 
 .visual-refresh .chevronIcon_e73f2a {
@@ -790,10 +790,6 @@
 .searchContainer_e73f2a {
     border-bottom: 1px solid var(--background-modifier-accent);
     padding: 16px
-}
-
-.header_e73f2a+.searchContainer_e73f2a {
-    padding: 0 16px 16px
 }
 
 .list_e73f2a {
@@ -4290,4 +4286,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     width: 96px
 }
 
-/*# sourceMappingURL=bcfff5efa6d45bcc.css.map*/
+/*# sourceMappingURL=54f8d01c910e3abc.css.map*/

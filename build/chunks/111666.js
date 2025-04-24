@@ -194,7 +194,7 @@ function T(e) {
   let {
     className: t
   } = e, {
-    enabled: n
+    enableTopNavButton: n
   } = (0, _.C)({
     location: "friends-button"
   });

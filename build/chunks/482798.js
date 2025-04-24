@@ -9,13 +9,22 @@ let r = (0, n(818083).B)({
   id: "2025-03_friends_popout",
   label: "Friends Popout",
   defaultConfig: {
-    enabled: !1
+    enableTopNavButton: !1,
+    enableOverlayWidget: !1
   },
   treatments: [{
     id: 1,
-    label: "Enabled",
+    label: "All Enabled",
     config: {
-      enabled: !0
+      enableTopNavButton: !0,
+      enableOverlayWidget: !0
+    }
+  }, {
+    id: 2,
+    label: "Top Nav Only",
+    config: {
+      enableTopNavButton: !0,
+      enableOverlayWidget: !1
     }
   }]
 });
@@ -37,5 +46,5 @@ function a(e) {
     location: e
   }, {
     autoTrackExposure: t
-  }).enabled
+  })
 }
