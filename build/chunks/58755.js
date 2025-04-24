@@ -6,8 +6,8 @@ var a = n(200651),
   r = n(192379),
   l = n(394900),
   i = n(661105),
-  o = n(609067),
-  s = n(94367),
+  s = n(609067),
+  o = n(94367),
   c = n(203165),
   d = n(481060),
   u = n(789654),
@@ -64,7 +64,7 @@ function j(e) {
     setState: n
   } = e, {
     scales: l
-  } = t, [i, o] = r.useState(null), s = (0, a.jsxs)("div", {
+  } = t, [i, s] = r.useState(null), o = (0, a.jsxs)("div", {
     className: h.section,
     children: [(0, a.jsx)(d.VcW, {
       options: v,
@@ -92,7 +92,7 @@ function j(e) {
       className: h.overrides,
       children: l.map(e => (0, a.jsx)("li", {
         children: (0, a.jsx)(d.P3F, {
-          onClick: () => o(e.name),
+          onClick: () => s(e.name),
           style: {
             cursor: "pointer"
           },
@@ -106,10 +106,10 @@ function j(e) {
       }, e.name))
     })]
   }), u = l.find(e => e.name === i), f = null != u ? (0, a.jsx)(g, {
-    onClose: () => o(null),
+    onClose: () => s(null),
     scale: u,
     setState: n
-  }) : s;
+  }) : o;
   return (0, a.jsx)("div", {
     children: f
   })
@@ -275,7 +275,7 @@ function g(e) {
           className: h.paletteOverrides,
           "data-columnar": j,
           children: Object.entries(N).map((e, n) => {
-            let [r, c] = e, u = (0, x.HI)(c), m = (0, o.Z)((0, s.Z)("black"), c) > 4.5 ? "black" : "white", h = E[r];
+            let [r, c] = e, u = (0, x.HI)(c), m = (0, s.Z)((0, o.Z)("black"), c) > 4.5 ? "black" : "white", h = E[r];
             return (0, a.jsxs)("div", {
               style: {
                 backgroundColor: u
@@ -310,7 +310,7 @@ function _(e) {
   let {
     scale: t,
     onRemove: n
-  } = e, o = r.useMemo(() => Object.values((0, x.XM)(t)).map(e => (0, l.Z)((0, i.Z)(e, x.HW.sRGB), {
+  } = e, s = r.useMemo(() => Object.values((0, x.XM)(t)).map(e => (0, l.Z)((0, i.Z)(e, x.HW.sRGB), {
     format: "hex"
   })), [t]);
   return (0, a.jsxs)("li", {
@@ -336,7 +336,7 @@ function _(e) {
       })]
     }), (0, a.jsx)("div", {
       className: h.palettePreview,
-      children: o.map(e => (0, a.jsx)("span", {
+      children: s.map(e => (0, a.jsx)("span", {
         style: {
           width: 16,
           height: 16,

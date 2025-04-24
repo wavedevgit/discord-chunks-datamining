@@ -3,15 +3,15 @@ n.d(t, {
   Z: () => u
 });
 var a, r, l, i = n(442837),
-  o = n(570140),
-  s = n(780106);
+  s = n(570140),
+  o = n(780106);
 let c = "None";
 class d extends(l = i.ZP.Store) {
   getFakeGameToShow() {
     return c
   }
   getFakeGameData() {
-    return s.O[c]
+    return o.O[c]
   }
 }
 r = "ContentInventoryDevToolsStore", (a = "displayName") in d ? Object.defineProperty(d, a, {
@@ -20,7 +20,7 @@ r = "ContentInventoryDevToolsStore", (a = "displayName") in d ? Object.definePro
   configurable: !0,
   writable: !0
 }) : d[a] = r;
-let u = new d(o.Z, {
+let u = new d(s.Z, {
   CONTENT_INVENTORY_FORCE_SHOW_GAME_SHARING: function(e) {
     let {
       gameToShow: t

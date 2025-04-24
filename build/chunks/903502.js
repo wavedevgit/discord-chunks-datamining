@@ -6,8 +6,8 @@ var a = n(200651),
   r = n(192379),
   l = n(442837),
   i = n(481060),
-  o = n(570140),
-  s = n(178635),
+  s = n(570140),
+  o = n(178635),
   c = n(115470),
   d = n(511010),
   u = n(246992),
@@ -29,8 +29,8 @@ let x = [{
 function h() {
   let [e, t] = r.useState(null), [n, h] = r.useState(0), [p, b] = r.useState(1e3), [f, v] = r.useState(0), j = (0, l.e7)([c.Z], () => {
     var t;
-    return null === e ? null : null != (t = c.Z.getFeedbackConfig(e)) ? t : s.R[e]
-  }), g = Object.keys(s.R).map(e => ({
+    return null === e ? null : null != (t = c.Z.getFeedbackConfig(e)) ? t : o.R[e]
+  }), g = Object.keys(o.R).map(e => ({
     label: e,
     value: e
   })), _ = r.useMemo(() => null != e && f >= 0 && f <= 100 && n >= 0, [e, f, n]);
@@ -133,7 +133,7 @@ function h() {
     }), (0, a.jsxs)("div", {
       className: m.formRow,
       children: [(0, a.jsx)(i.zxk, {
-        onClick: () => void o.Z.dispatch({
+        onClick: () => void s.Z.dispatch({
           type: "FEEDBACK_OVERRIDE_SET",
           feedbackType: e,
           cooldown: n * p,
@@ -142,7 +142,7 @@ function h() {
         disabled: !_,
         children: "Update"
       }), (0, a.jsx)(i.zxk, {
-        onClick: () => void o.Z.dispatch({
+        onClick: () => void s.Z.dispatch({
           type: "FEEDBACK_OVERRIDE_CLEAR",
           feedbackType: e
         }),

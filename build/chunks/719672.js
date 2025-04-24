@@ -7,8 +7,8 @@ n(192379);
 var r = n(913527),
   l = n.n(r),
   i = n(442837),
-  o = n(704215),
-  s = n(481060),
+  s = n(704215),
+  o = n(481060),
   c = n(713284),
   d = n(883904),
   u = n(211644),
@@ -34,7 +34,7 @@ let p = e => {
         event: t,
         dismissibleContent: n
       } = e;
-      return "".concat(t, " ").concat(o.z[n])
+      return "".concat(t, " ").concat(s.z[n])
     }
   }],
   f = [{
@@ -43,7 +43,7 @@ let p = e => {
       let {
         dismissibleContent: t
       } = e;
-      return "".concat(o.z[t])
+      return "".concat(s.z[t])
     }
   }];
 
@@ -72,15 +72,15 @@ function v() {
     className: h.panelContainer,
     children: [(0, a.jsxs)("div", {
       className: h.buttonContainer,
-      children: [(0, a.jsx)(s.zxk, {
+      children: [(0, a.jsx)(o.zxk, {
         className: h.button,
         onClick: () => (0, d.EG)(),
         children: "Reset Daily Cap"
-      }), (0, a.jsx)(s.zxk, {
+      }), (0, a.jsx)(o.zxk, {
         className: h.button,
         onClick: m.sr,
         children: "Clear All Dismissed Contents"
-      }), (0, a.jsx)(s.zxk, {
+      }), (0, a.jsx)(o.zxk, {
         className: h.button,
         onClick: m.bE,
         children: "Check All Dismissed Contents"
@@ -90,7 +90,7 @@ function v() {
       children: ["Last winner time: ", r]
     }), (0, a.jsx)("br", {}), (0, a.jsxs)("div", {
       className: h.info,
-      children: ["Last winner: ", null != v ? o.z[v] : "None"]
+      children: ["Last winner: ", null != v ? s.z[v] : "None"]
     }), (0, a.jsx)("br", {}), (0, a.jsx)("div", {
       className: h.candidatesTableContainer,
       children: (0, a.jsx)(x.Z, {

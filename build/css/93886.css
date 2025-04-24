@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 989e97893fe19293
+  Original File Name: 9bbd09dc7024be88
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -2617,10 +2617,6 @@
     padding: 4px 0
 }
 
-.divider__77347 {
-    margin: 8px 0
-}
-
 .validationSummary__77347 {
     align-items: flex-start;
     display: flex;
@@ -2637,13 +2633,26 @@
     margin: 8px 0
 }
 
+.container_ac8a82 {
+    align-items: center;
+    display: flex;
+    gap: 12px
+}
+
+.numberInputStepper_ac8a82 {
+    z-index: 1
+}
+
 .container__0ccef {
     box-sizing: border-box;
     display: flex;
-    flex-direction: column;
     gap: 8px;
-    padding: 12px;
     width: 100%
+}
+
+.selector__0ccef {
+    width: 250px;
+    z-index: 1
 }
 
 .previewPanel__6dc2e {
@@ -2651,8 +2660,12 @@
     flex-direction: column;
     height: 100%;
     overflow-y: auto;
-    padding: 0 12px;
+    padding: 12px;
     position: relative
+}
+
+.divider__6dc2e {
+    margin: 12px 0
 }
 
 .panel__777bf {
@@ -2770,4 +2783,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=989e97893fe19293.css.map*/
+/*# sourceMappingURL=9bbd09dc7024be88.css.map*/

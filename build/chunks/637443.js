@@ -3,15 +3,15 @@ n.d(t, {
   ShopAssetsPreviewInstructionModal: () => d,
   ShopPFXPreviewInstructionModal: () => u,
   c: () => c,
-  g: () => s
+  g: () => o
 });
 var a = n(200651);
 n(192379);
 var r = n(466377),
   l = n(481060),
   i = n(281598),
-  o = n(152906);
-let s = "shop-assets-preview-instructions-modal",
+  s = n(152906);
+let o = "shop-assets-preview-instructions-modal",
   c = "shop-pfx-preview-instructions-modal",
   d = e => {
     let {
@@ -20,15 +20,15 @@ let s = "shop-assets-preview-instructions-modal",
     return (0, a.jsxs)(r.Y0, {
       size: r.Cg.DYNAMIC,
       transitionState: t,
-      className: o.modalRoot,
+      className: s.modalRoot,
       children: [(0, a.jsx)(r.xB, {
-        className: o.modalHeader,
+        className: s.modalHeader,
         children: (0, a.jsx)(l.X6q, {
           variant: "heading-xl/bold",
           children: "Upload Instructions"
         })
       }), (0, a.jsxs)(r.hz, {
-        className: o.modalContent,
+        className: s.modalContent,
         children: [(0, a.jsx)(l.Text, {
           variant: "text-md/bold",
           children: "Upload Shop assets for preview in the app!"
@@ -44,7 +44,7 @@ let s = "shop-assets-preview-instructions-modal",
           variant: "heading-md/bold",
           children: "Valid Upload Types"
         }), (0, a.jsxs)("ul", {
-          className: o.instructionsList,
+          className: s.instructionsList,
           children: [(0, a.jsx)("li", {
             children: "One or more image or video files (jpg, png, webm)"
           }), (0, a.jsx)("li", {
@@ -54,7 +54,7 @@ let s = "shop-assets-preview-instructions-modal",
           variant: "heading-md/bold",
           children: "Valid File Names"
         }), (0, a.jsx)("ul", {
-          className: o.instructionsList,
+          className: s.instructionsList,
           children: Object.keys(i.Kj).map(e => (0, a.jsx)("li", {
             children: e
           }, e))
@@ -69,15 +69,15 @@ let s = "shop-assets-preview-instructions-modal",
     return (0, a.jsxs)(r.Y0, {
       size: r.Cg.DYNAMIC,
       transitionState: t,
-      className: o.modalRoot,
+      className: s.modalRoot,
       children: [(0, a.jsx)(r.xB, {
-        className: o.modalHeader,
+        className: s.modalHeader,
         children: (0, a.jsx)(l.X6q, {
           variant: "heading-xl/bold",
           children: "PFX Preview Instructions"
         })
       }), (0, a.jsxs)(r.hz, {
-        className: o.modalContent,
+        className: s.modalContent,
         children: [(0, a.jsx)(l.Text, {
           variant: "text-md/normal",
           children: "1. Draft your PFX in the PFX Editor (in User Settings)"

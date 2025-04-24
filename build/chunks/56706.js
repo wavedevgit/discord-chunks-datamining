@@ -6,8 +6,8 @@ var a = n(200651),
   r = n(192379),
   l = n(481060),
   i = n(570140),
-  o = n(358820),
-  s = n(616257),
+  s = n(358820),
+  o = n(616257),
   c = n(493733);
 
 function d() {
@@ -18,7 +18,7 @@ function d() {
     })
   };
   return (0, a.jsx)(l.zJl, {
-    className: s.panel,
+    className: o.panel,
     children: (0, a.jsxs)("div", {
       className: c.panelInner,
       children: [(0, a.jsx)(l.Text, {
@@ -48,7 +48,7 @@ function d() {
         }), (0, a.jsx)(l.zxk, {
           size: l.zxk.Sizes.SMALL,
           onClick: () => {
-            (0, o.wV)()
+            (0, s.wV)()
           },
           children: "Reset"
         })]

@@ -6,9 +6,9 @@ var a = n(200651),
   r = n(192379),
   l = n(120356),
   i = n.n(l),
-  o = n(392711),
-  s = n(913527),
-  c = n.n(s),
+  s = n(392711),
+  o = n(913527),
+  c = n.n(o),
   d = n(481060),
   u = n(570140),
   m = n(665149),
@@ -145,8 +145,8 @@ function w(e) {
       })
     }
   }] : P, [t]), {
-    TabBar: o,
-    renderSelectedTab: s
+    TabBar: s,
+    renderSelectedTab: o
   } = (0, y.ZP)({
     tabs: l
   }, [l]);
@@ -154,7 +154,7 @@ function w(e) {
     className: O.subPanel,
     minHeight: 100,
     initialHeight: n,
-    children: [(0, a.jsx)(o, {}), (0, a.jsxs)(m.ZP, {
+    children: [(0, a.jsx)(s, {}), (0, a.jsxs)(m.ZP, {
       className: i()(N.headerBar, O.subPanelHeaderBar),
       children: [(0, a.jsx)(m.ZP.Icon, {
         icon: d.xVZ,
@@ -179,7 +179,7 @@ function w(e) {
           }))
         }
       })]
-    }), s({
+    }), o({
       actionLog: t
     })]
   })
@@ -223,7 +223,7 @@ function R() {
     [t, n] = r.useState(""),
     l = function(e) {
       let [t, n] = r.useState(e.logs), a = r.useCallback(() => {
-        (0, o.debounce)(() => {
+        (0, s.debounce)(() => {
           n([...e.logs])
         }, 500)()
       }, [e]);
@@ -231,23 +231,23 @@ function R() {
         e.off("log", a)
       }), [e, a]), t
     }(u.Z.actionLogger),
-    s = r.useMemo(() => l.map(e => ({
+    o = r.useMemo(() => l.map(e => ({
       key: e.id.toString(),
       actionLog: e
     })), [l]),
-    [c, m] = r.useState(s),
-    [x, p] = r.useState(s),
+    [c, m] = r.useState(o),
+    [x, p] = r.useState(o),
     [b, f] = r.useState(!1),
     [v, j] = r.useState(),
     g = r.useCallback(e => {
       p(e)
     }, []);
-  (0, h.BO)(t, b ? c : s, g, I);
+  (0, h.BO)(t, b ? c : o, g, I);
   let y = r.useCallback(e => {
-      m(s), f(e)
-    }, [s]),
+      m(o), f(e)
+    }, [o]),
     C = t.trim().length > 0,
-    E = r.useMemo(() => C ? x : b ? c : s, [s, x, C, b, c]);
+    E = r.useMemo(() => C ? x : b ? c : o, [o, x, C, b, c]);
   return (0, a.jsxs)("div", {
     ref: e,
     className: i()(N.panel, O.panel),
