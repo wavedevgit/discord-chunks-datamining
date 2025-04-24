@@ -27,7 +27,7 @@ n.d(t, {
   Wz: () => tO,
   XK: () => ez,
   Z8: () => ep,
-  ZP: () => tR,
+  ZP: () => tP,
   Zx: () => eq,
   _O: () => tI,
   a5: () => eG,
@@ -53,7 +53,8 @@ n.d(t, {
   uZ: () => e_,
   v6: () => eA,
   v9: () => eX,
-  xG: () => tC,
+  xG: () => tR,
+  xe: () => tT,
   yd: () => O.yd,
   zL: () => ei,
   zV: () => eL
@@ -951,7 +952,7 @@ function eE(e, t) {
 function eb(e, t, n) {
   let r = o()(e);
   if (t.length > 0) {
-    let e = tN(t);
+    let e = tC(t);
     r = r.add(e, "hours")
   }
   if (void 0 !== n) {
@@ -963,7 +964,7 @@ function eb(e, t, n) {
 }
 
 function ey(e) {
-  let t = tN(e.unactivatedUnits);
+  let t = tC(e.unactivatedUnits);
   if (!(t > 0 && e.fractionalState === A.a$.NONE)) return "";
   let n = {
       days: C.t.fYmir6,
@@ -1596,20 +1597,24 @@ function tS(e) {
 }
 
 function tT(e) {
+  return e === A.Rt ? A.FL : A.ff
+}
+
+function tA(e) {
   if (e === A.rV.YEAR) return C.intl.string(C.t.tfqrho);
   if (e === A.rV.MONTH) return C.intl.string(C.t.FPybU1);
   throw Error("Invalid interval type: ".concat(e))
 }
 
-function tA(e) {
+function tN(e) {
   return null != e && !e.isProvisional && !e.bot
 }
 
-function tN(e) {
-  return tC(e.map(e => e.skuId))
+function tC(e) {
+  return tR(e.map(e => e.skuId))
 }
 
-function tC(e) {
+function tR(e) {
   return e.reduce((e, t) => {
     let [n, r] = A.Cx[t], i = 1;
     switch (n) {
@@ -1622,12 +1627,12 @@ function tC(e) {
     return e + i * r
   }, 0)
 }
-let tR = Object.freeze({
+let tP = Object.freeze({
   isNewUser: e => null != e && Date.now() - e.createdAt.getTime() < j,
   isPremiumAtLeast: O.yd,
   isPremium: O.I5,
   isPremiumExactly: O.M5,
-  isPremiumEligible: tA,
+  isPremiumEligible: tN,
   getPrice: V,
   getDefaultPrice: B,
   getInterval: Y,
@@ -1639,7 +1644,7 @@ let tR = Object.freeze({
   getPremiumPlanOptions: eo,
   getUpgradeEligibilities: ec,
   getReverseTrialWeeks: tS,
-  formatInterval: tT,
+  formatInterval: tA,
   getPlanDescription: en,
   isPremiumSku: ea,
   getClosestUpgrade: eu,
@@ -1668,7 +1673,7 @@ let tR = Object.freeze({
   getPremiumTypeFromSubscription: e1,
   getPremiumTypeFromSubscriptionRenewalMutations: e2,
   getPremiumGradientColor: e3,
-  getUnactivatedFractionalPremiumHours: tN,
+  getUnactivatedFractionalPremiumHours: tC,
   castPremiumSubscriptionAsSkuId: tO,
   canUseAnimatedEmojis: e4,
   canUseEmojisEverywhere: e5,
