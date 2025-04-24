@@ -101,10 +101,10 @@ function Z(e) {
   } = N.Z.useExperiment({
     location: "HeaderBar"
   }), {
-    hasParticipantsPanel: W
+    hasParticipantsPanel: Y
   } = (0, _.Z)({
     location: "HeaderBar"
-  }), Y = (0, O.Q3)("HeaderBar");
+  }), W = (0, O.Q3)("HeaderBar");
   return (0, r.jsx)(D.ZP, {
     className: n,
     innerClassName: u,
@@ -114,9 +114,9 @@ function Z(e) {
       return o.tq ? b : (0, r.jsxs)(r.Fragment, {
         children: [C, e ? (0, r.jsx)(R.Z, {
           className: h.search
-        }, null != c ? c : i) : null, F && (0, r.jsx)(D.ZP.Divider, {}), !Y && (0, r.jsx)(g.Z, {}), !Y && (0, r.jsx)(I.Z, {
+        }, null != c ? c : i) : null, F && (0, r.jsx)(D.ZP.Divider, {}), !W && (0, r.jsx)(g.Z, {}), !W && (0, r.jsx)(I.Z, {
           canShowReminder: !0
-        }), !Y && (0, r.jsx)(T.Z, {}), B && !z ? (0, r.jsx)(S.Z, {}) : null, !Y && (w ? (0, r.jsx)(m.Z, {}) : (0, r.jsx)(f.Z, {})), W && x && null != V && !G && l === y.d4z.GROUP_DM && (0, r.jsxs)("div", {
+        }), !W && (0, r.jsx)(T.Z, {}), B && !z ? (0, r.jsx)(S.Z, {}) : null, !W && (w ? (0, r.jsx)(m.Z, {}) : (0, r.jsx)(f.Z, {})), Y && x && null != V && !G && l === y.d4z.GROUP_DM && (0, r.jsxs)("div", {
           className: h.controlButtonWrapper,
           children: [(0, r.jsx)(D.ZP.Divider, {}), (0, r.jsx)(A.Z, {
             onClick: () => s.Z.toggleParticipantsList(V, !G)

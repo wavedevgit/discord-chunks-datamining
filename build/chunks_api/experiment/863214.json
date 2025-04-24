@@ -1,0 +1,1 @@
+{"id":"863214","type":"experiment","data":{"kind":"guild","id":"2025-04_report_to_mod_survey","label":"Report to mod survey","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Show report to mod survey","config":{"enabled":false}}]},"fromModule":{"id":"2900"}}

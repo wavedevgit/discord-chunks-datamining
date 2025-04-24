@@ -20,7 +20,7 @@ function c(e) {
     analyticsLocations: f,
     analyticsLocationObject: b,
     contextKey: O
-  } = e, m = !1, y = (0, l.Z)();
+  } = e, y = !1, m = (0, l.Z)();
   (0, i.ZDy)(async () => {
     let {
       default: e
@@ -62,7 +62,7 @@ function c(e) {
         }
         return e
       }({}, a), i = i = {
-        loadId: y,
+        loadId: m,
         applicationId: t,
         skuId: c,
         analyticsLocations: f,
@@ -71,7 +71,7 @@ function c(e) {
           o(), null == d || d(e)
         },
         onComplete: e => {
-          m = !0, null == p || p(e)
+          y = !0, null == p || p(e)
         }
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
@@ -87,15 +87,15 @@ function c(e) {
   }, {
     contextKey: O,
     onCloseCallback: () => {
-      m || u.default.track(s.rMx.PAYMENT_FLOW_CANCELED, {
-        load_id: y,
+      y || u.default.track(s.rMx.PAYMENT_FLOW_CANCELED, {
+        load_id: m,
         payment_type: s.Zuq[s.GZQ.ONE_TIME],
         location: b,
         is_gift: !1,
         sku_id: c,
         application_id: t,
         location_stack: f
-      }), (0, o.fw)(), (0, a.p)(), null == d || d(m)
+      }), (0, o.fw)(), (0, a.p)(), null == d || d(y)
     },
     onCloseRequest: s.dG4
   })

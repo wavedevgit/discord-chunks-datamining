@@ -20,8 +20,8 @@ async function b(e) {
     sku: o,
     subscriptionGroupPlanIds: b,
     initialSubscribeForGuild: O,
-    analyticsLocations: m,
-    analyticsLocation: y,
+    analyticsLocations: y,
+    analyticsLocation: m,
     disableGuildSelector: v = !1
   } = e, {
     promise: g,
@@ -65,8 +65,8 @@ async function b(e) {
       onClose: () => t(!1)
     }),
     analyticsSubscriptionType: f.NYc.APPLICATION,
-    analyticsLocations: m,
-    analyticsLocation: y,
+    analyticsLocations: y,
+    analyticsLocation: m,
     onComplete: h,
     showBenefitsFirst: !1,
     forcesTransitionToGuild: !1

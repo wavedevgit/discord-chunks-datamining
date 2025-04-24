@@ -263,6 +263,20 @@ let h = e => {
               noticeType: h,
               children: y.intl.string(y.t.Zi69Dw)
             })]
+          });
+        case l.z.REPORT_TO_MOD_SURVEY_NOTICE:
+          return (0, r.jsxs)(o.qXd, {
+            color: o.DM8.BRAND,
+            children: [(0, r.jsx)(o.RyX, {
+              onClick: () => i(D.L.USER_DISMISS),
+              noticeType: f.kVF.REPORT_TO_MOD_SURVEY
+            }), y.intl.string(y.t.G1AFm5), (0, r.jsx)(o.NoS, {
+              onClick: () => {
+                i(D.L.TAKE_ACTION)
+              },
+              noticeType: f.kVF.REPORT_TO_MOD_SURVEY,
+              children: y.intl.string(y.t["LPxt+P"])
+            })]
           })
       }
     }

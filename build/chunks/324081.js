@@ -1,4 +1,4 @@
-/** Chunk was on 48157 **/
+/** Chunk was on 2900 **/
 n.d(t, {
   Z: () => N
 });
@@ -21,8 +21,8 @@ var i = n(120356),
   b = n(565138),
   x = n(199902),
   y = n(592125),
-  E = n(430824),
-  v = n(158776),
+  v = n(430824),
+  E = n(158776),
   O = n(306680),
   j = n(594174),
   C = n(388032),
@@ -127,7 +127,7 @@ function A(e) {
   let {
     channel: t,
     gotoChannel: n
-  } = e, i = (0, o.e7)([E.Z], () => E.Z.getGuild(t.guild_id));
+  } = e, i = (0, o.e7)([v.Z], () => v.Z.getGuild(t.guild_id));
   return null == i ? null : (0, r.jsx)(b.Z, {
     "aria-hidden": !0,
     className: S.guildIcon,
@@ -144,7 +144,7 @@ function w(e) {
     channel: t,
     gotoChannel: n,
     mentionCount: i
-  } = e, a = (0, o.e7)([E.Z], () => E.Z.getGuild(t.guild_id)), c = (0, o.e7)([y.Z], () => y.Z.getChannel(t.parent_id)), u = (0, o.e7)([O.ZP], () => O.ZP.getIsMentionLowImportance(t.id)), d = (0, h.KS)(t, a), p = (0, f.ZP)(t, !1), m = null == c ? null == a ? void 0 : a.name : "".concat(null == a ? void 0 : a.name, " › ").concat(c.name), _ = t.isMultiUserDM() ? C.intl.formatToPlainString(C.t.CxSA5O, {
+  } = e, a = (0, o.e7)([v.Z], () => v.Z.getGuild(t.guild_id)), c = (0, o.e7)([y.Z], () => y.Z.getChannel(t.parent_id)), u = (0, o.e7)([O.ZP], () => O.ZP.getIsMentionLowImportance(t.id)), d = (0, h.KS)(t, a), p = (0, f.ZP)(t, !1), m = null == c ? null == a ? void 0 : a.name : "".concat(null == a ? void 0 : a.name, " › ").concat(c.name), _ = t.isMultiUserDM() ? C.intl.formatToPlainString(C.t.CxSA5O, {
     members: t.recipients.length + 1
   }) : t.isPrivate() ? (0, r.jsx)(Z, {
     channel: t
@@ -195,12 +195,12 @@ function Z(e) {
     status: i,
     activities: l,
     applicationStream: a
-  } = (0, o.cj)([j.default, v.Z, x.Z], () => {
+  } = (0, o.cj)([j.default, E.Z, x.Z], () => {
     let e = j.default.getUser(t.getRecipientId());
     return {
       user: e,
-      status: null != e ? v.Z.getStatus(e.id) : null,
-      activities: null != e ? v.Z.getActivities(e.id) : null,
+      status: null != e ? E.Z.getStatus(e.id) : null,
+      activities: null != e ? E.Z.getActivities(e.id) : null,
       applicationStream: null != e ? x.Z.getAnyStreamForUser(e.id) : null
     }
   }), {

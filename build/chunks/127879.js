@@ -1,4 +1,4 @@
-/** Chunk was on 48157 **/
+/** Chunk was on 39596 **/
 e.exports = {
   content: "content__57f77",
   loading: "loading__57f77",

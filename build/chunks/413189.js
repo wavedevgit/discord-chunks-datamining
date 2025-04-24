@@ -1,4 +1,4 @@
-/** Chunk was on 48157 **/
+/** Chunk was on 2900 **/
 n.d(t, {
   Z: () => O
 });
@@ -20,8 +20,8 @@ var r = n(200651),
   b = n(66420),
   x = n(981631),
   y = n(474936),
-  E = n(388032),
-  v = n(510064);
+  v = n(388032),
+  E = n(510064);
 
 function O(e) {
   var t, n, O, j;
@@ -58,31 +58,31 @@ function O(e) {
     V = h.t(T);
   return (i.useEffect(() => {
     null == D && f.Z.shouldFetchWallpapers && g.k9()
-  }, [D]), null == A) ? null : (C = G ? E.intl.format(E.t.z847Tk, {
-    wallpaper_name: null != (n = null == D ? void 0 : D.label) ? n : E.intl.string(E.t["UQMV/P"])
-  }) : E.intl.format(E.t["+lKndX"], {
+  }, [D]), null == A) ? null : (C = G ? v.intl.format(v.t.z847Tk, {
+    wallpaper_name: null != (n = null == D ? void 0 : D.label) ? n : v.intl.string(v.t["UQMV/P"])
+  }) : v.intl.format(v.t["+lKndX"], {
     username: null == R ? void 0 : R.nick,
-    wallpaper_name: null != (O = null == D ? void 0 : D.label) ? O : E.intl.string(E.t["UQMV/P"])
-  }), w ? k || Z ? V && F ? S = E.intl.formatToPlainString(E.t.PzTpVV, {
-    wallpaperName: null != (j = null == D ? void 0 : D.label) ? j : E.intl.string(E.t["UQMV/P"])
-  }) : G || H || !F || (S = E.intl.format(E.t.JwUhHh, {
+    wallpaper_name: null != (O = null == D ? void 0 : D.label) ? O : v.intl.string(v.t["UQMV/P"])
+  }), w ? k || Z ? V && F ? S = v.intl.formatToPlainString(v.t.PzTpVV, {
+    wallpaperName: null != (j = null == D ? void 0 : D.label) ? j : v.intl.string(v.t["UQMV/P"])
+  }) : G || H || !F || (S = v.intl.format(v.t.JwUhHh, {
     onClickNitro: () => {
       (0, u.uL)(x.Z5c.NITRO_HOME)
     }
-  })) : S = E.intl.format(E.t.dBxFsL, {
+  })) : S = v.intl.format(v.t.dBxFsL, {
     learnMoreLink: p.Z.getArticleURL(x.BhN.DM_WALLPAPERS)
-  }) : S = E.intl.string(E.t["6JSOu7"]), (null == U ? void 0 : U.isViewable) && F && !G && (I = (0, r.jsx)(a.zxk, {
-    className: v.action,
+  }) : S = v.intl.string(v.t["6JSOu7"]), (null == U ? void 0 : U.isViewable) && F && !G && (I = (0, r.jsx)(a.zxk, {
+    className: E.action,
     onClick: () => {
       g.X(T, A, {
         shouldClear: !V,
         onError: () => {
-          (0, a.showToast)((0, a.createToast)(E.intl.string(E.t.F8FvU1), a.ToastType.FAILURE))
+          (0, a.showToast)((0, a.createToast)(v.intl.string(v.t.F8FvU1), a.ToastType.FAILURE))
         }
       })
     },
     submitting: L,
-    children: E.intl.string(V ? E.t.o6850d : E.t["/ubFp6"])
+    children: v.intl.string(V ? v.t.o6850d : v.t["/ubFp6"])
   })), (0, r.jsx)(b.Z, {
     channel: T,
     content: C,

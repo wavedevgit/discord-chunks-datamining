@@ -17,8 +17,8 @@ var l = n(512722),
   f = n(55563),
   b = n(626135),
   O = n(987209),
-  m = n(107998),
-  y = n(981631);
+  y = n(107998),
+  m = n(981631);
 
 function v(e) {
   let {
@@ -55,7 +55,7 @@ function v(e) {
         activeSubscription: l,
         stepConfigs: s,
         skuIDs: [g],
-        children: (0, r.jsx)(m.c1, {
+        children: (0, r.jsx)(y.c1, {
           children: (0, r.jsx)(O.KB, {
             children: (0, r.jsx)(o, (a = function(e) {
               for (var t = 1; t < arguments.length; t++) {
@@ -106,9 +106,9 @@ function v(e) {
     }
   }, {
     onCloseCallback: () => {
-      Z || (b.default.track(y.rMx.PAYMENT_FLOW_CANCELED, {
+      Z || (b.default.track(m.rMx.PAYMENT_FLOW_CANCELED, {
         load_id: x,
-        payment_type: y.Zuq[y.GZQ.SUBSCRIPTION],
+        payment_type: m.Zuq[m.GZQ.SUBSCRIPTION],
         location: null != u ? u : i,
         is_gift: !1,
         sku_id: g,
@@ -116,7 +116,7 @@ function v(e) {
         location_stack: d
       }), (0, s.fw)(), (0, c.p)())
     },
-    onCloseRequest: y.dG4
+    onCloseRequest: m.dG4
   })
 }
 let g = async (e, t) => {
@@ -141,7 +141,7 @@ async function h(e) {
     activeSubscription: null,
     analyticsLocations: a,
     analyticsLocationObject: o,
-    analyticsSubscriptionType: y.NYc.APPLICATION,
+    analyticsSubscriptionType: m.NYc.APPLICATION,
     renderHeader: u,
     planGroup: [],
     skuId: r,

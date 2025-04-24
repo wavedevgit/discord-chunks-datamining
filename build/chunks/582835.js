@@ -1,4 +1,4 @@
-/** Chunk was on 48157 **/
+/** Chunk was on 37560 **/
 e.exports = {
   partnerBranding: "partnerBranding__83420",
   partnerBrandingGameTile: "partnerBrandingGameTile__83420",

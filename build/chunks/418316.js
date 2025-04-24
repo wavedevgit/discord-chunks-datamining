@@ -1,4 +1,4 @@
-/** Chunk was on 48157 **/
+/** Chunk was on 2900 **/
 n.d(t, {
   Z: () => h
 }), n(35282);
@@ -31,7 +31,7 @@ function f(e) {
 }
 
 function h(e) {
-  var t, n, r, h, g, _, b, x, y, E, v, O, j, C, S;
+  var t, n, r, h, g, _, b, x, y, v, E, O, j, C, S;
   let {
     item: I,
     renderApplication: N
@@ -47,7 +47,7 @@ function h(e) {
         count: R
       });
     case d.O7.MOBILE_NATIVE_UPDATE_AVAILABLE:
-      let k = null != (v = null == (E = I.local_id) ? void 0 : E.split("_").pop()) ? v : "unknown";
+      let k = null != (E = null == (v = I.local_id) ? void 0 : v.split("_").pop()) ? E : "unknown";
       return "Update to build ".concat(k, " available!");
     case d.DY.FRIEND_SUGGESTION_CREATED:
       return o.Z.getRelationshipType(T), p.OGo.PENDING_OUTGOING, null != (O = I.body) ? O : "";

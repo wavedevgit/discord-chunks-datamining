@@ -24,8 +24,8 @@ function b(e) {
     renderPurchaseButton: l,
     onPurchase: b,
     title: O,
-    onDetails: m,
-    benefitItems: y,
+    onDetails: y,
+    benefitItems: m,
     benefitsSummary: v,
     subtitle: g,
     maxBenefits: h = f
@@ -35,7 +35,10 @@ function b(e) {
       className: i()(d.container, p.hoverCard),
       tabIndex: 0,
       onClick: () => {
-        null != m ? m() : null != b && b()
+        null != y ? y() : null != b && b()
+      },
+      onKeyUp: e => {
+        "Enter" === e.key && (e.stopPropagation(), e.preventDefault(), null != y ? y() : null != b && b())
       },
       children: [(0, r.jsx)("div", {
         className: d.card,
@@ -77,7 +80,7 @@ function b(e) {
             count: v
           })
         })
-      }), null != y && y.length > 0 && (0, r.jsx)("div", {
+      }), null != m && m.length > 0 && (0, r.jsx)("div", {
         className: d.benefits,
         children: (0, r.jsx)("div", {
           className: d.benefitsContainer,
@@ -87,15 +90,15 @@ function b(e) {
               color: "header-secondary",
               variant: "eyebrow",
               children: c.Z.Messages.STOREFRONT_BENEFITS_TITLE
-            }), y.length > h ? (0, r.jsxs)(r.Fragment, {
-              children: [y.slice(0, h), (0, r.jsx)(u.x, {
+            }), m.length > h ? (0, r.jsxs)(r.Fragment, {
+              children: [m.slice(0, h), (0, r.jsx)(u.x, {
                 variant: "text-md/semibold",
                 color: "text-secondary",
                 children: c.Z.Messages.STOREFRONT_MORE_BENEFITS.format({
-                  count: y.length - h
+                  count: m.length - h
                 })
               })]
-            }) : y]
+            }) : m]
           })
         })
       })]
