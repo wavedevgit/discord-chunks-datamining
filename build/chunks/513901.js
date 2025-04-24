@@ -12,8 +12,8 @@ var i = n(200651),
   d = n(626135),
   u = n(74538),
   m = n(150039),
-  g = n(993413),
-  p = n(504983),
+  p = n(993413),
+  g = n(504983),
   h = n(981631),
   f = n(474936),
   b = n(388032),
@@ -26,8 +26,8 @@ function x(e) {
     className: s,
     sectionTitle: x,
     forcedDivider: E = !1,
-    withTutorial: j = !1,
-    showBorder: C = !1,
+    withTutorial: C = !1,
+    showBorder: j = !1,
     isTryItOutFlow: O = !1,
     initialSelectedEffectId: S
   } = e, v = (0, m.Kg)(t, n), T = u.ZP.canUsePremiumProfileCustomization(t), {
@@ -47,13 +47,13 @@ function x(e) {
     })
   }, [T, I]);
   let P = null != n,
-    R = j ? a.gtL : a.zxk;
-  return (0, i.jsx)(g.Z, {
+    R = C ? a.gtL : a.zxk;
+  return (0, i.jsx)(p.Z, {
     forcedDivider: E,
-    borderType: p.Y.PREMIUM,
+    borderType: g.Y.PREMIUM,
     hasBackground: !0,
     title: x,
-    showBorder: C,
+    showBorder: j,
     errors: y,
     className: s,
     children: (0, i.jsxs)("div", {
@@ -62,7 +62,7 @@ function x(e) {
         size: a.zxk.Sizes.SMALL,
         onClick: A,
         className: l()({
-          [_.buttonHighlighted]: j
+          [_.buttonHighlighted]: C
         }),
         children: b.intl.string(b.t["0nEVoK"])
       }), (O || void 0 !== N ? null != N : null != v) && (0, i.jsx)(a.zxk, {

@@ -12,8 +12,8 @@ var i = n(200651),
   d = n(716161),
   u = n(634041),
   m = n(647177),
-  g = n(672339),
-  p = n(898531),
+  p = n(672339),
+  g = n(898531),
   h = n(636188),
   f = n(678916),
   b = n(981631),
@@ -21,7 +21,7 @@ var i = n(200651),
   x = n(388032),
   E = n(635968);
 
-function j(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -40,7 +40,7 @@ function j(e) {
   return e
 }
 
-function C(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -61,7 +61,7 @@ function O(e) {
     currentDeviceId: v,
     smallerBackgroundOptions: T,
     className: I
-  } = e, N = (0, s.e7)([o.default], () => o.default.getCurrentUser()), [y, A] = r.useState(null), P = (0, p.Z)(), R = c.ZP.canUseCustomBackgrounds(N);
+  } = e, N = (0, s.e7)([o.default], () => o.default.getCurrentUser()), [y, A] = r.useState(null), P = (0, g.Z)(), R = c.ZP.canUseCustomBackgrounds(N);
   r.useEffect(() => {
     (0, d.XV)()
   }, []);
@@ -82,15 +82,15 @@ function O(e) {
       onSelectBackgroundOption: t,
       selectedBackgroundOption: n
     } = L.current;
-    e ? (0, g.FU)(n, v, {
+    e ? (0, p.FU)(n, v, {
       track: !1
     }).catch(() => t(null)) : null != n && t(null)
   }, [v]);
   let B = e => {
-    S(e), (0, g.FU)(e, v, {
+    S(e), (0, p.FU)(e, v, {
       location: w.location
     }).then(() => A(null)).catch(() => {
-      A(x.intl.string(x.t.ejrSLS)), (0, g.FU)(null, v, {
+      A(x.intl.string(x.t.ejrSLS)), (0, p.FU)(null, v, {
         location: w.location
       })
     })
@@ -111,9 +111,9 @@ function O(e) {
           let {
             default: e
           } = await n.e("87200").then(n.bind(n, 592163));
-          return n => (0, i.jsx)(e, C(j({}, n), {
+          return n => (0, i.jsx)(e, j(C({}, n), {
             onLearnMore: t,
-            analyticsSource: C(j({}, w.location), {
+            analyticsSource: j(C({}, w.location), {
               object: b.qAy.BUTTON_CTA
             })
           }))

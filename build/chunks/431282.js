@@ -33,7 +33,7 @@ function m(e) {
   return e
 }
 
-function g(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,7 +46,7 @@ function g(e, t) {
   }), e
 }
 
-function p(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, i, r = function(e, t) {
     if (null == e) return {};
@@ -70,23 +70,23 @@ function h(e) {
     icon: h,
     hint: f,
     renderSubmenu: b
-  } = e, _ = p(e, ["id", "label", "sublabel", "icon", "hint", "renderSubmenu"]);
+  } = e, _ = g(e, ["id", "label", "sublabel", "icon", "hint", "renderSubmenu"]);
   let x = (0, l.JA)(t),
     {
       onFocus: E
     } = x,
-    j = p(x, ["onFocus"]),
+    C = g(x, ["onFocus"]),
     {
-      id: C
+      id: j
     } = (0, l.f$)(),
     [O, S] = r.useState(!1),
     v = null != b;
   r.useLayoutEffect(() => {
-    if (v) return (0, s.N)(C, e => {
+    if (v) return (0, s.N)(j, e => {
       S(e === t)
     })
-  }, [t, C, v]);
-  let T = e => (0, i.jsxs)(d.kF, g(m({}, e, j, _), {
+  }, [t, j, v]);
+  let T = e => (0, i.jsxs)(d.kF, p(m({}, e, C, _), {
     role: "button",
     look: o.zxk.Looks.BLANK,
     size: o.zxk.Sizes.NONE,
@@ -134,8 +134,8 @@ function f(e) {
       children: e => {
         var {
           ref: t
-        } = e, s = p(e, ["ref"]);
-        return (0, i.jsx)("div", g(m({}, s), {
+        } = e, s = g(e, ["ref"]);
+        return (0, i.jsx)("div", p(m({}, s), {
           ref: t,
           onMouseLeave: () => r.setFocus(null),
           children: n

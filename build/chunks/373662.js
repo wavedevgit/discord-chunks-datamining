@@ -64,8 +64,8 @@ let p = a.forwardRef(function(e, t) {
     dangerous: S,
     separator: E,
     sparkle: C,
-    showNewBadge: O,
-    buttonClassName: P,
+    showNewBadge: P,
+    buttonClassName: O,
     children: A
   } = e, N = m(e, ["label", "ariaLabel", "tooltipText", "tooltipColor", "icon", "iconProps", "onClick", "onTooltipShow", "onTooltipHide", "disabled", "dangerous", "separator", "sparkle", "showNewBadge", "buttonClassName", "children"]);
   let {
@@ -97,7 +97,7 @@ let p = a.forwardRef(function(e, t) {
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)(s.zx, (i = f({
           ref: t,
-          className: o()(P, {
+          className: o()(O, {
             [d.hoverBarButton]: w
           }),
           onMouseEnter: m,
@@ -115,7 +115,7 @@ let p = a.forwardRef(function(e, t) {
           }, b)) : null, null != A ? (0, r.jsx)("div", {
             className: o()(d.icon, d.buttonContent),
             children: A
-          }) : null, C && (0, r.jsx)(l.K1N, {}), O && (0, r.jsx)(l.IGR, {
+          }) : null, C && (0, r.jsx)(l.K1N, {}), P && (0, r.jsx)(l.IGR, {
             text: _.intl.string(_.t.y2b7CA),
             color: c.Z.BG_BRAND,
             className: d.newBadge

@@ -16,7 +16,7 @@ function i(e) {
 }
 n.d(t, {
   U2: () => _,
-  wz: () => f
+  wz: () => m
 });
 var l = "copy",
   s = "convert";
@@ -77,7 +77,7 @@ var d = {
     appidExclude: u(l),
     credProps: u(l)
   },
-  g = {
+  p = {
     appid: u(l),
     appidExclude: u(l),
     credProps: u(l)
@@ -103,8 +103,8 @@ c({
     var t;
     return (null == (t = e.getTransports) ? void 0 : t.call(e)) || []
   })
-}), a(g, e => e.getClientExtensionResults());
-var p = {
+}), a(p, e => e.getClientExtensionResults());
+var g = {
     mediation: u(l),
     publicKey: c({
       challenge: c(s),
@@ -116,7 +116,7 @@ var p = {
     }),
     signal: u(l)
   },
-  m = {
+  f = {
     type: c(l),
     id: c(l),
     rawId: c(s),
@@ -127,13 +127,13 @@ var p = {
       signature: c(s),
       userHandle: c(s)
     }),
-    clientExtensionResults: a(g, e => e.getClientExtensionResults())
+    clientExtensionResults: a(p, e => e.getClientExtensionResults())
   };
 
-function f(e) {
-  return o(r, p, e)
+function m(e) {
+  return o(r, g, e)
 }
 async function _(e) {
   let t = await navigator.credentials.get(e);
-  return t.toJSON = () => o(i, m, t), t
+  return t.toJSON = () => o(i, f, t), t
 }

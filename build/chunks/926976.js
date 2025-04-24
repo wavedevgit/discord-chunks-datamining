@@ -22,8 +22,8 @@ var a = n(200651),
   g = n(257785),
   _ = n(484036),
   y = n(681619),
-  C = n(621060),
-  O = n(388032),
+  O = n(621060),
+  C = n(388032),
   N = n(459100),
   E = n(616257);
 let T = [{
@@ -95,7 +95,7 @@ function P(e) {
 let w = [{
     id: "details",
     name: "Details",
-    group: C.v0.NONE,
+    group: O.v0.NONE,
     render: e => {
       let {
         loggedEvent: {
@@ -257,7 +257,7 @@ function R() {
     {
       TabBar: S,
       renderSelectedTab: P
-    } = (0, C.ZP)({
+    } = (0, O.ZP)({
       tabs: w
     }, []);
   return (0, a.jsxs)("div", {
@@ -271,11 +271,11 @@ function R() {
         size: d.zxk.Sizes.ICON,
         onClick: j.Zw,
         children: (0, a.jsx)("span", {
-          title: O.intl.string(O.t.VkKicX),
+          title: C.intl.string(C.t.VkKicX),
           children: (0, a.jsx)(d.XHJ, {
             size: "md",
             color: "currentColor",
-            "aria-label": O.intl.string(O.t.VkKicX)
+            "aria-label": C.intl.string(C.t.VkKicX)
           })
         })
       }), (0, a.jsx)("div", {

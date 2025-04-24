@@ -1,4 +1,4 @@
-/** Chunk was on 31975 **/
+/** Chunk was on 94928 **/
 "use strict";
 n.d(t, {
   W: () => a,
@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(200651);
 n(192379);
-var i = n(120356),
-  s = n.n(i),
+var s = n(120356),
+  i = n.n(s),
   o = n(481060),
   l = n(956542);
 let a = {
@@ -20,7 +20,7 @@ function c(e) {
   let {
     color: t,
     icon: n,
-    children: i,
+    children: s,
     className: a
   } = e;
   return (0, r.jsx)(o.kzN, {
@@ -46,7 +46,7 @@ function c(e) {
       width: 20
     }, e)),
     iconClassName: l.messageBlockIcon,
-    className: s()(t, a),
-    children: i
+    className: i()(t, a),
+    children: s
   })
 }

@@ -12,16 +12,16 @@ var i = n(200651),
   d = n(481060),
   u = n(570140),
   m = n(809206),
-  g = n(497321),
-  p = n(634894),
+  p = n(497321),
+  g = n(634894),
   h = n(100527),
   f = n(906732),
   b = n(475977),
   _ = n(605236),
   x = n(243778),
   E = n(957730),
-  j = n(442933),
-  C = n(53691),
+  C = n(442933),
+  j = n(53691),
   O = n(267717),
   S = n(296810),
   v = n(678135),
@@ -91,17 +91,17 @@ function F() {
       forceTrack: !0
     })
   }, [et]);
-  let en = (0, j.H)("UserSettingsProfileCustomization"),
+  let en = (0, C.H)("UserSettingsProfileCustomization"),
     [ei, er] = (0, x.US)(en ? [o.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE] : []),
     es = ei === o.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE;
   r.useEffect(() => {
     es && er(U.L.TAKE_ACTION)
   }, [es, er]), r.useEffect(() => () => u.Z.wait(m.W3), []);
   let el = "UserSettingsProfileCustomization";
-  (0, p.j)({
+  (0, g.j)({
     location: el + " auto on",
     autoTrackExposure: !0
-  }), (0, p.j)({
+  }), (0, g.j)({
     location: el + " auto off",
     autoTrackExposure: !1
   });
@@ -110,7 +110,7 @@ function F() {
   } = w.b.useExperiment({
     location: "profile customization"
   }), ed = !X, eu = r.useRef(null);
-  return s ? (0, i.jsx)(g.Z, {}) : (0, i.jsxs)(f.Gt, {
+  return s ? (0, i.jsx)(p.Z, {}) : (0, i.jsxs)(f.Gt, {
     value: Q,
     children: [(0, i.jsx)(b.Z, {}), (0, i.jsx)(S.Z, {
       profilePreview: (0, i.jsx)(v.Z, (e = function(e) {
@@ -162,7 +162,7 @@ function F() {
           isVisible: ea
         })
       })
-    }), ed && !K && (0, i.jsx)(C.p, {
+    }), ed && !K && (0, i.jsx)(j.p, {
       className: G.floatingNitroUpsell,
       showUpsell: ed && !ea,
       text: V.intl.format(V.t.TmfgIy, {

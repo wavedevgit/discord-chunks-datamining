@@ -13,16 +13,16 @@ var i = n(200651),
   d = n(280942),
   u = n(209747),
   m = n(430824),
-  g = n(594174),
-  p = n(267642),
+  p = n(594174),
+  g = n(267642),
   h = n(74538),
   f = n(709054),
   b = n(357956),
   _ = n(275909),
   x = n(300037),
   E = n(981631),
-  j = n(474936),
-  C = n(388032),
+  C = n(474936),
+  j = n(388032),
   O = n(238045);
 
 function S(e) {
@@ -36,38 +36,38 @@ function S(e) {
   } = e, u = r.useMemo(() => {
     if (o) {
       let e = c.currentPeriodEnd;
-      return c.isPausedForFractionalPremium && (e = d.endsAt.toDate()), C.intl.format(C.t.Z4ULRE, {
+      return c.isPausedForFractionalPremium && (e = d.endsAt.toDate()), j.intl.format(j.t.Z4ULRE, {
         date: e
       })
     }
     let e = null != n.premiumGuildSubscription ? f.default.extractTimestamp(n.premiumGuildSubscription.id) : 0;
-    return C.intl.formatToPlainString(C.t.lY2Bur, {
+    return j.intl.formatToPlainString(j.t.lY2Bur, {
       date: new Date(e)
     })
   }, [n, o, c, d]), m = r.useMemo(() => (function(e) {
     if (null == e || e === E.Eu4.NONE) return "";
-    let t = [C.intl.formatToPlainString(C.t.dLlKX1, {
-      numEmojiSlots: j.HO[e].limits.emoji
-    }), C.intl.formatToPlainString(C.t["+ANIfn"], {
-      numStickerSlots: j.HO[e].limits.stickers
-    }), C.intl.formatToPlainString(C.t["4gt60d"], {
-      numSoundboardSlots: j.HO[e].limits.soundboardSounds
-    }), C.intl.formatToPlainString(C.t.XahSjY, {
-      resolution: j.HO[e].limits.screenShareQualityResolution,
-      framerate: j.HO[e].limits.screenShareQualityFramerate
-    }), C.intl.formatToPlainString(C.t.NbNs7e, {
-      bitrate: j.HO[e].limits.bitrate / 1e3
-    }), C.intl.formatToPlainString(C.t.VVKcpq, {
-      filesize: j.HO[e].limits.fileSize / 1024 / 1024
-    }), C.intl.formatToPlainString(C.t.TbpCvr, {
-      numVideoStageSeats: j.HO[e].limits.stageVideoUsers
-    }), C.intl.string(C.t.LDyX3t), C.intl.string(C.t.YtGlPT)];
-    e >= E.Eu4.TIER_2 && (t.push(C.intl.string(C.t.SztbtL)), t.push(C.intl.string(C.t["3GK91t"]))), e >= E.Eu4.TIER_3 && t.push(C.intl.string(C.t.XUUJd3));
+    let t = [j.intl.formatToPlainString(j.t.dLlKX1, {
+      numEmojiSlots: C.HO[e].limits.emoji
+    }), j.intl.formatToPlainString(j.t["+ANIfn"], {
+      numStickerSlots: C.HO[e].limits.stickers
+    }), j.intl.formatToPlainString(j.t["4gt60d"], {
+      numSoundboardSlots: C.HO[e].limits.soundboardSounds
+    }), j.intl.formatToPlainString(j.t.XahSjY, {
+      resolution: C.HO[e].limits.screenShareQualityResolution,
+      framerate: C.HO[e].limits.screenShareQualityFramerate
+    }), j.intl.formatToPlainString(j.t.NbNs7e, {
+      bitrate: C.HO[e].limits.bitrate / 1e3
+    }), j.intl.formatToPlainString(j.t.VVKcpq, {
+      filesize: C.HO[e].limits.fileSize / 1024 / 1024
+    }), j.intl.formatToPlainString(j.t.TbpCvr, {
+      numVideoStageSeats: C.HO[e].limits.stageVideoUsers
+    }), j.intl.string(j.t.LDyX3t), j.intl.string(j.t.YtGlPT)];
+    e >= E.Eu4.TIER_2 && (t.push(j.intl.string(j.t.SztbtL)), t.push(j.intl.string(j.t["3GK91t"]))), e >= E.Eu4.TIER_3 && t.push(j.intl.string(j.t.XUUJd3));
     let n = t[Math.floor(Math.random() * t.length)];
-    return C.intl.format(C.t["/dOAmZ"], {
+    return j.intl.format(j.t["/dOAmZ"], {
       perk: n
     })
-  })(t), [t]), g = (0, a.Yzy)(l, {
+  })(t), [t]), p = (0, a.Yzy)(l, {
     from: {
       opacity: 0
     },
@@ -85,7 +85,7 @@ function S(e) {
       color: "text-muted",
       children: u
     })
-  }) : g((e, t) => (0, i.jsx)(s.animated.div, {
+  }) : p((e, t) => (0, i.jsx)(s.animated.div, {
     style: e,
     className: O.boostDescriptionInnerContainer,
     children: (0, i.jsx)(a.Text, {
@@ -104,18 +104,18 @@ function v(e) {
     hasCancelableGuildBoostSlot: u,
     showAltText: m,
     isLastGuildBoostSlot: h
-  } = e, f = (0, l.e7)([o.Z], () => o.Z.useReducedMotion), x = (0, l.e7)([g.default], () => g.default.getCurrentUser()), E = r.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), j = r.useMemo(() => null != E && E > new Date, [E]), v = (0, p.tl)(n), T = (0, c.Z)();
+  } = e, f = (0, l.e7)([o.Z], () => o.Z.useReducedMotion), x = (0, l.e7)([p.default], () => p.default.getCurrentUser()), E = r.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), C = r.useMemo(() => null != E && E > new Date, [E]), v = (0, g.tl)(n), T = (0, c.Z)();
   return (0, i.jsxs)("div", {
     className: O.boostContainer,
     children: [(0, i.jsxs)("div", {
       className: O.boostInnerContainer,
       children: [(0, i.jsx)(_.Z, {
         isCanceled: v,
-        hasCooldown: j,
+        hasCooldown: C,
         useReducedMotion: f
       }), (0, i.jsx)("div", {
         className: O.boostDescriptionContainer,
-        children: null != E && j && !v ? (0, i.jsx)(b.Z, {
+        children: null != E && C && !v ? (0, i.jsx)(b.Z, {
           className: O.boostDescriptionInnerContainer,
           cooldown: E.getTime()
         }) : (0, i.jsx)(S, {
@@ -162,7 +162,7 @@ function v(e) {
             }
             return e
           }({}, e), n = n = {
-            "aria-label": C.intl.string(C.t.PdRCRk),
+            "aria-label": j.intl.string(j.t.PdRCRk),
             className: O.boostSlotMenuIcon,
             children: (0, i.jsx)(a.Huf, {
               size: "md",
@@ -292,7 +292,7 @@ function y(e) {
       n = {};
     return Object.keys(t).forEach(i => {
       let r = t[i];
-      if (!(0, p.tl)(r) && e++, null != r.premiumGuildSubscription) {
+      if (!(0, g.tl)(r) && e++, null != r.premiumGuildSubscription) {
         let e = r.premiumGuildSubscription.guildId;
         e in n || (n[e] = []), n[e].push(r)
       }

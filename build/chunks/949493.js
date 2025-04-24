@@ -13,16 +13,16 @@ var r = n(442837),
   d = n(901151),
   u = n(24400),
   m = n(122897),
-  g = n(821035),
-  p = n(694569),
+  p = n(821035),
+  g = n(694569),
   h = n(394655),
   f = n(540204),
   b = n(546957),
   _ = n(893996),
   x = n(273927),
   E = n(864239),
-  j = n(190014),
-  C = n(301812),
+  C = n(190014),
+  j = n(301812),
   O = n(988043),
   S = n(919539),
   v = n(726985),
@@ -36,18 +36,18 @@ let y = () => (0, i.jsx)(_.Z, {
       children: [(0, i.jsx)(s.F, {
         setting: v.s6.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
         children: (0, i.jsx)(f.Z, {})
-      }), (0, i.jsx)(O.Z, {}), (0, i.jsx)(S.Z, {}), (0, i.jsx)(C.Z, {}), (0, i.jsx)(j.Z, {})]
+      }), (0, i.jsx)(O.Z, {}), (0, i.jsx)(S.Z, {}), (0, i.jsx)(j.Z, {}), (0, i.jsx)(C.Z, {})]
     })
   }),
   A = () => (0, i.jsxs)(_.Z, {
     title: N.intl.string(N.t.xVRG4O),
     webSetting: v.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
-    children: [(0, i.jsx)(g.P, {}), (0, i.jsx)(m.Z, {}), (0, i.jsx)(h.Z, {}), (0, i.jsx)(u.Z, {}), (0, i.jsx)(c.Z, {}), (0, i.jsx)(E.Z, {})]
+    children: [(0, i.jsx)(p.P, {}), (0, i.jsx)(m.Z, {}), (0, i.jsx)(h.Z, {}), (0, i.jsx)(u.Z, {}), (0, i.jsx)(c.Z, {}), (0, i.jsx)(E.Z, {})]
   }),
   P = () => (0, i.jsxs)(_.Z, {
     title: N.intl.string(N.t["1Qn8iY"]),
     webSetting: v.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
-    children: [(0, i.jsx)(p.Z, {}), (0, i.jsx)(x.ZP, {})]
+    children: [(0, i.jsx)(g.Z, {}), (0, i.jsx)(x.ZP, {})]
   }),
   R = () => (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(A, {}), (0, i.jsx)(y, {}), (0, i.jsx)(P, {})]

@@ -44,7 +44,7 @@ function d(e) {
       select: u,
       selectClassName: m
     } = e,
-    g = function(e, t) {
+    p = function(e, t) {
       if (null == e) return {};
       var n, i, r = function(e, t) {
         if (null == e) return {};
@@ -59,7 +59,7 @@ function d(e) {
       }
       return r
     }(e, ["options", "value", "select", "selectClassName"]);
-  let p = r.useId();
+  let g = r.useId();
   return (0, i.jsx)(c, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -77,10 +77,10 @@ function d(e) {
       })
     }
     return e
-  }({}, g), n = n = {
-    id: p,
+  }({}, p), n = n = {
+    id: g,
     children: (0, i.jsx)(a.PhF, {
-      "aria-labelledby": p,
+      "aria-labelledby": g,
       className: l()(o.selectControl, m),
       options: s,
       isSelected: e => e === d,

@@ -12,10 +12,10 @@ var i = n(200651),
   d = n(823379),
   u = n(997950),
   m = n(816108),
-  g = n(388032),
-  p = n(867198);
+  p = n(388032),
+  g = n(867198);
 let h = {
-  label: () => g.intl.string(g.t["32u1Dw"]),
+  label: () => p.intl.string(p.t["32u1Dw"]),
   value: u.Th
 };
 
@@ -23,7 +23,7 @@ function f() {
   let {
     selectedGuildId: e,
     setSelectedGuildId: t
-  } = (0, u.xu)(), n = (0, s.e7)([c.ZP], () => c.ZP.getFlattenedGuildIds()), g = (0, s.e7)([o.Z], () => o.Z.getGuilds()), {
+  } = (0, u.xu)(), n = (0, s.e7)([c.ZP], () => c.ZP.getFlattenedGuildIds()), p = (0, s.e7)([o.Z], () => o.Z.getGuilds()), {
     hideGuildOptions: f,
     hideGlobalOption: b
   } = (0, m.b)(), _ = n[0];
@@ -33,7 +33,7 @@ function f() {
   let x = r.useMemo(() => {
       var e, t;
       let i = f ? [] : n.map(e => {
-        let t = g[e];
+        let t = p[e];
         return null == t ? null : {
           label: t.name,
           value: t.id
@@ -68,26 +68,26 @@ function f() {
       })(Object(t)).forEach(function(n) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
       }), e)), i
-    }, [f, n, b, g]),
+    }, [f, n, b, p]),
     E = r.useCallback(e => {
       let t = (null == e ? void 0 : e.label) === h.label() && (null == e ? void 0 : e.value) === h.value;
       return null == e || "" === e.value || t ? (0, i.jsx)("div", {
-        className: p.clydeIconContainer,
+        className: g.clydeIconContainer,
         children: (0, i.jsx)(l.gw7, {
           size: "sm",
           color: "white",
           "aria-hidden": !0,
-          className: p.guildSelectOptionIcon
+          className: g.guildSelectOptionIcon
         })
       }) : (0, i.jsx)(a.Z, {
-        className: p.guildSelectOptionIcon,
-        guild: g[e.value],
+        className: g.guildSelectOptionIcon,
+        guild: p[e.value],
         size: a.Z.Sizes.SMALLER,
         active: !0
       })
-    }, [g]);
+    }, [p]);
   return (0, i.jsx)(l.VcW, {
-    wrapperClassName: p.searchableSelect,
+    wrapperClassName: g.searchableSelect,
     onChange: e => {
       t(e)
     },

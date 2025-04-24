@@ -1,6 +1,6 @@
-/** Chunk was on 322 **/
+/** Chunk was on 53745 **/
 n.d(t, {
-  Z: () => j
+  Z: () => S
 }), n(388685), n(642613), n(583741);
 var r = n(200651),
   i = n(192379),
@@ -23,7 +23,7 @@ var r = n(200651),
   v = n(388032),
   C = n(571658);
 
-function j(e) {
+function S(e) {
   let {
     channel: t
   } = e, l = (0, s.Wu)([d.Z, g.ZP, f.Z], () => {
@@ -43,7 +43,7 @@ function j(e) {
       variant: "text-xs/bold",
       color: "header-secondary",
       children: t.isForumLikeChannel() ? v.intl.string(v.t.ioVdOz) : v.intl.string(v.t.VNYs2t)
-    }), l.slice(0, t.isForumLikeChannel() ? l.length : c).map(e => (0, r.jsx)(x, {
+    }), l.slice(0, t.isForumLikeChannel() ? l.length : c).map(e => (0, r.jsx)(j, {
       thread: e
     }, e.id)).filter(e => i.isValidElement(e)).slice(0, c), (0, r.jsx)(a.P3F, {
       className: C.more,
@@ -83,7 +83,7 @@ function j(e) {
   })
 }
 
-function x(e) {
+function j(e) {
   let {
     thread: t
   } = e, n = (0, s.e7)([m.default], () => m.default.getUser(t.ownerId)), i = (0, h.Ok)(t);

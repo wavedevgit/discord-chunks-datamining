@@ -12,16 +12,16 @@ var i = n(200651),
   d = n(692547),
   u = n(481060),
   m = n(230711),
-  g = n(129861),
-  p = n(279837),
+  p = n(129861),
+  g = n(279837),
   h = n(168107),
   f = n(480916),
   b = n(81643),
   _ = n(952306),
   x = n(299206),
   E = n(295474),
-  j = n(144114),
-  C = n(918505),
+  C = n(144114),
+  j = n(918505),
   O = n(332473),
   S = n(921801),
   v = n(485341),
@@ -81,13 +81,13 @@ function W(e) {
   let {
     className: a,
     user: o
-  } = e, c = r.useRef(null), m = (0, C.o9)(), g = (0, O.b)(), p = (0, E.gS)(), h = null != (s = null == p || null == (t = p.nick) ? void 0 : t[0]) ? s : null, [f, b] = r.useState(!1);
+  } = e, c = r.useRef(null), m = (0, j.o9)(), p = (0, O.b)(), g = (0, E.gS)(), h = null != (s = null == g || null == (t = g.nick) ? void 0 : t[0]) ? s : null, [f, b] = r.useState(!1);
   r.useEffect(() => {
     b(null != c.current && c.current.scrollWidth > c.current.clientWidth)
   }, [o.username]);
   let _ = !o.isClaimed(),
     x = m && !o.isPomelo() && !o.hasVerifiedEmailOrPhone() || _,
-    j = x ? V.intl.string(V.t["7Ngnys"]) : void 0;
+    C = x ? V.intl.string(V.t["7Ngnys"]) : void 0;
   return (0, i.jsxs)("div", {
     className: l()(G.field, a),
     children: [(0, i.jsx)("div", {
@@ -113,7 +113,7 @@ function W(e) {
           })]
         })]
       })
-    }), g && (0, i.jsx)("div", {
+    }), p && (0, i.jsx)("div", {
       className: G.pomeloWarning,
       children: (0, i.jsx)(u.ua7, {
         text: V.intl.string(V.t.HHC5Z2),
@@ -139,7 +139,7 @@ function W(e) {
         }))
       })
     }), (0, i.jsx)(u.ua7, {
-      text: j,
+      text: C,
       children: e => (0, i.jsx)(u.zxk, H(F({}, e), {
         disabled: x,
         size: u.zxk.Sizes.SMALL,
@@ -147,7 +147,7 @@ function W(e) {
         color: u.zxk.Colors.PRIMARY,
         "aria-label": V.intl.string(V.t["JECa9/"]),
         onClick: () => (0, u.ZDy)(async () => {
-          if (g) {
+          if (p) {
             let {
               default: e
             } = await Promise.all([n.e("85342"), n.e("69525")]).then(n.bind(n, 193049));
@@ -172,9 +172,9 @@ function Y(e) {
   let {
     user: s,
     className: a
-  } = e, o = (0, E.gS)(), c = null != (n = null == o || null == (t = o.nick) ? void 0 : t[0]) ? n : null, m = D.ZP.getGlobalName(s), g = r.useRef(null), [p, h] = r.useState(!1);
+  } = e, o = (0, E.gS)(), c = null != (n = null == o || null == (t = o.nick) ? void 0 : t[0]) ? n : null, m = D.ZP.getGlobalName(s), p = r.useRef(null), [g, h] = r.useState(!1);
   return r.useEffect(() => {
-    h(null != g.current && g.current.scrollWidth > g.current.clientWidth)
+    h(null != p.current && p.current.scrollWidth > p.current.clientWidth)
   }, [m]), (0, i.jsxs)("div", {
     className: l()(G.field, a),
     children: [(0, i.jsx)("div", {
@@ -186,7 +186,7 @@ function Y(e) {
           children: V.intl.string(V.t["9AjdkJ"])
         }), (0, i.jsx)("div", {
           className: G.usernameInnerRow,
-          ref: g,
+          ref: p,
           children: (0, i.jsx)(u.Text, {
             tag: "span",
             color: "header-primary",
@@ -214,7 +214,7 @@ function Y(e) {
       color: u.zxk.Colors.PRIMARY,
       "aria-label": V.intl.string(V.t.YXeWYG),
       onClick: J,
-      children: p ? V.intl.string(V.t["16kTw8"]) : V.intl.string(V.t.bt75u7)
+      children: g ? V.intl.string(V.t["16kTw8"]) : V.intl.string(V.t.bt75u7)
     })]
   })
 }
@@ -354,11 +354,11 @@ function X(e) {
         color: u.zxk.Colors.PRIMARY,
         "aria-label": V.intl.string(V.t.Rpn4Aw),
         onClick: function() {
-          (0, u.h7j)(e => (0, i.jsx)(p.Z, H(F({}, e), {
+          (0, u.h7j)(e => (0, i.jsx)(g.Z, H(F({}, e), {
             title: V.intl.string(V.t["3CTiKi"]),
             children: s.hasFlag(B.xW$.MFA_SMS) ? V.intl.string(V.t.jrhJys) : void 0,
             actionText: V.intl.string(V.t.N86XcH),
-            handleSubmit: e => j.Z.removePhone(e, j.L.USER_SETTINGS_UPDATE)
+            handleSubmit: e => C.Z.removePhone(e, C.L.USER_SETTINGS_UPDATE)
           })))
         },
         children: V.intl.string(V.t.N86XcH)
@@ -373,7 +373,7 @@ function X(e) {
               default: e
             } = await Promise.resolve().then(n.bind(n, 607018));
             return t => (0, i.jsx)(e, F({
-              reason: j.L.USER_SETTINGS_UPDATE
+              reason: C.L.USER_SETTINGS_UPDATE
             }, t))
           }, {
             modalKey: M.M
@@ -494,7 +494,7 @@ function ee() {
       }), (0, i.jsxs)("div", {
         children: [(0, i.jsxs)("div", {
           className: G.profileCardUsernameRow,
-          children: [(0, i.jsx)(g.Z, {
+          children: [(0, i.jsx)(p.Z, {
             user: t,
             className: G.userTag,
             discriminatorClass: G.discriminator

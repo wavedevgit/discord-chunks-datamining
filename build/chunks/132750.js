@@ -12,8 +12,8 @@ var i = n(200651),
   d = n(100527),
   u = n(906732),
   m = n(429467),
-  g = n(981631),
-  p = n(388032),
+  p = n(981631),
+  g = n(388032),
   h = n(493456);
 
 function f(e) {
@@ -31,14 +31,14 @@ function f(e) {
     onKeyDown: e => {
       ("Enter" === e.key || " " === e.key) && s(e)
     },
-    "aria-label": n ? p.intl.string(p.t.PwknJC) : p.intl.string(p.t.Vq4UmZ),
+    "aria-label": n ? g.intl.string(g.t.PwknJC) : g.intl.string(g.t.Vq4UmZ),
     children: [n ? (0, i.jsx)(a.vdY, {
       size: "xxs"
     }) : (0, i.jsx)(a.oFk, {
       size: "xxs"
     }), (0, i.jsx)(a.Text, {
       variant: "text-xs/medium",
-      children: n ? p.intl.string(p.t.PwknJC) : p.intl.string(p.t.Vq4UmZ)
+      children: n ? g.intl.string(g.t.PwknJC) : g.intl.string(g.t.Vq4UmZ)
     })]
   })
 }
@@ -48,7 +48,7 @@ function b(e) {
     hovered: t,
     activities: s,
     user: l,
-    applicationStream: p,
+    applicationStream: g,
     voiceChannel: b
   } = e, {
     analyticsLocations: _
@@ -56,7 +56,7 @@ function b(e) {
     let {
       type: t
     } = e;
-    return t === g.IIU.CUSTOM_STATUS
+    return t === p.IIU.CUSTOM_STATUS
   }), E = r.useCallback(() => {
     (0, a.ZDy)(async () => {
       let e = (0, m.Z)(),
@@ -111,7 +111,7 @@ function b(e) {
       children: (0, i.jsx)(o.Z, {
         user: l,
         activities: s,
-        applicationStream: p,
+        applicationStream: g,
         voiceChannel: b,
         hideTooltip: !0
       })

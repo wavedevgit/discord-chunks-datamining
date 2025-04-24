@@ -12,8 +12,8 @@ var i = n(200651),
   d = n(318110),
   u = n(150039),
   m = n(993413),
-  g = n(921944),
-  p = n(388032),
+  p = n(921944),
+  g = n(388032),
   h = n(388898);
 
 function f(e) {
@@ -24,16 +24,16 @@ function f(e) {
   } = (0, a.ZP)(), f = t.nameplate, {
     pendingNameplate: b,
     pendingErrors: _
-  } = (0, u._A)(), x = [s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE], [E, j] = (0, o.US)(x), C = E === s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, O = r.useCallback(() => {
-    j(g.L.TAKE_ACTION), (0, d.f)({
+  } = (0, u._A)(), x = [s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE], [E, C] = (0, o.US)(x), j = E === s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, O = r.useCallback(() => {
+    C(p.L.TAKE_ACTION), (0, d.f)({
       analyticsLocations: n
     })
-  }, [n, j]), S = r.useCallback(() => {
+  }, [n, C]), S = r.useCallback(() => {
     (0, u.Wh)(null)
   }, []);
   return (0, i.jsx)(m.Z, {
-    title: p.intl.string(p.t.x5CoXV),
-    titleIcon: C ? (0, i.jsx)(c.Z, {
+    title: g.intl.string(g.t.x5CoXV),
+    titleIcon: j ? (0, i.jsx)(c.Z, {
       className: h.newBadge
     }) : void 0,
     errors: _,
@@ -42,13 +42,13 @@ function f(e) {
       children: [(0, i.jsx)(l.zxk, {
         size: l.zxk.Sizes.SMALL,
         onClick: O,
-        children: p.intl.string(p.t.NzNLv7)
+        children: g.intl.string(g.t.NzNLv7)
       }), (void 0 === b ? null != f : null != b) && (0, i.jsx)(l.zxk, {
         size: l.zxk.Sizes.SMALL,
         color: l.zxk.Colors.PRIMARY,
         look: l.zxk.Looks.LINK,
         onClick: S,
-        children: p.intl.string(p.t.Vskkdn)
+        children: g.intl.string(g.t.Vskkdn)
       })]
     })
   })

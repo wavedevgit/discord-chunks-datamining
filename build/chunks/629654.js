@@ -16,10 +16,10 @@ function m(e) {
   let {
     preset: t,
     onShuffle: n
-  } = e, m = (0, s.e7)([a.Z], () => a.Z.useReducedMotion), g = (0, o.g2)({
+  } = e, m = (0, s.e7)([a.Z], () => a.Z.useReducedMotion), p = (0, o.g2)({
     useReducedMotion: m
   }), {
-    name: p,
+    name: g,
     header: h
   } = r.useMemo(() => {
     let e = (0, c.Ib)(t);
@@ -32,16 +32,16 @@ function m(e) {
     className: u.container,
     children: [(0, i.jsx)(l.P3F, {
       onClick: () => {
-        n(), g.startAnimation(!1)
+        n(), p.startAnimation(!1)
       },
       className: u.button,
       "aria-label": d.intl.string(d.t["44yJxs"]),
-      children: g.render()
+      children: p.render()
     }), (0, i.jsxs)(l.P3F, {
       onClick: () => {
-        n(), g.startAnimation(!1)
+        n(), p.startAnimation(!1)
       },
-      "aria-label": "".concat(p, ": ").concat(d.intl.string(d.t["44yJxs"])),
+      "aria-label": "".concat(g, ": ").concat(d.intl.string(d.t["44yJxs"])),
       className: u.select,
       children: [(0, i.jsx)("img", {
         alt: "",
@@ -52,7 +52,7 @@ function m(e) {
         className: u.presetLabel,
         variant: "text-sm/bold",
         color: "always-white",
-        children: p
+        children: g
       })]
     })]
   })

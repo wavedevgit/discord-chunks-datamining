@@ -1,6 +1,6 @@
-/** Chunk was on 31975 **/
+/** Chunk was on 94928 **/
 "use strict";
 n.d(t, {
-  q: () => i
+  q: () => s
 });
-var r, i = ((r = {}).ACCENT = "accent", r.GREEN = "statusGreen", r.YELLOW = "statusYellow", r.ORANGE = "statusOrange", r.RED = "statusRed", r.NONE = "transparent", r)
+var r, s = ((r = {}).ACCENT = "accent", r.GREEN = "statusGreen", r.YELLOW = "statusYellow", r.ORANGE = "statusOrange", r.RED = "statusRed", r.NONE = "transparent", r)

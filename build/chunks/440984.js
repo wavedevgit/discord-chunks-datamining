@@ -12,8 +12,8 @@ var i = n(200651),
   d = n(530618),
   u = n(74538),
   m = n(937615),
-  g = n(230916),
-  p = n(798769),
+  p = n(230916),
+  g = n(798769),
   h = n(474936),
   f = n(388032),
   b = n(583532),
@@ -25,10 +25,10 @@ function E(e) {
     premiumSubscription: t,
     premiumType: n,
     onClose: E,
-    confettiCanvas: j,
-    userWasChurned: C = !1,
+    confettiCanvas: C,
+    userWasChurned: j = !1,
     userDiscountOffer: O
-  } = e, S = (0, o.ZP)(), v = (0, l.wj)(S) ? _ : x, T = r.useRef(null), [I, N] = r.useState(!1), y = (0, g._)(t, h.Xh.PREMIUM_MONTH_TIER_2, O), A = (0, u.aS)(h.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
+  } = e, S = (0, o.ZP)(), v = (0, l.wj)(S) ? _ : x, T = r.useRef(null), [I, N] = r.useState(!1), y = (0, p._)(t, h.Xh.PREMIUM_MONTH_TIER_2, O), A = (0, u.aS)(h.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
     currency: t.currency,
     paymentSourceId: t.paymentSourceId
   }), P = (0, m.T4)(A.amount, A.currency), R = (0, s.e7)([c.Z], () => c.Z.useReducedMotion);
@@ -49,7 +49,7 @@ function E(e) {
       })
     });
   return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(p.Z, {
+    children: [(0, i.jsx)(g.Z, {
       premiumType: n,
       className: b.cancellationHeader,
       onClose: E
@@ -66,7 +66,7 @@ function E(e) {
               className: b.nitroIcon
             }), (0, i.jsx)(a.X6q, {
               variant: "heading-xl/bold",
-              children: C ? f.intl.string(f.t.gOOPaG) : f.intl.string(f.t.PZSyRk)
+              children: j ? f.intl.string(f.t.gOOPaG) : f.intl.string(f.t.PZSyRk)
             })]
           }), (0, i.jsx)("div", {
             className: b.bodyString,
@@ -76,7 +76,7 @@ function E(e) {
       })
     }), !R && I && (0, i.jsx)(d.Z, {
       confettiTarget: T.current,
-      confettiCanvas: j,
+      confettiCanvas: C,
       confettiVelocityMultiplier: .75
     })]
   })

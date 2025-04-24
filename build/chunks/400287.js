@@ -13,8 +13,8 @@ var r = n(120356),
   d = n(454585),
   u = n(125900),
   m = n(921801),
-  g = n(626135),
-  p = n(695346),
+  p = n(626135),
+  g = n(695346),
   h = n(726985),
   f = n(981631),
   b = n(388032),
@@ -23,20 +23,20 @@ var r = n(120356),
 function x() {
   let e = (0, c.pR)(),
     t = (0, c.Ju)(),
-    n = p.fq.useSetting(),
-    r = p.eR.useSetting(),
+    n = g.fq.useSetting(),
+    r = g.eR.useSetting(),
     x = (0, u.V2)({
       location: "UserSettingsTextImages"
     }),
-    E = p.R$.useSetting(),
-    j = p.cC.useSetting(),
-    C = p.vF.useSetting(),
-    O = p.H1.useSetting(),
-    S = p.ev.useSetting(),
-    v = p.x4.useSetting(),
-    T = p.RS.useSetting(),
-    I = p.NA.useSetting(),
-    N = p.nc.useSetting(),
+    E = g.R$.useSetting(),
+    C = g.cC.useSetting(),
+    j = g.vF.useSetting(),
+    O = g.H1.useSetting(),
+    S = g.ev.useSetting(),
+    v = g.x4.useSetting(),
+    T = g.RS.useSetting(),
+    I = g.NA.useSetting(),
+    N = g.nc.useSetting(),
     {
       analyticsLocations: y
     } = (0, o.ZP)(a.Z.TEXT_AND_IMAGES);
@@ -53,7 +53,7 @@ function x() {
         children: (0, i.jsx)(l.j7V, {
           className: s()(_.marginTop8, _.marginBottom20),
           value: T,
-          onChange: p.RS.updateSetting,
+          onChange: g.RS.updateSetting,
           children: b.intl.string(b.t.U47N1t)
         })
       }), (0, i.jsx)(m.F, {
@@ -64,7 +64,7 @@ function x() {
           note: b.intl.formatToPlainString(b.t.qjjvqK, {
             maxSize: 10
           }),
-          onChange: p.x4.updateSetting,
+          onChange: g.x4.updateSetting,
           children: b.intl.string(b.t.VP11Nj)
         })
       }), (0, i.jsx)(m.F, {
@@ -73,7 +73,7 @@ function x() {
           className: s()(_.marginTop8, _.marginBottom40),
           value: O,
           note: b.intl.string(b.t.T0rbtL),
-          onChange: p.H1.updateSetting,
+          onChange: g.H1.updateSetting,
           children: b.intl.string(b.t["w8j+yc"])
         })
       })]
@@ -87,7 +87,7 @@ function x() {
         children: (0, i.jsx)(l.j7V, {
           className: s()(_.marginTop8, _.marginBottom40),
           value: I,
-          onChange: p.NA.updateSetting,
+          onChange: g.NA.updateSetting,
           children: b.intl.string(b.t.xX0ZTE)
         })
       })]
@@ -101,7 +101,7 @@ function x() {
         children: (0, i.jsx)(l.j7V, {
           className: s()(_.marginTop8, _.marginBottom20),
           value: N,
-          onChange: p.nc.updateSetting,
+          onChange: g.nc.updateSetting,
           children: b.intl.string(b.t.Iv24sr)
         })
       }), (0, i.jsx)(m.F, {
@@ -110,7 +110,7 @@ function x() {
           className: _.marginBottom40,
           value: S,
           note: d.Z.parse(b.intl.string(b.t["20dvub"])),
-          onChange: p.ev.updateSetting,
+          onChange: g.ev.updateSetting,
           children: b.intl.string(b.t["79qal5"])
         })
       })]
@@ -128,7 +128,7 @@ function x() {
             value: e,
             note: b.intl.string(b.t.r3uQUV),
             onChange: t => {
-              g.default.track(f.rMx.STICKER_SUGGESTIONS_ENABLED_TOGGLED, {
+              p.default.track(f.rMx.STICKER_SUGGESTIONS_ENABLED_TOGGLED, {
                 enabled: !e,
                 location: {
                   section: f.jXE.SETTINGS_TEXT_AND_IMAGES
@@ -145,13 +145,13 @@ function x() {
             value: n,
             note: b.intl.string(b.t["/eVrj4"]),
             onChange: e => {
-              g.default.track(f.rMx.STICKERS_IN_AUTOCOMPLETE_TOGGLED, {
+              p.default.track(f.rMx.STICKERS_IN_AUTOCOMPLETE_TOGGLED, {
                 enabled: e,
                 location: {
                   section: f.jXE.SETTINGS_TEXT_AND_IMAGES
                 },
                 location_stack: y
-              }), p.fq.updateSetting(e)
+              }), g.fq.updateSetting(e)
             },
             children: b.intl.string(b.t["29xPVV"])
           })
@@ -171,12 +171,12 @@ function x() {
             value: r,
             note: b.intl.string(b.t.hrSIhI),
             onChange: e => {
-              g.default.track(f.rMx.SOUNDMOJI_IN_AUTOCOMPLETE_TOGGLED, {
+              p.default.track(f.rMx.SOUNDMOJI_IN_AUTOCOMPLETE_TOGGLED, {
                 checked: e,
                 location: {
                   section: f.jXE.SETTINGS_TEXT_AND_IMAGES
                 }
-              }), p.eR.updateSetting(e)
+              }), g.eR.updateSetting(e)
             },
             children: b.intl.string(b.t["CtYr+f"])
           })
@@ -195,12 +195,12 @@ function x() {
             className: s()(_.marginTop8, _.marginBottom40),
             value: E,
             onChange: e => {
-              g.default.track(f.rMx.PREVIEW_MARKDOWN_TOGGLED, {
+              p.default.track(f.rMx.PREVIEW_MARKDOWN_TOGGLED, {
                 enabled: e,
                 location: {
                   section: f.jXE.SETTINGS_TEXT_AND_IMAGES
                 }
-              }), p.R$.updateSetting(e)
+              }), g.R$.updateSetting(e)
             },
             children: b.intl.string(b.t.AqGrEB)
           })
@@ -217,8 +217,8 @@ function x() {
           setting: h.s6.CHAT_THREADS_SPLIT_VIEW,
           children: (0, i.jsx)(l.j7V, {
             className: _.marginTop8,
-            value: C,
-            onChange: p.vF.updateSetting,
+            value: j,
+            onChange: g.vF.updateSetting,
             children: b.intl.string(b.t.AInv5u)
           })
         })]
@@ -242,8 +242,8 @@ function x() {
             name: b.intl.string(b.t.Pe1RbG),
             value: f.A2N.ALWAYS
           }],
-          onChange: e => p.cC.updateSetting(e.value),
-          value: j
+          onChange: e => g.cC.updateSetting(e.value),
+          value: C
         })]
       })
     })]

@@ -1,6 +1,6 @@
-/** Chunk was on 322 **/
+/** Chunk was on 53745 **/
 n.d(t, {
-  m: () => x
+  m: () => j
 });
 var r = n(200651),
   i = n(192379),
@@ -22,21 +22,21 @@ var r = n(200651),
   O = n(176505),
   v = n(490897),
   C = n(388032),
-  j = n(990252);
+  S = n(990252);
 
-function x(e) {
+function j(e) {
   let {
     guild: t,
-    selected: x
-  } = e, S = (0, h.Z)(t), E = (0, u.wE)(o.z.CHANNEL_BROWSER_NEW_BADGE_NUX), P = (0, l.Wu)([p.Z], () => Array.from(p.Z.getNewChannelIds(t.id)).filter(e => p.Z.shouldIndicateNewChannel(t.id, e))), I = (0, l.e7)([g.ZP], () => g.ZP.hasUnread(t.id, v.W.GUILD_ONBOARDING_QUESTION)), w = P.length > b.Cb, N = (0, l.e7)([d.Z, g.ZP], () => {
+    selected: j
+  } = e, E = (0, h.Z)(t), x = (0, u.wE)(o.z.CHANNEL_BROWSER_NEW_BADGE_NUX), I = (0, l.Wu)([p.Z], () => Array.from(p.Z.getNewChannelIds(t.id)).filter(e => p.Z.shouldIndicateNewChannel(t.id, e))), P = (0, l.e7)([g.ZP], () => g.ZP.hasUnread(t.id, v.W.GUILD_ONBOARDING_QUESTION)), w = I.length > b.Cb, N = (0, l.e7)([d.Z, g.ZP], () => {
     let e = d.Z.lastFetchedAt(t.id),
       n = g.ZP.lastMessageId(t.id, v.W.GUILD_ONBOARDING_QUESTION);
     if (null == n) return !1;
     let r = m.default.extractTimestamp(n);
     return null != e && e > r
   }), Z = i.useCallback(() => {
-    (0, f.uL)(_.Z5c.CHANNEL(t.id, S ? O.oC.CUSTOMIZE_COMMUNITY : O.oC.CHANNEL_BROWSER))
-  }, [t.id, S]), T = i.useCallback(e => {
+    (0, f.uL)(_.Z5c.CHANNEL(t.id, E ? O.oC.CUSTOMIZE_COMMUNITY : O.oC.CHANNEL_BROWSER))
+  }, [t.id, E]), T = i.useCallback(e => {
     (0, c.jW)(e, async () => {
       let {
         default: e
@@ -75,10 +75,10 @@ function x(e) {
       }
     })
   }, [t]), A = null;
-  return E && !I && !w || x || N || (A = (0, r.jsx)(a.IGR, {
+  return x && !P && !w || j || N || (A = (0, r.jsx)(a.IGR, {
     color: s.Z.colors.BADGE_BRAND_BG.css,
     text: C.intl.string(C.t.y2b7CA),
-    className: j.newChannel
+    className: S.newChannel
   })), (0, r.jsx)(y.m, {
     id: "channels-".concat(t.id),
     renderIcon: e => (0, r.jsx)(a.H$4, {
@@ -86,8 +86,8 @@ function x(e) {
       color: "currentColor",
       className: e
     }),
-    text: S ? C.intl.string(C.t.h9mGOD) : C.intl.string(C.t.et6wam),
-    selected: x,
+    text: E ? C.intl.string(C.t.h9mGOD) : C.intl.string(C.t.et6wam),
+    selected: j,
     onClick: Z,
     onContextMenu: T,
     trailing: A

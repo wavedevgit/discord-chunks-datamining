@@ -29,9 +29,9 @@ function c(e) {
       }
       return r
     }(e, ["children", "lineClamp"]);
-  let [m, g] = r.useState(!1), [p, h] = r.useState(null), f = null != p && (0, i.jsx)("button", {
+  let [m, p] = r.useState(!1), [g, h] = r.useState(null), f = null != g && (0, i.jsx)("button", {
     className: o.button,
-    onClick: () => g(e => !e),
+    onClick: () => p(e => !e),
     children: (0, i.jsxs)(l.Text, {
       className: o.seeMore,
       variant: "text-sm/medium",
@@ -59,7 +59,7 @@ function c(e) {
     requestAnimationFrame(x)
   }, [x, c, d]);
   let E = "auto";
-  return null != p && (E = m ? "".concat(p.expandedHeight, "px") : "".concat(p.truncatedHeight, "px")), (0, i.jsxs)("div", {
+  return null != g && (E = m ? "".concat(g.expandedHeight, "px") : "".concat(g.truncatedHeight, "px")), (0, i.jsxs)("div", {
     children: [(0, i.jsx)(l.Text, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},

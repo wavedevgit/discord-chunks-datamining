@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => b
+  Z: () => E
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -12,29 +12,29 @@ var r = n(200651),
   u = n(388905),
   d = n(353926),
   h = n(185625),
-  g = n(551549),
-  p = n(108427),
-  m = n(314897),
-  f = n(981631),
+  p = n(551549),
+  g = n(108427),
+  f = n(314897),
+  m = n(981631),
   _ = n(388032),
   x = n(20493);
 l.ZP.initialize();
-let b = e => {
+let E = e => {
   let {
     location: t
-  } = e, n = (0, l.e7)([m.default], () => m.default.isAuthenticated()), b = (0, l.e7)([d.Z], () => d.Z.hasLoadedExperiments), E = (0, g.oK)("RSL - Landing Page"), [v, j] = i.useState(!1), [I, O] = i.useState(_.intl.string(_.t["9exy+f"])), [S, N] = i.useState(!0), y = e => {
+  } = e, n = (0, l.e7)([f.default], () => f.default.isAuthenticated()), E = (0, l.e7)([d.Z], () => d.Z.hasLoadedExperiments), b = (0, p.oK)("RSL - Landing Page"), [v, j] = i.useState(!1), [I, O] = i.useState(_.intl.string(_.t["9exy+f"])), [S, N] = i.useState(!0), y = e => {
     switch (e) {
-      case f.evJ.INVALID_FORM_BODY:
-      case f.evJ.DSA_RSL_REPORT_NOT_FOUND:
+      case m.evJ.INVALID_FORM_BODY:
+      case m.evJ.DSA_RSL_REPORT_NOT_FOUND:
         O(_.intl.string(_.t.bzXDfX));
         break;
-      case f.evJ.DSA_RSL_ALREADY_REQUESTED:
+      case m.evJ.DSA_RSL_ALREADY_REQUESTED:
         O(_.intl.string(_.t.rV00ws));
         break;
-      case f.evJ.DSA_RSL_LIMITED_TIME:
+      case m.evJ.DSA_RSL_LIMITED_TIME:
         O(_.intl.string(_.t["0dI29v"]));
         break;
-      case f.evJ.DSA_RSL_REPORT_INELIGIBLE:
+      case m.evJ.DSA_RSL_REPORT_INELIGIBLE:
         O(_.intl.string(_.t["RGa/GR"]));
         break;
       default:
@@ -46,8 +46,8 @@ let b = e => {
       withAnalyticsToken: !0
     }).then(() => N(!1)).catch(() => N(!1))) : N(!1)
   }, [n]), i.useEffect(() => {
-    b || E || o.Z.getExperiments()
-  }, [b, E]), i.useEffect(() => {
+    E || b || o.Z.getExperiments()
+  }, [E, b]), i.useEffect(() => {
     let e = async e => {
       var t, n;
       try {
@@ -59,8 +59,8 @@ let b = e => {
         j(!1)
       }
     };
-    j(!0), e((0, c.Z)(t)), (0, p.e)("report_second_look")
-  }, [t]), E && !S && (0, r.jsxs)(u.ZP, {
+    j(!0), e((0, c.Z)(t)), (0, g.e)("report_second_look")
+  }, [t]), b && !S && (0, r.jsxs)(u.ZP, {
     children: [(0, r.jsx)(u.Dx, {
       className: x.marginBottom8,
       children: I

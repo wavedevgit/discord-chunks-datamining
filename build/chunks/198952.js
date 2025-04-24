@@ -20,7 +20,7 @@ let d = l.ZP.getEnableHardwareAcceleration() ? r.Xo$ : r.qEK,
     } = e, {
       avatarSrc: u,
       avatarDecorationSrc: m,
-      eventHandlers: g
+      eventHandlers: p
     } = (0, s.Z)({
       user: l,
       size: c
@@ -42,7 +42,7 @@ let d = l.ZP.getEnableHardwareAcceleration() ? r.Xo$ : r.qEK,
         })
       }
       return e
-    }({}, g), n = n = {
+    }({}, p), n = n = {
       children: (0, i.jsx)(d, {
         src: u,
         avatarDecoration: m,

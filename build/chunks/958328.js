@@ -50,9 +50,9 @@ function g() {
     g = (0, s.e7)([m.Z], () => m.Z.computePermissions(n)),
     _ = (0, s.e7)([m.Z], () => m.Z.computePermissions(r)),
     y = (0, c.ZP)(n, !0),
-    C = null != n ? (0, b.IG)(n, !1, !0) : null,
-    O = null != r ? p.Z.getGuildPermissionSpecMap(r) : null,
-    N = Object.values(null != C ? C : {}).map(e => {
+    O = null != n ? (0, b.IG)(n, !1, !0) : null,
+    C = null != r ? p.Z.getGuildPermissionSpecMap(r) : null,
+    N = Object.values(null != O ? O : {}).map(e => {
       let {
         title: t,
         flag: n
@@ -62,7 +62,7 @@ function g() {
         can: r
       }, t)
     }),
-    E = Object.values(null != O ? O : {}).map(e => {
+    E = Object.values(null != C ? C : {}).map(e => {
       let {
         title: t,
         flag: n

@@ -12,8 +12,8 @@ var i = n(192379),
   d = n(281598),
   u = n(388032),
   m = n(513767),
-  g = n(78230),
-  p = n(786792),
+  p = n(78230),
+  g = n(786792),
   h = n(161594);
 let f = () => {
   let e = (0, c.zL)(d.jE.UPSELL_BANNER),
@@ -21,14 +21,14 @@ let f = () => {
     n = (0, a.H)("upsell_banner"),
     f = (0, l.e7)([o.Z], () => o.Z.getMarketingBySurface(r.K.EDIT_PROFILE_SETTINGS)),
     b = i.useMemo(() => n ? {
-      asset: g,
+      asset: p,
       popoutAsset: m,
       title: u.intl.string(u.t.QZVVBg),
       body: u.intl.string(u.t.sajmAg),
       version: 0,
       revertTextColor: !1
     } : null != f ? f : {
-      asset: p,
+      asset: g,
       popoutAsset: h,
       title: u.intl.string(u.t["4Emkur"]),
       body: u.intl.string(u.t.gn7SZW),

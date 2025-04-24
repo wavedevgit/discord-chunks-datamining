@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 });
 var i = n(200651);
 n(192379);
@@ -13,13 +13,13 @@ var r = n(120356),
   d = n(474936),
   u = n(388032),
   m = n(637693);
-let g = e => {
+let p = e => {
   var {
     className: t,
     forceWhite: n,
     giftMessage: r,
-    subscriptionTier: g
-  } = e, p = function(e, t) {
+    subscriptionTier: p
+  } = e, g = function(e, t) {
     if (null == e) return {};
     var n, i, r = function(e, t) {
       if (null == e) return {};
@@ -37,7 +37,7 @@ let g = e => {
   let h = (0, o.ZP)(),
     f = (0, l.wj)(h) || n,
     b = f ? a.Ttl.WHITE : a.Ttl.BRAND,
-    _ = g === d.Si.TIER_0 ? u.intl.string(u.t.rk4Uu7) : u.intl.string(u.t.Ve9Ge3);
+    _ = p === d.Si.TIER_0 ? u.intl.string(u.t.rk4Uu7) : u.intl.string(u.t.Ve9Ge3);
   return (0, i.jsx)(c.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -62,6 +62,6 @@ let g = e => {
     buttonText: _,
     giftMessage: r,
     className: s()(t, m.giftButton, f ? m.buttonWhite : m.buttonBrand),
-    subscriptionTier: g
-  }, p))
+    subscriptionTier: p
+  }, g))
 }

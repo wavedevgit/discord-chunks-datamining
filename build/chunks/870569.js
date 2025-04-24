@@ -17,16 +17,16 @@ let d = r.forwardRef(function(e, t) {
     onClick: d,
     disabled: u,
     icon: m,
-    iconForeground: g,
-    innerClassName: p,
+    iconForeground: p,
+    innerClassName: g,
     className: h,
     redGlow: f,
     tooltipClassName: b,
     onMouseEnter: _,
     onMouseLeave: x,
     "aria-label": E,
-    "aria-checked": j,
-    role: C,
+    "aria-checked": C,
+    role: j,
     tooltipColor: O,
     tooltipForceOpen: S,
     tooltipContentClassName: v,
@@ -35,7 +35,7 @@ let d = r.forwardRef(function(e, t) {
     width: 20,
     height: 20,
     size: "custom",
-    colorClass: null != g ? g : "",
+    colorClass: null != p ? p : "",
     color: "currentColor"
   }) : m;
   return (0, i.jsx)(a.ua7, {
@@ -47,7 +47,7 @@ let d = r.forwardRef(function(e, t) {
     forceOpen: S,
     children: e => {
       var n, m, {
-          onClick: g,
+          onClick: p,
           onMouseEnter: b,
           onMouseLeave: E
         } = e,
@@ -88,7 +88,7 @@ let d = r.forwardRef(function(e, t) {
         look: a.zxk.Looks.BLANK,
         size: a.zxk.Sizes.NONE,
         disabled: u,
-        innerClassName: p,
+        innerClassName: g,
         wrapperClassName: l()(c.button, h),
         className: l()(c.button, h, {
           [c.redGlow]: f,
@@ -98,7 +98,7 @@ let d = r.forwardRef(function(e, t) {
           [c.plateMuted]: f && T
         }),
         onClick: e => {
-          null != g && g(), null != d && d(e)
+          null != p && p(), null != d && d(e)
         },
         onMouseEnter: () => {
           null == b || b(), null == _ || _()
@@ -107,8 +107,8 @@ let d = r.forwardRef(function(e, t) {
           null == E || E(), null == x || x()
         },
         onContextMenu: s,
-        role: C,
-        "aria-checked": j,
+        role: j,
+        "aria-checked": C,
         focusProps: {
           offset: {
             left: -1,

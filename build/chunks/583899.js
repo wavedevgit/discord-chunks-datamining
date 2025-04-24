@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 }), n(388685);
 var i = n(200651),
   r = n(192379),
@@ -13,27 +13,27 @@ var i = n(200651),
   u = n(131085),
   m = n(818307);
 
-function g(e) {
+function p(e) {
   let {
     className: t,
     clanTag: n,
     clanBadge: s,
-    onTagClick: g,
-    guildId: p,
+    onTagClick: p,
+    guildId: g,
     guildName: h,
     guildIcon: f,
     guildIconSize: b,
     memberCount: _
-  } = e, x = r.useRef(null), [E, j] = r.useState(!1);
+  } = e, x = r.useRef(null), [E, C] = r.useState(!1);
   return r.useEffect(() => {
     let e = x.current;
-    null != e && null != e.offsetWidth && null != e.scrollWidth && j(e.offsetWidth < e.scrollWidth)
+    null != e && null != e.offsetWidth && null != e.scrollWidth && C(e.offsetWidth < e.scrollWidth)
   }, []), (0, i.jsxs)("div", {
     className: l()(m.container, t),
     children: [(0, i.jsxs)("div", {
       className: m.guildPrefixContainer,
       children: [(0, i.jsx)(o.b, {
-        guildId: p,
+        guildId: g,
         guildName: h,
         guildIcon: f,
         iconSize: b,
@@ -87,11 +87,11 @@ function g(e) {
     }), (0, i.jsx)("div", {
       className: m.tagContainer,
       children: (0, i.jsx)(d.m0, {
-        guildId: p,
+        guildId: g,
         className: m.tag,
         guildTag: n,
         guildBadge: s,
-        onClick: g,
+        onClick: p,
         badgeSize: u.Gg.SIZE_16,
         textColor: "interactive-normal",
         textVariant: "text-sm/semibold",

@@ -12,16 +12,16 @@ var i = n(200651),
   d = n(240872),
   u = n(23645),
   m = n(712364),
-  g = n(279837),
-  p = n(600164),
+  p = n(279837),
+  g = n(600164),
   h = n(144114),
   f = n(921801),
   b = n(607018),
   _ = n(778764),
   x = n(314897),
   E = n(325067),
-  j = n(594174),
-  C = n(572004),
+  C = n(594174),
+  j = n(572004),
   O = n(287880),
   S = n(714565),
   v = n(202858),
@@ -74,9 +74,9 @@ function w(e) {
       consumed: n
     }
   } = e, s = "".concat(t.substr(0, 4), "-").concat(t.substr(4)), l = r.useRef(null), a = r.useCallback(e => {
-    if ("c" === e.key && e.metaKey && C.wS) {
+    if ("c" === e.key && e.metaKey && j.wS) {
       var t;
-      e.preventDefault(), e.stopPropagation(), (0, C.JG)(s), null == l || null == (t = l.current) || t.focus()
+      e.preventDefault(), e.stopPropagation(), (0, j.JG)(s), null == l || null == (t = l.current) || t.focus()
     }
   }, [s]);
   return (0, i.jsx)("li", {
@@ -128,7 +128,7 @@ class k extends r.PureComponent {
           })]
         })
       }
-      if (c) e = (0, i.jsx)(p.Z, {
+      if (c) e = (0, i.jsx)(g.Z, {
         className: a ? "" : P.marginTop8,
         children: (0, i.jsx)(o.zxk, {
           color: o.zxk.Colors.RED,
@@ -141,7 +141,7 @@ class k extends r.PureComponent {
       });
       else {
         let t = (0, S.c)(r);
-        e = (0, i.jsxs)(p.Z, {
+        e = (0, i.jsxs)(g.Z, {
           className: a ? "" : P.marginTop8,
           children: [(0, i.jsx)(o.zxk, {
             onClick: this.handleEnableSMS,
@@ -202,13 +202,13 @@ class k extends r.PureComponent {
           type: o.R94.Types.DESCRIPTION,
           className: P.marginBottom20,
           children: y.intl.format(y.t.OhmvYm, {})
-        }), (0, i.jsxs)(p.Z, {
-          children: [(0, i.jsx)(p.Z.Child, {
+        }), (0, i.jsxs)(g.Z, {
+          children: [(0, i.jsx)(g.Z.Child, {
             children: (0, i.jsx)("ul", {
               className: A.checkboxGroup,
               children: r(t.slice(0, t.length / 2))
             })
-          }), (0, i.jsx)(p.Z.Child, {
+          }), (0, i.jsx)(g.Z.Child, {
             children: (0, i.jsx)("ul", {
               className: A.checkboxGroup,
               children: r(t.slice(t.length / 2))
@@ -233,14 +233,14 @@ class k extends r.PureComponent {
         type: o.R94.Types.DESCRIPTION,
         className: P.marginBottom20,
         children: y.intl.string(y.t.bQwxiY)
-      }), (0, i.jsxs)(p.Z, {
-        justify: p.Z.Justify.START,
+      }), (0, i.jsxs)(g.Z, {
+        justify: g.Z.Justify.START,
         className: P.marginBottom20,
-        children: [(0, i.jsx)(p.Z.Child, {
+        children: [(0, i.jsx)(g.Z.Child, {
           wrap: !0,
           grow: 0,
           children: n
-        }), (0, i.jsxs)(p.Z.Child, {
+        }), (0, i.jsxs)(g.Z.Child, {
           wrap: !0,
           children: [(0, i.jsx)(f.F, {
             setting: T.s6.ACCOUNT_REMOVE_2FA,
@@ -327,7 +327,7 @@ class k extends r.PureComponent {
       let e = E.Z.getVerificationKey();
       await c.Z.confirmViewBackupCodes(e, !0)
     }), R(this, "sendMFABackupCodesVerificationKeyEmail", () => {
-      (0, o.h7j)(e => (0, i.jsx)(g.Z, Z(D({}, e), {
+      (0, o.h7j)(e => (0, i.jsx)(p.Z, Z(D({}, e), {
         handleSubmit: e => c.Z.sendMFABackupCodesVerificationKeyEmail(e).then(() => {
           this.viewBackupCodes(e)
         }),
@@ -369,7 +369,7 @@ class k extends r.PureComponent {
         onAddedPhone: c.Z.enableSMS
       }) : c.Z.enableSMS()
     }), R(this, "handleDisableSMS", () => {
-      (0, o.h7j)(e => (0, i.jsx)(g.Z, Z(D({}, e), {
+      (0, o.h7j)(e => (0, i.jsx)(p.Z, Z(D({}, e), {
         handleSubmit: c.Z.disableSMS,
         title: y.intl.string(y.t.KLWnio),
         children: y.intl.string(y.t["W0/Dub"])
@@ -379,7 +379,7 @@ class k extends r.PureComponent {
 }
 
 function L(e) {
-  let t = (0, a.e7)([j.default], () => j.default.getCurrentUser());
+  let t = (0, a.e7)([C.default], () => C.default.getCurrentUser());
   l()(null != t, "TwoFactorAuth: currentUser cannot be undefined");
   let n = (0, a.cj)([E.Z, x.default], () => ({
     togglingSMS: E.Z.togglingSMS,

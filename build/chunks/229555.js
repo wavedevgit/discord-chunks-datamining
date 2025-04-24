@@ -13,13 +13,13 @@ var r = n(120356),
   d = n(474936),
   u = n(388032),
   m = n(536564);
-let g = (e, t) => (null == e ? void 0 : e.status) === o.Vq.EARNED ? u.intl.format(u.t.Hu4jfn, {
+let p = (e, t) => (null == e ? void 0 : e.status) === o.Vq.EARNED ? u.intl.format(u.t.Hu4jfn, {
     date: null != t ? t : new Date
   }) : (null == e ? void 0 : e.status) === o.Vq.UPCOMING ? u.intl.format(u.t.E85flp, {
     date: null != t ? t : new Date,
     days: e.daysLeft
   }) : null,
-  p = e => {
+  g = e => {
     switch (e) {
       case d.VU.PREMIUM_TENURE_1_MONTH:
         return m.badgeBronzeGlow;
@@ -56,7 +56,7 @@ let g = (e, t) => (null == e ? void 0 : e.status) === o.Vq.EARNED ? u.intl.forma
       _ = u.intl.string(h),
       x = (0, a.q)(d, f);
     return (0, i.jsxs)("div", {
-      className: s()(m.container, p(d)),
+      className: s()(m.container, g(d)),
       children: [(0, i.jsx)("div", {}), " ", (0, i.jsx)("img", {
         src: r,
         alt: _,
@@ -76,7 +76,7 @@ let g = (e, t) => (null == e ? void 0 : e.status) === o.Vq.EARNED ? u.intl.forma
           children: x
         }), (0, i.jsx)(l.xv, {
           variant: "text-xs/normal",
-          children: g(t, n)
+          children: p(t, n)
         })]
       })]
     })

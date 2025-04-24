@@ -1,4 +1,4 @@
-/** Chunk was on 31975 **/
+/** Chunk was on 94928 **/
 "use strict";
 e.exports = {
   badgeContainer: "badgeContainer__98c7b",

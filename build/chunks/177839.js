@@ -12,15 +12,15 @@ var i = n(200651),
   d = n(100527),
   u = n(906732),
   m = n(66595),
-  g = n(535322),
-  p = n(477734),
+  p = n(535322),
+  g = n(477734),
   h = n(626135),
   f = n(881100),
   b = n(981631),
   _ = n(388032),
   x = n(969397);
 let E = e => e ? _.intl.string(_.t.QX14gI) : _.intl.string(_.t.RGadQU),
-  j = e => {
+  C = e => {
     let {
       isShowingAll: t,
       onClick: n
@@ -39,7 +39,7 @@ let E = e => e ? _.intl.string(_.t.QX14gI) : _.intl.string(_.t.RGadQU),
       })]
     })
   },
-  C = e => {
+  j = e => {
     let {
       title: t,
       description: n,
@@ -47,7 +47,7 @@ let E = e => e ? _.intl.string(_.t.QX14gI) : _.intl.string(_.t.RGadQU),
       imageSource: s,
       imageClassName: a,
       titleBadge: c,
-      isNew: p = !1,
+      isNew: g = !1,
       isEarlyAccess: h = !1
     } = e, {
       analyticsLocations: f
@@ -56,7 +56,7 @@ let E = e => e ? _.intl.string(_.t.QX14gI) : _.intl.string(_.t.RGadQU),
       value: f,
       children: (0, i.jsxs)("div", {
         className: l()(x.perkCard, r),
-        children: [p ? (0, i.jsx)(g.Z, {
+        children: [g ? (0, i.jsx)(p.Z, {
           className: x.perkCardNewBadge,
           shouldInheritBackgroundColor: !0,
           shouldInheritTextColor: !0
@@ -86,14 +86,14 @@ let E = e => e ? _.intl.string(_.t.QX14gI) : _.intl.string(_.t.RGadQU),
       isSubscriberNitroHome: n = !1
     } = e, [s, d] = r.useState(!1), m = (0, f.N)({
       styles: x
-    }), g = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), {
+    }), p = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), {
       analyticsLocations: _
-    } = (0, u.ZP)(), O = (0, p._f)(), S = [m.emoji, m.streaming, m.upload, m.customAppIcons, m.soundboard, O ? m.remix : m.videoBackground, m.superReactions, m.stickersPerkDiscoverability, m.badgeAlt];
+    } = (0, u.ZP)(), O = (0, g._f)(), S = [m.emoji, m.streaming, m.upload, m.customAppIcons, m.soundboard, O ? m.remix : m.videoBackground, m.superReactions, m.stickersPerkDiscoverability, m.badgeAlt];
     return (0, i.jsxs)("div", {
       className: l()(x.perksContainer, t, {
         [x.partiallyHidden]: n && !s,
         [x.subscriberNitroHome]: n,
-        [x.reducedMotion]: g
+        [x.reducedMotion]: p
       }),
       children: [(0, i.jsx)(o.X6q, {
         variant: "heading-xxl/extrabold",
@@ -103,7 +103,7 @@ let E = e => e ? _.intl.string(_.t.QX14gI) : _.intl.string(_.t.RGadQU),
         className: l()(x.perkCardContainer, {
           [x.perkCardContainerExpanded]: s
         }),
-        children: S.map(e => null != e && (0, i.jsx)(C, function(e) {
+        children: S.map(e => null != e && (0, i.jsx)(j, function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               i = Object.keys(n);
@@ -127,7 +127,7 @@ let E = e => e ? _.intl.string(_.t.QX14gI) : _.intl.string(_.t.RGadQU),
             [x.sizeGizmo]: !s,
             [x.sizeGizmoExpanded]: s
           }),
-          children: (0, i.jsx)(j, {
+          children: (0, i.jsx)(C, {
             onClick: () => {
               h.default.track(b.rMx.PREMIUM_MARKETING_PERKS_SEE_ALL_CLICKED, {
                 location_stack: _,

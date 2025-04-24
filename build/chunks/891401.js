@@ -64,7 +64,7 @@ function j() {
       primaryColor: s,
       secondaryColor: v,
       tokenMixAmount: j,
-      linkColor: C
+      linkColor: O
     } = (0, c.cj)([u.Z], () => {
       var e, t, a, r, l, i, s, o, c, d;
       let m = u.Z.getWallpaperById(n);
@@ -76,7 +76,7 @@ function j() {
         linkColor: null != (d = null == m || null == (l = m.default) ? void 0 : l.link_color) ? d : "#000000"
       }
     }, [n]),
-    O = r.useCallback(e => {
+    C = r.useCallback(e => {
       null != n && (0, m.i)(n, {
         opacity: e
       })
@@ -128,7 +128,7 @@ function j() {
         defaultValue: 1,
         minValue: 0,
         maxValue: 1,
-        onValueChange: O
+        onValueChange: C
       }, "opacity-".concat(l)), (0, a.jsx)(d.ua7, {
         text: "The most prominent color in the wallpaper. This will be used to adjust the color tokens.",
         children: e => (0, a.jsx)(o.X6, f(b({
@@ -178,7 +178,7 @@ function j() {
         }))
       }), (0, a.jsx)("input", {
         type: "color",
-        value: C,
+        value: O,
         onChange: T
       }), (0, a.jsx)(d.zxk, {
         className: p.resetButton,

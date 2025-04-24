@@ -1,12 +1,12 @@
-/** Chunk was on 31975 **/
+/** Chunk was on 94928 **/
 "use strict";
 n.d(t, {
   Z: () => g
 });
 var r = n(200651),
-  i = n(192379),
-  s = n(120356),
-  o = n.n(s),
+  s = n(192379),
+  i = n(120356),
+  o = n.n(i),
   l = n(628238),
   a = n(367814),
   c = n(492593),
@@ -14,28 +14,28 @@ var r = n(200651),
   d = n(963550),
   f = n(845080),
   p = n(30804);
-let g = i.memo(function(e) {
+let g = s.memo(function(e) {
   var t, n;
   let {
-    message: s,
+    message: i,
     channel: g,
     compact: b,
     className: m,
-    isGroupStart: h,
-    hideSimpleEmbedContent: v = !0,
-    disableInteraction: _,
-    previewGuildId: O,
-    preview: y,
-    author: j
-  } = e, x = null != (t = null != O ? O : s.getGuildId()) ? t : void 0, C = (0, a.Z)(j), S = (0, l.A)((null != (n = s.editedTimestamp) ? n : s.timestamp).valueOf()), {
-    content: P
-  } = (0, u.Z)(s, {
-    hideSimpleEmbedContent: v,
-    allowList: S,
-    allowHeading: S,
+    isGroupStart: v,
+    hideSimpleEmbedContent: h = !0,
+    disableInteraction: O,
+    previewGuildId: _,
+    preview: j,
+    author: y
+  } = e, x = null != (t = null != _ ? _ : i.getGuildId()) ? t : void 0, S = (0, a.Z)(y), C = (0, l.A)((null != (n = i.editedTimestamp) ? n : i.timestamp).valueOf()), {
+    content: E
+  } = (0, u.Z)(i, {
+    hideSimpleEmbedContent: h,
+    allowList: C,
+    allowHeading: C,
     allowLinks: !0,
     previewLinkTarget: !0
-  }), E = i.useMemo(() => {
+  }), P = s.useMemo(() => {
     var t, n;
     return (0, f.Z)((t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -73,13 +73,13 @@ let g = i.memo(function(e) {
     className: o()(m, {
       [p.message]: !0,
       [p.cozyMessage]: !b,
-      [p.groupStart]: h
+      [p.groupStart]: v
     }),
-    childrenHeader: E,
-    childrenMessageContent: (0, d.Z)(e, P),
-    disableInteraction: _,
-    authorHasGradientRole: C,
+    childrenHeader: P,
+    childrenMessageContent: (0, d.Z)(e, E),
+    disableInteraction: O,
+    authorHasGradientRole: S,
     guildId: x,
-    preview: y
+    preview: j
   })
 })

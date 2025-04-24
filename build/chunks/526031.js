@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => p
+  Z: () => g
 });
 var i = n(200651),
   r = n(704215),
@@ -13,11 +13,11 @@ var i = n(200651),
   u = n(388032),
   m = n(385255);
 
-function g(e) {
+function p(e) {
   let {
     markAsDismissed: t
   } = e, {
-    analyticsLocations: g
+    analyticsLocations: p
   } = (0, a.ZP)(l.Z.CUSTOM_STATUS_TAGS_COACHMARK);
   return (0, i.jsx)(o.Z, {
     dismissibleContent: r.z.CUSTOM_STATUS_PROMPTS_COACHMARK,
@@ -57,7 +57,7 @@ function g(e) {
             return e
           }({}, n), s = s = {
             location: "CustomStatusTagsCoachmark",
-            sourceAnalyticsLocations: g,
+            sourceAnalyticsLocations: p,
             prompt: t
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
             var n = Object.keys(e);
@@ -91,7 +91,7 @@ function g(e) {
   })
 }
 
-function p(e) {
+function g(e) {
   let {
     children: t,
     markAsDismissed: n
@@ -102,7 +102,7 @@ function p(e) {
     align: "center",
     shouldShow: !0,
     animation: s.yRy.Animation.TRANSLATE,
-    renderPopout: () => (0, i.jsx)(g, {
+    renderPopout: () => (0, i.jsx)(p, {
       markAsDismissed: n
     }),
     children: t

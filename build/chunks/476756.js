@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 });
 var i = n(200651);
 n(192379);
@@ -14,7 +14,7 @@ var r = n(512722),
   u = n(871465),
   m = n(388032);
 
-function g() {
+function p() {
   let e = (0, l.e7)([c.Z], () => c.Z.getSoundpack()),
     t = d.Z.useHolidaySoundpack();
   s()(null != t, "should not render this without a holiday soundpack");

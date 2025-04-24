@@ -1,4 +1,4 @@
-/** Chunk was on 322 **/
+/** Chunk was on 53745 **/
 n.d(t, {
   I: () => A,
   N: () => T
@@ -29,7 +29,7 @@ async function C(e) {
   }, f.fy.INFREQUENT_USER_ACTION)
 }
 
-function j(e) {
+function S(e) {
   let {
     showCurrentGame: t,
     shouldShowStatus: n = !1
@@ -62,7 +62,7 @@ function j(e) {
   })
 }
 
-function x(e) {
+function j(e) {
   let {
     children: t,
     closePopout: n
@@ -100,13 +100,13 @@ function x(e) {
   })
 }
 
-function S(e) {
+function E(e) {
   let {
     closePopout: t
   } = e, {
     analyticsLocations: n
   } = (0, h.ZP)(d.Z.SHARING_CONTROLS_COACHMARK), r = p.G6.useSetting();
-  return (0, i.jsxs)(x, {
+  return (0, i.jsxs)(j, {
     closePopout: t,
     children: [(0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
@@ -121,20 +121,20 @@ function S(e) {
       })
     }), (0, i.jsx)("div", {
       className: O.toggleContainerWrapper,
-      children: (0, i.jsx)(j, {
+      children: (0, i.jsx)(S, {
         showCurrentGame: r
       })
     })]
   })
 }
 
-function E(e) {
+function x(e) {
   let {
     closePopout: t
   } = e, {
     analyticsLocations: n
   } = (0, h.ZP)(d.Z.SHARING_CONTROLS_COACHMARK), r = p.G6.useSetting();
-  return (0, i.jsxs)(x, {
+  return (0, i.jsxs)(j, {
     children: [(0, i.jsx)(o.X6, {
       variant: "heading-sm/semibold",
       color: "header-primary",
@@ -152,30 +152,8 @@ function E(e) {
       })
     }), (0, i.jsx)("div", {
       className: O.toggleContainerWrapper,
-      children: (0, i.jsx)(j, {
+      children: (0, i.jsx)(S, {
         showCurrentGame: r
-      })
-    })]
-  })
-}
-
-function P(e) {
-  let {
-    closePopout: t
-  } = e, n = p.G6.useSetting();
-  return (0, i.jsxs)(x, {
-    closePopout: t,
-    children: [(0, i.jsx)(c.Text, {
-      variant: "text-xs/normal",
-      color: "text-secondary",
-      className: O.nuxContent,
-      children: _.intl.format(_.t.fF2TbW, {
-        helpDeskUrl: m.Z.getArticleURL(b.BhN.ACTIVITY_STATUS_SETTINGS)
-      })
-    }), (0, i.jsx)("div", {
-      className: O.toggleContainerWrapper,
-      children: (0, i.jsx)(j, {
-        showCurrentGame: n
       })
     })]
   })
@@ -185,7 +163,7 @@ function I(e) {
   let {
     closePopout: t
   } = e, n = p.G6.useSetting();
-  return (0, i.jsxs)(x, {
+  return (0, i.jsxs)(j, {
     closePopout: t,
     children: [(0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
@@ -196,7 +174,29 @@ function I(e) {
       })
     }), (0, i.jsx)("div", {
       className: O.toggleContainerWrapper,
-      children: (0, i.jsx)(j, {
+      children: (0, i.jsx)(S, {
+        showCurrentGame: n
+      })
+    })]
+  })
+}
+
+function P(e) {
+  let {
+    closePopout: t
+  } = e, n = p.G6.useSetting();
+  return (0, i.jsxs)(j, {
+    closePopout: t,
+    children: [(0, i.jsx)(c.Text, {
+      variant: "text-xs/normal",
+      color: "text-secondary",
+      className: O.nuxContent,
+      children: _.intl.format(_.t.fF2TbW, {
+        helpDeskUrl: m.Z.getArticleURL(b.BhN.ACTIVITY_STATUS_SETTINGS)
+      })
+    }), (0, i.jsx)("div", {
+      className: O.toggleContainerWrapper,
+      children: (0, i.jsx)(S, {
         showCurrentGame: n,
         shouldShowStatus: !0
       })
@@ -206,8 +206,8 @@ function I(e) {
 
 function w() {
   let e = p.G6.useSetting();
-  return (0, i.jsxs)(x, {
-    children: [(0, i.jsx)(j, {
+  return (0, i.jsxs)(j, {
+    children: [(0, i.jsx)(S, {
       showCurrentGame: e
     }), (0, i.jsx)(c.$i$, {
       className: O.divider
@@ -225,7 +225,7 @@ function N(e) {
   let {
     closePopout: t
   } = e;
-  return (0, i.jsxs)(x, {
+  return (0, i.jsxs)(j, {
     children: [(0, i.jsx)(o.X6, {
       variant: "heading-sm/semibold",
       color: "header-primary",
@@ -253,8 +253,8 @@ function N(e) {
 
 function Z() {
   let e = p.G6.useSetting();
-  return (0, i.jsxs)(x, {
-    children: [(0, i.jsx)(j, {
+  return (0, i.jsxs)(j, {
+    children: [(0, i.jsx)(S, {
       showCurrentGame: e,
       shouldShowStatus: !0
     }), (0, i.jsx)(c.$i$, {
@@ -280,19 +280,19 @@ function A(e) {
       r()
     }, [r]), o) {
     case 0:
-      return (0, i.jsx)(S, {
+      return (0, i.jsx)(E, {
         closePopout: n
       });
     case 1:
-      return (0, i.jsx)(P, {
-        closePopout: n
-      });
-    case 2:
       return (0, i.jsx)(I, {
         closePopout: n
       });
+    case 2:
+      return (0, i.jsx)(P, {
+        closePopout: n
+      });
     case 3:
-      return (0, i.jsx)(E, {
+      return (0, i.jsx)(x, {
         closePopout: n
       });
     case 4:

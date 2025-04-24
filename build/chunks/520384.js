@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 });
 var i = n(200651),
   r = n(192379),
@@ -13,16 +13,16 @@ var i = n(200651),
   u = n(388032),
   m = n(20493);
 
-function g(e) {
+function p(e) {
   let {
     refreshStyles: t = !1
   } = e, n = o.I0.useSetting(), {
-    analyticsLocations: g
-  } = (0, l.ZP)(), p = r.useCallback(e => {
-    (0, c.Z)("stream_previews_disabled", e, o.I0.getSetting(), g), o.I0.updateSetting(e)
-  }, [g]), h = (0, i.jsx)(s.j7V, {
+    analyticsLocations: p
+  } = (0, l.ZP)(), g = r.useCallback(e => {
+    (0, c.Z)("stream_previews_disabled", e, o.I0.getSetting(), p), o.I0.updateSetting(e)
+  }, [p]), h = (0, i.jsx)(s.j7V, {
     value: n,
-    onChange: p,
+    onChange: g,
     note: u.intl.string(u.t.jTNPHB),
     hideBorder: t,
     children: u.intl.string(u.t["1CzWUF"])

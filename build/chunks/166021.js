@@ -15,7 +15,7 @@ let u = e => {
     cards: t,
     className: n,
     cardType: s
-  } = e, u = () => window.innerWidth < 910 ? 1 : window.innerWidth < 1400 ? 2 : 3, [m, g] = r.useState(0), [p, h] = r.useState(u()), f = t.length;
+  } = e, u = () => window.innerWidth < 910 ? 1 : window.innerWidth < 1400 ? 2 : 3, [m, p] = r.useState(0), [g, h] = r.useState(u()), f = t.length;
   r.useEffect(() => {
     let e = () => {
       h(u())
@@ -24,8 +24,8 @@ let u = e => {
       window.removeEventListener("resize", e)
     }
   }, []), r.useEffect(() => {
-    g(e => f > p && e > f - p ? f - p : f <= p ? 0 : e)
-  }, [f, p]);
+    p(e => f > g && e > f - g ? f - g : f <= g ? 0 : e)
+  }, [f, g]);
   let b = m > 0,
     _ = r.useCallback(e => ({
       x: (e - m) * 100
@@ -37,9 +37,9 @@ let u = e => {
     className: n,
     children: (0, i.jsxs)("div", {
       className: d.cardContainer,
-      children: [f > p && (0, i.jsx)(o.P3F, {
+      children: [f > g && (0, i.jsx)(o.P3F, {
         onClick: b ? () => {
-          g(e => 0 === e ? f - p : e - 1)
+          p(e => 0 === e ? f - g : e - 1)
         } : void 0,
         className: l()({
           [d.leftArrow]: b,
@@ -92,19 +92,19 @@ let u = e => {
             }), r), "".concat(t[n].name, "_").concat(n, "_perks_card"))
           }, "".concat(t[n].name, "_").concat(n, "_animated_div"))
         })
-      }), f > p && (0, i.jsx)(o.P3F, {
+      }), f > g && (0, i.jsx)(o.P3F, {
         onClick: () => {
-          g(e => e >= f - p ? 0 : e + 1)
+          p(e => e >= f - g ? 0 : e + 1)
         },
         className: d.rightArrow,
         children: (0, i.jsx)(o.ZSh, {
           className: d.arrowIcon,
           colorClass: d.arrowIcon
         })
-      }), f > p && (0, i.jsx)("div", {
+      }), f > g && (0, i.jsx)("div", {
         className: d.cardProgressBar,
         children: t.map((e, t) => {
-          if (!(t > f - p)) return (0, i.jsx)("div", {
+          if (!(t > f - g)) return (0, i.jsx)("div", {
             className: t === m ? d.selectedDot : d.dot
           }, "progress_bar_dot_".concat(t))
         })

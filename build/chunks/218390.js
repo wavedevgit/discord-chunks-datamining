@@ -13,16 +13,16 @@ var i = n(200651),
   d = n(622535),
   u = n(780384),
   m = n(481060),
-  g = n(570140),
-  p = n(355467),
+  p = n(570140),
+  g = n(355467),
   h = n(37234),
   f = n(821849),
   b = n(230711),
   _ = n(497321),
   x = n(634894),
   E = n(410030),
-  j = n(607070),
-  C = n(100527),
+  C = n(607070),
+  j = n(100527),
   O = n(906732),
   S = n(211242),
   v = n(975298),
@@ -66,7 +66,7 @@ function es(e) {
     isDiscountApplied: n,
     activeDiscountInfo: r,
     theme: s
-  } = e, l = t.hasActiveTrial, a = t.planIdFromItems === q.Xh.PREMIUM_YEAR_TIER_2, c = n || l, d = null != t.trialEndsAt ? o()(t.trialEndsAt).diff(o()(), "d") : 0, g = q.GP[t.planIdFromItems], p = k.ZP.formatPriceString(k.ZP.getDefaultPrice(g.id), g.interval);
+  } = e, l = t.hasActiveTrial, a = t.planIdFromItems === q.Xh.PREMIUM_YEAR_TIER_2, c = n || l, d = null != t.trialEndsAt ? o()(t.trialEndsAt).diff(o()(), "d") : 0, p = q.GP[t.planIdFromItems], g = k.ZP.formatPriceString(k.ZP.getDefaultPrice(p.id), p.interval);
   if (c) {
     var h, f, b;
     return (0, i.jsxs)(i.Fragment, {
@@ -82,13 +82,13 @@ function es(e) {
         className: J.trialHeader,
         children: l ? Q.intl.format(Q.t["2CGBrq"], {
           remainingTime: d,
-          price: p
+          price: g
         }) : a ? Q.intl.format(Q.t["+qqh6u"], {
           percent: null != (h = null == r ? void 0 : r.percentage) ? h : q.Bo,
-          regularPrice: p
+          regularPrice: g
         }) : Q.intl.formatToPlainString(Q.t["3Ziutb"], {
           percent: null != (f = null == r ? void 0 : r.percentage) ? f : q.M_,
-          regularPrice: p,
+          regularPrice: g,
           numMonths: null != (b = null == r ? void 0 : r.duration) ? b : q.rt
         })
       })]
@@ -97,7 +97,7 @@ function es(e) {
   return (0, i.jsx)(W.Z, {
     variant: void 0,
     subscriptionTier: q.Si.TIER_2,
-    interval: g.interval
+    interval: p.interval
   })
 }
 
@@ -111,17 +111,17 @@ function el() {
     o = (0, B.W)(),
     d = null !== s && null !== s.planIdFromItems;
   if (!d && !a.isFractionalPremiumActive) return null;
-  let g = a.isFractionalPremiumActive,
-    p = null !== s && s.hasActiveTrial;
+  let p = a.isFractionalPremiumActive,
+    g = null !== s && s.hasActiveTrial;
   return (0, i.jsxs)("div", {
     className: l()(J.tierCard, {
-      [J.withTier2Rim]: t || p
+      [J.withTier2Rim]: t || g
     }),
     children: [(0, i.jsxs)("div", {
       className: J.tierInfo,
       children: [(0, i.jsx)(D.Z, {
         className: J.tierTitle
-      }), g && !o ? (0, i.jsxs)(i.Fragment, {
+      }), p && !o ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(z.mn, {
           text: Q.intl.string(Q.t.uXF4c3),
           className: J.fractionalPremiumTopRimPill,
@@ -153,8 +153,8 @@ function el() {
           })
         })]
       }) : null, (0, i.jsx)(z.nT, {
-        featureSet: g && !o ? z.uZ.FRACTIONAL_PREMIUM : z.uZ.DEFAULT
-      }), g && !d && (0, M.C)("nitro-settings-hero", e) ? (0, i.jsxs)(i.Fragment, {
+        featureSet: p && !o ? z.uZ.FRACTIONAL_PREMIUM : z.uZ.DEFAULT
+      }), p && !d && (0, M.C)("nitro-settings-hero", e) ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(H.Z, {
           buttonText: o ? Q.intl.string(Q.t.YScQSE) : Q.intl.string(Q.t["0b3YRk"]),
           buttonTextClassName: J.tierCardButtonCTA,
@@ -227,7 +227,7 @@ function ea(e) {
   let {
     className: t,
     config: n
-  } = e, r = (0, c.e7)([j.Z], () => j.Z.useReducedMotion) ? n.getStaticImageUrl() : n.getAnimatedImageUrl();
+  } = e, r = (0, c.e7)([C.Z], () => C.Z.useReducedMotion) ? n.getStaticImageUrl() : n.getAnimatedImageUrl();
   return (0, i.jsxs)("div", {
     className: l()(J.giftCardPromotion, t),
     children: [(0, i.jsx)("img", {
@@ -312,7 +312,7 @@ let ec = function() {
   let e = (0, S.Q)(),
     {
       analyticsLocations: t
-    } = (0, O.ZP)(C.Z.PREMIUM_SETTINGS),
+    } = (0, O.ZP)(j.Z.PREMIUM_SETTINGS),
     n = (0, c.e7)([R.ZP], () => R.ZP.getPremiumTypeSubscription()),
     s = (0, c.e7)([R.ZP], () => R.ZP.hasFetchedSubscriptions()),
     l = (0, T.V)(),
@@ -323,7 +323,7 @@ let ec = function() {
     h = (0, V.n)(),
     b = null == h ? void 0 : h.countryCode,
     E = (0, c.e7)([A.Z], () => A.Z.enabled),
-    j = r.useRef(null),
+    C = r.useRef(null),
     y = "PremiumManagementSettings";
   (0, x.j)({
     location: y + " auto on",
@@ -334,8 +334,8 @@ let ec = function() {
   }), (0, F.B)(y);
   let P = (0, G.b)(y);
   r.useEffect(() => {
-    g.Z.wait(async () => {
-      E || e || await Promise.all([p.jg(), p.tZ(), (0, f.Y2)(b, null, X.JjL.DISCOVERY)]), o(!1)
+    p.Z.wait(async () => {
+      E || e || await Promise.all([g.jg(), g.tZ(), (0, f.Y2)(b, null, X.JjL.DISCOVERY)]), o(!1)
     })
   }, [b, E, e]);
   let [D, w] = r.useState(!1);
@@ -365,14 +365,14 @@ let ec = function() {
           selectedPlanTier: q.p9.TIER_2
         })]
       }), (0, i.jsx)(d.$, {
-        innerRef: j,
+        innerRef: C,
         onChange: e => {
           e && !D && (Z.default.track(X.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
             location_stack: t
           }), w(!0))
         },
         children: (0, i.jsx)("div", {
-          ref: j,
+          ref: C,
           className: J.bottomOfPageVisibilitySensor
         })
       })]

@@ -1,9 +1,9 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  M8: () => p,
+  M8: () => g,
   Rd: () => h,
   VM: () => m,
-  gU: () => g,
+  gU: () => p,
   j_: () => f,
   mq: () => d,
   rW: () => u
@@ -37,13 +37,13 @@ function m() {
   return t.length >= n
 }
 
-function g() {
+function p() {
   let e = (0, i.e7)([r.default], () => r.default.getCurrentUser()),
     t = (0, i.e7)([s.Z], () => s.Z.getLinkedUsers());
   return null == e ? 0 : Object.values(t).filter(t => null != t && t.link_status === c.ne.PENDING && e.id !== t.requestor_id).length
 }
 
-function p() {
+function g() {
   let e = (0, i.e7)([r.default], () => r.default.getCurrentUser()),
     t = (0, i.e7)([s.Z], () => s.Z.getLinkedUsers());
   return null == e ? 0 : Object.values(t).filter(e => null != e && e.link_status === c.ne.ACTIVE).length

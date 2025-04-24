@@ -1,8 +1,8 @@
-/** Chunk was on 322 **/
+/** Chunk was on 53745 **/
 n.d(t, {
-  Sr: () => j,
-  Xq: () => x,
-  Zg: () => S
+  Sr: () => S,
+  Xq: () => j,
+  Zg: () => E
 }), n(415506);
 var r = n(186070),
   i = n(185514),
@@ -27,12 +27,12 @@ var r = n(186070),
 function C() {
   for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
   return t.map(e => {
-    let t = j[e];
+    let t = S[e];
     if (null == t) throw Error("getBindsFor(...): No bind for ".concat(t));
     return t.binds[0]
   })
 }
-let j = {
+let S = {
     [O.EkH.SERVER_NEXT]: p.nq,
     [O.EkH.SERVER_PREV]: p.X3,
     [O.EkH.CHANNEL_NEXT]: i.tQ,
@@ -62,11 +62,11 @@ let j = {
     [O.EkH.CALL_START]: r.FI,
     [O.EkH.QUICKSWITCHER_SHOW]: c.$
   },
-  x = {
+  j = {
     [O.EkH.QUICKSWITCHER_SHOW]: c.$
   };
 
-function S() {
+function E() {
   return [{
     description: v.intl.string(v.t.bx4Uy8),
     binds: C(O.EkH.SERVER_PREV, O.EkH.SERVER_NEXT)

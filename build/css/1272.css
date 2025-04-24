@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: b014921bd6c3f8e8
+  Original File Name: 4e458558bbfb2cfc
 **/
 .container__74da2 {
     align-items: center;
@@ -6799,6 +6799,86 @@ html:not(.visual-refresh) .sidebar_c48ade:not(.hidden_c48ade) {
     margin-right: 2px
 }
 
+.theme-light .customCircleAnimation__83ef9 {
+    animation: glow__83ef9 5s ease-in-out infinite,pulse__83ef9 5s ease-in-out infinite;
+    transition: stroke-dashoffset .5s ease-out
+}
+
+.theme-dark .customCircleAnimation__83ef9 {
+    animation: extra-glow__83ef9 5s ease-in-out infinite,pulse__83ef9 5s ease-in-out infinite;
+    transition: stroke-dashoffset .5s ease-out
+}
+
+@keyframes glow__83ef9 {
+    0%,50%,to {
+        filter: none
+    }
+
+    25%,75% {
+        filter: drop-shadow(0 0 5px var(--premium-tier-2-pink-for-gradients-2))
+    }
+}
+
+@keyframes extra-glow__83ef9 {
+    0%,50%,to {
+        filter: none
+    }
+
+    25%,75% {
+        filter: drop-shadow(0 0 2px var(--premium-tier-2-pink-for-gradients-2)) drop-shadow(0 0 2px var(--premium-tier-2-pink-for-gradients-2)) drop-shadow(0 0 5px var(--premium-tier-2-pink-for-gradients-2))
+    }
+}
+
+@keyframes pulse__83ef9 {
+    0%,50%,to {
+        stroke-width: 2
+    }
+
+    25%,75% {
+        stroke-width: 4
+    }
+}
+
+.coachTipContainer__83ef9 {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 8px
+}
+
+.iconContainer__83ef9 {
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+.iconContainer__83ef9,.incentiveIconContainer__83ef9 {
+    position: relative;
+    width: 92px
+}
+
+.coachtipContent__83ef9 {
+    max-width: 160px
+}
+
+.marketingBadgeTooltip__83ef9 {
+    margin-left: 10px;
+    max-width: 100%;
+    position: relative
+}
+
+.incentiveTooltipContent__83ef9,.tooltipContent__83ef9 {
+    padding: 2px 10px
+}
+
+.icon__83ef9 {
+    scale: 1.6
+}
+
+.trialBadgeBackground__83ef9 {
+    background-image: linear-gradient(to right,var(--premium-tier-2-purple-for-gradients),var(--premium-tier-2-pink-for-gradients));
+    z-index: 2
+}
+
 .premiumTrialBadge__94f65 {
     align-items: center;
     border-radius: 12px;
@@ -8641,4 +8721,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=b014921bd6c3f8e8.css.map*/
+/*# sourceMappingURL=4e458558bbfb2cfc.css.map*/

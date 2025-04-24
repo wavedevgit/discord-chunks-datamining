@@ -1,6 +1,6 @@
 /**
   Module ID: 44114
-  Original File Name: 2b2edbf7adf0de5b
+  Original File Name: 5642cc680506c336
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -1108,6 +1108,160 @@ h1.title_feb59c,h2.title_feb59c {
 .customStatusActionHoverText_b5ae07 {
     cursor: pointer;
     pointer-events: auto
+}
+
+.content_b00844 {
+    background: var(--brand-500);
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 280px;
+    padding: 32px 16px 16px;
+    position: relative;
+    text-align: center
+}
+
+.contentNoArt_b00844 {
+    padding-top: 16px
+}
+
+.contentPremium_b00844 {
+    background: linear-gradient(to right,var(--premium-tier-2-purple-for-gradients) 0,var(--premium-tier-2-purple-for-gradients-2) 50.24%,var(--premium-tier-2-pink-for-gradients) 100%)
+}
+
+.art_b00844 {
+    background-repeat: no-repeat;
+    background-size: contain
+}
+
+.artAbsolute_b00844 {
+    left: 50%;
+    position: absolute;
+    top: 0
+}
+
+.artInline_b00844 {
+    position: relative
+}
+
+.body_b00844 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.header_b00844 {
+    text-align: center
+}
+
+.headerWithPremiumIcon_b00844 {
+    text-indent: -24px
+}
+
+.premiumIcon_b00844 {
+    color: var(--white-500);
+    height: 20px;
+    margin: 0 4px -4px 0;
+    width: 20px
+}
+
+.button_b00844 {
+    height: 32px
+}
+
+.buttonContainerHorizontal_b00844 {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 8px;
+    justify-content: center;
+    margin: 0 16px
+}
+
+.buttonContainerHorizontal_b00844 .button_b00844 {
+    flex: 1;
+    min-width: unset
+}
+
+.buttonContainerVertical_b00844 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center
+}
+
+.content_b00844 &:not(.contentPremium_b00844) .confirmButton_b00844,.content_b00844 &:not(.contentPremium_b00844) .tryButton_b00844 {
+    color: var(--brand-500)
+}
+
+.pointer_b00844 {
+    border: 6px solid transparent;
+    height: 0;
+    pointer-events: none;
+    position: absolute;
+    width: 0
+}
+
+.bottomPointer_b00844 {
+    border-top-color: var(--brand-500);
+    left: 50%;
+    margin-left: -6px;
+    top: 100%
+}
+
+.centerLeftPointer_b00844 {
+    top: 50%
+}
+
+.centerLeftPointer_b00844,.topLeftPointer_b00844 {
+    border-left: 0;
+    border-right: 6px solid var(--brand-500);
+    left: -6px;
+    margin-top: -6px
+}
+
+.topLeftPointer_b00844 {
+    top: 22px
+}
+
+.gifTag_b00844 {
+    left: 8px;
+    pointer-events: none;
+    position: absolute;
+    top: 8px
+}
+
+.contentPremium_b00844 .pointer_b00844 {
+    border-top-color: #9652a8
+}
+
+.earlyAccessText_b00844 {
+    font-weight: 500;
+    letter-spacing: .75px;
+    padding-left: 2px;
+    padding-right: 4px
+}
+
+.earlyAccessIcon_b00844 {
+    color: var(--white-500);
+    height: 16px;
+    margin-right: 4px;
+    width: 16px
+}
+
+.earlyAccessBadgeContainer_b00844 {
+    border: 1px solid var(--white-500);
+    border-radius: 32px;
+    display: flex;
+    margin-bottom: 10px;
+    padding: 2px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content
 }
 
 .container__7e777 {
@@ -5549,6 +5703,129 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .brandShineDark_e4ef5c {
     color: var(--opacity-white-8)
+}
+
+.circleContainer_c1b44f {
+    overflow: visible;
+    position: relative
+}
+
+.childrenContainer_c1b44f,.circleContainer_c1b44f {
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+.childrenContainer_c1b44f {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.theme-light .baseProgressCircle_c1b44f {
+    stroke: var(--white-500)
+}
+
+.circleSVG_c1b44f {
+    height: 100%;
+    overflow: visible;
+    width: 100%
+}
+
+.nitroGemAnimation__7d30a {
+    animation: gemGlow__7d30a 5s ease-in-out infinite
+}
+
+.nitroGemContainer__7d30a {
+    overflow: visible
+}
+
+.gemBackgroundFill__7d30a {
+    fill: var(--background-primary)
+}
+
+.theme-light .gemBackgroundFill__7d30a {
+    fill: var(--white-500)
+}
+
+.progressCircle__7d30a {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%
+}
+
+.progressCricleBottomMargin__7d30a {
+    margin-bottom: 15px
+}
+
+@keyframes gemGlow__7d30a {
+    0%,50%,to {
+        filter: drop-shadow(0 0 0 hsl(var(--premium-tier-2-pink-for-gradients-2-hsl)/.6))
+    }
+
+    25%,75% {
+        filter: drop-shadow(0 0 20px hsl(var(--premium-tier-2-pink-for-gradients-2-hsl)/.6))
+    }
+}
+
+.activeProgressCircle__7d30a {
+    fill: transparent;
+    transform: rotate(-90deg);
+    transform-origin: center
+}
+
+.activeProgressCircleAnimation__7d30a {
+    animation: glow__7d30a 5s ease-in-out infinite,pulse__7d30a 5s ease-in-out infinite;
+    transition: stroke-dashoffset .5s ease-out
+}
+
+@keyframes glow__7d30a {
+    0%,50%,to {
+        filter: none
+    }
+
+    25%,75% {
+        filter: drop-shadow(0 0 5px var(--premium-tier-2-pink-for-gradients-2))
+    }
+}
+
+@keyframes pulse__7d30a {
+    0%,50%,to {
+        stroke-width: 2
+    }
+
+    25%,75% {
+        stroke-width: 3
+    }
+}
+
+.avatarDecoContainer__7d30a {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    padding: 12%;
+    width: 100%
+}
+
+.avatarDecoContainer__7d30a img:before {
+    background-color: transparent
+}
+
+.avatarDeco__7d30a {
+    align-items: center;
+    background: var(--background-primary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 15%
+}
+
+.avatarDecoImage__7d30a {
+    height: 100%;
+    width: 100%
 }
 
 .expandedProgressBarContainer_a61c56,.expandedProgressBarContainerSettingsPage_a61c56 {
@@ -18281,4 +18558,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=2b2edbf7adf0de5b.css.map*/
+/*# sourceMappingURL=5642cc680506c336.css.map*/

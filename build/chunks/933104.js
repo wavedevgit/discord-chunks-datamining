@@ -1,8 +1,8 @@
-/** Chunk was on 322 **/
+/** Chunk was on 53745 **/
 n.d(t, {
-  $h: () => S,
-  jG: () => x,
-  yI: () => E
+  $h: () => E,
+  jG: () => j,
+  yI: () => x
 });
 var r = n(200651);
 n(192379);
@@ -25,15 +25,15 @@ var i = n(120356),
   O = n(680278),
   v = n(388032),
   C = n(423151),
-  j = n(324670);
+  S = n(324670);
 
-function x(e) {
+function j(e) {
   let {
     guildId: t,
     powerup: n,
     markAsDismissed: i
   } = e;
-  return (0, r.jsx)(P, {
+  return (0, r.jsx)(I, {
     asset: (0, r.jsx)(m.g, {
       className: C.image
     }),
@@ -49,17 +49,17 @@ function x(e) {
   })
 }
 
-function S(e) {
+function E(e) {
   let {
     guildId: t,
     markAsDismissed: n
   } = e, i = (0, f.Z)(t), o = (0, p.Z)(t);
   if (0 === o.length) return;
   let s = o.length > 1 ? "".concat(o[0].title, " & ").concat(o[1].title) : "".concat(o[0].title);
-  return (0, r.jsx)(P, {
+  return (0, r.jsx)(I, {
     asset: (0, r.jsx)("img", {
       alt: "",
-      src: j.Z,
+      src: S.Z,
       className: l()(C.image, C.newPerksImage)
     }),
     header: v.intl.string(O.default.xyE2AQ),
@@ -80,7 +80,7 @@ function S(e) {
   })
 }
 
-function E(e) {
+function x(e) {
   let {
     guildId: t,
     powerups: n,
@@ -94,7 +94,7 @@ function E(e) {
   if (0 === n.length) return;
   let a = n.length > 1 ? "".concat(n[0].title, " & ").concat(n[1].title) : "".concat(n[0].title),
     u = 1 === n.length;
-  return (0, r.jsx)(P, {
+  return (0, r.jsx)(I, {
     asset: 1 === n.length ? (0, r.jsx)(m.m, {
       className: C.image,
       powerup: n[0]
@@ -115,7 +115,7 @@ function E(e) {
   })
 }
 
-function P(e) {
+function I(e) {
   var {
     asset: t,
     header: n,

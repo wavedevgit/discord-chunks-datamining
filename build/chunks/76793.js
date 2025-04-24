@@ -14,8 +14,8 @@ var d = n(630759),
   u = n(931500);
 n(921157);
 var m = n(892001),
-  g = n(594174),
-  p = n(51144),
+  p = n(594174),
+  g = n(51144),
   h = n(388032),
   f = n(552312);
 
@@ -25,7 +25,7 @@ function b(e) {
     count: n
   } = e, {
     analyticsLocations: u
-  } = (0, c.ZP)(), b = (0, s.e7)([g.default], () => g.default.getUser(t)), _ = p.ZP.getFormattedName(b), x = r.useCallback(() => {
+  } = (0, c.ZP)(), b = (0, s.e7)([p.default], () => p.default.getUser(t)), _ = g.ZP.getFormattedName(b), x = r.useCallback(() => {
     (0, d.Zn)(t)
   }, [t]), E = r.useCallback(() => (0, m.openUserProfileModal)({
     userId: t,

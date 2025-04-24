@@ -1,4 +1,4 @@
-/** Chunk was on 322 **/
+/** Chunk was on 53745 **/
 n.d(t, {
   Z: () => K
 }), n(388685), n(415506);
@@ -23,12 +23,12 @@ var i = n(120356),
   O = n(431328),
   v = n(501655),
   C = n(427679),
-  j = n(368442),
-  x = n(201469),
-  S = n(680089),
-  E = n(592125),
-  P = n(430824),
-  I = n(607744),
+  S = n(368442),
+  j = n(201469),
+  E = n(680089),
+  x = n(592125),
+  I = n(430824),
+  P = n(607744),
   w = n(496675),
   N = n(306680),
   Z = n(9156),
@@ -90,7 +90,7 @@ class W extends R.ZP {
     let {
       channel: e
     } = this.props;
-    return (0, A.rY)(e, T.Z, P.Z)
+    return (0, A.rY)(e, T.Z, I.Z)
   }
   getModeClass() {
     let {
@@ -145,7 +145,7 @@ class W extends R.ZP {
       isFavoriteSuggestion: O
     } = this.props, {
       shouldShowGuildVerificationPopout: v
-    } = this.state, C = this.getVoiceStatesCount(), j = (0, r.jsxs)("li", {
+    } = this.state, C = this.getVoiceStatesCount(), S = (0, r.jsxs)("li", {
       className: l()(this.getModeClass(), {
         [B.disabled]: this.isDisabled()
       }),
@@ -213,7 +213,7 @@ class W extends R.ZP {
         })
       }), this.renderVoiceUsers()]
     });
-    return p && (j = c(j)), d && (j = o(a(j))), j
+    return p && (S = c(S)), d && (S = o(a(S))), S
   }
   constructor(...e) {
     super(...e), H(this, "state", {
@@ -241,7 +241,7 @@ class W extends R.ZP {
     }), H(this, "handleContextMenu", e => {
       let {
         channel: t
-      } = this.props, i = P.Z.getGuild(t.getGuildId());
+      } = this.props, i = I.Z.getGuild(t.getGuildId());
       null != i && (0, c.jW)(e, async () => {
         let {
           default: e
@@ -323,9 +323,9 @@ function K(e) {
   } = e, c = (0, o.cj)([N.ZP], () => ({
     unread: N.ZP.hasUnread(n.id),
     mentionCount: N.ZP.getMentionCount(n.id)
-  })), u = (0, o.e7)([Z.ZP], () => Z.ZP.resolveUnreadSetting(n)), d = (0, o.cj)([E.Z, I.Z, w.Z], () => {
-    let e = E.Z.getChannel(n.parent_id),
-      r = I.Z.getCheck(n.guild_id);
+  })), u = (0, o.e7)([Z.ZP], () => Z.ZP.resolveUnreadSetting(n)), d = (0, o.cj)([x.Z, P.Z, w.Z], () => {
+    let e = x.Z.getChannel(n.parent_id),
+      r = P.Z.getCheck(n.guild_id);
     return {
       canManageChannel: null != t && w.Z.can(M.Plq.MANAGE_CHANNELS, n),
       canReorderChannel: !0 !== i && (t.id === U._ || (null != e ? w.Z.can(M.Plq.MANAGE_CHANNELS, e) : w.Z.can(M.Plq.MANAGE_CHANNELS, t))),
@@ -334,17 +334,17 @@ function K(e) {
       bypassLimit: w.Z.can(M.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), h = (0, o.e7)([S.Z], () => S.Z.isCollapsed(n.parent_id)), p = (0, x.ZP)(n.id), f = (0, o.e7)([C.Z], () => C.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, O.Rk)(n.id, v.pV.AUDIENCE), {
+  }), h = (0, o.e7)([E.Z], () => E.Z.isCollapsed(n.parent_id)), p = (0, j.ZP)(n.id), f = (0, o.e7)([C.Z], () => C.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, O.Rk)(n.id, v.pV.AUDIENCE), {
     isSubscriptionGated: b,
     needSubscriptionToAccess: y
-  } = (0, m.Z)(n.id), _ = (0, o.e7)([Z.ZP], () => Z.ZP.isFavorite(t.id, n.id)), P = (0, j.xJ)(n.id), T = (0, D.Z)({
+  } = (0, m.Z)(n.id), _ = (0, o.e7)([Z.ZP], () => Z.ZP.isFavorite(t.id, n.id)), I = (0, S.xJ)(n.id), T = (0, D.Z)({
     channel: n,
     isChannelSelected: !1,
     isChannelCollapsed: s,
     voiceStates: a,
     isSubscriptionGated: b,
     needSubscriptionToAccess: y,
-    enableConnectedUserLimit: P || n.userLimit > 0 && n.userLimit < M.xGv
+    enableConnectedUserLimit: I || n.userLimit > 0 && n.userLimit < M.xGv
   }), A = e.connected && null == T;
   return (0, r.jsx)(Y, z(F({
     categoryCollapsed: h,
