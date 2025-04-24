@@ -14,15 +14,15 @@ var i = t(512969),
   d = t(703656),
   p = t(430824),
   m = t(50101),
-  _ = t(639777),
-  x = t(504392),
+  x = t(639777),
+  _ = t(504392),
   f = t(981631);
 
 function v(e) {
   let {
     guildId: n,
     powerupSkuId: t
-  } = e, v = (0, s.e7)([p.Z], () => p.Z.getGuild(n)), g = (0, s.e7)([c.Z], () => c.Z.hasLoadedExperiments), j = (0, _.Z)(n), b = (0, d.At)(), h = (0, m.Ek)(n, "GuildPowerupsPage"), C = !g || null == j || null == v, N = (0, a.ZP)(null != b ? b : []);
+  } = e, v = (0, s.e7)([p.Z], () => p.Z.getGuild(n)), g = (0, s.e7)([c.Z], () => c.Z.hasLoadedExperiments), j = (0, x.Z)(n), b = (0, d.At)(), h = (0, m.Ek)(n, "GuildPowerupsPage"), C = !g || null == j || null == v, N = (0, a.ZP)(null != b ? b : []);
   return ((0, l.Z)({
     type: o.ImpressionTypes.VIEW,
     name: o.ImpressionNames.BOOST_SHOP_OPENED,
@@ -31,7 +31,7 @@ function v(e) {
     }
   }, {
     disableTrack: C
-  }), C) ? null : h ? j ? (0, r.jsx)(x.Z, {
+  }), C) ? null : h ? j ? (0, r.jsx)(_.Z, {
     guildId: n,
     powerupSkuId: t
   }) : (0, r.jsx)(u.Z, {
