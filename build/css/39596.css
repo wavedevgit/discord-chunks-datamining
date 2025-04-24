@@ -1,6 +1,6 @@
 /**
   Module ID: 39596
-  Original File Name: 0639f49e2a6d40f3
+  Original File Name: c96fdc44fb9d417a
 **/
 .container__4216d {
     align-items: center;
@@ -1103,6 +1103,11 @@
     object-fit: cover
 }
 
+.hiddenSpoiler__8f9ad {
+    filter: blur(var(--custom-message-attachment-spoiler-blur-radius));
+    pointer-events: none
+}
+
 .clickable__4337d {
     cursor: pointer
 }
@@ -1267,4 +1272,4 @@
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=0639f49e2a6d40f3.css.map*/
+/*# sourceMappingURL=c96fdc44fb9d417a.css.map*/

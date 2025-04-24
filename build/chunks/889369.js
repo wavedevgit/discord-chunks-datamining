@@ -1,6 +1,6 @@
 /** Chunk was on 58227 **/
 n.d(t, {
-  Z: () => p
+  Z: () => S
 }), n(388685), n(642613);
 var l, i, r, s = n(392711),
   a = n.n(s),
@@ -42,7 +42,7 @@ r = "GuildSettingsDefaultChannelsStore", (i = "displayName") in f ? Object.defin
   configurable: !0,
   writable: !0
 }) : f[i] = r;
-let p = new f(c.Z, {
+let S = new f(c.Z, {
   GUILD_SETTINGS_INIT: N,
   GUILD_SETTINGS_SET_SECTION: N,
   GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS: N,
