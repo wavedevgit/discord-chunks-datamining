@@ -189,7 +189,7 @@ function J(e) {
     blurred: !0,
     keydown: !1,
     keyup: !1
-  }, a)), d.Z.validateKeybind((0, y.BB)(e.shortcut))
+  }, a)), d.Z.validateKeybind((0, y.BB)(t))
 }
 
 function $(e) {

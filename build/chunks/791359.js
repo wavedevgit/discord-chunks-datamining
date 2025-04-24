@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => w
+  Z: () => L
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -27,10 +27,11 @@ var r = n(200651),
   S = n(525296),
   N = n(981631),
   T = n(674563),
-  P = n(388032),
-  j = n(370168);
-let A = 15 * E.Z.Millis.MINUTE,
-  Z = (0, S.Z)(function(e) {
+  P = n(46140),
+  j = n(388032),
+  A = n(370168);
+let Z = 15 * E.Z.Millis.MINUTE,
+  x = (0, S.Z)(function(e) {
     let {
       party: t,
       onUserContextMenu: n,
@@ -60,7 +61,7 @@ let A = 15 * E.Z.Millis.MINUTE,
         in_voice_channel: E,
         games_detected: e
       })
-    }, [g, m, b, E, h]), S = s()(O, A);
+    }, [g, m, b, E, h]), S = s()(O, Z);
     return null != o || null != c ? (0, r.jsx)(u.yRy, {
       position: "left",
       renderPopout: e => {
@@ -98,7 +99,7 @@ let A = 15 * E.Z.Millis.MINUTE,
         }({}, e), i = i = {
           onMouseEnter: S,
           "aria-haspopup": "menu",
-          className: j.itemCard,
+          className: A.itemCard,
           active: l,
           children: (0, r.jsxs)("div", {
             children: [o, c]
@@ -116,9 +117,9 @@ let A = 15 * E.Z.Millis.MINUTE,
       }
     }) : null
   }),
-  x = a().throttle(() => f.W(!1), 3e5);
+  w = a().throttle(() => f.W(!1), 3e5);
 
-function w() {
+function L() {
   let {
     nowPlayingCards: e,
     loaded: t,
@@ -133,19 +134,19 @@ function w() {
     currentUser: m.default.getCurrentUser()
   })), o = (0, c.e7)([p.Z], () => p.Z.quests);
   i.useEffect(() => (d.Z.wait(() => O.L()), () => d.Z.wait(() => O.v())), [null == a ? void 0 : a.id]), i.useEffect(() => {
-    n && !l && x()
+    n && !l && w()
   }, [n, l]);
   let s = i.useMemo(() => {
       let t = new Map,
-        n = new Set;
-      for (let r of e) r.party.currentActivities.forEach(e => {
+        n = new Set,
+        r = (0, h.MM)(o, P.l$);
+      for (let i of e) i.party.currentActivities.forEach(e => {
         let {
-          activity: i
+          activity: l
         } = e;
-        if (null != i) {
-          let e = (0, h.ZZ)(o, i);
-          null == e || n.has(e.id) || (t.set(r.party.id, e), n.add(e.id))
-        }
+        if (null == l) return;
+        let a = (0, h.ZZ)(r, l);
+        null == a || n.has(a.id) || (t.set(i.party.id, a), n.add(a.id))
       });
       return t
     }, [e, o]),
@@ -154,24 +155,24 @@ function w() {
     let {
       party: t
     } = e;
-    return (0, r.jsx)(Z, {
+    return (0, r.jsx)(x, {
       party: t,
       quest: s.get(t.id)
     }, t.id)
   }) : (0, r.jsxs)("div", {
-    className: j.emptyCard,
+    className: A.emptyCard,
     children: [(0, r.jsx)(u.X6q, {
       variant: "heading-md/semibold",
-      className: j.emptyHeader,
-      children: P.intl.string(P.t["ngJ/5u"])
+      className: A.emptyHeader,
+      children: j.intl.string(j.t["ngJ/5u"])
     }), (0, r.jsx)(u.Text, {
       color: "none",
-      className: j.emptyText,
+      className: A.emptyText,
       variant: "text-sm/normal",
-      children: P.intl.string(P.t["99ZWxc"])
+      children: j.intl.string(j.t["99ZWxc"])
     })]
   }) : (0, r.jsx)("div", {
-    className: j.emptyCard,
+    className: A.emptyCard,
     children: (0, r.jsx)(u.$jN, {})
   })
 }
