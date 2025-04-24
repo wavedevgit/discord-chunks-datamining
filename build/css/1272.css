@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: 4e458558bbfb2cfc
+  Original File Name: fd5e25895e07eac6
 **/
 .container__74da2 {
     align-items: center;
@@ -6749,39 +6749,21 @@ html:not(.visual-refresh) .sidebar_c48ade:not(.hidden_c48ade) {
 }
 
 .marketingButtonBackground__4ed1a {
-    border-radius: inherit;
-    bottom: 1px;
-    min-height: calc(100% - 2px);
-    overflow: hidden;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    bottom: 0;
+    height: 118px;
     pointer-events: none;
     position: absolute;
-    right: 0;
-    width: 224px
+    right: 0
 }
 
 .marketingButtonBackgroundImage__4ed1a {
-    display: block;
+    border-radius: inherit;
     height: 100%;
-    width: 100%
-}
-
-.marketingButtonImage__4ed1a {
-    bottom: 1px;
-    opacity: 0;
-    pointer-events: none;
-    position: absolute;
-    right: -180px;
-    transition: opacity 1s ease-in-out;
-    width: 400px;
-    z-index: 2
-}
-
-.marketingButtonImageHovered__4ed1a {
-    opacity: 1
-}
-
-.visual-refresh .marketingButtonBackgroundImage__4ed1a {
-    transform: translateY(4px)
+    max-width: 100%;
+    object-fit: cover;
+    object-position: bottom right
 }
 
 .countDown__61bcd {
@@ -8721,4 +8703,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=4e458558bbfb2cfc.css.map*/
+/*# sourceMappingURL=fd5e25895e07eac6.css.map*/
