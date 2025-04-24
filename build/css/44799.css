@@ -1,6 +1,6 @@
 /**
   Module ID: 44799
-  Original File Name: b57bdbf9973ca7a5
+  Original File Name: e2d9a7a42538bf5e
 **/
 .parentContainer__98cbd {
     display: flex;
@@ -23,14 +23,6 @@
     opacity: 0
 }
 
-.parentContainer__98cbd:hover .container__98cbd.active__98cbd {
-    box-shadow: 0 0 59.4px 0 hsla(var(--green-330-hsl)/.12) inset,var(--shadow-high)
-}
-
-.parentContainer__98cbd:hover .container__98cbd.warning__98cbd {
-    box-shadow: 0 0 59.4px 0 hsla(var(--yellow-330-hsl)/.12) inset,var(--shadow-high)
-}
-
 .container__98cbd {
     background-color: var(--channeltextarea-background);
     border-color: var(--channeltextarea-background);
@@ -45,13 +37,11 @@
 }
 
 .container__98cbd.active__98cbd {
-    border-color: hsla(var(--green-360-hsl)/.3);
-    box-shadow: 0 0 59.4px 0 hsla(var(--green-330-hsl)/.12) inset
+    border-color: hsla(var(--green-360-hsl)/.25)
 }
 
 .container__98cbd.warning__98cbd {
-    border-color: var(--status-warning);
-    box-shadow: 0 0 59.4px 0 hsla(var(--yellow-330-hsl)/.12) inset
+    border-color: var(--status-warning)
 }
 
 .contentContainer__98cbd {
@@ -549,4 +539,4 @@
     transition: padding-left .2s ease
 }
 
-/*# sourceMappingURL=b57bdbf9973ca7a5.css.map*/
+/*# sourceMappingURL=e2d9a7a42538bf5e.css.map*/
