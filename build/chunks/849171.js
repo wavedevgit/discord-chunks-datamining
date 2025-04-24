@@ -1,9 +1,9 @@
 /** Chunk was on 81489 **/
 n.d(t, {
   Ix: () => k,
-  OV: () => F,
+  OV: () => V,
   V_: () => U,
-  Ym: () => V,
+  Ym: () => F,
   ZP: () => H,
   ac: () => W,
   bn: () => L,
@@ -49,11 +49,11 @@ function U(e) {
   return e > 400 ? 2 : +(e > 300)
 }
 
-function V(e) {
+function F(e) {
   return e > 400 ? [c.EFr.SIZE_56, 56] : e > 300 ? [c.EFr.SIZE_32, 32] : [c.EFr.SIZE_24, 24]
 }
 
-function F(e) {
+function V(e) {
   let {
     avatarSize: t,
     guildId: n,
@@ -99,7 +99,7 @@ function Y(e) {
     application: a,
     channel: E,
     width: v
-  } = e, h = U(v), [S] = V(v), b = (0, u.Wu)([R.default, x.default], () => Array.from(r).map(e => (0, p.J)(e, x.default) ? null : R.default.getUser(e.userId)).filter(N.lm)), y = (0, u.e7)([f.ZP], () => {
+  } = e, h = U(v), [S] = F(v), b = (0, u.Wu)([R.default, x.default], () => Array.from(r).map(e => (0, p.J)(e, x.default) ? null : R.default.getUser(e.userId)).filter(N.lm)), y = (0, u.e7)([f.ZP], () => {
     var e;
     return null != (e = f.ZP.getEmbeddedActivitiesForChannel(E.id).find(e => e.applicationId === a.id)) ? e : f.ZP.getEmbeddedActivitiesForStartingChannel(E.id).find(e => e.applicationId === a.id)
   }), {
@@ -120,7 +120,7 @@ function Y(e) {
   });
   return (0, l.jsxs)("div", {
     className: D.splash,
-    children: [(0, l.jsx)(F, {
+    children: [(0, l.jsx)(V, {
       avatarSize: S,
       guildId: w,
       channelId: E.id,

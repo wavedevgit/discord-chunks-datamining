@@ -98,8 +98,8 @@ function D(e) {
     noVideoRender: L = !1,
     pulseSpeakingIndicator: k = !1,
     inOverlayPopout: U = !1,
-    paused: V = !1
-  } = e, F = O.Z.getVideoComponent(), W = (0, o.e7)([b.default], () => b.default.getId()), {
+    paused: F = !1
+  } = e, V = O.Z.getVideoComponent(), W = (0, o.e7)([b.default], () => b.default.getId()), {
     user: Y,
     streamId: H,
     speaking: z
@@ -125,7 +125,7 @@ function D(e) {
       user: n
     } = eo.current;
     e.isGuildStageVoice() && !K && (null == t ? void 0 : t.id) === n.id && u.Z.selectParticipant(e.id, null)
-  }, [K]), i && !J && !L && K && !S && null != F && O.Z.supports(x.AN.VIDEO)) ? null != el && null == ei ? (0, r.jsx)(_.Z, {
+  }, [K]), i && !J && !L && K && !S && null != V && O.Z.supports(x.AN.VIDEO)) ? null != el && null == ei ? (0, r.jsx)(_.Z, {
     avError: el,
     userId: t.id,
     width: s,
@@ -136,10 +136,10 @@ function D(e) {
     className: R.content,
     mirror: G,
     streamId: H,
-    videoComponent: F,
+    videoComponent: V,
     fit: P,
     videoSpinnerContext: Y.id === W ? c.m.SELF_VIDEO : c.m.REMOTE_VIDEO,
-    paused: V,
+    paused: F,
     userId: Y.id
   }, H) : (0, r.jsx)("div", {
     className: a()(R.content, {
