@@ -9,6 +9,7 @@ let {
 } = n(164484), i = r({
   bg: () => n.e("83671").then(n.t.bind(n, 77915, 19)),
   cs: () => n.e("18360").then(n.t.bind(n, 19722, 19)),
+  da: () => n.e("68868").then(n.t.bind(n, 213363, 19)),
   de: () => n.e("20393").then(n.t.bind(n, 254517, 19)),
   el: () => n.e("99537").then(n.t.bind(n, 63771, 19)),
   "en-GB": () => n.e("3671").then(n.t.bind(n, 196155, 19)),
