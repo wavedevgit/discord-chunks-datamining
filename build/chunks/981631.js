@@ -238,6 +238,7 @@ n.d(t, {
   hUK: () => nu,
   hVg: () => nI,
   hes: () => B,
+  hiG: () => r0,
   i$l: () => g.i$,
   iC$: () => rE,
   iEv: () => rt,
@@ -2522,11 +2523,12 @@ var rX = function(e) {
     return e.LOADING = "LOADING", e.ERROR = "ERROR", e.READY = "READY", e
   }({});
 let r$ = Object.freeze({
-  APPLICATIONS: e => null == e ? null : ["applications", e],
-  APP_PREMIUM_BUTTON: e => null == e ? null : ["premium-button", e],
-  CUSTOM_ACTIVITY_LINK: (e, t) => null == e || null == t ? null : ["custom-activity-links", e, t],
-  SKU: e => null == e ? null : ["SKU", e],
-  STORE_LISTING: e => null == e ? null : ["store-listing", e],
-  SUBSCRIPTION_PLANS: e => null == e ? null : ["subscription-plans", e],
-  __DO_NOT_USE__STOREFRONT_MESSAGE_EMBED_PARENT_SKU: e => null == e ? null : ["useParentSkuData", e]
-})
+    APPLICATIONS: e => null == e ? null : ["applications", e],
+    APP_PREMIUM_BUTTON: e => null == e ? null : ["premium-button", e],
+    CUSTOM_ACTIVITY_LINK: (e, t) => null == e || null == t ? null : ["custom-activity-links", e, t],
+    SKU: e => null == e ? null : ["SKU", e],
+    STORE_LISTING: e => null == e ? null : ["store-listing", e],
+    SUBSCRIPTION_PLANS: e => null == e ? null : ["subscription-plans", e],
+    __DO_NOT_USE__STOREFRONT_MESSAGE_EMBED_PARENT_SKU: e => null == e ? null : ["useParentSkuData", e]
+  }),
+  r0 = 4096
