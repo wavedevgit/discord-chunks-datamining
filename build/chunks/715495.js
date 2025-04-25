@@ -21,7 +21,7 @@ var i = n(200651),
   x = n(731994),
   E = n(396921);
 
-function C(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -40,7 +40,7 @@ function C(e) {
   return e
 }
 
-function j(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -70,12 +70,12 @@ function O() {
       src: e,
       palette: g.jD,
       preview: !0
-    } : j(C({}, t), {
+    } : C(j({}, t), {
       src: e,
       preview: !0
     }))
   }, [m]), P = (0, r.useCallback)(e => {
-    c(t => null == t ? null : j(C({}, t), {
+    c(t => null == t ? null : C(j({}, t), {
       palette: e,
       preview: !0
     }))

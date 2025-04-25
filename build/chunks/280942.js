@@ -54,7 +54,7 @@ function h(e) {
     onSelect: _,
     fractionalState: x,
     user: E
-  } = e, C = {
+  } = e, j = {
     transfer: {
       label: null != t.premiumGuildSubscription ? u.intl.string(u.t["PR0n//"]) : u.intl.string(u.t["+fmEYG"]),
       subtext: t.isOnCooldown() ? u.intl.string(u.t.XnB8Mz) : null,
@@ -73,13 +73,13 @@ function h(e) {
   };
   switch (b.status) {
     case c.O0b.PAST_DUE:
-      C.cancel.disabled = !0, C.cancel.subtext = u.intl.string(u.t.WnL6DQ), C.uncancel.disabled = !0;
+      j.cancel.disabled = !0, j.cancel.subtext = u.intl.string(u.t.WnL6DQ), j.uncancel.disabled = !0;
       break;
     case c.O0b.PAUSE_PENDING:
     case c.O0b.PAUSED:
-      x === d.a$.NONE && (C.transfer.disabled = !0, C.transfer.subtext = u.intl.string(u.t.LiLRRU), (0, a.y)("guild_boost_slot_popout", E, x) || (C.cancel.subtext = u.intl.string(u.t["1ywaWF"]), C.cancel.disabled = !0, C.uncancel.disabled = !0))
-  }(0, a.y)("guild_boost_slot_popout", E, x) && (C.cancel.subtext = u.intl.string(u.t.dq4vq6), C.cancel.disabled = !0, C.uncancel.disabled = !0);
-  let j = r.useMemo(() => b.isPausedOrPausePending && x === d.a$.NONE ? (0, i.jsx)(s.sNh, {
+      x === d.a$.NONE && (j.transfer.disabled = !0, j.transfer.subtext = u.intl.string(u.t.LiLRRU), (0, a.y)("guild_boost_slot_popout", E, x) || (j.cancel.subtext = u.intl.string(u.t["1ywaWF"]), j.cancel.disabled = !0, j.uncancel.disabled = !0))
+  }(0, a.y)("guild_boost_slot_popout", E, x) && (j.cancel.subtext = u.intl.string(u.t.dq4vq6), j.cancel.disabled = !0, j.uncancel.disabled = !0);
+  let C = r.useMemo(() => b.isPausedOrPausePending && x === d.a$.NONE ? (0, i.jsx)(s.sNh, {
     id: "manage-subscription",
     label: u.intl.string(u.t.obRG6e),
     action: () => l.Z.open(c.oAB.SUBSCRIPTIONS),
@@ -94,8 +94,8 @@ function h(e) {
     onClose: h,
     children: [(0, i.jsx)(s.sNh, {
       id: "apply",
-      label: C.transfer.label,
-      subtext: C.transfer.subtext,
+      label: j.transfer.label,
+      subtext: j.transfer.subtext,
       action: function() {
         (0, s.ZDy)(async () => {
           let {
@@ -107,11 +107,11 @@ function h(e) {
           }))
         })
       },
-      disabled: C.transfer.disabled
+      disabled: j.transfer.disabled
     }), (0, o.tl)(t) ? (0, i.jsx)(s.sNh, {
       id: "uncancel",
-      label: C.uncancel.label,
-      subtext: C.uncancel.subtext,
+      label: j.uncancel.label,
+      subtext: j.uncancel.subtext,
       action: function() {
         (0, s.ZDy)(async () => {
           let {
@@ -122,11 +122,11 @@ function h(e) {
           }))
         })
       },
-      disabled: C.uncancel.disabled
+      disabled: j.uncancel.disabled
     }) : (0, i.jsx)(s.sNh, {
       id: "cancel",
-      label: C.cancel.label,
-      subtext: C.cancel.subtext,
+      label: j.cancel.label,
+      subtext: j.cancel.subtext,
       action: function() {
         (0, s.ZDy)(async () => {
           let {
@@ -137,8 +137,8 @@ function h(e) {
           }))
         })
       },
-      disabled: C.cancel.disabled,
+      disabled: j.cancel.disabled,
       color: "danger"
-    }), j]
+    }), C]
   })
 }

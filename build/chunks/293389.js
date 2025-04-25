@@ -20,8 +20,8 @@ var i = n(200651),
   _ = n(626135),
   x = n(251625),
   E = n(358085),
-  C = n(210887),
-  j = n(981631),
+  j = n(210887),
+  C = n(981631),
   O = n(388032),
   S = n(443474),
   v = n(20795),
@@ -60,8 +60,8 @@ function A(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let P = a.ZP.connectStores([C.Z], () => ({
-    theme: C.Z.theme
+let P = a.ZP.connectStores([j.Z], () => ({
+    theme: j.Z.theme
   }))(c.ubH),
   R = (0, E.isWindows)();
 
@@ -116,7 +116,7 @@ function Z(e) {
     rawGame: n,
     nowPlaying: s = !1,
     isOverride: g
-  } = e, x = (0, a.cj)([p.ZP, f.Z, b.Z], () => (0, p.FZ)(n, [p.ZP, f.Z, b.Z])), [E, C] = r.useState(!1), [v, N] = r.useState(null != (t = x.name) ? t : "???"), P = l()(T.flexCenter, {
+  } = e, x = (0, a.cj)([p.ZP, f.Z, b.Z], () => (0, p.FZ)(n, [p.ZP, f.Z, b.Z])), [E, j] = r.useState(!1), [v, N] = r.useState(null != (t = x.name) ? t : "???"), P = l()(T.flexCenter, {
     [S.game]: !s,
     [S.activeGame]: s,
     [I.card]: !s,
@@ -130,12 +130,12 @@ function Z(e) {
   function Z() {
     if (E) return;
     let e = null != x.id ? f.Z.getDetectableGame(x.id) : null;
-    _.default.track(j.rMx.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
+    _.default.track(C.rMx.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
       application_id: null == e ? void 0 : e.id,
       game_name: x.name
     }), (0, c.showToast)((0, c.createToast)(O.intl.formatToPlainString(O.t["6klMOj"], {
       gameName: x.name
-    }), c.ToastType.SUCCESS)), C(!0)
+    }), c.ToastType.SUCCESS)), j(!0)
   }
   return (0, i.jsxs)("div", {
     className: P,

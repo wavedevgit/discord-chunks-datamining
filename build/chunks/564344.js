@@ -20,8 +20,8 @@ var i = n(200651),
   _ = n(16703),
   x = n(785145),
   E = n(981631),
-  C = n(526761),
-  j = n(726985),
+  j = n(526761),
+  C = n(726985),
   O = n(388032),
   S = n(545784);
 
@@ -52,7 +52,7 @@ function v() {
         }), b.S.dispatch(E.CkL.EMPHASIZE_NOTICE);
         return
       }
-      t === C.NB.GUILD && null == e && null != v && (0, c.Fq)(v), N(t)
+      t === j.NB.GUILD && null == e && null != v && (0, c.Fq)(v), N(t)
     }
   }
   r.useEffect(() => {
@@ -62,7 +62,7 @@ function v() {
   }, [null == v ? void 0 : v.id, T]);
   let R = !0,
     D = !0;
-  return y && 1 === A.length && (A.includes(j.s6.PROFILE_SERVER_PROFILES) ? (P(C.NB.GUILD), D = !1) : A.includes(j.s6.PROFILE_USER_PROFILE) && (P(C.NB.USER_PROFILE), R = !1)), (0, i.jsxs)(l.y5t, {
+  return y && 1 === A.length && (A.includes(C.s6.PROFILE_SERVER_PROFILES) ? (P(j.NB.GUILD), D = !1) : A.includes(C.s6.PROFILE_USER_PROFILE) && (P(j.NB.USER_PROFILE), R = !1)), (0, i.jsxs)(l.y5t, {
     component: (0, i.jsx)(l.X6q, {
       variant: "heading-lg/semibold",
       children: O.intl.string(O.t["vi7f+v"])
@@ -75,14 +75,14 @@ function v() {
       onItemSelect: P,
       children: [D ? (0, i.jsx)(l.njP.Item, {
         className: S.tabBarItem,
-        id: C.NB.USER_PROFILE,
+        id: j.NB.USER_PROFILE,
         children: O.intl.string(O.t["2p07FR"])
-      }, C.NB.USER_PROFILE) : null, R ? (0, i.jsx)(l.njP.Item, {
+      }, j.NB.USER_PROFILE) : null, R ? (0, i.jsx)(l.njP.Item, {
         className: S.tabBarItem,
-        id: C.NB.GUILD,
+        id: j.NB.GUILD,
         children: O.intl.string(O.t.kPHroa)
-      }, C.NB.GUILD) : null]
-    }), I === C.NB.GUILD ? (0, i.jsx)(u.Z, {
+      }, j.NB.GUILD) : null]
+    }), I === j.NB.GUILD ? (0, i.jsx)(u.Z, {
       selectedGuild: v
     }) : (0, i.jsx)(p.Z, {})]
   })

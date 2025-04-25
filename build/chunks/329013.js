@@ -21,8 +21,8 @@ var i = n(200651),
   _ = n(605236),
   x = n(104494),
   E = n(639119),
-  C = n(311476),
-  j = n(165583),
+  j = n(311476),
+  C = n(165583),
   O = n(197115),
   S = n(504983),
   v = n(626135),
@@ -44,7 +44,7 @@ let R = () => {
       analyticsLocations: n
     } = (0, p.ZP)(m.Z.USER_SETTINGS), l = (0, s.e7)([h.Z], () => h.Z.isPreview), a = (null == (t = (0, E.N)()) || null == (e = t.subscription_trial) ? void 0 : e.sku_id) === y.Si.TIER_2, c = (0, x.Ng)(), d = (0, x.Wp)(c, y.Si.TIER_2), u = !l || a, {
       enabled: g
-    } = C.Z.getCurrentConfig({
+    } = j.Z.getCurrentConfig({
       location: "UserSettingsAppearanceClientThemes"
     }, {
       autoTrackExposure: !u,
@@ -96,7 +96,7 @@ let R = () => {
                 children: A.intl.string(A.t["E+COuL"])
               }), (0, i.jsx)("div", {
                 className: P.premiumTier2Divider
-              }), (0, i.jsx)(j.ZP, {
+              }), (0, i.jsx)(C.ZP, {
                 type: y.cd.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL,
                 subscriptionTier: y.Si.TIER_2
               })]

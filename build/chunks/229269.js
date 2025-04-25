@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  f: () => j
+  f: () => C
 }), n(388685), n(49124);
 var i = n(200651),
   r = n(192379),
@@ -39,7 +39,7 @@ function E(e) {
   return e
 }
 
-function C(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,7 +52,7 @@ function C(e, t) {
   }), e
 }
 
-function j() {
+function C() {
   return (0, i.jsx)(m.PaymentContextProvider, {
     stepConfigs: [],
     skuIDs: [],
@@ -204,7 +204,7 @@ function N() {
     }), (0, i.jsx)(h.E_, {
       label: "All Payment Request Wallets Enabled",
       children: (0, i.jsx)(I, {
-        children: (0, i.jsx)(c.ZP, C(E({}, e), {
+        children: (0, i.jsx)(c.ZP, j(E({}, e), {
           onChooseType: () => {},
           paymentRequestWallets: ["googlePay", "applePay"]
         }))
@@ -212,7 +212,7 @@ function N() {
     }), (0, i.jsx)(h.E_, {
       label: "No Payment Wallets Enabled",
       children: (0, i.jsx)(I, {
-        children: (0, i.jsx)(c.ZP, C(E({}, e), {
+        children: (0, i.jsx)(c.ZP, j(E({}, e), {
           onChooseType: () => {},
           paymentRequestWallets: []
         }))
@@ -220,7 +220,7 @@ function N() {
     }), (0, i.jsx)(h.E_, {
       label: "Is Eligible for Trial",
       children: (0, i.jsx)(I, {
-        children: (0, i.jsx)(c.ZP, C(E({}, e), {
+        children: (0, i.jsx)(c.ZP, j(E({}, e), {
           isEligibleForTrial: !0,
           onChooseType: () => {},
           paymentRequestWallets: []
@@ -229,7 +229,7 @@ function N() {
     }), (0, i.jsx)(h.E_, {
       label: "Only Stripe Card Enabled",
       children: (0, i.jsx)(I, {
-        children: (0, i.jsx)(c.ZP, C(E({}, e), {
+        children: (0, i.jsx)(c.ZP, j(E({}, e), {
           onChooseType: () => {},
           paymentRequestWallets: [],
           paymentSourceTypeRestrictions: [f.He.CARD.valueOf()]

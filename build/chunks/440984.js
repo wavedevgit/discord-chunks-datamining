@@ -25,8 +25,8 @@ function E(e) {
     premiumSubscription: t,
     premiumType: n,
     onClose: E,
-    confettiCanvas: C,
-    userWasChurned: j = !1,
+    confettiCanvas: j,
+    userWasChurned: C = !1,
     userDiscountOffer: O
   } = e, S = (0, o.ZP)(), v = (0, l.wj)(S) ? _ : x, T = r.useRef(null), [I, N] = r.useState(!1), y = (0, p._)(t, h.Xh.PREMIUM_MONTH_TIER_2, O), A = (0, u.aS)(h.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
     currency: t.currency,
@@ -66,7 +66,7 @@ function E(e) {
               className: b.nitroIcon
             }), (0, i.jsx)(a.X6q, {
               variant: "heading-xl/bold",
-              children: j ? f.intl.string(f.t.gOOPaG) : f.intl.string(f.t.PZSyRk)
+              children: C ? f.intl.string(f.t.gOOPaG) : f.intl.string(f.t.PZSyRk)
             })]
           }), (0, i.jsx)("div", {
             className: b.bodyString,
@@ -76,7 +76,7 @@ function E(e) {
       })
     }), !R && I && (0, i.jsx)(d.Z, {
       confettiTarget: T.current,
-      confettiCanvas: C,
+      confettiCanvas: j,
       confettiVelocityMultiplier: .75
     })]
   })

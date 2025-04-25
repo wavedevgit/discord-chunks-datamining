@@ -25,8 +25,8 @@ let d = r.forwardRef(function(e, t) {
     onMouseEnter: _,
     onMouseLeave: x,
     "aria-label": E,
-    "aria-checked": C,
-    role: j,
+    "aria-checked": j,
+    role: C,
     tooltipColor: O,
     tooltipForceOpen: S,
     tooltipContentClassName: v,
@@ -107,8 +107,8 @@ let d = r.forwardRef(function(e, t) {
           null == E || E(), null == x || x()
         },
         onContextMenu: s,
-        role: j,
-        "aria-checked": C,
+        role: C,
+        "aria-checked": j,
         focusProps: {
           offset: {
             left: -1,

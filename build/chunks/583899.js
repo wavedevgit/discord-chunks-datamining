@@ -24,10 +24,10 @@ function p(e) {
     guildIcon: f,
     guildIconSize: b,
     memberCount: _
-  } = e, x = r.useRef(null), [E, C] = r.useState(!1);
+  } = e, x = r.useRef(null), [E, j] = r.useState(!1);
   return r.useEffect(() => {
     let e = x.current;
-    null != e && null != e.offsetWidth && null != e.scrollWidth && C(e.offsetWidth < e.scrollWidth)
+    null != e && null != e.offsetWidth && null != e.scrollWidth && j(e.offsetWidth < e.scrollWidth)
   }, []), (0, i.jsxs)("div", {
     className: l()(m.container, t),
     children: [(0, i.jsxs)("div", {

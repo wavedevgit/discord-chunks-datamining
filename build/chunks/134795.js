@@ -28,7 +28,7 @@ function p(e) {
     withHighlight: x = !1
   } = e, {
     newestAnalyticsLocation: E
-  } = (0, a.ZP)(), C = x ? l.gtL : l.zxk;
+  } = (0, a.ZP)(), j = x ? l.gtL : l.zxk;
   return (0, i.jsx)(c.Z, {
     className: g,
     title: u.intl.string(u.t.Vgdusr),
@@ -38,7 +38,7 @@ function p(e) {
     forcedDivider: _,
     children: (0, i.jsxs)("div", {
       className: m.buttonsContainer,
-      children: [(0, i.jsx)(C, {
+      children: [(0, i.jsx)(j, {
         className: s()({
           [m.buttonHighlighted]: x
         }),

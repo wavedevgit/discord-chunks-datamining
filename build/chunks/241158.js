@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => C
+  Z: () => j
 }), n(953529);
 var i = n(200651),
   r = n(192379),
@@ -45,8 +45,8 @@ let E = e => {
       descriptionCta: b,
       previewImage: x,
       videoUrl: E,
-      shouldLoadVideo: C,
-      index: j,
+      shouldLoadVideo: j,
+      index: C,
       isCompact: O,
       isReducedMotion: S,
       onClick: v
@@ -124,7 +124,7 @@ let E = e => {
         }),
         children: (0, i.jsx)(u.Z, {
           playsInline: !0,
-          preload: C ? "auto" : "none",
+          preload: j ? "auto" : "none",
           muted: !0,
           poster: x,
           loop: !0,
@@ -140,7 +140,7 @@ let E = e => {
           })
         }, E)
       })
-    }, B = j % 2 != 0;
+    }, B = C % 2 != 0;
     return (0, i.jsx)("div", {
       className: l()(y, {
         [_.whatsNewBoxContainer]: !O,
@@ -161,7 +161,7 @@ let E = e => {
       })
     })
   },
-  C = r.memo(function(e) {
+  j = r.memo(function(e) {
     let {
       className: t,
       shouldLoadVideo: n,

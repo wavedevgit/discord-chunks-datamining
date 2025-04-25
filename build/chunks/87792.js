@@ -20,8 +20,8 @@ var i = n(200651),
   _ = n(880257),
   x = n(631885),
   E = n(240351),
-  C = n(792258),
-  j = n(657825),
+  j = n(792258),
+  C = n(657825),
   O = n(198952),
   S = n(329242),
   v = n(895328),
@@ -92,11 +92,11 @@ function D(e) {
       let {
         row: t
       } = e, n = a[t];
-      return (0, m.iB)(n) ? (0, i.jsx)(j.Z, {
+      return (0, m.iB)(n) ? (0, i.jsx)(C.Z, {
         userId: n.entity_id,
         timestamp: d.default.extractTimestamp(n.event_id),
         timestampFormatter: b.timestampFormatter
-      }, n.event_id) : (0, m.f0)(n) ? (0, i.jsx)(C.Z, {
+      }, n.event_id) : (0, m.f0)(n) ? (0, i.jsx)(j.Z, {
         guildId: n.entity_id
       }, n.event_id) : void 0
     }, [a, b.timestampFormatter]),

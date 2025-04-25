@@ -1,7 +1,7 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Sz: () => j,
-  of: () => C
+  Sz: () => C,
+  of: () => j
 }), n(539854), n(388685), n(642613);
 var i = n(200651),
   r = n(192379),
@@ -39,7 +39,7 @@ async function E(e) {
   }
 }
 
-function C(e) {
+function j(e) {
   let {
     premiumType: t,
     onClose: n,
@@ -110,7 +110,7 @@ function C(e) {
   })
 }
 
-function j(e) {
+function C(e) {
   let {
     premiumSubscription: t,
     premiumType: n,
@@ -118,8 +118,8 @@ function j(e) {
     pauseDuration: a,
     analyticsLocation: d
   } = e, [u, h] = r.useState(!1), {
-    analyticsLocations: C
-  } = (0, p.ZP)(), [j, O] = r.useState(!1), S = (0, m.ZP)(), v = null, T = null, I = [b.O0b.PAST_DUE, b.O0b.PAUSED].includes(t.status) ? t.currentPeriodStart : t.currentPeriodEnd, N = l()(I).add(a, "days").toDate();
+    analyticsLocations: j
+  } = (0, p.ZP)(), [C, O] = r.useState(!1), S = (0, m.ZP)(), v = null, T = null, I = [b.O0b.PAST_DUE, b.O0b.PAUSED].includes(t.status) ? t.currentPeriodStart : t.currentPeriodEnd, N = l()(I).add(a, "days").toDate();
   switch (t.status) {
     case b.O0b.PAST_DUE:
       T = _.intl.format(_.t["xaS18/"], {
@@ -168,7 +168,7 @@ function j(e) {
         className: x.whatYouLoseButtonContainer,
         children: [(0, i.jsx)(c.zxk, {
           color: c.zxk.Colors.RED,
-          disabled: j || null == a,
+          disabled: C || null == a,
           onClick: async () => {
             await E({
               premiumSubscription: t,
@@ -176,7 +176,7 @@ function j(e) {
               setIsCancelling: O,
               setHasError: h,
               onClose: s,
-              analyticsLocations: C,
+              analyticsLocations: j,
               analyticsLocation: d
             })
           },

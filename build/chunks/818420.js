@@ -24,16 +24,16 @@ function f(e) {
   } = (0, a.ZP)(), f = t.nameplate, {
     pendingNameplate: b,
     pendingErrors: _
-  } = (0, u._A)(), x = [s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE], [E, C] = (0, o.US)(x), j = E === s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, O = r.useCallback(() => {
-    C(p.L.TAKE_ACTION), (0, d.f)({
+  } = (0, u._A)(), x = [s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE], [E, j] = (0, o.US)(x), C = E === s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, O = r.useCallback(() => {
+    j(p.L.TAKE_ACTION), (0, d.f)({
       analyticsLocations: n
     })
-  }, [n, C]), S = r.useCallback(() => {
+  }, [n, j]), S = r.useCallback(() => {
     (0, u.Wh)(null)
   }, []);
   return (0, i.jsx)(m.Z, {
     title: g.intl.string(g.t.x5CoXV),
-    titleIcon: j ? (0, i.jsx)(c.Z, {
+    titleIcon: C ? (0, i.jsx)(c.Z, {
       className: h.newBadge
     }) : void 0,
     errors: _,

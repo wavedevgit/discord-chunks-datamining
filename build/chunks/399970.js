@@ -29,7 +29,7 @@ function b(e) {
     authorizedApplicationId: m.Z.testModeApplicationId,
     authorizationError: m.Z.error,
     authorizing: m.Z.isFetchingAuthorization
-  })), [E, C] = r.useState(null != b ? b : ""), [j, O] = r.useState("8080"), [S, v] = r.useState("localhost"), T = (0, u.Dt)(), I = f.test(E);
+  })), [E, j] = r.useState(null != b ? b : ""), [C, O] = r.useState("8080"), [S, v] = r.useState("localhost"), T = (0, u.Dt)(), I = f.test(E);
   async function N() {
     o.q$();
     let e = function(e, t, n) {
@@ -40,13 +40,13 @@ function b(e) {
         case "proxy":
           return (0, c.ZP)(n)
       }
-    }(S, j, E);
+    }(S, C, E);
     null != await o.Wt(E, e) && t()
   }
   r.useEffect(() => () => a.Z.wait(() => o.q$()), []);
   let y = null != b && b === E,
     A = y ? function() {
-      o.mc(), C(""), v(null)
+      o.mc(), j(""), v(null)
     } : N;
   return (0, i.jsxs)(l.Y0X, {
     "aria-labelledby": T,
@@ -87,7 +87,7 @@ function b(e) {
               maxLength: 19,
               error: I ? null : p.intl.string(p.t.gPNgKC),
               onChange: function(e) {
-                C(e)
+                j(e)
               },
               disabled: x
             })
@@ -116,7 +116,7 @@ function b(e) {
             title: p.intl.string(p.t.fF4zxs),
             required: !0,
             children: (0, i.jsx)(l.oil, {
-              value: j,
+              value: C,
               maxLength: 5,
               onChange: e => O(e),
               disabled: x
@@ -124,7 +124,7 @@ function b(e) {
           }), (0, i.jsx)(l.zxk, {
             submitting: x,
             type: "submit",
-            disabled: !I || 0 === E.length || "localhost" === S && 0 === j.length,
+            disabled: !I || 0 === E.length || "localhost" === S && 0 === C.length,
             color: y ? l.zxk.Colors.RED : l.zxk.Colors.GREEN,
             children: y ? p.intl.string(p.t.d6TR3N) : p.intl.string(p.t.qwuK5O)
           })]

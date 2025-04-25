@@ -24,8 +24,8 @@ let g = r.forwardRef(function(e, t) {
     dismissText: _,
     onTryFeature: x,
     onClose: E,
-    className: C,
-    inlineArt: j = !1,
+    className: j,
+    inlineArt: C = !1,
     isPremiumFeature: O = !1,
     shouldUseHorizontalButtons: S = !1,
     showGIFTag: v = !1,
@@ -58,11 +58,11 @@ let g = r.forwardRef(function(e, t) {
   }, [M, G, V, P]), r.useEffect(() => {
     (0, c.kk)(T)
   }, [T]), (0, i.jsx)("div", {
-    className: C,
+    className: j,
     ref: t,
     children: (0, i.jsxs)("div", {
       className: l()(p.content, f, {
-        [p.contentNoArt]: null == g || j,
+        [p.contentNoArt]: null == g || C,
         [p.contentPremium]: O || A
       }),
       children: [null != w && (0, i.jsx)(a.P3F, {
@@ -70,7 +70,7 @@ let g = r.forwardRef(function(e, t) {
         className: Z,
         children: w
       }), (0, i.jsxs)("div", {
-        className: l()(g, j ? p.artInline : p.artAbsolute),
+        className: l()(g, C ? p.artInline : p.artAbsolute),
         children: [v && (0, i.jsx)(d.Z, {
           className: p.gifTag
         }), y]

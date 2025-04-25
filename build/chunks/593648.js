@@ -20,8 +20,8 @@ var i = n(200651),
   _ = n(487419),
   x = n(197344),
   E = n(476756),
-  C = n(734934),
-  j = n(223683),
+  j = n(734934),
+  C = n(223683),
   O = n(312400),
   S = n(115345),
   v = n(392888),
@@ -119,7 +119,7 @@ function K(e) {
     disabledSounds: t,
     disableAllSounds: n,
     notifyMessagesInSelectedChannel: s
-  } = e, a = r.useRef(null), o = (0, C.p)(), c = r.useCallback((e, t) => {
+  } = e, a = r.useRef(null), o = (0, j.p)(), c = r.useCallback((e, t) => {
     t.stopPropagation(), t.preventDefault(), null != a.current && a.current.stop(), a.current = (0, y.GN)(e)
   }, []), d = r.useCallback((e, n) => {
     let i = t.filter(t => t !== e);
@@ -518,7 +518,7 @@ function $() {
           children: [(0, i.jsx)(N.F, {
             setting: B.s6.NOTIFICATIONS_RESTORE_MOST_RECENT_SNAPSHOT,
             children: (0, i.jsx)(u.zxk, {
-              onClick: j.KP,
+              onClick: C.KP,
               children: "Restore most recent snapshot"
             })
           }), (0, i.jsx)(N.F, {
@@ -549,7 +549,7 @@ function $() {
 }
 async function ee(e) {
   e(!0);
-  let t = await (0, j.Tn)();
+  let t = await (0, C.Tn)();
   0 === t.length ? await (0, S.oL)() : m.Z.show({
     title: V.intl.string(V.t["cY+Ooa"]),
     body: V.intl.format(V.t["7zTJJS"], {
@@ -562,7 +562,7 @@ async function ee(e) {
 }
 
 function et(e) {
-  let t = (0, C.p)();
+  let t = (0, j.p)();
   return (0, i.jsx)(X, W(z({}, e), {
     focusMode: t
   }))

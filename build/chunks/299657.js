@@ -20,8 +20,8 @@ var i = n(200651),
   _ = n(15640),
   x = n(89057),
   E = n(605236),
-  C = n(433811),
-  j = n(214852),
+  j = n(433811),
+  C = n(214852),
   O = n(621853),
   S = n(484459),
   v = n(246946),
@@ -45,7 +45,7 @@ let G = function(e) {
   let {
     entrypoint: t = B.EZ.UserSettings
   } = e;
-  (0, j.z)(C.X);
+  (0, C.z)(j.X);
   let n = (0, b.Q)(),
     {
       sourceAnalyticsLocations: s,

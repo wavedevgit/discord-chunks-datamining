@@ -20,8 +20,8 @@ var i = n(200651),
   _ = n(605236),
   x = n(243778),
   E = n(957730),
-  C = n(442933),
-  j = n(53691),
+  j = n(442933),
+  C = n(53691),
   O = n(267717),
   S = n(296810),
   v = n(678135),
@@ -91,7 +91,7 @@ function F() {
       forceTrack: !0
     })
   }, [et]);
-  let en = (0, C.H)("UserSettingsProfileCustomization"),
+  let en = (0, j.H)("UserSettingsProfileCustomization"),
     [ei, er] = (0, x.US)(en ? [o.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE] : []),
     es = ei === o.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE;
   r.useEffect(() => {
@@ -162,7 +162,7 @@ function F() {
           isVisible: ea
         })
       })
-    }), ed && !K && (0, i.jsx)(j.p, {
+    }), ed && !K && (0, i.jsx)(C.p, {
       className: G.floatingNitroUpsell,
       showUpsell: ed && !ea,
       text: V.intl.format(V.t.TmfgIy, {
