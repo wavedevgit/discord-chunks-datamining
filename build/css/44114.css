@@ -1,6 +1,6 @@
 /**
   Module ID: 44114
-  Original File Name: 5642cc680506c336
+  Original File Name: c6dae8dd02327d0d
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -1098,7 +1098,10 @@ h1.title_feb59c,h2.title_feb59c {
 .customStatusAction_b5ae07 {
     align-items: center;
     display: flex;
-    gap: 4px
+    gap: 4px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content
 }
 
 .customStatusAction_b5ae07:hover {
@@ -18558,4 +18561,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=5642cc680506c336.css.map*/
+/*# sourceMappingURL=c6dae8dd02327d0d.css.map*/
