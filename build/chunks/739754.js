@@ -1,16 +1,16 @@
 /** Chunk was on 91245 **/
 "use strict";
 n.d(t, {
-  ZP: () => _,
+  ZP: () => y,
   c4: () => h,
-  st: () => y
+  st: () => _
 });
 var r = n(200651),
   o = n(192379),
   a = n(120356),
   i = n.n(a),
-  s = n(931609),
-  l = n(442837),
+  l = n(931609),
+  s = n(442837),
   c = n(481060),
   u = n(292419),
   d = n(282397),
@@ -42,7 +42,7 @@ function h(e) {
   }
 }
 
-function y(e) {
+function _(e) {
   let {
     className: t,
     icon: n,
@@ -59,12 +59,12 @@ function y(e) {
     })]
   })
 }
-let _ = o.memo(function(e) {
+let y = o.memo(function(e) {
   let {
     message: t,
     className: n,
     component: a
-  } = e, i = (0, s.Z)(), c = (0, l.e7)([d.ZP], () => d.ZP.getInteraction(t), [t]);
+  } = e, i = (0, l.Z)(), c = (0, s.e7)([d.ZP], () => d.ZP.getInteraction(t), [t]);
   o.useEffect(() => {
     let e = null;
     if (t.hasFlag(g.iLy.LOADING) && null != c) {
@@ -96,14 +96,14 @@ let _ = o.memo(function(e) {
   }
   if (null == f) return null;
   let {
-    text: _,
-    icon: O,
-    color: v
+    text: y,
+    icon: v,
+    color: O
   } = f;
-  return (0, r.jsx)(y, {
-    icon: O,
-    text: _,
+  return (0, r.jsx)(_, {
+    icon: v,
+    text: y,
     className: n,
-    color: v
+    color: O
   })
 })
