@@ -60,7 +60,8 @@ let b = 1728e5,
     userTrialOffers: {},
     userDiscountOffers: {},
     userDiscounts: void 0,
-    isFetching: !1
+    isFetching: !1,
+    lastFetchSuccessful: !1
   },
   O = v;
 
@@ -81,11 +82,11 @@ function T(e) {
     userDiscount: n,
     userDiscountOffer: r
   } = e;
-  null == t && null == n && null == r && R(), null != t ? (O.userTrialOffers[t.trial_id] = t, O.userDiscountOffers = {}) : null != n ? (O.userDiscountOffers[n.discount_id] = n, O.userTrialOffers = {}) : null != r && (O.userDiscountOffers[r.discount_id] = r, O.userTrialOffers = {}), O.userOffersLastFetchedAtDate = Date.now(), O.isFetching = !1
+  null == t && null == n && null == r && R(), null != t ? (O.userTrialOffers[t.trial_id] = t, O.userDiscountOffers = {}) : null != n ? (O.userDiscountOffers[n.discount_id] = n, O.userTrialOffers = {}) : null != r && (O.userDiscountOffers[r.discount_id] = r, O.userTrialOffers = {}), O.userOffersLastFetchedAtDate = Date.now(), O.isFetching = !1, O.lastFetchSuccessful = !0
 }
 
 function A() {
-  R(), O.userOffersLastFetchedAtDate = Date.now(), O.isFetching = !1
+  R(), O.userOffersLastFetchedAtDate = Date.now(), O.isFetching = !1, O.lastFetchSuccessful = !1
 }
 
 function N(e) {
@@ -205,6 +206,9 @@ class x extends(r = i.ZP.PersistedStore) {
   }
   forceReset() {
     R()
+  }
+  lastFetchSuccessful() {
+    return O.lastFetchSuccessful
   }
 }
 h(x, "displayName", "UserOfferStore"), h(x, "persistKey", "UserOfferStore"), h(x, "migrations", [e => {
