@@ -1,13 +1,13 @@
 /** Chunk was on 15686 **/
 t.r(n), t.d(n, {
-  default: () => a
+  default: () => r
 });
 var o = t(200651);
 t(192379);
-var c = t(595145);
+var i = t(595145);
 
-function i() {
-  return (i = Object.assign || function(e) {
+function c() {
+  return (c = Object.assign || function(e) {
     for (var n = 1; n < arguments.length; n++) {
       var t = arguments[n];
       for (var o in t) Object.prototype.hasOwnProperty.call(t, o) && (e[o] = t[o])
@@ -16,12 +16,12 @@ function i() {
   }).apply(this, arguments)
 }
 
-function a(e) {
-  var n = i({}, function(e) {
+function r(e) {
+  var n = c({}, function(e) {
     if (null == e) throw TypeError("Cannot destructure " + e);
     return e
   }(e));
-  return (0, o.jsx)(c.Z, function(e) {
+  return (0, o.jsx)(i.Z, function(e) {
     for (var n = 1; n < arguments.length; n++) {
       var t = null != arguments[n] ? arguments[n] : {},
         o = Object.keys(t);

@@ -109,16 +109,17 @@ function Y(e) {
     entry: en,
     onClose: Q
   }), ec = () => {
-    let e = (0, l.Z)(Z) ? "crunchyroll" : "default";
+    let e = (0, l.Z)(Z) ? "crunchyroll" : "default",
+      t = $ === U.lY.MODAL_V2 ? h.J.SIZE_100 : h.J.SIZE_60;
     return null == el ? (0, r.jsx)(h.E, {
       image: eo,
       smallImage: es,
-      size: h.J.SIZE_60,
+      size: t,
       aspectRatio: e
     }) : (0, r.jsx)(h.E, {
       image: eo,
       smallImage: es,
-      size: h.J.SIZE_60,
+      size: t,
       className: F.clickableImage,
       aspectRatio: e,
       onClick: e => {
@@ -311,10 +312,10 @@ function Y(e) {
                     user: n,
                     activity: Z,
                     className: F.badges
-                  }), ep()]
+                  }), ep(), $ === U.lY.MODAL_V2 && eg()]
                 }), $ === U.lY.MODAL && eg()]
               }), em()]
-            }), $ !== U.lY.MODAL && eg()]
+            }), $ !== U.lY.MODAL && $ !== U.lY.MODAL_V2 && eg()]
           })
         })
       })

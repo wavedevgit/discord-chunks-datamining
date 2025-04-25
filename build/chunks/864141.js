@@ -143,10 +143,10 @@ function P(e) {
               voiceChannel: i,
               onAction: D,
               onClose: C
-            })]
+            }), P === I.lY.MODAL_V2 && G()]
           }), P === I.lY.MODAL && G()]
         })
-      }), P !== I.lY.MODAL && G()]
+      }), P !== I.lY.MODAL && P !== I.lY.MODAL_V2 && G()]
     })
   })
 }

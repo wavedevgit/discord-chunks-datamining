@@ -98,7 +98,7 @@ function Y(e) {
         children: [(0, r.jsx)("img", {
           alt: "",
           src: Q === G.BRd.LIGHT ? H : Z
-        }), q !== U.lY.MODAL && (0, r.jsxs)(r.Fragment, {
+        }), q !== U.lY.MODAL && q !== U.lY.MODAL_V2 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(l.Text, {
             className: F.overlayText,
             variant: "text-sm/medium",
@@ -118,7 +118,7 @@ function Y(e) {
           alt: "",
           src: ef,
           className: F.image
-        }), q !== U.lY.MODAL && (0, r.jsxs)(r.Fragment, {
+        }), q !== U.lY.MODAL && q !== U.lY.MODAL_V2 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(l.Text, {
             className: F.overlayText,
             variant: "text-sm/medium",
@@ -132,7 +132,7 @@ function Y(e) {
         })]
       })
     },
-    ep = () => q !== U.lY.MODAL ? null : (0, r.jsxs)("div", {
+    ep = () => q !== U.lY.MODAL && q !== U.lY.MODAL_V2 ? null : (0, r.jsxs)("div", {
       className: V.details,
       children: [(0, r.jsx)(x.Z, {
         channel: ee,
@@ -153,9 +153,9 @@ function Y(e) {
         onUserClick: e => e.stopPropagation(),
         disableUserPopout: e => e === t.id,
         overflowCountColor: "text-muted"
-      })]
+      }), q === U.lY.MODAL_V2 && em()]
     }),
-    eh = () => q === U.lY.MODAL ? null : (0, r.jsx)(M.Z, {
+    eh = () => q === U.lY.MODAL || q === U.lY.MODAL_V2 ? null : (0, r.jsx)(M.Z, {
       user: t,
       guild: $,
       channel: ee,
@@ -223,7 +223,7 @@ function Y(e) {
                 className: V.content,
                 children: [e_(), ep(), q === U.lY.MODAL && em()]
               }), eh()]
-            }), q !== U.lY.MODAL && em()]
+            }), q !== U.lY.MODAL && q !== U.lY.MODAL_V2 && em()]
           })
         })
       })

@@ -88,7 +88,7 @@ let O = i.forwardRef(function(e, t) {
   } = (0, l.ZP)(), {
     context: S
   } = (0, c.KZ)();
-  return O === _.lY.MODAL || (null == S ? void 0 : S.userId) == null ? (0, r.jsx)(d.Z.Overlay, b(g({
+  return O === _.lY.MODAL || O === _.lY.MODAL_V2 || (null == S ? void 0 : S.userId) == null ? (0, r.jsx)(d.Z.Overlay, b(g({
     ref: t,
     className: o()(h.card, i)
   }, v), {

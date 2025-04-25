@@ -77,7 +77,7 @@ function h(e) {
     themeType: d
   } = (0, o.z)(), p = "string" == typeof t ? t.trim() : t;
   if (null == p || "" === p) return null;
-  let h = () => d === s.lY.MODAL ? (0, r.jsx)(i.Text, f(u({
+  let h = () => d === s.lY.MODAL || d === s.lY.MODAL_V2 ? (0, r.jsx)(i.Text, f(u({
     color: "text-normal"
   }, c), {
     children: p

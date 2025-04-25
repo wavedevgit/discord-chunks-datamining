@@ -1,14 +1,14 @@
 /** Chunk was on 30514 **/
 t.d(n, {
-  Z: () => v
+  Z: () => g
 }), t(388685);
 var i = t(200651),
   o = t(192379),
   l = t(442837),
   r = t(706898),
   s = t(481060),
-  c = t(246946),
-  a = t(785717),
+  a = t(246946),
+  c = t(785717),
   d = t(786366),
   u = t(323090),
   f = t(116906),
@@ -17,10 +17,10 @@ var i = t(200651),
   h = t(428927),
   I = t(228168),
   x = t(388032),
-  b = t(301150),
-  _ = t(923243);
+  _ = t(301150),
+  b = t(923243);
 
-function j(e) {
+function v(e) {
   let {
     section: n,
     subsection: t,
@@ -28,20 +28,20 @@ function j(e) {
     currentUser: l,
     displayProfile: r,
     guildId: s,
-    onClose: c
+    onClose: a
   } = e;
   return n === I.oh.ACTIVITY ? (0, i.jsx)(f.Z, {
     user: o,
     currentUser: l,
     displayProfile: r,
     guildId: s,
-    onClose: c
+    onClose: a
   }) : n === I.oh.MUTUAL_FRIENDS ? (0, i.jsx)(m.Z, {
     user: o,
-    onClose: c
+    onClose: a
   }) : n === I.oh.MUTUAL_GUILDS ? (0, i.jsx)(h.Z, {
     user: o,
-    onClose: c
+    onClose: a
   }) : n === I.oh.BOT_DATA_ACCESS ? (0, i.jsx)(d.Z, {
     user: o
   }) : n === I.oh.BOT_INFO ? (0, i.jsx)(u.Z, {
@@ -50,17 +50,17 @@ function j(e) {
     displayProfile: r,
     guildId: s,
     subsection: t,
-    onClose: c
+    onClose: a
   }) : (0, i.jsx)(p.Z, {
     user: o,
     currentUser: l,
     displayProfile: r,
     subsection: t,
-    onClose: c
+    onClose: a
   })
 }
 
-function v(e) {
+function g(e) {
   var n, t, d;
   let {
     user: u,
@@ -68,55 +68,55 @@ function v(e) {
     displayProfile: p,
     guildId: m,
     items: h,
-    initialSection: v = I.oh.USER_INFO,
-    initialSubsection: g,
+    initialSection: g = I.oh.USER_INFO,
+    initialSubsection: j,
     onClose: Z
   } = e, {
     trackUserProfileAction: y
-  } = (0, a.KZ)(), A = (0, l.e7)([c.Z], () => c.Z.hidePersonalInformation), [{
-    section: T,
-    subsection: O
-  }, N] = o.useState({
+  } = (0, c.KZ)(), A = (0, l.e7)([a.Z], () => a.Z.hidePersonalInformation), [{
+    section: N,
+    subsection: T
+  }, O] = o.useState({
     section: null != (d = null == (n = h.find(e => {
       let {
         section: n
       } = e;
-      return n === v
+      return n === g
     })) ? void 0 : n.section) ? d : null == (t = h[0]) ? void 0 : t.section,
-    subsection: g
+    subsection: j
   });
   o.useEffect(() => {
-    null == h.find(e => e.section === T) && N({
+    null == h.find(e => e.section === N) && O({
       section: h[0].section,
       subsection: void 0
     })
-  }, [h, T]);
+  }, [h, N]);
   let E = o.useCallback(e => {
     y({
       action: "PRESS_SECTION",
       section: e
-    }), N({
+    }), O({
       section: e,
       subsection: void 0
     })
-  }, [y, N]);
+  }, [y, O]);
   return A ? (0, i.jsx)("div", {
-    className: _.container,
+    className: b.container,
     children: (0, i.jsxs)("div", {
-      className: b.empty,
+      className: _.empty,
       children: [(0, i.jsx)("div", {
-        className: b.emptyIconStreamerMode
+        className: _.emptyIconStreamerMode
       }), (0, i.jsx)("div", {
-        className: b.emptyText,
+        className: _.emptyText,
         children: x.intl.string(x.t.Br1ls7)
       })]
     })
   }) : (0, i.jsxs)("div", {
-    className: _.container,
+    className: b.container,
     children: [(0, i.jsx)(r.n, {
-      className: _.tabBar,
+      className: b.tabBar,
       type: "top",
-      selectedItem: T,
+      selectedItem: N,
       onItemSelect: E,
       children: h.map(e => {
         let {
@@ -124,7 +124,7 @@ function v(e) {
           text: t
         } = e;
         return (0, i.jsx)(r.n.Item, {
-          className: _.tabBarItem,
+          className: b.tabBarItem,
           id: n,
           "aria-label": t,
           children: (0, i.jsx)(s.Text, {
@@ -133,10 +133,10 @@ function v(e) {
           })
         }, n)
       })
-    }), (0, i.jsx)(j, {
+    }), (0, i.jsx)(v, {
       items: h,
-      section: T,
-      subsection: O,
+      section: N,
+      subsection: T,
       user: u,
       currentUser: f,
       displayProfile: p,

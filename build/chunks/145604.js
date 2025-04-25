@@ -195,7 +195,9 @@ class Q extends i.PureComponent {
             voice_channel_id: E,
             voice_channel_type: v,
             voice_channel_bitrate: x,
-            voice_channel_guild_id: O
+            voice_channel_guild_id: O,
+            distributor_game_id: V.sku,
+            hidden_by_distributor: V.hidden
           }), null != a && _.ZP.addExecutableTrackedByAnalytics(a)
         }, 1e4), null != V.name && null != B && Z.Z.shouldReport(V.name)) {
         let e = V.name;

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => y
 });
 var r = n(200651);
 n(192379);
@@ -9,9 +9,11 @@ var i = n(392711),
   a = n(481060),
   o = n(111028),
   s = n(5192),
-  l = n(744584);
+  l = n(652853),
+  c = n(228168),
+  u = n(744584);
 
-function c(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -20,20 +22,20 @@ function c(e, t, n) {
   }) : e[t] = n, e
 }
 
-function u(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      c(e, t, n[t])
+      d(e, t, n[t])
     })
   }
   return e
 }
 
-function d(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -44,15 +46,71 @@ function d(e, t) {
   return n
 }
 
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = 4,
-  p = 1,
-  h = 3,
-  m = [
+let h = 4,
+  m = 1,
+  g = 3,
+  E = [
+    [{
+      top: 15,
+      left: 15,
+      width: 28,
+      height: 28
+    }],
+    [{
+      top: 7,
+      left: 7,
+      width: 20,
+      height: 20
+    }, {
+      top: 25,
+      left: 25,
+      width: 26,
+      height: 26
+    }],
+    [{
+      top: 5,
+      left: 10,
+      width: 18,
+      height: 18
+    }, {
+      top: 15,
+      left: 31,
+      width: 22,
+      height: 22
+    }, {
+      top: 29,
+      left: 5,
+      width: 24,
+      height: 24
+    }],
+    [{
+      top: 5,
+      left: 5,
+      width: 22,
+      height: 22
+    }, {
+      top: 7,
+      left: 33,
+      width: 18,
+      height: 18
+    }, {
+      top: 33,
+      left: 7,
+      width: 18,
+      height: 18
+    }, {
+      top: 31,
+      left: 31,
+      width: 22,
+      height: 22
+    }]
+  ],
+  b = [
     [{
       top: 15,
       left: 15,
@@ -109,36 +167,38 @@ let _ = 4,
     }]
   ];
 
-function g(e) {
+function y(e) {
   let {
     users: t,
     channel: n
-  } = e, c = t.length > _, d = t.length - _ + 1, g = d >= 10 ? h : p;
+  } = e, {
+    themeType: d
+  } = (0, l.z)(), _ = d === c.lY.MODAL_V2 ? b : E, y = t.length > h, v = t.length - h + 1, O = v >= 10 ? g : m;
   return (0, r.jsx)("div", {
-    className: l.container,
-    children: m[(0, i.clamp)(t.length - 1, 0, m.length - 1)].map((e, i) => {
-      let _ = t[i];
-      return null == _ ? null : (0, r.jsx)("div", {
-        className: l.circle,
+    className: u.container,
+    children: _[(0, i.clamp)(t.length - 1, 0, _.length - 1)].map((e, i) => {
+      let l = t[i];
+      return null == l ? null : (0, r.jsx)("div", {
+        className: u.circle,
         style: e,
-        children: c && i === g ? (0, r.jsx)("div", {
-          className: l.overflowCount,
+        children: y && i === O ? (0, r.jsx)("div", {
+          className: u.overflowCount,
           children: (0, r.jsx)(a.Text, {
             variant: "text-xxs/semibold",
             lineClamp: 1,
             children: (0, r.jsx)(o.Z, {
-              children: d > 99 ? ">99" : "+".concat(d)
+              children: v > 99 ? ">99" : "+".concat(v)
             })
           })
         }) : (0, r.jsx)(a.ua7, {
-          text: s.ZP.getName(n.guild_id, n.id, _),
-          children: e => (0, r.jsx)("img", f(u({}, e), {
-            className: l.avatar,
-            src: _.getAvatarURL(n.guild_id, (0, a.pxk)(a.EFr.SIZE_80)),
+          text: s.ZP.getName(n.guild_id, n.id, l),
+          children: e => (0, r.jsx)("img", p(f({}, e), {
+            className: u.avatar,
+            src: l.getAvatarURL(n.guild_id, (0, a.pxk)(a.EFr.SIZE_80)),
             alt: ""
           }))
         })
-      }, _.id)
+      }, l.id)
     })
   })
 }

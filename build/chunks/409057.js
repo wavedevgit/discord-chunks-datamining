@@ -117,16 +117,17 @@ function V(e) {
     entry: K,
     onClose: Z
   }), ee = () => {
-    let e = (0, s.Z)(i) ? "crunchyroll" : "default";
+    let e = (0, s.Z)(i) ? "crunchyroll" : "default",
+      t = W === D.lY.MODAL_V2 ? p.J.SIZE_100 : p.J.SIZE_60;
     return null == $ ? (0, r.jsx)(p.E, {
       image: X,
       smallImage: J,
-      size: p.J.SIZE_60,
+      size: t,
       aspectRatio: e
     }) : (0, r.jsx)(p.E, {
       image: X,
       smallImage: J,
-      size: p.J.SIZE_60,
+      size: t,
       className: k.clickableImage,
       aspectRatio: e,
       onClick: e => {
@@ -292,10 +293,10 @@ function V(e) {
               user: t,
               activity: i,
               className: k.badges
-            }), ea()]
+            }), ea(), W === D.lY.MODAL_V2 && el()]
           }), W === D.lY.MODAL && el()]
         }), es()]
-      }), W !== D.lY.MODAL && el()]
+      }), W !== D.lY.MODAL && W !== D.lY.MODAL_V2 && el()]
     })
   })
 }

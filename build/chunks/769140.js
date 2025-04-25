@@ -90,7 +90,7 @@ function B(e) {
         children: [(0, r.jsx)("img", {
           alt: "",
           src: Z === x.BRd.LIGHT ? G : U
-        }), F !== L.lY.MODAL && (0, r.jsxs)(r.Fragment, {
+        }), F !== L.lY.MODAL && F !== L.lY.MODAL_V2 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.Text, {
             className: j.overlayText,
             variant: "text-sm/medium",
@@ -110,7 +110,7 @@ function B(e) {
           alt: "",
           src: er,
           className: j.image
-        }), F !== L.lY.MODAL && (0, r.jsxs)(r.Fragment, {
+        }), F !== L.lY.MODAL && F !== L.lY.MODAL_V2 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.Text, {
             className: j.overlayText,
             variant: "text-sm/medium",
@@ -124,7 +124,7 @@ function B(e) {
         })]
       })
     },
-    ea = () => F !== L.lY.MODAL ? null : (0, r.jsxs)("div", {
+    ea = () => F !== L.lY.MODAL && F !== L.lY.MODAL_V2 ? null : (0, r.jsxs)("div", {
       className: k.details,
       children: [(0, r.jsx)(R.Z, {
         channel: Y,
@@ -145,9 +145,9 @@ function B(e) {
         onUserClick: e => e.stopPropagation(),
         disableUserPopout: e => e === t.id,
         overflowCountColor: "text-muted"
-      })]
+      }), F === L.lY.MODAL_V2 && es()]
     }),
-    eo = () => F === L.lY.MODAL ? null : (0, r.jsx)(P.Z, {
+    eo = () => F === L.lY.MODAL || F === L.lY.MODAL_V2 ? null : (0, r.jsx)(P.Z, {
       user: t,
       guild: H,
       channel: Y,
@@ -187,7 +187,7 @@ function B(e) {
           className: k.content,
           children: [ei(), ea(), F === L.lY.MODAL && es()]
         }), eo()]
-      }), F !== L.lY.MODAL && es()]
+      }), F !== L.lY.MODAL && F !== L.lY.MODAL_V2 && es()]
     })
   })
 }

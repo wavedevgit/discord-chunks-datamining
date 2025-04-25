@@ -180,7 +180,7 @@ function M(e) {
                 className: D.content,
                 children: [(0, r.jsx)(f.E, {
                   image: H,
-                  size: f.J.SIZE_60,
+                  size: G === w.lY.MODAL_V2 ? f.J.SIZE_100 : f.J.SIZE_60,
                   className: D.clickableImage,
                   onClick: e => {
                     e.stopPropagation(), W({
@@ -203,10 +203,10 @@ function M(e) {
                     user: n,
                     activity: L,
                     className: D.badges
-                  }), q()]
+                  }), q(), G === w.lY.MODAL_V2 && Q()]
                 }), G === w.lY.MODAL && Q()]
               })
-            }), G !== w.lY.MODAL && Q()]
+            }), G !== w.lY.MODAL && G !== w.lY.MODAL_V2 && Q()]
           })
         })
       })

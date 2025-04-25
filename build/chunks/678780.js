@@ -8,9 +8,9 @@ var o = t(788111),
   l = t(752342),
   r = t(886794),
   s = t(4599),
-  c = t(910364);
+  a = t(910364);
 
-function a(e) {
+function c(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       i = Object.keys(t);
@@ -50,7 +50,7 @@ function d(e) {
   let {
     user: d
   } = t, [u, f] = (0, o.Z)(d.id);
-  return u && !n ? (0, i.jsx)(s.Z, a({
+  return u && !n ? (0, i.jsx)(s.Z, c({
     onHide: f
-  }, t)) : d.isNonUserBot() ? (0, i.jsx)(r.Z, a({}, t)) : d.bot ? (0, i.jsx)(l.Z, a({}, t)) : (0, i.jsx)(c.Z, a({}, t))
+  }, t)) : d.isNonUserBot() ? (0, i.jsx)(r.Z, c({}, t)) : d.bot ? (0, i.jsx)(l.Z, c({}, t)) : (0, i.jsx)(a.Z, c({}, t))
 }

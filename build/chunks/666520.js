@@ -1,4 +1,4 @@
-/** Chunk was on 34241 **/
+/** Chunk was on 51710 **/
 n.d(t, {
   Z: () => b
 }), n(35282);
@@ -6,8 +6,8 @@ var r = n(200651),
   o = n(192379),
   l = n(442837),
   i = n(481060),
-  c = n(34854),
-  u = n(531301),
+  u = n(34854),
+  c = n(531301),
   s = n(246946),
   a = n(981631),
   d = n(388032),
@@ -20,9 +20,9 @@ function b(e) {
     userId: b,
     onUpdate: p
   } = e, O = (0, l.e7)([s.Z], () => s.Z.hidePersonalInformation), {
-    loading: g,
-    note: y
-  } = (0, u.Z)(b), j = o.useRef(null);
+    loading: y,
+    note: g
+  } = (0, c.Z)(b), j = o.useRef(null);
   return (o.useEffect(() => {
     if (!t || O) return;
     let e = j.current;
@@ -32,12 +32,12 @@ function b(e) {
     children: (0, r.jsx)(i.lcI, {
       ref: j,
       className: f.textarea,
-      disabled: g,
-      placeholder: g ? d.intl.string(d.t["WLKx//"]) : d.intl.string(d.t.VBhOe3),
+      disabled: y,
+      placeholder: y ? d.intl.string(d.t["WLKx//"]) : d.intl.string(d.t.VBhOe3),
       "aria-label": d.intl.string(d.t.PbMNh4),
       onBlur: e => {
         let t = e.currentTarget.value;
-        (null != y ? y : "") !== t && (null == p || p(), c.Z.updateNote(b, t))
+        (null != g ? g : "") !== t && (null == p || p(), u.Z.updateNote(b, t))
       },
       onKeyPress: e => {
         if (13 === e.which)
@@ -47,7 +47,7 @@ function b(e) {
           } else e.preventDefault(), e.currentTarget.blur();
         else e.which === a.yXg.SPACE && e.stopPropagation()
       },
-      defaultValue: null != y ? y : void 0,
+      defaultValue: null != g ? g : void 0,
       maxLength: a.vuo
     })
   })
