@@ -21,10 +21,10 @@ function _(e) {
   let {
     showImage: t = !0,
     padding: n = !1
-  } = e, _ = (0, a.ZP)(), y = (0, l.ap)(_) ? b : h, x = r.useCallback(() => {
+  } = e, _ = (0, a.ZP)(), y = (0, l.ap)(_) ? b : h, v = r.useCallback(() => {
     (0, s.Z)(c.Z.getAppsSupportURL(p.BhN.APPS_LEARN_MORE))
   }, []), {
-    trackSectionImpressionRef: C
+    trackSectionImpressionRef: x
   } = (0, d.Z)({
     sectionName: u.L3.NEW_TO_APPS,
     numItems: 1,
@@ -34,7 +34,7 @@ function _(e) {
     className: n ? f.containerPadding : void 0,
     children: (0, i.jsxs)("div", {
       ref: e => {
-        C.current = e
+        x.current = e
       },
       className: f.container,
       children: [t && (0, i.jsx)("img", {
@@ -59,7 +59,7 @@ function _(e) {
           sectionTitle: m.intl.string(m.t["kw8/ER"]),
           sectionBody: m.intl.string(m.t.GZoV1N)
         }),
-        onClick: x,
+        onClick: v,
         children: m.intl.string(m.t.Ye51oa)
       })]
     })

@@ -1,7 +1,7 @@
 /** Chunk was on 35755 **/
 n.d(t, {
   Q2: () => A,
-  pe: () => O
+  pe: () => E
 }), n(388685), n(539854), n(35282), n(472816), n(794429);
 var i = n(192379),
   r = n(392711),
@@ -19,9 +19,9 @@ var i = n(192379),
   b = n(471518),
   _ = n(177653),
   y = n(631827),
-  x = n(424602),
-  C = n(827498),
-  v = n(783097),
+  v = n(424602),
+  x = n(827498),
+  C = n(783097),
   g = n(689079),
   j = n(761652);
 
@@ -31,16 +31,16 @@ function P(e, t) {
 }
 
 function N(e, t) {
-  let n = (0, v.$d)(e),
-    i = (0, v.$d)(t);
+  let n = (0, C.$d)(e),
+    i = (0, C.$d)(t);
   return (0, p.un)(n, i)
 }
 
-function E(e, t) {
+function O(e, t) {
   return (0, p.un)(e.displayName, t.displayName)
 }
 
-function O(e) {
+function E(e) {
   let {
     context: t,
     query: n,
@@ -54,7 +54,7 @@ function O(e) {
   let {
     commands: b,
     commandSectionMap: _,
-    loading: C
+    loading: x
   } = function(e) {
     var t, n;
     let {
@@ -68,7 +68,7 @@ function O(e) {
         u = null != (i = null == (t = s.result) ? void 0 : t.sections) ? i : {},
         d = [...Object.keys(c), ...Object.keys(u).filter(e => !(e in c))];
       l && d.push(g.bi.BUILT_IN);
-      let m = "channel" in r && (0, x.aZ)(r.channel, "AppLauncherSearchUtils.useApplicationCommandsInContext()"),
+      let m = "channel" in r && (0, v.aZ)(r.channel, "AppLauncherSearchUtils.useApplicationCommandsInContext()"),
         f = [],
         h = {};
       for (let e of d) {
@@ -79,7 +79,7 @@ function O(e) {
         })
       }
       return {
-        commands: f.filter(e => !m || e.applicationId !== x.gu),
+        commands: f.filter(e => !m || e.applicationId !== v.gu),
         commandSectionMap: h,
         loading: !0 === a.fetchState.fetching || !0 === s.fetchState.fetching
       }
@@ -88,7 +88,7 @@ function O(e) {
     context: t,
     includeBuiltIn: !0
   }), {
-    apps: O
+    apps: E
   } = function(e) {
     let {
       context: t,
@@ -99,7 +99,7 @@ function O(e) {
       includeNonEmbeddedApps: a
     } = e, s = "channel" === t.type ? t.channel : void 0, u = (0, m.Hs)(s, [c.yU.CHAT]).hasBaseAccessPermissions, d = (0, p.em)(t, u, l), f = (0, p.PL)(u, l), h = i.useCallback(e => {
       let t = e.descriptor.application;
-      return null != t && (!!(o && (0, v.ye)(t)) || null != t && a && !(0, v.ye)(t) && (!n || Object.keys(e.commands).length > 0))
+      return null != t && (!!(o && (0, C.ye)(t)) || null != t && a && !(0, C.ye)(t) && (!n || Object.keys(e.commands).length > 0))
     }, [o, a, n]), b = [], _ = new Set;
     if (null != d.result)
       for (let e of Object.values(d.result.sections)) {
@@ -111,10 +111,10 @@ function O(e) {
         let t = e.descriptor.application;
         null != t && !_.has(t.id) && h(e) && b.push(t)
       }
-    a && r && b.push(v.Wx);
-    let y = "channel" in t && (0, x.aZ)(t.channel, "AppLauncherSearchUtils.useApplicationsInContext()");
+    a && r && b.push(C.Wx);
+    let y = "channel" in t && (0, v.aZ)(t.channel, "AppLauncherSearchUtils.useApplicationsInContext()");
     return {
-      apps: b.filter(e => !y || e.id !== x.gu),
+      apps: b.filter(e => !y || e.id !== v.gu),
       loading: (null == d ? void 0 : d.fetchState.fetching) === !0 || (null == f ? void 0 : f.fetchState.fetching) === !0
     }
   }({
@@ -212,11 +212,11 @@ function O(e) {
       }, (e, t) => {
         let n = d.ZP.getScoreWithoutLoadingLatest(u, e);
         return d.ZP.getScoreWithoutLoadingLatest(u, t) - n
-      }), E]
+      }), O]
     })
   }, [a, b, r, t, n]), S = i.useMemo(() => {
     if (0 === I.length) return [];
-    let e = new Map(O.map(e => [e.id, e]));
+    let e = new Map(E.map(e => [e.id, e]));
     return l().compact(I.map(t => {
       var n;
       let i = e.get(t.applicationId);
@@ -228,17 +228,17 @@ function O(e) {
         section: r
       }
     }))
-  }, [O, I, _]), T = i.useMemo(() => {
+  }, [E, I, _]), T = i.useMemo(() => {
     var e, i, r, l, a;
     let u = [];
     if (h) {
-      let e = new Set(O.map(e => {
+      let e = new Set(E.map(e => {
         let {
           id: t
         } = e;
         return t
       }));
-      u.push(...O), u.push(...A.filter(t => {
+      u.push(...E), u.push(...A.filter(t => {
         let {
           application: {
             id: n
@@ -251,7 +251,7 @@ function O(e) {
         } = e;
         return t
       }))
-    } else s && (u = O);
+    } else s && (u = E);
     return (0, y.N)(u, {
       limit: o,
       filterPredicates: [function(e) {
@@ -277,25 +277,25 @@ function O(e) {
           }) === f.mF.ALLOWED)
         }
       }(t)],
-      bucketPredicates: [(i = e = n, e => (0, v.$d)(e).toLocaleLowerCase().startsWith(i.toLocaleLowerCase())), (r = e, e => (0, v.$d)(e).toLocaleLowerCase().includes(r.toLocaleLowerCase())), (l = e, e => {
+      bucketPredicates: [(i = e = n, e => (0, C.$d)(e).toLocaleLowerCase().startsWith(i.toLocaleLowerCase())), (r = e, e => (0, C.$d)(e).toLocaleLowerCase().includes(r.toLocaleLowerCase())), (l = e, e => {
         var t, n;
-        let i = null == (t = (0, v.jD)(e)) ? void 0 : t.toLocaleLowerCase();
+        let i = null == (t = (0, C.jD)(e)) ? void 0 : t.toLocaleLowerCase();
         return null != (n = null == i ? void 0 : i.startsWith(l.toLocaleLowerCase())) && n
       }), (a = e, e => {
         var t, n;
-        let i = null == (t = (0, v.jD)(e)) ? void 0 : t.toLocaleLowerCase();
+        let i = null == (t = (0, C.jD)(e)) ? void 0 : t.toLocaleLowerCase();
         return null != (n = null == i ? void 0 : i.includes(a.toLocaleLowerCase())) && n
       })],
       sortComparers: [P, N]
     })
-  }, [s, h, o, t, n, O, A]), L = S.length > 0, w = T.length > 0;
+  }, [s, h, o, t, n, E, A]), w = S.length > 0, L = T.length > 0;
   return {
     commandResults: S,
-    hasCommandResults: L,
+    hasCommandResults: w,
     applicationResults: T,
-    hasApplicationResults: w,
-    isEmptyState: !L && !w,
-    loading: C && a
+    hasApplicationResults: L,
+    isEmptyState: !w && !L,
+    loading: x && a
   }
 }
 
@@ -308,7 +308,7 @@ function A(e) {
     entrypoint: c
   } = e;
   n.startsWith("".concat(j.GI)) && (n = n.substring(1));
-  let u = c === C._b.VOICE,
+  let u = c === x._b.VOICE,
     d = "channel" === t.type ? t.channel.guild_id : void 0,
     [p, m] = i.useState(1),
     f = i.useRef(p);
@@ -342,7 +342,7 @@ function A(e) {
         source: a.F.APP_LAUNCHER
       })) ? void 0 : e.totalPages) ? t : 0
     }
-  }, [n, d, p, u]), x = i.useMemo(() => Array.from({
+  }, [n, d, p, u]), v = i.useMemo(() => Array.from({
     length: h === _.M.FETCHED || h === _.M.ERROR ? p : p - 1
   }, (e, t) => {
     var i, r;
@@ -357,10 +357,10 @@ function A(e) {
       excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: !0,
       source: a.F.APP_LAUNCHER
     })) ? void 0 : i.results) ? r : []
-  }), [h, d, n, p, u]), v = i.useCallback(() => {
-    let e = x.length;
-    h === _.M.FETCHED && e === f.current && e > 0 && e < y && e < l && x[e - 1].length > 0 && (f.current++, m(e => e + 1))
-  }, [h, l, x, y]), g = i.useCallback(e => {
+  }), [h, d, n, p, u]), C = i.useCallback(() => {
+    let e = v.length;
+    h === _.M.FETCHED && e === f.current && e > 0 && e < y && e < l && v[e - 1].length > 0 && (f.current++, m(e => e + 1))
+  }, [h, l, v, y]), g = i.useCallback(e => {
     let {
       query: t,
       page: n,
@@ -390,7 +390,7 @@ function A(e) {
     m(1)
   }, [d, n]), {
     fetchState: h,
-    applicationResults: x.flat(),
-    fetchNextPage: v
+    applicationResults: v.flat(),
+    fetchNextPage: C
   }
 }

@@ -1,6 +1,6 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => w
+  Z: () => L
 }), n(997841);
 var i = n(200651),
   r = n(192379),
@@ -18,15 +18,15 @@ var i = n(200651),
   b = n(726521),
   _ = n(973616),
   y = n(914010),
-  x = n(594174),
-  C = n(626135),
-  v = n(572004),
+  v = n(594174),
+  x = n(626135),
+  C = n(572004),
   g = n(630388),
   j = n(135431),
   P = n(541099),
   N = n(783097),
-  E = n(570949),
-  O = n(314734),
+  O = n(570949),
+  E = n(314734),
   A = n(981631),
   I = n(388032),
   S = n(640724);
@@ -50,7 +50,7 @@ function T(e) {
   return e
 }
 
-function L(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -63,11 +63,11 @@ function L(e, t) {
   }), e
 }
 
-function w(e) {
+function L(e) {
   var t;
   let {
     application: l,
-    context: w,
+    context: L,
     className: R,
     sectionName: Z
   } = e, k = r.useRef(null), M = (0, a.e7)([P.Z], () => P.Z.entrypoint()), D = (0, N.L1)(l), B = (0, m.Eb)(D), U = (0, d.R)(l.id), H = (0, a.e7)([y.Z], () => {
@@ -78,16 +78,16 @@ function w(e) {
     application_id: l.id,
     section_name: Z,
     source: P.Z.lastShownEntrypoint()
-  }, V = x.default.getCurrentUser(), F = h.Z.useExperiment({
+  }, V = v.default.getCurrentUser(), F = h.Z.useExperiment({
     location: u.Vh.APP_LAUNCHER_APPLICATION_VIEW_MORE_MENU
   }, {
     autoTrackExposure: !0
-  }).enabled, z = (0, f.Z)({
+  }).enabled, G = (0, f.Z)({
     id: l.id,
     label: I.intl.string(I.t["+NP/b2"])
-  }), G = (0, E.P)({
+  }), z = (0, O.P)({
     application: l
-  }), X = (0, g.yE)(null != (t = l.flags) ? t : 0, A.udG.EMBEDDED), q = "channel" === w.type ? w.channel : void 0;
+  }), X = (0, g.yE)(null != (t = l.flags) ? t : 0, A.udG.EMBEDDED), q = "channel" === L.type ? L.channel : void 0;
   return (0, i.jsxs)("div", {
     className: S.container,
     children: [(0, i.jsx)(s.P3F, {
@@ -98,7 +98,7 @@ function w(e) {
         }) : (0, p.J)(T({
           id: l.id
         }, D));
-        (0, v.JG)(e, () => (0, s.showToast)((0, s.createToast)(I.intl.string(I.t["L/PwZW"]), s.ToastType.SUCCESS))), C.default.track(A.rMx.APP_LAUNCHER_APPLICATION_LINK_COPIED, {
+        (0, C.JG)(e, () => (0, s.showToast)((0, s.createToast)(I.intl.string(I.t["L/PwZW"]), s.ToastType.SUCCESS))), x.default.track(A.rMx.APP_LAUNCHER_APPLICATION_LINK_COPIED, {
           application_id: l.id,
           source: M
         })
@@ -116,7 +116,7 @@ function w(e) {
           closePopout: t
         } = e;
         return (0, i.jsxs)(s.v2r, {
-          className: O.NN,
+          className: E.NN,
           navId: "app-details-more-menu",
           onClose: t,
           "aria-label": I.intl.string(I.t.AXIHpa),
@@ -142,7 +142,7 @@ function w(e) {
               id: "add-app",
               label: I.intl.string(I.t.NgXl3N),
               action: () => {
-                null == D.customInstallUrl && (0, c.yw)(A.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, W), (0, j.L)(L(T({}, D), {
+                null == D.customInstallUrl && (0, c.yw)(A.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, W), (0, j.L)(w(T({}, D), {
                   oauth2Callback: e => {
                     let {
                       location: t
@@ -165,15 +165,15 @@ function w(e) {
                   contextualChannelId: null == q ? void 0 : q.id
                 })
               }
-            }) : null, G]
+            }) : null, z]
           }), (0, i.jsx)(s.kSQ, {
-            children: z
+            children: G
           })]
         })
       },
       align: "right",
       position: "bottom",
-      children: e => (0, i.jsx)(s.P3F, L(T({
+      children: e => (0, i.jsx)(s.P3F, w(T({
         innerRef: k
       }, e), {
         onClick: e.onClick,

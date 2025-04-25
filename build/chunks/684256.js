@@ -24,7 +24,7 @@ function h(e) {
     items: b,
     sectionName: _,
     sectionOverallPosition: y
-  } = e, x = (0, u.s)(), C = r.useMemo(() => n === c._b.TEXT ? d.kA : d.qR, [n]);
+  } = e, v = (0, u.s)(), x = r.useMemo(() => n === c._b.TEXT ? d.kA : d.qR, [n]);
   return (0, i.jsxs)("section", {
     className: f.container,
     "aria-label": m.intl.formatToPlainString(m.t.iobNIC, {
@@ -51,7 +51,7 @@ function h(e) {
             installOnDemand: l,
             showsPromoted: o
           } = e;
-          return (0, i.jsx)(C, {
+          return (0, i.jsx)(x, {
             context: t,
             application: r,
             look: h,
@@ -59,7 +59,7 @@ function h(e) {
             resultsPosition: n,
             location: s.Vh.APP_LAUNCHER_LIST_VIEW_ALL,
             installOnDemand: l,
-            isOneClickCTA: x,
+            isOneClickCTA: v,
             sectionOverallPosition: y,
             showsPromoted: o
           }, r.id)

@@ -72,12 +72,15 @@ function v(e) {
 }
 
 function O(e) {
+  var t, n;
   let {
-    wallpaperId: t,
-    overrides: n
+    wallpaperId: r,
+    overrides: a
   } = e;
-  if (null == d[t] || null == n) return void delete h[t];
-  null == h[t] && (h[t] = (0, i.cloneDeep)(d[t])), h[t].default = u({}, h[t].default, n)
+  if (null == d[r] || null == a) return void delete h[r];
+  null == h[r] && (h[r] = (0, i.cloneDeep)(d[r]));
+  let o = h[r];
+  o.default = u({}, o.default, a), (null == o || null == (t = o.variants) ? void 0 : t.dark) != null && (o.variants.dark = u({}, o.variants.dark, a)), (null == o || null == (n = o.variants) ? void 0 : n.light) != null && (o.variants.light = u({}, o.variants.light, a))
 }
 
 function I(e) {

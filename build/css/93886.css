@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: fbf00b7338953fca
+  Original File Name: 7e89a21d260c231d
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -1485,8 +1485,12 @@
 .colorInputContainer_f1a68f {
     align-items: center;
     display: flex;
-    gap: 8px;
+    gap: 4px;
     margin: 8px 0
+}
+
+.removeButton_f1a68f {
+    color: var(--text-danger)
 }
 
 .slider_f1a68f {
@@ -2506,4 +2510,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=fbf00b7338953fca.css.map*/
+/*# sourceMappingURL=7e89a21d260c231d.css.map*/

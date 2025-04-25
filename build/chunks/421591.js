@@ -1,6 +1,6 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => C
+  Z: () => x
 }), n(388685), n(482853);
 var i = n(200651),
   r = n(192379),
@@ -21,10 +21,10 @@ let y = {
     width: h.Gy,
     height: (0, d.DK)()
   },
-  x = {
+  v = {
     height: (0, d.DK)()
   },
-  C = r.memo(r.forwardRef(function(e, t) {
+  x = r.memo(r.forwardRef(function(e, t) {
     let {
       context: n,
       entrypoint: l,
@@ -54,7 +54,7 @@ let y = {
         className: _.contentWrapper,
         children: (0, i.jsx)(s.Gt, {
           value: d,
-          children: (0, i.jsx)(v, {
+          children: (0, i.jsx)(C, {
             initHistory: u,
             children: (0, i.jsx)(g, {
               context: n,
@@ -66,7 +66,7 @@ let y = {
     })
   }));
 
-function v(e) {
+function C(e) {
   let {
     initHistory: t,
     children: n
@@ -153,26 +153,26 @@ function g(e) {
   }(o), {
     currentView: b,
     getMostRecentHistoryItemByType: y,
-    setSlideReady: C
+    setSlideReady: x
   } = (0, u.hH)();
   r.useEffect(() => {
-    C(!1)
-  }, [null == b ? void 0 : b.type, C]);
-  let v = r.useCallback(() => {
-    C(!0)
-  }, [C]);
+    x(!1)
+  }, [null == b ? void 0 : b.type, x]);
+  let C = r.useCallback(() => {
+    x(!0)
+  }, [x]);
   if (null == b) return null;
   let g = y(u.gc.LIST),
     j = y(u.gc.APPLICATION);
   return (0, i.jsxs)(l.MyZ, {
     activeSlide: b.type,
     width: h.Gy,
-    onSlideReady: v,
+    onSlideReady: C,
     children: [(0, i.jsx)(l.Mi4, {
       id: u.gc.HOME,
       children: (0, i.jsx)("div", {
         className: _.slideContent,
-        style: x,
+        style: v,
         children: (0, i.jsx)(m.Z, {
           isScrollCloseToBottom: c,
           setScroller: s,
@@ -186,7 +186,7 @@ function g(e) {
       id: u.gc.LIST,
       children: (0, i.jsx)("div", {
         className: _.slideContent,
-        style: x,
+        style: v,
         children: null != g && (0, i.jsx)(f.Z, {
           context: t,
           entrypoint: n,
@@ -201,7 +201,7 @@ function g(e) {
       id: u.gc.APPLICATION,
       children: (0, i.jsx)("div", {
         className: _.slideContent,
-        style: x,
+        style: v,
         children: null != j && (0, i.jsx)(p.Z, {
           context: t,
           application: j.application,

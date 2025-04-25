@@ -1,6 +1,6 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => C
+  Z: () => v
 }), n(388685);
 var i = n(200651),
   r = n(192379),
@@ -9,69 +9,64 @@ var i = n(200651),
   a = n(895924),
   s = n(626135),
   c = n(499254),
-  u = n(424602),
-  d = n(541099),
-  p = n(827498),
-  m = n(160973),
-  f = n(783097),
-  h = n(890280),
-  b = n(176412),
-  _ = n(981631),
-  y = n(388032),
-  x = n(854408);
+  u = n(541099),
+  d = n(827498),
+  p = n(160973),
+  m = n(783097),
+  f = n(890280),
+  h = n(176412),
+  b = n(981631),
+  _ = n(388032),
+  y = n(854408);
 
-function C(e) {
+function v(e) {
   let {
     context: t,
     application: n,
-    sectionName: C,
-    primaryEntryPointCommand: v,
-    buttonSize: g = l.PhG.MEDIUM,
-    playSolo: j = !1
-  } = e, P = r.useId(), N = r.useCallback(() => {
-    c.yT(p.ti.ACTIVITY)
-  }, []), E = r.useCallback(() => {
-    d.Z.shouldShowModal() && N()
-  }, [N]), {
-    submitting: O,
-    wasSubmitting: A
-  } = (0, h.Z)({
+    sectionName: v,
+    primaryEntryPointCommand: x,
+    buttonSize: C = l.PhG.MEDIUM
+  } = e, g = r.useId(), j = r.useCallback(() => {
+    c.yT(d.ti.ACTIVITY)
+  }, []), P = r.useCallback(() => {
+    u.Z.shouldShowModal() && j()
+  }, [j]), {
+    submitting: N,
+    wasSubmitting: O
+  } = (0, f.Z)({
     applicationId: n.id,
     context: t,
-    launchingComponentId: P,
-    onSubmissionComplete: N
-  }), [I, S] = r.useState(!1), T = (0, o.Qv)({
+    launchingComponentId: g,
+    onSubmissionComplete: j
+  }), [E, A] = r.useState(!1), I = (0, o.Qv)({
     applicationId: n.id,
     context: t
-  }), L = u.PM.useExperiment({
-    location: "AppPrimaryEntryPointButton()"
-  }), w = r.useMemo(() => (0, f.XZ)(v.displayName), [v.displayName]), {
-    onActivityItemSelected: R,
-    buttonColor: Z,
-    buttonText: k
-  } = (0, b.P7)({
+  }), S = r.useMemo(() => (0, m.XZ)(x.displayName), [x.displayName]), {
+    onActivityItemSelected: T,
+    buttonColor: w,
+    buttonText: L
+  } = (0, h.P7)({
     context: t,
     application: n,
     location: a.Vh.APP_LAUNCHER_APPLICATION_VIEW,
-    sectionName: C,
-    commandName: w,
-    autoDismissOnClick: T === o.JS.LEAVE,
-    launchingComponentId: P,
-    submitting: null != A ? A : O,
-    onConfirmActivityLaunchChecksAlertOpen: E,
-    playSolo: !!L.altLayout && j
+    sectionName: v,
+    commandName: S,
+    autoDismissOnClick: I === o.JS.LEAVE,
+    launchingComponentId: g,
+    submitting: null != O ? O : N,
+    onConfirmActivityLaunchChecksAlertOpen: P
   }), {
-    disabled: M,
-    reason: D
-  } = (0, m.Z)({
+    disabled: R,
+    reason: Z
+  } = (0, p.Z)({
     context: t,
     application: n,
-    activityAction: T
-  }), B = L.enabled ? y.intl.string(y.t["1KxmJi"]) : k;
+    activityAction: I
+  });
   return (0, i.jsx)(l.ua7, {
-    shouldShow: null != D,
-    tooltipContentClassName: x.tooltipContent,
-    text: D,
+    shouldShow: null != Z,
+    tooltipContentClassName: y.tooltipContent,
+    text: Z,
     children: e => {
       var t, r, {
           onClick: o
@@ -110,21 +105,21 @@ function C(e) {
         return e
       }({}, a), r = r = {
         type: "submit",
-        size: g,
-        color: Z,
-        disabled: M,
-        submitting: I,
+        size: C,
+        color: w,
+        disabled: R,
+        submitting: E,
         onClick: () => {
-          S(!0), R(), null == o || o(), s.default.track(_.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
+          A(!0), T(), null == o || o(), s.default.track(b.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
             application_id: n.id,
-            button_action: p._y.USE_APP_COMMAND
+            button_action: d._y.USE_APP_COMMAND
           })
         },
-        "aria-label": y.intl.formatToPlainString(y.t["XjP/R0"], {
-          buttonText: B,
+        "aria-label": _.intl.formatToPlainString(_.t["XjP/R0"], {
+          buttonText: L,
           applicationName: n.name
         }),
-        children: B
+        children: L
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

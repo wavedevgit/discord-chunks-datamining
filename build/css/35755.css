@@ -1,6 +1,6 @@
 /**
   Module ID: 35755
-  Original File Name: 7f7f76690e174864
+  Original File Name: 1e6d0f4f649ecad3
 **/
 .brokenImageIcon_f68fcb {
     color: var(--background-accent);
@@ -681,15 +681,6 @@
     padding-right: var(--spacing-16)
 }
 
-.experimentLayout__95856.container__95856 {
-    gap: 8px;
-    margin-bottom: 80px
-}
-
-.altLayout__95856.container__95856 {
-    margin-bottom: 116px
-}
-
 .friendsWhoPlay__95856.container__95856 {
     gap: var(--spacing-16);
     height: 100%;
@@ -811,46 +802,19 @@
 }
 
 .friendsWhoPlayPEP__95856 {
-    display: flex;
-    flex-direction: column;
-    gap: 16px
-}
-
-.experimentLayout__95856.entrypointContainer__95856,.friendsWhoPlayPEP__95856 {
     background-color: var(--background-primary);
     bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
     left: 0;
     padding: 16px;
     position: fixed;
     right: 0
 }
 
-.experimentLayout__95856.entrypointContainer__95856 {
-    gap: 10px
-}
-
 .friendsWhoPlayPEP__95856 .entrypointContainer__95856 {
     margin: 0
-}
-
-.altLayout__95856.entrypointContainer__95856 .entryPointCheckbox__95856 {
-    margin: 4px 0
-}
-
-.entryPointCheckboxLabel__95856 {
-    align-items: center;
-    display: flex;
-    gap: 4px;
-    margin: auto 0
-}
-
-.altLayout__95856.entrypointContainer__95856 {
-    flex-direction: column;
-    height: 84px
-}
-
-.altLayout__95856.noShowTryItOutButton__95856.entrypointContainer__95856 {
-    height: 48px
 }
 
 .entryPointContainerFlexChild__95856 {
@@ -1644,4 +1608,4 @@
     border: 3px solid CanvasText
 }
 
-/*# sourceMappingURL=7f7f76690e174864.css.map*/
+/*# sourceMappingURL=1e6d0f4f649ecad3.css.map*/
