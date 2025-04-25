@@ -1,4 +1,4 @@
-/** Chunk was on 24338 **/
+/** Chunk was on 2900 **/
 e.exports = {
   welcomeCTA: "welcomeCTA_f5d1e2",
   welcomeCTAButtonOuter: "welcomeCTAButtonOuter_f5d1e2",

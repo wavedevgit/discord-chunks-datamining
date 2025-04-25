@@ -11,8 +11,8 @@ var r, i = n(200651),
   u = n(129293),
   d = n(388905),
   h = n(108427),
-  g = n(598077),
-  p = n(896797),
+  p = n(598077),
+  g = n(896797),
   f = n(981631),
   m = n(930441),
   _ = n(388032),
@@ -46,7 +46,7 @@ class b extends(r = l.PureComponent) {
         body: {
           user: n
         }
-      } = e, r = new g.Z(n);
+      } = e, r = new p.Z(n);
       this.setState({
         success: !0,
         busy: !1,
@@ -158,6 +158,6 @@ class b extends(r = l.PureComponent) {
 E(b, "defaultProps", {
   transitionTo: e => n.g.location.assign(e)
 });
-let v = o.ZP.connectStores([p.Z], () => ({
-  defaultRoute: p.Z.defaultRoute
+let v = o.ZP.connectStores([g.Z], () => ({
+  defaultRoute: g.Z.defaultRoute
 }))(b)

@@ -1,4 +1,4 @@
-/** Chunk was on 24338 **/
+/** Chunk was on 2900 **/
 n.d(t, {
   Z: () => M
 }), n(388685);
@@ -20,8 +20,8 @@ var r = n(200651),
   b = n(406432),
   x = n(348238),
   y = n(38267),
-  E = n(884902),
-  v = n(670188),
+  v = n(884902),
+  E = n(670188),
   O = n(695346),
   j = n(271383),
   C = n(594174),
@@ -82,7 +82,7 @@ function M(e) {
   }, [B]), J = (0, c.e7)([j.ZP], () => (null == B ? void 0 : B.authorId) != null ? j.ZP.getMember(B.guildId, B.authorId) : null), $ = (0, f.Z)((null == J ? void 0 : J.avatarDecoration) != null ? null == J ? void 0 : J.avatarDecoration : null == B || null == (t = B.user) ? void 0 : t.avatarDecoration), [ee, et, en] = i.useMemo(() => {
     var e;
     return [null != (e = null == J ? void 0 : J.colorString) ? e : "inherit", null == J ? void 0 : J.colorStrings, null == J ? void 0 : J.colorRoleId]
-  }, [J]), er = (0, E.X)(null == J ? void 0 : J.guildId, et), {
+  }, [J]), er = (0, v.X)(null == J ? void 0 : J.guildId, et), {
     reducedMotion: ei
   } = i.useContext(u.Sfi), [el, ea] = i.useState(!1), eo = i.useCallback(() => {
     K(!0)
@@ -168,7 +168,7 @@ function M(e) {
         })]
       }), (0, r.jsxs)("div", {
         className: R.descriptionFooter,
-        children: [null != B.authorId && null != ed && (0, r.jsx)(v.Z, {
+        children: [null != B.authorId && null != ed && (0, r.jsx)(E.Z, {
           userId: B.authorId,
           guildId: B.guildId,
           channelId: F.id,
@@ -215,7 +215,7 @@ function M(e) {
                 color: ee,
                 roleColors: er,
                 className: R.authorName
-              }) : (0, r.jsx)(v.Z, {
+              }) : (0, r.jsx)(E.Z, {
                 userId: B.authorId,
                 guildId: B.guildId,
                 channelId: F.id,

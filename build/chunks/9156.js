@@ -260,7 +260,7 @@ function en(e) {
 }
 
 function er(e) {
-  C = _.yE(e.flags, b.ce.USE_NEW_NOTIFICATIONS), R = _.yE(e.flags, b.ce.MENTION_ON_ALL_MESSAGES), P = e
+  C = _.yE(e.flags, b.c.USE_NEW_NOTIFICATIONS), R = _.yE(e.flags, b.c.MENTION_ON_ALL_MESSAGES), P = e
 }
 
 function ei(e) {

@@ -1,4 +1,4 @@
-/** Chunk was on 21918 **/
+/** Chunk was on 30745 **/
 n.d(t, {
   Z: () => M
 }), n(388685), n(539854);
@@ -19,8 +19,8 @@ var r = n(200651),
   b = n(670188),
   _ = n(158776),
   y = n(699516),
-  C = n(111583),
-  x = n(594174),
+  x = n(111583),
+  C = n(594174),
   v = n(626135),
   j = n(585483),
   O = n(233870),
@@ -58,7 +58,7 @@ function R(e) {
     channel: a,
     status: u,
     activities: d
-  } = e, p = (0, o.e7)([C.Z], () => null != C.Z.getTypingUsers(a.id)[t.id]), f = (0, o.e7)([x.default], () => x.default.getCurrentUser()), v = (0, o.e7)([_.Z], () => _.Z.isMobileOnline(t.id)), O = (0, o.e7)([y.Z], () => y.Z.getNickname(t.id)), I = (0, h.Z)(t.id), N = e => {
+  } = e, p = (0, o.e7)([x.Z], () => null != x.Z.getTypingUsers(a.id)[t.id]), f = (0, o.e7)([C.default], () => C.default.getCurrentUser()), v = (0, o.e7)([_.Z], () => _.Z.isMobileOnline(t.id)), O = (0, o.e7)([y.Z], () => y.Z.getNickname(t.id)), I = (0, h.Z)(t.id), N = e => {
     (0, s.jW)(e, async () => {
       let {
         default: e
@@ -165,16 +165,16 @@ function k(e, t) {
 function M(e) {
   let {
     channel: t
-  } = e, n = x.default.getCurrentUser(), l = null == n ? void 0 : n.isStaff(), {
+  } = e, n = C.default.getCurrentUser(), l = null == n ? void 0 : n.isStaff(), {
     analyticsLocations: s
   } = (0, d.ZP)(u.Z.MEMBER_LIST), {
     listItems: c
-  } = (0, o.e7)([y.Z, x.default, _.Z], () => {
-    let e = (0, O.T)(t.recipients, x.default),
+  } = (0, o.e7)([y.Z, C.default, _.Z], () => {
+    let e = (0, O.T)(t.recipients, C.default),
       n = {};
     for (let t of e) {
       var r, i, l;
-      y.Z.isFriend(t.id) || t.id === (null == (r = x.default.getCurrentUser()) ? void 0 : r.id) ? n[t.id] = {
+      y.Z.isFriend(t.id) || t.id === (null == (r = C.default.getCurrentUser()) ? void 0 : r.id) ? n[t.id] = {
         status: null != (i = _.Z.getStatus(t.id)) ? i : S.Skl.OFFLINE,
         activities: null != (l = _.Z.getActivities(t.id)) ? l : A
       } : n[t.id] = {

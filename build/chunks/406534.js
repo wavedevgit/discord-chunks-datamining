@@ -1,4 +1,4 @@
-/** Chunk was on 21918 **/
+/** Chunk was on 30745 **/
 n.d(t, {
   Z: () => er
 }), n(539854), n(388685), n(290780);
@@ -19,8 +19,8 @@ var r = n(200651),
   b = n(79712),
   _ = n(736052),
   y = n(359110),
-  C = n(359119),
-  x = n(13279),
+  x = n(359119),
+  C = n(13279),
   v = n(248789),
   j = n(88101),
   O = n(576954),
@@ -132,18 +132,18 @@ function er(e) {
     eb = G.length > 0 && (null == (t = G.first()) ? void 0 : t.isFirstMessageInForumPost(f)),
     e_ = (0, c.ts)(f),
     ey = (0, l.e7)([E.Z], () => E.Z.shouldShowTopicsBar() && !ep),
-    eC = (0, j.P)(f.id),
-    ex = (0, x.z)(f.id, J.zr),
+    ex = (0, j.P)(f.id),
+    eC = (0, C.z)(f.id, J.zr),
     ev = (0, p.k)(f.id),
     ej = (0, U.Z)(),
     eO = function(e, t) {
       if (e.isDM() && null != t)
-        if (t.type === C.pj.STRANGER_DANGER) return (0, r.jsx)(O.M, {
+        if (t.type === x.pj.STRANGER_DANGER) return (0, r.jsx)(O.M, {
           channelId: e.id,
           warningId: t.id,
           senderId: e.getRecipientId()
         });
-        else if (t.type === C.pj.LIKELY_ATO) return (0, r.jsx)(h.M, {
+        else if (t.type === x.pj.LIKELY_ATO) return (0, r.jsx)(h.M, {
         channelId: e.id,
         warningId: t.id,
         senderId: e.getRecipientId()
@@ -154,7 +154,7 @@ function er(e) {
         senderId: e.getRecipientId()
       });
       return null
-    }(f, null != (n = null != eC ? eC : ex) ? n : ev),
+    }(f, null != (n = null != ex ? ex : eC) ? n : ev),
     eE = f.isForumPost() && !eb ? (0, r.jsx)(g.Z, {
       postId: f.id
     }) : null,

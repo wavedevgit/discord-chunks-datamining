@@ -1,4 +1,4 @@
-/** Chunk was on 21918 **/
+/** Chunk was on 30745 **/
 n.d(t, {
   Z: () => b
 });
@@ -25,8 +25,8 @@ function b(e) {
     appContext: b,
     exitFullScreen: _,
     onSelect: y,
-    onInteraction: C
-  } = e, x = (0, i.e7)([s.Z], () => s.Z.getSelectedParticipant(t)), v = (null == x ? void 0 : x.type) === m.fO.STREAM ? x.stream : null, j = (0, i.e7)([o.Z], () => (null == x ? void 0 : x.type) === m.fO.ACTIVITY ? o.Z.getApplication(x.applicationId) : void 0), O = (0, c.Z)(t), E = (0, d.Z)(), I = (0, u.Z)(t), P = (0, f.Z)(t), S = (0, p.Z)(j, t), Z = (0, a.Z)({
+    onInteraction: x
+  } = e, C = (0, i.e7)([s.Z], () => s.Z.getSelectedParticipant(t)), v = (null == C ? void 0 : C.type) === m.fO.STREAM ? C.stream : null, j = (0, i.e7)([o.Z], () => (null == C ? void 0 : C.type) === m.fO.ACTIVITY ? o.Z.getApplication(C.applicationId) : void 0), O = (0, c.Z)(t), E = (0, d.Z)(), I = (0, u.Z)(t), P = (0, f.Z)(t), S = (0, p.Z)(j, t), Z = (0, a.Z)({
     id: null == j ? void 0 : j.id,
     label: g.intl.string(g.t["+NP/b2"])
   });
@@ -35,7 +35,7 @@ function b(e) {
     onClose: n,
     "aria-label": g.intl.string(g.t.pkYeAw),
     onSelect: y,
-    onInteraction: C,
+    onInteraction: x,
     children: [O, E, I, P, (0, h.Z)(v, b, _), S, (0, r.jsx)(l.kSQ, {
       children: Z
     })]

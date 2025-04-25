@@ -1,4 +1,4 @@
-/** Chunk was on 21918 **/
+/** Chunk was on 30745 **/
 n.d(t, {
   Z: () => m
 });
@@ -34,8 +34,8 @@ function m() {
     "aria-hidden": !0,
     size: o.EFr.SIZE_80,
     className: f.avatarSizeOverride
-  }), C = null;
-  return C = null != n ? (0, r.jsx)(s.Z, {
+  }), x = null;
+  return x = null != n ? (0, r.jsx)(s.Z, {
     guild: n
   }) : null != b ? (0, r.jsx)(o.qEK, {
     "aria-hidden": !0,
@@ -49,7 +49,7 @@ function m() {
       children: y
     }), (0, r.jsx)("div", {
       className: f.guildAvatar,
-      children: C
+      children: x
     }), (0, r.jsx)("svg", {
       className: f.illustration,
       xmlns: "http://www.w3.org/2000/svg",

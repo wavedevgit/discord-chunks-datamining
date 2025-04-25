@@ -1,4 +1,4 @@
-/** Chunk was on 21918 **/
+/** Chunk was on 30745 **/
 n.d(t, {
   Z: () => A,
   y: () => T
@@ -20,8 +20,8 @@ var r = n(200651),
   b = n(213609),
   _ = n(795318),
   y = n(670188),
-  C = n(314897),
-  x = n(271383),
+  x = n(314897),
+  C = n(271383),
   v = n(709586),
   j = n(5192),
   O = n(590415),
@@ -138,11 +138,11 @@ let Z = i.memo(function(e) {
     } = e, {
       user: a,
       blocked: d
-    } = t, v = l.getGuildId(), j = C.default.getId(), {
+    } = t, v = l.getGuildId(), j = x.default.getId(), {
       newestAnalyticsLocation: O
-    } = (0, g.ZP)(m.Z.AUDIENCE_TILE), Z = (0, f.bp)(), T = (0, u.e7)([x.ZP], () => {
+    } = (0, g.ZP)(m.Z.AUDIENCE_TILE), Z = (0, f.bp)(), T = (0, u.e7)([C.ZP], () => {
       var e;
-      return null != v && (null == (e = x.ZP.getMember(v, a.id)) ? void 0 : e.premiumSince) != null
+      return null != v && (null == (e = C.ZP.getMember(v, a.id)) ? void 0 : e.premiumSince) != null
     }, [v, a.id]);
     s()(null != v, "Channel cannot be guildless");
     let A = i.useCallback(e => {

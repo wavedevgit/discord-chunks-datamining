@@ -18,15 +18,15 @@ var a = n(200651),
   b = n(572004),
   f = n(55935),
   v = n(120816),
-  g = n(31336),
-  j = n(257785),
+  j = n(31336),
+  g = n(257785),
   _ = n(484036),
   y = n(681619),
   O = n(621060),
   C = n(388032),
   E = n(459100),
   N = n(616257);
-let S = [{
+let T = [{
   key: "event",
   cellClassName: E.eventColumn,
   render(e) {
@@ -46,7 +46,7 @@ let S = [{
   }
 }];
 
-function T(e) {
+function S(e) {
   let {
     children: t
   } = e;
@@ -154,9 +154,9 @@ let w = [{
             tooltip: "Close",
             onClick: s
           })]
-        }), (0, a.jsxs)(j.E, {
+        }), (0, a.jsxs)(g.E, {
           className: E.commonProperties,
-          children: [(0, a.jsx)(j.Z9, {
+          children: [(0, a.jsx)(g.Z9, {
             name: "Timestamp (local)",
             copyValue: r.toISOString(),
             children: (0, a.jsxs)("time", {
@@ -164,20 +164,20 @@ let w = [{
               title: (0, f.vc)(x, "LLLL"),
               children: ["(", o().locale(), ") ", (0, f.Y4)(x)]
             })
-          }), null != c && (0, a.jsx)(j.Z9, {
+          }), null != c && (0, a.jsx)(g.Z9, {
             name: "User",
             copyValue: c.id,
             children: (0, a.jsx)(u.Z, {
               user: c
             })
-          }), (0, a.jsx)(j.Z9, {
+          }), (0, a.jsx)(g.Z9, {
             name: "Fingerprint",
             copyValue: l,
             children: (0, a.jsx)("code", {
               children: l
             })
           })]
-        }), (0, a.jsx)(T, {
+        }), (0, a.jsx)(S, {
           children: Object.entries(n).map(e => {
             let [t, n] = e;
             return (0, a.jsx)(P, {
@@ -251,9 +251,9 @@ function R() {
       return !1
     }),
     [b, f] = r.useState(void 0),
-    j = p.find(e => e.key === b),
+    g = p.find(e => e.key === b),
     {
-      TabBar: T,
+      TabBar: S,
       renderSelectedTab: P
     } = (0, O.ZP)({
       tabs: w
@@ -267,7 +267,7 @@ function R() {
         className: E.toolbarButton,
         look: d.zxk.Looks.BLANK,
         size: d.zxk.Sizes.ICON,
-        onClick: g.Zw,
+        onClick: j.Zw,
         children: (0, a.jsx)("span", {
           title: C.intl.string(C.t.VkKicX),
           children: (0, a.jsx)(d.XHJ, {
@@ -301,16 +301,16 @@ function R() {
         placeholder: "Search by event name"
       })
     }), (0, a.jsx)(y.Z, {
-      columns: S,
+      columns: T,
       data: p,
       selectedRowKey: b,
       onClickRow: e => f(e.key)
-    }), null != j && (0, a.jsxs)(_.Z, {
+    }), null != g && (0, a.jsxs)(_.Z, {
       className: E.subPanel,
       minHeight: 100,
       initialHeight: null != e.current ? e.current.clientHeight / 2 : 300,
-      children: [(0, a.jsx)(T, {}), P({
-        loggedEvent: j,
+      children: [(0, a.jsx)(S, {}), P({
+        loggedEvent: g,
         onClose: () => f(void 0)
       })]
     })]

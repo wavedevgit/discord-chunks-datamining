@@ -18,7 +18,7 @@ var a = n(200651),
   b = n(123393),
   f = n(616257),
   v = n(173166);
-let g = e => {
+let j = e => {
     var t;
     let {
       entitlement: n,
@@ -51,7 +51,7 @@ let g = e => {
       })]
     })
   },
-  j = async () => (await o.tn.get({
+  g = async () => (await o.tn.get({
     url: h.ANM.ENTITLEMENTS_FOR_APPLICATION(p.CL),
     oldFormErrors: !0,
     query: {
@@ -91,7 +91,7 @@ let g = e => {
   }];
 
 function E() {
-  let [e, t] = r.useState(!1), [n, l] = r.useState(!1), [o, d] = r.useState(s.a.PREMIUM_TIER_2_1_HOUR), [m, p] = r.useState([]), [E, N] = r.useState([]), [S, T] = r.useState([]), P = async e => {
+  let [e, t] = r.useState(!1), [n, l] = r.useState(!1), [o, d] = r.useState(s.a.PREMIUM_TIER_2_1_HOUR), [m, p] = r.useState([]), [E, N] = r.useState([]), [T, S] = r.useState([]), P = async e => {
     await _(e), await I()
   }, w = async e => {
     await y(e), await I()
@@ -100,7 +100,7 @@ function E() {
   }, I = async () => {
     try {
       t(!0);
-      let e = await j();
+      let e = await g();
       p(e)
     } finally {
       t(!1)
@@ -109,7 +109,7 @@ function E() {
   return r.useEffect(() => {
     I()
   }, []), r.useEffect(() => {
-    N(R(m)), T(Z(m))
+    N(R(m)), S(Z(m))
   }, [m]), (0, a.jsx)(c.zJl, {
     className: f.panel,
     children: (0, a.jsxs)("div", {
@@ -223,13 +223,13 @@ function E() {
             variant: "text-md/bold",
             children: "Active premium"
           }), (0, a.jsx)("div", {
-            children: E.map(e => (0, a.jsx)(g, {
+            children: E.map(e => (0, a.jsx)(j, {
               entitlement: e,
               active: !0,
               onDelete: () => w(e.id)
             }, e.id))
           })]
-        }), S.length > 0 && (0, a.jsxs)("div", {
+        }), T.length > 0 && (0, a.jsxs)("div", {
           children: [(0, a.jsx)(c.Text, {
             style: {
               marginTop: "15px"
@@ -237,7 +237,7 @@ function E() {
             variant: "text-md/bold",
             children: "Unconsumed Fractional Premium"
           }), (0, a.jsx)("div", {
-            children: S.map(e => (0, a.jsx)(g, {
+            children: T.map(e => (0, a.jsx)(j, {
               entitlement: e
             }, e.id))
           })]

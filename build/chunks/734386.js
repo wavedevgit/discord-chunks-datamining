@@ -1,4 +1,4 @@
-/** Chunk was on 21918 **/
+/** Chunk was on 30745 **/
 n.d(t, {
   Z: () => w
 }), n(388685);
@@ -19,8 +19,8 @@ var r = n(200651),
   b = n(185413),
   _ = n(42311),
   y = n(626786),
-  C = n(434404),
-  x = n(454585),
+  x = n(434404),
+  C = n(454585),
   v = n(430824),
   j = n(496675),
   O = n(594174),
@@ -79,7 +79,7 @@ function w(e) {
     }), (0, r.jsx)(S.jz, {
       children: T.intl.format(T.t.QuwqjI, {
         channelName: a,
-        topicHook: () => x.Z.parseTopic(t.topic, !0, {
+        topicHook: () => C.Z.parseTopic(t.topic, !0, {
           channelId: t.id
         })
       })
@@ -144,7 +144,7 @@ function w(e) {
           disabled: !U,
           verified: s,
           onClick: () => {
-            C.Z.open(t.guild_id, N.pNK.MEMBERS), C.Z.selectRole(e.id)
+            x.Z.open(t.guild_id, N.pNK.MEMBERS), x.Z.selectRole(e.id)
           }
         }, e.id) : (0, r.jsx)(y.Z, {
           className: o()(A.role, {

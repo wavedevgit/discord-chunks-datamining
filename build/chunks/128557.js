@@ -1,4 +1,4 @@
-/** Chunk was on 21918 **/
+/** Chunk was on 30745 **/
 n.d(t, {
   Z: () => B,
   i: () => U
@@ -20,8 +20,8 @@ var r = n(200651),
   b = n(330010),
   _ = n(978946),
   y = n(314897),
-  C = n(430824),
-  x = n(594174),
+  x = n(430824),
+  C = n(594174),
   v = n(259580),
   j = n(585483),
   O = n(63063),
@@ -111,13 +111,13 @@ function U(e) {
 function B(e) {
   let {
     channel: t
-  } = e, l = (0, s.e7)([C.Z], () => null != t ? C.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && I.default.extractTimestamp(l.id) < Date.now() - S._8R, v = (0, s.e7)([y.default], () => (null == l ? void 0 : l.ownerId) === y.default.getId(), [l]), {
+  } = e, l = (0, s.e7)([x.Z], () => null != t ? x.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && I.default.extractTimestamp(l.id) < Date.now() - S._8R, v = (0, s.e7)([y.default], () => (null == l ? void 0 : l.ownerId) === y.default.getId(), [l]), {
     canInvite: B,
     canManageGuild: G,
     canMessage: F
-  } = (0, m.TE)(t, l), H = (0, s.e7)([x.default], () => {
+  } = (0, m.TE)(t, l), H = (0, s.e7)([C.default], () => {
     var e, t;
-    return (null == (e = x.default.getCurrentUser()) ? void 0 : e.desktop) === !0 || (null == (t = x.default.getCurrentUser()) ? void 0 : t.mobile) === !0
+    return (null == (e = C.default.getCurrentUser()) ? void 0 : e.desktop) === !0 || (null == (t = C.default.getCurrentUser()) ? void 0 : t.mobile) === !0
   }), {
     guildPopulated: V,
     guildMessaged: z,

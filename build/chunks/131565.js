@@ -1,4 +1,4 @@
-/** Chunk was on 21918 **/
+/** Chunk was on 30745 **/
 n.d(t, {
   Z: () => y
 }), n(388685);
@@ -34,15 +34,15 @@ function _(e) {
     }
   }), _ = u.qM.useExperiment({
     location: "channel_chat_wallpaper"
-  }).enabled, [y, C] = i.useState(p);
+  }).enabled, [y, x] = i.useState(p);
   return (i.useEffect(() => {
     null == n && t.isViewable && d.Z.shouldFetchWallpapers && (0, h.k9)()
   }, [n, t.isViewable]), i.useEffect(() => {
-    if (null == n) return void C(void 0);
+    if (null == n) return void x(void 0);
     let e = performance.now();
-    C(p), (0, s.p)(n, t => {
+    x(p), (0, s.p)(n, t => {
       if (t === n) {
-        C(void 0);
+        x(void 0);
         let n = performance.now();
         c.default.track(m.rMx.CHAT_WALLPAPER_DOWNLOADED, {
           time_used_in_ms: n - e,

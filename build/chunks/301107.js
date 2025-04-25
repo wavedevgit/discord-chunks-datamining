@@ -1,25 +1,25 @@
-/** Chunk was on 94904 **/
+/** Chunk was on 97299 **/
 n.d(t, {
-  W: () => i
+  W: () => o
 }), n(413496), n(433524), n(35282), n(415506);
 var r = n(192379),
-  o = n(250683),
-  c = n(253135);
+  l = n(250683),
+  i = n(253135);
 
-function i(e) {
+function o(e) {
   let {
     fingerprintBase64: t,
     chunkSize: n,
-    desiredLength: i
-  } = e, l = r.useMemo(() => {
+    desiredLength: o
+  } = e, a = r.useMemo(() => {
     if (null == t || "" === t) return null;
-    let e = o.toByteArray(t),
-      r = (0, c.Dq)(e, i, n);
+    let e = l.toByteArray(t),
+      r = (0, i.Dq)(e, o, n);
     if (null == r) return null;
-    let l = RegExp(".{1,".concat(n, "}"), "g"),
-      s = r.match(l);
+    let a = RegExp(".{1,".concat(n, "}"), "g"),
+      s = r.match(a);
     return null == s ? null : Array.from(s)
-  }, [n, t, i]);
-  if (null != t && "" !== t && null == l) throw Error("[useReadableSecureFramesCode] Failed to parse base 64 code.");
-  return l
+  }, [n, t, o]);
+  if (null != t && "" !== t && null == a) throw Error("[useReadableSecureFramesCode] Failed to parse base 64 code.");
+  return a
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 24338 **/
+/** Chunk was on 2900 **/
 n.d(t, {
   Z: () => _
 }), n(388685);
@@ -22,7 +22,7 @@ function _(e) {
     setTab: t,
     badgeState: l,
     closePopout: _
-  } = e, x = (0, o.Wu)([u.Z], () => u.Z.getInvites()), y = (0, o.e7)([u.Z], () => u.Z.getInviteStatuses()), [E, v] = i.useMemo(() => a().partition(x, e => {
+  } = e, x = (0, o.Wu)([u.Z], () => u.Z.getInvites()), y = (0, o.e7)([u.Z], () => u.Z.getInviteStatuses()), [v, E] = i.useMemo(() => a().partition(x, e => {
     var t;
     return (null == (t = y[e.invite_id]) ? void 0 : t.joinable) !== !1 && (Date.now() - new Date(e.created_at).getTime()) / 1e3 < e.ttl
   }), [x, y]);
@@ -102,20 +102,20 @@ function _(e) {
     }), (0, r.jsx)(c.h21, {
       children: (0, r.jsxs)("div", {
         className: g.invitesContainer,
-        children: [E.length > 0 && (0, r.jsxs)(r.Fragment, {
+        children: [v.length > 0 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(b, {
             title: h.intl.string(h.t.yflAJS)
           }), (0, r.jsx)(r.Fragment, {
-            children: E.map(e => (0, r.jsx)(f.Z, {
+            children: v.map(e => (0, r.jsx)(f.Z, {
               invite: e,
               expired: !1
             }, e.invite_id))
           })]
-        }), v.length > 0 && (0, r.jsxs)(r.Fragment, {
+        }), E.length > 0 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(b, {
             title: h.intl.string(h.t.f0Ia4e)
           }), (0, r.jsx)(r.Fragment, {
-            children: v.map(e => (0, r.jsx)(f.Z, {
+            children: E.map(e => (0, r.jsx)(f.Z, {
               invite: e,
               expired: !0
             }, e.invite_id))

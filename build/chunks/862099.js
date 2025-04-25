@@ -1,8 +1,8 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Co: () => Q,
+  Co: () => X,
   ZP: () => J,
-  bZ: () => X,
+  bZ: () => Q,
   gt: () => B
 }), n(388685);
 var r, i = n(200651),
@@ -125,7 +125,7 @@ function H(e) {
       color: "currentColor",
       className: V.stageIcon
     }) : null,
-    children: (0, i.jsx)(Q, {
+    children: (0, i.jsx)(X, {
       channel: n,
       speakers: r,
       voiceType: 1
@@ -345,16 +345,16 @@ function q(e) {
       className: V.stageIcon
     }),
     topic: t.topic,
-    children: (0, i.jsx)(Q, {
+    children: (0, i.jsx)(X, {
       channel: n,
       speakers: r,
       voiceType: 2
     })
   })
 }
-var X = ((r = {})[r.VOICE = 1] = "VOICE", r[r.STAGE = 2] = "STAGE", r[r.STUDY_ROOM = 3] = "STUDY_ROOM", r);
+var Q = ((r = {})[r.VOICE = 1] = "VOICE", r[r.STAGE = 2] = "STAGE", r[r.STUDY_ROOM = 3] = "STUDY_ROOM", r);
 
-function Q(e) {
+function X(e) {
   let {
     channel: t,
     speakers: n,

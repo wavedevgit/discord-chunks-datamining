@@ -1,4 +1,4 @@
-/** Chunk was on 24338 **/
+/** Chunk was on 2900 **/
 n.d(t, {
   Z: () => F
 }), n(388685), n(539854);
@@ -20,8 +20,8 @@ var r = n(200651),
   b = n(311819),
   x = n(758199),
   y = n(943762),
-  E = n(914498),
-  v = n(208444),
+  v = n(914498),
+  E = n(208444),
   O = n(429551),
   j = n(973616),
   C = n(314897),
@@ -125,7 +125,7 @@ let F = i.memo(function(e) {
         instanceId: null == W ? void 0 : W.compositeInstanceId,
         isContextlessActivity: (null == W ? void 0 : W.location.kind) === l.E.CONTEXTLESS
       })
-    }, ea = en.disabled ? L.intl.string(L.t.JBnc7O) : L.intl.string(L.t.cX9uLS), eo = (0, v.z)($, () => {
+    }, ea = en.disabled ? L.intl.string(L.t.JBnc7O) : L.intl.string(L.t.cX9uLS), eo = (0, E.z)($, () => {
       T.default.track(k.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
         application_id: A.id,
         channel_id: Z,
@@ -145,7 +145,7 @@ let F = i.memo(function(e) {
     em = (0, y.r)(Q),
     ef = [{
       label: et ? L.intl.string(L.t.cnBQPD) : L.intl.string(L.t.VJlc0d),
-      trackingArea: E.j_.PLAY,
+      trackingArea: v.j_.PLAY,
       onClick: el,
       disabledReason: O,
       submitting: ei
@@ -181,7 +181,7 @@ let F = i.memo(function(e) {
     actions: ef,
     trackingConfig: {
       id: A.id,
-      linkType: E.Un.ACTIVITY_INSTANCE
+      linkType: v.Un.ACTIVITY_INSTANCE
     }
   })
 })

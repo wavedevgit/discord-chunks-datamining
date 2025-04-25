@@ -18,16 +18,16 @@ var a = n(200651),
   b = n(835473),
   f = n(246992),
   v = n(681619),
-  g = n(810568),
-  j = n(168524),
+  j = n(810568),
+  g = n(168524),
   _ = n(77498),
   y = n(823379),
   O = n(550532),
   C = n(71585),
   E = n(146282),
   N = n(780106),
-  S = n(650613),
-  T = n(789086),
+  T = n(650613),
+  S = n(789086),
   P = n(206583),
   w = n(403542),
   k = n(616257);
@@ -116,10 +116,10 @@ function Z() {
       var e, t, n;
       return parseInt(R) > 0 ? R : null != (n = null == (e = _.Z.getGameByName(R)) ? void 0 : e.id) ? n : null == (t = p.Z.getApplicationByName(R)) ? void 0 : t.id
     }, [R]),
-    D = (0, j.Z)({
+    D = (0, g.Z)({
       applicationId: A,
       location: "DevToolsContentInventory",
-      source: g.m1.DevTools
+      source: j.m1.DevTools
     }),
     M = Object.entries(null != (t = m.K.get("GameProfileModal")) ? t : {}).filter(e => {
       let [t, n] = e;
@@ -142,7 +142,7 @@ function Z() {
           data: s
         }), (0, a.jsx)(x.LZC, {
           size: 8
-        }), (0, a.jsx)(T.Z, {}), (0, a.jsx)(x.zxk, {
+        }), (0, a.jsx)(S.Z, {}), (0, a.jsx)(x.zxk, {
           fullWidth: !0,
           onClick: function() {
             h.Z.dispatch({
@@ -196,7 +196,7 @@ function Z() {
           },
           children: i ? "Disable Fast Impression Capping" : "Enable Fast Impression Capping"
         })]
-      }), !1, (0, a.jsx)(S.Z, {}), (0, a.jsxs)(x.hjN, {
+      }), !1, (0, a.jsx)(T.Z, {}), (0, a.jsxs)(x.hjN, {
         children: [(0, a.jsx)(x.vwX, {
           children: "Game Profile"
         }), (0, a.jsx)(x.oil, {
@@ -244,10 +244,10 @@ function Z() {
 let L = e => {
   let {
     application: t
-  } = e, n = (0, j.Z)({
+  } = e, n = (0, g.Z)({
     applicationId: t.id,
     location: "DevToolsContentInventory",
-    source: g.m1.DevTools
+    source: j.m1.DevTools
   });
   return (0, a.jsx)(x.P3F, {
     onClick: n,

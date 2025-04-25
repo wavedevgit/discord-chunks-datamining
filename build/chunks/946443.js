@@ -1,4 +1,4 @@
-/** Chunk was on 24338 **/
+/** Chunk was on 2900 **/
 n.d(t, {
   Z: () => N,
   h: () => P
@@ -21,8 +21,8 @@ var r = n(200651),
   b = n(585483),
   x = n(358085),
   y = n(143316),
-  E = n(240126),
-  v = n(791914),
+  v = n(240126),
+  E = n(791914),
   O = n(147522),
   j = n(809780),
   C = n(981631),
@@ -98,12 +98,12 @@ function N(e) {
       className: a()(I.container, {
         [I.widerInbox]: W
       }),
-      children: [(0, r.jsx)(v.Z, {
+      children: [(0, r.jsx)(E.Z, {
         tab: d.X.UNREADS,
         setTab: w,
         badgeState: L,
         closePopout: D
-      }), (0, r.jsx)(E.Z, {
+      }), (0, r.jsx)(v.Z, {
         Icon: p.xx7,
         header: S.intl.string(S.t["6XMM+P"]),
         tip: (null == (A = s().os) ? void 0 : A.family) === "OS X" ? S.intl.string(S.t.w9uDOT) : S.intl.string(S.t.BiUJCw)
@@ -115,7 +115,7 @@ function N(e) {
       [I.widerInbox]: W
     }),
     "aria-label": S.intl.string(S.t.sRUdBw),
-    children: [(0, r.jsx)(v.Z, {
+    children: [(0, r.jsx)(E.Z, {
       tab: d.X.UNREADS,
       setTab: w,
       badgeState: L,
@@ -231,12 +231,12 @@ function P(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: I.container,
-    children: [(0, r.jsx)(v.Z, {
+    children: [(0, r.jsx)(E.Z, {
       tab: d.X.UNREADS,
       setTab: t,
       badgeState: n,
       closePopout: i
-    }), (0, r.jsx)(E.Z, {
+    }), (0, r.jsx)(v.Z, {
       Icon: p.xx7,
       disableStars: !0,
       header: S.intl.string(S.t["KG/ynZ"]),

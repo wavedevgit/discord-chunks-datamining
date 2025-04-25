@@ -1,4 +1,4 @@
-/** Chunk was on 21918 **/
+/** Chunk was on 30745 **/
 n.d(t, {
   Z: () => g
 }), n(388685);
@@ -37,25 +37,25 @@ function m(e) {
 function g(e) {
   let {
     channel: t
-  } = e, [n] = t.recipients, g = (0, l.e7)([a.default], () => a.default.getUser(n)), b = (0, l.e7)([a.default], () => a.default.getCurrentUser()), _ = (0, u.Z)(), [y, C] = (0, c.Z)(n);
+  } = e, [n] = t.recipients, g = (0, l.e7)([a.default], () => a.default.getUser(n)), b = (0, l.e7)([a.default], () => a.default.getCurrentUser()), _ = (0, u.Z)(), [y, x] = (0, c.Z)(n);
   (0, o.t)();
   let {
-    withMutualFriendsCount: x
+    withMutualFriendsCount: C
   } = (0, s.j)({
     location: "UserProfileSidebarRenderer"
   });
   return (i.useEffect(() => {
     (0, d.Z)(null != g ? g : n, {
       type: "sidebar",
-      withMutualFriendsCount: (null == g ? void 0 : g.bot) !== !0 && x,
-      withMutualFriends: (null == g ? void 0 : g.bot) !== !0 && !x,
+      withMutualFriendsCount: (null == g ? void 0 : g.bot) !== !0 && C,
+      withMutualFriends: (null == g ? void 0 : g.bot) !== !0 && !C,
       withMutualGuilds: !0,
       channelId: t.id
     })
-  }, [g, n, t.id, x]), null != g && null != b && _) ? y ? (0, r.jsx)(h.Z, m({
+  }, [g, n, t.id, C]), null != g && null != b && _) ? y ? (0, r.jsx)(h.Z, m({
     user: g,
     currentUser: b,
-    onHide: C
+    onHide: x
   }, e)) : g.isNonUserBot() ? (0, r.jsx)(p.Z, m({
     user: g,
     currentUser: b

@@ -1,4 +1,4 @@
-/** Chunk was on 24338 **/
+/** Chunk was on 2900 **/
 e.exports = {
   statusCounts: "statusCounts_a4b24e",
   status: "status_a4b24e",

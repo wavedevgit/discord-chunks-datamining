@@ -1,4 +1,4 @@
-/** Chunk was on 30514 **/
+/** Chunk was on 31656 **/
 t.d(n, {
   Z: () => f
 }), t(953529), t(997841);
@@ -49,8 +49,8 @@ function f(e) {
     return null == (e = a.Z.getUserProfile(n.id)) ? void 0 : e.application
   }), {
     hasMessageContent: f,
-    hasGuildPresences: p,
-    hasGuildMembers: m
+    hasGuildPresences: m,
+    hasGuildMembers: p
   } = (0, s.w)({
     flags: null == t ? void 0 : t.flags
   });
@@ -61,11 +61,11 @@ function f(e) {
       icon: r.kBi,
       title: c.intl.string(c.t["7Tmhfn"]),
       description: c.intl.string(c.t["eu5x7+"])
-    }), p && (0, i.jsx)(u, {
+    }), m && (0, i.jsx)(u, {
       icon: r.iWm,
       title: c.intl.string(c.t.awYSsL),
       description: c.intl.string(c.t.TpsXoK)
-    }), m && (0, i.jsx)(u, {
+    }), p && (0, i.jsx)(u, {
       icon: r.BFJ,
       title: c.intl.string(c.t.WuKeSE),
       description: c.intl.string(c.t.wOBmtb)

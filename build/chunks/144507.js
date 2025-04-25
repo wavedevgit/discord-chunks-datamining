@@ -1,9 +1,9 @@
-/** Chunk was on 92779 **/
+/** Chunk was on 27146 **/
 n.d(t, {
-  $D: () => O,
+  $D: () => _,
   H2: () => S,
-  MO: () => E,
-  X$: () => f,
+  MO: () => f,
+  X$: () => E,
   d5: () => d
 });
 var r, i = n(442837),
@@ -40,22 +40,22 @@ function p(e) {
   return n && !r && i ? 1 : n && i && (l || o) && !t.hasFeature(s.oNc.COMMUNITY) ? 2 : 0
 }
 
-function f(e) {
+function E(e) {
   return 0 !== p(e)
 }
 
-function E(e) {
+function f(e) {
   let t = (0, c.Bt)(null == e ? void 0 : e.id),
     n = (0, l.Ob)(e),
     r = (0, l.gS)(null == e ? void 0 : e.id),
-    a = O(e),
+    a = _(e),
     s = (0, i.e7)([u.default], () => {
       let t = u.default.getCurrentUser();
       return null != t && (null == e ? void 0 : e.isOwner(t)) === !0
     }),
     d = (0, l.Sd)(),
     {
-      shouldRestrictUpdatingCreatorMonetizationSettings: f
+      shouldRestrictUpdatingCreatorMonetizationSettings: E
     } = (0, o.gX)(null == e ? void 0 : e.id);
   return null == e ? 0 : p({
     guild: e,
@@ -65,11 +65,11 @@ function E(e) {
     isMonetizationWaitlistEnabledForGuild: r,
     isExpeditedMonetizationOnboardingGuild: n,
     isUserInCreatorMonetizationEligibleCountry: d,
-    shouldRestrictUpdatingRoleSubscriptionSettings: f
+    shouldRestrictUpdatingRoleSubscriptionSettings: E
   })
 }
 
-function O(e) {
+function _(e) {
   return (0, i.e7)([a.Z], () => S(e), [e])
 }
 

@@ -169,7 +169,7 @@ let k = e => [e.userId, ... function(e) {
       })]
     })
   }),
-  V = r.memo(function(e) {
+  z = r.memo(function(e) {
     let {
       emptyText: t
     } = e;
@@ -182,7 +182,7 @@ let k = e => [e.userId, ... function(e) {
       })
     })
   }),
-  z = r.memo(function(e) {
+  V = r.memo(function(e) {
     let {
       sectionHeader: t,
       channelIds: n,
@@ -208,7 +208,7 @@ let k = e => [e.userId, ... function(e) {
         })
       }), (0, i.jsxs)(g, {
         className: T.channelList,
-        children: [a && 0 === n.length && (0, i.jsx)(V, {
+        children: [a && 0 === n.length && (0, i.jsx)(z, {
           emptyText: P.intl.string(P.t.nxSS09)
         }), n.map(e => (0, i.jsx)(M, {
           channelId: e,
@@ -262,7 +262,7 @@ function U(e) {
   }();
   return o.length > 0 || c.length > 0 ? (0, i.jsxs)(s.zJl, {
     className: l()(T.channelList, T.channelListWrapper),
-    children: [o.length > 0 && (0, i.jsx)(z, {
+    children: [o.length > 0 && (0, i.jsx)(V, {
       sectionHeader: P.intl.string(P.t.lnk2NT),
       channelIds: o.slice(0, 3),
       hasQuery: !1,
@@ -270,7 +270,7 @@ function U(e) {
       currentVoiceChannel: n,
       onSelect: r,
       scrollable: !1
-    }), c.length > 0 && (0, i.jsx)(z, {
+    }), c.length > 0 && (0, i.jsx)(V, {
       sectionHeader: P.intl.string(P.t["0lvb9P"]),
       channelIds: c.slice(0, 8),
       hasQuery: !1,
@@ -279,7 +279,7 @@ function U(e) {
       onSelect: r,
       scrollable: !1
     })]
-  }) : (0, i.jsx)(V, {
+  }) : (0, i.jsx)(z, {
     emptyText: P.intl.string(P.t["3ET7Aw"])
   })
 }
@@ -364,7 +364,7 @@ function G(e) {
           "aria-label": P.intl.string(P.t.UyA6SU)
         }
       })
-    }), y ? (0, i.jsx)(z, {
+    }), y ? (0, i.jsx)(V, {
       sectionHeader: v ? P.intl.format(P.t.qdXiQ0, b) : P.intl.format(P.t["Aq+8wM"], b),
       channelIds: h.map(e => {
         let {

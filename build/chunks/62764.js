@@ -1,4 +1,4 @@
-/** Chunk was on 21918 **/
+/** Chunk was on 30745 **/
 n.d(t, {
   Z: () => k
 }), n(388685);
@@ -19,8 +19,8 @@ var r = n(200651),
   b = n(60174),
   _ = n(216337),
   y = n(920888),
-  C = n(287151),
-  x = n(569471),
+  x = n(287151),
+  C = n(569471),
   v = n(346479),
   j = n(592125),
   O = n(934415),
@@ -76,7 +76,7 @@ function k(e) {
     width: L
   } = (0, d.ZP)(), [D, U] = i.useState(3), [B, G] = i.useState(!n), [F, H] = (0, p.Z)(!1, 2e3), V = (0, a.e7)([j.Z], () => j.Z.getChannel(t), [t]), {
     firstMessage: z
-  } = (0, P.cl)(V), W = (0, a.e7)([x.Z], () => x.Z.hasJoined(t)), {
+  } = (0, P.cl)(V), W = (0, a.e7)([C.Z], () => C.Z.hasJoined(t)), {
     disableReactionUpdates: Y,
     disableReactionCreates: q,
     isLurking: K,
@@ -137,7 +137,7 @@ function k(e) {
         }),
         children: [!ei && !q && null != $ && (0, r.jsx)("div", {
           className: A.reactions,
-          children: (0, r.jsx)(C.le, {
+          children: (0, r.jsx)(x.le, {
             message: z,
             readOnly: !1,
             useChatFontScaling: !1,

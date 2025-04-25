@@ -1,4 +1,4 @@
-/** Chunk was on 24338 **/
+/** Chunk was on 2900 **/
 n.d(t, {
   Z: () => H
 }), n(388685), n(35282);
@@ -19,8 +19,8 @@ var r, i = n(200651),
   b = n(592745),
   x = n(952164),
   y = n(768419),
-  E = n(456432),
-  v = n(789407),
+  v = n(456432),
+  E = n(789407),
   O = n(598077),
   j = n(757266),
   C = n(831506),
@@ -75,7 +75,7 @@ class G extends(r = l.PureComponent) {
       let t = (0, p.Z)(e, n.id);
       if (null != t) return t
     }
-    return null == n || n instanceof v.ZP ? null : Z.ZP.getApplicationIconURL({
+    return null == n || n instanceof E.ZP ? null : Z.ZP.getApplicationIconURL({
       id: n.id,
       icon: null != t ? t.coverImage : n.coverImage,
       size: M.cc
@@ -175,7 +175,7 @@ class G extends(r = l.PureComponent) {
         channelId: t,
         guildId: n
       } = this.props;
-      return (0, i.jsx)(E.Z, F({
+      return (0, i.jsx)(v.Z, F({
         guildId: null != n ? n : void 0,
         channelId: t,
         source: "Invite Embed"

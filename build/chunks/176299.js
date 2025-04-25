@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => eQ
+  Z: () => eX
 }), n(35282), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -49,8 +49,8 @@ var r = n(200651),
   Y = n(285865),
   K = n(659971),
   q = n(664608),
-  X = n(270759),
-  Q = n(918701),
+  Q = n(270759),
+  X = n(918701),
   J = n(905423),
   $ = n(304445),
   ee = n(893607),
@@ -241,7 +241,7 @@ let eN = (0, u.Un)({
       guildId: e,
       channelId: t
     } = (0, J.Z)(), n = (0, h.e7)([el.Z], () => null != t ? t : el.Z.getChannelId(e));
-    return window.location.pathname.startsWith(e_.Z5c.GLOBAL_DISCOVERY) || window.location.pathname.startsWith(e_.Z5c.GUILD_DISCOVERY) || (0, Q.OG)() ? (0, r.jsx)(R.Z, {}) : null != e ? (0, r.jsx)(V.Z, {
+    return window.location.pathname.startsWith(e_.Z5c.GLOBAL_DISCOVERY) || window.location.pathname.startsWith(e_.Z5c.GUILD_DISCOVERY) || (0, X.OG)() ? (0, r.jsx)(R.Z, {}) : null != e ? (0, r.jsx)(V.Z, {
       selectedChannelId: n,
       guildId: e
     }, e) : (0, r.jsx)(ef.Z, {})
@@ -282,7 +282,7 @@ let eN = (0, u.Un)({
     }
   },
   eH = e => (0, r.jsx)(C.Z, eC({}, e)),
-  eF = () => (0, r.jsx)(X.Z, {}),
+  eF = () => (0, r.jsx)(Q.Z, {}),
   ez = () => (0, r.jsx)(W.Z, {}),
   eW = () => (0, r.jsx)(q.Z, {}),
   eY = e => {
@@ -291,15 +291,15 @@ let eN = (0, u.Un)({
     } = e;
     switch (t.params.feature) {
       case "friends":
-        return (0, r.jsx)(X.Z, {
+        return (0, r.jsx)(Q.Z, {
           initialSection: e_.pJs.ONLINE
         });
       case "addFriends":
-        return (0, r.jsx)(X.Z, {
+        return (0, r.jsx)(Q.Z, {
           initialSection: e_.pJs.ADD_FRIEND
         });
       case "pendingFriends":
-        return (0, r.jsx)(X.Z, {
+        return (0, r.jsx)(Q.Z, {
           initialSection: e_.pJs.PENDING
         });
       case "sessionManagement":
@@ -365,7 +365,7 @@ function eq(e) {
   document.body.style.setProperty("--custom-guild-sidebar-width", "".concat(e, "px"))
 }
 
-function eX(e) {
+function eQ(e) {
   let {
     hasNotice: t,
     sidebarTheme: n,
@@ -480,7 +480,7 @@ function eX(e) {
   })
 }
 
-function eQ() {
+function eX() {
   var e;
   let t = (0, h.e7)([ea.ZP], () => ea.ZP.hasNotice()),
     n = (0, h.e7)([et.Z], () => et.Z.darkSidebar ? e_.BRd.DARK : void 0),
@@ -538,7 +538,7 @@ function eQ() {
         "data-fullscreen": j,
         children: [E && !j && (0, r.jsx)(eN, {}), d.tq ? null : (0, r.jsx)(eh.Z, {}), (0, r.jsxs)("div", {
           className: ev.content,
-          children: [(0, r.jsx)(P.Z, {}), (0, r.jsx)(eX, {
+          children: [(0, r.jsx)(P.Z, {}), (0, r.jsx)(eQ, {
             isOnFullScreenCollectiblesShopRoute: u,
             isSidebarOpen: f,
             hasNotice: t,

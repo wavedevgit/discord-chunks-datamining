@@ -1,4 +1,4 @@
-/** Chunk was on 21918 **/
+/** Chunk was on 30745 **/
 n.d(t, {
   Z: () => z
 }), n(388685);
@@ -19,8 +19,8 @@ var r = n(200651),
   b = n(580747),
   _ = n(135938),
   y = n(160404),
-  C = n(765104),
-  x = n(695346),
+  x = n(765104),
+  C = n(695346),
   v = n(314897),
   j = n(323873),
   O = n(607744),
@@ -99,8 +99,8 @@ let V = i.memo(function(e) {
       unreadCount: g,
       showNewMessagesBar: b,
       messageDisplayCompact: _,
-      channelStream: C,
-      uploads: x,
+      channelStream: x,
+      uploads: C,
       hasUnreads: v,
       editingMessageId: j,
       fontSize: O,
@@ -150,8 +150,8 @@ let V = i.memo(function(e) {
       unreadCount: g,
       showNewMessagesBar: b,
       messageDisplayCompact: _,
-      channelStream: C,
-      uploads: x,
+      channelStream: x,
+      uploads: C,
       loadMore: z.loadMore,
       scrollManager: z,
       specs: V,
@@ -280,8 +280,8 @@ let V = i.memo(function(e) {
       renderSpoilers: M,
       keyboardModeEnabled: L
     } = function() {
-      let e = x.jU.useSetting(),
-        t = x.cC.useSetting(),
+      let e = C.jU.useSetting(),
+        t = C.cC.useSetting(),
         {
           messageGroupSpacing: n,
           fontSize: r,
@@ -327,11 +327,11 @@ let V = i.memo(function(e) {
         a = null != (n = null == (t = Z.default.getUser(v.default.getId())) ? void 0 : t.hasFlag(D.xW$.SPAMMER)) && n,
         c = (0, d.ts)(e),
         u = (0, b.Z)("use_topic_dividers_in_chat"),
-        p = (0, s.Wu)([C.Z], () => {
+        p = (0, s.Wu)([x.Z], () => {
           var t;
-          return c && u && null != (t = C.Z.summaries(e.id)) ? t : []
+          return c && u && null != (t = x.Z.summaries(e.id)) ? t : []
         }, [c, e.id, u]),
-        h = (0, s.e7)([C.Z], () => c ? C.Z.selectedSummary(e.id) : null, [c, e.id]),
+        h = (0, s.e7)([x.Z], () => c ? x.Z.selectedSummary(e.id) : null, [c, e.id]),
         g = function(e) {
           let t = i.useMemo(() => {
             let t = new Set;

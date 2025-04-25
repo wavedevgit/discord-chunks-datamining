@@ -1,4 +1,4 @@
-/** Chunk was on 21918 **/
+/** Chunk was on 30745 **/
 n.d(t, {
   Z: () => y
 });
@@ -43,8 +43,8 @@ function y(e) {
     applicationId: t,
     stream: i,
     channel: y,
-    exitFullScreen: C,
-    appContext: x,
+    exitFullScreen: x,
+    appContext: C,
     analyticsLocation: v,
     guildScheduledEvent: j,
     shouldPrioritizeGroupPlusIcon: O = !1,
@@ -144,8 +144,8 @@ function y(e) {
           channel: y,
           streamUserId: null == i ? void 0 : i.ownerId,
           applicationId: t,
-          appContext: null != x ? x : T,
-          exitFullScreen: C,
+          appContext: null != C ? C : T,
+          exitFullScreen: x,
           analyticsLocation: v,
           guildScheduledEvent: j
         })

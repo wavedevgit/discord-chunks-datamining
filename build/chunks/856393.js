@@ -1,4 +1,4 @@
-/** Chunk was on 21918 **/
+/** Chunk was on 30745 **/
 n.d(t, {
   Z: () => ed,
   e: () => ec
@@ -20,8 +20,8 @@ var r = n(200651),
   b = n(358221),
   _ = n(414910),
   y = n(909820),
-  C = n(493010),
-  x = n(71127),
+  x = n(493010),
+  C = n(71127),
   v = n(185935),
   j = n(522651),
   O = n(540059),
@@ -83,13 +83,13 @@ function es(e) {
   } = (0, g.ZP)(), d = t.getGuildId(), p = (0, s.e7)([D.Z], () => D.Z.getMostRecentSelectedTextChannelId(d), [d]), h = R.default.getId(), f = !(0, s.e7)([b.Z], () => b.Z.isFullscreenInContext(n)) && (!U.isPlatformEmbedded || U.isPlatformEmbedded && B.ZP.supportsFeature(ee.eRX.POPOUT_WINDOWS)), m = null != c && c.type !== et.fO.ACTIVITY && c.user.id !== h, y = i.useMemo(() => {
     var e;
     return null != (e = null == o ? void 0 : o.window) ? e : window
-  }, [o]), C = (0, J.Z)({
+  }, [o]), x = (0, J.Z)({
     channel: t,
     appContext: n,
     popoutOpen: l,
     popoutWindow: o,
     currentWindow: y
-  }), x = n === ee.IlC.POPOUT && U.isPlatformEmbedded && B.ZP.supportsFeature(ee.eRX.POPOUT_WINDOWS);
+  }), C = n === ee.IlC.POPOUT && U.isPlatformEmbedded && B.ZP.supportsFeature(ee.eRX.POPOUT_WINDOWS);
   return (0, r.jsxs)(r.Fragment, {
     children: [m ? (0, r.jsx)(w.Z, {
       context: (0, _.Z)(c.type),
@@ -97,7 +97,7 @@ function es(e) {
       currentWindow: y,
       sliderClassName: er.volumeSlider,
       location: u
-    }) : null, x ? (0, r.jsx)(A.Z, {
+    }) : null, C ? (0, r.jsx)(A.Z, {
       className: er.rightTrayIcon,
       popoutWindowAlwaysOnTop: a,
       onToggleStayOnTop: ea
@@ -110,7 +110,7 @@ function es(e) {
       onClosePopout: () => {
         (0, j.v)(u, j.d.POPOUT, !1), eo()
       }
-    }) : null, C]
+    }) : null, x]
   })
 }
 
@@ -139,14 +139,14 @@ function eu(e) {
       chatOpen: _
     } = e,
     {
-      analyticsLocations: C
+      analyticsLocations: x
     } = (0, g.ZP)(m.Z.VOICE_CONTROL_TRAY),
-    x = (0, f.bp)(),
+    C = (0, f.bp)(),
     v = (0, s.e7)([D.Z], () => D.Z.getVoiceChannelId() === n.id, [n.id]),
     j = (0, s.e7)([L.Z], () => L.Z.can(ee.Plq.CONNECT, n)),
     E = (0, F.w8)(n.id, H.pV.SPEAKER),
     I = (0, s.e7)([b.Z], () => b.Z.getSelectedParticipant(n.id)),
-    P = h && x !== ee.IlC.POPOUT,
+    P = h && C !== ee.IlC.POPOUT,
     S = (0, O.Q3)("StageChannelCallContent"),
     [T, A] = i.useState(0),
     w = (0, u._q$)("StageChannelCall"),
@@ -182,23 +182,23 @@ function eu(e) {
     },
     disableGradients: !!S && !v || 0 === T && N.e.TOP,
     renderBottomLeft: () => S ? null : (0, r.jsx)(g.Gt, {
-      value: C,
+      value: x,
       children: (0, r.jsx)(ec, {
         channel: n
       })
     }),
     renderBottomCenter: () => v ? (0, r.jsx)(g.Gt, {
-      value: C,
+      value: x,
       children: (0, r.jsx)(X.Z, {
         channel: n,
         isOnStartStageScreen: R
       })
     }) : null,
     renderBottomRight: () => v ? (0, r.jsx)(g.Gt, {
-      value: C,
+      value: x,
       children: (0, r.jsx)(es, {
         channel: n,
-        appContext: x,
+        appContext: C,
         popoutOpen: h,
         popoutWindow: d,
         popoutWindowAlwaysOnTop: p,
@@ -206,7 +206,7 @@ function eu(e) {
       })
     }) : null,
     renderHeader: () => (0, r.jsx)(q.Z, {
-      inPopout: x === ee.IlC.POPOUT,
+      inPopout: C === ee.IlC.POPOUT,
       toggleRequestToSpeakSidebar: l,
       showRequestToSpeakSidebar: c,
       channel: n
@@ -313,11 +313,11 @@ function ed(e) {
           chatOpen: S
         }) : null, (0, r.jsxs)("div", {
           className: er.channelChatWrapper,
-          children: [S && k && (0, r.jsx)(C.Z, {
+          children: [S && k && (0, r.jsx)(x.Z, {
             channel: t,
             guild: N,
             maxWidth: R
-          }), Z && T && k && (0, r.jsx)(x.Z, {
+          }), Z && T && k && (0, r.jsx)(C.Z, {
             channel: t,
             maxWidth: R
           })]

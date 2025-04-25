@@ -1,4 +1,4 @@
-/** Chunk was on 24338 **/
+/** Chunk was on 2900 **/
 e.exports = {
   dropdownArrowHitbox: "dropdownArrowHitbox_e8c23e",
   dropdownArrow: "dropdownArrow_e8c23e",

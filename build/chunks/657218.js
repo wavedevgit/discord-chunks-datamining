@@ -1,4 +1,4 @@
-/** Chunk was on 21918 **/
+/** Chunk was on 30745 **/
 n.d(t, {
   Z: () => Y
 }), n(388685), n(781311);
@@ -19,8 +19,8 @@ var r = n(200651),
   b = n(752305),
   _ = n(893718),
   y = n(303628),
-  C = n(313201),
-  x = n(540059),
+  x = n(313201),
+  C = n(540059),
   v = n(967128),
   j = n(665149),
   O = n(294218),
@@ -158,7 +158,7 @@ function q(e) {
       textAreaState: n,
       setTextAreaState: r
     }
-  }(t, m), C = (0, L.vH)(t), {
+  }(t, m), x = (0, L.vH)(t), {
     nameError: j,
     messageError: O,
     submit: P,
@@ -231,10 +231,10 @@ function q(e) {
     parentChannel: t,
     parentMessageId: n,
     threadSettings: f,
-    privateThreadMode: C,
+    privateThreadMode: x,
     textAreaState: _,
     location: l
-  }), N = (0, L.oD)(f, C) ? s.qtY : s.or_, T = (0, x.R6)("CreateThreadSidebar");
+  }), N = (0, L.oD)(f, x) ? s.qtY : s.or_, T = (0, C.R6)("CreateThreadSidebar");
   return (0, r.jsx)("div", {
     className: H.chat,
     onMouseDown: p,
@@ -269,7 +269,7 @@ function q(e) {
                 startedFromMessage: null != n,
                 threadSettings: f,
                 updateThreadSettings: g,
-                privateThreadMode: C
+                privateThreadMode: x
               }) : null]
             }), (0, r.jsx)(J, {
               parentChannel: t,
@@ -345,7 +345,7 @@ function X(e) {
     disabled: c
   } = e, d = null != (t = l.name) ? t : "", p = (0, M.Op)(a, {
     content: d
-  }), h = (0, L.Od)(n, i), f = null != i, m = (0, C.Dt)();
+  }), h = (0, L.Od)(n, i), f = null != i, m = (0, x.Dt)();
   return (0, r.jsx)(s.hjN, {
     tag: "label",
     htmlFor: m,
@@ -381,12 +381,12 @@ function Q(e) {
     submit: d,
     error: p,
     isRefreshChatInputEnabled: h
-  } = e, [f, m] = i.useState(!0), g = i.useCallback(() => m(!0), []), b = i.useCallback(() => m(!1), []), C = i.useCallback((e, n, r) => {
+  } = e, [f, m] = i.useState(!0), g = i.useCallback(() => m(!0), []), b = i.useCallback(() => m(!1), []), x = i.useCallback((e, n, r) => {
     c.Z.saveDraft(t.id, n, Z.d.FirstThreadMessage), l(e => ("" !== n && e.textValue !== n ? u.Z.startTyping(t.id) : "" === n && u.Z.stopTyping(t.id), {
       textValue: n,
       richValue: r
     }))
-  }, [t.id, l]), x = i.useCallback(e => {
+  }, [t.id, l]), C = i.useCallback(e => {
     let {
       value: t,
       uploads: n,
@@ -430,8 +430,8 @@ function Q(e) {
       }),
       onFocus: g,
       onBlur: b,
-      onChange: C,
-      onSubmit: x,
+      onChange: x,
+      onSubmit: C,
       promptToUpload: k.d
     })]
   })

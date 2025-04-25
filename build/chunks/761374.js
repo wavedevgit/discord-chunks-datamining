@@ -50,14 +50,14 @@ function C(e) {
     width: "number" == typeof n.width ? n.width : 256,
     height: "number" == typeof n.height ? n.height : 144
   }, M = (0, o.e7)([y.Z], () => y.Z.getVoiceChannelId()), {
-    width: V,
-    height: z,
+    width: z,
+    height: V,
     ref: U
   } = (0, c.ZP)(), W = (0, o.e7)([g.Z], () => {
     var e;
     let n = g.Z.getWidget(t);
     return !!(0, _.ZL)(n) && (null == (e = n.meta.showAllStreams) || e)
-  }, [t]), G = !w, B = (0, o.e7)([m.Z], () => m.Z.getChannel(M)), F = (0, o.e7)([f.default], () => f.default.getId()), H = T && G || k && w, Y = !T && G || !k && w, {
+  }, [t]), G = !w, F = (0, o.e7)([m.Z], () => m.Z.getChannel(M)), B = (0, o.e7)([f.default], () => f.default.getId()), H = T && G || k && w, Y = !T && G || !k && w, {
     participantsVersion: Q,
     activeStreams: K,
     streamParticipants: X
@@ -69,7 +69,7 @@ function C(e) {
     };
     let e = new Set(h.Z.getAllActiveStreamsForChannel(M).map(e => (0, p.V9)(e))),
       t = t => e.has((0, p.V9)(t.stream)),
-      n = d.Z.getStreamParticipants(M).filter(e => e.user.id !== F && (!!W || t(e)));
+      n = d.Z.getStreamParticipants(M).filter(e => e.user.id !== B && (!!W || t(e)));
     return n.sort((e, n) => {
       if (H) {
         if (t(e) && !t(n)) return -1;
@@ -84,7 +84,7 @@ function C(e) {
       activeStreams: e,
       participantsVersion: d.Z.getParticipantsVersion(M)
     }
-  }, [M, F, W, H, Y]), J = X.length, q = null == B || 0 === K.size && C || 0 === J && !C, $ = w ? _.C5.HORIZONTAL : _.C5.VERTICAL, {
+  }, [M, B, W, H, Y]), J = X.length, q = null == F || 0 === K.size && C || 0 === J && !C, $ = w ? _.C5.HORIZONTAL : _.C5.VERTICAL, {
     tileWidth: ee,
     layout: et
   } = function(e, t, n, i, o) {
@@ -109,7 +109,7 @@ function C(e) {
       layout: s,
       tileWidth: c
     }
-  }(!1, X.length, null != V ? V : L - D, null != z ? z : R - D, $), en = {
+  }(!1, X.length, null != z ? z : L - D, null != V ? V : R - D, $), en = {
     id: t,
     width: L,
     height: R,
@@ -217,9 +217,9 @@ function C(e) {
     layout: et,
     widgetLayoutSpecs: en
   }), r.useEffect(() => {
-    s.Z.setGpuBoostRequested(b.GPUBoostRequestReasons.OVERLAY_VIDEO_STREAM_RENDERING, !q)
+    s.Z.setGpuBoostRequested(b.zS.OVERLAY_VIDEO_STREAM_RENDERING, !q)
   }, [q]), (0, u.ZP)(() => () => {
-    s.Z.setGpuBoostRequested(b.GPUBoostRequestReasons.OVERLAY_VIDEO_STREAM_RENDERING, !1)
+    s.Z.setGpuBoostRequested(b.zS.OVERLAY_VIDEO_STREAM_RENDERING, !1)
   }), (q || !P) && C) ? null : q && !C ? A ? C ? null : (0, i.jsx)(O.E, {
     emptyText: E.intl.string(E.t["T6+rX1"]),
     icon: l.hGI,

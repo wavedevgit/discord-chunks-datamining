@@ -1,4 +1,4 @@
-/** Chunk was on 24338 **/
+/** Chunk was on 2900 **/
 n.d(t, {
   Z: () => ee
 }), n(642613);
@@ -20,8 +20,8 @@ var r = n(200651),
   b = n(226192),
   x = n(36459),
   y = n(336197),
-  E = n(359110),
-  v = n(726033),
+  v = n(359110),
+  E = n(726033),
   O = n(496675),
   j = n(594174),
   C = n(5192),
@@ -119,7 +119,7 @@ function W(e, t) {
 
 function K(e, t, n) {
   return i.useMemo(() => {
-    if (null != t && null != n) return i => (0, r.jsx)(v.Z, V(H({}, i), {
+    if (null != t && null != n) return i => (0, r.jsx)(E.Z, V(H({}, i), {
       user: t,
       currentUser: n,
       guildId: e.guild_id,
@@ -293,7 +293,7 @@ function ee(e) {
     message: o,
     channel: s
   } = e, {
-    avatarSrc: v,
+    avatarSrc: E,
     eventHandlers: {
       onMouseEnter: j,
       onMouseLeave: C
@@ -328,10 +328,10 @@ function ee(e) {
       guildId: ee.guild_id,
       channelId: e,
       messageId: o.id
-    }), (0, E.Kh)(e))
+    }), (0, v.Kh)(e))
   }, [o, ee]), eb = i.useCallback(() => {
     (0, x.Xx)(o.id, s, g.d.DELETE_USER_MESSAGE)
-  }, [s, o.id]), ex = (0, F.L9)(Number(ea)), ey = null != eo, eE = q && null != el && (null == es || !es.actions.hasOwnProperty(g.d.DELETE_USER_MESSAGE)), ev = o.embeds.length > 0 ? null == (t = o.embeds[0].fields.find(e => "channel_id" === e.rawName)) ? void 0 : t.rawValue : null, eO = null != ev;
+  }, [s, o.id]), ex = (0, F.L9)(Number(ea)), ey = null != eo, ev = q && null != el && (null == es || !es.actions.hasOwnProperty(g.d.DELETE_USER_MESSAGE)), eE = o.embeds.length > 0 ? null == (t = o.embeds[0].fields.find(e => "channel_id" === e.rawName)) ? void 0 : t.rawValue : null, eO = null != eE;
   return (0, r.jsx)("div", {
     onMouseEnter: j,
     onMouseLeave: C,
@@ -340,7 +340,7 @@ function ee(e) {
         [G.compact]: l
       }),
       iconNode: l ? null : (0, r.jsx)(k.S, {
-        src: v
+        src: E
       }),
       iconContainerClassName: G.iconContainer,
       compact: l,
@@ -483,7 +483,7 @@ function ee(e) {
               children: [(0, r.jsx)("div", {
                 className: G.dot
               }), (0, r.jsx)(p.zxk, {
-                onClick: () => e_(ev),
+                onClick: () => e_(eE),
                 color: p.zxk.Colors.LINK,
                 look: p.zxk.Looks.LINK,
                 size: p.zxk.Sizes.SMALL,
@@ -513,7 +513,7 @@ function ee(e) {
                   children: B.intl.string(B.t["94JbMz"])
                 })
               })
-            }), eE ? (0, r.jsxs)(r.Fragment, {
+            }), ev ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)("div", {
                 className: G.dot
               }), (0, r.jsx)(p.zxk, {

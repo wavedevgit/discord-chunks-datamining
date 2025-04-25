@@ -1,58 +1,58 @@
-/** Chunk was on 92779 **/
+/** Chunk was on 86590 **/
 n.d(t, {
-  Z: () => c
+  Z: () => o
 });
-var r = n(200651),
-  i = n(192379),
+var i = n(200651),
+  r = n(192379),
   l = n(481060),
-  o = n(43267),
-  a = n(93687),
-  u = n(785232);
-let c = i.memo(function(e) {
+  a = n(43267),
+  s = n(93687),
+  c = n(785232);
+let o = r.memo(function(e) {
   var {
     channel: t,
     size: n,
-    facepileSizeOverride: i,
-    experimentLocation: c,
-    isTyping: s,
+    facepileSizeOverride: r,
+    experimentLocation: o,
+    isTyping: u,
     status: d,
-    className: p,
-    animated: f = !1
-  } = e, E = function(e, t) {
+    className: f,
+    animated: p = !1
+  } = e, b = function(e, t) {
     if (null == e) return {};
-    var n, r, i = function(e, t) {
+    var n, i, r = function(e, t) {
       if (null == e) return {};
-      var n, r, i = {},
+      var n, i, r = {},
         l = Object.keys(e);
-      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-      return i
+      for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+      return r
     }(e, t);
     if (Object.getOwnPropertySymbols) {
       var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
-    return i
+    return r
   }(e, ["channel", "size", "facepileSizeOverride", "experimentLocation", "isTyping", "status", "className", "animated"]);
   let {
-    isFacepileEnabled: O
-  } = a.Z.useExperiment({
-    location: c
+    isFacepileEnabled: I
+  } = s.Z.useExperiment({
+    location: o
   }, {
     autoTrackExposure: !0
   });
-  return t.recipients.length >= 2 && O && null == t.icon ? (0, r.jsx)(u.Z, {
-    "aria-label": E["aria-label"],
-    "aria-hidden": E["aria-hidden"],
-    className: p,
+  return t.recipients.length >= 2 && I && null == t.icon ? (0, i.jsx)(c.Z, {
+    "aria-label": b["aria-label"],
+    "aria-hidden": b["aria-hidden"],
+    className: f,
     recipients: t.recipients,
-    size: null != i ? i : n,
-    isTyping: s,
+    size: null != r ? r : n,
+    isTyping: u,
     status: d
-  }) : (0, r.jsx)(l.qEK, {
-    "aria-hidden": E["aria-hidden"],
-    "aria-label": E["aria-label"],
-    className: p,
+  }) : (0, i.jsx)(l.qEK, {
+    "aria-hidden": b["aria-hidden"],
+    "aria-label": b["aria-label"],
+    className: f,
     size: n,
-    src: (0, o.x)(t, 80, f)
+    src: (0, a.x)(t, 80, p)
   })
 })

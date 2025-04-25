@@ -1,6 +1,6 @@
-/** Chunk was on 30514 **/
+/** Chunk was on 31656 **/
 t.d(n, {
-  Z: () => g
+  Z: () => _
 }), t(388685);
 var i = t(200651),
   o = t(192379),
@@ -12,15 +12,15 @@ var i = t(200651),
   d = t(786366),
   u = t(323090),
   f = t(116906),
-  p = t(384816),
-  m = t(389190),
+  m = t(384816),
+  p = t(389190),
   h = t(428927),
-  I = t(228168),
-  x = t(388032),
-  _ = t(301150),
+  x = t(228168),
+  I = t(388032),
+  v = t(301150),
   b = t(923243);
 
-function v(e) {
+function j(e) {
   let {
     section: n,
     subsection: t,
@@ -30,28 +30,28 @@ function v(e) {
     guildId: s,
     onClose: a
   } = e;
-  return n === I.oh.ACTIVITY ? (0, i.jsx)(f.Z, {
+  return n === x.oh.ACTIVITY ? (0, i.jsx)(f.Z, {
     user: o,
     currentUser: l,
     displayProfile: r,
     guildId: s,
     onClose: a
-  }) : n === I.oh.MUTUAL_FRIENDS ? (0, i.jsx)(m.Z, {
+  }) : n === x.oh.MUTUAL_FRIENDS ? (0, i.jsx)(p.Z, {
     user: o,
     onClose: a
-  }) : n === I.oh.MUTUAL_GUILDS ? (0, i.jsx)(h.Z, {
+  }) : n === x.oh.MUTUAL_GUILDS ? (0, i.jsx)(h.Z, {
     user: o,
     onClose: a
-  }) : n === I.oh.BOT_DATA_ACCESS ? (0, i.jsx)(d.Z, {
+  }) : n === x.oh.BOT_DATA_ACCESS ? (0, i.jsx)(d.Z, {
     user: o
-  }) : n === I.oh.BOT_INFO ? (0, i.jsx)(u.Z, {
+  }) : n === x.oh.BOT_INFO ? (0, i.jsx)(u.Z, {
     user: o,
     currentUser: l,
     displayProfile: r,
     guildId: s,
     subsection: t,
     onClose: a
-  }) : (0, i.jsx)(p.Z, {
+  }) : (0, i.jsx)(m.Z, {
     user: o,
     currentUser: l,
     displayProfile: r,
@@ -60,38 +60,38 @@ function v(e) {
   })
 }
 
-function g(e) {
+function _(e) {
   var n, t, d;
   let {
     user: u,
     currentUser: f,
-    displayProfile: p,
-    guildId: m,
+    displayProfile: m,
+    guildId: p,
     items: h,
-    initialSection: g = I.oh.USER_INFO,
-    initialSubsection: j,
+    initialSection: _ = x.oh.USER_INFO,
+    initialSubsection: g,
     onClose: Z
   } = e, {
     trackUserProfileAction: y
-  } = (0, c.KZ)(), A = (0, l.e7)([a.Z], () => a.Z.hidePersonalInformation), [{
-    section: N,
+  } = (0, c.KZ)(), N = (0, l.e7)([a.Z], () => a.Z.hidePersonalInformation), [{
+    section: A,
     subsection: T
   }, O] = o.useState({
     section: null != (d = null == (n = h.find(e => {
       let {
         section: n
       } = e;
-      return n === g
+      return n === _
     })) ? void 0 : n.section) ? d : null == (t = h[0]) ? void 0 : t.section,
-    subsection: j
+    subsection: g
   });
   o.useEffect(() => {
-    null == h.find(e => e.section === N) && O({
+    null == h.find(e => e.section === A) && O({
       section: h[0].section,
       subsection: void 0
     })
-  }, [h, N]);
-  let E = o.useCallback(e => {
+  }, [h, A]);
+  let C = o.useCallback(e => {
     y({
       action: "PRESS_SECTION",
       section: e
@@ -100,15 +100,15 @@ function g(e) {
       subsection: void 0
     })
   }, [y, O]);
-  return A ? (0, i.jsx)("div", {
+  return N ? (0, i.jsx)("div", {
     className: b.container,
     children: (0, i.jsxs)("div", {
-      className: _.empty,
+      className: v.empty,
       children: [(0, i.jsx)("div", {
-        className: _.emptyIconStreamerMode
+        className: v.emptyIconStreamerMode
       }), (0, i.jsx)("div", {
-        className: _.emptyText,
-        children: x.intl.string(x.t.Br1ls7)
+        className: v.emptyText,
+        children: I.intl.string(I.t.Br1ls7)
       })]
     })
   }) : (0, i.jsxs)("div", {
@@ -116,8 +116,8 @@ function g(e) {
     children: [(0, i.jsx)(r.n, {
       className: b.tabBar,
       type: "top",
-      selectedItem: N,
-      onItemSelect: E,
+      selectedItem: A,
+      onItemSelect: C,
       children: h.map(e => {
         let {
           section: n,
@@ -133,14 +133,14 @@ function g(e) {
           })
         }, n)
       })
-    }), (0, i.jsx)(v, {
+    }), (0, i.jsx)(j, {
       items: h,
-      section: N,
+      section: A,
       subsection: T,
       user: u,
       currentUser: f,
-      displayProfile: p,
-      guildId: m,
+      displayProfile: m,
+      guildId: p,
       onClose: Z
     })]
   })

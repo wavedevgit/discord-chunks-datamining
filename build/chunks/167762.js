@@ -1,4 +1,4 @@
-/** Chunk was on 32220 **/
+/** Chunk was on 29709 **/
 n.d(t, {
   Or: () => ei,
   r1: () => en
@@ -7,28 +7,28 @@ var i = n(200651),
   r = n(192379),
   l = n(91192),
   s = n(442837),
-  o = n(481060),
-  a = n(278323),
-  u = n(493683),
-  c = n(239091),
-  d = n(194359),
-  f = n(549879),
-  g = n(724757),
-  p = n(620662),
+  a = n(481060),
+  o = n(278323),
+  c = n(493683),
+  u = n(239091),
+  f = n(194359),
+  d = n(549879),
+  p = n(724757),
+  g = n(620662),
   O = n(420660),
   y = n(326255),
   h = n(956221),
-  v = n(747017),
-  m = n(297781),
-  N = n(82295),
-  S = n(554300),
-  b = n(558602),
-  E = n(567409),
+  m = n(747017),
+  N = n(297781),
+  S = n(82295),
+  v = n(554300),
+  E = n(558602),
+  b = n(567409),
   I = n(373662),
   j = n(850020),
   P = n(886118),
-  Z = n(301801),
-  C = n(814443),
+  C = n(301801),
+  Z = n(814443),
   w = n(518950),
   _ = n(670188),
   T = n(199902),
@@ -75,7 +75,7 @@ function z(e, t) {
   }), e
 }
 
-function Y(e, t) {
+function V(e, t) {
   if (null == e) return {};
   var n, i, r = function(e, t) {
     if (null == e) return {};
@@ -90,8 +90,8 @@ function Y(e, t) {
   }
   return r
 }
-let V = o.EFr.SIZE_32,
-  W = {
+let W = a.EFr.SIZE_32,
+  Y = {
     FRIEND_REQUESTS: 0,
     SAME_ACTIVITY: 1,
     ACTIVITIES: 2,
@@ -99,16 +99,16 @@ let V = o.EFr.SIZE_32,
     ONLINE: 4,
     OFFLINE: 5
   },
-  Q = [m.OV, m.wO, m.f, m.v1, m.pQ],
+  Q = [N.OV, N.wO, N.f, N.v1, N.pQ],
   J = r.memo(e => {
     let {
       user: t,
-      activities: g = [],
-      gameProfileEntry: N,
-      index: E,
+      activities: p = [],
+      gameProfileEntry: S,
+      index: b,
       closeParentPopout: P,
-      isSuggestion: Z,
-      relationshipType: C,
+      isSuggestion: C,
+      relationshipType: Z,
       appContext: G,
       nickname: k
     } = e, {
@@ -117,10 +117,10 @@ let V = o.EFr.SIZE_32,
       eventHandlers: D
     } = (0, w.Z)({
       user: t,
-      size: V,
+      size: W,
       animateOnHover: !0,
       guildId: null
-    }), Y = (0, l.JA)("".concat(E)), [W, J] = r.useState(!1), [K, B] = r.useState({}), H = g.filter(e => e.type === F.IIU.PLAYING && (0, p.Z)(e, F.xjy.JOIN)), X = (0, s.Wu)([U.Z], () => U.Z.getActivities().filter(e => e.type === F.IIU.PLAYING && (0, p.Z)(e, F.xjy.JOIN))), {
+    }), V = (0, l.JA)("".concat(b)), [Y, J] = r.useState(!1), [K, B] = r.useState({}), H = p.filter(e => e.type === F.IIU.PLAYING && (0, g.Z)(e, F.xjy.JOIN)), X = (0, s.Wu)([U.Z], () => U.Z.getActivities().filter(e => e.type === F.IIU.PLAYING && (0, g.Z)(e, F.xjy.JOIN))), {
       voiceChannel: $
     } = (0, h.Z)({
       userId: t.id
@@ -136,25 +136,25 @@ let V = o.EFr.SIZE_32,
       let e = A.Z.getStatus(t.id),
         n = T.Z.getAnyStreamForUser(t.id),
         i = A.Z.isMobileOnline(t.id),
-        r = (0, O.Z)(g) ? F.Skl.STREAMING : e;
+        r = (0, O.Z)(p) ? F.Skl.STREAMING : e;
       return {
         status: e,
         applicationStream: n,
         isMobile: i,
         newStatus: r
       }
-    }, [t.id, g]), el = r.useCallback(() => {
+    }, [t.id, p]), el = r.useCallback(() => {
       J(!0)
     }, []), es = r.useCallback(() => {
       J(!1)
-    }, []), eo = r.useCallback(() => {
-      if (null != N) {
-        let e = N.traits,
-          t = z(q({}, N), {
+    }, []), ea = r.useCallback(() => {
+      if (null != S) {
+        let e = S.traits,
+          t = z(q({}, S), {
             traits: e.slice(0, 3)
           });
-        return (0, i.jsx)(m.Gk, {
-          location: m.Gt.FRIENDS_POPOUT,
+        return (0, i.jsx)(N.Gk, {
+          location: N.Gt.FRIENDS_POPOUT,
           className: M.badgesContainer,
           children: Q.map((e, n) => (0, i.jsx)(e, {
             entry: t
@@ -162,13 +162,13 @@ let V = o.EFr.SIZE_32,
         })
       }
       if (!(0, y.Z)({
-          activities: g,
+          activities: p,
           status: et,
           applicationStream: en,
           voiceChannel: $
         })) return null;
-      let e = !(0, b.Z)({
-        activity: null == g ? void 0 : g.find(e => {
+      let e = !(0, E.Z)({
+        activity: null == p ? void 0 : p.find(e => {
           let {
             type: t
           } = e;
@@ -176,17 +176,17 @@ let V = o.EFr.SIZE_32,
         }),
         user: t
       });
-      return (0, i.jsx)(v.Z, {
+      return (0, i.jsx)(m.Z, {
         user: t,
-        activities: g,
+        activities: p,
         applicationStream: en,
         voiceChannel: $,
         animate: !1,
         hideEmoji: e,
         hasQuest: !1
       })
-    }, [t, g, et, en, $, N]), ea = r.useCallback(e => {
-      (0, c.jW)(e, async () => {
+    }, [t, p, et, en, $, S]), eo = r.useCallback(e => {
+      (0, u.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("69220"), n.e("70686")]).then(n.bind(n, 881351));
@@ -195,22 +195,22 @@ let V = o.EFr.SIZE_32,
           appContext: G
         }))
       })
-    }, [t, G]), eu = r.useCallback(e => {
-      e.preventDefault(), e.stopPropagation(), (0, f.i)(G, !0), u.Z.openPrivateChannel({
+    }, [t, G]), ec = r.useCallback(e => {
+      e.preventDefault(), e.stopPropagation(), (0, d.i)(G, !0), c.Z.openPrivateChannel({
         recipientIds: t.id
       }), null != P && P()
-    }, [t.id, P, G]), ec = r.useCallback(e => {
-      e.preventDefault(), e.stopPropagation(), d.Z.addRelationship({
+    }, [t.id, P, G]), eu = r.useCallback(e => {
+      e.preventDefault(), e.stopPropagation(), f.Z.addRelationship({
         userId: t.id,
         context: {
           location: "friends-popout"
         }
       })
-    }, [t.id]), ed = async (e, n) => {
+    }, [t.id]), ef = async (e, n) => {
       if (e.preventDefault(), e.stopPropagation(), null != n.application_id && "" !== n.application_id && !K[n.application_id]) try {
         B(e => z(q({}, e), {
           [n.application_id]: !0
-        })), await a.Z.sendActivityInviteUser({
+        })), await o.Z.sendActivityInviteUser({
           type: F.mFx.JOIN,
           userId: t.id,
           activity: n,
@@ -223,11 +223,11 @@ let V = o.EFr.SIZE_32,
           [n.application_id]: !1
         }))
       }
-    }, ef = async (e, n) => {
+    }, ed = async (e, n) => {
       if (e.preventDefault(), e.stopPropagation(), null != n.application_id && "" !== n.application_id && !K[n.application_id]) try {
         B(e => z(q({}, e), {
           [n.application_id]: !0
-        })), await a.Z.sendActivityInviteUser({
+        })), await o.Z.sendActivityInviteUser({
           type: F.mFx.JOIN_REQUEST,
           userId: t.id,
           activity: n,
@@ -240,12 +240,12 @@ let V = o.EFr.SIZE_32,
           [n.application_id]: !1
         }))
       }
-    }, eg = () => C === F.OGo.PENDING_INCOMING ? (0, i.jsxs)(i.Fragment, {
+    }, ep = () => Z === F.OGo.PENDING_INCOMING ? (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(I.sF, {
         label: L.intl.string(L.t.MMlhsr),
-        icon: o.dz2,
+        icon: a.dz2,
         onClick: e => {
-          e.preventDefault(), e.stopPropagation(), d.Z.addRelationship({
+          e.preventDefault(), e.stopPropagation(), f.Z.addRelationship({
             userId: t.id,
             context: {
               location: "friends-popout"
@@ -254,30 +254,30 @@ let V = o.EFr.SIZE_32,
         }
       }), (0, i.jsx)(I.sF, {
         label: L.intl.string(L.t.ytCpKi),
-        icon: o.Dio,
+        icon: a.Dio,
         onClick: e => {
-          e.preventDefault(), e.stopPropagation(), d.Z.removeRelationship(t.id, {
+          e.preventDefault(), e.stopPropagation(), f.Z.removeRelationship(t.id, {
             location: "friends-popout"
           })
         }
       })]
-    }) : C === F.OGo.PENDING_OUTGOING ? (0, i.jsx)(I.sF, {
+    }) : Z === F.OGo.PENDING_OUTGOING ? (0, i.jsx)(I.sF, {
       label: L.intl.string(L.t["bTfA//"]),
-      icon: o.iHX,
+      icon: a.iHX,
       onClick: e => {
-        e.preventDefault(), e.stopPropagation(), d.Z.cancelFriendRequest(t.id, {
+        e.preventDefault(), e.stopPropagation(), f.Z.cancelFriendRequest(t.id, {
           location: "friends-popout"
         })
       }
-    }) : Z ? (0, i.jsx)(I.sF, {
+    }) : C ? (0, i.jsx)(I.sF, {
       label: L.intl.string(L.t.w5uwoK),
-      icon: o.oLu,
-      onClick: ec
-    }) : null, ep = () => (0, i.jsxs)(i.Fragment, {
+      icon: a.oLu,
+      onClick: eu
+    }) : null, eg = () => (0, i.jsxs)(i.Fragment, {
       children: [H.map(e => (0, i.jsx)(I.sF, {
         label: K[e.application_id] ? L.intl.string(L.t["8BEiNj"]) : L.intl.string(L.t.OKsSCQ),
-        icon: K[e.application_id] ? o.dz2 : o.V9,
-        onClick: t => ef(t, e)
+        icon: K[e.application_id] ? a.dz2 : a.V9,
+        onClick: t => ed(t, e)
       }, e.application_id)), X.map(e => {
         var n;
         return (0, i.jsx)(I.sF, {
@@ -285,8 +285,8 @@ let V = o.EFr.SIZE_32,
             channel: null != (n = t.globalName) ? n : t.username,
             game: e.name
           }),
-          icon: K[e.application_id] ? o.dz2 : o.ejJ,
-          onClick: t => ed(t, e)
+          icon: K[e.application_id] ? a.dz2 : a.ejJ,
+          onClick: t => ef(t, e)
         }, e.application_id)
       })]
     });
@@ -301,13 +301,13 @@ let V = o.EFr.SIZE_32,
         } = n;
         return (0, i.jsxs)("div", {
           className: M.row,
-          children: [(0, i.jsx)(S.Z, q({
+          children: [(0, i.jsx)(v.Z, q({
             innerClassName: M.rowInner,
-            onContextMenu: ea,
+            onContextMenu: eo,
             onMouseEnter: el,
             onMouseLeave: es,
-            avatar: (0, i.jsx)(o.qEK, z(q({}, D), {
-              size: V,
+            avatar: (0, i.jsx)(a.qEK, z(q({}, D), {
+              size: W,
               src: R,
               isMobile: ei,
               isTyping: !1,
@@ -321,20 +321,20 @@ let V = o.EFr.SIZE_32,
               className: M.username,
               children: null != (r = null != k ? k : t.globalName) ? r : t.username
             }),
-            subText: eo(),
+            subText: ea(),
             selected: l,
             nameplate: ee,
-            hovered: W
-          }, e, Y)), (0, i.jsxs)(I.ZP, {
+            hovered: Y
+          }, e, V)), (0, i.jsxs)(I.ZP, {
             className: M.hoverBar,
-            children: [eg(), ep(), C !== F.OGo.PENDING_INCOMING && C !== F.OGo.PENDING_OUTGOING && (0, i.jsx)(I.sF, {
+            children: [ep(), eg(), Z !== F.OGo.PENDING_INCOMING && Z !== F.OGo.PENDING_OUTGOING && (0, i.jsx)(I.sF, {
               label: L.intl.string(L.t["g33r/P"]),
-              icon: o.kBi,
-              onClick: eu
+              icon: a.kBi,
+              onClick: ec
             }), (0, i.jsx)(I.sF, {
               label: L.intl.string(L.t.UKOtz8),
-              icon: o.xhG,
-              onClick: ea
+              icon: a.xhG,
+              onClick: eo
             })]
           })]
         })
@@ -345,7 +345,7 @@ J.displayName = "FriendRow";
 let K = () => {
     let e = (0, s.e7)([U.Z], () => U.Z.getPrimaryActivity()),
       t = null == e ? void 0 : e.application_id,
-      n = (0, E.Ns)(t);
+      n = (0, b.Ns)(t);
     return (0, s.e7)([G.Z, k.default, A.Z, x.Z], () => {
       let i = (null == e ? void 0 : e.name) != null && null != t,
         r = {
@@ -369,21 +369,21 @@ let K = () => {
         let n = k.default.getUser(e);
         if (null == n) continue;
         let s = A.Z.getStatus(e),
-          o = A.Z.getActivities(e),
-          a = G.Z.getNickname(e),
-          u = x.Z.getVoiceStateForUser(e),
-          c = (null == u ? void 0 : u.channelId) != null,
-          d = o.filter(e => e.type === F.IIU.PLAYING || e.type === F.IIU.LISTENING || e.type === F.IIU.WATCHING || e.type === F.IIU.STREAMING),
-          f = d.filter(e => e.application_id === t),
-          g = i && f.length > 0,
-          p = {
+          a = A.Z.getActivities(e),
+          o = G.Z.getNickname(e),
+          c = x.Z.getVoiceStateForUser(e),
+          u = (null == c ? void 0 : c.channelId) != null,
+          f = a.filter(e => e.type === F.IIU.PLAYING || e.type === F.IIU.LISTENING || e.type === F.IIU.WATCHING || e.type === F.IIU.STREAMING),
+          d = f.filter(e => e.application_id === t),
+          p = i && d.length > 0,
+          g = {
             user: n,
-            activities: g ? f : d,
-            nickname: a
+            activities: p ? d : f,
+            nickname: o
           };
-        g ? (r.sameActivity.push(p), l.delete(e)) : d.length > 0 ? r.activities.push(p) : c ? r.activities.push(z(q({}, p), {
-          activities: o
-        })) : s === F.Skl.ONLINE || s === F.Skl.IDLE || s === F.Skl.DND ? r.online.push(p) : r.offline.push(p)
+        p ? (r.sameActivity.push(g), l.delete(e)) : f.length > 0 ? r.activities.push(g) : u ? r.activities.push(z(q({}, g), {
+          activities: a
+        })) : s === F.Skl.ONLINE || s === F.Skl.IDLE || s === F.Skl.DND ? r.online.push(g) : r.offline.push(g)
       }
       let s = (e, t) => {
         var n, i;
@@ -418,8 +418,8 @@ let K = () => {
     }
     return t.sort((e, t) => t.timestamp - e.timestamp), t
   }),
-  H = () => (0, s.e7)([C.Z, k.default, A.Z, G.Z, x.Z], () => {
-    let e = C.Z.getUserAffinitiesMap(),
+  H = () => (0, s.e7)([Z.Z, k.default, A.Z, G.Z, x.Z], () => {
+    let e = Z.Z.getUserAffinitiesMap(),
       t = [];
     for (let [n, i] of e.entries()) {
       let e = G.Z.getRelationshipType(n);
@@ -477,19 +477,19 @@ let K = () => {
 
 function ee(e, t) {
   let [n, i] = r.useState(t), l = r.useCallback(() => i(t), [t]);
-  return (0, Z.BO)(e, t, i, $), [n, l]
+  return (0, C.BO)(e, t, i, $), [n, l]
 }
 let et = e => {
-    let [t, n] = r.useState(""), [i, l] = ee(t, e.friendRequests), [s, o] = ee(t, e.suggestions), [a, u] = ee(t, e.sameActivity), [c, d] = ee(t, e.activities), [f, g] = ee(t, e.online), [p, O] = ee(t, e.offline), y = r.useCallback(() => {
-      n(""), l(), o(), u(), d(), g(), O()
-    }, [l, o, u, d, g, O]);
+    let [t, n] = r.useState(""), [i, l] = ee(t, e.friendRequests), [s, a] = ee(t, e.suggestions), [o, c] = ee(t, e.sameActivity), [u, f] = ee(t, e.activities), [d, p] = ee(t, e.online), [g, O] = ee(t, e.offline), y = r.useCallback(() => {
+      n(""), l(), a(), c(), f(), p(), O()
+    }, [l, a, c, f, p, O]);
     return {
       friendRequests: i,
       suggestions: s,
-      sameActivity: a,
-      activities: c,
-      online: f,
-      offline: p,
+      sameActivity: o,
+      activities: u,
+      online: d,
+      offline: g,
       currentActivityName: e.currentActivityName,
       searchQuery: t,
       setSearchQuery: n,
@@ -500,118 +500,118 @@ let et = e => {
     let {
       containerClassName: t,
       listClassName: s,
-      closePopout: a,
-      renderHeader: u,
-      autoFocus: d = !1,
-      appContext: f = F.IlC.APP
-    } = e, [p, O] = r.useState([W.SUGGESTIONS, W.FRIEND_REQUESTS]), y = r.useRef(null), h = (0, g.Z)("friends-popout", y), v = X(), m = et(v), {
-      searchQuery: S,
-      setSearchQuery: b,
-      handleSearchClear: E
-    } = m, I = Y(m, ["searchQuery", "setSearchQuery", "handleSearchClear"]), j = r.useCallback(e => {
+      closePopout: o,
+      renderHeader: c,
+      autoFocus: f = !1,
+      appContext: d = F.IlC.APP
+    } = e, [g, O] = r.useState([Y.SUGGESTIONS, Y.FRIEND_REQUESTS]), y = r.useRef(null), h = (0, p.Z)("friends-popout", y), m = X(), N = et(m), {
+      searchQuery: v,
+      setSearchQuery: E,
+      handleSearchClear: b
+    } = N, I = V(N, ["searchQuery", "setSearchQuery", "handleSearchClear"]), j = r.useCallback(e => {
       O(t => t.includes(e) ? t.filter(t => t !== e) : [...t, e])
     }, []), P = r.useCallback(e => {
-      (0, c.jW)(e, async () => {
+      (0, u.jW)(e, async () => {
         let {
           default: e
         } = await n.e("23087").then(n.bind(n, 29131));
         return t => (0, i.jsx)(e, z(q({}, t), {
-          onClose: a
+          onClose: o
         }))
       })
-    }, [a]), Z = r.useCallback(() => {
-      (0, o.ZDy)(async () => {
+    }, [o]), C = r.useCallback(() => {
+      (0, a.ZDy)(async () => {
         let {
           default: e
         } = await n.e("49078").then(n.bind(n, 539725));
         return t => (0, i.jsx)(e, q({}, t))
       })
-    }, []), C = r.useCallback(e => {
+    }, []), Z = r.useCallback(e => {
       let {
         section: t
       } = e, n = "", r = 0;
       switch (t) {
-        case W.FRIEND_REQUESTS:
+        case Y.FRIEND_REQUESTS:
           n = L.intl.string(L.t.fyA119), r = I.friendRequests.length;
           break;
-        case W.SAME_ACTIVITY:
-          n = v.currentActivityName, r = I.sameActivity.length;
+        case Y.SAME_ACTIVITY:
+          n = m.currentActivityName, r = I.sameActivity.length;
           break;
-        case W.SUGGESTIONS:
+        case Y.SUGGESTIONS:
           n = L.intl.string(L.t.qm9dSk), r = I.suggestions.length;
           break;
-        case W.ACTIVITIES:
+        case Y.ACTIVITIES:
           n = L.intl.string(L.t.TxqPQU), r = I.activities.length;
           break;
-        case W.ONLINE:
+        case Y.ONLINE:
           n = L.intl.string(L.t.WbGtnJ), r = I.online.length;
           break;
-        case W.OFFLINE:
+        case Y.OFFLINE:
           n = L.intl.string(L.t.Vv0abG), r = I.offline.length
       }
-      let l = (t === W.SUGGESTIONS || t === W.FRIEND_REQUESTS) && r > 3,
-        s = p.includes(t);
-      return (0, i.jsxs)(N.Z, {
+      let l = (t === Y.SUGGESTIONS || t === Y.FRIEND_REQUESTS) && r > 3,
+        s = g.includes(t);
+      return (0, i.jsxs)(S.Z, {
         className: M.section,
-        children: [(0, i.jsx)(o.nn4, {
+        children: [(0, i.jsx)(a.nn4, {
           children: L.intl.format(L.t.UaqbkZ, {
             title: n,
             count: r
           })
-        }), (0, i.jsxs)(o.P3F, {
+        }), (0, i.jsxs)(a.P3F, {
           onClick: () => l && j(t),
           "aria-hidden": !0,
           className: l ? M.sectionCollapsible : void 0,
-          children: [n, " — ", r, l ? s ? (0, i.jsx)(o.Fbu, {
+          children: [n, " — ", r, l ? s ? (0, i.jsx)(a.Fbu, {
             size: "md",
             color: "currentColor",
             className: M.chevronIcon
-          }) : (0, i.jsx)(o.CJ0, {
+          }) : (0, i.jsx)(a.CJ0, {
             size: "md",
             color: "currentColor",
             className: M.chevronIcon
           }) : null]
         })]
       })
-    }, [v.currentActivityName, I.friendRequests.length, I.sameActivity.length, I.suggestions.length, I.activities.length, I.online.length, I.offline.length, p, j]), w = r.useCallback(e => {
+    }, [m.currentActivityName, I.friendRequests.length, I.sameActivity.length, I.suggestions.length, I.activities.length, I.online.length, I.offline.length, g, j]), w = r.useCallback(e => {
       let t;
-      return null == (t = e.section === W.FRIEND_REQUESTS ? I.friendRequests[e.row] : e.section === W.SAME_ACTIVITY ? I.sameActivity[e.row] : e.section === W.SUGGESTIONS ? I.suggestions[e.row] : e.section === W.ACTIVITIES ? I.activities[e.row] : e.section === W.ONLINE ? I.online[e.row] : I.offline[e.row]) || null == t.user ? null : (0, i.jsx)(J, z(q({}, t), {
+      return null == (t = e.section === Y.FRIEND_REQUESTS ? I.friendRequests[e.row] : e.section === Y.SAME_ACTIVITY ? I.sameActivity[e.row] : e.section === Y.SUGGESTIONS ? I.suggestions[e.row] : e.section === Y.ACTIVITIES ? I.activities[e.row] : e.section === Y.ONLINE ? I.online[e.row] : I.offline[e.row]) || null == t.user ? null : (0, i.jsx)(J, z(q({}, t), {
         index: e.row,
-        closeParentPopout: a,
-        isSuggestion: e.section === W.SUGGESTIONS,
-        appContext: f
+        closeParentPopout: o,
+        isSuggestion: e.section === Y.SUGGESTIONS,
+        appContext: d
       }), "".concat(e.section, ":").concat(t.user.id))
-    }, [I, a, f]), {
+    }, [I, o, d]), {
       showSuggestions: _
     } = (0, D.Z)(), T = r.useMemo(() => {
-      let e = _ ? p.includes(W.SUGGESTIONS) ? Math.min(3, I.suggestions.length) : I.suggestions.length : 0;
-      return [p.includes(W.FRIEND_REQUESTS) ? Math.min(3, I.friendRequests.length) : I.friendRequests.length, I.sameActivity.length, I.activities.length, e, I.online.length, I.offline.length]
-    }, [I, p, _]), A = Object.values(I).every(e => 0 === e.length);
+      let e = _ ? g.includes(Y.SUGGESTIONS) ? Math.min(3, I.suggestions.length) : I.suggestions.length : 0;
+      return [g.includes(Y.FRIEND_REQUESTS) ? Math.min(3, I.friendRequests.length) : I.friendRequests.length, I.sameActivity.length, I.activities.length, e, I.online.length, I.offline.length]
+    }, [I, g, _]), A = Object.values(I).every(e => 0 === e.length);
     return (0, i.jsxs)("div", {
       className: t,
-      children: [null != u ? (0, i.jsx)("div", {
+      children: [null != c ? (0, i.jsx)("div", {
         className: M.header,
-        children: u()
+        children: c()
       }) : (0, i.jsxs)("div", {
         className: M.header,
-        children: [(0, i.jsx)(o.X6q, {
+        children: [(0, i.jsx)(a.X6q, {
           variant: "heading-lg/semibold",
           children: L.intl.string(L.t.TdEu5e)
         }), (0, i.jsxs)("div", {
           className: M.controlButtons,
-          children: [(0, i.jsx)(o.M0o, {
+          children: [(0, i.jsx)(a.M0o, {
             tooltip: L.intl.string(L.t.w5uwoK),
-            color: o.YX$.TERTIARY,
-            icon: (0, i.jsx)(o.oLu, {
+            color: a.YX$.TERTIARY,
+            icon: (0, i.jsx)(a.oLu, {
               size: "xs",
               color: "currentColor"
             }),
             className: M.controlButton,
-            onClick: Z
-          }), (0, i.jsx)(o.M0o, {
+            onClick: C
+          }), (0, i.jsx)(a.M0o, {
             tooltip: L.intl.string(L.t["3D5yo6"]),
-            color: o.YX$.TERTIARY,
-            icon: (0, i.jsx)(o.xhG, {
+            color: a.YX$.TERTIARY,
+            icon: (0, i.jsx)(a.xhG, {
               size: "xs",
               color: "currentColor"
             }),
@@ -621,17 +621,17 @@ let et = e => {
         })]
       }), (0, i.jsx)("div", {
         className: M.searchContainer,
-        children: (0, i.jsx)(o.E1j, {
-          query: S,
-          onChange: b,
-          onClear: E,
+        children: (0, i.jsx)(a.E1j, {
+          query: v,
+          onChange: E,
+          onClear: b,
           placeholder: L.intl.string(L.t["5h0QOD"]),
-          size: o.E1j.Sizes.MEDIUM,
-          autoFocus: d
+          size: a.E1j.Sizes.MEDIUM,
+          autoFocus: f
         })
       }), A ? (0, i.jsx)("div", {
         className: M.emptyStateContainer,
-        children: (0, i.jsx)(o.Text, {
+        children: (0, i.jsx)(a.Text, {
           variant: "text-md/normal",
           color: "text-muted",
           children: L.intl.string(L.t["7sW4h4"])
@@ -643,9 +643,9 @@ let et = e => {
             var {
               ref: t,
               role: n
-            } = e, r = Y(e, ["ref", "role"]);
-            return (0, i.jsx)(o.Wdt, {
-              children: e => (0, i.jsx)(o.aVo, q({
+            } = e, r = V(e, ["ref", "role"]);
+            return (0, i.jsx)(a.Wdt, {
+              children: e => (0, i.jsx)(a.aVo, q({
                 innerRole: n,
                 innerAriaLabel: L.intl.string(L.t.TdEu5e),
                 ref: e => {
@@ -656,7 +656,7 @@ let et = e => {
                 sectionHeight: 40,
                 rowHeight: 42,
                 sidebarHeight: 0,
-                renderSection: C,
+                renderSection: Z,
                 renderRow: w,
                 sections: T,
                 paddingTop: 4,
@@ -675,35 +675,35 @@ function ei(e) {
     onClose: n,
     children: l,
     popoutPosition: s,
-    popoutAlign: a
-  } = e, [u, c] = r.useState(!1), d = r.useCallback(() => {
-    c(!1), null == n || n()
-  }, [n]), f = r.useCallback(() => {
-    c(e => {
+    popoutAlign: o
+  } = e, [c, u] = r.useState(!1), f = r.useCallback(() => {
+    u(!1), null == n || n()
+  }, [n]), d = r.useCallback(() => {
+    u(e => {
       let i = !e;
       return i ? null == t || t() : null == n || n(), i
     })
-  }, [n, t]), g = r.useCallback(() => (0, i.jsx)(en, {
+  }, [n, t]), p = r.useCallback(() => (0, i.jsx)(en, {
     containerClassName: M.container,
     listClassName: M.list,
-    closePopout: d,
+    closePopout: f,
     autoFocus: !0
-  }), [d]);
-  return (0, i.jsx)(o.yRy, {
-    animation: o.yRy.Animation.NONE,
+  }), [f]);
+  return (0, i.jsx)(a.yRy, {
+    animation: a.yRy.Animation.NONE,
     position: s,
-    align: a,
+    align: o,
     autoInvert: !1,
-    shouldShow: u,
-    onRequestClose: d,
-    renderPopout: g,
+    shouldShow: c,
+    onRequestClose: f,
+    renderPopout: p,
     ignoreModalClicks: !0,
     clickTrap: !0,
     children: (e, t) => {
       let {
         isShown: n
       } = t;
-      return l(f, n, e)
+      return l(d, n, e)
     }
   })
 }

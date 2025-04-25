@@ -1,4 +1,4 @@
-/** Chunk was on 21918 **/
+/** Chunk was on 30745 **/
 n.d(t, {
   Z: () => eu
 }), n(388685);
@@ -19,8 +19,8 @@ var r = n(200651),
   b = n(144144),
   _ = n(276264),
   y = n(607070),
-  C = n(100527),
-  x = n(367907),
+  x = n(100527),
+  C = n(367907),
   v = n(906732),
   j = n(493324),
   O = n(611064),
@@ -129,8 +129,8 @@ let en = q.ZP.getEnableHardwareAcceleration(),
       applicationStream: f,
       status: g,
       channel: y,
-      guildId: C,
-      isTyping: x,
+      guildId: x,
+      isTyping: C,
       isMobileOnline: v,
       premiumSince: j,
       nameplate: O,
@@ -142,12 +142,12 @@ let en = q.ZP.getEnableHardwareAcceleration(),
         } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387)), t = V.Z.isInChannel(G.Z.getVoiceChannelId(), u.id);
         return n => (0, r.jsx)(e, ee($({}, n), {
           user: u,
-          guildId: C,
+          guildId: x,
           channel: y,
           showMediaItems: t
         }))
       })
-    }, [u, C, y]), A = i.useCallback(() => {
+    }, [u, x, y]), A = i.useCallback(() => {
       let e = "@".concat(Y.ZP.getUserTag(u, {
           decoration: "never"
         })),
@@ -159,17 +159,17 @@ let en = q.ZP.getEnableHardwareAcceleration(),
         rawText: t
       }), b.Z.startTyping(y.id)
     }, [u, y.id]), w = i.useCallback(e => {
-      null != C && (e.stopPropagation(), (0, T.f)({
-        guildId: C,
+      null != x && (e.stopPropagation(), (0, T.f)({
+        guildId: x,
         location: {
           section: K.jXE.MEMBER_LIST,
           object: K.qAy.BOOST_GEM_ICON
         }
       }))
-    }, [C]);
+    }, [x]);
     return (0, r.jsx)(L.Z, {
       user: u,
-      guildId: C,
+      guildId: x,
       channelId: y.id,
       roleId: a,
       position: d.tq ? "window_center" : "left",
@@ -200,9 +200,9 @@ let en = q.ZP.getEnableHardwareAcceleration(),
           colorString: t,
           colorStrings: l,
           colorRoleName: o,
-          isTyping: x,
+          isTyping: C,
           channel: y,
-          guildId: C,
+          guildId: x,
           isMobile: v,
           onClickPremiumGuildIcon: w,
           selected: P,
@@ -540,7 +540,7 @@ class es extends i.Component {
         num_users_visible_with_avatar_decoration: 0,
         num_users_visible_with_nameplate: 0
       });
-      this.lastReportedAnalyticsChannel = this.props.channel.id, x.ZP.trackWithMetadata(K.rMx.MEMBER_LIST_VIEWED, $({}, i))
+      this.lastReportedAnalyticsChannel = this.props.channel.id, C.ZP.trackWithMetadata(K.rMx.MEMBER_LIST_VIEWED, $({}, i))
     })
   }
 }
@@ -551,7 +551,7 @@ function ec(e) {
     className: n
   } = e, {
     analyticsLocations: l
-  } = (0, v.ZP)(C.Z.MEMBER_LIST), a = (0, h.e7)([y.Z], () => y.Z.keyboardModeEnabled), s = (0, h.cj)([U.ZP], () => U.ZP.getProps(t.guild_id, t.id)), {
+  } = (0, v.ZP)(x.Z.MEMBER_LIST), a = (0, h.e7)([y.Z], () => y.Z.keyboardModeEnabled), s = (0, h.cj)([U.ZP], () => U.ZP.getProps(t.guild_id, t.id)), {
     rows: d,
     groups: p,
     version: m,
@@ -560,7 +560,7 @@ function ec(e) {
     memberStoreProps: s,
     channelId: t.id,
     guildId: t.guild_id
-  }), b = i.useRef(null), _ = (0, f.UBm)("lg") + (0, f.UBm)("xxs"), x = i.useCallback((e, t) => {
+  }), b = i.useRef(null), _ = (0, f.UBm)("lg") + (0, f.UBm)("xxs"), C = i.useCallback((e, t) => {
     let n = b.current;
     if (null == n) return;
     let r = parseInt(t, 10),
@@ -594,7 +594,7 @@ function ec(e) {
     })
   }), []), E = (0, u.ZP)({
     id: "members-".concat(t.id),
-    setFocus: x,
+    setFocus: C,
     isEnabled: a,
     scrollToStart: j,
     scrollToEnd: O

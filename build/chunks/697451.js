@@ -1,4 +1,4 @@
-/** Chunk was on 24338 **/
+/** Chunk was on 2900 **/
 n.d(t, {
   Z: () => H
 });
@@ -20,8 +20,8 @@ var r = n(200651),
   b = n(100527),
   x = n(906732),
   y = n(783097),
-  E = n(581364),
-  v = n(592180),
+  v = n(581364),
+  E = n(592180),
   O = n(726033),
   j = n(598077),
   C = n(594174),
@@ -104,8 +104,8 @@ function U(e, t, n, i, l) {
     onClickAvatar: b,
     onUserContextMenu: x,
     onClickTargetAvatar: y,
-    onTargetUserContextMenu: E,
-    onPopoutRequestClose: v
+    onTargetUserContextMenu: v,
+    onPopoutRequestClose: E
   } = e;
   if (d && 1 === n) return null;
   if (d && null == u.activityInstance || f || h) return (0, r.jsx)("div", {
@@ -144,14 +144,14 @@ function U(e, t, n, i, l) {
       guildId: m.guild_id,
       guildAvatar: O,
       onClick: 1 === n ? y : b,
-      onContextMenu: 1 === n ? E : x
+      onContextMenu: 1 === n ? v : x
     }),
     C = 1 === n ? _ : g;
   return null != l && null != C ? (0, r.jsx)(p.yRy, {
     renderPopout: l,
     shouldShow: C,
     position: "right",
-    onRequestClose: v,
+    onRequestClose: E,
     children: j
   }) : j()
 }
@@ -222,7 +222,7 @@ function H(e) {
       messageId: l.id,
       interactionData: l.interactionData
     }))), [o, l.id, l.interactionData]),
-    M = (0, E.t0)(l),
+    M = (0, v.t0)(l),
     H = (null == M ? void 0 : M.type) === m.B8.APPLICATION_COMMAND && null != M.target_user ? new j.Z(M.target_user) : null,
     V = (null == M ? void 0 : M.type) === m.B8.APPLICATION_COMMAND && null != l.messageReference && null != e.renderTargetMessage,
     z = (0, T.Sw)(null == (t = l.interaction) ? void 0 : t.user, o),
@@ -238,7 +238,7 @@ function H(e) {
       children: [t, n]
     }, "user")
   };
-  if ((null == l ? void 0 : l.activityInstance) === null || (0, v.g)(l)) n = R.intl.format(R.t["rg7U+P"], {
+  if ((null == l ? void 0 : l.activityInstance) === null || (0, E.g)(l)) n = R.intl.format(R.t["rg7U+P"], {
     userHook: q,
     commandHook: () => {
       let t = function(e, t) {
@@ -288,7 +288,7 @@ function H(e) {
                 }), s]
               })
             }));
-            if (!(0, v.g)(i)) return (0, r.jsx)("div", {
+            if (!(0, E.g)(i)) return (0, r.jsx)("div", {
               className: k.commandName,
               children: s
             });

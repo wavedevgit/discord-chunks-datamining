@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(200651);
 n(192379);
 var r = n(120356),
-  l = n.n(r),
-  o = n(481060),
+  o = n.n(r),
+  l = n(481060),
   s = n(702107);
 let c = e => {
   let {
@@ -14,13 +14,13 @@ let c = e => {
     onDismiss: n,
     "aria-label": r
   } = e;
-  return (0, i.jsx)(o.zxk, {
-    look: o.zxk.Looks.BLANK,
-    size: o.zxk.Sizes.NONE,
+  return (0, i.jsx)(l.zxk, {
+    look: l.zxk.Looks.BLANK,
+    size: l.zxk.Sizes.NONE,
     onClick: n,
-    className: l()(s.dismissButton, t),
+    className: o()(s.dismissButton, t),
     "aria-label": r,
-    children: (0, i.jsx)(o.Dio, {
+    children: (0, i.jsx)(l.Dio, {
       size: "xs",
       color: "currentColor",
       colorClass: s.dismissIcon

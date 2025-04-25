@@ -1,4 +1,4 @@
-/** Chunk was on 21918 **/
+/** Chunk was on 30745 **/
 n.d(t, {
   Z: () => E
 });
@@ -20,9 +20,9 @@ var i = n(120356),
   b = n(967128),
   _ = n(981631),
   y = n(388032),
-  C = n(128337);
+  x = n(128337);
 
-function x(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -69,7 +69,7 @@ function j(e) {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("70675")]).then(n.bind(n, 654663));
-      return t => (0, r.jsx)(e, v(x({}, t), {
+      return t => (0, r.jsx)(e, v(C({}, t), {
         user: y,
         guildId: b.guild_id,
         channel: b
@@ -79,7 +79,7 @@ function j(e) {
   let I = null != (i = null != (t = null == j ? void 0 : j.nick) ? t : g.ZP.getName(y)) ? i : "???",
     P = null == j ? void 0 : j.colorString;
   return null == y ? (0, r.jsx)("span", {
-    className: l()(C.threadCreatorName, C.unknownCreatorName),
+    className: l()(x.threadCreatorName, x.unknownCreatorName),
     children: I
   }) : (0, r.jsx)(u.Gt, {
     value: _,
@@ -89,9 +89,9 @@ function j(e) {
       channelId: b.id,
       roleId: null == j ? void 0 : j.colorRoleId,
       clickTrap: !0,
-      children: e => (0, r.jsx)(a.P3F, v(x({}, e), {
+      children: e => (0, r.jsx)(a.P3F, v(C({}, e), {
         tag: "span",
-        className: C.threadCreatorName,
+        className: x.threadCreatorName,
         onContextMenu: E,
         children: (0, r.jsx)(a.PUh, {
           name: I,
@@ -118,7 +118,7 @@ function O(e) {
       variant: "text-md/normal",
       color: "header-secondary",
       children: (0, r.jsx)("div", {
-        className: C.subtitle,
+        className: x.subtitle,
         children: y.intl.format(y.t.imPXd3, {
           usernameHook: (e, n) => (0, r.jsx)(j, {
             userId: t.ownerId,
@@ -142,9 +142,9 @@ function E(e) {
   return (0, r.jsxs)(b.ZP, {
     channelId: n.id,
     children: [(0, r.jsx)("div", {
-      className: C.iconWrapper,
+      className: x.iconWrapper,
       children: (0, r.jsx)(i, {
-        className: C.icon
+        className: x.icon
       })
     }), (0, r.jsx)(b.Ot, {
       children: n.name

@@ -1,4 +1,4 @@
-/** Chunk was on 21918 **/
+/** Chunk was on 30745 **/
 n.d(t, {
   Z: () => v
 });
@@ -19,8 +19,8 @@ var r = n(200651),
   b = n(358085),
   _ = n(228488),
   y = n(981631),
-  C = n(806176);
-let x = () => {
+  x = n(806176);
+let C = () => {
   o.Z.wait(() => p.xv(y.KJ3.CHANNEL_CALL_POPOUT))
 };
 
@@ -120,12 +120,12 @@ function v(e) {
   }, [I, O]), i.useEffect(() => {
     null != T && E.current === y.WtW.VIDEO && P === y.WtW.VOICE && (0, _.Pr)(T, N)
   }, [N, P, E, T]), i.useEffect(() => {
-    !S && O && x()
+    !S && O && C()
   }, [S, O]), w) ? (0, r.jsx)(h.Z, {
     themeable: !1,
     node: T,
     guestWindow: p,
-    className: C.rightTrayIcon,
+    className: x.rightTrayIcon,
     onClick: M(I)
   }) : null
 }

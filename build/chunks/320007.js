@@ -1,4 +1,4 @@
-/** Chunk was on 24338 **/
+/** Chunk was on 2900 **/
 n.d(t, {
   Z: () => b
 });
@@ -29,8 +29,8 @@ function b(e) {
   }, {
     autoTrackExposure: !1
   }), {
-    hasClips: E,
-    hasNewClips: v,
+    hasClips: v,
+    hasNewClips: E,
     lastClipsSession: O,
     remindersEnabled: j,
     hasAnyClipAnimations: C
@@ -72,7 +72,7 @@ function b(e) {
       modalKey: g.Qr
     })
   }
-  return (i.useEffect(() => (C ? P() : A(), () => A()), [C, P, A]), y && x && E) ? (0, r.jsxs)(r.Fragment, {
+  return (i.useEffect(() => (C ? P() : A(), () => A()), [C, P, A]), y && x && v) ? (0, r.jsxs)(r.Fragment, {
     children: [null != I && t && j && S && !(0, a.$sL)() && !T && (0, r.jsx)(h.Z, {
       clipIconRef: I,
       lastClipsSession: O,
@@ -82,7 +82,7 @@ function b(e) {
       children: (0, r.jsx)(o.JO, {
         className: b,
         icon: a.AlX,
-        showBadge: v,
+        showBadge: E,
         tooltip: _.intl.string(_.t.MXaLEB),
         onClick: w
       })

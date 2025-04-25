@@ -1,4 +1,4 @@
-/** Chunk was on 24338 **/
+/** Chunk was on 2900 **/
 n.d(t, {
   Z: () => L
 }), n(539854), n(361932), n(187205), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685);
@@ -20,8 +20,8 @@ var r = n(200651),
   b = n(880251),
   x = n(208444),
   y = n(835473),
-  E = n(471445),
-  v = n(111028),
+  v = n(471445),
+  E = n(111028),
   O = n(601964),
   j = n(592125),
   C = n(430824),
@@ -79,7 +79,7 @@ function D(e) {
     textColor: l
   } = e;
   if (null != t && null != n) {
-    let e = (0, E.KS)(t, n);
+    let e = (0, v.KS)(t, n);
     return (0, r.jsxs)("div", {
       className: a()(R.channel, {
         [R.ended]: i
@@ -88,7 +88,7 @@ function D(e) {
         className: R.channelIcon,
         size: "xs",
         color: "currentColor"
-      }) : null, (0, r.jsx)(v.Z, {
+      }) : null, (0, r.jsx)(E.Z, {
         children: (0, r.jsx)(u.Text, {
           variant: "text-xs/normal",
           color: l,
@@ -104,7 +104,7 @@ function D(e) {
     className: a()(R.channel, {
       [R.ended]: i
     }),
-    children: (0, r.jsx)(v.Z, {
+    children: (0, r.jsx)(E.Z, {
       children: (0, r.jsx)(u.Text, {
         variant: "text-xs/normal",
         color: l,
@@ -137,8 +137,8 @@ function L(e) {
         invite_inviter_id: null == (e = a.inviter) ? void 0 : e.id
       })
     }, [null == (t = a.inviter) ? void 0 : t.id, b.id]),
-    E = (0, c.e7)([C.Z], () => null != a.guild ? C.Z.getGuild(a.guild.id) : null, [a]),
-    v = (0, y.Z)([b.id])[0],
+    v = (0, c.e7)([C.Z], () => null != a.guild ? C.Z.getGuild(a.guild.id) : null, [a]),
+    E = (0, y.Z)([b.id])[0],
     T = (0, c.e7)([p.ZP], () => {
       var e;
       return (null == a ? void 0 : a.channel) != null && (null == (e = p.ZP.getSelfEmbeddedActivityForChannel(a.channel.id)) ? void 0 : e.applicationId) === b.id
@@ -172,21 +172,21 @@ function L(e) {
       })
     }, [a, o, L, u]),
     G = a.state === A.r2o.ACCEPTING,
-    H = null != E;
-  if (null == E) {
+    H = null != v;
+  if (null == v) {
     if (null == a.guild) return (0, r.jsx)(P.Z, {});
-    E = new O.ZP(a.guild)
+    v = new O.ZP(a.guild)
   }
   let V = H && !D || H && T;
-  return (H && T && (l = Z.intl.string(Z.t.wJNK8P)), D || (l = Z.intl.string(Z.t.hHGrW1)), null == a.code || "" === a.code || null == v) ? null : (0, r.jsx)(f.Gt, {
+  return (H && T && (l = Z.intl.string(Z.t.wJNK8P)), D || (l = Z.intl.string(Z.t.hHGrW1)), null == a.code || "" === a.code || null == E) ? null : (0, r.jsx)(f.Gt, {
     value: L,
     children: (0, r.jsx)(M, {
-      app: v,
+      app: E,
       invite: a,
       activityUsers: F,
       isMember: H,
       channel: k,
-      guild: E,
+      guild: v,
       members: h,
       membersOnline: g,
       isActivityActive: R,
@@ -213,8 +213,8 @@ function M(e) {
     isActivityActive: m,
     submitting: f,
     isDisabled: y,
-    tooltip: E,
-    handleAcceptInvite: v,
+    tooltip: v,
+    handleAcceptInvite: E,
     onView: O
   } = e, j = new URL(a.code, "https://discord.gg").toString(), {
     bot: C,
@@ -228,11 +228,11 @@ function M(e) {
       label: s ? m ? Z.intl.string(Z.t.VJlc0d) : Z.intl.string(Z.t.RscU7O) : Z.intl.string(Z.t["2BP08P"]),
       trackingArea: s ? _.j_.PLAY : _.j_.JOIN_SERVER,
       submitting: f,
-      disabledReason: y && null != E ? E : void 0,
-      onClick: v
+      disabledReason: y && null != v ? v : void 0,
+      onClick: E
     }];
     return null != N && e.push(N), e
-  }, [v, m, y, s, f, E, N]);
+  }, [E, m, y, s, f, v, N]);
   return (0, r.jsx)(h.W, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},

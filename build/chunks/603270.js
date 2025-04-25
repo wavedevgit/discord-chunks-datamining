@@ -1,4 +1,4 @@
-/** Chunk was on 24338 **/
+/** Chunk was on 2900 **/
 n.d(t, {
   F: () => R,
   P: () => Z
@@ -21,8 +21,8 @@ var r = n(200651),
   b = n(238),
   x = n(55563),
   y = n(551428),
-  E = n(626135),
-  v = n(572004),
+  v = n(626135),
+  E = n(572004),
   O = n(601911),
   j = n(504211),
   C = n(970321),
@@ -75,16 +75,16 @@ function Z(e) {
   i.useEffect(() => {
     _ === b.N.NONE && (0, c.k)(t), null != u || d || f || (0, m.UM)(t)
   }, [u, t, f, d, _]);
-  let v = h.subscriptions.length,
+  let E = h.subscriptions.length,
     S = h.otps.length,
-    A = i.useMemo(() => v > 0 && S > 0 ? T.intl.formatToPlainString(T.t["jA648/"], {
-      subCount: v,
+    A = i.useMemo(() => E > 0 && S > 0 ? T.intl.formatToPlainString(T.t["jA648/"], {
+      subCount: E,
       itemCount: S
-    }) : v > 0 ? T.intl.formatToPlainString(T.t.GSfibG, {
-      count: v
+    }) : E > 0 ? T.intl.formatToPlainString(T.t.GSfibG, {
+      count: E
     }) : S > 0 ? T.intl.formatToPlainString(T.t.j7Go5O, {
       count: S
-    }) : T.intl.string(T.t.rMA98v), [S, v]);
+    }) : T.intl.string(T.t.rMA98v), [S, E]);
   if (!a || null == u) return null;
   let w = () => {
     (0, s.ZDy)(async () => {
@@ -111,14 +111,14 @@ function Z(e) {
     },
     iconSrc: y,
     onIconClick: () => {
-      w(), E.default.track(I.rMx.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
+      w(), v.default.track(I.rMx.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
         application_id: t,
         area: "app_icon"
       })
     },
     children: (0, r.jsx)(s.zxk, {
       onClick: () => {
-        w(), E.default.track(I.rMx.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
+        w(), v.default.track(I.rMx.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
           application_id: t,
           area: "open_store_button"
         })
@@ -158,7 +158,7 @@ function R(e) {
   } = (0, d.IX)(null == m ? void 0 : m.applicationId), y = (0, o.e7)([g.Z], () => {
     var e;
     return null == (e = g.Z.getBasicChannel(u.channel_id)) ? void 0 : e.guild_id
-  }, [u]), v = i.useMemo(() => null != x ? (0, O.y)(x, 45) : void 0, [x]), Z = (0, C.R)(null != (l = null == x ? void 0 : x.id) ? l : ""), {
+  }, [u]), E = i.useMemo(() => null != x ? (0, O.y)(x, 45) : void 0, [x]), Z = (0, C.R)(null != (l = null == x ? void 0 : x.id) ? l : ""), {
     openModal: R,
     subscriptionPurchaseButtonState: D
   } = (0, h.Z)({
@@ -222,7 +222,7 @@ function R(e) {
     }) : null == b || null == (t = b.description) ? void 0 : t.trim();
   "" === B && (B = void 0);
   let G = () => {
-    E.default.track(I.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
+    v.default.track(I.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
       application_id: x.id,
       sku_id: m.id,
       area: "purchase_button"
@@ -236,9 +236,9 @@ function R(e) {
     onLinkCopy: () => {
       (0, j.X)(x.id, j.B.SKU_EMBED, c)
     },
-    iconSrc: v,
+    iconSrc: E,
     onIconClick: () => {
-      U(), E.default.track(I.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
+      U(), v.default.track(I.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
         application_id: x.id,
         sku_id: m.id,
         area: "app_icon"
@@ -249,7 +249,7 @@ function R(e) {
       children: [(0, r.jsx)(s.zxk, {
         color: s.Ttl.CUSTOM,
         onClick: () => {
-          F(), E.default.track(I.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
+          F(), v.default.track(I.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
             application_id: x.id,
             sku_id: m.id,
             area: "view_details"
@@ -309,12 +309,12 @@ function k(e) {
           color: "text-muted",
           children: t
         })]
-      }), v.wS && (0, r.jsx)(s.zxk, {
+      }), E.wS && (0, r.jsx)(s.zxk, {
         look: s.iLD.BLANK,
         size: s.PhG.ICON,
         "aria-label": T.intl.string(T.t.WqhZsr),
         onClick: () => {
-          (0, v.JG)(l, () => {
+          (0, E.JG)(l, () => {
             (0, s.showToast)((0, s.createToast)(T.intl.string(T.t["L/PwZW"]), s.ToastType.SUCCESS)), c()
           })
         },

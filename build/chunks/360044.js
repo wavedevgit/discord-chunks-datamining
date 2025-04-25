@@ -1,4 +1,4 @@
-/** Chunk was on 24338 **/
+/** Chunk was on 2900 **/
 e.exports = {
   tile: "tile__72090",
   tileHorizontal: "tileHorizontal__72090",

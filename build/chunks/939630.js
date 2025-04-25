@@ -1,4 +1,4 @@
-/** Chunk was on 21918 **/
+/** Chunk was on 30745 **/
 e.exports = {
   gradientBackground: "gradientBackground__11664",
   sphere: "sphere__11664",

@@ -1,6 +1,6 @@
 /** Chunk was on 89298 **/
 n.d(t, {
-  Z: () => V
+  Z: () => z
 }), n(388685);
 var i = n(200651),
   r = n(192379),
@@ -233,7 +233,7 @@ function R(e) {
   })
 }
 let M = new Set([N.jm8.ENDED, N.jm8.FAILED, N.jm8.PAUSED]),
-  V = r.memo(function(e) {
+  z = r.memo(function(e) {
     let {
       participant: t,
       width: n,
