@@ -56,9 +56,9 @@ function O(e) {
     emoji: n,
     startPosition: O,
     targetPosition: y
-  } = e, [x, T] = r.useState(0), [S, _] = r.useState(0), [C, R] = r.useState(null), {
-    confettiCanvas: P
-  } = r.useContext(u.h), E = (0, o.uR)(P, C), I = r.useMemo(() => [{
+  } = e, [x, T] = r.useState(0), [S, _] = r.useState(0), [C, P] = r.useState(null), {
+    confettiCanvas: R
+  } = r.useContext(u.h), E = (0, o.uR)(R, C), I = r.useMemo(() => [{
     src: null == n.id ? m.ZP.getURL(n.name) : p.ZP.getEmojiURL({
       id: n.id,
       animated: !1,
@@ -119,7 +119,7 @@ function O(e) {
     }))
   }, [E, x, S]), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(o.Ji, {
-      ref: R,
+      ref: P,
       sprites: I,
       colors: v,
       spriteWidth: f.Ko,

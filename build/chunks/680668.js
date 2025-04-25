@@ -1,6 +1,6 @@
 /** Chunk was on 2900 **/
 n.d(t, {
-  Z: () => E
+  Z: () => v
 }), n(997841), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -20,10 +20,10 @@ var r = n(200651),
   b = n(358595),
   x = n(981631),
   y = n(388032),
-  v = n(273254);
+  E = n(273254);
 
-function E(e) {
-  var t, E, O;
+function v(e) {
+  var t, v, O;
   let j, C, S, {
       onTransitionToInviteChannel: I,
       onAcceptInstantInvite: N,
@@ -45,7 +45,7 @@ function E(e) {
     B = null != M && M.isGuildVocal(),
     G = null != M && M.isGuildStageVoice(),
     H = (0, h.yE)(null != (t = P.flags) ? t : 0, l.$.IS_GUEST_INVITE),
-    V = null != (E = null == T ? void 0 : T.hasFeature(x.oNc.HUB)) && E,
+    V = null != (v = null == T ? void 0 : T.hasFeature(x.oNc.HUB)) && v,
     z = (0, u.h)(),
     W = null == T ? void 0 : T.id,
     {
@@ -79,7 +79,7 @@ function E(e) {
     isStream: !1
   });
   return C = (0, r.jsxs)("span", {
-    className: v.infoTitle,
+    className: E.infoTitle,
     children: [(0, r.jsx)(d.Z, {
       guildId: T.id,
       name: T.name,
@@ -89,7 +89,7 @@ function E(e) {
         guild: T
       })
     }), (0, r.jsx)("span", {
-      className: v.infoBadge,
+      className: E.infoBadge,
       children: (0, r.jsx)(p.Z, {
         guild: T,
         isBannerVisible: !1,
@@ -97,21 +97,21 @@ function E(e) {
       })
     })]
   }), H && (S = (0, r.jsx)(a.DY3, {
-    className: v.tooltipContainer,
+    className: E.tooltipContainer,
     text: y.intl.string(y.t["/FeTKy"]),
     children: (0, r.jsx)(a.d3s, {
       size: "md",
       color: "currentColor",
-      className: v.infoIcon
+      className: E.infoIcon
     })
   })), B ? (C = (0, r.jsx)(m.Z.Channel, {
     channel: M
   }), j = (0, r.jsxs)("span", {
-    className: v.infoTitle,
+    className: E.infoTitle,
     children: [y.intl.format(y.t["2wimj4"], {
       guildName: T.name
     }), (0, r.jsx)("span", {
-      className: v.infoBadge,
+      className: E.infoBadge,
       children: (0, r.jsx)(p.Z, {
         guild: T,
         isBannerVisible: !1
@@ -131,7 +131,7 @@ function E(e) {
       extra: S
     }), (0, r.jsxs)(m.Z.Body, {
       children: [(0, r.jsxs)("div", {
-        className: v.headerLine,
+        className: E.headerLine,
         children: [(0, r.jsx)(m.Z.Icon, {
           guild: T
         }), (0, r.jsx)(m.Z.Info, {
@@ -147,7 +147,7 @@ function E(e) {
       })]
     }), T.hasFeature(x.oNc.HUB) && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: v.separator
+        className: E.separator
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",

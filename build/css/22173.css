@@ -1,6 +1,6 @@
 /**
   Module ID: 22173
-  Original File Name: c98d5e6c645d7846
+  Original File Name: 1b02fa258268e936
 **/
 .effect_a9ddb3 {
     bottom: 0;
@@ -315,20 +315,11 @@
     flex: 1 0 auto;
     flex-wrap: wrap;
     margin-bottom: -8px;
-    padding-bottom: 4px
-}
-
-.largeReactions_f8896c {
     padding-bottom: 6px;
     padding-top: 1px
 }
 
-.icon_f8896c {
-    height: 16px;
-    width: 16px
-}
-
-.largeIcon_f8896c {
+.icon_f8896c,.reactionBtn_f8896c {
     height: 18px;
     width: 18px
 }
@@ -336,12 +327,10 @@
 .reactionBtn_f8896c {
     color: var(--interactive-normal);
     cursor: pointer;
-    height: 16px;
     margin-bottom: 2px;
     margin-left: 4px;
     margin-right: 4px;
-    opacity: 0;
-    width: 16px
+    opacity: 0
 }
 
 .reactionBtn_f8896c:hover .icon_f8896c {
@@ -350,11 +339,6 @@
 
 .reactionBtn_f8896c.active_f8896c .icon_f8896c,.reactionBtn_f8896c:active .icon_f8896c {
     color: var(--interactive-active)
-}
-
-.largeReactionBtn_f8896c {
-    height: 18px;
-    width: 18px
 }
 
 .reactionBtn_f8896c.active_f8896c,.reactionBtn_f8896c.visible_f8896c,.reactions_f8896c:hover .reactionBtn_f8896c {
@@ -368,16 +352,12 @@
     margin-bottom: 4px;
     margin-left: 0;
     opacity: 1;
-    padding: 4px 6px
+    padding: 5px 7px
 }
 
 .reactionBtn_f8896c.forceShow_f8896c:hover {
     background-color: var(--background-primary);
     border-color: var(--opacity-white-20)
-}
-
-.largeReactionBtn_f8896c.forceShow_f8896c {
-    padding: 5px 7px
 }
 
 .hideEmoji_f8896c {
@@ -410,15 +390,10 @@
 }
 
 .reaction_f8896c .emoji {
-    height: 16px;
+    height: 20px;
     margin: 2px 0;
     min-height: auto;
     min-width: auto;
-    width: 16px
-}
-
-.reaction_f8896c .reactionLarge {
-    height: 20px;
     width: 20px
 }
 
@@ -631,20 +606,11 @@
     flex: 1 0 auto;
     flex-wrap: wrap;
     margin-bottom: -.5rem;
-    padding-bottom: .25rem
-}
-
-.largeReactions__23977 {
     padding-bottom: .375rem;
     padding-top: .125rem
 }
 
-.icon__23977 {
-    height: 1rem;
-    width: 1rem
-}
-
-.largeIcon__23977 {
+.icon__23977,.reactionBtn__23977 {
     height: 1.125rem;
     width: 1.125rem
 }
@@ -652,12 +618,10 @@
 .reactionBtn__23977 {
     color: var(--interactive-normal);
     cursor: pointer;
-    height: 1rem;
     margin-bottom: .125rem;
     margin-left: .25rem;
     margin-right: .25rem;
-    opacity: 0;
-    width: 1rem
+    opacity: 0
 }
 
 .reactionBtn__23977:hover .icon__23977 {
@@ -666,11 +630,6 @@
 
 .reactionBtn__23977.active__23977 .icon__23977,.reactionBtn__23977:active .icon__23977 {
     color: var(--interactive-active)
-}
-
-.largeReactionBtn__23977 {
-    height: 1.125rem;
-    width: 1.125rem
 }
 
 .reactionBtn__23977.active__23977,.reactionBtn__23977.visible__23977,.reactions__23977:hover .reactionBtn__23977 {
@@ -684,16 +643,12 @@
     margin-bottom: .25rem;
     margin-left: 0;
     opacity: 1;
-    padding: .25rem .375rem
+    padding: .3125rem .4375rem
 }
 
 .reactionBtn__23977.forceShow__23977:hover {
     background-color: var(--background-primary);
     border-color: var(--opacity-white-20)
-}
-
-.largeReactionBtn__23977.forceShow__23977 {
-    padding: .3125rem .4375rem
 }
 
 .hideEmoji__23977 {
@@ -726,15 +681,10 @@
 }
 
 .reaction__23977 .emoji {
-    height: 1rem;
+    height: 1.25rem;
     margin: .125rem 0;
     min-height: auto;
     min-width: auto;
-    width: 1rem
-}
-
-.reaction__23977 .reactionLarge {
-    height: 1.25rem;
     width: 1.25rem
 }
 
@@ -1463,4 +1413,4 @@
     background-color: var(--background-tertiary)
 }
 
-/*# sourceMappingURL=c98d5e6c645d7846.css.map*/
+/*# sourceMappingURL=1b02fa258268e936.css.map*/

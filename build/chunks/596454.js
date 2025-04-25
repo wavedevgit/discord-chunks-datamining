@@ -131,8 +131,7 @@ function A(e) {
     };
     return y(O(y({}, x), {
       className: o()("emoji", c, {
-        jumboable: "jumbo" === S,
-        reactionLarge: "reactionLarge" === S
+        jumboable: "jumbo" === S
       }),
       onError: z,
       onMouseEnter: q,
