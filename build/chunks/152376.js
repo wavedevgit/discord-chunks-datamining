@@ -86,7 +86,14 @@ function I(e, t, n, r) {
     guildId: e,
     channelId: t,
     settings: d
-  }), (0, m.jz)(e, t, d, o, m.UE.optedIn(n), r), P(e), p.default.track(g.rMx.CHANNEL_LIST_UPDATED, O(y({}, (0, s.hH)(e), (0, s.v_)(f.Z.getChannel(t))), {
+  }), (0, m.jz)({
+    guildId: e,
+    channelId: t,
+    change: d,
+    previous: o,
+    label: m.UE.optedIn(n),
+    location: r
+  }), P(e), p.default.track(g.rMx.CHANNEL_LIST_UPDATED, O(y({}, (0, s.hH)(e), (0, s.v_)(f.Z.getChannel(t))), {
     action_type: n ? "add" : "remove",
     location: r
   }))
@@ -122,7 +129,14 @@ function S(e, t, n, r) {
     guildId: e,
     channelId: t,
     settings: d
-  }), (0, m.jz)(e, t, d, o, m.UE.optedIn(n), r), P(e), p.default.track(g.rMx.CHANNEL_LIST_UPDATED, O(y({}, (0, s.hH)(e), (0, s.v_)(f.Z.getChannel(t))), {
+  }), (0, m.jz)({
+    guildId: e,
+    channelId: t,
+    change: d,
+    previous: o,
+    label: m.UE.optedIn(n),
+    location: r
+  }), P(e), p.default.track(g.rMx.CHANNEL_LIST_UPDATED, O(y({}, (0, s.hH)(e), (0, s.v_)(f.Z.getChannel(t))), {
     action_type: n ? "add" : "remove",
     location: r
   }))

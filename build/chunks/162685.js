@@ -1,15 +1,18 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  w: () => r
+  w: () => a
 });
-let r = (0, n(818083).B)({
+var r = n(818083),
+  i = n(987338);
+let a = (0, r.B)({
   kind: "user",
   id: "2025-03_app_dm_no_push",
   label: "Activity DM No Push",
   defaultConfig: {
     enabled: !1
   },
+  commonTriggerPoint: i.$P.CONNECTION_OPEN,
   treatments: [{
     id: 1,
     label: "Disables push notifications for activities, enables opt-in switch",

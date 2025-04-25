@@ -16,12 +16,13 @@ let g = t => {
   let {
     onClose: e,
     channelId: n,
-    transitionState: g
-  } = t, f = (0, l.e7)([c.ZP], () => c.ZP.getChannelMuteConfig(null, n)), b = t => {
-    r.Z.updateChannelOverrideSettings(null, n, (0, u.u9)(t), s.ZB.Muted)
+    applicationId: g,
+    transitionState: f
+  } = t, b = (0, l.e7)([c.ZP], () => c.ZP.getChannelMuteConfig(null, n)), p = t => {
+    r.Z.updateAppDMOverrideSettings(null, n, g, (0, u.u9)(t), s.ZB.Muted)
   };
   return (0, i.jsxs)(a.Y0X, {
-    transitionState: g,
+    transitionState: f,
     size: a.CgR.SMALL,
     "aria-label": o.intl.string(o.t.uAmAiI),
     children: [(0, i.jsx)(a.hzk, {
@@ -40,8 +41,8 @@ let g = t => {
               value: n
             }
           }),
-          onChange: t => b(t.value),
-          value: null == f ? void 0 : f.selected_time_window
+          onChange: t => p(t.value),
+          value: null == b ? void 0 : b.selected_time_window
         })
       })
     }), (0, i.jsx)(a.olH, {

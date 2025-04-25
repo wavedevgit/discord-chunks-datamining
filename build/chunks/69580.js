@@ -399,7 +399,8 @@ function eb(e) {
             integrationType: null != e4 ? e4 : void 0
           });
           eU((0, Y.d)(e)), eg === z.s.NONE && e.authorized && !ts && tc(!0), (0, S.yw)(eo.rMx.OAUTH2_AUTHORIZE_VIEWED, {
-            application_id: e.application.id
+            application_id: e.application.id,
+            mobile_push_notification_default_setting: !1
           })
         } catch (n) {
           let {
@@ -430,7 +431,8 @@ function eb(e) {
       application_id: U,
       integration_type: e4,
       scopes: tt,
-      permissions: tr.toString()
+      permissions: tr.toString(),
+      mobile_push_notification_default_setting: !1
     }))
   }, [U, e4, tr, tt, eG]), i.useEffect(() => {
     if (null == eG && (!e6 || null != e8) && ek)
