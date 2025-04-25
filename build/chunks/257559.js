@@ -14,8 +14,8 @@ var i = n(200651),
   f = n(372900),
   g = n(726521),
   m = n(294218),
-  h = n(699516),
-  b = n(594174),
+  b = n(699516),
+  h = n(594174),
   p = n(630388),
   O = n(970257),
   y = n(981631),
@@ -136,7 +136,7 @@ class _ extends r.PureComponent {
 let Z = {
   confirmPin: function(e, t) {
     (0, o.h7j)(n => {
-      let r, l = (0, u.F6)(e, b.default, h.Z);
+      let r, l = (0, u.F6)(e, h.default, b.Z);
       return r = e.isPrivate() ? E.intl.string(E.t.hMRngI) : E.intl.formatToPlainString(E.t["3IRluL"], {
         channelName: l
       }), (0, i.jsx)(f.Z.Provider, {

@@ -1,6 +1,6 @@
 /** Chunk was on 21924 **/
 n.d(t, {
-  Z: () => _
+  Z: () => h
 });
 var r = n(200651),
   l = n(192379),
@@ -12,32 +12,32 @@ var r = n(200651),
   d = n(359993),
   u = n(146078),
   m = n(881998),
-  x = n(709054),
-  p = n(388032),
+  p = n(709054),
+  x = n(388032),
   b = n(711845),
-  h = n(970952);
-let _ = e => {
+  _ = n(970952);
+let h = e => {
   var t, n;
   let {
-    entry: _
+    entry: h
   } = e, {
     name: f
-  } = _, g = (0, i.e7)([m.Z], () => {
+  } = h, g = (0, i.e7)([m.Z], () => {
     let e = m.Z.getApps();
-    return null != e ? e.find(e => e.application.id === _.id) : null
-  }), v = null != (n = _.getIconURL(40)) ? n : h, j = (0, d.Z)({
-    application: _
+    return null != e ? e.find(e => e.application.id === h.id) : null
+  }), v = null != (n = h.getIconURL(40)) ? n : _, j = (0, d.Z)({
+    application: h
   }), y = l.useRef(!1);
   l.useEffect(() => {
     y.current || (o.Z.fetch(), y.current = !0)
   }, []);
-  let O = null != g ? x.default.extractTimestamp(g.id) : void 0;
+  let O = null != g ? p.default.extractTimestamp(g.id) : void 0;
   return (0, r.jsxs)("div", {
     className: b.container,
     children: [(0, r.jsx)(a.X6q, {
       className: b.header,
       variant: "heading-sm/semibold",
-      children: p.intl.string(p.t["aYfK//"])
+      children: x.intl.string(x.t["aYfK//"])
     }), (0, r.jsx)("div", {
       className: b.appContainer,
       children: (0, r.jsxs)("div", {
@@ -72,11 +72,11 @@ let _ = e => {
             children: [(0, r.jsx)(a.Text, {
               color: "text-normal",
               variant: "text-md/normal",
-              children: null == (t = _.bot) ? void 0 : t.tag
+              children: null == (t = h.bot) ? void 0 : t.tag
             }), null != O && (0, r.jsx)(a.Text, {
               color: "text-normal",
               variant: "text-md/normal",
-              children: p.intl.formatToPlainString(p.t.C9rUOz, {
+              children: x.intl.formatToPlainString(x.t.C9rUOz, {
                 authorizedAt: O
               })
             })]

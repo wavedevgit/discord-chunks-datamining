@@ -16,12 +16,12 @@ let u = e => {
       data: {
         title: u,
         subtitle: m,
-        placeholder: x,
-        rows: p,
+        placeholder: p,
+        rows: x,
         character_limit: b,
-        pattern: h
+        pattern: _
       },
-      onChange: _,
+      onChange: h,
       initialText: f,
       isRequired: g
     } = e, v = l.useRef(a.Z.reactParserFor((t = function(e) {
@@ -58,15 +58,15 @@ let u = e => {
       y(null != (e = null == f ? void 0 : f.value) ? e : "")
     }, [f]);
     let I = l.useCallback(e => {
-      let t = null != h ? new RegExp(h) : null;
-      null == t || t.test(e) ? null != e && (Z(null), y(e), _({
+      let t = null != _ ? new RegExp(_) : null;
+      null == t || t.test(e) ? null != e && (Z(null), y(e), h({
         value: e,
         isValid: !0
-      })) : (Z(s.intl.string(s.t["24xrGR"])), _({
+      })) : (Z(s.intl.string(s.t["24xrGR"])), h({
         value: e,
         isValid: !1
       }))
-    }, [_, h]);
+    }, [h, _]);
     return (0, r.jsxs)("div", {
       className: d.marginBottom8,
       children: [null != u && (0, r.jsx)("div", {
@@ -83,8 +83,8 @@ let u = e => {
         onChange: I,
         value: j,
         error: O,
-        rows: p,
-        placeholder: x,
+        rows: x,
+        placeholder: p,
         autoFocus: !0
       }), null != m && (0, r.jsx)("div", {
         children: (0, r.jsx)(i.Text, {

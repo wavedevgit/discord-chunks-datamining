@@ -12,19 +12,19 @@ var r = n(200651),
   d = n(930282),
   u = n(464891),
   m = n(267128),
-  x = n(25015),
-  p = n(367814),
+  p = n(25015),
+  x = n(367814),
   b = n(592125),
-  h = n(217702),
-  _ = n(388032),
+  _ = n(217702),
+  h = n(388032),
   f = n(782544);
 let g = e => {
   var t;
   let {
     message: n
-  } = e, g = (0, s.ZP)(n), v = null != (t = n.getGuildId()) ? t : void 0, j = (0, p.Z)(g), y = (0, i.e7)([b.Z], () => b.Z.getChannel(n.channel_id)), O = l.useMemo(() => (0, o.Z)(n), [n]), {
+  } = e, g = (0, s.ZP)(n), v = null != (t = n.getGuildId()) ? t : void 0, j = (0, x.Z)(g), y = (0, i.e7)([b.Z], () => b.Z.getChannel(n.channel_id)), O = l.useMemo(() => (0, o.Z)(n), [n]), {
     content: Z
-  } = (0, x.Z)(O, {
+  } = (0, p.Z)(O, {
     hideSimpleEmbedContent: !1
   }), I = l.useCallback(() => {
     let {
@@ -33,7 +33,7 @@ let g = e => {
     } = (0, m.f)(n, Z, !1, !1, "", {
       leadingIconClass: f.attachmentIcon,
       trailingIconClass: f.attachmentIcon,
-      iconSize: h.WW
+      iconSize: _.WW
     });
     return (0, r.jsxs)("div", {
       className: f.contentContainer,
@@ -48,7 +48,7 @@ let g = e => {
     children: [(0, r.jsx)(a.X6q, {
       className: f.header,
       variant: "heading-sm/semibold",
-      children: _.intl.string(_.t.iouM3d)
+      children: h.intl.string(h.t.iouM3d)
     }), (0, r.jsx)(a.Ttm, {
       className: f.messagePreviewContainer,
       children: (0, r.jsx)(c.Z, {
