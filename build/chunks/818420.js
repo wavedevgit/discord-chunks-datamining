@@ -42,13 +42,13 @@ function f(e) {
       children: [(0, i.jsx)(l.zxk, {
         size: l.zxk.Sizes.SMALL,
         onClick: O,
-        children: g.intl.string(g.t.NzNLv7)
+        children: g.intl.string(g.t.BwdeMz)
       }), (void 0 === b ? null != f : null != b) && (0, i.jsx)(l.zxk, {
         size: l.zxk.Sizes.SMALL,
         color: l.zxk.Colors.PRIMARY,
         look: l.zxk.Looks.LINK,
         onClick: S,
-        children: g.intl.string(g.t.Vskkdn)
+        children: g.intl.string(g.t["9zwziY"])
       })]
     })
   })

@@ -57,7 +57,7 @@ let b = e => {
           className: p.inventoryTitle,
           color: "text-secondary",
           variant: "text-xs/semibold",
-          children: d.intl.string(d.t["6wbgS0"]).toLocaleUpperCase()
+          children: d.intl.string(d.t["WfGV5+"])
         }), (0, n.jsxs)("div", {
           className: p.inventoryControls,
           children: [(0, n.jsxs)(s.P3F, {
@@ -67,14 +67,14 @@ let b = e => {
             onClick: () => r(null),
             children: [(0, n.jsx)(s.t6m, {}), (0, n.jsx)(s.Text, {
               variant: "text-xs/semibold",
-              children: d.intl.string(d.t["3i+W8/"])
+              children: d.intl.string(d.t.PoWNfX)
             })]
           }), (0, n.jsxs)(s.P3F, {
             className: p.inventoryControlsButton,
             onClick: i,
             children: [(0, n.jsx)(s.EOn, {}), (0, n.jsx)(s.Text, {
               variant: "text-xs/semibold",
-              children: d.intl.string(d.t.cFfWg4)
+              children: d.intl.string(d.t.pWG4zc)
             })]
           })]
         }), 0 !== c.length ? (0, n.jsx)("div", {
@@ -91,12 +91,7 @@ let b = e => {
           className: p.inventoryDescriptionTitle,
           color: "text-secondary",
           variant: "text-xs/semibold",
-          children: d.intl.string(d.t.SNAtBg).toLocaleUpperCase()
-        }), (0, n.jsx)(s.Text, {
-          className: p.inventoryDescription,
-          variant: "text-sm/normal",
-          color: "text-secondary",
-          children: d.intl.string(d.t["3gaDLS"])
+          children: d.intl.string(d.t["1vbbeX"])
         }), (0, n.jsx)("div", {
           className: p.list,
           children: o.map(e => (0, n.jsx)(b, {

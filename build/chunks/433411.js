@@ -52,7 +52,7 @@ function b(e) {
         className: l()({
           [f.buttonHighlighted]: x
         }),
-        children: h.intl.string(h.t["Tna/TU"])
+        children: h.intl.string(h.t.BVcYCw)
       }), y && (0, i.jsx)(a.zxk, {
         className: f.removeButton,
         color: a.zxk.Colors.PRIMARY,
@@ -61,7 +61,7 @@ function b(e) {
         onClick: function() {
           (0, p.PO)(null == n ? void 0 : n.id, null)
         },
-        children: (0, c.ad)(t, n) ? h.intl.string(h.t["GsW4/v"]) : h.intl.string(h.t.GReZ6O)
+        children: (0, c.ad)(t, n) ? h.intl.string(h.t.CHf9iI) : h.intl.string(h.t.OrokWl)
       })]
     }), t.isStaff() && I && (0, i.jsx)(_, {
       user: t

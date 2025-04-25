@@ -93,12 +93,12 @@ let v = () => 80,
       } = e,
       E = O(e, ["user", "profileEffect", "innerRef", "section", "isSelected"]);
     let C = (0, g.V)(l.id),
-      I = (0, a.e7)([d.Z], () => {
+      w = (0, a.e7)([d.Z], () => {
         let e = d.Z.getProduct(l.skuId);
         return (0, f.G1)(e)
       }),
-      S = (0, f.Yq)(l.skuId),
-      w = i.useRef(null),
+      I = (0, f.Yq)(l.skuId),
+      S = i.useRef(null),
       {
         accessibilityLabel: N,
         thumbnailPreviewSrc: Z,
@@ -109,7 +109,7 @@ let v = () => 80,
       T = (0, p.M)();
     return (0, n.jsxs)(_, P(y({
       className: !A || v || T ? void 0 : j.decorationGridItemChurned,
-      innerRef: null != o ? o : w,
+      innerRef: null != o ? o : S,
       isSelected: v
     }, E), {
       children: [(0, n.jsx)("img", {
@@ -120,7 +120,7 @@ let v = () => 80,
         className: j.presetEffectImg,
         src: Z,
         alt: k
-      }), s === h.$0.PURCHASE || s === h.$0.PREMIUM_PURCHASE && D ? null : S ? (0, n.jsx)(u.lBU, {
+      }), s === h.$0.PURCHASE || s === h.$0.PREMIUM_PURCHASE && D ? null : I ? (0, n.jsx)(u.lBU, {
         className: j.newBadge,
         text: (0, n.jsxs)("div", {
           className: j.newBadgeText,
@@ -130,7 +130,7 @@ let v = () => 80,
           }), b.intl.string(b.t.y2b7CA)]
         })
       }) : (0, n.jsx)(u.G2e, {
-        icon: I ? () => (0, n.jsx)(u.SrA, {
+        icon: w ? () => (0, n.jsx)(u.SrA, {
           size: "custom",
           color: "currentColor",
           width: 14,
@@ -185,7 +185,7 @@ let v = () => 80,
             }), (0, n.jsx)(u.Text, {
               variant: "text-xs/normal",
               color: "header-primary",
-              children: null != r ? b.intl.string(b.t.GJ3Fcn) : b.intl.string(b.t.PoWNfX)
+              children: null != r ? b.intl.string(b.t.CHf9iI) : b.intl.string(b.t.PoWNfX)
             })]
           }, m)).with(h.oT, () => (0, n.jsxs)(_, {
             style: p,

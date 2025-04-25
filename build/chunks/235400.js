@@ -69,7 +69,7 @@ function C(e) {
   }, [l, f]), Z = (0, p.M)(), H = () => null != M && (!(0, u.qS)(M) || k) || null === D ? (0, r.jsx)(o.zxk, {
     onClick: V,
     disabled: G,
-    children: A.intl.string(A.t.d6sv6u)
+    children: A.intl.string(A.t.Jh8fJy)
   }) : null == M && (k || !(0, u.G1)(x)) ? (0, r.jsx)(o.zxk, {
     className: N.modalFooterShopButton,
     onClick: () => F(null == x ? void 0 : x.skuId),
@@ -85,7 +85,7 @@ function C(e) {
       className: N.modalHeader,
       children: [(0, r.jsx)(o.X6q, {
         variant: "heading-lg/semibold",
-        children: A.intl.string(A.t["Tna/TU"])
+        children: A.intl.string(A.t.HykynZ)
       }), (0, r.jsx)(o.olH, {
         className: N.modalCloseButton,
         onClick: f

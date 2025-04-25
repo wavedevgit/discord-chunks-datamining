@@ -179,7 +179,7 @@ let A = 3,
         }), (0, r.jsx)(u.Text, {
           variant: "text-xs/normal",
           color: "header-primary",
-          children: (0, h.ad)(t, n) ? E.intl.string(E.t["GsW4/v"]) : E.intl.string(E.t.PoWNfX)
+          children: (0, h.ad)(t, n) ? E.intl.string(E.t.CHf9iI) : E.intl.string(E.t.PoWNfX)
         })]
       }, _)).with(m.oT, () => (0, r.jsxs)(w, {
         style: f,

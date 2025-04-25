@@ -64,7 +64,7 @@ function x(e) {
         className: l()({
           [_.buttonHighlighted]: j
         }),
-        children: b.intl.string(b.t["0nEVoK"])
+        children: b.intl.string(b.t["/dRfCQ"])
       }), (O || void 0 !== N ? null != N : null != v) && (0, i.jsx)(a.zxk, {
         className: _.removeButton,
         color: a.zxk.Colors.PRIMARY,
@@ -73,7 +73,7 @@ function x(e) {
         onClick: function() {
           (0, m.s6)(null, v, null == n ? void 0 : n.id)
         },
-        children: P ? b.intl.string(b.t.GJ3Fcn) : b.intl.string(b.t["Ld+f5e"])
+        children: P ? b.intl.string(b.t.CHf9iI) : b.intl.string(b.t.uMuafH)
       })]
     })
   })
