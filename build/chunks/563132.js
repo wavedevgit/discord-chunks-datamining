@@ -155,7 +155,10 @@ function K(e) {
   }, [B]);
   let {
     endsAt: e8
-  } = (0, m.Z)(), e7 = i.useRef(e8.isSame(s()(0)) ? null : e8);
+  } = (0, m.Z)({
+    forceFetch: !1,
+    excludeReverseTrial: !0
+  }), e7 = i.useRef(e8.isSame(s()(0)) ? null : e8);
   i.useEffect(() => {
     null != e7.current || e8.isSame(s()(0)) || (e7.current = e8)
   }, [e8]);

@@ -205,8 +205,9 @@ class V extends(r = s.yh) {
       excludeReverseTrial: n = !1
     } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, r = [], i = new Date;
     return null == (e = this.getForApplication(p.CL)) || e.forEach(e => {
-      let a = null != e.endsAt && e.endsAt < i;
-      e.type !== _.qc2.FRACTIONAL_REDEMPTION || a && !t || n && e.sourceType === _.kNB.REVERSE_TRIAL || r.push(e)
+      let a = null != e.endsAt && e.endsAt < i,
+        o = e.sourceType === _.kNB.REVERSE_TRIAL && n;
+      e.type !== _.qc2.FRACTIONAL_REDEMPTION || a && !t || o || r.push(e)
     }), r
   }
   isFractionalPremiumActive() {

@@ -20,7 +20,7 @@ var n = r(200651),
   j = r(233966),
   x = r(223223);
 
-function P(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -39,7 +39,7 @@ function P(e) {
   return e
 }
 
-function y(e, t) {
+function P(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -74,7 +74,7 @@ let v = () => 80,
       className: r,
       isSelected: i = !1
     } = e, l = O(e, ["children", "className", "isSelected"]);
-    return (0, n.jsx)(u.P3F, y(P({
+    return (0, n.jsx)(u.P3F, P(y({
       className: o()(j.effectGridItem, r, {
         [j.selected]: i
       })
@@ -107,7 +107,7 @@ let v = () => 80,
       D = m.ZP.canUseCollectibles(r),
       A = s === h.$0.PREMIUM_PURCHASE && !D,
       T = (0, p.M)();
-    return (0, n.jsxs)(_, y(P({
+    return (0, n.jsxs)(_, P(y({
       className: !A || v || T ? void 0 : j.decorationGridItemChurned,
       innerRef: null != o ? o : w,
       isSelected: v
@@ -175,7 +175,7 @@ let v = () => 80,
             items: x
           } = a[e];
           return (0, s.EQ)(x[f]).with(h.Tm, () => (0, n.jsxs)(_, {
-            style: P({}, p),
+            style: y({}, p),
             isSelected: !d,
             onSelect: () => o(null),
             children: [(0, n.jsx)(u.t6m, {
@@ -205,7 +205,7 @@ let v = () => 80,
             let r = i === e.id;
             return (0, n.jsx)(E, {
               user: t,
-              style: P({}, p),
+              style: y({}, p),
               section: g,
               profileEffect: e,
               innerRef: r ? l : void 0,
@@ -219,7 +219,7 @@ let v = () => 80,
             header: r
           } = a[e];
           return (0, n.jsx)("div", {
-            style: y(P({}, t), {
+            style: P(y({}, t), {
               height: "".concat(16, "px"),
               position: "absolute"
             }),
