@@ -43,7 +43,7 @@ function p(e) {
     results: g
   } = (0, d.Z)(h), [j, x] = r.useState(b("")), O = r.useCallback(e => x(b(e)), [x]), {
     queryMode: v
-  } = j, _ = r.useRef(), S = r.useRef(n), E = y !== _.current ? n : S.current;
+  } = j, _ = r.useRef(null), S = r.useRef(n), E = y !== _.current ? n : S.current;
   r.useEffect(() => {
     y !== _.current && (S.current = n), _.current = y
   }, [y, n]), r.useLayoutEffect(() => {
