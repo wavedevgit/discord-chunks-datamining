@@ -26,7 +26,7 @@ async function c(e, t, n) {
       },
       rejectWithError: !1
     });
-    r.Z.dispatch({
+    return c.ok && r.Z.dispatch({
       type: "CURRENT_USER_UPDATE",
       user: function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -46,9 +46,9 @@ async function c(e, t, n) {
         }
         return e
       }({}, l.default.getCurrentUser(), c.body)
-    })
+    }), c
   } catch (e) {
-    return
+    return e
   }
 }
 
