@@ -87,15 +87,15 @@ let x = s()(e => {
     } = e, {
       isPurchased: j
     } = (0, g.L)(n), y = (0, c.JA)("shop-variants-group-".concat(t.storeListingId, "-").concat(a)), {
-      onFocus: S
-    } = y, k = v(y, ["onFocus"]), P = l.useCallback(e => {
-      e.preventDefault(), e.stopPropagation(), (0, f.$)(t, a), S()
-    }, [S, t, a]);
+      onFocus: k
+    } = y, S = v(y, ["onFocus"]), P = l.useCallback(e => {
+      e.preventDefault(), e.stopPropagation(), (0, f.$)(t, a), k()
+    }, [k, t, a]);
     return (0, r.jsx)(b.ua7, {
       text: h.intl.string(h.t["/bUsx8"]),
       "aria-label": !1,
       shouldShow: !O && j,
-      children: e => (0, r.jsx)(b.P3F, C(_({}, k), {
+      children: e => (0, r.jsx)(b.P3F, C(_({}, S), {
         tag: "li",
         onMouseEnter: () => {
           var t;
@@ -145,9 +145,9 @@ let x = s()(e => {
       minimal: d,
       purchases: g,
       alternativeBackgroundColor: x
-    } = e, j = (0, f.o)(l, g), y = o.previewingVariantIndex, S = null == (t = l.variants) ? void 0 : t[j], k = null !== y ? null == (n = l.variants) ? void 0 : n[y] : void 0, P = (0, p.Z)("shop-variants-group-".concat(l.storeListingId), u.hy.HORIZONTAL);
-    if (null == S) return null;
-    let E = null != k ? k.variantLabel : null == S ? void 0 : S.variantLabel;
+    } = e, j = (0, f.o)(l, g), y = o.previewingVariantIndex, k = null == (t = l.variants) ? void 0 : t[j], S = null !== y ? null == (n = l.variants) ? void 0 : n[y] : void 0, P = (0, p.Z)("shop-variants-group-".concat(l.storeListingId), u.hy.HORIZONTAL);
+    if (null == k) return null;
+    let E = null != S ? S.variantLabel : null == k ? void 0 : k.variantLabel;
     return (0, r.jsx)(c.bG, {
       navigator: P,
       children: (0, r.jsx)(c.SJ, {

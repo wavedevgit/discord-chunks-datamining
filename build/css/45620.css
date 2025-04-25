@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: de818f1dd7b40174
+  Original File Name: b24d4893d7628c10
 **/
 .countDownWrapper_a1b7b8 {
     align-items: center;
@@ -1304,6 +1304,11 @@
     padding: 54px 0 72px 24px
 }
 
+.featuredBlockNameplate__08415 {
+    font-family: var(--font-headline);
+    font-size: 28px
+}
+
 .featuredBlockBadge__08415 {
     background-color: var(--white-500);
     color: var(--black-500);
@@ -1606,4 +1611,4 @@
     opacity: 0
 }
 
-/*# sourceMappingURL=de818f1dd7b40174.css.map*/
+/*# sourceMappingURL=b24d4893d7628c10.css.map*/
