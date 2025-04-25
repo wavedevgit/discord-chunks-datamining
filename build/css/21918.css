@@ -1,6 +1,6 @@
 /**
   Module ID: 21918
-  Original File Name: 0d1026bf2a6f3434
+  Original File Name: 6bfa94be32b4fc46
 **/
 .content__79cbe {
     border-radius: 8px;
@@ -9728,6 +9728,11 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     border-top: 1px solid var(--app-border-frame)
 }
 
+.visual-refresh .callContainer_cb9592.fullScreen_cb9592 {
+    border-right: none;
+    border-top: none
+}
+
 .emptyWrapper_f12222 {
     align-items: center;
     display: flex;
@@ -13164,4 +13169,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=0d1026bf2a6f3434.css.map*/
+/*# sourceMappingURL=6bfa94be32b4fc46.css.map*/
