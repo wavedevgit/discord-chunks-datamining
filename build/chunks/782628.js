@@ -23,5 +23,6 @@ e.exports = {
   clearAfterSelectOptionLabel: "clearAfterSelectOptionLabel_dbc4b7",
   profilePreview: "profilePreview_dbc4b7",
   labelSelectorContainer: "labelSelectorContainer_dbc4b7",
-  inputCustomStatusLabelRow: "inputCustomStatusLabelRow_dbc4b7"
+  inputCustomStatusLabelRow: "inputCustomStatusLabelRow_dbc4b7",
+  labelSelectorTooltip: "labelSelectorTooltip_dbc4b7"
 }

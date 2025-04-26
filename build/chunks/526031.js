@@ -56,6 +56,7 @@ function p(e) {
             }
             return e
           }({}, n), s = s = {
+            showLabelSelectorNewTooltip: !0,
             location: "CustomStatusTagsCoachmark",
             sourceAnalyticsLocations: p,
             prompt: t

@@ -1,98 +1,98 @@
 /** Chunk was on 69826 **/
-t.d(n, {
-  Z: () => I
+n.d(t, {
+  Z: () => v
 });
-var o = t(200651);
-t(192379);
-var i = t(442837),
-  c = t(481060),
-  r = t(468363),
-  a = t(353647),
-  l = t(158776),
-  s = t(885110),
-  d = t(63063),
-  u = t(369566),
-  f = t(29899),
-  p = t(151545),
-  m = t(744802),
-  h = t(493043),
-  _ = t(864141),
-  b = t(693408),
-  g = t(228168),
-  y = t(981631),
-  x = t(388032),
-  j = t(514656);
+var o = n(200651);
+n(192379);
+var r = n(442837),
+  i = n(481060),
+  c = n(468363),
+  a = n(353647),
+  l = n(158776),
+  s = n(885110),
+  d = n(63063),
+  u = n(369566),
+  f = n(29899),
+  p = n(151545),
+  m = n(744802),
+  b = n(493043),
+  h = n(864141),
+  _ = n(693408),
+  y = n(228168),
+  g = n(981631),
+  j = n(388032),
+  x = n(514656);
 
-function I(e) {
+function v(e) {
   let {
-    user: n,
-    currentUser: t,
-    displayProfile: I,
-    guildId: v,
-    subsection: A,
-    onClose: N
+    user: t,
+    currentUser: n,
+    displayProfile: v,
+    guildId: I,
+    subsection: O,
+    onClose: A
   } = e, {
-    voiceActivityStatusEnabled: T
-  } = (0, r.U)({
+    voiceActivityStatusEnabled: N
+  } = (0, c.U)({
     location: "UserProfileModalV2Activity"
   }), {
-    live: O,
-    recent: C,
-    stream: Z
-  } = (0, u.Z)(n.id), {
-    voiceChannel: P,
-    voiceActivity: S
+    live: P,
+    recent: T,
+    stream: C
+  } = (0, u.Z)(t.id), {
+    voiceChannel: S,
+    voiceActivity: Z
   } = (0, f.Z)({
-    userId: n.id,
-    guildId: v
-  }), w = (0, i.e7)([a.Z], () => a.Z.isFetchingUserOutbox(n.id)), M = n.id === t.id, U = (0, i.e7)([s.Z, l.Z], () => {
-    let e = M ? s.Z.getStatus() : l.Z.getStatus(n.id);
-    return e === c.Skl.OFFLINE || e === c.Skl.INVISIBLE
-  }), E = O.length > 0 || null != Z, V = T && null == Z && null == S && null != P, D = !U && (E || V), L = C.length > 0;
-  return D || L || !w ? (0, o.jsxs)(c.Ttm, {
-    className: j.scroller,
+    userId: t.id,
+    guildId: I
+  }), w = (0, r.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), M = t.id === n.id, U = (0, r.e7)([s.Z, l.Z], () => {
+    let e = M ? s.Z.getStatus() : l.Z.getStatus(t.id);
+    return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
+  }), E = P.length > 0 || null != C, V = N && null == C && null == Z && null != S, D = !U && (E || V), B = T.length > 0;
+  return D || B || !w ? (0, o.jsxs)(i.Ttm, {
+    className: x.scroller,
     fade: !0,
-    children: [D ? (0, o.jsxs)(b.Z, {
-      heading: x.intl.string(x.t.J6STd3),
-      children: [V && (0, o.jsx)(_.Z, {
-        user: n,
-        currentUser: t,
-        voiceChannel: P,
-        onClose: N
-      }), null != Z && (0, o.jsx)(h.Z, {
+    children: [D ? (0, o.jsxs)(_.Z, {
+      heading: j.intl.string(j.t.J6STd3),
+      children: [V && (0, o.jsx)(h.Z, {
+        user: t,
+        currentUser: n,
+        voiceChannel: S,
+        onClose: A
+      }), null != C && (0, o.jsx)(b.Z, {
         location: "UserProfileModalV2Activity",
-        user: n,
-        currentUser: t,
-        stream: Z,
-        onClose: N,
-        profileGuildId: null == I ? void 0 : I.guildId
-      }), O.map((e, i) => (0, o.jsx)(p.Z, {
-        user: n,
-        currentUser: t,
+        user: t,
+        currentUser: n,
+        stream: C,
+        onClose: A,
+        profileGuildId: null == v ? void 0 : v.guildId
+      }), P.map((e, r) => (0, o.jsx)(p.Z, {
+        user: t,
+        currentUser: n,
         activity: e,
-        onClose: N,
-        profileGuildId: null == I ? void 0 : I.guildId
-      }, "live-".concat(i)))]
-    }) : null, L ? (0, o.jsx)(b.Z, {
-      heading: x.intl.string(x.t.jzgEoK),
-      subheading: M ? x.intl.format(x.t["4bk9Ag"], {
-        learnMoreHook: (e, n) => (0, o.jsx)(c.eee, {
-          href: d.Z.getArticleURL(y.BhN.ACTIVITY_STATUS_SETTINGS),
+        onClose: A,
+        profileGuildId: null == v ? void 0 : v.guildId
+      }, "live-".concat(r)))]
+    }) : null, B ? (0, o.jsx)(_.Z, {
+      heading: j.intl.string(j.t.jzgEoK),
+      subheading: M ? j.intl.format(j.t["4bk9Ag"], {
+        learnMoreHook: (e, t) => (0, o.jsx)(i.eee, {
+          href: d.Z.getArticleURL(g.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
-        }, n)
+        }, t)
       }) : void 0,
-      scrollIntoView: A === g.Tb.RECENT_ACTIVITY,
-      children: C.map(e => (0, o.jsx)(m.Z, {
+      scrollIntoView: O === y.Tb.RECENT_ACTIVITY,
+      children: T.map(e => (0, o.jsx)(m.Z, {
         location: "UserProfileModalV2Activity",
-        user: n,
-        currentUser: t,
+        user: t,
+        currentUser: n,
         entry: e,
-        profileGuildId: null == I ? void 0 : I.guildId,
-        onClose: N
+        profileGuildId: null == v ? void 0 : v.guildId,
+        onClose: A
       }, e.id))
     }) : null]
   }) : (0, o.jsx)("div", {
-    className: j.spinner,
-    children: (0, o.jsx)(c.$jN, {})
+    className: x.spinner,
+    children: (0, o.jsx)(i.$jN, {})
   })
 }

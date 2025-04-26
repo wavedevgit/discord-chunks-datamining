@@ -1,6 +1,6 @@
 /**
   Module ID: 69826
-  Original File Name: 8479efae202fcb7c
+  Original File Name: 56fb0a9197189e22
 **/
 .textarea__9daae {
     background-color: transparent;
@@ -568,6 +568,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    height: 100%;
     overflow: hidden
 }
 
@@ -581,6 +582,10 @@
 .tabBarItem__28fdc {
     border: 1px solid var(--user-profile-border);
     border-radius: var(--radius-sm)
+}
+
+.tabBarPanel__28fdc {
+    overflow: hidden
 }
 
 .scroller__28fdc {
@@ -676,6 +681,10 @@
 
 .custom-user-profile-theme .tabBar__37bfc .tabBarItem__37bfc:after {
     background: var(--header-primary)
+}
+
+.tabBarPanel__37bfc {
+    overflow: hidden
 }
 
 .root__9c3be {
@@ -813,4 +822,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=8479efae202fcb7c.css.map*/
+/*# sourceMappingURL=56fb0a9197189e22.css.map*/
