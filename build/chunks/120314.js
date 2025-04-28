@@ -35,7 +35,8 @@ t.a(e, async function(e, r) {
       underline: d.v6,
       strikethrough: d.nY,
       mention: g.p,
-      heading: s.X
+      heading: s.X,
+      small: s.x
     };
 
     function m(e) {
