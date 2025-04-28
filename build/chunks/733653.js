@@ -1,29 +1,45 @@
 /** Chunk was on 85831 **/
 t.d(n, {
-  r: () => o
+  r: () => c
 }), t(49124);
 var r = t(200651);
 t(192379);
 var l = t(481060),
-  i = t(312539);
+  i = t(823379),
+  u = t(312539);
 
-function o(e) {
+function c(e) {
   let {
     type: n,
     value: t,
-    children: o
+    children: c
   } = e;
   switch (n) {
     case "normal":
       return (0, r.jsx)(l.eee, {
         href: t.url,
         title: t.title,
-        children: o
+        children: c
       });
     case "mention":
-      if ("Channel" in t) return (0, r.jsx)(i.m, {
-        id: t.channel_id
-      });
-      return JSON.stringify(t)
+      switch (t.type) {
+        case "channel":
+        case "message":
+          let {
+            value: {
+              channel_id: o,
+              message_id: a
+            }
+          } = t;
+          return (0, r.jsx)(u.d, {
+            channelId: o,
+            messageId: a
+          });
+        case "attachment":
+          return JSON.stringify(t.value)
+      }
+      break;
+    default:
+      (0, i.vE)(n)
   }
 }

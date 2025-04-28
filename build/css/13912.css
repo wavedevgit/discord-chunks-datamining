@@ -1,6 +1,6 @@
 /**
   Module ID: 13912
-  Original File Name: 5c28f0ef32f120d9
+  Original File Name: 785d47a682286bf3
 **/
 .emojiErrorItem__67954 {
     align-items: center;
@@ -90,4 +90,33 @@ main {
     gap: var(--space-sm)
 }
 
-/*# sourceMappingURL=5c28f0ef32f120d9.css.map*/
+.emptyState_db78b7 {
+    gap: var(--space-md);
+    height: 100%;
+    padding: var(--space-xl)
+}
+
+.dropZone_db78b7,.emptyState_db78b7 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column
+}
+
+.dropZone_db78b7 {
+    align-items: center;
+    background: var(--background-secondary);
+    border: 1px dashed var(--interactive-muted);
+    border-radius: var(--radius-md);
+    flex-grow: 1;
+    gap: var(--space-lg);
+    justify-content: center;
+    padding: calc(var(--space-xl)*2);
+    position: relative
+}
+
+.dropZone_db78b7:hover {
+    background: var(--background-modifier-hover);
+    border-color: var(--interactive-active)
+}
+
+/*# sourceMappingURL=785d47a682286bf3.css.map*/
