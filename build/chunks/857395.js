@@ -1,19 +1,14 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => E
+  Z: () => f
 });
-var r = n(200651),
-  i = n(192379),
-  a = n(442837),
-  o = n(481060),
-  s = n(249842),
-  l = n(838367),
-  c = n(576306),
-  u = n(83474),
-  d = n(914620);
+var r = n(200651);
+n(192379);
+var i = n(481060),
+  a = n(914620);
 
-function f(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,20 +17,20 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
 }
 
-function p(e, t) {
+function l(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,15 +41,15 @@ function p(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function c(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : l(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e, t) {
+function u(e, t) {
   if (null == e) return {};
-  var n, r, i = g(e, t);
+  var n, r, i = d(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,7 +57,7 @@ function m(e, t) {
   return i
 }
 
-function g(e, t) {
+function d(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -70,48 +65,22 @@ function g(e, t) {
   return i
 }
 
-function E(e) {
+function f(e) {
   var {
     guildId: t,
-    channelId: n,
-    messageId: f,
-    name: p,
-    position: g = "right",
-    onClose: E
-  } = e, b = m(e, ["guildId", "channelId", "messageId", "name", "position", "onClose"]);
-  let y = (0, c.h)(),
-    {
-      unavailable: v,
-      guild: O
-    } = (0, a.cj)([l.Z], () => ({
-      guild: l.Z.getGuild(t),
-      unavailable: l.Z.hasFetchFailed(t)
-    }), [t]),
-    I = null != O,
-    S = i.useCallback(async () => {
-      if (!y) try {
-        I || await (0, s.P)(t)
-      } catch (e) {}
-    }, [y, I, t]);
-  return v ? (0, r.jsx)(o.yRy, h(_({
-    position: "right",
-    renderPopout: e => (0, r.jsx)(u.SK, {})
-  }, b), {
-    clickTrap: !0
-  })) : (0, r.jsx)(o.yRy, _({
-    position: g,
-    preload: S,
+    name: n,
+    position: o = "right",
+    onClose: l
+  } = e, d = u(e, ["guildId", "name", "position", "onClose"]);
+  return (0, r.jsx)(i.yRy, s({
+    position: o,
     clickTrap: !0,
-    renderPopout: e => y ? (0, r.jsx)(d.Z, h(_({}, e), {
+    renderPopout: e => (0, r.jsx)(a.Z, c(s({}, e), {
       onClose: () => {
-        e.closePopout(), null == E || E()
+        e.closePopout(), null == l || l()
       },
       guildId: t,
-      name: p
-    })) : null == O ? (0, r.jsx)(r.Fragment, {}) : (0, r.jsx)(u.sK, h(_({}, e), {
-      guild: O,
-      channelId: n,
-      messageId: f
+      name: n
     }))
-  }, b))
+  }, d))
 }

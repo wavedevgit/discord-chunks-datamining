@@ -20,16 +20,12 @@ function c(e) {
     children: t
   });
   let {
-    guild_id: o,
-    channel_id: s,
-    message_id: c
+    guild_id: o
   } = n;
   return null == o ? (0, r.jsx)(i.eee, {
     children: t
   }) : (0, r.jsx)(l.Z, {
     guildId: o,
-    channelId: s,
-    messageId: c,
     name: a,
     children: e => {
       var n, l;
