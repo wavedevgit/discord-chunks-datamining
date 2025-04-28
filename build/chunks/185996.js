@@ -36,7 +36,7 @@ let s = new r.Yd("libdiscore"),
 function u() {
   return !!l.getCurrentConfig({
     location: "blockedDomains"
-  }).enabled && ((0, i.u2)() || s.warn("isLibdiscoreBlockedDomainsEnabled called but libdiscore is not loaded"), !0)
+  }).enabled && (!!(0, i.X6)() || (s.warn("isLibdiscoreBlockedDomainsEnabled called but libdiscore is not loaded"), !1))
 }
 
 function d() {
