@@ -56,9 +56,9 @@ var a, r, l = n(192379),
   L = n(525169),
   A = n(433517),
   D = n(190558),
-  z = n(231338);
+  M = n(231338);
 
-function M(e) {
+function z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -137,7 +137,7 @@ function X(e) {
   let t = V[e];
   return {
     name: e,
-    colors: Object.fromEntries(Object.values(z.BR).map(e => [e, {
+    colors: Object.fromEntries(Object.values(M.BR).map(e => [e, {
       color: t[e].raw,
       opacity: t[e].opacity
     }])),
@@ -148,7 +148,7 @@ function X(e) {
 function K(e, t, n, a, r) {
   return {
     name: t,
-    colors: U(M({}, e.colors), {
+    colors: U(z({}, e.colors), {
       [r]: {
         color: n,
         opacity: a
@@ -159,7 +159,7 @@ function K(e, t, n, a, r) {
 }
 
 function Y(e) {
-  return U(M({}, e), {
+  return U(z({}, e), {
     highlight: !e.highlight
   })
 }
@@ -246,55 +246,55 @@ function er(e) {
 }
 
 function el(e, t, n) {
-  n(n => null == n.scales.find(t => t.name === e) ? n : U(M({}, n), {
+  n(n => null == n.scales.find(t => t.name === e) ? n : U(z({}, n), {
     scales: n.scales.map(n => n.name === e ? t(n) : n)
   }))
 }
 
 function ei(e, t, n) {
-  el(e, e => U(M({}, e), {
+  el(e, e => U(z({}, e), {
     darkness: t
   }), n)
 }
 
 function es(e, t, n) {
-  el(e, e => U(M({}, e), {
+  el(e, e => U(z({}, e), {
     lightness: t
   }), n)
 }
 
 function eo(e, t, n) {
-  el(e, e => U(M({}, e), {
+  el(e, e => U(z({}, e), {
     base: t
   }), n)
 }
 
 function ec(e, t, n) {
-  el(e, e => U(M({}, e), {
+  el(e, e => U(z({}, e), {
     colorSpace: t
   }), n)
 }
 
 function ed(e, t, n) {
-  el(e, e => U(M({}, e), {
+  el(e, e => U(z({}, e), {
     easingStrength: t
   }), n)
 }
 
 function eu(e, t, n) {
-  el(e, e => U(M({}, e), {
+  el(e, e => U(z({}, e), {
     showColumnarPalettePreview: t
   }), n)
 }
 
 function em(e, t, n) {
-  el(e, e => U(M({}, e), {
+  el(e, e => U(z({}, e), {
     useP3ColorSpace: t
   }), n)
 }
 
 function ex(e, t, n) {
-  el(e, e => U(M({}, e), {
+  el(e, e => U(z({}, e), {
     steps: t
   }), n)
 }

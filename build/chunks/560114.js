@@ -22,8 +22,8 @@ var l, i = n(200651),
   N = n(100527),
   _ = n(906732),
   S = n(835473),
-  b = n(447003),
-  E = n(471445),
+  E = n(447003),
+  b = n(471445),
   T = n(259473),
   O = n(600164),
   y = n(687516),
@@ -193,7 +193,7 @@ class em extends(l = r.PureComponent) {
     let {
       inviteChannel: e
     } = this.props;
-    return (0, b.Z)(e) ? (0, i.jsxs)("div", {
+    return (0, E.Z)(e) ? (0, i.jsxs)("div", {
       className: ei.warningContainer,
       children: [(0, i.jsx)(x.P4T, {
         size: "custom",
@@ -229,7 +229,7 @@ class em extends(l = r.PureComponent) {
       }) : null != l ? el.intl.string(el.t.JKV4FB) : (null == u ? void 0 : u.isGuildStageVoice()) ? el.intl.string(el.t.zTrsHx) : el.intl.format(el.t.NvVBJS, {
         name: t.toString()
       }), null != u) {
-      let e = (0, E.KS)(u, t);
+      let e = (0, b.KS)(u, t);
       null != e && (m = (0, i.jsxs)("div", {
         className: ei.headerChannelContainer,
         children: [(0, i.jsx)(e, {
@@ -608,7 +608,7 @@ let ep = r.forwardRef(function(e, t) {
     transitionState: g,
     onClose: v,
     welcomeToServer: x,
-    page: E,
+    page: b,
     analyticsLocation: O
   } = e, {
     analyticsLocations: y
@@ -659,7 +659,7 @@ let ep = r.forwardRef(function(e, t) {
   }, [Q, s, a, c, w]);
   let [ei] = (0, S.Z)(null != c ? [c] : []), er = (0, T.Z)({
     guildId: V
-  }), es = null != F ? F.code : void 0, ea = null == F ? void 0 : F.maxAge, eo = null == F ? void 0 : F.maxUses, ed = null == F ? void 0 : F.temporary, ep = a.vanityURLCode, ev = null != ep && ep.length > 0, ex = !X && !(null == C ? void 0 : C.isGuildVocal()) && ev, eI = (null == C ? void 0 : C.type) === et.d4z.GUILD_VOICE, ef = null != (n = null == F ? void 0 : F.flags) ? n : 0, ej = (0, b.Z)(C);
+  }), es = null != F ? F.code : void 0, ea = null == F ? void 0 : F.maxAge, eo = null == F ? void 0 : F.maxUses, ed = null == F ? void 0 : F.temporary, ep = a.vanityURLCode, ev = null != ep && ep.length > 0, ex = !X && !(null == C ? void 0 : C.isGuildVocal()) && ev, eI = (null == C ? void 0 : C.type) === et.d4z.GUILD_VOICE, ef = null != (n = null == F ? void 0 : F.flags) ? n : 0, ej = (0, E.Z)(C);
   X || (null == el ? void 0 : el.invite_code) == null || (es = el.invite_code);
   let [eN, e_] = r.useState({
     query: "",
@@ -669,23 +669,23 @@ let ep = r.forwardRef(function(e, t) {
     temporary: null != ed && ed,
     networkError: void 0,
     showVanityURL: ex,
-    currentPage: null != E ? E : ee.RV.MAIN,
+    currentPage: null != b ? b : ee.RV.MAIN,
     lastPage: void 0,
     flags: ef
   }), eS = r.useCallback(e => {
     e_(t => eu({}, t, e))
-  }, []), eb = r.useCallback(e => {
+  }, []), eE = r.useCallback(e => {
     eS({
       currentPage: e,
       lastPage: eN.currentPage
     })
-  }, [eN.currentPage, eS]), eE = eI && !ex && !J && !ej, {
+  }, [eN.currentPage, eS]), eb = eI && !ex && !J && !ej, {
     enabled: eT
   } = P.o.useExperiment({
     guildId: null == a ? void 0 : a.id,
     location: "acc417_3"
   }, {
-    autoTrackExposure: eE
+    autoTrackExposure: eb
   }), {
     maxAge: eO,
     maxUses: ey,
@@ -697,8 +697,8 @@ let ep = r.forwardRef(function(e, t) {
       currentPage: e,
       lastPage: t
     } = eN;
-    e === ee.RV.SETTINGS && null != t ? eb(t) : v()
-  }, [eb, eN, v]), eA = r.useCallback(() => {
+    e === ee.RV.SETTINGS && null != t ? eE(t) : v()
+  }, [eE, eN, v]), eA = r.useCallback(() => {
     let e = null == C ? void 0 : C.id;
     0 === ey && 0 === eO && !eC && ex ? eS({
       networkError: void 0,
@@ -753,11 +753,11 @@ let ep = r.forwardRef(function(e, t) {
       transitionState: g,
       onClose: v,
       canShowVanityURL: ex,
-      isGuestInviteCreationToggleEnabled: eT && eE,
-      shouldHideTemporaryInviteToggle: eT && eE || eV,
+      isGuestInviteCreationToggleEnabled: eT && eb,
+      shouldHideTemporaryInviteToggle: eT && eb || eV,
       modalState: eN,
       setModalState: eS,
-      changePage: eb,
+      changePage: eE,
       onGenerateNewLink: eA,
       handleDone: ew,
       isApplicationBypassToggleEnabled: eL && !J

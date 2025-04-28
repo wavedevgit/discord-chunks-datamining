@@ -16,15 +16,15 @@ var l = n(200651),
   m = n(657305),
   p = n(835473),
   v = n(471445),
-  x = n(114487),
-  I = n(313201),
-  f = n(925329),
-  j = n(65361),
+  x = n(313201),
+  I = n(925329),
+  f = n(65361),
+  j = n(60034),
   N = n(246946),
   _ = n(626135),
   S = n(934415),
-  b = n(572004),
-  E = n(971130),
+  E = n(572004),
+  b = n(971130),
   T = n(366980),
   O = n(76234),
   y = n(981631),
@@ -98,7 +98,7 @@ let A = e => {
       color: "header-muted",
       lineClamp: 1,
       children: [i, t.name].join("\xa0\xa0•\xa0\xa0")
-    }), s = (0, v.KS)(n, t), a = (0, l.jsx)(x.b, {
+    }), s = (0, v.KS)(n, t), a = (0, l.jsx)(j.Ft, {
       guildId: t.id,
       guildName: t.name,
       guildIcon: t.icon,
@@ -121,7 +121,7 @@ let A = e => {
       {
         guildProfile: r,
         fetchGuildProfile: s
-      } = (0, j.u)(n.id);
+      } = (0, f.u)(n.id);
     i.useEffect(() => {
       s()
     }, [s]), t = null === r ? null : (0, l.jsxs)("div", {
@@ -150,7 +150,7 @@ let A = e => {
         })]
       })]
     });
-    let a = (0, l.jsx)(x.b, {
+    let a = (0, l.jsx)(j.Ft, {
       guildId: n.id,
       guildName: n.name,
       guildIcon: n.icon,
@@ -176,7 +176,7 @@ let A = e => {
           children: n.tags.join("\xa0\xa0•\xa0\xa0")
         })
       }),
-      s = (0, l.jsx)(f.Z, {
+      s = (0, l.jsx)(I.Z, {
         game: n,
         className: P.inviteIcon
       });
@@ -243,7 +243,7 @@ function U(e) {
     applicationId: m,
     getInviteKey: p,
     sendInvite: v,
-    canUseVanityURL: x,
+    canUseVanityURL: I,
     disabled: f,
     hasSelection: j,
     options: S,
@@ -253,14 +253,14 @@ function U(e) {
     isTemporaryInviteAllowed: M,
     setError: U,
     analyticsLocation: F
-  } = e, [B, z] = i.useState(!1), [G, H] = i.useState(!1), q = i.useRef(null), [W] = (0, d.Wu)([N.Z], () => [N.Z.hideInstantInvites]), Y = (0, I.Dt)(), K = (0, I.Dt)(), X = (0, I.Dt)(), J = i.useMemo(() => x && null != r.vanityURLCode ? (0, T.Z)(r.vanityURLCode, !1) : null, [r, x]), Q = i.useCallback(async () => {
+  } = e, [B, z] = i.useState(!1), [G, H] = i.useState(!1), q = i.useRef(null), [W] = (0, d.Wu)([N.Z], () => [N.Z.hideInstantInvites]), Y = (0, x.Dt)(), K = (0, x.Dt)(), X = (0, x.Dt)(), J = i.useMemo(() => I && null != r.vanityURLCode ? (0, T.Z)(r.vanityURLCode, !1) : null, [r, I]), Q = i.useCallback(async () => {
     var e, t;
     if (f) return;
     null !== q.current && clearTimeout(q.current);
     let n = await p();
     o()(null != n, "Invite key could not be determined.");
     let l = (0, T.Z)(n);
-    return (0, b.JG)(l, () => {
+    return (0, E.JG)(l, () => {
       z(!0), q.current = setTimeout(() => {
         z(!1), q.current = null
       }, 1e3)
@@ -324,10 +324,10 @@ function U(e) {
         } = t;
         return n === e.max_uses
       });
-    return null == t || null == n ? null : t.value === E.ZP.INVITE_OPTIONS_FOREVER.value && n.value === E.ZP.INVITE_OPTIONS_UNLIMITED.value ? C.intl.string(C.t["5u4A6e"]) : t.value !== E.ZP.INVITE_OPTIONS_FOREVER.value && n.value !== E.ZP.INVITE_OPTIONS_UNLIMITED.value ? C.intl.formatToPlainString(C.t["Z5Vt5+"], {
+    return null == t || null == n ? null : t.value === b.ZP.INVITE_OPTIONS_FOREVER.value && n.value === b.ZP.INVITE_OPTIONS_UNLIMITED.value ? C.intl.string(C.t["5u4A6e"]) : t.value !== b.ZP.INVITE_OPTIONS_FOREVER.value && n.value !== b.ZP.INVITE_OPTIONS_UNLIMITED.value ? C.intl.formatToPlainString(C.t["Z5Vt5+"], {
       maxAge: t.label,
       maxUses: n.label
-    }) : n.value === E.ZP.INVITE_OPTIONS_UNLIMITED.value && t.value !== E.ZP.INVITE_OPTIONS_FOREVER.value ? t.label : n.value !== E.ZP.INVITE_OPTIONS_UNLIMITED.value && t.value === E.ZP.INVITE_OPTIONS_FOREVER.value ? n.label : null
+    }) : n.value === b.ZP.INVITE_OPTIONS_UNLIMITED.value && t.value !== b.ZP.INVITE_OPTIONS_FOREVER.value ? t.label : n.value !== b.ZP.INVITE_OPTIONS_UNLIMITED.value && t.value === b.ZP.INVITE_OPTIONS_FOREVER.value ? n.label : null
   }(S);
   return (0, l.jsxs)("div", {
     className: s()(t, P.footer),

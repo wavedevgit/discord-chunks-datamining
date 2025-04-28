@@ -10,7 +10,7 @@ var r = n(512722),
   a = n(809206),
   o = n(634894),
   c = n(295474),
-  d = n(993347),
+  d = n(74469),
   u = n(396402),
   m = n(442933),
   p = n(150039),
@@ -160,7 +160,7 @@ function Z() {
       pendingBio: F,
       currentBio: null != (L = null == M ? void 0 : M.bio) ? L : ""
     }, "bio"), er.length > 0 && (0, i.jsx)(d.Z, {
-      availableClans: er
+      availablePrimaryGuilds: er
     }), null != et && (0, i.jsx)(_.Z, {
       legacyUsername: et
     }, "legacy_username")]

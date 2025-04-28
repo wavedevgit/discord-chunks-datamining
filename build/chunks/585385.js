@@ -29,7 +29,7 @@ let h = e => {
     maxAge: N,
     maxUses: _,
     temporary: S,
-    flags: b
+    flags: E
   } = i;
   return (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsxs)(s.xBx, {
@@ -58,7 +58,7 @@ let h = e => {
       onGenerateNewLink: m,
       isGuestInviteCreationToggleEnabled: I,
       onSetInviteFlags: f,
-      inviteFlags: b
+      inviteFlags: E
     }), (0, l.jsx)(s.mzw, {
       className: c.settingsFooter,
       children: (0, l.jsx)(u.Z, {

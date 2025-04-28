@@ -1,6 +1,6 @@
 /**
   Module ID: 44114
-  Original File Name: 3c07bdedeffbc853
+  Original File Name: 7427937f40982a66
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -1277,7 +1277,8 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .header__7e777 {
-    line-height: 18px
+    line-height: 18px;
+    margin: -8px 0
 }
 
 .body__7e777 {
@@ -1286,13 +1287,13 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .container__7e777 .art__7e777 {
-    align-self: center;
-    background-image: url(/assets/442e9d125a9c073f.svg);
+    background-image: url(/assets/9847f3c3497afc87.svg);
     height: 57px;
-    left: 8px;
-    position: absolute;
-    top: -30px;
     width: 154px
+}
+
+.tryItText__7e777 {
+    color: var(--brand-500)
 }
 
 .container_cdb3b1 {
@@ -11137,40 +11138,26 @@ html .invoiceCancelRow_b9f95d {
     margin-top: var(--spacing-24)
 }
 
-.countContainer_dbf040 {
-    align-items: center;
-    direction: row;
-    display: flex;
-    gap: 4px
-}
-
-.dot_dbf040 {
-    background-color: var(--status-offline);
-    border-radius: 50%;
-    height: 8px;
-    width: 8px
-}
-
-.container_ac239d {
+.container_e7c728 {
     flex: 1;
     justify-content: space-between
 }
 
-.container_ac239d,.guildPrefixContainer_ac239d {
+.container_e7c728,.guildPrefixContainer_e7c728 {
     align-items: center;
     display: flex;
     min-width: 0
 }
 
-.guildPrefixContainer_ac239d {
+.guildPrefixContainer_e7c728 {
     justify-content: center
 }
 
-.guildPrefixIcon_ac239d {
+.guildPrefixIcon_e7c728 {
     flex: 1 0 auto
 }
 
-.details_ac239d {
+.details_e7c728 {
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
@@ -11178,7 +11165,7 @@ html .invoiceCancelRow_b9f95d {
     padding-left: 8px
 }
 
-.guildName_ac239d {
+.guildName_e7c728 {
     color: var(--header-primary);
     font-size: 16px;
     font-weight: 600;
@@ -11190,31 +11177,31 @@ html .invoiceCancelRow_b9f95d {
     width: 100%
 }
 
-.tag_ac239d {
+.tag_e7c728 {
     background-color: var(--bg-surface-raised);
     border: 1px solid var(--border-strong);
     flex: 0;
     padding: 4px 8px
 }
 
-.badge_ac239d {
+.badge_e7c728 {
     margin-right: 2px;
     vertical-align: top
 }
 
-.tagContainer_ac239d {
+.tagContainer_e7c728 {
     flex: 0 0 auto
 }
 
-.subtitle__48064 {
+.subtitle__105ba {
     margin-bottom: 16px
 }
 
-.select__48064,.selectPopout__48064 {
+.select__105ba,.selectPopout__105ba {
     gap: 8px
 }
 
-.newBadge__48064 {
+.newBadge__105ba {
     margin-left: var(--spacing-4)
 }
 
@@ -18561,4 +18548,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=3c07bdedeffbc853.css.map*/
+/*# sourceMappingURL=7427937f40982a66.css.map*/
