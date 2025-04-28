@@ -32,9 +32,9 @@ function N(e, t) {
   } = O.Z.useExperiment({
     guildId: null == o ? void 0 : o.guild_id,
     location: "useRingHangupItem"
-  }), E = !m || (null == n ? void 0 : n.length) === 0 || null == t, S = N && (null == o ? void 0 : o.guild_id) != null, A = null == l, C = null != l && l.type === j.fO.USER && l.ringing, U = [];
-  S && !E && (A || C) && U.push(u.z.RING_USER_TO_VC_NEW_BADGE);
-  let [D, L] = (0, v.US)(U), T = D === u.z.RING_USER_TO_VC_NEW_BADGE, {
+  }), E = !m || (null == n ? void 0 : n.length) === 0 || null == t, S = N && (null == o ? void 0 : o.guild_id) != null, A = null == l, C = null != l && l.type === j.fO.USER && l.ringing, D = [];
+  S && !E && (A || C) && D.push(u.z.RING_USER_TO_VC_NEW_BADGE);
+  let [U, L] = (0, v.US)(D), T = U === u.z.RING_USER_TO_VC_NEW_BADGE, {
     analyticsLocations: w
   } = (0, g.ZP)();
   return ((0, f.Z)({

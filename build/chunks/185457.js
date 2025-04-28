@@ -30,7 +30,8 @@ function f(e) {
   } = (0, r.ZP)();
   return Z === s.default.getId() || u.Z.hidePersonalInformation || O ? null : (0, i.jsx)(l.sNh, {
     id: "note",
-    label: m ? g.intl.string(g.t["WLKx//"]) : p ? g.intl.string(g.t["gs+qcH"]) : g.intl.string(g.t["1ZZttr"]),
+    label: m ? g.intl.string(g.t["WLKx//"]) : p ? g.intl.string(g.t.sHHsOD) : g.intl.string(g.t.Dglxra),
+    subtext: g.intl.string(g.t.r1BOdX),
     action: () => {
       (0, o.openUserProfileModal)({
         userId: t.id,
