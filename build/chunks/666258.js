@@ -102,7 +102,7 @@ let A = e => {
       guildId: t.id,
       guildName: t.name,
       guildIcon: t.icon,
-      iconSize: 32
+      iconSize: 40
     });
     return (0, l.jsx)(A, {
       inviteIcon: a,
@@ -114,7 +114,7 @@ let A = e => {
       subheading: r
     })
   },
-  R = e => {
+  M = e => {
     let t, {
         guild: n
       } = e,
@@ -154,7 +154,7 @@ let A = e => {
       guildId: n.id,
       guildName: n.name,
       guildIcon: n.icon,
-      iconSize: 32
+      iconSize: 40
     });
     return (0, l.jsx)(A, {
       inviteIcon: a,
@@ -162,7 +162,7 @@ let A = e => {
       subheading: t
     })
   },
-  M = e => {
+  R = e => {
     let {
       applicationId: t
     } = e, [n] = (0, p.Z)([t]);
@@ -178,6 +178,7 @@ let A = e => {
       }),
       s = (0, l.jsx)(I.Z, {
         game: n,
+        size: I.Z.Sizes.MEDIUM,
         className: P.inviteIcon
       });
     return (0, l.jsx)(A, {
@@ -193,12 +194,12 @@ function D(e) {
     channel: n,
     applicationId: i
   } = e;
-  return null != i ? (0, l.jsx)(M, {
+  return null != i ? (0, l.jsx)(R, {
     applicationId: i
   }) : null != n ? (0, l.jsx)(k, {
     guild: t,
     channel: n
-  }) : (0, l.jsx)(R, {
+  }) : (0, l.jsx)(M, {
     guild: t
   })
 }
@@ -249,8 +250,8 @@ function U(e) {
     options: S,
     setOptions: A,
     isApplicationBypassAllowed: k,
-    isGuestInviteAllowed: R,
-    isTemporaryInviteAllowed: M,
+    isGuestInviteAllowed: M,
+    isTemporaryInviteAllowed: R,
     setError: U,
     analyticsLocation: F
   } = e, [B, z] = i.useState(!1), [G, H] = i.useState(!1), q = i.useRef(null), [W] = (0, d.Wu)([N.Z], () => [N.Z.hideInstantInvites]), Y = (0, x.Dt)(), K = (0, x.Dt)(), X = (0, x.Dt)(), J = i.useMemo(() => I && null != r.vanityURLCode ? (0, T.Z)(r.vanityURLCode, !1) : null, [r, I]), Q = i.useCallback(async () => {
@@ -402,7 +403,7 @@ function U(e) {
           checked: S.flags === u.$.IS_APPLICATION_BYPASS,
           onChange: () => et(u.$.IS_APPLICATION_BYPASS)
         })]
-      }), R && (0, l.jsxs)(V, {
+      }), M && (0, l.jsxs)(V, {
         htmlFor: K,
         children: [(0, l.jsxs)("div", {
           className: P.advancedOptionContent,
@@ -422,7 +423,7 @@ function U(e) {
           checked: S.flags === u.$.IS_GUEST_INVITE,
           onChange: () => et(u.$.IS_GUEST_INVITE)
         })]
-      }), M && (0, l.jsxs)(V, {
+      }), R && (0, l.jsxs)(V, {
         htmlFor: X,
         children: [(0, l.jsxs)("div", {
           className: P.advancedOptionContent,

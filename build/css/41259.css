@@ -1,16 +1,20 @@
 /**
   Module ID: 41259
-  Original File Name: 6b78f41607b951aa
+  Original File Name: f30cc0059463baa8
 **/
-.modalContent__46773 {
+.modal__46773 {
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    padding-bottom: 12px;
-    padding-top: 24px
+    gap: var(--space-xl);
+    padding: var(--space-xl)
+}
+
+.modalContent__46773 {
+    display: contents
 }
 
 .header__46773 {
+    padding: unset;
     text-align: center
 }
 
@@ -72,30 +76,37 @@
 .iconPlaceholder__46773 {
     align-items: center;
     background-color: var(--bg-mod-subtle);
-    border: 1px dashed var(--bg-mod-strong);
-    border-radius: 50%;
     color: var(--interactive-muted);
     display: flex;
+    justify-content: center
+}
+
+.iconImage__46773,.iconPlaceholder__46773 {
+    border-radius: 50%;
     height: 100%;
-    justify-content: center;
     width: 100%
 }
 
 .iconImage__46773 {
-    border-radius: 50%;
-    height: 100%;
-    object-fit: cover;
-    width: 100%
+    object-fit: cover
 }
 
-.closeButtonWrapper__46773 {
+.closeButton__46773 {
+    padding: 0;
     position: absolute;
-    right: 12px;
-    top: 12px
+    right: 0;
+    top: 0
+}
+
+.footer__46773 {
+    border-radius: unset;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0
 }
 
 .cancelButton__46773 {
     color: var(--text-primary)
 }
 
-/*# sourceMappingURL=6b78f41607b951aa.css.map*/
+/*# sourceMappingURL=f30cc0059463baa8.css.map*/

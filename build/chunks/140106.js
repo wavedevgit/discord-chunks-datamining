@@ -7,14 +7,14 @@ n.d(t, {
 var l = n(200651);
 n(192379);
 var r = n(347715),
-  i = n(481060),
-  o = n(668781),
+  o = n(481060),
+  i = n(668781),
   a = n(493683),
-  c = n(100527),
-  s = n(346486),
+  s = n(100527),
+  c = n(346486),
   u = n(486324),
   d = n(388032);
-let p = (e, t) => (0, i.ZDy)(async () => {
+let p = (e, t) => (0, o.ZDy)(async () => {
     let {
       default: r
     } = await Promise.all([n.e("91689"), n.e("89289"), n.e("78701")]).then(n.bind(n, 28130));
@@ -41,7 +41,7 @@ let p = (e, t) => (0, i.ZDy)(async () => {
       uploadType: u.pC.AVATAR,
       showUpsellHeader: !1,
       modalTitle: d.intl.string(d.t["6yrpFR"]),
-      analyticsLocation: c.Z.GROUP_DM_ICON_EDITOR,
+      analyticsLocation: s.Z.GROUP_DM_ICON_EDITOR,
       analyticsLocations: t,
       allowRecentAvatarsSelection: !1
     }, n))
@@ -55,10 +55,10 @@ let p = (e, t) => (0, i.ZDy)(async () => {
     var t;
     if ((null == e || null == (t = e.body) ? void 0 : t.retry_after) != null) {
       let t = (0, r.Z)(new Date, e.body.retry_after);
-      o.Z.show({
+      i.Z.show({
         title: d.intl.string(d.t["Whhv4+"]),
         body: d.intl.format(d.t.VIJkAw, {
-          duration: (0, l.jsx)(s.Z, {
+          duration: (0, l.jsx)(c.Z, {
             showUnits: !0,
             deadline: t
           })

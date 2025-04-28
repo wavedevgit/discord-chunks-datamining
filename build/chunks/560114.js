@@ -33,8 +33,8 @@ var l, i = n(200651),
   w = n(199902),
   A = n(662594),
   k = n(592125),
-  R = n(984933),
-  M = n(341165),
+  M = n(984933),
+  R = n(341165),
   D = n(751771),
   L = n(496675),
   V = n(158776),
@@ -612,17 +612,17 @@ let ep = r.forwardRef(function(e, t) {
     analyticsLocation: O
   } = e, {
     analyticsLocations: y
-  } = (0, _.ZP)(N.Z.INSTANT_INVITE_MODAL), C = (0, m.e7)([U.Z, k.Z, R.ZP], () => {
+  } = (0, _.ZP)(N.Z.INSTANT_INVITE_MODAL), C = (0, m.e7)([U.Z, k.Z, M.ZP], () => {
     if (null != s) return s;
     let e = U.Z.getChannelId(),
       t = null == e || (0, en.AB)(e) ? void 0 : k.Z.getChannel(e);
-    return (null == t ? void 0 : t.isThread()) && (t = k.Z.getChannel(t.parent_id)), null != t ? t : R.ZP.getDefaultChannel(a.id, !0, et.Plq.CREATE_INSTANT_INVITE)
+    return (null == t ? void 0 : t.isThread()) && (t = k.Z.getChannel(t.parent_id)), null != t ? t : M.ZP.getDefaultChannel(a.id, !0, et.Plq.CREATE_INSTANT_INVITE)
   }, [s, a.id]), w = null;
   null != d ? w = ee.Iq.STREAM : null != c && (w = ee.Iq.EMBEDDED_APPLICATION);
   let V = null != s ? s.getGuildId() : null != a ? a.id : null,
-    F = (0, m.e7)([M.Z], () => {
+    F = (0, m.e7)([R.Z], () => {
       let e = null != C ? C.id : null;
-      return null == e ? null : M.Z.getInvite(e, {
+      return null == e ? null : R.Z.getInvite(e, {
         targetType: w,
         targetUserId: d,
         targetApplicationId: c
@@ -720,10 +720,10 @@ let ep = r.forwardRef(function(e, t) {
     }))), eO !== ec.value && eP !== ec.value && eS({
       savedMaxAge: ec.value
     })
-  }, [ex, X, C, o, null == ei ? void 0 : ei.id, w, d, eO, ey, eC, eS, eP, eZ]), ek = (0, j.Z)(C), eR = (0, j.Z)((0, G.yE)(eZ, h.$.IS_APPLICATION_BYPASS)), eM = null != ek && ek !== C, eD = null != eR && eR !== (0, G.yE)(eZ, h.$.IS_APPLICATION_BYPASS);
+  }, [ex, X, C, o, null == ei ? void 0 : ei.id, w, d, eO, ey, eC, eS, eP, eZ]), ek = (0, j.Z)(C), eM = (0, j.Z)((0, G.yE)(eZ, h.$.IS_APPLICATION_BYPASS)), eR = null != ek && ek !== C, eD = null != eM && eM !== (0, G.yE)(eZ, h.$.IS_APPLICATION_BYPASS);
   r.useEffect(() => {
-    !ex && (eM || eD) && eA()
-  }, [eA, eM, eD, ex]);
+    !ex && (eR || eD) && eA()
+  }, [eA, eR, eD, ex]);
   let {
     canCreateApplicationBypassInvites: eL,
     isManualApprovalGuild: eV

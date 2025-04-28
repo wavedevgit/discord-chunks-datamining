@@ -1,6 +1,6 @@
 /**
   Module ID: 29328
-  Original File Name: 6f5a17553412700d
+  Original File Name: 1edc749257a2b2d9
 **/
 .icon__2894c {
     display: block;
@@ -45,16 +45,18 @@
 }
 
 .guildRow__6be55 {
-    align-items: center;
-    display: flex;
     gap: var(--space-sm)
+}
+
+.guildRow__6be55,.inviteIcon__6be55 {
+    align-items: center;
+    display: flex
 }
 
 .inviteIcon__6be55 {
     background-color: var(--bg-mod-faint);
     border-radius: 8px;
-    height: 32px;
-    width: 32px
+    justify-content: center
 }
 
 .inviteTarget__6be55 {
@@ -107,9 +109,9 @@
     border-radius: 8px;
     cursor: pointer;
     display: flex;
-    height: 32px;
+    height: 40px;
     justify-content: center;
-    width: 32px
+    width: 40px
 }
 
 .settingsButton__6be55.settingsOpen__6be55,.settingsButton__6be55:hover {
@@ -584,4 +586,4 @@
     background-color: var(--background-secondary)
 }
 
-/*# sourceMappingURL=6f5a17553412700d.css.map*/
+/*# sourceMappingURL=1edc749257a2b2d9.css.map*/
