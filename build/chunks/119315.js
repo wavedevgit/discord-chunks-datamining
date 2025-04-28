@@ -18,7 +18,8 @@ let c = e => {
     size: s = 8,
     alert: c = !1,
     showBlurpleTreatment: u = !1,
-    maskColor: d = 2
+    maskColor: d = 2,
+    additionalStyles: p
   } = e;
   return (0, i.jsx)("span", {
     className: o()(a.dot, {
@@ -27,7 +28,8 @@ let c = e => {
       [a.maskPopout]: 0 === d,
       [a.maskPrimary]: 1 === d,
       [a.maskSecondary]: 2 === d,
-      [a.maskBlack]: 3 === d
+      [a.maskBlack]: 3 === d,
+      [null != p ? p : ""]: void 0 !== p
     }),
     style: {
       height: s,

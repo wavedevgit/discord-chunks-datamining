@@ -1,6 +1,6 @@
 /**
   Module ID: 30745
-  Original File Name: 62827b5f3b9bca01
+  Original File Name: a948438555a3be55
 **/
 .content__79cbe {
     border-radius: 8px;
@@ -7256,6 +7256,53 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     min-height: var(--custom-channel-textarea-text-area-height)
 }
 
+.channelAppLauncherWordlePromo__23128 .lottieAnimationControllerFill {
+    fill: var(--interactive-normal)
+}
+
+.animationContainer__23128 {
+    max-height: 24px;
+    max-width: 24px
+}
+
+.visual-refresh .animationContainer__23128 {
+    max-height: 20px;
+    max-width: 20px
+}
+
+.visual-refresh-chat-input .animationContainer__23128 {
+    max-height: 22px;
+    max-width: 22px
+}
+
+.indicatorDotDuringAnimation__23128 {
+    opacity: 0
+}
+
+.indicatorDotAfterAnimation__23128 {
+    opacity: 1
+}
+
+.full-motion .activityIndicatorAnimation__23128 {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-name: activityIndicatorEaseOut__23128;
+    animation-timing-function: ease-in-out
+}
+
+@keyframes activityIndicatorEaseOut__23128 {
+    0% {
+        opacity: 0;
+        transform: scale(2) translate(-25%,25%)
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translate(0)
+    }
+}
+
 .buttonContainer_e6e74f {
     margin-top: auto
 }
@@ -7297,10 +7344,6 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .visual-refresh .appLauncherCircleMask_e6e74f {
     background: var(--chat-background-default)
-}
-
-.channelAppLauncherWordlePromo_e6e74f .lottieAnimationControllerFill {
-    fill: var(--interactive-normal)
 }
 
 .appLauncherGlow_e6e74f {
@@ -13152,4 +13195,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=62827b5f3b9bca01.css.map*/
+/*# sourceMappingURL=a948438555a3be55.css.map*/
