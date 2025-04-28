@@ -7,21 +7,21 @@ var r = n(243814),
 let l = {
     [i.Q5.INITIATE_IMAGE_UPLOAD]: {
       request: void 0,
-      response: e => e.object({
+      response: e => ({
         image_url: e.string().required()
       })
     },
     [i.Q5.OPEN_SHARE_MOMENT_DIALOG]: {
       response: void 0,
-      request: e => (0, i.C5)(e.object({
+      request: e => ({
         mediaUrl: e.string().required().max(1024)
-      }))
+      })
     },
     [i.Q5.AUTHENTICATE]: {
-      request: e => (0, i.C5)(e.object({
+      request: e => ({
         access_token: e.string().allow(null).optional()
-      })),
-      response: e => e.object({
+      }),
+      response: e => ({
         access_token: e.string().required(),
         user: e.object({
           username: e.string().required(),
@@ -44,14 +44,14 @@ let l = {
     },
     [i.Q5.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: {
       request: void 0,
-      response: e => e.object({
+      response: e => ({
         participants: e.array().items(o(e).keys({
           nickname: e.string().description("Server nickname. Not unique.")
         }).required()).required()
-      }).required()
+      })
     },
     [i.Q5.SHARE_INTERACTION]: {
-      request: e => (0, i.C5)(e.object({
+      request: e => ({
         command: e.string().required(),
         content: e.string().max(2e3),
         require_launch_channel: e.boolean(),
@@ -62,18 +62,18 @@ let l = {
         }),
         components: e.array().items(s(e)),
         pid: e.number()
-      })),
-      response: e => e.object({
+      }),
+      response: e => ({
         success: e.boolean().required()
       })
     },
     [i.Q5.SHARE_LINK]: {
-      request: e => (0, i.C5)(e.object({
+      request: e => ({
         custom_id: e.string().max(64),
         message: e.string().max(1e3).required(),
         link_id: e.string().max(64)
-      })),
-      response: e => e.object({
+      }),
+      response: e => ({
         success: e.boolean().required(),
         didCopyLink: e.boolean().required(),
         didSendMessage: e.boolean().required()
@@ -81,7 +81,7 @@ let l = {
     },
     [i.Q5.GET_RELATIONSHIPS]: {
       request: void 0,
-      response: e => e.object({
+      response: e => ({
         relationships: e.array().required().items(e.object({
           type: e.number().required(),
           user: o(e).required(),
@@ -93,16 +93,16 @@ let l = {
       })
     },
     [i.Q5.INVITE_USER_EMBEDDED]: {
-      request: e => e.object({
+      request: e => ({
         user_id: e.string().required(),
         content: e.string().min(0).max(1024)
-      }).required(),
+      }),
       response: void 0
     },
     [i.Q5.GET_USER]: {
-      request: e => (0, i.C5)(e.object({
+      request: e => ({
         id: e.string().max(64).required()
-      })),
+      }),
       response: e => o(e).allow(null)
     }
   },
