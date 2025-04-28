@@ -1,7 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Kb: () => c,
+  GK: () => c,
+  Kb: () => u,
   sq: () => l
 }), n(997841);
 var r = n(818083),
@@ -41,6 +42,10 @@ function l() {
 }
 
 function c(e) {
+  return l() && null != e && (0, i.yE)(e.flags, a.udG.CONTEXTLESS_ACTIVITY)
+}
+
+function u(e) {
   var t;
   return (0, i.yE)(null != (t = e.flags) ? t : 0, a.udG.CONTEXTLESS_ACTIVITY) && l()
 }

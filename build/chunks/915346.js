@@ -9,8 +9,8 @@ async function r(e) {
     appId: t,
     botId: n,
     analyticsLocations: r,
-    customId: a,
-    referrerId: o,
+    customId: o,
+    referrerId: a,
     commandOrigin: c
   } = e, u = await i.Z.openPrivateChannel({
     recipientIds: n
@@ -19,8 +19,8 @@ async function r(e) {
     targetApplicationId: t,
     channelId: u,
     analyticsLocations: r,
-    customId: a,
-    referrerId: o,
+    customId: o,
+    referrerId: a,
     commandOrigin: c
   })
 }
