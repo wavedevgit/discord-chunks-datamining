@@ -1,7 +1,7 @@
 /** Chunk was on 44114 **/
 n.d(t, {
   Z: () => y,
-  r: () => N
+  r: () => I
 }), n(539854), n(388685);
 var i = n(200651),
   r = n(192379),
@@ -210,7 +210,7 @@ function T(e) {
   })
 }
 
-function I(e) {
+function N(e) {
   let {
     guildId: t,
     appliedGuildBoosts: n,
@@ -245,7 +245,7 @@ function I(e) {
   })
 }
 
-function N(e) {
+function I(e) {
   let {
     appliedGuildBoosts: t,
     premiumSubscription: n
@@ -260,7 +260,7 @@ function N(e) {
     className: O.wrapper,
     children: [(0, i.jsx)("div", {
       className: O.container,
-      children: f.default.keys(s).map(e => (0, i.jsx)(I, {
+      children: f.default.keys(s).map(e => (0, i.jsx)(N, {
         guildId: e,
         premiumSubscription: n,
         appliedGuildBoosts: s[e]

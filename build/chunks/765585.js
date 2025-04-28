@@ -30,8 +30,8 @@ let g = r.forwardRef(function(e, t) {
     shouldUseHorizontalButtons: S = !1,
     showGIFTag: v = !1,
     dismissibleContent: T,
-    position: I = "top",
-    align: N = "center",
+    position: N = "top",
+    align: I = "center",
     art: y,
     isPremiumEarlyAccess: A = !1,
     maxWidth: P = 280,
@@ -41,7 +41,7 @@ let g = r.forwardRef(function(e, t) {
     dismissIcon: w,
     onDismissIconClick: k,
     tryItButtonColor: L
-  } = e, B = S ? a.zxk.Sizes.LARGE : a.zxk.Sizes.MAX, [M, U] = r.useState(!1), {
+  } = e, M = S ? a.zxk.Sizes.LARGE : a.zxk.Sizes.MAX, [B, U] = r.useState(!1), {
     ref: V,
     width: G
   } = (0, o.ZP)();
@@ -54,8 +54,8 @@ let g = r.forwardRef(function(e, t) {
   return r.useEffect(() => {
     var e, t;
     let n = (null != (t = null == (e = V.current) ? void 0 : e.scrollWidth) ? t : 0) + 64;
-    !M && n > P && U(!0)
-  }, [M, G, V, P]), r.useEffect(() => {
+    !B && n > P && U(!0)
+  }, [B, G, V, P]), r.useEffect(() => {
     (0, c.kk)(T)
   }, [T]), (0, i.jsx)("div", {
     className: j,
@@ -104,11 +104,11 @@ let g = r.forwardRef(function(e, t) {
         }) : n]
       }), (0, i.jsx)("div", {
         ref: V,
-        className: M || !S ? p.buttonContainerVertical : p.buttonContainerHorizontal,
+        className: B || !S ? p.buttonContainerVertical : p.buttonContainerHorizontal,
         children: null != x ? (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)(a.zxk, {
             className: p.button,
-            size: B,
+            size: M,
             onClick: e => {
               null == E || E(e), x(e), F(u.L.PRIMARY)
             },
@@ -116,7 +116,7 @@ let g = r.forwardRef(function(e, t) {
             children: null != b ? b : m.intl.string(m.t.IHf1RE)
           }), !R && (0, i.jsx)(a.zxk, {
             className: p.button,
-            size: B,
+            size: M,
             onClick: e => {
               null == E || E(e), F(u.L.DISMISS)
             },
@@ -135,9 +135,9 @@ let g = r.forwardRef(function(e, t) {
         })
       }), (0, i.jsx)("div", {
         className: l()(p.pointer, D, {
-          [p.bottomPointer]: "top" === I,
-          [p.centerLeftPointer]: "right" === I && "center" === N,
-          [p.topLeftPointer]: "right" === I && "top" === N
+          [p.bottomPointer]: "top" === N,
+          [p.centerLeftPointer]: "right" === N && "center" === I,
+          [p.topLeftPointer]: "right" === N && "top" === I
         })
       })]
     })

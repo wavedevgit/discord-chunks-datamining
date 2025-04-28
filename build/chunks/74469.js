@@ -53,7 +53,7 @@ let E = (0, o.hQ)(),
       })
     }, [S]), T = r.useCallback(e => {
       o(f.L.TAKE_ACTION), (0, d.c)(e, !0)
-    }, [o]), I = r.useCallback(e => e === C, [C]), N = r.useCallback(e => e, []), y = r.useCallback(() => {
+    }, [o]), N = r.useCallback(e => e === C, [C]), I = r.useCallback(e => e, []), y = r.useCallback(() => {
       o(f.L.TAKE_ACTION), (0, d.c)(null, !1)
     }, [o]), A = r.useRef(null);
     return (0, p.Z)(A, b.Y_.GUILD_TAG), (0, i.jsxs)(m.Z, {
@@ -71,12 +71,12 @@ let E = (0, o.hQ)(),
       }), (0, i.jsx)(a.PhF, {
         className: x.select,
         optionClassName: x.selectPopout,
-        isSelected: I,
+        isSelected: N,
         options: O,
         select: T,
         renderOptionValue: v,
         renderOptionLabel: S,
-        serialize: N,
+        serialize: I,
         clear: y,
         clearable: null != C
       })]

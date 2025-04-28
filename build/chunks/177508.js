@@ -67,7 +67,7 @@ function v() {
       text: "Testing",
       iconPosition: "end",
       icon: d.XHJ
-    }), (0, i.jsx)(Z, {}), (0, i.jsx)(U, {}), (0, i.jsx)(V, {}), (0, i.jsx)(B, {}), (0, i.jsx)(L, {}), (0, i.jsx)(k, {}), (0, i.jsx)(w, {}), (0, i.jsx)(F, {}), (0, i.jsx)(T, {}), (0, i.jsx)(H, {})]
+    }), (0, i.jsx)(Z, {}), (0, i.jsx)(U, {}), (0, i.jsx)(V, {}), (0, i.jsx)(M, {}), (0, i.jsx)(L, {}), (0, i.jsx)(k, {}), (0, i.jsx)(w, {}), (0, i.jsx)(F, {}), (0, i.jsx)(T, {}), (0, i.jsx)(H, {})]
   })
 }
 
@@ -89,8 +89,8 @@ function T() {
     })]
   })
 }
-let I = ["neutral", "blue_new", "blurple", "green_new", "red_new", "teal_new", "yellow_new", "orange_new", "pink", "purple"],
-  N = ["background-surface-highest", "background-surface-higher", "background-surface-high", "background-base-low", "background-base-lower", "background-base-lowest"],
+let N = ["neutral", "blue_new", "blurple", "green_new", "red_new", "teal_new", "yellow_new", "orange_new", "pink", "purple"],
+  I = ["background-surface-highest", "background-surface-higher", "background-surface-high", "background-base-low", "background-base-lower", "background-base-lowest"],
   y = ["", "background-mod-subtle", "background-mod-normal", "background-mod-strong"],
   A = ["critical", "warning", "positive", "info"],
   P = ["text-default", "text-primary", "text-secondary", "text-tertiary", "text-feedback-critical", "text-feedback-warning", "text-feedback-positive", "text-feedback-info", "premium-nitro-pink-text"];
@@ -101,7 +101,7 @@ function R() {
       variant: "heading-xl/semibold",
       className: x.heading,
       children: "Background Colors"
-    }), N.map(e => (0, i.jsxs)("div", {
+    }), I.map(e => (0, i.jsxs)("div", {
       className: x.palette,
       style: {
         backgroundColor: "var(--".concat(e, ")"),
@@ -177,7 +177,7 @@ function R() {
       variant: "heading-xl/semibold",
       className: x.heading,
       children: "Scales"
-    }), I.map(e => (0, i.jsxs)("div", {
+    }), N.map(e => (0, i.jsxs)("div", {
       className: x.palette,
       children: [(0, i.jsx)(d.Text, {
         variant: "text-lg/semibold",
@@ -345,7 +345,7 @@ function Z() {
         size: d.zxk.Sizes.LARGE,
         children: "Large"
       })
-    }), (0, i.jsx)(M, {})]
+    }), (0, i.jsx)(B, {})]
   })
 }
 
@@ -511,7 +511,7 @@ function L() {
   })
 }
 
-function B() {
+function M() {
   let [e, t] = r.useState(!1), [n, s] = r.useState(!1), [l, a] = r.useState("auto");
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)("div", {
@@ -667,7 +667,7 @@ function B() {
   })
 }
 
-function M() {
+function B() {
   return (0, i.jsxs)("div", {
     className: x.shinyButtonExamples,
     children: [(0, i.jsx)(d.gtL, {

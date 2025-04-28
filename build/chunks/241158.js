@@ -50,7 +50,7 @@ let E = e => {
       isCompact: O,
       isReducedMotion: S,
       onClick: v
-    } = e, T = (0, p.rO)(), I = r.useRef(null), N = r.useRef(0), y = function(e) {
+    } = e, T = (0, p.rO)(), N = r.useRef(null), I = r.useRef(0), y = function(e) {
       let t;
       switch (e) {
         case g.dm.EMOJIS:
@@ -83,9 +83,9 @@ let E = e => {
         box_type: (0, a.snakeCase)(t)
       })
     }, 800), Z = () => {
-      null == I.current || S || (I.current.currentTime = N.current, I.current.play())
+      null == N.current || S || (N.current.currentTime = I.current, N.current.play())
     }, w = () => {
-      null == I.current || S || (N.current = I.current.currentTime, I.current.pause())
+      null == N.current || S || (I.current = N.current.currentTime, N.current.pause())
     }, k = () => (0, i.jsxs)("div", {
       className: l()({
         [_.whatsNewTextBoxOuter]: !O,
@@ -133,14 +133,14 @@ let E = e => {
             [_.leftSideArt]: t && !O,
             [_.compactBoxVideo]: O
           }),
-          ref: I,
+          ref: N,
           children: (0, i.jsx)("source", {
             src: E,
             type: T ? f.m.MP4 : f.m.WEBM
           })
         }, E)
       })
-    }, B = C % 2 != 0;
+    }, M = C % 2 != 0;
     return (0, i.jsx)("div", {
       className: l()(y, {
         [_.whatsNewBoxContainer]: !O,
@@ -150,13 +150,13 @@ let E = e => {
       onFocus: Z,
       onBlur: w,
       onMouseLeave: w,
-      children: B ? (0, i.jsxs)(i.Fragment, {
+      children: M ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(k, {}), (0, i.jsx)(L, {
-          isLeft: B
+          isLeft: M
         })]
       }) : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(L, {
-          isLeft: B
+          isLeft: M
         }), (0, i.jsx)(k, {})]
       })
     })

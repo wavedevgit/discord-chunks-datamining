@@ -119,23 +119,23 @@ function C(e) {
     analyticsLocation: d
   } = e, [u, h] = r.useState(!1), {
     analyticsLocations: j
-  } = (0, p.ZP)(), [C, O] = r.useState(!1), S = (0, m.ZP)(), v = null, T = null, I = [b.O0b.PAST_DUE, b.O0b.PAUSED].includes(t.status) ? t.currentPeriodStart : t.currentPeriodEnd, N = l()(I).add(a, "days").toDate();
+  } = (0, p.ZP)(), [C, O] = r.useState(!1), S = (0, m.ZP)(), v = null, T = null, N = [b.O0b.PAST_DUE, b.O0b.PAUSED].includes(t.status) ? t.currentPeriodStart : t.currentPeriodEnd, I = l()(N).add(a, "days").toDate();
   switch (t.status) {
     case b.O0b.PAST_DUE:
       T = _.intl.format(_.t["xaS18/"], {
         pauseDuration: a,
-        resumeDate: N
+        resumeDate: I
       });
       break;
     case b.O0b.PAUSED:
       T = _.intl.format(_.t.Vur3FR, {
-        resumeDate: N
+        resumeDate: I
       });
       break;
     default:
       T = _.intl.format(_.t.W85vFB, {
-        pauseDate: I,
-        resumeDate: N,
+        pauseDate: N,
+        resumeDate: I,
         pauseDuration: a
       })
   }

@@ -36,11 +36,11 @@ function C() {
     isEnabled: g.Z.isEnabled()
   }));
 
-  function I(e, n) {
+  function N(e, n) {
     t(e), s((n & h.Dg.VOICE) === h.Dg.VOICE)
   }
 
-  function N(e, t) {
+  function I(e, t) {
     m.Z.setMode(S, {
       threshold: e,
       autoThreshold: t
@@ -49,9 +49,9 @@ function C() {
   r.useEffect(() => {
     let e = new c.V7;
     return e.start(1e3, () => {
-      g.Z.getMediaEngine().on(o.aB.VoiceActivity, I), e.stop()
+      g.Z.getMediaEngine().on(o.aB.VoiceActivity, N), e.stop()
     }), () => {
-      g.Z.getMediaEngine().removeListener(o.aB.VoiceActivity, I), e.stop()
+      g.Z.getMediaEngine().removeListener(o.aB.VoiceActivity, N), e.stop()
     }
   }, []);
   let y = (0, i.jsx)("section", {
@@ -59,7 +59,7 @@ function C() {
     children: (0, i.jsx)(u.iRW, {
       initialValue: C + 100,
       onValueRender: e => "".concat((-((100 - e) * 1)).toFixed(0), "dB"),
-      onValueChange: e => N(-((100 - e) * 1), O),
+      onValueChange: e => I(-((100 - e) * 1), O),
       barStyles: {
         background: d.Z.unsafe_rawColors.GREEN_360.css
       },
@@ -111,7 +111,7 @@ function C() {
         }), (0, i.jsx)(u.rsf, {
           id: e,
           checked: O,
-          onChange: e => N(C, e)
+          onChange: e => I(C, e)
         })]
       })
     }), y, !T && (0, i.jsx)(u.R94, {

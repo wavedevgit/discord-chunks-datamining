@@ -1,6 +1,6 @@
 /**
   Module ID: 44114
-  Original File Name: 7427937f40982a66
+  Original File Name: 4d68e70d5aa3490b
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -336,7 +336,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 {
-    font-size: 1rem;
+    font-size: 16px;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -7183,10 +7183,6 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 
 .badgeOpalGlow__1f2ac {
     --custom-tenure-badge-glow-color: #07829280
-}
-
-.image__0c271 {
-    width: 100%
 }
 
 .hoverWrapper_f8e6bf {
@@ -18548,4 +18544,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=7427937f40982a66.css.map*/
+/*# sourceMappingURL=4d68e70d5aa3490b.css.map*/

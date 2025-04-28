@@ -59,7 +59,7 @@ function v(e, t) {
 function T(e) {
   let {
     guildId: t
-  } = e, n = (0, c.Q3)("GuildItem"), a = (0, l.e7)([m.Z], () => m.Z.getGuild(t)), p = (0, l.e7)([u.Z], () => u.Z.getMemberCount(t)), h = !d.SE.useSetting().includes(t), b = (0, o.dQu)(o.TVs.modules.guildbar.AVATAR_SIZE), T = (0, s.Ie)(null != t ? t : _.lds), I = r.useCallback(e => {
+  } = e, n = (0, c.Q3)("GuildItem"), a = (0, l.e7)([m.Z], () => m.Z.getGuild(t)), p = (0, l.e7)([u.Z], () => u.Z.getMemberCount(t)), h = !d.SE.useSetting().includes(t), b = (0, o.dQu)(o.TVs.modules.guildbar.AVATAR_SIZE), T = (0, s.Ie)(null != t ? t : _.lds), N = r.useCallback(e => {
     let n = (0, f._o)();
     e ? n.delete(t) : n.add(t), d.SE.updateSetting([...n]), g.default.track(_.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: x.Y.RESTRICT_GUILD_ACTIVITY_STATUS_TOGGLE,
@@ -73,7 +73,7 @@ function T(e) {
       className: O.serverOptionSwitchContainer,
       value: h,
       onChange: () => {
-        I(!h)
+        N(!h)
       },
       hideBorder: !0,
       children: (0, i.jsxs)("div", {
@@ -105,7 +105,7 @@ function T(e) {
   })
 }
 
-function I() {
+function N() {
   let e = d.G6.useSetting(),
     t = d.Wz.useSetting(),
     n = e => {
@@ -174,7 +174,7 @@ function I() {
   })
 }
 
-function N() {
+function I() {
   return (0, i.jsx)(o.hjN, {
     tag: o.RB0.H5,
     title: C.intl.string(j.default["+RndDg"]),
@@ -262,11 +262,11 @@ let R = function(e) {
           behavior: "smooth"
         })
       }
-    }), (0, i.jsx)(N, {}), (0, i.jsx)(o.$i$, {
+    }), (0, i.jsx)(I, {}), (0, i.jsx)(o.$i$, {
       className: O.divider
     }), (0, i.jsx)("div", {
       ref: n
-    }), (0, i.jsx)(I, {}), (0, i.jsx)(o.$i$, {
+    }), (0, i.jsx)(N, {}), (0, i.jsx)(o.$i$, {
       className: O.divider
     }), (0, i.jsx)(y, {}), (0, i.jsx)(P, {})]
   })

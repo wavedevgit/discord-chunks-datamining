@@ -29,8 +29,8 @@ var i = n(200651),
   S = n(201895),
   v = n(43267),
   T = n(933557),
-  I = n(163889),
-  N = n(111028),
+  N = n(163889),
+  I = n(111028),
   y = n(540059),
   A = n(853856),
   P = n(93687),
@@ -40,8 +40,8 @@ var i = n(200651),
   w = n(379839),
   k = n(359135),
   L = n(516817),
-  B = n(273388),
-  M = n(878857),
+  M = n(273388),
+  B = n(878857),
   U = n(518950),
   V = n(199902),
   G = n(158776),
@@ -177,7 +177,7 @@ let en = q.ZP.getEnableHardwareAcceleration() ? p.Xo$ : p.qEK,
       listItemRef: E
     } = e, j = et(e, ["route", "selected", "icon", "iconClassName", "avatarWithTextClassName", "interactiveClassName", "text", "children", "locationState", "onClick", "className", "role", "aria-posinset", "aria-setsize", "listItemRef"]);
     let O = (0, y.Q3)("PrivateChannelLinkButton");
-    return (0, i.jsx)(I.Z, {
+    return (0, i.jsx)(N.Z, {
       className: l()(J.channel, {
         [J.fullWidth]: u.tq
       }, f),
@@ -240,13 +240,13 @@ function ec(e) {
     user: u,
     size: p.EFr.SIZE_32,
     animateOnHover: !(a || Y)
-  }), em = t.isMultiUserDM(), ep = t.isSystemDM(), eg = (0, M.Q)(), eh = !em && !ep && t.type === X.d4z.DM, ef = eh && (null == u ? void 0 : u.primaryGuild) != null, eb = (0, m.e7)([W.ZP], () => W.ZP.isChannelMuted(t.getGuildId(), t.id)), {
+  }), em = t.isMultiUserDM(), ep = t.isSystemDM(), eg = (0, B.Q)(), eh = !em && !ep && t.type === X.d4z.DM, ef = eh && (null == u ? void 0 : u.primaryGuild) != null, eb = (0, m.e7)([W.ZP], () => W.ZP.isChannelMuted(t.getGuildId(), t.id)), {
     ignored: e_,
     blocked: ex
   } = (0, m.cj)([H.Z], () => ({
     ignored: H.Z.isIgnored(t.getRecipientId()),
     blocked: H.Z.isBlocked(t.getRecipientId())
-  })), eE = eh && e_, ej = eh && ex, eC = (eb || eE || ej) && !(a || Y), eO = (0, m.e7)([F.ZP], () => F.ZP.getMentionCount(t.id) > 0), eS = (0, T.ZP)(t), ev = (0, m.e7)([A.Z], () => A.Z.isFavorite(t.id)), eT = (0, B.L)("PrivateChannel"), eI = null != V && (a || Y), eN = () => {
+  })), eE = eh && e_, ej = eh && ex, eC = (eb || eE || ej) && !(a || Y), eO = (0, m.e7)([F.ZP], () => F.ZP.getMentionCount(t.id) > 0), eS = (0, T.ZP)(t), ev = (0, m.e7)([A.Z], () => A.Z.isFavorite(t.id)), eT = (0, M.L)("PrivateChannel"), eN = null != V && (a || Y), eI = () => {
     K(!0)
   }, ey = () => {
     K(!1)
@@ -355,7 +355,7 @@ function ec(e) {
       "aria-label": u.username,
       statusTooltip: !0
     }))
-  }, eB = ef ? (0, i.jsxs)(i.Fragment, {
+  }, eM = ef ? (0, i.jsxs)(i.Fragment, {
     children: [eS, (0, i.jsx)(D.ZP, {
       primaryGuild: null == u ? void 0 : u.primaryGuild,
       userId: null == u ? void 0 : u.id,
@@ -363,14 +363,14 @@ function ec(e) {
       disableGuildProfile: !0,
       className: J.clanTag
     })]
-  }) : eS, eM = r.useRef(null);
+  }) : eS, eB = r.useRef(null);
   return (0, i.jsx)(d.mh, {
     id: t.id,
     children: e => {
       var {
         role: n
       } = e, r = et(e, ["role"]);
-      return (0, i.jsxs)(I.Z, {
+      return (0, i.jsxs)(N.Z, {
         className: l()(J.channel, J.dm),
         role: n,
         focusProps: ee($({}, ei), {
@@ -378,7 +378,7 @@ function ec(e) {
           ringTarget: eo
         }),
         ref: eo,
-        onMouseEnter: eN,
+        onMouseEnter: eI,
         onMouseLeave: ey,
         onMouseDown: eP,
         onContextMenu: eZ,
@@ -398,16 +398,16 @@ function ec(e) {
           muted: eC,
           selected: a,
           children: [(0, i.jsx)(L.Z, {
-            nameplate: eI ? V : void 0,
+            nameplate: eN ? V : void 0,
             selected: a,
             hovered: Y,
-            content: eM,
+            content: eB,
             placement: k.i.CHANNEL
           }), (0, i.jsx)(c.rU, ee($({
             innerRef: q,
             to: X.Z5c.CHANNEL(X.ME, t.id),
             className: l()(J.link, {
-              [J.linkPlated]: eI
+              [J.linkPlated]: eN
             }),
             "aria-label": (0, S.ZP)({
               channel: t,
@@ -415,14 +415,14 @@ function ec(e) {
             })
           }, r), {
             children: (0, i.jsx)(C.Z, {
-              ref: eM,
+              ref: eB,
               avatar: eL(),
               highlighted: eO && !(eT && eC),
               muted: eC,
               subText: ek(),
-              name: (0, i.jsx)(N.Z, {
+              name: (0, i.jsx)(I.Z, {
                 tooltipClassName: J.overflowTooltip,
-                children: eB
+                children: eM
               }),
               decorators: t.isSystemDM() ? (0, i.jsx)(j.Z, {
                 className: J.decorator,

@@ -89,8 +89,6 @@ let _ = (e, t, n) => (0, s.wj)(e) ? t : n,
     }, d = O();
     return a && o({
       card: n.nameplates
-    }), null != n.collectibleDeco && o({
-      card: n.collectibleDeco
     }), null != n.tenureBadge && o({
       card: n.tenureBadge
     }), null != n.tenureRewardCollectible && !0 === r && o({

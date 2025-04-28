@@ -1,46 +1,46 @@
 /** Chunk was on 74824 **/
 n.d(t, {
-  G: () => d
+  G: () => u
 }), n(388685);
-var l = n(192379),
-  i = n(979554),
-  r = n(911535),
-  s = n(388032);
-let o = function(e) {
+var r = n(192379),
+  l = n(979554),
+  i = n(911535),
+  o = n(388032);
+let s = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
     if (t) {
       var n;
-      return s.intl.formatToPlainString(s.t["/0Yndn"], {
+      return o.intl.formatToPlainString(o.t["/0Yndn"], {
         num: null == (n = e.bundledProducts) ? void 0 : n.length
       })
     }
-    let [l, i] = null != e.bundledProducts ? e.bundledProducts : [];
-    return s.intl.formatToPlainString(s.t.WQbNhI, {
-      decoName: l.name,
-      pfxName: i.name
+    let [r, l] = null != e.bundledProducts ? e.bundledProducts : [];
+    return o.intl.formatToPlainString(o.t.WQbNhI, {
+      decoName: r.name,
+      pfxName: l.name
     })
   },
   a = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-    return null == e ? "" : e.type === i.Z.BUNDLE ? o(e, t) : e.summary
+    return null == e ? "" : e.type === l.Z.BUNDLE ? s(e, t) : e.summary
   },
   c = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
     switch (null == e ? void 0 : e.type) {
-      case i.Z.AVATAR_DECORATION:
-        return s.intl.string(s.t["3lv7q6"]);
-      case i.Z.PROFILE_EFFECT:
-        return s.intl.string(s.t["VhJL7+"]);
-      case i.Z.NAMEPLATE:
-        return s.intl.string(s.t.ik37ER);
-      case i.Z.BUNDLE:
-        return o(e, t);
+      case l.Z.AVATAR_DECORATION:
+        return o.intl.string(o.t["3lv7q6"]);
+      case l.Z.PROFILE_EFFECT:
+        return o.intl.string(o.t["VhJL7+"]);
+      case l.Z.NAMEPLATE:
+        return o.intl.string(o.t.ik37ER);
+      case l.Z.BUNDLE:
+        return s(e, t);
       default:
         return ""
     }
   },
-  d = function(e) {
+  u = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-      n = (0, r.P)("ShopProductPreviewActionSheet");
-    return (0, l.useMemo)(() => n ? c(e, t) : a(e, t), [e, t, n])
+      n = (0, i.P)("ShopProductPreviewActionSheet");
+    return (0, r.useMemo)(() => n ? c(e, t) : a(e, t), [e, t, n])
   }

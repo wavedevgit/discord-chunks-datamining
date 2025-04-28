@@ -76,7 +76,7 @@ function v() {
             let n = new Set(E);
             t ? n.add(e.id_hash) : n.delete(e.id_hash), v(n)
           }
-        }, e.id_hash)), (null == l ? void 0 : l.mfaEnabled) ? null : (0, i.jsx)(I, {})]
+        }, e.id_hash)), (null == l ? void 0 : l.mfaEnabled) ? null : (0, i.jsx)(N, {})]
       })]
     }), n.length > 0 ? (0, i.jsxs)(d.hjN, {
       tag: d.RB0.H5,
@@ -223,7 +223,7 @@ function T(e) {
   }, o.id_hash)
 }
 
-function I() {
+function N() {
   return (0, i.jsxs)("div", {
     className: l()(S.session, S.legacySession),
     children: [(0, i.jsx)("div", {

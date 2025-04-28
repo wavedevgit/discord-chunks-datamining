@@ -45,7 +45,7 @@ function T(e) {
   return e
 }
 
-function I(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -57,7 +57,7 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let N = e => {
+let I = e => {
     let {
       userRecord: t,
       placement: n
@@ -81,7 +81,7 @@ let N = e => {
       text: O.intl.string(O.t.UnKHdn),
       shouldShow: !l,
       tooltipContentClassName: S.unsentTooltipContent,
-      children: e => (0, i.jsx)("div", I(T({
+      children: e => (0, i.jsx)("div", N(T({
         className: S.userAvatarProgressBarUnit
       }, e), {
         children: a
@@ -111,19 +111,19 @@ let N = e => {
     } = e, n = t.length, r = n < 1 ? null : t[0], s = n < 2 ? null : t[1], l = n < 3 ? null : t[2];
     return (0, i.jsxs)("div", {
       className: S.userAvatarProgressBarContainer,
-      children: [(0, i.jsx)(N, {
+      children: [(0, i.jsx)(I, {
         userRecord: r,
         placement: 1
       }), (0, i.jsx)(y, {
         numSentReferrals: n,
         placement: 1
-      }), (0, i.jsx)(N, {
+      }), (0, i.jsx)(I, {
         userRecord: s,
         placement: 2
       }), (0, i.jsx)(y, {
         numSentReferrals: n,
         placement: 2
-      }), (0, i.jsx)(N, {
+      }), (0, i.jsx)(I, {
         userRecord: l,
         placement: 3
       })]
@@ -134,7 +134,7 @@ let N = e => {
       isInSettings: t = !1
     } = e, s = (0, a.e7)([f.Z], () => f.Z.getRecipientStatus()), {
       referralSentUsers: u
-    } = (0, _.G)(), N = r.useMemo(() => u.map(e => new m.Z(e)), [u]), {
+    } = (0, _.G)(), I = r.useMemo(() => u.map(e => new m.Z(e)), [u]), {
       subscriberHomeVariant: y
     } = b.g.useExperiment({
       location: "ReferralProgramProgressBar"
@@ -155,7 +155,7 @@ let N = e => {
       } = (0, d.ZP)(c.Z.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
       k = r.useRef(null),
       L = R.sent / _.Q * 100,
-      B = (0, i.jsxs)("div", {
+      M = (0, i.jsxs)("div", {
         className: S.referralInfoContent,
         children: [(0, i.jsx)(E.ZP, {
           percentage: L,
@@ -173,7 +173,7 @@ let N = e => {
               hasSentAll: D
             })
           }), (0, i.jsx)(A, {
-            userRecords: N
+            userRecords: I
           }), (0, i.jsx)(o.Text, {
             variant: t ? "text-sm/normal" : "text-lg/medium",
             children: (0, j.Hg)({
@@ -202,7 +202,7 @@ let N = e => {
                   let {
                     default: e
                   } = await n.e("47435").then(n.bind(n, 204387));
-                  return t => (0, i.jsx)(e, I(T({}, t), {
+                  return t => (0, i.jsx)(e, N(T({}, t), {
                     sourceAnalyticsLocations: w
                   }))
                 })
@@ -220,15 +220,15 @@ let N = e => {
           })]
         })]
       }),
-      M = R.redeemed === _.Q;
+      B = R.redeemed === _.Q;
     return (0, i.jsx)(d.Gt, {
       value: w,
       children: (0, i.jsx)("div", {
         className: l()({
-          [S.containerWithGlowWithoutBanner]: M,
-          [S.containerWithoutGlow]: !M,
+          [S.containerWithGlowWithoutBanner]: B,
+          [S.containerWithoutGlow]: !B,
           [S.containerWithMargins]: !t,
-          [S.containerWithGlowOnSettingsPage]: M && t
+          [S.containerWithGlowOnSettingsPage]: B && t
         }),
         children: (0, i.jsx)("div", {
           ref: k,
@@ -237,9 +237,9 @@ let N = e => {
             [S.expandedProgressBarContainerSettingsPage]: t,
             [S.expandedProgressBarContainerVariant1]: !P && !t,
             [S.expandedProgressBarContainerVariant2]: P && !t,
-            [S.allReferralsSentBorder]: M
+            [S.allReferralsSentBorder]: B
           }),
-          children: B
+          children: M
         })
       })
     })

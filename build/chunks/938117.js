@@ -60,8 +60,8 @@ function O(e) {
     onSelectBackgroundOption: S,
     currentDeviceId: v,
     smallerBackgroundOptions: T,
-    className: I
-  } = e, N = (0, s.e7)([o.default], () => o.default.getCurrentUser()), [y, A] = r.useState(null), P = (0, g.Z)(), R = c.ZP.canUseCustomBackgrounds(N);
+    className: N
+  } = e, I = (0, s.e7)([o.default], () => o.default.getCurrentUser()), [y, A] = r.useState(null), P = (0, g.Z)(), R = c.ZP.canUseCustomBackgrounds(I);
   r.useEffect(() => {
     (0, d.XV)()
   }, []);
@@ -86,7 +86,7 @@ function O(e) {
       track: !1
     }).catch(() => t(null)) : null != n && t(null)
   }, [v]);
-  let B = e => {
+  let M = e => {
     S(e), (0, p.FU)(e, v, {
       location: w.location
     }).then(() => A(null)).catch(() => {
@@ -97,7 +97,7 @@ function O(e) {
   };
   return P ? (0, i.jsxs)(l.xJW, {
     title: x.intl.string(x.t.lZTUPj),
-    className: I,
+    className: N,
     children: [null != y ? (0, i.jsx)(l.kzN, {
       className: E.videoBackgroundError,
       children: y
@@ -105,7 +105,7 @@ function O(e) {
       canUseCustomBackgrounds: R,
       customBackgroundOptions: Z,
       selectedOption: O,
-      onSelectOption: B,
+      onSelectOption: M,
       onUpsellClick: () => {
         (0, l.ZDy)(async () => {
           let {
@@ -124,7 +124,7 @@ function O(e) {
         return new Promise(async i => {
           try {
             let i = await (0, d.Ff)(e, f.xV.BACKGROUND);
-            B(i), (0, m.g5)(i, t.type === _.m.MP4, n), A(null)
+            M(i), (0, m.g5)(i, t.type === _.m.MP4, n), A(null)
           } catch (e) {
             A(e.message)
           }
