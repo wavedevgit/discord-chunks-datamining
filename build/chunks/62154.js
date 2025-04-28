@@ -1,4 +1,4 @@
-/** Chunk was on 31656 **/
+/** Chunk was on 68567 **/
 t.d(n, {
   Z: () => _
 });
@@ -13,14 +13,14 @@ var o = t(442837),
   d = t(537006),
   u = t(681837),
   f = t(91433),
-  m = t(944043),
-  p = t(502762),
+  p = t(944043),
+  m = t(502762),
   h = t(530),
   x = t(740628),
   I = t(643518),
-  v = t(228168),
-  b = t(981631),
-  j = t(405666);
+  j = t(228168),
+  v = t(981631),
+  b = t(405666);
 
 function _(e) {
   var n;
@@ -40,18 +40,18 @@ function _(e) {
   } = (0, o.cj)([r.Z], () => ({
     relationshipType: r.Z.getRelationshipType(t.id),
     originApplicationId: r.Z.getOriginApplicationId(t.id)
-  })), P = (0, l.vh)(t.id), S = t.id === _.id, M = (0, a.I5)(_), L = s.ZP.useName(null == y ? void 0 : y.guildId, Z, t), w = (0, I.Z)({
+  })), P = (0, l.vh)(t.id), S = t.id === _.id, L = (0, a.I5)(_), M = s.ZP.useName(null == y ? void 0 : y.guildId, Z, t), w = (0, I.Z)({
     user: t,
     currentUser: _,
     guildId: g,
     initialSubsection: A
   });
   return (0, i.jsxs)("div", {
-    className: j.body,
+    className: b.body,
     children: [(0, i.jsx)(h.Z, {
-      className: j.username,
+      className: b.username,
       user: t,
-      nickname: L,
+      nickname: M,
       pronouns: null == y ? void 0 : y.pronouns,
       nicknameVariant: "heading-xl/bold",
       nicknameIcons: (0, i.jsx)(u.Z, {
@@ -59,34 +59,34 @@ function _(e) {
       }),
       tags: (0, i.jsx)(c.Z, {
         displayProfile: y,
-        themeType: v.lY.MODAL,
+        themeType: j.lY.MODAL,
         onClose: O
       })
-    }), C === b.OGo.PENDING_INCOMING && (0, i.jsx)(p.Z.Overlay, {
-      className: j.bannerContainer,
+    }), C === v.OGo.PENDING_INCOMING && (0, i.jsx)(m.Z.Overlay, {
+      className: b.bannerContainer,
       children: (0, i.jsx)(f.Z, {
         user: t,
         applicationId: E,
         guildId: null != (n = null == y ? void 0 : y.guildId) ? n : void 0,
         channelId: Z,
         friendToken: T,
-        className: j.friendRequestBanner
+        className: b.friendRequestBanner
       })
-    }), P.map(e => (0, i.jsx)(p.Z.Overlay, {
-      className: j.bannerContainer,
+    }), P.map(e => (0, i.jsx)(m.Z.Overlay, {
+      className: b.bannerContainer,
       children: (0, i.jsx)(f.Z, {
         user: t,
         channelId: Z,
         isGameRelationship: !0,
         applicationId: e.applicationId,
-        className: j.friendRequestBanner
+        className: b.friendRequestBanner
       })
-    }, e.applicationId)), (0, i.jsx)(m.Z, {
+    }, e.applicationId)), (0, i.jsx)(p.Z, {
       user: t,
-      className: j.bannerContainer
+      className: b.bannerContainer
     }), S && (0, i.jsx)(d.Z, {
-      className: j.bannerContainer,
-      isPremiumUser: M,
+      className: b.bannerContainer,
+      isPremiumUser: L,
       onInteraction: O
     }), (0, i.jsx)(x.Z, {
       user: t,

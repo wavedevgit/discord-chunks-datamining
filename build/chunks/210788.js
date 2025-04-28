@@ -1,6 +1,6 @@
-/** Chunk was on 69826 **/
+/** Chunk was on 95701 **/
 n.d(t, {
-  Z: () => A
+  Z: () => N
 }), n(388685);
 var o = n(200651),
   r = n(192379),
@@ -16,51 +16,51 @@ var o = n(200651),
   m = n(785717),
   b = n(806729),
   h = n(708108),
-  _ = n(146078),
-  y = n(857302),
-  g = n(892001),
-  j = n(389190),
+  y = n(146078),
+  g = n(857302),
+  j = n(892001),
+  _ = n(389190),
   x = n(428927),
-  v = n(228168),
-  I = n(388032),
+  I = n(228168),
+  v = n(388032),
   O = n(714905);
 
-function A(e) {
+function N(e) {
   let {
     user: t,
     onClose: n
   } = e, {
     analyticsLocations: i
   } = (0, u.ZP)(), {
-    context: A,
-    trackUserProfileAction: N
-  } = (0, m.KZ)(), P = (0, s.ZP)(), {
-    mutualFriends: T,
-    mutualFriendsCount: C,
-    mutualGuilds: S,
-    isFetching: Z
+    context: N,
+    trackUserProfileAction: P
+  } = (0, m.KZ)(), A = (0, s.ZP)(), {
+    mutualFriends: C,
+    mutualFriendsCount: Z,
+    mutualGuilds: T,
+    isFetching: S
   } = (0, b.Z)(t), w = (0, d.Z)(), M = r.useMemo(() => [{
-    section: v.oh.MUTUAL_FRIENDS,
-    text: (0, h.Z)(C)
+    section: I.oh.MUTUAL_FRIENDS,
+    text: (0, h.Z)(Z)
   }, {
-    section: v.oh.MUTUAL_GUILDS,
-    text: (0, _.Z)(null == S ? void 0 : S.length)
-  }], [C, null == S ? void 0 : S.length]), [{
-    section: U,
-    text: E
+    section: I.oh.MUTUAL_GUILDS,
+    text: (0, y.Z)(null == T ? void 0 : T.length)
+  }], [Z, null == T ? void 0 : T.length]), [{
+    section: E,
+    text: U
   }, V] = r.useState(M[0]);
   return r.useEffect(() => {
-    U === v.oh.MUTUAL_FRIENDS && (0, y.Z)(t.id, w)
-  }, [U, t.id, w]), (0, o.jsxs)("div", {
+    E === I.oh.MUTUAL_FRIENDS && (0, g.Z)(t.id, w)
+  }, [E, t.id, w]), (0, o.jsxs)("div", {
     className: O.container,
     children: [(0, o.jsx)(a.njP, {
       className: O.tabBar,
-      selectedItem: U,
+      selectedItem: E,
       onItemSelect: e => {
         V(t => {
           var n;
           return null != (n = M.find(t => t.section === e)) ? n : t
-        }), N({
+        }), P({
           action: "PRESS_SECTION",
           section: e
         })
@@ -76,14 +76,14 @@ function A(e) {
         })
       }, e.section))
     }), (0, o.jsx)(a.njP.Panel, {
-      id: U,
-      "aria-label": E,
+      id: E,
+      "aria-label": U,
       className: O.tabBarPanel,
       children: (0, o.jsxs)(a.Ttm, {
         className: O.scroller,
         fade: !0,
-        children: [U === v.oh.MUTUAL_FRIENDS && (null == T ? Array.from({
-          length: null != C ? C : 10
+        children: [E === I.oh.MUTUAL_FRIENDS && (null == C ? Array.from({
+          length: null != Z ? Z : 10
         }).map((e, t) => (0, o.jsxs)("div", {
           className: c()(O.loadingItem, O.loadingMutualFriend),
           children: [(0, o.jsx)(f.ZT, {
@@ -93,29 +93,29 @@ function A(e) {
             width: 135,
             opacity: .08
           })]
-        }, t)) : 0 === T.length ? (0, o.jsxs)("div", {
+        }, t)) : 0 === C.length ? (0, o.jsxs)("div", {
           className: O.empty,
           children: [(0, o.jsx)("div", {
             className: c()(O.emptyImage, O.noMutualFriends)
           }), (0, o.jsx)(a.Text, {
             variant: "text-sm/normal",
             color: "header-primary",
-            children: I.intl.string(I.t["ru+2j4"])
+            children: v.intl.string(v.t["ru+2j4"])
           })]
-        }) : T.map(e => {
+        }) : C.map(e => {
           let {
             key: t,
             user: r,
             status: c
           } = e;
-          return (0, o.jsx)(j.T, {
+          return (0, o.jsx)(_.T, {
             user: r,
             status: c,
             onSelect: () => {
               var e, t;
-              n(), N({
+              n(), P({
                 action: "PRESS_MUTUAL_FRIEND"
-              }), (0, g.openUserProfileModal)((e = function(e) {
+              }), (0, j.openUserProfileModal)((e = function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var n = null != arguments[t] ? arguments[t] : {},
                     o = Object.keys(n);
@@ -132,7 +132,7 @@ function A(e) {
                   })
                 }
                 return e
-              }({}, A), t = t = {
+              }({}, N), t = t = {
                 userId: r.id,
                 sourceAnalyticsLocations: i
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
@@ -147,7 +147,7 @@ function A(e) {
               }), e))
             }
           }, t)
-        })), U === v.oh.MUTUAL_GUILDS && (null == S && Z ? Array.from({
+        })), E === I.oh.MUTUAL_GUILDS && (null == T && S ? Array.from({
           length: 10
         }).map((e, t) => (0, o.jsxs)("div", {
           className: c()(O.loadingItem, O.loadingMutualGuild),
@@ -158,7 +158,7 @@ function A(e) {
             width: 135,
             opacity: .08
           })]
-        }, t)) : (null != S || Z) && (null == S ? void 0 : S.length) !== 0 ? null == S ? void 0 : S.map(e => {
+        }, t)) : (null != T || S) && (null == T ? void 0 : T.length) !== 0 ? null == T ? void 0 : T.map(e => {
           let {
             guild: r,
             nick: i
@@ -167,9 +167,9 @@ function A(e) {
             user: t,
             guild: r,
             nick: i,
-            theme: P,
+            theme: A,
             onSelect: () => {
-              N({
+              P({
                 action: "PRESS_MUTUAL_GUILD"
               }), (0, p.X)(r.id), n(), (0, l.xf)()
             }
@@ -181,7 +181,7 @@ function A(e) {
           }), (0, o.jsx)(a.Text, {
             variant: "text-sm/normal",
             color: "header-primary",
-            children: I.intl.string(I.t.x5y3DA)
+            children: v.intl.string(v.t.x5y3DA)
           })]
         }))]
       })

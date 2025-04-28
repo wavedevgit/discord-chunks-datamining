@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  PE: () => y,
-  l: () => v,
-  pM: () => E
+  Z7: () => E,
+  g: () => O,
+  k9: () => I
 });
 var r = n(200651),
   i = n(192379),
@@ -73,112 +73,118 @@ function g(e, t) {
 }
 
 function E(e) {
-  let {
-    userId: t,
-    friendToken: n,
-    analyticsLocation: l,
-    shouldShowTooltip: c
-  } = e, u = i.useCallback(() => {
-    o.Z.addRelationship({
-      userId: t,
-      friendToken: n,
-      context: {
-        location: l
-      }
-    })
-  }, [l, n, t]);
-  return (0, r.jsx)(s.oY, {
+  var {
+    type: t,
+    userId: n,
+    friendToken: l,
+    analyticsLocation: c,
+    shouldShowTooltip: u
+  } = e, f = m(e, ["type", "userId", "friendToken", "analyticsLocation", "shouldShowTooltip"]);
+  let p = i.useCallback(() => {
+      o.Z.addRelationship({
+        userId: n,
+        friendToken: l,
+        context: {
+          location: c
+        }
+      })
+    }, [c, l, n]),
+    h = t === s.j8.TEXT ? s.tG : s.oY;
+  return (0, r.jsx)(h, _({
     action: "SEND_FRIEND_REQUEST",
     icon: a.oLu,
+    text: d.intl.string(d.t.w5uwoK),
     tooltipText: d.intl.string(d.t.w5uwoK),
-    shouldShowTooltip: c,
-    onClick: u
-  })
+    shouldShowTooltip: u,
+    onClick: p
+  }, f))
 }
 
 function b(e) {
   var {
-    user: t,
-    analyticsLocation: n
-  } = e, a = m(e, ["user", "analyticsLocation"]);
-  let o = (0, l.Y)({
-      user: t,
-      analyticsLocation: n
+    type: t,
+    user: n,
+    analyticsLocation: a
+  } = e, o = m(e, ["type", "user", "analyticsLocation"]);
+  let c = (0, l.Y)({
+      user: n,
+      analyticsLocation: a
     }),
-    c = i.useRef(null);
-  return 0 === o.length ? (0, r.jsx)(s.oY, h(_({}, a), {
+    u = i.useRef(null),
+    d = t === s.j8.ICON ? s.ef : s.oY;
+  return 0 === c.length ? (0, r.jsx)(d, h(_({}, o), {
     disabled: !0
   })) : (0, r.jsx)(l.Z, {
-    targetElementRef: c,
-    menuItems: o,
+    targetElementRef: u,
+    menuItems: c,
     children: e => (0, r.jsx)("div", h(_({
-      ref: c
+      ref: u
     }, e), {
-      children: (0, r.jsx)(s.oY, _({}, a))
+      children: (0, r.jsx)(d, _({}, o))
     }))
   })
 }
+let y = {
+    [u.OGo.FRIEND]: a._uN,
+    [u.OGo.PENDING_OUTGOING]: a.iHX,
+    [u.OGo.PENDING_INCOMING]: a.iHX
+  },
+  v = {
+    [u.OGo.FRIEND]: () => d.intl.string(d.t.G7jMpa),
+    [u.OGo.PENDING_OUTGOING]: () => d.intl.string(d.t["s/+byM"]),
+    [u.OGo.PENDING_INCOMING]: () => d.intl.string(d.t["6QQCQ0"])
+  };
 
-function y(e) {
-  let {
-    user: t,
-    relationshipType: n,
-    analyticsLocation: o,
-    shouldShowTooltip: s
-  } = e, l = i.useMemo(() => {
-    switch (n) {
-      case u.OGo.FRIEND:
-        return a._uN;
-      case u.OGo.PENDING_OUTGOING:
-      case u.OGo.PENDING_INCOMING:
-        return a.iHX
-    }
-  }, [n]), c = i.useMemo(() => {
-    switch (n) {
-      case u.OGo.FRIEND:
-        return d.intl.string(d.t.G7jMpa);
-      case u.OGo.PENDING_OUTGOING:
-        return d.intl.string(d.t["s/+byM"]);
-      case u.OGo.PENDING_INCOMING:
-        return d.intl.string(d.t["6QQCQ0"])
-    }
-  }, [n]);
-  return (0, r.jsx)(b, {
+function O(e) {
+  var {
+    type: t,
+    user: n,
+    relationshipType: i,
+    analyticsLocation: a,
+    shouldShowTooltip: o
+  } = e, s = m(e, ["type", "user", "relationshipType", "analyticsLocation", "shouldShowTooltip"]);
+  let l = y[i],
+    c = v[i]();
+  return (0, r.jsx)(b, _({
+    type: t,
+    user: n,
     icon: l,
     tooltipText: c,
-    shouldShowTooltip: s,
-    user: t,
-    analyticsLocation: o
-  })
+    shouldShowTooltip: o,
+    analyticsLocation: a
+  }, s))
 }
 
-function v(e) {
+function I(e) {
+  var {
+    type: t,
+    user: n,
+    gameFriends: i,
+    hasOutgoingPendingGameFriends: a,
+    hasIncomingPendingGameFriends: o,
+    analyticsLocation: s,
+    shouldShowTooltip: l
+  } = e, u = m(e, ["type", "user", "gameFriends", "hasOutgoingPendingGameFriends", "hasIncomingPendingGameFriends", "analyticsLocation", "shouldShowTooltip"]);
   let {
-    user: t,
-    gameFriends: n,
-    hasOutgoingPendingGameFriends: i,
-    hasIncomingPendingGameFriends: a,
-    analyticsLocation: o,
-    shouldShowTooltip: s
-  } = e, {
-    tooltipText: l,
-    onMouseEnter: u,
-    ariaLabel: d,
-    icon: f
+    tooltipText: d,
+    onMouseEnter: f,
+    ariaLabel: p,
+    icon: h
   } = (0, c.N)({
-    gameFriends: n,
-    hasOutgoingPendingGameFriends: i,
-    hasIncomingPendingGameFriends: a
+    gameFriends: i,
+    hasOutgoingPendingGameFriends: a,
+    hasIncomingPendingGameFriends: o
   });
-  return (0, r.jsx)(b, {
-    tooltipText: l,
+  return (0, r.jsx)(b, _({
+    type: t,
+    tooltipText: d,
     tooltipPosition: "left",
     tooltipAlign: "top",
-    ariaLabel: d,
-    shouldShowTooltip: s,
-    icon: f,
-    onMouseEnter: u,
-    user: t,
-    analyticsLocation: o
-  })
+    ariaLabel: p,
+    shouldShowTooltip: l,
+    icon: h,
+    onMouseEnter: f,
+    user: n,
+    analyticsLocation: s
+  }, u))
 }

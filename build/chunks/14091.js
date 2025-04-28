@@ -57,7 +57,8 @@ class S extends i.Component {
       null != t.props.searchResults && s()(t.props.searchResults).flatten().filter(e => e.isSearchHit).forEach(e => {
         null != e.content && "" !== e.content && (n++, /https?:\/\/[^\s]+/.test(e.content) && l++), null != e.embeds && e.embeds.length > 0 && i++, null != e.attachments && e.attachments.length > 0 && r++
       }), 0 === n ? (0, y.Qb)({
-        searchType: t.props.searchType
+        searchType: t.props.searchType,
+        searchAnalyticsId: t.props.searchAnalyticsId
       }) : (0, y.hM)({
         searchType: t.props.searchType,
         searchAnalyticsId: t.props.searchAnalyticsId,

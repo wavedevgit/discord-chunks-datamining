@@ -30,7 +30,8 @@ function f(e) {
     userId: t.id
   }), y = g.length > 0 || E || b;
   if (null == t || t.bot || h || m === d.OGo.BLOCKED) return null;
-  if (m === d.OGo.NONE && y) return f === u.lY.MODAL ? null : (0, r.jsx)(l.l, {
+  if (m === d.OGo.NONE && y) return f === u.lY.MODAL ? null : (0, r.jsx)(l.k9, {
+    type: "banner",
     user: t,
     gameFriends: g,
     hasOutgoingPendingGameFriends: E,
@@ -43,7 +44,8 @@ function f(e) {
     case d.OGo.PENDING_INCOMING:
     case d.OGo.PENDING_OUTGOING:
       if (f === u.lY.MODAL && m !== d.OGo.FRIEND) return null;
-      return (0, r.jsx)(l.PE, {
+      return (0, r.jsx)(l.g, {
+        type: "banner",
         user: t,
         relationshipType: m,
         analyticsLocation: p,
@@ -51,7 +53,8 @@ function f(e) {
       });
     default:
       if (f === u.lY.MODAL) return null;
-      return (0, r.jsx)(l.pM, {
+      return (0, r.jsx)(l.Z7, {
+        type: "banner",
         userId: t.id,
         shouldShowTooltip: _,
         friendToken: n,

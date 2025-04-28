@@ -28,7 +28,7 @@ var r = n(200651),
   T = n(544989),
   A = n(481932),
   N = n(195387),
-  C = n(272510),
+  C = n(664794),
   R = n(4517),
   P = n(978395),
   w = n(161572),
@@ -172,6 +172,7 @@ function B(e) {
                 themeType: D.lY.POPOUT,
                 user: t
               }), t.id !== n.id && (0, r.jsx)(C.Z, {
+                type: "banner",
                 user: t,
                 guildId: k,
                 viewProfileItem: eo(),
