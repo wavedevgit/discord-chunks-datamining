@@ -109,7 +109,7 @@ class z extends a.EventEmitter {
       let t = x.Z.hasLoaded(e.guildId);
       return B(F({}, e), {
         isFullyLoaded: t,
-        hasLoadedAnything: t
+        hasLoadedAnything: !0
       })
     }(0, k.vE)(e)
   }
@@ -254,10 +254,11 @@ class z extends a.EventEmitter {
       let e = this.state.channels.map(e => {
         if ("forum" !== e.type) return e;
         {
+          if (!e.hasLoadedAnything) return e;
           let t = x.Z.hasLoaded(e.guildId);
           return B(F({}, e), {
             isFullyLoaded: t,
-            hasLoadedAnything: t
+            hasLoadedAnything: !0
           })
         }
       });

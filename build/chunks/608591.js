@@ -22,6 +22,53 @@ function r(e) {
     }
   }
 }
+
+function i(e) {
+  return {
+    url: e.url,
+    width: e.width,
+    height: e.height,
+    thumbnail: e.thumbnail,
+    caption: e.caption,
+    transcript: e.transcript
+  }
+}
+
+function a(e) {
+  let t = {
+    video: i(e.video)
+  };
+  return null != e.video_low_res && (t.videoLowRes = i(e.video_low_res)), null != e.video_hls && (t.videoHls = i(e.video_hls)), t
+}
+
+function o(e) {
+  return {
+    videoTitle: e.video_title,
+    videoEndCtaTitle: e.video_end_cta_title,
+    videoEndCtaSubtitle: e.video_end_cta_subtitle,
+    videoEndCtaButtonLabel: e.video_end_cta_button_label
+  }
+}
+
+function s(e) {
+  let t = {
+    video: i(e.video)
+  };
+  return null != e.video_low_res && (t.videoLowRes = i(e.video_low_res)), null != e.video_hls && (t.videoHls = i(e.video_hls)), t
+}
+
+function l(e) {
+  return {
+    videoTitle: e.video_title,
+    videoEndCtaTitle: e.video_end_cta_title,
+    videoEndCtaSubtitle: e.video_end_cta_subtitle,
+    videoEndCtaButtonLabel: e.video_end_cta_button_label
+  }
+}
 n.d(t, {
-  F: () => r
+  FG: () => r,
+  I9: () => o,
+  _c: () => a,
+  c1: () => s,
+  jZ: () => l
 })
