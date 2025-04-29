@@ -6,7 +6,7 @@ n.d(t, {
 var r = n(147913),
   i = n(695346);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -14,20 +14,20 @@ function a(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let o = !1;
+let a = !1;
 class s extends r.Z {
   maybeShowChangeLanguageToast() {}
   setVerifyTimezone() {
-    o = !0
+    a = !0
   }
   ensureTimezoneUpdated() {
-    if (!o) return;
-    o = !1;
+    if (!a) return;
+    a = !1;
     let e = new Date().getTimezoneOffset();
     i.rN.getSetting() !== e && setImmediate(() => i.rN.updateSetting(e))
   }
   constructor(...e) {
-    super(...e), a(this, "actions", {
+    super(...e), o(this, "actions", {
       POST_CONNECTION_OPEN: () => {
         this.setVerifyTimezone(), this.maybeShowChangeLanguageToast()
       },

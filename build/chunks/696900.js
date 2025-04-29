@@ -4,8 +4,8 @@ let r;
 n.d(t, {
   Z: () => d
 });
-var i, a = n(442837),
-  o = n(570140),
+var i, o = n(442837),
+  a = n(570140),
   s = n(353368);
 
 function l(e, t, n) {
@@ -19,7 +19,7 @@ function l(e, t, n) {
 let c = () => {
   r = r === s.q.BASIC ? s.q.PREMIUM : s.q.BASIC
 };
-class u extends(i = a.ZP.PersistedStore) {
+class u extends(i = o.ZP.PersistedStore) {
   initialize(e) {
     var t;
     r = null != (t = null == e ? void 0 : e.animationType) ? t : s.q.PREMIUM
@@ -31,6 +31,6 @@ class u extends(i = a.ZP.PersistedStore) {
   }
 }
 l(u, "displayName", "VoiceChannelEffectsPersistedStore"), l(u, "persistKey", "VoiceChannelEffectsPersistedStore");
-let d = new u(o.Z, {
+let d = new u(a.Z, {
   VOICE_CHANNEL_EFFECT_TOGGLE_ANIMATION_TYPE: c
 })

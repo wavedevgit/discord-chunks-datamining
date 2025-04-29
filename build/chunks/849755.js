@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(481060),
   c = n(906732),
@@ -27,7 +27,7 @@ function v(e) {
   let {
     voiceChannel: t,
     onAction: n,
-    onClose: a
+    onClose: o
   } = e, {
     themeType: v
   } = (0, m.z)(), {
@@ -45,7 +45,7 @@ function v(e) {
   let C = e => {
     e.stopPropagation(), n({
       action: "PRESS_VOICE_CHANNEL_STATUS"
-    }), v === E.lY.POPOUT && (null == a || a()), (0, d.Z)({
+    }), v === E.lY.POPOUT && (null == o || o()), (0, d.Z)({
       channel: t,
       sourceAnalyticsLocations: I
     })
@@ -61,7 +61,7 @@ function v(e) {
     }), (0, r.jsx)(l.vdY, {
       color: "currentColor",
       size: "xxs",
-      className: o()(O.pencilIcon, null != N ? O.hidden : void 0),
+      className: a()(O.pencilIcon, null != N ? O.hidden : void 0),
       "aria-label": y.intl.string(y.t.bt75u7)
     })]
   }) : null != N ? (0, r.jsx)(g.Z, {

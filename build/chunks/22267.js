@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(780384),
   c = n(481060),
@@ -26,16 +26,16 @@ let v = e => {
   let {
     user: t,
     nameplate: n,
-    nameplateData: a,
+    nameplateData: o,
     className: v,
     innerClassName: I,
     isHighlighted: S,
     showStatus: T,
     showWumpus: A,
     isPurchased: N = !1
-  } = e, C = (0, s.e7)([p.Z], () => (0, l.wj)(p.Z.theme)), R = null != n ? (0, g.EU)(n) : a, P = (0, s.e7)([h.Z], () => h.Z.getStatus(t.id)), w = C ? "#706F74" : "#aaaab2", D = i.useRef(null);
+  } = e, C = (0, s.e7)([p.Z], () => (0, l.wj)(p.Z.theme)), R = null != n ? (0, g.EU)(n) : o, P = (0, s.e7)([h.Z], () => h.Z.getStatus(t.id)), w = C ? "#706F74" : "#aaaab2", D = i.useRef(null);
   return (0, r.jsxs)("div", {
-    className: o()(v, b.nameplatePreview, {
+    className: a()(v, b.nameplatePreview, {
       [b.nameplatePurchased]: N && !S
     }),
     style: {
@@ -49,7 +49,7 @@ let v = e => {
     }, null == n ? void 0 : n.id), (0, r.jsxs)("div", {
       className: b.overlayContainer,
       children: [(0, r.jsx)("div", {
-        className: o()(b.avatarContainer, !A && b.avatarVisible),
+        className: a()(b.avatarContainer, !A && b.avatarVisible),
         children: (0, r.jsx)(u.Z, {
           ref: D,
           avatar: (0, r.jsx)(d.Z, {
@@ -63,7 +63,7 @@ let v = e => {
           innerClassName: I
         })
       }), (0, r.jsx)("div", {
-        className: o()(b.avatarContainer, A && b.avatarVisible),
+        className: a()(b.avatarContainer, A && b.avatarVisible),
         children: (0, r.jsx)(u.Z, {
           avatar: (0, r.jsx)(c.qEK, {
             src: C ? y : O,
@@ -73,7 +73,7 @@ let v = e => {
             statusColor: w
           }),
           name: (0, r.jsx)("div", {
-            className: o()(b.placeholderUsername, b.placeholderUsernameColor)
+            className: a()(b.placeholderUsername, b.placeholderUsernameColor)
           })
         })
       })]

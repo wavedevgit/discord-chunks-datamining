@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  o: () => o
+  o: () => a
 }), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685);
 var r = n(593473),
   i = n(591759);
-let a = e => {
+let o = e => {
     if (null == e || "" === e) return null;
     try {
       let t = new URL(e);
@@ -14,10 +14,10 @@ let a = e => {
       return null
     }
   },
-  o = e => {
+  a = e => {
     let t = (0, r.parse)(e);
     return {
-      desktop: a(t.desktop_link),
-      mobile: a(t.mobile_link)
+      desktop: o(t.desktop_link),
+      mobile: o(t.mobile_link)
     }
   }

@@ -2,19 +2,19 @@
 "use strict";
 n.d(t, {
   Zg: () => l,
-  pj: () => o,
+  pj: () => a,
   pr: () => s
 }), n(642613);
 var r = n(544891),
   i = n(570140),
-  a = n(981631);
+  o = n(981631);
 
-function o(e) {
+function a(e) {
   i.Z.dispatch({
     type: "TOP_EMOJIS_FETCH",
     guildId: e
   }), r.tn.get({
-    url: a.ANM.TOP_EMOJIS_FOR_GUILD(e),
+    url: o.ANM.TOP_EMOJIS_FOR_GUILD(e),
     oldFormErrors: !0,
     rejectWithError: !0
   }).then(t => i.Z.dispatch({

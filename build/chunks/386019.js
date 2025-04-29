@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(481060),
-  o = n(100527),
+  o = n(481060),
+  a = n(100527),
   s = n(906732),
   l = n(896449),
   c = n(960870),
@@ -28,7 +28,7 @@ function _(e) {
     targetElementRef: y
   } = e, [O, v] = i.useState(!1), {
     analyticsLocations: I
-  } = (0, s.ZP)(o.Z.USER_PROFILE_ACTIVITY_CONTEXT_MENU), S = (0, c.Z)({
+  } = (0, s.ZP)(a.Z.USER_PROFILE_ACTIVITY_CONTEXT_MENU), S = (0, c.Z)({
     display: m,
     user: _,
     activity: p,
@@ -44,7 +44,7 @@ function _(e) {
     isMenuOpen: O,
     appContext: b
   });
-  return 0 === N.length || _.bot ? null : (0, r.jsx)(a.yRy, {
+  return 0 === N.length || _.bot ? null : (0, r.jsx)(o.yRy, {
     targetElementRef: null != y ? y : A,
     align: "top",
     position: "right",
@@ -60,14 +60,14 @@ function _(e) {
       } = e;
       return (0, r.jsx)("div", {
         onClick: e => e.stopPropagation(),
-        children: (0, r.jsx)(a.v2r, {
+        children: (0, r.jsx)(o.v2r, {
           navId: l.N,
           onClose: () => {
             t(), v(!1)
           },
           "aria-label": f.intl.string(f.t.PlAQz8),
           onSelect: g,
-          children: (0, r.jsx)(a.kSQ, {
+          children: (0, r.jsx)(o.kSQ, {
             children: N
           })
         })

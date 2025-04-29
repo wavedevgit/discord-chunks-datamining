@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(481060),
   c = n(607070),
@@ -25,7 +25,7 @@ function y(e) {
   let {
     windowKey: t,
     children: n
-  } = e, a = null != t, [y] = i.useState(() => g.ZP.getEnableHardwareAcceleration()), {
+  } = e, o = null != t, [y] = i.useState(() => g.ZP.getEnableHardwareAcceleration()), {
     locale: O,
     theme: v,
     focused: I,
@@ -45,8 +45,8 @@ function y(e) {
     return {
       locale: p.default.locale,
       theme: h.Z.theme,
-      focused: a ? f.Z.getWindowFocused(t) : m.Z.isFocused(),
-      currentWindow: a && null != (e = f.Z.getWindow(t)) ? e : window,
+      focused: o ? f.Z.getWindowFocused(t) : m.Z.isFocused(),
+      currentWindow: o && null != (e = f.Z.getWindow(t)) ? e : window,
       fontScale: c.Z.fontScale,
       fontScaleClass: c.Z.fontScaleClass,
       keyboardModeEnabled: c.Z.keyboardModeEnabled,
@@ -84,7 +84,7 @@ function y(e) {
       useReducedMotion: D,
       alwaysShowLinkDecorations: L,
       hardwareAccelerationEnabled: y,
-      rootClassName: o()({
+      rootClassName: a()({
         "confetti-mode": x,
         "refresh-fast-follow-avatars": U,
         "refresh-fast-follow-guild-bg": G

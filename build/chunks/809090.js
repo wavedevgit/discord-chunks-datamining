@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(686546),
   l = n(768581),
   c = n(895924),
@@ -56,8 +56,8 @@ function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -65,8 +65,8 @@ function m(e, t) {
 function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -74,7 +74,7 @@ function E(e) {
   var {
     section: t,
     isSelected: n,
-    width: a,
+    width: o,
     height: f,
     className: p,
     selectable: g = !1,
@@ -99,11 +99,11 @@ function E(e) {
       icon: t.icon,
       bot: null == (e = t.application) ? void 0 : e.bot,
       botIconFirst: !0,
-      size: a
+      size: o
     })
-  }, [t, a]);
+  }, [t, o]);
   return (0, r.jsx)("div", h(_({}, I), {
-    className: o()(u.wrapper, p, {
+    className: a()(u.wrapper, p, {
       [u.selectable]: g,
       [u.selected]: g && n
     }),
@@ -114,13 +114,13 @@ function E(e) {
     children: (0, r.jsx)(s.ZP, {
       className: u.mask,
       mask: E || g && (n || S) ? s.QS.SQUIRCLE : s.QS.AVATAR_DEFAULT,
-      width: a,
+      width: o,
       height: f,
       children: (0, r.jsx)("img", {
         alt: "",
         className: u.icon,
         style: {
-          width: a,
+          width: o,
           height: f
         },
         src: P

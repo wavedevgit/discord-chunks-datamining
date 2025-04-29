@@ -1,17 +1,17 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  z: () => o
+  z: () => a
 }), n(997841), n(415506);
 var r = n(255367),
   i = n(73800),
-  a = n(710260);
+  o = n(710260);
 
-function o(e) {
+function a(e) {
   let {
     children: t,
     theme: n,
-    primaryColor: o,
+    primaryColor: a,
     secondaryColor: s,
     gradient: l,
     flags: c,
@@ -19,11 +19,11 @@ function o(e) {
     saturation: d,
     density: f,
     disableAdaptiveTheme: _
-  } = e, p = i.useContext(a.Ni);
-  a.qF;
-  let h = i.useMemo(() => (0, a.TT)({
+  } = e, p = i.useContext(o.Ni);
+  o.qF;
+  let h = i.useMemo(() => (0, o.TT)({
     theme: null != n ? n : p.theme,
-    primaryColor: null != o ? o : p.primaryColor,
+    primaryColor: null != a ? a : p.primaryColor,
     secondaryColor: null != s ? s : p.secondaryColor,
     gradient: null != l ? l : p.gradient,
     flags: null != c ? c : p.flags,
@@ -31,8 +31,8 @@ function o(e) {
     saturation: null != d ? d : p.saturation,
     density: null != f ? f : p.density,
     disableAdaptiveTheme: null != _ ? _ : p.disableAdaptiveTheme
-  }), [n, p.theme, p.primaryColor, p.secondaryColor, p.gradient, p.flags, p.contrast, p.saturation, p.density, p.disableAdaptiveTheme, o, s, l, c, u, d, f, _]);
-  return (0, r.jsx)(a.Ni.Provider, {
+  }), [n, p.theme, p.primaryColor, p.secondaryColor, p.gradient, p.flags, p.contrast, p.saturation, p.density, p.disableAdaptiveTheme, a, s, l, c, u, d, f, _]);
+  return (0, r.jsx)(o.Ni.Provider, {
     value: h,
     children: t
   })

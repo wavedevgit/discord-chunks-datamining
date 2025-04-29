@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   s = n(100527),
   l = n(906732),
   c = n(699516),
@@ -56,7 +56,7 @@ function S(e) {
     openedAt: N,
     onHide: C,
     newAnalyticsLocations: R = []
-  } = e, P = (0, a.e7)([c.Z], () => c.Z.isBlocked(t.id)), {
+  } = e, P = (0, o.e7)([c.Z], () => c.Z.isBlocked(t.id)), {
     analyticsLocations: w
   } = (0, l.ZP)([...R, P ? s.Z.BLOCKED_PROFILE_POPOUT : s.Z.IGNORED_PROFILE_POPOUT]), D = (0, d.ZB)({
     layout: "POPOUT",
@@ -78,7 +78,7 @@ function S(e) {
       fetchStartedAt: null == x ? void 0 : x.fetchStartedAt,
       fetchEndedAt: null == x ? void 0 : x.fetchEndedAt,
       isLoaded: null == x ? void 0 : x.isLoaded,
-      children: (0, r.jsx)(o.VqE, {
+      children: (0, r.jsx)(a.VqE, {
         ref: L,
         "aria-label": t.username,
         children: (0, r.jsx)(h.Z, {
@@ -99,16 +99,16 @@ function S(e) {
                 children: [(0, r.jsx)(p.Z, {
                   user: t,
                   guildId: n
-                }), (0, r.jsx)(o.X6q, {
+                }), (0, r.jsx)(a.X6q, {
                   variant: "heading-lg/bold",
                   children: b.intl.string(b.t.b33pLC)
-                }), (0, r.jsx)(o.Text, {
+                }), (0, r.jsx)(a.Text, {
                   variant: "text-sm/medium",
                   children: b.intl.format(P ? b.t["8F+WNz"] : b.t["/cZp5u"], {
                     username: u.ZP.getName(n, S, t)
                   })
                 })]
-              }), (0, r.jsxs)(o.Kqy, {
+              }), (0, r.jsxs)(a.Kqy, {
                 align: "center",
                 children: [(0, r.jsx)(g.Z, {
                   isBlocked: P,

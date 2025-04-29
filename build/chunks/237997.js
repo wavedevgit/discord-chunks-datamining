@@ -4,8 +4,8 @@ let r;
 n.r(t), n.d(t, {
   default: () => eT
 }), n(388685), n(415506);
-var i, a = n(442837),
-  o = n(433517),
+var i, o = n(442837),
+  a = n(433517),
   s = n(570140),
   l = n(284737),
   c = n(490029),
@@ -67,8 +67,8 @@ function C(e, t) {
   if (null == e) return {};
   var n, r, i = R(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -76,8 +76,8 @@ function C(e, t) {
 function R(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let P = Object.freeze({
@@ -123,18 +123,18 @@ function Y(e) {
 
 function W(e) {
   if ("OVERLAY_INITIALIZE" === e.type && Y(e) && (j = !0), j) {
-    var t, n, r, i, a;
+    var t, n, r, i, o;
     switch (e.type) {
       case "CHANNEL_CREATE":
       case "THREAD_CREATE":
       case "THREAD_UPDATE":
       case "CHANNEL_DELETE":
       case "THREAD_DELETE":
-        let o = (0, f.kt)(e.channel);
-        if (!f.AW.has(o.type)) break;
+        let a = (0, f.kt)(e.channel);
+        if (!f.AW.has(a.type)) break;
         s.Z.dispatch({
           type: e.type,
-          channel: o
+          channel: a
         });
         break;
       case "CHANNEL_UPDATES":
@@ -154,7 +154,7 @@ function W(e) {
       case "GUILD_CREATE":
         let l = e => (0, f.kt)(e),
           c = e.guild;
-        c.channels = null != (i = null == (n = c.channels) ? void 0 : n.map(l)) ? i : null, c.threads = null == (r = c.threads) ? void 0 : r.map(l), null != c.channelUpdates && (c.channelUpdates.writes = null == (a = c.channelUpdates.writes) ? void 0 : a.map(l)), s.Z.dispatch({
+        c.channels = null != (i = null == (n = c.channels) ? void 0 : n.map(l)) ? i : null, c.threads = null == (r = c.threads) ? void 0 : r.map(l), null != c.channelUpdates && (c.channelUpdates.writes = null == (o = c.channelUpdates.writes) ? void 0 : o.map(l)), s.Z.dispatch({
           type: "GUILD_CREATE",
           guild: c
         });
@@ -247,14 +247,14 @@ function ei(e) {
   F.selectedGuildId = t, F.selectedChannelId = n
 }
 
-function ea(e) {
+function eo(e) {
   let {
     callId: t
   } = e;
   L = t
 }
 
-function eo() {
+function ea() {
   L = null
 }
 
@@ -377,7 +377,7 @@ function eO(e) {
   let t = (0, b.getPID)();
   if (null == e.pid || e.pid === t) switch (e.type) {
     case v.BmY.STORAGE_SYNC:
-      a.ZP.PersistedStore.initializeAll(e.states);
+      o.ZP.PersistedStore.initializeAll(e.states);
       break;
     case v.BmY.DISPATCH:
       null != e.payloads && (k = !0, e.payloads.forEach(e => W(e)), k = !1)
@@ -395,7 +395,7 @@ function ev() {
 function eI(e) {
   x.delete(e.previousAssociatedGamePID)
 }
-class eS extends(i = a.ZP.PersistedStore) {
+class eS extends(i = o.ZP.PersistedStore) {
   initialize(e) {
     if (this.waitFor(_.default), this.syncWith([_.default], () => {
         let e = _.default.getId();
@@ -494,15 +494,15 @@ class eS extends(i = a.ZP.PersistedStore) {
   }
 }
 S(eS, "displayName", "OverlayStore"), S(eS, "persistKey", "OverlayStoreV2"), S(eS, "migrations", [() => {
-  let e = T({}, o.K.get("OverlayStore")),
+  let e = T({}, a.K.get("OverlayStore")),
     {
       pinnedWidgets: t,
       positions: n,
       sizes: r,
       v: i
     } = e,
-    a = C(e, ["pinnedWidgets", "positions", "sizes", "v"]);
-  return T({}, P, 5 === i ? a : null)
+    o = C(e, ["pinnedWidgets", "positions", "sizes", "v"]);
+  return T({}, P, 5 === i ? o : null)
 }, e => {
   let t = _.default.getId();
   return null == e || null == t ? {} : {
@@ -518,8 +518,8 @@ let eT = new eS(s.Z, {
   OVERLAY_READY: X,
   OVERLAY_FOCUSED: er,
   OVERLAY_SELECT_CHANNEL: ei,
-  OVERLAY_SELECT_CALL: ea,
-  CALL_DELETE: eo,
+  OVERLAY_SELECT_CALL: eo,
+  CALL_DELETE: ea,
   LAYOUT_CREATE: $,
   OVERLAY_SET_DISPLAY_NAME_MODE: ec,
   OVERLAY_SET_DISPLAY_USER_MODE: eu,

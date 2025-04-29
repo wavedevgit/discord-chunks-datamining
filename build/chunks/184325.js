@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(481060),
+  o = n.n(i),
+  a = n(481060),
   s = n(315263),
   l = n(100527),
   c = n(906732),
@@ -86,7 +86,7 @@ function k(e) {
     trackUserProfileAction: G
   } = (0, v.KZ)(), B = E.default.getCurrentUser(), V = (0, y.yd)(null == B ? void 0 : B.premiumType, R.p9.TIER_2), F = (0, T.Of)(null != (t = null == B ? void 0 : B.id) ? t : null), Z = (0, S.Z)(F).some(e => e.id === m.l.ORB_PROFILE_BADGE);
   return (0, r.jsx)("div", {
-    className: a()(D.container, i),
+    className: o()(D.container, i),
     "aria-label": w.intl.string(w.t.VWV0y8),
     role: "group",
     children: n.map((e, t) => {
@@ -148,12 +148,12 @@ function k(e) {
           tieredTenureBadge: E && e.id !== P.a ? c : void 0,
           currentUserOwnsOrbBadge: Z
         });
-      return (0, r.jsx)(o.DY3, {
+      return (0, r.jsx)(a.DY3, {
         text: T,
         "aria-label": e.description,
         forceOpen: null != k && k(e.id),
         delay: A.vB,
-        children: (0, r.jsx)(o.eee, {
+        children: (0, r.jsx)(a.eee, {
           onClick: y,
           onMouseEnter: v,
           href: e.link,
@@ -161,7 +161,7 @@ function k(e) {
             alt: " ",
             "aria-hidden": !0,
             src: null != (n = e.iconSrc) ? n : (0, A.Ej)(e.icon),
-            className: a()(D.badge, d)
+            className: o()(D.badge, d)
           })
         })
       }, "".concat(e.id, "-").concat(t))

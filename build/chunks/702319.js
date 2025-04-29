@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(255367),
   i = n(225893);
 
-function a(e, t, n, a) {
+function o(e, t, n, o) {
   return (0, r.jsx)("img", {
-    className: a,
+    className: o,
     src: i,
     alt: ""
   }, t)

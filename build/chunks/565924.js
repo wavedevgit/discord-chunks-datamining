@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(592125),
   i = n(981631);
 
-function a(e) {
+function o(e) {
   if (null == e.parent_id)
     if (e.type === i.d4z.GUILD_CATEGORY) return (e.position + 1) * 1e3;
     else return e.position;
@@ -17,13 +17,13 @@ function a(e) {
   }
 }
 
-function o(e, t) {
-  var n, r, i, o, s, l;
+function a(e, t) {
+  var n, r, i, a, s, l;
   if (e.score !== t.score) return t.score - e.score;
-  let c = a(e.record),
-    u = a(t.record);
+  let c = o(e.record),
+    u = o(t.record);
   if (c !== u) return c - u;
-  let d = null != (o = null != (i = e.sortable) ? i : null == (n = e.comparator) ? void 0 : n.toLocaleLowerCase()) ? o : "",
+  let d = null != (a = null != (i = e.sortable) ? i : null == (n = e.comparator) ? void 0 : n.toLocaleLowerCase()) ? a : "",
     f = null != (l = null != (s = e.sortable) ? s : null == (r = t.comparator) ? void 0 : r.toLocaleLowerCase()) ? l : "";
   return d < f ? -1 : +(d > f)
 }

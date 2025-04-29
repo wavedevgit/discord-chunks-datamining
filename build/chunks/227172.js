@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(758713),
-  o = n(442837),
+  o = n(758713),
+  a = n(442837),
   s = n(481060),
   l = n(620662),
   c = n(841784),
@@ -56,14 +56,14 @@ function L(e) {
   return e
 }
 let x = {
-    [a.z.DESKTOP]: null,
-    [a.z.LINUX]: null,
-    [a.z.MACOS]: null,
-    [a.z.NINTENDO]: null,
-    [a.z.IOS]: null,
-    [a.z.ANDROID]: null,
-    [a.z.XBOX]: h.Z,
-    [a.z.PLAYSTATION]: p.Z
+    [o.z.DESKTOP]: null,
+    [o.z.LINUX]: null,
+    [o.z.MACOS]: null,
+    [o.z.NINTENDO]: null,
+    [o.z.IOS]: null,
+    [o.z.ANDROID]: null,
+    [o.z.XBOX]: h.Z,
+    [o.z.PLAYSTATION]: p.Z
   },
   M = e => {
     let {
@@ -86,7 +86,7 @@ let x = {
     } = (0, R.n)(n), {
       primaryColor: F,
       secondaryColor: Z
-    } = (0, S.Z)(null == j ? void 0 : j.src), H = (0, o.e7)([_.default], () => _.default.locale), {
+    } = (0, S.Z)(null == j ? void 0 : j.src), H = (0, a.e7)([_.default], () => _.default.locale), {
       streamPreviewUrl: Y,
       stream: W
     } = (0, b.Z)(n), {
@@ -94,7 +94,7 @@ let x = {
       participant1: z,
       participant2: q,
       numOtherParticipants: Q
-    } = (0, E.Z)(n, 3), X = n.extra.platform, J = null != X ? x[X] : null, $ = X === a.z.XBOX ? P.ABu.XBOX : X === a.z.PLAYSTATION ? P.ABu.PLAYSTATION : void 0, ee = (0, I.Z)($), et = i.useCallback(e => {
+    } = (0, E.Z)(n, 3), X = n.extra.platform, J = null != X ? x[X] : null, $ = X === o.z.XBOX ? P.ABu.XBOX : X === o.z.PLAYSTATION ? P.ABu.PLAYSTATION : void 0, ee = (0, I.Z)($), et = i.useCallback(e => {
       if ((null == j ? void 0 : j.src) == null || null == t || null == U) return;
       let r = Q > 0 ? (0, v.VY)({
         entry: n,

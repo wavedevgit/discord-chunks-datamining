@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(73800);
 let i = Object.freeze({
@@ -14,7 +14,7 @@ let i = Object.freeze({
   dirty: 0
 });
 
-function a() {
+function o() {
   let e = (0, r.useRef)(null),
     t = (0, r.useCallback)(() => {
       let {
@@ -26,16 +26,16 @@ function a() {
           scrollLeft: n,
           scrollHeight: r,
           scrollWidth: i,
-          offsetHeight: a,
-          offsetWidth: o
+          offsetHeight: o,
+          offsetWidth: a
         } = t;
         return {
           scrollTop: e,
           scrollLeft: n,
           scrollHeight: r,
           scrollWidth: i,
-          offsetHeight: a,
-          offsetWidth: o,
+          offsetHeight: o,
+          offsetWidth: a,
           dirty: 0
         }
       }

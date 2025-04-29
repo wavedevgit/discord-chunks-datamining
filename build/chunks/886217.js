@@ -5,8 +5,8 @@ n.d(t, {
 }), n(804061), n(704826), n(35282);
 var r = n(255367),
   i = n(73800),
-  a = n(317261),
-  o = n(423875),
+  o = n(317261),
+  a = n(423875),
   s = n(442837),
   l = n(18323),
   c = n(594174),
@@ -26,15 +26,15 @@ var r = n(255367),
   I = n(388032);
 
 function S(e) {
-  if (e === a._.WEEK) return I.t.SjOZfn
+  if (e === o._.WEEK) return I.t.SjOZfn
 }
 let T = (e, t, n, r) => {
     let i = S(r),
-      a = f.ZP.getName(t.guild_id, t.id, n),
-      o = e.extra.artist.name;
+      o = f.ZP.getName(t.guild_id, t.id, n),
+      a = e.extra.artist.name;
     return I.intl.formatToMarkdownString(i, {
-      artist: o,
-      userName: a
+      artist: a,
+      userName: o
     }).replaceAll("*", "")
   },
   A = (e, t) => I.intl.formatToPlainString(I.t.Osmpr6, {
@@ -45,7 +45,7 @@ let T = (e, t, n, r) => {
     let {
       channel: t,
       entry: n,
-      onReaction: a,
+      onReaction: o,
       onVoiceChannelPreview: f
     } = e, {
       parent_title: S,
@@ -85,7 +85,7 @@ let T = (e, t, n, r) => {
         onClickThumbnail: k,
         channel: t,
         entry: n,
-        headerIcons: N === o.p.SPOTIFY ? (0, r.jsx)(y.Z, {
+        headerIcons: N === a.p.SPOTIFY ? (0, r.jsx)(y.Z, {
           onClick: M,
           Icon: u.Z,
           "aria-label": I.intl.string(I.t["0ZB/XF"])
@@ -101,7 +101,7 @@ let T = (e, t, n, r) => {
         })
       }), (0, r.jsx)(b.St, {
         children: (0, r.jsx)(b.WT, {
-          onReaction: a,
+          onReaction: o,
           onVoiceChannelPreview: f,
           user: P,
           channel: t,

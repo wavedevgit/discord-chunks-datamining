@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(147913),
   i = n(594190),
-  a = n(77498),
-  o = n(454293);
+  o = n(77498),
+  a = n(454293);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -21,8 +21,8 @@ function l(e) {
   var t, n;
   let {
     game: r
-  } = e, s = i.ZP.isDetectionEnabled(r), l = null != (n = r.id) ? n : null == (t = a.Z.getGameByName(r.name)) ? void 0 : t.id;
-  null != l && (0, o.M)(l, s)
+  } = e, s = i.ZP.isDetectionEnabled(r), l = null != (n = r.id) ? n : null == (t = o.Z.getGameByName(r.name)) ? void 0 : t.id;
+  null != l && (0, a.M)(l, s)
 }
 class c extends r.Z {
   constructor(...e) {

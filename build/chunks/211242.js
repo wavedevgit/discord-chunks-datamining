@@ -6,7 +6,7 @@ n.d(t, {
 });
 var r = n(818083),
   i = n(847903);
-let a = (0, r.B)({
+let o = (0, r.B)({
     kind: "user",
     id: "2022-03_block_russian_purchases",
     label: "Block purchases based on country",
@@ -21,7 +21,7 @@ let a = (0, r.B)({
       }
     }]
   }),
-  o = (0, r.B)({
+  a = (0, r.B)({
     kind: "user",
     id: "2022-03_block_russian_purchases_desktop",
     label: "Block purchases based on country (desktop specific flags)",
@@ -40,13 +40,13 @@ let a = (0, r.B)({
 function s() {
   let {
     paymentsBlocked: e
-  } = a.useExperiment({
+  } = o.useExperiment({
     location: "c519a9_1"
   }, {
     autoTrackExposure: !1
   }), {
     checkPaymentSource: t
-  } = o.useExperiment({
+  } = a.useExperiment({
     location: "c519a9_2"
   }, {
     autoTrackExposure: !1
@@ -55,4 +55,4 @@ function s() {
   } = (0, i.Z)();
   return e || t && "RU" === n
 }
-let l = a
+let l = o

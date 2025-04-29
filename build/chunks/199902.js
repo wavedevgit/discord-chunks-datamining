@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
-let r, i, a, o, s, l;
+let r, i, o, a, s, l;
 n.d(t, {
-  Z: () => ea
+  Z: () => eo
 }), n(388685), n(539854);
 var c, u = n(442837),
   d = n(570140),
@@ -67,7 +67,7 @@ let L = null,
   M = null;
 
 function k() {
-  r = new Map, i = {}, a = {}, o = {}
+  r = new Map, i = {}, o = {}, a = {}
 }
 
 function j(e) {
@@ -98,7 +98,7 @@ function V(e) {
   let {
     applicationStreamState: t
   } = e;
-  i = t.streamsByUserAndGuild, r = new Map(t.activeStreams), a = t.rtcStreams, o = t.streamerActiveStreamMetadatas
+  i = t.streamsByUserAndGuild, r = new Map(t.activeStreams), o = t.rtcStreams, a = t.streamerActiveStreamMetadatas
 }
 
 function F(e) {
@@ -110,11 +110,11 @@ function F(e) {
       userId: n,
       guildId: r,
       channelId: i,
-      sessionId: a,
-      selfStream: o,
+      sessionId: o,
+      selfStream: a,
       discoverable: s
     } = t;
-    if (o && null != i) return j({
+    if (a && null != i) return j({
       streamType: null != r ? C.lo.GUILD : C.lo.CALL,
       ownerId: n,
       guildId: r,
@@ -123,7 +123,7 @@ function F(e) {
     }), !0;
     {
       let t = b.default.getSessionId();
-      return n === b.default.getId() && a !== t && null != S.Z.getChannelId() ? e : U(n, r) || e
+      return n === b.default.getId() && o !== t && null != S.Z.getChannelId() ? e : U(n, r) || e
     }
   }, !1)
 }
@@ -142,7 +142,7 @@ function H(e) {
   let {
     streamType: n,
     guildId: i,
-    channelId: a,
+    channelId: o,
     pid: c,
     sourceName: u,
     sourceId: d,
@@ -151,12 +151,12 @@ function H(e) {
   } = e, m = (0, p.V9)({
     streamType: n,
     guildId: i,
-    channelId: a,
+    channelId: o,
     ownerId: b.default.getId()
   });
   (null == d ? void 0 : d.startsWith("prepicked:")) && null == c && (c = s);
   let g = null != (t = (null == d ? void 0 : d.startsWith("prepicked:")) && null != l ? l : null != c ? _.ZP.getGameForPID(c) : null != d ? _.ZP.getRunningGames().find(e => (0, E.Z)(d, e.windowHandle)) : null) ? t : null;
-  o[m] = {
+  a[m] = {
     id: null == g ? void 0 : g.id,
     pid: c,
     sourceName: u,
@@ -166,7 +166,7 @@ function H(e) {
   }, r.delete(m), r.set(m, {
     streamType: n,
     guildId: i,
-    channelId: a,
+    channelId: o,
     ownerId: b.default.getId(),
     state: N.jm8.CONNECTING
   })
@@ -196,19 +196,19 @@ function W(e) {
       id: null == l ? void 0 : l.id
     };
   null != r && (i.sourceName = r);
-  let a = !1;
-  for (let e in o) {
+  let o = !1;
+  for (let e in a) {
     var c, u;
-    (null == (u = o[e]) || null == (c = u.sourceId) ? void 0 : c.startsWith("prepicked:")) && (o[e] = P({}, o[e], i), a = !0)
+    (null == (u = a[e]) || null == (c = u.sourceId) ? void 0 : c.startsWith("prepicked:")) && (a[e] = P({}, a[e], i), o = !0)
   }
-  return a
+  return o
 }
 
 function K(e) {
   let {
     streamKey: t
   } = e;
-  o[t] = null
+  a[t] = null
 }
 
 function z(e) {
@@ -216,11 +216,11 @@ function z(e) {
     streamKey: t,
     region: n,
     viewerIds: i,
-    paused: o
+    paused: a
   } = e;
   r.set(t, D(P({}, (0, p.my)(t)), {
-    state: o ? N.jm8.PAUSED : N.jm8.ACTIVE
-  })), a[t] = {
+    state: a ? N.jm8.PAUSED : N.jm8.ACTIVE
+  })), o[t] = {
     streamKey: t,
     region: n,
     viewerIds: i
@@ -248,15 +248,15 @@ function X(e) {
   let {
     streamKey: t,
     unavailable: i,
-    reason: o
+    reason: a
   } = e;
-  delete a[t];
+  delete o[t];
   let s = r.get(t);
   if (null == s) return !1;
   let l = N.jm8.ENDED;
   if (i) l = N.jm8.RECONNECTING;
-  else if (o === N.si2.UNAUTHORIZED) l = N.jm8.FAILED;
-  else if (o === N.si2.SAFETY_GUILD_RATE_LIMITED) {
+  else if (a === N.si2.UNAUTHORIZED) l = N.jm8.FAILED;
+  else if (a === N.si2.SAFETY_GUILD_RATE_LIMITED) {
     let {
       guildId: e
     } = (0, p.my)(t);
@@ -290,17 +290,17 @@ function $(e) {
   if (null == t) return !1;
   let i = r.get(t);
   if (null == i || i.state === N.jm8.ENDED) return !1;
-  let a = i.state;
+  let o = i.state;
   switch (n) {
     case N.hes.DISCONNECTED:
-      a = N.jm8.RECONNECTING;
+      o = N.jm8.RECONNECTING;
       break;
     case N.hes.RTC_CONNECTED:
-      a = N.jm8.ACTIVE
+      o = N.jm8.ACTIVE
   }
-  if (a === i.state) return !1;
+  if (o === i.state) return !1;
   r.set(t, D(P({}, i), {
-    state: a
+    state: o
   }))
 }
 
@@ -379,15 +379,15 @@ class ei extends(c = u.ZP.PersistedStore) {
       n = y.Z.getChannel(t);
     if (null == n) return null;
     let r = this.getActiveStreamForUser(b.default.getId(), n.getGuildId());
-    return null == r ? null : null != (e = o[(0, p.V9)(r)]) ? e : null
+    return null == r ? null : null != (e = a[(0, p.V9)(r)]) ? e : null
   }
   getStreamerActiveStreamMetadataForStream(e) {
     var t;
-    return null != (t = o[e]) ? t : null
+    return null != (t = a[e]) ? t : null
   }
   getIsActiveStreamPreviewDisabled(e) {
     var t;
-    let n = o[e];
+    let n = a[e];
     return null != (t = null == n ? void 0 : n.previewDisabled) && t
   }
   getAnyStreamForUser(e) {
@@ -410,7 +410,7 @@ class ei extends(c = u.ZP.PersistedStore) {
   }
   getRTCStream(e) {
     var t;
-    return (0, m.Z)(v.Z) && null != (t = a[e]) ? t : null
+    return (0, m.Z)(v.Z) && null != (t = o[e]) ? t : null
   }
   getAllApplicationStreams() {
     return (0, m.Z)(v.Z) ? B().filter(e => null != e && en(e.streamType, e.channelId)) : []
@@ -421,7 +421,7 @@ class ei extends(c = u.ZP.PersistedStore) {
   getViewerIds(e) {
     if (!(0, m.Z)(v.Z)) return [];
     let t = null,
-      n = null != (t = "string" == typeof e ? e : (0, p.V9)(e)) ? a[t] : null;
+      n = null != (t = "string" == typeof e ? e : (0, p.V9)(e)) ? o[t] : null;
     return null != n ? n.viewerIds : []
   }
   getCurrentAppIntent() {
@@ -431,8 +431,8 @@ class ei extends(c = u.ZP.PersistedStore) {
     return (0, m.Z)(v.Z) ? {
       activeStreams: Array.from(r.entries()),
       streamsByUserAndGuild: i,
-      rtcStreams: a,
-      streamerActiveStreamMetadatas: o
+      rtcStreams: o,
+      streamerActiveStreamMetadatas: a
     } : {
       activeStreams: [],
       streamsByUserAndGuild: {},
@@ -442,7 +442,7 @@ class ei extends(c = u.ZP.PersistedStore) {
   }
 }
 R(ei, "displayName", "ApplicationStreamingStore"), R(ei, "persistKey", "ApplicationStreamingStore");
-let ea = new ei(d.Z, {
+let eo = new ei(d.Z, {
   NATIVE_SCREEN_SHARE_PICKER_UPDATE: W,
   OVERLAY_INITIALIZE: V,
   VOICE_STATE_UPDATES: F,

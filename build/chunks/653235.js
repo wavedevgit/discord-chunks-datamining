@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(392711),
   l = n.n(s),
   c = n(442837),
@@ -152,41 +152,41 @@ class P extends i.PureComponent {
       return n ? [...t] : [e, ...t]
     })), S(this, "renderItem", (e, t, n, i) => {
       if (e > 0) return null;
-      let a = this.getData()[t];
-      if (null == a) return;
+      let o = this.getData()[t];
+      if (null == o) return;
       let {
-        onSelectItem: o,
+        onSelectItem: a,
         imagePool: s,
         videoPool: l
       } = this.props, {
         focusedId: c
       } = this.state;
       return (0, r.jsx)(y.iR, {
-        format: a.format,
+        format: o.format,
         color: d.Z.unsafe_rawColors.PRIMARY_800.css,
-        src: a.src,
-        item: a,
+        src: o.src,
+        item: o,
         index: t,
         coords: n,
-        onClick: () => o(a.type, a.name),
+        onClick: () => a(o.type, o.name),
         renderExtras: this.renderCategoryExtras,
-        focused: a.name === c,
+        focused: o.name === c,
         imagePool: s,
         videoPool: l
       }, i)
     }), S(this, "renderContent", (e, t, n) => {
       let {
         className: i,
-        trendingCategories: a
+        trendingCategories: o
       } = this.props;
-      return 0 === a.length ? (0, r.jsx)(b.u$, {
+      return 0 === o.length ? (0, r.jsx)(b.u$, {
         columns: e,
         width: t,
         renderColumn: C
       }) : (0, r.jsx)(f.GMG, {
         ref: this._masonryRef,
         fade: !0,
-        className: o()(I.container, i),
+        className: a()(I.container, i),
         itemGutter: 12,
         getItemKey: this.getItemKey,
         columns: e,

@@ -1,16 +1,16 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  T: () => o,
-  X: () => a
+  T: () => a,
+  X: () => o
 });
 var r = n(899517),
   i = n(307854);
 
-function a() {
+function o() {
   return (0, r.Y)("defaultCurrentScope", () => new i.s)
 }
 
-function o() {
+function a() {
   return (0, r.Y)("defaultIsolationScope", () => new i.s)
 }

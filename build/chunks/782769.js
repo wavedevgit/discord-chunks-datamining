@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  a: () => o,
-  z: () => a
+  a: () => a,
+  z: () => o
 });
 var r = n(873546);
 
@@ -10,10 +10,10 @@ function i() {
   return !r.tq && !r.Em
 }
 
-function a(e) {
+function o(e) {
   return i()
 }
 
-function o(e) {
+function a(e) {
   return i()
 }

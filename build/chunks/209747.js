@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(81825);
 
@@ -13,9 +13,9 @@ function i(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class a extends r.Z {
+class o extends r.Z {
   static createFromServer(e, t) {
-    return new a({
+    return new o({
       id: e.id,
       subscriptionId: e.subscription_id,
       premiumGuildSubscription: null != e.premium_guild_subscription ? {
@@ -37,4 +37,4 @@ class a extends r.Z {
     super(), i(this, "id", void 0), i(this, "subscriptionId", void 0), i(this, "premiumGuildSubscription", void 0), i(this, "canceled", void 0), i(this, "cooldownEndsAt", void 0), i(this, "subscription", void 0), this.id = e.id, this.subscriptionId = e.subscriptionId, this.premiumGuildSubscription = e.premiumGuildSubscription, this.canceled = e.canceled, this.cooldownEndsAt = e.cooldownEndsAt, this.subscription = e.subscription
   }
 }
-let o = a
+let a = o

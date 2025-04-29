@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  X: () => o
+  X: () => a
 });
 var r = n(35225),
   i = n(703656),
-  a = n(981631);
+  o = n(981631);
 
-function o(e, t) {
-  (0, i.uL)(a.Z5c.CHANNEL(e, (0, r.V)(e)), t)
+function a(e, t) {
+  (0, i.uL)(o.Z5c.CHANNEL(e, (0, r.V)(e)), t)
 }

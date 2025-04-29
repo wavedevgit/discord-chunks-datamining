@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(481060),
   c = n(355467),
@@ -33,8 +33,8 @@ function C(e, t) {
   if (null == e) return {};
   var n, r, i = R(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -42,13 +42,13 @@ function C(e, t) {
 function R(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
 function P(e) {
-  var t, n, a, {
+  var t, n, o, {
       title: R,
       type: P,
       guildBoostProps: w,
@@ -79,8 +79,8 @@ function P(e) {
       backButtonText: en,
       showEnhancedUpsell: er,
       useSubscribeButtonGradient: ei,
-      subscribeButtonClassname: ea,
-      hidePremiumOfferUpsell: eo,
+      subscribeButtonClassname: eo,
+      hidePremiumOfferUpsell: ea,
       children: es,
       LeadingComponent: el,
       backgroundElements: ec,
@@ -91,7 +91,7 @@ function P(e) {
   let e_ = null != w,
     ep = (0, E.N)(),
     eh = (0, g.Ng)(),
-    em = !eo && ((null == ep || null == (t = ep.subscription_trial) ? void 0 : t.sku_id) === $ || (0, g.Wp)(eh, $)) && !e_,
+    em = !ea && ((null == ep || null == (t = ep.subscription_trial) ? void 0 : t.sku_id) === $ || (0, g.Wp)(eh, $)) && !e_,
     {
       analyticsLocations: eg
     } = (0, d.ZP)(u.Z.PREMIUM_UPSELL_MODAL),
@@ -152,7 +152,7 @@ function P(e) {
           percent: eh.discount.amount
         }));
       return (0, r.jsx)(y.Z, {
-        className: ea,
+        className: eo,
         showGradient: er || ei,
         premiumModalAnalyticsLocation: L,
         subscriptionTier: $,
@@ -165,14 +165,14 @@ function P(e) {
         buttonText: null != q ? q : e
       })
     },
-    eS = J ? o()(A.artContainer, A.artContainerBoxShadow, G) : o()(A.artContainer, G),
+    eS = J ? a()(A.artContainer, A.artContainerBoxShadow, G) : a()(A.artContainer, G),
     eT = null;
   return null != ef.artURL ? eT = (0, r.jsx)("img", {
     className: A.art,
     alt: "",
     src: ef.artURL
   }) : null != ef.artElement && (eT = ef.artElement), (0, r.jsxs)(l.Y0X, {
-    className: o()(A.root, !em && j),
+    className: a()(A.root, !em && j),
     "aria-label": R,
     transitionState: F,
     children: [null != eT && (0, r.jsxs)("div", {
@@ -184,11 +184,11 @@ function P(e) {
       }) : null]
     }), (0, r.jsx)(l.hzk, {
       scrollbarType: "none",
-      className: o()(er ? A.enhancedContent : A.content, !em && U),
+      className: a()(er ? A.enhancedContent : A.content, !em && U),
       children: ee ? (0, r.jsx)(l.$jN, {}) : em ? (0, r.jsx)(b.ZP, {
         onClose: Z,
         type: P,
-        subscriptionTier: null != (a = null == ep || null == (n = ep.subscription_trial) ? void 0 : n.sku_id) ? a : I.Si.TIER_2,
+        subscriptionTier: null != (o = null == ep || null == (n = ep.subscription_trial) ? void 0 : n.sku_id) ? o : I.Si.TIER_2,
         headingText: R,
         context: M,
         analyticsLocationObject: L,
@@ -200,7 +200,7 @@ function P(e) {
         children: [el, (0, r.jsxs)("div", {
           className: A.bodyContent,
           children: [(0, r.jsxs)(l.X6q, {
-            className: o()(A.header, {
+            className: a()(A.header, {
               [A.enhancedHeader]: er
             }, B),
             variant: "heading-xl/bold",
@@ -211,21 +211,21 @@ function P(e) {
             affinities: ey
           }) : void 0, es, (0, r.jsx)(l.Text, {
             variant: eu ? "text-sm/normal" : "text-md/normal",
-            className: o()(V, A.subHeader),
+            className: a()(V, A.subHeader),
             children: x
           })]
         })]
       })
     }), (0, r.jsxs)(l.mzw, {
-      className: o()(A.footer, ed, {
+      className: a()(A.footer, ed, {
         [A.enhancedFooter]: er
       }),
       children: [(0, r.jsxs)("div", {
-        className: o()(A.primaryActions, {
+        className: a()(A.primaryActions, {
           [A.enhancedPrimaryActions]: er
         }),
         children: [null != K ? (0, r.jsx)(l.zxk, {
-          className: o()(A.secondaryAction, z, {
+          className: a()(A.secondaryAction, z, {
             [A.enhancedSecondaryAction]: er
           }),
           onClick: W,

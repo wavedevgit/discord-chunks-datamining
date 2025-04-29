@@ -5,9 +5,9 @@ n.d(t, {
 }), n(388685);
 var r = n(846519),
   i = n(570140),
-  a = n(147913);
+  o = n(147913);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -16,14 +16,14 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 let s = 3e3;
-class l extends a.Z {
+class l extends o.Z {
   _terminate() {
     this.clearErrorTimeout.stop()
   }
   constructor(...e) {
-    super(...e), o(this, "clearErrorTimeout", new r.V7), o(this, "actions", {
+    super(...e), a(this, "clearErrorTimeout", new r.V7), a(this, "actions", {
       MEDIA_ENGINE_NOISE_CANCELLATION_ERROR: () => this.handleNoiseCancellationError()
-    }), o(this, "handleNoiseCancellationError", () => {
+    }), a(this, "handleNoiseCancellationError", () => {
       this.clearErrorTimeout.start(s, () => i.Z.dispatch({
         type: "MEDIA_ENGINE_NOISE_CANCELLATION_ERROR_RESET"
       }))

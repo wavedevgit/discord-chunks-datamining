@@ -2,12 +2,12 @@
 "use strict";
 n.d(t, {
   Co: () => r,
-  WL: () => a,
+  WL: () => o,
   at: () => i
 });
 let r = 450,
   i = 360,
-  a = e => {
+  o = e => {
     let {
       maxWidth: t,
       minWidth: n

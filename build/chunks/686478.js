@@ -3,15 +3,15 @@
 n.d(t, {
   $_: () => s,
   _l: () => i,
-  jk: () => o,
-  vL: () => a
+  jk: () => a,
+  vL: () => o
 });
 var r = n(786761),
   i = function(e) {
     return e.ALL = "ALL", e.REMINDER = "REMINDER", e.BOOKMARK = "BOOKMARK", e
   }({});
 
-function a(e) {
+function o(e) {
   return {
     channelId: e.channel_id,
     messageId: e.message_id,
@@ -26,10 +26,10 @@ function a(e) {
   }
 }
 
-function o(e) {
+function a(e) {
   return {
     message: null != e.message ? (0, r.e5)(e.message) : null,
-    saveData: a(e.save_data)
+    saveData: o(e.save_data)
   }
 }
 

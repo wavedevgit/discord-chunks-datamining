@@ -4,7 +4,7 @@ let r;
 n.d(t, {
   Z: () => D
 }), n(388685), n(35282);
-var i, a, o = n(442837),
+var i, o, a = n(442837),
   s = n(433517),
   l = n(570140),
   c = n(642047),
@@ -32,7 +32,7 @@ let h = "GameStoreReportedGames",
   I = null;
 
 function S(e) {
-  var t, n, r, i, a, o, s;
+  var t, n, r, i, o, a, s;
   return {
     id: e.id,
     name: e.name,
@@ -40,8 +40,8 @@ function S(e) {
     overlay: null != (n = e.overlay) && n,
     overlayWarn: null != (r = e.overlay_warn) && r,
     overlayCompatibilityHook: null != (i = e.overlay_compatibility_hook) && i,
-    hook: null == (a = e.hook) || a,
-    aliases: null != (o = e.aliases) ? o : [],
+    hook: null == (o = e.hook) || o,
+    aliases: null != (a = e.aliases) ? a : [],
     supportsOutOfProcessOverlay: d.ZP.supportsOutOfProcessOverlay(e.overlay_methods),
     themes: null != (s = e.themes) ? s : []
   }
@@ -92,7 +92,7 @@ function P(e) {
   for (let e of (null != n && v !== n && (v = n), t)) A(S(e));
   r = void 0, I = Date.now()
 }
-class w extends(a = o.ZP.PersistedStore) {
+class w extends(o = a.ZP.PersistedStore) {
   initialize(e) {
     var t;
     null != e && (null != e.detectableGamesEtag && (v = e.detectableGamesEtag), null == (t = e.detectableGames) || t.forEach(e => A(e)))
@@ -143,14 +143,14 @@ class w extends(a = o.ZP.PersistedStore) {
     let r;
     if (null == e.exePath) return null;
     let i = e.exePath.split("/").pop(),
-      a = e.exePath.split("/").slice(-2).join("/");
+      o = e.exePath.split("/").slice(-2).join("/");
     if (null != e.name) {
       if (null != (r = this.getGameByName(e.name)) && null != r.executables) {
         let e = r.executables.map(e => e.name);
-        if (e.includes(i) || e.includes(a)) return r
+        if (e.includes(i) || e.includes(o)) return r
       } else if (null != r) return null
     }
-    return null != (n = null != (t = this.getGameByExecutable(i)) ? t : this.getGameByExecutable(a)) ? n : r
+    return null != (n = null != (t = this.getGameByExecutable(i)) ? t : this.getGameByExecutable(o)) ? n : r
   }
   shouldReport(e) {
     let t = null != this.getGameByName(e),

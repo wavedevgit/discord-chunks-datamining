@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(175922),
   i = n(285363),
-  a = n(636226);
+  o = n(636226);
 
-function o(e) {
-  return (0, r.Z)((0, i.Z)(e)).left + (0, a.Z)(e).scrollLeft
+function a(e) {
+  return (0, r.Z)((0, i.Z)(e)).left + (0, o.Z)(e).scrollLeft
 }

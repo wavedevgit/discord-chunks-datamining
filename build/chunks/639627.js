@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(670596),
-  o = n(952265),
+  o = n(670596),
+  a = n(952265),
   s = n(813197);
 
 function l(e, t, n) {
@@ -54,7 +54,7 @@ let f = i.forwardRef(function(e, t) {
   } = e, f = i.useRef(null);
 
   function _(e, t) {
-    (0, o.ZD)(async () => {
+    (0, a.ZD)(async () => {
       let {
         default: i
       } = await Promise.all([n.e("91689"), n.e("59732"), n.e("48389")]).then(n.bind(n, 712451));
@@ -69,7 +69,7 @@ let f = i.forwardRef(function(e, t) {
     focus: () => null,
     activate: () => {
       var e;
-      return null == l || l(a.U.IMAGE_UPLOAD), null == (e = f.current) || e.activateUploadDialogue(), !1
+      return null == l || l(o.U.IMAGE_UPLOAD), null == (e = f.current) || e.activateUploadDialogue(), !1
     }
   }), [l]), (0, r.jsx)("div", {
     style: {

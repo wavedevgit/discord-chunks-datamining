@@ -6,8 +6,8 @@ n.d(t, {
 }), n(953529);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(481060),
   c = n(355467),
@@ -32,7 +32,7 @@ function S(e) {
   let {
     containerContext: t,
     image: n,
-    title: a,
+    title: o,
     description: I,
     enableSocialProof: S,
     analyticsLocationSection: T,
@@ -66,7 +66,7 @@ function S(e) {
       "aria-label": O.intl.string(O.t.cpT0Cg),
       isVisible: !0
     }), (0, r.jsxs)("div", {
-      className: o()(v.container, L()),
+      className: a()(v.container, L()),
       children: [(0, r.jsx)(l.olH, {
         onClick: N,
         className: v.closeButton
@@ -79,11 +79,11 @@ function S(e) {
           src: n.url,
           alt: "Nitro Perk"
         }), (0, r.jsx)(l.X6q, {
-          className: o()(v.title, {
+          className: a()(v.title, {
             [v.titleNoSocialProof]: !D
           }),
           variant: "heading-xl/bold",
-          children: a
+          children: o
         }), D && (0, r.jsx)(E.Z, {
           affinities: P
         }), (0, r.jsx)(l.Text, {

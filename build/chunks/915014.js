@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  a = n(318374),
-  o = n(522289),
+  o = n(318374),
+  a = n(522289),
   s = n(565138),
   l = n(806729),
   c = n(708108),
@@ -29,7 +29,7 @@ function h(e) {
   let y = () => g ? (0, r.jsxs)(i.P3F, {
       className: _.section,
       onClick: () => null == n ? void 0 : n(d.oh.MUTUAL_FRIENDS),
-      children: [(0, r.jsx)(a.Z, {
+      children: [(0, r.jsx)(o.Z, {
         maxUsers: p,
         users: h.map(e => {
           let {
@@ -54,7 +54,7 @@ function h(e) {
     v = () => E ? (0, r.jsxs)(i.P3F, {
       className: _.section,
       onClick: () => null == n ? void 0 : n(d.oh.MUTUAL_GUILDS),
-      children: [!g && (0, r.jsx)(o.Z, {
+      children: [!g && (0, r.jsx)(a.Z, {
         maxGuilds: p,
         guilds: m.map(e => {
           let {

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(731889),
   i = n(573736),
-  a = n(101284),
-  o = n(394798),
+  o = n(101284),
+  a = n(394798),
   s = n(622916),
   l = n(112797),
   c = n(99342);
@@ -113,8 +113,8 @@ class d {
     let t = "function" == typeof e ? e(this) : e,
       [n, r] = t instanceof f ? [t.getScopeData(), t.getRequestSession()] : (0, i.PO)(t) ? [e, e.requestSession] : [],
       {
-        tags: a,
-        extra: o,
+        tags: o,
+        extra: a,
         user: s,
         contexts: l,
         level: c,
@@ -123,10 +123,10 @@ class d {
       } = n || {};
     return this._tags = {
       ...this._tags,
-      ...a
+      ...o
     }, this._extra = {
       ...this._extra,
-      ...o
+      ...a
     }, this._contexts = {
       ...this._contexts,
       ...l
@@ -139,7 +139,7 @@ class d {
     let n = "number" == typeof t ? t : u;
     if (n <= 0) return this;
     let r = {
-        timestamp: (0, a.yW)(),
+        timestamp: (0, o.yW)(),
         ...e
       },
       i = this._breadcrumbs;
@@ -187,7 +187,7 @@ class d {
     return this._propagationContext
   }
   captureException(e, t) {
-    let n = t && t.event_id ? t.event_id : (0, o.DM)();
+    let n = t && t.event_id ? t.event_id : (0, a.DM)();
     if (!this._client) return s.kg.warn("No client configured on scope - will not capture exception!"), n;
     let r = Error("Sentry syntheticException");
     return this._client.captureException(e, {
@@ -198,7 +198,7 @@ class d {
     }, this), n
   }
   captureMessage(e, t, n) {
-    let r = n && n.event_id ? n.event_id : (0, o.DM)();
+    let r = n && n.event_id ? n.event_id : (0, a.DM)();
     if (!this._client) return s.kg.warn("No client configured on scope - will not capture message!"), r;
     let i = Error(e);
     return this._client.captureMessage(e, t, {
@@ -209,7 +209,7 @@ class d {
     }, this), r
   }
   captureEvent(e, t) {
-    let n = t && t.event_id ? t.event_id : (0, o.DM)();
+    let n = t && t.event_id ? t.event_id : (0, a.DM)();
     return this._client ? this._client.captureEvent(e, {
       ...t,
       event_id: n
