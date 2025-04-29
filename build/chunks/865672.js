@@ -1,10 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  De: () => _,
-  Ic: () => f,
-  JU: () => d
-});
+  De: () => p,
+  EJ: () => h,
+  Ic: () => _,
+  JU: () => f
+}), n(413496), n(433524), n(35282), n(539854);
 var r = n(255367),
   i = n(73800),
   o = n(120356),
@@ -13,8 +14,9 @@ var r = n(255367),
   l = n(607070),
   c = n(981631),
   u = n(183375);
+let d = RegExp("\\p{Emoji_Presentation}", "gu");
 
-function d(e) {
+function f(e) {
   var t, n;
   let {
     primaryColor: r,
@@ -45,7 +47,7 @@ function d(e) {
   }
 }
 
-function f(e) {
+function _(e) {
   let {
     primaryColor: t,
     secondaryColor: n,
@@ -54,7 +56,7 @@ function f(e) {
     includeConvenienceGlow: a,
     animateGradient: c
   } = e, u = (0, s.e7)([l.Z], () => l.Z.useReducedMotion);
-  return i.useMemo(() => d({
+  return i.useMemo(() => f({
     primaryColor: t,
     secondaryColor: n,
     tertiaryColor: r,
@@ -65,7 +67,7 @@ function f(e) {
   }), [t, n, r, o, a, u, c])
 }
 
-function _(e, t, n) {
+function p(e, t, n) {
   return i.useMemo(() => {
     let i = [e, t, n].filter(e => null != e),
       o = i.length >= 2,
@@ -84,4 +86,19 @@ function _(e, t, n) {
       animatedGradientId: "dotAnimatedGradient-".concat(l)
     }
   }, [e, t, n])
+}
+
+function h(e) {
+  return i.useMemo(() => {
+    let t;
+    if ("string" != typeof e) return e;
+    let n = new RegExp(d),
+      i = [],
+      o = 0;
+    for (; null !== (t = n.exec(e));) t.index > o && i.push(e.slice(o, t.index)), i.push((0, r.jsx)("span", {
+      className: u.emoji,
+      children: t[0]
+    })), o = n.lastIndex;
+    return o < e.length && i.push(e.slice(o)), i
+  }, [e])
 }

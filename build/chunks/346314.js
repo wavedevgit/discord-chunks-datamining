@@ -92,7 +92,7 @@ function E(e) {
     tertiaryColor: null == s ? void 0 : s.tertiaryColor,
     roleStyle: "username",
     animateGradient: p
-  }), v = m ? (0, r.jsx)(u.F, {
+  }), v = (0, c.EJ)(n), I = m ? (0, r.jsx)(u.F, {
     color: i,
     colors: g ? s : null,
     name: a,
@@ -100,7 +100,7 @@ function E(e) {
   }) : null;
   return (0, r.jsxs)("span", {
     className: o()(f, d.container),
-    children: ["left" === l && v, (0, r.jsxs)("span", {
+    children: ["left" === l && I, (0, r.jsxs)("span", {
       className: d.nameContainer,
       style: _({
         color: h && !g && null != i ? i : void 0
@@ -110,13 +110,13 @@ function E(e) {
           [d.username]: h,
           [y]: E
         }),
-        children: n
+        children: v
       }), E && (0, r.jsx)("span", {
         "aria-hidden": !0,
         className: o()(d.nameGlow, O),
         children: n
       })]
-    }), "right" === l && v]
+    }), "right" === l && I]
   })
 }
 
