@@ -1,6 +1,6 @@
 /** Chunk was on 17759 **/
 t.d(n, {
-  Z: () => P
+  Z: () => C
 }), t(388685);
 var o = t(200651),
   r = t(192379),
@@ -16,25 +16,25 @@ var o = t(200651),
   m = t(785717),
   b = t(806729),
   _ = t(708108),
-  h = t(146078),
-  y = t(857302),
+  y = t(146078),
+  h = t(857302),
   g = t(892001),
   x = t(389190),
   j = t(428927),
   I = t(228168),
-  O = t(388032),
-  v = t(714905);
+  v = t(388032),
+  O = t(714905);
 
-function P(e) {
+function C(e) {
   let {
     user: n,
     onClose: t
   } = e, {
     analyticsLocations: i
   } = (0, u.ZP)(), {
-    context: P,
-    trackUserProfileAction: C
-  } = (0, m.KZ)(), N = (0, s.ZP)(), {
+    context: C,
+    trackUserProfileAction: N
+  } = (0, m.KZ)(), P = (0, s.ZP)(), {
     mutualFriends: A,
     mutualFriendsCount: Z,
     mutualGuilds: T,
@@ -44,23 +44,23 @@ function P(e) {
     text: (0, _.Z)(Z)
   }, {
     section: I.oh.MUTUAL_GUILDS,
-    text: (0, h.Z)(null == T ? void 0 : T.length)
+    text: (0, y.Z)(null == T ? void 0 : T.length)
   }], [Z, null == T ? void 0 : T.length]), [{
     section: E,
     text: U
   }, B] = r.useState(M[0]);
   return r.useEffect(() => {
-    E === I.oh.MUTUAL_FRIENDS && (0, y.Z)(n.id, S)
+    E === I.oh.MUTUAL_FRIENDS && (0, h.Z)(n.id, S)
   }, [E, n.id, S]), (0, o.jsxs)("div", {
-    className: v.container,
+    className: O.container,
     children: [(0, o.jsx)(a.njP, {
-      className: v.tabBar,
+      className: O.tabBar,
       selectedItem: E,
       onItemSelect: e => {
         B(n => {
           var t;
           return null != (t = M.find(n => n.section === e)) ? t : n
-        }), C({
+        }), N({
           action: "PRESS_SECTION",
           section: e
         })
@@ -68,7 +68,7 @@ function P(e) {
       children: M.map(e => (0, o.jsx)(a.njP.Item, {
         id: e.section,
         "aria-label": e.text,
-        className: v.tabBarItem,
+        className: O.tabBarItem,
         children: (0, o.jsx)(a.Text, {
           variant: "text-sm/semibold",
           color: "text-primary",
@@ -78,14 +78,14 @@ function P(e) {
     }), (0, o.jsx)(a.njP.Panel, {
       id: E,
       "aria-label": U,
-      className: v.tabBarPanel,
+      className: O.tabBarPanel,
       children: (0, o.jsxs)(a.Ttm, {
-        className: v.scroller,
+        className: O.scroller,
         fade: !0,
         children: [E === I.oh.MUTUAL_FRIENDS && (null == A ? Array.from({
           length: null != Z ? Z : 10
         }).map((e, n) => (0, o.jsxs)("div", {
-          className: c()(v.loadingItem, v.loadingMutualFriend),
+          className: c()(O.loadingItem, O.loadingMutualFriend),
           children: [(0, o.jsx)(f.ZT, {
             width: 40,
             opacity: .08
@@ -94,13 +94,13 @@ function P(e) {
             opacity: .08
           })]
         }, n)) : 0 === A.length ? (0, o.jsxs)("div", {
-          className: v.empty,
+          className: O.empty,
           children: [(0, o.jsx)("div", {
-            className: c()(v.emptyImage, v.noMutualFriends)
+            className: c()(O.emptyImage, O.noMutualFriends)
           }), (0, o.jsx)(a.Text, {
             variant: "text-sm/normal",
             color: "header-primary",
-            children: O.intl.string(O.t["ru+2j4"])
+            children: v.intl.string(v.t["ru+2j4"])
           })]
         }) : A.map(e => {
           let {
@@ -113,7 +113,7 @@ function P(e) {
             status: c,
             onSelect: () => {
               var e, n;
-              t(), C({
+              t(), N({
                 action: "PRESS_MUTUAL_FRIEND"
               }), (0, g.openUserProfileModal)((e = function(e) {
                 for (var n = 1; n < arguments.length; n++) {
@@ -132,7 +132,7 @@ function P(e) {
                   })
                 }
                 return e
-              }({}, P), n = n = {
+              }({}, C), n = n = {
                 userId: r.id,
                 sourceAnalyticsLocations: i
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
@@ -150,7 +150,7 @@ function P(e) {
         })), E === I.oh.MUTUAL_GUILDS && (null == T && w ? Array.from({
           length: 10
         }).map((e, n) => (0, o.jsxs)("div", {
-          className: c()(v.loadingItem, v.loadingMutualGuild),
+          className: c()(O.loadingItem, O.loadingMutualGuild),
           children: [(0, o.jsx)(f.ZT, {
             width: 40,
             opacity: .08
@@ -167,21 +167,21 @@ function P(e) {
             user: n,
             guild: r,
             nick: i,
-            theme: N,
+            theme: P,
             onSelect: () => {
-              C({
+              N({
                 action: "PRESS_MUTUAL_GUILD"
               }), (0, p.X)(r.id), t(), (0, l.xf)()
             }
           }, r.id)
         }) : (0, o.jsxs)("div", {
-          className: v.empty,
+          className: O.empty,
           children: [(0, o.jsx)("div", {
-            className: c()(v.emptyImage, v.noMutualGuilds)
+            className: c()(O.emptyImage, O.noMutualGuilds)
           }), (0, o.jsx)(a.Text, {
             variant: "text-sm/normal",
             color: "header-primary",
-            children: O.intl.string(O.t.x5y3DA)
+            children: v.intl.string(v.t.x5y3DA)
           })]
         }))]
       })

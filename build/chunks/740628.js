@@ -16,8 +16,8 @@ var l = t(200651),
   p = t(389190),
   g = t(428927),
   j = t(228168),
-  v = t(388032),
-  m = t(301150),
+  m = t(388032),
+  v = t(301150),
   x = t(923243);
 
 function Z(e) {
@@ -103,12 +103,12 @@ function b(e) {
   return E ? (0, l.jsx)("div", {
     className: x.container,
     children: (0, l.jsxs)("div", {
-      className: m.empty,
+      className: v.empty,
       children: [(0, l.jsx)("div", {
-        className: m.emptyIconStreamerMode
+        className: v.emptyIconStreamerMode
       }), (0, l.jsx)("div", {
-        className: m.emptyText,
-        children: v.intl.string(v.t.Br1ls7)
+        className: v.emptyText,
+        children: m.intl.string(m.t.Br1ls7)
       })]
     })
   }) : (0, l.jsxs)("div", {

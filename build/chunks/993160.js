@@ -23,14 +23,14 @@ function p(e) {
     friendToken: b,
     onClose: _
   } = e, {
-    newestAnalyticsLocation: h
+    newestAnalyticsLocation: y
   } = (0, i.ZP)(), {
-    gameFriends: y,
+    gameFriends: h,
     hasOutgoingPendingGameFriends: g,
     hasIncomingPendingGameFriends: x
   } = (0, u.H)({
     userId: n.id
-  }), j = y.length > 0 || g || x;
+  }), j = h.length > 0 || g || x;
   return m === f.OGo.BLOCKED ? null : n.id === t.id ? (0, o.jsxs)(o.Fragment, {
     children: [(0, o.jsx)(c.Z, {
       user: n,
@@ -69,7 +69,7 @@ function p(e) {
       relationshipType: m,
       shouldShowTooltip: !0,
       themeColor: "secondary",
-      analyticsLocation: h
+      analyticsLocation: y
     }), (0, o.jsx)(l.Z, {
       type: "icon",
       user: n,
@@ -85,9 +85,9 @@ function p(e) {
     }), (0, o.jsx)(d.k9, {
       type: "icon",
       user: n,
-      analyticsLocation: h,
+      analyticsLocation: y,
       themeColor: "secondary",
-      gameFriends: y,
+      gameFriends: h,
       shouldShowTooltip: !0,
       hasIncomingPendingGameFriends: x,
       hasOutgoingPendingGameFriends: g
@@ -102,7 +102,7 @@ function p(e) {
       type: "text",
       userId: n.id,
       friendToken: b,
-      analyticsLocation: h,
+      analyticsLocation: y,
       color: r.zxk.Colors.BRAND,
       autoFocus: !0
     }), (0, o.jsx)(a.Z, {

@@ -17,8 +17,8 @@ var r = t(442837),
   p = t(151545),
   g = t(744802),
   j = t(493043),
-  v = t(864141),
-  m = t(228168),
+  m = t(864141),
+  v = t(228168),
   x = t(981631),
   Z = t(388032),
   b = t(316879),
@@ -54,7 +54,7 @@ function y(e) {
     className: b.scroller,
     fade: !0,
     children: [U ? (0, l.jsxs)(h.Z, {
-      children: [D && (0, l.jsx)(v.Z, {
+      children: [D && (0, l.jsx)(m.Z, {
         user: n,
         currentUser: t,
         voiceChannel: C,
@@ -81,7 +81,7 @@ function y(e) {
           children: e
         }, n)
       }) : void 0,
-      scrollIntoView: E === m.Tb.RECENT_ACTIVITY,
+      scrollIntoView: E === v.Tb.RECENT_ACTIVITY,
       children: A.map(e => (0, l.jsx)(g.Z, {
         location: "UserProfileModalActivity",
         user: n,

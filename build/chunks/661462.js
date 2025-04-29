@@ -43,8 +43,8 @@ function p(e) {
     displayProfile: m,
     guildId: b,
     initialSection: _,
-    initialSubsection: h,
-    onClose: y
+    initialSubsection: y,
+    onClose: h
   } = e, {
     trackUserProfileAction: g
   } = (0, c.KZ)(), x = r.useMemo(() => l.id === p.id ? [{
@@ -62,8 +62,8 @@ function p(e) {
   }], [l.id, p.id]), [{
     section: j,
     subsection: I,
-    text: O
-  }, v] = r.useState((t = function(e) {
+    text: v
+  }, O] = r.useState((t = function(e) {
     for (var n = 1; n < arguments.length; n++) {
       var t = null != arguments[n] ? arguments[n] : {},
         o = Object.keys(t);
@@ -86,7 +86,7 @@ function p(e) {
     } = e;
     return n === _
   })) ? n : x[0]), a = a = {
-    subsection: h
+    subsection: y
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(a)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -107,7 +107,7 @@ function p(e) {
         g({
           action: "PRESS_SECTION",
           section: e
-        }), v(n => {
+        }), O(n => {
           var t;
           return null != (t = x.find(n => n.section === e)) ? t : n
         })
@@ -123,7 +123,7 @@ function p(e) {
       }, e.section))
     }), (0, o.jsx)(i.njP.Panel, {
       id: j,
-      "aria-label": O,
+      "aria-label": v,
       className: u.tabBarPanel,
       children: (0, o.jsx)(f, {
         user: l,
@@ -132,7 +132,7 @@ function p(e) {
         guildId: b,
         section: j,
         subsection: I,
-        onClose: y
+        onClose: h
       })
     })]
   })

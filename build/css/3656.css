@@ -1,6 +1,6 @@
 /**
   Module ID: 3656
-  Original File Name: ea3b642ce324192b
+  Original File Name: f7cc512faab19d27
 **/
 .content__79cbe {
     border-radius: 8px;
@@ -12825,41 +12825,41 @@ div.profileThemedContainer__656be {
     width: 4px
 }
 
-.header__08449 {
+.header__7f9c0 {
     margin-bottom: 8px;
     min-height: calc(var(--custom-user-profile-banner-height) + 39px);
     position: relative
 }
 
-.headerTag__08449 {
+.headerTag__7f9c0 {
     border-radius: var(--radius-xs);
     bottom: 8px;
     position: absolute;
     right: 16px
 }
 
-.footer__08449 {
+.footer__7f9c0 {
     border-top: 1px solid var(--user-profile-border);
     z-index: 1
 }
 
-.footerButtonColor__08449 {
+.footerButtonColor__7f9c0 {
     color: var(--interactive-normal)
 }
 
-.footerButtonColor__08449:hover {
+.footerButtonColor__7f9c0:hover {
     color: var(--interactive-hover)
 }
 
-.footerButtonColor__08449:active {
+.footerButtonColor__7f9c0:active {
     color: var(--interactive-active)
 }
 
-.banner__08449 {
+.banner__7f9c0 {
     border-radius: 0
 }
 
-.backdrop__08449 {
+.backdrop__7f9c0 {
     background: var(--bg-backdrop);
     bottom: 0;
     left: 0;
@@ -12869,53 +12869,53 @@ div.profileThemedContainer__656be {
     z-index: 4
 }
 
-.toast__08449 {
+.toast__7f9c0 {
     top: calc((var(--custom-user-profile-banner-height) - 56px)/2);
     z-index: 5
 }
 
-.body__486c9 {
+.body_b32ca4 {
     margin: 0 16px
 }
 
-.body__486c9,.overlay__486c9 {
+.body_b32ca4,.overlay_b32ca4 {
     display: flex;
     flex-direction: column;
     gap: 12px
 }
 
-.card__486c9,.overlay__486c9 {
+.card_b32ca4,.overlay_b32ca4 {
     padding: 12px
 }
 
-.note__486c9 {
+.note_b32ca4 {
     margin: -4px
 }
 
-.note__486c9 textarea {
+.note_b32ca4 textarea {
     border-radius: 3px;
     font-size: 14px;
     line-height: 18px;
     padding: 4px
 }
 
-.note__486c9 textarea:focus {
+.note_b32ca4 textarea:focus {
     background: var(--user-profile-note-background-focus)
 }
 
-.note__486c9 textarea:focus::-moz-placeholder {
+.note_b32ca4 textarea:focus::-moz-placeholder {
     color: transparent
 }
 
-.note__486c9 textarea:focus::placeholder {
+.note_b32ca4 textarea:focus::placeholder {
     color: transparent
 }
 
-.container__87523 {
+.container_a419e0 {
     width: 340px
 }
 
-.headerContainer__87523 {
+.headerContainer_a419e0 {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -12923,7 +12923,7 @@ div.profileThemedContainer__656be {
     justify-content: center
 }
 
-.preview__87523 {
+.preview_a419e0 {
     filter: blur(5px);
     object-fit: contain;
     object-position: top;
@@ -12931,12 +12931,12 @@ div.profileThemedContainer__656be {
     width: 100%
 }
 
-.container__87523,.preview__87523 {
+.container_a419e0,.preview_a419e0 {
     height: 100%;
     position: relative
 }
 
-.body__87523 {
+.body_a419e0 {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -13074,48 +13074,48 @@ div.profileThemedContainer__656be {
     white-space: nowrap
 }
 
-.section__733e9 {
+.section__1f6ca {
     display: flex;
     flex-direction: column;
     gap: 12px;
     padding: 12px
 }
 
-.header__733e9 {
+.header__1f6ca {
     align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between
 }
 
-.header__733e9.clickable__733e9 {
+.header__1f6ca.clickable__1f6ca {
     cursor: pointer
 }
 
-.list__733e9 {
+.list__1f6ca {
     display: flex;
     flex-direction: column;
     gap: 8px
 }
 
-.list__733e9[hidden] {
+.list__1f6ca[hidden] {
     display: none
 }
 
-.overlay_d04d18 {
+.overlay__3b260 {
     margin: 12px 16px
 }
 
-.divider_d04d18 {
+.divider__3b260 {
     margin: 0 12px
 }
 
-.list_d04d18 {
+.list__3b260 {
     gap: 0;
     margin-left: -8px
 }
 
-.loadingMutualFriend_d04d18 {
+.loadingMutualFriend__3b260 {
     align-items: center;
     display: flex;
     gap: 10px;
@@ -13123,7 +13123,7 @@ div.profileThemedContainer__656be {
     padding: 4px
 }
 
-.loadingMutualFriend_d04d18>:first-child {
+.loadingMutualFriend__3b260>:first-child {
     border-radius: var(--radius-round);
     height: 40px;
     margin: 0
@@ -13206,4 +13206,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=ea3b642ce324192b.css.map*/
+/*# sourceMappingURL=f7cc512faab19d27.css.map*/

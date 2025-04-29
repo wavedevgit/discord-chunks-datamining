@@ -16,8 +16,8 @@ var l = t(200651),
   p = t(648052),
   g = t(867176),
   j = t(280885),
-  v = t(900927),
-  m = t(678738),
+  m = t(900927),
+  v = t(678738),
   x = t(502762),
   Z = t(530),
   b = t(679332),
@@ -125,9 +125,9 @@ function A(e) {
                   userId: n.id,
                   userBio: null == U ? void 0 : U.bio,
                   setLineClamp: !1
-                }), (0, l.jsx)(m.Z, {
+                }), (0, l.jsx)(v.Z, {
                   heading: E.intl.string(E.t["A//N4u"]),
-                  children: (0, l.jsx)(v.Z, {
+                  children: (0, l.jsx)(m.Z, {
                     userId: n.id,
                     guildId: D,
                     tooltipDelay: y.vB
