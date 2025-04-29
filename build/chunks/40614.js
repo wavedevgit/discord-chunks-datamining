@@ -27,7 +27,7 @@ let d = e => {
     children: (0, r.jsxs)(l.Text, {
       variant: "text-xs/medium",
       className: u.text,
-      color: "header-secondary",
+      color: "text-secondary",
       children: [(0, r.jsx)(l.kZF, {
         size: "xxs",
         color: "currentColor",
