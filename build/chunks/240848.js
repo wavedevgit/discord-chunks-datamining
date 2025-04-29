@@ -1,4 +1,4 @@
-/** Chunk was on 53745 **/
+/** Chunk was on 21247 **/
 e.exports = {
   pauseBackground: "pauseBackground_d70e0d",
   pause: "pause_d70e0d"

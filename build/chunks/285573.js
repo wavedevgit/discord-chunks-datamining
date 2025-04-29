@@ -1,4 +1,4 @@
-/** Chunk was on 53745 **/
+/** Chunk was on 21247 **/
 n.d(t, {
   Z: () => y
 });
@@ -27,8 +27,8 @@ let y = (0, c.B)(function(e) {
     sortingType: O,
     sortingPosition: v,
     connectChannelDragSource: C,
-    connectChannelDropTarget: S,
-    tabIndex: j
+    connectChannelDropTarget: j,
+    tabIndex: S
   } = e, E = (0, s.e7)([u.Z, d.ZP], () => {
     let e = d.ZP.getDirectoryChannelIds(t.id);
     return 0 === e.length ? null : u.Z.getChannel(e[0])
@@ -90,13 +90,13 @@ let y = (0, c.B)(function(e) {
         resolvedUnreadSetting: m.i.ONLY_MENTIONS,
         children: [(0, r.jsx)(p.eP, {
           channel: E,
-          tabIndex: j
+          tabIndex: S
         }), (0, r.jsx)(p.hR, {
           channel: E,
           disableManageChannels: y,
-          tabIndex: j
+          tabIndex: S
         })]
       })
     });
-  return P && (T = S(C(T))), T
+  return P && (T = j(C(T))), T
 })

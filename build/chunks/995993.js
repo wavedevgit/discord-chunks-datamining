@@ -1,6 +1,6 @@
-/** Chunk was on 53745 **/
+/** Chunk was on 21247 **/
 n.d(t, {
-  m: () => j
+  m: () => S
 });
 var r = n(200651),
   i = n(192379),
@@ -22,12 +22,12 @@ var r = n(200651),
   O = n(176505),
   v = n(490897),
   C = n(388032),
-  S = n(990252);
+  j = n(990252);
 
-function j(e) {
+function S(e) {
   let {
     guild: t,
-    selected: j
+    selected: S
   } = e, E = (0, h.Z)(t), x = (0, u.wE)(o.z.CHANNEL_BROWSER_NEW_BADGE_NUX), I = (0, l.Wu)([p.Z], () => Array.from(p.Z.getNewChannelIds(t.id)).filter(e => p.Z.shouldIndicateNewChannel(t.id, e))), P = (0, l.e7)([g.ZP], () => g.ZP.hasUnread(t.id, v.W.GUILD_ONBOARDING_QUESTION)), w = I.length > b.Cb, N = (0, l.e7)([d.Z, g.ZP], () => {
     let e = d.Z.lastFetchedAt(t.id),
       n = g.ZP.lastMessageId(t.id, v.W.GUILD_ONBOARDING_QUESTION);
@@ -75,10 +75,10 @@ function j(e) {
       }
     })
   }, [t]), A = null;
-  return x && !P && !w || j || N || (A = (0, r.jsx)(a.IGR, {
+  return x && !P && !w || S || N || (A = (0, r.jsx)(a.IGR, {
     color: s.Z.colors.BADGE_BRAND_BG.css,
     text: C.intl.string(C.t.y2b7CA),
-    className: S.newChannel
+    className: j.newChannel
   })), (0, r.jsx)(y.m, {
     id: "channels-".concat(t.id),
     renderIcon: e => (0, r.jsx)(a.H$4, {
@@ -87,7 +87,7 @@ function j(e) {
       className: e
     }),
     text: E ? C.intl.string(C.t.h9mGOD) : C.intl.string(C.t.et6wam),
-    selected: j,
+    selected: S,
     onClick: Z,
     onContextMenu: T,
     trailing: A

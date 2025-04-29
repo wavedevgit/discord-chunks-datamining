@@ -3,15 +3,15 @@ n.d(t, {
   $Z: () => Z,
   B8: () => I,
   F4: () => P,
-  HH: () => w,
+  HH: () => D,
   Hd: () => N,
   Xl: () => T,
   dF: () => C,
   eM: () => L,
   fB: () => _,
-  gK: () => A,
+  gK: () => w,
   mG: () => M,
-  qe: () => D,
+  qe: () => A,
   rY: () => x,
   ts: () => R,
   zW: () => S
@@ -29,8 +29,8 @@ var c = n(623292),
   f = n(314897),
   g = n(592125),
   m = n(626135),
-  b = n(934415),
-  h = n(572004),
+  h = n(934415),
+  b = n(572004),
   p = n(585483),
   O = n(709054),
   y = n(111618),
@@ -44,14 +44,14 @@ function S(e) {
 }
 
 function P(e, t, n) {
-  (0, h.JG)(n.shiftKey ? "".concat(t.channel_id, "-").concat(t.id) : t.id)
+  (0, b.JG)(n.shiftKey ? "".concat(t.channel_id, "-").concat(t.id) : t.id)
 }
 
 function _(e, t) {
   m.default.track(j.rMx.MESSAGE_LINK_COPIED, {
     message_id: t.id,
     channel: t.channel_id
-  }), (0, h.JG)((0, b.wR)(e.guild_id, e.id, t.id))
+  }), (0, b.JG)((0, h.wR)(e.guild_id, e.id, t.id))
 }
 
 function Z(e, t, n) {
@@ -79,7 +79,7 @@ function M(e, t) {
   (0, v.Z)(e, t, void 0, y.Z.getOptions(t.id))
 }
 
-function w(e, t, n) {
+function D(e, t, n) {
   let i = e.isPrivate(),
     r = t.author.id === f.default.getId();
   (0, c.fE)({
@@ -90,11 +90,11 @@ function w(e, t, n) {
   }), p.S.dispatchToLastSubscribed(j.CkL.TEXTAREA_FOCUS)
 }
 
-function A(e, t) {
+function w(e, t) {
   (0, d.R6)(e, t, "Message")
 }
 
-function D(e, t) {
+function A(e, t) {
   let n = g.Z.getChannel(O.default.castMessageIdAsChannelId(t.id));
   null != n && (0, d.ok)(n)
 }

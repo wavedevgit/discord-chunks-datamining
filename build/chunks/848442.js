@@ -1,4 +1,4 @@
-/** Chunk was on 53745 **/
+/** Chunk was on 21247 **/
 n.d(t, {
   Z: () => Z
 });
@@ -23,8 +23,8 @@ var i = n(120356),
   O = n(430824),
   v = n(626135),
   C = n(434479),
-  S = n(981631),
-  j = n(176505),
+  j = n(981631),
+  S = n(176505),
   E = n(629481),
   x = n(388032),
   I = n(664832);
@@ -66,7 +66,7 @@ function N(e) {
     guildId: t,
     selected: n,
     handleClick: i
-  } = e, u = (0, f.RF)(t, "guild_shop_channel_row"), g = (0, o.e7)([O.Z], () => O.Z.getGuild(t)), j = (null == g ? void 0 : g.hasFeature(S.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === !0, N = "false" === a.K.get(E.tM, "false"), Z = (0, o.e7)([d.Z], () => d.Z.useReducedMotion);
+  } = e, u = (0, f.RF)(t, "guild_shop_channel_row"), g = (0, o.e7)([O.Z], () => O.Z.getGuild(t)), S = (null == g ? void 0 : g.hasFeature(j.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === !0, N = "false" === a.K.get(E.tM, "false"), Z = (0, o.e7)([d.Z], () => d.Z.useReducedMotion);
   return (0, r.jsx)(C.m, {
     id: "shop-".concat(t),
     className: l()(I.previewChannelRow, {
@@ -95,11 +95,11 @@ function N(e) {
       }), n && (0, r.jsx)(c.P3F, {
         className: I.closeButton,
         onClick: e => {
-          if (e.stopPropagation(), (0, b.EW)(s.z.SERVER_SHOP_PHANTOM_PREVIEW), v.default.track(S.rMx.GUILD_SHOP_PREVIEW_CLICK, w(P({}, (0, h.hH)(t)), {
+          if (e.stopPropagation(), (0, b.EW)(s.z.SERVER_SHOP_PHANTOM_PREVIEW), v.default.track(j.rMx.GUILD_SHOP_PREVIEW_CLICK, w(P({}, (0, h.hH)(t)), {
               action_taken: E.mz.DISMISS_CHANNEL_ROW
-            })), !u || !j) {
+            })), !u || !S) {
             var n;
-            (0, y.dL)(S.Z5c.CHANNEL(t, null == (n = _.ZP.getDefaultChannel(t)) ? void 0 : n.id))
+            (0, y.dL)(j.Z5c.CHANNEL(t, null == (n = _.ZP.getDefaultChannel(t)) ? void 0 : n.id))
           }
         },
         "aria-label": x.intl.string(x.t.cpT0Cg),
@@ -117,7 +117,7 @@ function Z(e) {
     guild: t,
     selected: i
   } = e, l = (0, g.g)(t, "guild_shop_channel_row"), o = () => {
-    a.K.set(E.tM, "true"), (0, y.uL)(S.Z5c.CHANNEL(t.id, j.oC.GUILD_SHOP))
+    a.K.set(E.tM, "true"), (0, y.uL)(j.Z5c.CHANNEL(t.id, S.oC.GUILD_SHOP))
   };
   return l ? (0, r.jsx)(N, {
     guildId: t.id,

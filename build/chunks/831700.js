@@ -1,4 +1,4 @@
-/** Chunk was on 53745 **/
+/** Chunk was on 21247 **/
 n.d(t, {
   Z: () => ei
 }), n(388685), n(415506);
@@ -22,8 +22,8 @@ var r = n(200651),
   O = n(873696),
   v = n(446226),
   C = n(305325),
-  S = n(281956),
-  j = n(66999),
+  j = n(281956),
+  S = n(66999),
   E = n(554747),
   x = n(378844),
   I = n(340541),
@@ -212,8 +212,8 @@ class en extends H.ZP {
       showTutorial: O,
       hasActiveEvent: v,
       embeddedApps: C,
-      isSubscriptionGated: S,
-      isFavoriteSuggestion: j,
+      isSubscriptionGated: j,
+      isFavoriteSuggestion: S,
       withGuildIcon: E
     } = this.props, {
       shouldShowActivities: x,
@@ -267,7 +267,7 @@ class en extends H.ZP {
                   }),
                   hasActiveEvent: v,
                   channel: e,
-                  selected: !j && t,
+                  selected: !S && t,
                   connected: n,
                   unread: n ? i : void 0,
                   resolvedUnreadSetting: l,
@@ -281,14 +281,14 @@ class en extends H.ZP {
                     this.handleContextMenu(e), null == d || d()
                   },
                   connectDragPreview: g,
-                  isFavoriteSuggestion: j,
+                  isFavoriteSuggestion: S,
                   "aria-label": (0, m.ZP)({
                     channel: e,
                     unread: i,
                     mentionCount: s,
                     userCount: T,
                     embeddedActivitiesCount: C.length,
-                    isSubscriptionGated: S
+                    isSubscriptionGated: j
                   }),
                   "aria-describedby": (0, b.Z)({
                     channel: e,
@@ -296,9 +296,9 @@ class en extends H.ZP {
                   }),
                   withGuildIcon: E
                 }, h), {
-                  children: [j && (0, r.jsxs)(r.Fragment, {
+                  children: [S && (0, r.jsxs)(r.Fragment, {
                     children: [this.renderAcceptSuggestionButton(), this.renderRemoveSuggestionButton()]
-                  }), !j && (0, r.jsxs)(r.Fragment, {
+                  }), !S && (0, r.jsxs)(r.Fragment, {
                     children: [this.renderOpenChatButton(), this.renderInviteButton(), N ? this.renderOptionsButton({
                       onContextMenu: this.handleContextMenu
                     }) : this.renderEditButton(), this.renderChannelInfo(), this.renderHDSplashedIcon()]
@@ -374,7 +374,7 @@ class en extends H.ZP {
       let {
         channel: e
       } = this.props, t = e.getGuildId();
-      null != t && (0, S.n)(t) && (0, C.hk)(t), this.handleVoiceConnect()
+      null != t && (0, j.n)(t) && (0, C.hk)(t), this.handleVoiceConnect()
     }), $(this, "handleVoiceStatusClick", e => {
       let {
         connected: t,
@@ -481,7 +481,7 @@ function ei(e) {
   }), p = (0, s.e7)([G.Z], () => G.Z.hasVideo(n.id)), g = (0, f.ZP)(n), m = (0, y.ZP)(n), b = (0, E.qY)(n.id), {
     isSubscriptionGated: _,
     needSubscriptionToAccess: O
-  } = (0, j.Z)(n.id), C = (0, v.Z)(), S = (0, s.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), x = e.connected || (null == C ? void 0 : C.channelId) === n.id, I = (0, F.Z)({
+  } = (0, S.Z)(n.id), C = (0, v.Z)(), j = (0, s.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), x = e.connected || (null == C ? void 0 : C.channelId) === n.id, I = (0, F.Z)({
     channel: n,
     isChannelSelected: o,
     isChannelCollapsed: a,
@@ -501,7 +501,7 @@ function ei(e) {
     needSubscriptionToAccess: O
   }, u, h, e), {
     connected: x,
-    isFavoriteSuggestion: l && !S,
+    isFavoriteSuggestion: l && !j,
     forceShowButtons: P,
     channelInfo: I,
     resolvedUnreadSetting: d

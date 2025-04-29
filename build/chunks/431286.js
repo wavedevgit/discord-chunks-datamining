@@ -1,6 +1,6 @@
-/** Chunk was on 53745 **/
+/** Chunk was on 21247 **/
 n.d(t, {
-  i: () => S
+  i: () => j
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -23,7 +23,7 @@ var r = n(200651),
   v = n(46140);
 let C = "orb-announcement-modal-key";
 
-function S() {
+function j() {
   let {
     hasLayers: e
   } = (0, o.cj)([f.Z], () => ({
@@ -33,12 +33,12 @@ function S() {
   } = (0, o.cj)([b.Z], () => ({
     onboardingModalOpenedPrior: b.Z.onboardingModalOpenedPrior
   })), {
-    enabled: S
+    enabled: j
   } = (0, m.W)({
     location: "virtual_currency_announcement_modal"
-  }), [j, E] = (0, h.US)(S ? [s.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], ...y.b.useSelectedDismissibleContent), x = (0, c.s9z)(c.JQI);
+  }), [S, E] = (0, h.US)(j ? [s.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], ...y.b.useSelectedDismissibleContent), x = (0, c.s9z)(c.JQI);
   i.useEffect(() => {
-    S && !t && j === s.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL && (e || x || (u.Z.dispatch({
+    j && !t && S === s.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL && (e || x || (u.Z.dispatch({
       type: "VIRTUAL_CURRENCY_ONBOARDING_MODAL_OPEN"
     }), (0, a.ZD)(async () => {
       let {
@@ -78,5 +78,5 @@ function S() {
         E(O.L.USER_DISMISS), (0, c.Mr3)(C)
       }
     })))
-  }, [j, S, t, E, e, x])
+  }, [S, j, t, E, e, x])
 }

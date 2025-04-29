@@ -1,4 +1,4 @@
-/** Chunk was on 53745 **/
+/** Chunk was on 21247 **/
 n.d(t, {
   Z: () => R
 });
@@ -22,8 +22,8 @@ var r = n(200651),
   O = n(714794),
   v = n(876548),
   C = n(25601),
-  S = n(207055),
-  j = n(981631),
+  j = n(207055),
+  S = n(981631),
   E = n(124368),
   x = n(388032),
   I = n(915887),
@@ -260,12 +260,12 @@ let R = i.memo(function(e) {
           })
         }))]
       })
-    }), (0, r.jsx)(S.Z, {
+    }), (0, r.jsx)(j.Z, {
       channel: t,
       collapsed: !w,
       collapsedMax: 6,
       voiceStates: L,
-      location: j.Sbl.GUILD_CHANNEL_LIST
+      location: S.Sbl.GUILD_CHANNEL_LIST
     })]
   })
 })

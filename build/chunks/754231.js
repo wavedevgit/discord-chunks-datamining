@@ -1,4 +1,4 @@
-/** Chunk was on 53745 **/
+/** Chunk was on 21247 **/
 n.d(t, {
   Z: () => x
 }), n(388685);
@@ -110,7 +110,7 @@ function C(e) {
   })
 }
 
-function S(e) {
+function j(e) {
   let {
     activity: t,
     user: n,
@@ -129,7 +129,7 @@ function S(e) {
   })
 }
 
-function j(e) {
+function S(e) {
   let {
     activity: t
   } = e, n = null == t ? void 0 : t.state;
@@ -197,11 +197,11 @@ function x(e) {
           activity: t,
           embeddedApp: n,
           onOpenSpotifyTrack: h
-        }), (0, r.jsx)(S, {
+        }), (0, r.jsx)(j, {
           activity: t,
           user: l,
           onOpenSpotifyArtist: p
-        }), (0, r.jsx)(j, {
+        }), (0, r.jsx)(S, {
           activity: t
         }), m.length > 0 && (0, r.jsx)(d.Z, {
           className: _.usersSummary,

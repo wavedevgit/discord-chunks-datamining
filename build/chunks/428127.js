@@ -1,4 +1,4 @@
-/** Chunk was on 53745 **/
+/** Chunk was on 21247 **/
 n.d(t, {
   Z: () => _
 });
@@ -73,15 +73,15 @@ function _(e) {
   } = (0, a.cj)([f.Z], () => f.Z.getUnreadStateForGuildId(n.id)), O = (0, a.e7)([h.Z], () => h.Z.isFocused()), {
     mode: v,
     mentionCount: C,
-    targetChannelId: S
-  } = "bottom" === t ? p : _, j = v === f.x.HIDDEN, E = (0, c.q_F)({
+    targetChannelId: j
+  } = "bottom" === t ? p : _, S = v === f.x.HIDDEN, E = (0, c.q_F)({
     to: {
-      transform: j ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
+      transform: S ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
     },
     config: b
   }, O ? "respect-motion-settings" : "animate-never"), x = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), null != S && d(S)
-  }, [d, S]);
+    e.preventDefault(), e.stopPropagation(), null != j && d(j)
+  }, [d, j]);
   return (0, r.jsx)("div", {
     className: o()(m.container, {
       [m.top]: "top" === t,
@@ -90,7 +90,7 @@ function _(e) {
     children: (0, r.jsx)(s.animated.div, {
       className: m.containerPadding,
       style: E,
-      "aria-hidden": j,
+      "aria-hidden": S,
       children: v === f.x.HIDDEN ? (0, r.jsx)("div", {
         className: o()(m.bar, m.emptyBar)
       }) : v === f.x.UNREAD ? (0, r.jsxs)(c.P3F, {

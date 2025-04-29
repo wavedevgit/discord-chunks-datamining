@@ -1,4 +1,4 @@
-/** Chunk was on 53745 **/
+/** Chunk was on 21247 **/
 n.d(t, {
   Z: () => U
 }), n(388685);
@@ -22,8 +22,8 @@ var r = n(200651),
   O = n(592125),
   v = n(430824),
   C = n(496675),
-  S = n(306680),
-  j = n(9156),
+  j = n(306680),
+  S = n(9156),
   E = n(594174),
   x = n(109446),
   I = n(98597),
@@ -103,8 +103,8 @@ class k extends I.ZP {
       subtitle: O,
       forceTopLevelThread: v,
       embeddedApps: C,
-      resolvedUnreadSetting: S,
-      withGuildIcon: j,
+      resolvedUnreadSetting: j,
+      withGuildIcon: S,
       enableActivities: E
     } = this.props, x = (0, b.jW)({
       location: "text_channel"
@@ -140,8 +140,8 @@ class k extends I.ZP {
           connectDragPreview: m ? p : null,
           isFavoriteSuggestion: _,
           channelTypeOverride: v ? Z.d4z.GUILD_TEXT : void 0,
-          resolvedUnreadSetting: S,
-          withGuildIcon: j,
+          resolvedUnreadSetting: j,
+          withGuildIcon: S,
           "aria-label": (0, f.ZP)({
             channel: e,
             unread: l,
@@ -265,11 +265,11 @@ function U(e) {
   } = e, {
     hasActiveThreads: c,
     hasMoreActiveThreads: u
-  } = (0, _.JQ)(t), d = (0, s.cj)([S.ZP], () => ({
-    unread: S.ZP.hasUnread(t.id),
-    ackMessageId: S.ZP.ackMessageId(t.id),
-    isLowImportanceMention: S.ZP.getIsMentionLowImportance(t.id)
-  })), f = (0, s.e7)([j.ZP], () => j.ZP.resolveUnreadSetting(t)), g = (0, s.cj)([O.Z, C.Z], () => {
+  } = (0, _.JQ)(t), d = (0, s.cj)([j.ZP], () => ({
+    unread: j.ZP.hasUnread(t.id),
+    ackMessageId: j.ZP.ackMessageId(t.id),
+    isLowImportanceMention: j.ZP.getIsMentionLowImportance(t.id)
+  })), f = (0, s.e7)([S.ZP], () => S.ZP.resolveUnreadSetting(t)), g = (0, s.cj)([O.Z, C.Z], () => {
     let e = O.Z.getChannel(t.parent_id);
     return {
       canManageChannel: C.Z.can(Z.Plq.MANAGE_CHANNELS, t),
@@ -278,7 +278,7 @@ function U(e) {
   }), b = (0, s.e7)([y.Z], () => y.Z.shouldIndicateNewChannel(n.id, t.id)), {
     needSubscriptionToAccess: v,
     isSubscriptionGated: x
-  } = (0, m.Z)(t.id), I = (0, s.e7)([j.ZP], () => j.ZP.isFavorite(n.id, t.id)), w = (0, s.e7)([E.default], () => {
+  } = (0, m.Z)(t.id), I = (0, s.e7)([S.ZP], () => S.ZP.isFavorite(n.id, t.id)), w = (0, s.e7)([E.default], () => {
     let e = E.default.getCurrentUser();
     return null != e && (!t.isNSFW() || e.nsfwAllowed)
   }, [t]), N = (0, h.NX)(t.id), A = (0, P.Z)({

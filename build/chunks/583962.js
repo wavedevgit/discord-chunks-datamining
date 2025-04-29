@@ -1,4 +1,4 @@
-/** Chunk was on 53745 **/
+/** Chunk was on 21247 **/
 n.d(t, {
   PD: () => D,
   ZP: () => M,
@@ -24,8 +24,8 @@ var r = n(200651),
   O = n(259580),
   v = n(267642),
   C = n(624138),
-  S = n(667815),
-  j = n(531572),
+  j = n(667815),
+  S = n(531572),
   E = n(26323),
   x = n(30513),
   I = n(981631),
@@ -100,12 +100,12 @@ let A = (0, C.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
       withMargin: n
     } = e, l = (0, m.Q3)("GuildBoostingSidebarDisplay"), {
       analyticsLocations: u
-    } = (0, g.ZP)(p.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY), b = (0, v.Jh)(t.id), C = (0, y.Z)(t.id), A = (0, v.FZ)(b), D = null == A, L = null != A ? A : b, M = (0, c.e7)([j.Z], () => {
+    } = (0, g.ZP)(p.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY), b = (0, v.Jh)(t.id), C = (0, y.Z)(t.id), A = (0, v.FZ)(b), D = null == A, L = null != A ? A : b, M = (0, c.e7)([S.Z], () => {
       var e;
-      return null != (e = j.Z.getCountForGuild(t.id)) ? e : 0
+      return null != (e = S.Z.getCountForGuild(t.id)) ? e : 0
     }), U = (0, c.e7)([_.Z], () => _.Z.can(I.Plq.MANAGE_GUILD, t));
     i.useEffect(() => {
-      M !== C && (0, S.v)(t.id, C)
+      M !== C && (0, j.v)(t.id, C)
     }, [t.id, M, C]);
     let G = "".concat(Math.min(100, C / I.oCV[L] * 100), "%"),
       {

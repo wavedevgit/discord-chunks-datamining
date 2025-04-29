@@ -14,8 +14,8 @@ var i = n(200651),
   f = n(556012),
   g = n(572456),
   m = n(434404),
-  b = n(981631),
-  h = n(273504),
+  h = n(981631),
+  b = n(273504),
   p = n(388032),
   O = n(466745);
 
@@ -50,7 +50,7 @@ function E(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = h.fX.KEYWORD;
+let v = b.fX.KEYWORD;
 
 function j(e, t) {
   let {
@@ -64,20 +64,20 @@ function j(e, t) {
   } = (0, d.V)(), [Z, N] = r.useState(!1), [I, x] = (0, s.I2)(t), {
     rulesByTriggerType: T,
     updateRule: M
-  } = (0, s.pH)(t), w = r.useMemo(() => {
+  } = (0, s.pH)(t), D = r.useMemo(() => {
     var e;
     return null != (e = T[v]) ? e : []
-  }, [T]), A = 0 === w.length, D = n > w.length && !A;
+  }, [T]), w = 0 === D.length, A = n > D.length && !w;
   if (!r.useMemo(() => (0, u.ze)(t), [t]) || null == e || 0 === e.length || null == t) return null;
   let C = e.split(" "),
     L = C.length;
   try {
-    (0, o.km)(C, h.RH)
+    (0, o.km)(C, b.RH)
   } catch (e) {
     return null
   }
   let R = () => {
-      null != t && ((0, a.Zy)(), m.Z.open(t, b.pNK.GUILD_AUTOMOD), setTimeout(() => {
+      null != t && ((0, a.Zy)(), m.Z.open(t, h.pNK.GUILD_AUTOMOD), setTimeout(() => {
         _(t, v, {
           triggerMetadata: {
             keywordFilter: [e],
@@ -95,18 +95,18 @@ function j(e, t) {
           keywordFilter: [...null != (i = null == (n = t.triggerMetadata) ? void 0 : n.keywordFilter) ? i : [], e]
         })
       });
-      await S(r, w), M(r), null != P ? (0, l.showToast)((0, l.createToast)(p.intl.string(p.t.wH6L0t), l.ToastType.FAILURE)) : (0, l.showToast)((0, l.createToast)(p.intl.string(p.t["0rdYm5"]), l.ToastType.SUCCESS))
+      await S(r, D), M(r), null != P ? (0, l.showToast)((0, l.createToast)(p.intl.string(p.t.wH6L0t), l.ToastType.FAILURE)) : (0, l.showToast)((0, l.createToast)(p.intl.string(p.t["0rdYm5"]), l.ToastType.SUCCESS))
     }, G = (0, i.jsx)(l.sNh, {
       id: "automod-rules-loading",
       label: p.intl.string(p.t.ZTNur6)
     });
   return I || (G = (0, i.jsxs)(i.Fragment, {
-    children: [A && (0, i.jsx)(l.sNh, {
+    children: [w && (0, i.jsx)(l.sNh, {
       id: "add-first-rule",
       label: p.intl.string(p.t.f72Zqa),
       action: R,
       disabled: j
-    }), w.map(e => {
+    }), D.map(e => {
       let t = (0, c.V9)(v).reduce((t, n) => {
         let i = e.actions.find(e => {
           let {
@@ -132,7 +132,7 @@ function j(e, t) {
         disabled: j,
         action: () => k(e)
       }, e.id)
-    }), D && (0, i.jsxs)(i.Fragment, {
+    }), A && (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(l.Clw, {}), (0, i.jsx)(l.sNh, {
         id: "add-another-rule",
         label: p.intl.string(p.t["0K5jDA"]),

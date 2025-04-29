@@ -1,4 +1,4 @@
-/** Chunk was on 53745 **/
+/** Chunk was on 21247 **/
 n.d(t, {
   Z: () => B
 }), n(388685);
@@ -21,8 +21,8 @@ var r, i = n(200651),
   O = n(313201),
   v = n(540059),
   C = n(860144),
-  S = n(214852),
-  j = n(518311),
+  j = n(214852),
+  S = n(518311),
   E = n(355298),
   x = n(869404),
   I = n(333984),
@@ -389,7 +389,7 @@ class G extends(r = l.Component) {
         children: [(0, i.jsx)("span", {
           className: D.headerText,
           children: R.intl.string(R.t.YUU0RE)
-        }), (0, i.jsx)(j.Z, {
+        }), (0, i.jsx)(S.Z, {
           tooltip: R.intl.string(R.t["6Urw1t"]),
           tooltipPosition: "top",
           popoutAlign: "left",
@@ -445,14 +445,14 @@ let B = e => {
       let e = Z.Z.getPrivateChannelIds();
       return (0, x.tU)(e, [E.Z, I.Z])
     }, []);
-  (0, S.z)(C.R);
+  (0, j.z)(C.R);
   let _ = (0, u.cj)([f.Z, P.Z, w.Z], () => ({
       theme: P.Z.darkSidebar ? A.BRd.DARK : s,
       keyboardModeEnabled: f.Z.keyboardModeEnabled,
       version: null != o ? "".concat(o, ":").concat(w.Z.getPrivateChannelsVersion()) : w.Z.getPrivateChannelsVersion()
     })),
-    j = l.useRef(null),
-    N = null != (t = e.listScrollerRef) ? t : j,
+    S = l.useRef(null),
+    N = null != (t = e.listScrollerRef) ? t : S,
     T = l.useCallback(e => {
       let t = N.current,
         n = document.querySelector(e);

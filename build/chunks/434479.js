@@ -1,4 +1,4 @@
-/** Chunk was on 53745 **/
+/** Chunk was on 21247 **/
 n.d(t, {
   m: () => f
 });
@@ -73,7 +73,7 @@ function f(e) {
       return i
     }(e, ["id", "className", "innerClassName", "renderIcon", "text", "selected", "trailing", "background", "showUnread"]);
   let C = (0, o.JA)(n),
-    S = null != (t = (0, s.qg)(m)) ? t : "";
+    j = null != (t = (0, s.qg)(m)) ? t : "";
   return (0, r.jsx)("li", {
     children: (0, r.jsxs)(a.kL8, p(h({}, v), {
       buttonProps: p(h({}, C), {
@@ -81,7 +81,7 @@ function f(e) {
         role: "button"
       }),
       tag: "div",
-      "aria-label": S,
+      "aria-label": j,
       focusProps: {
         offset: {
           top: 1,

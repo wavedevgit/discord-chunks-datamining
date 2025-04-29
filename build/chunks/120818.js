@@ -1,4 +1,4 @@
-/** Chunk was on 53745 **/
+/** Chunk was on 21247 **/
 n.d(t, {
   T: () => y
 });
@@ -34,7 +34,7 @@ let y = i.memo(function(e) {
     return _.forEach(t => {
       null != O[t.channelId] && e++
     }), e
-  }, [O, _]), C = null == _ ? 0 : _.length, S = (0, l.JA)("progress-bar-".concat(y.id));
+  }, [O, _]), C = null == _ ? 0 : _.length, j = (0, l.JA)("progress-bar-".concat(y.id));
   return (0, r.jsxs)("li", {
     children: [(0, r.jsxs)(s.P3F, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -53,7 +53,7 @@ let y = i.memo(function(e) {
         })
       }
       return e
-    }({}, S), n = n = {
+    }({}, j), n = n = {
       role: "button",
       focusProps: {
         offset: {

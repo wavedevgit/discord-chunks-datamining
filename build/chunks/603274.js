@@ -1,4 +1,4 @@
-/** Chunk was on 53745 **/
+/** Chunk was on 21247 **/
 n.d(t, {
   Z: () => N
 }), n(388685), n(361932), n(187205), n(539854);
@@ -23,8 +23,8 @@ var i = n(120356),
   O = n(823379),
   v = n(709054),
   C = n(853856),
-  S = n(981631),
-  j = n(388032),
+  j = n(981631),
+  S = n(388032),
   E = n(714509),
   x = n(375613);
 
@@ -45,8 +45,8 @@ function I(e, t) {
 function P() {
   let e = (0, a.Wu)([C.Z, b.Z], () => v.default.keys(C.Z.getFavoriteChannels()).map(e => b.Z.getChannel(e)).filter(O.lm)),
     t = e.map(e => e.id),
-    n = e.filter(e => e.type === S.d4z.GUILD_VOICE),
-    i = e.filter(e => e.type === S.d4z.GUILD_STAGE_VOICE).map(e => e.id),
+    n = e.filter(e => e.type === j.d4z.GUILD_VOICE),
+    i = e.filter(e => e.type === j.d4z.GUILD_STAGE_VOICE).map(e => e.id),
     l = (0, a.Wu)([_.ZP], () => s().flatMap(n, e => _.ZP.getVoiceStatesForChannel(e).map(e => {
       let {
         user: t
@@ -64,7 +64,7 @@ function P() {
       for (let t of i) e += f.Z.getParticipantCount(t, g.pV.AUDIENCE);
       return e
     }),
-    j = (0, a.Wu)([m.Z], () => m.Z.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [t]),
+    S = (0, a.Wu)([m.Z], () => m.Z.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [t]),
     x = (0, a.Wu)([d.ZP], () => {
       let e = d.ZP.getEmbeddedActivitiesByChannel(),
         n = [];
@@ -75,8 +75,8 @@ function P() {
       return n
     }, [t]),
     P = (0, a.Wu)([y.default], () => x.map(e => y.default.getUser(e)), [x]),
-    w = (0, a.Wu)([y.default], () => j.map(e => y.default.getUser(e)), [j]),
-    N = I(c.gj8, l.filter(e => !j.includes(e.id) && !x.includes(e.id))),
+    w = (0, a.Wu)([y.default], () => S.map(e => y.default.getUser(e)), [S]),
+    N = I(c.gj8, l.filter(e => !S.includes(e.id) && !x.includes(e.id))),
     Z = 0 === o.length ? null : (0, r.jsxs)("div", {
       className: E.row,
       children: [(0, r.jsx)(c.ewx, {
@@ -120,7 +120,7 @@ function w() {
       className: l()(E.row, E.rowGuildName),
       children: (0, r.jsx)("span", {
         className: l()(E.guildNameText, E.guildNameTextLimitedSize),
-        children: j.intl.string(j.t.wMWycn)
+        children: S.intl.string(S.t.wMWycn)
       })
     }), (0, r.jsx)(P, {})]
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 53745 **/
+/** Chunk was on 21247 **/
 n.d(t, {
   Z: () => y
 });
@@ -70,9 +70,9 @@ function y(e) {
       }))
     }), (0, a.EW)(l.z.GUILD_HEADER_EVENT_UPSELL)
   }
-  let S = (0, c.ZP)(t.id),
-    j = S.length > 0 ? f.intl.formatToPlainString(f.t.IBdqSk, {
-      number: S.length
+  let j = (0, c.ZP)(t.id),
+    S = j.length > 0 ? f.intl.formatToPlainString(f.t.IBdqSk, {
+      number: j.length
     }) : f.intl.string(f.t.tlopTE);
   return (0, r.jsx)(h.m, {
     id: "upcoming-events-".concat(t.id),
@@ -81,7 +81,7 @@ function y(e) {
       color: "currentColor",
       className: e
     }),
-    text: j,
+    text: S,
     selected: y,
     onClick: C,
     onContextMenu: e => {

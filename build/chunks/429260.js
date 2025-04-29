@@ -1,7 +1,7 @@
 /** Chunk was on 37220 **/
 n.d(t, {
   ZP: () => g,
-  eH: () => b,
+  eH: () => h,
   wY: () => m
 });
 var i = n(200651);
@@ -27,7 +27,7 @@ function g(e) {
 }
 
 function m(e) {
-  return (0, s.s)(e) ? (0, i.jsx)(l.sNh, {
+  return (0, s.sP)(e) ? (0, i.jsx)(l.sNh, {
     id: "report-to-mod",
     label: d.intl.string(f.default["1D+vq6"]),
     action: () => (0, o.tV)(e),
@@ -35,7 +35,7 @@ function m(e) {
   }) : null
 }
 
-function b(e) {
+function h(e) {
   let t = (0, r.e7)([a.ZP], () => a.ZP.get("iar_testing")),
     n = (0, r.e7)([c.default], () => c.default.getCurrentUser());
   return (0, u.a4)(e) && null != n && n.isStaff() && t ? (0, i.jsx)(l.sNh, {

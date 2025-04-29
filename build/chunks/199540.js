@@ -1,4 +1,4 @@
-/** Chunk was on 53745 **/
+/** Chunk was on 21247 **/
 n.d(t, {
   Z: () => x
 }), n(388685);
@@ -22,9 +22,9 @@ var r = n(200651),
   O = n(728492);
 let v = (0, m.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
   C = (0, m.Mg)(u.Z.FOLDER_ITEM_GUILD_ICON_SIZE),
-  S = ["13px 4px 4px 4px", "4px 13px 4px 4px", "4px 4px 4px 13px", "4px 4px 13px 4px"];
+  j = ["13px 4px 4px 4px", "4px 13px 4px 4px", "4px 4px 4px 13px", "4px 4px 13px 4px"];
 
-function j(e) {
+function S(e) {
   let {
     guildId: t,
     animate: n,
@@ -42,7 +42,7 @@ function j(e) {
     className: O.guildIcon,
     tabIndex: -1,
     style: o ? {
-      borderRadius: S[i]
+      borderRadius: j[i]
     } : void 0
   })
 }
@@ -61,7 +61,7 @@ function E(e) {
     g = null != h ? h : y.Wyy,
     m = g === y.Wyy,
     b = f.map(e => e.id),
-    [_, S] = i.useState(!1),
+    [_, j] = i.useState(!1),
     [E, x] = i.useState(c),
     I = u ? c ? 22 : -11 : c ? 0 : -C,
     P = (0, d.q_F)({
@@ -70,10 +70,10 @@ function E(e) {
         duration: v
       },
       onStart() {
-        S(!0), x(c)
+        j(!0), x(c)
       },
       onRest() {
-        S(!1), x(c)
+        j(!1), x(c)
       }
     }, "animate-always"),
     w = _ ? P : void 0;
@@ -90,7 +90,7 @@ function E(e) {
   })), (_ || !E) && (n = (0, r.jsx)(s.animated.div, {
     style: w,
     className: O.closedFolderIconWrapper,
-    children: b.slice(0, 4).map((e, t) => (0, r.jsx)(j, {
+    children: b.slice(0, 4).map((e, t) => (0, r.jsx)(S, {
       index: t,
       guildId: e,
       animate: o
@@ -121,8 +121,8 @@ function x(e) {
     folderGroupId: y,
     folderIconContentClassName: v,
     folderIconContent: C,
-    onClick: S,
-    onContextMenu: j,
+    onClick: j,
+    onContextMenu: S,
     onHoverChange: x,
     onKeyDown: I,
     treeItemProps: {
@@ -182,8 +182,8 @@ function x(e) {
       className: o()(O.folder, {
         [O.hover]: T
       }),
-      onClick: S,
-      onContextMenu: j,
+      onClick: j,
+      onContextMenu: S,
       onMouseEnter: R,
       onMouseLeave: D,
       onKeyDown: I,

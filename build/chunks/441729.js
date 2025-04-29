@@ -1,9 +1,9 @@
-/** Chunk was on 53745 **/
+/** Chunk was on 41372 **/
 n.d(t, {
-  Z: () => h
+  Z: () => d
 });
-var r, i = n(442837),
-  l = n(570140);
+var i, c = n(442837),
+  r = n(570140);
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -17,36 +17,36 @@ function o(e, t, n) {
 function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      i = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
+    }))), i.forEach(function(t) {
       o(e, t, n[t])
     })
   }
   return e
 }
 
-function a(e, t) {
+function l(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var i = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, i)
     }
     return n
   })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let c = {
+let a = {
     speechRate: 1,
     currentMessage: null
   },
-  u = c;
-class d extends(r = i.ZP.DeviceSettingsStore) {
+  u = a;
+class p extends(i = c.ZP.DeviceSettingsStore) {
   initialize(e) {
-    u = s({}, c, null != e ? e : null)
+    u = s({}, a, null != e ? e : null)
   }
   isSpeakingMessage(e, t) {
     let {
@@ -64,14 +64,14 @@ class d extends(r = i.ZP.DeviceSettingsStore) {
     return u
   }
 }
-o(d, "displayName", "TTSStore"), o(d, "persistKey", "TTSStore"), o(d, "migrations", []);
-let h = new d(l.Z, __OVERLAY__ ? {} : {
+o(p, "displayName", "TTSStore"), o(p, "persistKey", "TTSStore"), o(p, "migrations", []);
+let d = new p(r.Z, __OVERLAY__ ? {} : {
   SPEAKING_MESSAGE: function(e) {
     let {
       messageId: t,
       channelId: n
     } = e;
-    u = a(s({}, u), {
+    u = l(s({}, u), {
       currentMessage: {
         messageId: t,
         channelId: n
@@ -79,12 +79,12 @@ let h = new d(l.Z, __OVERLAY__ ? {} : {
     })
   },
   STOP_SPEAKING: function() {
-    u = a(s({}, u), {
+    u = l(s({}, u), {
       currentMessage: null
     })
   },
   SET_TTS_SPEECH_RATE: function(e) {
-    u = a(s({}, u), {
+    u = l(s({}, u), {
       speechRate: e.speechRate
     })
   }

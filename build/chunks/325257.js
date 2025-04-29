@@ -1,4 +1,4 @@
-/** Chunk was on 53745 **/
+/** Chunk was on 21247 **/
 n.d(t, {
   Z: () => M
 }), n(388685);
@@ -22,8 +22,8 @@ var r = n(200651),
   O = n(769654),
   v = n(271383),
   C = n(771845),
-  S = n(727258),
-  j = n(276952),
+  j = n(727258),
+  S = n(276952),
   E = n(249792),
   x = n(40153),
   I = n(593618),
@@ -120,7 +120,7 @@ let M = i.memo(function(e) {
     [{
       dragging: eh
     }, ep] = (0, s.c)({
-      type: S.eD.GUILD,
+      type: j.eD.GUILD,
       item: () => (requestAnimationFrame(() => {
         null == B || B()
       }), {
@@ -141,7 +141,7 @@ let M = i.memo(function(e) {
     [eO, ev] = i.useState(!1),
     [eC] = i.useState(() => new d.sW(70, () => ev(!0)));
   i.useEffect(() => () => eC.cancel(), [eC]);
-  let eS = i.useCallback(() => {
+  let ej = i.useCallback(() => {
       if (null != H) return void(0, _.uL)(H, {
         state: L
       });
@@ -149,7 +149,7 @@ let M = i.memo(function(e) {
         state: L
       })
     }, [eo, H]),
-    ej = i.useCallback(() => {
+    eS = i.useCallback(() => {
       if (null != H || null == F || q || !et) return;
       let e = (0, y.V)(F.id);
       null != e && p.Z.preload(F.id, e)
@@ -189,14 +189,14 @@ let M = i.memo(function(e) {
         mentions: Q
       }),
       name: F.toString(),
-      onClick: eS,
+      onClick: ej,
       onMouseEnter: function() {
         ee || em(!0)
       },
       onMouseLeave: function() {
         ee || em(!1)
       },
-      onMouseDown: ej,
+      onMouseDown: eS,
       onContextMenu: ex,
       onKeyDown: eI,
       icon: F.getIconURL(2 * eN, eb && z, ea),
@@ -232,7 +232,7 @@ let M = i.memo(function(e) {
     });
   return (0, r.jsxs)(w.H, {
     ref: ew,
-    children: [(0, r.jsx)(j.Z, {
+    children: [(0, r.jsx)(S.Z, {
       hovered: !eh && eb,
       selected: !eh && W,
       unread: !eh && Y,

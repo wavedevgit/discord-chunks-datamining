@@ -1,4 +1,4 @@
-/** Chunk was on 53745 **/
+/** Chunk was on 21247 **/
 n.d(t, {
   Z: () => e_
 }), n(388685), n(539854);
@@ -22,8 +22,8 @@ var r = n(200651),
   O = n(214629),
   v = n(566620),
   C = n(317381),
-  S = n(736409),
-  j = n(367907),
+  j = n(736409),
+  S = n(367907),
   E = n(835473),
   x = n(413523),
   I = n(933557),
@@ -257,7 +257,7 @@ class ey extends i.PureComponent {
         onClick: () => {
           p.Z.dispatch({
             type: "ACTIVITY_POPOUT_WINDOW_OPEN"
-          }), c && u(ed.L.TAKE_ACTION), (0, j.yw)(ec.rMx.ACTIVITY_PANEL_GAME_CARD_ACTIVITY_POPOUT_REFOCUS_CLICKED)
+          }), c && u(ed.L.TAKE_ACTION), (0, S.yw)(ec.rMx.ACTIVITY_PANEL_GAME_CARD_ACTIVITY_POPOUT_REFOCUS_CLICKED)
         },
         children: b
       }))
@@ -279,7 +279,7 @@ class ey extends i.PureComponent {
       isForceShowSharingPopout: u,
       setIsForceShowSharingPopout: d
     } = this.props;
-    return i || ((0, es.y)(s, a, t) || e) && (null != n || null != t) ? (0, r.jsx)(S.j, {
+    return i || ((0, es.y)(s, a, t) || e) && (null != n || null != t) ? (0, r.jsx)(j.j, {
       isForceShowSharingPopout: u,
       setIsForceShowSharingPopout: d,
       children: (0, r.jsx)("div", {
@@ -337,8 +337,8 @@ let e_ = (0, b.Z)(function(e) {
     m = (0, u.e7)([y.Z], () => y.Z.useReducedMotion),
     b = (0, u.e7)([C.ZP], () => C.ZP.getCurrentEmbeddedActivity()),
     v = (0, u.e7)([q.Z, X.Z, K.ZP], () => null != a ? D.JL(a, q.Z, X.Z, !1) : null != n && D.h_(K.ZP.getChannels(n), q.Z, X.Z).length > 0),
-    [S] = (0, E.Z)([null != (t = null != g && null != g.id ? g.id : null != s && null != s.id ? s.id : null != b ? b.applicationId : void 0) ? t : ""]),
-    j = (0, u.e7)([w.Z], () => w.Z.getFakeGameData()),
+    [j] = (0, E.Z)([null != (t = null != g && null != g.id ? g.id : null != s && null != s.id ? s.id : null != b ? b.applicationId : void 0) ? t : ""]),
+    S = (0, u.e7)([w.Z], () => w.Z.getFakeGameData()),
     x = (0, u.e7)([C.ZP], () => C.ZP.getCurrentEmbeddedActivity()),
     P = (0, O.Z0)() && null != x && (0, _.R)(),
     N = (0, u.e7)([Q.Z], () => (0, L.Z)(Q.Z) && (0, ei.isWindows)()),
@@ -363,12 +363,12 @@ let e_ = (0, b.Z)(function(e) {
     }();
   return (0, r.jsx)(ey, em(eg({}, l), {
     guildId: n,
-    canGoLive: N || P || void 0 !== j,
+    canGoLive: N || P || void 0 !== S,
     activity: R,
     embeddedActivity: b,
     userId: o,
-    runningGame: null != j ? j : s,
-    application: S,
+    runningGame: null != S ? S : s,
+    application: j,
     useReducedMotion: m,
     isStreaming: k,
     channel: h,
