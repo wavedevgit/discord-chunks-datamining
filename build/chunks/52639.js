@@ -1,89 +1,87 @@
-/** Chunk was on 69849 **/
+/** Chunk was on 74767 **/
 n.d(t, {
-  Z: () => C
+  Z: () => y
 });
 var r = n(200651);
 n(192379);
-var i = n(410030),
-  l = n(81897),
-  o = n(906732),
-  a = n(566898),
-  s = n(769654),
-  c = n(785717),
-  u = n(806729),
-  d = n(857302),
-  p = n(892001),
-  h = n(483517),
-  f = n(252417),
+var i = n(81897),
+  l = n(906732),
+  o = n(566898),
+  a = n(769654),
+  s = n(785717),
+  c = n(806729),
+  u = n(857302),
+  d = n(892001),
+  p = n(483517),
+  h = n(252417),
+  f = n(821179),
   m = n(502762),
-  g = n(428927),
-  b = n(686625),
-  _ = n(388032),
-  y = n(954767);
+  g = n(686625),
+  b = n(388032),
+  _ = n(954767);
 
-function C(e) {
+function y(e) {
   let {
     user: t,
     channelId: n
   } = e, {
-    analyticsLocations: C
-  } = (0, o.ZP)(), {
-    context: x
-  } = (0, c.KZ)(), v = (0, i.ZP)(), j = (0, l.Z)(), {
-    mutualFriendsCount: O,
-    mutualFriends: E,
-    mutualGuilds: I
-  } = (0, u.Z)(t), S = !t.bot && null != O && O > 0, P = null != I && I.length > 0;
-  return S || P ? (0, r.jsxs)(m.Z.Overlay, {
-    className: y.overlay,
-    children: [P && (0, r.jsx)(b.Z, {
+    analyticsLocations: y
+  } = (0, l.ZP)(), {
+    context: C
+  } = (0, s.KZ)(), x = (0, i.Z)(), {
+    mutualFriendsCount: v,
+    mutualFriends: j,
+    mutualGuilds: O
+  } = (0, c.Z)(t), E = !t.bot && null != v && v > 0, I = null != O && O.length > 0;
+  return E || I ? (0, r.jsxs)(m.Z.Overlay, {
+    className: _.overlay,
+    children: [I && (0, r.jsx)(g.Z, {
       section: "MUTUAL_GUILDS",
-      header: _.intl.string(_.t["4lTDZm"]),
-      listClassName: y.list,
-      items: I.map(e => {
+      header: b.intl.string(b.t["4lTDZm"]),
+      listClassName: _.list,
+      items: O.map(e => {
         let {
           guild: n,
           nick: i
         } = e;
-        return (0, r.jsx)(g.D, {
+        return (0, r.jsx)(f.Z, {
           user: t,
           guild: n,
           nick: i,
-          theme: v,
-          onSelect: () => (0, s.X)(n.id)
+          onSelect: () => (0, a.X)(n.id)
         }, n.id)
       })
-    }), P && S && (0, r.jsx)(h.Z, {
-      className: y.divider
-    }), S && (0, r.jsx)(b.Z, {
+    }), I && E && (0, r.jsx)(p.Z, {
+      className: _.divider
+    }), E && (0, r.jsx)(g.Z, {
       section: "MUTUAL_FRIENDS",
-      header: _.intl.string(_.t["0mTJ3t"]),
-      listClassName: y.list,
-      onExpand: () => (0, d.Z)(t.id, j),
-      items: null == E ? Array.from({
-        length: O
+      header: b.intl.string(b.t["0mTJ3t"]),
+      listClassName: _.list,
+      onExpand: () => (0, u.Z)(t.id, x),
+      items: null == j ? Array.from({
+        length: v
       }).map((e, t) => (0, r.jsxs)("div", {
-        className: y.loadingMutualFriend,
-        children: [(0, r.jsx)(a.ZT, {
+        className: _.loadingMutualFriend,
+        children: [(0, r.jsx)(o.ZT, {
           width: 40,
           opacity: .08
-        }), (0, r.jsx)(a.ZT, {
+        }), (0, r.jsx)(o.ZT, {
           width: 135,
           opacity: .08
         })]
-      }, t)) : E.map(e => {
+      }, t)) : j.map(e => {
         let {
           key: t,
           user: i,
           status: l
         } = e;
-        return (0, r.jsx)(f.Z, {
+        return (0, r.jsx)(h.Z, {
           user: i,
           status: l,
           channelId: n,
           onSelect: () => {
             var e, t;
-            (0, p.openUserProfileModal)((e = function(e) {
+            (0, d.openUserProfileModal)((e = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                   r = Object.keys(n);
@@ -100,9 +98,9 @@ function C(e) {
                 })
               }
               return e
-            }({}, x), t = t = {
+            }({}, C), t = t = {
               userId: i.id,
-              sourceAnalyticsLocations: C
+              sourceAnalyticsLocations: y
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {

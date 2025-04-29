@@ -1,11 +1,11 @@
-/** Chunk was on 72202 **/
+/** Chunk was on 65326 **/
 t.d(n, {
   Z: () => f
 });
 var o = t(200651);
 t(192379);
-var i = t(481060),
-  c = t(906732),
+var c = t(481060),
+  i = t(906732),
   r = t(705556),
   a = t(30556),
   l = t(821706),
@@ -18,19 +18,19 @@ function f(e) {
     user: n,
     currentUser: t,
     guildId: f,
-    relationshipType: p,
-    friendToken: _,
+    relationshipType: _,
+    friendToken: p,
     onClose: b
   } = e, {
     newestAnalyticsLocation: m
-  } = (0, c.ZP)(), {
+  } = (0, i.ZP)(), {
     gameFriends: I,
     hasOutgoingPendingGameFriends: h,
     hasIncomingPendingGameFriends: y
   } = (0, d.H)({
     userId: n.id
   });
-  if (p === s.OGo.BLOCKED) return null;
+  if (_ === s.OGo.BLOCKED) return null;
   if (n.id === t.id) return (0, o.jsx)("div", {
     className: u.container,
     children: (0, o.jsx)(r.Z, {
@@ -39,7 +39,7 @@ function f(e) {
       onClose: b
     })
   });
-  if (p === s.OGo.FRIEND || n.bot) return (0, o.jsx)("div", {
+  if (_ === s.OGo.FRIEND || n.bot) return (0, o.jsx)("div", {
     className: u.container,
     children: (0, o.jsx)(a.Z, {
       type: "text",
@@ -48,12 +48,12 @@ function f(e) {
       autoFocus: !0
     })
   });
-  if (p === s.OGo.PENDING_OUTGOING || p === s.OGo.PENDING_INCOMING) return (0, o.jsxs)("div", {
+  if (_ === s.OGo.PENDING_OUTGOING || _ === s.OGo.PENDING_INCOMING) return (0, o.jsxs)("div", {
     className: u.container,
     children: [(0, o.jsx)(l.g, {
       type: "icon",
       user: n,
-      relationshipType: p,
+      relationshipType: _,
       shouldShowTooltip: !0,
       analyticsLocation: m
     }), (0, o.jsx)(a.Z, {
@@ -64,7 +64,7 @@ function f(e) {
     })]
   });
   let x = I.length > 0 || h || y;
-  return p === s.OGo.NONE && x ? (0, o.jsxs)("div", {
+  return _ === s.OGo.NONE && x ? (0, o.jsxs)("div", {
     className: u.container,
     children: [(0, o.jsx)(l.k9, {
       type: "icon",
@@ -89,8 +89,8 @@ function f(e) {
     }), (0, o.jsx)(l.Z7, {
       type: "text",
       userId: n.id,
-      friendToken: _,
-      color: i.zxk.Colors.BRAND,
+      friendToken: p,
+      color: c.zxk.Colors.BRAND,
       analyticsLocation: m,
       autoFocus: !0
     })]

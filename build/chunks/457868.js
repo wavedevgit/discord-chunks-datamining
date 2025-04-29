@@ -1,4 +1,4 @@
-/** Chunk was on 69849 **/
+/** Chunk was on 74767 **/
 n.d(t, {
   Z: () => J
 }), n(388685), n(583741);
@@ -26,8 +26,8 @@ var r = n(200651),
   O = n(965376),
   E = n(159299),
   I = n(823415),
-  S = n(670188),
-  P = n(199902),
+  P = n(670188),
+  S = n(199902),
   Z = n(271383),
   N = n(430824),
   T = n(158776),
@@ -75,7 +75,7 @@ let Y = B.ZP.getEnableHardwareAcceleration(),
     } = e, s = (0, p.e7)([w.Z], () => w.Z.isTyping(t.id, o)), u = (0, p.e7)([Z.ZP], () => Z.ZP.getMember(t.guild_id, o)), h = (0, p.e7)([N.Z], () => {
       var e;
       return (null == u ? void 0 : u.colorRoleId) != null ? null == (e = N.Z.getRole(t.guild_id, u.colorRoleId)) ? void 0 : e.name : void 0
-    }, [t.guild_id, u]), g = (0, p.e7)([R.default], () => R.default.getUser(o)), b = (0, p.e7)([R.default], () => R.default.getCurrentUser()), _ = (null == g ? void 0 : g.id) === (null == b ? void 0 : b.id), y = (0, p.e7)([T.Z, A.Z], () => _ ? A.Z.getStatus() : T.Z.getStatus(o, t.guild_id)), C = (0, p.e7)([T.Z], () => T.Z.isMobileOnline(o)), v = (0, p.e7)([T.Z, A.Z], () => _ ? A.Z.getActivities() : T.Z.getActivities(o, t.guild_id)), O = (0, p.e7)([P.Z], () => P.Z.getAnyStreamForUser(o)), k = (0, c.JA)(o), M = (0, p.e7)([E.Z], () => E.Z.canUserViewChannel(t.id, l, o)), D = (null == g ? void 0 : g.id) != null && g.id === a, B = i.useCallback(e => {
+    }, [t.guild_id, u]), g = (0, p.e7)([R.default], () => R.default.getUser(o)), b = (0, p.e7)([R.default], () => R.default.getCurrentUser()), _ = (null == g ? void 0 : g.id) === (null == b ? void 0 : b.id), y = (0, p.e7)([T.Z, A.Z], () => _ ? A.Z.getStatus() : T.Z.getStatus(o, t.guild_id)), C = (0, p.e7)([T.Z], () => T.Z.isMobileOnline(o)), v = (0, p.e7)([T.Z, A.Z], () => _ ? A.Z.getActivities() : T.Z.getActivities(o, t.guild_id)), O = (0, p.e7)([S.Z], () => S.Z.getAnyStreamForUser(o)), k = (0, c.JA)(o), M = (0, p.e7)([E.Z], () => E.Z.canUserViewChannel(t.id, l, o)), D = (null == g ? void 0 : g.id) != null && g.id === a, B = i.useCallback(e => {
       null != g && (0, f.jW)(e, async () => {
         let {
           default: e
@@ -126,7 +126,7 @@ let Y = B.ZP.getEnableHardwareAcceleration(),
     });
     if (null == g) return null;
     let J = null == u ? void 0 : u.premiumSince;
-    return (0, r.jsx)(S.Z, {
+    return (0, r.jsx)(P.Z, {
       user: g,
       guildId: t.guild_id,
       channelId: t.id,

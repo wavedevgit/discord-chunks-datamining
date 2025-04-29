@@ -1,4 +1,4 @@
-/** Chunk was on 69849 **/
+/** Chunk was on 74767 **/
 n.d(t, {
   Z: () => A,
   y: () => T
@@ -28,7 +28,7 @@ var r = n(200651),
   E = n(354459),
   I = n(387147);
 
-function S(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function S(e) {
   return e
 }
 
-function P(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -158,7 +158,7 @@ let Z = i.memo(function(e) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387));
-        return t => (0, r.jsx)(e, P(S({}, t), {
+        return t => (0, r.jsx)(e, S(P({}, t), {
           user: a,
           guildId: v,
           channel: l,
@@ -179,7 +179,7 @@ let Z = i.memo(function(e) {
       guildId: l.guild_id,
       channelId: l.id,
       clickTrap: !0,
-      children: e => (0, r.jsx)(p.P3F, P(S({
+      children: e => (0, r.jsx)(p.P3F, S(P({
         className: o()(I.tileContainer, {
           [I.singleIcon]: T || d,
           [I.doubleIcon]: T && d

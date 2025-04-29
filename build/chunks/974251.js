@@ -1,4 +1,4 @@
-/** Chunk was on 69849 **/
+/** Chunk was on 74767 **/
 n.d(t, {
   Z: () => F
 }), n(388685), n(415506);
@@ -26,8 +26,8 @@ var r = n(200651),
   O = n(433355),
   E = n(819640),
   I = n(375954),
-  S = n(496675),
-  P = n(885110),
+  P = n(496675),
+  S = n(885110),
   Z = n(585483),
   N = n(358085),
   T = n(127654),
@@ -80,13 +80,13 @@ let F = i.memo(function(e) {
     editorTextContent: z,
     setValue: W,
     canOnlyUseTextCommands: Y
-  } = e, q = (0, p.bp)(), K = i.useRef(null), X = (0, a.e7)([P.Z], () => P.Z.getActivities()), Q = (0, a.e7)([m.Z], () => m.Z.getSettings().clipsEnabled), J = (0, a.e7)([m.Z], () => m.Z.getLastClipsSession()), $ = (0, a.Wu)([m.Z], () => m.Z.getNewClipIds()), ee = (0, a.e7)([O.ZP], () => null == O.ZP.getCurrentSidebarChannelId(H.id)), {
+  } = e, q = (0, p.bp)(), K = i.useRef(null), X = (0, a.e7)([S.Z], () => S.Z.getActivities()), Q = (0, a.e7)([m.Z], () => m.Z.getSettings().clipsEnabled), J = (0, a.e7)([m.Z], () => m.Z.getLastClipsSession()), $ = (0, a.Wu)([m.Z], () => m.Z.getNewClipIds()), ee = (0, a.e7)([O.ZP], () => null == O.ZP.getCurrentSidebarChannelId(H.id)), {
     showClipsHeaderEntrypoint: et
   } = f.NV.useExperiment({
     location: "ChannelAttachButton"
   }, {
     autoTrackExposure: !1
-  }), en = (0, a.e7)([y.qc], () => y.qc.hasHotspot(y.v6.CLIPS_CHANNEL_ATTACH_REMINDER)), er = (0, c.s9z)(e => (0, c.DEQ)(e, M.Qr)), ei = (0, a.e7)([E.Z], () => E.Z.hasLayers()), el = (0, a.e7)([m.Z], () => m.Z.hasClips()), [eo, ea] = i.useState(null), es = (0, f.Go)() && (Q || el), ec = H.isPrivate(), eu = (0, a.e7)([S.Z], () => ec || S.Z.can(k.Plq.ATTACH_FILES, H) && S.Z.can(k.Plq.SEND_MESSAGES, H)), ed = (0, d.Z)(J);
+  }), en = (0, a.e7)([y.qc], () => y.qc.hasHotspot(y.v6.CLIPS_CHANNEL_ATTACH_REMINDER)), er = (0, c.s9z)(e => (0, c.DEQ)(e, M.Qr)), ei = (0, a.e7)([E.Z], () => E.Z.hasLayers()), el = (0, a.e7)([m.Z], () => m.Z.hasClips()), [eo, ea] = i.useState(null), es = (0, f.Go)() && (Q || el), ec = H.isPrivate(), eu = (0, a.e7)([P.Z], () => ec || P.Z.can(k.Plq.ATTACH_FILES, H) && P.Z.can(k.Plq.SEND_MESSAGES, H)), ed = (0, d.Z)(J);
   (null == ed ? void 0 : ed.newClipIds.length) !== (null == J ? void 0 : J.newClipIds.length) && (null != (t = null == J ? void 0 : J.newClipIds.length) ? t : 0) > 0 && null == eo && en && ee && !er && !et && !ei && ea("recentClips");
   let ep = (e, t, n) => {
       null != t && "ETOOLARGE" === t.code ? (0, T.G)(H, []) : (0, T.d)(e, H, V, {
@@ -154,7 +154,7 @@ let F = i.memo(function(e) {
       top: 0,
       bottom: 0
     } : 8 : void 0,
-    eS = (0, r.jsx)(c.yRy, {
+    eP = (0, r.jsx)(c.yRy, {
       shouldShow: null != eo,
       animation: c.yRy.Animation.NONE,
       align: "recentClips" === eo ? "center" : "left",
@@ -234,7 +234,7 @@ let F = i.memo(function(e) {
         animationContainerClassName: U.buttonAnimation,
         glowClassName: U.buttonAnimationGlow,
         trinketsClassName: U.buttonAnimationTrinkets,
-        children: eS
+        children: eP
       })
     })]
   })

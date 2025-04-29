@@ -1,4 +1,4 @@
-/** Chunk was on 69849 **/
+/** Chunk was on 74767 **/
 n.d(t, {
   Z: () => T,
   z: () => Z
@@ -27,8 +27,8 @@ var r = n(200651),
   O = n(70956),
   E = n(823379),
   I = n(981631),
-  S = n(217702),
-  P = n(955525);
+  P = n(217702),
+  S = n(955525);
 let Z = 10 * O.Z.Millis.SECOND;
 
 function N(e) {
@@ -55,18 +55,18 @@ function N(e) {
     renderedContent: T,
     trailingIcon: A,
     leadingIcon: w
-  } = (0, _.f)(n, Z, l, a, P.messageContent, {
-    trailingIconClass: P.messageContentTrailingIcon,
-    leadingIconClass: P.messageContentLeadingIcon,
-    iconSize: S.WW
+  } = (0, _.f)(n, Z, l, a, S.messageContent, {
+    trailingIconClass: S.messageContentTrailingIcon,
+    leadingIconClass: S.messageContentLeadingIcon,
+    iconSize: P.WW
   }), R = (0, y.cv)(n), k = R.length > 0 ? R.map(e => (0, r.jsx)(C.Z, {
-    className: P.sticker,
+    className: S.sticker,
     size: 128,
     sticker: e,
     isInteracting: x
   }, e.id)) : null;
   return (0, r.jsxs)(u.P3F, {
-    className: P.toast,
+    className: S.toast,
     onMouseEnter: () => {
       O(!0)
     },
@@ -75,8 +75,8 @@ function N(e) {
     },
     onClick: I,
     children: [(0, r.jsxs)("div", {
-      className: o()(P.messageContentWrapper, {
-        [P.mentioned]: n.mentioned
+      className: o()(S.messageContentWrapper, {
+        [S.mentioned]: n.mentioned
       }),
       children: [null != k ? null : w, null != (t = null != T ? T : k) ? t : (0, r.jsx)("span", {
         children: N
@@ -88,7 +88,7 @@ function N(e) {
         userId: n.author.id,
         avatar: s.guildMemberAvatar
       }) : n.author.getAvatarURL(d, 32),
-      className: P.avatar
+      className: S.avatar
     })]
   })
 }
@@ -205,7 +205,7 @@ function T(e) {
       },
       children: v((e, t) => (0, r.jsx)(s.animated.div, {
         ref: e => _(t.message.id, null != e ? e.offsetHeight : null),
-        className: P.toastWrapper,
+        className: S.toastWrapper,
         style: e,
         children: (0, r.jsx)(N, {
           message: t.message

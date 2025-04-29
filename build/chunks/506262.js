@@ -1,4 +1,4 @@
-/** Chunk was on 69849 **/
+/** Chunk was on 74767 **/
 e.exports = {
   channelAppLauncherWordlePromo: "channelAppLauncherWordlePromo__23128",
   animationContainer: "animationContainer__23128",

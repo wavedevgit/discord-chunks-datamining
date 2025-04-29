@@ -1,4 +1,4 @@
-/** Chunk was on 69849 **/
+/** Chunk was on 74767 **/
 n.d(t, {
   Z: () => Z
 }), n(388685);
@@ -27,7 +27,7 @@ var r = n(200651),
   E = n(15322),
   I = n(574169);
 
-function S(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,7 +45,7 @@ function S(e) {
   }
   return e
 }
-let P = e => 1 - Math.pow(1 - e, 3);
+let S = e => 1 - Math.pow(1 - e, 3);
 
 function Z(e) {
   let {
@@ -69,7 +69,7 @@ function Z(e) {
       },
       config: {
         duration: 250,
-        easing: P,
+        easing: S,
         immediate: !k
       }
     }),
@@ -101,7 +101,7 @@ function Z(e) {
     style: D,
     className: E.banner,
     children: [(0, r.jsxs)("div", {
-      children: [(0, r.jsx)(d.qEK, S({
+      children: [(0, r.jsx)(d.qEK, P({
         src: U,
         "aria-label": l.username,
         size: d.EFr.SIZE_48
@@ -129,7 +129,7 @@ function Z(e) {
             let {
               default: e
             } = await Promise.all([n.e("46746"), n.e("52657")]).then(n.bind(n, 60594));
-            return t => (0, r.jsx)(e, S({
+            return t => (0, r.jsx)(e, P({
               analyticsLocation: "HDStreamingPotionBanner"
             }, t))
           }), a()

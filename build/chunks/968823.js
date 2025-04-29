@@ -1,4 +1,4 @@
-/** Chunk was on 72202 **/
+/** Chunk was on 74767 **/
 e.exports = {
   row: "row__89036",
   avatar: "avatar__89036",

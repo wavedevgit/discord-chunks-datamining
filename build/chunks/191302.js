@@ -1,4 +1,4 @@
-/** Chunk was on 69849 **/
+/** Chunk was on 74767 **/
 n.d(t, {
   Z: () => x
 }), n(388685), n(539854);
@@ -78,7 +78,7 @@ function x(e) {
     return () => clearTimeout(e)
   });
   let E = x ? [s.z.HD_STREAMING_POTION_BANNER] : [],
-    [I, S] = (0, p.US)(E);
+    [I, P] = (0, p.US)(E);
   return null == l ? null : (0, r.jsxs)(r.Fragment, {
     children: [o && (0, r.jsx)(v, {
       buyer: l,
@@ -88,7 +88,7 @@ function x(e) {
       buyer: l,
       streaming: !0,
       onClose: () => {
-        _(!1), x && S(b.L.DISMISS)
+        _(!1), x && P(b.L.DISMISS)
       }
     })]
   })

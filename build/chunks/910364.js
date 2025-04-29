@@ -1,10 +1,10 @@
-/** Chunk was on 72202 **/
+/** Chunk was on 65326 **/
 t.d(n, {
   Z: () => G
 }), t(388685);
 var o = t(200651),
-  i = t(192379),
-  c = t(272573),
+  c = t(192379),
+  i = t(272573),
   r = t(442837),
   a = t(481060),
   l = t(727637),
@@ -12,8 +12,8 @@ var o = t(200651),
   s = t(100527),
   u = t(906732),
   f = t(368326),
-  p = t(429467),
-  _ = t(680295),
+  _ = t(429467),
+  p = t(680295),
   b = t(699516),
   m = t(5192),
   I = t(785717),
@@ -23,8 +23,8 @@ var o = t(200651),
   g = t(892001),
   v = t(113557),
   j = t(867176),
-  A = t(451834),
-  Z = t(502762),
+  Z = t(451834),
+  A = t(502762),
   O = t(544989),
   N = t(481932),
   P = t(195387),
@@ -36,7 +36,7 @@ var o = t(200651),
   E = t(388032),
   k = t(405666);
 
-function R(e) {
+function B(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       o = Object.keys(t);
@@ -55,7 +55,7 @@ function R(e) {
   return e
 }
 
-function B(e, n) {
+function R(e, n) {
   return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -78,8 +78,8 @@ function G(e) {
     roleId: U,
     sessionId: V,
     friendToken: F,
-    initialSection: W,
-    initialSubsection: Y,
+    initialSection: Y,
+    initialSubsection: W,
     transitionState: q,
     customStatusPrompt: H,
     openedAt: J,
@@ -102,13 +102,13 @@ function G(e) {
     config: {
       duration: 150
     }
-  }), et = (0, y.ZP)(n.id, Q ? G : void 0), eo = (0, y.ZP)(n.id, G), ei = (0, r.e7)([b.Z], () => b.Z.getRelationshipType(n.id)), ec = n.id === t.id, er = (0, f.p)({
+  }), et = (0, y.ZP)(n.id, Q ? G : void 0), eo = (0, y.ZP)(n.id, G), ec = (0, r.e7)([b.Z], () => b.Z.getRelationshipType(n.id)), ei = n.id === t.id, er = (0, f.p)({
     location: "UserProfileModal"
-  }), ea = i.useMemo(() => null != H ? H : (0, p.Z)(), [H]), el = i.useMemo(() => null != G ? {
+  }), ea = c.useMemo(() => null != H ? H : (0, _.Z)(), [H]), el = c.useMemo(() => null != G ? {
     [G]: [n.id]
   } : {}, [G, n.id]);
   (0, d.$)(el);
-  let ed = i.createRef(),
+  let ed = c.createRef(),
     es = (0, l.Z)(ed);
   return (0, o.jsx)(u.Gt, {
     value: K,
@@ -125,7 +125,7 @@ function G(e) {
           className: k.root,
           hideShadow: !0,
           "aria-label": E.intl.string(E.t["3N/J2t"]),
-          children: [(0, o.jsxs)(Z.Z, {
+          children: [(0, o.jsxs)(A.Z, {
             user: n,
             displayProfile: et,
             themeType: M.lY.MODAL,
@@ -153,11 +153,11 @@ function G(e) {
                     displayName: m.ZP.getName(void 0, void 0, n)
                   }),
                   action: () => {
-                    z(), (0, g.openUserProfileModal)(B(R({}, X), {
+                    z(), (0, g.openUserProfileModal)(R(B({}, X), {
                       showGuildProfile: !1,
                       friendToken: F,
                       sourceAnalyticsLocations: $
-                    })), (0, h.pQ)(R({
+                    })), (0, h.pQ)(B({
                       action: "PRESS_VIEW_MAIN_PROFILE",
                       analyticsLocations: K
                     }, X))
@@ -169,11 +169,11 @@ function G(e) {
                     displayName: m.ZP.getName(G, D, n)
                   }),
                   action: () => {
-                    z(), (0, g.openUserProfileModal)(B(R({}, X), {
+                    z(), (0, g.openUserProfileModal)(R(B({}, X), {
                       showGuildProfile: !0,
                       friendToken: F,
                       sourceAnalyticsLocations: $
-                    })), (0, h.pQ)(R({
+                    })), (0, h.pQ)(B({
                       action: "PRESS_VIEW_SERVER_PROFILE",
                       analyticsLocations: K
                     }, X))
@@ -185,11 +185,11 @@ function G(e) {
                 user: n,
                 displayProfile: et,
                 themeType: M.lY.MODAL
-              }), (0, o.jsx)(A.Z, {
+              }), (0, o.jsx)(Z.Z, {
                 userId: n.id,
                 onClose: z,
                 className: k.toast
-              }), null != ee.interactionType && (0, o.jsx)(c.animated.div, {
+              }), null != ee.interactionType && (0, o.jsx)(i.animated.div, {
                 style: en,
                 className: k.backdrop
               }), (0, o.jsxs)("div", {
@@ -209,14 +209,14 @@ function G(e) {
                   themeType: M.lY.MODAL,
                   hasEntered: q === a.Dvm.ENTERED,
                   onCloseProfile: z,
-                  prompt: er && ec ? ea : null
+                  prompt: er && ei ? ea : null
                 }), (0, o.jsx)("div", {
                   className: k.headerButtons,
                   children: (0, o.jsx)(S.Z, {
                     user: n,
                     currentUser: t,
                     guildId: G,
-                    relationshipType: ei,
+                    relationshipType: ec,
                     friendToken: F,
                     onClose: z
                   })
@@ -228,12 +228,12 @@ function G(e) {
               guildId: G,
               channelId: D,
               displayProfile: et,
-              initialSection: W,
-              initialSubsection: Y,
+              initialSection: Y,
+              initialSubsection: W,
               friendToken: F,
               onClose: z
             })]
-          }), (null == et ? void 0 : et.profileEffectId) != null && (0, o.jsx)(_.Z, {
+          }), (null == et ? void 0 : et.profileEffectId) != null && (0, o.jsx)(p.Z, {
             profileEffectId: null == et ? void 0 : et.profileEffectId,
             isHovering: es
           })]

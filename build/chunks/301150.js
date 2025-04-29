@@ -1,9 +1,5 @@
-/** Chunk was on 72202 **/
+/** Chunk was on 65326 **/
 e.exports = {
-  listRow: "listRow__9d78f",
-  listRowContent: "listRowContent__9d78f",
-  listName: "listName__9d78f",
-  listAvatar: "listAvatar__9d78f",
   empty: "empty__9d78f",
   emptyIcon: "emptyIcon__9d78f",
   emptyText: "emptyText__9d78f",

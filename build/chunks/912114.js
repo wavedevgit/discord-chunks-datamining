@@ -1,4 +1,4 @@
-/** Chunk was on 69849 **/
+/** Chunk was on 74767 **/
 n.d(t, {
   B: () => O,
   default: () => E
@@ -117,35 +117,35 @@ let E = function(e) {
     setHasPendingChanges: o,
     closeOrShowDiscardChangesAlert: h,
     location: E
-  } = e, I = (0, m.Dt)(), S = (0, a.e7)([g.Z], () => g.Z.getChannel(t)), P = null == S ? void 0 : S.name, Z = (0, f.cO)(S), [N, T] = i.useState(null != P ? P : ""), [A, w] = i.useState(void 0), R = void 0 !== A, {
+  } = e, I = (0, m.Dt)(), P = (0, a.e7)([g.Z], () => g.Z.getChannel(t)), S = null == P ? void 0 : P.name, Z = (0, f.cO)(P), [N, T] = i.useState(null != S ? S : ""), [A, w] = i.useState(void 0), R = void 0 !== A, {
     analyticsLocations: k
   } = (0, p.ZP)(E, d.Z.GROUP_DM_EDIT_MODAL), M = {
     channel_id: t,
-    channel_type: null == S ? void 0 : S.type,
+    channel_type: null == P ? void 0 : P.type,
     location: E,
     location_stack: k,
-    old_name_set: "" !== P,
-    old_icon_set: (null == S ? void 0 : S.icon) != null
+    old_name_set: "" !== S,
+    old_icon_set: (null == P ? void 0 : P.icon) != null
   };
   return (i.useEffect(() => {
-    o(N !== P || R)
-  }, [N, P, R, o]), (0, u.ZP)(() => (b.default.track(y.rMx.GDM_EDIT_INTERACTED, j(v({}, M), {
+    o(N !== S || R)
+  }, [N, S, R, o]), (0, u.ZP)(() => (b.default.track(y.rMx.GDM_EDIT_INTERACTED, j(v({}, M), {
     action: "opened"
   })), () => {
     b.default.track(y.rMx.GDM_EDIT_INTERACTED, j(v({}, M), {
       action: "dismissed"
     }))
-  })), null == S) ? null : (0, r.jsx)(p.Gt, {
+  })), null == P) ? null : (0, r.jsx)(p.Gt, {
     value: k,
     children: (0, r.jsx)("form", {
       onSubmit: e => {
         e.preventDefault();
-        let r = N !== P,
+        let r = N !== S,
           i = void 0 !== A;
         b.default.track(y.rMx.GDM_EDIT_INTERACTED, j(v({}, M), {
           action: "saved",
           new_name_set: "" !== N,
-          new_icon_set: (i ? A : null == S ? void 0 : S.icon) != null,
+          new_icon_set: (i ? A : null == P ? void 0 : P.icon) != null,
           name_changed: r,
           icon_changed: i
         })), r && c.Z.setName(t, N), i && c.Z.setIcon(t, A, E).catch(_.es), n()
@@ -169,7 +169,7 @@ let E = function(e) {
         }), (0, r.jsxs)(s.hzk, {
           className: x.modalContent,
           children: [(0, r.jsx)(O, {
-            channel: S,
+            channel: P,
             previewIcon: A,
             onIconChange: e => w(e.imageUri),
             onIconRemove: () => w(null),
@@ -185,7 +185,7 @@ let E = function(e) {
           className: x.footer,
           children: [(0, r.jsx)(s.zxk, {
             type: "submit",
-            disabled: N === P && !R,
+            disabled: N === S && !R,
             children: C.intl.string(C.t.R3BPHx)
           }), (0, r.jsx)(s.zxk, {
             onClick: h,

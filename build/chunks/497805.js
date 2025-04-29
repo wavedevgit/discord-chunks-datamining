@@ -77,7 +77,7 @@ async function m(e) {
       default: e
     } = (0, l.q)({
       location: "UserProfileModalManager"
-    }) ? await Promise.all([n.e("82670"), n.e("82412"), n.e("62880"), n.e("88235"), n.e("30776")]).then(n.bind(n, 866035)): await Promise.all([n.e("82670"), n.e("82412"), n.e("62880"), n.e("88235"), n.e("72202")]).then(n.bind(n, 678780));
+    }) ? await Promise.all([n.e("1268"), n.e("82412"), n.e("62880"), n.e("56549"), n.e("44784")]).then(n.bind(n, 866035)): await Promise.all([n.e("1268"), n.e("82412"), n.e("62880"), n.e("56549"), n.e("65326")]).then(n.bind(n, 678780));
     return t => (0, r.jsx)(e, d({
       user: O,
       currentUser: v,

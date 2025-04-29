@@ -1,6 +1,6 @@
-/** Chunk was on 69849 **/
+/** Chunk was on 74767 **/
 n.d(t, {
-  Z: () => S
+  Z: () => P
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -27,12 +27,12 @@ var r = n(200651),
   E = n(159909),
   I = n(531675);
 
-function S(e) {
+function P(e) {
   let {
     channel: t,
     hasActiveStream: n,
-    showRightDivider: S,
-    themeable: P = !1
+    showRightDivider: P,
+    themeable: S = !1
   } = e, {
     analyticsLocations: Z
   } = (0, a.ZP)(o.Z.VOICE_CONTROL_TRAY), N = (0, b.Z)({
@@ -61,7 +61,7 @@ function S(e) {
       className: I.voiceEffectsActionBar,
       children: [H && (0, r.jsx)(O.Z, {
         channel: t,
-        themeable: P
+        themeable: S
       }), V && (0, r.jsx)(v.Z, {
         channel: t
       }), z && (0, r.jsx)(y.Z, {
@@ -77,7 +77,7 @@ function S(e) {
       }), W && (0, r.jsx)(C.Z, {}), W && (0, r.jsx)(x.Z, {
         channel: t
       }), W && (0, r.jsx)(E.Z, {})]
-    }), S && (H || V || z || B || T || W) && (0, r.jsx)("div", {
+    }), P && (H || V || z || B || T || W) && (0, r.jsx)("div", {
       className: I.divider
     })]
   })

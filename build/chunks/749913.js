@@ -1,7 +1,7 @@
 /** Chunk was on 49131 **/
 "use strict";
 n.d(t, {
-  Z: () => ea
+  Z: () => es
 }), n(388685), n(781311), n(290780);
 var r = n(200651),
   i = n(192379),
@@ -27,38 +27,39 @@ var r = n(200651),
   O = n(957730),
   w = n(25015),
   S = n(252032),
-  P = n(913663),
-  N = n(268350),
-  T = n(456077),
-  I = n(488131),
-  E = n(602034),
-  k = n(23750),
-  R = n(703558),
-  Z = n(496675),
-  M = n(300429),
-  A = n(117530),
-  L = n(594174),
-  F = n(459273),
-  D = n(838440),
-  z = n(127654),
-  B = n(681154),
-  H = n(883429),
-  U = n(945141),
-  V = n(456269),
-  G = n(228392),
-  q = n(259637),
-  X = n(76451),
-  W = n(470623),
-  K = n(479099),
-  J = n(399894),
-  Y = n(81490),
-  Q = n(710352),
-  $ = n(981631),
-  ee = n(176505),
-  et = n(388032),
-  en = n(860128);
+  P = n(216572),
+  N = n(913663),
+  T = n(268350),
+  I = n(456077),
+  E = n(488131),
+  k = n(602034),
+  R = n(23750),
+  Z = n(703558),
+  M = n(496675),
+  A = n(300429),
+  L = n(117530),
+  F = n(594174),
+  D = n(459273),
+  z = n(838440),
+  B = n(127654),
+  H = n(681154),
+  U = n(883429),
+  V = n(945141),
+  G = n(456269),
+  q = n(228392),
+  X = n(259637),
+  W = n(76451),
+  K = n(470623),
+  J = n(479099),
+  Y = n(399894),
+  Q = n(81490),
+  $ = n(710352),
+  ee = n(981631),
+  et = n(176505),
+  en = n(388032),
+  er = n(860128);
 
-function er(e) {
+function ei(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -77,7 +78,7 @@ function er(e) {
   return e
 }
 
-function ei(e, t) {
+function el(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -89,20 +90,20 @@ function ei(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let el = x.Ie.CREATE_FORUM_POST;
+let ea = x.Ie.CREATE_FORUM_POST;
 
-function ea(e) {
+function es(e) {
   let {
     parentChannel: t,
     isSearchLoading: n,
     onChange: l,
     canCreatePost: s,
     inputRef: o
-  } = e, {
-    textAreaState: d,
-    formOpen: u,
-    previewing: m
-  } = (0, W.xH)(e => {
+  } = e, d = !(0, P.wL)(t) && s, {
+    textAreaState: u,
+    formOpen: m,
+    previewing: f
+  } = (0, K.xH)(e => {
     let {
       textAreaState: t,
       formOpen: n,
@@ -113,11 +114,11 @@ function ea(e) {
       formOpen: n,
       previewing: r
     }
-  }, c.X), [f, p] = i.useState(null), x = i.useContext(F.oo), b = i.useCallback(() => {
-    x.bumpDispatchPriority()
-  }, [x]), j = (0, h.e7)([Z.Z], () => Z.Z.can($.Plq.ATTACH_FILES, t)), v = (0, h.Wu)([A.Z], () => A.Z.getUploads(t.id, R.d.FirstThreadMessage)), C = u && j && s, w = (null == t ? void 0 : t.isMediaChannel()) === !0, S = function(e, t) {
-    let n = (0, W.AF)(),
-      r = (0, V.ql)(e);
+  }, c.X), [p, x] = i.useState(null), b = i.useContext(D.oo), j = i.useCallback(() => {
+    b.bumpDispatchPriority()
+  }, [b]), v = (0, h.e7)([M.Z], () => M.Z.can(ee.Plq.ATTACH_FILES, t)), C = (0, h.Wu)([L.Z], () => L.Z.getUploads(t.id, Z.d.FirstThreadMessage)), w = m && v && d, S = (null == t ? void 0 : t.isMediaChannel()) === !0, I = function(e, t) {
+    let n = (0, K.AF)(),
+      r = (0, G.ql)(e);
     return i.useCallback(() => {
       let {
         formOpen: i,
@@ -131,19 +132,19 @@ function ea(e) {
           var e, n, r, i;
           null == (n = t.current) || null == (e = n._textArea) || e.setSelectionRange(a.length, a.length), null == (i = t.current) || null == (r = i._textArea) || r.focus()
         }
-      }, 0), (o && a.length > 0 || s.textValue.trim().length > 0 && s.textValue.trim() !== r || A.Z.getUploads(e.id, R.d.FirstThreadMessage).length > 0) && l())
+      }, 0), (o && a.length > 0 || s.textValue.trim().length > 0 && s.textValue.trim() !== r || L.Z.getUploads(e.id, Z.d.FirstThreadMessage).length > 0) && l())
     }, [n, e.id, r, t])
-  }(t, o), T = function(e) {
+  }(t, o), R = function(e) {
     let {
       formOpen: t
-    } = (0, W.xH)(e => {
+    } = (0, K.xH)(e => {
       let {
         formOpen: t
       } = e;
       return {
         formOpen: t
       }
-    }, c.X), n = (0, W.AF)(), r = (0, E.r)({
+    }, c.X), n = (0, K.AF)(), r = (0, k.r)({
       parentChannel: e
     });
     i.useEffect(() => {
@@ -164,9 +165,9 @@ function ea(e) {
       } = O.ZP.parse(e, t);
       if (t = s, null == r || 0 === r.length) {
         var o;
-        r = null == (o = P.Z.getStickerPreview(e.id, el.drafts.type)) ? void 0 : o.map(e => e.id)
+        r = null == (o = N.Z.getStickerPreview(e.id, ea.drafts.type)) ? void 0 : o.map(e => e.id)
       }
-      if ((null == i || 0 === i.length) && (i = A.Z.getUploads(e.id, R.d.FirstThreadMessage)), null != i && i.length > 0 && e.isMediaChannel()) {
+      if ((null == i || 0 === i.length) && (i = L.Z.getUploads(e.id, Z.d.FirstThreadMessage)), null != i && i.length > 0 && e.isMediaChannel()) {
         let e = i.findIndex(e => !0 === e.isThumbnail);
         if (e > -1) {
           let t = i[e];
@@ -194,8 +195,8 @@ function ea(e) {
         setPreviewing: h,
         setFormOpenFromUserAction: g,
         setGuidelinesOpen: f
-      } = n.getState(), p = U.Z.hasSeen(e.id);
-      if (!u) return (0, G.P_)({
+      } = n.getState(), p = V.Z.hasSeen(e.id);
+      if (!u) return (0, q.P_)({
         guildId: e.guild_id,
         channelId: e.id
       }), p || n.getState().setGuidelinesOpen(!0), g(), {
@@ -209,7 +210,7 @@ function ea(e) {
         hasNameError: v,
         hasMessageError: C
       } = l(t, i, a);
-      if (s(v ? (0, B.V_)() : null), o(C ? (0, B.T4)() : null), v || C) return {
+      if (s(v ? (0, H.V_)() : null), o(C ? (0, H.T4)() : null), v || C) return {
         shouldClear: !1,
         shouldRefocus: !0
       };
@@ -217,11 +218,11 @@ function ea(e) {
         c(!0);
         let {
           valid: t
-        } = await (0, D.v)({
+        } = await (0, z.v)({
           content: x,
           stickers: b,
           uploads: j,
-          type: el,
+          type: ea,
           channel: e
         });
         if (!t) return {
@@ -229,13 +230,13 @@ function ea(e) {
           shouldRefocus: !0
         };
         let n = await r(x, b, j);
-        return (0, I.ok)(n), H.Z.resort(e.id), (0, N.qB)(e.id, el.drafts.type), d(), m(!1), h(!1), U.Z.markAsSeen(e.id), f(!1), {
+        return (0, E.ok)(n), U.Z.resort(e.id), (0, T.qB)(e.id, ea.drafts.type), d(), m(!1), h(!1), V.Z.markAsSeen(e.id), f(!1), {
           shouldClear: !0,
           shouldRefocus: !1
         }
       } catch (t) {
         var _, y;
-        return (null == (_ = t.body) ? void 0 : _.code) === $.evJ.AUTOMOD_TITLE_BLOCKED ? s((0, B.Gx)(t.body, e)) : (null == (y = t.body) ? void 0 : y.code) === $.evJ.AUTOMOD_MESSAGE_BLOCKED && o((0, B.Gx)(t.body, e)), {
+        return (null == (_ = t.body) ? void 0 : _.code) === ee.evJ.AUTOMOD_TITLE_BLOCKED ? s((0, H.Gx)(t.body, e)) : (null == (y = t.body) ? void 0 : y.code) === ee.evJ.AUTOMOD_MESSAGE_BLOCKED && o((0, H.Gx)(t.body, e)), {
           shouldClear: !1,
           shouldRefocus: !0
         }
@@ -244,60 +245,60 @@ function ea(e) {
       }
     }, [r, l, e, n])
   }(t);
-  return i.useLayoutEffect(l, [u, d, v, l]), (0, r.jsx)(r.Fragment, {
+  return i.useLayoutEffect(l, [m, u, C, l]), (0, r.jsx)(r.Fragment, {
     children: (0, r.jsx)("div", {
-      "aria-label": s ? et.intl.string(et.t.dq7mAQ) : et.intl.string(et.t["5h0QOD"]),
-      className: a()(en.container, {
-        [en.collapsed]: !u
+      "aria-label": d ? en.intl.string(en.t.dq7mAQ) : en.intl.string(en.t["5h0QOD"]),
+      className: a()(er.container, {
+        [er.collapsed]: !m
       }),
-      onClick: !u && s ? S : void 0,
+      onClick: !m && d ? I : void 0,
       children: (0, r.jsxs)("form", {
-        onMouseDown: b,
-        onFocus: b,
+        onMouseDown: j,
+        onFocus: j,
         onSubmit: e => {
-          e.preventDefault(), s && T()
+          e.preventDefault(), d && R()
         },
         children: [(0, r.jsxs)("div", {
-          className: en.formContainer,
-          children: [(0, r.jsx)(es, {
+          className: er.formContainer,
+          children: [(0, r.jsx)(eo, {
             parentChannel: t,
             isSearchLoading: n,
             inputRef: o
           }), (0, r.jsxs)("div", {
-            className: m ? en.previewForm : en.form,
-            children: [(0, r.jsx)(eo, {
-              editorRef: f,
+            className: f ? er.previewForm : er.form,
+            children: [(0, r.jsx)(ec, {
+              editorRef: p,
               parentChannel: t,
               isSearchLoading: n,
               inputRef: o,
-              canCreatePost: s
-            }), u && (0, r.jsx)(eu, {
-              editorRef: f,
-              setEditorRef: p,
+              canCreatePost: d
+            }), m && (0, r.jsx)(em, {
+              editorRef: p,
+              setEditorRef: x,
               parentChannel: t,
-              submit: T,
-              disabled: !s
-            }), m && (0, r.jsx)(em, {})]
-          }), C && (w ? (0, r.jsx)(y._, {
+              submit: R,
+              disabled: !d
+            }), f && (0, r.jsx)(eh, {})]
+          }), w && (S ? (0, r.jsx)(y._, {
             parentChannel: t
-          }) : (0, r.jsx)(X.Z, {
+          }) : (0, r.jsx)(W.Z, {
             channelId: t.id
           }))]
         }), (0, r.jsxs)("div", {
-          className: en.form,
-          children: [C && w && (0, r.jsx)(_.Z, {
+          className: er.form,
+          children: [w && S && (0, r.jsx)(_.Z, {
             parentChannel: t
-          }), u && (0, r.jsx)(eg, {
-            className: en.horizontalPadding,
+          }), m && (0, r.jsx)(ef, {
+            className: er.horizontalPadding,
             parentChannel: t,
-            canCreatePost: s
+            canCreatePost: d
           })]
         })]
       })
     })
   })
 }
-let es = i.memo(function(e) {
+let eo = i.memo(function(e) {
     let {
       parentChannel: t,
       isSearchLoading: n,
@@ -308,7 +309,7 @@ let es = i.memo(function(e) {
       textAreaState: o,
       hasClickedForm: d,
       submitting: u
-    } = (0, W.xH)(e => {
+    } = (0, K.xH)(e => {
       let {
         formOpen: t,
         nameError: n,
@@ -327,41 +328,41 @@ let es = i.memo(function(e) {
         hasClickedForm: a,
         submitting: s
       }
-    }, c.X), m = (0, W.AF)(), h = (0, V.ql)(t), x = i.useCallback(() => {
+    }, c.X), m = (0, K.AF)(), h = (0, G.ql)(t), x = i.useCallback(() => {
       var e;
-      m.getState().resetFormState(), f.Z.clearDraft(t.id, R.d.ThreadSettings), f.Z.clearDraft(t.id, R.d.FirstThreadMessage), p.Z.clearAll(t.id, R.d.FirstThreadMessage), m.getState().setFormOpen(!1), m.getState().setBodyFocused(!1), m.getState().setTitleFocused(!1), m.getState().setHasClickedForm(!1), m.getState().setPreviewing(!1), null == (e = l.current) || e.blur(), (0, G.Oq)({
+      m.getState().resetFormState(), f.Z.clearDraft(t.id, Z.d.ThreadSettings), f.Z.clearDraft(t.id, Z.d.FirstThreadMessage), p.Z.clearAll(t.id, Z.d.FirstThreadMessage), m.getState().setFormOpen(!1), m.getState().setBodyFocused(!1), m.getState().setTitleFocused(!1), m.getState().setHasClickedForm(!1), m.getState().setPreviewing(!1), null == (e = l.current) || e.blur(), (0, q.Oq)({
         guildId: t.guild_id,
         channelId: t.id
       })
-    }, [m, t.id, t.guild_id, l]), b = i.useMemo(() => n && !a ? (0, r.jsx)(eb, {}) : n || a || 0 !== o.textValue.trim().length && o.textValue.trim() !== h ? !a && (s.trim().length > 0 || o.textValue.trim().length > 0 && o.textValue.trim() !== h || A.Z.getUploads(t.id, R.d.FirstThreadMessage).length > 0) && d ? (0, r.jsx)(g.vdY, {
+    }, [m, t.id, t.guild_id, l]), b = i.useMemo(() => n && !a ? (0, r.jsx)(ej, {}) : n || a || 0 !== o.textValue.trim().length && o.textValue.trim() !== h ? !a && (s.trim().length > 0 || o.textValue.trim().length > 0 && o.textValue.trim() !== h || L.Z.getUploads(t.id, Z.d.FirstThreadMessage).length > 0) && d ? (0, r.jsx)(g.vdY, {
       size: "md",
       color: "currentColor",
-      className: en.pencilIcon
+      className: er.pencilIcon
     }) : u ? (0, r.jsx)(g.k$p, {
       size: "md",
       color: "currentColor",
-      className: en.closeIconDisabled
+      className: er.closeIconDisabled
     }) : (0, r.jsx)(g.ua7, {
-      text: et.intl.string(et.t["98EPQE"]),
-      children: e => (0, r.jsx)(g.P3F, ei(er({}, e), {
+      text: en.intl.string(en.t["98EPQE"]),
+      children: e => (0, r.jsx)(g.P3F, el(ei({}, e), {
         onClick: x,
         children: (0, r.jsx)(g.k$p, {
           size: "md",
           color: "currentColor",
-          className: en.closeIcon
+          className: er.closeIcon
         })
       }))
     }) : (0, r.jsx)(g._Ve, {
       size: "md",
       color: "currentColor",
-      className: en.searchIcon
+      className: er.searchIcon
     }), [n, a, d, s, o.textValue, x, t.id, h, u]);
     return (0, r.jsx)("div", {
-      className: en.prefixElement,
+      className: er.prefixElement,
       children: b
     })
   }),
-  eo = i.memo(function(e) {
+  ec = i.memo(function(e) {
     let {
       parentChannel: t,
       inputRef: n,
@@ -373,7 +374,7 @@ let es = i.memo(function(e) {
       name: u,
       textAreaState: m,
       previewing: f
-    } = (0, W.xH)(e => {
+    } = (0, K.xH)(e => {
       let {
         formOpen: t,
         nameError: n,
@@ -392,9 +393,9 @@ let es = i.memo(function(e) {
         hasClickedForm: a,
         submitting: s
       }
-    }, c.X), p = (0, W.AF)(), x = null != t.topic && 0 !== t.topic.length, b = U.Z.hasSeen(t.id), j = (0, V.ql)(t), v = (0, h.e7)([L.default], () => L.default.getCurrentUser());
-    o()(null != v, "current user cannot be null"), (0, F.yp)({
-      event: $.CkL.FOCUS_COMPOSER_TITLE,
+    }, c.X), p = (0, K.AF)(), x = null != t.topic && 0 !== t.topic.length, b = V.Z.hasSeen(t.id), j = (0, G.ql)(t), v = (0, h.e7)([F.default], () => F.default.getCurrentUser());
+    o()(null != v, "current user cannot be null"), (0, D.yp)({
+      event: ee.CkL.FOCUS_COMPOSER_TITLE,
       handler: () => {
         var e;
         let t = n.current instanceof g.lcI ? null == (e = n.current) ? void 0 : e._textArea : n.current;
@@ -403,46 +404,46 @@ let es = i.memo(function(e) {
     });
     let C = i.useCallback(e => {
         let n = e.clipboardData.files[0];
-        null != n && n.type.startsWith("image/") && (e.preventDefault(), (0, z.d)([n], t, R.d.FirstThreadMessage), p.getState().setFormOpenFromUserAction())
+        null != n && n.type.startsWith("image/") && (e.preventDefault(), (0, B.d)([n], t, Z.d.FirstThreadMessage), p.getState().setFormOpenFromUserAction())
       }, [t, p]),
-      _ = (0, B.Op)(d, {
+      _ = (0, H.Op)(d, {
         content: u
       });
     return (0, r.jsxs)("div", {
-      className: en.titleContainer,
+      className: er.titleContainer,
       onPaste: C,
       children: [s && f ? (0, r.jsx)(g.X6q, {
         variant: "heading-md/semibold",
-        className: en.title,
+        className: er.title,
         children: u
       }) : (0, r.jsx)(g.Kx8, {
         value: u,
-        placeholder: l ? s || m.textValue.length > 0 && m.textValue.trim() !== j ? et.intl.string(et.t.lU4dDQ) : et.intl.string(et.t.CjmivL) : et.intl.string(et.t["5h0QOD"]),
+        placeholder: l ? s || m.textValue.length > 0 && m.textValue.trim() !== j ? en.intl.string(en.t.lU4dDQ) : en.intl.string(en.t.CjmivL) : en.intl.string(en.t["5h0QOD"]),
         flex: !0,
         autosize: s,
         rows: 1,
         showCharacterCount: !1,
         showRemainingCharacterCount: !1,
-        maxLength: $.HN8,
+        maxLength: ee.HN8,
         onChange: e => {
-          let n = (0, T.Z)(e, !1);
+          let n = (0, I.Z)(e, !1);
           p.getState().setName(n);
           let r = 0 === n.trim().length,
             i = 0 === m.textValue.trim().length,
             l = m.textValue.trim() === j;
-          r && (i || l) && p.getState().setHasClickedForm(!1), s || H.Z.updateForumSearchQuery(t.id, n)
+          r && (i || l) && p.getState().setHasClickedForm(!1), s || U.Z.updateForumSearchQuery(t.id, n)
         },
         onFocus: () => {
           p.getState().setTitleFocused(!0), p.getState().setBodyFocused(!1)
         },
         onBlur: () => {
           p.getState().setTitleFocused(!1);
-          let e = (0, T.Z)(u, !0);
-          e !== u && (p.getState().setName(e), s || H.Z.updateForumSearchQuery(t.id, e))
+          let e = (0, I.Z)(u, !0);
+          e !== u && (p.getState().setName(e), s || U.Z.updateForumSearchQuery(t.id, e))
         },
         onKeyDown: e => {
           var r, i;
-          "Enter" === e.key && (e.preventDefault(), e.stopPropagation(), s && u.length > 0 ? null == a || a.focus() : l && e.shiftKey && ((0, G.nH)({
+          "Enter" === e.key && (e.preventDefault(), e.stopPropagation(), s && u.length > 0 ? null == a || a.focus() : l && e.shiftKey && ((0, q.nH)({
             guildId: t.guild_id,
             channelId: t.id
           }), x && !b && p.getState().setGuidelinesOpen(!0), p.getState().setFormOpenFromUserAction(), u.trim().length > 0 && (p.getState().setBodyFocused(!0), null == a || a.focus())));
@@ -458,12 +459,12 @@ let es = i.memo(function(e) {
           "Escape" !== e.key || p.getState().submitting || (null == (i = n.current) || i.blur(), p.getState().setFormOpen(!1), p.getState().setTitleFocused(!1), p.getState().setBodyFocused(!1), p.getState().setPreviewing(!1))
         },
         error: _,
-        className: en.title,
+        className: er.title,
         inputRef: n
       }), s ? null : (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(ec, {
+        children: [(0, r.jsx)(ed, {
           parentChannel: t
-        }), (0, r.jsx)(ef, {
+        }), (0, r.jsx)(ep, {
           parentChannel: t,
           canCreatePost: l
         })]
@@ -471,40 +472,40 @@ let es = i.memo(function(e) {
     })
   });
 
-function ec(e) {
+function ed(e) {
   let {
     parentChannel: t
   } = e, {
     guidelinesOpen: n
-  } = (0, W.xH)(e => {
+  } = (0, K.xH)(e => {
     let {
       guidelinesOpen: t
     } = e;
     return {
       guidelinesOpen: t
     }
-  }, c.X), i = (0, W.AF)(), l = null != t.topic && 0 !== t.topic.length, s = () => {
+  }, c.X), i = (0, K.AF)(), l = null != t.topic && 0 !== t.topic.length, s = () => {
     i.getState().setGuidelinesOpen(!n)
   };
   return l ? (0, r.jsx)(g.ua7, {
-    text: et.intl.string(et.t["4d4T4u"]),
-    children: e => (0, r.jsx)(g.P3F, ei(er({}, e), {
+    text: en.intl.string(en.t["4d4T4u"]),
+    children: e => (0, r.jsx)(g.P3F, el(ei({}, e), {
       onClick: s,
-      className: a()(en.forumPostFormButton, {
-        [en.forumPostFormButtonActive]: n
+      className: a()(er.forumPostFormButton, {
+        [er.forumPostFormButtonActive]: n
       }),
-      children: (0, r.jsx)(g.snC, er({
+      children: (0, r.jsx)(g.snC, ei({
         size: "md",
         color: "currentColor"
       }, e))
     }))
   }) : null
 }
-let ed = i.memo(function(e) {
+let eu = i.memo(function(e) {
     let {
       parentChannel: t,
       textValue: n
-    } = e, i = new k.ZP({
+    } = e, i = new R.ZP({
       channelId: t.id,
       content: n
     }), {
@@ -522,18 +523,18 @@ let ed = i.memo(function(e) {
       channel: t
     }, l, !1);
     return (0, r.jsx)("div", {
-      className: a()(en.channelTextAreaInner, en.previewTextArea),
+      className: a()(er.channelTextAreaInner, er.previewTextArea),
       children: s
     })
   }),
-  eu = i.memo(function(e) {
+  em = i.memo(function(e) {
     let {
       parentChannel: t,
       submit: n,
       disabled: l = !1,
       editorRef: s,
       setEditorRef: d
-    } = e, u = (0, h.e7)([L.default], () => L.default.getCurrentUser());
+    } = e, u = (0, h.e7)([F.default], () => F.default.getCurrentUser());
     o()(null != u, "current user cannot be null");
     let {
       messageError: m,
@@ -541,7 +542,7 @@ let ed = i.memo(function(e) {
       textAreaState: p,
       bodyFocused: x,
       formOpen: b
-    } = (0, W.xH)(e => {
+    } = (0, K.xH)(e => {
       let {
         messageError: t,
         textAreaState: n,
@@ -556,8 +557,8 @@ let ed = i.memo(function(e) {
         bodyFocused: i,
         formOpen: l
       }
-    }, c.X), v = (0, W.AF)();
-    i.useEffect(() => () => (0, G.Vn)({
+    }, c.X), v = (0, K.AF)();
+    i.useEffect(() => () => (0, q.Vn)({
       guildId: t.guild_id,
       channelId: t.id
     }), [t.guild_id, t.id]);
@@ -584,40 +585,40 @@ let ed = i.memo(function(e) {
         } = e;
         return n(t, i, r)
       }, [n]);
-    (0, F.yp)({
-      event: $.CkL.TEXTAREA_FOCUS,
+    (0, D.yp)({
+      event: ee.CkL.TEXTAREA_FOCUS,
       handler: _
-    }), (0, F.yp)({
-      event: $.CkL.TEXTAREA_BLUR,
+    }), (0, D.yp)({
+      event: ee.CkL.TEXTAREA_BLUR,
       handler: y
     });
-    let S = (0, B.Op)(m, {
+    let S = (0, H.Op)(m, {
       content: p.textValue
     });
     return (0, r.jsx)("div", {
-      className: en.bodyContainer,
+      className: er.bodyContainer,
       children: (0, r.jsxs)("div", {
-        className: en.contentContainer,
-        children: [f ? (0, r.jsx)(ed, {
+        className: er.contentContainer,
+        children: [f ? (0, r.jsx)(eu, {
           parentChannel: t,
           textValue: p.textValue
         }) : (0, r.jsx)("div", {
           onClick: _,
           children: (0, r.jsx)(j.Z, {
-            type: el,
+            type: ea,
             setEditorRef: d,
             channel: t,
-            placeholder: et.intl.string(et.t["8IPnv7"]),
+            placeholder: en.intl.string(en.t["8IPnv7"]),
             textValue: p.textValue,
             richValue: p.richValue,
             focused: x,
-            className: en.channelTextArea,
-            innerClassName: a()(en.channelTextAreaInner, {
-              [en.channelTextAreaInnerError]: null != S
+            className: er.channelTextArea,
+            innerClassName: a()(er.channelTextAreaInner, {
+              [er.channelTextAreaInnerError]: null != S
             }),
             onChange: O,
             onSubmit: w,
-            promptToUpload: z.d,
+            promptToUpload: B.d,
             disabled: l,
             onKeyDown: e => {
               if (("ArrowUp" === e.key || "ArrowDown" === e.key) && e.stopPropagation(), "Home" === e.key || "End" === e.key) {
@@ -638,48 +639,48 @@ let ed = i.memo(function(e) {
     })
   });
 
-function em() {
+function eh() {
   return (0, r.jsx)("div", {
-    className: en.previewModeIndicator,
+    className: er.previewModeIndicator,
     children: (0, r.jsx)(g.Text, {
       variant: "text-sm/normal",
       color: "interactive-normal",
-      children: et.intl.string(et.t["WE/cYm"])
+      children: en.intl.string(en.t["WE/cYm"])
     })
   })
 }
 
-function eh() {
+function eg() {
   let {
     previewing: e
-  } = (0, W.xH)(e => {
+  } = (0, K.xH)(e => {
     let {
       previewing: t
     } = e;
     return {
       previewing: t
     }
-  }, c.X), t = (0, W.AF)(), n = i.useCallback(() => {
-    t.getState().setPreviewing(!e), (0, G.nE)()
+  }, c.X), t = (0, K.AF)(), n = i.useCallback(() => {
+    t.getState().setPreviewing(!e), (0, q.nE)()
   }, [e, t]);
   return (0, r.jsx)(g.ua7, {
-    text: e ? et.intl.string(et.t.ojM1xM) : et.intl.string(et.t.SKNnqq),
-    children: t => (0, r.jsx)(g.P3F, ei(er({}, t), {
+    text: e ? en.intl.string(en.t.ojM1xM) : en.intl.string(en.t.SKNnqq),
+    children: t => (0, r.jsx)(g.P3F, el(ei({}, t), {
       onClick: n,
-      className: a()(en.forumPostFormButton, {
-        [en.forumPostFormButtonActive]: e
+      className: a()(er.forumPostFormButton, {
+        [er.forumPostFormButtonActive]: e
       }),
-      children: e ? (0, r.jsx)(g.kZF, er({
+      children: e ? (0, r.jsx)(g.kZF, ei({
         size: "md",
         color: "currentColor"
-      }, t)) : (0, r.jsx)(g.tEF, er({
+      }, t)) : (0, r.jsx)(g.tEF, ei({
         size: "md",
         color: "currentColor"
       }, t))
     }))
   })
 }
-let eg = i.memo(function(e) {
+let ef = i.memo(function(e) {
   let {
     parentChannel: t,
     canCreatePost: n,
@@ -688,7 +689,7 @@ let eg = i.memo(function(e) {
     textAreaState: a,
     appliedTags: s,
     name: o
-  } = (0, W.xH)(e => {
+  } = (0, K.xH)(e => {
     let {
       textAreaState: t,
       appliedTags: n,
@@ -701,68 +702,68 @@ let eg = i.memo(function(e) {
     }
   }, c.X), {
     rateLimitPerUser: d
-  } = t, u = d > 0, m = (0, h.e7)([M.Z], () => M.Z.getSlowmodeCooldownGuess(t.id, M.S.CreateThread)), f = (0, h.e7)([Z.Z], () => Z.Z.can($.Plq.MANAGE_THREADS, t) || Z.Z.can($.Plq.MANAGE_CHANNELS, t)), p = t.hasFlag(ee.zZ.REQUIRE_TAG) && 0 === s.size && o.length > 0 && a.textValue.length > 0, x = (0, W.AF)(), j = i.useCallback(() => {
+  } = t, u = d > 0, m = (0, h.e7)([A.Z], () => A.Z.getSlowmodeCooldownGuess(t.id, A.S.CreateThread)), f = (0, h.e7)([M.Z], () => M.Z.can(ee.Plq.MANAGE_THREADS, t) || M.Z.can(ee.Plq.MANAGE_CHANNELS, t)), p = t.hasFlag(et.zZ.REQUIRE_TAG) && 0 === s.size && o.length > 0 && a.textValue.length > 0, x = (0, K.AF)(), j = i.useCallback(() => {
     x.getState().setBodyFocused(!1)
   }, [x]), C = i.useMemo(() => "" !== o.trim() && "" !== a.textValue.trim(), [o, a.textValue]);
   return i.useEffect(() => {
     C || x.getState().setPreviewing(!1)
   }, [C, x]), (0, r.jsxs)("div", {
     className: l,
-    children: [(0, r.jsx)(ex, {
+    children: [(0, r.jsx)(eb, {
       parentChannel: t
     }), (0, r.jsx)("div", {
-      className: en.tagsDivider
+      className: er.tagsDivider
     }), (0, r.jsxs)("div", {
-      className: en.controlsContainer,
+      className: er.controlsContainer,
       children: [(0, r.jsxs)("div", {
-        className: en.controls,
+        className: er.controls,
         children: [(0, r.jsxs)("div", {
-          className: en.wrappedControls,
+          className: er.wrappedControls,
           children: [(0, r.jsx)(v.Z, {
-            type: el,
+            type: ea,
             textValue: a.textValue,
-            className: en.characterCount
-          }), u && (0, r.jsx)(J.Z, {
+            className: er.characterCount
+          }), u && (0, r.jsx)(Y.Z, {
             rateLimitPerUser: d,
             slowmodeCooldownGuess: m,
             isBypassSlowmode: f,
             leadingIcon: !0
           })]
-        }), (0, r.jsx)(ec, {
+        }), (0, r.jsx)(ed, {
           parentChannel: t
-        }), C && (0, r.jsx)(eh, {}), (0, r.jsx)(ef, {
+        }), C && (0, r.jsx)(eg, {}), (0, r.jsx)(ep, {
           parentChannel: t,
           disableIfInvalid: !0,
           canCreatePost: n,
           disabled: u && !f && m > 0
         })]
       }), (0, r.jsx)(b.Z, {
-        type: el,
-        className: en.expressionPicker,
+        type: ea,
+        className: er.expressionPicker,
         onClick: j
       }, "expression")]
     }), p && (0, r.jsx)(g.Text, {
       variant: "text-sm/normal",
       color: "text-danger",
-      className: en.requiredError,
-      children: et.intl.string(et.t.xPfNQk)
+      className: er.requiredError,
+      children: en.intl.string(en.t.xPfNQk)
     })]
   })
 });
 
-function ef(e) {
+function ep(e) {
   let {
     parentChannel: t,
     canCreatePost: n,
     disabled: i,
     disableIfInvalid: l = !1
-  } = e, {
-    submitting: a,
-    textAreaState: s,
-    name: o,
-    appliedTags: d,
-    formOpen: u
-  } = (0, W.xH)(e => {
+  } = e, a = (0, P.wL)(t), {
+    submitting: s,
+    textAreaState: o,
+    name: d,
+    appliedTags: u,
+    formOpen: m
+  } = (0, K.xH)(e => {
     let {
       submitting: t,
       textAreaState: n,
@@ -777,46 +778,46 @@ function ef(e) {
       appliedTags: i,
       formOpen: l
     }
-  }, c.X), m = t.hasFlag(ee.zZ.REQUIRE_TAG) && 0 === d.size && o.length > 0 && s.textValue.length > 0, f = (0, h.Wu)([A.Z], () => A.Z.getUploads(t.id, R.d.FirstThreadMessage)), p = s.textValue.trim().length > 0 || f.length > 0, x = !m && p && o.trim().length > 0;
-  if (__OVERLAY__) return null;
-  let b = function() {
+  }, c.X), f = t.hasFlag(et.zZ.REQUIRE_TAG) && 0 === u.size && d.length > 0 && o.textValue.length > 0, p = (0, h.Wu)([L.Z], () => L.Z.getUploads(t.id, Z.d.FirstThreadMessage)), x = o.textValue.trim().length > 0 || p.length > 0, b = !f && x && d.trim().length > 0;
+  if (__OVERLAY__ || a) return null;
+  let j = function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-    return (0, r.jsxs)(g.zxk, ei(er({}, e), {
+    return (0, r.jsxs)(g.zxk, el(ei({}, e), {
       size: g.zxk.Sizes.SMALL,
-      className: en.submitButton,
-      innerClassName: en.submitButtonInner,
+      className: er.submitButton,
+      innerClassName: er.submitButtonInner,
       type: "submit",
-      submitting: a,
-      disabled: l && !x || i || !n,
+      submitting: s,
+      disabled: l && !b || i || !n,
       children: [(0, r.jsx)(g.kBi, {
         size: "xs",
         color: "currentColor",
-        className: en.submitIcon
+        className: er.submitIcon
       }), (0, r.jsx)(g.Text, {
         variant: "text-md/semibold",
         color: "none",
-        children: u ? et.intl.string(et.t.pIuQIy) : et.intl.string(et.t.TyAuoa)
+        children: m ? en.intl.string(en.t.pIuQIy) : en.intl.string(en.t.TyAuoa)
       })]
     }))
   };
-  return n ? b() : (0, r.jsx)(g.ua7, {
-    text: et.intl.string(et.t.iyzwnJ),
-    children: e => b(e)
+  return n ? j() : (0, r.jsx)(g.ua7, {
+    text: en.intl.string(en.t.iyzwnJ),
+    children: e => j(e)
   })
 }
 
-function ep() {
+function ex() {
   return Promise.resolve()
 }
 
-function ex(e) {
+function eb(e) {
   let {
     parentChannel: t
   } = e, {
     appliedTags: n,
     toggleAppliedTag: l,
     setPopoutOpen: s
-  } = (0, W.xH)(e => {
+  } = (0, K.xH)(e => {
     let {
       appliedTags: t,
       toggleAppliedTag: n,
@@ -827,17 +828,17 @@ function ex(e) {
       toggleAppliedTag: n,
       setPopoutOpen: r
     }
-  }, c.X), o = n.size >= Q.Cn, h = (0, d.ZP)({
+  }, c.X), o = n.size >= $.Cn, h = (0, d.ZP)({
     id: "".concat(t.id, "-post-form-tags-navigator"),
     isEnabled: !0,
     wrap: !0,
-    scrollToStart: ep,
-    scrollToEnd: ep,
+    scrollToStart: ex,
+    scrollToEnd: ex,
     orientation: m.hy.HORIZONTAL
   }), {
     containerRef: f,
     containerWidth: p
-  } = (0, Y.Z)(), x = i.useRef(null), [b, j] = i.useState(!0), v = (0, V.Vm)(t), [C, _] = i.useState(0);
+  } = (0, Q.Z)(), x = i.useRef(null), [b, j] = i.useState(!0), v = (0, G.Vm)(t), [C, _] = i.useState(0);
   return (i.useLayoutEffect(() => {
     var e;
     let t = x.current,
@@ -860,14 +861,14 @@ function ex(e) {
       _(r)
     }
   }, [v, b, f, p]), 0 === v.length) ? null : (0, r.jsxs)("div", {
-    className: en.tagsContainer,
+    className: er.tagsContainer,
     ref: f,
     children: [(0, r.jsx)(g.lO_, {
       size: "xs",
       color: "currentColor",
-      className: en.tagsIcon
+      className: er.tagsIcon
     }), (0, r.jsx)("div", {
-      className: en.tagList,
+      className: er.tagList,
       ref: x,
       children: (0, r.jsx)(u.bG, {
         navigator: h,
@@ -890,19 +891,19 @@ function ex(e) {
               }
               return i
             }(e, ["ref"]);
-            return (0, r.jsx)("div", ei(er({
-              className: en.tagListInner,
+            return (0, r.jsx)("div", el(ei({
+              className: er.tagListInner,
               ref: t
             }, i), {
-              children: v.map(e => (0, r.jsx)(K.Z, {
-                ariaLabel: et.intl.formatToPlainString(et.t.FSZVIS, {
+              children: v.map(e => (0, r.jsx)(J.Z, {
+                ariaLabel: en.intl.formatToPlainString(en.t.FSZVIS, {
                   tagName: e.name
                 }),
                 tag: e,
                 onClick: o && !n.has(e.id) ? void 0 : () => l(e.id),
-                disabled: !n.has(e.id) && n.size >= Q.Cn,
+                disabled: !n.has(e.id) && n.size >= $.Cn,
                 selected: n.has(e.id),
-                size: K.Z.Sizes.SMALL
+                size: J.Z.Sizes.SMALL
               }, e.id))
             }))
           }
@@ -915,7 +916,7 @@ function ex(e) {
         let {
           closePopout: i
         } = e;
-        return (0, r.jsx)(q.Z, {
+        return (0, r.jsx)(X.Z, {
           parentChannel: t,
           appliedTags: n,
           maxTagsApplied: o,
@@ -925,16 +926,16 @@ function ex(e) {
       },
       position: "bottom",
       align: "center",
-      children: e => (0, r.jsxs)(g.zxk, ei(er({}, e), {
+      children: e => (0, r.jsxs)(g.zxk, el(ei({}, e), {
         size: g.zxk.Sizes.TINY,
-        className: en.tagsButton,
-        innerClassName: en.tagsButtonInner,
+        className: er.tagsButton,
+        innerClassName: er.tagsButtonInner,
         style: {
           left: C
         },
         look: g.zxk.Looks.LINK,
-        "aria-label": et.intl.string(et.t.N5vP9P),
-        children: [et.intl.string(et.t.IkpM1d), (0, r.jsx)(g.CJ0, {
+        "aria-label": en.intl.string(en.t.N5vP9P),
+        children: [en.intl.string(en.t.IkpM1d), (0, r.jsx)(g.CJ0, {
           size: "custom",
           color: "currentColor",
           width: 16
@@ -942,11 +943,11 @@ function ex(e) {
       }))
     }), (0, r.jsxs)(g.zxk, {
       size: g.zxk.Sizes.TINY,
-      className: a()(en.tagsButton, en.tagsButtonPlaceholder),
-      innerClassName: en.tagsButtonInner,
+      className: a()(er.tagsButton, er.tagsButtonPlaceholder),
+      innerClassName: er.tagsButtonInner,
       look: g.zxk.Looks.LINK,
-      "aria-label": et.intl.string(et.t.N5vP9P),
-      children: [et.intl.string(et.t.IkpM1d), (0, r.jsx)(g.CJ0, {
+      "aria-label": en.intl.string(en.t.N5vP9P),
+      children: [en.intl.string(en.t.IkpM1d), (0, r.jsx)(g.CJ0, {
         size: "custom",
         color: "currentColor",
         width: 16
@@ -955,7 +956,7 @@ function ex(e) {
   })
 }
 
-function eb(e) {
+function ej(e) {
   let {
     style: t,
     className: n
@@ -964,7 +965,7 @@ function eb(e) {
     className: n,
     style: t,
     children: (0, r.jsx)("div", {
-      className: en.loader
+      className: er.loader
     })
   })
 }

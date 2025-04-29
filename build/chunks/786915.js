@@ -1,4 +1,4 @@
-/** Chunk was on 69849 **/
+/** Chunk was on 74767 **/
 n.d(t, {
   Z: () => y
 });
@@ -50,8 +50,8 @@ function y(e) {
     shouldPrioritizeGroupPlusIcon: O = !1,
     isContextlessActivity: E = !1,
     iconClassName: I,
-    look: S,
-    size: P,
+    look: P,
+    size: S,
     buttonText: Z
   } = e, N = function(e, t) {
     if (null == e) return {};
@@ -91,8 +91,8 @@ function y(e) {
       iconComponent: M,
       label: L,
       iconClassName: I,
-      look: S,
-      size: P,
+      look: P,
+      size: S,
       buttonText: Z
     })
   }
@@ -153,8 +153,8 @@ function y(e) {
     iconComponent: M,
     label: L,
     iconClassName: I,
-    look: S,
-    size: P,
+    look: P,
+    size: S,
     buttonText: Z
   }, N)) : null
 }

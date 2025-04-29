@@ -1,4 +1,4 @@
-/** Chunk was on 69849 **/
+/** Chunk was on 74767 **/
 n.d(t, {
   ZP: () => R
 });
@@ -27,8 +27,8 @@ var i = n(120356),
   O = n(5192),
   E = n(51144),
   I = n(131085),
-  S = n(388032),
-  P = n(157092);
+  P = n(388032),
+  S = n(157092);
 
 function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -69,11 +69,11 @@ function T(e) {
     onClose: i
   } = e, l = t.id, s = (0, o.e7)([x.Z, C.Z, g.default], () => l === g.default.getId() ? x.Z.getStatus() : C.Z.getStatus(l, n), [l, n]);
   return (0, r.jsxs)("div", {
-    className: P.topRow,
+    className: S.topRow,
     children: [(0, r.jsxs)("div", {
-      className: P.memberNameContainer,
+      className: S.memberNameContainer,
       children: [(0, r.jsx)("div", {
-        className: P.memberAvatar,
+        className: S.memberAvatar,
         children: (0, r.jsx)(a.qEK, {
           src: t.getAvatarURL(n, 48),
           "aria-label": t.username,
@@ -81,9 +81,9 @@ function T(e) {
           status: s
         })
       }), (0, r.jsxs)("div", {
-        className: P.memberNameAndTagContainer,
+        className: S.memberNameAndTagContainer,
         children: [(0, r.jsxs)("div", {
-          className: P.memberNameTextContainer,
+          className: S.memberNameTextContainer,
           children: [(0, r.jsx)(a.Text, {
             variant: "text-lg/medium",
             children: (0, r.jsx)(a.PUh, {
@@ -96,8 +96,8 @@ function T(e) {
             contextGuildId: n,
             badgeSize: I.Gg.SIZE_16,
             textVariant: "heading-md/semibold",
-            className: P.memberClanTag,
-            containerClassName: P.memberClanTagContainer
+            className: S.memberClanTag,
+            containerClassName: S.memberClanTagContainer
           })]
         }), (0, r.jsx)(a.Text, {
           variant: "text-md/medium",
@@ -109,7 +109,7 @@ function T(e) {
       variant: "text-md/medium",
       color: "text-normal",
       children: (0, r.jsx)(a.P3F, {
-        className: P.closeAction,
+        className: S.closeAction,
         onClick: i,
         children: (0, r.jsx)(a.Dio, {
           size: "md",
@@ -147,12 +147,12 @@ function A(e) {
     children: e => (0, r.jsx)(a.P3F, N(Z({}, c, e), {
       tag: t,
       "aria-label": n,
-      className: l()(P.bottomRowAction, {
-        [P.bottomRowActionDisabled]: i
+      className: l()(S.bottomRowAction, {
+        [S.bottomRowActionDisabled]: i
       }),
       onClick: i ? void 0 : s,
       children: (0, r.jsx)("div", {
-        className: P.innerBottomRowAction,
+        className: S.innerBottomRowAction,
         children: o
       })
     }))
@@ -181,10 +181,10 @@ function w(e) {
     locations: E
   }), w = (0, o.e7)([g.default], () => g.default.getId() === (null == t ? void 0 : t.id));
   return (0, r.jsxs)("div", {
-    className: P.bottomRow,
+    className: S.bottomRow,
     children: [(0, r.jsx)(A, {
       disabled: w,
-      text: S.intl.string(S.t["g33r/P"]),
+      text: P.intl.string(P.t["g33r/P"]),
       onClick: () => {
         s.Z.openPrivateChannel({
           recipientIds: t.id
@@ -198,7 +198,7 @@ function w(e) {
       })
     }), (0, r.jsx)(A, {
       disabled: !b,
-      text: S.intl.string(S.t["3glT6e"]),
+      text: P.intl.string(P.t["3glT6e"]),
       onClick: () => {
         (0, a.ZDy)(async () => {
           let {
@@ -219,7 +219,7 @@ function w(e) {
       })
     }), (0, r.jsx)(A, {
       disabled: !C,
-      text: S.intl.string(S.t["5MBJ5O"]),
+      text: P.intl.string(P.t["5MBJ5O"]),
       onClick: () => {
         (0, a.ZDy)(async () => {
           let {
@@ -240,7 +240,7 @@ function w(e) {
       })
     }), (0, r.jsx)(A, {
       disabled: !x,
-      text: O ? S.intl.string(S.t.N86XcH) : S.intl.string(S.t.kTlLr6),
+      text: O ? P.intl.string(P.t.N86XcH) : P.intl.string(P.t.kTlLr6),
       onClick: () => {
         O ? (0, d.q)({
           guildId: i.guildId,
@@ -259,7 +259,7 @@ function w(e) {
         color: a.TVs.colors.TEXT_NORMAL.css
       })
     }), (0, r.jsx)(A, {
-      text: S.intl.string(S.t.IHTjzM),
+      text: P.intl.string(P.t.IHTjzM),
       onClick: () => {
         T(f.jQ.COPY_ID), (0, j.JG)(t.id)
       },
@@ -281,7 +281,7 @@ function R(e) {
     onClose: i
   } = e, l = (0, o.e7)([v.default], () => v.default.getUser(t), [t]), a = (0, o.e7)([b.ZP], () => b.ZP.getMember(n, t), [n, t]);
   return null == l || null == a ? null : (0, r.jsxs)("div", {
-    className: P.container,
+    className: S.container,
     children: [(0, r.jsx)(T, {
       user: l,
       guildId: n,

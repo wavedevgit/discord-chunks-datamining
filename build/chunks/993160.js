@@ -1,13 +1,13 @@
-/** Chunk was on 30776 **/
+/** Chunk was on 44784 **/
 t.d(n, {
   Z: () => p
 });
 var o = t(200651);
 t(192379);
 var r = t(481060),
-  a = t(906732),
-  i = t(705556),
-  c = t(30556),
+  c = t(906732),
+  a = t(705556),
+  i = t(30556),
   l = t(664794),
   s = t(522182),
   d = t(821706),
@@ -24,7 +24,7 @@ function p(e) {
     onClose: _
   } = e, {
     newestAnalyticsLocation: h
-  } = (0, a.ZP)(), {
+  } = (0, c.ZP)(), {
     gameFriends: y,
     hasOutgoingPendingGameFriends: g,
     hasIncomingPendingGameFriends: x
@@ -32,7 +32,7 @@ function p(e) {
     userId: n.id
   }), j = y.length > 0 || g || x;
   return m === f.OGo.BLOCKED ? null : n.id === t.id ? (0, o.jsxs)(o.Fragment, {
-    children: [(0, o.jsx)(i.Z, {
+    children: [(0, o.jsx)(a.Z, {
       user: n,
       guildId: p,
       onClose: _
@@ -45,7 +45,7 @@ function p(e) {
       themeColor: "secondary"
     })]
   }) : n.bot ? (0, o.jsxs)(o.Fragment, {
-    children: [(0, o.jsx)(c.Z, {
+    children: [(0, o.jsx)(i.Z, {
       type: "text",
       userId: n.id,
       onClose: _,
@@ -57,7 +57,7 @@ function p(e) {
       themeColor: "secondary"
     })]
   }) : m === f.OGo.FRIEND || m === f.OGo.PENDING_OUTGOING || m === f.OGo.PENDING_INCOMING ? (0, o.jsxs)(o.Fragment, {
-    children: [(0, o.jsx)(c.Z, {
+    children: [(0, o.jsx)(i.Z, {
       type: "text",
       userId: n.id,
       color: r.zxk.Colors.BRAND,
@@ -77,7 +77,7 @@ function p(e) {
       themeColor: "secondary"
     })]
   }) : m === f.OGo.NONE && j ? (0, o.jsxs)(o.Fragment, {
-    children: [(0, o.jsx)(c.Z, {
+    children: [(0, o.jsx)(i.Z, {
       type: "text",
       userId: n.id,
       onClose: _,
@@ -105,7 +105,7 @@ function p(e) {
       analyticsLocation: h,
       color: r.zxk.Colors.BRAND,
       autoFocus: !0
-    }), (0, o.jsx)(c.Z, {
+    }), (0, o.jsx)(i.Z, {
       type: "icon",
       userId: n.id,
       onClose: _,

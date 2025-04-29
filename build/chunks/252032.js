@@ -1,4 +1,4 @@
-/** Chunk was on 69849 **/
+/** Chunk was on 74767 **/
 n.d(t, {
   Z: () => E
 }), n(997841), n(388685);
@@ -46,8 +46,8 @@ function j(e) {
     id: c
   } = n, m = t.getGuildId(), b = (0, l.e7)([h.Z], () => h.Z.getGuild(m), [m]), _ = t.type === C.d4z.GUILD_ANNOUNCEMENT, j = null != b && b.hasFeature(C.oNc.NEWS), E = _ && j, {
     editingMessage: I,
-    editingTextValue: S,
-    editingRichValue: P
+    editingTextValue: P,
+    editingRichValue: S
   } = (0, l.cj)([p.Z], () => ({
     editingMessage: p.Z.getEditingMessage(s),
     editingTextValue: p.Z.getEditingTextValue(s),
@@ -92,12 +92,12 @@ function j(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   }, [c]), A = (0, u.R6)("EditorWrapper");
-  return null != S && null != P ? (0, r.jsx)(y.Z, {
+  return null != P && null != S ? (0, r.jsx)(y.Z, {
     ref: void 0,
     channel: t,
     message: n,
-    textValue: S,
-    richValue: P,
+    textValue: P,
+    richValue: S,
     onCancel: o.Z.endEditMessage,
     onChange: o.Z.updateEditMessage,
     onConfirmDelete: a.Z.confirmDelete,

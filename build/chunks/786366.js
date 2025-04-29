@@ -1,41 +1,41 @@
-/** Chunk was on 88235 **/
+/** Chunk was on 56549 **/
 n.d(t, {
   Z: () => f
 }), n(953529), n(997841);
-var r = n(200651);
+var l = n(200651);
 n(192379);
-var l = n(597312),
+var r = n(597312),
   i = n(442837),
-  o = n(481060),
-  s = n(860719),
-  a = n(621853),
-  c = n(388032),
+  s = n(481060),
+  o = n(860719),
+  c = n(621853),
+  a = n(388032),
   d = n(989421);
 
 function u(e) {
   let {
     icon: t,
     title: n,
-    description: l
+    description: r
   } = e;
-  return (0, r.jsxs)("div", {
+  return (0, l.jsxs)("div", {
     className: d.row,
-    children: [(0, r.jsx)("div", {
+    children: [(0, l.jsx)("div", {
       className: d.rowIcon,
-      children: (0, r.jsx)(t, {
+      children: (0, l.jsx)(t, {
         size: "custom",
         width: 20,
         height: 20,
         color: "currentColor"
       })
-    }), (0, r.jsxs)("div", {
+    }), (0, l.jsxs)("div", {
       className: d.rowText,
-      children: [(0, r.jsx)(o.X6q, {
+      children: [(0, l.jsx)(s.X6q, {
         variant: "text-xs/semibold",
         children: n
-      }), (0, r.jsx)(o.Text, {
+      }), (0, l.jsx)(s.Text, {
         variant: "text-sm/normal",
-        children: l
+        children: r
       })]
     })]
   })
@@ -44,34 +44,34 @@ function u(e) {
 function f(e) {
   let {
     user: t
-  } = e, n = (0, i.e7)([a.Z], () => {
+  } = e, n = (0, i.e7)([c.Z], () => {
     var e;
-    return null == (e = a.Z.getUserProfile(t.id)) ? void 0 : e.application
+    return null == (e = c.Z.getUserProfile(t.id)) ? void 0 : e.application
   }), {
     hasMessageContent: f,
     hasGuildPresences: p,
     hasGuildMembers: h
-  } = (0, s.w)({
+  } = (0, o.w)({
     flags: null == n ? void 0 : n.flags
   });
-  return (0, r.jsxs)(l.zJ, {
+  return (0, l.jsxs)(r.zJ, {
     fade: !0,
     className: d.scroller,
-    children: [f && (0, r.jsx)(u, {
-      icon: o.kBi,
-      title: c.intl.string(c.t["7Tmhfn"]),
-      description: c.intl.string(c.t["eu5x7+"])
-    }), p && (0, r.jsx)(u, {
-      icon: o.iWm,
-      title: c.intl.string(c.t.awYSsL),
-      description: c.intl.string(c.t.TpsXoK)
-    }), h && (0, r.jsx)(u, {
-      icon: o.BFJ,
-      title: c.intl.string(c.t.WuKeSE),
-      description: c.intl.string(c.t.wOBmtb)
-    }), (0, r.jsx)(o.Text, {
+    children: [f && (0, l.jsx)(u, {
+      icon: s.kBi,
+      title: a.intl.string(a.t["7Tmhfn"]),
+      description: a.intl.string(a.t["eu5x7+"])
+    }), p && (0, l.jsx)(u, {
+      icon: s.iWm,
+      title: a.intl.string(a.t.awYSsL),
+      description: a.intl.string(a.t.TpsXoK)
+    }), h && (0, l.jsx)(u, {
+      icon: s.BFJ,
+      title: a.intl.string(a.t.WuKeSE),
+      description: a.intl.string(a.t.wOBmtb)
+    }), (0, l.jsx)(s.Text, {
       variant: "text-xs/normal",
-      children: c.intl.format(c.t.b6nqk5, {
+      children: a.intl.format(a.t.b6nqk5, {
         helpCenterUrl: "https://support.discord.com/hc/articles/7933951485975"
       })
     })]

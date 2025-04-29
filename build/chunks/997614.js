@@ -1,4 +1,4 @@
-/** Chunk was on 69849 **/
+/** Chunk was on 74767 **/
 n.d(t, {
   Z: () => w
 }), n(388685);
@@ -26,8 +26,8 @@ var r = n(200651),
   O = n(459273),
   E = n(522651),
   I = n(795318),
-  S = n(304388),
-  P = n(981631),
+  P = n(304388),
+  S = n(981631),
   Z = n(127379),
   N = n(388032);
 
@@ -120,9 +120,9 @@ function w(e) {
       null == (e = et.current) || e.hidePopout()
     }, []);
   return (0, O.yp)({
-    event: P.CkL.TOGGLE_SOUNDBOARD,
+    event: S.CkL.TOGGLE_SOUNDBOARD,
     handler: en
-  }), (0, r.jsx)(S.Z, {
+  }), (0, r.jsx)(P.Z, {
     ref: et,
     isPopoutBlocked: null != R && R !== Z.D.SOUNDBOARD,
     onRequestClose: () => {

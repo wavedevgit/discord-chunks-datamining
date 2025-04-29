@@ -1,4 +1,4 @@
-/** Chunk was on 69849 **/
+/** Chunk was on 74767 **/
 n.d(t, {
   Z: () => A
 }), n(413496), n(433524), n(35282), n(539854), n(388685);
@@ -26,8 +26,8 @@ var r = n(200651),
   O = n(951211),
   E = n(981631),
   I = n(921944),
-  S = n(489887),
-  P = n(388032),
+  P = n(489887),
+  S = n(388032),
   Z = n(725776);
 let N = RegExp("(.*)```(\\w+)\\n(.*)```(.*)", "s");
 
@@ -47,7 +47,7 @@ function T() {
         visibleContent: t
       } = e;
       return t === a.z.ACTIVITIES_CHAT_MENU_NEW_BADGE ? (0, r.jsx)(s.IGR, {
-        text: P.intl.string(P.t.y2b7CA),
+        text: S.intl.string(S.t.y2b7CA),
         color: l.Z.BUTTON_DANGER_BACKGROUND
       }) : null
     }
@@ -123,7 +123,7 @@ function A(e) {
         }), i))
       }
     }, {
-      modalKey: S.$z
+      modalKey: P.$z
     })
   }
 
@@ -162,7 +162,7 @@ function A(e) {
     onSelect: _,
     navId: "channel-attach",
     onClose: m,
-    "aria-label": P.intl.string(P.t.Xm41aW),
+    "aria-label": S.intl.string(S.t.Xm41aW),
     className: Z.menu,
     children: o.map(function(e) {
       var n;

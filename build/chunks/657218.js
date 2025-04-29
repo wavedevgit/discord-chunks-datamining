@@ -1,4 +1,4 @@
-/** Chunk was on 69849 **/
+/** Chunk was on 74767 **/
 n.d(t, {
   Z: () => Y
 }), n(388685), n(781311);
@@ -26,8 +26,8 @@ var r = n(200651),
   O = n(294218),
   E = n(913663),
   I = n(268350),
-  S = n(695346),
-  P = n(592125),
+  P = n(695346),
+  S = n(592125),
   Z = n(703558),
   N = n(375954),
   T = n(496675),
@@ -70,7 +70,7 @@ function Y(e) {
     parentChannelId: t,
     parentMessageId: n,
     location: i
-  } = e, l = (0, a.e7)([P.Z], () => P.Z.getChannel(t)), {
+  } = e, l = (0, a.e7)([S.Z], () => S.Z.getChannel(t)), {
     analyticsLocations: o
   } = (0, m.ZP)(f.Z.CREATE_THREAD);
   return null == l ? null : (0, r.jsx)(m.Gt, {
@@ -161,8 +161,8 @@ function q(e) {
   }(t, m), C = (0, L.vH)(t), {
     nameError: j,
     messageError: O,
-    submit: S,
-    submitting: P
+    submit: P,
+    submitting: S
   } = function(e) {
     let {
       parentChannel: t,
@@ -243,7 +243,7 @@ function q(e) {
       className: o()(H.messagesWrapper, "group-spacing-".concat(u)),
       children: (0, r.jsxs)("form", {
         onSubmit: e => {
-          e.preventDefault(), S()
+          e.preventDefault(), P()
         },
         className: H.form,
         children: [(0, r.jsx)(s.Ttm, {
@@ -264,7 +264,7 @@ function q(e) {
                 threadSettings: f,
                 updateThreadSettings: g,
                 error: j,
-                disabled: P
+                disabled: S
               }), t.type === G.d4z.GUILD_TEXT ? (0, r.jsx)(K, {
                 startedFromMessage: null != n,
                 threadSettings: f,
@@ -282,7 +282,7 @@ function q(e) {
             parentChannel: t,
             textAreaState: _,
             setTextAreaState: y,
-            submit: S,
+            submit: P,
             error: O,
             isRefreshChatInputEnabled: T
           }), T ? null : (0, r.jsx)(d.Z, {
@@ -441,7 +441,7 @@ function J(e) {
   let {
     parentChannel: t,
     parentMessageId: n
-  } = e, i = (0, a.e7)([N.Z], () => null == n ? null : N.Z.getMessage(t.id, n)), l = S.jU.useSetting();
+  } = e, i = (0, a.e7)([N.Z], () => null == n ? null : N.Z.getMessage(t.id, n)), l = P.jU.useSetting();
   return null != i ? (0, r.jsx)(O.Z, {
     className: H.messagePreview,
     message: i,

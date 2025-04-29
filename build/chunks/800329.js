@@ -1,4 +1,4 @@
-/** Chunk was on 69849 **/
+/** Chunk was on 74767 **/
 n.d(t, {
   Z: () => p
 }), n(388685);
@@ -79,7 +79,7 @@ function p(e) {
       rows: r,
       columns: i
     }
-  })(y, C, x), [y, C, x]), I = E + 1, S = I * j + (I - 1) * 8 <= b, P = Math.floor(j / c) + 8, Z = Math.max(0, x - P * O) / 2;
+  })(y, C, x), [y, C, x]), I = E + 1, P = I * j + (I - 1) * 8 <= b, S = Math.floor(j / c) + 8, Z = Math.max(0, x - S * O) / 2;
   return (0, r.jsx)(a.Z, {
     fade: !0,
     className: n,
@@ -95,7 +95,7 @@ function p(e) {
           return (0, r.jsx)("div", {
             style: v,
             className: o()(s.tile, {
-              [s.padColumn]: S,
+              [s.padColumn]: P,
               [s.noVerticalMargin]: l >= (O - 1) * E,
               [s.noHorizontalMargin]: (l + 1) % E == 0 || l === y - 1
             }),
@@ -109,7 +109,7 @@ function p(e) {
     },
     rowCount: O,
     rowCountBySection: [O],
-    rowHeight: P,
+    rowHeight: S,
     onResize: g
   })
 }

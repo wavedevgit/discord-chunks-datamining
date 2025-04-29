@@ -1,4 +1,4 @@
-/** Chunk was on 69849 **/
+/** Chunk was on 74767 **/
 n.d(t, {
   Z: () => T
 });
@@ -27,8 +27,8 @@ var i = n(442837),
   O = n(502762),
   E = n(530),
   I = n(827313),
-  S = n(228168),
-  P = n(981631),
+  P = n(228168),
+  S = n(981631),
   Z = n(388032),
   N = n(283189);
 
@@ -63,7 +63,7 @@ function T(e) {
       onOpenProfile: R,
       tags: (0, r.jsx)(f.Z, {
         displayProfile: T,
-        themeType: S.lY.SIDEBAR
+        themeType: P.lY.SIDEBAR
       }),
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(b.Z, {
@@ -74,7 +74,7 @@ function T(e) {
           onOpenProfile: R
         })]
       })
-    }), k === P.OGo.PENDING_INCOMING && (0, r.jsx)(O.Z.Overlay, {
+    }), k === S.OGo.PENDING_INCOMING && (0, r.jsx)(O.Z.Overlay, {
       children: (0, r.jsx)(y.Z, {
         user: t,
         channelId: A.id,
