@@ -1,6 +1,6 @@
 /** Chunk was on 3656 **/
 n.d(t, {
-  Z: () => S
+  Z: () => P
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -204,7 +204,7 @@ let O = e => {
       })]
     })
   },
-  P = e => {
+  S = e => {
     let {
       channel: t,
       children: n
@@ -229,7 +229,7 @@ let O = e => {
       })]
     })
   },
-  S = e => {
+  P = e => {
     let {
       channel: t,
       legacyIconClassName: n
@@ -237,7 +237,7 @@ let O = e => {
       enabled: i,
       unifiedEditing: l
     } = (0, h.Ae)("header_bar", t.id);
-    return (0, r.jsx)(i ? I : P, {
+    return (0, r.jsx)(i ? I : S, {
       channel: t,
       inlineEditor: !l,
       children: (0, r.jsx)(m.v, {

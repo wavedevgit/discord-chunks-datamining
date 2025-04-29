@@ -26,8 +26,8 @@ var r = n(200651),
   O = n(459273),
   E = n(522651),
   I = n(795318),
-  P = n(304388),
-  S = n(981631),
+  S = n(304388),
+  P = n(981631),
   Z = n(127379),
   N = n(388032);
 
@@ -120,9 +120,9 @@ function w(e) {
       null == (e = et.current) || e.hidePopout()
     }, []);
   return (0, O.yp)({
-    event: S.CkL.TOGGLE_SOUNDBOARD,
+    event: P.CkL.TOGGLE_SOUNDBOARD,
     handler: en
-  }), (0, r.jsx)(P.Z, {
+  }), (0, r.jsx)(S.Z, {
     ref: et,
     isPopoutBlocked: null != R && R !== Z.D.SOUNDBOARD,
     onRequestClose: () => {

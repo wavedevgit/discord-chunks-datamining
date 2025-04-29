@@ -27,8 +27,8 @@ var r = n(200651),
   O = n(670188),
   E = n(221241),
   I = n(199902),
-  P = n(314897),
-  S = n(430824),
+  S = n(314897),
+  P = n(430824),
   Z = n(496675),
   N = n(979651),
   T = n(88751),
@@ -134,9 +134,9 @@ let U = 16 / 9,
     } = (0, s.cj)([b.Z], () => ({
       selectedParticipant: null != l ? b.Z.getSelectedParticipant(l.id) : null,
       largeStream: null != l && b.Z.getStageStreamSize(l.id)
-    })), P = i.useCallback((e, t) => {
+    })), S = i.useCallback((e, t) => {
       if (e.type === k.fO.STREAM && 0 === j.filter(t => (0, C.V9)(t) === e.id && t.state !== R.jm8.ENDED).length) {
-        if (!(0, x.p9)(l, N.Z, S.Z, Z.Z, y.Z)[0]) return;
+        if (!(0, x.p9)(l, N.Z, P.Z, Z.Z, y.Z)[0]) return;
         (0, p.rn)((0, C.my)(e.id), {
           forceMultiple: t.shiftKey
         })
@@ -152,7 +152,7 @@ let U = 16 / 9,
       className: M.tile,
       inCall: !0,
       inPopout: h,
-      onClick: P,
+      onClick: S,
       onContextMenu: d,
       pulseSpeakingIndicator: !f.enabled,
       width: o,
@@ -167,7 +167,7 @@ let U = 16 / 9,
       width: c
     } = e, {
       newestAnalyticsLocation: u
-    } = (0, m.ZP)(f.Z.STAGE_TILE), p = (0, h.bp)(), y = l.getGuildId(), C = P.default.getId(), {
+    } = (0, m.ZP)(f.Z.STAGE_TILE), p = (0, h.bp)(), y = l.getGuildId(), C = S.default.getId(), {
       simplifiedSettingsEnabled: x
     } = (0, E.Z)({
       location: "StageTile"
@@ -177,7 +177,7 @@ let U = 16 / 9,
       user: v
     } = i, O = (0, s.e7)([b.Z], () => b.Z.getParticipant(l.id, i.id), [l.id, i.id]), I = (0, s.e7)([T.ZP], () => T.ZP.isModerator(v.id, l.id), [l.id, v.id]);
     if (null == O || O.type === k.fO.ACTIVITY || O.type === k.fO.PRESENCE_EMBEDDED_ACTIVITY) return null;
-    let S = e => {
+    let P = e => {
         (0, g.h)({
           type: a.ImpressionTypes.MENU,
           name: a.ImpressionNames.CALL_TILE_CONTEXT_MENU,
@@ -192,7 +192,7 @@ let U = 16 / 9,
         switch (e.type) {
           case k.fO.HIDDEN_STREAM:
           case k.fO.STREAM:
-            S(k.TH.STREAM), (0, d.jW)(t, async () => {
+            P(k.TH.STREAM), (0, d.jW)(t, async () => {
               let {
                 default: t
               } = await n.e("22183").then(n.bind(n, 987281));
@@ -212,7 +212,7 @@ let U = 16 / 9,
             return;
           case k.fO.USER:
           default:
-            if (S(k.TH.USER), x && i) return (0, j.D)(t, v, l, {
+            if (P(k.TH.USER), x && i) return (0, j.D)(t, v, l, {
               context: p
             }, (e, t) => (0, _.o)({
               menuName: e,

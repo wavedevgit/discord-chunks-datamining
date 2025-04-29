@@ -16,8 +16,8 @@ let u = e => {
       data: {
         title: u,
         subtitle: m,
-        placeholder: p,
-        rows: x,
+        placeholder: x,
+        rows: p,
         character_limit: b,
         pattern: _
       },
@@ -83,8 +83,8 @@ let u = e => {
         onChange: I,
         value: j,
         error: O,
-        rows: x,
-        placeholder: p,
+        rows: p,
+        placeholder: x,
         autoFocus: !0
       }), null != m && (0, r.jsx)("div", {
         children: (0, r.jsx)(i.Text, {

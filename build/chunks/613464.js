@@ -32,13 +32,13 @@ function E(e) {
     onClose: l,
     className: E,
     infoPanelClassName: I,
-    style: P
-  } = e, S = (0, x.m)(n), Z = (0, a.e7)([C.default], () => C.default.getUser(t), [t]), N = (0, a.e7)([y.ZP], () => y.ZP.getMember(n, t), [n, t]), [T, A] = i.useState(null == Z || null == N), w = (0, u.Z)(N), R = i.useRef(null), {
+    style: S
+  } = e, P = (0, x.m)(n), Z = (0, a.e7)([C.default], () => C.default.getUser(t), [t]), N = (0, a.e7)([y.ZP], () => y.ZP.getMember(n, t), [n, t]), [T, A] = i.useState(null == Z || null == N), w = (0, u.Z)(N), R = i.useRef(null), {
     analyticsLocations: k
   } = (0, f.ZP)(h.Z.GUILD_MEMBER_MOD_VIEW), M = (0, g.ZP)(t, n), L = (0, d.ZP)();
   return (i.useEffect(() => {
-    S || l()
-  }, [S, l]), i.useEffect(() => {
+    P || l()
+  }, [P, l]), i.useEffect(() => {
     null == w || null != N || T || l()
   }, [T, N, l, w]), i.useEffect(() => {
     null != Z && null != N && A(!1)
@@ -57,9 +57,9 @@ function E(e) {
       })];
       await Promise.all(e), A(!1)
     }()
-  }, [n, t]), S) ? T || null == Z || null == N ? (0, r.jsx)("div", {
+  }, [n, t]), P) ? T || null == Z || null == N ? (0, r.jsx)("div", {
     className: o()(O.sidebarContainer, O.loadingContainer, E),
-    style: P,
+    style: S,
     children: (0, r.jsx)(s.$jN, {
       animated: !0,
       type: T ? s.$jN.Type.SPINNING_CIRCLE : s.$jN.Type.CHASING_DOTS
@@ -68,7 +68,7 @@ function E(e) {
     value: k,
     children: (0, r.jsx)("div", {
       className: o()(O.sidebarContainer, E),
-      style: P,
+      style: S,
       children: (0, r.jsx)(_.Z, {
         user: Z,
         displayProfile: M,

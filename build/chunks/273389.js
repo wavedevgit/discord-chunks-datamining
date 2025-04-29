@@ -15,23 +15,23 @@ let c = e => {
       disableNext: d,
       onClick: u,
       canNavigateBack: m,
-      onBackClicked: p
+      onBackClicked: x
     } = e,
-    x = l.useRef(null),
+    p = l.useRef(null),
     b = null != n && "cancel" !== n.type,
     _ = m && (null == n ? void 0 : n.type) !== "done",
     h = b || _;
   if (l.useEffect(() => {
       if ((null == n ? void 0 : n.type) === "submit" || (null == n ? void 0 : n.type) === "done") {
         var e;
-        null == (e = x.current) || e.focus()
+        null == (e = p.current) || e.focus()
       }
     }, [null == n ? void 0 : n.type]), !h) return null;
   let f = o.intl.string(o.t.i4jeWV);
   return (null == n ? void 0 : n.type) === "submit" ? (f = o.intl.string(o.t["G+vU8/"]), t = i.zxk.Colors.RED) : (null == n ? void 0 : n.type) === "next" ? f = o.intl.string(o.t.PDTjLC) : (null == n ? void 0 : n.type) === "cancel" && (f = o.intl.string(o.t["ETE/oK"]), t = i.zxk.Colors.TRANSPARENT), (0, r.jsxs)(i.mzw, {
     direction: a.Z.Direction.HORIZONTAL,
     children: [_ && (0, r.jsx)(i.zxk, {
-      onClick: p,
+      onClick: x,
       color: i.zxk.Colors.TRANSPARENT,
       disabled: c,
       children: o.intl.string(o.t["13/7kZ"])
@@ -42,7 +42,7 @@ let c = e => {
       color: t,
       className: s.actionButton,
       disabled: c || d,
-      buttonRef: x,
+      buttonRef: p,
       children: f
     })]
   })

@@ -26,8 +26,8 @@ var r = n(200651),
   O = n(607744),
   E = n(375954),
   I = n(496675),
-  P = n(306680),
-  S = n(62817),
+  S = n(306680),
+  P = n(62817),
   Z = n(594174),
   N = n(459273),
   T = n(255269),
@@ -105,8 +105,8 @@ let V = i.memo(function(e) {
       editingMessageId: j,
       fontSize: O,
       keyboardModeEnabled: E,
-      filterAfterTimestamp: P,
-      showingQuarantineBanner: S,
+      filterAfterTimestamp: S,
+      showingQuarantineBanner: P,
       hideSummaries: Z = !1,
       jumpBarClassName: T
     } = e, [A, R] = i.useState(!1), V = i.useMemo(() => _ ? (0, w.aJ)({
@@ -130,7 +130,7 @@ let V = i.memo(function(e) {
       hasUnreads: v,
       focusId: j,
       placeholderHeight: V.totalHeight,
-      canLoadMore: null == P,
+      canLoadMore: null == S,
       handleScrollToBottom: i.useCallback(() => R(!0), [R]),
       handleScrollFromBottom: i.useCallback(() => R(!1), [R])
     }), W = (0, k.Z)({
@@ -155,8 +155,8 @@ let V = i.memo(function(e) {
       loadMore: z.loadMore,
       scrollManager: z,
       specs: V,
-      filterAfterTimestamp: null != P ? P : Y,
-      showingQuarantineBanner: S,
+      filterAfterTimestamp: null != S ? S : Y,
+      showingQuarantineBanner: P,
       hideSummaries: Z,
       isAtBottom: A,
       jumpToPresent: () => {
@@ -236,7 +236,7 @@ let V = i.memo(function(e) {
               children: U.intl.string(U.t.Spb3s7)
             }), q, (0, r.jsx)("div", {
               className: o()({
-                [B.scrollerSpacer]: !S,
+                [B.scrollerSpacer]: !P,
                 [B.empty]: 0 === m.length && !m.loadingMore,
                 [B.emptyForum]: 1 === m.length && !m.loadingMore && f.isForumPost() && (null == (t = m.first()) ? void 0 : t.isFirstMessageInForumPost(f))
               })
@@ -313,9 +313,9 @@ let V = i.memo(function(e) {
     } = function(e) {
       var t, n;
       let r = (0, s.e7)([E.Z], () => E.Z.getMessages(e.id), [e.id]),
-        l = (0, s.e7)([P.ZP], () => {
+        l = (0, s.e7)([S.ZP], () => {
           var t;
-          return null != (t = P.ZP.getOldestUnreadMessageId(e.id)) ? t : null
+          return null != (t = S.ZP.getOldestUnreadMessageId(e.id)) ? t : null
         }, [e.id]),
         {
           enabled: o
@@ -371,8 +371,8 @@ let V = i.memo(function(e) {
           messages: U,
           channelStream: B,
           permissionVersion: p,
-          uploads: (0, s.e7)([S.Z], () => S.Z.getFiles(t.id), [t]),
-          unreadCount: (0, s.e7)([P.ZP], () => P.ZP.getUnreadCount(t.id), [t]),
+          uploads: (0, s.e7)([P.Z], () => P.Z.getFiles(t.id), [t]),
+          unreadCount: (0, s.e7)([S.ZP], () => S.ZP.getUnreadCount(t.id), [t]),
           hasUnreads: null != z,
           canChat: y,
           editingMessageId: W,

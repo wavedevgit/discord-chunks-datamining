@@ -114,7 +114,7 @@ class v extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), E(this, "renderPartyMember", (e, t) => {
+    super(...e), E(this, "partyMemberAvatarRef", i.createRef()), E(this, "partyMemberOverflowRef", i.createRef()), E(this, "renderPartyMember", (e, t) => {
       let n;
       if (null == e) return null;
       let {
@@ -122,6 +122,7 @@ class v extends i.PureComponent {
         onUserContextMenu: c
       } = this.props;
       return n = (null == l ? void 0 : l.id) === e.id ? b.intl.string(b.t.N9bqDw) : b.intl.string(b.t.Z2Y4c3), (0, r.jsx)(u.Z, {
+        targetElementRef: this.partyMemberAvatarRef,
         user: e,
         newAnalyticsLocations: [s.Z.AVATAR],
         position: "top",
@@ -142,7 +143,8 @@ class v extends i.PureComponent {
               "aria-label": e.username,
               onMouseEnter: r,
               onMouseLeave: s,
-              onContextMenu: t => void(null != e && (null == c || c(t, e)))
+              onContextMenu: t => void(null != e && (null == c || c(t, e))),
+              avatarContentRef: this.partyMemberAvatarRef
             }))
           }
         })
@@ -153,9 +155,11 @@ class v extends i.PureComponent {
       } = this.props;
       return (0, r.jsx)(o.yRy, {
         renderPopout: i,
+        targetElementRef: this.partyMemberOverflowRef,
         children: n => (0, r.jsx)(o.ua7, {
           text: b.intl.string(b.t.Zf4NPT),
           children: i => (0, r.jsx)("div", y(O({
+            ref: this.partyMemberOverflowRef,
             className: a()(_.overflow, t)
           }, i, n), {
             children: e
