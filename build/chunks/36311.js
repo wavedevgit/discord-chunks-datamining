@@ -1,6 +1,6 @@
-/** Chunk was on 30745 **/
+/** Chunk was on 3656 **/
 n.d(t, {
-  Z: () => C
+  Z: () => x
 });
 var r = n(200651),
   i = n(192379),
@@ -20,7 +20,7 @@ var r = n(200651),
   _ = n(388032),
   y = n(857651);
 
-function x(e) {
+function C(e) {
   let {
     guild: t,
     channelId: n
@@ -28,8 +28,8 @@ function x(e) {
     var e;
     return (null == (e = f.default.getCurrentUser()) ? void 0 : e.nsfwAllowed) === !1
   }), o = (0, p.Kt)(), {
-    verifyAgreementButtonText: x,
-    verifyGateDescription: C
+    verifyAgreementButtonText: C,
+    verifyGateDescription: x
   } = (0, p.a1)(b.L0.NSFW_CHANNEL), v = i.useCallback(() => {
     null != t && c.Z.nsfwReturnToSafety(t.id)
   }, [t]), j = i.useCallback(() => {
@@ -44,8 +44,8 @@ function x(e) {
     onAgree: O,
     onDisagree: v,
     title: _.intl.string(_.t.ZmwvDQ),
-    description: C,
-    agreement: x,
+    description: x,
+    agreement: C,
     agreementButtonColor: s.zxk.Colors.BRAND,
     disagreement: _.intl.string(_.t["/g10LC"]),
     imageClassName: y.ageGatedImage
@@ -74,7 +74,7 @@ function x(e) {
     disagreement: _.intl.string(_.t["/g10LC"])
   })
 }
-let C = function(e) {
+let x = function(e) {
   let {
     guild: t,
     channelId: n,
@@ -90,7 +90,7 @@ let C = function(e) {
     className: y.scroller,
     children: (0, r.jsx)("div", {
       className: o()(l, y.wrapper),
-      children: (0, r.jsx)(x, {
+      children: (0, r.jsx)(C, {
         guild: t,
         channelId: n
       })

@@ -1,41 +1,41 @@
-/** Chunk was on 68567 **/
+/** Chunk was on 88235 **/
 t.d(n, {
   Z: () => f
 }), t(953529), t(997841);
-var i = t(200651);
+var l = t(200651);
 t(192379);
-var o = t(597312),
-  l = t(442837),
-  r = t(481060),
+var r = t(597312),
+  i = t(442837),
+  o = t(481060),
   s = t(860719),
   a = t(621853),
-  c = t(388032),
-  d = t(989421);
+  d = t(388032),
+  c = t(989421);
 
 function u(e) {
   let {
     icon: n,
     title: t,
-    description: o
+    description: r
   } = e;
-  return (0, i.jsxs)("div", {
-    className: d.row,
-    children: [(0, i.jsx)("div", {
-      className: d.rowIcon,
-      children: (0, i.jsx)(n, {
+  return (0, l.jsxs)("div", {
+    className: c.row,
+    children: [(0, l.jsx)("div", {
+      className: c.rowIcon,
+      children: (0, l.jsx)(n, {
         size: "custom",
         width: 20,
         height: 20,
         color: "currentColor"
       })
-    }), (0, i.jsxs)("div", {
-      className: d.rowText,
-      children: [(0, i.jsx)(r.X6q, {
+    }), (0, l.jsxs)("div", {
+      className: c.rowText,
+      children: [(0, l.jsx)(o.X6q, {
         variant: "text-xs/semibold",
         children: t
-      }), (0, i.jsx)(r.Text, {
+      }), (0, l.jsx)(o.Text, {
         variant: "text-sm/normal",
-        children: o
+        children: r
       })]
     })]
   })
@@ -44,34 +44,34 @@ function u(e) {
 function f(e) {
   let {
     user: n
-  } = e, t = (0, l.e7)([a.Z], () => {
+  } = e, t = (0, i.e7)([a.Z], () => {
     var e;
     return null == (e = a.Z.getUserProfile(n.id)) ? void 0 : e.application
   }), {
     hasMessageContent: f,
-    hasGuildPresences: p,
-    hasGuildMembers: m
+    hasGuildPresences: h,
+    hasGuildMembers: p
   } = (0, s.w)({
     flags: null == t ? void 0 : t.flags
   });
-  return (0, i.jsxs)(o.zJ, {
+  return (0, l.jsxs)(r.zJ, {
     fade: !0,
-    className: d.scroller,
-    children: [f && (0, i.jsx)(u, {
-      icon: r.kBi,
-      title: c.intl.string(c.t["7Tmhfn"]),
-      description: c.intl.string(c.t["eu5x7+"])
-    }), p && (0, i.jsx)(u, {
-      icon: r.iWm,
-      title: c.intl.string(c.t.awYSsL),
-      description: c.intl.string(c.t.TpsXoK)
-    }), m && (0, i.jsx)(u, {
-      icon: r.BFJ,
-      title: c.intl.string(c.t.WuKeSE),
-      description: c.intl.string(c.t.wOBmtb)
-    }), (0, i.jsx)(r.Text, {
+    className: c.scroller,
+    children: [f && (0, l.jsx)(u, {
+      icon: o.kBi,
+      title: d.intl.string(d.t["7Tmhfn"]),
+      description: d.intl.string(d.t["eu5x7+"])
+    }), h && (0, l.jsx)(u, {
+      icon: o.iWm,
+      title: d.intl.string(d.t.awYSsL),
+      description: d.intl.string(d.t.TpsXoK)
+    }), p && (0, l.jsx)(u, {
+      icon: o.BFJ,
+      title: d.intl.string(d.t.WuKeSE),
+      description: d.intl.string(d.t.wOBmtb)
+    }), (0, l.jsx)(o.Text, {
       variant: "text-xs/normal",
-      children: c.intl.format(c.t.b6nqk5, {
+      children: d.intl.format(d.t.b6nqk5, {
         helpCenterUrl: "https://support.discord.com/hc/articles/7933951485975"
       })
     })]

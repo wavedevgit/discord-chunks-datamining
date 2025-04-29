@@ -8,8 +8,8 @@ var r = n(200651),
   o = n(192379),
   a = n(120356),
   i = n.n(a),
-  l = n(477660),
-  s = n.n(l),
+  s = n(477660),
+  l = n.n(s),
   c = n(481060),
   u = n(37234),
   d = n(230711),
@@ -37,7 +37,7 @@ function h(e) {
   }
   return e
 }
-let _ = s().defaultRules.link,
+let _ = l().defaultRules.link,
   y = {
     section: f.jXE.SETTINGS_CHANGELOG
   },
@@ -47,8 +47,8 @@ let _ = s().defaultRules.link,
       children: n,
       className: r = null,
       styleSheet: a = {}
-    } = e, l = (0, c.xSt)(), s = parseInt(t, 10), u = isNaN(s) ? 1 : s;
-    return o.createElement("h".concat(l + u - 1), {
+    } = e, s = (0, c.xSt)(), l = parseInt(t, 10), u = isNaN(l) ? 1 : l;
+    return o.createElement("h".concat(s + u - 1), {
       className: i()(...null == r ? [] : r.split(" ").map(e => a[e]))
     }, n)
   },
@@ -58,13 +58,13 @@ let _ = s().defaultRules.link,
       parse(e, t, n) {
         var r, o;
         let a, i = e[2],
-          l = i.startsWith("https://discordapp.com/nitro") || i.startsWith("https://discord.com/nitro"),
-          s = i.startsWith("https://discordapp.com/hypesquad") || i.startsWith("https://discord.com/hypesquad"),
+          s = i.startsWith("https://discordapp.com/nitro") || i.startsWith("https://discord.com/nitro"),
+          l = i.startsWith("https://discordapp.com/hypesquad") || i.startsWith("https://discord.com/hypesquad"),
           p = i.startsWith("/shop/fullscreen?source=1") || i.startsWith("/activities");
-        return a = l || s ? e => {
+        return a = s || l ? e => {
           m.default.track(f.rMx.PREMIUM_PROMOTION_OPENED, {
             location: y
-          }), l ? d.Z.open(f.oAB.PREMIUM) : s && d.Z.open(f.oAB.HYPESQUAD_ONLINE), n.changeLog.track(f.rMx.CHANGE_LOG_CTA_CLICKED, {
+          }), s ? d.Z.open(f.oAB.PREMIUM) : l && d.Z.open(f.oAB.HYPESQUAD_ONLINE), n.changeLog.track(f.rMx.CHANGE_LOG_CTA_CLICKED, {
             cta_type: "nitro"
           }), (0, c.Mr3)(b.Xd), e.preventDefault()
         } : p ? e => {
@@ -88,7 +88,7 @@ let _ = s().defaultRules.link,
         }), r
       },
       react: (e, t, n) => (0, r.jsx)(c.eee, {
-        href: s().sanitizeUrl(e.target),
+        href: l().sanitizeUrl(e.target),
         title: e.title,
         onClick: e.callToAction,
         target: "_blank",

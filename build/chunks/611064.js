@@ -1,4 +1,4 @@
-/** Chunk was on 30745 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   R: () => b,
   Z: () => _
@@ -28,8 +28,8 @@ let _ = i.memo(function(e) {
       expanded: _,
       expandedCount: y
     } = e,
-    x = (0, l.e7)([u.Z], () => u.Z.hidden),
-    C = i.useCallback(e => {
+    C = (0, l.e7)([u.Z], () => u.Z.hidden),
+    x = i.useCallback(e => {
       (0, a.jW)(e, async () => {
         let {
           MemberListContentSettingsMenu: e
@@ -48,9 +48,9 @@ let _ = i.memo(function(e) {
       })
     }), (0, r.jsxs)(o.P3F, {
       onClick: e => {
-        if (e.currentTarget === e.target || e.currentTarget.contains(e.target)) return x ? (0, c.lY)() : y > 3 ? b() : (0, h.dG4)()
+        if (e.currentTarget === e.target || e.currentTarget.contains(e.target)) return C ? (0, c.lY)() : y > 3 ? b() : (0, h.dG4)()
       },
-      onContextMenu: C,
+      onContextMenu: x,
       tag: "span",
       "aria-hidden": !0,
       className: m.headerContainer,
@@ -59,7 +59,7 @@ let _ = i.memo(function(e) {
         children: [(0, r.jsxs)("span", {
           children: [p, " — ", y]
         }), (0, r.jsx)(d.Z, {})]
-      }), y <= 3 && !x ? null : (t = x ? (0, r.jsx)(o.u04, {
+      }), y <= 3 && !C ? null : (t = C ? (0, r.jsx)(o.u04, {
         className: m.toggleExpandIcon
       }) : _ ? (0, r.jsx)(o.CJ0, {
         className: m.toggleExpandIcon

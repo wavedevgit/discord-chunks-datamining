@@ -1,4 +1,4 @@
-/** Chunk was on 30745 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => Z
 });
@@ -20,8 +20,8 @@ var i = n(442837),
   b = n(78806),
   _ = n(91433),
   y = n(900927),
-  x = n(944043),
-  C = n(678738),
+  C = n(944043),
+  x = n(678738),
   v = n(502762),
   j = n(530),
   O = n(827313),
@@ -83,7 +83,7 @@ function Z(e) {
         applicationId: e.applicationId,
         channelId: N.id
       })
-    }, e.applicationId)), (0, r.jsx)(x.Z, {
+    }, e.applicationId)), (0, r.jsx)(C.Z, {
       user: t,
       className: S.card
     }), t.isProvisional && (0, r.jsx)(a.wQ, {
@@ -96,7 +96,7 @@ function Z(e) {
       className: S.card
     }), (0, r.jsxs)(v.Z.Overlay, {
       className: S.overlay,
-      children: [!L && (null == Z ? void 0 : Z.bio) != null && (null == Z ? void 0 : Z.bio) !== "" && (0, r.jsx)(C.Z, {
+      children: [!L && (null == Z ? void 0 : Z.bio) != null && (null == Z ? void 0 : Z.bio) !== "" && (0, r.jsx)(x.Z, {
         heading: P.intl.string(P.t["61W33d"]),
         headingColor: "header-primary",
         children: (0, r.jsx)(f.Z, {
@@ -109,13 +109,13 @@ function Z(e) {
         applicationId: D.id,
         commandIds: D.popularApplicationCommandIds,
         channel: N
-      }), M.length > 0 && (0, r.jsx)(C.Z, {
+      }), M.length > 0 && (0, r.jsx)(x.Z, {
         heading: P.intl.string(P.t["Uv/eT0"]),
         headingColor: "header-primary",
         children: (0, r.jsx)(b.Z, {
           applicationIds: M
         })
-      }), (0, r.jsx)(C.Z, {
+      }), (0, r.jsx)(x.Z, {
         heading: t.bot ? P.intl.string(P.t["A//N4u"]) : P.intl.string(P.t.a6XYDw),
         headingColor: "header-primary",
         children: (0, r.jsx)(y.Z, {

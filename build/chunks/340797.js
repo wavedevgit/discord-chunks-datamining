@@ -8,8 +8,8 @@ n(192379);
 var o = n(481060),
   a = n(946273),
   i = n(441110),
-  l = n(388032),
-  s = n(374701);
+  s = n(388032),
+  l = n(374701);
 
 function c(e) {
   let {
@@ -40,7 +40,7 @@ function c(e) {
         onClick: t,
         tag: "span",
         children: (0, r.jsx)(o.ua7, {
-          text: l.intl.string(l.t["v/OYd3"]),
+          text: s.intl.string(s.t["v/OYd3"]),
           children: e => {
             var t, n;
             return (0, r.jsx)("div", (t = function(e) {
@@ -61,7 +61,7 @@ function c(e) {
               }
               return e
             }({
-              className: s.newMemberBadge
+              className: l.newMemberBadge
             }, e), n = n = {
               children: (0, r.jsx)(o.hg2, {
                 size: "custom",

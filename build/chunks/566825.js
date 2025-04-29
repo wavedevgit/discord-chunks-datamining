@@ -1,4 +1,4 @@
-/** Chunk was on 95701 **/
+/** Chunk was on 80993 **/
 e.exports = {
   connectedAccountVanityMetadata: "connectedAccountVanityMetadata_fffe42",
   connectedAccountVanityMetadataTag: "connectedAccountVanityMetadataTag_fffe42",

@@ -1,4 +1,4 @@
-/** Chunk was on 68567 **/
+/** Chunk was on 24800 **/
 e.exports = {
   scroller: "scroller__95bea",
   row: "row__95bea",

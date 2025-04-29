@@ -45,7 +45,7 @@ function h(e) {
         disabled: O.disabled,
         submitting: O.loading,
         size: i.PhG.TINY,
-        themeColor: "none",
+        themeColor: "secondary",
         onClick: S
       })
     }), (0, r.jsx)(i.DY3, {
@@ -55,7 +55,7 @@ function h(e) {
         disabled: v.disabled,
         submitting: v.loading,
         size: i.PhG.TINY,
-        themeColor: "none",
+        themeColor: "secondary",
         onClick: I
       })
     })]

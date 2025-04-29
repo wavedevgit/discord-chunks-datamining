@@ -1,4 +1,4 @@
-/** Chunk was on 30745 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => g
 });
@@ -23,16 +23,16 @@ function g(e) {
     onClick: n
   } = e, g = (0, o.bp)(), b = (0, f.qY)(t), _ = (0, i.e7)([u.Z], () => u.Z.getChannel(t), [t]), {
     canManageGuildEvent: y
-  } = (0, a.XJ)(_), x = y(b);
+  } = (0, a.XJ)(_), C = y(b);
   if (null == b) return null;
-  let C = () => {
+  let x = () => {
       if (null != _ && (0, h.Z)(_)) return void(0, d.lC)(_, g);
       n()
     },
     v = () => {
       p.Z.endEvent(b.id, b.guild_id)
     };
-  return x ? (0, r.jsx)(l.yRy, {
+  return C ? (0, r.jsx)(l.yRy, {
     renderPopout: e => {
       let {
         closePopout: t
@@ -62,7 +62,7 @@ function g(e) {
       } = e;
       return (0, r.jsx)(c.Z, {
         label: m.intl.string(m.t["6vrfgo"]),
-        onClick: C,
+        onClick: x,
         onPopoutClick: t
       })
     }

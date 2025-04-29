@@ -1,4 +1,4 @@
-/** Chunk was on 30745 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => E
 }), n(997841), n(388685);
@@ -19,8 +19,8 @@ var r = n(200651),
   b = n(838440),
   _ = n(930282),
   y = n(955384),
-  x = n(981631),
-  C = n(30804);
+  C = n(981631),
+  x = n(30804);
 
 function v(e) {
   let {
@@ -44,7 +44,7 @@ function j(e) {
     id: s
   } = t, {
     id: c
-  } = n, m = t.getGuildId(), b = (0, l.e7)([h.Z], () => h.Z.getGuild(m), [m]), _ = t.type === x.d4z.GUILD_ANNOUNCEMENT, j = null != b && b.hasFeature(x.oNc.NEWS), E = _ && j, {
+  } = n, m = t.getGuildId(), b = (0, l.e7)([h.Z], () => h.Z.getGuild(m), [m]), _ = t.type === C.d4z.GUILD_ANNOUNCEMENT, j = null != b && b.hasFeature(C.oNc.NEWS), E = _ && j, {
     editingMessage: I,
     editingTextValue: P,
     editingRichValue: S
@@ -55,8 +55,8 @@ function j(e) {
   }), [s]), Z = (0, l.e7)([d.default], () => d.default.getId()), N = i.useCallback((e, n, r) => {
     let {
       content: i
-    } = r, l = f.Z.can(x.Plq.MANAGE_MESSAGES, t), s = null != I && null != I.author ? I.author.id : null;
-    return E && (s === Z || l) && null != I && (0, g.yE)(I.flags, x.iLy.CROSSPOSTED) ? a.Z.confirmEdit(e, n, i) : o.Z.editMessage(e, n, {
+    } = r, l = f.Z.can(C.Plq.MANAGE_MESSAGES, t), s = null != I && null != I.author ? I.author.id : null;
+    return E && (s === Z || l) && null != I && (0, g.yE)(I.flags, C.iLy.CROSSPOSTED) ? a.Z.confirmEdit(e, n, i) : o.Z.editMessage(e, n, {
       content: i
     }), Promise.resolve()
   }, [I, E, Z, t]), T = i.useCallback(e => {
@@ -79,7 +79,7 @@ function j(e) {
       }
       return e
     }({}, e), n = n = {
-      className: C.channelTextArea,
+      className: x.channelTextArea,
       key: c
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -119,10 +119,10 @@ function O(e) {
     onKeyDown: d,
     renderLeftAccessories: p
   } = e, [h, f] = i.useState(!0), g = i.useCallback(() => f(!0), []), b = i.useCallback(() => f(!1), []);
-  return i.useEffect(() => (m.S.subscribe(x.CkL.TEXTAREA_FOCUS, g), m.S.subscribe(x.CkL.TEXTAREA_BLUR, b), () => {
-    m.S.unsubscribe(x.CkL.TEXTAREA_FOCUS, g), m.S.unsubscribe(x.CkL.TEXTAREA_BLUR, b)
+  return i.useEffect(() => (m.S.subscribe(C.CkL.TEXTAREA_FOCUS, g), m.S.subscribe(C.CkL.TEXTAREA_BLUR, b), () => {
+    m.S.unsubscribe(C.CkL.TEXTAREA_FOCUS, g), m.S.unsubscribe(C.CkL.TEXTAREA_BLUR, b)
   }), [g, b]), (0, r.jsx)(c.Z, {
-    className: C.channelTextArea,
+    className: x.channelTextArea,
     textValue: t,
     richValue: n,
     channel: o,

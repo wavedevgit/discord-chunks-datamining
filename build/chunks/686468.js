@@ -1,4 +1,4 @@
-/** Chunk was on 30745 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => P
 });
@@ -19,8 +19,8 @@ var r = n(200651),
   b = n(546247),
   _ = n(496675),
   y = n(146085),
-  x = n(979339),
-  C = n(643632),
+  C = n(979339),
+  x = n(643632),
   v = n(939863),
   j = n(388032),
   O = n(941188);
@@ -55,7 +55,7 @@ function I(e) {
   } = e, {
     participants: n,
     usersInSummary: i
-  } = (0, x.Z)(t.id);
+  } = (0, C.Z)(t.id);
   return (0, r.jsxs)("div", {
     className: O.audienceSummary,
     children: [(0, r.jsx)(u.Z, {
@@ -92,9 +92,9 @@ function P(e) {
     onContinueClick: n
   } = e, l = (0, a.e7)([_.Z], () => _.Z.can(y.yP, t), [t]), s = (0, d.Q3)("StartStageChannelCallView"), u = t.guild_id, {
     canCreateGuildEvent: p
-  } = (0, g.XJ)(t), P = (0, C.Z)(t.id), {
+  } = (0, g.XJ)(t), P = (0, x.Z)(t.id), {
     usersInSummary: S
-  } = (0, x.Z)(t.id), Z = (0, c._q$)("StartStageChannelCallView"), N = i.useRef(null);
+  } = (0, C.Z)(t.id), Z = (0, c._q$)("StartStageChannelCallView"), N = i.useRef(null);
   return (0, r.jsxs)("div", {
     className: o()(O.container, {
       [O.withRive]: Z

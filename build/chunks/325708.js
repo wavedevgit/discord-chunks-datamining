@@ -1,4 +1,4 @@
-/** Chunk was on 30745 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => _,
   y: () => g
@@ -61,7 +61,7 @@ function _(e) {
       case 5:
         return "callParticipantsSidebarWidth"
     }
-  }(t), [y, x] = l.useState(h.ZP[_]), C = l.useCallback(e => {
+  }(t), [y, C] = l.useState(h.ZP[_]), x = l.useCallback(e => {
     d.ZP.updatedUnsyncedSettings({
       [_]: e
     })
@@ -93,8 +93,8 @@ function _(e) {
           minWidth: v,
           maxWidth: n,
           resizableNode: g,
-          onResize: x,
-          onResizeEnd: C
+          onResize: C,
+          onResizeEnd: x
         }), (0, i.jsx)("div", {
           ref: g,
           className: a()(m.container, {

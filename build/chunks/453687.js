@@ -2,9 +2,9 @@
 "use strict";
 n.d(t, {
   Dv: () => c,
-  Gq: () => l,
+  Gq: () => s,
   Gx: () => g,
-  XX: () => s,
+  XX: () => l,
   bX: () => d,
   bY: () => u,
   iG: () => p,
@@ -18,11 +18,11 @@ function i(e) {
   return "message-content-".concat(e.id)
 }
 
-function l(e) {
+function s(e) {
   return "message-reply-context-".concat(e.id)
 }
 
-function s(e, t) {
+function l(e, t) {
   let n = null != t ? t : e.id;
   return "message-username-".concat(n)
 }
@@ -51,8 +51,8 @@ function p(e, t, n) {
     y = e.type !== a.uaV.DEFAULT || !_ && "" !== e.content,
     v = (0, o.Z)(e),
     O = !v && (null == n ? void 0 : n.hasTimestamp) !== !1,
-    j = s(e, t),
-    x = l(e),
+    j = l(e, t),
+    x = s(e),
     C = v ? "" : "".concat(u ? x : j, " ").concat(r.Z0);
   if (y) {
     let t = i(e);

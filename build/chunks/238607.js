@@ -125,7 +125,7 @@ function A(e) {
       submitting: L,
       size: N === b.lY.MODAL_V2 ? a.PhG.TINY : void 0,
       fullWidth: N !== b.lY.MODAL_V2,
-      themeColor: N === b.lY.MODAL_V2 ? "none" : void 0,
+      themeColor: N === b.lY.MODAL_V2 ? "secondary" : void 0,
       onClick: e => {
         e.stopPropagation(), null == O || O({
           action: "PRESS_JOIN_BUTTON"
@@ -141,7 +141,7 @@ function A(e) {
       submitting: L,
       size: N === b.lY.MODAL_V2 ? a.PhG.TINY : void 0,
       fullWidth: N !== b.lY.MODAL_V2,
-      themeColor: N === b.lY.MODAL_V2 ? "none" : void 0,
+      themeColor: N === b.lY.MODAL_V2 ? "secondary" : void 0,
       onClick: e => {
         e.stopPropagation(), null == O || O({
           action: "PRESS_ASK_TO_JOIN_BUTTON"

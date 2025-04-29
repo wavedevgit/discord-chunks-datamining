@@ -1,4 +1,4 @@
-/** Chunk was on 30745 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => m
 }), n(35282);
@@ -25,8 +25,8 @@ function m(e) {
     comparator: b,
     selected: _,
     checked: y,
-    onClick: x,
-    onMouseEnter: C,
+    onClick: C,
+    onMouseEnter: x,
     "aria-setsize": v,
     "aria-posinset": j
   } = e, O = (0, a.e7)([p.Z], () => p.Z.getStatus(i.id)), E = (0, o.JA)(String(i.id));
@@ -51,10 +51,10 @@ function m(e) {
     id: "user-row-".concat(m),
     className: f.friendWrapper,
     onClick: () => {
-      null != x && x(i.id)
+      null != C && C(i.id)
     },
     onMouseEnter: () => {
-      null != C && C(m)
+      null != x && x(m)
     }
   }, E), n = n = {
     role: "option",

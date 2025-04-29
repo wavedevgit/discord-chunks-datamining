@@ -1,4 +1,4 @@
-/** Chunk was on 30745 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => R
 });
@@ -19,8 +19,8 @@ var r = n(200651),
   b = n(510659),
   _ = n(892001),
   y = n(113557),
-  x = n(867176),
-  C = n(451834),
+  C = n(867176),
+  x = n(451834),
   v = n(502762),
   j = n(952124),
   O = n(544989),
@@ -107,13 +107,13 @@ function R(e) {
               })]
             }), (0, r.jsxs)("header", {
               className: A.header,
-              children: [(0, r.jsx)(x.Z, {
+              children: [(0, r.jsx)(C.Z, {
                 user: t,
                 displayProfile: M,
                 themeType: N.lY.SIDEBAR,
                 animateOnHover: !F,
                 className: A.banner
-              }), (0, r.jsx)(C.Z, {
+              }), (0, r.jsx)(x.Z, {
                 userId: t.id,
                 className: A.toast
               }), (0, r.jsx)(y.Z, {

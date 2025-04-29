@@ -1,4 +1,4 @@
-/** Chunk was on 30745 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Y: () => _
 }), n(388685);
@@ -53,9 +53,9 @@ function _(e) {
     channelId: t,
     warningId: _,
     senderId: y
-  } = e, x = i.useCallback(() => {
+  } = e, C = i.useCallback(() => {
     (0, u.T)(t, [_])
-  }, [t, _]), C = (0, o.e7)([c.Z], () => c.Z.isBlocked(y)), v = i.useMemo(() => ({
+  }, [t, _]), x = (0, o.e7)([c.Z], () => c.Z.isBlocked(y)), v = i.useMemo(() => ({
     channelId: t,
     warningId: _,
     senderId: y,
@@ -97,11 +97,11 @@ function _(e) {
       }), j(p.NM.USER_BANNER_OPEN_SAFETY_TOOLS)
     }, [t, y, _, j]),
     E = i.useCallback(() => {
-      x(), j(p.NM.USER_BANNER_BLOCK_CONFIRM)
-    }, [x, j]),
+      C(), j(p.NM.USER_BANNER_BLOCK_CONFIRM)
+    }, [C, j]),
     I = i.useCallback(() => {
-      x(), j(p.NM.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
-    }, [x, j]),
+      C(), j(p.NM.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
+    }, [C, j]),
     P = i.useCallback(() => {
       (0, a.ZDy)(async () => {
         let {
@@ -133,12 +133,12 @@ function _(e) {
     warningType: d.pj.INAPPROPRIATE_CONVERSATION_TIER_2,
     header: m.intl.string(m.t.ZzlB5u),
     description: m.intl.string(m.t["D1aU+v"]),
-    onDismiss: x,
+    onDismiss: C,
     buttons: [{
       text: m.intl.string(m.t.Qyu4UF),
       color: a.zxk.Colors.BRAND,
       onclick: O
-    }, ...C ? [] : [{
+    }, ...x ? [] : [{
       text: m.intl.string(m.t["7q0bNT"]),
       color: a.zxk.Colors.PRIMARY,
       onclick: P

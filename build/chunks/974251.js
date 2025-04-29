@@ -1,4 +1,4 @@
-/** Chunk was on 30745 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => F
 }), n(388685), n(415506);
@@ -19,8 +19,8 @@ var r = n(200651),
   b = n(540059),
   _ = n(605236),
   y = n(536442),
-  x = n(79390),
-  C = n(216789),
+  C = n(79390),
+  x = n(216789),
   v = n(665906),
   j = n(695346),
   O = n(433355),
@@ -120,12 +120,12 @@ let F = i.memo(function(e) {
   let em = (0, v.NE)(H),
     eg = (0, v.Xu)(H),
     eb = !j.dN.useSetting() && !(0, N.isAndroidWeb)() && null != window.ResizeObserver,
-    e_ = (0, x.UI)(null != H ? H : void 0),
+    e_ = (0, C.UI)(null != H ? H : void 0),
     ey = (0, h.qB)(),
-    ex = (0, C.Us)({
+    eC = (0, x.Us)({
       location: "ChannelAttachButton"
     }),
-    eC = null != (l = null == $ ? void 0 : $.length) ? l : 0,
+    ex = null != (l = null == $ ? void 0 : $.length) ? l : 0,
     ev = (0, R.Z)({
       canAttachFiles: eu,
       canStartThreads: em || eg,
@@ -134,11 +134,11 @@ let F = i.memo(function(e) {
       canUseApplicationCommands: !Y,
       channel: H,
       activities: X,
-      newClipsCount: eC,
+      newClipsCount: ex,
       canPostPolls: e_,
       canLaunchActivities: ey,
       appContext: q,
-      canSendScheduledMessages: ex
+      canSendScheduledMessages: eC
     }),
     ej = (0, b.Q3)("ChannelAttachButton"),
     eO = (0, b.R6)("ChannelAttachButton");

@@ -1,25 +1,25 @@
-/** Chunk was on 68567 **/
-t.d(n, {
-  Y: () => c
+/** Chunk was on 94989 **/
+n.d(t, {
+  Y: () => o
 });
-var i = t(192379),
-  o = t(442837),
-  l = t(699516),
-  r = t(594174),
-  s = t(320582);
-let a = [];
+var r = n(192379),
+  l = n(442837),
+  s = n(699516),
+  i = n(594174),
+  a = n(320582);
+let c = [];
 
-function c(e) {
+function o(e) {
   let {
-    userId: n
-  } = e, t = (0, o.e7)([l.Z, r.default], () => {
+    userId: t
+  } = e, n = (0, l.e7)([s.Z, i.default], () => {
     var e;
-    return l.Z.isFriend(n) || (null == (e = r.default.getUser(n)) ? void 0 : e.isProvisional)
-  }), c = (0, s.ML)(n);
-  return i.useMemo(() => t ? a : c.map(e => {
+    return s.Z.isFriend(t) || (null == (e = i.default.getUser(t)) ? void 0 : e.isProvisional)
+  }), o = (0, a.ML)(t);
+  return r.useMemo(() => n ? c : o.map(e => {
     let {
-      applicationId: n
+      applicationId: t
     } = e;
-    return n
-  }), [c, t])
+    return t
+  }), [o, n])
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 30745 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => y
 }), n(539854);
@@ -38,12 +38,12 @@ function y(e) {
     }
     return i
   }(e, ["channelId", "className"]);
-  let x = i.useRef(null),
-    C = (0, o.e7)([f.ZP], () => f.ZP.getFocusedLayout() === m.MI.RESIZABLE),
+  let C = i.useRef(null),
+    x = (0, o.e7)([f.ZP], () => f.ZP.getFocusedLayout() === m.MI.RESIZABLE),
     v = i.useCallback(() => {
-      let e = C ? m.MI.NO_CHAT : m.MI.RESIZABLE;
+      let e = x ? m.MI.NO_CHAT : m.MI.RESIZABLE;
       (0, h.gC)(e)
-    }, [C]),
+    }, [x]),
     {
       unreadCount: j,
       mentionCount: O
@@ -64,13 +64,13 @@ function y(e) {
     }(t),
     E = i.useCallback(() => {
       var e;
-      null == (e = x.current) || e.focus()
+      null == (e = C.current) || e.focus()
     }, []);
   (0, p.yp)({
     event: g.CkL.FOCUS_CHAT_BUTTON,
     handler: E
   });
-  let I = C ? b.intl.string(b.t["5MstTk"]) : b.intl.string(b.t.kkKapK),
+  let I = x ? b.intl.string(b.t["5MstTk"]) : b.intl.string(b.t.kkKapK),
     P = [I];
   O > 0 && P.push(b.intl.formatToPlainString(b.t["3l1GOz"], {
     mentionCount: O
@@ -98,7 +98,7 @@ function y(e) {
       }
       return e
     }({
-      buttonRef: x,
+      buttonRef: C,
       onClick: v,
       label: I,
       "aria-label": P.join(", "),

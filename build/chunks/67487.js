@@ -1,4 +1,4 @@
-/** Chunk was on 95701 **/
+/** Chunk was on 24800 **/
 e.exports = {
   guildAvatar: "guildAvatar_aafe31",
   guildAvatarWithoutIcon: "guildAvatarWithoutIcon_aafe31",

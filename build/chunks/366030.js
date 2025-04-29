@@ -7,8 +7,8 @@ var r = n(200651),
   o = n(192379),
   a = n(512722),
   i = n.n(a),
-  l = n(392711),
-  s = n.n(l),
+  s = n(392711),
+  l = n.n(s),
   c = n(442837),
   u = n(692547),
   d = n(780384),
@@ -61,23 +61,23 @@ function A(e) {
     connectionMetadataField: o,
     operator: a,
     value: i,
-    description: l
+    description: s
   } = e;
-  if (null != l) switch (a) {
+  if (null != s) switch (a) {
     case k.iO.LESS_THAN:
       t = R.intl.format(R.t["2p7dAw"], {
-        description: l,
+        description: s,
         count: Math.max(0, Number(i) - 1)
       });
       break;
     case k.iO.GREATER_THAN:
       t = R.intl.format(R.t["2p7dAw"], {
-        description: l,
+        description: s,
         count: Math.max(0, Number(i) + 1)
       });
       break;
     default:
-      t = l
+      t = s
   } else t = (0, C.n_)({
     connectionType: n,
     connectionMetadataField: o,
@@ -101,21 +101,21 @@ function A(e) {
 function D(e) {
   let {
     eligibilityStates: t
-  } = e, n = (0, f.ZP)(), o = (0, p.dQu)(u.Z.unsafe_rawColors.GREEN_330).hex(), a = s().groupBy(t, e => "".concat(e.connection_type).concat(null != e.application_id ? ":".concat(e.application_id) : ""));
+  } = e, n = (0, f.ZP)(), o = (0, p.dQu)(u.Z.unsafe_rawColors.GREEN_330).hex(), a = l().groupBy(t, e => "".concat(e.connection_type).concat(null != e.application_id ? ":".concat(e.application_id) : ""));
   return (0, r.jsx)(r.Fragment, {
     children: Object.keys(a).map(e => {
-      var t, l;
-      let s, c = a[e],
+      var t, s;
+      let l, c = a[e],
         u = c.filter(e => null != e.operator),
         g = c.find(e => null != e.application),
         f = b.Z.get(e),
         h = null == g ? void 0 : g.application,
         _ = (null == h ? void 0 : h.bot) != null ? new O.Z(h.bot) : null;
-      return C.SJ.includes(null != (t = null == h ? void 0 : h.id) ? t : "") ? s = (0, r.jsx)(S.Z, {
+      return C.SJ.includes(null != (t = null == h ? void 0 : h.id) ? t : "") ? l = (0, r.jsx)(S.Z, {
         className: E.botTag,
         color: o,
         size: 16
-      }) : null != _ && (s = (0, r.jsx)(y.Z, {
+      }) : null != _ && (l = (0, r.jsx)(y.Z, {
         className: E.botTag,
         verified: _.isVerifiedBot()
       })), (0, r.jsxs)("div", {
@@ -133,22 +133,22 @@ function D(e) {
           }) : null, (0, r.jsx)(p.Text, {
             variant: "text-sm/medium",
             color: "interactive-active",
-            children: null != (l = null == f ? void 0 : f.name) ? l : null == h ? void 0 : h.name
-          }), s]
+            children: null != (s = null == f ? void 0 : f.name) ? s : null == h ? void 0 : h.name
+          }), l]
         }), u.map(e => {
           let {
             connection_type: t,
             connection_metadata_field: n,
             operator: o,
             value: a,
-            description: l
+            description: s
           } = e;
           return i()(null != n, "connectionMetadataField is null"), i()(null != o, "operator is null"), i()(null != a, "value is null"), (0, r.jsx)(A, {
             connectionType: t,
             connectionMetadataField: n,
             operator: o,
             value: a,
-            description: l
+            description: s
           }, "".concat(t, ":").concat(n, ":").concat(o, ":").concat(a))
         })]
       }, e)
@@ -161,21 +161,21 @@ function B(e) {
     onGetRolesClicked: n,
     onOpenProfile: a,
     eligibilityStates: i,
-    userId: l,
-    roleId: s,
+    userId: s,
+    roleId: l,
     channelId: u,
     guildId: d
   } = e;
   o.useEffect(() => {
     x.default.track(N.rMx.PASSPORT_ROLE_POPOUT_VIEWED, Z({
-      other_user_id: l,
-      role_id: s
+      other_user_id: s,
+      role_id: l
     }, (0, h.JS)(u), (0, h.hH)(d)))
-  }, [l, s, u, d]);
+  }, [s, l, u, d]);
   let g = (0, c.e7)([j.ZP], () => {
     var e, t;
-    return null != (t = null == (e = j.ZP.getSelfMember(d)) ? void 0 : e.roles.includes(s)) && t
-  }, [d, s]);
+    return null != (t = null == (e = j.ZP.getSelfMember(d)) ? void 0 : e.roles.includes(l)) && t
+  }, [d, l]);
   return t = 1 === i.length && 1 === i[0].length ? R.intl.string(R.t.jDym4O) : 1 === i.length ? R.intl.format(R.t["0eBj39"], {}) : R.intl.format(R.t.D7uftL, {}), (0, r.jsxs)("div", {
     className: E.popout,
     children: [(0, r.jsx)("div", {
@@ -212,10 +212,10 @@ function L(e) {
     userId: t,
     messageId: n,
     guild: a,
-    channel: l
+    channel: s
   } = e, {
-    analyticsLocations: s
-  } = (0, _.ZP)(), u = (0, T.Z)(a, t, l.id, !0), d = (0, c.e7)([P.Z], () => P.Z.getGuildRoleConnectionEligibility(null == u ? void 0 : u.id)), [m, f] = o.useState(null == d);
+    analyticsLocations: l
+  } = (0, _.ZP)(), u = (0, T.Z)(a, t, s.id, !0), d = (0, c.e7)([P.Z], () => P.Z.getGuildRoleConnectionEligibility(null == u ? void 0 : u.id)), [m, f] = o.useState(null == d);
   if (null == u) return null;
   async function b() {
     i()(null != u, "visibleConnectionsRole is null"), m && null == d && (await g.Z.fetchGuildRoleConnectionsEligibility(a.id, u.id), f(!1))
@@ -231,7 +231,7 @@ function L(e) {
           eligibilityStates: d,
           userId: t,
           roleId: u.id,
-          channelId: l.id,
+          channelId: s.id,
           guildId: a.id,
           onGetRolesClicked: () => {
             (0, I.Am)(a.id)
@@ -241,10 +241,10 @@ function L(e) {
               userId: t,
               messageId: n,
               guildId: a.id,
-              channelId: l.id,
+              channelId: s.id,
               roleId: u.id,
               subsection: M.Tb.CONNECTIONS,
-              sourceAnalyticsLocations: s
+              sourceAnalyticsLocations: l
             }), o()
           }
         }))

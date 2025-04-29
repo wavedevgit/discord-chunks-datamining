@@ -1,4 +1,4 @@
-/** Chunk was on 30745 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => V
 }), n(388685);
@@ -19,8 +19,8 @@ var r = n(200651),
   b = n(246364),
   _ = n(983736),
   y = n(937111),
-  x = n(270801),
-  C = n(652730),
+  C = n(270801),
+  x = n(652730),
   v = n(41776),
   j = n(657352),
   O = n(33154),
@@ -110,15 +110,15 @@ class H extends i.PureComponent {
       channelFollowingUsersSeen: g,
       showLurkerModeUpsellPopout: _,
       showMemberVerificationModal: y,
-      useReducedMotion: x,
-      isStaff: C,
+      useReducedMotion: C,
+      isStaff: x,
       guildJoinRequest: v
     } = this.props, {
       shouldShowLurkerModeUpsellPopout: j,
       shouldShowLurkerModeSuccessPopout: O
     } = this.state, E = {
       theme: h,
-      useReducedMotion: x
+      useReducedMotion: C
     };
     if (e && !m) {
       if (E.message = D.intl.string(D.t.Hl0Mqq), null != g && g >= 1e3) {
@@ -143,7 +143,7 @@ class H extends i.PureComponent {
           } = e;
           return t
         })
-    } else o && !C ? (E.message = D.intl.string(D.t["2dThMD"]), E.buttonText = D.intl.string(D.t["50gfOj"]), E.onButtonClick = this.handleVerifyPhone, E.imageSrc = n(98063)) : a ? (E.message = D.intl.string(D.t.FkGPS0), E.buttonText = D.intl.string(D.t.lm1UKi), E.onButtonClick = this.handleResendVerification, E.imageSrc = n(102811)) : c ? (E.message = D.intl.formatToPlainString(D.t.IH7RMD, {
+    } else o && !x ? (E.message = D.intl.string(D.t["2dThMD"]), E.buttonText = D.intl.string(D.t["50gfOj"]), E.onButtonClick = this.handleVerifyPhone, E.imageSrc = n(98063)) : a ? (E.message = D.intl.string(D.t.FkGPS0), E.buttonText = D.intl.string(D.t.lm1UKi), E.onButtonClick = this.handleResendVerification, E.imageSrc = n(102811)) : c ? (E.message = D.intl.formatToPlainString(D.t.IH7RMD, {
       min: M.YeM.MEMBER_AGE
     }), E.countdown = u) : d && (E.message = D.intl.formatToPlainString(D.t["2JA2GB"], {
       min: M.YeM.ACCOUNT_AGE
@@ -311,7 +311,7 @@ class H extends i.PureComponent {
         f.Z.ackUserGuildJoinRequest(e.id, t.joinRequestId)
       };
       return (0, r.jsx)(s.u_l, {
-        renderModal: t => (0, r.jsx)(x.Z, F(G({}, t), {
+        renderModal: t => (0, r.jsx)(C.Z, F(G({}, t), {
           onAccept: i,
           guildName: e.name
         })),
@@ -329,7 +329,7 @@ function V(e) {
   } = e, o = i.getGuildId(), s = (0, a.e7)([N.Z], () => N.Z.getGuild(o)), c = (0, a.e7)([T.Z], () => T.Z.getCheck(o)), u = i.type === M.d4z.GUILD_ANNOUNCEMENT && null != s && s.hasFeature(M.oNc.NEWS), d = (0, a.e7)([S.Z], () => u ? S.Z.getFollowerStatsForChannel(i.id) : null), h = (0, a.e7)([v.Z], () => v.Z.isLurking(o)), f = (0, a.e7)([w.default], () => w.default.getCurrentUser()), m = null != (t = null == f ? void 0 : f.isStaff()) && t, g = (0, a.e7)([Z.ZP], () => {
     var e, t;
     return null != f && null != (t = null == (e = Z.ZP.getMember(o, f.id)) ? void 0 : e.isPending) && t
-  }), x = !!(0, _.Dc)(s), j = (g || c.notClaimed) && x, O = (0, a.e7)([C.Z], () => C.Z.shouldShowPopout(o)), E = (0, a.e7)([A.Z], () => A.Z.can(M.Plq.SEND_MESSAGES, i)), I = (0, a.e7)([y.Z], () => y.Z.getRequest(o)), k = F(G({}, c), {
+  }), C = !!(0, _.Dc)(s), j = (g || c.notClaimed) && C, O = (0, a.e7)([x.Z], () => x.Z.shouldShowPopout(o)), E = (0, a.e7)([A.Z], () => A.Z.can(M.Plq.SEND_MESSAGES, i)), I = (0, a.e7)([y.Z], () => y.Z.getRequest(o)), k = F(G({}, c), {
     guild: s,
     isLurking: h,
     isFollowable: u,
@@ -338,7 +338,7 @@ function V(e) {
     theme: P.Z.theme,
     canSendMessages: E,
     channelFollowingUsersSeen: null != d ? d.usersSeenEver : null,
-    hasVerificationGate: x,
+    hasVerificationGate: C,
     showMemberVerificationModal: j,
     guildJoinRequestStatus: null != (n = null == I ? void 0 : I.applicationStatus) ? n : b.wB.STARTED,
     guildJoinRequest: I,

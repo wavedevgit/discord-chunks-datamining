@@ -1,6 +1,6 @@
-/** Chunk was on 30745 **/
+/** Chunk was on 3656 **/
 n.d(t, {
-  Y: () => x
+  Y: () => C
 }), n(388685);
 var r, i = n(200651),
   l = n(192379),
@@ -22,15 +22,15 @@ let b = ["embedded_cover"],
   };
 var y = ((r = y || {})[r.THIRTEEN_BY_ELEVEN = 0] = "THIRTEEN_BY_ELEVEN", r[r.SIXTEEN_BY_NINE = 1] = "SIXTEEN_BY_NINE", r);
 
-function x(e) {
+function C(e) {
   var t;
   let {
     context: n,
     activityItem: r,
     onClick: o,
     aspectRatio: y = 0,
-    animatedDivClass: x,
-    commandOrigin: C
+    animatedDivClass: C,
+    commandOrigin: x
   } = e, {
     onActivityItemSelected: v,
     imageBackground: j,
@@ -44,7 +44,7 @@ function x(e) {
     onActivityItemSelected: o,
     embeddedActivitiesManager: h.Z,
     assetNames: b,
-    commandOrigin: C
+    commandOrigin: x
   }), [I, P] = l.useState(!1), S = l.useCallback(() => {
     P(!0)
   }, [P]), Z = l.useCallback(() => {
@@ -113,7 +113,7 @@ function x(e) {
         return (0, i.jsx)(c.f6W, {
           theme: f.BRd.DARK,
           children: e => (0, i.jsxs)(s.animated.div, {
-            className: a()(e, g.activityItem, x, {
+            className: a()(e, g.activityItem, C, {
               [g.activityItem_13_11]: 0 === y,
               [g.activityItem_16_9]: 1 === y
             }),
@@ -132,4 +132,4 @@ function x(e) {
     })
   })
 }
-x.AspectRatio = y
+C.AspectRatio = y

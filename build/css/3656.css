@@ -1,6 +1,6 @@
 /**
   Module ID: 3656
-  Original File Name: 0d1026bf2a6f3434
+  Original File Name: ea3b642ce324192b
 **/
 .content__79cbe {
     border-radius: 8px;
@@ -441,22 +441,21 @@ strong {
 }
 
 :root {
-    --custom-channel-members-bg: var(--background-secondary)
-}
-
-.visual-refresh {
     --custom-channel-members-bg: var(--bg-base-secondary)
 }
 
 .container_c8ffbb {
     background: var(--bg-overlay-chat,var(--custom-channel-members-bg));
+    border-left: 1px solid var(--border-subtle);
+    flex-direction: column
+}
+
+.container_c8ffbb,.membersWrap_c8ffbb {
     display: flex;
-    flex-direction: column;
     height: 100%
 }
 
 .membersWrap_c8ffbb {
-    display: flex;
     max-height: 100%;
     min-width: var(--custom-member-list-width);
     position: relative
@@ -466,19 +465,10 @@ strong {
     background: var(--bg-overlay-chat,var(--custom-channel-members-bg));
     flex: 0 0 auto;
     height: auto;
-    padding: 0 0 20px;
-    width: var(--custom-member-list-width)
+    padding: 0 0 10px
 }
 
-.visual-refresh .container_c8ffbb {
-    border-left: 1px solid var(--border-subtle)
-}
-
-.visual-refresh .membersWrap_c8ffbb {
-    height: 100%
-}
-
-.membersListNotices_c8ffbb {
+.members_c8ffbb,.membersListNotices_c8ffbb {
     width: var(--custom-member-list-width)
 }
 
@@ -487,11 +477,6 @@ strong {
 }
 
 .membersGroup_c8ffbb {
-    height: 40px;
-    padding: 24px 8px 0 16px
-}
-
-.visual-refresh .membersGroup_c8ffbb {
     height: auto;
     padding: var(--space-lg) var(--space-xxs) var(--space-xxs) var(--space-md)
 }
@@ -956,15 +941,19 @@ strong {
     padding-left: 64px
 }
 
-.modalContent__46773 {
+.modal__46773 {
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    padding-bottom: 12px;
-    padding-top: 24px
+    gap: var(--space-xl);
+    padding: var(--space-xl)
+}
+
+.modalContent__46773 {
+    display: contents
 }
 
 .header__46773 {
+    padding: unset;
     text-align: center
 }
 
@@ -1026,26 +1015,33 @@ strong {
 .iconPlaceholder__46773 {
     align-items: center;
     background-color: var(--bg-mod-subtle);
-    border: 1px dashed var(--bg-mod-strong);
-    border-radius: 50%;
     color: var(--interactive-muted);
     display: flex;
+    justify-content: center
+}
+
+.iconImage__46773,.iconPlaceholder__46773 {
+    border-radius: 50%;
     height: 100%;
-    justify-content: center;
     width: 100%
 }
 
 .iconImage__46773 {
-    border-radius: 50%;
-    height: 100%;
-    object-fit: cover;
-    width: 100%
+    object-fit: cover
 }
 
-.closeButtonWrapper__46773 {
+.closeButton__46773 {
+    padding: 0;
     position: absolute;
-    right: 12px;
-    top: 12px
+    right: 0;
+    top: 0
+}
+
+.footer__46773 {
+    border-radius: unset;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0
 }
 
 .cancelButton__46773 {
@@ -7271,6 +7267,53 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     min-height: var(--custom-channel-textarea-text-area-height)
 }
 
+.channelAppLauncherWordlePromo__23128 .lottieAnimationControllerFill {
+    fill: var(--interactive-normal)
+}
+
+.animationContainer__23128 {
+    max-height: 24px;
+    max-width: 24px
+}
+
+.visual-refresh .animationContainer__23128 {
+    max-height: 20px;
+    max-width: 20px
+}
+
+.visual-refresh-chat-input .animationContainer__23128 {
+    max-height: 22px;
+    max-width: 22px
+}
+
+.indicatorDotDuringAnimation__23128 {
+    opacity: 0
+}
+
+.indicatorDotAfterAnimation__23128 {
+    opacity: 1
+}
+
+.full-motion .activityIndicatorAnimation__23128 {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-name: activityIndicatorEaseOut__23128;
+    animation-timing-function: ease-in-out
+}
+
+@keyframes activityIndicatorEaseOut__23128 {
+    0% {
+        opacity: 0;
+        transform: scale(2) translate(-25%,25%)
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translate(0)
+    }
+}
+
 .buttonContainer_e6e74f {
     margin-top: auto
 }
@@ -7312,10 +7355,6 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .visual-refresh .appLauncherCircleMask_e6e74f {
     background: var(--chat-background-default)
-}
-
-.channelAppLauncherWordlePromo_e6e74f .lottieAnimationControllerFill {
-    fill: var(--interactive-normal)
 }
 
 .appLauncherGlow_e6e74f {
@@ -9726,6 +9765,11 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 .visual-refresh .callContainer_cb9592 {
     border-right: 1px solid var(--app-border-frame);
     border-top: 1px solid var(--app-border-frame)
+}
+
+.visual-refresh .callContainer_cb9592.fullScreen_cb9592 {
+    border-right: none;
+    border-top: none
 }
 
 .emptyWrapper_f12222 {
@@ -13087,7 +13131,6 @@ div.profileThemedContainer__656be {
 
 .headerContainer__095fe {
     cursor: pointer;
-    height: 16px;
     justify-content: space-between
 }
 
@@ -13101,8 +13144,7 @@ div.profileThemedContainer__656be {
 }
 
 .toggleExpandIcon__095fe {
-    height: 16px;
-    width: 16px
+    height: 1lh
 }
 
 .assetContainer__99d56 {
@@ -13164,4 +13206,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=0d1026bf2a6f3434.css.map*/
+/*# sourceMappingURL=ea3b642ce324192b.css.map*/

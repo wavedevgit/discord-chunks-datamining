@@ -8,8 +8,8 @@ n(192379);
 var o = n(442837),
   a = n(481060),
   i = n(493773),
-  l = n(367907),
-  s = n(111028),
+  s = n(367907),
+  l = n(111028),
   c = n(91218),
   u = n(829883),
   d = n(623624),
@@ -68,7 +68,7 @@ let T = e => {
     _.default.track(v.rMx.OPEN_POPOUT, C({
       type: "Role Icon Popout",
       guild_id: n.id
-    }, (0, l.v_)(m.Z.getChannel(b.Z.getChannelId(n.id)))))
+    }, (0, s.v_)(m.Z.getChannel(b.Z.getChannelId(n.id)))))
   });
   let w = (0, o.e7)([f.Z], () => null != t.roleId ? f.Z.getRole(n.id, t.roleId) : void 0),
     S = (0, p.Z)(w),
@@ -109,7 +109,7 @@ let T = e => {
             children: [(0, r.jsx)(a.X6q, {
               variant: "heading-md/semibold",
               className: x.roleName,
-              children: (0, r.jsx)(s.Z, {
+              children: (0, r.jsx)(l.Z, {
                 children: T
               })
             }), (0, r.jsx)(a.Text, {

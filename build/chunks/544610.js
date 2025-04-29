@@ -1,4 +1,4 @@
-/** Chunk was on 30745 **/
+/** Chunk was on 3656 **/
 let r;
 n.d(t, {
   Z: () => F
@@ -16,8 +16,8 @@ var i, l, o, a = n(392711),
   b = n(592125),
   _ = n(480294),
   y = n(580005),
-  x = n(699516),
-  C = n(594174),
+  C = n(699516),
+  x = n(594174),
   v = n(981631);
 let j = !1,
   O = "",
@@ -41,8 +41,8 @@ function A() {
   if (0 === O.trim().length) {
     var t;
     let n;
-    return null != r && r.clearQuery(), t = e, n = x.Z.getFriendIDs(), (null == t ? void 0 : t.isPrivate()) && (n = n.filter(e => !t.recipients.includes(e))), I = n.reduce((e, t) => {
-      let n = C.default.getUser(t);
+    return null != r && r.clearQuery(), t = e, n = C.Z.getFriendIDs(), (null == t ? void 0 : t.isPrivate()) && (n = n.filter(e => !t.recipients.includes(e))), I = n.reduce((e, t) => {
+      let n = x.default.getUser(t);
       return null == n || n.isProvisional || e.push({
         user: n,
         comparator: g.ZP.getName(n)
@@ -65,7 +65,7 @@ function A() {
     return e.forEach(e => {
       let r = y.Z.getScoreWithoutFetchingLatest(e.id),
         i = e.getRecipientId(),
-        l = .2 * !!x.Z.isFriend(i),
+        l = .2 * !!C.Z.isFriend(i),
         o = .1 * (null != b.Z.getDMFromUserId(i));
       n[i] = 1 + r / t + l + o
     }), n
@@ -75,7 +75,7 @@ function A() {
 function w() {
   if (!j) return !1;
   let e = P;
-  return (P = s().some(x.Z.getRelationships(), e => e === v.OGo.FRIEND)) !== e
+  return (P = s().some(C.Z.getRelationships(), e => e === v.OGo.FRIEND)) !== e
 }
 
 function R(e, t) {
@@ -99,7 +99,7 @@ function k(e) {
       comparator: r
     }
     of t) {
-    let t = C.default.getUser(e);
+    let t = x.default.getUser(e);
     null != t && n.push({
       user: t,
       comparator: r
@@ -127,7 +127,7 @@ function U() {
 }
 class B extends(i = c.ZP.Store) {
   initialize() {
-    this.waitFor(C.default, b.Z, x.Z, p.Z, _.Z), this.syncWith([C.default, b.Z], A), this.syncWith([x.Z], w)
+    this.waitFor(x.default, b.Z, C.Z, p.Z, _.Z), this.syncWith([x.default, b.Z], A), this.syncWith([C.Z], w)
   }
   getResults() {
     return I

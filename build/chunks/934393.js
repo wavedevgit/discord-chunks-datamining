@@ -44,7 +44,7 @@ function h(e) {
       platform: o.Z.get(t).name
     }),
     size: a.PhG.TINY,
-    themeColor: "none",
+    themeColor: "secondary",
     onClick: E
   }) : (0, r.jsx)(d.tG, {
     icon: n,

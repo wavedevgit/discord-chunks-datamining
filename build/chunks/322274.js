@@ -1,4 +1,4 @@
-/** Chunk was on 30745 **/
+/** Chunk was on 3656 **/
 e.exports = {
   indicator: "indicator_ffc7aa",
   animationContainer: "animationContainer_ffc7aa",

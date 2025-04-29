@@ -136,8 +136,8 @@ function _(e) {
     disabled: d = !1,
     customPickerPosition: _ = "bottom",
     secondaryValue: j,
-    onChangeGradientColors: y,
-    isGradient: O = !1
+    onChangeGradientColors: O,
+    isGradient: y = !1
   } = e, h = o.useCallback(e => 0 !== e && e !== t && !r.some(t => t === e), [r, t]), C = o.useRef(null), x = o.useRef(null), v = o.useRef(null), [P, w] = o.useState(() => h(a) ? a : null), [k, S] = o.useState({
     start: a,
     end: null != j ? j : c.p6O
@@ -161,8 +161,8 @@ function _(e) {
       S({
         start: e,
         end: t
-      }), null == y || y([e, t])
-    }, [y]),
+      }), null == O || O([e, t])
+    }, [O]),
     B = o.useCallback((e, t) => {
       E(r => b(f({}, r), {
         [e]: t
@@ -223,7 +223,7 @@ function _(e) {
       onChange: R,
       value: P
     }), [R, P]),
-    A = o.useCallback(e => {
+    G = o.useCallback(e => {
       let t = (0, n.jsx)(s.jHW, b(f({}, e), {
         "aria-label": u.intl.string(u.t["FHBa//"])
       }));
@@ -243,7 +243,7 @@ function _(e) {
         })
       })
     }, [_, d, Z]),
-    G = o.useCallback(e => {
+    A = o.useCallback(e => {
       let t = (0, n.jsx)(s.AGO, f({}, e));
       return d ? t : (0, n.jsx)(s.ua7, {
         text: u.intl.string(u.t.bBvAEB),
@@ -254,11 +254,11 @@ function _(e) {
       })
     }, [d]);
   return (0, n.jsx)(s.zH8, b(f({}, e), {
-    renderDefaultButton: G,
-    renderCustomButton: A,
+    renderDefaultButton: A,
+    renderCustomButton: G,
     renderGradientCustomButton: T,
-    isGradient: O,
+    isGradient: y,
     customColor: P,
-    onChange: O ? N : D
+    onChange: y ? N : D
   }))
 }

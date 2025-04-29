@@ -1,4 +1,4 @@
-/** Chunk was on 30745 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => P
 }), n(388685);
@@ -19,8 +19,8 @@ var r = n(200651),
   b = n(82965),
   _ = n(131951),
   y = n(213652),
-  x = n(320427),
-  C = n(145010),
+  C = n(320427),
+  x = n(145010),
   v = n(933686),
   j = n(361057),
   O = n(997614),
@@ -74,7 +74,7 @@ function P(e) {
         ref: A,
         channel: t,
         glow: B
-      }), W && (0, r.jsx)(x.Z, {}), W && (0, r.jsx)(C.Z, {
+      }), W && (0, r.jsx)(C.Z, {}), W && (0, r.jsx)(x.Z, {
         channel: t
       }), W && (0, r.jsx)(E.Z, {})]
     }), P && (H || V || z || B || T || W) && (0, r.jsx)("div", {

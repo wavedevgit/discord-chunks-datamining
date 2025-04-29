@@ -1,4 +1,4 @@
-/** Chunk was on 30745 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => d
 });
@@ -23,12 +23,12 @@ let d = function(e) {
     animationSrc: b,
     secondaryButtonText: _,
     onSecondaryButtonClick: y,
-    children: x,
-    useReducedMotion: C = !1
+    children: C,
+    useReducedMotion: x = !1
   } = e, v = (0, o.e7)([c.ZP], () => c.ZP.getState().isMembersOpen);
   if (l.tq && v) return null;
   if (null == t) return (0, r.jsx)(r.Fragment, {
-    children: i.Children.only(x)
+    children: i.Children.only(C)
   });
   let j = null;
   return null != g ? j = (0, r.jsx)("img", {
@@ -37,7 +37,7 @@ let d = function(e) {
     className: u.image
   }) : null != b && (j = (0, r.jsx)(a.Fmz, {
     importData: b,
-    shouldAnimate: !C,
+    shouldAnimate: !x,
     className: u.animation
   })), (0, r.jsxs)("div", {
     className: u.wrapper,

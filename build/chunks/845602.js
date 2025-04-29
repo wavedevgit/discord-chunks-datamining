@@ -19,8 +19,8 @@ var n = r(200651),
   m = r(981631),
   _ = r(131085),
   j = r(680278),
-  y = r(388032),
-  O = r(606217),
+  O = r(388032),
+  y = r(606217),
   h = r(183375);
 
 function C() {
@@ -41,15 +41,15 @@ function C() {
       includeConvenienceGlow: !0
     });
   return (0, n.jsxs)("div", {
-    className: O.container,
+    className: y.container,
     children: [(0, n.jsx)("div", {
-      className: O.messageContainer,
+      className: y.messageContainer,
       children: (0, n.jsx)(f.l, {
         avatar: c.Z,
         username: "Cherry",
         usernameStyle: u,
-        usernameClassName: l()(p, h.gradientAlwaysAnimate),
-        message: y.intl.string(j.default.eTHkQU)
+        usernameClassName: l()(p, h.animateGradient),
+        message: O.intl.string(j.default.eTHkQU)
       })
     }), (0, n.jsx)(d.default, {
       defaultColor: m.p6O,
@@ -103,16 +103,16 @@ function x(e) {
     guildId: t
   } = e, [r, a] = o.useState(_.x_.HEART);
   return (0, n.jsxs)("div", {
-    className: O.container,
+    className: y.container,
     children: [(0, n.jsx)("div", {
-      className: O.messageContainer,
+      className: y.messageContainer,
       children: (0, n.jsx)(f.l, {
         avatar: u.Z,
         username: "Roka",
         usernameStyle: {
           color: "var(--brand-400)"
         },
-        message: y.intl.string(j.default.eTHkQU),
+        message: O.intl.string(j.default.eTHkQU),
         decorations: (0, n.jsx)(b.S, {
           guildId: t,
           tag: "GGEZ",

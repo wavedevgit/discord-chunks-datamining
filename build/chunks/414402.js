@@ -30,7 +30,7 @@ function d(e) {
   return f === l.lY.MODAL_V2 ? (0, r.jsx)(s.tG, {
     text: u.intl.string(u.t.vwl1PD),
     size: "tiny",
-    themeColor: "none",
+    themeColor: "secondary",
     onClick: _
   }) : (0, r.jsx)(s.tG, {
     text: u.intl.string(u.t.vwl1PD),

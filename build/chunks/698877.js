@@ -1,4 +1,4 @@
-/** Chunk was on 30745 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   O: () => u
 });
@@ -38,11 +38,11 @@ function u(e) {
     return i
   }(e, ["hasPermission", "streamActive", "isSelfStream", "centerButton", "onMouseEnter", "onMouseLeave", "premiumGlow", "renderNUXHighlight", "buttonRef"]);
   let {
-    mode: x
+    mode: C
   } = (0, o.ZP)({
     location: "StreamButton"
   }), {
-    squareButtonsEnabled: C,
+    squareButtonsEnabled: x,
     coloredIconsEnabled: v
   } = (0, a.Z)({
     location: "StreamButton"
@@ -76,7 +76,7 @@ function u(e) {
     disabled: !u,
     iconComponent: O,
     isActive: d,
-    color: (b ? n = "premiumGradient" : (C || x === o.BK.GroupedButtonsRedMic) && d && (n = "green"), n),
+    color: (b ? n = "premiumGradient" : (x || C === o.BK.GroupedButtonsRedMic) && d && (n = "green"), n),
     caretColor: v ? void 0 : "primaryDark",
     onMouseEnter: e => {
       null == f || f(e), E.onMouseEnter()

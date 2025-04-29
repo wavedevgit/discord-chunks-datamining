@@ -1,11 +1,11 @@
-/** Chunk was on 30745 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   LD: () => _,
   LJ: () => y,
   mV: () => g,
   mh: () => b,
   qc: () => m,
-  wi: () => x
+  wi: () => C
 }), n(997841), n(388685);
 var r, i = n(192379),
   l = n(913527),
@@ -54,7 +54,7 @@ function y(e) {
   }, [e])
 }
 
-function x(e, t) {
+function C(e, t) {
   let n = (0, a.e7)([c.ZP], () => c.ZP.getMember(t, e), [t, e]),
     r = null == n ? void 0 : n.joinedAt;
   return i.useMemo(() => null == r ? "" : o()(new Date(r)).format("MMM DD, YYYY"), [r])

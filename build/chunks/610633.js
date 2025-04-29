@@ -1,4 +1,4 @@
-/** Chunk was on 30745 **/
+/** Chunk was on 3656 **/
 e.exports = {
   avatar: "avatar__49508",
   divider: "divider__49508",

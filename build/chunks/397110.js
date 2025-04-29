@@ -1,6 +1,6 @@
-/** Chunk was on 30745 **/
+/** Chunk was on 3656 **/
 n.d(t, {
-  Z: () => x
+  Z: () => C
 });
 var r = n(200651);
 n(192379);
@@ -21,14 +21,14 @@ var i = n(410030),
   _ = n(388032),
   y = n(396285);
 
-function x(e) {
+function C(e) {
   let {
     user: t
   } = e, {
     analyticsLocations: n
   } = (0, o.ZP)(), {
-    context: x
-  } = (0, c.KZ)(), C = (0, i.ZP)(), v = (0, l.Z)(), {
+    context: C
+  } = (0, c.KZ)(), x = (0, i.ZP)(), v = (0, l.Z)(), {
     mutualFriendsCount: j,
     mutualFriends: O,
     mutualGuilds: E
@@ -48,7 +48,7 @@ function x(e) {
           user: t,
           guild: n,
           nick: i,
-          theme: C,
+          theme: x,
           onSelect: () => (0, s.X)(n.id)
         }, n.id)
       })
@@ -98,7 +98,7 @@ function x(e) {
                 })
               }
               return e
-            }({}, x), t = t = {
+            }({}, C), t = t = {
               userId: i.id,
               sourceAnalyticsLocations: n
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {

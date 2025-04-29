@@ -153,7 +153,8 @@ let G = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       roleColorStrings: a,
       hideClanTag: o,
       user: s,
-      guildId: l
+      guildId: l,
+      isHovering: u
     } = e;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(c.PUh, {
@@ -161,7 +162,8 @@ let G = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
         color: null != n ? n : void 0,
         name: i,
         className: x.name,
-        roleColors: a
+        roleColors: a,
+        animateRoleGradient: u
       }), !o && (0, r.jsx)(b.ZP, {
         primaryGuild: null == s ? void 0 : s.primaryGuild,
         userId: null == s ? void 0 : s.id,
@@ -356,7 +358,8 @@ let G = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
             roleColorStrings: eI,
             hideClanTag: z,
             user: y,
-            guildId: V
+            guildId: V,
+            isHovering: e_
           })
         }) : (0, r.jsx)(c.ua7, {
           text: h,
@@ -369,7 +372,8 @@ let G = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
               roleColorStrings: eI,
               hideClanTag: z,
               user: y,
-              guildId: V
+              guildId: V,
+              isHovering: e_
             })
           }))
         }),

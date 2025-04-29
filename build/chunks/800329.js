@@ -1,4 +1,4 @@
-/** Chunk was on 30745 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => p
 }), n(388685);
@@ -38,7 +38,7 @@ function p(e) {
   }), {
     width: b,
     height: _
-  } = m, y = null != (t = null == l ? void 0 : l.length) ? t : 0, x = b - 16, C = _ - (h + f), {
+  } = m, y = null != (t = null == l ? void 0 : l.length) ? t : 0, C = b - 16, x = _ - (h + f), {
     tileStyle: v,
     tileWidth: j,
     rows: O,
@@ -79,7 +79,7 @@ function p(e) {
       rows: r,
       columns: i
     }
-  })(y, x, C), [y, x, C]), I = E + 1, P = I * j + (I - 1) * 8 <= b, S = Math.floor(j / c) + 8, Z = Math.max(0, C - S * O) / 2;
+  })(y, C, x), [y, C, x]), I = E + 1, P = I * j + (I - 1) * 8 <= b, S = Math.floor(j / c) + 8, Z = Math.max(0, x - S * O) / 2;
   return (0, r.jsx)(a.Z, {
     fade: !0,
     className: n,

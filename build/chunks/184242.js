@@ -1,8 +1,8 @@
-/** Chunk was on 68567 **/
+/** Chunk was on 24800 **/
 t.d(n, {
-  Ac: () => o
+  Ac: () => i
 });
-let i = (0, t(818083).B)({
+let o = (0, t(818083).B)({
   kind: "user",
   id: "2024-08_user_profile_blockee_hide_mutuals",
   label: "User Profile Blockee Hide Mutuals",
@@ -18,16 +18,16 @@ let i = (0, t(818083).B)({
   }]
 });
 
-function o(e) {
+function i(e) {
   let {
     location: n,
     autoTrackExposure: t = !0
   } = e, {
-    enabled: o
-  } = i.useExperiment({
+    enabled: i
+  } = o.useExperiment({
     location: n
   }, {
     autoTrackExposure: t
   });
-  return o
+  return i
 }

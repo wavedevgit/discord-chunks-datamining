@@ -1,7 +1,7 @@
-/** Chunk was on 30745 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   H: () => v,
-  T: () => C
+  T: () => x
 }), n(388685);
 var r = n(192379),
   i = n(442837),
@@ -20,15 +20,15 @@ var r = n(192379),
   b = n(206583),
   _ = n(809017),
   y = n(981631),
-  x = n(388032);
-let C = 0;
+  C = n(388032);
+let x = 0;
 
 function v(e) {
   let {
     memberStoreProps: {
       groups: t,
       rows: n,
-      version: C
+      version: x
     },
     channelId: v,
     guildId: j
@@ -39,7 +39,7 @@ function v(e) {
     hasLeaderboardEntry: Z
   } = (0, m.Z)(v), N = (0, i.e7)([p.Z], () => p.Z.hidden), T = (0, i.e7)([c.Z], () => c.Z.isFocused()), A = (0, i.e7)([a.Z], () => a.Z.getChannel(v)), w = (0, i.e7)([s.Z], () => s.Z.getGuild(j), [j]), R = (0, h.E)(w), k = null != R && R && (null == A ? void 0 : A.isForumChannel()) === !1, [M, L, D, U] = r.useMemo(() => {
     let e;
-    if (null == P || 0 === P.length || null == I || !k) return [t, n, C];
+    if (null == P || 0 === P.length || null == I || !k) return [t, n, x];
     let r = O ? P.length : Z ? 4 : 3,
       i = P.slice(0, r);
     e = N ? [{
@@ -55,7 +55,7 @@ function v(e) {
       key: _.G,
       count: e.length,
       index: n.length,
-      title: x.intl.string(x.t["6gwSFR"]),
+      title: C.intl.string(C.t["6gwSFR"]),
       onToggleExpand: () => {
         E(e => {
           let t = !e;
@@ -74,7 +74,7 @@ function v(e) {
       [l, ...t],
       [...n, l, ...e], Math.random(), e
     ]
-  }, [v, P, O, t, j, I, n, C, N, k, Z]), B = r.useRef(0), G = r.useRef(P), F = r.useRef(void 0), H = r.useRef({
+  }, [v, P, O, t, j, I, n, x, N, k, Z]), B = r.useRef(0), G = r.useRef(P), F = r.useRef(void 0), H = r.useRef({
     impressionCappedEntryIds: S
   }), V = r.useCallback(e => {
     var t;

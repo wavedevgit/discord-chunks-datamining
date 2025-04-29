@@ -1,4 +1,4 @@
-/** Chunk was on 30745 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => T
 }), n(388685), n(35282), n(49124);
@@ -19,8 +19,8 @@ var r = n(200651),
   b = n(944486),
   _ = n(585483),
   y = n(652399),
-  x = n(251285),
-  C = n(406326),
+  C = n(251285),
+  x = n(406326),
   v = n(994463),
   j = n(619753),
   O = n(981631),
@@ -216,7 +216,7 @@ class N extends i.PureComponent {
         isHistoricalIndexing: i,
         documentsIndexed: l
       } = this.props.search;
-      return (0, r.jsx)(C.Z, {
+      return (0, r.jsx)(x.Z, {
         searchMode: e,
         searchByMode: this.searchByMode,
         totalResults: t,
@@ -316,7 +316,7 @@ function T(e) {
     searchResults: a,
     ignoreCount: s,
     blockCount: u
-  } = (0, x.Z)(t);
+  } = (0, C.Z)(t);
   return (0, r.jsx)(N, {
     searchId: t,
     search: n,

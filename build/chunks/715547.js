@@ -27,7 +27,7 @@ function d(e) {
   return d === c.lY.MODAL_V2 ? (0, r.jsx)(l.tG, {
     text: u.intl.string(u.t["I6JG4+"]),
     size: i.PhG.TINY,
-    themeColor: "none",
+    themeColor: "secondary",
     onClick: _
   }) : (0, r.jsx)(l.tG, {
     text: u.intl.string(u.t["I6JG4+"]),

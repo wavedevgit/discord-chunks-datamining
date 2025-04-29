@@ -39,7 +39,7 @@ function g(e) {
   return E === h.lY.MODAL_V2 ? (0, r.jsx)(p.tG, {
     text: m.intl.string(m.t.ZYO5OD),
     size: a.PhG.TINY,
-    themeColor: "none",
+    themeColor: "secondary",
     disabled: O,
     onClick: T
   }) : (0, r.jsx)(p.tG, {
