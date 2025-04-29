@@ -1,61 +1,61 @@
 /** Chunk was on 88235 **/
-t.d(n, {
+n.d(t, {
   Z: () => a
 });
-var l = t(200651);
-t(192379);
-var r = t(481060),
-  i = t(493683),
-  o = t(475413),
-  s = t(388032);
+var r = n(200651);
+n(192379);
+var l = n(481060),
+  i = n(493683),
+  o = n(475413),
+  s = n(388032);
 
 function a(e) {
   var {
-    type: n,
-    userId: t,
+    type: t,
+    userId: n,
     onClose: a
-  } = e, d = function(e, n) {
+  } = e, c = function(e, t) {
     if (null == e) return {};
-    var t, l, r = function(e, n) {
+    var n, r, l = function(e, t) {
       if (null == e) return {};
-      var t, l, r = {},
+      var n, r, l = {},
         i = Object.keys(e);
-      for (l = 0; l < i.length; l++) t = i[l], n.indexOf(t) >= 0 || (r[t] = e[t]);
-      return r
-    }(e, n);
+      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+      return l
+    }(e, t);
     if (Object.getOwnPropertySymbols) {
       var i = Object.getOwnPropertySymbols(e);
-      for (l = 0; l < i.length; l++) t = i[l], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (r[t] = e[t])
+      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
     }
-    return r
+    return l
   }(e, ["type", "userId", "onClose"]);
-  let c = n === o.j8.TEXT ? o.tG : o.ef;
-  return (0, l.jsx)(c, function(e) {
-    for (var n = 1; n < arguments.length; n++) {
-      var t = null != arguments[n] ? arguments[n] : {},
-        l = Object.keys(t);
-      "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(t, e).enumerable
-      }))), l.forEach(function(n) {
-        var l;
-        l = t[n], n in e ? Object.defineProperty(e, n, {
-          value: l,
+  let d = t === o.j8.TEXT ? o.tG : o.ef;
+  return (0, r.jsx)(d, function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var n = null != arguments[t] ? arguments[t] : {},
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
           enumerable: !0,
           configurable: !0,
           writable: !0
-        }) : e[n] = l
+        }) : e[t] = r
       })
     }
     return e
   }({
     action: "SEND_MESSAGE",
-    icon: r.kBi,
+    icon: l.kBi,
     text: s.intl.string(s.t.zROXER),
     tooltipText: s.intl.string(s.t.zROXER),
     onClick: () => {
       i.Z.openPrivateChannel({
-        recipientIds: t
+        recipientIds: n
       }), null == a || a()
     }
-  }, d))
+  }, c))
 }

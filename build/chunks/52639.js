@@ -1,4 +1,4 @@
-/** Chunk was on 3656 **/
+/** Chunk was on 69849 **/
 n.d(t, {
   Z: () => C
 });
@@ -14,8 +14,8 @@ var i = n(410030),
   d = n(857302),
   p = n(892001),
   h = n(483517),
-  f = n(502762),
-  m = n(389190),
+  f = n(252417),
+  m = n(502762),
   g = n(428927),
   b = n(686625),
   _ = n(388032),
@@ -23,23 +23,24 @@ var i = n(410030),
 
 function C(e) {
   let {
-    user: t
+    user: t,
+    channelId: n
   } = e, {
-    analyticsLocations: n
+    analyticsLocations: C
   } = (0, o.ZP)(), {
-    context: C
-  } = (0, c.KZ)(), x = (0, i.ZP)(), v = (0, l.Z)(), {
-    mutualFriendsCount: j,
-    mutualFriends: O,
-    mutualGuilds: E
-  } = (0, u.Z)(t), I = !t.bot && null != j && j > 0, S = null != E && E.length > 0;
-  return I || S ? (0, r.jsxs)(f.Z.Overlay, {
+    context: x
+  } = (0, c.KZ)(), v = (0, i.ZP)(), j = (0, l.Z)(), {
+    mutualFriendsCount: O,
+    mutualFriends: E,
+    mutualGuilds: I
+  } = (0, u.Z)(t), S = !t.bot && null != O && O > 0, P = null != I && I.length > 0;
+  return S || P ? (0, r.jsxs)(m.Z.Overlay, {
     className: y.overlay,
-    children: [S && (0, r.jsx)(b.Z, {
+    children: [P && (0, r.jsx)(b.Z, {
       section: "MUTUAL_GUILDS",
       header: _.intl.string(_.t["4lTDZm"]),
       listClassName: y.list,
-      items: E.map(e => {
+      items: I.map(e => {
         let {
           guild: n,
           nick: i
@@ -48,19 +49,19 @@ function C(e) {
           user: t,
           guild: n,
           nick: i,
-          theme: x,
+          theme: v,
           onSelect: () => (0, s.X)(n.id)
         }, n.id)
       })
-    }), S && I && (0, r.jsx)(h.Z, {
+    }), P && S && (0, r.jsx)(h.Z, {
       className: y.divider
-    }), I && (0, r.jsx)(b.Z, {
+    }), S && (0, r.jsx)(b.Z, {
       section: "MUTUAL_FRIENDS",
       header: _.intl.string(_.t["0mTJ3t"]),
       listClassName: y.list,
-      onExpand: () => (0, d.Z)(t.id, v),
-      items: null == O ? Array.from({
-        length: j
+      onExpand: () => (0, d.Z)(t.id, j),
+      items: null == E ? Array.from({
+        length: O
       }).map((e, t) => (0, r.jsxs)("div", {
         className: y.loadingMutualFriend,
         children: [(0, r.jsx)(a.ZT, {
@@ -70,15 +71,16 @@ function C(e) {
           width: 135,
           opacity: .08
         })]
-      }, t)) : O.map(e => {
+      }, t)) : E.map(e => {
         let {
           key: t,
           user: i,
           status: l
         } = e;
-        return (0, r.jsx)(m.T, {
+        return (0, r.jsx)(f.Z, {
           user: i,
           status: l,
+          channelId: n,
           onSelect: () => {
             var e, t;
             (0, p.openUserProfileModal)((e = function(e) {
@@ -98,9 +100,9 @@ function C(e) {
                 })
               }
               return e
-            }({}, C), t = t = {
+            }({}, x), t = t = {
               userId: i.id,
-              sourceAnalyticsLocations: n
+              sourceAnalyticsLocations: C
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {

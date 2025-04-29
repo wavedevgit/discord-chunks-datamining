@@ -1,19 +1,21 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  F: () => m
+  F: () => E
 });
 var r = n(200651),
   i = n(192379),
-  o = n(442837),
-  a = n(481060),
-  s = n(596454),
-  l = n(727637),
-  c = n(607070),
-  u = n(176354),
-  d = n(942466);
+  o = n(120356),
+  a = n.n(o),
+  s = n(442837),
+  l = n(481060),
+  c = n(596454),
+  u = n(727637),
+  d = n(607070),
+  f = n(176354),
+  _ = n(942466);
 
-function f(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,28 +24,28 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function p(e) {
+function m(e) {
   let {
     emoji: t,
     shouldAnimate: n
   } = e;
   if (null == t) return null;
-  let i = u.ZP.isCustomEmoji(t) ? t.name : t.surrogates;
-  return (0, r.jsx)(s.Z, {
-    className: d.traitEmoji,
+  let i = f.ZP.isCustomEmoji(t) ? t.name : t.surrogates;
+  return (0, r.jsx)(c.Z, {
+    className: _.traitEmoji,
     emojiId: t.id,
     emojiName: i,
     animated: t.animated,
@@ -51,19 +53,22 @@ function p(e) {
   })
 }
 
-function h(e) {
+function g(e) {
   let {
-    trait: t
-  } = e, n = i.useRef(null), s = (0, l.Z)(n), u = !(0, o.e7)([c.Z], () => c.Z.useReducedMotion) && s;
-  return (null == t ? void 0 : t.label) == null || t.label.length <= 0 ? null : (0, r.jsxs)("div", {
-    ref: n,
-    className: d.trait,
-    children: [(0, r.jsx)(p, {
+    trait: t,
+    ellipsize: n
+  } = e, o = i.useRef(null), c = (0, u.Z)(o), f = !(0, s.e7)([d.Z], () => d.Z.useReducedMotion) && c;
+  return null == t.label || t.label.length <= 0 ? null : (0, r.jsxs)("div", {
+    ref: o,
+    className: a()(_.trait, {
+      [_.ellipsize]: n
+    }),
+    children: [(0, r.jsx)(m, {
       emoji: t.emoji,
-      shouldAnimate: u
-    }), (0, r.jsx)(a.Text, {
+      shouldAnimate: f
+    }), (0, r.jsx)(l.Text, {
       tag: "span",
-      className: d.traitLabel,
+      className: n ? _.ellipsize : void 0,
       variant: "text-sm/normal",
       color: "text-normal",
       children: t.label
@@ -71,26 +76,37 @@ function h(e) {
   })
 }
 
-function m(e) {
+function E(e) {
   let {
     profile: t
-  } = e, n = i.useMemo(() => t.traits.map((e, t) => _({
+  } = e, n = i.useMemo(() => t.traits.map((e, t) => h({
     key: "trait-".concat(t)
-  }, e)).filter(e => e.label.length > 0), [t]), o = i.useCallback(e => "string" == typeof e ? (0, r.jsx)("div", {
-    className: d.trait,
-    children: (0, r.jsx)(a.Text, {
+  }, e)).filter(e => e.label.length > 0), [t]), o = i.useCallback((e, t) => "string" == typeof e ? (0, r.jsx)("div", {
+    className: a()(_.trait, {
+      [_.ellipsize]: t.ellipsize
+    }),
+    children: (0, r.jsx)(l.Text, {
       tag: "span",
       variant: "text-sm/normal",
       color: "text-normal",
       children: e
     })
-  }, "overflow") : (0, r.jsx)(h, {
-    trait: e
-  }, e.key), []);
-  return 0 === n.length ? null : (0, r.jsx)(a.Epb, {
-    className: d.container,
+  }, "overflow") : (0, r.jsx)(g, {
+    trait: e,
+    ellipsize: t.ellipsize
+  }, e.key), []), s = i.useCallback(e => o(e, {
+    ellipsize: !0
+  }), [o]), c = i.useCallback(e => o(e, {
+    ellipsize: !1
+  }), [o]), u = i.useCallback(e => (0, r.jsx)(l.te1, {
+    items: e,
+    renderItem: c
+  }), [c]);
+  return 0 === n.length ? null : (0, r.jsx)(l.Epb, {
+    className: _.container,
     items: n,
-    renderItem: o,
+    renderItem: s,
+    renderOverflow: u,
     maxLines: 2,
     itemGapPx: 4
   })

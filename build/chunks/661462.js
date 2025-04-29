@@ -1,12 +1,12 @@
-/** Chunk was on 17759 **/
+/** Chunk was on 30776 **/
 t.d(n, {
   Z: () => p
 }), t(388685);
 var o = t(200651),
   r = t(192379),
-  i = t(481060),
-  c = t(785717),
-  a = t(128156),
+  a = t(481060),
+  i = t(785717),
+  c = t(128156),
   l = t(210788),
   s = t(228168),
   d = t(388032),
@@ -17,37 +17,41 @@ function f(e) {
     user: n,
     currentUser: t,
     section: r,
-    subsection: i,
-    displayProfile: c,
+    subsection: a,
+    displayProfile: i,
     guildId: d,
-    onClose: u
+    channelId: u,
+    onClose: f
   } = e;
-  return r === s.oh.ACTIVITY ? (0, o.jsx)(a.Z, {
+  return r === s.oh.ACTIVITY ? (0, o.jsx)(c.Z, {
     user: n,
     currentUser: t,
-    displayProfile: c,
+    displayProfile: i,
     guildId: d,
-    subsection: i,
-    onClose: u
+    subsection: a,
+    onClose: f
   }) : r === s.oh.MUTUALS ? (0, o.jsx)(l.Z, {
     user: n,
-    onClose: u
+    guildId: d,
+    channelId: u,
+    onClose: f
   }) : null
 }
 
 function p(e) {
-  var n, t, a;
+  var n, t, c;
   let {
     user: l,
     currentUser: p,
     displayProfile: m,
     guildId: b,
-    initialSection: _,
+    channelId: _,
+    initialSection: h,
     initialSubsection: y,
-    onClose: h
+    onClose: g
   } = e, {
-    trackUserProfileAction: g
-  } = (0, c.KZ)(), x = r.useMemo(() => l.id === p.id ? [{
+    trackUserProfileAction: x
+  } = (0, i.KZ)(), j = r.useMemo(() => l.id === p.id ? [{
     section: s.oh.ACTIVITY,
     text: d.intl.string(d.t.chq59f),
     subsection: void 0
@@ -60,10 +64,10 @@ function p(e) {
     text: d.intl.string(d.t.f5KLNj),
     subsection: void 0
   }], [l.id, p.id]), [{
-    section: j,
-    subsection: I,
-    text: v
-  }, O] = r.useState((t = function(e) {
+    section: I,
+    subsection: v,
+    text: O
+  }, C] = r.useState((t = function(e) {
     for (var n = 1; n < arguments.length; n++) {
       var t = null != arguments[n] ? arguments[n] : {},
         o = Object.keys(t);
@@ -80,59 +84,60 @@ function p(e) {
       })
     }
     return e
-  }({}, null != (n = x.find(e => {
+  }({}, null != (n = j.find(e => {
     let {
       section: n
     } = e;
-    return n === _
-  })) ? n : x[0]), a = a = {
+    return n === h
+  })) ? n : j[0]), c = c = {
     subsection: y
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(a)) : (function(e, n) {
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(c)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
       var o = Object.getOwnPropertySymbols(e);
       t.push.apply(t, o)
     }
     return t
-  })(Object(a)).forEach(function(e) {
-    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(a, e))
+  })(Object(c)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(c, e))
   }), t));
   return (0, o.jsxs)("div", {
     className: u.container,
-    children: [(0, o.jsx)(i.njP, {
+    children: [(0, o.jsx)(a.njP, {
       type: "top",
       className: u.tabBar,
-      selectedItem: j,
+      selectedItem: I,
       onItemSelect: e => {
-        g({
+        x({
           action: "PRESS_SECTION",
           section: e
-        }), O(n => {
+        }), C(n => {
           var t;
-          return null != (t = x.find(n => n.section === e)) ? t : n
+          return null != (t = j.find(n => n.section === e)) ? t : n
         })
       },
-      children: x.map(e => (0, o.jsx)(i.njP.Item, {
+      children: j.map(e => (0, o.jsx)(a.njP.Item, {
         className: u.tabBarItem,
         id: e.section,
         "aria-label": e.text,
-        children: (0, o.jsx)(i.X6q, {
+        children: (0, o.jsx)(a.X6q, {
           variant: "heading-lg/medium",
           children: e.text
         })
       }, e.section))
-    }), (0, o.jsx)(i.njP.Panel, {
-      id: j,
-      "aria-label": v,
+    }), (0, o.jsx)(a.njP.Panel, {
+      id: I,
+      "aria-label": O,
       className: u.tabBarPanel,
       children: (0, o.jsx)(f, {
         user: l,
         currentUser: p,
         displayProfile: m,
         guildId: b,
-        section: j,
-        subsection: I,
-        onClose: h
+        channelId: _,
+        section: I,
+        subsection: v,
+        onClose: g
       })
     })]
   })

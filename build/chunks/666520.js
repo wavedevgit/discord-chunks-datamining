@@ -1,54 +1,54 @@
 /** Chunk was on 88235 **/
-t.d(n, {
-  Z: () => h
-}), t(35282);
-var l = t(200651),
-  r = t(192379),
-  i = t(442837),
-  o = t(481060),
-  s = t(34854),
-  a = t(531301),
-  d = t(246946),
-  c = t(981631),
-  u = t(388032),
-  f = t(343074);
+n.d(t, {
+  Z: () => p
+}), n(35282);
+var r = n(200651),
+  l = n(192379),
+  i = n(442837),
+  o = n(481060),
+  s = n(34854),
+  a = n(531301),
+  c = n(246946),
+  d = n(981631),
+  u = n(388032),
+  f = n(343074);
 
-function h(e) {
+function p(e) {
   let {
-    autoFocus: n = !1,
-    className: t,
-    userId: h,
-    onUpdate: p
-  } = e, g = (0, i.e7)([d.Z], () => d.Z.hidePersonalInformation), {
-    loading: j,
+    autoFocus: t = !1,
+    className: n,
+    userId: p,
+    onUpdate: h
+  } = e, j = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), {
+    loading: g,
     note: m
-  } = (0, a.Z)(h), v = r.useRef(null);
-  return (r.useEffect(() => {
-    if (!n || g) return;
+  } = (0, a.Z)(p), v = l.useRef(null);
+  return (l.useEffect(() => {
+    if (!t || j) return;
     let e = v.current;
     (null == e ? void 0 : e.selectionStart) != null && (e.focus(), e.setSelection(e.value.length, e.value.length))
-  }, [n, g]), g) ? null : (0, l.jsx)("div", {
-    className: t,
-    children: (0, l.jsx)(o.lcI, {
+  }, [t, j]), j) ? null : (0, r.jsx)("div", {
+    className: n,
+    children: (0, r.jsx)(o.lcI, {
       ref: v,
       className: f.textarea,
-      disabled: j,
-      placeholder: j ? u.intl.string(u.t["WLKx//"]) : u.intl.string(u.t.VBhOe3),
+      disabled: g,
+      placeholder: g ? u.intl.string(u.t["WLKx//"]) : u.intl.string(u.t.VBhOe3),
       "aria-label": u.intl.string(u.t.PbMNh4),
       onBlur: e => {
-        let n = e.currentTarget.value;
-        (null != m ? m : "") !== n && (null == p || p(), s.Z.updateNote(h, n))
+        let t = e.currentTarget.value;
+        (null != m ? m : "") !== t && (null == h || h(), s.Z.updateNote(p, t))
       },
       onKeyPress: e => {
         if (13 === e.which)
           if (e.shiftKey) {
-            var n;
-            (null != (n = e.currentTarget.value.match(/\n/g)) ? n : []).length >= 5 && e.preventDefault()
+            var t;
+            (null != (t = e.currentTarget.value.match(/\n/g)) ? t : []).length >= 5 && e.preventDefault()
           } else e.preventDefault(), e.currentTarget.blur();
-        else e.which === c.yXg.SPACE && e.stopPropagation()
+        else e.which === d.yXg.SPACE && e.stopPropagation()
       },
       defaultValue: null != m ? m : void 0,
-      maxLength: c.vuo
+      maxLength: d.vuo
     })
   })
 }

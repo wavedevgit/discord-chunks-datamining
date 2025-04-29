@@ -1,4 +1,4 @@
-/** Chunk was on 24800 **/
+/** Chunk was on 72202 **/
 t.d(n, {
   Z: () => g
 });
@@ -93,6 +93,7 @@ function g(e) {
       currentUser: g,
       displayProfile: A,
       guildId: v,
+      channelId: j,
       items: k,
       initialSection: Z,
       initialSubsection: O,

@@ -73,7 +73,7 @@ function E(e) {
         overflowOnly: !0,
         children: e => (0, r.jsx)(a.X6q, g(h({}, e), {
           className: _.guildName,
-          variant: "heading-lg/medium",
+          variant: "heading-md/semibold",
           color: "header-primary",
           children: t.name
         }))

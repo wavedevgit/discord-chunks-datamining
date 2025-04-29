@@ -1,13 +1,13 @@
-/** Chunk was on 17759 **/
+/** Chunk was on 30776 **/
 t.d(n, {
-  Z: () => c
+  Z: () => i
 });
 var o = t(200651);
 t(192379);
 var r = t(678738),
-  i = t(362258);
+  a = t(362258);
 
-function c(e) {
+function i(e) {
   return (0, o.jsx)(r.Z, function(e) {
     for (var n = 1; n < arguments.length; n++) {
       var t = null != arguments[n] ? arguments[n] : {},
@@ -26,7 +26,7 @@ function c(e) {
     }
     return e
   }({
-    headingClassName: i.heading,
+    headingClassName: a.heading,
     headingVariant: "text-xs/semibold",
     headingColor: "none"
   }, e))

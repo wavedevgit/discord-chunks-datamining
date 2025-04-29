@@ -1,13 +1,13 @@
-/** Chunk was on 17759 **/
+/** Chunk was on 30776 **/
 t.d(n, {
   Z: () => p
 });
 var o = t(200651);
 t(192379);
 var r = t(481060),
-  i = t(906732),
-  c = t(705556),
-  a = t(30556),
+  a = t(906732),
+  i = t(705556),
+  c = t(30556),
   l = t(664794),
   s = t(522182),
   d = t(821706),
@@ -23,16 +23,16 @@ function p(e) {
     friendToken: b,
     onClose: _
   } = e, {
-    newestAnalyticsLocation: y
-  } = (0, i.ZP)(), {
-    gameFriends: h,
+    newestAnalyticsLocation: h
+  } = (0, a.ZP)(), {
+    gameFriends: y,
     hasOutgoingPendingGameFriends: g,
     hasIncomingPendingGameFriends: x
   } = (0, u.H)({
     userId: n.id
-  }), j = h.length > 0 || g || x;
+  }), j = y.length > 0 || g || x;
   return m === f.OGo.BLOCKED ? null : n.id === t.id ? (0, o.jsxs)(o.Fragment, {
-    children: [(0, o.jsx)(c.Z, {
+    children: [(0, o.jsx)(i.Z, {
       user: n,
       guildId: p,
       onClose: _
@@ -45,7 +45,7 @@ function p(e) {
       themeColor: "secondary"
     })]
   }) : n.bot ? (0, o.jsxs)(o.Fragment, {
-    children: [(0, o.jsx)(a.Z, {
+    children: [(0, o.jsx)(c.Z, {
       type: "text",
       userId: n.id,
       onClose: _,
@@ -57,7 +57,7 @@ function p(e) {
       themeColor: "secondary"
     })]
   }) : m === f.OGo.FRIEND || m === f.OGo.PENDING_OUTGOING || m === f.OGo.PENDING_INCOMING ? (0, o.jsxs)(o.Fragment, {
-    children: [(0, o.jsx)(a.Z, {
+    children: [(0, o.jsx)(c.Z, {
       type: "text",
       userId: n.id,
       color: r.zxk.Colors.BRAND,
@@ -69,7 +69,7 @@ function p(e) {
       relationshipType: m,
       shouldShowTooltip: !0,
       themeColor: "secondary",
-      analyticsLocation: y
+      analyticsLocation: h
     }), (0, o.jsx)(l.Z, {
       type: "icon",
       user: n,
@@ -77,7 +77,7 @@ function p(e) {
       themeColor: "secondary"
     })]
   }) : m === f.OGo.NONE && j ? (0, o.jsxs)(o.Fragment, {
-    children: [(0, o.jsx)(a.Z, {
+    children: [(0, o.jsx)(c.Z, {
       type: "text",
       userId: n.id,
       onClose: _,
@@ -85,9 +85,9 @@ function p(e) {
     }), (0, o.jsx)(d.k9, {
       type: "icon",
       user: n,
-      analyticsLocation: y,
+      analyticsLocation: h,
       themeColor: "secondary",
-      gameFriends: h,
+      gameFriends: y,
       shouldShowTooltip: !0,
       hasIncomingPendingGameFriends: x,
       hasOutgoingPendingGameFriends: g
@@ -102,10 +102,10 @@ function p(e) {
       type: "text",
       userId: n.id,
       friendToken: b,
-      analyticsLocation: y,
+      analyticsLocation: h,
       color: r.zxk.Colors.BRAND,
       autoFocus: !0
-    }), (0, o.jsx)(a.Z, {
+    }), (0, o.jsx)(c.Z, {
       type: "icon",
       userId: n.id,
       onClose: _,

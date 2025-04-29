@@ -1,6 +1,6 @@
-/** Chunk was on 24800 **/
+/** Chunk was on 72202 **/
 t.d(n, {
-  Z: () => D
+  Z: () => G
 }), t(388685);
 var o = t(200651),
   i = t(192379),
@@ -68,12 +68,12 @@ function B(e, n) {
   }), e
 }
 
-function D(e) {
+function G(e) {
   let {
     user: n,
     currentUser: t,
-    guildId: D,
-    channelId: G,
+    guildId: G,
+    channelId: D,
     messageId: L,
     roleId: U,
     sessionId: V,
@@ -92,8 +92,8 @@ function D(e) {
     layout: "MODAL",
     userId: n.id,
     sourceSessionId: V,
-    guildId: D,
-    channelId: G,
+    guildId: G,
+    channelId: D,
     messageId: L,
     roleId: U,
     showGuildProfile: Q
@@ -102,11 +102,11 @@ function D(e) {
     config: {
       duration: 150
     }
-  }), et = (0, y.ZP)(n.id, Q ? D : void 0), eo = (0, y.ZP)(n.id, D), ei = (0, r.e7)([b.Z], () => b.Z.getRelationshipType(n.id)), ec = n.id === t.id, er = (0, f.p)({
+  }), et = (0, y.ZP)(n.id, Q ? G : void 0), eo = (0, y.ZP)(n.id, G), ei = (0, r.e7)([b.Z], () => b.Z.getRelationshipType(n.id)), ec = n.id === t.id, er = (0, f.p)({
     location: "UserProfileModal"
-  }), ea = i.useMemo(() => null != H ? H : (0, p.Z)(), [H]), el = i.useMemo(() => null != D ? {
-    [D]: [n.id]
-  } : {}, [D, n.id]);
+  }), ea = i.useMemo(() => null != H ? H : (0, p.Z)(), [H]), el = i.useMemo(() => null != G ? {
+    [G]: [n.id]
+  } : {}, [G, n.id]);
   (0, d.$)(el);
   let ed = i.createRef(),
     es = (0, l.Z)(ed);
@@ -134,8 +134,8 @@ function D(e) {
               children: [(0, o.jsx)(P.Z, {
                 shouldShowTooltip: null === ee.interactionType,
                 user: n,
-                guildId: D,
-                channelId: G,
+                guildId: G,
+                channelId: D,
                 onClose: z
               }), (0, o.jsx)(N.Z, {
                 shouldShowTooltip: null === ee.interactionType,
@@ -145,7 +145,7 @@ function D(e) {
               }), (0, o.jsx)(C.Z, {
                 type: "banner",
                 user: n,
-                guildId: D,
+                guildId: G,
                 viewProfileItem: (null == eo ? void 0 : eo.guildId) == null ? null : (null == et ? void 0 : et.guildId) != null ? (0, o.jsx)(a.sNh, {
                   id: "view-main-profile",
                   label: E.intl.string(E.t.GISTtb),
@@ -166,7 +166,7 @@ function D(e) {
                   id: "view-server-profile",
                   label: E.intl.string(E.t.DisZzM),
                   subtext: E.intl.formatToPlainString(E.t["mn/nW1"], {
-                    displayName: m.ZP.getName(D, G, n)
+                    displayName: m.ZP.getName(G, D, n)
                   }),
                   action: () => {
                     z(), (0, g.openUserProfileModal)(B(R({}, X), {
@@ -198,14 +198,14 @@ function D(e) {
                   location: "UserProfileModal",
                   user: n,
                   displayProfile: et,
-                  guildId: D,
-                  channelId: G,
+                  guildId: G,
+                  channelId: D,
                   themeType: M.lY.MODAL
                 }), (0, o.jsx)(T.Z, {
                   location: "UserProfileModal",
                   user: n,
-                  guildId: D,
-                  channelId: G,
+                  guildId: G,
+                  channelId: D,
                   themeType: M.lY.MODAL,
                   hasEntered: q === a.Dvm.ENTERED,
                   onCloseProfile: z,
@@ -215,7 +215,7 @@ function D(e) {
                   children: (0, o.jsx)(S.Z, {
                     user: n,
                     currentUser: t,
-                    guildId: D,
+                    guildId: G,
                     relationshipType: ei,
                     friendToken: F,
                     onClose: z
@@ -225,8 +225,8 @@ function D(e) {
             }), (0, o.jsx)(w.Z, {
               user: n,
               currentUser: t,
-              guildId: D,
-              channelId: G,
+              guildId: G,
+              channelId: D,
               displayProfile: et,
               initialSection: W,
               initialSubsection: Y,

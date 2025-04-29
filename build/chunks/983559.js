@@ -1,4 +1,4 @@
-/** Chunk was on 3656 **/
+/** Chunk was on 69849 **/
 n.d(t, {
   Z: () => R
 });
@@ -139,7 +139,8 @@ function R(e) {
               isHovering: null == H.interactionType && F,
               onOpenProfile: k ? void 0 : z
             }), (0, r.jsx)(Z.Z, {
-              user: t
+              user: t,
+              channelId: R.id
             })]
           }), !k && (0, r.jsx)("footer", {
             className: A.footer,
