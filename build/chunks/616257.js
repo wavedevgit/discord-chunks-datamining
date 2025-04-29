@@ -1,6 +1,7 @@
 /** Chunk was on 93886 **/
 e.exports = {
   panel: "panel_fe7ab2",
+  header: "header_fe7ab2",
   headerBar: "headerBar_fe7ab2",
   headerTitle: "headerTitle_fe7ab2",
   dispatcherHeader: "dispatcherHeader_fe7ab2",

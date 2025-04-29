@@ -12,6 +12,9 @@ class l extends a.ZP {
   getIconURL(e) {
     return o.icon.lightPNG
   }
+  getWhiteIconURL() {
+    return o.icon.whitePNG
+  }
   constructor() {
     super({}), this.id = i, this.name = o.name
   }

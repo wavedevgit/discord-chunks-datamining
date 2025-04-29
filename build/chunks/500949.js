@@ -3,8 +3,8 @@ n.d(t, {
   $R: () => X,
   A0: () => et,
   GU: () => Y,
-  H8: () => q,
-  HI: () => J,
+  H8: () => J,
+  HI: () => q,
   HW: () => B,
   Ib: () => eo,
   KB: () => eu,
@@ -164,12 +164,12 @@ function Y(e) {
   })
 }
 
-function J(e) {
+function q(e) {
   return (0, R.Z)((0, Z.Z)(e, i.Z), {
     format: "hex"
   })
 }
-var q = ((a = {}).TOKENS = "Tokens", a.PALETTES = "Palettes", a);
+var J = ((a = {}).TOKENS = "Tokens", a.PALETTES = "Palettes", a);
 
 function $() {
   return function(e, t) {

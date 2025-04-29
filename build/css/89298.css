@@ -1,6 +1,6 @@
 /**
   Module ID: 89298
-  Original File Name: 939331da02450940
+  Original File Name: acbd9dd54ab09745
 **/
 .buttonContainer__7e329 {
     align-items: center;
@@ -722,6 +722,10 @@
 .panel_fe7ab2 {
     flex: 1;
     min-height: 0
+}
+
+.header_fe7ab2 {
+    margin: 16px 0 8px
 }
 
 .headerBar_fe7ab2 {
@@ -1476,4 +1480,4 @@
     pointer-events: auto
 }
 
-/*# sourceMappingURL=939331da02450940.css.map*/
+/*# sourceMappingURL=acbd9dd54ab09745.css.map*/
