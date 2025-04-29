@@ -142,4 +142,34 @@ function c(e) {
       enabled: !0
     }
   }]
+}), (0, r.B)({
+  kind: "user",
+  id: "2025-04_icymi_search_experience",
+  label: "ICYMI Search Experience",
+  defaultConfig: {
+    searchEnabled: !1,
+    renameEnabled: !1
+  },
+  treatments: [{
+    id: 1,
+    label: "control group - no search experience",
+    config: {
+      searchEnabled: !1,
+      renameEnabled: !1
+    }
+  }, {
+    id: 2,
+    label: "search experience - search only",
+    config: {
+      searchEnabled: !0,
+      renameEnabled: !1
+    }
+  }, {
+    id: 3,
+    label: "search experience - search + rename",
+    config: {
+      searchEnabled: !0,
+      renameEnabled: !0
+    }
+  }]
 })

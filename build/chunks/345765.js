@@ -134,7 +134,7 @@ function k() {
 }
 
 function j() {
-  (0, p.E2)("ContentInventoryManager"), k()
+  k()
 }
 
 function U() {
