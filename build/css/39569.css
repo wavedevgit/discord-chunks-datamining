@@ -1,6 +1,6 @@
 /**
   Module ID: 39569
-  Original File Name: 221086ae775e8d3b
+  Original File Name: d64c6b62b6152ff6
 **/
 .partialOwnStateContainer__0d2da {
     align-items: center;
@@ -594,7 +594,7 @@
     height: 100%;
     position: relative;
     top: -10px;
-    width: 100%
+    width: 224px
 }
 
 .previewBox__36852 {
@@ -603,14 +603,16 @@
     border-top-right-radius: 8px;
     height: 190px;
     overflow: hidden;
-    padding: 0 24px;
-    width: 224px
+    width: 100%
+}
+
+.previewBox__36852,.previewDescription__36852 {
+    align-items: center;
+    display: flex;
+    flex-direction: column
 }
 
 .previewDescription__36852 {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
     gap: 8px;
     justify-content: center;
     padding: 16px;
@@ -624,7 +626,7 @@
     height: fit-content;
     padding: 2px;
     position: relative;
-    width: 271px
+    width: 276px
 }
 
 .previewBorder__36852:before {
@@ -666,26 +668,20 @@
     align-items: center;
     background-color: var(--background-tertiary);
     border-radius: var(--radius-xs);
+    color: var(--header-primary);
     cursor: pointer;
-    display: flex;
-    flex-direction: column;
     gap: 4px;
     height: 80px;
     justify-content: center;
     width: 106px
 }
 
-.inventoryDescription__6980e {
-    width: 224px
-}
-
-.inventoryDescriptionTitle__6980e {
-    margin-bottom: 4px
+.inventoryControlsButton__6980e,.list__6980e {
+    display: flex;
+    flex-direction: column
 }
 
 .list__6980e {
-    display: flex;
-    flex-direction: column;
     gap: 12px;
     margin-top: 12px;
     width: 224px
@@ -711,17 +707,14 @@
     opacity: 1
 }
 
-.lock__6980e {
-    align-items: center;
-    background: var(--background-secondary);
+.iconBadge__6980e {
     border-radius: 50%;
-    display: flex;
-    height: 24px;
-    justify-content: center;
+    height: 20px;
+    padding: 2px;
     position: absolute;
     right: -4px;
-    top: -4px;
-    width: 24px
+    top: -6px;
+    width: 20px
 }
 
 .spinner__2aeb5 {
@@ -753,4 +746,4 @@
     background-clip: padding-box
 }
 
-/*# sourceMappingURL=221086ae775e8d3b.css.map*/
+/*# sourceMappingURL=d64c6b62b6152ff6.css.map*/
