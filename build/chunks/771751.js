@@ -33,7 +33,7 @@ let y = async () => {
   } catch (e) {
     return []
   }
-}, O = async (e, t) => {
+}, C = async (e, t) => {
   try {
     await s.tn.post({
       url: v.ANM.CREATE_USER_OFFER(e, t),
@@ -42,7 +42,7 @@ let y = async () => {
   } catch (e) {} finally {
     await (0, d.T)()
   }
-}, C = async (e, t) => {
+}, O = async (e, t) => {
   try {
     await s.tn.del({
       url: v.ANM.UPDATE_USER_OFFER(e, t),
@@ -91,16 +91,16 @@ function S(e) {
     offer: u,
     offerOptions: m,
     forceRefetch: p
-  } = e, [b, f] = r.useState(!1), [g, y] = r.useState(!1), [O, E] = r.useState(!1), [N, T] = r.useState(!1);
+  } = e, [b, f] = r.useState(!1), [g, y] = r.useState(!1), [C, E] = r.useState(!1), [N, T] = r.useState(!1);
   r.useEffect(() => {
-    O && T(!0);
+    C && T(!0);
     let e = setTimeout(() => {
       T(!1)
     }, 500);
     return () => {
       clearTimeout(e)
     }
-  }, [O]);
+  }, [C]);
   let {
     id: S,
     expires_at: P,
@@ -168,7 +168,7 @@ function S(e) {
         children: Z
       }), (0, a.jsx)(c.P3F, {
         onClick: async () => {
-          E(!0), await C(S, "trial"), p(), E(!1)
+          E(!0), await O(S, "trial"), p(), E(!1)
         },
         children: (0, a.jsx)(c.XHJ, {
           size: "md",
@@ -259,7 +259,7 @@ function S(e) {
       })]
     }), (0, a.jsx)("div", {
       className: i()(_.loadingContainer, {
-        [_.isLoading]: O || N
+        [_.isLoading]: C || N
       }),
       children: (0, a.jsx)(c.$jN, {})
     })]
@@ -283,7 +283,7 @@ function P(e) {
     }
   }, [f]);
   let {
-    id: O,
+    id: C,
     expires_at: E,
     applied_at: N,
     discount_id: T,
@@ -304,7 +304,7 @@ function P(e) {
     j(!0);
     try {
       await s.tn.patch({
-        url: v.ANM.UPDATE_USER_OFFER(O, "discount"),
+        url: v.ANM.UPDATE_USER_OFFER(C, "discount"),
         body: {
           expires_at: t
         },
@@ -343,7 +343,7 @@ function P(e) {
         children: P
       }), (0, a.jsx)(c.P3F, {
         onClick: async () => {
-          j(!0), await C(O, "discount"), u(), j(!1)
+          j(!0), await O(C, "discount"), u(), j(!1)
         },
         children: (0, a.jsx)(c.XHJ, {
           size: "md",
@@ -354,12 +354,12 @@ function P(e) {
     }), (0, a.jsxs)(c.P3F, {
       className: i()(_.row, _.idRow),
       onClick: () => {
-        (0, x.JG)(O, () => h(!0))
+        (0, x.JG)(C, () => h(!0))
       },
       children: [(0, a.jsxs)(c.Text, {
         variant: "eyebrow",
         color: "text-normal",
-        children: ["Offer: ", O]
+        children: ["Offer: ", C]
       }), m ? (0, a.jsx)(c.dz2, {
         size: "md",
         color: "currentColor",
@@ -437,7 +437,7 @@ function P(e) {
 }
 
 function w() {
-  let [e, t] = r.useState([]), [n, l] = r.useState([]), [i, s] = r.useState(), [x, h] = r.useState(), [j, C] = r.useState([]), [w, k] = r.useState([]), [I, R] = r.useState(!0), [Z, L] = r.useState(10080), [A, D] = r.useState([]), {
+  let [e, t] = r.useState([]), [n, l] = r.useState([]), [i, s] = r.useState(), [x, h] = r.useState(), [j, O] = r.useState([]), [w, k] = r.useState([]), [I, R] = r.useState(!0), [Z, L] = r.useState(10080), [A, D] = r.useState([]), {
     entitlements: M,
     deleteFractionalPremium: z,
     refreshEntitlementList: U
@@ -462,13 +462,13 @@ function w() {
     })
   }, [e, n, i, x, I]), r.useEffect(() => {
     I && (R(!1), m.Z.forceReset(), (0, d.T)(), E().then(e => {
-      C(e.trial.sort((e, t) => e.id.localeCompare(t.id))), k(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
+      O(e.trial.sort((e, t) => e.id.localeCompare(t.id))), k(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
     }))
   }, [I]);
   let F = async () => {
-    null != i && (await O(i, "trial"), R(!0))
+    null != i && (await C(i, "trial"), R(!0))
   }, G = async () => {
-    null != x && (await O(x, "discount"), R(!0))
+    null != x && (await C(x, "discount"), R(!0))
   }, V = async () => {
     await N(), R(!0)
   }, H = async () => {

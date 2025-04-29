@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => C
+  Z: () => O
 }), n(388685), n(35282);
 var a = n(200651),
   r = n(192379),
@@ -23,7 +23,7 @@ var a = n(200651),
   _ = n(750540),
   y = n(616257);
 
-function O() {
+function C() {
   var e;
   let t = (0, o.Wu)([b.Z], () => b.Z.getSortedChannels()[1]),
     [n, l] = r.useState(t.length > 0 ? t[0].channelId : void 0),
@@ -79,7 +79,7 @@ function O() {
   })
 }
 
-function C() {
+function O() {
   let e = j.ZP.allByCategory(j.zU.MESSAGING).map(e => {
     let [t, n, {
       label: r
@@ -96,6 +96,6 @@ function C() {
     className: i()(y.panel, _.panel),
     children: [e, (0, a.jsx)("div", {
       className: _.divider
-    }), (0, a.jsx)(O, {})]
+    }), (0, a.jsx)(C, {})]
   })
 }

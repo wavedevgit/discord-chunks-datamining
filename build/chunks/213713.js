@@ -22,8 +22,8 @@ var a = n(200651),
   g = n(168524),
   _ = n(77498),
   y = n(823379),
-  O = n(550532),
-  C = n(71585),
+  C = n(550532),
+  O = n(71585),
   E = n(146282),
   N = n(780106),
   T = n(650613),
@@ -95,7 +95,7 @@ function Z() {
   var e, t;
   let n = (0, u.e7)([E.Z], () => E.Z.getFeed(P.YN.GLOBAL_FEED)),
     l = (0, u.e7)([E.Z], () => E.Z.getDebugImpressionCappingDisabled()),
-    i = (0, u.e7)([C.Z], () => C.Z.getDebugFastImpressionCappingEnabled()),
+    i = (0, u.e7)([O.Z], () => O.Z.getDebugFastImpressionCappingEnabled()),
     s = function(e) {
       let t = o().groupBy(e, e => e.content_type);
       return Object.keys(t).map(e => {
@@ -129,7 +129,7 @@ function Z() {
       return t
     }),
     z = (0, b.Z)(M).filter(y.lm),
-    U = (0, u.e7)([O.Z], () => O.Z.getFakeGameToShow());
+    U = (0, u.e7)([C.Z], () => C.Z.getFakeGameToShow());
   return (0, a.jsx)("div", {
     className: k.panel,
     children: (0, a.jsxs)(x.zJl, {

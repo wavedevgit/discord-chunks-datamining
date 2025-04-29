@@ -70,7 +70,7 @@ function y(e) {
   let {
     subscription: p,
     onUpdated: y
-  } = e, [O, C] = r.useState(!1), [E, N] = r.useState(!1), [T, S] = r.useState(null), P = e => (null == e && (e = p.status), e in j) ? j[e] : "Unknown status ".concat(e), w = e => {
+  } = e, [C, O] = r.useState(!1), [E, N] = r.useState(!1), [T, S] = r.useState(null), P = e => (null == e && (e = p.status), e in j) ? j[e] : "Unknown status ".concat(e), w = e => {
     let t = new Date(e);
     return u.default.fromTimestamp(t.getTime())
   }, k = async e => {
@@ -156,7 +156,7 @@ function y(e) {
       className: v.collapsablePane,
       children: [(0, a.jsxs)(o.P3F, {
         onClick: () => {
-          C(!O)
+          O(!C)
         },
         className: v.collapsablePaneHeader,
         children: [(0, a.jsx)("div", {
@@ -165,9 +165,9 @@ function y(e) {
             children: "Metadata"
           })
         }), (0, a.jsx)(c.Z, {
-          direction: O ? c.Z.Directions.UP : c.Z.Directions.DOWN
+          direction: C ? c.Z.Directions.UP : c.Z.Directions.DOWN
         })]
-      }), O && (0, a.jsx)("ul", {
+      }), C && (0, a.jsx)("ul", {
         style: {
           marginBottom: "15px"
         },

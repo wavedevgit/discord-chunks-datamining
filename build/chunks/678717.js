@@ -23,8 +23,8 @@ var a = n(200651),
 n(381996);
 var _ = n(392750),
   y = n(926976),
-  O = n(789654),
-  C = n(719672),
+  C = n(789654),
+  O = n(719672),
   E = n(691867),
   N = n(916790),
   T = n(645973),
@@ -145,7 +145,7 @@ function ea(e) {
       id: "colors",
       name: "Colors",
       group: J.v0.UI,
-      render: () => (0, a.jsx)(O.Z, {})
+      render: () => (0, a.jsx)(C.Z, {})
     }), e.push({
       id: "design_toggles",
       name: "Design Toggles",
@@ -194,7 +194,7 @@ function ea(e) {
       id: "dcf",
       name: "DCF",
       group: J.v0.EXPERIMENTS,
-      render: () => (0, a.jsx)(C.Z, {})
+      render: () => (0, a.jsx)(O.Z, {})
     }), e.push({
       id: "perks",
       name: "Perks",

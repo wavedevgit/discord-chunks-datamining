@@ -154,7 +154,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
       let c = i.filter(e => !o.some(t => e.startsWith(t)) && !e.endsWith(".txt")).map(e => "".concat(t, "/").concat(e));
       c.length > 0 && a("Contains unrecognized files", c)
     })
-  }, O = e => {
+  }, C = e => {
     let {
       files: t,
       addError: n,
@@ -164,7 +164,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
       names: t.avatarDecorationFiles.map(e => e.name),
       addError: n
     }), j(r.aB.AVATAR_DECORATION, t.avatarDecorationFiles, n, a)
-  }, C = (e, t, n) => {
+  }, O = (e, t, n) => {
     _({
       files: e,
       addError: n,
@@ -173,7 +173,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
       files: e,
       addError: n,
       addWarning: t
-    }), O({
+    }), C({
       files: e,
       addError: n,
       addWarning: t
@@ -217,7 +217,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
           let n = await p(t);
           if (n.length > 0) return void d("Missing required directories", n);
           let a = await (0, r.LY)([t]);
-          C(a, u, d)
+          O(a, u, d)
         } finally {
           t(!0)
         }

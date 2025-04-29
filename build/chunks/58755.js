@@ -128,8 +128,8 @@ function g(e) {
     showColumnarPalettePreview: j,
     colorSpace: g,
     easingStrength: _ = 1,
-    useP3ColorSpace: O,
-    steps: C = 26
+    useP3ColorSpace: C,
+    steps: O = 26
   } = t, E = (0, x.XM)(t), N = (0, x.W6)(E, c);
   return (0, a.jsxs)(d.hjN, {
     className: h.paletteSettings,
@@ -254,16 +254,16 @@ function g(e) {
       }), (0, a.jsx)(d.xJW, {
         children: (0, a.jsx)(d.j7V, {
           note: "Renders the palette preview in a single column, useful for comparing the luminance of each step.",
-          value: O,
+          value: C,
           disabled: !x.S2,
           onChange: e => (0, x.uF)(c, e, n),
           children: "Use P3 Color Space"
         })
       }), (0, a.jsx)(d.xJW, {
-        title: "Steps (".concat(C, ")"),
+        title: "Steps (".concat(O, ")"),
         children: (0, a.jsx)(d.iRW, {
           onValueRender: () => null,
-          initialValue: C,
+          initialValue: O,
           minValue: (0, x.A0)(c).length,
           maxValue: 100,
           onValueChange: e => (0, x.YC)(c, Math.round(e), n),

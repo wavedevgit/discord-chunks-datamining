@@ -207,7 +207,7 @@ let h = [{
       })]
     })
   },
-  O = () => {
+  C = () => {
     let {
       validateShopAssetPackage: e,
       reset: t,
@@ -301,7 +301,7 @@ let h = [{
       })]
     })
   },
-  C = () => {
+  O = () => {
     let {
       previewEnabled: e,
       setPreviewEnabled: t,
@@ -363,7 +363,7 @@ let h = [{
         optionClassName: m.panelModeControlOption
       }), (0, a.jsx)(l.LZC, {
         size: 8
-      }), "preview" === e && (0, a.jsx)(C, {}), "validate" === e && (0, a.jsx)(O, {}), (0, a.jsx)(l.LZC, {
+      }), "preview" === e && (0, a.jsx)(O, {}), "validate" === e && (0, a.jsx)(C, {}), (0, a.jsx)(l.LZC, {
         size: 16
       })]
     })

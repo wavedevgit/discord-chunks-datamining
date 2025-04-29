@@ -76,8 +76,8 @@ let f = {
 function g() {
   let [e, t] = r.useState(!1), [n, l] = r.useState(s.a.PREMIUM_TIER_2_1_HOUR), [d, f] = r.useState([]), [g, _] = r.useState([]), {
     refreshEntitlementList: y,
-    grantFractionalPremium: O,
-    deleteFractionalPremium: C,
+    grantFractionalPremium: C,
+    deleteFractionalPremium: O,
     triggerNextEntitlementFulfillment: E,
     entitlements: N,
     loading: T
@@ -148,7 +148,7 @@ function g() {
           popoutLayerContext: u.O$
         }), (0, a.jsx)(o.zxk, {
           size: o.zxk.Sizes.MEDIUM,
-          onClick: () => O(n),
+          onClick: () => C(n),
           children: "Grant Fractional Nitro"
         })]
       }), (0, a.jsxs)("section", {
@@ -178,7 +178,7 @@ function g() {
               size: o.zxk.Sizes.TINY,
               color: o.zxk.Colors.RED,
               look: o.zxk.Looks.OUTLINED,
-              onClick: () => C(),
+              onClick: () => O(),
               children: "Delete all"
             }), (0, a.jsx)(o.zxk, {
               disabled: T,
@@ -205,7 +205,7 @@ function g() {
             children: d.map(e => (0, a.jsx)(v, {
               entitlement: e,
               active: !0,
-              onDelete: () => C(e.id)
+              onDelete: () => O(e.id)
             }, e.id))
           })]
         }), g.length > 0 && (0, a.jsxs)("div", {

@@ -22,8 +22,8 @@ var a = n(200651),
   g = n(449224),
   _ = n(808506),
   y = n(572004),
-  O = n(70956),
-  C = n(145597),
+  C = n(70956),
+  O = n(145597),
   E = n(246992),
   N = n(981631),
   T = n(757744),
@@ -290,7 +290,7 @@ function z() {
     value: m.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION
   }].map(e => I(k({}, e), {
     label: "".concat(e.label, " ").concat(S === e.value ? "(current)" : "")
-  })), F = (0, o.cj)([p.default], () => p.default.getTrackedGames()), G = (0, o.e7)([_.default], () => _.default.getFocusedPID()), V = (0, o.e7)([_.default], () => _.default.isFocusedPidOutOfProcess()), H = (0, C.getPID)(), W = (0, o.e7)([p.default], () => p.default.isOverlayOOPEnabledForPid(H), [H]), [X, K] = (0, o.Wu)([v.Z], () => [v.Z.enabled, v.Z.keepOpen]), Y = (0, o.e7)([x.ZP], () => x.ZP.getRunningGames());
+  })), F = (0, o.cj)([p.default], () => p.default.getTrackedGames()), G = (0, o.e7)([_.default], () => _.default.getFocusedPID()), V = (0, o.e7)([_.default], () => _.default.isFocusedPidOutOfProcess()), H = (0, O.getPID)(), W = (0, o.e7)([p.default], () => p.default.isOverlayOOPEnabledForPid(H), [H]), [X, K] = (0, o.Wu)([v.Z], () => [v.Z.enabled, v.Z.keepOpen]), Y = (0, o.e7)([x.ZP], () => x.ZP.getRunningGames());
   r.useEffect(() => {
     Z(e => {
       for (let t of Object.keys(F)) e[Number(t)] = F[Number(t)];
@@ -315,7 +315,7 @@ function z() {
         timestamp: l
       }]), e
     }, k({}, e)))
-  }, 10 * O.Z.Millis.SECOND), () => clearInterval($.current)), []);
+  }, 10 * C.Z.Millis.SECOND), () => clearInterval($.current)), []);
   let Q = e => {
       u.Z.setRenderDebugMode(!f.ZP.hasRenderDebugMode(e), e)
     },
