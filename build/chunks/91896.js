@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => A
 }), n(539854), n(388685);
 var r, i = n(442837),
-  o = n(759174),
-  a = n(570140),
+  a = n(759174),
+  o = n(570140),
   s = n(699516),
   l = n(981631);
 
@@ -38,7 +38,7 @@ function _(e) {
   let t = [];
   return t.push(f.BY_APPLICATION_ID(e.applicationId)), t.push(f.BY_USER_ID(e.id)), t.push(f.BY_RELATIONSHIP_TYPE(e.type)), t
 }
-let p = new o.h(_, e => "".concat(e.since)),
+let p = new a.h(_, e => "".concat(e.since)),
   h = 0,
   m = 0,
   g = 0;
@@ -50,12 +50,12 @@ function E() {
   p.values().forEach(r => {
     let {
       type: i,
-      id: o
+      id: a
     } = r;
     if (i === l.OGo.FRIEND) n += 1;
     else if (i === l.OGo.PENDING_OUTGOING) t += 1;
     else if (i === l.OGo.PENDING_INCOMING) {
-      if (s.Z.isSpam(o) || s.Z.isIgnored(o)) return;
+      if (s.Z.isSpam(a) || s.Z.isIgnored(a)) return;
       e += 1
     }
   }), h = e, m = t, g = n
@@ -132,7 +132,7 @@ class T extends(r = i.ZP.Store) {
   }
 }
 c(T, "displayName", "GameRelationshipStore");
-let A = new T(a.Z, {
+let A = new T(o.Z, {
   CONNECTION_OPEN: v,
   GAME_RELATIONSHIP_ADD: I,
   GAME_RELATIONSHIP_REMOVE: S,

@@ -3,8 +3,8 @@
 n(65234), n(111804), n(490233), n(97749), n(388685), n(539854), n(190126), n(368063), n(35282), n(203651);
 var r = n(544891),
   i = n(569611),
-  o = n(547010),
-  a = n(580189),
+  a = n(547010),
+  o = n(580189),
   s = n(397550),
   l = n(931619);
 n(358085);
@@ -32,9 +32,9 @@ function E(e) {
     let {
       default: t
     } = n(314897), {
-      default: o
-    } = n(857192), {
       default: a
+    } = n(857192), {
+      default: o
     } = n(706454), {
       default: s
     } = n(594174), {
@@ -54,11 +54,11 @@ function E(e) {
         let n = E(t);
         e.set("Accept-Language", n)
       }
-      e.set("X-Discord-Locale", a.locale);
+      e.set("X-Discord-Locale", o.locale);
       let c = (0, f.Z)();
       null != c && e.set("X-Discord-Timezone", c);
-      let p = o.getDebugOptionsHeaderValue();
-      if (null != p && "" !== p && e.set("X-Debug-Options", p), o.isTracingRequests) {
+      let p = a.getDebugOptionsHeaderValue();
+      if (null != p && "" !== p && e.set("X-Debug-Options", p), a.isTracingRequests) {
         let t = s.getCurrentUser(),
           n = h.generate(null != (_ = null == t ? void 0 : t.id) ? _ : "0");
         e.set("x-client-trace-id", n);
@@ -81,8 +81,8 @@ function E(e) {
       if (i.Hj("Network", "Failed ".concat(e.method, " to ").concat(e.url, " with status ").concat(null == t ? void 0 : t.status, " and body: ").concat(null == n ? void 0 : n.text)), null != t && "parse" in t && t.parse) {
         let n = "[FILTERED]";
         if (p.includes(e.url)) {
-          var r, o;
-          n = null == (o = e.xhr) || null == (r = o.responseText) ? void 0 : r.slice(0, 1e3)
+          var r, a;
+          n = null == (a = e.xhr) || null == (r = a.responseText) ? void 0 : r.slice(0, 1e3)
         }
         c.Z.addBreadcrumb({
           category: "superagent",
@@ -124,13 +124,13 @@ function E(e) {
         default: t
       } = e;
       t()
-    }) : (0, o.b)(e.statusCode, null == (d = e.body) ? void 0 : d.code) ? n.e("76731").then(n.bind(n, 626892)).then(t => {
+    }) : (0, a.b)(e.statusCode, null == (d = e.body) ? void 0 : d.code) ? n.e("76731").then(n.bind(n, 626892)).then(t => {
       var n;
       let {
         default: r
       } = t;
       r(null == (n = e.body) ? void 0 : n.guild_id)
-    }) : (0, a.X)(e) && n.e("89715").then(n.bind(n, 707708)).then(e => {
+    }) : (0, o.X)(e) && n.e("89715").then(n.bind(n, 707708)).then(e => {
       let {
         handleBlockedByProxy: t
       } = e;

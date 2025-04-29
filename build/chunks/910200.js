@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  o = n.n(i),
-  a = n(481060),
+  a = n.n(i),
+  o = n(481060),
   s = n(686546),
   l = n(813197),
   c = n(60034),
@@ -29,11 +29,11 @@ function g(e) {
   let {
     profile: t,
     className: n
-  } = e, i = m(t, (0, p.nv)().hex()), a = (0, p.dG)(i, t);
+  } = e, i = m(t, (0, p.nv)().hex()), o = (0, p.dG)(i, t);
   return (0, r.jsx)("div", {
-    className: o()(n, h.banner),
+    className: a()(n, h.banner),
     style: {
-      background: a
+      background: o
     }
   })
 }
@@ -61,14 +61,14 @@ function E(e) {
     })
   }) : (0, r.jsx)("div", {
     className: h.avatarContainer,
-    children: (0, r.jsx)(a.tEY, {
+    children: (0, r.jsx)(o.tEY, {
       within: !0,
       children: (0, r.jsx)(s.ZP, {
         mask: s.QS.CLAN_ICON,
         width: 70,
         height: 70,
         children: (0, r.jsxs)("div", {
-          className: o()(h.avatarWrapper, h.clickable),
+          className: a()(h.avatarWrapper, h.clickable),
           children: [(0, r.jsx)(c.Ft, {
             guildId: t.id,
             guildName: t.name,
@@ -76,7 +76,7 @@ function E(e) {
             iconSize: 64
           }), (0, r.jsx)("div", {
             className: h.overlay
-          }), (0, r.jsx)(a.vdY, {
+          }), (0, r.jsx)(o.vdY, {
             size: "custom",
             className: h.overlayIcon,
             width: 20,
@@ -105,7 +105,7 @@ function b(e) {
     profile: t,
     onComplete: c
   })), (0, r.jsxs)("div", {
-    className: o()(h.container, i),
+    className: a()(h.container, i),
     children: [(0, r.jsx)(g, {
       profile: t
     }), (0, r.jsx)(E, {
@@ -115,7 +115,7 @@ function b(e) {
       profile: t
     }), (0, r.jsxs)("div", {
       className: h.body,
-      children: [(0, r.jsx)(a.Text, {
+      children: [(0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
         children: t.description

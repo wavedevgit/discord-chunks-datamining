@@ -3,27 +3,27 @@
 n.d(t, {
   KQ: () => l,
   Lm: () => d,
-  MC: () => a,
+  MC: () => o,
   NM: () => c,
   pb: () => s,
   qc: () => u
 });
 var r = n(594174),
   i = n(626135),
-  o = n(981631);
+  a = n(981631);
 
-function a(e, t) {
+function o(e, t) {
   let {
     channelId: n,
     warningId: r,
-    senderId: o,
-    warningType: a
+    senderId: a,
+    warningType: o
   } = t;
   i.default.track(e, {
     channel_id: n,
     warning_id: null != r ? parseInt(r) : void 0,
-    warning_type: a,
-    other_user_id: o
+    warning_type: o,
+    other_user_id: a
   })
 }
 var s = function(e) {
@@ -35,14 +35,14 @@ function l(e) {
     channelId: t,
     warningId: n,
     senderId: r,
-    warningType: a,
+    warningType: o,
     viewName: s,
     isNudgeWarning: l
   } = e;
-  i.default.track(o.rMx.SAFETY_WARNING_VIEWED, {
+  i.default.track(a.rMx.SAFETY_WARNING_VIEWED, {
     channel_id: t,
     warning_id: null != n ? parseInt(n) : void 0,
-    warning_type: a,
+    warning_type: o,
     other_user_id: r,
     view_name: s,
     is_nudge_warning: l
@@ -57,14 +57,14 @@ function u(e) {
     channelId: t,
     warningId: n,
     senderId: r,
-    warningType: a,
+    warningType: o,
     cta: s,
     isNudgeWarning: l
   } = e;
-  i.default.track(o.rMx.SAFETY_WARNING_CTA_CLICKED, {
+  i.default.track(a.rMx.SAFETY_WARNING_CTA_CLICKED, {
     channel_id: t,
     warning_id: null != n ? parseInt(n) : void 0,
-    warning_type: a,
+    warning_type: o,
     other_user_id: r,
     cta: s,
     is_nudge_warning: l

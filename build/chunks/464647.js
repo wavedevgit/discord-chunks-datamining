@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(97028),
   l = n(481060),
   c = n(686546),
@@ -62,13 +62,13 @@ function O(e) {
     game: t,
     activityLevel: n,
     hideTooltip: i
-  } = e, o = t.getIconURL(24), a = (0, f.B)(), _ = (0, d.Z)({
+  } = e, a = t.getIconURL(24), o = (0, f.B)(), _ = (0, d.Z)({
     location: "GuildProfile",
     source: u.m1.GuildProfile,
     trackEntryPointImpression: !0,
     applicationId: t.id
   });
-  if (null == o) return null;
+  if (null == a) return null;
   let h = !i,
     g = (null == n ? void 0 : n.level) === s.m.HIGH,
     O = (0, r.jsx)(l.Text, {
@@ -85,7 +85,7 @@ function O(e) {
         className: p.gameIcon,
         children: [(0, r.jsx)("img", {
           className: p.gameIconImage,
-          src: o,
+          src: a,
           alt: t.name
         }), g && (0, r.jsx)(c.ZP, {
           mask: c.QS.GAMEPLAY_HIGH_ACTIVITY_ICON,
@@ -104,7 +104,7 @@ function O(e) {
         })]
       }))
     });
-  return a ? (0, r.jsx)(l.P3F, {
+  return o ? (0, r.jsx)(l.P3F, {
     onClick: _,
     className: p.gameIconWrapper,
     children: v
@@ -155,7 +155,7 @@ function S(e) {
   let {
     profile: t
   } = e, n = t.gameActivity, {
-    gamesToDisplay: o,
+    gamesToDisplay: a,
     lastGameToDisplay: s,
     remainingGames: c
   } = (0, _.Z)(t), u = i.useMemo(() => {
@@ -175,9 +175,9 @@ function S(e) {
         activity: n
       }),
       children: n => (0, r.jsxs)("div", E(m({}, n), {
-        className: a()(p.gameIcon, p.extraGameItem),
+        className: o()(p.gameIcon, p.extraGameItem),
         children: [(0, r.jsx)("img", {
-          className: a()(p.gameIconImage, p.extraGameIconImage),
+          className: o()(p.gameIconImage, p.extraGameIconImage),
           src: e,
           alt: s.name
         }), (0, r.jsx)("div", {
@@ -193,15 +193,15 @@ function S(e) {
       }))
     })
   }, [s, c, n]);
-  return null == o || 0 === o.length ? null : 1 === o.length ? (0, r.jsx)("div", {
+  return null == a || 0 === a.length ? null : 1 === a.length ? (0, r.jsx)("div", {
     className: p.container,
     children: (0, r.jsx)(I, {
-      game: o[0],
-      activityLevel: n[o[0].id]
+      game: a[0],
+      activityLevel: n[a[0].id]
     })
   }) : (0, r.jsxs)("div", {
     className: p.container,
-    children: [o.map(e => (0, r.jsx)(O, {
+    children: [a.map(e => (0, r.jsx)(O, {
       game: e,
       activityLevel: n[e.id]
     }, e.id)), u]

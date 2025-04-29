@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(442837),
   l = n(704215),
   c = n(996146),
@@ -74,12 +74,12 @@ function x(e) {
   let {
     animatedIconComponent: t,
     hovered: i,
-    isCoachmarkDismissed: o
-  } = e, s = !o || i;
+    isCoachmarkDismissed: a
+  } = e, s = !a || i;
   return (0, r.jsxs)("div", {
     className: N.iconContainer,
     children: [(0, r.jsx)("div", {
-      className: a()(N.decorativeLayer, {
+      className: o()(N.decorativeLayer, {
         [N.decorativeLayerActive]: s
       }),
       style: {
@@ -90,7 +90,7 @@ function x(e) {
         importData: () => n.e("39298").then(n.t.bind(n, 324952, 19))
       })
     }), (0, r.jsx)("div", {
-      className: a()(N.giftIconButton, {
+      className: o()(N.giftIconButton, {
         [N.giftIconButtonActive]: s
       }),
       style: {
@@ -100,7 +100,7 @@ function x(e) {
         color: "currentColor"
       })
     }), (0, r.jsx)("div", {
-      className: a()(N.decorativeLayer, {
+      className: o()(N.decorativeLayer, {
         [N.decorativeLayerActive]: s
       }),
       style: {
@@ -119,8 +119,8 @@ function M(e) {
     disabled: t,
     channel: n
   } = e, {
-    analyticsLocations: o
-  } = (0, f.ZP)(d.Z.GIFT_BUTTON), [a, u] = i.useState(!1), y = (0, s.e7)([E.Z], () => !(null === E.Z || void 0 === E.Z ? void 0 : E.Z.hasLayers())), R = (0, s.e7)([b.default], () => b.default.getCurrentUser()), w = null != R ? O.default.age(R.id) : 0, M = !t && y && w >= L, {
+    analyticsLocations: a
+  } = (0, f.ZP)(d.Z.GIFT_BUTTON), [o, u] = i.useState(!1), y = (0, s.e7)([E.Z], () => !(null === E.Z || void 0 === E.Z ? void 0 : E.Z.hasLayers())), R = (0, s.e7)([b.default], () => b.default.getCurrentUser()), w = null != R ? O.default.age(R.id) : 0, M = !t && y && w >= L, {
     enabled: k
   } = m.O.useExperiment({
     location: "gift-button"
@@ -138,7 +138,7 @@ function M(e) {
       giftRecipient: null == V ? void 0 : V,
       giftMessage: A.intl.string(A.t["rX/m/f"]),
       initialPlanId: null,
-      analyticsLocations: o,
+      analyticsLocations: a,
       analyticsObject: {
         page: n.isPrivate() ? S.ZY5.DM_CHANNEL : S.ZY5.GUILD_CHANNEL,
         section: S.jXE.CHANNEL_TEXT_AREA,
@@ -150,7 +150,7 @@ function M(e) {
   return (0, r.jsxs)("div", {
     className: N.container,
     onMouseEnter: () => {
-      a || u(!0)
+      o || u(!0)
     },
     onMouseLeave: () => {
       u(!1)
@@ -171,7 +171,7 @@ function M(e) {
     }, Z), {
       children: (0, r.jsx)(x, {
         animatedIconComponent: F,
-        hovered: a,
+        hovered: o,
         isCoachmarkDismissed: !B
       })
     }))]

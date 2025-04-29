@@ -7,26 +7,26 @@ n.d(t, {
 }), n(539854), n(415506), n(49124), n(388685);
 var r = n(427786),
   i = n.n(r);
-let o = 5e3,
-  a = new(i())(o);
+let a = 5e3,
+  o = new(i())(a);
 
 function s(e) {
   for (var t = arguments.length, n = Array(t > 1 ? t - 1 : 0), r = 1; r < t; r++) n[r - 1] = arguments[r];
   let i = c(n);
-  for ("string" == typeof e ? a.push({
+  for ("string" == typeof e ? o.push({
       time: Date.now(),
       category: e,
       message: i
-    }) : a.push({
+    }) : o.push({
       time: Date.now(),
       category: e.name,
       timing: e.timing,
       message: i
-    }); a.length > o;) a.shift()
+    }); o.length > a;) o.shift()
 }
 
 function l() {
-  a.clear()
+  o.clear()
 }
 
 function c(e) {
@@ -39,7 +39,7 @@ function c(e) {
 }
 
 function u(e) {
-  return a.toArray().filter(t => null == e || e.includes(t.category)).map(e => {
+  return o.toArray().filter(t => null == e || e.includes(t.category)).map(e => {
     let t = [];
     return t.push(new Date(e.time).toISOString()), null != e.timing && t.push(e.timing), t.push(e.category, e.message), t.join(" -> ")
   }).join("\n")

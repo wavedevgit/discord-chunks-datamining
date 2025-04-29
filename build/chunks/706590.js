@@ -6,8 +6,8 @@ n.d(t, {
 }), n(388685);
 var r = n(392711),
   i = n.n(r),
-  o = n(442837),
-  a = n(592125),
+  a = n(442837),
+  o = n(592125),
   s = n(496675),
   l = n(709054),
   c = n(853856),
@@ -17,17 +17,17 @@ var r = n(392711),
 function f(e, t, n) {
   let {
     canShow: r,
-    isFavoritesPerk: o
+    isFavoritesPerk: a
   } = u.Z.getCurrentConfig({
     location: "isFavoritesGuildVisible"
   }, {
     autoTrackExposure: !1
   });
-  if (o) return !0;
+  if (a) return !0;
   if (!r) return !1;
-  let a = e.getFavoriteChannels();
-  if (i().isEmpty(a)) return !1;
-  let s = l.default.keys(a).filter(e => {
+  let o = e.getFavoriteChannels();
+  if (i().isEmpty(o)) return !1;
+  let s = l.default.keys(o).filter(e => {
     let r = t.getChannel(e);
     return null != r && (!!r.isPrivate() || n.can(d.Pl.VIEW_CHANNEL, r))
   });
@@ -38,6 +38,6 @@ function _() {
   let {
     canShow: e,
     isFavoritesPerk: t
-  } = (0, u.z)("useIsFavoritesGuildVisible"), n = (0, o.e7)([c.Z, a.Z, s.Z], () => e && f(c.Z, a.Z, s.Z));
+  } = (0, u.z)("useIsFavoritesGuildVisible"), n = (0, a.e7)([c.Z, o.Z, s.Z], () => e && f(c.Z, o.Z, s.Z));
   return !!t || n
 }

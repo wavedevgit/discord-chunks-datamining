@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(65234), n(111804), n(490233), n(97749);
 var r = n(255367),
   i = n(73800),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(308808),
   l = n(772848),
   c = n(631467),
@@ -62,8 +62,8 @@ function v(e) {
   let {
     url: t,
     className: n,
-    style: o,
-    onLoad: a,
+    style: a,
+    onLoad: o,
     shouldRefocus: g,
     queryParams: E,
     allowPopups: y = !1,
@@ -71,11 +71,11 @@ function v(e) {
   } = e, I = (0, f.sU)({}), S = (0, s.useMemoOne)(() => (0, l.Z)(), [t]), T = i.useRef(null), A = (0, _.Z)(T, g, null == I ? window : I), N = O(b({}, E), {
     frame_id: S,
     platform: h.S4.DESKTOP
-  }), [C, R] = i.useState(!1), P = u.Z.theme, w = b({}, o);
+  }), [C, R] = i.useState(!1), P = u.Z.theme, w = b({}, a);
 
   function D(e) {
     var n;
-    null == a || a(e.target), T.current = e.target, A(!0), null == (n = e.target.contentWindow) || n.postMessage([c.Z.HELLO, N], null != t ? t : "")
+    null == o || o(e.target), T.current = e.target, A(!0), null == (n = e.target.contentWindow) || n.postMessage([c.Z.HELLO, N], null != t ? t : "")
   }
   return P === m.BRd.LIGHT ? w.colorScheme = "light" : w.colorScheme = "dark", i.useEffect(() => (d.S.dispatch(m.CkL.IFRAME_MOUNT, {
     id: S
@@ -109,15 +109,15 @@ function v(e) {
 function I(e) {
   let {
     onLoad: t
-  } = e, [n, o] = i.useState(!1), s = i.useCallback(e => {
-    o(!0), null == t || t(e)
+  } = e, [n, a] = i.useState(!1), s = i.useCallback(e => {
+    a(!0), null == t || t(e)
   }, [t]);
   return (0, r.jsxs)("div", {
     className: g.fillParent,
     children: [!n && (0, r.jsx)("div", {
-      className: a()(g.fillParent, g.iframePlaceholder)
+      className: o()(g.fillParent, g.iframePlaceholder)
     }), (0, r.jsx)("div", {
-      className: a()(g.fillParent, n ? void 0 : g.hiddenIframeContainer),
+      className: o()(g.fillParent, n ? void 0 : g.hiddenIframeContainer),
       children: (0, r.jsx)(v, O(b({}, e), {
         onLoad: s
       }))

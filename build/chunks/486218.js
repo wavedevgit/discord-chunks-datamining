@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.r(t), n.d(t, {
-  default: () => o
+  default: () => a
 });
 var r = n(528734),
   i = n(951516);
 
-function o(e) {
+function a(e) {
   (0, i.Z)(1, arguments);
   var t = (0, r.default)(e),
     n = t.getMonth();

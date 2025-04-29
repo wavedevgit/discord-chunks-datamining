@@ -6,8 +6,8 @@ n.d(t, {
 }), n(583741);
 var r = n(255367),
   i = n(73800),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(442837),
   l = n(481060),
   c = n(518950),
@@ -42,7 +42,7 @@ function m(e) {
   let {
     smallerText: t,
     className: n,
-    textColor: o,
+    textColor: a,
     isMarketingPageV2Enabled: c
   } = e, p = (0, s.e7)([u.Z], () => u.Z.affinities.slice(0, 3).reverse()), h = p.map((e, t) => (0, r.jsx)(g, {
     affinity: e,
@@ -61,16 +61,16 @@ function m(e) {
   function b() {
     return t || c ? (0, r.jsx)(l.Text, {
       variant: c ? "text-sm/normal" : "text-lg/medium",
-      color: o,
+      color: a,
       children: E
     }) : (0, r.jsx)(l.X6q, {
       variant: "heading-xl/medium",
-      color: o,
+      color: a,
       children: E
     })
   }
   return (0, r.jsxs)("div", {
-    className: a()(_.container, n, {
+    className: o()(_.container, n, {
       [_.v2Container]: c
     }),
     children: [(0, r.jsx)("div", {
@@ -89,7 +89,7 @@ function g(e) {
     applyMask: n,
     size: i
   } = e, {
-    avatarSrc: o,
+    avatarSrc: a,
     eventHandlers: s
   } = (0, c.Z)({
     user: t,
@@ -97,10 +97,10 @@ function g(e) {
     animateOnHover: !0
   });
   return (0, r.jsx)(l.qEK, h({
-    className: a()(_.icon, {
+    className: o()(_.icon, {
       [_.mask]: n
     }),
-    src: o,
+    src: a,
     "aria-label": t.username,
     size: i
   }, s))

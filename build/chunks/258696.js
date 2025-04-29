@@ -6,8 +6,8 @@ n.d(t, {
 }), n(539854);
 var r = n(255367),
   i = n(73800),
-  o = n(873546),
-  a = n(442837),
+  a = n(873546),
+  o = n(442837),
   s = n(911969),
   l = n(607070),
   c = n(998698),
@@ -38,12 +38,12 @@ function C(e) {
     enabled: i
   } = _.O.useExperiment({
     location: "gift-button"
-  }), o = (0, p.Z)();
+  }), a = (0, p.Z)();
   return i ? (0, r.jsx)(O.Z, {
     disabled: t,
     channel: n
-  }) : null != o ? (0, r.jsx)(S.Z, {
-    giftingPromotionConfig: o,
+  }) : null != a ? (0, r.jsx)(S.Z, {
+    giftingPromotionConfig: a,
     disabled: t,
     channel: n
   }) : (0, r.jsx)(I.Z, {
@@ -62,10 +62,10 @@ function R(e) {
     isEmpty: w,
     showAllButtons: D,
     children: L
-  } = e, x = (0, a.e7)([l.Z], () => l.Z.isSubmitButtonEnabled), M = P(S.id, O, w), {
+  } = e, x = (0, o.e7)([l.Z], () => l.Z.isSubmitButtonEnabled), M = P(S.id, O, w), {
     activeCommand: k,
     activeCommandOption: j
-  } = (0, a.cj)([c.Z], () => ({
+  } = (0, o.cj)([c.Z], () => ({
     activeCommand: c.Z.getActiveCommand(S.id),
     activeCommandOption: c.Z.getActiveOption(S.id)
   })), {
@@ -74,8 +74,8 @@ function R(e) {
     location: "dc120b_3"
   }, {
     autoTrackExposure: !1
-  }), G = [], B = !S.isDM() || void 0 === S.recipients || S.recipients.length > 1, V = (0, a.e7)([g.default], () => B ? null : g.default.getUser(S.recipients[0])), F = (0, d.R6)("ChannelTextAreaButtons"), Z = (0, f.Nt)() && (null == (t = O.confetti) ? void 0 : t.button) != null;
-  return (o.tq || ((null == (p = O.gifts) ? void 0 : p.button) != null && null == k && !U && (null == V || E.ZP.isPremiumEligible(V)) && G.push((0, r.jsx)(C, {
+  }), G = [], B = !S.isDM() || void 0 === S.recipients || S.recipients.length > 1, V = (0, o.e7)([g.default], () => B ? null : g.default.getUser(S.recipients[0])), F = (0, d.R6)("ChannelTextAreaButtons"), Z = (0, f.Nt)() && (null == (t = O.confetti) ? void 0 : t.button) != null;
+  return (a.tq || ((null == (p = O.gifts) ? void 0 : p.button) != null && null == k && !U && (null == V || E.ZP.isPremiumEligible(V)) && G.push((0, r.jsx)(C, {
     disabled: I,
     channel: S
   }, "gift")), (null == (h = O.gifs) ? void 0 : h.button) != null && null == k && D && G.push((0, r.jsx)(y.Z, {
@@ -100,7 +100,7 @@ function R(e) {
 }
 
 function P(e, t, n) {
-  return (0, a.e7)([h.Z, m.Z], () => {
+  return (0, o.e7)([h.Z, m.Z], () => {
     let r = h.Z.getStickerPreview(e, t.drafts.type),
       i = null != r && r.length > 0;
     return 0 === m.Z.getUploads(e, t.drafts.type).length && n && !i

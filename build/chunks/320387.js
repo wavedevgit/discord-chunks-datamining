@@ -13,18 +13,18 @@ if ("function" == typeof i && "function" == typeof Object.defineProperty) try {
 } catch (e) {
   e !== n && (i = null)
 } else i = null;
-var o = /^\s*class\b/,
-  a = function(e) {
+var a = /^\s*class\b/,
+  o = function(e) {
     try {
       var t = r.call(e);
-      return o.test(t)
+      return a.test(t)
     } catch (e) {
       return !1
     }
   },
   s = function(e) {
     try {
-      if (a(e)) return !1;
+      if (o(e)) return !1;
       return r.call(e), !0
     } catch (e) {
       return !1
@@ -60,12 +60,12 @@ e.exports = i ? function(e) {
   } catch (e) {
     if (e !== n) return !1
   }
-  return !a(e) && s(e)
+  return !o(e) && s(e)
 } : function(e) {
   if (g(e)) return !0;
   if (!e || "function" != typeof e && "object" != typeof e) return !1;
   if (h) return s(e);
-  if (a(e)) return !1;
+  if (o(e)) return !1;
   var t = l.call(e);
   return (t === u || t === d || !!/^\[object HTML/.test(t)) && s(e)
 }

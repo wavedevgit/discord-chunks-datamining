@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => O
 });
 var r, i = n(442837),
-  o = n(570140),
-  a = n(626135),
+  a = n(570140),
+  o = n(626135),
   s = n(314897),
   l = n(981631);
 
@@ -32,7 +32,7 @@ function u(e) {
 }
 
 function d(e, t) {
-  a.default.track(l.rMx.STREAMER_MODE_TOGGLE, {
+  o.default.track(l.rMx.STREAMER_MODE_TOGGLE, {
     enabled: e,
     automatic: t
   })
@@ -64,7 +64,7 @@ function g(e) {
 
 function E(e) {
   let t = u({}, p);
-  return p[e.key] = e.value, "enabled" === e.key ? d(e.value, !1) : a.default.track(l.rMx.UPDATE_STREAMER_MODE_SETTINGS, {
+  return p[e.key] = e.value, "enabled" === e.key ? d(e.value, !1) : o.default.track(l.rMx.UPDATE_STREAMER_MODE_SETTINGS, {
     enabled: p.enabled,
     automatic: p.autoToggle,
     disable_notifications: p.disableNotifications,
@@ -130,7 +130,7 @@ c(y, "displayName", "StreamerModeStore"), c(y, "persistKey", "StreamerModeStore"
     [t]: u({}, e)
   }
 }]);
-let O = new y(o.Z, {
+let O = new y(a.Z, {
   LOGOUT: m,
   MULTI_ACCOUNT_REMOVE_ACCOUNT: g,
   STREAMER_MODE_UPDATE: E,

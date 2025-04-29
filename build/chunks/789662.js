@@ -3,7 +3,7 @@
 n.d(t, {
   AR: () => r,
   XR: () => i,
-  nf: () => o
+  nf: () => a
 });
 var r = function(e) {
     return e[e.KeepAsIs = 0] = "KeepAsIs", e[e.UseGreyDot = 1] = "UseGreyDot", e
@@ -11,7 +11,7 @@ var r = function(e) {
   i = function(e) {
     return e[e.Low = 0] = "Low", e[e.Medium = 1] = "Medium", e[e.High = 2] = "High", e
   }({});
-let o = {
+let a = {
   careALot: {
     monthOpenPerc: .01,
     yearOpenPerc: .01,

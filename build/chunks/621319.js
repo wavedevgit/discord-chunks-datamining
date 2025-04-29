@@ -3,16 +3,16 @@
 n.d(t, {
   Gy: () => l,
   H7: () => s,
-  U5: () => a,
+  U5: () => o,
   en: () => c
 });
 var r = n(544891),
   i = n(570140),
-  o = n(981631);
+  a = n(981631);
 
-function a(e) {
+function o(e) {
   return r.tn.get({
-    url: o.ANM.GUILD_VANITY_URL(e),
+    url: a.ANM.GUILD_VANITY_URL(e),
     oldFormErrors: !0,
     rejectWithError: !0
   }).then(e => {
@@ -47,7 +47,7 @@ function l(e) {
 
 function c(e, t, n) {
   return r.tn.patch({
-    url: o.ANM.GUILD_VANITY_URL(e),
+    url: a.ANM.GUILD_VANITY_URL(e),
     body: {
       code: t
     },

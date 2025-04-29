@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => x
 });
 var r, i = n(442837),
-  o = n(780384),
-  a = n(570140),
+  a = n(780384),
+  o = n(570140),
   s = n(607070),
   l = n(514361),
   c = n(540059),
@@ -71,7 +71,7 @@ function N() {
 }
 class C extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    (null == e ? void 0 : e.theme) != null && (v = 1, T = e.theme, (0, f.Z)(T), null != e.preferences && (I = e.preferences), (0, o.wj)(T) && (I[m.zd.DARK] = T)), this.waitFor(p.ZP, _.Z, h.Z, s.Z)
+    (null == e ? void 0 : e.theme) != null && (v = 1, T = e.theme, (0, f.Z)(T), null != e.preferences && (I = e.preferences), (0, a.wj)(T) && (I[m.zd.DARK] = T)), this.waitFor(p.ZP, _.Z, h.Z, s.Z)
   }
   getState() {
     return {
@@ -81,7 +81,7 @@ class C extends(r = i.ZP.PersistedStore) {
     }
   }
   get darkSidebar() {
-    return (0, o.ap)(this.theme) && p.ZP.darkSidebar && null == l.Z.gradientPreset
+    return (0, a.ap)(this.theme) && p.ZP.darkSidebar && null == l.Z.gradientPreset
   }
   get theme() {
     return A()
@@ -101,7 +101,7 @@ function R() {
 }
 
 function P() {
-  return (0, o.ap)(A())
+  return (0, a.ap)(A())
 }
 
 function w(e) {
@@ -124,7 +124,7 @@ E(C, "displayName", "ThemeStore"), E(C, "persistKey", "ThemeStore"), E(C, "migra
     theme: t
   })
 }, e => e]);
-let x = new C(a.Z, {
+let x = new C(o.Z, {
   CACHE_LOADED: N,
   CONNECTION_OPEN: R,
   LOGOUT: w,

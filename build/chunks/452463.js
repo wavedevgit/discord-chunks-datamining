@@ -1,24 +1,24 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  G: () => a
+  G: () => o
 });
 var r, i = [],
-  o = function() {
+  a = function() {
     return i.splice(0).forEach(function(e) {
       return e()
     })
   },
-  a = function(e) {
+  o = function(e) {
     if (!r) {
       var t = 0,
         n = document.createTextNode(""),
-        a = {
+        o = {
           characterData: !0
         };
       new MutationObserver(function() {
-        return o()
-      }).observe(n, a), r = function() {
+        return a()
+      }).observe(n, o), r = function() {
         n.textContent = "".concat(t ? t-- : t++)
       }
     }

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(73800),
   i = n(481060),
-  o = n(1585),
-  a = n(125988),
+  a = n(1585),
+  o = n(125988),
   s = n(287008);
 
 function l(e) {
@@ -34,10 +34,10 @@ function l(e) {
     avatarPlaceholderSrc: g,
     avatarDecorationSrc: E,
     eventHandlers: b
-  } = (0, a.Z)({
+  } = (0, o.Z)({
     user: t,
     guildId: null != n ? n : void 0,
-    size: (0, o.y9)(l),
+    size: (0, a.y9)(l),
     showPending: c,
     onlyAnimateOnHover: d,
     avatarDecorationOverride: f,

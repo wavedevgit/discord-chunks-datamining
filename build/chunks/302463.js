@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  S5: () => o,
+  S5: () => a,
   Yz: () => r,
   dD: () => s,
-  pt: () => a,
+  pt: () => o,
   ve: () => i
 });
 let r = "guild-product-edit-modal",
   i = 0x40000000,
-  o = 0x40000000,
-  a = 10,
+  a = 0x40000000,
+  o = 10,
   s = 30

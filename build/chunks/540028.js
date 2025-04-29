@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(442837),
-  o = n(692547),
-  a = n(481060),
+  a = n(692547),
+  o = n(481060),
   s = n(475179),
   l = n(519938),
   c = n(317381),
@@ -64,7 +64,7 @@ function I(e) {
   let {
     closePopout: t,
     idle: n,
-    pipWindows: o,
+    pipWindows: a,
     voiceChannelId: p,
     onSelect: E
   } = e;
@@ -95,7 +95,7 @@ function I(e) {
 
   function T() {
     let e = [],
-      t = o.find(e => e.component === h.NYg.VIDEO);
+      t = a.find(e => e.component === h.NYg.VIDEO);
     return null != t && v.forEach(n => {
       let r = f.Z.getActiveStreamForApplicationStream(n.stream),
         i = n.id === (null == O ? void 0 : O.id) && (null == y ? void 0 : y.id) === t.id;
@@ -111,15 +111,15 @@ function I(e) {
     var t;
     let n = e.pipWindow.id,
       i = null == (t = e.participant) ? void 0 : t.id,
-      o = S(e),
+      a = S(e),
       s = "".concat(n).concat(null != i ? i : "");
-    return (0, r.jsx)(a.sNh, {
+    return (0, r.jsx)(o.sNh, {
       id: s,
-      label: o,
+      label: a,
       action: () => I(e)
     }, s)
   }
-  return (0, r.jsx)(a.v2r, {
+  return (0, r.jsx)(o.v2r, {
     navId: "pip-menu",
     "aria-label": "switch PIP",
     onClose: t,
@@ -135,19 +135,19 @@ let S = function(e) {
     var n;
     return e.ownerId !== (null == (n = p.default.getCurrentUser()) ? void 0 : n.id) && e.channelId === t
   }), c = 1 === s.length && s[0].component === h.NYg.EMBED_IFRAME || 0 === l.length, u = 1 === s.length && l.length <= 1;
-  return c || u ? null : (0, r.jsx)(a.yRy, {
+  return c || u ? null : (0, r.jsx)(o.yRy, {
     position: "bottom",
     renderPopout: e => (0, r.jsx)(I, y({
       voiceChannelId: t,
       pipWindows: s,
       idle: n
     }, e)),
-    children: e => (0, r.jsx)(a.P3F, v(y({
+    children: e => (0, r.jsx)(o.P3F, v(y({
       className: E.menuIcon
     }, e), {
-      children: (0, r.jsx)(a.Huf, {
+      children: (0, r.jsx)(o.Huf, {
         size: "md",
-        color: o.Z.unsafe_rawColors.WHITE_500.css
+        color: a.Z.unsafe_rawColors.WHITE_500.css
       })
     }))
   })

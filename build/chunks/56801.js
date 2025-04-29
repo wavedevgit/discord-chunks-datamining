@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(481060),
   l = n(806966),
   c = n(254494),
@@ -57,8 +57,8 @@ function g(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -66,8 +66,8 @@ function g(e, t) {
 function E(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let b = [16, 8, 8, 8],
@@ -79,7 +79,7 @@ function I(e) {
   let {
     className: t,
     channel: n,
-    sections: o,
+    sections: a,
     activeCategoryIndex: _,
     filteredSectionId: h,
     onSectionClick: E,
@@ -87,17 +87,17 @@ function I(e) {
   } = e, S = i.useRef(null), T = i.useCallback((e, t) => {
     var n;
     let r = 2 * O;
-    return (null == (n = o[t + 1]) ? void 0 : n.type) === u.Qi.BUILT_IN && (r += v), y + r
-  }, [o]), A = i.useCallback((e, t) => {
+    return (null == (n = a[t + 1]) ? void 0 : n.type) === u.Qi.BUILT_IN && (r += v), y + r
+  }, [a]), A = i.useCallback((e, t) => {
     var n;
-    return t ? (null == (n = o[e + 1]) ? void 0 : n.type) === u.Qi.BUILT_IN ? 0 : 2 * O : 0 === e ? 0 : 2 * O
-  }, [o]), N = i.useCallback((e, t) => {
-    let i = o[t];
+    return t ? (null == (n = a[e + 1]) ? void 0 : n.type) === u.Qi.BUILT_IN ? 0 : 2 * O : 0 === e ? 0 : 2 * O
+  }, [a]), N = i.useCallback((e, t) => {
+    let i = a[t];
     if (null == i) return;
-    let a = (0, d.ky)(i),
+    let o = (0, d.ky)(i),
       l = i.type === u.Qi.BUILT_IN ? O : 0,
       c = y - 2 * l,
-      b = (0, r.jsx)(a, {
+      b = (0, r.jsx)(o, {
         channel: n,
         section: i,
         isSelected: null != h ? i.id === h : _ === t,
@@ -106,7 +106,7 @@ function I(e) {
         height: c,
         selectable: !0
       }),
-      v = i.type !== u.Qi.BUILT_IN && t < o.length - 1 && o[t + 1].type === u.Qi.BUILT_IN;
+      v = i.type !== u.Qi.BUILT_IN && t < a.length - 1 && a[t + 1].type === u.Qi.BUILT_IN;
     return (0, r.jsxs)("div", {
       className: f.section,
       children: [(0, r.jsx)(s.ua7, {
@@ -129,17 +129,17 @@ function I(e) {
         className: f.builtInSeparator
       }) : null]
     }, i.id)
-  }, [_, n, E, o, h]);
-  return 0 === o.length ? null : (0, r.jsx)("div", {
-    className: a()(t, f.wrapper),
+  }, [_, n, E, a, h]);
+  return 0 === a.length ? null : (0, r.jsx)("div", {
+    className: o()(t, f.wrapper),
     children: (0, r.jsx)(c.Z, {
       categoryListRef: S,
       expressionsListRef: I,
       store: l.Xn,
-      categories: o,
+      categories: a,
       className: f.list,
       renderCategoryListItem: N,
-      rowCount: o.length,
+      rowCount: a.length,
       categoryHeight: T,
       listPadding: b,
       getScrollOffsetForIndex: A

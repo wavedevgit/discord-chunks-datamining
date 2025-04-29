@@ -5,8 +5,8 @@ n.d(t, {
 }), n(35282);
 var r = n(255367),
   i = n(73800),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(399606),
   l = n(692547),
   c = n(607070),
@@ -59,7 +59,7 @@ let E = e => null != e && /^http/i.test(e),
     let {
       asset: t,
       size: n = f.yV,
-      className: o,
+      className: a,
       style: p,
       children: m,
       categoryBannerOverride: y
@@ -88,7 +88,7 @@ let E = e => null != e && /^http/i.test(e),
       }), r)
     }, [t, n, O, p, null == y ? void 0 : y.blur, null == y ? void 0 : y.addGradient]);
     return (0, r.jsx)("div", {
-      className: a()(_.banner, o),
+      className: o()(_.banner, a),
       style: v,
       children: m
     })

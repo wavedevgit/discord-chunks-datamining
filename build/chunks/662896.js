@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 }), n(388685);
 var r = n(287328);
 
@@ -13,7 +13,7 @@ function i(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class o {
+class a {
   async getAll() {
     let e = r.Z.guildsRequiringDeletedIdsSync();
     return null == e ? new Set : new Set((await e.getMany()).map(e => e.id))
@@ -55,4 +55,4 @@ class o {
     })
   }
 }
-let a = new o
+let o = new a

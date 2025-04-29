@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(442837),
-  o = n(481060),
-  a = n(592125),
+  a = n(481060),
+  o = n(592125),
   s = n(944486),
   l = n(246946),
   c = n(5192),
@@ -44,10 +44,10 @@ function R(e) {
   } = e, M = c.ZP.getName(null == P ? void 0 : P.id, L, t), k = (0, i.e7)([u.Z], () => {
     var e;
     return null == (e = u.Z.getUserProfile(t.id)) ? void 0 : e.application
-  }), j = (0, i.e7)([a.Z, s.Z], () => a.Z.getChannel(s.Z.getChannelId())), U = (0, i.e7)([l.Z], () => l.Z.hidePersonalInformation), G = (0, d.b)({
+  }), j = (0, i.e7)([o.Z, s.Z], () => o.Z.getChannel(s.Z.getChannelId())), U = (0, i.e7)([l.Z], () => l.Z.hidePersonalInformation), G = (0, d.b)({
     location: "BotUserProfilePopoutBody"
   });
-  return (0, r.jsxs)(o.Ttm, {
+  return (0, r.jsxs)(a.Ttm, {
     fade: !0,
     className: C.body,
     children: [(0, r.jsx)(E.Z, {
