@@ -201,8 +201,9 @@ function A(e) {
       openedAt: x.current,
       closePopout: () => {
         e.closePopout(), null == P || P()
-      }
-    })), [n, o, N, c, p, E, m, O, I, S, P, j]),
+      },
+      disableAutoFocus: !w
+    })), [n, o, N, c, p, E, m, O, I, S, P, j, w]),
     z = i.useCallback(() => {
       Y(), G.current = !0, D && (B.current = setTimeout(async () => {
         if (G.current) try {
