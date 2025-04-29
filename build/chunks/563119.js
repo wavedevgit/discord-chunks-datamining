@@ -3,11 +3,11 @@
 n.d(t, {
   Z: () => v
 });
-var r = n(200651);
-n(192379);
+var r = n(255367);
+n(73800);
 var i = n(704215),
-  o = n(952265),
-  a = n(468026),
+  a = n(952265),
+  o = n(468026),
   s = n(231757),
   l = n(605236),
   c = n(131951),
@@ -70,13 +70,13 @@ let y = "game_console_alert_modal",
         let n = () => {
             (0, l.EW)(i.z.CONSOLE_PTT_DISABLE_ALERT), e()
           },
-          s = e => (0, r.jsx)(a.default, b(g({}, e), {
+          s = e => (0, r.jsx)(o.default, b(g({}, e), {
             title: t,
             body: p.intl.string(p.t.bL21zs),
             onConfirm: n,
             titleClassName: h.title
           }));
-        (0, o.nf)(O) ? (0, o.o)(O, s) : (0, o.h7)(s, {
+        (0, a.nf)(O) ? (0, a.o)(O, s) : (0, a.h7)(s, {
           modalKey: O
         })
       })
@@ -90,7 +90,7 @@ let y = "game_console_alert_modal",
       } = e, c = (0, r.jsx)(d.t, {
         body: n,
         errorCodeMessage: i,
-        dismissCallback: () => (0, o.Mr)(y)
+        dismissCallback: () => (0, a.Mr)(y)
       });
 
       function p() {
@@ -102,12 +102,12 @@ let y = "game_console_alert_modal",
           platform_type: l
         }))
       }
-      let h = e => (0, r.jsx)(a.default, b(g({}, e), {
+      let h = e => (0, r.jsx)(o.default, b(g({}, e), {
         title: t,
         body: c,
         onConfirm: p
       }));
-      (0, o.nf)(y) ? (0, o.o)(y, h) : (0, o.h7)(h, {
+      (0, a.nf)(y) ? (0, a.o)(y, h) : (0, a.h7)(h, {
         modalKey: y
       })
     }

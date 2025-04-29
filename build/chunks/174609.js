@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(358085),
   i = n(998502);
 
-function o(e) {
+function a(e) {
   r.isPlatformEmbedded ? i.ZP.focus(e) : window.focus()
 }

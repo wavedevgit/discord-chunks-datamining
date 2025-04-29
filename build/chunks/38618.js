@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => eg
 });
 var r, i = n(392711),
-  o = n.n(i),
-  a = n(442837),
+  a = n.n(i),
+  o = n(442837),
   s = n(570140),
   l = n(287734),
   c = n(710845),
@@ -63,8 +63,8 @@ async function G(e) {
   let t = {},
     n = E.Z.getVoiceChannelId();
   if (null != n) {
-    var r, i, o, a, s, c, u, d;
-    if ((null == (s = window) || null == (a = s.performance) || null == (o = a.getEntriesByType) || null == (i = o.call(a, "navigation")) || null == (r = i[0]) ? void 0 : r.type) !== "reload" && (null == (c = await (null == R || null == (d = R.processUtils) || null == (u = d.getLastCrash) ? void 0 : u.call(d))) ? void 0 : c.rendererCrashReason) == null && x) m.Z.setLastSessionVoiceChannelId(null != n ? n : null), l.default.selectVoiceChannel(null);
+    var r, i, a, o, s, c, u, d;
+    if ((null == (s = window) || null == (o = s.performance) || null == (a = o.getEntriesByType) || null == (i = a.call(o, "navigation")) || null == (r = i[0]) ? void 0 : r.type) !== "reload" && (null == (c = await (null == R || null == (d = R.processUtils) || null == (u = d.getLastCrash) ? void 0 : u.call(d))) ? void 0 : c.rendererCrashReason) == null && x) m.Z.setLastSessionVoiceChannelId(null != n ? n : null), l.default.selectVoiceChannel(null);
     else {
       let e = p.Z.getChannel(n);
       null != e && (t = {
@@ -166,7 +166,7 @@ function J() {
 }
 
 function $(e) {
-  return I.Wb.isSessionEstablished() && ("userIds" in e ? o()(e.userIds).chunk(w).forEach(t => {
+  return I.Wb.isSessionEstablished() && ("userIds" in e ? a()(e.userIds).chunk(w).forEach(t => {
     I.Wb.requestGuildMembers(e.guildIds, {
       userIds: t,
       presences: !!e.presences
@@ -221,13 +221,13 @@ function ei(e) {
   return I.Wb.isSessionEstablished() && I.Wb.remoteCommand(t, n), !1
 }
 
-function eo(e) {
+function ea(e) {
   I.Wb.isSessionEstablished() && I.Wb.streamDelete(e)
 }
 
-function ea() {
+function eo() {
   let e = es();
-  y.Z.getAllActiveStreamKeys().filter(t => t !== e).forEach(e => eo(e))
+  y.Z.getAllActiveStreamKeys().filter(t => t !== e).forEach(e => ea(e))
 }
 
 function es() {
@@ -241,8 +241,8 @@ function el(e) {
     channelId: r
   } = e;
   if (I.Wb.isSessionEstablished()) {
-    var i, o;
-    let e = null != n ? null == (i = p.Z.getChannel(r)) ? void 0 : i.rtcRegion : null == (o = _.Z.getCall(r)) ? void 0 : o.region;
+    var i, a;
+    let e = null != n ? null == (i = p.Z.getChannel(r)) ? void 0 : i.rtcRegion : null == (a = _.Z.getCall(r)) ? void 0 : a.region;
     I.Wb.streamCreate(t, n, r, null != e ? e : g.Z.getPreferredRegion())
   }
   return !1
@@ -261,14 +261,14 @@ function eu(e) {
     streamKey: t,
     allowMultiple: n
   } = e;
-  return I.Wb.isSessionEstablished() && (n || ea(), I.Wb.streamWatch(t)), !1
+  return I.Wb.isSessionEstablished() && (n || eo(), I.Wb.streamWatch(t)), !1
 }
 
 function ed(e) {
   let {
     streamKey: t
   } = e;
-  return eo(t), Z(), !1
+  return ea(t), Z(), !1
 }
 
 function ef() {
@@ -294,7 +294,7 @@ function eh(e) {
   } = e;
   I.Wb.requestSoundboardSounds(t)
 }
-class em extends(r = a.ZP.Store) {
+class em extends(r = o.ZP.Store) {
   initialize() {
     this.waitFor(f.default, E.Z, p.Z, _.Z, d.Z), this.syncWith([h.Z], X), this.syncWith([b.Z], J)
   }

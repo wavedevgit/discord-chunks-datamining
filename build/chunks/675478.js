@@ -19,8 +19,8 @@ n.d(t, {
 }), n(415506), n(388685), n(410992), n(227481), n(730884), n(20464), n(341884), n(364341), n(629680), n(505025), n(918970), n(121784), n(644351), n(146733);
 var r = n(512722),
   i = n.n(r),
-  o = n(259443),
-  a = n(544891),
+  a = n(259443),
+  o = n(544891),
   s = n(704215),
   l = n(377108),
   c = n(524437),
@@ -68,11 +68,11 @@ class S {
     let r = this.ProtoClass.fields.find(t => t.localName === e);
     if (null == r) throw Error("Unknown proto field name ".concat(String(e)));
     let i = r.T(),
-      o = this.getCurrentValue()[e],
-      a = null != o ? i.fromBinary(i.toBinary(o), m.Uc) : i.create();
-    if (!1 === t(a)) return;
+      a = this.getCurrentValue()[e],
+      o = null != a ? i.fromBinary(i.toBinary(a), m.Uc) : i.create();
+    if (!1 === t(o)) return;
     let s = this.ProtoClass.create();
-    s[e] = a, __OVERLAY__ ? d.Z.dispatch({
+    s[e] = o, __OVERLAY__ ? d.Z.dispatch({
       type: "USER_SETTINGS_PROTO_ENQUEUE_UPDATE",
       settings: {
         type: this.type,
@@ -93,7 +93,7 @@ class S {
     i()(!__OVERLAY__, "this cannot run in the overlay");
     let {
       editInfo: r
-    } = this.getEditInfo(), o = {
+    } = this.getEditInfo(), a = {
       timeout: r.timeout
     };
     if (!r.loaded) throw Error("Cannot edit user settings proto because we have not yet loaded the stored version from the DB");
@@ -106,12 +106,12 @@ class S {
       partial: !0,
       local: !0
     });
-    let a = null != (n = t.delaySeconds) ? n : 0;
-    if (null != o.timeout && a < r.timeoutDelay && !r.rateLimited && (clearTimeout(o.timeout), o.timeout = void 0), null == o.timeout) {
-      let e = a * f.Z.Millis.SECOND;
-      t.jitter && (e += Math.floor(Math.random() * Math.min(e, 30 * f.Z.Millis.SECOND))), this.logger.log("Scheduling save from markDirty"), o.timeout = setTimeout(this.persistChanges, e), o.timeoutDelay = a
+    let o = null != (n = t.delaySeconds) ? n : 0;
+    if (null != a.timeout && o < r.timeoutDelay && !r.rateLimited && (clearTimeout(a.timeout), a.timeout = void 0), null == a.timeout) {
+      let e = o * f.Z.Millis.SECOND;
+      t.jitter && (e += Math.floor(Math.random() * Math.min(e, 30 * f.Z.Millis.SECOND))), this.logger.log("Scheduling save from markDirty"), a.timeout = setTimeout(this.persistChanges, e), a.timeoutDelay = o
     }
-    null != t.cleanup && (o.cleanupFuncs = [...r.cleanupFuncs, ...t.cleanup]), null == r.protoToSave ? o.protoToSave = e : o.protoToSave = (0, m.re)(this.ProtoClass, r.protoToSave, e), this.dispatchChanges(o)
+    null != t.cleanup && (a.cleanupFuncs = [...r.cleanupFuncs, ...t.cleanup]), null == r.protoToSave ? a.protoToSave = e : a.protoToSave = (0, m.re)(this.ProtoClass, r.protoToSave, e), this.dispatchChanges(a)
   }
   dispatchChanges(e) {
     d.Z.dispatch({
@@ -147,7 +147,7 @@ class S {
           body: {
             settings: t
           }
-        } = await a.tn.get({
+        } = await o.tn.get({
           url: E.ANM.USER_SETTINGS_PROTO(this.type),
           rejectWithError: !1
         }), n = (0, m.d5)(this.ProtoClass, t);
@@ -158,7 +158,7 @@ class S {
         let r = p.Z[this.type],
           {
             proto: i,
-            isDirty: o,
+            isDirty: a,
             cleanupFuncs: s
           } = (0, m.xt)(n, r);
         return await d.Z.dispatch({
@@ -167,9 +167,9 @@ class S {
             type: this.type,
             proto: n
           },
-          resetEditInfo: o || e,
+          resetEditInfo: a || e,
           local: !1
-        }), o && this.markDirtyFromMigration(i, s), n
+        }), a && this.markDirtyFromMigration(i, s), n
       } catch (e) {
         throw this.dispatchChanges({
           loading: !1
@@ -229,7 +229,7 @@ class S {
         this.saveLastSendTime();
         let {
           body: n
-        } = await a.tn.patch({
+        } = await o.tn.patch({
           url: E.ANM.USER_SETTINGS_PROTO(this.type),
           body: {
             settings: t,
@@ -264,7 +264,7 @@ class S {
         } else if (400 === e.status && (null == (n = e.body) ? void 0 : n.code) === E.evJ.INVALID_USER_SETTINGS_DATA) throw this.logger.log("Reloading do to invalid data"), this.loadIfNecessary(!0), e;
         else throw this.logger.log("Unknown user settings error"), e
       }
-    }, this.logger = new o.Yd(this.ProtoClass.typeName)
+    }, this.logger = new a.Yd(this.ProtoClass.typeName)
   }
 }
 let T = new S(c.o8, g.yP.PRELOADED_USER_SETTINGS),

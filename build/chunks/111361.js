@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  I5: () => a,
+  I5: () => o,
   M5: () => s,
   ZP: () => l,
-  xI: () => o,
+  xI: () => a,
   yd: () => i
 });
 var r = n(474936);
@@ -13,11 +13,11 @@ function i(e, t) {
   return null == t || null != e && r.$e[e] >= r.$e[t]
 }
 
-function o(e, t) {
+function a(e, t) {
   return null == e || r.$e[e] <= r.$e[t]
 }
 
-function a(e, t) {
+function o(e, t) {
   return null != e && null != e.premiumType && i(e.premiumType, t)
 }
 
@@ -26,6 +26,6 @@ function s(e, t) {
 }
 let l = {
   isPremiumAtLeast: i,
-  isPremium: a,
+  isPremium: o,
   isPremiumExactly: s
 }

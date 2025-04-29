@@ -3,10 +3,10 @@
 n.d(t, {
   f: () => m
 }), n(388685);
-var r = n(200651),
-  i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+var r = n(255367),
+  i = n(73800),
+  a = n(120356),
+  o = n.n(a),
   s = n(780384),
   l = n(481060),
   c = n(410030),
@@ -56,7 +56,7 @@ function m(e) {
   let {
     src: t,
     size: n,
-    constrain: o = "height",
+    constrain: a = "height",
     className: f,
     alt: p,
     fallbackSrc: m,
@@ -71,9 +71,9 @@ function m(e) {
     style: {
       maxWidth: y
     },
-    className: a()(d.contentImage, f)
+    className: o()(d.contentImage, f)
   });
-  let A = "height" === o ? {
+  let A = "height" === a ? {
     maxWidth: y,
     height: y
   } : {
@@ -86,7 +86,7 @@ function m(e) {
     shouldShow: E,
     children: e => (0, r.jsx)("img", h(_({}, e), {
       style: A,
-      className: a()(d.contentImage, f),
+      className: o()(d.contentImage, f),
       src: O && null != m ? m : t,
       "aria-hidden": g,
       alt: null != p ? p : g ? void 0 : u.intl.string(u.t["2B/phI"]),

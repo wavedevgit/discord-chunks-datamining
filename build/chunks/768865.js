@@ -3,10 +3,10 @@
 n.d(t, {
   k: () => d
 });
-var r = n(200651),
+var r = n(255367),
   i = n(481060),
-  o = n(626135),
-  a = n(981631);
+  a = n(626135),
+  o = n(981631);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -52,7 +52,7 @@ let d = e => {
     displayProfile: s,
     location: c
   } = e;
-  null == c && (c = t[t.length - 1]), o.default.track(a.rMx.OPEN_MODAL, {
+  null == c && (c = t[t.length - 1]), a.default.track(o.rMx.OPEN_MODAL, {
     type: "Tiered Tenure Badge Details",
     location_stack: t,
     location: c,

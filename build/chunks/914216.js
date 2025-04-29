@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(818083),
   i = n(987338);
-let o = (0, r.B)({
+let a = (0, r.B)({
     kind: "user",
     id: "2024-12_shop_link_mention",
     label: "Collectibles Shop Link Mention Experiment",
@@ -21,6 +21,6 @@ let o = (0, r.B)({
     }],
     commonTriggerPoint: i.$P.CONNECTION_OPEN
   }),
-  a = e => o.getCurrentConfig({
+  o = e => a.getCurrentConfig({
     location: e
   }).enabled

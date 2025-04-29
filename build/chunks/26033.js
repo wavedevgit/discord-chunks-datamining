@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Cb: () => o,
+  Cb: () => a,
   KF: () => u,
   Mq: () => m,
-  Q0: () => a,
+  Q0: () => o,
   Rh: () => g,
   aA: () => h,
   dU: () => c,
@@ -16,16 +16,16 @@ n.d(t, {
 var r = n(876215),
   i = n(758713);
 
-function o(e) {
+function a(e) {
   return (null == e ? void 0 : e.content_type) === r.s.PLAYED_GAME
 }
 
-function a(e) {
+function o(e) {
   return (null == e ? void 0 : e.content_type) === r.s.TOP_GAME
 }
 
 function s(e) {
-  return o(e) || a(e)
+  return a(e) || o(e)
 }
 
 function l(e) {

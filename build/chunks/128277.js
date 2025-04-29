@@ -3,10 +3,10 @@
 n.d(t, {
   Z: () => D
 }), n(35282);
-var r = n(200651),
-  i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+var r = n(255367),
+  i = n(73800),
+  a = n(120356),
+  o = n.n(a),
   s = n(481060),
   l = n(503438),
   c = n(100527),
@@ -72,44 +72,44 @@ function D(e) {
   let {
     user: t,
     currentUser: n,
-    activity: o,
+    activity: a,
     className: C,
     onClose: P
   } = e, {
     themeType: D
   } = (0, E.z)(), L = (0, _.Z)({
-    activity: o,
+    activity: a,
     user: t
-  }), x = (0, g.Z)(o), {
+  }), x = (0, g.Z)(a), {
     largeImage: M
-  } = (0, d.FO)(o), {
+  } = (0, d.FO)(a), {
     analyticsLocations: k
   } = (0, u.ZP)(c.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), j = (0, h.Z)({
     display: "live",
     user: t,
-    activity: o,
+    activity: a,
     entry: L,
     analyticsLocations: k
   }), U = (0, m.Z)({
     userId: t.id,
     onAction: j
   });
-  if (!(0, l.Z)(o)) return null;
+  if (!(0, l.Z)(a)) return null;
   let G = () => {
       var e, n;
-      let l = null != (n = null == (e = o.state) ? void 0 : e.split(";")) ? n : [];
-      return 0 === l.length ? null : null == o.sync_id ? (0, r.jsx)(v.Z, {
+      let l = null != (n = null == (e = a.state) ? void 0 : e.split(";")) ? n : [];
+      return 0 === l.length ? null : null == a.sync_id ? (0, r.jsx)(v.Z, {
         variant: "text-xs/normal",
         text: l.join(", ")
       }) : (0, r.jsx)(v.Z, {
         variant: "text-xs/normal",
         text: l.map((e, n) => (0, r.jsxs)(i.Fragment, {
           children: [(0, r.jsx)(s.P3F, {
-            className: a()(N.clickableText, N.inline),
+            className: o()(N.clickableText, N.inline),
             onClick: e => {
               e.stopPropagation(), j({
                 action: "OPEN_SPOTIFY_ARTIST"
-              }), (0, p.d$)(o, t.id, n)
+              }), (0, p.d$)(a, t.id, n)
             },
             children: e
           }), n < l.length - 1 ? ", " : ""]
@@ -119,7 +119,7 @@ function D(e) {
     B = () => {
       let {
         timestamps: e
-      } = o;
+      } = a;
       if (null == e) return null;
       let {
         start: t,
@@ -134,7 +134,7 @@ function D(e) {
       className: N.actions,
       children: (0, r.jsx)(S.Z, {
         user: t,
-        activity: o,
+        activity: a,
         onAction: j
       })
     });
@@ -142,14 +142,14 @@ function D(e) {
     value: k,
     children: (0, r.jsxs)(y.Z, {
       ref: U,
-      className: a()(N.card, C),
+      className: o()(N.card, C),
       onAction: j,
       onClose: P,
       children: [(0, r.jsx)(O.Z, w(R({}, x), {
         contextMenu: (0, r.jsx)(T.Z, {
           display: "live",
           user: t,
-          activity: o,
+          activity: a,
           entry: L,
           onClose: P
         })
@@ -164,23 +164,23 @@ function D(e) {
             onClick: e => {
               e.stopPropagation(), j({
                 action: "OPEN_SPOTIFY_ALBUM"
-              }), (0, p.Z5)(o, t.id)
+              }), (0, p.Z5)(a, t.id)
             }
           }), (0, r.jsxs)("div", {
             className: N.details,
             children: [(0, r.jsxs)("div", {
               children: [(0, r.jsx)(v.Z, {
                 variant: "heading-sm/semibold",
-                text: o.details,
+                text: a.details,
                 onClick: () => {
                   j({
                     action: "OPEN_SPOTIFY_TRACK"
-                  }), (0, p.aG)(o)
+                  }), (0, p.aG)(a)
                 }
               }), G()]
             }), (0, r.jsx)(b.Z, {
               user: t,
-              activity: o,
+              activity: a,
               className: N.badges
             }), B(), D === A.lY.MODAL_V2 && V()]
           }), D === A.lY.MODAL && V()]

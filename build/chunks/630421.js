@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(740078),
   i = n(343713),
-  o = n(49691),
-  a = n(285363),
+  a = n(49691),
+  o = n(285363),
   s = n(874900),
   l = n(126387),
   c = n(632471),
@@ -60,7 +60,7 @@ function _(e) {
     var P = (0, i.Z)(l),
       w = "clientHeight",
       D = "clientWidth";
-    P === (0, o.Z)(l) && (P = (0, a.Z)(l), "static" !== (0, s.Z)(P).position && "absolute" === h && (w = "scrollHeight", D = "scrollWidth")), (u === r.we || (u === r.t$ || u === r.F2) && _ === r.ut) && (C = r.I, I -= (b && P === R && R.visualViewport ? R.visualViewport.height : P[w]) - c.height, I *= m ? 1 : -1), (u === r.t$ || (u === r.we || u === r.I) && _ === r.ut) && (N = r.F2, O -= (b && P === R && R.visualViewport ? R.visualViewport.width : P[D]) - c.width, O *= m ? 1 : -1)
+    P === (0, a.Z)(l) && (P = (0, o.Z)(l), "static" !== (0, s.Z)(P).position && "absolute" === h && (w = "scrollHeight", D = "scrollWidth")), (u === r.we || (u === r.t$ || u === r.F2) && _ === r.ut) && (C = r.I, I -= (b && P === R && R.visualViewport ? R.visualViewport.height : P[w]) - c.height, I *= m ? 1 : -1), (u === r.t$ || (u === r.we || u === r.I) && _ === r.ut) && (N = r.F2, O -= (b && P === R && R.visualViewport ? R.visualViewport.width : P[D]) - c.width, O *= m ? 1 : -1)
   }
   var L = Object.assign({
       position: h
@@ -68,7 +68,7 @@ function _(e) {
     x = !0 === E ? f({
       x: O,
       y: I
-    }, (0, o.Z)(l)) : {
+    }, (0, a.Z)(l)) : {
       x: O,
       y: I
     };
@@ -83,8 +83,8 @@ let p = {
       n = e.options,
       r = n.gpuAcceleration,
       i = void 0 === r || r,
-      o = n.adaptive,
-      a = void 0 === o || o,
+      a = n.adaptive,
+      o = void 0 === a || a,
       s = n.roundOffsets,
       u = void 0 === s || s,
       d = {
@@ -98,7 +98,7 @@ let p = {
     null != t.modifiersData.popperOffsets && (t.styles.popper = Object.assign({}, t.styles.popper, _(Object.assign({}, d, {
       offsets: t.modifiersData.popperOffsets,
       position: t.options.strategy,
-      adaptive: a,
+      adaptive: o,
       roundOffsets: u
     })))), null != t.modifiersData.arrow && (t.styles.arrow = Object.assign({}, t.styles.arrow, _(Object.assign({}, d, {
       offsets: t.modifiersData.arrow,

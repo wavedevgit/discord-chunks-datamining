@@ -2,7 +2,7 @@
 n.d(t, {
   a: () => o
 });
-var i = n(192379),
+var i = n(73800),
   r = n(996073);
 let l = {
   block: "center"

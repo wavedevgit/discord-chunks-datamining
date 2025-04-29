@@ -3,11 +3,11 @@
 n.d(t, {
   Z: () => d
 });
-var r = n(200651);
-n(192379);
+var r = n(255367);
+n(73800);
 var i = n(481060),
-  o = n(153867),
-  a = n(468026),
+  a = n(153867),
+  o = n(468026),
   s = n(740492),
   l = n(388032);
 
@@ -36,11 +36,11 @@ function u(e) {
 function d(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : () => {},
     n = () => {
-      o.ZP.updatedUnsyncedSettings({
+      a.ZP.updatedUnsyncedSettings({
         disableEmbeddedActivityPopOutAlert: !0
       }), e()
     };
-  s.ZP.disableEmbeddedActivityPopOutAlert ? e() : (0, i.h7j)(i => (0, r.jsx)(a.default, u({
+  s.ZP.disableEmbeddedActivityPopOutAlert ? e() : (0, i.h7j)(i => (0, r.jsx)(o.default, u({
     confirmText: l.intl.string(l.t.efSOLC),
     secondaryConfirmText: l.intl.string(l.t["JdIQ/f"]),
     title: l.intl.string(l.t.pVr7Cg),

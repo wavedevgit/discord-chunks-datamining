@@ -3,12 +3,12 @@
 n.d(t, {
   Z: () => u
 });
-var r = n(200651);
-n(192379);
+var r = n(255367);
+n(73800);
 var i = n(481060),
-  o = n(388032);
+  a = n(388032);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,7 +24,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -62,9 +62,9 @@ function u() {
       default: t
     } = await n.e("67753").then(n.bind(n, 873809));
     return n => (0, r.jsx)(t, c(s({}, n), {
-      header: o.intl.string(o.t.GFr0GR),
-      body: o.intl.string(o.t.QSk6Ex),
-      confirmText: o.intl.string(o.t.BK8LKy),
+      header: a.intl.string(a.t.GFr0GR),
+      body: a.intl.string(a.t.QSk6Ex),
+      confirmText: a.intl.string(a.t.BK8LKy),
       onConfirm: e
     }))
   })

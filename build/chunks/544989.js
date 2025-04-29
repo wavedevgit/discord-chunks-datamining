@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
-var r = n(200651);
-n(192379);
+var r = n(255367);
+n(73800);
 var i = n(405751);
 
-function o(e) {
+function a(e) {
   let {
     children: t
   } = e;

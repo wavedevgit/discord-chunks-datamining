@@ -3,20 +3,20 @@
 n.d(t, {
   Z: () => i
 }), n(388685), n(642613);
-var r = n(192379);
+var r = n(73800);
 
 function i(e) {
   var t;
   let {
     stepConfigs: n,
     breadcrumbs: i
-  } = e, [o, a] = r.useState(null == (t = n[0]) ? void 0 : t.key), s = r.useRef(null);
+  } = e, [a, o] = r.useState(null == (t = n[0]) ? void 0 : t.key), s = r.useRef(null);
   return r.useEffect(() => {
-    s.current = o
-  }, [s, o]), {
+    s.current = a
+  }, [s, a]), {
     steps: n.map(e => e.key).filter(e => null != e),
-    step: o,
-    setStep: a,
+    step: a,
+    setStep: o,
     breadcrumbsData: n.filter(e => {
       var t;
       return null != e.key && (null == e || null == (t = e.options) ? void 0 : t.useBreadcrumbLabel) != null

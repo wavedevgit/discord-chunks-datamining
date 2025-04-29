@@ -1,6 +1,6 @@
 /** Chunk was on web.js **/
 "use strict";
-let r, i, o;
+let r, i, a;
 n.d(t, {
   At: () => S,
   DB: () => C,
@@ -15,7 +15,7 @@ n.d(t, {
   uL: () => b,
   uv: () => O
 }), n(539854), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685), n(35282), n(49124), n(704826);
-var a = n(539528),
+var o = n(539528),
   s = n(710845),
   l = n(585483),
   c = n(143816),
@@ -44,7 +44,7 @@ function f(e) {
 }
 let _ = new s.Z("Routing/Utils"),
   p = [u.E07.DEVELOPER_PORTAL];
-r = __OVERLAY__ ? (0, a.PP)() : (0, a.lX)();
+r = __OVERLAY__ ? (0, o.PP)() : (0, o.lX)();
 let h = !1,
   m = r.listen((e, t) => {
     "REPLACE" !== t && (h = !0, m())
@@ -63,7 +63,7 @@ function b(e, t) {
   _.log("transitionTo - Transitioning to ".concat(e));
   let n = null == t ? void 0 : t.source;
   null == t || delete t.source;
-  let a = null == t ? void 0 : t.sourceLocationStack;
+  let o = null == t ? void 0 : t.sourceLocationStack;
   if (null == t || delete t.sourceLocationStack, null == t) r.push(e);
   else {
     let n = new URL(e, "https:".concat(window.GLOBAL_ENV.WEBAPP_ENDPOINT));
@@ -73,7 +73,7 @@ function b(e, t) {
       hash: n.hash
     }, t))
   }
-  i = n, o = a
+  i = n, a = o
 }
 
 function y(e, t, n, r) {
@@ -101,7 +101,7 @@ function S() {
 }
 
 function T() {
-  return o
+  return a
 }
 
 function A(e) {

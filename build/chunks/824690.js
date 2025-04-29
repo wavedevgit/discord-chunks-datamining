@@ -1,18 +1,18 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 }), n(388685);
-var r = n(192379),
+var r = n(73800),
   i = n(695346),
-  o = n(36703);
+  a = n(36703);
 
-function a() {
+function o() {
   let [e, t] = r.useState(i.AY.getSetting());
   return {
     volume: e,
     onVolumeChange: r.useCallback(e => {
-      let n = (0, o.A)(e);
+      let n = (0, a.A)(e);
       t(n), i.AY.updateSetting(n)
     }, [])
   }

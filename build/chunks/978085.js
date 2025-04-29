@@ -7,12 +7,12 @@ n.d(t, {
 });
 var r = n(544891),
   i = n(570140),
-  o = n(85521),
-  a = n(73346),
+  a = n(85521),
+  o = n(73346),
   s = n(981631);
 async function l() {
   try {
-    let e = await (0, a.Kb)({
+    let e = await (0, o.Kb)({
       url: s.ANM.LIBRARY,
       oldFormErrors: !0,
       rejectWithError: !1
@@ -35,7 +35,7 @@ async function c(e) {
     url: s.ANM.APPLICATION_BRANCH_LIST(e.id),
     oldFormErrors: !0,
     rejectWithError: !1
-  }).then(e => e.body)).map(n => o.Z.createForTestMode({
+  }).then(e => e.body)).map(n => a.Z.createForTestMode({
     id: e.id,
     skuId: t,
     branch: n

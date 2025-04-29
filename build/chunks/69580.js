@@ -8,11 +8,11 @@ n.r(t), n.d(t, {
   openOAuth2ModalWithCreateGuildModal: () => eb,
   useOAuth2AuthorizeForm: () => eg
 }), n(35282), n(388685), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(415506), n(642613), n(997841);
-var r = n(200651),
-  i = n(192379),
-  o = n(120356),
-  a = n.n(o),
-  s = n(512969),
+var r = n(255367),
+  i = n(73800),
+  a = n(120356),
+  o = n.n(a),
+  s = n(114858),
   l = n(873546),
   c = n(373793),
   u = n(243814),
@@ -64,8 +64,8 @@ var r = n(200651),
   en = n(574384),
   er = n(960662),
   ei = n(981631),
-  eo = n(186901),
-  ea = n(388032),
+  ea = n(186901),
+  eo = n(388032),
   es = n(453214);
 
 function el(e, t, n) {
@@ -111,8 +111,8 @@ function ef(e, t) {
   if (null == e) return {};
   var n, r, i = e_(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -120,8 +120,8 @@ function ef(e, t) {
 function e_(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let ep = "oauth2-authorize-header-id";
@@ -130,21 +130,21 @@ function eh() {
   let e = (0, s.TH)(),
     t = i.useMemo(() => (0, V.y)(e.search), [e.search]);
   (0, T.Z)();
-  let o = !e.search.includes("response_type"),
-    [a, c] = i.useState(!1),
+  let a = !e.search.includes("response_type"),
+    [o, c] = i.useState(!1),
     u = i.useRef(!1),
     [d, f] = i.useState(null),
-    _ = o && !l.tq && !a;
+    _ = a && !l.tq && !o;
   if (i.useEffect(() => {
-      if (l.eL && o) {
+      if (l.eL && a) {
         let t = new URL("discord://action/oauth2/authorize");
         t.search = e.search, window.open(t.toString(), "_self")
-      } else !o || l.tq || u.current || (Promise.resolve().then(n.bind(n, 536285)).then(t => {
+      } else !a || l.tq || u.current || (Promise.resolve().then(n.bind(n, 536285)).then(t => {
         let {
           default: n
         } = t;
         n.request(ei.Etm.DEEP_LINK, {
-          type: eo.jE.OAUTH2,
+          type: ea.jE.OAUTH2,
           params: {
             search: e.search
           }
@@ -152,21 +152,21 @@ function eh() {
           f(null != e && e)
         }).catch(() => f(!1)).then(() => n.disconnect())
       }), u.current = !0)
-    }, [e.search, o]), _ && !1 !== d) {
+    }, [e.search, a]), _ && !1 !== d) {
     let e;
     return e = !0 === d ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(R.Dx, {
-        children: ea.intl.string(ea.t.csrAMD)
+        children: eo.intl.string(eo.t.csrAMD)
       }), (0, r.jsx)(R.DK, {
-        children: ea.intl.string(ea.t["m1+IBg"])
+        children: eo.intl.string(eo.t["m1+IBg"])
       }), (0, r.jsx)(h.zx, {
         onClick: () => c(!0),
         color: h.zx.Colors.BRAND,
-        children: ea.intl.string(ea.t.fIv16O)
+        children: eo.intl.string(eo.t.fIv16O)
       })]
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(R.Dx, {
-        children: ea.intl.string(ea.t["Z+hCVV"])
+        children: eo.intl.string(eo.t["Z+hCVV"])
       }), (0, r.jsx)(E.$, {})]
     }), (0, r.jsx)(ee.G, {
       removeChildWrapper: !0,
@@ -194,7 +194,7 @@ function em(e) {
   let {
     header: n,
     body: i,
-    footer: o,
+    footer: a,
     nextStep: s,
     appDetails: l,
     hasContentBackground: c,
@@ -205,12 +205,12 @@ function em(e) {
     location: "oauth2_authorize"
   }), p = (0, r.jsxs)(r.Fragment, {
     children: [n, (0, r.jsxs)("div", {
-      className: a()(es.contentWrapper, u ? es.minimalPadding : null),
+      className: o()(es.contentWrapper, u ? es.minimalPadding : null),
       children: [(0, r.jsxs)("div", {
-        className: a()(es.content, c ? es.contentBackground : null, u ? es.minimalPadding : null, d ? es.extraWide : null),
+        className: o()(es.content, c ? es.contentBackground : null, u ? es.minimalPadding : null, d ? es.extraWide : null),
         children: [i, null != s || _.enabled ? null : l]
       }), null == s && _.enabled ? (0, r.jsx)("div", {
-        className: a()(es.content, c ? es.contentBackground : null, u ? es.minimalPadding : null, d ? es.extraWide : null),
+        className: o()(es.content, c ? es.contentBackground : null, u ? es.minimalPadding : null, d ? es.extraWide : null),
         children: l
       }) : null]
     })]
@@ -218,7 +218,7 @@ function em(e) {
   return (0, r.jsx)(ee.j, {
     transitionState: t,
     "aria-labelledby": ep,
-    footer: o,
+    footer: a,
     modalSize: f,
     children: (0, r.jsx)("div", {
       className: es.authorize,
@@ -231,9 +231,9 @@ function em(e) {
 }
 
 function eg(e) {
-  var t, n, o, a, l, m;
+  var t, n, a, o, l, m;
   let g, T, R, P, D, ee, {
-      clientId: eo,
+      clientId: ea,
       responseType: el,
       redirectUri: eu,
       codeChallenge: ef,
@@ -269,8 +269,8 @@ function eg(e) {
     return null == ex && null == eI && (null != (e = null == eb ? void 0 : eb.length) ? e : 0) === 0 && null == eu
   }, [ex, null == eb ? void 0 : eb.length, eu, eI]), [e8, e7] = i.useState(null);
   i.useEffect(() => {
-    e6 && N.ZP.fetchApplication(eo).then(e => e7(x.ZP.createFromServer(e)))
-  }, [eo, e6]);
+    e6 && N.ZP.fetchApplication(ea).then(e => e7(x.ZP.createFromServer(e)))
+  }, [ea, e6]);
   let e9 = i.useMemo(() => {
       var e, t;
       return null == e4 ? null : null == e8 || null == (t = e8.integrationTypesConfig) || null == (e = t[e4]) ? void 0 : e.oauth2InstallParams
@@ -296,7 +296,7 @@ function eg(e) {
       return null != t ? t : G.Hn
     }, [null == e9 ? void 0 : e9.permissions, ey, e6]),
     ti = i.useRef(!1),
-    [to, ta] = i.useState(null != eD ? eD : []),
+    [ta, to] = i.useState(null != eD ? eD : []),
     [ts, tl] = i.useState(null != eD && eD.length > 0);
   i.useEffect(() => {
     if (ti.current) return;
@@ -306,8 +306,8 @@ function eg(e) {
         let {
           disclosures: e,
           allAcked: t
-        } = await (0, C.de)(eo);
-        tl(!t), ta(e)
+        } = await (0, C.de)(ea);
+        tl(!t), to(e)
       } catch (n) {
         let {
           status: e,
@@ -323,7 +323,7 @@ function eg(e) {
       if (!k.default.isAuthenticated()) return void(0, F.c$)(eM, "oauth2_error_not_authenticated");
       e()
     }
-  }, [eo, eM, eD, ta, eF, tl, eB]);
+  }, [ea, eM, eD, to, eF, tl, eB]);
   let tc = i.useCallback(async e => {
       if (null != eP) {
         eH(!0), eP(e);
@@ -341,7 +341,7 @@ function eg(e) {
         eH(!0);
         let n = await (0, F.Iq)({
           authorize: e,
-          clientId: eo,
+          clientId: ea,
           scopes: tt,
           responseType: el,
           redirectUri: eu,
@@ -357,7 +357,7 @@ function eg(e) {
             allowMobilePush: e0
           }
         });
-        if (e && (await (0, C.x9)(eo, to), setTimeout(() => {
+        if (e && (await (0, C.x9)(ea, ta), setTimeout(() => {
             O.Z.fetch()
           }, 100)), null != eR) eR({
           application: null == ej ? void 0 : ej.application,
@@ -378,7 +378,7 @@ function eg(e) {
         let e = t.body;
         (null == e ? void 0 : e.message) != null && "" !== e.message ? eF(Error(e.message)) : eF(e), eB("AUTHORIZE_SCOPES"), eH(!1)
       }
-    }, [eP, eA, eR, null == ej ? void 0 : ej.application, e3, ew, eo, tt, el, eu, ef, e_, eh, em, tr, eJ, ez, e4, eQ, to, e0]),
+    }, [eP, eA, eR, null == ej ? void 0 : ej.application, e3, ew, ea, tt, el, eu, ef, e_, eh, em, tr, eJ, ez, e4, eQ, ta, e0]),
     tu = i.useRef(!1),
     td = i.useCallback(async () => {
       if (!k.default.isAuthenticated()) return void(0, F.c$)(eM, "oauth2_error_not_authenticated");
@@ -386,7 +386,7 @@ function eg(e) {
         tu.current = !0;
         try {
           let e = null != ex ? ex : await (0, F.Ww)({
-            clientId: eo,
+            clientId: ea,
             scopes: tt,
             responseType: el,
             redirectUri: eu,
@@ -411,7 +411,7 @@ function eg(e) {
           tu.current = !1
         }
       }
-    }, [eM, ex, eo, tt, el, eu, ef, e_, eh, em, e4, eg, tc, ts]),
+    }, [eM, ex, ea, tt, el, eu, ef, e_, eh, em, e4, eg, tc, ts]),
     tf = i.useMemo(() => {
       var e;
       return null != e8 && e6 ? Object.entries(null != (e = e8.integrationTypesConfig) ? e : {}).filter(e => {
@@ -426,13 +426,13 @@ function eg(e) {
   i.useEffect(() => {
     eG !== t_.current && (t_.current = eG, (0, S.yw)(ei.rMx.OAUTH2_AUTHORIZE_STEP_VIEWED, {
       step: eG,
-      application_id: eo,
+      application_id: ea,
       integration_type: e4,
       scopes: tt,
       permissions: tr.toString(),
       mobile_push_notification_default_setting: !1
     }))
-  }, [eo, e4, tr, tt, eG]), i.useEffect(() => {
+  }, [ea, e4, tr, tt, eG]), i.useEffect(() => {
     if (null == eG && (!e6 || null != e8) && ek)
       if (null != ex) {
         var e;
@@ -462,7 +462,7 @@ function eg(e) {
         color: "header-primary",
         children: "Error"
       }), (0, r.jsx)(h.zx, {
-        "aria-label": ea.intl.string(ea.t.cpT0Cg),
+        "aria-label": eo.intl.string(eo.t.cpT0Cg),
         look: h.zx.Looks.BLANK,
         size: h.zx.Sizes.NONE,
         onClick: ew,
@@ -546,23 +546,23 @@ function eg(e) {
           hideBorder: !0,
           onChange: e1,
           className: es.mobilePushContainer,
-          note: ea.intl.string(ea.t.hw1nKS),
+          note: eo.intl.string(eo.t.hw1nKS),
           value: e0,
           children: (0, r.jsx)(b.Text, {
             variant: "text-sm/medium",
-            children: ea.intl.string(ea.t["Pkw//v"])
+            children: eo.intl.string(eo.t["Pkw//v"])
           })
         }) : null, (0, r.jsx)("div", {
           className: es.intObserver,
           ref: th
         }), tN ? (0, r.jsx)(X.Z, {
-          error: (null != (o = null != (n = tS[u.x.BOT]) ? n : tS[u.x.APPLICATIONS_COMMANDS]) ? o : [])[0],
+          error: (null != (a = null != (n = tS[u.x.BOT]) ? n : tS[u.x.APPLICATIONS_COMMANDS]) ? a : [])[0],
           selectedGuildId: ez,
           onGuildChange: eq,
           guilds: null != tT ? tT : [],
           disabled: "" !== ez && null != ez && !0 === eS
         }) : null, tA ? (0, r.jsx)(en.Z, {
-          error: (null != (a = tS[u.x.WEBHOOK_INCOMING]) ? a : [])[0],
+          error: (null != (o = tS[u.x.WEBHOOK_INCOMING]) ? o : [])[0],
           selectedChannelId: eQ,
           selectedGuildId: ez,
           onChannelChange: eX
@@ -589,7 +589,7 @@ function eg(e) {
       children: [(0, r.jsx)(K.Z, {
         application: ej.application,
         scopes: tt,
-        disclosures: to,
+        disclosures: ta,
         redirectUri: null != (m = ej.redirect_uri) ? m : null,
         approximateGuildCount: void 0 !== e ? e : null,
         isEmbeddedFlow: eC
@@ -614,31 +614,31 @@ function eg(e) {
       look: h.zx.Looks.FILLED,
       color: h.zx.Colors.PRIMARY,
       onClick: () => eB(T),
-      children: ea.intl.string(ea.t["13/7kZ"])
+      children: eo.intl.string(eo.t["13/7kZ"])
     }) : (0, r.jsx)(h.zx, {
       look: h.zx.Looks.FILLED,
       color: h.zx.Colors.PRIMARY,
       onClick: () => tc(!1),
-      children: ea.intl.string(ea.t["ETE/oK"])
+      children: eo.intl.string(eo.t["ETE/oK"])
     }), "SELECT_INSTALL_TYPE" !== eG ? eY ? (0, r.jsx)("div", {
       className: es.action,
       children: (0, r.jsx)(h.zx, {
         onClick: null != R ? () => eB(R) : () => tc(!0),
         submitting: eZ,
         disabled: null == P || tb,
-        children: tb ? ea.intl.string(ea.t.BwwiSE) : null != R ? ea.intl.string(ea.t["3PatS0"]) : ea.intl.string(ea.t["y+/PEx"])
+        children: tb ? eo.intl.string(eo.t.BwwiSE) : null != R ? eo.intl.string(eo.t["3PatS0"]) : eo.intl.string(eo.t["y+/PEx"])
       })
     }) : (0, r.jsx)("div", {
       className: es.action,
       children: (0, r.jsx)(b.ua7, {
-        text: ea.intl.string(ea.t["7UiwCw"]),
+        text: eo.intl.string(eo.t["7UiwCw"]),
         children: e => (0, r.jsx)("div", ed(ec({}, e), {
           className: es.tooltip,
           children: (0, r.jsxs)(h.zx, {
             disabled: !0,
             submitting: eZ,
             innerClassName: es.buttonWithEmoji,
-            children: [ea.intl.string(ea.t.N22i9P), " ", (0, r.jsx)(v.Z, {
+            children: [eo.intl.string(eo.t.N22i9P), " ", (0, r.jsx)(v.Z, {
               className: es.emoji,
               src: j.ZP.getURL(p.Z.convert.fromCodePoint(er.I)),
               emojiName: ":point_down:",
@@ -664,11 +664,11 @@ function eE(e, t) {
   var n, i;
   if (null == t.location || null != e && e(t)) return;
   let {
-    host: o,
-    pathname: a,
+    host: a,
+    pathname: o,
     searchParams: s
-  } = null != (n = B.Z.toURLSafe(t.location)) ? n : {}, l = B.Z.isDiscordHostname(null != o ? o : null) || window.location.host === o;
-  l && a === ei.Z5c.OAUTH2_AUTHORIZED ? (0, m.h7)(e => {
+  } = null != (n = B.Z.toURLSafe(t.location)) ? n : {}, l = B.Z.isDiscordHostname(null != a ? a : null) || window.location.host === a;
+  l && o === ei.Z5c.OAUTH2_AUTHORIZED ? (0, m.h7)(e => {
     let n = (0, r.jsx)(et._Z, {
       guild: t.guild,
       application: t.application,
@@ -683,9 +683,9 @@ function eE(e, t) {
         onClose: e.onClose
       })
     }))
-  }) : l && (null == a ? void 0 : a.startsWith(ei.Z5c.OAUTH2_ERROR)) ? (0, m.h7)(e => {
+  }) : l && (null == o ? void 0 : o.startsWith(ei.Z5c.OAUTH2_ERROR)) ? (0, m.h7)(e => {
     var t, n;
-    let i = null != (n = null != (t = null == s ? void 0 : s.get("error_description")) ? t : null == s ? void 0 : s.get("error")) ? n : ea.intl.string(ea.t["mqn87+"]);
+    let i = null != (n = null != (t = null == s ? void 0 : s.get("error_description")) ? t : null == s ? void 0 : s.get("error")) ? n : eo.intl.string(eo.t["mqn87+"]);
     return Array.isArray(i) && (i = i[0]), (0, r.jsx)(ee.j, ed(ec({}, e), {
       "aria-labelledby": ep,
       children: (0, r.jsx)(et.Lk, {
@@ -720,7 +720,7 @@ function eO(e) {
     hostname: n = "",
     host: r,
     pathname: i,
-    search: o
+    search: a
   } = null != (t = B.Z.toURLSafe(e)) ? t : {};
-  return null != i && null != o && (B.Z.isDiscordHostname(n) || r === window.location.host) && (i.startsWith("/api".concat(ei.ANM.OAUTH2_AUTHORIZE)) || i.startsWith(ei.Z5c.OAUTH2_AUTHORIZE)) ? (0, V.y)(o) : null
+  return null != i && null != a && (B.Z.isDiscordHostname(n) || r === window.location.host) && (i.startsWith("/api".concat(ei.ANM.OAUTH2_AUTHORIZE)) || i.startsWith(ei.Z5c.OAUTH2_AUTHORIZE)) ? (0, V.y)(a) : null
 }

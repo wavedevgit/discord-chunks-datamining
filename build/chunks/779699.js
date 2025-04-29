@@ -3,11 +3,11 @@
 n.d(t, {
   Z: () => u
 });
-var r = n(200651);
-n(192379);
+var r = n(255367);
+n(73800);
 var i = n(120356),
-  o = n.n(i),
-  a = n(481060),
+  a = n.n(i),
+  o = n(481060),
   s = n(457926),
   l = n(388032),
   c = n(606629);
@@ -18,7 +18,7 @@ let u = function(e) {
   } = e, i = null;
   switch (t) {
     case "voice":
-      i = (0, r.jsx)(a.gj8, {
+      i = (0, r.jsx)(o.gj8, {
         size: "md",
         color: "currentColor",
         className: c.icon,
@@ -26,7 +26,7 @@ let u = function(e) {
       });
       break;
     case "voice-locked":
-      i = (0, r.jsx)(a.mBM, {
+      i = (0, r.jsx)(o.mBM, {
         size: "md",
         color: "currentColor",
         className: c.icon,
@@ -34,7 +34,7 @@ let u = function(e) {
       });
       break;
     case "stage":
-      i = (0, r.jsx)(a.ewx, {
+      i = (0, r.jsx)(o.ewx, {
         size: "lg",
         color: "currentColor",
         className: c.icon,
@@ -42,7 +42,7 @@ let u = function(e) {
       });
       break;
     case "stage-locked":
-      i = (0, r.jsx)(a.mBM, {
+      i = (0, r.jsx)(o.mBM, {
         size: "md",
         color: "currentColor",
         className: c.icon,
@@ -50,7 +50,7 @@ let u = function(e) {
       });
       break;
     case "thread":
-      i = (0, r.jsx)(a.or_, {
+      i = (0, r.jsx)(o.or_, {
         size: "md",
         color: "currentColor",
         className: c.icon,
@@ -58,7 +58,7 @@ let u = function(e) {
       });
       break;
     case "text":
-      i = (0, r.jsx)(a.VL1, {
+      i = (0, r.jsx)(o.VL1, {
         size: "md",
         color: "currentColor",
         className: c.icon,
@@ -66,7 +66,7 @@ let u = function(e) {
       });
       break;
     case "forum":
-      i = (0, r.jsx)(a.Mmi, {
+      i = (0, r.jsx)(o.Mmi, {
         size: "md",
         color: "currentColor",
         className: c.icon,
@@ -74,7 +74,7 @@ let u = function(e) {
       });
       break;
     case "post":
-      i = (0, r.jsx)(a.kBi, {
+      i = (0, r.jsx)(o.kBi, {
         size: "md",
         color: "currentColor",
         className: c.icon,
@@ -83,7 +83,7 @@ let u = function(e) {
       break;
     case "home":
     case "guide":
-      i = (0, r.jsx)(a.Vy8, {
+      i = (0, r.jsx)(o.Vy8, {
         size: "md",
         color: "currentColor",
         className: c.icon,
@@ -92,7 +92,7 @@ let u = function(e) {
       break;
     case "browse":
     case "customize":
-      i = (0, r.jsx)(a.H$4, {
+      i = (0, r.jsx)(o.H$4, {
         size: "md",
         color: "currentColor",
         className: c.icon,
@@ -100,7 +100,7 @@ let u = function(e) {
       });
       break;
     case "message":
-      i = (0, r.jsx)(a.kBi, {
+      i = (0, r.jsx)(o.kBi, {
         size: "md",
         color: "currentColor",
         className: c.icon,
@@ -108,7 +108,7 @@ let u = function(e) {
       });
       break;
     case "locked":
-      i = (0, r.jsx)(a.mBM, {
+      i = (0, r.jsx)(o.mBM, {
         size: "md",
         color: "currentColor",
         className: c.icon,
@@ -116,7 +116,7 @@ let u = function(e) {
       });
       break;
     case "media":
-      i = (0, r.jsx)(a.XBm, {
+      i = (0, r.jsx)(o.XBm, {
         size: "md",
         color: "currentColor",
         className: c.icon,
@@ -124,7 +124,7 @@ let u = function(e) {
       });
       break;
     case "linked-roles":
-      i = (0, r.jsx)(a.xPt, {
+      i = (0, r.jsx)(o.xPt, {
         size: "md",
         color: "currentColor",
         className: c.icon,
@@ -132,7 +132,7 @@ let u = function(e) {
       })
   }
   return (0, r.jsxs)("span", {
-    className: o()("channelWithIcon", {
+    className: a()("channelWithIcon", {
       [c.iconMentionText]: "text" === t
     }),
     children: [(0, r.jsx)(s.Z, {

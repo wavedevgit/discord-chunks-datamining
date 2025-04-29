@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  NM: () => o
+  NM: () => a
 });
 var r = n(162461);
 let i = (0, n(818083).B)({
@@ -20,26 +20,26 @@ let i = (0, n(818083).B)({
   }]
 });
 
-function o(e) {
+function a(e) {
   let {
     guildId: t,
     location: n,
-    autoTrackExposure: o = !0
+    autoTrackExposure: a = !0
   } = e, {
-    enabled: a
+    enabled: o
   } = r.DG.getCurrentConfig({
     location: n
   }, {
     autoTrackExposure: !1
   });
-  if (!a) return !1;
+  if (!o) return !1;
   let {
     enabled: s
   } = i.getCurrentConfig({
     guildId: t,
     location: n
   }, {
-    autoTrackExposure: o
+    autoTrackExposure: a
   });
   return s
 }

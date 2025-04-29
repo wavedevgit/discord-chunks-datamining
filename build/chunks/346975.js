@@ -3,13 +3,13 @@
 n.r(t), n.d(t, {
   default: () => ef
 }), n(35282), n(388685), n(781311);
-var r = n(200651),
-  i = n(192379),
+var r = n(255367),
+  i = n(73800),
   l = n(120356),
   a = n.n(l),
   s = n(196434),
   o = n.n(s),
-  c = n(359959),
+  c = n(760907),
   d = n(91192),
   u = n(924826),
   m = n(536895),
@@ -614,7 +614,7 @@ function ey(e) {
     parentId: t.id,
     focusedThreadId: ej
   });
-  let e9 = i.useCallback(() => {
+  let e6 = i.useCallback(() => {
       var e, n;
       if (ef) return;
       let r = ei ? null == (e = eW.current) ? void 0 : e.getScrollerState() : null == (n = et.current) ? void 0 : n.getScrollerState();
@@ -626,23 +626,23 @@ function ey(e) {
       let i = r.scrollTop + r.offsetHeight;
       r.scrollHeight - i < (ei ? Math.max(200, (0, er.KW)(eP)) : 200) && C()
     }, [ef, ei, t.guild_id, t.id, eP, C]),
-    e1 = (0, g.e7)([j.Z], () => j.Z.keyboardModeEnabled),
-    e6 = (0, ea.ZP)({
+    e8 = (0, g.e7)([j.Z], () => j.Z.keyboardModeEnabled),
+    e1 = (0, ea.ZP)({
       id: "forum-grid-view",
-      isEnabled: ei && e1,
+      isEnabled: ei && e8,
       setFocus: e3
     }),
-    e8 = (0, es.Z)({
+    e9 = (0, es.Z)({
       listRef: et,
       padding: 96,
-      isEnabled: !ei && e1,
+      isEnabled: !ei && e8,
       channel: t
     }),
-    e2 = e6.containerProps,
+    e4 = e1.containerProps,
     {
-      ref: e4
-    } = e2,
-    e5 = eg(e2, ["ref"]),
+      ref: e5
+    } = e4,
+    e2 = eg(e4, ["ref"]),
     e7 = R.ZP.getSidebarState(t.id),
     te = null != e7 && (0, R.D5)(e7),
     tt = (0, g.e7)([R.ZP], () => R.ZP.getSection(t.id)) === eo.ULH.MEMBERS;
@@ -671,11 +671,11 @@ function ey(e) {
             channel: t
           })
         }) : null, ei ? (0, r.jsx)(ea.KT, {
-          navigator: e6,
+          navigator: e1,
           children: (0, r.jsx)(p.GMG, em({
             ref: e => {
               var t;
-              e4.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null, eK(e)
+              e5.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null, eK(e)
             },
             itemGutter: 16,
             padding: 24,
@@ -688,11 +688,11 @@ function ey(e) {
             renderSection: eY,
             renderItem: eQ,
             getSectionProps: e0,
-            onScroll: v ? e9 : void 0,
+            onScroll: v ? e6 : void 0,
             chunkSize: 350
-          }, e5, e), A)
+          }, e2, e), A)
         }) : (0, r.jsx)(d.bG, {
-          navigator: e8,
+          navigator: e9,
           children: (0, r.jsx)(d.SJ, {
             children: t => {
               var {
@@ -707,7 +707,7 @@ function ey(e) {
                 renderRow: eG,
                 renderSection: eV,
                 chunkSize: 150,
-                onScroll: v ? e9 : void 0,
+                onScroll: v ? e6 : void 0,
                 paddingBottom: 24
               }, i, e), {
                 innerRole: "list"

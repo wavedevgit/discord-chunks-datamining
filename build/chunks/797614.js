@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(539854);
 var r = n(404097),
   i = n(544891),
-  o = n(358085),
-  a = n(747268),
+  a = n(358085),
+  o = n(747268),
   s = n(20186),
   l = n(981631);
 
@@ -51,15 +51,15 @@ function f(e, t) {
 let _ = new Set(["darwin", "linux", "win32", "ios", "android"]);
 
 function p() {
-  if ((0, o.isWeb)()) return "web";
+  if ((0, a.isWeb)()) return "web";
   {
-    let e = (0, o.getPlatformName)();
+    let e = (0, a.getPlatformName)();
     return _.has(e) ? e : null
   }
 }
 
 function h() {
-  let e = a.Z;
+  let e = o.Z;
   return null != e && r.e.ALL.has(e) ? e : null
 }
 let m = 12e4,
@@ -77,10 +77,10 @@ class E {
     null != r && r.forEach(e => {
       i.tags.push(e)
     });
-    let o = p();
-    null != o && i.tags.push("platform:".concat(o));
-    let a = h();
-    return null != a && i.tags.push("release_channel:".concat(a)), i
+    let a = p();
+    null != a && i.tags.push("platform:".concat(a));
+    let o = h();
+    return null != o && i.tags.push("release_channel:".concat(o)), i
   }
   increment(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
@@ -102,8 +102,8 @@ class E {
         body: {
           metrics: e,
           client_info: {
-            built_at: "1745962040234",
-            build_number: "395025"
+            built_at: "1745962615545",
+            build_number: "395030"
           }
         },
         retries: 1,

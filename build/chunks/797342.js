@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(442837),
   i = n(594174),
-  o = n(26033),
-  a = n(593294);
+  a = n(26033),
+  o = n(593294);
 
 function s(e) {
   var t, n, s, l, c;
@@ -14,10 +14,10 @@ function s(e) {
     {
       activity: d,
       embeddedActivity: f
-    } = (0, a.Z)(e);
+    } = (0, o.Z)(e);
   if (null == d) return {
     isRich: !1,
-    appName: (0, o.dX)(e) ? e.extra.game_name : void 0,
+    appName: (0, a.dX)(e) ? e.extra.game_name : void 0,
     user: u,
     activity: void 0,
     embeddedActivity: void 0,

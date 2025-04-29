@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => d
 });
 var r, i = n(442837),
-  o = n(570140),
-  a = n(981631);
+  a = n(570140),
+  o = n(981631);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -21,7 +21,7 @@ function c(e) {
   let {
     port: t
   } = e;
-  l = a.V6Z - t
+  l = o.V6Z - t
 }
 class u extends(r = i.ZP.Store) {
   getId() {
@@ -29,6 +29,6 @@ class u extends(r = i.ZP.Store) {
   }
 }
 s(u, "displayName", "InstanceIdStore");
-let d = new u(o.Z, {
+let d = new u(a.Z, {
   RPC_SERVER_READY: c
 })

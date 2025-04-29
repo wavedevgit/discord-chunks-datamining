@@ -3,10 +3,10 @@
 n.d(t, {
   p: () => g
 });
-var r = n(200651),
+var r = n(255367),
   i = n(120356),
-  o = n.n(i),
-  a = n(657707),
+  a = n.n(i),
+  o = n(657707),
   s = n(793030),
   l = n(481060),
   c = n(436774),
@@ -27,10 +27,10 @@ let g = e => {
     onNonTier2Subscriber: h.intl.string(h.t.IJI7ys)
   });
   return E ? null : (0, r.jsxs)("div", {
-    className: o()(m.upsellContainer, n),
+    className: a()(m.upsellContainer, n),
     children: [(0, r.jsxs)("div", {
       className: m.row,
-      children: [(0, r.jsx)(a.SrA, {
+      children: [(0, r.jsx)(o.SrA, {
         size: "md",
         color: c.JX.PREMIUM_TIER_2
       }), (0, r.jsx)(s.xv, {

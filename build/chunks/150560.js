@@ -3,7 +3,7 @@
 n.d(t, {
   Z: () => i
 });
-let r = (0, n(290486).U)(e => ({
+let r = (0, n(381814).U)(e => ({
     utmSourceCurrent: void 0,
     utmMediumCurrent: void 0,
     utmCampaignCurrent: void 0,
@@ -13,13 +13,13 @@ let r = (0, n(290486).U)(e => ({
         utmSourceCurrent: n,
         utmMediumCurrent: r,
         utmCampaignCurrent: i,
-        utmContentCurrent: o
+        utmContentCurrent: a
       } = t;
       return e({
         utmSourceCurrent: n,
         utmMediumCurrent: r,
         utmCampaignCurrent: i,
-        utmContentCurrent: o
+        utmContentCurrent: a
       })
     },
     getUtmCurrentContext: () => r.getState()

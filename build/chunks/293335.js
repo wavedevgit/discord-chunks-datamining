@@ -3,17 +3,17 @@
 n.d(t, {
   Z: () => i
 }), n(388685), n(539854);
-var r = n(192379);
+var r = n(73800);
 let i = (e, t) => {
-  let [n, i] = r.useState(-1), o = r.useRef(-1);
+  let [n, i] = r.useState(-1), a = r.useRef(-1);
   return r.useEffect(() => {
     let t = e.reduce((e, t) => (e.includes(t.src) || e.push(t.src), e), []);
-    i(t.length), o.current = t.length
-  }, [e, o, i]), r.useEffect(() => {
+    i(t.length), a.current = t.length
+  }, [e, a, i]), r.useEffect(() => {
     0 === n && t()
   }, [n, t]), {
     pending: n,
-    pendingRef: o,
+    pendingRef: a,
     setPending: i
   }
 }

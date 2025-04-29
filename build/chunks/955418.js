@@ -3,10 +3,10 @@
 n.d(t, {
   Z: () => g
 }), n(388685), n(781311);
-var r = n(200651),
-  i = n(192379),
-  o = n(906732),
-  a = n(541716),
+var r = n(255367),
+  i = n(73800),
+  a = n(906732),
+  o = n(541716),
   s = n(752305),
   l = n(893718),
   c = n(131704),
@@ -29,13 +29,13 @@ function g(e) {
     onClose: _
   } = e, {
     newestAnalyticsLocation: g
-  } = (0, o.ZP)(), {
+  } = (0, a.ZP)(), {
     trackUserProfileAction: E
   } = (0, d.KZ)(), [b, y] = i.useState(""), [O, v] = i.useState((0, s.JM)(b)), I = i.useRef(!1);
   return (0, r.jsx)(l.Z, {
     className: h.container,
     editorClassName: h.editor,
-    type: a.Ie.USER_PROFILE,
+    type: o.Ie.USER_PROFILE,
     placeholder: p.intl.formatToPlainString(p.t["0ZQw/f"], {
       name: u.ZP.getName(n, c, t)
     }),

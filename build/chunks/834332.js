@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(275726),
   i = n(904245),
-  o = n(147913),
-  a = n(314897),
+  a = n(147913),
+  o = n(314897),
   s = n(592125),
   l = n(375954),
   c = n(496675),
@@ -24,7 +24,7 @@ function h(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class m extends o.Z {
+class m extends a.Z {
   handleVoiceStateUpdates(e) {
     let {
       voiceStates: t
@@ -33,10 +33,10 @@ class m extends o.Z {
       let {
         channelId: t,
         userId: n,
-        suppress: o,
+        suppress: a,
         requestToSpeakTimestamp: h
       } = e;
-      if (u.Z.getVoiceChannelId() === t && o && null != t && n !== a.default.getId() && c.Z.can(f.yP, s.Z.getChannel(t)))
+      if (u.Z.getVoiceChannelId() === t && a && null != t && n !== o.default.getId() && c.Z.can(f.yP, s.Z.getChannel(t)))
         if (null != h) {
           let e = d.default.getUser(n);
           null != e && (0, _.U)(t, e, h)

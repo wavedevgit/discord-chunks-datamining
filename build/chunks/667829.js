@@ -3,10 +3,10 @@
 n.d(t, {
   Z: () => j
 }), n(388685), n(539854), n(35282);
-var r = n(200651),
-  i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+var r = n(255367),
+  i = n(73800),
+  a = n(120356),
+  o = n.n(a),
   s = n(392711),
   l = n.n(s),
   c = n(218887),
@@ -195,7 +195,7 @@ class j extends i.Component {
     return e && !n ? R.intl.string(R.t.IYKTTU) : t
   }
   render() {
-    var e, t, n, i, o, s;
+    var e, t, n, i, a, s;
     let {
       textValue: l,
       richValue: c,
@@ -224,7 +224,7 @@ class j extends i.Component {
       popup: F
     } = this.state, Z = {
       channel: m,
-      className: a()(R, P.textArea, {
+      className: o()(R, P.textArea, {
         [P.textAreaSlate]: b,
         [P.textAreaDisabled]: u || V
       }),
@@ -248,7 +248,7 @@ class j extends i.Component {
       onResize: p,
       onKeyDown: _,
       onSubmit: h,
-      textAreaPaddingClassName: a()(k[E], {
+      textAreaPaddingClassName: o()(k[E], {
         [P.textAreaWithoutAttachmentButton]: g !== v.Ie.NORMAL && g !== v.Ie.OVERLAY && g !== v.Ie.THREAD_CREATION && g !== v.Ie.SIDEBAR,
         [P.textAreaForPostCreation]: g === v.Ie.CREATE_FORUM_POST,
         [P.textAreaCustomGift]: g === v.Ie.CUSTOM_GIFT,
@@ -259,7 +259,7 @@ class j extends i.Component {
       useNewSlashCommands: S,
       disableAutoFocus: f.tq || null != (n = g.disableAutoFocus) && n,
       disableEnterToSubmit: null != (i = null == (e = g.submit) ? void 0 : e.disableEnterToSubmit) && i,
-      "aria-controls": null != (o = F.id) ? o : void 0,
+      "aria-controls": null != (a = F.id) ? a : void 0,
       "aria-haspopup": "listbox",
       "aria-expanded": null !== F.id || void 0,
       "aria-activedescendant": null != (s = F.activeDescendant) ? s : void 0,
@@ -364,21 +364,21 @@ class j extends i.Component {
         canPasteFiles: n,
         uploadPromptCharacterCount: r,
         promptToUpload: i,
-        maxCharacterCount: o,
-        type: a
+        maxCharacterCount: a,
+        type: o
       } = this.props;
       if (null == i || !t.isPrivate() && !n || t.isPrivate() && t.isManaged()) return !1;
       let s = (e, n) => {
-          var r, o;
+          var r, a;
           let s = g.Z.getActiveCommand(t.id);
-          if (null == s) return i(e, t, a.drafts.type, {
+          if (null == s) return i(e, t, o.drafts.type, {
             requireConfirm: !0,
             showLargeMessageDialog: n
           });
-          let l = null != (r = a.drafts.commandType) ? r : a.drafts.type,
+          let l = null != (r = o.drafts.commandType) ? r : o.drafts.type,
             c = null,
             u = g.Z.getActiveOption(t.id);
-          null != (c = (null == u ? void 0 : u.type) === h.jw.ATTACHMENT ? u : null == (o = s.options) ? void 0 : o.find(e => {
+          null != (c = (null == u ? void 0 : u.type) === h.jw.ATTACHMENT ? u : null == (a = s.options) ? void 0 : a.find(e => {
             if (e.type === h.jw.ATTACHMENT) return null == b.Z.getUpload(t.id, e.name, l)
           })) && p.Z.setFile({
             channelId: t.id,
@@ -391,10 +391,10 @@ class j extends i.Component {
             }
           })
         },
-        l = null != r ? r : o,
+        l = null != r ? r : a,
         {
           files: c
-        } = U(e.clipboardData, a.uploadLongMessages ? l : null);
+        } = U(e.clipboardData, o.uploadLongMessages ? l : null);
       return M("onPaste", [...e.clipboardData.items].map(e => {
         if ("file" !== e.kind) return {
           kind: e.kind,
@@ -428,21 +428,21 @@ function U(e, t) {
   let n = [],
     r = [],
     i = null,
-    o = null;
+    a = null;
   for (let t of e.items)
     if ("file" === t.kind) {
       let e = t.getAsFile();
       if (null == e) continue;
       null != e.path && e.path.length > 0 ? n.push(e) : r.push(e)
-    } else "string" === t.kind && ("text/plain" === t.type && null == i ? i = t : "text/html" === t.type && null == o && (o = t));
+    } else "string" === t.kind && ("text/plain" === t.type && null == i ? i = t : "text/html" === t.type && null == a && (a = t));
   if (n.length > 0) return {
     files: n
   };
   if (r.length > 0) {
-    if (1 === r.length && "image/png" === r[0].type && null != o) {
-      var a;
+    if (1 === r.length && "image/png" === r[0].type && null != a) {
+      var o;
       let t = r[0],
-        n = null != (a = G(e.getData(o.type))) ? a : t.name;
+        n = null != (o = G(e.getData(a.type))) ? o : t.name;
       return {
         files: [(0, O.dp)(t, n, t.type)]
       }

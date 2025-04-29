@@ -3,11 +3,11 @@
 n.d(t, {
   Z: () => I
 });
-var r = n(200651);
-n(192379);
+var r = n(255367);
+n(73800);
 var i = n(481060),
-  o = n(239091),
-  a = n(287734),
+  a = n(239091),
+  o = n(287734),
   s = n(364640),
   l = n(754688),
   c = n(336197),
@@ -75,19 +75,19 @@ async function v(e, t, n) {
     } catch (e) {}
   }
   let r = _.Z.getChannel(t);
-  if (null != r && null == n && (0, f.bw)(r.type) && (0, l.YO)(r)) return void a.default.selectVoiceChannel(r.id);
+  if (null != r && null == n && (0, f.bw)(r.type) && (0, l.YO)(r)) return void o.default.selectVoiceChannel(r.id);
   (0, c.Z)(g.Z5c.CHANNEL(e, t, n))
 }
 
 function I(e) {
   return {
-    react(t, a, s) {
+    react(t, o, s) {
       let l = _.Z.getChannel(t.channelId),
         c = s.noStyleAndInteraction ? void 0 : n => {
           e.shouldStopPropagation && (null == n || n.stopPropagation()), v(t.guildId, t.channelId, t.messageId), e.shouldCloseDefaultModals && (0, i.pTH)()
         },
         f = s.noStyleAndInteraction || null == t.channelId || null == l && null == t.originalLink ? g.dG4 : e => {
-          (0, o.jW)(e, async () => {
+          (0, a.jW)(e, async () => {
             let {
               default: e
             } = await n.e("9573").then(n.bind(n, 546649));
@@ -107,7 +107,7 @@ function I(e) {
         onClick: c,
         onContextMenu: f,
         className: "channelMention",
-        children: [null != t.inContent ? a(t.inContent, s) : null, null != t.inContent ? (0, r.jsx)(d.Z, {}) : null, (0, m.S)(t, a, s)]
+        children: [null != t.inContent ? o(t.inContent, s) : null, null != t.inContent ? (0, r.jsx)(d.Z, {}) : null, (0, m.S)(t, o, s)]
       }, s.key)
     }
   }

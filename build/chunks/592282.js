@@ -3,10 +3,10 @@
 n.d(t, {
   S: () => O
 });
-var r = n(200651),
-  i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+var r = n(255367),
+  i = n(73800),
+  a = n(120356),
+  o = n.n(a),
   s = n(1561),
   l = n(761224),
   c = n(670596),
@@ -61,7 +61,7 @@ function O(e) {
   let {
     color: t = "default",
     label: n,
-    checked: o,
+    checked: a,
     subtext: g,
     disabled: b,
     isFocused: O,
@@ -82,14 +82,14 @@ function O(e) {
   }, [I, A]);
   return (0, r.jsxs)(s.P, y(E({
     innerRef: N,
-    className: a()(m.item, m.checkboxContainer, m.labelContainer, h._[t], S, {
+    className: o()(m.item, m.checkboxContainer, m.labelContainer, h._[t], S, {
       [m.disabled]: b,
       [m.focused]: O,
       [null != T ? T : ""]: O
     }),
     onClick: b ? void 0 : R
   }, v), {
-    "aria-checked": o,
+    "aria-checked": a,
     "aria-disabled": b,
     children: [(0, r.jsxs)("div", {
       className: m.label,
@@ -102,9 +102,9 @@ function O(e) {
       children: C ? (0, r.jsx)(d.FZ5, {
         shape: d.XZJ.Shapes.BOX,
         size: 20,
-        value: o,
+        value: a,
         disabled: b
-      }) : o ? (0, r.jsx)(p.Z, {
+      }) : a ? (0, r.jsx)(p.Z, {
         className: m.icon,
         background: m.checkbox,
         foreground: m.check

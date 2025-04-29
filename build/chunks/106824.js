@@ -6,8 +6,8 @@ n.d(t, {
 }), n(388685);
 var r = n(836560),
   i = n(555573),
-  o = n(376918),
-  a = n(695346),
+  a = n(376918),
+  o = n(695346),
   s = n(590921),
   l = n(152089);
 
@@ -145,9 +145,9 @@ class p extends r.EventEmitter {
       type: d,
       typeInfo: f,
       query: _
-    } = c, p = r || n && ((null == (e = this.state.query) ? void 0 : e.queryText) !== _ || (null == (t = this.state.query) ? void 0 : t.typeInfo) !== f), h = a.fq.getSetting();
+    } = c, p = r || n && ((null == (e = this.state.query) ? void 0 : e.queryText) !== _ || (null == (t = this.state.query) ? void 0 : t.typeInfo) !== f), h = o.fq.getSetting();
     i.allowStickers = i.allowStickers ? h : i.allowStickers;
-    let m = a.eR.getSetting();
+    let m = o.eR.getSetting();
     i.allowSoundmoji = i.allowSoundmoji ? m : i.allowSoundmoji;
     let {
       results: g,
@@ -157,7 +157,7 @@ class p extends r.EventEmitter {
     let y = !0 === g.isLoading,
       O = this.shouldShow(b, y, f),
       v = this.state.selectedIndex;
-    !O || y ? v = null : null != v && v >= b && (v = b - 1), O && !this.state.isVisible && (0, o.a7)(d, this.props.channel, E), this.setState({
+    !O || y ? v = null : null != v && v >= b && (v = b - 1), O && !this.state.isVisible && (0, a.a7)(d, this.props.channel, E), this.setState({
       query: {
         type: d,
         typeInfo: f,
@@ -175,7 +175,7 @@ class p extends r.EventEmitter {
     return this.props.focused && null == this.props.expressionPickerView && (e > 0 || t || n.showEmpty)
   }
   selectResult(e, t, n) {
-    var r, i, a;
+    var r, i, o;
     if (!this.state.isVisible) return !1;
     let {
       type: l,
@@ -195,7 +195,7 @@ class p extends r.EventEmitter {
       tabOrEnter: n,
       queryText: null == (r = this.state.query) ? void 0 : r.queryText
     });
-    return null != _ && (0, o.Qt)(l, null != (a = _.type) ? a : null, this.props.channel, _.metadata), !0
+    return null != _ && (0, a.Qt)(l, null != (o = _.type) ? o : null, this.props.channel, _.metadata), !0
   }
   setState(e) {
     for (let t in e)

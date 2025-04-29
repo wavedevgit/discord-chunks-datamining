@@ -3,10 +3,10 @@
 n.d(t, {
   Z: () => N
 }), n(388685), n(781311);
-var r = n(200651),
-  i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+var r = n(255367),
+  i = n(73800),
+  a = n(120356),
+  o = n.n(a),
   s = n(106351),
   l = n(507274),
   c = n(541716),
@@ -37,11 +37,11 @@ let S = (0, f.kt)({
     } = e;
     switch (r) {
       case y.n_.ACTIVITY:
-        let o = v.intl.formatToPlainString(v.t.WmvMCg, {
+        let a = v.intl.formatToPlainString(v.t.WmvMCg, {
             username: n
           }),
-          a = "\n> ".concat(i);
-        return null != i ? "".concat(E.jd).concat(o, "*").concat(a, "\n").concat(t) : "".concat(E.jd).concat(o, "*\n").concat(t);
+          o = "\n> ".concat(i);
+        return null != i ? "".concat(E.jd).concat(a, "*").concat(o, "\n").concat(t) : "".concat(E.jd).concat(a, "*\n").concat(t);
       case y.n_.AVATAR:
         let s = v.intl.formatToPlainString(v.t.lpaBsL, {
           username: n
@@ -74,7 +74,7 @@ function N(e) {
   let {
     user: t,
     guildId: n,
-    channelId: o,
+    channelId: a,
     sourceType: s,
     sourceDetails: f,
     setPopoutRef: _,
@@ -129,7 +129,7 @@ function N(e) {
     ref: U,
     onKeyDown: G,
     children: (0, r.jsx)("div", {
-      className: a()(I.container, V, {
+      className: o()(I.container, V, {
         [I.customProfileTheme]: null != D
       }),
       children: (0, r.jsx)(d.Z, {
@@ -140,7 +140,7 @@ function N(e) {
         editorClassName: I.editor,
         type: c.Ie.USER_PROFILE_REPLY,
         placeholder: v.intl.formatToPlainString(A(s), {
-          username: p.ZP.getName(n, o, t)
+          username: p.ZP.getName(n, a, t)
         }),
         channel: S,
         textValue: L,

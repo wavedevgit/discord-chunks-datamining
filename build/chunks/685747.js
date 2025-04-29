@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.r(t), n.d(t, {
-  default: () => a,
+  default: () => o,
   messagesLoader: () => i
 });
 let {
   createLoader: r
-} = n(164484), i = r({
+} = n(66685), i = r({
   bg: () => n.e("12040").then(n.t.bind(n, 941917, 19)),
   cs: () => n.e("20609").then(n.t.bind(n, 120666, 19)),
   da: () => n.e("96976").then(n.t.bind(n, 707182, 19)),
@@ -39,5 +39,5 @@ let {
   "zh-TW": () => n.e("22717").then(n.t.bind(n, 617529, 19)),
   "en-US": () => n.e("59817").then(n.bind(n, 420907))
 }, "en-US"), {
-  makeMessagesProxy: o
-} = n(164484), a = o(i)
+  makeMessagesProxy: a
+} = n(66685), o = a(i)

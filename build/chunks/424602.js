@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  aZ: () => a,
+  aZ: () => o,
   gu: () => i
 });
 var r = n(818083);
 let i = "1211781489931452447",
-  o = (0, r.B)({
+  a = (0, r.B)({
     kind: "guild",
     id: "2025-02_filter_wordle_from_voice_channel_launcher",
     label: "Filter Wordle From Voice Channel Launcher",
@@ -22,8 +22,8 @@ let i = "1211781489931452447",
     }]
   });
 
-function a(e, t) {
-  return void 0 !== e && (null == e ? void 0 : e.isGuildVoice()) && o.getCurrentConfig({
+function o(e, t) {
+  return void 0 !== e && (null == e ? void 0 : e.isGuildVoice()) && a.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: !0

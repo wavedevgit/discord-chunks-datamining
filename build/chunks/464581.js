@@ -1,26 +1,26 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
-var r = n(192379),
+var r = n(73800),
   i = n(887490);
 
-function o(e, t, n) {
-  let o = r.useCallback(e => {
+function a(e, t, n) {
+  let a = r.useCallback(e => {
       if (t) return !0;
       if (!0 === e.defaultPrevented) return !1;
       let r = n(e);
       return r && (e.preventDefault(), e.stopPropagation()), r
     }, [t, n]),
-    a = r.useCallback(t => {
+    o = r.useCallback(t => {
       let {
         event: n
       } = t;
-      o(n) || (n.preventDefault(), n.stopPropagation(), null != n.clipboardData && (e.insertData(n.clipboardData), i.bN.focus(e)))
-    }, [e, o]);
+      a(n) || (n.preventDefault(), n.stopPropagation(), null != n.clipboardData && (e.insertData(n.clipboardData), i.bN.focus(e)))
+    }, [e, a]);
   return {
-    handlePaste: o,
-    handleGlobalPaste: a
+    handlePaste: a,
+    handleGlobalPaste: o
   }
 }
