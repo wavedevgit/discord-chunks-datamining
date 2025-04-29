@@ -538,7 +538,7 @@ function ec(e) {
         }
       })), e.filter(e => !h || e.application.id !== w.gu)
     }, [a, l.application_directory_collection_items, l.flags, o, h]),
-    _ = l.id;
+    _ = l.title;
   switch (l.type) {
     case p.o.BANNER_CARDS:
     case p.o.SMALL_BANNER_CARDS:
