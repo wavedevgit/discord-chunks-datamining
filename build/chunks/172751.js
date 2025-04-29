@@ -48,7 +48,7 @@ let g = i.memo(function(e) {
     } = e;
     return null == t ? null : (0, r.jsx)("img", {
       src: t,
-      alt: _.intl.formatToPlainString(_.t.PShNVV, {
+      alt: _.intl.formatToPlainString(_.t.uPLDZG, {
         tag: n
       }),
       className: a()(p.badge, i),
