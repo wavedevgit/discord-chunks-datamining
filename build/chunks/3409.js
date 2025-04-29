@@ -3,7 +3,7 @@
 n.d(t, {
   fL: () => eA,
   vP: () => eT
-}), n(388685), n(539854), n(49124), n(415506);
+}), n(388685), n(49124), n(415506);
 var r = n(200651),
   i = n(192379),
   o = n(734530),
@@ -370,11 +370,12 @@ function eT(e) {
   function ta(e) {
     eW(e.id), eY(e)
   }
-  let ts = (0, G.isDesktop)() ? [] : ["applePay", "googlePay"];
-  (!(0, G.isDesktop)() || X) && ts.push("googlePay", "applePay");
-  let [tl, tc] = i.useState(!1), tu = i.useRef(null), td = () => {
-    null != tu.current && tu.current.show()
-  };
+  let ts = !(0, G.isDesktop)() || X ? ["applePay", "googlePay"] : [],
+    [tl, tc] = i.useState(!1),
+    tu = i.useRef(null),
+    td = () => {
+      null != tu.current && tu.current.show()
+    };
   switch (ew) {
     case A.h8.ATTEMPT_GOOGLE_PAY:
     case A.h8.ATTEMPT_APPLE_PAY:
