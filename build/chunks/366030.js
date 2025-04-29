@@ -32,8 +32,8 @@ var r = n(200651),
   I = n(458034),
   k = n(856651),
   N = n(981631),
-  M = n(228168),
-  R = n(388032),
+  R = n(228168),
+  M = n(388032),
   E = n(933466);
 
 function Z(e) {
@@ -65,13 +65,13 @@ function A(e) {
   } = e;
   if (null != s) switch (a) {
     case k.iO.LESS_THAN:
-      t = R.intl.format(R.t["2p7dAw"], {
+      t = M.intl.format(M.t["2p7dAw"], {
         description: s,
         count: Math.max(0, Number(i) - 1)
       });
       break;
     case k.iO.GREATER_THAN:
-      t = R.intl.format(R.t["2p7dAw"], {
+      t = M.intl.format(M.t["2p7dAw"], {
         description: s,
         count: Math.max(0, Number(i) + 1)
       });
@@ -176,7 +176,7 @@ function B(e) {
     var e, t;
     return null != (t = null == (e = j.ZP.getSelfMember(d)) ? void 0 : e.roles.includes(l)) && t
   }, [d, l]);
-  return t = 1 === i.length && 1 === i[0].length ? R.intl.string(R.t.jDym4O) : 1 === i.length ? R.intl.format(R.t["0eBj39"], {}) : R.intl.format(R.t.D7uftL, {}), (0, r.jsxs)("div", {
+  return t = 1 === i.length && 1 === i[0].length ? M.intl.string(M.t.jDym4O) : 1 === i.length ? M.intl.format(M.t["0eBj39"], {}) : M.intl.format(M.t.D7uftL, {}), (0, r.jsxs)("div", {
     className: E.popout,
     children: [(0, r.jsx)("div", {
       className: E.popoutHeaderContainer,
@@ -196,12 +196,12 @@ function B(e) {
       children: [g ? null : (0, r.jsx)(p.zxk, {
         className: E.getRolesButton,
         onClick: n,
-        children: R.intl.string(R.t.T1t1WV)
+        children: M.intl.string(M.t.T1t1WV)
       }), (0, r.jsx)(p.zxk, {
         className: E.viewConnectionsButton,
         color: p.zxk.Colors.PRIMARY,
         onClick: a,
-        children: R.intl.string(R.t.hgKDnJ)
+        children: M.intl.string(M.t.hgKDnJ)
       })]
     })]
   })
@@ -215,13 +215,14 @@ function L(e) {
     channel: s
   } = e, {
     analyticsLocations: l
-  } = (0, _.ZP)(), u = (0, T.Z)(a, t, s.id, !0), d = (0, c.e7)([P.Z], () => P.Z.getGuildRoleConnectionEligibility(null == u ? void 0 : u.id)), [m, f] = o.useState(null == d);
+  } = (0, _.ZP)(), u = (0, T.Z)(a, t, s.id, !0), d = (0, c.e7)([P.Z], () => P.Z.getGuildRoleConnectionEligibility(null == u ? void 0 : u.id)), [m, f] = o.useState(null == d), b = o.useRef(null);
   if (null == u) return null;
-  async function b() {
+  async function h() {
     i()(null != u, "visibleConnectionsRole is null"), m && null == d && (await g.Z.fetchGuildRoleConnectionsEligibility(a.id, u.id), f(!1))
   }
   return (0, r.jsx)(p.KeG, {
-    onRequestOpen: b,
+    targetElementRef: b,
+    onRequestOpen: h,
     renderPopout: function() {
       return Promise.resolve(e => {
         let {
@@ -243,7 +244,7 @@ function L(e) {
               guildId: a.id,
               channelId: s.id,
               roleId: u.id,
-              subsection: M.Tb.CONNECTIONS,
+              subsection: R.Tb.CONNECTIONS,
               sourceAnalyticsLocations: l
             }), o()
           }
@@ -253,10 +254,11 @@ function L(e) {
     align: "top",
     nudgeAlignIntoViewport: !0,
     children: e => (0, r.jsx)(p.ua7, {
-      text: R.intl.string(R.t.Wpsnam),
+      text: M.intl.string(M.t.Wpsnam),
       children: t => {
         var n, o;
         return (0, r.jsxs)("div", (n = Z({
+          ref: b,
           className: E.badge
         }, t, e), o = o = {
           children: [(0, r.jsx)(w.Z, {
