@@ -4,8 +4,8 @@ let r, i;
 n.r(t), n.d(t, {
   default: () => X
 }), n(539854), n(388685);
-var a, o = n(392711),
-  s = n.n(o),
+var o, a = n(392711),
+  s = n.n(a),
   l = n(442837),
   c = n(570140),
   u = n(308063),
@@ -39,8 +39,8 @@ let g = [],
   E = [],
   b = null,
   y = null,
-  v = null,
-  O = !1,
+  O = null,
+  v = !1,
   I = !1,
   S = p.QZA.CLOSED,
   T = {},
@@ -54,7 +54,7 @@ function C(e) {
   if (t !== p.pNK.INTEGRATIONS) return !1;
   if (null == r) {
     let e = _.Z.getGuildId();
-    null != e && (u.Z.fetchForGuild(e), O = !0), P(!1)
+    null != e && (u.Z.fetchForGuild(e), v = !0), P(!1)
   }
 }
 
@@ -75,18 +75,18 @@ function P(e) {
     let e = K(y.id);
     null != e && (y = e)
   }
-  if (null != v) {
-    let e = z(v.id);
-    null != e && (v = e)
+  if (null != O) {
+    let e = z(O.id);
+    null != e && (O = e)
   }
   b = null, S = p.QZA.OPEN, T = {}, A = !1
 }
 
 function w() {
-  r = null, g = [], E = [], b = null, y = null, v = null, S = p.QZA.CLOSED, A = !1
+  r = null, g = [], E = [], b = null, y = null, O = null, S = p.QZA.CLOSED, A = !1
 }
 let D = s().debounce(() => {
-  A && (null != y ? s().isEqual(y, K(y.id)) && (A = !1) : null != v && s().isEqual(v, z(v.id)) && (A = !1), A || Q.emitChange())
+  A && (null != y ? s().isEqual(y, K(y.id)) && (A = !1) : null != O && s().isEqual(O, z(O.id)) && (A = !1), A || Q.emitChange())
 }, 500);
 
 function L(e) {
@@ -101,8 +101,8 @@ function x(e) {
   let {
     settings: t
   } = e;
-  if (null == v) return !1;
-  v = m({}, v), null != t.name && v.name !== t.name && (v.name = t.name, A = !0), void 0 !== t.avatar && v.avatar !== t.avatar && (v.avatar = t.avatar, A = !0), null != t.channelId && v.channel_id !== t.channelId && (v.channel_id = t.channelId, A = !0), A && D()
+  if (null == O) return !1;
+  O = m({}, O), null != t.name && O.name !== t.name && (O.name = t.name, A = !0), void 0 !== t.avatar && O.avatar !== t.avatar && (O.avatar = t.avatar, A = !0), null != t.channelId && O.channel_id !== t.channelId && (O.channel_id = t.channelId, A = !0), A && D()
 }
 
 function M() {
@@ -128,8 +128,8 @@ function j(e) {
         } = t;
         if (n === e.id) return !0
       })) {
-      var i, a;
-      g.push(e), e.type === (null == y ? void 0 : y.type) && (null == (i = e.account) ? void 0 : i.id) === (null == (a = y.account) ? void 0 : a.id) && (y = e)
+      var i, o;
+      g.push(e), e.type === (null == y ? void 0 : y.type) && (null == (i = e.account) ? void 0 : i.id) === (null == (o = y.account) ? void 0 : o.id) && (y = e)
     } for (let e = g.length - 1; e >= 0; e--) {
     let t = g[e],
       r = n.find(e => {
@@ -152,7 +152,7 @@ function U(e) {
     channelId: n,
     webhooks: i
   } = e;
-  if (O = !1, null != r && t === r.id && null != i && S !== p.QZA.SUBMITTING) {
+  if (v = !1, null != r && t === r.id && null != i && S !== p.QZA.SUBMITTING) {
     for (let e = E.length - 1; e >= 0; e--) {
       let t = E[e];
       if (null != n && (null == t ? void 0 : t.channel_id) !== n) continue;
@@ -164,8 +164,8 @@ function U(e) {
       });
       if (null != r) {
         let n = m({}, t, r);
-        E[e] = n, A || (null == v ? void 0 : v.id) !== n.id || (v = n)
-      } else(null == v ? void 0 : v.id) === t.id && (v = null), E.splice(e, 1)
+        E[e] = n, A || (null == O ? void 0 : O.id) !== n.id || (O = n)
+      } else(null == O ? void 0 : O.id) === t.id && (O = null), E.splice(e, 1)
     }
     for (let e of i) null == E.find(t => {
       let {
@@ -181,7 +181,7 @@ function G(e) {
   let {
     commandId: t
   } = e;
-  b = t, y = null, v = null, T = {}, A = !0
+  b = t, y = null, O = null, T = {}, A = !0
 }
 
 function B(e) {
@@ -197,7 +197,7 @@ function V(e) {
     integrationId: t
   } = e, n = K(t);
   if (null == n) return !1;
-  y = n, b = null, v = null, T = {}, A = !1
+  y = n, b = null, O = null, T = {}, A = !1
 }
 
 function F() {
@@ -209,11 +209,11 @@ function Z(e) {
     webhookId: t
   } = e, n = z(t);
   if (null == n) return !1;
-  v = n, b = null, y = null, T = {}, A = !1
+  O = n, b = null, y = null, T = {}, A = !1
 }
 
 function H() {
-  v = null, T = {}, A = !1
+  O = null, T = {}, A = !1
 }
 
 function Y() {
@@ -241,7 +241,7 @@ function z(e) {
     return n === e
   })
 }
-class q extends(a = l.ZP.Store) {
+class q extends(o = l.ZP.Store) {
   initialize() {
     this.waitFor(_.Z, f.Z, d.Z)
   }
@@ -264,7 +264,7 @@ class q extends(a = l.ZP.Store) {
     return y
   }
   get editedWebhook() {
-    return v
+    return O
   }
   get formState() {
     return S
@@ -285,7 +285,7 @@ class q extends(a = l.ZP.Store) {
     return z(e)
   }
   isFetching() {
-    return I || O
+    return I || v
   }
   showNotice() {
     return this.hasChanges()

@@ -19,8 +19,8 @@ var r = n(200651),
   b = n(921944),
   y = n(474936),
   _ = n(388032),
-  O = n(706442),
-  v = n(777091);
+  v = n(706442),
+  O = n(777091);
 let C = (e, t) => {
     let n = null != t && !t.isPreview;
     return e ? e && !n ? "no-wallpaper-nitro" : "has-wallpaper-nitro" : "non-nitro"
@@ -41,13 +41,13 @@ let C = (e, t) => {
       children: t,
       channelId: n,
       selectedChannelId: E
-    } = e, x = (0, a.wE)(o.z.CHAT_WALLPAPERS_PICKER_COACHMARK), I = (0, l.e7)([d.Z], () => d.Z.getLayers().includes(m.S9g.USER_SETTINGS)), P = E === n, {
+    } = e, x = (0, a.wE)(o.z.CHAT_WALLPAPERS_PICKER_COACHMARK), P = (0, l.e7)([d.Z], () => d.Z.getLayers().includes(m.S9g.USER_SETTINGS)), I = E === n, {
       canAccessPicker: w,
       entryPoint: N
     } = (0, p.m)({
       location: "ChatWallpaperDMListCoachmark",
       selectedChannelId: E
-    }), Z = N === h.FN.CONTEXT_MENU, [T, A] = (0, c.US)(x && Z && P && w && !I ? [o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK] : []), R = (0, u.m)(y.p9.TIER_2), D = (0, f.Z)(n), L = T === o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK, k = (0, i.useRef)(null), M = (0, i.useRef)(null), [U, G] = (0, i.useState)(g.U.TOP);
+    }), Z = N === h.FN.CONTEXT_MENU, [T, A] = (0, c.US)(x && Z && I && w && !P ? [o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK] : []), R = (0, u.m)(y.p9.TIER_2), D = (0, f.Z)(n), L = T === o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK, k = (0, i.useRef)(null), M = (0, i.useRef)(null), [U, G] = (0, i.useState)(g.U.TOP);
     if ((0, i.useLayoutEffect)(() => {
         if (null === k.current) return;
         let e = () => {
@@ -78,9 +78,9 @@ let C = (e, t) => {
           buttonText: _.intl.string(_.t["+IrDzM"]),
           header: H,
           art: (0, r.jsx)("img", {
-            src: v.Z,
+            src: O.Z,
             alt: "",
-            className: O.chatWallpaperDMListCoachmarkArt
+            className: v.chatWallpaperDMListCoachmarkArt
           }),
           body: F,
           align: U

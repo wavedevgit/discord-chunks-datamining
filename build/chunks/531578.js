@@ -23,7 +23,7 @@ function i(e) {
   return e
 }
 
-function a(e, t) {
+function o(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -34,8 +34,8 @@ function a(e, t) {
   return n
 }
 
-function o(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : a(Object(t)).forEach(function(n) {
+function a(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -57,7 +57,7 @@ var c = function(e) {
   u = function(e) {
     return e.AV = "AV", e.SOCIAL = "SOCIAL", e
   }({});
-let d = ["VOICE_BACKGROUND", "STREAM", "ACTIVITY", "VOICE_FILTER", "VOICE", "IN_APP_REPORTS", "USER_DM_MUTE", "BLOCK_USER"].reduce((e, t, n) => o(i({}, e), {
+let d = ["VOICE_BACKGROUND", "STREAM", "ACTIVITY", "VOICE_FILTER", "VOICE", "IN_APP_REPORTS", "USER_DM_MUTE", "BLOCK_USER"].reduce((e, t, n) => a(i({}, e), {
     [t]: n
   }), {}),
   f = ["bad", "neutral", "good"]

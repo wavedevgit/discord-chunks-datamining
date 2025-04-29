@@ -8,8 +8,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(97613),
-  o = n.n(a),
+  o = n(97613),
+  a = n.n(o),
   s = n(925016),
   l = n(333503),
   c = n(290486),
@@ -55,12 +55,12 @@ function y(e, t) {
   return n
 }
 
-function v(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let O = (0, p.Mg)(d.Z.FULL_SCREEN_LAYER_ANIMATION_DURATION),
+let v = (0, p.Mg)(d.Z.FULL_SCREEN_LAYER_ANIMATION_DURATION),
   I = (0, c.U)(e => ({
     fullScreenLayers: [],
     addLayer: t => (0, u.j)(() => {
@@ -115,24 +115,24 @@ let T = {
 function N() {
   let {
     reducedMotion: e
-  } = i.useContext(f.Sfi), t = e.enabled ? A : T, n = I(e => e.fullScreenLayers), a = n.map(e => ({
+  } = i.useContext(f.Sfi), t = e.enabled ? A : T, n = I(e => e.fullScreenLayers), o = n.map(e => ({
     item: e,
     nodeRef: i.createRef()
   }));
   return (0, r.jsx)(s.Z, {
-    children: a.map(e => {
+    children: o.map(e => {
       let {
         item: i,
-        nodeRef: a
+        nodeRef: o
       } = e;
       return (0, r.jsx)(l.Z, {
-        nodeRef: a,
+        nodeRef: o,
         classNames: t,
-        timeout: O,
+        timeout: v,
         onEntered: () => {
           (0, u.j)(() => {
             I.setState({
-              fullScreenLayers: n.map(e => e.key === i.key ? v(b({}, e), {
+              fullScreenLayers: n.map(e => e.key === i.key ? O(b({}, e), {
                 transitionState: 2
               }) : e)
             })
@@ -140,7 +140,7 @@ function N() {
         },
         unmountOnExit: !0,
         children: (0, r.jsx)(S, {
-          containerRef: a,
+          containerRef: o,
           item: i
         })
       }, i.key)
@@ -154,7 +154,7 @@ function C(e) {
       layerKey: n,
       Layer: r
     } = t,
-    i = null != n ? n : o()();
+    i = null != n ? n : a()();
   return (0, u.j)(() => {
     I.setState(t => ({
       fullScreenLayers: [...t.fullScreenLayers, {

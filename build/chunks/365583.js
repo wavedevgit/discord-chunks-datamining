@@ -2,13 +2,13 @@
 "use strict";
 n.d(t, {
   C: () => y,
-  Z: () => O
+  Z: () => v
 });
 var r = n(200651);
 n(192379);
 var i = n(442837),
-  a = n(481060),
-  o = n(230711),
+  o = n(481060),
+  a = n(230711),
   s = n(549879),
   l = n(394821),
   c = n(841784),
@@ -20,7 +20,7 @@ var i = n(442837),
   h = n(324745),
   m = n(981631),
   g = n(388032);
-let E = () => o.Z.open(m.oAB.CONNECTIONS, null);
+let E = () => a.Z.open(m.oAB.CONNECTIONS, null);
 
 function b(e) {
   let {
@@ -38,7 +38,7 @@ function y(e) {
   return (0, _.aA)(t) || (0, _.y0)(t) || (0, _.dU)(t) ? E : (0, _.dX)(t) ? n : null
 }
 
-function v(e) {
+function O(e) {
   let {
     activity: t,
     entry: n,
@@ -53,11 +53,11 @@ function v(e) {
   }) : null
 }
 
-function O(e) {
+function v(e) {
   let {
     user: t,
     activity: n,
-    entry: o,
+    entry: a,
     onAction: l,
     onClose: c,
     appContext: u
@@ -68,12 +68,12 @@ function O(e) {
       var e;
       return (null == (e = p.default.getCurrentUser()) ? void 0 : e.id) === t.id
     })) return null;
-  let f = v({
+  let f = O({
     activity: n,
-    entry: o,
+    entry: a,
     onOpenGameSettings: d
   });
-  return null == f ? null : (0, r.jsx)(a.sNh, {
+  return null == f ? null : (0, r.jsx)(o.sNh, {
     id: "manage-privacy",
     label: g.intl.string(g.t.anfNPT),
     action: () => {

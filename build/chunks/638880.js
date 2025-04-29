@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => O
+  Z: () => v
 });
 var r = n(252258),
   i = n(812206),
-  a = n(592125),
-  o = n(944486),
+  o = n(592125),
+  a = n(944486),
   s = n(594174),
   l = n(595519),
   c = n(636449),
@@ -21,16 +21,16 @@ var r = n(252258),
   E = n(917107),
   b = n(89425),
   y = n(197386),
-  v = n(701488);
+  O = n(701488);
 
-function O(e) {
+function v(e) {
   return (0, c.C)((0, c.R)(), () => I(e))
 }
 async function I(e) {
   let t, {
       applicationId: n,
       activityChannelId: c,
-      locationObject: O,
+      locationObject: v,
       analyticsLocations: I,
       componentId: S,
       sectionName: T,
@@ -46,7 +46,7 @@ async function I(e) {
       referrerId: M
     } = e,
     k = (0, g.Z)(),
-    j = a.Z.getChannel(c),
+    j = o.Z.getChannel(c),
     U = null == j ? void 0 : j.getGuildId(),
     G = null == U || "" === U,
     B = s.default.getCurrentUser();
@@ -55,7 +55,7 @@ async function I(e) {
   let V = f.ZP.getCurrentEmbeddedActivity();
   (null == V ? void 0 : V.applicationId) != null && (t = i.Z.getApplication(null == V ? void 0 : V.applicationId));
   let F = (null == V ? void 0 : V.location.kind) === r.E.CONTEXTLESS;
-  if ((F || o.Z.getVoiceChannelId() === c) && null != V && V.applicationId === n && (F || (0, h.pY)(V.location) === o.Z.getVoiceChannelId())) return (0, y.Z)(U, V.location), Promise.resolve(!0);
+  if ((F || a.Z.getVoiceChannelId() === c) && null != V && V.applicationId === n && (F || (0, h.pY)(V.location) === a.Z.getVoiceChannelId())) return (0, y.Z)(U, V.location), Promise.resolve(!0);
   let Z = await (0, m.Z)(n, c),
     H = (0, u.Kb)(Z);
   if (L && (H ? j = void 0 : L = !1), !await (0, p.p)({
@@ -69,7 +69,7 @@ async function I(e) {
     })) return !1;
   if (null != j) {
     let e = (0, E.Z)(j.id),
-      n = v.wP.includes(j.type);
+      n = O.wP.includes(j.type);
     if (e) {
       if (!await (0, b.Z)({
           channelId: j.id,
@@ -83,7 +83,7 @@ async function I(e) {
     isStart: !1,
     embeddedActivitiesManager: k,
     analyticsLocations: I,
-    locationObject: O,
+    locationObject: v,
     componentId: S,
     sectionName: T,
     source: A,

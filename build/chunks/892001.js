@@ -6,8 +6,8 @@ n.r(t), n.d(t, {
 });
 var r = n(259443),
   i = n(481060),
-  a = n(570140),
-  o = n(232567),
+  o = n(570140),
+  a = n(232567),
   s = n(911284),
   l = n(314897),
   c = n(594174),
@@ -44,8 +44,8 @@ async function m(e) {
     showGuildProfile: E,
     hideRestrictedProfile: b,
     sourceAnalyticsLocations: y,
-    appContext: v,
-    customStatusPrompt: O = null
+    appContext: O,
+    customStatusPrompt: v = null
   } = e, I = c.default.getUser(t);
   h(t);
   let {
@@ -53,7 +53,7 @@ async function m(e) {
   } = (0, d.R)({
     location: "openUserProfileModal"
   });
-  null == I ? await (0, o.In)(t, {
+  null == I ? await (0, a.In)(t, {
     type: "modal",
     guildId: E && null != n ? n : void 0,
     withMutualFriendsCount: S,
@@ -69,7 +69,7 @@ async function m(e) {
     withMutualGuilds: !0,
     friendToken: g,
     joinRequestId: u
-  }), a.Z.dispatch({
+  }), o.Z.dispatch({
     type: "USER_PROFILE_MODAL_OPEN",
     userId: t,
     guildId: null != n ? n : void 0,
@@ -78,19 +78,19 @@ async function m(e) {
     roleId: null != s ? s : void 0,
     sessionId: null != l ? l : void 0,
     openedAt: Date.now(),
-    customStatusPrompt: O,
+    customStatusPrompt: v,
     section: p,
     subsection: m,
     friendToken: g,
     showGuildProfile: E,
     hideRestrictedProfile: b,
     sourceAnalyticsLocations: y,
-    appContext: v
+    appContext: O
   })
 }
 
 function g() {
-  a.Z.dispatch({
+  o.Z.dispatch({
     type: "USER_PROFILE_MODAL_CLOSE"
   })
 }

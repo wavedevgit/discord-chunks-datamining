@@ -22,15 +22,15 @@ let f = i.forwardRef(function(e, t) {
     icon: b,
     selected: y,
     tooltip: _,
-    upperBadge: O,
-    lowerBadge: v,
+    upperBadge: v,
+    lowerBadge: O,
     lowerBadgeSize: C,
     showPill: j = !0,
     className: S,
     "aria-label": E,
     children: x,
-    onMouseEnter: I,
-    onMouseLeave: P,
+    onMouseEnter: P,
+    onMouseLeave: I,
     onMouseDown: w
   } = e, N = (0, c.Q3)("ButtonListItem"), Z = (0, s.Ie)(f), [T, A] = i.useState(!1);
   return (0, r.jsxs)(d.H, {
@@ -45,8 +45,8 @@ let f = i.forwardRef(function(e, t) {
       selected: y,
       children: (0, r.jsx)(a.aRk, {
         selected: !!N || y || T,
-        upperBadge: O,
-        lowerBadge: v,
+        upperBadge: v,
+        lowerBadge: O,
         lowerBadgeSize: C,
         children: (0, r.jsx)(a.P3F, (n = function(e) {
           for (var t = 1; t < arguments.length; t++) {
@@ -68,10 +68,10 @@ let f = i.forwardRef(function(e, t) {
         }({
           innerRef: t,
           onMouseEnter: () => {
-            null == I || I(), A(!0)
+            null == P || P(), A(!0)
           },
           onMouseLeave: () => {
-            null == P || P(), A(!1)
+            null == I || I(), A(!1)
           },
           onMouseDown: w,
           className: o()(p.circleIconButton, S, {

@@ -8,9 +8,9 @@ n.d(t, {
 }), n(415506), n(388685);
 var r = n(192379),
   i = n(902704),
-  a = n(250919);
+  o = n(250919);
 
-function o(e, t) {
+function a(e, t) {
   return e === t
 }
 
@@ -19,7 +19,7 @@ function s(e, t) {
 }
 
 function l(e, t, n) {
-  let s = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : o,
+  let s = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : a,
     l = (0, r.useRef)(null);
   null == l.current && (l.current = {
     stores: e,
@@ -42,7 +42,7 @@ function l(e, t, n) {
         let e;
         e = c.getStateFromStores(), s(c.state, e) || (c.state = e, d({}))
       },
-      n = new a.F(e, t);
+      n = new o.F(e, t);
     return n.attach("useStateFromStores"), () => n.detach()
   }, []), u
 }

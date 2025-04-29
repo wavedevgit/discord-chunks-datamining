@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => F
 });
 var r, i = n(442837),
-  a = n(570140),
-  o = n(622999);
+  o = n(570140),
+  a = n(622999);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -28,19 +28,19 @@ let l = "",
   E = "",
   b = "",
   y = "",
-  v = "",
-  O = !1,
+  O = "",
+  v = !1,
   I = null,
   S = null,
   T = null,
   A = null;
 
 function N() {
-  d = null, l = "", c = null, u = "", f = !1, _ = null, p = "US", h = "", m = "", g = "", E = "", b = "", y = "", v = "", O = !1, I = null, S = null, T = null, A = null
+  d = null, l = "", c = null, u = "", f = !1, _ = null, p = "US", h = "", m = "", g = "", E = "", b = "", y = "", O = "", v = !1, I = null, S = null, T = null, A = null
 }
 
 function C(e) {
-  h = e.name, p = e.country, g = e.line1, E = e.line2, b = e.city, y = e.postalCode, v = e.state, m = e.email
+  h = e.name, p = e.country, g = e.line1, E = e.line2, b = e.city, y = e.postalCode, O = e.state, m = e.email
 }
 
 function R(e) {
@@ -51,7 +51,7 @@ function R(e) {
   d = t;
   let {
     billingAddressInfo: n
-  } = o.az(d);
+  } = a.az(d);
   C(n)
 }
 
@@ -65,7 +65,7 @@ function w(e) {
     nonce: n,
     billingAddress: r
   } = e;
-  l = t, c = n, C(r), O = p.length > 0
+  l = t, c = n, C(r), v = p.length > 0
 }
 
 function D() {
@@ -93,7 +93,7 @@ function M(e) {
     info: t,
     isValid: n
   } = e;
-  null != t.name && "" !== t.name && (h = t.name), p = t.country, h = t.name, g = t.line1, E = t.line2, b = t.city, y = t.postalCode, v = t.state, m = t.email, O = n
+  null != t.name && "" !== t.name && (h = t.name), p = t.country, h = t.name, g = t.line1, E = t.line2, b = t.city, y = t.postalCode, O = t.state, m = t.email, v = n
 }
 
 function k(e) {
@@ -166,18 +166,18 @@ class V extends(r = i.ZP.Store) {
       line2: E,
       city: b,
       postalCode: y,
-      state: v
+      state: O
     }
   }
   get isBillingAddressInfoValid() {
-    return O
+    return v
   }
   get error() {
     return I
   }
 }
 s(V, "displayName", "NewPaymentSourceStore");
-let F = new V(a.Z, {
+let F = new V(o.Z, {
   NEW_PAYMENT_SOURCE_STRIPE_PAYMENT_REQUEST_UPDATE: R,
   NEW_PAYMENT_SOURCE_CARD_INFO_UPDATE: x,
   NEW_PAYMENT_SOURCE_ADDRESS_INFO_UPDATE: M,

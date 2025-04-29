@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(49691),
   i = {
     passive: !0
   };
-let a = {
+let o = {
   name: "eventListeners",
   enabled: !0,
   phase: "write",
@@ -15,10 +15,10 @@ let a = {
   effect: function(e) {
     var t = e.state,
       n = e.instance,
-      a = e.options,
-      o = a.scroll,
-      s = void 0 === o || o,
-      l = a.resize,
+      o = e.options,
+      a = o.scroll,
+      s = void 0 === a || a,
+      l = o.resize,
       c = void 0 === l || l,
       u = (0, r.Z)(t.elements.popper),
       d = [].concat(t.scrollParents.reference, t.scrollParents.popper);

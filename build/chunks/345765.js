@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(392711),
   i = n(126313),
-  a = n(570140),
-  o = n(147913),
+  o = n(570140),
+  a = n(147913),
   s = n(539746),
   l = n(38618),
   c = n(86071),
@@ -29,8 +29,8 @@ function y(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let v = 4,
-  O = 2 * _.Z.Millis.MINUTE,
+let O = 4,
+  v = 2 * _.Z.Millis.MINUTE,
   I = E.YN.GLOBAL_FEED,
   S = 15 * _.Z.Millis.MINUTE,
   T = new Map,
@@ -43,11 +43,11 @@ let v = 4,
 
 function P() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0;
-  return Math.random() * (e + 1) * O
+  return Math.random() * (e + 1) * v
 }
 
 function w(e, t) {
-  a.Z.dispatch({
+  o.Z.dispatch({
     type: "CONTENT_INVENTORY_SET_FEED_STATE",
     feedId: e,
     state: t
@@ -75,18 +75,18 @@ function L(e) {
 function x() {
   var e;
   let t = null != (e = N.get(I)) ? e : 0;
-  if (t > 0 && t <= v || (L(I), !D(I))) return;
+  if (t > 0 && t <= O || (L(I), !D(I))) return;
   let n = g.Z.getFeed(I);
   if ((null == n ? void 0 : n.refresh_stale_inbox_after_ms) != null && null == C) return;
   let r = (null == n ? void 0 : n.expired_at) == null ? 0 : new Date(n.expired_at).getTime() - Date.now(),
-    a = Math.max(0, null == C ? 0 : new Date(C).getTime() - Date.now(), r) + (t > 0 ? P() : 0);
+    o = Math.max(0, null == C ? 0 : new Date(C).getTime() - Date.now(), r) + (t > 0 ? P() : 0);
   w(I, {
     loading: !1,
-    nextFetchDate: new Date(Date.now() + a)
+    nextFetchDate: new Date(Date.now() + o)
   }), T.set(I, setTimeout(() => M({
     feedId: I,
     feature: i.L.INBOX
-  }), a))
+  }), o))
 }
 async function M(e) {
   let {
@@ -104,24 +104,24 @@ async function M(e) {
       feedId: t,
       feature: n
     });
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "CONTENT_INVENTORY_SET_FEED",
       feedId: t,
       feed: r
     }), N.set(t, 0), A.delete(t), w(t, {
       loading: !1
     }), t === I && (C = null, x())
-  } catch (o) {
+  } catch (a) {
     var i;
     let e = null != (i = N.get(t)) ? i : 0;
-    if (e < v) {
+    if (e < O) {
       let i = _.Z.Millis.MINUTE * Math.pow(2, e) + P(e);
       T.set(t, setTimeout(() => M({
         feedId: t,
         feature: n,
         force: r
       }), i)), N.set(t, e + 1)
-    } else a.Z.dispatch({
+    } else o.Z.dispatch({
       type: "CONTENT_INVENTORY_CLEAR_FEED",
       feedId: t
     });
@@ -196,7 +196,7 @@ function Z() {
     feature: i.L.OVERLAY_INVITES
   })
 }
-class H extends o.Z {
+class H extends a.Z {
   constructor(...e) {
     super(...e), y(this, "actions", {
       POST_CONNECTION_OPEN: j,

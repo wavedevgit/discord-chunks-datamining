@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => O
 }), n(388685);
 var r = n(147913),
   i = n(751571),
-  a = n(88751),
-  o = n(590415),
+  o = n(88751),
+  a = n(590415),
   s = n(189786),
   l = n(314897),
   c = n(592125),
@@ -34,11 +34,11 @@ function g() {
 
 function E(e, t) {
   var n;
-  return null == (n = c.Z.getChannel(t)) || !n.isListenModeCapable() || a.ZP.isSpeaker(e, t)
+  return null == (n = c.Z.getChannel(t)) || !n.isListenModeCapable() || o.ZP.isSpeaker(e, t)
 }
 
 function b(e) {
-  return (0, o.gf)(e) === o.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK
+  return (0, a.gf)(e) === a.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK
 }
 class y extends r.Z {
   handleVoiceChannelSelect(e) {
@@ -72,4 +72,4 @@ class y extends r.Z {
     })
   }
 }
-let v = new y
+let O = new y

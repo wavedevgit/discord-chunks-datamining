@@ -33,7 +33,7 @@ function y(e) {
     includeAuthorizedAppsAndFetch: y
   } = e, {
     sectionDescriptors: _,
-    loading: O
+    loading: v
   } = a.wi({
     context: t,
     filters: m,
@@ -41,7 +41,7 @@ function y(e) {
     allowFetch: s
   });
   return {
-    loading: O,
+    loading: v,
     frecentApps: function(e) {
       let {
         sectionDescriptors: t,
@@ -58,13 +58,13 @@ function y(e) {
         }),
         y = t.filter(e => e.id !== g.bi.FRECENCY && e.id !== g.bi.BUILT_IN),
         _ = "channel" in n && (0, h.aZ)(n.channel, "useAppLauncherFrecents.useFrecentApps()"),
-        O = "contextless" === n.type,
-        v = r.useMemo(() => {
+        v = "contextless" === n.type,
+        O = r.useMemo(() => {
           let e = [];
-          return O && e.push(f.jT), _ && e.push(h.gu), e
-        }, [_, O]),
+          return v && e.push(f.jT), _ && e.push(h.gu), e
+        }, [_, v]),
         C = (0, u.h)(y, b);
-      return r.useMemo(() => s ? C.filter(e => null != e.application && (0, p.ye)(e.application) && null != (0, c.Xu)(n, e.id)).filter(e => !v.includes(e.id)) : C.filter(e => !v.includes(e.id)), [s, C, n, v])
+      return r.useMemo(() => s ? C.filter(e => null != e.application && (0, p.ye)(e.application) && null != (0, c.Xu)(n, e.id)).filter(e => !O.includes(e.id)) : C.filter(e => !O.includes(e.id)), [s, C, n, O])
     }({
       sectionDescriptors: _,
       context: t,

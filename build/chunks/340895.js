@@ -4,8 +4,8 @@ let r;
 n.d(t, {
   Z: () => k
 }), n(388685);
-var i, a = n(442837),
-  o = n(433517),
+var i, o = n(442837),
+  a = n(433517),
   s = n(570140),
   l = n(358221),
   c = n(695346),
@@ -31,8 +31,8 @@ let E = "IncomingCallStore",
     height: 315
   },
   y = 10,
-  v = new Set,
-  O = [],
+  O = new Set,
+  v = [],
   I = new Map,
   S = new Set,
   T = !1;
@@ -102,7 +102,7 @@ function w(e) {
   return r = {
     x: t,
     y: n
-  }, o.K.set(E, r), !1
+  }, a.K.set(E, r), !1
 }
 
 function D(e) {
@@ -124,15 +124,15 @@ function x() {
     null != (null == (n = _.Z.getChannel(r)) ? void 0 : n.guild_id) && (l.Z.getGuildRingingUsers(r).has(e) || N(r))
   })
 }
-class M extends(i = a.ZP.Store) {
+class M extends(i = o.ZP.Store) {
   initialize() {
     this.waitFor(_.Z, p.Z), this.syncWith([p.Z], L), this.syncWith([u.Z], L), this.syncWith([l.Z], x)
   }
   getIncomingCalls() {
-    return T ? O : Array.from(I.values())
+    return T ? v : Array.from(I.values())
   }
   getIncomingCallChannelIds() {
-    return T ? v : S
+    return T ? O : S
   }
   getFirstIncomingCallId() {
     return T ? null : S.values().next().value

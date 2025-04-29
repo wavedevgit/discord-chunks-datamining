@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(399606),
   i = n(594174);
 
-function a(e) {
+function o(e) {
   let {
     context: t
   } = e, n = "channel" === t.type ? t.channel : void 0;

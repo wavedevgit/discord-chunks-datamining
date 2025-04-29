@@ -5,8 +5,8 @@ n.d(t, {
 }), n(539854);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(512969),
   l = n(481060),
   c = n(624138),
@@ -55,8 +55,8 @@ function h(e, t) {
   if (null == e) return {};
   var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -64,8 +64,8 @@ function h(e, t) {
 function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let g = [18, 18, 16, 16, 14, 12, 10];
@@ -76,7 +76,7 @@ function E(e) {
 }
 
 function b(e, t) {
-  return o()({
+  return a()({
     [u.childWrapper]: !0,
     [u.childWrapperNoHoverBg]: "always" === e,
     [u.childWrapperHoverScale]: "on-hover" === e && t
@@ -85,38 +85,38 @@ function b(e, t) {
 let y = e => {
   let t, n;
   var {
-    backgroundStyle: a = "always",
+    backgroundStyle: o = "always",
     children: d,
     icon: _,
     name: m,
     ariaLabel: g,
     className: y,
-    style: v,
-    to: O,
+    style: O,
+    to: v,
     onClick: I,
     selected: S = !1
   } = e, T = h(e, ["backgroundStyle", "children", "icon", "name", "ariaLabel", "className", "style", "to", "onClick", "selected"]);
   let A = (0, s.k6)();
   null == _ && null != m && (n = E(t = (0, c.Zg)(m)));
   let N = i.useCallback(e => {
-      if (null == O);
-      else if ("string" == typeof O) A.push(O);
+      if (null == v);
+      else if ("string" == typeof v) A.push(v);
       else {
         let {
           pathname: e = "",
           state: t
-        } = O;
+        } = v;
         A.push(e, t)
       }
       null != I && I(e)
-    }, [A, O, I]),
+    }, [A, v, I]),
     C = (0, l.dQu)(l.TVs.modules.guildbar.AVATAR_SIZE);
   return (0, r.jsxs)(l.P3F, p(f({}, T), {
     onClick: N,
-    className: o()(y, u.wrapper, {
+    className: a()(y, u.wrapper, {
       [u.selected]: S
     }),
-    style: p(f({}, v), {
+    style: p(f({}, O), {
       fontSize: n
     }),
     focusProps: {
@@ -125,7 +125,7 @@ let y = e => {
     children: [(0, r.jsx)(l.nn4, {
       children: null != g && "" !== g ? g : null != m ? m : ""
     }), null != t ? (0, r.jsx)("div", {
-      className: o()(b(a, !1), u.acronym),
+      className: a()(b(o, !1), u.acronym),
       "aria-hidden": !0,
       children: t
     }) : null, null != _ ? (0, r.jsx)("img", {
@@ -136,7 +136,7 @@ let y = e => {
       height: C,
       "aria-hidden": !0
     }) : null, null != d ? (0, r.jsx)("div", {
-      className: b(a, !0),
+      className: b(o, !0),
       children: d
     }) : null]
   }))

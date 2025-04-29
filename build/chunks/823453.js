@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => O
+  Z: () => v
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(765053),
   l = n(512969),
   c = n(442837),
@@ -25,14 +25,14 @@ function b(e) {
   let {
     lang: t,
     style: n,
-    className: a
+    className: o
   } = (0, p.vP)(), s = (0, l.TH)(), u = i.useMemo(() => E.has(s.pathname), [s.pathname]);
   (0, m.Z)(window, u);
   let d = (0, c.e7)([f.Z, _.Z], () => _.Z.getWindowOpen(g.KJ3.DEVTOOLS_POPOUT) ? 0 : f.Z.sidebarWidth);
   return (0, r.jsx)("html", {
     lang: t,
     style: "".concat(n, " --devtools-sidebar-width: ").concat(d, "px;"),
-    className: o()(a, e, {
+    className: a()(o, e, {
       overlay: __OVERLAY__
     })
   })
@@ -58,7 +58,7 @@ function y() {
   })
 }
 
-function v(e) {
+function O(e) {
   let {
     children: t,
     skipsSettingDefaultPageTitle: n
@@ -67,13 +67,13 @@ function v(e) {
     skipsSettingDefaultPageTitle: n
   });
   let {
-    clientThemesClassName: a,
-    clientThemesCSS: o
+    clientThemesClassName: o,
+    clientThemesCSS: a
   } = (0, d.ZP)(), l = i.createElement("style", {
     [d.PQ]: !0
-  }, o);
+  }, a);
   return (0, r.jsxs)(s.ql, {
-    children: [b(a), y(), l, t]
+    children: [b(o), y(), l, t]
   })
 }
-let O = i.memo(v)
+let v = i.memo(O)

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(990547),
-  o = n(442837),
+  o = n(990547),
+  a = n(442837),
   s = n(481060),
   l = n(239091),
   c = n(40851),
@@ -59,11 +59,11 @@ function b(e, t) {
 function y() {
   window.getSelection().removeAllRanges()
 }
-let v = e => {
+let O = e => {
   let {
     children: t,
     close: n,
-    onUnmount: o,
+    onUnmount: a,
     target: l,
     rect: f,
     position: _,
@@ -71,11 +71,11 @@ let v = e => {
     impressionName: m,
     impressionProperties: g,
     disableClickTrap: E = !1
-  } = e, b = i.useRef(null), v = i.useMemo(() => ({
+  } = e, b = i.useRef(null), O = i.useMemo(() => ({
     current: l
-  }), [l]), O = i.useRef(n);
+  }), [l]), v = i.useRef(n);
   i.useEffect(() => {
-    O.current = n
+    v.current = n
   }), i.useEffect(() => {
     var e, t, n;
     let r = null == (e = b.current) ? void 0 : e.elementRef.current;
@@ -84,16 +84,16 @@ let v = e => {
       var t;
       let n = e.target,
         r = null == (t = b.current) ? void 0 : t.elementRef.current;
-      null != r && (0, s.ty$)(r, n) || (y(), O.current())
+      null != r && (0, s.ty$)(r, n) || (y(), v.current())
     };
     return null == (t = r.ownerDocument) || t.addEventListener("click", i, !0), null == (n = r.ownerDocument) || n.addEventListener("contextmenu", i, !0), () => {
       var e, t;
       null == (e = r.ownerDocument) || e.removeEventListener("click", i, !0), null == (t = r.ownerDocument) || t.removeEventListener("contextmenu", i, !0)
     }
   }, []);
-  let I = i.useRef(o);
+  let I = i.useRef(a);
   i.useEffect(() => {
-    I.current = o
+    I.current = a
   }), i.useEffect(() => () => {
     var e;
     return null == (e = I.current) ? void 0 : e.call(I)
@@ -101,7 +101,7 @@ let v = e => {
     var e;
     null == (e = b.current) || e.updatePosition()
   }), (0, u.Z)({
-    type: a.ImpressionTypes.MENU,
+    type: o.ImpressionTypes.MENU,
     name: m,
     properties: g
   });
@@ -115,7 +115,7 @@ let v = e => {
   return (0, r.jsx)(d.W5, {
     onMount: T,
     onUnmount: A,
-    targetRef: v,
+    targetRef: O,
     overrideTargetRect: f,
     position: null != _ ? _ : "right",
     align: null != p ? p : "top",
@@ -126,7 +126,7 @@ let v = e => {
     children: t
   })
 };
-class O extends i.PureComponent {
+class v extends i.PureComponent {
   componentDidMount() {
     let {
       renderLazy: e,
@@ -165,12 +165,12 @@ class O extends i.PureComponent {
     let {
       appContext: n,
       target: i,
-      isOpen: a,
-      theme: o,
+      isOpen: o,
+      theme: a,
       config: s,
       rect: l
     } = this.props, c = null != (e = this.state.render) ? e : this.props.render;
-    return a && null != l && null != s && null != i && null != c && s.context === n ? (0, r.jsx)(v, {
+    return o && null != l && null != s && null != i && null != c && s.context === n ? (0, r.jsx)(O, {
       target: i,
       rect: l,
       close: this.close,
@@ -186,7 +186,7 @@ class O extends i.PureComponent {
         } = e;
         return c({
           position: r,
-          theme: o,
+          theme: a,
           onHeightUpdate: t,
           config: s,
           target: i,
@@ -218,20 +218,20 @@ function I() {
     contextMenu: e,
     version: t,
     isOpen: n
-  } = (0, o.cj)([_.Z], () => ({
+  } = (0, a.cj)([_.Z], () => ({
     contextMenu: _.Z.getContextMenu(),
     version: _.Z.version,
     isOpen: _.Z.isOpen()
-  })), a = (0, o.e7)([f.Z], () => f.Z.theme), {
+  })), o = (0, a.e7)([f.Z], () => f.Z.theme), {
     appContext: s,
     renderWindow: u
   } = i.useContext(c.ZP);
-  return (0, r.jsx)(O, b(g({
+  return (0, r.jsx)(v, b(g({
     appContext: s,
     renderWindow: u
   }, e), {
     isOpen: n,
-    theme: a,
+    theme: o,
     closeContextMenu: l.Zy
   }), t)
 }

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(415506);
 var r = n(200651),
   i = n(192379),
-  a = n(512722),
-  o = n.n(a),
+  o = n(512722),
+  a = n.n(o),
   s = n(330726),
   l = n(711459),
   c = n(717401),
@@ -21,8 +21,8 @@ var r = n(200651),
   E = n(409813),
   b = n(107998),
   y = n(809144),
-  v = n(698708),
-  O = n(844068),
+  O = n(698708),
+  v = n(844068),
   I = n(614223),
   S = n(481595),
   T = n(435020),
@@ -36,7 +36,7 @@ let D = 500;
 
 function L(e) {
   var t, n;
-  let a, {
+  let o, {
       handleStepChange: L,
       trialId: x,
       trialFooterMessageOverride: M,
@@ -65,8 +65,8 @@ function L(e) {
       selectedSkuId: en,
       setCurrency: er,
       setPaymentSourceId: ei,
-      setPurchaseState: ea,
-      setPurchaseError: eo,
+      setPurchaseState: eo,
+      setPurchaseError: ea,
       step: es,
       purchaseState: el,
       isPremium: ec,
@@ -86,9 +86,9 @@ function L(e) {
     {
       paymentModalBanner: ey
     } = (0, b.zb)();
-  o()(null != es, "Step should be set");
-  let ev = i.useRef(null),
-    [eO, eI] = (0, s.Z)(!1, D);
+  a()(null != es, "Step should be set");
+  let eO = i.useRef(null),
+    [ev, eI] = (0, s.Z)(!1, D);
   (0, p.t)();
   let eS = null != (n = null != x ? x : V) ? n : null,
     eT = null != eS && (!ec || R.nG[eS].skus.includes(en)) ? eS : null,
@@ -98,7 +98,7 @@ function L(e) {
       user_trial_offer_id: null == eA ? void 0 : eA.id
     };
   i.useEffect(() => {
-    null != J && null != ev.current && ev.current.scrollIntoView({
+    null != J && null != eO.current && eO.current.scrollIntoView({
       behavior: "smooth"
     })
   }, [J]);
@@ -133,12 +133,12 @@ function L(e) {
     eW = () => {
       L(E.h8.ADD_PAYMENT_STEPS)
     };
-  return ed === P.GZ.ONE_TIME ? (eY = null != $, a = (0, r.jsx)(S.Z, {
-    hasLegalTermsFlash: eO,
+  return ed === P.GZ.ONE_TIME ? (eY = null != $, o = (0, r.jsx)(S.Z, {
+    hasLegalTermsFlash: ev,
     legalTermsNodeRef: eD,
     onPaymentSourceChange: e => ei(null != e ? e.id : null),
     handlePaymentSourceAdd: () => L(E.h8.ADD_PAYMENT_STEPS)
-  })) : (eY = em ? null == ep : null != eP && ed === P.GZ.SUBSCRIPTION && eM && !eP.canRedeemTrial(), null == Y || eh || em ? (o()(null != et, "Expected plan to be selected"), a = (0, r.jsx)(f.Z, {
+  })) : (eY = em ? null == ep : null != eP && ed === P.GZ.SUBSCRIPTION && eM && !eP.canRedeemTrial(), null == Y || eh || em ? (a()(null != et, "Expected plan to be selected"), o = (0, r.jsx)(f.Z, {
     selectedPlanId: et.id,
     planGroup: j,
     paymentSources: Q,
@@ -149,7 +149,7 @@ function L(e) {
     handlePaymentSourceAdd: () => L(E.h8.ADD_PAYMENT_STEPS),
     setHasAcceptedTerms: eu,
     legalTermsNodeRef: eD,
-    hasLegalTermsFlash: eO,
+    hasLegalTermsFlash: ev,
     trialId: eT,
     trialFooterMessageOverride: M,
     reviewWarningMessage: k,
@@ -158,7 +158,7 @@ function L(e) {
     isTrial: eM || null != x && null != M,
     isDiscount: ej,
     handleClose: H
-  })) : (o()(null != et, "Expected plan to be selected"), a = (0, r.jsx)(_.Z, {
+  })) : (a()(null != et, "Expected plan to be selected"), o = (0, r.jsx)(_.Z, {
     premiumSubscription: Y,
     paymentSources: Q,
     priceOptions: X,
@@ -169,7 +169,7 @@ function L(e) {
     planId: et.id,
     setHasAcceptedTerms: eu,
     legalTermsNodeRef: eD,
-    hasLegalTermsFlash: eO,
+    hasLegalTermsFlash: ev,
     onInvoiceError: e => ex(e),
     planGroup: j,
     currencies: z,
@@ -183,14 +183,14 @@ function L(e) {
     }), !eU && (0, r.jsx)(A.Z, {
       isEligibleForTrial: eM
     }), (0, r.jsxs)(C.C3, {
-      children: [null != ey && ey, (0, r.jsx)(O.Z, {}), (0, r.jsx)(v.Z, {}), a]
+      children: [null != ey && ey, (0, r.jsx)(v.Z, {}), (0, r.jsx)(O.Z, {}), o]
     }), (0, r.jsx)(C.O3, {
       children: (0, r.jsx)(N.Z, {
         premiumSubscription: null != Y ? Y : null,
-        setPurchaseState: ea,
+        setPurchaseState: eo,
         onBack: eH,
         onNext: eR,
-        onPurchaseError: e => eo(e),
+        onPurchaseError: e => ea(e),
         legalTermsNodeRef: eD,
         flashLegalTerms: () => eI(!0),
         invoiceError: eL,

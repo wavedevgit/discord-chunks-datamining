@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => O
 }), n(388685);
 var r, i = n(392711),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(570140),
   l = n(537986),
   c = n(592125),
@@ -72,9 +72,9 @@ function b(e) {
     guildId: t,
     messages: n
   } = e;
-  return null != t && g(t, a().flatten(n))
+  return null != t && g(t, o().flatten(n))
 }
-class y extends(r = o.ZP.Store) {
+class y extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(c.Z, u.ZP)
   }
@@ -83,7 +83,7 @@ class y extends(r = o.ZP.Store) {
   }
 }
 d(y, "displayName", "GuildMemberRequesterStore");
-let v = new y(s.Z, {
+let O = new y(s.Z, {
   CONNECTION_CLOSED: _,
   CONNECTION_OPEN: _,
   CONNECTION_RESUMED: h,

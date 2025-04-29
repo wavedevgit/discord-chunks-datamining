@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => x
 }), n(388685), n(997841);
 var r, i = n(392711),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(570140),
   l = n(798140),
   c = n(131704),
@@ -54,7 +54,7 @@ let h = {},
   g = new Set;
 
 function E(e) {
-  h = a()(h).reject(t => t.guildId === e).keyBy("threadId").value()
+  h = o()(h).reject(t => t.guildId === e).keyBy("threadId").value()
 }
 
 function b(e) {
@@ -70,17 +70,17 @@ function y(e) {
     muted: e.member.muted,
     muteConfig: e.member.muteConfig,
     joinTimestamp: new Date(e.member.joinTimestamp)
-  }, v(e.id))
+  }, O(e.id))
 }
 
-function v(e) {
+function O(e) {
   let t = h[e];
   m.clearTimer(e), !0 === t.muted ? ((g = new Set(g)).add(e), m.setTimer(e, t.muteConfig, () => {
     h[e].muted = !1, (g = new Set(g)).delete(e), L.emitChange()
   }) && (h[e].muted = !1, (g = new Set(g)).delete(e))) : (g = new Set(g)).delete(e)
 }
 
-function O(e) {
+function v(e) {
   m.reset(), g = new Set, h = {}, e.guilds.forEach(e => {
     b(e)
   })
@@ -90,7 +90,7 @@ function I(e) {
   let {
     joinedThreads: t
   } = e;
-  h = a()(t).map(e => p(f({}, e), {
+  h = o()(t).map(e => p(f({}, e), {
     joinTimestamp: new Date(e.joinTimestamp)
   })).keyBy("threadId").value()
 }
@@ -129,7 +129,7 @@ function N(e) {
       muted: e.muted,
       muteConfig: e.muteConfig,
       joinTimestamp: new Date(e.joinTimestamp)
-    }, v(e.id)
+    }, O(e.id)
   })
 }
 
@@ -150,7 +150,7 @@ function R(e) {
     muted: e.muted,
     muteConfig: e.muteConfig,
     joinTimestamp: new Date(e.joinTimestamp)
-  }, v(e.id)
+  }, O(e.id)
 }
 
 function P(e) {
@@ -184,10 +184,10 @@ function w(e) {
       muted: t.muted,
       muteConfig: t.muteConfig,
       joinTimestamp: new Date(t.joinTimestamp)
-    }, v(e.id), r = !0)
+    }, O(e.id), r = !0)
   }), r
 }
-class D extends(r = o.ZP.Store) {
+class D extends(r = a.ZP.Store) {
   hasJoined(e) {
     return e in h
   }
@@ -215,7 +215,7 @@ class D extends(r = o.ZP.Store) {
 }
 d(D, "displayName", "JoinedThreadsStore");
 let L = new D(s.Z, {
-    CONNECTION_OPEN: O,
+    CONNECTION_OPEN: v,
     OVERLAY_INITIALIZE: I,
     GUILD_CREATE: S,
     GUILD_DELETE: T,

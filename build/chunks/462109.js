@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(192379),
   i = n(611144),
-  a = n(2052),
-  o = n(691251),
+  o = n(2052),
+  a = n(691251),
   s = n(98528);
 let l = e => {
   let {
@@ -17,17 +17,17 @@ let l = e => {
     gridNavigatorId: u,
     setInspectedStickerPosition: d,
     onGridItemSelect: f
-  } = e, _ = (0, a.O)(), p = r.useCallback(e => {
+  } = e, _ = (0, o.O)(), p = r.useCallback(e => {
     f(e, _)
   }, [f, _]), h = r.useCallback((e, t) => {
-    d(e, t, o.u.GRID_NAVIGATOR_EVENT)
+    d(e, t, a.u.GRID_NAVIGATOR_EVENT)
   }, [d]), {
     gridDispatch: m,
     getItemProps: g,
     getRowProps: E,
     gridContainerProps: b,
     handleGridContainerKeyDown: y,
-    isUsingKeyboardNavigation: v
+    isUsingKeyboardNavigation: O
   } = (0, s.VO)({
     columnCounts: t,
     gridNavigatorId: u,
@@ -43,7 +43,7 @@ let l = e => {
       rowIndex: n,
       source: r
     } = e;
-    r !== o.u.GRID_NAVIGATOR_EVENT && m({
+    r !== a.u.GRID_NAVIGATOR_EVENT && m({
       type: i.s.SET_FOCUSED_POSITION,
       x: t,
       y: n
@@ -53,6 +53,6 @@ let l = e => {
     getRowProps: E,
     gridContainerProps: b,
     handleGridContainerKeyDown: y,
-    isUsingKeyboardNavigation: v
+    isUsingKeyboardNavigation: O
   }
 }

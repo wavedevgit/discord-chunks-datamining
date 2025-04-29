@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(442837),
-  o = n(704215),
+  o = n(442837),
+  a = n(704215),
   s = n(433517),
   l = n(481060),
   c = n(570140),
@@ -21,9 +21,9 @@ var r = n(200651),
   E = n(540059),
   b = n(596401),
   y = n(921944),
-  v = n(231338);
+  O = n(231338);
 
-function O(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -39,7 +39,7 @@ function I(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      O(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
@@ -47,13 +47,13 @@ function I(e) {
 let S = 1e3;
 
 function T() {
-  let [e, t] = i.useState(!1), O = (0, l.VXO)(b.Xd), T = (0, E.Q3)("useDesktopRefreshOnboarding"), A = i.useMemo(() => T ? [o.z.DESKTOP_REFRESH_ONBOARDING_MODAL] : [], [T]), [N, C] = (0, _.US)(A), R = N === o.z.DESKTOP_REFRESH_ONBOARDING_MODAL, P = (0, a.e7)([h.default], () => h.default.getId());
+  let [e, t] = i.useState(!1), v = (0, l.VXO)(b.Xd), T = (0, E.Q3)("useDesktopRefreshOnboarding"), A = i.useMemo(() => T ? [a.z.DESKTOP_REFRESH_ONBOARDING_MODAL] : [], [T]), [N, C] = (0, _.US)(A), R = N === a.z.DESKTOP_REFRESH_ONBOARDING_MODAL, P = (0, o.e7)([h.default], () => h.default.getId());
   i.useLayoutEffect(() => {
-    T && null != P && g.default.age(P) < m.Z.Millis.DAY && (0, f.EW)(o.z.DESKTOP_REFRESH_ONBOARDING_MODAL);
+    T && null != P && g.default.age(P) < m.Z.Millis.DAY && (0, f.EW)(a.z.DESKTOP_REFRESH_ONBOARDING_MODAL);
     let e = "desktop_refresh_theme_migration_key",
       t = "true" === s.K.get(e);
-    R && T && !t && p.Z.theme === v.BR.DARK && null == d.Z.gradientPreset && !t && (s.K.set(e, "true"), (0, u.ZI)({
-      theme: v.BR.DARKER
+    R && T && !t && p.Z.theme === O.BR.DARK && null == d.Z.gradientPreset && !t && (s.K.set(e, "true"), (0, u.ZI)({
+      theme: O.BR.DARKER
     }))
   }, [R, T, P]), i.useLayoutEffect(() => {
     function e() {
@@ -77,11 +77,11 @@ function T() {
     })
   }, [T, C]);
   i.useEffect(() => {
-    if (T && R && !O && e) {
+    if (T && R && !v && e) {
       let e = setTimeout(() => {
         w()
       }, S);
       return () => clearTimeout(e)
     }
-  }, [e, O, R, T, w])
+  }, [e, v, R, T, w])
 }

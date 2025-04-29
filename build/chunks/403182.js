@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Ng: () => O,
+  Ng: () => v,
   OC: () => N,
   dg: () => I,
   dp: () => E,
@@ -9,14 +9,14 @@ n.d(t, {
   iL: () => C,
   nA: () => S,
   qF: () => g,
-  uV: () => v,
+  uV: () => O,
   vY: () => A
 }), n(35282), n(388685), n(704826);
 var r = n(200651),
   i = n(112456),
-  a = n.n(i),
-  o = n(392711),
-  s = n.n(o),
+  o = n.n(i),
+  a = n(392711),
+  s = n.n(a),
   l = n(430824),
   c = n(594174),
   u = n(424218),
@@ -81,18 +81,18 @@ let b = [{
 }];
 
 function y(e) {
-  return v(e.name, e.type)
+  return O(e.name, e.type)
 }
 
-function v(e, t) {
+function O(e, t) {
   var n;
   e = null != (n = null == e ? void 0 : e.toLowerCase()) ? n : "";
   let r = s().find(b, n => null != n.reType && null != t ? n.reType.test(t) : null != n.reName && "" !== e && n.reName.test(e));
   return null != r ? r.klass : "unknown"
 }
 
-function O(e) {
-  return a().filesize(e)
+function v(e) {
+  return o().filesize(e)
 }
 
 function I(e) {
@@ -129,16 +129,16 @@ function C(e) {
     onClick: n
   } = e, i = (0, u.BU)(I(t) / 1024, {
     useKibibytes: !0
-  }), a = (0, u.BU)(_.Uq / 1024, {
+  }), o = (0, u.BU)(_.Uq / 1024, {
     useKibibytes: !0
-  }), o = p.intl.formatToPlainString(p.t.q5fTZm, {
+  }), a = p.intl.formatToPlainString(p.t.q5fTZm, {
     maxSize: i
   }), s = p.intl.formatToPlainString(p.t.htbuIS, {
-    premiumMaxSize: a
+    premiumMaxSize: o
   }), l = p.intl.format(p.t.fjSvsL, {
     onClick: n
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [o, " ", s.replace("\n", " "), ". ", l]
+    children: [a, " ", s.replace("\n", " "), ". ", l]
   })
 }

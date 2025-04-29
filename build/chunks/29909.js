@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(481060),
   l = n(68405),
   c = n(985375),
@@ -57,11 +57,11 @@ let E = i.memo(function(e) {
   let {
     width: t,
     height: n,
-    src: a,
+    src: o,
     url: p,
     format: m,
     className: E
-  } = e, [b, y] = i.useState(!1), v = (0, c.hb)((0, l.iy)(p)), O = v ? f.intl.string(f.t["5/NS7+"]) : f.intl.string(f.t.nIH0v7), I = v ? s.r7p : s.vxU;
+  } = e, [b, y] = i.useState(!1), O = (0, c.hb)((0, l.iy)(p)), v = O ? f.intl.string(f.t["5/NS7+"]) : f.intl.string(f.t.nIH0v7), I = O ? s.r7p : s.vxU;
   i.useEffect(() => {
     if (!b) return;
     let e = setTimeout(() => {
@@ -70,19 +70,19 @@ let E = i.memo(function(e) {
     return () => clearTimeout(e)
   }, [b]);
   let S = e => {
-    e.preventDefault(), e.stopPropagation(), y(!0), v ? (0, l.PF)(p) : ((0, l.uL)({
+    e.preventDefault(), e.stopPropagation(), y(!0), O ? (0, l.PF)(p) : ((0, l.uL)({
       url: p,
-      src: a,
+      src: o,
       width: t,
       height: n,
       format: m
     }), u.S.dispatch(d.CkL.FAVORITE_GIF))
   };
   return (0, r.jsx)(s.ua7, {
-    text: O,
+    text: v,
     children: e => (0, r.jsx)(s.P3F, g(h({}, e), {
-      className: o()(E, _.gifFavoriteButton, {
-        [_.selected]: v,
+      className: a()(E, _.gifFavoriteButton, {
+        [_.selected]: O,
         [_.showPulse]: b
       }),
       onMouseDown: e => e.preventDefault(),

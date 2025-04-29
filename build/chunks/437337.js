@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  r: () => O
+  r: () => v
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(272573),
   l = n(692547),
   c = n(186325),
@@ -73,23 +73,23 @@ let b = {
     }
   };
 
-function v(e, t, n, i) {
-  let a = e.to({
+function O(e, t, n, i) {
+  let o = e.to({
       output: [t, n]
     }),
-    o = i ? [y.X.TOP, y.X.TOP, y.CHECK.TOP, y.CHECK.TOP] : [y.X.TOP, y.BAR.TOP, y.BAR.TOP, y.CHECK.TOP],
+    a = i ? [y.X.TOP, y.X.TOP, y.CHECK.TOP, y.CHECK.TOP] : [y.X.TOP, y.BAR.TOP, y.BAR.TOP, y.CHECK.TOP],
     l = i ? [y.X.BOTTOM, y.X.BOTTOM, y.CHECK.BOTTOM, y.CHECK.BOTTOM] : [y.X.BOTTOM, y.BAR.BOTTOM, y.BAR.BOTTOM, y.CHECK.BOTTOM];
   return (0, r.jsxs)("svg", {
     viewBox: "0 0 20 20",
     fill: "none",
     children: [(0, r.jsx)(s.animated.path, {
-      fill: a,
+      fill: o,
       d: e.to({
         range: [0, .3, .7, 1],
-        output: o
+        output: a
       })
     }), (0, r.jsx)(s.animated.path, {
-      fill: a,
+      fill: o,
       d: e.to({
         range: [0, .3, .7, 1],
         output: l
@@ -97,15 +97,15 @@ function v(e, t, n, i) {
     })]
   })
 }
-let O = function(e) {
+let v = function(e) {
   let {
     id: t,
     onChange: n,
-    checked: a,
+    checked: o,
     disabled: h,
     className: g,
     focusProps: y,
-    innerRef: O
+    innerRef: v
   } = e, {
     reducedMotion: I
   } = i.useContext(c.S), S = i.useRef(null), [T, A] = i.useState(!1), N = (0, _.Q3)("Switch"), C = (0, d.d)(N ? l.Z.colors.INTERACTIVE_MUTED : l.Z.unsafe_rawColors.PRIMARY_400).spring(), R = (0, d.d)(N ? l.Z.colors.REDESIGN_INPUT_CONTROL_SELECTED : l.Z.unsafe_rawColors.GREEN_360).spring(), {
@@ -114,7 +114,7 @@ let O = function(e) {
   } = (0, f.q_F)({
     config: b,
     opacity: h ? N ? .5 : .3 : 1,
-    state: T ? a ? .7 : .3 : +!!a
+    state: T ? o ? .7 : .3 : +!!o
   }, "animate-always");
 
   function D(e) {
@@ -133,8 +133,8 @@ let O = function(e) {
     within: !0,
     offset: -2,
     children: (0, r.jsxs)(s.animated.div, {
-      className: o()(p.container, g, {
-        [p.checked]: a,
+      className: a()(p.container, g, {
+        [p.checked]: o,
         [p.disabled]: h
       }),
       onMouseDown: () => !h && A(!0),
@@ -176,19 +176,19 @@ let O = function(e) {
             output: [20, 28, 28, 20]
           }),
           rx: "10"
-        }), v(P, C, R, I.enabled)]
+        }), O(P, C, R, I.enabled)]
       }), (0, r.jsx)("input", {
         id: t,
         type: "checkbox",
         ref: e => {
-          S.current = e, null != O && (O.current = e)
+          S.current = e, null != v && (v.current = e)
         },
         className: p.input,
         tabIndex: h ? -1 : 0,
         onKeyDown: L,
         onKeyUp: x,
         onChange: D,
-        checked: a,
+        checked: o,
         disabled: h
       })]
     })

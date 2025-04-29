@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(442837),
-  a = n(481060),
-  o = n(549879),
+  o = n(481060),
+  a = n(549879),
   s = n(300284),
   l = n(314897),
   c = n(430824),
@@ -47,24 +47,24 @@ function m(e) {
     onClose: g
   } = e, E = (0, i.e7)([l.default], () => l.default.getId() === t.id), b = (0, i.e7)([c.Z], () => null != n ? c.Z.getGuild(n) : null), y = (0, s.Z)({
     guild: b
-  }), v = (0, s.Z)({}), {
-    trackUserProfileAction: O
+  }), O = (0, s.Z)({}), {
+    trackUserProfileAction: v
   } = (0, u.KZ)();
   return E ? null == b ? (0, r.jsx)(d.tG, {
     action: "EDIT_PROFILE",
     text: f.intl.string(f.t.s5vZlZ),
-    icon: a.vdY,
+    icon: o.vdY,
     autoFocus: !0,
     fullWidth: p,
     onClick: () => {
-      null == g || g(), v(), (0, o.i)(m)
+      null == g || g(), O(), (0, a.i)(m)
     }
-  }) : (0, r.jsx)(a.yRy, {
+  }) : (0, r.jsx)(o.yRy, {
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsxs)(a.v2r, {
+      return (0, r.jsxs)(o.v2r, {
         className: _.popoutMenu,
         onSelect: void 0,
         navId: "edit-profile-popout",
@@ -72,30 +72,30 @@ function m(e) {
           t(), null == g || g()
         },
         "aria-label": f.intl.string(f.t.AXIHpa),
-        children: [(0, r.jsx)(a.sNh, {
+        children: [(0, r.jsx)(o.sNh, {
           id: "edit-server-profile",
           label: f.intl.string(f.t["PKQB/P"]),
           subtext: f.intl.string(f.t.VYHWKC),
           action: () => {
-            O({
+            v({
               action: "EDIT_GUILD_PROFILE"
-            }), y(), (0, o.i)(m)
+            }), y(), (0, a.i)(m)
           }
-        }), (0, r.jsx)(a.sNh, {
+        }), (0, r.jsx)(o.sNh, {
           id: "edit-main-profile",
           label: f.intl.string(f.t.HmFaFB),
           subtext: f.intl.string(f.t["+EERMj"]),
           action: () => {
-            O({
+            v({
               action: "EDIT_PROFILE"
-            }), v(), (0, o.i)(m)
+            }), O(), (0, a.i)(m)
           }
         })]
       })
     },
     children: e => (0, r.jsx)(d.tG, h({
       text: f.intl.string(f.t.s5vZlZ),
-      icon: a.vdY,
+      icon: o.vdY,
       autoFocus: !0,
       fullWidth: p
     }, e))

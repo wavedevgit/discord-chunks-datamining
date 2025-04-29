@@ -6,8 +6,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(272573),
   l = n(481060),
   c = n(493773),
@@ -43,7 +43,7 @@ function y(e) {
   return e
 }
 
-function v(e, t) {
+function O(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,8 +54,8 @@ function v(e, t) {
   return n
 }
 
-function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -66,10 +66,10 @@ function T(e) {
   let {
     questId: t,
     survey: n,
-    transitionState: a,
-    onClose: o,
+    transitionState: o,
+    onClose: a,
     onSubmit: f
-  } = e, p = (0, _.B4)(t), [b, v] = i.useState(0), [T, N] = (0, l.q_F)(() => ({
+  } = e, p = (0, _.B4)(t), [b, O] = i.useState(0), [T, N] = (0, l.q_F)(() => ({
     from: {
       width: "0%"
     },
@@ -77,19 +77,19 @@ function T(e) {
       duration: I
     }
   })), R = e => {
-    f(), v(1), null != p && d.default.track(h.rMx.QUEST_SURVEY_SUBMITTED, O(y({}, C(p, n)), {
+    f(), O(1), null != p && d.default.track(h.rMx.QUEST_SURVEY_SUBMITTED, v(y({}, C(p, n)), {
       choice: e.text,
       choice_id: e.key
     }))
   }, P = async e => {
     1 === e && (await N({
       width: "100%"
-    }), o())
+    }), a())
   };
   return (0, c.ZP)(() => {
     null != p && d.default.track(h.rMx.QUEST_SURVEY_DISPLAYED, C(p, n))
-  }), null == p && o(), (0, r.jsx)(l.Y0X, {
-    transitionState: a,
+  }), null == p && a(), (0, r.jsx)(l.Y0X, {
+    transitionState: o,
     size: l.CgR.DYNAMIC,
     className: g.modalRoot,
     children: (0, r.jsxs)(l.MyZ, {
@@ -104,7 +104,7 @@ function T(e) {
           className: g.modalHeader,
           children: [(0, r.jsx)(l.olH, {
             className: g.closeBtn,
-            onClick: o
+            onClick: a
           }), (0, r.jsx)("img", {
             src: E,
             alt: "",
@@ -144,7 +144,7 @@ function T(e) {
           children: (0, r.jsxs)("div", {
             className: g.closeButtonContainer,
             children: [(0, r.jsx)(l.zxk, {
-              onClick: o,
+              onClick: a,
               children: m.intl.string(m.t.cpT0Cg)
             }), (0, r.jsx)(s.animated.div, {
               className: g.progressOverlay,
@@ -164,7 +164,7 @@ function A(e) {
     onClick: i
   } = e;
   return (0, r.jsxs)(l.P3F, {
-    className: o()(g.choiceContainer, t),
+    className: a()(g.choiceContainer, t),
     onClick: () => i(n),
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/semibold",
@@ -179,7 +179,7 @@ function N(e) {
     let {
       default: i
     } = await Promise.resolve().then(n.bind(n, 61115));
-    return n => (0, r.jsx)(i, O(y({}, n, e), {
+    return n => (0, r.jsx)(i, v(y({}, n, e), {
       onSubmit: () => {
         t = !0
       }
@@ -187,7 +187,7 @@ function N(e) {
   }, {
     onCloseCallback: () => {
       let n = p.Z.getQuest(e.questId);
-      null != n && d.default.track(h.rMx.QUEST_SURVEY_DISMISSED, O(y({}, C(n, e.survey)), {
+      null != n && d.default.track(h.rMx.QUEST_SURVEY_DISMISSED, v(y({}, C(n, e.survey)), {
         submitted: t
       }))
     }

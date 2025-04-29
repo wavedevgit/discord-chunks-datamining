@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  a = n.n(i),
-  o = n(481060),
+  o = n.n(i),
+  a = n(481060),
   s = n(493773),
   l = n(921944),
   c = n(519254);
@@ -86,13 +86,13 @@ function y(e) {
     buttonCTA: h,
     secondaryButtonCTA: m,
     onClick: y,
-    onSecondaryClick: v,
-    buttonProps: O = {
-      color: o.zxk.Colors.BRAND,
-      look: o.zxk.Looks.FILLED
+    onSecondaryClick: O,
+    buttonProps: v = {
+      color: a.zxk.Colors.BRAND,
+      look: a.zxk.Looks.FILLED
     },
     secondaryButtonProps: I = {
-      color: o.zxk.Colors.BRAND_INVERTED
+      color: a.zxk.Colors.BRAND_INVERTED
     },
     onComponentMount: S,
     asset: T,
@@ -108,30 +108,30 @@ function y(e) {
       y(e), null == A || A(l.L.PRIMARY)
     },
     w = () => {
-      null == v || v(), null == A || A(l.L.SECONDARY)
+      null == O || O(), null == A || A(l.L.SECONDARY)
     };
   return (0, r.jsxs)("div", {
-    className: a()(n, g[t], c.upsellTooltipWrapper, c[N]),
-    children: [T, null == i ? null : (0, r.jsx)(o.X6q, {
+    className: o()(n, g[t], c.upsellTooltipWrapper, c[N]),
+    children: [T, null == i ? null : (0, r.jsx)(a.X6q, {
       color: E[t],
-      className: a()(u, c.upsellTooltipHeader),
+      className: o()(u, c.upsellTooltipHeader),
       variant: "heading-md/semibold",
       children: i
-    }), (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(a.Text, {
       color: b[t],
-      className: a()(p, c.content),
+      className: o()(p, c.content),
       variant: "text-sm/normal",
       children: f
     }), null != h || R ? (0, r.jsxs)("div", {
-      className: a()(c.upsellButtonsContainer, {
+      className: o()(c.upsellButtonsContainer, {
         [c.upsellButtonsAdjacent]: 0 === C,
         [c.upsellButtonsStacked]: 1 === C
       }),
-      children: [R ? (0, r.jsx)(o.zxk, _(d({}, I), {
+      children: [R ? (0, r.jsx)(a.zxk, _(d({}, I), {
         fullWidth: 1 === C,
         onClick: w,
         children: m
-      })) : null, null == h ? null : (0, r.jsx)(o.zxk, _(d({}, O), {
+      })) : null, null == h ? null : (0, r.jsx)(a.zxk, _(d({}, v), {
         fullWidth: !R || 1 === C,
         onClick: P,
         children: h

@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
-let r, i, a;
+let r, i, o;
 n.d(t, {
   Z: () => R
 });
-var o, s = n(772848),
+var a, s = n(772848),
   l = n(442837),
   c = n(433517),
   u = n(846519),
@@ -27,21 +27,21 @@ let E = "BrowserHandoffStore",
   b = !1,
   y = new u.V7;
 
-function v() {
+function O() {
   null != r && null != i && (window.open("".concat(r, "&key=").concat(i)), p.Z.focus(null, !0))
 }
 
-function O() {
+function v() {
   i = null, y.stop(), b = !1, c.K.set(E, b)
 }
 
 function I(e) {
-  r = "".concat(location.protocol, "//").concat(location.host, "/handoff?rpc=").concat(e.port), v()
+  r = "".concat(location.protocol, "//").concat(location.host, "/handoff?rpc=").concat(e.port), O()
 }
 
 function S(e) {
   if (null != i) return !1;
-  i = (0, s.Z)(), y.start(e.timeout, () => (0, f.lx)()), v()
+  i = (0, s.Z)(), y.start(e.timeout, () => (0, f.lx)()), O()
 }
 
 function T(e) {
@@ -55,13 +55,13 @@ function T(e) {
 }
 
 function A(e) {
-  a = new _.Z(e.user)
+  o = new _.Z(e.user)
 }
 
 function N() {
-  O()
+  v()
 }
-class C extends(o = l.ZP.Store) {
+class C extends(a = l.ZP.Store) {
   initialize() {
     !1 !== c.K.get(E) && (b = h.isPlatformEmbedded && "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL)
   }
@@ -69,7 +69,7 @@ class C extends(o = l.ZP.Store) {
     return !m.s.isDisallowPopupsSet() && b
   }
   get user() {
-    return a
+    return o
   }
   get key() {
     return i
@@ -80,7 +80,7 @@ let R = new C(d.Z, {
   RPC_SERVER_READY: I,
   BROWSER_HANDOFF_BEGIN: S,
   BROWSER_HANDOFF_FROM_APP: T,
-  BROWSER_HANDOFF_UNAVAILABLE: O,
+  BROWSER_HANDOFF_UNAVAILABLE: v,
   BROWSER_HANDOFF_SET_USER: A,
   LOGIN: N,
   LOGIN_SUCCESS: N,

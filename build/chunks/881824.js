@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $Q: () => v,
+  $Q: () => O,
   Ev: () => y,
   Gy: () => N,
   R5: () => A,
@@ -13,8 +13,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(952265),
-  a = n(359110),
-  o = n(314897),
+  o = n(359110),
+  a = n(314897),
   s = n(88751),
   l = n(427679),
   c = n(513449),
@@ -62,7 +62,7 @@ function m(e, t) {
 }
 
 function g(e) {
-  let t = o.default.getId(),
+  let t = a.default.getId(),
     n = s.ZP.isModerator(t, e.id),
     r = l.Z.isLive(e.id);
   n && !r ? E(e) : n && r && b(e)
@@ -105,10 +105,10 @@ function y(e, t) {
   })
 }
 
-function v(e) {}
+function O(e) {}
 
-function O(e) {
-  (0, a.Kh)(e.id)
+function v(e) {
+  (0, o.Kh)(e.id)
 }
 
 function I(e, t) {
@@ -137,7 +137,7 @@ function S(e, t) {
 }
 
 function T(e) {
-  let t = o.default.getId(),
+  let t = a.default.getId(),
     n = (0, u.Z7)(e),
     r = (0, u.wK)(e);
   return !s.ZP.isModerator(t, e) && (n > 0 || r > 0)
@@ -145,7 +145,7 @@ function T(e) {
 
 function A(e, t) {
   let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
-  t !== e.id && (0, c.Ku)(!0), O(e), t !== e.id && n && g(e)
+  t !== e.id && (0, c.Ku)(!0), v(e), t !== e.id && n && g(e)
 }
 
 function N(e, t) {

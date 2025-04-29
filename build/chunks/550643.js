@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => O
+  Z: () => v
 }), n(388685), n(49124);
 var r = n(570140),
   i = n(147913),
-  a = n(710845),
-  o = n(199902),
+  o = n(710845),
+  a = n(199902),
   s = n(944486),
   l = n(979651),
   c = n(458725),
@@ -28,8 +28,8 @@ function h(e, t) {
   if (null == e) return {};
   var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -37,11 +37,11 @@ function h(e, t) {
 function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let g = new a.Z("AVErrorManager");
+let g = new o.Z("AVErrorManager");
 
 function E(e, t) {
   let n = new Set;
@@ -57,7 +57,7 @@ function y(e) {
   let t = b(e);
   return "".concat(e.type, ":").concat(null == t ? void 0 : t.makeErrorContextKey(e))
 }
-class v extends i.Z {
+class O extends i.Z {
   _initialize() {
     (0, d.H3)("AVErrorManager")
   }
@@ -66,13 +66,13 @@ class v extends i.Z {
     if (__OVERLAY__) return;
     let n = null != (e = s.Z.getVoiceChannelId()) ? e : null,
       i = null != n && null != (t = l.Z.getVoiceStateForChannel(n)) ? t : null,
-      a = o.Z.getAllActiveStreams(),
+      o = a.Z.getAllActiveStreams(),
       u = new Map;
     for (let e of Object.values(_.C)) {
       let t = e.getActiveErrors({
         voiceChannelId: n,
         voiceState: i,
-        activeStreams: a
+        activeStreams: o
       });
       if (null != t)
         for (let e of t) u.set(y(e), e)
@@ -138,4 +138,4 @@ class v extends i.Z {
     })
   }
 }
-let O = new v
+let v = new O

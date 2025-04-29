@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(442837),
-  o = n(704215),
+  o = n(442837),
+  a = n(704215),
   s = n(481060),
   l = n(980591),
   c = n(381586),
@@ -21,8 +21,8 @@ var r = n(200651),
   E = n(388032),
   b = n(185467),
   y = n(425637),
-  v = n(685741);
-let O = 200,
+  O = n(685741);
+let v = 200,
   I = 32,
   S = 30;
 
@@ -36,16 +36,16 @@ function T(e) {
     themeType: N
   } = (0, h.z)(), C = (0, p.T)({
     location: "UserProfilePopoutInteractionCoachmark"
-  }), R = (0, a.e7)([_.default], () => {
+  }), R = (0, o.e7)([_.default], () => {
     var e;
     return (null == (e = _.default.getCurrentUser()) ? void 0 : e.id) === T.id
-  }), P = (0, a.e7)([f.Z], () => f.Z.findActivity(T.id, e => {
+  }), P = (0, o.e7)([f.Z], () => f.Z.findActivity(T.id, e => {
     let {
       type: t
     } = e;
     return t === g.IIU.CUSTOM_STATUS
   })), w = () => !R && N === m.lY.POPOUT && (t === m.n_.AVATAR ? C && null == P : t === m.n_.STATUS ? C : t === m.n_.ACTIVITY && !C), [D, L] = i.useState(!1);
-  (0, l.Z)(() => L(!0), w() ? O : null);
+  (0, l.Z)(() => L(!0), w() ? v : null);
   let {
     asset: x,
     assetClassName: M,
@@ -55,13 +55,13 @@ function T(e) {
     spacing: G,
     dismissibleContentType: B
   } = C ? {
-    asset: v,
+    asset: O,
     assetClassName: b.profileImage,
     className: b.profileCoachmark,
     content: E.intl.string(E.t.HEGlIC),
     header: E.intl.string(E.t["R/RaKy"]),
     spacing: S,
-    dismissibleContentType: o.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK_ALL
+    dismissibleContentType: a.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK_ALL
   } : {
     asset: y,
     assetClassName: void 0,
@@ -69,8 +69,8 @@ function T(e) {
     content: E.intl.string(E.t.LQ32TU),
     header: E.intl.string(E.t.XDBiPT),
     spacing: I,
-    dismissibleContentType: o.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK_ACTIVITY
-  }, V = (0, c.N)(o.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK), F = D && !V ? [B] : [], [Z, H] = (0, u.US)(F);
+    dismissibleContentType: a.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK_ACTIVITY
+  }, V = (0, c.N)(a.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK), F = D && !V ? [B] : [], [Z, H] = (0, u.US)(F);
   return (0, r.jsx)(s.yRy, {
     targetElementRef: A,
     align: "center",

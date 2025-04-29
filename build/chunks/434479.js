@@ -55,9 +55,9 @@ function f(e) {
       selected: b,
       trailing: y,
       background: _,
-      showUnread: O = !1
+      showUnread: v = !1
     } = e,
-    v = function(e, t) {
+    O = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -75,7 +75,7 @@ function f(e) {
   let C = (0, o.JA)(n),
     j = null != (t = (0, s.qg)(m)) ? t : "";
   return (0, r.jsx)("li", {
-    children: (0, r.jsxs)(a.kL8, p(h({}, v), {
+    children: (0, r.jsxs)(a.kL8, p(h({}, O), {
       buttonProps: p(h({}, C), {
         id: n,
         role: "button"
@@ -89,13 +89,13 @@ function f(e) {
           right: 4
         }
       },
-      onContextMenu: null != v.onContextMenu ? v.onContextMenu : e => {
+      onContextMenu: null != O.onContextMenu ? O.onContextMenu : e => {
         e.stopPropagation()
       },
       className: l()(u.containerDefault, d.wrapper, {
         [d.modeSelected]: b
       }, i),
-      children: [_, O ? (0, r.jsx)("div", {
+      children: [_, v ? (0, r.jsx)("div", {
         className: l()(d.unread, d.unreadImportant)
       }) : null, (0, r.jsx)("div", {
         className: l()([d.link, d.basicChannelRowLink, f]),

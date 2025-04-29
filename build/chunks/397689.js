@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => O
 });
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(481060),
   l = n(906732),
   c = n(1585),
@@ -58,7 +58,7 @@ function b(e, t) {
 }
 let y = d.ZP.getEnableHardwareAcceleration() ? s.Xo$ : s.qEK;
 
-function v(e) {
+function O(e) {
   let {
     user: t,
     guild: n,
@@ -66,8 +66,8 @@ function v(e) {
     canUsePremiumCustomization: d,
     previewAvatar: m,
     previewAvatarDecoration: E,
-    previewTheme: v,
-    previewPrimaryColor: O,
+    previewTheme: O,
+    previewPrimaryColor: v,
     className: I,
     disabledInputs: S,
     isTryItOutFlow: T,
@@ -75,17 +75,17 @@ function v(e) {
   } = e, {
     analyticsLocations: N,
     newestAnalyticsLocation: C
-  } = (0, l.ZP)(), R = (0, o.e7)([u.Z], () => u.Z.getStatus(t.id)), P = null == n || (null == i ? void 0 : i.canUsePremiumProfileCustomization) || d, w = (0, r.jsx)(y, {
+  } = (0, l.ZP)(), R = (0, a.e7)([u.Z], () => u.Z.getStatus(t.id)), P = null == n || (null == i ? void 0 : i.canUsePremiumProfileCustomization) || d, w = (0, r.jsx)(y, {
     src: m,
     avatarDecoration: E,
-    imageClassName: a()(I, {
+    imageClassName: o()(I, {
       [h.overlay]: !S
     }),
     size: s.EFr.SIZE_80,
     "aria-label": t.username,
     status: R,
     statusTooltip: !1,
-    statusBackdropColor: null != O ? (0, s.QFD)(v) : void 0
+    statusBackdropColor: null != v ? (0, s.QFD)(O) : void 0
   });
   return S ? (0, r.jsx)("div", {
     className: h.avatar,
@@ -114,7 +114,7 @@ function v(e) {
       })
     },
     children: e => (0, r.jsxs)(s.P3F, b(g({}, e), {
-      className: a()(h.avatar, h.clickable),
+      className: o()(h.avatar, h.clickable),
       children: [w, (0, r.jsx)(s.vdY, {
         size: "custom",
         className: h.overlayIcon,
@@ -125,7 +125,7 @@ function v(e) {
     }))
   }) : (0, r.jsxs)(s.P3F, {
     onClick: A,
-    className: a()(h.avatar, h.clickable),
+    className: o()(h.avatar, h.clickable),
     children: [w, (0, r.jsx)(s.SrA, {
       size: "custom",
       className: h.overlayIcon,

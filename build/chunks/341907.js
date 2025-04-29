@@ -16,8 +16,8 @@ n.r(t), n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(772848),
-  a = n(271579),
-  o = n(756647),
+  o = n(271579),
+  a = n(756647),
   s = n(481060),
   l = n(836768),
   c = n(98278),
@@ -32,8 +32,8 @@ var i = n(772848),
   E = n(569984),
   b = n(497505),
   y = n(918701),
-  v = n(184299),
-  O = n(862847),
+  O = n(184299),
+  v = n(862847),
   I = n(5881),
   S = n(492112),
   T = n(61115),
@@ -87,8 +87,8 @@ function k(e) {
   let {
     questId: t,
     location: i,
-    questContentPosition: a,
-    preview: o = !1,
+    questContentPosition: o,
+    preview: a = !1,
     previewQuest: l = null
   } = e;
   (0, s.ZDy)(async () => {
@@ -97,9 +97,9 @@ function k(e) {
     } = await Promise.all([n.e("37447"), n.e("64838"), n.e("27458"), n.e("78900"), n.e("37560")]).then(n.bind(n, 985866));
     return n => (0, r.jsx)(e, L(w({}, n), {
       questId: t,
-      questContentPosition: a,
+      questContentPosition: o,
       location: i,
-      preview: o,
+      preview: a,
       previewQuest: l
     }))
   })
@@ -199,7 +199,7 @@ function Z(e) {
     n = {
       location: N.dr.QUESTS_BAR
     };
-  if (!(0, O.j)(n)) return;
+  if (!(0, v.j)(n)) return;
   let r = (0, S.Z)({
     entityName: e.config.messages.gameTitle
   });
@@ -220,7 +220,7 @@ function Y(e) {
     let {
       default: i
     } = await H();
-    return a => (0, r.jsx)(i, L(w({}, a), {
+    return o => (0, r.jsx)(i, L(w({}, o), {
       openStartClockTime: performance.now(),
       questId: e.id,
       autoplay: t,
@@ -231,16 +231,16 @@ function Y(e) {
     backdropStyle: s.fCB.IMMERSIVE,
     onCloseCallback: () => {
       var t, r;
-      let i = v.ZP.getState().getVideoProgress(e.id);
+      let i = O.ZP.getState().getVideoProgress(e.id);
       if (null == i) return;
-      let a = E.Z.getQuest(e.id);
-      null != a && (null == (t = a.userStatus) ? void 0 : t.enrolledAt) != null && (null == (r = a.userStatus) ? void 0 : r.completedAt) == null && (0, y.FI)(a, i.maxTimestampSec);
-      let o = (0, y.bA)(i.maxTimestampSec, i.duration);
+      let o = E.Z.getQuest(e.id);
+      null != o && (null == (t = o.userStatus) ? void 0 : t.enrolledAt) != null && (null == (r = o.userStatus) ? void 0 : r.completedAt) == null && (0, y.FI)(o, i.maxTimestampSec);
+      let a = (0, y.bA)(i.maxTimestampSec, i.duration);
       (0, g.dA)({
         questId: e.id,
         event: C.rMx.QUEST_VIDEO_PROGRESSED,
         properties: {
-          progress: o,
+          progress: a,
           video_timestamp_seconds: i.maxTimestampSec,
           video_session_id: n
         }
@@ -248,7 +248,7 @@ function Y(e) {
         questId: e.id,
         event: C.rMx.QUEST_VIDEO_MODAL_CLOSED,
         properties: {
-          video_progress: o,
+          video_progress: a,
           video_session_id: n,
           network_connection_speed: p.Z.getEffectiveConnectionSpeed()
         }
@@ -263,9 +263,9 @@ function W(e) {
     r = "quest";
   if ("Android" === n || "iOS" === n) {
     let t = _.default.getFingerprint(),
-      n = (0, a.WS)(),
+      n = (0, o.WS)(),
       i = "".concat(location.protocol, "//").concat(window.GLOBAL_ENV.WEBAPP_ENDPOINT, "/quests/").concat(e);
-    return (0, a.ZP)(i, {
+    return (0, o.ZP)(i, {
       utmSource: r,
       fingerprint: t,
       attemptId: n
@@ -276,9 +276,9 @@ function W(e) {
 
 function K(e) {
   let t = W(e),
-    n = (0, a.zS)(t);
+    n = (0, o.zS)(t);
   null != n && h.default.track(C.rMx.DEEP_LINK_CLICKED, {
-    fingerprint: (0, o.K)(n.fingerprint),
+    fingerprint: (0, a.K)(n.fingerprint),
     attempt_id: n.attemptId,
     source: n.utmSource
   }), m.Z.launch(t, t => {

@@ -8,8 +8,8 @@ Object.defineProperty(t, "__esModule", {
   value: !0
 });
 var i = n(698091),
-  a = r(n(117374)),
-  o = r(n(570571)),
+  o = r(n(117374)),
+  a = r(n(570571)),
   s = r(n(88410)),
   l = n(239189),
   c = n(192379),
@@ -40,7 +40,7 @@ var i = n(698091),
       var n;
       return (n = e.call(this) || this)._value = t, n.done = !0, n.elapsedTime = void 0, n.lastPosition = void 0, n.lastVelocity = void 0, n.v0 = void 0, i.is.num(n._value) && (n.lastPosition = n._value), n
     }
-    a(t, e), t.create = function(e, n) {
+    o(t, e), t.create = function(e, n) {
       return new t(e)
     };
     var n = t.prototype;
@@ -62,7 +62,7 @@ var i = n(698091),
         output: [t, n]
       }), r
     }
-    a(t, e), t.create = function(e, n) {
+    o(t, e), t.create = function(e, n) {
       if (void 0 === n && (n = e), i.is.str(e) && i.is.str(n)) return new t(e, n);
       throw TypeError('Expected "from" and "to" to be strings')
     };
@@ -90,7 +90,7 @@ var i = n(698091),
       var n;
       return void 0 === t && (t = null), (n = e.call(this) || this).source = void 0, n.setValue(t), n
     }
-    a(t, e);
+    o(t, e);
     var n = t.prototype;
     return n.getValue = function(e) {
       if (!this.source) return null;
@@ -98,8 +98,8 @@ var i = n(698091),
       return i.each(this.source, function(n, r) {
         if (f(n)) t[r] = n.getValue(e);
         else {
-          var a = i.getFluidConfig(n);
-          a ? t[r] = a.get() : e || (t[r] = n)
+          var o = i.getFluidConfig(n);
+          o ? t[r] = o.get() : e || (t[r] = n)
         }
       }), t
     }, n.setValue = function(e) {
@@ -122,12 +122,12 @@ var i = n(698091),
       })
     }, t
   }(m),
-  v = function(e) {
+  O = function(e) {
     function t(t, n) {
       var r;
-      return (r = e.call(this, null) || this).source = void 0, e.prototype.setValue.call(o(r), r._makeAnimated(t, n)), r
+      return (r = e.call(this, null) || this).source = void 0, e.prototype.setValue.call(a(r), r._makeAnimated(t, n)), r
     }
-    a(t, e), t.create = function(e, n) {
+    o(t, e), t.create = function(e, n) {
       return new t(e, n)
     };
     var n = t.prototype;
@@ -146,12 +146,12 @@ var i = n(698091),
       }) : []
     }, t
   }(y),
-  O = function(e) {
+  v = function(e) {
     function t(t) {
       var n;
       return (n = e.call(this, null) || this).update = t, n.dirty = !1, n
     }
-    a(t, e);
+    o(t, e);
     var n = t.prototype;
     return n.setValue = function(t, n) {
       if (t) {
@@ -173,12 +173,12 @@ var i = n(698091),
   }(y),
   I = function(e, t) {
     return c.forwardRef(function(n, r) {
-      var a = c.useRef(null),
-        o = !i.is.fun(e) || e.prototype && e.prototype.isReactComponent,
+      var o = c.useRef(null),
+        a = !i.is.fun(e) || e.prototype && e.prototype.isReactComponent,
         l = i.useForceUpdate(),
-        d = new O(function() {
-          var e = a.current;
-          if (!o || e) {
+        d = new v(function() {
+          var e = o.current;
+          if (!a || e) {
             var n = !!e && t.applyAnimatedValues(e, d.getValue(!0));
             !1 === n && l()
           }
@@ -197,8 +197,8 @@ var i = n(698091),
             })
           }
       }), c.createElement(e, s({}, t.getComponentProps(d.getValue()), {
-        ref: o && function(e) {
-          a.current = S(r, e)
+        ref: a && function(e) {
+          o.current = S(r, e)
         }
       }))
     })
@@ -211,16 +211,16 @@ var T = Symbol.for("AnimatedComponent"),
   A = function(e, t) {
     var n = void 0 === t ? {} : t,
       r = n.applyAnimatedValues,
-      a = void 0 === r ? function() {
+      o = void 0 === r ? function() {
         return !1
       } : r,
-      o = n.createAnimatedStyle,
-      s = void 0 === o ? function(e) {
+      a = n.createAnimatedStyle,
+      s = void 0 === a ? function(e) {
         return new y(e)
-      } : o,
+      } : a,
       l = n.getComponentProps,
       c = {
-        applyAnimatedValues: a,
+        applyAnimatedValues: o,
         createAnimatedStyle: s,
         getComponentProps: void 0 === l ? function(e) {
           return e
@@ -239,4 +239,4 @@ var T = Symbol.for("AnimatedComponent"),
   N = function(e) {
     return i.is.str(e) ? e : e && i.is.str(e.displayName) ? e.displayName : i.is.fun(e) && e.name || null
   };
-t.Animated = m, t.AnimatedArray = v, t.AnimatedObject = y, t.AnimatedProps = O, t.AnimatedString = E, t.AnimatedValue = g, t.createHost = A, t.getAnimated = _, t.getPayload = h, t.isAnimated = f, t.setAnimated = p
+t.Animated = m, t.AnimatedArray = O, t.AnimatedObject = y, t.AnimatedProps = v, t.AnimatedString = E, t.AnimatedValue = g, t.createHost = A, t.getAnimated = _, t.getPayload = h, t.isAnimated = f, t.setAnimated = p

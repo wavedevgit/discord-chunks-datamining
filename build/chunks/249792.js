@@ -1,6 +1,6 @@
 /** Chunk was on 21247 **/
 n.d(t, {
-  Z: () => h
+  Z: () => d
 });
 var r = n(200651);
 n(192379);
@@ -10,49 +10,52 @@ var i = n(120356),
   s = n(692547),
   a = n(481060),
   c = n(565138),
-  u = n(252686),
-  d = n(728492);
+  u = n(728492);
 
-function h(e) {
+function d(e) {
   let {
     guild: t,
     show: n,
     active: i,
-    onAnimationStart: h,
-    onAnimationRest: p
-  } = e, f = {}, g = {};
-  f.transform = "translate3d(10px, 10px, 0) scale3d(3, 3, 1)", g.transform = "translate3d(0, 0, 0) scale3d(1, 1, 1)";
-  let m = (0, a.dQu)(s.Z.unsafe_rawColors.BRAND_500).hex(),
-    b = (0, a.dQu)(s.Z.unsafe_rawColors.PRIMARY_630).hex();
-  i && null == t.icon && (f.backgroundColor = m, g.backgroundColor = b);
-  let y = (0, a.Yzy)(n, {
-    from: f,
-    enter: g,
-    leave: f,
+    onAnimationStart: d,
+    onAnimationRest: h
+  } = e, p = {}, f = {};
+  p.transform = "translate3d(10px, 10px, 0) scale3d(3, 3, 1)", f.transform = "translate3d(0, 0, 0) scale3d(1, 1, 1)";
+  let g = (0, a.dQu)(s.Z.unsafe_rawColors.BRAND_500).hex(),
+    m = (0, a.dQu)(s.Z.unsafe_rawColors.PRIMARY_630).hex();
+  i && null == t.icon && (p.backgroundColor = g, f.backgroundColor = m);
+  let b = (0, a.Yzy)(n, {
+    from: p,
+    enter: f,
+    leave: p,
     config: {
       duration: 100
     },
-    onStart: h,
-    onRest: p
+    onStart: d,
+    onRest: h
   });
   return (0, r.jsx)(r.Fragment, {
-    children: y((e, n, i) => n && (0, r.jsx)("div", {
-      className: l()(d.folder, d.hover),
+    children: b((e, n, i) => n && (0, r.jsx)("div", {
+      className: u.folderGroup,
       children: (0, r.jsx)("div", {
-        className: d.folderIconWrapper,
-        children: (0, r.jsxs)("div", {
-          className: d.closedFolderIconWrapper,
-          children: [(0, r.jsx)(o.animated.div, {
-            className: d.folderIconPreview,
-            style: e,
-            children: (0, r.jsx)(c.Z, {
-              guild: t,
-              size: c.Z.Sizes.SMOL,
-              className: d.guildIcon
+        className: l()(u.folderHeader, u.folderHeaderSmall),
+        style: {
+          margin: 0
+        },
+        children: (0, r.jsx)(o.animated.div, {
+          className: u.folderDragPreview,
+          style: e,
+          children: (0, r.jsx)("div", {
+            className: u.folderPreviewWrapper,
+            children: (0, r.jsx)("div", {
+              className: u.folderPreview,
+              children: (0, r.jsx)(c.Z, {
+                guild: t,
+                size: c.Z.Sizes.SMOL,
+                className: u.folderPreviewGuildIcon
+              })
             })
-          }), (0, r.jsx)(u.Z, {
-            className: d.miniPlaceholder
-          })]
+          })
         })
       })
     }, i.key))

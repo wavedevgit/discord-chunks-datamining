@@ -1,6 +1,6 @@
 /** Chunk was on 21247 **/
 n.d(t, {
-  Z: () => O
+  Z: () => v
 }), n(388685);
 var r, i, l, o = n(442837),
   s = n(570140),
@@ -42,7 +42,7 @@ l = "PrivateChannelReadStateStore", (i = "displayName") in _ ? Object.defineProp
   configurable: !0,
   writable: !0
 }) : _[i] = l;
-let O = new _(s.Z, {
+let v = new _(s.Z, {
   CONNECTION_OPEN: b,
   OVERLAY_INITIALIZE: b,
   MESSAGE_CREATE: y,

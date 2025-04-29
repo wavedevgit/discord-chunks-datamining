@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(570140),
   i = n(232567),
-  a = n(220082),
-  o = n(275759),
+  o = n(220082),
+  a = n(275759),
   s = n(365943),
   l = n(592125),
   c = n(271383),
@@ -22,8 +22,8 @@ function _(e, t) {
     withMutualFriendsCount: E = !1,
     withMutualFriends: b = !1,
     friendToken: y,
-    dispatchWait: v = !1,
-    waitForRefetch: O = !0,
+    dispatchWait: O = !1,
+    waitForRefetch: v = !0,
     guildId: I,
     channelId: S,
     joinRequestId: T,
@@ -43,7 +43,7 @@ function _(e, t) {
     k = null == I ? null == N : null == R,
     j = !k && (C || M);
   if (!k && !j) return Promise.resolve();
-  (0, s.z)(), null != t && (0, a.vM)(t);
+  (0, s.z)(), null != t && (0, o.vM)(t);
   let U = {
     type: m,
     withMutualGuilds: g,
@@ -53,12 +53,12 @@ function _(e, t) {
     guildId: I,
     joinRequestId: T,
     abortSignal: A,
-    connectionsRoleId: null == I || null == (p = (0, o.Ur)({
+    connectionsRoleId: null == I || null == (p = (0, a.Ur)({
       guildMember: c.ZP.getMember(I, e),
       channel: l.Z.getChannel(S)
     })) ? void 0 : p.id
   };
-  if (v) return r.Z.wait(() => (0, i.In)(e, U, d.Z)), Promise.resolve();
+  if (O) return r.Z.wait(() => (0, i.In)(e, U, d.Z)), Promise.resolve();
   let G = (0, i.In)(e, U, d.Z);
-  return j && !O ? Promise.resolve() : G
+  return j && !v ? Promise.resolve() : G
 }

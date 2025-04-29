@@ -2,24 +2,24 @@
 "use strict";
 n.d(t, {
   AN: () => h,
-  Aq: () => v,
+  Aq: () => O,
   GB: () => E,
   J5: () => p,
   Su: () => m,
   UI: () => u,
   Wu: () => b,
-  ZP: () => O,
+  ZP: () => v,
   bp: () => y,
   g0: () => g
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(374470),
-  o = n(585483),
+  o = n(374470),
+  a = n(585483),
   s = n(830917),
   l = n(919570),
   c = n(981631);
-let u = new o.b,
+let u = new a.b,
   d = i.createContext({
     appContext: c.IlC.APP,
     renderWindow: window,
@@ -29,12 +29,12 @@ let u = new o.b,
   f = new Map;
 
 function _(e, t) {
-  let [n, r] = i.useState((0, s.ZY)(t)), a = i.useMemo(() => new o.b, []), l = i.useMemo(() => ({
+  let [n, r] = i.useState((0, s.ZY)(t)), o = i.useMemo(() => new a.b, []), l = i.useMemo(() => ({
     appContext: e,
     renderWindow: t,
-    windowDispatch: a,
+    windowDispatch: o,
     windowId: n
-  }), [e, t, a, n]);
+  }), [e, t, o, n]);
   return i.useEffect(() => {
     if (null != n) return;
     let e = setInterval(() => {
@@ -61,7 +61,7 @@ function p(e) {
 
 function h(e) {
   var t;
-  return (0, a.k)(null == e ? void 0 : e.target) && null != (t = p(e.target)) ? t : null
+  return (0, o.k)(null == e ? void 0 : e.target) && null != (t = p(e.target)) ? t : null
 }
 
 function m() {
@@ -84,9 +84,9 @@ function b(e) {
     appContext: t,
     renderWindow: n,
     children: i
-  } = e, a = _(t, n);
+  } = e, o = _(t, n);
   return (0, r.jsx)(d.Provider, {
-    value: a,
+    value: o,
     children: i
   })
 }
@@ -95,7 +95,7 @@ function y() {
   return i.useContext(d).appContext
 }
 
-function v() {
+function O() {
   return i.useContext(d).windowDispatch
 }
-let O = d
+let v = d

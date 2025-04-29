@@ -67,8 +67,8 @@ let y = i.memo(function(e) {
   }(e, ["folderNode"]);
   let {
     id: _,
-    name: O,
-    color: v,
+    name: v,
+    color: O,
     children: C
   } = t, j = C.map(e => e.id), S = (0, a.Z)(e => e.guildId), E = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(_)), x = function(e) {
     let t = e.children.map(e => {
@@ -80,8 +80,8 @@ let y = i.memo(function(e) {
       r = [];
     for (let e of t)(e.length < n || 0 === r.length) && (r.push(e), n -= e.length);
     return "".concat(r.join(", ")).concat(r.length < t.length ? ", ..." : "")
-  }(t), I = (0, f.Z)(t), {
-    mentionCount: P,
+  }(t), P = (0, f.Z)(t), {
+    mentionCount: I,
     isMentionLowImportance: w,
     unread: N
   } = (0, l.cj)([u.default], () => ({
@@ -97,20 +97,20 @@ let y = i.memo(function(e) {
       } = await n.e("52590").then(n.bind(n, 205784));
       return t => (0, r.jsx)(e, b(m({}, t), {
         folderId: _,
-        folderName: O,
-        folderColor: v,
-        unread: N || P > 0
+        folderName: v,
+        folderColor: O,
+        unread: N || I > 0
       }))
     })
-  }, [_, O, v, N, P]);
+  }, [_, v, O, N, I]);
   return (0, r.jsx)(p.Z, b(m({}, y), {
     folderNode: t,
     expanded: E,
     selected: null != S && j.includes(S),
-    mentionCount: P,
+    mentionCount: I,
     isMentionLowImportance: w,
     unread: N,
-    mediaState: I,
+    mediaState: P,
     defaultFolderName: x,
     onExpandCollapse: Z,
     onContextMenu: T

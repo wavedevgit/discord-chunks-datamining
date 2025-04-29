@@ -3,15 +3,15 @@
 n.d(t, {
   Zm: () => I,
   aq: () => R,
-  iD: () => O,
+  iD: () => v,
   mL: () => S,
   og: () => C,
   zS: () => N
 }), n(388685);
 var r = n(570140),
   i = n(367907),
-  a = n(703656),
-  o = n(592125),
+  o = n(703656),
+  a = n(592125),
   s = n(984933),
   l = n(271383),
   c = n(430824),
@@ -57,14 +57,14 @@ function y(e, t) {
   return n
 }
 
-function v(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function O(e, t) {
-  _.default.track(m.rMx.VIEW_AS_ROLES_SELECTED, v(b({
+function v(e, t) {
+  _.default.track(m.rMx.VIEW_AS_ROLES_SELECTED, O(b({
     num_roles: Object.keys(t.roles).length
   }, (0, i.hH)(e)), {
     is_viewing_as_member: t.type === h.z.NEW_MEMBER
@@ -77,7 +77,7 @@ function O(e, t) {
 
 function I(e, t) {
   let n = p.Z.getData(e);
-  null != n && n.type === t.type && (_.default.track(m.rMx.VIEW_AS_ROLES_SELECTED, v(b({
+  null != n && n.type === t.type && (_.default.track(m.rMx.VIEW_AS_ROLES_SELECTED, O(b({
     num_roles: Object.keys(n.roles).length
   }, (0, i.hH)(e)), {
     is_viewing_as_member: n.type === h.z.NEW_MEMBER
@@ -97,10 +97,10 @@ function S(e) {
 
 function T(e) {
   let t = d.Z.getChannelId(e),
-    n = o.Z.getChannel(t);
+    n = a.Z.getChannel(t);
   if (!(null != t && (0, g.AB)(t)) && !u.Z.can(m.Plq.VIEW_CHANNEL, n)) {
     let t = s.ZP.getDefaultChannel(e);
-    null != t && (0, a.uL)(m.Z5c.CHANNEL(e, t.id))
+    null != t && (0, o.uL)(m.Z5c.CHANNEL(e, t.id))
   }
 }
 

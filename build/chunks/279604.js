@@ -72,18 +72,18 @@ function y(e, t) {
   var m;
   let {
     analyticsLocations: y
-  } = (0, s.ZP)(), [_, O] = i.useState(!1), [v, C] = i.useState(void 0), j = (0, l.e7)([h.Z], () => {
+  } = (0, s.ZP)(), [_, v] = i.useState(!1), [O, C] = i.useState(void 0), j = (0, l.e7)([h.Z], () => {
     var t, n;
     return null != (n = null == (t = h.Z.getStateForGuild(e)) ? void 0 : t.appliedBoosts) ? n : 0
   }), S = (0, l.e7)([u.Z], () => u.Z.getGuild(e)), E = Math.max((null != (m = null == S ? void 0 : S.premiumSubscriberCount) ? m : 0) - j, 0), x = i.useCallback(n => {
     let r = n ? d.H6 : d.Th;
-    return O(!0), C(void 0), r(e, t.skuId).catch(e => {
+    return v(!0), C(void 0), r(e, t.skuId).catch(e => {
       var t;
       throw C(null != (t = e.body.message) ? t : void 0), e
     }).finally(() => {
-      O(!1)
+      v(!1)
     })
-  }, [e, t.skuId]), I = i.useCallback(e => {
+  }, [e, t.skuId]), P = i.useCallback(e => {
     if (e.stopPropagation(), null != S) return E < t.cost ? void(0, a.u)({
       analyticsLocation: {
         page: f.ZY5.GUILD_POWERUPS_OVERVIEW,
@@ -115,12 +115,12 @@ function y(e, t) {
         }, n))
       })
     })
-  }, [x, t, E, y, S]), P = i.useCallback(e => (e.stopPropagation(), x(!1)), [x]);
+  }, [x, t, E, y, S]), I = i.useCallback(e => (e.stopPropagation(), x(!1)), [x]);
   return {
     isLoading: _,
-    error: v,
-    onActivate: I,
-    onDeactivate: P,
+    error: O,
+    onActivate: P,
+    onDeactivate: I,
     onShowDeactivate: i.useCallback(i => {
       i.stopPropagation(), (0, o.ZDy)(async () => {
         let {

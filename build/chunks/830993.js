@@ -1,6 +1,6 @@
 /** Chunk was on 21247 **/
 n.d(t, {
-  Z: () => P
+  Z: () => I
 }), n(388685), n(539854);
 var r = n(200651),
   i = n(192379),
@@ -19,16 +19,16 @@ var r = n(200651),
   b = n(979651),
   y = n(823379),
   _ = n(355363),
-  O = n(449932),
-  v = n(561788),
+  v = n(449932),
+  O = n(561788),
   C = n(876548),
   j = n(543432),
   S = n(981631),
   E = n(388032),
   x = n(642317),
-  I = n(656855);
+  P = n(656855);
 
-function P(e) {
+function I(e) {
   var t, l;
   let {
     channel: o,
@@ -37,7 +37,7 @@ function P(e) {
     voiceStates: g,
     isChannelSelected: b,
     shouldShowSettingNudge: _
-  } = e, v = i.useMemo(() => {
+  } = e, O = i.useMemo(() => {
     var e;
     return null == g || g.length > 50 ? {} : {
       [o.getGuildId()]: null != (e = g.map(e => {
@@ -48,15 +48,15 @@ function P(e) {
       })) ? e : []
     }
   }, [o, g]);
-  (0, c.$)(v);
+  (0, c.$)(O);
   let C = (0, u.ZP)(o),
     j = Array.from((0, u.uF)(C).values()),
-    I = null != (t = null == g ? void 0 : g.filter(y.lm)) ? t : [],
-    P = e => t => [S.IIU.PLAYING, S.IIU.WATCHING].includes(t.type) && (null != t.assets || null != t.state || null != t.details || null != t.party) && (null == t.session_id || t.session_id === e.voiceState.sessionId) || t.type === S.IIU.LISTENING,
+    P = null != (t = null == g ? void 0 : g.filter(y.lm)) ? t : [],
+    I = e => t => [S.IIU.PLAYING, S.IIU.WATCHING].includes(t.type) && (null != t.assets || null != t.state || null != t.details || null != t.party) && (null == t.session_id || t.session_id === e.voiceState.sessionId) || t.type === S.IIU.LISTENING,
     N = (0, s.e7)([m.Z], () => {
       let e = {};
-      return I.forEach(t => {
-        let n = m.Z.findActivity(t.user.id, P(t));
+      return P.forEach(t => {
+        let n = m.Z.findActivity(t.user.id, I(t));
         if (null != n && !(0, h.Z)(n)) {
           var r, i, l, o;
           let s = "".concat(null != (i = n.application_id) ? i : "", ":").concat(null != (l = null == (r = n.party) ? void 0 : r.id) ? l : t.user.id),
@@ -67,7 +67,7 @@ function P(e) {
           a.members.push(t), (0, d.Z)(a.activity, S.xjy.JOIN) || (a.activity = n), e[s] = a
         }
       }), Object.values(e)
-    }, [I], s.pF);
+    }, [P], s.pF);
   return N.length + j.length === 0 ? null : (0, r.jsxs)(a.Ttm, {
     className: x.container,
     children: [(0, r.jsx)(w, {
@@ -78,7 +78,7 @@ function P(e) {
       className: x.headerDivider
     }), j.map((e, t) => {
       var n;
-      return (0, r.jsx)(O.Z, {
+      return (0, r.jsx)(v.Z, {
         embeddedApp: e,
         presenceActivity: null != (n = e.presenceActivity) ? n : void 0,
         channel: o,
@@ -89,7 +89,7 @@ function P(e) {
         members: n,
         activity: i
       } = e;
-      return (0, r.jsx)(O.Z, {
+      return (0, r.jsx)(v.Z, {
         presenceActivity: i,
         channel: o,
         members: n,
@@ -162,8 +162,8 @@ function w(e) {
     selected: n
   }), u = (0, s.e7)([f.Z], () => f.Z.getGuild(t.guild_id));
   return null == (0, p.KS)(t, u) ? null : (0, r.jsxs)("div", {
-    className: o()(x.popoutHeaderContainer, I.popoutHeaderContainer),
-    children: [(0, r.jsx)(v.Z, {
+    className: o()(x.popoutHeaderContainer, P.popoutHeaderContainer),
+    children: [(0, r.jsx)(O.Z, {
       channel: t
     }), c ? (0, r.jsx)(C.Z, {
       userCount: i,

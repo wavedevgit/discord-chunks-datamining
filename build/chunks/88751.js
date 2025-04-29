@@ -4,8 +4,8 @@ n.d(t, {
   ZP: () => x
 }), n(388685);
 var r, i = n(392711),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(570140),
   l = n(592125),
   c = n(271383),
@@ -45,21 +45,21 @@ function y(e, t, n) {
   })
 }
 
-function v(e, t) {
+function O(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     r = l.Z.getChannel(t),
     i = null == r ? void 0 : r.getGuildId(),
-    a = u.Z.getGuild(i);
-  return null != a && null != r && r.isGuildStageVoice() ? {
+    o = u.Z.getGuild(i);
+  return null != o && null != r && r.isGuildStageVoice() ? {
     speaker: b(e, t),
-    moderator: n ? y(e, a, r) : null
+    moderator: n ? y(e, o, r) : null
   } : E
 }
 
-function O(e, t) {
+function v(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
   null == g[t] && (g[t] = {});
-  let r = v(e, t, n);
+  let r = O(e, t, n);
   return g[t][e] = r, r
 }
 
@@ -110,7 +110,7 @@ function R(e) {
   let {
     voiceStates: t
   } = e;
-  return !a().isEmpty(g) && t.reduce((e, t) => {
+  return !o().isEmpty(g) && t.reduce((e, t) => {
     let {
       userId: n,
       channelId: r
@@ -136,7 +136,7 @@ function D(e) {
     (null == n || n.guild_id === t.id) && delete g[e]
   }
 }
-class L extends(r = o.ZP.Store) {
+class L extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(c.ZP, l.Z, u.Z, d.default, f.Z)
   }
@@ -157,9 +157,9 @@ class L extends(r = o.ZP.Store) {
     if (null == e || null == t) return E;
     let i = null == (n = g[t]) ? void 0 : n[e];
     if (null != i)
-      if (r && null == i.moderator) return O(e, t, !0);
+      if (r && null == i.moderator) return v(e, t, !0);
       else return i;
-    return O(e, t, r)
+    return v(e, t, r)
   }
 }
 m(L, "displayName", "StageChannelRoleStore");

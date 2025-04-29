@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(192379),
   i = n(399606),
-  a = n(430824),
-  o = n(339085),
+  o = n(430824),
+  a = n(339085),
   s = n(906411),
   l = n(231053),
   c = n(981631);
@@ -27,7 +27,7 @@ let u = (e, t, n) => {
     } = e, {
       joinedEmojiSourceGuildRecord: s,
       emoji: d
-    } = (0, i.cj)([o.ZP, a.Z], () => u(o.ZP, a.Z, t)), f = null != s, _ = null != s && s.hasFeature(c.oNc.DISCOVERABLE), p = (!f || _) && null != t, [h, m] = r.useState(p), [g, E] = r.useState(null), b = null != s ? l.JO.createFromGuildRecord(s) : null, [y, v] = r.useState(b), [O, I] = r.useState(null), S = r.useRef(n);
+    } = (0, i.cj)([a.ZP, o.Z], () => u(a.ZP, o.Z, t)), f = null != s, _ = null != s && s.hasFeature(c.oNc.DISCOVERABLE), p = (!f || _) && null != t, [h, m] = r.useState(p), [g, E] = r.useState(null), b = null != s ? l.JO.createFromGuildRecord(s) : null, [y, O] = r.useState(b), [v, I] = r.useState(null), S = r.useRef(n);
     return r.useEffect(() => {
       S.current = n
     }), r.useEffect(() => {
@@ -41,7 +41,7 @@ let u = (e, t, n) => {
             I(n.application);
             break;
           case l.w6.GUILD:
-            v(n.guild)
+            O(n.guild)
         }
         m(!1), null == (e = S.current) || e.call(S)
       };
@@ -49,7 +49,7 @@ let u = (e, t, n) => {
       null == (n = S.current) || n.call(S)
     }, [t, p]), {
       expressionSourceGuild: y,
-      expressionSourceApplication: O,
+      expressionSourceApplication: v,
       sourceType: g,
       joinedEmojiSourceGuildRecord: s,
       hasJoinedEmojiSourceGuild: f,

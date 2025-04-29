@@ -2,8 +2,8 @@
 "use strict";
 var r = n(754793),
   i = 15,
-  a = 852,
-  o = 592,
+  o = 852,
+  a = 592,
   s = 0,
   l = 1,
   c = 2,
@@ -12,7 +12,7 @@ var r = n(754793),
   f = [1, 2, 3, 4, 5, 7, 9, 13, 17, 25, 33, 49, 65, 97, 129, 193, 257, 385, 513, 769, 1025, 1537, 2049, 3073, 4097, 6145, 8193, 12289, 16385, 24577, 0, 0],
   _ = [16, 16, 16, 16, 17, 17, 18, 18, 19, 19, 20, 20, 21, 21, 22, 22, 23, 23, 24, 24, 25, 25, 26, 26, 27, 27, 28, 28, 29, 29, 64, 64];
 e.exports = function(e, t, n, p, h, m, g, E) {
-  var b, y, v, O, I, S, T, A, N, C = E.bits,
+  var b, y, O, v, I, S, T, A, N, C = E.bits,
     R = 0,
     P = 0,
     w = 0,
@@ -39,7 +39,7 @@ e.exports = function(e, t, n, p, h, m, g, E) {
   if (k > 0 && (e === s || 1 !== D)) return -1;
   for (R = 1, F[1] = 0; R < i; R++) F[R + 1] = F[R] + V[R];
   for (P = 0; P < p; P++) 0 !== t[n + P] && (g[F[t[n + P]]++] = P);
-  if (e === s ? (G = Z = g, S = 19) : e === l ? (G = u, B -= 257, Z = d, H -= 257, S = 256) : (G = f, Z = _, S = -1), U = 0, P = 0, R = w, I = m, x = L, M = 0, v = -1, O = (j = 1 << L) - 1, e === l && j > a || e === c && j > o) return 1;
+  if (e === s ? (G = Z = g, S = 19) : e === l ? (G = u, B -= 257, Z = d, H -= 257, S = 256) : (G = f, Z = _, S = -1), U = 0, P = 0, R = w, I = m, x = L, M = 0, O = -1, v = (j = 1 << L) - 1, e === l && j > o || e === c && j > a) return 1;
   for (;;) {
     T = R - M, g[P] < S ? (A = 0, N = g[P]) : g[P] > S ? (A = Z[H + g[P]], N = G[B + g[P]]) : (A = 96, N = 0), b = 1 << R - M, w = y = 1 << x;
     do h[I + (U >> M) + (y -= b)] = T << 24 | A << 16 | N | 0; while (0 !== y);
@@ -48,10 +48,10 @@ e.exports = function(e, t, n, p, h, m, g, E) {
       if (R === D) break;
       R = t[n + g[P]]
     }
-    if (R > L && (U & O) !== v) {
+    if (R > L && (U & v) !== O) {
       for (0 === M && (M = L), I += w, k = 1 << (x = R - M); x + M < D && !((k -= V[x + M]) <= 0);) x++, k <<= 1;
-      if (j += 1 << x, e === l && j > a || e === c && j > o) return 1;
-      h[v = U & O] = L << 24 | x << 16 | I - m | 0
+      if (j += 1 << x, e === l && j > o || e === c && j > a) return 1;
+      h[O = U & v] = L << 24 | x << 16 | I - m | 0
     }
   }
   return 0 !== U && (h[I + U] = R - M << 24 | 4194304), E.bits = L, 0

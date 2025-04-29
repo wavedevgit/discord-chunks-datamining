@@ -4,8 +4,8 @@ e.exports = function(e) {
     n = "[eE][-+]?" + t,
     r = t + "(\\." + t + ")?(" + n + ")?",
     i = "\\w+",
-    a = "\\b(" + (t + "#" + i + "(\\." + i + ")?#(" + n) + ")?|" + r + ")",
-    o = "[A-Za-z](_?[A-Za-z0-9.])*",
+    o = "\\b(" + (t + "#" + i + "(\\." + i + ")?#(" + n) + ")?|" + r + ")",
+    a = "[A-Za-z](_?[A-Za-z0-9.])*",
     s = "[]\\{\\}%#'\"",
     l = e.COMMENT("--", "$"),
     c = {
@@ -20,7 +20,7 @@ e.exports = function(e) {
         beginKeywords: "not null constant access function procedure in out aliased exception"
       }, {
         className: "type",
-        begin: o,
+        begin: a,
         endsParent: !0,
         relevance: 0
       }]
@@ -45,11 +45,11 @@ e.exports = function(e) {
       begin: /'.'/
     }, {
       className: "number",
-      begin: a,
+      begin: o,
       relevance: 0
     }, {
       className: "symbol",
-      begin: "'" + o
+      begin: "'" + a
     }, {
       className: "title",
       begin: "(\\bwith\\s+)?(\\bprivate\\s+)?\\bpackage\\s+(\\bbody\\s+)?",

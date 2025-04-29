@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => O
 }), n(781311);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(793030),
   l = n(442837),
   c = n(833664),
@@ -22,13 +22,13 @@ var r = n(200651),
   b = n(981631),
   y = n(843280);
 
-function v(e) {
+function O(e) {
   let {
     user: t,
     activities: n,
-    applicationStream: a,
-    voiceChannel: v,
-    textClassName: O,
+    applicationStream: o,
+    voiceChannel: O,
+    textClassName: v,
     iconClassName: I,
     textSize: S = "xs",
     animate: T = !0,
@@ -37,7 +37,7 @@ function v(e) {
     hideTooltip: C = !1
   } = e;
   (0, u.Z)(null == t ? void 0 : t.id);
-  let R = (null == a ? void 0 : a.discoverable) !== !1 ? a : null,
+  let R = (null == o ? void 0 : o.discoverable) !== !1 ? o : null,
     P = i.useMemo(() => {
       var e, t;
       let r = null == n ? void 0 : n.find(e => {
@@ -58,7 +58,7 @@ function v(e) {
         stream: R,
         game: null == n ? void 0 : n.find(c.Z),
         textVariant: "text-".concat(S, "/medium"),
-        textClassName: O,
+        textClassName: v,
         iconClassName: I,
         hideText: D,
         hideIcon: w,
@@ -73,15 +73,15 @@ function v(e) {
       return null != e ? (0, r.jsx)(m.Z, {
         activity: e,
         textVariant: "text-".concat(S, "/medium"),
-        textClassName: O,
+        textClassName: v,
         iconClassName: I,
         hideText: D,
         hideIcon: w,
         hideTooltip: C
-      }) : null != v ? (0, r.jsx)(g.Z, {
-        channel: v,
+      }) : null != O ? (0, r.jsx)(g.Z, {
+        channel: O,
         textVariant: "text-".concat(S, "/medium"),
-        textClassName: O,
+        textClassName: v,
         iconClassName: I,
         hideText: D,
         hideTooltip: C
@@ -99,19 +99,19 @@ function v(e) {
           className: I
         }), null != t && (0, r.jsx)(p.Z, {
           variant: "text-".concat(S, "/medium"),
-          className: O,
+          className: v,
           children: t
         })]
       })
     };
   return (0, r.jsxs)("div", {
-    className: o()(y.container, {
+    className: a()(y.container, {
       [y.textXs]: "xs" === S,
       [y.textSm]: "sm" === S
     }),
     children: [L(), (0, r.jsx)(s.xv, {
       variant: "text-".concat(S, "/normal"),
-      className: o()(y.text, y.dot, O),
+      className: a()(y.text, y.dot, v),
       children: E.l
     }), x(), A && (0, r.jsx)(_.Z, {})]
   })

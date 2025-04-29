@@ -2,8 +2,8 @@
 "use strict";
 var r = n(98405),
   i = n(580983),
-  a = n(511696),
-  o = n(938373),
+  o = n(511696),
+  a = n(938373),
   s = n(880181),
   l = n(280481),
   c = n(961050),
@@ -14,24 +14,24 @@ var r = n(98405),
   p = n(751736),
   h = n(933121),
   m = n(112493),
-  g = o.PROPER,
-  E = o.CONFIGURABLE,
+  g = a.PROPER,
+  E = a.CONFIGURABLE,
   b = m.IteratorPrototype,
   y = m.BUGGY_SAFARI_ITERATORS,
-  v = p("iterator"),
-  O = "keys",
+  O = p("iterator"),
+  v = "keys",
   I = "values",
   S = "entries",
   T = function() {
     return this
   };
-e.exports = function(e, t, n, o, p, m, A) {
-  l(n, t, o);
+e.exports = function(e, t, n, a, p, m, A) {
+  l(n, t, a);
   var N, C, R, P = function(e) {
       if (e === p && M) return M;
       if (!y && e && e in L) return L[e];
       switch (e) {
-        case O:
+        case v:
         case I:
         case S:
           return function() {
@@ -45,15 +45,15 @@ e.exports = function(e, t, n, o, p, m, A) {
     w = t + " Iterator",
     D = !1,
     L = e.prototype,
-    x = L[v] || L["@@iterator"] || p && L[p],
+    x = L[O] || L["@@iterator"] || p && L[p],
     M = !y && x || P(p),
     k = "Array" === t && L.entries || x;
-  if (k && (N = c(k.call(new e))) !== Object.prototype && N.next && (!a && c(N) !== b && (u ? u(N, b) : s(N[v]) || _(N, v, T)), d(N, w, !0, !0), a && (h[w] = T)), g && p === I && x && x.name !== I && (!a && E ? f(L, "name", I) : (D = !0, M = function() {
+  if (k && (N = c(k.call(new e))) !== Object.prototype && N.next && (!o && c(N) !== b && (u ? u(N, b) : s(N[O]) || _(N, O, T)), d(N, w, !0, !0), o && (h[w] = T)), g && p === I && x && x.name !== I && (!o && E ? f(L, "name", I) : (D = !0, M = function() {
       return i(x, this)
     })), p)
     if (C = {
         values: P(I),
-        keys: m ? M : P(O),
+        keys: m ? M : P(v),
         entries: P(S)
       }, A)
       for (R in C) !y && !D && R in L || _(L, R, C[R]);
@@ -62,7 +62,7 @@ e.exports = function(e, t, n, o, p, m, A) {
       proto: !0,
       forced: y || D
     }, C);
-  return (!a || A) && L[v] !== M && _(L, v, M, {
+  return (!o || A) && L[O] !== M && _(L, O, M, {
     name: p
   }), h[t] = M, C
 }

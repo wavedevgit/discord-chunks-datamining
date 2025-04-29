@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(392711),
   l = n.n(s),
   c = n(481060),
@@ -56,36 +56,36 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = () => [h.intl.string(h.t.EgWTY2), h.intl.string(h.t.umBn5e), h.intl.string(h.t.dG1wDw), h.intl.string(h.t.SesI4e), h.intl.string(h.t.RnMLvr)],
-  O = () => {
+let O = () => [h.intl.string(h.t.EgWTY2), h.intl.string(h.t.umBn5e), h.intl.string(h.t.dG1wDw), h.intl.string(h.t.SesI4e), h.intl.string(h.t.RnMLvr)],
+  v = () => {
     var e;
-    return null != (e = l().sample(v())) ? e : h.intl.string(h.t.EgWTY2)
+    return null != (e = l().sample(O())) ? e : h.intl.string(h.t.EgWTY2)
   };
 
 function I(e) {
   let {
     id: t,
     className: n,
-    onSelect: a,
+    onSelect: o,
     isSelected: s = !1,
     tabIndex: l,
     children: f,
     locked: h = !1
-  } = e, [g, b] = i.useState((0, _.aW)(t).name), v = t === d.Ru.PIRATE, I = (0, c.xUy)({
+  } = e, [g, b] = i.useState((0, _.aW)(t).name), O = t === d.Ru.PIRATE, I = (0, c.xUy)({
     label: g,
     isSelected: s
   });
   return (0, r.jsx)(c.ua7, {
     text: g,
-    onTooltipShow: () => v && b(O()),
+    onTooltipShow: () => O && b(v()),
     children: e => (0, r.jsxs)("div", {
       className: m.appIconSelectionContainer,
       children: [(0, r.jsx)(c.P3F, y(E({}, e, I), {
         tabIndex: null != l ? l : I.tabIndex,
-        className: o()(m.appIconSelection, {
+        className: a()(m.appIconSelection, {
           [m.selected]: s
         }, n),
-        onClick: s ? p.dG4 : () => null == a ? void 0 : a(t),
+        onClick: s ? p.dG4 : () => null == o ? void 0 : o(t),
         children: f
       })), s && (0, r.jsx)(u.oK, {}), h && (0, r.jsx)("div", {
         className: m.lockedBadgeContainer,
@@ -103,16 +103,16 @@ function S(e) {
     icon: t,
     isSelected: n,
     disabled: i,
-    tabIndex: a,
-    onSelect: o,
+    tabIndex: o,
+    onSelect: a,
     locked: s
   } = e;
   return (0, r.jsx)(I, {
-    onSelect: i ? void 0 : o,
+    onSelect: i ? void 0 : a,
     isSelected: n,
     id: t.id,
     className: i ? m.disabled : void 0,
-    tabIndex: a,
+    tabIndex: o,
     locked: s,
     children: (0, r.jsx)(f.Z, {
       id: t.id,

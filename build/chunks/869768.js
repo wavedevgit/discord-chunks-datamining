@@ -1,16 +1,16 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  W: () => o
+  W: () => a
 });
 var r = n(442837),
   i = n(314897),
-  a = n(979651);
+  o = n(979651);
 
-function o(e) {
+function a(e) {
   return s(null == e ? void 0 : e.id)
 }
 
 function s(e) {
-  return (0, r.e7)([a.Z, i.default], () => a.Z.isInChannel(e, i.default.getId()))
+  return (0, r.e7)([o.Z, i.default], () => o.Z.isInChannel(e, i.default.getId()))
 }

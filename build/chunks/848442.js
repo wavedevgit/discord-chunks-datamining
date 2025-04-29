@@ -20,16 +20,16 @@ var i = n(120356),
   b = n(605236),
   y = n(703656),
   _ = n(984933),
-  O = n(430824),
-  v = n(626135),
+  v = n(430824),
+  O = n(626135),
   C = n(434479),
   j = n(981631),
   S = n(176505),
   E = n(629481),
   x = n(388032),
-  I = n(664832);
+  P = n(664832);
 
-function P(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -66,36 +66,36 @@ function N(e) {
     guildId: t,
     selected: n,
     handleClick: i
-  } = e, u = (0, f.RF)(t, "guild_shop_channel_row"), g = (0, o.e7)([O.Z], () => O.Z.getGuild(t)), S = (null == g ? void 0 : g.hasFeature(j.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === !0, N = "false" === a.K.get(E.tM, "false"), Z = (0, o.e7)([d.Z], () => d.Z.useReducedMotion);
+  } = e, u = (0, f.RF)(t, "guild_shop_channel_row"), g = (0, o.e7)([v.Z], () => v.Z.getGuild(t)), S = (null == g ? void 0 : g.hasFeature(j.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === !0, N = "false" === a.K.get(E.tM, "false"), Z = (0, o.e7)([d.Z], () => d.Z.useReducedMotion);
   return (0, r.jsx)(C.m, {
     id: "shop-".concat(t),
-    className: l()(I.previewChannelRow, {
-      [I.selected]: n,
-      [I.phantomPreview]: N
+    className: l()(P.previewChannelRow, {
+      [P.selected]: n,
+      [P.phantomPreview]: N
     }),
-    innerClassName: I.previewChannelRowContent,
+    innerClassName: P.previewChannelRowContent,
     renderIcon: e => (0, r.jsx)(m.Z, {
       width: 20,
       height: 20,
-      className: l()([e, I.shopIcon])
+      className: l()([e, P.shopIcon])
     }),
     text: x.intl.string(x.t.al5EXF),
     selected: n,
     onClick: i,
     trailing: (0, r.jsxs)("div", {
-      className: I.gifSection,
+      className: P.gifSection,
       children: [Z ? (0, r.jsx)(c.IGR, {
         color: c.TVs.unsafe_rawColors.BRAND_260.css,
         text: x.intl.string(x.t.y2b7CA),
-        className: I.newBadge
+        className: P.newBadge
       }) : (0, r.jsx)("img", {
         src: (0, p.b)("server_products/storefront/money.gif"),
-        className: I.money,
+        className: P.money,
         alt: ""
       }), n && (0, r.jsx)(c.P3F, {
-        className: I.closeButton,
+        className: P.closeButton,
         onClick: e => {
-          if (e.stopPropagation(), (0, b.EW)(s.z.SERVER_SHOP_PHANTOM_PREVIEW), v.default.track(j.rMx.GUILD_SHOP_PREVIEW_CLICK, w(P({}, (0, h.hH)(t)), {
+          if (e.stopPropagation(), (0, b.EW)(s.z.SERVER_SHOP_PHANTOM_PREVIEW), O.default.track(j.rMx.GUILD_SHOP_PREVIEW_CLICK, w(I({}, (0, h.hH)(t)), {
               action_taken: E.mz.DISMISS_CHANNEL_ROW
             })), !u || !S) {
             var n;
@@ -138,7 +138,7 @@ function Z(e) {
         let {
           default: e
         } = await n.e("66050").then(n.bind(n, 376573));
-        return n => (0, r.jsx)(e, w(P({}, n), {
+        return n => (0, r.jsx)(e, w(I({}, n), {
           guild: t
         }))
       })

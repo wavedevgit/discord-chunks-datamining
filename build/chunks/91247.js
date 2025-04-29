@@ -4,14 +4,14 @@ n.d(t, {
   TO: () => m,
   dm: () => p,
   uB: () => I,
-  vW: () => v,
-  zH: () => O
+  vW: () => O,
+  zH: () => v
 }), n(539854), n(49124);
 var r = n(956067);
 n(17089);
 var i = n(218543),
-  a = n(594174),
-  o = n(626135),
+  o = n(594174),
+  a = n(626135),
   s = n(981631);
 
 function l(e, t, n) {
@@ -57,8 +57,8 @@ function f(e, t) {
   if (null == e) return {};
   var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -66,16 +66,16 @@ function f(e, t) {
 function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
-function p(e, t, n, a, l) {
+function p(e, t, n, o, l) {
   var u, f, _;
   let p = h(t);
-  null != a && r.Z.addDetail("payload_size(kb)", Math.round(a.uncompressed_byte_size / 1024)), r.Z.addDetail("server_time(ms)", null != (u = p.identify_total_server_duration_ms) ? u : 0);
-  let m = d(c({}, a, p, y(t), l), {
+  null != o && r.Z.addDetail("payload_size(kb)", Math.round(o.uncompressed_byte_size / 1024)), r.Z.addDetail("server_time(ms)", null != (u = p.identify_total_server_duration_ms) ? u : 0);
+  let m = d(c({}, o, p, y(t), l), {
     duration_ms_since_identify_start: n - e.identifyStartTime,
     duration_ms_since_connection_start: n - e.connectionStartTime,
     duration_ms_since_emit_start: Date.now() - n,
@@ -87,7 +87,7 @@ function p(e, t, n, a, l) {
     had_cache_at_startup: null != (f = e.analytics.hadCacheAtStartup) && f,
     used_cache_at_startup: null != (_ = e.analytics.usedCacheAtStartup) && _
   });
-  i.Z.attachReadyPayloadProperties(m), o.default.track(s.rMx.READY_PAYLOAD_RECEIVED, m, {
+  i.Z.attachReadyPayloadProperties(m), a.default.track(s.rMx.READY_PAYLOAD_RECEIVED, m, {
     logEventProperties: !0
   })
 }
@@ -151,13 +151,13 @@ function y(e) {
   }
 }
 
-function v(e) {
+function O(e) {
   var t, n;
   let r = Date.now(),
     {
       guilds: i,
-      merged_presences: a,
-      merged_members: o,
+      merged_presences: o,
+      merged_members: a,
       read_state: s,
       private_channels: l,
       user_guild_settings: c,
@@ -172,8 +172,8 @@ function v(e) {
     E = [],
     b = [],
     y = [],
-    v = [],
     O = [],
+    v = [],
     I = [],
     S = [],
     T = [];
@@ -186,13 +186,13 @@ function v(e) {
       } = n,
       i = f(n, ["features"]),
       {
-        threads: a,
-        guild_scheduled_events: o
+        threads: o,
+        guild_scheduled_events: a
       } = e,
       s = f(e, ["threads", "guild_scheduled_events"]);
-    E.push("partial" === e.data_mode ? e.partial_updates.channels : e.channels), b.push("partial" === e.data_mode ? e.partial_updates.roles : e.roles), y.push("partial" === e.data_mode ? e.partial_updates.emojis : e.emojis), v.push(a), O.push("partial" === e.data_mode ? e.partial_updates.stickers : e.stickers), I.push(r), S.push(o), T.push(s, i)
+    E.push("partial" === e.data_mode ? e.partial_updates.channels : e.channels), b.push("partial" === e.data_mode ? e.partial_updates.roles : e.roles), y.push("partial" === e.data_mode ? e.partial_updates.emojis : e.emojis), O.push(o), v.push("partial" === e.data_mode ? e.partial_updates.stickers : e.stickers), I.push(r), S.push(a), T.push(s, i)
   }), {
-    presences_size: JSON.stringify(null != (t = null == a ? void 0 : a.friends) ? t : []).length,
+    presences_size: JSON.stringify(null != (t = null == o ? void 0 : o.friends) ? t : []).length,
     users_size: JSON.stringify(m).length,
     read_states_size: JSON.stringify(s).length,
     private_channels_size: JSON.stringify(l).length,
@@ -202,12 +202,12 @@ function v(e) {
     relationships_size: JSON.stringify(h).length,
     remaining_data_size: JSON.stringify(null != g ? g : {}).length,
     guild_channels_size: JSON.stringify(E).length,
-    guild_members_size: JSON.stringify(null != o ? o : []).length,
-    guild_presences_size: JSON.stringify(null != (n = null == a ? void 0 : a.guilds) ? n : []).length,
+    guild_members_size: JSON.stringify(null != a ? a : []).length,
+    guild_presences_size: JSON.stringify(null != (n = null == o ? void 0 : o.guilds) ? n : []).length,
     guild_roles_size: JSON.stringify(b).length,
     guild_emojis_size: JSON.stringify(y).length,
-    guild_threads_size: JSON.stringify(v).length,
-    guild_stickers_size: JSON.stringify(O).length,
+    guild_threads_size: JSON.stringify(O).length,
+    guild_stickers_size: JSON.stringify(v).length,
     guild_events_size: JSON.stringify(S).length,
     guild_features_size: JSON.stringify(I).length,
     guild_remaining_data_size: JSON.stringify(T).length,
@@ -215,7 +215,7 @@ function v(e) {
   }
 }
 
-function O(e) {
+function v(e) {
   return {
     connectTime: null != e ? e : 0,
     numEvents: 0,
@@ -230,7 +230,7 @@ function O(e) {
 
 function I(e) {
   var t;
-  !(null == (t = a.default.getCurrentUser()) ? void 0 : t.isStaff()) && .5 > Math.random() || o.default.track(s.rMx.CONNECTION_RESUMED, {
+  !(null == (t = o.default.getCurrentUser()) ? void 0 : t.isStaff()) && .5 > Math.random() || a.default.track(s.rMx.CONNECTION_RESUMED, {
     connect_time_ms: e.connectTime,
     resume_time_ms: Math.floor(performance.now() - e.startTime),
     num_events: e.numEvents,

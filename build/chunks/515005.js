@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(392711),
   l = n(468194),
   c = n(481060),
@@ -21,8 +21,8 @@ var r = n(200651),
   E = n(419922),
   b = n(490095),
   y = n(981631),
-  v = n(388032),
-  O = n(157882);
+  O = n(388032),
+  v = n(157882);
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -67,8 +67,8 @@ function N(e, t) {
   if (null == e) return {};
   var n, r, i = C(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -76,17 +76,17 @@ function N(e, t) {
 function C(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
-  P = (0, l.Mg)(O.__invalid_stickerPickerPreviewPadding),
+let R = (0, l.Mg)(v.__invalid_stickerPickerPreviewDimensions),
+  P = (0, l.Mg)(v.__invalid_stickerPickerPreviewPadding),
   w = 250,
   D = i.memo(function(e) {
     let {
       isDisplayingIndividualStickers: t = !1,
-      preferAnimation: a = !0,
+      preferAnimation: o = !0,
       getStickerItemProps: l,
       getStickerRowProps: I,
       gutterWidth: T,
@@ -118,7 +118,7 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
       padding: G
     }), [G, B]), [Q, X] = (0, f.Z)(null, 300);
     return (0, r.jsx)("div", A(S({
-      className: O.row,
+      className: v.row,
       style: z
     }, null == I ? void 0 : I(k)), {
       children: U.map(e => {
@@ -158,8 +158,8 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
             return (0, r.jsx)("div", A(S({}, J), {
               children: (0, r.jsxs)(c.P3F, {
                 "aria-label": e.name,
-                className: o()(O.createSticker, j, {
-                  [O.createInspected]: f
+                className: a()(v.createSticker, j, {
+                  [v.createInspected]: f
                 }),
                 innerRef: G,
                 tabIndex: K,
@@ -168,18 +168,18 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
                 onClick: P,
                 style: q,
                 children: [!F && (0, r.jsx)("div", {
-                  className: O.inspectedIndicator
+                  className: v.inspectedIndicator
                 }), (0, r.jsx)("div", {
-                  className: O.iconWrapper,
+                  className: v.iconWrapper,
                   children: (0, r.jsx)(c.qJs, {
                     size: "md",
                     color: "currentColor",
-                    className: O.icon
+                    className: v.icon
                   })
                 }), (0, r.jsx)(c.Text, {
                   color: "interactive-active",
                   variant: "text-xs/normal",
-                  children: v.intl.string(v.t["+nEuqq"])
+                  children: O.intl.string(O.t["+nEuqq"])
                 })]
               })
             }), e.guild_id);
@@ -196,9 +196,9 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
             return (0, i.createElement)("div", A(S({}, J), {
               key: e.sticker.id
             }), (0, r.jsxs)(c.P3F, {
-              className: o()(O.sticker, j, {
-                [O.stickerInspected]: f,
-                [O.showPulse]: Q === e.sticker.id
+              className: a()(v.sticker, j, {
+                [v.stickerInspected]: f,
+                [v.showPulse]: Q === e.sticker.id
               }),
               innerRef: G,
               tabIndex: K,
@@ -214,14 +214,14 @@ let R = (0, l.Mg)(O.__invalid_stickerPickerPreviewDimensions),
               }), (0, r.jsxs)("div", {
                 "aria-hidden": !0,
                 children: [!F && (0, r.jsx)("div", {
-                  className: O.inspectedIndicator
+                  className: v.inspectedIndicator
                 }), (0, r.jsx)(E.Z, {
-                  className: o()(O.stickerNode, {
-                    [O.stickerNodeDimmed]: F && !f && null != C && -1 !== C.rowIndex && -1 !== C.columnIndex,
-                    [O.stickerNodeHidden]: I,
-                    [O.stickerUnsendable]: Y && !(0, h.kl)(e.sticker, H, Z)
+                  className: a()(v.stickerNode, {
+                    [v.stickerNodeDimmed]: F && !f && null != C && -1 !== C.rowIndex && -1 !== C.columnIndex,
+                    [v.stickerNodeHidden]: I,
+                    [v.stickerUnsendable]: Y && !(0, h.kl)(e.sticker, H, Z)
                   }),
-                  disableAnimation: !f && !a,
+                  disableAnimation: !f && !o,
                   enlargeOnInteraction: F,
                   isInteracting: f,
                   maskAsset: f,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(81825);
 
@@ -13,7 +13,7 @@ function i(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class a extends r.Z {
+class o extends r.Z {
   isVoiceMuted() {
     return this.selfMute || this.mute || this.suppress || null != this.requestToSpeakTimestamp
   }

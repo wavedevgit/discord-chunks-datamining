@@ -37,12 +37,12 @@ e.exports = function(e) {
         relevance: 10
       }]
     },
-    a = {
+    o = {
       className: "type",
       begin: "\\b[A-Z][A-Za-z0-9_]*",
       relevance: 0
     },
-    o = {
+    a = {
       className: "title",
       begin: /[^0-9\n\t "'(),.`{}\[\]:;][^\n\t "'(),.`{}\[\]:;]+|[^0-9\n\t "'(),.`{}\[\]:;=]/,
       relevance: 0
@@ -61,7 +61,7 @@ e.exports = function(e) {
         excludeBegin: !0,
         excludeEnd: !0,
         relevance: 0,
-        contains: [a, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
+        contains: [o, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
       }, {
         className: "params",
         begin: /\(/,
@@ -69,14 +69,14 @@ e.exports = function(e) {
         excludeBegin: !0,
         excludeEnd: !0,
         relevance: 0,
-        contains: [a, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
-      }, o]
+        contains: [o, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
+      }, a]
     },
     l = {
       className: "function",
       beginKeywords: "def",
       end: t.lookahead(/[:={\[(\n;]/),
-      contains: [o]
+      contains: [a]
     },
     c = {
       begin: [/^\s*/, "extension", /\s+(?=[[(])/],
@@ -121,6 +121,6 @@ e.exports = function(e) {
         className: "string",
         begin: /\S+/
       }]
-    }, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, i, a, l, s, e.C_NUMBER_MODE, c, u, ...d, f, n]
+    }, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, i, o, l, s, e.C_NUMBER_MODE, c, u, ...d, f, n]
   }
 }

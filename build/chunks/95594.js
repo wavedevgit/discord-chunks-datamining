@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(192379),
   i = n(663507),
-  a = n(924428),
-  o = n(151973);
+  o = n(924428),
+  a = n(151973);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -71,14 +71,14 @@ function f(e) {
     sectionGutter: E,
     padding: b,
     paddingVertical: y,
-    paddingHorizontal: v,
-    dir: O
-  } = e, I = (0, a.Z)(), S = (0, r.useRef)(d), [T] = (0, r.useState)(() => new i.ZP), A = p(), N = Math.min(null != h ? h : 1 / 0, A.offsetWidth), C = null != h ? Math.max(0, A.offsetWidth - h) : 0, {
+    paddingHorizontal: O,
+    dir: v
+  } = e, I = (0, o.Z)(), S = (0, r.useRef)(d), [T] = (0, r.useState)(() => new i.ZP), A = p(), N = Math.min(null != h ? h : 1 / 0, A.offsetWidth), C = null != h ? Math.max(0, A.offsetWidth - h) : 0, {
     dirty: R,
     chunkStart: P,
     chunkEnd: w,
     forceUpdateOnChunkChange: D
-  } = (0, o.Z)({
+  } = (0, a.Z)({
     chunkSize: _,
     getScrollerState: p,
     forceUpdate: I
@@ -95,10 +95,10 @@ function f(e) {
     sectionGutter: E,
     padding: b,
     paddingVertical: y,
-    paddingHorizontal: v,
+    paddingHorizontal: O,
     marginLeft: C / 2,
-    dir: O
-  }), T.computeVisibleSections(Math.max(0, P * _), w * _), T.getState()), [R, T, t, n, s, c, f, P, w, _, m, g, E, b, y, v, N, O]), u(l({}, S.current), {
+    dir: v
+  }), T.computeVisibleSections(Math.max(0, P * _), w * _), T.getState()), [R, T, t, n, s, c, f, P, w, _, m, g, E, b, y, O, N, v]), u(l({}, S.current), {
     masonryComputer: T,
     forceUpdateOnChunkChange: D,
     forceUpdate: I

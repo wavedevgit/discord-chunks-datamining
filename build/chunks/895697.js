@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(442837),
-  a = n(481060),
-  o = n(592125),
+  o = n(481060),
+  a = n(592125),
   s = n(944486),
   l = n(246946),
   c = n(5192),
@@ -22,8 +22,8 @@ var i = n(442837),
   E = n(53558),
   b = n(827313),
   y = n(420654),
-  v = n(166584),
-  O = n(915014),
+  O = n(166584),
+  v = n(915014),
   I = n(228168),
   S = n(388032),
   T = n(773714),
@@ -42,8 +42,8 @@ function N(e) {
   } = e, L = c.ZP.getName(null == C ? void 0 : C.id, w, t), x = (0, i.e7)([u.Z], () => {
     var e;
     return null == (e = u.Z.getUserProfile(t.id)) ? void 0 : e.application
-  }), M = (0, i.e7)([o.Z, s.Z], () => o.Z.getChannel(s.Z.getChannelId())), k = (0, i.e7)([l.Z], () => l.Z.hidePersonalInformation);
-  return (0, r.jsxs)(a.Ttm, {
+  }), M = (0, i.e7)([a.Z, s.Z], () => a.Z.getChannel(s.Z.getChannelId())), k = (0, i.e7)([l.Z], () => l.Z.hidePersonalInformation);
+  return (0, r.jsxs)(o.Ttm, {
     fade: !0,
     className: A.body,
     children: [(0, r.jsx)(m.Z, {
@@ -65,7 +65,7 @@ function N(e) {
           onOpenProfile: P
         })]
       })
-    }), (0, r.jsx)(O.Z, {
+    }), (0, r.jsx)(v.Z, {
       user: t,
       onOpenProfile: e => null == P ? void 0 : P({
         section: e
@@ -100,7 +100,7 @@ function N(e) {
       onClick: D
     }), null != C && (0, r.jsx)(h.Z, {
       heading: S.intl.string(S.t.LPJmLy),
-      children: (0, r.jsx)(v.Z, {
+      children: (0, r.jsx)(O.Z, {
         user: t,
         currentUser: n,
         guild: C

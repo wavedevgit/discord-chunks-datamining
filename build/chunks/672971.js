@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(512722),
   l = n.n(s),
   c = n(442837),
@@ -56,15 +56,15 @@ class b extends i.Component {
       eulaId: e,
       applicationName: t,
       hasPreviouslyAcceptedEULA: i,
-      forceShow: a,
+      forceShow: o,
       disabled: s,
       className: c,
       checkboxClassname: d,
       checkboxLabelClassname: g,
       finePrint: b,
       showPricingLink: y,
-      showWithdrawalWaiver: v,
-      isTrial: O,
+      showWithdrawalWaiver: O,
+      isTrial: v,
       inReverseTrial: I,
       isDiscount: S,
       subscriptionPlan: T,
@@ -73,12 +73,12 @@ class b extends i.Component {
       hasAcceptedEULA: N,
       hasAcceptedWithdrawalWaiver: C
     } = this.state;
-    return (l()(!O || null != T, "subscriptionPlan cannot be null if shouldShowUpdatedPaymentModal is true"), a || null != e && !i || v) ? (0, r.jsxs)("div", {
+    return (l()(!v || null != T, "subscriptionPlan cannot be null if shouldShowUpdatedPaymentModal is true"), o || null != e && !i || O) ? (0, r.jsxs)("div", {
       className: c,
-      children: [v && (0, r.jsx)(u.vwX, {
+      children: [O && (0, r.jsx)(u.vwX, {
         className: m.formTitle,
         children: h.intl.string(h.t.Ogvn5u)
-      }), null != e && (a || !i) ? (0, r.jsx)(u.XZJ, {
+      }), null != e && (o || !i) ? (0, r.jsx)(u.XZJ, {
         type: u.XZJ.Types.INVERTED,
         value: N,
         onChange: this.handleToggleEULAAcceptance,
@@ -101,18 +101,18 @@ class b extends i.Component {
           })
         })
       }) : null, null == b ? null : (0, r.jsx)("div", {
-        className: o()(m.finePrint, A),
+        className: a()(m.finePrint, A),
         children: b
-      }), v ? (0, r.jsxs)("div", {
+      }), O ? (0, r.jsxs)("div", {
         className: c,
         children: [(0, r.jsx)(u.XZJ, {
           type: u.XZJ.Types.INVERTED,
           value: C,
           onChange: this.handleToggleEUWithdralWaiverAcceptance,
           disabled: s,
-          className: o()(m.checkbox, d),
+          className: a()(m.checkbox, d),
           children: (0, r.jsx)("div", {
-            className: o()(m.checkboxLabel, g),
+            className: a()(m.checkboxLabel, g),
             children: h.intl.string(h.t.DFCVNz)
           })
         }), (0, r.jsx)("div", {
@@ -124,7 +124,7 @@ class b extends i.Component {
         children: ["*", h.intl.format(h.t["5zmY3N"], {
           documentationLink: f.Z.getArticleURL(p.BhN.LOCALIZED_PRICING)
         })]
-      }), O && null != T && (0, r.jsx)(u.Text, {
+      }), v && null != T && (0, r.jsx)(u.Text, {
         variant: "text-xs/medium",
         color: "interactive-normal",
         children: h.intl.format(h.t["Hvo/Z2"], {

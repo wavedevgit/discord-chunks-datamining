@@ -6,8 +6,8 @@ n.d(t, {
 }), n(642613), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(481060),
   l = n(710845),
   c = n(219929),
@@ -58,21 +58,21 @@ function y(e, t) {
   }), e
 }
 
-function v(e, t) {
+function O(e, t) {
   if (null == e) return {};
-  var n, r, i = O(e, t);
+  var n, r, i = v(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
 
-function O(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let I = new l.Z("PaymentRequest"),
@@ -156,20 +156,20 @@ class T extends i.Component {
   renderButton(e) {
     var t, n, {
         iconType: i,
-        buttonText: a
+        buttonText: o
       } = e,
-      o = v(e, ["iconType", "buttonText"]);
+      a = O(e, ["iconType", "buttonText"]);
     return (0, r.jsx)(s.zxk, y(E({
       onClick: this.attemptPaymentRequest,
       className: null != (t = this.props.className) ? t : m.button,
       submitting: this.state.submitting
-    }, o), {
+    }, a), {
       children: (0, r.jsxs)("div", {
         className: m.centerContainer,
         children: [(0, r.jsx)(c.ZP, {
           className: null != (n = this.props.iconClassName) ? n : m.buttonIcon,
           type: i
-        }), a]
+        }), o]
       })
     }), p.HeQ.PAYMENT_REQUEST)
   }
@@ -360,7 +360,7 @@ class N extends T {
       children: [(0, r.jsx)(c.ZP, {
         type: c.ZP.Types.APPLE,
         size: c.Uy.MEDIUM,
-        className: o()(m.paymentRequestIcon, m.appleConnectorIcon)
+        className: a()(m.paymentRequestIcon, m.appleConnectorIcon)
       }), (0, r.jsx)(s.Text, {
         variant: "text-md/medium",
         className: m.connectionInstructions,

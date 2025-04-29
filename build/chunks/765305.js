@@ -4,7 +4,7 @@ n.d(t, {
   $I: () => d,
   Fc: () => y,
   Ku: () => c,
-  VF: () => v,
+  VF: () => O,
   WX: () => f,
   X_: () => I,
   _U: () => m,
@@ -13,19 +13,19 @@ n.d(t, {
   gv: () => S,
   j8: () => p,
   nz: () => h,
-  p: () => a,
+  p: () => o,
   p1: () => u,
   pg: () => g,
   rC: () => b,
   sy: () => _,
-  wm: () => o,
-  zV: () => O,
+  wm: () => a,
+  zV: () => v,
   zw: () => l
 }), n(388685);
 var r = n(70956),
   i = n(981631);
-let a = 100,
-  o = 1e3,
+let o = 100,
+  a = 1e3,
   s = 100,
   l = "Guild Events Modal",
   c = "-1";
@@ -53,8 +53,8 @@ var E = function(e) {
 }({});
 let b = 100,
   y = 2 * r.Z.Millis.DAY,
-  v = 12 * r.Z.Millis.HOUR,
-  O = 4;
+  O = 12 * r.Z.Millis.HOUR,
+  v = 4;
 var I = function(e) {
     return e.NEW_EVENT = "Upcoming Event Notice", e.EVENT_STARTING_SOON = "Event Starting Soon Notice", e
   }({}),

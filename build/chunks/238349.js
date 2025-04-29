@@ -5,8 +5,8 @@ n.d(t, {
   U: () => V,
   Z: () => X
 }), n(388685), n(642613);
-var i, a = n(392711),
-  o = n.n(a),
+var i, o = n(392711),
+  a = n.n(o),
   s = n(697988),
   l = n(683860),
   c = n(442837),
@@ -29,8 +29,8 @@ function y(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let v = [],
-  O = null,
+let O = [],
+  v = null,
   I = null,
   S = new Set,
   T = l.z.LATEST_ACTIVITY,
@@ -39,8 +39,8 @@ let v = [],
   C = [],
   R = !1,
   P = [],
-  w = o().chain(v),
-  D = o().chain(v),
+  w = a().chain(O),
+  D = a().chain(O),
   L = new Set,
   x = new Set;
 
@@ -73,7 +73,7 @@ function U(e, t) {
 }
 
 function G() {
-  C = [], r = null, I = null, S = new Set, T = l.z.LATEST_ACTIVITY, A = s.z.MATCH_SOME, N = 0, P = [], w = o().chain(v), D = o().chain(v), x.clear(), L.clear()
+  C = [], r = null, I = null, S = new Set, T = l.z.LATEST_ACTIVITY, A = s.z.MATCH_SOME, N = 0, P = [], w = a().chain(O), D = a().chain(O), x.clear(), L.clear()
 }
 
 function B() {
@@ -103,7 +103,7 @@ function F(e) {
       id: t
     } = e;
     return t
-  }), N = 0, R = !0), 0 !== L.size && (P = P.filter(e => !L.has(e)), L.clear()), 0 !== x.size && (P = Array.from(new Set([...P, ...x])), x.clear()), ((null == e ? void 0 : e.refreshThreadIds) || (null == e ? void 0 : e.sortThreadIds)) && (D = o().chain(P).sort(j(l.z.LATEST_ACTIVITY)), w = o().chain(P).sort(j(l.z.CREATION_DATE)));
+  }), N = 0, R = !0), 0 !== L.size && (P = P.filter(e => !L.has(e)), L.clear()), 0 !== x.size && (P = Array.from(new Set([...P, ...x])), x.clear()), ((null == e ? void 0 : e.refreshThreadIds) || (null == e ? void 0 : e.sortThreadIds)) && (D = a().chain(P).sort(j(l.z.LATEST_ACTIVITY)), w = a().chain(P).sort(j(l.z.CREATION_DATE)));
   let n = (T === l.z.LATEST_ACTIVITY ? D : w).value(),
     i = (C = 0 === S.size ? n : n.filter(U(S, A))).find(e => k(e));
   r = null == i ? null : i
@@ -144,7 +144,7 @@ function Y(e) {
     isNewlyCreated: n
   } = e;
   if (null == t.parent_id || t.parent_id !== I || !n) return !1;
-  t.ownerId !== _.default.getId() ? N++ : O = t.id
+  t.ownerId !== _.default.getId() ? N++ : v = t.id
 }
 
 function W(e) {
@@ -194,21 +194,21 @@ class Q extends(i = c.ZP.Store) {
   }
   getThreadIds(e, t, n, r) {
     let i = e !== I,
-      a = !(0, g.OL)(n, S),
-      o = t !== T,
+      o = !(0, g.OL)(n, S),
+      a = t !== T,
       s = r !== A;
     return I = e, S = n, T = t, A = r, i ? F({
       refreshThreadIds: !0
-    }) : o ? F({
+    }) : a ? F({
       sortThreadIds: !0
-    }) : (a || s) && F(), C
+    }) : (o || s) && F(), C
   }
   getCurrentThreadIds() {
     return C
   }
   getAndDeleteMostRecentUserCreatedThreadId() {
-    let e = O;
-    return O = null, e
+    let e = v;
+    return v = null, e
   }
   getFirstNoReplyThreadId() {
     return r

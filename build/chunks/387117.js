@@ -111,22 +111,17 @@ let r = {
             enabledExperiments: t,
             density: n
           } = e;
-          if (0 === t.length) return 48;
-          for (let e of t) switch (e) {
-            case "refresh-fast-follow-avatars":
-              switch (n) {
-                case "compact":
-                  return 40;
-                case "default":
-                case "cozy":
-                  return 44;
-                default:
-                  return 48
-              }
-            case "visual-refresh":
-              return 40
-          }
-          return 48
+          if (0 === t.length) return 40;
+          for (let e of t)
+            if ("refresh-fast-follow-avatars" === e) switch (n) {
+              case "compact":
+              default:
+                return 40;
+              case "default":
+              case "cozy":
+                return 44
+            }
+          return 40
         }
       },
       FOLDER_SIZE: {

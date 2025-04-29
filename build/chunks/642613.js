@@ -2,8 +2,8 @@
 "use strict";
 var r = n(98405),
   i = n(46015),
-  a = n(896471),
-  o = n(527160),
+  o = n(896471),
+  a = n(527160),
   s = n(914331),
   l = n(992032),
   c = n(382698),
@@ -20,10 +20,10 @@ var r = n(98405),
   y = u(function() {
     g.sort(void 0)
   }),
-  v = u(function() {
+  O = u(function() {
     g.sort(null)
   }),
-  O = f("sort"),
+  v = f("sort"),
   I = !u(function() {
     if (h) return h < 70;
     if (!_ || !(_ > 3)) {
@@ -64,11 +64,11 @@ var r = n(98405),
 r({
   target: "Array",
   proto: !0,
-  forced: y || !v || !O || !I
+  forced: y || !O || !v || !I
 }, {
   sort: function(e) {
-    void 0 !== e && a(e);
-    var t, n, r = o(this);
+    void 0 !== e && o(e);
+    var t, n, r = a(this);
     if (I) return void 0 === e ? E(r) : E(r, e);
     var i = [],
       c = s(r);

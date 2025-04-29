@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(704826), n(35282), n(781311), n(457542), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(539854), n(642613);
 var r = n(392711),
   i = n.n(r),
-  a = n(477660),
-  o = n.n(a),
+  o = n(477660),
+  a = n.n(o),
   s = n(675478),
   l = n(131704),
   c = n(601964),
@@ -21,8 +21,8 @@ var r = n(392711),
   E = n(591759),
   b = n(279779),
   y = n(620490),
-  v = n(727785),
-  O = n(981631);
+  O = n(727785),
+  v = n(981631);
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -62,41 +62,41 @@ function D(e, t) {
   var n, r;
   if (!t.frecencyBoosters) return {};
   let i = f.Z.getFrequentlyWithoutFetchingLatest(),
-    a = i.reduce((e, t) => {
+    o = i.reduce((e, t) => {
       let {
         id: n
       } = t, r = f.Z.getScoreWithoutFetchingLatest(n);
       return r > e ? r : e
     }, 0),
-    o = [];
+    a = [];
   switch (e) {
-    case v.h8.GUILD:
-      o = i.filter(e => e instanceof c.ZP);
+    case O.h8.GUILD:
+      a = i.filter(e => e instanceof c.ZP);
       break;
-    case v.h8.USER:
-      o = i.filter(e => e instanceof l.Sf && e.type === O.d4z.DM);
+    case O.h8.USER:
+      a = i.filter(e => e instanceof l.Sf && e.type === v.d4z.DM);
       break;
-    case v.h8.GROUP_DM:
-      o = i.filter(e => e instanceof l.Sf && e.isMultiUserDM());
+    case O.h8.GROUP_DM:
+      a = i.filter(e => e instanceof l.Sf && e.isMultiUserDM());
       break;
-    case v.h8.TEXT_CHANNEL:
-      o = i.filter(e => e instanceof l.Sf && (0, l.r8)(e.type));
+    case O.h8.TEXT_CHANNEL:
+      a = i.filter(e => e instanceof l.Sf && (0, l.r8)(e.type));
       break;
-    case v.h8.VOICE_CHANNEL:
-      o = i.filter(e => e instanceof l.Sf && e.isGuildVocal())
+    case O.h8.VOICE_CHANNEL:
+      a = i.filter(e => e instanceof l.Sf && e.isGuildVocal())
   }
   let s = {};
-  for (let t of o) {
+  for (let t of a) {
     let {
       id: n
     } = t, r = f.Z.getScoreWithoutFetchingLatest(n);
-    if (e === v.h8.USER && t instanceof l.mn) {
-      if (t.type === O.d4z.DM) s[n = t.getRecipientId()] = 1 + r / a;
-      else if (t.type === O.d4z.GROUP_DM) {
+    if (e === O.h8.USER && t instanceof l.mn) {
+      if (t.type === v.d4z.DM) s[n = t.getRecipientId()] = 1 + r / o;
+      else if (t.type === v.d4z.GROUP_DM) {
         let e = t.recipients.length;
-        for (let n of t.recipients) s[n] = 1 + r / a * (1 / e)
+        for (let n of t.recipients) s[n] = 1 + r / o * (1 / e)
       }
-    } else s[n] = 1 + r / a
+    } else s[n] = 1 + r / o
   }
   for (let e of p.Z.getFriendIDs()) s[e] = (null != (n = s[e]) ? n : 1) + N;
   for (let e of d.Z.getDMUserIds()) s[e] = (null != (r = s[e]) ? r : 1) + C;
@@ -113,13 +113,13 @@ class L {
     this._limit = e, null != t && t.setLimit(e), this._userResults.length > this._limit && (this._userResults.length = this._limit), this._groupDMResults.length > this._limit && (this._groupDMResults.length = this._limit), this._textChannelResults.length > this._limit && (this._textChannelResults.length = this._limit), this._voiceChannelResults.length > this._limit && (this._voiceChannelResults.length = this._limit), this._guildResults.length > this._limit && (this._guildResults.length = this._limit), this._applicationResults.length > this._limit && (this._applicationResults.length = this._limit), this._linkResults.length > this._limit && (this._linkResults.length = this._limit), this._inAppNavigations.length > this._limit && (this._inAppNavigations.length = this._limit)
   }
   setResultTypes(e) {
-    this.resultTypes = null != e ? new Set(e) : null, this._userResults = this._include(v.h8.USER) ? this._userResults : [], this._groupDMResults = this._include(v.h8.GROUP_DM) ? this._groupDMResults : [], this._textChannelResults = this._include(v.h8.TEXT_CHANNEL) ? this._textChannelResults : [], this._voiceChannelResults = this._include(v.h8.VOICE_CHANNEL) ? this._voiceChannelResults : [], this._guildResults = this._include(v.h8.GUILD) ? this._guildResults : [], this._applicationResults = this._include(v.h8.APPLICATION) ? this._applicationResults : [], this._linkResults = this._include(v.h8.LINK) ? this._linkResults : [], this._inAppNavigations = this._include(v.h8.IN_APP_NAVIGATION) ? this._inAppNavigations : []
+    this.resultTypes = null != e ? new Set(e) : null, this._userResults = this._include(O.h8.USER) ? this._userResults : [], this._groupDMResults = this._include(O.h8.GROUP_DM) ? this._groupDMResults : [], this._textChannelResults = this._include(O.h8.TEXT_CHANNEL) ? this._textChannelResults : [], this._voiceChannelResults = this._include(O.h8.VOICE_CHANNEL) ? this._voiceChannelResults : [], this._guildResults = this._include(O.h8.GUILD) ? this._guildResults : [], this._applicationResults = this._include(O.h8.APPLICATION) ? this._applicationResults : [], this._linkResults = this._include(O.h8.LINK) ? this._linkResults : [], this._inAppNavigations = this._include(O.h8.IN_APP_NAVIGATION) ? this._inAppNavigations : []
   }
   _include(e) {
     return null == this.resultTypes || this.resultTypes.has(e)
   }
   _isAsyncSearch() {
-    return this._include(v.h8.USER)
+    return this._include(O.h8.USER)
   }
   setOptions(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
@@ -157,8 +157,8 @@ class L {
     null != e && (e.destroy(), this.userSearchContext = null)
   }
   queryTextChannels(e, t) {
-    if (!this._include(v.h8.TEXT_CHANNEL)) return [];
-    let n = D(v.h8.TEXT_CHANNEL, this.options),
+    if (!this._include(O.h8.TEXT_CHANNEL)) return [];
+    let n = D(O.h8.TEXT_CHANNEL, this.options),
       {
         blacklist: r
       } = this.options,
@@ -173,10 +173,10 @@ class L {
     })
   }
   queryVoiceChannels(e, t) {
-    if (!this._include(v.h8.VOICE_CHANNEL)) return [];
+    if (!this._include(O.h8.VOICE_CHANNEL)) return [];
     let {
       voiceChannelGuildFilter: n
-    } = this.options, r = D(v.h8.VOICE_CHANNEL, this.options);
+    } = this.options, r = D(O.h8.VOICE_CHANNEL, this.options);
     return m.ZP.queryChannels({
       query: e,
       guildId: n,
@@ -187,8 +187,8 @@ class L {
     })
   }
   queryGuilds(e, t) {
-    if (!this._include(v.h8.GUILD)) return [];
-    let n = D(v.h8.GUILD, this.options),
+    if (!this._include(O.h8.GUILD)) return [];
+    let n = D(O.h8.GUILD, this.options),
       {
         blacklist: r
       } = this.options,
@@ -205,17 +205,17 @@ class L {
     let {
       userSearchContext: r
     } = this;
-    if (null == r || !this._include(v.h8.USER)) return;
+    if (null == r || !this._include(O.h8.USER)) return;
     let {
       userFilters: i
     } = this.options;
-    void 0 !== t && g.Z.requestMembers(t, e, 100), r.setLimit(n), r.setQuery(e, i, this._userBlacklist, D(v.h8.USER, this.options))
+    void 0 !== t && g.Z.requestMembers(t, e, 100), r.setLimit(n), r.setQuery(e, i, this._userBlacklist, D(O.h8.USER, this.options))
   }
   queryGroupDMs(e, t) {
-    if (!this._include(v.h8.GROUP_DM)) return [];
+    if (!this._include(O.h8.GROUP_DM)) return [];
     let {
       blacklist: n
-    } = this.options, r = D(v.h8.GROUP_DM, this.options), i = null != n ? e => !n.has("channel:".concat(e.id)) : void 0;
+    } = this.options, r = D(O.h8.GROUP_DM, this.options), i = null != n ? e => !n.has("channel:".concat(e.id)) : void 0;
     return m.ZP.queryGroupDMs({
       query: e,
       limit: t,
@@ -225,7 +225,7 @@ class L {
     })
   }
   queryApplications(e, t) {
-    return this._include(v.h8.APPLICATION) ? m.ZP.queryApplications({
+    return this._include(O.h8.APPLICATION) ? m.ZP.queryApplications({
       query: e,
       limit: t,
       fuzzy: !0
@@ -233,8 +233,8 @@ class L {
   }
   queryLink(e, t) {
     let n;
-    if (!this._include(v.h8.LINK)) return [];
-    let r = o().sanitizeUrl(e);
+    if (!this._include(O.h8.LINK)) return [];
+    let r = a().sanitizeUrl(e);
     try {
       n = new URL(r)
     } catch (e) {
@@ -242,17 +242,17 @@ class L {
     }
     let {
       pathname: i,
-      hostname: a = "",
+      hostname: o = "",
       host: s
-    } = n, l = E.Z.isDiscordHostname(a) || window.location.host === s;
+    } = n, l = E.Z.isDiscordHostname(o) || window.location.host === s;
     return null !== i && l && E.Z.isAppRoute(i) ? [{
-      type: v.h8.LINK,
+      type: O.h8.LINK,
       record: u.Z.fromPath(i),
       score: 1
     }] : []
   }
   queryInAppNavigations(e, t) {
-    return this._include(v.h8.IN_APP_NAVIGATION) ? m.ZP.queryInAppNavigations({
+    return this._include(O.h8.IN_APP_NAVIGATION) ? m.ZP.queryInAppNavigations({
       query: e,
       limit: t,
       fuzzy: !0
@@ -263,7 +263,7 @@ class L {
       let {
         results: t
       } = e;
-      if (this._include(v.h8.USER)) {
+      if (this._include(O.h8.USER)) {
         for (let {
             id: e,
             score: n,
@@ -272,7 +272,7 @@ class L {
           of(this._userResults = [], t)) {
           let t = h.default.getUser(e);
           null != t && this._userResults.push({
-            type: v.h8.USER,
+            type: O.h8.USER,
             record: t,
             score: w(n),
             comparator: null != r ? r : void 0

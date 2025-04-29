@@ -14,12 +14,12 @@ n.r(t), n.d(t, {
   log: () => E,
   setOutOfProcessSupport: () => y,
   setPID: () => h,
-  supportsOutOfProcess: () => v,
+  supportsOutOfProcess: () => O,
   validResolution: () => b
 }), n(65234), n(111804), n(490233), n(97749), n(388685), n(35282);
 var i = n(490029),
-  a = n(358085),
-  o = n(981631);
+  o = n(358085),
+  a = n(981631);
 let s = 2,
   l = {
     width: 3840,
@@ -55,7 +55,7 @@ function g() {
 
 function E(e) {
   (0, i.lW)({
-    type: o.BmY.LOG_MESSAGES,
+    type: a.BmY.LOG_MESSAGES,
     pid: p(),
     token: g(),
     payload: e
@@ -63,13 +63,13 @@ function E(e) {
 }
 
 function b(e) {
-  return !a.isPlatformEmbedded || e.width >= c.width && e.height >= c.height
+  return !o.isPlatformEmbedded || e.width >= c.width && e.height >= c.height
 }
 
 function y(e) {
   _ = e
 }
 
-function v() {
+function O() {
   return _
 }

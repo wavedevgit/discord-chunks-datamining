@@ -4,9 +4,9 @@ n.d(t, {
   K: () => S
 }), n(539854);
 var r, i = n(200651),
-  a = n(192379),
-  o = n(120356),
-  s = n.n(o),
+  o = n(192379),
+  a = n(120356),
+  s = n.n(a),
   l = n(772848),
   c = n(84735),
   u = n(15127),
@@ -28,18 +28,18 @@ function E(e, t, n) {
 }
 let b = (0, l.Z)(),
   y = (0, l.Z)(),
-  v = (0, l.Z)(),
-  O = 10,
+  O = (0, l.Z)(),
+  v = 10,
   I = 7.23;
-class S extends(r = a.Component) {
+class S extends(r = o.Component) {
   getPaddingRight() {
     let {
       maxLength: e,
       showCharacterCountFullPadding: t
     } = this.props;
-    if (null == e) return O;
+    if (null == e) return v;
     let n = "".concat(e).length;
-    return t && (n += "".concat(e, " / ").length), I * n + O
+    return t && (n += "".concat(e, " / ").length), I * n + v
   }
   getCharsLeftLength() {
     let {
@@ -117,14 +117,14 @@ class S extends(r = a.Component) {
     let {
       disabled: n,
       value: r,
-      placeholder: a,
-      autoFocus: o,
+      placeholder: o,
+      autoFocus: a,
       minLength: l,
       maxLength: u,
       allowOverflow: f,
       spellCheck: E,
       resizeable: b,
-      className: O,
+      className: v,
       id: I,
       rows: S,
       flex: T,
@@ -144,7 +144,7 @@ class S extends(r = a.Component) {
         children: [(0, i.jsx)(c.t, {
           children: (0, i.jsx)(P, {
             type: "text",
-            className: s()(m.inputDefault, h.textArea, g.scrollbarDefault, O, {
+            className: s()(m.inputDefault, h.textArea, g.scrollbarDefault, v, {
               [m.error]: w,
               [m.disabled]: n,
               [h.resizeable]: b
@@ -157,9 +157,9 @@ class S extends(r = a.Component) {
             },
             id: I,
             disabled: n,
-            placeholder: a,
+            placeholder: o,
             value: r,
-            autoFocus: o,
+            autoFocus: a,
             minLength: l,
             maxLength: f ? void 0 : u,
             spellCheck: E,
@@ -178,7 +178,7 @@ class S extends(r = a.Component) {
             minLength: l
           })
         }), null != u && (0, i.jsx)(d.n, {
-          id: v,
+          id: O,
           children: p.intl.format(p.t["+DFxLS"], {
             maxLength: u
           })
@@ -194,8 +194,8 @@ class S extends(r = a.Component) {
         maxLength: t,
         minLength: n,
         error: r
-      } = this.props, i = [], a = null == (e = this.context) ? void 0 : e.errorId;
-      return null != a && i.push(a), null != r ? i.push(b) : (null != t && i.push(v), null != n && i.push(y)), i.length > 0 ? i.join(" ") : void 0
+      } = this.props, i = [], o = null == (e = this.context) ? void 0 : e.errorId;
+      return null != o && i.push(o), null != r ? i.push(b) : (null != t && i.push(O), null != n && i.push(y)), i.length > 0 ? i.join(" ") : void 0
     }), E(this, "onChange", e => {
       let {
         onChange: t,

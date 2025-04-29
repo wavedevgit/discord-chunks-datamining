@@ -7,25 +7,25 @@ n.d(t, {
   JC: () => b,
   KQ: () => h,
   NB: () => c,
-  XZ: () => o,
+  XZ: () => a,
   Y_: () => d,
-  cP: () => a,
+  cP: () => o,
   f4: () => g,
   fy: () => E,
   gP: () => l,
   h1: () => u,
-  ic: () => v,
+  ic: () => O,
   oX: () => r,
   rP: () => f,
   u0: () => I,
   vY: () => i,
-  vc: () => O,
+  vc: () => v,
   yP: () => m
 });
 let r = 250,
   i = 762880,
-  a = "ROLE_SUBSCRIPTIONS",
-  o = "APPLICATION_SUBSCRIPTION_SUBSECTION",
+  o = "ROLE_SUBSCRIPTIONS",
+  a = "APPLICATION_SUBSCRIPTION_SUBSECTION",
   s = "SOUNDBOARD_SUBSECTION",
   l = "VIDEO_SUBSECTION";
 var c = function(e) {
@@ -79,7 +79,7 @@ function b() {
 var y = function(e) {
   return e[e.CONFIRM_START = 0] = "CONFIRM_START", e[e.CONFIRM_CODE = 1] = "CONFIRM_CODE", e[e.CHANGE_EMAIL_REASONS = 2] = "CHANGE_EMAIL_REASONS", e[e.CHANGE_EMAIL_WARNING = 3] = "CHANGE_EMAIL_WARNING", e[e.EMAIL_AND_PASSWORD = 4] = "EMAIL_AND_PASSWORD", e[e.COMPLETE = 5] = "COMPLETE", e
 }({});
-let v = {
+let O = {
     NEW_FORUM_THREADS_ON: 16384,
     NEW_FORUM_THREADS_OFF: 8192,
     OPT_IN_ENABLED: 4096,
@@ -87,7 +87,7 @@ let v = {
     UNREADS_ALL_MESSAGES: 1024,
     UNREADS_ONLY_MENTIONS: 512
   },
-  O = {
+  v = {
     OPT_IN_CHANNELS_ON: 16384,
     OPT_IN_CHANNELS_OFF: 8192,
     UNREADS_ONLY_MENTIONS: 4096,

@@ -3,13 +3,13 @@
 n.d(t, {
   Lx: () => S,
   kq: () => I,
-  vy: () => O,
+  vy: () => v,
   yX: () => y
 });
 var r = n(392711),
   i = n(544891),
-  a = n(570140),
-  o = n(100527),
+  o = n(570140),
+  a = n(100527),
   s = n(367907),
   l = n(339085),
   c = n(697426),
@@ -27,7 +27,7 @@ var r = n(392711),
     return e.EMOJI_PICKER = "emoji_picker", e.EFFECT_BAR = "effect_bar", e
   }({});
 
-function v(e) {
+function O(e) {
   let t = new AbortController,
     n = (0, r.throttle)(n => {
       d.Z.getVoiceChannelId() !== e && t.abort()
@@ -38,37 +38,37 @@ function v(e) {
   }
 }
 
-function O(e, t, n) {
+function v(e, t, n) {
   var r;
   let {
-    abortController: a,
+    abortController: o,
     onRequestProgress: s
-  } = v(e), l = null != (r = p.Z.getState().animationType) ? r : g.q.BASIC, d = {
+  } = O(e), l = null != (r = p.Z.getState().animationType) ? r : g.q.BASIC, d = {
     animation_type: l,
     animation_id: (0, m.Iu)(l, m.v)
   };
   i.tn.post({
     url: E.ANM.CUSTOM_CALL_SOUNDS(e),
     body: d,
-    signal: a.signal,
+    signal: o.signal,
     onRequestProgress: s,
     rejectWithError: !0
   }).then(E.VqG, () => {
-    if (a.signal.aborted) return
-  }), (0, u.Z)([o.Z.CHANNEL_CALL], n, t, c.jy.ENTRY)
+    if (o.signal.aborted) return
+  }), (0, u.Z)([a.Z.CHANNEL_CALL], n, t, c.jy.ENTRY)
 }
 
 function I(e, t, n, r) {
-  var a, o;
-  let s = l.ZP.getCustomEmojiById(null != (a = t.emojiId) ? a : ""),
+  var o, a;
+  let s = l.ZP.getCustomEmojiById(null != (o = t.emojiId) ? o : ""),
     {
       abortController: d,
       onRequestProgress: f
-    } = v(e),
+    } = O(e),
     _ = {
       sound_id: t.soundId,
       emoji_id: t.emojiId,
-      emoji_name: null != (o = t.emojiName) ? o : null == s ? void 0 : s.name
+      emoji_name: null != (a = t.emojiName) ? a : null == s ? void 0 : s.name
     };
   t.guildId !== b.X8 && (_.source_guild_id = t.guildId), i.tn.post({
     url: E.ANM.SEND_SOUNDBOARD_SOUND(e),
@@ -85,12 +85,12 @@ let S = async e => {
     channel: t,
     emoji: n,
     location: r,
-    animationType: o,
+    animationType: a,
     animationId: s,
     isPremium: l
   } = e;
   if (null == n || h.Z.isOnCooldown) return;
-  let c = l && null != o ? o : g.q.BASIC;
+  let c = l && null != a ? a : g.q.BASIC;
   try {
     let e = null != n.id ? {
       emoji_id: n.id,
@@ -107,13 +107,13 @@ let S = async e => {
       url: E.ANM.VOICE_CHANNEL_EFFECTS(t.id),
       body: e,
       rejectWithError: !1
-    }), A(t, n, r, c), a.Z.dispatch({
+    }), A(t, n, r, c), o.Z.dispatch({
       type: "VOICE_CHANNEL_EFFECT_SENT_LOCAL"
     })
   } catch (e) {
     if (429 === e.status && null != e.body.retry_after) {
       let t = e.body.retry_after * f.Z.Millis.SECOND;
-      a.Z.dispatch({
+      o.Z.dispatch({
         type: "VOICE_CHANNEL_EFFECT_UPDATE_TIME_STAMP",
         cooldownEndsAtMs: t
       })
@@ -125,8 +125,8 @@ let S = async e => {
 }, A = (e, t, n, r) => {
   let {
     unicode: i,
-    custom: a,
-    customExternal: o,
+    custom: o,
+    customExternal: a,
     managed: l,
     managedExternal: c,
     animated: u
@@ -136,8 +136,8 @@ let S = async e => {
     guild_id: e.getGuildId(),
     location: n,
     emoji_unicode: i,
-    emoji_custom: a,
-    emoji_custom_external: o,
+    emoji_custom: o,
+    emoji_custom_external: a,
     emoji_managed: l,
     emoji_managed_external: c,
     emoji_animated: u,

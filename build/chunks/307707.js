@@ -1,15 +1,15 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(399606),
   i = n(339085),
-  a = n(633302);
+  o = n(633302);
 
-function o(e, t) {
+function a(e, t) {
   return {
     customEmoji: (0, r.e7)([i.ZP], () => null != e ? i.ZP.getCustomEmojiById(e) : null, [e]),
-    unicodeEmoji: null != t ? a.ZP.getByName(a.ZP.convertSurrogateToName(t, !1)) : null
+    unicodeEmoji: null != t ? o.ZP.getByName(o.ZP.convertSurrogateToName(t, !1)) : null
   }
 }

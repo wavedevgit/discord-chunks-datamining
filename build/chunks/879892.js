@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  u: () => O
+  u: () => v
 }), n(539854), n(993155), n(388685);
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  a = n(355467),
-  o = n(179360),
+  o = n(355467),
+  a = n(179360),
   s = n(821849),
   l = n(594174),
   c = n(314884),
@@ -60,8 +60,8 @@ function b(e, t) {
   if (null == e) return {};
   var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -69,18 +69,18 @@ function b(e, t) {
 function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let v = "apply-guild-boost-modal";
-async function O(e) {
+let O = "apply-guild-boost-modal";
+async function v(e) {
   let {
     analyticsLocations: t,
     analyticsLocation: h,
     analyticsSourceLocation: g,
     numberOfBoostsToAdd: y,
-    onClose: O,
+    onClose: v,
     closeLayer: I,
     onSubscriptionConfirmation: S,
     onSubscribeComplete: T,
@@ -108,14 +108,14 @@ async function O(e) {
     contextKey: D
   });
   let x = [];
-  u.Z.isLoadedForPremiumSKUs() || x.push((0, s.Y2)()), c.Z.hasFetched || (x.push(a.jg()), x.push((0, o.X8)())), x.length > 0 && await Promise.allSettled(x);
+  u.Z.isLoadedForPremiumSKUs() || x.push((0, s.Y2)()), c.Z.hasFetched || (x.push(o.jg()), x.push((0, a.X8)())), x.length > 0 && await Promise.allSettled(x);
   let M = (0, f.vx)(c.Z.boostSlots),
     k = M.length,
     j = e => {
-      null == O || O(), null == N || N(e)
+      null == v || v(), null == N || N(e)
     },
     U = () => {
-      null == O || O(), null == I || I(), d.default.track(p.rMx.MODAL_DISMISSED, {
+      null == v || v(), null == I || I(), d.default.track(p.rMx.MODAL_DISMISSED, {
         type: p.ZY5.PREMIUM_GUILD_USER_MODAL,
         location_section: h.section
       })
@@ -129,8 +129,8 @@ async function O(e) {
       return n => {
         var {
           onClose: i
-        } = n, a = b(n, ["onClose"]);
-        return (0, r.jsx)(t, E(m({}, a), {
+        } = n, o = b(n, ["onClose"]);
+        return (0, r.jsx)(t, E(m({}, o), {
           onClose: e => {
             i(), j(e)
           },
@@ -140,9 +140,9 @@ async function O(e) {
         }))
       }
     }, {
-      modalKey: v,
+      modalKey: O,
       onCloseRequest: () => {
-        (0, i.Mr3)(v), j(!1)
+        (0, i.Mr3)(O), j(!1)
       },
       contextKey: D
     })

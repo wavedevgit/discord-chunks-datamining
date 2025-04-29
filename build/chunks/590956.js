@@ -6,8 +6,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(772848),
   l = n(481060),
   c = n(596454),
@@ -43,7 +43,7 @@ function y(e) {
   return e
 }
 
-function v(e, t) {
+function O(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,8 +54,8 @@ function v(e, t) {
   return n
 }
 
-function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -63,11 +63,11 @@ let I = e => {
     var t;
     let {
       node: n,
-      tooltipPosition: a = p.b_.position,
+      tooltipPosition: o = p.b_.position,
       enableClick: s = !0,
       channelId: u,
       messageId: d
-    } = e, f = i.useRef(null), h = null == (t = n.originalMatch) ? void 0 : t[0], m = null != h ? h : n.name, [g, b] = i.useState(!1), v = e => (0, r.jsx)(c.Z, O(y({}, e), {
+    } = e, f = i.useRef(null), h = null == (t = n.originalMatch) ? void 0 : t[0], m = null != h ? h : n.name, [g, b] = i.useState(!1), O = e => (0, r.jsx)(c.Z, v(y({}, e), {
       emojiName: n.name,
       size: n.jumboable ? "jumbo" : "default",
       src: n.src,
@@ -75,11 +75,11 @@ let I = e => {
       animated: !1,
       channelId: u,
       messageId: d
-    })), I = e => (0, r.jsx)(l.ua7, O(y({
+    })), I = e => (0, r.jsx)(l.ua7, v(y({
       text: (0, p.Y)(n.name, s),
       "aria-label": m
     }, p.b_), {
-      position: a,
+      position: o,
       shouldShow: !g,
       onTooltipShow: () => {
         s && T({
@@ -87,22 +87,22 @@ let I = e => {
           isCustomEmoji: !1
         })
       },
-      children: t => (0, r.jsx)(l.P3F, O(y({}, e), {
+      children: t => (0, r.jsx)(l.P3F, v(y({}, e), {
         innerRef: f,
         tag: "span",
         onClick: t => {
           var n;
           b(!0), null == e || null == (n = e.onClick) || n.call(e, t)
         },
-        className: o()(E.emojiContainer, {
+        className: a()(E.emojiContainer, {
           [E.emojiContainerClickable]: s,
           [E.emojiJumbo]: n.jumboable
         }),
-        children: v(t)
+        children: O(t)
       }))
     }));
     if (!s) return I();
-    let S = e => (0, r.jsx)(_.Az, O(y({}, e), {
+    let S = e => (0, r.jsx)(_.Az, v(y({}, e), {
       node: n
     }));
     return (0, r.jsx)(l.yRy, {
@@ -123,13 +123,13 @@ let I = e => {
     let {
       node: t,
       isInteracting: n,
-      tooltipPosition: a = p.b_.position,
+      tooltipPosition: o = p.b_.position,
       enableClick: u = !0,
       channelId: g,
       messageId: b
-    } = e, [v, I] = i.useState(String(Date.now())), [S, A] = i.useState(!1), [N, C] = i.useState(!1), R = i.useRef(null), P = function() {
+    } = e, [O, I] = i.useState(String(Date.now())), [S, A] = i.useState(!1), [N, C] = i.useState(!1), R = i.useRef(null), P = function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-      return (0, r.jsx)(c.Z, O(y({}, e), {
+      return (0, r.jsx)(c.Z, v(y({}, e), {
         emojiName: t.name,
         size: t.jumboable ? "jumbo" : "default",
         emojiId: t.emojiId,
@@ -138,11 +138,11 @@ let I = e => {
         channelId: g,
         messageId: b
       }))
-    }, w = (0, s.Z)(), D = e => (0, r.jsx)(l.ua7, O(y({
+    }, w = (0, s.Z)(), D = e => (0, r.jsx)(l.ua7, v(y({
       text: (0, p.Y)(t.name, u),
       "aria-label": t.name
     }, p.b_), {
-      position: a,
+      position: o,
       shouldShow: !N,
       onTooltipShow: () => {
         A(!0), u && (T({
@@ -151,7 +151,7 @@ let I = e => {
           nonce: w
         }), (0, d.x)(m.qR.CustomEmojiTooltipShown))
       },
-      children: n => (0, r.jsx)(l.P3F, O(y({}, e), {
+      children: n => (0, r.jsx)(l.P3F, v(y({}, e), {
         innerRef: R,
         onMouseEnter: () => {
           var t;
@@ -167,7 +167,7 @@ let I = e => {
           }), A(!1))
         },
         tag: "span",
-        className: o()(E.emojiContainer, {
+        className: a()(E.emojiContainer, {
           [E.emojiContainerClickable]: u,
           [E.emojiJumbo]: t.jumboable
         }),
@@ -175,7 +175,7 @@ let I = e => {
       }))
     }));
     if (!u) return D();
-    let L = e => (0, r.jsx)(_.vk, O(y({}, e), {
+    let L = e => (0, r.jsx)(_.vk, v(y({}, e), {
       node: t,
       refreshPositionKey: () => I(String(Date.now())),
       nonce: w
@@ -192,7 +192,7 @@ let I = e => {
       nudgeAlignIntoViewport: !0,
       position: "right",
       renderPopout: L,
-      positionKey: v,
+      positionKey: O,
       targetElementRef: R,
       children: D
     })

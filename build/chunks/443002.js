@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(622535),
-  o = n(481060),
+  o = n(622535),
+  a = n(481060),
   s = n(425493),
   l = n(211266),
   c = n(906732),
@@ -21,8 +21,8 @@ var r = n(200651),
   E = n(555932),
   b = n(808189),
   y = n(362948),
-  v = n(245004),
-  O = n(383881),
+  O = n(245004),
+  v = n(383881),
   I = n(981631),
   S = n(388032),
   T = n(871146);
@@ -72,7 +72,7 @@ let A = function(e) {
       window.removeEventListener("keydown", e)
     }
   }, [j]), (0, r.jsxs)(r.Fragment, {
-    children: [null != A && (0, r.jsx)(o.P3F, {
+    children: [null != A && (0, r.jsx)(a.P3F, {
       "aria-label": S.intl.string(S.t.cpT0Cg),
       onClick: j,
       className: T.closeIconWrapper,
@@ -82,7 +82,7 @@ let A = function(e) {
         keybind: "ESC",
         variant: s.Z.Variants.SOLID
       })
-    }), (0, r.jsxs)(o.yWw, {
+    }), (0, r.jsxs)(a.yWw, {
       ref: L,
       className: T.scroller,
       children: [(0, r.jsxs)("div", {
@@ -93,7 +93,7 @@ let A = function(e) {
             guild: e.guild,
             themeResponsive: !1,
             onButtonClick: M
-          }), (0, r.jsx)(o.X6q, {
+          }), (0, r.jsx)(a.X6q, {
             className: T.heading,
             color: "always-white",
             variant: "display-lg",
@@ -107,10 +107,10 @@ let A = function(e) {
           }), (0, r.jsx)(b.Z, {
             guild: n
           })]
-        }), (0, r.jsx)(O.O, {})]
+        }), (0, r.jsx)(v.O, {})]
       }), (0, r.jsxs)("div", {
         className: T.middleBodyContentWrapper,
-        children: [(0, r.jsx)(v.ZP, {
+        children: [(0, r.jsx)(O.ZP, {
           guild: e.guild
         }), k && (0, r.jsx)(f.Z, {
           ref: x,
@@ -125,10 +125,10 @@ let A = function(e) {
             className: T.tierComparisonTable,
             guild: n
           }), (0, r.jsx)(p.Z, {}), (0, r.jsx)(m.Z, {})]
-        }), (0, r.jsx)(O.A, {}), (0, r.jsx)("div", {
+        }), (0, r.jsx)(v.A, {}), (0, r.jsx)("div", {
           className: T.lowerBodyBackgroundImage
         })]
-      }), (0, r.jsx)(a.$, {
+      }), (0, r.jsx)(o.$, {
         innerRef: D,
         onChange: U,
         children: (0, r.jsx)("div", {

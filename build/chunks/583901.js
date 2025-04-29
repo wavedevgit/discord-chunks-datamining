@@ -2,15 +2,15 @@
 "use strict";
 n.d(t, {
   DR: () => S,
-  S4: () => O,
+  S4: () => v,
   bD: () => I,
-  oK: () => v
+  oK: () => O
 }), n(314940);
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  a = n.n(i),
-  o = n(278074),
+  o = n.n(i),
+  a = n(278074),
   s = n(442837),
   l = n(692547),
   c = n(780384),
@@ -61,7 +61,7 @@ function y(e, t) {
   }), e
 }
 
-function v() {
+function O() {
   return (0, r.jsx)("div", {
     className: m.selectionCircle,
     children: (0, r.jsx)(u.owK, {
@@ -74,12 +74,12 @@ function v() {
   })
 }
 
-function O(e) {
+function v(e) {
   let {
     name: t,
     className: n,
     style: i,
-    onSelect: o,
+    onSelect: a,
     isSelected: s = !1,
     tabIndex: l,
     children: c,
@@ -95,13 +95,13 @@ function O(e) {
       className: m.themeSelectionContainer,
       children: [(0, r.jsx)(u.P3F, y(E({}, e, _), {
         tabIndex: null != l ? l : _.tabIndex,
-        className: a()(m.themeSelection, {
+        className: o()(m.themeSelection, {
           [m.selected]: s
         }, n),
         style: i,
-        onClick: s ? p.dG4 : o,
+        onClick: s ? p.dG4 : a,
         children: c
-      })), s && (0, r.jsx)(v, {}), !s && d && (0, r.jsx)("div", {
+      })), s && (0, r.jsx)(O, {}), !s && d && (0, r.jsx)("div", {
         className: m.redCircle
       }), f && (0, r.jsx)("div", {
         className: m.lockedBadgeContainer,
@@ -119,7 +119,7 @@ function I(e) {
     theme: t,
     isSelected: n,
     onSelect: i
-  } = e, l = (0, s.e7)([f.Z], () => f.Z.systemTheme), c = f.Z.themePreferenceForSystemTheme(l), _ = (0, d.Q3)("DefaultThemeSelection"), g = (0, o.EQ)({
+  } = e, l = (0, s.e7)([f.Z], () => f.Z.systemTheme), c = f.Z.themePreferenceForSystemTheme(l), _ = (0, d.Q3)("DefaultThemeSelection"), g = (0, a.EQ)({
     theme: t,
     themePreferenceForSystemTheme: c
   }).with({
@@ -142,12 +142,12 @@ function I(e) {
     theme: p.BRd.DARKER
   }, () => m.darkerIcon).with({
     theme: p.BRd.MIDNIGHT
-  }, () => m.midnightIcon).otherwise(() => m.darkIcon), E = (0, o.EQ)(t).with(p.BRd.LIGHT, () => h.intl.string(h.t.K2sFfn)).with(p.BRd.DARK, () => _ ? h.intl.string(h.t.SMPT1t) : h.intl.string(h.t.b8Cei4)).with(p.BRd.DARKER, () => h.intl.string(h.t.b8Cei4)).with(p.BRd.MIDNIGHT, () => h.intl.string(h.t.Do4ZJy)).with("system", () => h.intl.string(h.t["7rOU6u"])).exhaustive();
-  return (0, r.jsx)(O, {
+  }, () => m.midnightIcon).otherwise(() => m.darkIcon), E = (0, a.EQ)(t).with(p.BRd.LIGHT, () => h.intl.string(h.t.K2sFfn)).with(p.BRd.DARK, () => _ ? h.intl.string(h.t.SMPT1t) : h.intl.string(h.t.b8Cei4)).with(p.BRd.DARKER, () => h.intl.string(h.t.b8Cei4)).with(p.BRd.MIDNIGHT, () => h.intl.string(h.t.Do4ZJy)).with("system", () => h.intl.string(h.t["7rOU6u"])).exhaustive();
+  return (0, r.jsx)(v, {
     onSelect: i,
     isSelected: n,
     name: E,
-    className: a()(m.defaultThemeSelection, g),
+    className: o()(m.defaultThemeSelection, g),
     children: "system" === t && (0, r.jsx)("div", {
       className: m.iconWrapper,
       children: (0, r.jsx)(u.f6W, {
@@ -165,7 +165,7 @@ function S(e) {
     preset: t,
     isSelected: n,
     disabled: i,
-    tabIndex: o,
+    tabIndex: a,
     onSelect: s,
     showBadge: l,
     showLockedBadge: u
@@ -177,15 +177,15 @@ function S(e) {
     colors: d,
     angle: f
   });
-  return (0, r.jsx)(O, {
+  return (0, r.jsx)(v, {
     onSelect: i ? void 0 : s,
     isSelected: n,
     name: t.getName(),
-    className: a()([i ? m.disabled : null, (0, c.wj)(p) ? m.darkOverlay : m.lightOverlay]),
+    className: o()([i ? m.disabled : null, (0, c.wj)(p) ? m.darkOverlay : m.lightOverlay]),
     style: {
       background: "var(--bg-overlay), ".concat(h)
     },
-    tabIndex: o,
+    tabIndex: a,
     showBadge: l,
     showLockedBadge: u
   })

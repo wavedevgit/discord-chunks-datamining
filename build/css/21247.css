@@ -1,6 +1,6 @@
 /**
   Module ID: 21247
-  Original File Name: b40f3c18c8e95976
+  Original File Name: 648e6bdd21067706
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -3535,7 +3535,7 @@
 }
 
 .target_d144f8.dragOver_d144f8:before {
-    background-color: var(--green-360);
+    background-color: var(--status-positive);
     border-radius: 2px;
     box-shadow: 0 0 3px var(--opacity-black-28);
     content: "";
@@ -3552,7 +3552,7 @@
 }
 
 .centerTarget_d144f8.dragOver_d144f8:before {
-    background-color: var(--green-360);
+    background-color: var(--status-positive);
     border-radius: 50%;
     box-shadow: 0 0 3px var(--opacity-black-28);
     content: "";
@@ -3560,18 +3560,9 @@
     left: 4px;
     margin: auto;
     position: absolute;
-    top: 32px;
+    top: 28px;
     width: 16px;
     z-index: 1
-}
-
-.visual-refresh .target_d144f8.dragOver_d144f8:before {
-    background-color: var(--status-positive)
-}
-
-.visual-refresh .centerTarget_d144f8.dragOver_d144f8:before {
-    background-color: var(--status-positive);
-    top: 28px
 }
 
 .centerTargetTooltip_d144f8 {
@@ -3665,13 +3656,218 @@
     position: relative
 }
 
-.dragInner__87847 {
-    background-color: var(--background-primary);
-    height: 48px;
-    width: 48px
+.folderGroup__48112 {
+    --custom-folder-padding: calc((var(--guildbar-folder-size) - var(--guildbar-avatar-size))/2);
+    --custom-folder-preview-padding: var(--space-4);
+    --custom-folder-preview-gap: 2px;
+    --custom-folder-preview-guild-size: calc((var(--guildbar-folder-size) - var(--custom-folder-preview-padding)*2 - var(--custom-folder-preview-gap))/2);
+    position: relative;
+    width: var(--custom-guild-list-width)
 }
 
-.visual-refresh .dragInner__87847 {
+.folderGroupBackground__48112 {
+    background-color: var(--background-mod-subtle);
+    border: 1px solid var(--border-faint);
+    border-radius: var(--radius-lg);
+    bottom: 0;
+    box-sizing: border-box;
+    left: calc(var(--custom-guild-list-padding) - (var(--guildbar-folder-size) - var(--guildbar-avatar-size))/2);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity var(--custom-folder-item-animation-duration) ease-out,background-color var(--custom-folder-item-animation-duration) ease-out;
+    width: var(--guildbar-folder-size)
+}
+
+.isExpanded__48112 .folderGroupBackground__48112 {
+    opacity: 1
+}
+
+.folderHeader__48112 {
+    box-sizing: border-box;
+    height: var(--guildbar-folder-size);
+    width: var(--guildbar-folder-size)
+}
+
+.folderGroup__48112[data-drop-hovering=true].isExpanded__48112 .folderGroupBackground__48112 {
+    background-color: var(--opacity-green-28);
+    border-color: var(--status-positive)
+}
+
+.folderGroup__48112[data-drop-hovering=true]:not(.isExpanded__48112) .folderHeader__48112 {
+    background-color: var(--opacity-green-28);
+    border-radius: 12px;
+    outline: 1px solid var(--status-positive)
+}
+
+.folderButton__48112 {
+    border-radius: var(--radius-md);
+    box-sizing: border-box;
+    cursor: pointer;
+    height: var(--guildbar-folder-size);
+    position: relative;
+    width: var(--guildbar-folder-size)
+}
+
+.folderButtonContent__48112 {
+    position: relative;
+    transform: translate3d(0,calc(var(--guildbar-folder-size)*-1),0)
+}
+
+.full-motion .folderButtonContent__48112 {
+    transition: transform var(--custom-folder-item-animation-duration) ease-out
+}
+
+.isExpanded__48112 .folderButtonContent__48112 {
+    transform: translateZ(0)
+}
+
+.folderDragPreview__48112 .folderIconWrapper__48112 {
+    display: none
+}
+
+.folderIconWrapper__48112 {
+    box-sizing: border-box;
+    padding: var(--custom-folder-padding)
+}
+
+.folderIcon__48112 {
+    align-items: center;
+    border-radius: var(--radius-md);
+    box-sizing: border-box;
+    color: var(--custom-folder-color,var(--bg-brand));
+    display: flex;
+    height: var(--guildbar-avatar-size);
+    justify-content: center;
+    transition: background-color var(--custom-folder-item-animation-duration) ease-out;
+    width: var(--guildbar-avatar-size)
+}
+
+.folderIcon__48112:hover,.keyboard-mode .folderButton__48112:focus .folderIcon__48112 {
+    background-color: var(--background-mod-subtle)
+}
+
+.folderPreviewWrapper__48112 {
+    --custom-preview-background: color-mix(in srgb,var(--custom-folder-color),transparent 60%);
+    background-color: var(--custom-preview-background,var(--bg-mod-subtle));
+    border-radius: var(--radius-lg);
+    box-sizing: border-box;
+    height: var(--guildbar-folder-size);
+    padding: var(--custom-folder-preview-padding);
+    width: var(--guildbar-folder-size)
+}
+
+.folderPreview__48112 {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    height: calc(var(--guildbar-folder-size) - var(--custom-folder-preview-padding)*2);
+    width: calc(var(--guildbar-folder-size) - var(--custom-folder-preview-padding)*2)
+}
+
+.folderPreviewGuildIcon__48112 {
+    box-sizing: border-box;
+    height: var(--custom-folder-preview-guild-size);
+    width: var(--custom-folder-preview-guild-size)
+}
+
+.folderPreviewGuildIcon__48112:first-child {
+    border-radius: 13px 4px 4px
+}
+
+.folderPreviewGuildIcon__48112:nth-child(2) {
+    border-radius: 4px 13px 4px 4px
+}
+
+.folderPreviewGuildIcon__48112:nth-child(3) {
+    border-radius: 4px 4px 4px 13px
+}
+
+.folderPreviewGuildIcon__48112:nth-child(4) {
+    border-radius: 4px 4px 13px
+}
+
+.folderPreviewGuildIconError__48112 {
+    align-items: center;
+    background: var(--status-danger-background);
+    color: var(--status-danger-text);
+    display: flex;
+    justify-content: center;
+    padding: 3px
+}
+
+.folderGuildsList__48112 {
+    overflow: hidden
+}
+
+.folderGuildsList__48112>:first-child {
+    margin-top: calc(var(--space-xs) - var(--custom-folder-padding))
+}
+
+.folderHeaderSmall__48112 {
+    --custom-folder-preview-padding: 3px;
+    --custom-folder-preview-guild-size: calc((var(--guildbar-avatar-size) - var(--custom-folder-preview-padding)*2 - var(--custom-folder-preview-gap))/2);
+    margin: calc((var(--guildbar-avatar-size) - var(--guildbar-folder-size))/2) 0
+}
+
+.isExpanded__48112 .folderHeaderSmall__48112 {
+    margin: 0
+}
+
+.refresh-fast-follow-avatars .isExpanded__48112 .folderGroupBackground__48112 {
+    --custom-folder-background: color-mix(in srgb,var(--custom-folder-color),transparent 85%);
+    background-color: var(--custom-folder-background,var(--bg-mod-subtle))
+}
+
+.refresh-fast-follow-avatars .folderButton__48112 {
+    padding: var(--custom-folder-padding)
+}
+
+.refresh-fast-follow-avatars .folderButtonContent__48112 {
+    transform: translate3d(0,calc(var(--guildbar-avatar-size)*-1),0)
+}
+
+.refresh-fast-follow-avatars .isExpanded__48112 .folderButtonContent__48112 {
+    transform: translateZ(0)
+}
+
+.refresh-fast-follow-avatars .folderIconWrapper__48112 {
+    padding: 0
+}
+
+.refresh-fast-follow-avatars .folderPreviewWrapper__48112 {
+    border-radius: var(--radius-md);
+    height: var(--guildbar-avatar-size);
+    width: var(--guildbar-avatar-size)
+}
+
+.refresh-fast-follow-avatars .folderPreview__48112 {
+    height: calc(var(--guildbar-avatar-size) - var(--custom-folder-preview-padding)*2);
+    width: calc(var(--guildbar-avatar-size) - var(--custom-folder-preview-padding)*2)
+}
+
+.refresh-fast-follow-avatars .folderPreviewGuildIcon__48112:first-child {
+    border-radius: 10px 4px 4px
+}
+
+.refresh-fast-follow-avatars .folderPreviewGuildIcon__48112:nth-child(2) {
+    border-radius: 4px 10px 4px 4px
+}
+
+.refresh-fast-follow-avatars .folderPreviewGuildIcon__48112:nth-child(3) {
+    border-radius: 4px 4px 4px 10px
+}
+
+.refresh-fast-follow-avatars .folderPreviewGuildIcon__48112:nth-child(4) {
+    border-radius: 4px 4px 10px
+}
+
+.isHovering__48112 {
+    display: block
+}
+
+.dragInner__87847 {
     background-color: var(--background-mod-normal);
     border: 1px dashed var(--border-subtle);
     border-radius: 12px;
@@ -3681,221 +3877,20 @@
 }
 
 .placeholderMask__87847 {
-    display: block
-}
-
-.wrapper__48112 {
-    position: relative;
-    width: var(--custom-guild-list-width)
-}
-
-.wrapper__48112:active {
-    transform: translateZ(0)
-}
-
-.expandedFolderBackground__48112 {
-    background-color: var(--background-secondary);
-    border-radius: 24px;
-    bottom: var(--custom-folder-item-guild-icon-margin);
-    left: 12px;
-    position: absolute;
-    top: 0;
-    transition: background-color var(--custom-folder-item-animation-duration) ease-out;
-    width: var(--guildbar-folder-size)
-}
-
-.expandedFolderBackground__48112.collapsed__48112,.expandedFolderBackground__48112.collapsed__48112.hover__48112 {
-    background-color: transparent
-}
-
-.visual-refresh .expandedFolderBackground__48112 {
-    background-color: var(--background-mod-subtle);
-    border: 1px solid var(--border-faint);
-    border-radius: 16px;
-    bottom: 0;
-    box-sizing: border-box;
-    left: calc(var(--custom-guild-list-padding) - (var(--guildbar-folder-size) - var(--guildbar-avatar-size))/2)
-}
-
-.visual-refresh .wrapper__48112[data-drop-hovering=true] .expandedFolderBackground__48112 {
-    background-color: var(--opacity-green-28);
-    border-color: var(--status-positive)
-}
-
-.visual-refresh .wrapper__48112[data-drop-hovering=true]:not(.isExpanded__48112) .folderIcon__48112 {
-    background-color: var(--opacity-green-28);
-    border-radius: 12px;
-    outline: 1px solid var(--status-positive)
-}
-
-.visual-refresh .folderIcon__48112 {
-    box-sizing: border-box
-}
-
-.visual-refresh .isExpanded__48112 .folderIcon__48112 {
-    margin-bottom: var(--space-4)
-}
-
-.visual-refresh .closedFolderIconWrapper__48112 {
-    gap: 2px;
-    height: calc(var(--guildbar-folder-size) - 8px);
-    padding: unset;
-    width: calc(var(--guildbar-folder-size) - 8px)
-}
-
-.visual-refresh .folderIconWrapper__48112 {
     align-items: center;
     display: flex;
-    flex-direction: column;
     justify-content: center
 }
 
-.visual-refresh .enable-forced-colors .closedFolderIconWrapper__48112,.visual-refresh .enable-forced-colors .expandedFolderIconWrapper__48112 {
-    border-radius: 16px
+.isFolder__87847 {
+    height: var(--guildbar-folder-size);
+    width: var(--guildbar-folder-size)
 }
 
-.visual-refresh .expandedFolderIconWrapper__48112 {
-    border-radius: 12px;
+.refresh-fast-follow-avatars .isFolder__87847 {
     height: var(--guildbar-avatar-size);
-    margin: var(--space-4);
+    margin: calc((var(--guildbar-folder-size) - var(--guildbar-avatar-size))/2);
     width: var(--guildbar-avatar-size)
-}
-
-.visual-refresh .folder__48112 {
-    background-color: transparent
-}
-
-.visual-refresh .folder__48112.hover__48112 {
-    background-color: transparent
-}
-
-.visual-refresh .folder__48112.hover__48112 .expandedFolderIconWrapper__48112 {
-    background-color: var(--background-mod-subtle)
-}
-
-.visual-refresh .guildIcon__48112 {
-    --custom-guild-icon-size: calc(var(--guildbar-folder-size)/2 - var(--space-8)/2 - 1px);
-    height: var(--custom-guild-icon-size);
-    width: var(--custom-guild-icon-size)
-}
-
-.folderIconWrapper__48112 {
-    border-radius: 16px;
-    overflow: hidden
-}
-
-.folder__48112,.folderIconWrapper__48112 {
-    height: var(--guildbar-folder-size);
-    transition: background-color var(--custom-folder-item-animation-duration) ease-out;
-    width: var(--guildbar-folder-size)
-}
-
-.folder__48112 {
-    background-color: var(--background-secondary);
-    cursor: pointer
-}
-
-.folder__48112.hover__48112 {
-    background-color: var(--background-primary)
-}
-
-.closedFolderIconWrapper__48112 {
-    align-items: center;
-    box-sizing: border-box;
-    display: grid;
-    grid-template: 1fr 1fr/1fr 1fr;
-    height: var(--guildbar-folder-size);
-    justify-items: center;
-    padding: 4px;
-    width: var(--guildbar-folder-size)
-}
-
-.folderIconPreview__48112 {
-    border-radius: 50%
-}
-
-.folderIconPreview__48112 .guildIcon__48112 {
-    background-color: transparent
-}
-
-.miniPlaceholder__48112 {
-    height: 15px;
-    width: 15px
-}
-
-.expandedFolderIconWrapper__48112 {
-    align-items: center;
-    display: flex;
-    height: var(--guildbar-folder-size);
-    justify-content: center;
-    width: var(--guildbar-folder-size)
-}
-
-.guildIcon__48112 {
-    overflow: hidden;
-    position: static
-}
-
-.guildIconUnavailable__48112 {
-    align-items: center;
-    background: var(--background-primary);
-    border-color: var(--status-danger);
-    border-radius: 50%;
-    border-style: solid;
-    border-width: 1px;
-    box-sizing: border-box;
-    color: var(--header-primary);
-    display: flex;
-    font-size: 8px;
-    font-weight: 700;
-    height: 16px;
-    justify-content: center;
-    width: 16px
-}
-
-.theme-dark.custom-theme-background .expandedFolderBackground__48112 {
-    background: rgb(var(--bg-overlay-color-inverse)/var(--bg-overlay-opacity-6))
-}
-
-.theme-dark.custom-theme-background .folder__48112 {
-    background: var(--bg-overlay-6,var(--background-secondary))
-}
-
-.theme-dark.custom-theme-background.visual-refresh .folder__48112 {
-    background: transparent
-}
-
-.theme-light.custom-theme-background .expandedFolderBackground__48112 {
-    background: rgb(var(--bg-overlay-color)/var(--bg-overlay-opacity-5))
-}
-
-.theme-light.custom-theme-background .folder__48112 {
-    background: var(--bg-overlay-3,var(--background-secondary))
-}
-
-.theme-light.custom-theme-background.visual-refresh .folder__48112 {
-    background: transparent
-}
-
-.enable-forced-colors .closedFolderIconWrapper__48112,.enable-forced-colors .expandedFolderIconWrapper__48112 {
-    background-color: ButtonFace;
-    border-radius: 16px;
-    outline: 1px solid CanvasText;
-    outline-offset: -2px
-}
-
-.enable-forced-colors .closedFolderIconWrapper__48112:hover,.enable-forced-colors .expandedFolderIconWrapper__48112:hover {
-    outline-color: ButtonText
-}
-
-.enable-forced-colors .expandedFolderIconWrapper__48112,.enable-forced-colors .expandedFolderIconWrapper__48112:hover {
-    background-color: HighlightText;
-    outline-color: Highlight
-}
-
-.enable-forced-colors.visual-refresh .closedFolderIconWrapper__48112,.enable-forced-colors.visual-refresh .expandedFolderIconWrapper__48112 {
-    border-radius: 12px;
-    outline-offset: 2px
 }
 
 .blobContainer_e5445c:active {
@@ -3980,30 +3975,20 @@
 .guildsError_e8d03f {
     align-items: center;
     background-color: var(--background-primary);
-    border-color: var(--status-danger);
-    border-radius: 50%;
-    border-style: solid;
-    border-width: 2px;
+    border: 2px solid var(--status-danger-background);
+    border-radius: var(--radius-md);
     box-sizing: border-box;
-    color: var(--text-normal);
+    color: var(--interactive-active);
     display: flex;
-    font-size: 20px;
-    height: 48px;
+    height: var(--guildbar-avatar-size);
     justify-content: center;
-    padding: 0;
     transition: background-color .15s ease-out;
-    width: 48px
-}
-
-.errorInner_e8d03f {
-    font-weight: 700
+    width: var(--guildbar-avatar-size)
 }
 
 .guildsError_e8d03f:hover {
-    background-color: var(--status-danger);
-    border-color: var(--status-danger);
-    color: var(--white-500);
-    text-decoration: none
+    background-color: var(--status-danger-background);
+    color: var(--status-danger-text)
 }
 
 .pauseBackground_d70e0d {
@@ -4027,8 +4012,16 @@
 
 @value popoutWidth 256px;
 
-.pendingIcon__93fc9 {
-    color: var(--text-normal)
+.pendingFolderButtonIcon__93fc9 {
+    align-items: center;
+    background-color: var(--background-surface-higher);
+    border-radius: var(--radius-md);
+    box-sizing: border-box;
+    color: var(--text-normal);
+    display: flex;
+    height: var(--guildbar-avatar-size);
+    justify-content: center;
+    width: var(--guildbar-avatar-size)
 }
 
 .container__93fc9 {
@@ -4080,15 +4073,6 @@
     flex-direction: column;
     gap: 8px;
     margin-bottom: 16px
-}
-
-.visual-refresh .folderIconContent__93fc9 {
-    background-color: var(--background-primary)
-}
-
-.visual-refresh .folderWrapperCollapsed__93fc9 {
-    height: 44px;
-    margin-top: -4px
 }
 
 .wrapper_ef3116 {
@@ -6308,4 +6292,4 @@
     background-image: url(/assets/05207174d5432737.svg)
 }
 
-/*# sourceMappingURL=b40f3c18c8e95976.css.map*/
+/*# sourceMappingURL=648e6bdd21067706.css.map*/

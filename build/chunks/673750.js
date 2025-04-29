@@ -8,8 +8,8 @@ n.d(t, {
 }), n(539854), n(388685), n(49124);
 var r = n(512722),
   i = n.n(r),
-  a = n(544891),
-  o = n(911969),
+  o = n(544891),
+  a = n(911969),
   s = n(367907),
   l = n(710845),
   c = n(432877),
@@ -25,7 +25,7 @@ var r = n(512722),
   b = n(981631),
   y = n(959517);
 
-function v(e, t, n) {
+function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -34,14 +34,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function O(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      O(e, t, n[t])
     })
   }
   return e
@@ -68,8 +68,8 @@ function T(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -77,8 +77,8 @@ function T(e, t) {
 function A(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 var N = function(e) {
@@ -149,11 +149,11 @@ class D extends m.Z {
         channelId: r
       } = e,
       i = T(e, ["channelId"]),
-      o = (0, u.d)(),
-      s = O({
+      a = (0, u.d)(),
+      s = v({
         mobile_network_type: _.Z.getType()
-      }, i, null != o && {
-        signal_strength: o
+      }, i, null != a && {
+        signal_strength: a
       });
     if (c.ZP.get("send_fail_100")) {
       this.logger.log("Skipping message send because send_fail_100 is enabled"), t(null, {
@@ -172,7 +172,7 @@ class D extends m.Z {
     }, this.logger.log("Overlay location: ", n));
     let f = this.createResponseHandler(e.nonce, t),
       p = new AbortController;
-    this.startQueueMetricTimers(e.nonce), a.tn.post(S(O({
+    this.startQueueMetricTimers(e.nonce), o.tn.post(S(v({
       url: b.ANM.MESSAGES(r),
       body: s,
       context: n,
@@ -190,16 +190,16 @@ class D extends m.Z {
       channelId: n,
       messageId: r
     } = e, i = T(e, ["channelId", "messageId"]);
-    let o = new AbortController;
-    a.tn.patch({
+    let a = new AbortController;
+    o.tn.patch({
       url: b.ANM.MESSAGE(n, r),
       body: i,
       retries: 1,
       oldFormErrors: !0,
-      signal: o.signal,
+      signal: a.signal,
       rejectWithError: !0,
       onRequestCreated: () => {
-        this.requests.set(r, o)
+        this.requests.set(r, a)
       }
     }, this.createResponseHandler(r, t))
   }
@@ -216,8 +216,8 @@ class D extends m.Z {
         sectionName: m,
         source: y
       } = e,
-      v = {
-        type: o.B8.APPLICATION_COMMAND,
+      O = {
+        type: a.B8.APPLICATION_COMMAND,
         application_id: r,
         guild_id: s,
         channel_id: l,
@@ -229,22 +229,22 @@ class D extends m.Z {
         source: y
       };
     if (null != d) {
-      v.data.attachments = [], n = [];
+      O.data.attachments = [], n = [];
       let e = d;
-      v.data.attachments = e.map((e, t) => (i()(e.status === E.m.COMPLETED, "Uploads must be staged before trying to send a message"), (0, g.B)(e, t)))
+      O.data.attachments = e.map((e, t) => (i()(e.status === E.m.COMPLETED, "Uploads must be staged before trying to send a message"), (0, g.B)(e, t)))
     }
-    let O = new AbortController;
-    a.tn.post({
+    let v = new AbortController;
+    o.tn.post({
       url: b.ANM.INTERACTIONS,
       fields: [{
         name: "payload_json",
-        value: JSON.stringify(v)
+        value: JSON.stringify(O)
       }],
       attachments: n,
-      signal: O.signal,
+      signal: v.signal,
       rejectWithError: !0,
       onRequestCreated: e => {
-        this.requests.set(u, O), e.on("progress", e => {
+        this.requests.set(u, v), e.on("progress", e => {
           let {
             total: t
           } = e, n = (0, h.dg)(s);
@@ -254,7 +254,7 @@ class D extends m.Z {
     }, this.createResponseHandler(u, t))
   }
   constructor(e = 5) {
-    super(new l.Z("MessageQueue")), v(this, "maxSize", void 0), v(this, "requests", void 0), v(this, "analyticsTimeouts", void 0), this.maxSize = e, this.requests = new Map, this.analyticsTimeouts = new Map
+    super(new l.Z("MessageQueue")), O(this, "maxSize", void 0), O(this, "requests", void 0), O(this, "analyticsTimeouts", void 0), this.maxSize = e, this.requests = new Map, this.analyticsTimeouts = new Map
   }
 }
 let L = new D

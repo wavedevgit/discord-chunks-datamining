@@ -2,9 +2,9 @@
 "use strict";
 let r, i;
 n.d(t, {
-  Z: () => v
+  Z: () => O
 });
-var a, o = n(442837),
+var o, a = n(442837),
   s = n(433517),
   l = n(570140),
   c = n(592125),
@@ -44,7 +44,7 @@ function b(e) {
   } = e;
   p = !0, t && (h = !0, s.K.set(f, h))
 }
-class y extends(a = o.ZP.Store) {
+class y extends(o = a.ZP.Store) {
   initialize() {
     h = s.K.get(f) || h
   }
@@ -60,7 +60,7 @@ class y extends(a = o.ZP.Store) {
   }
 }
 d(y, "displayName", "PermissionSpeakStore");
-let v = new y(l.Z, {
+let O = new y(l.Z, {
   CONNECTION_OPEN: m,
   CONNECTION_CLOSED: g,
   VOICE_STATE_UPDATES: E,

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   s = n(174609),
   l = n(703656),
   c = n(210887),
@@ -21,9 +21,9 @@ var r = n(200651),
   E = n(474936),
   b = n(981631),
   y = n(388032),
-  v = n(290602);
+  O = n(290602);
 
-function O(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -39,7 +39,7 @@ function I(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      O(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
@@ -49,8 +49,8 @@ function S(e, t) {
   if (null == e) return {};
   var n, r, i = T(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -58,8 +58,8 @@ function S(e, t) {
 function T(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -67,21 +67,21 @@ function A(e) {
   var {
     onClose: t
   } = e, n = S(e, ["onClose"]);
-  let O = (0, a.e7)([d.default], () => d.default.getCurrentUser()),
-    T = (0, a.e7)([c.Z], () => c.Z.theme),
-    A = (0, a.e7)([u.Z], () => u.Z.getGuildId()),
+  let v = (0, o.e7)([d.default], () => d.default.getCurrentUser()),
+    T = (0, o.e7)([c.Z], () => c.Z.theme),
+    A = (0, o.e7)([u.Z], () => u.Z.getGuildId()),
     N = T === b.BRd.LIGHT ? "light" : "dark",
     C = (0, r.jsx)("img", {
-      className: v.art,
+      className: O.art,
       alt: "File Upload Nitro Perk",
       src: "https://cdn.discordapp.com/assets/premium/roadblocks/file_upload_".concat(N, "_v2.png")
     }),
     R = i.useMemo(() => {
-      let e = m.ZP.getUserMaxFileSize(O);
+      let e = m.ZP.getUserMaxFileSize(v);
       return (0, _.BU)(e / 1024, {
         useKibibytes: !0
       })
-    }, [O]),
+    }, [v]),
     P = (0, p.iL)({
       guildId: A,
       onClick: () => {
@@ -89,8 +89,8 @@ function A(e) {
       }
     }),
     w = (0, r.jsx)("div", {
-      className: v.body,
-      children: (0, r.jsx)(o.Text, {
+      className: O.body,
+      children: (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         children: P
       })
@@ -104,7 +104,7 @@ function A(e) {
   }
   return (0, r.jsx)(g.Z, I({
     artElement: C,
-    artContainerClassName: v.artContainer,
+    artContainerClassName: O.artContainer,
     enableArtBoxShadow: !1,
     type: E.cd.UPLOAD_ERROR_UPSELL,
     title: y.intl.string(y.t["9C+41t"]),

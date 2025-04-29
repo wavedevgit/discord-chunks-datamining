@@ -70,16 +70,16 @@ function _(e) {
   } = e, {
     bottomBar: p,
     topBar: _
-  } = (0, a.cj)([f.Z], () => f.Z.getUnreadStateForGuildId(n.id)), O = (0, a.e7)([h.Z], () => h.Z.isFocused()), {
-    mode: v,
+  } = (0, a.cj)([f.Z], () => f.Z.getUnreadStateForGuildId(n.id)), v = (0, a.e7)([h.Z], () => h.Z.isFocused()), {
+    mode: O,
     mentionCount: C,
     targetChannelId: j
-  } = "bottom" === t ? p : _, S = v === f.x.HIDDEN, E = (0, c.q_F)({
+  } = "bottom" === t ? p : _, S = O === f.x.HIDDEN, E = (0, c.q_F)({
     to: {
       transform: S ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
     },
     config: b
-  }, O ? "respect-motion-settings" : "animate-never"), x = i.useCallback(e => {
+  }, v ? "respect-motion-settings" : "animate-never"), x = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), null != j && d(j)
   }, [d, j]);
   return (0, r.jsx)("div", {
@@ -91,9 +91,9 @@ function _(e) {
       className: m.containerPadding,
       style: E,
       "aria-hidden": S,
-      children: v === f.x.HIDDEN ? (0, r.jsx)("div", {
+      children: O === f.x.HIDDEN ? (0, r.jsx)("div", {
         className: o()(m.bar, m.emptyBar)
-      }) : v === f.x.UNREAD ? (0, r.jsxs)(c.P3F, {
+      }) : O === f.x.UNREAD ? (0, r.jsxs)(c.P3F, {
         className: m.bar,
         onClick: x,
         children: ["bottom" === t ? (0, r.jsx)(c.CJ0, {
@@ -114,7 +114,7 @@ function _(e) {
           className: m.barText,
           children: g.intl.string(g.t.FCRiT0)
         })]
-      }) : v === f.x.MENTIONS ? (0, r.jsx)(c.P3F, {
+      }) : O === f.x.MENTIONS ? (0, r.jsx)(c.P3F, {
         className: o()(m.bar, m.mentionsBar),
         onClick: x,
         children: (0, r.jsx)(c.Text, {
@@ -125,7 +125,7 @@ function _(e) {
             count: C
           })
         })
-      }) : v === f.x.VOICE_CHANNELS ? (0, r.jsx)(y, {
+      }) : O === f.x.VOICE_CHANNELS ? (0, r.jsx)(y, {
         jumpToVoiceChannels: u,
         guildChannels: n,
         guildChannelsVersion: l

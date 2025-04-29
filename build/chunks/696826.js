@@ -5,17 +5,17 @@ n.d(t, {
   QF: () => I,
   Sk: () => d.Skl,
   W5: () => P,
-  lm: () => O,
+  lm: () => v,
   qb: () => w,
   rs: () => R,
   vP: () => C,
-  vj: () => v
+  vj: () => O
 }), n(388685);
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  a = n.n(i),
-  o = n(272573),
+  o = n.n(i),
+  a = n(272573),
   s = n(780384);
 n(481060);
 var l = n(44315),
@@ -101,15 +101,15 @@ function y(e) {
   }
 }
 
-function v(e, t) {
+function O(e, t) {
   let n = (0, u.Q3)("useStatusFillColor"),
     r = (0, l.Sl)(n ? y(e) : b(e)).hex,
     i = null != t ? t : r,
-    a = (0, l.K3)(i);
-  return null != a ? a : void 0
+    o = (0, l.K3)(i);
+  return null != o ? o : void 0
 }
 
-function O(e, t) {
+function v(e, t) {
   return t === f.VZ.WHITE && e === d.Skl.IDLE ? f.d_.HIGH : f.d_.LOW
 }
 
@@ -131,9 +131,9 @@ function A(e) {
     status: n,
     isMobile: r,
     isTyping: i,
-    topOffset: a = 0,
-    leftOffset: o = 0
-  } = e, s = a / E * t, l = o / E * t;
+    topOffset: o = 0,
+    leftOffset: a = 0
+  } = e, s = o / E * t, l = a / E * t;
   if (i) return {
     bgRadius: .5 * t,
     bgY: .25 * t + s,
@@ -202,7 +202,7 @@ function N(e) {
 function C(e, t, n) {
   let {
     bgRadius: i,
-    bgY: a,
+    bgY: o,
     bgX: s,
     bgHeight: l,
     bgWidth: c,
@@ -219,15 +219,15 @@ function C(e, t, n) {
   } = e;
   return (0, r.jsxs)("mask", {
     id: n,
-    children: [(0, r.jsx)(o.animated.rect, {
+    children: [(0, r.jsx)(a.animated.rect, {
       x: s,
-      y: a,
+      y: o,
       width: c,
       height: l,
       rx: i,
       ry: i,
       fill: "white"
-    }), (0, r.jsx)(o.animated.rect, {
+    }), (0, r.jsx)(a.animated.rect, {
       x: u,
       y: d,
       width: f,
@@ -235,14 +235,14 @@ function C(e, t, n) {
       rx: p,
       ry: p,
       fill: "black"
-    }), (0, r.jsx)(o.animated.polygon, {
+    }), (0, r.jsx)(a.animated.polygon, {
       points: N(t),
       fill: "black",
       transform: h,
       style: {
         transformOrigin: m
       }
-    }), (0, r.jsx)(o.animated.circle, {
+    }), (0, r.jsx)(a.animated.circle, {
       fill: "black",
       cx: E,
       cy: g,
@@ -288,13 +288,13 @@ function w(e) {
     status: t,
     isMobile: n = !1,
     size: i = E,
-    className: o,
+    className: a,
     style: s,
     color: l
-  } = e, u = t === d.Skl.ONLINE && n, f = v(t, l);
+  } = e, u = t === d.Skl.ONLINE && n, f = O(t, l);
   return (0, r.jsx)(c.ZP, g(h({
     mask: R(t, u),
-    className: a()(_.mask, o),
+    className: o()(_.mask, a),
     style: s
   }, P(i, t, u)), {
     children: (0, r.jsx)("div", {

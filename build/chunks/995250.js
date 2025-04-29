@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => O
 });
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(785717),
   l = n(510659),
   c = n(899007),
@@ -59,8 +59,8 @@ function b(e, t) {
   if (null == e) return {};
   var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -68,27 +68,27 @@ function b(e, t) {
 function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
-function v(e) {
+function O(e) {
   var {
     user: t,
     themeType: n,
-    animateOnHover: a,
+    animateOnHover: o,
     onOpenProfile: h
   } = e, g = b(e, ["user", "themeType", "animateOnHover", "onOpenProfile"]);
   let y = i.useRef(null),
-    v = _.n_.AVATAR,
+    O = _.n_.AVATAR,
     {
-      trackUserProfileAction: O
+      trackUserProfileAction: v
     } = (0, s.KZ)(),
     {
       interactionSource: I
     } = (0, l.Xo)(),
-    S = o()(p.avatar, {
+    S = a()(p.avatar, {
       [p.hoisted]: I === _.n_.AVATAR || I === _.n_.STATUS
     });
   return (0, r.jsx)(f.Z, {
@@ -99,18 +99,18 @@ function v(e) {
       user: t,
       className: S,
       themeType: n,
-      sourceType: v,
-      onAction: O
+      sourceType: O,
+      onAction: v
     }, g), {
       children: () => (0, r.jsx)(d.Z, {
         ref: y,
         className: S,
         user: t,
-        sourceType: v,
-        onAction: O,
+        sourceType: O,
+        onAction: v,
         children: (0, r.jsx)(c.Z, m({
           user: t,
-          animateOnHover: a,
+          animateOnHover: o,
           onOpenProfile: h,
           themeType: n,
           className: p.withReactReply

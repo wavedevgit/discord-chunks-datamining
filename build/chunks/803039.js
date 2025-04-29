@@ -4,8 +4,8 @@ e.exports = function(e) {
     n = /(?![A-Za-z0-9])(?![$])/,
     r = t.concat(/[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*/, n),
     i = t.concat(/(\\?[A-Z][a-z0-9_\x7f-\xff]+|\\?[A-Z]+(?=[A-Z][a-z0-9_\x7f-\xff])){1,}/, n),
-    a = t.concat(/[A-Z]+/, n),
-    o = {
+    o = t.concat(/[A-Z]+/, n),
+    a = {
       scope: "variable",
       match: "\\$+" + r
     },
@@ -86,7 +86,7 @@ e.exports = function(e) {
       built_in: E
     },
     y = e => e.map(e => e.replace(/\|\d+$/, "")),
-    v = {
+    O = {
       variants: [{
         match: [/new/, t.concat(_, "+"), t.concat("(?!", y(E).join("\\b|"), "\\b)"), i],
         scope: {
@@ -95,10 +95,10 @@ e.exports = function(e) {
         }
       }]
     },
-    O = t.concat(r, "\\b(?!\\()"),
+    v = t.concat(r, "\\b(?!\\()"),
     I = {
       variants: [{
-        match: [t.concat(/::/, t.lookahead(/(?!class\b)/)), O],
+        match: [t.concat(/::/, t.lookahead(/(?!class\b)/)), v],
         scope: {
           2: "variable.constant"
         }
@@ -108,7 +108,7 @@ e.exports = function(e) {
           2: "variable.language"
         }
       }, {
-        match: [i, t.concat(/::/, t.lookahead(/(?!class\b)/)), O],
+        match: [i, t.concat(/::/, t.lookahead(/(?!class\b)/)), v],
         scope: {
           1: "title.class",
           3: "variable.constant"
@@ -135,7 +135,7 @@ e.exports = function(e) {
       begin: /\(/,
       end: /\)/,
       keywords: b,
-      contains: [S, o, I, e.C_BLOCK_COMMENT_MODE, p, h, v]
+      contains: [S, a, I, e.C_BLOCK_COMMENT_MODE, p, h, O]
     },
     A = {
       relevance: 0,
@@ -146,9 +146,9 @@ e.exports = function(e) {
       contains: [T]
     };
   T.contains.push(A);
-  let N = [S, I, e.C_BLOCK_COMMENT_MODE, p, h, v],
+  let N = [S, I, e.C_BLOCK_COMMENT_MODE, p, h, O],
     C = {
-      begin: t.concat(/#\[\s*\\?/, t.either(i, a)),
+      begin: t.concat(/#\[\s*\\?/, t.either(i, o)),
       beginScope: "meta",
       end: /]/,
       endScope: "meta",
@@ -169,7 +169,7 @@ e.exports = function(e) {
         variants: [{
           match: i
         }, {
-          match: a
+          match: o
         }]
       }]
     };
@@ -196,13 +196,13 @@ e.exports = function(e) {
     }, s, {
       scope: "variable.language",
       match: /\$this\b/
-    }, o, A, I, {
+    }, a, A, I, {
       match: [/const/, /\s/, r],
       scope: {
         1: "keyword",
         3: "variable.constant"
       }
-    }, v, {
+    }, O, {
       scope: "function",
       relevance: 0,
       beginKeywords: "fn function",
@@ -221,7 +221,7 @@ e.exports = function(e) {
         excludeBegin: !0,
         excludeEnd: !0,
         keywords: b,
-        contains: ["self", C, o, I, e.C_BLOCK_COMMENT_MODE, p, h]
+        contains: ["self", C, a, I, e.C_BLOCK_COMMENT_MODE, p, h]
       }]
     }, {
       scope: "class",

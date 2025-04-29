@@ -2,11 +2,11 @@
 "use strict";
 n.d(t, {
   Ew: () => y,
-  Iv: () => O,
+  Iv: () => v,
   Mf: () => m,
   PM: () => T,
   QW: () => E,
-  Uv: () => v,
+  Uv: () => O,
   Xp: () => I,
   a$: () => g,
   lg: () => b,
@@ -15,8 +15,8 @@ n.d(t, {
 }), n(415506), n(953529), n(388685), n(704826), n(35282);
 var r = n(772848),
   i = n(706454),
-  a = n(626135),
-  o = n(823379),
+  o = n(626135),
+  a = n(823379),
   s = n(900849);
 n(275131), n(356164);
 var l = n(128449),
@@ -159,7 +159,7 @@ function b(e) {
     case l.vf.HUBS:
       return l.gU;
     default:
-      (0, o.vE)(e)
+      (0, a.vE)(e)
   }
 }
 
@@ -167,7 +167,7 @@ function y(e) {
   return null == e || Date.now() - e > l.AF
 }
 
-function v(e) {
+function O(e) {
   return {
     id: e.id,
     name: e.name,
@@ -186,7 +186,7 @@ function v(e) {
   }
 }
 
-function O(e) {
+function v(e) {
   return {
     id: e.id,
     name: e.name,
@@ -215,17 +215,17 @@ async function S(e) {
     guildId: n,
     index: r,
     categoryId: i,
-    analyticsLocation: o,
+    analyticsLocation: a,
     options: l
   } = e, u = p(f({}, l), {
     loadId: t
   });
-  await s.Ub(n, o, u), a.default.track(c.rMx.GUILD_DISCOVERY_GUILD_SELECTED, {
+  await s.Ub(n, a, u), o.default.track(c.rMx.GUILD_DISCOVERY_GUILD_SELECTED, {
     guild_id: n,
     load_id: t,
     card_index: r,
     category_id: i,
-    location: o
+    location: a
   })
 }
 

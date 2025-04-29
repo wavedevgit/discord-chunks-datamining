@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(995899),
-  o = n(40851),
+  o = n(995899),
+  a = n(40851),
   s = n(745510),
   l = n(661637),
   c = n(146128),
@@ -109,16 +109,16 @@ let h = 1e3 / 60,
 function y(e) {
   let {
     children: t
-  } = e, [n, l] = i.useState(!1), d = (0, o.bp)(), [_, y] = i.useState(null), {
-    confettiCanvas: v
-  } = i.useContext(s.h), O = (0, a.uR)(v, _), I = i.useMemo(() => ({
+  } = e, [n, l] = i.useState(!1), d = (0, a.bp)(), [_, y] = i.useState(null), {
+    confettiCanvas: O
+  } = i.useContext(s.h), v = (0, o.uR)(O, _), I = i.useMemo(() => ({
     triggerAnimation: () => l(!0),
     untriggerAnimation: () => l(!1)
   }), []), S = i.useCallback(() => {
-    let e = null == v ? void 0 : v.getCanvas();
+    let e = null == O ? void 0 : O.getCanvas();
     if (null == e) return;
     let t = e.getBoundingClientRect();
-    O.createConfetti(p(f({}, g), {
+    v.createConfetti(p(f({}, g), {
       position: {
         type: "static-random",
         minValue: {
@@ -131,13 +131,13 @@ function y(e) {
         }
       }
     }))
-  }, [O, v]);
+  }, [v, O]);
   return (i.useEffect(() => {
     let e = n ? setInterval(S, h) : null;
     return () => clearInterval(e)
   }, [n, S]), d === u.IlC.OVERLAY) ? t : (0, r.jsxs)(c.Rm.Provider, {
     value: I,
-    children: [t, (0, r.jsx)(a.Ji, {
+    children: [t, (0, r.jsx)(o.Ji, {
       ref: y,
       colors: E,
       sprites: b,

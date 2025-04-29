@@ -2,8 +2,8 @@
 "use strict";
 var r = n(98405),
   i = n(127849),
-  a = n(580983),
-  o = n(507604),
+  o = n(580983),
+  a = n(507604),
   s = n(569743),
   l = n(840475),
   c = n(391246),
@@ -18,8 +18,8 @@ var r = n(98405),
   E = n(459316),
   b = n(77025),
   y = n(214027),
-  v = n(434431),
-  O = n(661970),
+  O = n(434431),
+  v = n(661970),
   I = n(713411),
   S = n(568033),
   T = n(769827),
@@ -62,15 +62,15 @@ var r = n(98405),
     return S(Z, e) || "ArrayBuffer" === (t = y(e)) || "SharedArrayBuffer" === t
   },
   ee = function(e, t) {
-    return q(e) && !O(t) && t in e && _(+t) && t >= 0
+    return q(e) && !v(t) && t in e && _(+t) && t >= 0
   },
   et = function(e, t) {
     return ee(e, t = E(t)) ? d(2, e[t]) : B(e, t)
   },
   en = function(e, t, n) {
-    return ee(e, t = E(t)) && v(n) && b(n, "value") && !b(n, "get") && !b(n, "set") && !n.configurable && (!b(n, "writable") || n.writable) && (!b(n, "enumerable") || n.enumerable) ? (e[t] = n.value, e) : G(e, t, n)
+    return ee(e, t = E(t)) && O(n) && b(n, "value") && !b(n, "get") && !b(n, "set") && !n.configurable && (!b(n, "writable") || n.writable) && (!b(n, "enumerable") || n.enumerable) ? (e[t] = n.value, e) : G(e, t, n)
   };
-o ? (Y || (D.f = et, w.f = en, J(z, "buffer"), J(z, "byteOffset"), J(z, "byteLength"), J(z, "length")), r({
+a ? (Y || (D.f = et, w.f = en, J(z, "buffer"), J(z, "byteOffset"), J(z, "byteLength"), J(z, "length")), r({
   target: "Object",
   stat: !0,
   forced: !Y
@@ -78,7 +78,7 @@ o ? (Y || (D.f = et, w.f = en, J(z, "buffer"), J(z, "byteOffset"), J(z, "byteLen
   getOwnPropertyDescriptor: et,
   defineProperty: en
 }), e.exports = function(e, t, n) {
-  var o = e.match(/\d+/)[0] / 8,
+  var a = e.match(/\d+/)[0] / 8,
     l = e + (n ? "Clamped" : "") + "Array",
     c = "get" + e,
     d = "set" + e,
@@ -86,18 +86,18 @@ o ? (Y || (D.f = et, w.f = en, J(z, "buffer"), J(z, "byteOffset"), J(z, "byteLen
     E = _,
     b = E && E.prototype,
     y = {},
-    O = function(e, t) {
+    v = function(e, t) {
       var n = k(e);
-      return n.view[c](t * o + n.byteOffset, !0)
+      return n.view[c](t * a + n.byteOffset, !0)
     },
     S = function(e, t, r) {
       var i = k(e);
-      i.view[d](t * o + i.byteOffset, n ? g(r) : r, !0)
+      i.view[d](t * a + i.byteOffset, n ? g(r) : r, !0)
     },
     P = function(e, t) {
       G(e, t, {
         get: function() {
-          return O(this, t)
+          return v(this, t)
         },
         set: function(e) {
           return S(this, t, e)
@@ -107,7 +107,7 @@ o ? (Y || (D.f = et, w.f = en, J(z, "buffer"), J(z, "byteOffset"), J(z, "byteLen
     };
   Y ? s && (E = t(function(e, t, n, r) {
     return u(e, b), M(function() {
-      return v(t) ? $(t) ? void 0 !== r ? new _(t, m(n, o), r) : void 0 !== n ? new _(t, m(n, o)) : new _(t) : q(t) ? L(E, t) : a(N, E, t) : new _(h(t))
+      return O(t) ? $(t) ? void 0 !== r ? new _(t, m(n, a), r) : void 0 !== n ? new _(t, m(n, a)) : new _(t) : q(t) ? L(E, t) : o(N, E, t) : new _(h(t))
     }(), e, E)
   }), T && T(E, K), C(A(_), function(e) {
     e in E || f(E, e, _[e])
@@ -115,17 +115,17 @@ o ? (Y || (D.f = et, w.f = en, J(z, "buffer"), J(z, "byteOffset"), J(z, "byteLen
     u(e, b);
     var i, s, l, c = 0,
       d = 0;
-    if (v(t))
+    if (O(t))
       if ($(t)) {
-        i = t, d = m(n, o);
+        i = t, d = m(n, a);
         var f = t.byteLength;
         if (void 0 === r) {
-          if (f % o || (s = f - d) < 0) throw new V(X)
-        } else if ((s = p(r) * o) + d > f) throw new V(X);
-        l = s / o
+          if (f % a || (s = f - d) < 0) throw new V(X)
+        } else if ((s = p(r) * a) + d > f) throw new V(X);
+        l = s / a
       } else if (q(t)) return L(E, t);
-    else return a(N, E, t);
-    else i = new F(s = (l = h(t)) * o);
+    else return o(N, E, t);
+    else i = new F(s = (l = h(t)) * a);
     for (j(e, {
         buffer: i,
         byteOffset: d,
@@ -140,5 +140,5 @@ o ? (Y || (D.f = et, w.f = en, J(z, "buffer"), J(z, "byteOffset"), J(z, "byteLen
     constructor: !0,
     forced: w,
     sham: !Y
-  }, y), Q in E || f(E, Q, o), Q in b || f(b, Q, o), R(l)
+  }, y), Q in E || f(E, Q, a), Q in b || f(b, Q, a), R(l)
 }) : e.exports = function() {}

@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => O
 });
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(481060),
   c = n(100527),
@@ -52,11 +52,11 @@ function y() {
   })
 }
 
-function v(e) {
+function O(e) {
   let {
     className: t,
     iconOnly: n
-  } = e, a = (0, s.e7)([_.Z, f.Z], () => {
+  } = e, o = (0, s.e7)([_.Z, f.Z], () => {
     let e = f.Z.getChannel(_.Z.getChannelId());
     return (null == e ? void 0 : e.isPrivate()) ? h.ZY5.DM_CHANNEL : h.ZY5.GUILD_CHANNEL
   }), {
@@ -66,14 +66,14 @@ function v(e) {
     p.default.track(h.rMx.PREMIUM_UPSELL_VIEWED, {
       type: "longer messages inline",
       location: {
-        location_page: a,
+        location_page: o,
         location_section: h.jXE.CHANNEL_TEXT_AREA
       },
       location_stack: E
     })
-  }, [a, E]);
-  let v = () => (0, r.jsxs)("div", {
-      className: o()(g.root, t),
+  }, [o, E]);
+  let O = () => (0, r.jsxs)("div", {
+      className: a()(g.root, t),
       children: [(0, r.jsx)(l.SrA, {
         size: "md",
         className: g.premium,
@@ -86,7 +86,7 @@ function v(e) {
         })
       })]
     }),
-    O = () => (0, r.jsx)(l.P3F, {
+    v = () => (0, r.jsx)(l.P3F, {
       className: g.iconOnly,
       onClick: () => y(),
       children: (0, r.jsx)(l.ua7, {
@@ -99,5 +99,5 @@ function v(e) {
         }, e))
       })
     });
-  return n ? O() : v()
+  return n ? v() : O()
 }

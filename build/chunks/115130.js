@@ -5,8 +5,8 @@ n.d(t, {
   Z: () => S
 }), n(997841);
 var r, i = n(442837),
-  a = n(570140),
-  o = n(695346),
+  o = n(570140),
+  a = n(695346),
   s = n(630388),
   l = n(981631);
 
@@ -78,14 +78,14 @@ function y(e) {
   p = "LOADED", h = t.filter(e => null != e.flags && (0, s.yE)(e.flags, l.udG.EMBEDDED))
 }
 
-function v(e) {
+function O(e) {
   let {
     type: t
   } = e;
   p = "ERROR"
 }
 
-function O(e) {
+function v(e) {
   let {
     filter: t
   } = e;
@@ -99,7 +99,7 @@ class I extends(r = i.ZP.PersistedStore) {
     return f
   }
   getIsEnabled() {
-    return o.Sb.getSetting() && h.length > 0
+    return a.Sb.getSetting() && h.length > 0
   }
   getLastUsedObject() {
     return f.lastUsedObject
@@ -124,7 +124,7 @@ class I extends(r = i.ZP.PersistedStore) {
   }
 }
 c(I, "displayName", "DeveloperActivityShelfStore"), c(I, "persistKey", "DeveloperActivityShelfStore"), c(I, "migrations", [e => (delete e.isEnabled, u({}, e))]);
-let S = new I(a.Z, {
+let S = new I(o.Z, {
   LOGOUT: m,
   DEVELOPER_ACTIVITY_SHELF_TOGGLE_USE_ACTIVITY_URL_OVERRIDE: g,
   DEVELOPER_ACTIVITY_SHELF_SET_ACTIVITY_URL_OVERRIDE: E,
@@ -133,7 +133,7 @@ let S = new I(a.Z, {
     p = "LOADING"
   },
   DEVELOPER_ACTIVITY_SHELF_FETCH_SUCCESS: y,
-  DEVELOPER_ACTIVITY_SHELF_FETCH_FAIL: v,
-  DEVELOPER_ACTIVITY_SHELF_UPDATE_FILTER: O,
+  DEVELOPER_ACTIVITY_SHELF_FETCH_FAIL: O,
+  DEVELOPER_ACTIVITY_SHELF_UPDATE_FILTER: v,
   USER_SETTINGS_PROTO_UPDATE() {}
 })

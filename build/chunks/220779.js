@@ -6,8 +6,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(481060),
   l = n(410030),
   c = n(541716),
@@ -43,7 +43,7 @@ function y(e) {
   return e
 }
 
-function v(e, t) {
+function O(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,8 +54,8 @@ function v(e, t) {
   return n
 }
 
-function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -68,14 +68,14 @@ function S(e) {
   let {
     placeholder: t,
     onEnter: n,
-    setEditorRef: a,
+    setEditorRef: o,
     showEmojiButton: s = !1,
     renderAttachButton: l,
     autoFocus: f = !0,
     onFocus: _,
     channel: p,
     className: m
-  } = e, [g, b] = i.useState(""), [v, S] = i.useState((0, u.JM)("")), T = () => {
+  } = e, [g, b] = i.useState(""), [O, S] = i.useState((0, u.JM)("")), T = () => {
     b(""), S((0, u.JM)(""))
   }, A = c.Ie.ATOMIC_REACTOR_REPLY_INPUT, N = i.useRef(null), C = () => {
     if (null == N.current) return "top";
@@ -87,7 +87,7 @@ function S(e) {
     ref: N,
     placeholder: t,
     editorClassName: m,
-    className: o()(E.replyInput, m),
+    className: a()(E.replyInput, m),
     showRemainingCharsAfterCount: -1,
     allowNewLines: !1,
     maxCharacterCount: h.z,
@@ -95,13 +95,13 @@ function S(e) {
     onChange: (e, t, n) => {
       b(t), S(n)
     },
-    type: s ? O(y({}, A), {
+    type: s ? v(y({}, A), {
       emojis: {
         button: !0
       }
     }) : A,
     textValue: g,
-    richValue: v,
+    richValue: O,
     onSubmit: e => {
       let {
         value: t
@@ -114,7 +114,7 @@ function S(e) {
         shouldRefocus: !1
       }))
     },
-    setEditorRef: a,
+    setEditorRef: o,
     focused: f,
     onFocus: _,
     disableThemedBackground: !0,
@@ -142,15 +142,15 @@ let T = (e, t) => {
     let {
       onSelectEmoji: t,
       onClick: n
-    } = e, a = (0, l.ZP)(), [o, c] = i.useState(!1), u = i.useRef(null), d = i.useRef(null);
+    } = e, o = (0, l.ZP)(), [a, c] = i.useState(!1), u = i.useRef(null), d = i.useRef(null);
     return T(() => c(!1), u), (0, r.jsx)(s.yRy, {
       targetElementRef: d,
       align: "right",
       position: "top",
-      shouldShow: o,
+      shouldShow: a,
       disablePointerEvents: !1,
       renderPopout: () => (0, r.jsx)(s.f6W, {
-        theme: a,
+        theme: o,
         children: e => (0, r.jsx)("div", {
           className: e,
           ref: u,
@@ -168,7 +168,7 @@ let T = (e, t) => {
       }),
       children: () => (0, r.jsx)(s.ua7, {
         text: g.intl.string(g.t.lfIHs7),
-        children: e => (0, r.jsx)("div", O(y({
+        children: e => (0, r.jsx)("div", v(y({
           ref: d
         }, e), {
           className: E.reaction,

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(481060),
   l = n(906732),
   c = n(835473),
@@ -21,15 +21,15 @@ function m(e) {
   let {
     user: t,
     guildId: n,
-    channelId: a,
+    channelId: o,
     applicationId: m,
     friendToken: g,
     isGameRelationship: E = !1,
     className: b
-  } = e, y = f.ZP.getName(n, a, t), {
-    trackUserProfileAction: v
+  } = e, y = f.ZP.getName(n, o, t), {
+    trackUserProfileAction: O
   } = (0, _.KZ)(), {
-    newestAnalyticsLocation: O
+    newestAnalyticsLocation: v
   } = (0, l.ZP)(), {
     acceptFriendRequest: I,
     cancelFriendRequest: S
@@ -37,19 +37,19 @@ function m(e) {
     userId: t.id,
     applicationId: m,
     isGameRelationship: E,
-    location: O,
+    location: v,
     friendToken: g
   }), T = i.useCallback(() => {
-    I(), v({
+    I(), O({
       action: E ? "ACCEPT_GAME_FRIEND_REQUEST" : "ACCEPT_FRIEND_REQUEST"
     })
-  }, [I, E, v]), A = i.useCallback(() => {
-    S(), v({
+  }, [I, E, O]), A = i.useCallback(() => {
+    S(), O({
       action: E ? "IGNORE_GAME_FRIEND_REQUEST" : "IGNORE_FRIEND_REQUEST"
     })
-  }, [S, E, v]), N = null != m, C = (0, c.q)(m);
+  }, [S, E, O]), N = null != m, C = (0, c.q)(m);
   return N && null == C ? null : (0, r.jsxs)("div", {
-    className: o()(h.container, b),
+    className: a()(h.container, b),
     children: [N ? (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       children: p.intl.format(E ? p.t.syHjLC : p.t.V15uUF, {
@@ -70,7 +70,7 @@ function m(e) {
       className: h.buttonContainer,
       children: [(0, r.jsx)(s.zxk, {
         look: s.zxk.Looks.FILLED,
-        color: o()(s.zxk.Colors.BRAND, h.color),
+        color: a()(s.zxk.Colors.BRAND, h.color),
         size: s.zxk.Sizes.SMALL,
         className: h.button,
         onClick: T,

@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  a = n.n(i),
-  o = n(692547),
+  o = n.n(i),
+  a = n(692547),
   s = n(481060),
   l = n(201895),
   c = n(933557),
@@ -64,31 +64,31 @@ function b(e) {
     iconClassName: h,
     hideText: g = !1,
     hideTooltip: b = !1
-  } = e, y = (0, s.vjg)(s.Skl.ONLINE), v = (0, c.ZP)(t), O = t.isDM() || t.isGroupDM(), {
+  } = e, y = (0, s.vjg)(s.Skl.ONLINE), O = (0, c.ZP)(t), v = t.isDM() || t.isGroupDM(), {
     enableTopNavButton: I
   } = (0, u.C)({
     location: "VoiceActivityStatus"
-  }), S = () => b || O ? (0, r.jsx)(d.Z, {
+  }), S = () => b || v ? (0, r.jsx)(d.Z, {
     size: "custom",
     color: y,
     channel: t,
-    className: a()(p.icon, h)
+    className: o()(p.icon, h)
   }) : (0, r.jsx)(s.ua7, {
-    text: v,
+    text: O,
     "aria-label": (0, l.ZP)({
       channel: t
     }),
     children: e => (0, r.jsx)(d.Z, E(m({}, e), {
       size: "custom",
-      color: o.Z.colors.STATUS_POSITIVE,
+      color: a.Z.colors.STATUS_POSITIVE,
       channel: t,
-      className: a()(p.icon, h)
+      className: o()(p.icon, h)
     }))
   }), T = () => I ? (0, r.jsx)(f.Z, {
     variant: n,
     className: i,
-    children: v
-  }) : O ? (0, r.jsx)(f.Z, {
+    children: O
+  }) : v ? (0, r.jsx)(f.Z, {
     variant: n,
     className: i,
     children: _.intl.string(_.t["9FaEzs"])

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  a = n(570140),
-  o = n(317770),
+  o = n(570140),
+  a = n(317770),
   s = n(594174),
   l = n(726525),
   c = n(981631);
@@ -39,8 +39,8 @@ function f(e, t) {
   if (null == e) return {};
   var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -48,8 +48,8 @@ function f(e, t) {
 function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let p = null;
@@ -60,8 +60,8 @@ function h(e, t) {
 async function m(e) {
   var {
     userId: t,
-    section: a,
-    subsection: o,
+    section: o,
+    subsection: a,
     guildId: u,
     channelId: _,
     friendToken: m,
@@ -69,22 +69,22 @@ async function m(e) {
     appContext: E,
     customStatusPrompt: b
   } = e, y = f(e, ["userId", "section", "subsection", "guildId", "channelId", "friendToken", "showGuildProfile", "appContext", "customStatusPrompt"]);
-  let v = s.default.getUser(t);
-  if (null == v) return;
-  let O = s.default.getCurrentUser();
-  null != O && (p = await (0, i.ZDy)(async () => {
+  let O = s.default.getUser(t);
+  if (null == O) return;
+  let v = s.default.getCurrentUser();
+  null != v && (p = await (0, i.ZDy)(async () => {
     let {
       default: e
     } = (0, l.q)({
       location: "UserProfileModalManager"
     }) ? await Promise.all([n.e("94989"), n.e("82412"), n.e("62880"), n.e("88235"), n.e("17759")]).then(n.bind(n, 866035)): await Promise.all([n.e("94989"), n.e("82412"), n.e("62880"), n.e("88235"), n.e("24800")]).then(n.bind(n, 678780));
     return t => (0, r.jsx)(e, d({
-      user: v,
-      currentUser: O,
+      user: O,
+      currentUser: v,
       guildId: u,
       friendToken: m,
-      initialSection: a,
-      initialSubsection: o,
+      initialSection: o,
+      initialSubsection: a,
       channelId: _,
       showGuildProfile: g,
       customStatusPrompt: b
@@ -98,12 +98,12 @@ async function m(e) {
 function g() {
   null != p && (0, i.Mr3)(p), p = null
 }
-class E extends o.Z {
+class E extends a.Z {
   _initialize() {
-    a.Z.subscribe("USER_PROFILE_MODAL_OPEN", m), a.Z.subscribe("USER_PROFILE_MODAL_CLOSE", g)
+    o.Z.subscribe("USER_PROFILE_MODAL_OPEN", m), o.Z.subscribe("USER_PROFILE_MODAL_CLOSE", g)
   }
   _terminate() {
-    a.Z.unsubscribe("USER_PROFILE_MODAL_OPEN", m), a.Z.unsubscribe("USER_PROFILE_MODAL_CLOSE", g)
+    o.Z.unsubscribe("USER_PROFILE_MODAL_OPEN", m), o.Z.unsubscribe("USER_PROFILE_MODAL_CLOSE", g)
   }
 }
 let b = new E

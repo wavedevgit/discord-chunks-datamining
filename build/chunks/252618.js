@@ -3,14 +3,14 @@
 n.d(t, {
   EM: () => b,
   PR: () => g,
-  Tt: () => O,
+  Tt: () => v,
   ZD: () => A,
   yY: () => I
 }), n(388685);
 var r = n(192379),
   i = n(359959),
-  a = n(993192),
-  o = n(731965);
+  o = n(993192),
+  a = n(731965);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -59,7 +59,7 @@ let d = {
     onlyWhenBlurred: !1,
     interval: 1e3
   },
-  p = (0, a.F)(() => ({
+  p = (0, o.F)(() => ({
     titles: [d],
     notificationCount: void 0,
     flashQueue: []
@@ -82,16 +82,16 @@ function m(e) {
 }
 
 function g(e) {
-  (0, o.j)(() => p.setState({
+  (0, a.j)(() => p.setState({
     notificationCount: e
   }))
 }
 
 function E(e) {
-  return (0, o.j)(() => p.setState(t => ({
+  return (0, a.j)(() => p.setState(t => ({
     titles: [e, ...t.titles]
   }))), () => {
-    (0, o.j)(() => p.setState(t => ({
+    (0, a.j)(() => p.setState(t => ({
       titles: t.titles.filter(t => t !== e)
     })))
   }
@@ -112,18 +112,18 @@ function y(e) {
   }))
 }
 
-function v() {
+function O() {
   p.setState({
     flashQueue: []
   })
 }
 
-function O(e) {
+function v(e) {
   r.useEffect(() => E(e), [...Object.values(e)])
 }
 
 function I(e) {
-  return O(e), null
+  return v(e), null
 }
 
 function S() {
@@ -132,22 +132,22 @@ function S() {
       flashQueue: t
     } = e, n = h(e).filter(e => null != e).join(" | "), r = m(e);
     return ["".concat(r).concat(n), t[0]]
-  }, i.X), [n, a] = r.useState(!1), o = r.useRef(0), s = null == t ? void 0 : t.messages[o.current % t.messages.length];
+  }, i.X), [n, o] = r.useState(!1), a = r.useRef(0), s = null == t ? void 0 : t.messages[a.current % t.messages.length];
   return r.useEffect(() => {
     if (null == t) {
-      o.current = 0, a(!1);
+      a.current = 0, o(!1);
       return
     }
     if (document.hasFocus() && t.onlyWhenBlurred) {
-      y(t.id), a(!1);
+      y(t.id), o(!1);
       return
     }
     let e = setInterval(() => {
-      if (o.current >= t.count) {
-        y(t.id), a(!1);
+      if (a.current >= t.count) {
+        y(t.id), o(!1);
         return
       }
-      a(e => !e || (o.current += 1, !1))
+      o(e => !e || (a.current += 1, !1))
     }, t.interval);
     return () => clearInterval(e)
   }, [t]), n ? s : e
@@ -156,7 +156,7 @@ function S() {
 function T() {
   r.useEffect(() => {
     function e() {
-      v()
+      O()
     }
     return document.addEventListener("focusin", e, {
       capture: !0

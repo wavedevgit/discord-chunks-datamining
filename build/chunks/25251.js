@@ -4,7 +4,7 @@ let r, i;
 n.d(t, {
   Z: () => C
 });
-var a, o = n(392711),
+var o, a = n(392711),
   s = n(442837),
   l = n(570140);
 
@@ -27,19 +27,19 @@ let u = [],
   E = 6e4,
   b = 36e5,
   y = e => {
-    _ = (0, o.cloneDeep)(e);
+    _ = (0, a.cloneDeep)(e);
     let t = {};
     _.forEach(e => {
       if (t[e.id] = e, d.length > 0) {
         var n;
-        t[e.id].config.effects = null != (n = (0, o.sample)(d)) ? n : []
+        t[e.id].config.effects = null != (n = (0, a.sample)(d)) ? n : []
       }
     }), p = t
   },
-  v = () => {
+  O = () => {
     f = !0
   },
-  O = e => {
+  v = e => {
     let {
       profileEffects: t
     } = e;
@@ -63,7 +63,7 @@ let u = [],
   A = e => {
     T()
   };
-class N extends(a = s.ZP.Store) {
+class N extends(o = s.ZP.Store) {
   get isFetching() {
     return f
   }
@@ -88,8 +88,8 @@ class N extends(a = s.ZP.Store) {
 }
 c(N, "displayName", "ProfileEffectStore");
 let C = new N(l.Z, {
-  USER_PROFILE_EFFECTS_FETCH: v,
-  USER_PROFILE_EFFECTS_FETCH_SUCCESS: O,
+  USER_PROFILE_EFFECTS_FETCH: O,
+  USER_PROFILE_EFFECTS_FETCH_SUCCESS: v,
   USER_PROFILE_EFFECTS_FETCH_FAILURE: I,
   PROFILE_EFFECTS_SET_TRY_IT_OUT: S,
   LOGOUT: A

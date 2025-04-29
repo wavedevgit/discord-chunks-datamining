@@ -6,8 +6,8 @@ n.d(t, {
 }), n(314940), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(278074),
   l = n(442837),
   c = n(481060),
@@ -22,8 +22,8 @@ var r = n(200651),
   E = n(238302),
   b = n(514361),
   y = n(572397),
-  v = n(705262),
-  O = n(436774),
+  O = n(705262),
+  v = n(436774),
   I = n(768762),
   S = n(197115),
   T = n(210887),
@@ -63,9 +63,9 @@ function M(e) {
   let {
     isCoachmark: t
   } = e, n = (0, y.q)();
-  return i.useEffect(() => ((0, E.Kq)(), n(N.rMx.CLIENT_THEME_PREVIEW_VIEWED), () => n(N.rMx.CLIENT_THEME_PREVIEW_CLOSED)), [n]), (0, r.jsx)(v.ZP, {
-    type: v.yH.EDITOR,
-    children: (0, r.jsx)(v.ZP.BasicAndGradient, {
+  return i.useEffect(() => ((0, E.Kq)(), n(N.rMx.CLIENT_THEME_PREVIEW_VIEWED), () => n(N.rMx.CLIENT_THEME_PREVIEW_CLOSED)), [n]), (0, r.jsx)(O.ZP, {
+    type: O.yH.EDITOR,
+    children: (0, r.jsx)(O.ZP.BasicAndGradient, {
       isEditor: !0,
       isCoachmark: t
     })
@@ -84,13 +84,13 @@ function k() {
 function j(e) {
   let {
     tab: t,
-    isPreview: a,
+    isPreview: o,
     isCoachmark: l,
     onClose: u
   } = e, f = i.useCallback(() => {
     u(), l || d.Z.open()
   }, [u, l]), p = (0, s.EQ)({
-    isPreview: a,
+    isPreview: o,
     isCoachmark: l
   }).with({
     isCoachmark: !0
@@ -119,12 +119,12 @@ function j(e) {
   }) : void 0, [t]);
   return (0, r.jsxs)("div", {
     className: w.footerContainer,
-    children: [a && (0, r.jsxs)("div", {
+    children: [o && (0, r.jsxs)("div", {
       className: w.footerLabelContainer,
       children: [(0, r.jsx)(c.SrA, {
         className: w.footerNitro,
         size: "xs",
-        color: O.JX.PREMIUM_TIER_2
+        color: v.JX.PREMIUM_TIER_2
       }), (0, r.jsx)(c.Text, {
         className: w.footerText,
         variant: "text-sm/medium",
@@ -136,7 +136,7 @@ function j(e) {
       className: w.footerButtonContainer,
       children: [(0, r.jsx)("div", {
         children: (0, r.jsx)(c.zxk, {
-          className: o()(w.footerButton, w.footerButtonBack),
+          className: a()(w.footerButton, w.footerButtonBack),
           color: c.Ttl.PRIMARY,
           size: c.zxk.Sizes.NONE,
           onClick: f,
@@ -145,7 +145,7 @@ function j(e) {
             direction: I.Z.Directions.LEFT
           })
         })
-      }), a && (0, r.jsx)(S.Z, {
+      }), o && (0, r.jsx)(S.Z, {
         className: w.footerButton,
         subscriptionTier: R.Si.TIER_2,
         showGradient: !0,
@@ -160,20 +160,20 @@ function U(e) {
   let {
     initialTab: t,
     markAsDismissed: n,
-    isCoachmark: a
-  } = e, [o, s] = i.useState(t), d = i.useMemo(() => [{
+    isCoachmark: o
+  } = e, [a, s] = i.useState(t), d = i.useMemo(() => [{
     name: P.intl.string(P.t.Ksh3io),
     value: 0
   }, {
     name: P.intl.string(P.t.RPh2oq),
     value: 1
-  }], []), _ = (0, l.e7)([b.Z], () => b.Z.isPreview), m = (0, l.e7)([h.Z], () => h.Z.isUpsellPreview), g = _ || m, v = i.useMemo(() => T.Z.theme, []), O = (0, y.J)(), I = i.useCallback(() => {
-    _ && O(), m && (0, p.O7)()
-  }, [_, m, O]), S = (0, f.Z)(null, g ? I : N.dG4), R = i.useCallback(() => {
+  }], []), _ = (0, l.e7)([b.Z], () => b.Z.isPreview), m = (0, l.e7)([h.Z], () => h.Z.isUpsellPreview), g = _ || m, O = i.useMemo(() => T.Z.theme, []), v = (0, y.J)(), I = i.useCallback(() => {
+    _ && v(), m && (0, p.O7)()
+  }, [_, m, v]), S = (0, f.Z)(null, g ? I : N.dG4), R = i.useCallback(() => {
     g && (0, u.ZI)({
-      theme: v
+      theme: O
     }), (0, p.G8)(), (0, E.Mo)(), I(), null == n || n(C.L.DISMISS)
-  }, [I, n, g, v]);
+  }, [I, n, g, O]);
   return (0, r.jsx)(A.Z, {
     className: w.draggableContainer,
     children: (0, r.jsxs)("div", {
@@ -194,7 +194,7 @@ function U(e) {
           })]
         }), (0, r.jsx)(c.sY7, {
           options: d,
-          value: o,
+          value: a,
           onChange: e => {
             let {
               value: t
@@ -205,11 +205,11 @@ function U(e) {
         })]
       }), (0, r.jsxs)(c.Ttm, {
         className: w.scrollContainer,
-        children: [0 === o && (0, r.jsx)(M, {
-          isCoachmark: a
-        }), 1 === o && (0, r.jsx)(k, {})]
+        children: [0 === a && (0, r.jsx)(M, {
+          isCoachmark: o
+        }), 1 === a && (0, r.jsx)(k, {})]
       }), (0, r.jsx)(j, {
-        tab: o,
+        tab: a,
         isPreview: g,
         onClose: R,
         isCoachmark: !1

@@ -3,12 +3,12 @@
 n.d(t, {
   KB: () => I,
   b6: () => T,
-  wD: () => v
+  wD: () => O
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(442837),
-  o = n(597688),
+  o = n(442837),
+  a = n(597688),
   s = n(479446),
   l = n(646476),
   c = n(599659),
@@ -22,7 +22,7 @@ var r = n(200651),
   g = n(388032);
 let E = m.Cj.STANDARD_BOX,
   b = void 0,
-  [y, v, O] = (0, f.Z)();
+  [y, O, v] = (0, f.Z)();
 
 function I(e) {
   let {
@@ -30,8 +30,8 @@ function I(e) {
     giftRecipient: n,
     giftMessage: f,
     giftStyle: h,
-    giftingOrigin: v,
-    children: O
+    giftingOrigin: O,
+    children: v
   } = e, {
     selectedSkuId: I
   } = (0, p.JL)(), [S, T] = i.useState(n), [A, N] = i.useState(), [C, R] = i.useState(!1), P = (0, _.pO)(S), w = (0, l.TX)(), {
@@ -49,7 +49,7 @@ function I(e) {
     }).catch(e => {
       q(!1), X(e), K(!0)
     })
-  }, [S, Y, q, K, X]), $ = (0, u.x8)(), ee = (0, a.Wu)([o.Z], () => o.Z.recommendedGiftSkuIds);
+  }, [S, Y, q, K, X]), $ = (0, u.x8)(), ee = (0, o.Wu)([a.Z], () => a.Z.recommendedGiftSkuIds);
   return (0, r.jsx)(y.Provider, {
     value: {
       isGift: t,
@@ -75,12 +75,12 @@ function I(e) {
       giftMessageError: Q,
       alreadyHasHalloweenDeco: $,
       recommendedGiftSkuIds: ee,
-      giftingOrigin: v,
+      giftingOrigin: O,
       claimableRewards: k,
       selectedGiftingPromotionReward: j,
       setSelectedGiftingPromotionReward: U
     },
-    children: O
+    children: v
   })
 }
 let S = {

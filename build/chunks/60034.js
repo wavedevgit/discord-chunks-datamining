@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(686546),
   l = n(451478),
   c = n(768581),
@@ -20,15 +20,15 @@ function f(e) {
     guildName: t,
     iconSize: n,
     className: i
-  } = e, o = (0, u.Zg)(t);
+  } = e, a = (0, u.Zg)(t);
   return (0, r.jsx)(s.ZP, {
     mask: s.ZP.Masks.CLAN_ICON,
     width: n,
     height: n,
     className: i,
     children: (0, r.jsx)("div", {
-      className: a()(d.guildIconImage, d.acronym),
-      children: o
+      className: o()(d.guildIconImage, d.acronym),
+      children: a
     })
   })
 }
@@ -42,7 +42,7 @@ function _(e) {
     className: _,
     acronymClassName: p,
     animate: h
-  } = e, m = (0, o.e7)([l.Z], () => l.Z.isFocused()), g = (0, c.pU)(i) ? i : c.ZP.getGuildIconURL({
+  } = e, m = (0, a.e7)([l.Z], () => l.Z.isFocused()), g = (0, c.pU)(i) ? i : c.ZP.getGuildIconURL({
     id: t,
     icon: i,
     size: f,
@@ -56,7 +56,7 @@ function _(e) {
       height: f,
       className: _,
       children: (0, r.jsx)("div", {
-        className: a()(d.guildIconImage, d.acronym, p),
+        className: o()(d.guildIconImage, d.acronym, p),
         children: e
       })
     })

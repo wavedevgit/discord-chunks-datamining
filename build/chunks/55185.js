@@ -19,8 +19,8 @@ var r, i = n(200651),
   b = n(981631),
   y = n(676654),
   _ = n(388032),
-  O = n(22275),
-  v = n(204794);
+  v = n(22275),
+  O = n(204794);
 async function C(e) {
   await f.hW.updateAsync("status", t => {
     t.status = a.Gm.create({
@@ -35,15 +35,15 @@ function j(e) {
     shouldShowStatus: n = !1
   } = e, r = (0, s.e7)([g.Z], () => g.Z.getStatus());
   return (0, i.jsxs)("div", {
-    className: O.toggleContainer,
+    className: v.toggleContainer,
     children: [(0, i.jsxs)("div", {
-      className: O.toggleContainerText,
+      className: v.toggleContainerText,
       children: [(0, i.jsx)(c.Text, {
         variant: "text-sm/medium",
         color: "header-primary",
         children: _.intl.string(_.t.KY0ilp)
       }), n && (0, i.jsxs)("div", {
-        className: O.toggleContainerOnlineRow,
+        className: v.toggleContainerOnlineRow,
         children: [(0, i.jsx)(c.qbd, {
           status: c.Skl.ONLINE,
           size: 8
@@ -68,15 +68,15 @@ function S(e) {
     closePopout: n
   } = e, r = (0, l.useRef)(null);
   return (0, c.Tbt)(r), (0, i.jsxs)("div", {
-    className: O.wrapper,
+    className: v.wrapper,
     ref: r,
     children: [null != n && (0, i.jsx)("div", {
-      className: O.gradient
+      className: v.gradient
     }), (0, i.jsxs)("div", {
-      className: O.content,
+      className: v.content,
       children: [null != n && (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(c.zxk, {
-          className: O.closeButton,
+          className: v.closeButton,
           "aria-label": _.intl.string(_.t.cpT0Cg),
           look: c.zxk.Looks.BLANK,
           size: c.zxk.Sizes.NONE,
@@ -87,12 +87,12 @@ function S(e) {
           })
         }), (0, i.jsx)("img", {
           alt: "",
-          src: v.Z,
-          className: O.controllerImage
+          src: O.Z,
+          className: v.controllerImage
         }), (0, i.jsx)(o.X6, {
           variant: "heading-md/bold",
           color: "header-primary",
-          className: O.nuxTitle,
+          className: v.nuxTitle,
           children: _.intl.string(_.t.PRjSRk)
         })]
       }), t]
@@ -111,7 +111,7 @@ function E(e) {
     children: [(0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      className: O.nuxContent,
+      className: v.nuxContent,
       children: _.intl.format(_.t.nEgjjo, {
         onClickSettings: () => {
           t(), u.Z.open(b.oAB.ACTIVITY_PRIVACY, null, {
@@ -120,7 +120,7 @@ function E(e) {
         }
       })
     }), (0, i.jsx)("div", {
-      className: O.toggleContainerWrapper,
+      className: v.toggleContainerWrapper,
       children: (0, i.jsx)(j, {
         showCurrentGame: r
       })
@@ -138,7 +138,7 @@ function x(e) {
     children: [(0, i.jsx)(o.X6, {
       variant: "heading-sm/semibold",
       color: "header-primary",
-      className: O.controlTitle,
+      className: v.controlTitle,
       children: _.intl.string(_.t["6x5uWV"])
     }), (0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
@@ -151,31 +151,9 @@ function x(e) {
         }
       })
     }), (0, i.jsx)("div", {
-      className: O.toggleContainerWrapper,
+      className: v.toggleContainerWrapper,
       children: (0, i.jsx)(j, {
         showCurrentGame: r
-      })
-    })]
-  })
-}
-
-function I(e) {
-  let {
-    closePopout: t
-  } = e, n = p.G6.useSetting();
-  return (0, i.jsxs)(S, {
-    closePopout: t,
-    children: [(0, i.jsx)(c.Text, {
-      variant: "text-xs/normal",
-      color: "text-secondary",
-      className: O.nuxContent,
-      children: _.intl.format(_.t.fF2TbW, {
-        helpDeskUrl: m.Z.getArticleURL(b.BhN.ACTIVITY_STATUS_SETTINGS)
-      })
-    }), (0, i.jsx)("div", {
-      className: O.toggleContainerWrapper,
-      children: (0, i.jsx)(j, {
-        showCurrentGame: n
       })
     })]
   })
@@ -190,12 +168,34 @@ function P(e) {
     children: [(0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      className: O.nuxContent,
+      className: v.nuxContent,
       children: _.intl.format(_.t.fF2TbW, {
         helpDeskUrl: m.Z.getArticleURL(b.BhN.ACTIVITY_STATUS_SETTINGS)
       })
     }), (0, i.jsx)("div", {
-      className: O.toggleContainerWrapper,
+      className: v.toggleContainerWrapper,
+      children: (0, i.jsx)(j, {
+        showCurrentGame: n
+      })
+    })]
+  })
+}
+
+function I(e) {
+  let {
+    closePopout: t
+  } = e, n = p.G6.useSetting();
+  return (0, i.jsxs)(S, {
+    closePopout: t,
+    children: [(0, i.jsx)(c.Text, {
+      variant: "text-xs/normal",
+      color: "text-secondary",
+      className: v.nuxContent,
+      children: _.intl.format(_.t.fF2TbW, {
+        helpDeskUrl: m.Z.getArticleURL(b.BhN.ACTIVITY_STATUS_SETTINGS)
+      })
+    }), (0, i.jsx)("div", {
+      className: v.toggleContainerWrapper,
       children: (0, i.jsx)(j, {
         showCurrentGame: n,
         shouldShowStatus: !0
@@ -210,7 +210,7 @@ function w() {
     children: [(0, i.jsx)(j, {
       showCurrentGame: e
     }), (0, i.jsx)(c.$i$, {
-      className: O.divider
+      className: v.divider
     }), (0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
@@ -229,7 +229,7 @@ function N(e) {
     children: [(0, i.jsx)(o.X6, {
       variant: "heading-sm/semibold",
       color: "header-primary",
-      className: O.controlTitle,
+      className: v.controlTitle,
       children: _.intl.string(y.default.qKDqen)
     }), (0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
@@ -238,7 +238,7 @@ function N(e) {
         helpDeskUrl: m.Z.getArticleURL(b.BhN.ACTIVITY_STATUS_SETTINGS)
       })
     }), (0, i.jsx)(c.zxk, {
-      className: O.goOnlineButton,
+      className: v.goOnlineButton,
       look: c.zxk.Looks.FILLED,
       size: c.zxk.Sizes.SMALL,
       color: c.zxk.Colors.GREEN,
@@ -258,7 +258,7 @@ function Z() {
       showCurrentGame: e,
       shouldShowStatus: !0
     }), (0, i.jsx)(c.$i$, {
-      className: O.divider
+      className: v.divider
     }), (0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
@@ -284,11 +284,11 @@ function A(e) {
         closePopout: n
       });
     case 1:
-      return (0, i.jsx)(I, {
+      return (0, i.jsx)(P, {
         closePopout: n
       });
     case 2:
-      return (0, i.jsx)(P, {
+      return (0, i.jsx)(I, {
         closePopout: n
       });
     case 3:

@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  a = n.n(i),
-  o = n(243814),
+  o = n.n(i),
+  a = n(243814),
   s = n(993365),
   l = n(481060),
   c = n(162685),
@@ -36,14 +36,14 @@ function b(e) {
       application: i,
       scopes: s,
       redirectUri: b,
-      approximateGuildCount: v,
-      isEmbeddedFlow: O,
+      approximateGuildCount: O,
+      isEmbeddedFlow: v,
       disclosures: I
     } = e,
     S = new Date(f.default.extractTimestamp(i.id)),
     T = (0, p.W3)(s),
     A = (0, d.yE)(null != (t = i.flags) ? t : 0, h.udG.EMBEDDED);
-  if (null != b && !A && !O) try {
+  if (null != b && !A && !v) try {
     let e = new URL(b);
     n = null != e.host && e.host.length > 0 ? e.origin : e.href
   } catch (e) {
@@ -53,7 +53,7 @@ function b(e) {
     location: "oauth2_authorize"
   });
   return (0, r.jsxs)("div", {
-    className: a()(g.applicationDetails, {
+    className: o()(g.applicationDetails, {
       [g.noPadding]: N.enabled
     }),
     children: [null != n ? (0, r.jsx)(y, {
@@ -69,10 +69,10 @@ function b(e) {
       text: m.intl.formatToPlainString(m.t["+1bjc3"], {
         date: S
       })
-    }), s.includes(o.x.BOT) && null != v ? (0, r.jsx)(y, {
+    }), s.includes(a.x.BOT) && null != O ? (0, r.jsx)(y, {
       icon: l.wGt,
       text: m.intl.formatToPlainString(m.t.UHGHSE, {
-        guildCount: v
+        guildCount: O
       })
     }) : null, (0, r.jsx)(y, {
       icon: l.b7C,

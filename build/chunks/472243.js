@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(481060),
   l = n(100527),
   c = n(906732),
@@ -43,7 +43,7 @@ function y(e) {
   return e
 }
 
-function v(e, t) {
+function O(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,8 +54,8 @@ function v(e, t) {
   return n
 }
 
-function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -63,12 +63,12 @@ function O(e, t) {
 function I(e) {
   var t, n, i, b;
   let {
-    type: v,
+    type: O,
     textValue: I,
     maxCharacterCount: S,
     showRemainingCharsAfterCount: T,
     className: A
-  } = e, N = (0, o.e7)([f.default], () => _.ZP.canUseIncreasedMessageLength(f.default.getCurrentUser())), C = (0, u.Z)(), R = null != S ? S : C, P = null != (b = null != T ? T : S) ? b : C / 10, w = I.length, D = null != v.upsellLongMessages && (null != w ? w : 0) > h.J6R && N, L = null != v.upsellLongMessages && !N, x = (null == (n = (0, d.N)()) || null == (t = n.subscription_trial) ? void 0 : t.sku_id) === m.Si.TIER_2, M = R - w, k = M > P, j = M < 0 && x, U = 0 === M ? g.intl.string(g.t.tU6YQ0) : M > 0 ? g.intl.formatToPlainString(g.t.qH8uFR, {
+  } = e, N = (0, a.e7)([f.default], () => _.ZP.canUseIncreasedMessageLength(f.default.getCurrentUser())), C = (0, u.Z)(), R = null != S ? S : C, P = null != (b = null != T ? T : S) ? b : C / 10, w = I.length, D = null != O.upsellLongMessages && (null != w ? w : 0) > h.J6R && N, L = null != O.upsellLongMessages && !N, x = (null == (n = (0, d.N)()) || null == (t = n.subscription_trial) ? void 0 : t.sku_id) === m.Si.TIER_2, M = R - w, k = M > P, j = M < 0 && x, U = 0 === M ? g.intl.string(g.t.tU6YQ0) : M > 0 ? g.intl.formatToPlainString(g.t.qH8uFR, {
     count: M
   }) : g.intl.string(g.t.YSRIqa), {
     analyticsLocations: G
@@ -78,7 +78,7 @@ function I(e) {
   return (0, r.jsx)(c.Gt, {
     value: G,
     children: (0, r.jsxs)("div", {
-      className: a()(A, E.characterCount),
+      className: o()(A, E.characterCount),
       children: [(0, r.jsxs)("div", {
         className: E.flairContainer,
         children: [D && B ? (0, r.jsx)(s.ua7, {
@@ -94,7 +94,7 @@ function I(e) {
         }) : null, k || j ? null : (0, r.jsx)(s.ua7, {
           text: U,
           position: "top",
-          children: e => (0, r.jsx)(s.Text, O(y({
+          children: e => (0, r.jsx)(s.Text, v(y({
             variant: "text-sm/semibold",
             tabularNumbers: !0,
             "aria-hidden": !0
@@ -109,7 +109,7 @@ function I(e) {
         })
       }), L && !k ? (0, r.jsx)(p.Z, {
         className: E.upsell,
-        iconOnly: (null == (i = v.upsellLongMessages) ? void 0 : i.iconOnly) || !1,
+        iconOnly: (null == (i = O.upsellLongMessages) ? void 0 : i.iconOnly) || !1,
         remaining: M
       }) : null]
     })

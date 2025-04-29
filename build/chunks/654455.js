@@ -5,8 +5,8 @@ n.d(t, {
   ZP: () => A
 }), n(388685), n(35282), n(539854);
 var r, i = n(392711),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(570140),
   l = n(911969),
   c = n(704907),
@@ -74,11 +74,11 @@ function y(e, t) {
   }).map(e => e.split(":")[0])
 }
 
-function v(e, t) {
+function O(e, t) {
   return 0 > Number(t.id) ? t.id : (null == e ? void 0 : e.guild) != null && null != t.guildId ? "".concat(t.id, ":").concat(e.guild.id) : t.id
 }
 
-function O(e) {
+function v(e) {
   let {
     settings: {
       type: t
@@ -95,7 +95,7 @@ function I(e) {
     context: n
   } = e;
   if (!g.includes(t.type)) return !1;
-  let r = v(n, t);
+  let r = O(n, t);
   E.pendingUsages.push({
     key: r,
     timestamp: Date.now()
@@ -105,11 +105,11 @@ function I(e) {
 function S() {
   var e, t;
   let n = null != (t = null == (e = u.Z.frecencyWithoutFetchingLatest.applicationCommandFrecency) ? void 0 : e.applicationCommands) ? t : {};
-  b.overwriteHistory(a().mapValues(n, e => m(p({}, e), {
+  b.overwriteHistory(o().mapValues(n, e => m(p({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), E.pendingUsages)
 }
-class T extends(r = o.ZP.PersistedStore) {
+class T extends(r = a.ZP.PersistedStore) {
   initialize(e) {
     null != e && (E = e), this.syncWith([u.Z], S)
   }
@@ -124,7 +124,7 @@ class T extends(r = o.ZP.PersistedStore) {
   }
   getScoreWithoutLoadingLatest(e, t) {
     var n;
-    return null != (n = b.getScore(v(e, t))) ? n : 0
+    return null != (n = b.getScore(O(e, t))) ? n : 0
   }
   getTopCommandsWithoutLoadingLatest() {
     return b.frequently
@@ -133,5 +133,5 @@ class T extends(r = o.ZP.PersistedStore) {
 _(T, "displayName", "ApplicationCommandFrecencyStore"), _(T, "persistKey", "ApplicationCommandFrecencyV2");
 let A = new T(s.Z, {
   APPLICATION_COMMAND_USED: I,
-  USER_SETTINGS_PROTO_UPDATE: O
+  USER_SETTINGS_PROTO_UPDATE: v
 })

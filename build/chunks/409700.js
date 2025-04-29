@@ -8,8 +8,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(831209),
   l = n(442837),
   c = n(481060),
@@ -25,7 +25,7 @@ var r = n(200651),
   b = n(367753),
   y = n(419718);
 
-function v(e, t, n) {
+function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -34,14 +34,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function O(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      O(e, t, n[t])
     })
   }
   return e
@@ -90,8 +90,8 @@ function A(e) {
     forceShowBetaLabel: n = !1
   } = e, i = (0, p.V2)({
     location: "SoundmojiBanner"
-  }), a = (0, l.e7)([d.default], () => _.ZP.canUseSoundboardEverywhere(d.default.getCurrentUser())), o = (0, l.e7)([u.Z], () => u.Z.getGuildId());
-  return n || a || t.guildId === g.X8 || t.guildId === o || !i ? (0, r.jsx)(c.IGR, {
+  }), o = (0, l.e7)([d.default], () => _.ZP.canUseSoundboardEverywhere(d.default.getCurrentUser())), a = (0, l.e7)([u.Z], () => u.Z.getGuildId());
+  return n || o || t.guildId === g.X8 || t.guildId === a || !i ? (0, r.jsx)(c.IGR, {
     text: "BETA",
     color: s.Z.BG_BRAND,
     className: b.betaBadge
@@ -124,7 +124,7 @@ function N(e) {
     sound: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: o()(b.infoContainer, b.infoTooltip),
+    className: a()(b.infoContainer, b.infoTooltip),
     children: [(0, r.jsx)(A, {
       sound: t
     }), (0, r.jsxs)("div", {
@@ -154,7 +154,7 @@ function C(e) {
   let {
     renderPopout: t,
     position: n,
-    tooltipText: a,
+    tooltipText: o,
     children: s,
     setTooltipShowing: l,
     clickableClassName: u
@@ -172,7 +172,7 @@ function C(e) {
     renderPopout: e => (0, r.jsx)(c.P3F, {
       onClick: e => e.stopPropagation(),
       onMouseOver: e => e.stopPropagation(),
-      children: t(S(O({}, e), {
+      children: t(S(v({}, e), {
         refreshPosition: m
       }))
     }),
@@ -191,15 +191,15 @@ function C(e) {
       onTooltipShow: () => {
         E && (null == l || l(!0))
       },
-      text: a,
+      text: o,
       position: "top",
       shouldShow: E,
-      children: t => (0, r.jsx)(c.P3F, S(O({
+      children: t => (0, r.jsx)(c.P3F, S(v({
         innerRef: g
       }, t, e), {
-        "aria-label": a,
+        "aria-label": o,
         onClick: h,
-        className: o()(y.secondaryButtonRefresh, u),
+        className: a()(y.secondaryButtonRefresh, u),
         children: s
       }))
     })
@@ -225,7 +225,7 @@ function R(e) {
       })
     }), (0, r.jsx)(C, {
       setTooltipShowing: i,
-      renderPopout: e => (0, r.jsx)(m.Z, O({
+      renderPopout: e => (0, r.jsx)(m.Z, v({
         sound: t,
         channel: n
       }, e)),

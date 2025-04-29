@@ -7,9 +7,9 @@ n.d(t, {
 }), n(388685);
 var r = n(442837),
   i = n(570140),
-  a = n(592125);
+  o = n(592125);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,7 +25,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -86,7 +86,7 @@ function y(e) {
   null != p[t.id] && delete p[t.id], h.delete(t.id)
 }
 
-function v(e) {
+function O(e) {
   let {
     channelId: t,
     warningId: n,
@@ -97,7 +97,7 @@ function v(e) {
   }) : e))
 }
 
-function O(e) {
+function v(e) {
   let {
     channelId: t
   } = e, n = p[t];
@@ -126,7 +126,7 @@ function S(e) {
 }
 
 function T() {
-  p = {}, Object.values(a.Z.getMutablePrivateChannels()).forEach(e => {
+  p = {}, Object.values(o.Z.getMutablePrivateChannels()).forEach(e => {
     g(e)
   })
 }
@@ -136,7 +136,7 @@ function A(e) {
 }
 class N extends r.ZP.Store {
   initialize() {
-    this.waitFor(a.Z)
+    this.waitFor(o.Z)
   }
   getChannelSafetyWarning(e, t) {
     var n;
@@ -156,8 +156,8 @@ let C = new N(i.Z, {
   CHANNEL_UPDATES: b,
   CONNECTION_OPEN: T,
   CONNECTION_OPEN_SUPPLEMENTAL: T,
-  CHANNEL_SAFETY_WARNING_FEEDBACK: v,
-  CLEAR_CHANNEL_SAFETY_WARNINGS: O,
+  CHANNEL_SAFETY_WARNING_FEEDBACK: O,
+  CLEAR_CHANNEL_SAFETY_WARNINGS: v,
   DISMISS_CHANNEL_SAFETY_WARNINGS: I,
   ACKNOWLEDGE_CHANNEL_SAFETY_WARNING_TOOLTIP: S
 })

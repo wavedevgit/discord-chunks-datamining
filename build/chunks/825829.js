@@ -14,8 +14,8 @@ n.d(t, {
 }), n(388685);
 var r = n(192379),
   i = n(462382),
-  a = n(259346),
-  o = n(436817),
+  o = n(259346),
+  a = n(436817),
   s = n(189722),
   l = n(721355),
   c = n(999923),
@@ -52,7 +52,7 @@ function y(e) {
   return e
 }
 
-function v(e, t) {
+function O(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -63,8 +63,8 @@ function v(e, t) {
   return n
 }
 
-function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -92,7 +92,7 @@ function A(e) {
 }
 
 function N(e, t) {
-  var n, r, i, a, o;
+  var n, r, i, o, a;
   let [s] = null != (n = e.embeds) ? n : [];
   if (null != s) {
     if (A(s)) return null == s || null == (i = s.fields) || null == (r = i.find(e => {
@@ -101,12 +101,12 @@ function N(e, t) {
       } = e;
       return n === t
     })) ? void 0 : r.rawValue;
-    if (T(s)) return null == s || null == (o = s.fields) || null == (a = o.find(e => {
+    if (T(s)) return null == s || null == (a = s.fields) || null == (o = a.find(e => {
       let {
         rawName: n
       } = e;
       return n === t
-    })) ? void 0 : a.rawValue
+    })) ? void 0 : o.rawValue
   }
 }
 
@@ -146,9 +146,9 @@ function x(e, t, n) {
     case u.z.BLOCK_PROFILE_UPDATE:
       return r(e);
     case u.z.QUARANTINE_USER:
-      return o(n);
+      return a(n);
     case u.z.BLOCK_GUEST_JOIN:
-      return a()
+      return o()
   }
 
   function r(e) {
@@ -162,11 +162,11 @@ function x(e, t, n) {
     }
   }
 
-  function a() {
+  function o() {
     return E.intl.string(E.t.MrYeyc)
   }
 
-  function o(e) {
+  function a(e) {
     switch (e) {
       case c.B.MESSAGE_SEND:
         return E.intl.string(E.t.PmSMMT);
@@ -215,8 +215,8 @@ function j(e, t) {
   let m = p.Z.can(g.Plq.VIEW_CHANNEL, t),
     b = M(t, m),
     y = null != t && m ? n : g.VqG,
-    v = k(e, b, n);
-  return null != v ? v : null != h ? _ === o.y.MODAL && null != i ? f !== a.P.BLOCKED ? E.intl.format(E.t["4xL9Sk"], {
+    O = k(e, b, n);
+  return null != O ? O : null != h ? _ === a.y.MODAL && null != i ? f !== o.P.BLOCKED ? E.intl.format(E.t["4xL9Sk"], {
     applicationName: h,
     interactionUserHook: i,
     integrationOwnerHook: r
@@ -224,7 +224,7 @@ function j(e, t) {
     applicationName: h,
     interactionUserHook: i,
     integrationOwnerHook: r
-  }) : f !== a.P.BLOCKED ? E.intl.format(E.t.AXQufH, {
+  }) : f !== o.P.BLOCKED ? E.intl.format(E.t.AXQufH, {
     applicationName: h,
     channelName: b,
     channelHook: y,
@@ -234,7 +234,7 @@ function j(e, t) {
     channelName: b,
     channelHook: y,
     integrationOwnerHook: r
-  }) : f !== a.P.BLOCKED ? E.intl.format(E.t.IZg0VV, {
+  }) : f !== o.P.BLOCKED ? E.intl.format(E.t.IZg0VV, {
     channelName: b,
     channelHook: y
   }) : E.intl.format(E.t.lOIOSE, {
@@ -267,8 +267,8 @@ function B(e) {
   let n = N(e, l.D.NOTIFICATION_TYPE),
     r = N(e, l.D.JOIN_ATTEMPTS),
     i = N(e, l.D.RAID_DATETIME),
-    a = N(e, l.D.DMS_SENT),
-    o = N(e, l.D.RAID_TYPE),
+    o = N(e, l.D.DMS_SENT),
+    a = N(e, l.D.RAID_TYPE),
     s = N(e, l.D.RESOLVED_REASON),
     c = N(e, l.D.DECISION_ID),
     u = N(e, l.D.SUSPICIOUS_MENTION_ACTIVITY_UNTIL);
@@ -276,8 +276,8 @@ function B(e) {
     notificationType: null != (t = G(n)) ? t : void 0,
     joinAttempts: null != r ? parseInt(r) : void 0,
     raidDatetime: null != i ? new Date(i) : void 0,
-    dmsSent: null != a ? parseInt(a) : void 0,
-    raidType: null != o ? o : void 0,
+    dmsSent: null != o ? parseInt(o) : void 0,
+    raidType: null != a ? a : void 0,
     resolvedReason: null != s ? s : void 0,
     decisionId: null != c ? c : void 0,
     suspiciousMentionActivityUntil: null != u ? new Date(u) : void 0
@@ -311,7 +311,7 @@ function V(e) {
 function F(e) {
   let t = r.useMemo(() => V(e), [e]),
     n = (0, f.e7)([_.Z], () => _.Z.getChannel(t.embedChannelId), [t.embedChannelId]);
-  return O(y({}, t), {
+  return v(y({}, t), {
     embedChannel: n
   })
 }

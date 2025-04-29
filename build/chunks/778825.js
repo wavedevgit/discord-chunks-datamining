@@ -1,6 +1,6 @@
 /** Chunk was on web.js **/
 "use strict";
-let r, i, a, o, s, l, c, u, d, f;
+let r, i, o, a, s, l, c, u, d, f;
 n.d(t, {
   Z: () => B
 });
@@ -23,11 +23,11 @@ function y(e) {
   d = e.guild, E = m.QZA.OPEN, b = {}, f = e.source
 }
 
-function v() {
+function O() {
   E = m.QZA.CLOSED, b = {}, f = void 0
 }
 
-function O() {
+function v() {
   E = m.QZA.SUBMITTING, b = {}
 }
 
@@ -63,14 +63,14 @@ function C(e) {
   let {
     profileEffectId: t
   } = e;
-  a = t
+  o = t
 }
 
 function R(e) {
   let {
     banner: t
   } = e;
-  o = t
+  a = t
 }
 
 function P(e) {
@@ -110,7 +110,7 @@ function M() {
 }
 
 function k() {
-  o = void 0, s = void 0, l = void 0, u = void 0, a = void 0
+  a = void 0, s = void 0, l = void 0, u = void 0, o = void 0
 }
 
 function j() {
@@ -118,7 +118,7 @@ function j() {
 }
 
 function U() {
-  x(), v()
+  x(), O()
 }
 class G extends(_ = p.ZP.Store) {
   getFormState() {
@@ -128,7 +128,7 @@ class G extends(_ = p.ZP.Store) {
     return b
   }
   showNotice() {
-    return void 0 !== r || void 0 !== i || void 0 !== a || void 0 !== o || void 0 !== s || void 0 !== l || void 0 !== c || void 0 !== u
+    return void 0 !== r || void 0 !== i || void 0 !== o || void 0 !== a || void 0 !== s || void 0 !== l || void 0 !== c || void 0 !== u
   }
   getIsSubmitDisabled() {
     return void 0 !== s && s.length > m.tPV
@@ -140,10 +140,10 @@ class G extends(_ = p.ZP.Store) {
     return i
   }
   getPendingProfileEffectId() {
-    return a
+    return o
   }
   getPendingBanner() {
-    return o
+    return a
   }
   getPendingBio() {
     return s
@@ -164,8 +164,8 @@ class G extends(_ = p.ZP.Store) {
     return {
       pendingAvatar: r,
       pendingAvatarDecoration: i,
-      pendingProfileEffectId: a,
-      pendingBanner: o,
+      pendingProfileEffectId: o,
+      pendingBanner: a,
       pendingBio: s,
       pendingPronouns: l,
       pendingNickname: c,
@@ -184,7 +184,7 @@ let B = new G(h.Z, {
   GUILD_IDENTITY_SETTINGS_INIT: y,
   GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM: U,
   GUILD_IDENTITY_SETTINGS_SET_GUILD: I,
-  GUILD_IDENTITY_SETTINGS_SUBMIT: O,
+  GUILD_IDENTITY_SETTINGS_SUBMIT: v,
   GUILD_IDENTITY_SETTINGS_SUBMIT_FAILURE: S,
   USER_PROFILE_UPDATE_FAILURE: T,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR: A,

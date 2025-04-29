@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(642613), n(583741), n(415506);
 var r = n(192379),
   i = n(512722),
-  a = n.n(i),
-  o = n(392711),
+  o = n.n(i),
+  a = n(392711),
   s = n(913527),
   l = n.n(s),
   c = n(442837),
@@ -29,7 +29,7 @@ function b() {
     excludeReverseTrial: !1
   }, n = (0, c.e7)([f.default], () => f.default.getCurrentUser()), i = (0, c.Wu)([p.Z], () => p.Z.getFractionalPremium({
     excludeReverseTrial: t
-  })), s = (0, c.e7)([p.Z], () => p.Z.fetchedAllEntitlements), b = (0, c.Wu)([p.Z], () => p.Z.getUnactivatedFractionalPremiumUnits()), y = (0, c.e7)([_.ZP], () => _.ZP.getPremiumTypeSubscription()), [v, O] = r.useState({
+  })), s = (0, c.e7)([p.Z], () => p.Z.fetchedAllEntitlements), b = (0, c.Wu)([p.Z], () => p.Z.getUnactivatedFractionalPremiumUnits()), y = (0, c.e7)([_.ZP], () => _.ZP.getPremiumTypeSubscription()), [O, v] = r.useState({
     isFractionalPremiumActive: !1,
     fractionalState: E.a$.NONE,
     startsAt: l()(0),
@@ -53,10 +53,10 @@ function b() {
         unactivatedUnits: [],
         fetched: s
       };
-      O(t => (0, o.isEqual)(t, e) ? t : e);
+      v(t => (0, a.isEqual)(t, e) ? t : e);
       return
     }
-    let e = i.filter(e => null != e.endsAt && null != e.startsAt).sort((e, t) => (a()(null != e.endsAt && null != t.endsAt, "endsAt should not be null"), e.endsAt < t.endsAt) ? -1 : +(e.endsAt > t.endsAt));
+    let e = i.filter(e => null != e.endsAt && null != e.startsAt).sort((e, t) => (o()(null != e.endsAt && null != t.endsAt, "endsAt should not be null"), e.endsAt < t.endsAt) ? -1 : +(e.endsAt > t.endsAt));
     if (e.reverse(), e.length > 0 && (e.length !== i.length || null == e[0].startsAt || null == e[0].endsAt)) {
       let e = Array.from(i.values()).map(e => e.id),
         t = "fractional redemption entitlements should have startsAt/endsAt";
@@ -68,7 +68,7 @@ function b() {
     }
     let t = e.length > 0,
       r = E.a$.NONE;
-    t && (r = null != y && y.status === g.O0b.PAUSED ? E.a$.FP_SUB_PAUSED : E.a$.FP_ONLY), O({
+    t && (r = null != y && y.status === g.O0b.PAUSED ? E.a$.FP_SUB_PAUSED : E.a$.FP_ONLY), v({
       isFractionalPremiumActive: t,
       fractionalState: r,
       startsAt: t ? l()(e[0].startsAt) : l()(0),
@@ -77,5 +77,5 @@ function b() {
       unactivatedUnits: b,
       fetched: s
     })
-  }, [n, i, y, b, s]), v
+  }, [n, i, y, b, s]), O
 }

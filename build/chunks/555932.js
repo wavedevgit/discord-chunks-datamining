@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => O
 }), n(388685), n(583741);
 var r = n(200651),
   i = n(192379),
-  a = n(272573),
-  o = n(442837),
+  o = n(272573),
+  a = n(442837),
   s = n(481060),
   l = n(607070),
   c = n(267642),
@@ -26,9 +26,9 @@ function y(e) {
     fillFactor: t,
     guildBoostCount: n,
     premiumTier: r,
-    isRevealed: a,
-    useReducedMotion: o
-  } = e, [l, c] = i.useState(o ? r : -1), [u, _] = i.useState(0 === n), [p, m] = i.useState(!1), b = i.useRef(!0);
+    isRevealed: o,
+    useReducedMotion: a
+  } = e, [l, c] = i.useState(a ? r : -1), [u, _] = i.useState(0 === n), [p, m] = i.useState(!1), b = i.useRef(!0);
 
   function y(e) {
     let {
@@ -41,13 +41,13 @@ function y(e) {
       }
   }
   let {
-    widthFactor: v
+    widthFactor: O
   } = (0, s.q_F)({
     from: {
       widthFactor: 0
     },
     to: {
-      widthFactor: a ? t : 0
+      widthFactor: o ? t : 0
     },
     config: {
       tension: 15,
@@ -68,17 +68,17 @@ function y(e) {
     b.current = !1
   }, []), {
     isProgressBarAnimationComplete: u,
-    progressBarFillWidthFactor: v,
+    progressBarFillWidthFactor: O,
     setShouldFireConfetti: m,
     shouldFireConfetti: p,
     tierMarkerAnimationPosition: l
   }
 }
 
-function v(e) {
+function O(e) {
   let {
     guild: t
-  } = e, n = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), [s, h] = i.useState(!1), [g, E] = i.useState(0), v = i.useRef(null), O = s || n, {
+  } = e, n = (0, a.e7)([l.Z], () => l.Z.useReducedMotion), [s, h] = i.useState(!1), [g, E] = i.useState(0), O = i.useRef(null), v = s || n, {
     fillFactor: I,
     totalAvailableBoostsCount: S
   } = i.useMemo(() => (0, c.Hl)(t), [t]), {
@@ -89,7 +89,7 @@ function v(e) {
     tierMarkerAnimationPosition: R
   } = y({
     fillFactor: I,
-    isRevealed: O,
+    isRevealed: v,
     useReducedMotion: n,
     premiumTier: t.premiumTier,
     guildBoostCount: S
@@ -115,7 +115,7 @@ function v(e) {
     }),
     children: [(0, r.jsxs)("div", {
       className: p.progressBarScrubber,
-      children: [(0, r.jsx)(a.animated.div, {
+      children: [(0, r.jsx)(o.animated.div, {
         className: p.progressBarFill,
         style: {
           width: T.to({
@@ -127,7 +127,7 @@ function v(e) {
         className: p.progressBarTrack
       })]
     }), b.map(e => (0, r.jsx)(d.Z, {
-      confettiTriggerRef: v,
+      confettiTriggerRef: O,
       guild: t,
       isProgressBarAnimationComplete: A,
       setConfettiCount: E,
@@ -138,7 +138,7 @@ function v(e) {
       children: (0, c.nW)(e)
     }, e)), (0, r.jsx)(u.Z, {
       confettiCount: g,
-      confettiTriggerRef: v,
+      confettiTriggerRef: O,
       isFiring: C
     })]
   })

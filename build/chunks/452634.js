@@ -1,18 +1,18 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(131704),
   i = n(592125),
-  a = n(979651);
+  o = n(979651);
 
-function o(e) {
+function a(e) {
   var t;
   let {
     channelId: n,
-    userId: o,
+    userId: a,
     activity: s
-  } = e, l = i.Z.getChannel(n), c = (null == s ? void 0 : s.session_id) == null || null != l && (0, r.Qm)(l.type) ? n : null == (t = a.Z.getVoiceStateForSession(o, null == s ? void 0 : s.session_id)) ? void 0 : t.channelId;
+  } = e, l = i.Z.getChannel(n), c = (null == s ? void 0 : s.session_id) == null || null != l && (0, r.Qm)(l.type) ? n : null == (t = o.Z.getVoiceStateForSession(a, null == s ? void 0 : s.session_id)) ? void 0 : t.channelId;
   return null != c ? c : void 0
 }

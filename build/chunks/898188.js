@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(748780),
   l = n(399606),
   c = n(481060),
@@ -21,8 +21,8 @@ var r = n(200651),
   E = n(931261),
   b = n(216701),
   y = n(388032),
-  v = n(402765);
-let O = 60;
+  O = n(402765);
+let v = 60;
 
 function I(e) {
   let {
@@ -48,22 +48,22 @@ function S(e) {
   let {
     channelId: n,
     emojiId: i,
-    emojiName: a
-  } = e, o = (0, l.e7)([_.Z], () => _.Z.getChannel(n));
-  if (null == o) return null;
-  let s = null != (t = (0, f.KS)(o)) ? t : c.VL1;
+    emojiName: o
+  } = e, a = (0, l.e7)([_.Z], () => _.Z.getChannel(n));
+  if (null == a) return null;
+  let s = null != (t = (0, f.KS)(a)) ? t : c.VL1;
   return (0, r.jsx)(b.Z, {
     emojiId: i,
-    emojiName: a,
+    emojiName: o,
     size: b.R.MEDIUM,
     defaultComponent: (0, r.jsx)(s, {
-      className: v.channelIcon
+      className: O.channelIcon
     })
   })
 }
 
 function T(e) {
-  var t, n, a, d;
+  var t, n, o, d;
   let {
     guildId: f,
     channel: _,
@@ -96,23 +96,23 @@ function T(e) {
     null != T && (0, h.gp)(f, T.channelId)
   }, [f, T]);
   return null == E || N && !R ? null : (0, r.jsx)("div", {
-    className: o()(v.container, p),
+    className: a()(O.container, p),
     children: R && null != T ? (0, r.jsx)(s.Z.div, {
       style: {
         marginBottom: D.interpolate({
           inputRange: [0, 1],
-          outputRange: [-O, 0]
+          outputRange: [-v, 0]
         })
       },
       children: (0, r.jsxs)(c.P3F, {
-        className: o()(v.banner, v.clickable),
+        className: a()(O.banner, O.clickable),
         onClick: L,
         children: [(0, r.jsx)(S, {
           channelId: T.channelId,
           emojiId: null == (t = T.emoji) ? void 0 : t.id,
           emojiName: null == T || null == (n = T.emoji) ? void 0 : n.name
         }), (0, r.jsxs)("div", {
-          className: v.text,
+          className: O.text,
           children: [(0, r.jsx)(c.Text, {
             variant: "text-md/semibold",
             color: "header-primary",
@@ -123,28 +123,28 @@ function T(e) {
             action: T
           })]
         }), (0, r.jsx)("div", {
-          className: v.iconCircle,
+          className: O.iconCircle,
           children: (0, r.jsx)(c.ZSh, {
             size: "xs",
             color: C.hex(),
-            className: v.nextIcon
+            className: O.nextIcon
           })
         })]
       })
     }) : (0, r.jsxs)(s.Z.div, {
-      className: v.banner,
+      className: O.banner,
       style: {
         marginBottom: w.interpolate({
           inputRange: [0, 1],
-          outputRange: [-O, 0]
+          outputRange: [-v, 0]
         })
       },
       children: [(0, r.jsx)(S, {
         channelId: E.channelId,
-        emojiId: null == (a = E.emoji) ? void 0 : a.id,
+        emojiId: null == (o = E.emoji) ? void 0 : o.id,
         emojiName: null == E || null == (d = E.emoji) ? void 0 : d.name
       }), (0, r.jsxs)("div", {
-        className: v.text,
+        className: O.text,
         children: [(0, r.jsx)(c.Text, {
           variant: "text-md/semibold",
           color: "header-primary",
@@ -157,7 +157,7 @@ function T(e) {
       }), b ? (0, r.jsx)(c.owK, {
         size: "custom",
         color: "currentColor",
-        className: v.completed,
+        className: O.completed,
         secondaryColor: C.hex(),
         width: 20,
         height: 20
@@ -171,11 +171,11 @@ function A(e) {
     guildId: t,
     channel: n,
     className: i
-  } = e, a = (0, E.g)(t), o = (0, l.e7)([p.ZP], () => {
+  } = e, o = (0, E.g)(t), a = (0, l.e7)([p.ZP], () => {
     var e;
     return (null == (e = p.ZP.getSelfMember(t)) ? void 0 : e.isPending) === !0
   });
-  return (0, g.PE)(t) || o || !a ? null : (0, r.jsx)(T, {
+  return (0, g.PE)(t) || a || !o ? null : (0, r.jsx)(T, {
     guildId: t,
     channel: n,
     className: i

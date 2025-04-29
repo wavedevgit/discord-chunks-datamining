@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(569545),
   i = n(458725),
-  a = n(442741),
-  o = n(981631);
+  o = n(442741),
+  a = n(981631);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -34,9 +34,9 @@ let c = {
     let {
       activeStreams: t
     } = e;
-    return t.filter(e => e.state === o.jm8.FAILED).map(e => l({
+    return t.filter(e => e.state === a.jm8.FAILED).map(e => l({
       type: i.u.STREAM_FAILED_TO_START
-    }, (0, a.rT)((0, r.V9)(e))))
+    }, (0, o.rT)((0, r.V9)(e))))
   },
   makeErrorContextKey: e => "".concat(e.streamKey, ":").concat(e.mediaSessionId)
 }

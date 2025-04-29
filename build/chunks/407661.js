@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(481060),
   c = n(367907),
@@ -21,20 +21,20 @@ var r = n(200651),
   E = n(981631),
   b = n(388032),
   y = n(453091);
-let v = 2,
-  O = 10;
+let O = 2,
+  v = 10;
 
 function I(e, t) {
   let n = e.id,
     r = t.id;
   return (0, s.e7)([m.Z], () => {
     let e = r;
-    for (let t = 0; t < O; t++) {
+    for (let t = 0; t < v; t++) {
       let r = m.Z.getMessage(n, e);
       if ((null == r ? void 0 : r.type) !== E.uaV.REPLY || null == r.messageReference) return t;
       e = r.messageReference.message_id
     }
-    return O
+    return v
   }, [n, r])
 }
 
@@ -42,24 +42,24 @@ function S(e) {
   let {
     channel: t,
     message: n,
-    replyChainLength: a
+    replyChainLength: o
   } = e;
 
-  function o() {
+  function a() {
     (0, f.A6)(t.id), (0, h.R6)(t, n, "Reply Chain Nudge")
   }
-  let s = i.useRef(a);
+  let s = i.useRef(o);
   return i.useEffect(() => {
-    s.current = a
+    s.current = o
   }), i.useEffect(() => {
     (0, c.yw)(E.rMx.THREAD_NUDGE_SHOWN, {
-      type: "Reply Chain (".concat(v + 1, ")"),
+      type: "Reply Chain (".concat(O + 1, ")"),
       reply_chain_length: s.current + 1,
       channel_id: t.id,
       guild_id: t.guild_id
     })
   }, [t]), (0, r.jsxs)(l.P3F, {
-    onClick: o,
+    onClick: a,
     className: y.threadSuggestionBar,
     focusProps: {
       offset: {
@@ -72,7 +72,7 @@ function S(e) {
       className: y.text,
       variant: "text-sm/normal",
       children: b.intl.format(b.t.B3V0FB, {
-        count: Math.min(O, a + 1)
+        count: Math.min(v, o + 1)
       })
     }), (0, r.jsx)(l.Text, {
       color: "text-link",
@@ -89,16 +89,16 @@ function T(e) {
     chatInputType: n
   } = e, {
     channel: i,
-    message: a,
+    message: o,
     shouldMention: s,
     showMentionToggle: c
   } = t, {
     guildId: h,
     nick: m,
-    colorString: O,
+    colorString: v,
     colorStrings: T,
     colorRoleName: A
-  } = (0, u.ZP)(a), N = (0, d.X)(h, T), C = I(i, a), R = (0, p.NE)(i, a), P = n.showThreadPromptOnReply && C >= v && R, w = () => (0, _.uL)(E.Z5c.CHANNEL(i.getGuildId(), i.id, a.id));
+  } = (0, u.ZP)(o), N = (0, d.X)(h, T), C = I(i, o), R = (0, p.NE)(i, o), P = n.showThreadPromptOnReply && C >= O && R, w = () => (0, _.uL)(E.Z5c.CHANNEL(i.getGuildId(), i.id, o.id));
 
   function D(e) {
     e.stopPropagation(), (0, f.qx)(i.id, !s)
@@ -125,13 +125,13 @@ function T(e) {
           },
           children: (0, r.jsx)(l.Text, {
             color: "header-secondary",
-            className: o()(y.text, y.replyLabel),
+            className: a()(y.text, y.replyLabel),
             variant: "text-sm/normal",
             children: b.intl.format(b.t["8E4Gxc"], {
               userHook: (e, t) => (0, r.jsx)(l.PUh, {
                 className: y.name,
                 name: m,
-                color: O,
+                color: v,
                 roleName: A,
                 roleColors: N
               }, t)
@@ -147,7 +147,7 @@ function T(e) {
                   onMouseEnter: t,
                   onMouseLeave: n,
                   onFocus: i,
-                  onBlur: a
+                  onBlur: o
                 } = e;
                 return (0, r.jsx)(l.P3F, {
                   role: "switch",
@@ -156,7 +156,7 @@ function T(e) {
                   onMouseEnter: t,
                   onMouseLeave: n,
                   onFocus: i,
-                  onBlur: a,
+                  onBlur: o,
                   children: (0, r.jsxs)(l.Text, {
                     variant: "text-sm/bold",
                     color: s ? "text-link" : "text-muted",
@@ -180,7 +180,7 @@ function T(e) {
         })]
       }), P && (0, r.jsx)(S, {
         channel: i,
-        message: a,
+        message: o,
         replyChainLength: C
       })]
     })

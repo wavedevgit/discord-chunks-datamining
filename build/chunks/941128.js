@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => J
 }), n(388685), n(415506), n(539854), n(290780);
 var r, i = n(392711),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(433517),
   l = n(570140),
   c = n(51025),
@@ -28,8 +28,8 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 let y = [E.ff.AUTHENTICATION_FAILED, E.ff.NOT_ENTITLED],
-  v = "DispatchManagerStore",
-  O = [],
+  O = "DispatchManagerStore",
+  v = [],
   I = [],
   S = !1,
   T = null,
@@ -41,11 +41,11 @@ let y = [E.ff.AUTHENTICATION_FAILED, E.ff.NOT_ENTITLED],
 
 function w() {
   let e = {
-    queue: O,
+    queue: v,
     paused: S,
     userActions: Array.from(C)
   };
-  s.K.set(v, e)
+  s.K.set(O, e)
 }
 
 function D(e, t) {
@@ -53,7 +53,7 @@ function D(e, t) {
 }
 
 function L() {
-  let e = O[0];
+  let e = v[0];
   if (null != e) {
     let {
       comboId: t,
@@ -73,24 +73,24 @@ function L() {
 
 function x(e, t) {
   let n = (0, _.Tu)(e, t);
-  return O.findIndex(e => e.comboId === n)
+  return v.findIndex(e => e.comboId === n)
 }
 
 function M(e, t, n, r) {
   let i = (0, _.Tu)(e, t),
-    a = {
+    o = {
       comboId: i,
       action: r
     },
-    o = I.indexOf(i); - 1 !== o && I.splice(o, 1);
+    a = I.indexOf(i); - 1 !== a && I.splice(a, 1);
   let s = x(e, t);
-  0 !== s && (n ? -1 === s && (O.push(a), L()) : (s > 0 && O.splice(s, 1), O.unshift(a), L())), !n && S && p.Z.resume(), w()
+  0 !== s && (n ? -1 === s && (v.push(o), L()) : (s > 0 && v.splice(s, 1), v.unshift(o), L())), !n && S && p.Z.resume(), w()
 }
 
 function k(e, t) {
   let n = (0, _.Tu)(e, t),
     r = I.indexOf(n); - 1 !== r && I.splice(r, 1);
-  let i = x(e, t); - 1 !== i && (O.splice(i, 1), w()), L()
+  let i = x(e, t); - 1 !== i && (v.splice(i, 1), w()), L()
 }
 
 function j(e) {
@@ -136,7 +136,7 @@ function F(e) {
     branchId: n
   } = e, r = x(t, n);
   if (r < 1) return !1;
-  O.splice(0, 0, O.splice(r, 1)[0]), L(), S && p.Z.resume(), w()
+  v.splice(0, 0, v.splice(r, 1)[0]), L(), S && p.Z.resume(), w()
 }
 
 function Z(e) {
@@ -154,21 +154,21 @@ function H(e) {
   let n = S;
   S = t.paused, T = t.currentTask, A = t.nextTask;
   let r = !1;
-  O = O.filter(e => {
+  v = v.filter(e => {
     let {
       comboId: t
     } = e, {
       applicationId: n,
       branchId: i
-    } = (0, _.CP)(t), o = m.Z.getState(n, i), s = f.Z.getTargetBuildId(n, i), l = f.Z.getTargetManifests(n, i);
-    if (null != o && o.type === g.vxO.UP_TO_DATE && o.buildId === o.targetBuildId && o.buildId === s && a().isEqual(o.manifestIds, o.targetManifestIds) && a().isEqual(o.manifestIds, l)) {
+    } = (0, _.CP)(t), a = m.Z.getState(n, i), s = f.Z.getTargetBuildId(n, i), l = f.Z.getTargetManifests(n, i);
+    if (null != a && a.type === g.vxO.UP_TO_DATE && a.buildId === a.targetBuildId && a.buildId === s && o().isEqual(a.manifestIds, a.targetManifestIds) && o().isEqual(a.manifestIds, l)) {
       if (I.push(t), C.has(t)) {
         switch (C.get(t)) {
           case "Install":
-            c.XT(n, o);
+            c.XT(n, a);
             break;
           case "Repair":
-            c.Wx(n, o)
+            c.Wx(n, a)
         }
         C.delete(t)
       }
@@ -218,7 +218,7 @@ function z() {
 }
 
 function q() {
-  s.K.remove(v), (0, h.isDesktop)() && p.Z.pause()
+  s.K.remove(O), (0, h.isDesktop)() && p.Z.pause()
 }
 
 function Q(e) {
@@ -227,18 +227,18 @@ function Q(e) {
     action: "Patch"
   } : e)
 }
-class X extends(r = o.ZP.Store) {
+class X extends(r = a.ZP.Store) {
   initialize() {
     var e;
-    let t = null != (e = s.K.get(v)) ? e : {
+    let t = null != (e = s.K.get(O)) ? e : {
       queue: null,
       paused: null,
       userActions: null
     };
-    null != t.queue && (O = Q(t.queue)), null != t.paused && (S = t.paused), null != t.userActions && (C = new Map(Array.from(t.userActions))), this.waitFor(m.Z, u.ZP), this.syncWith([u.ZP], K), this.waitFor(m.Z)
+    null != t.queue && (v = Q(t.queue)), null != t.paused && (S = t.paused), null != t.userActions && (C = new Map(Array.from(t.userActions))), this.waitFor(m.Z, u.ZP), this.syncWith([u.ZP], K), this.waitFor(m.Z)
   }
   get activeItems() {
-    return O.map(e => {
+    return v.map(e => {
       let {
         comboId: t
       } = e;

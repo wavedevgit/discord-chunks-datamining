@@ -43,17 +43,17 @@ let _ = e => {
     guildId: r,
     closePopout: y
   } = e, _ = (0, c.Dt)(), {
-    notClaimed: O,
-    notEmailVerified: v,
+    notClaimed: v,
+    notEmailVerified: O,
     notPhoneVerified: C,
     newAccount: j,
     newMember: S
-  } = (0, l.e7)([d.Z], () => d.Z.getCheck(r), [r]), E = 0 === t ? g.intl.string(g.t["6zY8BA"]) : null, x = null, I = null;
-  return (0 === t && (O ? (x = g.intl.string(g.t.IRxUlJ), I = g.intl.string(g.t.fiNVio)) : C ? (x = g.intl.string(g.t.vW8iUF), I = g.intl.string(g.t["50gfOj"])) : v ? (x = g.intl.string(g.t.vdSOp6), I = g.intl.string(g.t.lm1UKi)) : S ? (x = g.intl.formatToPlainString(g.t.v1ktYW, {
+  } = (0, l.e7)([d.Z], () => d.Z.getCheck(r), [r]), E = 0 === t ? g.intl.string(g.t["6zY8BA"]) : null, x = null, P = null;
+  return (0 === t && (v ? (x = g.intl.string(g.t.IRxUlJ), P = g.intl.string(g.t.fiNVio)) : C ? (x = g.intl.string(g.t.vW8iUF), P = g.intl.string(g.t["50gfOj"])) : O ? (x = g.intl.string(g.t.vdSOp6), P = g.intl.string(g.t.lm1UKi)) : S ? (x = g.intl.formatToPlainString(g.t.v1ktYW, {
     min: p.YeM.MEMBER_AGE
-  }), I = g.intl.string(g.t.BddRzc)) : j && (x = g.intl.formatToPlainString(g.t["sncw4+"], {
+  }), P = g.intl.string(g.t.BddRzc)) : j && (x = g.intl.formatToPlainString(g.t["sncw4+"], {
     min: p.YeM.ACCOUNT_AGE
-  }), I = g.intl.string(g.t.BddRzc))), null == E || null == x) ? null : (0, i.jsxs)(o.VqE, {
+  }), P = g.intl.string(g.t.BddRzc))), null == E || null == x) ? null : (0, i.jsxs)(o.VqE, {
     className: m.container,
     "aria-labelledby": _,
     children: [(0, i.jsx)("img", {
@@ -72,9 +72,9 @@ let _ = e => {
         children: x
       }), (0, i.jsxs)("div", {
         className: m.buttonContainer,
-        children: [null != I ? (0, i.jsx)(o.zxk, {
+        children: [null != P ? (0, i.jsx)(o.zxk, {
           onClick: () => {
-            O ? a.j() : C ? (0, o.ZDy)(async () => {
+            v ? a.j() : C ? (0, o.ZDy)(async () => {
               let {
                 default: e
               } = await Promise.resolve().then(n.bind(n, 607018));
@@ -83,7 +83,7 @@ let _ = e => {
               }, t))
             }, {
               modalKey: f.M
-            }) : v && (s.Z.verifyResend(), (0, o.h7j)(e => {
+            }) : O && (s.Z.verifyResend(), (0, o.h7j)(e => {
               var t, n, r;
               return (0, i.jsx)(o.ConfirmModal, (n = b({
                 header: g.intl.string(g.t.LykQYm),
@@ -109,8 +109,8 @@ let _ = e => {
             })), y()
           },
           className: m.primaryButton,
-          children: I
-        }) : null, O || C || v ? (0, i.jsx)(o.zxk, {
+          children: P
+        }) : null, v || C || O ? (0, i.jsx)(o.zxk, {
           onClick: y,
           look: o.zxk.Looks.BLANK,
           className: m.cancel,

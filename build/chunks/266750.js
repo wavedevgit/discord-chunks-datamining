@@ -5,8 +5,8 @@ n.d(t, {
 }), n(467055);
 var r = n(392711),
   i = n.n(r),
-  a = n(250407),
-  o = n(710845),
+  o = n(250407),
+  a = n(710845),
   s = n(914010),
   l = n(70956),
   c = n(287328);
@@ -19,7 +19,7 @@ function u(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let d = new o.Z("NonGuildVersions");
+let d = new a.Z("NonGuildVersions");
 class f {
   async getCommittedVersions() {
     try {
@@ -42,7 +42,7 @@ class f {
     if (u(this, "actions", {
         CONNECTION_OPEN: (e, t) => this.handleConnectionOpen(e, t),
         BACKGROUND_SYNC: (e, t) => this.handleConnectionOpen(e, t)
-      }), !(0, a.O)()) return;
+      }), !(0, o.O)()) return;
     s.Z.addChangeListener(i().throttle(() => {
       var e;
       null == (e = c.Z.database()) || e.transaction(e => {

@@ -2,9 +2,9 @@
 "use strict";
 let r, i;
 n.d(t, {
-  Z: () => v
+  Z: () => O
 });
-var a, o = n(442837),
+var o, a = n(442837),
   s = n(668757),
   l = n(433517),
   c = n(570140),
@@ -37,7 +37,7 @@ function b(e) {
     p.Z.saveBlockedDomains(t), l.K.set("BlockedDomainRevision", n)
   }
 }
-class y extends(a = o.ZP.Store) {
+class y extends(o = a.ZP.Store) {
   initialize() {
     i = null, l.K.get(g) && (l.K.remove(E), l.K.remove(g))
   }
@@ -61,12 +61,12 @@ class y extends(a = o.ZP.Store) {
     let t = n(647229);
     if (null == r) return this.getBlockedDomainList(), null;
     let i = (0, d.F)(e),
-      a = new t.hash.sha256,
-      o = t.codec.hex.fromBits(a.update(i).finalize()),
+      o = new t.hash.sha256,
+      a = t.codec.hex.fromBits(o.update(i).finalize()),
       s = "";
-    r[o] && (s = i);
+    r[a] && (s = i);
     let l = i.indexOf(".");
-    for (; - 1 !== l && "" === s;) i = i.substring(l + 1), a.reset(), r[o = t.codec.hex.fromBits(a.update(i).finalize())] && (s = i), l = i.indexOf(".");
+    for (; - 1 !== l && "" === s;) i = i.substring(l + 1), o.reset(), r[a = t.codec.hex.fromBits(o.update(i).finalize())] && (s = i), l = i.indexOf(".");
     return s
   }
   isBlockedDomain(e) {
@@ -77,6 +77,6 @@ class y extends(a = o.ZP.Store) {
   }
 }
 m(y, "displayName", "BlockedDomainStore");
-let v = new y(c.Z, {
+let O = new y(c.Z, {
   BLOCKED_DOMAIN_LIST_FETCHED: b
 })

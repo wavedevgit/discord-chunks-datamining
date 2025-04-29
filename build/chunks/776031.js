@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   s = n(846027),
   l = n(2052),
   c = n(451467),
@@ -30,7 +30,7 @@ function y(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function v(e) {
   return e
 }
 
-function O(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,21 +55,21 @@ function O(e, t) {
 }
 
 function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function S(e, t) {
-  (0, o.ZDy)(async () => {
+  (0, a.ZDy)(async () => {
     let {
       default: e
     } = await n.e("28479").then(n.bind(n, 78865));
-    return n => (0, r.jsx)(e, I(v({}, n), {
+    return n => (0, r.jsx)(e, I(O({}, n), {
       analyticsSource: t
     }))
   }, {
-    contextKey: e === m.IlC.POPOUT ? o.u1M : o.z1l
+    contextKey: e === m.IlC.POPOUT ? a.u1M : a.z1l
   })
 }
 
@@ -77,13 +77,13 @@ function T(e, t) {
   let {
     preset: n,
     resolution: y,
-    fps: O
-  } = (0, a.cj)([u.Z], () => u.Z.getState()), T = (0, a.e7)([_.Z], () => _.Z.getGoLiveSource()), A = (0, a.e7)([h.default], () => h.default.getCurrentUser()), N = (0, a.e7)([f.Z], () => {
+    fps: v
+  } = (0, o.cj)([u.Z], () => u.Z.getState()), T = (0, o.e7)([_.Z], () => _.Z.getGoLiveSource()), A = (0, o.e7)([h.default], () => h.default.getCurrentUser()), N = (0, o.e7)([f.Z], () => {
     var t;
     return null == (t = f.Z.getGuild(null == e ? void 0 : e.guildId)) ? void 0 : t.premiumTier
   }), {
     location: C
-  } = (0, l.O)(), R = (0, a.e7)([p.Z, d.Z], () => d.Z.getChannel(p.Z.getVoiceChannelId())), P = i.useCallback((e, n, r, i) => {
+  } = (0, l.O)(), R = (0, o.e7)([p.Z, d.Z], () => d.Z.getChannel(p.Z.getVoiceChannelId())), P = i.useCallback((e, n, r, i) => {
     if (e) {
       if (null != T) {
         let e = {
@@ -102,23 +102,23 @@ function T(e, t) {
           audioDeviceGuid: T.cameraSource.audioDeviceGuid
         }), s.Z.setGoLiveSource(e)
       }
-    } else S(t, I(v({}, C), {
+    } else S(t, I(O({}, C), {
       object: m.qAy.RADIO_ITEM,
       objectType: i
     }))
   }, [t, C, T]);
   if (null == e) return null;
-  let w = n === g.tI.PRESET_DOCUMENTS ? g.ws.FPS_30 : O,
+  let w = n === g.tI.PRESET_DOCUMENTS ? g.ws.FPS_30 : v,
     D = g.af.map(e => {
       let {
         value: t,
         label: n
       } = e, i = (0, c.Z)(g.tI.PRESET_CUSTOM, y, t, A, N, R);
-      return (0, r.jsx)(o.k5B, {
+      return (0, r.jsx)(a.k5B, {
         group: "stream-settings-fps",
         id: "stream-settings-fps-".concat(t),
         label: n,
-        checked: t === O,
+        checked: t === v,
         action: () => P(i, y, t, m.Qqv.RESOLUTION)
       }, "stream-settings-fps-".concat(t))
     }),
@@ -127,7 +127,7 @@ function T(e, t) {
         value: t,
         label: n
       } = e, i = (0, c.Z)(g.tI.PRESET_CUSTOM, t, w, A, N, R);
-      return (0, r.jsx)(o.k5B, {
+      return (0, r.jsx)(a.k5B, {
         group: "stream-settings-resolution",
         id: "stream-settings-resolution-".concat(t),
         label: n,
@@ -136,10 +136,10 @@ function T(e, t) {
       }, "stream-settings-resolution-".concat(t))
     });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(o.kSQ, {
+    children: [(0, r.jsx)(a.kSQ, {
       label: b.intl.string(b.t.SkkeIi),
       children: D
-    }), (0, r.jsx)(o.kSQ, {
+    }), (0, r.jsx)(a.kSQ, {
       label: b.intl.string(b.t.rHyPXl),
       children: L
     })]

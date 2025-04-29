@@ -19,9 +19,9 @@ var r = n(200651),
   b = n(921944),
   y = n(680278),
   _ = n(388032),
-  O = n(388298);
+  v = n(388298);
 
-function v(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -60,21 +60,21 @@ let C = {
       var e;
       switch (null == j || null == (e = j.popout) ? void 0 : e.type) {
         case p.J.LEVEL_REACHED:
-          return (0, r.jsx)(g.jG, v({
+          return (0, r.jsx)(g.jG, O({
             guildId: t
           }, j.popout));
         case p.J.PERKS_AVAILABLE:
-          return (0, r.jsx)(g.$h, v({
+          return (0, r.jsx)(g.$h, O({
             guildId: t
           }, j.popout));
         case p.J.PERKS_PURCHASABLE:
-          return (0, r.jsx)(g.yI, v({
+          return (0, r.jsx)(g.yI, O({
             guildId: t
           }, j.popout));
         default:
           return (0, r.jsx)("div", {})
       }
-    }, [t, null == j ? void 0 : j.popout]), x = (0, a.s9z)(a.JQI), I = (0, s.e7)([d.Z], () => d.Z.hasLayers()), [P, w] = i.useState(null), N = null == P ? "animation" : "LOOP";
+    }, [t, null == j ? void 0 : j.popout]), x = (0, a.s9z)(a.JQI), P = (0, s.e7)([d.Z], () => d.Z.hasLayers()), [I, w] = i.useState(null), N = null == I ? "animation" : "LOOP";
     i.useEffect(() => {
       (null == j ? void 0 : j.popout) == null && w(null)
     }, [null == j ? void 0 : j.popout]);
@@ -82,15 +82,15 @@ let C = {
       w(e)
     }, []);
     return (0, r.jsx)(a.yRy, {
-      shouldShow: (null == j ? void 0 : j.popout) != null && !(x || I),
+      shouldShow: (null == j ? void 0 : j.popout) != null && !(x || P),
       nudgeAlignIntoViewport: !0,
       animationPosition: "bottom",
       position: "right",
       renderPopout: E,
       children: e => {
         var i, s;
-        return (0, r.jsx)(u.m, (i = v({}, e), s = s = {
-          className: O.container,
+        return (0, r.jsx)(u.m, (i = O({}, e), s = s = {
+          className: v.container,
           id: "skill-trees-".concat(t),
           renderIcon: e => (0, r.jsx)(a.$Eu, {
             size: "md",
@@ -98,10 +98,10 @@ let C = {
             color: "currentColor"
           }),
           background: (null == j ? void 0 : j.popout) != null && (0, r.jsx)("div", {
-            className: O.lottieContainer,
+            className: v.lottieContainer,
             children: (0, r.jsx)(a.kci, {
               nextScene: N,
-              className: O.lottie,
+              className: v.lottie,
               sceneSegments: C,
               importData: () => n.e("50821").then(n.t.bind(n, 548421, 19)),
               onScenePlay: Z,
@@ -112,7 +112,7 @@ let C = {
           }),
           text: (0, r.jsx)("span", {
             className: o()({
-              [O.textImportant]: (null == j ? void 0 : j.showUnread) === !0
+              [v.textImportant]: (null == j ? void 0 : j.showUnread) === !0
             }),
             children: _.intl.string(y.default.yv3DJC)
           }),

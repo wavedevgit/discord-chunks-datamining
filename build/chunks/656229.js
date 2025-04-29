@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  a = n(906732),
-  o = n(222062),
+  o = n(906732),
+  a = n(222062),
   s = n(867176),
   l = n(654904),
   c = n(486324),
@@ -28,8 +28,8 @@ function _(e) {
     onUpsellClick: b
   } = e, {
     newestAnalyticsLocation: y
-  } = (0, a.ZP)(), v = p || (null == n ? void 0 : n.canUsePremiumProfileCustomization) || !1, O = v ? i.vdY : i.SrA, I = (0, o.M)(v), S = () => {
-    if (!v && !I) {
+  } = (0, o.ZP)(), O = p || (null == n ? void 0 : n.canUsePremiumProfileCustomization) || !1, v = O ? i.vdY : i.SrA, I = (0, a.M)(O), S = () => {
+    if (!O && !I) {
       null == b || b();
       return
     }(0, l.$r)({
@@ -50,13 +50,13 @@ function _(e) {
     children: !E && (0, r.jsxs)(i.P3F, {
       onClick: S,
       className: f.clickable,
-      children: [(0, r.jsx)(O, {
+      children: [(0, r.jsx)(v, {
         size: "xs",
         color: "white"
       }), (0, r.jsx)(i.X6q, {
         variant: "text-sm/medium",
         color: "always-white",
-        children: v || I ? d.intl.string(d.t.N0bC3N) : d.intl.string(d.t.O1sT5u)
+        children: O || I ? d.intl.string(d.t.N0bC3N) : d.intl.string(d.t.O1sT5u)
       })]
     })
   })

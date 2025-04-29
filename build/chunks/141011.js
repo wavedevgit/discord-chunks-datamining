@@ -5,8 +5,8 @@ n.d(t, {
 }), n(35282);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(399606),
   l = n(692547),
   c = n(607070),
@@ -59,11 +59,11 @@ let E = e => null != e && /^http/i.test(e),
     let {
       asset: t,
       size: n = f.yV,
-      className: a,
+      className: o,
       style: p,
       children: m,
       categoryBannerOverride: y
-    } = e, v = (0, s.e7)([c.Z], () => c.Z.saturation), O = i.useMemo(() => {
+    } = e, O = (0, s.e7)([c.Z], () => c.Z.saturation), v = i.useMemo(() => {
       if (null == t) return p;
       let e = E(t) || b(t) ? t : (0, d.uV)(t, {
           size: n,
@@ -73,23 +73,23 @@ let E = e => null != e && /^http/i.test(e),
           filter: "blur(2px)",
           transform: "scale(1.02)"
         } : {};
-      if (1 === v) return h(g(h({}, p), {
+      if (1 === O) return h(g(h({}, p), {
         backgroundImage: (null == y ? void 0 : y.addGradient) ? "url(".concat(e, "), linear-gradient(180deg, rgba(0, 71, 94, 0.6) 5%, rgba(9, 33, 65, 0.6) 95%)") : "url(".concat(e, ")"),
         backgroundBlendMode: "multiply",
         backgroundSize: "cover",
         backgroundPosition: "center"
       }), r);
-      let i = (0, u.aD)(l.Z.unsafe_rawColors.BLACK_500.resolve().hex(), 1 - v);
+      let i = (0, u.aD)(l.Z.unsafe_rawColors.BLACK_500.resolve().hex(), 1 - O);
       return h(g(h({}, p), {
         backgroundImage: "linear-gradient(".concat(i, ", ").concat(i, "), url(").concat(e, ")"),
         backgroundBlendMode: "saturation",
         backgroundSize: "cover",
         backgroundPosition: "center"
       }), r)
-    }, [t, n, v, p, null == y ? void 0 : y.blur, null == y ? void 0 : y.addGradient]);
+    }, [t, n, O, p, null == y ? void 0 : y.blur, null == y ? void 0 : y.addGradient]);
     return (0, r.jsx)("div", {
-      className: o()(_.banner, a),
-      style: O,
+      className: a()(_.banner, o),
+      style: v,
       children: m
     })
   }

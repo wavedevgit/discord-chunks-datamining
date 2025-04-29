@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => _
 });
 var r, i = n(442837),
-  a = n(570140);
+  o = n(570140);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -44,8 +44,8 @@ class f extends(r = i.ZP.Store) {
     return s
   }
 }
-o(f, "displayName", "BasicGuildStore");
-let _ = new f(a.Z, {
+a(f, "displayName", "BasicGuildStore");
+let _ = new f(o.Z, {
   BASIC_GUILD_FETCH: c,
   BASIC_GUILD_FETCH_SUCCESS: u,
   BASIC_GUILD_FETCH_FAILURE: d

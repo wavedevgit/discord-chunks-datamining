@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(359959),
   l = n(442837),
   c = n(114101),
@@ -30,7 +30,7 @@ function y(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function v(e) {
   return e
 }
 
-function O(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,7 +55,7 @@ function O(e, t) {
 }
 
 function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -63,13 +63,13 @@ function I(e, t) {
 function S(e, t) {
   let {
     disabled: n,
-    type: a
-  } = e, [y, O] = i.useState(!1), S = (0, l.e7)([_.Z], () => {
+    type: o
+  } = e, [y, v] = i.useState(!1), S = (0, l.e7)([_.Z], () => {
     var e, t;
     return y && Object.values(null != (t = null == (e = _.Z.frecencyWithoutFetchingLatest.favoriteGifs) ? void 0 : e.gifs) ? t : {}).length <= 2
   }), [T, A, N] = (0, f.Iu)(e => [e.activeView, e.activeViewType, e.pickerId], s.X), C = i.useRef(0), R = i.useCallback(() => {
-    O(!0), clearTimeout(C.current), C.current = setTimeout(() => {
-      O(!1), C.current = 0
+    v(!0), clearTimeout(C.current), C.current = setTimeout(() => {
+      v(!1), C.current = 0
     }, 2e3)
   }, []);
   (0, p.yp)({
@@ -77,8 +77,8 @@ function S(e, t) {
     handler: R
   });
   let P = i.useCallback(() => {
-      (0, f.RO)(g.X1.GIF, a)
-    }, [a]),
+      (0, f.RO)(g.X1.GIF, o)
+    }, [o]),
     {
       Component: w,
       events: D,
@@ -86,13 +86,13 @@ function S(e, t) {
     } = (0, c.V)(),
     x = (0, d.Q3)("ChannelGIFPickerButton");
   if (n) return null;
-  let M = T === g.X1.GIF && A === a;
+  let M = T === g.X1.GIF && A === o;
   return (0, r.jsx)(u.ua7, {
     text: S ? E.intl.string(E.t.mE2e8P) : null,
     forceOpen: !0,
-    children: e => (0, r.jsx)("div", I(v({
+    children: e => (0, r.jsx)("div", I(O({
       ref: t,
-      className: o()(g.CT, b.buttonContainer)
+      className: a()(g.CT, b.buttonContainer)
     }, e), {
       children: (0, r.jsx)(h.Z, {
         innerClassName: b.button,

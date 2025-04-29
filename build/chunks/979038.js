@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(40851),
-  a = n(620662),
-  o = n(841784),
+  o = n(620662),
+  a = n(841784),
   s = n(834353),
   l = n(802856),
   c = n(420660),
@@ -22,19 +22,19 @@ var i = n(40851),
   E = n(803663),
   b = n(715547),
   y = n(981631),
-  v = n(477839),
-  O = n(388032),
+  O = n(477839),
+  v = n(388032),
   I = n(622802);
 let S = e => {
   let {
     user: t,
     activity: n,
-    onAction: a
-  } = e, o = (0, i.Aq)(), s = e => {
+    onAction: o
+  } = e, a = (0, i.Aq)(), s = e => {
     let {
       action: t
     } = e;
-    o.dispatch(y.CkL.POPOUT_CLOSE), (0, _.closeUserProfileModal)(), null == a || a({
+    a.dispatch(y.CkL.POPOUT_CLOSE), (0, _.closeUserProfileModal)(), null == o || o({
       action: t
     })
   };
@@ -52,8 +52,8 @@ function T(e) {
     onAction: i,
     onClose: _
   } = e;
-  return null != n && n.application_id === v.bO ? (n.buttons = [O.intl.string(I.default["Fv/2Oz"])], n.metadata = {
-    button_urls: [v.U8]
+  return null != n && n.application_id === O.bO ? (n.buttons = [v.intl.string(I.default["Fv/2Oz"])], n.metadata = {
+    button_urls: [O.U8]
   }, (0, r.jsx)(S, {
     user: t,
     activity: n,
@@ -69,7 +69,7 @@ function T(e) {
   }) : (0, c.Z)(n) ? (0, r.jsx)(b.Z, {
     activity: n,
     onAction: i
-  }) : (0, a.Z)(n, y.xjy.JOIN) || (0, o.Z)(n) ? (0, r.jsx)(h.Z, {
+  }) : (0, o.Z)(n, y.xjy.JOIN) || (0, a.Z)(n) ? (0, r.jsx)(h.Z, {
     user: t,
     activity: n,
     onAction: i,
@@ -78,7 +78,7 @@ function T(e) {
     user: t,
     activity: n,
     onAction: i
-  }) : (0, a.Z)(n, y.xjy.INSTANCE) ? (0, r.jsx)(m.Z, {
+  }) : (0, o.Z)(n, y.xjy.INSTANCE) ? (0, r.jsx)(m.Z, {
     user: t,
     activity: n,
     onAction: i

@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ED: () => a,
-  Jo: () => o,
+  ED: () => o,
+  Jo: () => a,
   g9: () => i
 }), n(953529);
 var r = n(72703);
@@ -12,7 +12,7 @@ function i(e) {
   return void 0 !== e.pendingBanner && (t.banner = e.pendingBanner), null != e.pendingBio && (t.bio = e.pendingBio), null != e.pendingPronouns && (t.pronouns = e.pendingPronouns), void 0 !== e.pendingAccentColor && (t.accent_color = e.pendingAccentColor), void 0 !== e.pendingThemeColors && (t.theme_colors = e.pendingThemeColors), void 0 !== e.pendingProfileEffectId && (t.profile_effect_id = null != e.pendingProfileEffectId ? e.pendingProfileEffectId : null), t
 }
 
-function a(e) {
+function o(e) {
   let t = {};
   if (void 0 !== e.pendingGlobalName && (t.globalName = e.pendingGlobalName), void 0 !== e.pendingNameplate && (t.nameplate = e.pendingNameplate), void 0 !== e.pendingAvatar) {
     let {
@@ -23,7 +23,7 @@ function a(e) {
   return void 0 !== e.pendingAvatarDecoration && (t.avatarDecoration = e.pendingAvatarDecoration), t
 }
 
-function o(e) {
+function a(e) {
   let t = {};
   if (void 0 !== e.pendingAvatar) {
     let {

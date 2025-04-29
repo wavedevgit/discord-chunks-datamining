@@ -5,8 +5,8 @@ n.d(t, {
   H: () => m,
   Z: () => N
 }), n(388685), n(290780);
-var i, a = n(392711),
-  o = n(442837),
+var i, o = n(392711),
+  a = n(442837),
   s = n(780384),
   l = n(570140),
   c = n(70956),
@@ -41,13 +41,13 @@ let _ = [],
       n < b && (r = new Date(e.getTime() + b - n))
     }
   },
-  v = e => {
+  O = e => {
     let {
       cooldownEndsAtMs: t
     } = e;
     r = new Date(Date.now() + t)
   },
-  O = (0, a.debounce)(() => {
+  v = (0, o.debounce)(() => {
     let e = (0, u.cX)(h);
     s.uv.announce(e, "polite"), h = []
   }, 500),
@@ -64,13 +64,13 @@ let _ = [],
     }, h = [...h, {
       emojiName: t.name,
       userId: n
-    }], O())
+    }], v())
   },
   S = e => {
     let {
       emoji: t
     } = e;
-    null != t && (_.unshift(t), (_ = (0, a.uniqBy)(_, "name")).length > d.e5 + 1 && _.pop())
+    null != t && (_.unshift(t), (_ = (0, o.uniqBy)(_, "name")).length > d.e5 + 1 && _.pop())
   },
   T = e => {
     let {
@@ -78,7 +78,7 @@ let _ = [],
     } = e;
     null != p[t] && delete p[t]
   };
-class A extends(i = o.ZP.Store) {
+class A extends(i = a.ZP.Store) {
   get recentlyUsedEmojis() {
     return _
   }
@@ -98,5 +98,5 @@ let N = new A(l.Z, {
   VOICE_CHANNEL_EFFECT_RECENT_EMOJI: S,
   VOICE_CHANNEL_EFFECT_SEND: I,
   VOICE_CHANNEL_EFFECT_SENT_LOCAL: y,
-  VOICE_CHANNEL_EFFECT_UPDATE_TIME_STAMP: v
+  VOICE_CHANNEL_EFFECT_UPDATE_TIME_STAMP: O
 })

@@ -5,15 +5,15 @@ n.d(t, {
   dY: () => T,
   eC: () => R,
   jz: () => N,
-  kC: () => O,
+  kC: () => v,
   l3: () => A,
   o3: () => S,
   vP: () => C
 }), n(413496), n(433524), n(35282), n(953529), n(997841), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685), n(539854);
 var r = n(392711),
   i = n.n(r),
-  a = n(913527),
-  o = n.n(a),
+  o = n(913527),
+  a = n.n(o),
   s = n(866442),
   l = n(630388),
   c = n(709054),
@@ -41,14 +41,14 @@ function y(e, t, n) {
   return null != e && c.default.extractTimestamp(e) < h && (r = r && null != t && p.test(t.name)), r
 }
 
-function v(e) {
+function O(e) {
   let {
     url: t,
     proxy_url: n,
     width: r,
     height: i,
-    placeholder: a,
-    placeholder_version: o,
+    placeholder: o,
+    placeholder_version: a,
     description: s,
     flags: c
   } = e;
@@ -57,15 +57,15 @@ function v(e) {
     proxyURL: n,
     width: r,
     height: i,
-    placeholder: a,
-    placeholderVersion: o,
+    placeholder: o,
+    placeholderVersion: a,
     description: s,
     srcIsAnimated: (0, l.yE)(null != c ? c : 0, u.FoC.IS_ANIMATED),
     flags: null != c ? c : 0
   }
 }
 
-function O(e, t, n) {
+function v(e, t, n) {
   let r = {
     id: i().uniqueId("embed_"),
     url: n.url,
@@ -88,23 +88,23 @@ function O(e, t, n) {
     }), null != n.provider && null != n.provider.name && (r.provider = {
       name: n.provider.name,
       url: n.provider.url
-    }), null != n.timestamp && (r.timestamp = o()(new Date(n.timestamp))), null != n.color && (r.color = (0, s.ho)(n.color, !0)), null != n.thumbnail && b(n.thumbnail)) switch (r.type) {
+    }), null != n.timestamp && (r.timestamp = a()(new Date(n.timestamp))), null != n.color && (r.color = (0, s.ho)(n.color, !0)), null != n.thumbnail && b(n.thumbnail)) switch (r.type) {
     case u.hBH.ARTICLE:
     case u.hBH.IMAGE:
-      r.image = v(n.thumbnail);
+      r.image = O(n.thumbnail);
       break;
     default:
-      r.thumbnail = v(n.thumbnail)
+      r.thumbnail = O(n.thumbnail)
   }
-  if (null != n.image && b(n.image) && (r.image = v(n.image)), null != n.video && (null == r.thumbnail && null != n.video.proxy_url && b(n.video) && (r.thumbnail = {
+  if (null != n.image && b(n.image) && (r.image = O(n.image)), null != n.video && (null == r.thumbnail && null != n.video.proxy_url && b(n.video) && (r.thumbnail = {
       width: n.video.width,
       height: n.video.height,
       url: I(n.video.proxy_url, {
         format: "webp"
       })
-    }), null != r.thumbnail && b(n.video) && y(t, n.provider, n.video) && (r.video = v(n.video))), d.k.has(r.type)) {
-    var a;
-    r.fields = (null != (a = n.fields) ? a : []).map(e => {
+    }), null != r.thumbnail && b(n.video) && y(t, n.provider, n.video) && (r.video = O(n.video))), d.k.has(r.type)) {
+    var o;
+    r.fields = (null != (o = n.fields) ? o : []).map(e => {
       let {
         name: t,
         value: n,
@@ -147,9 +147,9 @@ function T(e) {
     video: n,
     type: r,
     author: i,
-    rawTitle: a
+    rawTitle: o
   } = e;
-  return (null != t || null != n) && (r === u.hBH.GIFV || r !== u.hBH.RICH && null == i && null == a)
+  return (null != t || null != n) && (r === u.hBH.GIFV || r !== u.hBH.RICH && null == i && null == o)
 }
 
 function A(e) {

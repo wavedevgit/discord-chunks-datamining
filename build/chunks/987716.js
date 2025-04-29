@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(481060),
   l = n(987209),
   c = n(321051),
@@ -30,7 +30,7 @@ function y(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function v(e) {
   return e
 }
 
-function O(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,7 +55,7 @@ function O(e, t) {
 }
 
 function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -64,8 +64,8 @@ function S(e, t) {
   if (null == e) return {};
   var n, r, i = T(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -73,18 +73,18 @@ function S(e, t) {
 function T(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let A = e => {
   let {
     isShopGift: t,
     className: n,
-    optionsContainerClassName: a
+    optionsContainerClassName: o
   } = e, {
     giftRecipient: y,
-    selectedGiftStyle: O,
+    selectedGiftStyle: v,
     setSelectedGiftStyle: T,
     emojiConfetti: A,
     soundEffect: N,
@@ -111,9 +111,9 @@ let A = e => {
   };
   return (0, r.jsxs)("div", {
     children: [U && (0, r.jsxs)("div", {
-      className: o()(b.giftMainAnimation, n),
-      children: [null != O ? (0, r.jsx)(p.Z, {
-        giftStyle: O,
+      className: a()(b.giftMainAnimation, n),
+      children: [null != v ? (0, r.jsx)(p.Z, {
+        giftStyle: v,
         defaultAnimationState: d.SR.ACTION,
         idleAnimationState: d.SR.LOOP,
         shouldAnimate: !0,
@@ -136,18 +136,18 @@ let A = e => {
           })
         })]
       })]
-    }), (0, r.jsx)("div", I(v({
-      tabIndex: null != O || P ? void 0 : 0,
+    }), (0, r.jsx)("div", I(O({
+      tabIndex: null != v || P ? void 0 : 0,
       onFocus: e => {
         var t;
         e.target === e.currentTarget && (null == (t = D.current) || t.focus())
       },
-      className: o()(b.giftBoxOptionContainer, a),
+      className: a()(b.giftBoxOptionContainer, o),
       "aria-label": E.intl.string(E.t.v54NrK),
       ref: x
     }, M), {
       children: null != F && F.map((e, t) => (0, r.jsx)(m.m, {
-        isSelected: O === e,
+        isSelected: v === e,
         giftStyle: e,
         setSelectedGiftStyle: T,
         ref: 0 === t ? D : null,

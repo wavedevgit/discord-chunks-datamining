@@ -19,9 +19,9 @@ var r = n(200651),
   b = n(823379),
   y = n(51144),
   _ = n(291798);
-let O = d.u.SIZE_24;
+let v = d.u.SIZE_24;
 
-function v(e) {
+function O(e) {
   var t, n;
   let {
     activity: l,
@@ -174,19 +174,19 @@ function x(e) {
   } = e, m = [];
   null != n ? m = Array.from(n.embeddedActivity.userIds) : (0, c.Z)(t) && null != u && (m = u.map(e => e.user.id));
   let x = (0, s.Wu)([f.default], () => m.map(e => f.default.getUser(e)).filter(b.lm)),
-    I = null != n || (0, c.Z)(t),
-    P = i.useMemo(() => {
+    P = null != n || (0, c.Z)(t),
+    I = i.useMemo(() => {
       let e = new Map;
-      return I && null != u && u.forEach(t => {
+      return P && null != u && u.forEach(t => {
         let n = t.member;
         null != n && e.set(t.user.id, n)
       }), e
-    }, [u, I]);
-  return I ? (0, r.jsxs)("div", {
+    }, [u, P]);
+  return P ? (0, r.jsxs)("div", {
     className: _.flexColumn,
     children: [(0, r.jsxs)("div", {
       className: _.flexRow,
-      children: [(0, r.jsx)(v, {
+      children: [(0, r.jsx)(O, {
         activity: t,
         user: l,
         embeddedApp: n,
@@ -207,18 +207,18 @@ function x(e) {
           className: _.usersSummary,
           guildId: o.guild_id,
           users: x,
-          size: O,
+          size: v,
           max: 7,
           renderUser: e => {
             var t;
             if (null == e) return null;
-            let n = P.get(e.id),
+            let n = I.get(e.id),
               i = null != (t = null == n ? void 0 : n.nick) ? t : y.ZP.getName(e);
             return (0, r.jsx)(a.DY3, {
               text: i,
               position: "bottom",
               children: (0, r.jsx)("img", {
-                src: e.getAvatarURL(o.guild_id, O),
+                src: e.getAvatarURL(o.guild_id, v),
                 alt: i,
                 className: _.avatar
               }, e.id)

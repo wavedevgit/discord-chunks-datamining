@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => O
+  Z: () => v
 }), n(388685);
 var r = n(133080),
   i = n(592125),
-  a = n(412788);
+  o = n(412788);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -81,17 +81,17 @@ function y(e) {
   } = e;
   _(t)
 }
-class v extends a.Z {
+class O extends o.Z {
   initialize() {
     this.waitFor(i.Z)
   }
   loadCache() {
-    let e = this.readSnapshot(v.LATEST_SNAPSHOT_VERSION);
+    let e = this.readSnapshot(O.LATEST_SNAPSHOT_VERSION);
     null != e && (s = new Set(e))
   }
   takeSnapshot() {
     return {
-      version: v.LATEST_SNAPSHOT_VERSION,
+      version: O.LATEST_SNAPSHOT_VERSION,
       data: Array.from(s)
     }
   }
@@ -127,5 +127,5 @@ class v extends a.Z {
     })
   }
 }
-o(v, "displayName", "MessageRequestStore"), o(v, "LATEST_SNAPSHOT_VERSION", 1);
-let O = new v
+a(O, "displayName", "MessageRequestStore"), a(O, "LATEST_SNAPSHOT_VERSION", 1);
+let v = new O

@@ -5,8 +5,8 @@ n.d(t, {
   I: () => y,
   Z: () => Z
 }), n(388685), n(642613), n(583741);
-var i, a = n(392711),
-  o = n.n(a),
+var i, o = n(392711),
+  a = n.n(o),
   s = n(697988),
   l = n(683860),
   c = n(442837),
@@ -29,8 +29,8 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 let y = 25,
-  v = !1,
-  O = !0,
+  O = !1,
+  v = !0,
   I = !1,
   S = !1,
   T = null,
@@ -40,7 +40,7 @@ let y = 25,
   R = s.z.MATCH_SOME;
 
 function P() {
-  v = !1, O = !0, I = !1, S = !1, T = null, A = l.z.LATEST_ACTIVITY, r = new Set, C = 0, N = [], R = s.z.MATCH_SOME
+  O = !1, v = !0, I = !1, S = !1, T = null, A = l.z.LATEST_ACTIVITY, r = new Set, C = 0, N = [], R = s.z.MATCH_SOME
 }
 
 function w(e, t) {
@@ -48,7 +48,7 @@ function w(e, t) {
 }
 
 function D(e) {
-  e.channelId === T && e.sortOrder === A && (0, m.OL)(e.tagFilter, r) && e.tagSetting === R || P(), T = e.channelId, A = e.sortOrder, r = e.tagFilter instanceof Set ? e.tagFilter : new Set(e.tagFilter), R = e.tagSetting, v = !0, O = !1
+  e.channelId === T && e.sortOrder === A && (0, m.OL)(e.tagFilter, r) && e.tagSetting === R || P(), T = e.channelId, A = e.sortOrder, r = e.tagFilter instanceof Set ? e.tagFilter : new Set(e.tagFilter), R = e.tagSetting, O = !0, v = !1
 }
 
 function L(e) {
@@ -63,7 +63,7 @@ function L(e) {
     hasMoreThreads: e.hasMore,
     filterTagIds: Array.from(e.tagFilter),
     sortOrder: e.sortOrder
-  }), M(), I = e.hasMore, C = e.offset + y, v = !1, O = !1
+  }), M(), I = e.hasMore, C = e.offset + y, O = !1, v = !1
 }
 
 function x(e) {
@@ -75,14 +75,14 @@ function M() {
   let e = !I,
     t = p.Z.getChannel(N[N.length - 1]),
     n = null == t ? null : w(t, A);
-  N = o()(p.Z.getAllThreadsForParent(T)).filter(e => e.isArchivedThread()).filter(t => {
+  N = a()(p.Z.getAllThreadsForParent(T)).filter(e => e.isArchivedThread()).filter(t => {
     if (0 !== r.size) {
-      var i, a;
+      var i, o;
       if (R === s.z.MATCH_SOME) {
         if ((null == (i = t.appliedTags) ? void 0 : i.some(e => r.has(e))) !== !0) return !1
       } else if (R === s.z.MATCH_ALL) {
         for (let e of r.values())
-          if ((null == (a = t.appliedTags) ? void 0 : a.includes(e)) !== !0) return !1
+          if ((null == (o = t.appliedTags) ? void 0 : o.includes(e)) !== !0) return !1
       }
     }
     if (e || null == n) return !0;
@@ -95,7 +95,7 @@ function M() {
 
 function k(e) {
   if (e.channelId !== T || e.sortOrder !== A || !(0, m.OL)(e.tagFilter, r) || e.tagSetting !== R) return !1;
-  v = !1, S = !0, O = !1
+  O = !1, S = !0, v = !1
 }
 
 function j(e) {
@@ -127,16 +127,16 @@ class F extends(i = c.ZP.Store) {
     this.waitFor(p.Z, E.Z, h.ZP)
   }
   get canLoadMore() {
-    return I && !v && !S
+    return I && !O && !S
   }
   get nextOffset() {
     return C
   }
   get isInitialLoad() {
-    return O
+    return v
   }
   isLoading(e, t, n, i) {
-    return T === e && A === t && (0, m.OL)(r, n) && R === i ? v : (P(), !1)
+    return T === e && A === t && (0, m.OL)(r, n) && R === i ? O : (P(), !1)
   }
   getThreads(e, t, n, i) {
     return T === e && A === t && (0, m.OL)(r, n) && R === i ? N : V

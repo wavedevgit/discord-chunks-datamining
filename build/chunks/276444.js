@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => H
 }), n(388685);
 var r, i = n(275726),
-  a = n(442837),
-  o = n(570140),
+  o = n(442837),
+  a = n(570140),
   s = n(594174),
   l = n(281494),
   c = n(981631);
@@ -28,14 +28,14 @@ let d = 5,
   E = new Map,
   b = 0,
   y = null,
-  v = [],
-  O = !1,
+  O = [],
+  v = !1,
   I = 0,
   S = !1,
   T = null;
 
 function A() {
-  f = null, _ = new Set, h = !1, m = new Set, g = new Set, E = new Map, b = 0, y = null, v = [], O = !1, I = 0, S = !1, T = null, p = new Map
+  f = null, _ = new Set, h = !1, m = new Set, g = new Set, E = new Map, b = 0, y = null, O = [], v = !1, I = 0, S = !1, T = null, p = new Map
 }
 let N = () => !0;
 
@@ -50,9 +50,9 @@ function R(e) {
     sent_user_ids: n,
     refresh_at: r,
     recipient_status: i,
-    has_eligible_friends: a
+    has_eligible_friends: o
   } = e;
-  S = null == r && a, h = !1, f = t, _ = new Set(n), T = r, p = i
+  S = null == r && o, h = !1, f = t, _ = new Set(n), T = r, p = i
 }
 
 function P(e) {
@@ -110,17 +110,17 @@ function U(e) {
   let {
     userTrialOfferId: t
   } = e;
-  h || (0, l.C$)(), m.has(t) || (L(t), o.Z.wait(() => (0, l.IB)(t).catch(c.VqG)))
+  h || (0, l.C$)(), m.has(t) || (L(t), a.Z.wait(() => (0, l.IB)(t).catch(c.VqG)))
 }
 
 function G(e) {
   let t = e.type === i.u.PREMIUM_REFERRAL ? e.content : null;
   if (null == t) return !1;
-  g.has(t) || m.has(t) || (L(t), o.Z.wait(() => (0, l.IB)(t).catch(c.VqG)))
+  g.has(t) || m.has(t) || (L(t), a.Z.wait(() => (0, l.IB)(t).catch(c.VqG)))
 }
 
 function B() {
-  O = !0
+  v = !0
 }
 
 function V(e) {
@@ -128,13 +128,13 @@ function V(e) {
     users: t,
     nextIndex: n
   } = e;
-  O = !1, v = t, I = n
+  v = !1, O = t, I = n
 }
 
 function F() {
-  O = !1
+  v = !1
 }
-class Z extends(r = a.ZP.Store) {
+class Z extends(r = o.ZP.Store) {
   initialize() {
     this.waitFor(s.default), this.syncWith([s.default], N)
   }
@@ -157,10 +157,10 @@ class Z extends(r = a.ZP.Store) {
     return m.has(e)
   }
   getEligibleUsers() {
-    return v
+    return O
   }
   getFetchingEligibleUsers() {
-    return O
+    return v
   }
   getNextIndexOfEligibleUsers() {
     return I
@@ -179,7 +179,7 @@ class Z extends(r = a.ZP.Store) {
   }
 }
 u(Z, "displayName", "ReferralTrialStore");
-let H = new Z(o.Z, {
+let H = new Z(a.Z, {
   BILLING_REFERRAL_TRIAL_OFFER_UPDATE: U,
   BILLING_REFERRALS_REMAINING_FETCH_START: C,
   BILLING_REFERRALS_REMAINING_FETCH_SUCCESS: R,

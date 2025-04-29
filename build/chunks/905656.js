@@ -5,8 +5,8 @@ n.d(t, {
 }), n(290780);
 var r = n(200651),
   i = n(192379),
-  a = n(780384),
-  o = n(481060),
+  o = n(780384),
+  a = n(481060),
   s = n(197344),
   l = n(526167),
   c = n(70097),
@@ -25,44 +25,44 @@ function b(e) {
     movDark: t = d,
     movLight: n = h,
     mp4Dark: i = f,
-    mp4Light: a = m,
-    pngDark: o = _,
+    mp4Light: o = m,
+    pngDark: a = _,
     pngLight: s = g,
     webmDark: c = p,
     webmLight: b = E
-  } = e, y = (0, l.vu)(), v = [(0, r.jsx)("source", {
+  } = e, y = (0, l.vu)(), O = [(0, r.jsx)("source", {
     src: i,
     type: "video/mp4"
   }, "mp4"), (0, r.jsx)("img", {
     alt: "",
-    src: o
-  }, "png")], O = [(0, r.jsx)("source", {
-    src: a,
+    src: a
+  }, "png")], v = [(0, r.jsx)("source", {
+    src: o,
     type: "video/mp4"
   }, "mp4"), (0, r.jsx)("img", {
     alt: "",
     src: s
   }, "png")];
-  return (y > 52 || -1 === y) && (v.unshift((0, r.jsx)("source", {
+  return (y > 52 || -1 === y) && (O.unshift((0, r.jsx)("source", {
     src: c,
     type: "video/webm"
-  }, "webm")), O.unshift((0, r.jsx)("source", {
+  }, "webm")), v.unshift((0, r.jsx)("source", {
     src: b,
     type: "video/webm"
-  }, "webm"))), (0, l.rO)() && (v.unshift((0, r.jsx)("source", {
+  }, "webm"))), (0, l.rO)() && (O.unshift((0, r.jsx)("source", {
     src: t,
     type: "video/mp4"
-  }, "hevc")), O.unshift((0, r.jsx)("source", {
+  }, "hevc")), v.unshift((0, r.jsx)("source", {
     src: n,
     type: "video/mp4"
   }, "hevc"))), {
-    [u.BRd.DARK]: v,
-    [u.BRd.LIGHT]: O
+    [u.BRd.DARK]: O,
+    [u.BRd.LIGHT]: v
   }
 }
 let y = s.Z.getAppSpinnerSources(),
-  v = null != y ? b(y) : null,
-  O = b({}),
+  O = null != y ? b(y) : null,
+  v = b({}),
   I = e => {
     var t;
     let {
@@ -73,11 +73,11 @@ let y = s.Z.getAppSpinnerSources(),
       onReady: f
     } = e, {
       theme: _
-    } = (0, o.TCT)(), {
+    } = (0, a.TCT)(), {
       reducedMotion: p
-    } = i.useContext(o.Sfi), h = O;
-    null != v && (h = v);
-    let m = null != (t = h[(0, a.wj)(_) ? u.BRd.DARK : u.BRd.LIGHT]) ? t : h[u.BRd.DARK];
+    } = i.useContext(a.Sfi), h = v;
+    null != O && (h = O);
+    let m = null != (t = h[(0, o.wj)(_) ? u.BRd.DARK : u.BRd.LIGHT]) ? t : h[u.BRd.DARK];
     return (0, r.jsx)(c.Z, {
       ref: l,
       onLoadedData: f,

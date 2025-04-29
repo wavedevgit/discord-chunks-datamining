@@ -2,12 +2,12 @@
 "use strict";
 n.d(t, {
   Z: () => T,
-  q: () => O
+  q: () => v
 });
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(91192),
   l = n(481060),
   c = n(166459),
@@ -59,22 +59,22 @@ function b(e, t) {
 
 function y(e, t) {
   if (null == e) return {};
-  var n, r, i = v(e, t);
+  var n, r, i = O(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
 
-function v(e, t) {
+function O(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-var O = function(e) {
+var v = function(e) {
   return e[e.SMALL = 0] = "SMALL", e[e.MEDIUM = 1] = "MEDIUM", e[e.CLIP = 2] = "CLIP", e
 }({});
 
@@ -86,11 +86,11 @@ function S(e, t) {
   let {
     id: n,
     channelId: i,
-    className: a,
+    className: o,
     children: m,
     actions: E,
-    handleEditModal: v,
-    keyboardModeEnabled: O,
+    handleEditModal: O,
+    keyboardModeEnabled: v,
     onKeyDown: S,
     draftType: T,
     size: A = 1
@@ -100,13 +100,13 @@ function S(e, t) {
     handleFocus: P,
     handleBlur: w
   } = (0, f.b)(C), D = 0 === A, L = null != E, x = e => {
-    if (O) {
+    if (v) {
       switch (e.which) {
         case _.yXg.D:
           e.preventDefault(), c.Z.remove(i, n, T);
           return;
         case _.yXg.E:
-          null != v && (e.preventDefault(), v(e));
+          null != O && (e.preventDefault(), O(e));
           return;
         case _.yXg.BACKSPACE:
           e.ctrlKey ? (e.preventDefault(), c.Z.clearAll(i, T)) : (e.preventDefault(), c.Z.remove(i, n, T));
@@ -126,7 +126,7 @@ function S(e, t) {
       onFocus: P,
       onBlur: w,
       onKeyDown: x,
-      className: o()(h.upload, a, {
+      className: a()(h.upload, o, {
         [h.sizeClip]: 2 === A
       }),
       ref: t,
@@ -135,13 +135,13 @@ function S(e, t) {
         children: [m, L ? (0, r.jsx)("div", {
           className: h.actionBarContainer,
           children: (0, r.jsx)("div", {
-            className: o()(h.actionBar, {
+            className: a()(h.actionBar, {
               [h.smallActionBar]: D
             }),
             onContextMenu: I,
             "aria-label": p.intl.string(p.t["8Lu3Dg"]),
             children: (0, r.jsx)(u.ZP, {
-              className: o()({
+              className: a()({
                 [h.miniPopover]: D
               }),
               children: E

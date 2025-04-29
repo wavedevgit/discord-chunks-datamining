@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Ph: () => v,
+  Ph: () => O,
   Tt: () => y,
   iL: () => b,
   nY: () => I,
@@ -9,8 +9,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(568611),
   l = n(680732),
   c = n(84735),
@@ -61,8 +61,8 @@ function g(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -70,8 +70,8 @@ function g(e, t) {
 function E(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let b = {
@@ -91,7 +91,7 @@ let b = {
     TRANSPARENT: f.colorTransparent,
     CUSTOM: ""
   },
-  v = {
+  O = {
     NONE: "",
     TINY: f.sizeTiny,
     SMALL: f.sizeSmall,
@@ -102,14 +102,14 @@ let b = {
     ICON: f.sizeIcon
   };
 
-function O(e, t) {
-  var n, r, i, a;
-  let o = null == e ? void 0 : e.offset;
-  return t === b.LINK || t === b.BLANK ? o : null == o ? -2 : "number" == typeof o ? o + 2 : {
-    top: (null != (n = o.top) ? n : 0) - 2,
-    right: (null != (r = o.right) ? r : 0) - 2,
-    bottom: (null != (i = o.bottom) ? i : 0) - 2,
-    left: (null != (a = o.left) ? a : 0) - 2
+function v(e, t) {
+  var n, r, i, o;
+  let a = null == e ? void 0 : e.offset;
+  return t === b.LINK || t === b.BLANK ? a : null == a ? -2 : "number" == typeof a ? a + 2 : {
+    top: (null != (n = a.top) ? n : 0) - 2,
+    right: (null != (r = a.right) ? r : 0) - 2,
+    bottom: (null != (i = a.bottom) ? i : 0) - 2,
+    left: (null != (o = a.left) ? o : 0) - 2
   }
 }
 
@@ -117,16 +117,16 @@ function I() {
   let {
     look: e = b.FILLED,
     color: t = y.BRAND,
-    size: n = v.MEDIUM,
+    size: n = O.MEDIUM,
     fullWidth: r = !1,
     grow: i = !0,
-    submitting: a = !1,
+    submitting: o = !1,
     disabled: s = !1
   } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-  return o()(f.button, e, t, n, {
+  return a()(f.button, e, t, n, {
     [f.fullWidth]: r,
     [f.grow]: i,
-    [f.submitting]: a && !s
+    [f.submitting]: o && !s
   })
 }
 
@@ -134,7 +134,7 @@ function S(e) {
   var {
     look: t = b.FILLED,
     color: n = y.BRAND,
-    size: a = v.MEDIUM,
+    size: o = O.MEDIUM,
     fullWidth: s = !1,
     grow: _ = !0,
     disabled: h = !1,
@@ -162,7 +162,7 @@ function S(e) {
   let H = h || E,
     Y = H && (null != L || null != x),
     W = Y ? null : A,
-    K = O(G, t),
+    K = v(G, t),
     z = i.useRef(!1);
   i.useEffect(() => {
     !0 === E && (z.current = !0, l.u.announce(null != V ? V : d.intl.string(d.t.pfChQk))), !1 === E && !0 === z.current && l.u.announce(null != F ? F : d.intl.string(d.t.SVPara))
@@ -184,10 +184,10 @@ function S(e) {
       disabled: h,
       style: T,
       rel: j,
-      className: o()(N, I({
+      className: a()(N, I({
         look: t,
         color: n,
-        size: a,
+        size: o,
         fullWidth: s,
         grow: _,
         submitting: E,
@@ -198,13 +198,13 @@ function S(e) {
         className: f.spinner,
         itemClassName: f.spinnerItem
       }) : null, (0, r.jsx)("div", {
-        className: o()(f.contents, C),
+        className: a()(f.contents, C),
         children: k
       })]
     }))
   }));
   return Y ? (0, r.jsxs)("span", {
-    className: o()(f.disabledButtonWrapper, A, a, {
+    className: a()(f.disabledButtonWrapper, A, o, {
       [f.grow]: _,
       [f.fullWidth]: s
     }),
@@ -215,12 +215,12 @@ function S(e) {
     })]
   }) : q
 }
-S.Looks = b, S.Colors = y, S.Sizes = v, S.Link = function(e) {
+S.Looks = b, S.Colors = y, S.Sizes = O, S.Link = function(e) {
   var {
     look: t = b.FILLED,
     color: n = y.BRAND,
-    size: i = v.MEDIUM,
-    fullWidth: a = !1,
+    size: i = O.MEDIUM,
+    fullWidth: o = !1,
     grow: l = !0,
     style: c,
     className: u,
@@ -228,23 +228,23 @@ S.Looks = b, S.Colors = y, S.Sizes = v, S.Link = function(e) {
     to: _,
     onClick: h,
     onMouseDown: E,
-    onMouseUp: O,
+    onMouseUp: v,
     children: I,
     rel: S
   } = e, T = g(e, ["look", "color", "size", "fullWidth", "grow", "style", "className", "innerClassName", "to", "onClick", "onMouseDown", "onMouseUp", "children", "rel"]);
   return (0, r.jsx)(s.rU, m(p({}, T), {
     to: _,
     onClick: h,
-    onMouseUp: O,
+    onMouseUp: v,
     onMouseDown: E,
     style: c,
     rel: S,
-    className: o()(u, f.button, t, n, i, {
-      [f.fullWidth]: a,
+    className: a()(u, f.button, t, n, i, {
+      [f.fullWidth]: o,
       [f.grow]: l
     }),
     children: (0, r.jsx)("span", {
-      className: o()(f.contents, d),
+      className: a()(f.contents, d),
       children: I
     })
   }))

@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => G
 });
 var r, i = n(392711),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(570140),
   l = n(594174),
   c = n(981631);
@@ -40,8 +40,8 @@ let f = c.QZA.CLOSED,
   E = null,
   b = null,
   y = !1,
-  v = !1,
-  O = null,
+  O = !1,
+  v = null,
   I = null,
   S = [],
   T = null,
@@ -52,10 +52,10 @@ function N(e) {
 }
 
 function C(e) {
-  var t, n, r, i, a, o;
+  var t, n, r, i, o, a;
   let s = l.default.getCurrentUser();
   if (null == s) return R();
-  p = null != (t = e.section) ? t : p, T = null != (n = e.section) ? n : p, null != e.subsection && null != p && (h[p] = e.subsection), null != e.scrollPosition && null != p && (m[p] = e.scrollPosition), v = !!e.openWithoutBackstack, f = c.QZA.OPEN, g = {}, b = d({}, E = {
+  p = null != (t = e.section) ? t : p, T = null != (n = e.section) ? n : p, null != e.subsection && null != p && (h[p] = e.subsection), null != e.scrollPosition && null != p && (m[p] = e.scrollPosition), O = !!e.openWithoutBackstack, f = c.QZA.OPEN, g = {}, b = d({}, E = {
     [c.oAB.ACCOUNT]: {
       userId: s.id,
       username: s.username,
@@ -66,11 +66,11 @@ function C(e) {
       newPassword: null,
       claimed: s.isClaimed()
     }
-  }), O = null != (r = e.onClose) ? r : null, I = null != (i = e.analyticsLocation) ? i : null, S = null != (a = e.analyticsLocations) ? a : [], A = null != (o = e.impressionSource) ? o : null
+  }), v = null != (r = e.onClose) ? r : null, I = null != (i = e.analyticsLocation) ? i : null, S = null != (o = e.analyticsLocations) ? o : [], A = null != (a = e.impressionSource) ? a : null
 }
 
 function R() {
-  f = c.QZA.CLOSED, y = !1, E = null, T = null, b = null, _ = null, p = null, h = {}, m = {}, O = null, I = null, S = [], A = null
+  f = c.QZA.CLOSED, y = !1, E = null, T = null, b = null, _ = null, p = null, h = {}, m = {}, v = null, I = null, S = [], A = null
 }
 
 function P(e) {
@@ -130,12 +130,12 @@ function j(e) {
   if (f !== c.QZA.SUBMITTING) return !1;
   f = c.QZA.OPEN, p = c.oAB.ACCOUNT, g = null != (t = e.errors) ? t : {}
 }
-class U extends(r = o.ZP.Store) {
+class U extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(l.default)
   }
   hasChanges() {
-    return null != b && null != E && !!this.isOpen() && !a().isEqual(b, E)
+    return null != b && null != E && !!this.isOpen() && !o().isEqual(b, E)
   }
   isOpen() {
     return y
@@ -153,7 +153,7 @@ class U extends(r = o.ZP.Store) {
     return null != p ? m[p] : null
   }
   shouldOpenWithoutBackstack() {
-    return v
+    return O
   }
   getProps() {
     return {
@@ -164,7 +164,7 @@ class U extends(r = o.ZP.Store) {
       settings: b,
       errors: g,
       hasChanges: this.hasChanges(),
-      openWithoutBackstack: v,
+      openWithoutBackstack: O,
       analyticsLocation: I,
       analyticsLocations: S,
       initialSection: T,
@@ -172,7 +172,7 @@ class U extends(r = o.ZP.Store) {
     }
   }
   get onClose() {
-    return O
+    return v
   }
 }
 u(U, "displayName", "UserSettingsModalStore");

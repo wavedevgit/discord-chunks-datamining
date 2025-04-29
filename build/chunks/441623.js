@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => X
 }), n(388685), n(539854), n(642613);
 var r, i = n(392711),
-  a = n.n(i),
-  o = n(913527),
-  s = n.n(o),
+  o = n.n(i),
+  a = n(913527),
+  s = n.n(a),
   l = n(442837),
   c = n(570140),
   u = n(353926),
@@ -40,8 +40,8 @@ function b(e) {
   return e
 }
 let y = 5,
-  v = 15,
-  O = 7,
+  O = 15,
+  v = 7,
   I = 6048e5,
   S = 12096e5;
 
@@ -63,9 +63,9 @@ function w(e, t) {
     r = new Date(e.getTime());
   r.setFullYear(t);
   let i = new Date(r.getTime());
-  i.setDate(r.getDate() - O);
-  let a = new Date(r.getTime());
-  return a.setDate(r.getDate() + O), n > i && n < a
+  i.setDate(r.getDate() - v);
+  let o = new Date(r.getTime());
+  return o.setDate(r.getDate() + v), n > i && n < o
 }
 
 function D(e) {
@@ -90,7 +90,7 @@ function L() {
   });
   if (e || t) {
     for (let e of p.default.keys(_.Z.getRelationships())) {
-      if (N.length >= v) break;
+      if (N.length >= O) break;
       let t = _.Z.getSince(e),
         n = d.Z.getUserAffinity(e);
       if (_.Z.getRelationshipType(e) === g.OGo.FRIEND && !_.Z.isIgnored(e) && null != n && n.affinity > 0 && null != t) {
@@ -197,7 +197,7 @@ function q(e) {
   if (!t) return;
   P = e;
   let n = _.Z.getFriendIDs().filter(e => !_.Z.isIgnored(e));
-  a().sampleSize(n, e).forEach(e => {
+  o().sampleSize(n, e).forEach(e => {
     let t = _.Z.getSince(e);
     if (null != t) {
       let n = new Date(t);

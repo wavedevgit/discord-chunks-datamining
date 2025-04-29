@@ -6,8 +6,8 @@ n.d(t, {
   uZ: () => y
 });
 var r, i = n(873546),
-  a = n(442837),
-  o = n(570140),
+  o = n(442837),
+  a = n(570140),
   s = n(897473),
   l = n(585483),
   c = n(709054),
@@ -30,8 +30,8 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 let y = "message_requests",
-  v = !1,
   O = !1,
+  v = !1,
   I = !0,
   S = !1,
   T = {},
@@ -58,11 +58,11 @@ function R(e) {
 }
 
 function P() {
-  O && (O = R(O)), v = R(v)
+  v && (v = R(v)), O = R(O)
 }
 
 function w() {
-  v && (v = R(v)), O = R(O)
+  O && (O = R(O)), v = R(v)
 }
 
 function D() {
@@ -77,10 +77,10 @@ function L(e) {
     details: i
   } = e;
   S = !1;
-  let a = N(r);
-  return null != a && (A[n] = {
+  let o = N(r);
+  return null != o && (A[n] = {
     type: t,
-    baseChannelId: a,
+    baseChannelId: o,
     guildId: n,
     details: i
   }, !0)
@@ -101,8 +101,8 @@ function M(e) {
     details: i
   } = e;
   S = !1;
-  let a = N(n);
-  return null != a && (T[a] = {
+  let o = N(n);
+  return null != o && (T[o] = {
     type: t,
     channelId: r,
     details: i
@@ -184,20 +184,20 @@ function F() {
 }
 
 function Z() {
-  i.tq && v && (v = !1, O = !1)
+  i.tq && O && (O = !1, v = !1)
 }
-class H extends(r = a.ZP.PersistedStore) {
+class H extends(r = o.ZP.PersistedStore) {
   initialize(e) {
     if (null != e) {
-      var t, n, r, i, a;
-      v = null != (t = e.isMembersOpen) && t, O = null != (n = e.isSummariesOpen) && n, I = null == (r = e.isProfileOpen) || r, T = null != (i = e.sidebars) ? i : {}, A = null != (a = e.guildSidebars) ? a : {}
+      var t, n, r, i, o;
+      O = null != (t = e.isMembersOpen) && t, v = null != (n = e.isSummariesOpen) && n, I = null == (r = e.isProfileOpen) || r, T = null != (i = e.sidebars) ? i : {}, A = null != (o = e.guildSidebars) ? o : {}
     }
     this.syncWith([f.Z], F), this.syncWith([d.Z], B)
   }
   getState() {
     return {
-      isMembersOpen: v,
-      isSummariesOpen: O,
+      isMembersOpen: O,
+      isSummariesOpen: v,
       isProfileOpen: I,
       sidebars: T,
       guildSidebars: A
@@ -206,7 +206,7 @@ class H extends(r = a.ZP.PersistedStore) {
   getSection(e, t) {
     if (S) return m.ULH.SEARCH;
     let n = N(e);
-    return null != n && null != T[n] ? m.ULH.SIDEBAR_CHAT : t && I ? m.ULH.PROFILE : O ? m.ULH.SUMMARIES : v ? m.ULH.MEMBERS : m.ULH.NONE
+    return null != n && null != T[n] ? m.ULH.SIDEBAR_CHAT : t && I ? m.ULH.PROFILE : v ? m.ULH.SUMMARIES : O ? m.ULH.MEMBERS : m.ULH.NONE
   }
   getSidebarState(e) {
     let t = N(e);
@@ -230,7 +230,7 @@ class H extends(r = a.ZP.PersistedStore) {
   }
 }
 b(H, "displayName", "ChannelSectionStore"), b(H, "persistKey", "ChannelSectionStore2");
-let Y = new H(o.Z, {
+let Y = new H(a.Z, {
   CHANNEL_TOGGLE_MEMBERS_SECTION: P,
   USER_PROFILE_SIDEBAR_TOGGLE_SECTION: D,
   CHANNEL_TOGGLE_SUMMARIES_SECTION: w,

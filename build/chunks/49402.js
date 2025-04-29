@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(803997),
-  o = n.n(a),
+  o = n(803997),
+  a = n.n(o),
   s = n(928873),
   l = n(821541),
   c = n(780900);
@@ -54,8 +54,8 @@ function p(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -63,13 +63,13 @@ function p(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
 function m(e, t, n) {
-  let a = (0, c.G6)(e);
+  let o = (0, c.G6)(e);
   return i.forwardRef(function(u, f) {
     var {
       children: h,
@@ -78,8 +78,8 @@ function m(e, t, n) {
       orientation: E = "vertical",
       fade: b = !1,
       customTheme: y = !1,
-      paddingFix: v = !0,
-      style: O,
+      paddingFix: O = !0,
+      style: v,
       gap: I,
       experimental_useStack: S
     } = u, T = p(u, ["children", "className", "dir", "orientation", "fade", "customTheme", "paddingFix", "style", "gap", "experimental_useStack"]);
@@ -92,22 +92,22 @@ function m(e, t, n) {
       getScrollerState: N
     }, (0, c.Ue)(A, N, C, E)), [A, N, E, C]);
     let R = (0, c.tT)({
-      paddingFix: v,
+      paddingFix: O,
       orientation: E,
       dir: g,
       className: m,
       scrollerRef: A,
-      specs: a
+      specs: o
     });
     return S ? (0, r.jsx)(l.K, _(d({
       gap: I,
       ref: A,
-      className: o()(m, {
+      className: a()(m, {
         [e]: !0,
         [t]: b,
         [n]: y
       }),
-      style: (0, c.uT)(O, E),
+      style: (0, c.uT)(v, E),
       dir: g
     }, T), {
       children: (0, r.jsxs)(s.Jc, {
@@ -116,12 +116,12 @@ function m(e, t, n) {
       })
     })) : (0, r.jsx)("div", _(d({
       ref: A,
-      className: o()(m, {
+      className: a()(m, {
         [e]: !0,
         [t]: b,
         [n]: y
       }),
-      style: (0, c.uT)(O, E),
+      style: (0, c.uT)(v, E),
       dir: g
     }, T), {
       children: (0, r.jsxs)(s.Jc, {

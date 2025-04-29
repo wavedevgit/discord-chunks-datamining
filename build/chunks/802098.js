@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => P
 }), n(388685);
 var r, i = n(442837),
-  a = n(433517),
-  o = n(570140),
+  o = n(433517),
+  a = n(570140),
   s = n(706454),
   l = n(695346),
   c = n(581883),
@@ -29,7 +29,7 @@ let f = {},
   b = null,
   y = new Set;
 
-function v(e) {
+function O(e) {
   let {
     key: t
   } = e;
@@ -37,7 +37,7 @@ function v(e) {
   (y = new Set(y)).add(t)
 }
 
-function O(e) {
+function v(e) {
   let {
     key: t
   } = e;
@@ -88,7 +88,7 @@ function N(e) {
   let {
     changelogDate: t
   } = e;
-  b = new Date(t), a.K.set(g, t)
+  b = new Date(t), o.K.set(g, t)
 }
 
 function C() {
@@ -97,11 +97,11 @@ function C() {
 class R extends(r = i.ZP.Store) {
   initialize() {
     this.waitFor(s.default, c.Z), this.syncWith([s.default], () => !0), this.syncWith([c.Z], C);
-    let e = a.K.get(g);
+    let e = o.K.get(g);
     if (null != e) try {
       b = new Date(e)
     } catch (e) {
-      a.K.remove(g)
+      o.K.remove(g)
     }
   }
   getChangelog(e, t) {
@@ -143,9 +143,9 @@ class R extends(r = i.ZP.Store) {
   }
 }
 d(R, "displayName", "ChangelogStore");
-let P = new R(o.Z, {
-  CHANGE_LOG_LOCK: v,
-  CHANGE_LOG_UNLOCK: O,
+let P = new R(a.Z, {
+  CHANGE_LOG_LOCK: O,
+  CHANGE_LOG_UNLOCK: v,
   CHANGE_LOG_SET_CONFIG: I,
   CHANGE_LOG_FETCH_SUCCESS: S,
   CHANGE_LOG_FETCH_FAILED: T,

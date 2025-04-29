@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  I: () => O,
+  I: () => v,
   Z: () => C
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   s = n(493773),
   l = n(237617),
   c = n(594174),
@@ -59,22 +59,22 @@ function b(e, t) {
 
 function y(e, t) {
   if (null == e) return {};
-  var n, r, i = v(e, t);
+  var n, r, i = O(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
 
-function v(e, t) {
+function O(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let O = (0, o.pxk)(o.EFr.SIZE_80),
+let v = (0, a.pxk)(a.EFr.SIZE_80),
   I = {
     onMouseDown: p.dG,
     onClick: p.dG,
@@ -91,7 +91,7 @@ function T(e) {
   var {
     children: t,
     user: n,
-    currentUser: a,
+    currentUser: o,
     guildId: s,
     channelId: l,
     messageId: c,
@@ -100,7 +100,7 @@ function T(e) {
     newAnalyticsLocations: h,
     appContext: m,
     avatarUrl: E,
-    preload: v,
+    preload: O,
     renderPopout: I,
     onRequestOpen: S,
     onRequestClose: T,
@@ -109,16 +109,16 @@ function T(e) {
     shouldPreload: C = !0
   } = e, R = y(e, ["children", "user", "currentUser", "guildId", "channelId", "messageId", "roleId", "disableUserProfileLink", "newAnalyticsLocations", "appContext", "avatarUrl", "preload", "renderPopout", "onRequestOpen", "onRequestClose", "onClosePopout", "shouldShow", "shouldPreload"]);
   let P = i.useRef(void 0),
-    w = i.useCallback(() => null != v ? v() : (0, d.Z)(n.id, null != E ? E : n.getAvatarURL(s, O), {
+    w = i.useCallback(() => null != O ? O() : (0, d.Z)(n.id, null != E ? E : n.getAvatarURL(s, v), {
       type: "popout",
-      withMutualGuilds: n.id !== a.id,
-      withMutualFriends: !n.bot && n.id !== a.id,
+      withMutualGuilds: n.id !== o.id,
+      withMutualFriends: !n.bot && n.id !== o.id,
       guildId: s,
       channelId: l
-    }), [v, a, n, E, s, l]),
+    }), [O, o, n, E, s, l]),
     D = i.useCallback(e => (null == P.current && (P.current = Date.now()), null != I) ? I(e) : (0, r.jsx)(f.Z, b(g({}, e), {
       user: n,
-      currentUser: a,
+      currentUser: o,
       guildId: s,
       channelId: l,
       roleId: u,
@@ -130,8 +130,8 @@ function T(e) {
       closePopout: () => {
         e.closePopout(), null == A || A()
       }
-    })), [n, a, I, s, l, u, c, p, h, m, A]);
-  return (0, r.jsx)(o.yRy, b(g({
+    })), [n, o, I, s, l, u, c, p, h, m, A]);
+  return (0, r.jsx)(a.yRy, b(g({
     popoutKey: _.Tg,
     shouldShow: N,
     preload: C ? w : void 0,
@@ -151,12 +151,12 @@ function A(e) {
   var {
     children: t,
     user: n,
-    currentUser: a,
+    currentUser: o,
     guildId: c,
     channelId: p,
     messageId: m,
     roleId: E,
-    disableUserProfileLink: v,
+    disableUserProfileLink: O,
     newAnalyticsLocations: I,
     appContext: S,
     avatarUrl: T,
@@ -181,28 +181,28 @@ function A(e) {
       clearTimeout(B.current), clearTimeout(V.current), clearTimeout(F.current)
     }, []);
   (0, s.zq)(Y);
-  let W = i.useCallback(() => null != A ? A() : (0, d.Z)(n.id, null != T ? T : n.getAvatarURL(c, O), {
+  let W = i.useCallback(() => null != A ? A() : (0, d.Z)(n.id, null != T ? T : n.getAvatarURL(c, v), {
       type: "popout",
-      withMutualGuilds: n.id !== a.id,
-      withMutualFriends: !n.bot && n.id !== a.id,
+      withMutualGuilds: n.id !== o.id,
+      withMutualFriends: !n.bot && n.id !== o.id,
       guildId: c,
       channelId: p
-    }), [A, n, a, T, c, p]),
-    K = i.useCallback(e => (null == x.current && (x.current = Date.now()), j) ? (0, r.jsx)(o.xxz, {}) : null != N ? N(e) : (0, r.jsx)(f.Z, b(g({}, e), {
+    }), [A, n, o, T, c, p]),
+    K = i.useCallback(e => (null == x.current && (x.current = Date.now()), j) ? (0, r.jsx)(a.xxz, {}) : null != N ? N(e) : (0, r.jsx)(f.Z, b(g({}, e), {
       user: n,
-      currentUser: a,
+      currentUser: o,
       guildId: c,
       channelId: p,
       roleId: E,
       messageId: m,
-      disableUserProfileLink: v,
+      disableUserProfileLink: O,
       newAnalyticsLocations: I,
       appContext: S,
       openedAt: x.current,
       closePopout: () => {
         e.closePopout(), null == P || P()
       }
-    })), [n, a, N, c, p, E, m, v, I, S, P, j]),
+    })), [n, o, N, c, p, E, m, O, I, S, P, j]),
     z = i.useCallback(() => {
       Y(), G.current = !0, D && (B.current = setTimeout(async () => {
         if (G.current) try {
@@ -211,7 +211,7 @@ function A(e) {
           U(!1)
         }
       }, _.a6)), V.current = setTimeout(() => {
-        (0, o.$sL)() || H.current || G.current && (null == x.current && (x.current = Date.now()), k(!0))
+        (0, a.$sL)() || H.current || G.current && (null == x.current && (x.current = Date.now()), k(!0))
       }, _.JX)
     }, [Y, D, W, H]),
     q = i.useCallback(() => {
@@ -223,7 +223,7 @@ function A(e) {
     className: h.hoverable,
     onMouseEnter: z,
     onMouseLeave: q,
-    children: (0, r.jsx)(o.yRy, b(g({
+    children: (0, r.jsx)(a.yRy, b(g({
       popoutKey: _.Tg,
       shouldShow: !0 === w || M,
       preload: !D || j || M ? void 0 : W,
@@ -245,11 +245,11 @@ function N(e) {
     children: t,
     userId: n,
     user: i,
-    shouldShowOnHover: o = !1
+    shouldShowOnHover: a = !1
   } = e, s = y(e, ["children", "userId", "user", "shouldShowOnHover"]);
-  let l = (0, a.e7)([c.default], () => c.default.getCurrentUser()),
-    u = (0, a.e7)([c.default], () => null != i ? i : c.default.getUser(n));
-  return null == u || null == l ? t(I, S) : o ? (0, r.jsx)(A, b(g({}, s), {
+  let l = (0, o.e7)([c.default], () => c.default.getCurrentUser()),
+    u = (0, o.e7)([c.default], () => null != i ? i : c.default.getUser(n));
+  return null == u || null == l ? t(I, S) : a ? (0, r.jsx)(A, b(g({}, s), {
     user: u,
     currentUser: l,
     children: t

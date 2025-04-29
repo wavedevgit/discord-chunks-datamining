@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   s = n(195302),
   l = n(206295),
   c = n(134432),
@@ -21,8 +21,8 @@ var r = n(200651),
   E = n(528567),
   b = n(371583),
   y = n(246627),
-  v = n(249268),
-  O = n(864138),
+  O = n(249268),
+  v = n(864138),
   I = n(473188),
   S = n(169080),
   T = n(986398),
@@ -78,7 +78,7 @@ function j(e) {
     leaderboard: t,
     previewMode: n = !1,
     trackRankingItemInteraction: s
-  } = e, f = (0, a.e7)([d.default], () => d.default.getId()), _ = (0, a.e7)([u.default], () => u.default.locale), {
+  } = e, f = (0, o.e7)([d.default], () => d.default.getId()), _ = (0, o.e7)([u.default], () => u.default.locale), {
     rankChanges: h
   } = (0, y.Z)({
     guildId: t.guild_id,
@@ -97,23 +97,23 @@ function j(e) {
       sort_by_statistic_id: n
     } = t.guild_settings;
     return t.users.map((t, r) => {
-      var i, a;
+      var i, o;
       return {
         userId: t.user_id,
-        value: null != (a = null == (i = t.statistics[n]) ? void 0 : i.value) ? a : 0,
+        value: null != (o = null == (i = t.statistics[n]) ? void 0 : i.value) ? o : 0,
         rank: r + 1,
         previousRank: e.get(t.user_id)
       }
     })
   }, [t, h]), g = (0, b.r)(t), {
-    primaryColor: O
+    primaryColor: v
   } = (0, l.Z)(g), I = i.useMemo(() => {
-    let e = (0, p.oo)(O),
+    let e = (0, p.oo)(v),
       t = L(w({}, (0, p.pz)(e.r, e.g, e.b)), {
         l: M
       });
     return (0, p.ZJ)(t.h, t.s, t.l)
-  }, [O]), T = i.useMemo(() => null == m.find(e => e.userId === f) && m.length <= x, [m, f]);
+  }, [v]), T = i.useMemo(() => null == m.find(e => e.userId === f) && m.length <= x, [m, f]);
   if (i.useEffect(() => {
       S.M.forEach(e => (0, c.po)(e))
     }), 0 === t.users.length) return (0, r.jsx)(U, {
@@ -128,22 +128,22 @@ function j(e) {
     style: {
       background: I
     },
-    children: [(0, r.jsx)(v.Z, {
+    children: [(0, r.jsx)(O.Z, {
       userId: m[0].userId,
       leaderboard: t
     }), n ? null : (0, r.jsxs)("div", {
       className: R.table,
       children: [(0, r.jsxs)("div", {
         className: R.headerRow,
-        children: [(0, r.jsx)(o.Text, {
+        children: [(0, r.jsx)(a.Text, {
           variant: "text-xxs/medium",
           className: R.headerRank,
           children: "#"
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-xxs/medium",
           className: R.headerPlayer,
           children: C.intl.string(C.t["6ii1+/"])
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-xxs/medium",
           className: R.headerValue,
           children: (0, E.s)({
@@ -152,7 +152,7 @@ function j(e) {
             aggregationType: null == P ? void 0 : P.aggregation_type
           })
         })]
-      }), (0, r.jsxs)(o.u2D, {
+      }), (0, r.jsxs)(a.u2D, {
         className: R.rows,
         children: [m.map(e => (0, i.createElement)(G, L(w({}, e), {
           key: e.userId,
@@ -172,11 +172,11 @@ function U(e) {
   let {
     leaderboard: t
   } = e, n = (0, b.r)(t);
-  return (0, r.jsx)(O.z, {
+  return (0, r.jsx)(v.z, {
     imageUrl: n,
     children: (0, r.jsxs)("span", {
       className: R.emptyTitleContainer,
-      children: [(0, r.jsx)(o.Text, {
+      children: [(0, r.jsx)(a.Text, {
         tag: "span",
         variant: "text-lg/normal",
         className: R.emptyTitle,
@@ -199,7 +199,7 @@ function G(e) {
     locale: d,
     leaderboard: p,
     trackRankingItemInteraction: E
-  } = e, b = (0, a.e7)([_.default], () => _.default.getUser(t)), y = h.ZP.getName(c, void 0, b), v = null != u && u > n, [O, P] = i.useState("default"), D = (0, a.e7)([f.Z], () => {
+  } = e, b = (0, o.e7)([_.default], () => _.default.getUser(t)), y = h.ZP.getName(c, void 0, b), O = null != u && u > n, [v, P] = i.useState("default"), D = (0, o.e7)([f.Z], () => {
     let e = f.Z.getPrimaryActivity(t);
     return (null == e ? void 0 : e.application_id) != null && A.T.includes(e.application_id)
   }), {
@@ -221,18 +221,18 @@ function G(e) {
     } catch (e) {
       P("error")
     }
-  }, U = (0, r.jsx)(o.Text, {
+  }, U = (0, r.jsx)(a.Text, {
     className: R.tooltip,
     variant: "text-sm/medium",
-    children: "copied" === O ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(o.kSu, {
+    children: "copied" === v ? (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(a.kSu, {
         size: "xs",
-        color: o.TVs.colors.STATUS_POSITIVE
+        color: a.TVs.colors.STATUS_POSITIVE
       }), C.intl.string(C.t.ZO0ku7)]
-    }) : "error" === O ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(o.P$X, {
+    }) : "error" === v ? (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(a.P$X, {
         size: "xs",
-        color: o.TVs.colors.STATUS_DANGER
+        color: a.TVs.colors.STATUS_DANGER
       }), C.intl.string(C.t.j2d6Ki)]
     }) : (0, r.jsx)(r.Fragment, {
       children: C.intl.string(C.t.mikfoa)
@@ -240,13 +240,13 @@ function G(e) {
   });
   return (0, r.jsxs)("div", {
     className: R.userRow,
-    children: [v ? (0, r.jsx)("div", {
+    children: [O ? (0, r.jsx)("div", {
       className: R.rankChangeIndicator
     }) : null, (0, r.jsx)("div", {
       className: R.userRank,
       children: n <= 3 ? (0, r.jsx)(I._, {
         rank: n
-      }) : (0, r.jsx)(o.Text, {
+      }) : (0, r.jsx)(a.Text, {
         tabularNumbers: !0,
         color: "text-muted",
         variant: "text-xs/medium",
@@ -254,54 +254,54 @@ function G(e) {
       })
     }), (0, r.jsxs)("div", {
       className: R.userPlayer,
-      children: [(0, r.jsx)(o.qEK, {
+      children: [(0, r.jsx)(a.qEK, {
         src: null == b ? void 0 : b.getAvatarURL(c, 16),
-        size: o.EFr.SIZE_16,
+        size: a.EFr.SIZE_16,
         "aria-label": "avatar"
-      }), (0, r.jsx)(o.LZC, {
+      }), (0, r.jsx)(a.LZC, {
         size: 6,
         horizontal: !0
-      }), (0, r.jsx)(o.X6q, {
+      }), (0, r.jsx)(a.X6q, {
         lineClamp: 1,
         variant: "heading-sm/medium",
         color: "header-primary",
         children: y
       }), 1 === n ? (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(o.LZC, {
+        children: [(0, r.jsx)(a.LZC, {
           size: 4,
           horizontal: !0
         }), (0, r.jsx)(T.Z, {
           className: R.userWinnerImage,
           leaderboard: p
         })]
-      }) : null, v ? (0, r.jsx)(V, {
+      }) : null, O ? (0, r.jsx)(V, {
         rankChange: u - n
       }) : null]
     }), (0, r.jsxs)("div", {
       className: R.badgesContainer,
-      children: [D && (0, r.jsx)(o.iWm, {
+      children: [D && (0, r.jsx)(a.iWm, {
         size: "xs",
-        color: o.TVs.colors.TEXT_POSITIVE,
+        color: a.TVs.colors.TEXT_POSITIVE,
         className: R.liveIcon
-      }), m.isPlatformEmbedded && (0, r.jsx)(o.ua7, {
+      }), m.isPlatformEmbedded && (0, r.jsx)(a.ua7, {
         text: U,
         "aria-label": !1,
         shouldShow: !x,
         onTooltipHide: () => P("default"),
-        children: e => (0, r.jsx)(o.P3F, L(w({}, e), {
+        children: e => (0, r.jsx)(a.P3F, L(w({}, e), {
           onClick: x ? void 0 : j,
           "aria-busy": x,
           className: R.copyLinkContainer,
-          children: x ? (0, r.jsx)(o.$jN, {
-            type: o.$jN.Type.SPINNING_CIRCLE_SIMPLE,
+          children: x ? (0, r.jsx)(a.$jN, {
+            type: a.$jN.Type.SPINNING_CIRCLE_SIMPLE,
             className: R.copySpinner
-          }) : (0, r.jsx)(o.xPt, {
+          }) : (0, r.jsx)(a.xPt, {
             size: "xs",
             className: R.copyLink
           })
         }))
       })]
-    }), (0, r.jsx)(o.X6q, {
+    }), (0, r.jsx)(a.X6q, {
       variant: "heading-sm/medium",
       color: "header-primary",
       tabularNumbers: !0,
@@ -316,7 +316,7 @@ function B(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: R.joinLeaderboardCTAContainer,
-    children: [(0, r.jsx)(o.Text, {
+    children: [(0, r.jsx)(a.Text, {
       variant: "text-xs/normal",
       children: C.intl.string(C.t.BfRGk5)
     }), (0, r.jsx)(T.Z, {
@@ -332,10 +332,10 @@ function V(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: R.rankChangeBadge,
-    children: [(0, r.jsx)(o.wj7, {
+    children: [(0, r.jsx)(a.wj7, {
       size: "xxs",
-      color: o.TVs.colors.TEXT_MUTED
-    }), (0, r.jsx)(o.Text, {
+      color: a.TVs.colors.TEXT_MUTED
+    }), (0, r.jsx)(a.Text, {
       variant: "text-xs/medium",
       color: "text-muted",
       children: t

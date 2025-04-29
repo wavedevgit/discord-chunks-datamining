@@ -19,15 +19,15 @@ var r = n(200651),
   b = n(925549),
   y = n(493773),
   _ = n(209613),
-  O = n(100527),
-  v = n(906732),
+  v = n(100527),
+  O = n(906732),
   C = n(358221),
   j = n(540059),
   S = n(706590),
   E = n(940777),
   x = n(41776),
-  I = n(905423),
-  P = n(802718),
+  P = n(905423),
+  I = n(802718),
   w = n(822857),
   N = n(931928),
   Z = n(431286),
@@ -188,7 +188,7 @@ function eu(e) {
     lurkingGuildIds: i
   } = e, l = (0, S.Z)(), {
     pathname: o
-  } = (0, c.TH)(), s = o.startsWith(et.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB("")), a = (0, P.U)(), u = (0, h.Wu)([R.Z, A.ZP], () => k.default.keys(R.Z.getGuilds()).filter(e => A.ZP.isCurrentUserGuest(e))), d = i.concat(u);
+  } = (0, c.TH)(), s = o.startsWith(et.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB("")), a = (0, I.U)(), u = (0, h.Wu)([R.Z, A.ZP], () => k.default.keys(R.Z.getGuilds()).filter(e => A.ZP.isCurrentUserGuest(e))), d = i.concat(u);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(Y.u, {}), l ? (0, r.jsx)(E.Z, {}) : null, (0, r.jsx)(K.Z, {
       isOnHubVerificationRoute: s
@@ -237,7 +237,7 @@ function eh(e) {
   } = e, a = (0, j.Q3)("GuildsBar"), [d] = (0, h.Wu)([D.ZP], () => {
     let e = D.ZP.getGuildsTree();
     return [e, e.version]
-  }), p = (0, h.e7)([x.Z], () => x.Z.lurkingGuildIds()), b = i.useMemo(() => n ? [] : p, [p, n]), _ = (0, h.e7)([C.Z], () => C.Z.isFullscreenInContext()), [S, E] = i.useState(!1), P = i.useCallback(() => E(!0), []), A = i.useCallback(() => E(!1), []), R = i.useRef(!1), [k] = i.useState(() => new f.V7), H = i.useRef(null), F = i.useRef(null), z = (0, u.OP)(), {
+  }), p = (0, h.e7)([x.Z], () => x.Z.lurkingGuildIds()), b = i.useMemo(() => n ? [] : p, [p, n]), _ = (0, h.e7)([C.Z], () => C.Z.isFullscreenInContext()), [S, E] = i.useState(!1), I = i.useCallback(() => E(!0), []), A = i.useCallback(() => E(!1), []), R = i.useRef(!1), [k] = i.useState(() => new f.V7), H = i.useRef(null), F = i.useRef(null), z = (0, u.OP)(), {
     ref: Y
   } = z, K = es(z, ["ref"]), Q = (0, m.mFp)(), [$, ee] = i.useState(!1), [ei, eh] = i.useState(!1), ep = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), ef = (0, m.dQu)(g.Z.space.SPACE_XS), eg = i.useMemo(() => new ec(d, ee, eh, () => {
     var e, t;
@@ -259,7 +259,7 @@ function eh(e) {
   }), [eg]);
   let {
     analyticsLocations: em
-  } = (0, v.ZP)(O.Z.GUILDS_LIST), {
+  } = (0, O.ZP)(v.Z.GUILDS_LIST), {
     pathname: eb
   } = (0, c.TH)(), ey = eb.startsWith(et.Z5c.GUILD_DISCOVERY) || eb.startsWith(et.Z5c.GLOBAL_DISCOVERY);
   (0, y.Ng)(() => {
@@ -278,10 +278,10 @@ function eh(e) {
     }
   }), i.useEffect(() => {
     if (eg.setGuildsTree(d), R.current || 0 === d.size) return;
-    let e = I.Z.getState().guildId;
+    let e = P.Z.getState().guildId;
     eg.scrollToGuild(e, !1);
     let t = null;
-    return I.Z.subscribe(e => {
+    return P.Z.subscribe(e => {
       let {
         guildId: n
       } = e;
@@ -295,7 +295,7 @@ function eh(e) {
     })
   }, [eg]);
   (0, U.Z)(eg.scrollToGuild);
-  let eO = i.useCallback(function e(t, n, i) {
+  let ev = i.useCallback(function e(t, n, i) {
       switch (t.type) {
         case M.eD.FOLDER:
           return (0, r.jsx)(X.Z, {
@@ -303,7 +303,7 @@ function eh(e) {
             setNodeRef: eg.setNodeRef,
             draggable: !0,
             sorting: S,
-            onDragStart: P,
+            onDragStart: I,
             onDragEnd: A,
             renderChildNode: e,
             "aria-setsize": i,
@@ -315,7 +315,7 @@ function eh(e) {
             setRef: eg.setNodeRef,
             draggable: !0,
             sorting: S,
-            onDragStart: P,
+            onDragStart: I,
             onDragEnd: A,
             "aria-setsize": i,
             "aria-posinset": void 0 !== n ? n + 1 : void 0
@@ -323,16 +323,16 @@ function eh(e) {
         default:
           return null
       }
-    }, [P, A, S, eg.setNodeRef]),
+    }, [I, A, S, eg.setNodeRef]),
     {
-      enabled: ev
+      enabled: eO
     } = (0, w.W)({
       location: "GuildsBar"
     });
   (0, Z.i)();
   let eC = i.useRef(null),
     ej = (0, N.qp)({
-      isVirtualCurrencyEnabled: ev,
+      isVirtualCurrencyEnabled: eO,
       discoveryButtonRef: eC,
       scrollToBottom: eg.scrollToBottom
     }),
@@ -341,19 +341,19 @@ function eh(e) {
       questId: eE,
       onDiscoveryButtonClick: ex
     } = ej,
-    eI = es(ej, ["shouldShow", "questId", "onDiscoveryButtonClick"]),
-    eP = ev && eS,
+    eP = es(ej, ["shouldShow", "questId", "onDiscoveryButtonClick"]),
+    eI = eO && eS,
     ew = (0, r.jsx)(W.Z, {
       ref: eC,
-      questId: eP ? eE : void 0,
+      questId: eI ? eE : void 0,
       selected: ey,
       className: er.discoveryIcon,
-      onClick: eP ? ex : void 0
+      onClick: eI ? ex : void 0
     }),
-    eN = eP ? (0, r.jsx)(N.fO, eo(el({
+    eN = eI ? (0, r.jsx)(N.fO, eo(el({
       targetElementRef: eC,
       isGuildBarScrolling: $
-    }, eI), {
+    }, eP), {
       children: ew
     })) : ew,
     eZ = (0, r.jsx)(B.Z, {
@@ -366,7 +366,7 @@ function eh(e) {
     {
       pinnedSectionEnabled: eT
     } = (0, G.U)("GuildsBar");
-  return (0, r.jsx)(v.Gt, {
+  return (0, r.jsx)(O.Gt, {
     value: em,
     children: (0, r.jsx)(m.f6W, {
       theme: s,
@@ -407,7 +407,7 @@ function eh(e) {
                     guildDiscoveryButton: eN,
                     disableAppDownload: t,
                     isOverlay: n,
-                    renderTreeNode: eO,
+                    renderTreeNode: ev,
                     lurkingGuildIds: b
                   })]
                 })]
@@ -429,7 +429,7 @@ function eh(e) {
                 guildDiscoveryButton: eN,
                 disableAppDownload: t,
                 isOverlay: n,
-                renderTreeNode: eO,
+                renderTreeNode: ev,
                 lurkingGuildIds: b
               })]
             })

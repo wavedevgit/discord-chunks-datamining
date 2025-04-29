@@ -16,8 +16,8 @@ n.d(t, {
 });
 var r = n(512722),
   i = n.n(r),
-  a = n(990547),
-  o = n(544891),
+  o = n(990547),
+  a = n(544891),
   s = n(570140),
   l = n(258609),
   c = n(569545),
@@ -32,8 +32,8 @@ var r = n(512722),
   E = n(979651),
   b = n(934415),
   y = n(70956),
-  v = n(557457),
-  O = n(573261);
+  O = n(557457),
+  v = n(573261);
 n(26151), n(493683);
 var I = n(475179);
 n(287734);
@@ -95,7 +95,7 @@ function D(e, t) {
   } = e;
   if (null != n && w(n, r)) return;
   let i = (0, c.V9)(e),
-    a = (null == t ? void 0 : t.forceMultiple) || _.Z.getAllActiveStreamsForChannel(r).filter(e => {
+    o = (null == t ? void 0 : t.forceMultiple) || _.Z.getAllActiveStreamsForChannel(r).filter(e => {
       let {
         ownerId: t
       } = e;
@@ -104,8 +104,8 @@ function D(e, t) {
   s.Z.dispatch({
     type: "STREAM_WATCH",
     streamKey: i,
-    allowMultiple: a
-  }), a || null != t && t.noFocus || I.Z.selectParticipant(e.channelId, i)
+    allowMultiple: o
+  }), o || null != t && t.noFocus || I.Z.selectParticipant(e.channelId, i)
 }
 
 function L(e, t) {
@@ -124,8 +124,8 @@ function x(e, t) {
   if (null != n && w(n, r)) return;
   D(e, t);
   let i = d.Z.getWindowOpen(S.KJ3.CHANNEL_CALL_POPOUT),
-    a = g.Z.getVoiceChannelId();
-  i && a === r || (0, u.Z)(e)
+    o = g.Z.getVoiceChannelId();
+  i && o === r || (0, u.Z)(e)
 }
 
 function M(e) {
@@ -158,7 +158,7 @@ async function j(e, t, n) {
     streamKey: r
   });
   try {
-    let e = await o.tn.get({
+    let e = await a.tn.get({
       url: S.ANM.STREAM_PREVIEW(r),
       query: {
         version: Date.now()
@@ -182,11 +182,11 @@ async function j(e, t, n) {
 }
 async function U(e) {
   try {
-    await O.Z.post({
+    await v.Z.post({
       url: S.ANM.STREAM_NOTIFY(e),
       oldFormErrors: !0,
       trackedActionData: {
-        event: a.NetworkActionNames.STREAM_NOTIFY
+        event: o.NetworkActionNames.STREAM_NOTIFY
       },
       rejectWithError: !0
     })
@@ -194,13 +194,13 @@ async function U(e) {
 }
 
 function G(e) {
-  (0, v.Ye)(e.preset, e.resolution, e.frameRate), s.Z.dispatch(N({
+  (0, O.Ye)(e.preset, e.resolution, e.frameRate), s.Z.dispatch(N({
     type: "STREAM_UPDATE_SETTINGS"
   }, e))
 }
 
 function B(e, t) {
-  o.tn.patch({
+  a.tn.patch({
     url: S.ANM.STREAM(e),
     body: {
       region: t

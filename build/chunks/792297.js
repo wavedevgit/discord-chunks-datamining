@@ -6,8 +6,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(519160),
   l = n(956664),
   c = n(212459),
@@ -28,16 +28,16 @@ function g(e, t) {
   };
   let {
     width: i,
-    height: a
-  } = t, o = window.innerWidth - 2 * m, s = window.innerHeight - (e ? h : _) * 2, c = (0, l.Tj)({
+    height: o
+  } = t, a = window.innerWidth - 2 * m, s = window.innerHeight - (e ? h : _) * 2, c = (0, l.Tj)({
     width: i,
-    height: a,
+    height: o,
     maxWidth: n,
     maxHeight: r
   }), u = (0, l.Tj)({
     width: i,
-    height: a,
-    maxWidth: o,
+    height: o,
+    maxWidth: a,
     maxHeight: s
   });
   return c.width >= u.width ? c : u
@@ -47,7 +47,7 @@ function E(e) {
   let {
     items: t,
     currentIndex: n,
-    children: a
+    children: o
   } = e, {
     entering: l
   } = (0, c.Y)(), f = t[n], _ = g(t.length > 1, {
@@ -64,10 +64,10 @@ function E(e) {
       (0, u.WG)(e, !0), t.length > 2 && (0, u.WG)(r, !0)
     }
   }, [n, t]), (0, r.jsx)("div", {
-    className: o()(d.mediaArea, {
+    className: a()(d.mediaArea, {
       [d.animated]: l
     }),
-    children: _.width > 0 && _.height > 0 && a(_.width, _.height)
+    children: _.width > 0 && _.height > 0 && o(_.width, _.height)
   }, f.url)
 }
 let b = i.memo(E)

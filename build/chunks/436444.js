@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  a = n.n(i),
-  o = n(272573),
+  o = n.n(i),
+  a = n(272573),
   s = n(481060),
   l = n(906732),
   c = n(975298),
@@ -44,7 +44,7 @@ function y(e) {
   return e
 }
 
-function v(e, t) {
+function O(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,8 +55,8 @@ function v(e, t) {
   return n
 }
 
-function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -85,7 +85,7 @@ let S = {
       confettiTriggerRef: n,
       guild: i,
       isProgressBarAnimationComplete: b,
-      setConfettiCount: v,
+      setConfettiCount: O,
       setShouldFireConfetti: T,
       tier: A,
       tierMarkerAnimationPosition: N,
@@ -106,13 +106,13 @@ let S = {
         friction: 12
       }
     }), G = (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(o.animated.div, {
+      children: [(0, r.jsx)(a.animated.div, {
         className: E.progressBarMarkerIndicator,
         style: {
           transform: U.to(e => "translate(-50%, -50%) scale(".concat(e, ")"))
         }
       }), A !== p.Eu4.NONE ? j ? (0, r.jsx)(s.mTd, {
-        className: a()(E.boostedTierIcon, E.disabledIndicator),
+        className: o()(E.boostedTierIcon, E.disabledIndicator),
         size: "xxs",
         color: "currentColor"
       }) : (0, r.jsx)(u.Z, {
@@ -157,8 +157,8 @@ let S = {
         })
       }),
       shouldShow: A !== p.Eu4.NONE,
-      children: e => (0, r.jsxs)(F, O(y({
-        className: a()(E.progressBarMarker, {
+      children: e => (0, r.jsxs)(F, v(y({
+        className: o()(E.progressBarMarker, {
           [E.progressBarMarkerUnlocked]: x,
           [E.progressBarMarkerLocked]: V,
           [E.progressBarMarkerLower]: M,
@@ -172,7 +172,7 @@ let S = {
           className: E.boostedTierIconBackground
         }), x && A === p.Eu4.TIER_3 ? (0, r.jsx)(_.m, {
           confettiTriggerRef: n,
-          setConfettiCount: v,
+          setConfettiCount: O,
           setShouldFireConfetti: T,
           children: G
         }) : G, (0, r.jsxs)(s.Text, {

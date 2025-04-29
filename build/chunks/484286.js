@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => f
 }), n(388685);
 var r, i = n(200651),
-  a = n(192379),
-  o = n(120356),
-  s = n.n(o),
+  o = n(192379),
+  a = n(120356),
+  s = n.n(a),
   l = n(640103);
 
 function c(e, t, n) {
@@ -30,7 +30,7 @@ function u(e) {
   }
   return e
 }
-class d extends(r = a.PureComponent) {
+class d extends(r = o.PureComponent) {
   static getDerivedStateFromProps(e, t) {
     let {
       streamId: n
@@ -64,20 +64,20 @@ class d extends(r = a.PureComponent) {
     let {
       children: n,
       mirror: r,
-      paused: o,
+      paused: a,
       component: s
     } = this.props;
     if (null == e) {
       if (null == n) return null;
-      let e = a.Children.only(n);
-      return a.cloneElement(e, u({
+      let e = o.Children.only(n);
+      return o.cloneElement(e, u({
         style: {
           display: t && !r ? void 0 : "none"
         }
       }, e.props))
     }
     return (0, i.jsx)(s, {
-      paused: o,
+      paused: a,
       className: l.media,
       streamId: e,
       onReady: t ? null : this.handleReady

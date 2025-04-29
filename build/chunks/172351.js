@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(367907),
-  o = n(10718),
+  o = n(367907),
+  a = n(10718),
   s = n(69626),
   l = n(626135),
   c = n(785717),
@@ -51,32 +51,32 @@ function m(e) {
     type: "channel"
   }), [m]), {
     commands: y
-  } = o.Qm(b, t, n), v = i.useMemo(() => null == y ? void 0 : y.filter(e => {
+  } = a.Qm(b, t, n), O = i.useMemo(() => null == y ? void 0 : y.filter(e => {
     let {
       nsfw: t
     } = e;
     return !0 !== t
   }), [y]);
-  if (null == v || 0 === v.length) return null;
-  let O = e => {
+  if (null == O || 0 === O.length) return null;
+  let v = e => {
     null == g || g(), E({
       action: "PRESS_APP_COMMAND"
     }), l.default.track(d.rMx.POPULAR_APPLICATION_COMMAND_CLICKED, h({
       application_id: t,
       command_id: e,
       guild_id: p
-    }, (0, a.JS)(m.id)))
+    }, (0, o.JS)(m.id)))
   };
   return (0, r.jsx)(u.Z, {
     heading: f.intl.string(f.t["0hKkS0"]),
     children: (0, r.jsx)("ul", {
       className: _.list,
-      children: v.map(e => (0, r.jsx)("li", {
+      children: O.map(e => (0, r.jsx)("li", {
         children: (0, r.jsx)(s.wz, {
           commandId: e.id,
           commandName: e.displayName,
           commandDescription: e.displayDescription,
-          onClick: O,
+          onClick: v,
           guildId: p,
           channelId: m.id,
           applicationId: e.applicationId

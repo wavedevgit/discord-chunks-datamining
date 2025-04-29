@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(442837),
-  a = n(692547),
-  o = n(481060),
+  o = n(692547),
+  a = n(481060),
   s = n(475179),
   l = n(519938),
   c = n(317381),
@@ -43,7 +43,7 @@ function y(e) {
   return e
 }
 
-function v(e, t) {
+function O(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,8 +54,8 @@ function v(e, t) {
   return n
 }
 
-function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -64,15 +64,15 @@ function I(e) {
   let {
     closePopout: t,
     idle: n,
-    pipWindows: a,
+    pipWindows: o,
     voiceChannelId: p,
     onSelect: E
   } = e;
   n && t();
   let b = (0, i.e7)([c.ZP], () => c.ZP.getCurrentEmbeddedActivity()),
     y = (0, i.e7)([_.Z], () => _.Z.pipWindow),
-    v = (0, i.e7)([d.Z], () => d.Z.getSelectedParticipant(p)),
-    O = (0, i.e7)([d.Z], () => d.Z.getStreamParticipants(p));
+    O = (0, i.e7)([d.Z], () => d.Z.getSelectedParticipant(p)),
+    v = (0, i.e7)([d.Z], () => d.Z.getStreamParticipants(p));
 
   function I(e) {
     (null == y ? void 0 : y.id) !== e.pipWindow.id && (0, l.k3)(e.pipWindow.id);
@@ -95,10 +95,10 @@ function I(e) {
 
   function T() {
     let e = [],
-      t = a.find(e => e.component === h.NYg.VIDEO);
-    return null != t && O.forEach(n => {
+      t = o.find(e => e.component === h.NYg.VIDEO);
+    return null != t && v.forEach(n => {
       let r = f.Z.getActiveStreamForApplicationStream(n.stream),
-        i = n.id === (null == v ? void 0 : v.id) && (null == y ? void 0 : y.id) === t.id;
+        i = n.id === (null == O ? void 0 : O.id) && (null == y ? void 0 : y.id) === t.id;
       null == r || i || e.push({
         pipWindow: t,
         participant: n,
@@ -111,15 +111,15 @@ function I(e) {
     var t;
     let n = e.pipWindow.id,
       i = null == (t = e.participant) ? void 0 : t.id,
-      a = S(e),
+      o = S(e),
       s = "".concat(n).concat(null != i ? i : "");
-    return (0, r.jsx)(o.sNh, {
+    return (0, r.jsx)(a.sNh, {
       id: s,
-      label: a,
+      label: o,
       action: () => I(e)
     }, s)
   }
-  return (0, r.jsx)(o.v2r, {
+  return (0, r.jsx)(a.v2r, {
     navId: "pip-menu",
     "aria-label": "switch PIP",
     onClose: t,
@@ -135,19 +135,19 @@ let S = function(e) {
     var n;
     return e.ownerId !== (null == (n = p.default.getCurrentUser()) ? void 0 : n.id) && e.channelId === t
   }), c = 1 === s.length && s[0].component === h.NYg.EMBED_IFRAME || 0 === l.length, u = 1 === s.length && l.length <= 1;
-  return c || u ? null : (0, r.jsx)(o.yRy, {
+  return c || u ? null : (0, r.jsx)(a.yRy, {
     position: "bottom",
     renderPopout: e => (0, r.jsx)(I, y({
       voiceChannelId: t,
       pipWindows: s,
       idle: n
     }, e)),
-    children: e => (0, r.jsx)(o.P3F, O(y({
+    children: e => (0, r.jsx)(a.P3F, v(y({
       className: E.menuIcon
     }, e), {
-      children: (0, r.jsx)(o.Huf, {
+      children: (0, r.jsx)(a.Huf, {
         size: "md",
-        color: a.Z.unsafe_rawColors.WHITE_500.css
+        color: o.Z.unsafe_rawColors.WHITE_500.css
       })
     }))
   })

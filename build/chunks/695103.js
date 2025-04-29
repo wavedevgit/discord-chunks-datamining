@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
-let r, i, a;
+let r, i, o;
 n.d(t, {
   Z: () => A
 }), n(388685), n(358797);
-var o, s = n(442837),
+var a, s = n(442837),
   l = n(570140),
   c = n(238514),
   u = n(695346),
@@ -41,26 +41,26 @@ let h = {
   E = !1;
 
 function b() {
-  a = null
+  o = null
 }
 
 function y() {
   r = null, i = null, g = new Set, m.applicationId = null, m.originURL = null, b()
 }
 
-function v(e) {
+function O(e) {
   let {
     applicationId: t
   } = e;
-  g.add(t), a = null
+  g.add(t), o = null
 }
 
-function O(e) {
+function v(e) {
   let {
     applicationId: t,
     originURL: n
   } = e;
-  r = t, i = n, g.delete(t), a = null, m.applicationId = t, m.originURL = n
+  r = t, i = n, g.delete(t), o = null, m.applicationId = t, m.originURL = n
 }
 
 function I(e) {
@@ -68,7 +68,7 @@ function I(e) {
     applicationId: t,
     error: n
   } = e;
-  g.delete(t), a = n
+  g.delete(t), o = n
 }
 
 function S(e) {
@@ -77,7 +77,7 @@ function S(e) {
   } = e;
   r = t
 }
-class T extends(o = s.ZP.PersistedStore) {
+class T extends(a = s.ZP.PersistedStore) {
   initialize(e) {
     r = (m = p({}, null != e ? e : h)).applicationId, i = m.originURL, this.waitFor(d.Z, c.Z), this.syncWith([d.Z, c.Z], () => !0), f.Z.whenInitialized(() => {
       E = !0
@@ -111,7 +111,7 @@ class T extends(o = s.ZP.PersistedStore) {
     return i
   }
   get error() {
-    return a
+    return o
   }
   whenInitialized(e) {
     this.addConditionalChangeListener(() => {
@@ -121,8 +121,8 @@ class T extends(o = s.ZP.PersistedStore) {
 }
 _(T, "displayName", "TestModeStore"), _(T, "persistKey", "TestModeStore");
 let A = new T(l.Z, {
-  DEVELOPER_TEST_MODE_AUTHORIZATION_START: v,
-  DEVELOPER_TEST_MODE_AUTHORIZATION_SUCCESS: O,
+  DEVELOPER_TEST_MODE_AUTHORIZATION_START: O,
+  DEVELOPER_TEST_MODE_AUTHORIZATION_SUCCESS: v,
   DEVELOPER_TEST_MODE_AUTHORIZATION_FAIL: I,
   OVERLAY_INITIALIZE: S,
   DEVELOPER_TEST_MODE_RESET_ERROR: b,

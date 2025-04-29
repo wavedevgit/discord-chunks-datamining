@@ -5,8 +5,8 @@ n.d(t, {
 }), n(539854), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   s = n(493683),
   l = n(447543),
   c = n(904245),
@@ -30,7 +30,7 @@ function y(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function v(e) {
   return e
 }
 
-function O(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,7 +55,7 @@ function O(e, t) {
 }
 
 function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -74,19 +74,19 @@ function C(e) {
     user: t,
     guildId: n,
     onAction: s
-  } = e, c = (0, a.e7)([g.default], () => g.default.getCurrentUser(), []), d = (0, a.Wu)([m.ZP, _.Z, p.Z], () => {
+  } = e, c = (0, o.e7)([g.default], () => g.default.getCurrentUser(), []), d = (0, o.Wu)([m.ZP, _.Z, p.Z], () => {
     let e = m.ZP.getFlattenedGuildIds(),
       t = [];
     return e.forEach(e => {
       let r = _.Z.getGuild(e);
       null != r && (0, u.b)(p.Z, r) && r.id !== n && t.push(r)
     }), t
-  }, [n]), [y, O] = i.useState({});
+  }, [n]), [y, v] = i.useState({});
 
   function A(e, t) {
     let n = f.ZP.getDefaultChannel(e.id, !0, E.Plq.CREATE_INSTANT_INVITE);
     if (null != n) {
-      if (O(I(v({}, y), {
+      if (v(I(O({}, y), {
           [e.id]: !0
         })), !p.Z.can(E.Plq.CREATE_INSTANT_INVITE, e) && null != e.vanityURLCode) return void N(t, e.vanityURLCode);
       l.ZP.createInvite(n.id, {
@@ -95,14 +95,14 @@ function C(e) {
       }, T).then(e => N(t, e.code))
     }
   }
-  return (null == c ? void 0 : c.id) === t.id || t.bot || 0 === d.length || h.Z.isBlockedOrIgnored(t.id) ? null : (0, r.jsx)(o.sNh, {
+  return (null == c ? void 0 : c.id) === t.id || t.bot || 0 === d.length || h.Z.isBlockedOrIgnored(t.id) ? null : (0, r.jsx)(a.sNh, {
     id: "invite-to-server",
     label: b.intl.string(b.t.Sd8Ix8),
-    children: d.map(e => y[e.id] ? (0, r.jsx)(o.sNh, {
+    children: d.map(e => y[e.id] ? (0, r.jsx)(a.sNh, {
       id: e.id,
       disabled: !0,
       label: b.intl.string(b.t.PuLLzM)
-    }, e.id) : (0, r.jsx)(o.sNh, {
+    }, e.id) : (0, r.jsx)(a.sNh, {
       id: e.id,
       label: e.name,
       action: () => {

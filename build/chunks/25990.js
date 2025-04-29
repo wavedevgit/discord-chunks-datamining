@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
-let r, i, a, o, s, l, c, u, d, f, _, p, h, m, g, E;
+let r, i, o, a, s, l, c, u, d, f, _, p, h, m, g, E;
 n.d(t, {
-  Z: () => eo
+  Z: () => ea
 });
 var b, y = n(979554),
-  v = n(442837),
-  O = n(570140),
+  O = n(442837),
+  v = n(570140),
   I = n(981631);
 
 function S(e, t, n) {
@@ -63,7 +63,7 @@ function x(e) {
   let {
     avatarDecoration: t
   } = e;
-  a = t
+  o = t
 }
 
 function M(e) {
@@ -77,7 +77,7 @@ function k(e) {
   let {
     profileEffectId: t
   } = e;
-  o = t
+  a = t
 }
 
 function j(e) {
@@ -186,11 +186,11 @@ function J() {
 }
 
 function $() {
-  r = void 0, i = void 0, a = void 0, o = void 0, s = void 0
+  r = void 0, i = void 0, o = void 0, a = void 0, s = void 0
 }
 
 function ee() {
-  l = void 0, c = void 0, u = void 0, d = void 0, f = void 0, o = void 0
+  l = void 0, c = void 0, u = void 0, d = void 0, f = void 0, a = void 0
 }
 
 function et() {
@@ -198,7 +198,7 @@ function et() {
 }
 
 function en() {
-  a = void 0
+  o = void 0
 }
 
 function er() {
@@ -208,7 +208,7 @@ function er() {
 function ei() {
   J(), et(), C()
 }
-class ea extends(b = v.ZP.Store) {
+class eo extends(b = O.ZP.Store) {
   getFormState() {
     return T
   }
@@ -216,7 +216,7 @@ class ea extends(b = v.ZP.Store) {
     return A
   }
   showNotice() {
-    return void 0 !== r || void 0 !== l || void 0 !== c || void 0 !== u || void 0 !== d || void 0 !== f || void 0 !== a || void 0 !== o || void 0 !== i || void 0 !== s || void 0 !== _
+    return void 0 !== r || void 0 !== l || void 0 !== c || void 0 !== u || void 0 !== d || void 0 !== f || void 0 !== o || void 0 !== a || void 0 !== i || void 0 !== s || void 0 !== _
   }
   getIsSubmitDisabled() {
     return void 0 !== c && c.length > I.tPV
@@ -243,13 +243,13 @@ class ea extends(b = v.ZP.Store) {
     return f
   }
   getPendingAvatarDecoration() {
-    return a
+    return o
   }
   getPendingNameplate() {
     return s
   }
   getPendingProfileEffectId() {
-    return o
+    return a
   }
   getAllPending() {
     return {
@@ -259,8 +259,8 @@ class ea extends(b = v.ZP.Store) {
       pendingPronouns: u,
       pendingAccentColor: d,
       pendingThemeColors: f,
-      pendingAvatarDecoration: a,
-      pendingProfileEffectId: o,
+      pendingAvatarDecoration: o,
+      pendingProfileEffectId: a,
       pendingGlobalName: i,
       pendingNameplate: s,
       pendingPrimaryGuildId: _
@@ -291,8 +291,8 @@ class ea extends(b = v.ZP.Store) {
     }
   }
 }
-S(ea, "displayName", "UserSettingsAccountStore");
-let eo = new ea(O.Z, {
+S(eo, "displayName", "UserSettingsAccountStore");
+let ea = new eo(v.Z, {
   USER_SETTINGS_ACCOUNT_INIT: N,
   USER_SETTINGS_MODAL_INIT: N,
   USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS: N,

@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(481060),
-  o = n(239091),
+  o = n(481060),
+  a = n(239091),
   s = n(299206),
   l = n(810568),
   c = n(168524),
@@ -64,8 +64,8 @@ function y(e) {
     guildId: h,
     channel: g,
     entry: y,
-    onSelect: v,
-    disableGameProfileLinks: O
+    onSelect: O,
+    disableGameProfileLinks: v
   } = e, I = i.useRef(null), S = i.useContext(f.Ir), T = (0, u.Z)({
     userId: n.id,
     guildId: h,
@@ -79,12 +79,12 @@ function y(e) {
     label: _.intl.string(_.t["FfCL+/"])
   }), R = (0, d.dX)(y), P = (0, c.Z)({
     location: "ContentPopoutContextMenu",
-    applicationId: R && !0 !== O ? null == (t = y.extra) ? void 0 : t.application_id : void 0,
+    applicationId: R && !0 !== v ? null == (t = y.extra) ? void 0 : t.application_id : void 0,
     source: l.m1.ActivityCardContextMenu,
     trackEntryPointImpression: !0,
     sourceUserId: y.author_id
   });
-  return (0, r.jsx)(a.yRy, {
+  return (0, r.jsx)(o.yRy, {
     targetElementRef: I,
     align: "top",
     position: "right",
@@ -93,36 +93,36 @@ function y(e) {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(a.v2r, {
+      return (0, r.jsx)(o.v2r, {
         navId: b,
         onClose: () => {
-          (0, o.Zy)(), t()
+          (0, a.Zy)(), t()
         },
         "aria-label": _.intl.string(_.t.liqwPD),
-        onSelect: v,
+        onSelect: O,
         children: (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsxs)(a.kSQ, {
-            children: [T, null != P && (0, r.jsx)(a.sNh, {
+          children: [(0, r.jsxs)(o.kSQ, {
+            children: [T, null != P && (0, r.jsx)(o.sNh, {
               id: "game-profile",
               label: _.intl.string(_.t.f7aVGh),
               action: e => {
                 P(e), null == S || S()
               }
             })]
-          }), (0, r.jsxs)(a.kSQ, {
+          }), (0, r.jsxs)(o.kSQ, {
             children: [A, C]
           })]
         })
       })
     },
-    children: e => (0, r.jsx)(a.ua7, {
+    children: e => (0, r.jsx)(o.ua7, {
       text: _.intl.string(_.t.UKOtz8),
-      children: t => (0, r.jsx)(a.P3F, E(m(E(m({
+      children: t => (0, r.jsx)(o.P3F, E(m(E(m({
         innerRef: I
       }, t), {
         className: p.menuIcon
       }), e), {
-        children: (0, r.jsx)(a.xhG, {
+        children: (0, r.jsx)(o.xhG, {
           color: "currentColor",
           size: "custom",
           width: 16,

@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  AF: () => v,
+  AF: () => O,
   BP: () => E,
   Cf: () => T,
-  Gj: () => O,
+  Gj: () => v,
   Hk: () => d,
   KL: () => y,
   L3: () => I,
@@ -20,7 +20,7 @@ n.d(t, {
 var r = n(70956),
   i = n(388032);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -29,14 +29,14 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -74,15 +74,15 @@ let m = new Set(["hubs"]),
   E = "q",
   b = "c",
   y = "l",
-  v = 10 * r.Z.Millis.MINUTE;
-var O = function(e) {
+  O = 10 * r.Z.Millis.MINUTE;
+var v = function(e) {
   return e[e.Clans = _] = "Clans", e[e.Hub = f] = "Hub", e[e.Communities = d] = "Communities", e[e.Activity = 1] = "Activity", e[e.Music = 2] = "Music", e[e.Television = 3] = "Television", e[e.Science = 5] = "Science", e[e.Education = 6] = "Education", e
 }({});
 let I = [1, 2, 3, 5, 6],
   S = ["en-GB"];
 
 function T() {
-  return (0, i.getLanguages)().filter(e => !S.includes(e.code)).map(e => "en-US" === e.code ? l(o({}, e), {
+  return (0, i.getLanguages)().filter(e => !S.includes(e.code)).map(e => "en-US" === e.code ? l(a({}, e), {
     name: i.intl.string(i.t.LQLMGB)
   }) : e)
 }

@@ -1,23 +1,23 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  N7: () => o,
+  N7: () => a,
   aG: () => l,
   jC: () => s
 });
 var r = n(39383),
   i = n.n(r);
-let a = {};
+let o = {};
 
-function o(e) {
+function a(e) {
   let t = i()("VideoStream");
-  return a[t] = e, t
+  return o[t] = e, t
 }
 
 function s(e) {
-  delete a[e]
+  delete o[e]
 }
 
 function l(e) {
-  return a[e]
+  return o[e]
 }

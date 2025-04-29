@@ -1,6 +1,6 @@
 /** Chunk was on web.js **/
 "use strict";
-var r, i, a, o, s, l = n(127849),
+var r, i, o, a, s, l = n(127849),
   c = n(242606),
   u = n(48657),
   d = n(390827).set,
@@ -13,30 +13,30 @@ var r, i, a, o, s, l = n(127849),
   E = l.document,
   b = l.process,
   y = l.Promise,
-  v = c("queueMicrotask");
-if (!v) {
-  var O = new f,
+  O = c("queueMicrotask");
+if (!O) {
+  var v = new f,
     I = function() {
       var e, t;
-      for (m && (e = b.domain) && e.exit(); t = O.get();) try {
+      for (m && (e = b.domain) && e.exit(); t = v.get();) try {
         t()
       } catch (e) {
-        throw O.head && r(), e
+        throw v.head && r(), e
       }
       e && e.enter()
     };
-  _ || m || h || !g || !E ? !p && y && y.resolve ? ((o = y.resolve(void 0)).constructor = y, s = u(o.then, o), r = function() {
+  _ || m || h || !g || !E ? !p && y && y.resolve ? ((a = y.resolve(void 0)).constructor = y, s = u(a.then, a), r = function() {
     s(I)
   }) : m ? r = function() {
     b.nextTick(I)
   } : (d = u(d, l), r = function() {
     d(I)
-  }) : (i = !0, a = E.createTextNode(""), new g(I).observe(a, {
+  }) : (i = !0, o = E.createTextNode(""), new g(I).observe(o, {
     characterData: !0
   }), r = function() {
-    a.data = i = !i
-  }), v = function(e) {
-    O.head || r(), O.add(e)
+    o.data = i = !i
+  }), O = function(e) {
+    v.head || r(), v.add(e)
   }
 }
-e.exports = v
+e.exports = O

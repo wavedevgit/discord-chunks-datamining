@@ -25,22 +25,22 @@ function y(e) {
     hovered: l,
     subtitle: y,
     onClick: _
-  } = e, O = (0, s.e7)([u.Z], () => u.Z.getChannelStatus(t)), v = null != O && O.length > 0, C = (0, c.ZP)(t, !0), j = null != y && y.length > 0;
+  } = e, v = (0, s.e7)([u.Z], () => u.Z.getChannelStatus(t)), O = null != v && v.length > 0, C = (0, c.ZP)(t, !0), j = null != y && y.length > 0;
   if (i.useEffect(() => {
-      v && p.default.track(f.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
+      O && p.default.track(f.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
         channel_id: t.id,
         guild_id: t.guild_id
       })
-    }, [v, t.id, t.guild_id]), null == t.guild_id) return null;
+    }, [O, t.id, t.guild_id]), null == t.guild_id) return null;
   let S = o()(m.statusDiv, n && C ? m.hoverable : null);
-  return v ? (0, r.jsx)(a.P3F, {
+  return O ? (0, r.jsx)(a.P3F, {
     className: S,
     onClick: C ? _ : void 0,
     children: (0, r.jsx)(a.Text, {
       variant: "text-xs/medium",
       className: o()(m.statusText, b.markup),
       children: (0, r.jsx)(d.Z, {
-        children: h.Z.parseVoiceChannelStatus(O, !0, {
+        children: h.Z.parseVoiceChannelStatus(v, !0, {
           channelId: t.id
         })
       })

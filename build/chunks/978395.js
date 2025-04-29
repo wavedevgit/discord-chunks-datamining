@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(442837),
-  a = n(481060),
-  o = n(320582),
+  o = n(481060),
+  a = n(320582),
   s = n(189156),
   l = n(699516),
   c = n(246946),
@@ -21,8 +21,8 @@ var r = n(200651),
   E = n(502762),
   b = n(530),
   y = n(827313),
-  v = n(420654),
-  O = n(116854),
+  O = n(420654),
+  v = n(116854),
   I = n(166584),
   S = n(915014),
   T = n(228168),
@@ -45,15 +45,15 @@ function C(e) {
   } = (0, i.cj)([l.Z], () => ({
     relationshipType: l.Z.getRelationshipType(t.id),
     originApplicationId: l.Z.getOriginApplicationId(t.id)
-  })), j = (0, o.vh)(t.id), U = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), G = t.id === n.id, B = (0, d.I5)(n);
-  return (0, r.jsxs)(a.Ttm, {
+  })), j = (0, a.vh)(t.id), U = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), G = t.id === n.id, B = (0, d.I5)(n);
+  return (0, r.jsxs)(o.Ttm, {
     fade: !0,
     className: N.body,
     children: [(0, r.jsx)(b.Z, {
       user: t,
       onOpenProfile: w,
       onClose: L,
-      usernameIcon: t.hasAvatarForGuild(null == R ? void 0 : R.id) && (0, r.jsx)(O.Z, {
+      usernameIcon: t.hasAvatarForGuild(null == R ? void 0 : R.id) && (0, r.jsx)(v.Z, {
         user: t,
         nickname: x
       }),
@@ -97,7 +97,7 @@ function C(e) {
     }), t.isProvisional ? (0, r.jsx)(s.wQ, {
       userId: t.id,
       headingColor: "header-primary"
-    }) : (0, r.jsx)(v.Z, {
+    }) : (0, r.jsx)(O.Z, {
       user: t,
       bio: null == C ? void 0 : C.bio,
       hidePersonalInformation: U,

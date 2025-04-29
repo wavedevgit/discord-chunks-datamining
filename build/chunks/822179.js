@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => A
 }), n(539854);
 var r, i = n(392711),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(570140),
   l = n(704907),
   c = n(581883),
@@ -69,7 +69,7 @@ let E = 20,
   y = () => {
     d.Z.isLoaded && b.compute()
   },
-  v = e => {
+  O = e => {
     let {
       stickerIds: t
     } = e;
@@ -80,7 +80,7 @@ let E = 20,
       })
     }), y()
   },
-  O = () => {
+  v = () => {
     y()
   };
 
@@ -88,7 +88,7 @@ function I() {
   var e;
   let t = null == (e = c.Z.frecencyWithoutFetchingLatest.stickerFrecency) ? void 0 : e.stickers;
   if (null == t) return !1;
-  b.overwriteHistory(a().mapValues(t, e => m(p({}, e), {
+  b.overwriteHistory(o().mapValues(t, e => m(p({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), g.pendingUsages)
 }
@@ -103,9 +103,9 @@ function S(e) {
   if (t !== f.yP.FRECENCY_AND_FAVORITES_SETTINGS || !n) return !1;
   g.pendingUsages = []
 }
-class T extends(r = o.ZP.PersistedStore) {
+class T extends(r = a.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(d.Z), null != e && (g = e), this.syncWith([d.Z], O), this.syncWith([c.Z], I)
+    this.waitFor(d.Z), null != e && (g = e), this.syncWith([d.Z], v), this.syncWith([c.Z], I)
   }
   getState() {
     return g
@@ -119,6 +119,6 @@ class T extends(r = o.ZP.PersistedStore) {
 }
 _(T, "displayName", "StickersPersistedStore"), _(T, "persistKey", "StickersPersistedStoreV2");
 let A = new T(s.Z, {
-  STICKER_TRACK_USAGE: v,
+  STICKER_TRACK_USAGE: O,
   USER_SETTINGS_PROTO_UPDATE: S
 })

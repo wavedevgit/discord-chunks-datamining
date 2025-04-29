@@ -22,8 +22,8 @@ n.d(t, {
 }), n(388685), n(413496), n(433524), n(35282), n(704826), n(314940), n(781311);
 var r = n(278074),
   i = n(873546),
-  a = n(442837),
-  o = n(34756),
+  o = n(442837),
+  a = n(34756),
   s = n(100159),
   l = n(912788),
   c = n(594174),
@@ -58,9 +58,9 @@ function b(e) {
   return e
 }
 let y = ["discordapp.com/gifts", "discord.com/gifts"],
-  v = 3,
-  O = [_.Z.escape(window.GLOBAL_ENV.GIFT_CODE_HOST), ...y.map(e => _.Z.escape(e))].join("|"),
-  I = RegExp("(?: |^|https?://)(?:".concat(O, ")/([a-z0-9-]+)"), "gi"),
+  O = 3,
+  v = [_.Z.escape(window.GLOBAL_ENV.GIFT_CODE_HOST), ...y.map(e => _.Z.escape(e))].join("|"),
+  I = RegExp("(?: |^|https?://)(?:".concat(v, ")/([a-z0-9-]+)"), "gi"),
   S = [...["discord.com/billing/promotions", "promos.discord.gg"].map(e => _.Z.escape(e))].join("|"),
   T = RegExp("(?: |^|https?://)(?:".concat(S, ")(/|(/)?\\?code=)([a-z0-9-]+)"), "gi"),
   A = "abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789",
@@ -101,8 +101,8 @@ let V = e => (null == e ? void 0 : e.type) === h.uaV.CUSTOM_GIFT && (null == e ?
     let t;
     if (null == e) return [];
     let n = new Set;
-    for (; null != (t = I.exec(e)) && n.size < v;) n.add(B(t[1]));
-    for (; null != (t = T.exec(e)) && n.size < v;) n.add(B(t[t.length - 1]));
+    for (; null != (t = I.exec(e)) && n.size < O;) n.add(B(t[1]));
+    for (; null != (t = T.exec(e)) && n.size < O;) n.add(B(t[t.length - 1]));
     return Array.from(n)
   };
 
@@ -139,7 +139,7 @@ async function H(e) {
     throw u.default.track(h.rMx.GIFT_CODE_RESOLVED, {
       resolved: !1,
       gift_code: e
-    }), new o.Z(t)
+    }), new a.Z(t)
   }
 }
 
@@ -147,8 +147,8 @@ function Y(e, t) {
   u.default.track(h.rMx.GIFT_CODE_COPIED, b({}, (0, s.Z)(t, !1, !1), e.analyticsData))
 }
 
-function W(e, t, n, r, i, a, o) {
-  return null == n && (r || i || null == e) ? !o || a || r || i ? r && (t.isSubscription || null != e) ? h.wZ8.SUCCESS : h.wZ8.CONFIRM : h.wZ8.OPEN : h.wZ8.ERROR
+function W(e, t, n, r, i, o, a) {
+  return null == n && (r || i || null == e) ? !a || o || r || i ? r && (t.isSubscription || null != e) ? h.wZ8.SUCCESS : h.wZ8.CONFIRM : h.wZ8.OPEN : h.wZ8.ERROR
 }
 
 function K(e, t, n) {
@@ -215,14 +215,14 @@ function Q(e) {
     sku: n,
     libraryApplication: r,
     error: i,
-    accepted: a,
-    accepting: o,
+    accepted: o,
+    accepting: a,
     onGoToLibrary: s,
     subscriptionPlan: l = null
   } = e;
   switch (t) {
     case h.wZ8.ERROR:
-      return X(r, i, a, o, s);
+      return X(r, i, o, a, s);
     case h.wZ8.SUCCESS:
       if (null != l) return q(l);
       return g.intl.formatToPlainString(g.t["3CPsbm"], {
@@ -244,18 +244,18 @@ function Q(e) {
 }
 
 function X(e, t, n, r, i) {
-  let a = n || r ? void 0 : e,
-    o = g.intl.format(g.t["5zyz9/"], {
+  let o = n || r ? void 0 : e,
+    a = g.intl.format(g.t["5zyz9/"], {
       onGoToLibrary: i
     });
-  return null != a ? o : null == t ? null : et(t, c.default.getCurrentUser())
+  return null != o ? a : null == t ? null : et(t, c.default.getCurrentUser())
 }
 
 function J(e, t, n) {
   let r = t.applicationId,
     i = e.length > 0 ? e : [r],
-    a = i.map(e => n.getLibraryApplication(r, e, !0)).filter(d.lm);
-  return a.length === i.length ? a[0] : null
+    o = i.map(e => n.getLibraryApplication(r, e, !0)).filter(d.lm);
+  return o.length === i.length ? o[0] : null
 }
 
 function $(e) {
@@ -264,7 +264,7 @@ function $(e) {
   let [n, r, i] = t;
   return null == i ? null : i.replace(RegExp(x, "g"), "")
 }
-let ee = (e, t) => (0, a.e7)([l.Z], () => {
+let ee = (e, t) => (0, o.e7)([l.Z], () => {
   if (null == e || !t) return null;
   let n = l.Z.getGiftCode(e);
   return null == n || "" === n ? null : n

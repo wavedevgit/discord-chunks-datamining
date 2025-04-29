@@ -1,6 +1,6 @@
 /**
   Module ID: 2026
-  Original File Name: adc35aa1f3ad490f
+  Original File Name: 1859f9889fda1f4c
 **/
 .buttonContent_a83ec9 {
     align-items: center;
@@ -256,13 +256,20 @@
     width: 240px
 }
 
-.nameplateRightPanePreviewAvatarContainer_c50f62 {
+.nameplateRightPanePreviewAvatarContainer_c50f62,.nameplateRightPanePreviewAvatarInner_c50f62 {
     padding: 0 8px
 }
 
-.nameplateRightPanePreviewAvatarInner_c50f62 {
-    color: pink;
-    padding: 0 8px
+.userBlue_c50f62 {
+    color: var(--role-sky-blue)
+}
+
+.userPink_c50f62 {
+    color: var(--role-magenta)
+}
+
+.userGreen_c50f62 {
+    color: var(--role-light-green)
 }
 
 .namplateRightPanePreviewSectionGroup_c50f62 {
@@ -528,4 +535,4 @@
     width: 350px
 }
 
-/*# sourceMappingURL=adc35aa1f3ad490f.css.map*/
+/*# sourceMappingURL=1859f9889fda1f4c.css.map*/

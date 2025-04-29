@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(65234), n(111804), n(490233), n(97749);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(812028),
   l = n(772848),
   c = n(631467),
@@ -52,30 +52,30 @@ function y(e, t) {
   return n
 }
 
-function v(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function O(e) {
+function v(e) {
   let {
     url: t,
     className: n,
-    style: a,
-    onLoad: o,
+    style: o,
+    onLoad: a,
     shouldRefocus: g,
     queryParams: E,
     allowPopups: y = !1,
-    referrerPolicy: O = "origin"
-  } = e, I = (0, f.sU)({}), S = (0, s.useMemoOne)(() => (0, l.Z)(), [t]), T = i.useRef(null), A = (0, _.Z)(T, g, null == I ? window : I), N = v(b({}, E), {
+    referrerPolicy: v = "origin"
+  } = e, I = (0, f.sU)({}), S = (0, s.useMemoOne)(() => (0, l.Z)(), [t]), T = i.useRef(null), A = (0, _.Z)(T, g, null == I ? window : I), N = O(b({}, E), {
     frame_id: S,
     platform: h.S4.DESKTOP
-  }), [C, R] = i.useState(!1), P = u.Z.theme, w = b({}, a);
+  }), [C, R] = i.useState(!1), P = u.Z.theme, w = b({}, o);
 
   function D(e) {
     var n;
-    null == o || o(e.target), T.current = e.target, A(!0), null == (n = e.target.contentWindow) || n.postMessage([c.Z.HELLO, N], null != t ? t : "")
+    null == a || a(e.target), T.current = e.target, A(!0), null == (n = e.target.contentWindow) || n.postMessage([c.Z.HELLO, N], null != t ? t : "")
   }
   return P === m.BRd.LIGHT ? w.colorScheme = "light" : w.colorScheme = "dark", i.useEffect(() => (d.S.dispatch(m.CkL.IFRAME_MOUNT, {
     id: S
@@ -96,7 +96,7 @@ function O(e) {
   }, []), C && (w.pointerEvents = "none"), null != t ? (0, r.jsx)("iframe", {
     style: w,
     allow: "autoplay; encrypted-media",
-    referrerPolicy: O,
+    referrerPolicy: v,
     onLoad: D,
     sandbox: (0, p.Z)({
       allowPopups: y
@@ -109,16 +109,16 @@ function O(e) {
 function I(e) {
   let {
     onLoad: t
-  } = e, [n, a] = i.useState(!1), s = i.useCallback(e => {
-    a(!0), null == t || t(e)
+  } = e, [n, o] = i.useState(!1), s = i.useCallback(e => {
+    o(!0), null == t || t(e)
   }, [t]);
   return (0, r.jsxs)("div", {
     className: g.fillParent,
     children: [!n && (0, r.jsx)("div", {
-      className: o()(g.fillParent, g.iframePlaceholder)
+      className: a()(g.fillParent, g.iframePlaceholder)
     }), (0, r.jsx)("div", {
-      className: o()(g.fillParent, n ? void 0 : g.hiddenIframeContainer),
-      children: (0, r.jsx)(O, v(b({}, e), {
+      className: a()(g.fillParent, n ? void 0 : g.hiddenIframeContainer),
+      children: (0, r.jsx)(v, O(b({}, e), {
         onLoad: s
       }))
     })]

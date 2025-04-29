@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(592125),
   i = n(131951),
-  a = n(19780),
-  o = n(458725),
+  o = n(19780),
+  a = n(458725),
   s = n(442741);
 
 function l(e, t, n) {
@@ -35,9 +35,9 @@ let u = {
     let {
       voiceChannelId: t,
       voiceState: n
-    } = e, l = r.Z.getChannel(t), u = (null == l ? void 0 : l.isGuildStageVoice()) && (null == n ? void 0 : n.suppress), d = 0 === Object.keys(i.Z.getInputDevices()).length, f = a.Z.getMediaSessionId();
+    } = e, l = r.Z.getChannel(t), u = (null == l ? void 0 : l.isGuildStageVoice()) && (null == n ? void 0 : n.suppress), d = 0 === Object.keys(i.Z.getInputDevices()).length, f = o.Z.getMediaSessionId();
     if (d && null != l && null != f && !u) return [c({
-      type: o.u.NO_INPUT_DEVICES
+      type: a.u.NO_INPUT_DEVICES
     }, (0, s.Y9)())]
   },
   makeErrorContextKey: e => "".concat(e.mediaSessionId)

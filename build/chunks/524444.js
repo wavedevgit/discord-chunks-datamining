@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  A7: () => eo,
+  A7: () => ea,
   BO: () => eh,
   DR: () => ec,
   G5: () => ef,
@@ -15,14 +15,14 @@ n.d(t, {
   hX: () => ee,
   iT: () => er,
   lV: () => $,
-  ur: () => ea,
+  ur: () => eo,
   wj: () => et,
   xi: () => ei
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(392711),
   l = n.n(s),
   c = n(374470),
@@ -37,8 +37,8 @@ var r = n(200651),
   E = n(40330),
   b = n(249458),
   y = n(313201),
-  v = n(540059),
-  O = n(688465),
+  O = n(540059),
+  v = n(688465),
   I = n(425886),
   S = n(80966),
   T = n(593545),
@@ -104,8 +104,8 @@ function z(e, t) {
   if (null == e) return {};
   var n, r, i = q(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -113,8 +113,8 @@ function z(e, t) {
 function q(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let Q = {
@@ -132,19 +132,19 @@ function $(e) {
   var {
     onVolumeChange: t,
     onMute: n,
-    volume: a,
-    autoMute: o,
+    volume: o,
+    autoMute: a,
     alt: s,
     renderAdjacentContent: l,
     renderOverlayContent: c
   } = e, u = z(e, ["onVolumeChange", "onMute", "volume", "autoMute", "alt", "renderAdjacentContent", "renderOverlayContent"]);
   let d = X(t),
     f = J(n);
-  return a = null == a ? k.FC : a, o = null == o ? k.rs : o, (0, r.jsxs)(i.Fragment, {
+  return o = null == o ? k.FC : o, a = null == a ? k.rs : a, (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsx)(S.Z, K(Y({}, u), {
       alt: s,
-      volume: a,
-      autoMute: o,
+      volume: o,
+      autoMute: a,
       onVolumeChange: d,
       onMute: f,
       renderLinkComponent: er,
@@ -157,20 +157,20 @@ function ee(e) {
   var {
     onVolumeChange: t,
     volume: n,
-    onMute: a,
-    onVolumeShow: o,
+    onMute: o,
+    onVolumeShow: a,
     onVolumeHide: s,
     renderAdjacentContent: l
   } = e, c = z(e, ["onVolumeChange", "volume", "onMute", "onVolumeShow", "onVolumeHide", "renderAdjacentContent"]);
   let u = X(t),
-    d = J(a);
+    d = J(o);
   n = null == n ? k.FC : n;
   let f = () => !1;
   return (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsx)(I.Z, K(Y({}, c), {
       onVolumeChange: u,
       onMute: d,
-      onVolumeShow: o,
+      onVolumeShow: a,
       onVolumeHide: s,
       volume: n,
       autoMute: f,
@@ -184,11 +184,11 @@ function et(e) {
     onVolumeChange: t,
     volume: n,
     onMute: i
-  } = e, a = z(e, ["onVolumeChange", "volume", "onMute"]);
-  let o = X(t),
+  } = e, o = z(e, ["onVolumeChange", "volume", "onMute"]);
+  let a = X(t),
     s = J(i);
-  return n = null == n ? k.FC : n, (0, r.jsx)(P.Z, K(Y({}, a), {
-    onVolumeChange: o,
+  return n = null == n ? k.FC : n, (0, r.jsx)(P.Z, K(Y({}, o), {
+    onVolumeChange: a,
     onMute: s,
     volume: n
   }))
@@ -198,7 +198,7 @@ function en(e) {
   let {
     alt: t,
     hiddenSpoilers: n,
-    renderAdjacentContent: a,
+    renderAdjacentContent: o,
     containerClassName: s,
     imageContainerClassName: l,
     disableAltTextDisplay: c = !1,
@@ -229,11 +229,11 @@ function en(e) {
     })
   }, b = i.createRef();
   return (0, r.jsxs)("div", {
-    className: o()(Z.imageContent, s),
+    className: a()(Z.imageContent, s),
     children: [(0, r.jsxs)("div", {
-      className: o()(Z.imageContainer, l),
+      className: a()(Z.imageContainer, l),
       style: _,
-      children: [(0, r.jsx)(p.Z, Y({}, e)), null != a && a()]
+      children: [(0, r.jsx)(p.Z, Y({}, e)), null != o && o()]
     }), m && g && (0, r.jsx)("div", {
       className: Z.mediaMosaicAltTextContainer,
       children: (0, r.jsx)(d.yRy, {
@@ -247,7 +247,7 @@ function en(e) {
             type: "button",
             ref: b,
             "aria-label": F.intl.string(F.t.fSiQ3N),
-            className: o()(Z.mediaMosaicAltText, {
+            className: a()(Z.mediaMosaicAltText, {
               [Z.reducedSize]: u
             }),
             children: F.intl.string(F.t.jCV1T0)
@@ -274,10 +274,10 @@ function ei(e) {
   })
 }
 
-function ea(e) {
+function eo(e) {
   return (0, r.jsx)(E.Z, Y({}, e))
 }
-var eo = function(e) {
+var ea = function(e) {
   return e[e.OLD_MESSAGES = 0] = "OLD_MESSAGES", e[e.REPLY = 1] = "REPLY", e
 }({});
 
@@ -307,17 +307,17 @@ let ec = e => {
       type: t = 0,
       onClick: n,
       className: i
-    } = e, a = (0, v.Q3)("JumpToPresentBar");
+    } = e, o = (0, O.Q3)("JumpToPresentBar");
     return (0, r.jsx)(b.G.Consumer, {
       children: e => e.disableInteractions ? null : (0, r.jsxs)("div", {
         onClick: n,
-        className: o()(Z.jumpToPresentBar, i),
+        className: a()(Z.jumpToPresentBar, i),
         children: [(0, r.jsx)("div", {
           className: Z.barButtonMain,
           children: es(t)
         }), null != n ? (0, r.jsx)(d.tEY, {
-          offset: a ? -2 : 4,
-          children: a ? (0, r.jsx)(d.zxk, {
+          offset: o ? -2 : 4,
+          children: o ? (0, r.jsx)(d.zxk, {
             size: "sm",
             onClick: n,
             children: el(t)
@@ -345,7 +345,7 @@ let ec = e => {
     } = e;
     return (0, r.jsx)(b.G.Consumer, {
       children: e => e.disableInteractions ? null : (0, r.jsxs)(d.P3F, {
-        className: o()(Z.messagesErrorBar, i),
+        className: a()(Z.messagesErrorBar, i),
         onClick: t,
         focusProps: {
           offset: {
@@ -374,7 +374,7 @@ function ed(e) {
   let {
     content: t,
     channelId: n
-  } = e, [a] = i.useState(() => (0, y.hQ)("NewMessagesBarJumpToNewMessages_")), s = i.useCallback(() => {
+  } = e, [o] = i.useState(() => (0, y.hQ)("NewMessagesBarJumpToNewMessages_")), s = i.useCallback(() => {
     let e = w.ZP.ackMessageId(n);
     null != e ? f.Z.jumpToMessage({
       channelId: n,
@@ -393,7 +393,7 @@ function ed(e) {
     disableInteractions: c
   } = i.useContext(b.G);
   return c ? null : (0, r.jsxs)("div", {
-    className: o()(Z.newMessagesBar, {
+    className: a()(Z.newMessagesBar, {
       [Z.disableInteractions]: c
     }),
     children: [(0, r.jsx)(d.tEY, {
@@ -403,9 +403,9 @@ function ed(e) {
         className: Z.barButtonMain,
         onClick: s,
         "aria-label": F.intl.string(F.t.z0Mkp6),
-        "aria-describedby": a,
+        "aria-describedby": o,
         children: (0, r.jsx)("span", {
-          id: a,
+          id: o,
           className: Z.span,
           children: t
         })
@@ -427,14 +427,14 @@ function ed(e) {
 }
 
 function ef(e) {
-  var t, n, a;
+  var t, n, o;
   let {
     channel: s,
     content: p,
     scrollManager: h
   } = e, {
     disableInteractions: E
-  } = i.useContext(b.G), [y, v] = i.useState(null), I = i.useRef(null), [S, T] = i.useState(null), R = i.useRef(null), P = (0, u.Wu)([N.Z], () => {
+  } = i.useContext(b.G), [y, O] = i.useState(null), I = i.useRef(null), [S, T] = i.useState(null), R = i.useRef(null), P = (0, u.Wu)([N.Z], () => {
     var e;
     return null != (e = N.Z.summaries(s.id)) ? e : []
   }, [s]), k = (0, g.Z)(P);
@@ -462,11 +462,11 @@ function ef(e) {
     }, [P], ep),
     B = null != (n = (0, u.e7)([N.Z], () => N.Z.visibleSummaryIndex())) ? n : -1,
     H = null == P || null == (t = P[B]) ? void 0 : t.topic;
-  null == H && null == y && (null == P ? void 0 : P.length) >= 1 && (H = null == (a = P[0]) ? void 0 : a.topic);
+  null == H && null == y && (null == P ? void 0 : P.length) >= 1 && (H = null == (o = P[0]) ? void 0 : o.topic);
   let Y = i.useMemo(() => l().debounce(e => {
       var t;
-      v(null != (t = null == e ? void 0 : e.id) ? t : null)
-    }, 64), [v]),
+      O(null != (t = null == e ? void 0 : e.id) ? t : null)
+    }, 64), [O]),
     W = i.useMemo(() => l().throttle(() => {
       (0, A.yK)(null)
     }, 1200, {
@@ -576,7 +576,7 @@ function ef(e) {
     er = F.intl.string(F.t["38qwgI"]);
   return P.length > 0 && (er = "" === H || null == H ? F.intl.string(F.t.DwnFuL) : H), E ? null : (0, r.jsxs)("div", {
     ref: I,
-    className: o()(Z.newTopicsBarContainer, Z.containerMarginTop),
+    className: a()(Z.newTopicsBarContainer, Z.containerMarginTop),
     children: [(0, r.jsx)("div", {
       className: Z.newTopicsBarTopicSection,
       children: (0, r.jsx)(d.P3F, {
@@ -584,7 +584,7 @@ function ef(e) {
         "aria-label": F.intl.string(F.t.RT3MPz),
         onClick: Q,
         children: (0, r.jsxs)("div", {
-          className: o()({
+          className: a()({
             [Z.newTopicsBarTextUnselected]: !z,
             [Z.newTopicsBarTextSelected]: z
           }),
@@ -594,7 +594,7 @@ function ef(e) {
             className: Z.newTopicsBarIcon
           }), (0, r.jsx)(d.Text, {
             variant: "text-sm/medium",
-            className: o()(Z.newTopicsBarCompact, Z.newTopicsBarText),
+            className: a()(Z.newTopicsBarCompact, Z.newTopicsBarText),
             children: er
           }), (0, r.jsx)(L.Z, {
             width: 16,
@@ -610,7 +610,7 @@ function ef(e) {
       children: p
     }), (0, r.jsxs)(d.P3F, {
       onClick: en,
-      className: o()(Z.barButtonAlt, Z.flexEnd),
+      className: a()(Z.barButtonAlt, Z.flexEnd),
       children: [(0, r.jsx)("div", {
         className: Z.newTopicsBarCompact,
         children: F.intl.string(F.t.e6RscX)
@@ -636,7 +636,7 @@ function ef(e) {
             color: "header-primary",
             lineClamp: 1,
             children: F.intl.string(F.t.q21fUl)
-          }), (0, r.jsx)(O.Z, {
+          }), (0, r.jsx)(v.Z, {
             className: Z.summariesBetaTag
           })]
         }), (0, r.jsx)(d.P3F, {
@@ -667,13 +667,13 @@ function ep(e, t) {
 }
 
 function eh(e) {
-  var t, n, a;
+  var t, n, o;
   let {
     channel: s,
     scrollManager: _
   } = e, {
     disableInteractions: p
-  } = i.useContext(b.G), [h, E] = i.useState(null), y = i.useRef(null), [v, I] = i.useState(null), S = i.useRef(null), T = (0, u.Wu)([N.Z], () => {
+  } = i.useContext(b.G), [h, E] = i.useState(null), y = i.useRef(null), [O, I] = i.useState(null), S = i.useRef(null), T = (0, u.Wu)([N.Z], () => {
     var e;
     return null != (e = N.Z.summaries(s.id)) ? e : []
   }, [s]), R = (0, g.Z)(T);
@@ -701,7 +701,7 @@ function eh(e) {
     }, [T], ep),
     w = null != (n = (0, u.e7)([N.Z], () => N.Z.visibleSummaryIndex())) ? n : -1,
     k = null == T || null == (t = T[w]) ? void 0 : t.topic;
-  null == k && null == h && (null == T ? void 0 : T.length) >= 1 && (k = null == (a = T[0]) ? void 0 : a.topic);
+  null == k && null == h && (null == T ? void 0 : T.length) >= 1 && (k = null == (o = T[0]) ? void 0 : o.topic);
   let j = i.useMemo(() => l().get(T, w - 1), [w, T]),
     U = i.useMemo(() => l().get(T, w + 1), [w, T]),
     B = i.useMemo(() => l().debounce(e => {
@@ -768,13 +768,13 @@ function eh(e) {
       null != n && I(n)
     }, []);
   i.useEffect(() => {
-    if (null != v && W) {
+    if (null != O && W) {
       var e;
       null == (e = S.current) || e.scrollTo({
-        top: v
+        top: O
       })
     }
-  }, [v, W]);
+  }, [O, W]);
   let $ = i.useCallback(e => {
     var t;
     (0, c.k)(e.target) && (null == (t = y.current) ? void 0 : t.contains(e.target)) || (W && x.default.track(G.rMx.SUMMARIES_TOPICS_PILL_TOGGLED, {
@@ -807,7 +807,7 @@ function eh(e) {
   let et = F.intl.string(F.t["38qwgI"]);
   return T.length > 0 && (et = "" === k || null == k ? F.intl.string(F.t.DwnFuL) : k), p ? null : (0, r.jsxs)("div", {
     ref: y,
-    className: o()(Z.topicsPillContainer, Z.containerMarginTop),
+    className: a()(Z.topicsPillContainer, Z.containerMarginTop),
     children: [(0, r.jsxs)("div", {
       className: Z.topicsPill,
       children: [(0, r.jsx)(d.P3F, {
@@ -815,7 +815,7 @@ function eh(e) {
         "aria-label": F.intl.string(F.t.RT3MPz),
         onClick: z,
         children: (0, r.jsxs)("div", {
-          className: o()({
+          className: a()({
             [Z.topicsPillTextUnselected]: !W,
             [Z.topicsPillTextSelected]: W
           }),
@@ -839,7 +839,7 @@ function eh(e) {
         children: [(0, r.jsx)(d.P3F, {
           "aria-label": F.intl.string(F.t["4huCnJ"]),
           onClick: X,
-          className: o()(Z.topicsPillCaret, Z.topicsCaretLeft, {
+          className: a()(Z.topicsPillCaret, Z.topicsCaretLeft, {
             [Z.topicsPillCaretDisabled]: null == U
           }),
           children: (0, r.jsx)(L.Z, {
@@ -850,7 +850,7 @@ function eh(e) {
         }), (0, r.jsx)(d.P3F, {
           "aria-label": F.intl.string(F.t["58KOoK"]),
           onClick: Q,
-          className: o()(Z.topicsPillCaret, Z.topicsCaretRight, {
+          className: a()(Z.topicsPillCaret, Z.topicsCaretRight, {
             [Z.topicsPillCaretDisabled]: null == j
           }),
           children: (0, r.jsx)(L.Z, {
@@ -877,7 +877,7 @@ function eh(e) {
             color: "header-primary",
             lineClamp: 1,
             children: F.intl.string(F.t.q21fUl)
-          }), (0, r.jsx)(O.Z, {
+          }), (0, r.jsx)(v.Z, {
             className: Z.summariesBetaTag
           })]
         }), (0, r.jsx)(d.P3F, {
@@ -922,7 +922,7 @@ let em = function(e) {
       className: n
     } = e;
     return (0, r.jsx)("div", {
-      className: o()(Z.popoutContainer, n),
+      className: a()(Z.popoutContainer, n),
       children: t
     })
   },

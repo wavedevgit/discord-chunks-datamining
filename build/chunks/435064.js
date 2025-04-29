@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => ea
+  Z: () => eo
 }), n(388685), n(997841);
 var r, i = n(442837),
-  a = n(570140),
-  o = n(579806),
+  o = n(570140),
+  a = n(579806),
   s = n(594190),
   l = n(569545),
   c = n(314897),
@@ -55,8 +55,8 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = "default",
-  O = [],
+let O = "default",
+  v = [],
   I = [],
   S = [],
   T = 0,
@@ -68,7 +68,7 @@ let v = "default",
   w = {},
   D = {
     clipsEnabled: !1,
-    storageLocation: v,
+    storageLocation: O,
     clipsQuality: {
       resolution: m.LY.RESOLUTION_1080,
       frameRate: m.ws.FPS_30
@@ -94,8 +94,8 @@ let v = "default",
     }
   };
 async function x() {
-  if (L.clipsSettings.storageLocation !== v || null == o.Z || null == o.Z.remoteApp) return;
-  let e = await o.Z.remoteApp.getPath("documents");
+  if (L.clipsSettings.storageLocation !== O || null == a.Z || null == a.Z.remoteApp) return;
+  let e = await a.Z.remoteApp.getPath("documents");
   L.clipsSettings.storageLocation = e, ei.emitChange()
 }
 
@@ -335,7 +335,7 @@ class er extends(r = i.ZP.DeviceSettingsStore) {
   }
   getStreamClipAnimations(e) {
     var t;
-    return null != (t = w[e]) ? t : O
+    return null != (t = w[e]) ? t : v
   }
   hasAnyClipAnimations() {
     return Object.values(w).some(e => e.length > 0)
@@ -448,7 +448,7 @@ g(er, "displayName", "ClipsStore"), g(er, "persistKey", "ClipsStore"), g(er, "mi
     numberOfTimesDismissed: 0
   }
 })]);
-let ei = new er(a.Z, {
+let ei = new er(o.Z, {
     CLIPS_SETTINGS_UPDATE: j,
     CLIPS_SAVE_CLIP: V,
     CLIPS_SAVE_CLIP_PLACEHOLDER: F,
@@ -472,4 +472,4 @@ let ei = new er(a.Z, {
     CLIPS_DISMISS_EDUCATION: en,
     RUNNING_GAMES_CHANGE: et
   }),
-  ea = ei
+  eo = ei

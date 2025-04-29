@@ -5,8 +5,8 @@ n.d(t, {
 }), n(413496), n(433524), n(35282), n(388685), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749);
 var r = n(628735),
   i = n.n(r),
-  a = n(392711),
-  o = n.n(a),
+  o = n(392711),
+  a = n.n(o),
   s = n(729594),
   l = n(591759),
   c = n(981631);
@@ -22,13 +22,13 @@ let u = /(?:^|\.)(?:discordapp|discord|discordmerch)\.com$/i,
   b = new Set([window.GLOBAL_ENV.CDN_HOST, window.GLOBAL_ENV.INVITE_HOST, window.GLOBAL_ENV.GIFT_CODE_HOST, window.GLOBAL_ENV.GUILD_TEMPLATE_HOST]),
   y = !1;
 
-function v(e) {
+function O(e) {
   return b.has(e.toLowerCase())
 }
 
-function O(e) {
+function v(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-  return null != e && (u.test(e) || t && v(e))
+  return null != e && (u.test(e) || t && O(e))
 }
 
 function I(e) {
@@ -40,7 +40,7 @@ function S(e) {
   if (null != e) {
     var n;
     let r = null == (n = l.Z.toURLSafe(e)) ? void 0 : n.hostname;
-    if (null != r && O(r, t)) return !0
+    if (null != r && v(r, t)) return !0
   }
   return !1
 }
@@ -50,7 +50,7 @@ function T(e) {
 }
 let A = {
   URL_REGEX: E,
-  isDiscordHostname: O,
+  isDiscordHostname: v,
   isDiscordLocalhost: function(e, t) {
     return null != e && null != t && window.location.host === e
   },
@@ -68,10 +68,10 @@ let A = {
   format: e => s.format(e),
   formatPathWithQuery: (e, t) => s.format({
     pathname: e,
-    query: o().pickBy(t)
+    query: a().pickBy(t)
   }),
   formatSearch: e => s.format({
-    query: o().pickBy(e)
+    query: a().pickBy(e)
   }),
   safeParseWithQuery(e) {
     try {

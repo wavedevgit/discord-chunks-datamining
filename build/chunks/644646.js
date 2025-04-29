@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => O
+  Z: () => v
 });
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(374470),
   l = n(442837),
   c = n(481060),
@@ -21,46 +21,46 @@ var r = n(200651),
   E = n(78826),
   b = n(341907),
   y = n(388032),
-  v = n(734506);
-let O = function(e) {
+  O = n(734506);
+let v = function(e) {
   let t, {
       className: n,
-      quest: a,
-      autoplay: O = !0,
+      quest: o,
+      autoplay: v = !0,
       learnMoreStyle: I = null
     } = e,
     S = (0, _.O5)(),
     T = (0, l.e7)([f.Z], () => f.Z.isFocused()),
     A = (0, l.e7)([u.Z], () => u.Z.useReducedMotion),
-    N = i.useMemo(() => (0, h.fh)(a, h.eC.REWARD), [a]),
+    N = i.useMemo(() => (0, h.fh)(o, h.eC.REWARD), [o]),
     C = i.useCallback(t => {
       var n;
       (0, s.k)(t.currentTarget, HTMLElement) && t.currentTarget.blur(), S({
-        questId: a.id,
+        questId: o.id,
         questContent: e.questContent,
         questContentPosition: e.questContentPosition,
         questContentCTA: _.jZ.REWARD_LEARN_MORE
       }), (0, b.navigateToQuestHome)({
         fromContent: e.questContent,
-        questId: a.id
+        questId: o.id
       }), null == (n = e.onClick) || n.call(e, t)
-    }, [S, a.id, e]),
+    }, [S, o.id, e]),
     R = i.useRef(null),
-    P = i.useRef(O),
-    w = (0, p.Bg)(a.config);
+    P = i.useRef(v),
+    w = (0, p.Bg)(o.config);
   return i.useEffect(() => {
     if (null != R.current) {
       if (!N.isAnimated || A) {
         R.current.currentTime = 0, R.current.pause();
         return
       }
-      O && !P.current ? R.current.play() : !O && P.current && (R.current.currentTime = 0, R.current.pause()), P.current = O
+      v && !P.current ? R.current.play() : !v && P.current && (R.current.currentTime = 0, R.current.pause()), P.current = v
     }
-  }, [O, N, A]), t = w ? (0, r.jsx)(E.Fl, {
+  }, [v, N, A]), t = w ? (0, r.jsx)(E.Fl, {
     id: "QuestRewardTile_rewardTileNitro",
     children: e => (0, r.jsx)(g.Z, {
       ref: e,
-      className: v.questRewardTileAsset
+      className: O.questRewardTileAsset
     })
   }) : N.isAnimated ? (0, r.jsx)(E.Fl, {
     id: "QuestRewardTile_rewardTileAnimated",
@@ -70,11 +70,11 @@ let O = function(e) {
         ref: t => {
           e.current = t, R.current = t
         },
-        autoPlay: !A && O,
+        autoPlay: !A && v,
         loop: !0,
         muted: !0,
         playsInline: !0,
-        className: v.questRewardTileAsset,
+        className: O.questRewardTileAsset,
         controls: !1,
         children: (0, r.jsx)("source", {
           src: N.url,
@@ -86,27 +86,27 @@ let O = function(e) {
     id: "QuestRewardTile_rewardTileStatic",
     children: e => (0, r.jsx)("img", {
       ref: e,
-      alt: m.r.build(a.config).defaultReward.messages.name,
-      className: o()(v.questRewardTileAsset, v.questRewardTileAssetStatic),
+      alt: m.r.build(o.config).defaultReward.messages.name,
+      className: a()(O.questRewardTileAsset, O.questRewardTileAssetStatic),
       src: N.url
     })
   }), null == I ? (0, r.jsx)("div", {
-    className: o()(v.questRewardTile, n),
+    className: a()(O.questRewardTile, n),
     children: t
   }) : (0, r.jsxs)(c.P3F, {
-    className: o()(v.questRewardTileInteractive, v.questRewardTile, v.rewardHighlight, n),
+    className: a()(O.questRewardTileInteractive, O.questRewardTile, O.rewardHighlight, n),
     onClick: C,
     children: [t, (0, r.jsx)(c.ZX5, {
-      className: v.shine,
+      className: O.shine,
       shineSize: c.rHe.SMALL,
       shinePaused: !T || A
     }), "text" === I && (0, r.jsx)(c.Text, {
       color: "always-white",
       variant: "text-xs/normal",
-      className: v.questRewardTileDetailsLearnMore,
+      className: O.questRewardTileDetailsLearnMore,
       children: y.intl.format(y.t.DYAleX, {})
     }), "icon" === I && (0, r.jsx)("div", {
-      className: v.questRewardTileDetailsLearnMore,
+      className: O.questRewardTileDetailsLearnMore,
       children: (0, r.jsx)(c.d3s, {
         size: "xxs",
         color: c.TVs.colors.WHITE.css

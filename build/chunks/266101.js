@@ -2,8 +2,8 @@
 "use strict";
 var r = n(507604),
   i = n(621523),
-  a = n(179122),
-  o = n(759319),
+  o = n(179122),
+  a = n(759319),
   s = Error.prototype.toString;
 e.exports = i(function() {
   if (r) {
@@ -19,8 +19,8 @@ e.exports = i(function() {
     name: 2
   }) || "Error" !== s.call({})
 }) ? function() {
-  var e = a(this),
-    t = o(e.name, "Error"),
-    n = o(e.message);
+  var e = o(this),
+    t = a(e.name, "Error"),
+    n = a(e.message);
   return t ? n ? t + ": " + n : t : n
 } : s

@@ -5,7 +5,7 @@ n.d(t, {
   jK: () => x,
   tS: () => M
 }), n(35282), n(388685), n(415506), n(49124), n(539854);
-var r, i, a, o, s = n(512722),
+var r, i, o, a, s = n(512722),
   l = n.n(s),
   c = n(259443),
   u = n(719711),
@@ -40,7 +40,7 @@ function y(e) {
   return e
 }
 
-function v(e, t) {
+function O(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,8 +51,8 @@ function v(e, t) {
   return n
 }
 
-function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -62,7 +62,7 @@ let I = window.DiscordNative,
   A = null,
   N = null,
   C = {};
-null != I && (T = I.remoteApp.getVersion().split(".").map(e => parseInt(e)), N = null == (r = (i = I.remoteApp).getModuleVersions) ? void 0 : r.call(i), A = null == (a = (o = I.remoteApp).getBuildNumber) ? void 0 : a.call(o));
+null != I && (T = I.remoteApp.getVersion().split(".").map(e => parseInt(e)), N = null == (r = (i = I.remoteApp).getModuleVersions) ? void 0 : r.call(i), A = null == (o = (a = I.remoteApp).getBuildNumber) ? void 0 : o.call(a));
 let R = new Set(["discord_erlpack", "discord_game_utils", "discord_rpc", "discord_spellcheck", "discord_utils", "discord_voice"]),
   P = !1,
   w = "lastImageSaveDirectory";
@@ -88,7 +88,7 @@ var x = function(e) {
   }({});
 
 function k(e) {
-  var t, n, r, i, a, o, s, l, c;
+  var t, n, r, i, o, a, s, l, c;
   return {
     id: C[null != (t = e.id) ? t : ""],
     nativeProcessObserverId: parseInt(null != (n = e.id) ? n : "", 10),
@@ -96,7 +96,7 @@ function k(e) {
     processName: null != (i = e.name) ? i : "",
     hidden: e.hidden,
     elevated: e.elevated,
-    sandboxed: null != (a = e.sandboxed) && a,
+    sandboxed: null != (o = e.sandboxed) && o,
     lastFocused: e.lastFocused,
     exePath: e.exePath,
     exeName: e.exeName,
@@ -104,7 +104,7 @@ function k(e) {
     distributor: e.distributor,
     sku: e.sku,
     pid: e.pid,
-    pidPath: null != (o = e.pidPath) ? o : [],
+    pidPath: null != (a = e.pidPath) ? a : [],
     windowHandle: null != (s = e.windowHandle) ? s : null,
     fullscreenType: null != (l = e.fullscreenType) ? l : _.Jx.UNKNOWN,
     isLauncher: null != (c = e.isLauncher) && c
@@ -147,7 +147,7 @@ let j = {
       let n = 0;
       this.getDiscordUtils().setObservedGamesCallback(e.map(e => {
         let t = ++n;
-        return null != e.id && (C[t] = e.id), O(y({}, e), {
+        return null != e.id && (C[t] = e.id), v(y({}, e), {
           cmdline: e.cmdLine,
           id: t
         })
@@ -161,7 +161,7 @@ let j = {
     this.getDiscordUtils().clearCandidateGamesCallback()
   },
   setGameCandidateOverrides(e) {
-    this.getDiscordUtils().setGameCandidateOverrides(e.map(e => O(y({}, e), {
+    this.getDiscordUtils().setGameCandidateOverrides(e.map(e => v(y({}, e), {
       gameId: e.id,
       gameName: e.name
     })))
@@ -272,9 +272,9 @@ let j = {
     if (null == n) return;
     let r = null != (t = n.pathname.split("/").pop()) ? t : "unknown",
       i = f.K.get(w),
-      a = await L(e),
-      o = E.from(a),
-      s = await I.fileManager.saveWithDialog(o, r, null != i ? i : void 0);
+      o = await L(e),
+      a = E.from(o),
+      s = await I.fileManager.saveWithDialog(a, r, null != i ? i : void 0);
     null != s && f.K.set(w, s)
   },
   async saveFile(e, t) {
@@ -283,9 +283,9 @@ let j = {
     let r = m.Z.toURLSafe(e);
     if (null == r) return null;
     let i = null != (n = null != t ? t : r.pathname.split("/").pop()) ? n : "unknown",
-      a = await D(e),
-      o = E.from(a);
-    return I.fileManager.saveWithDialog(o, i)
+      o = await D(e),
+      a = E.from(o);
+    return I.fileManager.saveWithDialog(a, i)
   },
   async downloadVoiceFilterFile(e, t, n) {
     l()(h.isPlatformEmbedded, "Download voice filter file method called outside native app");
@@ -479,8 +479,8 @@ let j = {
     if (null == I.http) return Promise.reject(Error("HTTP module not available"));
     let {
       method: i,
-      maxBps: a,
-      token: o,
+      maxBps: o,
+      token: a,
       chunkInterval: s,
       contentType: l
     } = y({
@@ -489,7 +489,7 @@ let j = {
       contentType: "application/json"
     }, n), c = t;
     "application/json" === l && (c = JSON.stringify(t));
-    let u = s / 1e3 * a,
+    let u = s / 1e3 * o,
       f = Math.ceil(c.length / u),
       _ = Array(f);
     for (let e = 0; e < f; e++) {
@@ -501,7 +501,7 @@ let j = {
         method: i,
         chunkInterval: s,
         contentType: l,
-        token: o
+        token: a
       }, (n, r) => null != n ? t(n) : r.status >= 400 ? t(Error(r.body)) : void e(r))
     })
   },
@@ -556,8 +556,8 @@ let j = {
     var r;
     let {
       getWindowFullscreenTypeByPid: i
-    } = this.getDiscordUtils(), a = 0 !== e && null != i && null != t ? i(e, t) : null;
-    return -1 === a && (a = null), null != (r = null != a ? a : n) ? r : _.Jx.UNKNOWN
+    } = this.getDiscordUtils(), o = 0 !== e && null != i && null != t ? i(e, t) : null;
+    return -1 === o && (o = null), null != (r = null != o ? o : n) ? r : _.Jx.UNKNOWN
   },
   GetWindowFullscreenTypeExtraByPid(e, t) {
     let {
@@ -587,12 +587,12 @@ let j = {
   },
   isModuleVersionAtLeast(e, t) {
     var n, r, i;
-    let a = [...null != T ? T : [0, 0, 0]];
-    a.push(null != (r = null == (n = this.moduleVersions) ? void 0 : n[e]) ? r : 0);
-    let o = null != (i = t[this.releaseChannel]) ? i : t.stable;
-    for (let [e, t] of a.entries())
-      if (t > o[e]) break;
-      else if (t < o[e]) return !1;
+    let o = [...null != T ? T : [0, 0, 0]];
+    o.push(null != (r = null == (n = this.moduleVersions) ? void 0 : n[e]) ? r : 0);
+    let a = null != (i = t[this.releaseChannel]) ? i : t.stable;
+    for (let [e, t] of o.entries())
+      if (t > a[e]) break;
+      else if (t < a[e]) return !1;
     return !0
   },
   fetchRiotGamesLiveClientData: (e, t) => h.isPlatformEmbedded ? null == I.riotGames ? Promise.reject(Error("Riot Games module not available")) : I.riotGames.fetchLiveClientData(e, t) : Promise.reject(Error("Not embedded!")),
