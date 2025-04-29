@@ -8,10 +8,10 @@ var r = n(200651),
   i = n(192379),
   o = n(120356),
   a = n.n(o),
-  s = n(378409),
-  l = n(124347),
-  c = n(80966),
-  u = n(480050),
+  s = n(124347),
+  l = n(80966),
+  c = n(480050),
+  u = n(296182),
   d = n(524444),
   f = n(52824),
   _ = n(589530),
@@ -87,7 +87,7 @@ function T(e) {
       media: n,
       obscured: i = !1,
       maxWidth: o,
-      maxHeight: s,
+      maxHeight: u,
       onContextMenu: f
     } = e,
     {
@@ -112,12 +112,12 @@ function T(e) {
     let e = S(I);
     if (null == e) return null;
     let t = null != (M = n.renderLinkComponent) ? M : d.iT;
-    return (0, r.jsx)(c.Z, O(b({}, P), {
+    return (0, r.jsx)(l.Z, O(b({}, P), {
       src: L,
       width: p,
       height: E,
       maxWidth: o,
-      maxHeight: s,
+      maxHeight: u,
       poster: e,
       naturalWidth: p,
       naturalHeight: E,
@@ -131,12 +131,12 @@ function T(e) {
       onContextMenu: f
     }))
   }
-  return "IMAGE" === A && (t = x ? (0, r.jsx)(l.ZP, O(b({}, P), {
+  return "IMAGE" === A && (t = x ? (0, r.jsx)(s.ZP, O(b({}, P), {
     src: L,
     width: p,
     height: E,
     maxWidth: o,
-    maxHeight: s,
+    maxHeight: u,
     useFullWidth: !0,
     shouldLink: !1,
     className: g.media,
@@ -151,13 +151,13 @@ function T(e) {
     className: g.dimensionlessImage,
     style: {
       maxWidth: o,
-      maxHeight: s
+      maxHeight: u
     }
-  })), null != t ? (0, r.jsx)(u.Z, {
+  })), null != t ? (0, r.jsx)(c.Z, {
     width: p,
     height: E,
     maxWidth: o,
-    maxHeight: s,
+    maxHeight: u,
     active: w,
     className: a()(g.wrapper, {
       [g.zoomed]: w
@@ -171,7 +171,7 @@ function T(e) {
 let A = i.memo(T);
 
 function N(e, t, n) {
-  return e && (0, s.rV)(t) ? (0, s.s$)(t) : (0, f.q)({
+  return e && p.Z.isDiscordAssetUrl(t) ? (0, u.s$)(t) : (0, f.q)({
     proxyURL: n,
     url: t
   })

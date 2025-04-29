@@ -5,7 +5,7 @@ n.d(t, {
 var i = n(200651);
 n(192379);
 var r = n(481060),
-  l = n(378409),
+  l = n(296182),
   a = n(976853),
   o = n(626135),
   s = n(358085),
@@ -54,7 +54,7 @@ function b(e, t, n) {
         h(g.intl.string(g.t.PTPbj4), e), o.default.track(f.rMx.CONTEXT_MENU_IMAGE_COPY_FAILED, m({}, (0, d.v)()))
       }
     };
-  return [u.ZP.canCopyImage() && (0, l.Lz)(e) ? (0, i.jsx)(r.sNh, {
+  return [(0, l.Lz)(e) ? (0, i.jsx)(r.sNh, {
     id: "copy-image",
     label: g.intl.string(g.t.tvUqWl),
     action: p
