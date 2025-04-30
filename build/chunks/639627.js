@@ -65,6 +65,10 @@ let f = i.forwardRef(function(e, t) {
       }, n))
     })
   }
+
+  function p(e) {
+    e.stopPropagation()
+  }
   return i.useImperativeHandle(t, () => ({
     focus: () => null,
     activate: () => {
@@ -77,7 +81,8 @@ let f = i.forwardRef(function(e, t) {
     },
     children: (0, r.jsx)(s.ZP, d(c({}, e), {
       ref: f,
-      onChange: _
+      onChange: _,
+      onClick: p
     }))
   })
 })
