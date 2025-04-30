@@ -1,5 +1,5 @@
 /** Chunk was on 70205 **/
-n.d(e, {
+n.d(t, {
   Z: () => g
 });
 var i, l, a, r = n(442837),
@@ -29,8 +29,8 @@ class f extends(a = r.ZP.Store) {
       }, {
         autoTrackExposure: !1
       }).enabled) return !1;
-    for (let t in d)
-      if (d[t] === s.default.getId()) return !0;
+    for (let e in d)
+      if (d[e] === s.default.getId()) return !0;
     return !1
   }
 }
@@ -41,10 +41,10 @@ l = "RpcNotificationSettingsStore", (i = "displayName") in f ? Object.defineProp
   writable: !0
 }) : f[i] = l;
 let g = new f(o.Z, {
-  RPC_APP_DISCONNECTED: function(t) {
-    delete d[t.socketId]
+  RPC_APP_DISCONNECTED: function(e) {
+    delete d[e.socketId]
   },
-  SET_RPC_NOTIFICATION_SETTINGS: function(t) {
-    delete d[t.socketId], t.suppressNotifications && (d[t.socketId] = t.targetUserId)
+  SET_RPC_NOTIFICATION_SETTINGS: function(e) {
+    delete d[e.socketId], e.suppressNotifications && (d[e.socketId] = e.targetUserId)
   }
 })

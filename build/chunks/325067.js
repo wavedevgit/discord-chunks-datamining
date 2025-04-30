@@ -77,5 +77,6 @@ let S = new E(d.Z, {
   },
   MFA_SEEN_BACKUP_CODE_PROMPT: function() {
     _ = !0
-  }
+  },
+  CONNECTION_OPEN: () => {}
 })
