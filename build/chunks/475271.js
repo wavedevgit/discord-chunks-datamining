@@ -56,9 +56,10 @@ let l = {
       {
         sitekey: l,
         captchaService: d,
-        options: c
+        captchaSessionId: c,
+        options: u
       } = e;
-    return new Promise((e, u) => {
+    return new Promise((e, p) => {
       (0, o.ZDy)(async () => {
         let {
           default: o
@@ -66,12 +67,13 @@ let l = {
         return r => (0, n.jsx)(o, i({
           onCaptchaVerify: (t, r) => e({
             captcha_key: t,
-            captcha_rqtoken: r
+            captcha_rqtoken: r,
+            captcha_session_id: c
           }),
           captchaService: d,
           sitekey: l,
-          onReject: () => u(Error("cancel captcha"))
-        }, t, c, r))
+          onReject: () => p(Error("cancel captcha"))
+        }, t, u, r))
       }, {
         Layer: a.ZP,
         modalKey: s.A

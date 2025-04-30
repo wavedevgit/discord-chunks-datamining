@@ -1,11 +1,11 @@
 /** Chunk was on 31177 **/
 r.r(t), r.d(t, {
   CaptchaError: () => o,
-  emitCaptchaDistributionMetric: () => u,
+  emitCaptchaDistributionMetric: () => p,
   extractCaptchaPropsFromResponse: () => i
 });
-var c, n = r(644947),
-  a = r(234888),
+var c, a = r(644947),
+  n = r(234888),
   o = ((c = {}).CANCEL = "cancel", c.ERROR = "error", c.EXPIRED = "expired", c);
 
 function i(e) {
@@ -13,6 +13,7 @@ function i(e) {
   return {
     captchaService: e.captcha_service,
     sitekey: e.captcha_sitekey,
+    captchaSessionId: e.captcha_session_id,
     options: {
       rqdata: e.captcha_rqdata,
       rqtoken: e.captcha_rqtoken,
@@ -22,6 +23,6 @@ function i(e) {
   }
 }
 
-function u(e) {
-  (0, n._8)() && setTimeout(() => (0, n.Zq)(), a.i), (0, n.s$)(e)
+function p(e) {
+  (0, a._8)() && setTimeout(() => (0, a.Zq)(), n.i), (0, a.s$)(e)
 }

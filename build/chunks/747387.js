@@ -58,8 +58,8 @@ let v = e => {
     onClose: E,
     onChalExpired: j,
     size: w,
-    userflow: R
-  } = e, _ = function(e, t) {
+    userflow: _
+  } = e, R = function(e, t) {
     if (null == e) return {};
     var r, n, a = function(e, t) {
       if (null == e) return {};
@@ -114,33 +114,33 @@ let v = e => {
       A("verify"), I("verify"), O(e)
     }, [I, O, A]),
     T = a.useCallback(() => {
-      A("render"), (0, d.emitCaptchaDistributionMetric)(R), null == m || m()
-    }, [m, A, R]),
+      A("render"), (0, d.emitCaptchaDistributionMetric)(_), null == m || m()
+    }, [m, A, _]),
     Z = a.useCallback(() => {
-      A("open"), I("open"), (0, d.emitCaptchaDistributionMetric)(R), null == C || C()
-    }, [I, C, A, R]),
+      A("open"), I("open"), (0, d.emitCaptchaDistributionMetric)(_), null == C || C()
+    }, [I, C, A, _]),
     M = a.useCallback(() => {
       A("close"), null == E || E(), D()
     }, [E, A, D]),
     q = a.useCallback(() => {
       A("chal-expire"), null == j || j()
     }, [j, A]);
-  return ((null == r || "" === r) && (r = f.OL7), t === p.hP.RECAPTCHA) ? (0, n.jsx)(c.Z, b(y({}, _), {
+  return ((null == r || "" === r) && (r = f.OL7), t === p.hP.RECAPTCHA) ? (0, n.jsx)(c.Z, b(y({}, R), {
     onLoad: N,
     onRender: T,
     onVerify: V,
     onError: L,
     sitekey: r
-  })) : t === p.hP.RECAPTCHA_ENTERPRISE ? (0, n.jsx)(h._, b(y({}, _), {
+  })) : t === p.hP.RECAPTCHA_ENTERPRISE ? (0, n.jsx)(h._, b(y({}, R), {
     onLoad: N,
     onRender: T,
     onVerify: V,
     onError: L,
     sitekey: r,
-    action: R
+    action: _
   })) : t === p.hP.HCAPTCHA ? (0, n.jsx)(i.Z, b(y({
     ref: x
-  }, _), {
+  }, R), {
     sitekey: r,
     onLoad: N,
     onError: L,
@@ -150,7 +150,7 @@ let v = e => {
     onClose: M,
     size: w,
     reCaptchaCompat: !1
-  })) : (0, n.jsx)(c.Z, b(y({}, _), {
+  })) : (0, n.jsx)(c.Z, b(y({}, R), {
     sitekey: r,
     onLoad: N,
     onRender: T,

@@ -44,7 +44,7 @@ function m(e) {
     return a
   }(e, ["onClose", "onCaptchaVerify", "onReject", "transitionState", "headerText", "bodyText", "rqtoken", "serveInvisible"]);
   let w = (0, l.Z)(i),
-    R = (0, s.Q3)("CaptchaModal");
+    _ = (0, s.Q3)("CaptchaModal");
   return (a.useEffect(() => {
     p.S.subscribe(d.CkL.LAYER_POP_ESCAPE_KEY, t)
   }, [t]), null != m && v.has(m)) ? (0, n.jsx)(o.Y0X, {
@@ -63,7 +63,7 @@ function m(e) {
         }) : (0, n.jsxs)(n.Fragment, {
           children: [(0, n.jsx)("div", {
             children: (0, n.jsx)("img", {
-              src: R ? b : y,
+              src: _ ? b : y,
               alt: ""
             })
           }), (0, n.jsx)("div", {

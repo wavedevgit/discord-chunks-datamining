@@ -109,11 +109,12 @@ function E(e) {
     }).then(e => {
       let {
         captcha_key: n,
-        captcha_rqtoken: r
-      } = e, i = {
+        captcha_rqtoken: r,
+        captcha_session_id: i
+      } = e, o = {
         "X-Captcha-Key": n
       };
-      null != r && (i["X-Captcha-Rqtoken"] = r), t(i)
+      null != r && (o["X-Captcha-Rqtoken"] = r), null != i && (o["X-Captcha-Session-Id"] = i), t(o)
     }).catch(r), !0) : 401 === e.statusCode && (null == (l = e.body) ? void 0 : l.code) === _.evJ.MFA_REQUIRED && (null == (c = e.body) ? void 0 : c.mfa) ? (Promise.all([n.e("52030"), n.e("36833")]).then(n.bind(n, 24031)).then(n => {
       let {
         openMFAModal: i
