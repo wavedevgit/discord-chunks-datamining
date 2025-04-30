@@ -34,8 +34,8 @@ var r = n(200651),
   y = n(822857),
   L = n(82856),
   Z = n(960919),
-  R = n(275388),
-  A = n(25990),
+  A = n(275388),
+  R = n(25990),
   B = n(594174),
   D = n(626135),
   M = n(63063),
@@ -210,7 +210,7 @@ let ey = {
       })
     })
   },
-  eR = e => {
+  eA = e => {
     let {
       product: t,
       user: n
@@ -226,7 +226,7 @@ let ey = {
       user: n
     }) : null
   },
-  eA = e => {
+  eR = e => {
     let {
       skuId: t
     } = e;
@@ -263,7 +263,7 @@ let ey = {
     let N = (0, J.L)(n),
       {
         isPurchased: T,
-        isPartiallyOwnedBundle: A
+        isPartiallyOwnedBundle: R
       } = (0, J.L)(S),
       {
         isDisabled: B,
@@ -271,7 +271,7 @@ let ey = {
       } = (0, Q.G)(S.skuId),
       M = (0, V.ne)({
         product: S,
-        isPartiallyOwnedBundle: A,
+        isPartiallyOwnedBundle: R,
         isPurchased: T
       }),
       G = (0, p.e7)([F.Z], () => F.Z.purchases),
@@ -283,7 +283,7 @@ let ey = {
       eu = (null == ec ? void 0 : ec.amount) === 0,
       {
         firstAvatarDecoration: ed
-      } = (0, $.R)(null != E ? E : S),
+      } = (0, $.Rj)(null != E ? E : S),
       em = i.useMemo(() => (0, V.BH)(S, w), [S, w]),
       {
         handleUseNow: ep,
@@ -319,7 +319,7 @@ let ey = {
     }, [ed]);
     let eD = (e, t) => {
         let n = () => {
-            (0, R.q)({
+            (0, A.q)({
               skuId: S.skuId,
               onCheckoutSuccess: e => {
                 var t;
@@ -397,7 +397,7 @@ let ey = {
           category: s,
           display: "modal"
         })
-      }), (0, r.jsx)(eR, {
+      }), (0, r.jsx)(eA, {
         product: null != E ? E : S,
         user: a
       }), (0, r.jsxs)("div", {
@@ -414,11 +414,11 @@ let ey = {
           }), (0, r.jsx)(h.Text, {
             variant: "text-sm/normal",
             children: eU
-          }), (0, r.jsx)(eA, {
+          }), (0, r.jsx)(eR, {
             skuId: S.skuId
           }), N.isPurchased || N.isPartiallyOwnedBundle ? (0, r.jsx)(ee.U, {
             className: eS.priceTag,
-            isPartiallyPurchased: A
+            isPartiallyPurchased: R
           }) : er ? (0, r.jsx)(h.Text, {
             variant: "text-md/semibold",
             className: eS.priceTag,
@@ -491,7 +491,7 @@ let ey = {
         }), (0, r.jsx)(h.Text, {
           className: l()(eS.disclaimer, !en && eS.disclaimerLight),
           variant: "text-xxs/normal",
-          children: er && !T ? eE.intl.string(eE.t.O2K0xM) : null
+          children: er && !T ? eE.intl.string(eE.t.nKdAlJ) : null
         })]
       })]
     })
@@ -562,7 +562,7 @@ let ey = {
     let {
       product: t,
       user: n
-    } = e, i = U.ZP.canUsePremiumProfileCustomization(n), a = (0, p.cj)([A.Z], () => A.Z.getAllPending()), {
+    } = e, i = U.ZP.canUsePremiumProfileCustomization(n), a = (0, p.cj)([R.Z], () => R.Z.getAllPending()), {
       pendingAvatar: l
     } = a, s = function(e, t) {
       if (null == e) return {};
@@ -584,7 +584,7 @@ let ey = {
     }), c = t.type === d.Z.AVATAR_DECORATION, [u] = t.items, {
       firstAvatarDecoration: m,
       firstProfileEffect: f
-    } = (0, $.R)(t), h = null != f;
+    } = (0, $.Rj)(t), h = null != f;
     return (0, r.jsx)("div", {
       className: (null == u ? void 0 : u.type) === d.Z.AVATAR_DECORATION ? eS.previewsContainerInner : eS.profileEffectPreviewsContainerInner,
       children: (null == u ? void 0 : u.type) === d.Z.NAMEPLATE ? (0, r.jsx)(eM, {
@@ -688,10 +688,10 @@ let ey = {
         product_type: N
       }), I.items.forEach(H.oK)
     }, [c, k, I.skuId, I.items, N]);
-    let y = (0, R.r)(),
+    let y = (0, A.r)(),
       Z = t === h.Dvm.EXITING;
     if (null == b) return null;
-    let A = (0, ew.ZS)(l.skuId),
+    let R = (0, ew.ZS)(l.skuId),
       M = function() {
         let {
           keepBalancePillOverlayOpen: e
@@ -723,7 +723,7 @@ let ey = {
               asset: E,
               size: (0, ec.ML)(540),
               className: eS.categoryBanner,
-              categoryBannerOverride: A
+              categoryBannerOverride: R
             }), (0, ep.o0)(a.skuId) ? a.skuId === ew.Vt.ORB_PROFILE_BADGE ? y || Z ? null : (0, r.jsx)(ed.M, {
               user: b
             }) : a.skuId === m.a.PREMIUM_TIER_2_3_DAY ? (0, r.jsx)(eu.q, {}) : (0, r.jsx)(em.b, {
@@ -738,7 +738,7 @@ let ey = {
                 className: eS.titleImageContainer,
                 children: (0, r.jsx)("img", {
                   className: eS.titleImage,
-                  style: null == A ? void 0 : A.pdpLogoStyle,
+                  style: null == R ? void 0 : R.pdpLogoStyle,
                   src: S,
                   alt: l.name
                 })

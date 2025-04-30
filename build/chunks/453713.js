@@ -92,7 +92,7 @@ let x = s()(e => {
       e.preventDefault(), e.stopPropagation(), (0, f.$)(t, a), k()
     }, [k, t, a]);
     return (0, r.jsx)(b.ua7, {
-      text: h.intl.string(h.t["/bUsx8"]),
+      text: h.intl.string(h.t["6cfuDg"]),
       "aria-label": !1,
       shouldShow: !O && j,
       children: e => (0, r.jsx)(b.P3F, C(_({}, S), {

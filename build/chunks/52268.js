@@ -39,7 +39,7 @@ function y(e) {
   return e
 }
 
-function P(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,7 +52,7 @@ function P(e, t) {
   }), e
 }
 
-function O(e, t) {
+function P(e, t) {
   if (null == e) return {};
   var r, n, i = function(e, t) {
     if (null == e) return {};
@@ -73,8 +73,8 @@ let v = () => 80,
       children: t,
       className: r,
       isSelected: i = !1
-    } = e, l = O(e, ["children", "className", "isSelected"]);
-    return (0, n.jsx)(u.P3F, P(y({
+    } = e, l = P(e, ["children", "className", "isSelected"]);
+    return (0, n.jsx)(u.P3F, O(y({
       className: o()(j.effectGridItem, r, {
         [j.selected]: i
       })
@@ -91,7 +91,7 @@ let v = () => 80,
         section: s,
         isSelected: v
       } = e,
-      E = O(e, ["user", "profileEffect", "innerRef", "section", "isSelected"]);
+      E = P(e, ["user", "profileEffect", "innerRef", "section", "isSelected"]);
     let C = (0, g.V)(l.id),
       w = (0, a.e7)([d.Z], () => {
         let e = d.Z.getProduct(l.skuId);
@@ -107,7 +107,7 @@ let v = () => 80,
       D = m.ZP.canUseCollectibles(r),
       A = s === h.$0.PREMIUM_PURCHASE && !D,
       T = (0, p.M)();
-    return (0, n.jsxs)(_, P(y({
+    return (0, n.jsxs)(_, O(y({
       className: !A || v || T ? void 0 : j.decorationGridItemChurned,
       innerRef: null != o ? o : S,
       isSelected: v
@@ -219,7 +219,7 @@ let v = () => 80,
             header: r
           } = a[e];
           return (0, n.jsx)("div", {
-            style: P(y({}, t), {
+            style: O(y({}, t), {
               height: "".concat(16, "px"),
               position: "absolute"
             }),

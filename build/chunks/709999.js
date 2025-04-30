@@ -35,8 +35,8 @@ var l = s(200651),
   _ = s(1870),
   R = s(429368),
   S = s(884697),
-  M = s(664018),
-  I = s(819570),
+  I = s(664018),
+  M = s(819570),
   A = s(228624),
   T = s(635552),
   H = s(290175),
@@ -52,8 +52,8 @@ var l = s(200651),
   Y = s(306092),
   X = s(453713),
   Q = s(616066),
-  $ = s(216541),
-  J = s(22267),
+  J = s(216541),
+  $ = s(22267),
   ee = s(67409),
   et = s(58201),
   es = s(201964),
@@ -227,7 +227,7 @@ let eh = e => {
             width: 110,
             opacity: .85
           })]
-        }), (0, l.jsx)(J.Z, {
+        }), (0, l.jsx)($.Z, {
           user: t,
           nameplate: s,
           className: ed.nameplatePreviewSampleItem,
@@ -259,12 +259,12 @@ let eh = e => {
       isGiftEasterEggEnabled: Z,
       tab: Q
     } = e, {
-      analyticsLocations: J
+      analyticsLocations: $
     } = (0, g.ZP)([m.Z.COLLECTIBLES_SHOP_CARD]), eo = i.useRef(null), ep = (0, f.Z)(eo), [em, eL] = i.useState(!1), ev = ep || em, eF = (0, el.f)(t), {
       previewingVariantIndex: eZ
-    } = eF, eb = (0, B.T)(t), eE = (0, p.e7)([j.Z], () => j.Z.useReducedMotion), ew = P.ZP.canUseCollectibles(s), ey = i.useMemo(() => (0, S.BH)(t, ew), [t, ew]), ek = (0, S.G1)(t), eO = (0, S.rN)(t), [eP, eN, e_] = (0, p.Wu)([_.Z], () => [_.Z.isClaiming === t.skuId, null != _.Z.isClaiming && _.Z.isClaiming !== t.skuId, _.Z.purchases]), eR = (0, es.o)(t, e_, eZ), eS = (0, p.e7)([b.Z], () => (0, x.wjy)(b.Z.theme)), eM = (0, S.Yq)(t.skuId), eI = r.skuId === c.T.ANIME_V3 && (0, S.WW)(t.skuId), {
+    } = eF, eb = (0, B.T)(t), eE = (0, p.e7)([j.Z], () => j.Z.useReducedMotion), ew = P.ZP.canUseCollectibles(s), ey = i.useMemo(() => (0, S.BH)(t, ew), [t, ew]), ek = (0, S.G1)(t), eO = (0, S.rN)(t), [eP, eN, e_] = (0, p.Wu)([_.Z], () => [_.Z.isClaiming === t.skuId, null != _.Z.isClaiming && _.Z.isClaiming !== t.skuId, _.Z.purchases]), eR = (0, es.o)(t, e_, eZ), eS = (0, p.e7)([b.Z], () => (0, x.wjy)(b.Z.theme)), eI = (0, S.Yq)(t.skuId), eM = r.skuId === c.T.ANIME_V3 && (0, S.WW)(t.skuId), {
       hoverVariant: eA
-    } = (0, M.E)("CollectiblesShopTallCard"), eT = (0, A.hv)("CollectiblesShopTallCard"), eH = (0, R.o)(t, e_), eB = (0, et.W)(t, eH), eD = (0, S.XM)(eB, ew, !1), {
+    } = (0, I.E)("CollectiblesShopTallCard"), eT = (0, A.hv)("CollectiblesShopTallCard"), eH = (0, R.o)(t, e_), eB = (0, et.W)(t, eH), eD = (0, S.XM)(eB, ew, !1), {
       isPurchased: eV,
       isPartiallyOwnedBundle: eU
     } = (0, D.L)(eB), {
@@ -279,7 +279,7 @@ let eh = e => {
       location: "collectibles_shop_tall_card"
     }), eX = (0, L.N)("CollectiblesShopTallCard"), {
       handleCardVisibilityChange: eQ
-    } = (0, V.E)(eB.skuId, Q === en.AW.CATALOG ? "full" : Q), e$ = (0, I.E)("shop_tall_card");
+    } = (0, V.E)(eB.skuId, Q === en.AW.CATALOG ? "full" : Q), eJ = (0, M.E)("shop_tall_card");
     i.useEffect(() => {
       let {
         current: e
@@ -295,7 +295,7 @@ let eh = e => {
     }, []), i.useEffect(() => {
       null == o || o(eo)
     }, [o]);
-    let eJ = i.useRef(null),
+    let e$ = i.useRef(null),
       {
         handleUseNow: e1,
         isApplying: e2
@@ -314,13 +314,13 @@ let eh = e => {
         tab: Q
       }),
       e3 = e => s => {
-        eJ.current = s.currentTarget, (0, q.T)({
+        e$.current = s.currentTarget, (0, q.T)({
           product: t,
           category: r,
           shouldCheckoutWithOrbs: e0,
-          analyticsLocations: J,
+          analyticsLocations: $,
           analyticsSource: e,
-          returnRef: eJ,
+          returnRef: e$,
           tab: Q
         })
       },
@@ -358,7 +358,7 @@ let eh = e => {
               product: t,
               selectedVariantIndex: eH
             }),
-            analyticsLocations: J,
+            analyticsLocations: $,
             returnRef: eo,
             variantsReturnStyle: eT
           })
@@ -384,7 +384,7 @@ let eh = e => {
                 location: "collectible_checkout_with_orb"
               }), (0, er.Z)({
                 product: t,
-                analyticsLocations: J,
+                analyticsLocations: $,
                 onCloseCallback: () => {
                   (0, y.vp)()
                 },
@@ -392,7 +392,7 @@ let eh = e => {
                 purchaseType: en.o8.ORB
               })
             },
-            analyticsLocations: J
+            analyticsLocations: $
           }), (0, E.S6)()
         },
         children: eC.intl.format(eC.t.kAgx5O, {
@@ -404,7 +404,7 @@ let eh = e => {
         let e = async () => {
           await (0, N.fK)(t.skuId), (0, er.Z)({
             product: t,
-            analyticsLocations: J,
+            analyticsLocations: $,
             purchaseType: en.o8.PREMIUM_PURCHASE
           })
         };
@@ -444,7 +444,7 @@ let eh = e => {
         children: (0, l.jsxs)(x.kL8, {
           className: n()(eS ? ed.shopCardDark : ed.shopCard, {
             [ed.partiallyOwned]: eU && !ev,
-            [ed.shopCardAnimation]: !eE && eA !== M.D.NO_MOVEMENT,
+            [ed.shopCardAnimation]: !eE && eA !== I.D.NO_MOVEMENT,
             [eS ? ed.shopCardDarkHighlighted : ed.shopCardHighlighted]: ev
           }),
           ref: eo,
@@ -453,7 +453,7 @@ let eh = e => {
           children: [ek && (0, l.jsx)(x.ua7, {
             tooltipContentClassName: ed.premiumWheelTooltipContent,
             color: x.ua7.Colors.PRIMARY,
-            text: eC.intl.string(eC.t.O2K0xM),
+            text: eC.intl.string(eC.t.nKdAlJ),
             children: e => (0, l.jsx)(x.IGR, eu(ec({}, e), {
               className: ed.premiumWheelBadge,
               text: (0, l.jsx)(x.SrA, {
@@ -478,7 +478,7 @@ let eh = e => {
               nameplate: eR,
               isHighlighted: ev,
               isPurchased: eV
-            })).with(u.Z.BUNDLE, () => (0, l.jsx)($.d, {
+            })).with(u.Z.BUNDLE, () => (0, l.jsx)(J.d, {
               product: t,
               user: s,
               isPurchased: eV,
@@ -562,7 +562,7 @@ let eh = e => {
                   discount: ey,
                   isPremiumUser: ew,
                   className: ed.priceTag,
-                  hideStrikethroughPrice: e$
+                  hideStrikethroughPrice: eJ
                 })
               }), (0, l.jsx)("div", {
                 className: ed.innerHover,
@@ -576,11 +576,11 @@ let eh = e => {
             category: r,
             className: ed.limitedTimeBadge,
             display: "card"
-          }), eU || eV || !eM ? e9 ? (0, l.jsx)(x.IGR, {
+          }), eU || eV || !eI ? e9 ? (0, l.jsx)(x.IGR, {
             text: eC.intl.string(eC.t["KUYR+P"]),
             disableColor: !0,
             className: ed.badge
-          }) : eI ? (0, l.jsx)(x.IGR, {
+          }) : eM ? (0, l.jsx)(x.IGR, {
             text: eC.intl.string(eC.t.S6kE9v),
             disableColor: !0,
             className: ed.badge

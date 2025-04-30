@@ -37,7 +37,7 @@ function v(e) {
     showBenefitsFirst: P,
     onComplete: I,
     forcesTransitionToGuild: E
-  } = e, x = (0, o.Z)(), Z = !1;
+  } = e, Z = (0, o.Z)(), x = !1;
   (0, a.ZDy)(async () => {
     let {
       PaymentContextProvider: e
@@ -50,7 +50,7 @@ function v(e) {
     return n => {
       var a, c;
       return (0, r.jsx)(e, {
-        loadId: x,
+        loadId: Z,
         applicationId: S,
         activeSubscription: l,
         stepConfigs: s,
@@ -87,7 +87,7 @@ function v(e) {
               applicationId: S,
               guildId: null != h ? h : void 0,
               onComplete: () => {
-                Z = !0, null == I || I()
+                x = !0, null == I || I()
               },
               forcesTransitionToGuild: E
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(c)) : (function(e, t) {
@@ -106,8 +106,8 @@ function v(e) {
     }
   }, {
     onCloseCallback: () => {
-      Z || (b.default.track(m.rMx.PAYMENT_FLOW_CANCELED, {
-        load_id: x,
+      x || (b.default.track(m.rMx.PAYMENT_FLOW_CANCELED, {
+        load_id: Z,
         payment_type: m.Zuq[m.GZQ.SUBSCRIPTION],
         location: null != u ? u : i,
         is_gift: !1,

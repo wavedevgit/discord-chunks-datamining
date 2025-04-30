@@ -1,12 +1,14 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  R: () => s
+  Rj: () => l,
+  Ws: () => c
 }), n(539854), n(388685);
 var r = n(192379),
-  i = n(979554);
+  i = n(979554),
+  o = n(388032);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -14,7 +16,7 @@ function o(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class a {
+class s {
   get firstAvatarDecoration() {
     return this.getFirstItemByType(i.Z.AVATAR_DECORATION)
   }
@@ -33,16 +35,28 @@ class a {
     }, new Map)
   }
   constructor(e) {
-    o(this, "itemsByTypes", void 0), this.itemsByTypes = this.sortByTypes(e)
+    a(this, "itemsByTypes", void 0), this.itemsByTypes = this.sortByTypes(e)
   }
 }
-let s = e => {
-  let {
-    firstProfileEffect: t,
-    firstAvatarDecoration: n
-  } = r.useMemo(() => new a(e.items), [e]);
-  return {
-    firstProfileEffect: t,
-    firstAvatarDecoration: n
+let l = e => {
+    let {
+      firstProfileEffect: t,
+      firstAvatarDecoration: n
+    } = r.useMemo(() => new s(e.items), [e]);
+    return {
+      firstProfileEffect: t,
+      firstAvatarDecoration: n
+    }
+  },
+  c = e => {
+    let t = o.intl.string(o.t["7v0T9P"]),
+      n = o.intl.string(o.t.wR5wOj);
+    if (null != e.bundledProducts) {
+      var r, i;
+      e.bundledProducts.length > 0 && (t = null == (r = e.bundledProducts[0]) ? void 0 : r.name), e.bundledProducts.length > 1 && (n = null == (i = e.bundledProducts[0]) ? void 0 : i.name)
+    }
+    return {
+      itemOneName: t,
+      itemTwoName: n
+    }
   }
-}

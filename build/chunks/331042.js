@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  default: () => eE,
-  e: () => e_
+  default: () => eb,
+  e: () => ep
 }), n(388685), n(314940);
 var r = n(200651),
   i = n(192379),
@@ -100,7 +100,10 @@ function el(e, t) {
   }), e
 }
 let ec = 880,
-  eu = e => {
+  eu = e => null != e ? er.intl.format(er.t["4kp0AA"], {
+    itemName: e
+  }) : null,
+  ed = e => {
     let {
       product: t,
       pairedProduct: n
@@ -164,7 +167,7 @@ let ec = 880,
       })
     })).otherwise(() => null)
   },
-  ed = e => {
+  ef = e => {
     let {
       reducedMotion: t,
       displayOptions: n
@@ -214,7 +217,7 @@ let ec = 880,
       children: [(0, r.jsx)(l.animated.div, {
         className: ei.easterEggContainer,
         style: s,
-        children: (0, r.jsx)(eu, ea({}, e))
+        children: (0, r.jsx)(ed, ea({}, e))
       }), (0, r.jsx)(l.animated.div, {
         className: ei.easterEggContainer,
         style: t ? u : c,
@@ -227,13 +230,13 @@ let ec = 880,
       })]
     })
   },
-  ef = e => {
-    let t = (0, J.v)(e.product.categorySkuId);
-    return null != t ? (0, r.jsx)(ed, el(ea({}, e), {
-      displayOptions: t
-    })) : (0, r.jsx)(eu, ea({}, e))
-  },
   e_ = e => {
+    let t = (0, J.v)(e.product.categorySkuId);
+    return null != t ? (0, r.jsx)(ef, el(ea({}, e), {
+      displayOptions: t
+    })) : (0, r.jsx)(ed, ea({}, e))
+  },
+  ep = e => {
     let {
       product: t,
       onClose: n,
@@ -285,12 +288,12 @@ let ec = 880,
             size: (0, Z.ML)(ec),
             className: ei.decorationBanner,
             categoryBannerOverride: (0, $.ZS)(I.categorySkuId)
-          }), (0, r.jsx)(ef, {
+          }), (0, r.jsx)(e_, {
             product: I,
             pairedProduct: A,
             reducedMotion: R
           })]
-        }), (0, r.jsx)(eh, {
+        }), (0, r.jsx)(em, {
           product: I,
           pairedProduct: A,
           onClose: n,
@@ -321,8 +324,8 @@ let ec = 880,
       })]
     })
   },
-  ep = 600,
-  eh = e => {
+  eh = 600,
+  em = e => {
     var t;
     let {
       product: n,
@@ -342,20 +345,29 @@ let ec = 880,
     }), {
       firstAvatarDecoration: I,
       firstProfileEffect: S
-    } = (0, G.R)(n), C = (0, x.x6)(n) ? null != I && null != S : null != I || null != S || n.type === u.Z.NAMEPLATE;
+    } = (0, G.Rj)(n), C = (0, x.x6)(n) ? null != I && null != S : null != I || null != S || n.type === u.Z.NAMEPLATE;
     i.useEffect(() => {
-      $.Vt.ORB_PROFILE_BADGE === n.skuId && (0, A.Ls)([(0, W.X2)()], ep)
+      $.Vt.ORB_PROFILE_BADGE === n.skuId && (0, A.Ls)([(0, W.X2)()], eh)
     }, [n.skuId]);
     let R = i.useMemo(() => null != l ? l : $.Vt.ORB_PROFILE_BADGE === n.skuId ? er.intl.string(en.default.nvaTQk) : g ? er.intl.format(new Date < $.a$ ? er.t.BhGU09 : er.t.Jfv5Qk, {
         purchased_item: h,
         suggested_item: m
-      }) : p && !f ? er.intl.string(er.t["1xr2SU"]) : er.intl.format(er.t.YNaxMj, {
+      }) : p && !f ? er.intl.string(er.t.IMffmp) : er.intl.format(er.t.YNaxMj, {
         itemName: h
       }), [l, n.skuId, g, p, f, h, m]),
       w = i.useMemo(() => null != d ? d : $.Vt.ORB_PROFILE_BADGE === n.skuId ? er.intl.string(en.default.UnPGio) : g ? er.intl.format(new Date < $.a$ ? er.t["1jBC0t"] : er.t.qSrp39, {
         purchased_item: h,
         suggested_item: m
-      }) : (0, c.EQ)(null == n ? void 0 : n.type).with(u.Z.BUNDLE, () => er.intl.string(er.t.zJPoLy)).with(u.Z.PROFILE_EFFECT, () => er.intl.string(er.t.f9M1YG)).with(u.Z.NAMEPLATE, () => er.intl.string(er.t.lvwvIi)).otherwise(() => f && null != b ? b : er.intl.string(er.t["44b50t"])), [d, n.skuId, null == n ? void 0 : n.type, g, h, m, f, b]),
+      }) : (0, c.EQ)(null == n ? void 0 : n.type).with(u.Z.BUNDLE, () => {
+        let {
+          itemOneName: e,
+          itemTwoName: t
+        } = (0, G.Ws)(n);
+        return er.intl.format(er.t.fXw44e, {
+          itemOneName: e,
+          itemTwoName: t
+        })
+      }).with(u.Z.AVATAR_DECORATION, () => f && null != b ? b : eu(h)).otherwise(() => eu(h)), [d, n, g, h, m, f, b]),
       D = i.useMemo(() => $.Vt.ORB_PROFILE_BADGE === n.skuId ? (0, r.jsxs)("div", {
         className: ei.buttonRows,
         children: [(0, r.jsx)(_.zxk, {
@@ -389,11 +401,11 @@ let ec = 880,
         })]
       }), (0, r.jsxs)("div", {
         className: ei.buttons,
-        children: [g ? (0, r.jsx)(em, {
+        children: [g ? (0, r.jsx)(eg, {
           onClose: a,
           product: o,
           analyticsLocations: s
-        }) : null != D ? D : (0, r.jsx)(eg, {
+        }) : null != D ? D : (0, r.jsx)(eE, {
           product: n,
           onClose: a,
           isPrimary: C,
@@ -406,7 +418,7 @@ let ec = 880,
       })]
     })
   },
-  em = e => {
+  eg = e => {
     let {
       onClose: t,
       product: n,
@@ -433,7 +445,7 @@ let ec = 880,
       }), er.intl.string(er.t.ouo4FB)]
     })
   },
-  eg = e => {
+  eE = e => {
     let {
       product: t,
       onClose: n,
@@ -461,7 +473,7 @@ let ec = 880,
       children: null != l ? l : er.intl.string(er.t["2p2aY2"])
     })
   },
-  eE = e => {
+  eb = e => {
     let {
       transitionState: t,
       product: n,
@@ -500,7 +512,7 @@ let ec = 880,
         children: (0, r.jsx)(_.hzk, {
           className: ei.modalContent,
           scrollbarType: "none",
-          children: (0, r.jsx)(e_, {
+          children: (0, r.jsx)(ep, {
             product: b,
             onClose: a,
             confettiCanvas: O,

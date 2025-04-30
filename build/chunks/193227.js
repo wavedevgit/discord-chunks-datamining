@@ -66,7 +66,7 @@ function E(e) {
   })
 }
 
-function w(e) {
+function B(e) {
   var {
     category: t,
     initialItemCardRef: n
@@ -116,7 +116,7 @@ function w(e) {
   }, a))
 }
 
-function B(e) {
+function w(e) {
   let {
     category: t,
     isPremiumUser: n,
@@ -146,7 +146,7 @@ function B(e) {
     }), (0, r.jsx)(C.Z, {
       category: t,
       hideLimitedTimeBadge: null != v
-    }), (0, r.jsx)(w, {
+    }), (0, r.jsx)(B, {
       category: t,
       initialItemCardRef: a,
       isPremiumUser: n,
@@ -206,7 +206,7 @@ function I(e) {
         newValue: {
           categoryPosition: t
         },
-        children: (0, r.jsx)(B, {
+        children: (0, r.jsx)(w, {
           isPremiumUser: o,
           category: e,
           initialItemCardRef: s,

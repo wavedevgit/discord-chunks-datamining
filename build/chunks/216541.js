@@ -28,7 +28,7 @@ let m = e => {
   } = e, {
     firstProfileEffect: b,
     firstAvatarDecoration: y
-  } = (0, u.R)(t), O = (0, d.O1)(y), v = (0, l.ZP)(), I = (0, a.ap)(v);
+  } = (0, u.Rj)(t), O = (0, d.O1)(y), v = (0, l.ZP)(), I = (0, a.ap)(v);
   return (0, r.jsxs)("div", {
     className: _.container,
     children: [null != b ? (0, r.jsx)("div", {
