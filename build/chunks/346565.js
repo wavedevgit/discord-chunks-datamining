@@ -22,7 +22,7 @@ function u(e) {
       label: t,
       size: "xxs"
     }), (0, r.jsx)(a.Text, {
-      variant: "text-xxs/semibold",
+      variant: "text-xs/medium",
       color: "text-muted",
       className: c.labelText,
       children: (0, s.Z)(t)
