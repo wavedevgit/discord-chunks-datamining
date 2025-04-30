@@ -97,7 +97,7 @@ let G = "NitroTabButton",
       ed = (null == J ? void 0 : J.trial_id) === R.a7,
       [ep, eh] = (0, h.US)(ee ? [o.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2] : [], void 0, !0);
     if (i.useEffect(() => {
-        !0 === F && ep === o.z.REVERSE_TRIAL_NITRO_TAB_BADGE_V2 && eh(k.L.AUTO_DISMISS)
+        !0 === F && ep === o.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2 && eh(k.L.AUTO_DISMISS)
       }, [eh, ep, F]), !V({
         selected: F
       })) return null;
