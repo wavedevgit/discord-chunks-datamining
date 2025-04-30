@@ -5,10 +5,10 @@ n.d(t, {
   Mt: () => d,
   ZB: () => f
 });
-var r = n(255367),
-  i = n(73800),
-  a = n(772848),
-  o = n(906732),
+var r = n(200651),
+  i = n(192379),
+  o = n(772848),
+  a = n(906732),
   s = n(221292);
 
 function l(e, t, n) {
@@ -37,13 +37,13 @@ let u = i.createContext(null),
     let {
       value: t,
       children: n,
-      openedAt: a,
+      openedAt: o,
       fetchStartedAt: l,
       fetchEndedAt: d,
       isLoaded: f = !1
     } = e, {
       analyticsLocations: _
-    } = (0, o.ZP)(), p = i.useRef(void 0), h = {
+    } = (0, a.ZP)(), p = i.useRef(void 0), h = {
       analyticsLocations: _,
       value: t
     }, m = i.useRef(h);
@@ -51,7 +51,7 @@ let u = i.createContext(null),
       m.current = h
     }), i.useEffect(() => {
       let e = Date.now();
-      if (null == p.current && null != a && (p.current = e - a), !f) return;
+      if (null == p.current && null != o && (p.current = e - o), !f) return;
       let {
         analyticsLocations: t,
         value: n
@@ -62,9 +62,9 @@ let u = i.createContext(null),
       }, n)), (0, s.RV)(c({
         profileUi: "USER_PROFILE",
         timeToInteractiveMs: p.current,
-        timeToLoadMs: null != a ? e - a : void 0,
+        timeToLoadMs: null != o ? e - o : void 0,
         timeToFetchMs: null != l && null != d ? d - l : void 0,
-        viewStartedAt: a,
+        viewStartedAt: o,
         fetchStartedAt: l,
         analyticsLocations: t
       }, n))
@@ -78,7 +78,7 @@ let u = i.createContext(null),
     let {
       layout: n,
       userId: r,
-      guildId: o,
+      guildId: a,
       channelId: s,
       messageId: l,
       roleId: c,
@@ -86,22 +86,22 @@ let u = i.createContext(null),
       showGuildProfile: f = !0
     } = e, _ = null == (t = i.useContext(u)) ? void 0 : t.sessionId;
     return i.useMemo(() => ({
-      sessionId: (0, a.Z)(),
+      sessionId: (0, o.Z)(),
       sourceSessionId: null != d ? d : _,
       layout: n,
       userId: r,
-      guildId: o,
+      guildId: a,
       channelId: s,
       messageId: l,
       roleId: c,
       showGuildProfile: f
-    }), [_, n, r, o, s, l, c, d, f])
+    }), [_, n, r, a, s, l, c, d, f])
   },
   _ = () => {
     let e = i.useContext(u),
       {
         analyticsLocations: t
-      } = (0, o.ZP)();
+      } = (0, a.ZP)();
     return {
       context: e,
       trackUserProfileAction: i.useCallback(n => {

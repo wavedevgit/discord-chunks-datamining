@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: 54f8d01c910e3abc
+  Original File Name: dd67dc9c72c4debe
 **/
 .debugMode_fa952e {
     background-color: rgba(255,0,0,.25);
@@ -3942,7 +3942,7 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .ringing__07f91 {
-    animation: outgoing-call-pulse__07f91 1s ease-out infinite;
+    animation: outgoing-call-pulse__07f91 1.25s ease-out infinite;
     opacity: .3
 }
 
@@ -4286,4 +4286,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     width: 96px
 }
 
-/*# sourceMappingURL=54f8d01c910e3abc.css.map*/
+/*# sourceMappingURL=dd67dc9c72c4debe.css.map*/

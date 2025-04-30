@@ -2,9 +2,9 @@
 "use strict";
 n.d(t, {
   Hm: () => s,
-  Tv: () => o,
+  Tv: () => a,
   __: () => i,
-  yT: () => a
+  yT: () => o
 });
 var r = n(570140);
 
@@ -17,14 +17,14 @@ function i(e, t, n) {
   })
 }
 
-function a(e) {
+function o(e) {
   r.Z.dispatch({
     type: "APP_LAUNCHER_DISMISS",
     closeReason: e
   })
 }
 
-function o(e) {
+function a(e) {
   r.Z.dispatch({
     type: "APP_LAUNCHER_ADD_FAILED_APP_DM_LOAD",
     channelId: e

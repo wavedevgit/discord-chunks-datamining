@@ -1,17 +1,17 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
-var r = n(255367);
-n(73800);
+var r = n(200651);
+n(192379);
 var i = n(481060);
-let a = e => {
+let o = e => {
   let {
     open: t,
     className: n
-  } = e, a = t ? i.Dio : i.CJ0;
-  return (0, r.jsx)(a, {
+  } = e, o = t ? i.Dio : i.CJ0;
+  return (0, r.jsx)(o, {
     className: n,
     size: "sm",
     color: "currentColor"

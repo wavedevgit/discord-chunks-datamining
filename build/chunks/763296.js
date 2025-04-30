@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => K
 }), n(388685), n(539854), n(467055), n(472816), n(794429);
 var r, i = n(392711),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(570140),
   l = n(695346),
   c = n(581883),
@@ -86,7 +86,7 @@ function x(e) {
   let {
     guildId: t
   } = e;
-  A = A.includes(t) ? a().without(A, t) : [...A, t]
+  A = A.includes(t) ? o().without(A, t) : [...A, t]
 }
 
 function M(e) {
@@ -112,9 +112,9 @@ function U(e) {
   var t, n, r;
   let {
     soundId: i,
-    userId: a
-  } = e, o = (null != (n = b.get(i)) ? n : 0) + 1, s = (null != (r = S.get(a)) ? r : 0) + 1;
-  b.set(i, o), S.set(a, s), a !== (null == (t = u.default.getCurrentUser()) ? void 0 : t.id) && (T = !0)
+    userId: o
+  } = e, a = (null != (n = b.get(i)) ? n : 0) + 1, s = (null != (r = S.get(o)) ? r : 0) + 1;
+  b.set(i, a), S.set(o, s), o !== (null == (t = u.default.getCurrentUser()) ? void 0 : t.id) && (T = !0)
 }
 
 function G(e) {
@@ -122,10 +122,10 @@ function G(e) {
   let {
     soundId: r,
     userId: i
-  } = e, a = (null != (t = b.get(r)) ? t : 0) - 1, o = (null != (n = S.get(i)) ? n : 0) - 1;
-  a <= 0 ? b.delete(r) : b.set(r, a), o <= 0 ? S.delete(i) : S.set(i, o)
+  } = e, o = (null != (t = b.get(r)) ? t : 0) - 1, a = (null != (n = S.get(i)) ? n : 0) - 1;
+  o <= 0 ? b.delete(r) : b.set(r, o), a <= 0 ? S.delete(i) : S.set(i, a)
 }
-let B = a().debounce((e, t) => {
+let B = o().debounce((e, t) => {
   d.default.track(h.rMx.UPDATE_SOUNDBOARD_SETTINGS, {
     volume: Math.round((0, f.P)(e)),
     location_stack: t
@@ -157,8 +157,8 @@ function Z(e) {
     proto: r
   } = t;
   if (n === m.yP.FRECENCY_AND_FAVORITES_SETTINGS) {
-    var i, a;
-    I = new Set(null != (a = null == r || null == (i = r.favoriteSoundboardSounds) ? void 0 : i.soundIds) ? a : [])
+    var i, o;
+    I = new Set(null != (o = null == r || null == (i = r.favoriteSoundboardSounds) ? void 0 : i.soundIds) ? o : [])
   } else n === m.yP.PRELOADED_USER_SETTINGS && F(r)
 }
 
@@ -175,7 +175,7 @@ function Y(e) {
   } = e;
   E = new Map(_.default.entries(t.soundboardSounds)), I = new Set(t.favoritedSoundIds), y = new Set(t.localSoundboardMutes)
 }
-class W extends(r = o.ZP.Store) {
+class W extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(c.Z), F(c.Z.settings)
   }

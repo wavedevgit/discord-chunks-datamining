@@ -8,26 +8,26 @@ let r = 5;
 function i(e, t, n) {
   let {
     onChange: i
-  } = e, a = !1, o = !1;
+  } = e, o = !1, a = !1;
   return e.onChange = () => {
-    if (a) {
-      o = !0;
+    if (o) {
+      a = !0;
       return
     }
-    a = !0;
+    o = !0;
     try {
       let e = 0;
       do {
-        if (o = !1, e++ >= r) break;
+        if (a = !1, e++ >= r) break;
         null == t || t();
         try {
           i()
         } finally {
           null == n || n()
         }
-      } while (o)
+      } while (a)
     } finally {
-      a = !1
+      o = !1
     }
   }, e
 }

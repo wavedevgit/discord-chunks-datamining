@@ -10,8 +10,8 @@ n.d(t, {
 });
 var r = n(818083),
   i = n(441167),
-  a = n(131951),
-  o = n(74538),
+  o = n(131951),
+  a = n(74538),
   s = n(435064),
   l = n(779618),
   c = n(474936);
@@ -79,7 +79,7 @@ let u = (0, r.B)({
   });
 
 function f() {
-  if (!(0, l.Z)(a.Z)) return !1;
+  if (!(0, l.Z)(o.Z)) return !1;
   let {
     enableClips: e
   } = d.getCurrentConfig({
@@ -103,7 +103,7 @@ function f() {
 }
 
 function _() {
-  let e = (0, l.Z)(a.Z),
+  let e = (0, l.Z)(o.Z),
     {
       enableClips: t
     } = d.useExperiment({
@@ -120,18 +120,18 @@ function _() {
     }),
     r = s.Z.isDecoupledGameClippingEnabled(),
     {
-      enableViewerClipping: o
+      enableViewerClipping: a
     } = i.Z.useExperiment({
       location: "useEnableClips"
     }, {
       autoTrackExposure: !1
     });
-  return (n || t || r || o) && e
+  return (n || t || r || a) && e
 }
 let p = e => {
     let {
       autoTrackExposure: t
-    } = e, n = (0, l.Z)(a.Z), {
+    } = e, n = (0, l.Z)(o.Z), {
       enablePremiumEarlyAccessGoLiveRoadblock: r
     } = d.useExperiment({
       location: "useShouldSeeClipsPremiumEarlyAccessGoLiveRoadblock"
@@ -143,7 +143,7 @@ let p = e => {
   h = e => {
     let {
       autoTrackExposure: t
-    } = e, n = (0, l.Z)(a.Z), {
+    } = e, n = (0, l.Z)(o.Z), {
       enablePremiumEarlyAccessAnnouncementCoachmark: r
     } = d.useExperiment({
       location: "useShouldSeeClipsPremiumEarlyAccessGoLiveRoadblock"
@@ -154,5 +154,5 @@ let p = e => {
   };
 
 function m(e) {
-  return o.ZP.isPremiumAtLeast(e.premiumType, c.p9.TIER_2)
+  return a.ZP.isPremiumAtLeast(e.premiumType, c.p9.TIER_2)
 }

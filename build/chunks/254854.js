@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(570140);
 
@@ -14,7 +14,7 @@ function i(e, t, n) {
   }) : e[t] = n, e
 }
 
-function a(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -26,12 +26,12 @@ function a(e) {
   }
   return e
 }
-let o = {
-  show(e, t, n, i, a) {
+let a = {
+  show(e, t, n, i, o) {
     r.Z.dispatch({
       type: "NOTICE_SHOW",
       notice: {
-        id: a,
+        id: o,
         type: e,
         message: t,
         buttonText: n,
@@ -40,7 +40,7 @@ let o = {
     })
   },
   dismiss(e) {
-    r.Z.dispatch(a({
+    r.Z.dispatch(o({
       type: "NOTICE_DISMISS"
     }, e))
   }

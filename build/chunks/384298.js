@@ -3,11 +3,11 @@
 n.d(t, {
   Z: () => y
 });
-var r = n(255367);
-n(73800);
+var r = n(200651);
+n(192379);
 var i = n(657707),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   s = n(475179),
   l = n(287734),
   c = n(359110),
@@ -29,7 +29,7 @@ function y(e) {
     onClose: y
   } = e, {
     themeType: O
-  } = (0, p.z)(), v = (0, a.e7)([f.Z], () => f.Z.isInChannel(t.id)), I = (0, a.e7)([d.Z], () => t.isPrivate() || d.Z.can(g.Plq.CONNECT, t)), {
+  } = (0, p.z)(), v = (0, o.e7)([f.Z], () => f.Z.isInChannel(t.id)), I = (0, o.e7)([d.Z], () => t.isPrivate() || d.Z.can(g.Plq.CONNECT, t)), {
     chatButtonEnabled: S
   } = (0, _.s)({
     location: "UserProfileActivityVoiceChannelButtons"
@@ -50,7 +50,7 @@ function y(e) {
   return O === m.lY.MODAL_V2 ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(h.tG, {
       text: v ? T() : A(),
-      size: o.PhG.TINY,
+      size: a.PhG.TINY,
       themeColor: "secondary",
       onClick: N
     }), S && t.isGuildVocal() && (0, r.jsx)(h.ef, {

@@ -3,10 +3,10 @@
 n.d(t, {
   Z: () => E
 }), n(388685);
-var r = n(255367),
-  i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+var r = n(200651),
+  i = n(192379),
+  o = n(120356),
+  a = n.n(o),
   s = n(481060),
   l = n(541716),
   c = n(752305),
@@ -26,7 +26,7 @@ function E(e) {
   let {
     sectionTitle: t,
     errors: n,
-    onTextChange: a,
+    onTextChange: o,
     pendingText: f,
     placeholder: p,
     currentText: E,
@@ -37,7 +37,7 @@ function E(e) {
   } = e, [I, S] = i.useState(null != f ? f : E), [T, A] = i.useState((0, c.JM)(I)), N = i.useRef(!1);
 
   function C(e, t, n) {
-    t !== I && (S(t), A(n), a(t))
+    t !== I && (S(t), A(n), o(t))
   }
 
   function R() {
@@ -56,13 +56,13 @@ function E(e) {
       S(E), A(e)
     }
   }, [f, E]), (0, r.jsx)("div", {
-    className: o()(m.body, b),
+    className: a()(m.body, b),
     children: (0, r.jsxs)(d.Z, {
       title: t,
       errors: n,
       disabled: O,
       children: [(0, r.jsx)(u.Z, {
-        innerClassName: o()(m.textArea, y),
+        innerClassName: a()(m.textArea, y),
         editorClassName: m.editorTextArea,
         maxCharacterCount: _.$n,
         onChange: C,

@@ -6,12 +6,12 @@ n.d(t, {
   R_: () => l,
   _2: () => u
 }), n(539854), n(388685), n(35282);
-var i = n(66685),
-  a = n(519772),
-  o = n(388032),
+var i = n(164484),
+  o = n(993192),
+  a = n(388032),
   s = n(252517);
 r = n(330711).Z;
-let l = (0, a.F)((e, t) => ({
+let l = (0, o.F)((e, t) => ({
   isLoading: !1,
   inProgressLocale: void 0,
   error: void 0,
@@ -50,7 +50,7 @@ async function u(e) {
   let t = l.getState();
   t.setLoadingStarted(e);
   let n = [];
-  o.intl.setLocale(e), n.push(), n.push((async () => {
+  a.intl.setLocale(e), n.push(), n.push((async () => {
     await (0, s.f)(), await (0, i.loadAllMessagesInLocale)(e)
   })()), null != r && (r.setLocale(e), n.push(r.loadPromise)), n.push(d(e)), n.push(f(e)), n.push(_(e)), await Promise.all(n).catch(n => t.setLoadingFailed(n, e)), t.setLoadingSucceeded(e)
 }
@@ -61,7 +61,7 @@ async function d(e) {
   {
     let {
       registerLocale: t
-    } = n(352374);
+    } = n(674091);
     t(e, r)
   }
 }

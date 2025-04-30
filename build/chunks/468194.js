@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  De: () => o,
+  De: () => a,
   Fv: () => f,
   Mg: () => r.M,
   TZ: () => d,
@@ -11,16 +11,16 @@ n.d(t, {
 }), n(35282), n(388685), n(704826);
 var r = n(513431);
 let i = /[\u0300-\u036f]/g,
-  a = /[\uD800-\uDBFF][\uDC00-\uDFFF]/;
+  o = /[\uD800-\uDBFF][\uDC00-\uDFFF]/;
 
-function o(e) {
+function a(e) {
   return null == e ? "" : "".concat(e.charAt(0).toUpperCase()).concat(e.slice(1))
 }
 let s = function(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "…";
   if (null == e || null == t) return "";
   if (e.length > t) {
-    let r = a.test(e) ? [...e].slice(0, t - n.length).join("") : e.substring(0, t - n.length);
+    let r = o.test(e) ? [...e].slice(0, t - n.length).join("") : e.substring(0, t - n.length);
     return "".concat(r.replace(/[\s.]+$/, "")).concat(n)
   }
   return e

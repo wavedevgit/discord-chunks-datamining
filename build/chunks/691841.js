@@ -3,10 +3,10 @@
 n.d(t, {
   Z: () => l
 });
-var r = n(73800),
+var r = n(192379),
   i = n(924826),
-  a = n(536895),
-  o = n(40851),
+  o = n(536895),
+  a = n(40851),
   s = n(590921);
 
 function l(e) {
@@ -18,7 +18,7 @@ function l(e) {
     onFocus: f
   } = e, {
     renderWindow: _
-  } = r.useContext(o.ZP), p = (e, t) => {
+  } = r.useContext(a.ZP), p = (e, t) => {
     let n = _.document.querySelector(e);
     if (null != n) {
       var r;
@@ -43,7 +43,7 @@ function l(e) {
   }, g = (0, i.ZP)({
     id: c,
     isEnabled: d.isVisible,
-    orientation: a.hy.VERTICAL,
+    orientation: o.hy.VERTICAL,
     useVirtualFocus: !0,
     setFocus: p,
     onNavigateNextAtEnd: () => h(!0),

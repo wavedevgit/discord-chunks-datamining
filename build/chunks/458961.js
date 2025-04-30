@@ -2,8 +2,8 @@
 r.d(t, {
   default: () => $
 }), r(388685), r(953529);
-var n = r(255367),
-  A = r(73800),
+var n = r(200651),
+  A = r(192379),
   a = r(120356),
   l = r.n(a),
   o = r(512722),
@@ -250,7 +250,7 @@ function _(e) {
   }, [eX, _, eo]), A.useEffect(() => {
     eM && eY(void 0)
   }, [eM]);
-  let e6 = A.useRef(null);
+  let e9 = A.useRef(null);
   return (0, n.jsxs)(u.Y0X, {
     transitionState: et,
     size: u.CgR.DYNAMIC,
@@ -281,7 +281,7 @@ function _(e) {
       children: [(0, n.jsx)(u.zJl, {
         children: (0, n.jsxs)("div", {
           className: B.productFieldsSection,
-          ref: e6,
+          ref: e9,
           children: [(0, n.jsx)(u.xJW, {
             title: R.intl.string(R.t.Hsk7xc),
             tag: "label",
@@ -355,7 +355,7 @@ function _(e) {
             children: (0, n.jsx)(F.s, {
               onFileAdded: () => {
                 var e;
-                null == (e = e6.current) || e.scrollIntoView({
+                null == (e = e9.current) || e.scrollIntoView({
                   behavior: "smooth",
                   block: "end"
                 })

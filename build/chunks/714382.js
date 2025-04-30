@@ -10,14 +10,14 @@ n.d(t, {
 var i = function() {
     return "function" == typeof Symbol && Symbol.observable || "@@observable"
   }(),
-  a = function() {
+  o = function() {
     return Math.random().toString(36).substring(7).split("").join(".")
   },
-  o = {
-    INIT: "@@redux/INIT" + a(),
-    REPLACE: "@@redux/REPLACE" + a(),
+  a = {
+    INIT: "@@redux/INIT" + o(),
+    REPLACE: "@@redux/REPLACE" + o(),
     PROBE_UNKNOWN_ACTION: function() {
-      return "@@redux/PROBE_UNKNOWN_ACTION" + a()
+      return "@@redux/PROBE_UNKNOWN_ACTION" + o()
     }
   };
 
@@ -34,7 +34,7 @@ function l(e, t, n) {
     return n(l)(e, t)
   }
   if ("function" != typeof e) throw Error(r(2));
-  var a, c = e,
+  var o, c = e,
     u = t,
     d = [],
     f = d,
@@ -80,7 +80,7 @@ function l(e, t, n) {
   function E(e) {
     if ("function" != typeof e) throw Error(r(10));
     c = e, g({
-      type: o.REPLACE
+      type: a.REPLACE
     })
   }
 
@@ -102,11 +102,11 @@ function l(e, t, n) {
     }, e
   }
   return g({
-    type: o.INIT
-  }), (a = {
+    type: a.INIT
+  }), (o = {
     dispatch: g,
     subscribe: m,
     getState: h,
     replaceReducer: E
-  })[i] = b, a
+  })[i] = b, o
 }

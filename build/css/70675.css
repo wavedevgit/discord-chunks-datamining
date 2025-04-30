@@ -1,6 +1,6 @@
 /**
   Module ID: 70675
-  Original File Name: f182e7782f877a3c
+  Original File Name: 46fdf8da7da0cd4d
 **/
 .labelWrapper_abe771 {
     align-items: center;
@@ -59,7 +59,7 @@
 }
 
 .ringing__3751b {
-    animation: outgoing-call-pulse__3751b 1s ease-out infinite;
+    animation: outgoing-call-pulse__3751b 1.25s ease-out infinite;
     opacity: .3
 }
 
@@ -85,4 +85,4 @@
     margin-right: 8px
 }
 
-/*# sourceMappingURL=f182e7782f877a3c.css.map*/
+/*# sourceMappingURL=46fdf8da7da0cd4d.css.map*/

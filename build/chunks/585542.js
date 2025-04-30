@@ -8,8 +8,8 @@ e.exports = function(e) {
     }),
     r = "decltype\\(auto\\)",
     i = "[a-zA-Z_]\\w*::",
-    a = "<[^<>]+>",
-    o = "(" + r + "|" + t.optional(i) + "[a-zA-Z_]\\w*" + t.optional(a) + ")",
+    o = "<[^<>]+>",
+    a = "(" + r + "|" + t.optional(i) + "[a-zA-Z_]\\w*" + t.optional(o) + ")",
     s = {
       className: "type",
       variants: [{
@@ -100,7 +100,7 @@ e.exports = function(e) {
       relevance: 0
     },
     g = {
-      begin: "(" + o + "[\\*&\\s]+)+" + _,
+      begin: "(" + a + "[\\*&\\s]+)+" + _,
       returnBegin: !0,
       end: /[{;=]/,
       excludeEnd: !0,

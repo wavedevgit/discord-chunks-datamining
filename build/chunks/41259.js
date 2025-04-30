@@ -3,10 +3,10 @@
 n.d(t, {
   Z: () => E
 });
-var r = n(255367),
-  i = n(73800),
-  a = n(793030),
-  o = n(974674),
+var r = n(200651),
+  i = n(192379),
+  o = n(793030),
+  a = n(974674),
   s = n(1561),
   l = n(993365),
   c = n(385499),
@@ -37,7 +37,7 @@ function E(e) {
       variant: "text-lg/normal",
       color: "header-secondary",
       children: m.intl.string(m.t.uT1CPT)
-    }), (0, r.jsx)(a.X6, {
+    }), (0, r.jsx)(o.X6, {
       variant: "heading-xxl/bold",
       color: "header-primary",
       children: E.name
@@ -65,7 +65,7 @@ function E(e) {
     className: g.header,
     children: [(0, r.jsxs)("div", {
       className: g.headerIcons,
-      children: [(0, r.jsx)(o.qE, {
+      children: [(0, r.jsx)(a.qE, {
         className: g.avatar,
         src: S,
         size: h.EF.SIZE_80,
@@ -79,7 +79,7 @@ function E(e) {
         }), (0, r.jsx)("div", {
           className: g.ellipse
         })]
-      }), (0, r.jsx)(o.qE, {
+      }), (0, r.jsx)(a.qE, {
         className: g.avatar,
         src: T,
         size: h.EF.SIZE_80,

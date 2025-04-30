@@ -1,8 +1,9 @@
-/** Chunk was on 75450 **/
-n.d(t, {
-  $: () => I
+/** Chunk was on 86029 **/
+"use strict";
+r.d(e, {
+  $: () => E
 });
-let a = {
+let n = {
     ational: "ate",
     tional: "tion",
     enci: "ence",
@@ -34,31 +35,31 @@ let a = {
     ful: "",
     ness: ""
   },
-  l = "[aeiouy]",
-  r = "([^aeiou][^aeiouy]*)",
-  o = "(" + l + "[aeiou]*)",
-  s = RegExp("^" + r + "?" + o + r),
-  c = RegExp("^" + r + "?" + o + r + o + "?$"),
-  d = RegExp("^" + r + "?(" + o + r + "){2,}"),
-  u = RegExp("^" + r + "?" + l),
-  m = RegExp("^" + r + l + "[^aeiouwxy]$"),
-  p = /ll$/,
-  g = /^(.+?)e$/,
-  _ = /^(.+?)y$/,
-  f = /^(.+?(s|t))(ion)$/,
-  h = /^(.+?)(ed|ing)$/,
-  b = /(at|bl|iz)$/,
-  y = /^(.+?)eed$/,
-  C = /^.+?[^s]s$/,
-  x = /^.+?(ss|i)es$/,
-  v = /([^aeiouylsz])\1$/,
-  T = /^(.+?)(ational|tional|enci|anci|izer|bli|alli|entli|eli|ousli|ization|ation|ator|alism|iveness|fulness|ousness|aliti|iviti|biliti|logi)$/,
-  O = /^(.+?)(icate|ative|alize|iciti|ical|ful|ness)$/,
-  j = /^(.+?)(al|ance|ence|er|ic|able|ible|ant|ement|ment|ent|ou|ism|ate|iti|ous|ive|ize)$/;
+  o = "[aeiouy]",
+  a = "([^aeiou][^aeiouy]*)",
+  u = "(" + o + "[aeiou]*)",
+  s = RegExp("^" + a + "?" + u + a),
+  c = RegExp("^" + a + "?" + u + a + u + "?$"),
+  l = RegExp("^" + a + "?(" + u + a + "){2,}"),
+  f = RegExp("^" + a + "?" + o),
+  p = RegExp("^" + a + o + "[^aeiouwxy]$"),
+  h = /ll$/,
+  d = /^(.+?)e$/,
+  g = /^(.+?)y$/,
+  y = /^(.+?(s|t))(ion)$/,
+  v = /^(.+?)(ed|ing)$/,
+  m = /(at|bl|iz)$/,
+  _ = /^(.+?)eed$/,
+  b = /^.+?[^s]s$/,
+  S = /^.+?(ss|i)es$/,
+  w = /([^aeiouylsz])\1$/,
+  x = /^(.+?)(ational|tional|enci|anci|izer|bli|alli|entli|eli|ousli|ization|ation|ator|alism|iveness|fulness|ousness|aliti|iviti|biliti|logi)$/,
+  k = /^(.+?)(icate|ative|alize|iciti|ical|ful|ness)$/,
+  C = /^(.+?)(al|ance|ence|er|ic|able|ible|ant|ement|ment|ent|ou|ism|ate|iti|ous|ive|ize)$/;
 
-function I(e) {
-  let t, n = String(e).toLowerCase();
-  if (n.length < 3) return n;
-  let l = !1;
-  return 121 === n.codePointAt(0) && (l = !0, n = "Y" + n.slice(1)), x.test(n) ? n = n.slice(0, -2) : C.test(n) && (n = n.slice(0, -1)), (t = y.exec(n)) ? s.test(t[1]) && (n = n.slice(0, -1)) : (t = h.exec(n)) && u.test(t[1]) && (n = t[1], b.test(n) ? n += "e" : v.test(n) ? n = n.slice(0, -1) : m.test(n) && (n += "e")), (t = _.exec(n)) && u.test(t[1]) && (n = t[1] + "i"), (t = T.exec(n)) && s.test(t[1]) && (n = t[1] + a[t[2]]), (t = O.exec(n)) && s.test(t[1]) && (n = t[1] + i[t[2]]), (t = j.exec(n)) ? d.test(t[1]) && (n = t[1]) : (t = f.exec(n)) && d.test(t[1]) && (n = t[1]), (t = g.exec(n)) && (d.test(t[1]) || c.test(t[1]) && !m.test(t[1])) && (n = t[1]), p.test(n) && d.test(n) && (n = n.slice(0, -1)), l && (n = "y" + n.slice(1)), n
+function E(t) {
+  let e, r = String(t).toLowerCase();
+  if (r.length < 3) return r;
+  let o = !1;
+  return 121 === r.codePointAt(0) && (o = !0, r = "Y" + r.slice(1)), S.test(r) ? r = r.slice(0, -2) : b.test(r) && (r = r.slice(0, -1)), (e = _.exec(r)) ? s.test(e[1]) && (r = r.slice(0, -1)) : (e = v.exec(r)) && f.test(e[1]) && (r = e[1], m.test(r) ? r += "e" : w.test(r) ? r = r.slice(0, -1) : p.test(r) && (r += "e")), (e = g.exec(r)) && f.test(e[1]) && (r = e[1] + "i"), (e = x.exec(r)) && s.test(e[1]) && (r = e[1] + n[e[2]]), (e = k.exec(r)) && s.test(e[1]) && (r = e[1] + i[e[2]]), (e = C.exec(r)) ? l.test(e[1]) && (r = e[1]) : (e = y.exec(r)) && l.test(e[1]) && (r = e[1]), (e = d.exec(r)) && (l.test(e[1]) || c.test(e[1]) && !p.test(e[1])) && (r = e[1]), h.test(r) && l.test(r) && (r = r.slice(0, -1)), o && (r = "y" + r.slice(1)), r
 }

@@ -1,16 +1,16 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 }), n(388685);
-var r = n(73800),
+var r = n(192379),
   i = n(122289),
-  a = n(622999);
+  o = n(622999);
 
-function o() {
+function a() {
   let [e, t] = r.useState(null);
   return r.useEffect(() => {
-    (0, a.d2)().then(e => t(e)).catch(e => {
+    (0, o.d2)().then(e => t(e)).catch(e => {
       (0, i.q2)(e)
     })
   }, []), e

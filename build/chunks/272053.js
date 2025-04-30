@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => j
 }), n(388685), n(35282), n(415506), n(539854), n(993155);
 var r, i = n(348327),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(544891),
   l = n(570140),
   c = n(457330),
@@ -63,8 +63,8 @@ async function w(e, t) {
     }
   } = await P("/games", {
     id: e
-  }, t), a = null == (n = i[0]) ? void 0 : n.name;
-  return C[e] = a, a
+  }, t), o = null == (n = i[0]) ? void 0 : n.name;
+  return C[e] = o, o
 }
 class D {
   start() {
@@ -83,18 +83,18 @@ class D {
       var n, r, i;
       let {
         body: {
-          data: a
+          data: o
         }
       } = await P("/streams", {
         user_id: e.id,
         first: 1
-      }, t), o = a[0];
-      if (null == o || "live" !== o.type) throw Error("no stream");
+      }, t), a = o[0];
+      if (null == a || "live" !== a.type) throw Error("no stream");
       let {
         thumbnail_url: s,
         game_id: l,
         title: c
-      } = o, f = {
+      } = a, f = {
         large_image: null != s && null != (r = (0, d.f)(h.ABu.TWITCH, s)) ? r : void 0
       }, _ = await w(l, t), p = u.Z.get(h.ABu.TWITCH), m = null != (i = R(s)) ? i : e.name, g = null != c && "" !== c ? c.slice(0, I) : void 0, E = null != _ && "" !== _ ? _.slice(0, I) : void 0;
       return {
@@ -138,12 +138,12 @@ class D {
       let {
         id: i,
         snippet: {
-          title: a,
-          thumbnails: o
+          title: o,
+          thumbnails: a
         }
       } = r[0], l = {
-        large_image: null != (n = (0, d.f)(h.ABu.YOUTUBE, o.high.url)) ? n : void 0
-      }, c = null != a && "" !== a ? a.slice(0, I) : void 0;
+        large_image: null != (n = (0, d.f)(h.ABu.YOUTUBE, a.high.url)) ? n : void 0
+      }, c = null != o && "" !== o ? o.slice(0, I) : void 0;
       return A = {
         url: b(i),
         name: u.Z.get(h.ABu.YOUTUBE).name,
@@ -189,10 +189,10 @@ function x() {
 
 function M(e) {
   var t;
-  if (a()(e.stream, S)) return !1;
+  if (o()(e.stream, S)) return !1;
   S = null != (t = e.stream) ? t : null
 }
-class k extends(r = o.ZP.Store) {
+class k extends(r = a.ZP.Store) {
   initialize() {
     x(), this.waitFor(_.Z), this.syncWith([p.Z], x)
   }

@@ -3,10 +3,10 @@
 n.d(t, {
   k: () => y
 }), n(388685);
-var r = n(255367),
-  i = n(73800),
-  a = n(505266),
-  o = n(40851),
+var r = n(200651),
+  i = n(192379),
+  o = n(995899),
+  a = n(40851),
   s = n(745510),
   l = n(661637),
   c = n(146128),
@@ -109,9 +109,9 @@ let h = 1e3 / 60,
 function y(e) {
   let {
     children: t
-  } = e, [n, l] = i.useState(!1), d = (0, o.bp)(), [_, y] = i.useState(null), {
+  } = e, [n, l] = i.useState(!1), d = (0, a.bp)(), [_, y] = i.useState(null), {
     confettiCanvas: O
-  } = i.useContext(s.h), v = (0, a.uR)(O, _), I = i.useMemo(() => ({
+  } = i.useContext(s.h), v = (0, o.uR)(O, _), I = i.useMemo(() => ({
     triggerAnimation: () => l(!0),
     untriggerAnimation: () => l(!1)
   }), []), S = i.useCallback(() => {
@@ -137,7 +137,7 @@ function y(e) {
     return () => clearInterval(e)
   }, [n, S]), d === u.IlC.OVERLAY) ? t : (0, r.jsxs)(c.Rm.Provider, {
     value: I,
-    children: [t, (0, r.jsx)(a.Ji, {
+    children: [t, (0, r.jsx)(o.Ji, {
       ref: y,
       colors: E,
       sprites: b,

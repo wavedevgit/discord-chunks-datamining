@@ -4,11 +4,11 @@ n.d(t, {
   J: () => s.Hb,
   Z: () => c
 });
-var r = n(255367);
-n(73800);
+var r = n(200651);
+n(192379);
 var i = n(120356),
-  a = n.n(i),
-  o = n(385499),
+  o = n.n(i),
+  a = n(385499),
   s = n(674563),
   l = n(367564);
 let c = e => {
@@ -28,10 +28,10 @@ let c = e => {
     usernameIcon: g
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(c, l.nameTag),
+    className: o()(c, l.nameTag),
     style: h,
     children: [(0, r.jsxs)("span", {
-      className: a()(l.username, d),
+      className: o()(l.username, d),
       style: null != s ? {
         color: s
       } : void 0,
@@ -39,10 +39,10 @@ let c = e => {
     }), null != n ? (0, r.jsxs)("span", {
       className: null != f ? f : void 0,
       children: ["#", n]
-    }) : null, null != u ? (0, r.jsx)(o.Z, {
+    }) : null, null != u ? (0, r.jsx)(a.Z, {
       type: u,
       invertColor: i,
-      className: a()(_, l.bot),
+      className: o()(_, l.bot),
       verified: p,
       useRemSizes: m
     }) : null]

@@ -3,11 +3,11 @@
 n.d(t, {
   Z: () => u
 });
-var r = n(255367);
-n(73800);
+var r = n(200651);
+n(192379);
 var i = n(481060),
-  a = n(44315),
-  o = n(641033),
+  o = n(44315),
+  a = n(641033),
   s = n(989830),
   l = n(388032),
   c = n(931251);
@@ -21,17 +21,17 @@ function u(e) {
     multiplier: u
   } = n, {
     color: d
-  } = (0, o.yz)(u);
+  } = (0, a.yz)(u);
   return (0, r.jsxs)("div", {
     className: c.container,
     children: [(0, r.jsx)(i.Text, {
       variant: "text-xs/normal",
       children: l.intl.string(l.t.Jr2519)
     }), (0, r.jsx)(i.Exd, {
-      foregroundColor: (0, a.Lq)(d),
+      foregroundColor: (0, o.Lq)(d),
       className: c.progress,
       size: i.Exd.Sizes.LARGE,
-      percent: 100 * (0, o.nc)(n),
+      percent: 100 * (0, a.nc)(n),
       animate: !0
     })]
   })

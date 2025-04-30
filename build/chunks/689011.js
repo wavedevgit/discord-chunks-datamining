@@ -5,11 +5,11 @@ n.d(t, {
   t: () => h,
   xe: () => g
 }), n(953529);
-var r = n(255367);
-n(73800);
+var r = n(200651);
+n(192379);
 var i = n(481060),
-  a = n(131388),
-  o = n(409813),
+  o = n(131388),
+  a = n(409813),
   s = n(586585),
   l = n(614277),
   c = n(225715),
@@ -22,8 +22,8 @@ let h = e => {
     let {
       step: t,
       onClose: n
-    } = e, s = (0, a.Z)(u.X);
-    return t === o.h8.CONFIRM || t === o.h8.BENEFITS ? (0, r.jsx)("div", {}) : (0, r.jsxs)("div", {
+    } = e, s = (0, o.Z)(u.X);
+    return t === a.h8.CONFIRM || t === a.h8.BENEFITS ? (0, r.jsx)("div", {}) : (0, r.jsxs)("div", {
       className: f.headerContainer,
       children: [!s && (0, r.jsx)("div", {
         className: f.headerImageContainer,
@@ -50,24 +50,24 @@ let h = e => {
       icon: t,
       storeListingBenefits: n,
       skuBenefits: i,
-      application: a,
-      title: o,
+      application: o,
+      title: a,
       subtitle: s,
       description: l
     } = e;
-    return null == a ? null : (0, r.jsx)("div", {
+    return null == o ? null : (0, r.jsx)("div", {
       className: f.confirmationContainer,
       children: (0, r.jsxs)(c.q$, {
         children: [(0, r.jsx)(c.CW, {
-          application: a,
+          application: o,
           asset: t
         }), (0, r.jsx)(c.r0, {
-          children: o
+          children: a
         }), (0, r.jsx)(c.s$, {}), (0, r.jsx)(c.K9, {
           title: s,
           description: l
         }), (0, r.jsx)(c.G9, {
-          applicationId: a.id,
+          applicationId: o.id,
           storeListingBenefits: n,
           skuBenefits: i
         })]
@@ -79,7 +79,7 @@ function g(e) {
   let {
     tierName: t,
     onConfirm: n,
-    subscription: a
+    subscription: o
   } = e;
   return (0, r.jsxs)("div", {
     className: f.purchaseConfirmation,
@@ -100,7 +100,7 @@ function g(e) {
       variant: "text-md/medium",
       color: "header-secondary",
       children: d.intl.format(d.t.OsAK9v, {
-        timestamp: null == a ? void 0 : a.currentPeriodEnd
+        timestamp: null == o ? void 0 : o.currentPeriodEnd
       })
     }), (0, r.jsx)(l.O3, {
       children: (0, r.jsx)(s.Z, {

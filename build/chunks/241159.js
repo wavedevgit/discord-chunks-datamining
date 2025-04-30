@@ -1,18 +1,18 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  k: () => o
+  k: () => a
 });
 var r = n(544891),
   i = n(570140),
-  a = n(981631);
+  o = n(981631);
 
-function o(e) {
+function a(e) {
   return i.Z.dispatch({
     type: "APPLICATION_STORE_DIRECTORY_LAYOUT_FETCHING",
     applicationId: e
   }), r.tn.get({
-    url: a.ANM.STORE_LAYOUT(e),
+    url: o.ANM.STORE_LAYOUT(e),
     rejectWithError: !0
   }).then(t => (i.Z.dispatch({
     type: "APPLICATION_STORE_DIRECTORY_LAYOUT_FETCH_SUCCESS",

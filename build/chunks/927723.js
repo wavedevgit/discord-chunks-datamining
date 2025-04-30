@@ -3,11 +3,11 @@
 n.d(t, {
   k: () => c
 });
-var r = n(255367);
-n(73800);
+var r = n(200651);
+n(192379);
 var i = n(481060);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -16,14 +16,14 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -54,7 +54,7 @@ function c(e) {
     let {
       default: e
     } = await n.e("7285").then(n.bind(n, 951269));
-    return n => (0, r.jsx)(e, l(o({}, n), {
+    return n => (0, r.jsx)(e, l(a({}, n), {
       kind: t
     }))
   })

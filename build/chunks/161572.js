@@ -3,11 +3,11 @@
 n.d(t, {
   Z: () => l
 });
-var r = n(255367);
-n(73800);
+var r = n(200651);
+n(192379);
 var i = n(837411),
-  a = n(705556),
-  o = n(955418),
+  o = n(705556),
+  a = n(955418),
   s = n(200669);
 
 function l(e) {
@@ -21,13 +21,13 @@ function l(e) {
   } = e, f = (0, i.Z)(t.id, n);
   return (0, r.jsxs)("footer", {
     className: s.footer,
-    children: [f && (0, r.jsx)(o.Z, {
+    children: [f && (0, r.jsx)(a.Z, {
       user: t,
       guildId: n,
       channelId: l,
       onClose: c,
       disableAutoFocus: d
-    }), !f && (0, r.jsx)(a.Z, {
+    }), !f && (0, r.jsx)(o.Z, {
       user: t,
       guildId: n,
       onClose: c,

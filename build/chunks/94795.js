@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  G8: () => a,
-  O7: () => o,
+  G8: () => o,
+  O7: () => a,
   nJ: () => i
 });
 var r = n(570140);
@@ -13,13 +13,13 @@ function i() {
   })
 }
 
-function a() {
+function o() {
   r.Z.dispatch({
     type: "APP_ICON_EDITOR_CLOSE"
   })
 }
 
-function o() {
+function a() {
   r.Z.dispatch({
     type: "APP_ICON_EDITOR_RESET"
   })

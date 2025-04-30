@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(317770),
   i = n(626135),
-  a = n(358085),
-  o = n(998502),
+  o = n(358085),
+  a = n(998502),
   s = n(801814),
   l = n(981631);
 
@@ -20,13 +20,13 @@ function c(e, t, n) {
 }
 class u extends r.Z {
   _initialize() {
-    a.isPlatformEmbedded && (o.ZP.on("UPDATE_DOWNLOADED", () => this.processModuleEvents()), o.ZP.on("MODULE_INSTALLED", (e, t, n) => this.processModuleEvents()), o.ZP.on("UPDATER_HISTORY_RESPONSE", (e, t) => {
+    o.isPlatformEmbedded && (a.ZP.on("UPDATE_DOWNLOADED", () => this.processModuleEvents()), a.ZP.on("MODULE_INSTALLED", (e, t, n) => this.processModuleEvents()), a.ZP.on("UPDATER_HISTORY_RESPONSE", (e, t) => {
       this._handleHistoryResponse(t)
     }), this.processModuleEvents())
   }
   _terminate() {}
   processModuleEvents() {
-    o.ZP.send("UPDATER_HISTORY_QUERY_AND_TRUNCATE")
+    a.ZP.send("UPDATER_HISTORY_QUERY_AND_TRUNCATE")
   }
   _handleHistoryResponse(e) {
     if (null == e) return;

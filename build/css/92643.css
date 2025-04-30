@@ -1,6 +1,6 @@
 /**
   Module ID: 92643
-  Original File Name: 52e174d53a48ffa4
+  Original File Name: 16f6b39fba96be4c
 **/
 .loadingWrapper__5a143 {
     align-items: center;
@@ -88,7 +88,7 @@
 }
 
 .ringing__3751b {
-    animation: outgoing-call-pulse__3751b 1s ease-out infinite;
+    animation: outgoing-call-pulse__3751b 1.25s ease-out infinite;
     opacity: .3
 }
 
@@ -114,4 +114,4 @@
     margin-right: 4px
 }
 
-/*# sourceMappingURL=52e174d53a48ffa4.css.map*/
+/*# sourceMappingURL=16f6b39fba96be4c.css.map*/

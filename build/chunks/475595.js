@@ -10,8 +10,8 @@ n.d(t, {
 }), n(35282), n(784620), n(973216), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685);
 var r = n(887003),
   i = n(918701),
-  a = n(46140),
-  o = n(151702);
+  o = n(46140),
+  a = n(151702);
 let s = /\.([a-zA-Z0-9]+)$/,
   l = ["video/mp4", "video/webm"];
 var c = function(e) {
@@ -21,11 +21,11 @@ var c = function(e) {
 function u(e, t, n) {
   let r = p(e, t, n),
     i = h(t),
-    a = null != i && l.includes(i);
+    o = null != i && l.includes(i);
   return {
     url: r,
     mimetype: i,
-    isAnimated: a
+    isAnimated: o
   }
 }
 
@@ -48,7 +48,7 @@ function f(e, t, n) {
     case "reward": {
       let t = (0, i.hF)(e);
       if (t.type === r.w.VIRTUAL_CURRENCY) return {
-        url: o.Z,
+        url: a.Z,
         mimetype: "video/webm",
         isAnimated: !0
       };
@@ -61,7 +61,7 @@ function f(e, t, n) {
     case "logo_type":
       s = e.config.assets.logotype
   }
-  let l = e.config.features.includes(a.S7.QUESTS_CDN);
+  let l = e.config.features.includes(o.S7.QUESTS_CDN);
   return u(e.id, s, {
     theme: n,
     newCdn: l
@@ -75,7 +75,7 @@ function _(e) {
 
 function p(e, t, n) {
   if (t.startsWith("blob:")) return _(t);
-  let r = (null == n ? void 0 : n.newCdn) ? a.tD : a.Uo;
+  let r = (null == n ? void 0 : n.newCdn) ? o.tD : o.Uo;
   return "".concat(r).concat(e).concat((null == n ? void 0 : n.theme) != null ? "/".concat(n.theme) : "", "/").concat(t)
 }
 

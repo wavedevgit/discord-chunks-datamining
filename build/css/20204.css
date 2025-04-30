@@ -1,6 +1,6 @@
 /**
   Module ID: 20204
-  Original File Name: 7ccdefa0425dab05
+  Original File Name: 799fe2f99dbb1e3b
 **/
 .labelWrapper_abe771 {
     align-items: center;
@@ -74,7 +74,7 @@
 }
 
 .ringing__3751b {
-    animation: outgoing-call-pulse__3751b 1s ease-out infinite;
+    animation: outgoing-call-pulse__3751b 1.25s ease-out infinite;
     opacity: .3
 }
 
@@ -110,4 +110,4 @@
     margin-right: 8px
 }
 
-/*# sourceMappingURL=7ccdefa0425dab05.css.map*/
+/*# sourceMappingURL=799fe2f99dbb1e3b.css.map*/

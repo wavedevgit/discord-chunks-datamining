@@ -3,9 +3,9 @@
 n.d(t, {
   Z: () => l
 }), n(388685);
-var r, i, a = n(73800);
+var r, i, o = n(192379);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -17,15 +17,15 @@ function o(e, t, n) {
 function s(e, t, n) {
   return Math.min(Math.max(Math.floor(e / t), 1), n)
 }
-let l = (0, n(112724).Z)((i = class extends(r = a.Component) {
+let l = (0, n(112724).Z)((i = class extends(r = o.Component) {
   static getDerivedStateFromProps(e, t) {
     let {
       width: n,
       desiredItemWidth: r,
       maxColumns: i
-    } = e, a = s(n, r, i);
-    return a !== t.columns ? {
-      columns: a
+    } = e, o = s(n, r, i);
+    return o !== t.columns ? {
+      columns: o
     } : null
   }
   render() {
@@ -39,10 +39,10 @@ let l = (0, n(112724).Z)((i = class extends(r = a.Component) {
     return n(r, e, t)
   }
   constructor(...e) {
-    super(...e), o(this, "state", {
+    super(...e), a(this, "state", {
       columns: s(this.props.width, this.props.desiredItemWidth, this.props.maxColumns)
     })
   }
-}, o(i, "defaultProps", {
+}, a(i, "defaultProps", {
   desiredItemWidth: 200
 }), i))

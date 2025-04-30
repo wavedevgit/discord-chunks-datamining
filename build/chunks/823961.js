@@ -4,8 +4,8 @@ let r;
 n.d(t, {
   Z: () => w
 }), n(388685);
-var i, a = n(442837),
-  o = n(570140),
+var i, o = n(442837),
+  a = n(570140),
   s = n(959546),
   l = n(317951);
 
@@ -71,7 +71,7 @@ let u = new Map,
   R = e => {
     g = e.enabled
   };
-class P extends(i = a.ZP.Store) {
+class P extends(i = o.ZP.Store) {
   get lastConfetti() {
     return r
   }
@@ -104,7 +104,7 @@ class P extends(i = a.ZP.Store) {
   }
 }
 c(P, "displayName", "ConsumablesStore");
-let w = new P(o.Z, {
+let w = new P(a.Z, {
   CONSUMABLES_PRICE_FETCH_STARTED: E,
   CONSUMABLES_PRICE_FETCH_SUCCEEDED: b,
   CONSUMABLES_PRICE_FETCH_FAILED: y,

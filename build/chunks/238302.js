@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Kq: () => o,
+  Kq: () => a,
   Mo: () => s,
   kj: () => l,
-  xs: () => a,
+  xs: () => o,
   zO: () => i
 });
 var r = n(570140);
@@ -14,13 +14,13 @@ let i = e => {
       presetId: e
     })
   },
-  a = () => {
+  o = () => {
     r.Z.dispatch({
       type: "UPDATE_BACKGROUND_GRADIENT_PRESET",
       presetId: null
     })
   },
-  o = () => {
+  a = () => {
     r.Z.dispatch({
       type: "CLIENT_THEMES_EDITOR_OPEN"
     })

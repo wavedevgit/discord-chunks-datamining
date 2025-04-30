@@ -2,8 +2,8 @@
 n.d(t, {
   Z: () => eu
 }), n(388685);
-var r = n(255367),
-  i = n(73800),
+var r = n(200651),
+  i = n(192379),
   l = n(120356),
   o = n.n(l),
   a = n(392711),
@@ -208,6 +208,7 @@ let en = q.ZP.getEnableHardwareAcceleration(),
           selected: P,
           itemProps: I,
           nameplate: O,
+          hideTooltip: E,
           onClick: e => {
             e.shiftKey ? null == A || A() : S(e => !e)
           },

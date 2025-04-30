@@ -4,10 +4,10 @@ n.d(t, {
   D: () => S,
   Z: () => A
 });
-var r = n(255367),
-  i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+var r = n(200651),
+  i = n(192379),
+  o = n(120356),
+  a = n.n(o),
   s = n(124347),
   l = n(80966),
   c = n(480050),
@@ -63,8 +63,8 @@ function v(e, t) {
   if (null == e) return {};
   var n, r, i = I(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -72,8 +72,8 @@ function v(e, t) {
 function I(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -86,7 +86,7 @@ function T(e) {
   let t, {
       media: n,
       obscured: i = !1,
-      maxWidth: a,
+      maxWidth: o,
       maxHeight: u,
       onContextMenu: f
     } = e,
@@ -116,7 +116,7 @@ function T(e) {
       src: L,
       width: p,
       height: E,
-      maxWidth: a,
+      maxWidth: o,
       maxHeight: u,
       poster: e,
       naturalWidth: p,
@@ -135,7 +135,7 @@ function T(e) {
     src: L,
     width: p,
     height: E,
-    maxWidth: a,
+    maxWidth: o,
     maxHeight: u,
     useFullWidth: !0,
     shouldLink: !1,
@@ -150,16 +150,16 @@ function T(e) {
     onContextMenu: f,
     className: g.dimensionlessImage,
     style: {
-      maxWidth: a,
+      maxWidth: o,
       maxHeight: u
     }
   })), null != t ? (0, r.jsx)(c.Z, {
     width: p,
     height: E,
-    maxWidth: a,
+    maxWidth: o,
     maxHeight: u,
     active: w,
-    className: o()(g.wrapper, {
+    className: a()(g.wrapper, {
       [g.zoomed]: w
     }),
     onClick: () => {

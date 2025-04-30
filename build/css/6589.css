@@ -1,6 +1,6 @@
 /**
   Module ID: 6589
-  Original File Name: 149390dbef27cf6e
+  Original File Name: ed8bf69129c8cd5d
 **/
 .label__33095 {
     gap: var(--spacing-8)
@@ -99,7 +99,7 @@
 }
 
 .ringing__3751b {
-    animation: outgoing-call-pulse__3751b 1s ease-out infinite;
+    animation: outgoing-call-pulse__3751b 1.25s ease-out infinite;
     opacity: .3
 }
 
@@ -125,4 +125,4 @@
     margin-right: 4px
 }
 
-/*# sourceMappingURL=149390dbef27cf6e.css.map*/
+/*# sourceMappingURL=ed8bf69129c8cd5d.css.map*/

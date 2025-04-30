@@ -6,10 +6,10 @@ n.d(t, {
 }), n(388685), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(415506), n(35282), n(781311);
 var r = n(392711),
   i = n.n(r),
-  a = n(31775),
-  o = n.n(a);
+  o = n(31775),
+  a = n.n(o);
 n(711739);
-var s = n(159635),
+var s = n(477660),
   l = n.n(s),
   c = n(830121),
   u = n(823379),
@@ -54,7 +54,7 @@ function m(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = new(o())({
+let g = new(a())({
   max: 50
 });
 
@@ -64,11 +64,11 @@ function E(e) {
   if (null != n) return n;
   let r = (0, f.yx)(e),
     i = (0, f.zq)(r),
-    a = {
+    o = {
       whitespaceSanitized: r,
       fullySanitized: i
     };
-  return g.set(t, a), a
+  return g.set(t, o), o
 }
 let b = ["http:", "https:", "discord:", "tel:", "sms:", "mailto:"],
   y = [d.b.TEXT, d.b.UNDERLINE, d.b.STRONG, d.b.ITALICS, d.b.STRIKETHROUGH, d.b.INLINE_CODE, d.b.SPOILER, d.b.LINE_BREAK, d.b.TIMESTAMP],
@@ -137,10 +137,10 @@ function N(e) {
     if (("http:" === r || "https:" === r) && (null == n.hostname || 0 === n.hostname.length)) throw Error("no hostname");
     let i = (0, f.MO)(n);
     n.username = "", n.password = "";
-    let a = (0, f.MO)(n);
+    let o = (0, f.MO)(n);
     return {
       target: i,
-      displayTarget: a
+      displayTarget: o
     }
   } catch (e) {
     return null
@@ -149,14 +149,14 @@ function N(e) {
 let C = m(p({}, l().defaultRules.link), {
   match: (e, t, n) => t.allowLinks ? l().defaultRules.link.match(e, t, n) : null,
   parse(e, t, n) {
-    let [r, a, o, s] = e, u = () => ({
+    let [r, o, a, s] = e, u = () => ({
       type: d.b.TEXT,
       content: r
-    }), f = E(o), _ = E(a), h = E(null != s ? s : ""), g = f.whitespaceSanitized, b = _.fullySanitized, C = h.fullySanitized, R = b.trim();
+    }), f = E(a), _ = E(o), h = E(null != s ? s : ""), g = f.whitespaceSanitized, b = _.fullySanitized, C = h.fullySanitized, R = b.trim();
     if (0 === g.trim().length || 0 === R.length) return u();
-    let P = N(l().unescapeUrl(o)),
+    let P = N(l().unescapeUrl(a)),
       w = null == P,
-      D = (0, c.ZP)(a).length > 0 || (0, c.ZP)(s).length > 0;
+      D = (0, c.ZP)(o).length > 0 || (0, c.ZP)(s).length > 0;
     if (w || D) return u();
     let L = m(p({}, n), {
         allowEscape: !1,

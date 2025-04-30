@@ -6,14 +6,14 @@ n || (t = function(e) {
   return !1
 });
 var i = n ? Map.prototype.has : null,
-  a = r ? Set.prototype.has : null;
+  o = r ? Set.prototype.has : null;
 t || i || (t = function(e) {
   return !1
 }), e.exports = t || function(e) {
   if (!e || "object" != typeof e) return !1;
   try {
-    if (i.call(e), a) try {
-      a.call(e)
+    if (i.call(e), o) try {
+      o.call(e)
     } catch (e) {
       return !0
     }

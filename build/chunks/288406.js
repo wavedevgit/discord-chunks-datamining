@@ -3,10 +3,10 @@
 n.d(t, {
   Z: () => E
 });
-var r = n(255367),
-  i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+var r = n(200651),
+  i = n(192379),
+  o = n(120356),
+  a = n.n(o),
   s = n(392711),
   l = n.n(s),
   c = n(481060),
@@ -18,16 +18,16 @@ var r = n(255367),
 let h = l().memoize(e => "".concat(e * _.DC.NonDiversityPerRow, "px ").concat(e * Math.ceil(u.ZP.numNonDiversitySprites / _.DC.NonDiversityPerRow), "px")),
   m = l().memoize(e => "".concat(e * _.DC.DiversityPerRow, "px ").concat(e * Math.ceil(u.ZP.numDiversitySprites / _.DC.DiversityPerRow), "px")),
   g = (e, t, r) => {
-    let i, a, o;
+    let i, o, a;
     if (!e.useSpriteSheet) return;
     let s = null != e.index ? e.index : 0;
-    e.hasDiversity ? (i = n(735800)("./spritesheet-".concat(t, "-").concat(r, ".png")), a = m(r), o = _.DC.DiversityPerRow) : (i = n(604901)("./spritesheet-emoji-".concat(r, ".png")), a = h(r), o = _.DC.NonDiversityPerRow);
-    let l = -s % o * r,
-      c = -Math.floor(s / o) * r;
+    e.hasDiversity ? (i = n(735800)("./spritesheet-".concat(t, "-").concat(r, ".png")), o = m(r), a = _.DC.DiversityPerRow) : (i = n(604901)("./spritesheet-emoji-".concat(r, ".png")), o = h(r), a = _.DC.NonDiversityPerRow);
+    let l = -s % a * r,
+      c = -Math.floor(s / a) * r;
     return {
       backgroundImage: "url('".concat(i, "')"),
       backgroundPosition: "".concat(l, "px ").concat(c, "px"),
-      backgroundSize: a,
+      backgroundSize: o,
       height: r,
       width: r
     }
@@ -36,7 +36,7 @@ let h = l().memoize(e => "".concat(e * _.DC.NonDiversityPerRow, "px ").concat(e 
     let {
       emoji: t,
       size: n,
-      surrogateCodePoint: a,
+      surrogateCodePoint: o,
       allowAnimatedEmoji: s,
       "aria-label": l,
       isLocked: u
@@ -57,10 +57,10 @@ let h = l().memoize(e => "".concat(e * _.DC.NonDiversityPerRow, "px ").concat(e 
         }) : null
       }
       return (0, r.jsx)("div", {
-        className: o()(p.emojiSpriteImage, {
+        className: a()(p.emojiSpriteImage, {
           [p.lockedEmoji]: u
         }),
-        style: g(t, a, n),
+        style: g(t, o, n),
         children: (0, r.jsx)(c.nn4, {
           children: l
         })

@@ -3,11 +3,11 @@
 n.d(t, {
   Z: () => E
 });
-var r = n(255367);
-n(73800);
+var r = n(200651);
+n(192379);
 var i = n(120356),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(481060),
   l = n(131388),
   c = n(607070),
@@ -22,7 +22,7 @@ let g = e => {
   let {
     className: t
   } = e;
-  return (0, o.e7)([c.Z], () => c.Z.useReducedMotion) ? (0, r.jsx)("img", {
+  return (0, a.e7)([c.Z], () => c.Z.useReducedMotion) ? (0, r.jsx)("img", {
     src: h.Z,
     className: t,
     alt: ""
@@ -46,15 +46,15 @@ function E(e) {
     step: t,
     onClose: n,
     isOrbCheckout: i
-  } = e, o = (0, l.Z)(f.X);
+  } = e, a = (0, l.Z)(f.X);
   return t === d.h8.BENEFITS || t === d.h8.CONFIRM ? null : (0, r.jsxs)("div", {
     className: _.headerContainer,
-    children: [!o && (0, r.jsx)("div", {
+    children: [!a && (0, r.jsx)("div", {
       className: _.headerImageContainer,
       "aria-hidden": "true",
       "data-accessibility": "desaturate",
       children: i ? (0, r.jsx)(g, {
-        className: a()(_.headerImage, _.orbCheckoutHeaderVideo)
+        className: o()(_.headerImage, _.orbCheckoutHeaderVideo)
       }) : (0, r.jsx)("img", {
         src: p,
         alt: "",

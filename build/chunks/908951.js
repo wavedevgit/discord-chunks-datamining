@@ -2,8 +2,8 @@
 n.d(t, {
   Z: () => y
 }), n(388685), n(415506);
-var i = n(255367),
-  r = n(73800),
+var i = n(200651),
+  r = n(192379),
   s = n(120356),
   l = n.n(s),
   a = n(512722),
@@ -40,24 +40,28 @@ function y(e) {
     disabled: R = !1
   } = e, D = (0, c.e7)([_.Z], () => _.Z.hidePersonalInformation), [Z, w] = (0, c.Wu)([x.Z], () => [x.Z.paymentSources, x.Z.hasFetchedPaymentSources]), k = (0, b.V)((0, O.yb)(t)), {
     analyticsLocations: L
-  } = (0, f.ZP)(), M = r.useMemo(() => Object.values(Z).filter(e => !e.invalid), [Z]), [B, U] = r.useState(!1), [V, G] = r.useState(t.currency), F = async (e, n) => {
+  } = (0, f.ZP)(), M = r.useMemo(() => Object.values(Z).filter(e => !e.invalid), [Z]), [B, U] = r.useState(!1), [V, G] = r.useState(t.currency), F = async (e, n, i) => {
     if (null == t) throw Error("missing subscription and paymentSource");
-    null == e ? await m.fG(t, n, L, y) : await m.tq(t, e, n, L, y), U(!1), G(n)
+    null == e ? await m.fG(t, n, i, L, y) : await m.tq(t, e, n, i, L, y), U(!1), G(n)
   }, H = async (e, n, i) => {
     U(!0);
     let r = await (0, S.hz)({
-      subscriptionId: t.id,
-      paymentSourceId: null == e ? void 0 : e.id,
-      renewal: !0,
-      currency: n,
-      analyticsLocations: L,
-      analyticsLocation: y
-    });
+        subscriptionId: t.id,
+        paymentSourceId: null == e ? void 0 : e.id,
+        renewal: !0,
+        currency: n,
+        analyticsLocations: L,
+        analyticsLocation: y
+      }),
+      s = {
+        amount: r.subtotal,
+        currency: r.currency
+      };
     P.currency !== r.currency || P.currency === r.currency && P.total !== r.total ? await A(r, () => {
-      i(e, n)
+      i(e, n, s)
     }, () => {
       U(!1)
-    }) : i(e, n)
+    }) : i(e, n, s)
   }, z = e => {
     let n = E.Z.get(t.planIdForCurrencies);
     o()(null != e, "paymentSource not specified for change"), o()(null != n, "Unable to fetch plan");

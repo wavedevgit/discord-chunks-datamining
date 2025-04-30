@@ -3,10 +3,10 @@
 n.d(t, {
   Z: () => I
 }), n(388685);
-var r = n(255367),
-  i = n(73800),
-  a = n(913527),
-  o = n.n(a),
+var r = n(200651),
+  i = n(192379),
+  o = n(913527),
+  a = n.n(o),
   s = n(442837),
   l = n(481060),
   c = n(11769),
@@ -61,7 +61,7 @@ function O(e, t) {
 function v(e) {
   let t, {
       isEnabled: n,
-      rateLimitPerUser: a,
+      rateLimitPerUser: o,
       isBypassSlowmode: s,
       slowmodeCooldownGuess: u,
       isRefreshChatInputEnabled: d,
@@ -78,9 +78,9 @@ function v(e) {
         _.S.unsubscribe(h.CkL.EMPHASIZE_SLOWMODE_COOLDOWN, e)
       }
     }, []), !n) return null;
-  let v = (0, c.k)(a);
+  let v = (0, c.k)(o);
   if (!s && u > 0) {
-    let e = o().duration(u);
+    let e = a().duration(u);
     if (u > p.Z.Millis.HOUR) {
       let n = "".concat(e.minutes()).padStart(2, "0"),
         r = "".concat(e.seconds()).padStart(2, "0");
@@ -114,13 +114,13 @@ function I(e) {
   let {
     channel: t,
     isThreadCreation: n = !1
-  } = e, i = (0, s.e7)([f.Z], () => f.Z.getSlowmodeCooldownGuess(t.id, n ? f.S.CreateThread : f.S.SendMessage)), a = (0, s.e7)([d.Z], () => n ? d.Z.can(h.Plq.MANAGE_THREADS, t) : d.Z.can(h.Plq.MANAGE_CHANNELS, t) || d.Z.can(h.Plq.MANAGE_MESSAGES, t)), {
-    rateLimitPerUser: o
-  } = t, l = o > 0, c = (0, u.R6)("SlowmodeIndicator"), _ = (0, u.Q3)("SlowmodeIndicator");
+  } = e, i = (0, s.e7)([f.Z], () => f.Z.getSlowmodeCooldownGuess(t.id, n ? f.S.CreateThread : f.S.SendMessage)), o = (0, s.e7)([d.Z], () => n ? d.Z.can(h.Plq.MANAGE_THREADS, t) : d.Z.can(h.Plq.MANAGE_CHANNELS, t) || d.Z.can(h.Plq.MANAGE_MESSAGES, t)), {
+    rateLimitPerUser: a
+  } = t, l = a > 0, c = (0, u.R6)("SlowmodeIndicator"), _ = (0, u.Q3)("SlowmodeIndicator");
   return (0, r.jsx)(v, {
     isEnabled: l,
-    rateLimitPerUser: o,
-    isBypassSlowmode: a,
+    rateLimitPerUser: a,
+    isBypassSlowmode: o,
     slowmodeCooldownGuess: i,
     isRefreshChatInputEnabled: c,
     isRefreshEnabled: _

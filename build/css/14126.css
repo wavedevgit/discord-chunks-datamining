@@ -1,6 +1,6 @@
 /**
   Module ID: 14126
-  Original File Name: c9cf14d7be0bb7bf
+  Original File Name: 4264a61fdf30cdfb
 **/
 .confirmModal__1b38b {
     align-items: center;
@@ -73,7 +73,7 @@
 }
 
 .ringing__3751b {
-    animation: outgoing-call-pulse__3751b 1s ease-out infinite;
+    animation: outgoing-call-pulse__3751b 1.25s ease-out infinite;
     opacity: .3
 }
 
@@ -99,4 +99,4 @@
     margin-right: 4px
 }
 
-/*# sourceMappingURL=c9cf14d7be0bb7bf.css.map*/
+/*# sourceMappingURL=4264a61fdf30cdfb.css.map*/

@@ -1,24 +1,24 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  B: () => o
+  B: () => a
 });
-var r = n(255367);
-n(73800);
+var r = n(200651);
+n(192379);
 var i = n(481060),
-  a = n(576335);
+  o = n(576335);
 
-function o(e) {
+function a(e) {
   let {
     onClick: t
   } = e;
   return (0, r.jsx)(i.P3F, {
-    className: a.closeButton,
+    className: o.closeButton,
     onClick: t,
     children: (0, r.jsx)(i.k$p, {
       size: "md",
       color: "currentColor",
-      className: a.closeIcon
+      className: o.closeIcon
     })
   })
 }

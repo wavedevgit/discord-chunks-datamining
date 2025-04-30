@@ -3,8 +3,8 @@
 n.d(t, {
   Y$: () => i,
   a8: () => s,
-  jS: () => a,
-  tZ: () => o
+  jS: () => o,
+  tZ: () => a
 });
 var r = n(570140);
 
@@ -14,14 +14,14 @@ function i() {
   })
 }
 
-function a(e) {
+function o(e) {
   r.Z.dispatch({
     type: "DEVELOPER_ACTIVITY_SHELF_SET_ACTIVITY_URL_OVERRIDE",
     activityUrlOverride: e
   })
 }
 
-function o(e) {
+function a(e) {
   r.Z.dispatch({
     type: "DEVELOPER_ACTIVITY_SHELF_MARK_ACTIVITY_USED",
     applicationId: e,

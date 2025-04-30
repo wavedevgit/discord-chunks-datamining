@@ -5,13 +5,13 @@ n.d(t, {
 }), n(415506);
 var r = n(259443),
   i = n(668757),
-  a = n(626135),
-  o = n(960048),
+  o = n(626135),
+  a = n(960048),
   s = n(981631);
 let l = new r.Yd("libdiscore");
 
 function c() {
-  a.default.track(s.rMx.LIBDISCORE_LOADED, {
+  o.default.track(s.rMx.LIBDISCORE_LOADED, {
     success: !0
   })
 }
@@ -23,9 +23,9 @@ function u(e) {
 }
 
 function d(e) {
-  l.error("Failed to execute smoke test:", e), e instanceof Error && o.Z.captureException(e);
+  l.error("Failed to execute smoke test:", e), e instanceof Error && a.Z.captureException(e);
   let t = u(e);
-  a.default.track(s.rMx.LIBDISCORE_LOADED, {
+  o.default.track(s.rMx.LIBDISCORE_LOADED, {
     success: !1,
     error: t
   })

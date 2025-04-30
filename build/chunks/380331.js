@@ -3,10 +3,10 @@
 n.d(t, {
   Z: () => z
 }), n(388685);
-var r = n(255367),
-  i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+var r = n(200651),
+  i = n(192379),
+  o = n(120356),
+  a = n.n(o),
   s = n(392711),
   l = n.n(s),
   c = n(91192),
@@ -87,7 +87,7 @@ function K(e) {
   let {
     activeIndex: t,
     categoryIndex: n,
-    analyticsContext: a,
+    analyticsContext: o,
     categories: s,
     category: l,
     handleCategorySelect: u,
@@ -95,7 +95,7 @@ function K(e) {
     useReducedMotion: _
   } = e, p = (0, c.JA)("expression-guild-".concat(n)), h = l.type === T.En.GUILD ? null : l.id, m = t === n, E = l.type === T.En.GUILD ? l.guild : null, y = (0, r.jsxs)(f.P3F, L(w({}, p), {
     "aria-label": (0, O.Nf)(l, E),
-    className: o()({
+    className: a()({
       [R.categoryItemGuildCategory]: null != E,
       [R.categoryItemDefaultCategory]: null == E,
       [R.categoryItemDefaultCategorySelected]: null == E && m,
@@ -103,7 +103,7 @@ function K(e) {
     }),
     onClick: () => {
       null != E && b.default.track(A.rMx.EXPRESSION_PICKER_CATEGORY_SELECTED, {
-        location: null == a ? void 0 : a.location,
+        location: null == o ? void 0 : o.location,
         tab: N.X1.EMOJI,
         guild_id: E.id
       }), u(n)
@@ -137,12 +137,12 @@ let z = e => {
   let {
     className: t,
     emojiListRef: n,
-    sectionDescriptors: a,
+    sectionDescriptors: o,
     intention: s,
     channel: c,
     shouldShowSoundmojiInEmojiPicker: d = !1
   } = e, g = h.kJ.useStore(e => e.activeCategoryIndex), b = (0, S.Ni)({
-    sectionDescriptors: a,
+    sectionDescriptors: o,
     emojiListRef: n
   }), y = (0, _.O)(), v = (0, O.kI)(s, c, null == c ? void 0 : c.guild_id, d), I = i.useRef(null), A = (0, u.e7)([E.Z], () => E.Z.isFocused()), N = (0, u.e7)([p.Z], () => p.Z.useReducedMotion, []), P = i.useMemo(() => l().memoize((e, t) => {
     let n = v[t];
@@ -231,7 +231,7 @@ let z = e => {
     children: e => L >= W && (0, r.jsx)(f.P3F, {
       "aria-hidden": !q,
       "aria-label": C.intl.string(C.t.dT0ct7),
-      className: o()(R.unicodeShortcut, {
+      className: a()(R.unicodeShortcut, {
         [R.unicodeShortcutInvisible]: !q
       }),
       tabIndex: q ? 0 : -1,

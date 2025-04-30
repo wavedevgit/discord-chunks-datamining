@@ -3,10 +3,10 @@
 n.d(t, {
   Z: () => h
 }), n(388685);
-var r = n(255367),
-  i = n(73800),
-  a = n(505266),
-  o = n(675654);
+var r = n(200651),
+  i = n(192379),
+  o = n(995899),
+  a = n(675654);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -51,7 +51,7 @@ let d = 50,
   _ = 100;
 
 function p(e, t) {
-  return t = null != t ? t : 1, u(l({}, o.We), {
+  return t = null != t ? t : 1, u(l({}, a.We), {
     position: {
       type: "static-random",
       minValue: {
@@ -87,7 +87,7 @@ let h = function(e) {
     confettiVelocityMultiplier: s,
     sprites: l,
     colors: c
-  } = e, [u, h] = i.useState(null), m = (0, a.uR)(n, u), [g, E] = i.useState(!1);
+  } = e, [u, h] = i.useState(null), m = (0, o.uR)(n, u), [g, E] = i.useState(!1);
   return i.useEffect(() => {
     let e = Array(f).fill(0);
     return null != t && m.isReady && !g && (e = e.map((n, r) => setTimeout(() => {
@@ -95,11 +95,11 @@ let h = function(e) {
     }, r * _))), () => {
       for (let t of e) clearTimeout(t)
     }
-  }, [m, t, g, s]), (0, r.jsx)(a.Ji, {
+  }, [m, t, g, s]), (0, r.jsx)(o.Ji, {
     ref: h,
-    sprites: null != l ? l : o.CA,
-    colors: null != c ? c : o.Br,
-    spriteWidth: o.Ko,
-    spriteHeight: o.Ko
+    sprites: null != l ? l : a.CA,
+    colors: null != c ? c : a.Br,
+    spriteWidth: a.Ko,
+    spriteHeight: a.Ko
   })
 }

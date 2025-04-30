@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  V: () => a
+  V: () => o
 });
 var r = n(131704),
   i = n(981631);
-let a = "131";
+let o = "131";
 (0, r.kt)({
-  id: a,
+  id: o,
   type: i.d4z.DM,
   name: "Placeholder Channel"
 })

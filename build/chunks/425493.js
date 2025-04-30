@@ -3,11 +3,11 @@
 n.d(t, {
   Z: () => d
 });
-var r = n(255367);
-n(73800);
+var r = n(200651);
+n(192379);
 var i = n(120356),
-  a = n.n(i),
-  o = n(873546),
+  o = n.n(i),
+  a = n(873546),
   s = n(481060),
   l = n(388032),
   c = n(594619),
@@ -23,9 +23,9 @@ function d(e) {
     className: u
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(c.container, u),
+    className: o()(c.container, u),
     children: [(0, r.jsx)(s.P3F, {
-      className: a()(c.closeButton, {
+      className: o()(c.closeButton, {
         [c.closeButtonBold]: "Bold" === n,
         [c.closeButtonSolid]: "Solid" === n
       }),
@@ -40,7 +40,7 @@ function d(e) {
         color: "currentColor",
         "aria-hidden": !0
       })
-    }), o.tq ? null : (0, r.jsx)("div", {
+    }), a.tq ? null : (0, r.jsx)("div", {
       className: c.keybind,
       "aria-hidden": !0,
       children: i

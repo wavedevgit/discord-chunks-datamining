@@ -3,10 +3,10 @@
 n.d(t, {
   Z: () => y
 }), n(388685);
-var r = n(255367),
-  i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+var r = n(200651),
+  i = n(192379),
+  o = n(120356),
+  a = n.n(o),
   s = n(481060),
   l = n(297700),
   c = n(665786),
@@ -78,7 +78,7 @@ class b extends i.PureComponent {
   renderBadge(e, t, n) {
     let {
       className: i,
-      badgeStrokeColor: a,
+      badgeStrokeColor: o,
       tooltipColor: c = s.ua7.Colors.BRAND,
       tooltipPosition: u,
       tooltipDelay: d,
@@ -94,14 +94,14 @@ class b extends i.PureComponent {
       text: y,
       children: s => {
         if (5 !== e && 4 !== e) return (0, r.jsx)(l.Z, g(h({}, s), {
-          className: o()(n, i),
+          className: a()(n, i),
           flowerStarClassName: b,
           color: p,
-          stroke: a,
+          stroke: o,
           size: f,
           children: (0, r.jsx)(t, {
             size: "xxs",
-            className: o()(_.icon, m),
+            className: a()(_.icon, m),
             color: "currentColor"
           })
         }));
@@ -111,10 +111,10 @@ class b extends i.PureComponent {
             height: f
           };
           return (0, r.jsx)("div", g(h({}, s), {
-            className: o()(n, i),
+            className: a()(n, i),
             style: e,
             children: (0, r.jsx)(t, {
-              className: o()(_.icon, m),
+              className: a()(_.icon, m),
               color: "currentColor"
             })
           }))

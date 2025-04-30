@@ -1,6 +1,6 @@
 /**
   Module ID: 74028
-  Original File Name: 99d59c5c456985b9
+  Original File Name: a2d267f112a6993a
 **/
 .menu__43313 {
     max-height: 70vh
@@ -2370,7 +2370,7 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .ringing__07f91 {
-    animation: outgoing-call-pulse__07f91 1s ease-out infinite;
+    animation: outgoing-call-pulse__07f91 1.25s ease-out infinite;
     opacity: .3
 }
 
@@ -2415,4 +2415,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     color: CanvasText
 }
 
-/*# sourceMappingURL=99d59c5c456985b9.css.map*/
+/*# sourceMappingURL=a2d267f112a6993a.css.map*/

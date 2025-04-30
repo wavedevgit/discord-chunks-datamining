@@ -3,10 +3,10 @@
 n.d(t, {
   Z: () => c
 }), n(388685);
-var r = n(255367),
-  i = n(73800),
-  a = n(376398),
-  o = n(825040);
+var r = n(200651),
+  i = n(192379),
+  o = n(376398),
+  a = n(825040);
 
 function s(e) {
   null != e && e.getTracks().forEach(e => e.stop())
@@ -48,7 +48,7 @@ function c(e) {
       height: c,
       disabled: u
     }).then(e => {
-      let t = null != e ? (0, a.N7)(e) : null;
+      let t = null != e ? (0, o.N7)(e) : null;
       return f(t), {
         stream: e,
         streamId: t
@@ -60,7 +60,7 @@ function c(e) {
           stream: t,
           streamId: n
         } = e;
-        s(t), null != n && (0, a.jC)(n)
+        s(t), null != n && (0, o.jC)(n)
       })
     }
   }, [t, n, c, u]), null == d ? (0, r.jsx)("div", {
@@ -69,7 +69,7 @@ function c(e) {
       width: n,
       height: c
     }
-  }) : (0, r.jsx)(o.Z, {
+  }) : (0, r.jsx)(a.Z, {
     streamId: d,
     style: {
       width: n,
