@@ -171,10 +171,11 @@ function h(e) {
     onSelectInteraction: M
   });
   return (0, n.jsxs)(l.Fragment, {
-    children: [(0, n.jsxs)("div", {
+    children: [(0, n.jsx)("div", {
       className: b.container,
-      children: [(0, n.jsx)(a.PhF, O({
-        isDisabled: v || C,
+      children: (0, n.jsx)(a.PhF, O({
+        isProcessing: I,
+        isDisabled: v || w === p.gH.DISABLED || C,
         className: b.select,
         options: r.map(e => m(O({}, e), {
           disabled: N && !Z.has(e.value) && Z.size === c
@@ -192,13 +193,7 @@ function h(e) {
         renderOptionValue: e => N ? (0, n.jsx)(g, {
           options: e
         }) : (0, n.jsx)(j, O({}, e[0]))
-      }, U)), I ? (0, n.jsx)("div", {
-        className: b.__invalid_loading,
-        children: (0, n.jsx)(a.bbz, {
-          dotRadius: 3.5,
-          themed: !0
-        })
-      }) : null]
+      }, U))
     }), null != E ? (0, n.jsx)(u.st, m(O({}, (0, u.c4)(E)), {
       className: b.error
     })) : null]

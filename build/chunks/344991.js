@@ -99,7 +99,8 @@ function g(e) {
   }, [w, E, k, I, z]);
   let B = 0 === I.size || w,
     W = {
-      isDisabled: S || H,
+      isProcessing: F,
+      isDisabled: S || U === p.gH.DISABLED || H,
       wrapperClassName: b.select,
       options: e => new Promise(t => {
         t(o(e))
@@ -122,9 +123,9 @@ function g(e) {
       renderOptionLabel: g
     };
   return (0, l.jsxs)(i.Fragment, {
-    children: [(0, l.jsxs)("div", {
+    children: [(0, l.jsx)("div", {
       className: b.container,
-      children: [x > 1 ? (0, l.jsx)(c.VcW, m({
+      children: x > 1 ? (0, l.jsx)(c.VcW, m({
         className: b.badges,
         value: Array.from(I.values()),
         onChange: e => {
@@ -146,13 +147,7 @@ function g(e) {
         ]) : new Map),
         clearable: !0,
         centerCaret: !0
-      }, W), R), F ? (0, l.jsx)("div", {
-        className: b.loading,
-        children: (0, l.jsx)(c.bbz, {
-          dotRadius: 3.5,
-          themed: !0
-        })
-      }) : null]
+      }, W), R)
     }), null != G ? (0, l.jsx)(u.st, (t = m({}, (0, u.c4)(G)), r = r = {
       className: O.error
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

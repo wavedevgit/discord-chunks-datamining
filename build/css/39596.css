@@ -1,6 +1,6 @@
 /**
   Module ID: 39596
-  Original File Name: 3d10fcce79e18005
+  Original File Name: 6c8afef3ffa1569d
 **/
 .container__4216d {
     align-items: center;
@@ -436,11 +436,7 @@
 .select__81a06 {
     border-radius: 4px;
     max-width: 400px;
-    width: 90%
-}
-
-.loading__81a06 {
-    padding-left: 16px
+    width: 400px
 }
 
 .iconContainer__81a06 {
@@ -479,10 +475,9 @@
 }
 
 .select_b08511 {
-    margin-right: 16px;
     max-width: 400px;
     padding: 8px!important;
-    width: 90%
+    width: 400px
 }
 
 .selectOption_b08511 {
@@ -1272,4 +1267,4 @@
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=3d10fcce79e18005.css.map*/
+/*# sourceMappingURL=6c8afef3ffa1569d.css.map*/

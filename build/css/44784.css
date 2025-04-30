@@ -1,6 +1,6 @@
 /**
   Module ID: 44784
-  Original File Name: 6edf23354e87e2df
+  Original File Name: 4bda1a8896a00d0e
 **/
 .scroller__95bea {
     display: flex;
@@ -765,7 +765,7 @@
 }
 
 .heading_be87fd {
-    color: var(--text-tertiary)
+    color: var(--text-default)
 }
 
 .scroller__764cd {
@@ -1086,8 +1086,7 @@
 }
 
 .backdrop__9c3be,.profile__9c3be {
-    border-top-left-radius: var(--radius-lg);
-    border-top-right-radius: var(--radius-lg)
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0
 }
 
 .profile__9c3be {
@@ -1150,7 +1149,7 @@
 }
 
 .profileHeading__9c3be {
-    color: var(--text-tertiary)
+    color: var(--text-default)
 }
 
 .profileConnections__9c3be {
@@ -1195,4 +1194,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=6edf23354e87e2df.css.map*/
+/*# sourceMappingURL=4bda1a8896a00d0e.css.map*/

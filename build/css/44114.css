@@ -1,6 +1,6 @@
 /**
   Module ID: 44114
-  Original File Name: 11e98b7cebe30ded
+  Original File Name: 95218560a16ee2dd
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -11443,6 +11443,12 @@ html .invoiceCancelRow_b9f95d {
     margin-bottom: 4px
 }
 
+.container__28435 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+}
+
 .clickable__2debe {
     cursor: pointer;
     display: flex
@@ -18542,4 +18548,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=11e98b7cebe30ded.css.map*/
+/*# sourceMappingURL=95218560a16ee2dd.css.map*/

@@ -44,14 +44,14 @@ function p(e) {
     user: l,
     currentUser: p,
     displayProfile: m,
-    guildId: b,
-    channelId: _,
-    initialSection: h,
-    initialSubsection: y,
-    onClose: g
+    guildId: _,
+    channelId: b,
+    initialSection: y,
+    initialSubsection: h,
+    onClose: x
   } = e, {
-    trackUserProfileAction: x
-  } = (0, a.KZ)(), j = r.useMemo(() => l.id === p.id ? [{
+    trackUserProfileAction: j
+  } = (0, a.KZ)(), g = r.useMemo(() => l.id === p.id ? [{
     section: s.oh.ACTIVITY,
     text: d.intl.string(d.t.chq59f),
     subsection: void 0
@@ -84,13 +84,13 @@ function p(e) {
       })
     }
     return e
-  }({}, null != (n = j.find(e => {
+  }({}, null != (n = g.find(e => {
     let {
       section: n
     } = e;
-    return n === h
-  })) ? n : j[0]), i = i = {
-    subsection: y
+    return n === y
+  })) ? n : g[0]), i = i = {
+    subsection: h
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -108,15 +108,15 @@ function p(e) {
       className: u.tabBar,
       selectedItem: I,
       onItemSelect: e => {
-        x({
+        j({
           action: "PRESS_SECTION",
           section: e
         }), P(n => {
           var t;
-          return null != (t = j.find(n => n.section === e)) ? t : n
+          return null != (t = g.find(n => n.section === e)) ? t : n
         })
       },
-      children: j.map(e => (0, o.jsx)(c.njP.Item, {
+      children: g.map(e => (0, o.jsx)(c.njP.Item, {
         className: u.tabBarItem,
         id: e.section,
         "aria-label": e.text,
@@ -133,11 +133,11 @@ function p(e) {
         user: l,
         currentUser: p,
         displayProfile: m,
-        guildId: b,
-        channelId: _,
+        guildId: _,
+        channelId: b,
         section: I,
         subsection: O,
-        onClose: g
+        onClose: x
       })
     })]
   })
