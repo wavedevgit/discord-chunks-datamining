@@ -1,33 +1,24 @@
-/** Chunk was on 74824 **/
+/** Chunk was on 1272 **/
 n.d(t, {
-  Ei: () => c,
-  He: () => a,
-  es: () => s
+  He: () => a
 });
-var r = n(544891),
-  l = n(570140),
-  i = n(960048),
-  o = n(981631);
-
-function s(e) {
-  l.Z.dispatch({
-    type: "BILLING_SUBSCRIPTION_REWARD_ELIGIBILITY_FETCH_SUCCESS",
-    eligible: e
-  })
-}
+var r = n(544891);
+n(570140);
+var i = n(960048),
+  l = n(981631);
 async function a(e) {
   let {
     userTrialOffer: t,
     userDiscount: n,
-    userDiscountOffer: l
+    userDiscountOffer: a
   } = e;
   try {
     let e = await r.tn.post({
-      url: o.ANM.PREMIUM_MARKETING,
+      url: l.ANM.PREMIUM_MARKETING,
       body: {
         user_trial_offer: t,
         user_discount: n,
-        user_discount_offer: l
+        user_discount_offer: a
       },
       rejectWithError: !0
     });
@@ -35,26 +26,5 @@ async function a(e) {
     return i.Z.captureMessage("fetchPremiumMarketingContentWithUserOffer failed"), []
   } catch (e) {
     return []
-  }
-}
-async function c(e) {
-  let {
-    subscriptionId: t,
-    rewardSkuIds: n
-  } = e;
-  try {
-    let e = await r.tn.post({
-      url: o.ANM.BILLING_SUBSCRIPTION_REWARDS(t),
-      body: {
-        reward_sku_ids: n
-      },
-      rejectWithError: !0
-    });
-    return l.Z.dispatch({
-      type: "ENTITLEMENT_CREATE",
-      entitlement: e.body
-    }), e.ok
-  } catch (e) {
-    return !1
   }
 }
