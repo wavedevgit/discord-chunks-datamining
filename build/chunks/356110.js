@@ -19,9 +19,9 @@ let s = e => {
     let u = t.name,
       {
         title: m,
-        options: x
+        options: p
       } = t.data,
-      p = l.useCallback(e => {
+      x = l.useCallback(e => {
         null != e && (d(e), n(e))
       }, [n]);
     return (0, r.jsxs)("div", {
@@ -37,8 +37,8 @@ let s = e => {
         })
       }), (0, r.jsx)(i.q4e, {
         value: c,
-        onChange: p,
-        options: x
+        onChange: x,
+        options: p
       })]
     }, u)
   },

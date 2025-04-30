@@ -22,7 +22,7 @@ function m(e) {
         is_localized: m
       }
     }
-  } = e, [x, p] = l.useState(!1), b = l.useRef(s.Z.reactParserFor(s.Z.defaultRules));
+  } = e, [p, x] = l.useState(!1), b = l.useRef(s.Z.reactParserFor(s.Z.defaultRules));
   return m ? (0, r.jsxs)("div", {
     className: u.container,
     children: [(0, r.jsx)(o.X6q, {
@@ -37,7 +37,7 @@ function m(e) {
     }), (0, r.jsx)("div", {
       children: (0, r.jsxs)("div", {
         className: a()(u.smsNumberContainer, {
-          [u.copied]: x
+          [u.copied]: p
         }),
         children: [(0, r.jsx)(o.Text, {
           variant: "text-md/normal",
@@ -48,10 +48,10 @@ function m(e) {
           size: o.zxk.Sizes.SMALL,
           className: u.__invalid_trailingButton,
           onClick: () => {
-            (0, c.JG)(i, () => p(!0))
+            (0, c.JG)(i, () => x(!0))
           },
           color: o.zxk.Colors.PRIMARY,
-          children: x ? d.intl.string(d.t["t5VZ8/"]) : d.intl.string(d.t.OpuAlJ)
+          children: p ? d.intl.string(d.t["t5VZ8/"]) : d.intl.string(d.t.OpuAlJ)
         })]
       })
     })]

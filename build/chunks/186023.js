@@ -12,16 +12,16 @@ var r = n(200651),
   d = n(82554),
   u = n(185625),
   m = n(255514),
-  x = n(981631),
-  p = n(864012);
+  p = n(981631),
+  x = n(864012);
 let b = e => {
   let {
     reportType: t,
     menu: n,
     modalProps: b,
     onSubmit: _,
-    onNavigate: h,
-    emailToken: f,
+    onNavigate: f,
+    emailToken: h,
     isAuthenticated: g = !0
   } = e, v = (0, s.Dt)(), {
     nodes: j,
@@ -65,9 +65,9 @@ let b = e => {
     })(Object(l)).forEach(function(e) {
       Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
     }), r));
-    if (E([...k, e]), null != u.key && (null == h || h(u.key)), P(void 0), T(void 0), t.name === d.b.MESSAGE || t.name === d.b.FIRST_DM) {
+    if (E([...k, e]), null != u.key && (null == f || f(u.key)), P(void 0), T(void 0), t.name === d.b.MESSAGE || t.name === d.b.FIRST_DM) {
       let e = t.record.id;
-      o.ZP.trackWithMetadata(x.rMx.IAR_NAVIGATE, {
+      o.ZP.trackWithMetadata(p.rMx.IAR_NAVIGATE, {
         message_id: e,
         content_type: t.name,
         report_sub_type: u.report_type,
@@ -78,7 +78,7 @@ let b = e => {
     C(s)
   }, L = async e => {
     var r;
-    let l = g ? await (0, u.ZD)(n, t, [...k, e]) : await (0, u.fw)(n, t, [...k, e], f),
+    let l = g ? await (0, u.ZD)(n, t, [...k, e]) : await (0, u.fw)(n, t, [...k, e], h),
       i = null == l || null == (r = l.body) ? void 0 : r.report_id;
     null != i && R(i), A(j[e.nodeRef].report_type), null == _ || _(i)
   }, B = () => {
@@ -89,7 +89,7 @@ let b = e => {
       i = null != (n = null == l ? void 0 : l.nodeRef) ? n : y;
     if (t.name === d.b.MESSAGE || t.name === d.b.FIRST_DM) {
       let e = t.record.id;
-      o.ZP.trackWithMetadata(x.rMx.IAR_NAVIGATE, {
+      o.ZP.trackWithMetadata(p.rMx.IAR_NAVIGATE, {
         message_id: e,
         content_type: t.name,
         report_sub_type: j[i].report_type,
@@ -97,7 +97,7 @@ let b = e => {
         next_node: j[i].id
       })
     }
-    P(null == l || null == (e = l.multiSelect) ? void 0 : e.state), T(null == l ? void 0 : l.textInput), C(i), E(r), null == h || h("..")
+    P(null == l || null == (e = l.multiSelect) ? void 0 : e.state), T(null == l ? void 0 : l.textInput), C(i), E(r), null == f || f("..")
   }, z = l.useMemo(() => {
     let e = [],
       t = [];
@@ -127,7 +127,7 @@ let b = e => {
       children: z.map(e => (0, r.jsx)(a.Mi4, {
         id: e.id,
         children: (0, r.jsx)("div", {
-          className: p.slideContainer,
+          className: x.slideContainer,
           children: (0, r.jsx)(m.Z, {
             node: e,
             reportType: t,
