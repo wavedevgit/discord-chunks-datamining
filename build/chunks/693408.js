@@ -1,13 +1,13 @@
 /** Chunk was on 44784 **/
 t.d(n, {
-  Z: () => a
+  Z: () => i
 });
 var o = t(200651);
 t(192379);
 var r = t(678738),
   c = t(362258);
 
-function a(e) {
+function i(e) {
   return (0, o.jsx)(r.Z, function(e) {
     for (var n = 1; n < arguments.length; n++) {
       var t = null != arguments[n] ? arguments[n] : {},

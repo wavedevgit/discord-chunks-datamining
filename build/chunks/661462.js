@@ -5,11 +5,11 @@ t.d(n, {
 var o = t(200651),
   r = t(192379),
   c = t(481060),
-  a = t(785717),
-  i = t(128156),
-  l = t(210788),
-  s = t(228168),
-  d = t(388032),
+  i = t(785717),
+  a = t(128156),
+  l = t(311044),
+  s = t(408986),
+  d = t(228168),
   u = t(662776);
 
 function f(e) {
@@ -18,56 +18,48 @@ function f(e) {
     currentUser: t,
     section: r,
     subsection: c,
-    displayProfile: a,
-    guildId: d,
-    channelId: u,
-    onClose: f
+    displayProfile: i,
+    guildId: u,
+    channelId: f,
+    onClose: p
   } = e;
-  return r === s.oh.ACTIVITY ? (0, o.jsx)(i.Z, {
+  return r === d.oh.ACTIVITY ? (0, o.jsx)(a.Z, {
     user: n,
     currentUser: t,
-    displayProfile: a,
-    guildId: d,
+    displayProfile: i,
+    guildId: u,
     subsection: c,
-    onClose: f
-  }) : r === s.oh.MUTUALS ? (0, o.jsx)(l.Z, {
+    onClose: p
+  }) : r === d.oh.MUTUAL_FRIENDS ? (0, o.jsx)(l.Z, {
     user: n,
-    guildId: d,
-    channelId: u,
-    onClose: f
+    guildId: u,
+    channelId: f,
+    onClose: p
+  }) : r === d.oh.MUTUAL_GUILDS ? (0, o.jsx)(s.Z, {
+    user: n,
+    onClose: p
   }) : null
 }
 
 function p(e) {
-  var n, t, i;
+  var n, t, a;
   let {
     user: l,
-    currentUser: p,
-    displayProfile: m,
-    guildId: _,
-    channelId: b,
-    initialSection: y,
-    initialSubsection: h,
-    onClose: x
+    currentUser: s,
+    displayProfile: d,
+    guildId: p,
+    channelId: m,
+    items: b,
+    initialSection: _,
+    initialSubsection: y,
+    onClose: h
   } = e, {
     trackUserProfileAction: j
-  } = (0, a.KZ)(), g = r.useMemo(() => l.id === p.id ? [{
-    section: s.oh.ACTIVITY,
-    text: d.intl.string(d.t.chq59f),
-    subsection: void 0
-  }] : [{
-    section: s.oh.ACTIVITY,
-    text: d.intl.string(d.t.chq59f),
-    subsection: void 0
-  }, {
-    section: s.oh.MUTUALS,
-    text: d.intl.string(d.t.f5KLNj),
-    subsection: void 0
-  }], [l.id, p.id]), [{
-    section: I,
-    subsection: O,
-    text: v
-  }, P] = r.useState((t = function(e) {
+  } = (0, i.KZ)(), [{
+    section: x,
+    subsection: g,
+    text: I
+  }, O] = r.useState((t = function(e) {
     for (var n = 1; n < arguments.length; n++) {
       var t = null != arguments[n] ? arguments[n] : {},
         o = Object.keys(t);
@@ -84,39 +76,39 @@ function p(e) {
       })
     }
     return e
-  }({}, null != (n = g.find(e => {
+  }({}, null != (n = b.find(e => {
     let {
       section: n
     } = e;
-    return n === y
-  })) ? n : g[0]), i = i = {
-    subsection: h
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, n) {
+    return n === _
+  })) ? n : b[0]), a = a = {
+    subsection: y
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(a)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
       var o = Object.getOwnPropertySymbols(e);
       t.push.apply(t, o)
     }
     return t
-  })(Object(i)).forEach(function(e) {
-    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
+  })(Object(a)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(a, e))
   }), t));
   return (0, o.jsxs)("div", {
     className: u.container,
     children: [(0, o.jsx)(c.njP, {
       type: "top",
       className: u.tabBar,
-      selectedItem: I,
+      selectedItem: x,
       onItemSelect: e => {
         j({
           action: "PRESS_SECTION",
           section: e
-        }), P(n => {
+        }), O(n => {
           var t;
-          return null != (t = g.find(n => n.section === e)) ? t : n
+          return null != (t = b.find(n => n.section === e)) ? t : n
         })
       },
-      children: g.map(e => (0, o.jsx)(c.njP.Item, {
+      children: b.map(e => (0, o.jsx)(c.njP.Item, {
         className: u.tabBarItem,
         id: e.section,
         "aria-label": e.text,
@@ -126,18 +118,18 @@ function p(e) {
         })
       }, e.section))
     }), (0, o.jsx)(c.njP.Panel, {
-      id: I,
-      "aria-label": v,
+      id: x,
+      "aria-label": I,
       className: u.tabBarPanel,
       children: (0, o.jsx)(f, {
         user: l,
-        currentUser: p,
-        displayProfile: m,
-        guildId: _,
-        channelId: b,
-        section: I,
-        subsection: O,
-        onClose: x
+        currentUser: s,
+        displayProfile: d,
+        guildId: p,
+        channelId: m,
+        section: x,
+        subsection: g,
+        onClose: h
       })
     })]
   })

@@ -1,7 +1,7 @@
 /** Chunk was on 94928 **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => b
 });
 var r = n(200651),
   s = n(192379),
@@ -9,16 +9,17 @@ var r = n(200651),
   o = n.n(i),
   l = n(628238),
   a = n(367814),
-  c = n(492593),
-  u = n(25015),
-  d = n(963550),
-  f = n(845080),
-  p = n(30804);
-let g = s.memo(function(e) {
-  var t, n;
+  c = n(750030),
+  u = n(492593),
+  d = n(25015),
+  f = n(963550),
+  p = n(845080),
+  g = n(30804);
+let b = s.memo(function(e) {
+  var t;
   let {
-    message: i,
-    channel: g,
+    message: n,
+    channel: i,
     compact: b,
     className: m,
     isGroupStart: v,
@@ -27,9 +28,9 @@ let g = s.memo(function(e) {
     previewGuildId: _,
     preview: j,
     author: y
-  } = e, x = null != (t = null != _ ? _ : i.getGuildId()) ? t : void 0, S = (0, a.Z)(y), C = (0, l.A)((null != (n = i.editedTimestamp) ? n : i.timestamp).valueOf()), {
+  } = e, x = null != _ ? _ : (0, c.k)(n), S = (0, a.Z)(y), C = (0, l.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), {
     content: E
-  } = (0, u.Z)(i, {
+  } = (0, d.Z)(n, {
     hideSimpleEmbedContent: h,
     allowList: C,
     allowHeading: C,
@@ -37,7 +38,7 @@ let g = s.memo(function(e) {
     previewLinkTarget: !0
   }), P = s.useMemo(() => {
     var t, n;
-    return (0, f.Z)((t = function(e) {
+    return (0, p.Z)((t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -55,7 +56,7 @@ let g = s.memo(function(e) {
       }
       return e
     }({}, e), n = n = {
-      channel: g,
+      channel: i,
       guildId: x
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -67,16 +68,16 @@ let g = s.memo(function(e) {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
-  }, [e, g, x]);
-  return (0, r.jsx)(c.Z, {
+  }, [e, i, x]);
+  return (0, r.jsx)(u.Z, {
     compact: b,
     className: o()(m, {
-      [p.message]: !0,
-      [p.cozyMessage]: !b,
-      [p.groupStart]: v
+      [g.message]: !0,
+      [g.cozyMessage]: !b,
+      [g.groupStart]: v
     }),
     childrenHeader: P,
-    childrenMessageContent: (0, d.Z)(e, E),
+    childrenMessageContent: (0, f.Z)(e, E),
     disableInteraction: O,
     authorHasGradientRole: S,
     guildId: x,

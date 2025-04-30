@@ -103,9 +103,9 @@ let g = e => {
     if (null == n || null == x) return null;
     let {
       topic: y,
-      speaker_count: v,
-      participant_count: E
-    } = n, O = null != (t = n.members) ? t : [], j = _ ? O.slice(0, 3) : O, C = v - j.length;
+      speaker_count: E,
+      participant_count: v
+    } = n, O = null != (t = n.members) ? t : [], j = _ ? O.slice(0, 3) : O, C = E - j.length;
     return _ && (C += O.length - j.length), (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
         className: h.flex,
@@ -133,7 +133,7 @@ let g = e => {
           }), (0, r.jsx)(o.X6q, {
             className: a()(h.__invalid_label, h.listeners),
             variant: "heading-sm/semibold",
-            children: E
+            children: v
           })]
         })]
       }), _ && (0, r.jsxs)("div", {

@@ -20,8 +20,8 @@ var r, i = n(200651),
   b = n(283595),
   x = n(558314),
   y = n(55563),
-  v = n(551428),
-  E = n(73346),
+  E = n(551428),
+  v = n(73346),
   O = n(981631),
   j = n(388032),
   C = n(228016);
@@ -130,7 +130,7 @@ class I extends(r = l.Component) {
         sku: e
       } = this.props;
       if (null == e) throw Error("Should not be link to ApplicationStoreListing without SKU");
-      return (0, E.ZI)(e.id, {
+      return (0, v.ZI)(e.id, {
         slug: e.slug,
         analyticsSource: this.analyticsLocation
       })
@@ -200,7 +200,7 @@ class I extends(r = l.Component) {
 S(I, "defaultProps", {
   renderFallback: O.dG4
 });
-let N = [y.Z, x.Z, b.Z, v.Z];
+let N = [y.Z, x.Z, b.Z, E.Z];
 
 function T(e) {
   let {
@@ -211,7 +211,7 @@ function T(e) {
     application: r,
     fetchFailed: y.Z.didFetchingSkuFail(t),
     inLibrary: null != n && b.Z.hasApplication(n.applicationId, n.applicationId, !0),
-    storeListing: null != n ? v.Z.getForSKU(n.id) : null,
+    storeListing: null != n ? E.Z.getForSKU(n.id) : null,
     libraryApplication: null != n ? b.Z.getLibraryApplication(n.applicationId, n.applicationId, !0) : null
   }
 }

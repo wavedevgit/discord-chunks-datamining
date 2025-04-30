@@ -1,6 +1,6 @@
 /**
   Module ID: 44784
-  Original File Name: 4bda1a8896a00d0e
+  Original File Name: c9d8deeaa42759ba
 **/
 .scroller__95bea {
     display: flex;
@@ -937,47 +937,23 @@
     margin-right: .25rem
 }
 
-.container__28fdc {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    height: 100%;
-    overflow: hidden
-}
-
-.tabBar__28fdc {
-    display: flex;
-    flex: 0;
-    flex-direction: row;
-    gap: 8px
-}
-
-.tabBarItem__28fdc {
-    border: 1px solid var(--user-profile-border);
-    border-radius: var(--radius-sm)
-}
-
-.tabBarPanel__28fdc {
-    overflow: hidden
-}
-
-.scroller__28fdc {
+.scroller__9498a {
     gap: 12px;
     margin-left: -12px;
     padding-bottom: 12px
 }
 
-.empty__28fdc,.scroller__28fdc {
+.empty__9498a,.scroller__9498a {
     display: flex;
     flex-direction: column;
     height: 100%
 }
 
-.empty__28fdc {
+.empty__9498a {
     align-items: center
 }
 
-.emptyImage__28fdc {
+.emptyImage__9498a {
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -987,23 +963,15 @@
     width: 240px
 }
 
-.images-light .noMutualFriends__28fdc {
+.images-light .emptyImage__9498a {
     background-image: url(/assets/cee409b63b0cd907.svg)
 }
 
-.images-dark .noMutualFriends__28fdc {
+.images-dark .emptyImage__9498a {
     background-image: url(/assets/55d1dca921a75d17.svg)
 }
 
-.images-light .noMutualGuilds__28fdc {
-    background-image: url(/assets/44782635b911ed40.svg)
-}
-
-.images-dark .noMutualGuilds__28fdc {
-    background-image: url(/assets/1fc96c69951bfa5c.svg)
-}
-
-.loadingItem__28fdc {
+.loadingItem__9498a {
     align-items: center;
     display: flex;
     gap: 10px;
@@ -1011,22 +979,16 @@
     padding: 4px
 }
 
-.loadingItem__28fdc>:first-child {
+.loadingItem__9498a>:first-child {
+    border-radius: var(--radius-round);
     height: 40px;
     margin: 0
-}
-
-.loadingMutualFriend__28fdc>:first-child {
-    border-radius: var(--radius-round)
-}
-
-.loadingMutualGuild__28fdc>:first-child {
-    border-radius: var(--radius-lg)
 }
 
 .container__37bfc {
     flex-direction: column;
     overflow: hidden;
+    padding-top: 24px;
     width: 100%
 }
 
@@ -1043,11 +1005,16 @@
     padding-bottom: 11px
 }
 
+.visual-refresh .tabBar__37bfc .tabBarItem__37bfc {
+    margin-left: 0
+}
+
 .visual-refresh .tabBar__37bfc .tabBarItem__37bfc:after {
     background: var(--brand-500);
     border-radius: 1px;
     height: 3px;
-    left: 25%;
+    left: 50%;
+    margin-left: -20px;
     margin-top: -3px;
     width: 40px
 }
@@ -1194,4 +1161,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=4bda1a8896a00d0e.css.map*/
+/*# sourceMappingURL=c9d8deeaa42759ba.css.map*/

@@ -1,29 +1,29 @@
-/** Chunk was on 56549 **/
-n.d(t, {
+/** Chunk was on 84471 **/
+t.d(n, {
   Z: () => f
 });
-var l = n(200651);
-n(192379);
-var r = n(481060),
-  i = n(37234),
-  s = n(769654),
-  o = n(785717),
-  c = n(806729),
-  a = n(821179),
-  d = n(388032),
-  u = n(301150);
+var l = t(200651);
+t(192379);
+var r = t(481060),
+  i = t(37234),
+  s = t(769654),
+  o = t(785717),
+  a = t(806729),
+  c = t(821179),
+  d = t(388032),
+  u = t(301150);
 
 function f(e) {
   let {
-    user: t,
-    onClose: n
+    user: n,
+    onClose: t
   } = e, {
     trackUserProfileAction: f
   } = (0, o.KZ)(), {
     mutualGuilds: p,
     isFetching: h
-  } = (0, c.Z)(t), j = e => {
-    (0, s.X)(e), n(), (0, i.xf)()
+  } = (0, a.Z)(n), v = e => {
+    (0, s.X)(e), t(), (0, i.xf)()
   };
   return (0, l.jsx)(r.zJl, {
     className: u.listScroller,
@@ -33,19 +33,19 @@ function f(e) {
       children: (0, l.jsx)(r.$jN, {})
     }) : (null != p || h) && (null == p ? void 0 : p.length) !== 0 ? null == p ? void 0 : p.map(e => {
       let {
-        guild: n,
+        guild: t,
         nick: r
       } = e;
-      return (0, l.jsx)(a.Z, {
-        user: t,
-        guild: n,
+      return (0, l.jsx)(c.Z, {
+        user: n,
+        guild: t,
         nick: r,
         onSelect: () => {
           f({
             action: "PRESS_MUTUAL_GUILD"
-          }), j(n.id)
+          }), v(t.id)
         }
-      }, n.id)
+      }, t.id)
     }) : (0, l.jsxs)("div", {
       className: u.empty,
       children: [(0, l.jsx)("div", {

@@ -1,6 +1,6 @@
 /** Chunk was on 65326 **/
 t.r(n), t.d(n, {
-  default: () => s
+  default: () => l
 }), t(388685);
 var o = t(200651);
 t(192379);
@@ -8,9 +8,9 @@ var c = t(788111),
   i = t(752342),
   r = t(886794),
   a = t(4599),
-  l = t(910364);
+  d = t(910364);
 
-function d(e) {
+function s(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       o = Object.keys(t);
@@ -29,7 +29,7 @@ function d(e) {
   return e
 }
 
-function s(e) {
+function l(e) {
   var {
     hideRestrictedProfile: n = !1
   } = e, t = function(e, n) {
@@ -48,9 +48,9 @@ function s(e) {
     return c
   }(e, ["hideRestrictedProfile"]);
   let {
-    user: s
-  } = t, [u, f] = (0, c.Z)(s.id);
-  return u && !n ? (0, o.jsx)(a.Z, d({
+    user: l
+  } = t, [u, f] = (0, c.Z)(l.id);
+  return u && !n ? (0, o.jsx)(a.Z, s({
     onHide: f
-  }, t)) : s.isNonUserBot() ? (0, o.jsx)(r.Z, d({}, t)) : s.bot ? (0, o.jsx)(i.Z, d({}, t)) : (0, o.jsx)(l.Z, d({}, t))
+  }, t)) : l.isNonUserBot() ? (0, o.jsx)(r.Z, s({}, t)) : l.bot ? (0, o.jsx)(i.Z, s({}, t)) : (0, o.jsx)(d.Z, s({}, t))
 }

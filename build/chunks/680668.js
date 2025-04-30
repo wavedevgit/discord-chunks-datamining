@@ -1,6 +1,6 @@
 /** Chunk was on 2900 **/
 n.d(t, {
-  Z: () => v
+  Z: () => E
 }), n(997841), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -21,8 +21,8 @@ var r = n(200651),
   x = n(388032),
   y = n(273254);
 
-function v(e) {
-  var t, v, E;
+function E(e) {
+  var t, E, v;
   let O, j, C, {
       onTransitionToInviteChannel: S,
       onAcceptInstantInvite: I,
@@ -44,7 +44,7 @@ function v(e) {
     F = null != L && L.isGuildVocal(),
     B = null != L && L.isGuildStageVoice(),
     G = (0, f.yE)(null != (t = T.flags) ? t : 0, l.$.IS_GUEST_INVITE),
-    H = null != (v = null == N ? void 0 : N.hasFeature(b.oNc.HUB)) && v,
+    H = null != (E = null == N ? void 0 : N.hasFeature(b.oNc.HUB)) && E,
     V = null == N ? void 0 : N.id,
     {
       analyticsLocations: z
@@ -65,7 +65,7 @@ function v(e) {
     }, [T, P, z, M, S, I]);
   if (null == N) {
     if (null == T.guild) return (0, r.jsx)(_.Z, {});
-    (N = h.Qs(T.guild)).premiumTier = null != (E = T.guild.premium_tier) ? E : b.Eu4.NONE
+    (N = h.Qs(T.guild)).premiumTier = null != (v = T.guild.premium_tier) ? v : b.Eu4.NONE
   }
   let Q = (0, g.e)({
     isVoiceChannel: F,

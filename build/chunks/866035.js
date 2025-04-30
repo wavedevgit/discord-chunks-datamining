@@ -6,8 +6,8 @@ var o = t(200651);
 t(192379);
 var r = t(788111),
   c = t(752342),
-  a = t(886794),
-  i = t(4599),
+  i = t(886794),
+  a = t(4599),
   l = t(595145);
 
 function s(e) {
@@ -50,7 +50,7 @@ function d(e) {
   let {
     user: d
   } = t, [u, f] = (0, r.Z)(d.id);
-  return u && !n ? (0, o.jsx)(i.Z, s({
+  return u && !n ? (0, o.jsx)(a.Z, s({
     onHide: f
-  }, t)) : d.isNonUserBot() ? (0, o.jsx)(a.Z, s({}, t)) : d.bot ? (0, o.jsx)(c.Z, s({}, t)) : (0, o.jsx)(l.Z, s({}, t))
+  }, t)) : d.isNonUserBot() ? (0, o.jsx)(i.Z, s({}, t)) : d.bot ? (0, o.jsx)(c.Z, s({}, t)) : (0, o.jsx)(l.Z, s({}, t))
 }

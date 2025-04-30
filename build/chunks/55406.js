@@ -8,8 +8,8 @@ n.r(t), n.d(t, {
 var o = n(477660),
   a = n.n(o),
   i = n(800927),
-  s = n(945884),
-  l = n(594199),
+  l = n(945884),
+  s = n(594199),
   c = n(454585);
 
 function u(e) {
@@ -72,7 +72,7 @@ let O = e => {
     link: u({}, m, "function" == typeof r.customRules.link ? r.customRules.link(e) : r.customRules.link),
     list: u({}, b, "function" == typeof r.customRules.list ? r.customRules.list(e) : r.customRules.list),
     interpolation: {
-      order: l.ZP.order,
+      order: s.ZP.order,
       match: e => v.exec(e),
       parse(e, t, n) {
         let r = n.interpolations[e[1]];
@@ -104,9 +104,9 @@ let O = e => {
   }),
   C = e => d(u({}, j(e)), {
     newline: u({}, a().defaultRules.newline),
-    text: l.ZP,
+    text: s.ZP,
     list: i.Z,
-    subtext: s.Z
+    subtext: l.Z
   });
 
 function P(e) {
