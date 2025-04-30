@@ -53,11 +53,11 @@ function f(e) {
       renderIcon: g,
       text: m,
       selected: b,
-      trailing: y,
-      background: _,
-      showUnread: v = !1
+      trailing: _,
+      background: y,
+      showUnread: O = !1
     } = e,
-    O = function(e, t) {
+    v = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -75,7 +75,7 @@ function f(e) {
   let C = (0, o.JA)(n),
     j = null != (t = (0, s.qg)(m)) ? t : "";
   return (0, r.jsx)("li", {
-    children: (0, r.jsxs)(a.kL8, p(h({}, O), {
+    children: (0, r.jsxs)(a.kL8, p(h({}, v), {
       buttonProps: p(h({}, C), {
         id: n,
         role: "button"
@@ -89,13 +89,13 @@ function f(e) {
           right: 4
         }
       },
-      onContextMenu: null != O.onContextMenu ? O.onContextMenu : e => {
+      onContextMenu: null != v.onContextMenu ? v.onContextMenu : e => {
         e.stopPropagation()
       },
       className: l()(u.containerDefault, d.wrapper, {
         [d.modeSelected]: b
       }, i),
-      children: [_, v ? (0, r.jsx)("div", {
+      children: [y, O ? (0, r.jsx)("div", {
         className: l()(d.unread, d.unreadImportant)
       }) : null, (0, r.jsx)("div", {
         className: l()([d.link, d.basicChannelRowLink, f]),
@@ -108,7 +108,7 @@ function f(e) {
             className: d.name,
             "aria-hidden": !0,
             children: m
-          }), y]
+          }), _]
         })
       })]
     }))

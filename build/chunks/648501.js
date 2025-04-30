@@ -18,10 +18,10 @@ var i = n(442837),
   g = n(979651),
   m = n(968358),
   b = n(790901),
-  y = n(714794),
-  _ = n(355363),
-  v = n(687352),
-  O = n(876548),
+  _ = n(714794),
+  y = n(355363),
+  O = n(687352),
+  v = n(876548),
   C = n(25601),
   j = n(981631),
   S = n(490897),
@@ -42,7 +42,7 @@ function P(e) {
     isNewChannel: R,
     muted: D,
     resolvedUnreadSetting: L
-  } = e, k = (0, i.e7)([f.ZP], () => f.ZP.getMentionCount(n.id)), M = (0, i.e7)([f.ZP], () => f.ZP.getIsMentionLowImportance(n.id)), U = (0, s.ZP)(n), G = (0, i.e7)([p.Z], () => !p.Z.can(j.Plq.CONNECT, n)), B = (0, i.e7)([g.Z], () => g.Z.hasVideo(n.id)), V = (0, u.PK)(n.id) && n.isGuildStageVoice(), H = (0, _.ZP)({
+  } = e, k = (0, i.e7)([f.ZP], () => f.ZP.getMentionCount(n.id)), M = (0, i.e7)([f.ZP], () => f.ZP.getIsMentionLowImportance(n.id)), U = (0, s.ZP)(n), G = (0, i.e7)([p.Z], () => !p.Z.can(j.Plq.CONNECT, n)), B = (0, i.e7)([g.Z], () => g.Z.hasVideo(n.id)), V = (0, u.PK)(n.id) && n.isGuildStageVoice(), H = (0, y.ZP)({
     channel: n,
     locked: G,
     video: B || V,
@@ -51,7 +51,7 @@ function P(e) {
     var e, t;
     return null != (t = null == (e = h.Z.getGuild(n.guild_id)) ? void 0 : e.hasFeature(j.oNc.COMMUNITY)) && t
   });
-  if ((0, y.Z)(k)) return (0, r.jsx)(C.Z, {
+  if ((0, _.Z)(k)) return (0, r.jsx)(C.Z, {
     mentionsCount: k,
     isMentionLowImportance: M
   });
@@ -76,14 +76,14 @@ function P(e) {
     children: (0, o.NGo)(z)
   });
   let Y = null != (t = null == w ? void 0 : w.length) ? t : 0;
-  return null != N && N && H ? (0, r.jsx)(O.Z, {
+  return null != N && N && H ? (0, r.jsx)(v.Z, {
     userCount: Y,
     video: B || V,
     channel: n
   }) : I && (0, m.a)(w) && W ? (0, r.jsx)(o.IGR, {
     text: E.intl.string(E.t.dI3q4u),
     color: l.Z.unsafe_rawColors.RED_400.css
-  }) : null != Z && Z && (0, b.u)(U) ? (0, r.jsx)(v.Z, {
+  }) : null != Z && Z && (0, b.u)(U) ? (0, r.jsx)(O.Z, {
     embeddedApps: U,
     muted: D
   }) : null

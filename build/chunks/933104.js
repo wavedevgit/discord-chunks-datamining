@@ -20,10 +20,10 @@ var i = n(120356),
   g = n(441536),
   m = n(795338),
   b = n(279604),
-  y = n(981631),
-  _ = n(921944),
-  v = n(680278),
-  O = n(388032),
+  _ = n(981631),
+  y = n(921944),
+  O = n(680278),
+  v = n(388032),
   C = n(423151),
   j = n(928381);
 
@@ -37,13 +37,13 @@ function S(e) {
     asset: (0, r.jsx)(m.g, {
       className: C.image
     }),
-    header: O.intl.formatToPlainString(v.default["Zg/m9P"], {
+    header: v.intl.formatToPlainString(O.default["Zg/m9P"], {
       perkName: n.title
     }),
-    content: O.intl.formatToPlainString(v.default["1EGXSE"], {
+    content: v.intl.formatToPlainString(O.default["1EGXSE"], {
       perkName: n.title
     }),
-    buttonCTA: O.intl.string(O.t.RzWDqa),
+    buttonCTA: v.intl.string(v.t.RzWDqa),
     onClick: () => (0, g.Z)(t, c.Z.GUILD_POWERUPS_COACHMARK_LEVEL_UP, n.skuId),
     markAsDismissed: i
   })
@@ -60,13 +60,13 @@ function E(e) {
       src: j.Z,
       className: l()(C.image, C.newPerksImage)
     }),
-    header: O.intl.string(v.default.QpQBPT),
-    content: i ? O.intl.string(v.default["6hn0xM"]) : O.intl.string(v.default.RDuvXl),
-    buttonCTA: O.intl.string(O.t.RzWDqa),
+    header: v.intl.string(O.default.QpQBPT),
+    content: i ? v.intl.string(O.default["6hn0xM"]) : v.intl.string(O.default.RDuvXl),
+    buttonCTA: v.intl.string(v.t.RzWDqa),
     onClick: () => i ? (0, g.Z)(t, c.Z.GUILD_POWERUPS_COACHMARK_NEW_PERKS) : (0, u.f)({
       guildId: t,
       location: {
-        section: y.jXE.GUILD_POWERUPS_NEW_PERKS_COACHMARK
+        section: _.jXE.GUILD_POWERUPS_NEW_PERKS_COACHMARK
       }
     }),
     markAsDismissed: n,
@@ -95,15 +95,15 @@ function x(e) {
     }) : (0, r.jsx)(m.g, {
       className: C.image
     }),
-    header: O.intl.formatToPlainString(v.default.LmpChI, {
+    header: v.intl.formatToPlainString(O.default.LmpChI, {
       guildName: l
     }),
-    content: n.length > 1 ? O.intl.formatToPlainString(v.default.wcQOqK, {
+    content: n.length > 1 ? v.intl.formatToPlainString(O.default.wcQOqK, {
       perks: a
-    }) : O.intl.formatToPlainString(v.default.ZF8NT0, {
+    }) : v.intl.formatToPlainString(O.default.ZF8NT0, {
       perk: a
     }),
-    buttonCTA: u ? O.intl.string(v.default.gSxlHR) : O.intl.string(O.t.RzWDqa),
+    buttonCTA: u ? v.intl.string(O.default.gSxlHR) : v.intl.string(v.t.RzWDqa),
     onClick: e => u ? o(e) : (0, g.Z)(t, c.Z.GUILD_POWERUPS_COACHMARK_PURCHASEABLE_PERKS),
     markAsDismissed: i
   })
@@ -155,7 +155,7 @@ function P(e) {
       className: C.imageContainer,
       children: [t, (0, r.jsx)(a.olH, {
         className: C.close,
-        onClick: () => null == c ? void 0 : c(_.L.USER_DISMISS)
+        onClick: () => null == c ? void 0 : c(y.L.USER_DISMISS)
       })]
     }),
     header: (0, r.jsx)(o.xv, {

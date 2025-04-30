@@ -1,6 +1,6 @@
 /** Chunk was on 21247 **/
 n.d(t, {
-  Z: () => _
+  Z: () => y
 });
 var r = n(200651),
   i = n(192379),
@@ -21,7 +21,7 @@ let b = {
   tension: 300
 };
 
-function y(e) {
+function _(e) {
   var t;
   let {
     guildChannels: n,
@@ -60,7 +60,7 @@ function y(e) {
   })
 }
 
-function _(e) {
+function y(e) {
   let {
     position: t,
     guildChannels: n,
@@ -69,17 +69,17 @@ function _(e) {
     jumpToChannel: d
   } = e, {
     bottomBar: p,
-    topBar: _
-  } = (0, a.cj)([f.Z], () => f.Z.getUnreadStateForGuildId(n.id)), v = (0, a.e7)([h.Z], () => h.Z.isFocused()), {
-    mode: O,
+    topBar: y
+  } = (0, a.cj)([f.Z], () => f.Z.getUnreadStateForGuildId(n.id)), O = (0, a.e7)([h.Z], () => h.Z.isFocused()), {
+    mode: v,
     mentionCount: C,
     targetChannelId: j
-  } = "bottom" === t ? p : _, S = O === f.x.HIDDEN, E = (0, c.q_F)({
+  } = "bottom" === t ? p : y, S = v === f.x.HIDDEN, E = (0, c.q_F)({
     to: {
       transform: S ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
     },
     config: b
-  }, v ? "respect-motion-settings" : "animate-never"), x = i.useCallback(e => {
+  }, O ? "respect-motion-settings" : "animate-never"), x = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), null != j && d(j)
   }, [d, j]);
   return (0, r.jsx)("div", {
@@ -91,9 +91,9 @@ function _(e) {
       className: m.containerPadding,
       style: E,
       "aria-hidden": S,
-      children: O === f.x.HIDDEN ? (0, r.jsx)("div", {
+      children: v === f.x.HIDDEN ? (0, r.jsx)("div", {
         className: o()(m.bar, m.emptyBar)
-      }) : O === f.x.UNREAD ? (0, r.jsxs)(c.P3F, {
+      }) : v === f.x.UNREAD ? (0, r.jsxs)(c.P3F, {
         className: m.bar,
         onClick: x,
         children: ["bottom" === t ? (0, r.jsx)(c.CJ0, {
@@ -114,7 +114,7 @@ function _(e) {
           className: m.barText,
           children: g.intl.string(g.t.FCRiT0)
         })]
-      }) : O === f.x.MENTIONS ? (0, r.jsx)(c.P3F, {
+      }) : v === f.x.MENTIONS ? (0, r.jsx)(c.P3F, {
         className: o()(m.bar, m.mentionsBar),
         onClick: x,
         children: (0, r.jsx)(c.Text, {
@@ -125,7 +125,7 @@ function _(e) {
             count: C
           })
         })
-      }) : O === f.x.VOICE_CHANNELS ? (0, r.jsx)(y, {
+      }) : v === f.x.VOICE_CHANNELS ? (0, r.jsx)(_, {
         jumpToVoiceChannels: u,
         guildChannels: n,
         guildChannelsVersion: l

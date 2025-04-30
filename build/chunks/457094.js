@@ -111,8 +111,8 @@ var r = n(200651),
   e1 = n(346329),
   e3 = n(981631),
   e2 = n(176505),
-  e8 = n(701476),
-  e5 = n(186901);
+  e5 = n(701476),
+  e8 = n(186901);
 
 function e4(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -123,7 +123,7 @@ function e4(e, t, n) {
   }) : e[t] = n, e
 }
 
-function e6(e) {
+function e9(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -136,7 +136,7 @@ function e6(e) {
   return e
 }
 n(117240), n(801077), n(967368), n(272053), n(974180), n(574254), n(551428), n(55563), n(882029), n(959457), n(653255), n(663389), n(25990), n(778825), n(999382), n(388610), n(533947), n(277053), n(371398), n(141233), n(471073), n(606206);
-let e9 = !1;
+let e6 = !1;
 (0, N.D)(), o.ZP.initialize(), eI.Z.loadServer(), e$.isPlatformEmbedded && (e0.ZP.on("USER_SETTINGS_OPEN", (e, t) => {
   eF.Z.getLayers().includes(e3.S9g.USER_SETTINGS) || f.Z.open(null != t ? t : e3.oAB.ACCOUNT)
 }), e0.ZP.on("LAUNCH_APPLICATION", (e, t) => {
@@ -158,7 +158,7 @@ let e7 = (0, m.l)(e => {
       openWithoutBackstack: !1,
       impressionSource: n.source
     })), (0, r.jsxs)(g.Z, {
-      deepLinkType: e5.jE.USER_SETTINGS,
+      deepLinkType: e8.jE.USER_SETTINGS,
       path: t.pathname,
       paramsBuilder: function(e, t) {
         let [, , n, r] = e.split("/");
@@ -350,7 +350,7 @@ let tl = [{
         } = await Promise.all([n.e("5863"), n.e("95626")]).then(n.bind(n, 751212));
         return t => {
           var n, l;
-          return (0, r.jsx)(e, (n = e6({}, t), l = l = {
+          return (0, r.jsx)(e, (n = e9({}, t), l = l = {
             guildId: i
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
@@ -390,7 +390,7 @@ let tl = [{
       guildId: n,
       channelId: i
     } = t.params;
-    (0, es.c)(e8.M5.MARKETING_UNCLAIMED);
+    (0, es.c)(e5.M5.MARKETING_UNCLAIMED);
     let l = e3.Z5c.CHANNEL(n, i);
     return (0, r.jsx)(a.l_, {
       to: l
@@ -483,7 +483,7 @@ class ts extends i.PureComponent {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 650233));
-        return t => (0, r.jsx)(e, e6({}, t))
+        return t => (0, r.jsx)(e, e9({}, t))
       })
     }), U.Z.init(), el.Z.initialize(), e_.Z.initialize(), eg.Z.initialize(), k.Z.initialize(), Z.Z.initialize(), x.Z.initialize(), S.Z.initialize(), this.rewriterUnlisten = eE.Z.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = eE.Z.addRouteChangeListener(this.handleHistoryChange)
   }
@@ -525,8 +525,8 @@ class ts extends i.PureComponent {
       if (c && g && d.Z.selectGuild(r), c && u) {
         let n = eW.Z.getChannelId(f),
           a = n !== i;
-        if (!e9 || g || a || null != o || m) {
-          e9 = !0, p.default.selectChannel({
+        if (!e6 || g || a || null != o || m) {
+          e6 = !0, p.default.selectChannel({
             guildId: r,
             channelId: i,
             messageId: o

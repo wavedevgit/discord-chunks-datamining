@@ -17,23 +17,23 @@ var r = n(200651),
   g = n(13186),
   m = n(981631),
   b = n(921944),
-  y = n(474936),
-  _ = n(388032),
-  v = n(706442),
-  O = n(777091);
+  _ = n(474936),
+  y = n(388032),
+  O = n(706442),
+  v = n(777091);
 let C = (e, t) => {
     let n = null != t && !t.isPreview;
     return e ? e && !n ? "no-wallpaper-nitro" : "has-wallpaper-nitro" : "non-nitro"
   },
-  j = e => "has-wallpaper-nitro" === e ? _.intl.string(_.t.T9dXPj) : _.intl.string(_.t.zyvzQ0),
+  j = e => "has-wallpaper-nitro" === e ? y.intl.string(y.t.T9dXPj) : y.intl.string(y.t.zyvzQ0),
   S = e => {
     switch (e) {
       case "non-nitro":
-        return _.intl.string(_.t.VU8fxM);
+        return y.intl.string(y.t.VU8fxM);
       case "no-wallpaper-nitro":
-        return _.intl.string(_.t.BQBNjY);
+        return y.intl.string(y.t.BQBNjY);
       case "has-wallpaper-nitro":
-        return _.intl.string(_.t.eZMxlZ)
+        return y.intl.string(y.t.eZMxlZ)
     }
   },
   E = e => {
@@ -47,7 +47,7 @@ let C = (e, t) => {
     } = (0, p.m)({
       location: "ChatWallpaperDMListCoachmark",
       selectedChannelId: E
-    }), Z = N === h.FN.CONTEXT_MENU, [T, A] = (0, c.US)(x && Z && I && w && !P ? [o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK] : []), R = (0, u.m)(y.p9.TIER_2), D = (0, f.Z)(n), L = T === o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK, k = (0, i.useRef)(null), M = (0, i.useRef)(null), [U, G] = (0, i.useState)(g.U.TOP);
+    }), Z = N === h.FN.CONTEXT_MENU, [T, A] = (0, c.US)(x && Z && I && w && !P ? [o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK] : []), R = (0, u.m)(_.p9.TIER_2), D = (0, f.Z)(n), L = T === o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK, k = (0, i.useRef)(null), M = (0, i.useRef)(null), [U, G] = (0, i.useState)(g.U.TOP);
     if ((0, i.useLayoutEffect)(() => {
         if (null === k.current) return;
         let e = () => {
@@ -75,12 +75,12 @@ let C = (e, t) => {
         renderPopout: () => (0, r.jsx)(g.Z, {
           ref: M,
           onClose: B,
-          buttonText: _.intl.string(_.t["+IrDzM"]),
+          buttonText: y.intl.string(y.t["+IrDzM"]),
           header: H,
           art: (0, r.jsx)("img", {
-            src: O.Z,
+            src: v.Z,
             alt: "",
-            className: v.chatWallpaperDMListCoachmarkArt
+            className: O.chatWallpaperDMListCoachmarkArt
           }),
           body: F,
           align: U

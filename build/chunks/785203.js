@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  R: () => C,
-  Z: () => S
+  R: () => v,
+  Z: () => C
 });
 var r, i = n(192379),
   l = n(442837),
@@ -14,68 +14,65 @@ var r, i = n(192379),
   p = n(50101),
   h = n(270144),
   f = n(400271),
-  g = n(678513),
-  m = n(899667),
-  b = n(496675),
-  _ = n(541566),
-  E = n(192513),
-  O = n(255791),
-  y = n(70956),
-  I = n(267642),
-  v = n(981631),
-  C = ((r = {})[r.ENABLE_PUBLIC_GUILD = 0] = "ENABLE_PUBLIC_GUILD", r[r.APPLIED_GUILD_BOOST_GRACE_PERIOD = 1] = "APPLIED_GUILD_BOOST_GRACE_PERIOD", r[r.MAX_MEMBER_COUNT = 2] = "MAX_MEMBER_COUNT", r[r.GUILD_LIVE_CHANNEL = 3] = "GUILD_LIVE_CHANNEL", r[r.GUILD_MFA_WARNING = 4] = "GUILD_MFA_WARNING", r[r.COMMANDS_MIGRATION = 5] = "COMMANDS_MIGRATION", r[r.APPLICATION_SUBSCRIPTION_EXPIRATION = 6] = "APPLICATION_SUBSCRIPTION_EXPIRATION", r[r.HUB_STUDY_ROOM = 7] = "HUB_STUDY_ROOM", r[r.SIGNUP = 8] = "SIGNUP", r[r.CLAN_UPSELL = 9] = "CLAN_UPSELL", r);
+  g = n(899667),
+  m = n(496675),
+  b = n(541566),
+  _ = n(192513),
+  E = n(255791),
+  O = n(70956),
+  y = n(267642),
+  I = n(981631),
+  v = ((r = {})[r.ENABLE_PUBLIC_GUILD = 0] = "ENABLE_PUBLIC_GUILD", r[r.APPLIED_GUILD_BOOST_GRACE_PERIOD = 1] = "APPLIED_GUILD_BOOST_GRACE_PERIOD", r[r.MAX_MEMBER_COUNT = 2] = "MAX_MEMBER_COUNT", r[r.GUILD_LIVE_CHANNEL = 3] = "GUILD_LIVE_CHANNEL", r[r.GUILD_MFA_WARNING = 4] = "GUILD_MFA_WARNING", r[r.COMMANDS_MIGRATION = 5] = "COMMANDS_MIGRATION", r[r.APPLICATION_SUBSCRIPTION_EXPIRATION = 6] = "APPLICATION_SUBSCRIPTION_EXPIRATION", r[r.HUB_STUDY_ROOM = 7] = "HUB_STUDY_ROOM", r[r.CLAN_UPSELL = 8] = "CLAN_UPSELL", r);
 
-function S(e) {
+function C(e) {
   var t;
-  let n = null != (t = null == e ? void 0 : e.id) ? t : v.lds,
+  let n = null != (t = null == e ? void 0 : e.id) ? t : I.lds,
     {
       lastFetchedAt: r
-    } = (0, l.cj)([m.Z], () => ({
-      appliedGuildBoosts: m.Z.getAppliedGuildBoostsForGuild(n),
-      lastFetchedAt: m.Z.getLastFetchedAtForGuild(n)
+    } = (0, l.cj)([g.Z], () => ({
+      appliedGuildBoosts: g.Z.getAppliedGuildBoostsForGuild(n),
+      lastFetchedAt: g.Z.getLastFetchedAtForGuild(n)
     })),
     {
-      lastDismissedGracePeriod: C,
-      isGracePeriodVisible: S
-    } = (0, l.cj)([_.Z], () => ({
-      lastDismissedGracePeriod: _.Z.getLastDismissedGracePeriodForGuild(n),
-      isGracePeriodVisible: _.Z.isVisible(n)
+      lastDismissedGracePeriod: v,
+      isGracePeriodVisible: C
+    } = (0, l.cj)([b.Z], () => ({
+      lastDismissedGracePeriod: b.Z.getLastDismissedGracePeriodForGuild(n),
+      isGracePeriodVisible: b.Z.isVisible(n)
     })),
-    N = (0, p.Ek)(n, "GuildBoostingNoticeStore"),
-    T = (0, l.e7)([f.Z], () => f.Z.isVisible(e)),
-    P = (0, l.e7)([O.Z], () => O.Z.isVisible(e)),
-    j = (0, l.e7)([b.Z], () => b.Z.can(v.Plq.ADMINISTRATOR, e)),
-    A = null != C && Date.now() - C <= v.Dge,
-    Z = (0, I.Jh)(n) !== v.Eu4.NONE,
-    x = !(null != r && Date.now() - r <= 432e5) && !A && j && Z,
-    w = (0, s.m)(n),
-    L = (0, l.e7)([E.Z], () => E.Z.isVisible(e)),
-    R = d.Z.useShouldShowChannelNotice(n),
-    D = (0, h.h6)(e),
+    S = (0, p.Ek)(n, "GuildBoostingNoticeStore"),
+    N = (0, l.e7)([f.Z], () => f.Z.isVisible(e)),
+    T = (0, l.e7)([E.Z], () => E.Z.isVisible(e)),
+    P = (0, l.e7)([m.Z], () => m.Z.can(I.Plq.ADMINISTRATOR, e)),
+    j = null != v && Date.now() - v <= I.Dge,
+    A = (0, y.Jh)(n) !== I.Eu4.NONE,
+    Z = !(null != r && Date.now() - r <= 432e5) && !j && P && A,
+    x = (0, s.m)(n),
+    w = (0, l.e7)([_.Z], () => _.Z.isVisible(e)),
+    L = d.Z.useShouldShowChannelNotice(n),
+    R = (0, h.h6)(e),
     {
-      enableStudyGroup: k
+      enableStudyGroup: D
     } = (0, u.s)(e),
-    M = D.length > 0,
-    U = k && !(null == e ? void 0 : e.hasFeature(v.oNc.HUB)),
-    G = (0, c.Vm)(n),
-    V = (0, l.e7)([g.Z], () => null != g.Z.getActiveGuildSignUp(n));
+    k = R.length > 0,
+    M = D && !(null == e ? void 0 : e.hasFeature(I.oNc.HUB)),
+    U = (0, c.Vm)(n);
   if (i.useEffect(() => {
       o.Z.getGuildEventsForCurrentUser(n)
     }, [n]), i.useEffect(() => {
       let e = -1;
-      return x && (e = window.setTimeout(() => {
+      return Z && (e = window.setTimeout(() => {
         null != n && (0, a.C0)(n)
-      }, 30 * Math.random() * y.Z.Millis.SECOND)), () => {
+      }, 30 * Math.random() * O.Z.Millis.SECOND)), () => {
         window.clearTimeout(e)
       }
-    }, [n, x]), T) return 0;
-  if (S && !N) return 1;
-  if (P) return 2;
-  if (w || null != G) return 3;
-  if (L) return 4;
-  else if (R) return 5;
-  else if (M) return 6;
-  else if (U) return 7;
-  else if (V) return 8;
+    }, [n, Z]), N) return 0;
+  if (C && !S) return 1;
+  if (T) return 2;
+  if (x || null != U) return 3;
+  if (w) return 4;
+  else if (L) return 5;
+  else if (k) return 6;
+  else if (M) return 7;
   return null
 }

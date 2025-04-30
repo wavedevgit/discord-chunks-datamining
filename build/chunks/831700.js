@@ -17,10 +17,10 @@ var r = n(200651),
   g = n(117358),
   m = n(201895),
   b = n(718589),
-  y = n(933557),
-  _ = n(557135),
-  v = n(873696),
-  O = n(446226),
+  _ = n(933557),
+  y = n(557135),
+  O = n(873696),
+  v = n(446226),
   C = n(305325),
   j = n(281956),
   S = n(66999),
@@ -121,7 +121,7 @@ class en extends H.ZP {
     let {
       channel: t,
       connected: n
-    } = this.props, i = null == (e = (0, v.D)(this.props.subtitle)) ? void 0 : e.subtitle, {
+    } = this.props, i = null == (e = (0, O.D)(this.props.subtitle)) ? void 0 : e.subtitle, {
       hovered: l
     } = this.state;
     return (0, r.jsx)(Y.Z, {
@@ -207,10 +207,10 @@ class en extends H.ZP {
       connectChannelDragSource: p,
       connectUserDropTarget: f,
       connectDragPreview: g,
-      canReorderChannel: y,
-      canMoveMembers: _,
-      showTutorial: v,
-      hasActiveEvent: O,
+      canReorderChannel: _,
+      canMoveMembers: y,
+      showTutorial: O,
+      hasActiveEvent: v,
       embeddedApps: C,
       isSubscriptionGated: j,
       isFavoriteSuggestion: S,
@@ -263,9 +263,9 @@ class en extends H.ZP {
                   ref: this.channelItemRef,
                   className: J.iconVisibility,
                   iconClassName: o()({
-                    [J.iconLive]: O
+                    [J.iconLive]: v
                   }),
-                  hasActiveEvent: O,
+                  hasActiveEvent: v,
                   channel: e,
                   selected: !S && t,
                   connected: n,
@@ -310,7 +310,7 @@ class en extends H.ZP {
         })
       }), this.renderVoiceUsers()]
     });
-    return _ && (A = f(A)), y && (A = h(p(A))), v && (A = (0, r.jsx)(Z.Z, {
+    return y && (A = f(A)), _ && (A = h(p(A))), O && (A = (0, r.jsx)(Z.Z, {
       childRef: this.ref,
       tutorialId: "voice-conversations",
       position: "right",
@@ -337,7 +337,7 @@ class en extends H.ZP {
       } = this.props;
       r && this.setState({
         shouldShowGuildVerificationPopout: !0
-      }), _.Z.handleVoiceConnect({
+      }), y.Z.handleVoiceConnect({
         channel: n,
         connected: t,
         needSubscriptionToAccess: i,
@@ -478,16 +478,16 @@ function ei(e) {
       bypassLimit: k.Z.can(q.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), p = (0, s.e7)([G.Z], () => G.Z.hasVideo(n.id)), g = (0, f.ZP)(n), m = (0, y.ZP)(n), b = (0, E.qY)(n.id), {
-    isSubscriptionGated: _,
-    needSubscriptionToAccess: v
-  } = (0, S.Z)(n.id), C = (0, O.Z)(), j = (0, s.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), x = e.connected || (null == C ? void 0 : C.channelId) === n.id, P = (0, F.Z)({
+  }), p = (0, s.e7)([G.Z], () => G.Z.hasVideo(n.id)), g = (0, f.ZP)(n), m = (0, _.ZP)(n), b = (0, E.qY)(n.id), {
+    isSubscriptionGated: y,
+    needSubscriptionToAccess: O
+  } = (0, S.Z)(n.id), C = (0, v.Z)(), j = (0, s.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), x = e.connected || (null == C ? void 0 : C.channelId) === n.id, P = (0, F.Z)({
     channel: n,
     isChannelSelected: o,
     isChannelCollapsed: a,
     voiceStates: c,
-    isSubscriptionGated: _,
-    needSubscriptionToAccess: v,
+    isSubscriptionGated: y,
+    needSubscriptionToAccess: O,
     enableConnectedUserLimit: !0,
     enableActivities: !0
   }), I = x && null == P;
@@ -497,8 +497,8 @@ function ei(e) {
     embeddedActivityType: q.IIU.PLAYING,
     video: p,
     hasActiveEvent: null != b,
-    isSubscriptionGated: _,
-    needSubscriptionToAccess: v
+    isSubscriptionGated: y,
+    needSubscriptionToAccess: O
   }, u, h, e), {
     connected: x,
     isFavoriteSuggestion: l && !j,

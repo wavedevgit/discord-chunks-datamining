@@ -17,10 +17,10 @@ var r = n(200651),
   g = n(496675),
   m = n(158776),
   b = n(979651),
-  y = n(823379),
-  _ = n(355363),
-  v = n(449932),
-  O = n(561788),
+  _ = n(823379),
+  y = n(355363),
+  O = n(449932),
+  v = n(561788),
   C = n(876548),
   j = n(543432),
   S = n(981631),
@@ -36,8 +36,8 @@ function I(e) {
     onAction: f,
     voiceStates: g,
     isChannelSelected: b,
-    shouldShowSettingNudge: _
-  } = e, O = i.useMemo(() => {
+    shouldShowSettingNudge: y
+  } = e, v = i.useMemo(() => {
     var e;
     return null == g || g.length > 50 ? {} : {
       [o.getGuildId()]: null != (e = g.map(e => {
@@ -48,10 +48,10 @@ function I(e) {
       })) ? e : []
     }
   }, [o, g]);
-  (0, c.$)(O);
+  (0, c.$)(v);
   let C = (0, u.ZP)(o),
     j = Array.from((0, u.uF)(C).values()),
-    P = null != (t = null == g ? void 0 : g.filter(y.lm)) ? t : [],
+    P = null != (t = null == g ? void 0 : g.filter(_.lm)) ? t : [],
     I = e => t => [S.IIU.PLAYING, S.IIU.WATCHING].includes(t.type) && (null != t.assets || null != t.state || null != t.details || null != t.party) && (null == t.session_id || t.session_id === e.voiceState.sessionId) || t.type === S.IIU.LISTENING,
     N = (0, s.e7)([m.Z], () => {
       let e = {};
@@ -78,7 +78,7 @@ function I(e) {
       className: x.headerDivider
     }), j.map((e, t) => {
       var n;
-      return (0, r.jsx)(v.Z, {
+      return (0, r.jsx)(O.Z, {
         embeddedApp: e,
         presenceActivity: null != (n = e.presenceActivity) ? n : void 0,
         channel: o,
@@ -89,13 +89,13 @@ function I(e) {
         members: n,
         activity: i
       } = e;
-      return (0, r.jsx)(v.Z, {
+      return (0, r.jsx)(O.Z, {
         presenceActivity: i,
         channel: o,
         members: n,
         onAction: f
       }, t)
-    }), _ && (0, r.jsxs)(r.Fragment, {
+    }), y && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: x.headerDivider
       }), (0, r.jsx)("div", {
@@ -155,7 +155,7 @@ function w(e) {
     channel: t,
     isChannelSelected: n,
     voiceStatesCount: i
-  } = e, l = (0, s.e7)([g.Z], () => !g.Z.can(S.Plq.CONNECT, t)), a = (0, s.e7)([b.Z], () => b.Z.hasVideo(t.id)), c = (0, _.ZP)({
+  } = e, l = (0, s.e7)([g.Z], () => !g.Z.can(S.Plq.CONNECT, t)), a = (0, s.e7)([b.Z], () => b.Z.hasVideo(t.id)), c = (0, y.ZP)({
     channel: t,
     locked: l,
     video: a,
@@ -163,7 +163,7 @@ function w(e) {
   }), u = (0, s.e7)([f.Z], () => f.Z.getGuild(t.guild_id));
   return null == (0, p.KS)(t, u) ? null : (0, r.jsxs)("div", {
     className: o()(x.popoutHeaderContainer, P.popoutHeaderContainer),
-    children: [(0, r.jsx)(O.Z, {
+    children: [(0, r.jsx)(v.Z, {
       channel: t
     }), c ? (0, r.jsx)(C.Z, {
       userCount: i,

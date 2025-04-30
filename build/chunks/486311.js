@@ -17,11 +17,11 @@ var r = n(200651),
   g = n(933104),
   m = n(332538),
   b = n(921944),
-  y = n(680278),
-  _ = n(388032),
-  v = n(388298);
+  _ = n(680278),
+  y = n(388032),
+  O = n(388298);
 
-function O(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -60,15 +60,15 @@ let C = {
       var e;
       switch (null == j || null == (e = j.popout) ? void 0 : e.type) {
         case p.J.LEVEL_REACHED:
-          return (0, r.jsx)(g.jG, O({
+          return (0, r.jsx)(g.jG, v({
             guildId: t
           }, j.popout));
         case p.J.PERKS_AVAILABLE:
-          return (0, r.jsx)(g.$h, O({
+          return (0, r.jsx)(g.$h, v({
             guildId: t
           }, j.popout));
         case p.J.PERKS_PURCHASABLE:
-          return (0, r.jsx)(g.yI, O({
+          return (0, r.jsx)(g.yI, v({
             guildId: t
           }, j.popout));
         default:
@@ -89,8 +89,8 @@ let C = {
       renderPopout: E,
       children: e => {
         var i, s;
-        return (0, r.jsx)(u.m, (i = O({}, e), s = s = {
-          className: v.container,
+        return (0, r.jsx)(u.m, (i = v({}, e), s = s = {
+          className: O.container,
           id: "skill-trees-".concat(t),
           renderIcon: e => (0, r.jsx)(a.$Eu, {
             size: "md",
@@ -98,10 +98,10 @@ let C = {
             color: "currentColor"
           }),
           background: (null == j ? void 0 : j.popout) != null && (0, r.jsx)("div", {
-            className: v.lottieContainer,
+            className: O.lottieContainer,
             children: (0, r.jsx)(a.kci, {
               nextScene: N,
-              className: v.lottie,
+              className: O.lottie,
               sceneSegments: C,
               importData: () => n.e("50821").then(n.t.bind(n, 548421, 19)),
               onScenePlay: Z,
@@ -112,9 +112,9 @@ let C = {
           }),
           text: (0, r.jsx)("span", {
             className: o()({
-              [v.textImportant]: (null == j ? void 0 : j.showUnread) === !0
+              [O.textImportant]: (null == j ? void 0 : j.showUnread) === !0
             }),
-            children: _.intl.string(y.default.yv3DJC)
+            children: y.intl.string(_.default.yv3DJC)
           }),
           selected: l,
           onClick: S,

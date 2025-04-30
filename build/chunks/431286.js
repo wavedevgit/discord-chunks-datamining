@@ -17,10 +17,10 @@ var r = n(200651),
   g = n(507808),
   m = n(822857),
   b = n(479766),
-  y = n(331663),
-  _ = n(981631),
-  v = n(921944),
-  O = n(46140);
+  _ = n(331663),
+  y = n(981631),
+  O = n(921944),
+  v = n(46140);
 let C = "orb-announcement-modal-key";
 
 function j() {
@@ -36,7 +36,7 @@ function j() {
     enabled: j
   } = (0, m.W)({
     location: "virtual_currency_announcement_modal"
-  }), [S, E] = (0, h.US)(j ? [s.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], ...y.b.useSelectedDismissibleContent), x = (0, c.s9z)(c.JQI);
+  }), [S, E] = (0, h.US)(j ? [s.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], ..._.b.useSelectedDismissibleContent), x = (0, c.s9z)(c.JQI);
   i.useEffect(() => {
     j && !t && S === s.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL && (e || x || (u.Z.dispatch({
       type: "VIRTUAL_CURRENCY_ONBOARDING_MODAL_OPEN"
@@ -49,24 +49,24 @@ function j() {
           onClose: n,
           transitionState: i
         } = t, o = async () => {
-          await n(), E(v.L.USER_DISMISS)
+          await n(), E(O.L.USER_DISMISS)
         };
         return (0, r.jsx)(e, {
           transitionState: i,
           onClose: o,
           ctaOnClick: () => {
-            E(v.L.TAKE_ACTION), (0, d.EW)(s.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK, {
-              dismissAction: v.L.INDIRECT_ACTION,
-              groupName: v.R.VIRTUAL_CURRENCY_ONBOARDING
+            E(O.L.TAKE_ACTION), (0, d.EW)(s.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK, {
+              dismissAction: O.L.INDIRECT_ACTION,
+              groupName: O.R.VIRTUAL_CURRENCY_ONBOARDING
             }), (0, d.EW)(s.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, {
-              dismissAction: v.L.INDIRECT_ACTION,
-              groupName: v.R.VIRTUAL_CURRENCY_ONBOARDING
+              dismissAction: O.L.INDIRECT_ACTION,
+              groupName: O.R.VIRTUAL_CURRENCY_ONBOARDING
             }), (0, g.Y)({
-              pageType: _.ZY5.ORBS_ANNOUNCEMENT_MODAL,
-              sectionType: _.jXE.ORBS_ANNOUNCEMENT_MODAL,
-              ctaObject: _.qAy.CTA_TO_ORB_INTRO_QUEST
+              pageType: y.ZY5.ORBS_ANNOUNCEMENT_MODAL,
+              sectionType: y.jXE.ORBS_ANNOUNCEMENT_MODAL,
+              ctaObject: y.qAy.CTA_TO_ORB_INTRO_QUEST
             }), (0, p.navigateToQuestHome)({
-              questId: O.V6,
+              questId: v.V6,
               fromContent: l.j.ORBS_ANNOUNCEMENT_MODAL
             }), n()
           }
@@ -75,7 +75,7 @@ function j() {
     }, {
       modalKey: C,
       onCloseRequest: () => {
-        E(v.L.USER_DISMISS), (0, c.Mr3)(C)
+        E(O.L.USER_DISMISS), (0, c.Mr3)(C)
       }
     })))
   }, [S, j, t, E, e, x])

@@ -16,10 +16,10 @@ var r, i = n(200651),
   g = n(815372),
   m = n(14429),
   b = n(576855),
-  y = n(313201),
-  _ = n(991346),
-  v = n(592125),
-  O = n(888369),
+  _ = n(313201),
+  y = n(991346),
+  O = n(592125),
+  v = n(888369),
   C = n(430824),
   j = n(306680),
   S = n(944486),
@@ -100,7 +100,7 @@ class V extends(r = l.Component) {
 k(V, "defaultProps", {
   unread: !1
 });
-let H = c.ZP.connectStores([j.ZP, v.Z], e => {
+let H = c.ZP.connectStores([j.ZP, O.Z], e => {
     let {
       channel: t
     } = e;
@@ -108,7 +108,7 @@ let H = c.ZP.connectStores([j.ZP, v.Z], e => {
       unread: j.ZP.hasUnread(t.id),
       mentions: j.ZP.getMentionCount(t.id),
       isMentionLowImportance: j.ZP.getIsMentionLowImportance(t.id),
-      category: v.Z.getChannel(t.parent_id)
+      category: O.Z.getChannel(t.parent_id)
     }
   })(V),
   F = c.ZP.connectStores([E.ZP], e => {
@@ -120,12 +120,12 @@ let H = c.ZP.connectStores([j.ZP, v.Z], e => {
       voiceStates: E.ZP.getVoiceStates(t.guild_id)[t.id]
     }
   })(V),
-  z = c.ZP.connectStores([O.default], e => {
+  z = c.ZP.connectStores([v.default], e => {
     let {
       guild: t
     } = e;
     return {
-      unread: O.default.hasUnread(t.id)
+      unread: v.default.hasUnread(t.id)
     }
   })(Z.ic),
   W = c.ZP.connectStores([j.ZP], e => {
@@ -136,10 +136,10 @@ let H = c.ZP.connectStores([j.ZP, v.Z], e => {
       mentions: j.ZP.getMentionCount(t.id)
     }
   })(Z.PZ),
-  Y = c.ZP.connectStores([v.Z, j.ZP], e => {
+  Y = c.ZP.connectStores([O.Z, j.ZP], e => {
     let {
       user: t
-    } = e, n = v.Z.getDMFromUserId(t.id);
+    } = e, n = O.Z.getDMFromUserId(t.id);
     return {
       mentions: null != n ? j.ZP.getMentionCount(n) : 0
     }
@@ -285,7 +285,7 @@ class q extends l.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), k(this, "scrollerRef", l.createRef()), k(this, "inputRef", l.createRef()), k(this, "_listId", (0, y.hQ)()), k(this, "state", {
+    super(...e), k(this, "scrollerRef", l.createRef()), k(this, "inputRef", l.createRef()), k(this, "_listId", (0, _.hQ)()), k(this, "state", {
       query: this.props.query,
       mouseFocusDisabled: !0
     }), k(this, "handleInputChange", () => {
@@ -569,7 +569,7 @@ class q extends l.PureComponent {
 
 function Q(e) {
   let t = (0, c.cj)([N.Z], () => N.Z.getProps()),
-    n = (0, _.Pt)(),
+    n = (0, y.Pt)(),
     r = A.Z.useExperiment({
       location: "QuickSwitcher"
     }).enabled,

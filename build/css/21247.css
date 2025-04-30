@@ -1,6 +1,6 @@
 /**
   Module ID: 21247
-  Original File Name: 648e6bdd21067706
+  Original File Name: 3582025632721db2
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -3433,34 +3433,6 @@
     border-radius: 8px
 }
 
-.tooltipContainer__87e08 {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding: 8px;
-    position: relative
-}
-
-.tooltipBackground__87e08 {
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -1
-}
-
-.tooltip__87e08 {
-    max-width: 220px
-}
-
-.tooltipContent__87e08 {
-    background: rgba(0,0,0,.4);
-    border-radius: 4px;
-    overflow: hidden;
-    padding: 0
-}
-
 .pill_ed9a5f {
     left: 0;
     position: absolute;
@@ -6292,4 +6264,4 @@
     background-image: url(/assets/05207174d5432737.svg)
 }
 
-/*# sourceMappingURL=648e6bdd21067706.css.map*/
+/*# sourceMappingURL=3582025632721db2.css.map*/

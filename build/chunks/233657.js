@@ -1,6 +1,6 @@
 /** Chunk was on 21247 **/
 n.d(t, {
-  Z: () => y
+  Z: () => _
 });
 var r = n(200651);
 n(192379);
@@ -49,17 +49,17 @@ function b(e, t) {
   }), e
 }
 
-function y(e) {
+function _(e) {
   let {
     guild: t,
-    selected: y
+    selected: _
   } = e, {
-    hasUnread: _,
-    mentionCount: v
+    hasUnread: y,
+    mentionCount: O
   } = (0, i.cj)([u.ZP], () => ({
     hasUnread: u.ZP.hasUnread(t.id, p.W.GUILD_EVENT),
     mentionCount: u.ZP.getMentionCount(t.id, p.W.GUILD_EVENT)
-  }), [t.id]), O = (0, i.e7)([d.ZP], () => d.ZP.isMuteScheduledEventsEnabled(t.id));
+  }), [t.id]), v = (0, i.e7)([d.ZP], () => d.ZP.isMuteScheduledEventsEnabled(t.id));
   async function C() {
     await (0, o.ZDy)(async () => {
       let {
@@ -82,7 +82,7 @@ function y(e) {
       className: e
     }),
     text: S,
-    selected: y,
+    selected: _,
     onClick: C,
     onContextMenu: e => {
       (0, s.jW)(e, async () => {
@@ -94,11 +94,11 @@ function y(e) {
         }))
       })
     },
-    showUnread: _ && !O,
-    trailing: !O && v > 0 ? (0, r.jsx)(o.mAB, {
+    showUnread: y && !v,
+    trailing: !v && O > 0 ? (0, r.jsx)(o.mAB, {
       className: g.numberBadge,
       disableColor: !0,
-      count: v
+      count: O
     }) : null
   })
 }

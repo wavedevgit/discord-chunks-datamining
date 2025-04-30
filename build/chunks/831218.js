@@ -16,10 +16,10 @@ var r, i = n(200651),
   g = n(367907),
   m = n(453542),
   b = n(702321),
-  y = n(46148),
-  _ = n(82295),
-  v = n(313201),
-  O = n(540059),
+  _ = n(46148),
+  y = n(82295),
+  O = n(313201),
+  v = n(540059),
   C = n(860144),
   j = n(214852),
   S = n(518311),
@@ -350,7 +350,7 @@ class G extends(r = l.Component) {
         totalRowCount: o,
         preRenderedChildren: s
       } = this.state, a = r[n[t]];
-      return null == a ? null : (0, i.jsx)(y.s, {
+      return null == a ? null : (0, i.jsx)(_.s, {
         channelId: a.id,
         selectedChannelId: l,
         children: (0, i.jsx)(T.ZP, {
@@ -384,7 +384,7 @@ class G extends(r = l.Component) {
         showDMHeader: n,
         isVisualRefreshEnabled: r
       } = this.props;
-      return 0 !== t && n ? (0, i.jsxs)(_.Z, {
+      return 0 !== t && n ? (0, i.jsxs)(y.Z, {
         className: D.privateChannelsHeaderContainer,
         children: [(0, i.jsx)("span", {
           className: D.headerText,
@@ -428,7 +428,7 @@ L(G, "defaultProps", {
 });
 let B = e => {
   var t;
-  let n = (0, O.Q3)("ConnectedPrivateChannelsList"),
+  let n = (0, v.Q3)("ConnectedPrivateChannelsList"),
     {
       density: r
     } = (0, h.TCT)(),
@@ -441,12 +441,12 @@ let B = e => {
     g = l.Children.count(d),
     m = w.Z.getMutablePrivateChannels(),
     b = (0, x.k1)(m),
-    y = (0, u.Wu)([Z.Z, E.Z, P.Z], () => {
+    _ = (0, u.Wu)([Z.Z, E.Z, P.Z], () => {
       let e = Z.Z.getPrivateChannelIds();
       return (0, x.tU)(e, [E.Z, P.Z])
     }, []);
   (0, j.z)(C.R);
-  let _ = (0, u.cj)([f.Z, I.Z, w.Z], () => ({
+  let y = (0, u.cj)([f.Z, I.Z, w.Z], () => ({
       theme: I.Z.darkSidebar ? A.BRd.DARK : s,
       keyboardModeEnabled: f.Z.keyboardModeEnabled,
       version: null != o ? "".concat(o, ":").concat(w.Z.getPrivateChannelsVersion()) : w.Z.getPrivateChannelsVersion()
@@ -484,10 +484,10 @@ let B = e => {
         }
       })
     }), [N]),
-    L = (0, v.Dt)(),
+    L = (0, O.Dt)(),
     U = (0, c.ZP)({
       id: "private-channels-".concat(L),
-      isEnabled: _.keyboardModeEnabled,
+      isEnabled: y.keyboardModeEnabled,
       scrollToStart: R,
       scrollToEnd: D,
       defaultFocused: (g + +!!p).toString(),
@@ -499,12 +499,12 @@ let B = e => {
       density: r,
       isVisualRefreshEnabled: n,
       channels: b,
-      privateChannelIds: y,
+      privateChannelIds: _,
       listRef: N,
       theme: s,
       version: o
     }, e), {
       children: d
-    }), _))
+    }), y))
   })
 }

@@ -1,6 +1,6 @@
 /** Chunk was on 21247 **/
 n.d(t, {
-  f: () => y
+  f: () => _
 }), n(388685), n(539854);
 var r = n(192379),
   i = n(243814),
@@ -25,15 +25,15 @@ let m = {
     includeFrecency: !0
   };
 
-function y(e) {
+function _(e) {
   let {
     context: t,
     onlyActivityApps: n,
     allowCommandFetch: s,
-    includeAuthorizedAppsAndFetch: y
+    includeAuthorizedAppsAndFetch: _
   } = e, {
-    sectionDescriptors: _,
-    loading: v
+    sectionDescriptors: y,
+    loading: O
   } = a.wi({
     context: t,
     filters: m,
@@ -41,7 +41,7 @@ function y(e) {
     allowFetch: s
   });
   return {
-    loading: v,
+    loading: O,
     frecentApps: function(e) {
       let {
         sectionDescriptors: t,
@@ -56,20 +56,20 @@ function y(e) {
           var e, t;
           return a && null != (t = null == (e = d.Z.getApps()) ? void 0 : e.filter(e => e.scopes.includes(i.x.APPLICATIONS_COMMANDS))) ? t : []
         }),
-        y = t.filter(e => e.id !== g.bi.FRECENCY && e.id !== g.bi.BUILT_IN),
-        _ = "channel" in n && (0, h.aZ)(n.channel, "useAppLauncherFrecents.useFrecentApps()"),
-        v = "contextless" === n.type,
-        O = r.useMemo(() => {
+        _ = t.filter(e => e.id !== g.bi.FRECENCY && e.id !== g.bi.BUILT_IN),
+        y = "channel" in n && (0, h.aZ)(n.channel, "useAppLauncherFrecents.useFrecentApps()"),
+        O = "contextless" === n.type,
+        v = r.useMemo(() => {
           let e = [];
-          return v && e.push(f.jT), _ && e.push(h.gu), e
-        }, [_, v]),
-        C = (0, u.h)(y, b);
-      return r.useMemo(() => s ? C.filter(e => null != e.application && (0, p.ye)(e.application) && null != (0, c.Xu)(n, e.id)).filter(e => !O.includes(e.id)) : C.filter(e => !O.includes(e.id)), [s, C, n, O])
+          return O && e.push(f.jT), y && e.push(h.gu), e
+        }, [y, O]),
+        C = (0, u.h)(_, b);
+      return r.useMemo(() => s ? C.filter(e => null != e.application && (0, p.ye)(e.application) && null != (0, c.Xu)(n, e.id)).filter(e => !v.includes(e.id)) : C.filter(e => !v.includes(e.id)), [s, C, n, v])
     }({
-      sectionDescriptors: _,
+      sectionDescriptors: y,
       context: t,
       onlyActivityApps: n,
-      includeAuthorizedAppsAndFetch: y
+      includeAuthorizedAppsAndFetch: _
     })
   }
 }

@@ -1,6 +1,6 @@
 /** Chunk was on 21247 **/
 n.d(t, {
-  ZP: () => y,
+  ZP: () => _,
   dt: () => m,
   eo: () => b
 }), n(539854), n(388685);
@@ -60,7 +60,7 @@ function b(e, t, n) {
   } = (0, d.ie)(t, n, e);
   return "section-footer-".concat(e).concat(r ? "-divider" : "").concat(i ? "-voice-summary" : "")
 }
-let y = i.memo(function(e) {
+let _ = i.memo(function(e) {
   let {
     sectionIndex: t,
     guildChannels: n,
@@ -68,13 +68,13 @@ let y = i.memo(function(e) {
     voiceStates: p,
     guildId: m,
     selectedChannelId: b,
-    selectedVoiceChannelId: y,
-    optInEnabled: _
+    selectedVoiceChannelId: _,
+    optInEnabled: y
   } = e, {
-    hasDivider: v,
-    canHaveVoiceSummary: O
-  } = i.useMemo(() => (0, d.ie)(n, _, t), [n, _, t, h]), C = i.useMemo(() => t === u.wZ ? null : n.getCategoryFromSection(t), [n, t, h]), j = (0, s.DM)(m), S = (0, l.Wu)([a.ZP], () => {
-    if (null == C || !C.isCollapsed || !O) return [];
+    hasDivider: O,
+    canHaveVoiceSummary: v
+  } = i.useMemo(() => (0, d.ie)(n, y, t), [n, y, t, h]), C = i.useMemo(() => t === u.wZ ? null : n.getCategoryFromSection(t), [n, t, h]), j = (0, s.DM)(m), S = (0, l.Wu)([a.ZP], () => {
+    if (null == C || !C.isCollapsed || !v) return [];
     let e = C.getChannelRecords(),
       t = [];
     for (let n of e) {
@@ -83,20 +83,20 @@ let y = i.memo(function(e) {
       (!j || e) && t.push(n)
     }
     return t
-  }, [C, O, m, j]), E = i.useMemo(() => (0, c.c4)({
+  }, [C, v, m, j]), E = i.useMemo(() => (0, c.c4)({
     channels: S,
     selectedChannelId: b,
-    selectedVoiceChannelId: y,
+    selectedVoiceChannelId: _,
     voiceStates: p
-  }), [S, b, y, p]);
+  }), [S, b, _, p]);
   if (t === n.voiceChannelsSectionNumber) return (0, r.jsx)(g, {
     guildChannels: n,
     guildChannelsVersion: h
   });
-  let x = v ? (0, r.jsx)("div", {
+  let x = O ? (0, r.jsx)("div", {
     className: f.sectionDivider
   }) : null;
-  return O && 0 !== E.length ? (0, r.jsxs)(r.Fragment, {
+  return v && 0 !== E.length ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: f.voiceUserSummary,
       children: (0, r.jsx)(o.Z, {

@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: 83ebebbb8d2406b3
+  Original File Name: 508bd6db42040687
 **/
 .container__74da2 {
     align-items: center;
@@ -2378,44 +2378,6 @@
 .icon__58921 {
     color: var(--header-secondary);
     margin-right: 4px
-}
-
-.container_c694b6 {
-    padding: 8px
-}
-
-.card_c694b6 {
-    background-color: var(--bg-base-tertiary);
-    border: 1px solid var(--border-subtle);
-    border-radius: 8px;
-    box-shadow: var(--shadow-low);
-    flex-direction: column;
-    padding: 12px;
-    position: relative
-}
-
-.card_c694b6,.eyebrow_c694b6 {
-    display: flex;
-    gap: 8px
-}
-
-.eyebrow_c694b6 {
-    align-items: center;
-    color: var(--yellow-200)
-}
-
-.button_c694b6 {
-    background-color: #fff;
-    border-radius: 8px;
-    color: #000
-}
-
-.dismiss_c694b6 {
-    color: var(--interactive-normal);
-    cursor: pointer;
-    position: absolute;
-    right: 8px;
-    top: 8px
 }
 
 .enable-forced-colors .container__6e9be {
@@ -8699,4 +8661,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=83ebebbb8d2406b3.css.map*/
+/*# sourceMappingURL=508bd6db42040687.css.map*/

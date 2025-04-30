@@ -17,11 +17,11 @@ var r = n(200651),
   g = n(496675),
   m = n(98597),
   b = n(473403),
-  y = n(981631),
-  _ = n(490897),
-  v = n(915887);
+  _ = n(981631),
+  y = n(490897),
+  O = n(915887);
 
-function O(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -37,7 +37,7 @@ function C(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      O(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
@@ -59,11 +59,11 @@ class S extends m.ZP {
       canReorderChannel: s
     } = this.props, a = (0, r.jsx)("li", {
       className: o()(this.getClassName(), {
-        [v.disabled]: this.isDisabled()
+        [O.disabled]: this.isDisabled()
       }),
       "data-dnd-name": e.name,
       children: (0, r.jsxs)(b.ZP, {
-        className: v.iconVisibility,
+        className: O.iconVisibility,
         channel: e,
         selected: t,
         onClick: this.handleClick,
@@ -73,14 +73,14 @@ class S extends m.ZP {
         "aria-label": (0, d.ZP)({
           channel: e
         }),
-        resolvedUnreadSetting: _.i.ONLY_MENTIONS,
+        resolvedUnreadSetting: y.i.ONLY_MENTIONS,
         children: [this.renderInviteButton(), this.renderEditButton()]
       })
     });
     return s ? n(i(a)) : a
   }
   constructor(...e) {
-    super(...e), O(this, "handleContextMenu", e => {
+    super(...e), v(this, "handleContextMenu", e => {
       let {
         channel: t
       } = this.props, i = f.Z.getGuild(t.getGuildId());
@@ -105,15 +105,15 @@ class S extends m.ZP {
           }), l))
         }
       })
-    }), O(this, "handleClick", e => {
+    }), v(this, "handleClick", e => {
       let t = e.getGuildId();
       if (null == t) throw Error("TextChannel, transitionTo: Channel does not have a guildId");
-      (0, h.uL)(y.Z5c.CHANNEL(t, e.id), {
+      (0, h.uL)(_.Z5c.CHANNEL(t, e.id), {
         state: {
           analyticsSource: {
-            page: y.ZY5.GUILD_CHANNEL,
-            section: y.jXE.CHANNEL_LIST,
-            object: y.qAy.CHANNEL
+            page: _.ZY5.GUILD_CHANNEL,
+            section: _.jXE.CHANNEL_LIST,
+            object: _.qAy.CHANNEL
           }
         }
       })
@@ -129,8 +129,8 @@ let E = (0, u.B)(S),
     } = e, l = (0, s.cj)([p.Z, g.Z], () => {
       let e = p.Z.getChannel(t.parent_id);
       return {
-        canManageChannel: g.Z.can(y.Plq.MANAGE_CHANNELS, t),
-        canReorderChannel: !0 !== i && null != e ? g.Z.can(y.Plq.MANAGE_CHANNELS, e) : g.Z.can(y.Plq.MANAGE_CHANNELS, n)
+        canManageChannel: g.Z.can(_.Plq.MANAGE_CHANNELS, t),
+        canReorderChannel: !0 !== i && null != e ? g.Z.can(_.Plq.MANAGE_CHANNELS, e) : g.Z.can(_.Plq.MANAGE_CHANNELS, n)
       }
     });
     return (0, r.jsx)(E, C({}, l, e))
