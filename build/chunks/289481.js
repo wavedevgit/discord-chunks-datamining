@@ -20,8 +20,8 @@ var r = n(200651),
   b = n(324081),
   x = n(305248),
   y = n(520116),
-  E = n(981631),
-  v = n(388032),
+  v = n(981631),
+  E = n(388032),
   O = n(28007);
 
 function j(e) {
@@ -96,12 +96,12 @@ let C = i.memo(function(e) {
         })
       }), null == o || !t.hasLoadedAnything) return null;
     let m = (e, r) => {
-      (0, p.yw)(E.rMx.INBOX_CHANNEL_CLICKED, {
+      (0, p.yw)(v.rMx.INBOX_CHANNEL_CLICKED, {
         channel_id: t.channelId,
         guild_id: t.guildId
       });
       let i = null != r ? r : t.oldestUnreadMessageId;
-      (0, f.uL)(E.Z5c.CHANNEL(t.guildId, t.channelId, "forum" === t.type ? null : i)), n(e)
+      (0, f.uL)(v.Z5c.CHANNEL(t.guildId, t.channelId, "forum" === t.type ? null : i)), n(e)
     };
     return (0, r.jsx)("div", {
       className: O.channel,
@@ -138,7 +138,7 @@ function I(e) {
   } = e, a = (0, m.Z)() && null != t.guildId;
   return (0, r.jsx)(c.M0o, {
     className: O.markReadButton,
-    tooltip: a ? v.intl.string(v.t["5lLMhI"]) : v.intl.string(v.t.e6RscX),
+    tooltip: a ? E.intl.string(E.t["5lLMhI"]) : E.intl.string(E.t.e6RscX),
     color: c.YX$.TERTIARY,
     icon: a ? (0, r.jsx)(c.W6s, {
       size: "xs",
@@ -148,7 +148,7 @@ function I(e) {
       color: "currentColor"
     }),
     onClick: function() {
-      a && null != t.guildId ? i(t.guildId) : n(t), (0, p.yw)(E.rMx.INBOX_CHANNEL_ACKED, {
+      a && null != t.guildId ? i(t.guildId) : n(t), (0, p.yw)(v.rMx.INBOX_CHANNEL_ACKED, {
         channel_id: t.channelId,
         guild_id: t.guildId,
         marked_all_channels_as_read: !1,
@@ -166,7 +166,7 @@ function N(e) {
   } = e;
 
   function l() {
-    n(t), (0, p.yw)(E.rMx.INBOX_CHANNEL_COLLAPSED, {
+    n(t), (0, p.yw)(v.rMx.INBOX_CHANNEL_COLLAPSED, {
       channel_id: t.channelId,
       guild_id: t.guildId,
       num_unread_channels_remaining: i(),
@@ -174,7 +174,7 @@ function N(e) {
     })
   }
   return (0, r.jsx)(c.ua7, {
-    text: v.intl.string(v.t.iTcumZ),
+    text: E.intl.string(E.t.iTcumZ),
     children: e => {
       var n, i;
       return (0, r.jsx)(c.P3F, (n = j({}, e), i = i = {

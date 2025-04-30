@@ -1,7 +1,7 @@
 /** Chunk was on 2900 **/
 n.d(t, {
   W: () => O,
-  u: () => v
+  u: () => E
 }), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685);
 var r, i = n(200651),
   l = n(192379),
@@ -30,7 +30,7 @@ function y() {
   }).apply(this, arguments)
 }
 
-function E(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,12 +48,12 @@ function E(e) {
   }
   return e
 }
-var v = ((r = {})[r.BOT = 0] = "BOT", r[r.ACTIVITY = 1] = "ACTIVITY", r);
+var E = ((r = {})[r.BOT = 0] = "BOT", r[r.ACTIVITY = 1] = "ACTIVITY", r);
 
 function O(e) {
   var t, n, r, a;
   let {
-    title: v,
+    title: E,
     header: O,
     info: j,
     staticBannerSrc: C,
@@ -156,7 +156,7 @@ function O(e) {
             variant: "text-md/semibold",
             color: "none",
             lineClamp: 1,
-            children: v
+            children: E
           }), j]
         }), null == O && (null != U ? U : F)]
       }), A.length > 0 && (0, i.jsx)("div", {
@@ -185,9 +185,9 @@ function O(e) {
                 if (null == e) throw TypeError("Cannot destructure " + e);
                 return e
               }(e));
-              return (0, i.jsx)(c.zxk, E({}, d, t))
+              return (0, i.jsx)(c.zxk, v({}, d, t))
             }
-          }, n) : (0, i.jsx)(c.zxk, E({}, d), n)
+          }, n) : (0, i.jsx)(c.zxk, v({}, d), n)
         })
       })]
     })]

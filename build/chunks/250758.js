@@ -18,7 +18,7 @@ var r, i, l, a = n(442837),
 let x = {},
   y = {};
 
-function E(e) {
+function v(e) {
   let {
     searchId: t,
     query: n,
@@ -29,7 +29,7 @@ function E(e) {
   } = e, o = y[t];
   return null == o && (o = {
     results: [],
-    context: c.Z.getSearchContext(v.bind(null, t))
+    context: c.Z.getSearchContext(E.bind(null, t))
   }, y[t] = o), {
     query: null != n ? n : "",
     mode: null != r ? r : {
@@ -43,7 +43,7 @@ function E(e) {
   }
 }
 
-function v(e, t) {
+function E(e, t) {
   let {
     results: n
   } = t, r = y[e], i = x[e];
@@ -73,7 +73,7 @@ function v(e, t) {
   } = i, {
     autocompletes: p
   } = i;
-  p = C(e, c), x[e] = E({
+  p = C(e, c), x[e] = v({
     searchId: e,
     query: s,
     mode: c,
@@ -194,7 +194,7 @@ function I(e) {
     cursorScope: l,
     autocompletes: a
   } = t;
-  x[e] = E({
+  x[e] = v({
     searchId: e,
     query: n,
     mode: r,
@@ -213,7 +213,7 @@ function N() {
     tokens: r,
     cursorScope: i
   } = x[e];
-  x[e] = E({
+  x[e] = v({
     searchId: e,
     query: t,
     mode: n,
@@ -228,7 +228,7 @@ class T extends(r = a.ZP.Store) {
   }
   getState(e) {
     var t;
-    return null != (t = x[e]) ? t : E({
+    return null != (t = x[e]) ? t : v({
       searchId: e
     })
   }
@@ -262,7 +262,7 @@ let P = new T(o.Z, {
           guild: r
         }), n = s.autocompletes, u = !1) : (c.context.clearQuery(), n = C(r, o))
       }
-      return x[r] = E({
+      return x[r] = v({
         searchId: r,
         query: a,
         mode: o,

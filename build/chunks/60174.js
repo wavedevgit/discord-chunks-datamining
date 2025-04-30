@@ -20,8 +20,8 @@ var r = n(200651),
   b = n(630388),
   x = n(74538),
   y = n(566006),
-  E = n(981631),
-  v = n(185923),
+  v = n(981631),
+  E = n(185923),
   O = n(474936),
   j = n(388032),
   C = n(92254),
@@ -59,8 +59,8 @@ class T extends i.Component {
       tabIndex: o = 0
     } = this.props, {
       isReactionPickerActive: s
-    } = this.state, c = t.state === E.yb.SENDING, m = e === y.O.BURST;
-    if (c || (0, b.yE)(t.flags, E.iLy.EPHEMERAL)) return null;
+    } = this.state, c = t.state === v.yb.SENDING, m = e === y.O.BURST;
+    if (c || (0, b.yE)(t.flags, v.iLy.EPHEMERAL)) return null;
     let f = _.default.getCurrentUser(),
       h = (0, x.I5)(f),
       g = m ? j.intl.string(j.t.Kfcszs) : j.intl.string(j.t.lfIHs7);
@@ -95,8 +95,8 @@ class T extends i.Component {
             onClick: e => {
               this.handleAddReactionClick(e)
             },
-            onMouseEnter: () => (0, d.x)(v.qR.AddReactionPopoutMouseEntered),
-            onFocus: () => (0, d.x)(v.qR.AddReactionPopoutFocused),
+            onMouseEnter: () => (0, d.x)(E.qR.AddReactionPopoutMouseEntered),
+            onFocus: () => (0, d.x)(E.qR.AddReactionPopoutFocused),
             className: a()(O.reactionBtn, {
               [O.active]: c
             }, n),
@@ -142,9 +142,9 @@ class T extends i.Component {
       t !== y.O.BURST || (0, x.I5)(r) || (0, m.m)({
         analytics: {
           type: O.cd.BURST_REACTION_UPSELL,
-          page: null != n.getGuildId() ? E.ZY5.GUILD_CHANNEL : E.ZY5.DM_CHANNEL,
+          page: null != n.getGuildId() ? v.ZY5.GUILD_CHANNEL : v.ZY5.DM_CHANNEL,
           section: (0, h.s4)(n),
-          object: E.qAy.INLINE_REACTION_PICKER_UPSELL
+          object: v.qAy.INLINE_REACTION_PICKER_UPSELL
         }
       }), this.handleReactionPickerToggle()
     }), I(this, "renderReactionPopout", e => {
@@ -158,9 +158,9 @@ class T extends i.Component {
         openPopoutType: "message_reaction_emoji_picker"
       }, n === y.O.BURST && {
         openPopoutType: "message_super_reaction_emoji_picker",
-        page: null != i.getGuildId() ? E.ZY5.GUILD_CHANNEL : E.ZY5.DM_CHANNEL,
+        page: null != i.getGuildId() ? v.ZY5.GUILD_CHANNEL : v.ZY5.DM_CHANNEL,
         section: (0, h.s4)(i),
-        object: E.qAy.REACTION_RAIL
+        object: v.qAy.REACTION_RAIL
       }), o = (0, r.jsx)(g.$, {
         closePopout: t,
         channel: i,

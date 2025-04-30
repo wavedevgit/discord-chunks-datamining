@@ -22,7 +22,7 @@ function f(e) {
     guild: f,
     nick: j,
     onSelect: v
-  } = e, x = (0, o.ZP)(), O = t.hasAvatarForGuild(f.id), y = null != j ? j : u.ZP.getName(null == f ? void 0 : f.id, void 0, t);
+  } = e, x = (0, o.ZP)(), O = t.hasAvatarForGuild(f.id);
   return (0, n.jsxs)(l.P3F, {
     focusProps: {
       offset: {
@@ -92,10 +92,10 @@ function f(e) {
           size: l.EFr.SIZE_16,
           className: m.avatar,
           "aria-hidden": !0
-        }), y]
-      }), !O && (0, n.jsx)("div", {
+        }), null != j ? j : u.ZP.getName(f.id, void 0, t)]
+      }), !O && null != j && (0, n.jsx)("div", {
         className: m.nick,
-        children: y
+        children: j
       })]
     })]
   })
