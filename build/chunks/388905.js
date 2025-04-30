@@ -353,9 +353,9 @@ let R = e => {
     } = e;
     return (0, r.jsx)(a.f6W, {
       theme: u,
+      disableAdaptiveTheme: !0,
       children: e => (0, r.jsxs)(i, {
         "data-theme": u,
-        "data-disable-adaptive-theme": !0,
         onSubmit: s,
         style: d,
         className: o()(c ? m.authBoxExpanded : m.authBox, e, t),

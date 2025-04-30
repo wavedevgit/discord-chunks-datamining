@@ -31,9 +31,9 @@ function x(e) {
   } = (0, i.cj)([c.default, d.Z], () => ({
     currentUser: c.default.getCurrentUser(),
     multiAccountUsers: d.Z.getUsers()
-  })), [w, k] = r.useState(!1), [R, P] = r.useState(f.lds), [y, N] = r.useState(null);
+  })), [w, k] = r.useState(!1), [R, P] = r.useState(f.lds), [y, A] = r.useState(null);
   r.useEffect(() => {
-    if (w) N((0, n.jsx)(a.Wn, {
+    if (w) A((0, n.jsx)(a.Wn, {
       messageType: a.QYI.ERROR,
       className: g.infoMessage,
       children: m.intl.format(m.t.HAuRSE, {
@@ -42,7 +42,7 @@ function x(e) {
     })), P(f.lds);
     else if (null != R) {
       let e = c.default.getUser(R);
-      null != e && N((0, n.jsx)(a.Wn, {
+      null != e && A((0, n.jsx)(a.Wn, {
         messageType: a.QYI.POSITIVE,
         className: g.infoMessage,
         children: m.intl.format(m.t["09qidX"], {
@@ -56,8 +56,8 @@ function x(e) {
     type: o.ImpressionTypes.MODAL,
     name: 0 === x ? o.ImpressionNames.MULTI_ACCOUNT_SWITCH_LANDING : o.ImpressionNames.USER_LOGIN
   });
-  let A = null;
-  return 0 === x ? A = (0, n.jsxs)(n.Fragment, {
+  let N = null;
+  return 0 === x ? N = (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)(a.xBx, {
       separator: !1,
       children: (0, n.jsxs)("div", {
@@ -105,7 +105,7 @@ function x(e) {
         })
       })]
     })]
-  }) : 1 === x && (A = (0, n.jsx)(u.Z, {
+  }) : 1 === x && (N = (0, n.jsx)(u.Z, {
     onClose: () => {
       b(0)
     }
@@ -117,7 +117,7 @@ function x(e) {
     children: (0, n.jsx)(a.qBt, {
       step: x,
       steps: [0, 1],
-      children: A
+      children: N
     })
   })
 }

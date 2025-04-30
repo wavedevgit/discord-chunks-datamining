@@ -70,7 +70,8 @@ let d = c({
     contrast: 1,
     saturation: 1,
     density: "compact",
-    disableAdaptiveTheme: !1
+    disableAdaptiveTheme: !1,
+    reduceAdaptiveTheme: !1
   }),
   f = i.createContext(d);
 
