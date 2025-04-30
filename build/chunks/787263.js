@@ -4,16 +4,16 @@ n.d(t, {
 });
 var i = n(200651);
 n(192379);
-var a = n(481060);
+var l = n(481060);
 
 function r(e, t) {
-  return (0, a.ZDy)(async () => {
+  return (0, l.ZDy)(async () => {
     let {
-      default: a
+      default: l
     } = await Promise.all([n.e("42743"), n.e("30557")]).then(n.bind(n, 207540));
     return n => {
-      var r, l;
-      return (0, i.jsx)(a, (r = function(e) {
+      var r, a;
+      return (0, i.jsx)(l, (r = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             i = Object.keys(n);
@@ -30,20 +30,20 @@ function r(e, t) {
           })
         }
         return e
-      }({}, n), l = l = {
+      }({}, n), a = a = {
         onConfirm: () => {
           n.onClose(), t()
         },
         channel: e
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var i = Object.getOwnPropertySymbols(e);
           n.push.apply(n, i)
         }
         return n
-      })(Object(l)).forEach(function(e) {
-        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
+      })(Object(a)).forEach(function(e) {
+        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
       }), r))
     }
   })

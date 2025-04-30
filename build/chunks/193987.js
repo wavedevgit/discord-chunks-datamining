@@ -1,24 +1,24 @@
 /** Chunk was on 22356 **/
-e.d(n, {
-  Z: () => o
+e.d(t, {
+  Z: () => s
 });
 var i = e(200651);
 e(192379);
-var r = e(481060),
-  l = e(346479),
+var l = e(481060),
+  r = e(346479),
   a = e(665906),
-  s = e(388032);
+  o = e(388032);
 
-function o(t) {
-  let n = (0, a.Xb)(t),
-    e = t.isLockedThread();
-  if (n) return e ? (0, i.jsx)(r.sNh, {
+function s(n) {
+  let t = (0, a.Xb)(n),
+    e = n.isLockedThread();
+  if (t) return e ? (0, i.jsx)(l.sNh, {
     id: "unlock-thread",
-    label: t.isForumPost() ? s.intl.string(s.t["/OKSxs"]) : s.intl.string(s.t["jeyb/f"]),
-    action: () => l.Z.unlockThread(t)
-  }) : (0, i.jsx)(r.sNh, {
+    label: n.isForumPost() ? o.intl.string(o.t["/OKSxs"]) : o.intl.string(o.t["jeyb/f"]),
+    action: () => r.Z.unlockThread(n)
+  }) : (0, i.jsx)(l.sNh, {
     id: "lock-thread",
-    label: t.isForumPost() ? s.intl.string(s.t["Ur/0NT"]) : s.intl.string(s.t.HoCqm5),
-    action: () => l.Z.lockThread(t)
+    label: n.isForumPost() ? o.intl.string(o.t["Ur/0NT"]) : o.intl.string(o.t.HoCqm5),
+    action: () => r.Z.lockThread(n)
   })
 }
