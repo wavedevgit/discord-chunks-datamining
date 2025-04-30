@@ -1,6 +1,6 @@
 /**
   Module ID: 2900
-  Original File Name: 64539385fdecbe92
+  Original File Name: 9735bf09f77b388f
 **/
 .descriptionText__535f5 {
     color: var(--header-secondary);
@@ -7271,7 +7271,8 @@ html .progress__61462 {
 .content__235ca {
     font-size: 1rem;
     font-weight: 400;
-    line-height: 1.375rem
+    line-height: 1.375rem;
+    z-index: 1
 }
 
 .content__235ca a {
@@ -11693,4 +11694,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=64539385fdecbe92.css.map*/
+/*# sourceMappingURL=9735bf09f77b388f.css.map*/
