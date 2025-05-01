@@ -270,12 +270,12 @@ let h = e => {
             children: [(0, r.jsx)(o.RyX, {
               onClick: () => i(D.L.USER_DISMISS),
               noticeType: f.kVF.REPORT_TO_MOD_SURVEY
-            }), y.intl.string(y.t.G1AFm5), (0, r.jsx)(o.NoS, {
+            }), y.intl.string(y.t["Aa+l7e"]), (0, r.jsx)(o.NoS, {
               onClick: () => {
                 i(D.L.TAKE_ACTION)
               },
               noticeType: f.kVF.REPORT_TO_MOD_SURVEY,
-              children: y.intl.string(y.t["LPxt+P"])
+              children: y.intl.string(y.t["iT+wQ0"])
             })]
           })
       }
