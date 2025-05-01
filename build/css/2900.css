@@ -1,6 +1,6 @@
 /**
   Module ID: 2900
-  Original File Name: 8323c4a7b1bc14f4
+  Original File Name: 7f7ddce8cea9e726
 **/
 .descriptionText__535f5 {
     color: var(--header-secondary);
@@ -6316,13 +6316,6 @@ html .progress__61462 {
 }
 
 .mainContent__083ae {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin: 8px 0 0;
-    overflow-wrap: anywhere;
-    padding: 0 16px 16px;
-    text-align: flex-start;
     z-index: 0
 }
 
@@ -11693,4 +11686,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=8323c4a7b1bc14f4.css.map*/
+/*# sourceMappingURL=7f7ddce8cea9e726.css.map*/

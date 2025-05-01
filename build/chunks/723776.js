@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  F: () => E
+  F: () => m
 });
 var r = n(200651),
   i = n(192379),
@@ -15,29 +15,7 @@ var r = n(200651),
   f = n(176354),
   _ = n(942466);
 
-function p(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-  }) : e[t] = n, e
-}
-
-function h(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      p(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function m(e) {
+function p(e) {
   let {
     emoji: t,
     shouldAnimate: n
@@ -53,7 +31,7 @@ function m(e) {
   })
 }
 
-function g(e) {
+function h(e) {
   let {
     trait: t,
     ellipsize: n
@@ -63,7 +41,7 @@ function g(e) {
     className: a()(_.trait, {
       [_.ellipsize]: n
     }),
-    children: [(0, r.jsx)(m, {
+    children: [(0, r.jsx)(p, {
       emoji: t.emoji,
       shouldAnimate: f
     }), (0, r.jsx)(l.Text, {
@@ -76,12 +54,10 @@ function g(e) {
   })
 }
 
-function E(e) {
+function m(e) {
   let {
-    profile: t
-  } = e, n = i.useMemo(() => t.traits.map((e, t) => h({
-    key: "trait-".concat(t)
-  }, e)).filter(e => e.label.length > 0), [t]), o = i.useCallback((e, t) => "string" == typeof e ? (0, r.jsx)("div", {
+    items: t
+  } = e, n = i.useCallback((e, t) => "string" == typeof e ? (0, r.jsx)("div", {
     className: a()(_.trait, {
       [_.ellipsize]: t.ellipsize
     }),
@@ -91,22 +67,22 @@ function E(e) {
       color: "text-normal",
       children: e
     })
-  }, "overflow") : (0, r.jsx)(g, {
+  }, "overflow") : (0, r.jsx)(h, {
     trait: e,
     ellipsize: t.ellipsize
-  }, e.key), []), s = i.useCallback(e => o(e, {
+  }, e.key), []), o = i.useCallback(e => n(e, {
     ellipsize: !0
-  }), [o]), c = i.useCallback(e => o(e, {
+  }), [n]), s = i.useCallback(e => n(e, {
     ellipsize: !1
-  }), [o]), u = i.useCallback(e => (0, r.jsx)(l.te1, {
+  }), [n]), c = i.useCallback(e => (0, r.jsx)(l.te1, {
     items: e,
-    renderItem: c
-  }), [c]);
-  return 0 === n.length ? null : (0, r.jsx)(l.Epb, {
+    renderItem: s
+  }), [s]);
+  return 0 === t.length ? null : (0, r.jsx)(l.Epb, {
     className: _.container,
-    items: n,
-    renderItem: s,
-    renderOverflow: u,
+    items: t,
+    renderItem: o,
+    renderOverflow: c,
     maxLines: 2,
     itemGapPx: 4
   })
