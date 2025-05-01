@@ -487,7 +487,7 @@ let W = e => {
           }) : null)]
         })
       }) : null)
-    }) : (0, r.jsx)(M.Z, {
+    }) : t ? null : (0, r.jsx)(M.Z, {
       channelName: i.name,
       guildId: i.guild_id,
       tagFilter: s,
