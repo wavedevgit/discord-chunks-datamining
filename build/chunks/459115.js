@@ -9,13 +9,22 @@ let l = (0, r.B)({
   id: "2025-04_custom_status_rtc_entrypoint",
   label: "Custom Status RTC Entrypoint Experiment",
   defaultConfig: {
-    enabled: !1
+    customStatusRTCEntrypointEnabled: !1,
+    customStatusHoverOnlyRTCEntrypointEnabled: !1
   },
   treatments: [{
     id: 1,
     label: "Enable custom status RTC entrypoint",
     config: {
-      enabled: !0
+      customStatusRTCEntrypointEnabled: !0,
+      customStatusHoverOnlyRTCEntrypointEnabled: !1
+    }
+  }, {
+    id: 2,
+    label: "Enable custom status RTC entrypoint on hover",
+    config: {
+      customStatusRTCEntrypointEnabled: !1,
+      customStatusHoverOnlyRTCEntrypointEnabled: !0
     }
   }]
 });
