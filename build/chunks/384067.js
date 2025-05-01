@@ -35,14 +35,14 @@ let h = e => {
   }, []);
   let y = null != C ? C : "",
     {
-      handleCardVisibilityChange: k
+      handleCardVisibilityChange: S
     } = (0, d.E)(y, "home", "marketing wide banner"),
-    S = h.bannerUrl;
-  if (null == S) return null;
+    k = h.bannerUrl;
+  if (null == k) return null;
   let P = _ === b.AW.ORBS;
   return (0, r.jsx)(o.$, {
     innerRef: v,
-    onChange: k,
+    onChange: S,
     threshold: 0,
     children: (0, r.jsxs)("div", {
       ref: v,
@@ -55,7 +55,7 @@ let h = e => {
         }),
         children: (0, r.jsx)("img", {
           ref: x,
-          src: S,
+          src: k,
           alt: h.title,
           className: i()(g.wideBannerArt, {
             [g.wideBannerArtOrbs]: P

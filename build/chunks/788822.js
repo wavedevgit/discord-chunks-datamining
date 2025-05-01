@@ -33,7 +33,7 @@ let g = e => {
     } = (0, b.YG)(h, m),
     j = l.useRef(null),
     y = v === o.T.NAMEPLATE,
-    k = y ? p.intl.string(p.t["/Rk1dn"]) : null == m ? void 0 : m.bodyText;
+    S = y ? p.intl.string(p.t["/Rk1dn"]) : null == m ? void 0 : m.bodyText;
   return (0, r.jsx)(s.$, {
     innerRef: j,
     onChange: x,
@@ -49,7 +49,7 @@ let g = e => {
         disableColor: !0,
         text: _,
         className: f.featuredBlockBadge
-      }), null != k && (0, r.jsx)(c.X6q, {
+      }), null != S && (0, r.jsx)(c.X6q, {
         lineClamp: 4,
         className: i()(f.featuredBlockBodyText, {
           [f.featuredBlockNameplate]: y
@@ -58,7 +58,7 @@ let g = e => {
           color: null != (a = null == m ? void 0 : m.bannerTextColor) ? a : "white"
         },
         variant: "heading-lg/semibold",
-        children: k
+        children: S
       }), (0, r.jsx)(c.zxk, {
         className: f.featuredBlockButton,
         color: c.Ttl.WHITE,

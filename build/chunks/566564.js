@@ -34,10 +34,10 @@ let j = e => {
     } = e, {
       noCache: x,
       includeUnpublished: j
-    } = (0, f.Z)(), y = (0, c.sp)(), k = null != (t = null == y ? void 0 : y.sessionId) ? t : "";
+    } = (0, f.Z)(), y = (0, c.sp)(), S = null != (t = null == y ? void 0 : y.sessionId) ? t : "";
     l.useEffect(() => {
       (0, b.n)({
-        sessionId: k,
+        sessionId: S,
         checkpoint: b.a.SHOP_MOUNTED,
         tab: u,
         isFullScreen: v,
@@ -46,7 +46,7 @@ let j = e => {
       })
     }, [u]);
     let {
-      isFetchingShopHome: S,
+      isFetchingShopHome: k,
       fetchShopHomeError: P,
       shopBlocks: E,
       refreshShopHome: B
@@ -56,38 +56,38 @@ let j = e => {
       includeBundles: !0,
       logPerf: !0
     }, {
-      sessionId: k,
+      sessionId: S,
       tab: u,
       isFullScreen: v
     }), w = l.useCallback(() => {
       B()
     }, [B]);
     if (l.useEffect(() => {
-        null != P || S || 0 === E.length || (0, b.n)({
-          sessionId: k,
+        null != P || k || 0 === E.length || (0, b.n)({
+          sessionId: S,
           checkpoint: b.a.SHOP_RENDERED,
           tab: u,
           isFullScreen: v,
           unpublishedCategoriesShown: j,
           cacheDisabled: x
         })
-      }, [P, S, E.length, j, x, k, u, v]), null != P) return (0, r.jsx)(p.Z, {
+      }, [P, k, E.length, j, x, S, u, v]), null != P) return (0, r.jsx)(p.Z, {
       onRetry: w,
       errorOrigin: p.i.SHOP_PAGE,
       errorMessage: P.message
     });
-    if (S || 0 === E.length) return (0, r.jsxs)("div", {
+    if (k || 0 === E.length) return (0, r.jsxs)("div", {
       className: O.loadingContainer,
       children: [(0, r.jsx)(m.Z, {
-        isLoading: S,
+        isLoading: k,
         handleTransition: n,
         tab: u
       }), (0, r.jsx)(g.Z, {
-        isLoading: S,
+        isLoading: k,
         handleTransition: n,
         categories: []
       }), (0, r.jsx)(h.Z, {
-        isLoading: S,
+        isLoading: k,
         handleTransition: n,
         numVisibleItems: a,
         rankedSkuIds: [],
@@ -100,7 +100,7 @@ let j = e => {
       switch (e.type) {
         case o.z.HERO:
           l = (0, r.jsx)(m.Z, {
-            isLoading: S,
+            isLoading: k,
             handleTransition: n,
             heroBlock: e,
             tab: u
@@ -108,14 +108,14 @@ let j = e => {
           break;
         case o.z.FEATURED:
           l = (0, r.jsx)(g.Z, {
-            isLoading: S,
+            isLoading: k,
             handleTransition: n,
             featuredBlockRecord: e
           }, t);
           break;
         case o.z.FEED:
           l = (0, r.jsx)(h.Z, {
-            isLoading: S || s,
+            isLoading: k || s,
             handleTransition: n,
             numVisibleItems: a,
             rankedSkuIds: e.rankedSkuIds,

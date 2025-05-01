@@ -25,8 +25,8 @@ var r = n(200651),
   O = n(81136),
   j = n(619899),
   y = n(302800),
-  k = n(215023),
-  S = n(474936),
+  S = n(215023),
+  k = n(474936),
   P = n(484920);
 
 function E(e) {
@@ -59,7 +59,7 @@ function E(e) {
           product: e,
           user: u,
           isGiftEasterEggEnabled: c,
-          tab: k.AW.CATALOG
+          tab: S.AW.CATALOG
         }, e.skuId)
       }, e.skuId))
     })]
@@ -141,7 +141,7 @@ function w(e) {
       },
       children: (0, r.jsx)(d.Z, {
         idleAnimationState: u.SR.IDLE,
-        giftStyle: S.Cj.BOX
+        giftStyle: k.Cj.BOX
       })
     }), (0, r.jsx)(C.Z, {
       category: t,
@@ -179,7 +179,7 @@ function I(e) {
     (0, m.n)({
       sessionId: f,
       checkpoint: m.a.SHOP_MOUNTED,
-      tab: k.AW.CATALOG,
+      tab: S.AW.CATALOG,
       isFullScreen: d,
       unpublishedCategoriesShown: h,
       cacheDisabled: g
@@ -188,7 +188,7 @@ function I(e) {
     n || 0 === a.length || (0, m.n)({
       sessionId: f,
       checkpoint: m.a.SHOP_RENDERED,
-      tab: k.AW.CATALOG,
+      tab: S.AW.CATALOG,
       isFullScreen: d,
       unpublishedCategoriesShown: h,
       cacheDisabled: g

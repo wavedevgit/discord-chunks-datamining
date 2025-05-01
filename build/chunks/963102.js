@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  I: () => S
+  I: () => k
 }), n(539854);
 var r = n(200651),
   l = n(192379),
@@ -26,7 +26,7 @@ var r = n(200651),
   j = n(388032),
   y = n(774457);
 
-function k(e) {
+function S(e) {
   let {
     tab: t,
     displayText: n,
@@ -43,12 +43,12 @@ function k(e) {
   })
 }
 
-function S(e) {
+function k(e) {
   let {
     isFullScreen: t,
     isLayer: n,
     onClose: a,
-    selectedTab: S,
+    selectedTab: k,
     handleTransition: P
   } = e, E = (0, b.ZP)(), B = (0, s.e7)([_.default], () => _.default.getCurrentUser()), w = (null == B ? void 0 : B.isStaff()) || (null == B ? void 0 : B.isStaffPersonal()) || !1, {
     enabled: I
@@ -66,7 +66,7 @@ function S(e) {
     displayText: j.intl.string(j.t["KUYR+P"])
   });
   let L = n ? v.DR : a,
-    N = S === x.AW.ORBS ? O.ZY5.SHOP_ORBS_TAB : O.ZY5.COLLECTIBLES_SHOP,
+    N = k === x.AW.ORBS ? O.ZY5.SHOP_ORBS_TAB : O.ZY5.COLLECTIBLES_SHOP,
     A = l.useCallback(() => {
       t && (L(), (0, u.Ou)()), (0, g.Y)({
         pageType: N,
@@ -95,10 +95,10 @@ function S(e) {
             tab: t,
             displayText: n
           } = e;
-          return (0, r.jsx)(k, {
+          return (0, r.jsx)(S, {
             tab: t,
             displayText: n,
-            selected: S === t,
+            selected: k === t,
             handleTransition: P
           }, t)
         })
