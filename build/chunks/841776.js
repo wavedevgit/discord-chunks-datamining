@@ -1,23 +1,23 @@
 /** Chunk was on 13912 **/
 n.d(l, {
-  H: () => o
+  H: () => s
 });
-var t = n(200651),
-  r = n(426642),
+var r = n(200651),
+  t = n(426642),
   a = n(839388);
-let o = e => {
+let s = e => {
   let {
     error: l,
     uploadErrorCode: n
   } = e;
-  return null == l && null == n ? null : null != n ? (0, t.jsx)(r.Z, {
+  return null == l && null == n ? null : null != n ? (0, r.jsx)(t.Z, {
     error: {
       type: n,
       filename: ""
     }
-  }) : (0, t.jsx)("div", {
+  }) : (0, r.jsx)("div", {
     className: a.errorBanner,
-    children: (0, t.jsx)("p", {
+    children: (0, r.jsx)("p", {
       children: l
     })
   })
