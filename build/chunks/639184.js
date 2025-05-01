@@ -1,7 +1,7 @@
 /** Chunk was on 49131 **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => x
 });
 var r = n(200651);
 n(192379);
@@ -18,7 +18,7 @@ var i = n(120356),
   g = n(602512),
   f = n(504764);
 
-function p(e) {
+function x(e) {
   let {
     onDismiss: t
   } = e;

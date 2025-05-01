@@ -1,7 +1,8 @@
-/** Chunk was on 41372 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  I: () => r
+  I: () => o
 });
-var i = n(149765),
-  c = n(981631);
-let r = i.$e(c.Plq.ADMINISTRATOR, c.Plq.BAN_MEMBERS, c.Plq.KICK_MEMBERS, c.Plq.MODERATE_MEMBERS)
+var r = n(149765),
+  i = n(981631);
+let o = r.$e(i.Plq.ADMINISTRATOR, i.Plq.BAN_MEMBERS, i.Plq.KICK_MEMBERS, i.Plq.MODERATE_MEMBERS)

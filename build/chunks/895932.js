@@ -22,7 +22,7 @@ function m(e) {
     sortOrder: m,
     layoutType: h,
     tagSetting: g
-  } = (0, o.H)(t.id), f = (0, o.v)(), p = t.isMediaChannel(), x = e => {
+  } = (0, o.H)(t.id), f = (0, o.v)(), x = t.isMediaChannel(), p = e => {
     (0, c.KR)({
       guildId: t.guild_id,
       channelId: t.id,
@@ -41,7 +41,7 @@ function m(e) {
     className: u.container,
     children: (0, r.jsxs)(s.v2r, {
       navId: "sort-and-view",
-      "aria-label": p ? d.intl.string(d.t["kQN/bm"]) : d.intl.string(d.t.DJzbkJ),
+      "aria-label": x ? d.intl.string(d.t["kQN/bm"]) : d.intl.string(d.t.DJzbkJ),
       hideScroller: !0,
       onClose: n,
       onSelect: n,
@@ -51,13 +51,13 @@ function m(e) {
           id: "sort-by-recent-activity",
           group: "sort-by",
           label: d.intl.string(d.t.jOPmcH),
-          action: () => x(a.z.LATEST_ACTIVITY),
+          action: () => p(a.z.LATEST_ACTIVITY),
           checked: m === a.z.LATEST_ACTIVITY
         }), (0, r.jsx)(s.k5B, {
           id: "sort-by-date-posted",
           group: "sort-by",
           label: d.intl.string(d.t.UIltXV),
-          action: () => x(a.z.CREATION_DATE),
+          action: () => p(a.z.CREATION_DATE),
           checked: m === a.z.CREATION_DATE
         })]
       }), t.isMediaChannel() ? null : (0, r.jsxs)(s.kSQ, {
@@ -100,7 +100,7 @@ function m(e) {
             children: d.intl.string(d.t["3b//lJ"])
           }),
           action: () => {
-            x(t.getDefaultSortOrder()), b(t.getDefaultLayout()), j(t.getDefaultTagSetting())
+            p(t.getDefaultSortOrder()), b(t.getDefaultLayout()), j(t.getDefaultTagSetting())
           }
         })
       })]

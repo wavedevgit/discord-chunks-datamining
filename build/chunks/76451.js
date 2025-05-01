@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => T,
-  _: () => P
+  _: () => N
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(859235),
   g = n(898463),
   f = n(592125),
-  p = n(703558),
-  x = n(117530),
+  x = n(703558),
+  p = n(117530),
   b = n(585483),
   j = n(127654),
   v = n(228392),
@@ -41,7 +41,7 @@ let y = {
     friction: 52
   };
 
-function P(e) {
+function N(e) {
   let {
     channelId: t,
     onClick: n,
@@ -68,7 +68,7 @@ function P(e) {
       className: _.fileInput,
       ref: u,
       onChange: e => {
-        null == l || l(), (0, j.d)(e.currentTarget.files, m, p.d.FirstThreadMessage, {
+        null == l || l(), (0, j.d)(e.currentTarget.files, m, x.d.FirstThreadMessage, {
           requireConfirm: !0
         }), b.S.dispatch(C.CkL.TEXTAREA_FOCUS), e.currentTarget.value = null
       },
@@ -85,7 +85,7 @@ function P(e) {
   })
 }
 
-function N(e) {
+function P(e) {
   let {
     channelId: t,
     closePopout: n
@@ -95,7 +95,7 @@ function N(e) {
     from: d.enabled ? O : y,
     to: w,
     config: S
-  }, "animate-always"), p = (0, o.e7)([u.Z], () => u.Z.keyboardModeEnabled), b = (0, o.e7)([x.Z], () => x.Z.getUploads(t, m.Ie.CREATE_FORUM_POST.drafts.type));
+  }, "animate-always"), x = (0, o.e7)([u.Z], () => u.Z.keyboardModeEnabled), b = (0, o.e7)([p.Z], () => p.Z.getUploads(t, m.Ie.CREATE_FORUM_POST.drafts.type));
   return (0, r.jsx)(s.animated.div, {
     className: _.popoutContainer,
     onMouseLeave: () => {
@@ -107,7 +107,7 @@ function N(e) {
       className: _.popout,
       paddingFix: !1,
       fade: !0,
-      children: [(0, r.jsx)(P, {
+      children: [(0, r.jsx)(N, {
         channelId: t,
         onClick: () => {
           a(!0)
@@ -121,7 +121,7 @@ function N(e) {
           channelId: t,
           draftType: m.Ie.CREATE_FORUM_POST.drafts.type,
           upload: e,
-          keyboardModeEnabled: p,
+          keyboardModeEnabled: x,
           hideFileName: !0,
           size: h.q.SMALL
         }, e.id))
@@ -133,7 +133,7 @@ function N(e) {
 function T(e) {
   let {
     channelId: t
-  } = e, [n, l] = i.useState(!1), a = (0, o.e7)([x.Z], () => x.Z.getUploads(t, m.Ie.CREATE_FORUM_POST.drafts.type)), s = a.length, c = s > 0;
+  } = e, [n, l] = i.useState(!1), a = (0, o.e7)([p.Z], () => p.Z.getUploads(t, m.Ie.CREATE_FORUM_POST.drafts.type)), s = a.length, c = s > 0;
   i.useEffect(() => {
     n && !c && l(!1)
   }, [n, c]);
@@ -151,10 +151,10 @@ function T(e) {
         className: _.badge,
         children: s
       })]
-    }) : (0, r.jsx)(P, {
+    }) : (0, r.jsx)(N, {
       onMouseEnter: d,
       channelId: t
-    }), n && (0, r.jsx)(N, {
+    }), n && (0, r.jsx)(P, {
       channelId: t,
       closePopout: () => {
         l(!1)

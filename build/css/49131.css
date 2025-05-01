@@ -1,6 +1,6 @@
 /**
   Module ID: 49131
-  Original File Name: 6ee1a38e23fe0647
+  Original File Name: caa36b1ed9c4a301
 **/
 .container_c6ad88 {
     background-color: var(--background-primary);
@@ -299,6 +299,65 @@
     .highlightVideo_c6ad88 {
         display: none
     }
+}
+
+.header_cba043 {
+    color: var(--text-default)
+}
+
+.text_cba043 {
+    align-items: center;
+    display: flex;
+    gap: var(--spacing-4)
+}
+
+.inlineContainer_cba043 {
+    align-items: center;
+    border-radius: var(--radius-sm);
+    box-sizing: border-box;
+    cursor: pointer;
+    line-height: 1.5em;
+    margin: 2px 0;
+    padding: 0 var(--spacing-4);
+    position: relative;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none
+}
+
+.inlineButton_cba043 {
+    background: var(--card-primary-bg);
+    border: 1px solid var(--border-strong);
+    box-shadow: inset 0 -4px 0 0 rgba(0,0,0,.12),0 2px 0 0 rgba(0,0,0,.2);
+    display: inline-block
+}
+
+.full-motion .inlineButton_cba043 {
+    transition: box-shadow .1s ease-in-out,transform .2s ease
+}
+
+.inlineButton_cba043:active,.inlineButton_cba043:hover {
+    border: 1px solid hsla(0,0%,100%,.5)
+}
+
+.inlineButton_cba043:active {
+    background: var(--card-primary-pressed-bg);
+    box-shadow: none
+}
+
+.full-motion .inlineButton_cba043:active {
+    transform: translateY(2px)
+}
+
+.inlineButton_cba043.playing_cba043 {
+    border: 1px solid var(--button-outline-positive-border)
+}
+
+.soundmojiEmoji_cba043 {
+    line-height: 1.5em;
+    margin-bottom: 1.5px;
+    width: 1em!important
 }
 
 .container__93db4 {
@@ -2202,4 +2261,4 @@
     color: var(--text-link)
 }
 
-/*# sourceMappingURL=6ee1a38e23fe0647.css.map*/
+/*# sourceMappingURL=caa36b1ed9c4a301.css.map*/

@@ -17,13 +17,13 @@ var r = n(442837),
   f = n(726521),
   g = n(982168),
   m = n(594174),
-  h = n(970257),
-  b = n(921944),
+  b = n(970257),
+  h = n(921944),
   p = n(388032),
   O = n(776571);
 
 function y(e) {
-  return (0, h.a4)(e) ? (0, i.jsx)(a.sNh, {
+  return (0, b.a4)(e) ? (0, i.jsx)(a.sNh, {
     id: "report",
     label: p.intl.string(p.t.GwbdGR),
     action: () => (0, f.ak)(e, "web_message_context_menu"),
@@ -42,7 +42,7 @@ function E() {
       return t === l.z.REPORT_TO_MOD_NEW_TAG ? (0, i.jsx)(a.IGR, {
         color: s.Z.BG_BRAND,
         text: p.intl.string(p.t.y2b7CA)
-      }) : (0, i.jsx)(a._XJ, {
+      }) : (0, i.jsx)(a.U65, {
         color: "currentColor",
         size: "refresh_sm"
       })
@@ -53,14 +53,14 @@ function E() {
 function v(e) {
   return ((0, o.zq)(() => {
     (0, u.EW)(l.z.REPORT_TO_MOD_NEW_TAG, {
-      dismissAction: b.L.AUTO_DISMISS
+      dismissAction: h.L.AUTO_DISMISS
     })
   }), (0, g.sP)(e)) ? (0, i.jsx)(a.sNh, {
     id: "report-to-mod",
     label: p.intl.string(O.default["1D+vq6"]),
     action: () => {
       (0, u.EW)(l.z.REPORT_TO_MOD_NEW_TAG, {
-        dismissAction: b.L.USER_DISMISS
+        dismissAction: h.L.USER_DISMISS
       }), (0, f.tV)(e)
     },
     icon: (0, i.jsx)(E, {})
@@ -70,7 +70,7 @@ function v(e) {
 function j(e) {
   let t = (0, r.e7)([c.ZP], () => c.ZP.get("iar_testing")),
     n = (0, r.e7)([m.default], () => m.default.getCurrentUser());
-  return (0, h.a4)(e) && null != n && n.isStaff() && t ? (0, i.jsx)(a.sNh, {
+  return (0, b.a4)(e) && null != n && n.isStaff() && t ? (0, i.jsx)(a.sNh, {
     id: "staff-test-message-report",
     label: "[STAFF] Test Message Report",
     action: () => (0, f.Jw)(e, "web_message_context_menu"),

@@ -1,4 +1,4 @@
-/** Chunk was on 21247 **/
+/** Chunk was on 53745 **/
 n.d(t, {
   Z: () => _
 });
@@ -52,7 +52,7 @@ function _(e) {
         return e = t.id, !!(0, o.lv)(e) && ((0, a.uL)(f.Z5c.CHANNEL(e, null == (n = u.Z.getGuild(e)) ? void 0 : n.getModeratorReportChannelId())), !0)
       },
       id: "report-to-mod-".concat(t.id),
-      renderIcon: e => (0, r.jsx)(l._XJ, {
+      renderIcon: e => (0, r.jsx)(l.U65, {
         size: "md",
         color: "currentColor",
         className: e

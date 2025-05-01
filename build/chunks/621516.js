@@ -16,8 +16,8 @@ var r = n(200651),
   h = n(70097),
   g = n(961675),
   f = n(883429),
-  p = n(432771),
-  x = n(406074),
+  x = n(432771),
+  p = n(406074),
   b = n(434404),
   j = n(430824),
   v = n(63063),
@@ -27,8 +27,8 @@ var r = n(200651),
   O = n(461238),
   w = n(906739),
   S = n(965358),
-  P = n(420196),
-  N = n(433075);
+  N = n(420196),
+  P = n(433075);
 
 function T(e) {
   let {
@@ -127,7 +127,7 @@ let E = e => {
   var t, n;
   let {
     channel: l
-  } = e, h = (0, u.ZP)(), E = (0, c.wj)(h), k = (0, o.e7)([j.Z], () => j.Z.getGuild(l.guild_id)), R = (0, o.e7)([m.Z], () => m.Z.useReducedMotion), Z = (0, o.e7)([g.Z], () => g.Z.hasHidden(l.id)), M = (0, x.C)({
+  } = e, h = (0, u.ZP)(), E = (0, c.wj)(h), k = (0, o.e7)([j.Z], () => j.Z.getGuild(l.guild_id)), R = (0, o.e7)([m.Z], () => m.Z.useReducedMotion), Z = (0, o.e7)([g.Z], () => g.Z.hasHidden(l.id)), M = (0, p.C)({
     guildId: l.guild_id,
     channelId: l.id
   }), {
@@ -137,7 +137,7 @@ let E = e => {
     L(!1), f.Z.hideAdminOnboarding(l.id, !0)
   }, [l, L]);
   i.useEffect(() => {
-    (0, p.c)(l.id) || L(!Z)
+    (0, x.c)(l.id) || L(!Z)
   }, [l, L, Z]);
   let D = i.useMemo(() => [y.intl.string(y.t["8pEGAw"]), y.intl.string(y.t.jwfgDQ), y.intl.string(y.t.mPKs29), y.intl.string(y.t.StRbvL)], []),
     z = i.useMemo(() => [y.intl.string(y.t["m/b58P"]), y.intl.string(y.t.MuJSKy), y.intl.string(y.t["d/Wqvr"]), y.intl.string(y.t.GJklAw)], []),
@@ -245,7 +245,7 @@ let E = e => {
             children: (0, r.jsxs)("div", {
               className: O.contentImageContainer,
               children: [(0, r.jsx)("img", {
-                src: E ? P : N,
+                src: E ? N : P,
                 alt: "",
                 className: a()(O.previewEmbedImage, O.secondaryImage)
               }), (0, r.jsx)("img", {

@@ -16,8 +16,8 @@ var r = n(200651),
   h = n(841762),
   g = n(25610),
   f = n(406432),
-  p = n(169525),
-  x = n(255269),
+  x = n(169525),
+  p = n(255269),
   b = n(930282),
   j = n(524444),
   v = n(695346),
@@ -27,8 +27,8 @@ var r = n(200651),
   O = n(456269),
   w = n(109590),
   S = n(368844),
-  P = n(73315),
-  N = n(404616),
+  N = n(73315),
+  P = n(404616),
   T = n(510060),
   I = n(983200),
   E = n(196255),
@@ -106,8 +106,8 @@ function H(e) {
     coords: h,
     gridCoords: g,
     gridSectionBoundaries: f,
-    observePostVisibilityAnalytics: p
-  } = e, b = (0, o.e7)([_.Z], () => _.Z.getChannel(n.parent_id)), j = n.id, P = i.useRef(null), I = (0, o.e7)([C.ZP], () => C.ZP.getCurrentSidebarChannelId(n.parent_id) === n.id), {
+    observePostVisibilityAnalytics: x
+  } = e, b = (0, o.e7)([_.Z], () => _.Z.getChannel(n.parent_id)), j = n.id, N = i.useRef(null), I = (0, o.e7)([C.ZP], () => C.ZP.getCurrentSidebarChannelId(n.parent_id) === n.id), {
     firstMessage: z,
     loaded: B
   } = (0, w.cl)(n), {
@@ -130,16 +130,16 @@ function H(e) {
     channel: n
   });
   i.useEffect(() => {
-    null == p || p(P.current, j)
-  }, [p, j]);
+    null == x || x(N.current, j)
+  }, [x, j]);
   let Q = (0, o.e7)([y.Z], () => y.Z.can(A.Plq.MANAGE_MESSAGES, n)),
     $ = v.QK.useSetting(),
     ee = v.cC.useSetting(),
-    et = (0, x.Z)(ee, Q),
+    et = (0, p.Z)(ee, Q),
     en = (0, S.aU)(z, b, !1),
     [er, ei] = (0, T.rI)(h.width - 2 * T.LT),
     el = (0, O.xw)(n, s.z.CREATION_DATE, M.R6.POSTED_DURATION_AGO),
-    ea = (0, N.NN)(n),
+    ea = (0, P.NN)(n),
     es = (null == z ? void 0 : z.blocked) || null == (null != u ? u : H),
     eo = (0, R.nX)({
       id: t,
@@ -168,7 +168,7 @@ function H(e) {
     }(eo, ["onFocus"]),
     eu = n.isMediaPost();
   return (0, r.jsxs)("li", {
-    ref: P,
+    ref: N,
     onClick: J,
     onFocus: ec,
     onContextMenu: Y,
@@ -179,7 +179,7 @@ function H(e) {
     children: [(0, r.jsx)(d.P3F, D({
       onClick: J,
       focusProps: {
-        ringTarget: P
+        ringTarget: N
       },
       onContextMenu: Y,
       "aria-label": L.intl.formatToPlainString(L.t.pgYN6e, {
@@ -269,7 +269,7 @@ function U(e) {
       className: F.controlsGroup,
       children: [(0, r.jsx)("div", {
         className: F.messageCountContainer,
-        children: (0, r.jsx)(N.m9, {
+        children: (0, r.jsx)(P.m9, {
           channel: t,
           iconSize: 16,
           showReadState: !0
@@ -280,7 +280,7 @@ function U(e) {
           children: "•"
         }), (0, r.jsxs)("div", {
           className: F.typing,
-          children: [(0, r.jsx)(N.og, {
+          children: [(0, r.jsx)(P.og, {
             channel: t,
             userIds: l,
             facepileRef: n
@@ -299,10 +299,10 @@ function U(e) {
       }) : null]
     }), (0, r.jsxs)("div", {
       className: F.controlsGroup,
-      children: [a || null == i ? null : (0, r.jsx)(N.kZ, {
+      children: [a || null == i ? null : (0, r.jsx)(P.kZ, {
         firstMessage: i,
         channel: t
-      }), null == i ? null : (0, r.jsx)(N.au, {
+      }), null == i ? null : (0, r.jsx)(P.au, {
         firstMessage: i,
         channel: t
       })]
@@ -328,17 +328,17 @@ let V = e => e.preventDefault(),
     } = e, {
       containsVideo: u,
       containsGif: m
-    } = i.useMemo(() => (0, S.cp)(t), [t]), x = i.useMemo(() => t.slice(I.$x, I.GV), [t]), b = (0, I.tu)({
-      numAttachments: x.length,
+    } = i.useMemo(() => (0, S.cp)(t), [t]), p = i.useMemo(() => t.slice(I.$x, I.GV), [t]), b = (0, I.tu)({
+      numAttachments: p.length,
       containerWidth: l,
       containerHeight: s
     }), j = (0, I.S$)({
       imageContainerStyles: b,
       containerWidth: l,
       containerHeight: s
-    }), v = (0, g.m)(), C = i.useMemo(() => x.map((e, t) => {
+    }), v = (0, g.m)(), C = i.useMemo(() => p.map((e, t) => {
       var i;
-      let [l, s] = (0, p.As)(e, !n, v), g = (0, p.MC)(s), x = z(D({}, j[t]), {
+      let [l, s] = (0, x.As)(e, !n, v), g = (0, x.MC)(s), p = z(D({}, j[t]), {
         src: e.src,
         width: e.width,
         height: e.height,
@@ -349,21 +349,21 @@ let V = e => e.preventDefault(),
       return (0, r.jsxs)("div", {
         className: F.bodyMediaFrame,
         style: b[t],
-        children: [c ? (0, r.jsx)(h.Z, z(D({}, x), {
+        children: [c ? (0, r.jsx)(h.Z, z(D({}, p), {
           src: _,
           backgroundSrc: C,
-          aspectRatio: x.maxWidth / x.maxHeight,
-          alt: null != (i = x.alt) ? i : "",
+          aspectRatio: p.maxWidth / p.maxHeight,
+          alt: null != (i = p.alt) ? i : "",
           className: a()(F.mediaPostContainer, {
             [F.obscured]: l
           }),
           imageChildClassName: F.mediaPostThumbnail
-        })) : e.src.startsWith("data:") ? (0, r.jsx)(d.Eep, z(D({}, x), {
+        })) : e.src.startsWith("data:") ? (0, r.jsx)(d.Eep, z(D({}, p), {
           className: F.mediaContainer,
           imageClassName: a()(F.thumbnailOverride, {
             [F.obscured]: l
           })
-        })) : (0, r.jsx)(G, z(D({}, x), {
+        })) : (0, r.jsx)(G, z(D({}, p), {
           autoPlay: o && !l,
           containerClassName: F.mosaicMediaContainer,
           imageClassName: a()(F.imageCover, {
@@ -372,13 +372,13 @@ let V = e => e.preventDefault(),
           responsive: !0
         })), l && (0, r.jsx)("div", {
           className: F.obscuredTagContainer,
-          children: (0, r.jsx)(P.Z, {
+          children: (0, r.jsx)(N.Z, {
             obscureReason: s,
             iconClassname: F.obscuredTag
           })
         })]
       }, e.src)
-    }), [o, m, u, n, b, j, x, c, v]);
+    }), [o, m, u, n, b, j, p, c, v]);
     return (0, r.jsxs)("div", {
       className: F.bodyMedia,
       style: {

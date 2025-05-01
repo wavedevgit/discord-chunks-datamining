@@ -14,8 +14,8 @@ var i = n(200651),
   f = n(175006),
   g = n(742989),
   m = n(898150),
-  h = n(70956),
-  b = n(388032);
+  b = n(70956),
+  h = n(388032);
 
 function p(e) {
   let {
@@ -32,7 +32,7 @@ function p(e) {
       savedMessage: n
     } = e, [l, o] = r.useState(new Date);
     r.useEffect(() => {
-      let e = setInterval(() => o(new Date), h.Z.Millis.MINUTE);
+      let e = setInterval(() => o(new Date), b.Z.Millis.MINUTE);
       return () => {
         clearInterval(e)
       }
@@ -54,13 +54,13 @@ function p(e) {
         type: u.hQ.LONG
       });
     return (null == n ? void 0 : n.saveData.dueAt) == null ? (0, i.jsx)(a.kSQ, {
-      label: b.intl.string(b.t.roMu1N),
+      label: h.intl.string(h.t.roMu1N),
       children: d
     }) : (0, i.jsxs)(a.kSQ, {
       label: f,
       children: [(0, i.jsx)(a.sNh, {
         id: "mark-complete",
-        label: b.intl.string(b.t.yjGtdH),
+        label: h.intl.string(h.t.yjGtdH),
         icon: a.kmB,
         action: () => (0, c.z)({
           channelId: t.channel_id,
@@ -69,7 +69,7 @@ function p(e) {
         })
       }), (0, i.jsx)(a.sNh, {
         id: "edit-reminder",
-        label: b.intl.string(b.t.vrbqs7),
+        label: h.intl.string(h.t.vrbqs7),
         children: d
       })]
     })
@@ -79,7 +79,7 @@ function p(e) {
   });
   return t || n ? null != p || (0, f.Z)() ? (0, i.jsxs)(a.sNh, {
     id: "save-for-later",
-    label: b.intl.string(b.t.tpxJtr),
+    label: h.intl.string(h.t.tpxJtr),
     action: () => null == p ? (0, c.z)({
       channelId: e.channel_id,
       messageId: e.id,
@@ -92,7 +92,7 @@ function p(e) {
     }),
     children: [null != p ? (0, i.jsx)(a.sNh, {
       id: "remove-from-for-later",
-      label: b.intl.string(b.t.SvXS1d),
+      label: h.intl.string(h.t.SvXS1d),
       icon: a.plf,
       action: () => (0, c.x)({
         channelId: e.channel_id,
@@ -102,7 +102,7 @@ function p(e) {
       })
     }) : (0, i.jsx)(a.sNh, {
       id: "create-bookmark",
-      label: b.intl.string(b.t["9p3D9v"]),
+      label: h.intl.string(h.t["9p3D9v"]),
       icon: a.gt9,
       action: () => (0, c.z)({
         channelId: e.channel_id,
@@ -112,7 +112,7 @@ function p(e) {
     }), (0, i.jsx)(a.Clw, {}), O]
   }) : (0, i.jsx)(a.sNh, {
     id: "save-for-later-upsell",
-    label: b.intl.string(b.t.tpxJtr),
+    label: h.intl.string(h.t.tpxJtr),
     icon: a.SrA,
     iconProps: {
       color: o.JX.PREMIUM_TIER_2
