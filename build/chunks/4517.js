@@ -256,15 +256,7 @@ let ee = i.forwardRef(function(e, t) {
     location: "CustomStatusBubble"
   }), P = (0, m.Z)({
     location: "UserProfileCustomStatusBubble"
-  }), w = null != d ? Z : 0, D = null != I && P ? q : 0, x = H + w + D, j = Y + w + D, U = i.useRef(null), G = i.useRef(null), B = i.useRef(null), V = i.useRef(x), F = i.useRef(j), X = null != d && null == p && null == I, [J, $] = i.useState(!1), [ee, et] = i.useState(!0), [en, er] = i.useState(!X && S), ei = S && J;
-  i.useLayoutEffect(() => {
-    if ($(!0), null == G.current || null == B.current || !ei) return;
-    let e = G.current.getBoundingClientRect().height,
-      t = B.current.getBoundingClientRect().height;
-    er(t > e), V.current = e, F.current = t
-  }, [ei, p, d, I]);
-  let eo = (0, l.e7)([f.Z], () => f.Z.useReducedMotion),
-    [ea] = i.useState(() => new c.V7);
+  }), w = null != d ? Z : 0, D = null != I && P ? q : 0, x = H + w + D, j = Y + w + D, U = i.useRef(null), G = i.useRef(null), B = i.useRef(null), V = i.useRef(x), F = i.useRef(j), X = null != d && null == p && null == I, [J, $] = i.useState(!1), [ee, et] = i.useState(!0), [en, er] = i.useState(!X && S), ei = S && J, eo = (0, l.e7)([f.Z], () => f.Z.useReducedMotion), [ea] = i.useState(() => new c.V7);
   i.useEffect(() => () => ea.stop(), [ea]), i.useEffect(() => {
     null == T || T.onInteractionPopoutTargetRefChange(U)
   }, [T]);
@@ -275,12 +267,15 @@ let ee = i.forwardRef(function(e, t) {
       duration: W
     }
   }));
-  i.useEffect(() => {
-    J && el({
-      maxHeight: "".concat(Math.min(V.current, x), "px"),
+  i.useLayoutEffect(() => {
+    if ($(!0), null == G.current || null == B.current || !ei) return;
+    let e = G.current.getBoundingClientRect().height,
+      t = B.current.getBoundingClientRect().height;
+    er(t > e), V.current = e, F.current = t, el({
+      maxHeight: "".concat(Math.min(ee ? V.current : F.current, ee ? x : j), "px"),
       immediate: !0
     })
-  }, [J, I, el, x]);
+  }, [ei, p, d, I, el, ee, x, j]);
   let ec = e => {
       en && (e ? el({
         maxHeight: "".concat(Math.min(F.current, j), "px"),
