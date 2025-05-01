@@ -135,14 +135,14 @@ function x(e) {
     location: "UserProfileStackedActivity",
     stream: k,
     profileGuildId: null == o ? void 0 : o.guildId
-  }, en))), M.forEach(e => {
+  }, en), "stream")), M.forEach((e, t) => {
     et.push((0, r.jsx)(b.Z, N({
       activity: e,
       profileGuildId: null == o ? void 0 : o.guildId
-    }, en)))
+    }, en), "live-".concat(t)))
   }), F && et.push((0, r.jsx)(O.Z, N({
     voiceChannel: j
-  }, en)));
+  }, en), "voice"));
   let [er, ...ei] = et, eo = ei.length > 0, ea = null != A && eo ? (0, r.jsx)(l.zxk, {
     look: l.zxk.Looks.BLANK,
     size: l.zxk.Sizes.NONE,
