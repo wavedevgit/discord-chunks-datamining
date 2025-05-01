@@ -47,12 +47,12 @@ let x = (0, o.hQ)(),
         guildIcon: s.icon,
         guildIconSize: 32
       })
-    }, [C]), N = r.useCallback(e => {
+    }, [C]), I = r.useCallback(e => {
       let t = e[0];
       return null == t ? null : (0, i.jsx)(i.Fragment, {
         children: T(t)
       })
-    }, [T]), I = r.useCallback(e => {
+    }, [T]), N = r.useCallback(e => {
       j(h.L.TAKE_ACTION), null == o || o(e)
     }, [j, o]), y = r.useCallback(e => e === S, [S]), A = r.useCallback(e => e, []), P = r.useCallback(() => {
       j(h.L.TAKE_ACTION), null == o || o(null)
@@ -74,8 +74,8 @@ let x = (0, o.hQ)(),
         optionClassName: _.selectPopout,
         isSelected: y,
         options: v,
-        select: I,
-        renderOptionValue: N,
+        select: N,
+        renderOptionValue: I,
         renderOptionLabel: T,
         serialize: A,
         clear: P,

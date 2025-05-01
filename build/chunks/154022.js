@@ -26,8 +26,8 @@ var i = n(200651),
   S = n(196051),
   v = n(441729),
   T = n(626135),
-  N = n(63063),
-  I = n(695346),
+  I = n(63063),
+  N = n(695346),
   y = n(263937),
   A = n(996073),
   P = n(526761),
@@ -130,7 +130,7 @@ function Y(e) {
 }
 
 function K() {
-  let e = I.jU.useSetting(),
+  let e = N.jU.useSetting(),
     [t] = r.useState(() => {
       let e = (0, _.e5)(V(U({}, (0, x.ZP)({
         channelId: "1337",
@@ -301,7 +301,7 @@ function $() {
     null != s.current && (clearTimeout(s.current), s.current = null), t !== e && (s.current = setTimeout(() => (0, p.qz)(t), 150))
   }, [t, e]);
   let l = k.intl.format(k.t.GwEVEx, {
-    learnMoreLink: N.Z.getArticleURL(D.BhN.FORCED_COLORS)
+    learnMoreLink: I.Z.getArticleURL(D.BhN.FORCED_COLORS)
   });
   return (0, i.jsx)(d.xJW, {
     title: k.intl.string(k.t.TYyfOz),
@@ -319,8 +319,8 @@ function $() {
 }
 
 function ee() {
-  let e = I.QK.useSetting(),
-    t = I.Yk.useSetting(),
+  let e = N.QK.useSetting(),
+    t = N.Yk.useSetting(),
     {
       useReducedMotion: n,
       rawPrefersReducedMotion: s,
@@ -350,7 +350,7 @@ function ee() {
       type: d.R94.Types.DESCRIPTION,
       className: M.marginBottom8,
       children: k.intl.format(k.t["2l9U2t"], {
-        helpdeskArticle: N.Z.getArticleURL(D.BhN.REDUCED_MOTION)
+        helpdeskArticle: I.Z.getArticleURL(D.BhN.REDUCED_MOTION)
       })
     }), (0, i.jsx)(d.XZJ, {
       className: l()(M.marginTop20, M.marginBottom20),
@@ -375,7 +375,7 @@ function ee() {
         className: M.marginBottom20,
         value: e,
         note: null != o ? (0, C.Z)(o) : void 0,
-        onChange: I.QK.updateSetting,
+        onChange: N.QK.updateSetting,
         children: k.intl.string(k.t.Iayoh4)
       })
     }), (0, i.jsx)(O.F, {
@@ -384,7 +384,7 @@ function ee() {
         className: M.marginBottom20,
         value: t,
         note: null != u ? (0, C.Z)(u) : void 0,
-        onChange: I.Yk.updateSetting,
+        onChange: N.Yk.updateSetting,
         children: k.intl.string(k.t.iIaOlZ)
       })
     })]
@@ -392,10 +392,10 @@ function ee() {
 }
 
 function et() {
-  let e = I.Wp.useSetting(),
+  let e = N.Wp.useSetting(),
     t = (0, c.e7)([y.Z], () => y.Z.getAppliedOverrideReasonKey("animateStickers")),
     n = r.useCallback(e => {
-      I.Wp.updateSetting(e.value)
+      N.Wp.updateSetting(e.value)
     }, []);
   return (0, i.jsxs)(d.xJW, {
     className: M.marginTop20,
@@ -424,7 +424,7 @@ function et() {
 
 function en() {
   let e = (0, c.e7)([g.Z], () => g.Z.isSubmitButtonEnabled),
-    t = I.dN.useSetting(),
+    t = N.dN.useSetting(),
     n = r.useRef(null);
   return (0, A.Z)(n, P.rP.LEGACY_CHAT_INPUT), (0, i.jsxs)(d.xJW, {
     ref: n,
@@ -452,7 +452,7 @@ function en() {
             location: {
               section: D.jXE.SETTINGS_ACCESSIBILITY
             }
-          }), I.dN.updateSetting(e)
+          }), N.dN.updateSetting(e)
         },
         children: k.intl.string(k.t.TZ2hZG)
       })
@@ -461,7 +461,7 @@ function en() {
 }
 
 function ei() {
-  let e = I.OW.useSetting(),
+  let e = N.OW.useSetting(),
     t = (0, c.e7)([v.Z], () => v.Z.speechRate),
     [n, s] = r.useState(!1);
   return m.Zh ? (0, i.jsxs)(i.Fragment, {
@@ -477,7 +477,7 @@ function ei() {
           children: (0, i.jsx)(d.j7V, {
             className: M.marginTop20,
             value: e,
-            onChange: I.OW.updateSetting,
+            onChange: N.OW.updateSetting,
             children: k.intl.string(k.t.qvTIwc)
           })
         })]

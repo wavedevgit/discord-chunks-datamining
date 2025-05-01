@@ -58,7 +58,7 @@ function T(e, t) {
   }), e
 }
 
-function N(e, t) {
+function I(e, t) {
   if (null == e) return {};
   var n, i, r = function(e, t) {
     if (null == e) return {};
@@ -73,7 +73,7 @@ function N(e, t) {
   }
   return r
 }
-let I = {
+let N = {
     payment_type: C.Zuq[C.GZQ.ONE_TIME],
     is_gift: !1,
     eligible_for_trial: !1,
@@ -95,7 +95,7 @@ let I = {
       currency: C.pKx.DISCORD_ORB
     }, null != s && {
       source: s
-    }, I))
+    }, N))
   },
   A = () => {
     let {
@@ -126,7 +126,7 @@ let I = {
         currency: C.pKx.DISCORD_ORB
       }), null != u && {
         source: u
-      }, I)
+      }, N)
     }, [i, e, l, o, u, a]);
     return {
       emitOrbCheckoutPaymentFlowEvent: (0, r.useCallback)(e => {
@@ -171,23 +171,23 @@ let I = {
       isRedeeming: O,
       orbRedemptionError: S,
       orbProductContext: v
-    } = (0, j.C)(), T = (0, _.c)(), N = (0, r.useRef)(T);
+    } = (0, j.C)(), T = (0, _.c)(), I = (0, r.useRef)(T);
     (0, l.ZP)(() => {
       f(C.rMx.PAYMENT_FLOW_LOADED)
     }), (0, r.useEffect)(() => {
       d === u.A.COMPLETED && n()
     }, [d, n]), (0, r.useEffect)(() => {
-      null != S && null !== N.current && (f(C.rMx.PAYMENT_FLOW_FAILED), N.current = null)
+      null != S && null !== I.current && (f(C.rMx.PAYMENT_FLOW_FAILED), I.current = null)
     }, [S, f]);
-    let I = (0, r.useCallback)(() => {
-      N.current = T, f(C.rMx.PAYMENT_FLOW_COMPLETED), x(() => {
+    let N = (0, r.useCallback)(() => {
+      I.current = T, f(C.rMx.PAYMENT_FLOW_COMPLETED), x(() => {
         m(u.A.COMPLETED), f(C.rMx.PAYMENT_FLOW_SUCCEEDED)
       })
     }, [x, m, T, f]);
     if (null == o || null == p) return (0, i.jsx)(s.$jN, {
       type: s.$jN.Type.WANDERING_CUBES
     });
-    let y = null != (t = N.current) ? t : T,
+    let y = null != (t = I.current) ? t : T,
       P = null != v ? v.orbPriceAmount : null;
     return (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(g.Z, {}), (0, i.jsxs)(h.C3, {
@@ -203,7 +203,7 @@ let I = {
           orbPriceAmount: P,
           orbBalance: y,
           isSubmitting: O,
-          onClickCheckout: I
+          onClickCheckout: N
         })
       })]
     })
@@ -224,7 +224,7 @@ let I = {
     var {
       skuId: t,
       analyticsLocations: n = []
-    } = e, s = N(e, ["skuId", "analyticsLocations"]);
+    } = e, s = I(e, ["skuId", "analyticsLocations"]);
     let {
       orbProductContext: l
     } = (0, j.C)(), {
@@ -258,7 +258,7 @@ let I = {
       onCheckoutSuccess: r,
       analyticsSourceLocation: s,
       analyticsLocations: l = []
-    } = e, a = N(e, ["skuId", "loadId", "onCheckoutSuccess", "analyticsSourceLocation", "analyticsLocations"]);
+    } = e, a = I(e, ["skuId", "loadId", "onCheckoutSuccess", "analyticsSourceLocation", "analyticsLocations"]);
     return (0, i.jsx)(c.PaymentContextProvider, {
       applicationId: (0, b.N)(t),
       activeSubscription: null,

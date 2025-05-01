@@ -26,8 +26,8 @@ var i = n(200651),
   S = n(388032),
   v = n(589608),
   T = n(34997),
-  N = n(20493),
-  I = n(926895);
+  I = n(20493),
+  N = n(926895);
 
 function y(e) {
   let {
@@ -68,7 +68,7 @@ function A() {
       className: T.linkingBannerUpper,
       children: [(0, i.jsxs)("div", {
         children: [(0, i.jsx)(c.X6q, {
-          className: N.marginBottom8,
+          className: I.marginBottom8,
           variant: "heading-xl/medium",
           children: (0, i.jsx)(c.y5t, {
             children: S.intl.string(O.default.pHEnV1)
@@ -76,12 +76,12 @@ function A() {
         }), (0, i.jsx)(c.Text, {
           variant: "text-sm/medium",
           color: "text-muted",
-          className: N.marginBottom20,
+          className: I.marginBottom20,
           children: S.intl.string(O.default["1J/gZ2"])
         })]
       }), (0, i.jsx)("img", {
         className: T.bannerArt,
-        src: I,
+        src: N,
         alt: S.intl.string(O.default["r+PDmp"])
       })]
     }), (0, i.jsxs)("div", {
@@ -109,7 +109,7 @@ function P() {
     className: l()(T.box, v.box, T.linkingBanner),
     children: [(0, i.jsxs)("div", {
       children: [(0, i.jsx)(c.X6q, {
-        className: N.marginBottom8,
+        className: I.marginBottom8,
         variant: "heading-xl/medium",
         children: (0, i.jsx)(c.y5t, {
           children: S.intl.string(O.default.zUCWEB)
@@ -117,14 +117,14 @@ function P() {
       }), (0, i.jsx)(c.Text, {
         variant: "text-sm/medium",
         color: "text-muted",
-        className: N.marginBottom20,
+        className: I.marginBottom20,
         children: S.intl.format(O.default.yMnoDg, {
           link: "https://support.discord.com/hc/articles/14155060633623"
         })
       }), e ? null : (0, i.jsx)(b.Z, {})]
     }), (0, i.jsx)("img", {
       className: T.bannerArt,
-      src: I,
+      src: N,
       alt: S.intl.string(O.default["r+PDmp"])
     })]
   })
@@ -151,7 +151,7 @@ function R(e) {
     }, l.id)
   }, [s, t]), g = r.useCallback(() => (0, i.jsx)(u.Z, {
     children: (0, i.jsx)(c.Text, {
-      className: N.marginBottom8,
+      className: I.marginBottom8,
       variant: "eyebrow",
       color: "header-secondary",
       children: n
@@ -234,7 +234,7 @@ let D = () => {
     }) : (0, i.jsxs)("div", {
       className: T.section,
       children: [(0, i.jsx)(c.Text, {
-        className: N.marginBottom8,
+        className: I.marginBottom8,
         variant: "eyebrow",
         color: "header-secondary",
         children: s
@@ -279,7 +279,7 @@ let D = () => {
         helpLink: C.$l
       })).otherwise(() => null);
     return null == n ? null : (0, i.jsxs)("div", {
-      className: l()(T.__invalid_helpLineInfo, N.marginTop20),
+      className: l()(T.__invalid_helpLineInfo, I.marginTop20),
       children: [(0, i.jsx)(c.X6q, {
         className: T.supportHeader,
         variant: "heading-sm/semibold",

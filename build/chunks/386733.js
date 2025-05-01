@@ -45,7 +45,7 @@ function T(e) {
   return e
 }
 
-function N(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -57,7 +57,7 @@ function N(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = e => {
+let N = e => {
     let {
       userRecord: t,
       placement: n
@@ -81,7 +81,7 @@ let I = e => {
       text: O.intl.string(O.t.UnKHdn),
       shouldShow: !l,
       tooltipContentClassName: S.unsentTooltipContent,
-      children: e => (0, i.jsx)("div", N(T({
+      children: e => (0, i.jsx)("div", I(T({
         className: S.userAvatarProgressBarUnit
       }, e), {
         children: a
@@ -111,19 +111,19 @@ let I = e => {
     } = e, n = t.length, r = n < 1 ? null : t[0], s = n < 2 ? null : t[1], l = n < 3 ? null : t[2];
     return (0, i.jsxs)("div", {
       className: S.userAvatarProgressBarContainer,
-      children: [(0, i.jsx)(I, {
+      children: [(0, i.jsx)(N, {
         userRecord: r,
         placement: 1
       }), (0, i.jsx)(y, {
         numSentReferrals: n,
         placement: 1
-      }), (0, i.jsx)(I, {
+      }), (0, i.jsx)(N, {
         userRecord: s,
         placement: 2
       }), (0, i.jsx)(y, {
         numSentReferrals: n,
         placement: 2
-      }), (0, i.jsx)(I, {
+      }), (0, i.jsx)(N, {
         userRecord: l,
         placement: 3
       })]
@@ -134,7 +134,7 @@ let I = e => {
       isInSettings: t = !1
     } = e, s = (0, a.e7)([f.Z], () => f.Z.getRecipientStatus()), {
       referralSentUsers: u
-    } = (0, _.G)(), I = r.useMemo(() => u.map(e => new m.Z(e)), [u]), {
+    } = (0, _.G)(), N = r.useMemo(() => u.map(e => new m.Z(e)), [u]), {
       subscriberHomeVariant: y
     } = b.g.useExperiment({
       location: "ReferralProgramProgressBar"
@@ -173,7 +173,7 @@ let I = e => {
               hasSentAll: D
             })
           }), (0, i.jsx)(A, {
-            userRecords: I
+            userRecords: N
           }), (0, i.jsx)(o.Text, {
             variant: t ? "text-sm/normal" : "text-lg/medium",
             children: (0, j.Hg)({
@@ -202,7 +202,7 @@ let I = e => {
                   let {
                     default: e
                   } = await n.e("47435").then(n.bind(n, 204387));
-                  return t => (0, i.jsx)(e, N(T({}, t), {
+                  return t => (0, i.jsx)(e, I(T({}, t), {
                     sourceAnalyticsLocations: w
                   }))
                 })

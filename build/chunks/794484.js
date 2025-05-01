@@ -56,7 +56,7 @@ let E = e => {
       headerClassname: S,
       isFullScreen: v = !0,
       shouldAutoScroll: T = !1
-    } = e, N = r.useRef(null), I = (0, u.Er)(), y = (0, m.v)(I), A = s === f.R0.WHATS_NEW, P = (0, u.IY)(), R = (0, g.x)();
+    } = e, I = r.useRef(null), N = (0, u.Er)(), y = (0, m.v)(N), A = s === f.R0.WHATS_NEW, P = (0, u.IY)(), R = (0, g.x)();
     r.useEffect(() => {
       A && !y && (P(), R())
     }, [P, R, A, y]);
@@ -65,7 +65,7 @@ let E = e => {
       },
       Z = y && A;
     (0, p.r)({
-      ref: N,
+      ref: I,
       shouldScroll: Z || T,
       onScrollEnd: D,
       onCleanup: D
@@ -81,7 +81,7 @@ let E = e => {
         perksCards: k,
         variant: s,
         isFullScreen: v,
-        showTenureCard: null == I ? void 0 : I.showCard,
+        showTenureCard: null == N ? void 0 : N.showCard,
         isPremiumSubscriber: L,
         fractionalState: M,
         isInReverseTrial: B
@@ -95,7 +95,7 @@ let E = e => {
         className: x.confettiCanvas,
         environment: H.current
       }), (0, i.jsxs)("div", {
-        ref: N,
+        ref: I,
         className: l()(x.section, {
           [x.centerAlignSection]: !C,
           [x.leftAlignSection]: C

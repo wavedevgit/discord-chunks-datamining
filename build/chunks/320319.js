@@ -26,8 +26,8 @@ var i = n(200651),
   S = n(658370),
   v = n(735825),
   T = n(981631),
-  N = n(921944),
-  I = n(388032),
+  I = n(921944),
+  N = n(388032),
   y = n(344253);
 
 function A(e) {
@@ -118,7 +118,7 @@ let R = {
     return (r.useEffect(() => {
       k && L && (U(!0), f.default.track(T.rMx.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
         card_type: t
-      }), null != s && Q(N.L.TAKE_ACTION))
+      }), null != s && Q(I.L.TAKE_ACTION))
     }, [k, L, s, t, Q]), (0, p.Z)({
       type: o.ImpressionTypes.VIEW,
       name: o.ImpressionNames.PREMIUM_MARKETING_TENURE_REWARD_CARD,
@@ -208,7 +208,7 @@ let R = {
           onTransitionEnd: e => {
             L && "transform" === e.propertyName && e.target.classList.contains(y.flipCard) && (U(!0), f.default.track(T.rMx.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
               card_type: t
-            }), null != s && Q(N.L.TAKE_ACTION))
+            }), null != s && Q(I.L.TAKE_ACTION))
           },
           children: [(0, i.jsx)("div", {
             className: y.flipCardHidden,
@@ -228,7 +228,7 @@ let R = {
             className: y.flipCardButtonContainer,
             children: (0, i.jsx)(u.zxk, {
               onClick: () => M(!0),
-              children: I.intl.string(I.t.dcztdX)
+              children: N.intl.string(N.t.dcztdX)
             })
           })]
         })
@@ -258,11 +258,11 @@ let Z = r.forwardRef((e, t) => {
     pillText: j,
     perkImage: v,
     imageOverlayText: T
-  } = e, N = b === C.R0.CARD_CAROUSEL_FIRST_ROW || b === C.R0.CARD_CAROUSEL_SECOND_ROW || b === C.R0.CARD_CAROUSEL_THIRD_ROW, I = "" !== o || "" !== c || "" !== a && f === C.zW.REWARD, A = (0, x._)(f);
+  } = e, I = b === C.R0.CARD_CAROUSEL_FIRST_ROW || b === C.R0.CARD_CAROUSEL_SECOND_ROW || b === C.R0.CARD_CAROUSEL_THIRD_ROW, N = "" !== o || "" !== c || "" !== a && f === C.zW.REWARD, A = (0, x._)(f);
   return (0, i.jsxs)(u.P3F, {
     className: l()(y.card, g, null == (n = A.cardContainer) ? void 0 : n.className, {
       [y.clickable]: null != _,
-      [y.hideOverflow]: N
+      [y.hideOverflow]: I
     }),
     onMouseEnter: p,
     style: {
@@ -280,14 +280,14 @@ let Z = r.forwardRef((e, t) => {
       titleClassName: s,
       subtitle: a,
       perkImage: v,
-      isCarousel: N,
+      isCarousel: I,
       descriptionCta: c,
       onCtaClick: m,
       perkComponent: h,
       subtitleClassName: y.cardSubtitle,
       cardVariant: f,
       imageOverlayText: T
-    }), I && (0, i.jsx)(S.Z, {
+    }), N && (0, i.jsx)(S.Z, {
       title: r,
       titleClassName: s,
       subtitle: a,

@@ -26,8 +26,8 @@ var i = n(200651),
   S = n(115345),
   v = n(392888),
   T = n(106371),
-  N = n(995774),
-  I = n(921801),
+  I = n(995774),
+  N = n(921801),
   y = n(460181),
   A = n(292959),
   P = n(9156),
@@ -198,7 +198,7 @@ function K(e) {
       sound: "reconnect"
     }],
     g = null != x.Z.useHolidaySoundpack();
-  return (0, i.jsx)(I.F, {
+  return (0, i.jsx)(N.F, {
     setting: M.s6.NOTIFICATIONS_SOUNDS,
     children: (0, i.jsxs)(u.hjN, {
       children: [g ? (0, i.jsxs)(i.Fragment, {
@@ -248,7 +248,7 @@ function q() {
         value: n.guildId
       }
     });
-  return 0 === Object.keys(e).length ? null : (0, i.jsxs)(I.F, {
+  return 0 === Object.keys(e).length ? null : (0, i.jsxs)(N.F, {
     setting: M.s6.NOTIFICATIONS_COMMUNITY_ACTIVITY_ALERTS,
     children: [(0, i.jsxs)(u.X6q, {
       variant: "heading-lg/semibold",
@@ -269,7 +269,7 @@ function q() {
         options: s
       }), null != t ? (0, i.jsxs)("div", {
         className: F.marginTop20,
-        children: [(0, i.jsxs)(I.F, {
+        children: [(0, i.jsxs)(N.F, {
           setting: M.s6.NOTIFICATIONS_COMMUNITY_IN_APP_ALERTS,
           children: [(0, i.jsx)(u.j7V, {
             className: F.marginBottom20,
@@ -285,7 +285,7 @@ function q() {
           }), (0, i.jsx)(u.$i$, {
             className: l()(F.marginTop20, F.marginBottom40)
           })]
-        }), (0, i.jsxs)(I.F, {
+        }), (0, i.jsxs)(N.F, {
           setting: M.s6.NOTIFICATIONS_COMMUNITY_PUSH_NOTIFICATIONS,
           children: [(0, i.jsx)(u.j7V, {
             className: F.marginBottom20,
@@ -340,7 +340,7 @@ class X extends r.PureComponent {
     return (0, i.jsxs)(u.hjN, {
       tag: u.RB0.H1,
       title: V.intl.string(V.t.HcoRu7),
-      children: [(0, i.jsx)(I.F, {
+      children: [(0, i.jsx)(N.F, {
         setting: M.s6.NOTIFICATIONS_ENABLE_DESKTOP,
         children: (0, i.jsx)(u.j7V, {
           className: F.marginBottom20,
@@ -351,7 +351,7 @@ class X extends r.PureComponent {
           tooltipNote: d ? V.intl.string(V.t.cIRG0t) : void 0,
           children: V.intl.string(V.t["/0WClp"])
         })
-      }), (0, i.jsx)(J, {}), (0, i.jsx)(I.F, {
+      }), (0, i.jsx)(J, {}), (0, i.jsx)(N.F, {
         setting: M.s6.NOTIFICATIONS_UNREAD_MESSAGE_BADGE,
         children: (0, i.jsx)(u.j7V, {
           className: m ? F.marginBottom20 : F.marginBottom40,
@@ -360,7 +360,7 @@ class X extends r.PureComponent {
           onChange: this.handleToggleShowUnreadBadge,
           children: V.intl.string(V.t.VH8AIC)
         })
-      }), (0, i.jsx)(I.F, {
+      }), (0, i.jsx)(N.F, {
         setting: M.s6.NOTIFICATIONS_ENABLE_TASKBAR_FLASHING,
         children: (0, i.jsx)(u.j7V, {
           className: F.marginBottom40,
@@ -369,7 +369,7 @@ class X extends r.PureComponent {
           onChange: this.handleToggleShowFlash,
           children: V.intl.string(V.t.xSmFQE)
         })
-      }), (0, i.jsx)($, {}), (0, i.jsx)(ei, {}), (0, i.jsx)(I.F, {
+      }), (0, i.jsx)($, {}), (0, i.jsx)(ei, {}), (0, i.jsx)(N.F, {
         setting: M.s6.NOTIFICATIONS_PUSH_INACTIVE_TIMEOUT,
         children: (0, i.jsxs)(u.xJW, {
           title: V.intl.string(V.t.TTvjd3),
@@ -411,7 +411,7 @@ class X extends r.PureComponent {
         name: V.intl.string(V.t.DYO5Oj),
         value: B.PrB.NEVER
       }];
-      return (0, i.jsxs)(I.F, {
+      return (0, i.jsxs)(N.F, {
         setting: M.s6.NOTIFICATIONS_TEXT_TO_SPEECH,
         children: [(0, i.jsxs)(u.xJW, {
           title: V.intl.string(V.t.VIm5MD),
@@ -454,7 +454,7 @@ function J() {
       autoTrackExposure: !1
     }).enabled,
     t = (0, c.e7)([P.ZP], () => P.ZP.mentionOnAllMessages);
-  return e ? (0, i.jsx)(I.F, {
+  return e ? (0, i.jsx)(N.F, {
     setting: M.s6.NOTIFICATIONS_MENTION_ON_ALL_MESSAGES,
     children: (0, i.jsx)(u.j7V, {
       className: F.marginBottom20,
@@ -484,7 +484,7 @@ function $() {
     n = (0, c.e7)([P.ZP], () => P.ZP.useNewNotifications),
     [s, a] = r.useState(!1);
   return e && (n || t) ? (0, i.jsxs)(i.Fragment, {
-    children: [n ? (0, i.jsx)(I.F, {
+    children: [n ? (0, i.jsx)(N.F, {
       setting: M.s6.NOTIFICATIONS_UNREAD_SETTINGS,
       children: (0, i.jsx)(u.j7V, {
         className: F.marginBottom40,
@@ -494,7 +494,7 @@ function $() {
         onChange: () => ee(a),
         children: V.intl.string(V.t.z21l8P)
       })
-    }) : t ? (0, i.jsx)(I.F, {
+    }) : t ? (0, i.jsx)(N.F, {
       setting: M.s6.NOTIFICATIONS_UNREAD_SETTINGS,
       children: (0, i.jsx)(u.j7V, {
         className: F.marginBottom40,
@@ -506,7 +506,7 @@ function $() {
         },
         children: V.intl.string(V.t.z21l8P)
       })
-    }) : null, (0, i.jsxs)(I.F, {
+    }) : null, (0, i.jsxs)(N.F, {
       setting: M.s6.NOTIFICATIONS_NEW_SETTINGS,
       children: [(0, i.jsx)(u.xJW, {
         title: "New Notification Settings (Advanced, Staff Only)",
@@ -515,13 +515,13 @@ function $() {
             display: "flex",
             gap: 16
           },
-          children: [(0, i.jsx)(I.F, {
+          children: [(0, i.jsx)(N.F, {
             setting: M.s6.NOTIFICATIONS_RESTORE_MOST_RECENT_SNAPSHOT,
             children: (0, i.jsx)(u.zxk, {
               onClick: C.KP,
               children: "Restore most recent snapshot"
             })
-          }), (0, i.jsx)(I.F, {
+          }), (0, i.jsx)(N.F, {
             setting: M.s6.NOTIFICATIONS_LAUNCH_MIGRATION,
             children: (0, i.jsx)(u.zxk, {
               onClick: () => {
@@ -529,7 +529,7 @@ function $() {
               },
               children: "Launch Migration"
             })
-          }), (0, i.jsx)(I.F, {
+          }), (0, i.jsx)(N.F, {
             setting: M.s6.NOTIFICATIONS_TOGGLE_NEW_SYSTEM,
             children: (0, i.jsx)(u.j7V, {
               hideBorder: !0,
@@ -597,7 +597,7 @@ function ei() {
     }];
   return T.Z.getCurrentConfig({
     location: "webSettings"
-  }).enableInAppNotifications ? (0, i.jsxs)(I.F, {
+  }).enableInAppNotifications ? (0, i.jsxs)(N.F, {
     setting: M.s6.NOTIFICATIONS_REACTIONS,
     children: [(0, i.jsxs)(u.xJW, {
       title: V.intl.string(V.t.Rq0NFh),
@@ -608,7 +608,7 @@ function ei() {
       }), (0, i.jsx)(u.FXm, {
         options: t,
         onChange: t => {
-          (0, N.MR)(t.value, e)
+          (0, I.MR)(t.value, e)
         },
         value: e
       })]

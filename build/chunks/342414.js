@@ -27,8 +27,8 @@ var r = n(120356),
   S = n(197115),
   v = n(823188),
   T = n(184176),
-  N = n(409100),
-  I = n(386733),
+  I = n(409100),
+  N = n(386733),
   y = n(474936),
   A = n(981631),
   P = n(388032),
@@ -58,7 +58,7 @@ let w = e => {
           children: o
         }), (0, i.jsxs)("div", {
           className: R.buttonContainer,
-          children: [O && (0, i.jsx)(N.Z, {
+          children: [O && (0, i.jsx)(I.Z, {
             color: a.Ttl.BRAND,
             className: s()(R.button, R.subscribeButton),
             subscriptionTier: null != (n = null == h || null == (t = h.subscription_trial) ? void 0 : t.sku_id) ? n : b
@@ -108,7 +108,7 @@ let w = e => {
               className: R.button,
               isGift: !0
             })
-          }), (0, i.jsx)(I.Z, {})]
+          }), (0, i.jsx)(N.Z, {})]
         })
       })]
     })

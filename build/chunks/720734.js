@@ -27,8 +27,8 @@ var i = n(200651),
   S = n(980591),
   v = n(468363),
   T = n(326255),
-  N = n(747017),
-  I = n(963056),
+  I = n(747017),
+  N = n(963056),
   y = n(570928),
   A = n(100527),
   P = n(906732),
@@ -81,8 +81,8 @@ var i = n(200651),
   eS = n(879815),
   ev = n(294629),
   eT = n(875527),
-  eN = n(56848),
-  eI = n(378441),
+  eI = n(56848),
+  eN = n(378441),
   ey = n(358820),
   eA = n(469887),
   eP = n(306609),
@@ -325,7 +325,7 @@ class tr extends r.PureComponent {
       })) return (0, i.jsx)(y.Z, {
       hoverText: l,
       forceHover: e,
-      children: (0, i.jsx)(N.Z, {
+      children: (0, i.jsx)(I.Z, {
         user: r,
         activities: t,
         applicationStream: n,
@@ -351,7 +351,7 @@ class tr extends r.PureComponent {
     }) : null != s && s !== e1.Skl.UNKNOWN && r.isPomelo() ? (0, i.jsx)(y.Z, {
       hoverText: l,
       forceHover: e,
-      children: (0, i.jsx)(I.Z, {
+      children: (0, i.jsx)(N.Z, {
         text: eX.ZP.humanizeStatus(s)
       })
     }) : l
@@ -750,8 +750,8 @@ function tl() {
       var e;
       return (0, w.fD)() ? null == (e = Z.C.getCurrentBuildOverride().overrides) ? void 0 : e.discord_web : null
     }),
-    N = (0, o.e7)([eG.ZP], () => eG.ZP.getPremiumTypeSubscription()),
-    I = (0, o.e7)([ek.Z], () => ek.Z.getSpeakingWhileMuted()),
+    I = (0, o.e7)([eG.ZP], () => eG.ZP.getPremiumTypeSubscription()),
+    N = (0, o.e7)([ek.Z], () => ek.Z.getSpeakingWhileMuted()),
     y = (0, o.e7)([ew.Z], () => ew.Z.hasLayers()),
     R = (0, f.s9z)(f.JQI) || y || eq.s.isDisallowPopupsSet(),
     D = (0, ec.b)(),
@@ -841,13 +841,13 @@ function tl() {
       userTag: m,
       hidePrivateData: p,
       occluded: R,
-      premiumSubscription: N,
+      premiumSubscription: I,
       selfDeaf: E,
       selfMute: _,
       serverDeaf: S,
       serverMute: h,
       speaking: u,
-      speakingWhileMuted: I,
+      speakingWhileMuted: N,
       status: a,
       streaming: l,
       suppress: x,
@@ -922,13 +922,13 @@ function to(e) {
     onContextMenu: j,
     nameplate: C,
     accountContainerRef: O
-  } = e, S = t || s || n, v = r.useRef(null), T = r.useRef(null), N = (0, m.O)(S ? "unmute" : "mute"), I = (0, p.P)(S ? "unmute" : "mute"), {
+  } = e, S = t || s || n, v = r.useRef(null), T = r.useRef(null), I = (0, m.O)(S ? "unmute" : "mute"), N = (0, p.P)(S ? "unmute" : "mute"), {
     activeVoice: y
-  } = (0, eI.o)(), R = null != y, D = (0, eN.z)(y), Z = (0, o.e7)([eL.Z], () => eL.Z.isConnected()), {
+  } = (0, eN.o)(), R = null != y, D = (0, eI.z)(y), Z = (0, o.e7)([eL.Z], () => eL.Z.isConnected()), {
     Component: w,
     events: k,
     play: M
-  } = R ? I : N, B = n || s ? f.v0G : w, {
+  } = R ? N : I, B = n || s ? f.v0G : w, {
     mode: U
   } = (0, eC.ZP)({
     location: "RTC Microphone Button"

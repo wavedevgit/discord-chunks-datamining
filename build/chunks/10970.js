@@ -29,7 +29,7 @@ function _(e) {
     navigateToHome: E,
     subscriptionGroup: j,
     renewalSkuId: C
-  } = e, O = (0, l.y)(n, 100), S = (0, m.KK)(j.flags), v = S ? s.QTo : s.tBG, T = S ? f.intl.string(f.t["46YF2N"]) : f.intl.string(f.t.fFyGiI), N = null == (t = p.metadata) ? void 0 : t.application_subscription_guild_id, I = (0, r.e7)([d.Z], () => S && null != N ? d.Z.getGuild(N) : void 0, [N, S]), y = (0, r.e7)([u.Z], () => {
+  } = e, O = (0, l.y)(n, 100), S = (0, m.KK)(j.flags), v = S ? s.QTo : s.tBG, T = S ? f.intl.string(f.t["46YF2N"]) : f.intl.string(f.t.fFyGiI), I = null == (t = p.metadata) ? void 0 : t.application_subscription_guild_id, N = (0, r.e7)([d.Z], () => S && null != I ? d.Z.getGuild(I) : void 0, [I, S]), y = (0, r.e7)([u.Z], () => {
     if (null != C) return u.Z.get(C)
   }, [C]), A = (0, g.p)(p.currentPeriodEnd);
   return (0, i.jsxs)("div", {
@@ -53,20 +53,20 @@ function _(e) {
               size: "xs",
               color: "currentColor"
             }), " ", T]
-          }), null != I && (0, i.jsxs)(i.Fragment, {
+          }), null != N && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(s.Text, {
               variant: "text-md/normal",
               children: "•"
             }), (0, i.jsxs)("span", {
               className: b.guildSubscription,
               children: [(0, i.jsx)(c.Z, {
-                guild: I,
+                guild: N,
                 size: c.Z.Sizes.SMOL
               }), (0, i.jsx)(s.X6q, {
                 variant: "heading-md/semibold",
                 color: "text-muted",
                 children: f.intl.format(f.t["7ZD8p6"], {
-                  guildName: I.name
+                  guildName: N.name
                 })
               })]
             })]
@@ -121,7 +121,7 @@ function _(e) {
         })
       }, e.id) : (0, i.jsx)(x, {
         storeListing: e,
-        guildId: N,
+        guildId: I,
         navigateToHome: E
       }, e.id))]
     })]

@@ -32,7 +32,7 @@ let O = () => {
     } = (0, o.ZP)(a.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
     [v, T] = r.useState(!1);
   (0, m.FM)();
-  let N = "true" === new URLSearchParams(window.location.search).get("autoScroll");
+  let I = "true" === new URLSearchParams(window.location.search).get("autoScroll");
   return window.history.replaceState({}, "", window.location.pathname), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(l.yWw, {
       className: j.mainPageScroller,
@@ -49,7 +49,7 @@ let O = () => {
             className: j.whatsNew,
             noBackground: !0,
             leftAlignHeaders: !0,
-            shouldAutoScroll: N
+            shouldAutoScroll: I
           }), (0, i.jsx)(p.Z, {
             className: j.perksDiscoverability,
             noBackground: !0,

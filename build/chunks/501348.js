@@ -26,8 +26,8 @@ var i = n(200651),
   S = n(786761),
   v = n(3148),
   T = n(739566),
-  N = n(753206),
-  I = n(311476),
+  I = n(753206),
+  N = n(311476),
   y = n(921801),
   A = n(594174),
   P = n(358085),
@@ -125,7 +125,7 @@ let Y = {
       t = (0, a.e7)([x.Z], () => x.Z.isPreview),
       {
         enabled: n
-      } = I.Z.useExperiment({
+      } = N.Z.useExperiment({
         location: "GradientSelectorsTitle"
       }, {
         autoTrackExposure: !1,
@@ -260,7 +260,7 @@ class ee extends r.Component {
         className: l()(G.preview, F.marginBottom40, e ? G.compactPreview : void 0, "group-spacing-".concat(null != n ? n : e ? U.c8 : U.pq)),
         outline: !0,
         "aria-hidden": !0,
-        children: s.map((t, n) => (0, i.jsx)(N.Z, {
+        children: s.map((t, n) => (0, i.jsx)(I.Z, {
           author: (0, T.ZH)(t),
           message: t,
           compact: e,
