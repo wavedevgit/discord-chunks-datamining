@@ -1164,7 +1164,7 @@ function em(e, t) {
   }, {
     amount: 0,
     currency: e.currency
-  }, (0, h.UX)(e.items, e.currency), t)
+  }, (0, h.UX)(e.items, e.currency, e.paymentSourceId), t)
 }
 async function eg(e, t, n, r, i, o, u) {
   if (null != t.paymentSource && null == t.currency) throw Error("Currency must be specified with payment source");
@@ -1233,7 +1233,7 @@ function eE(e, t, n, r, i) {
   }, {
     amount: 0,
     currency: e.currency
-  }, (0, h.UX)(e.items, e.currency), t, i)
+  }, (0, h.UX)(e.items, e.currency, null == n ? void 0 : n.id), t, i)
 }
 
 function eb(e, t, n, r, i, o) {

@@ -71,7 +71,7 @@ async function u(e, t, n, r, c, u) {
     }, {
       amount: 0,
       currency: _
-    }, (0, a.UX)(f, _), t, c, u), o.Z.dispatch({
+    }, (0, a.UX)(f, _, null == r ? void 0 : r.id), t, c, u), o.Z.dispatch({
       type: "PREMIUM_PAYMENT_UPDATE_SUCCESS"
     })
   } catch (e) {
@@ -88,7 +88,7 @@ async function d(e, t, n) {
     }, {
       amount: 0,
       currency: e.currency
-    }, (0, a.UX)(e.items, e.currency), t, n)
+    }, (0, a.UX)(e.items, e.currency, e.paymentSourceId), t, n)
   } catch (e) {
     throw e
   }

@@ -22,8 +22,8 @@ var r = n(200651),
   O = n(449932),
   v = n(561788),
   C = n(876548),
-  j = n(543432),
-  S = n(981631),
+  S = n(543432),
+  j = n(981631),
   E = n(388032),
   x = n(642317),
   P = n(656855);
@@ -50,9 +50,9 @@ function I(e) {
   }, [o, g]);
   (0, c.$)(v);
   let C = (0, u.ZP)(o),
-    j = Array.from((0, u.uF)(C).values()),
+    S = Array.from((0, u.uF)(C).values()),
     P = null != (t = null == g ? void 0 : g.filter(_.lm)) ? t : [],
-    I = e => t => [S.IIU.PLAYING, S.IIU.WATCHING].includes(t.type) && (null != t.assets || null != t.state || null != t.details || null != t.party) && (null == t.session_id || t.session_id === e.voiceState.sessionId) || t.type === S.IIU.LISTENING,
+    I = e => t => [j.IIU.PLAYING, j.IIU.WATCHING].includes(t.type) && (null != t.assets || null != t.state || null != t.details || null != t.party) && (null == t.session_id || t.session_id === e.voiceState.sessionId) || t.type === j.IIU.LISTENING,
     N = (0, s.e7)([m.Z], () => {
       let e = {};
       return P.forEach(t => {
@@ -64,11 +64,11 @@ function I(e) {
               members: [],
               activity: n
             };
-          a.members.push(t), (0, d.Z)(a.activity, S.xjy.JOIN) || (a.activity = n), e[s] = a
+          a.members.push(t), (0, d.Z)(a.activity, j.xjy.JOIN) || (a.activity = n), e[s] = a
         }
       }), Object.values(e)
     }, [P], s.pF);
-  return N.length + j.length === 0 ? null : (0, r.jsxs)(a.Ttm, {
+  return N.length + S.length === 0 ? null : (0, r.jsxs)(a.Ttm, {
     className: x.container,
     children: [(0, r.jsx)(w, {
       channel: o,
@@ -76,7 +76,7 @@ function I(e) {
       voiceStatesCount: null != (l = null == g ? void 0 : g.length) ? l : 0
     }), (0, r.jsx)("div", {
       className: x.headerDivider
-    }), j.map((e, t) => {
+    }), S.map((e, t) => {
       var n;
       return (0, r.jsx)(O.Z, {
         embeddedApp: e,
@@ -155,7 +155,7 @@ function w(e) {
     channel: t,
     isChannelSelected: n,
     voiceStatesCount: i
-  } = e, l = (0, s.e7)([g.Z], () => !g.Z.can(S.Plq.CONNECT, t)), a = (0, s.e7)([b.Z], () => b.Z.hasVideo(t.id)), c = (0, y.ZP)({
+  } = e, l = (0, s.e7)([g.Z], () => !g.Z.can(j.Plq.CONNECT, t)), a = (0, s.e7)([b.Z], () => b.Z.hasVideo(t.id)), c = (0, y.ZP)({
     channel: t,
     locked: l,
     video: a,
@@ -169,7 +169,7 @@ function w(e) {
       userCount: i,
       video: a,
       channel: t
-    }) : (0, r.jsx)(j.Z, {
+    }) : (0, r.jsx)(S.Z, {
       userCount: i
     })]
   })

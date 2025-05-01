@@ -34,7 +34,7 @@ let _ = i.memo(function(e) {
     return y.forEach(t => {
       null != O[t.channelId] && e++
     }), e
-  }, [O, y]), C = null == y ? 0 : y.length, j = (0, l.JA)("progress-bar-".concat(_.id));
+  }, [O, y]), C = null == y ? 0 : y.length, S = (0, l.JA)("progress-bar-".concat(_.id));
   return (0, r.jsxs)("li", {
     children: [(0, r.jsxs)(s.P3F, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -53,7 +53,7 @@ let _ = i.memo(function(e) {
         })
       }
       return e
-    }({}, j), n = n = {
+    }({}, S), n = n = {
       role: "button",
       focusProps: {
         offset: {

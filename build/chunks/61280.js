@@ -28,17 +28,17 @@ function _(e) {
     channelListRow: O
   } = e, v = t.getModeratorReportChannelId(), {
     hasUnread: C,
-    numUnread: j
+    numUnread: S
   } = (0, i.cj)([d.ZP], () => null == v ? {
     hasUnread: !1,
     numUnread: 0
   } : {
     hasUnread: d.ZP.hasUnread(v),
     numUnread: d.ZP.getUnreadCount(v)
-  }, [v]), S = (0, i.e7)([c.Z], () => null == v ? 0 : c.Z.getNewThreadCount(t.id, v));
+  }, [v]), j = (0, i.e7)([c.Z], () => null == v ? 0 : c.Z.getNewThreadCount(t.id, v));
   if (!(0, s._5)(t.id)) return null;
-  let E = j > 0 ? m.intl.format(b.default["/wHkWV"], {
-      count: j
+  let E = S > 0 ? m.intl.format(b.default["/wHkWV"], {
+      count: S
     }) : m.intl.string(b.default["kI3X9/"]),
     {
       record: x,
@@ -60,11 +60,11 @@ function _(e) {
       text: E,
       selected: n === g.oC.REPORT_TO_MOD || n === v,
       showUnread: C,
-      trailing: S > 0 ? (0, r.jsx)(l.Text, {
+      trailing: j > 0 ? (0, r.jsx)(l.Text, {
         variant: "text-xs/semibold",
         color: "text-brand",
         children: m.intl.format(m.t.GkAbqa, {
-          count: (0, l.NGo)(S)
+          count: (0, l.NGo)(j)
         })
       }) : null
     }), null != x && I > 0 ? (0, r.jsx)(p.Z, {

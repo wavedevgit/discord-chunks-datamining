@@ -1,7 +1,7 @@
 /** Chunk was on 53745 **/
 n.d(t, {
   $h: () => E,
-  jG: () => S,
+  jG: () => j,
   yI: () => x
 });
 var r = n(200651);
@@ -25,9 +25,9 @@ var i = n(120356),
   O = n(680278),
   v = n(388032),
   C = n(423151),
-  j = n(928381);
+  S = n(928381);
 
-function S(e) {
+function j(e) {
   let {
     guildId: t,
     powerup: n,
@@ -57,7 +57,7 @@ function E(e) {
   if (0 !== (0, p.Z)(t).length) return (0, r.jsx)(P, {
     asset: (0, r.jsx)("img", {
       alt: "",
-      src: j.Z,
+      src: S.Z,
       className: l()(C.image, C.newPerksImage)
     }),
     header: v.intl.string(O.default.QpQBPT),

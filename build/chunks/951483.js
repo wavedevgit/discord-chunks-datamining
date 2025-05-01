@@ -1,7 +1,7 @@
 /** Chunk was on 53745 **/
 n.d(t, {
-  Sr: () => j,
-  Xq: () => S,
+  Sr: () => S,
+  Xq: () => j,
   Zg: () => E
 }), n(415506);
 var r = n(186070),
@@ -27,12 +27,12 @@ var r = n(186070),
 function C() {
   for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
   return t.map(e => {
-    let t = j[e];
+    let t = S[e];
     if (null == t) throw Error("getBindsFor(...): No bind for ".concat(t));
     return t.binds[0]
   })
 }
-let j = {
+let S = {
     [O.EkH.SERVER_NEXT]: p.nq,
     [O.EkH.SERVER_PREV]: p.X3,
     [O.EkH.CHANNEL_NEXT]: i.tQ,
@@ -62,7 +62,7 @@ let j = {
     [O.EkH.CALL_START]: r.FI,
     [O.EkH.QUICKSWITCHER_SHOW]: c.$
   },
-  S = {
+  j = {
     [O.EkH.QUICKSWITCHER_SHOW]: c.$
   };
 

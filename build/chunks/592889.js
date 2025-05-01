@@ -45,7 +45,7 @@ function v(e) {
     await (0, m.dP)(t, t.planId, {
       amount: 0,
       currency: v.currency
-    }, (0, E.UX)(t.items, v.currency), h, l), s()
+    }, (0, E.UX)(t.items, v.currency, t.paymentSourceId), h, l), s()
   }
   return (0, i.jsxs)(u.Y0X, {
     transitionState: r,

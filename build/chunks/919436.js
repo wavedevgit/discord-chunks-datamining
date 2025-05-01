@@ -21,8 +21,8 @@ var r, i = n(200651),
   O = n(944486),
   v = n(594174),
   C = n(451478),
-  j = n(276952),
-  S = n(682662),
+  S = n(276952),
+  j = n(682662),
   E = n(662146),
   x = n(674552),
   P = n(981631),
@@ -167,8 +167,8 @@ class D extends(r = l.PureComponent) {
     } = this.state, _ = e.isMultiUserDM() && null == e.icon && h;
     return (0, i.jsx)(o.animated.div, {
       style: this.getAnimatedStyle(),
-      children: (0, i.jsxs)(S.H, {
-        children: [(0, i.jsx)(j.Z, {
+      children: (0, i.jsxs)(j.H, {
+        children: [(0, i.jsx)(S.Z, {
           hovered: !b && g,
           selected: !b && n,
           unread: !b && d,
@@ -274,10 +274,10 @@ let L = l.forwardRef(function(e, t) {
     }, {
       autoTrackExposure: !1
     }),
-    j = o === n,
-    S = !1,
+    S = o === n,
+    j = !1,
     E = !1;
-  j && (S = u === P.WtW.VOICE, E = u === P.WtW.VIDEO);
+  S && (j = u === P.WtW.VOICE, E = u === P.WtW.VIDEO);
   let x = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE),
     I = (0, f.Q3)("DirectMessage");
   return (0, i.jsx)(D, T(Z({}, e), {
@@ -286,10 +286,10 @@ let L = l.forwardRef(function(e, t) {
     unread: v > 0,
     selected: m === n,
     badge: v,
-    audio: S,
+    audio: j,
     video: E,
     stream: h,
-    isCurrentUserInThisDMCall: j,
+    isCurrentUserInThisDMCall: S,
     isGDMFacepileEnabled: C,
     size: I ? x : 56,
     isVisualRefreshEnabled: I,

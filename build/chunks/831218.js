@@ -21,8 +21,8 @@ var r, i = n(200651),
   O = n(313201),
   v = n(540059),
   C = n(860144),
-  j = n(214852),
-  S = n(518311),
+  S = n(214852),
+  j = n(518311),
   E = n(355298),
   x = n(869404),
   P = n(333984),
@@ -389,7 +389,7 @@ class G extends(r = l.Component) {
         children: [(0, i.jsx)("span", {
           className: D.headerText,
           children: R.intl.string(R.t.YUU0RE)
-        }), (0, i.jsx)(S.Z, {
+        }), (0, i.jsx)(j.Z, {
           tooltip: R.intl.string(R.t["6Urw1t"]),
           tooltipPosition: "top",
           popoutAlign: "left",
@@ -445,14 +445,14 @@ let B = e => {
       let e = Z.Z.getPrivateChannelIds();
       return (0, x.tU)(e, [E.Z, P.Z])
     }, []);
-  (0, j.z)(C.R);
+  (0, S.z)(C.R);
   let y = (0, u.cj)([f.Z, I.Z, w.Z], () => ({
       theme: I.Z.darkSidebar ? A.BRd.DARK : s,
       keyboardModeEnabled: f.Z.keyboardModeEnabled,
       version: null != o ? "".concat(o, ":").concat(w.Z.getPrivateChannelsVersion()) : w.Z.getPrivateChannelsVersion()
     })),
-    S = l.useRef(null),
-    N = null != (t = e.listScrollerRef) ? t : S,
+    j = l.useRef(null),
+    N = null != (t = e.listScrollerRef) ? t : j,
     T = l.useCallback(e => {
       let t = N.current,
         n = document.querySelector(e);

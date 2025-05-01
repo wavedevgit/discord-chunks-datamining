@@ -24,7 +24,7 @@ let O = e => {
     children: t,
     isForceShowSharingPopout: n,
     setIsForceShowSharingPopout: O
-  } = e, [v, C] = (0, i.useState)(!1), j = function(e) {
+  } = e, [v, C] = (0, i.useState)(!1), S = function(e) {
     let {
       isForceShowSharingPopout: t
     } = e, {
@@ -42,12 +42,12 @@ let O = e => {
     return c && n && !o ? t ? m.N.Activity : m.N.ActivityNux : null
   }({
     isForceShowSharingPopout: n
-  }), S = (0, i.useRef)(null);
+  }), j = (0, i.useRef)(null);
   return ((0, i.useEffect)(() => {
     n && f.default.track(b.rMx.OPEN_POPOUT, {
       type: "SharingPrivacyPopout"
     })
-  }, [n]), null != j || v) ? (0, r.jsx)(c.ZP, {
+  }, [n]), null != S || v) ? (0, r.jsx)(c.ZP, {
     contentTypes: n ? [] : [o.z.SHARE_ACTIVITY_COACHMARK_V2],
     children: e => {
       let {
@@ -60,7 +60,7 @@ let O = e => {
           }), O(!1), C(!1)
         };
         return (0, r.jsx)(s.yRy, {
-          targetElementRef: S,
+          targetElementRef: j,
           shouldShow: !0,
           spacing: 10,
           position: "top",
@@ -73,11 +73,11 @@ let O = e => {
             return (0, r.jsx)(m.I, {
               closePopout: t,
               onOpen: () => C(!0),
-              popoutState: j
+              popoutState: S
             })
           },
           children: () => (0, r.jsx)(s.P3F, {
-            innerRef: S,
+            innerRef: j,
             onClick: e,
             children: t
           })

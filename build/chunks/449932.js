@@ -1,6 +1,6 @@
 /** Chunk was on 53745 **/
 n.d(t, {
-  Z: () => j
+  Z: () => S
 });
 var r = n(200651);
 n(192379);
@@ -81,31 +81,31 @@ function C(e) {
     }, n)
   })
 }
-let j = e => {
+let S = e => {
   let {
     channel: t,
     presenceActivity: n,
     members: i,
     embeddedApp: l,
     onAction: p
-  } = e, b = (0, d.Q3)("ChannelActivityRow"), _ = null != l, v = _ ? Array.from(l.embeddedActivity.userIds) : [], j = (0, o.e7)([m.default, g.default], () => {
+  } = e, b = (0, d.Q3)("ChannelActivityRow"), _ = null != l, v = _ ? Array.from(l.embeddedActivity.userIds) : [], S = (0, o.e7)([m.default, g.default], () => {
     if (_) return m.default.getUser(v[0]);
     if (null != i) {
       var e, t;
       return i.length <= 0 ? null : null != (t = null == (e = i.find(e => e.user.id !== g.default.getId())) ? void 0 : e.user) ? t : i[0].user
     }
   });
-  if (null == j) return null;
-  let S = _ || (0, c.Z)(n),
+  if (null == S) return null;
+  let j = _ || (0, c.Z)(n),
     E = (0, f.vd)(t.type);
   return (0, r.jsxs)("div", {
     className: O.activity,
     children: [(0, r.jsx)("div", {
       className: O.channelActivityContainer,
-      children: S ? (0, r.jsx)(y.Z, {
+      children: j ? (0, r.jsx)(y.Z, {
         activity: n,
         embeddedApp: l,
-        user: j,
+        user: S,
         channel: t,
         sortedVoiceStates: i,
         onOpenSpotifyTrack: E ? h.aG : void 0,
@@ -114,7 +114,7 @@ let j = e => {
       }) : (0, r.jsx)(a.Z, {
         type: a.P.VOICE_CHANNEL,
         activity: n,
-        user: j,
+        user: S,
         guildId: t.getGuildId(),
         channelId: t.id,
         renderHeaderAccessory: null != i ? () => (0, r.jsx)(C, {
@@ -128,7 +128,7 @@ let j = e => {
         type: a.P.VOICE_CHANNEL,
         activity: n,
         embeddedActivity: null == l ? void 0 : l.embeddedActivity,
-        user: j,
+        user: S,
         guildId: t.getGuildId(),
         channelId: t.id,
         color: b ? s.zxk.Colors.PRIMARY : O.button,

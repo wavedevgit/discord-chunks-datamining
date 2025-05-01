@@ -70,7 +70,7 @@ let _ = i.memo(function(e) {
     name: O,
     color: v,
     children: C
-  } = t, j = C.map(e => e.id), S = (0, a.Z)(e => e.guildId), E = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(y)), x = function(e) {
+  } = t, S = C.map(e => e.id), j = (0, a.Z)(e => e.guildId), E = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(y)), x = function(e) {
     let t = e.children.map(e => {
         let t = e.id,
           n = d.Z.getGuild(t);
@@ -85,9 +85,9 @@ let _ = i.memo(function(e) {
     isMentionLowImportance: w,
     unread: N
   } = (0, l.cj)([u.default], () => ({
-    mentionCount: j.map(e => u.default.getMentionCount(e)).reduce((e, t) => e + t, 0),
-    isMentionLowImportance: j.every(e => u.default.getIsMentionLowImportance(e)),
-    unread: j.some(e => u.default.hasUnread(e))
+    mentionCount: S.map(e => u.default.getMentionCount(e)).reduce((e, t) => e + t, 0),
+    isMentionLowImportance: S.every(e => u.default.getIsMentionLowImportance(e)),
+    unread: S.some(e => u.default.hasUnread(e))
   })), Z = i.useCallback(() => {
     s.Z.toggleGuildFolderExpand(y)
   }, [y]), T = i.useCallback(e => {
@@ -106,7 +106,7 @@ let _ = i.memo(function(e) {
   return (0, r.jsx)(p.Z, b(m({}, _), {
     folderNode: t,
     expanded: E,
-    selected: null != S && j.includes(S),
+    selected: null != j && S.includes(j),
     mentionCount: I,
     isMentionLowImportance: w,
     unread: N,

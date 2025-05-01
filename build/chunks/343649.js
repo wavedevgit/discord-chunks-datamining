@@ -394,7 +394,7 @@ function ec(e) {
                   amount: eS.total,
                   currency: eS.currency
                 },
-                n = (0, Y.sG)(em, eB, o.currency.toLowerCase());
+                n = (0, Y.sG)(em, eB, o.currency.toLowerCase(), o.paymentSourceId);
               if (F.default.track(q.rMx.PAYMENT_FLOW_COMPLETED, en(et({}, eK), {
                   duration_ms: Date.now() - eV,
                   guild_id: ec,

@@ -27,8 +27,8 @@ let _ = (0, c.B)(function(e) {
     sortingType: O,
     sortingPosition: v,
     connectChannelDragSource: C,
-    connectChannelDropTarget: j,
-    tabIndex: S
+    connectChannelDropTarget: S,
+    tabIndex: j
   } = e, E = (0, s.e7)([u.Z, d.ZP], () => {
     let e = d.ZP.getDirectoryChannelIds(t.id);
     return 0 === e.length ? null : u.Z.getChannel(e[0])
@@ -90,13 +90,13 @@ let _ = (0, c.B)(function(e) {
         resolvedUnreadSetting: m.i.ONLY_MENTIONS,
         children: [(0, r.jsx)(p.eP, {
           channel: E,
-          tabIndex: S
+          tabIndex: j
         }), (0, r.jsx)(p.hR, {
           channel: E,
           disableManageChannels: _,
-          tabIndex: S
+          tabIndex: j
         })]
       })
     });
-  return I && (T = j(C(T))), T
+  return I && (T = S(C(T))), T
 })

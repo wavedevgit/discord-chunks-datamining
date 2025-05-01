@@ -23,8 +23,8 @@ var r = n(200651),
   O = n(626135),
   v = n(870569),
   C = n(981631),
-  j = n(388032),
-  S = n(390648);
+  S = n(388032),
+  j = n(390648);
 
 function E(e, t, n) {
   return null != e && (null != n ? n.applicationId === e.id : null != t && t.application_id === e.id && t.type === C.IIU.PLAYING && (0, u.Z)(t, C.xjy.JOIN))
@@ -120,12 +120,12 @@ let x = i.memo(function(e) {
     }, [Z, w, A, U, M]),
     W = (null != A || null == R || (0, c.R)()) && (N || I) ? (N ? (t = !1, l = () => {
       F(), (0, p.v)(G, p.d.STREAM, !1)
-    }, u = s.g5r, x = j.intl.string(j.t.S5anIS)) : T ? (t = !1, l = () => {
+    }, u = s.g5r, x = S.intl.string(S.t.S5anIS)) : T ? (t = !1, l = () => {
       z(), (0, p.v)(G, p.d.STREAM, !0)
-    }, u = s.hGI, x = null != A ? j.intl.formatToPlainString(j.t.AB5gT0, {
+    }, u = s.hGI, x = null != A ? S.intl.formatToPlainString(S.t.AB5gT0, {
       game: A.name
-    }) : j.intl.string(j.t.FeUKeH)) : (t = !0, l = null, u = s.hGI, x = null != Z && (0, _.vd)(Z.type) ? j.intl.string(j.t.uQn9Bw) : null != w ? j.intl.string(j.t.fBXEoK) : j.intl.string(j.t.n3feND)), (0, r.jsx)("div", {
-      className: S.panelButtonContainer,
+    }) : S.intl.string(S.t.FeUKeH)) : (t = !0, l = null, u = s.hGI, x = null != Z && (0, _.vd)(Z.type) ? S.intl.string(S.t.uQn9Bw) : null != w ? S.intl.string(S.t.fBXEoK) : S.intl.string(S.t.n3feND)), (0, r.jsx)("div", {
+      className: j.panelButtonContainer,
       children: (0, r.jsx)(v.Z, {
         tooltipText: x,
         disabled: t,
@@ -134,18 +134,18 @@ let x = i.memo(function(e) {
       })
     })) : null,
     Y = B && null == R ? (0, r.jsx)(v.Z, {
-      tooltipText: j.intl.string(j.t["hC/Ze3"]),
+      tooltipText: S.intl.string(S.t["hC/Ze3"]),
       onClick: V,
       icon: s.ejJ
     }) : null,
     K = null == R ? null : (0, r.jsx)(v.Z, {
-      tooltipText: j.intl.string(j.t["R/FK4O"]),
+      tooltipText: S.intl.string(S.t["R/FK4O"]),
       onClick: H(R.applicationId, R.location),
       icon: s.PBZ
     }),
     q = null == P ? null : (0, r.jsx)(f.Z, {});
   return null == W && null == Y && null == K ? null : (0, r.jsxs)("div", {
-    className: S.actions,
+    className: j.actions,
     children: [W, Y, null != K ? K : q]
   })
 })

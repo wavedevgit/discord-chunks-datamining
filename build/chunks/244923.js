@@ -21,7 +21,7 @@ let u = function(e) {
     analyticsLocations: _
   } = e, p = async () => {
     let e = a.Z.getPaymentSource(d);
-    null != e && (await (0, l.i1)(d, (0, c.yb)(t)), await o.tq(t, e, t.currency, (0, s.UX)(t.items, t.currency), _), n())
+    null != e && (await (0, l.i1)(d, (0, c.yb)(t)), await o.tq(t, e, t.currency, (0, s.UX)(t.items, t.currency, t.paymentSourceId), _), n())
   };
   return (0, r.jsx)(i.zxk, {
     "data-testid": "purchase",
