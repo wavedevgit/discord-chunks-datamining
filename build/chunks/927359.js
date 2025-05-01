@@ -15,20 +15,40 @@ var l = function(e) {
 }({});
 
 function c(e) {
-  return e.days > 0 ? {
+  if (e.days > 0) return {
     days: e.hours > 0 ? e.days + 1 : e.days,
     hours: 0,
     minutes: 0,
     seconds: 0
-  } : e.hours > 11 ? {
-    days: 1,
-    hours: 0,
-    minutes: 0,
-    seconds: 0
-  } : e.minutes > 45 ? {
+  };
+  if (e.hours > 0) {
+    let t = e.minutes > 45 ? e.hours + 1 : e.hours;
+    return t > 11 ? {
+      days: 1,
+      hours: 0,
+      minutes: 0,
+      seconds: 0
+    } : {
+      days: 0,
+      hours: t,
+      minutes: 0,
+      seconds: 0
+    }
+  }
+  if (e.minutes > 0) {
+    let t = +(e.minutes > 45),
+      n = 1 === t ? 0 : e.minutes;
+    return {
+      days: 0,
+      hours: t,
+      minutes: n,
+      seconds: 0
+    }
+  }
+  return e.seconds > 0 ? {
     days: 0,
-    hours: 1,
-    minutes: 0,
+    hours: 0,
+    minutes: 1,
     seconds: 0
   } : e
 }
