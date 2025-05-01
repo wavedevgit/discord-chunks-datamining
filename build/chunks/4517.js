@@ -119,7 +119,7 @@ function Q(e) {
   })
 }
 let X = 200,
-  J = 2e3;
+  J = 3e3;
 
 function $(e) {
   let {
