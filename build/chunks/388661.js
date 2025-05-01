@@ -61,7 +61,7 @@ let M = function(A) {
         children: (0, B.jsx)(r.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
-          children: s.intl.string(o.default.UbC8y8)
+          children: s.intl.string(o.default.CrHXHh)
         })
       })]
     }), P && (0, B.jsx)(h.Z, {

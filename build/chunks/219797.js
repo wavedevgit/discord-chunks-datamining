@@ -1,12 +1,12 @@
 /** Chunk was on 21607 **/
 i.d(t, {
-  L9: () => M,
-  ZK: () => B,
-  d4: () => x,
-  dS: () => w,
-  jY: () => P,
-  q7: () => C,
-  vZ: () => O
+  L9: () => j,
+  ZK: () => M,
+  d4: () => B,
+  dS: () => O,
+  jY: () => x,
+  q7: () => P,
+  vZ: () => C
 }), i(953529), i(997841);
 var n = i(200651),
   o = i(192379),
@@ -15,18 +15,19 @@ var n = i(200651),
   l = i(981729),
   s = i(481060),
   c = i(543651),
-  u = i(519320),
-  d = i(592125),
-  f = i(52824),
-  m = i(630388),
-  _ = i(591759),
-  p = i(850908),
-  y = i(524444),
-  I = i(981631),
-  v = i(388032),
-  b = i(324846);
+  u = i(177751),
+  d = i(519320),
+  f = i(592125),
+  m = i(52824),
+  _ = i(630388),
+  p = i(591759),
+  y = i(850908),
+  I = i(524444),
+  v = i(981631),
+  b = i(388032),
+  h = i(324846);
 
-function h(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var i = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(i);
@@ -45,7 +46,7 @@ function h(e) {
   return e
 }
 
-function g(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var i = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -58,19 +59,19 @@ function g(e, t) {
   }), e
 }
 
-function w(e) {
+function O(e) {
   var t;
   let i = e.item.originalItem;
-  return (0, y.Yi)(g(h({}, e), {
+  return (0, I.Yi)(w(g({}, e), {
     alt: i.description,
-    src: (0, f.q)({
+    src: (0, m.q)({
       proxyURL: i.proxy_url,
       url: i.url
     }),
     original: i.url,
     placeholder: i.placeholder,
     placeholderVersion: i.placeholder_version,
-    srcIsAnimated: (0, m.yE)(null != (t = i.flags) ? t : 0, I.J0y.IS_ANIMATED),
+    srcIsAnimated: (0, _.yE)(null != (t = i.flags) ? t : 0, v.J0y.IS_ANIMATED),
     sourceMetadata: {
       message: e.message,
       identifier: {
@@ -85,34 +86,34 @@ function w(e) {
   }))
 }
 
-function O(e) {
+function C(e) {
   var t;
   let i = e.item.originalItem,
     a = o.useCallback(() => {
       var e;
-      return (0, m.yE)(null != (e = i.flags) ? e : 0, I.J0y.IS_CLIP) ? (0, n.jsxs)(l.DY, {
-        text: v.intl.string(v.t["/fgfWl"]),
-        className: b.clipPill,
+      return (0, _.yE)(null != (e = i.flags) ? e : 0, v.J0y.IS_CLIP) ? (0, n.jsxs)(l.DY, {
+        text: b.intl.string(b.t["/fgfWl"]),
+        className: h.clipPill,
         children: [(0, n.jsx)(s.AlX, {
           size: "xs",
           color: "currentColor"
         }), (0, n.jsx)(r.x, {
           variant: "text-xs/semibold",
           color: "always-white",
-          children: v.intl.string(v.t.oA4afH)
+          children: b.intl.string(b.t.oA4afH)
         })]
       }) : null
     }, [i]),
-    c = _.Z.toURLSafe(i.proxy_url);
-  return null == c ? null : (c.searchParams.append("format", "webp"), (0, y.lV)(g(h({}, e), {
+    c = p.Z.toURLSafe(i.proxy_url);
+  return null == c ? null : (c.searchParams.append("format", "webp"), (0, I.lV)(w(g({}, e), {
     alt: i.description,
     poster: c.toString(),
     fileSize: i.size,
-    fileName: (0, p.Z)(i),
+    fileName: (0, y.Z)(i),
     src: i.url,
     placeholder: i.placeholder,
     placeholderVersion: i.placeholder_version,
-    srcIsAnimated: (0, m.yE)(null != (t = i.flags) ? t : 0, I.J0y.IS_ANIMATED),
+    srcIsAnimated: (0, _.yE)(null != (t = i.flags) ? t : 0, v.J0y.IS_ANIMATED),
     renderOverlayContent: a,
     sourceMetadata: {
       message: e.message,
@@ -126,79 +127,80 @@ function O(e) {
   })))
 }
 
-function C(e) {
+function P(e) {
   let t = e.item.originalItem;
-  return (0, y.hX)(g(h({}, e), {
+  return (0, I.hX)(w(g({}, e), {
     fileSize: t.size,
-    fileName: (0, p.Z)(t),
+    fileName: (0, y.Z)(t),
     src: t.url
   }))
 }
 
-function P(e) {
+function x(e) {
   let {
     message: t,
     item: i
-  } = e, n = i.originalItem, a = o.useCallback((e, i, o) => {
+  } = e, n = i.originalItem, a = (0, u.RT)(u.Ir.VOICE_MESSAGE, n.id), r = o.useCallback((e, i, o) => {
     var a;
-    (0, u.tb)(t.id, null != (a = n.duration_secs) ? a : null, i, t.author.id)
-  }, [t, n.duration_secs]), r = o.useCallback((e, i) => {
+    (0, d.tb)(t.id, null != (a = n.duration_secs) ? a : null, i, t.author.id)
+  }, [t, n.duration_secs]), l = o.useCallback((e, i) => {
     var o;
-    (0, u.EW)(t.id, null != (o = n.duration_secs) ? o : null, e, t.author.id, i)
-  }, [t, n.duration_secs]), l = o.useCallback(e => {
+    (0, d.EW)(t.id, null != (o = n.duration_secs) ? o : null, e, t.author.id, i)
+  }, [t, n.duration_secs]), s = o.useCallback(e => {
     var i;
-    (0, u.Np)(t.id, null != (i = null == e ? void 0 : e.message) ? i : null)
+    (0, d.Np)(t.id, null != (i = null == e ? void 0 : e.message) ? i : null)
   }, [t]);
-  return (0, y.wj)(g(h({}, e), {
+  return (0, I.wj)(w(g({}, e), {
     fileSize: n.size,
-    fileName: (0, p.Z)(n),
+    fileName: (0, y.Z)(n),
     src: n.url,
     durationSecs: n.duration_secs,
     waveform: n.waveform,
-    onPlay: a,
-    onPause: r,
-    onError: l
-  }))
-}
-
-function x(e) {
-  let t = e.item.originalItem;
-  return (0, y.xi)(g(h({}, e), {
-    url: t.url,
-    fileName: (0, p.Z)(t),
-    fileSize: t.size,
-    contentType: t.content_type
+    onPlay: r,
+    onPause: l,
+    onError: s,
+    playbackCacheKey: a
   }))
 }
 
 function B(e) {
   let t = e.item.originalItem;
-  return (0, y.ur)(g(h({}, e), {
+  return (0, I.xi)(w(g({}, e), {
     url: t.url,
-    fileName: (0, p.Z)(t),
-    fileSize: t.size
+    fileName: (0, y.Z)(t),
+    fileSize: t.size,
+    contentType: t.content_type
   }))
 }
 
 function M(e) {
-  return "CLIP" === e.item.type ? (0, n.jsx)(j, {
+  let t = e.item.originalItem;
+  return (0, I.ur)(w(g({}, e), {
+    url: t.url,
+    fileName: (0, y.Z)(t),
+    fileSize: t.size
+  }))
+}
+
+function j(e) {
+  return "CLIP" === e.item.type ? (0, n.jsx)(E, {
     attachment: e.item.originalItem,
     message: e.message
   }) : null
 }
 
-function j(e) {
+function E(e) {
   var t;
   let {
     attachment: i,
     message: o
-  } = e, r = o.channel_id, l = (0, a.e7)([d.Z], () => {
+  } = e, r = o.channel_id, l = (0, a.e7)([f.Z], () => {
     var e;
-    return null == (e = d.Z.getBasicChannel(r)) ? void 0 : e.guild_id
+    return null == (e = f.Z.getBasicChannel(r)) ? void 0 : e.guild_id
   }), {
     clip_created_at: s,
     clip_participants: u,
-    title: f,
+    title: d,
     application: m
   } = i;
   return (0, n.jsx)(c.Z, {
@@ -210,7 +212,7 @@ function j(e) {
       return t
     })) ? t : [],
     applicationId: null == m ? void 0 : m.id,
-    title: f,
+    title: d,
     guildId: l
   })
 }
