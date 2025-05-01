@@ -225,7 +225,7 @@ function F(e) {
 }
 
 function Z(e) {
-  return e === b._b.TEXT || e === b._b.PLAY_TAB || e === b._b.QUICK_LAUNCHER
+  return e === b._b.TEXT
 }
 
 function H(e) {
