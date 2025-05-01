@@ -50,8 +50,9 @@ function Z() {
       pendingPronouns: H,
       pendingAccentColor: z,
       pendingThemeColors: W,
-      pendingPrimaryGuildId: Y,
-      errors: K
+      pendingLegacyUsernameDisabled: Y,
+      pendingPrimaryGuildId: K,
+      errors: q
     } = (0, l.cj)([y.Z], () => {
       var e, t;
       let n = y.Z.getAllPending(),
@@ -86,65 +87,65 @@ function Z() {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
       }), e
     }),
-    q = (0, v.SD)({
+    X = (0, v.SD)({
       userId: M.id,
       image: U
     }),
-    X = (0, c.gS)(),
-    Q = P.ZP.canUsePremiumProfileCustomization(M),
-    J = (0, p.gd)(U, M.avatar),
-    $ = (0, p.f$)(G, null == B ? void 0 : B.banner),
-    ee = "DefaultCustomizationSections";
+    Q = (0, c.gS)(),
+    J = P.ZP.canUsePremiumProfileCustomization(M),
+    $ = (0, p.gd)(U, M.avatar),
+    ee = (0, p.f$)(G, null == B ? void 0 : B.banner),
+    et = "DefaultCustomizationSections";
   (0, o.j)({
-    location: ee + " auto on",
+    location: et + " auto on",
     autoTrackExposure: !0
   }), (0, o.j)({
-    location: ee + " auto off",
+    location: et + " auto off",
     autoTrackExposure: !1
   });
-  let et = (0, I.ZP)(M.id),
-    en = null == et ? void 0 : et.getLegacyUsername(),
-    ei = (null != (n = null == (e = K.global_name) ? void 0 : e.length) ? n : 0) > 0 ? K.global_name : null != (r = null == X ? void 0 : X.nick) ? r : [],
-    er = (null != (Z = null == (t = K.bio) ? void 0 : t.length) ? Z : 0) > 0 ? K.bio : null != (w = null == X ? void 0 : X.bio) ? w : [],
-    es = (0, u.w)(),
-    el = (0, m.H)("DefaultCustomizationSections");
+  let en = (0, I.ZP)(M.id),
+    ei = null == en ? void 0 : en.getLegacyUsername(),
+    er = (null != (n = null == (e = q.global_name) ? void 0 : e.length) ? n : 0) > 0 ? q.global_name : null != (r = null == Q ? void 0 : Q.nick) ? r : [],
+    es = (null != (Z = null == (t = q.bio) ? void 0 : t.length) ? Z : 0) > 0 ? q.bio : null != (w = null == Q ? void 0 : Q.bio) ? w : [],
+    el = (0, u.w)(),
+    ea = (0, m.H)("DefaultCustomizationSections");
   return (0, i.jsxs)("div", {
     className: D.sectionsContainer,
     children: [(0, i.jsx)(b.Z, {
       placeholder: M.username,
-      errors: ei,
+      errors: er,
       currentGlobalName: M.globalName,
       pendingGlobalName: V,
       onGlobalNameChange: a.W0
     }), (0, i.jsx)(S.Z, {
       sectionTitle: R.intl.string(R.t["+T3RIy"]),
-      errors: K.pronouns,
+      errors: q.pronouns,
       onPronounsChange: T.ID,
       pendingPronouns: H,
       currentPronouns: null != (k = null == B ? void 0 : B.pronouns) ? k : ""
     }, "pronouns"), (0, i.jsx)(f.Z, {
       onAvatarChange: a.I5,
-      showRemoveAvatarButton: J,
-      errors: K.avatar,
+      showRemoveAvatarButton: $,
+      errors: q.avatar,
       sectionTitle: R.intl.string(R.t.lqaIxM),
       forcedDivider: !0
     }, "avatar"), (0, i.jsx)(h.Z, {
       user: M,
       sectionTitle: R.intl.string(R.t["7v0T9P"])
-    }, "decoration"), el && (0, i.jsx)(x.Z, {
+    }, "decoration"), ea && (0, i.jsx)(x.Z, {
       user: M
     }), (0, i.jsx)(C.Z, {
       user: M,
       sectionTitle: R.intl.string(R.t.wR5wOj)
-    }, "effect"), Q ? (0, i.jsxs)(i.Fragment, {
+    }, "effect"), J ? (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(E.Z, {
-        showRemoveBannerButton: $,
-        errors: K.banner,
+        showRemoveBannerButton: ee,
+        errors: q.banner,
         onBannerChange: T.g_,
         forcedDivider: !0
       }, "banner"), (0, i.jsx)(O.Z, {
         user: M,
-        pendingAvatarSrc: q,
+        pendingAvatarSrc: X,
         pendingColors: W,
         onThemeColorsChange: T.z5,
         forcedDivider: !0
@@ -156,16 +157,17 @@ function Z() {
       setPendingAccentColor: T.CM
     }, "color"), (0, i.jsx)(g.Z, {
       sectionTitle: R.intl.string(R.t.NepzEx),
-      errors: er,
+      errors: es,
       onBioChange: e => (0, p.xQ)(e, null == B ? void 0 : B.bio),
       pendingBio: F,
       currentBio: null != (L = null == B ? void 0 : B.bio) ? L : ""
-    }, "bio"), es.length > 0 && (0, i.jsx)(d.Z, {
-      availablePrimaryGuilds: es,
-      pendingPrimaryGuildId: Y,
+    }, "bio"), el.length > 0 && (0, i.jsx)(d.Z, {
+      availablePrimaryGuilds: el,
+      pendingPrimaryGuildId: K,
       onChange: e => (0, a.s4)(e)
-    }), null != en && (0, i.jsx)(_.Z, {
-      legacyUsername: en
+    }), null != ei && (0, i.jsx)(_.Z, {
+      legacyUsername: ei,
+      pendingLegacyUsernameDisabled: Y
     }, "legacy_username")]
   })
 }

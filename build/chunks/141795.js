@@ -80,10 +80,10 @@ class P extends E.ZP {
       showLargeMessageDialog: r,
       reactNativeFileIndex: i
     } = e, o = new P(t, n, r, i);
-    return "COMPLETED" !== o.status && (o.status = "NOT_STARTED"), Object.entries(e).forEach(e => {
+    return Object.entries(e).forEach(e => {
       let [t, n] = e;
       t.startsWith("_") || (o[t] = n)
-    }), o
+    }), "COMPLETED" !== o.status && (o.status = "NOT_STARTED"), o
   }
   retryOpts() {
     return this.item.platform === E.ow.REACT_NATIVE ? {

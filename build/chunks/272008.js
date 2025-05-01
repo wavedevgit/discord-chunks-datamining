@@ -413,7 +413,7 @@ async function U(e) {
     placement: e
   });
   try {
-    let t = await (0, l.G)(),
+    let t = await (0, l.Gg)(),
       n = await (0, s.Gy)(),
       r = (await i.tn.get({
         url: E.ANM.QUEST_FETCH_QUEST_TO_DELIVER(e, null == t ? void 0 : t.uuid, n.uuid),

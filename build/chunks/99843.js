@@ -219,8 +219,9 @@ let O = e => {
       })
     }, [t]), c = i.useCallback(e => {
       _.default.track(y.rMx.GDM_EDIT_INTERACTED, {
-        channel_id: t.id,
         action: "entry_point_hovered",
+        channel_id: t.id,
+        channel_type: y.d4z.GROUP_DM,
         location: d.Z.HEADER_BAR
       })
     }, [t]);
