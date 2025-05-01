@@ -22,7 +22,7 @@ function x(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: m.inline,
-    children: [(0, r.jsx)(s.owK, {
+    children: [(0, r.jsx)(s.P4T, {
       size: "xs",
       color: s.TVs.colors.STATUS_WARNING
     }), (0, r.jsx)(s.Text, {

@@ -1,0 +1,1 @@
+{"id":"603075","type":"experiment","data":{"kind":"user","id":"2025-04_app_dm_new_mute_ux","label":"App DM New Mute UX","defaultConfig":{"enabled":false},"commonTriggerPoint":"i.$P.CONNECTION_OPEN","treatments":[{"id":1,"label":"Enables new App DM management experience","config":{"enabled":false}}]},"fromModule":{"id":"1272"}}
