@@ -3,17 +3,17 @@ n.d(t, {
   $Z: () => N,
   B8: () => I,
   F4: () => P,
-  HH: () => D,
+  HH: () => A,
   Hd: () => Z,
   Xl: () => T,
   dF: () => C,
-  eM: () => L,
+  eM: () => R,
   fB: () => _,
-  gK: () => M,
-  mG: () => A,
+  gK: () => D,
+  mG: () => M,
   qe: () => w,
   rY: () => x,
-  ts: () => R,
+  ts: () => L,
   zW: () => S
 }), n(200651), n(192379), n(481060);
 var i = n(332148),
@@ -29,9 +29,9 @@ var c = n(623292),
   f = n(314897),
   g = n(592125),
   m = n(626135),
-  b = n(934415),
-  h = n(572004),
-  p = n(585483),
+  p = n(934415),
+  b = n(572004),
+  h = n(585483),
   O = n(709054),
   y = n(111618),
   E = n(50284),
@@ -44,14 +44,14 @@ function S(e) {
 }
 
 function P(e, t, n) {
-  (0, h.JG)(n.shiftKey ? "".concat(t.channel_id, "-").concat(t.id) : t.id)
+  (0, b.JG)(n.shiftKey ? "".concat(t.channel_id, "-").concat(t.id) : t.id)
 }
 
 function _(e, t) {
   m.default.track(j.rMx.MESSAGE_LINK_COPIED, {
     message_id: t.id,
     channel: t.channel_id
-  }), (0, h.JG)((0, b.wR)(e.guild_id, e.id, t.id))
+  }), (0, b.JG)((0, p.wR)(e.guild_id, e.id, t.id))
 }
 
 function N(e, t, n) {
@@ -75,11 +75,11 @@ function T(e, t) {
   (0, a.Z)(e.id, t.id)
 }
 
-function A(e, t) {
+function M(e, t) {
   (0, v.Z)(e, t, void 0, y.Z.getOptions(t.id))
 }
 
-function D(e, t, n) {
+function A(e, t, n) {
   let i = e.isPrivate(),
     r = t.author.id === f.default.getId();
   (0, c.fE)({
@@ -87,10 +87,10 @@ function D(e, t, n) {
     message: t,
     shouldMention: !n.shiftKey && !r,
     showMentionToggle: !i && !r
-  }), p.S.dispatchToLastSubscribed(j.CkL.TEXTAREA_FOCUS)
+  }), h.S.dispatchToLastSubscribed(j.CkL.TEXTAREA_FOCUS)
 }
 
-function M(e, t) {
+function D(e, t) {
   (0, d.R6)(e, t, "Message")
 }
 
@@ -106,14 +106,14 @@ function C(e, t) {
   })
 }
 
-function L(e, t) {
+function R(e, t) {
   (0, u.x)({
     channelId: e.id,
     messageId: t.id
   })
 }
 
-function R(e, t) {
+function L(e, t) {
   (0, o.l8)({
     message: t,
     source: "message-actions"

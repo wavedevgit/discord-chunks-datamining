@@ -14,20 +14,20 @@ var i = n(200651),
   f = n(496675),
   g = n(768581),
   m = n(585483),
-  b = n(176354),
-  h = n(981631),
-  p = n(185923),
+  p = n(176354),
+  b = n(981631),
+  h = n(185923),
   O = n(388032);
 
 function y(e, t) {
   let {
     reducedMotion: n
-  } = r.useContext(a.Sfi), g = (0, u.$R)(t), y = (0, l.e7)([f.Z], () => (t.isPrivate() || f.Z.can(h.Plq.ADD_REACTIONS, t)) && g, [t, g]), v = (0, o.MZ)(t.getGuildId());
-  if (!d.nc.getSetting() || !y || e.type === h.uaV.GUILD_INVITE_REMINDER) return null;
-  let j = v.filter(e => !b.ZP.isEmojiFilteredOrLocked({
+  } = r.useContext(a.Sfi), g = (0, u.$R)(t), y = (0, l.e7)([f.Z], () => (t.isPrivate() || f.Z.can(b.Plq.ADD_REACTIONS, t)) && g, [t, g]), v = (0, o.MZ)(t.getGuildId());
+  if (!d.nc.getSetting() || !y || e.type === b.uaV.GUILD_INVITE_REMINDER) return null;
+  let j = v.filter(e => !p.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,
-    intention: p.Hz.REACTION
+    intention: h.Hz.REACTION
   })).slice(0, 12).map((r, l) => {
     var o, u;
     return (0, i.jsx)(a.sNh, {
@@ -77,7 +77,7 @@ function y(e, t) {
     id: "add-reaction",
     label: O.intl.string(O.t.lfIHs7),
     action: () => {
-      m.S.dispatchKeyed(h.LPv.TOGGLE_REACTION_POPOUT, e.id, {
+      m.S.dispatchKeyed(b.LPv.TOGGLE_REACTION_POPOUT, e.id, {
         emojiPicker: !0
       })
     },
@@ -89,7 +89,7 @@ function y(e, t) {
         label: O.intl.string(O.t["OBCR+v"]),
         icon: a.EO4,
         action: () => {
-          m.S.dispatchKeyed(h.LPv.TOGGLE_REACTION_POPOUT, e.id, {
+          m.S.dispatchKeyed(b.LPv.TOGGLE_REACTION_POPOUT, e.id, {
             emojiPicker: !0
           })
         }
@@ -112,7 +112,7 @@ function E(e) {
       id: n.id,
       animated: n.animated && (!r || a),
       size: 18
-    }) : b.ZP.getURL(null != (t = n.optionallyDiverseSequence) ? t : ""),
+    }) : p.ZP.getURL(null != (t = n.optionallyDiverseSequence) ? t : ""),
     alt: ""
   })
 }

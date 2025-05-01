@@ -1,6 +1,6 @@
 /** Chunk was on 19549 **/
 n.d(t, {
-  Z: () => d
+  Z: () => u
 });
 var r = n(200651),
   i = n(192379),
@@ -9,20 +9,20 @@ var r = n(200651),
   o = n(699516),
   c = n(594174),
   s = n(933557),
-  u = n(388032);
+  d = n(388032);
 
-function d(e, t) {
-  let d = i.useCallback(() => {
+function u(e, t) {
+  let u = i.useCallback(() => {
     let i = (0, s.F6)(e, c.default, o.Z),
-      d = u.intl.formatToPlainString(u.t.hJ5Ap6, {
+      u = d.intl.formatToPlainString(d.t.hJ5Ap6, {
         name: i
       }),
-      f = u.intl.format(u.t.SSIVOj, {
+      f = d.intl.format(d.t.SSIVOj, {
         name: i
       });
-    e.isManaged() && (d = u.intl.formatToPlainString(u.t.hVGjER, {
+    e.isManaged() && (u = d.intl.formatToPlainString(d.t.hVGjER, {
       name: i
-    }), f = u.intl.format(u.t.IK1Qvr, {
+    }), f = d.intl.format(d.t.IK1Qvr, {
       name: i
     }));
     let p = function(n) {
@@ -51,7 +51,7 @@ function d(e, t) {
         }
         return e
       }({
-        header: d,
+        header: u,
         body: f,
         onSubmit: p
       }, t))
@@ -59,8 +59,8 @@ function d(e, t) {
   }, [e, t]);
   return (0, r.jsx)(a.sNh, {
     id: "leave-channel",
-    label: u.intl.string(u.t["26C4oq"]),
-    action: d,
+    label: d.intl.string(d.t["26C4oq"]),
+    action: u,
     color: "danger"
   })
 }

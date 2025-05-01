@@ -1,6 +1,6 @@
 /** Chunk was on 37220 **/
 n.d(t, {
-  Z: () => h
+  Z: () => b
 }), n(388685);
 var i = n(200651),
   r = n(192379),
@@ -14,20 +14,20 @@ var i = n(200651),
   f = n(768581),
   g = n(176354),
   m = n(981631),
-  b = n(388032);
+  p = n(388032);
 
-function h(e, t) {
+function b(e, t) {
   let {
     reducedMotion: n
-  } = r.useContext(a.Sfi), f = (0, u.$R)(t), g = (0, l.e7)([d.Z], () => d.Z.can(m.Plq.MANAGE_MESSAGES, t) && f, [t, f]), h = e.reactions.reduce((e, t) => {
+  } = r.useContext(a.Sfi), f = (0, u.$R)(t), g = (0, l.e7)([d.Z], () => d.Z.can(m.Plq.MANAGE_MESSAGES, t) && f, [t, f]), b = e.reactions.reduce((e, t) => {
     var n;
     return (null == (n = t.count_details) ? void 0 : n.vote) != null || null != e.find(e => null != e.id && e.id === t.emoji.id || e.name === t.emoji.name) ? e : [...e, t.emoji]
   }, []), O = (n, i) => {
     n.shiftKey ? (0, c.$E)(t.id, e.id, i) : o.Z.show({
-      title: b.intl.string(b.t["73GqT0"]),
-      body: b.intl.string(b.t.dmy5bm),
-      confirmText: b.intl.string(b.t.p89ACg),
-      cancelText: b.intl.string(b.t.gm1Ven),
+      title: p.intl.string(p.t["73GqT0"]),
+      body: p.intl.string(p.t.dmy5bm),
+      confirmText: p.intl.string(p.t.p89ACg),
+      cancelText: p.intl.string(p.t.gm1Ven),
       onConfirm: () => {
         (0, c.$E)(t.id, e.id, i)
       }
@@ -35,9 +35,9 @@ function h(e, t) {
   };
   return !g || null == e.reactions || 0 === e.reactions.length || e.isPoll() && !(0, s.eQ)(e) ? null : (0, i.jsx)(a.sNh, {
     id: "remove-emoji-reactions",
-    label: b.intl.string(b.t["zx/e4O"]),
+    label: p.intl.string(p.t["zx/e4O"]),
     color: "danger",
-    children: h.map(e => {
+    children: b.map(e => {
       var t, r;
       return (0, i.jsx)(a.sNh, {
         id: "remove-emoji-reactions-".concat(null != (t = e.name) ? t : e.id),
@@ -45,7 +45,7 @@ function h(e, t) {
         action: t => O(t, e),
         icon: t => {
           var r, l;
-          return (0, i.jsx)(p, (r = function(e) {
+          return (0, i.jsx)(h, (r = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 i = Object.keys(n);
@@ -82,7 +82,7 @@ function h(e, t) {
   })
 }
 
-function p(e) {
+function h(e) {
   var t;
   let {
     emoji: n,
