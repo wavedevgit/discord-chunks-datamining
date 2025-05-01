@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: b24d4893d7628c10
+  Original File Name: 2f0895e5d17945bd
 **/
 .countDownWrapper_a1b7b8 {
     align-items: center;
@@ -1394,18 +1394,45 @@
 }
 
 .blockHeader__08415 {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
     margin-bottom: 24px;
     width: 100%
+}
+
+.blockHeader__08415,.headerLeft__08415 {
+    align-items: center;
+    display: flex;
+    flex-direction: row
+}
+
+.headerLeft__08415 {
+    gap: 4px
+}
+
+.headerRight__08415 {
+    align-items: center;
+    display: flex;
+    gap: 12px
+}
+
+.sortSelect__08415 {
+    min-width: 272px
+}
+
+.sortByText__08415 {
+    text-transform: uppercase
 }
 
 .title__08415 {
     font-size: 36px;
     line-height: 52px;
     margin-bottom: 10px
+}
+
+.informationIcon__08415 {
+    align-items: center;
+    display: flex;
+    justify-content: center
 }
 
 .subHeaderText__08415 {
@@ -1611,4 +1638,4 @@
     opacity: 0
 }
 
-/*# sourceMappingURL=b24d4893d7628c10.css.map*/
+/*# sourceMappingURL=2f0895e5d17945bd.css.map*/

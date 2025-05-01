@@ -21,8 +21,8 @@ var r = n(200651),
   _ = n(963278),
   C = n(384067),
   v = n(215023),
-  x = n(388032),
-  O = n(806734);
+  O = n(388032),
+  x = n(806734);
 let j = e => {
     var t;
     let {
@@ -32,7 +32,7 @@ let j = e => {
       tab: u,
       isFullScreen: v
     } = e, {
-      noCache: x,
+      noCache: O,
       includeUnpublished: j
     } = (0, f.Z)(), y = (0, c.sp)(), S = null != (t = null == y ? void 0 : y.sessionId) ? t : "";
     l.useEffect(() => {
@@ -42,16 +42,16 @@ let j = e => {
         tab: u,
         isFullScreen: v,
         unpublishedCategoriesShown: j,
-        cacheDisabled: x
+        cacheDisabled: O
       })
     }, [u]);
     let {
       isFetchingShopHome: k,
       fetchShopHomeError: P,
       shopBlocks: E,
-      refreshShopHome: B
+      refreshShopHome: w
     } = (0, d.E)(u, {
-      noCache: x,
+      noCache: O,
       includeUnpublished: j,
       includeBundles: !0,
       logPerf: !0
@@ -59,9 +59,9 @@ let j = e => {
       sessionId: S,
       tab: u,
       isFullScreen: v
-    }), w = l.useCallback(() => {
-      B()
-    }, [B]);
+    }), B = l.useCallback(() => {
+      w()
+    }, [w]);
     if (l.useEffect(() => {
         null != P || k || 0 === E.length || (0, b.n)({
           sessionId: S,
@@ -69,15 +69,15 @@ let j = e => {
           tab: u,
           isFullScreen: v,
           unpublishedCategoriesShown: j,
-          cacheDisabled: x
+          cacheDisabled: O
         })
-      }, [P, k, E.length, j, x, S, u, v]), null != P) return (0, r.jsx)(p.Z, {
-      onRetry: w,
+      }, [P, k, E.length, j, O, S, u, v]), null != P) return (0, r.jsx)(p.Z, {
+      onRetry: B,
       errorOrigin: p.i.SHOP_PAGE,
       errorMessage: P.message
     });
     if (k || 0 === E.length) return (0, r.jsxs)("div", {
-      className: O.loadingContainer,
+      className: x.loadingContainer,
       children: [(0, r.jsx)(m.Z, {
         isLoading: k,
         handleTransition: n,
@@ -90,11 +90,10 @@ let j = e => {
         isLoading: k,
         handleTransition: n,
         numVisibleItems: a,
-        rankedSkuIds: [],
         tab: u
       })]
     });
-    let I = (e, t) => {
+    let T = (e, t) => {
       if (null == e) return null;
       let l = null;
       switch (e.type) {
@@ -114,11 +113,12 @@ let j = e => {
           }, t);
           break;
         case o.z.FEED:
+          let c = e.sortedSkuIds;
           l = (0, r.jsx)(h.Z, {
             isLoading: k || s,
             handleTransition: n,
             numVisibleItems: a,
-            rankedSkuIds: e.rankedSkuIds,
+            sortedSkuIds: c,
             tab: u
           }, t);
           break;
@@ -140,14 +140,14 @@ let j = e => {
           return null
       }
       return (0, r.jsx)("div", {
-        className: i()(O.blockContainer, {
-          [O.topBlockContainer]: 0 === t
+        className: i()(x.blockContainer, {
+          [x.topBlockContainer]: 0 === t
         }),
         children: l
       }, t)
     };
     return (0, r.jsx)(r.Fragment, {
-      children: E.map((e, t) => I(e, t))
+      children: E.map((e, t) => T(e, t))
     })
   },
   y = e => {
@@ -159,11 +159,11 @@ let j = e => {
       isFetchingCategories: o
     } = e, c = (0, u.R)("CollectiblesFeedShop");
     return (0, r.jsx)("div", {
-      className: i()(O.shop, {
-        [O.shopFullscreen]: t
+      className: i()(x.shop, {
+        [x.shopFullscreen]: t
       }),
       children: (0, r.jsxs)("div", {
-        className: i()(O.content, O.mainContent),
+        className: i()(x.content, x.mainContent),
         children: [(0, r.jsx)(j, {
           handleTransition: n,
           numVisibleItems: l,
@@ -171,19 +171,19 @@ let j = e => {
           tab: a,
           isFullScreen: t
         }), a !== v.AW.CATALOG && l >= c && (0, r.jsxs)("div", {
-          className: O.endOfFeed,
+          className: x.endOfFeed,
           children: [(0, r.jsx)(s.X6q, {
             variant: "heading-md/semibold",
-            children: x.intl.string(x.t.Yr70c3)
+            children: O.intl.string(O.t.Yr70c3)
           }), (0, r.jsx)(s.zxk, {
-            className: O.endOfFeedButton,
+            className: x.endOfFeedButton,
             onClick: () => {
               n("shop all bottom", void 0, !0)
             },
             children: (0, r.jsx)(s.Text, {
               variant: "text-md/medium",
               color: "always-white",
-              children: x.intl.string(x.t.AfrvRE)
+              children: O.intl.string(O.t.AfrvRE)
             })
           })]
         })]

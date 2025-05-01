@@ -74,8 +74,8 @@ function h(e) {
     })
   });
   let v = (0, o.ql)(t, u.tuJ.PREMIUM_TIER_2),
-    x = !n && !(0, o.x6)(t),
-    O = (0, o.x6)(t) && n ? g(f({}, C), {
+    O = !n && !(0, o.x6)(t),
+    x = (0, o.x6)(t) && n ? g(f({}, C), {
       amount: l.original
     }) : C,
     j = _ && n,
@@ -83,12 +83,12 @@ function h(e) {
   return (0, r.jsxs)("div", {
     className: a()(b.priceTagsContainer, h),
     children: [!j && (0, r.jsx)(s.F, {
-      price: O,
+      price: x,
       discount: n ? o.f_ : l,
       className: a()(b.price, {
         [b.striked]: n,
         [b.dimmed]: n,
-        [b.fullPrice]: x
+        [b.fullPrice]: O
       })
     }), null != v && !y && (0, r.jsx)(s.F, {
       price: v,
@@ -101,12 +101,12 @@ function h(e) {
             text: e
           })
         })
-      }) : x ? e => d.intl.formatToPlainString(d.t.W3gIWF, {
+      }) : O ? e => d.intl.formatToPlainString(d.t.W3gIWF, {
         price: e
       }) : void 0,
       className: a()(b.price, {
         [b.dimmed]: !n,
-        [b.fullPrice]: x
+        [b.fullPrice]: O
       }),
       variant: n ? void 0 : "text-xs/semibold",
       icon: (0, r.jsx)(i.ua7, {
@@ -122,7 +122,7 @@ function h(e) {
             color: "currentColor"
           }, t), {
             className: a()(b.premiumIcon, {
-              [b.fullPrice]: x
+              [b.fullPrice]: O
             })
           }))
         }

@@ -70,8 +70,8 @@ let m = {
       returnRef: _,
       onSuccess: C,
       tooltipDelay: v,
-      isGiftEasterEggEnabled: x,
-      color: O = a.Ttl.BRAND
+      isGiftEasterEggEnabled: O,
+      color: x = a.Ttl.BRAND
     } = e, {
       analyticsLocations: j
     } = (0, o.ZP)(), y = l.useRef(null), S = (0, i.Z)(y), k = (0, d.hv)("CollectiblesShopGiftButton");
@@ -100,7 +100,7 @@ let m = {
         }({}, e), i = i = {
           buttonRef: y,
           className: h.giftButton,
-          color: O,
+          color: x,
           look: a.zxk.Looks.FILLED,
           size: a.PhG.ICON,
           innerClassName: h.giftButtonInner,
@@ -121,7 +121,7 @@ let m = {
               } : void 0
             })
           },
-          children: x ? (0, r.jsx)(c.Z, {
+          children: O ? (0, r.jsx)(c.Z, {
             hovered: S,
             isContentDismissed: !0,
             themeOverride: f.BR.DARK,

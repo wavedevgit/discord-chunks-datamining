@@ -66,7 +66,7 @@ function v(e, t) {
   }
   return l
 }
-let x = s()(e => {
+let O = s()(e => {
     let t = !1;
     if (null != e && (0, d.FX)(e)) {
       let n = (0, d._i)(e);
@@ -74,7 +74,7 @@ let x = s()(e => {
     }
     return t ? b.TVs.unsafe_rawColors.PRIMARY_700.css : b.TVs.unsafe_rawColors.PRIMARY_200.css
   }),
-  O = e => {
+  x = e => {
     let {
       variantGroupProduct: t,
       variant: n,
@@ -83,7 +83,7 @@ let x = s()(e => {
       selectedVariantIndex: s,
       onEnter: d,
       onLeave: p,
-      minimal: O
+      minimal: x
     } = e, {
       isPurchased: j
     } = (0, g.L)(n), y = (0, c.JA)("shop-variants-group-".concat(t.storeListingId, "-").concat(a)), {
@@ -94,7 +94,7 @@ let x = s()(e => {
     return (0, r.jsx)(b.ua7, {
       text: h.intl.string(h.t["6cfuDg"]),
       "aria-label": !1,
-      shouldShow: !O && j,
+      shouldShow: !x && j,
       children: e => (0, r.jsx)(b.P3F, C(_({}, k), {
         tag: "li",
         onMouseEnter: () => {
@@ -120,7 +120,7 @@ let x = s()(e => {
         className: m.colorVariant,
         children: (0, r.jsx)("div", {
           className: i()(m.colorSwatch, {
-            [m.open]: !O,
+            [m.open]: !x,
             [m.selected]: a === s
           }),
           style: {
@@ -129,7 +129,7 @@ let x = s()(e => {
           },
           children: j ? (0, r.jsx)(b.kSu, {
             className: m.purchasedIndicator,
-            color: x(n.variantValue)
+            color: O(n.variantValue)
           }) : null
         })
       }))
@@ -144,7 +144,7 @@ let x = s()(e => {
       setIsHoveringOnSwitch: s,
       minimal: d,
       purchases: g,
-      alternativeBackgroundColor: x
+      alternativeBackgroundColor: O
     } = e, j = (0, f.o)(l, g), y = o.previewingVariantIndex, S = null == (t = l.variants) ? void 0 : t[j], k = null !== y ? null == (n = l.variants) ? void 0 : n[y] : void 0, P = (0, p.Z)("shop-variants-group-".concat(l.storeListingId), u.hy.HORIZONTAL);
     if (null == S) return null;
     let E = null != k ? k.variantLabel : null == S ? void 0 : S.variantLabel;
@@ -161,7 +161,7 @@ let x = s()(e => {
           }, c), {
             className: i()(m.variantsPanel, a, {
               [m.minimalState]: d,
-              [m.alternativeColor]: x
+              [m.alternativeColor]: O
             }),
             onMouseEnter: () => null == s ? void 0 : s(!0),
             onMouseLeave: () => null == s ? void 0 : s(!1),
@@ -169,7 +169,7 @@ let x = s()(e => {
               className: m.variantsList,
               children: null == (t = l.variants) ? void 0 : t.map((e, t) => {
                 var n, a;
-                return (0, r.jsx)(O, {
+                return (0, r.jsx)(x, {
                   variantGroupProduct: l,
                   variant: e,
                   variantIndex: t,

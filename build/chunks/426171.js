@@ -1,9 +1,9 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Kp: () => x,
+  Kp: () => O,
   u9: () => C,
-  xV: () => O
+  xV: () => x
 }), n(413496), n(433524), n(35282), n(704826), n(539854), n(388685);
 var r = n(192379),
   l = n(512969),
@@ -74,7 +74,7 @@ let h = "".concat("#").concat("itemSkuId", "="),
     }
     return () => {}
   },
-  x = e => {
+  O = e => {
     let {
       isFetchingCategories: t,
       isLayer: n,
@@ -87,11 +87,11 @@ let h = "".concat("#").concat("itemSkuId", "="),
       let e = m.exec(f.hash);
       null != e ? p.current = e[1] : p.current = null
     }, [C, n, f.hash]);
-    let x = (0, a.e7)([u.Z], () => u.Z.initialProductSkuId);
+    let O = (0, a.e7)([u.Z], () => u.Z.initialProductSkuId);
     r.useEffect(() => {
       if (t) return;
       let e = null;
-      if (null != (e = n ? x : p.current)) {
+      if (null != (e = n ? O : p.current)) {
         let t = [],
           n = setTimeout(() => {
             let n = v({
@@ -108,9 +108,9 @@ let h = "".concat("#").concat("itemSkuId", "="),
           t.forEach(e => e())
         }
       }
-    }, [n, _, h, t, x, c, d, C])
+    }, [n, _, h, t, O, c, d, C])
   },
-  O = e => {
+  x = e => {
     let t = r.useRef({}),
       n = (0, a.e7)([i.Z], () => i.Z.useReducedMotion),
       l = (0, a.e7)([c.Z], () => c.Z.isFetchingCategories),
