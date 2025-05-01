@@ -1,6 +1,6 @@
 /**
   Module ID: 34600
-  Original File Name: 5cbe92ab680a213a
+  Original File Name: e0f39157dd98eb53
 **/
 :root {
     --application-subscription-end: hotpink;
@@ -3299,8 +3299,10 @@
     --android-navigation-bar-background: #0c0c0d;
     --android-navigation-scrim-background: rgba(12,12,13,.5);
     --android-ripple: hsla(0,0%,100%,.07);
+    --app-border-frame: hsla(0,0%,100%,.08);
     --autocomplete-bg: #2b2e30;
     --background-accent: #40424a;
+    --background-base-low: #36383d;
     --background-floating: #111214;
     --background-mentioned: rgba(240,179,51,.1);
     --background-mentioned-hover: rgba(240,179,51,.08);
@@ -3657,8 +3659,10 @@
     --android-navigation-bar-background: #fafafa;
     --android-navigation-scrim-background: hsla(0,0%,98%,.5);
     --android-ripple: rgba(0,0,0,.12);
+    --app-border-frame: rgba(0,0,0,.08);
     --autocomplete-bg: #fafafa;
     --background-accent: #6e7078;
+    --background-base-low: #fafafa;
     --background-floating: #fff;
     --background-mentioned: rgba(240,179,51,.1);
     --background-mentioned-hover: rgba(240,179,51,.2);
@@ -4015,8 +4019,10 @@
     --android-navigation-bar-background: #0f1014;
     --android-navigation-scrim-background: rgba(15,16,20,.5);
     --android-ripple: hsla(0,0%,100%,.07);
+    --app-border-frame: hsla(223,8%,46%,.14);
     --autocomplete-bg: #2b2e30;
     --background-accent: #2b2e36;
+    --background-base-low: #0c0c0e;
     --background-floating: #131318;
     --background-mentioned: rgba(252,194,69,.08);
     --background-mentioned-hover: rgba(240,179,51,.08);
@@ -4373,8 +4379,10 @@
     --android-navigation-bar-background: #0f1014;
     --android-navigation-scrim-background: rgba(15,16,20,.5);
     --android-ripple: hsla(0,0%,100%,.07);
+    --app-border-frame: hsla(223,8%,46%,.12);
     --autocomplete-bg: #2b2e30;
     --background-accent: #383b42;
+    --background-base-low: #212124;
     --background-floating: #26262e;
     --background-mentioned: rgba(252,194,69,.08);
     --background-mentioned-hover: rgba(240,179,51,.08);
@@ -4723,4 +4731,4 @@
     --white: #fff
 }
 
-/*# sourceMappingURL=5cbe92ab680a213a.css.map*/
+/*# sourceMappingURL=e0f39157dd98eb53.css.map*/

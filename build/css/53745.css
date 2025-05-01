@@ -1,6 +1,6 @@
 /**
   Module ID: 53745
-  Original File Name: 3582025632721db2
+  Original File Name: 3dbf621518e7f70a
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -2008,6 +2008,10 @@
     margin-bottom: 8px
 }
 
+.refresh-fast-follow-distinct-borders .sectionDivider__629e4 {
+    background-color: var(--app-border-frame)
+}
+
 .newChannel__599fa {
     color: var(--badge-brand-text)
 }
@@ -3127,6 +3131,10 @@
 .favoritesIcon_f37cb1 {
     margin-bottom: 2px;
     margin-right: 8px
+}
+
+.refresh-fast-follow-distinct-borders .bannerVisible_f37cb1 .headerGlass_f37cb1,.refresh-fast-follow-distinct-borders .header_f37cb1 {
+    border-bottom-color: var(--app-border-frame)
 }
 
 .enable-forced-colors .container_f37cb1 {
@@ -6264,4 +6272,4 @@
     background-image: url(/assets/05207174d5432737.svg)
 }
 
-/*# sourceMappingURL=3582025632721db2.css.map*/
+/*# sourceMappingURL=3dbf621518e7f70a.css.map*/

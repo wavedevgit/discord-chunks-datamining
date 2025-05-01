@@ -55,7 +55,7 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
       id: F,
       name: z,
       children: W
-    } = t, [Y, K] = i.useState(!1), [q, Q] = i.useState(!1), X = Y || q, J = (0, f.M)("FolderItem");
+    } = t, [Y, K] = i.useState(!1), [q, Q] = i.useState(!1), X = Y || q, J = (0, f.Ml)("FolderItem");
     i.useEffect(() => {
       R && K(!1)
     }, [R]);

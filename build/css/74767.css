@@ -1,6 +1,6 @@
 /**
   Module ID: 74767
-  Original File Name: 16291ce319c84f68
+  Original File Name: 5f38a61df96dab0a
 **/
 .content__79cbe {
     border-radius: 8px;
@@ -447,15 +447,18 @@ strong {
 .container_c8ffbb {
     background: var(--bg-overlay-chat,var(--custom-channel-members-bg));
     border-left: 1px solid var(--border-subtle);
-    flex-direction: column
-}
-
-.container_c8ffbb,.membersWrap_c8ffbb {
     display: flex;
+    flex-direction: column;
     height: 100%
 }
 
+.refresh-fast-follow-distinct-borders .container_c8ffbb {
+    border-left-color: var(--app-border-frame)
+}
+
 .membersWrap_c8ffbb {
+    display: flex;
+    height: 100%;
     max-height: 100%;
     min-width: var(--custom-member-list-width);
     position: relative
@@ -1630,6 +1633,10 @@ html:not(.visual-refresh) .header_cba592 {
 .visual-refresh .container__7641b {
     background-color: var(--background-base-lower);
     border-left: 1px solid var(--border-subtle)
+}
+
+.refresh-fast-follow-distinct-borders .container__7641b {
+    border-left-color: var(--app-border-frame)
 }
 
 .unreadCount__23463 {
@@ -7897,6 +7904,10 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     background-color: var(--background-mod-normal)
 }
 
+.refresh-fast-follow-distinct-borders .chatHeaderBar_a53846 {
+    border-bottom-color: var(--app-border-frame)
+}
+
 .enable-forced-colors.visual-refresh .container_a53846 {
     border-bottom-width: 1px
 }
@@ -13184,4 +13195,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=16291ce319c84f68.css.map*/
+/*# sourceMappingURL=5f38a61df96dab0a.css.map*/

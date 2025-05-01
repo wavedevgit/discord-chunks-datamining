@@ -152,6 +152,25 @@ let {
         opacity: .07
       }
     },
+    APP_BORDER_FRAME: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "WHITE",
+        opacity: .08
+      },
+      [r.LIGHT]: {
+        raw: "BLACK",
+        opacity: .08
+      },
+      [r.MIDNIGHT]: {
+        raw: "PLUM_11",
+        opacity: .14
+      },
+      [r.DARKER]: {
+        raw: "PLUM_11",
+        opacity: .12
+      }
+    },
     AUTOCOMPLETE_BG: {
       category: "background",
       [r.DARK]: {
@@ -201,6 +220,25 @@ let {
           lightness: .75,
           saturation: "*1.2"
         }
+      }
+    },
+    BACKGROUND_BASE_LOW: {
+      category: "background",
+      [r.DARK]: {
+        raw: "NEUTRAL_66",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "NEUTRAL_2",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "NEUTRAL_95",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "NEUTRAL_82",
+        opacity: 1
       }
     },
     BACKGROUND_FLOATING: {
@@ -7384,6 +7422,7 @@ let {
     NEUTRAL_1: "#ffffff",
     NEUTRAL_10: "#dbdcdf",
     NEUTRAL_100: "#000000",
+    NEUTRAL_12: "#d3d4d7",
     NEUTRAL_15: "#c8c8cd",
     NEUTRAL_16: "#c4c5c9",
     NEUTRAL_17: "#c0c1c6",
@@ -7407,10 +7446,12 @@ let {
     NEUTRAL_45: "#5c5d67",
     NEUTRAL_46: "#595a64",
     NEUTRAL_5: "#efeff0",
+    NEUTRAL_52: "#4c4d56",
     NEUTRAL_59: "#41424a",
     NEUTRAL_6: "#ebebed",
     NEUTRAL_60: "#3f4048",
     NEUTRAL_64: "#393a41",
+    NEUTRAL_65: "#383940",
     NEUTRAL_66: "#36373e",
     NEUTRAL_69: "#323339",
     NEUTRAL_71: "#2f3035",
