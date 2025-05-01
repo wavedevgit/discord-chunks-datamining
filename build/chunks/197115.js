@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => N
+  Z: () => C
 });
 var r = n(200651);
 n(192379);
@@ -21,9 +21,10 @@ var i = n(120356),
   g = n(639119),
   E = n(474936),
   b = n(981631),
-  y = n(627268);
+  y = n(388032),
+  O = n(627268);
 
-function O(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -32,20 +33,20 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      O(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
 
-function I(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -56,15 +57,15 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+function T(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function T(e, t) {
+function A(e, t) {
   if (null == e) return {};
-  var n, r, i = A(e, t);
+  var n, r, i = N(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -72,21 +73,20 @@ function T(e, t) {
   return i
 }
 
-function A(e, t) {
+function N(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let N = function(e) {
+let C = function(e) {
   var {
     isGift: t,
     subscriptionTier: i,
-    onClick: O,
-    size: I,
-    className: A,
-    isTrialCTA: N,
+    onClick: v,
+    size: S,
+    className: N,
     buttonText: C,
     buttonTextClassName: R,
     subscribeButtonText: P,
@@ -102,7 +102,7 @@ let N = function(e) {
     showGradient: B = !1,
     confirmationFooter: V,
     paymentModalBanner: F
-  } = e, Z = T(e, ["isGift", "subscriptionTier", "onClick", "size", "className", "isTrialCTA", "buttonText", "buttonTextClassName", "subscribeButtonText", "iconClassName", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "showIcon", "disableShine", "applicationId", "giftMessage", "shinyButtonClassName", "showGradient", "confirmationFooter", "paymentModalBanner"]);
+  } = e, Z = A(e, ["isGift", "subscriptionTier", "onClick", "size", "className", "buttonText", "buttonTextClassName", "subscribeButtonText", "iconClassName", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "showIcon", "disableShine", "applicationId", "giftMessage", "shinyButtonClassName", "showGradient", "confirmationFooter", "paymentModalBanner"]);
   let H = (0, a.e7)([_.default], () => _.default.getCurrentUser()),
     Y = (0, a.e7)([h.Z], () => h.Z.isFocused()),
     W = (0, a.e7)([p.ZP], () => p.ZP.getPremiumTypeSubscription()),
@@ -113,8 +113,6 @@ let N = function(e) {
     q = !t && null != z && null != i && E.nG[z.trial_id].skus.includes(i),
     Q = (0, m.Z)({
       subscriptionTier: i,
-      isTrialCTA: N,
-      isGift: t,
       buttonTextOverride: C,
       defaultTextOverride: P
     }),
@@ -123,7 +121,7 @@ let N = function(e) {
       if (e.preventDefault(), null == H) return void(0, f.uL)(b.Z5c.LOGIN, {
         source: "premium_subscribe_button"
       });
-      if (null == O || O(e), (null == W ? void 0 : W.status) === b.O0b.ACCOUNT_HOLD) {
+      if (null == v || v(e), (null == W ? void 0 : W.status) === b.O0b.ACCOUNT_HOLD) {
         (0, u.A3)(), l.Z.open(b.oAB.PREMIUM), null == L || L(!1);
         return
       }
@@ -134,8 +132,8 @@ let N = function(e) {
         return t => {
           var {
             onClose: n
-          } = t, i = T(t, ["onClose"]);
-          return (0, r.jsx)(e, S(v({}, i), {
+          } = t, i = A(t, ["onClose"]);
+          return (0, r.jsx)(e, T(I({}, i), {
             onClose: n
           }))
         }
@@ -147,8 +145,8 @@ let N = function(e) {
         return t => {
           var {
             onClose: n
-          } = t, i = T(t, ["onClose"]);
-          return (0, r.jsx)(e, S(v({}, i), {
+          } = t, i = A(t, ["onClose"]);
+          return (0, r.jsx)(e, T(I({}, i), {
             onClose: n
           }))
         }
@@ -160,7 +158,7 @@ let N = function(e) {
         initialPlanId: null,
         subscriptionTier: i,
         analyticsLocations: K,
-        analyticsObject: v({
+        analyticsObject: I({
           object: b.qAy.BUTTON_CTA,
           objectType: c
         }, x),
@@ -173,59 +171,46 @@ let N = function(e) {
         paymentModalBanner: F
       })
     };
-  if (N) return (0, r.jsxs)(s.zxk, S(v({
-    size: I,
-    className: A,
-    innerClassName: y.premiumSubscribeButton,
-    color: s.zxk.Colors.BRAND_INVERTED,
-    onClick: X
-  }, Z), {
-    children: [M && (0, r.jsx)(s.SrA, {
-      size: "md",
-      color: "currentColor",
-      className: y.premiumIcon
-    }), (0, r.jsx)("span", {
-      className: o()(y.buttonText, R),
-      children: Q.buttonText
-    })]
-  }));
-  if (t) return (0, r.jsxs)(s.zxk, S(v({
-    size: I,
-    className: A,
-    innerClassName: y.giftButton,
-    color: s.zxk.Colors.PRIMARY,
-    onClick: X
-  }, Z), {
-    children: [(0, r.jsx)(s.OgN, {
-      size: "md",
-      color: "currentColor",
-      className: y.giftIcon
-    }), (0, r.jsx)("span", {
-      className: o()(y.buttonText, R),
-      children: Q.buttonText
-    })]
-  }));
+  if (t) {
+    let e = i === E.Si.TIER_0 ? y.intl.string(y.t.rk4Uu7) : y.intl.string(y.t.Ve9Ge3);
+    return (0, r.jsxs)(s.zxk, T(I({
+      size: S,
+      className: N,
+      innerClassName: O.giftButton,
+      color: s.zxk.Colors.PRIMARY,
+      onClick: X
+    }, Z), {
+      children: [(0, r.jsx)(s.OgN, {
+        size: "md",
+        color: "currentColor",
+        className: O.giftIcon
+      }), (0, r.jsx)("span", {
+        className: o()(O.buttonText, R),
+        children: null != C ? C : e
+      })]
+    }))
+  }
 
   function J(e) {
-    return (0, r.jsxs)(s.gtL, S(v({
+    return (0, r.jsxs)(s.gtL, T(I({
       disabled: Q.disabled,
       onClick: X,
-      innerClassName: y.premiumSubscribeButton,
+      innerClassName: O.premiumSubscribeButton,
       color: i === E.Si.TIER_1 ? s.zxk.Colors.PRIMARY : s.zxk.Colors.GREEN,
-      size: I,
+      size: S,
       className: G,
       wrapperClassName: o()({
-        [y.tier2Gradient]: B && i === E.Si.TIER_2,
-        [y.tier1Gradient]: B && i === E.Si.TIER_1
-      }, A),
+        [O.tier2Gradient]: B && i === E.Si.TIER_2,
+        [O.tier1Gradient]: B && i === E.Si.TIER_1
+      }, N),
       pauseAnimation: !Y || k
     }, Z, e), {
       children: [M && (0, r.jsx)(s.SrA, {
         size: "md",
         color: "currentColor",
-        className: o()(y.premiumIcon, w)
+        className: o()(O.premiumIcon, w)
       }), (0, r.jsx)("span", {
-        className: o()(y.buttonText, R),
+        className: o()(O.buttonText, R),
         children: Q.buttonText
       })]
     }))

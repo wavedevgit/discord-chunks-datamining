@@ -122,9 +122,7 @@ function x(e) {
     voiceActivityStatusEnabled: V
   } = (0, u.U)({
     location: "UserProfileStackedActivity"
-  }), F = V && null == k && null == U && null != j, {
-    interactionSource: Z
-  } = (0, E.Xo)(), H = Z === v.n_.ACTIVITY, Y = i.useRef(null), W = i.useRef(null), K = i.useRef(null), z = i.useRef(), [q, Q] = i.useReducer(D, L), {
+  }), F = V && null == k && null == U && null != j, Z = (0, E.yi)(), H = (null == Z ? void 0 : Z.interactionSource) === v.n_.ACTIVITY, Y = i.useRef(null), W = i.useRef(null), K = i.useRef(null), z = i.useRef(), [q, Q] = i.useReducer(D, L), {
     height: X,
     animationPhase: J
   } = q, $ = "awaitingInput" !== J, ee = "animating" === J || "done" === J, et = [], en = {
