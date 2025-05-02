@@ -5,8 +5,8 @@ t.d(n, {
 var r = t(200651),
   l = t(192379),
   i = t(120356),
-  u = t.n(i),
-  c = t(481060),
+  c = t.n(i),
+  u = t(481060),
   o = t(663993),
   a = t(572004),
   d = t(73433),
@@ -16,14 +16,14 @@ function f(e) {
   let {
     text: n
   } = e, [t, i] = l.useState(!1);
-  return (0, r.jsx)(c.P3F, {
+  return (0, r.jsx)(u.P3F, {
     onClick: () => {
       (0, a.JG)(n, () => i(!0), () => i(!1))
     },
-    children: t ? (0, r.jsx)(c.dz2, {
+    children: t ? (0, r.jsx)(u.dz2, {
       size: "xs",
       color: "currentColor"
-    }) : (0, r.jsx)(c.TIy, {
+    }) : (0, r.jsx)(u.TIy, {
       size: "xs",
       color: "currentColor"
     })
@@ -35,7 +35,7 @@ function _(e) {
     language: n,
     content: l
   } = e, i = () => (0, r.jsx)("code", {
-    className: u()(s.scrollbarGhostHairline, "hljs"),
+    className: c()(s.scrollbarGhostHairline, "hljs"),
     children: l
   });
   return (0, r.jsx)("pre", {
@@ -55,7 +55,7 @@ function _(e) {
           {
             let t = e.highlight(n, l, !0);
             return null == t ? i() : (0, r.jsx)("code", {
-              className: u()(s.scrollbarGhostHairline, "hljs", t.language),
+              className: c()(s.scrollbarGhostHairline, "hljs", t.language),
               dangerouslySetInnerHTML: {
                 __html: t.value
               }

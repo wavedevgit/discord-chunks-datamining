@@ -6,12 +6,12 @@ t.a(e, async function(e, r) {
     });
     var l = t(818140),
       i = t(192379),
-      u = e([l]);
+      c = e([l]);
 
-    function c(e, n) {
+    function u(e, n) {
       if (null == e) throw Error(`Attempted to render "${n}" but no renderer was provided`)
     }
-    l = (u.then ? (await u)() : u)[0];
+    l = (c.then ? (await c)() : c)[0];
     let d = new Set(["bold", "italic", "underline", "strikethrough", "spoiler", "emoji", "timestamp", "mention", "link", "code", "code_block", "heading", "list", "quote", "small"]);
 
     function o({
@@ -19,7 +19,7 @@ t.a(e, async function(e, r) {
       renderers: n
     }) {
       let t = n[e.type];
-      if (c(t, e.type), Array.isArray(e.value)) return i.createElement(t, null, i.createElement(s, {
+      if (u(t, e.type), Array.isArray(e.value)) return i.createElement(t, null, i.createElement(s, {
         nodes: e.value,
         renderers: n
       }));
@@ -46,8 +46,8 @@ t.a(e, async function(e, r) {
           }
           return i.createElement(t, e.value, l);
         case "quote":
-          let u = n.paragraph;
-          return c(u, "paragraph"), i.createElement(t, null, e.value.lines.map(e => i.createElement(u, {
+          let c = n.paragraph;
+          return u(c, "paragraph"), i.createElement(t, null, e.value.lines.map(e => i.createElement(c, {
             key: e,
             value: e,
             renderers: n
