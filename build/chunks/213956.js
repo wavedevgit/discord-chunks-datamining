@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => O
@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(999382),
   g = n(84613),
   p = n(392885),
-  h = n(740903),
-  f = n(464610),
+  f = n(740903),
+  h = n(464610),
   x = n(733629),
   b = n(598622),
   j = n(921944),
@@ -34,42 +34,42 @@ function O() {
     }, []), null == n) return null;
   let C = (0, b.Q)(n);
   switch (O) {
-    case h.u.OVERVIEW:
-      e = (0, r.jsx)(f.Z, {
+    case f.u.OVERVIEW:
+      e = (0, r.jsx)(h.Z, {
         guild: n
       });
       break;
-    case h.u.CAPTCHA_AND_RAID_PROTECTION:
+    case f.u.CAPTCHA_AND_RAID_PROTECTION:
       e = (0, r.jsx)(x.Z, {
         title: _.intl.string(_.t["53eF5u"]),
-        settings: C[h.u.CAPTCHA_AND_RAID_PROTECTION]
+        settings: C[f.u.CAPTCHA_AND_RAID_PROTECTION]
       });
       break;
-    case h.u.DM_AND_SPAM_PROTECTION:
+    case f.u.DM_AND_SPAM_PROTECTION:
       e = (0, r.jsx)(x.Z, {
         title: _.intl.string(_.t.O0SfFx),
-        settings: C[h.u.DM_AND_SPAM_PROTECTION]
+        settings: C[f.u.DM_AND_SPAM_PROTECTION]
       });
       break;
-    case h.u.AUTOMOD:
+    case f.u.AUTOMOD:
       e = (0, r.jsx)(c.Z, {
         guildId: n.id
       });
       break;
-    case h.u.PERMISSIONS:
+    case f.u.PERMISSIONS:
       e = (0, r.jsx)(x.Z, {
         title: _.intl.string(_.t.BXoNiY),
-        settings: C[h.u.PERMISSIONS]
+        settings: C[f.u.PERMISSIONS]
       })
   }
   return (0, r.jsxs)(r.Fragment, {
-    children: [O !== h.u.OVERVIEW && (0, r.jsxs)(a.zxk, {
+    children: [O !== f.u.OVERVIEW && (0, r.jsxs)(a.zxk, {
       className: v.back,
       innerClassName: v.backButton,
       look: a.zxk.Looks.BLANK,
       size: a.zxk.Sizes.MIN,
       onClick: () => {
-        (0, g.K)(h.u.OVERVIEW)
+        (0, g.K)(f.u.OVERVIEW)
       },
       children: [(0, r.jsx)(u.Z, {
         className: v.__invalid_arrow,

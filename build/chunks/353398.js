@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Q5: () => S,
@@ -16,8 +16,8 @@ var r, i = n(200651),
   m = n(481060),
   g = n(570140),
   p = n(484614),
-  h = n(852860),
-  f = n(881052),
+  f = n(852860),
+  h = n(881052),
   x = n(751189),
   b = n(409059),
   j = n(518936),
@@ -72,7 +72,7 @@ function S() {
   let [e, t] = l.useState(!1), n = async () => {
     t(!0), await E.save(), t(!1)
   };
-  return (0, i.jsx)(h.Z, {
+  return (0, i.jsx)(f.Z, {
     submitting: e,
     onReset: E.reset,
     onSave: n
@@ -116,7 +116,7 @@ function P() {
           try {
             await x.Z.loadTemplatesForGuild(e), n(!1)
           } catch (e) {
-            E.setError(new f.Hx(e))
+            E.setError(new h.Hx(e))
           }
         }()
       }, [e]), {
@@ -322,7 +322,7 @@ function k(e) {
     try {
       await x.Z.createGuildTemplate(t.id, E.name, E.description)
     } catch (e) {
-      E.setError(new f.Hx(e))
+      E.setError(new h.Hx(e))
     }
     s(!1)
   };
@@ -344,7 +344,7 @@ function A(e) {
     try {
       await x.Z.syncGuildTemplate(t.id, n.code)
     } catch (e) {
-      E.setError(new f.Hx(e))
+      E.setError(new h.Hx(e))
     }
     s(!1)
   };
@@ -365,7 +365,7 @@ function L(e) {
     try {
       await x.Z.deleteGuildTemplate(t.id, n.code), E.setName(""), E.setDescription("")
     } catch (e) {
-      E.setError(new f.Hx(e))
+      E.setError(new h.Hx(e))
     }
     s(!1)
   };

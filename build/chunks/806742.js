@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => j
@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(8426),
   g = n(969632),
   p = n(535907),
-  h = n(388032),
-  f = n(773100);
+  f = n(388032),
+  h = n(773100);
 
 function x(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -70,10 +70,10 @@ let j = function(e) {
     onClick: j,
     children: (0, r.jsx)(o.Text, {
       variant: "text-sm/medium",
-      children: h.intl.string(h.t["9Z+aEB"])
+      children: f.intl.string(f.t["9Z+aEB"])
     })
   }) : (0, r.jsxs)(o.P3F, {
-    className: f.editWelcomeSection,
+    className: h.editWelcomeSection,
     onClick: j,
     children: [(0, r.jsx)(u.Z, {
       guildId: t,
@@ -82,14 +82,14 @@ let j = function(e) {
         message: l.message
       }
     }), (0, r.jsx)(o.ua7, {
-      text: h.intl.string(h.t.bt75u7),
+      text: f.intl.string(f.t.bt75u7),
       children: e => (0, r.jsxs)("div", b(x({}, e), {
-        className: s()(f.actionItemEditButton, f.editWelcomeButton),
+        className: s()(h.actionItemEditButton, h.editWelcomeButton),
         children: [(0, r.jsx)(o.vdY, {
           size: "md",
           color: "currentColor"
         }), (0, r.jsx)(o.nn4, {
-          children: h.intl.string(h.t.bt75u7)
+          children: f.intl.string(f.t.bt75u7)
         })]
       }))
     })]

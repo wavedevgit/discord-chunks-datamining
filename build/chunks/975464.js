@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   C: () => b,
@@ -17,8 +17,8 @@ var i = n(990547),
   m = n(320893),
   g = n(81509),
   p = n(662379),
-  h = n(60533),
-  f = n(581050),
+  f = n(60533),
+  h = n(581050),
   x = n(551131);
 
 function b(e) {
@@ -36,24 +36,24 @@ function b(e) {
     })
   }, s = (0, r.jsx)(i, {
     children: (0, r.jsx)(p.Z, {})
-  }, f.q.HOW_IT_WORKS), a = (0, r.jsx)(i, {
+  }, h.q.HOW_IT_WORKS), a = (0, r.jsx)(i, {
     children: (0, r.jsx)(m.Z, {})
-  }, f.q.BENEFITS);
+  }, h.q.BENEFITS);
   return null != n || (null == t ? void 0 : t.sections) == null ? (0, r.jsxs)(r.Fragment, {
     children: [s, a]
   }) : (0, r.jsx)(r.Fragment, {
     children: t.sections.map(e => {
       switch (e.type) {
-        case f.q.HOW_IT_WORKS:
+        case h.q.HOW_IT_WORKS:
           return s;
-        case f.q.BENEFITS:
+        case h.q.BENEFITS:
           return a;
-        case f.q.OTHER_CREATORS:
+        case h.q.OTHER_CREATORS:
           return (0, r.jsx)(i, {
             children: (0, r.jsx)(g.Z, {
               highlightedCreators: e.creators
             })
-          }, f.q.OTHER_CREATORS)
+          }, h.q.OTHER_CREATORS)
       }
     })
   })
@@ -66,7 +66,7 @@ function j(e) {
     eligibilityLoading: m,
     eligibilityError: g,
     eligibility: p
-  } = n, f = (0, a.j)(p), {
+  } = n, h = (0, a.j)(p), {
     isLoading: j,
     error: _,
     creatorMonetizationOnboardingMarketing: v
@@ -78,11 +78,11 @@ function j(e) {
       guild_id: t.id,
       is_owner: n.isGuildOwner,
       is_eligible: n.eligibleForMonetization,
-      ineligible_reasons: f
+      ineligible_reasons: h
     }
   }, {
     disableTrack: null == t.id || null == p
-  }), m || null == p || j) ? (0, r.jsx)(l.$jN, {}) : p.actionRequired ? (0, r.jsx)(h.Z, {
+  }), m || null == p || j) ? (0, r.jsx)(l.$jN, {}) : p.actionRequired ? (0, r.jsx)(f.Z, {
     guild: t
   }) : null != g ? (0, r.jsx)(u.Z, {
     children: g.message

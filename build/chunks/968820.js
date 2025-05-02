@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => m
@@ -21,8 +21,8 @@ function m(e) {
     revenueTrend: m,
     summaryMetricLabel: g,
     summaryMetricValue: p,
-    summaryMetricTrend: h,
-    summaryMetricTrendIsPercent: f
+    summaryMetricTrend: f,
+    summaryMetricTrendIsPercent: h
   } = e;
   return (0, r.jsx)(i.hjN, {
     title: u.intl.string(u.t.ofmOzc),
@@ -40,8 +40,8 @@ function m(e) {
           label: g,
           value: p,
           additionalContent: (0, r.jsx)(l.H, {
-            value: h,
-            isPercent: f
+            value: f,
+            isPercent: h
           })
         })]
       }), t]

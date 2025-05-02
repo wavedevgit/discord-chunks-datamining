@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   t: () => S
@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(411667),
   g = n(434404),
   p = n(962086),
-  h = n(225675),
-  f = n(703656),
+  f = n(225675),
+  h = n(703656),
   x = n(430824),
   b = n(594174),
   j = n(63063),
@@ -48,11 +48,11 @@ function S(e) {
       [e.id]: e
     };
     (0, p.iD)(T.id, {
-      type: h.z.SERVER_SHOP,
+      type: f.z.SERVER_SHOP,
       roles: t,
       initialTab: "guild_products",
       returnToSection: y.pNK.GUILD_PRODUCTS
-    }), (0, f.uL)(y.Z5c.CHANNEL(T.id, N.oC.GUILD_SHOP))
+    }), (0, h.uL)(y.Z5c.CHANNEL(T.id, N.oC.GUILD_SHOP))
   }, [T]);
   if (!S || R) return (0, r.jsx)(a.$jN, {});
   if (null == T) return null;

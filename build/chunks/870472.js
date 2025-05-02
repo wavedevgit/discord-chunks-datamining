@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Q: () => c,
@@ -107,7 +107,7 @@ function c(e, t) {
         })
       }), e.preventDefault(), e.stopPropagation(), null == (t = n.current) || t.scrollToBottom())
     }, [d, n]),
-    h = r.useCallback(e => {
+    f = r.useCallback(e => {
       d(t => {
         let {
           tags: n,
@@ -121,7 +121,7 @@ function c(e, t) {
         }
       })
     }, [d]),
-    f = r.useCallback(e => t => {
+    h = r.useCallback(e => t => {
       d(n => {
         let {
           tags: r,
@@ -294,8 +294,8 @@ function c(e, t) {
       let t = e.metaKey || e.ctrlKey;
       "Backspace" === e.key ? O(e) : "a" === e.key && t ? y(e) : "Escape" === e.key ? j(e) : a.Bd.has(e.key) && t ? C(e) : "Meta" !== e.key && j(e)
     }, [C, O, y, j, l]),
-    handleRemoveTag: h,
-    handleTagChangeEvent: f,
+    handleRemoveTag: f,
+    handleTagChangeEvent: h,
     handleSelectTag: x,
     handleUnselectTag: b,
     handleResetTagSelections: j,

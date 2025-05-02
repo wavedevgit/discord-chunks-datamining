@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => c
@@ -17,14 +17,14 @@ function c(e) {
     everyoneRole: c,
     otherRoles: u,
     setSelectedSection: d
-  } = e, [m, g] = i.useState(""), [p, h] = i.useState(o.Cl), f = m.trim(), x = i.useMemo(() => u.filter(e => (0, l.uo)(e, f)), [u, f]), b = i.useCallback(() => (0, r.jsx)(a.Z, {
+  } = e, [m, g] = i.useState(""), [p, f] = i.useState(o.Cl), h = m.trim(), x = i.useMemo(() => u.filter(e => (0, l.uo)(e, h)), [u, h]), b = i.useCallback(() => (0, r.jsx)(a.Z, {
     guild: n,
     everyoneRole: c,
     filteredRoles: x,
     setEditRoleId: t,
     query: m,
     setQuery: g,
-    setHeaderHeight: h
+    setHeaderHeight: f
   }, "header"), [n, c, x, t, m]);
   return (0, r.jsx)(s.Z, {
     setEditRoleId: t,

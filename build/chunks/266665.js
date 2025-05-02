@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => D
@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(239091),
   g = n(749210),
   p = n(493773),
-  h = n(607070),
-  f = n(605436),
+  f = n(607070),
+  h = n(605436),
   x = n(134433),
   b = n(325476),
   j = n(884902),
@@ -70,7 +70,7 @@ function Z(e) {
       guild: u,
       role: g,
       highestRole: p,
-      selectedItem: h,
+      selectedItem: f,
       onClick: b,
       currentPosition: _,
       onDragStart: v,
@@ -79,7 +79,7 @@ function Z(e) {
       roleStyle: N
     } = e,
     I = (0, C.T)(u, p, g),
-    S = (0, f.pM)(u.id, g.id),
+    S = (0, h.pM)(u.id, g.id),
     Z = null == I && !S,
     D = (null == (t = g.tags) ? void 0 : t.guild_connections) !== void 0,
     k = (0, j.X)(u.id, g.colorStrings),
@@ -132,7 +132,7 @@ function Z(e) {
       [T.dragAfter]: null !== L && _ > L
     }),
     id: g.id,
-    selectedItem: h,
+    selectedItem: f,
     itemType: "side",
     onClick: b,
     onContextMenu: function(e) {
@@ -169,7 +169,7 @@ function D(e) {
     currentRoleId: n,
     setCurrentRoleId: l,
     setSelectedSection: a
-  } = e, o = (0, u.e7)([O.Z], () => O.Z.roles), c = (0, u.e7)([_.Z], () => _.Z.getHighestRole(t)), m = (0, u.e7)([h.Z], () => h.Z.roleStyle), [f, x] = i.useState(o.length), {
+  } = e, o = (0, u.e7)([O.Z], () => O.Z.roles), c = (0, u.e7)([_.Z], () => _.Z.getHighestRole(t)), m = (0, u.e7)([f.Z], () => f.Z.roleStyle), [h, x] = i.useState(o.length), {
     scrolledToTop: j,
     handleScroll: C
   } = (0, N.V)(), {
@@ -186,8 +186,8 @@ function D(e) {
   (0, p.ZP)(() => {
     A(n)
   }), i.useEffect(() => {
-    o.length > f && A(n), o.length !== f && x(o.length)
-  }, [o.length, f, x, A, n]);
+    o.length > h && A(n), o.length !== h && x(o.length)
+  }, [o.length, h, x, A, n]);
   let L = () => {
     g.Z.createRole(t.id), a(I.ZI.DISPLAY)
   };

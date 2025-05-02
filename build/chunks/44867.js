@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   c: () => g
@@ -20,15 +20,15 @@ function g(e) {
     settingsView: n,
     requireTerms: g,
     rules: p
-  } = e, h = (0, l.e7)([a.Z], () => a.Z.getProps().guild);
+  } = e, f = (0, l.e7)([a.Z], () => a.Z.getProps().guild);
   if (i.useEffect(() => {
-      null != h && t(h.id)
-    }, [t, h]), null == h) return null;
+      null != f && t(f.id)
+    }, [t, f]), null == f) return null;
   switch (n) {
     case u.U.DISQUALIFIED:
       return (0, r.jsx)(o.Z, {
-        guild: h,
-        guildId: h.id,
+        guild: f,
+        guildId: f.id,
         headerContent: (0, r.jsxs)("div", {
           children: [(0, r.jsx)(s.X6q, {
             variant: "text-md/semibold",
@@ -56,8 +56,8 @@ function g(e) {
       });
     case u.U.INELIGIBLE:
       return (0, r.jsx)(o.Z, {
-        guild: h,
-        guildId: h.id,
+        guild: f,
+        guildId: f.id,
         headerContent: (0, r.jsx)(s.X6q, {
           variant: "heading-md/semibold",
           children: d.intl.format(d.t["+6Hylp"], {

@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => _
@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(862319),
   g = n(140285),
   p = n(390583),
-  h = n(641249),
-  f = n(574085),
+  f = n(641249),
+  h = n(574085),
   x = n(293810),
   b = n(388032),
   j = n(301849);
@@ -97,9 +97,9 @@ function _(e) {
         className: j.formDescription,
         disabled: S,
         children: b.intl.string(b.t.zAww7e)
-      }), (0, r.jsx)(f.Z, {})]
+      }), (0, r.jsx)(h.Z, {})]
     }), (0, r.jsx)(l.LZC, {
       size: 24
-    }), (0, r.jsx)(h.Z, {})]
+    }), (0, r.jsx)(f.Z, {})]
   })
 }

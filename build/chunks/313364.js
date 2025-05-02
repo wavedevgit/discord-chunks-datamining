@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => S
@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(892001),
   g = n(430824),
   p = n(893966),
-  h = n(527379),
-  f = n(305473),
+  f = n(527379),
+  h = n(305473),
   x = n(113679),
   b = n(440857),
   j = n(472596),
@@ -71,7 +71,7 @@ function S(e) {
                   className: I.tableContainer,
                   children: [(0, r.jsx)(x.Z, {
                     guild: n
-                  }), (0, r.jsx)(f.Z, {
+                  }), (0, r.jsx)(h.Z, {
                     guild: n
                   }), S ? (0, r.jsxs)("div", {
                     className: I.mainTableContainer,
@@ -98,7 +98,7 @@ function S(e) {
                         color: "text-muted",
                         children: N.intl.format(N.t.Bf6yxM, {
                           onClick: e => {
-                            null != n && (e.preventDefault(), d.Z.close(), (0, h._X)(n.id))
+                            null != n && (e.preventDefault(), d.Z.close(), (0, f._X)(n.id))
                           }
                         })
                       })]

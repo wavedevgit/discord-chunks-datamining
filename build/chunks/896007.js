@@ -1,7 +1,7 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  ZP: () => h,
+  ZP: () => f,
   vE: () => p
 }), n(539854);
 var r = n(223892),
@@ -25,8 +25,8 @@ function p(e) {
   let {
     guild: c,
     canManageGuild: p,
-    canViewAuditLog: h,
-    canManageRoles: f,
+    canViewAuditLog: f,
+    canManageRoles: h,
     canManageBans: x,
     canAccessMembersPage: b,
     canViewGuildAnalytics: j,
@@ -79,7 +79,7 @@ function p(e) {
   }), N.push({
     section: g.HEADER,
     label: d.intl.string(d.t.m6lkGx)
-  }), N.push(m(u.pNK.EMOJI, y)), N.push(m(u.pNK.STICKERS, y)), N.push(m(u.pNK.SOUNDBOARD, y))), (p || f || b || v) && (N.push({
+  }), N.push(m(u.pNK.EMOJI, y)), N.push(m(u.pNK.STICKERS, y)), N.push(m(u.pNK.SOUNDBOARD, y))), (p || h || b || v) && (N.push({
     section: g.DIVIDER
   }), N.push({
     section: g.HEADER,
@@ -91,7 +91,7 @@ function p(e) {
     label: d.intl.string(d.t.wF3KJy)
   }), N.push(m(u.pNK.INTEGRATIONS, y)), N.push(m(u.pNK.APP_DIRECTORY, y));
   let I = !c.hasFeature(u.oNc.COMMUNITY) && ((0, l.Nb)(c.id) || (0, l.ze)(c.id));
-  (p || h || x || I) && (N.push({
+  (p || f || x || I) && (N.push({
     section: g.DIVIDER
   }), N.push({
     section: g.HEADER,
@@ -105,6 +105,6 @@ function p(e) {
     section: g.DIVIDER
   }), N.push(m(u.pNK.GUILD_PREMIUM, y)), N.push(m(u.pNK.GUILD_TEMPLATES, y)), N.push(m(u.pNK.DELETE, y)), N.filter(o.lm)
 }
-let h = {
+let f = {
   generateSections: p
 }

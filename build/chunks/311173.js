@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => x
@@ -15,9 +15,9 @@ var r = n(200651),
   m = n(981631),
   g = n(388032),
   p = n(409866);
-let h = o.Z.getArticleURL(m.BhN.GUILD_AUTOMOD_REGEX);
+let f = o.Z.getArticleURL(m.BhN.GUILD_AUTOMOD_REGEX);
 
-function f(e) {
+function h(e) {
   let {
     hasErrors: t,
     text: n,
@@ -30,7 +30,7 @@ function f(e) {
       variant: "text-xs/medium",
       color: "text-danger",
       children: null != i ? i : g.intl.format(g.t.jKYAPj, {
-        helpArticle: h
+        helpArticle: f
       })
     })
   }) : (0, r.jsx)(a.Text, {
@@ -86,9 +86,9 @@ function x(e) {
       onChangeNewTagValue: y,
       tagErrors: O,
       maxTags: d.VW
-    }), (0, r.jsx)(f, {
+    }), (0, r.jsx)(h, {
       text: g.intl.format(g.t["PGC/AA"], {
-        helpArticle: h
+        helpArticle: f
       }),
       hasErrors: b.length > 0 || null != x,
       errorText: null != (n = null == (t = b.find(e => {

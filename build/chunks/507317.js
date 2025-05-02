@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => _
@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(768581),
   g = n(434404),
   p = n(981631),
-  h = n(30513),
-  f = n(486324),
+  f = n(30513),
+  h = n(486324),
   x = n(200299),
   b = n(388032),
   j = n(773100);
@@ -59,7 +59,7 @@ let _ = function(e) {
             homeHeader: n
           })
         },
-        uploadType: f.pC.HOME_HEADER
+        uploadType: h.pC.HOME_HEADER
       }, n))
     })
   }, [t.id]), O = i.useCallback(e => {
@@ -78,7 +78,7 @@ let _ = function(e) {
         page: p.ZY5.GUILD_SETTINGS
       },
       guild: t,
-      perks: (0, h.XO)()
+      perks: (0, f.XO)()
     })
   }, [t]), C = (0, r.jsx)(c.Z, {
     image: t.homeHeader,

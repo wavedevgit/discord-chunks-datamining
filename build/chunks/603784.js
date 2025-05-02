@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => w
@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(100527),
   g = n(933557),
   p = n(670188),
-  h = n(210887),
-  f = n(598077),
+  f = n(210887),
+  h = n(598077),
   x = n(699516),
   b = n(594174),
   j = n(259580),
@@ -86,7 +86,7 @@ let P = i.forwardRef((e, t) => {
       log: i,
       className: l,
       expanded: o,
-      guildId: h,
+      guildId: f,
       guild: _,
       onChannelContextMenu: P,
       onContentClick: w,
@@ -139,7 +139,7 @@ let P = i.forwardRef((e, t) => {
           } = i;
           if (null != e && null != t) return (0, r.jsx)(p.Z, {
             user: e,
-            guildId: h,
+            guildId: f,
             newAnalyticsLocations: [m.Z.AVATAR],
             children: e => {
               var t;
@@ -148,7 +148,7 @@ let P = i.forwardRef((e, t) => {
                   t.stopPropagation(), e.onClick(t)
                 },
                 className: I.avatar,
-                src: i.action === y.rsA.AUTO_MODERATION_BLOCK_MESSAGE || i.action === y.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || i.action === y.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || i.action === y.rsA.AUTO_MODERATION_QUARANTINE_USER ? (0, v.j)() : null == (t = i.user) ? void 0 : t.getAvatarURL(h, 40),
+                src: i.action === y.rsA.AUTO_MODERATION_BLOCK_MESSAGE || i.action === y.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || i.action === y.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || i.action === y.rsA.AUTO_MODERATION_QUARANTINE_USER ? (0, v.j)() : null == (t = i.user) ? void 0 : t.getAvatarURL(f, 40),
                 "aria-hidden": !0,
                 size: u.EFr.SIZE_40
               }))
@@ -194,7 +194,7 @@ let P = i.forwardRef((e, t) => {
                     }
                     return N.intl.string(N.t["30mdIy"])
                   },
-                  targetHook: (e, t) => i.targetType === y.KFR.USER && i.target instanceof f.Z ? (0, r.jsx)(T, {
+                  targetHook: (e, t) => i.targetType === y.KFR.USER && i.target instanceof h.Z ? (0, r.jsx)(T, {
                     user: i.target,
                     onContextMenu: Z
                   }, t) : (0, r.jsx)("span", {
@@ -229,8 +229,8 @@ let P = i.forwardRef((e, t) => {
   })
 });
 P.displayName = "GuildSettingsAuditLogEntry";
-let w = o.ZP.connectStores([h.Z], () => ({
-  theme: h.Z.theme
+let w = o.ZP.connectStores([f.Z], () => ({
+  theme: f.Z.theme
 }), {
   forwardRef: !0
 })(P)

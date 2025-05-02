@@ -1,7 +1,7 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => h
 }), n(953529);
 var r, i = n(442837),
   l = n(570140),
@@ -41,7 +41,7 @@ function p(e) {
   } else g = u = c;
   m = !1
 }
-class h extends(r = i.ZP.Store) {
+class f extends(r = i.ZP.Store) {
   initialize() {
     this.waitFor(s.Z)
   }
@@ -60,8 +60,8 @@ class h extends(r = i.ZP.Store) {
     }
   }
 }
-o(h, "displayName", "WelcomeScreenSettingsStore");
-let f = new h(l.Z, {
+o(f, "displayName", "WelcomeScreenSettingsStore");
+let h = new f(l.Z, {
   WELCOME_SCREEN_FETCH_SUCCESS: p,
   WELCOME_SCREEN_UPDATE: p,
   WELCOME_SCREEN_SETTINGS_RESET: function() {

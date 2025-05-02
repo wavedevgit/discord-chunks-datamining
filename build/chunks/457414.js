@@ -1,8 +1,8 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   S: () => c,
-  w: () => f
+  w: () => h
 });
 var r = n(481060),
   i = n(925221),
@@ -63,7 +63,7 @@ let c = e => {
   p = e => {
     if (e === a.fX.KEYWORD) return o.intl.formatToPlainString(o.t.yNec2t, {})
   },
-  h = e => {
+  f = e => {
     switch (e) {
       case a.fX.MENTION_SPAM:
         return r.lOy;
@@ -77,13 +77,13 @@ let c = e => {
     }
   };
 
-function f(e, t) {
+function h(e, t) {
   var n, i, l, s, a;
   return null != e && u(e) ? {
     headerText: null != (n = d(e, t)) ? n : "",
     headerSubtext: null != (i = m(e, t)) ? i : "",
     descriptionText: null != (l = g(e)) ? l : "",
     descriptionSubtext: null != (s = p(e)) ? s : "",
-    icon: null != (a = h(e)) ? a : r.xPt
+    icon: null != (a = f(e)) ? a : r.xPt
   } : null
 }

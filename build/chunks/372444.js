@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => g
@@ -44,8 +44,8 @@ function g(e) {
     guild: u,
     className: g,
     textColor: p,
-    headerColor: h,
-    buttonProps: f
+    headerColor: f,
+    buttonProps: h
   } = e, {
     analyticsLocations: x
   } = (0, o.ZP)(a.Z.GUILD_BOOSTING_UPSELL_BANNER);
@@ -61,7 +61,7 @@ function g(e) {
         className: d.content,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-lg/semibold",
-          color: null != h ? h : "always-white",
+          color: null != f ? f : "always-white",
           className: d.header,
           children: t
         }), (0, r.jsx)(s.Text, {
@@ -75,7 +75,7 @@ function g(e) {
           guild: u,
           analyticsLocation: c,
           className: d.button,
-          buttonProps: f
+          buttonProps: h
         })
       })]
     })

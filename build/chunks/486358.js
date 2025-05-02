@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => v
@@ -16,8 +16,8 @@ var i = n(793030),
   m = n(723914),
   g = n(30818),
   p = n(997698),
-  h = n(354031),
-  f = n(335438),
+  f = n(354031),
+  h = n(335438),
   x = n(166805),
   b = n(981631),
   j = n(388032),
@@ -43,13 +43,13 @@ let v = function() {
           children: j.intl.string(j.t.XCGZFh)
         })]
       }), !0 === O && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(h.P, {
+        children: [(0, r.jsx)(f.P, {
           canManageGuild: n,
           features: t.features
         }), (0, r.jsx)("div", {
           className: _.divider
         })]
-      }), (0, r.jsx)(f.l, {
+      }), (0, r.jsx)(h.l, {
         canManageGuild: n,
         guild: t
       }), void 0 !== v && (0, r.jsxs)(r.Fragment, {

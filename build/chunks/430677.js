@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => v
@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(734893),
   g = n(216701),
   p = n(592125),
-  h = n(430824),
-  f = n(768581),
+  f = n(430824),
+  h = n(768581),
   x = n(388032),
   b = n(773100);
 
@@ -62,10 +62,10 @@ let v = function(e) {
     onDragStart: T,
     onDragComplete: P,
     onDragReset: w
-  } = e, R = (0, a.e7)([p.Z], () => p.Z.getChannel(N.channelId)), Z = (0, a.e7)([h.Z], () => h.Z.getGuild(y)), {
+  } = e, R = (0, a.e7)([p.Z], () => p.Z.getChannel(N.channelId)), Z = (0, a.e7)([f.Z], () => f.Z.getGuild(y)), {
     customEmoji: D,
     unicodeEmoji: k
-  } = (0, d.Z)(null == (t = N.emoji) ? void 0 : t.id, null == (l = N.emoji) ? void 0 : l.name), A = null == N.emoji || null != D || null != k, L = f.ZP.getNewMemberActionIconURL({
+  } = (0, d.Z)(null == (t = N.emoji) ? void 0 : t.id, null == (l = N.emoji) ? void 0 : l.name), A = null == N.emoji || null != D || null != k, L = h.ZP.getNewMemberActionIconURL({
     channelId: N.channelId,
     icon: N.icon
   }), M = null;

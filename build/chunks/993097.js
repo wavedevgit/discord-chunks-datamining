@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   C: () => g
@@ -26,12 +26,12 @@ function g() {
   })), {
     guild: g,
     submitting: p,
-    errors: h,
-    hasChanges: f
-  } = (0, l.cj)([o.Z], () => o.Z.getProps()), x = i.useMemo(() => null != n ? (0, d.i)(null == n ? void 0 : n.code) : (0, m.LG)(h), [h, n]), b = i.useCallback(async () => {
+    errors: f,
+    hasChanges: h
+  } = (0, l.cj)([o.Z], () => o.Z.getProps()), x = i.useMemo(() => null != n ? (0, d.i)(null == n ? void 0 : n.code) : (0, m.LG)(f), [f, n]), b = i.useCallback(async () => {
     if (null != g && (t && await (0, c.en)(g.id, e, {
         throwErr: !0
-      }), f)) {
+      }), h)) {
       let e = {
         premiumProgressBarEnabled: g.premiumProgressBarEnabled,
         banner: g.banner,
@@ -41,7 +41,7 @@ function g() {
         throwErr: !0
       })
     }
-  }, [g, f, t, e]), j = i.useCallback(() => {
+  }, [g, h, t, e]), j = i.useCallback(() => {
     null != g && (a.Z.init(g.id), (0, c.H7)())
   }, [g]);
   return (0, r.jsx)(s.Z, {

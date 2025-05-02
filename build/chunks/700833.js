@@ -1,7 +1,7 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  Md: () => h,
+  Md: () => f,
   a0: () => p
 });
 var r = n(200651);
@@ -51,7 +51,7 @@ function p(e) {
   let {
     dropHoveredIndex: t,
     formField: p,
-    guild: h,
+    guild: f,
     index: x,
     isDragEnabled: b,
     submittedGuildJoinRequestsCount: j,
@@ -73,14 +73,14 @@ function p(e) {
     isDragEnabled: b,
     isDropHovered: P,
     onEdit: () => {
-      0 === j ? f(p, E, h) : (0, l.ZDy)(async () => {
+      0 === j ? h(p, E, f) : (0, l.ZDy)(async () => {
         let {
           default: e
         } = await n.e("74673").then(n.bind(n, 394045));
         return t => (0, r.jsx)(e, g(m({}, t), {
-          guildId: h.id,
+          guildId: f.id,
           submittedGuildJoinRequestsCount: j,
-          onConfirm: () => f(p, E, h)
+          onConfirm: () => h(p, E, f)
         }))
       })
     },
@@ -93,7 +93,7 @@ function p(e) {
   switch (p.field_type) {
     case s.QJ.TERMS:
       return (0, r.jsx)(c.Z, m({
-        channelId: h.rulesChannelId,
+        channelId: f.rulesChannelId,
         title: N === s.it.COMPACT ? d.intl.string(d.t["55+giY"]) : d.intl.string(d.t["53vNcH"]),
         formField: p
       }, w));
@@ -114,7 +114,7 @@ function p(e) {
   }
 }
 
-function h(e, t, i) {
+function f(e, t, i) {
   switch (e) {
     case s.QJ.TERMS:
       return (0, l.ZDy)(async () => {
@@ -160,7 +160,7 @@ function h(e, t, i) {
   }
 }
 
-function f(e, t, i) {
+function h(e, t, i) {
   switch (e.field_type) {
     case s.QJ.TERMS:
       return (0, l.ZDy)(async () => {

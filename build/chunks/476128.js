@@ -1,5 +1,4 @@
-/** Chunk was on 50629 **/
-"use strict";
+/** Chunk was on 21487 **/
 e.exports = {
   upsellButton: "upsellButton__71816",
   premiumUpsellBadge: "premiumUpsellBadge__71816"

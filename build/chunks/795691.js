@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => u
@@ -20,17 +20,17 @@ function u(e) {
   } = e, {
     topGames: m,
     tryFetchTopGames: g
-  } = (0, s.I)(), p = m.get(t), [h, f] = i.useState(!1);
+  } = (0, s.I)(), p = m.get(t), [f, h] = i.useState(!1);
   i.useEffect(() => {
-    f(!0), g(t).finally(() => {
-      f(!1)
+    h(!0), g(t).finally(() => {
+      h(!1)
     })
   }, [t, g]);
   let x = i.useMemo(() => null == p ? [] : Object.keys(p).filter(e => !n.includes(e)).sort((e, t) => p[t].score - p[e].score), [p, n]),
     b = i.useCallback(e => {
       n.includes(e) ? u(n.filter(t => t !== e)) : u([...n, e])
     }, [u, n]);
-  return h && null == p ? (0, r.jsx)(l.$jN, {}) : null == x || 0 === x.length ? null : (0, r.jsxs)(r.Fragment, {
+  return f && null == p ? (0, r.jsx)(l.$jN, {}) : null == x || 0 === x.length ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: c.separator
     }), (0, r.jsxs)("div", {

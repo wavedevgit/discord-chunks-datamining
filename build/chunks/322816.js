@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   ZP: () => P
@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(594174),
   g = n(626135),
   p = n(233608),
-  h = n(700785),
-  f = n(764260),
+  f = n(700785),
+  h = n(764260),
   x = n(631969),
   b = n(95242),
   j = n(420966),
@@ -64,14 +64,14 @@ function S(e) {
     guild: t,
     role: n,
     locked: l
-  } = e, s = (0, o.e7)([m.default], () => m.default.getCurrentUser()), u = i.useMemo(() => h.uB({
+  } = e, s = (0, o.e7)([m.default], () => m.default.getCurrentUser()), u = i.useMemo(() => f.uB({
     user: s,
     context: t
   }), [s, t]), d = i.useMemo(() => ({
     [n.id]: E(I({}, n), {
-      permissions: h.Hn
+      permissions: f.Hn
     })
-  }), [n]), g = i.useMemo(() => h.uB({
+  }), [n]), g = i.useMemo(() => f.uB({
     user: s,
     context: t,
     roles: d
@@ -92,10 +92,10 @@ function S(e) {
           size: c.zxk.Sizes.TINY,
           look: c.zxk.Looks.LINK,
           color: c.zxk.Colors.LINK,
-          onClick: () => (0, f.TY)(n.id),
+          onClick: () => (0, h.TY)(n.id),
           onMouseEnter: t,
           onMouseLeave: i,
-          disabled: a.fS(n.permissions, h.Hn) || p || l,
+          disabled: a.fS(n.permissions, f.Hn) || p || l,
           children: C.intl.string(C.t["UYq7+P"])
         })
       }
@@ -140,7 +140,7 @@ function T(e) {
       locked: l,
       onChange: (e, t) => {
         if ("string" == typeof t) throw Error("Unexpected string `allow`");
-        (0, f.lO)(n.id, e, t)
+        (0, h.lO)(n.id, e, t)
       },
       permissionRender: s
     }, t))]
@@ -160,8 +160,8 @@ function P(e) {
       return e.title.toLowerCase().includes(t) || null != e.description && e.description.toString().toLowerCase().includes(t)
     })
   })).filter(e => e.permissions.length > 0), {
-    headerHeight: h,
-    headerRef: f
+    headerHeight: f,
+    headerRef: h
   } = (0, b.Z)(0), {
     scrolledToTop: x,
     handleScroll: S
@@ -173,7 +173,7 @@ function P(e) {
   }, [u]), (0, r.jsx)(c.yWw, {
     className: y.scroller,
     style: {
-      scrollPaddingTop: h
+      scrollPaddingTop: f
     },
     onScroll: S,
     children: (0, r.jsxs)("div", {
@@ -182,7 +182,7 @@ function P(e) {
         className: s()(N.header, N.stickyHeader, {
           [N.stickyHeaderElevated]: !x
         }),
-        ref: f,
+        ref: h,
         children: [(0, r.jsx)(j.Z, {
           guild: t,
           role: n,

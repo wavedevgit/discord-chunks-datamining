@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   E: () => d
@@ -20,7 +20,7 @@ function d(e) {
     clearable: m = !0
   } = e, g = (0, l.Wu)([o.Z], () => o.Z.getPrimaryCategories()), p = i.useCallback(e => {
     (0, a.TA)(t, null != e ? e : c.o3)
-  }, [t]), h = i.useMemo(() => g.map(e => {
+  }, [t]), f = i.useMemo(() => g.map(e => {
     let {
       categoryId: t,
       name: n
@@ -33,9 +33,9 @@ function d(e) {
   return 0 === g.length ? (0, r.jsx)(s.$jN, {}) : (0, r.jsx)(s.VcW, {
     value: n.primaryCategoryId === c.o3 ? null : n.primaryCategoryId,
     placeholder: u.intl.string(u.t.XqMe3N),
-    options: h,
+    options: f,
     onChange: p,
     isDisabled: d,
     clearable: m
-  }, h.length)
+  }, f.length)
 }

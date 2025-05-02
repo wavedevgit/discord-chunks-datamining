@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   M: () => g
@@ -44,7 +44,7 @@ function g(e) {
     label: a.intl.formatToPlainString(a.t.xCjYxM, {
       hours: 1
     })
-  }], []), h = i.useCallback(e => {
+  }], []), f = i.useCallback(e => {
     s.Z.updateGuild({
       afkTimeout: parseInt(e, 10)
     })
@@ -53,6 +53,6 @@ function g(e) {
     value: null == n ? null : "".concat(n),
     options: p,
     isDisabled: null == g || !t,
-    onChange: h
+    onChange: f
   })
 }

@@ -1,7 +1,7 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  Z: () => h
+  Z: () => f
 });
 var r = n(200651);
 n(192379);
@@ -59,7 +59,7 @@ function p(e) {
   })
 }
 
-function h(e) {
+function f(e) {
   let {
     guild: t,
     config: n

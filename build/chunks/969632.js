@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => O
@@ -36,11 +36,11 @@ let m = {
   },
   g = null,
   p = Object.assign({}, m),
-  h = !1,
-  f = {};
+  f = !1,
+  h = {};
 
 function x() {
-  g = null, p = Object.assign({}, m), h = !1, g = c.Z.getGuildId(), p = l().cloneDeep(Object.assign({}, o.Z.getSettings(g)))
+  g = null, p = Object.assign({}, m), f = !1, g = c.Z.getGuildId(), p = l().cloneDeep(Object.assign({}, o.Z.getSettings(g)))
 }
 
 function b(e, t) {
@@ -58,15 +58,15 @@ function j(e, t) {
 }
 
 function _() {
-  h = !1, p = l().cloneDeep(Object.assign({}, o.Z.getSettings(g)))
+  f = !1, p = l().cloneDeep(Object.assign({}, o.Z.getSettings(g)))
 }
 class v extends(r = s.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (f = e.dismissedSuggestedChannelIdsByGuildId), this.waitFor(c.Z, o.Z)
+    null != e && (h = e.dismissedSuggestedChannelIdsByGuildId), this.waitFor(c.Z, o.Z)
   }
   getState() {
     return {
-      dismissedSuggestedChannelIdsByGuildId: f
+      dismissedSuggestedChannelIdsByGuildId: h
     }
   }
   getSettings() {
@@ -76,11 +76,11 @@ class v extends(r = s.ZP.PersistedStore) {
     return null != g && !l().isEqual(l().omit(p, "newMemberActions"), l().omit(o.Z.getSettings(g), "newMemberActions"))
   }
   getSubmitting() {
-    return h
+    return f
   }
   getDismissedSuggestedChannelIds(e) {
     var t;
-    return null == e ? [] : null != (t = f[e]) ? t : []
+    return null == e ? [] : null != (t = h[e]) ? t : []
   }
   getResourceChannel(e) {
     var t;
@@ -104,7 +104,7 @@ let O = new v(a.Z, {
     p = l().cloneDeep(Object.assign({}, o.Z.getSettings(g)))
   },
   GUILD_HOME_SETTINGS_UPDATE_START: function() {
-    h = !0
+    f = !0
   },
   GUILD_HOME_SETTINGS_UPDATE_SUCCESS: _,
   GUILD_HOME_SETTINGS_UPDATE_FAIL: _,
@@ -193,6 +193,6 @@ let O = new v(a.Z, {
       guildId: n,
       channelIds: r
     } = e;
-    f[n] = [...null != (t = f[n]) ? t : [], ...r]
+    h[n] = [...null != (t = h[n]) ? t : [], ...r]
   }
 })

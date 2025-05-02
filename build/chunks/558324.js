@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => d
@@ -18,8 +18,8 @@ let d = e => {
       value: m,
       onRemoveTag: g,
       onAddTag: p,
-      onAddTagError: h,
-      maxTaxLength: f,
+      onAddTagError: f,
+      maxTaxLength: h,
       maxTags: x,
       disabled: b,
       placeholder: j
@@ -54,12 +54,12 @@ let d = e => {
     let e = v.trim();
     if (0 !== e.length) {
       if (null != x && d.length >= x) {
-        null == h || h(c.intl.string(c.t.Xx7XeH));
+        null == f || f(c.intl.string(c.t.Xx7XeH));
         return
       }
       p(e), O("")
     }
-  }, [v, x, p, h, d.length]), N = i.useCallback(e => {
+  }, [v, x, p, f, d.length]), N = i.useCallback(e => {
     switch (e.keyCode) {
       case o.yXg.BACKSPACE:
         0 === v.length && d.length > 0 && (e.preventDefault(), e.stopPropagation(), g(d.length - 1));
@@ -98,7 +98,7 @@ let d = e => {
       value: v,
       onKeyDown: N,
       onChange: O,
-      maxLength: f,
+      maxLength: h,
       disabled: b,
       onBlur: y,
       placeholder: j

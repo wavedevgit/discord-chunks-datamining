@@ -1,7 +1,7 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => h
 }), n(472816), n(794429);
 var r = n(200651),
   i = n(192379),
@@ -16,7 +16,7 @@ var r = n(200651),
   g = n(388032),
   p = n(902893);
 
-function h(e) {
+function f(e) {
   let {
     title: t,
     subtitle: n,
@@ -53,14 +53,14 @@ function h(e) {
   })
 }
 
-function f(e) {
+function h(e) {
   let {
     guild: t
   } = e;
   (0, s.RD)(t.id);
   let u = (0, a.Z6)(t.id),
     {
-      rulesByTriggerType: f
+      rulesByTriggerType: h
     } = (0, s.pH)(t.id),
     {
       numEnabledRules: x,
@@ -68,9 +68,9 @@ function f(e) {
     } = i.useMemo(() => {
       let e = 0,
         t = 0;
-      return null == f || Object.values(u).flat().forEach(n => {
+      return null == h || Object.values(u).flat().forEach(n => {
         var r;
-        let i = null == (r = f[n]) ? void 0 : r.filter(c.lm);
+        let i = null == (r = h[n]) ? void 0 : r.filter(c.lm);
         if (null == i || 0 === i.length) return void t++;
         i.forEach(n => {
           n.enabled && e++, t++
@@ -79,7 +79,7 @@ function f(e) {
         numEnabledRules: e,
         numRules: t
       }
-    }, [u, f]),
+    }, [u, h]),
     j = (0, m.Q)(t),
     _ = j[d.u.CAPTCHA_AND_RAID_PROTECTION],
     v = j[d.u.DM_AND_SPAM_PROTECTION],
@@ -93,7 +93,7 @@ function f(e) {
       children: g.intl.string(g.t["0A+VSE"])
     }), (0, r.jsxs)("div", {
       className: p.safetyChecklist,
-      children: [(0, r.jsx)(h, {
+      children: [(0, r.jsx)(f, {
         icon: n(14215),
         title: g.intl.string(g.t["53eF5u"]),
         subtitle: g.intl.formatToPlainString(g.t.TG7NYG, {
@@ -103,7 +103,7 @@ function f(e) {
         page: d.u.CAPTCHA_AND_RAID_PROTECTION
       }), (0, r.jsx)("div", {
         className: p.divider
-      }), (0, r.jsx)(h, {
+      }), (0, r.jsx)(f, {
         icon: n(128724),
         title: g.intl.string(g.t.O0SfFx),
         subtitle: g.intl.formatToPlainString(g.t.TG7NYG, {
@@ -114,7 +114,7 @@ function f(e) {
       }), (0, r.jsx)("div", {
         className: p.divider
       }), C && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(h, {
+        children: [(0, r.jsx)(f, {
           icon: n(145136),
           title: g.intl.string(g.t.uRelg4),
           subtitle: g.intl.formatToPlainString(g.t.TG7NYG, {
@@ -125,7 +125,7 @@ function f(e) {
         }), (0, r.jsx)("div", {
           className: p.divider
         })]
-      }), (0, r.jsx)(h, {
+      }), (0, r.jsx)(f, {
         icon: n(913414),
         title: g.intl.string(g.t.xrmhRU),
         subtitle: g.intl.formatToPlainString(g.t.TG7NYG, {

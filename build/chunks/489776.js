@@ -1,7 +1,7 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => h
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -34,7 +34,7 @@ function p(e) {
   return e
 }
 
-function h(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,11 +47,11 @@ function h(e, t) {
   }), e
 }
 
-function f(e) {
+function h(e) {
   let {
     guildId: t,
     triggerType: n
-  } = e, f = i.useMemo(() => () => (0, o.ep)(t, n), [t, n]), [x] = i.useState(f), [b, j] = i.useState(!1), {
+  } = e, h = i.useMemo(() => () => (0, o.ep)(t, n), [t, n]), [x] = i.useState(h), [b, j] = i.useState(!1), {
     editingRule: _,
     createNewEditingRule: v
   } = (0, u.V)(), {
@@ -59,13 +59,13 @@ function f(e) {
   } = c.I6[n], C = !(0, o.Vb)(_) && (null == _ ? void 0 : _.triggerType) === n, [y, N] = i.useState(C ? _ : x), I = (0, a.q_F)({
     opacity: +!C,
     pointerEvents: C ? "none" : "all",
-    config: h(p({}, l.config.stiff), {
+    config: f(p({}, l.config.stiff), {
       clamp: !0
     })
   }), E = (0, a.q_F)({
     opacity: +!!C,
     pointerEvents: C ? "all" : "none",
-    config: h(p({}, l.config.stiff), {
+    config: f(p({}, l.config.stiff), {
       clamp: !0
     }),
     onStart: () => {

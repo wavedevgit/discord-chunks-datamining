@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => c
@@ -21,9 +21,9 @@ let c = function(e) {
     onRemove: m,
     canRemove: g,
     actionsLocation: p,
-    fieldStyle: h
+    fieldStyle: f
   } = e, {
-    label: f
+    label: h
   } = t;
   return (0, r.jsx)(a.Z, {
     field: t,
@@ -33,10 +33,10 @@ let c = function(e) {
     onDrop: u,
     onEdit: d,
     onRemove: m,
-    title: f,
+    title: h,
     canRemove: g,
     actionsLocation: p,
-    fieldStyle: h,
+    fieldStyle: f,
     children: (0, r.jsx)(s.BO, {
       field: t,
       value: void 0,

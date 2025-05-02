@@ -1,7 +1,7 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  O: () => f
+  O: () => h
 });
 var r = n(200651),
   i = n(192379),
@@ -15,13 +15,13 @@ var r = n(200651),
   m = n(486324),
   g = n(200299),
   p = n(388032),
-  h = n(615511);
+  f = n(615511);
 
-function f(e) {
+function h(e) {
   let {
     guild: t,
     canManageGuild: n
-  } = e, f = t.hasFeature(u.oNc.BANNER), x = t.hasFeature(u.oNc.ANIMATED_BANNER), b = f && n, {
+  } = e, h = t.hasFeature(u.oNc.BANNER), x = t.hasFeature(u.oNc.ANIMATED_BANNER), b = h && n, {
     analyticsLocations: j
   } = (0, s.ZP)(), _ = i.useCallback((e, n) => {
     (0, c.f4)(t, j, e, n)
@@ -60,10 +60,10 @@ function f(e) {
     }),
     enabled: b
   });
-  return f ? O : (0, r.jsx)(l.P3F, {
+  return h ? O : (0, r.jsx)(l.P3F, {
     "aria-hidden": !0,
     tabIndex: -1,
-    className: h.upsell,
+    className: f.upsell,
     onClick: v,
     children: O
   })

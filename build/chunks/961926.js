@@ -1,7 +1,7 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => h
 });
 var r = n(200651),
   i = n(192379),
@@ -34,7 +34,7 @@ function p(e) {
   return e
 }
 
-function h(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,14 +47,14 @@ function h(e, t) {
   }), e
 }
 
-function f(e) {
-  var t, n, f;
+function h(e) {
+  var t, n, h;
   let {
     rule: x,
     onChangeRule: b
   } = e, j = i.useCallback(e => {
-    b(h(p({}, x), {
-      triggerMetadata: h(p({}, x.triggerMetadata), {
+    b(f(p({}, x), {
+      triggerMetadata: f(p({}, x.triggerMetadata), {
         allowList: e
       })
     }))
@@ -71,7 +71,7 @@ function f(e) {
         onChange: j,
         initialValue: null == (t = x.triggerMetadata) ? void 0 : t.allowList,
         maxWordCount: d.I3,
-        collapsed: (null == (n = x.triggerMetadata) ? void 0 : n.allowList) == null || (null == (f = x.triggerMetadata) ? void 0 : f.allowList.length) === 0
+        collapsed: (null == (n = x.triggerMetadata) ? void 0 : n.allowList) == null || (null == (h = x.triggerMetadata) ? void 0 : h.allowList.length) === 0
       })]
     }), (0, r.jsx)(u.Z, {
       type: u.Z.Type.ARROW_DOWN

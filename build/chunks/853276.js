@@ -1,7 +1,7 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => h
 }), n(388685), n(781311);
 var r = n(200651),
   i = n(192379),
@@ -45,34 +45,34 @@ function p(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = i.forwardRef(function(e, t) {
+let f = i.forwardRef(function(e, t) {
   var n, l;
   let {
     value: a,
     isSelected: c,
     isEditing: u,
     forceShowErrorTooltip: d = !1,
-    error: h
-  } = e, [f, x, b] = i.useMemo(() => {
-    if (null == h) return [];
+    error: f
+  } = e, [h, x, b] = i.useMemo(() => {
+    if (null == f) return [];
     let {
       erroringCharacterOffset: e = 0,
       erroringCharacterLength: t = a.length
-    } = null != h ? h : {}, n = a.slice(0, e);
+    } = null != f ? f : {}, n = a.slice(0, e);
     return [n, a.slice(e, e + t), a.slice(e + t)]
-  }, [a, h]);
-  return null == h ? (0, r.jsx)("div", {
+  }, [a, f]);
+  return null == f ? (0, r.jsx)("div", {
     className: s()(m.chipletValue, {
       [m.isEditing]: u,
       [m.isSelected]: c
     }),
     ref: t,
     children: a
-  }) : (null != (n = null == f ? void 0 : f.length) ? n : 0) + (null != (l = null == x ? void 0 : x.length) ? l : 0) > 70 ? (0, r.jsx)(o.ua7, {
-    "aria-label": h.message,
+  }) : (null != (n = null == h ? void 0 : h.length) ? n : 0) + (null != (l = null == x ? void 0 : x.length) ? l : 0) > 70 ? (0, r.jsx)(o.ua7, {
+    "aria-label": f.message,
     text: () => (0, r.jsxs)("div", {
-      "aria-label": h.message,
-      children: [h.message, " ", (0, r.jsx)("span", {
+      "aria-label": f.message,
+      children: [f.message, " ", (0, r.jsx)("span", {
         className: m.errorOverflowValue,
         children: x
       })]
@@ -85,12 +85,12 @@ let h = i.forwardRef(function(e, t) {
       ref: t,
       className: s()(m.chipletValue, {
         [m.isEditing]: u,
-        [m.isError]: null != h && !u,
-        [m.isOverflowing]: null != h && !u
+        [m.isError]: null != f && !u,
+        [m.isOverflowing]: null != f && !u
       })
     }, e), {
       children: [(0, r.jsx)("span", {
-        children: f
+        children: h
       }), (0, r.jsx)("span", {
         className: m.errorValue,
         children: x
@@ -102,12 +102,12 @@ let h = i.forwardRef(function(e, t) {
     ref: t,
     className: s()(m.chipletValue, {
       [m.isEditing]: u,
-      [m.isError]: null != h && !u
+      [m.isError]: null != f && !u
     }),
     children: [(0, r.jsx)("span", {
-      children: f
+      children: h
     }), (0, r.jsx)(o.ua7, {
-      text: h.message,
+      text: f.message,
       color: o.ua7.Colors.RED,
       position: "top",
       forceOpen: d || void 0,
@@ -121,14 +121,14 @@ let h = i.forwardRef(function(e, t) {
   })
 });
 
-function f(e) {
+function h(e) {
   let {
     value: t,
     onChange: n,
     onBlur: l,
     onFocus: g,
     onRemove: p,
-    isSelected: f,
+    isSelected: h,
     isSelecting: x,
     error: b,
     forceShowErrorTooltip: j
@@ -175,7 +175,7 @@ function f(e) {
       className: s()(m.chipletContainer, {
         [m.isEditing]: O,
         [m.smallBlink]: !O && !S,
-        [m.isSelected]: f,
+        [m.isSelected]: h,
         [m.isSelecting]: x,
         [m.isError]: null != b && !O
       }),
@@ -203,11 +203,11 @@ function f(e) {
           style: {
             width: R > 0 ? R : "calc(".concat(t.length, "ch + 10px)")
           }
-        }), (0, r.jsx)(h, {
+        }), (0, r.jsx)(f, {
           ref: y,
           value: t,
           isEditing: O,
-          isSelected: f,
+          isSelected: h,
           error: b,
           forceShowErrorTooltip: T || O
         })]

@@ -1,7 +1,7 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => h
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -34,7 +34,7 @@ function p(e) {
   return e
 }
 
-function h(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,12 +47,12 @@ function h(e, t) {
   }), e
 }
 
-function f(e) {
+function h(e) {
   var t, n;
   let {
-    rule: f,
+    rule: h,
     onChangeRule: x
-  } = e, [b, j] = i.useState(null == (t = f.triggerMetadata) ? void 0 : t.mentionTotalLimit), _ = (0, s.a)(f.guildId, !1);
+  } = e, [b, j] = i.useState(null == (t = h.triggerMetadata) ? void 0 : t.mentionTotalLimit), _ = (0, s.a)(h.guildId, !1);
   return (0, r.jsxs)("div", {
     className: g.cardContentsContainer,
     children: [(0, r.jsxs)(c.Z, {
@@ -83,8 +83,8 @@ function f(e) {
           children: (0, r.jsx)(l.FiK, {
             value: b,
             onChange: e => {
-              j(e), x(h(p({}, f), {
-                triggerMetadata: h(p({}, f.triggerMetadata), {
+              j(e), x(f(p({}, h), {
+                triggerMetadata: f(p({}, h.triggerMetadata), {
                   mentionTotalLimit: e
                 })
               }))
@@ -117,10 +117,10 @@ function f(e) {
         }), (0, r.jsx)("div", {
           children: (0, r.jsx)(l.XZJ, {
             type: l.XZJ.Types.INVERTED,
-            value: null == (n = f.triggerMetadata) ? void 0 : n.mentionRaidProtectionEnabled,
+            value: null == (n = h.triggerMetadata) ? void 0 : n.mentionRaidProtectionEnabled,
             onChange: (e, t) => {
-              x(h(p({}, f), {
-                triggerMetadata: h(p({}, f.triggerMetadata), {
+              x(f(p({}, h), {
+                triggerMetadata: f(p({}, h.triggerMetadata), {
                   mentionRaidProtectionEnabled: t
                 })
               }))
@@ -135,7 +135,7 @@ function f(e) {
       step: 2,
       header: m.intl.string(m.t["18TOiY"]),
       children: (0, r.jsx)(a.Z, {
-        rule: f,
+        rule: h,
         onChangeRule: x
       })
     }), (0, r.jsx)(u.Z, {
@@ -144,7 +144,7 @@ function f(e) {
       step: 3,
       header: m.intl.string(m.t.eq3gjo),
       children: (0, r.jsx)(o.Z, {
-        rule: f,
+        rule: h,
         onChangeRule: x
       })
     })]

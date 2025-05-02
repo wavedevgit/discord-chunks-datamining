@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => b
@@ -15,9 +15,9 @@ var r = n(200651),
   m = n(8426),
   g = n(969632),
   p = n(388032),
-  h = n(773100);
+  f = n(773100);
 
-function f(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -93,7 +93,7 @@ let b = function(e) {
       let {
         default: e
       } = await n.e("84725").then(n.bind(n, 462499));
-      return n => (0, r.jsx)(e, x(f({}, n), {
+      return n => (0, r.jsx)(e, x(h({}, n), {
         guildId: t,
         resourceChannel: l,
         onSave: Z,
@@ -102,44 +102,44 @@ let b = function(e) {
       }))
     }), [t, l, Z, D]);
   return null == N ? null : (0, r.jsxs)("div", {
-    className: h.resourceChannelContainer,
+    className: f.resourceChannelContainer,
     children: [(0, r.jsxs)("div", {
-      className: s()(h.resourceChannel, {
-        [h.dropIndicatorBefore]: null != P && b < P,
-        [h.dropIndicatorAfter]: null != P && b > P,
-        [h.resourceChannelError]: null != I
+      className: s()(f.resourceChannel, {
+        [f.dropIndicatorBefore]: null != P && b < P,
+        [f.dropIndicatorAfter]: null != P && b > P,
+        [f.resourceChannelError]: null != I
       }),
       ref: e => {
         T(w(e))
       },
       children: [(0, r.jsx)("div", {
-        className: h.dragContainer,
+        className: f.dragContainer,
         onMouseEnter: () => R(!0),
         onMouseLeave: () => R(!1),
         children: (0, r.jsx)(a.Vni, {
           size: "xs",
           color: "currentColor",
-          className: h.dragIcon
+          className: f.dragIcon
         })
       }), null != S && (0, r.jsx)("div", {
-        className: h.iconWrapper,
+        className: f.iconWrapper,
         children: (0, r.jsx)("img", {
           src: S,
-          className: h.icon,
+          className: f.icon,
           width: 32,
           height: 32,
           alt: "",
           "aria-hidden": !0
         })
       }), (0, r.jsxs)("div", {
-        className: h.resourceChannelContent,
+        className: f.resourceChannelContent,
         children: [(0, r.jsx)(a.Text, {
-          className: h.resourceChannelTitle,
+          className: f.resourceChannelTitle,
           variant: "text-md/semibold",
           color: "header-primary",
           children: O
         }), !E && (0, r.jsx)(a.Text, {
-          className: h.resourceChannelDescription,
+          className: f.resourceChannelDescription,
           variant: "text-xs/medium",
           color: "text-muted",
           lineClamp: 1,
@@ -147,9 +147,9 @@ let b = function(e) {
         })]
       }), (0, r.jsx)(a.ua7, {
         text: p.intl.string(p.t.bt75u7),
-        children: e => (0, r.jsxs)(a.zxk, x(f({}, e), {
-          className: h.resourceChannelEditButton,
-          innerClassName: h.resourceChannelEditButtonInner,
+        children: e => (0, r.jsxs)(a.zxk, x(h({}, e), {
+          className: f.resourceChannelEditButton,
+          innerClassName: f.resourceChannelEditButtonInner,
           size: a.zxk.Sizes.MIN,
           onClick: k,
           children: [(0, r.jsx)(a.vdY, {

@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => d
@@ -33,13 +33,13 @@ function d() {
       };
       (0, a.pV)(e.id, t)
     }, [e, d]),
-    h = i.useCallback(() => {
+    f = i.useCallback(() => {
       null != t && c.Z.init(t)
     }, [t]);
   return (0, r.jsx)(s.Z, {
     submitting: m,
     errorMessage: g,
     onSave: p,
-    onReset: h
+    onReset: f
   })
 }

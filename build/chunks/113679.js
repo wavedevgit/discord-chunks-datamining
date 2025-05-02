@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => g
@@ -17,8 +17,8 @@ var r = n(200651),
 function g(e) {
   let {
     guild: t
-  } = e, n = i.useId(), g = (0, l.e7)([o.Z], () => null != t && o.Z.can(u.Plq.MANAGE_GUILD, t), [t]), p = t.hasFeature(u.oNc.COMMUNITY), [h, f] = i.useState(t.hasFeature(u.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), x = i.useCallback(async e => {
-    f(e), await (0, a.fp)(t, e)
+  } = e, n = i.useId(), g = (0, l.e7)([o.Z], () => null != t && o.Z.can(u.Plq.MANAGE_GUILD, t), [t]), p = t.hasFeature(u.oNc.COMMUNITY), [f, h] = i.useState(t.hasFeature(u.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), x = i.useCallback(async e => {
+    h(e), await (0, a.fp)(t, e)
   }, [t]);
   return p ? null : (0, r.jsxs)("div", {
     className: m.bannerContainer,
@@ -40,7 +40,7 @@ function g(e) {
       className: m.buttonContainer,
       children: (0, r.jsx)(s.rsf, {
         id: n,
-        checked: h,
+        checked: f,
         onChange: x,
         disabled: !g
       })

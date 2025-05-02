@@ -1,8 +1,8 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  $: () => h,
-  Z: () => f
+  $: () => f,
+  Z: () => h
 });
 var r = n(200651);
 n(192379);
@@ -18,7 +18,7 @@ var i = n(392711),
   g = n(388032),
   p = n(953592);
 
-function h() {
+function f() {
   var e;
   let t = (0, l.e7)([d.Z], () => d.Z.getProps().guild, []),
     n = null != (e = null == t ? void 0 : t.isCommunity()) && e,
@@ -41,7 +41,7 @@ function h() {
   })
 }
 
-function f() {
+function h() {
   var e;
   let {
     guild: t

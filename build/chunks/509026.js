@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => p
@@ -49,7 +49,7 @@ function g(e, t) {
 function p(e) {
   let {
     guild: t
-  } = e, p = (0, i.e7)([s.Z], () => s.Z.isUploadingEmoji()), h = (0, u.Z)(t.id), f = t.getMaxRoleSubscriptionEmojiSlots() - h.length, x = (0, c.mY)();
+  } = e, p = (0, i.e7)([s.Z], () => s.Z.isUploadingEmoji()), f = (0, u.Z)(t.id), h = t.getMaxRoleSubscriptionEmojiSlots() - f.length, x = (0, c.mY)();
   return (0, r.jsxs)(l.hjN, {
     title: d.intl.string(d.t.LDT0Q0),
     disabled: x,
@@ -76,16 +76,16 @@ function p(e) {
       },
       buttonCTA: d.intl.string(d.t.AuPtoq),
       submitting: p,
-      disabled: x || p || 0 === f
+      disabled: x || p || 0 === h
     }), (0, r.jsx)(l.LZC, {
       size: 24
     }), (0, r.jsx)(a.L3, {
       title: d.intl.string(d.t.lu1ZQ0),
       maxSlots: t.getMaxRoleSubscriptionEmojiSlots(),
-      emojiCount: h.length
+      emojiCount: f.length
     }), (0, r.jsx)(a.FT, {
       guild: t,
-      emojis: h,
+      emojis: f,
       onEdit: (e, t) => {
         (0, l.ZDy)(async () => {
           let {

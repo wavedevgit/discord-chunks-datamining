@@ -1,7 +1,7 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  Z: () => h
+  Z: () => f
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -15,12 +15,12 @@ var r = n(200651),
   m = n(419922),
   g = n(388032),
   p = n(646084);
-let h = e => {
+let f = e => {
   let {
     className: t,
     isDisabled: l,
-    sticker: h,
-    canManageSticker: f
+    sticker: f,
+    canManageSticker: h
   } = e, [x, b] = i.useState(!1), [j, _] = (0, c.Z)(null, 4e3), v = () => {
     (0, a.ZDy)(async () => {
       let {
@@ -44,18 +44,18 @@ let h = e => {
         }
         return e
       }({
-        sticker: h,
-        guildId: h.guild_id
+        sticker: f,
+        guildId: f.guild_id
       }, t))
     })
   }, O = async () => {
     _(null), b(!0);
     try {
-      await (0, d.Um)(h)
+      await (0, d.Um)(f)
     } catch (e) {
       _(e.body.message), b(!1)
     }
-  }, C = u.ZP.useUserTag(h.user);
+  }, C = u.ZP.useUserTag(f.user);
   return (0, r.jsx)(a.ua7, {
     color: a.ua7.Colors.RED,
     forceOpen: null != j,
@@ -71,26 +71,26 @@ let h = e => {
         children: [(0, r.jsx)(m.Z, {
           className: p.sticker,
           size: 72,
-          sticker: h
+          sticker: f
         }), (0, r.jsxs)("div", {
           children: [(0, r.jsx)(a.Text, {
             color: "header-primary",
             variant: "text-xs/semibold",
             className: p.stickerName,
-            children: h.name
-          }), null != h.user && (0, r.jsxs)("div", {
+            children: f.name
+          }), null != f.user && (0, r.jsxs)("div", {
             className: p.user,
             children: [(0, r.jsx)(o.Z, {
               className: p.userAvatar,
               size: a.EFr.SIZE_16,
-              user: h.user
+              user: f.user
             }), (0, r.jsx)(a.Text, {
               color: "header-secondary",
               variant: "text-xs/normal",
               children: C
             })]
           })]
-        }), f ? (0, r.jsxs)("div", {
+        }), h ? (0, r.jsxs)("div", {
           className: p.actions,
           children: [(0, r.jsx)(a.P3F, {
             className: p.action,

@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Q: () => g,
@@ -83,7 +83,7 @@ function p(e) {
   })
 }
 
-function h(e) {
+function f(e) {
   let {
     guild: t,
     checkboxText: n
@@ -92,11 +92,11 @@ function h(e) {
     error: d,
     loading: m,
     submitAcceptTermsRequest: g
-  } = (0, s.Z)(t.id), [p, h] = i.useState(!1);
+  } = (0, s.Z)(t.id), [p, f] = i.useState(!1);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.XZJ, {
       onChange: function() {
-        h(e => !e)
+        f(e => !e)
       },
       size: 20,
       type: l.XZJ.Types.INVERTED,
@@ -126,7 +126,7 @@ function h(e) {
   })
 }
 
-function f(e) {
+function h(e) {
   let {
     guild: t,
     monetizationEligibility: n
@@ -139,7 +139,7 @@ function f(e) {
     acceptTermsCheckboxText: u,
     wasRejectedInV1: d
   } = n;
-  return c ? d ? (0, r.jsx)(o.Z, m({}, n)) : (0, r.jsx)(h, {
+  return c ? d ? (0, r.jsx)(o.Z, m({}, n)) : (0, r.jsx)(f, {
     guild: t,
     checkboxText: u
   }) : (0, r.jsx)(p, {
@@ -176,7 +176,7 @@ function x(e) {
         children: c.intl.string(c.t["41wkMT"])
       }), (0, r.jsx)(l.LZC, {
         size: 24
-      }), (0, r.jsx)(f, {
+      }), (0, r.jsx)(h, {
         guild: t,
         monetizationEligibility: n
       })]

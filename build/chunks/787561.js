@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   X: () => R,
@@ -16,8 +16,8 @@ var r = n(200651),
   m = n(493773),
   g = n(933557),
   p = n(769654),
-  h = n(984933),
-  f = n(650774),
+  f = n(984933),
+  h = n(650774),
   x = n(430824),
   b = n(496675),
   j = n(699516),
@@ -98,10 +98,10 @@ let w = "dismissedCommunityFeaturesUpsell",
       discoveryEnabled: t,
       onboardingEnabled: n,
       guild: l
-    } = e, [s, d] = i.useState(!0 === c.K.get(w)), g = (0, a.e7)([f.Z], () => {
+    } = e, [s, d] = i.useState(!0 === c.K.get(w)), g = (0, a.e7)([h.Z], () => {
       var e;
-      return null != (e = f.Z.getMemberCount(l.id)) ? e : 0
-    }), [h, b] = i.useState(!1);
+      return null != (e = h.Z.getMemberCount(l.id)) ? e : 0
+    }), [f, b] = i.useState(!1);
     (0, m.ZP)(() => {
       o.tn.get({
         url: N.ANM.GUILD_ADMIN_SERVER_ELIGIBILITY(l.id),
@@ -111,7 +111,7 @@ let w = "dismissedCommunityFeaturesUpsell",
       }).catch(() => b(!1))
     });
     let j = (0, a.e7)([x.Z], () => x.Z.getGuild("942897714956472401")),
-      _ = l.isCommunity() && g >= 1e3 && h && null == j;
+      _ = l.isCommunity() && g >= 1e3 && f && null == j;
     if (t && n && !_) return null;
     let O = async () => {
       try {
@@ -197,12 +197,12 @@ let w = "dismissedCommunityFeaturesUpsell",
         canManageGuild: b.Z.can(N.Plq.MANAGE_GUILD, e),
         isGuildAdmin: b.Z.can(N.Plq.ADMINISTRATOR, e)
       })),
-      l = (0, a.e7)([h.ZP], () => null != e ? h.ZP.getChannels(e.id) : null),
+      l = (0, a.e7)([f.ZP], () => null != e ? f.ZP.getChannels(e.id) : null),
       o = i.useMemo(y.jb, []),
       d = !0 !== c.K.get(w);
     if (null == e) return null;
     let m = [];
-    null != l && l[h.sH].forEach(e => {
+    null != l && l[f.sH].forEach(e => {
       let {
         channel: t
       } = e;
@@ -220,7 +220,7 @@ let w = "dismissedCommunityFeaturesUpsell",
           publicUpdatesChannelId: null
         })
       },
-      f = e => {
+      h = e => {
         v.Z.updateGuild({
           description: e
         })
@@ -383,7 +383,7 @@ let w = "dismissedCommunityFeaturesUpsell",
           }), (0, r.jsx)(u.Kx8, {
             value: null != (n = e.description) ? n : "",
             placeholder: I.intl.string(I.t.Nvfows),
-            onChange: f,
+            onChange: h,
             maxLength: 120,
             disabled: !t
           })]

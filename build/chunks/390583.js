@@ -1,7 +1,7 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  Z: () => h
+  Z: () => f
 }), n(388685), n(953529), n(539854);
 var r = n(200651),
   i = n(192379),
@@ -47,11 +47,11 @@ function p(e, t) {
   }), e
 }
 
-function h() {
+function f() {
   let {
     editStateId: e,
     guildId: t
-  } = (0, a.N)(), [n, h] = o.UE(e), f = i.useMemo(() => new Set(n.map(e => e.ref_id)), [n]);
+  } = (0, a.N)(), [n, f] = o.UE(e), h = i.useMemo(() => new Set(n.map(e => e.ref_id)), [n]);
 
   function x(e, t) {
     let {
@@ -67,7 +67,7 @@ function h() {
       ref_type: d.Qs.CHANNEL,
       ref_id: r
     };
-    null != t ? a[t] = o : a.push(o), h(a)
+    null != t ? a[t] = o : a.push(o), f(a)
   }
   let b = (0, s.mY)();
   return (0, r.jsxs)(r.Fragment, {
@@ -76,19 +76,19 @@ function h() {
       onEdit: function(e) {
         (0, l.h7j)(i => (0, r.jsx)(c.x3, p(g({}, i), {
           guildId: t,
-          omitChannelIds: f,
+          omitChannelIds: h,
           initialData: n[e],
           onSave: t => x(t, e),
           onDelete: () => (function(e) {
             let t = [...n];
-            t.splice(e, 1), h(t)
+            t.splice(e, 1), f(t)
           })(e)
         })))
       },
       onMove: function(e, t) {
         let r = [...n],
           [i] = r.splice(e, 1);
-        r.splice(t, 0, i), h(r)
+        r.splice(t, 0, i), f(r)
       },
       guildId: t
     }), n.length > 0 && (0, r.jsx)(l.LZC, {
@@ -97,7 +97,7 @@ function h() {
       onClick: function() {
         (0, l.h7j)(e => (0, r.jsx)(c.x3, p(g({}, e), {
           guildId: t,
-          omitChannelIds: f,
+          omitChannelIds: h,
           onSave: e => x(e)
         })))
       },

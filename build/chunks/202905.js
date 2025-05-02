@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   r: () => _
@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(434404),
   g = n(999382),
   p = n(548522),
-  h = n(651390),
-  f = n(981631),
+  f = n(651390),
+  h = n(981631),
   x = n(388032),
   b = n(98574);
 let j = {
@@ -63,7 +63,7 @@ function _(e) {
       }))
     }, [null == n ? void 0 : n.id, N]),
     S = i.useCallback(() => {
-      m.Z.setSection(f.pNK.PROFILE)
+      m.Z.setSection(h.pNK.PROFILE)
     }, []);
   if (null == n) return null;
   let T = null != t ? t : null == O ? void 0 : O.formFields;
@@ -78,7 +78,7 @@ function _(e) {
       color: "text-secondary",
       className: b.applicationBody,
       children: x.intl.string(x.t.Z7TCtb)
-    }), (0, r.jsx)(h.c, {
+    }), (0, r.jsx)(f.c, {
       guildId: n.id
     }), (0, r.jsx)("div", {
       className: b.form,

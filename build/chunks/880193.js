@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => v
@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(723047),
   g = n(727843),
   p = n(290348),
-  h = n(927954),
-  f = n(783454),
+  f = n(927954),
+  h = n(783454),
   x = n(981631),
   b = n(388032),
   j = n(301849),
@@ -34,7 +34,7 @@ function v(e) {
     imageCTA: P,
     imageAriaLabel: w,
     setFilename: R
-  } = (0, h.Z)(v), Z = i.useMemo(() => {
+  } = (0, f.Z)(v), Z = i.useMemo(() => {
     var e;
     return null != (e = null == t ? void 0 : t.map(e => ({
       value: e,
@@ -49,7 +49,7 @@ function v(e) {
     A = (0, a.Dt)(),
     L = (0, a.Dt)(),
     M = (0, a.Dt)();
-  return (0, r.jsxs)(f.Z, {
+  return (0, r.jsxs)(h.Z, {
     title: b.intl.string(b.t.iHU439),
     intiallyExpanded: !0,
     children: [(0, r.jsxs)("div", {

@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => j
@@ -15,9 +15,9 @@ var r = n(200651),
   m = n(388032),
   g = n(210530),
   p = n(381109);
-let h = () => null;
+let f = () => null;
 
-function f(e) {
+function h(e) {
   let {
     gameApplicationIds: t,
     handleChange: n,
@@ -38,7 +38,7 @@ function f(e) {
     matchSorterOptions: s,
     clearQueryOnSelect: !0,
     customPillContainerClassName: g.pills,
-    renderCustomPill: h
+    renderCustomPill: f
   })
 }
 
@@ -65,7 +65,7 @@ function j(e) {
   let {
     profile: n,
     canManageGuild: l
-  } = e, o = n.id, u = null != (t = null == n ? void 0 : n.gameApplicationIds) ? t : b, h = i.useCallback(e => {
+  } = e, o = n.id, u = null != (t = null == n ? void 0 : n.gameApplicationIds) ? t : b, f = i.useCallback(e => {
     c.Z.updateGuildProfile(o, {
       gameApplicationIds: e
     })
@@ -87,9 +87,9 @@ function j(e) {
       })]
     }), (0, r.jsxs)("div", {
       className: g.sectionBody,
-      children: [(0, r.jsx)(f, {
+      children: [(0, r.jsx)(h, {
         gameApplicationIds: u,
-        handleChange: h,
+        handleChange: f,
         disabled: !l
       }), (0, r.jsx)(x, {
         gameApplicationIds: v,
@@ -98,7 +98,7 @@ function j(e) {
       }), (0, r.jsx)(d.Z, {
         guildId: o,
         selectedGameApplicationIds: u,
-        onUpdateGames: h,
+        onUpdateGames: f,
         disabled: !l
       })]
     })]

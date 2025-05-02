@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => B
@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(239091),
   g = n(497321),
   p = n(724757),
-  h = n(210887),
-  f = n(387667),
+  f = n(210887),
+  h = n(387667),
   x = n(598077),
   b = n(592125),
   j = n(430824),
@@ -186,13 +186,13 @@ function G(e) {
     setLastExpandedRef: d,
     onHeaderClick: m,
     onContentClick: g
-  } = e, h = i.useRef(c);
+  } = e, f = i.useRef(c);
   i.useEffect(() => {
-    h.current = c
+    f.current = c
   }, [c]);
-  let f = (0, p.Z)("audit-log", h);
+  let h = (0, p.Z)("audit-log", f);
   return (0, r.jsx)(a.bG, {
-    navigator: f,
+    navigator: h,
     children: (0, r.jsx)(a.SJ, {
       children: e => {
         var {
@@ -377,7 +377,7 @@ class U extends i.PureComponent {
       var n;
       let {
         actionFilter: i
-      } = this.props, l = (0, f.Pw)(e.value), s = (0, f.p5)(e.value), a = e.value === i;
+      } = this.props, l = (0, h.Pw)(e.value), s = (0, h.p5)(e.value), a = e.value === i;
       return (0, r.jsxs)(u.lo1, {
         value: e.value,
         selectedColor: u.lo1.Colors.BRAND,
@@ -551,7 +551,7 @@ class U extends i.PureComponent {
     })
   }
 }
-let B = c.ZP.connectStores([y.Z, N.Z, j.Z, h.Z, _.Z, v.default], () => {
+let B = c.ZP.connectStores([y.Z, N.Z, j.Z, f.Z, _.Z, v.default], () => {
   let e = N.Z.getGuildId(),
     t = j.Z.getGuild(e),
     n = y.Z.logs;
@@ -568,7 +568,7 @@ let B = c.ZP.connectStores([y.Z, N.Z, j.Z, h.Z, _.Z, v.default], () => {
     logs: null != n && null != t ? I._$(n, t) : [],
     actionFilter: y.Z.actionFilter,
     userIdFilter: y.Z.userIdFilter,
-    theme: h.Z.theme,
+    theme: f.Z.theme,
     hide: _.Z.enabled
   }
 })(U)

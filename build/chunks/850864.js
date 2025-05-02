@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => I
@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(969632),
   g = n(998164),
   p = n(340189),
-  h = n(507317),
-  f = n(399614),
+  f = n(507317),
+  h = n(399614),
   x = n(387960),
   b = n(806742),
   j = n(388032),
@@ -121,12 +121,12 @@ function N(e) {
         className: _.section,
         children: [(0, r.jsx)(x.Z, {
           guildId: t.id
-        }), (0, r.jsx)(f.Z, {
+        }), (0, r.jsx)(h.Z, {
           guildId: t.id
         })]
       }), (0, r.jsx)("div", {
         className: _.sectionSeparator
-      }), (0, r.jsx)(h.Z, {
+      }), (0, r.jsx)(f.Z, {
         guild: t
       })]
     }), (0, r.jsxs)("div", {

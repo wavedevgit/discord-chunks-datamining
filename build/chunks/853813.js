@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => E
@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(496675),
   g = n(626135),
   p = n(823379),
-  h = n(243730),
-  f = n(946724),
+  f = n(243730),
+  h = n(946724),
   x = n(999382),
   b = n(130341),
   j = n(981975),
@@ -35,14 +35,14 @@ function E(e) {
       selectedSection: E,
       setSelectedSection: S
     } = e,
-    T = (0, a.e7)([f.Z], () => f.Z.guild, []);
+    T = (0, a.e7)([h.Z], () => h.Z.guild, []);
   s()(null != T, "guildId cannot be null here");
   let {
     role: P,
     permissionSearchQuery: w
-  } = (0, a.cj)([f.Z], () => ({
-    role: f.Z.getRole(n),
-    permissionSearchQuery: f.Z.getPermissionSearchQuery()
+  } = (0, a.cj)([h.Z], () => ({
+    role: h.Z.getRole(n),
+    permissionSearchQuery: h.Z.getPermissionSearchQuery()
   }), [n]);
   i.useEffect(() => {
     null == P && l(null)
@@ -63,7 +63,7 @@ function E(e) {
       let {
         role: n,
         editRoleId: r
-      } = L.current, i = (0, b.UT)(E), l = null != (t = null == (e = h.Z.getRoleMemberCount(T.id)) ? void 0 : e[r]) ? t : 0;
+      } = L.current, i = (0, b.UT)(E), l = null != (t = null == (e = f.Z.getRoleMemberCount(T.id)) ? void 0 : e[r]) ? t : 0;
       g.default.track(N.rMx.ROLE_PAGE_VIEWED, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},

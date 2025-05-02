@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => m
@@ -49,9 +49,9 @@ function m(e) {
     rule: n,
     onChangeRule: m,
     collapsed: g = !1
-  } = e, [p, h] = i.useState(!g), f = i.useCallback(() => {
-    h(!p)
-  }, [p, h]), x = i.useCallback(e => {
+  } = e, [p, f] = i.useState(!g), h = i.useCallback(() => {
+    f(!p)
+  }, [p, f]), x = i.useCallback(e => {
     m(d(u({}, n), {
       triggerMetadata: d(u({}, n.triggerMetadata), {
         regexPatterns: e
@@ -73,7 +73,7 @@ function m(e) {
       } = e;
       return (0, r.jsx)(l.P3F, {
         onClick: e => {
-          f(), t(e)
+          h(), t(e)
         },
         children: (0, r.jsxs)("div", {
           className: c.header,

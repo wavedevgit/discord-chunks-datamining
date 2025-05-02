@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => u
@@ -22,16 +22,16 @@ function u(e) {
       createEnableRequest: m,
       resubmittedRequest: g,
       requestRejectedNoticeText: p,
-      reapplyNoticeText: h
+      reapplyNoticeText: f
     } = (0, i.Z)(n),
-    f = n.hasFeature(a.oNc.CREATOR_MONETIZABLE_RESTRICTED),
+    h = n.hasFeature(a.oNc.CREATOR_MONETIZABLE_RESTRICTED),
     x = n.hasFeature(a.oNc.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING);
   if (null != d) return (0, r.jsx)(l.Z, {
     className: c.noticeContainer,
     children: d.getAnyErrorMessage()
   });
   let b = null;
-  return null != p ? b = p : g ? b = o.intl.string(o.t.MyJpJS) : null != h ? (b = h, t = o.intl.string(o.t["YKw/NT"])) : x ? b = o.intl.string(o.t.e2g9sb) : f && (b = o.intl.string(o.t.rxI9sr)), null != b ? (0, r.jsx)(s.Z, {
+  return null != p ? b = p : g ? b = o.intl.string(o.t.MyJpJS) : null != f ? (b = f, t = o.intl.string(o.t["YKw/NT"])) : x ? b = o.intl.string(o.t.e2g9sb) : h && (b = o.intl.string(o.t.rxI9sr)), null != b ? (0, r.jsx)(s.Z, {
     className: c.noticeContainer,
     notice: b,
     ctaLabel: t,

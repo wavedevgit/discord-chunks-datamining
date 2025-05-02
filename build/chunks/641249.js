@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => b
@@ -16,9 +16,9 @@ var i = n(442837),
   m = n(331146),
   g = n(798680),
   p = n(388032),
-  h = n(301849);
+  f = n(301849);
 
-function f(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -72,7 +72,7 @@ function b() {
     disabled: E,
     children: [(0, r.jsxs)(l.R94, {
       type: l.R94.Types.DESCRIPTION,
-      className: h.formDescription,
+      className: f.formDescription,
       disabled: E,
       children: [p.intl.format(p.t.zuwel5, {
         premiumEmojiMaximum: y
@@ -87,7 +87,7 @@ function b() {
           let {
             default: t
           } = await n.e("59128").then(n.bind(n, 28564));
-          return n => (0, r.jsx)(t, x(f({}, n), {
+          return n => (0, r.jsx)(t, x(h({}, n), {
             onConfirmDelete: () => {
               I(e.id), n.onClose()
             }
@@ -102,7 +102,7 @@ function b() {
           let {
             EmojiAddModal: e
           } = await n.e("21112").then(n.bind(n, 301160));
-          return n => (0, r.jsx)(e, x(f({}, n), {
+          return n => (0, r.jsx)(e, x(h({}, n), {
             guildId: t,
             initialTierEmojiIds: b,
             onSubmit: N,

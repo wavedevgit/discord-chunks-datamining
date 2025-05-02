@@ -1,7 +1,7 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  Z: () => h
+  Z: () => f
 }), n(953529), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -16,7 +16,7 @@ var r = n(200651),
   g = n(388032),
   p = n(587072);
 
-function h(e) {
+function f(e) {
   let {
     guild: t,
     everyoneRole: n,
@@ -30,7 +30,7 @@ function h(e) {
     var e, t;
     u(null != (t = null == (e = m.current) ? void 0 : e.offsetHeight) ? t : d.Cl)
   }, [u]);
-  let h = i.useCallback(() => {
+  let f = i.useCallback(() => {
     s(n.id)
   }, [s, n.id]);
   return (0, r.jsxs)("div", {
@@ -43,18 +43,18 @@ function h(e) {
       color: "header-secondary",
       variant: "text-sm/normal",
       children: g.intl.string(g.t["1ydhVl"])
-    }), (0, r.jsx)(f, {
+    }), (0, r.jsx)(h, {
       guild: t,
       everyoneRole: n,
       filteredRoles: l,
       query: o,
       setQuery: c,
-      onEveryoneRoleClick: h
+      onEveryoneRoleClick: f
     })]
   })
 }
 
-function f(e) {
+function h(e) {
   let {
     guild: t,
     everyoneRole: n,

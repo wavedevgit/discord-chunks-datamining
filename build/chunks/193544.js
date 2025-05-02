@@ -1,7 +1,7 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  Z: () => h
+  Z: () => f
 }), n(388685), n(953529);
 var r = n(200651),
   i = n(192379),
@@ -16,18 +16,18 @@ var r = n(200651),
   g = n(388032),
   p = n(184520);
 
-function h(e) {
+function f(e) {
   var t, n, l;
   let {
-    changeTitle: h,
-    value: f,
+    changeTitle: f,
+    value: h,
     options: x,
     className: b,
     onChange: j
-  } = e, [_, v] = i.useState(f), [O, C] = i.useState(!1), [y, N] = i.useState(!1), I = i.useRef(null);
+  } = e, [_, v] = i.useState(h), [O, C] = i.useState(!1), [y, N] = i.useState(!1), I = i.useRef(null);
   i.useEffect(() => {
-    v(f)
-  }, [f]), i.useEffect(() => () => {
+    v(h)
+  }, [h]), i.useEffect(() => () => {
     clearTimeout(I.current)
   }, []);
   let E = x.find(e => e.value === _),
@@ -37,7 +37,7 @@ function h(e) {
       }, 1e3))
     };
   return (0, r.jsx)(d.Z, {
-    title: O ? h : null != (t = null == E ? void 0 : E.title) ? t : h,
+    title: O ? f : null != (t = null == E ? void 0 : E.title) ? t : f,
     description: O ? "(".concat(null != (n = null == E ? void 0 : E.title) ? n : g.intl.string(g.t.PoWNfX), ")") : null != (l = null == E ? void 0 : E.description) ? l : "",
     highlightColor: O ? u.q.NONE : null == E ? void 0 : E.highlightColor,
     action: (0, r.jsx)(a.zxk, {

@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   FT: () => Y,
@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(442837),
   g = n(481060),
   p = n(668781),
-  h = n(80932),
-  f = n(225433),
+  f = n(80932),
+  h = n(225433),
   x = n(599059),
   b = n(327802),
   j = n(110924),
@@ -63,7 +63,7 @@ function F(e) {
   }
   return e
 }
-let z = u().throttle(h.OQ, 1e3),
+let z = u().throttle(f.OQ, 1e3),
   H = e => {
     let {
       guildId: t,
@@ -119,7 +119,7 @@ let z = u().throttle(h.OQ, 1e3),
             onBlur: () => {
               if (o !== n.name) {
                 let e = w.ZP.sanitizeEmojiName(o);
-                e !== n.name && (0, h.dv)({
+                e !== n.name && (0, f.dv)({
                   guildId: t,
                   emojiId: n.id,
                   name: e
@@ -150,10 +150,10 @@ let z = u().throttle(h.OQ, 1e3),
           color: "currentColor",
           className: U.editEmojiRolesIcon
         })
-      }), !a && (0, r.jsx)(f.Z, {
+      }), !a && (0, r.jsx)(h.Z, {
         className: U.emojiRemove,
         onClick: () => {
-          (0, h.RE)(t, n.id).catch(e => {
+          (0, f.RE)(t, n.id).catch(e => {
             let {
               status: t
             } = e;
@@ -336,17 +336,17 @@ let z = u().throttle(h.OQ, 1e3),
         revision: k.Z.getEmojiRevision(e.id),
         emojis: k.Z.getEmojis(e.id)
       })),
-      h = (0, j.Z)(c),
-      [f, x] = i.useState(!1),
+      f = (0, j.Z)(c),
+      [h, x] = i.useState(!1),
       [y, P] = i.useState(!1),
       w = i.useRef(null);
     i.useEffect(() => {
-      f && q()
-    }, [f]), i.useEffect(() => {
+      h && q()
+    }, [h]), i.useEffect(() => {
       z(e.id)
     }, [e.id]), i.useEffect(() => {
-      null != h && h < c && z(e.id)
-    }, [c, h, e.id]);
+      null != f && f < c && z(e.id)
+    }, [c, f, e.id]);
     let [Z, M] = i.useMemo(() => {
       let t = null == p ? void 0 : p.filter(t => !(0, N.Kt)(t, e.id)),
         [n, r] = u().partition(t, e => !e.animated);

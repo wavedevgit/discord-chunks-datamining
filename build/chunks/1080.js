@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => M
@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(110924),
   g = n(410030),
   p = n(367907),
-  h = n(906732),
-  f = n(118012),
+  f = n(906732),
+  h = n(118012),
   x = n(218867),
   b = n(733026),
   j = n(246946),
@@ -78,7 +78,7 @@ function D(e) {
     onClose: m
   } = e, [g, x] = i.useState(!1), [b, j] = i.useState(null), {
     analyticsLocations: _
-  } = (0, h.ZP)(), O = null != (t = null == _ ? void 0 : _[0]) ? t : null;
+  } = (0, f.ZP)(), O = null != (t = null == _ ? void 0 : _[0]) ? t : null;
   async function y() {
     if (null != l) {
       j(null), x(!0);
@@ -99,15 +99,15 @@ function D(e) {
     children: [(0, r.jsxs)(o.xBx, {
       className: P.header,
       separator: !1,
-      children: [(0, r.jsx)(f.Z, {
-        size: f.Z.Sizes.SIZE_24,
+      children: [(0, r.jsx)(h.Z, {
+        size: h.Z.Sizes.SIZE_24,
         className: P.userUsername,
         children: C.ZP.getUserTag(s, {
           mode: "username",
           identifiable: c ? "never" : "always"
         })
-      }), c || s.isPomelo() ? null : (0, r.jsxs)(f.Z, {
-        size: f.Z.Sizes.SIZE_24,
+      }), c || s.isPomelo() ? null : (0, r.jsxs)(h.Z, {
+        size: h.Z.Sizes.SIZE_24,
         className: P.userDiscrim,
         children: ["#", s.discriminator]
       })]
@@ -256,7 +256,7 @@ function L(e) {
     } catch (e) {
       c(!1)
     }
-  }, [t, a, l]), h = i.useCallback(e => {
+  }, [t, a, l]), f = i.useCallback(e => {
     "Enter" === e.key && (e.preventDefault(), e.stopPropagation(), p())
   }, [p]);
   return (0, r.jsxs)(o.hjN, {
@@ -279,7 +279,7 @@ function L(e) {
         placeholder: T.intl.string(T.t.MiqUmZ),
         "aria-label": T.intl.string(T.t.MiqUmZ),
         onChange: m,
-        onKeyDown: h,
+        onKeyDown: f,
         onClear: g,
         size: o.E1j.Sizes.MEDIUM,
         isLoading: a
@@ -301,7 +301,7 @@ function M() {
   let {
     guild: c,
     searchQuery: d
-  } = (0, a.e7)([N.Z], () => N.Z.getProps(), [], l.isEqual), p = null != d && d.trim().length > 0, h = (0, m.Z)(p), f = p !== h, [x] = (0, a.e7)([N.Z], () => N.Z.getBans(), [], O.Q), j = null != (e = null == x ? void 0 : x.size) ? e : 0, v = (0, g.ZP)(), C = null != (t = null == c ? void 0 : c.id) ? t : S.lds, y = i.useRef(null), I = i.useCallback(e => null == e || 0 === e.length ? e => null != e : t => {
+  } = (0, a.e7)([N.Z], () => N.Z.getProps(), [], l.isEqual), p = null != d && d.trim().length > 0, f = (0, m.Z)(p), h = p !== f, [x] = (0, a.e7)([N.Z], () => N.Z.getBans(), [], O.Q), j = null != (e = null == x ? void 0 : x.size) ? e : 0, v = (0, g.ZP)(), C = null != (t = null == c ? void 0 : c.id) ? t : S.lds, y = i.useRef(null), I = i.useCallback(e => null == e || 0 === e.length ? e => null != e : t => {
     if (null == t || 0 === e.trim().length) return !1;
     let [
       [n], r
@@ -320,10 +320,10 @@ function M() {
     pageSize: 100
   });
   i.useEffect(() => {
-    f && 1 !== G.currentPage && U(e => Z(R({}, e), {
+    h && 1 !== G.currentPage && U(e => Z(R({}, e), {
       currentPage: 1
     }))
-  }, [f, G.currentPage]);
+  }, [h, G.currentPage]);
   let B = i.useCallback(e => {
       u.Z.fetchGuildBansBatch(C, 1e3, e)
     }, [C]),

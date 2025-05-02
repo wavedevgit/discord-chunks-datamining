@@ -1,7 +1,7 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => h
 });
 var r = n(200651),
   i = n(192379),
@@ -15,16 +15,16 @@ var r = n(200651),
   m = n(624138),
   g = n(388032),
   p = n(973217);
-let h = (0, m.Mg)(a.Z.ROLE_ICON_UPLOADER_ICON_SIZE);
+let f = (0, m.Mg)(a.Z.ROLE_ICON_UPLOADER_ICON_SIZE);
 
-function f(e) {
+function h(e) {
   let {
     role: t,
     "aria-label": n = g.intl.string(g.t["MsUY/f"]),
     className: l,
     onClick: a,
     disabled: m = !1
-  } = e, f = i.useRef(null), x = i.useMemo(() => null != t ? (0, u.Kz)(t, h) : null, [t]), b = null != x ? (0, r.jsx)(c.Z, function(e) {
+  } = e, h = i.useRef(null), x = i.useMemo(() => null != t ? (0, u.Kz)(t, f) : null, [t]), b = null != x ? (0, r.jsx)(c.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -50,7 +50,7 @@ function f(e) {
     className: p.icon
   });
   return (0, r.jsx)(o.tEY, {
-    ringTarget: f,
+    ringTarget: h,
     children: (0, r.jsxs)(o.P3F, {
       "aria-label": n,
       className: s()(p.container, l, {
@@ -59,7 +59,7 @@ function f(e) {
       onClick: m ? void 0 : a,
       "aria-disabled": m,
       children: [(0, r.jsx)("div", {
-        ref: f,
+        ref: h,
         className: p.preview,
         children: b
       }), null != x ? (0, r.jsx)(d.S, {
