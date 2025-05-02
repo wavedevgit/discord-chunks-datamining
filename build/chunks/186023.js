@@ -28,7 +28,7 @@ let b = e => {
     root_node_id: y,
     success_node_id: O,
     fail_node_id: Z
-  } = n, [I, C] = l.useState(y), [N, P] = l.useState(void 0), [S, T] = l.useState(void 0), [k, E] = l.useState([]), [w, R] = l.useState(void 0), [D, A] = l.useState(void 0), M = e => {
+  } = n, [I, C] = l.useState(y), [N, P] = l.useState(void 0), [S, T] = l.useState(void 0), [k, E] = l.useState([]), [w, D] = l.useState(void 0), [R, A] = l.useState(void 0), M = e => {
     var n, r, l;
     let {
       destination: a
@@ -80,7 +80,7 @@ let b = e => {
     var r;
     let l = g ? await (0, u.ZD)(n, t, [...k, e]) : await (0, u.fw)(n, t, [...k, e], h),
       i = null == l || null == (r = l.body) ? void 0 : r.report_id;
-    null != i && R(i), A(j[e.nodeRef].report_type), null == _ || _(i)
+    null != i && D(i), A(j[e.nodeRef].report_type), null == _ || _(i)
   }, B = () => {
     var e, n;
     if (k.length < 1) return;
@@ -131,7 +131,7 @@ let b = e => {
           children: (0, r.jsx)(m.Z, {
             node: e,
             reportType: t,
-            reportSubType: D,
+            reportSubType: R,
             history: k,
             onModalClose: b.onClose,
             onSelectChild: M,
