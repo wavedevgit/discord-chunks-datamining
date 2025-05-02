@@ -16,8 +16,13 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 class s extends r.Z {
-  handleVoiceChannelSelect() {
-    o.M.trigger()
+  handleVoiceChannelSelect(e) {
+    let {
+      guildId: t
+    } = e;
+    o.M.trigger({
+      guildId: null != t ? t : void 0
+    })
   }
   handleCallCreate() {
     o.M.trigger()
