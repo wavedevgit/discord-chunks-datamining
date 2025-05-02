@@ -84,9 +84,9 @@ function D(e) {
     notificationPositionMode: S.default.getNotificationPositionMode(),
     shouldShowKeybindIndicators: S.default.showKeybindIndicators,
     textChatDisabled: E.Z.isNotificationDisabled(b.OverlayNotificationDisabledSetting.TEXT_CHAT)
-  })), L = (0, o.e7)([C.ZP], () => C.ZP.getOverlayKeybind()), M = (0, _.Z)({
+  })), L = (0, o.e7)([C.ZP], () => C.ZP.getOverlayKeybind()), B = (0, _.Z)({
     location: "overlay_user_settings"
-  }), B = (0, p.$1)(), U = P(A);
+  }), M = (0, p.$1)(), U = P(A);
   return a().isEqual(U, A) || (v.default.track(I.rMx.OVERLAY_SETTINGS_UPDATED, U), A = U), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(c.hjN, {
       className: t,
@@ -100,8 +100,8 @@ function D(e) {
           children: (0, i.jsx)(c.j7V, {
             className: y.enableSwitch,
             value: l,
-            disabled: B,
-            note: B ? N.intl.string(N.t.Eb0lnJ) : null,
+            disabled: M,
+            note: M ? N.intl.string(N.t.Eb0lnJ) : null,
             hideBorder: !0,
             onChange: function(e) {
               var t, n;
@@ -208,7 +208,7 @@ function D(e) {
           },
           value: D
         })
-      }), M && (0, i.jsx)(R, {
+      }), B && (0, i.jsx)(R, {
         children: (0, i.jsx)(c.j7V, {
           value: k,
           onChange: e => u.Z.setShowKeybindIndicators(e),

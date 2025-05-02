@@ -140,7 +140,7 @@ let E = e => {
         })
       }, E)
     })
-  }, M = C % 2 != 0;
+  }, B = C % 2 != 0;
   return (0, i.jsx)("div", {
     className: l()(y, {
       [_.bentoBoxContainer]: !O,
@@ -150,13 +150,13 @@ let E = e => {
     onFocus: Z,
     onBlur: w,
     onMouseLeave: w,
-    children: M ? (0, i.jsxs)(i.Fragment, {
+    children: B ? (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(k, {}), (0, i.jsx)(L, {
-        isLeft: M
+        isLeft: B
       })]
     }) : (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(L, {
-        isLeft: M
+        isLeft: B
       }), (0, i.jsx)(k, {})]
     })
   })

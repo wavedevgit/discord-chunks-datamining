@@ -170,7 +170,7 @@ let w = function() {
     claimedEndedOutboundPromotions: j,
     claimedOutboundPromotionCodeMap: w,
     addClaimedOutboundPromotionCode: k
-  } = (0, E.lG)(), L = x.length + j.length > 0, M = b.g.useExperiment({
+  } = (0, E.lG)(), L = x.length + j.length > 0, B = b.g.useExperiment({
     location: "EntitlementGifts"
   }, {
     autoTrackExposure: !1,
@@ -191,7 +191,7 @@ let w = function() {
           variant: "heading-md/semibold",
           children: L ? R.intl.string(R.t.wFsj3N) : void 0
         }),
-        m = M ? (0, i.jsxs)("div", {
+        m = B ? (0, i.jsxs)("div", {
           className: D.promoHeaderContainer,
           children: [(0, i.jsx)(d.SrA, {
             size: "md",
@@ -218,12 +218,12 @@ let w = function() {
           className: D.divider
         }) : null, (0, i.jsx)(O.Z, {
           className: D.gradientContainer,
-          isShown: M,
+          isShown: B,
           type: O.Y.PREMIUM,
           hasBackground: !0,
           children: (0, i.jsxs)(d.hjN, {
             className: l()({
-              [D.marginContainer]: !M
+              [D.marginContainer]: !B
             }),
             children: [m, j.map(e => {
               let {

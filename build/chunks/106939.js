@@ -38,8 +38,8 @@ var i = n(200651),
   w = n(521450),
   k = n(292352),
   L = n(981631),
-  M = n(723359),
-  B = n(921944),
+  B = n(723359),
+  M = n(921944),
   U = n(332495),
   V = n(388032),
   G = n(347362);
@@ -145,7 +145,7 @@ function Y() {
     O = s && null != f && !E;
   (0, p.ZP)(() => {
     (0, C.e)("family-center"), I.ZP.initialPageLoad(), n || (0, x.EW)(d.z.FAMILY_CENTER_NEW_BADGE, {
-      dismissAction: B.L.AUTO,
+      dismissAction: M.L.AUTO,
       forceTrack: !0
     })
   });
@@ -177,7 +177,7 @@ function Y() {
       })
     }
   }, [s, E]), r.useEffect(() => {
-    O && (0, g.mN)(M.L0.FAMILY_CENTER)
+    O && (0, g.mN)(B.L0.FAMILY_CENTER)
   }, [O]), O) ? null : (0, i.jsxs)("main", {
     className: G.container,
     "aria-label": V.intl.string(U.default.RZqaJi),
@@ -208,7 +208,7 @@ function K() {
   } = (0, y.Z)(), F = (0, _.Dt)(), z = v.default.getCurrentUser(), Y = null != t, K = a && null != z && !Y;
   (0, p.ZP)(() => {
     m.Y(L.Z5c.FAMILY_CENTER), (0, C.e)("family-center"), !N.Z.isLoading() && N.Z.canRefetch() && I.ZP.initialPageLoad(), s || (0, x.EW)(d.z.FAMILY_CENTER_NEW_BADGE, {
-      dismissAction: B.L.AUTO,
+      dismissAction: M.L.AUTO,
       forceTrack: !0
     })
   });
@@ -243,7 +243,7 @@ function K() {
       let e = S.Ex.getSetting();
       a && t && void 0 === e && S.Ex.updateSetting(!0)
     }, [a, t]), r.useEffect(() => {
-      K && (0, g.mN)(M.L0.FAMILY_CENTER)
+      K && (0, g.mN)(B.L0.FAMILY_CENTER)
     }, [K]), K) return null;
   let Q = Z !== k.dG.SETTINGS ? Z : k.dG.ACTIVITY,
     J = H[Q];

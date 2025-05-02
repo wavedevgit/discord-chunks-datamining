@@ -37,8 +37,8 @@ var i = n(200651),
   w = n(329013),
   k = n(333859),
   L = n(726985),
-  M = n(981631),
-  B = n(921944),
+  B = n(981631),
+  M = n(921944),
   U = n(959517),
   V = n(388032),
   G = n(716827),
@@ -92,31 +92,31 @@ let Y = {
       channelId: Q,
       content: V.intl.string(V.t.oZxkEh)
     })), {
-      state: M.yb.SENT,
+      state: B.yb.SENT,
       id: "".concat(t++)
     })), (0, S.e5)(W(z({}, (0, v.ZP)({
       channelId: Q,
       content: (0, d.wj)(e) ? V.intl.string(V.t["WGb/v7"]) : V.intl.string(V.t["62m4m5"])
     })), {
-      state: M.yb.SENT,
+      state: B.yb.SENT,
       id: "".concat(t++)
     })), (0, S.e5)(W(z({}, (0, v.ZP)({
       channelId: Q,
       content: V.intl.string(V.t.a0Byo6)
     })), {
-      state: M.yb.SENT,
+      state: B.yb.SENT,
       id: "".concat(t++)
     })), (0, S.e5)(W(z({}, (0, v.ZP)({
       channelId: Q,
       content: V.intl.string(V.t.bmwEWF)
     })), {
-      state: M.yb.SENT,
+      state: B.yb.SENT,
       id: "".concat(t++)
     })), (0, S.e5)(W(z({}, (0, v.ZP)({
       channelId: Q,
       content: V.intl.string(V.t.hK9QW1)
     })), {
-      state: M.yb.SENT,
+      state: B.yb.SENT,
       id: "".concat(t)
     }))]
   },
@@ -165,8 +165,8 @@ class ee extends r.Component {
       }), (0, i.jsx)(u.iRW, {
         className: l()(F.marginTop20, F.marginBottom4),
         initialValue: this.props.zoom,
-        defaultValue: M.yqN.ZOOM_DEFAULT,
-        markers: M.yqN.ZOOM_SCALES,
+        defaultValue: B.yqN.ZOOM_DEFAULT,
+        markers: B.yqN.ZOOM_SCALES,
         stickToMarkers: !0,
         onValueChange: this.handleZoomChange,
         onValueRender: this.handleSliderRender,
@@ -202,8 +202,8 @@ class ee extends r.Component {
             [F.marginBottom4]: !e
           }),
           initialValue: this.props.fontSize,
-          defaultValue: M.yqN.FONT_SIZE_DEFAULT,
-          markers: M.yqN.FONT_SIZES,
+          defaultValue: B.yqN.FONT_SIZE_DEFAULT,
+          markers: B.yqN.FONT_SIZES,
           stickToMarkers: !0,
           onValueChange: this.handleFontSizeChange,
           onValueRender: this.handleSliderRenderPX,
@@ -293,7 +293,7 @@ class ee extends r.Component {
         className: G.forcedColorsWarning,
         children: (0, _.b)() ? V.intl.format(V.t.Jae48P, {
           onClick: () => {
-            p.Z.open(M.oAB.ACCESSIBILITY)
+            p.Z.open(B.oAB.ACCESSIBILITY)
           }
         }) : V.intl.string(V.t.AUMSZG)
       })
@@ -315,7 +315,7 @@ class ee extends r.Component {
         children: (0, i.jsx)(k.c, {})
       }), (0, i.jsx)(u.j7V, {
         value: n && (0, d.ap)(e) && !t,
-        disabled: e !== M.BRd.LIGHT || t || null != r,
+        disabled: e !== B.BRd.LIGHT || t || null != r,
         onChange: this.handleDarkSidebarChecked,
         className: F.marginTop20,
         children: V.intl.string(V.t.yF54Ki)
@@ -447,7 +447,7 @@ class ee extends r.Component {
         className: F.marginTop20,
         children: V.intl.format(V.t["5LEQdX"], {
           onAccessibilityClick() {
-            p.Z.open(M.oAB.ACCESSIBILITY)
+            p.Z.open(B.oAB.ACCESSIBILITY)
           }
         })
       })]
@@ -481,7 +481,7 @@ class ee extends r.Component {
     (0, f.cq)(e)
   }
   constructor(...e) {
-    super(...e), H(this, "darkMessages", J(M.BRd.DARK)), H(this, "lightMessages", J(M.BRd.LIGHT)), H(this, "handleDisplayCompactAvatarsChanged", e => {
+    super(...e), H(this, "darkMessages", J(B.BRd.DARK)), H(this, "lightMessages", J(B.BRd.LIGHT)), H(this, "handleDisplayCompactAvatarsChanged", e => {
       m.ZP.updatedUnsyncedSettings({
         displayCompactAvatars: e
       })
@@ -604,7 +604,7 @@ class et extends ee {
       className: G.a11yCallout,
       children: V.intl.format(V.t["5LEQdX"], {
         onAccessibilityClick() {
-          p.Z.open(M.oAB.ACCESSIBILITY)
+          p.Z.open(B.oAB.ACCESSIBILITY)
         }
       })
     });
@@ -617,7 +617,7 @@ class et extends ee {
 }
 let en = e => {
   (0, O.un)(e) || (0, O.EW)(e, {
-    dismissAction: B.L.AUTO,
+    dismissAction: M.L.AUTO,
     forceTrack: !0
   })
 };

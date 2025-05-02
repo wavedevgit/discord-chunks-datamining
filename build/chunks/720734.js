@@ -38,8 +38,8 @@ var i = n(200651),
   w = n(865427),
   k = n(571250),
   L = n(628581),
-  M = n(55311),
-  B = n(575175),
+  B = n(55311),
+  M = n(575175),
   U = n(522651),
   V = n(795318),
   G = n(526371),
@@ -92,8 +92,8 @@ var i = n(200651),
   ew = n(819640),
   ek = n(131951),
   eL = n(19780),
-  eM = n(914010),
-  eB = n(885110),
+  eB = n(914010),
+  eM = n(885110),
   eU = n(246946),
   eV = n(594174),
   eG = n(78839),
@@ -485,13 +485,13 @@ class tr extends r.PureComponent {
         suppress: t,
         selfMute: n
       } = this.props;
-      (0, B.Z)(e, t, e1.jXE.ACCOUNT_PANEL), (0, U.v)(A.Z.ACCOUNT, U.d.MIC, n)
+      (0, M.Z)(e, t, e1.jXE.ACCOUNT_PANEL), (0, U.v)(A.Z.ACCOUNT, U.d.MIC, n)
     }), e4(this, "handleToggleSelfDeaf", () => {
       let {
         serverDeaf: e,
         selfDeaf: t
       } = this.props;
-      (0, M.Z)(e, e1.jXE.ACCOUNT_PANEL), (0, U.v)(A.Z.ACCOUNT, U.d.DEAFEN, !t)
+      (0, B.Z)(e, e1.jXE.ACCOUNT_PANEL), (0, U.v)(A.Z.ACCOUNT, U.d.DEAFEN, !t)
     }), e4(this, "handleOpenAccountSettings", () => {
       this.handleOpenSettings()
     }), e4(this, "handleOpenSettings", function() {
@@ -716,8 +716,8 @@ function tl() {
       activities: s,
       streaming: l,
       status: a
-    } = (0, o.cj)([eB.Z], () => {
-      let e = eB.Z.getActivities();
+    } = (0, o.cj)([eM.Z], () => {
+      let e = eM.Z.getActivities();
       return {
         activities: e,
         streaming: null != e.find(e => {
@@ -726,7 +726,7 @@ function tl() {
           } = e;
           return t === e1.IIU.STREAMING
         }),
-        status: eB.Z.getStatus()
+        status: eM.Z.getStatus()
       }
     }),
     d = (0, o.e7)([eR.Z], () => eR.Z.getAnyStreamForUser(n)),
@@ -760,9 +760,9 @@ function tl() {
     R = (0, f.s9z)(f.JQI) || y || eq.s.isDisallowPopupsSet(),
     D = (0, ec.b)(),
     k = (0, o.e7)([J.Z], () => null != J.Z.getAwaitingRemoteSessionInfo()),
-    L = (0, o.e7)([eM.Z], () => eM.Z.getGuildId()),
-    M = (0, eg.D)(),
-    B = (0, j.u)(),
+    L = (0, o.e7)([eB.Z], () => eB.Z.getGuildId()),
+    B = (0, eg.D)(),
+    M = (0, j.u)(),
     U = eK.ZP.canUsePremiumGuildMemberProfile(t),
     V = (null == t || null == (e = t.avatarDecoration) ? void 0 : e.skuId) === e2.rL,
     {
@@ -833,7 +833,7 @@ function tl() {
       avatar: [],
       settings: []
     };
-  return !R && (ei && em.settings.push(c.z.PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2), M && (1 === B ? em.settings.push(c.z.USER_SAFETY_CONSUMER_EDUCATION_MUTE) : em.settings.push(c.z.USER_SAFETY_CONSUMER_EDUCATION_BLOCK)), et && em.settings.push(c.z.SOUNDBOARD_VOLUME_EDUCATION), U && em.settings.push(c.z.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK), V && em.avatar.push(c.z.PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP), W && em.avatar.push(c.z.EXPIRING_STATUS_COACHMARK), eo && em.avatar.push(c.z.CUSTOM_STATUS_PROMPTS_COACHMARK)), (0, i.jsx)(P.Gt, {
+  return !R && (ei && em.settings.push(c.z.PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2), B && (1 === M ? em.settings.push(c.z.USER_SAFETY_CONSUMER_EDUCATION_MUTE) : em.settings.push(c.z.USER_SAFETY_CONSUMER_EDUCATION_BLOCK)), et && em.settings.push(c.z.SOUNDBOARD_VOLUME_EDUCATION), U && em.settings.push(c.z.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK), V && em.avatar.push(c.z.PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP), W && em.avatar.push(c.z.EXPIRING_STATUS_COACHMARK), eo && em.avatar.push(c.z.CUSTOM_STATUS_PROMPTS_COACHMARK)), (0, i.jsx)(P.Gt, {
     value: er,
     children: (0, i.jsx)(tr, {
       currentUser: t,
@@ -933,8 +933,8 @@ function to(e) {
   } = (0, eN.o)(), R = null != y, D = (0, eI.z)(y), Z = (0, o.e7)([eL.Z], () => eL.Z.isConnected()), {
     Component: w,
     events: k,
-    play: M
-  } = R ? N : I, B = n || s ? f.v0G : w, {
+    play: B
+  } = R ? N : I, M = n || s ? f.v0G : w, {
     mode: U
   } = (0, eC.ZP)({
     location: "RTC Microphone Button"
@@ -948,7 +948,7 @@ function to(e) {
     location: A.Z.AUDIO_INPUT_BUTTON,
     autoTrackExposure: !0
   });
-  r.useEffect(() => () => M(), [S, M]);
+  r.useEffect(() => () => B(), [S, B]);
   let z = r.useCallback(e => {
       j(e, F)
     }, [j, F]),
@@ -982,7 +982,7 @@ function to(e) {
         onMouseLeave: () => {
           x(), k.onMouseLeave()
         },
-        icon: (0, i.jsx)(B, {
+        icon: (0, i.jsx)(M, {
           size: "custom",
           width: 20,
           height: 20,

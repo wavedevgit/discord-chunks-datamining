@@ -41,7 +41,7 @@ let g = r.forwardRef(function(e, t) {
     dismissIcon: w,
     onDismissIconClick: k,
     tryItButtonColor: L
-  } = e, M = S ? a.zxk.Sizes.LARGE : a.zxk.Sizes.MAX, [B, U] = r.useState(!1), {
+  } = e, B = S ? a.zxk.Sizes.LARGE : a.zxk.Sizes.MAX, [M, U] = r.useState(!1), {
     ref: V,
     width: G
   } = (0, o.ZP)();
@@ -54,8 +54,8 @@ let g = r.forwardRef(function(e, t) {
   return r.useEffect(() => {
     var e, t;
     let n = (null != (t = null == (e = V.current) ? void 0 : e.scrollWidth) ? t : 0) + 64;
-    !B && n > P && U(!0)
-  }, [B, G, V, P]), r.useEffect(() => {
+    !M && n > P && U(!0)
+  }, [M, G, V, P]), r.useEffect(() => {
     (0, c.kk)(T)
   }, [T]), (0, i.jsx)("div", {
     className: j,
@@ -104,11 +104,11 @@ let g = r.forwardRef(function(e, t) {
         }) : n]
       }), (0, i.jsx)("div", {
         ref: V,
-        className: B || !S ? p.buttonContainerVertical : p.buttonContainerHorizontal,
+        className: M || !S ? p.buttonContainerVertical : p.buttonContainerHorizontal,
         children: null != x ? (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)(a.zxk, {
             className: p.button,
-            size: M,
+            size: B,
             onClick: e => {
               null == E || E(e), x(e), F(u.L.PRIMARY)
             },
@@ -116,7 +116,7 @@ let g = r.forwardRef(function(e, t) {
             children: null != b ? b : m.intl.string(m.t.IHf1RE)
           }), !R && (0, i.jsx)(a.zxk, {
             className: p.button,
-            size: M,
+            size: B,
             onClick: e => {
               null == E || E(e), F(u.L.DISMISS)
             },

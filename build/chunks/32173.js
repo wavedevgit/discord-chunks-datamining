@@ -38,8 +38,8 @@ var s = n(399606),
   w = n(981631),
   k = n(215023),
   L = n(921944),
-  M = n(526761),
-  B = n(332325),
+  B = n(526761),
+  M = n(332325),
   U = n(388032),
   V = n(344253),
   G = n(660372),
@@ -83,10 +83,10 @@ let ex = () => {
   }), eS = null != eO ? eO.initialPercentage : void 0, ev = null != eO ? eO.percentage : void 0, eT = (0, m.Z)(x.Z), eI = (0, h.H)("usePerksDiscoverabilityCards"), eN = (0, T.a)(), ey = (0, v.Kb)(Z.qY), {
     isFractionalPremiumActive: eA
   } = (0, u.Z)(), eP = null != i && i.hasPremiumAtLeast(D.p9.TIER_2), eR = (0, g.wE)(l.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE), eD = (0, f.Z)({
-    scrollPosition: M.Y_.TRY_IT_OUT,
+    scrollPosition: B.Y_.TRY_IT_OUT,
     analyticsLocations: e
   }), eZ = () => {
-    a.Z.open(w.oAB.VOICE, M.GA, {
+    a.Z.open(w.oAB.VOICE, B.GA, {
       openWithoutBackstack: !0,
       analyticsLocations: e
     })
@@ -94,7 +94,7 @@ let ex = () => {
     (0, b.uL)(w.Z5c.COLLECTIBLES_SHOP)
   }, ek = () => {
     a.Z.open(w.oAB.APPEARANCE, null, {
-      scrollPosition: M.h1.CUSTOM_APP_ICONS
+      scrollPosition: B.h1.CUSTOM_APP_ICONS
     })
   }, eL = {
     clientThemes: {
@@ -119,7 +119,7 @@ let ex = () => {
       descriptionCta: eT ? U.intl.string(U.t.jVcuVV) : U.intl.string(U.t.hvVgAQ),
       pillText: U.intl.string(U.t.EYxi0t),
       onCtaClick: eT ? () => {
-        (0, _.Z)(B.Z.CLIPS, {
+        (0, _.Z)(M.Z.CLIPS, {
           openWithoutBackstack: !0,
           analyticsLocations: e
         })
@@ -505,9 +505,9 @@ let ex = () => {
     }
   }
   let {
-    enabled: eM
+    enabled: eB
   } = (0, I.D)();
-  return eM && ej && eP && (eL.tenureBadge = {
+  return eB && ej && eP && (eL.tenureBadge = {
     name: "tenureBadge",
     title: U.intl.string(U.t.rnsqpa),
     pillText: U.intl.string(U.t.jyYgZ2).toLocaleUpperCase(),

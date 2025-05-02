@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => M
+  Z: () => B
 }), n(388685), n(642613);
 var i = n(200651),
   r = n(192379),
@@ -334,7 +334,7 @@ function L(e) {
   })
 }
 
-function M(e) {
+function B(e) {
   let {
     canUseCustomBackgrounds: t,
     customBackgroundOptions: n,

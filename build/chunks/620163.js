@@ -38,8 +38,8 @@ var r = n(990547),
   w = n(813732),
   k = n(398140),
   L = n(564344),
-  M = n(538645),
-  B = n(977156),
+  B = n(538645),
+  M = n(977156),
   U = n(14676),
   V = n(652380),
   G = n(373230),
@@ -92,8 +92,8 @@ var r = n(990547),
   ew = n(706060),
   ek = n(168308),
   eL = n(277329),
-  eM = n(273927),
-  eB = n(604224),
+  eB = n(273927),
+  eM = n(604224),
   eU = n(43434),
   eV = n(333576),
   eG = n(726985),
@@ -580,7 +580,7 @@ let eQ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eH.oAB.CONTENT_AND_SOCIAL,
         parent: eG.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
         label: eY.intl.string(eY.t["3wRorq"]),
-        element: eM.ZP,
+        element: eB.ZP,
         predicate: () => ta || to
       },
       [eG.s6.BLOCKED_USERS]: {
@@ -588,7 +588,7 @@ let eQ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         parent: eG.s6.RESTRICTED_USERS,
         label: eY.intl.string(eY.t.PFOUKS),
         searchableTitles: [eY.intl.string(eY.t.PFOUKS)],
-        element: eM.GF,
+        element: eB.GF,
         predicate: () => to
       },
       [eG.s6.IGNORED_USERS]: {
@@ -596,7 +596,7 @@ let eQ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         parent: eG.s6.RESTRICTED_USERS,
         searchableTitles: [eY.intl.string(eY.t["93ZDWF"])],
         label: eY.intl.string(eY.t["93ZDWF"]),
-        element: eM.yo,
+        element: eB.yo,
         predicate: () => ta
       },
       [eG.s6.PREMIUM]: {
@@ -854,7 +854,7 @@ let eQ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eY.intl.string(eY.t.B1fFpa)],
         label: eY.intl.string(eY.t.B1fFpa),
         ariaLabel: eY.intl.string(eY.t.B1fFpa),
-        element: eB.Z,
+        element: eM.Z,
         predicate: () => W.Z.isSupported(),
         url: eH.Z5c.SETTINGS("voice")
       },
@@ -1871,7 +1871,7 @@ let eQ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eH.oAB.PROFILE_EFFECTS_PREVIEW_TOOL,
         searchableTitles: ["PFX Editor"],
         label: "PFX Editor",
-        element: M.Z,
+        element: B.Z,
         predicate: () => H.Z.isDeveloper
       },
       [eG.s6.NAMEPLATES_PREVIEW_TOOL]: {
@@ -1886,7 +1886,7 @@ let eQ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: ["Quest Preview Tool"],
         label: "Quest Preview Tool",
         element: V.Z,
-        predicate: () => (0, B.X7)({
+        predicate: () => (0, M.X7)({
           location: ez.dr.QUEST_PREVIEW_TOOL
         })
       },

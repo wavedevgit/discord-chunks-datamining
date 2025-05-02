@@ -2,10 +2,10 @@
 n.d(t, {
   $_: () => Z,
   Er: () => A,
-  FM: () => M,
+  FM: () => B,
   IB: () => w,
   IY: () => k,
-  Kb: () => B,
+  Kb: () => M,
   bq: () => P,
   rM: () => D
 }), n(388685);
@@ -212,12 +212,12 @@ function L() {
   }, [n, r, e, t])
 }
 
-function M() {
+function B() {
   var e;
   let t = (0, j.oY)({
     location: "Home"
   });
-  L(v.CL), L(I.XAJ, t), B(T.qY);
+  L(v.CL), L(I.XAJ, t), M(T.qY);
   let n = A(),
     r = null != (e = null == n ? void 0 : n.showCard) && e;
   i.useEffect(() => {
@@ -225,7 +225,7 @@ function M() {
   }, [r])
 }
 
-function B(e) {
+function M(e) {
   var t;
   let n = (0, j.oY)({
       location: "Home"
