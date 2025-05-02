@@ -131,7 +131,7 @@ class N {
       }), _.lastBeatTime = Date.now()
     }), E(this, "commonProperties", e => b(O(b({
       impression_id: this.id
-    }, (0, p.eE)(this.adDecisionData)), {
+    }, this.adDecisionData), {
       is_quest_enrollment_blocked: this.isQuestEnrollmentBlocked,
       quest_status: (0, d.uk)(e)
     }), (0, d.mH)(this.questContent, this.questContentPosition, this.questContentRowIndex))), E(this, "clone", e => {

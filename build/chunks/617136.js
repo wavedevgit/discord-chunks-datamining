@@ -194,11 +194,11 @@ function D() {
       questContentPosition: o,
       questContentRowIndex: a,
       trackGuildAndChannelMetadata: s = !1
-    } = t, l = (0, f.qe)(r);
+    } = t;
     e({
       questId: n,
       event: m.rMx.QUEST_CONTENT_CLICKED,
-      properties: y(E({}, (0, f.eE)(l), A(r, o, a)), {
+      properties: y(E({}, (0, f.qe)(r), A(r, o, a)), {
         cta_name: i
       }),
       trackGuildAndChannelMetadata: s,
