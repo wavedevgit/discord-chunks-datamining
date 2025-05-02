@@ -93,8 +93,8 @@ let U = e => {
       eu = (null == X ? void 0 : X.trial_id) === L.a7,
       [ed, ep] = (0, h.US)($ ? [o.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2] : [], void 0, !0);
     if (i.useEffect(() => {
-        !0 === H && ed === o.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2 && ep(D.L.AUTO_DISMISS)
-      }, [ep, ed, H]), !U({
+        !0 === H && null != ed && ep(D.L.AUTO_DISMISS)
+      }, [ep, H, ed]), !U({
         selected: H
       })) return null;
     el === L.a$.NONE || $ || (G = 7, E = (0, r.jsx)(y.Z, {
@@ -104,8 +104,7 @@ let U = e => {
       messageStyle: u.aj.SHORT_TIME,
       upperCase: !0
     })), et ? (E = (0, r.jsx)(C.Z, {}), G = 0) : $ ? (E = (0, r.jsx)(A.S, {
-      expiresAt: eo,
-      isAcknowledged: ed !== o.z.REVERSE_TRIAL_NITRO_TAB_BADGE_V2
+      expiresAt: eo
     }), G = 4) : null != en ? (E = (0, r.jsx)(w.Z, {
       copy: en,
       showStars: !1
