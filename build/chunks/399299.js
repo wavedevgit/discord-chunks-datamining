@@ -272,7 +272,7 @@ function K(e) {
       className: z.hardwareWarning,
       children: U.intl.format(U.t.zCLXws, {
         onClick: () => {
-          v(), c.Z.open(G.oAB.VOICE, null, {
+          v(), c.Z.open(G.oAB.VOICE, B.gP, {
             scrollPosition: B.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION
           })
         }

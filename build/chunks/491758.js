@@ -147,7 +147,7 @@ function A() {
         look: p.z.WARNING,
         className: N.formItem,
         children: T.intl.format(T.t.kiaF4e, {
-          onClick: () => d.Z.open(O.oAB.VOICE, null, {
+          onClick: () => d.Z.open(O.oAB.VOICE, v.gP, {
             scrollPosition: v.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION
           })
         })
