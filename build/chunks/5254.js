@@ -1,6 +1,6 @@
 /** Chunk was on 29709 **/
 n.d(t, {
-  Z: () => N
+  Z: () => y
 }), n(388685);
 var i, r = n(392711),
   l = n.n(r),
@@ -9,9 +9,9 @@ var i, r = n(392711),
   o = n(598077),
   c = n(594174),
   u = n(388380),
-  f = n(72937);
+  d = n(72937);
 
-function d(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,9 +22,9 @@ function d(e, t, n) {
 let p = {},
   g = 0,
   O = !1,
-  y = !1;
+  E = !1;
 
-function h(e) {
+function N(e) {
   var t;
   let n = null != e.contact_names && e.contact_names.length >= 2 ? e.contact_names.slice(0, 2) : [];
   return {
@@ -52,14 +52,14 @@ class m extends(i = s.ZP.Store) {
     return p[e]
   }
 }
-d(m, "displayName", "FriendSuggestionStore");
-let N = new m(a.Z, {
+f(m, "displayName", "FriendSuggestionStore");
+let y = new m(a.Z, {
   CONNECTION_OPEN: function(e) {
-    p = {}, (g = e.friendSuggestionCount) > 0 ? (y = !0, !O && y && (O = !0, y = !1, u.Z.fetch())) : (0, f.Z)()
+    p = {}, (g = e.friendSuggestionCount) > 0 ? (E = !0, !O && E && (O = !0, E = !1, u.Z.fetch())) : (0, d.Z)()
   },
   FRIEND_SUGGESTION_CREATE: function(e) {
     var t, n;
-    let i = h(e.suggestion);
+    let i = N(e.suggestion);
     if (null != p[i.key]) return !1;
     g++, t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -68,7 +68,7 @@ let N = new m(a.Z, {
         "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), i.forEach(function(t) {
-          d(e, t, n[t])
+          f(e, t, n[t])
         })
       }
       return e
@@ -90,7 +90,7 @@ let N = new m(a.Z, {
   },
   LOAD_FRIEND_SUGGESTIONS_SUCCESS: function(e) {
     var t;
-    O = !1, t = e.suggestions, p = l().chain(t).map(e => h(e)).keyBy(e => e.key).value(), g = l().keys(p).length
+    O = !1, t = e.suggestions, p = l().chain(t).map(e => N(e)).keyBy(e => e.key).value(), g = l().keys(p).length
   },
   LOAD_FRIEND_SUGGESTIONS_FAILURE: function() {
     O = !1, p = {}

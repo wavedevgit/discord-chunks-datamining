@@ -41,7 +41,7 @@ function h(e) {
     location: "PresenceActivityStatus"
   }), {
     enableTopNavButton: E
-  } = (0, s.C)({
+  } = (0, s.Cq)({
     location: "PresenceActivityStatus"
   });
   if (l && _) return null;

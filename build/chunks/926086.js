@@ -12,8 +12,8 @@ var i = n(200651),
   u = n(481060),
   d = n(667142),
   p = n(333031),
-  h = n(86654);
-let f = {
+  f = n(86654);
+let h = {
   mass: 1,
   tension: 600,
   friction: 60,
@@ -24,18 +24,18 @@ function m(e) {
   let {
     locked: t,
     pinned: n
-  } = e, [o, a] = r.useState(0), [m, g] = r.useState(0), [y, O] = r.useState(0), v = r.useRef(0), [b, _] = r.useState(0), {
-    timeToLiveMs: E,
-    reappearTimeMs: x
+  } = e, [o, a] = r.useState(0), [m, g] = r.useState(0), [y, O] = r.useState(0), v = r.useRef(0), [b, E] = r.useState(0), {
+    timeToLiveMs: _,
+    reappearTimeMs: I
   } = d.ZP.useState(e => ({
     timeToLiveMs: e.timeToLiveMs,
     reappearTimeMs: e.reappearTimeMs
-  }), s()), I = {
-    timeToLiveMs: E,
-    reappearTimeMs: x
-  }, j = r.useRef(I);
+  }), s()), x = {
+    timeToLiveMs: _,
+    reappearTimeMs: I
+  }, j = r.useRef(x);
   r.useEffect(() => {
-    j.current = I
+    j.current = x
   }), r.useEffect(() => (v.current = setInterval(() => {
     let e = Date.now();
     g(e), O(t => {
@@ -48,11 +48,11 @@ function m(e) {
   }, 100), () => {
     clearInterval(v.current)
   }), []);
-  let C = () => {
-      a(Date.now()), _(e => e + 1)
+  let S = () => {
+      a(Date.now()), E(e => e + 1)
     },
-    S = o > 0 && m - o < 1e3,
-    Z = (0, u.Yzy)(y > 0 && y < m && m - y < E, {
+    C = o > 0 && m - o < 1e3,
+    N = (0, u.Yzy)(y > 0 && y < m && m - y < _, {
       from: {
         opacity: 0
       },
@@ -62,21 +62,21 @@ function m(e) {
       leave: {
         opacity: 0
       },
-      config: f
+      config: h
     }),
-    [N, w] = r.useState(!1);
+    [Z, w] = r.useState(!1);
   if (r.useEffect(() => {
       b > 10 && w(!0)
-    }, [b]), N) throw Error("ClickZoneDebugWidget crashed, too many clicks");
+    }, [b]), Z) throw Error("ClickZoneDebugWidget crashed, too many clicks");
   return t && !n ? null : (0, i.jsx)(i.Fragment, {
-    children: Z((e, t) => t && (0, i.jsx)(c.animated.div, {
+    children: N((e, t) => t && (0, i.jsx)(c.animated.div, {
       style: e,
-      className: h.clickZoneDebugContainer,
+      className: f.clickZoneDebugContainer,
       children: (0, i.jsx)(p.Z, {
-        className: l()(h.clickZone, S && h.clickBackground),
+        className: l()(f.clickZone, C && f.clickBackground),
         children: (0, i.jsx)(u.P3F, {
-          onClick: C,
-          className: h.clickable,
+          onClick: S,
+          className: f.clickable,
           children: (0, i.jsxs)(u.Text, {
             variant: "text-md/semibold",
             color: "always-white",

@@ -1,6 +1,6 @@
 /** Chunk was on 89298 **/
 n.d(t, {
-  Z: () => x
+  Z: () => I
 });
 var i = n(192379),
   r = n(149765),
@@ -12,8 +12,8 @@ var i = n(192379),
   u = n(592125),
   d = n(984933),
   p = n(271383),
-  h = n(430824),
-  f = n(496675),
+  f = n(430824),
+  h = n(496675),
   m = n(944486),
   g = n(914010),
   y = n(594174),
@@ -21,7 +21,7 @@ var i = n(192379),
   v = n(145597),
   b = n(981631);
 
-function _(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -39,7 +39,7 @@ function _(e) {
   }
   return e
 }
-class E extends i.Component {
+class _ extends i.Component {
   componentDidUpdate(e) {
     if (this.props.locked) return null;
     let {
@@ -51,7 +51,7 @@ class E extends i.Component {
     } = this.props;
     if (null != t && (t !== e.selectedGuild || i && !e.isMemberPending)) {
       var d, p;
-      (0, c.Q)(b.rMx.GUILD_VIEWED, (d = _({}, i ? {
+      (0, c.Q)(b.rMx.GUILD_VIEWED, (d = E({}, i ? {
         is_pending: i,
         preview_enabled: r
       } : {}), p = p = {
@@ -71,7 +71,7 @@ class E extends i.Component {
     }
     if (null != n && n !== e.selectedChannel) {
       let e = (0, a.K)(u.Z.getChannel(n), !0);
-      (0, c.Q)(b.rMx.CHANNEL_OPENED, _({}, e, (0, l.$H)(n))), (0, s.a)(b.rMx.CHANNEL_OPENED_CLICKSTREAM, {
+      (0, c.Q)(b.rMx.CHANNEL_OPENED, E({}, e, (0, l.$H)(n))), (0, s.a)(b.rMx.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: n
       })
     }
@@ -80,18 +80,18 @@ class E extends i.Component {
     return null
   }
 }
-let x = o.ZP.connectStores([g.Z, m.Z, h.Z, y.default, O.default, d.ZP, f.Z, p.ZP], () => {
+let I = o.ZP.connectStores([g.Z, m.Z, f.Z, y.default, O.default, d.ZP, h.Z, p.ZP], () => {
   var e, t, n;
   let i = g.Z.getGuildId(),
     o = m.Z.getChannelId(i),
-    l = h.Z.getGuild(i),
+    l = f.Z.getGuild(i),
     a = y.default.getCurrentUser(),
     s = null != (t = d.ZP.getChannels(null == l ? void 0 : l.id)[d.sH]) ? t : [],
     c = s.length > 0 ? s.filter(e => {
       let {
         channel: t
       } = e;
-      return f.Z.can(r.$e(b.Plq.SEND_MESSAGES, b.Plq.VIEW_CHANNEL), t)
+      return h.Z.can(r.$e(b.Plq.SEND_MESSAGES, b.Plq.VIEW_CHANNEL), t)
     }).length : 0,
     u = null != a && null != i && null != (n = null == (e = p.ZP.getMember(i, a.id)) ? void 0 : e.isPending) && n;
   return {
@@ -102,4 +102,4 @@ let x = o.ZP.connectStores([g.Z, m.Z, h.Z, y.default, O.default, d.ZP, f.Z, p.ZP
     isMemberPending: u,
     postableChannelCount: c
   }
-})(E)
+})(_)

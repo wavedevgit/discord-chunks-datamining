@@ -195,7 +195,7 @@ function T(e) {
     className: t
   } = e, {
     enableTopNavButton: n
-  } = (0, _.C)({
+  } = (0, _.Cq)({
     location: "friends-button"
   });
   return n ? (0, r.jsx)(N, {
