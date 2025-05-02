@@ -115,7 +115,7 @@ class $ extends(r = l.PureComponent) {
       source: (0, Z.At)()
     }), {
       flush: !0
-    }), null == m.Z && null != window.PublicKeyCredential && null != PublicKeyCredential.isConditionalMediationAvailable && PublicKeyCredential.isConditionalMediationAvailable().then(e => {
+    }), null != m.Z || null == window.PublicKeyCredential || null == PublicKeyCredential.isConditionalMediationAvailable || t || PublicKeyCredential.isConditionalMediationAvailable().then(e => {
       e && (0, R.us)().then(e => {
         let {
           challenge: t,
@@ -148,13 +148,15 @@ class $ extends(r = l.PureComponent) {
   componentDidUpdate(e, t) {
     let {
       authenticated: n,
-      location: r
+      location: r,
+      handoffAvailable: i
     } = this.props, {
-      checkingHandoff: i
+      checkingHandoff: l,
+      redirecting: s
     } = this.state;
-    if (!n || e.authenticated || i || (this.state.conditionalMediationAbortController.abort(), this.loginOrSSO(n, r)), t.errors !== this.state.errors) {
-      var l, s, o;
-      this.hasError("password") ? null == (l = this.passwordRef) || l.focus() : this.hasError("email") || this.hasError("login") ? null == (s = this.loginRef) || s.focus() : this.hasError("code") && (null == (o = this.codeRef) || o.focus())
+    if (!n || e.authenticated || l && (i || s) || (this.state.conditionalMediationAbortController.abort(), this.loginOrSSO(n, r)), t.errors !== this.state.errors) {
+      var o, a, c;
+      this.hasError("password") ? null == (o = this.passwordRef) || o.focus() : this.hasError("email") || this.hasError("login") ? null == (a = this.loginRef) || a.focus() : this.hasError("code") && (null == (c = this.codeRef) || c.focus())
     }
   }
   get loginSource() {
