@@ -103,7 +103,7 @@ function d(e) {
   let t = (0, r.useId)(),
     n = (0, r.useRef)(null),
     o = (0, r.useRef)(null);
-  return (0, r.useLayoutEffect)(() => {
+  return (0, r.useEffect)(() => {
     null != n.current && (o.current = (0, i.pP)(t, n.current, e))
   }, [t, e]), l(t, n.current), [o, n]
 }
@@ -116,16 +116,13 @@ function f(e, t) {
       enabled: s = !0
     } = o,
     c = (0, r.useRef)(null);
-  l(a, e.current), u(e, t, n, o), (0, r.useLayoutEffect)(() => {
-    s && null != e.current && (c.current = (0, i.pP)(a, e.current, t), null != c.current && (0, i.YP)(c.current, e.current))
-  }, [s, a, t, e, ...n]), (0, r.useEffect)(() => {
-    if (!s || null == e.current || null == c.current) return;
-    let t = e.current,
-      n = c.current;
-    return () => {
-      (0, i.UC)(n, t)
-    }
-  }, [s, e, ...n])
+  l(a, e.current), u(e, t, n, o), (0, r.useEffect)(() => {
+    if (!s) return;
+    let n = e.current;
+    if (null == n) return;
+    let r = (0, i.pP)(a, n, t);
+    if (c.current = r, null != r) return (0, i.YP)(r, n), () => (0, i.UC)(r, n)
+  }, [s, a, t, e, ...n])
 }
 
 function _(e) {
@@ -135,14 +132,10 @@ function _(e) {
       enabled: o = !0
     } = n,
     [a, s] = d(e);
-  return u(s, e, t, n), (0, r.useLayoutEffect)(() => {
-    o && null != s.current && null != a.current && (0, i.YP)(a.current, s.current)
-  }, [o, s, a, ...t]), (0, r.useEffect)(() => {
-    if (!o || null == s.current || null == a.current) return;
+  return u(s, e, t, n), (0, r.useEffect)(() => {
+    if (!o) return;
     let e = s.current,
       t = a.current;
-    return () => {
-      (0, i.UC)(t, e)
-    }
-  }, [o, a, s, ...t]), s
+    if (null != e && null != t) return (0, i.YP)(t, e), () => (0, i.UC)(t, e)
+  }, [o, s, a, ...t]), s
 }

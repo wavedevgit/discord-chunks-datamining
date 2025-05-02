@@ -192,14 +192,14 @@ function $(e) {
           E.current = !0, O(!0)
         },
         onMouseLeave: () => {
-          E.current = !1, O(!1)
+          E.current = !1, I()
         },
         onFocus: () => {
           E.current = !0, O(!0)
         },
         onBlur: e => {
           var t;
-          (null == (t = g.current) ? void 0 : t.contains(e.relatedTarget)) || (E.current = !1, O(!1))
+          (null == (t = g.current) ? void 0 : t.contains(e.relatedTarget)) || (E.current = !1, I())
         },
         children: [(0, r.jsx)(u.P3F, {
           className: k.outer,
