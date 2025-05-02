@@ -2,7 +2,7 @@
 let l, i, r, s, a, o, u;
 n.d(t, {
   Z: () => P
-}), n(388685);
+}), n(388685), n(642613);
 var d, c, g, h = n(442837),
   m = n(570140),
   p = n(823385),
@@ -101,6 +101,6 @@ let P = new C(m.Z, {
     let {
       rows: n
     } = O(t);
-    y(n)
+    n.sort((e, t) => null != e.score && null != t.score ? e.score - t.score : 0), y(n)
   }
 })

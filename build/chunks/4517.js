@@ -445,9 +445,9 @@ function en(e) {
   }, [_, p, t, n]);
   let [T, N] = i.useState(!1), D = i.useCallback(e => {
     (e || !E) && N(e)
-  }, [E]), x = e => null == e ? null : null != e.id ? "`" + ":".concat(e.name, ":") + "`" : I.ZP.translateSurrogatesToInlineEmoji(e.name), M = () => {
+  }, [E]), x = e => null == e ? null : null != e.id ? "`" + ":".concat(e.name, ":") + "`" : I.ZP.translateSurrogatesToInlineEmoji(e.name), M = (e, t) => null == e ? t : "".concat(e, " ").concat(t), j = () => {
     let e = x(t),
-      r = null == n ? e : "".concat(e, " ").concat(n);
+      r = null == n ? e : M(e, n);
     return null != o && S ? "".concat((0, b.Z)(o), ":\n> ").concat(r) : r
   };
   return (0, r.jsx)(R.Z, {
@@ -455,7 +455,7 @@ function en(e) {
     guildId: s,
     channelId: l,
     themeType: c,
-    sourceDetails: M(),
+    sourceDetails: j(),
     sourceType: L.n_.STATUS,
     onAction: d,
     onClose: () => N(!1),
