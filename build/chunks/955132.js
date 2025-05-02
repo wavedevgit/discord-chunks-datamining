@@ -1,22 +1,23 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  GC: () => y,
-  RR: () => b,
-  Wb: () => E
+  GC: () => O,
+  RR: () => y,
+  Wb: () => b
 });
 var r = n(570140),
   i = n(579806),
-  o = n(710845),
-  a = n(314897),
-  s = n(626135),
-  l = n(931619),
-  c = n(358085),
-  u = n(548570),
-  d = n(616810),
-  f = n(755278);
+  o = n(15624),
+  a = n(710845),
+  s = n(314897),
+  l = n(626135),
+  c = n(931619),
+  u = n(358085),
+  d = n(548570),
+  f = n(616810),
+  _ = n(755278);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,20 +26,20 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,36 +50,36 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+function g(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = new o.Z("ConnectionStore"),
-  E = new u.Z,
-  b = new d.Z(E),
-  y = new f.Z(E);
-E.handleIdentify = () => {
-  let e = a.default.getToken();
-  if (g.verbose("handleIdentify called", {
+let E = new a.Z("ConnectionStore"),
+  b = new d.Z,
+  y = new f.Z(b),
+  O = new _.Z(b);
+b.handleIdentify = () => {
+  let e = s.default.getToken();
+  if (E.verbose("handleIdentify called", {
       hasToken: null != e
     }), null == e) return null;
-  let t = null;
+  let t = o.Z.getState();
   return {
     token: e,
-    properties: m(p({}, s.default.getSuperProperties()), {
+    properties: g(h({}, l.default.getSuperProperties()), {
       client_app_state: t,
       is_fast_connect: !1
     }),
-    presence: b.getInitialState()
+    presence: y.getInitialState()
   }
-}, (0, c.isDesktop)() && i.Z.remotePowerMonitor.on("resume", () => {
-  E.expeditedHeartbeat(5e3, "power monitor resumed")
-}), l.Z.addOfflineCallback(() => {
-  E.networkStateChange(15e3, "network detected offline.", !1)
-}), l.Z.addOnlineCallback(() => {
-  E.networkStateChange(5e3, "network detected online.")
-}), E.on("disconnect", e => {
+}, (0, u.isDesktop)() && i.Z.remotePowerMonitor.on("resume", () => {
+  b.expeditedHeartbeat(5e3, "power monitor resumed")
+}), c.Z.addOfflineCallback(() => {
+  b.networkStateChange(15e3, "network detected offline.", !1)
+}), c.Z.addOnlineCallback(() => {
+  b.networkStateChange(5e3, "network detected online.")
+}), b.on("disconnect", e => {
   let {
     code: t,
     reason: n
@@ -88,7 +89,7 @@ E.handleIdentify = () => {
     code: t,
     reason: n
   })
-}), E.on("close", e => {
+}), b.on("close", e => {
   let {
     code: t,
     reason: n
