@@ -1,6 +1,6 @@
 /** Chunk was on 31649 **/
 n.d(e, {
-  Z: () => f
+  Z: () => h
 });
 var l = n(200651),
   r = n(120356),
@@ -13,7 +13,7 @@ var l = n(200651),
   d = n(388032),
   m = n(73711);
 
-function h(t) {
+function f(t) {
   let {
     option: e,
     isSelected: n,
@@ -40,14 +40,14 @@ function h(t) {
   })
 }
 
-function f(t) {
+function h(t) {
   let {
     currentValue: e,
     onChange: n
   } = t;
   return (0, l.jsx)("div", {
     className: m.customStatusLabelSelector,
-    children: c.Ub.map(t => (0, l.jsx)(h, {
+    children: c.Ub.map(t => (0, l.jsx)(f, {
       option: t,
       isSelected: e === t.value,
       onClick: () => n(t.value)
