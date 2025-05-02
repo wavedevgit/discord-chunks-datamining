@@ -44,15 +44,15 @@ let y = e => {
     analyticsContext: a
   } = e, {
     activeVoice: y,
-    mostRecentlyRequestedVoiceId: x
-  } = (0, p.o)(), j = (0, f.z)(t.id), C = t.id === y, I = !t.available && !t.temporarilyAvailable, O = t.temporarilyAvailable && !n && !C, E = !C && t.id === x, [N, P] = i.useState(!1);
+    mostRecentlyRequestedVoiceId: j
+  } = (0, p.o)(), x = (0, f.z)(t.id), C = t.id === y, I = !t.available && !t.temporarilyAvailable, O = t.temporarilyAvailable && !n && !C, E = !C && t.id === j, [N, P] = i.useState(!1);
   i.useEffect(() => {
     let e = E ? setTimeout(() => P(E), 200) : void 0;
     return () => {
       clearTimeout(e), P(!1)
     }
   }, [E]);
-  let S = null == j ? void 0 : j.previewSoundURLs,
+  let S = null == x ? void 0 : x.previewSoundURLs,
     [w, T] = i.useState(0),
     {
       isPlaying: L,
@@ -75,7 +75,7 @@ let y = e => {
         volume: .5
       }), (.25 > Math.random() || w > 0) && null != S && T(e => (e + 1) % S.length)
     }, [a, k, w, S, t.id]),
-    R = null != j ? h.intl.string(j.name) : "";
+    R = null != x ? h.intl.string(x.name) : "";
   return (0, r.jsxs)("div", {
     className: o()(v.filter, A, {
       [v.selected]: C,
@@ -94,7 +94,7 @@ let y = e => {
           children: [(0, r.jsx)("img", {
             className: v.thumbnail,
             alt: "",
-            src: null == j ? void 0 : j.iconURL,
+            src: null == x ? void 0 : x.iconURL,
             draggable: !1
           }), (0, r.jsx)("div", {
             className: v.insetBorder

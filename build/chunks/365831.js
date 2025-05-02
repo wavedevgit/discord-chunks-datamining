@@ -50,27 +50,22 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = {
-    mass: 2,
-    friction: 30,
-    tension: 500,
-    clamp: !0
-  },
-  j = {
+let j = e => 1 - Math.pow(1 - e, 4),
+  x = {
     mass: 1,
-    friction: 28,
-    tension: 700,
+    friction: 64,
+    tension: 1e3,
     clamp: !0
   },
   C = {
     mass: 1,
-    friction: 28,
-    tension: 500
+    friction: 64,
+    tension: 1e3
   },
   I = {
     mass: 1,
-    friction: 28,
-    tension: 800
+    friction: 35,
+    tension: 1e3
   };
 
 function O(e) {
@@ -105,8 +100,11 @@ function O(e) {
       height: 72 * !!Z,
       pointerEvents: Z ? "auto" : "none",
       backgroundColor: null != (t = null == O ? void 0 : O.baseColor) ? t : w,
-      config: x,
-      delay: A ? 150 : 100 * !!F
+      config: e => "backgroundColor" === e ? {
+        easing: j,
+        duration: 200
+      } : x,
+      delay: 100 * !!A
     }, "respect-motion-settings"),
     R = (0, c.Yzy)(null == O ? void 0 : O.id, {
       key: k,
@@ -116,84 +114,90 @@ function O(e) {
       },
       enter: {
         opacity: 1,
-        delay: 150
+        delay: A ? 100 : 50
       },
       leave: {
         opacity: 0,
-        delay: 50
+        delay: A ? 100 : 150
       },
-      config: x
+      config: {
+        easing: j,
+        duration: A ? 250 : 200
+      }
     }, "respect-motion-settings"),
-    [B] = (0, c.bYB)(3, e => ({
-      from: null == a ? {
-        translateY: 16,
-        opacity: 0
-      } : {
+    [B] = (0, c.bYB)(2, e => ({
+      from: A ? {
         translateY: 0,
         opacity: 1
+      } : {
+        translateY: 16,
+        opacity: 0
       },
       to: null == n ? {
         translateY: 16,
         opacity: 0
-      } : null == a ? {
+      } : A ? null : {
         translateY: 0,
         opacity: 1
-      } : [{
-        translateY: -4,
-        config: y(b({}, I), {
-          restVelocity: .5
-        })
-      }, {
-        translateY: 0,
-        config: I
-      }],
-      config: C,
-      delay: F ? 100 - 50 * e : 150 + 50 * e
+      },
+      config: e => "opacity" === e ? {
+        easing: j,
+        duration: 200
+      } : C,
+      delay: F ? 50 - 50 * e : 200 + 50 * e
     }), "respect-motion-settings", [n]),
     z = (0, c.Yzy)(null == O ? void 0 : O.iconURL, {
       key: k,
       from: {
         opacity: 0,
-        scale: .5,
-        translateX: null == a ? 0 : -30
+        scale: 80 / 88,
+        translateX: A ? -16 : 0
       },
       enter: {
         opacity: 1,
         scale: 1,
         translateX: 0,
-        delay: 200 * (null != a)
+        delay: 50
       },
       leave: {
         opacity: 0,
-        scale: null == n ? .5 : 1,
-        translateX: 32 * (null != n),
-        delay: 0
+        scale: Z ? 80 / 88 : 1,
+        translateX: 24 * !!Z,
+        delay: 150 * !A
       },
-      config: x
+      config: e => "opacity" === e ? {
+        easing: j,
+        duration: 200
+      } : Z ? x : I
     }, "respect-motion-settings"),
     U = (0, c.Yzy)(null == O ? void 0 : O.name, {
       key: k,
       from: {
         opacity: 0,
-        scale: null == a ? 1 : .5,
-        translateY: 16 * (null == a)
+        scale: A ? .9 : 1,
+        translateY: 16 * !A
       },
       enter: {
         opacity: 1,
         scale: 1,
         translateX: 0,
         translateY: 0,
-        delay: null == a ? 100 : 275,
-        config: null == a ? C : j
+        delay: 150,
+        config: e => "opacity" === e ? {
+          easing: j,
+          duration: 200
+        } : A ? x : C
       },
       leave: {
         opacity: 0,
-        translateX: 40 * (null != n),
+        translateX: 24 * (null != n),
         translateY: 16 * (null == n),
-        delay: F ? 200 : 150,
-        config: null == a ? C : j
-      },
-      config: C
+        delay: F ? 100 : 50,
+        config: e => "opacity" === e ? {
+          easing: j,
+          duration: 200
+        } : A ? x : C
+      }
     }, "respect-motion-settings"),
     W = h.intl.string(N ? h.t.esVyo6 : h.t.UQqFCA);
   return (0, r.jsxs)(l.animated.div, {

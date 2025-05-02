@@ -114,6 +114,7 @@ class _ extends(r = o.PureComponent) {
       className: n,
       onMouseDown: this.handleMouseDown,
       style: l,
+      onDragStart: this.handleHTMLDragStart,
       children: r
     })
   }
@@ -121,7 +122,9 @@ class _ extends(r = o.PureComponent) {
     super(e), c(this, "_ref", o.createRef()), c(this, "_height", 0), c(this, "_width", 0), c(this, "_dragStart", {
       x: 0,
       y: 0
-    }), c(this, "_offsetX", 0), c(this, "_offsetY", 0), c(this, "_removeListeners", () => {}), c(this, "handleMouseDown", e => {
+    }), c(this, "_offsetX", 0), c(this, "_offsetY", 0), c(this, "_removeListeners", () => {}), c(this, "handleHTMLDragStart", e => {
+      e.preventDefault()
+    }), c(this, "handleMouseDown", e => {
       let {
         dragAnywhere: t,
         disabled: n,

@@ -1,6 +1,6 @@
 /**
   Module ID: 74028
-  Original File Name: a2d267f112a6993a
+  Original File Name: 15fd0faca0e5acaa
 **/
 .menu__43313 {
     max-height: 70vh
@@ -763,6 +763,7 @@
 .voiceFiltersFooter_e2f668 {
     background-color: var(--background-secondary-alt);
     border-radius: 0 0 16px 16px;
+    border-top: 1px solid transparent;
     display: flex;
     flex-direction: row;
     gap: 8px;
@@ -2415,4 +2416,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     color: CanvasText
 }
 
-/*# sourceMappingURL=a2d267f112a6993a.css.map*/
+/*# sourceMappingURL=15fd0faca0e5acaa.css.map*/
