@@ -103,7 +103,7 @@ function E(e) {
       children: ["\xa0", (0, r.jsx)(a.eee, {
         className: g.termsApplyAnchor,
         href: u.Z.getArticleURL(I.helpArticleId),
-        children: f.intl.string(f.t["sBp+u7"])
+        children: f.intl.string(f.t.hvVgAQ)
       })]
     }) : void 0,
     x = {
