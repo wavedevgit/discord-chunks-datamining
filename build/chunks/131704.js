@@ -190,7 +190,8 @@ function el(e) {
     name: e.name,
     emojiId: 0 !== e.emoji_id ? e.emoji_id : void 0,
     emojiName: e.emoji_name,
-    moderated: e.moderated
+    moderated: e.moderated,
+    color: e.color
   }))
 }
 
