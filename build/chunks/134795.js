@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => p
+  Z: () => g
 });
 var i = n(200651);
 n(192379);
@@ -14,13 +14,13 @@ var r = n(120356),
   u = n(388032),
   m = n(771066);
 
-function p(e) {
+function g(e) {
   let {
     showRemoveBannerButton: t,
     errors: n,
     onBannerChange: r,
-    guildId: p,
-    className: g,
+    guildId: g,
+    className: p,
     disabled: h = !1,
     showPremiumIcon: f = !0,
     isTryItOutFlow: b = !1,
@@ -28,9 +28,9 @@ function p(e) {
     withHighlight: x = !1
   } = e, {
     newestAnalyticsLocation: E
-  } = (0, a.ZP)(), j = x ? l.gtL : l.zxk;
+  } = (0, a.ZP)(), C = x ? l.gtL : l.zxk;
   return (0, i.jsx)(c.Z, {
-    className: g,
+    className: p,
     title: u.intl.string(u.t.Vgdusr),
     showPremiumIcon: f,
     errors: n,
@@ -38,7 +38,7 @@ function p(e) {
     forcedDivider: _,
     children: (0, i.jsxs)("div", {
       className: m.buttonsContainer,
-      children: [(0, i.jsx)(j, {
+      children: [(0, i.jsx)(C, {
         className: s()({
           [m.buttonHighlighted]: x
         }),
@@ -46,7 +46,7 @@ function p(e) {
         onClick: () => (0, o.$r)({
           uploadType: d.pC.BANNER,
           analyticsSource: E,
-          guildId: p,
+          guildId: g,
           isTryItOutFlow: b
         }),
         children: u.intl.string(u.t.N0bC3N)
@@ -56,7 +56,7 @@ function p(e) {
         look: l.zxk.Looks.LINK,
         size: l.zxk.Sizes.SMALL,
         onClick: () => r(null),
-        children: null != p ? u.intl.string(u.t.jHlJNT) : u.intl.string(u.t.tT9n7O)
+        children: null != g ? u.intl.string(u.t.jHlJNT) : u.intl.string(u.t.tT9n7O)
       })]
     })
   })

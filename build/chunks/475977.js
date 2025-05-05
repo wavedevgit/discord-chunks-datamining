@@ -12,8 +12,8 @@ var i = n(200651),
   d = n(196033),
   u = n(981631),
   m = n(474936),
-  p = n(388032),
-  g = n(811344);
+  g = n(388032),
+  p = n(811344);
 let h = () => {
   let {
     analyticsLocations: e
@@ -33,25 +33,25 @@ let h = () => {
     })
   }, [e, _]), (0, i.jsxs)("div", {
     ref: t,
-    className: g.container,
+    className: p.container,
     style: {
       backgroundImage: "url(".concat(n, ")")
     },
     children: [(0, i.jsx)("div", {
-      className: g.artContainer,
+      className: p.artContainer,
       "aria-hidden": !0,
       role: "presentation",
       children: (0, i.jsx)("img", {
         src: h,
-        className: g.art,
+        className: p.art,
         alt: ""
       })
     }), (0, i.jsxs)("div", {
-      className: g.mainColumn,
+      className: p.mainColumn,
       children: [(0, i.jsx)(s.X6q, {
         variant: "heading-lg/extrabold",
         color: x ? "redesign-button-overlay-text" : "currentColor",
-        className: g.title,
+        className: p.title,
         children: f
       }), (0, i.jsx)(s.Text, {
         variant: "text-sm/normal",
@@ -65,9 +65,9 @@ let h = () => {
           analyticsSource: l.Z.COLLECTIBLES_PROFILE_SETTINGS_UPSELL
         })
       },
-      className: g.ctaButton,
+      className: p.ctaButton,
       color: s.zxk.Colors.BRAND_INVERTED,
-      children: p.intl.string(p.t.fYfGgI)
+      children: g.intl.string(g.t.fYfGgI)
     })]
   })
 }

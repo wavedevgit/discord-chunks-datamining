@@ -12,8 +12,8 @@ var i = n(200651),
   d = n(731722),
   u = n(993413),
   m = n(996073),
-  p = n(594174),
-  g = n(840720),
+  g = n(594174),
+  p = n(840720),
   h = n(921944),
   f = n(526761),
   b = n(388032),
@@ -24,9 +24,9 @@ let x = (0, o.hQ)(),
       availablePrimaryGuilds: t,
       pendingPrimaryGuildId: n,
       onChange: o
-    } = e, [E, j] = (0, c.US)([l.z.GUILD_TAG_USER_PROFILE_NEW_BADGE]), C = r.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), O = (0, s.e7)([p.default], () => {
+    } = e, [E, C] = (0, c.US)([l.z.GUILD_TAG_USER_PROFILE_NEW_BADGE]), j = r.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), O = (0, s.e7)([g.default], () => {
       var e;
-      return (0, d.Pb)(null == (e = p.default.getCurrentUser()) ? void 0 : e.primaryGuild).guildId
+      return (0, d.Pb)(null == (e = g.default.getCurrentUser()) ? void 0 : e.primaryGuild).guildId
     }), S = void 0 !== n ? n : O, v = r.useMemo(() => t.reduce((e, t) => {
       var n;
       return (null == (n = t.profile) ? void 0 : n.tag) != null && e.push({
@@ -36,10 +36,10 @@ let x = (0, o.hQ)(),
     }, []), [t]), T = r.useCallback(e => {
       var t, n, r;
       if (null == e) return null;
-      let s = C.get(e.value);
+      let s = j.get(e.value);
       if (null == s) return null;
       let l = null == (t = s.profile) ? void 0 : t.tag;
-      return null == l ? null : (0, i.jsx)(g.Z, {
+      return null == l ? null : (0, i.jsx)(p.Z, {
         guildTag: l,
         guildBadge: null != (r = null == (n = s.profile) ? void 0 : n.badge) ? r : void 0,
         guildId: s.id,
@@ -47,16 +47,16 @@ let x = (0, o.hQ)(),
         guildIcon: s.icon,
         guildIconSize: 32
       })
-    }, [C]), I = r.useCallback(e => {
+    }, [j]), I = r.useCallback(e => {
       let t = e[0];
       return null == t ? null : (0, i.jsx)(i.Fragment, {
         children: T(t)
       })
     }, [T]), N = r.useCallback(e => {
-      j(h.L.TAKE_ACTION), null == o || o(e)
-    }, [j, o]), y = r.useCallback(e => e === S, [S]), A = r.useCallback(e => e, []), P = r.useCallback(() => {
-      j(h.L.TAKE_ACTION), null == o || o(null)
-    }, [j, o]), R = r.useRef(null);
+      C(h.L.TAKE_ACTION), null == o || o(e)
+    }, [C, o]), y = r.useCallback(e => e === S, [S]), A = r.useCallback(e => e, []), P = r.useCallback(() => {
+      C(h.L.TAKE_ACTION), null == o || o(null)
+    }, [C, o]), R = r.useRef(null);
     return (0, m.Z)(R, f.Y_.GUILD_TAG), (0, i.jsxs)(u.Z, {
       title: b.intl.string(b.t.Pdd1nZ),
       titleId: x,

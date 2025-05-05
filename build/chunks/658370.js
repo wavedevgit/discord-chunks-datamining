@@ -13,8 +13,8 @@ var r = n(120356),
   d = n(639119),
   u = n(404615),
   m = n(743612),
-  p = n(409100),
-  g = n(474936),
+  g = n(409100),
+  p = n(474936),
   h = n(388032),
   f = n(344253);
 let b = e => {
@@ -25,8 +25,8 @@ let b = e => {
       buttonClassName: _ = "",
       subtitle: x = "",
       description: E = "",
-      descriptionCta: j = "",
-      isPremiumGetCta: C,
+      descriptionCta: C = "",
+      isPremiumGetCta: j,
       onCtaClick: O,
       cardVariant: S
     } = e,
@@ -55,17 +55,17 @@ let b = e => {
       titleClassName: b,
       subtitle: x,
       description: E
-    }), C && (0, i.jsx)(p.Z, {
+    }), j && (0, i.jsx)(g.Z, {
       className: _,
       look: l.zxk.Looks.BLANK,
       color: l.zxk.Colors.CUSTOM,
-      subscriptionTier: g.Si.TIER_2,
+      subscriptionTier: p.Si.TIER_2,
       buttonText: y,
       showGradient: !0
-    }), 0 !== j.length && (null == (n = null == A ? void 0 : A.descriptionCta) ? void 0 : n.hideOnHoverComponent) !== !0 && null != O && (0, i.jsx)(l.zxk, {
+    }), 0 !== C.length && (null == (n = null == A ? void 0 : A.descriptionCta) ? void 0 : n.hideOnHoverComponent) !== !0 && null != O && (0, i.jsx)(l.zxk, {
       className: _,
       onClick: O,
-      children: j
+      children: C
     })]
   })
 }

@@ -12,16 +12,16 @@ var i = n(200651),
   d = n(497321),
   u = n(100527),
   m = n(367907),
-  p = n(906732),
-  g = n(296810),
+  g = n(906732),
+  p = n(296810),
   h = n(678135),
   f = n(643879),
   b = n(621853),
   _ = n(246946),
   x = n(594174),
   E = n(63063),
-  j = n(74538),
-  C = n(18438),
+  C = n(74538),
+  j = n(18438),
   O = n(778825),
   S = n(856607),
   v = n(594496),
@@ -79,7 +79,7 @@ function R(e) {
     selectedGuild: t
   } = e, {
     analyticsLocations: n
-  } = (0, p.ZP)(u.Z.USER_SETTINGS_GUILD_PROFILE), s = (0, a.e7)([x.default], () => {
+  } = (0, g.ZP)(u.Z.USER_SETTINGS_GUILD_PROFILE), s = (0, a.e7)([x.default], () => {
     let e = x.default.getCurrentUser();
     return l()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
   }), R = (0, a.e7)([b.Z], () => !b.Z.isFetchingProfile(s.id, null == t ? void 0 : t.id)), D = (0, a.e7)([_.Z], () => _.Z.hidePersonalInformation), Z = (0, a.cj)([O.Z], () => A(y({}, O.Z.getAllPending()), {
@@ -105,13 +105,13 @@ function R(e) {
     userId: s.id,
     image: k
   });
-  return (r.useEffect(() => () => c.Z.wait(C.W3), []), r.useEffect(() => {
+  return (r.useEffect(() => () => c.Z.wait(j.W3), []), r.useEffect(() => {
     null != w && m.ZP.trackWithMetadata(I.rMx.SETTINGS_PANE_VIEWED, {
       settings_type: "guild",
       destination_pane: I.jXE.SETTINGS_CUSTOMIZE_PROFILE,
       source: w
     })
-  }, [w]), D) ? (0, i.jsx)(d.Z, {}) : R ? (0, i.jsxs)(p.Gt, {
+  }, [w]), D) ? (0, i.jsx)(d.Z, {}) : R ? (0, i.jsxs)(g.Gt, {
     value: n,
     children: [(0, i.jsx)(o.Text, {
       variant: "text-sm/normal",
@@ -122,9 +122,9 @@ function R(e) {
       children: [(0, i.jsx)(T.Z, {
         guildId: t.id,
         onChange: e => {
-          null != e && (0, C.HP)(e)
+          null != e && (0, j.HP)(e)
         }
-      }), (0, i.jsx)(g.Z, {
+      }), (0, i.jsx)(p.Z, {
         previewTitle: N.intl.formatToPlainString(N.t.Tc0slJ, {
           guildName: null == t ? void 0 : t.name
         }),
@@ -132,7 +132,7 @@ function R(e) {
           pendingAvatar: B,
           user: s,
           guild: t,
-          canUsePremiumCustomization: j.ZP.canUsePremiumProfileCustomization(s),
+          canUsePremiumCustomization: C.ZP.canUsePremiumProfileCustomization(s),
           onUpsellClick: P
         })),
         children: (0, i.jsx)(v.Z, {})

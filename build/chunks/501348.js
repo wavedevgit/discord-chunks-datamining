@@ -12,16 +12,16 @@ var i = n(200651),
   d = n(780384),
   u = n(481060),
   m = n(153867),
-  p = n(230711),
-  g = n(493773),
+  g = n(230711),
+  p = n(493773),
   h = n(714338),
   f = n(857595),
   b = n(607070),
   _ = n(627845),
   x = n(514361),
   E = n(600164),
-  j = n(313201),
-  C = n(540059),
+  C = n(313201),
+  j = n(540059),
   O = n(605236),
   S = n(786761),
   v = n(3148),
@@ -82,9 +82,9 @@ let Y = {
     COZY: "cozy",
     COMPACT: "compact"
   },
-  K = (0, j.hQ)(),
-  q = (0, j.hQ)(),
-  X = (0, j.hQ)(),
+  K = (0, C.hQ)(),
+  q = (0, C.hQ)(),
+  X = (0, C.hQ)(),
   Q = "1337",
   J = e => {
     let t = 0;
@@ -121,7 +121,7 @@ let Y = {
     }))]
   },
   $ = () => {
-    let e = (0, C.Q3)("ThemeTitle"),
+    let e = (0, j.Q3)("ThemeTitle"),
       t = (0, a.e7)([x.Z], () => x.Z.isPreview),
       {
         enabled: n
@@ -293,7 +293,7 @@ class ee extends r.Component {
         className: G.forcedColorsWarning,
         children: (0, _.b)() ? V.intl.format(V.t.Jae48P, {
           onClick: () => {
-            p.Z.open(B.oAB.ACCESSIBILITY)
+            g.Z.open(B.oAB.ACCESSIBILITY)
           }
         }) : V.intl.string(V.t.AUMSZG)
       })
@@ -447,7 +447,7 @@ class ee extends r.Component {
         className: F.marginTop20,
         children: V.intl.format(V.t["5LEQdX"], {
           onAccessibilityClick() {
-            p.Z.open(B.oAB.ACCESSIBILITY)
+            g.Z.open(B.oAB.ACCESSIBILITY)
           }
         })
       })]
@@ -604,7 +604,7 @@ class et extends ee {
       className: G.a11yCallout,
       children: V.intl.format(V.t["5LEQdX"], {
         onAccessibilityClick() {
-          p.Z.open(B.oAB.ACCESSIBILITY)
+          g.Z.open(B.oAB.ACCESSIBILITY)
         }
       })
     });
@@ -629,7 +629,7 @@ function ei() {
     r = Z.L1.useSetting(),
     s = Z.hg.useSetting(),
     l = Z.YC.useSetting();
-  (0, g.ZP)(() => {
+  (0, p.ZP)(() => {
     en(o.z.CLIENT_THEMES_SETTINGS_BADGE), en(o.z.DEKSTOP_CUSTOM_APP_ICON_BADGE), en(o.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK)
   });
   let c = (0, a.cj)([R.Z, D.ZP, b.Z, A.default, x.Z], () => {
@@ -647,8 +647,8 @@ function ei() {
         gradientPreset: x.Z.gradientPreset
       }
     }),
-    d = (0, C.o9)("UserSettingsAppearance"),
-    u = (0, C.Q3)("UserSettingsAppearance");
+    d = (0, j.o9)("UserSettingsAppearance"),
+    u = (0, j.Q3)("UserSettingsAppearance");
   return (0, i.jsx)(u ? et : ee, z({
     messageDisplayCompact: e,
     hideSimpleEmbedContent: t && n,

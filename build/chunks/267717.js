@@ -1,7 +1,7 @@
 /** Chunk was on 44114 **/
 n.d(t, {
   default: () => h,
-  y: () => g
+  y: () => p
 });
 var i = n(200651);
 n(192379);
@@ -15,7 +15,7 @@ var r = n(481060),
   u = n(388032),
   m = n(784687);
 
-function p(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -34,7 +34,7 @@ function p(e) {
   return e
 }
 
-function g(e) {
+function p(e) {
   let {
     analyticsSource: t,
     onSubscribeFinish: s
@@ -43,7 +43,7 @@ function g(e) {
     let {
       default: e
     } = await Promise.resolve().then(n.bind(n, 267717));
-    return n => (0, i.jsx)(e, p({
+    return n => (0, i.jsx)(e, g({
       user: a,
       analyticsSource: t,
       analyticsLocation: {
@@ -74,7 +74,7 @@ function h(e) {
     }
     return r
   }(e, ["user", "onClose"]);
-  return (0, i.jsx)(o.Z, p({
+  return (0, i.jsx)(o.Z, g({
     modalClassName: m.modal,
     modalContentClassName: m.modalContent,
     type: c.cd.TRY_IT_OUT_MODAL_UPSELL,

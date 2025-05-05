@@ -12,16 +12,16 @@ var i = n(200651),
   d = n(355467),
   u = n(179360),
   m = n(821849),
-  p = n(497321),
-  g = n(100527),
+  g = n(497321),
+  p = n(100527),
   h = n(906732),
   f = n(211242),
   b = n(15640),
   _ = n(89057),
   x = n(433811),
   E = n(214852),
-  j = n(621853),
-  C = n(484459),
+  C = n(621853),
+  j = n(484459),
   O = n(246946),
   S = n(594174),
   v = n(78839),
@@ -47,7 +47,7 @@ let M = function(e) {
     {
       sourceAnalyticsLocations: s,
       analyticsLocations: M
-    } = (0, h.ZP)(g.Z.PREMIUM_MARKETING),
+    } = (0, h.ZP)(p.Z.PREMIUM_MARKETING),
     U = (0, a.e7)([v.ZP], () => v.ZP.hasFetchedSubscriptions()),
     V = (0, a.e7)([S.default], () => S.default.getCurrentUser()),
     G = null == V ? void 0 : V.id,
@@ -62,14 +62,14 @@ let M = function(e) {
     {
       enabled: J
     } = (0, D.D)(),
-    $ = (0, a.e7)([j.Z], () => null != V ? j.Z.getUserProfile(V.id) : null),
+    $ = (0, a.e7)([C.Z], () => null != V ? C.Z.getUserProfile(V.id) : null),
     ee = (0, a.e7)([N.Z], () => N.Z.hasFetched);
   return (r.useEffect(() => {
     ee || d.MH()
   }, [ee]), r.useEffect(() => {
     c.Z.wait(async () => {
       let e = Date.now();
-      await Promise.all([d.jg(), (0, u.X8)(), d.tZ(), (0, m.Y2)(Q, null, L.JjL.DISCOVERY), null != G && J && q && (0, C.Z)(G)]), K.current = Date.now() - e, Y(!1)
+      await Promise.all([d.jg(), (0, u.X8)(), d.tZ(), (0, m.Y2)(Q, null, L.JjL.DISCOVERY), null != G && J && q && (0, j.Z)(G)]), K.current = Date.now() - e, Y(!1)
     })
   }, [Q, G, J, q]), r.useEffect(() => {
     n && (null != F || null != H) && (0, y.a)(F, H)
@@ -78,7 +78,7 @@ let M = function(e) {
       location_stack: s,
       load_duration_ms: K.current
     })
-  }, [s, W]), (0, a.e7)([O.Z], () => O.Z.enabled)) ? (0, i.jsx)(p.Z, {}) : n ? (0, i.jsx)(_.c8, {}) : t === k.EZ.ApplicationStoreHome && q ? J && null == $ ? (0, i.jsx)("div", {
+  }, [s, W]), (0, a.e7)([O.Z], () => O.Z.enabled)) ? (0, i.jsx)(g.Z, {}) : n ? (0, i.jsx)(_.c8, {}) : t === k.EZ.ApplicationStoreHome && q ? J && null == $ ? (0, i.jsx)("div", {
     className: l()(B.container, B.loading),
     children: (0, i.jsx)(o.$jN, {})
   }) : (0, i.jsx)(h.Gt, {

@@ -13,8 +13,8 @@ var r = n(120356),
   d = n(409813),
   u = n(3409),
   m = n(388032),
-  p = n(281817),
-  g = n(893354);
+  g = n(281817),
+  p = n(893354);
 
 function h(e) {
   let {
@@ -38,7 +38,7 @@ function h(e) {
     },
     onStepChange: () => {},
     header: (0, i.jsxs)("div", {
-      className: s()(p.modalTitle, g.flex, g.justifyBetween, g.alignCenter),
+      className: s()(g.modalTitle, p.flex, p.justifyBetween, p.alignCenter),
       children: [(0, i.jsx)(o.vwX, {
         tag: o.RB0.H4,
         children: m.intl.string(m.t.eQ2bLi)
@@ -54,10 +54,10 @@ function h(e) {
   return (0, i.jsx)(o.Y0X, {
     transitionState: t,
     size: o.CgR.SMALL,
-    className: p.modal,
+    className: g.modal,
     "aria-label": m.intl.string(m.t.eQ2bLi),
     children: (0, i.jsx)("form", {
-      className: p.form,
+      className: g.form,
       onSubmit: function(e) {
         e.preventDefault()
       },

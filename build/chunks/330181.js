@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 }), n(388685);
 var i = n(200651),
   r = n(192379),
@@ -12,7 +12,7 @@ var i = n(200651),
   d = n(584825),
   u = n(931547),
   m = n(388032);
-let p = e => {
+let g = e => {
   let [t, n] = r.useState(!1), [i, s] = r.useState(null);
   return {
     resetRenewalMutation: async t => {
@@ -30,7 +30,7 @@ let p = e => {
   }
 };
 
-function g(e) {
+function p(e) {
   let {
     groupListingId: t,
     subscription: n,
@@ -38,10 +38,10 @@ function g(e) {
   } = e, {
     analyticsLocations: a
   } = (0, c.ZP)(o.Z.PENDING_PLAN_CHANGE_NOTICE), {
-    resetRenewalMutation: g,
+    resetRenewalMutation: p,
     submitting: h,
     error: f
-  } = p(a), b = (0, d._k)(t, {
+  } = g(a), b = (0, d._k)(t, {
     includeSoftDeleted: !0
   }), {
     currentListing: _,
@@ -67,7 +67,7 @@ function g(e) {
       changeDate: E
     }),
     error: null == f ? void 0 : f.message,
-    onClick: () => g(n),
+    onClick: () => p(n),
     submitting: h,
     ctaMessage: m.intl.string(m.t.De4wIy),
     className: s

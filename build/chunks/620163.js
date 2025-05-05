@@ -13,16 +13,16 @@ var r = n(990547),
   d = n(37234),
   u = n(809206),
   m = n(230711),
-  p = n(493544),
-  g = n(579806),
+  g = n(493544),
+  p = n(579806),
   h = n(782568),
   f = n(758182),
   b = n(49226),
   _ = n(163379),
   x = n(498646),
   E = n(489968),
-  j = n(703288),
-  C = n(574755),
+  C = n(703288),
+  j = n(574755),
   O = n(377171),
   S = n(540059),
   v = n(621628),
@@ -67,16 +67,16 @@ var r = n(990547),
   ed = n(501348),
   eu = n(795594),
   em = n(443702),
-  ep = n(327192),
-  eg = n(949493),
+  eg = n(327192),
+  ep = n(949493),
   eh = n(675047),
   ef = n(177508),
   eb = n(956699),
   e_ = n(54942),
   ex = n(293389),
   eE = n(88624),
-  ej = n(387747),
-  eC = n(389650),
+  eC = n(387747),
+  ej = n(389650),
   eO = n(649157),
   eS = n(593648),
   ev = n(327885),
@@ -152,7 +152,7 @@ let eQ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
     } = e;
     return Object.freeze({
       [eG.s6.SEARCH_NO_RESULTS]: {
-        section: p.ID.CUSTOM,
+        section: g.ID.CUSTOM,
         element: eI.Z
       },
       [eG.s6.ACCOUNT_SECURITY_TAB]: {
@@ -291,7 +291,7 @@ let eQ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
       },
       [eG.s6.PROFILE_CUSTOMIZATION]: {
         section: eH.oAB.PROFILE_CUSTOMIZATION,
-        type: p.bT.WIDE,
+        type: g.bT.WIDE,
         searchableTitles: [eY.intl.string(eY.t["vi7f+v"])],
         label: eY.intl.string(eY.t["vi7f+v"]),
         ariaLabel: eY.intl.string(eY.t["vi7f+v"]),
@@ -329,7 +329,7 @@ let eQ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         label: eY.intl.string(eY.t["+o1pDQ"]),
         searchableTitles: [eY.intl.string(eY.t["+o1pDQ"])],
         ariaLabel: eY.intl.string(eY.t["+o1pDQ"]),
-        element: eg.Z,
+        element: ep.Z,
         url: eH.Z5c.SETTINGS("content-and-social")
       },
       [eG.s6.CONTENT_SOCIAL_DISCORD_TAB]: {
@@ -545,7 +545,7 @@ let eQ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eY.intl.string(eY.t["3fe7U1"])],
         label: eY.intl.string(eY.t["3fe7U1"]),
         ariaLabel: eY.intl.string(eY.t["3fe7U1"]),
-        element: ep.Z,
+        element: eg.Z,
         impressionName: r.ImpressionNames.USER_SETTINGS_CONNECTIONS,
         impressionProperties: {
           source: A
@@ -564,15 +564,15 @@ let eQ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eH.oAB.CONNECTIONS,
         searchableTitles: [eY.intl.string(eY.t["+/hZMz"])],
         parent: eG.s6.CONNECTIONS,
-        element: ep.Z
+        element: eg.Z
       },
       [eG.s6.CLIPS]: {
         section: eH.oAB.CLIPS,
         searchableTitles: [eY.intl.string(eY.t.z2jK6e)],
         label: eY.intl.string(eY.t.z2jK6e),
         ariaLabel: eY.intl.string(eY.t.z2jK6e),
-        icon: e1 ? (0, i.jsx)(j.Z, {}) : void 0,
-        element: C.Z,
+        icon: e1 ? (0, i.jsx)(C.Z, {}) : void 0,
+        element: j.Z,
         predicate: () => !e2,
         url: eH.Z5c.SETTINGS("clips")
       },
@@ -633,7 +633,7 @@ let eQ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eH.oAB.INVENTORY,
         searchableTitles: [eY.intl.string(eY.t["jcSP+v"])],
         label: eY.intl.string(eY.t["jcSP+v"]),
-        element: ej.Z,
+        element: eC.Z,
         ariaLabel: eY.intl.string(eY.t["jcSP+v"]),
         badgeCount: t
       },
@@ -1119,7 +1119,7 @@ let eQ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eH.oAB.VOICE,
         searchableTitles: [eY.intl.string(eY.t["726JHB"])],
         parent: eG.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING,
-        predicate: () => Q.isPlatformEmbedded && W.Z.supports(eW.AN.DEBUG_LOGGING) && null != g.Z.fileManager.readLogFiles
+        predicate: () => Q.isPlatformEmbedded && W.Z.supports(eW.AN.DEBUG_LOGGING) && null != p.Z.fileManager.readLogFiles
       },
       [eG.s6.VOICE_AND_VIDEO_RESET_VOICE_SETTINGS]: {
         section: eH.oAB.VOICE,
@@ -1397,7 +1397,7 @@ let eQ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eH.oAB.KEYBINDS,
         searchableTitles: [eY.intl.string(eY.t.T9DA2N)],
         label: eY.intl.string(eY.t.T9DA2N),
-        element: eC.Z,
+        element: ej.Z,
         url: eH.Z5c.SETTINGS("keybinds")
       },
       [eG.s6.LANGUAGE]: {
@@ -1465,7 +1465,7 @@ let eQ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         parent: eG.s6.STREAMER_MODE,
         predicate: () => {
           var e, t, n;
-          return null != (n = null === g.Z || void 0 === g.Z || null == (t = g.Z.window) || null == (e = t.supportsContentProtection) ? void 0 : e.call(t)) && n
+          return null != (n = null === p.Z || void 0 === p.Z || null == (t = p.Z.window) || null == (e = t.supportsContentProtection) ? void 0 : e.call(t)) && n
         }
       },
       [eG.s6.SETTINGS_ADVANCED]: {
@@ -1962,11 +1962,11 @@ let eQ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         })
       },
       [eG.s6.SOCIAL_LINKS]: {
-        section: p.ID.CUSTOM,
+        section: g.ID.CUSTOM,
         element: er.Z
       },
       [eG.s6.CLIENT_DEBUG_INFO]: {
-        section: p.ID.CUSTOM,
+        section: g.ID.CUSTOM,
         element: ee.Z
       }
     })

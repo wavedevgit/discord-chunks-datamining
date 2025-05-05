@@ -19,8 +19,8 @@ function o(e) {
     soloEmojiClassName: d,
     animate: u = !0,
     hideTooltip: m = !1,
-    hideEmoji: p = !1,
-    children: g
+    hideEmoji: g = !1,
+    children: p
   } = e;
   if (null == t) return null;
   let {
@@ -28,7 +28,7 @@ function o(e) {
   } = t, f = null != t.state && "" !== t.state ? t.state : c;
   return (0, i.jsxs)("div", {
     className: s()(a.__invalid_container, n),
-    children: [p || null == h ? null : (0, i.jsx)(l.Z, {
+    children: [g || null == h ? null : (0, i.jsx)(l.Z, {
       emoji: h,
       className: s()(a.emoji, r, null != d ? {
         [d]: null == f || "" === f
@@ -38,6 +38,6 @@ function o(e) {
     }), null != f && f.length > 0 ? (0, i.jsx)("span", {
       className: o,
       children: f
-    }) : null, g]
+    }) : null, p]
   })
 }

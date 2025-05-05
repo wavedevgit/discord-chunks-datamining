@@ -13,8 +13,8 @@ var r = n(120356),
   d = n(921801),
   u = n(131951),
   m = n(726985),
-  p = n(388032),
-  g = n(20493);
+  g = n(388032),
+  p = n(20493);
 
 function h(e) {
   let {
@@ -29,16 +29,16 @@ function h(e) {
     analyticsLocations: h
   } = (0, c.ZP)(), f = (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(a.j7V, {
-      className: t ? null : s()(g.marginTop8, g.marginBottom20),
+      className: t ? null : s()(p.marginTop8, p.marginBottom20),
       value: n,
       onChange: e => o.Z.setSidechainCompression(e, {
         analyticsLocations: h
       }),
-      note: p.intl.string(p.t.zlA23N),
+      note: g.intl.string(g.t.zlA23N),
       hideBorder: t,
-      children: p.intl.string(p.t["/jwMtr"])
+      children: g.intl.string(g.t["/jwMtr"])
     }), (0, i.jsx)(a.xJW, {
-      title: p.intl.string(p.t.fhEzfn),
+      title: g.intl.string(g.t.fhEzfn),
       children: (0, i.jsx)(a.iRW, {
         initialValue: r,
         minValue: 1,
@@ -51,7 +51,7 @@ function h(e) {
   return (0, i.jsx)(d.F, {
     setting: m.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_SIDECHAIN_COMPRESSION,
     children: t ? f : (0, i.jsx)(a.hjN, {
-      className: g.marginBottom20,
+      className: p.marginBottom20,
       children: f
     })
   })

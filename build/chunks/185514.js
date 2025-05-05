@@ -1,7 +1,7 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  $c: () => p,
-  Nx: () => g,
+  $c: () => g,
+  Nx: () => p,
   On: () => h,
   tQ: () => u,
   x5: () => m
@@ -24,7 +24,7 @@ let u = {
     comboKeysBindGlobal: !0,
     action: () => ((0, i.Z)(-1), !1)
   },
-  p = {
+  g = {
     binds: ["mod+alt+right"],
     comboKeysBindGlobal: !0,
     action() {
@@ -37,7 +37,7 @@ let u = {
       return null != e && (0, l.X)(e), !1
     }
   },
-  g = {
+  p = {
     binds: (0, c.isMac)() ? ["mod+["] : ["alt+left"],
     comboKeysBindGlobal: !0,
     action: () => ((0, s.op)(), !1)

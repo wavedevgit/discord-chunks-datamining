@@ -9,8 +9,8 @@ var i, r, s, l = n(200651),
   d = n(668781),
   u = n(358085),
   m = n(998502),
-  p = n(49226),
-  g = n(981631);
+  g = n(49226),
+  p = n(981631);
 let h = {
     status: ""
   },
@@ -76,13 +76,13 @@ class _ extends(i = a.ZP.Store) {
     try {
       var e;
       let t = await this.runCommand("registration", "show");
-      if ((null == t ? void 0 : t.code) === "MissingRegistration" && (await this.runCommand("registration", "new"), t = await this.runCommand("registration", "show")), (null == t || null == (e = t.account) ? void 0 : e.type) === "free" && p.Z.getCurrentConfig({
+      if ((null == t ? void 0 : t.code) === "MissingRegistration" && (await this.runCommand("registration", "new"), t = await this.runCommand("registration", "show")), (null == t || null == (e = t.account) ? void 0 : e.type) === "free" && g.Z.getCurrentConfig({
           location: "configureLicense"
         }).plus) {
         let {
           key: e
         } = (await o.tn.get({
-          url: g.ANM.USER_WARP_LICENSE,
+          url: p.ANM.USER_WARP_LICENSE,
           oldFormErrors: !0,
           rejectWithError: !0
         })).body;
@@ -112,7 +112,7 @@ class _ extends(i = a.ZP.Store) {
     return f
   }
   get clientEnabled() {
-    return p.Z.getCurrentConfig({
+    return g.Z.getCurrentConfig({
       location: "WarpClientStore"
     }, {
       autoTrackExposure: !0,

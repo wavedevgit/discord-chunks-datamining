@@ -12,16 +12,16 @@ var i = n(200651),
   d = n(533307),
   u = n(189907),
   m = n(812206),
-  p = n(600164),
-  g = n(925329),
+  g = n(600164),
+  p = n(925329),
   h = n(981632),
   f = n(314897),
   b = n(82142),
   _ = n(246946),
   x = n(509545),
   E = n(55563),
-  j = n(259580),
-  C = n(572004),
+  C = n(259580),
+  j = n(572004),
   O = n(669079),
   S = n(296848),
   v = n(474936),
@@ -60,15 +60,15 @@ class y extends r.PureComponent {
     } = this.props, {
       copyMode: n
     } = this.state;
-    return (0, i.jsxs)(p.Z, {
-      direction: p.Z.Direction.VERTICAL,
+    return (0, i.jsxs)(g.Z, {
+      direction: g.Z.Direction.VERTICAL,
       className: I.giftCodeRow,
       children: [(0, i.jsx)(c.kO8, {
         className: I.codeText,
         value: (0, O.Nz)(t.code),
         text: this.copyButtonText,
         mode: n,
-        supportsCopy: C.wS,
+        supportsCopy: j.wS,
         hideMessage: e ? T.intl.string(T.t["0RLn4+"]) : null,
         onCopy: this.handleCopy,
         buttonColor: c.Ttl.BRAND,
@@ -95,7 +95,7 @@ class y extends r.PureComponent {
         giftCode: t,
         sku: n
       } = this.props;
-      (0, O.dM)(t, n), (0, C.JG)(e, () => this.setState({
+      (0, O.dM)(t, n), (0, j.JG)(e, () => this.setState({
         copyMode: c.uA3.SUCCESS
       }), () => this.setState({
         copyMode: c.uA3.ERROR
@@ -129,9 +129,9 @@ class A extends r.PureComponent {
     })
   }
   renderGenerateGiftCodeRow() {
-    return (0, i.jsxs)(p.Z, {
-      justify: p.Z.Justify.BETWEEN,
-      align: p.Z.Align.CENTER,
+    return (0, i.jsxs)(g.Z, {
+      justify: g.Z.Justify.BETWEEN,
+      align: g.Z.Align.CENTER,
       className: I.generateCodeRow,
       children: [(0, i.jsx)(c.Text, {
         variant: "text-md/normal",
@@ -174,15 +174,15 @@ class A extends r.PureComponent {
           splashArtURL: t.getSplashURL(512),
           children: (0, i.jsxs)("div", {
             className: I.cardHeader,
-            children: [(0, i.jsxs)(p.Z, {
-              align: p.Z.Align.CENTER,
+            children: [(0, i.jsxs)(g.Z, {
+              align: g.Z.Align.CENTER,
               children: [null != d ? (0, i.jsx)(h.Z, {
                 giftStyle: d,
                 className: I.seasonalGiftBox,
                 shouldAnimate: this.state.isHovered
-              }) : (0, i.jsx)(g.Z, {
+              }) : (0, i.jsx)(p.Z, {
                 game: t,
-                size: g.Z.Sizes.MEDIUM,
+                size: p.Z.Sizes.MEDIUM,
                 skuId: l.id
               }), (0, i.jsxs)("div", {
                 className: I.headerText,
@@ -193,8 +193,8 @@ class A extends r.PureComponent {
                   })
                 })]
               })]
-            }), (0, i.jsx)(j.Z, {
-              direction: m ? j.Z.Directions.UP : j.Z.Directions.DOWN,
+            }), (0, i.jsx)(C.Z, {
+              direction: m ? C.Z.Directions.UP : C.Z.Directions.DOWN,
               className: I.expandIcon
             })]
           })

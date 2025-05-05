@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  c: () => j
+  c: () => C
 });
 var i = n(200651);
 n(192379);
@@ -13,8 +13,8 @@ var r = n(442837),
   d = n(94795),
   u = n(327943),
   m = n(539873),
-  p = n(311476),
-  g = n(197115),
+  g = n(311476),
+  p = n(197115),
   h = n(626135),
   f = n(981631),
   b = n(474936),
@@ -23,12 +23,12 @@ var r = n(442837),
 let E = () => {
     (0, d.nJ)(), (0, l.xf)()
   },
-  j = () => {
+  C = () => {
     let {
       analyticsLocations: e
     } = (0, c.ZP)(o.Z.USER_SETTINGS), t = (0, r.e7)([u.Z], () => u.Z.isUpsellPreview), {
       enabled: n
-    } = p.Z.getCurrentConfig({
+    } = g.Z.getCurrentConfig({
       location: "UserSettingsAppearanceInAppIcon"
     }, {
       autoTrackExposure: t,
@@ -50,7 +50,7 @@ let E = () => {
             color: !n && t ? s.zxk.Colors.PRIMARY : s.zxk.Colors.BRAND,
             onClick: () => E(),
             children: n ? _.intl.string(_.t.SKNnqq) : _.intl.string(_.t["hb/wEx"])
-          }), t ? (0, i.jsx)(g.Z, {
+          }), t ? (0, i.jsx)(p.Z, {
             className: x.tryItOutButton,
             showGradient: n,
             subscriptionTier: b.Si.TIER_2,

@@ -13,9 +13,9 @@ var r = n(442837),
   d = n(358085),
   u = n(726985),
   m = n(388032),
-  p = n(20493);
+  g = n(20493);
 
-function g(e) {
+function p(e) {
   (0, d.isMac)() && e ? (0, s.ZDy)(async () => {
     let {
       ConfirmModal: t
@@ -98,7 +98,7 @@ function h(e) {
       setting: u.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_SYSTEM_PICKER,
       children: (0, i.jsx)(s.j7V, {
         value: d,
-        onChange: g,
+        onChange: p,
         hideBorder: t,
         children: m.intl.string(m.t.ie1mgY)
       })
@@ -107,7 +107,7 @@ function h(e) {
   return (0, i.jsx)(o.F, {
     setting: u.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE,
     children: t ? h : (0, i.jsx)(s.hjN, {
-      className: p.marginBottom20,
+      className: g.marginBottom20,
       title: m.intl.string(m.t.NMCIf3),
       children: h
     })

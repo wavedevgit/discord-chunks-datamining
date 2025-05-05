@@ -13,16 +13,16 @@ var r = n(512722),
   d = n(74469),
   u = n(396402),
   m = n(442933),
-  p = n(150039),
-  g = n(126631),
+  g = n(150039),
+  p = n(126631),
   h = n(433411),
   f = n(532432),
   b = n(349177),
   _ = n(872736),
   x = n(818420),
   E = n(134795),
-  j = n(610966),
-  C = n(513901),
+  C = n(610966),
+  j = n(513901),
   O = n(451392),
   S = n(906364),
   v = n(643879),
@@ -93,8 +93,8 @@ function Z() {
     }),
     Q = (0, c.gS)(),
     J = P.ZP.canUsePremiumProfileCustomization(B),
-    $ = (0, p.gd)(U, B.avatar),
-    ee = (0, p.f$)(G, null == M ? void 0 : M.banner),
+    $ = (0, g.gd)(U, B.avatar),
+    ee = (0, g.f$)(G, null == M ? void 0 : M.banner),
     et = "DefaultCustomizationSections";
   (0, o.j)({
     location: et + " auto on",
@@ -134,7 +134,7 @@ function Z() {
       sectionTitle: R.intl.string(R.t["7v0T9P"])
     }, "decoration"), ea && (0, i.jsx)(x.Z, {
       user: B
-    }), (0, i.jsx)(C.Z, {
+    }), (0, i.jsx)(j.Z, {
       user: B,
       sectionTitle: R.intl.string(R.t.wR5wOj)
     }, "effect"), J ? (0, i.jsxs)(i.Fragment, {
@@ -150,15 +150,15 @@ function Z() {
         onThemeColorsChange: T.z5,
         forcedDivider: !0
       })]
-    }) : (0, i.jsx)(j.Z, {
+    }) : (0, i.jsx)(C.Z, {
       user: B,
       savedUserColor: null == M ? void 0 : M.accentColor,
       pendingColor: z,
       setPendingAccentColor: T.CM
-    }, "color"), (0, i.jsx)(g.Z, {
+    }, "color"), (0, i.jsx)(p.Z, {
       sectionTitle: R.intl.string(R.t.NepzEx),
       errors: es,
-      onBioChange: e => (0, p.xQ)(e, null == M ? void 0 : M.bio),
+      onBioChange: e => (0, g.xQ)(e, null == M ? void 0 : M.bio),
       pendingBio: F,
       currentBio: null != (L = null == M ? void 0 : M.bio) ? L : ""
     }, "bio"), el.length > 0 && (0, i.jsx)(d.Z, {

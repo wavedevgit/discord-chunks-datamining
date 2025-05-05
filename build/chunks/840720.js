@@ -18,8 +18,8 @@ function m(e) {
     guildTag: n,
     guildBadge: s,
     onTagClick: m,
-    guildId: p,
-    guildName: g,
+    guildId: g,
+    guildName: p,
     guildIcon: h,
     guildIconSize: f
   } = e, b = r.useRef(null), [_, x] = r.useState(!1);
@@ -31,8 +31,8 @@ function m(e) {
     children: [(0, i.jsxs)("div", {
       className: u.guildPrefixContainer,
       children: [(0, i.jsx)(o.Ft, {
-        guildId: p,
-        guildName: g,
+        guildId: g,
+        guildName: p,
         guildIcon: h,
         iconSize: f,
         className: u.guildPrefixIcon,
@@ -40,7 +40,7 @@ function m(e) {
       }), (0, i.jsx)("div", {
         className: u.details,
         children: (0, i.jsx)(a.ua7, {
-          text: g,
+          text: p,
           color: a.ua7.Colors.PRIMARY,
           shouldShow: _,
           children: e => {
@@ -66,7 +66,7 @@ function m(e) {
               ref: b
             }, e), n = n = {
               className: u.guildName,
-              children: g
+              children: p
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
@@ -83,7 +83,7 @@ function m(e) {
     }), (0, i.jsx)("div", {
       className: u.tagContainer,
       children: (0, i.jsx)(c.m0, {
-        guildId: p,
+        guildId: g,
         className: u.tag,
         guildTag: n,
         guildBadge: s,

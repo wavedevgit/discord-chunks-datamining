@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => p
+  Z: () => g
 }), n(388685);
 var i = n(200651),
   r = n(192379),
@@ -12,13 +12,13 @@ var i = n(200651),
   d = n(906732),
   u = n(892001),
   m = n(772599);
-let p = e => {
+let g = e => {
   let {
     userId: t,
     children: n,
     isLast: s,
-    className: p
-  } = e, [g, h] = r.useState(!1), {
+    className: g
+  } = e, [p, h] = r.useState(!1), {
     analyticsLocations: f
   } = (0, d.ZP)(), b = r.useCallback(() => {
     (0, u.openUserProfileModal)({
@@ -60,15 +60,15 @@ let p = e => {
           style: {
             opacity: 1
           },
-          className: l()(m.rowItem, p, {
+          className: l()(m.rowItem, g, {
             [m.last]: s,
-            [m.active]: g
+            [m.active]: p
           }),
           onMouseEnter: _,
           onMouseLeave: x,
           onClick: b
         }, e), r = r = {
-          children: n(g)
+          children: n(p)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

@@ -12,8 +12,8 @@ var i = n(200651),
   d = n(921801),
   u = n(131951),
   m = n(996073),
-  p = n(494620),
-  g = n(526761),
+  g = n(494620),
+  p = n(526761),
   h = n(726985),
   f = n(388032),
   b = n(20493);
@@ -44,7 +44,7 @@ function x(e) {
     openH264: u.Z.getOpenH264(),
     hardwareEncoding: u.Z.getHardwareEncoding()
   })), x = r.useRef(null);
-  (0, m.Z)(x, g.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION);
+  (0, m.Z)(x, p.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION);
   let E = r.useCallback(e => {
       e ? c.Z.setHardwareEncoding(!0) : (0, o.h7j)(e => {
         var t, n;
@@ -87,7 +87,7 @@ function x(e) {
         }), t))
       })
     }, []),
-    j = (0, i.jsxs)(i.Fragment, {
+    C = (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(d.F, {
         setting: h.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO_OPENH264,
         children: (0, i.jsx)(o.j7V, {
@@ -111,8 +111,8 @@ function x(e) {
             note: f.intl.string(f.t.P1UKqq),
             hideBorder: t,
             children: f.intl.string(f.t.Sln58f)
-          }), !s && (0, i.jsx)(p.Z, {
-            look: p.z.WARNING,
+          }), !s && (0, i.jsx)(g.Z, {
+            look: g.z.WARNING,
             children: f.intl.string(f.t["Uz6L6+"])
           })]
         })
@@ -122,10 +122,10 @@ function x(e) {
     });
   return (0, i.jsx)(d.F, {
     setting: h.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO,
-    children: t ? j : (0, i.jsx)(o.hjN, {
+    children: t ? C : (0, i.jsx)(o.hjN, {
       className: b.marginBottom20,
       title: f.intl.string(f.t.Tceiq6),
-      children: j
+      children: C
     })
   })
 }

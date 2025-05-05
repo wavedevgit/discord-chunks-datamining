@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => C
+  Z: () => j
 }), n(388685);
 var i = n(200651),
   r = n(192379),
@@ -12,28 +12,28 @@ var i = n(200651),
   d = n(692547),
   u = n(481060),
   m = n(846027),
-  p = n(313201),
-  g = n(131951),
+  g = n(313201),
+  p = n(131951),
   h = n(65154),
   f = n(388032),
   b = n(979385),
   _ = n(251574),
   x = n(893354),
   E = n(20493);
-let j = (0, p.hQ)();
+let C = (0, g.hQ)();
 
-function C() {
+function j() {
   let [e, t] = r.useState(-100), [n, s] = r.useState(!1), {
-    threshold: C,
+    threshold: j,
     autoThreshold: O
-  } = (0, a.cj)([g.Z], () => g.Z.getModeOptions()), {
+  } = (0, a.cj)([p.Z], () => p.Z.getModeOptions()), {
     inputMode: S,
     automaticVADSupported: v,
     isEnabled: T
-  } = (0, a.cj)([g.Z], () => ({
-    inputMode: g.Z.getMode(),
-    automaticVADSupported: g.Z.supports(h.AN.AUTOMATIC_VAD),
-    isEnabled: g.Z.isEnabled()
+  } = (0, a.cj)([p.Z], () => ({
+    inputMode: p.Z.getMode(),
+    automaticVADSupported: p.Z.supports(h.AN.AUTOMATIC_VAD),
+    isEnabled: p.Z.isEnabled()
   }));
 
   function I(e, n) {
@@ -49,15 +49,15 @@ function C() {
   r.useEffect(() => {
     let e = new c.V7;
     return e.start(1e3, () => {
-      g.Z.getMediaEngine().on(o.aB.VoiceActivity, I), e.stop()
+      p.Z.getMediaEngine().on(o.aB.VoiceActivity, I), e.stop()
     }), () => {
-      g.Z.getMediaEngine().removeListener(o.aB.VoiceActivity, I), e.stop()
+      p.Z.getMediaEngine().removeListener(o.aB.VoiceActivity, I), e.stop()
     }
   }, []);
   let y = (0, i.jsx)("section", {
     className: l()(b.inputSensitivityToggle, b.manual),
     children: (0, i.jsx)(u.iRW, {
-      initialValue: C + 100,
+      initialValue: j + 100,
       onValueRender: e => "".concat((-((100 - e) * 1)).toFixed(0), "dB"),
       onValueChange: e => N(-((100 - e) * 1), O),
       barStyles: {
@@ -66,7 +66,7 @@ function C() {
       fillStyles: {
         background: d.Z.unsafe_rawColors.YELLOW_300.css
       },
-      "aria-labelledby": j,
+      "aria-labelledby": C,
       children: (0, i.jsxs)("div", {
         className: l()(b.sliderBar, b.microphone, b.inputSensitivityBar, _.bar),
         children: [(0, i.jsx)("div", {
@@ -96,9 +96,9 @@ function C() {
     })]
   })), (0, i.jsxs)(u.xJW, {
     title: f.intl.string(f.t["sqUm+v"]),
-    titleId: j,
+    titleId: C,
     className: b.sensitivity,
-    children: [v && (0, i.jsx)(p.FG, {
+    children: [v && (0, i.jsx)(g.FG, {
       children: e => (0, i.jsxs)("div", {
         className: l()(x.horizontal, E.marginBottom4),
         children: [(0, i.jsx)(u.vwX, {
@@ -111,7 +111,7 @@ function C() {
         }), (0, i.jsx)(u.rsf, {
           id: e,
           checked: O,
-          onChange: e => N(C, e)
+          onChange: e => N(j, e)
         })]
       })
     }), y, !T && (0, i.jsx)(u.R94, {

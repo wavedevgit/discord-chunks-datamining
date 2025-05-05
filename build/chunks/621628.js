@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => C,
+  Z: () => j,
   u: () => E
 }), n(388685), n(410992), n(227481), n(730884), n(20464), n(341884), n(364341), n(629680), n(505025), n(918970), n(121784), n(644351), n(146733), n(290780), n(642613);
 var i = n(200651),
@@ -13,8 +13,8 @@ var i = n(200651),
   d = n(481060),
   u = n(600164),
   m = n(675478),
-  p = n(581883),
-  g = n(883904),
+  g = n(581883),
+  p = n(883904),
   h = n(68985),
   f = n(211644),
   b = n(804501),
@@ -56,7 +56,7 @@ function E(e) {
   })
 }
 
-function j(e) {
+function C(e) {
   let {
     items: t,
     dismissedContents: n,
@@ -71,7 +71,7 @@ function j(e) {
   })
 }
 
-function C() {
+function j() {
   var e;
   let t = (0, f.ZP)(e => e.recentlyShown),
     {
@@ -83,10 +83,10 @@ function C() {
       dailyCapOverridden: h.Z.dailyCapOverridden,
       newUserMinAgeRequiredOverridden: h.Z.newUserMinAgeRequiredOverridden
     })),
-    [E, C] = r.useState(""),
-    O = null != (e = (0, a.e7)([p.Z], () => {
+    [E, j] = r.useState(""),
+    O = null != (e = (0, a.e7)([g.Z], () => {
       var e;
-      return null == (e = p.Z.settings.userContent) ? void 0 : e.dismissedContents
+      return null == (e = g.Z.settings.userContent) ? void 0 : e.dismissedContents
     })) ? e : new Uint8Array,
     [S, v] = function(e, t) {
       let [n, i] = r.useState(() => {
@@ -120,15 +120,15 @@ function C() {
         })
       }), (0, i.jsx)(d.j7V, {
         value: s,
-        onChange: g.Nj,
+        onChange: p.Nj,
         children: "Override Dismissible Content Daily Cap"
       }), (0, i.jsx)(d.j7V, {
         value: b,
-        onChange: g.KC,
+        onChange: p.KC,
         children: "Override Minimum User Account Age Requirement"
       }), (0, i.jsxs)(d.xJW, {
         children: [(0, i.jsx)(d.zxk, {
-          onClick: () => (0, g.EG)(),
+          onClick: () => (0, p.EG)(),
           children: "Reset DismissibleContentFrameworkStore"
         }), (0, i.jsx)(d.R94, {
           className: x.marginTop4,
@@ -142,8 +142,8 @@ function C() {
         className: x.marginBottom20,
         size: d.E1j.Sizes.LARGE,
         query: E,
-        onChange: C,
-        onClear: () => C("")
+        onChange: j,
+        onClear: () => j("")
       }), (0, i.jsxs)(d.xJW, {
         className: _.buttonsContainer,
         children: [(0, i.jsx)(d.zxk, {
@@ -160,7 +160,7 @@ function C() {
           children: (0, i.jsx)(d.vwX, {
             children: "Recently Shown"
           })
-        }), (0, i.jsx)(j, {
+        }), (0, i.jsx)(C, {
           items: I,
           dismissedContents: O,
           handleChange: T
@@ -171,7 +171,7 @@ function C() {
           children: (0, i.jsx)(d.vwX, {
             children: "Recent Overrides"
           })
-        }), (0, i.jsx)(j, {
+        }), (0, i.jsx)(C, {
           items: N,
           dismissedContents: O,
           handleChange: T
@@ -181,7 +181,7 @@ function C() {
         children: (0, i.jsx)(d.vwX, {
           children: "Available Dismissible Contents"
         })
-      }), (0, i.jsx)(j, {
+      }), (0, i.jsx)(C, {
         items: y,
         dismissedContents: O,
         handleChange: T

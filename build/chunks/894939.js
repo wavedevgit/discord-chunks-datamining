@@ -12,16 +12,16 @@ var i = n(200651),
   d = n(906732),
   u = n(856768),
   m = n(993413),
-  p = n(921801),
-  g = n(208049),
+  g = n(921801),
+  p = n(208049),
   h = n(763296),
   f = n(242291),
   b = n(893663),
   _ = n(331642),
   x = n(63063),
   E = n(581883),
-  j = n(738486),
-  C = n(918257),
+  C = n(738486),
+  j = n(918257),
   O = n(970813),
   S = n(726985),
   v = n(981631),
@@ -45,14 +45,14 @@ function P(e) {
   let {
     refreshStyles: t = !1
   } = e, n = (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsxs)(p.F, {
+    children: [(0, i.jsxs)(g.F, {
       setting: S.s6.VOICE_AND_VIDEO_SOUNDBOARD,
-      children: [(0, i.jsx)(C.Z, {
+      children: [(0, i.jsx)(j.Z, {
         refreshStyles: t
       }), (0, i.jsx)(O.Z, {
         refreshStyles: t
       })]
-    }), (0, i.jsxs)(p.F, {
+    }), (0, i.jsxs)(g.F, {
       setting: S.s6.VOICE_AND_VIDEO_ENTRANCE_SOUNDS,
       children: [t ? null : (0, i.jsx)(o.$i$, {
         className: N.callSoundsDivider
@@ -75,13 +75,13 @@ function R(e) {
     refreshStyles: t
   } = e, {
     analyticsLocations: n
-  } = (0, d.ZP)(), [s, c] = r.useState(T.hY), p = (0, b.tT)(s), E = A(p), C = (null == p ? void 0 : p.type) === b.zx.GLOBAL, O = (0, a.e7)([h.Z], () => h.Z.hasFetchedAllSounds()) && null != p && null == E;
+  } = (0, d.ZP)(), [s, c] = r.useState(T.hY), g = (0, b.tT)(s), E = A(g), j = (null == g ? void 0 : g.type) === b.zx.GLOBAL, O = (0, a.e7)([h.Z], () => h.Z.hasFetchedAllSounds()) && null != g && null == E;
   r.useEffect(() => {
     O && (0, f.tt)({
       location: n
     })
   }, [O, n]), r.useEffect(() => {
-    (0, g.w)()
+    (0, p.w)()
   }, []);
   let S = r.useCallback((e, t) => {
       let {
@@ -127,7 +127,7 @@ function R(e) {
         forcedDivider: !t,
         children: [(0, i.jsx)(_.Z, {
           sound: E,
-          isGlobal: C,
+          isGlobal: j,
           onSelect: e => {
             null == e ? (0, f.aC)(s, n) : (0, f.SZ)(s, e, n)
           }
@@ -138,7 +138,7 @@ function R(e) {
         })]
       })]
     });
-  return t ? (0, i.jsx)(j.Z, {
+  return t ? (0, i.jsx)(C.Z, {
     children: P
   }) : P
 }

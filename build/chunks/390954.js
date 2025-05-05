@@ -11,8 +11,8 @@ var i, r = n(200651),
   d = n(159351),
   u = n(600164),
   m = n(212895),
-  p = n(709054),
-  g = n(156729),
+  g = n(709054),
+  p = n(156729),
   h = n(244526),
   f = n(981631),
   b = n(388032),
@@ -39,7 +39,7 @@ function E(e) {
   }
   return e
 }
-class j extends(i = s.PureComponent) {
+class C extends(i = s.PureComponent) {
   render() {
     let {
       paymentSource: e,
@@ -52,10 +52,10 @@ class j extends(i = s.PureComponent) {
       removing: c,
       submitting: d,
       onSubmit: m,
-      onCancel: p,
+      onCancel: g,
       onDelete: f
     } = this.props;
-    return n ? (0, r.jsx)(g.Z, {
+    return n ? (0, r.jsx)(p.Z, {
       paymentSource: e,
       isDefault: t,
       removing: c,
@@ -63,7 +63,7 @@ class j extends(i = s.PureComponent) {
       locale: a,
       isForSubscription: l,
       onSubmit: m,
-      onCancel: p,
+      onCancel: g,
       onDelete: f
     }) : (0, r.jsxs)("div", {
       className: _.__invalid_paymentSourceItem,
@@ -96,12 +96,12 @@ class j extends(i = s.PureComponent) {
     })
   }
 }
-x(j, "defaultProps", {
+x(C, "defaultProps", {
   isEditing: !1,
   hideDivider: !1,
   onEditClick: () => {}
 });
-class C extends s.PureComponent {
+class j extends s.PureComponent {
   renderFooter() {
     let {
       paymentSources: e
@@ -131,7 +131,7 @@ class C extends s.PureComponent {
       removing: i,
       submitting: s,
       premiumSubscriptionPaymentSourceId: l
-    } = this.props, c = a().values(t).sort((t, n) => t.id === e ? -1 : n.id === e ? 1 : p.default.compare(t.id, n.id)), d = this.state.editingPayment, m = c.findIndex(e => e.id === d), g = c.map((t, a) => (0, r.jsx)(j, {
+    } = this.props, c = a().values(t).sort((t, n) => t.id === e ? -1 : n.id === e ? 1 : g.default.compare(t.id, n.id)), d = this.state.editingPayment, m = c.findIndex(e => e.id === d), p = c.map((t, a) => (0, r.jsx)(C, {
       locale: n,
       paymentSource: t,
       isDefault: e === t.id,
@@ -161,7 +161,7 @@ class C extends s.PureComponent {
             }, e))
           }), b.intl.string(b.t.W26xGR)]
         })
-      }), g, m !== c.length - 1 ? (0, r.jsx)(o.$i$, {
+      }), p, m !== c.length - 1 ? (0, r.jsx)(o.$i$, {
         className: _.__invalid_sourceDivider
       }) : null, this.renderFooter()]
     })
@@ -222,4 +222,4 @@ class C extends s.PureComponent {
     })
   }
 }
-let O = C
+let O = j

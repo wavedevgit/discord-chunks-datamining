@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 });
 var i = n(200651),
   r = n(704215),
@@ -13,11 +13,11 @@ var i = n(200651),
   u = n(388032),
   m = n(385255);
 
-function p(e) {
+function g(e) {
   let {
     markAsDismissed: t
   } = e, {
-    analyticsLocations: p
+    analyticsLocations: g
   } = (0, a.ZP)(l.Z.CUSTOM_STATUS_TAGS_COACHMARK);
   return (0, i.jsx)(o.Z, {
     inlineArt: !0,
@@ -59,7 +59,7 @@ function p(e) {
           }({}, n), s = s = {
             showLabelSelectorNewTooltip: !0,
             location: "CustomStatusTagsCoachmark",
-            sourceAnalyticsLocations: p,
+            sourceAnalyticsLocations: g,
             prompt: t
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
             var n = Object.keys(e);
@@ -93,7 +93,7 @@ function p(e) {
   })
 }
 
-function g(e) {
+function p(e) {
   let {
     children: t,
     markAsDismissed: n
@@ -104,7 +104,7 @@ function g(e) {
     align: "center",
     shouldShow: !0,
     animation: s.yRy.Animation.TRANSLATE,
-    renderPopout: () => (0, i.jsx)(p, {
+    renderPopout: () => (0, i.jsx)(g, {
       markAsDismissed: n
     }),
     children: t

@@ -12,8 +12,8 @@ var i = n(200651),
   d = n(879892),
   u = n(124570),
   m = n(594174),
-  p = n(709586),
-  g = n(267642),
+  g = n(709586),
+  p = n(267642),
   h = n(981631),
   f = n(388032),
   b = n(122039);
@@ -56,9 +56,9 @@ let E = function() {
     } = (0, a.ZP)(),
     E = (0, s.e7)([m.default], () => m.default.getCurrentUser()),
     {
-      fractionalState: j
+      fractionalState: C
     } = (0, o.Z)(),
-    C = (0, u.y)("guild_boosting_boost_cta", E, j);
+    j = (0, u.y)("guild_boosting_boost_cta", E, C);
 
   function O(n) {
     null != e.current && (0, l.Mr3)(e.current), (0, d.u)({
@@ -86,12 +86,12 @@ let E = function() {
       }
     })
   }
-  let v = (0, g.aq)({
-    isBoostManagementDisabledForFractionalPremium: C
+  let v = (0, p.aq)({
+    isBoostManagementDisabledForFractionalPremium: j
   });
   return (0, i.jsxs)("div", {
     className: b.wrapper,
-    children: [(0, i.jsx)(p.Z, {
+    children: [(0, i.jsx)(g.Z, {
       className: b.boostIcon,
       width: 16,
       height: 16

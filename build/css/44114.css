@@ -1,6 +1,6 @@
 /**
   Module ID: 44114
-  Original File Name: 266b82b767d8b554
+  Original File Name: 9400001f86a8aaf0
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -6210,6 +6210,15 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     width: 100%
 }
 
+.bentoBoxesGrid_abac7b {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 16px 0;
+    max-width: 1034px;
+    row-gap: 20px
+}
+
 .referralProgramBackground_abac7b {
     background: linear-gradient(180deg,#000,#19033d)
 }
@@ -6269,21 +6278,19 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     opacity: .4;
     pointer-events: none;
     position: absolute;
+    top: calc(100% - 509px);
     width: 100vw
 }
 
-.bentoBoxContainer_abac7b {
+.largeBoxContainer_abac7b {
     border-radius: 16px;
     display: flex;
     flex-direction: column;
     height: auto;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    min-height: 274px;
-    width: calc(100% - 32px)
+    min-height: 274px
 }
 
-.bentoArtContainer_abac7b {
+.largeBoxArtContainer_abac7b {
     align-content: right;
     max-width: 794px;
     min-width: 410px;
@@ -6292,14 +6299,14 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     width: 100%
 }
 
-.compactBoxVideo_abac7b,.perkBoxVideo_abac7b {
+.largeBoxVideo_abac7b,.mediumBoxVideo_abac7b,.smallBoxVideo_abac7b {
     border-radius: 16px 16px 0 0;
     height: 100%;
     object-fit: contain;
     width: 100%
 }
 
-.bentoTextBoxOuter_abac7b {
+.largeTextBox_abac7b {
     border-radius: 16px;
     display: flex;
     flex-direction: column;
@@ -6309,13 +6316,13 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     width: 100%
 }
 
-.bentoBoxHeader_abac7b {
+.largeBoxHeader_abac7b {
     -webkit-hyphens: auto;
     hyphens: auto;
     word-break: break-word
 }
 
-.bentoBoxDescription_abac7b,.bentoBoxHeader_abac7b {
+.bentoBoxDescription_abac7b,.largeBoxHeader_abac7b {
     margin-bottom: 16px;
     max-width: 95%
 }
@@ -6326,7 +6333,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     width: fit-content
 }
 
-.boxesSubHeader_abac7b {
+.bentoBoxButtonPadding_abac7b,.boxesSubHeader_abac7b {
     margin-bottom: 10px
 }
 
@@ -6336,7 +6343,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     text-transform: uppercase
 }
 
-.compactBoxArtContainer_abac7b {
+.mediumBoxArtContainer_abac7b,.smallBoxArtContainer_abac7b {
     max-width: 520px;
     order: 1;
     padding: 40px 0 10px;
@@ -6344,22 +6351,22 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     width: 100%
 }
 
-.compactBoxContainer_abac7b {
+.mediumBoxContainer_abac7b,.smallBoxContainer_abac7b {
     border-radius: 16px;
     display: flex;
     flex-direction: column;
-    max-height: 523px;
-    width: 50%
+    max-height: 523px
 }
 
-.compactBoxOuterContainer_abac7b {
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-    width: calc(100% - 32px)
+.mediumBoxContainer_abac7b {
+    width: calc(50% - 8px)
 }
 
-.compactTextBox_abac7b {
+.smallBoxContainer_abac7b {
+    width: calc(33.33333% - 10.66667px)
+}
+
+.mediumTextBox_abac7b,.smallTextBox_abac7b {
     border-radius: 16px;
     display: flex;
     flex-direction: column;
@@ -6369,7 +6376,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding: 20px 20px 10px
 }
 
-.compactBoxHeader_abac7b {
+.mediumBoxHeader_abac7b,.smallBoxHeader_abac7b {
     -webkit-hyphens: auto;
     hyphens: auto;
     margin-bottom: 16px;
@@ -6377,50 +6384,58 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 @media (min-width:972px) {
-    .bentoArtContainer_abac7b {
+    .largeBoxArtContainer_abac7b {
         order: 0
     }
 
-    .perkBoxVideo_abac7b {
+    .largeBoxVideo_abac7b {
         border-radius: 0 16px 16px 0
     }
 
-    .leftSideArt_abac7b {
+    .largeBoxVideoLeft_abac7b {
         border-radius: 16px 0 0 16px
     }
 
-    .bentoTextBoxOuter_abac7b {
+    .largeTextBox_abac7b {
         max-width: 200px;
         order: 0
     }
 
-    .bentoBoxContainer_abac7b {
+    .largeBoxContainer_abac7b {
         flex-direction: row;
         gap: 20px;
         max-height: 400px;
-        max-width: 1066px
+        width: 100%
     }
 }
 
 @media (min-width:972px) and (max-width:1150px) {
-    .bentoBoxHeader_abac7b {
+    .largeBoxHeader_abac7b {
         max-width: 169px
     }
 }
 
 @media (min-width:1150px) {
-    .bentoBoxHeader_abac7b,.compactBoxHeader_abac7b {
+    .largeBoxHeader_abac7b,.mediumBoxHeader_abac7b {
         font-size: 32px;
         font-weight: 900;
         line-height: 32px;
         text-align: left
     }
 
-    .bentoBoxHeader_abac7b.fontScaling_abac7b,.compactBoxHeader_abac7b.fontScaling_abac7b {
+    .largeBoxHeader_abac7b.fontScaling_abac7b,.mediumBoxHeader_abac7b.fontScaling_abac7b {
         font-size: 1.25rem
     }
 
-    .bentoBoxHeader_abac7b,.bentoTextBoxOuter_abac7b {
+    .smallBoxHeader_abac7b {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 30px;
+        text-align: left
+    }
+
+    .largeBoxHeader_abac7b,.largeTextBox_abac7b {
         max-width: 300px
     }
 }
@@ -8603,7 +8618,7 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 
 .whatsNewSectionBackgroundV2_c880e8 {
     background-image: none;
-    gap: 36px;
+    gap: 46px;
     padding-bottom: 40px;
     padding-top: 28px
 }
@@ -18441,4 +18456,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=266b82b767d8b554.css.map*/
+/*# sourceMappingURL=9400001f86a8aaf0.css.map*/

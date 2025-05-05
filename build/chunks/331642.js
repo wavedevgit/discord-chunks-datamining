@@ -12,8 +12,8 @@ var i = n(200651),
   d = n(74538),
   u = n(242291),
   m = n(830253),
-  p = n(792165),
-  g = n(603074),
+  g = n(792165),
+  p = n(603074),
   h = n(294206),
   f = n(388032),
   b = n(517058);
@@ -35,14 +35,14 @@ function _(e) {
         closePopout: t
       } = e;
       return (0, i.jsx)(a.VqE, {
-        children: (0, i.jsx)(g.Z, {
+        children: (0, i.jsx)(p.Z, {
           suppressPlaySound: !0,
           shouldShowUpsell: !1,
           guildId: null,
           channel: null,
           onClose: t,
           onSelect: m,
-          gridNotice: u ? null : (0, i.jsx)(p.o, {}),
+          gridNotice: u ? null : (0, i.jsx)(g.o, {}),
           analyticsSource: "call sounds edit setting"
         })
       })

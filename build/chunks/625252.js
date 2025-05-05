@@ -12,8 +12,8 @@ var i = n(200651),
   d = n(617136),
   u = n(497505),
   m = n(341907),
-  p = n(981631),
-  g = n(388032),
+  g = n(981631),
+  p = n(388032),
   h = n(31903),
   f = n(66094);
 
@@ -25,7 +25,7 @@ function b() {
     n = r.useCallback(() => {
       (0, a.xf)(), (0, m.navigateToQuestHome)({
         fromContent: u.jn.QUEST_HOME_MOVE_CALLOUT
-      }), c.default.track(p.rMx.QUEST_CONTENT_CLICKED, function(e) {
+      }), c.default.track(g.rMx.QUEST_CONTENT_CLICKED, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             i = Object.keys(n);
@@ -60,12 +60,12 @@ function b() {
         }), (0, i.jsx)(l.X6q, {
           variant: "heading-lg/bold",
           color: "always-white",
-          children: g.intl.string(g.t.z8YP2N)
+          children: p.intl.string(p.t.z8YP2N)
         })]
       }), (0, i.jsx)(l.Text, {
         variant: "text-md/medium",
         color: "text-secondary",
-        children: g.intl.string(g.t.IqmRZ2)
+        children: p.intl.string(p.t.IqmRZ2)
       }), (0, i.jsx)(l.zxk, {
         size: "large",
         color: e ? l.Ttl.BRAND : l.Ttl.WHITE,
@@ -75,7 +75,7 @@ function b() {
         children: (0, i.jsx)(l.Text, {
           variant: "text-md/medium",
           color: e ? "always-white" : "text-normal",
-          children: g.intl.string(g.t.GURBQk)
+          children: p.intl.string(p.t.GURBQk)
         })
       })]
     })

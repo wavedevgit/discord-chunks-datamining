@@ -12,16 +12,16 @@ var i = n(200651),
   d = n(63063),
   u = n(709054),
   m = n(88658),
-  p = n(750832),
-  g = n(976978),
+  g = n(750832),
+  p = n(976978),
   h = n(695346),
   f = n(639814),
   b = n(838436),
   _ = n(51331),
   x = n(922628),
   E = n(703115),
-  j = n(526761),
-  C = n(726985),
+  C = n(526761),
+  j = n(726985),
   O = n(736530),
   S = n(981631),
   v = n(388032);
@@ -30,7 +30,7 @@ function T(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, T = (0, f.c_)(), I = (0, g.q)(), N = h.h2.useSetting().includes(n), y = h.mX.useSetting(), A = h.zA.useSetting().includes(n), P = r.useCallback(e => {
+  } = e, T = (0, f.c_)(), I = (0, p.q)(), N = h.h2.useSetting().includes(n), y = h.mX.useSetting(), A = h.zA.useSetting().includes(n), P = r.useCallback(e => {
     let i = (0, m.gl)();
     e ? i.delete(n) : i.add(n), h.zA.updateSetting(Array.from(i)), c.default.track(S.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: E.Y.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
@@ -48,7 +48,7 @@ function T(e) {
 
   function D(e, t) {
     var n;
-    if ((0, p.SI)()) return void l.Z.showAgeVerificationGetStartedModal(a.cU.MESSAGE_REQUESTS_SETTINGS);
+    if ((0, g.SI)()) return void l.Z.showAgeVerificationGetStartedModal(a.cU.MESSAGE_REQUESTS_SETTINGS);
     t ? P(e) : (n = !e, (0, x.V)({
       header: v.intl.string(v.t.yAfu1t),
       body: v.intl.string(v.t["Ry2z7+"]),
@@ -64,8 +64,8 @@ function T(e) {
     }))
   }
   return (0, i.jsx)(b.U, {
-    setting: C.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_MESSAGE_REQUESTS_V2,
-    scrollPosition: j.FY.MESSAGE_REQUESTS_V2,
+    setting: j.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_MESSAGE_REQUESTS_V2,
+    scrollPosition: C.FY.MESSAGE_REQUESTS_V2,
     children: n === O.T ? (0, i.jsx)(_.Z, {
       title: v.intl.string(v.t["3o2ojo"]),
       value: !I && !y,
@@ -90,7 +90,7 @@ function T(e) {
 
 function I(e) {
   let {
-    ingress: t = j.f4.USER_SETTINGS_PRIVACY_SAFETY,
+    ingress: t = C.f4.USER_SETTINGS_PRIVACY_SAFETY,
     guildId: n
   } = e, r = (0, f.is)();
   return (0, i.jsx)(T, {

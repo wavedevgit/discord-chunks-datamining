@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 }), n(953529), n(388685);
 var i = n(200651),
   r = n(192379),
@@ -12,12 +12,12 @@ var i = n(200651),
   d = n(131085),
   u = n(526761),
   m = n(388032),
-  p = n(729495);
-let g = r.memo(function(e) {
+  g = n(729495);
+let p = r.memo(function(e) {
   let {
     guildId: t,
     guildProfile: n,
-    title: g,
+    title: p,
     description: h,
     onClose: f
   } = e, b = (0, l.Z)({
@@ -27,19 +27,19 @@ let g = r.memo(function(e) {
     x(!0), await (0, a.c)(t, !0), x(!1), null == f || f()
   }
   return (0, i.jsxs)("div", {
-    className: p.container,
+    className: g.container,
     children: [(0, i.jsx)(s.olH, {
-      className: p.closeButton,
+      className: g.closeButton,
       onClick: f
     }), (0, i.jsx)("div", {
-      className: p.tagContainer,
+      className: g.tagContainer,
       children: (0, i.jsxs)("div", {
-        className: p.tag,
+        className: g.tag,
         children: [null != n.badge && (0, i.jsx)(c.eI, {
           src: (0, o.Ic)(t, n.badge, d.Gg.SIZE_36),
           tag: n.tag,
           size: d.Gg.SIZE_36,
-          className: p.badge
+          className: g.badge
         }), (0, i.jsx)(s.Text, {
           tag: "span",
           variant: "heading-xxl/semibold",
@@ -48,20 +48,20 @@ let g = r.memo(function(e) {
       })
     }), (0, i.jsx)(s.X6q, {
       variant: "heading-md/semibold",
-      className: p.title,
-      children: g
+      className: g.title,
+      children: p
     }), (0, i.jsx)(s.Text, {
       variant: "text-sm/medium",
-      className: p.description,
+      className: g.description,
       children: h
     }), (0, i.jsx)(s.zxk, {
-      className: p.adoptButton,
+      className: g.adoptButton,
       submitting: _,
       onClick: E,
       children: m.intl.string(m.t.jwEaiY)
     }), (0, i.jsx)(s.zxk, {
       color: s.zxk.Colors.PRIMARY,
-      className: p.editButton,
+      className: g.editButton,
       onClick: function() {
         null == f || f(), b()
       },

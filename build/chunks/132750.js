@@ -12,8 +12,8 @@ var i = n(200651),
   d = n(570928),
   u = n(100527),
   m = n(906732),
-  p = n(51144),
-  g = n(429467),
+  g = n(51144),
+  p = n(429467),
   h = n(981631),
   f = n(388032),
   b = n(493456);
@@ -57,8 +57,8 @@ function x(e) {
     applicationStream: f,
     voiceChannel: x,
     status: E,
-    userTag: j,
-    customStatusHoverOnlyRTCEntrypointEnabled: C
+    userTag: C,
+    customStatusHoverOnlyRTCEntrypointEnabled: j
   } = e, {
     analyticsLocations: O
   } = (0, m.ZP)(u.Z.RTC_PANEL), S = null == s ? void 0 : s.find(e => {
@@ -68,7 +68,7 @@ function x(e) {
     return t === h.IIU.CUSTOM_STATUS
   }), v = r.useCallback(() => {
     (0, a.ZDy)(async () => {
-      let e = (0, g.Z)(),
+      let e = (0, p.Z)(),
         {
           default: t
         } = await n.e("31649").then(n.bind(n, 475613));
@@ -108,14 +108,14 @@ function x(e) {
       }
     })
   }, [O]), T = r.useMemo(() => null != E && E !== a.Skl.UNKNOWN && null != l && l.isPomelo() ? (0, i.jsx)(c.Z, {
-    text: p.ZP.humanizeStatus(E)
-  }) : j, [E, l, j]), I = void 0 !== S, [N, y] = r.useState(!1), A = r.useMemo(() => (0, i.jsx)(_, {
+    text: g.ZP.humanizeStatus(E)
+  }) : C, [E, l, C]), I = void 0 !== S, [N, y] = r.useState(!1), A = r.useMemo(() => (0, i.jsx)(_, {
     openModal: v,
     hasCustomStatus: I,
     className: b.customStatusActionHoverText,
     onFocus: () => y(!0),
     onBlur: () => y(!1)
-  }), [v, I]), P = C ? (0, i.jsx)(d.Z, {
+  }), [v, I]), P = j ? (0, i.jsx)(d.Z, {
     hoverText: A,
     forceHover: t || N,
     children: T

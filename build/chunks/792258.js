@@ -13,8 +13,8 @@ var r = n(120356),
   d = n(914788),
   u = n(981631),
   m = n(332495),
-  p = n(388032),
-  g = n(45452);
+  g = n(388032),
+  p = n(45452);
 let h = [18, 18, 16, 16, 14, 12, 10],
   f = e => {
     let {
@@ -31,13 +31,13 @@ let h = [18, 18, 16, 16, 14, 12, 10],
       x = null != (E = h[(_ = (0, l.Zg)(f)).length - 1]) ? E : h[h.length - 1]
     }
     return (0, i.jsxs)("div", {
-      className: g.container,
+      className: p.container,
       children: [(0, i.jsxs)("div", {
         style: {
           fontSize: x
         },
         children: [null != _ ? (0, i.jsx)("div", {
-          className: s()(g.childWrapper, g.acronym),
+          className: s()(p.childWrapper, p.acronym),
           "aria-hidden": !0,
           children: _
         }) : null, null != b ? (0, i.jsx)(o.qEK, {
@@ -46,14 +46,14 @@ let h = [18, 18, 16, 16, 14, 12, 10],
           "aria-hidden": !0
         }) : null]
       }), (0, i.jsxs)("div", {
-        className: g.descriptors,
+        className: p.descriptors,
         children: [(0, i.jsxs)("div", {
-          className: g.header,
+          className: p.header,
           children: [r ? (0, i.jsx)(c.Z, {
             guild: n,
             tooltipPosition: "bottom",
             tooltipColor: o.ua7.Colors.PRIMARY,
-            className: g.guildBadge
+            className: p.guildBadge
           }) : null, (0, i.jsx)(o.Text, {
             variant: "text-md/semibold",
             children: n.toString()
@@ -61,7 +61,7 @@ let h = [18, 18, 16, 16, 14, 12, 10],
         }), void 0 !== n.approximateMemberCount ? (0, i.jsx)(o.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
-          children: p.intl.format(m.default["5JmNgo"], {
+          children: g.intl.format(m.default["5JmNgo"], {
             members: n.approximateMemberCount
           })
         }) : null]

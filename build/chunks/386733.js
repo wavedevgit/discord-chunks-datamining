@@ -12,16 +12,16 @@ var i = n(200651),
   d = n(906732),
   u = n(518950),
   m = n(598077),
-  p = n(626135),
-  g = n(63063),
+  g = n(626135),
+  p = n(63063),
   h = n(281494),
   f = n(276444),
   b = n(520540),
   _ = n(796634),
   x = n(197115),
   E = n(119269),
-  j = n(938736),
-  C = n(981631),
+  C = n(938736),
+  j = n(981631),
   O = n(388032),
   S = n(357885),
   v = n(691766);
@@ -149,7 +149,7 @@ let N = e => {
       e === h.Fe.REDEEMED && R.redeemed++, e === h.Fe.CONVERTED && (R.redeemed++, R.converted++)
     });
     let D = R.sent === _.Q,
-      Z = g.Z.getArticleURL(C.BhN.REFERRAL_PROGRAM),
+      Z = p.Z.getArticleURL(j.BhN.REFERRAL_PROGRAM),
       {
         analyticsLocations: w
       } = (0, d.ZP)(c.Z.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
@@ -169,14 +169,14 @@ let N = e => {
           children: [(0, i.jsx)(o.X6q, {
             variant: t ? "heading-xl/extrabold" : "heading-xxl/extrabold",
             className: S.expandedProgressBarHeader,
-            children: (0, j.$s)({
+            children: (0, C.$s)({
               hasSentAll: D
             })
           }), (0, i.jsx)(A, {
             userRecords: N
           }), (0, i.jsx)(o.Text, {
             variant: t ? "text-sm/normal" : "text-lg/medium",
-            children: (0, j.Hg)({
+            children: (0, C.Hg)({
               helpdeskArticle: Z,
               referralsStatuses: R
             })
@@ -196,7 +196,7 @@ let N = e => {
               className: S.expandedProgressBarSelectFriendsCTA,
               color: o.Ttl.CUSTOM,
               onClick: () => {
-                p.default.track(C.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+                g.default.track(j.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
                   location_stack: w
                 }), (0, o.ZDy)(async () => {
                   let {

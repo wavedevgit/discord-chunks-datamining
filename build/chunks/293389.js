@@ -12,16 +12,16 @@ var i = n(200651),
   d = n(224706),
   u = n(225433),
   m = n(570928),
-  p = n(594190),
-  g = n(320724),
+  g = n(594190),
+  p = n(320724),
   h = n(297700),
   f = n(77498),
   b = n(283595),
   _ = n(626135),
   x = n(251625),
   E = n(358085),
-  j = n(210887),
-  C = n(981631),
+  C = n(210887),
+  j = n(981631),
   O = n(388032),
   S = n(443474),
   v = n(20795),
@@ -60,15 +60,15 @@ function A(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let P = a.ZP.connectStores([j.Z], () => ({
-    theme: j.Z.theme
+let P = a.ZP.connectStores([C.Z], () => ({
+    theme: C.Z.theme
   }))(c.ubH),
   R = (0, E.isWindows)();
 
 function D(e) {
   let {
     onClose: t
-  } = e, n = (0, a.e7)([p.ZP], () => p.ZP.getCandidateGames()), [s, o] = r.useState(null), u = n.map(e => ({
+  } = e, n = (0, a.e7)([g.ZP], () => g.ZP.getCandidateGames()), [s, o] = r.useState(null), u = n.map(e => ({
     key: e.pid,
     value: e,
     label: null != e.name ? e.name : ""
@@ -115,8 +115,8 @@ function Z(e) {
   let {
     rawGame: n,
     nowPlaying: s = !1,
-    isOverride: g
-  } = e, x = (0, a.cj)([p.ZP, f.Z, b.Z], () => (0, p.FZ)(n, [p.ZP, f.Z, b.Z])), [E, j] = r.useState(!1), [v, N] = r.useState(null != (t = x.name) ? t : "???"), P = l()(T.flexCenter, {
+    isOverride: p
+  } = e, x = (0, a.cj)([g.ZP, f.Z, b.Z], () => (0, g.FZ)(n, [g.ZP, f.Z, b.Z])), [E, C] = r.useState(!1), [v, N] = r.useState(null != (t = x.name) ? t : "???"), P = l()(T.flexCenter, {
     [S.game]: !s,
     [S.activeGame]: s,
     [I.card]: !s,
@@ -130,18 +130,18 @@ function Z(e) {
   function Z() {
     if (E) return;
     let e = null != x.id ? f.Z.getDetectableGame(x.id) : null;
-    _.default.track(C.rMx.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
+    _.default.track(j.rMx.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
       application_id: null == e ? void 0 : e.id,
       game_name: x.name
     }), (0, c.showToast)((0, c.createToast)(O.intl.formatToPlainString(O.t["6klMOj"], {
       gameName: x.name
-    }), c.ToastType.SUCCESS)), j(!0)
+    }), c.ToastType.SUCCESS)), C(!0)
   }
   return (0, i.jsxs)("div", {
     className: P,
     children: [(0, i.jsxs)("div", {
       className: l()(S.gameNameLastPlayed, T.vertical),
-      children: [x.verified && !g ? (0, i.jsxs)("div", {
+      children: [x.verified && !p ? (0, i.jsxs)("div", {
         className: S.detectedApplication,
         children: [(0, i.jsx)("div", {
           className: S.gameName,
@@ -188,7 +188,7 @@ function Z(e) {
           })
         })
       }()]
-    }), g || E ? null : (0, i.jsx)("div", {
+    }), p || E ? null : (0, i.jsx)("div", {
       className: l()(T.flexCenter, T.noWrap, T.justifyBetween, S.toggleContainer),
       children: (0, i.jsx)(c.ua7, {
         text: O.intl.string(O.t["y0B+lp"]),
@@ -290,7 +290,7 @@ function Z(e) {
           }
         })]
       })
-    }(), !s || g ? (0, i.jsx)(u.Z, {
+    }(), !s || p ? (0, i.jsx)(u.Z, {
       className: S.removeGame,
       onClick: function() {
         d.Z.deleteEntry(x)
@@ -337,14 +337,14 @@ let L = (0, x.oH)(function() {
     let {
       className: t,
       showHeader: n = !0
-    } = e, s = (0, a.Wu)([p.ZP], () => p.ZP.getGamesSeen(!0)), {
+    } = e, s = (0, a.Wu)([g.ZP], () => g.ZP.getGamesSeen(!0)), {
       runningGame: o,
       overrideExePaths: d
-    } = (0, a.cj)([p.ZP], () => ({
-      runningGame: p.ZP.getVisibleGame(),
-      overrideExePaths: L(...p.ZP.getOverrides())
+    } = (0, a.cj)([g.ZP], () => ({
+      runningGame: g.ZP.getVisibleGame(),
+      overrideExePaths: L(...g.ZP.getOverrides())
     }));
-    return r.useEffect(() => ((0, g.Ky)(), g.P7), []), (0, i.jsxs)(c.hjN, {
+    return r.useEffect(() => ((0, p.Ky)(), p.P7), []), (0, i.jsxs)(c.hjN, {
       tag: "h1",
       title: n ? O.intl.string(O.t.AVDyEh) : null,
       className: t,
@@ -352,7 +352,7 @@ let L = (0, x.oH)(function() {
         rawGame: o,
         isOverride: d.has(o.exePath),
         nowPlaying: !0
-      }, (0, p.rH)(o)) : (0, i.jsx)(w, {}), (0, i.jsxs)("div", {
+      }, (0, g.rH)(o)) : (0, i.jsx)(w, {}), (0, i.jsxs)("div", {
         className: l()(S.nowPlayingAdd, N.marginReset, N.marginTop8, N.marginBottom20),
         children: [(0, i.jsx)("span", {
           children: O.intl.string(O.t.xwhoqK)
@@ -391,7 +391,7 @@ let L = (0, x.oH)(function() {
         }), s.map(e => (0, i.jsx)(Z, {
           rawGame: e,
           isOverride: d.has(e.exePath)
-        }, (0, p.rH)(e)))]
+        }, (0, g.rH)(e)))]
       })]
     })
   }

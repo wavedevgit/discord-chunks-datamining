@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 });
 var i = n(200651),
   r = n(192379),
@@ -12,30 +12,30 @@ var i = n(200651),
   d = n(51331),
   u = n(726985),
   m = n(981631),
-  p = n(388032);
+  g = n(388032);
 
-function g() {
+function p() {
   let e = a.xq.useSetting(),
     t = r.useMemo(() => (0, l.bL)(e), [e]);
   return (0, i.jsxs)(o.Z, {
     children: [(0, i.jsx)(c.U, {
       setting: u.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS,
       children: (0, i.jsx)(d.Z, {
-        title: p.intl.string(p.t["7x9dyM"]),
+        title: g.intl.string(g.t["7x9dyM"]),
         value: t.all,
         onChange: e => a.xq.updateSetting(e ? m.HGf : m.HGf & ~m.SOq.NO_RELATION)
       })
     }), (0, i.jsx)(c.U, {
       setting: u.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS,
       children: (0, i.jsx)(d.Z, {
-        title: p.intl.string(p.t.NfeuZ2),
+        title: g.intl.string(g.t.NfeuZ2),
         value: t.all || t.mutualFriends,
         onChange: t => a.xq.updateSetting(t ? s.pj(e, m.SOq.MUTUAL_FRIENDS) : s.M1(e, m.SOq.MUTUAL_FRIENDS, m.SOq.NO_RELATION))
       })
     }), (0, i.jsx)(c.U, {
       setting: u.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS,
       children: (0, i.jsx)(d.Z, {
-        title: p.intl.string(p.t.qsMfsL),
+        title: g.intl.string(g.t.qsMfsL),
         value: t.all || t.mutualGuilds,
         onChange: t => a.xq.updateSetting(t ? s.pj(e, m.SOq.MUTUAL_GUILDS) : s.M1(e, m.SOq.MUTUAL_GUILDS, m.SOq.NO_RELATION))
       })

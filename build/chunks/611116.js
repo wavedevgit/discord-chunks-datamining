@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 });
 var i = n(200651),
   r = n(192379),
@@ -31,14 +31,14 @@ function m(e) {
   return e
 }
 
-function p(e) {
+function g(e) {
   let {
     className: t,
     boxes: n,
-    compactBoxes: r,
-    title: s,
-    shouldLoadVideo: o,
-    isReducedMotion: d
+    title: r,
+    shouldLoadVideo: s,
+    isReducedMotion: o,
+    includeSideGradient: d = !1
   } = e;
   return (0, i.jsxs)("div", {
     className: l()(u.boxBackdrop, t),
@@ -46,37 +46,32 @@ function p(e) {
       className: u.bentoHeader,
       variant: "display-md",
       color: "header-primary",
-      children: s
-    }), n.map((e, t) => (0, i.jsx)(c.Z, m({
-      shouldLoadVideo: o,
-      isReducedMotion: d,
-      index: t
-    }, e), e.name)), null != r && (0, i.jsxs)("div", {
-      className: u.compactBoxOuterContainer,
-      children: [r.map((e, t) => (0, i.jsx)(c.Z, m({
-        shouldLoadVideo: o,
-        isReducedMotion: d,
+      children: r
+    }), (0, i.jsx)("div", {
+      className: u.bentoBoxesGrid,
+      children: n.map((e, t) => (0, i.jsx)(c.Z, m({
+        shouldLoadVideo: s,
+        isReducedMotion: o,
         index: t
-      }, e), e.name)), (0, i.jsx)("div", {
-        className: u.bentoSideGradient
-      })]
+      }, e), e.name))
+    }), d && (0, i.jsx)("div", {
+      className: u.bentoSideGradient
     })]
   })
 }
-let g = r.memo(function(e) {
+let p = r.memo(function(e) {
   let {
     whatsNewBoxes: t,
-    bestOfBoxes: n,
-    compactBestOfBoxes: r
-  } = (0, o.Z)();
+    bestOfBoxes: n
+  } = (0, o.ZP)();
   return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(p, m({
+    children: [(0, i.jsx)(g, m({
       boxes: Object.values(t),
       title: d.intl.string(d.t.LRmNAg)
-    }, e)), (0, i.jsx)(p, m({
+    }, e)), (0, i.jsx)(g, m({
       boxes: Object.values(n),
-      compactBoxes: Object.values(r),
-      title: d.intl.string(d.t.EnzW2N)
+      title: d.intl.string(d.t.EnzW2N),
+      includeSideGradient: !0
     }, e))]
   })
 })

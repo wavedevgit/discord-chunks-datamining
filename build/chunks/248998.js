@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => p
+  Z: () => g
 }), n(953529);
 var i = n(200651);
 n(192379);
@@ -14,7 +14,7 @@ var r = n(120356),
   u = n(674680),
   m = n(927671);
 
-function p(e) {
+function g(e) {
   let {
     achievementId: t,
     dateUnlocked: n
@@ -22,8 +22,8 @@ function p(e) {
   if (null == r) return null;
   let l = null != n,
     {
-      name: p,
-      description: g,
+      name: g,
+      description: p,
       hideDescriptionUntilUnlock: h,
       onAction: f
     } = r,
@@ -31,12 +31,12 @@ function p(e) {
     _ = l ? "header-primary" : "text-muted",
     x = l ? "header-secondary" : "text-muted",
     E = a()(n),
-    j = null != f && l,
-    C = j ? o.P3F : "div";
-  return (0, i.jsxs)(C, {
-    className: s()(m.container, j && m.actionable),
+    C = null != f && l,
+    j = C ? o.P3F : "div";
+  return (0, i.jsxs)(j, {
+    className: s()(m.container, C && m.actionable),
     onClick: () => {
-      j && f()
+      C && f()
     },
     children: [(0, i.jsx)("div", {
       className: m.iconContainer,
@@ -55,11 +55,11 @@ function p(e) {
       }), (0, i.jsx)(o.Text, {
         variant: "text-md/medium",
         color: _,
-        children: p()
+        children: g()
       }), (0, i.jsx)(o.Text, {
         variant: "text-xs/normal",
         color: x,
-        children: b ? "?????" : g()
+        children: b ? "?????" : p()
       })]
     })]
   })

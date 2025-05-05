@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 });
 var i = n(200651),
   r = n(192379),
@@ -20,7 +20,7 @@ function m(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class p extends r.PureComponent {
+class g extends r.PureComponent {
   async componentDidMount() {
     this.setState({
       openOnStartup: await c.ZP.getSetting("OPEN_ON_STARTUP", !0),
@@ -87,4 +87,4 @@ class p extends r.PureComponent {
     }
   }
 }
-let g = p
+let p = g

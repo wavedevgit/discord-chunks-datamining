@@ -13,16 +13,16 @@ var r = n(512722),
   d = n(126631),
   u = n(433411),
   m = n(532432),
-  p = n(134795),
-  g = n(513901),
+  g = n(134795),
+  p = n(513901),
   h = n(451392),
   f = n(906364),
   b = n(643879),
   _ = n(621853),
   x = n(271383),
   E = n(594174),
-  j = n(74538),
-  C = n(51144),
+  C = n(74538),
+  j = n(51144),
   O = n(18438),
   S = n(778825),
   v = n(52597),
@@ -106,7 +106,7 @@ function R(e) {
   let z = (0, o.gS)(H.id),
     W = (0, l.e7)([x.ZP], () => null == H.id ? null : x.ZP.getMember(H.id, Z.id)),
     Y = (0, l.e7)([_.Z], () => _.Z.getGuildMemberProfile(Z.id, H.id)),
-    K = j.ZP.canUsePremiumProfileCustomization(Z),
+    K = C.ZP.canUsePremiumProfileCustomization(Z),
     q = (0, c.gd)(w, null == W ? void 0 : W.avatar),
     X = (0, c.f$)(L, null == Y ? void 0 : Y.banner),
     Q = (0, v.p)(U, null == Y ? void 0 : Y.themeColors),
@@ -119,7 +119,7 @@ function R(e) {
     className: y.sectionsContainer,
     children: [(0, i.jsx)(T.Z, {
       errors: null != (r = null == V ? void 0 : V.nick) ? r : null == z ? void 0 : z.nick,
-      username: C.ZP.getName(Z),
+      username: j.ZP.getName(Z),
       pendingNick: k,
       currentNick: null == W ? void 0 : W.nick,
       guild: H
@@ -165,7 +165,7 @@ function R(e) {
         }),
         user: Z,
         guild: H
-      }, "decoration"), (0, i.jsx)(g.Z, {
+      }, "decoration"), (0, i.jsx)(p.Z, {
         sectionTitle: (0, i.jsxs)(i.Fragment, {
           children: [N.intl.string(N.t.wR5wOj), (0, i.jsx)(a.ua7, {
             text: N.intl.string(N.t["5AFxuL"]),
@@ -179,7 +179,7 @@ function R(e) {
         }),
         user: Z,
         guild: H
-      }, "effect"), (0, i.jsx)(p.Z, {
+      }, "effect"), (0, i.jsx)(g.Z, {
         showRemoveBannerButton: X,
         errors: null == V ? void 0 : V.banner,
         onBannerChange: e => ee(e, null == Y ? void 0 : Y.banner, O.g_),
