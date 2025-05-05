@@ -1390,19 +1390,19 @@ let {
     ICON_PRIMARY: {
       "visual-refresh": {
         [r.DARK]: {
-          raw: "NEUTRAL_2",
+          raw: "NEUTRAL_1",
           opacity: 1
         },
         [r.LIGHT]: {
-          raw: "NEUTRAL_59",
+          raw: "NEUTRAL_71",
           opacity: 1
         },
         [r.MIDNIGHT]: {
-          raw: "NEUTRAL_15",
+          raw: "NEUTRAL_8",
           opacity: 1
         },
         [r.DARKER]: {
-          raw: "NEUTRAL_10",
+          raw: "NEUTRAL_2",
           opacity: 1
         }
       }
