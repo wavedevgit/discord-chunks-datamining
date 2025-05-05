@@ -65,7 +65,7 @@ class p extends r.EventEmitter {
   cancelItem(e) {
     throw Error("cancelItem() is not implemented on UploaderBase; must implement cancelItem() on subclass")
   }
-  upload(e, t, n) {
+  upload(e, t) {
     if (null != this._cancel) throw Error("Uploader.upload(...): An upload is already in progress.");
     this._lastUpdate = Date.now(), this._loaded = 0, this._file = {
       id: this.id,
@@ -78,9 +78,7 @@ class p extends r.EventEmitter {
       hasImage: !1,
       hasVideo: !1,
       attachmentsCount: 0,
-      draftContent: null == t ? void 0 : t.content,
-      channelId: null == t ? void 0 : t.channel_id,
-      items: n
+      items: t
     }
   }
   constructor(e, t = "POST", n) {

@@ -70,8 +70,8 @@ function b(e) {
 
 function y(e) {
   let {
-    file: t
-  } = e, n = l.Z.getChannel(t.channelId);
+    channelId: t
+  } = e, n = l.Z.getChannel(t);
   return null != n && h(n, 0, 0)
 }
 

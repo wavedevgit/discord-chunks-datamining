@@ -56,7 +56,7 @@ class p extends a.Z {
     } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
     super.upload({
       name: c.intl.string(c.t.jfKTen)
-    }, t, e);
+    }, e);
     let r = new AbortController;
     try {
       if (this.files = e, this._aborted || (this._handleStart(() => r.abort()), !await this.compressAndCheckFileSize())) return;

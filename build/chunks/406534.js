@@ -101,7 +101,7 @@ let en = i.memo(function(e) {
           progress: null != t.progress ? t.progress : 0,
           size: t.currentSize,
           onCancelUpload: () => {
-            s.Z.cancel(t)
+            s.Z.cancel(n.id, t)
           }
         })
       }
