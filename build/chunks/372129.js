@@ -1,13 +1,13 @@
 /** Chunk was on 78331 **/
 r.d(t, {
-  Z: () => f,
-  _: () => b
+  Z: () => m,
+  _: () => h
 }), r(415506), r(539854), r(388685);
 var n = r(200651),
-  l = r(192379),
-  i = r(481060),
-  o = r(53281),
-  a = r(813197),
+  i = r(192379),
+  l = r(481060),
+  a = r(53281),
+  o = r(813197),
   s = r(426642),
   c = r(869783);
 
@@ -49,30 +49,30 @@ async function d(e) {
     throw s.d.WRONG_TYPE
   }
 }
-async function b(e, t) {
+async function h(e, t) {
   let r = [];
   for (let n = 0; n < e.length; n++) {
-    let l = e[n];
+    let i = e[n];
     try {
       let {
         image: e,
         dataURI: n
-      } = await d(l), i = l.type === c.m.MP4 ? await t(n, l) : await t(n, l, e);
-      null != i && r.push({
-        type: i,
-        filename: l.name
+      } = await d(i), l = i.type === c.m.MP4 ? await t(n, i) : await t(n, i, e);
+      null != l && r.push({
+        type: l,
+        filename: i.name
       })
     } catch (e) {
       r.push({
         type: e,
-        filename: l.name
+        filename: i.name
       })
     }
   }
-  r.length > 0 && m(r)
+  r.length > 0 && g(r)
 }
-let m = e => {
-    (0, i.ZDy)(async () => {
+let g = e => {
+    (0, l.ZDy)(async () => {
       let {
         default: t
       } = await r.e("68720").then(r.bind(r, 70846));
@@ -81,46 +81,46 @@ let m = e => {
       }, r))
     })
   },
-  f = e => {
+  m = e => {
     let {
       onChange: t,
       multiple: s = !0,
       disabled: c,
       className: d,
-      tabIndex: m = -1,
-      "aria-label": f,
-      filters: g,
-      setLoading: p
-    } = e, j = l.createRef(), h = l.useRef(null), [_, O] = l.useState(!1);
-    l.useEffect(() => {
-      _ && I()
-    }, [_]);
-    let I = () => {
-        null !== h.current && ((0, i.Mr3)(h.current), h.current = null)
+      tabIndex: g = -1,
+      "aria-label": m,
+      filters: f,
+      setLoading: b
+    } = e, p = i.createRef(), O = i.useRef(null), [y, j] = i.useState(!1);
+    i.useEffect(() => {
+      y && w()
+    }, [y]);
+    let w = () => {
+        null !== O.current && ((0, l.Mr3)(O.current), O.current = null)
       },
       x = async e => {
-        null == p || p(!0), await b(e, t), O(!0), null == p || p(!1)
-      }, v = async e => {
-        var t, l, o;
-        if (e.stopPropagation(), e.preventDefault(), (null == (t = e.currentTarget) ? void 0 : t.files) == null || (null == (o = e.currentTarget) || null == (l = o.files) ? void 0 : l.length) === 0) return;
-        let a = e.currentTarget.files;
-        h.current = await (0, i.ZDy)(async () => {
+        null == b || b(!0), await h(e, t), j(!0), null == b || b(!1)
+      }, _ = async e => {
+        var t, i, a;
+        if (e.stopPropagation(), e.preventDefault(), (null == (t = e.currentTarget) ? void 0 : t.files) == null || (null == (a = e.currentTarget) || null == (i = a.files) ? void 0 : i.length) === 0) return;
+        let o = e.currentTarget.files;
+        O.current = await (0, l.ZDy)(async () => {
           let {
             default: e
           } = await r.e("16169").then(r.bind(r, 935333));
           return t => (0, n.jsx)(e, u({
-            processFiles: () => x(a)
+            processFiles: () => x(o)
           }, t))
         })
       };
-    return (0, n.jsx)(o.Z, {
-      onChange: v,
-      filters: null != g ? g : (0, a.Zj)(),
+    return (0, n.jsx)(a.Z, {
+      onChange: _,
+      filters: null != f ? f : (0, o.Zj)(),
       multiple: s,
       disabled: c,
       className: d,
-      tabIndex: m,
-      "aria-label": f,
-      ref: j
+      tabIndex: g,
+      "aria-label": m,
+      ref: p
     })
   }
