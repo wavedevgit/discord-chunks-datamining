@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(339085),
   i = n(131704),
-  a = n(176354),
-  o = n(700785),
+  o = n(176354),
+  a = n(700785),
   s = n(981631);
 
 function l(e) {
@@ -19,8 +19,8 @@ function l(e) {
   let c = t.emoji;
   if (null == c.id || null == l || !(0, i.zi)(l.type)) return !0;
   let u = r.ZP.getUsableCustomEmojiById(c.id),
-    d = a.ZP.isInternalEmojiForGuildId(u, l.getGuildId()),
-    f = o.BT({
+    d = o.ZP.isInternalEmojiForGuildId(u, l.getGuildId()),
+    f = a.BT({
       permission: s.Plq.USE_EXTERNAL_EMOJIS,
       user: n,
       context: l

@@ -5,9 +5,9 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(834427);
+  o = n(834427);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,7 +23,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -36,12 +36,12 @@ class l extends i.Component {
     this._ref = e
   }
   render() {
-    return (0, r.jsx)(a.S, s({
+    return (0, r.jsx)(o.S, s({
       ref: this.setRef
     }, this.props))
   }
   constructor(e) {
-    super(e), o(this, "_ref", i.createRef()), this.setRef = this.setRef.bind(this)
+    super(e), a(this, "_ref", i.createRef()), this.setRef = this.setRef.bind(this)
   }
 }
 let c = l

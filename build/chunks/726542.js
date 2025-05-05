@@ -5,13 +5,13 @@ n.d(t, {
 }), n(804061), n(704826), n(35282), n(642613);
 var r = n(392711),
   i = n.n(r),
-  a = n(900089),
-  o = n(591759),
+  o = n(900089),
+  a = n(591759),
   s = n(981631);
 let l = [{
     type: s.ABu.TWITCH,
     name: "Twitch",
-    color: (0, a.Fw)("TWITCH"),
+    color: (0, o.Fw)("TWITCH"),
     icon: {
       lightPNG: n(635643),
       darkPNG: n(635643),
@@ -31,7 +31,7 @@ let l = [{
   }, {
     type: s.ABu.YOUTUBE,
     name: "YouTube",
-    color: (0, a.Fw)("YOUTUBE"),
+    color: (0, o.Fw)("YOUTUBE"),
     icon: {
       lightPNG: n(459862),
       darkPNG: n(459862),
@@ -51,7 +51,7 @@ let l = [{
   }, {
     type: s.ABu.BATTLENET,
     name: "Battle.net",
-    color: (0, a.Fw)("BATTLENET"),
+    color: (0, o.Fw)("BATTLENET"),
     icon: {
       lightPNG: n(414680),
       darkPNG: n(414680),
@@ -84,7 +84,7 @@ let l = [{
   }, {
     type: s.ABu.BUNGIE,
     name: "Bungie.net",
-    color: (0, a.Fw)("BUNGIE"),
+    color: (0, o.Fw)("BUNGIE"),
     icon: {
       lightPNG: n(953522),
       darkPNG: n(706264),
@@ -97,7 +97,7 @@ let l = [{
   }, {
     type: s.ABu.SKYPE,
     name: "Skype",
-    color: (0, a.Fw)("SKYPE"),
+    color: (0, o.Fw)("SKYPE"),
     icon: {
       lightPNG: n(575439),
       darkPNG: n(575439),
@@ -116,7 +116,7 @@ let l = [{
   }, {
     type: s.ABu.LEAGUE_OF_LEGENDS,
     name: "League of Legends",
-    color: (0, a.Fw)("LOL"),
+    color: (0, o.Fw)("LOL"),
     icon: {
       lightPNG: n(275556),
       darkPNG: n(275556),
@@ -129,7 +129,7 @@ let l = [{
   }, {
     type: s.ABu.STEAM,
     name: "Steam",
-    color: (0, a.Fw)("STEAM"),
+    color: (0, o.Fw)("STEAM"),
     icon: {
       lightPNG: n(929234),
       darkPNG: n(170131),
@@ -149,7 +149,7 @@ let l = [{
   }, {
     type: s.ABu.REDDIT,
     name: "Reddit",
-    color: (0, a.Fw)("REDDIT"),
+    color: (0, o.Fw)("REDDIT"),
     icon: {
       lightPNG: n(211434),
       darkPNG: n(211434),
@@ -170,7 +170,7 @@ let l = [{
   }, {
     type: s.ABu.FACEBOOK,
     name: "Facebook",
-    color: (0, a.Fw)("FACEBOOK"),
+    color: (0, o.Fw)("FACEBOOK"),
     icon: {
       lightPNG: n(762019),
       darkPNG: n(762019),
@@ -184,7 +184,7 @@ let l = [{
   }, {
     type: s.ABu.TWITTER_LEGACY,
     name: "Twitter",
-    color: (0, a.Fw)("TWITTER"),
+    color: (0, o.Fw)("TWITTER"),
     icon: {
       lightPNG: n(954549),
       darkPNG: n(954549),
@@ -205,7 +205,7 @@ let l = [{
   }, {
     type: s.ABu.TWITTER,
     name: "X",
-    color: (0, a.Fw)("TWITTER"),
+    color: (0, o.Fw)("TWITTER"),
     icon: {
       lightPNG: n(327555),
       darkPNG: n(126776),
@@ -226,7 +226,7 @@ let l = [{
   }, {
     type: s.ABu.SPOTIFY,
     name: "Spotify",
-    color: (0, a.Fw)("SPOTIFY"),
+    color: (0, o.Fw)("SPOTIFY"),
     icon: {
       lightPNG: n(182553),
       darkPNG: n(182553),
@@ -245,7 +245,7 @@ let l = [{
   }, {
     type: s.ABu.XBOX,
     name: "Xbox",
-    color: (0, a.Fw)("XBOX"),
+    color: (0, o.Fw)("XBOX"),
     icon: {
       lightPNG: n(979660),
       darkPNG: n(157981),
@@ -259,7 +259,7 @@ let l = [{
   }, {
     type: s.ABu.SAMSUNG,
     name: "Samsung Galaxy",
-    color: (0, a.Fw)("SAMSUNG"),
+    color: (0, o.Fw)("SAMSUNG"),
     icon: {
       lightPNG: n(664982),
       darkPNG: n(664982),
@@ -272,7 +272,7 @@ let l = [{
   }, {
     type: s.ABu.GITHUB,
     name: "GitHub",
-    color: (0, a.Fw)("GITHUB"),
+    color: (0, o.Fw)("GITHUB"),
     icon: {
       lightPNG: n(843605),
       darkPNG: n(789822),
@@ -292,7 +292,7 @@ let l = [{
   }, {
     type: s.ABu.PLAYSTATION,
     name: "PlayStation Network",
-    color: (0, a.Fw)("PLAYSTATION"),
+    color: (0, o.Fw)("PLAYSTATION"),
     icon: {
       lightPNG: n(385751),
       darkPNG: n(399592),
@@ -305,7 +305,7 @@ let l = [{
   }, {
     type: s.ABu.PLAYSTATION_STAGING,
     name: "PlayStation Network (Staging)",
-    color: (0, a.Fw)("PLAYSTATION"),
+    color: (0, o.Fw)("PLAYSTATION"),
     icon: {
       lightPNG: n(399592),
       darkPNG: n(385751),
@@ -451,7 +451,7 @@ let l = [{
   }, {
     type: s.ABu.CRUNCHYROLL,
     name: "Crunchyroll",
-    color: (0, a.Fw)("CRUNCHYROLL"),
+    color: (0, o.Fw)("CRUNCHYROLL"),
     icon: {
       lightPNG: n(469024),
       darkPNG: n(469024),
@@ -506,7 +506,7 @@ let d = {
     return null != (t = c[e]) ? t : null
   },
   getByUrl(e) {
-    let t = o.Z.toURLSafe(e);
+    let t = a.Z.toURLSafe(e);
     if (null == t) return;
     let n = t.hostname;
     return u[n.startsWith("www.") ? n.slice(4) : n]

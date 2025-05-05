@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(481060),
   l = n(22267),
   c = n(442933),
@@ -34,7 +34,7 @@ function N(e) {
     user: t,
     guild: n,
     canUsePremiumCustomization: i,
-    onUpsellClick: o,
+    onUpsellClick: a,
     pendingBanner: l,
     pendingAccentColor: m,
     pendingBio: g,
@@ -86,7 +86,7 @@ function N(e) {
       displayProfile: W,
       themeType: S.lY.POPOUT,
       pendingThemeColors: D,
-      className: a()(A.container, k),
+      className: o()(A.container, k),
       forceShowPremium: i,
       children: [(0, r.jsxs)("header", {
         className: A.header,
@@ -99,7 +99,7 @@ function N(e) {
           pendingAccentColor: m,
           isTryItOutFlow: j,
           disabledInputs: U,
-          onUpsellClick: () => null == o ? void 0 : o({
+          onUpsellClick: () => null == a ? void 0 : a({
             object: I.qAy.EDIT_PROFILE_BANNER
           })
         }), (0, r.jsx)(b.Z, {
@@ -114,7 +114,7 @@ function N(e) {
           className: M,
           disabledInputs: U,
           isTryItOutFlow: j,
-          onUpsellClick: () => null == o ? void 0 : o({
+          onUpsellClick: () => null == a ? void 0 : a({
             object: I.qAy.AVATAR
           })
         }), !G && (0, r.jsx)(h.Z, {
@@ -149,8 +149,8 @@ function N(e) {
 }
 
 function C() {
-  let e = (0, o.e7)([g.default], () => g.default.getCurrentUser()),
-    t = (0, o.e7)([m.Z], () => m.Z.getPendingNameplate());
+  let e = (0, a.e7)([g.default], () => g.default.getCurrentUser()),
+    t = (0, a.e7)([m.Z], () => m.Z.getPendingNameplate());
   return null == e ? null : (0, r.jsxs)("div", {
     className: A.nameplatePreviewSection,
     children: [(0, r.jsx)(s.Text, {

@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  FL: () => a,
+  FL: () => o,
   a8: () => i,
-  rS: () => o
+  rS: () => a
 });
 var r = n(570140);
 
@@ -16,7 +16,7 @@ function i(e, t, n) {
   })
 }
 
-function a(e, t, n) {
+function o(e, t, n) {
   r.Z.dispatch({
     type: "ANALYTICS_FEED_ITEM_UNSEEN",
     id: e,
@@ -25,7 +25,7 @@ function a(e, t, n) {
   })
 }
 
-function o(e, t) {
+function a(e, t) {
   r.Z.dispatch({
     type: "ANALYTICS_FEED_FLUSH",
     id: e,

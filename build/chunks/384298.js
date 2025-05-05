@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(442837),
-  a = n(481060),
-  o = n(287734),
+  o = n(481060),
+  a = n(287734),
   s = n(359110),
   l = n(922482),
   c = n(496675),
@@ -32,11 +32,11 @@ function m(e) {
     O = e => {
       e.stopPropagation(), null == n || n({
         action: "PRESS_JOIN_CALL_BUTTON"
-      }), t.isGuildStageVoice() ? (0, l.Cq)(t) : (o.default.selectVoiceChannel(t.id), (0, s.Kh)(t.id)), null == m || m()
+      }), t.isGuildStageVoice() ? (0, l.Cq)(t) : (a.default.selectVoiceChannel(t.id), (0, s.Kh)(t.id)), null == m || m()
     };
   return g === _.lY.MODAL_V2 ? (0, r.jsx)(f.tG, {
     text: E ? b() : y(),
-    size: a.PhG.TINY,
+    size: o.PhG.TINY,
     themeColor: "secondary",
     onClick: O
   }) : (0, r.jsx)(f.tG, {

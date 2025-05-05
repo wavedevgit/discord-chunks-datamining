@@ -6,8 +6,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(272573),
   l = n(481060),
   c = n(58178);
@@ -100,8 +100,8 @@ let I = i.memo(function(e) {
     let {
       dotRadius: t,
       dotPosition: n,
-      fill: a = "currentColor",
-      spacing: o = 2.5
+      fill: o = "currentColor",
+      spacing: a = 2.5
     } = e, c = i.useRef(h()), u = i.useRef(!0);
     i.useEffect(() => () => void(u.current = !1), []);
     let [f] = (0, l.q_F)(() => _(d({}, O), {
@@ -119,12 +119,12 @@ let I = i.memo(function(e) {
     return (0, r.jsx)(r.Fragment, {
       children: [0, 1, 2].map(e => {
         let i = m * e,
-          l = t + t * o * e;
+          l = t + t * a * e;
         return (0, r.jsx)(s.animated.circle, {
           cx: n ? n.to([0, 1], [y, l]) : l,
           cy: t,
           r: f.dotCycle.to(e => v(e - i)).to([0, .4, .8, 1], [.8 * t, .8 * t, t, t]).to(e => c.current ? e : t),
-          fill: a,
+          fill: o,
           style: {
             opacity: f.dotCycle.to(e => v(e - i)).to([0, .4, .8, 1], [.3, .3, 1, 1]).to(e => c.current ? e : 1)
           }
@@ -136,7 +136,7 @@ let I = i.memo(function(e) {
     let {
       dotRadius: n,
       x: i,
-      y: a,
+      y: o,
       hide: u = !1,
       themed: f = !1,
       className: p
@@ -152,10 +152,10 @@ let I = i.memo(function(e) {
       return l ? null : (0, r.jsx)("svg", {
         ref: t,
         x: i,
-        y: a,
+        y: o,
         width: 2 * n * 3 + n / 2 * 2,
         height: 2 * n,
-        className: o()(p, c.dots, f ? c.themed : null),
+        className: a()(p, c.dots, f ? c.themed : null),
         children: (0, r.jsx)(s.animated.g, {
           style: {
             opacity: d.to(e => Math.min(1, Math.max(e, 0)))

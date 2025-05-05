@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   s = n(100527),
   l = n(906732),
   c = n(699516),
@@ -57,7 +57,7 @@ function S(e) {
     onHide: C,
     newAnalyticsLocations: R = [],
     disableAutoFocus: P = !1
-  } = e, w = (0, a.e7)([c.Z], () => c.Z.isBlocked(t.id)), {
+  } = e, w = (0, o.e7)([c.Z], () => c.Z.isBlocked(t.id)), {
     analyticsLocations: D
   } = (0, l.ZP)([...R, w ? s.Z.BLOCKED_PROFILE_POPOUT : s.Z.IGNORED_PROFILE_POPOUT]), L = (0, d.ZB)({
     layout: "POPOUT",
@@ -71,7 +71,7 @@ function S(e) {
     null == v || v(null == x ? void 0 : x.current)
   }, [x, v]);
   let k = w ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
-    j = P ? "div" : o.VqE;
+    j = P ? "div" : a.VqE;
   return (0, r.jsx)(l.Gt, {
     value: D,
     children: (0, r.jsx)(d.Mt, {
@@ -101,16 +101,16 @@ function S(e) {
                 children: [(0, r.jsx)(p.Z, {
                   user: t,
                   guildId: n
-                }), (0, r.jsx)(o.X6q, {
+                }), (0, r.jsx)(a.X6q, {
                   variant: "heading-lg/bold",
                   children: b.intl.string(b.t.b33pLC)
-                }), (0, r.jsx)(o.Text, {
+                }), (0, r.jsx)(a.Text, {
                   variant: "text-sm/medium",
                   children: b.intl.format(w ? b.t["8F+WNz"] : b.t["/cZp5u"], {
                     username: u.ZP.getName(n, S, t)
                   })
                 })]
-              }), (0, r.jsxs)(o.Kqy, {
+              }), (0, r.jsxs)(a.Kqy, {
                 align: "center",
                 children: [(0, r.jsx)(g.Z, {
                   isBlocked: w,

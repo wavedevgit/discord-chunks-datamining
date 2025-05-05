@@ -4,8 +4,8 @@ let r;
 n.d(t, {
   l: () => y
 });
-var i, a = n(200651),
-  o = n(192379),
+var i, o = n(200651),
+  a = n(192379),
   s = n(120356),
   l = n.n(s),
   c = n(58654),
@@ -55,8 +55,8 @@ function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -64,13 +64,13 @@ function m(e, t) {
 function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let E = "\n  visibility:hidden;\n  overflow:hidden;\n  position:absolute;\n  z-index:-1000;\n  top:0;\n  right:0;\n",
   b = ["letter-spacing", "line-height", "padding-top", "padding-bottom", "font-family", "font-weight", "font-size", "text-transform", "width", "padding-left", "padding-right", "border-width", "box-sizing"];
-class y extends(i = o.PureComponent) {
+class y extends(i = a.PureComponent) {
   componentDidMount() {
     var e, t;
     null == (e = (t = this.props).onResize) || e.call(t, void 0), Promise.resolve().then(() => this.calculateSize())
@@ -91,20 +91,20 @@ class y extends(i = o.PureComponent) {
     let {
       fontWidthEstimate: n,
       rows: i
-    } = this.props, a = null != (e = this.props.value) ? e : t.value;
-    if (null != n && -1 === a.indexOf("\n") && a.length * n < .8 * t.offsetWidth) return void this.setState({
+    } = this.props, o = null != (e = this.props.value) ? e : t.value;
+    if (null != n && -1 === o.indexOf("\n") && o.length * n < .8 * t.offsetWidth) return void this.setState({
       height: void 0
     });
     null == r && null != document.body && (r = document.createElement("textarea"), document.body.appendChild(r));
     let {
-      paddingSize: o,
+      paddingSize: a,
       borderSize: s,
       boxSizing: l,
       sizingStyle: c
     } = this.calculateNodeStyling(t);
-    r.setAttribute("style", c + ";" + E), r.value = a, null != i ? r.setAttribute("rows", "".concat(i)) : r.removeAttribute("rows");
+    r.setAttribute("style", c + ";" + E), r.value = o, null != i ? r.setAttribute("rows", "".concat(i)) : r.removeAttribute("rows");
     let u = r.scrollHeight;
-    "border-box" === l ? u += s : "content-box" === l && (u -= o), this.setState({
+    "border-box" === l ? u += s : "content-box" === l && (u -= a), this.setState({
       height: u
     })
   }
@@ -159,12 +159,12 @@ class y extends(i = o.PureComponent) {
       } = e,
       i = m(e, ["style", "className", "onResize"]);
     delete i.fontWidthEstimate;
-    let o = _({}, this.state, t);
-    return (0, a.jsx)(u.t, {
-      children: (0, a.jsx)("textarea", h(_({}, i), {
+    let a = _({}, this.state, t);
+    return (0, o.jsx)(u.t, {
+      children: (0, o.jsx)("textarea", h(_({}, i), {
         className: l()(n, d.scrollbarGhostHairline),
         ref: this.handleSetRef,
-        style: o,
+        style: a,
         onChange: this.handleChange
       }))
     })

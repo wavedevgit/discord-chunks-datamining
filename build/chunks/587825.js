@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(286263),
-  a = n(931989),
-  o = n(396704);
+  o = n(931989),
+  a = n(396704);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -35,8 +35,8 @@ function c(e) {
   let {
     status: t,
     buffer: n
-  } = (0, o.V)(i.Z);
-  return "loading" === t ? null : (0, r.jsx)(a.Z, l({
+  } = (0, a.V)(i.Z);
+  return "loading" === t ? null : (0, r.jsx)(o.Z, l({
     buffer: n
   }, e))
 }

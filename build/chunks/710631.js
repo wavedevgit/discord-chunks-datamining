@@ -5,8 +5,8 @@ n.d(t, {
 }), n(539854), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   s = n(493683),
   l = n(447543),
   c = n(904245),
@@ -74,7 +74,7 @@ function C(e) {
     user: t,
     guildId: n,
     onAction: s
-  } = e, c = (0, a.e7)([g.default], () => g.default.getCurrentUser(), []), d = (0, a.Wu)([m.ZP, _.Z, p.Z], () => {
+  } = e, c = (0, o.e7)([g.default], () => g.default.getCurrentUser(), []), d = (0, o.Wu)([m.ZP, _.Z, p.Z], () => {
     let e = m.ZP.getFlattenedGuildIds(),
       t = [];
     return e.forEach(e => {
@@ -95,14 +95,14 @@ function C(e) {
       }, T).then(e => N(t, e.code))
     }
   }
-  return (null == c ? void 0 : c.id) === t.id || t.bot || 0 === d.length || h.Z.isBlockedOrIgnored(t.id) ? null : (0, r.jsx)(o.sNh, {
+  return (null == c ? void 0 : c.id) === t.id || t.bot || 0 === d.length || h.Z.isBlockedOrIgnored(t.id) ? null : (0, r.jsx)(a.sNh, {
     id: "invite-to-server",
     label: b.intl.string(b.t.Sd8Ix8),
-    children: d.map(e => y[e.id] ? (0, r.jsx)(o.sNh, {
+    children: d.map(e => y[e.id] ? (0, r.jsx)(a.sNh, {
       id: e.id,
       disabled: !0,
       label: b.intl.string(b.t.PuLLzM)
-    }, e.id) : (0, r.jsx)(o.sNh, {
+    }, e.id) : (0, r.jsx)(a.sNh, {
       id: e.id,
       label: e.name,
       action: () => {

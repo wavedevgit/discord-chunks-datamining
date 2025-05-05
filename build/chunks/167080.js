@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(335854),
-  o = n(481060),
+  o = n(335854),
+  a = n(481060),
   s = n(626135),
   l = n(981631),
   c = n(388032);
@@ -54,8 +54,8 @@ function p(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -63,8 +63,8 @@ function p(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let m = e => {
@@ -79,14 +79,14 @@ let m = e => {
     focusProps: E,
     onClick: b
   } = e, y = p(e, ["href", "className", "iconClassName", "rel", "target", "mimeType", "fileName", "focusProps", "onClick"]);
-  let O = i.useMemo(() => a.X.getDefaultLinkInterceptor(t), [t]),
+  let O = i.useMemo(() => o.X.getDefaultLinkInterceptor(t), [t]),
     v = i.useCallback(e => {
       s.default.track(l.rMx.MEDIA_DOWNLOAD_BUTTON_TAPPED, {
         attachment_type: null == m ? void 0 : m[0],
         attachment_subtype: null == m ? void 0 : m[1]
       }), null == b || b(), null == O || O(e)
     }, [O, m, b]);
-  return null != g ? (0, r.jsx)(o.eee, _(d({
+  return null != g ? (0, r.jsx)(a.eee, _(d({
     href: t,
     onClick: v,
     target: h,
@@ -96,7 +96,7 @@ let m = e => {
     focusProps: E
   }, y), {
     children: g
-  })) : (0, r.jsx)(o.eee, _(d({
+  })) : (0, r.jsx)(a.eee, _(d({
     href: t,
     onClick: v,
     target: h,
@@ -105,7 +105,7 @@ let m = e => {
     "aria-label": c.intl.string(c.t["1WjMbG"]),
     focusProps: E
   }, y), {
-    children: (0, r.jsx)(o._8t, {
+    children: (0, r.jsx)(a._8t, {
       size: "md",
       color: "currentColor",
       className: u

@@ -6,14 +6,14 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  a = n(204623),
-  o = n(155221);
+  o = n(204623),
+  a = n(155221);
 let s = {
   App: () => (0, r.jsx)(i.Sle, {
-    children: (0, r.jsx)(o.Z, {})
+    children: (0, r.jsx)(a.Z, {})
   }),
   Overlay: () => (0, r.jsx)(i.Sle, {
-    children: (0, r.jsx)(o.a, {})
+    children: (0, r.jsx)(a.a, {})
   }),
-  OutdatedClient: a.Z
+  OutdatedClient: o.Z
 }

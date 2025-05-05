@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Y: () => a,
+  Y: () => o,
   z: () => i
 });
 var r = n(192379);
@@ -11,6 +11,6 @@ let i = (0, r.createContext)({
   entering: !0
 });
 
-function a() {
+function o() {
   return (0, r.useContext)(i)
 }

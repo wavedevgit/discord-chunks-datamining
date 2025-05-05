@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(477660),
   i = n.n(r),
-  a = n(668781),
-  o = n(45986),
+  o = n(668781),
+  a = n(45986),
   s = n(782568),
   l = n(704133),
   c = n(139674),
@@ -50,7 +50,7 @@ function R(e, t) {
     } = e,
     x = i().sanitizeUrl(e.href);
   if (null == x) {
-    null != t && t.preventDefault(), a.Z.show({
+    null != t && t.preventDefault(), o.Z.show({
       title: N.intl.string(N.t.x87gam),
       body: N.intl.format(N.t["9rqRws"], {
         url: e.href
@@ -80,8 +80,8 @@ function R(e, t) {
       r = (null == e || null == (V = e.messageReference) ? void 0 : V.guild_id) != null && (null == e ? void 0 : e.webhookId) != null && (null == e ? void 0 : e.hasFlag(A.iLy.IS_CROSSPOST)) && null != k;
     r && (null == e || null == (F = e.messageReference) ? void 0 : F.guild_id) != null ? (U = e.messageReference.message_id, G = e.messageReference.channel_id, B = e.messageReference.guild_id) : B = k;
     let i = (null == t ? void 0 : t.type) === A.d4z.GUILD_ANNOUNCEMENT && (null == n ? void 0 : n.hasFeature(A.oNc.COMMUNITY)) === !0,
-      a = (null == e ? void 0 : e.hasFlag(A.iLy.EPHEMERAL)) === !0;
-    j = null != e && !a && (r || i)
+      o = (null == e ? void 0 : e.hasFlag(A.iLy.EPHEMERAL)) === !0;
+    j = null != e && !o && (r || i)
   }
   if (null != L) {
     let e = E.Z.getChannel(L),
@@ -141,7 +141,7 @@ function R(e, t) {
   }));
   if (null != t && t.preventDefault(), z) h.Z.show({
     url: M,
-    trustUrl: o.u,
+    trustUrl: a.u,
     onConfirm: H,
     onCancel: Y,
     isProtocol: !0,
@@ -152,7 +152,7 @@ function R(e, t) {
       t = null != e ? e.displayTarget : M;
     h.Z.show({
       url: t,
-      trustUrl: o.o,
+      trustUrl: a.o,
       onConfirm: H,
       onCancel: Y,
       isProtocol: !1,

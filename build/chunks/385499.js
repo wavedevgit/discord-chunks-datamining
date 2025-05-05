@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  a = n.n(i),
-  o = n(981729),
+  o = n.n(i),
+  a = n(981729),
   s = n(481060),
   l = n(674563),
   c = n(388032),
@@ -90,7 +90,7 @@ let h = e => {
   let y = i === l.Hb.ORIGINAL_POSTER,
     O = i === l.Hb.REMIX,
     v = null;
-  _ && (v = (0, r.jsx)(o.u, {
+  _ && (v = (0, r.jsx)(a.u, {
     text: b,
     align: "center",
     position: "top",
@@ -100,7 +100,7 @@ let h = e => {
     }))
   })), t = i === l.Hb.AI ? u.botTagAI : n ? u.botTagInvert : u.botTagRegular;
   let I = e => (0, r.jsxs)("span", p(f({}, e), {
-    className: a()(d, t, m ? u.rem : u.px, {
+    className: o()(d, t, m ? u.rem : u.px, {
       [u.botTagOP]: y,
       [u.botTagRemix]: O
     }),
@@ -111,13 +111,13 @@ let h = e => {
   }));
   switch (i) {
     case l.Hb.REMIX:
-      return (0, r.jsx)(o.u, {
+      return (0, r.jsx)(a.u, {
         text: c.intl.string(c.t.xb0str),
         position: "top",
         children: e => I(e)
       });
     case l.Hb.ORIGINAL_POSTER:
-      return (0, r.jsx)(o.u, {
+      return (0, r.jsx)(a.u, {
         text: c.intl.string(c.t.uN6Emp),
         position: "top",
         children: e => I(e)

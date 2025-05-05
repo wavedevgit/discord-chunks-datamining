@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  U: () => o
+  U: () => a
 });
 var r = n(818083),
   i = n(987338);
-let a = (0, r.B)({
+let o = (0, r.B)({
   kind: "user",
   id: "2024-12_quests_nitro_permadecos",
   label: "Quests Nitro Permadecos",
@@ -21,8 +21,8 @@ let a = (0, r.B)({
   }]
 });
 
-function o() {
-  return a.getCurrentConfig({
+function a() {
+  return o.getCurrentConfig({
     location: "quest_nitro_permadecos"
   }, {
     autoTrackExposure: !1

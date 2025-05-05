@@ -6,8 +6,8 @@ n.d(t, {
 }), n(415506);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(873546),
   l = n(481060),
   c = n(597952);
@@ -27,7 +27,7 @@ function f(e) {
   let {
     rootClassName: t,
     lang: n,
-    theme: a,
+    theme: o,
     density: d,
     focused: f,
     fontScale: _,
@@ -42,7 +42,7 @@ function f(e) {
     alwaysShowLinkDecorations: v,
     hardwareAccelerationEnabled: I,
     children: S
-  } = e, T = window.CSS.supports("selector(::-webkit-scrollbar)"), A = "font-size: ".concat(_, "%; --saturation-factor: ").concat(g, ";"), N = o()((0, c.Z)(), (0, l.QeD)(a), "density-".concat(d), p, {
+  } = e, T = window.CSS.supports("selector(::-webkit-scrollbar)"), A = "font-size: ".concat(_, "%; --saturation-factor: ").concat(g, ";"), N = a()((0, c.Z)(), (0, l.QeD)(o), "density-".concat(d), p, {
     "low-saturation": g <= l.AEw,
     "keyboard-mode": m,
     "decorate-links": v,

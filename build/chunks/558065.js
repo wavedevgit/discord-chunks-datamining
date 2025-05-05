@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(665443),
-  o = n.n(a),
+  o = n(665443),
+  a = n.n(o),
   s = n(259443),
   l = n(992774);
 
@@ -36,8 +36,8 @@ function d(e, t) {
   if (null == e) return {};
   var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -45,8 +45,8 @@ function d(e, t) {
 function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let _ = new s.Yd("DirectVideo");
@@ -76,7 +76,7 @@ function g(e) {
 function E(e, t) {
   var {
     streamId: n,
-    paused: a = !1,
+    paused: o = !1,
     onReady: s,
     onResize: l,
     className: c
@@ -89,7 +89,7 @@ function E(e, t) {
     }),
     b = i.useRef({
       streamId: n,
-      paused: a,
+      paused: o,
       onReady: s,
       onResize: l,
       onContainerResized: t
@@ -100,17 +100,17 @@ function E(e, t) {
     } = p;
 
     function t() {
-      var e, t, n, r, i, a;
+      var e, t, n, r, i, o;
       let {
-        width: o,
+        width: a,
         height: s
       } = E.current, l = null != (n = null == (e = h.current) ? void 0 : e.videoWidth) ? n : 0, c = null != (r = null == (t = h.current) ? void 0 : t.videoHeight) ? r : 0;
-      if (o !== l || s !== c) {
+      if (a !== l || s !== c) {
         let e = {
           width: l,
           height: c
         };
-        null == (i = (a = b.current).onResize) || i.call(a, e), E.current = e
+        null == (i = (o = b.current).onResize) || i.call(o, e), E.current = e
       }
     }
 
@@ -135,20 +135,20 @@ function E(e, t) {
       }
     });
     if (null != e) {
-      let a = document.createElement("video");
-      a.style.display = "block", a.style.width = "100%", a.style.height = "100%", a.autoplay = !0, a.muted = !0, a.addEventListener("pause", r), a.addEventListener("resize", t), a.addEventListener("canplaythrough", n), _.info("create video element for ".concat(b.current.streamId, ", readyState=").concat(a.readyState)), a.readyState > 3 && _.error("video element for ".concat(b.current.streamId, " was ready before attached")), e.appendChild(a), i.disconnect(), i.observe(a), h.current = a
+      let o = document.createElement("video");
+      o.style.display = "block", o.style.width = "100%", o.style.height = "100%", o.autoplay = !0, o.muted = !0, o.addEventListener("pause", r), o.addEventListener("resize", t), o.addEventListener("canplaythrough", n), _.info("create video element for ".concat(b.current.streamId, ", readyState=").concat(o.readyState)), o.readyState > 3 && _.error("video element for ".concat(b.current.streamId, " was ready before attached")), e.appendChild(o), i.disconnect(), i.observe(o), h.current = o
     }
   }, []), i.useEffect(() => {
-    b.current.streamId = n, b.current.paused = a, b.current.onReady = s, b.current.onResize = l
+    b.current.streamId = n, b.current.paused = o, b.current.onReady = s, b.current.onResize = l
   }), i.useEffect(() => {
     let e = h.current;
     if (null != e)
-      if (!a) return _.info("attaching srcObject for ".concat(n)), e.srcObject = m(n), () => {
+      if (!o) return _.info("attaching srcObject for ".concat(n)), e.srcObject = m(n), () => {
         g(n), e.srcObject = null
       };
       else null != e.srcObject && (e.srcObject = null, g(n))
-  }, [a, n]), (0, r.jsx)("div", u({
-    className: o()("media-engine-video", c),
+  }, [o, n]), (0, r.jsx)("div", u({
+    className: a()("media-engine-video", c),
     ref: p
   }, f))
 }

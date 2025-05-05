@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(768581),
   l = n(388032),
   c = n(870017);
@@ -15,7 +15,7 @@ function u(e) {
   let {
     application: t,
     src: n,
-    className: a,
+    className: o,
     size: u,
     botIconFirst: d,
     fallbackAvatar: f,
@@ -29,9 +29,9 @@ function u(e) {
     fallbackAvatar: f
   }) : n, [t, n, u, d, f]);
   return null == p ? _ ? (0, r.jsx)("div", {
-    className: o()(c.icon, c.placeholder, a)
+    className: a()(c.icon, c.placeholder, o)
   }) : null : (0, r.jsx)("img", {
-    className: o()(c.icon, a),
+    className: a()(c.icon, o),
     alt: l.intl.string(l.t.X4IxWF),
     src: p,
     "aria-hidden": !0,

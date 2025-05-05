@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(481060),
   l = n(607070),
   c = n(124347),
@@ -32,14 +32,14 @@ function E(e) {
   var t, n;
   let {
     item: i
-  } = e, a = g(i);
-  return null == a ? null : (0, r.jsx)(c.ZP, {
+  } = e, o = g(i);
+  return null == o ? null : (0, r.jsx)(c.ZP, {
     width: null != (t = i.width) ? t : h,
     height: null != (n = i.height) ? n : h,
     maxWidth: h,
     maxHeight: h,
     useFullWidth: !0,
-    src: a,
+    src: o,
     shouldAnimate: !1,
     shouldRenderAccessory: !1,
     srcIsAnimated: i.srcIsAnimated,
@@ -53,7 +53,7 @@ function y(e) {
   let {
     items: t,
     currentIndex: n,
-    onGalleryItemClick: a,
+    onGalleryItemClick: o,
     className: c
   } = e, u = i.useRef(null);
   return i.useLayoutEffect(() => {
@@ -64,10 +64,10 @@ function y(e) {
       padding: h / 2
     })
   }, [n]), (0, r.jsx)("div", {
-    className: o()(p.galleryContainer, c),
+    className: a()(p.galleryContainer, c),
     children: (0, r.jsx)(s.h21, {
       orientation: "horizontal",
-      className: o()(p.gallery, c),
+      className: a()(p.gallery, c),
       ref: u,
       onClick: e => e.stopPropagation(),
       children: t.map((e, i) => {
@@ -75,7 +75,7 @@ function y(e) {
           c = l ? _.t["qv/U5e"] : _.t.zviMAA;
         return (0, r.jsx)(s.P3F, {
           id: m(i),
-          className: o()(p.galleryItem, {
+          className: a()(p.galleryItem, {
             [p.inactive]: !l,
             [p.first]: 0 === i,
             [p.last]: i === t.length - 1
@@ -84,7 +84,7 @@ function y(e) {
             pageNumber: i + 1,
             totalPages: t.length
           }),
-          onClick: () => a(i),
+          onClick: () => o(i),
           children: (0, r.jsx)(b, {
             item: e
           })

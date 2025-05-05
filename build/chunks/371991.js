@@ -7,8 +7,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(846519),
   c = n(481060),
@@ -21,22 +21,22 @@ var r = n(200651),
   m = n(419732);
 
 function g(e) {
-  let [t, n] = i.useState(Date.now()), r = (0, _.n)(), a = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), o = !r || a && !e;
+  let [t, n] = i.useState(Date.now()), r = (0, _.n)(), o = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), a = !r || o && !e;
   return i.useEffect(() => {
     let e = new l.Xp;
-    return e.start(o ? 15 * f.Z.Millis.SECOND : f.Z.Millis.SECOND, () => {
+    return e.start(a ? 15 * f.Z.Millis.SECOND : f.Z.Millis.SECOND, () => {
       n(Date.now())
     }), () => e.stop()
-  }, [o]), {
+  }, [a]), {
     now: t,
-    slowTickMode: o
+    slowTickMode: a
   }
 }
 let E = e => {
     let {
       entry: t,
       inline: n = !1,
-      textColor: a,
+      textColor: o,
       hovered: s = !1,
       bold: l = !1,
       scaleFontToUserSetting: u = !1
@@ -48,13 +48,13 @@ let E = e => {
     }), i.useEffect(() => {
       _.current = p.current
     }, [t]), (0, r.jsx)(c.Text, {
-      className: o()(m.timestamp, {
+      className: a()(m.timestamp, {
         [m.inlineTimestamp]: n,
         [m.bold]: l
       }),
       variant: "text-xs/medium",
       tabularNumbers: !0,
-      color: a,
+      color: o,
       scaleFontToUserSetting: u,
       "aria-label": _.current,
       children: f
@@ -64,8 +64,8 @@ let E = e => {
     var t, n;
     let {
       entry: i,
-      textColor: a,
-      hovered: o = !1,
+      textColor: o,
+      hovered: a = !1,
       bold: l = !1,
       scaleFontToUserSetting: u = !1
     } = e, f = (0, h.Jg)(i), _ = (0, s.e7)([d.default], () => d.default.locale), m = (0, s.e7)([p.Z], () => p.Z.getMatchingActivity(i)), g = null != (n = null == m || null == (t = m.timestamps) ? void 0 : t.start) ? n : null == m ? void 0 : m.created_at;
@@ -73,19 +73,19 @@ let E = e => {
       entry: {
         start: g
       },
-      textColor: a,
-      hovered: o,
+      textColor: o,
+      hovered: a,
       bold: l,
       scaleFontToUserSetting: u
     }) : f ? (0, r.jsx)(E, {
       entry: i,
-      textColor: a,
-      hovered: o,
+      textColor: o,
+      hovered: a,
       bold: l,
       scaleFontToUserSetting: u
     }) : (0, r.jsx)(c.Text, {
       variant: "text-xs/normal",
-      color: a,
+      color: o,
       lineClamp: 1,
       scaleFontToUserSetting: u,
       children: (0, h.GL)(i, _)

@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(442837),
-  a = n(648052),
-  o = n(530),
+  o = n(648052),
+  a = n(530),
   s = n(420654),
   l = n(116854),
   c = n(271383),
@@ -46,13 +46,13 @@ function p(e) {
   return (0, r.jsxs)("div", {
     inert: "",
     className: _.body,
-    children: [(0, r.jsx)(o.Z, {
+    children: [(0, r.jsx)(a.Z, {
       user: n,
       usernameIcon: w(),
       nickname: P,
       pronouns: R,
       isTryItOut: I,
-      tags: (0, r.jsx)(a.Z, {
+      tags: (0, r.jsx)(o.Z, {
         displayProfile: p,
         themeType: f.lY.POPOUT,
         pendingLegacyUsernameDisabled: O,

@@ -12,11 +12,11 @@ function i(e, t) {
   }
 }
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t && i(e.prototype, t), n && i(e, n), e
 }
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -29,9 +29,9 @@ n.d(t, {
 });
 var s = function() {
   function e(t) {
-    r(this, e), o(this, "item", void 0), o(this, "config", void 0), this.config = t, this.item = {}, this.initializeExposedProperties()
+    r(this, e), a(this, "item", void 0), a(this, "config", void 0), this.config = t, this.item = {}, this.initializeExposedProperties()
   }
-  return a(e, [{
+  return o(e, [{
     key: "initializeExposedProperties",
     value: function() {
       var e = this;

@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(442837),
-  a = n(481060),
-  o = n(359110),
+  o = n(481060),
+  a = n(359110),
   s = n(922482),
   l = n(146085),
   c = n(750154),
@@ -34,11 +34,11 @@ function g(e) {
   let T = e => {
     e.stopPropagation(), null == n || n({
       action: "PRESS_STAGE_CHANNEL_LISTEN_BUTTON"
-    }), s.AC(O, y), (0, o.Kh)(y), null == g || g()
+    }), s.AC(O, y), (0, a.Kh)(y), null == g || g()
   };
   return E === h.lY.MODAL_V2 ? (0, r.jsx)(p.tG, {
     text: m.intl.string(m.t.ZYO5OD),
-    size: a.PhG.TINY,
+    size: o.PhG.TINY,
     themeColor: "secondary",
     disabled: v,
     onClick: T

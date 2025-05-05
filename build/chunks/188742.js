@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 let r = new(n(113638)).Z(i);
 
@@ -11,7 +11,7 @@ function i(e) {
     return void 0 !== t ? t().then(e => e.default) : Promise.resolve({})
   }
 }
-let a = {
+let o = {
   setEmojiLocale: function(e) {
     r.setParams(e)
   },

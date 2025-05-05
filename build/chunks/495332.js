@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(192379),
   i = n(806966),
-  a = n(697426),
-  o = n(294206),
+  o = n(697426),
+  a = n(294206),
   s = n(280880);
 
 function l(e, t, n) {
@@ -66,8 +66,8 @@ function f(e) {
     inExpressionPicker: O
   } = e, v = i.Wq.useStore(e => e.inspectedExpressionPosition), I = "".concat(l, "-").concat(u), S = f && v.rowIndex === l && v.columnIndex === u;
   switch (t.item.type) {
-    case a.vB.SOUND:
-      return (0, r.createElement)(o.ZP, d(c({}, p(u), n), {
+    case o.vB.SOUND:
+      return (0, r.createElement)(a.ZP, d(c({}, p(u), n), {
         key: I,
         sound: t.item.sound,
         suppressPlaySound: _,
@@ -81,7 +81,7 @@ function f(e) {
         refreshEnabled: y,
         isSoundmoji: !0 === O
       }));
-    case a.vB.ADD_SOUND:
+    case o.vB.ADD_SOUND:
       return (0, r.createElement)(s.Z, d(c({}, p(u)), {
         key: I,
         guild: t.item.guild,

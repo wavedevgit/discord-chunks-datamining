@@ -6,9 +6,9 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  a = n(531826);
+  o = n(531826);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,7 +24,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -51,19 +51,19 @@ let u = "activity-age-gate";
 function d(e) {
   let {
     application: t,
-    channelId: o,
+    channelId: a,
     onAgree: l,
     onDisagree: d
-  } = e, f = null != (0, a.ZP)({
+  } = e, f = null != (0, o.ZP)({
     application: t,
-    channelId: o
+    channelId: a
   }) ? i.u1M : i.z1l;
   return (0, i.ZDy)(async () => {
     let {
       ActivityAgeGateModal: e
     } = await n.e("57951").then(n.bind(n, 252528));
     return n => (0, r.jsx)(e, c(s({}, n), {
-      channelId: o,
+      channelId: a,
       application: t,
       onAgree: l,
       onDisagree: d

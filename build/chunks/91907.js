@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(793030),
-  o = n(256139),
+  o = n(793030),
+  a = n(256139),
   s = n(866040);
 
 function l(e, t, n) {
@@ -60,9 +60,9 @@ function f(e) {
     participants: _,
     channel: l,
     onPopoutClosed: f,
-    children: e => (0, r.jsx)(o.Z, d(c({}, e), {
+    children: e => (0, r.jsx)(a.Z, d(c({}, e), {
       tag: "span",
-      children: (0, r.jsx)(a.xv, {
+      children: (0, r.jsx)(o.xv, {
         className: u,
         variant: "text-sm/semibold",
         color: "text-primary",

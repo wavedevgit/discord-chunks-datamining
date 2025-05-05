@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(803997),
-  a = n.n(i),
-  o = n(657707),
+  o = n.n(i),
+  a = n(657707),
   s = n(777207),
   l = n(172204),
   c = function(e) {
@@ -18,15 +18,15 @@ var i = n(803997),
 function u(e) {
   switch (e) {
     case "warn":
-      return o.P4T;
+      return a.P4T;
     case "info":
-      return o.d3s;
+      return a.d3s;
     case "danger":
-      return o.k$p;
+      return a.k$p;
     case "positive":
-      return o.dz2;
+      return a.dz2;
     case "preview":
-      return o.Che
+      return a.Che
   }
 }
 
@@ -49,11 +49,11 @@ function f(e) {
     children: t,
     messageType: n,
     className: i,
-    textColor: o = "text-normal",
+    textColor: a = "text-normal",
     textVariant: c = "text-sm/medium"
   } = e, f = u(n), _ = d(n);
   return (0, r.jsxs)("div", {
-    className: a()(l.container, _, i),
+    className: o()(l.container, _, i),
     children: [(0, r.jsx)("div", {
       className: l.iconDiv,
       children: f && (0, r.jsx)(f, {
@@ -62,7 +62,7 @@ function f(e) {
       })
     }), (0, r.jsx)(s.x, {
       className: l.text,
-      color: o,
+      color: a,
       variant: c,
       children: t
     })]

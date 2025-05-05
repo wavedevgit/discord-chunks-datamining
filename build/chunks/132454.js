@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  j: () => o
+  j: () => a
 }), n(388685), n(642613), n(415506), n(539854);
 var r = n(570140);
 let i = {},
-  a = !1;
+  o = !1;
 
-function o(e) {
+function a(e) {
   for (let t in e) {
     let n = e[t];
     s(t, n), l(n)
@@ -27,9 +27,9 @@ function l(e) {
 }
 
 function c(e) {
-  if (("CONNECTION_OPEN" === e.type || "OVERLAY_INITIALIZE" === e.type) && (a = !0), e.type in i) {
+  if (("CONNECTION_OPEN" === e.type || "OVERLAY_INITIALIZE" === e.type) && (o = !0), e.type in i) {
     let t = [];
-    for (let n of i[e.type]) !a && n.neverLoadBeforeConnectionOpen ? t.push(n) : n.inlineRequire().initialize();
+    for (let n of i[e.type]) !o && n.neverLoadBeforeConnectionOpen ? t.push(n) : n.inlineRequire().initialize();
     t.length > 0 ? i[e.type] = t : delete i[e.type]
   }
   return !1

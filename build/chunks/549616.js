@@ -5,9 +5,9 @@ n.d(t, {
 }), n(539854);
 var r = n(979554),
   i = n(778787),
-  a = n(803358);
+  o = n(803358);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,7 +23,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -50,8 +50,8 @@ function u(e, t) {
   if (null == e) return {};
   var n, r, i = d(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -59,19 +59,19 @@ function u(e, t) {
 function d(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let f = e => e === r.Z.VARIANTS_GROUP || e === r.Z.EXTERNAL_SKU;
-class _ extends a.Z {
+class _ extends o.Z {
   static fromServer(e) {
     var {
       products: t,
       logo: n,
       hero_ranking: r,
-      pdp_bg: a,
-      mobile_bg: o,
+      pdp_bg: o,
+      mobile_bg: a,
       success_modal_bg: l,
       mobile_banner: d,
       hero_banner: p,
@@ -87,8 +87,8 @@ class _ extends a.Z {
       }, []),
       logo: n,
       heroRanking: r,
-      pdpBg: a,
-      mobileBg: o,
+      pdpBg: o,
+      mobileBg: a,
       successModalBg: l,
       mobileBanner: d,
       heroBanner: p,
@@ -99,6 +99,6 @@ class _ extends a.Z {
     }))
   }
   constructor(e) {
-    super(e), o(this, "products", void 0), o(this, "logo", void 0), o(this, "heroRanking", void 0), o(this, "pdpBg", void 0), o(this, "mobileBg", void 0), o(this, "successModalBg", void 0), o(this, "mobileBanner", void 0), o(this, "heroBanner", void 0), o(this, "heroBannerAsset", void 0), o(this, "featuredBlock", void 0), o(this, "heroLogo", void 0), o(this, "bannerTextColor", void 0), this.products = e.products, this.logo = e.logo, this.heroRanking = e.heroRanking, this.pdpBg = e.pdpBg, this.mobileBg = e.mobileBg, this.successModalBg = e.successModalBg, this.mobileBanner = e.mobileBanner, this.heroBanner = e.heroBanner, this.featuredBlock = e.featuredBlock, this.heroLogo = e.heroLogo, this.heroBannerAsset = e.heroBannerAsset, this.bannerTextColor = e.bannerTextColor
+    super(e), a(this, "products", void 0), a(this, "logo", void 0), a(this, "heroRanking", void 0), a(this, "pdpBg", void 0), a(this, "mobileBg", void 0), a(this, "successModalBg", void 0), a(this, "mobileBanner", void 0), a(this, "heroBanner", void 0), a(this, "heroBannerAsset", void 0), a(this, "featuredBlock", void 0), a(this, "heroLogo", void 0), a(this, "bannerTextColor", void 0), this.products = e.products, this.logo = e.logo, this.heroRanking = e.heroRanking, this.pdpBg = e.pdpBg, this.mobileBg = e.mobileBg, this.successModalBg = e.successModalBg, this.mobileBanner = e.mobileBanner, this.heroBanner = e.heroBanner, this.featuredBlock = e.featuredBlock, this.heroLogo = e.heroLogo, this.heroBannerAsset = e.heroBannerAsset, this.bannerTextColor = e.bannerTextColor
   }
 }

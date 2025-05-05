@@ -5,9 +5,9 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(623113);
+  o = n(623113);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,7 +23,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -33,8 +33,8 @@ function l(e, t) {
   if (null == e) return {};
   var n, r, i = c(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -42,25 +42,25 @@ function l(e, t) {
 function c(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let u = i.forwardRef(function(e, t) {
   var {
     muted: n,
-    volume: o,
+    volume: a,
     playing: c,
     playbackRate: u
   } = e, d = l(e, ["muted", "volume", "playing", "playbackRate"]);
-  let [f, _] = (0, a.Z)(t);
+  let [f, _] = (0, o.Z)(t);
   return i.useEffect(() => {
     let e = f.current;
     null != e && void 0 !== n && (e.muted = n)
   }, [f, n]), i.useEffect(() => {
     let e = f.current;
-    null != e && void 0 !== o && (e.volume = o)
-  }, [f, o]), i.useEffect(() => {
+    null != e && void 0 !== a && (e.volume = a)
+  }, [f, a]), i.useEffect(() => {
     let e = f.current;
     null != e && null != u && (e.playbackRate = u)
   }, [f, u]), i.useEffect(() => {

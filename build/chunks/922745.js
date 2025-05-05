@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(692547),
   l = n(215569),
   c = n(481060),
@@ -49,8 +49,8 @@ function v(e, t) {
   if (null == e) return {};
   var n, r, i = I(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -58,8 +58,8 @@ function v(e, t) {
 function I(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -68,11 +68,11 @@ function S(e) {
     title: t,
     onJumpToChannel: n,
     onHide: i,
-    idle: a,
+    idle: o,
     preventIdleComponent: l
-  } = e, u = (0, o.e7)([p.Z], () => p.Z.getChannelId()), _ = null != u ? (0, r.jsx)(h.Z, {
+  } = e, u = (0, a.e7)([p.Z], () => p.Z.getChannelId()), _ = null != u ? (0, r.jsx)(h.Z, {
     voiceChannelId: u,
-    idle: a
+    idle: o
   }) : null, {
     enabled: m
   } = f.Z.useExperiment({
@@ -108,7 +108,7 @@ function T(e) {
     children: t,
     idle: n,
     onJumpToChannel: i,
-    onHide: o,
+    onHide: a,
     backgroundKey: s,
     onActive: c,
     onForceIdle: d,
@@ -124,7 +124,7 @@ function T(e) {
     onMouseMove: c,
     onMouseDown: c,
     onMouseLeave: d,
-    className: a()(b.pictureInPictureVideo, {
+    className: o()(b.pictureInPictureVideo, {
       [b.idle]: n
     }, E),
     onDoubleClick: i,
@@ -136,13 +136,13 @@ function T(e) {
     }), null != h ? (0, r.jsx)(m.Z, O({
       size: "small"
     }, h)) : null, !g && (0, r.jsxs)("div", {
-      className: a()(b.videoControls, I, "theme-dark"),
+      className: o()(b.videoControls, I, "theme-dark"),
       children: [(0, r.jsx)("div", {
         className: b.topControls,
         children: (0, r.jsx)(S, O({
           idle: n,
           onJumpToChannel: i,
-          onHide: o
+          onHide: a
         }, T))
       }), (0, r.jsxs)("div", {
         className: b.bottomControls,

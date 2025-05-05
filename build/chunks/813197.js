@@ -6,8 +6,8 @@ n.d(t, {
   Zj: () => u
 }), n(388685);
 var r, i = n(200651),
-  a = n(192379),
-  o = n(53281),
+  o = n(192379),
+  a = n(53281),
   s = n(869783),
   l = n(388032);
 
@@ -48,7 +48,7 @@ function f(e, t, n) {
     }
   })
 }
-class _ extends(r = a.PureComponent) {
+class _ extends(r = o.PureComponent) {
   componentDidMount() {
     this._isMounted = !0
   }
@@ -62,10 +62,10 @@ class _ extends(r = a.PureComponent) {
       disabled: t,
       className: n,
       tabIndex: r,
-      "aria-label": a,
+      "aria-label": o,
       filters: s
     } = this.props;
-    return (0, i.jsx)(o.Z, {
+    return (0, i.jsx)(a.Z, {
       ref: this._ref,
       onClick: this.props.onClick,
       onChange: this.handleFileChange,
@@ -74,11 +74,11 @@ class _ extends(r = a.PureComponent) {
       disabled: t,
       className: n,
       tabIndex: r,
-      "aria-label": a
+      "aria-label": o
     })
   }
   constructor(...e) {
-    super(...e), c(this, "_ref", a.createRef()), c(this, "_isMounted", !1), c(this, "handleFileChange", e => {
+    super(...e), c(this, "_ref", o.createRef()), c(this, "_isMounted", !1), c(this, "handleFileChange", e => {
       let {
         onFileSizeError: t,
         maxFileSizeBytes: n

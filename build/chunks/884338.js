@@ -5,9 +5,9 @@ n.d(t, {
   u: () => b
 }), n(539854), n(388685);
 var r, i = n(200651),
-  a = n(192379),
-  o = n(120356),
-  s = n.n(o),
+  o = n(192379),
+  a = n(120356),
+  s = n.n(a),
   l = n(481060),
   c = n(686546),
   u = n(670188),
@@ -88,20 +88,20 @@ function v() {
       return p.size24
   }
 }
-class I extends(r = a.PureComponent) {
+class I extends(r = o.PureComponent) {
   renderUsers() {
     let {
       users: e,
       max: t,
       renderUser: n = this.defaultRenderUser,
       size: r,
-      extraDetail: a
-    } = this.props, o = [], s = e.length === t ? e.length : t - 1, l = this.renderMoreUsers(s), u = 0;
+      extraDetail: o
+    } = this.props, a = [], s = e.length === t ? e.length : t - 1, l = this.renderMoreUsers(s), u = 0;
     for (; u < s && u < e.length;) {
       var d;
-      let t = null == l && null == a && u === e.length - 1,
+      let t = null == l && null == o && u === e.length - 1,
         s = n(e[u], t, u);
-      o.push(t ? (0, i.jsx)("div", {
+      a.push(t ? (0, i.jsx)("div", {
         className: p.avatarContainer,
         children: s
       }, y(null != (d = e[u]) ? d : null, u)) : (0, i.jsx)(c.ZP, {
@@ -112,31 +112,31 @@ class I extends(r = a.PureComponent) {
         children: s
       }, y(e[u], u))), u++
     }
-    return null != a ? o.push(a) : null != l && o.push(l), o
+    return null != o ? a.push(o) : null != l && a.push(l), a
   }
   renderMoreUsers(e) {
     let {
       max: t,
       count: n,
       hideMoreUsers: r,
-      renderMoreUsers: o,
+      renderMoreUsers: a,
       users: s
     } = this.props, l = Math.min(e, s.length);
     if (!r) {
       if (null != n) {
-        if (n >= t) return (0, i.jsx)(a.Fragment, {
-          children: o("".concat(t, "+"), t)
+        if (n >= t) return (0, i.jsx)(o.Fragment, {
+          children: a("".concat(t, "+"), t)
         }, "more-users");
         else if (n > s.length) {
           let e = n - s.length;
-          return (0, i.jsx)(a.Fragment, {
-            children: o("+".concat(e), e)
+          return (0, i.jsx)(o.Fragment, {
+            children: a("+".concat(e), e)
           }, "more-users")
         }
       } else if (l < s.length) {
         let e = Math.min(s.length - l, 99);
-        return (0, i.jsx)(a.Fragment, {
-          children: o("+".concat(e), e)
+        return (0, i.jsx)(o.Fragment, {
+          children: a("+".concat(e), e)
         }, "more-users")
       }
     }
@@ -155,8 +155,8 @@ class I extends(r = a.PureComponent) {
       size: t,
       users: n,
       guildId: r,
-      showUserPopout: a,
-      useFallbackUserForPopout: o
+      showUserPopout: o,
+      useFallbackUserForPopout: a
     } = this.props, {
       popoutUserId: l
     } = this.state;
@@ -165,14 +165,14 @@ class I extends(r = a.PureComponent) {
       children: [this.renderIcon(), this.renderUsers()]
     });
     let c = n.find(e => null != e && e.id === l),
-      d = o && null == f.default.getUser(l);
+      d = a && null == f.default.getUser(l);
     return (0, i.jsx)(u.Z, {
       targetElementRef: this._ref,
       userId: l,
       user: d && null != c ? c : void 0,
       guildId: r,
       fixed: !0,
-      shouldShow: !0 === a && null != l,
+      shouldShow: !0 === o && null != l,
       onRequestClose: () => this.setState({
         popoutUserId: null
       }),
@@ -188,11 +188,11 @@ class I extends(r = a.PureComponent) {
   constructor(...e) {
     super(...e), h(this, "state", {
       popoutUserId: null
-    }), h(this, "_ref", a.createRef()), h(this, "defaultRenderUser", (e, t, n) => {
+    }), h(this, "_ref", o.createRef()), h(this, "defaultRenderUser", (e, t, n) => {
       let {
         showUserPopout: r,
-        guildId: a,
-        size: o
+        guildId: o,
+        size: a
       } = this.props;
       if (null == e)
         if (!this.props.showDefaultAvatarsForNullUsers) return (0, i.jsx)("div", {
@@ -207,7 +207,7 @@ class I extends(r = a.PureComponent) {
             className: p.avatar
           })
         } let s = (0, i.jsx)("img", {
-        src: e.getAvatarURL(a, o),
+        src: e.getAvatarURL(o, a),
         alt: e.username,
         className: p.avatar
       }, e.id);

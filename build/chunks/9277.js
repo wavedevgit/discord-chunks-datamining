@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(359959),
   l = n(442837),
   c = n(114101),
@@ -63,7 +63,7 @@ function I(e, t) {
 function S(e, t) {
   let {
     disabled: n,
-    type: a
+    type: o
   } = e, [y, v] = i.useState(!1), S = (0, l.e7)([_.Z], () => {
     var e, t;
     return y && Object.values(null != (t = null == (e = _.Z.frecencyWithoutFetchingLatest.favoriteGifs) ? void 0 : e.gifs) ? t : {}).length <= 2
@@ -77,8 +77,8 @@ function S(e, t) {
     handler: R
   });
   let P = i.useCallback(() => {
-      (0, f.RO)(g.X1.GIF, a)
-    }, [a]),
+      (0, f.RO)(g.X1.GIF, o)
+    }, [o]),
     {
       Component: w,
       events: D,
@@ -86,13 +86,13 @@ function S(e, t) {
     } = (0, c.V)(),
     x = (0, d.Q3)("ChannelGIFPickerButton");
   if (n) return null;
-  let M = T === g.X1.GIF && A === a;
+  let M = T === g.X1.GIF && A === o;
   return (0, r.jsx)(u.ua7, {
     text: S ? E.intl.string(E.t.mE2e8P) : null,
     forceOpen: !0,
     children: e => (0, r.jsx)("div", I(O({
       ref: t,
-      className: o()(g.CT, b.buttonContainer)
+      className: a()(g.CT, b.buttonContainer)
     }, e), {
       children: (0, r.jsx)(h.Z, {
         innerClassName: b.button,

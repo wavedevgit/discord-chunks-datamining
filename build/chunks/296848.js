@@ -10,8 +10,8 @@ n.d(t, {
 }), n(388685), n(539854), n(192379);
 var r = n(512722),
   i = n.n(r),
-  a = n(913527),
-  o = n.n(a),
+  o = n(913527),
+  a = n.n(o),
   s = n(99945);
 n(442837);
 var l = n(821849),
@@ -62,8 +62,8 @@ function E(e) {
     currentDaysPaused: 0
   };
   {
-    let n = o()(e.currentPeriodStart),
-      r = Math.round(o()(e.pauseEndsAt).diff(n, "days", !0)),
+    let n = a()(e.currentPeriodStart),
+      r = Math.round(a()(e.pauseEndsAt).diff(n, "days", !0)),
       i = [];
     for (let e of t) s.T[e] > r && i.push(e);
     return {
@@ -74,5 +74,5 @@ function E(e) {
 }
 
 function b(e) {
-  return null != e && o().isMoment(e) && e.isSameOrAfter(o()())
+  return null != e && a().isMoment(e) && e.isSameOrAfter(a()())
 }

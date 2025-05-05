@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 }), n(415506), n(388685), n(17089);
 var r = n(570140);
 
@@ -13,7 +13,7 @@ function i(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class a {
+class o {
   initialize() {
     this.initializedCount++, this.initializedCount > 1 || (this._initialize(), Object.entries(this.actions).forEach(e => {
       let [t, n] = e;

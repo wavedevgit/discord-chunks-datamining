@@ -6,8 +6,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(392711),
-  o = n(772848),
+  o = n(392711),
+  a = n(772848),
   s = n(442837),
   l = n(607070),
   c = n(963838),
@@ -42,9 +42,9 @@ let m = i.forwardRef(function(e, t) {
         }),
         r = null != n.emojiId,
         i = f.q.PREMIUM,
-        s = (0, a.random)(c.Jw[i].length, !1),
+        s = (0, o.random)(c.Jw[i].length, !1),
         l = {
-          id: (0, o.Z)(),
+          id: (0, a.Z)(),
           animationId: s,
           animationType: i,
           shouldResize: r,

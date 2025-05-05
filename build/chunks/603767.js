@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 }), n(388685);
 var r = n(272573);
 
@@ -13,7 +13,7 @@ function i(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class a extends r.FrameLoop {
+class o extends r.FrameLoop {
   setRAF(e, t) {
     0 !== this.id && (this._cancelAnimationFrame(this.id), this.id = 0), this._requestAnimationFrame = e, this._cancelAnimationFrame = t, this.loop()
   }
@@ -34,7 +34,7 @@ class a extends r.FrameLoop {
     }), i(this, "advance", () => {
       let e = r.Globals.now();
       if (this.startQueue.size > 0 && (this.startQueue.forEach(this.addAnimation), this.startQueue.clear()), this.timeoutQueue.length > 0 && r.Globals.batchedUpdates(() => {
-          let t = o(this.timeoutQueue, t => t.time > e);
+          let t = a(this.timeoutQueue, t => t.time > e);
           this.timeoutQueue.splice(0, t).forEach(e => e.handler())
         }), e > this.lastTime) {
         let t = Math.min(64, e - this.lastTime);
@@ -50,13 +50,13 @@ class a extends r.FrameLoop {
           let e = this.timeoutQueue.findIndex(e => e.cancel === i);
           e >= 0 && this.timeoutQueue.splice(e, 1)
         },
-        a = o(this.timeoutQueue, e => e.time > n),
+        o = a(this.timeoutQueue, e => e.time > n),
         s = {
           time: n,
           handler: e,
           cancel: i
         };
-      return this.timeoutQueue.splice(a, 0, s), this.startLoop(), s
+      return this.timeoutQueue.splice(o, 0, s), this.startLoop(), s
     }), i(this, "onFrame", e => {
       this.frameQueue.add(e), this.startLoop()
     }), i(this, "onWrite", e => {
@@ -65,7 +65,7 @@ class a extends r.FrameLoop {
   }
 }
 
-function o(e, t) {
+function a(e, t) {
   let n = e.findIndex(t);
   return n < 0 ? e.length : n
 }

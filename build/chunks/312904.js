@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(192379);
 let i = e => {
@@ -14,7 +14,7 @@ let i = e => {
       }, document.body.appendChild(n)
     })
   },
-  a = e => {
+  o = e => {
     r.useEffect(() => {
       if ("loading" === document.readyState) {
         let t = () => {
