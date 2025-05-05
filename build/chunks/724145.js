@@ -89,7 +89,9 @@ let D = () => (0, r.jsx)("div", {
     };
     return (0, r.jsx)(E.Z, {
       size: u.zxk.Sizes.MEDIUM,
-      buttonText: _ ? P.intl.string(P.t.IJI7ys) : (null == p || null == (i = p.subscription_trial) ? void 0 : i.sku_id) === R.Si.TIER_2 ? b : P.intl.string(P.t.mr4K7O),
+      textOptions: {
+        textOverride: _ ? P.intl.string(P.t.IJI7ys) : (null == p || null == (i = p.subscription_trial) ? void 0 : i.sku_id) === R.Si.TIER_2 ? b : P.intl.string(P.t.mr4K7O)
+      },
       subscriptionTier: R.Si.TIER_2,
       onSubscribeModalClose: O
     })

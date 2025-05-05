@@ -84,7 +84,9 @@ function y(e) {
           className: g.ctaActionWrapper,
           children: (0, r.jsx)(_.Z, {
             subscriptionTier: h.Si.TIER_2,
-            buttonText: m.intl.string(m.t.sEAnVF)
+            textOptions: {
+              textOverride: m.intl.string(m.t.sEAnVF)
+            }
           })
         })]
       })]

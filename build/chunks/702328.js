@@ -189,7 +189,9 @@ let ed = e => {
               showIcon: !1,
               subscriptionTier: J.Si.TIER_0,
               className: en.marginTopForButtons,
-              buttonTextClassName: eO ? en.v2SubButtonText : en.subButtonText,
+              textOptions: {
+                textClassName: eO ? en.v2SubButtonText : en.subButtonText
+              },
               buttonShineClassName: en.buttonShine
             }) : (0, i.jsx)(K.Z, {
               forceInverted: !0,
@@ -206,7 +208,9 @@ let ed = e => {
               subscriptionTier: J.Si.TIER_2,
               className: en.marginTopForButtons,
               hasActivePromotion: eY,
-              buttonTextClassName: eO ? en.v2SubButtonText : en.subButtonText,
+              textOptions: {
+                textClassName: eO ? en.v2SubButtonText : en.subButtonText
+              },
               buttonShineClassName: en.buttonShine
             }) : (0, i.jsx)(K.Z, {
               forceInverted: !0,

@@ -39,7 +39,9 @@ function x(t) {
     look: a.zxk.Looks.LINK,
     color: a.zxk.Colors.LINK,
     subscriptionTier: g.Si.TIER_2,
-    buttonText: C.intl.format(C.t["944tDg"], {}),
+    textOptions: {
+      textOverride: C.intl.format(C.t["944tDg"], {})
+    },
     showIcon: !1,
     premiumModalAnalyticsLocation: {
       section: e,

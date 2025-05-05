@@ -198,7 +198,9 @@ let k = e => {
       onSubscribeModalClose: e => {
         F(!1), e && D()
       },
-      buttonText: ei()
+      textOptions: {
+        textOverride: ei()
+      }
     })]
   })
 }

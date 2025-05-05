@@ -77,7 +77,9 @@ function I(e) {
             action: m.yM.GET_PREMIUM
           }), null == i || i()
         },
-        buttonText: y.intl.string(y.t.x6rkDg),
+        textOptions: {
+          textOverride: y.intl.string(y.t.x6rkDg)
+        },
         subscriptionTier: b.Si.TIER_2,
         premiumModalAnalyticsLocation: {
           section: g.jXE.USER_PROFILE

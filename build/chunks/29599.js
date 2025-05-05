@@ -209,7 +209,9 @@ let w = function() {
             showGradient: !0,
             className: D.promoNitroButton,
             subscriptionTier: P.Si.TIER_2,
-            buttonText: R.intl.string(R.t.mr4K7O)
+            textOptions: {
+              textOverride: R.intl.string(R.t.mr4K7O)
+            }
           })]
         }) : null;
       return (0, i.jsxs)("div", {

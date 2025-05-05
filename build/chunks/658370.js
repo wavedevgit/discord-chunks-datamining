@@ -60,7 +60,9 @@ let b = e => {
       look: l.zxk.Looks.BLANK,
       color: l.zxk.Colors.CUSTOM,
       subscriptionTier: p.Si.TIER_2,
-      buttonText: y,
+      textOptions: {
+        textOverride: y
+      },
       showGradient: !0
     }), 0 !== C.length && (null == (n = null == A ? void 0 : A.descriptionCta) ? void 0 : n.hideOnHoverComponent) !== !0 && null != O && (0, i.jsx)(l.zxk, {
       className: _,

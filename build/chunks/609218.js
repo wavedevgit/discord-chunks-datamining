@@ -112,7 +112,9 @@ function S(e) {
           onClick: () => {
             N()
           },
-          buttonText: k()
+          textOptions: {
+            textOverride: k()
+          }
         })]
       })]
     })]

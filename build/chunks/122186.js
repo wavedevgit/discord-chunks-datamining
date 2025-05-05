@@ -66,7 +66,9 @@ function _(e) {
     className: s()(g.enhancedCTA, g.ctaGradientBackground),
     iconClassName: g.premiumIcon,
     subscriptionTier: x.Si.TIER_2,
-    buttonText: a(),
+    textOptions: {
+      textOverride: a()
+    },
     size: o.zxk.Sizes.TINY,
     premiumModalAnalyticsLocation: t
   }, n))

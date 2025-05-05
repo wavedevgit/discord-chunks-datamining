@@ -50,8 +50,8 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = e => 1 - Math.pow(1 - e, 4),
-  x = {
+let x = e => 1 - Math.pow(1 - e, 4),
+  j = {
     mass: 1,
     friction: 64,
     tension: 1e3,
@@ -101,9 +101,9 @@ function O(e) {
       pointerEvents: Z ? "auto" : "none",
       backgroundColor: null != (t = null == O ? void 0 : O.baseColor) ? t : w,
       config: e => "backgroundColor" === e ? {
-        easing: j,
+        easing: x,
         duration: 200
-      } : x,
+      } : j,
       delay: 100 * !!A
     }, "respect-motion-settings"),
     R = (0, c.Yzy)(null == O ? void 0 : O.id, {
@@ -121,7 +121,7 @@ function O(e) {
         delay: A ? 100 : 150
       },
       config: {
-        easing: j,
+        easing: x,
         duration: A ? 250 : 200
       }
     }, "respect-motion-settings"),
@@ -141,7 +141,7 @@ function O(e) {
         opacity: 1
       },
       config: e => "opacity" === e ? {
-        easing: j,
+        easing: x,
         duration: 200
       } : C,
       delay: F ? 50 - 50 * e : 200 + 50 * e
@@ -166,9 +166,9 @@ function O(e) {
         delay: 150 * !A
       },
       config: e => "opacity" === e ? {
-        easing: j,
+        easing: x,
         duration: 200
-      } : Z ? x : I
+      } : Z ? j : I
     }, "respect-motion-settings"),
     U = (0, c.Yzy)(null == O ? void 0 : O.name, {
       key: k,
@@ -184,9 +184,9 @@ function O(e) {
         translateY: 0,
         delay: 150,
         config: e => "opacity" === e ? {
-          easing: j,
+          easing: x,
           duration: 200
-        } : A ? x : C
+        } : A ? j : C
       },
       leave: {
         opacity: 0,
@@ -194,9 +194,9 @@ function O(e) {
         translateY: 16 * (null == n),
         delay: F ? 100 : 50,
         config: e => "opacity" === e ? {
-          easing: j,
+          easing: x,
           duration: 200
-        } : A ? x : C
+        } : A ? j : C
       }
     }, "respect-motion-settings"),
     W = h.intl.string(N ? h.t.esVyo6 : h.t.UQqFCA);

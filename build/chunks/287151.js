@@ -449,7 +449,9 @@ class ed extends(i = o.PureComponent) {
                 children: ee.intl.string(ee.t.W1bMkp)
               }), (0, r.jsx)(N.Z, {
                 subscriptionTier: Q.Si.TIER_2,
-                buttonText: ee.intl.string(ee.t.mr4K7O),
+                textOptions: {
+                  textOverride: ee.intl.string(ee.t.mr4K7O)
+                },
                 className: er.burstReactionTooltipUpsellCta,
                 onClick: e => e.stopPropagation()
               })]
