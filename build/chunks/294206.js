@@ -101,12 +101,14 @@ function F(e) {
     text: i,
     children: o,
     tooltipPosition: s = "top",
-    refreshEnabled: l = !1
+    refreshEnabled: l = !1,
+    ref: c
   } = e;
   return (0, r.jsx)(d.ua7, {
     text: i,
     position: s,
     children: e => (0, r.jsx)(d.P3F, L(w({}, e), {
+      innerRef: c,
       "aria-label": i,
       className: a()(l ? P.secondaryButtonRefresh : P.secondaryButton, {
         [P.buttonDisabled]: t
