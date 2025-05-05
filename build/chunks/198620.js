@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  B_: () => R,
+  B_: () => P,
   MO: () => b,
   _M: () => y,
   k5: () => N,
   q5: () => O
 }), n(35282), n(388685);
-var r, i, a, o = n(544891),
+var r, i, o, a = n(544891),
   s = n(70956),
   l = n(591759),
   c = n(981631);
@@ -20,7 +20,7 @@ let f = new Set(["/attachments/", "/ephemeral-attachments/"]),
   _ = new Set(["/external/"]),
   p = +s.Z.Millis.HOUR,
   h = new Set([window.GLOBAL_ENV.CDN_HOST, null == (r = window.GLOBAL_ENV.MEDIA_PROXY_ENDPOINT) ? void 0 : r.substring(2)].map(u).filter(Boolean)),
-  m = new Set((null != (a = null == (i = window.GLOBAL_ENV.IMAGE_PROXY_ENDPOINTS) ? void 0 : i.split(",")) ? a : []).map(e => e.substring(2)).map(u).filter(Boolean)),
+  m = new Set((null != (o = null == (i = window.GLOBAL_ENV.IMAGE_PROXY_ENDPOINTS) ? void 0 : i.split(",")) ? o : []).map(e => e.substring(2)).map(u).filter(Boolean)),
   g = !1,
   E = !1;
 
@@ -77,7 +77,7 @@ function N(e) {
   return e.attachments.some(S) || e.embeds.some(A)
 }
 async function C(e) {
-  let t = await o.tn.post({
+  let t = await a.tn.post({
     url: c.ANM.ATTACHMENTS_REFRESH_URLS,
     body: {
       attachment_urls: [e]
@@ -86,7 +86,7 @@ async function C(e) {
   });
   return t.ok ? t.body.refreshed_urls[0].refreshed : void 0
 }
-async function R(e) {
+async function P(e) {
   let t = l.Z.toURLSafe(e);
   if (null == t || !I(t)) return e;
   let n = await C(e);

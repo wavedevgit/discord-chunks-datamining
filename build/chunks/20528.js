@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => M
+  Z: () => k
 }), n(388685);
 var r = n(392711),
   i = n(846519),
-  a = n(570140),
-  o = n(872810),
+  o = n(570140),
+  a = n(872810),
   s = n(147913),
   l = n(458725),
   c = n(442741),
@@ -45,12 +45,12 @@ function S(e) {
   }
   return e
 }
-let T = (0, r.debounce)(o.xc, 1e3),
+let T = (0, r.debounce)(a.xc, 1e3),
   A = new i.V7,
   N = new i.V7,
   C = 3 * b.Z.Millis.MINUTE,
-  R = 5 * b.Z.Millis.SECOND,
-  P = 12 * b.Z.Millis.SECOND,
+  P = 5 * b.Z.Millis.SECOND,
+  R = 12 * b.Z.Millis.SECOND,
   w = null;
 
 function D(e, t) {
@@ -60,25 +60,25 @@ function D(e, t) {
   let r = d.Z.getStreamForUser(t, n.getGuildId());
   if (null == r) return !1;
   let i = (0, y.V9)(r);
-  return i !== w && (w = i, (0, o.rn)(r, {
+  return i !== w && (w = i, (0, a.rn)(r, {
     noFocus: !0
   }), !0)
 }
 
 function L(e, t) {
   let n = null != t ? t : h.Z.getPreferredRegion();
-  null != n && n !== h.Z.getRegion(g.Z.getHostname(g.Z.getActiveStreamKey())) && (0, o.dV)(e, n)
+  null != n && n !== h.Z.getRegion(g.Z.getHostname(g.Z.getActiveStreamKey())) && (0, a.dV)(e, n)
 }
 
 function x(e, t) {
-  g.Z.getAllActiveStreamKeys().includes(e) || N.start(t ? P : R, () => {
-    a.Z.dispatch({
+  g.Z.getAllActiveStreamKeys().includes(e) || N.start(t ? R : P, () => {
+    o.Z.dispatch({
       type: "STREAM_TIMED_OUT",
       streamKey: e
     })
   })
 }
-class M extends s.Z {
+class k extends s.Z {
   constructor(...e) {
     super(...e), I(this, "handleStreamWatch", e => {
       let {
@@ -89,7 +89,7 @@ class M extends s.Z {
       } = (0, y.my)(t), i = _.Z.getChannel(r);
       x(t, null == i ? void 0 : i.isGuildStageVoice()), n || d.Z.getAllActiveStreams().forEach(e => {
         let n = (0, y.V9)(e);
-        e.ownerId !== f.default.getId() && n !== t && (0, o.g)(n, !1)
+        e.ownerId !== f.default.getId() && n !== t && (0, a.g)(n, !1)
       })
     }), I(this, "handleStreamStart", e => {
       let {
@@ -114,8 +114,8 @@ class M extends s.Z {
         guildId: i
       } = (0, y.my)(n);
       if (null == i || null == r || r !== (null == (t = E.default.getCurrentUser()) ? void 0 : t.id)) return;
-      let a = p.Z.getMemberCount(i);
-      null == a || a < 2 || a > O.tB || u.eo.getSetting() && T(n)
+      let o = p.Z.getMemberCount(i);
+      null == o || o < 2 || o > O.tB || u.eo.getSetting() && T(n)
     }), I(this, "handleStreamUpdate", () => {
       N.stop()
     }), I(this, "handleStreamDelete", e => {
@@ -125,7 +125,7 @@ class M extends s.Z {
       } = e;
       N.stop(), t === v.si2.STREAM_FULL && ((0, l.kr)(S({
         type: l.u.STREAM_FULL
-      }, (0, c.rT)(n))), (0, o.aP)(n, !1), this.platformShowStreamFull())
+      }, (0, c.rT)(n))), (0, a.aP)(n, !1), this.platformShowStreamFull())
     }), I(this, "handleStreamClose", () => {
       A.stop(), N.stop()
     }), I(this, "handleVoiceChannelSelect", e => {
@@ -155,11 +155,11 @@ class M extends s.Z {
         if (this.platformHandleVoiceStateUpdate(e), t !== f.default.getId() && null != n) {
           if (i && D(n, t)) return;
           let e = d.Z.getActiveStreamForUser(t, r);
-          if (null != e && e.channelId === n && (i || e.state === v.jm8.ENDED || A.start(C, () => (0, o.aP)((0, y.V9)(e), !1)), i && e.state === v.jm8.ENDED)) {
+          if (null != e && e.channelId === n && (i || e.state === v.jm8.ENDED || A.start(C, () => (0, a.aP)((0, y.V9)(e), !1)), i && e.state === v.jm8.ENDED)) {
             A.stop();
             let e = d.Z.getStreamForUser(t, r);
             if (null == e) return;
-            (0, o.rn)(e)
+            (0, a.rn)(e)
           }
         }
       })
@@ -181,7 +181,7 @@ class M extends s.Z {
       } = e, n = d.Z.getCurrentUserActiveStream();
       if (null != n) {
         let e = t === v.FQ1.PAUSED;
-        (0, o.tK)(n, e)
+        (0, a.tK)(n, e)
       }
     }), I(this, "actions", {
       STREAM_WATCH: this.handleStreamWatch,

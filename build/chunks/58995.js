@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => M
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(704215),
   c = n(996146),
@@ -30,7 +30,7 @@ var r = n(255367),
   N = n(870751),
   C = n(302195);
 
-function R(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -39,14 +39,14 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 
-function P(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      R(e, t, n[t])
+      P(e, t, n[t])
     })
   }
   return e
@@ -74,12 +74,12 @@ function x(e) {
   let {
     animatedIconComponent: t,
     hovered: i,
-    isCoachmarkDismissed: a
-  } = e, s = !a || i;
+    isCoachmarkDismissed: o
+  } = e, s = !o || i;
   return (0, r.jsxs)("div", {
     className: N.iconContainer,
     children: [(0, r.jsx)("div", {
-      className: o()(N.decorativeLayer, {
+      className: a()(N.decorativeLayer, {
         [N.decorativeLayerActive]: s
       }),
       style: {
@@ -90,7 +90,7 @@ function x(e) {
         importData: () => n.e("39298").then(n.t.bind(n, 324952, 19))
       })
     }), (0, r.jsx)("div", {
-      className: o()(N.giftIconButton, {
+      className: a()(N.giftIconButton, {
         [N.giftIconButtonActive]: s
       }),
       style: {
@@ -100,7 +100,7 @@ function x(e) {
         color: "currentColor"
       })
     }), (0, r.jsx)("div", {
-      className: o()(N.decorativeLayer, {
+      className: a()(N.decorativeLayer, {
         [N.decorativeLayerActive]: s
       }),
       style: {
@@ -114,20 +114,20 @@ function x(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     disabled: t,
     channel: n
   } = e, {
-    analyticsLocations: a
-  } = (0, f.ZP)(d.Z.GIFT_BUTTON), [o, u] = i.useState(!1), y = (0, s.e7)([E.Z], () => !(null === E.Z || void 0 === E.Z ? void 0 : E.Z.hasLayers())), R = (0, s.e7)([b.default], () => b.default.getCurrentUser()), w = null != R ? O.default.age(R.id) : 0, M = !t && y && w >= L, {
-    enabled: k
+    analyticsLocations: o
+  } = (0, f.ZP)(d.Z.GIFT_BUTTON), [a, u] = i.useState(!1), y = (0, s.e7)([E.Z], () => !(null === E.Z || void 0 === E.Z ? void 0 : E.Z.hasLayers())), P = (0, s.e7)([b.default], () => b.default.getCurrentUser()), w = null != P ? O.default.age(P.id) : 0, k = !t && y && w >= L, {
+    enabled: M
   } = m.O.useExperiment({
     location: "gift-button"
   }), j = [];
-  k && M && j.push(l.z.NITROWEEN_COACHMARKS);
-  let [U, G] = (0, p.US)(j), B = null != U, V = (0, v.Ft)(n), {
-    Component: F,
+  M && k && j.push(l.z.NITROWEEN_COACHMARKS);
+  let [U, G] = (0, p.US)(j), B = null != U, F = (0, v.Ft)(n), {
+    Component: V,
     events: Z,
     play: H
   } = (0, c.$)();
@@ -135,10 +135,10 @@ function M(e) {
   let Y = () => {
     (0, h.Z)({
       isGift: !0,
-      giftRecipient: null == V ? void 0 : V,
+      giftRecipient: null == F ? void 0 : F,
       giftMessage: A.intl.string(A.t["rX/m/f"]),
       initialPlanId: null,
-      analyticsLocations: a,
+      analyticsLocations: o,
       analyticsObject: {
         page: n.isPrivate() ? S.ZY5.DM_CHANNEL : S.ZY5.GUILD_CHANNEL,
         section: S.jXE.CHANNEL_TEXT_AREA,
@@ -150,7 +150,7 @@ function M(e) {
   return (0, r.jsxs)("div", {
     className: N.container,
     onMouseEnter: () => {
-      o || u(!0)
+      a || u(!0)
     },
     onMouseLeave: () => {
       u(!1)
@@ -159,7 +159,7 @@ function M(e) {
       onComplete: () => u(!1),
       onCheckItOutClick: Y,
       markAsDismissed: G
-    }), (0, r.jsx)(I.Z, D(P({
+    }), (0, r.jsx)(I.Z, D(R({
       innerClassName: C.button,
       "aria-label": A.intl.string(A.t.Z1RnTk),
       isActive: !1,
@@ -170,11 +170,11 @@ function M(e) {
       }
     }, Z), {
       children: (0, r.jsx)(x, {
-        animatedIconComponent: F,
-        hovered: o,
+        animatedIconComponent: V,
+        hovered: a,
         isCoachmarkDismissed: !B
       })
     }))]
   })
 }
-let k = i.memo(M)
+let M = i.memo(k)

@@ -1,6 +1,6 @@
 /**
   Module ID: 74767
-  Original File Name: 742d70c501e23407
+  Original File Name: 79af96916c71d787
 **/
 .content__79cbe {
     border-radius: 8px;
@@ -4107,7 +4107,7 @@ input[type=checked]:focus-visible+.label_df4aaf {
 }
 
 :where(.visual-refresh) .singleUserRoot__4ad81 {
-    background: radial-gradient(110.79% 100% at 50% 100%,var(--background-secondary) 60%,var(--transparent) 100%),linear-gradient(270deg,var(--bg-tile-gradient-magenta-end) 0,var(--bg-tile-gradient-magenta-start) 80%),linear-gradient(0deg,var(--background-secondary),var(--background-secondary)),var(--opacity-black-20)
+    background: radial-gradient(110.79% 100% at 50% 100%,var(--background-secondary) 60%,var(--transparent) 100%),linear-gradient(270deg,var(--background-tile-gradient-pink-end) 0,var(--background-tile-gradient-pink-start) 80%),linear-gradient(0deg,var(--background-secondary),var(--background-secondary)),var(--opacity-black-20)
 }
 
 .root_f555ee {
@@ -13199,4 +13199,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=742d70c501e23407.css.map*/
+/*# sourceMappingURL=79af96916c71d787.css.map*/

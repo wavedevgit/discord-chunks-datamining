@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => V
+  Z: () => F
 }), n(415506), n(388685);
 var r, i = n(442837),
-  a = n(759174),
-  o = n(570140),
+  o = n(759174),
+  a = n(570140),
   s = n(786761),
   l = n(594174),
   c = n(686478);
@@ -45,7 +45,7 @@ function _(e) {
 function p(e) {
   return _(e.dueAt) - _(e.savedAt)
 }
-let h = new a.h(e => {
+let h = new o.h(e => {
     let {
       saveData: t
     } = e;
@@ -81,8 +81,8 @@ function I(e) {
   null == h.get(n) && (g = Date.now()), h.set(n, e);
   let r = e.saveData.messageId,
     i = e.saveData.channelId,
-    a = null != (t = y.get(i)) ? t : new Set;
-  a.add(r), y.set(i, a), null == e.message && b.add(r), null != e.saveData.dueAt && new Date > e.saveData.dueAt ? E.add(r) : E.delete(r)
+    o = null != (t = y.get(i)) ? t : new Set;
+  o.add(r), y.set(i, o), null == e.message && b.add(r), null != e.saveData.dueAt && new Date > e.saveData.dueAt ? E.add(r) : E.delete(r)
 }
 
 function S(e) {
@@ -117,14 +117,14 @@ function C(e) {
   I(t)
 }
 
-function R(e) {
+function P(e) {
   let {
     savedMessageData: t
   } = e;
   return S(t)
 }
 
-function P(e) {
+function R(e) {
   let {
     messageId: t,
     channelId: n
@@ -133,8 +133,8 @@ function P(e) {
     channelId: n
   }), i = h.get(r);
   if ((null == i ? void 0 : i.message) == null) return !1;
-  let a = d({}, i);
-  return a.message = null, h.set(r, a), !0
+  let o = d({}, i);
+  return o.message = null, h.set(r, o), !0
 }
 
 function w(e) {
@@ -142,7 +142,7 @@ function w(e) {
     id: t,
     channelId: n
   } = e;
-  return P({
+  return R({
     messageId: t,
     channelId: n
   })
@@ -153,7 +153,7 @@ function D(e) {
     ids: t,
     channelId: n
   } = e;
-  for (let e of t) P({
+  for (let e of t) R({
     messageId: e,
     channelId: n
   })
@@ -179,7 +179,7 @@ function x() {
   m = !0
 }
 
-function M(e) {
+function k(e) {
   let {
     channel: t
   } = e;
@@ -187,7 +187,7 @@ function M(e) {
   m = !0
 }
 
-function k(e) {
+function M(e) {
   let {
     channels: t
   } = e;
@@ -268,20 +268,20 @@ class B extends(r = i.ZP.Store) {
   }
 }
 u(B, "displayName", "SavedMessagesStore");
-let V = new B(o.Z, {
+let F = new B(a.Z, {
   POST_CONNECTION_OPEN: T,
   LOGOUT: A,
   SAVED_MESSAGES_UPDATE: N,
   SAVED_MESSAGE_CREATE: C,
-  SAVED_MESSAGE_DELETE: R,
+  SAVED_MESSAGE_DELETE: P,
   MESSAGE_DELETE: w,
   MESSAGE_DELETE_BULK: D,
   MESSAGE_UPDATE: L,
   GUILD_CREATE: x,
   GUILD_UPDATE: x,
   GUILD_DELETE: x,
-  CHANNEL_CREATE: M,
-  CHANNEL_UPDATES: k,
+  CHANNEL_CREATE: k,
+  CHANNEL_UPDATES: M,
   CHANNEL_DELETE: j,
   GUILD_MEMBER_UPDATE: U,
   GUILD_ROLE_CREATE: x,

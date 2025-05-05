@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(780384),
-  a = n(481060),
-  o = n(410030),
+  o = n(481060),
+  a = n(410030),
   s = n(74538),
   l = n(104494),
   c = n(639119),
@@ -42,8 +42,8 @@ function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -51,8 +51,8 @@ function m(e, t) {
 function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let E = e => {
@@ -61,12 +61,12 @@ let E = e => {
       subscriptionTier: n,
       trialDurationCopy: r,
       isPersistentCTA: i,
-      shouldShowReferralTrialCopy: a,
-      subscriptionTrial: o
+      shouldShowReferralTrialCopy: o,
+      subscriptionTrial: a
     } = e;
-    return t && a ? f.intl.string(f.t.bXTClZ) : t && (n === d.Si.TIER_2 || i) ? (0, s.Rt)({
-      intervalType: null == o ? void 0 : o.interval,
-      intervalCount: null == o ? void 0 : o.interval_count
+    return t && o ? f.intl.string(f.t.bXTClZ) : t && (n === d.Si.TIER_2 || i) ? (0, s.Rt)({
+      intervalType: null == a ? void 0 : a.interval,
+      intervalCount: null == a ? void 0 : a.interval_count
     }) : t ? f.intl.formatToPlainString(f.t.nTmm2t, {
       freeTrialText: r
     }) : void 0
@@ -86,27 +86,27 @@ let E = e => {
       confirmationFooter: I,
       paymentModalBanner: S
     } = e, T = m(e, ["textOptions", "forceInverted", "subscriptionTier", "hasActivePromotion", "isPersistentCTA", "useShorterCTA", "showGradient", "confirmationFooter", "paymentModalBanner"]);
-    let A = (0, o.ZP)(),
+    let A = (0, a.ZP)(),
       N = !v && ((0, i.wj)(A) || n),
       C = (0, c.N)(),
-      R = null == C ? void 0 : C.subscription_trial,
-      P = (0, s.a5)({
-        intervalType: null == R ? void 0 : R.interval,
-        intervalCount: null == R ? void 0 : R.interval_count
+      P = null == C ? void 0 : C.subscription_trial,
+      R = (0, s.a5)({
+        intervalType: null == P ? void 0 : P.interval,
+        intervalCount: null == P ? void 0 : P.interval_count
       }),
       w = (0, l.Ng)(),
-      D = null != R && p === R.sku_id,
+      D = null != P && p === P.sku_id,
       L = (null == C ? void 0 : C.trial_id) === d.a7,
       x = g ? f.intl.string(f.t.J61px8) : null != w ? b(p, O, y, w.discount.amount) : E({
         showTrialCTA: D,
         subscriptionTier: p,
-        trialDurationCopy: P,
+        trialDurationCopy: R,
         isPersistentCTA: y,
         shouldShowReferralTrialCopy: L,
-        subscriptionTrial: R
+        subscriptionTrial: P
       });
     return (0, r.jsx)(u.Z, h({
-      color: N ? a.Ttl.BRAND_INVERTED : a.Ttl.BRAND,
+      color: N ? o.Ttl.BRAND_INVERTED : o.Ttl.BRAND,
       buttonShineClassName: "buttonShineClassName" in T ? T.buttonShineClassName : N ? _.brandShine : void 0,
       textOptions: h({
         textOverride: x,

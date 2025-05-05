@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(415506), n(35282), n(704826), n(539854), n(49124);
 var r = n(512722),
   i = n.n(r),
-  a = n(31775),
-  o = n.n(a),
+  o = n(31775),
+  a = n.n(o),
   s = n(159635),
   l = n(25209),
   c = n(710845),
@@ -248,7 +248,7 @@ function C(e) {
     originalMatch: e
   }
 }
-let R = {
+let P = {
     url: {
       parse: e => null == (0, u.yw)(e[1]) ? {
         type: "text",
@@ -291,18 +291,18 @@ let R = {
       }
     }
   },
-  P = /(-# +)/,
-  w = (0, _.Z)([T, R]),
-  D = (0, _.Z)([A, R]),
+  R = /(-# +)/,
+  w = (0, _.Z)([T, P]),
+  D = (0, _.Z)([A, P]),
   L = l._p(w),
   x = l._p(D),
-  M = {
+  k = {
     max: 1 / 0,
     maxAge: +p.Z.Millis.MINUTE,
     updateAgeOnGet: !0
   },
-  k = new(o())(M),
-  j = new(o())(M);
+  M = new(a())(k),
+  j = new(a())(k);
 
 function U(e, t, n) {
   let r = [],
@@ -312,9 +312,9 @@ function U(e, t, n) {
       guildId: t,
       isSlate: !0
     },
-    a = n ? x : L,
-    o = n ? j : k,
-    s = o.get(e);
+    o = n ? x : L,
+    a = n ? j : M,
+    s = a.get(e);
   if (null != s) return s;
   let l = e.replace(/\r\n/g, " \n").replace(/[\r\f]/g, " ").replace(/\t/g, " ") + "\n\n",
     c = {
@@ -323,11 +323,11 @@ function U(e, t, n) {
         0: ""
       },
       type: "paragraph",
-      content: a(l, !0, i)
+      content: o(l, !0, i)
     };
-  V(r, l, c, 0, []);
+  F(r, l, c, 0, []);
   let u = B(r);
-  return o.set(e, u), u
+  return a.set(e, u), u
 }
 
 function G(e, t) {
@@ -335,27 +335,27 @@ function G(e, t) {
     r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
     i = g.r(e);
   if (i.push(e.length), 1 === i.length && n) return [];
-  let a = 0,
-    o = n,
+  let o = 0,
+    a = n,
     s = [];
   for (let n of i) {
-    if (o) s.push({
-      text: e.substring(a, n),
-      start: a,
+    if (a) s.push({
+      text: e.substring(o, n),
+      start: o,
       attributes: ["codeBlockText"],
       data: void 0
     });
     else {
-      let o = n === i[i.length - 2] ? e.substring(n + 3) : "";
-      n += 3 + (null != o.match(g.Q) ? o : "").length;
-      let l = e.substring(a, n);
+      let a = n === i[i.length - 2] ? e.substring(n + 3) : "";
+      n += 3 + (null != a.match(g.Q) ? a : "").length;
+      let l = e.substring(o, n);
       "" !== l && U(l, t, r).forEach(e => {
         s.push(O(b({}, e), {
-          start: e.start + a
+          start: e.start + o
         }))
       })
     }
-    o = !o, a = n
+    a = !a, o = n
   }
   return s
 }
@@ -366,15 +366,15 @@ function B(e) {
   for (let n = 1; n < e.length; n++) {
     let r = t[t.length - 1],
       i = r.start + r.text.length,
-      a = e[n];
-    a.start === i && null == r.data && null == a.data && r.attributes.join("-") === a.attributes.join("-") ? r.text += a.text : t.push(a)
+      o = e[n];
+    o.start === i && null == r.data && null == o.data && r.attributes.join("-") === o.attributes.join("-") ? r.text += o.text : t.push(o)
   }
   return t
 }
 
-function V(e, t, n, r, a) {
+function F(e, t, n, r, o) {
   let {
-    content: o,
+    content: a,
     type: s,
     originalMatch: l
   } = n;
@@ -384,7 +384,7 @@ function V(e, t, n, r, a) {
     case "paragraph":
     case "text":
     case "emoticon":
-      return Z(e, t, o || "", r, a);
+      return Z(e, t, a || "", r, o);
     case "emoji":
     case "customEmoji": {
       let i = t.substring(r);
@@ -417,17 +417,17 @@ function V(e, t, n, r, a) {
     case "silentPrefix":
     case "channel": {
       let {
-        text: a,
-        id: o
+        text: o,
+        id: a
       } = n;
-      if (null != a) return i()(a === l[0], "Slate: text mentions must exactly match the regex match"), Y({
+      if (null != o) return i()(o === l[0], "Slate: text mentions must exactly match the regex match"), Y({
         result: e,
         sourceText: t,
-        text: a,
+        text: o,
         originalStart: r,
         attributes: ["textMention"],
         data: {
-          text: a
+          text: o
         }
       });
       return Y({
@@ -437,7 +437,7 @@ function V(e, t, n, r, a) {
         originalStart: r,
         attributes: [s],
         data: {
-          id: o
+          id: a
         }
       })
     }
@@ -469,7 +469,7 @@ function V(e, t, n, r, a) {
         attributes: [s],
         data: n
       });
-      return Z(e, t, l[0], r, a);
+      return Z(e, t, l[0], r, o);
     case "em":
     case "autolink":
     case "mailto":
@@ -489,15 +489,15 @@ function V(e, t, n, r, a) {
       let {
         before: n,
         after: i
-      } = F(t, s, r, l);
-      return r = H(e, t, n, r, "syntaxBefore"), a.push(s), r = Z(e, t, null != o ? o : "", r, a), a.pop(), r = H(e, t, i, r, "syntaxAfter"), W(t, r)
+      } = V(t, s, r, l);
+      return r = H(e, t, n, r, "syntaxBefore"), o.push(s), r = Z(e, t, null != a ? a : "", r, o), o.pop(), r = H(e, t, i, r, "syntaxAfter"), W(t, r)
     }
     default:
       throw Error("Slate: Unknown rule type: ".concat(s))
   }
 }
 
-function F(e, t, n, r) {
+function V(e, t, n, r) {
   if ("inlineCode" === t) return {
     before: r[1],
     after: r[1]
@@ -507,7 +507,7 @@ function F(e, t, n, r) {
     after: "_"
   };
   if ("subtext" === t) return {
-    before: P.exec(r.input)[1],
+    before: R.exec(r.input)[1],
     after: ""
   };
   let i = I["link" === t ? "url" : t];
@@ -524,21 +524,21 @@ function Z(e, t, n, r, i) {
     attributes: i,
     data: null
   }) : (n instanceof Array || (n = [n]), n.forEach(n => {
-    r = V(e, t, n, r, i)
+    r = F(e, t, n, r, i)
   })), W(t, r)
 }
 
 function H(e, t, n, r, i) {
   if (n.length > 0) {
-    let a = t.indexOf(n, r);
-    if (-1 === a) return K('Slate: Unable to find syntax characters "'.concat(n, '" at position ').concat(r), n, r);
-    let o = t.substring(r, a + n.length);
+    let o = t.indexOf(n, r);
+    if (-1 === o) return K('Slate: Unable to find syntax characters "'.concat(n, '" at position ').concat(r), n, r);
+    let a = t.substring(r, o + n.length);
     e.push({
-      text: o,
+      text: a,
       attributes: [i],
       start: r,
       data: null
-    }), r = a + n.length
+    }), r = o + n.length
   }
   return r
 }
@@ -549,8 +549,8 @@ function Y(e) {
     sourceText: n,
     text: r,
     originalStart: i,
-    attributes: a,
-    data: o
+    attributes: o,
+    data: a
   } = e, s = W(n, i);
   for (;
     "\n" === r.charAt(0) || " " === r.charAt(0);) r = r.substring(1);
@@ -560,9 +560,9 @@ function Y(e) {
     u = n.substring(i, c);
   return t.push({
     text: u,
-    attributes: a.slice(),
+    attributes: o.slice(),
     start: i,
-    data: o
+    data: a
   }), c
 }
 

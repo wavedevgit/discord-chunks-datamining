@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(512722),
   i = n.n(r),
-  a = n(392711),
-  o = n.n(a),
+  o = n(392711),
+  a = n.n(o),
   s = n(830496);
 let l = {
   getUploadPayload: function(e) {
@@ -15,7 +15,7 @@ let l = {
     return i()(null != r, "file data must not be empty"), {
       filename: r.name,
       file_size: r.size,
-      id: o().uniqueId(),
+      id: a().uniqueId(),
       is_clip: null != e.clip,
       title: null == (t = e.clip) ? void 0 : t.name,
       application_id: null == (n = e.clip) ? void 0 : n.applicationId,

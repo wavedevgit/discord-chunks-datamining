@@ -1,26 +1,26 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  BU: () => R,
+  BU: () => P,
   Bn: () => w,
   DZ: () => A,
   PS: () => C,
   T6: () => I,
-  Z1: () => M,
+  Z1: () => k,
   aj: () => N,
   bE: () => j,
   fy: () => g.fy,
   hW: () => T,
-  nm: () => P,
+  nm: () => R,
   po: () => L,
-  sr: () => k,
+  sr: () => M,
   w9: () => x,
   z2: () => D
 }), n(415506), n(388685), n(410992), n(227481), n(730884), n(20464), n(341884), n(364341), n(629680), n(505025), n(918970), n(121784), n(644351), n(146733);
 var r = n(512722),
   i = n.n(r),
-  a = n(259443),
-  o = n(544891),
+  o = n(259443),
+  a = n(544891),
   s = n(704215),
   l = n(377108),
   c = n(524437),
@@ -68,11 +68,11 @@ class S {
     let r = this.ProtoClass.fields.find(t => t.localName === e);
     if (null == r) throw Error("Unknown proto field name ".concat(String(e)));
     let i = r.T(),
-      a = this.getCurrentValue()[e],
-      o = null != a ? i.fromBinary(i.toBinary(a), m.Uc) : i.create();
-    if (!1 === t(o)) return;
+      o = this.getCurrentValue()[e],
+      a = null != o ? i.fromBinary(i.toBinary(o), m.Uc) : i.create();
+    if (!1 === t(a)) return;
     let s = this.ProtoClass.create();
-    s[e] = o, __OVERLAY__ ? d.Z.dispatch({
+    s[e] = a, __OVERLAY__ ? d.Z.dispatch({
       type: "USER_SETTINGS_PROTO_ENQUEUE_UPDATE",
       settings: {
         type: this.type,
@@ -93,7 +93,7 @@ class S {
     i()(!__OVERLAY__, "this cannot run in the overlay");
     let {
       editInfo: r
-    } = this.getEditInfo(), a = {
+    } = this.getEditInfo(), o = {
       timeout: r.timeout
     };
     if (!r.loaded) throw Error("Cannot edit user settings proto because we have not yet loaded the stored version from the DB");
@@ -106,12 +106,12 @@ class S {
       partial: !0,
       local: !0
     });
-    let o = null != (n = t.delaySeconds) ? n : 0;
-    if (null != a.timeout && o < r.timeoutDelay && !r.rateLimited && (clearTimeout(a.timeout), a.timeout = void 0), null == a.timeout) {
-      let e = o * f.Z.Millis.SECOND;
-      t.jitter && (e += Math.floor(Math.random() * Math.min(e, 30 * f.Z.Millis.SECOND))), this.logger.log("Scheduling save from markDirty"), a.timeout = setTimeout(this.persistChanges, e), a.timeoutDelay = o
+    let a = null != (n = t.delaySeconds) ? n : 0;
+    if (null != o.timeout && a < r.timeoutDelay && !r.rateLimited && (clearTimeout(o.timeout), o.timeout = void 0), null == o.timeout) {
+      let e = a * f.Z.Millis.SECOND;
+      t.jitter && (e += Math.floor(Math.random() * Math.min(e, 30 * f.Z.Millis.SECOND))), this.logger.log("Scheduling save from markDirty"), o.timeout = setTimeout(this.persistChanges, e), o.timeoutDelay = a
     }
-    null != t.cleanup && (a.cleanupFuncs = [...r.cleanupFuncs, ...t.cleanup]), null == r.protoToSave ? a.protoToSave = e : a.protoToSave = (0, m.re)(this.ProtoClass, r.protoToSave, e), this.dispatchChanges(a)
+    null != t.cleanup && (o.cleanupFuncs = [...r.cleanupFuncs, ...t.cleanup]), null == r.protoToSave ? o.protoToSave = e : o.protoToSave = (0, m.re)(this.ProtoClass, r.protoToSave, e), this.dispatchChanges(o)
   }
   dispatchChanges(e) {
     d.Z.dispatch({
@@ -147,7 +147,7 @@ class S {
           body: {
             settings: t
           }
-        } = await o.tn.get({
+        } = await a.tn.get({
           url: E.ANM.USER_SETTINGS_PROTO(this.type),
           rejectWithError: !1
         }), n = (0, m.d5)(this.ProtoClass, t);
@@ -158,7 +158,7 @@ class S {
         let r = p.Z[this.type],
           {
             proto: i,
-            isDirty: a,
+            isDirty: o,
             cleanupFuncs: s
           } = (0, m.xt)(n, r);
         return await d.Z.dispatch({
@@ -167,9 +167,9 @@ class S {
             type: this.type,
             proto: n
           },
-          resetEditInfo: a || e,
+          resetEditInfo: o || e,
           local: !1
-        }), a && this.markDirtyFromMigration(i, s), n
+        }), o && this.markDirtyFromMigration(i, s), n
       } catch (e) {
         throw this.dispatchChanges({
           loading: !1
@@ -229,7 +229,7 @@ class S {
         this.saveLastSendTime();
         let {
           body: n
-        } = await o.tn.patch({
+        } = await a.tn.patch({
           url: E.ANM.USER_SETTINGS_PROTO(this.type),
           body: {
             settings: t,
@@ -264,7 +264,7 @@ class S {
         } else if (400 === e.status && (null == (n = e.body) ? void 0 : n.code) === E.evJ.INVALID_USER_SETTINGS_DATA) throw this.logger.log("Reloading do to invalid data"), this.loadIfNecessary(!0), e;
         else throw this.logger.log("Unknown user settings error"), e
       }
-    }, this.logger = new a.Yd(this.ProtoClass.typeName)
+    }, this.logger = new o.Yd(this.ProtoClass.typeName)
   }
 }
 let T = new S(c.o8, g.yP.PRELOADED_USER_SETTINGS),
@@ -278,11 +278,11 @@ function C(e, t, n) {
   return T.updateAsync("guilds", n => (0, m.u0)(n, e, t), n)
 }
 
-function R(e, t, n, r) {
+function P(e, t, n, r) {
   return C(e, e => (0, m.uL)(e, t, n), r)
 }
 
-function P(e) {
+function R(e) {
   return T.updateAsync("userContent", t => {
     if ((0, _.jl)(t.dismissedContents, e)) return !1;
     t.dismissedContents = (0, _.GV)(t.dismissedContents, e)
@@ -326,14 +326,14 @@ function x(e) {
   }, g.fy.INFREQUENT_USER_ACTION)
 }
 
-function M(e) {
+function k(e) {
   return T.updateAsync("userContent", t => {
     if (null == t.recurringDismissibleContentStates[e]) return !1;
     t.recurringDismissibleContentStates[e].lastDismissedVersion = 0, t.recurringDismissibleContentStates[e].lastDismissedAtMs = "0", t.recurringDismissibleContentStates[e].lastDismissedObjectId = "0"
   }, g.fy.INFREQUENT_USER_ACTION)
 }
 
-function k() {
+function M() {
   return T.updateAsync("userContent", e => {
     e.dismissedContents = new Uint8Array, e.recurringDismissibleContentStates = {}
   }, g.fy.INFREQUENT_USER_ACTION)

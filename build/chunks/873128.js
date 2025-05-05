@@ -1,16 +1,16 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(442837),
   i = n(994752);
 
-function a(e) {
+function o(e) {
   let {
     guildId: t,
     leaderboardId: n,
-    intervalOffset: a = 0
+    intervalOffset: o = 0
   } = e;
-  return (0, r.e7)([i.Z], () => i.Z.get(t, n, a))
+  return (0, r.e7)([i.Z], () => i.Z.get(t, n, o))
 }

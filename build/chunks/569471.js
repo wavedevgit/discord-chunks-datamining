@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => x
 }), n(388685), n(997841);
 var r, i = n(392711),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(570140),
   l = n(798140),
   c = n(131704),
@@ -54,7 +54,7 @@ let h = {},
   g = new Set;
 
 function E(e) {
-  h = a()(h).reject(t => t.guildId === e).keyBy("threadId").value()
+  h = o()(h).reject(t => t.guildId === e).keyBy("threadId").value()
 }
 
 function b(e) {
@@ -90,7 +90,7 @@ function I(e) {
   let {
     joinedThreads: t
   } = e;
-  h = a()(t).map(e => p(f({}, e), {
+  h = o()(t).map(e => p(f({}, e), {
     joinTimestamp: new Date(e.joinTimestamp)
   })).keyBy("threadId").value()
 }
@@ -141,7 +141,7 @@ function C(e) {
   h = f({}, h), delete h[t.id]
 }
 
-function R(e) {
+function P(e) {
   if (u.default.getId() !== e.userId) return !1;
   h[e.id] = {
     threadId: e.id,
@@ -153,7 +153,7 @@ function R(e) {
   }, O(e.id)
 }
 
-function P(e) {
+function R(e) {
   let {
     id: t,
     userId: n,
@@ -187,7 +187,7 @@ function w(e) {
     }, O(e.id), r = !0)
   }), r
 }
-class D extends(r = o.ZP.Store) {
+class D extends(r = a.ZP.Store) {
   hasJoined(e) {
     return e in h
   }
@@ -226,8 +226,8 @@ let L = new D(s.Z, {
     LOAD_THREADS_SUCCESS: N,
     LOAD_ARCHIVED_THREADS_SUCCESS: N,
     THREAD_DELETE: C,
-    THREAD_MEMBER_UPDATE: R,
-    THREAD_MEMBER_LOCAL_UPDATE: P,
+    THREAD_MEMBER_UPDATE: P,
+    THREAD_MEMBER_LOCAL_UPDATE: R,
     THREAD_MEMBERS_UPDATE: w
   }),
   x = L

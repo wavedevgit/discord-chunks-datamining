@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => M,
+  Z: () => k,
   v: () => x
 });
 var r = n(255367),
   i = n(73800),
-  a = n(758713),
-  o = n(442837),
+  o = n(758713),
+  a = n(442837),
   s = n(481060),
   l = n(620662),
   c = n(841784),
@@ -30,8 +30,8 @@ var r = n(255367),
   A = n(297781),
   N = n(591853),
   C = n(410441),
-  R = n(797342),
-  P = n(981631),
+  P = n(797342),
+  R = n(981631),
   w = n(388032);
 
 function D(e, t, n) {
@@ -56,24 +56,24 @@ function L(e) {
   return e
 }
 let x = {
-    [a.z.DESKTOP]: null,
-    [a.z.LINUX]: null,
-    [a.z.MACOS]: null,
-    [a.z.NINTENDO]: null,
-    [a.z.IOS]: null,
-    [a.z.ANDROID]: null,
-    [a.z.XBOX]: h.Z,
-    [a.z.PLAYSTATION]: p.Z
+    [o.z.DESKTOP]: null,
+    [o.z.LINUX]: null,
+    [o.z.MACOS]: null,
+    [o.z.NINTENDO]: null,
+    [o.z.IOS]: null,
+    [o.z.ANDROID]: null,
+    [o.z.XBOX]: h.Z,
+    [o.z.PLAYSTATION]: p.Z
   },
-  M = e => {
+  k = e => {
     let {
       channel: t,
       entry: n,
       disableGameProfileLinks: p,
       onReaction: h,
       onVoiceChannelPreview: D,
-      onUserPopoutClosed: M,
-      trackRankingItemInteraction: k
+      onUserPopoutClosed: k,
+      trackRankingItemInteraction: M
     } = e, {
       largeImage: j
     } = (0, g.rv)({
@@ -82,11 +82,11 @@ let x = {
       user: U,
       details: G,
       appName: B,
-      activity: V
-    } = (0, R.n)(n), {
-      primaryColor: F,
+      activity: F
+    } = (0, P.n)(n), {
+      primaryColor: V,
       secondaryColor: Z
-    } = (0, S.Z)(null == j ? void 0 : j.src), H = (0, o.e7)([_.default], () => _.default.locale), {
+    } = (0, S.Z)(null == j ? void 0 : j.src), H = (0, a.e7)([_.default], () => _.default.locale), {
       streamPreviewUrl: Y,
       stream: W
     } = (0, b.Z)(n), {
@@ -94,7 +94,7 @@ let x = {
       participant1: z,
       participant2: q,
       numOtherParticipants: Q
-    } = (0, E.Z)(n, 3), X = n.extra.platform, J = null != X ? x[X] : null, $ = X === a.z.XBOX ? P.ABu.XBOX : X === a.z.PLAYSTATION ? P.ABu.PLAYSTATION : void 0, ee = (0, I.Z)($), et = i.useCallback(e => {
+    } = (0, E.Z)(n, 3), X = n.extra.platform, J = null != X ? x[X] : null, $ = X === o.z.XBOX ? R.ABu.XBOX : X === o.z.PLAYSTATION ? R.ABu.PLAYSTATION : void 0, ee = (0, I.Z)($), et = i.useCallback(e => {
       if ((null == j ? void 0 : j.src) == null || null == t || null == U) return;
       let r = Q > 0 ? (0, v.VY)({
         entry: n,
@@ -108,10 +108,10 @@ let x = {
         avatarSrcs: K.map(e => e.getAvatarURL(t.guild_id, 128)),
         description: r,
         timestamp: (0, y.yh)(n, H),
-        colors: [F, Z],
+        colors: [V, Z],
         channelId: e
       })
-    }, [null == j ? void 0 : j.src, t, K, n, H, Q, z, q, F, Z, U]);
+    }, [null == j ? void 0 : j.src, t, K, n, H, Q, z, q, V, Z, U]);
     if (null == U) return null;
     let en = (0, r.jsx)(A.Gk, {
         location: null == Y ? A.Gt.POPOUT : A.Gt.STREAMING_POPOUT,
@@ -132,8 +132,8 @@ let x = {
         badges: en,
         entry: n,
         disableGameProfileLinks: p,
-        onUserPopoutClosed: M,
-        trackRankingItemInteraction: k
+        onUserPopoutClosed: k,
+        trackRankingItemInteraction: M
       }) : (0, r.jsx)(N.jL, {
         channel: t,
         title: n.extra.game_name,
@@ -142,17 +142,17 @@ let x = {
         userDescription: w.t["6oWFUF"],
         entry: n,
         stream: W,
-        onUserPopoutClosed: M,
-        trackRankingItemInteraction: k
+        onUserPopoutClosed: k,
+        trackRankingItemInteraction: M
       }),
-      ei = [(0, l.Z)(V, P.xjy.JOIN) || (0, c.Z)(V) ? (0, r.jsx)(d.Z, {
-        activity: V,
+      ei = [(0, l.Z)(F, R.xjy.JOIN) || (0, c.Z)(F) ? (0, r.jsx)(d.Z, {
+        activity: F,
         user: U,
         ButtonComponent: e => (0, r.jsx)(N.Ll, L({
           IconComponent: s.iWm
         }, e))
-      }) : null, (0, u.Z)(V) ? (0, r.jsx)(f.Z, {
-        activity: V,
+      }) : null, (0, u.Z)(F) ? (0, r.jsx)(f.Z, {
+        activity: F,
         ButtonComponent: e => (0, r.jsx)(N.Ll, L({
           IconComponent: s.tEF
         }, e))

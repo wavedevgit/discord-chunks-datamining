@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  r: () => o
+  r: () => a
 });
 var r = n(709054);
 let i = 0,
-  a = new r.SnowflakeSequence;
+  o = new r.SnowflakeSequence;
 
-function o() {
+function a() {
   let e = Date.now();
-  return i !== e && (a.reset(), i = e), r.default.fromTimestampWithSequence(e, a)
+  return i !== e && (o.reset(), i = e), r.default.fromTimestampWithSequence(e, o)
 }

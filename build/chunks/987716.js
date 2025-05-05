@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(481060),
   l = n(987209),
   c = n(321051),
@@ -64,8 +64,8 @@ function S(e, t) {
   if (null == e) return {};
   var n, r, i = T(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -73,15 +73,15 @@ function S(e, t) {
 function T(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let A = e => {
   let {
     isShopGift: t,
     className: n,
-    optionsContainerClassName: a
+    optionsContainerClassName: o
   } = e, {
     giftRecipient: y,
     selectedGiftStyle: v,
@@ -89,29 +89,29 @@ let A = e => {
     emojiConfetti: A,
     soundEffect: N,
     setEmojiConfetti: C,
-    setSoundEffect: R
-  } = (0, l.wD)(), [P, w] = i.useState(!1), D = i.useRef(null), L = (0, s.arW)({
+    setSoundEffect: P
+  } = (0, l.wD)(), [R, w] = i.useState(!1), D = i.useRef(null), L = (0, s.arW)({
     orientation: "horizontal"
   }), {
     ref: x
-  } = L, M = S(L, ["ref"]), k = (0, u.MY)(y, t), j = k === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = k !== u.xr.DEFAULT, G = (0, f.rK)(), {
+  } = L, k = S(L, ["ref"]), M = (0, u.MY)(y, t), j = M === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = M !== u.xr.DEFAULT, G = (0, f.rK)(), {
     enabled: B
   } = f.ZP.useExperiment({
     location: "premiumGiftSelect_GiftAnimationOptions"
   }, {
     autoTrackExposure: G
   }), {
-    enabled: V
+    enabled: F
   } = _.O.useExperiment({
     location: "gift card"
-  }), F = null;
-  U && (F = G && B ? g.kJ : g.QI), V && (F = g.RQ);
+  }), V = null;
+  U && (V = G && B ? g.kJ : g.QI), F && (V = g.RQ);
   let Z = e => {
-    null != R && R(null == e ? void 0 : e)
+    null != P && P(null == e ? void 0 : e)
   };
   return (0, r.jsxs)("div", {
     children: [U && (0, r.jsxs)("div", {
-      className: o()(b.giftMainAnimation, n),
+      className: a()(b.giftMainAnimation, n),
       children: [null != v ? (0, r.jsx)(p.Z, {
         giftStyle: v,
         defaultAnimationState: d.SR.ACTION,
@@ -137,16 +137,16 @@ let A = e => {
         })]
       })]
     }), (0, r.jsx)("div", I(O({
-      tabIndex: null != v || P ? void 0 : 0,
+      tabIndex: null != v || R ? void 0 : 0,
       onFocus: e => {
         var t;
         e.target === e.currentTarget && (null == (t = D.current) || t.focus())
       },
-      className: o()(b.giftBoxOptionContainer, a),
+      className: a()(b.giftBoxOptionContainer, o),
       "aria-label": E.intl.string(E.t.v54NrK),
       ref: x
-    }, M), {
-      children: null != F && F.map((e, t) => (0, r.jsx)(m.m, {
+    }, k), {
+      children: null != V && V.map((e, t) => (0, r.jsx)(m.m, {
         isSelected: v === e,
         giftStyle: e,
         setSelectedGiftStyle: T,

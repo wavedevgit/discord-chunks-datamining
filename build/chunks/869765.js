@@ -5,8 +5,8 @@ n.d(t, {
   Z: () => U
 }), n(388685), n(539854);
 var r, i = n(31775),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(570140),
   l = n(247206),
   c = n(786761),
@@ -46,7 +46,7 @@ class g {
     return this._cachedMessageIds
   }
   constructor() {
-    _(this, "_cachedMessages", new(a())({
+    _(this, "_cachedMessages", new(o())({
       max: 100,
       dispose: (e, t) => this.handleCacheDisposed(e, t)
     })), _(this, "_cachedMessageIds", new Set)
@@ -186,11 +186,11 @@ function C(e) {
   return b.deleteChannelCache(e.channel.id)
 }
 
-function R() {
+function P() {
   if (0 === b.retainWhere(e => null != u.Z.getChannel(e))) return !1
 }
 
-function P(e, t) {
+function R(e, t) {
   if (!b.has(e, t)) return !1;
   b.set(e, t, {
     state: 2
@@ -202,7 +202,7 @@ function w(e) {
     id: t,
     channelId: n
   } = e;
-  return P(n, t)
+  return R(n, t)
 }
 
 function D(e) {
@@ -210,7 +210,7 @@ function D(e) {
     ids: t,
     channelId: n
   } = e;
-  return O(t, e => P(n, e))
+  return O(t, e => R(n, e))
 }
 
 function L(e) {
@@ -227,14 +227,14 @@ function x() {
   b.clear()
 }
 
-function M(e) {
+function k(e) {
   let {
     firstMessages: t
   } = e;
   return null != t && O(t, e => y(e))
 }
 
-function k(e) {
+function M(e) {
   let {
     threads: t
   } = e;
@@ -245,7 +245,7 @@ function k(e) {
     return null != t && y(t)
   })
 }
-class j extends(r = o.ZP.Store) {
+class j extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(d.Z, u.Z)
   }
@@ -270,10 +270,10 @@ let U = new j(s.Z, {
   LOAD_MESSAGES_AROUND_SUCCESS: v,
   SEARCH_FINISH: S,
   MOD_VIEW_SEARCH_FINISH: S,
-  LOAD_THREADS_SUCCESS: M,
-  LOAD_ARCHIVED_THREADS_SUCCESS: M,
+  LOAD_THREADS_SUCCESS: k,
+  LOAD_ARCHIVED_THREADS_SUCCESS: k,
   MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: A,
-  LOAD_FORUM_POSTS: k,
+  LOAD_FORUM_POSTS: M,
   MESSAGE_CREATE: T,
   MESSAGE_UPDATE: N,
   MESSAGE_DELETE: w,
@@ -281,7 +281,7 @@ let U = new j(s.Z, {
   CREATE_PENDING_REPLY: L,
   CHANNEL_DELETE: C,
   THREAD_DELETE: C,
-  GUILD_DELETE: R,
+  GUILD_DELETE: P,
   CONNECTION_OPEN: x,
   LOGOUT: x
 })

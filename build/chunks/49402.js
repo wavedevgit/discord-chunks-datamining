@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(803997),
-  o = n.n(a),
+  o = n(803997),
+  a = n.n(o),
   s = n(708816),
   l = n(821541),
   c = n(780900);
@@ -54,8 +54,8 @@ function p(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -63,13 +63,13 @@ function p(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
 function m(e, t, n) {
-  let a = (0, c.G6)(e);
+  let o = (0, c.G6)(e);
   return i.forwardRef(function(u, f) {
     var {
       children: h,
@@ -91,18 +91,18 @@ function m(e, t, n) {
       getScrollerNode: () => A.current,
       getScrollerState: N
     }, (0, c.Ue)(A, N, C, E)), [A, N, E, C]);
-    let R = (0, c.tT)({
+    let P = (0, c.tT)({
       paddingFix: O,
       orientation: E,
       dir: g,
       className: m,
       scrollerRef: A,
-      specs: a
+      specs: o
     });
     return S ? (0, r.jsx)(l.K, _(d({
       gap: I,
       ref: A,
-      className: o()(m, {
+      className: a()(m, {
         [e]: !0,
         [t]: b,
         [n]: y
@@ -112,11 +112,11 @@ function m(e, t, n) {
     }, T), {
       children: (0, r.jsxs)(s.Jc, {
         containerRef: A,
-        children: [h, R]
+        children: [h, P]
       })
     })) : (0, r.jsx)("div", _(d({
       ref: A,
-      className: o()(m, {
+      className: a()(m, {
         [e]: !0,
         [t]: b,
         [n]: y
@@ -126,7 +126,7 @@ function m(e, t, n) {
     }, T), {
       children: (0, r.jsxs)(s.Jc, {
         containerRef: A,
-        children: [h, R]
+        children: [h, P]
       })
     }))
   })

@@ -6,8 +6,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(772848),
   l = n(481060),
   c = n(596454),
@@ -63,7 +63,7 @@ let I = e => {
     var t;
     let {
       node: n,
-      tooltipPosition: a = p.b_.position,
+      tooltipPosition: o = p.b_.position,
       enableClick: s = !0,
       channelId: u,
       messageId: d
@@ -79,7 +79,7 @@ let I = e => {
       text: (0, p.Y)(n.name, s),
       "aria-label": m
     }, p.b_), {
-      position: a,
+      position: o,
       shouldShow: !g,
       onTooltipShow: () => {
         s && T({
@@ -94,7 +94,7 @@ let I = e => {
           var n;
           b(!0), null == e || null == (n = e.onClick) || n.call(e, t)
         },
-        className: o()(E.emojiContainer, {
+        className: a()(E.emojiContainer, {
           [E.emojiContainerClickable]: s,
           [E.emojiJumbo]: n.jumboable
         }),
@@ -123,11 +123,11 @@ let I = e => {
     let {
       node: t,
       isInteracting: n,
-      tooltipPosition: a = p.b_.position,
+      tooltipPosition: o = p.b_.position,
       enableClick: u = !0,
       channelId: g,
       messageId: b
-    } = e, [O, I] = i.useState(String(Date.now())), [S, A] = i.useState(!1), [N, C] = i.useState(!1), R = i.useRef(null), P = function() {
+    } = e, [O, I] = i.useState(String(Date.now())), [S, A] = i.useState(!1), [N, C] = i.useState(!1), P = i.useRef(null), R = function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
       return (0, r.jsx)(c.Z, v(y({}, e), {
         emojiName: t.name,
@@ -142,7 +142,7 @@ let I = e => {
       text: (0, p.Y)(t.name, u),
       "aria-label": t.name
     }, p.b_), {
-      position: a,
+      position: o,
       shouldShow: !N,
       onTooltipShow: () => {
         A(!0), u && (T({
@@ -152,7 +152,7 @@ let I = e => {
         }), (0, d.x)(m.qR.CustomEmojiTooltipShown))
       },
       children: n => (0, r.jsx)(l.P3F, v(y({}, e), {
-        innerRef: R,
+        innerRef: P,
         onMouseEnter: () => {
           var t;
           null == e || null == (t = e.onMouseEnter) || t.call(e)
@@ -167,11 +167,11 @@ let I = e => {
           }), A(!1))
         },
         tag: "span",
-        className: o()(E.emojiContainer, {
+        className: a()(E.emojiContainer, {
           [E.emojiContainerClickable]: u,
           [E.emojiJumbo]: t.jumboable
         }),
-        children: P(n)
+        children: R(n)
       }))
     }));
     if (!u) return D();
@@ -193,7 +193,7 @@ let I = e => {
       position: "right",
       renderPopout: L,
       positionKey: O,
-      targetElementRef: R,
+      targetElementRef: P,
       children: D
     })
   },

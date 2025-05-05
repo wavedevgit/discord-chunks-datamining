@@ -3,13 +3,13 @@
 n.d(t, {
   Ox: () => N,
   QP: () => I,
-  ob: () => R,
+  ob: () => P,
   q4: () => C
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(97613),
-  o = n.n(a),
+  o = n(97613),
+  a = n.n(o),
   s = n(481328),
   l = n(565945),
   c = n(381814),
@@ -80,7 +80,7 @@ function S(e) {
     item: t,
     containerRef: n
   } = e;
-  return (0, f.Tbt)(n), i.useEffect(() => (_.Z.disable(), t.key !== m.CV && _.Z.enableTemp(P(t.key)), () => {
+  return (0, f.Tbt)(n), i.useEffect(() => (_.Z.disable(), t.key !== m.CV && _.Z.enableTemp(R(t.key)), () => {
     _.Z.disableTemp()
   }), [t.key]), (0, r.jsx)(t.LayerComponent, {
     children: (0, r.jsxs)("div", {
@@ -90,7 +90,7 @@ function S(e) {
         className: g.drag
       }), t.render({
         transitionState: null != t ? t.transitionState : 3,
-        closeLayer: () => R(t.key)
+        closeLayer: () => P(t.key)
       })]
     })
   })
@@ -115,18 +115,18 @@ let T = {
 function N() {
   let {
     reducedMotion: e
-  } = i.useContext(f.Sfi), t = e.enabled ? A : T, n = I(e => e.fullScreenLayers), a = n.map(e => ({
+  } = i.useContext(f.Sfi), t = e.enabled ? A : T, n = I(e => e.fullScreenLayers), o = n.map(e => ({
     item: e,
     nodeRef: i.createRef()
   }));
   return (0, r.jsx)(s.Z, {
-    children: a.map(e => {
+    children: o.map(e => {
       let {
         item: i,
-        nodeRef: a
+        nodeRef: o
       } = e;
       return (0, r.jsx)(l.Z, {
-        nodeRef: a,
+        nodeRef: o,
         classNames: t,
         timeout: v,
         onEntered: () => {
@@ -140,7 +140,7 @@ function N() {
         },
         unmountOnExit: !0,
         children: (0, r.jsx)(S, {
-          containerRef: a,
+          containerRef: o,
           item: i
         })
       }, i.key)
@@ -154,7 +154,7 @@ function C(e) {
       layerKey: n,
       Layer: r
     } = t,
-    i = null != n ? n : o()();
+    i = null != n ? n : a()();
   return (0, u.j)(() => {
     I.setState(t => ({
       fullScreenLayers: [...t.fullScreenLayers, {
@@ -167,7 +167,7 @@ function C(e) {
   }), i
 }
 
-function R(e) {
+function P(e) {
   (0, u.j)(() => {
     I.setState(t => ({
       fullScreenLayers: t.fullScreenLayers.filter(t => t.key !== e)
@@ -175,13 +175,13 @@ function R(e) {
   })
 }
 
-function P(e) {
+function R(e) {
   return {
     POP_LAYER: {
       binds: ["esc"],
       comboKeysBindGlobal: !0,
       action() {
-        R(e)
+        P(e)
       }
     }
   }

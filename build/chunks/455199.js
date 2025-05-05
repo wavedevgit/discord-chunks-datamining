@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => ei
 }), n(290780), n(539854);
 var r, i = n(392711),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(433517),
   l = n(379649),
   c = n(570140),
@@ -48,8 +48,8 @@ function T(e) {
 let A = "recentMentionFilterSettings",
   N = [],
   C = {},
-  R = {},
-  P = !1,
+  P = {},
+  R = !1,
   w = !0,
   D = s.K.get(A, {
     guildFilter: I.NgX.ALL_SERVERS,
@@ -58,9 +58,9 @@ let A = "recentMentionFilterSettings",
   }),
   L = !1,
   x = 0,
-  M = !1;
+  k = !1;
 
-function k(e) {
+function M(e) {
   C = {}, e.forEach(e => {
     null == C[e.getChannelId()] && (C[e.getChannelId()] = 0), C[e.getChannelId()]++
   })
@@ -82,7 +82,7 @@ function U(e) {
   let {
     guildId: t
   } = e;
-  P = !0, null == t && D.guildFilter === I.NgX.THIS_SERVER && z({
+  R = !0, null == t && D.guildFilter === I.NgX.THIS_SERVER && z({
     guildFilter: I.NgX.ALL_SERVERS
   })
 }
@@ -98,19 +98,19 @@ function B(e) {
     hasMoreAfter: t,
     messages: n,
     isAfter: r
-  } = e, i = a().map(n, G);
+  } = e, i = o().map(n, G);
   j({
     addedMessages: i
-  }), r ? N = N.concat(i) : (N = i, R = {}), a().forEach(i, e => {
-    R[e.id] = !0
-  }), P = !1, w = t, x = (0, l.zO)(), L = !0
+  }), r ? N = N.concat(i) : (N = i, P = {}), o().forEach(i, e => {
+    P[e.id] = !0
+  }), R = !1, w = t, x = (0, l.zO)(), L = !0
 }
 
-function V() {
-  P = !1
+function F() {
+  R = !1
 }
 
-function F(e) {
+function V(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
   if ((0, f.Z)(e) && !I.V$x.SELF_MENTIONABLE_SYSTEM.has(e.type)) return null;
   null == t && (t = e.channel_id);
@@ -120,18 +120,18 @@ function F(e) {
   if (b.Z.isBlockedOrIgnoredForMessage(e) || (0, _.Z)(e, r)) return null;
   e = G(e);
   let i = !D.everyoneFilter,
-    a = !D.roleFilter;
+    o = !D.roleFilter;
   return (0, d.ZP)({
     message: e,
     userId: r,
     suppressEveryone: i,
-    suppressRoles: a
-  }) ? (M && E.ZP.ackMessageId(n.id) !== e.id && (0, d.ZP)({
+    suppressRoles: o
+  }) ? (k && E.ZP.ackMessageId(n.id) !== e.id && (0, d.ZP)({
     message: e,
     userId: r,
     suppressEveryone: O.ZP.isSuppressEveryoneEnabled(n.getGuildId()),
     suppressRoles: O.ZP.isSuppressRolesEnabled(n.getGuildId())
-  }) && (M = !1), e) : null
+  }) && (k = !1), e) : null
 }
 
 function Z(e) {
@@ -145,17 +145,17 @@ function Z(e) {
       suppressRoles: !1,
       suppressEveryone: !1
     })) return !1;
-  let i = F(n, t);
+  let i = V(n, t);
   if (null == i) return !1;
-  (N = N.slice()).unshift(i), R[i.id] = !0, j({
+  (N = N.slice()).unshift(i), P[i.id] = !0, j({
     addedMessages: [i]
   })
 }
 
 function H(e) {
   let t = e.message.id;
-  if (null == R[String(t)]) return !1;
-  let n = a().findIndex(N, e => {
+  if (null == P[String(t)]) return !1;
+  let n = o().findIndex(N, e => {
       let {
         id: n
       } = e;
@@ -166,15 +166,15 @@ function H(e) {
 }
 
 function Y(e) {
-  if (null == R[e]) return !1;
-  delete R[e], j({
-    deletedMessages: a().filter(N, t => {
+  if (null == P[e]) return !1;
+  delete P[e], j({
+    deletedMessages: o().filter(N, t => {
       let {
         id: n
       } = t;
       return n === e
     })
-  }), N = a().filter(N, t => {
+  }), N = o().filter(N, t => {
     let {
       id: n
     } = t;
@@ -193,20 +193,20 @@ function K(e) {
   let {
     ids: t
   } = e;
-  a().forEach(t, Y)
+  o().forEach(t, Y)
 }
 
 function z(e) {
   let t = T({}, D);
-  D = a().defaults(a().pick(e, ["guildFilter", "roleFilter", "everyoneFilter"]), D), s.K.set(A, D);
+  D = o().defaults(o().pick(e, ["guildFilter", "roleFilter", "everyoneFilter"]), D), s.K.set(A, D);
   let n = (e, n) => t[e] !== D[e] && D[e] === n,
     r = n("guildFilter", I.NgX.THIS_SERVER) || n("everyoneFilter", !1) || n("roleFilter", !1);
-  R = {};
+  P = {};
   let i = [];
   r && N.forEach(e => {
-    let t = F(e);
-    null != t && (i.push(t), R[t.id] = !0)
-  }), k(N = i), 0 === N.length && (L = !1)
+    let t = V(e);
+    null != t && (i.push(t), P[t.id] = !0)
+  }), M(N = i), 0 === N.length && (L = !1)
 }
 
 function q() {
@@ -215,16 +215,16 @@ function q() {
 }
 
 function Q() {
-  N = [], R = {}, L = !1, M = !1, C = {}
+  N = [], P = {}, L = !1, k = !1, C = {}
 }
 
 function X(e) {
   let {
     guild: t
   } = e, n = [];
-  N = a().filter(N, e => {
+  N = o().filter(N, e => {
     let r = m.Z.getChannel(e.channel_id);
-    return null != r && r.getGuildId() !== t.id || (delete R[e.id], n.push(e), !1)
+    return null != r && r.getGuildId() !== t.id || (delete P[e.id], n.push(e), !1)
   }), j({
     deletedMessages: n
   })
@@ -232,7 +232,7 @@ function X(e) {
 
 function J() {
   j({
-    deletedMessages: a().filter(N, e => b.Z.isBlockedOrIgnoredForMessage(e))
+    deletedMessages: o().filter(N, e => b.Z.isBlockedOrIgnoredForMessage(e))
   }), N = N.filter(e => !b.Z.isBlockedOrIgnoredForMessage(e))
 }
 
@@ -240,7 +240,7 @@ function $(e) {
   let {
     channel: t
   } = e, n = [];
-  N = a().filter(N, e => e.channel_id !== t.id || (delete R[e.id], n.push(e), !1)), j({
+  N = o().filter(N, e => e.channel_id !== t.id || (delete P[e.id], n.push(e), !1)), j({
     deletedMessages: n
   })
 }
@@ -256,14 +256,14 @@ function et(e) {
   j({
     deletedMessages: N.slice(t)
   });
-  for (let e = t; e < N.length; ++e) delete R[N[e].id];
+  for (let e = t; e < N.length; ++e) delete P[N[e].id];
   N.length > (N = N.slice(0, t)).length && (w = !0)
 }
 
 function en(e) {
-  M = !0
+  k = !0
 }
-class er extends(r = o.ZP.Store) {
+class er extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(v.default, m.Z, g.Z, E.ZP)
   }
@@ -277,10 +277,10 @@ class er extends(r = o.ZP.Store) {
     return L || N.length > 0 ? N : null
   }
   hasMention(e) {
-    return R[e]
+    return P[e]
   }
   get loading() {
-    return P
+    return R
   }
   get hasMore() {
     return w
@@ -295,7 +295,7 @@ class er extends(r = o.ZP.Store) {
     return D.roleFilter
   }
   get mentionsAreStale() {
-    return M
+    return k
   }
   get mentionCountByChannel() {
     return C
@@ -309,7 +309,7 @@ S(er, "displayName", "RecentMentionsStore");
 let ei = new er(c.Z, {
   LOAD_RECENT_MENTIONS: U,
   LOAD_RECENT_MENTIONS_SUCCESS: B,
-  LOAD_RECENT_MENTIONS_FAILURE: V,
+  LOAD_RECENT_MENTIONS_FAILURE: F,
   SET_RECENT_MENTIONS_FILTER: z,
   CLEAR_MENTIONS: ee,
   TRUNCATE_MENTIONS: et,

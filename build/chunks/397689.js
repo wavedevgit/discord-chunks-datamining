@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(481060),
   l = n(906732),
   c = n(1585),
@@ -75,22 +75,22 @@ function O(e) {
   } = e, {
     analyticsLocations: N,
     newestAnalyticsLocation: C
-  } = (0, l.ZP)(), R = (0, o.e7)([u.Z], () => u.Z.getStatus(t.id)), P = null == n || (null == i ? void 0 : i.canUsePremiumProfileCustomization) || d, w = (0, r.jsx)(y, {
+  } = (0, l.ZP)(), P = (0, a.e7)([u.Z], () => u.Z.getStatus(t.id)), R = null == n || (null == i ? void 0 : i.canUsePremiumProfileCustomization) || d, w = (0, r.jsx)(y, {
     src: m,
     avatarDecoration: E,
-    imageClassName: a()(I, {
+    imageClassName: o()(I, {
       [h.overlay]: !S
     }),
     size: s.EFr.SIZE_80,
     "aria-label": t.username,
-    status: R,
+    status: P,
     statusTooltip: !1,
     statusBackdropColor: null != v ? (0, s.QFD)(O) : void 0
   });
   return S ? (0, r.jsx)("div", {
     className: h.avatar,
     children: w
-  }) : P ? (0, r.jsx)(s.yRy, {
+  }) : R ? (0, r.jsx)(s.yRy, {
     renderPopout: e => {
       let {
         closePopout: t
@@ -114,7 +114,7 @@ function O(e) {
       })
     },
     children: e => (0, r.jsxs)(s.P3F, b(g({}, e), {
-      className: a()(h.avatar, h.clickable),
+      className: o()(h.avatar, h.clickable),
       children: [w, (0, r.jsx)(s.vdY, {
         size: "custom",
         className: h.overlayIcon,
@@ -125,7 +125,7 @@ function O(e) {
     }))
   }) : (0, r.jsxs)(s.P3F, {
     onClick: A,
-    className: a()(h.avatar, h.clickable),
+    className: o()(h.avatar, h.clickable),
     children: [w, (0, r.jsx)(s.SrA, {
       size: "custom",
       className: h.overlayIcon,

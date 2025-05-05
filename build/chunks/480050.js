@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(481752),
   l = n(481060),
   c = n(607070),
@@ -46,11 +46,11 @@ function m(e) {
     height: n,
     offset: r,
     delta: i
-  } = e, a = t > window.innerWidth, o = n > window.innerHeight, s = (window.innerWidth - t) / 2 + r.x, l = (window.innerHeight - n) / 2 + r.y, c = (window.innerWidth + t) / 2 + r.x, u = (window.innerHeight + n) / 2 + r.y, {
+  } = e, o = t > window.innerWidth, a = n > window.innerHeight, s = (window.innerWidth - t) / 2 + r.x, l = (window.innerHeight - n) / 2 + r.y, c = (window.innerWidth + t) / 2 + r.x, u = (window.innerHeight + n) / 2 + r.y, {
     x: d,
     y: f
   } = r;
-  return a && (d += i.x, s + i.x > 0 && (d = (t - window.innerWidth) / 2), c + i.x < window.innerWidth && (d = (window.innerWidth - t) / 2)), o && (f += i.y, l + i.y > 0 && (f = (n - window.innerHeight) / 2), u + i.y < window.innerHeight && (f = (window.innerHeight - n) / 2)), {
+  return o && (d += i.x, s + i.x > 0 && (d = (t - window.innerWidth) / 2), c + i.x < window.innerWidth && (d = (window.innerWidth - t) / 2)), a && (f += i.y, l + i.y > 0 && (f = (n - window.innerHeight) / 2), u + i.y < window.innerHeight && (f = (window.innerHeight - n) / 2)), {
     x: d,
     y: f
   }
@@ -61,16 +61,16 @@ function g(e, t, n, r, i) {
     width: void 0,
     height: void 0
   };
-  let a = i ? (0, u.vV)(e, t, n, r) : 1,
-    o = (0, u.Tj)({
+  let o = i ? (0, u.vV)(e, t, n, r) : 1,
+    a = (0, u.Tj)({
       width: e,
       height: t,
       maxWidth: n,
       maxHeight: r
     });
   return {
-    width: o.width * a,
-    height: o.height * a
+    width: a.width * o,
+    height: a.height * o
   }
 }
 
@@ -78,7 +78,7 @@ function E(e) {
   let {
     children: t,
     active: n,
-    onClick: a,
+    onClick: o,
     className: f,
     width: E,
     height: b,
@@ -90,11 +90,11 @@ function E(e) {
   } = g(E, b, y, O, n), [A, N] = (0, l.q_F)(() => ({
     scale: 1,
     config: h
-  })), [C, R] = (0, l.q_F)(() => ({
+  })), [C, P] = (0, l.q_F)(() => ({
     x: 0,
     y: 0,
     config: h
-  })), [P, w] = i.useState(!1), [D, L] = i.useState({
+  })), [R, w] = i.useState(!1), [D, L] = i.useState({
     x: 0,
     y: 0
   }), x = (null != S ? S : 0) > window.innerWidth || (null != T ? T : 0) > window.innerHeight;
@@ -106,13 +106,13 @@ function E(e) {
     }) : (N({
       scale: 1,
       immediate: e
-    }), R({
+    }), P({
       x: 0,
       y: 0,
       immediate: e
     }))
-  }, [n, N, I, C, R]);
-  let M = (e, t) => {
+  }, [n, N, I, C, P]);
+  let k = (e, t) => {
       var n;
       let r = null == S ? null == (n = v.current) ? void 0 : n.getBoundingClientRect() : null,
         i = m({
@@ -129,7 +129,7 @@ function E(e) {
         });
       C.x.set(i.x), C.y.set(i.y)
     },
-    k = e => {
+    M = e => {
       n && 0 === e.button && (e.preventDefault(), w(!0), L({
         x: e.clientX,
         y: e.clientY
@@ -137,20 +137,20 @@ function E(e) {
     },
     j = e => {
       if (!n) {
-        0 === e.button && (null == a || a(e));
+        0 === e.button && (null == o || o(e));
         return
-      }(e.clientX - D.x) ** 2 + (e.clientY - D.y) ** 2 < p && (null == a || a(e)), w(!1)
+      }(e.clientX - D.x) ** 2 + (e.clientY - D.y) ** 2 < p && (null == o || o(e)), w(!1)
     };
   return (0, r.jsx)(s.animated.div, {
     ref: v,
-    onMouseDown: k,
+    onMouseDown: M,
     onMouseUp: j,
-    onMouseMove: e => P && M(e.movementX, e.movementY),
-    onWheel: e => !e.ctrlKey && M(-e.deltaX, -e.deltaY),
+    onMouseMove: e => R && k(e.movementX, e.movementY),
+    onWheel: e => !e.ctrlKey && k(-e.deltaX, -e.deltaY),
     onMouseLeave: () => w(!1),
     onClick: e => e.stopPropagation(),
-    className: o()(f, d.wrapper, {
-      [d.panning]: n && P,
+    className: a()(f, d.wrapper, {
+      [d.panning]: n && R,
       [d.pannable]: n && x
     }),
     style: _({}, A, C),

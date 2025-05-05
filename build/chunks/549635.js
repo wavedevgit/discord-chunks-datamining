@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(124347),
   l = n(80966),
   c = n(480050),
@@ -63,8 +63,8 @@ function v(e, t) {
   if (null == e) return {};
   var n, r, i = I(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -72,8 +72,8 @@ function v(e, t) {
 function I(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -86,7 +86,7 @@ function T(e) {
   let t, {
       media: n,
       obscured: i = !1,
-      maxWidth: a,
+      maxWidth: o,
       maxHeight: u,
       onContextMenu: f
     } = e,
@@ -98,9 +98,9 @@ function T(e) {
       alt: T,
       type: A,
       maxWidth: C,
-      maxHeight: R
+      maxHeight: P
     } = n,
-    P = v(n, ["width", "height", "url", "proxyUrl", "alt", "type", "maxWidth", "maxHeight"]),
+    R = v(n, ["width", "height", "url", "proxyUrl", "alt", "type", "maxWidth", "maxHeight"]),
     {
       zoomed: w,
       setZoomed: D
@@ -108,15 +108,15 @@ function T(e) {
     L = N(w, y, I),
     x = null != p && 0 !== p && null != E && 0 !== E;
   if ("VIDEO" === A && x && null != I) {
-    var M;
+    var k;
     let e = S(I);
     if (null == e) return null;
-    let t = null != (M = n.renderLinkComponent) ? M : d.iT;
-    return (0, r.jsx)(l.Z, O(b({}, P), {
+    let t = null != (k = n.renderLinkComponent) ? k : d.iT;
+    return (0, r.jsx)(l.Z, O(b({}, R), {
       src: L,
       width: p,
       height: E,
-      maxWidth: a,
+      maxWidth: o,
       maxHeight: u,
       poster: e,
       naturalWidth: p,
@@ -131,11 +131,11 @@ function T(e) {
       onContextMenu: f
     }))
   }
-  return "IMAGE" === A && (t = x ? (0, r.jsx)(s.ZP, O(b({}, P), {
+  return "IMAGE" === A && (t = x ? (0, r.jsx)(s.ZP, O(b({}, R), {
     src: L,
     width: p,
     height: E,
-    maxWidth: a,
+    maxWidth: o,
     maxHeight: u,
     useFullWidth: !0,
     shouldLink: !1,
@@ -150,16 +150,16 @@ function T(e) {
     onContextMenu: f,
     className: g.dimensionlessImage,
     style: {
-      maxWidth: a,
+      maxWidth: o,
       maxHeight: u
     }
   })), null != t ? (0, r.jsx)(c.Z, {
     width: p,
     height: E,
-    maxWidth: a,
+    maxWidth: o,
     maxHeight: u,
     active: w,
-    className: o()(g.wrapper, {
+    className: a()(g.wrapper, {
       [g.zoomed]: w
     }),
     onClick: () => {

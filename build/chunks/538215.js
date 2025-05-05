@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(147913),
   i = n(358221),
-  a = n(729052),
-  o = n(592125),
+  o = n(729052),
+  a = n(592125),
   s = n(979651),
   l = n(556076);
 
@@ -25,13 +25,13 @@ class u extends r.Z {
       guildId: n
     } = e;
     if (null == t || null == n) return;
-    let r = o.Z.getChannel(t);
-    if (null != r && (0, a.vS)(r) && r.isGuildVoice()) {
+    let r = a.Z.getChannel(t);
+    if (null != r && (0, o.vS)(r) && r.isGuildVoice()) {
       let e = i.Z.getParticipants(t).length,
         n = s.Z.isInChannel(t),
         r = e === +!!n,
-        a = e === (n ? 2 : 1);
-      r ? l.y(t, r) : a && l.y(t, r)
+        o = e === (n ? 2 : 1);
+      r ? l.y(t, r) : o && l.y(t, r)
     }
   }
   constructor(...e) {

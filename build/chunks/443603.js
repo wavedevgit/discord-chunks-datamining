@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(481752),
   l = n(481060),
   c = n(686546),
@@ -88,7 +88,7 @@ function v(e) {
     className: t,
     disabled: n = !1,
     innerClassName: i,
-    childClassName: a,
+    childClassName: o,
     iconClassName: p,
     icon: m,
     children: E,
@@ -99,25 +99,25 @@ function v(e) {
     onFocus: A,
     onBlur: N,
     pulse: C,
-    sparkle: R,
-    notification: P,
+    sparkle: P,
+    notification: R,
     "aria-label": w,
     "aria-expanded": D,
     "aria-haspopup": L,
     "aria-controls": x
-  } = e, M = (0, u.Q3)("ChannelTextAreaButton"), k = (0, l.Yzy)(null != E, g(h({}, O), {
+  } = e, k = (0, u.Q3)("ChannelTextAreaButton"), M = (0, l.Yzy)(null != E, g(h({}, O), {
     keys: e => e ? "children" : "icon"
   })), j = e => {
     let {
       component: t
     } = e;
-    return null != P ? (0, r.jsxs)("div", {
+    return null != R ? (0, r.jsxs)("div", {
       className: _.buttonContent,
       children: [(0, r.jsx)(c.ZP, {
         className: _.iconMask,
         mask: c.QS.CHAT_INPUT_BUTTON_NOTIFICATION,
-        width: M ? y : b,
-        height: M ? y : b,
+        width: k ? y : b,
+        height: k ? y : b,
         children: t
       }), (0, r.jsx)("span", {
         className: _.notificationDot
@@ -132,10 +132,10 @@ function v(e) {
     "aria-haspopup": L,
     "aria-controls": x,
     disabled: n,
-    className: o()(t, {
+    className: a()(t, {
       [_.active]: I
     }),
-    innerClassName: o()(_.button, i, {
+    innerClassName: a()(_.button, i, {
       [_.pulseButton]: C
     }),
     onClick: v,
@@ -149,29 +149,29 @@ function v(e) {
         bottom: 4
       }
     },
-    children: [k((e, t, n) => {
+    children: [M((e, t, n) => {
       let {
         key: i
       } = n;
       return t ? (0, r.jsx)(s.animated.div, {
         style: e,
-        className: o()(_.buttonWrapper, a),
+        className: a()(_.buttonWrapper, o),
         children: j({
           component: E
         })
       }, i) : null != m ? (0, r.jsx)(s.animated.div, {
         style: e,
-        className: o()(_.buttonWrapper, a),
+        className: a()(_.buttonWrapper, o),
         children: j({
           component: (0, r.jsx)(m, {
-            className: o()(_.icon, p, {
+            className: a()(_.icon, p, {
               [_.pulseIcon]: C
             }),
             color: "currentColor"
           })
         })
       }, i) : void 0
-    }), R && (0, r.jsxs)("div", {
+    }), P && (0, r.jsxs)("div", {
       className: _.sparkleContainer,
       children: [(0, r.jsx)(f.Z, {
         className: _.sparkleStar

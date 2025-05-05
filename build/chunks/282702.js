@@ -6,13 +6,13 @@ r || (t = function(e) {
   return !1
 });
 var i = n ? Map.prototype.has : null,
-  a = r ? Set.prototype.has : null;
-t || a || (t = function(e) {
+  o = r ? Set.prototype.has : null;
+t || o || (t = function(e) {
   return !1
 }), e.exports = t || function(e) {
   if (!e || "object" != typeof e) return !1;
   try {
-    if (a.call(e), i) try {
+    if (o.call(e), i) try {
       i.call(e)
     } catch (e) {
       return !0

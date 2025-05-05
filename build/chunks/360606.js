@@ -4,8 +4,8 @@ let r, i;
 n.r(t), n.d(t, {
   default: () => X
 }), n(539854), n(388685);
-var a, o = n(392711),
-  s = n.n(o),
+var o, a = n(392711),
+  s = n.n(a),
   l = n(442837),
   c = n(570140),
   u = n(308063),
@@ -54,11 +54,11 @@ function C(e) {
   if (t !== p.pNK.INTEGRATIONS) return !1;
   if (null == r) {
     let e = _.Z.getGuildId();
-    null != e && (u.Z.fetchForGuild(e), v = !0), P(!1)
+    null != e && (u.Z.fetchForGuild(e), v = !0), R(!1)
   }
 }
 
-function R(e) {
+function P(e) {
   let {
     section: t,
     sectionId: n
@@ -66,7 +66,7 @@ function R(e) {
   i = t, N = n
 }
 
-function P(e) {
+function R(e) {
   if (null != (r = _.Z.getProps().guild) && d.Z.can(p.Plq.MANAGE_GUILD, r)) {
     let e = _.Z.getProps().integrations;
     null == e && (I = !0), g = null != e ? e : []
@@ -105,11 +105,11 @@ function x(e) {
   O = m({}, O), null != t.name && O.name !== t.name && (O.name = t.name, A = !0), void 0 !== t.avatar && O.avatar !== t.avatar && (O.avatar = t.avatar, A = !0), null != t.channelId && O.channel_id !== t.channelId && (O.channel_id = t.channelId, A = !0), A && D()
 }
 
-function M() {
+function k() {
   S = p.QZA.SUBMITTING, T = {}
 }
 
-function k(e) {
+function M(e) {
   var t;
   if (S !== p.QZA.SUBMITTING) return !1;
   S = p.QZA.OPEN, T = null != (t = e.errors) ? t : {}
@@ -128,8 +128,8 @@ function j(e) {
         } = t;
         if (n === e.id) return !0
       })) {
-      var i, a;
-      g.push(e), e.type === (null == y ? void 0 : y.type) && (null == (i = e.account) ? void 0 : i.id) === (null == (a = y.account) ? void 0 : a.id) && (y = e)
+      var i, o;
+      g.push(e), e.type === (null == y ? void 0 : y.type) && (null == (i = e.account) ? void 0 : i.id) === (null == (o = y.account) ? void 0 : o.id) && (y = e)
     } for (let e = g.length - 1; e >= 0; e--) {
     let t = g[e],
       r = n.find(e => {
@@ -192,7 +192,7 @@ function B(e) {
   b = null, T = {}, A = !1
 }
 
-function V(e) {
+function F(e) {
   let {
     integrationId: t
   } = e, n = K(t);
@@ -200,7 +200,7 @@ function V(e) {
   y = n, b = null, O = null, T = {}, A = !1
 }
 
-function F() {
+function V() {
   y = null, T = {}, A = !1
 }
 
@@ -217,11 +217,11 @@ function H() {
 }
 
 function Y() {
-  return P(!1)
+  return R(!1)
 }
 
 function W() {
-  return P(!0)
+  return R(!0)
 }
 
 function K(e) {
@@ -241,7 +241,7 @@ function z(e) {
     return n === e
   })
 }
-class q extends(a = l.ZP.Store) {
+class q extends(o = l.ZP.Store) {
   initialize() {
     this.waitFor(_.Z, f.Z, d.Z)
   }
@@ -304,11 +304,11 @@ let Q = new q(c.Z, __OVERLAY__ ? {} : {
     INTEGRATION_SETTINGS_SAVE_SUCCESS: W,
     GUILD_SETTINGS_INIT: C,
     GUILD_SETTINGS_SET_SECTION: C,
-    INTEGRATION_SETTINGS_SET_SECTION: R,
+    INTEGRATION_SETTINGS_SET_SECTION: P,
     INTEGRATION_SETTINGS_START_EDITING_COMMAND: G,
     INTEGRATION_SETTINGS_STOP_EDITING_COMMAND: B,
-    INTEGRATION_SETTINGS_START_EDITING_INTEGRATION: V,
-    INTEGRATION_SETTINGS_STOP_EDITING_INTEGRATION: F,
+    INTEGRATION_SETTINGS_START_EDITING_INTEGRATION: F,
+    INTEGRATION_SETTINGS_STOP_EDITING_INTEGRATION: V,
     INTEGRATION_SETTINGS_UPDATE_INTEGRATION: L,
     INTEGRATION_SETTINGS_UPDATE_WEBHOOK: x,
     INTEGRATION_SETTINGS_START_EDITING_WEBHOOK: Z,
@@ -316,7 +316,7 @@ let Q = new q(c.Z, __OVERLAY__ ? {} : {
     GUILD_SETTINGS_CLOSE: w,
     GUILD_SETTINGS_LOADED_INTEGRATIONS: j,
     WEBHOOKS_UPDATE: U,
-    INTEGRATION_SETTINGS_SUBMITTING: M,
-    INTEGRATION_SETTINGS_SAVE_FAILURE: k
+    INTEGRATION_SETTINGS_SUBMITTING: k,
+    INTEGRATION_SETTINGS_SAVE_FAILURE: M
   }),
   X = Q

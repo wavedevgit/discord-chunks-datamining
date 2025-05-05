@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(781311);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(106351),
   l = n(507274),
   c = n(541716),
@@ -37,11 +37,11 @@ let S = (0, f.kt)({
     } = e;
     switch (r) {
       case y.n_.ACTIVITY:
-        let a = v.intl.formatToPlainString(v.t.WmvMCg, {
+        let o = v.intl.formatToPlainString(v.t.WmvMCg, {
             username: n
           }),
-          o = "\n> ".concat(i);
-        return null != i ? "".concat(E.jd).concat(a, "*").concat(o, "\n").concat(t) : "".concat(E.jd).concat(a, "*\n").concat(t);
+          a = "\n> ".concat(i);
+        return null != i ? "".concat(E.jd).concat(o, "*").concat(a, "\n").concat(t) : "".concat(E.jd).concat(o, "*\n").concat(t);
       case y.n_.AVATAR:
         let s = v.intl.formatToPlainString(v.t.lpaBsL, {
           username: n
@@ -74,22 +74,22 @@ function N(e) {
   let {
     user: t,
     guildId: n,
-    channelId: a,
+    channelId: o,
     sourceType: s,
     sourceDetails: f,
     setPopoutRef: _,
     modalKey: E,
     onAction: N,
     onClose: C,
-    entry: R
+    entry: P
   } = e, {
-    resetInteraction: P,
+    resetInteraction: R,
     setInteractionToast: w
   } = (0, g.Xo)(), {
     primaryColor: D
-  } = (0, b.z)(), [L, x] = i.useState(""), [M, k] = i.useState((0, u.JM)(L)), j = i.useRef(!1), U = i.useRef(null), G = i.useCallback(e => {
-    e.key === O.vn.ESCAPE && (e.stopPropagation(), P())
-  }, [P]);
+  } = (0, b.z)(), [L, x] = i.useState(""), [k, M] = i.useState((0, u.JM)(L)), j = i.useRef(!1), U = i.useRef(null), G = i.useCallback(e => {
+    e.key === O.vn.ESCAPE && (e.stopPropagation(), R())
+  }, [R]);
   i.useEffect(() => {
     null == _ || _(null == U ? void 0 : U.current)
   }, [U, _]);
@@ -116,11 +116,11 @@ function N(e) {
         location: "UserProfileReplyPopout",
         openChannel: !1,
         whenReady: !1,
-        entry: R
+        entry: P
       })
     } catch (e) {}
     w(y.P.REPLY)
-  }, V = {
+  }, F = {
     [I.status]: s === y.n_.STATUS,
     [I.avatar]: s === y.n_.AVATAR,
     [I.activity]: s === y.n_.ACTIVITY
@@ -129,7 +129,7 @@ function N(e) {
     ref: U,
     onKeyDown: G,
     children: (0, r.jsx)("div", {
-      className: o()(I.container, V, {
+      className: a()(I.container, F, {
         [I.customProfileTheme]: null != D
       }),
       children: (0, r.jsx)(d.Z, {
@@ -140,13 +140,13 @@ function N(e) {
         editorClassName: I.editor,
         type: c.Ie.USER_PROFILE_REPLY,
         placeholder: v.intl.formatToPlainString(A(s), {
-          username: p.ZP.getName(n, a, t)
+          username: p.ZP.getName(n, o, t)
         }),
         channel: S,
         textValue: L,
-        richValue: M,
+        richValue: k,
         onChange: (e, t, n) => {
-          t !== L && (x(t), k(n))
+          t !== L && (x(t), M(n))
         },
         focused: j.current,
         onFocus: () => {
@@ -161,7 +161,7 @@ function N(e) {
             shouldRefocus: !1
           };
           try {
-            return await B(n), P(), null == C || C(), {
+            return await B(n), R(), null == C || C(), {
               shouldClear: !0,
               shouldRefocus: !1
             }

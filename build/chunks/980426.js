@@ -2,8 +2,8 @@
 t.d(n, {
   Tx: () => l,
   d8: () => i,
-  nY: () => u,
-  v6: () => c
+  nY: () => c,
+  v6: () => u
 });
 var r = t(255367);
 
@@ -25,7 +25,7 @@ function i(e) {
   })
 }
 
-function c(e) {
+function u(e) {
   let {
     children: n
   } = e;
@@ -34,7 +34,7 @@ function c(e) {
   })
 }
 
-function u(e) {
+function c(e) {
   let {
     children: n
   } = e;

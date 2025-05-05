@@ -1,6 +1,6 @@
 /**
   Module ID: 12192
-  Original File Name: b709a342c48bfe35
+  Original File Name: a13d815021fb1e3b
 **/
 .modal_deee3a {
     max-height: 600px;
@@ -47,7 +47,7 @@
 }
 
 :where(.visual-refresh) .container_deee3a {
-    background: radial-gradient(100% 100% at 50% 100%,var(--background-primary) 60%,var(--transparent) 100%),linear-gradient(270deg,var(--bg-modal-gradient-navy-end) 0,var(--bg-modal-gradient-navy-start) 100%);
+    background: radial-gradient(100% 100% at 50% 100%,var(--background-primary) 60%,var(--transparent) 100%),linear-gradient(270deg,var(--background-modal-gradient-blue-end) 0,var(--background-modal-gradient-blue-start) 100%);
     border-radius: 12px;
     box-shadow: inset 0 0 0 1px var(--border-subtle);
     min-height: 425px;
@@ -58,4 +58,4 @@
     border: none
 }
 
-/*# sourceMappingURL=b709a342c48bfe35.css.map*/
+/*# sourceMappingURL=a13d815021fb1e3b.css.map*/

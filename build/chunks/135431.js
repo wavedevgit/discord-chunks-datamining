@@ -6,8 +6,8 @@ n.d(t, {
 }), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685);
 var r = n(873546),
   i = n(149765),
-  a = n(69580),
-  o = n(626135),
+  o = n(69580),
+  a = n(626135),
   s = n(49012),
   l = n(981631);
 
@@ -24,7 +24,7 @@ function c(e) {
     oauth2Callback: h
   } = e;
   if (null != n) {
-    o.default.track(l.rMx.APPLICATION_ADD_TO_SERVER_CLICKED, {
+    a.default.track(l.rMx.APPLICATION_ADD_TO_SERVER_CLICKED, {
       application_id: t,
       guild_id: d,
       auth_type: "custom_url",
@@ -36,13 +36,13 @@ function c(e) {
     return
   }
   if (null != u && Object.values(u).some(e => (null == e ? void 0 : e.oauth2_install_params) != null || (null == e ? void 0 : e.oauth2InstallParams) != null)) {
-    o.default.track(l.rMx.APPLICATION_ADD_TO_SERVER_CLICKED, {
+    a.default.track(l.rMx.APPLICATION_ADD_TO_SERVER_CLICKED, {
       application_id: t,
       guild_id: d,
       auth_type: "in_app",
       source: p,
       device_platform: r.tq ? "mobile_web" : "desktop_web"
-    }), (0, a.openOAuth2Modal)({
+    }), (0, o.openOAuth2Modal)({
       clientId: t,
       guildId: d,
       channelId: f,
@@ -51,13 +51,13 @@ function c(e) {
     });
     return
   }
-  null != c && (o.default.track(l.rMx.APPLICATION_ADD_TO_SERVER_CLICKED, {
+  null != c && (a.default.track(l.rMx.APPLICATION_ADD_TO_SERVER_CLICKED, {
     application_id: t,
     guild_id: d,
     auth_type: "in_app",
     source: p,
     device_platform: r.tq ? "mobile_web" : "desktop_web"
-  }), (0, a.openOAuth2Modal)({
+  }), (0, o.openOAuth2Modal)({
     clientId: t,
     guildId: d,
     channelId: f,

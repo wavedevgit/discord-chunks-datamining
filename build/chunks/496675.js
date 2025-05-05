@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => $
 }), n(388685);
 var r, i = n(392711),
-  a = n.n(i),
-  o = n(149765),
+  o = n.n(i),
+  a = n(149765),
   s = n(442837),
   l = n(570140),
   c = n(160404),
@@ -36,9 +36,9 @@ function T(e, t, n) {
 let A = {},
   N = {},
   C = {},
-  R = 0;
+  P = 0;
 
-function P(e) {
+function R(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     n = A[e];
   if (null != n) return n;
@@ -59,9 +59,9 @@ function w(e) {
   if (null == r) return E.Hn;
   let i = b.Z.getChannel(e);
   if (null == i) return E.Hn;
-  let o = i.getGuildId(),
-    s = null != o && (u.Z.isLurking(o) || (null == (t = y.ZP.getMember(o, r.id)) ? void 0 : t.isPending));
-  return !i.isScheduledForDeletion() && !s && a().isEmpty(i.permissionOverwrites) && null != o ? P(o) : E.uB({
+  let a = i.getGuildId(),
+    s = null != a && (u.Z.isLurking(a) || (null == (t = y.ZP.getMember(a, r.id)) ? void 0 : t.isPending));
+  return !i.isScheduledForDeletion() && !s && o().isEmpty(i.permissionOverwrites) && null != a ? R(a) : E.uB({
     user: r,
     context: i,
     checkElevated: n
@@ -83,14 +83,14 @@ function L(e) {
 
 function x() {
   for (let e in A = {}, N = {}, C) C[e] += 1;
-  R += 1
-}
-
-function M() {
-  x()
+  P += 1
 }
 
 function k() {
+  x()
+}
+
+function M() {
   J()
 }
 
@@ -120,7 +120,7 @@ function G(e) {
       context: n
     });
   if (N[n.id] === i) return !1;
-  N[n.id] = i, R += 1, L(n.getGuildId())
+  N[n.id] = i, P += 1, L(n.getGuildId())
 }
 
 function B(e) {
@@ -140,14 +140,14 @@ function B(e) {
       });
     N[t.id] !== i && (N[t.id] = i, L(t.getGuildId()), n = !0)
   }
-  return !!n && (R += 1, n)
+  return !!n && (P += 1, n)
 }
 
-function V() {
+function F() {
   return !0
 }
 
-function F(e) {
+function V(e) {
   var t;
   return (null == (t = v.default.getCurrentUser()) ? void 0 : t.id) === e.userId && (L(e.guildId), !0)
 }
@@ -175,7 +175,7 @@ function W(e) {
   let {
     channel: t
   } = e;
-  return delete N[t.id], R += 1, L(t.guild_id), !1
+  return delete N[t.id], P += 1, L(t.guild_id), !1
 }
 
 function K(e) {
@@ -184,9 +184,9 @@ function K(e) {
   } = e;
   delete A[t];
   let n = b.Z.getMutableBasicGuildChannelsForGuild(t);
-  a().forEach(n, e => {
+  o().forEach(n, e => {
     delete N[e.id]
-  }), R += 1, L(t)
+  }), P += 1, L(t)
 }
 
 function z(e) {
@@ -200,7 +200,7 @@ function z(e) {
       context: n
     });
   if (i === N[n.id]) return !1;
-  N[n.id] = i, R += 1
+  N[n.id] = i, P += 1
 }
 
 function q(e) {
@@ -209,9 +209,9 @@ function q(e) {
   } = e;
   delete A[t];
   let n = b.Z.getMutableBasicGuildChannelsForGuild(t);
-  a().forEach(n, e => {
+  o().forEach(n, e => {
     delete N[e.id]
-  }), R += 1, L(t)
+  }), P += 1, L(t)
 }
 
 function Q(e, t, n, r) {
@@ -222,7 +222,7 @@ function Q(e, t, n, r) {
       return null == i ? E.Hn : E.Og(e, Q(i, t, n, r), f.Z.hasJoined(e.id))
     }
     i = D(e.id)
-  } else e instanceof h.ZP && (i = P(e.id));
+  } else e instanceof h.ZP && (i = R(e.id));
   return void 0 !== t || void 0 !== n || void 0 !== r ? E.uB({
     user: v.default.getCurrentUser(),
     context: e,
@@ -240,7 +240,7 @@ class X extends(r = s.ZP.Store) {
     return p.Ec.has(e.type) ? w(e.id) : D(e.id)
   }
   getGuildPermissions(e) {
-    return P(e.id)
+    return R(e.id)
   }
   getGuildPermissionProps(e) {
     let t = v.default.getCurrentUser();
@@ -263,20 +263,20 @@ class X extends(r = s.ZP.Store) {
     }
   }
   canAccessMemberSafetyPage(e) {
-    return o.Db(P(e.id), S.N)
+    return a.Db(R(e.id), S.N)
   }
   canAccessGuildSettings(e) {
-    return o.Db(P(e.id), E.ym)
+    return a.Db(R(e.id), E.ym)
   }
   canWithPartialContext(e, t) {
     return "channelId" in t && "string" == typeof t.channelId ? this.can(e, b.Z.getChannel(t.channelId)) : "guildId" in t && "string" == typeof t.guildId && this.can(e, O.Z.getGuild(t.guildId))
   }
   can(e, t, n, r, i) {
-    let a = Q(t, n, r, i);
-    return o.e$(a, e)
+    let o = Q(t, n, r, i);
+    return a.e$(o, e)
   }
   canBasicChannel(e, t, n, r, i) {
-    return "basicPermissions" in t ? g.Z.has(t.basicPermissions, e) : o.e$(Q(t, n, r, i), g.Z.asBigFlag(e))
+    return "basicPermissions" in t ? g.Z.has(t.basicPermissions, e) : a.e$(Q(t, n, r, i), g.Z.asBigFlag(e))
   }
   computePermissions(e, t, n, r) {
     return Q(e, t, n, r)
@@ -289,9 +289,9 @@ class X extends(r = s.ZP.Store) {
     if (n.isOwner(r)) return !1;
     let i = v.default.getCurrentUser();
     if (!this.can(e, n)) return !1;
-    let a = null != i ? E.e9(n, i.id) : void 0,
-      o = E.e9(n, r);
-    return null != i && E.r6(n, i.id, a, o)
+    let o = null != i ? E.e9(n, i.id) : void 0,
+      a = E.e9(n, r);
+    return null != i && E.r6(n, i.id, o, a)
   }
   getHighestRole(e) {
     let t = v.default.getCurrentUser();
@@ -313,21 +313,21 @@ class X extends(r = s.ZP.Store) {
     return null != (t = C[e]) ? t : 0
   }
   getChannelsVersion() {
-    return R
+    return P
   }
 }
 
 function J() {
-  N = {}, A = {}, C = {}, R = 0
+  N = {}, A = {}, C = {}, P = 0
 }
 T(X, "displayName", "PermissionStore");
 let $ = new X(l.Z, {
-  BACKGROUND_SYNC: M,
-  CONNECTION_OPEN: M,
-  OVERLAY_INITIALIZE: M,
-  CACHE_LOADED: M,
-  CACHE_LOADED_LAZY: M,
-  CONNECTION_CLOSED: k,
+  BACKGROUND_SYNC: k,
+  CONNECTION_OPEN: k,
+  OVERLAY_INITIALIZE: k,
+  CACHE_LOADED: k,
+  CACHE_LOADED_LAZY: k,
+  CONNECTION_CLOSED: M,
   GUILD_CREATE: j,
   GUILD_UPDATE: j,
   GUILD_DELETE: j,
@@ -335,16 +335,16 @@ let $ = new X(l.Z, {
   GUILD_MEMBER_UPDATE: U,
   CURRENT_USER_UPDATE: U,
   CHANNEL_CREATE: G,
-  THREAD_CREATE: V,
-  THREAD_UPDATE: V,
-  THREAD_LIST_SYNC: V,
-  LOAD_THREADS_SUCCESS: V,
-  LOAD_ARCHIVED_THREADS_SUCCESS: V,
+  THREAD_CREATE: F,
+  THREAD_UPDATE: F,
+  THREAD_LIST_SYNC: F,
+  LOAD_THREADS_SUCCESS: F,
+  LOAD_ARCHIVED_THREADS_SUCCESS: F,
   CHANNEL_UPDATES: B,
   LOAD_MESSAGES_SUCCESS: H,
   SEARCH_FINISH: Y,
   MOD_VIEW_SEARCH_FINISH: Y,
-  THREAD_MEMBER_UPDATE: F,
+  THREAD_MEMBER_UPDATE: V,
   THREAD_MEMBERS_UPDATE: Z,
   CHANNEL_DELETE: W,
   GUILD_ROLE_CREATE: K,

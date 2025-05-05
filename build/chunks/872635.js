@@ -6,8 +6,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(650557),
   l = n(481060),
   c = n(40851),
@@ -25,7 +25,7 @@ function E(e) {
   let {
     editorRef: n,
     options: i,
-    iconClassName: a,
+    iconClassName: o,
     dividerClassName: s
   } = e, c = null == (t = n.current) ? void 0 : t.getSlateEditor();
   return null == c ? null : (0, r.jsxs)("div", {
@@ -36,7 +36,7 @@ function E(e) {
       children: (0, r.jsx)(l.mY4, {
         size: "md",
         color: "currentColor",
-        className: o()(g.icon, a)
+        className: a()(g.icon, o)
       })
     }), (0, r.jsx)(y, {
       slateEditor: c,
@@ -44,7 +44,7 @@ function E(e) {
       children: (0, r.jsx)(l.h32, {
         size: "md",
         color: "currentColor",
-        className: o()(g.icon, a)
+        className: a()(g.icon, o)
       })
     }), (0, r.jsx)(y, {
       slateEditor: c,
@@ -52,17 +52,17 @@ function E(e) {
       children: (0, r.jsx)(l.dwl, {
         size: "md",
         color: "currentColor",
-        className: o()(g.icon, a)
+        className: a()(g.icon, o)
       })
     }), (0, r.jsx)("div", {
-      className: o()(g.divider, s)
+      className: a()(g.divider, s)
     }), !(null == i ? void 0 : i.disableBlockQuotes) && (0, r.jsx)(O, {
       slateEditor: c,
       blockType: "blockQuote",
       children: (0, r.jsx)(l.PEf, {
         size: "md",
         color: "currentColor",
-        className: o()(g.icon, a)
+        className: a()(g.icon, o)
       })
     }), (0, r.jsx)(y, {
       slateEditor: c,
@@ -72,7 +72,7 @@ function E(e) {
         width: 20,
         height: 20,
         color: "currentColor",
-        className: o()(g.icon, a)
+        className: a()(g.icon, o)
       })
     }), (0, r.jsx)(y, {
       slateEditor: c,
@@ -80,7 +80,7 @@ function E(e) {
       children: (0, r.jsx)(l.tEF, {
         size: "md",
         color: "currentColor",
-        className: o()(g.icon, a)
+        className: a()(g.icon, o)
       })
     })]
   })
@@ -88,8 +88,8 @@ function E(e) {
 let b = i.forwardRef(function(e, t) {
   var n;
   let {
-    editorRef: a,
-    containerRef: o,
+    editorRef: o,
+    containerRef: a,
     options: l
   } = e, f = i.useRef(null), [_, p] = i.useState(!1), m = i.useRef(null), b = i.useContext(c.ZP), y = i.useCallback(() => {
     p(!1), clearTimeout(m.current)
@@ -107,12 +107,12 @@ let b = i.forwardRef(function(e, t) {
         clearTimeout(m.current), m.current = setTimeout(() => {
           var t;
           let n = null == (t = (0, d.uB)(e)) ? void 0 : t.activeElement,
-            i = o.current;
+            i = a.current;
           p(r || null != n && null != i && i.contains(n))
         }, 100)
       }
     else y()
-  }, [b, o, y]);
+  }, [b, a, y]);
   i.useImperativeHandle(t, () => ({
     hide: y
   }), [y]), i.useEffect(() => {
@@ -126,7 +126,7 @@ let b = i.forwardRef(function(e, t) {
     y: T
   } = i.useMemo(() => {
     var e, t, n, r;
-    let i = null == (e = a.current) ? void 0 : e.getSlateEditor();
+    let i = null == (e = o.current) ? void 0 : e.getSlateEditor();
     if ((null == i ? void 0 : i.selection) == null || h.M8.isCollapsed(i.selection) || !_) return {
       x: null,
       y: null
@@ -149,19 +149,19 @@ let b = i.forwardRef(function(e, t) {
       E = d.x === p.x,
       b = E ? g.x : Math.min(d.x, p.x),
       y = E ? g.x + g.width : Math.max(d.x, p.x),
-      O = null != (r = null == (n = o.current) || null == (t = n.getBoundingClientRect()) ? void 0 : t.y) ? r : 0;
+      O = null != (r = null == (n = a.current) || null == (t = n.getBoundingClientRect()) ? void 0 : t.y) ? r : 0;
     return {
       x: b + (y - b) / 2,
       y: Math.max(O, Math.min(p.y, d.y))
     }
-  }, [o, _, a]), [A, N] = i.useState(0), [C, R] = i.useState(0);
+  }, [a, _, o]), [A, N] = i.useState(0), [C, P] = i.useState(0);
   if (i.useLayoutEffect(() => {
       if (null == S || null == T || null == f.current) return;
       let e = f.current.getBoundingClientRect();
-      R(e.width / 2), N(e.height + 12)
+      P(e.width / 2), N(e.height + 12)
     }, [S, T]), null == S || null == T) return null;
-  let P = null == (n = a.current) ? void 0 : n.getSlateEditor();
-  return null == P ? null : (0, r.jsx)(u.ZP, {
+  let R = null == (n = o.current) ? void 0 : n.getSlateEditor();
+  return null == R ? null : (0, r.jsx)(u.ZP, {
     children: (0, r.jsxs)("div", {
       id: "slate-toolbar",
       ref: f,
@@ -177,9 +177,9 @@ let b = i.forwardRef(function(e, t) {
         e.stopPropagation()
       },
       children: [(0, r.jsx)(v, {
-        slateEditor: P
+        slateEditor: R
       }), (0, r.jsx)(E, {
-        editorRef: a,
+        editorRef: o,
         options: l
       })]
     })
@@ -191,17 +191,17 @@ function y(e) {
     slateEditor: t,
     markdownSyntax: n,
     children: i
-  } = e, a = () => {
+  } = e, o = () => {
     null != t && f.T.withSingleEntry(t, () => (0, _.py)(t, n))
-  }, o = !1;
+  }, a = !1;
   if ((null == t ? void 0 : t.selection) != null) {
     let [e, r] = h.M8.edges(t.selection);
-    o = null != (0, _.U4)(t, e, r).before[n]
+    a = null != (0, _.U4)(t, e, r).before[n]
   }
   return (0, r.jsx)("button", {
-    "aria-pressed": o,
+    "aria-pressed": a,
     className: g.button,
-    onClick: a,
+    onClick: o,
     children: i
   })
 }
@@ -211,13 +211,13 @@ function O(e) {
     blockType: t,
     slateEditor: n,
     children: i
-  } = e, a = () => {
+  } = e, o = () => {
     null != n && f.T.withSingleEntry(n, () => (0, _.hm)(n, t))
-  }, o = null != n ? h.bN.getCurrentBlock(n) : null, s = null != o && h.aj.isType(o[0], t);
+  }, a = null != n ? h.bN.getCurrentBlock(n) : null, s = null != a && h.aj.isType(a[0], t);
   return (0, r.jsx)("button", {
     "aria-pressed": s,
     className: g.button,
-    onClick: a,
+    onClick: o,
     children: i
   })
 }
@@ -226,14 +226,14 @@ function v(e) {
   var t;
   let {
     slateEditor: n
-  } = e, [r, a] = null != (t = h.bN.getSelectedVoid(n)) ? t : [null, null], o = i.useCallback(e => {
-    if ((null == n ? void 0 : n.selection) == null || null == a) return;
+  } = e, [r, o] = null != (t = h.bN.getSelectedVoid(n)) ? t : [null, null], a = i.useCallback(e => {
+    if ((null == n ? void 0 : n.selection) == null || null == o) return;
     let t = n.selection;
     f.T.withSingleEntry(n, () => {
-      p.Q.voidToText(n, e, a), p.Q.select(n, t)
+      p.Q.voidToText(n, e, o), p.Q.select(n, t)
     })
-  }, [n, a]);
+  }, [n, o]);
   return null == r ? null : (0, m.Z)(r, {
-    replace: o
+    replace: a
   })
 }

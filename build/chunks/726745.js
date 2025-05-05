@@ -2,10 +2,10 @@
 "use strict";
 let r, i;
 n.d(t, {
-  Z: () => R,
+  Z: () => P,
   q: () => m
 }), n(539854);
-var a, o = n(213919),
+var o, a = n(213919),
   s = n(442837),
   l = n(570140),
   c = n(990492),
@@ -98,7 +98,7 @@ function O(e) {
       id: n
     } = t;
     return n !== e
-  }), o.removeToken(e)
+  }), a.removeToken(e)
 }
 
 function v(e) {
@@ -157,7 +157,7 @@ function N(e) {
     pushSyncToken: null
   }) : e)
 }
-class C extends(a = s.ZP.PersistedStore) {
+class C extends(o = s.ZP.PersistedStore) {
   initialize(e) {
     if (null != e) {
       var t;
@@ -219,7 +219,7 @@ f(C, "displayName", "MultiAccountStore"), f(C, "persistKey", "MultiAccountStore"
     canUseMultiAccountMobile: !1
   }
 }]);
-let R = new C(l.Z, {
+let P = new C(l.Z, {
   CONNECTION_OPEN: b,
   LOGOUT: y,
   MULTI_ACCOUNT_VALIDATE_TOKEN_REQUEST: e => I(e.userId, 1),

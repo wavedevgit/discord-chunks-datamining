@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(760907),
   l = n(532772),
   c = n(570220),
@@ -59,10 +59,10 @@ function b(e, t) {
 function y(e, t) {
   let {
     disabled: n,
-    type: a
+    type: o
   } = e, [m, E] = (0, d.Iu)(e => [e.activeView, e.pickerId], s.X), y = i.useContext(c.ZP), O = !1, [v, I] = i.useState(!1), S = m === _.X1.STICKER, T = !1, A = i.useCallback(() => {
-    (0, d.RO)(_.X1.STICKER, a)
-  }, [a]);
+    (0, d.RO)(_.X1.STICKER, o)
+  }, [o]);
   i.useEffect(() => {
     let e = () => {
         requestAnimationFrame(() => {
@@ -81,20 +81,20 @@ function y(e, t) {
   let {
     Component: N,
     events: C,
-    play: R
-  } = (0, l.z)(), P = (0, u.Q3)("ChannelStickerPickerButton");
+    play: P
+  } = (0, l.z)(), R = (0, u.Q3)("ChannelStickerPickerButton");
   if (n) return null;
   let w = v;
   return (0, r.jsx)("div", {
-    className: o()(_.CT, h.buttonContainer),
+    className: a()(_.CT, h.buttonContainer),
     ref: t,
     children: (0, r.jsx)(f.Z, b(g({
-      innerClassName: o()(h.button, h.stickerButton, {
+      innerClassName: a()(h.button, h.stickerButton, {
         [h.stickerButtonTilted]: w && !S
       })
     }, C), {
       onClick: () => {
-        A(), R()
+        A(), P()
       },
       isActive: S,
       "aria-label": p.intl.string(p.t.rZpidX),
@@ -104,7 +104,7 @@ function y(e, t) {
       sparkle: O,
       notification: T ? f.j.UPDATE : null,
       children: (0, r.jsx)(N, {
-        size: P ? "refresh_sm" : void 0,
+        size: R ? "refresh_sm" : void 0,
         color: "currentColor"
       })
     }))

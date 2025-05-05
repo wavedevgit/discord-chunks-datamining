@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 var r = n(605905),
   i = n(779882),
-  a = n(580495),
-  o = RegExp("['’]", "g");
+  o = n(580495),
+  a = RegExp("['’]", "g");
 e.exports = function(e) {
   return function(t) {
-    return r(a(i(t).replace(o, "")), e, "")
+    return r(o(i(t).replace(a, "")), e, "")
   }
 }

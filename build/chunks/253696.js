@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(73800),
   i = n(367907),
-  a = n(339085),
-  o = n(689789),
+  o = n(339085),
+  a = n(689789),
   s = n(407477),
   l = n(592125),
   c = n(944486),
@@ -57,7 +57,7 @@ function b(e) {
     analyticsObject: b
   } = e, y = l.Z.getChannel(c.Z.getChannelId()), O = null == y ? void 0 : y.getGuildId(), {
     canSplitFrecencyList: v
-  } = o.Z.getCurrentConfig({
+  } = a.Z.getCurrentConfig({
     location: "trackOnEmojiPickerOpened"
   }, {
     autoTrackExposure: !0
@@ -68,14 +68,14 @@ function b(e) {
   s.Xb.trackExposure({
     location: "trackOnEmojiPickerOpened"
   });
-  let S = (v || I) && n === p.Hz.REACTION ? a.ZP.emojiReactionFrecencyWithoutFetchingLatest.frequently.slice() : a.ZP.emojiFrecencyWithoutFetchingLatest.frequently.slice(),
-    T = null != y ? a.ZP.getDisambiguatedEmojiContext(y.getGuildId()).favoriteEmojisWithoutFetchingLatest : [],
-    A = (v || I) && n === p.Hz.REACTION ? a.ZP.emojiReactionFrecencyWithoutFetchingLatest.numFrequentlyItems : a.ZP.emojiFrecencyWithoutFetchingLatest.numFrequentlyItems,
+  let S = (v || I) && n === p.Hz.REACTION ? o.ZP.emojiReactionFrecencyWithoutFetchingLatest.frequently.slice() : o.ZP.emojiFrecencyWithoutFetchingLatest.frequently.slice(),
+    T = null != y ? o.ZP.getDisambiguatedEmojiContext(y.getGuildId()).favoriteEmojisWithoutFetchingLatest : [],
+    A = (v || I) && n === p.Hz.REACTION ? o.ZP.emojiReactionFrecencyWithoutFetchingLatest.numFrequentlyItems : o.ZP.emojiFrecencyWithoutFetchingLatest.numFrequentlyItems,
     N = S.slice(0, A),
-    C = null != O ? a.ZP.getGuildEmoji(O) : [],
-    R = Object.values(null != (t = a.ZP.getDisambiguatedEmojiContext(null == y ? void 0 : y.getGuildId()).groupedCustomEmojis) ? t : {}).reduce((e, t) => e += t.length, 0),
+    C = null != O ? o.ZP.getGuildEmoji(O) : [],
+    P = Object.values(null != (t = o.ZP.getDisambiguatedEmojiContext(null == y ? void 0 : y.getGuildId()).groupedCustomEmojis) ? t : {}).reduce((e, t) => e += t.length, 0),
     {
-      topEmojis: P,
+      topEmojis: R,
       newlyAddedEmojis: w
     } = (0, f._)({
       guildId: null == y ? void 0 : y.getGuildId(),
@@ -85,7 +85,7 @@ function b(e) {
       visibleTopEmojis: D,
       visibleNewlyAddedEmojis: L
     } = (0, d.J)({
-      topEmojis: P,
+      topEmojis: R,
       newlyAddedEmojis: w,
       rowSize: m
     });
@@ -102,7 +102,7 @@ function b(e) {
     num_custom_expressions_frecent: N.filter(u.ZP.isCustomEmoji).length,
     num_standard_expressions_frecent: N.filter(e => null == e.id).length,
     num_current_guild_expressions: C.length,
-    num_custom_expressions_total: R,
+    num_custom_expressions_total: P,
     num_expressions_top_server: D.length,
     num_animated_expressions_top_server: D.filter(e => e.animated).length,
     num_expressions_newly_added: L.length,

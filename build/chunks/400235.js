@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(73800),
   i = n(166842),
-  a = n(50039),
-  o = n(46112),
+  o = n(50039),
+  a = n(46112),
   s = function() {},
   l = function() {
     return Promise.resolve(null)
@@ -32,7 +32,7 @@ function u(e) {
     I = v[0],
     S = v[1];
   r.useEffect(function() {
-    (0, a.k$)(m, y)
+    (0, o.k$)(m, y)
   }, [m, y]);
   var T = r.useMemo(function() {
       return {
@@ -48,11 +48,11 @@ function u(e) {
         }])
       }
     }, [n, d, h, _, I]),
-    A = (0, o.D)(p || E, y, T),
+    A = (0, a.D)(p || E, y, T),
     N = A.state,
     C = A.styles,
-    R = A.forceUpdate,
-    P = A.update,
+    P = A.forceUpdate,
+    R = A.update,
     w = r.useMemo(function() {
       return {
         ref: O,
@@ -64,9 +64,9 @@ function u(e) {
           style: C.arrow,
           ref: S
         },
-        forceUpdate: R || s,
-        update: P || l
+        forceUpdate: P || s,
+        update: R || l
       }
-    }, [O, S, n, N, C, P, R]);
-  return (0, a.$p)(g)(w)
+    }, [O, S, n, N, C, R, P]);
+  return (0, o.$p)(g)(w)
 }

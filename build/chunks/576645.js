@@ -1,24 +1,24 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  J: () => M,
+  J: () => k,
   Nt: () => Z,
   Ou: () => G,
   R2: () => L,
   T$: () => w,
-  Uu: () => k,
-  ZC: () => F,
+  Uu: () => M,
+  ZC: () => V,
   Zm: () => D,
   bK: () => j,
   mx: () => U,
   t6: () => x,
   tv: () => B,
-  vY: () => V
+  vY: () => F
 }), n(388685);
 var r = n(73800),
   i = n(525654),
-  a = n.n(i),
-  o = n(259443),
+  o = n.n(i),
+  a = n(259443),
   s = n(442837),
   l = n(846027),
   c = n(607070),
@@ -41,8 +41,8 @@ var r = n(73800),
   A = n(981631),
   N = n(37113);
 let C = 35e5,
-  R = 1e4,
-  P = new o.Yd("HDStreamingConsumableModal"),
+  P = 1e4,
+  R = new a.Yd("HDStreamingConsumableModal"),
   w = e => {
     let t = (0, s.e7)([_.Z], () => _.Z.getGuild(null == e ? void 0 : e.guild_id)),
       n = (0, s.e7)([g.default], () => {
@@ -50,25 +50,25 @@ let C = 35e5,
         return null == (e = g.default.getCurrentUser()) ? void 0 : e.id
       }),
       i = (0, s.Wu)([f.Z], () => null == e ? [] : f.Z.getAllActiveStreamsForChannel(e.id).filter(e => e.ownerId !== n)),
-      a = i.some(e => {
+      o = i.some(e => {
         let t = g.default.getUser(e.ownerId);
         return null != t && h.Z.isMobileOnline(t.id)
       }),
-      [o, l] = (0, r.useState)(null),
+      [a, l] = (0, r.useState)(null),
       [c, u] = (0, r.useState)([]);
     (0, s.e7)([m.Z], () => {
-      if (null == o || Date.now() - o > R) {
+      if (null == a || Date.now() - a > P) {
         let e = i.map(e => {
           var t;
           let n = (0, d.V9)(e),
             r = m.Z.getRTCConnection(n);
           return null == r || null == (t = r.getVideoStats()) ? void 0 : t.inbound_bitrate_estimate_percentile99
         });
-        P.info("Setting bitrates", e), u(e), l(Date.now())
+        R.info("Setting bitrates", e), u(e), l(Date.now())
       }
-    }, [o, i]);
+    }, [a, i]);
     let p = (0, r.useMemo)(() => 0 === c.length || !c.some(e => null == e || e < C), [c]);
-    return ((null == t ? void 0 : t.premiumTier) === A.Eu4.NONE || (null == t ? void 0 : t.premiumTier) === A.Eu4.TIER_1) && p && !a
+    return ((null == t ? void 0 : t.premiumTier) === A.Eu4.NONE || (null == t ? void 0 : t.premiumTier) === A.Eu4.TIER_1) && p && !o
   },
   D = (e, t) => {
     let n = (0, s.e7)([g.default], () => {
@@ -77,8 +77,8 @@ let C = 35e5,
       }),
       r = (0, s.Wu)([f.Z], () => null == e ? [] : f.Z.getAllActiveStreamsForChannel(e.id).filter(e => e.ownerId !== n)),
       i = (0, S.j)(t),
-      a = w(e);
-    return i && a && r.length > 0
+      o = w(e);
+    return i && o && r.length > 0
   };
 
 function L(e) {
@@ -94,34 +94,34 @@ function L(e) {
 
 function x(e) {
   let t = (0, I.V1)("Utils.tsx"),
-    [n, i, a, o, l] = (0, s.Wu)([O.Z], () => [O.Z.isEntitlementFetched(e), O.Z.fetchPotionCount(e), O.Z.isEntitlementFetching(e), O.Z.getEntitlement(e), O.Z.getErrored(e)]);
+    [n, i, o, a, l] = (0, s.Wu)([O.Z], () => [O.Z.isEntitlementFetched(e), O.Z.fetchPotionCount(e), O.Z.isEntitlementFetching(e), O.Z.getEntitlement(e), O.Z.getErrored(e)]);
   return (0, r.useEffect)(() => {
-    n || a || !t || (0, y.gA)(e)
-  }, [n, a, e, t]), {
-    entitlement: o,
+    n || o || !t || (0, y.gA)(e)
+  }, [n, o, e, t]), {
+    entitlement: a,
     numPotions: i,
     fetchedEntitlement: n,
     error: l
   }
 }
 
-function M(e, t) {
+function k(e, t) {
   let n = (0, r.useRef)(!0),
     i = null == e ? void 0 : e.hdStreamingUntil,
-    a = (0, r.useRef)(t);
+    o = (0, r.useRef)(t);
   (0, r.useEffect)(() => {
-    a.current = t
+    o.current = t
   }), (0, r.useEffect)(() => {
     if (n.current) {
       n.current = !1;
       return
     }
-    if (null != i && new Date(i) > new Date) return a.current()
+    if (null != i && new Date(i) > new Date) return o.current()
   }, [i])
 }
 
-function k(e) {
-  M(e, () => {
+function M(e) {
+  k(e, () => {
     let t = f.Z.getCurrentUserActiveStream();
     if (null != t && t.channelId === e.id) {
       let e = p.Z.getState().goLiveSource;
@@ -134,7 +134,7 @@ function k(e) {
 
 function j() {
   var e;
-  let t = (null != (e = a().name) ? e : "unknown").toLowerCase(),
+  let t = (null != (e = o().name) ? e : "unknown").toLowerCase(),
     n = (0, s.e7)([E.Z], () => E.Z.isFocused()),
     r = (0, s.e7)([c.Z], () => c.Z.useReducedMotion);
   return "safari" === t || !n || r
@@ -156,7 +156,7 @@ function B(e, t, n, r) {
   return !t && null == n && ("" !== e || null != r && r.length > 0)
 }
 
-function V(e) {
+function F(e) {
   if (null != e) return {
     message_emoji: {
       id: e.emoji.id,
@@ -165,7 +165,7 @@ function V(e) {
   }
 }
 
-function F(e) {
+function V(e) {
   if (null == e || null == e.potions || 0 === e.potions.length) return null;
   for (let r of e.potions) {
     var t, n;

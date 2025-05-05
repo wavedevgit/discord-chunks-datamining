@@ -10,15 +10,15 @@ n.d(t, {
   BR: () => r.Z,
   BZ: () => z,
   Cw: () => w,
-  Cy: () => F,
+  Cy: () => V,
   EK: () => eh,
   ET: () => eg,
   Et: () => q,
-  GZ: () => k,
+  GZ: () => M,
   H0: () => A,
   He: () => I,
-  Il: () => o.I,
-  Jj: () => M,
+  Il: () => a.I,
+  Jj: () => k,
   MA: () => eE,
   NY: () => L,
   OL: () => g,
@@ -28,7 +28,7 @@ n.d(t, {
   Q: () => ep,
   QL: () => S,
   RG: () => em,
-  RK: () => ea,
+  RK: () => eo,
   S7: () => U,
   Sk: () => h,
   TC: () => H,
@@ -36,11 +36,11 @@ n.d(t, {
   U9: () => _,
   Uk: () => N,
   V6: () => W,
-  Vq: () => V,
+  Vq: () => F,
   Vz: () => y,
   X5: () => m,
   X6: () => Y,
-  X7: () => P,
+  X7: () => R,
   XM: () => et,
   Zu: () => j,
   aO: () => eb,
@@ -52,7 +52,7 @@ n.d(t, {
   gg: () => E,
   ht: () => b,
   i$: () => v,
-  j8: () => R,
+  j8: () => P,
   j_: () => ed,
   lT: () => X,
   ld: () => C,
@@ -68,9 +68,9 @@ n.d(t, {
 }), n(388685);
 var r = n(290926),
   i = n(149765),
-  a = n(860911);
+  o = n(860911);
 n(674746);
-var o = n(691324),
+var a = n(691324),
   s = n(481677);
 n(722770);
 let l = location.protocol + window.GLOBAL_ENV.WEBAPP_ENDPOINT,
@@ -162,8 +162,8 @@ let S = new Map([
   A = new Set([7, 8, 9, 12, 10, 13, 14, 15, 16, 4, 3, 5, 17]),
   N = new Set([7, 9, 3, 5, 4, 14, 15, 16]),
   C = new Set([1, 2, 6, 8, 10, 11, 13, 12, 17]),
-  R = new Set([3, 4, 5, 14, 15, 16, 7, 9, 12]),
-  P = new Set([6]);
+  P = new Set([3, 4, 5, 14, 15, 16, 7, 9, 12]),
+  R = new Set([6]);
 var w = function(e) {
     return e[e.NEW = 1] = "NEW", e
   }({}),
@@ -180,10 +180,10 @@ Object.freeze({
   CONSTANT: 1,
   APPLE_STICKER: 2
 });
-var M = function(e) {
+var k = function(e) {
     return e[e.DISCOVERY = 0] = "DISCOVERY", e[e.CHECKOUT = 1] = "CHECKOUT", e
   }({}),
-  k = function(e) {
+  M = function(e) {
     return e[e.SUBSCRIPTION = 0] = "SUBSCRIPTION", e[e.ONE_TIME = 1] = "ONE_TIME", e
   }({});
 let j = Object.freeze({
@@ -249,8 +249,8 @@ let G = Object.freeze({
   B = function() {
     for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n]
   },
-  V = () => null,
-  F = () => Promise.resolve(),
+  F = () => null,
+  V = () => Promise.resolve(),
   Z = [G.KICK_MEMBERS, G.BAN_MEMBERS, G.ADMINISTRATOR, G.MANAGE_CHANNELS, G.MANAGE_GUILD, G.MANAGE_ROLES, G.MANAGE_MESSAGES, G.MANAGE_THREADS, G.MODERATE_MEMBERS],
   H = i.$e(...Z),
   Y = 1,
@@ -304,13 +304,13 @@ let $ = 250,
     TWITTER_SUPPORT: "https://twitter.com/discord_support",
     QUESTS: "/quests"
   },
-  ea = Object.freeze({
+  eo = Object.freeze({
     TWITTER: Object.freeze({
       default: "https://twitter.com/discord",
       ja: "https://twitter.com/discord_jp"
     })
   }),
-  eo = Object.freeze({
+  ea = Object.freeze({
     WELCOME: "".concat(l, "/welcome/"),
     ME: "".concat(l, "/channels/@me"),
     SETTINGS: (e, t) => "".concat(l, "/settings/").concat(e).concat(t ? "/".concat(t) : ""),
@@ -332,8 +332,8 @@ let $ = 250,
 var es = function(e) {
   return e.INDEX = "/", e.INDEX_WORD = "/index", e.INDEX_BUCKET = "/index/:bucketId", e.CHANGELOGS = "/changelogs/:date", e.COMMUNITY = "/community", e.COMPANY = "/company", e.COMPANY_INFORMATION = "/company-information", e.CREATORS = "/creators", e.DOWNLOADS = "/downloads", e.DOWNLOAD = "/download", e.GAMING = "/gaming", e.PRIVACY = "/privacy", e.TOS = "/tos", e.TERMS = "/terms", e.STORE_TERMS = "/store-terms", e.ACKNOWLEDGEMENTS = "/acknowledgements", e.LICENSES = "/licenses", e.PARTNERS = "/partners", e.HYPESQUAD = "/hypesquad", e.HYPESQUAD_RIOT = "/hypesquad-riot", e.BRANDING = "/branding", e.ERROR_404 = "/404", e.JOBS = "/jobs", e.JOB = "/jobs/:jobId", e.STREAMKIT = "/streamkit", e.SECURITY = "/security", e.NITRO = "/nitro", e.DISCOVER = "/servers", e.QUESTS = "/ads/quests", e.GUIDELINES = "/guidelines", e.RICH_PRESENCE = "/rich-presence", e.VERIFICATION = "/verification", e.OPEN_SOURCE = "/open-source", e.WARFRAME = "/warframe", e.REMOTE_AUTH = "/ra/:remoteAuthFingerprint", e.SAFETY_LANDING = "/safetycenter", e.SAFETY_ARTICLE_ROOT = "/safety", e.SAFETY_ARTICLE = "/safety/:article", e.NEWSROOM = "/newsroom", e.INSPIRATION = "/inspiration", e.MOD_ACADEMY_LANDING = "/moderation", e.MOD_ACADEMY_EXAM = "/moderation/exam", e.MOD_ACADEMY_ARTICLE = "/moderation/:article", e.BLOG = "/blog", e.BUILD = "/build", e.DEVELOPERS = "/developers", e.APP_DIRECTORY = "/application-directory", e.REFRESH_INDEX = "/new", e.REFRESH_INDEX_WORD = "/new/index", e.REFRESH_COMPANY = "/new/company", e.REFRESH_DOWNLOAD = "/new/download", e.REFRESH_PRIVACY = "/new/privacy", e.REFRESH_TERMS = "/new/terms", e.REFRESH_ACKNOWLEDGEMENTS = "/new/acknowledgements", e.REFRESH_LICENSES = "/new/licenses", e.REFRESH_BRANDING = "/new/branding", e.REFRESH_JOBS = "/new/jobs", e.REFRESH_JOB = "/new/jobs/:jobId", e.REFRESH_STREAMKIT = "/new/streamkit", e.REFRESH_NITRO = "/new/nitro", e.REFRESH_GUIDELINES = "/new/guidelines", e.REFRESH_SAFETY_LANDING = "/new/safety", e.REFRESH_SAFETY_ARTICLE = "/new/safety/:article", e.COLLEGE = "/college", e.LEAGUE_CLUBS = "/league-communities", e.DISCORD_RECRUITING_SCAMS = "/discord-recruitment-scams", e.DEV_NEWSLETTER_SIGNUP = "/dev-newsletter", e.LEGACY_DEV_NEWSLETTER = "/newsletter", e.LEGAL_ARCHIVE = "/archive/", e.TERMS_MAY_2020 = "/archive/terms/may-2020", e.PRIVACY_JUNE_2020 = "/archive/privacy/june-2020", e.GUIDELINES_MAY_2020 = "/archive/guidelines/may-2020", e.FALL_RELEASE_2023 = "/fallrelease", e.MOBILE_REDESIGN_2023 = "/mobile", e.REFRESH_XBOX_OFFER = "/new/discord-xbox-offer-2019", e.REFRESH_WHY_DISCORD = "/why-discord-is-different", e.WHY_DISCORD = "/why-discord", e.XBOX_OFFER = "/discord-xbox-offer-2020", e.COLLEGE_BRUINS = "/bruins", e.COLLEGE_ANTEATERS = "/anteaters", e.COLLEGE_GAUCHOS = "/gauchos", e.COLLEGE_BEARS = "/bears", e.COLLEGE_SLUGS = "/slugs", e.BACK_TO_SCHOOL_GIVEAWAY_INSTAGRAM = "/terms/back-to-school-2020/instagram", e.BACK_TO_SCHOOL_GIVEAWAY_TWITTER = "/terms/back-to-school-2020/twitter", e.SNOWSGIVING_GIVEAWAY_INSTAGRAM = "/terms/snowsgiving-2020/instagram", e.SNOWSGIVING_GIVEAWAY_TWITTER = "/terms/snowsgiving-2020/twitter", e
 }(es || {});
-let el = (0, a.Ft)(eo),
-  ec = (0, a.Ft)(es),
+let el = (0, o.Ft)(ea),
+  ec = (0, o.Ft)(es),
   eu = Object.freeze({
     FACEBOOK_URL: "https://www.facebook.com/discord/",
     INSTAGRAM_URL: "https://www.instagram.com/discord/",

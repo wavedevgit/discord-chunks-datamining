@@ -1,25 +1,25 @@
 /** Chunk was on 85831 **/
 t.d(n, {
-  r: () => u
+  r: () => c
 }), t(49124);
 var r = t(255367);
 t(73800);
 var l = t(481060),
   i = t(823379),
-  c = t(312539);
+  u = t(312539);
 
-function u(e) {
+function c(e) {
   let {
     type: n,
     value: t,
-    children: u
+    children: c
   } = e;
   switch (n) {
     case "normal":
       return (0, r.jsx)(l.eee, {
         href: t.url,
         title: t.title,
-        children: u
+        children: c
       });
     case "mention":
       switch (t.type) {
@@ -32,7 +32,7 @@ function u(e) {
               message_id: d
             }
           } = t;
-          return (0, r.jsx)(c.d, {
+          return (0, r.jsx)(u.d, {
             channelId: a,
             guildId: o,
             messageId: d

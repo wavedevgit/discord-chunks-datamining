@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 var r, i = n(264344),
-  a = n.n(i),
-  o = n(345546);
-window.AudioContext = null != (r = window.AudioContext) ? r : window.webkitAudioContext, null != window.RTCPeerConnection && "Chrome" === a().name && 52 > (0, o.n)() && ["createOffer", "createAnswer"].forEach(e => {
+  o = n.n(i),
+  a = n(345546);
+window.AudioContext = null != (r = window.AudioContext) ? r : window.webkitAudioContext, null != window.RTCPeerConnection && "Chrome" === o().name && 52 > (0, a.n)() && ["createOffer", "createAnswer"].forEach(e => {
   let t = RTCPeerConnection.prototype[e];
   RTCPeerConnection.prototype[e] = function() {
     for (var e = arguments.length, n = Array(e), r = 0; r < e; r++) n[r] = arguments[r];

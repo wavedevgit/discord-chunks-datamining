@@ -7,8 +7,8 @@ n.d(t, {
   uo: () => T
 }), n(35282), n(388685);
 var r, i = n(255367),
-  a = n(73800),
-  o = n(392711),
+  o = n(73800),
+  a = n(392711),
   s = n(286379),
   l = n(622535),
   c = n(916616),
@@ -66,9 +66,9 @@ let T = /\.gif($|\?|#)/i,
   A = /\.webp($|\?|#)/i,
   N = /\.avif($|\?|#)/i,
   C = /\.png($|\?|#)/i,
-  R = 400,
-  P = 300;
-class w extends(r = a.Component) {
+  P = 400,
+  R = 300;
+class w extends(r = o.Component) {
   static isAnimated(e) {
     let {
       src: t,
@@ -96,19 +96,19 @@ class w extends(r = a.Component) {
       original: n,
       animated: r,
       srcIsAnimated: i,
-      freeze: a = !1
-    } = e, o = null, s = null;
-    return g.$k && (a || !w.isAnimated({
+      freeze: o = !1
+    } = e, a = null, s = null;
+    return g.$k && (o || !w.isAnimated({
       src: t,
       original: n,
       animated: r,
       srcIsAnimated: i
-    })) ? (o = "webp", (w.isSrcPNG({
+    })) ? (a = "webp", (w.isSrcPNG({
       src: t
     }) || w.isSrcAVIF({
       src: t
-    })) && (s = "lossless")) : a && (o = "png"), {
-      format: o,
+    })) && (s = "lossless")) : o && (a = "png"), {
+      format: a,
       quality: s
     }
   }
@@ -119,10 +119,10 @@ class w extends(r = a.Component) {
         maxWidth: n,
         maxHeight: r,
         imageWidth: i,
-        imageHeight: a
+        imageHeight: o
       },
       options: {
-        srcIsAnimated: o,
+        srcIsAnimated: a,
         original: s,
         animated: l,
         sourceMetadata: c,
@@ -130,7 +130,7 @@ class w extends(r = a.Component) {
       },
       callback: d
     } = e;
-    if (1 === i && 1 === a) return;
+    if (1 === i && 1 === o) return;
     let {
       format: _,
       quality: p
@@ -138,15 +138,15 @@ class w extends(r = a.Component) {
       src: t,
       original: s,
       animated: l,
-      srcIsAnimated: o,
+      srcIsAnimated: a,
       freeze: u
     }), h = (0, f.Q4)({
       src: t,
       width: i,
-      height: a,
+      height: o,
       maxWidth: n,
       maxHeight: r,
-      srcIsAnimated: o,
+      srcIsAnimated: a,
       format: _,
       quality: p
     }), m = Date.now();
@@ -162,7 +162,7 @@ class w extends(r = a.Component) {
         imageProps: {
           src: t,
           width: i,
-          height: a,
+          height: o,
           sourceMetadata: c,
           original: s
         }
@@ -173,8 +173,8 @@ class w extends(r = a.Component) {
     var t, n, r;
     let {
       error: i,
-      imageData: a,
-      trigger: o,
+      imageData: o,
+      trigger: a,
       startLoadingTime: l,
       readyState: c,
       format: u,
@@ -192,25 +192,25 @@ class w extends(r = a.Component) {
       }), !D.getCurrentConfig({
         location: "lazy_image"
       }).enabled) return;
-    let v = await fetch(a.url).catch(() => void 0),
+    let v = await fetch(o.url).catch(() => void 0),
       I = null == v || null == (t = v.headers) ? void 0 : t.get("content-length"),
       S = null != I ? Number(I) : null,
       T = Date.now() - l;
     m.default.track(b.rMx.IMAGE_LOADING_COMPLETED, {
       duration_ms: T,
-      requested_height: a.height,
-      requested_width: a.width,
+      requested_height: o.height,
+      requested_width: o.width,
       height: g,
       width: E,
       original_url: y,
       url: f,
-      requested_url: a.url,
+      requested_url: o.url,
       format: u,
       quality: d,
       state: i ? b.zo9.ERROR : c,
       data_saving_mode: p.ZP.dataSavingMode,
       low_quality_image_mode: p.ZP.dataSavingMode,
-      trigger: o,
+      trigger: a,
       size: S,
       message_id: null == O || null == (n = O.message) ? void 0 : n.id,
       message_sent_timestamp: null == O || null == (r = O.message) ? void 0 : r.timestamp.getTime(),
@@ -238,8 +238,8 @@ class w extends(r = a.Component) {
         src: n,
         width: r,
         height: i,
-        maxWidth: a,
-        maxHeight: o,
+        maxWidth: o,
+        maxHeight: a,
         mediaLayoutType: s
       } = this.props,
       {
@@ -253,8 +253,8 @@ class w extends(r = a.Component) {
       width: r,
       height: i,
       ratio: e,
-      maxWidth: s === y.hV.MOSAIC ? a : void 0,
-      maxHeight: s === y.hV.MOSAIC ? o : void 0,
+      maxWidth: s === y.hV.MOSAIC ? o : void 0,
+      maxHeight: s === y.hV.MOSAIC ? a : void 0,
       format: l,
       quality: c,
       animated: !t,
@@ -265,12 +265,12 @@ class w extends(r = a.Component) {
     let {
       width: e,
       height: t,
-      maxWidth: n = R,
-      maxHeight: r = P,
+      maxWidth: n = P,
+      maxHeight: r = R,
       mediaLayoutType: i,
-      useFullWidth: a
+      useFullWidth: o
     } = this.props;
-    return i === y.hV.MOSAIC && a ? (0, E.rn)({
+    return i === y.hV.MOSAIC && o ? (0, E.rn)({
       width: e,
       height: t,
       maxWidth: n,
@@ -306,7 +306,7 @@ class w extends(r = a.Component) {
       zoomThumbnailPlaceholder: t,
       onZoom: n,
       shouldLink: r,
-      onContextMenu: a,
+      onContextMenu: o,
       autoPlay: s,
       original: l,
       className: u,
@@ -326,18 +326,18 @@ class w extends(r = a.Component) {
       limitResponsiveWidth: A,
       useFullWidth: N,
       placeholder: C,
-      placeholderVersion: R,
-      dataSafeSrc: P,
+      placeholderVersion: P,
+      dataSafeSrc: R,
       srcIsAnimated: D
     } = this.props, {
       readyState: L,
       hasMouseOver: x,
-      hasFocus: M
-    } = this.state, k = null != n, j = this.getRatio(), U = (0, o.clamp)(Math.round(h * j), null != g ? g : 0, null != y ? y : 1 / 0), G = (0, o.clamp)(Math.round(m * j), null != E ? E : 0, null != O ? O : 1 / 0), B = {
+      hasFocus: k
+    } = this.state, M = null != n, j = this.getRatio(), U = (0, a.clamp)(Math.round(h * j), null != g ? g : 0, null != y ? y : 1 / 0), G = (0, a.clamp)(Math.round(m * j), null != E ? E : 0, null != O ? O : 1 / 0), B = {
       alt: e,
       readyState: L,
-      onContextMenu: null != a ? a : void 0,
-      zoomable: k,
+      onContextMenu: null != o ? o : void 0,
+      zoomable: M,
       className: u,
       imageClassName: d,
       minWidth: g,
@@ -350,8 +350,8 @@ class w extends(r = a.Component) {
       height: G,
       src: "",
       placeholder: C,
-      placeholderVersion: R,
-      dataSafeSrc: P,
+      placeholderVersion: P,
+      dataSafeSrc: R,
       srcIsAnimated: D,
       children: null != f ? e => {
         let {
@@ -373,27 +373,27 @@ class w extends(r = a.Component) {
       onBlur: this.onBlur
     };
     if (1 === B.width && 1 === B.height) return null;
-    switch ((k || null != I) && (B.onClick = this.onClick), r && (B.original = null != l && "" !== l ? l : B.src), L) {
+    switch ((M || null != I) && (B.onClick = this.onClick), r && (B.original = null != l && "" !== l ? l : B.src), L) {
       case b.zo9.LOADING:
         null != t && (B.src = t);
         break;
       case b.zo9.READY:
         if (w.isAnimated(this.props)) {
           B.onMouseLeave = this.onMouseLeave;
-          let e = (s || x || M) && (null == p || p) && w.visibilityObserver.isVisible(this);
+          let e = (s || x || k) && (null == p || p) && w.visibilityObserver.isVisible(this);
           e ? (B.src = this.getSrc(j), B.renderAccessory = S) : (B.src = this.getSrc(j, !_ || !s), B.renderAccessory = this.renderAccessory), null != f && (B.children = t => {
             let {
               src: n,
               size: r,
               alt: i,
-              mediaLayoutType: a
+              mediaLayoutType: o
             } = t;
             return f({
               src: n,
               size: r,
               animating: e,
               alt: i,
-              mediaLayoutType: a
+              mediaLayoutType: o
             })
           })
         } else B.src = this.getSrc(j)
@@ -407,7 +407,7 @@ class w extends(r = a.Component) {
       readyState: b.zo9.LOADING,
       hasMouseOver: !1,
       hasFocus: !1
-    }), O(this, "startLoadingTime", Date.now()), O(this, "_cancellers", new Set), O(this, "_imageRef", a.createRef()), O(this, "observeVisibility", () => {
+    }), O(this, "startLoadingTime", Date.now()), O(this, "_cancellers", new Set), O(this, "_imageRef", o.createRef()), O(this, "observeVisibility", () => {
       w.visibilityObserver.observe(this, this._imageRef)
     }), O(this, "unobserveVisibility", () => {
       w.visibilityObserver.unobserve(this)

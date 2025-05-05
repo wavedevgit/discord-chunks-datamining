@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
-let r, i, a;
+let r, i, o;
 n.d(t, {
-  Z: () => R
+  Z: () => P
 });
-var o, s = n(772848),
+var a, s = n(772848),
   l = n(442837),
   c = n(433517),
   u = n(846519),
@@ -55,13 +55,13 @@ function T(e) {
 }
 
 function A(e) {
-  a = new _.Z(e.user)
+  o = new _.Z(e.user)
 }
 
 function N() {
   v()
 }
-class C extends(o = l.ZP.Store) {
+class C extends(a = l.ZP.Store) {
   initialize() {
     !1 !== c.K.get(E) && (b = h.isPlatformEmbedded && "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL)
   }
@@ -69,14 +69,14 @@ class C extends(o = l.ZP.Store) {
     return !m.s.isDisallowPopupsSet() && b
   }
   get user() {
-    return a
+    return o
   }
   get key() {
     return i
   }
 }
 g(C, "displayName", "BrowserHandoffStore");
-let R = new C(d.Z, {
+let P = new C(d.Z, {
   RPC_SERVER_READY: I,
   BROWSER_HANDOFF_BEGIN: S,
   BROWSER_HANDOFF_FROM_APP: T,

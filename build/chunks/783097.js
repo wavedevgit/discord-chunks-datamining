@@ -2,20 +2,20 @@
 "use strict";
 n.d(t, {
   $d: () => w,
-  BQ: () => P,
-  Cb: () => V,
-  Hu: () => F,
+  BQ: () => R,
+  Cb: () => F,
+  Hu: () => V,
   L1: () => K,
   Ow: () => W,
   PZ: () => z,
-  WA: () => k,
-  Wx: () => R,
+  WA: () => M,
+  Wx: () => P,
   XZ: () => H,
   Y$: () => G,
   Yn: () => Z,
   dF: () => j,
   jD: () => D,
-  lf: () => M,
+  lf: () => k,
   pF: () => Y,
   sl: () => B,
   vJ: () => x,
@@ -24,8 +24,8 @@ n.d(t, {
 }), n(953529), n(997841), n(804061), n(704826), n(35282), n(539854), n(388685);
 var r = n(912370),
   i = n(668781),
-  a = n(904245),
-  o = n(911969),
+  o = n(904245),
+  a = n(911969),
   s = n(761122),
   l = n(213459),
   c = n(895924),
@@ -86,8 +86,8 @@ function N(e, t) {
   if (null == e) return {};
   var n, r, i = C(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -95,56 +95,56 @@ function N(e, t) {
 function C(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let R = {
+let P = {
   id: O.bi.BUILT_IN
 };
 
-function P(e) {
+function R(e) {
   return e.id !== O.bi.BUILT_IN
 }
 
 function w(e) {
-  return P(e) ? e.name : v.intl.string(v.t.UB2gGx)
+  return R(e) ? e.name : v.intl.string(v.t.UB2gGx)
 }
 
 function D(e) {
-  return P(e) ? e.description : v.intl.string(v.t.X9fusr)
+  return R(e) ? e.description : v.intl.string(v.t.X9fusr)
 }
 
 function L(e) {
   var t;
-  return P(e) && (0, m.yE)(null != (t = e.flags) ? t : 0, y.udG.EMBEDDED)
+  return R(e) && (0, m.yE)(null != (t = e.flags) ? t : 0, y.udG.EMBEDDED)
 }
 
 function x(e) {
   var t;
-  return P(e) && (0, m.yE)(null != (t = e.flags) ? t : 0, y.udG.PARTNER)
-}
-
-function M(e) {
-  var t;
-  return P(e) && (0, m.yE)(null != (t = e.flags) ? t : 0, y.udG.PROMOTED)
+  return R(e) && (0, m.yE)(null != (t = e.flags) ? t : 0, y.udG.PARTNER)
 }
 
 function k(e) {
+  var t;
+  return R(e) && (0, m.yE)(null != (t = e.flags) ? t : 0, y.udG.PROMOTED)
+}
+
+function M(e) {
   let t = U(e),
     n = null == t ? void 0 : t.client_platform_config[(0, s.Z)((0, g.getOS)())];
   if ((null == n ? void 0 : n.label_until) != null && Date.now() < Date.parse(null == n ? void 0 : n.label_until)) {
     var r;
-    return null != (r = null == n ? void 0 : n.label_type) ? r : o.ww.NONE
+    return null != (r = null == n ? void 0 : n.label_type) ? r : a.ww.NONE
   }
-  return o.ww.NONE
+  return a.ww.NONE
 }
 
 function j(e) {
-  switch (k(e)) {
-    case o.ww.NEW:
+  switch (M(e)) {
+    case a.ww.NEW:
       return "New";
-    case o.ww.UPDATED:
+    case a.ww.UPDATED:
       return "Updated";
     default:
       return ""
@@ -152,7 +152,7 @@ function j(e) {
 }
 
 function U(e) {
-  return P(e) && L(e) ? e instanceof p.ZP ? e.embeddedActivityConfig : e.embedded_activity_config : null
+  return R(e) && L(e) ? e instanceof p.ZP ? e.embeddedActivityConfig : e.embedded_activity_config : null
 }
 
 function G(e) {
@@ -160,7 +160,7 @@ function G(e) {
     command: t,
     optionValues: n,
     context: r,
-    commandTargetId: o,
+    commandTargetId: a,
     maxSizeCallback: s,
     sectionName: l,
     commandOrigin: u = c.bB.APPLICATION_LAUNCHER
@@ -172,7 +172,7 @@ function G(e) {
         command: t,
         optionValues: n,
         context: r,
-        commandTargetId: o,
+        commandTargetId: a,
         maxSizeCallback: s,
         commandOrigin: u,
         sectionName: l,
@@ -181,7 +181,7 @@ function G(e) {
       if (t.inputType === c.iw.BUILT_IN_TEXT && null != i && null != r.channel) {
         var e;
         let t = _.ZP.parse(f, i.content);
-        t.tts = null != (e = i.tts) && e, a.Z.sendMessage(r.channel.id, t)
+        t.tts = null != (e = i.tts) && e, o.Z.sendMessage(r.channel.id, t)
       }
     } catch (e) {
       throw i.Z.show({
@@ -201,7 +201,7 @@ function B(e) {
       fakeAppIconURL: n
     } = t,
     r = N(t, ["fakeAppIconURL"]);
-  return P(e) ? {
+  return R(e) ? {
     iconURL: h.ZP.getApplicationIconURL(A(S({}, r), {
       id: e.id,
       icon: e.icon
@@ -215,11 +215,11 @@ function B(e) {
   }
 }
 
-function V(e) {
-  return !!P(e) && (e instanceof p.ZP ? e.isMonetized : e.is_monetized)
+function F(e) {
+  return !!R(e) && (e instanceof p.ZP ? e.isMonetized : e.is_monetized)
 }
 
-function F(e) {
+function V(e) {
   let t = U(e);
   return null != t && t.displays_advertisements
 }

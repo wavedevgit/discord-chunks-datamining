@@ -1,6 +1,6 @@
 /** Chunk was on web.js **/
 "use strict";
-let r, i, a, o, s, l, c, u, d, f;
+let r, i, o, a, s, l, c, u, d, f;
 n.d(t, {
   Z: () => B
 });
@@ -63,17 +63,17 @@ function C(e) {
   let {
     profileEffectId: t
   } = e;
-  a = t
-}
-
-function R(e) {
-  let {
-    banner: t
-  } = e;
   o = t
 }
 
 function P(e) {
+  let {
+    banner: t
+  } = e;
+  a = t
+}
+
+function R(e) {
   let {
     bio: t
   } = e;
@@ -102,15 +102,15 @@ function L(e) {
 }
 
 function x() {
-  M(), k(), b = {}, E = m.QZA.OPEN
-}
-
-function M() {
-  r = void 0, c = void 0, i = void 0
+  k(), M(), b = {}, E = m.QZA.OPEN
 }
 
 function k() {
-  o = void 0, s = void 0, l = void 0, u = void 0, a = void 0
+  r = void 0, c = void 0, i = void 0
+}
+
+function M() {
+  a = void 0, s = void 0, l = void 0, u = void 0, o = void 0
 }
 
 function j() {
@@ -128,7 +128,7 @@ class G extends(_ = p.ZP.Store) {
     return b
   }
   showNotice() {
-    return void 0 !== r || void 0 !== i || void 0 !== a || void 0 !== o || void 0 !== s || void 0 !== l || void 0 !== c || void 0 !== u
+    return void 0 !== r || void 0 !== i || void 0 !== o || void 0 !== a || void 0 !== s || void 0 !== l || void 0 !== c || void 0 !== u
   }
   getIsSubmitDisabled() {
     return void 0 !== s && s.length > m.tPV
@@ -140,10 +140,10 @@ class G extends(_ = p.ZP.Store) {
     return i
   }
   getPendingProfileEffectId() {
-    return a
+    return o
   }
   getPendingBanner() {
-    return o
+    return a
   }
   getPendingBio() {
     return s
@@ -164,8 +164,8 @@ class G extends(_ = p.ZP.Store) {
     return {
       pendingAvatar: r,
       pendingAvatarDecoration: i,
-      pendingProfileEffectId: a,
-      pendingBanner: o,
+      pendingProfileEffectId: o,
+      pendingBanner: a,
       pendingBio: s,
       pendingPronouns: l,
       pendingNickname: c,
@@ -190,13 +190,13 @@ let B = new G(h.Z, {
   GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR: A,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR_DECORATION: N,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_PROFILE_EFFECT_ID: C,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_BANNER: R,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_BIO: P,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_BANNER: P,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_BIO: R,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_PRONOUNS: w,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_NICKNAME: D,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_THEME_COLORS: L,
-  GUILD_IDENTITY_SETTINGS_RESET_PENDING_MEMBER_CHANGES: M,
-  GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES: k,
+  GUILD_IDENTITY_SETTINGS_RESET_PENDING_MEMBER_CHANGES: k,
+  GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES: M,
   GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING: x,
   GUILD_IDENTITY_SETTINGS_SUBMIT_SUCCESS: x,
   GUILD_IDENTITY_SETTINGS_CLEAR_ERRORS: j

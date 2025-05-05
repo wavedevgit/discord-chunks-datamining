@@ -10,14 +10,14 @@ n.d(t, {
   e$: () => T,
   fS: () => I,
   hX: () => b,
-  r0: () => R,
-  ug: () => P,
+  r0: () => P,
+  ug: () => R,
   vB: () => g
 }), n(368063);
 var r = n(654861),
   i = n.n(r);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,7 +25,7 @@ function a(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let o = 64,
+let a = 64,
   s = 16,
   l = 4;
 
@@ -78,9 +78,9 @@ class _ {
     } = t, r = 0, i = 0;
     for (; i < e && i < n.length * s;) {
       let t = Math.min(e - i, s),
-        a = (1 << t) - 1,
-        o = n.length - Math.floor(i / s) - 1;
-      r |= (n[o] & a) << i, i += t
+        o = (1 << t) - 1,
+        a = n.length - Math.floor(i / s) - 1;
+      r |= (n[a] & o) << i, i += t
     }
     return r
   }
@@ -113,7 +113,7 @@ class _ {
   }
   toString() {
     if (null != this.str) return this.str;
-    let e = Array(o / 4);
+    let e = Array(a / 4);
     return this.parts.forEach((t, n) => {
       let r = d(t.toString());
       for (let t = 0; t < 4; t++) e[t + 4 * n] = r[3 - t] || 0
@@ -123,7 +123,7 @@ class _ {
     return this.toString()
   }
   constructor(e, t) {
-    a(this, "parts", void 0), a(this, "str", void 0), this.parts = e, this.str = t
+    o(this, "parts", void 0), o(this, "str", void 0), this.parts = e, this.str = t
   }
 }
 let p = c();
@@ -204,12 +204,12 @@ function N(e, t) {
 function C(e, t) {
   return t === E ? e : O(e, b(e, t))
 }
-let R = p ? function(e) {
+let P = p ? function(e) {
     return BigInt(1) << BigInt(e)
   } : function(e) {
     return _.fromBit(e)
   },
-  P = p ? function(e, t) {
+  R = p ? function(e, t) {
     return Number(BigInt.asUintN(e, t))
   } : function(e, t) {
     return _.asUintN(e, t)

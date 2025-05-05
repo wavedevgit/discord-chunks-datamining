@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => J
 }), n(388685), n(415506), n(539854), n(290780);
 var r, i = n(392711),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(433517),
   l = n(570140),
   c = n(51025),
@@ -36,8 +36,8 @@ let y = [E.ff.AUTHENTICATION_FAILED, E.ff.NOT_ENTITLED],
   A = null,
   N = !1,
   C = new Map,
-  R = !1,
-  P = null;
+  P = !1,
+  R = null;
 
 function w() {
   let e = {
@@ -66,7 +66,7 @@ function L() {
       let e = d.default.getToken(),
         t = d.default.getId();
       if (null == e) throw Error("missing user token");
-      R = !p.Z.setCurrentTask(r, i, n, t, e)
+      P = !p.Z.setCurrentTask(r, i, n, t, e)
     }
   }
 }
@@ -76,18 +76,18 @@ function x(e, t) {
   return v.findIndex(e => e.comboId === n)
 }
 
-function M(e, t, n, r) {
+function k(e, t, n, r) {
   let i = (0, _.Tu)(e, t),
-    a = {
+    o = {
       comboId: i,
       action: r
     },
-    o = I.indexOf(i); - 1 !== o && I.splice(o, 1);
+    a = I.indexOf(i); - 1 !== a && I.splice(a, 1);
   let s = x(e, t);
-  0 !== s && (n ? -1 === s && (v.push(a), L()) : (s > 0 && v.splice(s, 1), v.unshift(a), L())), !n && S && p.Z.resume(), w()
+  0 !== s && (n ? -1 === s && (v.push(o), L()) : (s > 0 && v.splice(s, 1), v.unshift(o), L())), !n && S && p.Z.resume(), w()
 }
 
-function k(e, t) {
+function M(e, t) {
   let n = (0, _.Tu)(e, t),
     r = I.indexOf(n); - 1 !== r && I.splice(r, 1);
   let i = x(e, t); - 1 !== i && (v.splice(i, 1), w()), L()
@@ -98,11 +98,11 @@ function j(e) {
     applicationId: t,
     branchId: n
   } = e;
-  C.set((0, _.Tu)(t, n), "Install"), M(t, n, !1, "Patch")
+  C.set((0, _.Tu)(t, n), "Install"), k(t, n, !1, "Patch")
 }
 
 function U(e) {
-  V(e), Z(e)
+  F(e), Z(e)
 }
 
 function G(e) {
@@ -110,7 +110,7 @@ function G(e) {
     applicationId: t,
     branchId: n
   } = e;
-  C.set((0, _.Tu)(t, n), "Repair"), M(t, n, !1, "Repair")
+  C.set((0, _.Tu)(t, n), "Repair"), k(t, n, !1, "Repair")
 }
 
 function B(e) {
@@ -119,18 +119,18 @@ function B(e) {
     branchId: n,
     automatic: r
   } = e;
-  M(t, n, r, "Patch")
+  k(t, n, r, "Patch")
 }
 
-function V(e) {
+function F(e) {
   let {
     applicationId: t,
     branchId: n
   } = e;
-  k(t, n)
+  M(t, n)
 }
 
-function F(e) {
+function V(e) {
   let {
     applicationId: t,
     branchId: n
@@ -160,15 +160,15 @@ function H(e) {
     } = e, {
       applicationId: n,
       branchId: i
-    } = (0, _.CP)(t), o = m.Z.getState(n, i), s = f.Z.getTargetBuildId(n, i), l = f.Z.getTargetManifests(n, i);
-    if (null != o && o.type === g.vxO.UP_TO_DATE && o.buildId === o.targetBuildId && o.buildId === s && a().isEqual(o.manifestIds, o.targetManifestIds) && a().isEqual(o.manifestIds, l)) {
+    } = (0, _.CP)(t), a = m.Z.getState(n, i), s = f.Z.getTargetBuildId(n, i), l = f.Z.getTargetManifests(n, i);
+    if (null != a && a.type === g.vxO.UP_TO_DATE && a.buildId === a.targetBuildId && a.buildId === s && o().isEqual(a.manifestIds, a.targetManifestIds) && o().isEqual(a.manifestIds, l)) {
       if (I.push(t), C.has(t)) {
         switch (C.get(t)) {
           case "Install":
-            c.XT(n, o);
+            c.XT(n, a);
             break;
           case "Repair":
-            c.Wx(n, o)
+            c.Wx(n, a)
         }
         C.delete(t)
       }
@@ -201,7 +201,7 @@ function W(e) {
           application_id: t,
           branch_id: n
         } = e;
-        k(t, n)
+        M(t, n)
       }
     }
   }
@@ -210,7 +210,7 @@ function W(e) {
 function K() {
   for (let e of u.ZP.getRunningDiscordApplicationIds()) c.al(e, e);
   let e = u.ZP.getVisibleGame();
-  return S || null == e || e.pid === P || c.wO(), P = null == e ? null : e.pid, !1
+  return S || null == e || e.pid === R || c.wO(), R = null == e ? null : e.pid, !1
 }
 
 function z() {
@@ -227,7 +227,7 @@ function Q(e) {
     action: "Patch"
   } : e)
 }
-class X extends(r = o.ZP.Store) {
+class X extends(r = a.ZP.Store) {
   initialize() {
     var e;
     let t = null != (e = s.K.get(O)) ? e : {
@@ -255,7 +255,7 @@ class X extends(r = o.ZP.Store) {
     return x(e, t)
   }
   isCorruptInstallation() {
-    return R
+    return P
   }
 }
 b(X, "displayName", "DispatchManagerStore");
@@ -263,9 +263,9 @@ let J = new X(l.Z, {
   DISPATCH_APPLICATION_INSTALL: j,
   DISPATCH_APPLICATION_UPDATE: B,
   DISPATCH_APPLICATION_UNINSTALL: U,
-  DISPATCH_APPLICATION_CANCEL: V,
+  DISPATCH_APPLICATION_CANCEL: F,
   DISPATCH_APPLICATION_REPAIR: G,
-  DISPATCH_APPLICATION_MOVE_UP: F,
+  DISPATCH_APPLICATION_MOVE_UP: V,
   DISPATCH_APPLICATION_REMOVE_FINISHED: Z,
   DISPATCH_APPLICATION_STATE_UPDATE: H,
   DISPATCH_APPLICATION_ERROR: W,

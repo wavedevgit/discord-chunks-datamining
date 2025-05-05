@@ -10,8 +10,8 @@ n.d(t, {
 }), n(997841);
 var r = n(512722),
   i = n.n(r),
-  a = n(525769),
-  o = n(259443),
+  o = n(525769),
+  a = n(259443),
   s = n(544891),
   l = n(570140),
   c = n(881052),
@@ -19,7 +19,7 @@ var r = n(512722),
   d = n(594174),
   f = n(573261),
   _ = n(981631);
-let p = new o.Yd("UserProfileModalActionCreators");
+let p = new a.Yd("UserProfileModalActionCreators");
 
 function h() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
@@ -46,7 +46,7 @@ function m() {
   return f.Z.patch({
     url: _.ANM.USER_AGREEMENTS,
     trackedActionData: {
-      event: a.a.USER_ACCEPT_AGREEMENTS
+      event: o.a.USER_ACCEPT_AGREEMENTS
     },
     body: {
       terms: e,
@@ -88,8 +88,8 @@ async function b(e) {
     friendToken: n,
     withMutualGuilds: r,
     withMutualFriendsCount: i,
-    withMutualFriends: a,
-    guildId: o,
+    withMutualFriends: o,
+    guildId: a,
     connectionsRoleId: u,
     joinRequestId: d,
     abortSignal: f
@@ -97,8 +97,8 @@ async function b(e) {
   l.Z.dispatch({
     type: "USER_PROFILE_FETCH_START",
     userId: e,
-    guildId: o,
-    withMutualFriends: a
+    guildId: a,
+    withMutualFriends: o
   });
   try {
     let c = await s.tn.get({
@@ -107,25 +107,25 @@ async function b(e) {
         type: t,
         friend_token: n,
         with_mutual_guilds: r,
-        with_mutual_friends: a,
-        with_mutual_friends_count: i && (null == a || !a),
-        guild_id: o,
+        with_mutual_friends: o,
+        with_mutual_friends_count: i && (null == o || !o),
+        guild_id: a,
         connections_role_id: u,
         join_request_id: d
       },
       signal: f,
       rejectWithError: !0
     });
-    null == h || h(c.body, o), l.Z.dispatch({
+    null == h || h(c.body, a), l.Z.dispatch({
       type: "USER_UPDATE",
       user: c.body.user
     }), l.Z.dispatch({
       type: "USER_PROFILE_FETCH_SUCCESS",
       userProfile: c.body,
       fetchStartedAt: m
-    }), null != o && null != c.body.guild_member && l.Z.dispatch({
+    }), null != a && null != c.body.guild_member && l.Z.dispatch({
       type: "GUILD_MEMBER_PROFILE_UPDATE",
-      guildId: o,
+      guildId: a,
       guildMember: c.body.guild_member
     })
   } catch (t) {
@@ -134,7 +134,7 @@ async function b(e) {
       apiError: new c.Hx(t),
       fetchStartedAt: m,
       userId: e,
-      guildId: o
+      guildId: a
     }), t
   }
 }

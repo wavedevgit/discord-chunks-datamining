@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(632471),
   i = n(740078),
-  a = n(510104),
-  o = n(126387);
+  o = n(510104),
+  a = n(126387);
 
 function s(e, t) {
   void 0 === t && (t = {});
@@ -27,12 +27,12 @@ function s(e, t) {
     });
   0 === m.length && (m = h);
   var g = m.reduce(function(t, n) {
-    return t[n] = (0, a.Z)(e, {
+    return t[n] = (0, o.Z)(e, {
       placement: n,
       boundary: l,
       rootBoundary: c,
       padding: u
-    })[(0, o.Z)(n)], t
+    })[(0, a.Z)(n)], t
   }, {});
   return Object.keys(g).sort(function(e, t) {
     return g[e] - g[t]

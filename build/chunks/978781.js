@@ -6,8 +6,8 @@ n.d(t, {
 }), n(314940), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(278074),
   l = n(442837),
   c = n(481060),
@@ -30,8 +30,8 @@ var r = n(255367),
   A = n(727939),
   N = n(981631),
   C = n(921944),
-  R = n(474936),
-  P = n(388032),
+  P = n(474936),
+  R = n(388032),
   w = n(16534);
 
 function D(e, t, n) {
@@ -59,7 +59,7 @@ var x = function(e) {
   return e[e.CLIENT_THEMES = 0] = "CLIENT_THEMES", e[e.APP_ICONS = 1] = "APP_ICONS", e
 }({});
 
-function M(e) {
+function k(e) {
   let {
     isCoachmark: t
   } = e, n = (0, y.q)();
@@ -72,7 +72,7 @@ function M(e) {
   })
 }
 
-function k() {
+function M() {
   let e = (0, g.Z)();
   return i.useEffect(() => {
     (0, p.nJ)(), e()
@@ -84,19 +84,19 @@ function k() {
 function j(e) {
   let {
     tab: t,
-    isPreview: a,
+    isPreview: o,
     isCoachmark: l,
     onClose: u
   } = e, f = i.useCallback(() => {
     u(), l || d.Z.open()
   }, [u, l]), p = (0, s.EQ)({
-    isPreview: a,
+    isPreview: o,
     isCoachmark: l
   }).with({
     isCoachmark: !0
-  }, () => P.intl.string(P.t.cpT0Cg)).with({
+  }, () => R.intl.string(R.t.cpT0Cg)).with({
     isPreview: !0
-  }, () => P.intl.string(P.t["dqH+qq"])).otherwise(() => P.intl.string(P.t.Olc2Ky)), h = i.useCallback(() => 1 === t ? void(0, c.ZDy)(async () => {
+  }, () => R.intl.string(R.t["dqH+qq"])).otherwise(() => R.intl.string(R.t.Olc2Ky)), h = i.useCallback(() => 1 === t ? void(0, c.ZDy)(async () => {
     let {
       default: e
     } = await n.e("69052").then(n.bind(n, 184250));
@@ -119,7 +119,7 @@ function j(e) {
   }) : void 0, [t]);
   return (0, r.jsxs)("div", {
     className: w.footerContainer,
-    children: [a && (0, r.jsxs)("div", {
+    children: [o && (0, r.jsxs)("div", {
       className: w.footerLabelContainer,
       children: [(0, r.jsx)(c.SrA, {
         className: w.footerNitro,
@@ -128,7 +128,7 @@ function j(e) {
       }), (0, r.jsx)(c.Text, {
         className: w.footerText,
         variant: "text-sm/medium",
-        children: P.intl.format(P.t.x2dQxM, {
+        children: R.intl.format(R.t.x2dQxM, {
           onClick: h
         })
       })]
@@ -136,7 +136,7 @@ function j(e) {
       className: w.footerButtonContainer,
       children: [(0, r.jsx)("div", {
         children: (0, r.jsx)(c.zxk, {
-          className: o()(w.footerButton, w.footerButtonBack),
+          className: a()(w.footerButton, w.footerButtonBack),
           color: c.Ttl.PRIMARY,
           size: c.zxk.Sizes.NONE,
           onClick: f,
@@ -145,13 +145,13 @@ function j(e) {
             direction: I.Z.Directions.LEFT
           })
         })
-      }), a && (0, r.jsx)(S.Z, {
+      }), o && (0, r.jsx)(S.Z, {
         className: w.footerButton,
-        subscriptionTier: R.Si.TIER_2,
+        subscriptionTier: P.Si.TIER_2,
         showGradient: !0,
         fullWidth: !0,
         textOptions: {
-          textOverride: P.intl.string(P.t.pj0XBA)
+          textOverride: R.intl.string(R.t.pj0XBA)
         }
       })]
     })]
@@ -162,16 +162,16 @@ function U(e) {
   let {
     initialTab: t,
     markAsDismissed: n,
-    isCoachmark: a
-  } = e, [o, s] = i.useState(t), d = i.useMemo(() => [{
-    name: P.intl.string(P.t.Ksh3io),
+    isCoachmark: o
+  } = e, [a, s] = i.useState(t), d = i.useMemo(() => [{
+    name: R.intl.string(R.t.Ksh3io),
     value: 0
   }, {
-    name: P.intl.string(P.t.RPh2oq),
+    name: R.intl.string(R.t.RPh2oq),
     value: 1
   }], []), _ = (0, l.e7)([b.Z], () => b.Z.isPreview), m = (0, l.e7)([h.Z], () => h.Z.isUpsellPreview), g = _ || m, O = i.useMemo(() => T.Z.theme, []), v = (0, y.J)(), I = i.useCallback(() => {
     _ && v(), m && (0, p.O7)()
-  }, [_, m, v]), S = (0, f.Z)(null, g ? I : N.dG4), R = i.useCallback(() => {
+  }, [_, m, v]), S = (0, f.Z)(null, g ? I : N.dG4), P = i.useCallback(() => {
     g && (0, u.ZI)({
       theme: O
     }), (0, p.G8)(), (0, E.Mo)(), I(), null == n || n(C.L.DISMISS)
@@ -187,16 +187,16 @@ function U(e) {
           className: w.headerContainer,
           children: [(0, r.jsx)(c.X6q, {
             variant: "heading-lg/extrabold",
-            children: P.intl.string(P.t.viGN6e)
+            children: R.intl.string(R.t.viGN6e)
           }), (0, r.jsx)(c.olH, {
             className: w.closeContainer,
             innerClassName: w.closeInner,
             withCircleBackground: !0,
-            onClick: R
+            onClick: P
           })]
         }), (0, r.jsx)(c.sY7, {
           options: d,
-          value: o,
+          value: a,
           onChange: e => {
             let {
               value: t
@@ -207,13 +207,13 @@ function U(e) {
         })]
       }), (0, r.jsxs)(c.Ttm, {
         className: w.scrollContainer,
-        children: [0 === o && (0, r.jsx)(M, {
-          isCoachmark: a
-        }), 1 === o && (0, r.jsx)(k, {})]
+        children: [0 === a && (0, r.jsx)(k, {
+          isCoachmark: o
+        }), 1 === a && (0, r.jsx)(M, {})]
       }), (0, r.jsx)(j, {
-        tab: o,
+        tab: a,
         isPreview: g,
-        onClose: R,
+        onClose: P,
         isCoachmark: !1
       })]
     })

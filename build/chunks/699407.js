@@ -5,7 +5,7 @@ n.d(t, {
   X: () => b,
   l: () => I
 }), n(358797), n(290780), n(388685), n(539854), n(17089);
-var a, o = n(756647),
+var o, a = n(756647),
   s = n(442837),
   l = n(544891),
   c = n(761609);
@@ -51,7 +51,7 @@ function _(e, t) {
 let p = 1500,
   h = 1e4,
   m = 1500,
-  g = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e()),
+  g = null != (o = window.requestIdleCallback) ? o : e => setImmediate(() => e()),
   E = new c.R,
   b = {
     handleConnectionOpen: () => {},
@@ -68,7 +68,7 @@ let p = 1500,
     var t;
     let {
       dispatcher: n,
-      actionHandler: a,
+      actionHandler: o,
       getFingerprint: c,
       getSessionId: f = v,
       TRACKING_URL: I,
@@ -79,7 +79,7 @@ let p = 1500,
     function A(e) {
       if (null != i) return i;
       let t = e.fingerprint || c();
-      return null != t ? (0, o.s)(t) : null
+      return null != t ? (0, a.s)(t) : null
     }
 
     function N() {
@@ -90,15 +90,15 @@ let p = 1500,
       let {
         shouldFlushOnNextTick: t = !1
       } = e;
-      null == O && N() && (O = t ? setTimeout(R, 0) : g(R, {
+      null == O && N() && (O = t ? setTimeout(P, 0) : g(P, {
         timeout: m
       }))
     }
 
-    function R() {
+    function P() {
       if (O = null, !N()) return;
       let e = y.slice();
-      y = [], P(e).then(() => {
+      y = [], R(e).then(() => {
         e.forEach(e => {
           var t;
           null == (t = e.resolve) || t.call(e)
@@ -112,7 +112,7 @@ let p = 1500,
       })
     }
 
-    function P(e) {
+    function R(e) {
       let t = Date.now(),
         n = e.map(e => _(d({}, e), {
           properties: _(d({}, e.properties), {
@@ -138,28 +138,28 @@ let p = 1500,
         shouldFlushOnNextTick: !1
       }), !1
     }, b.handleConnectionClosed = function() {
-      return R(), r = null, i = null, !1
+      return P(), r = null, i = null, !1
     }, b.handleFingerprint = function() {
-      return R(), !1
+      return P(), !1
     }, b.handleTrack = function(e) {
       let {
         event: t,
         properties: n,
         flush: r,
         fingerprint: i,
-        resolve: a
+        resolve: o
       } = e;
       return f().then(e => {
         let {
-          sessionId: o
+          sessionId: a
         } = e, s = {
           type: t,
           fingerprint: i,
           properties: d({
             client_track_timestamp: Date.now(),
-            client_heartbeat_session_id: o
+            client_heartbeat_session_id: a
           }, n),
-          resolve: a
+          resolve: o
         }, l = A(s);
         null != l && (s.properties.client_uuid = E.generate(l)), y.push(s), y.length > h && (y = y.slice(-h)), r ? C({
           shouldFlushOnNextTick: !0
@@ -173,8 +173,8 @@ let p = 1500,
         null != T && this.waitFor(...T)
       }
       constructor(...e) {
-        super(...e), u(this, "submitEventsImmediately", P)
+        super(...e), u(this, "submitEventsImmediately", R)
       }
     }
-    return u(w, "displayName", "AnalyticsTrackingStore"), new w(n, a)
+    return u(w, "displayName", "AnalyticsTrackingStore"), new w(n, o)
   }

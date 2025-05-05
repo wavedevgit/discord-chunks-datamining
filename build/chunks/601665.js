@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   s = n(727637),
   l = n(100527),
   c = n(906732),
@@ -55,34 +55,34 @@ function C(e) {
     currentUser: n,
     guildId: A,
     channelId: C,
-    messageId: R,
-    roleId: P,
+    messageId: P,
+    roleId: R,
     openedAt: w,
     closePopout: D,
     setPopoutRef: L,
     disableUserProfileLink: x = __OVERLAY__,
-    newAnalyticsLocations: M = [],
-    disableAutoFocus: k = !1
+    newAnalyticsLocations: k = [],
+    disableAutoFocus: M = !1
   } = e, {
     analyticsLocations: j
-  } = (0, c.ZP)([...M, l.Z.USER_PROFILE_POPOUT]), U = (0, d.ZB)({
+  } = (0, c.ZP)([...k, l.Z.USER_PROFILE_POPOUT]), U = (0, d.ZB)({
     layout: "POPOUT",
     userId: t.id,
     guildId: A,
     channelId: C,
-    messageId: R,
-    roleId: P
-  }), G = (0, _.ZP)(t.id, A), B = (0, a.e7)([u.Z], () => null != A ? u.Z.getGuild(A) : null), V = i.useRef(null), F = (0, s.Z)(V);
+    messageId: P,
+    roleId: R
+  }), G = (0, _.ZP)(t.id, A), B = (0, o.e7)([u.Z], () => null != A ? u.Z.getGuild(A) : null), F = i.useRef(null), V = (0, s.Z)(F);
   i.useEffect(() => {
-    null == L || L(null == V ? void 0 : V.current)
-  }, [V, L]);
+    null == L || L(null == F ? void 0 : F.current)
+  }, [F, L]);
   let Z = e => {
       null == D || D(), (0, p.openUserProfileModal)(N({
         sourceAnalyticsLocations: j,
         hideRestrictedProfile: !0
       }, U, e))
     },
-    H = () => x ? null : (0, r.jsx)(o.sNh, {
+    H = () => x ? null : (0, r.jsx)(a.sNh, {
       id: "view-profile",
       label: S.intl.string(S.t["+Xp3ho"]),
       action: () => {
@@ -92,7 +92,7 @@ function C(e) {
         }, U))
       }
     }),
-    Y = k ? "div" : o.VqE;
+    Y = M ? "div" : a.VqE;
   return (0, r.jsx)(c.Gt, {
     value: j,
     children: (0, r.jsx)(d.Mt, {
@@ -102,7 +102,7 @@ function C(e) {
       fetchEndedAt: null == G ? void 0 : G.fetchEndedAt,
       isLoaded: null == G ? void 0 : G.isLoaded,
       children: (0, r.jsx)(Y, {
-        ref: V,
+        ref: F,
         "aria-label": t.username,
         children: (0, r.jsxs)(g.Z, {
           user: t,
@@ -140,7 +140,7 @@ function C(e) {
             currentUser: n,
             displayProfile: G,
             guild: B,
-            isHovering: F,
+            isHovering: V,
             onOpenProfile: x ? void 0 : Z,
             channelId: C,
             onClose: D
@@ -149,7 +149,7 @@ function C(e) {
             guildId: A,
             channelId: C,
             onClose: D,
-            disableAutoFocus: k
+            disableAutoFocus: M
           })]
         })
       })

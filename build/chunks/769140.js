@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(481060),
   l = n(287734),
   c = n(872810),
@@ -30,14 +30,14 @@ var i = n(120356),
   A = n(652853),
   N = n(336383),
   C = n(194811),
-  R = n(265386),
-  P = n(668700),
+  P = n(265386),
+  R = n(668700),
   w = n(384298),
   D = n(670451),
   L = n(228168),
   x = n(981631),
-  M = n(388032),
-  k = n(227832),
+  k = n(388032),
+  M = n(227832),
   j = n(162509),
   U = n(924482),
   G = n(774797);
@@ -48,16 +48,16 @@ function B(e) {
     currentUser: n,
     stream: i,
     className: B,
-    onClose: V
+    onClose: F
   } = e, {
-    themeType: F,
+    themeType: V,
     theme: Z
-  } = (0, A.z)(), H = (0, o.e7)([y.Z], () => y.Z.getGuild(null == i ? void 0 : i.guildId)), Y = (0, o.e7)([b.Z], () => b.Z.getChannel(null == i ? void 0 : i.channelId)), W = (0, o.Wu)([I.ZP], () => null != Y ? I.ZP.getVoiceStatesForChannel(Y).map(e => {
+  } = (0, A.z)(), H = (0, a.e7)([y.Z], () => y.Z.getGuild(null == i ? void 0 : i.guildId)), Y = (0, a.e7)([b.Z], () => b.Z.getChannel(null == i ? void 0 : i.channelId)), W = (0, a.Wu)([I.ZP], () => null != Y ? I.ZP.getVoiceStatesForChannel(Y).map(e => {
     let {
       user: t
     } = e;
     return t
-  }) : []), K = (0, o.e7)([v.Z], () => v.Z.findActivity(t.id, e => (0, d.Z)(e) && !(0, f.Z)(e))), {
+  }) : []), K = (0, a.e7)([v.Z], () => v.Z.findActivity(t.id, e => (0, d.Z)(e) && !(0, f.Z)(e))), {
     analyticsLocations: z
   } = (0, p.ZP)(_.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), q = (0, S.Z)({
     display: "live",
@@ -71,26 +71,26 @@ function B(e) {
   }), {
     previewUrl: X,
     isLoading: J
-  } = (0, g.Z)(null == i ? void 0 : i.guildId, null == i ? void 0 : i.channelId, null == i ? void 0 : i.ownerId), [$, ee] = (0, E.wq)(Y), et = (0, o.e7)([O.Z], () => null != Y && O.Z.canBasicChannel(x.S7T.CONNECT, Y)), en = (0, u.Z)(J ? null : X), er = J || null == X ? en : X;
+  } = (0, g.Z)(null == i ? void 0 : i.guildId, null == i ? void 0 : i.channelId, null == i ? void 0 : i.ownerId), [$, ee] = (0, E.wq)(Y), et = (0, a.e7)([O.Z], () => null != Y && O.Z.canBasicChannel(x.S7T.CONNECT, Y)), en = (0, u.Z)(J ? null : X), er = J || null == X ? en : X;
   if (null == H || null == Y || !1 === i.discoverable) return null;
   let ei = () => {
       let e = e => {
         e.stopPropagation(), q({
           action: "PRESS_IMAGE"
-        }), l.default.selectVoiceChannel(i.channelId), (0, c.iV)(i), null == V || V()
+        }), l.default.selectVoiceChannel(i.channelId), (0, c.iV)(i), null == F || F()
       };
       return null == er && J ? (0, r.jsx)("div", {
         className: j.preview,
         children: (0, r.jsx)(s.$jN, {})
       }) : null == er ? (0, r.jsxs)(s.P3F, {
-        className: a()(j.preview, j.overlay, {
+        className: o()(j.preview, j.overlay, {
           [j.clickable]: $
         }),
         onClick: $ ? e : void 0,
         children: [(0, r.jsx)("img", {
           alt: "",
           src: Z === x.BRd.LIGHT ? G : U
-        }), F !== L.lY.MODAL && F !== L.lY.MODAL_V2 && (0, r.jsxs)(r.Fragment, {
+        }), V !== L.lY.MODAL && V !== L.lY.MODAL_V2 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.Text, {
             className: j.overlayText,
             variant: "text-sm/medium",
@@ -98,11 +98,11 @@ function B(e) {
             children: (0, E.P9)(ee)
           }), (0, r.jsx)(s.Text, {
             variant: "text-sm/medium",
-            children: et ? M.intl.string(M.t.uQZTBQ) : M.intl.string(M.t.pgUTZG)
+            children: et ? k.intl.string(k.t.uQZTBQ) : k.intl.string(k.t.pgUTZG)
           })]
         })]
       }) : (0, r.jsxs)(s.P3F, {
-        className: a()(j.preview, j.overlay, {
+        className: o()(j.preview, j.overlay, {
           [j.clickable]: $
         }),
         onClick: $ ? e : void 0,
@@ -110,7 +110,7 @@ function B(e) {
           alt: "",
           src: er,
           className: j.image
-        }), F !== L.lY.MODAL && F !== L.lY.MODAL_V2 && (0, r.jsxs)(r.Fragment, {
+        }), V !== L.lY.MODAL && V !== L.lY.MODAL_V2 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.Text, {
             className: j.overlayText,
             variant: "text-sm/medium",
@@ -124,18 +124,18 @@ function B(e) {
         })]
       })
     },
-    ea = () => F !== L.lY.MODAL && F !== L.lY.MODAL_V2 ? null : (0, r.jsxs)("div", {
-      className: k.details,
-      children: [(0, r.jsx)(R.Z, {
+    eo = () => V !== L.lY.MODAL && V !== L.lY.MODAL_V2 ? null : (0, r.jsxs)("div", {
+      className: M.details,
+      children: [(0, r.jsx)(P.Z, {
         channel: Y,
         guild: H,
         onAction: q,
-        onClose: V
+        onClose: F
       }), (0, r.jsx)(m.Z, {
         users: W,
         guildId: H.id,
         channelId: Y.id,
-        maxUsers: P.W,
+        maxUsers: R.W,
         size: s.EFr.SIZE_16,
         onClick: e => {
           e.stopPropagation(), null == q || q({
@@ -145,21 +145,21 @@ function B(e) {
         onUserClick: e => e.stopPropagation(),
         disableUserPopout: e => e === t.id,
         overflowCountColor: "text-muted"
-      }), F === L.lY.MODAL_V2 && es()]
+      }), V === L.lY.MODAL_V2 && es()]
     }),
-    eo = () => F === L.lY.MODAL || F === L.lY.MODAL_V2 ? null : (0, r.jsx)(P.Z, {
+    ea = () => V === L.lY.MODAL || V === L.lY.MODAL_V2 ? null : (0, r.jsx)(R.Z, {
       user: t,
       guild: H,
       channel: Y,
       onAction: q,
-      onClose: V
+      onClose: F
     }),
     es = () => t.id === n.id ? null : (0, r.jsx)("div", {
-      className: k.actions,
+      className: M.actions,
       children: (0, r.jsx)(w.Z, {
         channel: Y,
         onAction: q,
-        onClose: V
+        onClose: F
       })
     });
   return (0, r.jsx)(p.Gt, {
@@ -168,26 +168,26 @@ function B(e) {
       ref: Q,
       className: B,
       onAction: q,
-      onClose: V,
+      onClose: F,
       children: [(0, r.jsx)(C.Z, {
-        text: null != K ? M.intl.formatToPlainString(M.t["4CQq9f"], {
+        text: null != K ? k.intl.formatToPlainString(k.t["4CQq9f"], {
           name: K.name
-        }) : M.intl.string(M.t["Jpkr/v"]),
+        }) : k.intl.string(k.t["Jpkr/v"]),
         tags: (0, r.jsx)(h.ZP, {
           size: h.OH.SMALL
         }),
         contextMenu: (0, r.jsx)(D.Z, {
           display: "live",
           user: t,
-          onClose: V
+          onClose: F
         })
       }), (0, r.jsxs)("div", {
-        className: k.body,
+        className: M.body,
         children: [(0, r.jsxs)("div", {
-          className: k.content,
-          children: [ei(), ea(), F === L.lY.MODAL && es()]
-        }), eo()]
-      }), F !== L.lY.MODAL && F !== L.lY.MODAL_V2 && es()]
+          className: M.content,
+          children: [ei(), eo(), V === L.lY.MODAL && es()]
+        }), ea()]
+      }), V !== L.lY.MODAL && V !== L.lY.MODAL_V2 && es()]
     })
   })
 }

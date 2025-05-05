@@ -6,8 +6,8 @@ n.d(t, {
   c: () => C
 }), n(415506), n(358797), n(457542);
 var i = n(990547),
-  a = n(213919),
-  o = n(544891),
+  o = n(213919),
+  a = n(544891),
   s = n(433517),
   l = n(570140),
   c = n(881052),
@@ -68,7 +68,7 @@ var C = function(e) {
   return e.MFA = "MFA", e.SUCCESS = "SUCCESS", e
 }({});
 
-function R(e) {
+function P(e) {
   let t = v({
     type: "LOGOUT"
   }, e);
@@ -78,9 +78,9 @@ function R(e) {
   })
 }
 
-function P(e) {
+function R(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : b.Z5c.DEFAULT_LOGGED_OUT;
-  if (R(), null == t) return;
+  if (P(), null == t) return;
   let n = (0, f.D)();
   if (null == n) return void(0, _.uL)(t, {
     source: e
@@ -106,8 +106,8 @@ let w = {
       login: t,
       password: n,
       undelete: r,
-      source: a,
-      giftCodeSKUId: o,
+      source: o,
+      giftCodeSKUId: a,
       invite: s,
       isMultiAccount: u
     } = e;
@@ -120,8 +120,8 @@ let w = {
         login: t,
         password: n,
         undelete: r,
-        login_source: a,
-        gift_code_sku_id: o
+        login_source: o,
+        gift_code_sku_id: a
       },
       retries: 2,
       oldFormErrors: !0,
@@ -145,8 +145,8 @@ let w = {
           sms: n,
           webauthn: r,
           ticket: i,
-          token: a,
-          backup: o,
+          token: o,
+          backup: a,
           user_id: s,
           required_actions: c,
           totp: d
@@ -162,18 +162,18 @@ let w = {
         sms: n,
         webauthn: r,
         totp: d,
-        backup: o
-      }) : u ? this.switchAccountToken(a) : l.Z.dispatch({
+        backup: a
+      }) : u ? this.switchAccountToken(o) : l.Z.dispatch({
         type: "LOGIN_SUCCESS",
-        token: a
+        token: o
       })
     }, e => {
-      var r, i, a;
-      let o = new c.yZ(e);
+      var r, i, o;
+      let a = new c.yZ(e);
       if (null != e.body && (null == (r = e.body) ? void 0 : r.suspended_user_token) != null) throw l.Z.dispatch({
         type: "LOGIN_SUSPENDED_USER",
-        suspendedUserToken: null == (a = e.body) ? void 0 : a.suspended_user_token
-      }), o;
+        suspendedUserToken: null == (o = e.body) ? void 0 : o.suspended_user_token
+      }), a;
       let s = null == (i = e.body) ? void 0 : i.code;
       throw s === b.evJ.ACCOUNT_SCHEDULED_FOR_DELETION && null != n && "" !== n ? l.Z.dispatch({
         type: "LOGIN_ACCOUNT_SCHEDULED_FOR_DELETION",
@@ -195,8 +195,8 @@ let w = {
         }
       }) : l.Z.dispatch({
         type: "LOGIN_FAILURE",
-        error: o
-      }), o
+        error: a
+      }), a
     })
   },
   loginMFAv2(e) {
@@ -204,8 +204,8 @@ let w = {
       code: t,
       ticket: n,
       source: r,
-      giftCodeSKUId: a,
-      isMultiAccount: o,
+      giftCodeSKUId: o,
+      isMultiAccount: a,
       mfaType: s
     } = e;
     return g.Z.post({
@@ -214,7 +214,7 @@ let w = {
         code: t,
         ticket: n,
         login_source: r,
-        gift_code_sku_id: a
+        gift_code_sku_id: o
       },
       retries: 2,
       oldFormErrors: !0,
@@ -223,7 +223,7 @@ let w = {
       },
       rejectWithError: !1
     }).then(e => {
-      o ? this.switchAccountToken(e.body.token) : l.Z.dispatch({
+      a ? this.switchAccountToken(e.body.token) : l.Z.dispatch({
         type: "LOGIN_SUCCESS",
         token: e.body.token
       })
@@ -249,10 +249,10 @@ let w = {
     }), (0, p.d$)().then(e => {
       let {
         challenge: n,
-        ticket: a
+        ticket: o
       } = e;
       return t(n).then(e => this.loginWebAuthn({
-        ticket: a,
+        ticket: o,
         credential: e,
         source: r,
         giftCodeSKUId: i
@@ -269,7 +269,7 @@ let w = {
       ticket: t,
       credential: n,
       source: r,
-      giftCodeSKUId: a
+      giftCodeSKUId: o
     } = e;
     return g.Z.post({
       url: b.ANM.WEBAUTHN_CONDITIONAL_UI_LOGIN,
@@ -277,7 +277,7 @@ let w = {
         credential: n,
         ticket: t,
         source: r,
-        giftCodeSKUId: a
+        giftCodeSKUId: o
       },
       retries: 1,
       trackedActionData: {
@@ -336,7 +336,7 @@ let w = {
     })
   },
   logoutInternal(e) {
-    R(e)
+    P(e)
   },
   logout(e) {
     var t;
@@ -359,12 +359,12 @@ let w = {
       }
     }, null != r && {
       headers: {
-        authorization: null != (t = a.getToken(r)) ? t : ""
+        authorization: null != (t = o.getToken(r)) ? t : ""
       }
     }), {
       rejectWithError: !1
     })).finally(() => {
-      (null == r || r === h.default.getId()) && P(e, n)
+      (null == r || r === h.default.getId()) && R(e, n)
     })
   },
   switchAccountToken(e) {
@@ -373,7 +373,7 @@ let w = {
     return T.log("Switching accounts", {
       wasLoggedIn: null != n,
       tokenHasChanged: e !== n
-    }), R({
+    }), P({
       isSwitchingAccount: !0,
       goHomeAfterSwitching: t
     }), this.loginToken(e, !0).then(() => {
@@ -385,11 +385,11 @@ let w = {
   },
   verifySSOToken(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : b.Z5c.DEFAULT_LOGGED_OUT;
-    return o.tn.get({
+    return a.tn.get({
       url: b.ANM.ME,
       oldFormErrors: !0,
       rejectWithError: !0
-    }).catch(() => P(e, t))
+    }).catch(() => R(e, t))
   },
   async verify(e) {
     let t = await g.Z.post({
@@ -444,9 +444,9 @@ let w = {
         password: t,
         source: n
       },
-      a = s.K.get(b.JkL),
-      o = (0, y.xJ)();
-    null != o && null != a && (r.push_provider = o, r.push_token = a);
+      o = s.K.get(b.JkL),
+      a = (0, y.xJ)();
+    null != a && null != o && (r.push_provider = a, r.push_token = o);
     let u = s.K.get(b.scU);
     null != y.mv && null != u && (r.push_voip_provider = y.mv, r.push_voip_token = u);
     try {
@@ -455,8 +455,8 @@ let w = {
           mfa: e,
           sms: t,
           webauthn: n,
-          ticket: a,
-          token: o,
+          ticket: o,
+          token: a,
           backup: s,
           totp: l
         }
@@ -473,8 +473,8 @@ let w = {
         result: e ? "MFA" : "SUCCESS",
         sms: t,
         webauthn: n,
-        ticket: a,
-        token: o,
+        ticket: o,
+        token: a,
         backup: s,
         totp: l
       }
@@ -491,8 +491,8 @@ let w = {
       method: t,
       code: n,
       ticket: r,
-      password: a,
-      token: o,
+      password: o,
+      token: a,
       source: s
     } = e;
     return l.Z.dispatch({
@@ -502,8 +502,8 @@ let w = {
       body: {
         code: n,
         ticket: r,
-        password: a,
-        token: o,
+        password: o,
+        token: a,
         source: s,
         method: t
       },
@@ -566,15 +566,15 @@ let w = {
       type: "SET_CONSENT_REQUIRED",
       consentRequired: !0
     })
-  }, A), N = o.tn.get({
+  }, A), N = a.tn.get({
     url: b.ANM.AUTH_LOCATION_METADATA,
     retries: 2,
     oldFormErrors: !0,
     rejectWithError: !0
   }).then(e => {
-    var t, n, i, a, o;
+    var t, n, i, o, a;
     if (clearTimeout(r), null == m.Z.getAuthenticationConsentRequired()) {
-      let t = null == (a = null == e || null == (i = e.body) ? void 0 : i.consent_required) || a;
+      let t = null == (o = null == e || null == (i = e.body) ? void 0 : i.consent_required) || o;
       l.Z.dispatch({
         type: "SET_CONSENT_REQUIRED",
         consentRequired: t
@@ -582,7 +582,7 @@ let w = {
     }
     if (l.Z.dispatch({
         type: "SET_LOCATION_METADATA",
-        countryCode: null != (o = null == e || null == (t = e.body) ? void 0 : t.country_code) ? o : void 0
+        countryCode: null != (a = null == e || null == (t = e.body) ? void 0 : t.country_code) ? a : void 0
       }), N = null, (null == e || null == (n = e.body) ? void 0 : n.promotional_email_opt_in) != null) {
       let t = e.body.promotional_email_opt_in;
       (0, u.K4)({

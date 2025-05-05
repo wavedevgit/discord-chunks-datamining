@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => L
 }), n(35282), n(388685), n(358797);
 var r, i = n(442837),
-  a = n(570140),
-  o = n(375954);
+  o = n(570140),
+  a = n(375954);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -77,17 +77,17 @@ function v(e) {
     channelId: n,
     file: r,
     uploader: i,
-    message: a
+    message: o
   } = e;
   if (i._aborted || i._errored) return;
-  let o = null != (t = f[n]) ? t : d;
-  _[r.id] = i, f[n] = [...o, r], p[r.id] = a;
+  let a = null != (t = f[n]) ? t : d;
+  _[r.id] = i, f[n] = [...a, r], p[r.id] = o;
   let {
     items: s
   } = r;
-  null != s && (h[a.id] = u(l({}, r), {
+  null != s && (h[o.id] = u(l({}, r), {
     items: s
-  })), a.nonce
+  })), o.nonce
 }
 
 function I(e) {
@@ -141,7 +141,7 @@ function C(e) {
   })
 }
 
-function R(e) {
+function P(e) {
   let {
     file: t,
     itemId: n
@@ -150,7 +150,7 @@ function R(e) {
   setImmediate(() => r.cancelItem(n))
 }
 
-function P(e) {
+function R(e) {
   let {
     channelId: t,
     file: n
@@ -167,7 +167,7 @@ function w(e) {
 }
 class D extends(r = i.ZP.Store) {
   initialize() {
-    this.waitFor(o.Z)
+    this.waitFor(a.Z)
   }
   getFiles(e) {
     var t;
@@ -184,7 +184,7 @@ class D extends(r = i.ZP.Store) {
   }
 }
 s(D, "displayName", "UploadStore");
-let L = new D(a.Z, {
+let L = new D(o.Z, {
   CONNECTION_OPEN: y,
   LOGOUT: O,
   UPLOAD_START: v,
@@ -193,7 +193,7 @@ let L = new D(a.Z, {
   UPLOAD_COMPLETE: A,
   UPLOAD_FAIL: N,
   UPLOAD_CANCEL_REQUEST: C,
-  UPLOAD_ITEM_CANCEL_REQUEST: R,
-  UPLOAD_FILE_UPDATE: P,
+  UPLOAD_ITEM_CANCEL_REQUEST: P,
+  UPLOAD_FILE_UPDATE: R,
   UPLOAD_RESTORE_FAILED_UPLOAD: w
 })

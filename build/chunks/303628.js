@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => M
+  Z: () => k
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(91192),
   l = n(536895),
   c = n(442837),
@@ -60,18 +60,18 @@ function C(e, t) {
   return n
 }
 
-function R(e, t) {
+function P(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function P(e, t) {
+function R(e, t) {
   if (null == e) return {};
   var n, r, i = w(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -79,8 +79,8 @@ function P(e, t) {
 function w(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let D = [];
@@ -89,7 +89,7 @@ function L(e) {
   let {
     channelId: t,
     type: n
-  } = e, a = (0, c.e7)([_.Z], () => _.Z.keyboardModeEnabled), A = (0, p.Z)("attachments", l.hy.HORIZONTAL), C = (0, c.e7)([b.Z], () => b.Z.getUploads(t, n.drafts.type)), {
+  } = e, o = (0, c.e7)([_.Z], () => _.Z.keyboardModeEnabled), A = (0, p.Z)("attachments", l.hy.HORIZONTAL), C = (0, c.e7)([b.Z], () => b.Z.getUploads(t, n.drafts.type)), {
     isApplicationCommand: w,
     commandOptions: L,
     commandOptionStates: x
@@ -106,13 +106,13 @@ function L(e) {
       commandOptions: e.options,
       commandOptionStates: n
     }
-  }), M = i.useMemo(() => {
+  }), k = i.useMemo(() => {
     var e;
     return null != (e = null == L ? void 0 : L.filter(e => {
       var t;
       return e.type === f.jw.ATTACHMENT && (null == x || null == (t = x[e.name]) ? void 0 : t.hasValue)
     })) ? e : []
-  }, [L, x]), [k, j] = i.useState([]);
+  }, [L, x]), [M, j] = i.useState([]);
   i.useEffect(() => {
     let e = () => {
       d.Z.clearAll(t, n.drafts.type)
@@ -128,8 +128,8 @@ function L(e) {
   });
   let G = {
       isApplicationCommand: w,
-      previousUploadOptions: k,
-      uploadOptions: M
+      previousUploadOptions: M,
+      uploadOptions: k
     },
     B = i.useRef(G);
   i.useEffect(() => {
@@ -148,35 +148,35 @@ function L(e) {
         d.Z.remove(t, e.name, n.drafts.type)
       }), j(i)
     }
-  }, [t, M.length, n]);
-  let V = (0, m.Q3)("ChannelAttachmentArea");
-  return !w && 0 === C.length || w && 0 === M.length ? null : (0, r.jsxs)(i.Fragment, {
+  }, [t, k.length, n]);
+  let F = (0, m.Q3)("ChannelAttachmentArea");
+  return !w && 0 === C.length || w && 0 === k.length ? null : (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsx)(s.bG, {
       navigator: A,
       children: (0, r.jsx)(s.SJ, {
         children: e => {
           var {
             ref: i
-          } = e, s = P(e, ["ref"]);
-          return (0, r.jsx)("ul", R(N({
+          } = e, s = R(e, ["ref"]);
+          return (0, r.jsx)("ul", P(N({
             ref: i
           }, s), {
-            className: o()(S.channelAttachmentArea, T.scrollbarGhost),
-            children: w ? M.map(e => (0, r.jsx)(O.Z, {
+            className: a()(S.channelAttachmentArea, T.scrollbarGhost),
+            children: w ? k.map(e => (0, r.jsx)(O.Z, {
               channelId: t,
-              keyboardModeEnabled: a,
+              keyboardModeEnabled: o,
               option: e
             }, e.name)) : C.map(e => (0, r.jsx)(v.Z, {
               channelId: t,
               draftType: n.drafts.type,
               upload: e,
-              keyboardModeEnabled: a,
+              keyboardModeEnabled: o,
               clip: e.clip
             }, e.id))
           }))
         }
       })
-    }), n.drafts.type === E.d.FirstThreadMessage || V ? null : (0, r.jsx)(g.Z, {})]
+    }), n.drafts.type === E.d.FirstThreadMessage || F ? null : (0, r.jsx)(g.Z, {})]
   })
 }
 
@@ -191,4 +191,4 @@ function x(e) {
     type: n
   }) : null
 }
-let M = i.memo(x)
+let k = i.memo(x)

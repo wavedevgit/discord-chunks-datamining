@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(481060),
   l = n(600164),
   c = n(259580),
@@ -34,7 +34,7 @@ class f extends i.PureComponent {
     } = this.props, n = e.map(this.renderBreadcrumb);
     return (0, r.jsx)(l.Z, {
       justify: l.Z.Justify.START,
-      className: o()(u.breadcrumbs, t),
+      className: a()(u.breadcrumbs, t),
       children: n
     })
   }
@@ -43,18 +43,18 @@ class f extends i.PureComponent {
       let {
         activeId: n,
         onBreadcrumbClick: i,
-        breadcrumbs: a,
+        breadcrumbs: o,
         renderCustomBreadcrumb: l,
         separatorClassName: d
-      } = this.props, f = e.id === n, _ = () => this.handleClick(e), p = t === a.length - 1, h = null != l ? l(e, f) : (0, r.jsx)("span", {
-        className: o()(u.breadcrumb, {
+      } = this.props, f = e.id === n, _ = () => this.handleClick(e), p = t === o.length - 1, h = null != l ? l(e, f) : (0, r.jsx)("span", {
+        className: a()(u.breadcrumb, {
           [u.activeBreadcrumb]: f,
           [u.interactiveBreadcrumb]: null != i
         }),
         children: e.label
       });
       return (0, r.jsxs)("div", {
-        className: o()(u.breadcrumbWrapper, {
+        className: a()(u.breadcrumbWrapper, {
           [u.breadcrumbFinalWrapper]: p
         }),
         children: [null != i ? (0, r.jsx)(s.P3F, {
@@ -63,7 +63,7 @@ class f extends i.PureComponent {
           className: u.breadcrumbClickWrapper,
           children: h
         }) : h, p ? null : (0, r.jsx)(c.Z, {
-          className: o()(u.breadcrumbArrow, d),
+          className: a()(u.breadcrumbArrow, d),
           direction: c.Z.Directions.RIGHT
         })]
       }, e.id)

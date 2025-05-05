@@ -10,7 +10,7 @@ function r(e, t, n) {
   }) : e[t] = n, e
 }
 n.d(t, {
-  Z: () => a
+  Z: () => o
 }), n(539854);
 class i {
   enqueue(e) {
@@ -26,4 +26,4 @@ class i {
     r(this, "queue", [])
   }
 }
-let a = new i
+let o = new i

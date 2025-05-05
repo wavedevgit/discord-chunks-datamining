@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => P
+  Z: () => R
 }), n(388685);
 var r, i = n(442837),
-  a = n(570140),
-  o = n(457330),
+  o = n(570140),
+  a = n(457330),
   s = n(726542),
   l = n(368111),
   c = n(601964);
@@ -69,7 +69,7 @@ function S(e) {
     integrations: e.integrations.map(e => _(d({}, e), {
       guild: new c.ZP(e.guild)
     }))
-  })))) : o.Z.fetch()
+  })))) : a.Z.fetch()
 }
 
 function T(e) {
@@ -86,9 +86,9 @@ function N(e) {
     id: n,
     revoked: r,
     accessToken: i
-  } = e, a = m.find(e => e.id === n && e.type === t);
-  if (null == a) return !1;
-  null != r && (a.revoked = r), null != i && (a.accessToken = i)
+  } = e, o = m.find(e => e.id === n && e.type === t);
+  if (null == o) return !1;
+  null != r && (o.revoked = r), null != i && (o.accessToken = i)
 }
 
 function C(e) {
@@ -98,13 +98,13 @@ function C(e) {
     openid_params: r,
     provider: i
   } = e;
-  o.Z.callback(i, {
+  a.Z.callback(i, {
     code: t,
     state: n,
     openid_params: r
   })
 }
-class R extends(r = i.ZP.Store) {
+class P extends(r = i.ZP.Store) {
   isJoining(e) {
     return E[e] || !1
   }
@@ -139,8 +139,8 @@ class R extends(r = i.ZP.Store) {
     return b.has(e)
   }
 }
-u(R, "displayName", "ConnectedAccountsStore");
-let P = new R(a.Z, {
+u(P, "displayName", "ConnectedAccountsStore");
+let R = new P(o.Z, {
   CONNECTION_OPEN: I,
   USER_CONNECTIONS_UPDATE: S,
   USER_CONNECTIONS_INTEGRATION_JOINING: T,

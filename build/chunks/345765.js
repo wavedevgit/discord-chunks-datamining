@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(392711),
   i = n(126313),
-  a = n(570140),
-  o = n(147913),
+  o = n(570140),
+  a = n(147913),
   s = n(539746),
   l = n(38618),
   c = n(86071),
@@ -37,17 +37,17 @@ let O = 4,
   A = new Set,
   N = new Map,
   C = null,
-  R = (0, r.debounce)(h.yK, 3e3, {
+  P = (0, r.debounce)(h.yK, 3e3, {
     trailing: !0
   });
 
-function P() {
+function R() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0;
   return Math.random() * (e + 1) * v
 }
 
 function w(e, t) {
-  a.Z.dispatch({
+  o.Z.dispatch({
     type: "CONTENT_INVENTORY_SET_FEED_STATE",
     feedId: e,
     state: t
@@ -79,16 +79,16 @@ function x() {
   let n = g.Z.getFeed(I);
   if ((null == n ? void 0 : n.refresh_stale_inbox_after_ms) != null && null == C) return;
   let r = (null == n ? void 0 : n.expired_at) == null ? 0 : new Date(n.expired_at).getTime() - Date.now(),
-    a = Math.max(0, null == C ? 0 : new Date(C).getTime() - Date.now(), r) + (t > 0 ? P() : 0);
+    o = Math.max(0, null == C ? 0 : new Date(C).getTime() - Date.now(), r) + (t > 0 ? R() : 0);
   w(I, {
     loading: !1,
-    nextFetchDate: new Date(Date.now() + a)
-  }), T.set(I, setTimeout(() => M({
+    nextFetchDate: new Date(Date.now() + o)
+  }), T.set(I, setTimeout(() => k({
     feedId: I,
     feature: i.L.INBOX
-  }), a))
+  }), o))
 }
-async function M(e) {
+async function k(e) {
   let {
     feedId: t,
     feature: n,
@@ -104,24 +104,24 @@ async function M(e) {
       feedId: t,
       feature: n
     });
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "CONTENT_INVENTORY_SET_FEED",
       feedId: t,
       feed: r
     }), N.set(t, 0), A.delete(t), w(t, {
       loading: !1
     }), t === I && (C = null, x())
-  } catch (o) {
+  } catch (a) {
     var i;
     let e = null != (i = N.get(t)) ? i : 0;
     if (e < O) {
-      let i = _.Z.Millis.MINUTE * Math.pow(2, e) + P(e);
-      T.set(t, setTimeout(() => M({
+      let i = _.Z.Millis.MINUTE * Math.pow(2, e) + R(e);
+      T.set(t, setTimeout(() => k({
         feedId: t,
         feature: n,
         force: r
       }), i)), N.set(t, e + 1)
-    } else a.Z.dispatch({
+    } else o.Z.dispatch({
       type: "CONTENT_INVENTORY_CLEAR_FEED",
       feedId: t
     });
@@ -129,12 +129,12 @@ async function M(e) {
   }
 }
 
-function k() {
+function M() {
   x()
 }
 
 function j() {
-  k()
+  M()
 }
 
 function U() {
@@ -146,7 +146,7 @@ function G(e) {
     feedId: t,
     feature: n
   } = e;
-  L(t), M({
+  L(t), k({
     feedId: t,
     feature: n,
     force: !0
@@ -160,16 +160,16 @@ function B(e) {
   (null == n ? void 0 : n.refresh_stale_inbox_after_ms) != null && (C = new Date(Date.now() + (null != t ? t : n.refresh_stale_inbox_after_ms)).toUTCString(), x())
 }
 
-function V(e) {
+function F(e) {
   var t;
   let {
     connectionId: n,
     track: r
   } = e;
-  null != n && (null == (t = u.Z.getAccount(n, b.ABu.SPOTIFY)) ? void 0 : t.showActivity) && R(n, r)
+  null != n && (null == (t = u.Z.getAccount(n, b.ABu.SPOTIFY)) ? void 0 : t.showActivity) && P(n, r)
 }
 
-function F() {
+function V() {
   let {
     enabled: e
   } = p.iC.getCurrentConfig({
@@ -177,7 +177,7 @@ function F() {
   }, {
     autoTrackExposure: !0
   });
-  e && M({
+  e && k({
     feedId: E.YN.GAME_PROFILE_FEED,
     feature: i.L.GAME_PROFILE
   })
@@ -191,23 +191,23 @@ function Z() {
   }, {
     autoTrackExposure: !0
   });
-  e && M({
+  e && k({
     feedId: E.YN.GAME_PROFILE_FEED,
     feature: i.L.OVERLAY_INVITES
   })
 }
-class H extends o.Z {
+class H extends a.Z {
   constructor(...e) {
     super(...e), y(this, "actions", {
       POST_CONNECTION_OPEN: j,
       CONNECTION_CLOSED: U,
-      WINDOW_FOCUS: k,
-      IDLE: k,
-      CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: k,
+      WINDOW_FOCUS: M,
+      IDLE: M,
+      CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: M,
       CONTENT_INVENTORY_MANUAL_REFRESH: G,
       CONTENT_INVENTORY_INBOX_STALE: B,
-      SPOTIFY_NEW_TRACK: V,
-      GAME_PROFILE_OPEN: F,
+      SPOTIFY_NEW_TRACK: F,
+      GAME_PROFILE_OPEN: V,
       OVERLAY_READY: Z
     })
   }

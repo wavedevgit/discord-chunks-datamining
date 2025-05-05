@@ -1,28 +1,28 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  v: () => o
+  v: () => a
 }), n(388685), n(413496), n(433524), n(35282);
 var r = n(591759);
 let i = new Set(n(821445)),
-  a = {
+  o = {
     "github.com": RegExp("/releases\\S*/download|archive/refs/\\S*|/i/raw/i/\\S*|/user-attachments\\S*"),
     "bitbucket.org": RegExp("/downloads\\S*/[^/]*"),
     "gitlab.com": RegExp("/downloads\\S*/[^/]*")
   };
 
-function o(e) {
+function a(e) {
   var t, n;
   let {
-    pathname: o,
+    pathname: a,
     hostname: s
   } = null != (n = r.Z.toURLSafe(e)) ? n : {};
   if (null == s) return null;
-  let l = a[s];
-  if (null != l && null != o && !l.test(o) || null == o) return null;
-  let c = o;
+  let l = o[s];
+  if (null != l && null != a && !l.test(a) || null == a) return null;
+  let c = a;
   try {
-    c = decodeURIComponent(o)
+    c = decodeURIComponent(a)
   } catch (e) {}
   let u = c.split("/"),
     d = null,

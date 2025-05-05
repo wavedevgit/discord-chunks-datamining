@@ -2,10 +2,10 @@
 "use strict";
 let r;
 n.d(t, {
-  Z: () => k
+  Z: () => M
 }), n(388685);
-var i, a = n(442837),
-  o = n(433517),
+var i, o = n(442837),
+  a = n(433517),
   s = n(570140),
   l = n(358221),
   c = n(695346),
@@ -77,7 +77,7 @@ function C(e) {
   return !!S.has(t) && !r && N(t)
 }
 
-function R(e) {
+function P(e) {
   let {
     channelId: t
   } = e;
@@ -87,7 +87,7 @@ function R(e) {
   }).enabled && !!e.ringing.includes(f.default.getId())) && N(t)
 }
 
-function P(e) {
+function R(e) {
   let {
     channelId: t
   } = e;
@@ -102,7 +102,7 @@ function w(e) {
   return r = {
     x: t,
     y: n
-  }, o.K.set(E, r), !1
+  }, a.K.set(E, r), !1
 }
 
 function D(e) {
@@ -124,7 +124,7 @@ function x() {
     null != (null == (n = _.Z.getChannel(r)) ? void 0 : n.guild_id) && (l.Z.getGuildRingingUsers(r).has(e) || N(r))
   })
 }
-class M extends(i = a.ZP.Store) {
+class k extends(i = o.ZP.Store) {
   initialize() {
     this.waitFor(_.Z, p.Z), this.syncWith([p.Z], L), this.syncWith([u.Z], L), this.syncWith([l.Z], x)
   }
@@ -141,14 +141,14 @@ class M extends(i = a.ZP.Store) {
     return !T && S.size > 0
   }
 }
-g(M, "displayName", "IncomingCallStore");
-let k = new M(s.Z, {
+g(k, "displayName", "IncomingCallStore");
+let M = new k(s.Z, {
   CALL_CREATE: C,
   CALL_UPDATE: C,
-  CALL_DELETE: R,
+  CALL_DELETE: P,
   GUILD_RING_START: C,
-  GUILD_RING_STOP: R,
-  VOICE_CHANNEL_SELECT: P,
+  GUILD_RING_STOP: P,
+  VOICE_CHANNEL_SELECT: R,
   INCOMING_CALL_MOVE: w,
   CHANNEL_DELETE: D
 })

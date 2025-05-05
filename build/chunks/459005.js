@@ -4,7 +4,7 @@ n.d(t, {
   JV: () => s,
   aA: () => l,
   mA: () => _,
-  ug: () => o
+  ug: () => a
 }), n(388685);
 var r = n(392711);
 
@@ -17,7 +17,7 @@ function i(e, t, n) {
   }) : e[t] = n, e
 }
 
-function a(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -29,7 +29,7 @@ function a(e) {
   }
   return e
 }
-var o = function(e) {
+var a = function(e) {
     return e.LONGER_DISPATCH = "longer_dispatch", e.EXCEEDED_MAX_CONSECUTIVE_FLUSHES = "exceeded_max_consecutive_flushes", e.FIRED_DUE_TO_MAX_TIMEOUT = "fired_due_to_max_timeout", e.SKIP_IDLE_CALLBACK_DUE_TO_BACKGROUNDED = "skip_idle_callback_due_to_backgrounded", e
   }({}),
   s = function(e) {
@@ -108,7 +108,7 @@ class _ {
         let [n, [r]] = t;
         return e["avg_".concat(n)] = "".concat(r.toFixed(2)), e
       }, {});
-    return a({}, Object.entries(this._eventCounts).reduce((e, t) => {
+    return o({}, Object.entries(this._eventCounts).reduce((e, t) => {
       let [n, r] = t;
       return e["count_".concat(n)] = "".concat(r), e
     }, {}), e, t)

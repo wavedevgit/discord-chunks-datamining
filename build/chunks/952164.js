@@ -8,16 +8,16 @@ n.d(t, {
 }), n(415506);
 var r = n(358085),
   i = n(18323),
-  a = n(647162),
-  o = n(616922);
+  o = n(647162),
+  a = n(616922);
 
 function s(e, t, n) {
   let s;
-  (0, r.isDesktop)() || (s = window.open("", "_blank")), (0, a.iy)(e, t).then(e => n(e)).then(e => {
+  (0, r.isDesktop)() || (s = window.open("", "_blank")), (0, o.iy)(e, t).then(e => n(e)).then(e => {
     let {
       resourceType: t,
       resourceId: n
-    } = e, r = i.Z.isProtocolRegistered() ? o.C7.PLAYER_OPEN(t, n) : o.C7.WEB_OPEN(t, n);
+    } = e, r = i.Z.isProtocolRegistered() ? a.C7.PLAYER_OPEN(t, n) : a.C7.WEB_OPEN(t, n);
     null != s ? s.location.href = r : window.open(r)
   }).catch(() => {
     null != s && s.close()
@@ -25,7 +25,7 @@ function s(e, t, n) {
 }
 
 function l() {
-  window.open(o.C7.PREMIUM_SITE)
+  window.open(a.C7.PREMIUM_SITE)
 }
 
 function c(e) {
@@ -35,9 +35,9 @@ function c(e) {
     metadata: r
   } = e;
   if (null == n) return;
-  let a = (0, o.c8)(null != (t = null == r ? void 0 : r.type) ? t : o.Hw.TRACK);
-  if (null == a) return;
-  let s = i.Z.isProtocolRegistered() ? o.C7.PLAYER_OPEN(a, n) : o.C7.WEB_OPEN(a, n);
+  let o = (0, a.c8)(null != (t = null == r ? void 0 : r.type) ? t : a.Hw.TRACK);
+  if (null == o) return;
+  let s = i.Z.isProtocolRegistered() ? a.C7.PLAYER_OPEN(o, n) : a.C7.WEB_OPEN(o, n);
   window.open(s)
 }
 
@@ -48,7 +48,7 @@ function u(e, t) {
       album_id: r
     } = t;
     return {
-      resourceType: (0, o.c8)(null == (n = e.metadata) ? void 0 : n.type) === o.Hw.EPISODE ? o.Hw.SHOW : o.Hw.ALBUM,
+      resourceType: (0, a.c8)(null == (n = e.metadata) ? void 0 : n.type) === a.Hw.EPISODE ? a.Hw.SHOW : a.Hw.ALBUM,
       resourceId: r
     }
   })
@@ -63,7 +63,7 @@ function d(e, t, n) {
     let r = t[n];
     if (null == r) throw Error("invalid artist index");
     return {
-      resourceType: o.Hw.ARTIST,
+      resourceType: a.Hw.ARTIST,
       resourceId: r
     }
   })

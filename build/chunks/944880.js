@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => M
+  Z: () => k
 }), n(388685);
 var r = n(913527),
   i = n.n(r),
-  a = n(570140),
-  o = n(147913),
+  o = n(570140),
+  a = n(147913),
   s = n(335131),
   l = n(228624),
   c = n(959546),
@@ -37,7 +37,7 @@ function S(e) {
   let t = c.Z.createFromServer(e.entitlement);
   (0, g._k)(t) ? T({
     forceRefresh: !0
-  }): (0, g.YE)(t) ? null != m.Z.getTenureRewardStatusForRewardId(t.skuId) && a.Z.dispatch({
+  }): (0, g.YE)(t) ? null != m.Z.getTenureRewardStatusForRewardId(t.skuId) && o.Z.dispatch({
     type: "USER_TENURE_REWARD_STATUS_DELETE",
     tenureRewardIds: [t.skuId]
   }) : (0, g.km)(t) && (0, s.qg)({
@@ -56,7 +56,7 @@ function T() {
     r = d.ZP.getPremiumSubscription(),
     i = u.default.getCurrentUser();
   if (!((0, _.M5)(i, E.p9.TIER_2) && null != r) && null == n) {
-    null != i && a.Z.dispatch({
+    null != i && o.Z.dispatch({
       type: "USER_TENURE_REWARD_STATUS_RESET"
     });
     return
@@ -64,12 +64,12 @@ function T() {
   if ((0, h.dR)({
       location: "tenure_reward_manager"
     }))
-    if (!0 === e || C(i)) P();
+    if (!0 === e || C(i)) R();
     else {
       let e = f.Z.getForApplication(E.CL);
       if (null == e) return;
       let t = Array.from(e).filter(e => null != m.Z.getTenureRewardStatusForRewardId(e.skuId)).map(e => e.skuId);
-      t.length > 0 && a.Z.dispatch({
+      t.length > 0 && o.Z.dispatch({
         type: "USER_TENURE_REWARD_STATUS_DELETE",
         tenureRewardIds: t
       })
@@ -92,15 +92,15 @@ function C(e) {
   return null != t && null != e && e.id !== t.user_id || A() || N()
 }
 
-function R() {
+function P() {
   if (w(), m.Z.getFetchState() !== m.M.FETCHED || O) return;
   let e = (0, g.GT)();
   if ((null == e ? void 0 : e.redeemable_at) == null) return;
   let t = (null == e ? void 0 : e.redeemable_at) != null ? new Date(e.redeemable_at).getTime() - Date.now() : null;
   null != t && t > 0 && (y = setTimeout(T, t))
 }
-async function P() {
-  O || (O = !0, await p.V(), O = !1, a.Z.wait(() => R()))
+async function R() {
+  O || (O = !0, await p.V(), O = !1, o.Z.wait(() => P()))
 }
 
 function w() {
@@ -114,7 +114,7 @@ function D() {
 function L() {
   T()
 }
-class x extends o.Z {
+class x extends a.Z {
   forceRefreshIfOutdated() {
     let e = m.Z.getState();
     null != e.lastFetchTimeMs && Date.now() - e.lastFetchTimeMs > I && T({
@@ -133,4 +133,4 @@ class x extends o.Z {
     })
   }
 }
-let M = new x
+let k = new x

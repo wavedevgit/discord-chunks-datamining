@@ -2,12 +2,12 @@
 "use strict";
 n.d(t, {
   DB: () => s,
-  TZ: () => o,
-  sf: () => a
+  TZ: () => a,
+  sf: () => o
 });
 var r = n(818083),
   i = n(987338);
-let a = (0, r.B)({
+let o = (0, r.B)({
   id: "2025-01_valentines_gifting_2025",
   label: "Valentines Gifting 2025",
   kind: "user",
@@ -33,11 +33,11 @@ let a = (0, r.B)({
   }]
 });
 
-function o() {
+function a() {
   let {
     enableGiftingFlow: e,
     enableCoachmark: t
-  } = a.useExperiment({
+  } = o.useExperiment({
     location: "useIsValentinesGiftingActive"
   }, {
     autoTrackExposure: !1
@@ -48,7 +48,7 @@ function o() {
 function s() {
   let {
     enableCoachmark: e
-  } = a.useExperiment({
+  } = o.useExperiment({
     location: "useIsValentinesCoachmarkEnabled"
   }, {
     autoTrackExposure: !1

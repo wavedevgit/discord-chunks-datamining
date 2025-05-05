@@ -4,7 +4,7 @@ let r, i;
 n.d(t, {
   Z: () => C
 }), n(388685);
-var a, o = n(442837),
+var o, a = n(442837),
   s = n(570140),
   l = n(981631),
   c = n(354459);
@@ -58,19 +58,19 @@ let p = new Map,
 function E(e) {
   var t, n;
   let {
-    id: a,
-    component: o,
+    id: o,
+    component: a,
     props: s
   } = e;
-  if (null != p.get(a)) return;
+  if (null != p.get(o)) return;
   let c = {
-    id: a,
-    component: o,
+    id: o,
+    component: a,
     position: null != (t = s.position) ? t : m,
     props: s,
     docked: null != (n = s.docked) && n
   };
-  p.set(a, c), o === l.NYg.VIDEO ? null == r && (r = a) : o === l.NYg.EMBED_IFRAME && null == i && (i = a)
+  p.set(o, c), a === l.NYg.VIDEO ? null == r && (r = o) : a === l.NYg.EMBED_IFRAME && null == i && (i = o)
 }
 
 function b(e) {
@@ -161,7 +161,7 @@ function T(e) {
 function A() {
   r = null, i = null, p = new Map
 }
-class N extends(a = o.ZP.PersistedStore) {
+class N extends(o = a.ZP.PersistedStore) {
   initialize(e) {
     if (null == e) {
       m = l.VD2.BOTTOM_RIGHT, g = {

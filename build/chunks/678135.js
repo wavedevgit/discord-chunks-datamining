@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(481060),
   l = n(22267),
   c = n(442933),
@@ -34,26 +34,26 @@ function N(e) {
     user: t,
     guild: n,
     canUsePremiumCustomization: i,
-    onUpsellClick: o,
+    onUpsellClick: a,
     pendingBanner: l,
     pendingAccentColor: m,
     pendingBio: g,
     pendingPronouns: T,
     pendingAvatar: N,
-    pendingAvatarDecoration: R,
-    pendingNickname: P,
+    pendingAvatarDecoration: P,
+    pendingNickname: R,
     pendingGlobalName: w,
     pendingThemeColors: D,
     pendingProfileEffectId: L,
     pendingLegacyUsernameDisabled: x,
-    avatarClassName: M,
-    containerClassName: k,
+    avatarClassName: k,
+    containerClassName: M,
     isTryItOutFlow: j = !1,
     disabledInputs: U = !1,
     hideCustomStatus: G = !1,
     hideBioSection: B = !1,
-    hideMessageInput: V = !0,
-    hideExampleButton: F = !1,
+    hideMessageInput: F = !0,
+    hideExampleButton: V = !1,
     pendingBadges: Z,
     shouldOpenBadgeTooltip: H,
     showNameplatePreview: Y = !1
@@ -63,7 +63,7 @@ function N(e) {
   } = (0, _.Z)({
     user: t,
     guildId: null == n ? void 0 : n.id,
-    avatarDecorationOverride: R,
+    avatarDecorationOverride: P,
     avatarOverride: N,
     size: s.EFr.SIZE_80,
     showPending: !0
@@ -86,7 +86,7 @@ function N(e) {
       displayProfile: W,
       themeType: S.lY.POPOUT,
       pendingThemeColors: D,
-      className: a()(A.container, k),
+      className: o()(A.container, M),
       forceShowPremium: i,
       children: [(0, r.jsxs)("header", {
         className: A.header,
@@ -99,7 +99,7 @@ function N(e) {
           pendingAccentColor: m,
           isTryItOutFlow: j,
           disabledInputs: U,
-          onUpsellClick: () => null == o ? void 0 : o({
+          onUpsellClick: () => null == a ? void 0 : a({
             object: I.qAy.EDIT_PROFILE_BANNER
           })
         }), (0, r.jsx)(b.Z, {
@@ -111,10 +111,10 @@ function N(e) {
           previewAvatarDecoration: z,
           previewTheme: Q,
           previewPrimaryColor: X,
-          className: M,
+          className: k,
           disabledInputs: U,
           isTryItOutFlow: j,
-          onUpsellClick: () => null == o ? void 0 : o({
+          onUpsellClick: () => null == a ? void 0 : a({
             object: I.qAy.AVATAR
           })
         }), !G && (0, r.jsx)(h.Z, {
@@ -128,7 +128,7 @@ function N(e) {
         displayProfile: W,
         guild: n,
         pendingAvatar: N,
-        pendingNickname: P,
+        pendingNickname: R,
         pendingGlobalName: w,
         pendingBio: g,
         pendingPronouns: T,
@@ -139,8 +139,8 @@ function N(e) {
         shouldOpenBadgeTooltip: H
       }), (0, r.jsx)(v.Z, {
         user: t,
-        hideMessageInput: V,
-        hideExampleButton: F
+        hideMessageInput: F,
+        hideExampleButton: V
       }), null != q && (0, r.jsx)(u.Z, {
         profileEffectId: q
       })]
@@ -149,8 +149,8 @@ function N(e) {
 }
 
 function C() {
-  let e = (0, o.e7)([g.default], () => g.default.getCurrentUser()),
-    t = (0, o.e7)([m.Z], () => m.Z.getPendingNameplate());
+  let e = (0, a.e7)([g.default], () => g.default.getCurrentUser()),
+    t = (0, a.e7)([m.Z], () => m.Z.getPendingNameplate());
   return null == e ? null : (0, r.jsxs)("div", {
     className: A.nameplatePreviewSection,
     children: [(0, r.jsx)(s.Text, {

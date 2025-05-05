@@ -2,8 +2,8 @@
 "use strict";
 var r = n(98405),
   i = n(580983),
-  a = n(46015),
-  o = n(497464),
+  o = n(46015),
+  a = n(497464),
   s = n(880181),
   l = n(655152),
   c = n(933009),
@@ -15,24 +15,24 @@ var r = n(98405),
   h = n(511696),
   m = p("replace"),
   g = TypeError,
-  E = a("".indexOf),
-  b = a("".replace),
-  y = a("".slice),
+  E = o("".indexOf),
+  b = o("".replace),
+  y = o("".slice),
   O = Math.max;
 r({
   target: "String",
   proto: !0
 }, {
   replaceAll: function(e, t) {
-    var n, r, a, p, v, I, S, T, A, N = o(this),
+    var n, r, o, p, v, I, S, T, A, N = a(this),
       C = 0,
-      R = "";
+      P = "";
     if (!l(e)) {
-      if ((n = c(e)) && !~E(u(o(f(e))), "g")) throw new g("`.replaceAll` does not allow non-global regexes");
+      if ((n = c(e)) && !~E(u(a(f(e))), "g")) throw new g("`.replaceAll` does not allow non-global regexes");
       if (r = d(e, m)) return i(r, e, N, t);
       if (h && n) return b(u(N), e, t)
     }
-    for (a = u(N), p = u(e), (v = s(t)) || (t = u(t)), S = O(1, I = p.length), T = E(a, p); - 1 !== T;) A = v ? u(t(p, T, a)) : _(p, a, T, [], void 0, t), R += y(a, C, T) + A, C = T + I, T = T + S > a.length ? -1 : E(a, p, T + S);
-    return C < a.length && (R += y(a, C)), R
+    for (o = u(N), p = u(e), (v = s(t)) || (t = u(t)), S = O(1, I = p.length), T = E(o, p); - 1 !== T;) A = v ? u(t(p, T, o)) : _(p, o, T, [], void 0, t), P += y(o, C, T) + A, C = T + I, T = T + S > o.length ? -1 : E(o, p, T + S);
+    return C < o.length && (P += y(o, C)), P
   }
 })

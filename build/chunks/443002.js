@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(622535),
-  o = n(481060),
+  o = n(622535),
+  a = n(481060),
   s = n(425493),
   l = n(211266),
   c = n(906732),
@@ -31,30 +31,30 @@ let A = function(e) {
     analyticsLocation: t,
     guild: n,
     onClose: A
-  } = e, [N, C] = i.useState(!0), R = i.useRef(!1), P = (0, l.Z)(() => Date.now()), {
+  } = e, [N, C] = i.useState(!0), P = i.useRef(!1), R = (0, l.Z)(() => Date.now()), {
     analyticsLocations: w
-  } = (0, c.ZP)(), D = i.useRef(null), L = i.useRef(null), x = i.useRef(null), M = i.useCallback(() => {
+  } = (0, c.ZP)(), D = i.useRef(null), L = i.useRef(null), x = i.useRef(null), k = i.useCallback(() => {
     null != x.current && null != L.current && L.current.scrollTo({
       to: x.current.offsetTop,
       animate: !0
     })
-  }, []), k = (0, u.Ek)(n.id, "GuildBoostingMarketing"), j = i.useCallback(() => {
+  }, []), M = (0, u.Ek)(n.id, "GuildBoostingMarketing"), j = i.useCallback(() => {
     null == A || A(), _.default.track(I.rMx.MODAL_DISMISSED, {
       type: I.ZY5.PREMIUM_GUILD_USER_MODAL,
       location_stack: w,
       location_section: t.section,
       location_object: t.object,
       guild_id: n.id,
-      duration_open_ms: Date.now() - P
+      duration_open_ms: Date.now() - R
     })
-  }, [A, t, w, P, n.id]), U = i.useCallback(e => {
-    e && !R.current && (_.default.track(I.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+  }, [A, t, w, R, n.id]), U = i.useCallback(e => {
+    e && !P.current && (_.default.track(I.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
       type: I.ZY5.PREMIUM_GUILD_USER_MODAL,
       location_stack: w,
       location_section: t.section,
       location_object: t.object,
       guild_id: n.id
-    }), R.current = !0)
+    }), P.current = !0)
   }, [t, w, n.id]);
   return i.useEffect(() => {
     _.default.track(I.rMx.OPEN_MODAL, {
@@ -72,7 +72,7 @@ let A = function(e) {
       window.removeEventListener("keydown", e)
     }
   }, [j]), (0, r.jsxs)(r.Fragment, {
-    children: [null != A && (0, r.jsx)(o.P3F, {
+    children: [null != A && (0, r.jsx)(a.P3F, {
       "aria-label": S.intl.string(S.t.cpT0Cg),
       onClick: j,
       className: T.closeIconWrapper,
@@ -82,18 +82,18 @@ let A = function(e) {
         keybind: "ESC",
         variant: s.Z.Variants.SOLID
       })
-    }), (0, r.jsxs)(o.yWw, {
+    }), (0, r.jsxs)(a.yWw, {
       ref: L,
       className: T.scroller,
       children: [(0, r.jsxs)("div", {
         className: T.header,
         children: [(0, r.jsxs)("div", {
           className: T.headerContentWrapper,
-          children: [k && (0, r.jsx)(d.Z, {
+          children: [M && (0, r.jsx)(d.Z, {
             guild: e.guild,
             themeResponsive: !1,
-            onButtonClick: M
-          }), (0, r.jsx)(o.X6q, {
+            onButtonClick: k
+          }), (0, r.jsx)(a.X6q, {
             className: T.heading,
             color: "always-white",
             variant: "display-lg",
@@ -112,7 +112,7 @@ let A = function(e) {
         className: T.middleBodyContentWrapper,
         children: [(0, r.jsx)(O.ZP, {
           guild: e.guild
-        }), k && (0, r.jsx)(f.Z, {
+        }), M && (0, r.jsx)(f.Z, {
           ref: x,
           guild: e.guild,
           onClose: j
@@ -128,7 +128,7 @@ let A = function(e) {
         }), (0, r.jsx)(v.A, {}), (0, r.jsx)("div", {
           className: T.lowerBodyBackgroundImage
         })]
-      }), (0, r.jsx)(a.$, {
+      }), (0, r.jsx)(o.$, {
         innerRef: D,
         onChange: U,
         children: (0, r.jsx)("div", {

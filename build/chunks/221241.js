@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  L: () => a,
-  Z: () => o
+  L: () => o,
+  Z: () => a
 });
 var r = n(818083),
   i = n(987338);
-let a = (0, r.B)({
+let o = (0, r.B)({
   kind: "user",
   id: "2025-02_voice_call_buttons_v2",
   label: "Voice and Video buttons V2",
@@ -51,8 +51,8 @@ let a = (0, r.B)({
   }]
 });
 
-function o(e) {
-  return a.useExperiment(e, {
+function a(e) {
+  return o.useExperiment(e, {
     autoTrackExposure: !1
   })
 }

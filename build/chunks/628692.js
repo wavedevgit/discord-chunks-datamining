@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => R,
+  ZP: () => P,
   ku: () => N
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(399606),
   l = n(481060),
   c = n(596454),
@@ -88,13 +88,13 @@ function N(e) {
   } = e, n = (0, s.e7)([h.Z], () => h.Z.getSoundById(t)), i = (0, d.V2)({
     location: "SoundboardMentionInline"
   }), {
-    isPlaying: a,
-    playSound: o
+    isPlaying: o,
+    playSound: a
   } = (0, p.Z)(n);
   return i ? null == n ? (0, r.jsx)(A, {}) : (0, r.jsx)(C, {
     className: O.inlineTextArea,
-    isPlaying: a,
-    playSound: o,
+    isPlaying: o,
+    playSound: a,
     sound: n
   }) : null
 }
@@ -104,7 +104,7 @@ function C(e) {
     className: t,
     sound: n,
     playSound: i,
-    isPlaying: a
+    isPlaying: o
   } = e, s = (null == n ? void 0 : n.emojiId) != null || (null == n ? void 0 : n.emojiName) != null, d = y.intl.formatToPlainString(y.t.tuMUJy, {
     emojiName: null == n ? void 0 : n.emojiName,
     soundName: null == n ? void 0 : n.name
@@ -115,8 +115,8 @@ function C(e) {
     "aria-label": d,
     tag: "span",
     onClick: i,
-    className: o()(O.inlineContainer, O.inlineButton, {
-      [O.playing]: !0 === a
+    className: a()(O.inlineContainer, O.inlineButton, {
+      [O.playing]: !0 === o
     }, t),
     children: [s && (0, r.jsx)(c.Z, {
       emojiId: null == n ? void 0 : n.emojiId,
@@ -127,25 +127,25 @@ function C(e) {
     })]
   }) : null
 }
-let R = function(e) {
+let P = function(e) {
   let {
     channelId: t,
     messageId: n,
-    soundId: a,
-    messageSounds: o,
+    soundId: o,
+    messageSounds: a,
     jumbo: c = !1
-  } = e, d = E.jU.useSetting(), y = (0, s.e7)([h.Z], () => h.Z.getSoundById(a), [a]), v = i.useMemo(() => {
+  } = e, d = E.jU.useSetting(), y = (0, s.e7)([h.Z], () => h.Z.getSoundById(o), [o]), v = i.useMemo(() => {
     var e;
-    return null != (e = (0, f.Z)(t, n, a, o)) ? e : y
-  }, [t, n, a, o, y]), S = (0, s.e7)([b.Z], () => b.Z.getChannel(t)), N = (0, u.X0)({
+    return null != (e = (0, f.Z)(t, n, o, a)) ? e : y
+  }, [t, n, o, a, y]), S = (0, s.e7)([b.Z], () => b.Z.getChannel(t)), N = (0, u.X0)({
     location: "SoundboardMention"
-  }), R = i.useRef(null), {
-    isPlaying: P,
+  }), P = i.useRef(null), {
+    isPlaying: R,
     playSound: w
   } = (0, p.Z)(v, S), D = i.useCallback(async () => {
     if (await w()) {
       var e;
-      null == (e = R.current) || e.addAnimation()
+      null == (e = P.current) || e.addAnimation()
     }
   }, [w]);
   return N ? null == v ? (0, r.jsx)(A, {
@@ -157,7 +157,7 @@ let R = function(e) {
     channel: S,
     refreshEnabled: !0,
     onSelectItem: D,
-    isPlayingSoundOverride: P,
+    isPlayingSoundOverride: R,
     isSoundmoji: !0,
     buttonOverlay: m.Pb.SOUNDMOJI,
     tooltipClassName: O.tooltip,
@@ -165,7 +165,7 @@ let R = function(e) {
     tooltipOverride: (0, r.jsx)(_.Dp, {
       sound: v
     }),
-    soundmojiVisualEffectRef: R
+    soundmojiVisualEffectRef: P
   }, "".concat(v.soundId)) : (0, r.jsx)(l.ua7, {
     "aria-label": v.name,
     text: (0, r.jsx)(_.Dp, {
@@ -179,7 +179,7 @@ let R = function(e) {
       children: (0, r.jsx)(C, {
         sound: v,
         playSound: D,
-        isPlaying: P
+        isPlaying: R
       })
     }))
   }) : null

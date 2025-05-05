@@ -5,8 +5,8 @@ n.d(t, {
   g: () => E
 }), n(781311), n(290780);
 var r, i = n(392711),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(433517),
   l = n(570140),
   c = n(840877),
@@ -84,13 +84,13 @@ function N(e) {
   let {
     queryString: r,
     searchId: i,
-    query: o
+    query: a
   } = e, s = g(i);
   null != s.searchFetcher && (s.searchFetcher.cancel(), s.searchFetcher = null);
   let f = i,
     p = s.searchType,
-    h = new c.ZP(f, p, o);
-  s.searchFetcher = h, s.isSearching = !0, s.rawResults = null, s.analyticsId = null, s.query = a().omit(o, "type"), s.offset = null != (n = o.offset) ? n : 0, s.showBlockedResults = !1, C({
+    h = new c.ZP(f, p, a);
+  s.searchFetcher = h, s.isSearching = !0, s.rawResults = null, s.analyticsId = null, s.query = o().omit(a, "type"), s.offset = null != (n = a.offset) ? n : 0, s.showBlockedResults = !1, C({
     type: "SEARCH_ADD_HISTORY",
     searchId: i,
     query: r
@@ -141,19 +141,19 @@ function C(e) {
   } = e;
   if ("string" != typeof r || "" === (r = r.trim())) return;
   let i = I[n] = null != (t = I[n]) ? t : [],
-    a = i.indexOf(r); - 1 !== a ? (i.splice(a, 1), i.unshift(r)) : null != i[0] && "" !== i[0] && r.startsWith(i[0]) ? i[0] = r : a < 0 && i.unshift(r), i.length > 5 && i.splice(5, i.length), s.K.set(y, {
+    o = i.indexOf(r); - 1 !== o ? (i.splice(o, 1), i.unshift(r)) : null != i[0] && "" !== i[0] && r.startsWith(i[0]) ? i[0] = r : o < 0 && i.unshift(r), i.length > 5 && i.splice(5, i.length), s.K.set(y, {
     history: I
   })
 }
 
-function R(e) {
+function P(e) {
   let {
     searchId: t
   } = e, n = g(t);
   n.isIndexing = !0, n.isHistoricalIndexing = !0, n.isSearching = !1
 }
 
-function P(e) {
+function R(e) {
   let {
     searchId: t
   } = e, n = g(t);
@@ -188,7 +188,7 @@ function x(e) {
   D(t)
 }
 
-function M(e) {
+function k(e) {
   let {
     searchId: t
   } = e;
@@ -197,7 +197,7 @@ function M(e) {
   }))
 }
 
-function k(e) {
+function M(e) {
   let {
     searchId: t,
     query: n
@@ -231,12 +231,12 @@ function B() {
   s.K.remove(y), I = {}
 }
 
-function V() {
+function F() {
   return null != S && w({
     searchId: S
   })
 }
-class F extends(r = o.ZP.Store) {
+class V extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(f.Z, d.Z);
     let e = s.K.get(y);
@@ -325,20 +325,20 @@ class F extends(r = o.ZP.Store) {
     }
   }
 }
-p(F, "displayName", "SearchStore");
-let Z = new F(l.Z, {
+p(V, "displayName", "SearchStore");
+let Z = new V(l.Z, {
   SEARCH_START: N,
-  SEARCH_INDEXING: R,
-  SEARCH_FINISH: P,
+  SEARCH_INDEXING: P,
+  SEARCH_FINISH: R,
   SEARCH_EDITOR_STATE_CLEAR: w,
   SEARCH_ENSURE_SEARCH_STATE: A,
   SEARCH_EDITOR_STATE_CHANGE: T,
   SEARCH_SET_SHOW_BLOCKED_RESULTS: U,
   SEARCH_SCREEN_OPEN: x,
   CHANNEL_SELECT: L,
-  CHANNEL_TOGGLE_MEMBERS_SECTION: V,
-  SEARCH_CLEAR_HISTORY: M,
-  SEARCH_REMOVE_HISTORY: k,
+  CHANNEL_TOGGLE_MEMBERS_SECTION: F,
+  SEARCH_CLEAR_HISTORY: k,
+  SEARCH_REMOVE_HISTORY: M,
   SEARCH_ADD_HISTORY: C,
   LOGOUT: B,
   CONNECTION_OPEN: G

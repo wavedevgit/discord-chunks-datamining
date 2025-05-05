@@ -6,8 +6,8 @@ t.d(n, {
 var r = t(255367),
   l = t(442837),
   i = t(481060),
-  c = t(239091),
-  u = t(287734),
+  u = t(239091),
+  c = t(287734),
   o = t(66999),
   a = t(364640),
   d = t(754688),
@@ -43,7 +43,7 @@ async function O(e, n, t) {
     } catch (e) {}
   }
   let r = v.Z.getChannel(n);
-  if (null != r && null == t && (0, p.bw)(r.type) && (0, d.YO)(r)) return void u.default.selectVoiceChannel(r.id);
+  if (null != r && null == t && (0, p.bw)(r.type) && (0, d.YO)(r)) return void c.default.selectVoiceChannel(r.id);
   (0, s.Z)(I.Z5c.CHANNEL(e, n, t))
 }
 
@@ -65,6 +65,14 @@ function E(e) {
       return (0, r.jsx)(A, {
         id: t
       });
+    case "everyone":
+      return (0, r.jsx)(T, {
+        roleName: "@everyone"
+      });
+    case "here":
+      return (0, r.jsx)(T, {
+        roleName: "@here"
+      });
     default:
       return JSON.stringify(t)
   }
@@ -73,7 +81,7 @@ function E(e) {
 function Z(e) {
   let {
     channelId: n,
-    guildId: u,
+    guildId: c,
     messageId: a
   } = e, s = (0, o.Z)(n), {
     name: _,
@@ -90,14 +98,14 @@ function Z(e) {
     }
   }, [n]), w = (0, y.d)();
   if (null == h) return;
-  let x = u === (null == w ? void 0 : w.guildId) || null == u,
+  let x = c === (null == w ? void 0 : w.guildId) || null == c,
     I = p || s.isSubscriptionGated ? x || null == _ ? (0, r.jsx)(f.Z, {
       iconType: h,
       children: null != _ ? _ : (0, r.jsx)("em", {
         children: k.intl.string(k.t.J90oLS)
       })
     }) : (0, r.jsx)(P, {
-      guildId: u,
+      guildId: c,
       children: _
     }) : (0, r.jsx)(f.Z, {
       iconType: "locked",
@@ -111,17 +119,17 @@ function Z(e) {
   })), (0, r.jsxs)(g.Z, {
     role: "link",
     onClick: e => {
-      null == e || e.stopPropagation(), O(u, n, a), (0, i.pTH)()
+      null == e || e.stopPropagation(), O(c, n, a), (0, i.pTH)()
     },
     onContextMenu: e => {
       let l = v.Z.getChannel(n);
-      (0, c.jW)(e, async () => {
+      (0, u.jW)(e, async () => {
         let {
           default: e
         } = await t.e("9573").then(t.bind(t, 546649));
         return t => {
-          var i, c, u;
-          return (0, r.jsx)(e, (c = function(e) {
+          var i, u, c;
+          return (0, r.jsx)(e, (u = function(e) {
             for (var n = 1; n < arguments.length; n++) {
               var t = null != arguments[n] ? arguments[n] : {},
                 r = Object.keys(t);
@@ -138,21 +146,21 @@ function Z(e) {
               })
             }
             return e
-          }({}, t), u = u = {
+          }({}, t), c = c = {
             channel: l,
             channelId: null != (i = null == l ? void 0 : l.id) ? i : n,
             originalLink: null,
             messageId: a
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(c, Object.getOwnPropertyDescriptors(u)) : (function(e, n) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(u, Object.getOwnPropertyDescriptors(c)) : (function(e, n) {
             var t = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
               t.push.apply(t, r)
             }
             return t
-          })(Object(u)).forEach(function(e) {
-            Object.defineProperty(c, e, Object.getOwnPropertyDescriptor(u, e))
-          }), c))
+          })(Object(c)).forEach(function(e) {
+            Object.defineProperty(u, e, Object.getOwnPropertyDescriptor(c, e))
+          }), u))
         }
       })
     },
@@ -189,7 +197,7 @@ function S(e) {
 function A(e) {
   let {
     id: n
-  } = e, t = (0, y.d)(), i = null == t ? void 0 : t.guildId, c = (0, l.e7)([w.Z], () => {
+  } = e, t = (0, y.d)(), i = null == t ? void 0 : t.guildId, u = (0, l.e7)([w.Z], () => {
     var e, t;
     return null != (t = null != i ? null == (e = w.Z.getRole(i, n)) ? void 0 : e.name : null) ? t : k.intl.string(k.t.sKdZ6e)
   }, [i, n]);
@@ -197,6 +205,18 @@ function A(e) {
     roleId: n,
     channelId: null == t ? void 0 : t.channelId,
     guildId: null == t ? void 0 : t.guildId,
-    children: "@".concat(c)
+    children: "@".concat(u)
+  })
+}
+
+function T(e) {
+  let {
+    roleName: n
+  } = e, t = (0, y.d)();
+  return (0, r.jsx)(h.Z, {
+    roleName: n,
+    channelId: null == t ? void 0 : t.channelId,
+    guildId: null == t ? void 0 : t.guildId,
+    children: n
   })
 }

@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => D
 });
 var r, i = n(392711),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(544891),
   l = n(570140),
   c = n(592125),
@@ -138,7 +138,7 @@ function N(e) {
     channelId: n,
     recipients: r
   } = e;
-  E[n] = a().union(null != (t = E[n]) ? t : [], null != r ? r : ["all"])
+  E[n] = o().union(null != (t = E[n]) ? t : [], null != r ? r : ["all"])
 }
 
 function C(e) {
@@ -147,16 +147,16 @@ function C(e) {
     messageId: n,
     region: r,
     ringing: i
-  } = e, a = g[t], o = null != a && (a.regionUpdated || a.region !== r);
+  } = e, o = g[t], a = null != o && (o.regionUpdated || o.region !== r);
   g[t] = m(p({}, g[t]), {
     messageId: n,
     region: r,
     ringing: i,
-    regionUpdated: o
+    regionUpdated: a
   })
 }
 
-function R(e) {
+function P(e) {
   let {
     channelId: t,
     unavailable: n
@@ -173,13 +173,13 @@ function R(e) {
   }, null != E[t] && delete E[t]
 }
 
-function P(e) {
+function R(e) {
   let {
     channelId: t
   } = e;
   null == t && (E = {})
 }
-class w extends(r = o.ZP.Store) {
+class w extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(d.Z, u.Z)
   }
@@ -218,7 +218,7 @@ let D = new w(l.Z, {
   CHANNEL_DELETE: T,
   CALL_CREATE: A,
   CALL_UPDATE: C,
-  CALL_DELETE: R,
+  CALL_DELETE: P,
   CALL_ENQUEUE_RING: N,
-  VOICE_CHANNEL_SELECT: P
+  VOICE_CHANNEL_SELECT: R
 })

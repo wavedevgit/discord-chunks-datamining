@@ -1,6 +1,6 @@
 /**
   Module ID: 46746
-  Original File Name: ffb90ead52009588
+  Original File Name: 62c91eb1b8fcff1e
 **/
 .card__4bb93 {
     align-items: center;
@@ -164,7 +164,7 @@
 }
 
 .visual-refresh .container_a55fdc {
-    background: radial-gradient(90.42% 100% at 50% 100%,var(--modal-background) 60%,var(--transparent) 100%),linear-gradient(270deg,var(--bg-modal-gradient-lavender-start) 0,var(--bg-modal-gradient-lavender-end) 100%);
+    background: radial-gradient(90.42% 100% at 50% 100%,var(--modal-background) 60%,var(--transparent) 100%),linear-gradient(270deg,var(--background-modal-gradient-purple-start) 0,var(--background-modal-gradient-purple-end) 100%);
     border-radius: inherit;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
@@ -2346,4 +2346,4 @@
     padding: var(--spacing-12) var(--spacing-24)
 }
 
-/*# sourceMappingURL=ffb90ead52009588.css.map*/
+/*# sourceMappingURL=62c91eb1b8fcff1e.css.map*/
