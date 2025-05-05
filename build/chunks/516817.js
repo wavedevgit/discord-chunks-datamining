@@ -96,7 +96,8 @@ function h(e) {
       playsInline: !0,
       loop: o,
       controls: !1,
-      className: l
+      className: l,
+      tabIndex: -1
     })
   })
 }

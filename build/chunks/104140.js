@@ -149,10 +149,10 @@ function v(e) {
   }, A = () => {
     S(!1)
   }, N = null != m, C = null != O, R = i.useId(), P = "".concat(R, "-upper_badge_masks"), w = "".concat(R, "-lower_badge_masks"), D = "".concat(R, "-blob_mask"), L = "".concat(R, "-stroke_mask"), x = "".concat(R, "-highlight_mask"), M = (null == f ? void 0 : f.width) != null ? f.width : g, k = (null == f ? void 0 : f.height) != null ? f.height : g, j = {
-    width: n + 8,
-    height: n + 8,
-    x: -4,
-    y: -4
+    width: d ? n : n + 8,
+    height: d ? n : n + 8,
+    x: d ? 0 : -4,
+    y: d ? 0 : -4
   }, U = d ? 20 : h, G = v ? y(n) : b(n);
   return (0, r.jsxs)("div", {
     className: o()(a, u.wrapper),
@@ -164,7 +164,8 @@ function v(e) {
       height: j.height,
       viewBox: "".concat(j.x, " ").concat(j.y, " ").concat(j.width, " ").concat(j.height),
       className: o()(u.svg, {
-        [u.noContain]: _
+        [u.noContain]: _,
+        [u.shiftSVG]: !d
       }),
       overflow: "visible",
       role: "none",

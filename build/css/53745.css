@@ -1,6 +1,6 @@
 /**
   Module ID: 53745
-  Original File Name: 5226b52275b6fb09
+  Original File Name: 081771ff7abeadc6
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -3685,6 +3685,7 @@
     box-sizing: border-box;
     cursor: pointer;
     height: var(--guildbar-folder-size);
+    overflow: hidden;
     position: relative;
     width: var(--guildbar-folder-size)
 }
@@ -6272,4 +6273,4 @@
     background-image: url(/assets/05207174d5432737.svg)
 }
 
-/*# sourceMappingURL=5226b52275b6fb09.css.map*/
+/*# sourceMappingURL=081771ff7abeadc6.css.map*/
