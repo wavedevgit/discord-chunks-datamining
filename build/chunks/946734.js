@@ -76,6 +76,9 @@ class E {
           var t;
           return null == (t = g.Z.getGuild(e)) ? void 0 : t.name
         }).filter(y.lm)]
+      }).filter(t => {
+        let [n] = t;
+        return n !== (null == e ? void 0 : e.globalName)
       }).value()
     })), O(this, "renderMoreAvatars", () => (0, r.jsx)(s.DY3, {
       text: v.intl.string(v.t.UTjREx),
