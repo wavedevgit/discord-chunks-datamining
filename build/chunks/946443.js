@@ -19,8 +19,8 @@ var r = n(255367),
   g = n(216789),
   _ = n(626135),
   b = n(585483),
-  x = n(358085),
-  y = n(143316),
+  y = n(358085),
+  x = n(143316),
   E = n(240126),
   v = n(791914),
   O = n(147522),
@@ -36,8 +36,8 @@ function N(e) {
     onJump: Z,
     showTutorial: R,
     setSeenTutorial: k,
-    closePopout: D,
-    badgeState: L
+    closePopout: L,
+    badgeState: D
   } = e, M = i.useRef(null), [U, F] = (0, j.ZP)(M), {
     loadState: B,
     channels: G
@@ -76,7 +76,7 @@ function N(e) {
     }
   }, [N, o.channels]), P = F, i.useEffect(() => {
     let e = e => {
-      ((0, x.isMac)() || (0, x.isMacWeb)() ? e.metaKey : e.ctrlKey) && !e.shiftKey && !e.altKey && "z" === e.key && P.undoMarkChannelRead()
+      ((0, y.isMac)() || (0, y.isMacWeb)() ? e.metaKey : e.ctrlKey) && !e.shiftKey && !e.altKey && "z" === e.key && P.undoMarkChannelRead()
     };
     return document.addEventListener("keydown", e), () => {
       document.removeEventListener("keydown", e)
@@ -85,9 +85,9 @@ function N(e) {
     _.default.track(C.rMx.OPEN_POPOUT, {
       type: "Inbox"
     })
-  }, []), i.useEffect(() => (m.Z.subscribe("CONNECTION_OPEN", D), () => {
-    m.Z.unsubscribe("CONNECTION_OPEN", D)
-  }), [D]);
+  }, []), i.useEffect(() => (m.Z.subscribe("CONNECTION_OPEN", L), () => {
+    m.Z.unsubscribe("CONNECTION_OPEN", L)
+  }), [L]);
   let z = (0, u.e7)([f.Z], () => f.Z.messageGroupSpacing),
     W = (0, g.Us)({
       location: "Unreads"
@@ -101,8 +101,8 @@ function N(e) {
       children: [(0, r.jsx)(v.Z, {
         tab: d.X.UNREADS,
         setTab: w,
-        badgeState: L,
-        closePopout: D
+        badgeState: D,
+        closePopout: L
       }), (0, r.jsx)(E.Z, {
         Icon: p.xx7,
         header: S.intl.string(S.t["6XMM+P"]),
@@ -118,9 +118,9 @@ function N(e) {
     children: [(0, r.jsx)(v.Z, {
       tab: d.X.UNREADS,
       setTab: w,
-      badgeState: L,
-      closePopout: D,
-      children: (0, r.jsx)(y.Z, {
+      badgeState: D,
+      closePopout: L,
+      children: (0, r.jsx)(x.Z, {
         type: "top-header",
         onClick: V
       })

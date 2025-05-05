@@ -6,7 +6,7 @@ n.d(t, {
   cy: () => b,
   hM: () => p,
   sL: () => m,
-  tI: () => x,
+  tI: () => y,
   zW: () => f
 });
 var r = n(367907),
@@ -173,7 +173,7 @@ function b(e) {
   })
 }
 
-function x(e) {
+function y(e) {
   let {
     searchType: t,
     searchId: n,

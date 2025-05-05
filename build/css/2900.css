@@ -1,6 +1,6 @@
 /**
   Module ID: 2900
-  Original File Name: 7f7ddce8cea9e726
+  Original File Name: 868c0a935b50434f
 **/
 .descriptionText__535f5 {
     color: var(--header-secondary);
@@ -10024,6 +10024,20 @@ html .progress__61462 {
     margin-top: 100px
 }
 
+.button_c2f8c3 {
+    border-radius: 20px;
+    bottom: 16px;
+    position: absolute;
+    right: 16px;
+    z-index: 10
+}
+
+.button_c2f8c3 .buttonInner_c2f8c3 {
+    align-items: center;
+    display: flex;
+    gap: 8px
+}
+
 .channelHeader__35a7e {
     align-items: center;
     background-color: var(--background-secondary);
@@ -10106,131 +10120,6 @@ html .progress__61462 {
     max-height: 16px;
     min-width: 0;
     width: 100%
-}
-
-.container__2410d {
-    background-color: var(--background-secondary);
-    border-radius: 8px;
-    box-shadow: var(--shadow-border),var(--shadow-high);
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    position: relative;
-    z-index: 0
-}
-
-.headerText__2410d {
-    padding: 16px
-}
-
-.headerText__2410d,.messageHeader__2410d {
-    align-items: center;
-    display: flex;
-    justify-content: space-between
-}
-
-.messageHeader__2410d {
-    padding-right: 0
-}
-
-.messageInfo__2410d {
-    gap: 16px
-}
-
-.messageInfo__2410d,.reminderActions__2410d {
-    align-items: center;
-    display: flex
-}
-
-.reminderActions__2410d {
-    flex-direction: row;
-    flex-shrink: 0;
-    gap: 8px;
-    justify-content: center
-}
-
-.clock__2410d {
-    color: var(--interactive-muted);
-    cursor: pointer
-}
-
-.clock__2410d:hover {
-    color: var(--interactive-active)
-}
-
-.delete__2410d {
-    color: var(--status-danger);
-    cursor: pointer
-}
-
-.delete__2410d:hover {
-    transform: scale(1.1)
-}
-
-.messagePreview__2410d {
-    margin-top: 8px;
-    word-wrap: break-all;
-    overflow: hidden;
-    white-space: break-spaces
-}
-
-.from__2410d {
-    align-items: center;
-    display: flex;
-    gap: 8px
-}
-
-.guildIcon__2410d {
-    flex-shrink: 0
-}
-
-.actions__2410d {
-    display: flex;
-    gap: 8px;
-    margin-left: 8px;
-    opacity: 0;
-    position: absolute;
-    right: 16px;
-    top: 16px
-}
-
-.loadButton__2410d {
-    padding: 0 8px
-}
-
-.notes__2410d {
-    background-color: var(--background-accent);
-    border-radius: 4px
-}
-
-.unloadedMessage__2410d:hover .actions__2410d {
-    opacity: 1
-}
-
-.userAvatar__2410d {
-    flex-shrink: 0
-}
-
-.messageContent__2410d {
-    flex: 1;
-    margin-left: 16px;
-    overflow: hidden;
-    word-wrap: break-word
-}
-
-.button_c2f8c3 {
-    border-radius: 20px;
-    bottom: 16px;
-    position: absolute;
-    right: 16px;
-    z-index: 10
-}
-
-.button_c2f8c3 .buttonInner_c2f8c3 {
-    align-items: center;
-    display: flex;
-    gap: 8px
 }
 
 .container_d404a3 {
@@ -11686,4 +11575,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=7f7ddce8cea9e726.css.map*/
+/*# sourceMappingURL=868c0a935b50434f.css.map*/

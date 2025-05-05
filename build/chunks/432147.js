@@ -1,6 +1,6 @@
 /** Chunk was on 2900 **/
 n.d(t, {
-  Z: () => y
+  Z: () => x
 });
 var r = n(255367);
 n(73800);
@@ -19,9 +19,9 @@ var i = n(120356),
   g = n(488131),
   _ = n(981631),
   b = n(388032),
-  x = n(955344);
+  y = n(955344);
 
-function y(e) {
+function x(e) {
   let {
     message: t,
     compact: n
@@ -47,7 +47,7 @@ function E(e) {
       children: [(0, r.jsx)("span", {
         children: b.intl.string(b.t.ZTo4HR)
       }), (0, r.jsx)("span", {
-        className: x.timestamp,
+        className: y.timestamp,
         children: (0, f.Ye)(l)
       })]
     }) : (0, r.jsxs)(r.Fragment, {
@@ -55,16 +55,16 @@ function E(e) {
         message: n,
         channel: e
       }), (0, r.jsx)("span", {
-        className: x.timestamp,
+        className: y.timestamp,
         children: (0, f.Ye)(l)
       })]
     })
-  }(t), y = null != u && u > 0;
+  }(t), x = null != u && u > 0;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: l()(x.spine, {
-        [x.cozy]: !i,
-        [x.systemMessageSpine]: c
+      className: l()(y.spine, {
+        [y.cozy]: !i,
+        [y.systemMessageSpine]: c
       })
     }), (0, r.jsx)(o.P3F, {
       onClick: function(e) {
@@ -104,20 +104,20 @@ function E(e) {
         })
       },
       "aria-roledescription": b.intl.string(b.t["8ipxiY"]),
-      className: l()(x.container, {
-        [x.systemMessageContainer]: c
+      className: l()(y.container, {
+        [y.systemMessageContainer]: c
       }),
       children: (0, r.jsxs)(o.nuw, {
         children: [(0, r.jsxs)("div", {
-          className: x.topLine,
+          className: y.topLine,
           children: [(0, r.jsx)(o.nn4, {
             children: b.intl.string(b.t["7Xm5QE"])
           }), (0, r.jsx)("span", {
-            className: x.name,
+            className: y.name,
             children: t.name
           }), (0, r.jsx)("span", {
-            className: x.cta,
-            "aria-hidden": !y,
+            className: y.cta,
+            "aria-hidden": !x,
             children: (0, p.WE)(u, t.id)
           })]
         }), (0, r.jsx)(o.Text, {
@@ -125,7 +125,7 @@ function E(e) {
           "aria-hidden": !0,
           lineClamp: 1,
           color: "header-secondary",
-          className: x.bottomLine,
+          className: y.bottomLine,
           children: d
         })]
       })

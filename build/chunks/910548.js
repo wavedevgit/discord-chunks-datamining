@@ -17,8 +17,8 @@ var r, i = n(255367),
   g = n(64078),
   _ = n(29270),
   b = n(709586),
-  x = n(267642),
-  y = n(739566),
+  y = n(267642),
+  x = n(739566),
   E = n(834129),
   v = n(981631),
   O = n(388032),
@@ -142,8 +142,8 @@ let T = ["TOP_LEFT", "TOP_RIGHT"],
   Z = "falling-leaf",
   R = ["#61D5B2"],
   k = n(303893),
-  D = n(313226),
-  L = [k, D];
+  L = n(313226),
+  D = [k, L];
 
 function M() {
   return n.e("77843").then(n.t.bind(n, 931152, 19)).then(e => {
@@ -174,7 +174,7 @@ function U(e) {
   }()), {
     createMultipleConfettiAt: g,
     confettiCanvas: _
-  } = l.useContext(f.h), [b, x] = l.useState(null), y = (0, s.uR)(_, b), E = function(e, t) {
+  } = l.useContext(f.h), [b, y] = l.useState(null), x = (0, s.uR)(_, b), E = function(e, t) {
     if (null == e) return "enter";
     switch (e) {
       case "enter":
@@ -230,7 +230,7 @@ function U(e) {
   }, [g, h, d, a]), l.useEffect(() => {
     if (v && "leaf_fall" === d) {
       let e = w[h].leafRotationDirection;
-      y.createConfetti({
+      x.createConfetti({
         id: "".concat(Z, "-").concat((0, c.Z)()),
         position: {
           type: "static",
@@ -275,13 +275,13 @@ function U(e) {
           }
         }
       }, {
-        sprite: "TOP_LEFT" === h ? k : D
+        sprite: "TOP_LEFT" === h ? k : L
       })
     }
-  }, [v, y, h, d]), (0, i.jsxs)(i.Fragment, {
+  }, [v, x, h, d]), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(s.Ji, {
-      ref: x,
-      sprites: L,
+      ref: y,
+      sprites: D,
       colors: R,
       spriteWidth: 45,
       spriteHeight: 45
@@ -338,7 +338,7 @@ function F(e) {
     {
       reducedMotion: T
     } = l.useContext(p.Sfi),
-    P = (0, y.ZH)(n),
+    P = (0, x.ZH)(n),
     A = P.nick,
     w = o(P);
   t = null == c || null == a ? u > 1 ? O.intl.format(O.t.yfC9dn, {
@@ -353,12 +353,12 @@ function F(e) {
     usernameHook: w,
     numSubscriptions: u,
     guildName: a.name,
-    newTierName: (0, x.nW)(c)
+    newTierName: (0, y.nW)(c)
   }) : O.intl.format(O.t.cUfTTE, {
     username: A,
     usernameHook: w,
     guildName: a.name,
-    newTierName: (0, x.nW)(c)
+    newTierName: (0, y.nW)(c)
   });
   let R = l.useCallback(() => {
       if (!T.enabled)
@@ -372,15 +372,15 @@ function F(e) {
     k = l.useCallback(() => {
       I(!1)
     }, []),
-    D = l.useCallback(() => {
+    L = l.useCallback(() => {
       (0, g.AI)({
         settingsVisible: !0
       }), m.Z.open(v.oAB.POGGERMODE), I(!1)
     }, []),
-    L = l.useCallback((e, t) => {
-      (null == t ? void 0 : t.id.startsWith(Z)) && D()
-    }, [D]);
-  l.useEffect(() => C(L));
+    D = l.useCallback((e, t) => {
+      (null == t ? void 0 : t.id.startsWith(Z)) && L()
+    }, [L]);
+  l.useEffect(() => C(D));
   let M = (0, i.jsx)(p.P3F, {
     className: j.iconWrapper,
     innerRef: N,
@@ -403,7 +403,7 @@ function F(e) {
         className: j.cannonWrapper,
         children: (0, i.jsx)(U, {
           onAnimationComplete: k,
-          onClick: D
+          onClick: L
         })
       })
     }) : null]

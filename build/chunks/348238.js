@@ -3,7 +3,7 @@ n.d(t, {
   $3: () => z,
   Go: () => G,
   JC: () => Z,
-  NU: () => L,
+  NU: () => D,
   Nk: () => w,
   R9: () => k,
   RN: () => F,
@@ -12,7 +12,7 @@ n.d(t, {
   Xn: () => W,
   bb: () => V,
   qo: () => M,
-  rY: () => D,
+  rY: () => L,
   sR: () => B,
   tn: () => H,
   wq: () => U
@@ -33,8 +33,8 @@ var r = n(255367),
   g = n(323873),
   _ = n(375954),
   b = n(594174),
-  x = n(585483),
-  y = n(5967),
+  y = n(585483),
+  x = n(5967),
   E = n(630388),
   v = n(358085),
   O = n(51144),
@@ -60,7 +60,7 @@ function T(e, t, n) {
         decoration: "never"
       })),
       a = "<@".concat(e, ">");
-    x.S.dispatchToLastSubscribed(S.CkL.INSERT_TEXT, {
+    y.S.dispatchToLastSubscribed(S.CkL.INSERT_TEXT, {
       plainText: l,
       rawText: a
     }), s.Z.startTyping(t)
@@ -97,11 +97,11 @@ function k(e, t) {
   return R(N("avatarProfile", e, t))
 }
 
-function D(e, t) {
+function L(e, t) {
   return R(N("referencedAvatarProfile", e, t))
 }
 
-function L(e, t) {
+function D(e, t) {
   return R(N("interactionAvatarProfile", e, t))
 }
 
@@ -242,13 +242,13 @@ function H(e) {
         h: l
       }, !1, d.LL.UserTriggered)
     }
-  }, [t, n])), [b, y] = i.useState(a);
+  }, [t, n])), [b, x] = i.useState(a);
   g.current = b || g.current;
   let E = i.useCallback(e => {
-      s && (0, f.T6)(), b || (x.S.dispatchKeyed(S.LPv.ANIMATE_CHAT_AVATAR, h, !0), _(e), y(!0))
+      s && (0, f.T6)(), b || (y.S.dispatchKeyed(S.LPv.ANIMATE_CHAT_AVATAR, h, !0), _(e), x(!0))
     }, [b, h, s, _]),
     v = i.useCallback(() => {
-      x.S.dispatchKeyed(S.LPv.ANIMATE_CHAT_AVATAR, h, !1), y(!1)
+      y.S.dispatchKeyed(S.LPv.ANIMATE_CHAT_AVATAR, h, !1), x(!1)
     }, [h]);
   return {
     hasHovered: g.current,
@@ -263,12 +263,12 @@ function V(e, t) {
   return {
     handleFocus: i.useCallback(t => {
       var n, i;
-      let l = null != (i = null == (n = (0, y.uB)(t)) ? void 0 : n.activeElement) ? i : null;
+      let l = null != (i = null == (n = (0, x.uB)(t)) ? void 0 : n.activeElement) ? i : null;
       (t.target === t.currentTarget || t.currentTarget.contains(l)) && (a(!0), r(!0)), null != e && e(t)
     }, [e]),
     handleBlur: i.useCallback(e => {
       var n, i;
-      let l = null != (i = null == (n = (0, y.uB)(e)) ? void 0 : n.activeElement) ? i : null;
+      let l = null != (i = null == (n = (0, x.uB)(e)) ? void 0 : n.activeElement) ? i : null;
       e.target !== e.currentTarget && e.currentTarget.contains(l) || r(!1), null != t && t(e)
     }, [t]),
     isFocused: n,

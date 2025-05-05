@@ -19,8 +19,8 @@ var i = n(442837),
   g = n(566620),
   _ = n(317381),
   b = n(574952),
-  x = n(374065),
-  y = n(388032);
+  y = n(374065),
+  x = n(388032);
 
 function E(e) {
   var t, n;
@@ -38,13 +38,13 @@ function E(e) {
     botUserId: null == E || null == (n = E.bot) ? void 0 : n.id
   }), N = null != E && (0, s.ye)(E), T = null != S && N && I, {
     analyticsLocations: P
-  } = (0, a.ZP)(l.Z.ACTIVITY_CUSTOM_LINK), A = (0, i.e7)([f.Z], () => f.Z.getChannelId()), w = (0, x.KF)(A), Z = (0, i.e7)([_.ZP], () => {
+  } = (0, a.ZP)(l.Z.ACTIVITY_CUSTOM_LINK), A = (0, i.e7)([f.Z], () => f.Z.getChannelId()), w = (0, y.KF)(A), Z = (0, i.e7)([_.ZP], () => {
     if (null == A) return;
     let e = _.ZP.getEmbeddedActivitiesForChannel(A).filter(e => e.applicationId === E.id);
     return e.length > 0 ? e[0].compositeInstanceId : void 0
-  }), R = (0, i.e7)([_.ZP], () => _.ZP.getCurrentEmbeddedActivity()), k = (0, b.Z)(), D = w === x.jy.CAN_LAUNCH, L = null != v ? v : O.customId, M = [];
-  D && M.push({
-    label: null == Z ? y.intl.string(y.t.cnBQPD) : y.intl.string(y.t.VJlc0d),
+  }), R = (0, i.e7)([_.ZP], () => _.ZP.getCurrentEmbeddedActivity()), k = (0, b.Z)(), L = w === y.jy.CAN_LAUNCH, D = null != v ? v : O.customId, M = [];
+  L && M.push({
+    label: null == Z ? x.intl.string(x.t.cnBQPD) : x.intl.string(x.t.VJlc0d),
     trackingArea: p.j_.PLAY,
     onClick() {
       (0, g.G6)({
@@ -53,21 +53,21 @@ function E(e) {
         isStart: null == Z,
         instanceId: Z,
         embeddedActivitiesManager: k,
-        customId: L,
+        customId: D,
         referrerId: C,
         analyticsLocations: P
       })
     },
-    disabledReason: null != Z && (null == R ? void 0 : R.compositeInstanceId) === Z ? y.intl.string(y.t.wJNK8P) : void 0
-  }), T && !D && M.push({
-    label: y.intl.string(y.t.JeK1Wl),
+    disabledReason: null != Z && (null == R ? void 0 : R.compositeInstanceId) === Z ? x.intl.string(x.t.wJNK8P) : void 0
+  }), T && !L && M.push({
+    label: x.intl.string(x.t.JeK1Wl),
     trackingArea: p.j_.PLAY,
     onClick() {
       (0, o.W)({
         appId: E.id,
         botId: S,
         analyticsLocations: P,
-        customId: L,
+        customId: D,
         referrerId: C
       })
     }
@@ -91,7 +91,7 @@ function E(e) {
       id: E.id,
       linkType: u.U.CUSTOM_ACTIVITY_LINK,
       referrerId: C,
-      activityCustomId: L
+      activityCustomId: D
     }
   })
 }

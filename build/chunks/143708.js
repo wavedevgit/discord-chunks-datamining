@@ -22,9 +22,9 @@ function f(e) {
     } = e,
     _ = (0, i.e7)([o.default], () => o.default.getId()),
     b = (0, i.e7)([s.Z], () => s.Z.getChannelId()),
-    x = u.ZP.useName(h);
-  return _ === h.id ? (t = p.intl.string(p.t["F/OLvL"]), f = p.intl.string(p.t.C89OLC)) : (f = p.intl.string(p.t["YVub5+"]), g ? t = p.intl.string(p.t["57nBt7"]) : null != x ? (t = p.intl.formatToPlainString(p.t["9Akp1t"], {
-    username: x
+    y = u.ZP.useName(h);
+  return _ === h.id ? (t = p.intl.string(p.t["F/OLvL"]), f = p.intl.string(p.t.C89OLC)) : (f = p.intl.string(p.t["YVub5+"]), g ? t = p.intl.string(p.t["57nBt7"]) : null != y ? (t = p.intl.formatToPlainString(p.t["9Akp1t"], {
+    username: y
   }), n = (0, r.jsx)(a.Z.Button, {
     onClick: function() {
       let {

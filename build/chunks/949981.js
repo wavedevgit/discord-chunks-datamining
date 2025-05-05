@@ -1,6 +1,6 @@
 /** Chunk was on 2900 **/
 n.d(t, {
-  Z: () => y
+  Z: () => x
 }), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -18,17 +18,17 @@ var r = n(255367),
   g = n(358595),
   _ = n(981631),
   b = n(388032),
-  x = n(273254);
+  y = n(273254);
 
-function y(e) {
+function x(e) {
   let t, {
       invite: n,
       message: l,
-      currentUserId: y,
+      currentUserId: x,
       onTransitionToInviteChannel: E,
       onAcceptInstantInvite: v
     } = e,
-    O = y === l.author.id,
+    O = x === l.author.id,
     j = n.state === _.r2o.ACCEPTING,
     C = (0, o.e7)([m.Z], () => null != n.channel ? m.Z.getChannel(n.channel.id) : null, [n]);
   a()(null == C || C.isPrivate(), "must be a private channel");
@@ -65,7 +65,7 @@ function y(e) {
       text: w
     }), (0, r.jsxs)(d.Z.Body, {
       children: [(0, r.jsxs)("div", {
-        className: x.headerLine,
+        className: y.headerLine,
         children: [(0, r.jsx)(d.Z.Icon, {
           channel: C,
           onClick: I ? N : void 0

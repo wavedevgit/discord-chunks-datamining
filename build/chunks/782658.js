@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(451603),
   _ = n(885714),
   b = n(314897),
-  x = n(430824),
-  y = n(701190),
+  y = n(430824),
+  x = n(701190),
   E = n(411198),
   v = n(610699),
   O = n(313876),
@@ -41,14 +41,14 @@ function R(e) {
     getAcceptInviteContext: R
   } = e, {
     invite: k,
-    inviteError: D
-  } = (0, l.cj)([y.Z], () => ({
-    invite: y.Z.getInvite(t),
-    inviteError: y.Z.getInviteError(t)
-  }), [t]), L = null == k;
+    inviteError: L
+  } = (0, l.cj)([x.Z], () => ({
+    invite: x.Z.getInvite(t),
+    inviteError: x.Z.getInviteError(t)
+  }), [t]), D = null == k;
   i.useEffect(() => {
-    L && a.ZP.resolveInvite(t)
-  }, [t, L]);
+    D && a.ZP.resolveInvite(t)
+  }, [t, D]);
   let M = null != k ? k : {
       state: w.r2o.RESOLVING,
       code: ""
@@ -57,7 +57,7 @@ function R(e) {
       analyticsLocations: U
     } = (0, u.ZP)(),
     F = (0, d.O)(),
-    B = (0, l.e7)([x.Z], () => (null == k ? void 0 : k.guild) != null ? x.Z.getGuild(k.guild.id) : null, [k]),
+    B = (0, l.e7)([y.Z], () => (null == k ? void 0 : k.guild) != null ? y.Z.getGuild(k.guild.id) : null, [k]),
     G = (0, l.e7)([b.default], () => b.default.getId()),
     H = (0, l.e7)([m.ZP], () => {
       var e;
@@ -106,7 +106,7 @@ function R(e) {
     case w.r2o.ERROR:
       W = (0, r.jsx)(O.Z, {
         author: n.author,
-        inviteError: D
+        inviteError: L
       });
       break;
     default:

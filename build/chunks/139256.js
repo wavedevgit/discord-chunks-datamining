@@ -1,7 +1,7 @@
 /** Chunk was on 2900 **/
 n.d(t, {
   $e: () => w,
-  $w: () => L,
+  $w: () => D,
   Og: () => U,
   ZY: () => M,
   sc: () => k,
@@ -23,8 +23,8 @@ var r = n(255367),
   g = n(506071),
   _ = n(203143),
   b = n(79390),
-  x = n(839963),
-  y = n(294608),
+  y = n(839963),
+  x = n(294608),
   E = n(65145),
   v = n(981631),
   O = n(388032),
@@ -178,18 +178,18 @@ function w(e) {
     canTapAnswers: l,
     answersInteraction: n
   }).with({
-    answersInteraction: x.Y7.RADIO_BUTTONS
+    answersInteraction: y.Y7.RADIO_BUTTONS
   }, () => ({
     ContainerComponent: T,
     answerElementType: 1
   })).with({
-    answersInteraction: x.Y7.CHECKBOXES
+    answersInteraction: y.Y7.CHECKBOXES
   }, () => ({
     ContainerComponent: N,
     answerElementType: 2
   })).with({
     canTapAnswers: !0,
-    answersInteraction: x.Y7.LIST
+    answersInteraction: y.Y7.LIST
   }, () => ({
     ContainerComponent: I,
     answerElementType: 3
@@ -222,7 +222,7 @@ function Z(e) {
   } = e, {
     channelId: u,
     messageId: d
-  } = (0, y.pE)(), p = (0, y.$B)(n.style), m = !0 === n.isSelected, f = i.useCallback(() => {
+  } = (0, x.pE)(), p = (0, x.$B)(n.style), m = !0 === n.isSelected, f = i.useCallback(() => {
     _.Z.handlePollAnswerTapped({
       channelId: u,
       messageId: d,
@@ -289,14 +289,14 @@ function k(e) {
   })
 }
 
-function D(e, t) {
+function L(e, t) {
   return null != e ? (0, r.jsx)("div", {
     className: e,
     children: t
   }) : t
 }
 
-function L(e) {
+function D(e) {
   let {
     media: t,
     containerClassName: n,
@@ -305,18 +305,18 @@ function L(e) {
     fallback: a
   } = e, {
     message: o
-  } = (0, y.GF)();
+  } = (0, x.GF)();
   if (null != t.attachmentIds && t.attachmentIds.length > 0) {
     let e = o.attachments.find(e => {
       var n;
       return e.id === (null == (n = t.attachmentIds) ? void 0 : n[0])
     });
-    if (null != e) return D(n, (0, r.jsx)(R, {
+    if (null != e) return L(n, (0, r.jsx)(R, {
       className: i,
       attachment: e
     }))
   }
-  return null != t.emoji ? D(n, (0, r.jsx)(k, {
+  return null != t.emoji ? L(n, (0, r.jsx)(k, {
     className: l,
     emoji: t.emoji
   })) : void 0 !== a ? a : null

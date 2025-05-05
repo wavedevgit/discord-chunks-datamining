@@ -1,14 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => u
+  Z: () => c
 }), n(388685);
 var r = n(147913),
   i = n(2818),
-  o = n(192720),
-  a = n(742989);
+  o = n(192720);
 
-function s(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -17,24 +16,20 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function l() {
-  (i.Z.getCurrentConfig({
+function s() {
+  i.Z.getCurrentConfig({
     location: "saved_messages_manager"
   }, {
     autoTrackExposure: !1
-  }).enabled || a.Z.getCurrentConfig({
-    location: "saved_messages_manager"
-  }, {
-    autoTrackExposure: !1
-  }).showReminders) && (0, o.sE)()
+  }).enabled && (0, o.sE)()
 }
-class c extends r.Z {
+class l extends r.Z {
   constructor(...e) {
-    super(...e), s(this, "actions", {
+    super(...e), a(this, "actions", {
       POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen()
-    }), s(this, "handlePostConnectionOpen", () => {
-      l()
+    }), a(this, "handlePostConnectionOpen", () => {
+      s()
     })
   }
 }
-let u = new c
+let c = new l

@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(841762),
   _ = n(336197),
   b = n(406432),
-  x = n(348238),
-  y = n(38267),
+  y = n(348238),
+  x = n(38267),
   E = n(884902),
   v = n(670188),
   O = n(695346),
@@ -36,7 +36,7 @@ var r = n(255367),
   R = n(70249),
   k = n(527455);
 
-function D(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -55,7 +55,7 @@ function D(e) {
   return e
 }
 
-function L(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -76,7 +76,7 @@ function M(e) {
     channel: F
   } = e, B = (0, P.J)(M, U), {
     setPopout: G
-  } = (0, y.Z)(U.id, w.d$), H = (0, x.qo)(U, F, G, !0), V = O.QK.useSetting(), z = (0, N.n)(), [W, K] = i.useState(!1), [Y, X] = i.useState((null == B ? void 0 : B.coverImage) == null), q = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), Q = (0, c.e7)([j.ZP, C.default], () => {
+  } = (0, x.Z)(U.id, w.d$), H = (0, y.qo)(U, F, G, !0), V = O.QK.useSetting(), z = (0, N.n)(), [W, K] = i.useState(!1), [Y, X] = i.useState((null == B ? void 0 : B.coverImage) == null), q = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), Q = (0, c.e7)([j.ZP, C.default], () => {
     var e;
     return j.ZP.isMember(null == B ? void 0 : B.guildId, null == (e = C.default.getCurrentUser()) ? void 0 : e.id)
   }, [B]), J = (0, c.e7)([j.ZP], () => (null == B ? void 0 : B.authorId) != null ? j.ZP.getMember(B.guildId, B.authorId) : null), $ = (0, f.Z)((null == J ? void 0 : J.avatarDecoration) != null ? null == J ? void 0 : J.avatarDecoration : null == B || null == (t = B.user) ? void 0 : t.avatarDecoration), [ee, et, en] = i.useMemo(() => {
@@ -180,7 +180,7 @@ function M(e) {
           children: e => (0, r.jsx)("div", {
             onMouseEnter: ep,
             onMouseLeave: ep,
-            children: (0, r.jsx)(u.qEK, L(D({}, e), {
+            children: (0, r.jsx)(u.qEK, D(L({}, e), {
               size: u.EFr.SIZE_40,
               src: ed,
               "aria-label": Z.intl.string(Z.t.KXz3XF),
@@ -223,7 +223,7 @@ function M(e) {
                 roleId: en,
                 avatarUrl: B.avatarUrl,
                 newAnalyticsLocations: [p.Z.USERNAME],
-                children: e => (0, r.jsx)(u.rz2, L(D({}, e), {
+                children: e => (0, r.jsx)(u.rz2, D(L({}, e), {
                   name: B.authorName,
                   color: ee,
                   roleColors: er,

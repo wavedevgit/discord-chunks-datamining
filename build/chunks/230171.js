@@ -19,8 +19,8 @@ var r = n(255367),
   g = n(561308),
   _ = n(567409),
   b = n(706454),
-  x = n(314897),
-  y = n(699516),
+  y = n(314897),
+  x = n(699516),
   E = n(914010),
   v = n(594174),
   O = n(768581),
@@ -46,7 +46,7 @@ function R(e) {
   } = e, {
     name: _,
     bot: b
-  } = t = (0, T.O)(t), y = null == b ? void 0 : b.id, E = (0, f.ye)(t), v = O.ZP.getApplicationIconURL({
+  } = t = (0, T.O)(t), x = null == b ? void 0 : b.id, E = (0, f.ye)(t), v = O.ZP.getApplicationIconURL({
     id: t.id,
     icon: t.icon,
     bot: b
@@ -54,8 +54,8 @@ function R(e) {
     staticBannerSrc: j,
     videoBannerSrc: I,
     bannerAspectRatio: Z
-  } = (0, P.E)(t), R = (0, o.e7)([x.default], () => null != s ? s : x.default.getId(), [s]), {
-    analyticsLocations: L
+  } = (0, P.E)(t), R = (0, o.e7)([y.default], () => null != s ? s : y.default.getId(), [s]), {
+    analyticsLocations: D
   } = (0, p.ZP)(d.Z.APP_MESSAGE_EMBED), {
     currentChannelId: M,
     instanceId: U,
@@ -67,7 +67,7 @@ function R(e) {
     },
     applicationId: t.id,
     botUserId: null == b ? void 0 : b.id
-  }), V = null != y && E && H, z = B && E && H, W = (0, A.z)(t), K = i.useMemo(() => {
+  }), V = null != x && E && H, z = B && E && H, W = (0, A.z)(t), K = i.useMemo(() => {
     let e = [];
     return z && e.push({
       label: null == U ? w.intl.string(w.t.cnBQPD) : w.intl.string(w.t.VJlc0d),
@@ -81,7 +81,7 @@ function R(e) {
           embeddedActivitiesManager: G,
           customId: a,
           referrerId: R,
-          analyticsLocations: L
+          analyticsLocations: D
         })
       },
       disabledReason: F ? w.intl.string(w.t.wJNK8P) : void 0
@@ -91,14 +91,14 @@ function R(e) {
       onClick() {
         (0, m.W)({
           appId: t.id,
-          botId: y,
-          analyticsLocations: L,
+          botId: x,
+          analyticsLocations: D,
           customId: a,
           referrerId: R
         })
       }
     }), null != W && e.push(W), e
-  }, [z, V, W, U, F, M, t.id, G, a, R, L, y]), Y = E ? (0, r.jsx)(D, {
+  }, [z, V, W, U, F, M, t.id, G, a, R, D, x]), Y = E ? (0, r.jsx)(L, {
     app: t
   }) : (0, r.jsx)(k, {
     app: t
@@ -161,7 +161,7 @@ function k(e) {
   })
 }
 
-function D(e) {
+function L(e) {
   let {
     app: t
   } = e, {
@@ -170,12 +170,12 @@ function D(e) {
   } = t, c = (0, o.e7)([E.Z], () => {
     var e;
     return null != (e = E.Z.getGuildId()) ? e : void 0
-  }, []), u = (0, _.Ns)(t.id), d = (0, o.Wu)([v.default, y.Z], () => {
+  }, []), u = (0, _.Ns)(t.id), d = (0, o.Wu)([v.default, x.Z], () => {
     let e = [];
     for (let [t, n] of u.entries()) {
       if (t >= 5) break;
       let r = v.default.getUser(n.author_id),
-        i = y.Z.isFriend(n.author_id);
+        i = x.Z.isFriend(n.author_id);
       null != r && i && e.push(r)
     }
     return e

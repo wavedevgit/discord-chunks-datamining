@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(430824),
   _ = n(594174),
   b = n(739566),
-  x = n(761652),
-  y = n(388032),
+  y = n(761652),
+  x = n(388032),
   E = n(912861);
 
 function v(e) {
@@ -82,7 +82,7 @@ let I = i.memo(function(e) {
       onCopy: R,
       copyRef: k
     } = (0, d.Z)(P, null == w || null == (t = w.application_command) ? void 0 : t.id),
-    D = (0, o.e7)([g.Z], () => g.Z.getGuild(P.guild_id), [P.guild_id]);
+    L = (0, o.e7)([g.Z], () => g.Z.getGuild(P.guild_id), [P.guild_id]);
   if (i.useEffect(() => {
       (null == w || w.type === c.yU.CHAT && void 0 === w.application_command) && p.OG(P.id, A)
     }, [P.id, A, w]), null == w) T = (0, r.jsx)(s.$jN, {
@@ -137,7 +137,7 @@ let I = i.memo(function(e) {
                 messageId: P,
                 sourceAnalyticsLocations: Z
               }),
-              children: [x.ME, e.nick]
+              children: [y.ME, e.nick]
             }))
           }
           break
@@ -146,7 +146,7 @@ let I = i.memo(function(e) {
           let e = I.value.toString(),
             t = h.Z.getChannel(e);
           null != t && (E = (0, r.jsxs)(m.Z, O(v({}, C), {
-            children: [x.zy, t.name]
+            children: [y.zy, t.name]
           })));
           break
         }
@@ -154,7 +154,7 @@ let I = i.memo(function(e) {
           let e = I.value.toString(),
             t = null != T ? g.Z.getRole(T.id, e) : void 0;
           null != t && (E = (0, r.jsxs)(m.Z, O(v({}, C), {
-            children: [x.ME, t.name]
+            children: [y.ME, t.name]
           })));
           break
         }
@@ -162,7 +162,7 @@ let I = i.memo(function(e) {
           let e = I.value.toString(),
             t = null != T ? g.Z.getRole(T.id, e) : void 0;
           if (null != t) E = (0, r.jsxs)(m.Z, {
-            children: [x.ME, t.name]
+            children: [y.ME, t.name]
           });
           else {
             let t = _.default.getUser(e);
@@ -174,14 +174,14 @@ let I = i.memo(function(e) {
                   guildId: N.guild_id,
                   sourceAnalyticsLocations: Z
                 }),
-                children: [x.ME, e.nick]
+                children: [y.ME, e.nick]
               }))
             }
           }
           break
         }
         case c.jw.ATTACHMENT:
-          E = S(y.intl.string(y.t.nONJVV));
+          E = S(x.intl.string(x.t.nONJVV));
           break;
         default: {
           let e = null == w || null == (u = w.choices) ? void 0 : u.find(e => e.value === I.value);
@@ -196,7 +196,7 @@ let I = i.memo(function(e) {
     }({
       option: n,
       channel: P,
-      guild: D,
+      guild: L,
       messageId: A,
       parentOptionKey: null,
       commandOptionSpec: t[n.name],

@@ -22,13 +22,13 @@ function _(e) {
     setTab: t,
     badgeState: l,
     closePopout: _
-  } = e, x = (0, o.Wu)([u.Z], () => u.Z.getInvites()), y = (0, o.e7)([u.Z], () => u.Z.getInviteStatuses()), [E, v] = i.useMemo(() => a().partition(x, e => {
+  } = e, y = (0, o.Wu)([u.Z], () => u.Z.getInvites()), x = (0, o.e7)([u.Z], () => u.Z.getInviteStatuses()), [E, v] = i.useMemo(() => a().partition(y, e => {
     var t;
-    return (null == (t = y[e.invite_id]) ? void 0 : t.joinable) !== !1 && (Date.now() - new Date(e.created_at).getTime()) / 1e3 < e.ttl
-  }), [x, y]);
+    return (null == (t = x[e.invite_id]) ? void 0 : t.joinable) !== !1 && (Date.now() - new Date(e.created_at).getTime()) / 1e3 < e.ttl
+  }), [y, x]);
   return (i.useEffect(() => {
     (0, d.sJ)()
-  }), 0 === x.length) ? (0, r.jsxs)("div", {
+  }), 0 === y.length) ? (0, r.jsxs)("div", {
     className: g.container,
     children: [(0, r.jsx)(m.Z, {
       tab: s.X.GAME_INVITES,

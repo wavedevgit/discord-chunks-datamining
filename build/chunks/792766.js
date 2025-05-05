@@ -99,10 +99,10 @@ let g = e => {
       isCard: m = !1,
       isEmbed: _ = !1,
       onClick: b
-    } = e, x = i.useMemo(() => null == l ? null : l instanceof p.ZP ? l : new p.ZP(l), [l]);
-    if (null == n || null == x) return null;
+    } = e, y = i.useMemo(() => null == l ? null : l instanceof p.ZP ? l : new p.ZP(l), [l]);
+    if (null == n || null == y) return null;
     let {
-      topic: y,
+      topic: x,
       speaker_count: E,
       participant_count: v
     } = n, O = null != (t = n.members) ? t : [], j = _ ? O.slice(0, 3) : O, C = E - j.length;
@@ -145,7 +145,7 @@ let g = e => {
           width: 20,
           height: 20,
           children: (0, r.jsx)(d.Z, {
-            guild: x,
+            guild: y,
             size: d.Z.Sizes.MINI,
             active: !0
           })
@@ -153,14 +153,14 @@ let g = e => {
           color: "header-secondary",
           className: h.__invalid_label,
           variant: "text-sm/normal",
-          children: x.name
+          children: y.name
         })]
       }), (0, r.jsx)(s.Z, {
         size: m || _ ? s.Z.Sizes.SIZE_16 : s.Z.Sizes.SIZE_20,
         className: a()(h.header, {
           [h.embed]: _
         }),
-        children: y
+        children: x
       }), (0, r.jsxs)("div", {
         className: a()(h.members, {
           [h.embed]: _
@@ -169,7 +169,7 @@ let g = e => {
           className: h.speakers,
           children: [j.map(e => (0, r.jsx)(g, {
             speaker: e,
-            guildId: x.id,
+            guildId: y.id,
             isEmbed: _
           }, e.user.id)), C > 0 ? (0, r.jsxs)("div", {
             className: h.speaker,

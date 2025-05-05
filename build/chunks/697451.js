@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(566620),
   _ = n(403404),
   b = n(100527),
-  x = n(906732),
-  y = n(783097),
+  y = n(906732),
+  x = n(783097),
   E = n(581364),
   v = n(592180),
   O = n(726033),
@@ -36,7 +36,7 @@ var r = n(255367),
   R = n(388032),
   k = n(848697);
 
-function D(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -55,7 +55,7 @@ function D(e) {
   return e
 }
 
-function L(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -102,8 +102,8 @@ function U(e, t, n, i, l) {
     showAvatarPopout: g,
     showTargetAvatarPopout: _,
     onClickAvatar: b,
-    onUserContextMenu: x,
-    onClickTargetAvatar: y,
+    onUserContextMenu: y,
+    onClickTargetAvatar: x,
     onTargetUserContextMenu: E,
     onPopoutRequestClose: v
   } = e;
@@ -143,8 +143,8 @@ function U(e, t, n, i, l) {
       user: t,
       guildId: m.guild_id,
       guildAvatar: O,
-      onClick: 1 === n ? y : b,
-      onContextMenu: 1 === n ? E : x
+      onClick: 1 === n ? x : b,
+      onContextMenu: 1 === n ? E : y
     }),
     C = 1 === n ? _ : g;
   return null != l && null != C ? (0, r.jsx)(p.yRy, {
@@ -196,7 +196,7 @@ function G(e) {
   }, {
     autoTrackExposure: !0
   }), n = t ? p.iWm : p.jje;
-  return (0, r.jsx)(n, D({}, e))
+  return (0, r.jsx)(n, L({}, e))
 }
 
 function H(e) {
@@ -207,9 +207,9 @@ function H(e) {
     } = e,
     {
       analyticsLocations: c
-    } = (0, x.ZP)(b.Z.EXECUTED_COMMAND),
+    } = (0, y.ZP)(b.Z.EXECUTED_COMMAND),
     f = (0, d.e7)([C.default], () => C.default.getCurrentUser()),
-    S = i.useMemo(() => (e, t, n) => (s()(null != t, "ExecutedCommand: user cannot be undefined"), s()(null != f, "ExecutedCommand: currentUser cannot be undefined"), s()(null != o, "ExecutedCommand: channel cannot be undefined"), (0, r.jsx)(O.Z, L(D({}, e), {
+    S = i.useMemo(() => (e, t, n) => (s()(null != t, "ExecutedCommand: user cannot be undefined"), s()(null != f, "ExecutedCommand: currentUser cannot be undefined"), s()(null != o, "ExecutedCommand: channel cannot be undefined"), (0, r.jsx)(O.Z, D(L({}, e), {
       user: t,
       currentUser: f,
       guildId: o.guild_id,
@@ -217,7 +217,7 @@ function H(e) {
       messageId: l.id,
       newAnalyticsLocations: n
     }))), [f, o, l.id]),
-    P = i.useMemo(() => e => (s()(null != o, "ExecutedCommand: channel cannot be null"), (0, r.jsx)(A.Z, L(D({}, e), {
+    P = i.useMemo(() => e => (s()(null != o, "ExecutedCommand: channel cannot be null"), (0, r.jsx)(A.Z, D(L({}, e), {
       channel: o,
       messageId: l.id,
       interactionData: l.interactionData
@@ -274,7 +274,7 @@ function H(e) {
               }
               return i
             }(e, ["onClick"]);
-            if (i.type === Z.uaV.CHAT_INPUT_COMMAND || i.type === Z.uaV.INTERACTION_PREMIUM_UPSELL) return (0, r.jsx)(p.P3F, L(D({}, n), {
+            if (i.type === Z.uaV.CHAT_INPUT_COMMAND || i.type === Z.uaV.INTERACTION_PREMIUM_UPSELL) return (0, r.jsx)(p.P3F, D(L({}, n), {
               tag: "span",
               onClick: l,
               children: (0, r.jsxs)("div", {
@@ -293,8 +293,8 @@ function H(e) {
               children: s
             });
             {
-              let e = (0, y.XZ)(s);
-              return (0, r.jsx)(p.P3F, L(D({}, n), {
+              let e = (0, x.XZ)(s);
+              return (0, r.jsx)(p.P3F, D(L({}, n), {
                 tag: "span",
                 onClick: () => {
                   I.S.dispatchToLastSubscribed(Z.CkL.OPEN_APP_LAUNCHER, {
@@ -356,7 +356,7 @@ function H(e) {
       userHook: q
     })
   }
-  return (0, r.jsx)(x.Gt, {
+  return (0, r.jsx)(y.Gt, {
     value: c,
     children: (0, r.jsx)("div", {
       className: a()(k.repliedMessage, k.messageSpine, k.executedCommand, K),
