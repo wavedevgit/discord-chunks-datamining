@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  o = n.n(i),
-  a = n(442837),
+  a = n.n(i),
+  o = n(442837),
   s = n(481060),
   l = n(100527),
   c = n(906732),
@@ -89,7 +89,7 @@ function P(e) {
   }), L = (0, p.Z)({
     userId: t.id,
     onAction: D
-  }), x = (0, a.e7)([u.Z], () => u.Z.getGuild(i.guild_id)), M = (0, f.Z)(i), {
+  }), x = (0, o.e7)([u.Z], () => u.Z.getGuild(i.guild_id)), M = (0, f.Z)(i), {
     channelStatusEnabled: k
   } = (0, d.D)({
     location: "UserProfileVoiceActivityCard"
@@ -114,7 +114,7 @@ function P(e) {
     value: w,
     children: (0, r.jsxs)(m.Z, {
       ref: L,
-      className: o()(T.card, A),
+      className: a()(T.card, A),
       onAction: D,
       onClose: C,
       children: [(0, r.jsx)(g.Z, {

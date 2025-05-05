@@ -7,8 +7,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(481060),
   l = n(95398),
   c = n(247206),
@@ -35,9 +35,9 @@ function A(e) {
     width: n,
     height: r,
     hasMultiple: i = !1,
-    options: o
+    options: a
   } = e, {
-    width: a,
+    width: o,
     height: s
   } = (0, E.p)(i, {
     width: n,
@@ -46,12 +46,12 @@ function A(e) {
   d.ZP.preloadImage({
     src: t,
     dimensions: {
-      maxWidth: a,
+      maxWidth: o,
       maxHeight: s,
       imageWidth: n,
       imageHeight: r
     },
-    options: o
+    options: a
   })
 }
 
@@ -63,7 +63,7 @@ function C(e) {
   let {
     children: t,
     isObscured: n,
-    src: o
+    src: a
   } = e, [s, c] = i.useState(!1), u = i.useCallback(() => {
     c(e => !e)
   }, []);
@@ -76,12 +76,12 @@ function C(e) {
       isSingleMosaicItem: !0,
       onToggleObscurity: u,
       children: e => (0, r.jsx)("div", {
-        className: a()(T.obscureWrapper, {
+        className: o()(T.obscureWrapper, {
           [T.obscure]: e
         }),
         children: t(e)
       })
-    }, o)
+    }, a)
   }) : (0, r.jsx)(r.Fragment, {
     children: t(!1)
   })
@@ -107,10 +107,10 @@ function P(e) {
   let {
     items: t,
     onIndexChange: n,
-    startIndex: o = 0,
+    startIndex: a = 0,
     shouldRedactExplicitContent: l = !1,
     shouldHideMediaOptions: u = !1
-  } = e, [d, f] = i.useState(o), _ = i.useRef(o), {
+  } = e, [d, f] = i.useState(a), _ = i.useRef(a), {
     zoomed: h,
     setZoomed: A
   } = (0, g.Y)(), R = i.useCallback(e => {
@@ -141,14 +141,14 @@ function P(e) {
           },
           icon: s.j9r,
           tooltip: S.intl.string(S.t.vgfxaG),
-          className: a()(T.navPrev, e)
+          className: o()(T.navPrev, e)
         }), (0, r.jsx)(O.Z, {
           onClick: e => {
             e.stopPropagation(), p.S.dispatch(I.CkL.MODAL_CAROUSEL_NEXT)
           },
           icon: s.d4D,
           tooltip: S.intl.string(S.t.XiOHRU),
-          className: a()(T.navNext, e)
+          className: o()(T.navNext, e)
         })]
       }) : void 0
     }), (0, r.jsx)(E.Z, {

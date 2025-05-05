@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(442837),
-  o = n(481060),
-  a = n(607070),
+  a = n(481060),
+  o = n(607070),
   s = n(409813),
   l = n(669079),
   c = n(170579),
@@ -29,7 +29,7 @@ function p(e) {
     showDiscountBadge: y,
     isGift: O,
     giftRecipient: v
-  } = e, I = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), S = m ? d.nL.WINTER : d.nL.DEFAULT, T = () => {
+  } = e, I = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), S = m ? d.nL.WINTER : d.nL.DEFAULT, T = () => {
     switch (t) {
       case s.h8.PLAN_SELECT:
         return h === d.p9.TIER_0 ? f.intl.string(f.t.rk4Uu7) : f.intl.string(f.t["7YWj6+"]);
@@ -41,13 +41,13 @@ function p(e) {
         return f.intl.string(f.t["7YWj6+"])
     }
   };
-  return O && (0, l.pO)(v) && t !== s.h8.CONFIRM ? (0, r.jsxs)(o.xBx, {
+  return O && (0, l.pO)(v) && t !== s.h8.CONFIRM ? (0, r.jsxs)(a.xBx, {
     className: _.modalHeaderCustomGift,
     separator: !1,
-    children: [(0, r.jsx)(o.X6q, {
+    children: [(0, r.jsx)(a.X6q, {
       variant: "heading-lg/semibold",
       children: T()
-    }), (0, r.jsx)(o.olH, {
+    }), (0, r.jsx)(a.olH, {
       onClick: g,
       className: _.closeButton,
       innerClassName: _.closeButtonInner

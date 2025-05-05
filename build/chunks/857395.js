@@ -6,9 +6,9 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  o = n(914620);
+  a = n(914620);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,7 +24,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -51,8 +51,8 @@ function u(e, t) {
   if (null == e) return {};
   var n, r, i = d(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -60,8 +60,8 @@ function u(e, t) {
 function d(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -69,13 +69,13 @@ function f(e) {
   var {
     guildId: t,
     name: n,
-    position: a = "right",
+    position: o = "right",
     onClose: l
   } = e, d = u(e, ["guildId", "name", "position", "onClose"]);
   return (0, r.jsx)(i.yRy, s({
-    position: a,
+    position: o,
     clickTrap: !0,
-    renderPopout: e => (0, r.jsx)(o.Z, c(s({}, e), {
+    renderPopout: e => (0, r.jsx)(a.Z, c(s({}, e), {
       onClose: () => {
         e.closePopout(), null == l || l()
       },

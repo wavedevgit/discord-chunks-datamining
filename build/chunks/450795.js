@@ -2,8 +2,8 @@
 "use strict";
 var r = n(990547),
   i = n(570140),
-  o = n(844889),
-  a = n(314897),
+  a = n(844889),
+  o = n(314897),
   s = n(981631);
 (0, r.analyticsTrackingStoreMaker)({
   dispatcher: i.Z,
@@ -16,9 +16,9 @@ var r = n(990547),
     TRACK: e => r.AnalyticsActionHandlers.handleTrack(e)
   },
   TRACKING_URL: s.ANM.TRACK,
-  waitFor: [a.default],
-  getFingerprint: a.default.getFingerprint,
-  getSessionId: () => (0, o.Gg)().then(e => ({
+  waitFor: [o.default],
+  getFingerprint: o.default.getFingerprint,
+  getSessionId: () => (0, a.Gg)().then(e => ({
     sessionId: null == e ? void 0 : e.uuid
   }))
 })

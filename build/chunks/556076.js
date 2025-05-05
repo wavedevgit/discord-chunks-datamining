@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  y: () => o
+  y: () => a
 });
 var r = n(544891),
   i = n(981631);
 
-function o(e, t) {
+function a(e, t) {
   r.tn.post({
     url: i.ANM.VOICE_CHANNEL_NOTIFICATIONS(e),
     query: {

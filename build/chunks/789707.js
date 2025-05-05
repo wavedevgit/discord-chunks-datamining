@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  o = n(499033),
-  a = n(388032),
+  a = n(499033),
+  o = n(388032),
   s = n(879730);
 
 function l() {
@@ -24,18 +24,18 @@ function l() {
           width: 28,
           height: 28
         })
-      }), (0, r.jsx)(o.Z, {
+      }), (0, r.jsx)(a.Z, {
         className: s.stars
       })]
     }), (0, r.jsx)(i.X6q, {
       className: s.header,
       variant: "heading-xl/semibold",
-      children: a.intl.string(a.t.yJHJen)
+      children: o.intl.string(o.t.yJHJen)
     }), (0, r.jsx)(i.Text, {
       className: s.text,
       color: "header-secondary",
       variant: "text-md/normal",
-      children: a.intl.string(a.t.p2dIh4)
+      children: o.intl.string(o.t.p2dIh4)
     })]
   })
 }

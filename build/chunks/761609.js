@@ -5,9 +5,9 @@ n.d(t, {
 });
 var r = n(654861),
   i = n.n(r),
-  o = n(413135);
+  a = n(413135);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,10 +27,10 @@ class c {
   generate(e) {
     let t = i()(e),
       n = 0 | this._sequenceNumber++,
-      r = new o.Buffer(24);
+      r = new a.Buffer(24);
     return r.writeInt32LE(s(t), 0, !0), r.writeInt32LE(l(t), 4, !0), r.writeInt32LE(this._randomPrefix, 8, !0), r.writeInt32LE(s(this._creationTime), 12, !0), r.writeInt32LE(l(this._creationTime), 16, !0), r.writeInt32LE(n, 20, !0), r.toString("base64")
   }
   constructor() {
-    a(this, "_randomPrefix", 0 | Math.floor(0x100000000 * Math.random())), a(this, "_creationTime", i()(Date.now())), a(this, "_sequenceNumber", 0)
+    o(this, "_randomPrefix", 0 | Math.floor(0x100000000 * Math.random())), o(this, "_creationTime", i()(Date.now())), o(this, "_sequenceNumber", 0)
   }
 }

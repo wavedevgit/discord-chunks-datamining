@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  o = n(512722),
-  a = n.n(o),
+  a = n(512722),
+  o = n.n(a),
   s = n(742280),
   l = n(442837),
   c = n(692547),
@@ -52,28 +52,28 @@ var r = n(200651),
 function z(e, t, n) {
   let r = null,
     i = null,
-    o = null;
+    a = null;
   if (e && null != t) {
     let {
       intervalType: e,
-      intervalCount: a
-    } = C.ZP.getIntervalForInvoice(t), s = (0, R.og)((0, R.T4)(t.total, t.currency), e, a), l = null != n ? n : t.subscriptionPeriodEnd;
+      intervalCount: o
+    } = C.ZP.getIntervalForInvoice(t), s = (0, R.og)((0, R.T4)(t.total, t.currency), e, o), l = null != n ? n : t.subscriptionPeriodEnd;
     r = W.intl.format(W.t.ZzmrTk, {
       termsURL: H.EYA.TERMS,
       paidURL: H.EYA.PAID_TERMS,
       rate: s,
       renewalDate: l
-    }), i = K.trialCheckbox, o = K.trialCheckboxLabel
+    }), i = K.trialCheckbox, a = K.trialCheckboxLabel
   }
   return {
     checkboxLabel: r,
     checkboxClassname: i,
-    checkboxLabelClassname: o
+    checkboxLabelClassname: a
   }
 }
 
 function q(e) {
-  var t, n, o, H;
+  var t, n, a, H;
   let q, Q, {
       selectedPlanId: X,
       planGroup: J,
@@ -83,8 +83,8 @@ function q(e) {
       onCurrencyChange: en,
       onPaymentSourceChange: er,
       handlePaymentSourceAdd: ei,
-      setHasAcceptedTerms: eo,
-      legalTermsNodeRef: ea,
+      setHasAcceptedTerms: ea,
+      legalTermsNodeRef: eo,
       hasLegalTermsFlash: es,
       trialId: el,
       trialFooterMessageOverride: ec,
@@ -119,7 +119,7 @@ function q(e) {
     eL = null == eD || null == (t = eD.discount) ? void 0 : t.plan_ids.some(e => Z.GP[e].skuId === ey),
     ex = !eR && null != eD && null != ey && eL,
     eM = (0, l.e7)([S.Z], () => S.Z.get(X));
-  a()(null != eM, "Missing plan");
+  o()(null != eM, "Missing plan");
   let ek = [{
       planId: eM.id,
       quantity: 1
@@ -169,7 +169,7 @@ function q(e) {
       loadId: eT.loadId
     }),
     eq = eR && (0, N.pO)(eP),
-    eQ = null != (o = null != (n = null != eF ? eF : eH) ? n : eW) ? o : ez;
+    eQ = null != (a = null != (n = null != eF ? eF : eH) ? n : eW) ? a : ez;
   i.useEffect(() => {
     eN(eQ)
   }, [eQ, eN]);
@@ -274,12 +274,12 @@ function q(e) {
     {
       checkboxLabel: tr,
       checkboxClassname: ti,
-      checkboxLabelClassname: to
+      checkboxLabelClassname: ta
     } = z(null != eh && eh, eZ, q),
-    ta = W.intl.formatToPlainString(W.t["sBpy9/"], {
+    to = W.intl.formatToPlainString(W.t["sBpy9/"], {
       planName: eM.name
     });
-  eR && !eq ? ta = W.intl.string(W.t.J5a0eX) : eR && eq ? ta = "" : (0, C.PV)(eM.id) && (ta = C.ZP.getBillingReviewSubheader(null, eM));
+  eR && !eq ? to = W.intl.string(W.t.J5a0eX) : eR && eq ? to = "" : (0, C.PV)(eM.id) && (to = C.ZP.getBillingReviewSubheader(null, eM));
   let ts = null != eB && eB.length > 0 && (eJ === T.c || null === e$) && eC ? U.w.SELECT_PAYMENT_METHOD : void 0;
   return e3 ? null : (0, r.jsxs)("div", {
     className: K.stepBody,
@@ -319,9 +319,9 @@ function q(e) {
       children: W.intl.format(W.t["7ZS2m5"], {
         trialEnd: null == eb ? void 0 : eb.currentPeriodEnd
       })
-    }), !eh && "" !== ta && (0, r.jsx)(u.vwX, {
+    }), !eh && "" !== to && (0, r.jsx)(u.vwX, {
       tag: u.RB0.H5,
-      children: ta
+      children: to
     }), eq && null != ew && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(j.Z, {
         defaultAnimationState: P.SR.LOOP,
@@ -371,13 +371,13 @@ function q(e) {
       })]
     }), (0, r.jsx)(k.Z, {
       isActive: es,
-      ref: ea,
+      ref: eo,
       children: (0, r.jsx)(p.Z, {
-        onChange: eo,
+        onChange: ea,
         forceShow: !0,
         checkboxLabel: tr,
         checkboxClassname: ti,
-        checkboxLabelClassname: to,
+        checkboxLabelClassname: ta,
         finePrint: null != (H = !eA && ec) ? H : (0, r.jsx)(f.Z, {
           hide: eh || em,
           subscriptionPlan: eM,

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(442837),
-  a = n(481060),
+  a = n(442837),
+  o = n(481060),
   s = n(580587),
   l = n(499254),
   c = n(827498),
@@ -52,8 +52,8 @@ function N(e, t) {
   if (null == e) return {};
   var n, r, i = C(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -61,8 +61,8 @@ function N(e, t) {
 function C(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -71,13 +71,13 @@ function R(e) {
     user: t,
     closePopout: n
   } = e, T = N(e, ["user", "closePopout"]);
-  let C = (0, o.e7)([y.Z], () => {
+  let C = (0, a.e7)([y.Z], () => {
       var e;
       return null == (e = y.Z.getUserProfile(t.id)) ? void 0 : e.application
     }),
-    R = (0, o.e7)([h.Z], () => h.Z.getChannelId()),
-    P = (0, o.e7)([p.Z], () => p.Z.getChannel(R)),
-    w = (0, o.e7)([p.Z], () => {
+    R = (0, a.e7)([h.Z], () => h.Z.getChannelId()),
+    P = (0, a.e7)([p.Z], () => p.Z.getChannel(R)),
+    w = (0, a.e7)([p.Z], () => {
       var e;
       return null == (e = p.Z.getChannel(R)) ? void 0 : e.guild_id
     }),
@@ -99,7 +99,7 @@ function R(e) {
             r = null != _.ZP.getSidebarState(e) || (null == t ? void 0 : t.isGuildVocal()) ? f.Ie.SIDEBAR : f.Ie.NORMAL;
           l.__(c._b.TEXT, r, {
             applicationId: C.id
-          }), (0, a.Mr3)((0, O.z)(x, w)), null == n || n(), m.default.track(I.rMx.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, {
+          }), (0, o.Mr3)((0, O.z)(x, w)), null == n || n(), m.default.track(I.rMx.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, {
             application_id: C.id
           })
         } else(0, b.L)(A({
@@ -110,19 +110,19 @@ function R(e) {
   if (null == C || !(0, d.Eb)(C)) return null;
   let {
     customInstallUrl: j
-  } = C, U = null == j || E.Z.isDiscordUrl(j) ? a.qJs : a.Gr1, G = L ? void 0 : U;
-  return g.wS ? (0, r.jsx)(a.yRy, {
+  } = C, U = null == j || E.Z.isDiscordUrl(j) ? o.qJs : o.Gr1, G = L ? void 0 : U;
+  return g.wS ? (0, r.jsx)(o.yRy, {
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(a.v2r, {
+      return (0, r.jsx)(o.v2r, {
         navId: "user-bot-profile-add-app",
         onClose: t,
         "aria-label": S.intl.string(S.t.dbkxVl),
         onSelect: void 0,
-        children: (0, r.jsx)(a.kSQ, {
-          children: (0, r.jsx)(a.sNh, {
+        children: (0, r.jsx)(o.kSQ, {
+          children: (0, r.jsx)(o.sNh, {
             id: "copy",
             label: S.intl.string(S.t.XWDiho),
             action: () => (0, g.JG)((0, u.J)(C))

@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => u
 });
 var r, i = n(442837),
-  o = n(570140);
+  a = n(570140);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,7 +30,7 @@ class c extends(r = i.ZP.PersistedStore) {
     return !0 !== s[e]
   }
 }
-a(c, "displayName", "ActivityInviteEducationStore"), a(c, "persistKey", "ActivityInviteEducationExperimentStore");
-let u = new c(o.Z, {
+o(c, "displayName", "ActivityInviteEducationStore"), o(c, "persistKey", "ActivityInviteEducationExperimentStore");
+let u = new c(a.Z, {
   ACTIVITY_INVITE_EDUCATION_DISMISS: l
 })

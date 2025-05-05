@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => L
 });
 var r, i = n(512722),
-  o = n.n(i),
-  a = n(392711),
-  s = n.n(a),
+  a = n.n(i),
+  o = n(392711),
+  s = n.n(o),
   l = n(442837),
   c = n(377108),
   u = n(524437),
@@ -59,13 +59,13 @@ function v(e) {
   let {
     userSettingsProto: t
   } = e;
-  null != t && (E.proto = t, o()("string" != typeof E.proto, "UserSettingsProto cannot be a string"));
+  null != t && (E.proto = t, a()("string" != typeof E.proto, "UserSettingsProto cannot be a string"));
   let {
     proto: n,
     isDirty: r,
     cleanupFuncs: i
   } = (0, p.xt)(E.proto, _.Z[h.yP.PRELOADED_USER_SETTINGS]);
-  r && A(E), E.proto = n, o()("string" != typeof E.proto, "UserSettingsProto cannot be a string"), E.editInfo.triggeredMigrations = r, E.editInfo.cleanupFuncs = i, E.editInfo.loaded = !0, Object.values(y).forEach(e => {
+  r && A(E), E.proto = n, a()("string" != typeof E.proto, "UserSettingsProto cannot be a string"), E.editInfo.triggeredMigrations = r, E.editInfo.cleanupFuncs = i, E.editInfo.loaded = !0, Object.values(y).forEach(e => {
     e.lazyLoaded && (e.editInfo.loaded = !1, e.editInfo.loading = !1)
   }), T()
 }
@@ -97,7 +97,7 @@ function N(e) {
   let {
     userSettingsProto: t
   } = e;
-  E.proto = (0, p.ac)(t), o()("string" != typeof E.proto, "UserSettingsProto cannot be a string")
+  E.proto = (0, p.ac)(t), a()("string" != typeof E.proto, "UserSettingsProto cannot be a string")
 }
 
 function C(e) {
@@ -108,11 +108,11 @@ function C(e) {
     },
     partial: r,
     resetEditInfo: i,
-    local: a
+    local: o
   } = e;
-  O = !a;
+  O = !o;
   let s = y[n];
-  i && A(s), r ? (s.proto = (0, p.re)(s.ProtoClass, s.proto, t), o()("string" != typeof s.proto, "UserSettingsProto cannot be a string")) : (s.proto = t, o()("string" != typeof s.proto, "UserSettingsProto cannot be a string"), s.editInfo.loaded = !0, s.editInfo.loading = !1)
+  i && A(s), r ? (s.proto = (0, p.re)(s.ProtoClass, s.proto, t), a()("string" != typeof s.proto, "UserSettingsProto cannot be a string")) : (s.proto = t, a()("string" != typeof s.proto, "UserSettingsProto cannot be a string"), s.editInfo.loaded = !0, s.editInfo.loading = !1)
 }
 
 function R(e) {
@@ -122,7 +122,7 @@ function R(e) {
       changes: n
     }
   } = e;
-  o()(!__OVERLAY__, "this cannot run in the overlay");
+  a()(!__OVERLAY__, "this cannot run in the overlay");
   let r = y[t];
   return r.editInfo = g({}, r.editInfo, n), !1
 }
@@ -137,16 +137,16 @@ function P(e) {
 function w(e) {
   null != e && s().forEach(y, (t, n) => {
     var r, i;
-    let a = e[Number(n)];
-    if (null == a) return;
-    let s = null != (r = null == a ? void 0 : a.proto) ? r : "",
+    let o = e[Number(n)];
+    if (null == o) return;
+    let s = null != (r = null == o ? void 0 : o.proto) ? r : "",
       l = (0, p.d5)(t.ProtoClass, s);
     if (null == l) return;
-    t.proto = l, o()("string" != typeof t.proto, "UserSettingsProto cannot be a string");
-    let c = null != (i = null == a ? void 0 : a.protoToSave) ? i : null;
-    if (null == c || null == a.offlineEditDataVersion) return;
+    t.proto = l, a()("string" != typeof t.proto, "UserSettingsProto cannot be a string");
+    let c = null != (i = null == o ? void 0 : o.protoToSave) ? i : null;
+    if (null == c || null == o.offlineEditDataVersion) return;
     let u = (0, p.d5)(t.ProtoClass, c);
-    null != u && (t.editInfo.protoToSave = u, t.editInfo.offlineEditDataVersion = a.offlineEditDataVersion)
+    null != u && (t.editInfo.protoToSave = u, t.editInfo.offlineEditDataVersion = o.offlineEditDataVersion)
   })
 }
 class D extends(r = l.ZP.PersistedStore) {
@@ -185,12 +185,12 @@ class D extends(r = l.ZP.PersistedStore) {
     return null == t ? null : t.map(e => {
       var t, n, r;
       let i = null == (t = e.id) ? void 0 : t.value,
-        o = null == (n = e.color) ? void 0 : n.value;
+        a = null == (n = e.color) ? void 0 : n.value;
       return {
         guildIds: e.guildIds,
         folderId: null == i ? void 0 : Number(i),
         folderName: null == (r = e.name) ? void 0 : r.value,
-        folderColor: null == o ? void 0 : Number(o)
+        folderColor: null == a ? void 0 : Number(a)
       }
     })
   }

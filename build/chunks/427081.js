@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(754700),
   i = n(147913),
-  o = n(317381),
-  a = n(594190),
+  a = n(317381),
+  o = n(594190),
   s = n(569545),
   l = n(199902),
   c = n(938475),
@@ -59,7 +59,7 @@ class I extends i.Z {
   }
   getActivelyProgressingPlayOnDesktopQuestIds() {
     let e = new Set,
-      t = a.ZP.getRunningGames(),
+      t = o.ZP.getRunningGames(),
       n = _.Z.quests;
     for (let r of (O.log("~ getActivelyProgressingPlayOnDesktopQuestIds -> Running games: ", t), t))
       if (null != r.id)
@@ -84,7 +84,7 @@ class I extends i.Z {
   }
   getActivelyProgressingActivityQuestIds() {
     let e = new Set,
-      t = o.ZP.getSelfEmbeddedActivities(),
+      t = a.ZP.getSelfEmbeddedActivities(),
       n = t.size > 0;
     if (O.log("~ getActivelyProgressingActivityQuestIds -> Embedded activities: ", t), !n) return e;
     let r = _.Z.quests;
@@ -104,8 +104,8 @@ class I extends i.Z {
       let {
         progressSeconds: n,
         targetSeconds: i
-      } = (0, p.il)(t, r.T.DESKTOP), o = Math.max(0, (i - n) * u.Z.Millis.SECOND);
-      return o <= E ? o + y : E
+      } = (0, p.il)(t, r.T.DESKTOP), a = Math.max(0, (i - n) * u.Z.Millis.SECOND);
+      return a <= E ? a + y : E
     }), g(this, "initiateHeartbeat", (e, t) => {
       let n = this.heartbeats[t];
       if (n.has(e)) return void O.log("~ initiateHeartbeat -> Heartbeat already initiated for questId: ".concat(e));
@@ -125,9 +125,9 @@ class I extends i.Z {
           } else O.log("~ initiateHeartbeat -> Sending heartbeat for questId: ".concat(e)), (0, f.m0)({
             questId: e
           });
-          let o = this.calculateHeartbeatDurationMs(e),
-            a = window.setTimeout(i, o);
-          n.set(e, a)
+          let a = this.calculateHeartbeatDurationMs(e),
+            o = window.setTimeout(i, a);
+          n.set(e, o)
         } else O.log("~ initiateHeartbeat -> Quest ".concat(e, " is no longer actively progressing, terminating heartbeat")), this.terminateHeartbeat(e, t)
       };
       O.log("~ initiateHeartbeat -> Initiating heartbeat for Quest ".concat(e)), i()

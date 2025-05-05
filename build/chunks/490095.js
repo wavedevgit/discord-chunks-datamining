@@ -1,18 +1,18 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  o = n(163621);
-let a = e => {
+  a = n(163621);
+let o = e => {
   let {
     size: t
   } = e;
   return (0, r.jsx)("div", {
-    className: o.unownedStickerLockContainer,
+    className: a.unownedStickerLockContainer,
     style: {
       width: t,
       height: t
@@ -20,7 +20,7 @@ let a = e => {
     children: (0, r.jsx)(i.mBM, {
       size: "xxs",
       color: "currentColor",
-      className: o.unownedStickerLockIcon
+      className: a.unownedStickerLockIcon
     })
   })
 }

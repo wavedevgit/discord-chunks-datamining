@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  _: () => o,
+  _: () => a,
   e: () => r
 }), n(388685), n(35282);
 var r = function(e) {
@@ -19,7 +19,7 @@ function i(e) {
   }
 }
 
-function o(e) {
+function a(e) {
   if (null == e) return null;
   let [t, n] = e.split("-"), r = i(t);
   return null == r ? null : {

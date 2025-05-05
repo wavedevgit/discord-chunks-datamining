@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(442837),
-  o = n(481060),
-  a = n(230711),
+  a = n(481060),
+  o = n(230711),
   s = n(549879),
   l = n(394821),
   c = n(841784),
@@ -20,7 +20,7 @@ var i = n(442837),
   h = n(324745),
   m = n(981631),
   g = n(388032);
-let E = () => a.Z.open(m.oAB.CONNECTIONS, null);
+let E = () => o.Z.open(m.oAB.CONNECTIONS, null);
 
 function b(e) {
   let {
@@ -57,7 +57,7 @@ function v(e) {
   let {
     user: t,
     activity: n,
-    entry: a,
+    entry: o,
     onAction: l,
     onClose: c,
     appContext: u
@@ -70,10 +70,10 @@ function v(e) {
     })) return null;
   let f = O({
     activity: n,
-    entry: a,
+    entry: o,
     onOpenGameSettings: d
   });
-  return null == f ? null : (0, r.jsx)(o.sNh, {
+  return null == f ? null : (0, r.jsx)(a.sNh, {
     id: "manage-privacy",
     label: g.intl.string(g.t.anfNPT),
     action: () => {

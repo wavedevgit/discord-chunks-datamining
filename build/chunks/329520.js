@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(442837),
-  o = n(481060),
-  a = n(201895),
+  a = n(481060),
+  o = n(201895),
   s = n(933557),
   l = n(592125),
   c = n(473919),
@@ -32,9 +32,9 @@ function f(e) {
     }) : d.intl.string(d.t.eXan7O);
   return (0, r.jsxs)(r.Fragment, {
     children: [!h && (0, r.jsx)(c.Z, {
-      icon: o.ARS,
+      icon: a.ARS,
       tooltipText: g || null == b ? void 0 : b,
-      tooltipAriaLabel: g || null == E ? void 0 : (0, a.ZP)({
+      tooltipAriaLabel: g || null == E ? void 0 : (0, o.ZP)({
         channel: E
       }),
       className: p

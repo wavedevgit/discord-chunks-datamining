@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  O: () => o,
+  O: () => a,
   Z: () => i
 });
 var r = n(159277);
@@ -10,6 +10,6 @@ function i(e) {
   return r.t.XBOX_APPLICATION_ID === e || r.M.PLAYSTATION_APPLICATION_IDS.has(e)
 }
 
-function o(e) {
+function a(e) {
   return i(e)
 }

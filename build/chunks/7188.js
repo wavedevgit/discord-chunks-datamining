@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(442837),
-  a = n(481060),
+  a = n(442837),
+  o = n(481060),
   s = n(906732),
   l = n(522651),
   c = n(795318),
@@ -68,8 +68,8 @@ function C(e, t) {
   if (null == e) return {};
   var n, r, i = R(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -77,8 +77,8 @@ function C(e, t) {
 function R(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -86,7 +86,7 @@ function P(e) {
   let {
     className: t
   } = e;
-  return (0, r.jsx)(a.ewm, {
+  return (0, r.jsx)(o.ewm, {
     size: "md",
     color: "currentColor",
     className: t
@@ -116,12 +116,12 @@ function D(e) {
   } = e, h = C(e, ["hideBadges", "stream", "location"]);
   let {
     parentAnalyticsLocation: I
-  } = (0, s.ZP)(), S = (0, o.e7)([p.default], () => m.ZP.isPremium(p.default.getCurrentUser(), O.p9.TIER_1)), A = (0, o.e7)([_.Z], () => _.Z.getChannel(null == n ? void 0 : n.channelId)), R = i.useMemo(() => null != n ? [n] : [], [n]), D = i.useCallback(() => {
+  } = (0, s.ZP)(), S = (0, a.e7)([p.default], () => m.ZP.isPremium(p.default.getCurrentUser(), O.p9.TIER_1)), A = (0, a.e7)([_.Z], () => _.Z.getChannel(null == n ? void 0 : n.channelId)), R = i.useMemo(() => null != n ? [n] : [], [n]), D = i.useCallback(() => {
     null != A && (0, f.Z)(A.getGuildId(), A.id, b.jXE.STREAM_SETTINGS)
   }, [A]);
   if (null == n || null == A) return null;
   let L = P;
-  return t || S || (L = w), (0, r.jsx)(a.yRy, {
+  return t || S || (L = w), (0, r.jsx)(o.yRy, {
     position: "top",
     renderPopout: e => {
       let {
@@ -141,7 +141,7 @@ function D(e) {
         })
       })
     },
-    animation: a.yRy.Animation.FADE,
+    animation: o.yRy.Animation.FADE,
     children: e => (0, r.jsx)(E.Z, T(N(T({}, e), {
       label: v.intl.string(v.t.tmiYpK),
       iconComponent: L,

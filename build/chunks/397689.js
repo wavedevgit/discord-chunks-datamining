@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  o = n.n(i),
-  a = n(442837),
+  a = n.n(i),
+  o = n(442837),
   s = n(481060),
   l = n(906732),
   c = n(1585),
@@ -75,10 +75,10 @@ function O(e) {
   } = e, {
     analyticsLocations: N,
     newestAnalyticsLocation: C
-  } = (0, l.ZP)(), R = (0, a.e7)([u.Z], () => u.Z.getStatus(t.id)), P = null == n || (null == i ? void 0 : i.canUsePremiumProfileCustomization) || d, w = (0, r.jsx)(y, {
+  } = (0, l.ZP)(), R = (0, o.e7)([u.Z], () => u.Z.getStatus(t.id)), P = null == n || (null == i ? void 0 : i.canUsePremiumProfileCustomization) || d, w = (0, r.jsx)(y, {
     src: m,
     avatarDecoration: E,
-    imageClassName: o()(I, {
+    imageClassName: a()(I, {
       [h.overlay]: !S
     }),
     size: s.EFr.SIZE_80,
@@ -114,7 +114,7 @@ function O(e) {
       })
     },
     children: e => (0, r.jsxs)(s.P3F, b(g({}, e), {
-      className: o()(h.avatar, h.clickable),
+      className: a()(h.avatar, h.clickable),
       children: [w, (0, r.jsx)(s.vdY, {
         size: "custom",
         className: h.overlayIcon,
@@ -125,7 +125,7 @@ function O(e) {
     }))
   }) : (0, r.jsxs)(s.P3F, {
     onClick: A,
-    className: o()(h.avatar, h.clickable),
+    className: a()(h.avatar, h.clickable),
     children: [w, (0, r.jsx)(s.SrA, {
       size: "custom",
       className: h.overlayIcon,

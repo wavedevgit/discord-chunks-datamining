@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(704215),
   i = n(147913),
-  o = n(710845),
-  a = n(605236),
+  a = n(710845),
+  o = n(605236),
   s = n(131951),
   l = n(626135),
   c = n(998502),
@@ -54,7 +54,7 @@ function E(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = new o.Z("VoiceFilterManager");
+let b = new a.Z("VoiceFilterManager");
 class y extends i.Z {
   loadNativeModule() {
     (0, f.r5)()
@@ -84,22 +84,22 @@ class y extends i.Z {
       voiceFilterId: n,
       fetchedFromNetwork: r,
       analyticsContext: i
-    } = e, o = s.Z.getMostRecentlyRequestedVoiceFilter(), a = s.Z.getActiveVoiceFilter(), c = o !== a;
+    } = e, a = s.Z.getMostRecentlyRequestedVoiceFilter(), o = s.Z.getActiveVoiceFilter(), c = a !== o;
     if (r && l.default.track(_.rMx.VOICE_FILTER_DOWNLOAD_ATTEMPTED, {
-        active_voice_filter_id: null != a ? a : null,
+        active_voice_filter_id: null != o ? o : null,
         success: !0,
         voice_filter_id: n,
         model_id: t
-      }), c && null != o) {
-      let e = d.Z.getVoiceFilter(o);
+      }), c && null != a) {
+      let e = d.Z.getVoiceFilter(a);
       if (null == e) return void b.error("the VF in mostRecentlyRequestedVoiceFilter is missing. Has the store been cleared?");
       let n = e.modelIds,
         r = Object.values(null != n ? n : {}).filter(e => !d.Z.isModelDownloaded(e)).filter(e => e !== t);
       if (r.length > 0) return void b.info("waiting for more dependencies", {
-        mostRecentlyRequestedVoiceFilter: o,
+        mostRecentlyRequestedVoiceFilter: a,
         missingDependencies: r
       });
-      (0, f.rk)(o, i)
+      (0, f.rk)(a, i)
     }
   }
   handleVoiceFilterDownloadFailed(e) {
@@ -107,9 +107,9 @@ class y extends i.Z {
     let {
       modelId: r,
       voiceFilterId: i,
-      error: o
-    } = e, a = "USER_CANCELED_DOWNLOAD", c = null != o && a in o, u = (null != (t = null == o ? void 0 : o.message) ? t : String(o)).substring(0, 200);
-    c && (u = a), l.default.track(_.rMx.VOICE_FILTER_DOWNLOAD_ATTEMPTED, {
+      error: a
+    } = e, o = "USER_CANCELED_DOWNLOAD", c = null != a && o in a, u = (null != (t = null == a ? void 0 : a.message) ? t : String(a)).substring(0, 200);
+    c && (u = o), l.default.track(_.rMx.VOICE_FILTER_DOWNLOAD_ATTEMPTED, {
       canceled: c,
       active_voice_filter_id: null != (n = s.Z.getActiveVoiceFilter()) ? n : null,
       success: !1,
@@ -123,20 +123,20 @@ class y extends i.Z {
       voiceFilterId: t,
       analyticsContext: n,
       activationDurationMs: i
-    } = e, o = s.Z.getPreviousVoiceFilter();
-    if (null !== o && null === t) {
+    } = e, a = s.Z.getPreviousVoiceFilter();
+    if (null !== a && null === t) {
       let e = s.Z.getPreviousVoiceFilterAppliedAt(),
         t = null === e ? null : Date.now() - e;
       l.default.track(_.rMx.VOICE_FILTER_DISABLED, {
-        active_voice_filter_id: o,
+        active_voice_filter_id: a,
         duration_voice_filter_applied: t
       })
     }
-    null !== t && ((0, a.EW)(r.z.VOICE_FILTER_IN_CALL_COACHMARK, {
+    null !== t && ((0, o.EW)(r.z.VOICE_FILTER_IN_CALL_COACHMARK, {
       dismissAction: p.L.INDIRECT_ACTION
     }), l.default.track(_.rMx.VOICE_FILTER_ENABLED, E(m({
       active_voice_filter_id: t,
-      previous_filter_id: o
+      previous_filter_id: a
     }, (0, u.w)(n)), {
       time_to_activate_native_ms: i
     })))

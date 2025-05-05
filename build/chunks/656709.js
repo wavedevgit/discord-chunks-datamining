@@ -1,36 +1,36 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  k: () => a,
-  p: () => o
+  k: () => o,
+  p: () => a
 });
 var r = n(904245),
   i = n(957730);
-
-function o(e) {
-  let {
-    channel: t,
-    content: n,
-    entry: o,
-    whenReady: a,
-    doNotNotifyOnError: s
-  } = e, l = i.ZP.parse(t, n), c = {
-    unverified_content: o
-  };
-  return r.Z.sendMessage(t.id, l, a, {
-    contentInventoryEntry: c,
-    doNotNotifyOnError: s
-  })
-}
 
 function a(e) {
   let {
     channel: t,
     content: n,
+    entry: a,
     whenReady: o,
-    doNotNotifyOnError: a
+    doNotNotifyOnError: s
+  } = e, l = i.ZP.parse(t, n), c = {
+    unverified_content: a
+  };
+  return r.Z.sendMessage(t.id, l, o, {
+    contentInventoryEntry: c,
+    doNotNotifyOnError: s
+  })
+}
+
+function o(e) {
+  let {
+    channel: t,
+    content: n,
+    whenReady: a,
+    doNotNotifyOnError: o
   } = e, s = i.ZP.parse(t, n);
-  return r.Z.sendMessage(t.id, s, o, {
-    doNotNotifyOnError: a
+  return r.Z.sendMessage(t.id, s, a, {
+    doNotNotifyOnError: o
   })
 }

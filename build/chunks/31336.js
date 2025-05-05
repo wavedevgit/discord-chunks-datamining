@@ -1,22 +1,22 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Qh: () => o,
-  SO: () => a,
+  Qh: () => a,
+  SO: () => o,
   Zw: () => s
 });
 var r = n(570140),
   i = n(19759);
 
-function o(e) {
+function a(e) {
   r.Z.dispatch({
     type: "DEV_TOOLS_SETTINGS_UPDATE",
     settings: e
   })
 }
 
-function a() {
-  o({
+function o() {
+  a({
     displayTools: !i.Z.displayTools
   })
 }

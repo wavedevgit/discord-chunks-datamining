@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
-let r, i, o;
+let r, i, a;
 n.d(t, {
   Z: () => R
 });
-var a, s = n(772848),
+var o, s = n(772848),
   l = n(442837),
   c = n(433517),
   u = n(846519),
@@ -55,13 +55,13 @@ function T(e) {
 }
 
 function A(e) {
-  o = new _.Z(e.user)
+  a = new _.Z(e.user)
 }
 
 function N() {
   v()
 }
-class C extends(a = l.ZP.Store) {
+class C extends(o = l.ZP.Store) {
   initialize() {
     !1 !== c.K.get(E) && (b = h.isPlatformEmbedded && "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL)
   }
@@ -69,7 +69,7 @@ class C extends(a = l.ZP.Store) {
     return !m.s.isDisallowPopupsSet() && b
   }
   get user() {
-    return o
+    return a
   }
   get key() {
     return i

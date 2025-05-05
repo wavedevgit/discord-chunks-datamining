@@ -5,8 +5,8 @@ n.d(t, {
 }), n(804061), n(704826), n(35282);
 var r = n(200651),
   i = n(192379),
-  o = n(317261),
-  a = n(70956),
+  a = n(317261),
+  o = n(70956),
   s = n(5192),
   l = n(379357),
   c = n(561308),
@@ -21,15 +21,15 @@ var r = n(200651),
   E = n(388032);
 
 function b(e) {
-  if (e === o._.WEEK) return E.t["7TXfc3"]
+  if (e === a._.WEEK) return E.t["7TXfc3"]
 }
 let y = (e, t, n, r) => {
     let i = b(r),
-      o = s.ZP.getName(t.guild_id, t.id, n),
-      a = e.extra.game_name;
+      a = s.ZP.getName(t.guild_id, t.id, n),
+      o = e.extra.game_name;
     return E.intl.formatToMarkdownString(i, {
-      gameName: a,
-      userName: o
+      gameName: o,
+      userName: a
     }).replaceAll("*", "")
   },
   O = (e, t) => E.intl.formatToPlainString(E.t.tAwI1t, {
@@ -40,7 +40,7 @@ let y = (e, t, n, r) => {
     let {
       channel: t,
       entry: n,
-      disableGameProfileLinks: o,
+      disableGameProfileLinks: a,
       onReaction: s,
       onVoiceChannelPreview: b
     } = e, {
@@ -61,7 +61,7 @@ let y = (e, t, n, r) => {
         avatarSrcs: [I.getAvatarURL(null == t ? void 0 : t.guild_id, 128)],
         description: y(n, t, I, R),
         timestamp: E.intl.formatToPlainString(E.t.YL7UEx, {
-          hours: Math.round(C / a.Z.Seconds.HOUR)
+          hours: Math.round(C / o.Z.Seconds.HOUR)
         }),
         colors: [A, N],
         channelId: e
@@ -86,7 +86,7 @@ let y = (e, t, n, r) => {
             entry: n
           }, t))
         }),
-        disableGameProfileLinks: o
+        disableGameProfileLinks: a
       }), (0, r.jsx)(h.St, {
         children: (0, r.jsx)(h.WT, {
           onReaction: s,

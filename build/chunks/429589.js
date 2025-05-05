@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  o = n(103450),
-  a = n(915863);
+  a = n(103450),
+  o = n(915863);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -52,8 +52,8 @@ function d(e, t) {
   if (null == e) return {};
   var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -61,8 +61,8 @@ function d(e, t) {
 function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -72,10 +72,10 @@ function _(e) {
     embeddedActivity: n,
     user: s,
     onAction: c,
-    ButtonComponent: f = a.Z,
+    ButtonComponent: f = o.Z,
     location: _
   } = e, p = d(e, ["activity", "embeddedActivity", "user", "onAction", "ButtonComponent", "location"]);
-  let h = (0, o.e)({
+  let h = (0, a.e)({
     activity: null != t ? t : void 0,
     embeddedActivity: n,
     user: s,

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(442837),
   l = n(481060),
   c = n(100527),
@@ -56,7 +56,7 @@ function O(e) {
   let {
     className: t,
     iconOnly: n
-  } = e, o = (0, s.e7)([_.Z, f.Z], () => {
+  } = e, a = (0, s.e7)([_.Z, f.Z], () => {
     let e = f.Z.getChannel(_.Z.getChannelId());
     return (null == e ? void 0 : e.isPrivate()) ? h.ZY5.DM_CHANNEL : h.ZY5.GUILD_CHANNEL
   }), {
@@ -66,14 +66,14 @@ function O(e) {
     p.default.track(h.rMx.PREMIUM_UPSELL_VIEWED, {
       type: "longer messages inline",
       location: {
-        location_page: o,
+        location_page: a,
         location_section: h.jXE.CHANNEL_TEXT_AREA
       },
       location_stack: E
     })
-  }, [o, E]);
+  }, [a, E]);
   let O = () => (0, r.jsxs)("div", {
-      className: a()(g.root, t),
+      className: o()(g.root, t),
       children: [(0, r.jsx)(l.SrA, {
         size: "md",
         className: g.premium,

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(583741);
 var r = n(200651),
   i = n(192379),
-  o = n(272573),
-  a = n(442837),
+  a = n(272573),
+  o = n(442837),
   s = n(481060),
   l = n(607070),
   c = n(267642),
@@ -26,9 +26,9 @@ function y(e) {
     fillFactor: t,
     guildBoostCount: n,
     premiumTier: r,
-    isRevealed: o,
-    useReducedMotion: a
-  } = e, [l, c] = i.useState(a ? r : -1), [u, _] = i.useState(0 === n), [p, m] = i.useState(!1), b = i.useRef(!0);
+    isRevealed: a,
+    useReducedMotion: o
+  } = e, [l, c] = i.useState(o ? r : -1), [u, _] = i.useState(0 === n), [p, m] = i.useState(!1), b = i.useRef(!0);
 
   function y(e) {
     let {
@@ -47,7 +47,7 @@ function y(e) {
       widthFactor: 0
     },
     to: {
-      widthFactor: o ? t : 0
+      widthFactor: a ? t : 0
     },
     config: {
       tension: 15,
@@ -78,7 +78,7 @@ function y(e) {
 function O(e) {
   let {
     guild: t
-  } = e, n = (0, a.e7)([l.Z], () => l.Z.useReducedMotion), [s, h] = i.useState(!1), [g, E] = i.useState(0), O = i.useRef(null), v = s || n, {
+  } = e, n = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), [s, h] = i.useState(!1), [g, E] = i.useState(0), O = i.useRef(null), v = s || n, {
     fillFactor: I,
     totalAvailableBoostsCount: S
   } = i.useMemo(() => (0, c.Hl)(t), [t]), {
@@ -115,7 +115,7 @@ function O(e) {
     }),
     children: [(0, r.jsxs)("div", {
       className: p.progressBarScrubber,
-      children: [(0, r.jsx)(o.animated.div, {
+      children: [(0, r.jsx)(a.animated.div, {
         className: p.progressBarFill,
         style: {
           width: T.to({

@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  W: () => a,
-  l: () => o
+  W: () => o,
+  l: () => a
 });
 var r = n(430824),
   i = n(388032);
-let o = e => {
+let a = e => {
     switch (e) {
       case "home":
       case "guide":
@@ -20,7 +20,7 @@ let o = e => {
     }
     return null
   },
-  a = (e, t, n) => {
+  o = (e, t, n) => {
     if ("linked-roles" === e) {
       var i;
       if (null == n) return null;

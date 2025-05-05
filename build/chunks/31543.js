@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(359959),
-  a = n(260866),
+  a = n(359959),
+  o = n(260866),
   s = n(481060),
   l = n(806966),
   c = n(28546),
@@ -25,7 +25,7 @@ let p = i.forwardRef(function(e, t) {
   } = (0, c.Iu)(e => ({
     searchQuery: e.searchQuery,
     isSearchSuggestion: e.isSearchSuggestion
-  }), o.X), y = l.ZN.useStore(e => e.searchPlaceholder), O = l.ZN.useStore(e => e.inspectedExpressionPosition, o.X), v = i.useCallback(e => {
+  }), a.X), y = l.ZN.useStore(e => e.searchPlaceholder), O = l.ZN.useStore(e => e.inspectedExpressionPosition, a.X), v = i.useCallback(e => {
     var t;
     l.ZN.setActiveCategoryIndex("" === e ? 0 : d.c), l.ZN.setInspectedExpressionPosition(0, 0), l.ZN.setSearchPlaceholder(null), (0, c.ql)(e), null == (t = p.current) || t.scrollTo(0)
   }, [p]), I = i.useCallback(() => {
@@ -58,7 +58,7 @@ let p = i.forwardRef(function(e, t) {
         "aria-haspopup": "grid",
         "aria-controls": d.Vr,
         "aria-expanded": !0,
-        "aria-activedescendant": (0, a.NE)(d.Vr, O.columnIndex, O.rowIndex)
+        "aria-activedescendant": (0, o.NE)(d.Vr, O.columnIndex, O.rowIndex)
       }
     })
   })

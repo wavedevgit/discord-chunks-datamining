@@ -3,11 +3,11 @@
 n.d(t, {
   ZP: () => l,
   _k: () => s,
-  jW: () => a
+  jW: () => o
 });
 var r = n(818083),
   i = n(987338);
-let o = (0, r.B)({
+let a = (0, r.B)({
   kind: "user",
   id: "2025-03_invites_refresh",
   label: "Invites Refresh",
@@ -44,14 +44,14 @@ let o = (0, r.B)({
   }]
 });
 
-function a(e) {
+function o(e) {
   let {
     location: t
   } = e, {
     enabled: n,
     entrypoints: r,
     modal: i
-  } = o.getCurrentConfig({
+  } = a.getCurrentConfig({
     location: t
   });
   return {
@@ -68,7 +68,7 @@ function s(e) {
     enabled: n,
     entrypoints: r,
     modal: i
-  } = o.useExperiment({
+  } = a.useExperiment({
     location: t
   });
   return {
@@ -77,4 +77,4 @@ function s(e) {
     modal: i
   }
 }
-let l = o
+let l = a

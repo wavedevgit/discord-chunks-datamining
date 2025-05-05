@@ -7,8 +7,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(442837),
   l = n(481060),
   c = n(857395),
@@ -45,16 +45,16 @@ let E = i.memo(function(e) {
       src: t,
       tag: n,
       className: i,
-      size: o = _.Gg.SIZE_16
+      size: a = _.Gg.SIZE_16
     } = e;
     return null == t ? null : (0, r.jsx)("img", {
       src: t,
       alt: p.intl.formatToPlainString(p.t.uPLDZG, {
         tag: n
       }),
-      className: a()(h.badge, i),
-      width: o,
-      height: o
+      className: o()(h.badge, i),
+      width: a,
+      height: a
     })
   }),
   b = i.memo(function(e) {
@@ -62,7 +62,7 @@ let E = i.memo(function(e) {
       guildId: t,
       guildTag: n,
       guildBadge: i,
-      className: o,
+      className: a,
       textClassName: s,
       badgeClassName: c,
       onClick: u,
@@ -77,12 +77,12 @@ let E = i.memo(function(e) {
       tabIndex: null == u ? -1 : void 0,
       onClick: u,
       onMouseEnter: d,
-      className: a()(h.chipletContainerInner, b && h.chipletContainerInline, null != u && h.clickable, o),
+      className: o()(h.chipletContainerInner, b && h.chipletContainerInline, null != u && h.clickable, a),
       children: (0, r.jsxs)(l.Text, {
         variant: p,
         color: m,
         tag: "span",
-        className: a()(h.text, s),
+        className: o()(h.text, s),
         children: [null != i && "string" == typeof i ? (0, r.jsx)(E, {
           src: (0, f.Ic)(t, i, g),
           tag: null == n ? void 0 : n.toString(),
@@ -100,7 +100,7 @@ let E = i.memo(function(e) {
     let {
       primaryGuild: n,
       userId: i,
-      contextGuildId: o,
+      contextGuildId: a,
       className: _,
       containerClassName: p,
       textVariant: m,
@@ -115,11 +115,11 @@ let E = i.memo(function(e) {
       badge: R,
       guildId: P
     } = (0, f.Pb)(N);
-    return (0, f.yF)(i, o) && null != P ? O ? (0, r.jsx)(b, {
+    return (0, f.yF)(i, a) && null != P ? O ? (0, r.jsx)(b, {
       guildId: P,
       guildTag: C,
       guildBadge: R,
-      className: a()(h.noTooltip, _),
+      className: o()(h.noTooltip, _),
       textVariant: m,
       textColor: E,
       badgeSize: y,

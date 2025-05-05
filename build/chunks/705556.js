@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(442837),
-  o = n(481060),
-  a = n(549879),
+  a = n(481060),
+  o = n(549879),
   s = n(300284),
   l = n(314897),
   c = n(430824),
@@ -53,18 +53,18 @@ function m(e) {
   return E ? null == b ? (0, r.jsx)(d.tG, {
     action: "EDIT_PROFILE",
     text: f.intl.string(f.t.s5vZlZ),
-    icon: o.vdY,
+    icon: a.vdY,
     autoFocus: !0,
     fullWidth: p,
     onClick: () => {
-      null == g || g(), O(), (0, a.i)(m)
+      null == g || g(), O(), (0, o.i)(m)
     }
-  }) : (0, r.jsx)(o.yRy, {
+  }) : (0, r.jsx)(a.yRy, {
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsxs)(o.v2r, {
+      return (0, r.jsxs)(a.v2r, {
         className: _.popoutMenu,
         onSelect: void 0,
         navId: "edit-profile-popout",
@@ -72,30 +72,30 @@ function m(e) {
           t(), null == g || g()
         },
         "aria-label": f.intl.string(f.t.AXIHpa),
-        children: [(0, r.jsx)(o.sNh, {
+        children: [(0, r.jsx)(a.sNh, {
           id: "edit-server-profile",
           label: f.intl.string(f.t["PKQB/P"]),
           subtext: f.intl.string(f.t.VYHWKC),
           action: () => {
             v({
               action: "EDIT_GUILD_PROFILE"
-            }), y(), (0, a.i)(m)
+            }), y(), (0, o.i)(m)
           }
-        }), (0, r.jsx)(o.sNh, {
+        }), (0, r.jsx)(a.sNh, {
           id: "edit-main-profile",
           label: f.intl.string(f.t.HmFaFB),
           subtext: f.intl.string(f.t["+EERMj"]),
           action: () => {
             v({
               action: "EDIT_PROFILE"
-            }), O(), (0, a.i)(m)
+            }), O(), (0, o.i)(m)
           }
         })]
       })
     },
     children: e => (0, r.jsx)(d.tG, h({
       text: f.intl.string(f.t.s5vZlZ),
-      icon: o.vdY,
+      icon: a.vdY,
       autoFocus: !0,
       fullWidth: p
     }, e))

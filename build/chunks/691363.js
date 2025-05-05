@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 var r = n(181515),
   i = n(521834),
-  o = n(844781),
-  a = n(828091);
+  a = n(844781),
+  o = n(828091);
 e.exports = function(e) {
-  return o(e) ? r(a(e)) : i(e)
+  return a(e) ? r(o(e)) : i(e)
 }

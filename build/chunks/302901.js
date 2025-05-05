@@ -7,8 +7,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(512722),
   l = n.n(s),
   c = n(995295),
@@ -68,11 +68,11 @@ let g = e => {
   let {
     layerContext: t,
     className: n
-  } = e, [, o] = i.useContext(t), s = i.useCallback(e => {
-    o(e)
-  }, [o]);
+  } = e, [, a] = i.useContext(t), s = i.useCallback(e => {
+    a(e)
+  }, [a]);
   return (0, r.jsx)("div", {
-    className: a()(h, n),
+    className: o()(h, n),
     ref: s
   })
 };

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(717029),
   i = n(25487),
-  o = n(846042),
-  a = n(823498),
+  a = n(846042),
+  o = n(823498),
   s = n(964415);
 
 function l(e) {
@@ -97,7 +97,7 @@ var y = function(e) {
   function n() {
     var e;
     c(this, n);
-    for (var r = arguments.length, i = Array(r), o = 0; o < r; o++) i[o] = arguments[o];
+    for (var r = arguments.length, i = Array(r), a = 0; a < r; a++) i[a] = arguments[a];
     return b(m(e = t.call.apply(t, [this].concat(i))), "priority", 100), b(m(e), "incompatibleTokens", ["y", "Y", "u", "q", "Q", "M", "L", "w", "d", "D", "e", "c", "t", "T"]), e
   }
   return d(n, [{
@@ -105,13 +105,13 @@ var y = function(e) {
     value: function(e, t, n) {
       switch (t) {
         case "I":
-          return (0, o.ie)(i.z.week, e);
+          return (0, a.ie)(i.z.week, e);
         case "Io":
           return n.ordinalNumber(e, {
             unit: "week"
           });
         default:
-          return (0, o.ZL)(t.length, e)
+          return (0, a.ZL)(t.length, e)
       }
     }
   }, {
@@ -122,7 +122,7 @@ var y = function(e) {
   }, {
     key: "set",
     value: function(e, t, n) {
-      return (0, s.Z)((0, a.Z)(e, n))
+      return (0, s.Z)((0, o.Z)(e, n))
     }
   }]), n
 }(r._)

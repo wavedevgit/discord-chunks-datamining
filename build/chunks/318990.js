@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(442837),
-  a = n(481060),
+  a = n(442837),
+  o = n(481060),
   s = n(518950),
   l = n(357355),
   c = n(388032),
@@ -35,14 +35,14 @@ function f(e) {
 }
 
 function _() {
-  let e = (0, o.e7)([l.Z], () => l.Z.affinities.slice(0, 3)),
+  let e = (0, a.e7)([l.Z], () => l.Z.affinities.slice(0, 3)),
     t = e[0],
     {
       avatarSrc: n,
       eventHandlers: d
     } = (0, s.Z)({
       user: t,
-      size: a.EFr.SIZE_24,
+      size: o.EFr.SIZE_24,
       animateOnHover: !0
     }),
     _ = e => null != e.globalName ? e.globalName : e.username,
@@ -53,12 +53,12 @@ function _() {
     }) : "", [e]);
   return 0 === e.length ? null : (0, r.jsxs)("div", {
     className: u.container,
-    children: [(0, r.jsx)(a.qEK, f({
+    children: [(0, r.jsx)(o.qEK, f({
       className: u.__invalid_icon,
       src: n,
       "aria-label": t.username,
-      size: a.EFr.SIZE_24
-    }, d)), (0, r.jsx)(a.Text, {
+      size: o.EFr.SIZE_24
+    }, d)), (0, r.jsx)(o.Text, {
       className: u.text,
       variant: "text-sm/normal",
       color: "always-white",

@@ -173,7 +173,7 @@ function L(e) {
     item: t
   } = e, [n, o] = r.useState(!1);
   if (!("VIDEO" === t.type || O.isPlatformEmbedded && null == t.children && "IMAGE" === t.type && (0, m.gS)(t.url))) return null;
-  let i = (0, m.s$)(t.url);
+  let i = (0, m.s$)(t.url, m.wV);
   async function c() {
     if ((0, S.yg)(S.uG.SAVE_MEDIA_PRESSED), "VIDEO" === t.type && (0, b.q)({
         href: i
@@ -252,7 +252,7 @@ function N(e) {
   }(r);
   async function b() {
     (0, S.yg)(S.uG.COPY_IMAGE_PRESSED);
-    let e = (0, m.s$)(r.url);
+    let e = (0, m.s$)(r.url, m.wV);
     try {
       await h.ZP.copyImage(e), (0, l.showToast)((0, l.createToast)(T.intl.string(T.t.bhUpvL), l.ToastType.SUCCESS))
     } catch (e) {
@@ -305,7 +305,7 @@ function Z(e) {
   var t, n;
   let {
     item: o
-  } = e, i = r.useRef(null), [c, s] = r.useState(!1), u = g.Sb.useSetting(), d = "IMAGE" === o.type && null == o.children && (0, m.Lz)(o.url), p = (0, m.Jj)(o.url);
+  } = e, i = r.useRef(null), [c, s] = r.useState(!1), u = g.Sb.useSetting(), d = "IMAGE" === o.type && null == o.children && !o.animated && (0, m.Lz)(o.url), p = (0, m.Jj)(o.url);
   return u || d || p || (null == (n = o.sourceMetadata) || null == (t = n.identifier) ? void 0 : t.type) === "attachment" ? (0, a.jsx)(l.yRy, {
     targetElementRef: i,
     shouldShow: c,

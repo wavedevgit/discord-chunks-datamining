@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  o = n(442837),
-  a = n(481060),
+  a = n(442837),
+  o = n(481060),
   s = n(923928),
   l = n(468026),
   c = n(503856),
@@ -61,11 +61,11 @@ let m = () => {
     let e = i.useRef(null);
 
     function t() {
-      null !== e.current && ((0, a.Mr3)(e.current), e.current = null)
+      null !== e.current && ((0, o.Mr3)(e.current), e.current = null)
     }
-    let [s, f] = (0, o.Wu)([u.Z], () => [u.Z.shouldShowWarning(), u.Z.isAFKChannel()], []), p = i.useCallback(() => {
+    let [s, f] = (0, a.Wu)([u.Z], () => [u.Z.shouldShowWarning(), u.Z.isAFKChannel()], []), p = i.useCallback(() => {
       let t, n;
-      f ? (t = d.intl.string(d.t.Y40JkZ), n = d.intl.string(d.t["5J4yGR"])) : (t = d.intl.string(d.t.FJSZVF), n = d.intl.string(d.t.etJjgY)), e.current = (0, a.h7j)(e => (0, r.jsx)(l.default, _({
+      f ? (t = d.intl.string(d.t.Y40JkZ), n = d.intl.string(d.t["5J4yGR"])) : (t = d.intl.string(d.t.FJSZVF), n = d.intl.string(d.t.etJjgY)), e.current = (0, o.h7j)(e => (0, r.jsx)(l.default, _({
         title: t,
         body: n,
         onConfirm: m,
@@ -74,7 +74,7 @@ let m = () => {
         onConfirmSecondary: g
       }, e)))
     }, [f]), E = i.useCallback(() => {
-      (0, a.ZDy)(async () => {
+      (0, o.ZDy)(async () => {
         let {
           default: e
         } = await n.e("41281").then(n.bind(n, 669732));

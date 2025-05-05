@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(84735),
   l = n(437337),
   c = n(981729),
@@ -18,7 +18,7 @@ function _(e) {
   let {
     value: t,
     disabled: n = !1,
-    hideBorder: o = !1,
+    hideBorder: a = !1,
     tooltipNote: _,
     onChange: p,
     className: h,
@@ -40,7 +40,7 @@ function _(e) {
   return (0, r.jsxs)("div", {
     ref: y,
     style: m,
-    className: a()(f.container, h, {
+    className: o()(f.container, h, {
       [f.disabled]: n
     }),
     children: [(0, r.jsx)(s.t, {
@@ -76,7 +76,7 @@ function _(e) {
         type: d.g.ERROR,
         children: b
       })
-    }), !o && (0, r.jsx)(u.$, {
+    }), !a && (0, r.jsx)(u.$, {
       className: f.dividerDefault
     })]
   })

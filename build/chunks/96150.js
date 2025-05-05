@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(570140),
   i = n(317770),
-  o = n(280837),
-  a = n(592125),
+  a = n(280837),
+  o = n(592125),
   s = n(914010),
   l = n(823379);
 
@@ -32,7 +32,7 @@ class u extends i.Z {
         guildId: n
       } = e;
       if (null != t) {
-        let e = a.Z.getChannel(t);
+        let e = o.Z.getChannel(t);
         if (null == e || e.isGuildStageVoice()) return
       }
       this.terminate();
@@ -40,7 +40,7 @@ class u extends i.Z {
       this.handleDisconnectFromStageChannel(r)
     }), c(this, "handleDisconnectFromStageChannel", e => {
       let t = s.Z.getGuildId();
-      (0, o.O)([t, e].filter(l.lm))
+      (0, a.O)([t, e].filter(l.lm))
     }), c(this, "handleLogout", () => {
       this.terminate(), this.handleDisconnectFromStageChannel(null)
     })

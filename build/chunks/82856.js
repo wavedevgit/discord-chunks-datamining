@@ -8,8 +8,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(442837),
-  a = n(481060),
+  a = n(442837),
+  o = n(481060),
   s = n(819640),
   l = n(751648),
   c = n(790542),
@@ -61,8 +61,8 @@ function E(e, t) {
   if (null == e) return {};
   var n, r, i = b(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -70,13 +70,13 @@ function E(e, t) {
 function b(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let y = "balance-widget-pill-overlay",
-  O = () => (0, a.nfh)(y),
-  v = () => (0, a.Mr3)(y),
+  O = () => (0, o.nfh)(y),
+  v = () => (0, o.Mr3)(y),
   I = e => {
     let {
       hideImmediately: t
@@ -89,12 +89,12 @@ let y = "balance-widget-pill-overlay",
     modalKey: y,
     onCloseCallback: l.vp,
     onCloseRequest: async () => {
-      await (0, l.vp)(), (0, a.pTH)()
+      await (0, l.vp)(), (0, o.pTH)()
     }
   };
 
 function T(e) {
-  (0, a.ZDy)(async () => t => (0, r.jsx)(C, h({
+  (0, o.ZDy)(async () => t => (0, r.jsx)(C, h({
     onClick: _.dG4
   }, e, t)), S)
 }
@@ -102,7 +102,7 @@ function T(e) {
 function A(e) {
   let {
     shouldOpen: t
-  } = (0, o.cj)([u.Z], () => ({
+  } = (0, a.cj)([u.Z], () => ({
     shouldOpen: u.Z.balanceWidgetPillIsOverlaid
   }));
   return (0, i.useEffect)(() => {
@@ -134,17 +134,17 @@ function C(e) {
   } = e;
   E(e, ["backgroundElementRef", "onClick", "onClose"]);
   let {
-    balance: a
+    balance: o
   } = (0, c.A)(), p = async () => {
     await (0, l.vp)(), await i()
   }, {
     hideImmediately: m
-  } = (0, o.cj)([u.Z], () => ({
+  } = (0, a.cj)([u.Z], () => ({
     hideImmediately: u.Z.hidePillOverlayImmediately
   })), {
     hasLayers: b,
     lastLayerIsNotShop: y
-  } = (0, o.cj)([s.Z], () => {
+  } = (0, a.cj)([s.Z], () => {
     let e = s.Z.getLayers(),
       t = e.length > 0 && e[e.length - 1] !== _.S9g.COLLECTIBLES_SHOP;
     return {
@@ -160,7 +160,7 @@ function C(e) {
       onClick: async e => {
         void 0 !== n && n(e), await p()
       },
-      balance: a,
+      balance: o,
       balanceWidgetMode: d.b6.DEFAULT
     })
   }))

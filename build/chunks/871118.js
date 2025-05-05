@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(442837),
   l = n(481060),
   c = n(592125),
@@ -21,21 +21,21 @@ function h(e) {
     isLoading: t,
     noText: n,
     noImage: i,
-    previewText: o,
+    previewText: a,
     className: s
   } = e;
   return (0, r.jsx)("div", {
-    className: a()(p.emptyPreviewContainer, s),
+    className: o()(p.emptyPreviewContainer, s),
     children: t ? (0, r.jsx)(l.$jN, {}) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: a()(p.emptyPreviewImage, {
+        className: o()(p.emptyPreviewImage, {
           [p.noImage]: i
         })
       }), n ? null : (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
         color: "none",
         className: p.emptyPreviewText,
-        children: null != o ? o : _.intl.string(_.t.uQZTBQ)
+        children: null != a ? a : _.intl.string(_.t.uQZTBQ)
       })]
     })
   })
@@ -45,8 +45,8 @@ function m(e) {
   let {
     stream: t,
     className: n,
-    noText: o = !1,
-    noImage: a = !1
+    noText: a = !1,
+    noImage: o = !1
   } = e, l = (0, s.e7)([c.Z], () => c.Z.getBasicChannel(t.channelId)), m = (0, s.e7)([u.Z], () => null != l && u.Z.canBasicChannel(f.S7T.CONNECT, l)), {
     previewUrl: g,
     isLoading: E
@@ -58,8 +58,8 @@ function m(e) {
   return null == y ? (0, r.jsx)(h, {
     className: n,
     isLoading: E,
-    noText: o,
-    noImage: a,
+    noText: a,
+    noImage: o,
     previewText: m ? void 0 : _.intl.string(_.t.pgUTZG)
   }) : (0, r.jsx)("div", {
     className: n,

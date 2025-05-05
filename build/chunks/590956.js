@@ -6,8 +6,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(772848),
   l = n(481060),
   c = n(596454),
@@ -63,7 +63,7 @@ let I = e => {
     var t;
     let {
       node: n,
-      tooltipPosition: o = p.b_.position,
+      tooltipPosition: a = p.b_.position,
       enableClick: s = !0,
       channelId: u,
       messageId: d
@@ -79,7 +79,7 @@ let I = e => {
       text: (0, p.Y)(n.name, s),
       "aria-label": m
     }, p.b_), {
-      position: o,
+      position: a,
       shouldShow: !g,
       onTooltipShow: () => {
         s && T({
@@ -94,7 +94,7 @@ let I = e => {
           var n;
           b(!0), null == e || null == (n = e.onClick) || n.call(e, t)
         },
-        className: a()(E.emojiContainer, {
+        className: o()(E.emojiContainer, {
           [E.emojiContainerClickable]: s,
           [E.emojiJumbo]: n.jumboable
         }),
@@ -123,7 +123,7 @@ let I = e => {
     let {
       node: t,
       isInteracting: n,
-      tooltipPosition: o = p.b_.position,
+      tooltipPosition: a = p.b_.position,
       enableClick: u = !0,
       channelId: g,
       messageId: b
@@ -142,7 +142,7 @@ let I = e => {
       text: (0, p.Y)(t.name, u),
       "aria-label": t.name
     }, p.b_), {
-      position: o,
+      position: a,
       shouldShow: !N,
       onTooltipShow: () => {
         A(!0), u && (T({
@@ -167,7 +167,7 @@ let I = e => {
           }), A(!1))
         },
         tag: "span",
-        className: a()(E.emojiContainer, {
+        className: o()(E.emojiContainer, {
           [E.emojiContainerClickable]: u,
           [E.emojiJumbo]: t.jumboable
         }),

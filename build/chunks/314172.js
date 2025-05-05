@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(442837),
-  o = n(693789),
-  a = n(235874),
+  a = n(693789),
+  o = n(235874),
   s = n(481060),
   l = n(944613),
   c = n(607070),
@@ -68,7 +68,7 @@ function y(e) {
   } = e, v = (0, i.e7)([c.Z], () => c.Z.roleStyle);
   if (!(0, i.e7)([d.Z], () => d.Z.can(_.Plq.MANAGE_ROLES, t))) return null;
   let I = e => (0, u.Gy)(t.id, e.id) && !e.managed && d.Z.isRoleHigher(t, E, e) && -1 === n.roles.indexOf(e.id);
-  return (0, r.jsx)(a.y, {
+  return (0, r.jsx)(o.y, {
     targetElementRef: O,
     position: "bottom",
     align: "center",
@@ -91,9 +91,9 @@ function y(e) {
       children: (0, r.jsxs)(f.kF, b(g({
         ref: O,
         className: h.button,
-        color: o.zx.Colors.CUSTOM,
+        color: a.zx.Colors.CUSTOM,
         themeColor: "none",
-        size: o.zx.Sizes.NONE,
+        size: a.zx.Sizes.NONE,
         grow: !1,
         "aria-label": p.intl.string(p.t.icyMgY),
         buttonRef: O

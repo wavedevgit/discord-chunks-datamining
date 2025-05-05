@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(704826), n(35282);
 var r = n(200651),
   i = n(192379),
-  o = n(481060),
-  a = n(907040),
+  a = n(481060),
+  o = n(907040),
   s = n(981631),
   l = n(185923),
   c = n(388032),
@@ -25,10 +25,10 @@ function _(e) {
     className: u.customGiftContent,
     children: [(0, r.jsxs)("div", {
       className: u.customGiftHeader,
-      children: [(0, r.jsx)(o.Text, {
+      children: [(0, r.jsx)(a.Text, {
         variant: "text-md/bold",
         children: c.intl.string(c.t.Hl2IgY)
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         children: c.intl.string(c.t.stGFAw)
       })]
@@ -36,7 +36,7 @@ function _(e) {
   }), p = e => {
     null != t && (t(e), l(!1))
   };
-  return (0, r.jsx)(o.yRy, {
+  return (0, r.jsx)(a.yRy, {
     shouldShow: s,
     position: "bottom",
     align: "left",
@@ -46,8 +46,8 @@ function _(e) {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(o.VqE, {
-        children: (0, r.jsx)(a.Z, {
+      return (0, r.jsx)(a.VqE, {
+        children: (0, r.jsx)(o.Z, {
           analyticsOverride: d,
           closePopout: t,
           onSelectEmoji: p,
@@ -66,27 +66,27 @@ function _(e) {
     },
     children: () => (0, r.jsx)("div", {
       className: u.container,
-      children: (0, r.jsx)(o.P3F, {
+      children: (0, r.jsx)(a.P3F, {
         className: u.emoji,
         onClick: () => l(!0),
         children: (null == n ? void 0 : n.name) == null ? (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(o.EO4, {
+          children: [(0, r.jsx)(a.EO4, {
             size: "custom",
             color: "currentColor",
             className: u.emojiIcon,
             width: 14,
             height: 14
-          }), (0, r.jsx)(o.Text, {
+          }), (0, r.jsx)(a.Text, {
             className: u.text,
             variant: "text-sm/semibold",
             children: c.intl.string(c.t.Hl2IgY)
           })]
         }) : (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(o.Text, {
+          children: [(0, r.jsx)(a.Text, {
             className: u.textSelected,
             variant: "text-sm/semibold",
             children: null == n.guildId ? n.optionallyDiverseSequence : null
-          }), (0, r.jsx)(o.Text, {
+          }), (0, r.jsx)(a.Text, {
             className: u.text,
             variant: "text-sm/semibold",
             children: n.name.replace(/_/g, " ")

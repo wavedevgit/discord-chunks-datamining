@@ -6,8 +6,8 @@ n.d(t, {
 }), n(388685);
 var r = n(192379),
   i = n(410030),
-  o = n(359135),
-  a = n(4242),
+  a = n(359135),
+  o = n(4242),
   s = n(231338);
 let l = "14",
   c = "1A",
@@ -18,9 +18,9 @@ let l = "14",
 
 function p(e) {
   let t = (0, i.ZP)(),
-    [n, o] = (0, r.useState)({});
+    [n, a] = (0, r.useState)({});
   return (0, r.useEffect)(() => {
-    null != e && o({
+    null != e && a({
       "--custom-nameplate": (t === s.BR.LIGHT ? e.palette.lightBackground : e.palette.darkBackground) + u,
       "--custom-nameplate-neutral": t !== s.BR.LIGHT ? "rgba(0, 0, 0, 0.22)" : "rgba(255, 255, 255  , 0.22)",
       "--custom-nameplate-neutral-hovered": t !== s.BR.LIGHT ? "rgba(0, 0, 0, 0.33)" : "rgba(255, 255, 255  , 0.33)"
@@ -28,20 +28,20 @@ function p(e) {
   }, [e, t]), n
 }
 
-function h(e, t, n, a, s, l) {
+function h(e, t, n, o, s, l) {
   let c = (0, i.ZP)(),
     u = (0, r.useMemo)(() => null == t ? null : m({
       palette: t.palette,
       theme: c,
       hover: n,
-      selected: a,
+      selected: o,
       placement: s,
       updatedOpacity: l
-    }), [t, n, a, c, s, l]),
+    }), [t, n, o, c, s, l]),
     [d, f] = (0, r.useState)(null != u ? {
       background: u
     } : {}),
-    _ = s === o.i.MEMBER_LIST;
+    _ = s === a.i.MEMBER_LIST;
   return (0, r.useEffect)(() => {
     if (null == u) return;
     if (null == e || null == e.current) return void f({
@@ -69,10 +69,10 @@ function m(e) {
     placement: p,
     updatedOpacity: h
   } = e;
-  if (!(0, a.ic)(t)) return;
+  if (!(0, o.ic)(t)) return;
   let m = n === s.BR.LIGHT ? t.lightBackground : t.darkBackground;
-  if (p === o.i.ACCOUNT) return n === s.BR.LIGHT ? "linear-gradient(90deg, ".concat(m).concat(c, " 0%, ").concat(m).concat(d, " 100%)") : "linear-gradient(90deg, ".concat(m).concat(c, " 0%, ").concat(m).concat(f, " 100%)");
-  if (p === o.i.PREVIEW) return "linear-gradient(90deg, ".concat(m).concat(c, " 0%, ").concat(m).concat(d, " 100%)");
-  let g = !0 === h ? "".concat(m).concat(i ? _ : r && p === o.i.MEMBER_LIST ? d : u) : "".concat(m).concat(r || i ? n !== s.BR.LIGHT ? _ : d : u);
+  if (p === a.i.ACCOUNT) return n === s.BR.LIGHT ? "linear-gradient(90deg, ".concat(m).concat(c, " 0%, ").concat(m).concat(d, " 100%)") : "linear-gradient(90deg, ".concat(m).concat(c, " 0%, ").concat(m).concat(f, " 100%)");
+  if (p === a.i.PREVIEW) return "linear-gradient(90deg, ".concat(m).concat(c, " 0%, ").concat(m).concat(d, " 100%)");
+  let g = !0 === h ? "".concat(m).concat(i ? _ : r && p === a.i.MEMBER_LIST ? d : u) : "".concat(m).concat(r || i ? n !== s.BR.LIGHT ? _ : d : u);
   return "linear-gradient(90deg, transparent 0%, ".concat(m).concat(l, " 20%, ").concat(m).concat(l, " 50%, ").concat(g, " 100%)")
 }

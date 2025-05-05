@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  t: () => o
+  t: () => a
 });
 var r = n(436759),
   i = n(240773);
 
-function o(e) {
+function a(e) {
   let t = {};
   for (let n of (Object.defineProperty(t, i.C, {
       enumerable: !1,

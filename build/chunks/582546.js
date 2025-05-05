@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(442837),
-  o = n(481060),
-  a = n(230711),
+  a = n(481060),
+  o = n(230711),
   s = n(26033),
   l = n(740605),
   c = n(180335),
@@ -30,7 +30,7 @@ function h(e) {
     return (null == (e = d.default.getCurrentUser()) ? void 0 : e.id) === n.id
   }), y = (0, i.e7)([u.Z], () => u.Z.hasConnectedAccount());
   if ("recent" !== m || !(0, c.AZ)(h)) return null;
-  if (!y) return (0, r.jsx)(o.sNh, {
+  if (!y) return (0, r.jsx)(a.sNh, {
     id: "connect-spotify",
     label: p.intl.formatToPlainString(p.t.XWSHTU, {
       platform: _.ai
@@ -38,12 +38,12 @@ function h(e) {
     action: () => {
       null == g || g({
         action: "PRESS_CONNECT_SPOTIFY_MENU_ITEM"
-      }), a.Z.open(f.oAB.CONNECTIONS), null == E || E()
+      }), o.Z.open(f.oAB.CONNECTIONS), null == E || E()
     }
   });
   if (b) return null;
   let O = (0, s.dU)(h) ? null == (t = h.extra.entries[0]) ? void 0 : t.media : h.extra.media;
-  return null == O ? null : (0, r.jsx)(o.sNh, {
+  return null == O ? null : (0, r.jsx)(a.sNh, {
     id: "play-on-spotify",
     label: p.intl.string(p.t.rRffNz),
     action: () => {

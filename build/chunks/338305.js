@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(922770),
-  o = n(466377),
-  a = n(388032),
+  a = n(466377),
+  o = n(388032),
   s = n(423931);
 
 function l(e, t, n) {
@@ -50,9 +50,9 @@ function d(e, t) {
 }
 
 function f(e) {
-  return (0, r.jsx)(o.Y0, d(c({}, e), {
-    "aria-label": a.intl.string(a.t.ZTNur6),
-    size: o.Cg.SMALL,
+  return (0, r.jsx)(a.Y0, d(c({}, e), {
+    "aria-label": o.intl.string(o.t.ZTNur6),
+    size: a.Cg.SMALL,
     children: (0, r.jsx)("div", {
       className: s.spinnerContainer,
       children: (0, r.jsx)(i.$, {})

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(568611),
   l = n(481060),
   c = n(359135),
@@ -56,8 +56,8 @@ function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -65,13 +65,13 @@ function m(e, t) {
 function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let E = i.forwardRef(function(e, t) {
   var n, {
-      avatar: o,
+      avatar: a,
       name: f,
       nameplate: p,
       children: g,
@@ -90,7 +90,7 @@ let E = i.forwardRef(function(e, t) {
       focusProps: P
     } = e,
     w = m(e, ["avatar", "name", "nameplate", "children", "subText", "decorators", "onClick", "hovered", "selected", "muted", "to", "avatarClassName", "selectedClassName", "innerClassName", "wrapContent", "highlighted", "focusProps"]);
-  w.className = a()(w.className, d.container, {
+  w.className = o()(w.className, d.container, {
     [d.selected]: v,
     [d.highlighted]: R,
     [null != A ? A : ""]: v,
@@ -98,7 +98,7 @@ let E = i.forwardRef(function(e, t) {
   }), w["aria-selected"] = null != (n = w["aria-selected"]) ? n : v;
   let D = i.useRef(null),
     L = (0, r.jsxs)("div", {
-      className: a()(d.childContainer, {
+      className: o()(d.childContainer, {
         [d.nameplated]: null != p
       }),
       children: [(0, r.jsx)(u.Z, {
@@ -109,19 +109,19 @@ let E = i.forwardRef(function(e, t) {
         placement: c.i.MEMBER_LIST
       }), (0, r.jsxs)("div", {
         ref: D,
-        className: a()(N, d.layout, {
+        className: o()(N, d.layout, {
           [d.muted]: !v && I,
           [d.wrappedLayout]: C
         }),
         children: [(0, r.jsx)("div", {
-          className: a()(d.avatar, T),
-          children: o
+          className: o()(d.avatar, T),
+          children: a
         }), (0, r.jsxs)("div", {
           className: d.content,
           children: [(0, r.jsxs)("div", {
             className: d.nameAndDecorators,
             children: [(0, r.jsx)("div", {
-              className: a()(d.name, {
+              className: o()(d.name, {
                 [d.wrappedName]: C
               }),
               children: f

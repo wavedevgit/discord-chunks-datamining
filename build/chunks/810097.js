@@ -7,8 +7,8 @@ n.d(t, {
 }), n(314940), n(388685);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(392711),
   l = n(278074),
   c = n(442837),
@@ -80,7 +80,7 @@ function P(e) {
   let {
     user: t,
     sourceType: n,
-    isVisible: o,
+    isVisible: a,
     isExpandable: v,
     interactionSourceId: S,
     targetRef: A,
@@ -94,7 +94,7 @@ function P(e) {
   } = (0, g.Xo)(), {
     live: j,
     stream: U
-  } = (0, m.Z)(t.id), G = !o && x !== b.lY.MODAL && x !== b.lY.MODAL_V2 && (0, l.EQ)(n).with(b.n_.STATUS, () => 0 === j.length && null == U).with(b.n_.ACTIVITY, () => !0).with(b.n_.AVATAR, () => !1).exhaustive(), [B, V] = i.useState(G);
+  } = (0, m.Z)(t.id), G = !a && x !== b.lY.MODAL && x !== b.lY.MODAL_V2 && (0, l.EQ)(n).with(b.n_.STATUS, () => 0 === j.length && null == U).with(b.n_.ACTIVITY, () => !0).with(b.n_.AVATAR, () => !1).exhaustive(), [B, V] = i.useState(G);
   if (i.useEffect(() => {
       B && !G && V(!1)
     }, [B, G]), t.bot || D || !L) return null;
@@ -128,9 +128,9 @@ function P(e) {
       e.animationName === (0, s.get)(O, "fadeInAndOut") && V(!1)
     };
   return (0, r.jsxs)(f.ZP, {
-    className: a()(O.popover, {
+    className: o()(O.popover, {
       [O.fadeInAndOut]: B,
-      [O.visible]: o,
+      [O.visible]: a,
       [O.expandable]: v,
       [O.statusPopover]: n === b.n_.STATUS,
       [O.avatarPopover]: n === b.n_.AVATAR,
@@ -139,7 +139,7 @@ function P(e) {
     onAnimationEnd: B ? H : void 0,
     children: [(0, r.jsx)(d.DY3, {
       text: y.intl.string(y.t.nhaI4e),
-      shouldShow: o,
+      shouldShow: a,
       className: O.tooltipContainer,
       delay: 0,
       "aria-label": !1,
@@ -155,7 +155,7 @@ function P(e) {
       })
     }), (0, r.jsx)(d.DY3, {
       text: y.intl.string(y.t.RmDYKC),
-      shouldShow: o,
+      shouldShow: a,
       className: O.tooltipContainer,
       delay: 0,
       "aria-label": !1,
@@ -176,7 +176,7 @@ function P(e) {
       };
       return (0, r.jsx)(d.DY3, {
         text: y.intl.string(y.t.UKOtz8),
-        shouldShow: o,
+        shouldShow: a,
         className: O.tooltipContainer,
         delay: 0,
         "aria-label": !1,

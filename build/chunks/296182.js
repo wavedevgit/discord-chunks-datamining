@@ -1,31 +1,35 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Jj: () => c,
-  Lz: () => d,
-  gS: () => u,
-  s$: () => f
+  Jj: () => u,
+  Lz: () => f,
+  gS: () => d,
+  s$: () => _,
+  wV: () => s
 });
 var r = n(829883),
   i = n(378233),
-  o = n(591759),
-  a = n(998502);
-let s = "https://media.discordapp.net",
-  l = "cdn.discordapp.com";
+  a = n(591759),
+  o = n(998502);
+let s = "png",
+  l = "https://media.discordapp.net",
+  c = "cdn.discordapp.com";
 
-function c(e) {
+function u(e) {
   return !((0, i.B0)(e) || (0, r.zt)(e))
 }
 
-function u(e) {
-  return a.ZP.canSaveImage(e) && o.Z.isDiscordAssetUrl(e) && c(e)
-}
-
 function d(e) {
-  return a.ZP.canCopyImage(e) && o.Z.isDiscordAssetUrl(e) && c(e)
+  return o.ZP.canSaveImage(e) && a.Z.isDiscordAssetUrl(e) && u(e)
 }
 
 function f(e) {
-  let t = o.Z.toURLSafe(e);
-  return null == t || t.host === l ? e : (t.origin === s && (t.host = l, t.searchParams.delete("size")), t.searchParams.delete("width"), t.searchParams.delete("height"), t.searchParams.delete("quality"), t.searchParams.delete("format"), t.toString())
+  return o.ZP.canCopyImage(e) && a.Z.isDiscordAssetUrl(e) && u(e)
+}
+
+function _(e, t) {
+  let n = a.Z.toURLSafe(e);
+  if (null == n || n.host === c) return e;
+  let r = (0, o.mD)(e);
+  return n.origin === l && (n.host = c, n.searchParams.delete("size")), n.searchParams.delete("width"), n.searchParams.delete("height"), n.searchParams.delete("quality"), n.searchParams.delete("format"), null == r && null != t && n.searchParams.append("format", t), n.toString()
 }
