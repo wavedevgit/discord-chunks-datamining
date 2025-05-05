@@ -849,26 +849,27 @@ let eD = {
           messageReference: E,
           allowedMentions: b,
           poll: y,
-          contentInventoryEntry: O
+          contentInventoryEntry: O,
+          attachments: v
         } = n,
-        v = null != (i = n.flags) ? i : 0,
-        [A, N] = (0, X.Z)(c);
-      A && (c = N, v = (0, ed.pj)(v, eg.iLy.SUPPRESS_NOTIFICATIONS));
-      let C = (null == (r = n.messageReference) ? void 0 : r.type) === eg.Uvt.FORWARD;
-      if ("" === c && null == _ && null == m && null == y && null == O && !C) return Promise.resolve();
-      let R = null != E ? eg.uaV.REPLY : eg.uaV.DEFAULT,
-        P = null != (a = n.nonce) ? a : (0, M.r)(),
-        w = P;
+        A = null != (i = n.flags) ? i : 0,
+        [N, C] = (0, X.Z)(c);
+      N && (c = C, A = (0, ed.pj)(A, eg.iLy.SUPPRESS_NOTIFICATIONS));
+      let R = (null == (r = n.messageReference) ? void 0 : r.type) === eg.Uvt.FORWARD;
+      if ("" === c && null == _ && null == m && null == y && null == O && !R && (null == v || 0 === v.length)) return Promise.resolve();
+      let P = null != E ? eg.uaV.REPLY : eg.uaV.DEFAULT,
+        w = null != (a = n.nonce) ? a : (0, M.r)(),
+        j = w;
       if (!1 !== n.eagerDispatch) {
         let t = (0, x.ZP)({
           channelId: e,
           content: c,
           tts: f,
-          type: R,
+          type: P,
           messageReference: E,
           allowedMentions: b,
-          flags: 0 !== v ? v : void 0,
-          nonce: P,
+          flags: 0 !== A ? A : void 0,
+          nonce: w,
           poll: (0, B.x9)(y)
         });
         (0, U.EL)(e, t.id), null != m && (t.sticker_items = m.map(e => Q.Z.getStickerById(e)).filter(e => null != e)), eL.receiveMessage(e, t, !0, n)
@@ -882,16 +883,16 @@ let eD = {
           } = eL.validateMessage(u, t, e);
         eL.sendBotMessage(e, n, r)
       }
-      let j = {
+      let F = {
         type: l.$V.SEND,
         message: {
           channelId: e,
           content: c,
-          nonce: P,
+          nonce: w,
           tts: f,
           message_reference: E,
           allowed_mentions: b,
-          flags: v
+          flags: A
         }
       };
       if (null != _) {
@@ -904,14 +905,14 @@ let eD = {
             {
               activity: n
             } = _;
-          null != n.party && null != n.party.id && (t.party_id = n.party.id), j.message.application_id = n.application_id, j.message.activity = t
+          null != n.party && null != n.party.id && (t.party_id = n.party.id), F.message.application_id = n.application_id, F.message.activity = t
         }
       }
-      return null != y && (j.message.poll = y), null != m && (j.message.sticker_ids = m), G.Z.isEnabled() && (j.message.has_poggermode_enabled = !0), null != O && (j.message.content_inventory_entry = O), null != g && (j.message.confetti_potion = (0, H.vY)(g), g.callback()), new Promise((t, r) => {
+      return null != y && (F.message.poll = y), null != m && (F.message.sticker_ids = m), G.Z.isEnabled() && (F.message.has_poggermode_enabled = !0), null != O && (F.message.content_inventory_entry = O), null != g && (F.message.confetti_potion = (0, H.vY)(g), g.callback()), null != v && v.length > 0 && (F.message.attachments = v), new Promise((t, r) => {
         let i = Date.now(),
           a = l.ZP.length,
           s = Math.floor(1e4 * Math.random());
-        eT.info("Queueing message to be sent LogId:".concat(s)), l.ZP.enqueue(j, s => {
+        eT.info("Queueing message to be sent LogId:".concat(s)), l.ZP.enqueue(F, s => {
           let u = Date.now() - i;
           if (s.ok) {
             L.Z.donateSentMessage(c, e), eL.receiveMessage(e, s.body, !0, {
@@ -942,7 +943,7 @@ let eD = {
                 joinRequestUserId: n
               })
             }
-            D.Z.recordMessageSendApiResponse(P), o.Z.dispatch({
+            D.Z.recordMessageSendApiResponse(w), o.Z.dispatch({
               type: "SLOWMODE_RESET_COOLDOWN",
               slowmodeType: el.S.SendMessage,
               channelId: e
@@ -986,17 +987,17 @@ let eD = {
                 })
               } else I.U8.has(s.body.code) ? o.Z.dispatch({
                 type: "MESSAGE_SEND_FAILED_AUTOMOD",
-                messageData: j,
+                messageData: F,
                 errorResponseBody: {
                   code: s.body.code,
                   message: s.body.message
                 }
               }) : s.body.code === eg.evJ.POGGERMODE_TEMPORARILY_DISABLED ? o.Z.dispatch({
                 type: "POGGERMODE_TEMPORARILY_DISABLED"
-              }) : null != y || C || null != O || eL.sendClydeError(e, s.body.code);
-            t ? eL.deleteMessage(e, w, !0) : (o.Z.dispatch({
+              }) : null != y || R || null != O || eL.sendClydeError(e, s.body.code);
+            t ? eL.deleteMessage(e, j, !0) : (o.Z.dispatch({
               type: "MESSAGE_SEND_FAILED",
-              messageId: w,
+              messageId: j,
               channelId: e,
               shouldNotify: !n.doNotNotifyOnError
             }), (0, k.x)({
