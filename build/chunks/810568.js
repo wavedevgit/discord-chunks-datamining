@@ -11,8 +11,8 @@ n.d(t, {
 });
 var r = n(772848),
   i = n(146282),
-  o = n(626135),
-  a = n(981631),
+  a = n(626135),
+  o = n(981631),
   s = n(206583),
   l = function(e) {
     return e[e.FollowGame = 0] = "FollowGame", e[e.UnfollowGame = 1] = "UnfollowGame", e[e.ClickMessageUser = 2] = "ClickMessageUser", e[e.SendMessageUser = 3] = "SendMessageUser", e[e.JoinVC = 4] = "JoinVC", e[e.WatchStream = 5] = "WatchStream", e[e.ClickSimilarGame = 6] = "ClickSimilarGame", e[e.WebsiteLink = 7] = "WebsiteLink", e[e.XLink = 8] = "XLink", e[e.YouTubeLink = 9] = "YouTubeLink", e[e.ShowMore = 10] = "ShowMore", e[e.ShowLess = 11] = "ShowLess", e[e.JoinOfficialServer = 12] = "JoinOfficialServer", e[e.ClickImage = 13] = "ClickImage", e
@@ -29,7 +29,7 @@ let u = () => (0, r.Z)(),
       applicationId: l,
       authorId: c
     } = e;
-    return o.default.track(a.rMx.GAME_PROFILE_OPEN, {
+    return a.default.track(o.rMx.GAME_PROFILE_OPEN, {
       view_id: t,
       source: n,
       game_name: r,
@@ -48,7 +48,7 @@ let u = () => (0, r.Z)(),
       similarGames: u,
       officialGuildId: d
     } = e;
-    o.default.track(a.rMx.GAME_PROFILE_CLOSE, {
+    a.default.track(o.rMx.GAME_PROFILE_CLOSE, {
       view_id: t,
       game_name: n,
       application_id: r,
@@ -69,7 +69,7 @@ let u = () => (0, r.Z)(),
       viewId: l,
       officialGuildId: c
     } = e;
-    o.default.track(a.rMx.GAME_PROFILE_ACTION, {
+    a.default.track(o.rMx.GAME_PROFILE_ACTION, {
       game_name: t,
       application_id: n,
       action: r,
@@ -88,7 +88,7 @@ let u = () => (0, r.Z)(),
       feedback: s,
       submitted: l
     } = e;
-    return o.default.track(a.rMx.GAME_PROFILE_FEEDBACK, {
+    return a.default.track(o.rMx.GAME_PROFILE_FEEDBACK, {
       view_id: t,
       application_id: n,
       suggested_game_name: r,

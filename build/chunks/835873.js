@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  w: () => o
+  w: () => a
 });
 var r = n(668781),
   i = n(388032);
-let o = () => {
+let a = () => {
   r.Z.show({
     title: i.intl.string(i.t.otsg2d),
     body: i.intl.string(i.t["/Yx5qa"]),

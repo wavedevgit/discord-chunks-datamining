@@ -3,10 +3,10 @@
 n.d(t, {
   Z: () => y
 }), n(388685);
-var r = n(200651),
-  i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+var r = n(255367),
+  i = n(73800),
+  a = n(120356),
+  o = n.n(a),
   s = n(512722),
   l = n.n(s),
   c = n(442837),
@@ -56,7 +56,7 @@ class b extends i.Component {
       eulaId: e,
       applicationName: t,
       hasPreviouslyAcceptedEULA: i,
-      forceShow: o,
+      forceShow: a,
       disabled: s,
       className: c,
       checkboxClassname: d,
@@ -73,12 +73,12 @@ class b extends i.Component {
       hasAcceptedEULA: N,
       hasAcceptedWithdrawalWaiver: C
     } = this.state;
-    return (l()(!v || null != T, "subscriptionPlan cannot be null if shouldShowUpdatedPaymentModal is true"), o || null != e && !i || O) ? (0, r.jsxs)("div", {
+    return (l()(!v || null != T, "subscriptionPlan cannot be null if shouldShowUpdatedPaymentModal is true"), a || null != e && !i || O) ? (0, r.jsxs)("div", {
       className: c,
       children: [O && (0, r.jsx)(u.vwX, {
         className: m.formTitle,
         children: h.intl.string(h.t.Ogvn5u)
-      }), null != e && (o || !i) ? (0, r.jsx)(u.XZJ, {
+      }), null != e && (a || !i) ? (0, r.jsx)(u.XZJ, {
         type: u.XZJ.Types.INVERTED,
         value: N,
         onChange: this.handleToggleEULAAcceptance,
@@ -101,7 +101,7 @@ class b extends i.Component {
           })
         })
       }) : null, null == b ? null : (0, r.jsx)("div", {
-        className: a()(m.finePrint, A),
+        className: o()(m.finePrint, A),
         children: b
       }), O ? (0, r.jsxs)("div", {
         className: c,
@@ -110,9 +110,9 @@ class b extends i.Component {
           value: C,
           onChange: this.handleToggleEUWithdralWaiverAcceptance,
           disabled: s,
-          className: a()(m.checkbox, d),
+          className: o()(m.checkbox, d),
           children: (0, r.jsx)("div", {
-            className: a()(m.checkboxLabel, g),
+            className: o()(m.checkboxLabel, g),
             children: h.intl.string(h.t.DFCVNz)
           })
         }), (0, r.jsx)("div", {

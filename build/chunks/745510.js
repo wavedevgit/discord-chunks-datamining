@@ -4,10 +4,10 @@ n.d(t, {
   d: () => m,
   h: () => h
 });
-var r = n(200651),
-  i = n(192379),
-  o = n(995899),
-  a = n(399606),
+var r = n(255367),
+  i = n(73800),
+  a = n(505266),
+  o = n(399606),
   s = n(607070),
   l = n(981631);
 
@@ -70,7 +70,7 @@ function m(e) {
     baseConfig: c,
     addClickListener: d,
     removeClickListener: m
-  } = e, g = (0, o.uR)(n, l), E = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), b = i.useMemo(() => E ? p : {
+  } = e, g = (0, a.uR)(n, l), E = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), b = i.useMemo(() => E ? p : {
     confettiCanvas: n,
     cannon: g,
     createConfetti: (e, t) => g.createConfetti(u({}, c, e), t),

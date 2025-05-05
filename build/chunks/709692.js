@@ -7,10 +7,10 @@ n.d(t, {
   u_: () => u,
   xB: () => c.xB
 }), n(388685);
-var r = n(192379),
+var r = n(73800),
   i = n(97613),
-  o = n.n(i),
-  a = n(493773),
+  a = n.n(i),
+  o = n(493773),
   s = n(952265),
   l = n(307616),
   c = n(466377);
@@ -20,8 +20,8 @@ function u(e) {
     renderModal: t,
     onCloseRequest: n,
     onCloseCallback: i
-  } = e, [c] = r.useState(() => o()()), u = (0, l.v)();
-  (0, a.Ng)(() => ((0, s.h7)(t, {
+  } = e, [c] = r.useState(() => a()()), u = (0, l.v)();
+  (0, o.Ng)(() => ((0, s.h7)(t, {
     modalKey: c,
     onCloseRequest: n,
     onCloseCallback: i

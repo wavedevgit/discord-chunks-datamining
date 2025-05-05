@@ -3,10 +3,10 @@
 n.d(t, {
   Z: () => b
 });
-var r = n(200651),
+var r = n(255367),
   i = n(120356),
-  o = n.n(i),
-  a = n(442837),
+  a = n.n(i),
+  o = n(442837),
   s = n(481060),
   l = n(287734),
   c = n(933557),
@@ -26,7 +26,7 @@ function b(e) {
     guild: n,
     onAction: i,
     onClose: b
-  } = e, y = (0, c.ZP)(t), O = (0, a.e7)([_.Z], () => t.isPrivate() || _.Z.can(m.Pl.CONNECT, t)), v = () => {
+  } = e, y = (0, c.ZP)(t), O = (0, o.e7)([_.Z], () => t.isPrivate() || _.Z.can(m.Pl.CONNECT, t)), v = () => {
     if (!O) return y;
     let e = e => {
       e.stopPropagation(), t.isGuildStageVoice() ? (0, f.Cq)(t) : (l.default.selectVoiceChannel(t.id), (0, u.Kh)(t.id)), null == i || i({
@@ -34,7 +34,7 @@ function b(e) {
       }), null == b || b()
     };
     return (0, r.jsx)(s.P3F, {
-      className: o()(E.clickableText, E.inline),
+      className: a()(E.clickableText, E.inline),
       onClick: e,
       children: y
     })

@@ -1,23 +1,23 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  z: () => a
+  z: () => o
 }), n(388685);
-var r = n(192379),
+var r = n(73800),
   i = n(409813),
-  o = n(45572);
+  a = n(45572);
 
-function a(e) {
+function o(e) {
   let {
     purchaseState: t,
     currentStep: n,
-    initialScene: a,
+    initialScene: o,
     purchaseScene: s,
     errorScene: l,
     successScene: c
-  } = e, [u, d] = (0, r.useState)(a);
+  } = e, [u, d] = (0, r.useState)(o);
   return (0, r.useEffect)(() => {
-    t === o.A.PURCHASING ? d(s) : t === o.A.FAIL && d(l)
+    t === a.A.PURCHASING ? d(s) : t === a.A.FAIL && d(l)
   }, [t, s, l]), (0, r.useEffect)(() => {
     n === i.h8.CONFIRM && d(c)
   }, [n, c]), [u, d]

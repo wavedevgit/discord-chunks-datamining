@@ -10,10 +10,10 @@ n.d(t, {
   qN: () => V,
   tP: () => M
 }), n(388685);
-var r = n(200651),
-  i = n(192379),
-  o = n(272573),
-  a = n(442837),
+var r = n(255367),
+  i = n(73800),
+  a = n(481752),
+  o = n(442837),
   s = n(481060),
   l = n(100527),
   c = n(335131),
@@ -82,8 +82,8 @@ function x(e) {
     quest: t,
     location: n,
     questContentPosition: r,
-    questContentRowIndex: o
-  } = e, s = (0, a.e7)([_.default], () => {
+    questContentRowIndex: a
+  } = e, s = (0, o.e7)([_.default], () => {
     var e;
     return null == (e = _.default.getCurrentUser()) ? void 0 : e.hasVerifiedEmailOrPhone()
   }), l = (0, h.O5)();
@@ -93,25 +93,25 @@ function x(e) {
       questContent: n,
       questContentCTA: h.jZ.CLAIM_REWARD,
       questContentPosition: r,
-      questContentRowIndex: o
+      questContentRowIndex: a
     }), s ? (0, O.Bg)(t.config) ? (0, T.openQuestsNitroRewardModal)(t, n) : (0, O.Xv)(t.config) ? (0, I.m)(t, n) : (0, O.vQ)(t.config) ? (0, T.openQuestInGameRewardModal)(t, n) : (0, O.xN)(t.config) ? (0, T.openQuestOrbsRewardModal)(t, n) : (0, T.openQuestsRewardCodeModal)({
       questId: t.id,
       location: n,
       questContentPosition: r
     }) : (0, S.B)())
-  }, [t, l, n, r, o, s])
+  }, [t, l, n, r, a, s])
 }
 
 function M(e) {
   var t;
-  let n = (0, a.Wu)([u.ZP], () => u.ZP.getGamesSeen(!1)).find(t => (null == t ? void 0 : t.id) === e);
+  let n = (0, o.Wu)([u.ZP], () => u.ZP.getGamesSeen(!1)).find(t => (null == t ? void 0 : t.id) === e);
   return null != n && Date.now() - 2592e7 <= (null != (t = n.lastLaunched) ? t : 0)
 }
 let k = e => {
     let {
       useReducedMotion: t,
       className: n
-    } = e, [a, l] = (0, s.q_F)(() => ({})), c = i.useRef(!1), u = e => {
+    } = e, [o, l] = (0, s.q_F)(() => ({})), c = i.useRef(!1), u = e => {
       c.current = !0, l({
         from: {
           rotate: "0deg"
@@ -127,11 +127,11 @@ let k = e => {
         loop: () => null != e ? e : c.current,
         immediate: t
       })
-    }, d = (0, o.animated)(s.DuK);
+    }, d = (0, a.animated)(s.DuK);
     return {
       render: () => (0, r.jsx)(d, {
         className: n,
-        style: t ? void 0 : a,
+        style: t ? void 0 : o,
         color: "currentColor",
         size: "xs"
       }),
@@ -145,17 +145,17 @@ let k = e => {
     let {
       message: n,
       xboxURL: i
-    } = (0, E.KX)(), o = (0, h.O5)(), a = n => {
+    } = (0, E.KX)(), a = (0, h.O5)(), o = n => {
       var r;
-      let a = n.target;
-      (null == a || null == (r = a.tagName) ? void 0 : r.toLowerCase()) === "a" && o({
+      let o = n.target;
+      (null == o || null == (r = o.tagName) ? void 0 : r.toLowerCase()) === "a" && a({
         questId: e,
         questContent: t,
-        questContentCTA: a.getAttribute("href") === i ? h.jZ.HOW_TO_HELP_ARTICLE_XBOX : h.jZ.HOW_TO_HELP_ARTICLE_PLAYSTATION
+        questContentCTA: o.getAttribute("href") === i ? h.jZ.HOW_TO_HELP_ARTICLE_XBOX : h.jZ.HOW_TO_HELP_ARTICLE_PLAYSTATION
       })
     };
     return (0, r.jsx)("span", {
-      onClick: a,
+      onClick: o,
       children: n
     })
   };
@@ -175,8 +175,8 @@ function G(e) {
   let {
     quest: n,
     progressState: r,
-    isCollectibleQuest: o,
-    location: a,
+    isCollectibleQuest: a,
+    location: o,
     questContentPosition: s,
     questContentRowIndex: u,
     inGiftInventory: _,
@@ -184,7 +184,7 @@ function G(e) {
     inGameQuest: b
   } = e, y = x({
     quest: n,
-    location: a,
+    location: o,
     questContentPosition: s,
     questContentRowIndex: u
   }), v = (0, E._s)({
@@ -218,7 +218,7 @@ function G(e) {
           tooltipText: e,
           onClick: () => {
             (0, g.AH)(n.id, {
-              questContent: a,
+              questContent: o,
               questContentCTA: t,
               questContentPosition: s,
               questContentRowIndex: u
@@ -233,7 +233,7 @@ function G(e) {
           onClick: () => (0, O.gI)({
             quest: n
           }, {
-            content: a,
+            content: o,
             ctaContent: h.jZ.CONNECT_CONSOLE,
             position: s,
             rowIndex: u,
@@ -269,7 +269,7 @@ function G(e) {
           tooltipText: null,
           onClick: y
         };
-        if (o) return L(w({}, i), {
+        if (a) return L(w({}, i), {
           text: R.intl.string(R.t.MAS7uL)
         });
         if ((0, O.vQ)(n.config)) return L(w({}, i), {
@@ -289,11 +289,11 @@ function G(e) {
           text: R.intl.string(R.t.bAGFz8)
         })
     }
-  }, [r, p, v, _, y, o, n, a, s, u, D, I, S, P, b, M])
+  }, [r, p, v, _, y, a, n, o, s, u, D, I, S, P, b, M])
 }
 
 function B() {
-  return (0, a.e7)([b.Z], () => {
+  return (0, o.e7)([b.Z], () => {
     var e, t;
     return null != (t = null != (e = b.Z.questDeliveryOverride) ? e : (0, O.PM)(b.Z.quests, b.Z.questToDeliverForPlacement, y.Ok.DESKTOP_ACCOUNT_PANEL_AREA)) ? t : null
   })
@@ -306,17 +306,17 @@ function V(e) {
     quest: r
   } = e, i = (0, v.Zy)({
     location: n
-  }), o = (0, E.tP)(r), {
+  }), a = (0, E.tP)(r), {
     premiumSubscription: s,
     hasFetchedSubscriptions: l
-  } = (0, a.cj)([p.ZP], () => ({
+  } = (0, o.cj)([p.ZP], () => ({
     premiumSubscription: p.ZP.getPremiumSubscription(),
     hasFetchedSubscriptions: p.ZP.hasFetchedSubscriptions()
-  })), c = (0, a.e7)([b.Z], () => null != b.Z.questDeliveryOverride);
+  })), c = (0, o.e7)([b.Z], () => null != b.Z.questDeliveryOverride);
   if (null == r || (0, O.Bg)(r.config) && (!l || (null == s ? void 0 : s.isPurchasedExternally))) return !1;
   let u = (null == (t = r.userStatus) ? void 0 : t.claimedAt) != null,
     d = !c && null != r.userStatus && (0, O.zE)(r.userStatus, y.jn.QUEST_BAR);
-  return i && !d && !u && !o
+  return i && !d && !u && !a
 }
 
 function F(e) {
@@ -326,5 +326,5 @@ function F(e) {
     location: t,
     quest: B()
   });
-  return 0 !== (0, a.e7)([b.Z], () => b.Z.lastFetchedCurrentQuests) && !n
+  return 0 !== (0, o.e7)([b.Z], () => b.Z.lastFetchedCurrentQuests) && !n
 }

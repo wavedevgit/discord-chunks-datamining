@@ -4,10 +4,10 @@ n.d(t, {
   A7: () => S,
   dE: () => A
 }), n(388685);
-var r = n(200651),
-  i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+var r = n(255367),
+  i = n(73800),
+  a = n(120356),
+  o = n.n(a),
   s = n(481060),
   l = n(410030),
   c = n(541716),
@@ -68,7 +68,7 @@ function S(e) {
   let {
     placeholder: t,
     onEnter: n,
-    setEditorRef: o,
+    setEditorRef: a,
     showEmojiButton: s = !1,
     renderAttachButton: l,
     autoFocus: f = !0,
@@ -87,7 +87,7 @@ function S(e) {
     ref: N,
     placeholder: t,
     editorClassName: m,
-    className: a()(E.replyInput, m),
+    className: o()(E.replyInput, m),
     showRemainingCharsAfterCount: -1,
     allowNewLines: !1,
     maxCharacterCount: h.z,
@@ -114,7 +114,7 @@ function S(e) {
         shouldRefocus: !1
       }))
     },
-    setEditorRef: o,
+    setEditorRef: a,
     focused: f,
     onFocus: _,
     disableThemedBackground: !0,
@@ -142,15 +142,15 @@ let T = (e, t) => {
     let {
       onSelectEmoji: t,
       onClick: n
-    } = e, o = (0, l.ZP)(), [a, c] = i.useState(!1), u = i.useRef(null), d = i.useRef(null);
+    } = e, a = (0, l.ZP)(), [o, c] = i.useState(!1), u = i.useRef(null), d = i.useRef(null);
     return T(() => c(!1), u), (0, r.jsx)(s.yRy, {
       targetElementRef: d,
       align: "right",
       position: "top",
-      shouldShow: a,
+      shouldShow: o,
       disablePointerEvents: !1,
       renderPopout: () => (0, r.jsx)(s.f6W, {
-        theme: o,
+        theme: a,
         children: e => (0, r.jsx)("div", {
           className: e,
           ref: u,

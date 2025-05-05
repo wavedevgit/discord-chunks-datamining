@@ -5,10 +5,10 @@ n.d(t, {
   d7: () => h,
   p: () => _
 }), n(415506), n(388685);
-var r = n(200651),
-  i = n(192379),
-  o = n(374470),
-  a = n(626135),
+var r = n(255367),
+  i = n(73800),
+  a = n(374470),
+  o = n(626135),
   s = n(960048),
   l = n(981631);
 let c = i.createContext({
@@ -19,23 +19,23 @@ let c = i.createContext({
 });
 
 function u(e) {
-  return (0, o.k)(e, HTMLImageElement) ? e.complete : (0, o.k)(e, HTMLVideoElement) ? e.readyState >= 2 : !!(0, o.k)(e, HTMLDivElement) || !0
+  return (0, a.k)(e, HTMLImageElement) ? e.complete : (0, a.k)(e, HTMLVideoElement) ? e.readyState >= 2 : !!(0, a.k)(e, HTMLDivElement) || !0
 }
 
 function d(e) {
-  return (0, o.k)(e, HTMLImageElement) ? "load" : (0, o.k)(e, HTMLVideoElement) ? "canplaythrough" : ((0, o.k)(e, HTMLDivElement), "load")
+  return (0, a.k)(e, HTMLImageElement) ? "load" : (0, a.k)(e, HTMLVideoElement) ? "canplaythrough" : ((0, a.k)(e, HTMLDivElement), "load")
 }
 
 function f(e) {
   var t, n;
-  return (0, o.k)(e, HTMLImageElement) ? e.getAttribute("src") : (0, o.k)(e, HTMLVideoElement) ? null != (n = null == (t = e.querySelectorAll("source")[0]) ? void 0 : t.getAttribute("src")) ? n : "video" : ((0, o.k)(e, HTMLDivElement), e.tagName)
+  return (0, a.k)(e, HTMLImageElement) ? e.getAttribute("src") : (0, a.k)(e, HTMLVideoElement) ? null != (n = null == (t = e.querySelectorAll("source")[0]) ? void 0 : t.getAttribute("src")) ? n : "video" : ((0, a.k)(e, HTMLDivElement), e.tagName)
 }
 
 function _(e) {
   let {
     children: t,
     isPreview: n = !1,
-    source: o,
+    source: a,
     questId: _
   } = e, [p, h] = i.useState(!1), [m, g] = i.useState(new Set), [E, b] = i.useState(!1), y = i.useRef(!1);
   i.useEffect(() => {
@@ -50,16 +50,16 @@ function _(e) {
         errorPrefix: i,
         errorMessage: c
       } = e;
-      n || null == o || (a.default.track(l.rMx.QUEST_ASSET_LOADING_FAILURE, {
-        source: o,
+      n || null == a || (o.default.track(l.rMx.QUEST_ASSET_LOADING_FAILURE, {
+        source: a,
         quest_id: _,
         asset_id: f(t)
       }), s.Z.captureException(Error("".concat(i, ": ").concat(null != c ? "".concat(c, ", ") : "").concat(f(t), ", ").concat(r)), {
         tags: {
-          source: o
+          source: a
         }
       }), h(!0))
-    }, [n, o, _]),
+    }, [n, a, _]),
     v = i.useCallback(e => {
       g(t => {
         let n = new Set(t);
@@ -110,14 +110,14 @@ function p(e) {
     children: n
   } = e, {
     registerAsset: r,
-    unregisterAsset: o
-  } = i.useContext(c), a = i.useRef(null);
+    unregisterAsset: a
+  } = i.useContext(c), o = i.useRef(null);
   return i.useEffect(() => {
-    let e = a.current;
+    let e = o.current;
     return null != e && r(e, t), () => {
-      null != e && o(e)
+      null != e && a(e)
     }
-  }, [r, o, t]), n(a)
+  }, [r, a, t]), n(o)
 }
 
 function h() {

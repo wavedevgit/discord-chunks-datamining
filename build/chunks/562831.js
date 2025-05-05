@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  H: () => o
+  H: () => a
 });
 var r = n(320582),
   i = n(981631);
 
-function o(e) {
+function a(e) {
   let {
     userId: t
   } = e, n = (0, r.ML)(t);

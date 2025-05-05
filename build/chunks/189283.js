@@ -3,10 +3,10 @@
 n.d(t, {
   s: () => h
 });
-var r = n(200651),
-  i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+var r = n(255367),
+  i = n(73800),
+  a = n(120356),
+  o = n.n(a),
   s = n(1561),
   l = n(993365),
   c = n(964423);
@@ -49,17 +49,17 @@ function p(e) {
   let {
     option: t,
     selected: n,
-    onClick: o,
+    onClick: a,
     look: u,
     className: p
-  } = e, h = i.useCallback(e => o(t, e), [o, t]);
+  } = e, h = i.useCallback(e => a(t, e), [a, t]);
   return (0, r.jsx)(s.P, {
-    className: a()(d(u), p, {
+    className: o()(d(u), p, {
       [f(u)]: n
     }),
     onClick: h,
     children: (0, r.jsxs)(l.x, {
-      className: a()(c.controlText, _(u)),
+      className: o()(c.controlText, _(u)),
       variant: "text-sm/medium",
       color: "none",
       children: [null != t.icon ? (0, r.jsx)(t.icon, {
@@ -73,7 +73,7 @@ function h(e) {
   let {
     options: t,
     value: n,
-    onChange: o,
+    onChange: a,
     look: s = "tab",
     className: l,
     optionClassName: c
@@ -84,12 +84,12 @@ function h(e) {
       selected: i,
       option: e,
       look: s,
-      onClick: o,
+      onClick: a,
       className: c
     }, null != (t = e.key) ? t : String(e.value))
-  }, [n, s, o, c]);
+  }, [n, s, a, c]);
   return (0, r.jsx)("div", {
-    className: a()(u(s), l),
+    className: o()(u(s), l),
     children: t.map(d)
   })
 }

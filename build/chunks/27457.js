@@ -3,8 +3,8 @@ t.d(l, {
   BP: () => ev,
   ZP: () => ex
 }), t(388685);
-var n = t(200651),
-  i = t(192379),
+var n = t(255367),
+  i = t(73800),
   s = t(120356),
   r = t.n(s),
   a = t(442837),
@@ -198,18 +198,18 @@ let ec = [ee.fO.ACTIVITY, ee.fO.PRESENCE_EMBEDDED_ACTIVITY],
       }, {
         autoTrackExposure: !1
       }),
-      e9 = (0, a.e7)([w.Z], () => e7 && null != eL ? w.Z.findActivity(eL, e => null != e.application_id && e.type === $.IIU.PLAYING) : null, [e7, eL]),
-      e4 = (0, a.e7)([k.Z], () => (null == e9 ? void 0 : e9.application_id) != null ? k.Z.getDetectableGame(e9.application_id) : null),
-      e5 = (0, a.e7)([p.Z], () => null != e4 && (null == e9 ? void 0 : e9.application_id) != null ? p.Z.getApplication(null == e9 ? void 0 : e9.application_id) : void 0),
-      e3 = (0, C.wV)({
+      e5 = (0, a.e7)([w.Z], () => e7 && null != eL ? w.Z.findActivity(eL, e => null != e.application_id && e.type === $.IIU.PLAYING) : null, [e7, eL]),
+      e4 = (0, a.e7)([k.Z], () => (null == e5 ? void 0 : e5.application_id) != null ? k.Z.getDetectableGame(e5.application_id) : null),
+      e3 = (0, a.e7)([p.Z], () => null != e4 && (null == e5 ? void 0 : e5.application_id) != null ? p.Z.getApplication(null == e5 ? void 0 : e5.application_id) : void 0),
+      e9 = (0, C.wV)({
         userId: eL,
         channelId: ex.id
       }),
-      e6 = (0, C.zU)({
+      e8 = (0, C.zU)({
         streamKey: z.type === ee.fO.STREAM ? z.id : null,
         channelId: ex.id
       }),
-      e8 = i.useMemo(() => z.type === ee.fO.STREAM ? null != e6 && e6 : z.type === ee.fO.USER && null != e3 && e3, [e6, e3, z.type]);
+      e6 = i.useMemo(() => z.type === ee.fO.STREAM ? null != e8 && e8 : z.type === ee.fO.USER && null != e9 && e9, [e8, e9, z.type]);
     i.useEffect(() => {
       ek(eI)
     }, [eI]);
@@ -395,8 +395,8 @@ let ec = [ee.fO.ACTIVITY, ee.fO.PRESENCE_EMBEDDED_ACTIVITY],
                 onContextMenu: ls,
                 onToggleMute: lt,
                 participantUserId: eL,
-                application: e5,
-                secureFramesVerified: e8,
+                application: e3,
+                secureFramesVerified: e6,
                 isHovered: eM
               })), z.type === ee.fO.USER && eY ? (0, n.jsx)(E.Z, {
                 userId: z.id,

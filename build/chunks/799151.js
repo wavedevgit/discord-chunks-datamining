@@ -3,10 +3,10 @@
 n.d(t, {
   c: () => _
 });
-var r = n(200651),
-  i = n(192379),
-  o = n(272573),
-  a = n(442837),
+var r = n(255367),
+  i = n(73800),
+  a = n(481752),
+  o = n(442837),
   s = n(710593),
   l = n(481060),
   c = n(607070),
@@ -25,7 +25,7 @@ function _() {
       keybinds: ["ESC"],
       name: d.intl.string(d.t["1ioMJS"])
     }],
-    t = (0, a.e7)([c.Z], () => c.Z.useReducedMotion),
+    t = (0, o.e7)([c.Z], () => c.Z.useReducedMotion),
     n = (0, u.zP)();
   return (0, l.Yzy)(n, {
     enter: {
@@ -42,29 +42,29 @@ function _() {
       opacity: 0,
       y: 80 * !t
     },
-    config: o.config.stiff
+    config: a.config.stiff
   }, "animate-always")((t, n) => n ? (0, r.jsx)("div", {
     className: f.positioner,
-    children: (0, r.jsx)(o.animated.div, {
+    children: (0, r.jsx)(a.animated.div, {
       className: f.container,
       style: t,
       children: e.map((t, n) => {
         let {
-          keybinds: o,
-          name: a
+          keybinds: a,
+          name: o
         } = t;
         return (0, r.jsxs)(i.Fragment, {
           children: [(0, r.jsx)(l.Text, {
             variant: "text-md/semibold",
             className: f.bindName,
-            children: a
-          }), o.map(e => (0, r.jsx)(s.M, {
+            children: o
+          }), a.map(e => (0, r.jsx)(s.M, {
             shortcut: e,
             className: f.shortcut
           }, e)), n < e.length - 1 ? (0, r.jsx)("span", {
             className: f.separator
           }) : null]
-        }, a)
+        }, o)
       })
     })
   }) : null)

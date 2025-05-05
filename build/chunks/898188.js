@@ -3,10 +3,10 @@
 n.d(t, {
   Z: () => A
 }), n(388685);
-var r = n(200651),
-  i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+var r = n(255367),
+  i = n(73800),
+  a = n(120356),
+  o = n.n(a),
   s = n(748780),
   l = n(399606),
   c = n(481060),
@@ -48,13 +48,13 @@ function S(e) {
   let {
     channelId: n,
     emojiId: i,
-    emojiName: o
-  } = e, a = (0, l.e7)([_.Z], () => _.Z.getChannel(n));
-  if (null == a) return null;
-  let s = null != (t = (0, f.KS)(a)) ? t : c.VL1;
+    emojiName: a
+  } = e, o = (0, l.e7)([_.Z], () => _.Z.getChannel(n));
+  if (null == o) return null;
+  let s = null != (t = (0, f.KS)(o)) ? t : c.VL1;
   return (0, r.jsx)(b.Z, {
     emojiId: i,
-    emojiName: o,
+    emojiName: a,
     size: b.R.MEDIUM,
     defaultComponent: (0, r.jsx)(s, {
       className: O.channelIcon
@@ -63,7 +63,7 @@ function S(e) {
 }
 
 function T(e) {
-  var t, n, o, d;
+  var t, n, a, d;
   let {
     guildId: f,
     channel: _,
@@ -96,7 +96,7 @@ function T(e) {
     null != T && (0, h.gp)(f, T.channelId)
   }, [f, T]);
   return null == E || N && !R ? null : (0, r.jsx)("div", {
-    className: a()(O.container, p),
+    className: o()(O.container, p),
     children: R && null != T ? (0, r.jsx)(s.Z.div, {
       style: {
         marginBottom: D.interpolate({
@@ -105,7 +105,7 @@ function T(e) {
         })
       },
       children: (0, r.jsxs)(c.P3F, {
-        className: a()(O.banner, O.clickable),
+        className: o()(O.banner, O.clickable),
         onClick: L,
         children: [(0, r.jsx)(S, {
           channelId: T.channelId,
@@ -141,7 +141,7 @@ function T(e) {
       },
       children: [(0, r.jsx)(S, {
         channelId: E.channelId,
-        emojiId: null == (o = E.emoji) ? void 0 : o.id,
+        emojiId: null == (a = E.emoji) ? void 0 : a.id,
         emojiName: null == E || null == (d = E.emoji) ? void 0 : d.name
       }), (0, r.jsxs)("div", {
         className: O.text,
@@ -171,11 +171,11 @@ function A(e) {
     guildId: t,
     channel: n,
     className: i
-  } = e, o = (0, E.g)(t), a = (0, l.e7)([p.ZP], () => {
+  } = e, a = (0, E.g)(t), o = (0, l.e7)([p.ZP], () => {
     var e;
     return (null == (e = p.ZP.getSelfMember(t)) ? void 0 : e.isPending) === !0
   });
-  return (0, g.PE)(t) || a || !o ? null : (0, r.jsx)(T, {
+  return (0, g.PE)(t) || o || !a ? null : (0, r.jsx)(T, {
     guildId: t,
     channel: n,
     className: i

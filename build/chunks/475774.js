@@ -3,12 +3,12 @@
 n.d(t, {
   Z: () => l
 });
-var r = n(200651);
-n(192379);
+var r = n(255367);
+n(73800);
 var i = n(481060),
-  o = n(570140);
+  a = n(570140);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,7 +24,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -37,13 +37,13 @@ async function l(e) {
     return n => (0, r.jsx)(t, s({}, n, e))
   }, {
     onCloseCallback: () => {
-      o.Z.dispatch({
+      a.Z.dispatch({
         type: "INTERACTION_IFRAME_MODAL_CLOSE",
         applicationId: e.application.id
       })
     }
   });
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "INTERACTION_IFRAME_MODAL_KEY_CREATE",
     modalKey: t
   })

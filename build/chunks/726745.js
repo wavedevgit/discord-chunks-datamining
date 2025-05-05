@@ -5,7 +5,7 @@ n.d(t, {
   Z: () => R,
   q: () => m
 }), n(539854);
-var o, a = n(213919),
+var a, o = n(213919),
   s = n(442837),
   l = n(570140),
   c = n(990492),
@@ -98,7 +98,7 @@ function O(e) {
       id: n
     } = t;
     return n !== e
-  }), a.removeToken(e)
+  }), o.removeToken(e)
 }
 
 function v(e) {
@@ -157,7 +157,7 @@ function N(e) {
     pushSyncToken: null
   }) : e)
 }
-class C extends(o = s.ZP.PersistedStore) {
+class C extends(a = s.ZP.PersistedStore) {
   initialize(e) {
     if (null != e) {
       var t;

@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n(65234), n(111804), n(490233), n(97749), n(388685), n(358797);
-var r, i, o, a, s, l, c, u = n(200651);
-n(92138), n(192379);
-var d = n(616254),
+var r, i, a, o, s, l, c, u = n(255367);
+n(92138), n(73800);
+var d = n(155458),
   f = n(512722),
   _ = n.n(f),
   p = n(832037),
@@ -60,8 +60,8 @@ if (null != D.Z) {
       throw O.Z.captureCrash(e), e
     })
   }), S.ZP.appLoaded();
-  let e = null == (i = (o = D.Z.remoteApp).getVersion) ? void 0 : i.call(o),
-    t = null == (a = (s = D.Z.remoteApp).getBuildNumber) ? void 0 : a.call(s),
+  let e = null == (i = (a = D.Z.remoteApp).getVersion) ? void 0 : i.call(a),
+    t = null == (o = (s = D.Z.remoteApp).getBuildNumber) ? void 0 : o.call(s),
     n = {};
   null != D.Z.remoteApp.getModuleVersions && (n = D.Z.remoteApp.getModuleVersions()), O.Z.setExtra({
     hostVersion: e,

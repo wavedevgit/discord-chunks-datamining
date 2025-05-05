@@ -1,25 +1,25 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  f: () => o
+  f: () => a
 });
 let r = 1e3,
   i = window;
 
-function o(e, t) {
+function a(e, t) {
   let n = i;
   if (void 0 !== n && null != n.requestIdleCallback && null != n.cancelIdleCallback) {
-    var o;
+    var a;
     let i = !1,
-      a = null,
+      o = null,
       s = () => {
-        i || (i = !0, null != a && (n.clearTimeout(a), a = null), e())
+        i || (i = !0, null != o && (n.clearTimeout(o), o = null), e())
       },
       l = n.requestIdleCallback(s, t);
-    return a = n.setTimeout(() => {
+    return o = n.setTimeout(() => {
       i || n.cancelIdleCallback(l), s()
-    }, null != (o = null == t ? void 0 : t.timeout) ? o : r), () => {
-      n.cancelIdleCallback(l), null != a && (n.clearTimeout(a), a = null)
+    }, null != (a = null == t ? void 0 : t.timeout) ? a : r), () => {
+      n.cancelIdleCallback(l), null != o && (n.clearTimeout(o), o = null)
     }
   } {
     let t = n.setTimeout(e, 0);

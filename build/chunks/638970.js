@@ -3,10 +3,10 @@
 n.d(t, {
   Z: () => x
 }), n(388685), n(539854);
-var r = n(200651),
-  i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+var r = n(255367),
+  i = n(73800),
+  a = n(120356),
+  o = n.n(a),
   s = n(442837),
   l = n(481060),
   c = n(493773),
@@ -98,7 +98,7 @@ function x(e) {
   let {
     user: t,
     currentUser: n,
-    displayProfile: o,
+    displayProfile: a,
     guildId: p,
     onOpenUserProfileModal: A,
     onClose: C
@@ -122,7 +122,7 @@ function x(e) {
     voiceActivityStatusEnabled: V
   } = (0, u.U)({
     location: "UserProfileStackedActivity"
-  }), F = V && null == k && null == U && null != j, Z = (0, E.yi)(), H = (null == Z ? void 0 : Z.interactionSource) === v.n_.ACTIVITY, Y = i.useRef(null), W = i.useRef(null), K = i.useRef(null), z = i.useRef(), [q, Q] = i.useReducer(D, L), {
+  }), F = V && null == k && null == U && null != j, Z = (0, E.yi)(), H = (null == Z ? void 0 : Z.interactionSource) === v.n_.ACTIVITY, Y = i.useRef(null), W = i.useRef(null), K = i.useRef(null), z = i.useRef(null), [q, Q] = i.useReducer(D, L), {
     height: X,
     animationPhase: J
   } = q, $ = "awaitingInput" !== J, ee = "animating" === J || "done" === J, et = [], en = {
@@ -134,20 +134,20 @@ function x(e) {
   null != k && et.push((0, r.jsx)(y.Z, N({
     location: "UserProfileStackedActivity",
     stream: k,
-    profileGuildId: null == o ? void 0 : o.guildId
+    profileGuildId: null == a ? void 0 : a.guildId
   }, en), "stream")), M.forEach((e, t) => {
     et.push((0, r.jsx)(b.Z, N({
       activity: e,
-      profileGuildId: null == o ? void 0 : o.guildId
+      profileGuildId: null == a ? void 0 : a.guildId
     }, en), "live-".concat(t)))
   }), F && et.push((0, r.jsx)(O.Z, N({
     voiceChannel: j
   }, en), "voice"));
-  let [er, ...ei] = et, eo = ei.length > 0, ea = null != A && eo ? (0, r.jsx)(l.zxk, {
+  let [er, ...ei] = et, ea = ei.length > 0, eo = null != A && ea ? (0, r.jsx)(l.zxk, {
     look: l.zxk.Looks.BLANK,
     size: l.zxk.Sizes.NONE,
     color: l.zxk.Colors.TRANSPARENT,
-    className: a()(T.viewAllButton, ee && T.isShown),
+    className: o()(T.viewAllButton, ee && T.isShown),
     onClick: () => {
       x({
         action: "PRESS_VIEW_PROFILE",
@@ -203,14 +203,14 @@ function x(e) {
         "aria-label": ec,
         tabIndex: -1,
         children: [(0, r.jsxs)("li", {
-          className: a()(T.firstCardContainer, !ee && ei.length > 0 && T.hasShowMoreButton, H && T.isInteracting),
-          children: [er, eo && "done" !== J && (0, r.jsx)("div", {
+          className: o()(T.firstCardContainer, !ee && ei.length > 0 && T.hasShowMoreButton, H && T.isInteracting),
+          children: [er, ea && "done" !== J && (0, r.jsx)("div", {
             className: T.showMoreButtonContainer,
             children: (0, r.jsx)(l.zxk, {
               look: l.zxk.Looks.BLANK,
               size: l.zxk.Sizes.NONE,
               color: l.zxk.Colors.TRANSPARENT,
-              className: a()(T.showMoreButton, ee && T.isHidden),
+              className: o()(T.showMoreButton, ee && T.isHidden),
               onClick: es,
               children: (0, r.jsx)(l.Text, {
                 variant: "text-xs/medium",
@@ -221,15 +221,15 @@ function x(e) {
               })
             })
           })]
-        }), eo && $ && ei.map((e, t) => (0, r.jsx)("li", {
-          className: a()(T.remainingCardContainer, ee && T.isShown),
+        }), ea && $ && ei.map((e, t) => (0, r.jsx)("li", {
+          className: o()(T.remainingCardContainer, ee && T.isShown),
           children: e
         }, "activity-".concat(t)))]
-      }), eo && $ && ea]
-    }), eo && (0, r.jsxs)("div", {
+      }), ea && $ && eo]
+    }), ea && (0, r.jsxs)("div", {
       ref: K,
-      className: a()(T.cardsList, T.remainingCardsCopyToMeasure),
-      children: [ei, ea]
+      className: o()(T.cardsList, T.remainingCardsCopyToMeasure),
+      children: [ei, eo]
     })]
   })
 }

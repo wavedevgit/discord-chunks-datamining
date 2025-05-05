@@ -5,7 +5,7 @@ n.d(t, {
   X: () => b,
   l: () => I
 }), n(358797), n(290780), n(388685), n(539854), n(17089);
-var o, a = n(756647),
+var a, o = n(756647),
   s = n(442837),
   l = n(544891),
   c = n(761609);
@@ -51,7 +51,7 @@ function _(e, t) {
 let p = 1500,
   h = 1e4,
   m = 1500,
-  g = null != (o = window.requestIdleCallback) ? o : e => setImmediate(() => e()),
+  g = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e()),
   E = new c.R,
   b = {
     handleConnectionOpen: () => {},
@@ -68,7 +68,7 @@ let p = 1500,
     var t;
     let {
       dispatcher: n,
-      actionHandler: o,
+      actionHandler: a,
       getFingerprint: c,
       getSessionId: f = v,
       TRACKING_URL: I,
@@ -79,7 +79,7 @@ let p = 1500,
     function A(e) {
       if (null != i) return i;
       let t = e.fingerprint || c();
-      return null != t ? (0, a.s)(t) : null
+      return null != t ? (0, o.s)(t) : null
     }
 
     function N() {
@@ -147,19 +147,19 @@ let p = 1500,
         properties: n,
         flush: r,
         fingerprint: i,
-        resolve: o
+        resolve: a
       } = e;
       return f().then(e => {
         let {
-          sessionId: a
+          sessionId: o
         } = e, s = {
           type: t,
           fingerprint: i,
           properties: d({
             client_track_timestamp: Date.now(),
-            client_heartbeat_session_id: a
+            client_heartbeat_session_id: o
           }, n),
-          resolve: o
+          resolve: a
         }, l = A(s);
         null != l && (s.properties.client_uuid = E.generate(l)), y.push(s), y.length > h && (y = y.slice(-h)), r ? C({
           shouldFlushOnNextTick: !0
@@ -176,5 +176,5 @@ let p = 1500,
         super(...e), u(this, "submitEventsImmediately", P)
       }
     }
-    return u(w, "displayName", "AnalyticsTrackingStore"), new w(n, o)
+    return u(w, "displayName", "AnalyticsTrackingStore"), new w(n, a)
   }

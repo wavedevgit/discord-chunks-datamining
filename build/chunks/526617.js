@@ -4,10 +4,10 @@ n.d(t, {
   O: () => ec,
   Z: () => ef
 }), n(388685), n(472816), n(794429);
-var r = n(200651),
-  i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+var r = n(255367),
+  i = n(73800),
+  a = n(120356),
+  o = n.n(a),
   s = n(990547),
   l = n(442837),
   c = n(481060),
@@ -95,8 +95,8 @@ let J = 16,
   en = 32,
   er = 32 + I.Kn,
   ei = 16,
-  eo = 150,
-  ea = 100,
+  ea = 150,
+  eo = 100,
   es = 60,
   el = "3";
 
@@ -109,7 +109,7 @@ function eu(e) {
     categoryInfo: t,
     collapsed: n,
     toggleCollapsed: i,
-    index: o,
+    index: a,
     isSectionNitroLocked: s,
     showNitroDivider: l
   } = e;
@@ -178,12 +178,12 @@ function eu(e) {
       colorOpacity: .35,
       glowOpacity: .35
     }), (0, r.jsx)("div", {
-      className: a()(K.sectionContainer, {
+      className: o()(K.sectionContainer, {
         [K.sectionContainerNitroLocked]: s
       }),
       children: (0, r.jsx)(c.P3F, {
-        className: a()(K.sectionHeader, {
-          [K.notFirstSectionHeader]: 0 !== o
+        className: o()(K.sectionHeader, {
+          [K.notFirstSectionHeader]: 0 !== a
         }),
         onClick: i,
         "aria-expanded": !n,
@@ -213,7 +213,7 @@ function ed() {
 function ef(e) {
   let {
     guildId: t,
-    channel: o,
+    channel: a,
     containerWidth: d,
     onClose: g,
     onSelect: I,
@@ -245,25 +245,25 @@ function ef(e) {
     categories: eL,
     allSounds: ex,
     soundCounts: eM
-  } = (0, G.ZP)(o, {}, eh), [ek, ej] = i.useState([]), [eU, eG] = i.useState(!1), eB = (0, G.FS)(eL, ek, eP).filter(e => e.items.length > 0), eV = eB.some(e => !!(0, D._O)(e.categoryInfo) && e.categoryInfo.isNitroLocked), eF = !eN && Q && eV, eZ = A.T4.useSetting(), eH = i.useMemo(() => new Set(eZ), [eZ]), eY = null == o, eW = D.ZP.canUseCustomCallSounds(eA), eK = i.useCallback(e => {
+  } = (0, G.ZP)(a, {}, eh), [ek, ej] = i.useState([]), [eU, eG] = i.useState(!1), eB = (0, G.FS)(eL, ek, eP).filter(e => e.items.length > 0), eV = eB.some(e => !!(0, D._O)(e.categoryInfo) && e.categoryInfo.isNitroLocked), eF = !eN && Q && eV, eZ = A.T4.useSetting(), eH = i.useMemo(() => new Set(eZ), [eZ]), eY = null == a, eW = D.ZP.canUseCustomCallSounds(eA), eK = i.useCallback(e => {
     eH.has(e) ? eH.delete(e) : eH.add(e), A.T4.updateSetting(Array.from(eH))
   }, [eH]), ez = i.useCallback((e, t, n) => {
     if (null != I && !P) return I(e, n);
-    let r = (0, M.Nq)(eA, e, o, !1);
+    let r = (0, M.Nq)(eA, e, a, !1);
     if (null != I && P && r) I(e, n);
-    else if (!z && r && (0, M.C0)(o)) {
+    else if (!z && r && (0, M.C0)(a)) {
       var i;
-      (0, M.GN)(e, null != (i = null == o ? void 0 : o.id) ? i : H.lds, t), ew && w.default.track(H.rMx.SEARCH_RESULT_SELECTED, {
+      (0, M.GN)(e, null != (i = null == a ? void 0 : a.id) ? i : H.lds, t), ew && w.default.track(H.rMx.SEARCH_RESULT_SELECTED, {
         search_type: H.aib.SOUNDBOARD,
-        channel_id: null == o ? void 0 : o.id,
+        channel_id: null == a ? void 0 : a.id,
         query: eP,
         location_stack: t
       })
     } else {
-      if ((0, M.Nq)(eA, e, o)) return;
+      if ((0, M.Nq)(eA, e, a)) return;
       Q && eT(e)
     }
-  }, [z, eA, o, Q, ew, eP, I, P]), eq = i.useCallback((e, t) => {
+  }, [z, eA, a, Q, ew, eP, I, P]), eq = i.useCallback((e, t) => {
     switch (e.item.type) {
       case x.vB.SOUND:
         return ez(e.item.sound, ey, (null == t ? void 0 : t.shiftKey) !== !0);
@@ -275,14 +275,14 @@ function ef(e) {
       u = Q && ec(c.categoryInfo, eN, t) && eF,
       d = i.sectionIndex === eB.length - 1 && i.rowIndex === i.totalRowCount - 1;
     return (0, r.jsx)("ul", X(q({}, n), {
-      className: a()(K.soundRow, {
+      className: o()(K.soundRow, {
         [K.soundRowNitroLocked]: u,
         [K.lastSoundRow]: d
       }),
       children: e.map((e, t) => (0, r.jsx)(F.Z, {
         descriptor: e,
         soundButtonProps: {
-          channel: o,
+          channel: a,
           interactive: eY ? eW : !eR,
           forceSecondaryActions: !0,
           analyticsLocations: ey
@@ -301,34 +301,34 @@ function ef(e) {
         inExpressionPicker: em
       }, t))
     }), "row-".concat(n["aria-rowindex"]))
-  }, [eB, Q, eN, t, z, eq, o, eY, eW, eR, ey, ef, eF, eg, em]), eX = i.useCallback((e, t) => {
+  }, [eB, Q, eN, t, z, eq, a, eY, eW, eR, ey, ef, eF, eg, em]), eX = i.useCallback((e, t) => {
     if (e <= 0 || !Q) return !1;
     let n = eB[e],
       r = eB[e - 1],
       i = ec(n.categoryInfo, eN, t),
-      o = ec(r.categoryInfo, eN, t);
-    return i && !o
+      a = ec(r.categoryInfo, eN, t);
+    return i && !a
   }, [eB, Q, eN]), eJ = i.useCallback(e => 0 === e ? ei : eX(e, t) ? er : en, [t, eX]), e$ = i.useCallback(e => {
     let t = e === eB.length - 1;
     return eF && t ? es : 0
   }, [eB, eF]), e0 = i.useCallback((e, n) => {
     let i = "".concat(e.key),
-      o = Q && ec(e.categoryInfo, eN, t),
-      a = eX(n, t);
+      a = Q && ec(e.categoryInfo, eN, t),
+      o = eX(n, t);
     return (0, r.jsx)(eu, {
       categoryInfo: e.categoryInfo,
       toggleCollapsed: () => eK(i),
       collapsed: eH.has(i),
       index: n,
-      isSectionNitroLocked: o && eF,
-      showNitroDivider: a && eF
+      isSectionNitroLocked: a && eF,
+      showNitroDivider: o && eF
     }, "header-".concat(i))
   }, [eH, eK, t, eX, Q, eN, eF]), e1 = i.useCallback((e, t) => {
     let n = t === eB.length - 1;
     return eF && n ? (0, r.jsx)("div", {
       className: K.sectionFooter
     }) : null
-  }, [eB, eF]), e2 = i.useCallback(e => ej((0, U.cK)(e, Array.from(ex.values()).flat(), eA, o, ey)), [o, eA, ex, ey]), e3 = i.useCallback(e => {
+  }, [eB, eF]), e2 = i.useCallback(e => ej((0, U.cK)(e, Array.from(ex.values()).flat(), eA, a, ey)), [a, eA, ex, ey]), e3 = i.useCallback(e => {
     (0, u.jW)(e, async () => {
       let {
         default: e
@@ -341,7 +341,7 @@ function ef(e) {
     renderPopout: () => (0, r.jsx)(O.hq, {}),
     tooltipText: W.intl.string(W.t["19lt29"]),
     position: "top",
-    clickableClassName: a()(K.settingsClickArea, K.settingsSoundmojiClickArea),
+    clickableClassName: o()(K.settingsClickArea, K.settingsSoundmojiClickArea),
     children: (0, r.jsx)(c.gj8, {
       size: "md",
       color: "currentColor",
@@ -444,7 +444,7 @@ function ef(e) {
       sectionHeaderHeight: eJ,
       sectionFooterHeight: e$,
       listPadding: $,
-      itemNodeWidth: eg ? ea : eo,
+      itemNodeWidth: eg ? eo : ea,
       gridNavigatorId: eD,
       renderEmptySearchState: ed,
       renderInspector: e9,

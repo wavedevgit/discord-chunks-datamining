@@ -4,9 +4,9 @@ n.d(t, {
   s: () => s
 });
 var r, i = n(778882),
-  o = n(401010);
+  a = n(401010);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -14,7 +14,7 @@ function a(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-var s = (a(r = {}, i.FILE, {
+var s = (o(r = {}, i.FILE, {
   exposeProperties: {
     files: function(e) {
       return Array.prototype.slice.call(e.files)
@@ -24,24 +24,24 @@ var s = (a(r = {}, i.FILE, {
     }
   },
   matchesTypes: ["Files"]
-}), a(r, i.HTML, {
+}), o(r, i.HTML, {
   exposeProperties: {
     html: function(e, t) {
-      return (0, o.R)(e, t, "")
+      return (0, a.R)(e, t, "")
     }
   },
   matchesTypes: ["Html", "text/html"]
-}), a(r, i.URL, {
+}), o(r, i.URL, {
   exposeProperties: {
     urls: function(e, t) {
-      return (0, o.R)(e, t, "").split("\n")
+      return (0, a.R)(e, t, "").split("\n")
     }
   },
   matchesTypes: ["Url", "text/uri-list"]
-}), a(r, i.TEXT, {
+}), o(r, i.TEXT, {
   exposeProperties: {
     text: function(e, t) {
-      return (0, o.R)(e, t, "")
+      return (0, a.R)(e, t, "")
     }
   },
   matchesTypes: ["Text", "text/plain"]

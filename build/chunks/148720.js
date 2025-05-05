@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(252258),
   i = n(668781),
-  o = n(728345),
-  a = n(835873),
+  a = n(728345),
+  o = n(835873),
   s = n(973616),
   l = n(592125),
   c = n(430824),
@@ -29,7 +29,7 @@ function E(e) {
       null == n || n();
       break;
     case m.Fw.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION:
-      (0, a.w)();
+      (0, o.w)();
       break;
     case m.Fw.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS:
       i.Z.show({
@@ -68,14 +68,14 @@ async function b(e) {
     channelId: t,
     applicationId: n,
     launchId: i,
-    inputApplication: a,
+    inputApplication: o,
     analyticsLocations: g,
     launchingComponentId: b,
     sectionName: y,
     inviterUserId: O
-  } = e, v = _.ZP.getEmbeddedActivitiesForChannel(t).find(e => e.applicationId === n && (null == i || e.launchId === i)), I = a;
+  } = e, v = _.ZP.getEmbeddedActivitiesForChannel(t).find(e => e.applicationId === n && (null == i || e.launchId === i)), I = o;
   if (null == I) {
-    let e = await o.ZP.fetchApplication(n);
+    let e = await a.ZP.fetchApplication(n);
     I = s.ZP.createFromServer(e)
   }
   if (null == v || null == I) return;

@@ -2,8 +2,8 @@
 "use strict";
 var r = n(580983),
   i = n(46015),
-  o = n(382698),
-  a = n(503463),
+  a = n(382698),
+  o = n(503463),
   s = n(751954),
   l = n(571078),
   c = n(713411),
@@ -27,12 +27,12 @@ var r = n(580983),
 (y || v || O || d || f) && (h = function(e) {
   var t, n, i, s, l, d, f, I = this,
     S = u(I),
-    T = o(e),
+    T = a(e),
     A = S.raw;
   if (A) return A.lastIndex = I.lastIndex, t = r(h, A, T), I.lastIndex = A.lastIndex, t;
   var N = S.groups,
     C = O && I.sticky,
-    R = r(a, I),
+    R = r(o, I),
     P = I.source,
     w = 0,
     D = T;

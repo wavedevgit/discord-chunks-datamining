@@ -3,10 +3,10 @@
 n.d(t, {
   Z: () => d
 });
-var r = n(200651),
+var r = n(255367),
   i = n(512722),
-  o = n.n(i),
-  a = n(481060);
+  a = n.n(i),
+  o = n(481060);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -55,7 +55,7 @@ let d = {
       sourceUserId: c,
       appContext: d
     } = e;
-    o()(i.shouldOpenGameProfile, "Passed a false value for [gameProfileModalChecks]. Are you using the useShouldOpenGameProfile hook correctly?"), o()(i.applicationId === t, "Passed an unexpected [applicationId]. Are you passing a different one than you passed to useShouldOpenGameProfileModal?"), (0, a.ZDy)(async () => {
+    a()(i.shouldOpenGameProfile, "Passed a false value for [gameProfileModalChecks]. Are you using the useShouldOpenGameProfile hook correctly?"), a()(i.applicationId === t, "Passed an unexpected [applicationId]. Are you passing a different one than you passed to useShouldOpenGameProfileModal?"), (0, o.ZDy)(async () => {
       let {
         default: e
       } = await n.e("89311").then(n.bind(n, 644941));
@@ -67,7 +67,7 @@ let d = {
         appContext: d
       }))
     }, {
-      contextKey: null != d ? (0, a.VnL)(d) : void 0
+      contextKey: null != d ? (0, o.VnL)(d) : void 0
     })
   }
 }

@@ -1,9 +1,14 @@
 /**
   Module ID: 51816
-  Original File Name: 188f194b89247a5f
+  Original File Name: 25268971a6d0700e
 **/
 .artContainer_ee7791 {
-    margin-top: 36px
+    margin-top: 42px
+}
+
+.art_ee7791 {
+    height: 160px;
+    width: 160px
 }
 
 .grayArt_ee7791 {
@@ -23,4 +28,17 @@
     color: var(--text-primary)
 }
 
-/*# sourceMappingURL=188f194b89247a5f.css.map*/
+.footer_ee7791 {
+    margin-bottom: 8px
+}
+
+.header_ee7791 {
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    margin: 0 auto 32px;
+    width: 220px
+}
+
+/*# sourceMappingURL=25268971a6d0700e.css.map*/

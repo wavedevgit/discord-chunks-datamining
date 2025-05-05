@@ -5,10 +5,10 @@ n.d(t, {
   Es: () => c,
   z5: () => d
 }), n(388685);
-var r = n(290486),
+var r = n(381814),
   i = n(731965);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -17,14 +17,14 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 
-function a(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -53,7 +53,7 @@ let c = (0, r.U)(() => ({
 
 function u(e) {
   (0, i.j)(() => {
-    c.setState(t => null != t.currentToast ? l(a({}, t), {
+    c.setState(t => null != t.currentToast ? l(o({}, t), {
       queuedToasts: [...t.queuedToasts, e]
     }) : {
       currentToast: e,

@@ -3,13 +3,13 @@
 n.d(t, {
   R: () => u
 }), n(388685);
-var r = n(200651),
-  i = n(192379);
-let o = "data-focus-blocked",
-  a = 0;
+var r = n(255367),
+  i = n(73800);
+let a = "data-focus-blocked",
+  o = 0;
 
 function s() {
-  return a++
+  return o++
 }
 
 function l(e) {
@@ -19,7 +19,7 @@ function l(e) {
 }
 
 function c(e, t) {
-  let [n] = i.useState(() => s()), r = "".concat(o, "-").concat(n);
+  let [n] = i.useState(() => s()), r = "".concat(a, "-").concat(n);
   i.useLayoutEffect(() => {
     if (t) {
       let t = e.current;
@@ -46,10 +46,10 @@ function u(e) {
   let {
     children: t,
     className: n,
-    enabled: o = !0
-  } = e, a = i.useRef(null);
-  return c(a, o), (0, r.jsx)("div", {
-    ref: a,
+    enabled: a = !0
+  } = e, o = i.useRef(null);
+  return c(o, a), (0, r.jsx)("div", {
+    ref: o,
     className: n,
     children: t
   })

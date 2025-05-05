@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  O: () => a,
-  w: () => o
+  O: () => o,
+  w: () => a
 });
 var r = n(367907),
   i = n(981631);
 
-function o() {
+function a() {
   r.ZP.trackWithMetadata(i.rMx.NOTIFICATION_CTA_CLICKED, {
     notification_type: "Reminder Notification",
     action: "Guild Invite",
@@ -15,7 +15,7 @@ function o() {
   })
 }
 
-function a() {
+function o() {
   r.ZP.trackWithMetadata(i.rMx.NOTIFICATION_CTA_CLICKED, {
     notification_type: "Reminder Notification",
     action: "Guild Invite",

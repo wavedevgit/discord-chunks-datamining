@@ -6,10 +6,10 @@ n.d(t, {
   ZP: () => R,
   hq: () => T
 }), n(388685);
-var r = n(200651),
-  i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+var r = n(255367),
+  i = n(73800),
+  a = n(120356),
+  o = n.n(a),
   s = n(831209),
   l = n(442837),
   c = n(481060),
@@ -90,8 +90,8 @@ function A(e) {
     forceShowBetaLabel: n = !1
   } = e, i = (0, p.V2)({
     location: "SoundmojiBanner"
-  }), o = (0, l.e7)([d.default], () => _.ZP.canUseSoundboardEverywhere(d.default.getCurrentUser())), a = (0, l.e7)([u.Z], () => u.Z.getGuildId());
-  return n || o || t.guildId === g.X8 || t.guildId === a || !i ? (0, r.jsx)(c.IGR, {
+  }), a = (0, l.e7)([d.default], () => _.ZP.canUseSoundboardEverywhere(d.default.getCurrentUser())), o = (0, l.e7)([u.Z], () => u.Z.getGuildId());
+  return n || a || t.guildId === g.X8 || t.guildId === o || !i ? (0, r.jsx)(c.IGR, {
     text: "BETA",
     color: s.Z.BG_BRAND,
     className: b.betaBadge
@@ -124,7 +124,7 @@ function N(e) {
     sound: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(b.infoContainer, b.infoTooltip),
+    className: o()(b.infoContainer, b.infoTooltip),
     children: [(0, r.jsx)(A, {
       sound: t
     }), (0, r.jsxs)("div", {
@@ -154,7 +154,7 @@ function C(e) {
   let {
     renderPopout: t,
     position: n,
-    tooltipText: o,
+    tooltipText: a,
     children: s,
     setTooltipShowing: l,
     clickableClassName: u
@@ -191,15 +191,15 @@ function C(e) {
       onTooltipShow: () => {
         E && (null == l || l(!0))
       },
-      text: o,
+      text: a,
       position: "top",
       shouldShow: E,
       children: t => (0, r.jsx)(c.P3F, S(v({
         innerRef: g
       }, t, e), {
-        "aria-label": o,
+        "aria-label": a,
         onClick: h,
-        className: a()(y.secondaryButtonRefresh, u),
+        className: o()(y.secondaryButtonRefresh, u),
         children: s
       }))
     })

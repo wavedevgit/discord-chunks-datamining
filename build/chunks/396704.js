@@ -3,17 +3,17 @@
 n.d(t, {
   V: () => l
 }), n(388685), n(415506);
-var r = n(530548),
-  i = n(290486),
-  o = n(570833),
-  a = n(493773);
+var r = n(898517),
+  i = n(381814),
+  a = n(570833),
+  o = n(493773);
 let s = (0, i.U)(() => ({
   riveAssetCache: new Map
 }));
 
 function l(e) {
   let t = s(t => t.riveAssetCache.get(e));
-  return (0, a.ZP)(() => {
+  return (0, o.ZP)(() => {
     if (s.getState().riveAssetCache.has(e)) return;
     let t = new r.RiveFile({
         src: e
@@ -31,7 +31,7 @@ function l(e) {
           console.error("Rive file load error", e, t)
         })
       };
-    (0, o.f)(n)
+    (0, a.f)(n)
   }), null != t ? t : {
     status: "loading",
     buffer: null

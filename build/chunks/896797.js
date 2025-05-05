@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => h
 });
 var r, i = n(442837),
-  o = n(433517),
-  a = n(570140),
+  a = n(433517),
+  o = n(570140),
   s = n(981631);
 
 function l(e, t, n) {
@@ -56,12 +56,12 @@ class p extends(r = i.ZP.PersistedStore) {
   }
 }
 l(p, "displayName", "DefaultRouteStore"), l(p, "persistKey", "DefaultRouteStore"), l(p, "migrations", [() => {
-  let e = o.K.get(d, null);
-  return o.K.remove(d), {
+  let e = a.K.get(d, null);
+  return a.K.remove(d), {
     lastViewedPath: e
   }
 }]);
-let h = new p(a.Z, {
+let h = new p(o.Z, {
   SAVE_LAST_ROUTE: f,
   SAVE_LAST_NON_VOICE_ROUTE: _
 })

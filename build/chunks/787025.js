@@ -4,11 +4,11 @@ n.d(t, {
   G: () => E,
   j: () => b
 });
-var r = n(200651);
-n(192379);
+var r = n(255367);
+n(73800);
 var i = n(120356),
-  o = n.n(i),
-  a = n(466377),
+  a = n.n(i),
+  o = n(466377),
   s = n(481060),
   l = n(252618),
   c = n(981631),
@@ -58,8 +58,8 @@ function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -67,8 +67,8 @@ function m(e, t) {
 function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -83,7 +83,7 @@ function E(e) {
   }), (0, r.jsx)(s.f6W, {
     theme: c.BRd.DARK,
     children: e => (0, r.jsx)("div", {
-      className: o()(e, d.oauth2PageWrapper, i),
+      className: a()(e, d.oauth2PageWrapper, i),
       children: !0 === n ? t : (0, r.jsx)("div", {
         className: d.oauth2PageContent,
         children: t
@@ -97,18 +97,18 @@ function b(e) {
     children: t,
     footer: n,
     transitionState: i,
-    modalSize: o
+    modalSize: a
   } = e, s = m(e, ["children", "footer", "transitionState", "modalSize"]);
-  return (0, r.jsxs)(a.Y0, h(_({
-    size: null != o ? o : a.Cg.DYNAMIC,
+  return (0, r.jsxs)(o.Y0, h(_({
+    size: null != a ? a : o.Cg.DYNAMIC,
     transitionState: i,
     className: d.oauth2ModalWrapper
   }, s), {
-    children: [(0, r.jsx)(a.hz, {
+    children: [(0, r.jsx)(o.hz, {
       paddingFix: !1,
       className: d.oauth2ModalContent,
       children: t
-    }), null != n && (0, r.jsx)(a.mz, {
+    }), null != n && (0, r.jsx)(o.mz, {
       className: d.footer,
       children: n
     })]

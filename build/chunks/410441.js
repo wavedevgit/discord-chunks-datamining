@@ -3,12 +3,12 @@
 n.d(t, {
   Z: () => u
 });
-var r = n(200651);
-n(192379);
+var r = n(255367);
+n(73800);
 var i = n(481060),
-  o = n(141675);
+  a = n(141675);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,7 +24,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -51,7 +51,7 @@ function u(e) {
   let {
     onClick: t,
     Icon: n,
-    "aria-label": a
+    "aria-label": o
   } = e, l = (0, i.dQu)(i.TVs.colors.CONTENT_INVENTORY_OVERLAY_TEXT_PRIMARY), u = (0, r.jsx)(n, {
     color: l.hex(),
     size: "custom",
@@ -59,13 +59,13 @@ function u(e) {
     height: 16
   });
   return null == t ? (0, r.jsx)("div", {
-    className: o.container,
-    "aria-label": a,
+    className: a.container,
+    "aria-label": o,
     children: u
   }) : (0, r.jsx)(i.ua7, {
-    text: a,
+    text: o,
     children: e => (0, r.jsx)(i.P3F, c(s({
-      className: o.container
+      className: a.container
     }, e), {
       onClick: t,
       children: u

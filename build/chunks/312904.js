@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
-var r = n(192379);
+var r = n(73800);
 let i = e => {
     e.effects.forEach(e => {
       let {
@@ -14,7 +14,7 @@ let i = e => {
       }, document.body.appendChild(n)
     })
   },
-  o = e => {
+  a = e => {
     r.useEffect(() => {
       if ("loading" === document.readyState) {
         let t = () => {

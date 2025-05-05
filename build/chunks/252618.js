@@ -7,10 +7,10 @@ n.d(t, {
   ZD: () => A,
   yY: () => I
 }), n(388685);
-var r = n(192379),
-  i = n(359959),
-  o = n(993192),
-  a = n(731965);
+var r = n(73800),
+  i = n(760907),
+  a = n(519772),
+  o = n(731965);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -59,7 +59,7 @@ let d = {
     onlyWhenBlurred: !1,
     interval: 1e3
   },
-  p = (0, o.F)(() => ({
+  p = (0, a.F)(() => ({
     titles: [d],
     notificationCount: void 0,
     flashQueue: []
@@ -82,16 +82,16 @@ function m(e) {
 }
 
 function g(e) {
-  (0, a.j)(() => p.setState({
+  (0, o.j)(() => p.setState({
     notificationCount: e
   }))
 }
 
 function E(e) {
-  return (0, a.j)(() => p.setState(t => ({
+  return (0, o.j)(() => p.setState(t => ({
     titles: [e, ...t.titles]
   }))), () => {
-    (0, a.j)(() => p.setState(t => ({
+    (0, o.j)(() => p.setState(t => ({
       titles: t.titles.filter(t => t !== e)
     })))
   }
@@ -132,22 +132,22 @@ function S() {
       flashQueue: t
     } = e, n = h(e).filter(e => null != e).join(" | "), r = m(e);
     return ["".concat(r).concat(n), t[0]]
-  }, i.X), [n, o] = r.useState(!1), a = r.useRef(0), s = null == t ? void 0 : t.messages[a.current % t.messages.length];
+  }, i.X), [n, a] = r.useState(!1), o = r.useRef(0), s = null == t ? void 0 : t.messages[o.current % t.messages.length];
   return r.useEffect(() => {
     if (null == t) {
-      a.current = 0, o(!1);
+      o.current = 0, a(!1);
       return
     }
     if (document.hasFocus() && t.onlyWhenBlurred) {
-      y(t.id), o(!1);
+      y(t.id), a(!1);
       return
     }
     let e = setInterval(() => {
-      if (a.current >= t.count) {
-        y(t.id), o(!1);
+      if (o.current >= t.count) {
+        y(t.id), a(!1);
         return
       }
-      o(e => !e || (a.current += 1, !1))
+      a(e => !e || (o.current += 1, !1))
     }, t.interval);
     return () => clearInterval(e)
   }, [t]), n ? s : e

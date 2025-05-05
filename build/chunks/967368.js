@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => u
 });
 var r, i = n(442837),
-  o = n(570140);
+  a = n(570140);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,7 +24,7 @@ class c extends(r = i.ZP.Store) {
     return s
   }
 }
-a(c, "displayName", "BitRateStore");
-let u = new c(o.Z, {
+o(c, "displayName", "BitRateStore");
+let u = new c(a.Z, {
   SET_CHANNEL_BITRATE: l
 })

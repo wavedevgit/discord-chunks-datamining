@@ -3,18 +3,18 @@
 n.d(t, {
   Z: () => c
 });
-var r = n(200651),
+var r = n(255367),
   i = n(793030),
-  o = n(958783),
-  a = n(499997),
+  a = n(958783),
+  o = n(499997),
   s = n(388032),
   l = n(526361);
 let c = e => {
   let {
     showSubtext: t = !1
   } = e;
-  return (0, r.jsxs)(o.Z, {
-    assetComponent: (0, r.jsx)(a.Z, {
+  return (0, r.jsxs)(a.Z, {
+    assetComponent: (0, r.jsx)(o.Z, {
       className: l.orbBadgeAsset
     }),
     tooltipWordmarkComponent: (0, r.jsx)(i.X6, {

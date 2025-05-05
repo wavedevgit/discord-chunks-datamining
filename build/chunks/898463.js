@@ -4,10 +4,10 @@ n.d(t, {
   Z: () => D,
   r: () => w
 }), n(388685), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(953529);
-var r = n(200651),
-  i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+var r = n(255367),
+  i = n(73800),
+  a = n(120356),
+  o = n.n(a),
   s = n(442837),
   l = n(481060),
   c = n(166459),
@@ -69,13 +69,13 @@ function C(e) {
   let {
     alt: t,
     spoiler: n,
-    renderContent: o,
-    size: a
+    renderContent: a,
+    size: o
   } = e, [s, l] = i.useState(!1);
   return (0, r.jsx)(p.aQ.Provider, {
     value: !n,
     children: (0, r.jsx)(p.ZP, {
-      containerStyles: a === y.q.CLIP ? {
+      containerStyles: o === y.q.CLIP ? {
         borderBottomLeftRadius: 0,
         borderBottomRightRadius: 0,
         boxShadow: "none"
@@ -85,7 +85,7 @@ function C(e) {
       className: v.spoilerContainer,
       children: e => (0, r.jsxs)("div", {
         className: v.spoilerWrapper,
-        children: [o(e), (0, r.jsxs)("div", {
+        children: [a(e), (0, r.jsxs)("div", {
           className: v.tags,
           children: [null != t && "" !== t ? (0, r.jsx)("span", {
             className: v.altTag,
@@ -104,7 +104,7 @@ function R(e) {
   let {
     file: t,
     alt: n,
-    spoiler: o,
+    spoiler: a,
     size: s = y.q.MEDIUM,
     onMouseEnter: c
   } = e, [u, d] = i.useState(), [f, _] = i.useState({
@@ -136,7 +136,7 @@ function R(e) {
       let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
       return null == u ? (0, r.jsx)(r.Fragment, {}) : (0, r.jsx)("img", {
         src: u,
-        className: a()(v.media, {
+        className: o()(v.media, {
           [v.spoiler]: e,
           [v.imageSmall]: p
         }),
@@ -156,7 +156,7 @@ function R(e) {
     }, [u, h]);
   return (0, r.jsx)("div", {
     onMouseEnter: c,
-    className: a()(v.mediaContainer, {
+    className: o()(v.mediaContainer, {
       [v.imageSmall]: p
     }),
     children: (0, r.jsx)(l.P3F, {
@@ -165,7 +165,7 @@ function R(e) {
       children: (0, r.jsx)(C, {
         size: s,
         alt: n,
-        spoiler: o,
+        spoiler: a,
         renderContent: h
       })
     })
@@ -176,7 +176,7 @@ function P(e) {
   let {
     file: t,
     alt: n,
-    spoiler: o,
+    spoiler: a,
     size: s = y.q.MEDIUM,
     onMouseEnter: l,
     onVideoLoadError: c
@@ -193,11 +193,11 @@ function P(e) {
     children: (0, r.jsx)(C, {
       size: s,
       alt: n,
-      spoiler: o,
+      spoiler: a,
       renderContent: e => (0, r.jsx)(h.Z, {
         ref: f,
         src: u,
-        className: a()(v.media, {
+        className: o()(v.media, {
           [v.spoiler]: e,
           [v.sizeClip]: s === y.q.CLIP
         }),
@@ -213,25 +213,25 @@ function w(e) {
   var t;
   let {
     upload: n,
-    size: o = y.q.MEDIUM,
+    size: a = y.q.MEDIUM,
     onMouseEnter: s
-  } = e, [l, c] = i.useState(!1), u = o === y.q.SMALL;
+  } = e, [l, c] = i.useState(!1), u = a === y.q.SMALL;
   return n.isImage && n.item.platform === d.ow.WEB ? (0, r.jsx)(R, {
     file: n.item.file,
     alt: n.description,
     spoiler: n.spoiler,
-    size: o,
+    size: a,
     onMouseEnter: s
   }) : !l && n.isVideo && n.item.platform === d.ow.WEB ? (0, r.jsx)(P, {
     file: n.item.file,
-    size: o,
+    size: a,
     alt: n.description,
     spoiler: n.spoiler,
     onMouseEnter: s,
     onVideoLoadError: () => c(!0)
   }) : (0, r.jsx)("div", {
     onMouseEnter: s,
-    className: a()(v.icon, v.__invalid_imageContainer, {
+    className: o()(v.icon, v.__invalid_imageContainer, {
       [v[null != (t = n.classification) ? t : ""]]: !0,
       [v.imageSmall]: u
     }),
@@ -249,7 +249,7 @@ function D(e) {
   let {
     channelId: t,
     draftType: n,
-    upload: o,
+    upload: a,
     keyboardModeEnabled: d,
     label: p,
     size: h = y.q.MEDIUM,
@@ -262,18 +262,18 @@ function D(e) {
   }), P = e => {
     e.stopPropagation(), (0, l.h7j)(e => (0, r.jsx)(u.default, A(S({}, e), {
       draftType: n,
-      upload: o,
+      upload: a,
       channelId: t,
       onSubmit: e => {
         let {
           name: r,
           description: i,
-          spoiler: a
+          spoiler: o
         } = e;
-        c.Z.update(t, o.id, n, {
+        c.Z.update(t, a.id, n, {
           filename: r,
           description: i,
-          spoiler: a
+          spoiler: o
         })
       }
     })))
@@ -281,28 +281,28 @@ function D(e) {
   return (0, r.jsxs)(y.Z, {
     actions: (0, r.jsxs)(i.Fragment, {
       children: [g ? (0, r.jsx)(b.Z, {
-        className: a()({
+        className: o()({
           [v.action]: C
         }),
         tooltip: N ? O.intl.string(O.t.MYgdY2) : O.intl.string(O.t.cuurzM),
-        onClick: () => c.Z.update(t, o.id, n, {
-          spoiler: !o.spoiler
+        onClick: () => c.Z.update(t, a.id, n, {
+          spoiler: !a.spoiler
         }),
-        children: o.spoiler ? (0, r.jsx)(l.kZF, {
+        children: a.spoiler ? (0, r.jsx)(l.kZF, {
           size: "md",
           color: "currentColor",
-          className: a()({
+          className: o()({
             [v.actionBarIcon]: C
           })
         }) : (0, r.jsx)(l.tEF, {
           size: "xs",
           color: "currentColor",
-          className: a()({
+          className: o()({
             [v.actionBarIcon]: C
           })
         })
       }) : null, g && !N ? (0, r.jsx)(b.Z, {
-        className: a()({
+        className: o()({
           [v.action]: C
         }),
         tooltip: O.intl.string(O.t.Y8ujqq),
@@ -310,44 +310,44 @@ function D(e) {
         children: (0, r.jsx)(l.vdY, {
           size: "xs",
           color: "currentColor",
-          className: a()({
+          className: o()({
             [v.actionBarIcon]: C
           })
         })
       }) : null, (0, r.jsx)(b.Z, {
-        className: a()({
+        className: o()({
           [v.action]: C
         }),
         tooltip: N ? O.intl.string(O.t.MskAXV) : O.intl.string(O.t.vN7REx),
-        onClick: () => c.Z.remove(t, o.id, n),
+        onClick: () => c.Z.remove(t, a.id, n),
         dangerous: !0,
         children: (0, r.jsx)(l.XHJ, {
           size: "md",
           color: "currentColor",
-          className: a()({
+          className: o()({
             [v.actionBarIcon]: C
           })
         })
       })]
     }),
     draftType: n,
-    id: o.id,
+    id: a.id,
     channelId: t,
     handleEditModal: P,
     keyboardModeEnabled: d,
     size: h,
-    className: a()({
+    className: o()({
       [v.attachmentItemSmall]: C
     }),
     children: [(0, r.jsx)(w, {
-      upload: o,
+      upload: a,
       size: h
     }), !I && !N && (0, r.jsx)("div", {
       className: v.filenameContainer,
       children: (0, r.jsx)(l.Text, {
         className: v.filename,
         variant: "text-sm/normal",
-        children: null != p ? p : o.filename
+        children: null != p ? p : a.filename
       })
     }), N && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(f.Z, {

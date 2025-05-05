@@ -1,17 +1,17 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(544891),
   i = n(981631),
-  o = n(388032);
-class a extends r.yZ {
+  a = n(388032);
+class o extends r.yZ {
   constructor(e, t) {
-    super(e, t, null != t ? o.intl.formatToPlainString(o.t.aKRa0d, {
+    super(e, t, null != t ? a.intl.formatToPlainString(a.t.aKRa0d, {
       statusPageURL: i.yXt.STATUS,
       details: "".concat(t)
-    }) : o.intl.formatToPlainString(o.t.aTVNen, {
+    }) : a.intl.formatToPlainString(a.t.aTVNen, {
       statusPageURL: i.yXt.STATUS
     }))
   }

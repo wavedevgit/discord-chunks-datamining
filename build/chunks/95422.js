@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  a: () => o
+  a: () => a
 });
 var r = n(228624),
   i = n(388032);
-let o = e => {
+let a = e => {
   let t = (0, r.ed)("usePurchasedProductName");
   if (null == e) return "";
   let n = i.intl.string(i.t.z7y5vL);

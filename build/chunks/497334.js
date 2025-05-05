@@ -2,8 +2,8 @@
 n.d(t, {
   S: () => h
 });
-var r = n(200651);
-n(192379);
+var r = n(255367);
+n(73800);
 var i = n(120356),
   l = n.n(i),
   a = n(704215),
@@ -28,6 +28,7 @@ function h(e) {
       className: p.reverseTrialBadgeIcon
     }), (0, r.jsx)(o.Text, {
       variant: "eyebrow",
+      color: "text-secondary",
       children: n
     })]
   }) : (0, r.jsx)(u.Z, {

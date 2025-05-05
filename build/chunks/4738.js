@@ -3,10 +3,10 @@
 n.d(t, {
   D: () => h
 }), n(388685);
-var r = n(200651),
-  i = n(192379),
-  o = n(120356),
-  a = n.n(o),
+var r = n(255367),
+  i = n(73800),
+  a = n(120356),
+  o = n.n(a),
   s = n(693789),
   l = n(1561),
   c = n(463208),
@@ -19,7 +19,7 @@ function p(e) {
   let {
     page: t,
     totalPageCount: n,
-    disabled: o,
+    disabled: a,
     onPageChange: s
   } = e, [d, f] = i.useState(!1), [p, h] = i.useState(null), m = null != p && p >= 1 && p <= n, g = e => {
     let t = parseInt(e);
@@ -28,7 +28,7 @@ function p(e) {
   }, E = e => {
     "Enter" === e.key && null != p && m && (s(p), f(!1), h(null))
   };
-  return o ? (0, r.jsx)(u.X6q, {
+  return a ? (0, r.jsx)(u.X6q, {
     className: _.gap,
     "aria-hidden": !0,
     variant: "heading-sm/semibold",
@@ -43,11 +43,11 @@ function p(e) {
       f(!1), h(null)
     },
     onKeyPress: E,
-    disabled: o
+    disabled: a
   }, t.key) : (0, r.jsx)(l.P, {
     onClick: () => f(!0),
     children: (0, r.jsx)(u.X6q, {
-      className: a()(_.roundButton, _.gap),
+      className: o()(_.roundButton, _.gap),
       "aria-hidden": !0,
       variant: "heading-sm/semibold",
       children: "…"
@@ -60,7 +60,7 @@ function h(e) {
     currentPage: t,
     totalCount: n,
     pageSize: i,
-    maxVisiblePages: o,
+    maxVisiblePages: a,
     disablePaginationGap: c,
     onPageChange: h,
     hideMaxPage: m = !1,
@@ -123,7 +123,7 @@ function h(e) {
 
   function v(e) {
     return (0, r.jsx)(l.P, {
-      className: a()(_.roundButton, {
+      className: o()(_.roundButton, {
         [_.activeButton]: e.selected
       }),
       onClick: e.selected ? void 0 : e.navigateToPage,
@@ -152,7 +152,7 @@ function h(e) {
       hasMultiplePages: n
     } = e;
     return n ? (0, r.jsx)("div", {
-      className: a()(_.pageControlContainer, g),
+      className: o()(_.pageControlContainer, g),
       children: (0, r.jsx)("nav", {
         className: _.pageControl,
         children: t.map(e => {
@@ -175,7 +175,7 @@ function h(e) {
   return (0, r.jsx)(d.W, {
     totalPageCount: E,
     selectedPage: t,
-    maxVisiblePages: o,
+    maxVisiblePages: a,
     hideMaxPage: m,
     onPageChange: b,
     children: S

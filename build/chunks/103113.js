@@ -3,10 +3,10 @@
 n.d(t, {
   Z: () => P
 }), n(388685);
-var r = n(200651),
-  i = n(192379),
-  o = n(481060),
-  a = n(727637),
+var r = n(255367),
+  i = n(73800),
+  a = n(481060),
+  o = n(727637),
   s = n(100527),
   l = n(906732),
   c = n(580552),
@@ -73,7 +73,7 @@ function P(e) {
     channelId: C,
     messageId: P,
     roleId: w
-  }), V = i.useRef(null), F = (0, a.Z)(V);
+  }), V = i.useRef(null), F = (0, o.Z)(V);
   i.useEffect(() => {
     null == L || L(null == V ? void 0 : V.current)
   }, [V, L]);
@@ -84,7 +84,7 @@ function P(e) {
       }, B))
     },
     H = !M && (0, c.Z)(t.id),
-    Y = () => H ? (0, r.jsx)(o.sNh, {
+    Y = () => H ? (0, r.jsx)(a.sNh, {
       id: "view-profile",
       label: A.intl.string(A.t["+Xp3ho"]),
       action: () => {
@@ -94,7 +94,7 @@ function P(e) {
         }, B))
       }
     }) : null,
-    W = j ? "div" : o.VqE;
+    W = j ? "div" : a.VqE;
   return (0, r.jsx)(l.Gt, {
     value: G,
     children: (0, r.jsx)(_.Mt, {
@@ -132,7 +132,7 @@ function P(e) {
             }), t.isClyde() && (0, r.jsx)(u.Z, {
               className: N.headerTag
             })]
-          }), (0, r.jsxs)(o.Ttm, {
+          }), (0, r.jsxs)(a.Ttm, {
             fade: !0,
             className: N.body,
             children: [(0, r.jsx)(v.Z, {

@@ -3,11 +3,11 @@
 n.d(t, {
   Z: () => d
 });
-var r = n(200651);
-n(192379);
+var r = n(255367);
+n(73800);
 var i = n(952265),
-  o = n(468026),
-  a = n(388032);
+  a = n(468026),
+  o = n(388032);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -52,7 +52,7 @@ let d = {
     let {
       title: t,
       body: n,
-      confirmColor: a,
+      confirmColor: o,
       confirmText: s,
       cancelText: c,
       onConfirm: d,
@@ -64,10 +64,10 @@ let d = {
       titleClassName: g,
       contextKey: E
     } = e;
-    (0, i.h7)(e => (0, r.jsx)(o.default, u(l({}, e), {
+    (0, i.h7)(e => (0, r.jsx)(a.default, u(l({}, e), {
       title: t,
       body: n,
-      confirmColor: a,
+      confirmColor: o,
       confirmText: s,
       cancelText: c,
       onConfirm: d,
@@ -87,7 +87,7 @@ let d = {
         onConfirm() {
           t(!0)
         },
-        cancelText: a.intl.string(a.t["ETE/oK"]),
+        cancelText: o.intl.string(o.t["ETE/oK"]),
         onCancel() {
           t(!1)
         }
