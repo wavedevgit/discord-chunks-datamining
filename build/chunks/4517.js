@@ -129,7 +129,9 @@ function $(e) {
     analyticsLocations: s
   } = (0, h.ZP)(), {
     trackUserProfileAction: l
-  } = (0, A.KZ)(), [c, f] = i.useState(!1), [_, p] = i.useState(!1), g = i.useRef(null), E = i.useRef(!1), b = (0, m.Z)({
+  } = (0, A.KZ)(), [c, f] = i.useState(!1), [_, p] = i.useState(!1), g = i.useRef(null), E = i.useRef(!1), {
+    isEligibleForCustomStatusLabels: b
+  } = (0, m.Z)({
     location: "AddCustomStatusBubble"
   });
   (0, d.ZP)(() => {
@@ -254,7 +256,9 @@ let ee = i.forwardRef(function(e, t) {
     trackUserProfileAction: N
   } = (0, A.KZ)(), R = (0, g.p)({
     location: "CustomStatusBubble"
-  }), P = (0, m.Z)({
+  }), {
+    isEligibleForCustomStatusLabels: P
+  } = (0, m.Z)({
     location: "UserProfileCustomStatusBubble"
   }), w = null != d ? Z : 0, D = null != I && P ? q : 0, x = H + w + D, j = Y + w + D, U = i.useRef(null), G = i.useRef(null), B = i.useRef(null), V = i.useRef(x), F = i.useRef(j), X = null != d && null == p && null == I, [J, $] = i.useState(!1), [ee, et] = i.useState(!0), [en, er] = i.useState(!X && S), ei = S && J, ea = (0, l.e7)([f.Z], () => f.Z.useReducedMotion), [eo] = i.useState(() => new c.V7);
   i.useEffect(() => () => eo.stop(), [eo]), i.useEffect(() => {
@@ -437,7 +441,9 @@ function en(e) {
     interactionType: f,
     interactionSource: _,
     resetInteraction: p
-  } = (0, C.Xo)(), h = _ === L.n_.STATUS && f === L.P.REACT, g = _ === L.n_.STATUS && f === L.P.REPLY, E = h || g, y = i.useRef(null), O = i.useRef(t), v = i.useRef(n), S = (0, m.Z)({
+  } = (0, C.Xo)(), h = _ === L.n_.STATUS && f === L.P.REACT, g = _ === L.n_.STATUS && f === L.P.REPLY, E = h || g, y = i.useRef(null), O = i.useRef(t), v = i.useRef(n), {
+    isEligibleForCustomStatusLabels: S
+  } = (0, m.Z)({
     location: "CustomStatusBubbleWithInteractionToolbar"
   });
   i.useEffect(() => {

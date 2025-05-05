@@ -112,8 +112,8 @@ var i = n(255367),
   e1 = n(981631),
   e3 = n(215023),
   e8 = n(46140),
-  e6 = n(388032),
-  e2 = n(239692);
+  e2 = n(388032),
+  e6 = n(239692);
 
 function e5(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -244,10 +244,10 @@ function ti(e) {
           var n;
           null == (n = e.onClick) || n.call(e, t), null == o || o(t)
         },
-        "aria-label": e6.intl.string(e6.t["3Uj+2t"]),
+        "aria-label": e2.intl.string(e2.t["3Uj+2t"]),
         "data-jump-section": p ? m : void 0,
-        className: l()(e2.avatarWrapper, !p && h && e2.experiment, {
-          [e2.plated]: null != u
+        className: l()(e6.avatarWrapper, !p && h && e6.experiment, {
+          [e6.plated]: null != u
         }),
         children: [(0, i.jsx)(e9, {
           size: p ? f.EFr["SIZE_".concat(x)] : f.EFr.SIZE_32,
@@ -256,10 +256,10 @@ function ti(e) {
           "aria-label": s.username,
           status: n ? e1.Skl.STREAMING : a,
           isSpeaking: t,
-          className: e2.avatar
+          className: e6.avatar
         }), (0, i.jsx)("div", {
-          className: l()(e2.nameTag, {
-            [e2.canCopy]: ez.wS
+          className: l()(e6.nameTag, {
+            [e6.canCopy]: ez.wS
           }),
           children: d()
         })]
@@ -290,7 +290,7 @@ class tr extends r.PureComponent {
   renderCopiedSuccess() {
     let {
       copiedStreak: e
-    } = this.state, t = [e6.intl.string(e6.t.MSaeTU), e6.intl.string(e6.t.UmrCw8), e6.intl.string(e6.t.gKE0Ji), e6.intl.string(e6.t["4DSKbm"]), e6.intl.string(e6.t["+8ENdX"]), e6.intl.string(e6.t.GlWHv7), e6.intl.string(e6.t.hIzxU1), e6.intl.string(e6.t["26uMPD"]), e6.intl.string(e6.t.uFs7R0), e6.intl.string(e6.t.bLXdcX), e6.intl.string(e6.t.gPg9fX)], n = Math.min(Math.max(0, e - 1), t.length - 1);
+    } = this.state, t = [e2.intl.string(e2.t.MSaeTU), e2.intl.string(e2.t.UmrCw8), e2.intl.string(e2.t.gKE0Ji), e2.intl.string(e2.t["4DSKbm"]), e2.intl.string(e2.t["+8ENdX"]), e2.intl.string(e2.t.GlWHv7), e2.intl.string(e2.t.hIzxU1), e2.intl.string(e2.t["26uMPD"]), e2.intl.string(e2.t.uFs7R0), e2.intl.string(e2.t.bLXdcX), e2.intl.string(e2.t.gPg9fX)], n = Math.min(Math.max(0, e - 1), t.length - 1);
     return (0, i.jsx)(f.UkV, {
       isShaking: this.isCopiedStreakGodlike,
       children: t[n]
@@ -334,7 +334,7 @@ class tr extends r.PureComponent {
         activities: t,
         applicationStream: n,
         voiceChannel: a ? o : void 0,
-        textClassName: e2.activityStatusText,
+        textClassName: e6.activityStatusText,
         hideTooltip: !0
       })
     });
@@ -349,8 +349,8 @@ class tr extends r.PureComponent {
       forceHover: e,
       children: (0, i.jsx)(W.Z, {
         activity: u,
-        emojiClassName: e2.emoji,
-        className: e2.customStatus
+        emojiClassName: e6.emoji,
+        className: e6.customStatus
       })
     }) : null != s && s !== e1.Skl.UNKNOWN && r.isPomelo() ? (0, i.jsx)(y.Z, {
       hoverText: l,
@@ -446,9 +446,9 @@ class tr extends r.PureComponent {
       children: e => (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
           ref: this.containerRef,
-          className: l()(e2.container, {
-            [e2.containerRtcOpened]: null != n,
-            [e2.containerQuestBarVisible]: !r
+          className: l()(e6.container, {
+            [e6.containerRtcOpened]: null != n,
+            [e6.containerQuestBarVisible]: !r
           }),
           onMouseEnter: this.handleMouseEnter,
           onMouseLeave: this.handleMouseLeave,
@@ -632,12 +632,12 @@ class tr extends r.PureComponent {
       } = this.props;
       return null == e ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
-          className: e2.panelTitleContainer,
+          className: e6.panelTitleContainer,
           children: (0, i.jsx)(e0.Z, {
             children: eX.ZP.getName(e)
           })
         }), (0, i.jsx)("div", {
-          className: e2.panelSubtextContainer,
+          className: e6.panelSubtextContainer,
           children: (0, i.jsx)(e$.Z, {
             children: this.renderStatus()
           })
@@ -671,7 +671,7 @@ function ts(e) {
     accountContainerRef: C
   } = e, O = (0, el.A)(j);
   return (0, i.jsxs)("div", {
-    className: e2.buttons,
+    className: e6.buttons,
     style: O,
     children: [(0, i.jsx)(to, {
       accountContainerRef: C,
@@ -679,14 +679,14 @@ function ts(e) {
       serverMute: s,
       suppress: a,
       awaitingRemote: r,
-      tooltipText: o ? e6.intl.string(e6.t["29gnR0"]) : void 0,
+      tooltipText: o ? e2.intl.string(e2.t["29gnR0"]) : void 0,
       tooltipColor: o ? f.FGA.GREEN : void 0,
       tooltipForceOpen: o || void 0,
       onMouseEnter: u,
       onMouseLeave: m,
       onClick: p,
       onContextMenu: h,
-      iconForeground: null != j ? e2.iconForeground : void 0,
+      iconForeground: null != j ? e6.iconForeground : void 0,
       nameplate: j
     }), (0, i.jsx)(tc, {
       selfDeaf: t,
@@ -694,7 +694,7 @@ function ts(e) {
       onClick: g,
       onContextMenu: b,
       awaitingRemote: r,
-      iconForeground: null != j ? e2.iconForeground : void 0,
+      iconForeground: null != j ? e6.iconForeground : void 0,
       nameplate: j
     }), (0, i.jsx)(ta, {
       isEligibleForPomelo: c,
@@ -702,7 +702,7 @@ function ts(e) {
       onClick: _,
       onContextMenu: x,
       dismissibleContents: E.settings,
-      iconForeground: null != j ? e2.iconForeground : void 0,
+      iconForeground: null != j ? e6.iconForeground : void 0,
       nameplate: j
     })]
   })
@@ -826,7 +826,9 @@ function tl() {
     ea = (0, eg.Ws)({
       location: e8.dr.CONFLICT_CHECKS
     }),
-    eo = (0, H.Z)({
+    {
+      isEligibleForCustomStatusLabels: eo
+    } = (0, H.Z)({
       location: "AccountConnected"
     }),
     em = {
@@ -896,9 +898,9 @@ function ta(e) {
     }) : h === c.z.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK ? () => (0, i.jsx)(eE.Z, {}) : () => (0, i.jsx)(i.Fragment, {}),
     children: () => (0, i.jsx)(eJ.Z, e7(e4({
       ref: u,
-      tooltipText: null != t ? e6.intl.formatToPlainString(e6.t.Gzh6ZG, {
+      tooltipText: null != t ? e2.intl.formatToPlainString(e2.t.Gzh6ZG, {
         webBuildOverride: t.id
-      }) : e6.intl.string(e6.t.cduTBA),
+      }) : e2.intl.string(e2.t.cduTBA),
       onClick: s,
       onContextMenu: l,
       icon: (0, i.jsx)(m, {
@@ -970,7 +972,7 @@ function to(e) {
     value: F,
     children: (0, i.jsxs)("div", {
       ref: v,
-      className: e2.micButtonParent,
+      className: e6.micButtonParent,
       children: [(0, i.jsx)(eJ.Z, {
         tooltipText: G,
         tooltipColor: u,
@@ -993,10 +995,10 @@ function to(e) {
         onContextMenu: z,
         role: "switch",
         className: l()({
-          [e2.micButtonWithMenu]: H
+          [e6.micButtonWithMenu]: H
         }),
         redGlow: S && V,
-        "aria-label": e6.intl.string(e6.t["w4m94+"]),
+        "aria-label": e2.intl.string(e2.t["w4m94+"]),
         "aria-checked": S,
         disabled: c
       }), H && (0, i.jsx)(f.yRy, {
@@ -1050,31 +1052,31 @@ function to(e) {
                 plated: null != C,
                 tooltipForceOpen: q,
                 tooltipColor: q ? f.FGA.GREEN : void 0,
-                tooltipContentClassName: q ? e2.voiceFilterWarning : void 0,
+                tooltipContentClassName: q ? e6.voiceFilterWarning : void 0,
                 tooltipText: q ? (0, i.jsxs)(i.Fragment, {
                   children: [(0, i.jsx)("img", {
-                    alt: null != D ? e6.intl.string(D.name) : "",
+                    alt: null != D ? e2.intl.string(D.name) : "",
                     src: null == D ? void 0 : D.iconURL,
                     draggable: !1
                   }), (0, i.jsx)(f.Text, {
                     variant: "text-sm/medium",
                     color: "always-white",
-                    children: e6.intl.string(e6.t.VlC1dX)
+                    children: e2.intl.string(e2.t.VlC1dX)
                   })]
-                }) : e6.intl.string(e6.t.Hapb4O),
+                }) : e2.intl.string(e2.t.Hapb4O),
                 icon: (0, i.jsx)(a, {
-                  className: e2.buttonChevronIcon,
+                  className: e6.buttonChevronIcon,
                   size: "custom",
                   width: 12,
                   height: 12,
                   color: V && S ? f.TVs.colors.STATUS_DANGER : f.TVs.colors.TEXT_NORMAL
                 }),
                 role: "button",
-                className: l()([e2.buttonChevron], {
-                  [e2.redGlow]: S && V
+                className: l()([e6.buttonChevron], {
+                  [e6.redGlow]: S && V
                 }),
                 redGlow: S && V,
-                "aria-label": e6.intl.string(e6.t.Hapb4O),
+                "aria-label": e2.intl.string(e2.t.Hapb4O),
                 disabled: c,
                 onClick: e => {
                   null == t || t(), n(e), Y(!W)
@@ -1132,12 +1134,12 @@ function tc(e) {
       onClick: a,
       onContextMenu: j,
       innerClassName: l()({
-        [e2.redIcon]: n
+        [e6.redIcon]: n
       }),
-      iconForeground: m ? e2.strikethrough : void 0,
+      iconForeground: m ? e6.strikethrough : void 0,
       role: "switch",
       redGlow: x && m,
-      "aria-label": e6.intl.string(e6.t.wjcRFR),
+      "aria-label": e2.intl.string(e2.t.wjcRFR),
       "aria-checked": m,
       disabled: s
     })

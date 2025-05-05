@@ -41,7 +41,9 @@ function S(e) {
   } = e;
   (0, u.Z)(null == t ? void 0 : t.id);
   let D = (null == a ? void 0 : a.discoverable) !== !1 ? a : null,
-    L = (0, d.Z)({
+    {
+      enabledWithActivityStatus: L
+    } = (0, d.Z)({
       location: "ActivityStatus"
     }),
     x = i.useMemo(() => {
