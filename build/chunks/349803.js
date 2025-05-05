@@ -23,7 +23,7 @@ let f = function(e) {
     isFullscreen: f,
     subscriptionTier: b,
     isMarketingPageV2: _
-  } = e, x = null == (t = (0, d.N)()) ? void 0 : t.subscription_trial, E = (0, c.Ng)(), C = (0, c.Wp)(E, g.Si.TIER_2) ? g.Si.TIER_2 : void 0, j = (0, a.q_F)({
+  } = e, x = null == (t = (0, d.N)()) ? void 0 : t.subscription_trial, E = (0, c.Ng)(), j = (0, c.Wp)(E, g.Si.TIER_2) ? g.Si.TIER_2 : void 0, C = (0, a.q_F)({
     transform: r ? "translateY(-100%)" : "translateY(0%)",
     opacity: +!!r,
     config: {
@@ -38,14 +38,14 @@ let f = function(e) {
       [h.fullscreenWrapper]: f,
       [h.invisible]: !r
     }),
-    style: j,
+    style: C,
     children: (0, i.jsxs)("div", {
       className: _ ? h.innerWrapperV2 : h.innerWrapperV1,
       children: [(0, i.jsx)(m.Z, {
         className: s()(h.button, {
           [h.subButton]: v
         }),
-        subscriptionTier: null != (n = null != b ? b : null == x ? void 0 : x.sku_id) ? n : C,
+        subscriptionTier: null != (n = null != b ? b : null == x ? void 0 : x.sku_id) ? n : j,
         premiumModalAnalyticsLocation: O,
         isPersistentCTA: !0
       }), (0, i.jsx)(u.Z, {

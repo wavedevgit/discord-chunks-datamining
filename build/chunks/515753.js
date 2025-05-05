@@ -23,8 +23,8 @@ var i = n(255367),
   _ = n(326255),
   x = n(956221),
   E = n(747017),
-  C = n(385499),
-  j = n(570908),
+  j = n(385499),
+  C = n(570908),
   O = n(702321),
   S = n(201895),
   v = n(43267),
@@ -175,7 +175,7 @@ let en = q.ZP.getEnableHardwareAcceleration() ? g.Xo$ : g.qEK,
       "aria-posinset": _,
       "aria-setsize": x,
       listItemRef: E
-    } = e, C = et(e, ["route", "selected", "icon", "iconClassName", "avatarWithTextClassName", "interactiveClassName", "text", "children", "locationState", "onClick", "className", "role", "aria-posinset", "aria-setsize", "listItemRef"]);
+    } = e, j = et(e, ["route", "selected", "icon", "iconClassName", "avatarWithTextClassName", "interactiveClassName", "text", "children", "locationState", "onClick", "className", "role", "aria-posinset", "aria-setsize", "listItemRef"]);
     let O = (0, y.Q3)("PrivateChannelLinkButton");
     return (0, i.jsx)(I.Z, {
       className: l()(J.channel, {
@@ -201,8 +201,8 @@ let en = q.ZP.getEnableHardwareAcceleration() ? g.Xo$ : g.qEK,
             state: p
           },
           className: J.link
-        }, C), {
-          children: [(0, i.jsx)(j.Z, {
+        }, j), {
+          children: [(0, i.jsx)(C.Z, {
             muted: !1,
             avatar: (0, i.jsx)(r, {
               size: O ? "refresh_sm" : void 0,
@@ -246,7 +246,7 @@ function ec(e) {
   } = (0, m.cj)([H.Z], () => ({
     ignored: H.Z.isIgnored(t.getRecipientId()),
     blocked: H.Z.isBlocked(t.getRecipientId())
-  })), eE = eh && e_, eC = eh && ex, ej = (eb || eE || eC) && !(a || Y), eO = (0, m.e7)([F.ZP], () => F.ZP.getMentionCount(t.id) > 0), eS = (0, T.ZP)(t), ev = (0, m.e7)([A.Z], () => A.Z.isFavorite(t.id)), eT = (0, B.L)("PrivateChannel"), eI = null != V && (a || Y), eN = () => {
+  })), eE = eh && e_, ej = eh && ex, eC = (eb || eE || ej) && !(a || Y), eO = (0, m.e7)([F.ZP], () => F.ZP.getMentionCount(t.id) > 0), eS = (0, T.ZP)(t), ev = (0, m.e7)([A.Z], () => A.Z.isFavorite(t.id)), eT = (0, B.L)("PrivateChannel"), eI = null != V && (a || Y), eN = () => {
     K(!0)
   }, ey = () => {
     K(!1)
@@ -325,7 +325,7 @@ function ec(e) {
     applicationStream: x,
     animate: Y,
     textClassName: J.activityStatusText,
-    iconClassName: ej ? J.mutedIcon : void 0
+    iconClassName: eC ? J.mutedIcon : void 0
   }) : null, eL = () => {
     let e = g.EFr.SIZE_32;
     if (t.isMultiUserDM())
@@ -386,7 +386,7 @@ function ec(e) {
         "aria-posinset": G,
         children: [eT && eO ? (0, i.jsx)("div", {
           className: l()(J.unreadPill, {
-            [J.muted]: ej
+            [J.muted]: eC
           })
         }) : null, (0, i.jsxs)(g.vjx, {
           className: l()(J.interactive, {
@@ -395,7 +395,7 @@ function ec(e) {
           }),
           as: "div",
           onClick: eD,
-          muted: ej,
+          muted: eC,
           selected: a,
           children: [(0, i.jsx)(L.Z, {
             nameplate: eI ? V : void 0,
@@ -414,23 +414,23 @@ function ec(e) {
               unread: eO
             })
           }, r), {
-            children: (0, i.jsx)(j.Z, {
+            children: (0, i.jsx)(C.Z, {
               ref: eM,
               avatar: eL(),
-              highlighted: eO && !(eT && ej),
-              muted: ej,
+              highlighted: eO && !(eT && eC),
+              muted: eC,
               subText: ek(),
               name: (0, i.jsx)(N.Z, {
                 tooltipClassName: J.overflowTooltip,
                 children: eB
               }),
-              decorators: t.isSystemDM() ? (0, i.jsx)(C.Z, {
+              decorators: t.isSystemDM() ? (0, i.jsx)(j.Z, {
                 className: J.decorator,
-                type: C.Z.Types.SYSTEM_DM,
+                type: j.Z.Types.SYSTEM_DM,
                 verified: !0
               }) : null
             })
-          })), ev ? (0, i.jsx)(es, {}) : null, eE ? (0, i.jsx)(el, {}) : null, eC ? (0, i.jsx)(ea, {}) : null, (0, i.jsx)(er, {
+          })), ev ? (0, i.jsx)(es, {}) : null, eE ? (0, i.jsx)(el, {}) : null, ej ? (0, i.jsx)(ea, {}) : null, (0, i.jsx)(er, {
             "aria-label": em ? Q.intl.string(Q.t["26C4oq"]) : Q.intl.string(Q.t.jsvgc3),
             onClick: em ? ew : eA,
             onMouseDown: eR,

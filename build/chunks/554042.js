@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => j
+  Z: () => C
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -20,7 +20,7 @@ var i = n(255367),
   _ = n(981631),
   x = n(388032),
   E = n(560030);
-let C = [{
+let j = [{
   label: "Latin alphabet",
   value: "aBcDeFgHiJkLmNoPqRsTuVwXyZ"
 }, {
@@ -43,14 +43,14 @@ let C = [{
   value: "custom"
 }];
 
-function j() {
+function C() {
   let [e, t] = r.useState(Math.round(window.outerWidth / window.innerWidth * 100)), {
     platformZoom: n,
     theme: s
   } = (0, a.cj)([b.Z, g.Z], () => ({
     theme: b.Z.theme,
     platformZoom: g.Z.zoom
-  })), [j, O] = r.useState("upright"), S = ["normal", "medium", "semibold", "bold", "extrabold"], v = new Map([
+  })), [C, O] = r.useState("upright"), S = ["normal", "medium", "semibold", "bold", "extrabold"], v = new Map([
     ["normal", 400],
     ["medium", 500],
     ["semibold", 600],
@@ -68,21 +68,21 @@ function j() {
       return (0, h.fD)() ? null == (t = p.C.getCurrentBuildOverride()) || null == (e = t.overrides) ? void 0 : e.discord_web : null
     }),
     [N, y] = (0, m.R)("playground-overrideText", null),
-    [A, P] = (0, m.R)("playground-defaultText", C[0].value),
+    [A, P] = (0, m.R)("playground-defaultText", j[0].value),
     R = r.useCallback(e => {
-      let t = C.find(t => {
+      let t = j.find(t => {
         let {
           value: n
         } = t;
         return n === e
       });
-      "" === e || null == e ? (P(C[0].value), y(null)) : null != t ? P(t.value) : (P("custom"), y(e))
+      "" === e || null == e ? (P(j[0].value), y(null)) : null != t ? P(t.value) : (P("custom"), y(e))
     }, [y, P]);
   return (0, i.jsx)("div", {
     className: E.fullscreen,
     style: {
-      "--playground-font-family": "mono" === j ? "gg mono" : "gg sans",
-      "--playground-font-style": "italic" === j ? "italic" : "normal"
+      "--playground-font-family": "mono" === C ? "gg mono" : "gg sans",
+      "--playground-font-style": "italic" === C ? "italic" : "normal"
     },
     children: (0, i.jsxs)(o.hjN, {
       tag: o.RB0.H1,
@@ -109,7 +109,7 @@ function j() {
         }), (0, i.jsx)(o.xJW, {
           children: (0, i.jsx)(o.q4e, {
             className: E.select,
-            options: C,
+            options: j,
             onChange: e => R(e),
             value: A
           })
@@ -159,7 +159,7 @@ function j() {
             onChange: e => {
               O(e.value)
             },
-            value: j
+            value: C
           })
         }), (0, i.jsx)(u.Z, {
           closeAction: c.xf,

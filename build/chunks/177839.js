@@ -20,7 +20,7 @@ var i = n(255367),
   _ = n(388032),
   x = n(969397);
 let E = e => e ? _.intl.string(_.t.QX14gI) : _.intl.string(_.t.RGadQU),
-  C = e => {
+  j = e => {
     let {
       isShowingAll: t,
       onClick: n
@@ -39,7 +39,7 @@ let E = e => e ? _.intl.string(_.t.QX14gI) : _.intl.string(_.t.RGadQU),
       })]
     })
   },
-  j = e => {
+  C = e => {
     let {
       title: t,
       description: n,
@@ -103,7 +103,7 @@ let E = e => e ? _.intl.string(_.t.QX14gI) : _.intl.string(_.t.RGadQU),
         className: l()(x.perkCardContainer, {
           [x.perkCardContainerExpanded]: s
         }),
-        children: S.map(e => null != e && (0, i.jsx)(j, function(e) {
+        children: S.map(e => null != e && (0, i.jsx)(C, function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               i = Object.keys(n);
@@ -127,7 +127,7 @@ let E = e => e ? _.intl.string(_.t.QX14gI) : _.intl.string(_.t.RGadQU),
             [x.sizeGizmo]: !s,
             [x.sizeGizmoExpanded]: s
           }),
-          children: (0, i.jsx)(C, {
+          children: (0, i.jsx)(j, {
             onClick: () => {
               h.default.track(b.rMx.PREMIUM_MARKETING_PERKS_SEE_ALL_CLICKED, {
                 location_stack: _,

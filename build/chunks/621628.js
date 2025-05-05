@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => j,
+  Z: () => C,
   u: () => E
 }), n(388685), n(410992), n(227481), n(730884), n(20464), n(341884), n(364341), n(629680), n(505025), n(918970), n(121784), n(644351), n(146733), n(290780), n(642613);
 var i = n(255367),
@@ -56,7 +56,7 @@ function E(e) {
   })
 }
 
-function C(e) {
+function j(e) {
   let {
     items: t,
     dismissedContents: n,
@@ -71,7 +71,7 @@ function C(e) {
   })
 }
 
-function j() {
+function C() {
   var e;
   let t = (0, f.ZP)(e => e.recentlyShown),
     {
@@ -83,7 +83,7 @@ function j() {
       dailyCapOverridden: h.Z.dailyCapOverridden,
       newUserMinAgeRequiredOverridden: h.Z.newUserMinAgeRequiredOverridden
     })),
-    [E, j] = r.useState(""),
+    [E, C] = r.useState(""),
     O = null != (e = (0, a.e7)([g.Z], () => {
       var e;
       return null == (e = g.Z.settings.userContent) ? void 0 : e.dismissedContents
@@ -142,8 +142,8 @@ function j() {
         className: x.marginBottom20,
         size: d.E1j.Sizes.LARGE,
         query: E,
-        onChange: j,
-        onClear: () => j("")
+        onChange: C,
+        onClear: () => C("")
       }), (0, i.jsxs)(d.xJW, {
         className: _.buttonsContainer,
         children: [(0, i.jsx)(d.zxk, {
@@ -160,7 +160,7 @@ function j() {
           children: (0, i.jsx)(d.vwX, {
             children: "Recently Shown"
           })
-        }), (0, i.jsx)(C, {
+        }), (0, i.jsx)(j, {
           items: I,
           dismissedContents: O,
           handleChange: T
@@ -171,7 +171,7 @@ function j() {
           children: (0, i.jsx)(d.vwX, {
             children: "Recent Overrides"
           })
-        }), (0, i.jsx)(C, {
+        }), (0, i.jsx)(j, {
           items: N,
           dismissedContents: O,
           handleChange: T
@@ -181,7 +181,7 @@ function j() {
         children: (0, i.jsx)(d.vwX, {
           children: "Available Dismissible Contents"
         })
-      }), (0, i.jsx)(C, {
+      }), (0, i.jsx)(j, {
         items: y,
         dismissedContents: O,
         handleChange: T

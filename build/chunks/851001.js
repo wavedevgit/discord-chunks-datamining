@@ -20,8 +20,8 @@ var i = n(255367),
   _ = n(388032),
   x = n(601060),
   E = n(839526),
-  C = n(4046),
-  j = n(423741);
+  j = n(4046),
+  C = n(423741);
 let O = r.forwardRef((e, t) => {
   var n, s;
   let {
@@ -56,14 +56,14 @@ let O = r.forwardRef((e, t) => {
         children: (0, i.jsx)(d.Z, {
           playsInline: !0,
           preload: "auto",
-          poster: C.Z,
+          poster: j.Z,
           className: x.footerArt,
           onEnded: () => {
             k(!0)
           },
           ref: Z,
           children: (0, i.jsx)("source", {
-            src: D ? E.Z : j.Z,
+            src: D ? E.Z : C.Z,
             type: D ? b.m.MP4 : b.m.WEBM
           })
         })

@@ -87,7 +87,7 @@ function x(e) {
         }), t))
       })
     }, []),
-    C = (0, i.jsxs)(i.Fragment, {
+    j = (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(d.F, {
         setting: h.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO_OPENH264,
         children: (0, i.jsx)(o.j7V, {
@@ -122,10 +122,10 @@ function x(e) {
     });
   return (0, i.jsx)(d.F, {
     setting: h.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO,
-    children: t ? C : (0, i.jsx)(o.hjN, {
+    children: t ? j : (0, i.jsx)(o.hjN, {
       className: b.marginBottom20,
       title: f.intl.string(f.t.Tceiq6),
-      children: C
+      children: j
     })
   })
 }

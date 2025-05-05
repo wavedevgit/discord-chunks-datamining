@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => j
+  Z: () => C
 });
 var i = n(255367);
 n(73800);
@@ -39,7 +39,7 @@ function E() {
   })
 }
 
-function C() {
+function j() {
   return (0, i.jsxs)(h.Z, {
     title: _.intl.string(_.t.SRZyHh),
     webSetting: b.s6.PRIVACY_AND_SAFETY_DISCORD_DATA_USAGE_CATEGORY,
@@ -47,11 +47,11 @@ function C() {
   })
 }
 
-function j() {
+function C() {
   return (0, s.ZP)(() => {
     (0, r.I)(), (0, a.A)()
   }), (0, i.jsxs)(o.N, {
     header: _.intl.string(_.t.OAuOHB),
-    children: [(0, i.jsx)(C, {}), (0, i.jsx)(E, {}), (0, i.jsx)(x, {})]
+    children: [(0, i.jsx)(j, {}), (0, i.jsx)(E, {}), (0, i.jsx)(x, {})]
   })
 }

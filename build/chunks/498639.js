@@ -20,8 +20,8 @@ var i = n(255367),
   _ = n(305342),
   x = n(333867),
   E = n(963249),
-  C = n(87484),
-  j = n(197115),
+  j = n(87484),
+  C = n(197115),
   O = n(911367),
   S = n(43747),
   v = n(970815),
@@ -136,7 +136,7 @@ let Z = function() {
             label: "None"
           }],
           onChange: e => t(e)
-        }), (0, i.jsx)(j.Z, {
+        }), (0, i.jsx)(C.Z, {
           subscriptionTier: e,
           isGift: !0,
           premiumModalAnalyticsLocation: {}
@@ -381,7 +381,7 @@ let Z = function() {
           value: el,
           onChange: e => ea(e)
         }), (0, i.jsx)(a.zxk, {
-          onClick: () => (0, C.Z)({
+          onClick: () => (0, j.Z)({
             applicationId: er,
             skuId: el,
             analyticsLocations: z

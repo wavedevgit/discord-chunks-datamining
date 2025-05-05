@@ -19,8 +19,8 @@ var i, r = n(255367),
   _ = n(600164),
   x = n(925329),
   E = n(267101),
-  C = n(240864),
-  j = n(942833),
+  j = n(240864),
+  C = n(942833),
   O = n(400916),
   S = n(916001),
   v = n(539290),
@@ -175,7 +175,7 @@ function er(e) {
     guildProductListingId: n
   } = e, i = (0, E.hO)(t, n, {
     requireCurrentGuild: !1
-  }), l = (0, j.C)(i), a = (0, m.e7)([R.Z], () => R.Z.getGuild(t)), o = (null == i ? void 0 : i.role_id) != null && (null == i ? void 0 : i.attachments_count) === 0 ? W.intl.string(W.t.H11qcX) : l, c = s.useCallback(async () => {
+  }), l = (0, C.C)(i), a = (0, m.e7)([R.Z], () => R.Z.getGuild(t)), o = (null == i ? void 0 : i.role_id) != null && (null == i ? void 0 : i.attachments_count) === 0 ? W.intl.string(W.t.H11qcX) : l, c = s.useCallback(async () => {
     (null == a ? void 0 : a.hasFeature(F.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE)) === !0 ? await (0, T.Z)(F.Z5c.GUILD_PRODUCT(t, n)) : await (0, T.Z)(F.Z5c.CHANNEL(t)), (0, p.xf)()
   }, [a, t, n]);
   return (0, r.jsxs)(r.Fragment, {
@@ -199,7 +199,7 @@ function es(e) {
     guildProductListingId: s
   } = e, l = (0, E.hO)(i, s, {
     requireCurrentGuild: !1
-  }), a = (0, m.e7)([C.Z], () => C.Z.getGuildProductFetchState(s) === C.M.FETCHING), o = null == l ? void 0 : l.role_id, c = (0, m.e7)([R.Z], () => null != o ? R.Z.getRole(i, o) : void 0, [i, o]), d = (null != (n = null == l || null == (t = l.attachments) ? void 0 : t.length) ? n : 0) > 0, u = null != c;
+  }), a = (0, m.e7)([j.Z], () => j.Z.getGuildProductFetchState(s) === j.M.FETCHING), o = null == l ? void 0 : l.role_id, c = (0, m.e7)([R.Z], () => null != o ? R.Z.getRole(i, o) : void 0, [i, o]), d = (null != (n = null == l || null == (t = l.attachments) ? void 0 : t.length) ? n : 0) > 0, u = null != c;
   return a ? (0, r.jsx)("div", {
     className: Y.guildProductBenefits,
     children: (0, r.jsx)(g.$jN, {})
@@ -732,8 +732,8 @@ function ea(e) {
   }, [u, g]);
   let x = (0, m.e7)([R.Z], () => R.Z.getGuild(null == h ? void 0 : h.guildId)),
     E = c ? h : void 0,
-    C = i.subscription,
-    j = (0, m.e7)([Z.Z], () => null != C && C.type !== F.NYc.PREMIUM ? Z.Z.get(C.items[0].planId) : null);
+    j = i.subscription,
+    C = (0, m.e7)([Z.Z], () => null != j && j.type !== F.NYc.PREMIUM ? Z.Z.get(j.items[0].planId) : null);
   return (0, r.jsx)(el, {
     applicationStatistics: p,
     application: g ? _ : E,
@@ -744,7 +744,7 @@ function ea(e) {
     compactMode: a,
     className: o,
     payment: i,
-    plan: j
+    plan: C
   })
 }
 K(el, "defaultProps", {

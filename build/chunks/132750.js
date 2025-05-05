@@ -57,8 +57,8 @@ function x(e) {
     applicationStream: f,
     voiceChannel: x,
     status: E,
-    userTag: C,
-    customStatusHoverOnlyRTCEntrypointEnabled: j
+    userTag: j,
+    customStatusHoverOnlyRTCEntrypointEnabled: C
   } = e, {
     analyticsLocations: O
   } = (0, m.ZP)(u.Z.RTC_PANEL), S = null == s ? void 0 : s.find(e => {
@@ -109,13 +109,13 @@ function x(e) {
     })
   }, [O]), T = r.useMemo(() => null != E && E !== a.Skl.UNKNOWN && null != l && l.isPomelo() ? (0, i.jsx)(c.Z, {
     text: g.ZP.humanizeStatus(E)
-  }) : C, [E, l, C]), I = void 0 !== S, [N, y] = r.useState(!1), A = r.useMemo(() => (0, i.jsx)(_, {
+  }) : j, [E, l, j]), I = void 0 !== S, [N, y] = r.useState(!1), A = r.useMemo(() => (0, i.jsx)(_, {
     openModal: v,
     hasCustomStatus: I,
     className: b.customStatusActionHoverText,
     onFocus: () => y(!0),
     onBlur: () => y(!1)
-  }), [v, I]), P = j ? (0, i.jsx)(d.Z, {
+  }), [v, I]), P = C ? (0, i.jsx)(d.Z, {
     hoverText: A,
     forceHover: t || N,
     children: T

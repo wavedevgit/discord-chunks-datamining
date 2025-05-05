@@ -20,8 +20,8 @@ var i = n(255367),
   _ = n(952306),
   x = n(299206),
   E = n(295474),
-  C = n(144114),
-  j = n(918505),
+  j = n(144114),
+  C = n(918505),
   O = n(332473),
   S = n(921801),
   v = n(485341),
@@ -81,13 +81,13 @@ function W(e) {
   let {
     className: a,
     user: o
-  } = e, c = r.useRef(null), m = (0, j.o9)(), g = (0, O.b)(), p = (0, E.gS)(), h = null != (s = null == p || null == (t = p.nick) ? void 0 : t[0]) ? s : null, [f, b] = r.useState(!1);
+  } = e, c = r.useRef(null), m = (0, C.o9)(), g = (0, O.b)(), p = (0, E.gS)(), h = null != (s = null == p || null == (t = p.nick) ? void 0 : t[0]) ? s : null, [f, b] = r.useState(!1);
   r.useEffect(() => {
     b(null != c.current && c.current.scrollWidth > c.current.clientWidth)
   }, [o.username]);
   let _ = !o.isClaimed(),
     x = m && !o.isPomelo() && !o.hasVerifiedEmailOrPhone() || _,
-    C = x ? V.intl.string(V.t["7Ngnys"]) : void 0;
+    j = x ? V.intl.string(V.t["7Ngnys"]) : void 0;
   return (0, i.jsxs)("div", {
     className: l()(G.field, a),
     children: [(0, i.jsx)("div", {
@@ -139,7 +139,7 @@ function W(e) {
         }))
       })
     }), (0, i.jsx)(u.ua7, {
-      text: C,
+      text: j,
       children: e => (0, i.jsx)(u.zxk, H(F({}, e), {
         disabled: x,
         size: u.zxk.Sizes.SMALL,
@@ -358,7 +358,7 @@ function X(e) {
             title: V.intl.string(V.t["3CTiKi"]),
             children: s.hasFlag(B.xW$.MFA_SMS) ? V.intl.string(V.t.jrhJys) : void 0,
             actionText: V.intl.string(V.t.N86XcH),
-            handleSubmit: e => C.Z.removePhone(e, C.L.USER_SETTINGS_UPDATE)
+            handleSubmit: e => j.Z.removePhone(e, j.L.USER_SETTINGS_UPDATE)
           })))
         },
         children: V.intl.string(V.t.N86XcH)
@@ -373,7 +373,7 @@ function X(e) {
               default: e
             } = await Promise.resolve().then(n.bind(n, 607018));
             return t => (0, i.jsx)(e, F({
-              reason: C.L.USER_SETTINGS_UPDATE
+              reason: j.L.USER_SETTINGS_UPDATE
             }, t))
           }, {
             modalKey: M.M

@@ -28,8 +28,8 @@ function _(e) {
     preventDisabled: _,
     guildId: x,
     className: E,
-    showPremiumIcon: C = !0,
-    showResetThemeButton: j = !1,
+    showPremiumIcon: j = !0,
+    showResetThemeButton: C = !1,
     forcedDivider: O
   } = e, S = (0, u.ZP)(t.id, x), {
     primaryColor: v,
@@ -48,7 +48,7 @@ function _(e) {
     title: f.intl.string(f.t.DMeO2d),
     disabled: !I && !_,
     className: s()(b.__invalid_profileThemesSection, E),
-    showPremiumIcon: C,
+    showPremiumIcon: j,
     forcedDivider: O,
     children: (0, i.jsxs)("div", {
       className: b.sectionContainer,
@@ -82,7 +82,7 @@ function _(e) {
             children: f.intl.string(f.t["8elvy8"])
           })
         })
-      }), j && null != x && (0, i.jsx)(c.zxk, {
+      }), C && null != x && (0, i.jsx)(c.zxk, {
         className: b.resetButton,
         color: c.zxk.Colors.PRIMARY,
         look: c.zxk.Looks.LINK,

@@ -20,8 +20,8 @@ var i = n(255367),
   _ = n(726542),
   x = n(122021),
   E = n(275759),
-  C = n(231757),
-  j = n(888496),
+  j = n(231757),
+  C = n(888496),
   O = n(605236),
   S = n(565138),
   v = n(297700),
@@ -256,24 +256,24 @@ function z(e) {
         s = (0, E.FI)(n[B.PC.CREATED_AT], p);
       switch (e.type) {
         case L.ABu.REDDIT:
-          r = (0, j.oP)(n, V.metadataItem);
+          r = (0, C.oP)(n, V.metadataItem);
           break;
         case L.ABu.STEAM:
-          r = (0, j.Dq)(n, V.metadataItem);
+          r = (0, C.Dq)(n, V.metadataItem);
           break;
         case L.ABu.BLUESKY:
         case L.ABu.TWITTER:
         case L.ABu.MASTODON:
-          r = (0, j.rJ)(n, V.metadataItem);
+          r = (0, C.rJ)(n, V.metadataItem);
           break;
         case L.ABu.EBAY:
-          r = (0, j.ul)(n, V.metadataItem);
+          r = (0, C.ul)(n, V.metadataItem);
           break;
         case L.ABu.PAYPAL:
-          r = (0, j.li)(n, V.metadataItem);
+          r = (0, C.li)(n, V.metadataItem);
           break;
         case L.ABu.TIKTOK:
-          r = (0, j.hf)(n, V.metadataItem)
+          r = (0, C.hf)(n, V.metadataItem)
       }
       null !== s && (null == r && (r = []), null == r || r.push((0, i.jsx)(u.Text, {
         variant: "text-xs/normal",
@@ -349,7 +349,7 @@ function z(e) {
           verified: t
         } = o, n = +!!e;
         if (e && !t) {
-          G(n), (0, C.Z)({
+          G(n), (0, j.Z)({
             platformType: o.type,
             location: "User Settings"
           });
@@ -375,7 +375,7 @@ function z(e) {
               verified: t
             } = o, n = +!!e;
             if (e && !t) {
-              R(n), (0, C.Z)({
+              R(n), (0, j.Z)({
                 platformType: o.type,
                 location: "User Settings"
               });
@@ -399,7 +399,7 @@ function z(e) {
         className: V.integrationRevoked,
         children: U.intl.format(U.t["6C4lgI"], {
           onReconnect: function() {
-            (0, C.Z)({
+            (0, j.Z)({
               platformType: o.type,
               location: "User Settings"
             })
@@ -447,7 +447,7 @@ function W() {
 
 function Y(e) {
   let t = _.Z.get(e);
-  (0, C.Z)({
+  (0, j.Z)({
     platformType: t.type
   }), A.default.track(L.rMx.ACCOUNT_LINK_STEP, {
     previous_step: "desktop connections",

@@ -20,8 +20,8 @@ var i = n(255367),
   _ = n(765250),
   x = n(13245),
   E = n(825209),
-  C = n(615287),
-  j = n(593472),
+  j = n(615287),
+  C = n(593472),
   O = n(493773),
   S = n(887278),
   v = n(812206),
@@ -142,7 +142,7 @@ function eE(e) {
   })
 }
 
-function eC(e) {
+function ej(e) {
   let {
     header: t,
     icon: n,
@@ -190,7 +190,7 @@ function eC(e) {
   })
 }
 
-function ej(e) {
+function eC(e) {
   var {
     children: t,
     className: n,
@@ -223,7 +223,7 @@ function ej(e) {
       let {
         onClick: t
       } = e;
-      return (0, i.jsx)(eC, eh(ep({}, a), {
+      return (0, i.jsx)(ej, eh(ep({}, a), {
         onClick: e => {
           d(!o), null == t || t(e)
         },
@@ -246,7 +246,7 @@ function ej(e) {
     }
   })
 }
-let eO = new Set([C.mM.INITIALIZING, C.mM.WAITING_FOR_SCREEN_TYPE_RESOLUTION, C.mM.WAITING_FOR_MODULE_TRACKING, C.mM.WAITING_FOR_OVERLAY_OPEN]),
+let eO = new Set([j.mM.INITIALIZING, j.mM.WAITING_FOR_SCREEN_TYPE_RESOLUTION, j.mM.WAITING_FOR_MODULE_TRACKING, j.mM.WAITING_FOR_OVERLAY_OPEN]),
   eS = e => {
     e.preventDefault(), e.stopPropagation()
   };
@@ -340,13 +340,13 @@ function ev(e) {
     G = !Z && !w,
     F = !b && !Z && E && !y,
     H = !E && !w && b && !D,
-    z = (null == d ? void 0 : d.overlayMethod) === C.gl.Disabled,
-    W = (null == d ? void 0 : d.state) === C.mM.OVERLAY_RENDERING && !z,
+    z = (null == d ? void 0 : d.overlayMethod) === j.gl.Disabled,
+    W = (null == d ? void 0 : d.state) === j.mM.OVERLAY_RENDERING && !z,
     Y = (null == d ? void 0 : d.state) != null && eO.has(d.state) && !z,
-    q = (null == d ? void 0 : d.overlayMethod) === C.gl.OutOfProcess,
-    Q = (null == d ? void 0 : d.overlayMethod) === C.gl.OutOfProcessLimitedInteraction,
-    J = (null == d ? void 0 : d.overlayMethod) === C.gl.Hook,
-    $ = (null == d ? void 0 : d.state) === C.mM.OVERLAY_CRASHED || (null == d ? void 0 : d.state) === C.mM.OVERLAY_CRASHED_DISABLED,
+    q = (null == d ? void 0 : d.overlayMethod) === j.gl.OutOfProcess,
+    Q = (null == d ? void 0 : d.overlayMethod) === j.gl.OutOfProcessLimitedInteraction,
+    J = (null == d ? void 0 : d.overlayMethod) === j.gl.Hook,
+    $ = (null == d ? void 0 : d.state) === j.mM.OVERLAY_CRASHED || (null == d ? void 0 : d.state) === j.mM.OVERLAY_CRASHED_DISABLED,
     ee = !b && !E,
     [et, en] = (() => {
       switch (!0) {
@@ -388,7 +388,7 @@ function ev(e) {
           }), function() {
             var e, t;
             switch (!0) {
-              case (null == d ? void 0 : d.fullscreenType) !== j.Jx.BORDERLESS_FULLSCREEN:
+              case (null == d ? void 0 : d.fullscreenType) !== C.Jx.BORDERLESS_FULLSCREEN:
                 return ed.intl.string(ed.t.mJmbeH);
               case D:
                 return ed.intl.string(ed.t.C7bLTU);
@@ -428,7 +428,7 @@ function ev(e) {
     f.Z.getDetectableGames()
   });
   let [ei, er] = r.useMemo(() => Y ? ["text-muted", h.TVs.colors.TEXT_MUTED.css] : W && Q ? ["text-warning", h.TVs.colors.TEXT_WARNING.css] : W && q ? ["text-positive", h.TVs.colors.TEXT_POSITIVE.css] : W && J ? ["text-primary", h.TVs.colors.TEXT_PRIMARY.css] : ["interactive-normal", h.TVs.colors.INTERACTIVE_NORMAL.css], [Y, W, Q, q, J]);
-  return null == l ? null : (0, i.jsxs)(ej, {
+  return null == l ? null : (0, i.jsxs)(eC, {
     onExpand: I,
     className: T ? eu.expandedContainer : void 0,
     title: (0, i.jsxs)(i.Fragment, {
@@ -477,7 +477,7 @@ function ev(e) {
         }
       })
     }),
-    children: [(0, i.jsx)(eC, {
+    children: [(0, i.jsx)(ej, {
       title: ed.intl.string(ed.t["7BlVIi"]),
       description: ed.intl.string(ed.t.ndgADA),
       hint: w ? void 0 : ed.intl.string(ed.t.cAFVsL),
@@ -493,7 +493,7 @@ function ev(e) {
           className: eu.emptySpacer
         })]
       })
-    }), (0, i.jsx)(eC, {
+    }), (0, i.jsx)(ej, {
       title: ed.intl.string(ed.t.BfFpW1),
       description: ed.intl.string(ed.t.OzInYm),
       hint: Z ? void 0 : ed.intl.string(ed.t["3sYHXl"]),
@@ -545,7 +545,7 @@ function eI(e) {
       (0, U.l)(o, null != (s = null != (r = d.id) ? r : null == t ? void 0 : t.id) ? s : null)
     }
   };
-  return (0, i.jsx)(eC, {
+  return (0, i.jsx)(ej, {
     title: t.name,
     icon: (0, i.jsx)(eT, {
       game: d,
@@ -579,7 +579,7 @@ function eN() {
     } = n;
     f.Z.toggleOverlay(t, e, i)
   }, u = r.useMemo(() => eo.iP ? o ? ed.intl.string(ed.t.r9jEV1) : ed.intl.string(ed.t.OzInYm) : ed.intl.string(ed.t["8Ox6/P"]), [o]);
-  return 0 === l.length ? (0, i.jsx)(eC, {
+  return 0 === l.length ? (0, i.jsx)(ej, {
     title: ed.intl.string(ed.t.BfFpW1),
     description: u,
     "aria-label": ed.intl.string(ed.t.BfFpW1),
@@ -593,7 +593,7 @@ function eN() {
         className: eu.emptySpacer
       })]
     })
-  }) : (0, i.jsxs)(ej, {
+  }) : (0, i.jsxs)(eC, {
     onExpand: t,
     className: e ? eu.expandedContainer : void 0,
     title: ed.intl.string(ed.t.BfFpW1),
@@ -653,7 +653,7 @@ function ey() {
     } = n;
     f.Z.toggleOverlay(t, e, i)
   }, u = r.useMemo(() => eo.iP ? l ? ed.intl.string(ed.t.C7bLTU) : ed.intl.string(ed.t.ndgADA) : ed.intl.string(ed.t.m7X4a2), [l]);
-  return 0 === a.length ? (0, i.jsx)(eC, {
+  return 0 === a.length ? (0, i.jsx)(ej, {
     title: ed.intl.string(ed.t["7BlVIi"]),
     description: u,
     "aria-label": ed.intl.string(ed.t["7BlVIi"]),
@@ -667,7 +667,7 @@ function ey() {
         className: eu.emptySpacer
       })]
     })
-  }) : (0, i.jsxs)(ej, {
+  }) : (0, i.jsxs)(eC, {
     onExpand: t,
     className: e ? eu.expandedContainer : void 0,
     title: ed.intl.string(ed.t["7BlVIi"]),

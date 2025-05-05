@@ -21,8 +21,8 @@ var r = n(512722),
   _ = n(872736),
   x = n(818420),
   E = n(134795),
-  C = n(610966),
-  j = n(513901),
+  j = n(610966),
+  C = n(513901),
   O = n(451392),
   S = n(906364),
   v = n(643879),
@@ -134,7 +134,7 @@ function Z() {
       sectionTitle: R.intl.string(R.t["7v0T9P"])
     }, "decoration"), ea && (0, i.jsx)(x.Z, {
       user: B
-    }), (0, i.jsx)(j.Z, {
+    }), (0, i.jsx)(C.Z, {
       user: B,
       sectionTitle: R.intl.string(R.t.wR5wOj)
     }, "effect"), J ? (0, i.jsxs)(i.Fragment, {
@@ -150,7 +150,7 @@ function Z() {
         onThemeColorsChange: T.z5,
         forcedDivider: !0
       })]
-    }) : (0, i.jsx)(C.Z, {
+    }) : (0, i.jsx)(j.Z, {
       user: B,
       savedUserColor: null == M ? void 0 : M.accentColor,
       pendingColor: z,
