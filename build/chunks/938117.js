@@ -21,7 +21,7 @@ var i = n(255367),
   x = n(388032),
   E = n(635968);
 
-function j(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -40,7 +40,7 @@ function j(e) {
   return e
 }
 
-function C(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -111,9 +111,9 @@ function O(e) {
           let {
             default: e
           } = await n.e("87200").then(n.bind(n, 592163));
-          return n => (0, i.jsx)(e, C(j({}, n), {
+          return n => (0, i.jsx)(e, j(C({}, n), {
             onLearnMore: t,
-            analyticsSource: C(j({}, w.location), {
+            analyticsSource: j(C({}, w.location), {
               object: b.qAy.BUTTON_CTA
             })
           }))

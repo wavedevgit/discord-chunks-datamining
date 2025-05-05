@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => C,
+  Z: () => j,
   _: () => g._
 }), n(953529), n(388685);
 var i = n(255367),
@@ -29,7 +29,7 @@ function E(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class j extends r.PureComponent {
+class C extends r.PureComponent {
   componentDidMount() {
     this._initTimeout.start(1e3, this.setupVoiceActivity)
   }
@@ -200,7 +200,7 @@ class j extends r.PureComponent {
   }
 }
 
-function C(e) {
+function j(e) {
   var t, n;
   let {
     inputDevice: r,
@@ -243,7 +243,7 @@ function C(e) {
     ref: b,
     width: _
   } = (0, m.ZP)();
-  return (0, i.jsx)(j, function(e) {
+  return (0, i.jsx)(C, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);

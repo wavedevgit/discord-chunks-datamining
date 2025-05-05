@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => C
+  Z: () => j
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -20,13 +20,13 @@ var i = n(255367),
   _ = n(388032),
   x = n(828576),
   E = n(982404),
-  j = n(299156);
-let C = function(e) {
+  C = n(299156);
+let j = function(e) {
   let {
     premiumSubscription: t,
     premiumType: n,
     onClose: s,
-    onConfirm: C,
+    onConfirm: j,
     userDiscountOffer: O
   } = e, [S, v] = r.useState(!1), [T, I] = r.useState(!1), N = async e => {
     try {
@@ -36,12 +36,12 @@ let C = function(e) {
           user_discount_offer_id: e
         },
         rejectWithError: !0
-      }), C()
+      }), j()
     } catch (e) {
       v(!0)
     }
     I(!1)
-  }, y = (0, d.ZP)(), A = (0, o.wj)(y) ? E : j, P = (0, p._)(t, f.Xh.PREMIUM_MONTH_TIER_2, O), R = (0, m.aS)(f.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
+  }, y = (0, d.ZP)(), A = (0, o.wj)(y) ? E : C, P = (0, p._)(t, f.Xh.PREMIUM_MONTH_TIER_2, O), R = (0, m.aS)(f.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
     currency: t.currency,
     paymentSourceId: t.paymentSourceId
   }), D = (0, g.T4)(R.amount, R.currency);

@@ -21,8 +21,8 @@ var r = n(442837),
   _ = n(893996),
   x = n(273927),
   E = n(864239),
-  j = n(190014),
-  C = n(301812),
+  C = n(190014),
+  j = n(301812),
   O = n(988043),
   S = n(919539),
   v = n(726985),
@@ -36,7 +36,7 @@ let y = () => (0, i.jsx)(_.Z, {
       children: [(0, i.jsx)(s.F, {
         setting: v.s6.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
         children: (0, i.jsx)(f.Z, {})
-      }), (0, i.jsx)(O.Z, {}), (0, i.jsx)(S.Z, {}), (0, i.jsx)(C.Z, {}), (0, i.jsx)(j.Z, {})]
+      }), (0, i.jsx)(O.Z, {}), (0, i.jsx)(S.Z, {}), (0, i.jsx)(j.Z, {}), (0, i.jsx)(C.Z, {})]
     })
   }),
   A = () => (0, i.jsxs)(_.Z, {

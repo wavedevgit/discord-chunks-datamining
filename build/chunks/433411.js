@@ -27,17 +27,17 @@ function b(e) {
     withTutorial: x = !1,
     isTryItOutFlow: E = !1
   } = e, {
-    analyticsLocations: j
-  } = (0, o.ZP)(), C = null != n, {
+    analyticsLocations: C
+  } = (0, o.ZP)(), j = null != n, {
     userAvatarDecoration: O,
     guildAvatarDecoration: S,
     pendingAvatarDecoration: v,
     pendingErrors: T
   } = (0, g.$U)(t, n), I = (0, u.Z)("enable_avatar_decoration_uploads"), N = r.useCallback(() => (0, d.ps)({
-    analyticsLocations: j,
+    analyticsLocations: C,
     isTryItOutFlow: E,
     guild: n
-  }), [j, E, n]), y = E || void 0 !== v ? null != v : (C ? S : O) != null, A = x ? a.gtL : a.zxk;
+  }), [C, E, n]), y = E || void 0 !== v ? null != v : (j ? S : O) != null, A = x ? a.gtL : a.zxk;
   return (0, i.jsxs)(p.Z, {
     className: s,
     forcedDivider: b,

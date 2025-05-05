@@ -25,8 +25,8 @@ let _ = e => {
     descriptionCta: _,
     previewImage: x,
     videoUrl: E,
-    shouldLoadVideo: j,
-    index: C,
+    shouldLoadVideo: C,
+    index: j,
     size: O,
     isReducedMotion: S,
     onClick: v
@@ -109,7 +109,7 @@ let _ = e => {
       }),
       children: (0, i.jsx)(u.Z, {
         playsInline: !0,
-        preload: j ? "auto" : "none",
+        preload: C ? "auto" : "none",
         muted: !0,
         poster: x,
         loop: !0,
@@ -126,7 +126,7 @@ let _ = e => {
         })
       }, E)
     })
-  }, B = C % 2 != 0;
+  }, B = j % 2 != 0;
   return (0, i.jsx)("div", {
     className: l()(y, {
       [b.largeBoxContainer]: O === p.y$.LARGE,

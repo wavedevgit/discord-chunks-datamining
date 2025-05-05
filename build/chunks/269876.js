@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => C
+  Z: () => j
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -20,11 +20,11 @@ var i = n(255367),
   _ = n(251574),
   x = n(893354),
   E = n(20493);
-let j = (0, g.hQ)();
+let C = (0, g.hQ)();
 
-function C() {
+function j() {
   let [e, t] = r.useState(-100), [n, s] = r.useState(!1), {
-    threshold: C,
+    threshold: j,
     autoThreshold: O
   } = (0, a.cj)([p.Z], () => p.Z.getModeOptions()), {
     inputMode: S,
@@ -57,7 +57,7 @@ function C() {
   let y = (0, i.jsx)("section", {
     className: l()(b.inputSensitivityToggle, b.manual),
     children: (0, i.jsx)(u.iRW, {
-      initialValue: C + 100,
+      initialValue: j + 100,
       onValueRender: e => "".concat((-((100 - e) * 1)).toFixed(0), "dB"),
       onValueChange: e => N(-((100 - e) * 1), O),
       barStyles: {
@@ -66,7 +66,7 @@ function C() {
       fillStyles: {
         background: d.Z.unsafe_rawColors.YELLOW_300.css
       },
-      "aria-labelledby": j,
+      "aria-labelledby": C,
       children: (0, i.jsxs)("div", {
         className: l()(b.sliderBar, b.microphone, b.inputSensitivityBar, _.bar),
         children: [(0, i.jsx)("div", {
@@ -96,7 +96,7 @@ function C() {
     })]
   })), (0, i.jsxs)(u.xJW, {
     title: f.intl.string(f.t["sqUm+v"]),
-    titleId: j,
+    titleId: C,
     className: b.sensitivity,
     children: [v && (0, i.jsx)(g.FG, {
       children: e => (0, i.jsxs)("div", {
@@ -111,7 +111,7 @@ function C() {
         }), (0, i.jsx)(u.rsf, {
           id: e,
           checked: O,
-          onChange: e => N(C, e)
+          onChange: e => N(j, e)
         })]
       })
     }), y, !T && (0, i.jsx)(u.R94, {

@@ -20,8 +20,8 @@ var i = n(255367),
   _ = n(388032),
   x = n(285425),
   E = n(20493);
-let j = !h.isPlatformEmbedded,
-  C = (0, g.hQ)();
+let C = !h.isPlatformEmbedded,
+  j = (0, g.hQ)();
 
 function O(e) {
   return e >= 1e3 ? (e /= 1e3, "".concat(e.toFixed(2), "s")) : "".concat(e.toFixed(0), " ms")
@@ -66,7 +66,7 @@ function S(e) {
         className: x.column,
         children: (0, i.jsxs)(o.xJW, {
           children: [(0, i.jsx)(o.vwX, {
-            id: C,
+            id: j,
             tag: o.RB0.H5,
             className: E.marginBottom8,
             children: _.intl.string(_.t.y0ShVl)
@@ -77,7 +77,7 @@ function S(e) {
             }),
             onValueRender: O,
             maxValue: b.qhL,
-            "aria-labelledby": C
+            "aria-labelledby": j
           })]
         })
       })]
@@ -93,12 +93,12 @@ function v() {
     name: _.intl.string(_.t.cHCEOD)
   }, {
     value: b.pM4.PUSH_TO_TALK,
-    name: j ? _.intl.string(_.t["1AINrK"]) : _.intl.string(_.t.Q8gkVF)
+    name: C ? _.intl.string(_.t["1AINrK"]) : _.intl.string(_.t.Q8gkVF)
   }], l = r.useCallback(t => {
     let {
       value: r
     } = t;
-    r === b.pM4.PUSH_TO_TALK && j && (0, o.ZDy)(async () => {
+    r === b.pM4.PUSH_TO_TALK && C && (0, o.ZDy)(async () => {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 468026));

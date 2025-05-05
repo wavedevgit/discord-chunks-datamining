@@ -29,8 +29,8 @@ let _ = {
       ctaOnClick: s,
       analyticsPage: x,
       isCoachmarkEnabled: E = !0,
-      linkText: j = f.intl.string(f.t.XRdyj4),
-      cardAlignment: C = _.START,
+      linkText: C = f.intl.string(f.t.XRdyj4),
+      cardAlignment: j = _.START,
       className: O
     } = e, {
       balance: S
@@ -78,7 +78,7 @@ let _ = {
         onClick: w,
         showNotificationBadge: t
       }), I && (0, i.jsx)("div", {
-        className: l()(b.cardContainer, C, {
+        className: l()(b.cardContainer, j, {
           [b.hidden]: y,
           [b.visible]: !y
         }),
@@ -89,7 +89,7 @@ let _ = {
           ctaOnClick: () => {
             w(), s()
           },
-          linkText: j
+          linkText: C
         })
       })]
     })

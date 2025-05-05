@@ -20,8 +20,8 @@ var i = n(255367),
   _ = n(894694),
   x = n(779618),
   E = n(39604),
-  j = n(442334),
-  C = n(356659),
+  C = n(442334),
+  j = n(356659),
   O = n(981631),
   S = n(37113),
   v = n(526761),
@@ -53,17 +53,17 @@ function A() {
   l()(null != D, "Save clip keybind unset");
   let L = (0, a.e7)([m.default], () => m.default.locale),
     B = r.useMemo(() => [{
-      value: C.OT.SECONDS_30,
+      value: j.OT.SECONDS_30,
       label: T.intl.formatToPlainString(T.t["bTFv//"], {
         count: 30
       })
     }, {
-      value: C.OT.MINUTES_1,
+      value: j.OT.MINUTES_1,
       label: T.intl.formatToPlainString(T.t.ICo9Nj, {
         count: 1
       })
     }, {
-      value: C.OT.MINUTES_2,
+      value: j.OT.MINUTES_2,
       label: T.intl.formatToPlainString(T.t.ICo9Nj, {
         count: 2
       })
@@ -201,14 +201,14 @@ function A() {
       })]
     }), (0, i.jsx)(o.$i$, {}), (0, i.jsxs)(o.hjN, {
       className: y.marginTop20,
-      children: [(0, i.jsx)(j.Q, {
+      children: [(0, i.jsx)(C.Q, {
         className: N.formItem,
         select: E.eU,
         title: T.intl.string(T.t.OgfUio),
         note: T.intl.string(T.t.H7j4tb),
         value: A,
         options: B
-      }), (0, i.jsx)(j.Q, {
+      }), (0, i.jsx)(C.Q, {
         className: N.formItem,
         select: e => E.yi({
           resolution: e,
@@ -218,7 +218,7 @@ function A() {
         note: T.intl.string(T.t.nIrkW1),
         value: P.resolution,
         options: M
-      }), (0, i.jsx)(j.Q, {
+      }), (0, i.jsx)(C.Q, {
         className: N.formItem,
         select: e => E.yi({
           resolution: P.resolution,
@@ -228,7 +228,7 @@ function A() {
         note: T.intl.string(T.t["Rf9+f3"]),
         value: P.frameRate,
         options: U
-      }), (0, i.jsx)(j.O, {
+      }), (0, i.jsx)(C.O, {
         className: N.formItem,
         title: T.intl.string(T.t.pf54ER),
         note: T.intl.string(T.t["QyB/jI"]),

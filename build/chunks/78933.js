@@ -20,8 +20,8 @@ var i = n(255367),
   _ = n(785717),
   x = n(209698),
   E = n(687158),
-  j = n(892001),
-  C = n(899007),
+  C = n(892001),
+  j = n(899007),
   O = n(648052),
   S = n(867176),
   v = n(537006),
@@ -118,10 +118,10 @@ function $(e) {
     eE = (0, x.b)({
       location: "UserProfileAccountPopout"
     }),
-    ej = r.useMemo(() => (0, g.Z)(), []),
-    eC = e => {
-      null == n || n(), (0, j.openUserProfileModal)(J({
-        customStatusPrompt: ej,
+    eC = r.useMemo(() => (0, g.Z)(), []),
+    ej = e => {
+      null == n || n(), (0, C.openUserProfileModal)(J({
+        customStatusPrompt: eC,
         sourceAnalyticsLocations: er
       }, es, e))
     };
@@ -147,17 +147,17 @@ function $(e) {
               user: t,
               displayProfile: ei,
               themeType: K.lY.POPOUT
-            }), (0, i.jsx)(C.Z, {
+            }), (0, i.jsx)(j.Z, {
               user: t,
               displayProfile: ei,
               themeType: K.lY.POPOUT,
-              onOpenProfile: en ? void 0 : eC
+              onOpenProfile: en ? void 0 : ej
             }), (0, i.jsx)(D.Z, {
               location: "UserProfileAccountPopout",
               user: t,
               themeType: K.lY.POPOUT,
               onCloseProfile: n,
-              prompt: ex ? ej : null
+              prompt: ex ? eC : null
             })]
           }), (null == ei ? void 0 : ei.profileEffectId) != null && (0, i.jsx)(b.Z, {
             profileEffectId: null == ei ? void 0 : ei.profileEffectId,
@@ -168,7 +168,7 @@ function $(e) {
               user: t,
               className: X.username,
               nickname: M.ZP.getName(null, null, t),
-              onOpenProfile: en ? void 0 : eC,
+              onOpenProfile: en ? void 0 : ej,
               pronouns: null == ei ? void 0 : ei.pronouns,
               tags: (0, i.jsx)(O.Z, {
                 displayProfile: ei,
@@ -196,7 +196,7 @@ function $(e) {
               user: t,
               currentUser: t,
               displayProfile: ei,
-              onOpenUserProfileModal: eC
+              onOpenUserProfileModal: ej
             }) : (0, i.jsx)(I.Z, {
               user: t,
               currentUser: t,

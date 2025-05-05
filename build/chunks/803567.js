@@ -21,8 +21,8 @@ var r = n(120356),
   _ = n(738486),
   x = n(726985),
   E = n(981631),
-  j = n(388032),
-  C = n(20493);
+  C = n(388032),
+  j = n(20493);
 let O = n(775322),
   S = n(853453),
   v = (0, u.hQ)(),
@@ -60,25 +60,25 @@ function N(e) {
   if (!u && !m) return null;
   let g = [];
   return m && g.push({
-    name: j.intl.string(j.t.rdoNzs),
+    name: C.intl.string(C.t.rdoNzs),
     value: 2
   }), u && g.push({
-    name: j.intl.string(j.t.qXeYHx),
+    name: C.intl.string(C.t.qXeYHx),
     value: 1
   }), g.push({
-    name: j.intl.string(j.t.wkYAl5),
+    name: C.intl.string(C.t.wkYAl5),
     value: 0
   }), (0, i.jsxs)(o.hjN, {
-    className: t ? void 0 : C.marginBottom20,
+    className: t ? void 0 : j.marginBottom20,
     children: [(0, i.jsx)(o.vwX, {
       id: v,
       tag: o.RB0.H3,
-      className: C.marginBottom8,
-      children: j.intl.string(j.t.t8QhiY)
+      className: j.marginBottom8,
+      children: C.intl.string(C.t.t8QhiY)
     }), (0, i.jsx)(o.R94, {
       type: o.R94.Types.DESCRIPTION,
-      className: C.marginBottom8,
-      children: j.intl.string(j.t.najZCQ)
+      className: j.marginBottom8,
+      children: C.intl.string(C.t.najZCQ)
     }), (0, i.jsx)(o.FXm, {
       options: g,
       onChange: e => {
@@ -86,7 +86,7 @@ function N(e) {
       },
       value: r ? 2 : +!!s
     }), m && (0, i.jsx)(o.ToO, {
-      className: C.marginBottom8,
+      className: j.marginBottom8,
       type: o.Dd5.PRIMARY,
       imageData: {
         src: (0, a.ap)(n) ? O : S,
@@ -97,7 +97,7 @@ function N(e) {
       body: (0, i.jsx)(o.eee, {
         href: f.Z.getArticleURL(E.BhN.NOISE_SUPPRESSION),
         onClick: I,
-        children: j.intl.string(j.t.hvVgAQ)
+        children: C.intl.string(C.t.hvVgAQ)
       })
     }), t ? null : (0, i.jsx)(o.$i$, {})]
   })
@@ -112,39 +112,41 @@ function y(e) {
     echoCancellation: a,
     automaticGainControl: d,
     vadAutoThreshold: u,
-    vadUseKrisp: h
+    vadUseKrisp: h,
+    bypassSystemInputProcessing: f
   } = (0, l.cj)([p.Z], () => ({
     inputMode: p.Z.getMode(),
     inputDeviceId: p.Z.getInputDeviceId(),
     echoCancellation: p.Z.getEchoCancellation(),
     automaticGainControl: p.Z.getAutomaticGainControl(),
     vadAutoThreshold: p.Z.getModeOptions().autoThreshold,
-    vadUseKrisp: p.Z.getModeOptions().vadUseKrisp
+    vadUseKrisp: p.Z.getModeOptions().vadUseKrisp,
+    bypassSystemInputProcessing: p.Z.getBypassSystemInputProcessing()
   })), {
-    hasEchoCancellation: f,
-    hasNoiseSuppression: b,
-    hasAutomaticGainControl: O
+    hasEchoCancellation: b,
+    hasNoiseSuppression: O,
+    hasAutomaticGainControl: S
   } = (0, l.cj)([g.Z], () => ({
     hasEchoCancellation: g.Z.hasEchoCancellation(r),
     hasNoiseSuppression: g.Z.hasNoiseSuppression(r),
     hasAutomaticGainControl: g.Z.hasAutomaticGainControl(r)
-  }), [r]), S = n === E.pM4.VOICE_ACTIVITY && u, v = (0, i.jsxs)(_.Z, {
-    children: [(f || b || O) && (0, i.jsx)(o.R94, {
-      className: t ? void 0 : C.marginBottom20,
+  }), [r]), v = n === E.pM4.VOICE_ACTIVITY && u, T = (0, i.jsxs)(_.Z, {
+    children: [(b || O || S) && (0, i.jsx)(o.R94, {
+      className: t ? void 0 : j.marginBottom20,
       type: o.R94.Types.DESCRIPTION,
-      children: j.intl.string(j.t["/Whuzs"])
+      children: C.intl.string(C.t["/Whuzs"])
     }), (0, i.jsx)(m.F, {
       setting: x.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_ECHO_CANCELLATION,
       children: (0, i.jsx)(o.j7V, {
-        className: t ? void 0 : s()(C.marginTop8, C.marginBottom20),
+        className: t ? void 0 : s()(j.marginTop8, j.marginBottom20),
         value: a,
         onChange: e => c.Z.setEchoCancellation(e, {
           page: E.ZY5.USER_SETTINGS,
           section: E.jXE.SETTINGS_VOICE_AND_VIDEO
         }),
-        disabled: f,
+        disabled: b,
         hideBorder: t,
-        children: j.intl.string(j.t.iWTwu7)
+        children: C.intl.string(C.t.iWTwu7)
       })
     }), (0, i.jsx)(m.F, {
       setting: x.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_NOISE_SUPPRESSION,
@@ -158,10 +160,10 @@ function y(e) {
         onChange: e => c.Z.setMode(n, {
           vadUseKrisp: e
         }),
-        note: j.intl.string(j.t.LoOB1N),
-        disabled: !S,
+        note: C.intl.string(C.t.LoOB1N),
+        disabled: !v,
         hideBorder: t,
-        children: j.intl.string(j.t.BbESsr)
+        children: C.intl.string(C.t.BbESsr)
       })
     }), (0, i.jsx)(m.F, {
       setting: x.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_AUTOMATIC_GAIN_CONTROL,
@@ -171,16 +173,27 @@ function y(e) {
           page: E.ZY5.USER_SETTINGS,
           section: E.jXE.SETTINGS_VOICE_AND_VIDEO
         }),
-        note: j.intl.string(j.t["6EjbvL"]),
-        disabled: O,
+        note: C.intl.string(C.t["6EjbvL"]),
+        disabled: S,
         hideBorder: t,
-        children: j.intl.string(j.t.cUMdHx)
+        children: C.intl.string(C.t.cUMdHx)
+      })
+    }), (0, i.jsx)(m.F, {
+      setting: x.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_BYPASS_SYSTEM_INPUT_PROCESSING,
+      children: (0, i.jsx)(o.j7V, {
+        value: f,
+        onChange: e => {
+          c.Z.setBypassSystemInputProcessing(e)
+        },
+        note: C.intl.string(C.t["UyRX+P"]),
+        hideBorder: t,
+        children: C.intl.string(C.t.DFPXIC)
       })
     })]
   });
-  return t ? v : (0, i.jsx)(o.hjN, {
-    className: C.marginBottom20,
-    title: j.intl.string(j.t["6I6GUl"]),
-    children: v
+  return t ? T : (0, i.jsx)(o.hjN, {
+    className: j.marginBottom20,
+    title: C.intl.string(C.t["6I6GUl"]),
+    children: T
   })
 }

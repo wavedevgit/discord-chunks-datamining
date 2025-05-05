@@ -21,8 +21,8 @@ var r = n(990547),
   _ = n(163379),
   x = n(498646),
   E = n(489968),
-  j = n(703288),
-  C = n(574755),
+  C = n(703288),
+  j = n(574755),
   O = n(377171),
   S = n(540059),
   v = n(621628),
@@ -75,8 +75,8 @@ var r = n(990547),
   e_ = n(956699),
   ex = n(54942),
   eE = n(293389),
-  ej = n(88624),
-  eC = n(387747),
+  eC = n(88624),
+  ej = n(387747),
   eO = n(389650),
   eS = n(649157),
   ev = n(593648),
@@ -572,8 +572,8 @@ let eJ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eK.intl.string(eK.t.z2jK6e)],
         label: eK.intl.string(eK.t.z2jK6e),
         ariaLabel: eK.intl.string(eK.t.z2jK6e),
-        icon: e3 ? (0, i.jsx)(j.Z, {}) : void 0,
-        element: C.Z,
+        icon: e3 ? (0, i.jsx)(C.Z, {}) : void 0,
+        element: j.Z,
         predicate: () => !e8,
         url: ez.Z5c.SETTINGS("clips")
       },
@@ -634,7 +634,7 @@ let eJ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: ez.oAB.INVENTORY,
         searchableTitles: [eK.intl.string(eK.t["jcSP+v"])],
         label: eK.intl.string(eK.t["jcSP+v"]),
-        element: eC.Z,
+        element: ej.Z,
         ariaLabel: eK.intl.string(eK.t["jcSP+v"]),
         badgeCount: t
       },
@@ -1045,6 +1045,12 @@ let eJ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         parent: eF.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING,
         predicate: () => Y.Z.isAutomaticGainControlSupported()
       },
+      [eF.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_BYPASS_SYSTEM_INPUT_PROCESSING]: {
+        section: ez.oAB.VOICE,
+        searchableTitles: [eK.intl.string(eK.t.DFPXIC)],
+        parent: eF.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING,
+        predicate: () => Y.Z.showBypassSystemInputProcessing()
+      },
       [eF.s6.VOICE_AND_VIDEO_ADVANCED_QOS]: {
         section: ez.oAB.VOICE,
         searchableTitles: [eK.intl.string(eK.t.uancuL)],
@@ -1061,7 +1067,7 @@ let eJ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: ez.oAB.VOICE,
         searchableTitles: [eK.intl.string(eK.t.wVBHr6)],
         parent: td ? eF.s6.VOICE_AND_VIDEO_VOICE_ADVANCED : eF.s6.VOICE_AND_VIDEO_ADVANCED,
-        predicate: () => Y.Z.supports(eY.AN.LEGACY_AUDIO_SUBSYSTEM) || Y.Z.supports(eY.AN.EXPERIMENTAL_AUDIO_SUBSYSTEM)
+        predicate: () => Y.Z.shouldOfferManualSubsystemSelection()
       },
       [eF.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE]: {
         section: ez.oAB.VOICE,
@@ -1585,7 +1591,7 @@ let eJ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: ez.oAB.HYPESQUAD_ONLINE,
         searchableTitles: [eK.intl.string(eK.t["k0R+4e"])],
         label: eK.intl.string(eK.t["k0R+4e"]),
-        element: ej.Z,
+        element: eC.Z,
         predicate: () => !ta
       },
       [eF.s6.TOWNHALL]: {

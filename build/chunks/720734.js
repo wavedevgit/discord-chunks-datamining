@@ -21,8 +21,8 @@ var i = n(255367),
   _ = n(239091),
   x = n(230711),
   E = n(410575),
-  j = n(941129),
-  C = n(634894),
+  C = n(941129),
+  j = n(634894),
   O = n(586902),
   S = n(980591),
   v = n(468363),
@@ -75,8 +75,8 @@ var i = n(255367),
   e_ = n(640806),
   ex = n(184301),
   eE = n(52538),
-  ej = n(670188),
-  eC = n(861254),
+  eC = n(670188),
+  ej = n(861254),
   eO = n(221241),
   eS = n(879815),
   ev = n(294629),
@@ -173,8 +173,8 @@ function ti(e) {
     avatarDecoration: b,
     size: (0, D.y9)(f.EFr.SIZE_32)
   }), x = (0, f.dQu)(f.TVs.modules.guildbar.AVATAR_SIZE), {
-    updateOpenPopoutRef: j,
-    highlightBadge: C,
+    updateOpenPopoutRef: C,
+    highlightBadge: j,
     setHighlightBadge: O
   } = function() {
     let e = r.useRef(null),
@@ -204,11 +204,11 @@ function ti(e) {
   }(), v = (0, el.A)(u);
   return null == s ? null : (0, i.jsx)(E.Z, {
     object: e1.qAy.AVATAR,
-    children: (0, i.jsx)(ej.Z, {
+    children: (0, i.jsx)(eC.Z, {
       user: s,
       targetElementRef: g,
       clickTrap: !0,
-      preload: () => (0, ex.Z)(s.id, s.getAvatarURL(void 0, ej.I), {
+      preload: () => (0, ex.Z)(s.id, s.getAvatarURL(void 0, eC.I), {
         type: "account_popout",
         withMutualGuilds: !1,
         withMutualFriends: !1
@@ -220,7 +220,7 @@ function ti(e) {
         } = e;
         return (0, i.jsx)(er.Z, {
           currentUser: s,
-          highlightBadge: C,
+          highlightBadge: j,
           openedAt: t,
           onClose: () => {
             null == n || n()
@@ -236,7 +236,7 @@ function ti(e) {
       onRequestClose: () => {
         c(), O(void 0)
       },
-      children: e => (j(e), (0, i.jsxs)(f.P3F, e7(e4({
+      children: e => (C(e), (0, i.jsxs)(f.P3F, e7(e4({
         innerRef: g,
         style: v
       }, e), {
@@ -667,14 +667,14 @@ function ts(e) {
     handleOpenAccountSettings: _,
     handleOpenSettingsContextMenu: x,
     dismissibleContents: E,
-    nameplate: j,
-    accountContainerRef: C
-  } = e, O = (0, el.A)(j);
+    nameplate: C,
+    accountContainerRef: j
+  } = e, O = (0, el.A)(C);
   return (0, i.jsxs)("div", {
     className: e2.buttons,
     style: O,
     children: [(0, i.jsx)(to, {
-      accountContainerRef: C,
+      accountContainerRef: j,
       selfMute: n,
       serverMute: s,
       suppress: a,
@@ -686,24 +686,24 @@ function ts(e) {
       onMouseLeave: m,
       onClick: p,
       onContextMenu: h,
-      iconForeground: null != j ? e2.iconForeground : void 0,
-      nameplate: j
+      iconForeground: null != C ? e2.iconForeground : void 0,
+      nameplate: C
     }), (0, i.jsx)(tc, {
       selfDeaf: t,
       serverDeaf: l,
       onClick: g,
       onContextMenu: b,
       awaitingRemote: r,
-      iconForeground: null != j ? e2.iconForeground : void 0,
-      nameplate: j
+      iconForeground: null != C ? e2.iconForeground : void 0,
+      nameplate: C
     }), (0, i.jsx)(ta, {
       isEligibleForPomelo: c,
       webBuildOverride: d,
       onClick: _,
       onContextMenu: x,
       dismissibleContents: E.settings,
-      iconForeground: null != j ? e2.iconForeground : void 0,
-      nameplate: j
+      iconForeground: null != C ? e2.iconForeground : void 0,
+      nameplate: C
     })]
   })
 }
@@ -762,7 +762,7 @@ function tl() {
     k = (0, o.e7)([J.Z], () => null != J.Z.getAwaitingRemoteSessionInfo()),
     L = (0, o.e7)([eB.Z], () => eB.Z.getGuildId()),
     B = (0, ep.D)(),
-    M = (0, j.u)(),
+    M = (0, C.u)(),
     U = eK.ZP.canUsePremiumGuildMemberProfile(t),
     V = (null == t || null == (e = t.avatarDecoration) ? void 0 : e.skuId) === e3.rL,
     {
@@ -784,10 +784,10 @@ function tl() {
       location: "Account"
     }),
     $ = "account";
-  (0, C.j)({
+  (0, j.j)({
     location: $ + " auto on",
     autoTrackExposure: !0
-  }), (0, C.j)({
+  }), (0, j.j)({
     location: $ + " auto off",
     autoTrackExposure: !1
   });
@@ -927,8 +927,8 @@ function to(e) {
     onMouseEnter: _,
     onMouseLeave: x,
     onClick: E,
-    onContextMenu: j,
-    nameplate: C,
+    onContextMenu: C,
+    nameplate: j,
     accountContainerRef: O
   } = e, S = t || s || n, v = r.useRef(null), T = r.useRef(null), I = (0, m.O)(S ? "unmute" : "mute"), N = (0, g.P)(S ? "unmute" : "mute"), {
     activeVoice: y
@@ -938,13 +938,13 @@ function to(e) {
     play: B
   } = R ? N : I, M = n || s ? f.v0G : w, {
     mode: U
-  } = (0, eC.ZP)({
+  } = (0, ej.ZP)({
     location: "RTC Microphone Button"
   }), {
     coloredIconsEnabled: V
   } = (0, eO.Z)({
     location: "RTC Microphone Button"
-  }), G = null != d ? d : (0, L.Z)(t, n, s, c, U === eC.BK.GroupedButtonsRedMic), {
+  }), G = null != d ? d : (0, L.Z)(t, n, s, c, U === ej.BK.GroupedButtonsRedMic), {
     analyticsLocations: F
   } = (0, P.ZP)(A.Z.AUDIO_INPUT_BUTTON), H = (0, eT.Hu)({
     location: A.Z.AUDIO_INPUT_BUTTON,
@@ -952,8 +952,8 @@ function to(e) {
   });
   r.useEffect(() => () => B(), [S, B]);
   let z = r.useCallback(e => {
-      j(e, F)
-    }, [j, F]),
+      C(e, F)
+    }, [C, F]),
     [W, Y] = r.useState(!1),
     K = r.useCallback(e => {
       var t;
@@ -977,7 +977,7 @@ function to(e) {
         tooltipText: G,
         tooltipColor: u,
         tooltipForceOpen: p,
-        plated: null != C,
+        plated: null != j,
         onMouseEnter: () => {
           _(), k.onMouseEnter()
         },
@@ -1049,7 +1049,7 @@ function to(e) {
               canBeShown: !s,
               children: (e, t) => (0, i.jsx)(eJ.Z, e4({
                 ref: T,
-                plated: null != C,
+                plated: null != j,
                 tooltipForceOpen: q,
                 tooltipColor: q ? f.FGA.GREEN : void 0,
                 tooltipContentClassName: q ? e2.voiceFilterWarning : void 0,
@@ -1114,7 +1114,7 @@ function tc(e) {
     analyticsLocations: E
   } = (0, P.ZP)(A.Z.AUDIO_OUTPUT_BUTTON);
   r.useEffect(() => () => p(), [m, p]);
-  let j = r.useCallback(e => {
+  let C = r.useCallback(e => {
     o(e, E)
   }, [o, E]);
   return (0, i.jsx)(P.Gt, {
@@ -1132,7 +1132,7 @@ function tc(e) {
         className: c
       }),
       onClick: a,
-      onContextMenu: j,
+      onContextMenu: C,
       innerClassName: l()({
         [e2.redIcon]: n
       }),

@@ -20,8 +20,8 @@ var i, r, s = n(230711),
   _ = n(612253),
   x = n(872532),
   E = n(91342),
-  j = n(181708),
-  C = n(290650),
+  C = n(181708),
+  j = n(290650),
   O = n(751125),
   S = n(357003),
   v = n(904505),
@@ -139,7 +139,7 @@ let k = () => {
         title: p.intl.string(p.t.zY5PPT),
         description: p.intl.string(p.t.R5Xag4),
         previewImage: h,
-        videoUrl: r ? E.ZP : j.ZP,
+        videoUrl: r ? E.ZP : C.ZP,
         size: "medium"
       },
       noLimits: {
@@ -147,7 +147,7 @@ let k = () => {
         title: p.intl.string(p.t["6b3ydH"]),
         description: p.intl.string(p.t["Y+IJys"]),
         previewImage: f,
-        videoUrl: r ? C.ZP : O.ZP,
+        videoUrl: r ? j.ZP : O.ZP,
         size: "medium"
       }
     }

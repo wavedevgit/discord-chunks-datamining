@@ -20,8 +20,8 @@ var i = n(255367),
   _ = n(890022),
   x = n(487419),
   E = n(197344),
-  j = n(476756),
-  C = n(734934),
+  C = n(476756),
+  j = n(734934),
   O = n(223683),
   S = n(312400),
   v = n(115345),
@@ -120,7 +120,7 @@ function q(e) {
     disabledSounds: t,
     disableAllSounds: n,
     notifyMessagesInSelectedChannel: s
-  } = e, a = r.useRef(null), o = (0, C.p)(), c = r.useCallback((e, t) => {
+  } = e, a = r.useRef(null), o = (0, j.p)(), c = r.useCallback((e, t) => {
     t.stopPropagation(), t.preventDefault(), null != a.current && a.current.stop(), a.current = (0, A.GN)(e)
   }, []), d = r.useCallback((e, n) => {
     let i = t.filter(t => t !== e);
@@ -206,7 +206,7 @@ function q(e) {
         children: [(0, i.jsx)(u.vwX, {
           className: H.marginBottom20,
           children: G.intl.string(G.t.fgSHf3)
-        }), (0, i.jsx)(j.Z, {})]
+        }), (0, i.jsx)(C.Z, {})]
       }) : null, (0, i.jsx)(u.vwX, {
         className: l()(H.marginBottom20, H.marginTop20),
         children: G.intl.string(G.t.MKWyKS)
@@ -563,7 +563,7 @@ async function et(e) {
 }
 
 function en(e) {
-  let t = (0, C.p)();
+  let t = (0, j.p)();
   return (0, i.jsx)(Q, Y(W({}, e), {
     focusMode: t
   }))
