@@ -1,6 +1,6 @@
 /**
   Module ID: 53745
-  Original File Name: d86e2c90007f59ae
+  Original File Name: 1f818d61d48b729d
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -3133,7 +3133,7 @@
     margin-right: 8px
 }
 
-.refresh-fast-follow-distinct-borders .bannerVisible_f37cb1 .headerGlass_f37cb1,.refresh-fast-follow-distinct-borders .header_f37cb1 {
+.refresh-fast-follow-distinct-borders .header_f37cb1 {
     border-bottom-color: var(--app-border-frame)
 }
 
@@ -3449,7 +3449,7 @@
 
 .circleIconButton__5bc7e {
     align-items: center;
-    background-color: var(--background-primary);
+    background-color: var(--background-mod-subtle);
     box-sizing: border-box;
     color: var(--header-secondary);
     cursor: pointer;
@@ -3814,6 +3814,10 @@
     padding: 0
 }
 
+.keyboard-mode .folderButton__48112:focus .refresh-fast-follow-avatars .folderIcon__48112,.refresh-fast-follow-avatars .folderIcon__48112:hover {
+    background-color: var(--opacity-white-12)
+}
+
 .refresh-fast-follow-avatars .folderPreviewWrapper__48112 {
     border-radius: var(--radius-md);
     height: var(--guildbar-avatar-size);
@@ -3992,14 +3996,19 @@
 
 .pendingFolderButtonIcon__93fc9 {
     align-items: center;
-    background-color: var(--background-surface-higher);
+    background-color: var(--background-mod-subtle);
     border-radius: var(--radius-md);
     box-sizing: border-box;
     color: var(--text-normal);
     display: flex;
     height: var(--guildbar-avatar-size);
     justify-content: center;
+    transition: background-color .2s ease-out;
     width: var(--guildbar-avatar-size)
+}
+
+.pendingFolderButtonIcon__93fc9:hover {
+    background-color: var(--background-mod-normal)
 }
 
 .container__93fc9 {
@@ -6270,4 +6279,4 @@
     background-image: url(/assets/05207174d5432737.svg)
 }
 
-/*# sourceMappingURL=d86e2c90007f59ae.css.map*/
+/*# sourceMappingURL=1f818d61d48b729d.css.map*/

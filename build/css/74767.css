@@ -1,6 +1,6 @@
 /**
   Module ID: 74767
-  Original File Name: 79af96916c71d787
+  Original File Name: dee1e93e4f113113
 **/
 .content__79cbe {
     border-radius: 8px;
@@ -7944,6 +7944,10 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     border-right: 1px solid var(--border-subtle)
 }
 
+.refresh-fast-follow-distinct-borders .chat_f75fb0.threadSidebarOpen_f75fb0 {
+    border-right-color: var(--app-border-frame)
+}
+
 .visual-refresh.custom-theme-background .content_f75fb0 {
     border-left: none
 }
@@ -13199,4 +13203,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=79af96916c71d787.css.map*/
+/*# sourceMappingURL=dee1e93e4f113113.css.map*/
