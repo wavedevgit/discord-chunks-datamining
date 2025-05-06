@@ -1,7 +1,7 @@
 /** Chunk was on 85831 **/
 t.d(n, {
   d: () => Z,
-  p: () => E
+  p: () => O
 }), t(49124);
 var r = t(255367),
   l = t(442837),
@@ -26,7 +26,7 @@ var r = t(255367),
   x = t(900849),
   I = t(981631),
   k = t(388032);
-async function O(e, n, t) {
+async function E(e, n, t) {
   if (null == n) return;
   if (a.Z.trackDiscordLinkClicked({
       guildId: e,
@@ -47,7 +47,7 @@ async function O(e, n, t) {
   (0, s.Z)(I.Z5c.CHANNEL(e, n, t))
 }
 
-function E(e) {
+function O(e) {
   let {
     type: n,
     value: t
@@ -58,19 +58,19 @@ function E(e) {
         channelId: t
       });
     case "user":
-      return (0, r.jsx)(S, {
+      return (0, r.jsx)(T, {
         id: t
       });
     case "role":
-      return (0, r.jsx)(A, {
+      return (0, r.jsx)(S, {
         id: t
       });
     case "everyone":
-      return (0, r.jsx)(T, {
+      return (0, r.jsx)(A, {
         roleName: "@everyone"
       });
     case "here":
-      return (0, r.jsx)(T, {
+      return (0, r.jsx)(A, {
         roleName: "@here"
       });
     default:
@@ -111,15 +111,15 @@ function Z(e) {
       iconType: "locked",
       children: k.intl.string(k.t["/YzI6+"])
     }),
-    E = null;
-  return null != a && (E = (0, r.jsxs)(r.Fragment, {
+    O = null;
+  return null != a && (O = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(b.Z, {}), (0, r.jsx)(f.Z, {
       iconType: m ? "post" : "message"
     })]
   })), (0, r.jsxs)(g.Z, {
     role: "link",
     onClick: e => {
-      null == e || e.stopPropagation(), O(c, n, a), (0, i.pTH)()
+      null == e || e.stopPropagation(), E(c, n, a), (0, i.pTH)()
     },
     onContextMenu: e => {
       let l = v.Z.getChannel(n);
@@ -165,7 +165,7 @@ function Z(e) {
       })
     },
     className: "channelMention",
-    children: [I, E]
+    children: [I, O]
   })
 }
 
@@ -180,7 +180,7 @@ function P(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     id: n
   } = e, t = (0, y.d)();
@@ -194,7 +194,7 @@ function S(e) {
   })
 }
 
-function A(e) {
+function S(e) {
   let {
     id: n
   } = e, t = (0, y.d)(), i = null == t ? void 0 : t.guildId, u = (0, l.e7)([w.Z], () => {
@@ -209,7 +209,7 @@ function A(e) {
   })
 }
 
-function T(e) {
+function A(e) {
   let {
     roleName: n
   } = e, t = (0, y.d)();

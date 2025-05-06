@@ -99,7 +99,7 @@ function es(e) {
     onChange: l,
     canCreatePost: s,
     inputRef: o
-  } = e, d = !(0, N.wL)(t) && s, {
+  } = e, d = !(0, N.HL)(t) && s, {
     textAreaState: u,
     formOpen: m,
     previewing: f
@@ -757,7 +757,7 @@ function ex(e) {
     canCreatePost: n,
     disabled: i,
     disableIfInvalid: l = !1
-  } = e, a = (0, N.wL)(t), {
+  } = e, a = (0, N.HL)(t), {
     submitting: s,
     textAreaState: o,
     name: d,

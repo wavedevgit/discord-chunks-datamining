@@ -820,7 +820,7 @@ function eP(e) {
   }, c.X), {
     tagFilter: G,
     layoutType: q
-  } = (0, U.H)(s.id), W = (0, Q.AF)(), Y = (0, U.v)(), ee = (0, g.e7)([A.Z], () => A.Z.canChatInGuild(s.guild_id)), et = (0, V.r_)(s), er = (0, E.cD)(s), [el, ea] = i.useState(er), [, es] = (0, _.AB)(null != (l = s.getGuildId()) ? l : void 0), ec = (0, N.wL)(s), ef = ee && (er || el && es) && !ec, ex = s.isMediaChannel();
+  } = (0, U.H)(s.id), W = (0, Q.AF)(), Y = (0, U.v)(), ee = (0, g.e7)([A.Z], () => A.Z.canChatInGuild(s.guild_id)), et = (0, V.r_)(s), er = (0, E.cD)(s), [el, ea] = i.useState(er), [, es] = (0, _.AB)(null != (l = s.getGuildId()) ? l : void 0), ec = (0, N.HL)(s), ef = ee && (er || el && es) && !ec, ex = s.isMediaChannel();
   i.useEffect(() => {
     er && ea(!0)
   }, [er]);
