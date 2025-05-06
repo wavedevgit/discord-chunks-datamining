@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: abad79582372c221
+  Original File Name: 6a5dc1ff12f30c9c
 **/
 .container__74da2 {
     align-items: center;
@@ -1218,6 +1218,14 @@
     height: 100%
 }
 
+.orbsTermsButton__955a3 {
+    margin-left: 10px
+}
+
+.orbsTermsButton__955a3:hover {
+    text-decoration: underline
+}
+
 .theme-dark .bannerGradient__955a3 {
     background: linear-gradient(180deg,transparent 49.93%,rgba(0,0,0,.2) 84.02%)
 }
@@ -1235,6 +1243,10 @@
     background-color: #000
 }
 
+.theme-dark .orbsTermsButton__955a3 {
+    color: #fff
+}
+
 .theme-light .bannerGradient__955a3 {
     background: linear-gradient(180deg,transparent 68%,#f2f3f5),radial-gradient(circle at center,transparent 45.68%,rgba(171,183,249,.61) 69.72%,#bec8ff 100%)
 }
@@ -1249,6 +1261,10 @@
 
 .theme-light .orbsContainer__955a3 {
     background-color: #fff
+}
+
+.theme-light .orbsTermsButton__955a3 {
+    color: #000
 }
 
 .container_a592e1 {
@@ -8681,4 +8697,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=abad79582372c221.css.map*/
+/*# sourceMappingURL=6a5dc1ff12f30c9c.css.map*/

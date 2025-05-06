@@ -1,6 +1,6 @@
 /**
   Module ID: 88934
-  Original File Name: 1a5377cb085d1222
+  Original File Name: 15258516217e1bb1
 **/
 @value headerBarHeight 60px;
 
@@ -361,6 +361,7 @@
 }
 
 .buttonContainer_e9ef78 {
+    display: flex;
     margin-top: 16px;
     max-height: 44px;
     min-height: 44px
@@ -2575,4 +2576,4 @@
     width: 22px
 }
 
-/*# sourceMappingURL=1a5377cb085d1222.css.map*/
+/*# sourceMappingURL=15258516217e1bb1.css.map*/
