@@ -115,7 +115,7 @@ let E = i.memo(function(e) {
   } = (0, l.cj)([f.Z], () => ({
     isReplyAuthorBlocked: null != w && f.Z.isBlockedForMessage(w),
     isReplyAuthorIgnored: null != w && f.Z.isIgnoredForMessage(w)
-  }), [w]), B = (0, C.wq)(null == w ? void 0 : w.author.id, I.id), G = (0, C.$3)(n, w, D, U), F = (0, C.Wl)(w, I, S, N), H = (0, C.rY)(Z, N), V = i.useCallback(() => {
+  }), [w]), B = (0, C.wq)(null == w ? void 0 : w.author.id, I.id), G = (0, C.$3)(n, w), F = (0, C.Wl)(w, I, S, N), H = (0, C.rY)(Z, N), V = i.useCallback(() => {
     N({
       referencedUsernameProfile: !1,
       referencedAvatarProfile: !1

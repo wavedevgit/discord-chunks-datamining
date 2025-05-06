@@ -1,49 +1,48 @@
 /** Chunk was on 2900 **/
 n.d(t, {
-  $3: () => z,
-  Go: () => G,
-  JC: () => Z,
-  NU: () => D,
-  Nk: () => w,
-  R9: () => k,
-  RN: () => F,
-  Wl: () => A,
-  XO: () => P,
-  Xn: () => W,
-  bb: () => V,
-  qo: () => M,
-  rY: () => L,
-  sR: () => B,
-  tn: () => H,
-  wq: () => U
+  $3: () => V,
+  Go: () => B,
+  JC: () => w,
+  NU: () => L,
+  Nk: () => A,
+  R9: () => R,
+  RN: () => U,
+  Wl: () => P,
+  XO: () => T,
+  Xn: () => z,
+  bb: () => H,
+  qo: () => D,
+  rY: () => k,
+  sR: () => F,
+  tn: () => G,
+  wq: () => M
 }), n(997841), n(388685);
 var r = n(255367),
   i = n(73800),
-  l = n(668781),
-  a = n(239091),
-  o = n(904245),
-  s = n(144144),
-  c = n(40851),
-  u = n(407477),
-  d = n(992970),
-  p = n(287941),
-  m = n(235894),
-  f = n(675478),
-  h = n(592125),
-  g = n(323873),
-  _ = n(375954),
-  b = n(594174),
-  y = n(585483),
-  x = n(5967),
-  E = n(630388),
-  v = n(358085),
-  O = n(51144),
-  j = n(91047),
-  C = n(50284),
-  S = n(981631),
-  I = n(388032);
+  l = n(239091),
+  a = n(904245),
+  o = n(144144),
+  s = n(40851),
+  c = n(407477),
+  u = n(992970),
+  d = n(287941),
+  p = n(235894),
+  m = n(675478),
+  f = n(592125),
+  h = n(323873),
+  g = n(375954),
+  _ = n(594174),
+  b = n(585483),
+  y = n(5967),
+  x = n(630388),
+  E = n(358085),
+  v = n(51144),
+  O = n(91047),
+  j = n(50284),
+  C = n(804063),
+  S = n(981631);
 
-function N(e, t, n) {
+function I(e, t, n) {
   return i.useCallback(() => {
     n({
       [e]: !t
@@ -51,81 +50,81 @@ function N(e, t, n) {
   }, [e, n, t])
 }
 
-function T(e, t, n) {
+function N(e, t, n) {
   return i.useCallback(r => {
-    let i = b.default.getUser(e);
+    let i = _.default.getUser(e);
     if (null == i) return;
     if (r.preventDefault(), r.stopPropagation(), !r.shiftKey) return void n();
-    let l = "@".concat(O.ZP.getUserTag(i, {
+    let l = "@".concat(v.ZP.getUserTag(i, {
         decoration: "never"
       })),
       a = "<@".concat(e, ">");
-    y.S.dispatchToLastSubscribed(S.CkL.INSERT_TEXT, {
+    b.S.dispatchToLastSubscribed(S.CkL.INSERT_TEXT, {
       plainText: l,
       rawText: a
-    }), s.Z.startTyping(t)
+    }), o.Z.startTyping(t)
   }, [e, t, n])
 }
 
+function T(e, t, n, r) {
+  let i = I("usernameProfile", n, r);
+  return N(e.author.id, t.id, i)
+}
+
 function P(e, t, n, r) {
-  let i = N("usernameProfile", n, r);
-  return T(e.author.id, t.id, i)
+  let i = I("referencedUsernameProfile", n, r);
+  return N(null == e ? void 0 : e.author.id, t.id, i)
 }
 
 function A(e, t, n, r) {
-  let i = N("referencedUsernameProfile", n, r);
-  return T(null == e ? void 0 : e.author.id, t.id, i)
+  let i = I("interactionUsernameProfile", n, r);
+  return N(null == e ? void 0 : e.user.id, t.id, i)
 }
 
 function w(e, t, n, r) {
-  let i = N("interactionUsernameProfile", n, r);
-  return T(null == e ? void 0 : e.user.id, t.id, i)
+  let i = I("referencedUsernameProfile", n, r);
+  return N(e, t.id, i)
 }
 
-function Z(e, t, n, r) {
-  let i = N("referencedUsernameProfile", n, r);
-  return T(e, t.id, i)
-}
-
-function R(e) {
+function Z(e) {
   return i.useCallback(t => {
     t.preventDefault(), t.stopPropagation(), e()
   }, [e])
 }
 
+function R(e, t) {
+  return Z(I("avatarProfile", e, t))
+}
+
 function k(e, t) {
-  return R(N("avatarProfile", e, t))
+  return Z(I("referencedAvatarProfile", e, t))
 }
 
 function L(e, t) {
-  return R(N("referencedAvatarProfile", e, t))
+  return Z(I("interactionAvatarProfile", e, t))
 }
 
-function D(e, t) {
-  return R(N("interactionAvatarProfile", e, t))
-}
-
-function M(e, t, l, o) {
+function D(e, t, a, o) {
   let {
-    id: s
+    id: c
   } = t, {
     id: u,
     flags: d
-  } = e, p = (0, E.yE)(d, S.iLy.EPHEMERAL), m = (0, c.bp)();
+  } = e, p = (0, x.yE)(d, S.iLy.EPHEMERAL), m = (0, s.bp)();
   return i.useCallback((e, t) => {
     if (p) return;
-    if (!v.isPlatformEmbedded) {
+    if (!E.isPlatformEmbedded) {
       let t = e.target;
       if ("A" === t.tagName && "" !== t.textContent || null == window.getSelection) return;
       let n = window.getSelection();
       if (null != n && !n.isCollapsed && (n.focusNode === e.target || t.contains(n.focusNode))) return
     }
-    let i = h.Z.getChannel(s),
-      c = _.Z.getMessage(s, u),
-      d = g.Z.isEditing(s, u);
-    null == i || null == c || d || (l({
+    let i = f.Z.getChannel(c),
+      s = g.Z.getMessage(c, u),
+      d = h.Z.isEditing(c, u);
+    null == i || null == s || d || (a({
       contextMenu: !0
-    }), (0, a.jW)(e, async () => {
+    }), (0, l.jW)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("93375"), n.e("37220"), n.e("2089")]).then(n.bind(n, 225138));
@@ -149,7 +148,7 @@ function M(e, t, l, o) {
           }
           return e
         }({}, n), a = a = {
-          message: c,
+          message: s,
           channel: i,
           mediaItem: t,
           shouldHideMediaOptions: o
@@ -165,27 +164,27 @@ function M(e, t, l, o) {
         }), l))
       }
     }, {
-      onClose: () => l({
+      onClose: () => a({
         contextMenu: !1
       }),
       context: m
     }))
-  }, [p, s, u, l, m, o])
+  }, [p, c, u, a, m, o])
 }
 
-function U(e, t) {
+function M(e, t) {
   return i.useCallback(n => {
-    let r = b.default.getUser(e),
-      i = h.Z.getChannel(t);
-    null != r && null != i && (n.stopPropagation(), (0, j.Pv)(n, r, i))
+    let r = _.default.getUser(e),
+      i = f.Z.getChannel(t);
+    null != r && null != i && (n.stopPropagation(), (0, O.Pv)(n, r, i))
   }, [e, t])
 }
 
-function F(e, t, n) {
+function U(e, t, n) {
   return i.useCallback(r => {
-    let i = b.default.getUser(e),
-      l = h.Z.getChannel(t);
-    null != i && null != l && (r.stopPropagation(), (0, j._j)(r, {
+    let i = _.default.getUser(e),
+      l = f.Z.getChannel(t);
+    null != i && null != l && (r.stopPropagation(), (0, O._j)(r, {
       user: i,
       channel: l,
       moderationAlertId: n
@@ -193,26 +192,26 @@ function F(e, t, n) {
   }, [e, t, n])
 }
 
-function B(e, t) {
+function F(e, t) {
   return i.useCallback(n => {
-    let r = b.default.getUser(e),
-      i = h.Z.getChannel(t);
-    null != r && null != i && (n.stopPropagation(), (0, j.xS)(n, r, i.guild_id))
+    let r = _.default.getUser(e),
+      i = f.Z.getChannel(t);
+    null != r && null != i && (n.stopPropagation(), (0, O.xS)(n, r, i.guild_id))
   }, [e, t])
 }
 
-function G(e, t) {
+function B(e, t) {
   let {
     id: n
   } = e, {
     id: r
   } = t;
   return i.useCallback(e => {
-    e.altKey && (e.preventDefault(), (0, C.Z)(r, n))
+    e.altKey && (e.preventDefault(), (0, j.Z)(r, n))
   }, [r, n])
 }
 
-function H(e) {
+function G(e) {
   var t, n;
   let {
     groupId: r,
@@ -221,54 +220,54 @@ function H(e) {
     popouts: o
   } = e, {
     canShowReactionsOnMessageHover: s
-  } = u.ZP.useExperiment({
+  } = c.ZP.useExperiment({
     location: "useHoveredMessage"
   }, {
     autoTrackExposure: !1
-  }), c = l.author.id, h = "".concat(r, ":").concat(c), g = i.useRef(a), _ = (t = l, n = o, i.useCallback(e => {
+  }), f = l.author.id, h = "".concat(r, ":").concat(f), g = i.useRef(a), _ = (t = l, n = o, i.useCallback(e => {
     if (null == e || !(e.nativeEvent instanceof MouseEvent) || Object.values(n).some(e => e)) return;
     let r = e.target;
-    if ((0, m.Uw)(t)) {
+    if ((0, p.Uw)(t)) {
       let {
         x: e,
         y: n,
         width: i,
         height: l
       } = r.getBoundingClientRect();
-      (0, p.Z)(t, {
+      (0, d.Z)(t, {
         x: e,
         y: n,
         w: i,
         h: l
-      }, !1, d.LL.UserTriggered)
+      }, !1, u.LL.UserTriggered)
     }
-  }, [t, n])), [b, x] = i.useState(a);
-  g.current = b || g.current;
+  }, [t, n])), [y, x] = i.useState(a);
+  g.current = y || g.current;
   let E = i.useCallback(e => {
-      s && (0, f.T6)(), b || (y.S.dispatchKeyed(S.LPv.ANIMATE_CHAT_AVATAR, h, !0), _(e), x(!0))
-    }, [b, h, s, _]),
+      s && (0, m.T6)(), y || (b.S.dispatchKeyed(S.LPv.ANIMATE_CHAT_AVATAR, h, !0), _(e), x(!0))
+    }, [y, h, s, _]),
     v = i.useCallback(() => {
-      y.S.dispatchKeyed(S.LPv.ANIMATE_CHAT_AVATAR, h, !1), x(!1)
+      b.S.dispatchKeyed(S.LPv.ANIMATE_CHAT_AVATAR, h, !1), x(!1)
     }, [h]);
   return {
     hasHovered: g.current,
-    isHovered: b,
+    isHovered: y,
     handleMouseEnter: E,
     handleMouseLeave: v
   }
 }
 
-function V(e, t) {
+function H(e, t) {
   let [n, r] = i.useState(!1), [l, a] = i.useState(!1);
   return {
     handleFocus: i.useCallback(t => {
       var n, i;
-      let l = null != (i = null == (n = (0, x.uB)(t)) ? void 0 : n.activeElement) ? i : null;
+      let l = null != (i = null == (n = (0, y.uB)(t)) ? void 0 : n.activeElement) ? i : null;
       (t.target === t.currentTarget || t.currentTarget.contains(l)) && (a(!0), r(!0)), null != e && e(t)
     }, [e]),
     handleBlur: i.useCallback(e => {
       var n, i;
-      let l = null != (i = null == (n = (0, x.uB)(e)) ? void 0 : n.activeElement) ? i : null;
+      let l = null != (i = null == (n = (0, y.uB)(e)) ? void 0 : n.activeElement) ? i : null;
       e.target !== e.currentTarget && e.currentTarget.contains(l) || r(!1), null != t && t(e)
     }, [t]),
     isFocused: n,
@@ -276,33 +275,22 @@ function V(e, t) {
   }
 }
 
-function z(e, t) {
-  let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-    r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
+function V(e, t) {
   return i.useCallback(() => {
-    null != t && (n ? l.Z.show({
-      title: I.intl.string(I.t["j7eA/v"]),
-      body: I.intl.formatToPlainString(I.t.dTNNgo, {
-        name: t.author.username
-      }),
-      confirmText: I.intl.string(I.t.BddRzc)
-    }) : r ? l.Z.show({
-      title: I.intl.string(I.t.XyWoKS),
-      body: I.intl.formatToPlainString(I.t["8t8doK"], {
-        name: t.author.username
-      }),
-      confirmText: I.intl.string(I.t.BddRzc)
-    }) : o.Z.jumpToMessage({
-      channelId: t.channel_id,
-      messageId: t.id,
+    let {
+      messageReference: n
+    } = e;
+    (null == t || (0, C.Z)(t)) && a.Z.jumpToMessage({
+      channelId: n.channel_id,
+      messageId: n.message_id,
       flash: !0,
       returnMessageId: e.id
-    }))
-  }, [n, r, e.id, t])
+    })
+  }, [t, e])
 }
 
-function W(e, t) {
-  let n = N("interactionData", e, t);
+function z(e, t) {
+  let n = I("interactionData", e, t);
   return i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), n()
   }, [n])
