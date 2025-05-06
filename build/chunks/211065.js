@@ -118,6 +118,7 @@ class I extends r.PureComponent {
         children: [(0, l.jsx)("div", {
           className: T.emojiButtonContainer,
           children: (0, l.jsx)(s.yRy, {
+            targetElementRef: this.emojiButtonRef,
             renderPopout: this.renderEmojiPicker,
             position: "left",
             animation: s.yRy.Animation.NONE,
@@ -127,6 +128,7 @@ class I extends r.PureComponent {
                 isShown: n
               } = e;
               return (0, l.jsx)(d.Z, w(y({}, t), {
+                ref: this.emojiButtonRef,
                 active: n,
                 className: T.emojiButton,
                 tabIndex: 0,
@@ -248,7 +250,7 @@ class I extends r.PureComponent {
     }))
   }
   constructor(...t) {
-    super(...t), N(this, "state", {
+    super(...t), N(this, "emojiButtonRef", r.createRef()), N(this, "state", {
       emojiInfo: null != this.props.customStatus ? this.props.customStatus.emoji : null,
       text: null != this.props.customStatus && null != this.props.customStatus.state ? this.props.customStatus.state : "",
       clearAfter: (0, g.Z)(),
