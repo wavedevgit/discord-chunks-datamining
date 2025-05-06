@@ -10,8 +10,8 @@ var n = r(255367),
   s = r(286379),
   p = r(343817),
   l = r(797614),
-  u = r(626135),
-  d = r(353250),
+  d = r(626135),
+  u = r(353250),
   h = r(599857),
   f = r(981631);
 
@@ -78,7 +78,7 @@ let v = e => {
     P = (0, o.Z)(),
     [S, k] = a.useState(!1),
     A = a.useCallback(e => {
-      u.default.track(f.rMx.CAPTCHA_EVENT, {
+      d.default.track(f.rMx.CAPTCHA_EVENT, {
         captcha_event_name: e,
         captcha_service: t,
         sitekey: r,
@@ -110,14 +110,14 @@ let v = e => {
   let L = a.useCallback(() => {
       A("error"), I("error"), D(), null == g || g()
     }, [A, I, D, g]),
-    V = a.useCallback(e => {
+    T = a.useCallback(e => {
       A("verify"), I("verify"), O(e)
     }, [I, O, A]),
-    T = a.useCallback(() => {
-      A("render"), (0, d.emitCaptchaDistributionMetric)(_), null == m || m()
+    V = a.useCallback(() => {
+      A("render"), (0, u.emitCaptchaDistributionMetric)(_), null == m || m()
     }, [m, A, _]),
     Z = a.useCallback(() => {
-      A("open"), I("open"), (0, d.emitCaptchaDistributionMetric)(_), null == C || C()
+      A("open"), I("open"), (0, u.emitCaptchaDistributionMetric)(_), null == C || C()
     }, [I, C, A, _]),
     M = a.useCallback(() => {
       A("close"), null == E || E(), D()
@@ -127,14 +127,14 @@ let v = e => {
     }, [j, A]);
   return ((null == r || "" === r) && (r = f.OL7), t === p.hP.RECAPTCHA) ? (0, n.jsx)(c.Z, b(y({}, R), {
     onLoad: N,
-    onRender: T,
-    onVerify: V,
+    onRender: V,
+    onVerify: T,
     onError: L,
     sitekey: r
   })) : t === p.hP.RECAPTCHA_ENTERPRISE ? (0, n.jsx)(h._, b(y({}, R), {
     onLoad: N,
-    onRender: T,
-    onVerify: V,
+    onRender: V,
+    onVerify: T,
     onError: L,
     sitekey: r,
     action: _
@@ -144,7 +144,7 @@ let v = e => {
     sitekey: r,
     onLoad: N,
     onError: L,
-    onVerify: V,
+    onVerify: T,
     onChalExpired: q,
     onOpen: Z,
     onClose: M,
@@ -153,8 +153,8 @@ let v = e => {
   })) : (0, n.jsx)(c.Z, b(y({}, R), {
     sitekey: r,
     onLoad: N,
-    onRender: T,
-    onVerify: V,
+    onRender: V,
+    onVerify: T,
     onError: L
   }))
 }
