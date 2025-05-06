@@ -17,7 +17,7 @@ function d(e) {
     sitekey: t,
     action: r,
     onVerify: i
-  } = e, [c, d] = a.useState(!1), u = a.useCallback(e => {
+  } = e, [c, d] = a.useState("uninitialized"), u = a.useCallback(e => {
     s.default.track(l.rMx.RECAPTCHA_MODAL_EVENT, {
       recaptcha_event_name: e
     })
@@ -29,14 +29,14 @@ function d(e) {
       var e;
       u("recaptcha-ready"), h(await (null == (e = window) ? void 0 : e.grecaptcha).enterprise.execute(t, null != r ? {
         action: r
-      } : void 0)), d(!1)
+      } : void 0)), d("loaded")
     })
   }, [t, r, h, u]), y = a.useCallback(() => {
-    u("recaptcha-loading"), d(!0), p.I.loadRecaptchaScript(t, f, u)
+    d("running"), u("recaptcha-loading"), p.I.loadRecaptchaScript(t, f, u)
   }, [t, f, u]);
   return a.useEffect(() => {
-    c || y()
-  }, [c, y]), a.useEffect(() => () => {
+    "uninitialized" === c && y()
+  }, [y, c]), a.useEffect(() => () => {
     u("recaptcha-unloading"), document.querySelectorAll('script[src*="recaptcha/enterprise.js"],.grecaptcha-badge').forEach(e => {
       var t;
       return null == (t = e.parentNode) ? void 0 : t.removeChild(e)
