@@ -1,6 +1,6 @@
 /**
   Module ID: 44114
-  Original File Name: b80cabed89ad077d
+  Original File Name: ece0a76eea7d8428
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -1289,13 +1289,32 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .container__7e777 .art__7e777 {
-    background-image: url(/assets/9847f3c3497afc87.svg);
-    height: 57px;
-    width: 154px
+    background-image: url(/assets/e7433687abcdeb78.svg);
+    height: 90px;
+    pointer-events: none;
+    width: 192px
 }
 
-.tryItText__7e777 {
-    color: var(--brand-500)
+.content__7e777 {
+    background-color: var(--background-surface-high)
+}
+
+.pointer__7e777 {
+    border-top-color: var(--background-surface-high)
+}
+
+.dismissIcon__7e777 {
+    color: var(--interactive-normal);
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 20px
+}
+
+.dismissIcon__7e777:hover {
+    color: var(--interactive-hover);
+    cursor: pointer
 }
 
 .container_cdb3b1 {
@@ -3570,7 +3589,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding: var(--space-xs)
 }
 
-.visual-refresh .containerPanelAboveOpen__37e49,.visual-refresh .containerQuestBarVisible__37e49 {
+.visual-refresh .containerQuestBarVisible__37e49,.visual-refresh .containerRtcOpened__37e49 {
     border-top-left-radius: 0;
     border-top-right-radius: 0
 }
@@ -18456,4 +18475,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=b80cabed89ad077d.css.map*/
+/*# sourceMappingURL=ece0a76eea7d8428.css.map*/
