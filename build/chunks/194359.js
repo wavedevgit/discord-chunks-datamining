@@ -134,9 +134,7 @@ let S = {
         rejectWithError: !1
       }).then(() => {
         null == t || t()
-      }).catch(e => {
-        I(e, u, _.ZP.getUserTag(f))
-      })
+      }).catch(e => (I(e, u, _.ZP.getUserTag(f)), Promise.reject(e)))
     },
     acceptFriendRequest(e) {
       function t() {
