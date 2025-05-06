@@ -165,7 +165,7 @@ async function B(e) {
     }
     if (t !== x.evJ.GUILD_FILE_UPLOAD_RATE_LIMITED_ACCESS) {
       if (V) H.reject(new c.Hx({
-        status: t,
+        status: 400,
         body: null != n ? n : {}
       }, t));
       else {
