@@ -1,6 +1,6 @@
 /**
   Module ID: 2900
-  Original File Name: 868c0a935b50434f
+  Original File Name: 55c6c5ddf8f45b8e
 **/
 .descriptionText__535f5 {
     color: var(--header-secondary);
@@ -3814,6 +3814,10 @@ html .progress__61462 {
     gap: 8px
 }
 
+.questEnrollmentBlockedButton__2055a {
+    flex: 1 0 auto
+}
+
 .outerContainerXs__2055a .ctaButtonContainer__2055a {
     flex-direction: column-reverse
 }
@@ -3831,7 +3835,7 @@ html .progress__61462 {
     flex-grow: 1
 }
 
-.outerContainerXs__2055a .ctaButtonWrapper__2055a {
+.outerContainerXs__2055a .ctaButtonWrapper__2055a,.outerContainerXs__2055a .questEnrollmentBlockedButton__2055a {
     width: 100%
 }
 
@@ -11575,4 +11579,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=868c0a935b50434f.css.map*/
+/*# sourceMappingURL=55c6c5ddf8f45b8e.css.map*/

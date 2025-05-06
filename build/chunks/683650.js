@@ -7,8 +7,8 @@ n(73800);
 var s = n(120356),
   i = n.n(s),
   o = n(481060),
-  a = n(617136),
-  l = n(497505),
+  l = n(617136),
+  a = n(497505),
   c = n(266843),
   u = n(341907),
   d = n(46140),
@@ -24,7 +24,7 @@ function g() {
       color: o.Ttl.BRAND,
       onClick: () => {
         (0, u.navigateToQuestHome)({
-          fromContent: l.jn.QUESTS_EMBED
+          fromContent: a.jn.QUESTS_EMBED
         })
       },
       children: m.intl.string(m.t.GURBQk)
@@ -39,7 +39,7 @@ function h(e) {
     containerRef: n,
     size: s
   } = (0, c.h)();
-  return (0, a.Zk)(d.V_.UNKNOWN_QUEST, t), (0, r.jsxs)("div", {
+  return (0, l.Zk)(d.V_.UNKNOWN_QUEST, t), (0, r.jsxs)("div", {
     ref: e => {
       n.current = e
     },

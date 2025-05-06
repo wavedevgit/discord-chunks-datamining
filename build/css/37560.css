@@ -1,6 +1,6 @@
 /**
   Module ID: 37560
-  Original File Name: 60072906ae416ccc
+  Original File Name: 1471ff45bd3e79cd
 **/
 .partnerBranding__83420 {
     align-items: center;
@@ -321,6 +321,10 @@
     gap: 8px
 }
 
+.questEnrollmentBlockedButton__2055a {
+    flex: 1 0 auto
+}
+
 .outerContainerXs__2055a .ctaButtonContainer__2055a {
     flex-direction: column-reverse
 }
@@ -338,7 +342,7 @@
     flex-grow: 1
 }
 
-.outerContainerXs__2055a .ctaButtonWrapper__2055a {
+.outerContainerXs__2055a .ctaButtonWrapper__2055a,.outerContainerXs__2055a .questEnrollmentBlockedButton__2055a {
     width: 100%
 }
 
@@ -845,4 +849,4 @@
     margin-top: 0
 }
 
-/*# sourceMappingURL=60072906ae416ccc.css.map*/
+/*# sourceMappingURL=1471ff45bd3e79cd.css.map*/

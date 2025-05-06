@@ -571,6 +571,9 @@ function eM(e, t) {
         impressionId: t.impressionId
       }), (0, _.Z)(n)
     }
+  }), (0, I.dA)({
+    questId: e.id,
+    event: D.rMx.QUEST_THIRD_PARTY_LINK_CLICKED
   })
 }
 let ej = (e, t) => {

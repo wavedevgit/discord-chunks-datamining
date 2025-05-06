@@ -1,13 +1,13 @@
 /** Chunk was on 37447 **/
 n.d(t, {
-  Z: () => k
+  Z: () => Z
 }), n(388685);
 var r = n(255367),
   s = n(73800),
   i = n(120356),
   o = n.n(i),
-  a = n(779613),
-  l = n(722770),
+  l = n(779613),
+  a = n(722770),
   c = n(442837),
   u = n(846519),
   d = n(481060),
@@ -64,9 +64,9 @@ function D(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let M = (0, a.animated)(d.CJ0),
-  A = (0, a.animated)(h.Z),
-  Z = e => {
+let M = (0, l.animated)(d.CJ0),
+  A = (0, l.animated)(h.Z),
+  k = e => {
     var {
       quest: t,
       location: n,
@@ -86,7 +86,7 @@ let M = (0, a.animated)(d.CJ0),
       }
       return s
     }(e, ["quest", "location", "questContentPosition"]);
-    let [a, l] = s.useState(!1), c = s.useRef(new u.V7), m = (0, j.O5)();
+    let [l, a] = s.useState(!1), c = s.useRef(new u.V7), m = (0, j.O5)();
     s.useEffect(() => {
       let e = c.current;
       return function() {
@@ -100,12 +100,12 @@ let M = (0, a.animated)(d.CJ0),
         questContentCTA: j.jZ.COPY_QUEST_URL,
         questContentPosition: i
       }), (0, f.JG)((0, v.Rs)(t.id), () => {
-        l(!0), c.current.start(1e3, () => l(!1))
+        a(!0), c.current.start(1e3, () => a(!1))
       })
     };
     return (0, r.jsx)(d.ua7, {
-      forceOpen: a,
-      shouldShow: a,
+      forceOpen: l,
+      shouldShow: l,
       color: d.ua7.Colors.GREEN,
       text: R.intl.string(R.t.MSaeTU),
       children: () => (0, r.jsx)(d.zxk, D(I({}, o), {
@@ -117,7 +117,7 @@ let M = (0, a.animated)(d.CJ0),
       }))
     })
   },
-  k = e => {
+  Z = e => {
     var t, n;
     let {
       isFocused: i,
@@ -125,9 +125,9 @@ let M = (0, a.animated)(d.CJ0),
       quest: h,
       location: f,
       size: v,
-      expansionSpring: k,
-      isAnimating: L,
-      isExpanded: B,
+      expansionSpring: Z,
+      isAnimating: B,
+      isExpanded: L,
       isInConcurrentQuestExperiment: U,
       contentPosition: Q,
       toggleExpanded: W
@@ -141,15 +141,15 @@ let M = (0, a.animated)(d.CJ0),
       year: "numeric",
       month: "long",
       day: "numeric"
-    }), ea = (0, b.B6)(T.r.build(h.config).rewardsExpireAt, {
+    }), el = (0, b.B6)(T.r.build(h.config).rewardsExpireAt, {
       year: "numeric",
       month: "long",
       day: "numeric"
-    }), el = s.useMemo(() => null != h.config.cosponsorMetadata, [h]), ec = e => {
+    }), ea = s.useMemo(() => null != h.config.cosponsorMetadata, [h]), ec = e => {
       e.stopPropagation(), e.currentTarget.blur(), W(), ei({
         questId: h.id,
         questContent: f,
-        questContentCTA: B ? j.jZ.COLLAPSE : j.jZ.EXPAND,
+        questContentCTA: L ? j.jZ.COLLAPSE : j.jZ.EXPAND,
         questContentPosition: Q
       })
     };
@@ -158,7 +158,7 @@ let M = (0, a.animated)(d.CJ0),
     }, [i, $]);
     let eu = (0, r.jsx)(O.ZP, {
       className: _.partnerBranding,
-      logotypeClassName: el ? _.partnerBrandingLogotypes : void 0,
+      logotypeClassName: ea ? _.partnerBrandingLogotypes : void 0,
       gameTileSize: O.fF.MEDIUM,
       quest: h,
       separatorSpacing: O.US.MEDIUM,
@@ -177,7 +177,7 @@ let M = (0, a.animated)(d.CJ0),
       },
       children: [(0, r.jsx)(A, {
         style: {
-          opacity: k.to({
+          opacity: Z.to({
             range: [0, 1],
             output: [.25, 1]
           })
@@ -195,27 +195,27 @@ let M = (0, a.animated)(d.CJ0),
         })
       }), (0, r.jsxs)("div", {
         className: _.header,
-        "aria-expanded": B,
-        children: [(0, r.jsxs)(a.animated.div, {
+        "aria-expanded": L,
+        children: [(0, r.jsxs)(l.animated.div, {
           className: o()(_.headerContent, {
             [_.headerContentEmbed]: en
           }),
           style: {
-            y: et ? k.to({
+            y: et ? Z.to({
               range: [0, 1],
               output: [S.DJ, 0]
             }) : void 0
           },
-          children: [et && (0, r.jsx)(a.animated.div, {
+          children: [et && (0, r.jsx)(l.animated.div, {
             className: _.headerCollapsedContent,
             style: {
-              opacity: k.to({
+              opacity: Z.to({
                 range: [0, 1],
                 output: [1, 0]
               }),
-              visibility: L || !B ? "inherit" : "hidden"
+              visibility: B || !L ? "inherit" : "hidden"
             },
-            "aria-hidden": !L && B,
+            "aria-hidden": !B && L,
             children: (0, r.jsxs)(d.kL8, {
               "aria-label": R.intl.string(R.t.dcl9MT),
               onClick: ec,
@@ -241,7 +241,7 @@ let M = (0, a.animated)(d.CJ0),
                 })]
               })]
             })
-          }), (0, r.jsxs)(a.animated.div, {
+          }), (0, r.jsxs)(l.animated.div, {
             ref: e => {
               z.current = e
             },
@@ -250,13 +250,13 @@ let M = (0, a.animated)(d.CJ0),
               [_.outerContainerEmbed]: en
             }),
             style: {
-              opacity: k.to({
+              opacity: Z.to({
                 range: [0, 1],
                 output: [0, 1]
               }),
-              visibility: L || B ? "inherit" : "hidden"
+              visibility: B || L ? "inherit" : "hidden"
             },
-            "aria-hidden": !L && !B,
+            "aria-hidden": !B && !L,
             children: [(0, r.jsxs)("div", {
               className: _.headerExpandedWrapper,
               children: [(0, r.jsxs)("div", {
@@ -283,7 +283,7 @@ let M = (0, a.animated)(d.CJ0),
                   variant: "text-xs/normal",
                   color: "always-white",
                   children: es ? R.intl.formatToPlainString(R.t.APddvL, {
-                    expirationDate: ea
+                    expirationDate: el
                   }) : u ? R.intl.formatToPlainString(R.t.v7xMw8, {
                     expirationDate: eo
                   }) : R.intl.formatToPlainString(R.t["pX+fmp"], {
@@ -291,16 +291,16 @@ let M = (0, a.animated)(d.CJ0),
                   })
                 })]
               })]
-            }), !u && et && (0, r.jsx)(Z, {
+            }), !u && et && (0, r.jsx)(k, {
               quest: h,
               location: f,
               questContentPosition: Q
             })]
           })]
-        }), (0, r.jsxs)(a.animated.div, {
+        }), (0, r.jsxs)(l.animated.div, {
           className: _.iconsContainer,
           style: {
-            top: et ? k.to({
+            top: et ? Z.to({
               range: [0, 1],
               output: [S.DJ / 2 - S.Z$ / 2, S.jc]
             }) : S.jc
@@ -312,33 +312,33 @@ let M = (0, a.animated)(d.CJ0),
             shouldShowDisclosure: !0,
             hideLearnMore: et,
             showShareLink: !u && en,
-            children: e => (0, r.jsx)(a.animated.div, {
+            children: e => (0, r.jsx)(l.animated.div, {
               style: {
-                opacity: k,
-                visibility: L || B ? "inherit" : "hidden"
+                opacity: Z,
+                visibility: B || L ? "inherit" : "hidden"
               },
-              "aria-hidden": !L && !B,
+              "aria-hidden": !B && !L,
               children: (0, r.jsx)(d.P3F, D(I({}, e), {
                 className: _.iconWrapper,
                 "aria-label": R.intl.string(R.t.DEoVWV),
                 children: (0, r.jsx)(d.xhG, {
                   size: "md",
-                  color: l.Z.WHITE
+                  color: a.Z.WHITE
                 })
               }))
             })
           }), U && !(0, S.W_)(f) && (0, r.jsx)(d.P3F, {
             onClick: ec,
             className: _.iconWrapper,
-            "aria-label": B ? R.intl.string(R.t.iTcumZ) : R.intl.string(R.t.dcl9MT),
+            "aria-label": L ? R.intl.string(R.t.iTcumZ) : R.intl.string(R.t.dcl9MT),
             children: (0, r.jsx)(M, {
               style: {
-                rotate: k.to({
+                rotate: Z.to({
                   range: [0, 1],
                   output: [0, 180]
                 })
               },
-              color: l.Z.WHITE
+              color: a.Z.WHITE
             })
           })]
         })]
