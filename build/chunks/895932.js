@@ -60,7 +60,7 @@ function m(e) {
           action: () => p(a.z.CREATION_DATE),
           checked: m === a.z.CREATION_DATE
         })]
-      }), t.isMediaChannel() ? null : (0, r.jsxs)(s.kSQ, {
+      }), t.isMediaChannel() || t.isModeratorReportChannel() ? null : (0, r.jsxs)(s.kSQ, {
         label: d.intl.string(d.t.mFMDSk),
         children: [(0, r.jsx)(s.k5B, {
           id: "view-as-list",
