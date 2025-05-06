@@ -1,6 +1,6 @@
 /**
   Module ID: 44114
-  Original File Name: 9400001f86a8aaf0
+  Original File Name: b80cabed89ad077d
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -3570,7 +3570,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding: var(--space-xs)
 }
 
-.visual-refresh .containerQuestBarVisible__37e49,.visual-refresh .containerRtcOpened__37e49 {
+.visual-refresh .containerPanelAboveOpen__37e49,.visual-refresh .containerQuestBarVisible__37e49 {
     border-top-left-radius: 0;
     border-top-right-radius: 0
 }
@@ -18456,4 +18456,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=9400001f86a8aaf0.css.map*/
+/*# sourceMappingURL=b80cabed89ad077d.css.map*/

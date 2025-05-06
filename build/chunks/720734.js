@@ -439,16 +439,16 @@ class tr extends r.PureComponent {
     let {
       currentUser: e,
       nameplate: t,
-      voiceChannel: n,
-      isQuestBarEmpty: r
+      isQuestBarEmpty: n,
+      panelAboveOpen: r
     } = this.props, s = this.state.hovered;
     return null == e ? null : (0, i.jsx)(f.Wdt, {
       children: e => (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
           ref: this.containerRef,
           className: l()(e2.container, {
-            [e2.containerRtcOpened]: null != n,
-            [e2.containerQuestBarVisible]: !r
+            [e2.containerQuestBarVisible]: !n,
+            [e2.containerPanelAboveOpen]: r
           }),
           onMouseEnter: this.handleMouseEnter,
           onMouseLeave: this.handleMouseLeave,
@@ -708,91 +708,66 @@ function ts(e) {
   })
 }
 
-function tl() {
-  var e;
-  let t = (0, o.e7)([eV.default], () => eV.default.getCurrentUser()),
-    n = (0, o.e7)([eD.default], () => eD.default.getId()),
-    {
-      activities: s,
-      streaming: l,
-      status: a
-    } = (0, o.cj)([eM.Z], () => {
-      let e = eM.Z.getActivities();
-      return {
-        activities: e,
-        streaming: null != e.find(e => {
-          let {
-            type: t
-          } = e;
-          return t === e1.IIU.STREAMING
-        }),
-        status: eM.Z.getStatus()
-      }
-    }),
-    d = (0, o.e7)([eR.Z], () => eR.Z.getAnyStreamForUser(n)),
-    u = (0, O.Z)({
-      userId: n
-    }),
-    m = eX.ZP.useUserTag(t, {
-      decoration: "never"
-    }),
-    g = (0, o.e7)([eU.Z], () => eU.Z.hidePersonalInformation),
-    p = (0, o.e7)([eL.Z, eZ.Z], () => {
-      let e = eL.Z.getChannelId();
-      return null != e ? eZ.Z.getChannel(e) : null
-    }),
-    {
-      mute: h,
-      selfMute: _,
-      suppress: x
-    } = (0, ev.Z)(p),
-    {
-      selfDeaf: E,
-      deaf: S
-    } = (0, eS.Z)(p),
-    T = (0, o.e7)([Z.C], () => {
-      var e;
-      return (0, w.fD)() ? null == (e = Z.C.getCurrentBuildOverride().overrides) ? void 0 : e.discord_web : null
-    }),
-    I = (0, o.e7)([eG.ZP], () => eG.ZP.getPremiumTypeSubscription()),
-    N = (0, o.e7)([ek.Z], () => ek.Z.getSpeakingWhileMuted()),
-    y = (0, o.e7)([ew.Z], () => ew.Z.hasLayers()),
-    R = (0, f.s9z)(f.JQI) || y || eq.s.isDisallowPopupsSet(),
-    D = (0, ec.b)(),
-    k = (0, o.e7)([J.Z], () => null != J.Z.getAwaitingRemoteSessionInfo()),
-    L = (0, o.e7)([eB.Z], () => eB.Z.getGuildId()),
-    B = (0, ep.D)(),
-    M = (0, C.u)(),
-    U = eK.ZP.canUsePremiumGuildMemberProfile(t),
-    V = (null == t || null == (e = t.avatarDecoration) ? void 0 : e.skuId) === e3.rL,
-    {
-      voiceActivityStatusEnabled: G
-    } = (0, v.U)({
-      location: "Account"
-    }),
-    {
-      simplifiedSettingsEnabled: F
-    } = (0, eO.Z)({
-      location: "Account"
-    }),
-    W = (0, en.m)(),
-    [Y, K] = (0, ee.G)(null != L ? L : null),
-    {
-      customStatusRTCEntrypointEnabled: q,
-      customStatusHoverOnlyRTCEntrypointEnabled: Q
-    } = (0, z.Z)({
-      location: "Account"
-    }),
-    $ = "account";
+function tl(e) {
+  var t;
+  let {
+    panelAboveOpen: n
+  } = e, s = (0, o.e7)([eV.default], () => eV.default.getCurrentUser()), l = (0, o.e7)([eD.default], () => eD.default.getId()), {
+    activities: a,
+    streaming: d,
+    status: u
+  } = (0, o.cj)([eM.Z], () => {
+    let e = eM.Z.getActivities();
+    return {
+      activities: e,
+      streaming: null != e.find(e => {
+        let {
+          type: t
+        } = e;
+        return t === e1.IIU.STREAMING
+      }),
+      status: eM.Z.getStatus()
+    }
+  }), m = (0, o.e7)([eR.Z], () => eR.Z.getAnyStreamForUser(l)), g = (0, O.Z)({
+    userId: l
+  }), p = eX.ZP.useUserTag(s, {
+    decoration: "never"
+  }), h = (0, o.e7)([eU.Z], () => eU.Z.hidePersonalInformation), _ = (0, o.e7)([eL.Z, eZ.Z], () => {
+    let e = eL.Z.getChannelId();
+    return null != e ? eZ.Z.getChannel(e) : null
+  }), {
+    mute: x,
+    selfMute: E,
+    suppress: S
+  } = (0, ev.Z)(_), {
+    selfDeaf: T,
+    deaf: I
+  } = (0, eS.Z)(_), N = (0, o.e7)([Z.C], () => {
+    var e;
+    return (0, w.fD)() ? null == (e = Z.C.getCurrentBuildOverride().overrides) ? void 0 : e.discord_web : null
+  }), y = (0, o.e7)([eG.ZP], () => eG.ZP.getPremiumTypeSubscription()), R = (0, o.e7)([ek.Z], () => ek.Z.getSpeakingWhileMuted()), D = (0, o.e7)([ew.Z], () => ew.Z.hasLayers()), k = (0, f.s9z)(f.JQI) || D || eq.s.isDisallowPopupsSet(), L = (0, ec.b)(), B = (0, o.e7)([J.Z], () => null != J.Z.getAwaitingRemoteSessionInfo()), M = (0, o.e7)([eB.Z], () => eB.Z.getGuildId()), U = (0, ep.D)(), V = (0, C.u)(), G = eK.ZP.canUsePremiumGuildMemberProfile(s), F = (null == s || null == (t = s.avatarDecoration) ? void 0 : t.skuId) === e3.rL, {
+    voiceActivityStatusEnabled: W
+  } = (0, v.U)({
+    location: "Account"
+  }), {
+    simplifiedSettingsEnabled: Y
+  } = (0, eO.Z)({
+    location: "Account"
+  }), K = (0, en.m)(), [q, Q] = (0, ee.G)(null != M ? M : null), {
+    customStatusRTCEntrypointEnabled: $,
+    customStatusHoverOnlyRTCEntrypointEnabled: et
+  } = (0, z.Z)({
+    location: "Account"
+  }), ei = "account";
   (0, j.j)({
-    location: $ + " auto on",
+    location: ei + " auto on",
     autoTrackExposure: !0
   }), (0, j.j)({
-    location: $ + " auto off",
+    location: ei + " auto off",
     autoTrackExposure: !1
   });
-  let et = (0, o.e7)([eb.Z], () => eb.Z.hasHadOtherUserPlaySoundInSession()),
-    ei = function() {
+  let er = (0, o.e7)([eb.Z], () => eb.Z.hasHadOtherUserPlaySoundInSession()),
+    el = function() {
       let e = (0, X.wE)(c.z.PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2),
         [t, n] = (0, o.Wu)([ed.Z], () => [ed.Z.hasFetchedRelevance, ed.Z.profileThemesRelevanceExceeded]),
         [i, s] = (0, o.Wu)([eG.ZP], () => [eG.ZP.hasFetchedMostRecentPremiumTypeSubscription(), eG.ZP.getMostRecentPremiumTypeSubscription()]),
@@ -817,57 +792,58 @@ function tl() {
       }, [l, n, e, i, t, a]), !e && !!l && !a && null != n && n
     }(),
     {
-      analyticsLocations: er
+      analyticsLocations: ea
     } = (0, P.ZP)(A.Z.ACCOUNT),
-    el = (0, es.K)({
+    eo = (0, es.K)({
       location: "Account",
-      user: t
+      user: s
     }),
-    ea = (0, eg.Ws)({
+    em = (0, eg.Ws)({
       location: e8.dr.CONFLICT_CHECKS
     }),
     {
-      isEligibleForCustomStatusLabels: eo
+      isEligibleForCustomStatusLabels: eh
     } = (0, H.Z)({
       location: "AccountConnected"
     }),
-    em = {
+    ef = {
       avatar: [],
       settings: []
     };
-  return !R && (ei && em.settings.push(c.z.PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2), B && (1 === M ? em.settings.push(c.z.USER_SAFETY_CONSUMER_EDUCATION_MUTE) : em.settings.push(c.z.USER_SAFETY_CONSUMER_EDUCATION_BLOCK)), et && em.settings.push(c.z.SOUNDBOARD_VOLUME_EDUCATION), U && em.settings.push(c.z.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK), V && em.avatar.push(c.z.PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP), W && em.avatar.push(c.z.EXPIRING_STATUS_COACHMARK), eo && em.avatar.push(c.z.CUSTOM_STATUS_PROMPTS_COACHMARK)), (0, i.jsx)(P.Gt, {
-    value: er,
+  return !k && (el && ef.settings.push(c.z.PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2), U && (1 === V ? ef.settings.push(c.z.USER_SAFETY_CONSUMER_EDUCATION_MUTE) : ef.settings.push(c.z.USER_SAFETY_CONSUMER_EDUCATION_BLOCK)), er && ef.settings.push(c.z.SOUNDBOARD_VOLUME_EDUCATION), G && ef.settings.push(c.z.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK), F && ef.avatar.push(c.z.PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP), K && ef.avatar.push(c.z.EXPIRING_STATUS_COACHMARK), eh && ef.avatar.push(c.z.CUSTOM_STATUS_PROMPTS_COACHMARK)), (0, i.jsx)(P.Gt, {
+    value: ea,
     children: (0, i.jsx)(tr, {
-      currentUser: t,
-      activities: s,
-      applicationStream: d,
-      voiceChannel: p,
-      dismissibleContents: em,
-      visibleRecurringAvatarDc: Y,
-      markRecurringAvatarDcAsDismissed: K,
-      userTag: m,
-      hidePrivateData: g,
-      occluded: R,
-      premiumSubscription: I,
-      selfDeaf: E,
-      selfMute: _,
-      serverDeaf: S,
-      serverMute: h,
-      speaking: u,
-      speakingWhileMuted: N,
-      status: a,
-      streaming: l,
-      suppress: x,
-      webBuildOverride: T,
-      awaitingRemote: k,
-      isEligibleForPomelo: D,
-      simplifiedCallSettingsEnabled: F,
-      voiceActivityStatusEnabled: G,
-      nameplate: el,
-      selectedGuildId: L,
-      customStatusRTCEntrypointEnabled: q,
-      customStatusHoverOnlyRTCEntrypointEnabled: Q,
-      isQuestBarEmpty: ea
+      currentUser: s,
+      activities: a,
+      applicationStream: m,
+      voiceChannel: _,
+      dismissibleContents: ef,
+      visibleRecurringAvatarDc: q,
+      markRecurringAvatarDcAsDismissed: Q,
+      userTag: p,
+      hidePrivateData: h,
+      occluded: k,
+      premiumSubscription: y,
+      selfDeaf: T,
+      selfMute: E,
+      serverDeaf: I,
+      serverMute: x,
+      speaking: g,
+      speakingWhileMuted: R,
+      status: u,
+      streaming: d,
+      suppress: S,
+      webBuildOverride: N,
+      awaitingRemote: B,
+      isEligibleForPomelo: L,
+      simplifiedCallSettingsEnabled: Y,
+      voiceActivityStatusEnabled: W,
+      nameplate: eo,
+      selectedGuildId: M,
+      customStatusRTCEntrypointEnabled: $,
+      customStatusHoverOnlyRTCEntrypointEnabled: et,
+      isQuestBarEmpty: em,
+      panelAboveOpen: n
     })
   })
 }
