@@ -17,8 +17,8 @@ var r = n(255367),
   p = n(70097),
   y = n(507808),
   h = n(43747),
-  O = n(511050),
-  j = n(82856),
+  j = n(511050),
+  O = n(82856),
   v = n(272008),
   g = n(497505),
   C = n(46140),
@@ -40,14 +40,14 @@ function R() {
     m = (0, u.ZP)(),
     y = (0, i.apv)(m),
     h = y ? k.Z : Z.Z,
-    O = y ? N.Z : E.Z;
+    j = y ? N.Z : E.Z;
   a.useEffect(() => {
     if (!t && !e) {
       var n;
       null == (n = b.current) || n.play()
     }
   }, [t, e]);
-  let j = (0, i.q_F)({
+  let O = (0, i.q_F)({
     from: {
       y: 50
     },
@@ -61,7 +61,7 @@ function R() {
   });
   return (0, r.jsxs)(l.animated.div, {
     className: _.videoLayers,
-    style: j,
+    style: O,
     children: [!c && (0, r.jsx)("div", {
       className: _.videoPlaceholder
     }), (0, r.jsx)(p.Z, {
@@ -75,7 +75,7 @@ function R() {
       }),
       controls: !1,
       children: (0, r.jsx)("source", {
-        src: O,
+        src: j,
         type: "video/webm"
       })
     }), (0, r.jsx)(p.Z, {
@@ -208,15 +208,10 @@ function A(e) {
     }, [e, n]), "error" === r) ? r : "success" === r && (o || u) ? "success" : "loading"
   }(c.id, c.preview, l.location), {
     openIntroToOrbsClaimedCoachmark: u
-  } = (0, O.Z)({
+  } = (0, j.Z)({
     location: "QuestsOrbsRewardModal"
-  }), f = a.useCallback(async function() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-    await (0, j.vp)({
-      hideImmediately: e
-    }), o()
-  }, [o]), p = a.useCallback(() => {
-    f(!0), (0, y.Y)({
+  }), f = a.useCallback(() => {
+    o(), (0, y.Y)({
       pageType: x.ZY5.GLOBAL_DISCOVERY_QUESTS,
       sectionType: x.jXE.ORBS_REWARD_MODAL,
       ctaObject: x.qAy.CTA_TO_ORBS_SHOP
@@ -228,37 +223,41 @@ function A(e) {
     }), u({
       delayMS: 300
     })
-  }, [f, u, c.id]);
-  return (0, r.jsx)(I, (t = function(e) {
-    for (var t = 1; t < arguments.length; t++) {
-      var n = null != arguments[t] ? arguments[t] : {},
-        r = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), r.forEach(function(t) {
-        var r;
-        r = n[t], t in e ? Object.defineProperty(e, t, {
-          value: r,
-          enumerable: !0,
-          configurable: !0,
-          writable: !0
-        }) : e[t] = r
-      })
-    }
-    return e
-  }({}, l), n = n = {
-    balance: s,
-    onClose: f,
-    onSubmit: p,
-    state: i
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(n)).forEach(function(e) {
-    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-  }), t))
+  }, [o, u, c.id]);
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(O.o, {
+      onClose: o
+    }), (0, r.jsx)(I, (t = function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
+            enumerable: !0,
+            configurable: !0,
+            writable: !0
+          }) : e[t] = r
+        })
+      }
+      return e
+    }({}, l), n = n = {
+      balance: s,
+      onClose: o,
+      onSubmit: f,
+      state: i
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+      var n = Object.keys(e);
+      if (Object.getOwnPropertySymbols) {
+        var r = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, r)
+      }
+      return n
+    })(Object(n)).forEach(function(e) {
+      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+    }), t)), ";"]
+  })
 }

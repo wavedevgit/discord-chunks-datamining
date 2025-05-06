@@ -13,9 +13,10 @@ let o = e => {
     overrideTitle: s,
     overrideDescription: a,
     shouldShowPromotionalExperience: c,
-    onCloseCallback: u,
-    itemConsumed: d,
-    purchaseType: h = l.o8.FIAT
+    shouldCheckoutWithOrbs: u,
+    onCloseCallback: d,
+    itemConsumed: h,
+    purchaseType: p = l.o8.FIAT
   } = e;
   (0, i.ZDy)(async () => {
     let {
@@ -44,10 +45,11 @@ let o = e => {
       overrideTitle: s,
       overrideDescription: a,
       shouldShowPromotionalExperience: c,
-      itemConsumed: d,
-      purchaseType: h
+      shouldCheckoutWithOrbs: u,
+      itemConsumed: h,
+      purchaseType: p
     }, n))
   }, {
-    onCloseCallback: u
+    onCloseCallback: d
   })
 }

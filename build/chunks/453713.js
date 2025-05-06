@@ -88,14 +88,14 @@ let O = s()(e => {
       isPurchased: j
     } = (0, g.L)(n), y = (0, c.JA)("shop-variants-group-".concat(t.storeListingId, "-").concat(a)), {
       onFocus: S
-    } = y, k = v(y, ["onFocus"]), P = l.useCallback(e => {
+    } = y, P = v(y, ["onFocus"]), E = l.useCallback(e => {
       e.preventDefault(), e.stopPropagation(), (0, f.$)(t, a), S()
     }, [S, t, a]);
     return (0, r.jsx)(b.ua7, {
       text: h.intl.string(h.t["6cfuDg"]),
       "aria-label": !1,
       shouldShow: !x && j,
-      children: e => (0, r.jsx)(b.P3F, C(_({}, k), {
+      children: e => (0, r.jsx)(b.P3F, C(_({}, P), {
         tag: "li",
         onMouseEnter: () => {
           var t;
@@ -113,9 +113,9 @@ let O = s()(e => {
           var t;
           p(), null == (t = e.onMouseLeave) || t.call(e)
         },
-        onClick: P,
+        onClick: E,
         onKeyDown: e => {
-          e.key === u.R8.ENTER && P(e)
+          e.key === u.R8.ENTER && E(e)
         },
         className: m.colorVariant,
         children: (0, r.jsx)("div", {
@@ -145,11 +145,11 @@ let O = s()(e => {
       minimal: d,
       purchases: g,
       alternativeBackgroundColor: O
-    } = e, j = (0, f.o)(l, g), y = o.previewingVariantIndex, S = null == (t = l.variants) ? void 0 : t[j], k = null !== y ? null == (n = l.variants) ? void 0 : n[y] : void 0, P = (0, p.Z)("shop-variants-group-".concat(l.storeListingId), u.hy.HORIZONTAL);
+    } = e, j = (0, f.o)(l, g), y = o.previewingVariantIndex, S = null == (t = l.variants) ? void 0 : t[j], P = null !== y ? null == (n = l.variants) ? void 0 : n[y] : void 0, E = (0, p.Z)("shop-variants-group-".concat(l.storeListingId), u.hy.HORIZONTAL);
     if (null == S) return null;
-    let E = null != k ? k.variantLabel : null == S ? void 0 : S.variantLabel;
+    let k = null != P ? P.variantLabel : null == S ? void 0 : S.variantLabel;
     return (0, r.jsx)(c.bG, {
-      navigator: P,
+      navigator: E,
       children: (0, r.jsx)(c.SJ, {
         children: e => {
           var t, {
@@ -184,7 +184,7 @@ let O = s()(e => {
               variant: "text-xs/medium",
               color: "text-secondary",
               className: m.variantLabel,
-              children: d ? h.intl.string(h.t.wbgaj4) : E
+              children: d ? h.intl.string(h.t.wbgaj4) : k
             })]
           }))
         }

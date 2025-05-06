@@ -41,7 +41,7 @@ let h = (e, t) => {
       return (null != (a = null == (r = (0, u.Vw)(e, t, !1)) ? void 0 : r.amount) ? a : 0) - (null != (i = null == (l = (0, u.Vw)(n, t, !1)) ? void 0 : l.amount) ? i : 0)
     })) : _ === i.m.RECOMMENDED ? S(v(l)) : _ === i.m.POPULAR && S(v(h))
   }, [_, t, v, O, l, h, S]);
-  let k = r.useCallback(() => {
+  let P = r.useCallback(() => {
     y(a().shuffle(j)), C(null)
   }, [j]);
   return {
@@ -64,7 +64,7 @@ let h = (e, t) => {
         label: g.intl.string(g.t.JrlKlp)
       }), e
     }, [m]),
-    shuffleProducts: k,
+    shuffleProducts: P,
     showRecommendationOption: m
   }
 }

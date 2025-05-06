@@ -31,14 +31,14 @@ let j = e => {
     handleTransition: l,
     numVisibleItems: j,
     tab: y
-  } = e, S = (0, i.e7)([c.default], () => c.default.getCurrentUser()), k = d.ZP.canUseCollectibles(S), P = (0, f.s)("useShopHomeSorting") && y === C.AW.HOME, {
-    sortType: E,
+  } = e, S = (0, i.e7)([c.default], () => c.default.getCurrentUser()), P = d.ZP.canUseCollectibles(S), E = (0, f.s)("useShopHomeSorting") && y === C.AW.HOME, {
+    sortType: k,
     setSortType: w,
     sortedItems: B,
     sortOptions: T,
     shuffleProducts: I,
     showRecommendationOption: L
-  } = (0, g.N)(n, k), N = (0, _.St)(B);
+  } = (0, g.N)(n, P), N = (0, _.St)(B);
   return null == S ? null : (0, r.jsxs)("div", {
     className: a()(x.popularPicksSection, x.centeredSection),
     children: [(0, r.jsxs)("div", {
@@ -95,7 +95,7 @@ let j = e => {
         })]
       }), (0, r.jsxs)("div", {
         className: x.headerRight,
-        children: [P && (0, r.jsxs)(r.Fragment, {
+        children: [E && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(o.Text, {
             variant: "text-xs/bold",
             className: x.sortByText,
@@ -104,10 +104,10 @@ let j = e => {
             options: T,
             select: e => w(e),
             className: x.sortSelect,
-            isSelected: e => e === E,
+            isSelected: e => e === k,
             serialize: e => e
           })]
-        }), y === C.AW.HOME && (P ? (0, r.jsx)(o.zxk, {
+        }), y === C.AW.HOME && (E ? (0, r.jsx)(o.zxk, {
           color: o.Ttl.PRIMARY,
           look: o.iLD.FILLED,
           onClick: () => I(),

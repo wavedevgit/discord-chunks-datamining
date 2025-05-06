@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  I: () => k
+  I: () => P
 }), n(539854);
 var r = n(255367),
   l = n(73800),
@@ -43,14 +43,14 @@ function S(e) {
   })
 }
 
-function k(e) {
+function P(e) {
   let {
     isFullScreen: t,
     isLayer: n,
     onClose: a,
-    selectedTab: k,
-    handleTransition: P
-  } = e, E = (0, b.ZP)(), w = (0, s.e7)([_.default], () => _.default.getCurrentUser()), B = (null == w ? void 0 : w.isStaff()) || (null == w ? void 0 : w.isStaffPersonal()) || !1, {
+    selectedTab: P,
+    handleTransition: E
+  } = e, k = (0, b.ZP)(), w = (0, s.e7)([_.default], () => _.default.getCurrentUser()), B = (null == w ? void 0 : w.isStaff()) || (null == w ? void 0 : w.isStaffPersonal()) || !1, {
     enabled: T
   } = (0, h.W)({
     location: "collectibles_shop_header_bar"
@@ -66,7 +66,7 @@ function k(e) {
     displayText: j.intl.string(j.t["KUYR+P"])
   });
   let L = n ? v.DR : a,
-    N = k === O.AW.ORBS ? x.ZY5.SHOP_ORBS_TAB : x.ZY5.COLLECTIBLES_SHOP,
+    N = P === O.AW.ORBS ? x.ZY5.SHOP_ORBS_TAB : x.ZY5.COLLECTIBLES_SHOP,
     A = l.useCallback(() => {
       t && (L(), (0, u.Ou)()), (0, g.Y)({
         pageType: N,
@@ -77,7 +77,7 @@ function k(e) {
       })
     }, [L, t, N]);
   return (0, r.jsx)(c.f6W, {
-    theme: E,
+    theme: k,
     children: e => (0, r.jsxs)(p.Z, {
       className: i()(e, y.headerBar, {
         [y.fullscreenHeaderBar]: t
@@ -98,13 +98,14 @@ function k(e) {
           return (0, r.jsx)(S, {
             tab: t,
             displayText: n,
-            selected: k === t,
-            handleTransition: P
+            selected: P === t,
+            handleTransition: E
           }, t)
         })
       }), (T || t) && (0, r.jsxs)("div", {
         className: y.alignedRightContent,
         children: [T && (0, r.jsx)(m.V9, {
+          anchorPillType: t ? "SHOP_FULLSCREEN" : "SHOP",
           analyticsPage: N,
           cardAlignment: m.V9.CardAlignment.END,
           ctaText: j.intl.string(j.t.VC4Mq6),

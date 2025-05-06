@@ -26,9 +26,9 @@ var r = n(255367),
   j = n(594174),
   y = n(626135),
   S = n(74538),
-  k = n(960048),
-  P = n(381585),
-  E = n(597688),
+  P = n(960048),
+  E = n(381585),
+  k = n(597688),
   w = n(328347),
   B = n(744112),
   T = n(951904),
@@ -122,9 +122,9 @@ let J = e => {
       ey = S.ZP.canUseCollectibles(ej),
       {
         categories: eS,
-        isFetchingCategories: ek,
-        fetchCategoriesError: eP,
-        fetchPurchasesError: eE,
+        isFetchingCategories: eP,
+        fetchCategoriesError: eE,
+        fetchPurchasesError: ek,
         claimError: ew,
         refreshCategories: eB
       } = (0, L.ZP)({
@@ -135,13 +135,13 @@ let J = e => {
         tab: a,
         isFullScreen: n
       }),
-      eT = null != (t = null != eP ? eP : eE) ? t : ew;
+      eT = null != (t = null != eE ? eE : ek) ? t : ew;
     (0, v.P)();
     let eI = (0, N.O)(eS),
       eL = l.useRef(null),
       [eN, eA] = l.useState(!1);
     (0, Z.Kp)({
-      isFetchingCategories: ek,
+      isFetchingCategories: eP,
       isLayer: eO,
       initialItemCardRef: eL
     }), l.useEffect(() => {
@@ -153,7 +153,7 @@ let J = e => {
           source: t,
           page_session_id: er,
           page_type: ei === z.AW.CATALOG ? "full" : ei,
-          category: ei === z.AW.HOME || null == (e = E.Z.getCategory(ef)) ? void 0 : e.name
+          category: ei === z.AW.HOME || null == (e = k.Z.getCategory(ef)) ? void 0 : e.name
         })
       }
     }, [et, u, er, ef, eg, eh, eo, ei, ee, en]), l.useEffect(() => {
@@ -218,13 +218,13 @@ let J = e => {
       }) : null != el.current && el.current.scrollTo({
         to: 0
       })
-    }, [el, eU]), eQ = (0, s.e7)([E.Z], () => {
+    }, [el, eU]), eQ = (0, s.e7)([k.Z], () => {
       var e;
-      return null == (e = E.Z.getCategory(ef)) ? void 0 : e.name
+      return null == (e = k.Z.getCategory(ef)) ? void 0 : e.name
     });
     return (0, r.jsx)(g.Gt, {
       value: et,
-      children: (0, r.jsx)(P.k0, {
+      children: (0, r.jsx)(E.k0, {
         newValue: {
           sessionId: er,
           pageCategory: eQ
@@ -261,7 +261,7 @@ let J = e => {
                   if (null != eT) {
                     var t, l;
                     let e = [];
-                    return null != eP ? e.push("shop load fetch categories error: ".concat(eT.message)) : null != eE ? e.push("shop load fetch purchase error: ".concat(eT.message)) : e.push("shop load claim error: ".concat(eT.message)), k.Z.captureMessage(e.join("\n"), {
+                    return null != eE ? e.push("shop load fetch categories error: ".concat(eT.message)) : null != ek ? e.push("shop load fetch purchase error: ".concat(eT.message)) : e.push("shop load claim error: ".concat(eT.message)), P.Z.captureMessage(e.join("\n"), {
                       tags: {
                         isStaff: null != (l = null == ej || null == (t = ej.isStaff()) ? void 0 : t.toString()) ? l : "unknown",
                         preloadEnabled: e$.toString(),
@@ -271,7 +271,7 @@ let J = e => {
                     }), (0, r.jsx)(F.Z, {
                       onRetry: eZ,
                       errorOrigin: F.i.SHOP_PAGE,
-                      errorMessage: null == eP ? void 0 : eP.message
+                      errorMessage: null == eE ? void 0 : eE.message
                     })
                   }
                   switch (e) {
@@ -282,7 +282,7 @@ let J = e => {
                         handleTransition: eY,
                         numVisibleItems: eb,
                         tab: e,
-                        isFetchingCategories: ek
+                        isFetchingCategories: eP
                       });
                     case z.AW.CATALOG:
                       return (0, r.jsx)("div", {
@@ -293,7 +293,7 @@ let J = e => {
                             [X.pageWithPagination]: eG && (null == eI ? void 0 : eI.length) > ez
                           }),
                           children: [(0, r.jsx)(R.Z, {
-                            isFetchingCategories: ek,
+                            isFetchingCategories: eP,
                             sortedCategories: eK,
                             setCategoryRef: eF,
                             isPremiumUser: ey,

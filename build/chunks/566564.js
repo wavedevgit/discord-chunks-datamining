@@ -46,9 +46,9 @@ let j = e => {
       })
     }, [u]);
     let {
-      isFetchingShopHome: k,
-      fetchShopHomeError: P,
-      shopBlocks: E,
+      isFetchingShopHome: P,
+      fetchShopHomeError: E,
+      shopBlocks: k,
       refreshShopHome: w
     } = (0, d.E)(u, {
       noCache: O,
@@ -63,7 +63,7 @@ let j = e => {
       w()
     }, [w]);
     if (l.useEffect(() => {
-        null != P || k || 0 === E.length || (0, b.n)({
+        null != E || P || 0 === k.length || (0, b.n)({
           sessionId: S,
           checkpoint: b.a.SHOP_RENDERED,
           tab: u,
@@ -71,23 +71,23 @@ let j = e => {
           unpublishedCategoriesShown: j,
           cacheDisabled: O
         })
-      }, [P, k, E.length, j, O, S, u, v]), null != P) return (0, r.jsx)(p.Z, {
+      }, [E, P, k.length, j, O, S, u, v]), null != E) return (0, r.jsx)(p.Z, {
       onRetry: B,
       errorOrigin: p.i.SHOP_PAGE,
-      errorMessage: P.message
+      errorMessage: E.message
     });
-    if (k || 0 === E.length) return (0, r.jsxs)("div", {
+    if (P || 0 === k.length) return (0, r.jsxs)("div", {
       className: x.loadingContainer,
       children: [(0, r.jsx)(m.Z, {
-        isLoading: k,
+        isLoading: P,
         handleTransition: n,
         tab: u
       }), (0, r.jsx)(g.Z, {
-        isLoading: k,
+        isLoading: P,
         handleTransition: n,
         categories: []
       }), (0, r.jsx)(h.Z, {
-        isLoading: k,
+        isLoading: P,
         handleTransition: n,
         numVisibleItems: a,
         tab: u
@@ -99,7 +99,7 @@ let j = e => {
       switch (e.type) {
         case o.z.HERO:
           l = (0, r.jsx)(m.Z, {
-            isLoading: k,
+            isLoading: P,
             handleTransition: n,
             heroBlock: e,
             tab: u
@@ -107,7 +107,7 @@ let j = e => {
           break;
         case o.z.FEATURED:
           l = (0, r.jsx)(g.Z, {
-            isLoading: k,
+            isLoading: P,
             handleTransition: n,
             featuredBlockRecord: e
           }, t);
@@ -115,7 +115,7 @@ let j = e => {
         case o.z.FEED:
           let c = e.sortedSkuIds;
           l = (0, r.jsx)(h.Z, {
-            isLoading: k || s,
+            isLoading: P || s,
             handleTransition: n,
             numVisibleItems: a,
             sortedSkuIds: c,
@@ -147,7 +147,7 @@ let j = e => {
       }, t)
     };
     return (0, r.jsx)(r.Fragment, {
-      children: E.map((e, t) => T(e, t))
+      children: k.map((e, t) => T(e, t))
     })
   },
   y = e => {
