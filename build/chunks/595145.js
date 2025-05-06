@@ -22,8 +22,8 @@ var o = t(255367),
   x = t(246946),
   g = t(5192),
   I = t(785717),
-  O = t(221292),
-  v = t(687158),
+  v = t(221292),
+  O = t(687158),
   Z = t(250822),
   P = t(771362),
   C = t(510659),
@@ -36,9 +36,9 @@ var o = t(255367),
   U = t(451834),
   k = t(900927),
   B = t(502762),
-  D = t(530),
-  M = t(4517),
-  V = t(179828),
+  M = t(530),
+  V = t(4517),
+  D = t(179828),
   L = t(993160),
   R = t(693408),
   F = t(661462),
@@ -84,7 +84,7 @@ function K(e) {
     [K]: [n.id]
   } : {}, [K, n.id]);
   (0, d.$)(ep);
-  let em = (0, v.ZP)(n.id, K),
+  let em = (0, O.ZP)(n.id, K),
     eb = (0, i.e7)([j.Z], () => j.Z.getRelationshipType(n.id)),
     e_ = (0, i.e7)([x.Z], () => x.Z.hidePersonalInformation),
     ey = (0, p.p)({
@@ -140,7 +140,7 @@ function K(e) {
                   guildId: K,
                   channelId: W,
                   themeType: H.lY.MODAL_V2
-                }), (0, o.jsx)(M.Z, {
+                }), (0, o.jsx)(V.Z, {
                   location: "UserProfileModalV2",
                   user: n,
                   guildId: K,
@@ -152,7 +152,7 @@ function K(e) {
                 })]
               }), (0, o.jsxs)("div", {
                 className: z.profileBody,
-                children: [(0, o.jsx)(D.Z, {
+                children: [(0, o.jsx)(M.Z, {
                   user: n,
                   onClose: er,
                   className: z.profileUsername,
@@ -194,7 +194,7 @@ function K(e) {
                       guildId: null == em ? void 0 : em.guildId,
                       tooltipDelay: H.vB
                     })
-                  }), null != ef && (0, o.jsx)(V.Z, {
+                  }), null != ef && (0, o.jsx)(D.Z, {
                     user: n,
                     currentUser: t,
                     guild: ef,
@@ -219,7 +219,7 @@ function K(e) {
                       selectedGuildId: K,
                       locale: ex,
                       onApplicationClicked: () => {
-                        (0, O.pQ)({
+                        (0, v.pQ)({
                           action: "PRESS_APP_CONNECTION"
                         }), er()
                       }
@@ -231,7 +231,7 @@ function K(e) {
                       userId: n.id,
                       className: z.profileNote,
                       autoFocus: ee === H.Tb.NOTE,
-                      onUpdate: () => (0, O.pQ)(function(e) {
+                      onUpdate: () => (0, v.pQ)(function(e) {
                         for (var n = 1; n < arguments.length; n++) {
                           var t = null != arguments[n] ? arguments[n] : {},
                             o = Object.keys(t);

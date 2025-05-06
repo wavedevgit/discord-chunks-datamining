@@ -59,7 +59,7 @@ function p(e) {
     section: x,
     subsection: g,
     text: I
-  }, O] = r.useState((t = function(e) {
+  }, v] = r.useState((t = function(e) {
     for (var n = 1; n < arguments.length; n++) {
       var t = null != arguments[n] ? arguments[n] : {},
         o = Object.keys(t);
@@ -103,7 +103,7 @@ function p(e) {
         j({
           action: "PRESS_SECTION",
           section: e
-        }), O(n => {
+        }), v(n => {
           var t;
           return null != (t = b.find(n => n.section === e)) ? t : n
         })
