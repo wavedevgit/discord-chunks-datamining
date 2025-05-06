@@ -188,7 +188,6 @@ let M = (0, a.animated)(d.CJ0),
         playsInline: !0,
         className: _.questSplash,
         controls: !1,
-        poster: $.url,
         ref: ee,
         children: !J && $.isAnimated && (0, r.jsx)("source", {
           src: $.url,
