@@ -22,10 +22,10 @@ function _(e) {
     setTab: t,
     badgeState: l,
     closePopout: _
-  } = e, y = (0, o.Wu)([u.Z], () => u.Z.getInvites()), x = (0, o.e7)([u.Z], () => u.Z.getInviteStatuses()), [E, v] = i.useMemo(() => a().partition(y, e => {
+  } = e, y = (0, o.Wu)([u.Z], () => u.Z.getInvites()), E = (0, o.e7)([u.Z], () => u.Z.getInviteStatuses()), [x, v] = i.useMemo(() => a().partition(y, e => {
     var t;
-    return (null == (t = x[e.invite_id]) ? void 0 : t.joinable) !== !1 && (Date.now() - new Date(e.created_at).getTime()) / 1e3 < e.ttl
-  }), [y, x]);
+    return (null == (t = E[e.invite_id]) ? void 0 : t.joinable) !== !1 && (Date.now() - new Date(e.created_at).getTime()) / 1e3 < e.ttl
+  }), [y, E]);
   return (i.useEffect(() => {
     (0, d.sJ)()
   }), 0 === y.length) ? (0, r.jsxs)("div", {
@@ -102,11 +102,11 @@ function _(e) {
     }), (0, r.jsx)(c.h21, {
       children: (0, r.jsxs)("div", {
         className: g.invitesContainer,
-        children: [E.length > 0 && (0, r.jsxs)(r.Fragment, {
+        children: [x.length > 0 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(b, {
             title: h.intl.string(h.t.yflAJS)
           }), (0, r.jsx)(r.Fragment, {
-            children: E.map(e => (0, r.jsx)(f.Z, {
+            children: x.map(e => (0, r.jsx)(f.Z, {
               invite: e,
               expired: !1
             }, e.invite_id))

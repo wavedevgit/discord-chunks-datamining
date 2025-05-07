@@ -23,13 +23,13 @@ function b(e) {
     canShowReminder: t = !1,
     className: b
   } = e, y = (0, m.Z)(u.Z), {
-    showClipsHeaderEntrypoint: x
+    showClipsHeaderEntrypoint: E
   } = d.NV.useExperiment({
     location: "ClipsButton"
   }, {
     autoTrackExposure: !1
   }), {
-    hasClips: E,
+    hasClips: x,
     hasNewClips: v,
     lastClipsSession: O,
     remindersEnabled: j,
@@ -72,7 +72,7 @@ function b(e) {
       modalKey: g.Qr
     })
   }
-  return (i.useEffect(() => (C ? P() : A(), () => A()), [C, P, A]), x && y && E) ? (0, r.jsxs)(r.Fragment, {
+  return (i.useEffect(() => (C ? P() : A(), () => A()), [C, P, A]), E && y && x) ? (0, r.jsxs)(r.Fragment, {
     children: [null != I && t && j && S && !(0, a.$sL)() && !T && (0, r.jsx)(h.Z, {
       clipIconRef: I,
       lastClipsSession: O,

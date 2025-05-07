@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(626135),
   b = n(585483),
   y = n(358085),
-  x = n(143316),
-  E = n(240126),
+  E = n(143316),
+  x = n(240126),
   v = n(791914),
   O = n(147522),
   j = n(809780),
@@ -36,8 +36,8 @@ function N(e) {
     onJump: Z,
     showTutorial: R,
     setSeenTutorial: k,
-    closePopout: L,
-    badgeState: D
+    closePopout: D,
+    badgeState: L
   } = e, M = i.useRef(null), [U, F] = (0, j.ZP)(M), {
     loadState: B,
     channels: G
@@ -85,9 +85,9 @@ function N(e) {
     _.default.track(C.rMx.OPEN_POPOUT, {
       type: "Inbox"
     })
-  }, []), i.useEffect(() => (m.Z.subscribe("CONNECTION_OPEN", L), () => {
-    m.Z.unsubscribe("CONNECTION_OPEN", L)
-  }), [L]);
+  }, []), i.useEffect(() => (m.Z.subscribe("CONNECTION_OPEN", D), () => {
+    m.Z.unsubscribe("CONNECTION_OPEN", D)
+  }), [D]);
   let z = (0, u.e7)([f.Z], () => f.Z.messageGroupSpacing),
     W = (0, g.Us)({
       location: "Unreads"
@@ -101,9 +101,9 @@ function N(e) {
       children: [(0, r.jsx)(v.Z, {
         tab: d.X.UNREADS,
         setTab: w,
-        badgeState: D,
-        closePopout: L
-      }), (0, r.jsx)(E.Z, {
+        badgeState: L,
+        closePopout: D
+      }), (0, r.jsx)(x.Z, {
         Icon: p.xx7,
         header: S.intl.string(S.t["6XMM+P"]),
         tip: (null == (A = s().os) ? void 0 : A.family) === "OS X" ? S.intl.string(S.t.w9uDOT) : S.intl.string(S.t.BiUJCw)
@@ -118,9 +118,9 @@ function N(e) {
     children: [(0, r.jsx)(v.Z, {
       tab: d.X.UNREADS,
       setTab: w,
-      badgeState: D,
-      closePopout: L,
-      children: (0, r.jsx)(x.Z, {
+      badgeState: L,
+      closePopout: D,
+      children: (0, r.jsx)(E.Z, {
         type: "top-header",
         onClick: V
       })
@@ -236,7 +236,7 @@ function P(e) {
       setTab: t,
       badgeState: n,
       closePopout: i
-    }), (0, r.jsx)(E.Z, {
+    }), (0, r.jsx)(x.Z, {
       Icon: p.xx7,
       disableStars: !0,
       header: S.intl.string(S.t["KG/ynZ"]),

@@ -1,6 +1,6 @@
 /** Chunk was on 2900 **/
 n.d(t, {
-  Z: () => D
+  Z: () => L
 }), n(539854), n(361932), n(187205), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -19,8 +19,8 @@ var r = n(255367),
   _ = n(914498),
   b = n(880251),
   y = n(208444),
-  x = n(835473),
-  E = n(471445),
+  E = n(835473),
+  x = n(471445),
   v = n(111028),
   O = n(601964),
   j = n(592125),
@@ -71,7 +71,7 @@ function k(e) {
   })
 }
 
-function L(e) {
+function D(e) {
   let {
     channel: t,
     guild: n,
@@ -79,7 +79,7 @@ function L(e) {
     textColor: l
   } = e;
   if (null != t && null != n) {
-    let e = (0, E.KS)(t, n);
+    let e = (0, x.KS)(t, n);
     return (0, r.jsxs)("div", {
       className: a()(R.channel, {
         [R.ended]: i
@@ -116,7 +116,7 @@ function L(e) {
   }) : null
 }
 
-function D(e) {
+function L(e) {
   var t, n;
   let l, {
       invite: a,
@@ -137,8 +137,8 @@ function D(e) {
         invite_inviter_id: null == (e = a.inviter) ? void 0 : e.id
       })
     }, [null == (t = a.inviter) ? void 0 : t.id, b.id]),
-    E = (0, c.e7)([C.Z], () => null != a.guild ? C.Z.getGuild(a.guild.id) : null, [a]),
-    v = (0, x.Z)([b.id])[0],
+    x = (0, c.e7)([C.Z], () => null != a.guild ? C.Z.getGuild(a.guild.id) : null, [a]),
+    v = (0, E.Z)([b.id])[0],
     T = (0, c.e7)([p.ZP], () => {
       var e;
       return (null == a ? void 0 : a.channel) != null && (null == (e = p.ZP.getSelfEmbeddedActivityForChannel(a.channel.id)) ? void 0 : e.applicationId) === b.id
@@ -153,9 +153,9 @@ function D(e) {
       })
     }),
     k = j.Z.getChannel(null == (n = a.channel) ? void 0 : n.id),
-    L = (0, c.e7)([S.Z], () => null != k && S.Z.can(A.Plq.USE_EMBEDDED_ACTIVITIES, k), [k]),
+    D = (0, c.e7)([S.Z], () => null != k && S.Z.can(A.Plq.USE_EMBEDDED_ACTIVITIES, k), [k]),
     {
-      analyticsLocations: D
+      analyticsLocations: L
     } = (0, f.ZP)(m.Z.INVITE_EMBED),
     U = (0, c.Wu)([p.ZP], () => null != k ? p.ZP.getEmbeddedActivitiesForChannel(k.id).filter(e => e.applicationId === b.id).flatMap(e => Array.from(e.userIds)) : [], [k, b.id]),
     F = (0, c.Wu)([I.default], () => U.map(e => I.default.getUser(e)).filter(e => null != e), [U]),
@@ -165,28 +165,28 @@ function D(e) {
         action: "accept",
         inviter_id: o.author.id,
         invite_message_id: o.id
-      }, D), d.ZP.acceptInviteAndTransitionToInviteChannel({
+      }, L), d.ZP.acceptInviteAndTransitionToInviteChannel({
         inviteKey: a.code,
         context: u("Invite Button Embed"),
-        analyticsLocations: D
+        analyticsLocations: L
       })
-    }, [a, o, D, u]),
+    }, [a, o, L, u]),
     G = a.state === A.r2o.ACCEPTING,
-    H = null != E;
-  if (null == E) {
+    H = null != x;
+  if (null == x) {
     if (null == a.guild) return (0, r.jsx)(P.Z, {});
-    E = new O.ZP(a.guild)
+    x = new O.ZP(a.guild)
   }
-  let V = H && !L || H && T;
-  return (H && T && (l = Z.intl.string(Z.t.wJNK8P)), L || (l = Z.intl.string(Z.t.hHGrW1)), null == a.code || "" === a.code || null == v) ? null : (0, r.jsx)(f.Gt, {
-    value: D,
+  let V = H && !D || H && T;
+  return (H && T && (l = Z.intl.string(Z.t.wJNK8P)), D || (l = Z.intl.string(Z.t.hHGrW1)), null == a.code || "" === a.code || null == v) ? null : (0, r.jsx)(f.Gt, {
+    value: L,
     children: (0, r.jsx)(M, {
       app: v,
       invite: a,
       activityUsers: F,
       isMember: H,
       channel: k,
-      guild: E,
+      guild: x,
       members: h,
       membersOnline: g,
       isActivityActive: R,
@@ -212,8 +212,8 @@ function M(e) {
     membersOnline: p,
     isActivityActive: m,
     submitting: f,
-    isDisabled: x,
-    tooltip: E,
+    isDisabled: E,
+    tooltip: x,
     handleAcceptInvite: v,
     onView: O
   } = e, j = new URL(a.code, "https://discord.gg").toString(), {
@@ -228,11 +228,11 @@ function M(e) {
       label: s ? m ? Z.intl.string(Z.t.VJlc0d) : Z.intl.string(Z.t.RscU7O) : Z.intl.string(Z.t["2BP08P"]),
       trackingArea: s ? _.j_.PLAY : _.j_.JOIN_SERVER,
       submitting: f,
-      disabledReason: x && null != E ? E : void 0,
+      disabledReason: E && null != x ? x : void 0,
       onClick: v
     }];
     return null != N && e.push(N), e
-  }, [v, m, x, s, f, E, N]);
+  }, [v, m, E, s, f, x, N]);
   return (0, r.jsx)(h.W, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -258,7 +258,7 @@ function M(e) {
   }, P), n = n = {
     info: (0, r.jsxs)("div", {
       className: R.infoWrapper,
-      children: [(0, r.jsx)(L, {
+      children: [(0, r.jsx)(D, {
         channel: c,
         guild: u,
         hasEnded: !m,

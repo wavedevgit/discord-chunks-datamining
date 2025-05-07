@@ -19,8 +19,8 @@ var r = n(255367),
   _ = n(750030),
   b = n(900164),
   y = n(739566),
-  x = n(492593),
-  E = n(453687),
+  E = n(492593),
+  x = n(453687),
   v = n(25015),
   O = n(689674),
   j = n(438075),
@@ -70,8 +70,8 @@ let R = i.memo(function(e) {
     compact: l = !1,
     className: R,
     onContextMenu: k,
-    onClick: L,
-    hideSimpleEmbedContent: D = !0,
+    onClick: D,
+    hideSimpleEmbedContent: L = !0,
     channel: M,
     isGroupStart: U,
     animateAvatar: F,
@@ -96,7 +96,7 @@ let R = i.memo(function(e) {
     content: Y,
     hasSpoilerEmbeds: X
   } = (0, v.Z)(i, {
-    hideSimpleEmbedContent: D,
+    hideSimpleEmbedContent: L,
     allowList: W || K,
     allowHeading: W || K,
     allowLinks: !0,
@@ -110,9 +110,9 @@ let R = i.memo(function(e) {
     enabled: H
   });
   if ((0, b.Z)(i, ei)) return null;
-  let ea = (0, E.iG)(i),
-    eo = (0, E.Gx)(i);
-  return (0, r.jsx)(x.Z, w({
+  let ea = (0, x.iG)(i),
+    eo = (0, x.Gx)(i);
+  return (0, r.jsx)(E.Z, w({
     compact: l,
     className: a()(R, {
       [A.ephemeral]: (0, g.Pv)(i),
@@ -132,7 +132,7 @@ let R = i.memo(function(e) {
       disableInteraction: z
     })),
     onContextMenu: k,
-    onClick: L,
+    onClick: D,
     hasThread: G && null != en && i.hasFlag(P.iLy.HAS_THREAD),
     hasReply: i.type === P.uaV.REPLY,
     "aria-labelledby": ea,

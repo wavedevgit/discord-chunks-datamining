@@ -22,8 +22,8 @@ var r = n(278074),
   _ = n(798628),
   b = n(79390),
   y = n(839963),
-  x = n(897325),
-  E = n(57101),
+  E = n(897325),
+  x = n(57101),
   v = n(562293),
   O = n(981631),
   j = n(388032);
@@ -84,30 +84,30 @@ function T(e, t) {
       selectedAnswerIds: g,
       submitting: b,
       editing: y,
-      showResults: x
+      showResults: E
     } = null != (i = null != t ? t : (0, _.fU)(e.getChannelId(), e.id)) ? i : C,
-    E = e.reactions,
+    x = e.reactions,
     j = !0;
   if (!N(e)) {
     let t = p.Z.getMessage(e.channel_id, e.id);
-    j = !e.isSearchHit && null != t, E = null != (l = null == t ? void 0 : t.reactions) ? l : E
+    j = !e.isSearchHit && null != t, x = null != (l = null == t ? void 0 : t.reactions) ? l : x
   }
   let S = g.size > 0,
-    I = E.some(e => !0 === e.me_vote),
+    I = x.some(e => !0 === e.me_vote),
     T = !y && I,
-    P = T || h || x,
+    P = T || h || E,
     A = m && j && (!I || y || P),
     w = null == (r = u.Z.getChannel(e.getChannelId())) || null == (n = r.getGuildId) ? void 0 : n.call(r),
     Z = null != w ? d.ZP.getSelfMember(w) : null,
     R = (0, s.EY)(Z),
     k = (0, c.b)(Z),
-    L = !b && S && !T && m && !R && !k;
+    D = !b && S && !T && m && !R && !k;
   return {
     poll: o,
     canTapAnswers: A,
     canRemoveVote: T && m && !h,
     canShowVoteCounts: P,
-    canSubmitVote: L,
+    canSubmitVote: D,
     expirationLabel: f,
     hasSelectedAnswer: S,
     hasVoted: T,
@@ -116,11 +116,11 @@ function T(e, t) {
     isExpired: h,
     isInteractive: j,
     isSent: m,
-    reactions: E,
+    reactions: x,
     selectedAnswerIds: g,
     submitting: b,
     tapShouldOpenVotersModal: P,
-    showResults: x
+    showResults: E
   }
 }
 
@@ -138,7 +138,7 @@ function P(e, t) {
   if (null == v) return;
   let O = l.Z.useReducedMotion,
     C = null == (s = u.Z.getChannel(e.getChannelId())) || null == (n = s.getGuildId) ? void 0 : n.call(s),
-    N = (0, x.E)(v, C),
+    N = (0, E.E)(v, C),
     P = _.answers,
     A = _.layout_type,
     w = T(e, t, {
@@ -149,8 +149,8 @@ function P(e, t) {
     canTapAnswers: Z,
     canRemoveVote: R,
     canShowVoteCounts: k,
-    canSubmitVote: L,
-    expirationLabel: D = j.intl.string(j.t["e+J3JS"]),
+    canSubmitVote: D,
+    expirationLabel: L = j.intl.string(j.t["e+J3JS"]),
     hasSelectedAnswer: M,
     hasVoted: U,
     isEditingVote: F,
@@ -229,7 +229,7 @@ function P(e, t) {
     }
   }), J = (0, r.EQ)({
     isExpired: B,
-    canSubmitVote: L,
+    canSubmitVote: D,
     hasVoted: U,
     isEditingVote: F,
     canRemoveVote: R,
@@ -264,7 +264,7 @@ function P(e, t) {
   })).otherwise(() => ({
     label: j.intl.string(j.t.JwkNU1),
     presentation: "button",
-    enabled: L,
+    enabled: D,
     type: "submit"
   })), $ = (0, g.isIOS)() ? j.intl.string(j.t.PVATMz) : j.intl.string(j.t.cHfFqq), ee = (0, r.EQ)({
     isExpired: B,
@@ -286,7 +286,7 @@ function P(e, t) {
     type: "cancel"
   })).otherwise(() => ({
     label: X,
-    secondaryLabel: D,
+    secondaryLabel: L,
     accessibilityHint: $,
     presentation: "text",
     enabled: !0,
@@ -326,7 +326,7 @@ function P(e, t) {
     }, () => y.Y7.CHECKBOXES).exhaustive(),
     answerTapAccessibilityLabel: W ? $ : void 0,
     layoutType: A,
-    resources: (0, E.Z)({
+    resources: (0, x.Z)({
       theme: d,
       layoutType: A
     }),

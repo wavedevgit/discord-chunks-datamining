@@ -1,6 +1,6 @@
 /** Chunk was on 2900 **/
 n.d(t, {
-  Z: () => E
+  Z: () => x
 }), n(997841), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -19,10 +19,10 @@ var r = n(255367),
   _ = n(358595),
   b = n(981631),
   y = n(388032),
-  x = n(273254);
+  E = n(273254);
 
-function E(e) {
-  var t, E, v;
+function x(e) {
+  var t, x, v;
   let O, j, C, {
       onTransitionToInviteChannel: S,
       onAcceptInstantInvite: I,
@@ -37,14 +37,14 @@ function E(e) {
       approximate_member_count: R,
       approximate_presence_count: k
     } = T,
-    L = T.state === b.r2o.ACCEPTING,
-    D = null != Z ? (0, m.jD)(Z) : null,
+    D = T.state === b.r2o.ACCEPTING,
+    L = null != Z ? (0, m.jD)(Z) : null,
     M = null != N,
-    U = null != D,
-    F = null != D && D.isGuildVocal(),
-    B = null != D && D.isGuildStageVoice(),
+    U = null != L,
+    F = null != L && L.isGuildVocal(),
+    B = null != L && L.isGuildStageVoice(),
     G = (0, f.yE)(null != (t = T.flags) ? t : 0, l.$.IS_GUEST_INVITE),
-    H = null != (E = null == N ? void 0 : N.hasFeature(b.oNc.HUB)) && E,
+    H = null != (x = null == N ? void 0 : N.hasFeature(b.oNc.HUB)) && x,
     V = null == N ? void 0 : N.id,
     {
       analyticsLocations: z
@@ -76,7 +76,7 @@ function E(e) {
     isStream: !1
   });
   return j = (0, r.jsxs)("span", {
-    className: x.infoTitle,
+    className: E.infoTitle,
     children: [(0, r.jsx)(u.Z, {
       guildId: N.id,
       name: N.name,
@@ -86,7 +86,7 @@ function E(e) {
         guild: N
       })
     }), (0, r.jsx)("span", {
-      className: x.infoBadge,
+      className: E.infoBadge,
       children: (0, r.jsx)(d.Z, {
         guild: N,
         isBannerVisible: !1,
@@ -94,21 +94,21 @@ function E(e) {
       })
     })]
   }), G && (C = (0, r.jsx)(a.DY3, {
-    className: x.tooltipContainer,
+    className: E.tooltipContainer,
     text: y.intl.string(y.t["/FeTKy"]),
     children: (0, r.jsx)(a.d3s, {
       size: "md",
       color: "currentColor",
-      className: x.infoIcon
+      className: E.infoIcon
     })
   })), F ? (j = (0, r.jsx)(p.Z.Channel, {
-    channel: D
+    channel: L
   }), O = (0, r.jsxs)("span", {
-    className: x.infoTitle,
+    className: E.infoTitle,
     children: [y.intl.format(y.t["2wimj4"], {
       guildName: N.name
     }), (0, r.jsx)("span", {
-      className: x.infoBadge,
+      className: E.infoBadge,
       children: (0, r.jsx)(d.Z, {
         guild: N,
         isBannerVisible: !1
@@ -118,7 +118,7 @@ function E(e) {
     members: R,
     membersOnline: k
   }) : U && (O = (0, r.jsx)(p.Z.Channel, {
-    channel: D,
+    channel: L,
     guild: N
   })), (0, r.jsxs)(p.Z, {
     children: [(0, r.jsx)(p.Z.GuildSplash, {
@@ -128,7 +128,7 @@ function E(e) {
       extra: C
     }), (0, r.jsxs)(p.Z.Body, {
       children: [(0, r.jsxs)("div", {
-        className: x.headerLine,
+        className: E.headerLine,
         children: [(0, r.jsx)(p.Z.Icon, {
           guild: N
         }), (0, r.jsx)(p.Z.Info, {
@@ -138,13 +138,13 @@ function E(e) {
         })]
       }), (0, r.jsx)(p.Z.Button, {
         onClick: q,
-        submitting: L,
+        submitting: D,
         color: p.Z.Button.Colors.GREEN,
         children: F ? B ? y.intl.string(y.t["7vb2cX"]) : y.intl.string(y.t.gpqgam) : M ? y.intl.string(y.t.cEnaW1) : y.intl.string(y.t.XpeFYm)
       })]
     }), N.hasFeature(b.oNc.HUB) && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: x.separator
+        className: E.separator
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",

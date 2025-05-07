@@ -43,7 +43,7 @@ function m(e) {
       hideTimestamp: b = !1,
       withFooter: y = !1
     } = e,
-    x = function(e, t) {
+    E = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -58,15 +58,15 @@ function m(e) {
       }
       return i
     }(e, ["message", "channel", "content", "className", "compact", "popoutProps", "hideTimestamp", "withFooter"]);
-  let E = (0, o.ZP)(i),
-    v = (0, a.Z)(E);
+  let x = (0, o.ZP)(i),
+    v = (0, a.Z)(x);
   return (0, r.jsx)("div", {
     className: l()({
       [d.withFooter]: y
     }, d.embedCard, {
       [d.compact]: g
     }, h),
-    children: (0, r.jsx)(s.Z, (t = p({}, x), n = n = {
+    children: (0, r.jsx)(s.Z, (t = p({}, E), n = n = {
       className: l()(d.messageContainer, {
         [d.compact]: g
       }),
@@ -80,7 +80,7 @@ function m(e) {
       childrenHeader: (0, r.jsx)(u.ZP, p({
         message: i,
         channel: m,
-        author: E,
+        author: x,
         guildId: null == m ? void 0 : m.guild_id,
         compact: g,
         hideTimestamp: b,

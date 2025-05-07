@@ -16,8 +16,8 @@ var r, i, l, a = n(392711),
   _ = n(580130),
   b = n(55563),
   y = n(981631);
-let x = "DetectedOffPlatformPremiumPerksStore",
-  E = {},
+let E = "DetectedOffPlatformPremiumPerksStore",
+  x = {},
   v = {},
   O = [];
 
@@ -39,7 +39,7 @@ function j() {
       b.Z.isFetching(t) || b.Z.didFetchingSkuFail(t) || p.$N(r.id, t);
       continue
     }
-    _.Z.applicationIdsFetching.has(r.id) || _.Z.isEntitledToSku(g.default.getCurrentUser(), t, r.id, r.id) || !i.available ? null != E[t] && (delete E[t], e = !0) : (E[t] = {
+    _.Z.applicationIdsFetching.has(r.id) || _.Z.isEntitledToSku(g.default.getCurrentUser(), t, r.id, r.id) || !i.available ? null != x[t] && (delete x[t], e = !0) : (x[t] = {
       skuId: t,
       applicationId: n
     }, e = !0)
@@ -49,10 +49,10 @@ function j() {
 class C extends(r = s.ZP.Store) {
   initialize() {
     var e;
-    this.waitFor(h.ZP, b.Z, _.Z), O = null != (e = c.K.get(x)) ? e : O
+    this.waitFor(h.ZP, b.Z, _.Z), O = null != (e = c.K.get(E)) ? e : O
   }
   getDetectedOffPlatformPremiumPerks() {
-    return o().values(E)
+    return o().values(x)
   }
 }
 l = "DetectedOffPlatformPremiumPerksStore", (i = "displayName") in C ? Object.defineProperty(C, i, {
@@ -63,7 +63,7 @@ l = "DetectedOffPlatformPremiumPerksStore", (i = "displayName") in C ? Object.de
 }) : C[i] = l;
 let S = new C(u.Z, {
   LOGOUT: function() {
-    E = {}, v = {}
+    x = {}, v = {}
   },
   SKU_FETCH_SUCCESS: j,
   ENTITLEMENT_FETCH_APPLICATION_SUCCESS: j,
@@ -73,8 +73,8 @@ let S = new C(u.Z, {
     let {
       skuId: t
     } = e;
-    if (delete E[t], O.includes(t)) return !1;
-    O.push(t), c.K.set(x, O)
+    if (delete x[t], O.includes(t)) return !1;
+    O.push(t), c.K.set(E, O)
   },
   RUNNING_GAMES_CHANGE: function() {
     let e = !1;

@@ -17,8 +17,8 @@ var r, i, l = n(255367),
   _ = n(417363),
   b = n(941128),
   y = n(780570),
-  x = n(358085),
-  E = n(814225),
+  E = n(358085),
+  x = n(814225),
   v = n(346329),
   O = n(701560),
   j = n(981631),
@@ -110,7 +110,7 @@ class Z extends(r = a.Component) {
     if (e.isHidden()) return "add_to_library";
     if (e.isPreorder()) return "preorder_wait";
     let r = null != n ? A[n] : null;
-    return null != r ? r : null != t && t.type === j.vxO.UNINSTALLING ? "uninstalling" : (0, x.isWeb)() ? "play" : "unsupported_os"
+    return null != r ? r : null != t && t.type === j.vxO.UNINSTALLING ? "uninstalling" : (0, E.isWeb)() ? "play" : "unsupported_os"
   }
   renderPlayButton() {
     let {
@@ -207,7 +207,7 @@ class Z extends(r = a.Component) {
     } = this.props, n = this.getButtonState();
     if ("play" === n) return this.renderPlayButton();
     if ("preorder_wait" === n) return this.renderDisabledButton(n, function(e) {
-      let t = E.en(e.sku);
+      let t = x.en(e.sku);
       return null != t ? C.intl.formatToPlainString(C.t.Aqe2ZG, {
         date: t
       }) : null

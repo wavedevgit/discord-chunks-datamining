@@ -38,7 +38,7 @@ function y(e) {
   return e
 }
 
-function x(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,7 +50,7 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let E = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
+let x = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
   v = e => {
     null != e && s.ZP.trackWithMetadata(g.rMx.EXPRESSION_TOOLTIP_VIEWED, {
       type: _.cd.STICKER_IN_MESSAGE_HOVER,
@@ -84,7 +84,7 @@ let E = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
         onRequestClose: () => {
           m(!0)
         },
-        renderPopout: e => (0, r.jsx)(h.Z, x(y({}, e), {
+        renderPopout: e => (0, r.jsx)(h.Z, E(y({}, e), {
           renderableSticker: t,
           channel: n,
           refreshPositionKey: () => _(String(Date.now()))
@@ -94,14 +94,14 @@ let E = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
           let {
             onClick: n
           } = e;
-          return (0, r.jsx)(a.ua7, x(y({}, u.b_), {
+          return (0, r.jsx)(a.ua7, E(y({}, u.b_), {
             shouldShow: d,
             text: (0, u.Y)(C),
             "aria-label": !1,
             onTooltipShow: () => {
               v(O)
             },
-            children: e => (0, r.jsx)(a.P3F, x(y({}, e), {
+            children: e => (0, r.jsx)(a.P3F, E(y({}, e), {
               innerRef: s,
               className: b.clickableSticker,
               onClick: e => {
@@ -110,7 +110,7 @@ let E = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
               tag: "span",
               children: (0, r.jsx)(f.Z, {
                 isInteracting: l,
-                size: E,
+                size: x,
                 sticker: null != O ? O : t
               })
             }))

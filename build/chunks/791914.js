@@ -26,8 +26,8 @@ function _(e) {
     badgeState: b,
     closePopout: y
   } = e, {
-    enabled: x,
-    inInbox: E
+    enabled: E,
+    inInbox: x
   } = d.Z.useExperiment({
     location: "RecentsPopout"
   }), v = (0, m.Us)({
@@ -89,7 +89,7 @@ function _(e) {
             color: s.Z.STATUS_DANGER,
             className: g.iconBadge
           }) : null]
-        }) : null, x && E ? (0, r.jsx)(a.njP.Item, {
+        }) : null, E && x ? (0, r.jsx)(a.njP.Item, {
           "aria-label": h.intl.string(h.t["2pAkDA"]),
           id: l.X.BOOKMARKS,
           className: g.tab,

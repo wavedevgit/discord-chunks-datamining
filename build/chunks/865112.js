@@ -1,7 +1,7 @@
 /** Chunk was on 2900 **/
 n.d(t, {
   RB: () => O,
-  VH: () => x,
+  VH: () => E,
   Vi: () => j,
   Vu: () => C,
   q7: () => v
@@ -29,7 +29,7 @@ let y = {
     NEW_MESSAGE: h,
     GAME_RELATIONSHIP: p
   },
-  x = {
+  E = {
     MISSED_MESSAGES: f,
     FRIEND_REQUEST_REMINDER: d,
     SCHEDULED_GUILD_EVENT: c,
@@ -40,7 +40,7 @@ let y = {
     ADD_FRIEND: a,
     FIRST_MESSAGE: g
   },
-  E = e => {
+  x = e => {
     switch (e.item_enum) {
       case i.AM.ADD_FRIEND:
         return "ADD_FRIEND";
@@ -57,7 +57,7 @@ let y = {
   v = e => {
     switch (e.type) {
       case "lifecycle_item":
-        return E(e);
+        return x(e);
       case "missed_messages":
         return "MISSED_MESSAGES";
       case "friend_request_reminder":

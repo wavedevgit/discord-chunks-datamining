@@ -1,6 +1,6 @@
 /** Chunk was on 2900 **/
 n.d(t, {
-  ZP: () => D,
+  ZP: () => L,
   h4: () => w,
   nH: () => Z
 }), n(388685), n(539854);
@@ -21,8 +21,8 @@ var r = n(255367),
   _ = n(294218),
   b = n(703656),
   y = n(210887),
-  x = n(592125),
-  E = n(375954),
+  E = n(592125),
+  x = n(375954),
   v = n(496675),
   O = n(933429),
   j = n(451478),
@@ -153,7 +153,7 @@ let k = u.ZP.connectStores([v.Z], e => {
   }
 })(R);
 
-function L(e) {
+function D(e) {
   let {
     analyticsName: t,
     items: n,
@@ -163,11 +163,11 @@ function L(e) {
     renderHeader: g,
     renderEmptyState: _,
     renderItem: b,
-    getProTip: x,
-    scrollerClassName: E,
+    getProTip: E,
+    scrollerClassName: x,
     className: v,
     listName: w
-  } = e, Z = i.useRef(null), R = (0, m.Z)(w, Z), k = (0, u.e7)([O.ZP], () => O.ZP.hasNotice()), L = (0, u.e7)([j.Z], () => j.Z.windowSize()), D = (0, h.Q3)("ItemsPopout");
+  } = e, Z = i.useRef(null), R = (0, m.Z)(w, Z), k = (0, u.e7)([O.ZP], () => O.ZP.hasNotice()), D = (0, u.e7)([j.Z], () => j.Z.windowSize()), L = (0, h.Q3)("ItemsPopout");
   i.useEffect(() => {
     C.default.track(I.rMx.OPEN_POPOUT, {
       type: t
@@ -222,7 +222,7 @@ function L(e) {
     className: T.scrollingFooterWrap,
     children: _(y.Z.theme)
   }));
-  let G = null == x ? void 0 : x(),
+  let G = null == E ? void 0 : E(),
     H = F && null != G ? (0, r.jsx)("div", {
       className: T.footer,
       children: (0, r.jsx)(f.Z, {
@@ -235,9 +235,9 @@ function L(e) {
       })
     }) : null,
     V = {
-      maxHeight: L.height - 43 - 25
+      maxHeight: D.height - 43 - 25
     };
-  k && (V.maxHeight -= 40), D && (V.maxHeight -= 48);
+  k && (V.maxHeight -= 40), L && (V.maxHeight -= 48);
   let z = null != p && l;
   return (0, r.jsx)("div", {
     className: a()(v, T.messagesPopoutWrap),
@@ -248,7 +248,7 @@ function L(e) {
     children: (0, r.jsxs)(d.y5t, {
       component: g(),
       children: [(0, r.jsxs)(d.Den, {
-        className: a()(T.messagesPopout, E),
+        className: a()(T.messagesPopout, x),
         onScroll: z ? M : void 0,
         ref: Z,
         children: [(0, r.jsx)(c.bG, {
@@ -306,7 +306,7 @@ function L(e) {
   })
 }
 
-function D(e) {
+function L(e) {
   let {
     analyticsName: t,
     onFetch: n,
@@ -325,8 +325,8 @@ function D(e) {
     className: j,
     onCloseMessage: C,
     listName: S
-  } = e, N = (0, u.e7)([E.Z], () => {
-    let e = null != l ? E.Z.getMessages(l.id) : null;
+  } = e, N = (0, u.e7)([x.Z], () => {
+    let e = null != l ? x.Z.getMessages(l.id) : null;
     return null != e && null != e.jumpTargetId && e.loadingMore && null == e.get(e.jumpTargetId)
   });
 
@@ -335,7 +335,7 @@ function D(e) {
       let {
         id: r,
         channel_id: i
-      } = e, l = x.Z.getChannel(i);
+      } = e, l = E.Z.getChannel(i);
       null != l && (p.Z.trackJump(i, r, t), (0, b.uL)(I.Z5c.CHANNEL(l.getGuildId(), i, r))), null == d || d(n)
     }
   }
@@ -346,7 +346,7 @@ function D(e) {
     message: e,
     channel: l
   })), [a, l]);
-  return (0, r.jsx)(L, {
+  return (0, r.jsx)(D, {
     className: j,
     scrollerClassName: O,
     items: A,

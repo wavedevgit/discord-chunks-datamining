@@ -24,8 +24,8 @@ function y(e) {
     onOpen: t,
     onClose: n,
     className: y,
-    "data-jump-section": x
-  } = e, E = i.useRef(null), v = (0, l.e7)([m.default], () => m.default.getCurrentUser()), O = (0, o.Q3)("RecentsButton"), j = i.useRef(null), C = (0, l.e7)([p.ZP], () => (null == v ? void 0 : v.id) != null && p.ZP.getMentionCount(v.id, g.W.NOTIFICATION_CENTER) > 0), {
+    "data-jump-section": E
+  } = e, x = i.useRef(null), v = (0, l.e7)([m.default], () => m.default.getCurrentUser()), O = (0, o.Q3)("RecentsButton"), j = i.useRef(null), C = (0, l.e7)([p.ZP], () => (null == v ? void 0 : v.id) != null && p.ZP.getMentionCount(v.id, g.W.NOTIFICATION_CENTER) > 0), {
     enabled: S
   } = c.Z.useExperiment({
     location: "RecentsButton"
@@ -50,7 +50,7 @@ function y(e) {
           recentsPopoutShown: t
         }), (0, r.jsx)(d.U, {
           location: "inbox-button",
-          targetElementRef: E,
+          targetElementRef: x,
           children: (0, r.jsx)(u.JO, (l = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
@@ -69,7 +69,7 @@ function y(e) {
             }
             return e
           }({}, n), o = o = {
-            ref: E,
+            ref: x,
             className: y,
             onClick: e,
             icon: a.xx7,
@@ -78,7 +78,7 @@ function y(e) {
             tooltip: t ? null : _.intl.string(_.t.GSmTKC),
             selected: t,
             showBadge: C || I || i,
-            "data-jump-section": x
+            "data-jump-section": E
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

@@ -25,8 +25,8 @@ function y(e) {
     guildProductListing: t,
     guildId: n,
     location: y,
-    shouldShowFullDescriptionButton: x = !0,
-    hideRoleTag: E = !1,
+    shouldShowFullDescriptionButton: E = !0,
+    hideRoleTag: x = !1,
     lineClamp: v = 1,
     cardWidth: O,
     cardHeight: j,
@@ -45,7 +45,7 @@ function y(e) {
       guildProductListingId: t.id,
       analyticsLocation: y
     }),
-    L = (0, r.jsx)(h.m, {
+    D = (0, r.jsx)(h.m, {
       product: t,
       guildId: n,
       showEditProduct: w,
@@ -81,12 +81,12 @@ function y(e) {
       sourceAnalyticsLocations: y
     }),
     productType: A,
-    shouldShowFullDescriptionButton: x,
+    shouldShowFullDescriptionButton: E,
     onShowFullDescription: k,
     onTapCard: k,
-    actionMenu: L,
+    actionMenu: D,
     showOpaqueBackground: I,
-    hideRoleTag: E,
+    hideRoleTag: x,
     lineClamp: v,
     cardWidth: O,
     cardHeight: j,

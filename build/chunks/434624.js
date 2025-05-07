@@ -24,8 +24,8 @@ let g = i.memo(function(e) {
         count: _,
         me: b,
         me_burst: y,
-        burst_count: x,
-        burst_colors: E,
+        burst_count: E,
+        burst_colors: x,
         readOnly: v,
         isLurking: O,
         isGuest: j,
@@ -35,9 +35,9 @@ let g = i.memo(function(e) {
       } = e,
       N = S === p.O.BURST,
       T = (0, m.y4)(b, y, S),
-      P = (0, d.v)(N && null != E ? E : []),
+      P = (0, d.v)(N && null != x ? x : []),
       A = i ? h : f,
-      w = N ? x : _,
+      w = N ? E : _,
       Z = (0, u.y)(w, m.aO),
       R = {};
     if (N && null != P) {
@@ -49,7 +49,7 @@ let g = i.memo(function(e) {
       } = P, l = null != (k = (0, o.wK)(null != r ? r : "", i)) ? k : "";
       T && (R.borderColor = r), R.background = l, t = e, n = e
     }
-    let L = {
+    let D = {
       minWidth: Z,
       color: t,
       borderColor: n
@@ -70,7 +70,7 @@ let g = i.memo(function(e) {
         animated: N && c.animated
       }), (0, r.jsx)("div", {
         className: A.reactionCount,
-        style: L,
+        style: D,
         children: w
       })]
     })

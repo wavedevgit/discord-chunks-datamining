@@ -20,8 +20,8 @@ var r, i = n(255367),
   b = n(388032),
   y = n(383195);
 
-function x() {
-  return (x = Object.assign || function(e) {
+function E() {
+  return (E = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -30,7 +30,7 @@ function x() {
   }).apply(this, arguments)
 }
 
-function E(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -76,10 +76,10 @@ function O(e) {
   let {
     primaryColor: Z,
     secondaryColor: R
-  } = (0, p.Z)(null != N ? N : C), k = "linear-gradient(45deg, ".concat(Z, ", ").concat(R, ")"), L = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), D = l.useRef(!1), M = (0, u.O)(e => {
-    if (!1 === D.current && e) {
+  } = (0, p.Z)(null != N ? N : C), k = "linear-gradient(45deg, ".concat(Z, ", ").concat(R, ")"), D = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), L = l.useRef(!1), M = (0, u.O)(e => {
+    if (!1 === L.current && e) {
       var t;
-      null == w || null == (t = w.onView) || t.call(w), (0, g.GF)(w.id, w.linkType, w.referrerId, w.activityCustomId), D.current = !0
+      null == w || null == (t = w.onView) || t.call(w), (0, g.GF)(w.id, w.linkType, w.referrerId, w.activityCustomId), L.current = !0
     }
   }, void 0), U = h.wS && null != T ? (0, i.jsx)(c.zxk, {
     look: c.zxk.Looks.BLANK,
@@ -101,7 +101,7 @@ function O(e) {
       size: "xs",
       color: c.TVs.colors.WHITE.css
     })
-  }) : null, B = null != C, G = null != S && !1 === L, H = B || G, V = 0 === I ? y.bannerAspectRatioBot : y.bannerAspectRatioActivity, z = l.useRef(null), W = l.useCallback(() => {
+  }) : null, B = null != C, G = null != S && !1 === D, H = B || G, V = 0 === I ? y.bannerAspectRatioBot : y.bannerAspectRatioActivity, z = l.useRef(null), W = l.useCallback(() => {
     let e = z.current;
     null != e && ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
   }, []), K = l.useMemo(() => !!G && new URL(S).pathname.endsWith(".gif"), [G, S]);
@@ -181,13 +181,13 @@ function O(e) {
           return s ? (0, i.jsx)(c.ua7, {
             text: l,
             children: e => {
-              var t = x({}, function(e) {
+              var t = E({}, function(e) {
                 if (null == e) throw TypeError("Cannot destructure " + e);
                 return e
               }(e));
-              return (0, i.jsx)(c.zxk, E({}, d, t))
+              return (0, i.jsx)(c.zxk, x({}, d, t))
             }
-          }, n) : (0, i.jsx)(c.zxk, E({}, d), n)
+          }, n) : (0, i.jsx)(c.zxk, x({}, d), n)
         })
       })]
     })]

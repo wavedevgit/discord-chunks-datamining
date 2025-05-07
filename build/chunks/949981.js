@@ -1,6 +1,6 @@
 /** Chunk was on 2900 **/
 n.d(t, {
-  Z: () => x
+  Z: () => E
 }), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -20,15 +20,15 @@ var r = n(255367),
   b = n(388032),
   y = n(273254);
 
-function x(e) {
+function E(e) {
   let t, {
       invite: n,
       message: l,
-      currentUserId: x,
-      onTransitionToInviteChannel: E,
+      currentUserId: E,
+      onTransitionToInviteChannel: x,
       onAcceptInstantInvite: v
     } = e,
-    O = x === l.author.id,
+    O = E === l.author.id,
     j = n.state === _.r2o.ACCEPTING,
     C = (0, o.e7)([m.Z], () => null != n.channel ? m.Z.getChannel(n.channel.id) : null, [n]);
   a()(null == C || C.isPrivate(), "must be a private channel");
@@ -36,13 +36,13 @@ function x(e) {
     analyticsLocations: S
   } = (0, u.ZP)(c.Z.INVITE_EMBED), I = null != C, N = i.useCallback(() => {
     let e = "noop";
-    I ? (E(), e = "transition") : (v(), e = "accept"), (0, s.r$)({
+    I ? (x(), e = "transition") : (v(), e = "accept"), (0, s.r$)({
       invite: n,
       action: e,
       inviter_id: l.author.id,
       invite_message_id: l.id
     }, S)
-  }, [n, l, S, I, E, v]);
+  }, [n, l, S, I, x, v]);
   if (null == C) {
     if (null == n.channel) return (0, r.jsx)(g.Z, {});
     C = (0, p.jD)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
