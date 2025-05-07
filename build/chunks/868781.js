@@ -28,36 +28,38 @@ function h(e) {
     iconClassName: a,
     hideIcon: l = !1,
     hideText: _ = !1,
-    hideTooltip: h = !1
+    hideTooltip: h = !1,
+    canTruncate: m = !0
   } = e, {
-    enabled: m
+    enabled: g
   } = o.c.useExperiment({
     location: "PresenceActivityStatus"
   }, {
     autoTrackExposure: !0
   }), {
-    descriptiveTextEnabled: g
+    descriptiveTextEnabled: E
   } = (0, c.f)({
     location: "PresenceActivityStatus"
   }), {
-    enableTopNavButton: E
+    enableTopNavButton: b
   } = (0, s.Cq)({
     location: "PresenceActivityStatus"
   });
   if (l && _) return null;
   let {
-    text: b,
-    tooltip: y
-  } = (0, u.Z)(t, g || E), O = p(t, m);
+    text: y,
+    tooltip: O
+  } = (0, u.Z)(t, E || b), v = p(t, g);
   return (0, r.jsxs)(r.Fragment, {
-    children: [!l && null != O && (0, r.jsx)(d.Z, {
-      icon: O,
-      tooltipText: _ && !h ? y : void 0,
+    children: [!l && null != v && (0, r.jsx)(d.Z, {
+      icon: v,
+      tooltipText: _ && !h ? O : void 0,
       className: a
     }), !_ && (0, r.jsx)(f.Z, {
       variant: n,
       className: i,
-      children: b
+      canTruncate: m,
+      children: y
     })]
   })
 }

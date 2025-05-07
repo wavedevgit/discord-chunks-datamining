@@ -34,7 +34,7 @@ function S(e) {
     textClassName: T,
     iconClassName: A,
     textSize: N = "xs",
-    animate: C = !0,
+    animateEmoji: C = !0,
     hasQuest: P = !1,
     hideEmoji: R = !1,
     hideTooltip: w = !1
@@ -122,7 +122,7 @@ function S(e) {
     }),
     children: [j(), (0, r.jsx)(s.xv, {
       variant: "text-".concat(N, "/normal"),
-      className: a()(I.text, I.dot, T),
+      className: a()(I.truncated, I.dot, T),
       children: O.l
     }), U(), P && (0, r.jsx)(m.Z, {})]
   })

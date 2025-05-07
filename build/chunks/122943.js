@@ -63,18 +63,19 @@ function b(e) {
     textClassName: i,
     iconClassName: h,
     hideText: g = !1,
-    hideTooltip: b = !1
-  } = e, y = (0, s.vjg)(s.Skl.ONLINE), O = (0, c.ZP)(t), v = t.isDM() || t.isGroupDM(), {
-    enableTopNavButton: I
+    hideTooltip: b = !1,
+    canTruncate: y = !0
+  } = e, O = (0, s.vjg)(s.Skl.ONLINE), v = (0, c.ZP)(t), I = t.isDM() || t.isGroupDM(), {
+    enableTopNavButton: S
   } = (0, u.Cq)({
     location: "VoiceActivityStatus"
-  }), S = () => b || v ? (0, r.jsx)(d.Z, {
+  }), T = () => b || I ? (0, r.jsx)(d.Z, {
     size: "custom",
-    color: y,
+    color: O,
     channel: t,
     className: o()(p.icon, h)
   }) : (0, r.jsx)(s.ua7, {
-    text: O,
+    text: v,
     "aria-label": (0, l.ZP)({
       channel: t
     }),
@@ -84,24 +85,23 @@ function b(e) {
       channel: t,
       className: o()(p.icon, h)
     }))
-  }), T = () => I ? (0, r.jsx)(f.Z, {
-    variant: n,
-    className: i,
-    children: O
-  }) : v ? (0, r.jsx)(f.Z, {
-    variant: n,
-    className: i,
-    children: _.intl.string(_.t["9FaEzs"])
-  }) : t.isGuildStageVoice() ? (0, r.jsx)(f.Z, {
-    variant: n,
-    className: i,
-    children: _.intl.string(_.t.QygGCA)
-  }) : (0, r.jsx)(f.Z, {
-    variant: n,
-    className: i,
-    children: _.intl.string(_.t.msxteH)
-  });
+  }), A = () => {
+    let e = {
+      variant: n,
+      className: i,
+      canTruncate: y
+    };
+    return S ? (0, r.jsx)(f.Z, E(m({}, e), {
+      children: v
+    })) : I ? (0, r.jsx)(f.Z, E(m({}, e), {
+      children: _.intl.string(_.t["9FaEzs"])
+    })) : t.isGuildStageVoice() ? (0, r.jsx)(f.Z, E(m({}, e), {
+      children: _.intl.string(_.t.QygGCA)
+    })) : (0, r.jsx)(f.Z, E(m({}, e), {
+      children: _.intl.string(_.t.msxteH)
+    }))
+  };
   return (0, r.jsxs)(r.Fragment, {
-    children: [S(), !g && T()]
+    children: [T(), !g && A()]
   })
 }

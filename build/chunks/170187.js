@@ -74,17 +74,18 @@ function m(e) {
     children: t,
     className: n,
     variant: i = "text-xs/medium",
-    hideTooltip: u = !1
-  } = e, f = p(e, ["children", "className", "variant", "hideTooltip"]);
+    hideTooltip: u = !1,
+    canTruncate: f = !0
+  } = e, h = p(e, ["children", "className", "variant", "hideTooltip", "canTruncate"]);
   return (0, r.jsx)(a.xv, _(d({
     variant: i,
     color: "none",
-    className: o()(c.text, n)
-  }, f), {
-    children: (0, r.jsx)(s.Z, {
+    className: o()(f ? c.truncated : c.untruncated, n)
+  }, h), {
+    children: f ? (0, r.jsx)(s.Z, {
       delay: l.X,
       shouldShow: !u,
       children: t
-    })
+    }) : t
   }))
 }
