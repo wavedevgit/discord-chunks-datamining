@@ -64,8 +64,8 @@ function D(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let M = (0, l.animated)(d.CJ0),
-  A = (0, l.animated)(h.Z),
+let A = (0, l.animated)(d.CJ0),
+  M = (0, l.animated)(h.Z),
   k = e => {
     var {
       quest: t,
@@ -154,8 +154,8 @@ let M = (0, l.animated)(d.CJ0),
       })
     };
     s.useEffect(() => {
-      $.isAnimated && null != ee.current && (i ? ee.current.play() : i || (ee.current.pause(), ee.current.currentTime = 0))
-    }, [i, $]);
+      $.isAnimated && null != ee.current && (i && !J ? ee.current.play() : i || (ee.current.pause(), ee.current.currentTime = 0))
+    }, [i, J, $]);
     let eu = (0, r.jsx)(O.ZP, {
       className: _.partnerBranding,
       logotypeClassName: ea ? _.partnerBrandingLogotypes : void 0,
@@ -175,7 +175,7 @@ let M = (0, l.animated)(d.CJ0),
       style: {
         height: et ? F : void 0
       },
-      children: [(0, r.jsx)(A, {
+      children: [(0, r.jsx)(M, {
         style: {
           opacity: Z.to({
             range: [0, 1],
@@ -188,8 +188,9 @@ let M = (0, l.animated)(d.CJ0),
         playsInline: !0,
         className: _.questSplash,
         controls: !1,
+        poster: $.isAnimated ? void 0 : $.url,
         ref: ee,
-        children: !J && $.isAnimated && (0, r.jsx)("source", {
+        children: $.isAnimated && (0, r.jsx)("source", {
           src: $.url,
           type: null != (n = $.mimetype) ? n : void 0
         })
@@ -331,7 +332,7 @@ let M = (0, l.animated)(d.CJ0),
             onClick: ec,
             className: _.iconWrapper,
             "aria-label": L ? R.intl.string(R.t.iTcumZ) : R.intl.string(R.t.dcl9MT),
-            children: (0, r.jsx)(M, {
+            children: (0, r.jsx)(A, {
               style: {
                 rotate: Z.to({
                   range: [0, 1],

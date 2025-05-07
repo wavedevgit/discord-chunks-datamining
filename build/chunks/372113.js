@@ -53,7 +53,7 @@ function D(e) {
   return e
 }
 
-function M(e, t) {
+function A(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -65,7 +65,7 @@ function M(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let A = (e, t, n) => (0, S.uq)(e) && !n && "lg" === t ? "text-lg/medium" : "lg" === t ? "text-md/medium" : "sm" === t ? "text-sm/medium" : "text-xs/medium";
+let M = (e, t, n) => (0, S.uq)(e) && !n && "lg" === t ? "text-lg/medium" : "lg" === t ? "text-md/medium" : "sm" === t ? "text-sm/medium" : "text-xs/medium";
 
 function k(e) {
   let {
@@ -116,7 +116,7 @@ function Z(e) {
     tooltipContentClassName: I.ctaTooltipText,
     children: e => {
       var t;
-      return (0, r.jsx)(C, M(D({}, e), {
+      return (0, r.jsx)(C, A(D({}, e), {
         wrapperClassName: I.ctaButtonWrapper,
         color: a.Ttl.BRAND,
         disabled: null == b.onClick,
@@ -179,7 +179,7 @@ let B = e => {
         text: ea ? _.intl.string(_.t["04MTGR"]) : null,
         tooltipContentClassName: I.rewardTileExpirationTooltip,
         shouldShow: ea,
-        children: e => (0, r.jsxs)("div", M(D({
+        children: e => (0, r.jsxs)("div", A(D({
           className: I.rewardTileWrapper
         }, e), {
           children: [E && (0, r.jsx)("div", {
@@ -196,7 +196,7 @@ let B = e => {
       }), (0, r.jsxs)("div", {
         className: o()(I.gridText, I.taskDetails),
         children: [(0, r.jsx)(a.Text, {
-          variant: A(n, i, W),
+          variant: M(n, i, W),
           className: I.taskInstructions,
           children: E ? _.intl.formatToPlainString(_.t["ge+AJi"], {
             questName: t.config.messages.questName
