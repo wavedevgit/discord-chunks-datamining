@@ -38,7 +38,8 @@ function g(e) {
     title: r,
     shouldLoadVideo: s,
     isReducedMotion: o,
-    includeSideGradient: d = !1
+    includeSideGradient: d = !1,
+    startLeftAligned: g = !1
   } = e;
   return (0, i.jsxs)("div", {
     className: l()(u.boxBackdrop, t),
@@ -52,7 +53,7 @@ function g(e) {
       children: n.map((e, t) => (0, i.jsx)(c.Z, m({
         shouldLoadVideo: s,
         isReducedMotion: o,
-        index: t
+        index: t + +!!g
       }, e), e.name))
     }), d && (0, i.jsx)("div", {
       className: u.bentoSideGradient
@@ -71,7 +72,8 @@ let p = r.memo(function(e) {
     }, e)), (0, i.jsx)(g, m({
       boxes: Object.values(n),
       title: d.intl.string(d.t.EnzW2N),
-      includeSideGradient: !0
+      includeSideGradient: !0,
+      startLeftAligned: !0
     }, e))]
   })
 })
