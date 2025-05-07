@@ -161,9 +161,11 @@ function D(e) {
         var t;
         return null != e.current && (s.current = e.current), (0, r.jsx)(f.Z, {
           ref: e,
-          autoPlay: !c && n,
+          autoPlay: !1,
           loop: !0,
           muted: !0,
+          poster: null == d ? void 0 : d.url,
+          preload: "none",
           playsInline: !0,
           className: a()(R.heroAssetVideo, {
             [R.visible]: m
