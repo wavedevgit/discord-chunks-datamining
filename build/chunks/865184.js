@@ -1,4 +1,4 @@
-/** Chunk was on 44114 **/
+/** Chunk was on 20565 **/
 e.exports = {
   orbIconSVG: "orbIconSVG__85200",
   loading: "loading__85200",

@@ -1,4 +1,4 @@
-/** Chunk was on 44114 **/
+/** Chunk was on 69835 **/
 e.exports = {
   colorSwatch: "colorSwatch__2d060",
   disabled: "disabled__2d060",

@@ -1,4 +1,4 @@
-/** Chunk was on 78900 **/
+/** Chunk was on 17218 **/
 n.d(t, {
   Z: () => O
 }), n(388685);
@@ -65,18 +65,18 @@ function O(e) {
     useReducedMotion: A
   }), B = (0, u.O5)(), k = (0, p._s)({
     quest: w
-  }), q = (0, p.z)(w), D = (0, p.B6)(w.config.expiresAt, {
+  }), q = (0, p.z)(w), I = (0, p.B6)(w.config.expiresAt, {
     month: "numeric",
     day: "numeric"
   }), {
-    isClaiming: I,
+    isClaiming: D,
     isEnrolling: M,
     isQuestEnrollmentBlocked: L
   } = (0, i.cj)([m.Z], () => ({
     isClaiming: m.Z.isClaimingReward(w.id) || m.Z.isFetchingRewardCode(w.id),
     isEnrolling: m.Z.isEnrolling(w.id),
     isQuestEnrollmentBlocked: null != m.Z.questEnrollmentBlockedUntil
-  })), Z = (null == (t = w.userStatus) ? void 0 : t.enrolledAt) != null, W = (null == (n = w.userStatus) ? void 0 : n.completedAt) != null, V = W && (null == (s = w.userStatus) ? void 0 : s.claimedAt) == null, Q = (0, g.iQ)(w), U = !(0, g.zi)(w), H = (0, p._Q)(w), F = (0, g.Xv)(w.config), z = (0, g.q8)(w), X = (0, g.Vl)(w), K = (0, p.Rf)(w), [Y, G, J] = (0, p.me)(w, K), $ = U && H === p.OH.ACCEPTED, ee = $ && Y === f.LI.SELECT, et = $ && !ee && G.length > 1, en = o.useCallback(e => {
+  })), Z = (null == (t = w.userStatus) ? void 0 : t.enrolledAt) != null, W = (null == (n = w.userStatus) ? void 0 : n.completedAt) != null, V = W && (null == (s = w.userStatus) ? void 0 : s.claimedAt) == null, Q = (0, g.iQ)(w), U = !(0, g.zi)(w), H = (0, p._Q)(w), z = (0, g.Xv)(w.config), F = (0, g.q8)(w), X = (0, g.Vl)(w), K = (0, p.Rf)(w), [Y, G, J] = (0, p.me)(w, K), $ = U && H === p.OH.ACCEPTED, ee = $ && Y === f.LI.SELECT, et = $ && !ee && G.length > 1, en = o.useCallback(e => {
     J(e), e === j.cd.DESKTOP && P([])
   }, [J, P]), {
     text: er,
@@ -85,11 +85,11 @@ function O(e) {
     progressState: H,
     quest: w,
     location: S,
-    isCollectibleQuest: F,
+    isCollectibleQuest: z,
     questContentPosition: E,
     questContentRowIndex: T,
     inGiftInventory: !0,
-    isVideoQuest: z,
+    isVideoQuest: F,
     inGameQuest: X
   }), {
     startingConsoleQuest: es,
@@ -111,11 +111,11 @@ function O(e) {
   }), ei = (null == (O = w.userStatus) ? void 0 : O.claimedAt) != null, el = null;
   return (Q && V ? el = (0, r.jsx)(l.zxk, {
     color: l.Ttl.BRAND,
-    submitting: I,
+    submitting: D,
     onClick: null != eo ? eo : void 0,
     className: _.button,
     children: er
-  }) : W ? el = z ? (0, r.jsxs)(r.Fragment, {
+  }) : W ? el = F ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.zxk, {
       color: l.Ttl.PRIMARY,
       className: _.button,
@@ -147,7 +147,7 @@ function O(e) {
     children: er
   }) : U ? U && V ? el = (0, r.jsx)(l.zxk, {
     color: l.Ttl.BRAND,
-    submitting: I,
+    submitting: D,
     onClick: null != eo ? eo : void 0,
     className: _.button,
     children: er
@@ -180,7 +180,7 @@ function O(e) {
       className: _.ctaInner,
       children: [R.render(), v.intl.string(v.t.nPThNT)]
     })
-  }) : z || X && w.config.features.includes(j.S7.START_QUEST_CTA) ? (0, r.jsx)(l.zxk, {
+  }) : F || X && w.config.features.includes(j.S7.START_QUEST_CTA) ? (0, r.jsx)(l.zxk, {
     color: l.Ttl.BRAND,
     onClick: null != eo ? eo : void 0,
     className: _.button,
@@ -213,7 +213,7 @@ function O(e) {
     disabled: !0,
     className: _.button,
     children: v.intl.format(v.t["14o6QU"], {
-      expiryDate: D
+      expiryDate: I
     })
   }), null == el) ? null : (0, r.jsxs)("div", {
     className: _.container,

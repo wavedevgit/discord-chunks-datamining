@@ -1,4 +1,4 @@
-/** Chunk was on 78900 **/
+/** Chunk was on 17218 **/
 e.exports = {
   container: "container__956c6",
   rewardDescriptionContainer: "rewardDescriptionContainer__956c6",
@@ -15,6 +15,7 @@ e.exports = {
   questName: "questName__956c6",
   header: "header__956c6",
   headerWithoutMargin: "headerWithoutMargin__956c6",
+  orbsBalanceIcon: "orbsBalanceIcon__956c6",
   description: "description__956c6",
   textOverflowBlur: "textOverflowBlur__956c6"
 }

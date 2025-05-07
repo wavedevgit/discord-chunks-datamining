@@ -1,6 +1,6 @@
-/** Chunk was on 78900 **/
+/** Chunk was on 17218 **/
 n.d(t, {
-  Z: () => F,
+  Z: () => z,
   b: () => Z
 }), n(388685), n(314940);
 var r = n(255367),
@@ -57,7 +57,7 @@ function q(e) {
   return e
 }
 
-function D(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -69,8 +69,8 @@ function D(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = ["png", "gif", "webp"],
-  M = [...I, "jpg", "jpeg"],
+let D = ["png", "gif", "webp"],
+  M = [...D, "jpg", "jpeg"],
   L = Array.from(new Set([...M, "gif", "mp4", "webm"]));
 
 function Z(e) {
@@ -177,9 +177,9 @@ let V = "1193992107035983872",
   };
 
 function U() {
-  var e, t, s, d, u, k, Z, V, U, H, F, z, X, K;
+  var e, t, s, d, u, k, Z, V, U, H, z, F, X, K;
   let [Y, G] = o.useState(Q), J = o.useCallback(e => {
-    G(D(q({}, e), {
+    G(I(q({}, e), {
       preview: !0
     }))
   }, []), [$, ee] = o.useState(R.a.UNENROLLED), [et, en] = o.useState(!1), [er, eo] = o.useState(!1), [es, ea] = o.useState(null), ei = (K = Y.config, (0, i.EQ)(K).with({
@@ -189,12 +189,12 @@ function U() {
   function el(e, t) {
     if ("hero" === e || "questBarHero" === e || "gameTile" === e || "logotype" === e || "heroVideo" === e || "questBarHeroVideo" === e) {
       var n, r;
-      J(D(q({}, Y), {
+      J(I(q({}, Y), {
         config: (n = Y.config, r = {
           [e]: t
         }, (0, i.EQ)(n).with({
           configVersion: 2
-        }, e => D(q({}, e), {
+        }, e => I(q({}, e), {
           assets: q({}, e.assets, r)
         })).exhaustive())
       }))
@@ -203,11 +203,11 @@ function U() {
 
   function ec(e, t) {
     var n, r, o;
-    J(D(q({}, Y), {
-      config: D(q({}, Y.config), {
-        videoMetadata: D(q({}, Y.config.videoMetadata), {
+    J(I(q({}, Y), {
+      config: I(q({}, Y.config), {
+        videoMetadata: I(q({}, Y.config.videoMetadata), {
           messages: null != (o = null == (n = Y.config.videoMetadata) ? void 0 : n.messages) ? o : {},
-          assets: D(q({}, null == (r = Y.config.videoMetadata) ? void 0 : r.assets), {
+          assets: I(q({}, null == (r = Y.config.videoMetadata) ? void 0 : r.assets), {
             [e]: t
           })
         })
@@ -218,12 +218,12 @@ function U() {
   function ed(e, t) {
     if ("questName" === e || "gameTitle" === e || "gamePublisher" === e) {
       var n, r;
-      J(D(q({}, Y), {
+      J(I(q({}, Y), {
         config: (n = Y.config, r = {
           [e]: t
         }, (0, i.EQ)(n).with({
           configVersion: 2
-        }, e => D(q({}, e), {
+        }, e => I(q({}, e), {
           messages: q({}, e.messages, r)
         })).exhaustive())
       }))
@@ -232,11 +232,11 @@ function U() {
 
   function eu(e, t) {
     var n, r, o;
-    J(D(q({}, Y), {
-      config: D(q({}, Y.config), {
-        videoMetadata: D(q({}, Y.config.videoMetadata), {
+    J(I(q({}, Y), {
+      config: I(q({}, Y.config), {
+        videoMetadata: I(q({}, Y.config.videoMetadata), {
           assets: null != (o = null == (n = Y.config.videoMetadata) ? void 0 : n.assets) ? o : {},
-          messages: D(q({}, null == (r = Y.config.videoMetadata) ? void 0 : r.messages), {
+          messages: I(q({}, null == (r = Y.config.videoMetadata) ? void 0 : r.messages), {
             [e]: t
           })
         })
@@ -247,14 +247,14 @@ function U() {
   function ep(e, t, n) {
     if ("name" === e || "nameWithArticle" === e) {
       var r, o;
-      J(D(q({}, Y), {
+      J(I(q({}, Y), {
         config: (r = Y.config, o = {
           [e]: t
         }, (0, i.EQ)(r).with({
           configVersion: 2
-        }, e => D(q({}, e), {
-          rewardsConfig: D(q({}, e.rewardsConfig), {
-            rewards: e.rewardsConfig.rewards.map((e, t) => t === n ? D(q({}, e), {
+        }, e => I(q({}, e), {
+          rewardsConfig: I(q({}, e.rewardsConfig), {
+            rewards: e.rewardsConfig.rewards.map((e, t) => t === n ? I(q({}, e), {
               messages: q({}, e.messages, o)
             }) : e)
           })
@@ -264,9 +264,9 @@ function U() {
   }
 
   function em(e, t) {
-    J(D(q({}, Y), {
-      config: D(q({}, Y.config), {
-        colors: D(q({}, Y.config.colors), {
+    J(I(q({}, Y), {
+      config: I(q({}, Y.config), {
+        colors: I(q({}, Y.config.colors), {
           [e]: t
         })
       })
@@ -318,8 +318,8 @@ function U() {
         taskDuration: eg,
         taskConfig: Y.config.taskConfig,
         onSelect: function(e) {
-          J(D(q({}, Y), {
-            config: D(q({}, Y.config), {
+          J(I(q({}, Y), {
+            config: I(q({}, Y.config), {
               taskConfig: e
             })
           }))
@@ -381,7 +381,7 @@ function U() {
         assetKey: "heroVideo",
         onFileChange: el,
         filters: L,
-        initialValue: null != (z = Y.config.assets.heroVideo) ? z : void 0
+        initialValue: null != (F = Y.config.assets.heroVideo) ? F : void 0
       }), (0, r.jsx)(P.Z, {
         title: "Quest Bar Hero",
         assetKey: "questBarHero",
@@ -404,7 +404,7 @@ function U() {
         title: "Logotype",
         assetKey: "logotype",
         onFileChange: el,
-        filters: [...I, "svg"],
+        filters: [...D, "svg"],
         initialValue: Y.config.assets.logotype
       }), ex && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(P.Z, {
@@ -462,12 +462,12 @@ function U() {
           onFileChange: (e, n) => (function(e, t, n) {
             if ("asset" === e) {
               var r;
-              J(D(q({}, Y), {
+              J(I(q({}, Y), {
                 config: (r = Y.config, (0, i.EQ)(r).with({
                   configVersion: 2
-                }, e => D(q({}, e), {
-                  rewardsConfig: D(q({}, e.rewardsConfig), {
-                    rewards: e.rewardsConfig.rewards.map((e, r) => r === n ? D(q({}, e), {
+                }, e => I(q({}, e), {
+                  rewardsConfig: I(q({}, e.rewardsConfig), {
+                    rewards: e.rewardsConfig.rewards.map((e, r) => r === n ? I(q({}, e), {
                       asset: t,
                       skuId: ""
                     }) : e)
@@ -517,19 +517,19 @@ function U() {
         onChange: function(e) {
           switch (ee(e), e) {
             case R.a.UNENROLLED:
-              J(D(q({}, Y), {
+              J(I(q({}, Y), {
                 userStatus: null
               }));
               break;
             case R.a.ENROLLED:
-              J(D(q({}, Y), {
+              J(I(q({}, Y), {
                 userStatus: W({
                   enrolledAt: new Date().toISOString()
                 })
               }));
               break;
             case R.a.COMPLETED_25:
-              J(D(q({}, Y), {
+              J(I(q({}, Y), {
                 userStatus: W({
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: .25 * eg
@@ -537,7 +537,7 @@ function U() {
               }));
               break;
             case R.a.COMPLETED_50:
-              J(D(q({}, Y), {
+              J(I(q({}, Y), {
                 userStatus: W({
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: .5 * eg
@@ -545,7 +545,7 @@ function U() {
               }));
               break;
             case R.a.COMPLETED_75:
-              J(D(q({}, Y), {
+              J(I(q({}, Y), {
                 userStatus: W({
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: .75 * eg
@@ -553,7 +553,7 @@ function U() {
               }));
               break;
             case R.a.COMPLETED_100:
-              J(D(q({}, Y), {
+              J(I(q({}, Y), {
                 userStatus: W({
                   completedAt: new Date().toISOString(),
                   enrolledAt: new Date().toISOString(),
@@ -562,7 +562,7 @@ function U() {
               }));
               break;
             case R.a.CLAIMED:
-              J(D(q({}, Y), {
+              J(I(q({}, Y), {
                 userStatus: W({
                   claimedAt: new Date().toISOString(),
                   completedAt: new Date().toISOString(),
@@ -624,7 +624,7 @@ function U() {
         withBorder: !0,
         children: [(0, r.jsx)(p.vwX, {
           children: "Channel Call Header"
-        }), (null == (F = Y.userStatus) ? void 0 : F.claimedAt) != null && (0, r.jsx)(p.Text, {
+        }), (null == (z = Y.userStatus) ? void 0 : z.claimedAt) != null && (0, r.jsx)(p.Text, {
           color: "text-secondary",
           variant: "text-sm/normal",
           children: "The Quest Channel Call Header is hidden when the user has claimed the reward."
@@ -689,7 +689,7 @@ function U() {
               } = await Promise.all([n.e("66816"), n.e("32249"), n.e("63942")]).then(n.bind(n, 536687));
               return t => {
                 var n;
-                return (0, r.jsx)(e, D(q({}, t), {
+                return (0, r.jsx)(e, I(q({}, t), {
                   openStartClockTime: performance.now(),
                   videoSessionId: "fake-quest-session-id",
                   questId: null != (n = Y.id) ? n : "fake-quest-id",
@@ -748,4 +748,4 @@ class H extends o.Component {
     })
   }
 }
-let F = H
+let z = H

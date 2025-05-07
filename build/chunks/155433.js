@@ -1,10 +1,10 @@
-/** Chunk was on 48707 **/
-s.d(e, {
-  P: () => i
+/** Chunk was on 69835 **/
+n.d(t, {
+  P: () => s
 });
-var l = s(481060),
-  n = s(388032);
+var i = n(481060),
+  r = n(388032);
 
-function i() {
-  (0, l.showToast)((0, l.createToast)(n.intl.string(n.t["TGg/2t"]), l.ToastType.FAILURE))
+function s() {
+  (0, i.showToast)((0, i.createToast)(r.intl.string(r.t["TGg/2t"]), i.ToastType.FAILURE))
 }

@@ -1,6 +1,6 @@
-/** Chunk was on 78900 **/
+/** Chunk was on 17218 **/
 n.d(t, {
-  Z: () => I
+  Z: () => D
 }), n(784620), n(973216);
 var r = n(255367),
   o = n(73800),
@@ -127,7 +127,7 @@ function q(e) {
   })
 }
 
-function D(e) {
+function I(e) {
   let {
     quest: t,
     isHovering: n
@@ -181,7 +181,7 @@ function D(e) {
   })
 }
 
-function I(e) {
+function D(e) {
   var t, n, s, i, l;
   let {
     quest: u,
@@ -191,7 +191,7 @@ function I(e) {
     onCtxMenuClose: _,
     onCtxMenuOpen: y,
     onCtxMenuSelect: C
-  } = e, w = (0, j.q8)(u), E = (0, p.ZP)(), T = ((0, c.wj)(E) ? N.BRd.DARK : N.BRd.LIGHT) === N.BRd.DARK, I = (0, h.tP)(u), M = (null == (t = u.userStatus) ? void 0 : t.claimedAt) != null, L = (0, h.B6)(u.config.expiresAt, {
+  } = e, w = (0, j.q8)(u), E = (0, p.ZP)(), T = ((0, c.wj)(E) ? N.BRd.DARK : N.BRd.LIGHT) === N.BRd.DARK, D = (0, h.tP)(u), M = (null == (t = u.userStatus) ? void 0 : t.claimedAt) != null, L = (0, h.B6)(u.config.expiresAt, {
     month: "numeric",
     day: "numeric"
   }), Z = (null == (n = u.userStatus) ? void 0 : n.enrolledAt) != null, W = (null == (s = u.userStatus) ? void 0 : s.completedAt) != null, V = o.useCallback(() => {
@@ -204,7 +204,7 @@ function I(e) {
     className: R.container,
     children: [(0, r.jsx)("div", {
       className: R.heroAssetWrapper,
-      children: (0, r.jsx)(D, {
+      children: (0, r.jsx)(I, {
         quest: u,
         isHovering: m
       })
@@ -271,7 +271,7 @@ function I(e) {
             children: A.intl.format(A.t.buEvBw, {
               brandName: null != (l = null == (i = u.config.cosponsorMetadata) ? void 0 : i.name) ? l : u.config.messages.gamePublisher
             })
-          }), I || M ? null : (0, r.jsx)(d.Text, {
+          }), D || M ? null : (0, r.jsx)(d.Text, {
             variant: "text-sm/medium",
             color: T ? "text-muted" : "always-white",
             children: A.intl.format(A.t["7D8r4O"], {

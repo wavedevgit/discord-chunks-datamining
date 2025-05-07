@@ -1,4 +1,4 @@
-/** Chunk was on 78900 **/
+/** Chunk was on 17218 **/
 n.d(t, {
   P: () => B,
   Z: () => k
@@ -87,10 +87,10 @@ function B(e) {
   }), k = (0, l.e7)([g.Z], () => null != g.Z.questEnrollmentBlockedUntil), q = (0, y.qN)({
     quest: s,
     location: P.dr.QUESTS_BAR
-  }), D = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), I = (0, l.e7)([p.Z], () => p.Z.hasLayers()), M = o.useRef(null), L = o.useMemo(() => (0, h.q8)(s), [s]), Z = (null == (t = s.userStatus) ? void 0 : t.enrolledAt) != null, W = (0, d.Z)(Z), V = (null == (n = s.userStatus) ? void 0 : n.completedAt) != null, Q = (0, d.Z)(V), {
+  }), I = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), D = (0, l.e7)([p.Z], () => p.Z.hasLayers()), M = o.useRef(null), L = o.useMemo(() => (0, h.q8)(s), [s]), Z = (null == (t = s.userStatus) ? void 0 : t.enrolledAt) != null, W = (0, d.Z)(Z), V = (null == (n = s.userStatus) ? void 0 : n.completedAt) != null, Q = (0, d.Z)(V), {
     hasError: U,
     isLoading: H
-  } = (0, _.d7)(), F = o.useContext(S.T) || B && q && !H && !k, z = o.useRef(F), X = (0, w.B)(s, F && !U), K = o.useRef(-1), Y = o.useRef(!1), [G, J] = o.useState(!1), [$, ee] = o.useState(!1), [et, en] = o.useState(!0), [er, eo] = o.useState(!0), [es, ea] = o.useState(X.preEnrollmentExpandedHeight), ei = o.useRef(null), el = o.useCallback(e => {
+  } = (0, _.d7)(), z = o.useContext(S.T) || B && q && !H && !k, F = o.useRef(z), X = (0, w.B)(s, z && !U), K = o.useRef(-1), Y = o.useRef(!1), [G, J] = o.useState(!1), [$, ee] = o.useState(!1), [et, en] = o.useState(!0), [er, eo] = o.useState(!0), [es, ea] = o.useState(X.preEnrollmentExpandedHeight), ei = o.useRef(null), el = o.useCallback(e => {
     en(!1), ee(e)
   }, []), ec = o.useCallback(() => {
     var e, t;
@@ -143,8 +143,8 @@ function B(e) {
   }, [ed, Z, W]), o.useLayoutEffect(() => {
     V || !Z || W || Y.current || el(!1)
   }, [Z, V, W, el]), o.useLayoutEffect(() => {
-    F !== z.current && eo(!1), z.current = F
-  }, [F]);
+    z !== F.current && eo(!1), F.current = z
+  }, [z]);
   let ej = Z ? P.XZ : P.R4,
     [{
       expansionSpring: ev
@@ -163,9 +163,9 @@ function B(e) {
   o.useEffect(() => {
     e_({
       expansionSpring: +!!$,
-      immediate: D
+      immediate: I
     })
-  }, [$, e_, D]);
+  }, [$, e_, I]);
   let {
     visibilitySpring: ey
   } = (0, c.q_F)({
@@ -173,7 +173,7 @@ function B(e) {
       visibilitySpring: 0
     },
     to: {
-      visibilitySpring: +!!F
+      visibilitySpring: +!!z
     },
     config: {
       tension: 250,
@@ -208,26 +208,26 @@ function B(e) {
         impression_id: null == (t = M.current) ? void 0 : t.getId()
       })
     })
-  }, [U, B, s.id]), B && (F || !er || H) && !U) ? (0, r.jsx)(v.A, {
+  }, [U, B, s.id]), B && (z || !er || H) && !U) ? (0, r.jsx)(v.A, {
     questOrQuests: s,
     questContent: X.trackingCtx.content,
-    overrideVisibility: !I && F,
+    overrideVisibility: !D && z,
     children: (e, t) => {
       let n = X.component;
       return M.current = t.current, (0, r.jsxs)("div", {
         className: T.mask,
-        children: [F && (0, r.jsx)(R, {
+        children: [z && (0, r.jsx)(R, {
           questId: s.id,
           isExpanded: $
         }), (0, r.jsx)(i.animated.div, {
-          "aria-hidden": !F,
+          "aria-hidden": !z,
           onMouseLeave: eb,
           onMouseEnter: eh,
           onFocus: eg,
           onBlur: ex,
           className: a()(T.wrapper, {
-            [T.wrapperInvisible]: !F,
-            [T.wrapperVisible]: F && er
+            [T.wrapperInvisible]: !z,
+            [T.wrapperVisible]: z && er
           }),
           style: {
             color: s.config.colors.secondary,
@@ -257,7 +257,7 @@ function B(e) {
                 onCtxMenuOpened: eu,
                 onCtxMenuSelection: em,
                 quest: s,
-                useReducedMotion: D,
+                useReducedMotion: I,
                 collapsedHeight: 70
               })
             })

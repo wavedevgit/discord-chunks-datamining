@@ -1,4 +1,4 @@
-/** Chunk was on 78900 **/
+/** Chunk was on 17218 **/
 n.d(t, {
   Z: () => j
 }), n(388685);
@@ -32,7 +32,7 @@ let b = ["#51BC9D"],
     } = (0, f.G)(), O = (null == (t = j.userStatus) ? void 0 : t.completedAt) != null, w = o.useRef(!1), S = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), P = o.useRef(null), E = (0, d.e7)([m.Z], () => m.Z.hasLayers()), T = (0, u.Z)(E), [N, A] = o.useState(null), [R, B] = o.useState(null), k = o.useRef(new i.qA({
       gravity: 0,
       wind: 0
-    })), q = (0, i.uR)(N, R), D = o.useCallback(() => {
+    })), q = (0, i.uR)(N, R), I = o.useCallback(() => {
       if (S) return;
       let e = v.current,
         t = P.current;
@@ -110,16 +110,16 @@ let b = ["#51BC9D"],
           Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
         }), a), 100)
       }
-    }, [v, P, q, S]), I = (0, u.Z)(_);
+    }, [v, P, q, S]), D = (0, u.Z)(_);
     return (o.useEffect(() => {
-      O && _ && !I && (C(), D())
-    }, [_, O, C, D, I]), o.useEffect(() => {
+      O && _ && !D && (C(), I())
+    }, [_, O, C, I, D]), o.useEffect(() => {
       O && !E && T && setTimeout(() => {
-        C(), D()
+        C(), I()
       }, 200)
-    }, [O, T, E, C, D]), o.useEffect(() => {
-      q.isReady && (!w.current && O && (C(), D()), w.current = O)
-    }, [O, w, D, C, q]), S) ? null : (0, r.jsxs)("div", {
+    }, [O, T, E, C, I]), o.useEffect(() => {
+      q.isReady && (!w.current && O && (C(), I()), w.current = O)
+    }, [O, w, I, C, q]), S) ? null : (0, r.jsxs)("div", {
       className: x.wrapper,
       "aria-hidden": "true",
       ref: P,

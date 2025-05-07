@@ -1,6 +1,6 @@
-/** Chunk was on 78900 **/
+/** Chunk was on 17218 **/
 n.d(t, {
-  Z: () => w
+  Z: () => S
 }), n(953529);
 var r = n(255367),
   o = n(73800),
@@ -11,39 +11,40 @@ var r = n(255367),
   c = n(481060),
   d = n(393238),
   u = n(607070),
-  p = n(113434),
-  m = n(918701),
-  f = n(467628),
-  g = n(566078),
-  x = n(472144),
-  h = n(644646),
-  b = n(65443),
-  j = n(69439),
-  v = n(46140),
-  _ = n(642145),
-  y = n(388032),
-  C = n(882067);
-let O = async () => await n.e("67963").then(n.t.bind(n, 145193, 19));
+  p = n(960919),
+  m = n(113434),
+  f = n(918701),
+  g = n(467628),
+  x = n(566078),
+  h = n(472144),
+  b = n(644646),
+  j = n(65443),
+  v = n(69439),
+  _ = n(46140),
+  y = n(642145),
+  C = n(388032),
+  O = n(882067);
+let w = async () => await n.e("67963").then(n.t.bind(n, 145193, 19));
 
-function w(e) {
-  var t, n, s, w, S;
+function S(e) {
+  var t, n, s, S, E;
   let {
-    quest: P,
-    questContent: E,
-    isHovering: T,
-    contentPosition: N,
-    rowIndex: A,
-    onReceiveErrorHints: R
-  } = e, B = (0, f.j)({
-    location: v.dr.QUESTS_BAR_MOBILE
-  }), k = o.useMemo(() => g.r.build(P.config), [P.config]), q = k.defaultReward.messages.name, D = k.defaultReward.messages.nameWithArticle, I = B ? q : D, M = (null == (t = P.userStatus) ? void 0 : t.enrolledAt) != null, {
-    ref: L,
-    scrollHeight: Z
-  } = (0, d.kE)(), W = 104 !== Z, {
-    expansionSpring: V
+    quest: T,
+    questContent: N,
+    isHovering: A,
+    contentPosition: R,
+    rowIndex: B,
+    onReceiveErrorHints: k
+  } = e, q = (0, g.j)({
+    location: _.dr.QUESTS_BAR_MOBILE
+  }), I = o.useMemo(() => x.r.build(T.config), [T.config]), D = I.defaultReward.messages.name, M = I.defaultReward.messages.nameWithArticle, L = q ? D : M, Z = (null == (t = T.userStatus) ? void 0 : t.enrolledAt) != null, {
+    ref: W,
+    scrollHeight: V
+  } = (0, d.kE)(), Q = 104 !== V, {
+    expansionSpring: U
   } = (0, c.q_F)({
-    expansionSpring: +!!T,
-    config: (w = function(e) {
+    expansionSpring: +!!A,
+    config: (S = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -60,114 +61,143 @@ function w(e) {
         })
       }
       return e
-    }({}, _.Y), S = S = {
+    }({}, y.Y), E = E = {
       clamp: !0
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(w, Object.getOwnPropertyDescriptors(S)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(S, Object.getOwnPropertyDescriptors(E)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
         n.push.apply(n, r)
       }
       return n
-    })(Object(S)).forEach(function(e) {
-      Object.defineProperty(w, e, Object.getOwnPropertyDescriptor(S, e))
-    }), w)
-  }), Q = (null == (n = P.userStatus) ? void 0 : n.completedAt) != null, U = (null == (s = P.userStatus) ? void 0 : s.claimedAt) != null, {
-    completedRatio: H,
-    completedRatioDisplay: F
-  } = (0, p.I)(P), z = (0, p.Bd)(P), X = o.useCallback(e => (0, r.jsx)(c.Text, {
-    variant: "text-md/semibold",
-    color: "text-normal",
-    tag: "span",
-    className: C.header,
-    children: e
-  }, "".concat(P.id, "_reward")), [P.id]), K = o.useMemo(() => U ? X(q) : y.intl.format(y.t["0IUT4e"], {
-    rewardWithArticleHook: () => X(I)
-  }), [q, U, X, I]), Y = o.useMemo(() => {
-    if (null != z) return (0, r.jsx)(c.Text, {
+    })(Object(E)).forEach(function(e) {
+      Object.defineProperty(S, e, Object.getOwnPropertyDescriptor(E, e))
+    }), S)
+  }), H = (null == (n = T.userStatus) ? void 0 : n.completedAt) != null, z = (null == (s = T.userStatus) ? void 0 : s.claimedAt) != null, F = (0, f.xN)(T.config), X = (0, f.LM)(T.config), {
+    completedRatio: K,
+    completedRatioDisplay: Y
+  } = (0, m.I)(T), G = (0, m.Bd)(T), J = o.useMemo(() => z && F ? C.intl.format(C.t["8Op4c3"], {
+    balanceHook: () => (0, r.jsxs)(P, {
+      questId: T.id,
+      children: [(0, r.jsx)(p.Z, {
+        shouldUseThemeColor: !0,
+        className: O.orbsBalanceIcon
+      }), X]
+    })
+  }) : z ? (0, r.jsx)(P, {
+    questId: T.id,
+    children: D
+  }) : F ? C.intl.format(C.t.ro1szc, {
+    balanceHook: () => (0, r.jsxs)(P, {
+      questId: T.id,
+      children: [(0, r.jsx)(p.Z, {
+        shouldUseThemeColor: !0,
+        className: O.orbsBalanceIcon
+      }), X]
+    })
+  }) : C.intl.format(C.t["0IUT4e"], {
+    rewardWithArticleHook: () => (0, r.jsx)(P, {
+      questId: T.id,
+      children: L
+    })
+  }), [D, z, L, T.id, X, F]), $ = o.useMemo(() => {
+    if (null != G) return (0, r.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
-      className: C.description,
-      children: z
+      className: O.description,
+      children: G
     })
-  }, [z]), G = (0, l.e7)([u.Z], () => u.Z.useReducedMotion);
+  }, [G]), ee = (0, l.e7)([u.Z], () => u.Z.useReducedMotion);
   return (0, r.jsxs)("div", {
-    className: C.container,
+    className: O.container,
     children: [(0, r.jsxs)(i.animated.div, {
       style: {
-        maxHeight: V.to([0, 1], [104, (null != Z ? Z : 0) + 12])
+        maxHeight: U.to([0, 1], [104, (null != V ? V : 0) + 12])
       },
-      className: C.rewardDescriptionContainer,
+      className: O.rewardDescriptionContainer,
       children: [(0, r.jsxs)("div", {
-        className: C.assetWrapper,
-        children: [!U && Q && (0, r.jsx)("div", {
-          className: C.completionAnimation
-        }), M && !U ? (0, r.jsxs)("div", {
-          className: C.progressWrapper,
-          children: [Q && (0, r.jsx)(c.Fmz, {
-            importData: O,
-            className: C.confetti,
+        className: O.assetWrapper,
+        children: [!z && H && (0, r.jsx)("div", {
+          className: O.completionAnimation
+        }), Z && !z ? (0, r.jsxs)("div", {
+          className: O.progressWrapper,
+          children: [H && (0, r.jsx)(c.Fmz, {
+            importData: w,
+            className: O.confetti,
             loop: !1,
             autoplay: !1,
-            shouldAnimate: !G
-          }), (0, r.jsx)(x.Z, {
-            quest: P,
+            shouldAnimate: !ee
+          }), (0, r.jsx)(h.Z, {
+            quest: T,
             size: 76,
-            percentComplete: H,
-            percentCompleteText: T && !(0, m.zi)(P) ? F : void 0,
+            percentComplete: K,
+            percentCompleteText: A && !(0, f.zi)(T) ? Y : void 0,
             children: (0, r.jsx)("div", {
-              className: C.circularRewardTileWrapper,
-              children: (0, r.jsx)(h.Z, {
-                quest: P,
-                questContent: E,
-                className: C.circularQuestRewardTileAsset,
-                location: v.dr.QUEST_HOME_DESKTOP,
-                autoplay: T
+              className: O.circularRewardTileWrapper,
+              children: (0, r.jsx)(b.Z, {
+                quest: T,
+                questContent: N,
+                className: O.circularQuestRewardTileAsset,
+                location: _.dr.QUEST_HOME_DESKTOP,
+                autoplay: A
               })
             })
           })]
-        }) : (0, r.jsx)(h.Z, {
-          quest: P,
-          autoplay: T,
-          questContent: E,
-          className: C.questRewardTileAsset,
-          location: v.dr.QUEST_HOME_DESKTOP
+        }) : (0, r.jsx)(b.Z, {
+          quest: T,
+          autoplay: A,
+          questContent: N,
+          className: O.questRewardTileAsset,
+          location: _.dr.QUEST_HOME_DESKTOP
         })]
       }), (0, r.jsxs)("div", {
-        ref: L,
-        className: a()(C.textContainer, {
-          [C.justifyCenter]: !W
+        ref: W,
+        className: a()(O.textContainer, {
+          [O.justifyCenter]: !Q
         }),
         children: [(0, r.jsx)(c.X6q, {
           variant: "eyebrow",
           color: "text-brand",
-          className: C.questName,
-          children: y.intl.format(y.t.EAYZAg, {
-            questName: P.config.messages.questName
+          className: O.questName,
+          children: C.intl.format(C.t.EAYZAg, {
+            questName: T.config.messages.questName
           })
         }), (0, r.jsx)(c.Text, {
           variant: "text-md/semibold",
           color: "header-primary",
-          className: a()(C.header, {
-            [C.headerWithoutMargin]: B
+          className: a()(O.header, {
+            [O.headerWithoutMargin]: q
           }),
-          children: K
-        }), B && (0, r.jsx)(b.Z, {
-          quest: P,
+          children: J
+        }), q && (0, r.jsx)(j.Z, {
+          quest: T,
           textColor: "text-muted"
-        }), Y]
-      }), W && (0, r.jsx)(i.animated.div, {
+        }), $]
+      }), Q && (0, r.jsx)(i.animated.div, {
         style: {
-          opacity: V.to([0, 1], [1, 0])
+          opacity: U.to([0, 1], [1, 0])
         },
-        className: C.textOverflowBlur
+        className: O.textOverflowBlur
       })]
-    }), (0, r.jsx)(j.Z, {
-      quest: P,
-      location: E,
-      contentPosition: N,
-      rowIndex: A,
-      onReceiveErrorHints: R
+    }), (0, r.jsx)(v.Z, {
+      quest: T,
+      location: N,
+      contentPosition: R,
+      rowIndex: B,
+      onReceiveErrorHints: k
     })]
   })
 }
+let P = o.memo(function(e) {
+  let {
+    questId: t,
+    children: n
+  } = e;
+  return (0, r.jsx)(c.Text, {
+    variant: "text-md/semibold",
+    color: "text-normal",
+    tag: "span",
+    className: O.header,
+    children: n
+  }, "".concat(t, "_reward"))
+})

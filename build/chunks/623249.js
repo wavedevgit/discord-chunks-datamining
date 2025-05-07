@@ -1,4 +1,4 @@
-/** Chunk was on 78900 **/
+/** Chunk was on 17218 **/
 n.d(t, {
   default: () => w,
   y: () => P
@@ -56,7 +56,7 @@ function w(e) {
   let [T, N] = (0, o.useState)(s), A = (0, g.KX)(), R = (0, m.O5)(), B = null == (t = (0, f.WD)()) ? void 0 : t.getId(), k = (0, i.e7)([d.Z], () => d.Z.useReducedMotion), q = (0, j.g2)({
     useReducedMotion: k,
     className: y.colorTransition
-  }), D = T.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), I = (0, h.Bz)(E), M = (0, i.e7)([p.Z], () => p.Z.getState().theme), L = (0, l.wj)(M) ? v.BRd.DARK : v.BRd.LIGHT, {
+  }), I = T.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), D = (0, h.Bz)(E), M = (0, i.e7)([p.Z], () => p.Z.getState().theme), L = (0, l.wj)(M) ? v.BRd.DARK : v.BRd.LIGHT, {
     startConsoleQuest: Z,
     startingConsoleQuest: W
   } = (0, g.GI)({
@@ -134,8 +134,8 @@ function w(e) {
             size: "sm"
           }),
           text: _.intl.string(_.t.XF4wuL),
-          errors: I ? void 0 : D.map(e => e.message),
-          gameTile: I ? (0, r.jsx)(c.ua7, {
+          errors: D ? void 0 : I.map(e => e.message),
+          gameTile: D ? (0, r.jsx)(c.ua7, {
             "aria-label": E.config.messages.gameTitle,
             text: () => (0, r.jsxs)("div", {
               className: y.tooltip,

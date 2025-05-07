@@ -1,4 +1,4 @@
-/** Chunk was on 49027 **/
+/** Chunk was on 69835 **/
 e.exports = {
   content: "content__2cbe8",
   guildCard: "guildCard__2cbe8",
