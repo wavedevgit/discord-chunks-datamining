@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 2f0895e5d17945bd
+  Original File Name: 63c02abc1d0f9705
 **/
 .countDownWrapper_a1b7b8 {
     align-items: center;
@@ -1479,6 +1479,69 @@
     grid-gap: var(--space-xl)
 }
 
+@keyframes sortChangedIntro__08415 {
+    0% {
+        opacity: 0;
+        transform: translateY(10px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+@keyframes sortChangedOutro__08415 {
+    0% {
+        opacity: 1
+    }
+
+    to {
+        opacity: 0
+    }
+}
+
+@keyframes shuffleIntro__08415 {
+    0% {
+        transform: rotate(-6deg)
+    }
+
+    to {
+        transform: rotate(0deg)
+    }
+}
+
+@keyframes shuffleOutro__08415 {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(-6deg)
+    }
+}
+
+.full-motion .sortChangedIntro__08415 {
+    animation: sortChangedIntro__08415 .3s forwards
+}
+
+.full-motion .sortChangedOutro__08415 {
+    animation: sortChangedOutro__08415 .3s forwards
+}
+
+.full-motion .shuffleIntro__08415 {
+    animation: shuffleIntro__08415 .15s forwards
+}
+
+.full-motion .shuffleOutro__08415 {
+    animation: shuffleOutro__08415 .35s forwards;
+    background: var(--background-base-lower);
+    border: 3px solid var(--border-normal);
+    border-radius: 16px;
+    height: 374px;
+    width: 246px
+}
+
 .feedSingleRow__08415 {
     grid-template-rows: 1fr;
     height: 374px;
@@ -1638,4 +1701,4 @@
     opacity: 0
 }
 
-/*# sourceMappingURL=2f0895e5d17945bd.css.map*/
+/*# sourceMappingURL=63c02abc1d0f9705.css.map*/

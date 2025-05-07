@@ -1,12 +1,12 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  E: () => i,
-  M: () => a
+  E: () => a,
+  M: () => i
 });
 var r = n(818083),
   l = n(987338);
-let a = (0, r.B)({
+let i = (0, r.B)({
     kind: "user",
     id: "2025-03_shop_hide_strikethrough_price",
     label: "Shop Hide Strikethrough Price Experiment",
@@ -22,6 +22,6 @@ let a = (0, r.B)({
     }],
     commonTriggerPoint: l.$P.COLLECTIBLES_SHOP_OPEN
   }),
-  i = e => a.useExperiment({
+  a = e => i.useExperiment({
     location: e
   }).hideStrikethroughPrice

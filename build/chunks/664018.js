@@ -1,12 +1,12 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  D: () => a,
+  D: () => i,
   E: () => o
 });
 var r, l = n(818083),
-  a = ((r = {})[r.CONTROL = 0] = "CONTROL", r[r.TRANSFORMATION = 1] = "TRANSFORMATION", r[r.NO_MOVEMENT = 2] = "NO_MOVEMENT", r);
-let i = (0, l.B)({
+  i = ((r = {})[r.CONTROL = 0] = "CONTROL", r[r.TRANSFORMATION = 1] = "TRANSFORMATION", r[r.NO_MOVEMENT = 2] = "NO_MOVEMENT", r);
+let a = (0, l.B)({
     kind: "user",
     id: "2024-03_shop_card_hover_animation",
     label: "Shop card hover animation experiment",
@@ -27,6 +27,6 @@ let i = (0, l.B)({
       }
     }]
   }),
-  o = e => i.useExperiment({
+  o = e => a.useExperiment({
     location: e
   })
