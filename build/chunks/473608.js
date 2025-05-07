@@ -108,7 +108,7 @@ let I = e => {
       sku: i,
       fallbackLabel: c
     } = e, u = null == i ? void 0 : i.id, d = (0, l.e7)([m.Z], () => m.Z.getProduct(null == i ? void 0 : i.id)), f = null != n ? n : d, [_] = null != (t = null == f ? void 0 : f.items) ? t : [];
-    return void 0 !== u && u in E.KO ? E.KO[u].render({
+    return void 0 !== u && u in E.K ? E.K[u].render({
       animationState: "on_hover",
       className: b.externalProductAsset
     }) : (0, a.EQ)(null == _ ? void 0 : _.type).with(s.Z.AVATAR_DECORATION, () => (o()(_.type === s.Z.AVATAR_DECORATION, "ts-match checked the type"), (0, r.jsx)(I, {

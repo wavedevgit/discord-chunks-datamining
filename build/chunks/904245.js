@@ -853,28 +853,29 @@ let ex = {
           poll: O,
           contentInventoryEntry: v,
           attachments: A,
-          attachmentsToUpload: N
+          attachmentsToUpload: N,
+          onAttachmentUploadError: C
         } = n,
-        C = null != (i = n.flags) ? i : 0,
-        [P, w] = (0, J.Z)(u);
-      P && (u = w, C = (0, ef.pj)(C, eb.iLy.SUPPRESS_NOTIFICATIONS));
-      let D = !1,
-        U = (null == (r = n.messageReference) ? void 0 : r.type) === eb.Uvt.FORWARD;
-      if ("" === u && null == p && null == g && null == O && null == v && !U && (null == A || 0 === A.length))
+        P = null != (i = n.flags) ? i : 0,
+        [w, D] = (0, J.Z)(u);
+      w && (u = D, P = (0, ef.pj)(P, eb.iLy.SUPPRESS_NOTIFICATIONS));
+      let U = !1,
+        Z = (null == (r = n.messageReference) ? void 0 : r.type) === eb.Uvt.FORWARD;
+      if ("" === u && null == p && null == g && null == O && null == v && !Z && (null == A || 0 === A.length))
         if (null == N || !(N.length > 0)) return Promise.resolve();
-        else D = !0;
-      let Z = null != b ? eb.uaV.REPLY : eb.uaV.DEFAULT,
-        q = null != (o = n.nonce) ? o : (0, M.r)(),
-        Q = q;
+        else U = !0;
+      let q = null != b ? eb.uaV.REPLY : eb.uaV.DEFAULT,
+        Q = null != (o = n.nonce) ? o : (0, M.r)(),
+        $ = Q;
       if (!1 !== n.eagerDispatch && (s = (0, k.ZP)({
           channelId: e,
           content: u,
           tts: _,
-          type: Z,
+          type: q,
           messageReference: b,
           allowedMentions: y,
-          flags: 0 !== C ? C : void 0,
-          nonce: q,
+          flags: 0 !== P ? P : void 0,
+          nonce: Q,
           poll: (0, F.x9)(O)
         }), (0, G.EL)(e, s.id), null != g && (s.sticker_items = g.map(e => X.Z.getStickerById(e)).filter(e => null != e)), ek.receiveMessage(e, s, !0, n)), !eC && null != d && d.length > 0) {
         eC = !0;
@@ -885,16 +886,16 @@ let ex = {
           } = ek.validateMessage(d, t, e);
         ek.sendBotMessage(e, n, r)
       }
-      let $ = {
+      let ee = {
         type: l.$V.SEND,
         message: {
           channelId: e,
           content: u,
-          nonce: q,
+          nonce: Q,
           tts: _,
           message_reference: b,
           allowed_mentions: y,
-          flags: C
+          flags: P
         }
       };
       if (null != p) {
@@ -907,24 +908,36 @@ let ex = {
             {
               activity: n
             } = p;
-          null != n.party && null != n.party.id && (t.party_id = n.party.id), $.message.application_id = n.application_id, $.message.activity = t
+          null != n.party && null != n.party.id && (t.party_id = n.party.id), ee.message.application_id = n.application_id, ee.message.activity = t
         }
       }
-      if (null != O && ($.message.poll = O), null != g && ($.message.sticker_ids = g), B.Z.isEnabled() && ($.message.has_poggermode_enabled = !0), null != v && ($.message.content_inventory_entry = v), null != E && ($.message.confetti_potion = (0, Y.vY)(E), E.callback()), null != A && A.length > 0 && ($.message.attachments = A), null != N && N.length > 0) {
+      if (null != O && (ee.message.poll = O), null != g && (ee.message.sticker_ids = g), B.Z.isEnabled() && (ee.message.has_poggermode_enabled = !0), null != v && (ee.message.content_inventory_entry = v), null != E && (ee.message.confetti_potion = (0, Y.vY)(E), E.callback()), null != A && A.length > 0 && (ee.message.attachments = A), null != N && N.length > 0) try {
         let t = await (0, R.c)({
           channelId: e,
-          nonce: q,
+          nonce: Q,
           items: N,
           message: s
         });
-        if (D && (null == t || 0 === t.length)) return;
-        null != t && ($.message.attachments = t.map((e, t) => (0, eg.B)(e, t)))
+        if (U && (null == t || 0 === t.length)) return;
+        null != t && (ee.message.attachments = t.map((e, t) => (0, eg.B)(e, t)))
+      } catch (r) {
+        let {
+          file: e,
+          code: t,
+          reason: n
+        } = r;
+        (0, j.x)({
+          fileItems: e.items,
+          failureCode: t,
+          errorMessage: null == n ? void 0 : n.msg
+        }), null == C || C(e, t, n);
+        return
       }
       return new Promise((t, r) => {
         let i = Date.now(),
           o = l.ZP.length,
           s = Math.floor(1e4 * Math.random());
-        eN.info("Queueing message to be sent LogId:".concat(s)), l.ZP.enqueue($, s => {
+        eN.info("Queueing message to be sent LogId:".concat(s)), l.ZP.enqueue(ee, s => {
           let c = Date.now() - i;
           if (s.ok) {
             x.Z.donateSentMessage(u, e), ek.receiveMessage(e, s.body, !0, {
@@ -955,7 +968,7 @@ let ex = {
                 joinRequestUserId: n
               })
             }
-            L.Z.recordMessageSendApiResponse(q), a.Z.dispatch({
+            L.Z.recordMessageSendApiResponse(Q), a.Z.dispatch({
               type: "SLOWMODE_RESET_COOLDOWN",
               slowmodeType: ec.S.SendMessage,
               channelId: e
@@ -999,17 +1012,17 @@ let ex = {
                 })
               } else I.U8.has(s.body.code) ? a.Z.dispatch({
                 type: "MESSAGE_SEND_FAILED_AUTOMOD",
-                messageData: $,
+                messageData: ee,
                 errorResponseBody: {
                   code: s.body.code,
                   message: s.body.message
                 }
               }) : s.body.code === eb.evJ.POGGERMODE_TEMPORARILY_DISABLED ? a.Z.dispatch({
                 type: "POGGERMODE_TEMPORARILY_DISABLED"
-              }) : null != O || U || null != v || ek.sendClydeError(e, s.body.code);
-            t ? ek.deleteMessage(e, Q, !0) : (a.Z.dispatch({
+              }) : null != O || Z || null != v || ek.sendClydeError(e, s.body.code);
+            t ? ek.deleteMessage(e, $, !0) : (a.Z.dispatch({
               type: "MESSAGE_SEND_FAILED",
-              messageId: Q,
+              messageId: $,
               channelId: e,
               shouldNotify: !n.doNotNotifyOnError
             }), (0, j.x)({

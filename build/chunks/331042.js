@@ -348,7 +348,7 @@ let eu = 880,
       firstProfileEffect: S
     } = (0, B.Rj)(n), C = (0, k.x6)(n) ? null != I && null != S : null != I || null != S || n.type === u.Z.NAMEPLATE;
     i.useEffect(() => {
-      ee.Vt.ORB_PROFILE_BADGE === n.skuId && (0, A.Ls)([(0, K.X2)()], em)
+      ee.Vt.ORB_PROFILE_BADGE === n.skuId && (0, A.Ls)([(0, K.X)()], em)
     }, [n.skuId]);
     let P = i.useMemo(() => null != l ? l : ee.Vt.ORB_PROFILE_BADGE === n.skuId ? ei.intl.string(er.default.nvaTQk) : g ? ei.intl.format(new Date < ee.a$ ? ei.t.BhGU09 : ei.t.Jfv5Qk, {
         purchased_item: h,

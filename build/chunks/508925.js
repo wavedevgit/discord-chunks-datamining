@@ -13,7 +13,7 @@ let l = e => {
     product: t,
     animationState: n,
     className: i
-  } = e, l = a.KO[t.skuId];
+  } = e, l = a.K[t.skuId];
   return null != l ? (0, r.jsx)("div", {
     className: o()(s.externalProductWrapper, i),
     children: null != l.render && l.render({
