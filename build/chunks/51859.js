@@ -17,9 +17,9 @@ function m(e) {
   let {
     guildId: n,
     powerup: t
-  } = e, [m, x] = i.useState(void 0);
+  } = e, [m, _] = i.useState(void 0);
   (0, u.KT)(m);
-  let [_, f] = i.useState(!1);
+  let [x, f] = i.useState(!1);
   return (0, r.jsxs)(a.Z, {
     onHover: e => f(e),
     guildId: n,
@@ -27,7 +27,7 @@ function m(e) {
     children: [(0, r.jsx)(c.m, {
       className: p.image,
       powerup: t,
-      isHovering: _
+      isHovering: x
     }), (0, r.jsxs)("div", {
       className: p.contentContainer,
       children: [(0, r.jsx)("div", {
@@ -49,7 +49,7 @@ function m(e) {
       children: (0, r.jsx)(l.ZP, {
         guildId: n,
         powerup: t,
-        onError: x
+        onError: _
       })
     }), (0, r.jsx)(s.IGR, {
       className: p.new,

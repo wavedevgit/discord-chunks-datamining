@@ -53,7 +53,7 @@ function p(e) {
         var r, i;
         return (0, n.jsx)(o.rz2, (r = f({}, null != t ? t : {}), i = i = {
           onContextMenu: y,
-          name: l,
+          name: (0, o.qgQ)(l),
           color: null == e ? void 0 : e.colorString,
           roleName: null == e ? void 0 : e.colorRoleName,
           roleColors: s ? a : null,

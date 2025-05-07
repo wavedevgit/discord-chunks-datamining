@@ -11,10 +11,10 @@ var r, i = n(255367),
   u = n(129293),
   d = n(388905),
   h = n(108427),
-  p = n(598077),
-  g = n(896797),
-  f = n(981631),
-  m = n(930441),
+  g = n(598077),
+  p = n(896797),
+  m = n(981631),
+  f = n(930441),
   _ = n(388032),
   x = n(20493);
 
@@ -32,7 +32,7 @@ class b extends(r = l.PureComponent) {
     let e = (0, u.Z)(this.props.location),
       t = (0, s.parse)(this.props.location.search);
     a.tn.post({
-      url: f.ANM.DISABLE_EMAIL_NOTIFICATIONS,
+      url: m.ANM.DISABLE_EMAIL_NOTIFICATIONS,
       body: {
         token: e,
         pixel_uuid: t.hash,
@@ -46,7 +46,7 @@ class b extends(r = l.PureComponent) {
         body: {
           user: n
         }
-      } = e, r = new p.Z(n);
+      } = e, r = new g.Z(n);
       this.setState({
         success: !0,
         busy: !1,
@@ -84,7 +84,7 @@ class b extends(r = l.PureComponent) {
         className: x.marginTop8,
         color: d.zx.Colors.LINK,
         look: d.zx.Looks.LINK,
-        onClick: () => r(f.Z5c.SETTINGS("notifications", m.vG)),
+        onClick: () => r(m.Z5c.SETTINGS("notifications", f.vG)),
         children: _.intl.string(_.t.YYTira)
       })]
     })
@@ -98,7 +98,7 @@ class b extends(r = l.PureComponent) {
       category: r
     } = this.state;
     if (null != r) {
-      let e = m.Od.find(e => e.category === r);
+      let e = f.Od.find(e => e.category === r);
       if (null != e) return this.renderCategorySuccess(r, e.label())
     }
     return (0, i.jsxs)(d.ZP, {
@@ -158,6 +158,6 @@ class b extends(r = l.PureComponent) {
 E(b, "defaultProps", {
   transitionTo: e => n.g.location.assign(e)
 });
-let v = o.ZP.connectStores([g.Z], () => ({
-  defaultRoute: g.Z.defaultRoute
+let v = o.ZP.connectStores([p.Z], () => ({
+  defaultRoute: p.Z.defaultRoute
 }))(b)

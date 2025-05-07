@@ -1,7 +1,28 @@
 /**
   Module ID: 20565
-  Original File Name: 104c715be1a6de74
+  Original File Name: 59785eed08f994bc
 **/
+.orbIconSVG__85200 {
+    height: 18px
+}
+
+.full-motion .loading__85200 {
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: spin__85200;
+    animation-timing-function: linear
+}
+
+@keyframes spin__85200 {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(1turn)
+    }
+}
+
 .modal_cf1d1c {
     align-items: center;
     background-color: var(--black);
@@ -121,4 +142,14 @@
     width: 100%
 }
 
-/*# sourceMappingURL=104c715be1a6de74.css.map*/
+.orbsBalance_cf1d1c {
+    margin-left: 2px
+}
+
+.orbsBalanceIcon_cf1d1c {
+    margin-right: 3.5px;
+    position: relative;
+    top: 2.5px
+}
+
+/*# sourceMappingURL=59785eed08f994bc.css.map*/

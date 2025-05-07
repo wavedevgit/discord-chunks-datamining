@@ -12,10 +12,10 @@ var r = n(255367),
   u = n(493773),
   d = n(743142),
   h = n(893607),
-  p = n(703656),
-  g = n(314897),
-  f = n(781428),
-  m = n(981631),
+  g = n(703656),
+  p = n(314897),
+  m = n(781428),
+  f = n(981631),
   _ = n(176505);
 
 function x(e) {
@@ -24,27 +24,27 @@ function x(e) {
       if (function(e) {
           var t;
           let n = (0, s.LX)(e, {
-            path: m.Z5c.CHANNEL(h.Hw.guildId(), h.Hw.channelId())
+            path: f.Z5c.CHANNEL(h.Hw.guildId(), h.Hw.channelId())
           });
           return (null == n || null == (t = n.params) ? void 0 : t.channelId) === _.oC.ROLE_SUBSCRIPTIONS
-        }(t)) p.dL(t);
+        }(t)) g.dL(t);
       else {
         var n;
-        (null != (n = e.transitionTo) ? n : p.uL)(t)
+        (null != (n = e.transitionTo) ? n : g.uL)(t)
       }
     }, [e.transitionTo]),
     {
       isAuthenticated: E,
       loginStatus: b
-    } = (0, o.cj)([g.default], () => ({
-      isAuthenticated: g.default.isAuthenticated(),
-      loginStatus: g.default.getLoginStatus()
+    } = (0, o.cj)([p.default], () => ({
+      isAuthenticated: p.default.isAuthenticated(),
+      loginStatus: p.default.getLoginStatus()
     })),
     {
       location: v,
-      redirectTo: j
+      redirectTo: O
     } = e,
-    [I, O] = i.useState(E);
+    [I, j] = i.useState(E);
 
   function S(e) {
     let {
@@ -56,7 +56,7 @@ function x(e) {
       handoffKey: t,
       handoffToken: n,
       handoffSource: r
-    }), O(!1)
+    }), j(!1)
   }
   return ((0, u.ZP)(() => {
     if (null != v) {
@@ -65,7 +65,7 @@ function x(e) {
         handoff_token: t
       } = (0, l.parse)(v.search);
       if (null != e && null != t) {
-        let n = null != j ? (0, d.L)(j) : void 0;
+        let n = null != O ? (0, d.L)(O) : void 0;
         I ? a.Z.logout("handoff", null).finally(() => {
           S({
             handoffKey: e,
@@ -79,7 +79,7 @@ function x(e) {
         })
       }
     }
-  }), I || b === m.u34.LOGGING_IN) ? (0, r.jsx)(f.q, {}) : (0, r.jsx)(f.Z, (t = function(e) {
+  }), I || b === f.u34.LOGGING_IN) ? (0, r.jsx)(m.q, {}) : (0, r.jsx)(m.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

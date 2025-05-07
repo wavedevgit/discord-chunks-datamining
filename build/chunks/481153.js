@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => O
+  Z: () => j
 });
 var r = n(255367),
   i = n(73800),
@@ -12,28 +12,28 @@ var r = n(255367),
   u = n(388905),
   d = n(925329),
   h = n(479446),
-  p = n(981632),
-  g = n(594174),
-  f = n(509545),
-  m = n(55563),
+  g = n(981632),
+  p = n(594174),
+  m = n(509545),
+  f = n(55563),
   _ = n(296848),
   x = n(981631),
   E = n(474936),
   b = n(388032),
   v = n(378027),
-  j = n(893354),
+  O = n(893354),
   I = n(20493);
-let O = o.ZP.connectStores([m.Z, c.Z, f.Z, g.default], e => {
+let j = o.ZP.connectStores([f.Z, c.Z, m.Z, p.default], e => {
   let {
     giftCode: t
-  } = e, n = m.Z.get(t.skuId), {
+  } = e, n = f.Z.get(t.skuId), {
     subscriptionPlanId: r
   } = t;
   return {
     sku: n,
     subscriptionPlan: null != r ? (0, _.oE)(r) : null,
     application: c.Z.getApplication(n.applicationId),
-    gifter: g.default.getUser(t.userId)
+    gifter: p.default.getUser(t.userId)
   }
 })(e => {
   let {
@@ -42,15 +42,15 @@ let O = o.ZP.connectStores([m.Z, c.Z, f.Z, g.default], e => {
     gifter: l,
     sku: o,
     application: c,
-    subscriptionPlan: g
-  } = e, f = null == l ? b.intl.string(b.t.lTGZAg) : b.intl.formatToPlainString(b.t.TjWdPT, {
+    subscriptionPlan: p
+  } = e, m = null == l ? b.intl.string(b.t.lTGZAg) : b.intl.formatToPlainString(b.t.TjWdPT, {
     username: l.username
-  }), m = o.name;
-  return null != g && (m = b.intl.formatToPlainString(g.interval === E.rV.MONTH ? b.t.CTpcCQ : b.t.rgPWGx, {
+  }), f = o.name;
+  return null != p && (f = b.intl.formatToPlainString(p.interval === E.rV.MONTH ? b.t.CTpcCQ : b.t.rgPWGx, {
     skuName: o.name,
-    intervalCount: g.intervalCount
+    intervalCount: p.intervalCount
   })), (0, r.jsxs)(i.Fragment, {
-    children: [null != n.giftStyle ? (0, r.jsx)(p.Z, {
+    children: [null != n.giftStyle ? (0, r.jsx)(g.Z, {
       defaultAnimationState: h.SR.LOOP,
       giftStyle: n.giftStyle,
       className: v.seasonalIcon
@@ -66,15 +66,15 @@ let O = o.ZP.connectStores([m.Z, c.Z, f.Z, g.default], e => {
       })]
     }) : (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(u.DK, {
-        children: f
+        children: m
       }), (0, r.jsxs)(u.Dx, {
-        className: s()(I.marginTop8, j.flexCenter),
+        className: s()(I.marginTop8, O.flexCenter),
         children: [o.productLine !== x.POd.COLLECTIBLES && (0, r.jsx)(d.Z, {
           size: d.Z.Sizes.MEDIUM,
           className: v.applicationIcon,
           game: c,
           skuId: o.id
-        }), m]
+        }), f]
       })]
     })]
   })
