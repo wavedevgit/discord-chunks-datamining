@@ -1,6 +1,6 @@
 /**
   Module ID: 86653
-  Original File Name: 33a416ed4d20dc69
+  Original File Name: 1c289746646d33cc
 **/
 .root__2a5c7 {
     background: var(--black);
@@ -58,15 +58,37 @@
     padding-top: 24px
 }
 
+.headerContainer__2a5c7 {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr
+}
+
 .header__2a5c7 {
     color: var(--primary-130);
     font-family: var(--font-headline);
     font-size: 44px;
+    font-style: normal;
     font-weight: 800;
+    grid-column: 2;
     line-height: 42px
 }
 
-.header__2a5c7,.subHeader__2a5c7 {
+.betaBadge__2a5c7 {
+    align-items: center;
+    color: var(--white);
+    font-family: var(--font-display);
+    font-size: 12px;
+    font-weight: 700;
+    grid-column: 3;
+    justify-content: center;
+    letter-spacing: .24px;
+    line-height: 16px;
+    margin-left: 10px;
+    text-transform: uppercase
+}
+
+.betaBadge__2a5c7,.subHeader__2a5c7 {
     font-style: normal;
     text-align: center
 }
@@ -165,4 +187,4 @@
     color: var(--black-500)
 }
 
-/*# sourceMappingURL=33a416ed4d20dc69.css.map*/
+/*# sourceMappingURL=1c289746646d33cc.css.map*/
