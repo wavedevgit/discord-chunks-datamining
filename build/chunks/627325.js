@@ -1,4 +1,4 @@
-/** Chunk was on 74028 **/
+/** Chunk was on 79368 **/
 n.d(t, {
   w: () => C
 });
@@ -20,8 +20,8 @@ var r = n(255367),
   v = n(990525),
   b = n(388032),
   y = n(92609);
-let x = [51],
-  j = [b.t.OpqAoq];
+let j = [51],
+  x = [b.t.OpqAoq];
 
 function C(e) {
   let {
@@ -100,9 +100,9 @@ function C(e) {
       variant: "text-sm/medium",
       color: "header-muted",
       className: y.header,
-      children: b.intl.string(j[e])
+      children: b.intl.string(x[e])
     }),
-    sectionHeaderHeight: !1 === a ? void 0 : e => x[e],
+    sectionHeaderHeight: !1 === a ? void 0 : e => j[e],
     rowCount: E,
     rowHeight: 130,
     onScroll: n,

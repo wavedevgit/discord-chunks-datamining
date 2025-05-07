@@ -58,8 +58,8 @@ function D(e) {
     noticeType: Y,
     title: K,
     location: q,
-    locationIcon: Q,
-    canListenIn: X,
+    locationIcon: X,
+    canListenIn: Q,
     buttonText: J,
     users: $,
     overflowUsers: ee,
@@ -329,17 +329,17 @@ function D(e) {
       children: K
     }), (0, r.jsxs)("div", {
       className: R.locationContainer,
-      children: [Q, (0, r.jsx)(c.Text, {
+      children: [X, (0, r.jsx)(c.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         className: R.location,
         children: q
       })]
-    }), X || 1 === Y ? (0, r.jsx)(c.zxk, {
+    }), Q || 1 === Y ? (0, r.jsx)(c.zxk, {
       size: c.zxk.Sizes.SMALL,
       color: c.zxk.Colors.GREEN,
       onClick: () => {
-        if (X) null != l && null != l.getGuildId() && ((0, v.Cq)(l), (0, I.XU)(l.getGuildId(), l.id));
+        if (Q) null != l && null != l.getGuildId() && ((0, v.Cq)(l), (0, I.XU)(l.getGuildId(), l.id));
         else {
           if (null == D) return;
           (0, h.bO)({

@@ -37,7 +37,7 @@ let P = (0, i.memo)(function(e) {
   } = (0, p.ZP)(), F = (0, h.ZP)(), z = (0, E.B6)(null == (t = Z.userStatus) ? void 0 : t.claimedAt, {
     month: "numeric",
     day: "numeric"
-  }), W = null != (j = null == (n = Z.userStatus) ? void 0 : n.claimedTier) ? j : 0, Y = Z.config.rewards[W], K = (null == Y ? void 0 : Y.type) === s.w.FRACTIONAL_PREMIUM, q = (null == Y ? void 0 : Y.type) === s.w.COLLECTIBLE, Q = (null == Y ? void 0 : Y.type) === s.w.VIRTUAL_CURRENCY, X = null == Y || null == (P = Y.collectibleProduct) || null == (l = P.items) ? void 0 : l[0], J = (null == X ? void 0 : X.type) === o.Z.AVATAR_DECORATION ? X : null;
+  }), W = null != (j = null == (n = Z.userStatus) ? void 0 : n.claimedTier) ? j : 0, Y = Z.config.rewards[W], K = (null == Y ? void 0 : Y.type) === s.w.FRACTIONAL_PREMIUM, q = (null == Y ? void 0 : Y.type) === s.w.COLLECTIBLE, X = (null == Y ? void 0 : Y.type) === s.w.VIRTUAL_CURRENCY, Q = null == Y || null == (P = Y.collectibleProduct) || null == (l = P.items) ? void 0 : l[0], J = (null == Q ? void 0 : Q.type) === o.Z.AVATAR_DECORATION ? Q : null;
   (0, p.PM)(M, e => {
     let {
       height: t
@@ -126,7 +126,7 @@ let P = (0, i.memo)(function(e) {
         })
       }), K ? (0, r.jsx)(I.Z, {
         className: T.image
-      }) : Q ? (0, r.jsx)(v.Z, {
+      }) : X ? (0, r.jsx)(v.Z, {
         className: T.image
       }) : et.isAnimated ? (0, r.jsx)(g.Z, {
         className: T.assetBlurred,

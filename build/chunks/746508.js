@@ -49,8 +49,8 @@ var r = n(255367),
   Y = n(917405),
   K = n(641015),
   q = n(848543),
-  Q = n(565799),
-  X = n(501655),
+  X = n(565799),
+  Q = n(501655),
   J = n(368442),
   $ = n(600518),
   ee = n(485287),
@@ -516,7 +516,7 @@ function eq(e) {
     }
   })
 }
-class eQ extends i.PureComponent {
+class eX extends i.PureComponent {
   renderConnectionStatus() {
     let e, {
       channel: t,
@@ -584,7 +584,7 @@ class eQ extends i.PureComponent {
         let {
           isShown: i
         } = n;
-        return (0, r.jsx)(eX, {
+        return (0, r.jsx)(eQ, {
           popoutProps: t,
           isShown: i,
           noiseCancellationActive: e
@@ -728,7 +728,7 @@ class eQ extends i.PureComponent {
   }
 }
 
-function eX(e) {
+function eQ(e) {
   let {
     popoutProps: t,
     isShown: n,
@@ -799,7 +799,7 @@ let eJ = (0, E.Z)(function(e) {
     y = (0, u.e7)([z.Z], () => z.Z.isViewingRoles(h)),
     I = (0, u.e7)([eO.Z], () => y && !eO.Z.can(ew.Plq.VIEW_CHANNEL, p), [y, p]),
     C = er.Fg.useSetting(),
-    [S, T, P] = (0, u.Wu)([eS.ZP, Q.Z], () => (null == p ? void 0 : p.isGuildStageVoice()) ? [Q.Z.getMutableParticipants(p.id, X.pV.SPEAKER), Q.Z.getParticipantsVersion(p.id), null] : [null, null, null != p ? eS.ZP.getVoiceStatesForChannel(p) : null], [p]),
+    [S, T, P] = (0, u.Wu)([eS.ZP, X.Z], () => (null == p ? void 0 : p.isGuildStageVoice()) ? [X.Z.getMutableParticipants(p.id, Q.pV.SPEAKER), X.Z.getParticipantsVersion(p.id), null] : [null, null, null != p ? eS.ZP.getVoiceStatesForChannel(p) : null], [p]),
     Z = i.useMemo(() => {
       var e, t;
       return null != (t = null != (e = null == S ? void 0 : S.map(e => {
@@ -829,7 +829,7 @@ let eJ = (0, E.Z)(function(e) {
       children: [null != l || null != a ? (0, r.jsx)(G.Z, {
         voiceState: l,
         awaitingRemoteSessionInfo: a
-      }) : null, (0, r.jsx)(eQ, eV(eG({}, e, m, d), {
+      }) : null, (0, r.jsx)(eX, eV(eG({}, e, m, d), {
         enableActivities: R,
         remoteVoiceState: l,
         guild: g,

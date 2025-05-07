@@ -1,4 +1,4 @@
-/** Chunk was on 30588 **/
+/** Chunk was on 27863 **/
 n.d(t, {
   E: () => I,
   Z: () => T
@@ -8,8 +8,8 @@ var r = n(255367),
   l = n(442837),
   o = n(481060),
   a = n(239091),
-  s = n(585237),
-  c = n(812206),
+  c = n(585237),
+  s = n(812206),
   u = n(55563),
   E = n(73346),
   d = n(388032);
@@ -23,10 +23,10 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 let I = {
-  DropdownSizes: s.Z.DropdownSizes,
-  Sizes: s.Z.Sizes,
-  Colors: s.Z.Colors,
-  Looks: s.Z.Looks
+  DropdownSizes: c.Z.DropdownSizes,
+  Sizes: c.Z.Sizes,
+  Colors: c.Z.Colors,
+  Looks: c.Z.Looks
 };
 class O extends i.PureComponent {
   render() {
@@ -37,7 +37,7 @@ class O extends i.PureComponent {
         children: l,
         applicationId: o,
         primarySKU: a,
-        onSKUSelect: c
+        onSKUSelect: s
       } = n,
       u = function(e, t) {
         if (null == e) return {};
@@ -54,7 +54,7 @@ class O extends i.PureComponent {
         }
         return i
       }(n, ["skus", "children", "applicationId", "primarySKU", "onSKUSelect"]);
-    return (0, r.jsx)(s.Z, (e = function(e) {
+    return (0, r.jsx)(c.Z, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -113,11 +113,11 @@ class O extends i.PureComponent {
     })
   }
 }
-let T = l.ZP.connectStores([u.Z, c.Z], e => {
+let T = l.ZP.connectStores([u.Z, s.Z], e => {
   var t;
   let {
     applicationId: n
-  } = e, r = (0, E.uF)(n, c.Z, u.Z);
+  } = e, r = (0, E.uF)(n, s.Z, u.Z);
   return {
     skus: (null != (t = u.Z.getForApplication(n)) ? t : []).sort((e, t) => null != r && e.id === r.id ? -1 : null != r && t.id === r.id ? 1 : e.name >= t.name ? -1 : 1),
     primarySKU: r

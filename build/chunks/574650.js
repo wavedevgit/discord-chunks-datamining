@@ -1,4 +1,4 @@
-/** Chunk was on 30588 **/
+/** Chunk was on 27863 **/
 n.d(t, {
   Z: () => P
 }), n(539854), n(388685);
@@ -8,8 +8,8 @@ var i = n(120356),
   l = n.n(i);
 if (12633 == n.j) var o = n(114858);
 var a = n(442837),
-  s = n(481060),
-  c = n(430824),
+  c = n(481060),
+  s = n(430824),
   u = n(914010),
   E = n(693546),
   d = n(305325),
@@ -19,10 +19,10 @@ var a = n(442837),
   T = n(981631),
   N = n(176505),
   S = n(388032),
-  R = n(246752),
-  A = n(240211);
+  p = n(246752),
+  R = n(240211);
 
-function p(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,29 +43,29 @@ function p(e) {
 let P = 12633 == n.j ? () => {
   var e, t;
   let i = (0, a.e7)([u.Z], () => u.Z.getGuildId(), []),
-    P = (0, a.e7)([c.Z], () => c.Z.getGuild(i), [i]),
+    P = (0, a.e7)([s.Z], () => s.Z.getGuild(i), [i]),
     C = (0, a.e7)([O.Z], () => null != i ? O.Z.getRequest(i) : null, [i]),
-    D = (0, o.TH)(),
-    f = (null == (e = (0, o.LX)(D.pathname, T.Z5c.CHANNEL(null == P ? void 0 : P.id, N.oC.GUILD_ONBOARDING))) ? void 0 : e.isExact) === !0;
-  if (null == P || !(0, I.Dc)(P) || f) return null;
+    f = (0, o.TH)(),
+    D = (null == (e = (0, o.LX)(f.pathname, T.Z5c.CHANNEL(null == P ? void 0 : P.id, N.oC.GUILD_ONBOARDING))) ? void 0 : e.isExact) === !0;
+  if (null == P || !(0, I.Dc)(P) || D) return null;
   let m = null != (t = null == C ? void 0 : C.applicationStatus) ? t : _.wB.STARTED,
     g = null,
     y = null,
-    U = null,
-    h = [R.notice, A.notice];
+    h = null,
+    U = [p.notice, R.notice];
   switch (m) {
     case _.wB.SUBMITTED:
-      g = S.intl.string(S.t["5iLvS0"]), y = S.intl.string(S.t.mqtdmZ), U = () => {
-        (0, s.h7j)(e => {
+      g = S.intl.string(S.t["5iLvS0"]), y = S.intl.string(S.t.mqtdmZ), h = () => {
+        (0, c.h7j)(e => {
           var t, n;
-          return (0, r.jsx)(s.ConfirmModal, (t = p({
+          return (0, r.jsx)(c.ConfirmModal, (t = A({
             header: S.intl.string(S.t.aIz1oa),
             confirmText: S.intl.string(S.t["cY+Ooa"]),
             cancelText: S.intl.string(S.t["ETE/oK"]),
             onConfirm: () => E.Z.removeGuildJoinRequest(P.id),
-            confirmButtonColor: s.zxk.Colors.BRAND
+            confirmButtonColor: c.zxk.Colors.BRAND
           }, e), n = n = {
-            children: (0, r.jsx)(s.Text, {
+            children: (0, r.jsx)(c.Text, {
               variant: "text-md/normal",
               children: S.intl.string(S.t["13tjTU"])
             })
@@ -83,34 +83,34 @@ let P = 12633 == n.j ? () => {
       };
       break;
     case _.wB.REJECTED:
-      g = S.intl.string(S.t.lk30cX), y = S.intl.string(S.t["8RrsHh"]), U = () => {
-        (0, s.ZDy)(async () => {
+      g = S.intl.string(S.t.lk30cX), y = S.intl.string(S.t["8RrsHh"]), h = () => {
+        (0, c.ZDy)(async () => {
           let {
             default: e
           } = await n.e("3378").then(n.bind(n, 76075));
-          return t => (0, r.jsx)(e, p({
+          return t => (0, r.jsx)(e, A({
             guildId: P.id
           }, t))
         })
-      }, h.push(R.error);
+      }, U.push(p.error);
       break;
     default:
-      g = S.intl.string(S.t.G5YKXF), y = S.intl.string(S.t["r8/DT0"]), U = () => {
+      g = S.intl.string(S.t.G5YKXF), y = S.intl.string(S.t["r8/DT0"]), h = () => {
         (0, d.hk)(P.id)
       }
   }
   return (0, r.jsxs)("div", {
-    className: l()(...h),
-    children: [(0, r.jsx)(s.Text, {
-      className: R.header,
+    className: l()(...U),
+    children: [(0, r.jsx)(c.Text, {
+      className: p.header,
       variant: "text-sm/normal",
       children: g
-    }), (0, r.jsx)(s.zxk, {
-      className: R.button,
-      look: s.zxk.Looks.OUTLINED,
-      color: s.zxk.Colors.WHITE,
-      size: s.zxk.Sizes.NONE,
-      onClick: U,
+    }), (0, r.jsx)(c.zxk, {
+      className: p.button,
+      look: c.zxk.Looks.OUTLINED,
+      color: c.zxk.Colors.WHITE,
+      size: c.zxk.Sizes.NONE,
+      onClick: h,
       children: y
     })]
   })

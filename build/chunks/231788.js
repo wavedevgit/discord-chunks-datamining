@@ -1,4 +1,4 @@
-/** Chunk was on 53745 **/
+/** Chunk was on 35948 **/
 e.exports = {
   content: "content__3bf54",
   closeButton: "closeButton__3bf54",

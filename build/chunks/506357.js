@@ -1,14 +1,14 @@
-/** Chunk was on 30588 **/
+/** Chunk was on 27863 **/
 n.d(t, {
-  Z: () => p
+  Z: () => A
 });
 var r = n(255367),
   i = n(73800),
   l = n(442837),
   o = n(481060),
   a = n(565138),
-  s = n(241559),
-  c = n(527379),
+  c = n(241559),
+  s = n(527379),
   u = n(430824),
   E = n(944486),
   d = n(914010),
@@ -18,21 +18,21 @@ var r = n(255367),
   T = n(533244),
   N = n(981631),
   S = n(176505),
-  R = n(388032),
-  A = n(302654);
+  p = n(388032),
+  R = n(302654);
 
-function p(e) {
-  var t, p;
+function A(e) {
+  var t, A;
   let {
     onDismiss: P
-  } = e, C = (0, l.e7)([d.Z], () => d.Z.getGuildId()), D = (0, l.e7)([E.Z], () => null != C ? E.Z.getChannelId(C) : null, [C]), f = null != C ? C : null, m = (0, l.e7)([u.Z], () => null != f ? u.Z.getGuild(f) : null, [f]), {
+  } = e, C = (0, l.e7)([d.Z], () => d.Z.getGuildId()), f = (0, l.e7)([E.Z], () => null != C ? E.Z.getChannelId(C) : null, [C]), D = null != C ? C : null, m = (0, l.e7)([u.Z], () => null != D ? u.Z.getGuild(D) : null, [D]), {
     shouldShowIncidentActions: g,
     incidentData: y,
-    isUnderLockdown: U
-  } = (0, I.mI)(f), h = (0, s.n2)(null != (t = null == m ? void 0 : m.id) ? t : N.lds), b = i.useCallback(() => null != m && (0, c._X)(m.id), [m]);
+    isUnderLockdown: h
+  } = (0, I.mI)(D), U = (0, c.n2)(null != (t = null == m ? void 0 : m.id) ? t : N.lds), b = i.useCallback(() => null != m && (0, s._X)(m.id), [m]);
   if (null == m || null == y || !g) return null;
   let M = e => {
-      if (e && h && D !== S.oC.MEMBER_SAFETY && b()) return void _.default.track(N.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, {
+      if (e && U && f !== S.oC.MEMBER_SAFETY && b()) return void _.default.track(N.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, {
         notice_type: N.kVF.GUILD_RAID_NOTIFICATION,
         guild_id: m.id
       });
@@ -80,52 +80,52 @@ function p(e) {
       })
     },
     k = (0, r.jsx)(a.Z, {
-      className: A.guildIcon,
+      className: R.guildIcon,
       guild: m,
       size: a.Z.Sizes.MINI
     }),
     Z = (0, T.OY)(y, m.name);
-  if (null != (null != (p = y.dmsDisabledUntil) ? p : y.invitesDisabledUntil) && U) return (0, r.jsxs)(o.qXd, {
-    className: A.notice,
+  if (null != (null != (A = y.dmsDisabledUntil) ? A : y.invitesDisabledUntil) && h) return (0, r.jsxs)(o.qXd, {
+    className: R.notice,
     color: o.DM8.NEUTRAL,
     children: [(0, r.jsx)(o.RyX, {
       onClick: P,
       noticeType: N.kVF.GUILD_RAID_NOTIFICATION
     }), k, Z, (0, r.jsx)(o.EyT, {
-      className: A.actionButton,
+      className: R.actionButton,
       onClick: () => M(!1),
       children: (0, r.jsxs)("div", {
-        className: A.actionButtonInner,
+        className: R.actionButtonInner,
         children: [(0, r.jsx)(o.mBM, {
           size: "xs",
           color: "currentColor"
         }), (0, r.jsx)("span", {
-          children: R.intl.string(R.t["c+7oa2"])
+          children: p.intl.string(p.t["c+7oa2"])
         })]
       })
     })]
   });
-  let j = (0, T.CG)(y) ? R.intl.formatToPlainString(R.t.tZTx2N, {
+  let v = (0, T.CG)(y) ? p.intl.formatToPlainString(p.t.tZTx2N, {
       guildName: m.name
-    }) : (0, T.kk)(y) ? R.intl.formatToPlainString(R.t["1bSmxs"], {
+    }) : (0, T.kk)(y) ? p.intl.formatToPlainString(p.t["1bSmxs"], {
       guildName: m.name
-    }) : R.intl.formatToPlainString(R.t.W87xDA, {
+    }) : p.intl.formatToPlainString(p.t.W87xDA, {
       guildName: m.name
     }),
-    L = h && D === S.oC.MEMBER_SAFETY;
+    j = U && f === S.oC.MEMBER_SAFETY;
   return (0, r.jsxs)(o.qXd, {
-    className: A.notice,
+    className: R.notice,
     color: o.DM8.WARNING,
     children: [(0, r.jsx)(o.RyX, {
       onClick: P,
       noticeType: N.kVF.GUILD_RAID_NOTIFICATION
-    }), k, j, !L && (0, r.jsx)(o.EyT, {
-      className: A.actionButton,
+    }), k, v, !j && (0, r.jsx)(o.EyT, {
+      className: R.actionButton,
       onClick: () => M(!0),
       children: (0, r.jsx)("div", {
-        className: A.actionButtonInner,
+        className: R.actionButtonInner,
         children: (0, r.jsx)("span", {
-          children: R.intl.string(R.t.zDJDho)
+          children: p.intl.string(p.t.zDJDho)
         })
       })
     })]

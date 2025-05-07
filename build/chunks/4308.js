@@ -1,4 +1,4 @@
-/** Chunk was on 53745 **/
+/** Chunk was on 35948 **/
 e.exports = {
   background: "background__6343b",
   gradientRoleColorsImage: "gradientRoleColorsImage__6343b"

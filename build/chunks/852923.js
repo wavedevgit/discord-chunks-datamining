@@ -1,4 +1,4 @@
-/** Chunk was on 30588 **/
+/** Chunk was on 27863 **/
 n.d(t, {
   Z: () => T
 });
@@ -8,18 +8,18 @@ var i = n(120356),
   l = n.n(i),
   o = n(481060),
   a = n(592125),
-  s = n(944486),
-  c = n(471253),
+  c = n(944486),
+  s = n(471253),
   u = n(623633),
   E = n(930180),
   d = n(388032),
   _ = n(957991);
 
 function I(e) {
-  let t = s.Z.getVoiceChannelId();
+  let t = c.Z.getVoiceChannelId();
   if (null == t) return;
   let n = a.Z.getChannel(t);
-  null != n && (0, c.RK)(n, e)
+  null != n && (0, s.RK)(n, e)
 }
 
 function O(e) {

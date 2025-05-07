@@ -1,4 +1,4 @@
-/** Chunk was on 53745 **/
+/** Chunk was on 35948 **/
 e.exports = {
   pill: "pill__1f388",
   downloadProgress: "downloadProgress__1f388",

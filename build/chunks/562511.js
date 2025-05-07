@@ -1,10 +1,10 @@
-/** Chunk was on 53745 **/
+/** Chunk was on 43498 **/
 n.d(t, {
   A2: () => f,
   S3: () => p
 });
-var r = n(442837),
-  i = n(704215),
+var i = n(442837),
+  r = n(704215),
   l = n(645041),
   o = n(271383),
   s = n(430824),
@@ -16,26 +16,26 @@ var r = n(442837),
 
 function p(e) {
   let t = function(e) {
-    let t = (0, l.FT)(i.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : h.lds);
-    return (0, r.e7)([s.Z, a.default, o.ZP], () => {
+    let t = (0, l.FT)(r.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : h.lds);
+    return (0, i.e7)([s.Z, a.default, o.ZP], () => {
       var t, n;
       if (null === e) return !1;
-      let r = s.Z.getGuild(e);
-      if (void 0 === r || !(0, u.up)(r) || null == r.profile || null === r.profile.tag) return !1;
-      let i = a.default.getCurrentUser();
-      if (void 0 === i || (null == (t = i.primaryGuild) ? void 0 : t.identityGuildId) === r.id && (null == (n = i.primaryGuild) ? void 0 : n.tag) === r.profile.tag) return !1;
-      let l = o.ZP.getMember(e, i.id);
+      let i = s.Z.getGuild(e);
+      if (void 0 === i || !(0, u.up)(i) || null == i.profile || null === i.profile.tag) return !1;
+      let r = a.default.getCurrentUser();
+      if (void 0 === r || (null == (t = r.primaryGuild) ? void 0 : t.identityGuildId) === i.id && (null == (n = r.primaryGuild) ? void 0 : n.tag) === i.profile.tag) return !1;
+      let l = o.ZP.getMember(e, r.id);
       return null != l && !l.isPending
     }, [e]) && !t
   }(e);
   return ! function(e) {
-    let t = (0, l.FT)(i.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : h.lds),
-      n = (0, r.e7)([d.Z], () => null === e ? null : d.Z.getGuildLastSeenInfo(e)),
-      o = (0, r.e7)([a.default], () => {
+    let t = (0, l.FT)(r.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : h.lds),
+      n = (0, i.e7)([d.Z], () => null === e ? null : d.Z.getGuildLastSeenInfo(e)),
+      o = (0, i.e7)([a.default], () => {
         var e;
         return null == (e = a.default.getCurrentUser()) ? void 0 : e.primaryGuild
       }),
-      u = (0, r.e7)([s.Z], () => {
+      u = (0, i.e7)([s.Z], () => {
         var t, n;
         return null == (n = s.Z.getGuild(e)) || null == (t = n.profile) ? void 0 : t.tag
       });

@@ -1,9 +1,9 @@
-/** Chunk was on 53745 **/
+/** Chunk was on 43498 **/
 n.d(t, {
   Z: () => g
 }), n(388685);
-var r = n(255367),
-  i = n(73800),
+var i = n(255367),
+  r = n(73800),
   l = n(120356),
   o = n.n(l),
   s = n(683305),
@@ -24,39 +24,39 @@ function f(e) {
     opacity: 0
   }), g = (0, c.dQu)(h).spring({
     opacity: .1
-  }), m = (0, c.dQu)(h).spring({
+  }), E = (0, c.dQu)(h).spring({
     opacity: 0
   }), b = (0, c.dQu)(h).spring({
     opacity: 1
-  }), [_, y] = (0, c.q_F)(() => ({
+  }), [m, O] = (0, c.q_F)(() => ({
     from: {
       backgroundColor: f,
       borderColor: f
     }
-  }), "animate-never"), O = {
+  }), "animate-never"), _ = {
     startColor: f,
     handleRest: e => {
       e.finished && (null == l || l())
     },
-    endColor: m,
+    endColor: E,
     targetBorderColor: b,
     targetColor: g,
     animationDelay: u
-  }, v = i.useRef(O);
-  return i.useEffect(() => {
-    v.current = O
-  }), i.useEffect(() => {
+  }, C = r.useRef(_);
+  return r.useEffect(() => {
+    C.current = _
+  }), r.useEffect(() => {
     let {
       startColor: e,
       handleRest: t,
       endColor: n,
-      targetBorderColor: r,
-      targetColor: i,
+      targetBorderColor: i,
+      targetColor: r,
       animationDelay: l
-    } = v.current, {
+    } = C.current, {
       useReducedMotion: o
     } = d.Z, s = 200 * !o;
-    y({
+    O({
       reset: !0,
       immediate: !1,
       to: {
@@ -67,18 +67,18 @@ function f(e) {
         duration: s,
         easing: a.Z.Easing.ease
       }
-    }), y({
+    }), O({
       delay: l,
       immediate: o,
       to: [{
-        backgroundColor: i,
-        borderColor: r
+        backgroundColor: r,
+        borderColor: i
       }],
       config: {
         duration: s,
         easing: a.Z.Easing.ease
       }
-    }), y({
+    }), O({
       delay: l + 200 + 200,
       immediate: o,
       to: [{
@@ -91,8 +91,8 @@ function f(e) {
       },
       onRest: t
     })
-  }, [y]), (0, r.jsx)(s.animated.div, {
-    style: _,
+  }, [O]), (0, i.jsx)(s.animated.div, {
+    style: m,
     className: o()(p.settingsItemHighlight, n),
     children: t
   })
@@ -103,10 +103,10 @@ function g(e) {
     children: t,
     scrollPosition: n,
     animationDelay: l
-  } = e, o = (0, u.e7)([h.Z], () => h.Z.getScrollPosition() === n), [s, a] = i.useState(!1);
-  return (i.useEffect(() => {
+  } = e, o = (0, u.e7)([h.Z], () => h.Z.getScrollPosition() === n), [s, a] = r.useState(!1);
+  return (r.useEffect(() => {
     o && a(!0)
-  }, [o]), s) ? (0, r.jsx)(f, {
+  }, [o]), s) ? (0, i.jsx)(f, {
     animationDelay: l,
     onFlashEnd: () => a(!1),
     children: t

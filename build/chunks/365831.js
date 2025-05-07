@@ -1,4 +1,4 @@
-/** Chunk was on 74028 **/
+/** Chunk was on 79368 **/
 n.d(t, {
   y: () => O
 }), n(388685), n(953529);
@@ -50,8 +50,8 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = e => 1 - Math.pow(1 - e, 4),
-  j = {
+let j = e => 1 - Math.pow(1 - e, 4),
+  x = {
     mass: 1,
     friction: 64,
     tension: 1e3,
@@ -101,9 +101,9 @@ function O(e) {
       pointerEvents: Z ? "auto" : "none",
       backgroundColor: null != (t = null == O ? void 0 : O.baseColor) ? t : w,
       config: e => "backgroundColor" === e ? {
-        easing: x,
+        easing: j,
         duration: 200
-      } : j,
+      } : x,
       delay: 100 * !!A
     }, "respect-motion-settings"),
     R = (0, c.Yzy)(null == O ? void 0 : O.id, {
@@ -121,7 +121,7 @@ function O(e) {
         delay: A ? 100 : 150
       },
       config: {
-        easing: x,
+        easing: j,
         duration: A ? 250 : 200
       }
     }, "respect-motion-settings"),
@@ -141,7 +141,7 @@ function O(e) {
         opacity: 1
       },
       config: e => "opacity" === e ? {
-        easing: x,
+        easing: j,
         duration: 200
       } : C,
       delay: F ? 50 - 50 * e : 200 + 50 * e
@@ -166,9 +166,9 @@ function O(e) {
         delay: 150 * !A
       },
       config: e => "opacity" === e ? {
-        easing: x,
+        easing: j,
         duration: 200
-      } : Z ? j : I
+      } : Z ? x : I
     }, "respect-motion-settings"),
     U = (0, c.Yzy)(null == O ? void 0 : O.name, {
       key: k,
@@ -184,9 +184,9 @@ function O(e) {
         translateY: 0,
         delay: 150,
         config: e => "opacity" === e ? {
-          easing: x,
+          easing: j,
           duration: 200
-        } : A ? j : C
+        } : A ? x : C
       },
       leave: {
         opacity: 0,
@@ -194,9 +194,9 @@ function O(e) {
         translateY: 16 * (null == n),
         delay: F ? 100 : 50,
         config: e => "opacity" === e ? {
-          easing: x,
+          easing: j,
           duration: 200
-        } : A ? j : C
+        } : A ? x : C
       }
     }, "respect-motion-settings"),
     W = h.intl.string(N ? h.t.esVyo6 : h.t.UQqFCA);

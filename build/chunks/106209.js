@@ -1,4 +1,4 @@
-/** Chunk was on 53745 **/
+/** Chunk was on 35948 **/
 n.r(e.exports = {
   wrapper: "wrapper__48b20",
   video: "video__48b20",
