@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  GC: () => O,
-  RR: () => y,
-  Wb: () => b
+  GC: () => v,
+  RR: () => O,
+  Wb: () => y
 });
 var r = n(570140),
   i = n(579806),
@@ -15,9 +15,10 @@ var r = n(570140),
   u = n(358085),
   d = n(548570),
   f = n(616810),
-  _ = n(755278);
+  _ = n(755278),
+  p = n(58);
 
-function p(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -26,20 +27,20 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,36 +51,41 @@ function m(e, t) {
   return n
 }
 
-function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function E(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let E = new a.Z("ConnectionStore"),
-  b = new d.Z,
-  y = new f.Z(b),
-  O = new _.Z(b);
-b.handleIdentify = () => {
+let b = new a.Z("ConnectionStore"),
+  y = new d.Z,
+  O = new f.Z(y),
+  v = new _.Z(y);
+y.handleIdentify = () => {
   let e = s.default.getToken();
-  if (E.verbose("handleIdentify called", {
+  if (b.verbose("handleIdentify called", {
       hasToken: null != e
     }), null == e) return null;
-  let t = o.Z.getState();
-  return {
-    token: e,
-    properties: g(h({}, l.default.getSuperProperties()), {
-      client_app_state: t,
-      is_fast_connect: !1
-    }),
-    presence: y.getInitialState()
-  }
+  let t = o.Z.getState(),
+    n = p.Z.getLatestTaskRunOn(),
+    r = null != n ? (Date.now() - n) / 1e3 : null,
+    i = {
+      token: e,
+      properties: E(m({}, l.default.getSuperProperties()), {
+        client_app_state: t,
+        is_fast_connect: !1,
+        latest_headless_tasks: p.Z.getHeadlessTasks(),
+        latest_headless_task_run_seconds_before: r
+      }),
+      presence: O.getInitialState()
+    };
+  return p.Z.clear(), i
 }, (0, u.isDesktop)() && i.Z.remotePowerMonitor.on("resume", () => {
-  b.expeditedHeartbeat(5e3, "power monitor resumed")
+  y.expeditedHeartbeat(5e3, "power monitor resumed")
 }), c.Z.addOfflineCallback(() => {
-  b.networkStateChange(15e3, "network detected offline.", !1)
+  y.networkStateChange(15e3, "network detected offline.", !1)
 }), c.Z.addOnlineCallback(() => {
-  b.networkStateChange(5e3, "network detected online.")
-}), b.on("disconnect", e => {
+  y.networkStateChange(5e3, "network detected online.")
+}), y.on("disconnect", e => {
   let {
     code: t,
     reason: n
@@ -89,7 +95,7 @@ b.handleIdentify = () => {
     code: t,
     reason: n
   })
-}), b.on("close", e => {
+}), y.on("close", e => {
   let {
     code: t,
     reason: n
