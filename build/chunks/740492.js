@@ -193,9 +193,9 @@ class N extends(r = a.ZP.DeviceSettingsStore) {
     var e;
     return null != (e = y.listDensity) ? e : _.fx.COZY
   }
-  get chatScrollRefactorEnabled() {
+  get uploadRefactorEnabled() {
     var e;
-    return null == (e = y.chatScrollRefactorEnabled) || e
+    return null == (e = y.uploadRefactorEnabled) || e
   }
 }
 p(N, "displayName", "UnsyncedUserSettingsStore"), p(N, "persistKey", "UnsyncedUserSettingsStore"), p(N, "migrations", [() => {
