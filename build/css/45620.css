@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 63c02abc1d0f9705
+  Original File Name: 23ed820698b507df
 **/
 .countDownWrapper_a1b7b8 {
     align-items: center;
@@ -1536,7 +1536,7 @@
 .full-motion .shuffleOutro__08415 {
     animation: shuffleOutro__08415 .35s forwards;
     background: var(--background-base-lower);
-    border: 3px solid var(--border-normal);
+    border: 1px solid var(--border-subtle);
     border-radius: 16px;
     height: 374px;
     width: 246px
@@ -1701,4 +1701,4 @@
     opacity: 0
 }
 
-/*# sourceMappingURL=63c02abc1d0f9705.css.map*/
+/*# sourceMappingURL=23ed820698b507df.css.map*/

@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(677232),
   u = n(884697),
   d = n(228624),
-  f = n(67409),
-  b = n(474936),
+  b = n(67409),
+  f = n(474936),
   p = n(231338),
   g = n(388032),
   h = n(846165);
@@ -73,8 +73,8 @@ let m = {
       isGiftEasterEggEnabled: O,
       color: x = i.Ttl.BRAND
     } = e, {
-      analyticsLocations: S
-    } = (0, o.ZP)(), j = l.useRef(null), y = (0, a.Z)(j), E = (0, d.hv)("CollectiblesShopGiftButton");
+      analyticsLocations: j
+    } = (0, o.ZP)(), S = l.useRef(null), y = (0, a.Z)(S), P = (0, d.hv)("CollectiblesShopGiftButton");
     return (0, u.x6)(t) ? null : (0, r.jsx)(i.ua7, {
       text: g.intl.string(g.t["JCFN//"]),
       delay: v,
@@ -98,7 +98,7 @@ let m = {
           }
           return e
         }({}, e), a = a = {
-          buttonRef: j,
+          buttonRef: S,
           className: h.giftButton,
           color: x,
           look: i.zxk.Looks.FILLED,
@@ -107,15 +107,15 @@ let m = {
           "aria-label": g.intl.string(g.t.PEjaCw),
           onClick: e => {
             e.stopPropagation(), (0, s.Z)({
-              skuId: (0, f.S)({
+              skuId: (0, b.S)({
                 product: t,
                 selectedVariantIndex: n
               }),
               isGift: !0,
-              giftingOrigin: b.Wt.SHOP_PAGE,
-              analyticsLocations: S,
+              giftingOrigin: f.Wt.SHOP_PAGE,
+              analyticsLocations: j,
               returnRef: _,
-              variantsReturnStyle: E,
+              variantsReturnStyle: P,
               onClose: null != C ? e => {
                 e && C()
               } : void 0

@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  I: () => E
+  I: () => P
 }), n(539854);
 var r = n(255367),
   l = n(73800),
@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(481060),
   u = n(37234),
   d = n(425493),
-  f = n(410030),
-  b = n(984370),
+  b = n(410030),
+  f = n(984370),
   p = n(341907),
   g = n(507808),
   h = n(822857),
@@ -23,8 +23,8 @@ var r = n(255367),
   v = n(335131),
   O = n(215023),
   x = n(981631),
-  S = n(388032),
-  j = n(774457);
+  j = n(388032),
+  S = n(774457);
 
 function y(e) {
   let {
@@ -33,40 +33,40 @@ function y(e) {
     selected: l,
     handleTransition: i
   } = e;
-  return (0, r.jsx)(b.Z.Title, {
+  return (0, r.jsx)(f.Z.Title, {
     onClick: () => i(t),
-    wrapperClassName: j.tabWrapper,
-    className: a()(j.tab, {
-      [j.selected]: l
+    wrapperClassName: S.tabWrapper,
+    className: a()(S.tab, {
+      [S.selected]: l
     }),
     children: n
   })
 }
 
-function E(e) {
+function P(e) {
   let {
     isFullScreen: t,
     isLayer: n,
     onClose: i,
-    selectedTab: E,
-    handleTransition: P
-  } = e, k = (0, f.ZP)(), T = (0, s.e7)([_.default], () => _.default.getCurrentUser()), w = (null == T ? void 0 : T.isStaff()) || (null == T ? void 0 : T.isStaffPersonal()) || !1, {
-    enabled: I
+    selectedTab: P,
+    handleTransition: E
+  } = e, k = (0, b.ZP)(), I = (0, s.e7)([_.default], () => _.default.getCurrentUser()), w = (null == I ? void 0 : I.isStaff()) || (null == I ? void 0 : I.isStaffPersonal()) || !1, {
+    enabled: T
   } = (0, h.W)({
     location: "collectibles_shop_header_bar"
   }), B = [{
     tab: O.AW.HOME,
-    displayText: S.intl.string(S.t.ijDDw8)
+    displayText: j.intl.string(j.t.ijDDw8)
   }, {
     tab: O.AW.CATALOG,
-    displayText: S.intl.string(S.t.xFcotb)
+    displayText: j.intl.string(j.t.xFcotb)
   }];
-  I && B.push({
+  T && B.push({
     tab: O.AW.ORBS,
-    displayText: S.intl.string(S.t["KUYR+P"])
+    displayText: j.intl.string(j.t["KUYR+P"])
   });
   let L = n ? v.DR : i,
-    N = E === O.AW.ORBS ? x.ZY5.SHOP_ORBS_TAB : x.ZY5.COLLECTIBLES_SHOP,
+    N = P === O.AW.ORBS ? x.ZY5.SHOP_ORBS_TAB : x.ZY5.COLLECTIBLES_SHOP,
     R = l.useCallback(() => {
       t && (L(), (0, u.Ou)()), (0, g.Y)({
         pageType: N,
@@ -78,18 +78,18 @@ function E(e) {
     }, [L, t, N]);
   return (0, r.jsx)(c.f6W, {
     theme: k,
-    children: e => (0, r.jsxs)(b.Z, {
-      className: a()(e, j.headerBar, {
-        [j.fullscreenHeaderBar]: t
+    children: e => (0, r.jsxs)(f.Z, {
+      className: a()(e, S.headerBar, {
+        [S.fullscreenHeaderBar]: t
       }),
-      innerClassname: I ? j.headerBarInner : void 0,
+      innerClassname: T ? S.headerBarInner : void 0,
       toolbar: t || !w ? null : (0, r.jsx)(l.Fragment, {}),
       children: [(0, r.jsx)(C.Z, {
-        className: j.discordLogo
-      }), (0, r.jsx)(b.Z.Title, {
-        children: S.intl.string(S.t.pWG4zc)
+        className: S.discordLogo
+      }), (0, r.jsx)(f.Z.Title, {
+        children: j.intl.string(j.t.pWG4zc)
       }), (0, r.jsx)("div", {
-        className: j.tabs,
+        className: S.tabs,
         children: B.map(e => {
           let {
             tab: t,
@@ -98,19 +98,19 @@ function E(e) {
           return (0, r.jsx)(y, {
             tab: t,
             displayText: n,
-            selected: E === t,
-            handleTransition: P
+            selected: P === t,
+            handleTransition: E
           }, t)
         })
-      }), (I || t) && (0, r.jsxs)("div", {
-        className: j.alignedRightContent,
-        children: [I && (0, r.jsx)(m.V9, {
+      }), (T || t) && (0, r.jsxs)("div", {
+        className: S.alignedRightContent,
+        children: [T && (0, r.jsx)(m.V9, {
           anchorPillType: t ? "SHOP_FULLSCREEN" : "SHOP",
           analyticsPage: N,
           cardAlignment: m.V9.CardAlignment.END,
-          ctaText: S.intl.string(S.t.VC4Mq6),
+          ctaText: j.intl.string(j.t.VC4Mq6),
           ctaOnClick: R,
-          className: j.balanceWidgetMenu
+          className: S.balanceWidgetMenu
         }), t && (0, r.jsx)(d.Z, {
           closeAction: L,
           keybind: "ESC"

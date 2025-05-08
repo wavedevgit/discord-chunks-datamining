@@ -13,10 +13,10 @@ var l = n(120356),
   c = n(200615),
   u = n(981631),
   d = n(388032),
-  f = n(561197);
+  b = n(561197);
 
-function b() {
-  return (b = Object.assign || function(e) {
+function f() {
+  return (f = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -68,7 +68,7 @@ function h(e) {
   } = e, C = (0, o.ql)(t, u.tuJ.DEFAULT);
   if (null == C) return null;
   if (C.amount <= 0) return (0, r.jsx)("div", {
-    className: i()(f.priceTagsContainer, h),
+    className: i()(b.priceTagsContainer, h),
     children: (0, r.jsx)(s.F, {
       price: C
     })
@@ -78,19 +78,19 @@ function h(e) {
     x = (0, o.x6)(t) && n ? g(p({}, C), {
       amount: l.original
     }) : C,
-    S = _ && n,
-    j = _ && !n;
+    j = _ && n,
+    S = _ && !n;
   return (0, r.jsxs)("div", {
-    className: i()(f.priceTagsContainer, h),
-    children: [!S && (0, r.jsx)(s.F, {
+    className: i()(b.priceTagsContainer, h),
+    children: [!j && (0, r.jsx)(s.F, {
       price: x,
       discount: n ? o.f_ : l,
-      className: i()(f.price, {
-        [f.striked]: n,
-        [f.dimmed]: n,
-        [f.fullPrice]: O
+      className: i()(b.price, {
+        [b.striked]: n,
+        [b.dimmed]: n,
+        [b.fullPrice]: O
       })
-    }), null != v && !j && (0, r.jsx)(s.F, {
+    }), null != v && !S && (0, r.jsx)(s.F, {
       price: v,
       discount: n ? l : o.f_,
       renderPrice: m ? e => (0, r.jsx)(a.Text, {
@@ -104,16 +104,16 @@ function h(e) {
       }) : O ? e => d.intl.formatToPlainString(d.t.W3gIWF, {
         price: e
       }) : void 0,
-      className: i()(f.price, {
-        [f.dimmed]: !n,
-        [f.fullPrice]: O
+      className: i()(b.price, {
+        [b.dimmed]: !n,
+        [b.fullPrice]: O
       }),
       variant: n ? void 0 : "text-xs/semibold",
       icon: (0, r.jsx)(a.ua7, {
         text: d.intl.string(d.t.MPFyJy),
         "aria-label": d.intl.string(d.t.X3Ekj4),
         children: e => {
-          var t = b({}, function(e) {
+          var t = f({}, function(e) {
             if (null == e) throw TypeError("Cannot destructure " + e);
             return e
           }(e));
@@ -121,8 +121,8 @@ function h(e) {
             size: "md",
             color: "currentColor"
           }, t), {
-            className: i()(f.premiumIcon, {
-              [f.fullPrice]: O
+            className: i()(b.premiumIcon, {
+              [b.fullPrice]: O
             })
           }))
         }

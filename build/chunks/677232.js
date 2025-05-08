@@ -33,7 +33,7 @@ let d = [{
     box: "#DB6D6D",
     ribbon: "#67DA9C"
   }],
-  f = [{
+  b = [{
     box: "#EABB75",
     ribbon: "#E4595C"
   }, {
@@ -55,7 +55,7 @@ let d = [{
     box: "#DB6F6F",
     ribbon: "#81C29F"
   }],
-  b = 1 / 300,
+  f = 1 / 300,
   p = (0, i.animated)(c.Z),
   g = (0, i.animated)(u.Z),
   h = (0, i.animated)(o.OgN),
@@ -66,7 +66,7 @@ let d = [{
       isContentDismissed: i,
       boxColors: c = {
         dark: d,
-        light: f
+        light: b
       }
     } = e, u = (0, s.ZP)(), [m, _] = function(e) {
       let [t, n] = l.useState(!1), [r, i] = l.useState(Math.floor(7 * Math.random())), a = l.useRef(r);
@@ -74,7 +74,7 @@ let d = [{
         a.current = r
       }), l.useEffect(() => {
         if (e) return;
-        let t = Math.random() <= b;
+        let t = Math.random() <= f;
         if (n(t), !t) {
           let e;
           do e = Math.floor(7 * Math.random()); while (e === a.current);

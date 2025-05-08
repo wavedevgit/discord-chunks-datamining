@@ -12,8 +12,8 @@ var r = n(73800),
   c = n(597688),
   u = n(884697),
   d = n(26931),
-  f = n(370039),
-  b = n(937510),
+  b = n(370039),
+  f = n(937510),
   p = n(981631),
   g = n(388032);
 let h = (e, t) => {
@@ -30,22 +30,22 @@ let h = (e, t) => {
     [_, C] = r.useState(m ? a.m.RECOMMENDED : a.m.POPULAR),
     [v, O] = r.useState(0),
     x = (0, d.u)(),
-    S = (0, o.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup),
-    j = (0, f.a)(),
+    j = (0, o.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup),
+    S = (0, b.a)(),
     y = r.useMemo(() => {
       let e = [];
-      return _ === a.m.RECENT ? e = S : _ === a.m.PRICE_LOW_TO_HIGH ? e = [...S].sort((e, n) => {
+      return _ === a.m.RECENT ? e = j : _ === a.m.PRICE_LOW_TO_HIGH ? e = [...j].sort((e, n) => {
         var r, l, i, a;
         return (null != (i = null == (r = (0, u.Vw)(e, t, !1)) ? void 0 : r.amount) ? i : 0) - (null != (a = null == (l = (0, u.Vw)(n, t, !1)) ? void 0 : l.amount) ? a : 0)
-      }) : _ === a.m.RECOMMENDED ? e = x(l) : _ === a.m.POPULAR ? e = x(h) : _ === a.m.RANDOM && (e = i().shuffle(S)), j(e)
-    }, [_, j, S, t, x, l, h, v]),
-    E = r.useCallback(() => {
+      }) : _ === a.m.RECOMMENDED ? e = x(l) : _ === a.m.POPULAR ? e = x(h) : _ === a.m.RANDOM && (e = i().shuffle(j)), S(e)
+    }, [_, S, j, t, x, l, h, v]),
+    P = r.useCallback(() => {
       O(e => e + 1), C(a.m.RANDOM)
     }, []);
   return {
     sortType: _,
     setSortType: C,
-    sortedItems: (0, b.l)(y),
+    sortedItems: (0, f.l)(y),
     sortOptions: r.useMemo(() => {
       let e = [{
         value: a.m.POPULAR,
@@ -63,6 +63,6 @@ let h = (e, t) => {
       }), e
     }, [m]),
     showRecommendationOption: m,
-    shuffleProducts: E
+    shuffleProducts: P
   }
 }

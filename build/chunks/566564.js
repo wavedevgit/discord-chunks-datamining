@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => j
+  Z: () => S
 });
 var r = n(255367),
   l = n(73800),
@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(381585),
   u = n(139668),
   d = n(364111),
-  f = n(303952),
-  b = n(752053),
+  b = n(303952),
+  f = n(752053),
   p = n(81136),
   g = n(953655),
   h = n(548685),
@@ -23,7 +23,7 @@ var r = n(255367),
   v = n(215023),
   O = n(388032),
   x = n(806734);
-let S = e => {
+let j = e => {
     var t;
     let {
       handleTransition: n,
@@ -33,26 +33,26 @@ let S = e => {
       isFullScreen: v
     } = e, {
       noCache: O,
-      includeUnpublished: S
-    } = (0, p.Z)(), j = (0, c.sp)(), y = null != (t = null == j ? void 0 : j.sessionId) ? t : "";
+      includeUnpublished: j
+    } = (0, p.Z)(), S = (0, c.sp)(), y = null != (t = null == S ? void 0 : S.sessionId) ? t : "";
     l.useEffect(() => {
-      (0, f.n)({
+      (0, b.n)({
         sessionId: y,
-        checkpoint: f.a.SHOP_MOUNTED,
+        checkpoint: b.a.SHOP_MOUNTED,
         tab: u,
         isFullScreen: v,
-        unpublishedCategoriesShown: S,
+        unpublishedCategoriesShown: j,
         cacheDisabled: O
       })
     }, [u]);
     let {
-      isFetchingShopHome: E,
-      fetchShopHomeError: P,
+      isFetchingShopHome: P,
+      fetchShopHomeError: E,
       shopBlocks: k,
-      refreshShopHome: T
+      refreshShopHome: I
     } = (0, d.E)(u, {
       noCache: O,
-      includeUnpublished: S,
+      includeUnpublished: j,
       includeBundles: !0,
       logPerf: !0
     }, {
@@ -60,46 +60,46 @@ let S = e => {
       tab: u,
       isFullScreen: v
     }), w = l.useCallback(() => {
-      T()
-    }, [T]);
+      I()
+    }, [I]);
     if (l.useEffect(() => {
-        null != P || E || 0 === k.length || (0, f.n)({
+        null != E || P || 0 === k.length || (0, b.n)({
           sessionId: y,
-          checkpoint: f.a.SHOP_RENDERED,
+          checkpoint: b.a.SHOP_RENDERED,
           tab: u,
           isFullScreen: v,
-          unpublishedCategoriesShown: S,
+          unpublishedCategoriesShown: j,
           cacheDisabled: O
         })
-      }, [P, E, k.length, S, O, y, u, v]), null != P) return (0, r.jsx)(b.Z, {
+      }, [E, P, k.length, j, O, y, u, v]), null != E) return (0, r.jsx)(f.Z, {
       onRetry: w,
-      errorOrigin: b.i.SHOP_PAGE,
-      errorMessage: P.message
+      errorOrigin: f.i.SHOP_PAGE,
+      errorMessage: E.message
     });
-    if (E || 0 === k.length) return (0, r.jsxs)("div", {
+    if (P || 0 === k.length) return (0, r.jsxs)("div", {
       className: x.loadingContainer,
       children: [(0, r.jsx)(m.Z, {
-        isLoading: E,
+        isLoading: P,
         handleTransition: n,
         tab: u
       }), (0, r.jsx)(g.Z, {
-        isLoading: E,
+        isLoading: P,
         handleTransition: n,
         categories: []
       }), (0, r.jsx)(h.Z, {
-        isLoading: E,
+        isLoading: P,
         handleTransition: n,
         numVisibleItems: i,
         tab: u
       })]
     });
-    let I = (e, t) => {
+    let T = (e, t) => {
       if (null == e) return null;
       let l = null;
       switch (e.type) {
         case o.z.HERO:
           l = (0, r.jsx)(m.Z, {
-            isLoading: E,
+            isLoading: P,
             handleTransition: n,
             heroBlock: e,
             tab: u
@@ -107,7 +107,7 @@ let S = e => {
           break;
         case o.z.FEATURED:
           l = (0, r.jsx)(g.Z, {
-            isLoading: E,
+            isLoading: P,
             handleTransition: n,
             featuredBlockRecord: e
           }, t);
@@ -115,7 +115,7 @@ let S = e => {
         case o.z.FEED:
           let c = e.sortedSkuIds;
           l = (0, r.jsx)(h.Z, {
-            isLoading: E || s,
+            isLoading: P || s,
             handleTransition: n,
             numVisibleItems: i,
             sortedSkuIds: c,
@@ -147,10 +147,10 @@ let S = e => {
       }, t)
     };
     return (0, r.jsx)(r.Fragment, {
-      children: k.map((e, t) => I(e, t))
+      children: k.map((e, t) => T(e, t))
     })
   },
-  j = e => {
+  S = e => {
     let {
       isFullScreen: t,
       handleTransition: n,
@@ -164,7 +164,7 @@ let S = e => {
       }),
       children: (0, r.jsxs)("div", {
         className: a()(x.content, x.mainContent),
-        children: [(0, r.jsx)(S, {
+        children: [(0, r.jsx)(j, {
           handleTransition: n,
           numVisibleItems: l,
           isFetchingCategories: o,

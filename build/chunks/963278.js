@@ -13,8 +13,8 @@ var l = n(120356),
   c = n(381585),
   u = n(597688),
   d = n(709999),
-  f = n(388032),
-  b = n(806734);
+  b = n(388032),
+  f = n(806734);
 let p = e => {
   let {
     shelf: t,
@@ -22,9 +22,9 @@ let p = e => {
     tab: l
   } = e, p = (0, a.e7)([s.default], () => s.default.getCurrentUser());
   return null == p ? null : (0, r.jsxs)("div", {
-    className: i()(b.shelfBlockContainer, b.centeredSection),
+    className: i()(f.shelfBlockContainer, f.centeredSection),
     children: [(0, r.jsxs)("div", {
-      className: b.blockHeader,
+      className: f.blockHeader,
       children: [(0, r.jsx)(o.X6q, {
         variant: "heading-lg/semibold",
         children: t.name
@@ -32,12 +32,12 @@ let p = e => {
         color: o.Ttl.PRIMARY,
         look: o.iLD.FILLED,
         onClick: () => n("shelf block see all", t.categorySkuId),
-        children: f.intl.formatToPlainString(f.t.bc9RBA, {
+        children: b.intl.formatToPlainString(b.t.bc9RBA, {
           category_name: t.name
         })
       })]
     }), (0, r.jsx)("div", {
-      className: b.feed,
+      className: f.feed,
       children: (0, r.jsx)(r.Fragment, {
         children: t.rankedSkuIds.map((e, n) => {
           let i = u.Z.getCategoryForProduct(e),

@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(481060),
   u = n(782568),
   d = n(607070),
-  f = n(70097),
-  b = n(594174),
+  b = n(70097),
+  f = n(594174),
   p = n(451478),
   g = n(63063),
   h = n(381585),
@@ -23,15 +23,15 @@ var r = n(255367),
   v = n(370039),
   O = n(937510),
   x = n(823941),
-  S = n(38900),
-  j = n(709999),
+  j = n(38900),
+  S = n(709999),
   y = n(794324),
-  E = n(619899),
-  P = n(215023),
+  P = n(619899),
+  E = n(215023),
   k = n(981631),
-  T = n(388032),
+  I = n(388032),
   w = n(806734);
-let I = {
+let T = {
     rankedSkuIds: [],
     name: "",
     unpublishedAt: void 0,
@@ -45,7 +45,7 @@ let I = {
   },
   B = e => {
     var t, n, r, l;
-    return null == e ? I : {
+    return null == e ? T : {
       rankedSkuIds: null != (t = e.heroRanking) ? t : [],
       name: e.name,
       unpublishedAt: e.unpublishedAt,
@@ -55,7 +55,7 @@ let I = {
       categorySkuId: e.skuId,
       bannerAsset: e.heroBannerAsset,
       fallbackBannerUrl: (0, _.uV)(null != (l = e.heroBanner) ? l : "", {
-        size: P.pv,
+        size: E.pv,
         format: "jpg"
       }),
       summary: e.summary,
@@ -70,17 +70,17 @@ let I = {
       category: i,
       heroBlock: o,
       tab: _
-    } = e, x = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), L = (0, s.e7)([p.Z], () => p.Z.isFocused()), N = (0, s.e7)([b.default], () => b.default.getCurrentUser()), R = (0, C.u)(), A = l.useMemo(() => null != o ? o : B(i), [o, i]), {
+    } = e, x = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), L = (0, s.e7)([p.Z], () => p.Z.isFocused()), N = (0, s.e7)([f.default], () => f.default.getCurrentUser()), R = (0, C.u)(), A = l.useMemo(() => null != o ? o : B(i), [o, i]), {
       isPreviewingStaticBanner: Z,
       bannerOverrides: F,
       bannerStyleOverrides: D,
       heroLogo: H,
       heroBannerStatic: M,
       heroBannerAnimated: W
-    } = (0, y.hr)(A), V = null == F ? void 0 : F.heroBanner, U = l.useMemo(() => R(A.rankedSkuIds), [t, R, A.rankedSkuIds]), G = (0, v.a)()(U), z = (0, O.l)(G).slice(0, 4), q = (0, E.St)(z), Y = _ === P.AW.ORBS ? T.intl.string(T.t.hvVgAQ) : T.intl.formatToPlainString(T.t.wvKYCg, {
+    } = (0, y.hr)(A), V = null == F ? void 0 : F.heroBanner, U = l.useMemo(() => R(A.rankedSkuIds), [t, R, A.rankedSkuIds]), G = (0, v.a)()(U), z = (0, O.l)(G).slice(0, 4), q = (0, P.St)(z), Y = _ === E.AW.ORBS ? I.intl.string(I.t.hvVgAQ) : I.intl.formatToPlainString(I.t.wvKYCg, {
       category_name: A.name
     });
-    return null != N && (t || A !== I) ? (0, r.jsxs)("div", {
+    return null != N && (t || A !== T) ? (0, r.jsxs)("div", {
       className: a()(w.heroBlock, {
         [w.responsiveHero]: null == D ? void 0 : D.responsive
       }),
@@ -94,7 +94,7 @@ let I = {
           style: {
             backgroundImage: "url(".concat(M, ")")
           }
-        }) : (0, r.jsx)(f.Z, {
+        }) : (0, r.jsx)(b.Z, {
           className: w.bannerVideoBackground,
           src: W,
           autoPlay: !0,
@@ -126,7 +126,7 @@ let I = {
             className: w.heroHeaderBadgeLogoSummaryContainer,
             children: [null != A.unpublishedAt && (0, r.jsx)(c.IGR, {
               disableColor: !0,
-              text: T.intl.string(T.t["h/uBCQ"]),
+              text: I.intl.string(I.t["h/uBCQ"]),
               className: w.limitedTimeBadge
             }), (0, r.jsxs)("div", {
               className: w.heroLogoNameContainer,
@@ -140,8 +140,8 @@ let I = {
                 color: "header-primary",
                 children: A.title
               }), (0, r.jsx)(c.Text, {
-                variant: _ === P.AW.ORBS ? "text-lg/medium" : "text-md/normal",
-                className: _ === P.AW.ORBS ? w.orbsSubHeaderText : (null == F ? void 0 : F.showDarkBannerText) ? w.subHeaderTextDark : w.subHeaderText,
+                variant: _ === E.AW.ORBS ? "text-lg/medium" : "text-md/normal",
+                className: _ === E.AW.ORBS ? w.orbsSubHeaderText : (null == F ? void 0 : F.showDarkBannerText) ? w.subHeaderTextDark : w.subHeaderText,
                 style: null != A.bannerTextColor ? {
                   color: A.bannerTextColor
                 } : void 0,
@@ -154,17 +154,17 @@ let I = {
               className: w.heroHeaderButton,
               color: c.Ttl.WHITE,
               onClick: () => {
-                _ === P.AW.ORBS ? (0, u.Z)(g.Z.getArticleURL(k.BhN.VIRTUAL_CURRENCY_LEARN_MORE)) : n("shop latest category hero", A.categorySkuId)
+                _ === E.AW.ORBS ? (0, u.Z)(g.Z.getArticleURL(k.BhN.VIRTUAL_CURRENCY_LEARN_MORE)) : n("shop latest category hero", A.categorySkuId)
               },
               children: Y
             })
           })]
         }), (0, r.jsx)("div", {
           className: a()(w.row, w.feed, {
-            [w.feedSingleRow]: _ !== P.AW.ORBS
+            [w.feedSingleRow]: _ !== E.AW.ORBS
           }),
           children: t ? (0, r.jsx)(r.Fragment, {
-            children: [void 0, void 0, void 0, void 0].map((e, t) => (0, r.jsx)(S.K, {}, t))
+            children: [void 0, void 0, void 0, void 0].map((e, t) => (0, r.jsx)(j.K, {}, t))
           }) : (0, r.jsx)(r.Fragment, {
             children: q.map((e, t) => {
               let n = m.Z.getCategoryForProduct(e.skuId);
@@ -174,7 +174,7 @@ let I = {
                   pageSection: "top 4",
                   categoryPosition: 0
                 },
-                children: (0, r.jsx)(j.Z, {
+                children: (0, r.jsx)(S.Z, {
                   product: e,
                   category: n,
                   user: N,

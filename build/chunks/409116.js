@@ -20,8 +20,8 @@ let u = e => e.length > 5 ? e.replace(/\.00$/, "") : e,
         currency: l
       },
       renderPrice: d,
-      icon: f,
-      className: b,
+      icon: b,
+      className: f,
       discount: p = s.f_,
       variant: g = "heading-md/semibold"
     } = e, h = u((0, o.T4)(n, l)), m = p !== s.f_ && p.discountPercentage >= 5 ? (0, r.jsxs)(r.Fragment, {
@@ -34,7 +34,7 @@ let u = e => e.length > 5 ? e.replace(/\.00$/, "") : e,
     }) : h;
     return (0, r.jsxs)(a.X6q, {
       variant: g,
-      className: i()(c.container, b),
-      children: [f, null != (t = null == d ? void 0 : d(m)) ? t : m]
+      className: i()(c.container, f),
+      children: [b, null != (t = null == d ? void 0 : d(m)) ? t : m]
     })
   }
