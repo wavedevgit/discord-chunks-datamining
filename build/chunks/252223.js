@@ -99,7 +99,7 @@ function N(e) {
     Z = !V && null != T,
     H = G.length + (V || Z ? 1 : 0),
     Y = H > 1,
-    W = Y && !B && !F && !D,
+    W = k || !D,
     K = () => (0, r.jsx)(s.xv, {
       variant: "text-".concat(P, "/normal"),
       className: a()(S.dot, N),
@@ -111,10 +111,10 @@ function N(e) {
           textVariant: "text-".concat(P, "/medium"),
           textClassName: N,
           iconClassName: C,
-          hideTooltip: k || W,
+          hideTooltip: W,
           hideIcon: B,
           hideText: F,
-          canTruncate: !Y
+          canTruncate: !1
         };
       return null != M && e.push((0, r.jsx)(E.Z, A({
         stream: M,
@@ -155,13 +155,13 @@ function N(e) {
         }), null != e && !x && (0, r.jsx)(h.Z, {
           emoji: e,
           animate: R,
-          hideTooltip: k,
+          hideTooltip: W,
           className: C
         }), null != t && (0, r.jsx)(g.Z, {
           variant: "text-".concat(P, "/medium"),
           className: N,
-          hideTooltip: k,
-          canTruncate: !Y,
+          hideTooltip: W,
+          canTruncate: !1,
           children: t
         })]
       })
@@ -173,8 +173,8 @@ function N(e) {
       }),
       children: [q(), null != U && H > 0 && K(), Q(), L && (0, r.jsx)(m.Z, {})]
     });
-  return W ? (0, r.jsx)(y.Z, {
+  return D ? X() : (0, r.jsx)(y.Z, {
     shouldAnimate: w,
     children: X()
-  }) : X()
+  })
 }
