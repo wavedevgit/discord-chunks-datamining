@@ -26,14 +26,10 @@ class _ extends i.Z {
     let e = s.Z.getGuildId();
     if (null == e) return;
     let t = o.Z.getGuild(e);
-    if (null == t) return;
-    u.ZP.trackExposure({
+    null != t && (u.ZP.trackExposure({
       guildId: t.id,
       location: "GuildPowerupsManager"
-    });
-    let n = (0, u.gV)(t.id, "GuildPowerupsManager"),
-      r = (0, d.D)(a.Z, t);
-    n && r && (c.Z.shouldFetchCatalogForGuild(e) && (0, l.Sn)(e), c.Z.shouldFetchPowerupsForGuild(e) && (0, l.Fm)(e))
+    }), (0, u.gV)(t.id, "GuildPowerupsManager") && (c.Z.shouldFetchCatalogForGuild(e) && (0, l.Sn)(e), c.Z.shouldFetchPowerupsForGuild(e) && (0, l.Fm)(e)))
   }
   handleEntitlementUpdate(e) {
     let {
