@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => m
 }), n(388685);
 var r = n(179360),
   i = n(147913),
@@ -11,9 +11,11 @@ var r = n(179360),
   l = n(713081),
   c = n(905128),
   u = n(50101),
-  d = n(639777);
+  d = n(639777),
+  f = n(981631),
+  _ = n(647086);
 
-function f(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -21,10 +23,10 @@ function f(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class _ extends i.Z {
+class h extends i.Z {
   handleSelectedGuildChange() {
     let e = s.Z.getGuildId();
-    if (null == e) return;
+    if (null == e || e === _._ || e === f.I_8) return;
     let t = o.Z.getGuild(e);
     null != t && (u.ZP.trackExposure({
       guildId: t.id,
@@ -47,11 +49,11 @@ class _ extends i.Z {
     (0, u.gV)(e, "GuildPowerupsManager") && ((0, l.Fm)(e), (0, r.C0)(e))
   }
   constructor(...e) {
-    super(...e), f(this, "stores", new Map().set(s.Z, this.handleSelectedGuildChange)), f(this, "actions", {
+    super(...e), p(this, "stores", new Map().set(s.Z, this.handleSelectedGuildChange)), p(this, "actions", {
       GUILD_POWERUP_ENTITLEMENTS_CREATE: this.handleEntitlementUpdate.bind(this),
       GUILD_POWERUP_ENTITLEMENTS_DELETE: this.handleEntitlementUpdate.bind(this),
       GUILD_APPLIED_BOOSTS_UPDATE: this.handleAppliedBoostUpdate.bind(this)
     })
   }
 }
-let p = new _
+let m = new h

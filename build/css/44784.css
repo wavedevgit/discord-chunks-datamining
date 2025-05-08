@@ -1,6 +1,6 @@
 /**
   Module ID: 44784
-  Original File Name: c9d8deeaa42759ba
+  Original File Name: f9faae35bd21ea6b
 **/
 .scroller__95bea {
     display: flex;
@@ -1073,7 +1073,7 @@
 
 .profileHeader__9c3be {
     flex-shrink: 0;
-    min-height: calc(var(--custom-user-profile-banner-height) + 48px);
+    min-height: calc(var(--custom-user-profile-banner-height) + 80px);
     position: relative
 }
 
@@ -1161,4 +1161,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=c9d8deeaa42759ba.css.map*/
+/*# sourceMappingURL=f9faae35bd21ea6b.css.map*/

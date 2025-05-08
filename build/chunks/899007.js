@@ -90,7 +90,7 @@ function P(e) {
   } = (0, s.cj)([_.Z], () => ({
     status: (0, c.Z)(U) ? O.Skl.STREAMING : _.Z.getStatus(t.id),
     isMobileOnline: _.Z.isMobileOnline(t.id)
-  })), F = void 0 !== w ? w : G, V = S === y.lY.MODAL ? l.EFr.SIZE_120 : l.EFr.SIZE_80, Z = a()(I.avatar, R), {
+  })), F = void 0 !== w ? w : G, V = [y.lY.MODAL, y.lY.MODAL_V2].includes(S) ? l.EFr.SIZE_120 : l.EFr.SIZE_80, Z = a()(I.avatar, R), {
     avatarDecorationSrc: H,
     avatarSrc: Y,
     eventHandlers: W

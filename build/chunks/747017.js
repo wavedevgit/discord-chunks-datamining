@@ -102,7 +102,12 @@ function S(e) {
         n = L ? (0, f.Z)(x) : null,
         i = null != n ? (0, _.Z)(n) : null;
       return (0, r.jsxs)(r.Fragment, {
-        children: [null != e && !R && (0, r.jsx)(h.Z, {
+        children: [null != i && (0, r.jsx)(s.xv, {
+          variant: "text-".concat(N, "/medium"),
+          className: T,
+          color: "none",
+          children: "".concat(i, ": ")
+        }), null != e && !R && (0, r.jsx)(h.Z, {
           emoji: e,
           animate: C,
           hideTooltip: w,
@@ -111,7 +116,7 @@ function S(e) {
           variant: "text-".concat(N, "/medium"),
           className: T,
           hideTooltip: w,
-          children: null != i ? "".concat(i, ": ").concat(t) : t
+          children: t
         })]
       })
     };

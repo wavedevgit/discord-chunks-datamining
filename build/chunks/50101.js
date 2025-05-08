@@ -1,17 +1,19 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Ek: () => a,
-  ZP: () => l,
-  gV: () => s
+  Ek: () => l,
+  ZP: () => u,
+  gV: () => c
 });
 var r = n(818083),
-  i = n(987338);
-let o = (0, r.B)({
+  i = n(981631),
+  o = n(987338),
+  a = n(647086);
+let s = (0, r.B)({
   kind: "guild",
   id: "2025-02_skill_trees",
   label: "Skill Trees",
-  commonTriggerPoint: i.$P.CONNECTION_OPEN,
+  commonTriggerPoint: o.$P.CONNECTION_OPEN,
   defaultConfig: {
     enabled: !1
   },
@@ -24,21 +26,23 @@ let o = (0, r.B)({
   }]
 });
 
-function a(e, t) {
-  return o.useExperiment({
+function l(e, t) {
+  let n = null != e && e !== a._ && e !== i.I_8;
+  return s.useExperiment({
     guildId: e,
     location: t
   }, {
+    disable: !n,
     autoTrackExposure: !1
   }).enabled
 }
 
-function s(e, t) {
-  return o.getCurrentConfig({
+function c(e, t) {
+  return null != e && e !== a._ && e !== i.I_8 && s.getCurrentConfig({
     guildId: e,
     location: t
   }, {
     autoTrackExposure: !1
   }).enabled
 }
-let l = o
+let u = s
