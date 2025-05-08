@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.r(t), n.d(t, {
-  default: () => eP
+  default: () => eR
 }), n(358797), n(539854), n(415506);
 var i, o = n(213919),
   a = n(756647),
@@ -118,57 +118,61 @@ function J() {
 }
 
 function $(e, t) {
-  q("setAuthToken called."), o.setToken(e, t)
+  q("setAuthToken called."), (null == t || t !== R) && o.removeAnalyticsToken(), o.setToken(e, t)
 }
 
-function ee() {
-  return q("removeAuthToken called."), o.removeToken()
+function ee(e) {
+  M = e, o.setAnalyticsToken(e)
 }
 
-function et(e) {
+function et() {
+  return q("removeAuthToken called."), o.removeAnalyticsToken(), o.removeToken()
+}
+
+function en(e) {
   let {
     isPasswordAttempt: t
   } = e;
   j = S.u34.LOGGING_IN, z = z || !0 === t
 }
 
-function en(e) {
+function er(e) {
   let {
     isMultiAccount: t
   } = e;
-  j = S.u34.NONE, B = "", F = !1, V = null, r = null, t || (ee(), Q(!1))
+  j = S.u34.NONE, B = "", F = !1, V = null, r = null, t || (et(), Q(!1))
 }
 
-function er() {
+function ei() {
   j = S.u34.NONE
 }
 
-function ei(e) {
+function eo(e) {
   let {
     token: t
   } = e;
   j = S.u34.NONE, $(t), J(), B = "", F = !1, V = null, K = !1
 }
 
-function eo(e) {
+function ea(e) {
   let {
     error: t
   } = e;
   B = "", F = !1, V = null, j = null != (0, _.p)(t).date_of_birth ? S.u34.LOGIN_AGE_GATE : S.u34.NONE
 }
 
-function ea() {
+function es() {
   K = !0
 }
 
-function es(e) {
+function el(e) {
   let {
     error: t
   } = e;
   B = "", F = !1, V = null, K = !1, j = null != (0, _.F)(t).date_of_birth ? S.u34.LOGIN_AGE_GATE : S.u34.NONE
 }
 
-function el(e) {
+function ec(e) {
   let {
     ticket: t,
     sms: n,
@@ -179,27 +183,27 @@ function el(e) {
   null != t && (B = t, F = n, V = null != r ? r : null, H = i, Z = o), j = S.u34.MFA_STEP
 }
 
-function ec() {
+function eu() {
   j = S.u34.LOGGING_IN_MFA
 }
 
-function eu(e) {
+function ed(e) {
   j = S.u34.ACCOUNT_SCHEDULED_FOR_DELETION, r = e.credentials
 }
 
-function ed(e) {
+function ef(e) {
   j = S.u34.ACCOUNT_DISABLED, r = e.credentials
 }
 
-function ef(e) {
+function e_(e) {
   j = S.u34.PASSWORD_RECOVERY_PHONE_VERIFICATION, r = e.credentials
 }
 
-function e_(e) {
+function ep(e) {
   j = S.u34.PHONE_IP_AUTHORIZATION, r = e.credentials
 }
 
-function ep(e) {
+function eh(e) {
   let t = e.fingerprint;
   null == x ? null != t ? (b.default.track(S.rMx.USER_FINGERPRINT_CHANGED, {
     old_fingerprint: null != k ? (0, a.s)(k) : null,
@@ -210,14 +214,14 @@ function ep(e) {
   })
 }
 
-function eh(e) {
+function em(e) {
   let {
     token: t
   } = e;
   $(t), J()
 }
 
-function em(e) {
+function eg(e) {
   var t;
   let {
     user: n,
@@ -227,10 +231,10 @@ function em(e) {
     auth: a,
     staticAuthSessionId: s
   } = e;
-  q("handleConnectionOpen called"), O.Z.setUser(n.id, n.username, null != (t = n.email) ? t : void 0, (0, E.Z)(n)), w = r, D = i, L = s, M = o, R = n.id, void 0 !== a && (G = a.authenticator_types), c.K.set(P, n.id)
+  q("handleConnectionOpen called"), O.Z.setUser(n.id, n.username, null != (t = n.email) ? t : void 0, (0, E.Z)(n)), w = r, D = i, L = s, ee(o), R = n.id, void 0 !== a && (G = a.authenticator_types), c.K.set(P, n.id)
 }
 
-function eg(e) {
+function eE(e) {
   var t;
   let {
     user: n,
@@ -238,24 +242,24 @@ function eg(e) {
     analyticsToken: i,
     token: o
   } = e;
-  O.Z.setUser(n.id, n.username, null != (t = n.email) ? t : void 0, (0, E.Z)(n)), w = r, M = i, $(o), J(), R = n.id, c.K.set(P, n.id)
+  O.Z.setUser(n.id, n.username, null != (t = n.email) ? t : void 0, (0, E.Z)(n)), w = r, M = i, $(o, n.id), null != i && ee(i), J(), R = n.id, c.K.set(P, n.id)
 }
 
-function eE(e) {
+function eb(e) {
   let {
     code: t
   } = e;
   q("handleConnectionClosed called with code ".concat(t, "."));
   let r = n(952265).nf;
   if (4004 === t) {
-    if (U || r(T.$$) || r(T.dG)) return void eO();
+    if (U || r(T.$$) || r(T.dG)) return void ev();
     b.default.track(S.rMx.APP_USER_DEAUTHENTICATED, {
       user_id: c.K.get(P)
-    }), ev(), setImmediate(() => (0, g.uL)(S.Z5c.DEFAULT_LOGGED_OUT))
+    }), eI(), setImmediate(() => (0, g.uL)(S.Z5c.DEFAULT_LOGGED_OUT))
   }
 }
 
-function eb(e) {
+function ey(e) {
   let {
     token: t,
     userId: n
@@ -263,55 +267,55 @@ function eb(e) {
   q("handleUpdateToken called"), $(t, n), J()
 }
 
-function ey(e) {
+function eO(e) {
   let {
     authSessionIdHash: t
   } = e;
   null != t && (D = t)
 }
 
-function eO() {
-  U = !0, ev(), u.Z.wait(() => {
+function ev() {
+  U = !0, eI(), u.Z.wait(() => {
     (0, g.uL)(S.Z5c.REGISTER)
   })
 }
 
-function ev(e) {
+function eI(e) {
   var t;
   q("handleLogout called.");
-  let n = ee();
+  let n = et();
   null != (t = null == e ? void 0 : e.isSwitchingAccount) && t || (n && J(), Q()), s.ZP.PersistedStore.clearAll({
     omit: ["InstallationManagerStore", "AgeGateStore", "NativePermissionsStore", "MultiAccountStore", "DraftStore", "OverlayStoreV2", "StreamerModeStore", "LoginRequiredActionStore", "LayoutStore", "OverlaySettingsStore"],
     type: (null == e ? void 0 : e.isSwitchingAccount) ? "user-data-only" : "all"
   }), I.Z.clearAll(), h.ZH(), O.Z.clearUser(), c.K.remove(P), R = null, w = null, j = (null == e ? void 0 : e.isSwitchingAccount) ? S.u34.LOGGING_IN : S.u34.NONE, B = "", V = null, F = !1, K = !1, z = !1
 }
 
-function eI() {
+function eS() {
   j = S.u34.FORGOT_PASSWORD
 }
 
-function eS() {
+function eT() {
   j = S.u34.NONE
 }
 
-function eT(e) {
+function eA(e) {
   let {
     user: t
   } = e;
   R = t.id, void 0 !== t.authenticator_types && (G = t.authenticator_types), c.K.set(P, t.id)
 }
 
-function eA(e) {
+function eN(e) {
   let {
     suspendedUserToken: t
   } = e;
   K = !1, W = t, setImmediate(() => (0, g.uL)(S.Z5c.ACCOUNT_STANDING))
 }
 
-function eN() {
-  W = null, j = S.u34.NONE, ev(), setImmediate(() => (0, g.uL)(S.Z5c.DEFAULT_LOGGED_OUT))
+function eC() {
+  W = null, j = S.u34.NONE, eI(), setImmediate(() => (0, g.uL)(S.Z5c.DEFAULT_LOGGED_OUT))
 }
-class eC extends(i = s.ZP.Store) {
+class eP extends(i = s.ZP.Store) {
   initialize() {
     R = c.K.get(P), null == o.getToken() && Q(), this.addChangeListener(() => (0, p.u)(R))
   }
@@ -340,7 +344,7 @@ class eC extends(i = s.ZP.Store) {
     return x
   }
   getAnalyticsToken() {
-    return M
+    return null != M ? M : o.getAnalyticsToken()
   }
   getMFATicket() {
     return B
@@ -379,34 +383,34 @@ class eC extends(i = s.ZP.Store) {
     return z
   }
 }
-A(eC, "displayName", "AuthenticationStore");
-let eP = new eC(u.Z, {
-  CONNECTION_OPEN: em,
-  OVERLAY_INITIALIZE: eg,
-  CONNECTION_CLOSED: eE,
-  AUTH_SESSION_CHANGE: ey,
-  LOGIN: et,
-  LOGIN_SUCCESS: ei,
-  LOGIN_FAILURE: eo,
-  LOGIN_MFA_STEP: el,
-  LOGIN_MFA: ec,
-  LOGIN_ACCOUNT_SCHEDULED_FOR_DELETION: eu,
-  LOGIN_ACCOUNT_DISABLED: ed,
-  LOGIN_PASSWORD_RECOVERY_PHONE_VERIFICATION: ef,
-  LOGIN_PHONE_IP_AUTHORIZATION_REQUIRED: e_,
-  LOGIN_RESET: en,
-  LOGIN_STATUS_RESET: er,
-  LOGIN_SUSPENDED_USER: eA,
-  LOGOUT: ev,
-  FINGERPRINT: ep,
-  REGISTER_SUCCESS: eh,
-  FORGOT_PASSWORD_REQUEST: eI,
-  FORGOT_PASSWORD_SENT: eS,
-  UPDATE_TOKEN: eb,
+A(eP, "displayName", "AuthenticationStore");
+let eR = new eP(u.Z, {
+  CONNECTION_OPEN: eg,
+  OVERLAY_INITIALIZE: eE,
+  CONNECTION_CLOSED: eb,
+  AUTH_SESSION_CHANGE: eO,
+  LOGIN: en,
+  LOGIN_SUCCESS: eo,
+  LOGIN_FAILURE: ea,
+  LOGIN_MFA_STEP: ec,
+  LOGIN_MFA: eu,
+  LOGIN_ACCOUNT_SCHEDULED_FOR_DELETION: ed,
+  LOGIN_ACCOUNT_DISABLED: ef,
+  LOGIN_PASSWORD_RECOVERY_PHONE_VERIFICATION: e_,
+  LOGIN_PHONE_IP_AUTHORIZATION_REQUIRED: ep,
+  LOGIN_RESET: er,
+  LOGIN_STATUS_RESET: ei,
+  LOGIN_SUSPENDED_USER: eN,
+  LOGOUT: eI,
+  FINGERPRINT: eh,
+  REGISTER_SUCCESS: em,
+  FORGOT_PASSWORD_REQUEST: eS,
+  FORGOT_PASSWORD_SENT: eT,
+  UPDATE_TOKEN: ey,
   EXPERIMENTS_FETCH: X,
-  CURRENT_USER_UPDATE: eT,
-  AGE_GATE_LOGOUT_UNDERAGE_NEW_USER: eO,
-  CLOSE_SUSPENDED_USER: eN,
-  PASSWORDLESS_FAILURE: es,
-  PASSWORDLESS_START: ea
+  CURRENT_USER_UPDATE: eA,
+  AGE_GATE_LOGOUT_UNDERAGE_NEW_USER: ev,
+  CLOSE_SUSPENDED_USER: eC,
+  PASSWORDLESS_FAILURE: el,
+  PASSWORDLESS_START: es
 }, u.c.Early)
