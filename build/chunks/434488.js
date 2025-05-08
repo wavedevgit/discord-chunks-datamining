@@ -288,11 +288,7 @@ function R(e) {
     })
   });
   let C = (0, p.Z)({
-      guildId: n.id,
-      context: {
-        channel: t,
-        type: "channel"
-      }
+      guildId: n.id
     }).slice(0, 3),
     {
       analyticsLocations: P
