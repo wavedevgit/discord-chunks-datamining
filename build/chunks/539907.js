@@ -168,6 +168,14 @@ class D extends(r = o.Component) {
       o = e + t.offsetWidth - i + S;
     return o > 0 ? Math.max(S, e - o) : Math.max(S, e)
   }
+  nudgeRightAlignment(e, t, n) {
+    let {
+      nudgeAlignIntoViewport: r
+    } = this.props;
+    if (!r) return 0;
+    let i = t.offsetWidth;
+    return Math.min(n.offsetWidth - e - i - S, 0)
+  }
   getHorizontalAlignmentStyle(e, t, n, r) {
     let {
       align: i
@@ -184,10 +192,11 @@ class D extends(r = o.Component) {
         }
       }
       case "right": {
-        let t = this.formatDimension(n.offsetWidth - e.right);
+        let i = this.formatDimension(n.offsetWidth - e.right),
+          o = this.nudgeRightAlignment(i, t, n);
         return {
           style: O(b({}, r), {
-            right: t
+            right: i + o
           }),
           nudge: 0
         }
@@ -292,7 +301,7 @@ class D extends(r = o.Component) {
         });
       case "overlap_horizontal":
         return this.getVerticalAlignmentStyle(s, t, n, {
-          [r]: 8
+          [r]: S
         });
       case "center":
         return this.getVerticalAlignmentStyle(s, t, n, {
