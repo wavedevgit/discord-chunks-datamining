@@ -1,6 +1,6 @@
-/** Chunk was on 29944 **/
+/** Chunk was on 93727 **/
 n.d(t, {
-  Z: () => s
+  Z: () => u
 });
 var r = n(255367);
 n(73800);
@@ -9,19 +9,19 @@ var l = n(399606),
   a = n(351780),
   o = n(170248);
 
-function s(e) {
+function u(e) {
   let {
     isShaking: t,
     shakeLocation: n,
-    children: s,
-    className: u
+    children: u,
+    className: s
   } = e, c = (0, o.Z)(n);
   return (0, l.e7)([a.Z], () => a.Z.isEnabled({
     shakeLocation: n
   })) ? (0, r.jsx)(i.UkV, {
     isShaking: t,
     intensity: c,
-    className: u,
-    children: s
-  }) : s
+    className: s,
+    children: u
+  }) : u
 }

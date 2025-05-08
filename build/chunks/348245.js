@@ -295,9 +295,10 @@ function W(e) {
   let {
     channelId: t,
     messageRecord: n,
-    reason: r
+    reason: r,
+    noSendFailed: i
   } = e;
-  null != n && s.Z.dispatch({
+  null != n && !0 !== i && s.Z.dispatch({
     type: "MESSAGE_SEND_FAILED",
     channelId: t,
     messageId: n.id,

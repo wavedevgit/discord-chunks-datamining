@@ -1,17 +1,17 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  T: () => a,
+  T: () => i,
   v: () => o
 });
 var r = n(255367);
 n(73800);
 var l = n(481060);
-let i = "collectibles shop product details modal",
-  a = e => {
+let a = "collectibles shop product details modal",
+  i = e => {
     let {
       product: t,
-      category: a,
+      category: i,
       shouldCheckoutWithOrbs: o,
       analyticsSource: s,
       analyticsLocations: c,
@@ -23,7 +23,7 @@ let i = "collectibles shop product details modal",
         default: e
       } = await n.e("2026").then(n.bind(n, 702370));
       return n => {
-        var l, i;
+        var l, a;
         return (0, r.jsx)(e, (l = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -41,29 +41,29 @@ let i = "collectibles shop product details modal",
             })
           }
           return e
-        }({}, n), i = i = {
+        }({}, n), a = a = {
           product: t,
-          category: a,
+          category: i,
           shouldCheckoutWithOrbs: o,
           analyticsSource: s,
           analyticsLocations: c,
           returnRef: u,
           tab: d
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(i)).forEach(function(e) {
-          Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(i, e))
+        })(Object(a)).forEach(function(e) {
+          Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(a, e))
         }), l))
       }
     }, {
-      modalKey: i
+      modalKey: a
     })
   },
   o = () => {
-    (0, l.Mr3)(i)
+    (0, l.Mr3)(a)
   }

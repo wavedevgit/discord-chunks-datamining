@@ -2,21 +2,21 @@
 "use strict";
 n.d(t, {
   k0: () => o,
-  sp: () => a
+  sp: () => i
 });
 var r = n(255367),
   l = n(73800);
-let i = l.createContext(null);
+let a = l.createContext(null);
 
-function a() {
-  return l.useContext(i)
+function i() {
+  return l.useContext(a)
 }
 
 function o(e) {
   let {
     newValue: t,
     children: n
-  } = e, o = a(), s = l.useMemo(() => (function(e) {
+  } = e, o = i(), s = l.useMemo(() => (function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -34,7 +34,7 @@ function o(e) {
     }
     return e
   })({}, o, t), [o, t]);
-  return (0, r.jsx)(i.Provider, {
+  return (0, r.jsx)(a.Provider, {
     value: s,
     children: n
   })

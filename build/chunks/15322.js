@@ -1,4 +1,4 @@
-/** Chunk was on 74767 **/
+/** Chunk was on 62423 **/
 e.exports = {
   banner: "banner__19627",
   potion: "potion__19627",

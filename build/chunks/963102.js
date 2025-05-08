@@ -5,8 +5,8 @@ n.d(t, {
 }), n(539854);
 var r = n(255367),
   l = n(73800),
-  i = n(120356),
-  a = n.n(i),
+  a = n(120356),
+  i = n.n(a),
   o = n(636977),
   s = n(442837),
   c = n(481060),
@@ -23,21 +23,21 @@ var r = n(255367),
   v = n(335131),
   O = n(215023),
   x = n(981631),
-  j = n(388032),
-  S = n(774457);
+  S = n(388032),
+  j = n(774457);
 
 function y(e) {
   let {
     tab: t,
     displayText: n,
     selected: l,
-    handleTransition: i
+    handleTransition: a
   } = e;
   return (0, r.jsx)(f.Z.Title, {
-    onClick: () => i(t),
-    wrapperClassName: S.tabWrapper,
-    className: a()(S.tab, {
-      [S.selected]: l
+    onClick: () => a(t),
+    wrapperClassName: j.tabWrapper,
+    className: i()(j.tab, {
+      [j.selected]: l
     }),
     children: n
   })
@@ -47,25 +47,25 @@ function P(e) {
   let {
     isFullScreen: t,
     isLayer: n,
-    onClose: i,
+    onClose: a,
     selectedTab: P,
     handleTransition: E
-  } = e, k = (0, b.ZP)(), I = (0, s.e7)([_.default], () => _.default.getCurrentUser()), w = (null == I ? void 0 : I.isStaff()) || (null == I ? void 0 : I.isStaffPersonal()) || !1, {
-    enabled: T
+  } = e, k = (0, b.ZP)(), T = (0, s.e7)([_.default], () => _.default.getCurrentUser()), w = (null == T ? void 0 : T.isStaff()) || (null == T ? void 0 : T.isStaffPersonal()) || !1, {
+    enabled: I
   } = (0, h.W)({
     location: "collectibles_shop_header_bar"
   }), B = [{
     tab: O.AW.HOME,
-    displayText: j.intl.string(j.t.ijDDw8)
+    displayText: S.intl.string(S.t.ijDDw8)
   }, {
     tab: O.AW.CATALOG,
-    displayText: j.intl.string(j.t.xFcotb)
+    displayText: S.intl.string(S.t.xFcotb)
   }];
-  T && B.push({
+  I && B.push({
     tab: O.AW.ORBS,
-    displayText: j.intl.string(j.t["KUYR+P"])
+    displayText: S.intl.string(S.t["KUYR+P"])
   });
-  let L = n ? v.DR : i,
+  let L = n ? v.DR : a,
     N = P === O.AW.ORBS ? x.ZY5.SHOP_ORBS_TAB : x.ZY5.COLLECTIBLES_SHOP,
     R = l.useCallback(() => {
       t && (L(), (0, u.Ou)()), (0, g.Y)({
@@ -79,17 +79,17 @@ function P(e) {
   return (0, r.jsx)(c.f6W, {
     theme: k,
     children: e => (0, r.jsxs)(f.Z, {
-      className: a()(e, S.headerBar, {
-        [S.fullscreenHeaderBar]: t
+      className: i()(e, j.headerBar, {
+        [j.fullscreenHeaderBar]: t
       }),
-      innerClassname: T ? S.headerBarInner : void 0,
+      innerClassname: I ? j.headerBarInner : void 0,
       toolbar: t || !w ? null : (0, r.jsx)(l.Fragment, {}),
       children: [(0, r.jsx)(C.Z, {
-        className: S.discordLogo
+        className: j.discordLogo
       }), (0, r.jsx)(f.Z.Title, {
-        children: j.intl.string(j.t.pWG4zc)
+        children: S.intl.string(S.t.pWG4zc)
       }), (0, r.jsx)("div", {
-        className: S.tabs,
+        className: j.tabs,
         children: B.map(e => {
           let {
             tab: t,
@@ -102,15 +102,15 @@ function P(e) {
             handleTransition: E
           }, t)
         })
-      }), (T || t) && (0, r.jsxs)("div", {
-        className: S.alignedRightContent,
-        children: [T && (0, r.jsx)(m.V9, {
+      }), (I || t) && (0, r.jsxs)("div", {
+        className: j.alignedRightContent,
+        children: [I && (0, r.jsx)(m.V9, {
           anchorPillType: t ? "SHOP_FULLSCREEN" : "SHOP",
           analyticsPage: N,
           cardAlignment: m.V9.CardAlignment.END,
-          ctaText: j.intl.string(j.t.VC4Mq6),
+          ctaText: S.intl.string(S.t.VC4Mq6),
           ctaOnClick: R,
-          className: S.balanceWidgetMenu
+          className: j.balanceWidgetMenu
         }), t && (0, r.jsx)(d.Z, {
           closeAction: L,
           keybind: "ESC"

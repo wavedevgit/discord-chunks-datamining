@@ -1,70 +1,70 @@
-/** Chunk was on 29944 **/
+/** Chunk was on 93727 **/
 n.d(t, {
-  L: () => m,
-  Z: () => p
+  L: () => p,
+  Z: () => m
 }), n(388685);
 var r, l = n(255367),
   i = n(73800),
   a = n(120356),
   o = n.n(a),
-  s = n(481060),
-  u = n(885524),
+  u = n(481060),
+  s = n(885524),
   c = n(38755),
   d = n(153066),
   f = n(106209),
-  m = ((r = {}).CONTAIN = "contain", r.COVER = "cover", r);
-let p = i.memo(function(e) {
+  p = ((r = {}).CONTAIN = "contain", r.COVER = "cover", r);
+let m = i.memo(function(e) {
   let {
     streamId: t,
     onResize: n,
     wrapperClassName: r,
     videoComponent: a,
-    className: m,
-    fit: p = "contain",
+    className: p,
+    fit: m = "contain",
     mirror: E = !1,
     paused: g = !1,
-    streamPreviewURL: v,
-    videoSpinnerContext: h,
+    streamPreviewURL: h,
+    videoSpinnerContext: v,
     userId: S,
     streamKey: b
-  } = e, [y, O] = i.useState(!0);
+  } = e, [O, y] = i.useState(!0);
   (0, c.Z)({
     location: "VideoStream",
-    videoSpinnerContext: h,
+    videoSpinnerContext: v,
     userId: S,
     streamId: t,
-    loading: y,
+    loading: O,
     paused: g
   });
   let {
     onReady: Z
-  } = (0, u.Z)({
+  } = (0, s.Z)({
     streamId: t,
     userId: S,
-    loading: y,
-    videoSpinnerContext: h,
+    loading: O,
+    videoSpinnerContext: v,
     streamKey: b,
     paused: g
   }), j = i.useCallback(() => {
-    O(!1), Z()
+    y(!1), Z()
   }, [Z]);
   return (0, l.jsxs)("div", {
     className: o()(f.wrapper, r),
     children: [null != t && (0, l.jsx)(a, {
-      className: o()(f.video, (0, d.l)(f, "video", p), {
+      className: o()(f.video, (0, d.l)(f, "video", m), {
         [f.mirror]: E
-      }, m),
+      }, p),
       streamId: t,
       onResize: n,
       onReady: j,
       paused: g
     }), g ? null : (0, l.jsx)("div", {
       className: o()(f.previewWrapper, {
-        [f.loading]: y
+        [f.loading]: O
       }),
-      children: y && (0, l.jsxs)(i.Fragment, {
-        children: [null != v ? (0, l.jsx)("img", {
-          src: v,
+      children: O && (0, l.jsxs)(i.Fragment, {
+        children: [null != h ? (0, l.jsx)("img", {
+          src: h,
           alt: "",
           className: f.previewImage
         }) : (0, l.jsx)("div", {
@@ -72,7 +72,7 @@ let p = i.memo(function(e) {
           children: (0, l.jsx)("div", {
             className: f.emptyPreview
           })
-        }), (0, l.jsx)(s.$jN, {
+        }), (0, l.jsx)(u.$jN, {
           className: f.spinner
         })]
       })

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   l = n(73800),
-  i = n(120356),
-  a = n.n(i),
+  a = n(120356),
+  i = n.n(a),
   o = n(180650),
   s = n(622535),
   c = n(481060),
@@ -16,7 +16,7 @@ var r = n(255367),
   f = n(388032),
   p = n(806734);
 let g = e => {
-  var t, n, i;
+  var t, n, a;
   let g, {
     category: h,
     subblock: m,
@@ -31,16 +31,16 @@ let g = e => {
     {
       featuredBlockBanner: x
     } = (0, b.YG)(h, m),
-    j = l.useRef(null),
-    S = v === o.T.NAMEPLATE,
-    y = S ? f.intl.string(f.t["/Rk1dn"]) : null == m ? void 0 : m.bodyText;
+    S = l.useRef(null),
+    j = v === o.T.NAMEPLATE,
+    y = j ? f.intl.string(f.t["/Rk1dn"]) : null == m ? void 0 : m.bodyText;
   return (0, r.jsx)(s.$, {
-    innerRef: j,
+    innerRef: S,
     onChange: O,
     threshold: 0,
     children: (0, r.jsxs)(c.P3F, {
       className: p.featuredBlock,
-      innerRef: j,
+      innerRef: S,
       style: {
         backgroundImage: "url(".concat(x, ")")
       },
@@ -51,11 +51,11 @@ let g = e => {
         className: p.featuredBlockBadge
       }), null != y && (0, r.jsx)(c.X6q, {
         lineClamp: 4,
-        className: a()(p.featuredBlockBodyText, {
-          [p.featuredBlockNameplate]: S
+        className: i()(p.featuredBlockBodyText, {
+          [p.featuredBlockNameplate]: j
         }),
         style: {
-          color: null != (i = null == m ? void 0 : m.bannerTextColor) ? i : "white"
+          color: null != (a = null == m ? void 0 : m.bannerTextColor) ? a : "white"
         },
         variant: "heading-lg/semibold",
         children: y

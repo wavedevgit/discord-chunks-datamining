@@ -1,15 +1,15 @@
-/** Chunk was on 29944 **/
+/** Chunk was on 93727 **/
 n.d(t, {
-  AX: () => u,
+  AX: () => s,
   BR: () => d,
   Bo: () => g,
   Df: () => f,
-  LT: () => v,
-  ZZ: () => m,
+  LT: () => h,
+  ZZ: () => p,
   cV: () => c,
   fW: () => E,
-  gr: () => p,
-  oW: () => s
+  gr: () => m,
+  oW: () => u
 });
 var r = n(261470),
   l = n(544891),
@@ -17,7 +17,7 @@ var r = n(261470),
   a = n(984063),
   o = n(981631);
 
-function s(e, t, n, r, l) {
+function u(e, t, n, r, l) {
   i.Z.dispatch({
     type: "SHARED_CANVAS_DRAW_LINE_POINT",
     channelId: e,
@@ -28,7 +28,7 @@ function s(e, t, n, r, l) {
   })
 }
 
-function u(e, t, n, r) {
+function s(e, t, n, r) {
   return l.tn.post({
     url: o.ANM.SHARED_CANVAS_LINES(e, n),
     body: {
@@ -67,7 +67,7 @@ function f(e, t, n) {
   })
 }
 
-function m(e, t) {
+function p(e, t) {
   t.state = a.f.STOP, i.Z.dispatch({
     type: "SHARED_CANVAS_UPDATE_EMOJI_HOSE",
     emojiHose: t,
@@ -76,7 +76,7 @@ function m(e, t) {
   })
 }
 
-function p(e, t, n) {
+function m(e, t, n) {
   i.Z.dispatch({
     type: "SHARED_CANVAS_UPDATE_EMOJI_HOSE",
     emojiHose: e,
@@ -100,7 +100,7 @@ function g(e) {
   })
 }
 
-function v() {
+function h() {
   i.Z.dispatch({
     type: "TOGGLE_OVERLAY_CANVAS"
   })

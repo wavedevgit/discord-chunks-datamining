@@ -1,12 +1,12 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => S
+  Z: () => j
 });
 var r = n(255367),
   l = n(73800),
-  i = n(120356),
-  a = n.n(i),
+  a = n(120356),
+  i = n.n(a),
   o = n(685816),
   s = n(481060),
   c = n(381585),
@@ -23,25 +23,25 @@ var r = n(255367),
   v = n(215023),
   O = n(388032),
   x = n(806734);
-let j = e => {
+let S = e => {
     var t;
     let {
       handleTransition: n,
-      numVisibleItems: i,
+      numVisibleItems: a,
       isFetchingCategories: s,
       tab: u,
       isFullScreen: v
     } = e, {
       noCache: O,
-      includeUnpublished: j
-    } = (0, p.Z)(), S = (0, c.sp)(), y = null != (t = null == S ? void 0 : S.sessionId) ? t : "";
+      includeUnpublished: S
+    } = (0, p.Z)(), j = (0, c.sp)(), y = null != (t = null == j ? void 0 : j.sessionId) ? t : "";
     l.useEffect(() => {
       (0, b.n)({
         sessionId: y,
         checkpoint: b.a.SHOP_MOUNTED,
         tab: u,
         isFullScreen: v,
-        unpublishedCategoriesShown: j,
+        unpublishedCategoriesShown: S,
         cacheDisabled: O
       })
     }, [u]);
@@ -49,10 +49,10 @@ let j = e => {
       isFetchingShopHome: P,
       fetchShopHomeError: E,
       shopBlocks: k,
-      refreshShopHome: I
+      refreshShopHome: T
     } = (0, d.E)(u, {
       noCache: O,
-      includeUnpublished: j,
+      includeUnpublished: S,
       includeBundles: !0,
       logPerf: !0
     }, {
@@ -60,18 +60,18 @@ let j = e => {
       tab: u,
       isFullScreen: v
     }), w = l.useCallback(() => {
-      I()
-    }, [I]);
+      T()
+    }, [T]);
     if (l.useEffect(() => {
         null != E || P || 0 === k.length || (0, b.n)({
           sessionId: y,
           checkpoint: b.a.SHOP_RENDERED,
           tab: u,
           isFullScreen: v,
-          unpublishedCategoriesShown: j,
+          unpublishedCategoriesShown: S,
           cacheDisabled: O
         })
-      }, [E, P, k.length, j, O, y, u, v]), null != E) return (0, r.jsx)(f.Z, {
+      }, [E, P, k.length, S, O, y, u, v]), null != E) return (0, r.jsx)(f.Z, {
       onRetry: w,
       errorOrigin: f.i.SHOP_PAGE,
       errorMessage: E.message
@@ -89,11 +89,11 @@ let j = e => {
       }), (0, r.jsx)(h.Z, {
         isLoading: P,
         handleTransition: n,
-        numVisibleItems: i,
+        numVisibleItems: a,
         tab: u
       })]
     });
-    let T = (e, t) => {
+    let I = (e, t) => {
       if (null == e) return null;
       let l = null;
       switch (e.type) {
@@ -117,7 +117,7 @@ let j = e => {
           l = (0, r.jsx)(h.Z, {
             isLoading: P || s,
             handleTransition: n,
-            numVisibleItems: i,
+            numVisibleItems: a,
             sortedSkuIds: c,
             tab: u
           }, t);
@@ -140,37 +140,37 @@ let j = e => {
           return null
       }
       return (0, r.jsx)("div", {
-        className: a()(x.blockContainer, {
+        className: i()(x.blockContainer, {
           [x.topBlockContainer]: 0 === t
         }),
         children: l
       }, t)
     };
     return (0, r.jsx)(r.Fragment, {
-      children: k.map((e, t) => T(e, t))
+      children: k.map((e, t) => I(e, t))
     })
   },
-  S = e => {
+  j = e => {
     let {
       isFullScreen: t,
       handleTransition: n,
       numVisibleItems: l,
-      tab: i,
+      tab: a,
       isFetchingCategories: o
     } = e, c = (0, u.R)("CollectiblesFeedShop");
     return (0, r.jsx)("div", {
-      className: a()(x.shop, {
+      className: i()(x.shop, {
         [x.shopFullscreen]: t
       }),
       children: (0, r.jsxs)("div", {
-        className: a()(x.content, x.mainContent),
-        children: [(0, r.jsx)(j, {
+        className: i()(x.content, x.mainContent),
+        children: [(0, r.jsx)(S, {
           handleTransition: n,
           numVisibleItems: l,
           isFetchingCategories: o,
-          tab: i,
+          tab: a,
           isFullScreen: t
-        }), i !== v.AW.CATALOG && l >= c && (0, r.jsxs)("div", {
+        }), a !== v.AW.CATALOG && l >= c && (0, r.jsxs)("div", {
           className: x.endOfFeed,
           children: [(0, r.jsx)(s.X6q, {
             variant: "heading-md/semibold",

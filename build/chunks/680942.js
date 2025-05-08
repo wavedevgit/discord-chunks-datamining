@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   l = n(73800),
-  i = n(481060),
-  a = n(727637),
+  a = n(481060),
+  i = n(727637),
   o = n(906732),
   s = n(333867),
   c = n(677232),
@@ -71,16 +71,16 @@ let m = {
       onSuccess: C,
       tooltipDelay: v,
       isGiftEasterEggEnabled: O,
-      color: x = i.Ttl.BRAND
+      color: x = a.Ttl.BRAND
     } = e, {
-      analyticsLocations: j
-    } = (0, o.ZP)(), S = l.useRef(null), y = (0, a.Z)(S), P = (0, d.hv)("CollectiblesShopGiftButton");
-    return (0, u.x6)(t) ? null : (0, r.jsx)(i.ua7, {
+      analyticsLocations: S
+    } = (0, o.ZP)(), j = l.useRef(null), y = (0, i.Z)(j), P = (0, d.hv)("CollectiblesShopGiftButton");
+    return (0, u.x6)(t) ? null : (0, r.jsx)(a.ua7, {
       text: g.intl.string(g.t["JCFN//"]),
       delay: v,
       children: e => {
-        var l, a;
-        return (0, r.jsx)(i.zxk, (l = function(e) {
+        var l, i;
+        return (0, r.jsx)(a.zxk, (l = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -97,12 +97,12 @@ let m = {
             })
           }
           return e
-        }({}, e), a = a = {
-          buttonRef: S,
+        }({}, e), i = i = {
+          buttonRef: j,
           className: h.giftButton,
           color: x,
-          look: i.zxk.Looks.FILLED,
-          size: i.PhG.ICON,
+          look: a.zxk.Looks.FILLED,
+          size: a.PhG.ICON,
           innerClassName: h.giftButtonInner,
           "aria-label": g.intl.string(g.t.PEjaCw),
           onClick: e => {
@@ -113,7 +113,7 @@ let m = {
               }),
               isGift: !0,
               giftingOrigin: f.Wt.SHOP_PAGE,
-              analyticsLocations: j,
+              analyticsLocations: S,
               returnRef: _,
               variantsReturnStyle: P,
               onClose: null != C ? e => {
@@ -126,19 +126,19 @@ let m = {
             isContentDismissed: !0,
             themeOverride: p.BR.DARK,
             boxColors: m
-          }) : (0, r.jsx)(i.OgN, {
+          }) : (0, r.jsx)(a.OgN, {
             size: "md",
             color: "currentColor"
           })
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(a)).forEach(function(e) {
-          Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(a, e))
+        })(Object(i)).forEach(function(e) {
+          Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(i, e))
         }), l))
       }
     })

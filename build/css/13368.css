@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: dd67dc9c72c4debe
+  Original File Name: ded35af6d31a7403
 **/
 .debugMode_fa952e {
     background-color: rgba(255,0,0,.25);
@@ -2834,83 +2834,6 @@
     width: 100%
 }
 
-.container_b41471 {
-    height: 100%;
-    position: relative;
-    width: 100%
-}
-
-.splash_b41471 {
-    align-items: center;
-    background: var(--opacity-black-60);
-    display: flex;
-    flex-direction: column;
-    justify-content: center
-}
-
-.splash_b41471,.splashImage_b41471 {
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0
-}
-
-.splashImage_b41471 {
-    height: 100%;
-    object-fit: cover;
-    width: 100%
-}
-
-.header_b41471 {
-    color: var(--white-500);
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 40px;
-    margin: 4px 0
-}
-
-.header_b41471.medium_b41471 {
-    font-size: 20px;
-    line-height: 24px
-}
-
-.header_b41471.small_b41471,.subheader_b41471 {
-    font-size: 14px;
-    line-height: 18px
-}
-
-.subheader_b41471 {
-    color: var(--text-normal);
-    margin-top: 4px
-}
-
-.subheader_b41471.medium_b41471 {
-    font-size: 12px;
-    line-height: 16px
-}
-
-.subheader_b41471.small_b41471 {
-    display: none
-}
-
-.button_b41471 {
-    background-color: var(--primary-500);
-    border-radius: 100px;
-    color: var(--white-500);
-    margin: 0 4px;
-    padding: 10px 16px
-}
-
-.button_b41471:hover {
-    background-color: var(--primary-600)
-}
-
-.buttons_b41471 {
-    display: flex;
-    margin-top: 4px
-}
-
 .tile_ba65b0 {
     height: 100%;
     width: 100%
@@ -4286,4 +4209,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     width: 96px
 }
 
-/*# sourceMappingURL=dd67dc9c72c4debe.css.map*/
+/*# sourceMappingURL=ded35af6d31a7403.css.map*/

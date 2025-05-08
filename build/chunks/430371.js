@@ -1,4 +1,4 @@
-/** Chunk was on 74767 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => S
 }), n(388685);
@@ -84,7 +84,7 @@ function S(e) {
     Y = (0, c.Z)(z),
     [q, K] = i.useState(!0),
     [X, Q] = i.useState(!1),
-    J = k.type === x.fO.ACTIVITY || k.type === x.fO.PRESENCE_EMBEDDED_ACTIVITY,
+    J = k.type === x.fO.ACTIVITY,
     $ = (0, u.Z)(J ? k.applicationId : void 0),
     ee = !J && null != k.streamId,
     et = U <= 2 * P + 144,

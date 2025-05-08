@@ -1,4 +1,4 @@
-/** Chunk was on 74767 **/
+/** Chunk was on 62423 **/
 e.exports = {
   placeholderPulse: "placeholderPulse_c8ffbb",
   container: "container_c8ffbb",

@@ -1,14 +1,14 @@
-/** Chunk was on 29944 **/
+/** Chunk was on 93727 **/
 n.d(t, {
-  Z: () => p
+  Z: () => m
 });
 var r = n(73800),
   l = n(392711),
   i = n.n(l),
   a = n(772848),
   o = n(846519),
-  s = n(125268),
-  u = n(984063),
+  u = n(125268),
+  s = n(984063),
   c = n(813900);
 
 function d(e) {
@@ -42,54 +42,54 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = i().debounce(s.BR, c.Fq, {
+let p = i().debounce(u.BR, c.Fq, {
   maxWait: c.Fq
 });
 
-function p(e, t, n) {
+function m(e, t, n) {
   let l = r.useRef((0, a.Z)()),
     i = r.useRef(new o.Xp),
-    p = r.useCallback(r => {
-      r.lastUpdatedAt = Date.now(), (0, s.gr)(r, e, n), (0, s.BR)(t, n, r)
+    m = r.useCallback(r => {
+      r.lastUpdatedAt = Date.now(), (0, u.gr)(r, e, n), (0, u.BR)(t, n, r)
     }, [t, n, e]),
-    E = r.useCallback((r, o, m) => {
+    E = r.useCallback((r, o, p) => {
       l.current = (0, a.Z)();
       let E = f(d({}, r), {
         id: l.current,
         x: o,
-        y: m,
+        y: p,
         userId: e,
-        state: u.f.START,
+        state: s.f.START,
         lastUpdatedAt: Date.now()
       });
-      (0, s.BR)(t, n, E), (0, s.gr)(E, e, n), i.current.start(c.FO, () => p(E))
-    }, [e, t, n, p]),
+      (0, u.BR)(t, n, E), (0, u.gr)(E, e, n), i.current.start(c.FO, () => m(E))
+    }, [e, t, n, m]),
     g = r.useCallback((r, a, o) => {
       let E = f(d({}, r), {
         id: l.current,
         x: a,
         y: o,
         userId: e,
-        state: u.f.START,
+        state: s.f.START,
         lastUpdatedAt: Date.now()
       });
-      m(t, n, E), (0, s.gr)(E, e, n), i.current.start(c.FO, () => p(E))
-    }, [e, t, n, p]),
-    v = r.useCallback((r, a, o) => {
-      m.cancel(), (0, s.Df)(t, n, l.current), (0, s.gr)(f(d({}, r), {
+      p(t, n, E), (0, u.gr)(E, e, n), i.current.start(c.FO, () => m(E))
+    }, [e, t, n, m]),
+    h = r.useCallback((r, a, o) => {
+      p.cancel(), (0, u.Df)(t, n, l.current), (0, u.gr)(f(d({}, r), {
         id: l.current,
         x: a,
         y: o,
         userId: e,
-        state: u.f.STOP,
+        state: s.f.STOP,
         lastUpdatedAt: Date.now()
       }), e, n), i.current.stop()
     }, [t, n, e]),
-    h = r.useCallback((e, t, n) => g(e, t, n), [g]);
+    v = r.useCallback((e, t, n) => g(e, t, n), [g]);
   return r.useMemo(() => ({
     handleMouseDown: E,
     handleMouseMove: g,
-    handleMouseUp: v,
-    handleMouseEnter: h
-  }), [E, h, g, v])
+    handleMouseUp: h,
+    handleMouseEnter: v
+  }), [E, v, g, h])
 }

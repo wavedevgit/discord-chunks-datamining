@@ -1,6 +1,6 @@
 /** Chunk was on 13368 **/
 n.d(t, {
-  ZP: () => b,
+  ZP: () => v,
   fO: () => g,
   sF: () => p
 });
@@ -56,8 +56,8 @@ let p = a.forwardRef(function(e, t) {
     tooltipText: i,
     tooltipColor: p,
     icon: g,
-    iconProps: b,
-    onClick: v,
+    iconProps: v,
+    onClick: b,
     onTooltipShow: h,
     onTooltipHide: I,
     disabled: y,
@@ -103,7 +103,7 @@ let p = a.forwardRef(function(e, t) {
           onMouseEnter: m,
           onMouseLeave: p,
           onClick: e => {
-            null == h || h(), v(e)
+            null == h || h(), b(e)
           },
           "aria-label": null != a ? a : n,
           disabled: y,
@@ -112,7 +112,7 @@ let p = a.forwardRef(function(e, t) {
           children: [null != g ? (0, r.jsx)(g, f({
             className: d.icon,
             color: "currentColor"
-          }, b)) : null, null != A ? (0, r.jsx)("div", {
+          }, v)) : null, null != A ? (0, r.jsx)("div", {
             className: o()(d.icon, d.buttonContent),
             children: A
           }) : null, C && (0, r.jsx)(l.K1N, {}), P && (0, r.jsx)(l.IGR, {
@@ -144,7 +144,7 @@ function g(e) {
   })
 }
 
-function b(e) {
+function v(e) {
   var {
     children: t
   } = e, n = m(e, ["children"]);

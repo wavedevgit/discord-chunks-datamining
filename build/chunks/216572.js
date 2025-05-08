@@ -9,6 +9,7 @@ var i = n(442837),
 
 function l(e) {
   return (0, i.e7)([r.Z], () => {
+    if (null == e) return !1;
     let t = r.Z.getGuild(e);
     return null != t && t.getModeratorReportingEnabled() && null != t.getModeratorReportChannelId()
   })

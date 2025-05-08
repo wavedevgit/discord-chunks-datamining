@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   l = n(73800),
-  i = n(120356),
-  a = n.n(i),
+  a = n(120356),
+  i = n.n(a),
   o = n(442837),
   s = n(481060),
   c = n(782568),
@@ -23,25 +23,25 @@ var r = n(255367),
   v = n(709999),
   O = n(328626),
   x = n(619899),
-  j = n(215023),
-  S = n(981631),
+  S = n(215023),
+  j = n(981631),
   y = n(388032),
   P = n(806734);
 let E = e => {
   let {
     isLoading: t,
     sortedSkuIds: n,
-    handleTransition: i,
+    handleTransition: a,
     numVisibleItems: E,
     tab: k
-  } = e, I = (0, o.e7)([d.default], () => d.default.getCurrentUser()), w = p.ZP.canUseCollectibles(I), T = (0, m.s)("useShopHomeSorting") && k === j.AW.HOME, {
+  } = e, T = (0, o.e7)([d.default], () => d.default.getCurrentUser()), w = p.ZP.canUseCollectibles(T), I = (0, m.s)("useShopHomeSorting") && k === S.AW.HOME, {
     sortType: B,
     setSortType: L,
     sortedItems: N,
     sortOptions: R,
     shuffleProducts: A,
     showRecommendationOption: Z
-  } = (0, _.N)(n, w), F = (0, x.St)(N), D = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), H = (0, o.e7)([b.Z], () => b.Z.isFocused()), M = !D && H, {
+  } = (0, _.N)(n, w), F = (0, x.St)(N), H = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), D = (0, o.e7)([b.Z], () => b.Z.isFocused()), M = !H && D, {
     animationPhase: W,
     startAnimation: V
   } = (0, O.y)(), U = l.useCallback(e => {
@@ -50,15 +50,15 @@ let E = e => {
       onOutroComplete: () => L(e)
     })
   }, [V, L]);
-  return null == I ? null : (0, r.jsxs)("div", {
-    className: a()(P.popularPicksSection, P.centeredSection),
+  return null == T ? null : (0, r.jsxs)("div", {
+    className: i()(P.popularPicksSection, P.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: P.blockHeader,
       children: [(0, r.jsxs)("div", {
         className: P.headerLeft,
         children: [(0, r.jsx)(s.X6q, {
           variant: "heading-lg/semibold",
-          children: k === j.AW.ORBS ? y.intl.string(y.t.dFgeub) : y.intl.string(y.t.NSv5KS)
+          children: k === S.AW.ORBS ? y.intl.string(y.t.dFgeub) : y.intl.string(y.t.NSv5KS)
         }), Z && (0, r.jsx)(s.ua7, {
           text: y.intl.string(y.t["3taPdn"]),
           position: "top",
@@ -83,7 +83,7 @@ let E = e => {
               }
               return e
             }({}, e), n = n = {
-              onClick: () => (0, c.Z)(f.Z.getArticleURL(S.BhN.DATA_USED_FOR_RECOMMENDED)),
+              onClick: () => (0, c.Z)(f.Z.getArticleURL(j.BhN.DATA_USED_FOR_RECOMMENDED)),
               className: P.informationIcon,
               children: (0, r.jsx)(s.d3s, {
                 size: "sm"
@@ -102,7 +102,7 @@ let E = e => {
         })]
       }), (0, r.jsxs)("div", {
         className: P.headerRight,
-        children: [T && (0, r.jsxs)(r.Fragment, {
+        children: [I && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.Text, {
             variant: "text-xs/bold",
             className: P.sortByText,
@@ -114,7 +114,7 @@ let E = e => {
             isSelected: e => e === B,
             serialize: e => e
           })]
-        }), k === j.AW.HOME && (T ? (0, r.jsx)(s.zxk, {
+        }), k === S.AW.HOME && (I ? (0, r.jsx)(s.zxk, {
           color: s.Ttl.PRIMARY,
           look: s.iLD.FILLED,
           onClick: () => V({
@@ -126,7 +126,7 @@ let E = e => {
         }) : (0, r.jsx)(s.zxk, {
           color: s.Ttl.PRIMARY,
           look: s.iLD.FILLED,
-          onClick: () => i("shop all top"),
+          onClick: () => a("shop all top"),
           children: y.intl.string(y.t.xFcotb)
         }))]
       })]
@@ -151,7 +151,7 @@ let E = e => {
           children: (0, r.jsx)(v.Z, {
             product: e,
             category: l,
-            user: I,
+            user: T,
             tab: k,
             className: n
           })
