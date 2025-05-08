@@ -19,7 +19,7 @@ function d(e) {
     renderComponent: p,
     nudgeAlignIntoViewport: h = !1,
     skipForceHide: f = !1
-  } = e, m = i.useContext(c.h9), [g, b] = i.useState(""), [_, y] = i.useState(!1), C = (0, l.e7)([s.ZP], () => s.ZP.callHeaderHeight), x = i.createRef(), v = i.useRef(0);
+  } = e, m = i.useContext(c.h9), [g, b] = i.useState(""), [_, y] = i.useState(!1), C = (0, l.e7)([s.ZP], () => s.ZP.callHeaderHeight), x = i.useRef(null), v = i.useRef(0);
   i.useEffect(() => {
     let e = t.current;
     if (null != e) return e.addEventListener("click", d), () => e.removeEventListener("click", d)
