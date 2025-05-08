@@ -44,17 +44,15 @@ let g = (e, t) => (null == e ? void 0 : e.status) === o.Vq.EARNED ? u.intl.forma
   h = () => {
     var e;
     let t = (0, o.Rw)(),
-      n = null != (e = (0, o.GG)()) ? e : new Date;
-    if (null == t) return null;
-    let r = (0, c.J)(t.id),
-      {
-        id: d,
-        nameUnformatted: h,
-        tenureReqNumMonths: f,
-        hasWideArt: b
-      } = t,
-      _ = u.intl.string(h),
-      x = (0, a.q)(d, f);
+      n = null != (e = (0, o.GG)()) ? e : new Date,
+      r = (0, c.u)();
+    if (null == t || null == r) return null;
+    let {
+      id: d,
+      nameUnformatted: h,
+      tenureReqNumMonths: f,
+      hasWideArt: b
+    } = t, _ = u.intl.string(h), x = (0, a.q)(d, f);
     return (0, i.jsxs)("div", {
       className: s()(m.container, p(d)),
       children: [(0, i.jsx)("div", {}), " ", (0, i.jsx)("img", {
