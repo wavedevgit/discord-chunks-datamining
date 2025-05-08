@@ -40,8 +40,8 @@ var r = n(255367),
   M = n(258871),
   U = n(340541),
   G = n(972264),
-  V = n(50101),
-  B = n(908062),
+  B = n(50101),
+  V = n(908062),
   H = n(639777),
   F = n(11352),
   z = n(304445),
@@ -538,8 +538,8 @@ function eP(e) {
   } = (0, Z.y)(), eR = null != (t = null == o ? void 0 : o.hasFeature(eg.oNc.COMMUNITY)) && t, eD = (0, d.e7)([W.Z], () => !s().isEmpty(W.Z.getThreadsForGuild(n))), ek = es.ZP.isNewUser(R), eM = Y && !ek, eU = (0, S.Z)(R);
   (0, x.Z)(o);
   let eG = (0, P.wE)(p.z.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
-    eV = (0, G.Z)(n),
-    eB = (0, w.Z)(n),
+    eB = (0, G.Z)(n),
+    eV = (0, w.Z)(n),
     eH = (0, d.e7)([ea.Z], () => ea.Z.getChannelId()),
     eF = (0, d.e7)([el.Z], () => el.Z.desyncedVoiceStatesCount),
     ez = F.Y.useExperiment({
@@ -547,9 +547,9 @@ function eP(e) {
     }, {
       autoTrackExposure: !0
     }).enabled,
-    eW = (0, V.Ek)(n, "ConnectedGuildSidebar"),
+    eW = (0, B.Ek)(n, "ConnectedGuildSidebar"),
     eY = (0, H.Z)(n),
-    eK = (0, B.Z)(n),
+    eK = (0, V.Z)(n),
     eq = eW && !1 === eY && eK.length > 0,
     eX = (0, N.Q3)("GuildSidebar");
   return (0, r.jsx)(eT, {
@@ -579,8 +579,8 @@ function eP(e) {
     showNewUnreadsBar: eR,
     showActiveThreadsNotice: C && null != eI && eI >= 200 && eD,
     showGuildSoundboardPermissionUpsell: eC,
-    showMediaChannelUpsell: eV,
-    showTierTemplatesUpsell: eB,
+    showMediaChannelUpsell: eB,
+    showTierTemplatesUpsell: eV,
     isHeaderPopoutOpen: eL,
     enableStudyGroup: U,
     isGuildHeaderDismissibleTooltipShown: eh,

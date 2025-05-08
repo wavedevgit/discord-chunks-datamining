@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => V
+  Z: () => B
 }), n(388685), n(415506), n(997841);
 var r = n(255367);
 n(73800);
@@ -65,7 +65,7 @@ async function G(e, t, n, r) {
     location: "In-Game Invite"
   })
 }
-let V = {
+let B = {
   [M.Etm.SEND_ACTIVITY_JOIN_INVITE]: {
     scope: {
       [k.Gp.ANY]: [i.x.RPC, k.lH]

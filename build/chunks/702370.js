@@ -345,6 +345,7 @@ let eT = {
           position: "top",
           text: i,
           shouldShow: a,
+          "aria-label": !1,
           children: i => (0, r.jsx)(h.zxk, eN(eS({}, i), {
             innerClassName: eE.button,
             look: h.zxk.Looks.FILLED,

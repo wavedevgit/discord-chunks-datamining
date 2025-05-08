@@ -40,8 +40,8 @@ var r = n(255367),
   M = n(637853),
   U = n(326145),
   G = n(269675),
-  V = n(242601),
-  B = n(416568),
+  B = n(242601),
+  V = n(416568),
   H = n(613609),
   F = n(160404),
   z = n(225675),
@@ -243,7 +243,7 @@ let eN = (0, u.Un)({
       guildId: e,
       channelId: t
     } = (0, J.Z)(), n = (0, h.e7)([el.Z], () => null != t ? t : el.Z.getChannelId(e));
-    return window.location.pathname.startsWith(e_.Z5c.GLOBAL_DISCOVERY) || window.location.pathname.startsWith(e_.Z5c.GUILD_DISCOVERY) || (0, Q.OG)() ? (0, r.jsx)(R.Z, {}) : null != e ? (0, r.jsx)(V.Z, {
+    return window.location.pathname.startsWith(e_.Z5c.GLOBAL_DISCOVERY) || window.location.pathname.startsWith(e_.Z5c.GUILD_DISCOVERY) || (0, Q.OG)() ? (0, r.jsx)(R.Z, {}) : null != e ? (0, r.jsx)(B.Z, {
       selectedChannelId: n,
       guildId: e
     }, e) : (0, r.jsx)(ef.Z, {})
@@ -268,8 +268,8 @@ let eN = (0, u.Un)({
     }) : null
   },
   eG = () => (0, r.jsx)(em.Z, {}),
-  eV = () => (0, r.jsx)(eb.Z, {}),
-  eB = function() {
+  eB = () => (0, r.jsx)(eb.Z, {}),
+  eV = function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
     return function(t) {
       let {
@@ -465,7 +465,7 @@ function eX(e) {
         [ev.hidden]: p,
         [ev.channelListHidden]: o
       }),
-      children: [O && s && !c && (0, r.jsx)(B.Z, {
+      children: [O && s && !c && (0, r.jsx)(V.Z, {
         className: ev.guilds,
         themeOverride: n
       }), !o && (0, r.jsxs)(r.Fragment, {
@@ -530,7 +530,7 @@ function eQ() {
     });
   return (0, r.jsxs)("div", {
     className: ev.container,
-    children: [f && !u && !E && (0, r.jsx)(B.Z, {
+    children: [f && !u && !E && (0, r.jsx)(V.Z, {
       className: ev.guilds,
       themeOverride: n
     }), (0, r.jsx)(D.Z.Provider, {
@@ -576,24 +576,24 @@ function eQ() {
                   disableTrack: !0
                 }), (0, r.jsx)(S.Z, {
                   path: e_.Z5c.APPLICATION_STORE,
-                  render: eV,
+                  render: eB,
                   impressionName: c.ImpressionNames.APPLICATION_STORE,
                   disableTrack: !0
                 }), (0, r.jsx)(S.Z, {
                   path: e_.Z5c.COLLECTIBLES_SHOP_FULLSCREEN,
-                  render: eB(!0),
+                  render: eV(!0),
                   disableTrack: !0
                 }), (0, r.jsx)(S.Z, {
                   path: e_.Z5c.COLLECTIBLES_SHOP_WITH_TAB(":tab"),
-                  render: eB(!1),
+                  render: eV(!1),
                   disableTrack: !0
                 }), (0, r.jsx)(S.Z, {
                   path: e_.Z5c.COLLECTIBLES_SHOP,
-                  render: eB(!1),
+                  render: eV(!1),
                   disableTrack: !0
                 }), (0, r.jsx)(S.Z, {
                   path: e_.Z5c.COLLECTIBLES_SHOP_PRODUCT_DETAIL(":skuId"),
-                  render: eB(!1),
+                  render: eV(!1),
                   disableTrack: !0
                 }), (0, r.jsx)(S.Z, {
                   path: e_.Z5c.MESSAGE_REQUESTS,

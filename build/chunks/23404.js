@@ -103,7 +103,7 @@ function w(e) {
       fromContent: f.jn.ACTIVITY_PANEL,
       questId: E.id
     }))
-  }, [E, O]), V = i.useCallback(() => {
+  }, [E, O]), B = i.useCallback(() => {
     O({
       questId: E.id,
       questContent: f.jn.ACTIVITY_PANEL,
@@ -112,7 +112,7 @@ function w(e) {
       fromContent: f.jn.ACTIVITY_PANEL,
       questId: E.id
     })
-  }, [E.id, O]), B = (0, C.hf)({
+  }, [E.id, O]), V = (0, C.hf)({
     quest: E,
     location: f.jn.ACTIVITY_PANEL
   }), H = (0, p.tP)(E), F = (null == (t = E.userStatus) ? void 0 : t.enrolledAt) != null, z = (null == (n = E.userStatus) ? void 0 : n.completedAt) != null, W = (null == (l = E.userStatus) ? void 0 : l.claimedAt) != null, Y = (null == E ? void 0 : E.userStatus) != null && (0, g.zE)(E.userStatus, f.jn.ACTIVITY_PANEL), K = (0, p.Rf)(E), q = (0, b.DD)({
@@ -196,7 +196,7 @@ function w(e) {
           color: s.zxk.Colors.PRIMARY,
           fullWidth: !0,
           size: s.zxk.Sizes.SMALL,
-          onClick: V,
+          onClick: B,
           children: j.intl.string(j.t.LLLLPD)
         }), (0, r.jsx)(s.zxk, {
           className: A.cta,
@@ -218,7 +218,7 @@ function w(e) {
         className: A.cta,
         color: s.zxk.Colors.BRAND,
         fullWidth: !0,
-        onClick: B,
+        onClick: V,
         size: s.zxk.Sizes.SMALL,
         children: j.intl.string(j.t.cfY4PD)
       })]

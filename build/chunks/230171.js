@@ -67,7 +67,7 @@ function R(e) {
     },
     applicationId: t.id,
     botUserId: null == b ? void 0 : b.id
-  }), V = null != E && x && H, z = B && x && H, W = (0, A.z)(t), K = i.useMemo(() => {
+  }), V = null != E && x && H, z = B && x, W = (0, A.z)(t), K = i.useMemo(() => {
     let e = [];
     return z && e.push({
       label: null == U ? w.intl.string(w.t.cnBQPD) : w.intl.string(w.t.VJlc0d),
