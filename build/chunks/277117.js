@@ -20,8 +20,8 @@ var i = n(442837),
   b = n(681837),
   _ = n(78806),
   y = n(91433),
-  C = n(900927),
-  x = n(944043),
+  x = n(900927),
+  C = n(944043),
   v = n(678738),
   j = n(638970),
   O = n(502762),
@@ -87,7 +87,7 @@ function T(e) {
         applicationId: e.applicationId,
         channelId: A.id
       })
-    }, e.applicationId)), (0, r.jsx)(x.Z, {
+    }, e.applicationId)), (0, r.jsx)(C.Z, {
       user: t,
       className: N.card
     }), t.isProvisional && (0, r.jsx)(a.wQ, {
@@ -127,7 +127,7 @@ function T(e) {
       }), (0, r.jsx)(v.Z, {
         heading: t.bot ? Z.intl.string(Z.t["A//N4u"]) : Z.intl.string(Z.t.a6XYDw),
         headingColor: "header-primary",
-        children: (0, r.jsx)(C.Z, {
+        children: (0, r.jsx)(x.Z, {
           userId: t.id
         })
       })]

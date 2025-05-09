@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(351780),
   _ = n(843693),
   y = n(641033),
-  C = n(989830),
-  x = n(388032),
+  x = n(989830),
+  C = n(388032),
   v = n(837265);
 let j = i.memo(function(e) {
     let {
@@ -80,7 +80,7 @@ let j = i.memo(function(e) {
             color: u
           },
           variant: "text-sm/bold",
-          children: x.intl.format(x.t["6bgVlp"], {
+          children: C.intl.format(C.t["6bgVlp"], {
             multiplier: n
           })
         }), a && (0, r.jsxs)(r.Fragment, {
@@ -112,7 +112,7 @@ let j = i.memo(function(e) {
         }), 1 === n && (0, r.jsx)(c.Text, {
           className: v.tip,
           variant: "text-sm/bold",
-          children: x.intl.string(x.t.b5Cpoa)
+          children: C.intl.string(C.t.b5Cpoa)
         })]
       })]
     })
@@ -123,7 +123,7 @@ let j = i.memo(function(e) {
     } = e, n = (0, s.e7)([h.default], () => h.default.getId()), l = (0, s.e7)([f.Z], () => f.Z.isTyping(t, n), [t, n]), o = (0, s.e7)([b.Z], () => b.Z.isEnabled()), d = (0, s.e7)([_.ZP], () => _.ZP.isComboing(n, t), [t, n]), {
       ref: p,
       width: m = 0
-    } = (0, u.ZP)(), [g, y] = i.useState(!1), x = (0, C.Z)(t), E = o && d && l;
+    } = (0, u.ZP)(), [g, y] = i.useState(!1), C = (0, x.Z)(t), E = o && d && l;
     i.useEffect(() => {
       E && y(!0);
       let e = setTimeout(() => y(E), 1e3);
@@ -135,10 +135,10 @@ let j = i.memo(function(e) {
         pointerEvents: "none",
         config: a.config.stiff
       }),
-      P = i.useMemo(() => null != x ? x : {
+      P = i.useMemo(() => null != C ? C : {
         value: 0,
         multiplier: 1
-      }, [x]),
+      }, [C]),
       S = i.useRef(P);
     i.useEffect(() => {
       (P.multiplier > 1 || P.value > 0) && (S.current = P)

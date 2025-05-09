@@ -25,8 +25,8 @@ function m(e) {
     comparator: b,
     selected: _,
     checked: y,
-    onClick: C,
-    onMouseEnter: x,
+    onClick: x,
+    onMouseEnter: C,
     "aria-setsize": v,
     "aria-posinset": j
   } = e, O = (0, a.e7)([p.Z], () => p.Z.getStatus(i.id)), E = (0, o.JA)(String(i.id));
@@ -51,10 +51,10 @@ function m(e) {
     id: "user-row-".concat(m),
     className: f.friendWrapper,
     onClick: () => {
-      null != C && C(i.id)
+      null != x && x(i.id)
     },
     onMouseEnter: () => {
-      null != x && x(m)
+      null != C && C(m)
     }
   }, E), n = n = {
     role: "option",

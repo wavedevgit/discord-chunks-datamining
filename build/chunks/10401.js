@@ -1,6 +1,6 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => C
+  Z: () => x
 }), n(388685);
 var r, i = n(873546),
   l = n(442837),
@@ -79,7 +79,7 @@ class y extends(r = l.ZP.Store) {
   }
 }
 u(y, "displayName", "TutorialIndicatorStore");
-let C = new y(o.Z, {
+let x = new y(o.Z, {
   CONNECTION_OPEN: function(e) {
     let {
       tutorial: t

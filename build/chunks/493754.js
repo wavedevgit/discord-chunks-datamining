@@ -1,7 +1,7 @@
 /** Chunk was on 62423 **/
 n.d(t, {
   W: () => y,
-  Z: () => C
+  Z: () => x
 });
 var r = n(255367);
 n(73800);
@@ -81,13 +81,13 @@ function y(e) {
   })
 }
 
-function C(e) {
+function x(e) {
   var t, {
       stream: n,
       applicationId: i,
       channel: o,
-      exitFullScreen: C,
-      appContext: x,
+      exitFullScreen: x,
+      appContext: C,
       analyticsLocation: v,
       className: j
     } = e,
@@ -122,8 +122,8 @@ function C(e) {
           channel: o,
           streamUserId: null == n ? void 0 : n.ownerId,
           applicationId: i,
-          appContext: x,
-          exitFullScreen: C,
+          appContext: C,
+          exitFullScreen: x,
           analyticsLocation: v,
           guildScheduledEvent: S
         })
@@ -134,9 +134,9 @@ function C(e) {
     })), (0, r.jsx)(d.Z, {
       channel: o,
       stream: n,
-      appContext: x,
+      appContext: C,
       className: l()(j, g.iconButton),
-      exitFullScreen: C,
+      exitFullScreen: x,
       analyticsLocation: v,
       guildScheduledEvent: S
     })]

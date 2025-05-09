@@ -1,6 +1,6 @@
 /**
   Module ID: 62423
-  Original File Name: 98b716a82fe07347
+  Original File Name: 0c1f0a4aa44d95ca
 **/
 .content__79cbe {
     border-radius: 8px;
@@ -1814,6 +1814,34 @@ html:not(.visual-refresh) .header_cba592 {
     gap: 8px;
     justify-content: center;
     padding: 4px
+}
+
+.contextlessHeader__49094 {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing-12) var(--spacing-16)
+}
+
+.contextlessHeaderLeft__49094 {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-8)
+}
+
+.contextlessInviteButtonIcon__49094 {
+    height: 16px;
+    width: 16px
+}
+
+.contextlessLeaveActivityButton__49094 {
+    border-radius: 8px;
+    padding: var(--spacing-4)
+}
+
+.contextlessLeaveActivityButtonIcon__49094 {
+    padding: var(--spacing-4) var(--spacing-8)
 }
 
 .root__5621e {
@@ -13126,4 +13154,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=98b716a82fe07347.css.map*/
+/*# sourceMappingURL=0c1f0a4aa44d95ca.css.map*/

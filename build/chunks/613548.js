@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(540059),
   _ = n(569545),
   y = n(517525),
-  C = n(665149),
-  x = n(141321),
+  x = n(665149),
+  C = n(141321),
   v = n(2818),
   j = n(954551),
   O = n(221241),
@@ -206,7 +206,7 @@ function Q(e) {
     isHorizontal: !0
   }, "select-participant")), !eu && (t || eh.push((0, r.jsx)(m.Z, {
     className: Y.button
-  }, "clips")), J || eh.push((0, r.jsx)(x.Z, {
+  }, "clips")), J || eh.push((0, r.jsx)(C.Z, {
     onOpen: ed,
     onClose: ep,
     className: Y.button
@@ -243,7 +243,7 @@ function Q(e) {
         className: Y.lastButton
       }))
     }
-  }, "more-options-popout")), (ea || el) && !J && eh.push((0, r.jsx)(C.ZP.Divider, {
+  }, "more-options-popout")), (ea || el) && !J && eh.push((0, r.jsx)(x.ZP.Divider, {
     className: Y.divider
   }, "divider")), ea && eh.push((0, r.jsx)(R.Z, {
     className: o()(Y.button, {

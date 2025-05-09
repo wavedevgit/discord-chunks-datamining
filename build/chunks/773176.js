@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(407477),
   _ = n(633302),
   y = n(856985),
-  C = n(868643),
-  x = n(245216),
+  x = n(868643),
+  C = n(245216),
   v = n(223606),
   j = n(188597),
   O = n(41776),
@@ -208,7 +208,7 @@ function ef(e) {
       author: s
     } = n, u = (0, c.e7)([F.Z], () => F.Z.getGuild(t.guild_id), [t.guild_id]), d = (0, c.e7)([U.default], () => U.default.getId()), p = (0, L.$R)(t), m = (0, L.Gu)(t), g = D.nc.useSetting(), b = D.Sb.useSetting(), _ = (0, c.e7)([H.Z], () => null == t.guild_id || H.Z.canChatInGuild(t.guild_id), [t]), {
       canManageMessages: y,
-      canAddNewReactions: x
+      canAddNewReactions: C
     } = (0, c.cj)([V.Z], () => ({
       canAddNewReactions: _ && V.Z.can(ei.Plq.ADD_REACTIONS, t),
       canManageMessages: V.Z.can(ei.Plq.MANAGE_MESSAGES, t)
@@ -223,7 +223,7 @@ function ef(e) {
         channel: t,
         canChat: _,
         renderReactions: g,
-        canAddNewReactions: x,
+        canAddNewReactions: C,
         isLurking: I,
         isGuest: P,
         isActiveChannelOrUnarchivableThread: p
@@ -233,7 +233,7 @@ function ef(e) {
       Y = null != z && (n.type === ei.uaV.USER_JOIN || n.type === ei.uaV.GUILD_INVITE_REMINDER) && V.Z.canWithPartialContext(ei.Plq.MANAGE_GUILD, {
         guildId: z
       }),
-      q = (0, C.a)(n),
+      q = (0, x.a)(n),
       {
         enabled: $
       } = k.Z.useExperiment({
@@ -279,13 +279,13 @@ function ef(e) {
     eo({
       emojiPicker: !Y
     })
-  }, [Y, eo]), e_ = (0, L.$R)(t), ey = n.hasFlag(ei.iLy.CROSSPOSTED), [eC, ex] = (0, m.cv)(A ? [u.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), ev = eC === u.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [ej, eO] = i.useState(!1), eE = i.useCallback(() => {
+  }, [Y, eo]), e_ = (0, L.$R)(t), ey = n.hasFlag(ei.iLy.CROSSPOSTED), [ex, eC] = (0, m.cv)(A ? [u.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), ev = ex === u.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [ej, eO] = i.useState(!1), eE = i.useCallback(() => {
     eO(!0)
   }, []), eI = i.useCallback(() => {
     eO(!1)
   }, []), eP = i.useCallback((e, t) => {
-    ex(el.L.TAKE_ACTION), (0, ee.ts)(e, t)
-  }, [ex]), {
+    eC(el.L.TAKE_ACTION), (0, ee.ts)(e, t)
+  }, [eC]), {
     canShowReactionsOnMessageHover: eS
   } = b.ZP.useExperiment({
     location: "ExpandingButtons"
@@ -380,7 +380,7 @@ function ef(e) {
       onClick: () => (0, ee.Hd)(t, n)
     }, "edit") : null, A ? (0, r.jsx)($.sF, {
       label: ea.intl.string(ea.t.I3ltXF),
-      icon: x.Z,
+      icon: C.Z,
       onClick: () => eP(t, n),
       onTooltipShow: eE,
       onTooltipHide: eI,

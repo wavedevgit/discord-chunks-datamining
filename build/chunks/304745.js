@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(403404),
   _ = n(906732),
   y = n(522651),
-  C = n(243778),
-  x = n(579185),
+  x = n(243778),
+  C = n(579185),
   v = n(301076),
   j = n(221241),
   O = n(82965),
@@ -41,7 +41,7 @@ function N(e) {
     setIsHovered: L,
     onMouseEnter: D,
     onMouseLeave: U
-  } = (0, x.Z)(200, 300), B = (0, O.Z)({
+  } = (0, C.Z)(200, 300), B = (0, O.Z)({
     location: "CenterControlTrayActivityButton"
   }), {
     coloredIconsEnabled: G
@@ -66,7 +66,7 @@ function N(e) {
   k || J.push(o.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, f.Z)(t.id) && !k && J.push(o.z.ACTIVITY_GDM_ROCKET_SPARKLE), k || J.push(o.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
   let $ = i.useRef(!1),
     ee = i.useRef(null);
-  return (0, r.jsx)(C.ZP, {
+  return (0, r.jsx)(x.ZP, {
     contentTypes: J,
     children: e => {
       let {

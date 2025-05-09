@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(184301),
   _ = n(502762),
   y = n(271383),
-  C = n(594174),
-  x = n(189357),
+  x = n(594174),
+  C = n(189357),
   v = n(718617),
   j = n(327250),
   O = n(50767);
@@ -33,7 +33,7 @@ function E(e) {
     className: E,
     infoPanelClassName: I,
     style: P
-  } = e, S = (0, x.m)(n), Z = (0, a.e7)([C.default], () => C.default.getUser(t), [t]), N = (0, a.e7)([y.ZP], () => y.ZP.getMember(n, t), [n, t]), [T, A] = i.useState(null == Z || null == N), w = (0, u.Z)(N), R = i.useRef(null), {
+  } = e, S = (0, C.m)(n), Z = (0, a.e7)([x.default], () => x.default.getUser(t), [t]), N = (0, a.e7)([y.ZP], () => y.ZP.getMember(n, t), [n, t]), [T, A] = i.useState(null == Z || null == N), w = (0, u.Z)(N), R = i.useRef(null), {
     analyticsLocations: k
   } = (0, f.ZP)(h.Z.GUILD_MEMBER_MOD_VIEW), M = (0, g.ZP)(t, n), L = (0, d.ZP)();
   return (i.useEffect(() => {

@@ -24,8 +24,8 @@ function b(e) {
     suppress: b,
     centerButton: _ = !1,
     awaitingRemote: y,
-    onMouseEnter: C,
-    onMouseLeave: x,
+    onMouseEnter: x,
+    onMouseLeave: C,
     onClick: v
   } = e, j = function(e, t) {
     if (null == e) return {};
@@ -88,10 +88,10 @@ function b(e) {
     color: U,
     label: N,
     onMouseEnter: e => {
-      null == C || C(e), M.onMouseEnter()
+      null == x || x(e), M.onMouseEnter()
     },
     onMouseLeave: e => {
-      null == x || x(e), M.onMouseLeave()
+      null == C || C(e), M.onMouseLeave()
     },
     onClick: e => {
       null == v || v(e), (0, d.v)(O, d.d.MIC, t)

@@ -1,6 +1,6 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => C
+  Z: () => x
 });
 var r = n(255367),
   i = n(73800),
@@ -56,8 +56,8 @@ function y(e) {
     className: f
   } = e, {
     newestAnalyticsLocation: y
-  } = (0, d.ZP)(), C = (0, u.bp)(), {
-    reducedMotion: x
+  } = (0, d.ZP)(), x = (0, u.bp)(), {
+    reducedMotion: C
   } = i.useContext(a.Sfi), v = (0, c.Z)({
     userId: l.id
   }), j = null != l.member ? (0, m.CA)(l.member) : null, O = e => {
@@ -75,7 +75,7 @@ function y(e) {
         onInteraction: (0, p.u)("GuildChannelUserContextMenu", y)
       }))
     }, {
-      context: C
+      context: x
     })
   };
   return (0, r.jsx)(h.Z, {
@@ -96,14 +96,14 @@ function y(e) {
           size: a.EFr.SIZE_24,
           className: o()(g.avatar, f),
           "aria-label": l.userNick,
-          isSpeaking: v && !x.enabled
+          isSpeaking: v && !C.enabled
         })
       }))
     })
   })
 }
 
-function C(e) {
+function x(e) {
   let {
     speakers: t,
     channel: n

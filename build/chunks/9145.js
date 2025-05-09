@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(871499),
   _ = n(786915),
   y = n(402113),
-  C = n(592125),
-  x = n(271383),
+  x = n(592125),
+  C = n(271383),
   v = n(944486),
   j = n(594174),
   O = n(585483),
@@ -53,7 +53,7 @@ function F(e) {
     renderExternalHeader: V
   } = e, z = (0, g.Z)({
     location: "ActivityPanelFocusedView"
-  }), W = (0, T.Z)(), Y = (0, s.Wu)([P.ZP], () => P.ZP.getEmbeddedActivitiesForLocation(H), [H]), q = (0, N.pY)(H), K = (0, s.e7)([C.Z], () => C.Z.getChannel(q)), X = (0, S.gb)(Y), Q = (0, S.uF)(X), J = i.useCallback(() => {
+  }), W = (0, T.Z)(), Y = (0, s.Wu)([P.ZP], () => P.ZP.getEmbeddedActivitiesForLocation(H), [H]), q = (0, N.pY)(H), K = (0, s.e7)([x.Z], () => x.Z.getChannel(q)), X = (0, S.gb)(Y), Q = (0, S.uF)(X), J = i.useCallback(() => {
     (0, I.tg)(M.Ez.PIP)
   }, []), $ = i.useRef(null), ee = (0, s.e7)([P.ZP], () => P.ZP.getFocusedLayout()), et = ee !== M.MI.NO_CHAT, [en, er] = i.useState(null != (n = null != (t = m.ZP.activityPanelHeight) ? t : F) ? n : null), ei = i.useCallback(e => {
     d.ZP.updatedUnsyncedSettings({
@@ -86,9 +86,9 @@ function F(e) {
   let ep = Q.get(null != (l = null == W ? void 0 : W.id) ? l : ""),
     eh = H.kind === a.E.CONTEXTLESS,
     ef = (0, s.e7)([v.Z], () => v.Z.getChannelId()),
-    em = (0, s.Wu)([x.ZP], () => {
+    em = (0, s.Wu)([C.ZP], () => {
       var e;
-      return null == K ? [] : Array.from(null != (e = null == ep ? void 0 : ep.embeddedActivity.userIds) ? e : []).map(e => x.ZP.getMember(K.guild_id, e))
+      return null == K ? [] : Array.from(null != (e = null == ep ? void 0 : ep.embeddedActivity.userIds) ? e : []).map(e => C.ZP.getMember(K.guild_id, e))
     }, [ep, K]),
     eg = i.useMemo(() => {
       let e = new Map;
@@ -182,7 +182,38 @@ function F(e) {
             className: U.headerTitle,
             children: null == W ? void 0 : W.name
           })
-        }), (0, r.jsx)("div", {
+        }), eh ? (0, r.jsxs)("div", {
+          className: U.contextlessHeader,
+          children: [(0, r.jsxs)("div", {
+            className: U.contextlessHeaderLeft,
+            children: [(0, r.jsx)(w.Z, {
+              renderIcon: !1,
+              users: e_,
+              size: B,
+              max: 6,
+              className: U.userAvatars,
+              renderUser: ey
+            }), (0, r.jsx)(_.Z, {
+              appContext: L.IlC.APP,
+              applicationId: W.id,
+              shouldPrioritizeGroupPlusIcon: !0,
+              isContextlessActivity: eh,
+              iconClassName: U.contextlessInviteButtonIcon,
+              size: u.zxk.Sizes.SMALL,
+              look: u.zxk.Looks.FILLED,
+              buttonText: D.intl.string(D.t["6F9ivr"]),
+              color: u.zxk.Colors.PRIMARY
+            })]
+          }), (0, r.jsx)(y.Z, {
+            applicationId: W.id,
+            location: H,
+            centerButton: !0,
+            color: "disconnect",
+            applyStyles: eh,
+            className: U.contextlessLeaveActivityButton,
+            iconClassName: U.contextlessLeaveActivityButtonIcon
+          })]
+        }) : null, (0, r.jsx)("div", {
           className: o()(U.activityContainer, {
             [U.activityContainerNoMargin]: ed
           }),
@@ -197,7 +228,7 @@ function F(e) {
             className: U.iframe,
             embedId: (0, R.Z)(H.id, W.id)
           })
-        }), eh || null != ef ? (0, r.jsxs)("div", {
+        }), eh || null == ef ? null : (0, r.jsxs)("div", {
           className: U.footer,
           children: [(0, r.jsx)(w.Z, {
             renderIcon: !1,
@@ -213,12 +244,7 @@ function F(e) {
               className: U.circularButton
             }), z ? (0, r.jsxs)("div", {
               className: U.buttonSection,
-              children: [eh ? (0, r.jsx)(_.Z, {
-                appContext: L.IlC.APP,
-                applicationId: W.id,
-                shouldPrioritizeGroupPlusIcon: !0,
-                isContextlessActivity: eh
-              }) : null, eh || null == ef ? null : (0, r.jsx)(k.Z, {
+              children: [(0, r.jsx)(k.Z, {
                 channelId: ef
               }), (0, r.jsx)(b.d, {
                 label: D.intl.string(D.t.brPQ5e),
@@ -245,7 +271,7 @@ function F(e) {
           }), (0, r.jsx)("div", {
             className: U.flex
           })]
-        }) : null]
+        })]
       }), et && null != F ? (0, r.jsx)(f.Z, {
         minHeight: 480,
         maxHeight: F,

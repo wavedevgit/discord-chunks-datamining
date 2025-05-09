@@ -54,8 +54,8 @@ let y = function(e) {
   } = e, n = (0, c.Q3)("ChannelPinsButton"), y = (0, l.e7)([u.Z, p.default], () => {
     let e = p.default.getCurrentUser();
     return null == e || t.isNSFW() && (!e.nsfwAllowed || !u.Z.didAgree(t.getGuildId()))
-  }, [t]), [C, x] = i.useState(!1), v = (0, l.e7)([d.ZP], () => d.ZP.hasUnreadPins(t.id), [t]), j = (0, s.Aq)(), O = i.useCallback(() => {
-    y || x(e => !e)
+  }, [t]), [x, C] = i.useState(!1), v = (0, l.e7)([d.ZP], () => d.ZP.hasUnreadPins(t.id), [t]), j = (0, s.Aq)(), O = i.useCallback(() => {
+    y || C(e => !e)
   }, [y]);
 
   function E(e) {
@@ -64,13 +64,13 @@ let y = function(e) {
   return i.useEffect(() => (h.S.subscribe(m.CkL.TOGGLE_CHANNEL_PINS, O), () => {
     h.S.unsubscribe(m.CkL.TOGGLE_CHANNEL_PINS, O)
   }), [O]), (0, r.jsx)(o.yRy, {
-    shouldShow: C,
+    shouldShow: x,
     animation: o.yRy.Animation.NONE,
     position: "bottom",
     align: "right",
     autoInvert: !1,
     ignoreModalClicks: !0,
-    onRequestClose: () => x(!1),
+    onRequestClose: () => C(!1),
     renderPopout: function(e) {
       return (0, r.jsx)(a.Z, _(b({}, e), {
         onJump: E,

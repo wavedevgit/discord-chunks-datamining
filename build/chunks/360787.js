@@ -1,6 +1,6 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => C
+  Z: () => x
 }), n(388685), n(539854);
 var r, i, l, o = n(442837),
   a = n(846519),
@@ -48,7 +48,7 @@ l = "PresenceSubscriptionsStore", (i = "displayName") in y ? Object.defineProper
   configurable: !0,
   writable: !0
 }) : y[i] = l;
-let C = new y(s.Z, {
+let x = new y(s.Z, {
   PRESENCE_SUBSCRIPTIONS_ADD: function(e) {
     let {
       subscription: t

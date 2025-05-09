@@ -25,8 +25,8 @@ function _(e) {
     height: l,
     channel: _,
     participants: y,
-    onSelectParticipant: C
-  } = e, [x, v] = function() {
+    onSelectParticipant: x
+  } = e, [C, v] = function() {
     let [e, t] = i.useState(() => s.K.get(b, h.VD2.BOTTOM_RIGHT));
     return [e, i.useCallback(e => {
       s.K.set(b, e), t(e)
@@ -49,7 +49,7 @@ function _(e) {
   return (0, r.jsx)("div", {
     className: m.container,
     children: (0, r.jsx)(u._, {
-      position: x,
+      position: C,
       id: 0,
       width: P,
       ref: j,
@@ -73,7 +73,7 @@ function _(e) {
           inCall: !0,
           inPopout: !1,
           width: 160,
-          onClick: C
+          onClick: x
         }, e.id))
       })
     })

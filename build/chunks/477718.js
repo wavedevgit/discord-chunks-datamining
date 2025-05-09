@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(501801),
   _ = n(884902),
   y = n(271383),
-  C = n(430824),
-  x = n(5192),
+  x = n(430824),
+  C = n(5192),
   v = n(776767),
   j = n(981631),
   O = n(388032),
@@ -36,7 +36,7 @@ function S(e) {
     guild: a
   } = e, {
     analyticsLocations: d
-  } = (0, p.ZP)(), m = g.nm(n), C = g.QM(n), v = null == (t = g.V$(j.zUn.REASON, n)) ? void 0 : t.newValue, P = g.J5(n), S = (0, h.LJ)(n.id), Z = (0, c.e7)([y.ZP], () => null != n.userId ? y.ZP.getMember(l.guildId, n.userId) : null, [l.guildId, n.userId]), N = (0, _.X)(null == Z ? void 0 : Z.guildId, null == Z ? void 0 : Z.colorStrings), T = i.useCallback(e => t => {
+  } = (0, p.ZP)(), m = g.nm(n), x = g.QM(n), v = null == (t = g.V$(j.zUn.REASON, n)) ? void 0 : t.newValue, P = g.J5(n), S = (0, h.LJ)(n.id), Z = (0, c.e7)([y.ZP], () => null != n.userId ? y.ZP.getMember(l.guildId, n.userId) : null, [l.guildId, n.userId]), N = (0, _.X)(null == Z ? void 0 : Z.guildId, null == Z ? void 0 : Z.colorStrings), T = i.useCallback(e => t => {
     t.preventDefault(), t.stopPropagation(), null != e && (0, f.RE)(e, d)
   }, [d]), A = i.useCallback(() => null == n.user ? null : (0, r.jsx)(u.ua7, {
     text: O.intl.string(O.t.mvsi9v),
@@ -56,7 +56,7 @@ function S(e) {
           variant: "text-sm/medium",
           tag: "span",
           children: ["@", (0, r.jsx)(u.PUh, {
-            name: x.ZP.getName(l.guildId, null, n.user),
+            name: C.ZP.getName(l.guildId, null, n.user),
             color: null != (t = null == Z ? void 0 : Z.colorString) ? t : void 0,
             roleColors: N
           })]
@@ -74,10 +74,10 @@ function S(e) {
           variant: "text-sm/semibold",
           color: "header-primary",
           children: m
-        }), null != C && (0, r.jsxs)(u.Text, {
+        }), null != x && (0, r.jsxs)(u.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: ["(", "string" == typeof C ? C : s()(C).fromNow(), ")"]
+          children: ["(", "string" == typeof x ? x : s()(x).fromNow(), ")"]
         })]
       }), (0, r.jsx)("div", {
         className: E.auditLogItemDate,
@@ -132,7 +132,7 @@ function S(e) {
 function Z(e) {
   let {
     member: t
-  } = e, n = (0, c.e7)([C.Z], () => C.Z.getGuild(t.guildId), [t.guildId]), l = (0, c.e7)([m.Z], () => {
+  } = e, n = (0, c.e7)([x.Z], () => x.Z.getGuild(t.guildId), [t.guildId]), l = (0, c.e7)([m.Z], () => {
     let e = m.Z.logs;
     return null == e || null == n ? [] : g._$(e, n)
   }, [n]);

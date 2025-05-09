@@ -74,7 +74,7 @@ let _ = i.memo(function(e) {
     collapsedReason: c
   } = e, {
     hasJumpTarget: p = !1
-  } = n, [f, _] = i.useState(p), y = i.useCallback(() => _(e => !e), []), C = n.hasUnread ? n.content.length - 1 : n.content.length;
+  } = n, [f, _] = i.useState(p), y = i.useCallback(() => _(e => !e), []), x = n.hasUnread ? n.content.length - 1 : n.content.length;
   return (0, r.jsxs)("div", {
     className: o()({
       [g.groupStart]: !0,
@@ -84,7 +84,7 @@ let _ = i.memo(function(e) {
       isUnread: !0,
       id: s
     }, "divider") : null, (0, r.jsx)(b, {
-      count: C,
+      count: x,
       compact: a,
       expanded: f,
       onClick: y,

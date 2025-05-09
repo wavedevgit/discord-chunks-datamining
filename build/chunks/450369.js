@@ -20,8 +20,8 @@ var r = n(255367),
   b = n(358221),
   _ = n(795318),
   y = n(258609),
-  C = n(569545),
-  x = n(102172),
+  x = n(569545),
+  C = n(102172),
   v = n(352978),
   j = n(880395),
   O = n(670188),
@@ -135,9 +135,9 @@ let U = 16 / 9,
       selectedParticipant: null != l ? b.Z.getSelectedParticipant(l.id) : null,
       largeStream: null != l && b.Z.getStageStreamSize(l.id)
     })), P = i.useCallback((e, t) => {
-      if (e.type === k.fO.STREAM && 0 === j.filter(t => (0, C.V9)(t) === e.id && t.state !== R.jm8.ENDED).length) {
-        if (!(0, x.p9)(l, N.Z, S.Z, Z.Z, y.Z)[0]) return;
-        (0, p.rn)((0, C.my)(e.id), {
+      if (e.type === k.fO.STREAM && 0 === j.filter(t => (0, x.V9)(t) === e.id && t.state !== R.jm8.ENDED).length) {
+        if (!(0, C.p9)(l, N.Z, S.Z, Z.Z, y.Z)[0]) return;
+        (0, p.rn)((0, x.my)(e.id), {
           forceMultiple: t.shiftKey
         })
       }(null == O ? void 0 : O.id) === e.id ? E ? (u.Z.selectParticipant(l.id, null), u.Z.updateStageStreamSize(l.id, !1)) : u.Z.updateStageStreamSize(l.id, !0) : (u.Z.updateStageStreamSize(l.id, !1), u.Z.selectParticipant(l.id, e.id))
@@ -167,8 +167,8 @@ let U = 16 / 9,
       width: c
     } = e, {
       newestAnalyticsLocation: u
-    } = (0, m.ZP)(f.Z.STAGE_TILE), p = (0, h.bp)(), y = l.getGuildId(), C = P.default.getId(), {
-      simplifiedSettingsEnabled: x
+    } = (0, m.ZP)(f.Z.STAGE_TILE), p = (0, h.bp)(), y = l.getGuildId(), x = P.default.getId(), {
+      simplifiedSettingsEnabled: C
     } = (0, E.Z)({
       location: "StageTile"
     });
@@ -183,7 +183,7 @@ let U = 16 / 9,
           name: a.ImpressionNames.CALL_TILE_CONTEXT_MENU,
           properties: {
             location: "StageTile",
-            is_tile_owner: v.id === C,
+            is_tile_owner: v.id === x,
             tile_type: e
           }
         })
@@ -212,7 +212,7 @@ let U = 16 / 9,
             return;
           case k.fO.USER:
           default:
-            if (S(k.TH.USER), x && i) return (0, j.D)(t, v, l, {
+            if (S(k.TH.USER), C && i) return (0, j.D)(t, v, l, {
               context: p
             }, (e, t) => (0, _.o)({
               menuName: e,

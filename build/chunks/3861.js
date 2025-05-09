@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(236564),
   _ = n(45430),
   y = n(981631),
-  C = n(354459),
-  x = n(363987);
+  x = n(354459),
+  C = n(363987);
 let v = (0, a.Z)(e => {
   let {
     participants: t,
@@ -48,7 +48,7 @@ let v = (0, a.Z)(e => {
     p.S.dispatch(y.CkL.REMEASURE_TARGET)
   }, [T, A, L.width, L.height]);
   let D = (0, d.Q3)("ChannelCallContent"),
-    U = i.useMemo(() => n.filter(e => e.type !== C.fO.ACTIVITY || !e.participants.some(e => (0, s.J)(e))), [n, a]);
+    U = i.useMemo(() => n.filter(e => e.type !== x.fO.ACTIVITY || !e.participants.some(e => (0, s.J)(e))), [n, a]);
   return (null == M ? void 0 : M.channelId) === I.id ? (0, r.jsx)(f.Z, {
     height: A
   }) : (null == I ? void 0 : I.isGuildVocal()) && !Z ? (0, r.jsx)(h.Z, {
@@ -58,22 +58,22 @@ let v = (0, a.Z)(e => {
   }) : R === y.WtW.VOICE ? (0, r.jsx)(c.Z, {
     guildId: I.guild_id,
     width: T,
-    className: x.voiceCallWrapper,
+    className: C.voiceCallWrapper,
     participants: t,
     onContextMenu: O
   }) : (n = Z ? n : t, null == l) ? 0 === n.length ? D ? (0, r.jsx)(_.Z, {
     channelId: I.id
   }) : (0, r.jsx)(b.Z, {
-    className: o()(x.videoGrid, x.hiddenParticipants),
+    className: o()(C.videoGrid, C.hiddenParticipants),
     channelId: I.id,
     width: T
   }) : (0, r.jsx)(u.Z, {
-    className: x.videoGridWrapper,
+    className: C.videoGridWrapper,
     justify: u.Z.Justify.CENTER,
     align: u.Z.Align.CENTER,
     children: (0, r.jsx)(m.Z, {
       channel: I,
-      className: x.videoGrid,
+      className: C.videoGrid,
       participants: U,
       totalNumberOfParticipants: t.length,
       onClick: j,
