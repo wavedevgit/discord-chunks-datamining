@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   l = n(73800),
-  a = n(120356),
-  i = n.n(a),
+  i = n(120356),
+  a = n.n(i),
   o = n(636977),
   s = n(685816),
   c = n(442837),
@@ -68,10 +68,10 @@ let B = {
     let {
       isLoading: t,
       handleTransition: n,
-      category: a,
+      category: i,
       heroBlock: s,
       tab: C
-    } = e, S = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), N = (0, c.e7)([h.Z], () => h.Z.isFocused()), R = (0, c.e7)([g.default], () => g.default.getCurrentUser()), A = (0, v.u)(), Z = l.useMemo(() => null != s ? s : L(a), [s, a]), {
+    } = e, S = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), N = (0, c.e7)([h.Z], () => h.Z.isFocused()), R = (0, c.e7)([g.default], () => g.default.getCurrentUser()), A = (0, v.u)(), Z = l.useMemo(() => null != s ? s : L(i), [s, i]), {
       isPreviewingStaticBanner: F,
       bannerOverrides: H,
       bannerStyleOverrides: D,
@@ -82,7 +82,7 @@ let B = {
       category_name: Z.name
     });
     return null != R && (t || Z !== B) ? (0, r.jsxs)("div", {
-      className: i()(I.heroBlock, {
+      className: a()(I.heroBlock, {
         [I.responsiveHero]: null == D ? void 0 : D.responsive
       }),
       children: [(0, r.jsxs)("div", {
@@ -102,14 +102,14 @@ let B = {
           loop: !0
         }), (null == D ? void 0 : D.hideSideShadow) !== !0 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("div", {
-            className: i()(I.bannerShadow, I.left, {
+            className: a()(I.bannerShadow, I.left, {
               [I.darker]: null == U ? void 0 : U.darker
             }),
             style: (null == U ? void 0 : U.gradientLeft) != null ? {
               background: null == U ? void 0 : U.gradientLeft
             } : void 0
           }), (0, r.jsx)("div", {
-            className: i()(I.bannerShadow, I.right, {
+            className: a()(I.bannerShadow, I.right, {
               [I.darker]: null == U ? void 0 : U.darker
             }),
             style: (null == U ? void 0 : U.gradientRight) != null ? {
@@ -167,7 +167,7 @@ let B = {
             })
           })]
         }), (0, r.jsx)("div", {
-          className: i()(I.row, I.feed, {
+          className: a()(I.row, I.feed, {
             [I.feedSingleRow]: C !== k.AW.ORBS
           }),
           children: t ? (0, r.jsx)(r.Fragment, {

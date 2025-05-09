@@ -7,15 +7,15 @@ var i = n(255367),
   l = n(120356),
   o = n.n(l),
   a = n(442837),
-  s = n(481060),
-  c = n(607070),
+  c = n(481060),
+  s = n(607070),
   u = n(98880),
   d = n(85884);
 
 function p(e) {
   let {
     look: t = u.U4.LARGE_BANNER
-  } = e, n = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), {
+  } = e, n = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), {
     styleLarge: l,
     styleSmall: p
   } = r.useMemo(() => ({
@@ -50,7 +50,7 @@ function p(e) {
         children: [(0, i.jsx)("div", {
           className: d.textPlaceholder,
           style: l,
-          children: (0, i.jsx)(s.X6q, {
+          children: (0, i.jsx)(c.X6q, {
             className: d.hidden,
             variant: "heading-md/semibold",
             color: "header-primary",
@@ -60,7 +60,7 @@ function p(e) {
         }), (0, i.jsx)("div", {
           className: d.textPlaceholder,
           style: p,
-          children: (0, i.jsx)(s.Text, {
+          children: (0, i.jsx)(c.Text, {
             className: d.hidden,
             variant: "text-sm/normal",
             color: "text-secondary",

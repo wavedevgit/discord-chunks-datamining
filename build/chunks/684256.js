@@ -7,8 +7,8 @@ var i = n(255367),
   l = n(120356),
   o = n.n(l),
   a = n(481060),
-  s = n(895924),
-  c = n(827498),
+  c = n(895924),
+  s = n(827498),
   u = n(106066),
   d = n(98880),
   p = n(772606),
@@ -23,8 +23,8 @@ function h(e) {
     look: h,
     items: b,
     sectionName: _,
-    sectionOverallPosition: y
-  } = e, v = (0, u.s)(), x = r.useMemo(() => n === c._b.TEXT ? d.kA : d.qR, [n]);
+    sectionOverallPosition: C
+  } = e, v = (0, u.s)(), x = r.useMemo(() => n === s._b.TEXT ? d.kA : d.qR, [n]);
   return (0, i.jsxs)("section", {
     className: f.container,
     "aria-label": m.intl.formatToPlainString(m.t.iobNIC, {
@@ -57,10 +57,10 @@ function h(e) {
             look: h,
             sectionName: _,
             resultsPosition: n,
-            location: s.Vh.APP_LAUNCHER_LIST_VIEW_ALL,
+            location: c.Vh.APP_LAUNCHER_LIST_VIEW_ALL,
             installOnDemand: l,
             isOneClickCTA: v,
-            sectionOverallPosition: y,
+            sectionOverallPosition: C,
             showsPromoted: o
           }, r.id)
         })

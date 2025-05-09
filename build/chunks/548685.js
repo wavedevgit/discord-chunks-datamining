@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   l = n(73800),
-  a = n(120356),
-  i = n.n(a),
+  i = n(120356),
+  a = n.n(i),
   o = n(442837),
   s = n(481060),
   c = n(782568),
@@ -31,7 +31,7 @@ let E = e => {
   let {
     isLoading: t,
     sortedSkuIds: n,
-    handleTransition: a,
+    handleTransition: i,
     numVisibleItems: E,
     tab: k
   } = e, T = (0, o.e7)([d.default], () => d.default.getCurrentUser()), w = p.ZP.canUseCollectibles(T), I = (0, m.s)("useShopHomeSorting") && k === S.AW.HOME, {
@@ -51,7 +51,7 @@ let E = e => {
     })
   }, [V, L]);
   return null == T ? null : (0, r.jsxs)("div", {
-    className: i()(P.popularPicksSection, P.centeredSection),
+    className: a()(P.popularPicksSection, P.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: P.blockHeader,
       children: [(0, r.jsxs)("div", {
@@ -104,8 +104,7 @@ let E = e => {
         className: P.headerRight,
         children: [I && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.Text, {
-            variant: "text-xs/bold",
-            className: P.sortByText,
+            variant: "text-md/medium",
             children: y.intl.string(y.t.uaX709)
           }), (0, r.jsx)(s.PhF, {
             options: R,
@@ -126,7 +125,7 @@ let E = e => {
         }) : (0, r.jsx)(s.zxk, {
           color: s.Ttl.PRIMARY,
           look: s.iLD.FILLED,
-          onClick: () => a("shop all top"),
+          onClick: () => i("shop all top"),
           children: y.intl.string(y.t.xFcotb)
         }))]
       })]

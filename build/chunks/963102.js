@@ -5,8 +5,8 @@ n.d(t, {
 }), n(539854);
 var r = n(255367),
   l = n(73800),
-  a = n(120356),
-  i = n.n(a),
+  i = n(120356),
+  a = n.n(i),
   o = n(636977),
   s = n(442837),
   c = n(481060),
@@ -31,12 +31,12 @@ function y(e) {
     tab: t,
     displayText: n,
     selected: l,
-    handleTransition: a
+    handleTransition: i
   } = e;
   return (0, r.jsx)(f.Z.Title, {
-    onClick: () => a(t),
+    onClick: () => i(t),
     wrapperClassName: j.tabWrapper,
-    className: i()(j.tab, {
+    className: a()(j.tab, {
       [j.selected]: l
     }),
     children: n
@@ -47,7 +47,7 @@ function P(e) {
   let {
     isFullScreen: t,
     isLayer: n,
-    onClose: a,
+    onClose: i,
     selectedTab: P,
     handleTransition: E
   } = e, k = (0, b.ZP)(), T = (0, s.e7)([_.default], () => _.default.getCurrentUser()), w = (null == T ? void 0 : T.isStaff()) || (null == T ? void 0 : T.isStaffPersonal()) || !1, {
@@ -65,7 +65,7 @@ function P(e) {
     tab: O.AW.ORBS,
     displayText: S.intl.string(S.t["KUYR+P"])
   });
-  let L = n ? v.DR : a,
+  let L = n ? v.DR : i,
     N = P === O.AW.ORBS ? x.ZY5.SHOP_ORBS_TAB : x.ZY5.COLLECTIBLES_SHOP,
     R = l.useCallback(() => {
       t && (L(), (0, u.Ou)()), (0, g.Y)({
@@ -79,7 +79,7 @@ function P(e) {
   return (0, r.jsx)(c.f6W, {
     theme: k,
     children: e => (0, r.jsxs)(f.Z, {
-      className: i()(e, j.headerBar, {
+      className: a()(e, j.headerBar, {
         [j.fullscreenHeaderBar]: t
       }),
       innerClassname: I ? j.headerBarInner : void 0,

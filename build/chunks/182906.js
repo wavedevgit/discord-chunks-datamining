@@ -12,10 +12,10 @@ function a(e) {
     imageBackground: t,
     applicationName: n,
     imageClassName: a,
-    imageNotFoundClassName: s
-  } = e, [c, u] = r.useState(!1);
-  return "not-found" === t.state || c ? (0, i.jsx)("div", {
-    className: s,
+    imageNotFoundClassName: c
+  } = e, [s, u] = r.useState(!1);
+  return "not-found" === t.state || s ? (0, i.jsx)("div", {
+    className: c,
     children: (0, i.jsx)(l.Z, {
       className: o.brokenImageIcon
     })

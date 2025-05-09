@@ -1,19 +1,19 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => c
+  Z: () => s
 });
 var i = n(73800),
   r = n(990547),
   l = n(442837),
   o = n(213609),
   a = n(541099),
-  s = n(312871);
+  c = n(312871);
 
-function c(e) {
+function s(e) {
   let {
     applicationId: t,
     applicationFlags: n,
-    sectionName: c,
+    sectionName: s,
     sectionPosition: u,
     sectionOverallPosition: d,
     promotionalLabel: p,
@@ -25,7 +25,7 @@ function c(e) {
       properties: {
         application_id: t,
         application_flags: n,
-        section_name: c,
+        section_name: s,
         section_position: u,
         section_overall_position: d,
         source: f,
@@ -35,7 +35,7 @@ function c(e) {
     })
   }, [m]);
   return {
-    trackItemImpressionRef: (0, s.Z)({
+    trackItemImpressionRef: (0, c.Z)({
       onVisible: h,
       threshold: .5,
       minTimeVisibleMs: 1e3

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   l = n(73800),
-  a = n(120356),
-  i = n.n(a),
+  i = n(120356),
+  a = n.n(i),
   o = n(685816),
   s = n(481060),
   c = n(381585),
@@ -27,7 +27,7 @@ let S = e => {
     var t;
     let {
       handleTransition: n,
-      numVisibleItems: a,
+      numVisibleItems: i,
       isFetchingCategories: s,
       tab: u,
       isFullScreen: v
@@ -89,7 +89,7 @@ let S = e => {
       }), (0, r.jsx)(h.Z, {
         isLoading: P,
         handleTransition: n,
-        numVisibleItems: a,
+        numVisibleItems: i,
         tab: u
       })]
     });
@@ -117,7 +117,7 @@ let S = e => {
           l = (0, r.jsx)(h.Z, {
             isLoading: P || s,
             handleTransition: n,
-            numVisibleItems: a,
+            numVisibleItems: i,
             sortedSkuIds: c,
             tab: u
           }, t);
@@ -140,7 +140,7 @@ let S = e => {
           return null
       }
       return (0, r.jsx)("div", {
-        className: i()(x.blockContainer, {
+        className: a()(x.blockContainer, {
           [x.topBlockContainer]: 0 === t
         }),
         children: l
@@ -155,22 +155,22 @@ let S = e => {
       isFullScreen: t,
       handleTransition: n,
       numVisibleItems: l,
-      tab: a,
+      tab: i,
       isFetchingCategories: o
     } = e, c = (0, u.R)("CollectiblesFeedShop");
     return (0, r.jsx)("div", {
-      className: i()(x.shop, {
+      className: a()(x.shop, {
         [x.shopFullscreen]: t
       }),
       children: (0, r.jsxs)("div", {
-        className: i()(x.content, x.mainContent),
+        className: a()(x.content, x.mainContent),
         children: [(0, r.jsx)(S, {
           handleTransition: n,
           numVisibleItems: l,
           isFetchingCategories: o,
-          tab: a,
+          tab: i,
           isFullScreen: t
-        }), a !== v.AW.CATALOG && l >= c && (0, r.jsxs)("div", {
+        }), i !== v.AW.CATALOG && l >= c && (0, r.jsxs)("div", {
           className: x.endOfFeed,
           children: [(0, r.jsx)(s.X6q, {
             variant: "heading-md/semibold",

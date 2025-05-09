@@ -1,29 +1,29 @@
-/** Chunk was on 69400 **/
+/** Chunk was on 84921 **/
 n.d(t, {
-  Z: () => i
+  Z: () => o
 }), n(388685);
 var r = n(73800),
-  l = n(81063);
-let o = ["embedded_cover", "embedded_background"];
+  i = n(81063);
+let l = ["embedded_cover", "embedded_background"];
 
-function i(e) {
+function o(e) {
   let {
     applicationId: t,
     size: n,
-    names: i = o
-  } = e, [u, c] = r.useState(null), [a, s] = r.useState(!0), f = (0, l.xF)(t, u, n), d = r.useRef(i);
+    names: o = l
+  } = e, [a, s] = r.useState(null), [c, u] = r.useState(!0), d = (0, i.xF)(t, a, n), E = r.useRef(o);
   return r.useEffect(() => {
-    d.current = i
+    E.current = o
   }), r.useEffect(() => {
     let {
       current: e
-    } = d;
-    null != t && (0, l.Vh)(t).then(t => {
-      for (let [n, r] of(s(!1), Object.entries(t)))
-        if (null != r && "" !== r.id && e.includes(r.name)) return void c(r.id)
+    } = E;
+    null != t && (0, i.Vh)(t).then(t => {
+      for (let [n, r] of(u(!1), Object.entries(t)))
+        if (null != r && "" !== r.id && e.includes(r.name)) return void s(r.id)
     })
   }, [t]), {
-    url: f,
-    state: a ? "loading" : null != f ? "fetched" : "not-found"
+    url: d,
+    state: c ? "loading" : null != d ? "fetched" : "not-found"
   }
 }

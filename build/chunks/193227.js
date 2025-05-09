@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   l = n(73800),
-  a = n(120356),
-  i = n.n(a),
+  i = n(120356),
+  a = n.n(i),
   o = n(399606),
   s = n(481060),
   c = n(434650),
@@ -34,8 +34,8 @@ function k(e) {
     products: t,
     handleShopCardMount: n,
     header: l,
-    category: a,
-    isPremiumUser: i,
+    category: i,
+    isPremiumUser: a,
     isGiftEasterEggEnabled: c
   } = e, u = (0, o.e7)([b.default], () => b.default.getCurrentUser()), d = (0, S.St)(t);
   return null == u || 0 === t.length ? null : (0, r.jsxs)("div", {
@@ -54,8 +54,8 @@ function k(e) {
         },
         children: (0, r.jsx)(O.Z, {
           onMount: n(e),
-          isPremiumUser: i,
-          category: a,
+          isPremiumUser: a,
+          category: i,
           product: e,
           user: u,
           isGiftEasterEggEnabled: c,
@@ -70,23 +70,23 @@ function T(e) {
   var {
     category: t,
     initialItemCardRef: n
-  } = e, a = function(e, t) {
+  } = e, i = function(e, t) {
     if (null == e) return {};
     var n, r, l = function(e, t) {
       if (null == e) return {};
       var n, r, l = {},
-        a = Object.keys(e);
-      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+        i = Object.keys(e);
+      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
       return l
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+      var i = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
     }
     return l
   }(e, ["category", "initialItemCardRef"]);
-  let i = (0, h.l)(t.products),
-    s = (0, g.a)()(i),
+  let a = (0, h.l)(t.products),
+    s = (0, g.a)()(a),
     c = (0, o.e7)([p.Z], () => p.Z.initialProductSkuId),
     u = l.useCallback(e => t => {
       var r;
@@ -113,14 +113,14 @@ function T(e) {
     products: s,
     handleShopCardMount: u,
     category: t
-  }, a))
+  }, i))
 }
 
 function w(e) {
   let {
     category: t,
     isPremiumUser: n,
-    initialItemCardRef: a,
+    initialItemCardRef: i,
     isGiftEasterEggEnabled: o,
     setIsGiftEasterEggEnabled: b,
     showEasterEggToggle: f,
@@ -132,7 +132,7 @@ function w(e) {
     className: E.categoryWrapper,
     ref: O,
     children: [f && (0, r.jsx)(s.P3F, {
-      className: i()(E.hiddenWumpus, {
+      className: a()(E.hiddenWumpus, {
         [E.hiddenWumpusEnabled]: o
       }),
       onClick: () => b(!0),
@@ -148,7 +148,7 @@ function w(e) {
       hideLimitedTimeBadge: null != v
     }), (0, r.jsx)(T, {
       category: t,
-      initialItemCardRef: a,
+      initialItemCardRef: i,
       isPremiumUser: n,
       isGiftEasterEggEnabled: o
     }), null != v && null != t.unpublishedAt && (0, r.jsx)(_.$, {
@@ -164,8 +164,8 @@ function I(e) {
   var t;
   let {
     isFetchingCategories: n,
-    sortedCategories: a,
-    setCategoryRef: i,
+    sortedCategories: i,
+    setCategoryRef: a,
     isPremiumUser: o,
     initialItemCardRef: s,
     setIsGiftEasterEggEnabled: c,
@@ -185,7 +185,7 @@ function I(e) {
       cacheDisabled: g
     })
   }, []), l.useEffect(() => {
-    n || 0 === a.length || (0, m.n)({
+    n || 0 === i.length || (0, m.n)({
       sessionId: p,
       checkpoint: m.a.SHOP_RENDERED,
       tab: y.AW.CATALOG,
@@ -193,15 +193,15 @@ function I(e) {
       unpublishedCategoriesShown: h,
       cacheDisabled: g
     })
-  }, [p, d, h, g, n, a.length]), n) ? (0, r.jsx)(v.Z, {}) : (0, r.jsx)("div", {
+  }, [p, d, h, g, n, i.length]), n) ? (0, r.jsx)(v.Z, {}) : (0, r.jsx)("div", {
     className: E.categories,
-    children: a.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
+    children: i.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
       let {
         products: t
       } = e;
       return t.length > 0
     }).map((e, t) => (0, r.jsx)("div", {
-      ref: t => i(e.skuId, t),
+      ref: t => a(e.skuId, t),
       children: (0, r.jsx)(f.k0, {
         newValue: {
           categoryPosition: t

@@ -11,7 +11,7 @@ function a(e) {
   let {
     sectionId: t,
     commandsByActiveSection: n
-  } = e, [a, s] = i.useState(o.bS.ALPHABETICAL), c = i.useMemo(() => {
+  } = e, [a, c] = i.useState(o.bS.ALPHABETICAL), s = i.useMemo(() => {
     var e, i;
     return null != (i = null == (e = n.find(e => e.section.id === t)) ? void 0 : e.data) ? i : []
   }, [n, t]), {
@@ -53,26 +53,26 @@ function a(e) {
       }
     }, [t])
   }({
-    alphabeticalSortedCommands: c
+    alphabeticalSortedCommands: s
   });
   i.useEffect(() => {
     r.i6(t, {
       dontRefetchMs: l.Z.Millis.DAY
     })
   }, [t]), i.useLayoutEffect(() => {
-    d && s(o.bS.POPULAR)
+    d && c(o.bS.POPULAR)
   }, [d]);
-  let p = c;
+  let p = s;
   switch (a) {
     case o.bS.POPULAR:
       p = u;
       break;
     case o.bS.ALPHABETICAL:
-      p = c
+      p = s
   }
   return {
     sortOrder: a,
-    setSortOrder: s,
+    setSortOrder: c,
     commands: p,
     canSort: d
   }

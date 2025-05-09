@@ -7,8 +7,8 @@ var i = n(255367),
   l = n(780384),
   o = n(481060),
   a = n(410030),
-  s = n(782568),
-  c = n(63063),
+  c = n(782568),
+  s = n(63063),
   u = n(827498),
   d = n(888617),
   p = n(981631),
@@ -21,8 +21,8 @@ function _(e) {
   let {
     showImage: t = !0,
     padding: n = !1
-  } = e, _ = (0, a.ZP)(), y = (0, l.ap)(_) ? b : h, v = r.useCallback(() => {
-    (0, s.Z)(c.Z.getAppsSupportURL(p.BhN.APPS_LEARN_MORE))
+  } = e, _ = (0, a.ZP)(), C = (0, l.ap)(_) ? b : h, v = r.useCallback(() => {
+    (0, c.Z)(s.Z.getAppsSupportURL(p.BhN.APPS_LEARN_MORE))
   }, []), {
     trackSectionImpressionRef: x
   } = (0, d.Z)({
@@ -39,7 +39,7 @@ function _(e) {
       className: f.container,
       children: [t && (0, i.jsx)("img", {
         className: f.image,
-        src: y,
+        src: C,
         alt: "",
         "aria-hidden": !0
       }), (0, i.jsxs)("div", {

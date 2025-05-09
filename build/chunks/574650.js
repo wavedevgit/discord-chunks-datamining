@@ -1,18 +1,18 @@
-/** Chunk was on 27863 **/
+/** Chunk was on 84921 **/
 n.d(t, {
   Z: () => P
 }), n(539854), n(388685);
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  l = n.n(i);
-if (12633 == n.j) var o = n(114858);
-var a = n(442837),
-  c = n(481060),
-  s = n(430824),
+  l = n.n(i),
+  o = n(114858),
+  a = n(442837),
+  s = n(481060),
+  c = n(430824),
   u = n(914010),
-  E = n(693546),
-  d = n(305325),
+  d = n(693546),
+  E = n(305325),
   _ = n(246364),
   I = n(983736),
   O = n(937111),
@@ -40,32 +40,32 @@ function A(e) {
   }
   return e
 }
-let P = 12633 == n.j ? () => {
+let P = () => {
   var e, t;
   let i = (0, a.e7)([u.Z], () => u.Z.getGuildId(), []),
-    P = (0, a.e7)([s.Z], () => s.Z.getGuild(i), [i]),
+    P = (0, a.e7)([c.Z], () => c.Z.getGuild(i), [i]),
     f = (0, a.e7)([O.Z], () => null != i ? O.Z.getRequest(i) : null, [i]),
     C = (0, o.TH)(),
     D = (null == (e = (0, o.LX)(C.pathname, T.Z5c.CHANNEL(null == P ? void 0 : P.id, N.oC.GUILD_ONBOARDING))) ? void 0 : e.isExact) === !0;
   if (null == P || !(0, I.Dc)(P) || D) return null;
-  let m = null != (t = null == f ? void 0 : f.applicationStatus) ? t : _.wB.STARTED,
-    g = null,
+  let g = null != (t = null == f ? void 0 : f.applicationStatus) ? t : _.wB.STARTED,
     y = null,
+    m = null,
     h = null,
-    U = [p.notice, R.notice];
-  switch (m) {
+    b = [p.notice, R.notice];
+  switch (g) {
     case _.wB.SUBMITTED:
-      g = S.intl.string(S.t["5iLvS0"]), y = S.intl.string(S.t.mqtdmZ), h = () => {
-        (0, c.h7j)(e => {
+      y = S.intl.string(S.t["5iLvS0"]), m = S.intl.string(S.t.mqtdmZ), h = () => {
+        (0, s.h7j)(e => {
           var t, n;
-          return (0, r.jsx)(c.ConfirmModal, (t = A({
+          return (0, r.jsx)(s.ConfirmModal, (t = A({
             header: S.intl.string(S.t.aIz1oa),
             confirmText: S.intl.string(S.t["cY+Ooa"]),
             cancelText: S.intl.string(S.t["ETE/oK"]),
-            onConfirm: () => E.Z.removeGuildJoinRequest(P.id),
-            confirmButtonColor: c.zxk.Colors.BRAND
+            onConfirm: () => d.Z.removeGuildJoinRequest(P.id),
+            confirmButtonColor: s.zxk.Colors.BRAND
           }, e), n = n = {
-            children: (0, r.jsx)(c.Text, {
+            children: (0, r.jsx)(s.Text, {
               variant: "text-md/normal",
               children: S.intl.string(S.t["13tjTU"])
             })
@@ -83,8 +83,8 @@ let P = 12633 == n.j ? () => {
       };
       break;
     case _.wB.REJECTED:
-      g = S.intl.string(S.t.lk30cX), y = S.intl.string(S.t["8RrsHh"]), h = () => {
-        (0, c.ZDy)(async () => {
+      y = S.intl.string(S.t.lk30cX), m = S.intl.string(S.t["8RrsHh"]), h = () => {
+        (0, s.ZDy)(async () => {
           let {
             default: e
           } = await n.e("3378").then(n.bind(n, 76075));
@@ -92,26 +92,26 @@ let P = 12633 == n.j ? () => {
             guildId: P.id
           }, t))
         })
-      }, U.push(p.error);
+      }, b.push(p.error);
       break;
     default:
-      g = S.intl.string(S.t.G5YKXF), y = S.intl.string(S.t["r8/DT0"]), h = () => {
-        (0, d.hk)(P.id)
+      y = S.intl.string(S.t.G5YKXF), m = S.intl.string(S.t["r8/DT0"]), h = () => {
+        (0, E.hk)(P.id)
       }
   }
   return (0, r.jsxs)("div", {
-    className: l()(...U),
-    children: [(0, r.jsx)(c.Text, {
+    className: l()(...b),
+    children: [(0, r.jsx)(s.Text, {
       className: p.header,
       variant: "text-sm/normal",
-      children: g
-    }), (0, r.jsx)(c.zxk, {
-      className: p.button,
-      look: c.zxk.Looks.OUTLINED,
-      color: c.zxk.Colors.WHITE,
-      size: c.zxk.Sizes.NONE,
-      onClick: h,
       children: y
+    }), (0, r.jsx)(s.zxk, {
+      className: p.button,
+      look: s.zxk.Looks.OUTLINED,
+      color: s.zxk.Colors.WHITE,
+      size: s.zxk.Sizes.NONE,
+      onClick: h,
+      children: m
     })]
   })
-} : null
+}

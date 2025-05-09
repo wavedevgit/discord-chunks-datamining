@@ -49,8 +49,8 @@ var r = n(255367),
   Y = n(531551),
   K = n(38618),
   q = n(972830),
-  X = n(684572),
-  Q = n(584233),
+  Q = n(684572),
+  X = n(584233),
   J = n(15274),
   $ = n(434404),
   ee = n(543842),
@@ -103,8 +103,8 @@ var r = n(255367),
   eY = n(914010),
   eK = n(695103),
   eq = n(241890),
-  eX = n(897607),
-  eQ = n(417363),
+  eQ = n(897607),
+  eX = n(417363),
   eJ = n(900974),
   e$ = n(358085),
   e0 = n(998502),
@@ -184,7 +184,7 @@ let e9 = (0, m.l)(e => {
       let {
         match: e
       } = this.props;
-      null != e && null != e.params.inviteCode && (0, Q.x)({
+      null != e && null != e.params.inviteCode && (0, X.x)({
         code: e.params.inviteCode
       })
     }
@@ -212,7 +212,7 @@ let e9 = (0, m.l)(e => {
   tt = (0, m.l)((0, P.e)(A.Z, null, {
     passProps: !1
   })),
-  tn = (0, P.e)(X.default, null, {
+  tn = (0, P.e)(Q.default, null, {
     passProps: !1
   }),
   tr = [e3.Z5c.GUILD_BOOSTING_MARKETING(eO.Hw.guildId()), ...Array.from(e8.Vg).map(e => e3.Z5c.CHANNEL(eO.Hw.guildId(), e))];
@@ -274,7 +274,7 @@ let tl = [{
       gameId: n,
       action: i
     } = t.params;
-    return eQ.Z.whenInitialized(() => {
+    return eX.Z.whenInitialized(() => {
       ez.Z.whenInitialized(() => {
         switch (i) {
           case "launch": {
@@ -477,7 +477,7 @@ function to(e) {
 }
 class ts extends i.PureComponent {
   componentDidMount() {
-    e0.ZP.setZoomFactor(b.Z.zoom), eI.Z.init(), j.Z.initialize(), ef.Z.initialize(), F.Z.initialize(), eM.Z.initialize(), z.Z.initialize(), em.Z.initialize(), M.Z.initialize(), ei.Z.initialize(), _.Z.init(), Y.Z.init(), W.Z.init(), ec.Z.initialize(), C.Z.initialize(), B.Z.initialize(), eb.Z.initialize(), v.ZP.initialize(), ek.Z.initialize(), eh.Z.initialize(), I.Z.initialize(), en.Z.init(), eX.Z.init(), eJ.Z.init(), y.Z.initialize(), eZ.Z.init(), eq.Z.init(), eL.Z.init(), eT.Z.initialize(), eP.Z.initialize(), ew.Z.initialize(), eR.Z.init(), G.Z.initialize(), E.Z.initialize(), ev.Z.initialize(), eN.Z.initialize(), ed.Z.initialize(), eu.Z.initialize(), ep.Z.initialize(), w.Z.initialize(), L.Z.initialize(), H.Z.initialize(), er.Z.init({
+    e0.ZP.setZoomFactor(b.Z.zoom), eI.Z.init(), j.Z.initialize(), ef.Z.initialize(), F.Z.initialize(), eM.Z.initialize(), z.Z.initialize(), em.Z.initialize(), M.Z.initialize(), ei.Z.initialize(), _.Z.init(), Y.Z.init(), W.Z.init(), ec.Z.initialize(), C.Z.initialize(), B.Z.initialize(), eb.Z.initialize(), v.ZP.initialize(), ek.Z.initialize(), eh.Z.initialize(), I.Z.initialize(), en.Z.init(), eQ.Z.init(), eJ.Z.init(), y.Z.initialize(), eZ.Z.init(), eq.Z.init(), eL.Z.init(), eT.Z.initialize(), eP.Z.initialize(), ew.Z.initialize(), eR.Z.init(), G.Z.initialize(), E.Z.initialize(), ev.Z.initialize(), eN.Z.initialize(), ed.Z.initialize(), eu.Z.initialize(), ep.Z.initialize(), w.Z.initialize(), L.Z.initialize(), H.Z.initialize(), er.Z.init({
       hasModalOpen: s.$sL,
       openModal: () => (0, s.ZDy)(async () => {
         let {

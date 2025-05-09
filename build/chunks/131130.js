@@ -1,4 +1,4 @@
-/** Chunk was on 27863 **/
+/** Chunk was on 84921 **/
 n.d(t, {
   q: () => _
 }), n(953529);
@@ -8,22 +8,22 @@ var i = n(704215),
   l = n(481060),
   o = n(906732),
   a = n(963249),
-  c = n(286961),
-  s = n(644916),
+  s = n(286961),
+  c = n(644916),
   u = n(243778),
-  E = n(921944),
-  d = n(131715);
+  d = n(921944),
+  E = n(131715);
 let _ = e => {
   let {
     dismissibleContent: t,
     noticeType: n
   } = e, {
     analyticsLocations: _
-  } = (0, o.ZP)(), I = (0, c.Z)();
+  } = (0, o.ZP)(), I = (0, s.Z)();
   return (0, r.jsx)(u.Xf, {
     contentType: t,
-    latestVersion: (0, s.t)(t),
-    groupName: E.R.NOTICE_BAR,
+    latestVersion: (0, c.t)(t),
+    groupName: d.R.NOTICE_BAR,
     bypassAutoDismiss: !0,
     children: e => {
       let {
@@ -35,14 +35,14 @@ let _ = e => {
         return (0, r.jsxs)(l.qXd, {
           color: l.DM8.PREMIUM_TIER_2,
           children: [(0, r.jsx)(l.RyX, {
-            onClick: () => o(E.L.USER_DISMISS),
+            onClick: () => o(d.L.USER_DISMISS),
             noticeType: n
           }), (0, r.jsx)(l.OgN, {
             size: "custom",
             width: 20,
             height: 20,
             color: "currentColor",
-            className: d.giftIcon
+            className: E.giftIcon
           }), null == e ? void 0 : e.description(), (0, r.jsx)(l.NoS, {
             onClick: () => {
               (0, a.Z)({

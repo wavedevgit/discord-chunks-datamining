@@ -7,8 +7,8 @@ var i = n(73800),
   l = n(835473),
   o = n(594174),
   a = n(695103),
-  s = n(823379),
-  c = n(358085),
+  c = n(823379),
+  s = n(358085),
   u = n(317381),
   d = n(761122);
 
@@ -19,28 +19,28 @@ function p(e) {
     m = n.map(e => e.application_id),
     f = null != p ? [p, ...m] : m,
     h = (0, l.Z)(f),
-    b = i.useMemo(() => h.filter(s.lm), [h]),
+    b = i.useMemo(() => h.filter(c.lm), [h]),
     _ = i.useMemo(() => null != p && b.length > 0 && b[0].id === p && null != b[0].embeddedActivityConfig ? [{
       activity: b[0].embeddedActivityConfig,
       application: b[0]
     }] : [], [b, p]),
-    y = i.useMemo(() => n.map(e => {
+    C = i.useMemo(() => n.map(e => {
       let t = b.find(t => t.id === e.application_id);
       return null == t ? null : {
         activity: e,
         application: t
       }
-    }).filter(s.lm), [n, b]);
-  return i.useMemo(() => [..._, ...y].filter(e => {
+    }).filter(c.lm), [n, b]);
+  return i.useMemo(() => [..._, ...C].filter(e => {
     var t;
     let {
       activity: n
     } = e;
-    return (null != (t = n.supported_platforms) ? t : []).includes((0, d.Z)((0, c.getOS)()))
+    return (null != (t = n.supported_platforms) ? t : []).includes((0, d.Z)((0, s.getOS)()))
   }).filter(e => {
     let {
       activity: n
     } = e;
     return !n.requires_age_gate || (null == t ? void 0 : t.nsfwAllowed) === !0 || (null == t ? void 0 : t.nsfwAllowed) == null
-  }), [null == t ? void 0 : t.nsfwAllowed, y, _])
+  }), [null == t ? void 0 : t.nsfwAllowed, C, _])
 }

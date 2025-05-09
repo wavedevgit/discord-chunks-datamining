@@ -70,11 +70,11 @@ let U = e => {
     let Y = (0, a.e7)([f.default], () => f.default.getCurrentUser()),
       K = (0, a.e7)([m.ZP], () => m.ZP.getPremiumTypeSubscription()),
       q = (0, _.Qo)(Y, K),
-      X = (0, l.JA)("nitro"),
-      Q = (0, v.N)(),
+      Q = (0, l.JA)("nitro"),
+      X = (0, v.N)(),
       J = (0, I.Ng)(),
       $ = (0, O.W)(),
-      ee = (0, a.e7)([g.Z], () => g.Z.isLocalizedPromoEnabled) && null == Q,
+      ee = (0, a.e7)([g.Z], () => g.Z.isLocalizedPromoEnabled) && null == X,
       et = (0, T.Vi)(),
       en = (0, S.$_)(),
       er = (0, Z.V)(),
@@ -90,7 +90,7 @@ let U = e => {
         showAfterTimestamp: ea.valueOf(),
         cooldownDurationMs: 0
       }),
-      eu = (null == Q ? void 0 : Q.trial_id) === L.a7,
+      eu = (null == X ? void 0 : X.trial_id) === L.a7,
       [ed, ep] = (0, h.US)($ ? [o.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2] : [], void 0, !0);
     if (i.useEffect(() => {
         !0 === H && null != ed && ep(D.L.AUTO_DISMISS)
@@ -115,7 +115,7 @@ let U = e => {
       userDiscount: J,
       isTabSelected: H,
       includesAmountOff: !1
-    }), G = 3) : null == Q || eu ? ei ? (E = (0, r.jsx)(j.l, {
+    }), G = 3) : null == X || eu ? ei ? (E = (0, r.jsx)(j.l, {
       isSelected: H,
       onSelect: () => (0, p.EW)(o.z.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE, {
         dismissAction: D.L.TAKE_ACTION
@@ -123,7 +123,7 @@ let U = e => {
     }), G = 6) : ee && (E = (0, r.jsx)(N.k, {
       entryPoint: N.U.PrivateMessages
     }), H || (t = M.localizeBadge), G = 5) : (E = (0, r.jsx)(P.$H, {
-      trialOffer: Q,
+      trialOffer: X,
       isTabSelected: H
     }), G = 4);
     let eh = (0, r.jsx)(c.Qj, (B = function(e) {
@@ -155,7 +155,7 @@ let U = e => {
           has_premium: q
         }), null != ed && ep(D.L.USER_DISMISS)
       }
-    }, W, X), V = V = {
+    }, W, Q), V = V = {
       className: t,
       avatarWithTextClassName: n,
       children: E
