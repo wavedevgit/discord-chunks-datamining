@@ -43,13 +43,13 @@ let y = e => {
     guildId: r,
     closePopout: _
   } = e, y = (0, c.Dt)(), {
-    notClaimed: O,
-    notEmailVerified: v,
+    notClaimed: v,
+    notEmailVerified: O,
     notPhoneVerified: C,
     newAccount: S,
     newMember: j
   } = (0, l.e7)([d.Z], () => d.Z.getCheck(r), [r]), E = 0 === t ? g.intl.string(g.t["6zY8BA"]) : null, x = null, P = null;
-  return (0 === t && (O ? (x = g.intl.string(g.t.IRxUlJ), P = g.intl.string(g.t.fiNVio)) : C ? (x = g.intl.string(g.t.vW8iUF), P = g.intl.string(g.t["50gfOj"])) : v ? (x = g.intl.string(g.t.vdSOp6), P = g.intl.string(g.t.lm1UKi)) : j ? (x = g.intl.formatToPlainString(g.t.v1ktYW, {
+  return (0 === t && (v ? (x = g.intl.string(g.t.IRxUlJ), P = g.intl.string(g.t.fiNVio)) : C ? (x = g.intl.string(g.t.vW8iUF), P = g.intl.string(g.t["50gfOj"])) : O ? (x = g.intl.string(g.t.vdSOp6), P = g.intl.string(g.t.lm1UKi)) : j ? (x = g.intl.formatToPlainString(g.t.v1ktYW, {
     min: p.YeM.MEMBER_AGE
   }), P = g.intl.string(g.t.BddRzc)) : S && (x = g.intl.formatToPlainString(g.t["sncw4+"], {
     min: p.YeM.ACCOUNT_AGE
@@ -74,7 +74,7 @@ let y = e => {
         className: m.buttonContainer,
         children: [null != P ? (0, i.jsx)(o.zxk, {
           onClick: () => {
-            O ? a.j() : C ? (0, o.ZDy)(async () => {
+            v ? a.j() : C ? (0, o.ZDy)(async () => {
               let {
                 default: e
               } = await Promise.resolve().then(n.bind(n, 607018));
@@ -83,7 +83,7 @@ let y = e => {
               }, t))
             }, {
               modalKey: f.M
-            }) : v && (s.Z.verifyResend(), (0, o.h7j)(e => {
+            }) : O && (s.Z.verifyResend(), (0, o.h7j)(e => {
               var t, n, r;
               return (0, i.jsx)(o.ConfirmModal, (n = b({
                 header: g.intl.string(g.t.LykQYm),
@@ -110,7 +110,7 @@ let y = e => {
           },
           className: m.primaryButton,
           children: P
-        }) : null, O || C || v ? (0, i.jsx)(o.zxk, {
+        }) : null, v || C || O ? (0, i.jsx)(o.zxk, {
           onClick: _,
           look: o.zxk.Looks.BLANK,
           className: m.cancel,

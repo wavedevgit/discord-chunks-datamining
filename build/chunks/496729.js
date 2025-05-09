@@ -6,10 +6,10 @@ n.d(t, {
 });
 var i = n(255367),
   r = n(704215),
-  a = n(481060),
-  l = n(570140),
-  o = n(605236),
-  u = n(592125),
+  l = n(481060),
+  a = n(570140),
+  u = n(605236),
+  o = n(592125),
   c = n(305587);
 
 function s(e) {
@@ -35,15 +35,15 @@ function d(e) {
   let {
     channelId: t,
     location: n
-  } = e, i = u.Z.getChannel(t), a = (0, o.un)(r.z.USER_DM_MUTE_FEEDBACK);
-  null != i && i.isDM() && !a && (0, c.Xs)(n) && l.Z.dispatch({
+  } = e, i = o.Z.getChannel(t), l = (0, u.un)(r.z.USER_DM_MUTE_FEEDBACK);
+  null != i && i.isDM() && !l && (0, c.Xs)(n) && a.Z.dispatch({
     type: "USER_DM_MUTE_SHOW_FEEDBACK",
     channel: i
   })
 }
 
 function f() {
-  (0, a.ZDy)(async () => {
+  (0, l.ZDy)(async () => {
     let {
       default: e
     } = await n.e("87995").then(n.bind(n, 180970));
@@ -52,7 +52,7 @@ function f() {
 }
 
 function g() {
-  (0, a.ZDy)(async () => {
+  (0, l.ZDy)(async () => {
     let {
       default: e
     } = await n.e("3980").then(n.bind(n, 746147));

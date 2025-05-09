@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(718589),
   _ = n(933557),
   y = n(557135),
-  O = n(873696),
-  v = n(446226),
+  v = n(873696),
+  O = n(446226),
   C = n(305325),
   S = n(281956),
   j = n(66999),
@@ -121,7 +121,7 @@ class en extends H.ZP {
     let {
       channel: t,
       connected: n
-    } = this.props, i = null == (e = (0, O.D)(this.props.subtitle)) ? void 0 : e.subtitle, {
+    } = this.props, i = null == (e = (0, v.D)(this.props.subtitle)) ? void 0 : e.subtitle, {
       hovered: l
     } = this.state;
     return (0, r.jsx)(Y.Z, {
@@ -209,8 +209,8 @@ class en extends H.ZP {
       connectDragPreview: g,
       canReorderChannel: _,
       canMoveMembers: y,
-      showTutorial: O,
-      hasActiveEvent: v,
+      showTutorial: v,
+      hasActiveEvent: O,
       embeddedApps: C,
       isSubscriptionGated: S,
       isFavoriteSuggestion: j,
@@ -263,9 +263,9 @@ class en extends H.ZP {
                   ref: this.channelItemRef,
                   className: J.iconVisibility,
                   iconClassName: o()({
-                    [J.iconLive]: v
+                    [J.iconLive]: O
                   }),
-                  hasActiveEvent: v,
+                  hasActiveEvent: O,
                   channel: e,
                   selected: !j && t,
                   connected: n,
@@ -310,7 +310,7 @@ class en extends H.ZP {
         })
       }), this.renderVoiceUsers()]
     });
-    return y && (A = f(A)), _ && (A = h(p(A))), O && (A = (0, r.jsx)(Z.Z, {
+    return y && (A = f(A)), _ && (A = h(p(A))), v && (A = (0, r.jsx)(Z.Z, {
       childRef: this.ref,
       tutorialId: "voice-conversations",
       position: "right",
@@ -480,14 +480,14 @@ function ei(e) {
     }
   }), p = (0, s.e7)([G.Z], () => G.Z.hasVideo(n.id)), g = (0, f.ZP)(n), m = (0, _.ZP)(n), b = (0, E.qY)(n.id), {
     isSubscriptionGated: y,
-    needSubscriptionToAccess: O
-  } = (0, j.Z)(n.id), C = (0, v.Z)(), S = (0, s.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), x = e.connected || (null == C ? void 0 : C.channelId) === n.id, P = (0, F.Z)({
+    needSubscriptionToAccess: v
+  } = (0, j.Z)(n.id), C = (0, O.Z)(), S = (0, s.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), x = e.connected || (null == C ? void 0 : C.channelId) === n.id, P = (0, F.Z)({
     channel: n,
     isChannelSelected: o,
     isChannelCollapsed: a,
     voiceStates: c,
     isSubscriptionGated: y,
-    needSubscriptionToAccess: O,
+    needSubscriptionToAccess: v,
     enableConnectedUserLimit: !0,
     enableActivities: !0
   }), I = x && null == P;
@@ -498,7 +498,7 @@ function ei(e) {
     video: p,
     hasActiveEvent: null != b,
     isSubscriptionGated: y,
-    needSubscriptionToAccess: O
+    needSubscriptionToAccess: v
   }, u, h, e), {
     connected: x,
     isFavoriteSuggestion: l && !S,

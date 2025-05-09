@@ -1,4 +1,4 @@
-/** Chunk was on 22356 **/
+/** Chunk was on 77564 **/
 e.d(t, {
   Z: () => c
 });
@@ -8,15 +8,15 @@ var r = e(442837),
   l = e(481060),
   a = e(569471),
   o = e(346479),
-  s = e(723170),
+  u = e(723170),
   d = e(124368),
-  u = e(388032);
+  s = e(388032);
 
 function c(n) {
-  let t = (0, s.B)(n);
+  let t = (0, u.B)(n);
   return (0, r.e7)([a.Z], () => a.Z.hasJoined(n.id)) ? (0, i.jsx)(l.sNh, {
     id: "thread-notifications",
-    label: u.intl.string(u.t.h850Sk),
+    label: s.intl.string(s.t.h850Sk),
     children: (0, d.zb)().map(e => {
       let {
         setting: r,
@@ -34,7 +34,7 @@ function c(n) {
     })
   }) : (0, i.jsx)(l.sNh, {
     id: "notifications-disabled",
-    label: u.intl.string(u.t.h850Sk),
+    label: s.intl.string(s.t.h850Sk),
     disabled: !0
   })
 }

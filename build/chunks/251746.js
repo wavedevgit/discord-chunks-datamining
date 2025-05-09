@@ -1,37 +1,37 @@
-/** Chunk was on 22356 **/
+/** Chunk was on 77564 **/
 e.d(t, {
-  Z: () => f
+  Z: () => v
 });
 var i = e(255367),
   r = e(73800),
   l = e(392711),
   a = e.n(l),
   o = e(442837),
-  s = e(481060),
+  u = e(481060),
   d = e(66999),
-  u = e(665906),
+  s = e(665906),
   c = e(979651),
-  h = e(557135),
-  g = e(388032);
+  f = e(557135),
+  h = e(388032);
 
-function f(n) {
-  let t = (0, u.Y)(n),
+function v(n) {
+  let t = (0, s.Y)(n),
     e = (0, o.e7)([c.Z], () => c.Z.isInChannel(n.id)),
     l = (0, o.e7)([c.Z], () => !a().isEmpty(c.Z.getVoiceStatesForChannel(n.id))),
     {
-      needSubscriptionToAccess: f
+      needSubscriptionToAccess: v
     } = (0, d.Z)(n.id),
-    b = r.useCallback(() => {
-      h.Z.handleVoiceConnect({
+    g = r.useCallback(() => {
+      f.Z.handleVoiceConnect({
         channel: n,
         connected: e,
-        needSubscriptionToAccess: f,
+        needSubscriptionToAccess: v,
         locked: !1
       })
-    }, [n, e, f]);
-  return e || !t ? null : (0, i.jsx)(s.sNh, {
+    }, [n, e, v]);
+  return e || !t ? null : (0, i.jsx)(u.sNh, {
     id: "join-thread-voice",
-    label: l ? g.intl.string(g.t["0D/6R0"]) : g.intl.string(g.t.My50nZ),
-    action: b
+    label: l ? h.intl.string(h.t["0D/6R0"]) : h.intl.string(h.t.My50nZ),
+    action: g
   })
 }

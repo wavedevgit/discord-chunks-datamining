@@ -1,11 +1,11 @@
-/** Chunk was on 33177 **/
+/** Chunk was on 66141 **/
 n.d(e, {
-  PA: () => d,
-  Tn: () => s,
-  _i: () => g,
-  eI: () => m,
+  PA: () => s,
+  Tn: () => d,
+  _i: () => h,
+  eI: () => p,
   vp: () => E,
-  y8: () => p
+  y8: () => m
 });
 var r = n(367907),
   i = n(200876),
@@ -19,7 +19,7 @@ function c(t) {
   return t
 }
 
-function s(t) {
+function d(t) {
   let {
     username: e,
     usernameOnClickHandler: n,
@@ -39,7 +39,7 @@ function s(t) {
   return o.intl.format(a, u)
 }
 
-function d(t) {
+function s(t) {
   let {
     username: e,
     usernameOnClickHandler: n,
@@ -80,19 +80,19 @@ function _(t) {
     roleSubscriptionData: l
   } = t, {
     guild: a,
-    totalMonthsSubscribed: s,
-    showWithDuration: d,
+    totalMonthsSubscribed: d,
+    showWithDuration: s,
     isRenewal: _
   } = f(i, l);
   return {
-    content: d ? _ ? o.t.Iy66Mz : o.t.eCgb2d : _ ? o.t.mPTTdn : o.t.mYjFFx,
+    content: s ? _ ? o.t.Iy66Mz : o.t.eCgb2d : _ ? o.t.mPTTdn : o.t.mYjFFx,
     formatParams: {
       username: e,
       usernameHook: n,
       guildName: null == a ? void 0 : a.name,
       handleGuildNameClick: r,
       tierName: null == l ? void 0 : l.tier_name,
-      months: s
+      months: d
     }
   }
 }
@@ -106,26 +106,26 @@ function E(t) {
       roleSubscriptionData: a
     } = t,
     {
-      guild: s,
-      totalMonthsSubscribed: d,
+      guild: d,
+      totalMonthsSubscribed: s,
       showWithDuration: _,
       isRenewal: E
     } = f(l, a);
   return e = _ ? E ? o.t.OQ0OU1 : o.t["+N9bxs"] : E ? o.t.OxP1ND : o.t["6Z1E+/"], o.intl.formatToParts(e, {
-    guildName: null == s ? void 0 : s.name,
+    guildName: null == d ? void 0 : d.name,
     tierName: null == a ? void 0 : a.tier_name,
     username: n,
     usernameOnClick: r,
     roleSubscriptionOnClick: i,
-    months: d
+    months: s
   })
 }
 
-function m(t) {
+function p(t) {
   return (0, i.l)(t)
 }
 
-function p(t, e, n, i) {
+function m(t, e, n, i) {
   var l;
   r.ZP.trackWithMetadata(u.rMx.ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE_CLICKED, {
     guild_id: t,
@@ -136,7 +136,7 @@ function p(t, e, n, i) {
   })
 }
 
-function g(t, e) {
+function h(t, e) {
   var n;
   return {
     guild_id: t.guild_id,

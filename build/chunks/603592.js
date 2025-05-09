@@ -22,8 +22,8 @@ let f = i.forwardRef(function(e, t) {
     icon: b,
     selected: _,
     tooltip: y,
-    upperBadge: O,
-    lowerBadge: v,
+    upperBadge: v,
+    lowerBadge: O,
     lowerBadgeSize: C,
     showPill: S = !0,
     className: j,
@@ -45,8 +45,8 @@ let f = i.forwardRef(function(e, t) {
       selected: _,
       children: (0, r.jsx)(a.aRk, {
         selected: !!N || _ || T,
-        upperBadge: O,
-        lowerBadge: v,
+        upperBadge: v,
+        lowerBadge: O,
         lowerBadgeSize: C,
         children: (0, r.jsx)(a.P3F, (n = function(e) {
           for (var t = 1; t < arguments.length; t++) {

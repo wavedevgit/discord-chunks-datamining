@@ -1,4 +1,4 @@
 /** Chunk was on 86797 **/
-e.exports = {
+t.exports = {
   emoji: "emoji_e85ed6"
 }

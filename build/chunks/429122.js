@@ -71,10 +71,10 @@ let _ = i.memo(function(e) {
     selectedVoiceChannelId: _,
     optInEnabled: y
   } = e, {
-    hasDivider: O,
-    canHaveVoiceSummary: v
+    hasDivider: v,
+    canHaveVoiceSummary: O
   } = i.useMemo(() => (0, d.ie)(n, y, t), [n, y, t, h]), C = i.useMemo(() => t === u.wZ ? null : n.getCategoryFromSection(t), [n, t, h]), S = (0, s.DM)(m), j = (0, l.Wu)([a.ZP], () => {
-    if (null == C || !C.isCollapsed || !v) return [];
+    if (null == C || !C.isCollapsed || !O) return [];
     let e = C.getChannelRecords(),
       t = [];
     for (let n of e) {
@@ -83,7 +83,7 @@ let _ = i.memo(function(e) {
       (!S || e) && t.push(n)
     }
     return t
-  }, [C, v, m, S]), E = i.useMemo(() => (0, c.c4)({
+  }, [C, O, m, S]), E = i.useMemo(() => (0, c.c4)({
     channels: j,
     selectedChannelId: b,
     selectedVoiceChannelId: _,
@@ -93,10 +93,10 @@ let _ = i.memo(function(e) {
     guildChannels: n,
     guildChannelsVersion: h
   });
-  let x = O ? (0, r.jsx)("div", {
+  let x = v ? (0, r.jsx)("div", {
     className: f.sectionDivider
   }) : null;
-  return v && 0 !== E.length ? (0, r.jsxs)(r.Fragment, {
+  return O && 0 !== E.length ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: f.voiceUserSummary,
       children: (0, r.jsx)(o.Z, {

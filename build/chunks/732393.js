@@ -1,6 +1,6 @@
-/** Chunk was on 22356 **/
+/** Chunk was on 77564 **/
 e.d(t, {
-  Z: () => v
+  Z: () => Z
 }), e(388685);
 var i = e(255367);
 e(73800);
@@ -8,26 +8,26 @@ var r = e(442837),
   l = e(481060),
   a = e(239091),
   o = e(596454),
-  s = e(339085),
+  u = e(339085),
   d = e(883429),
-  u = e(456269),
+  s = e(456269),
   c = e(665906),
-  h = e(592125),
-  g = e(710352),
-  f = e(388032),
-  b = e(939852);
+  f = e(592125),
+  h = e(710352),
+  v = e(388032),
+  g = e(939852);
 
-function Z(n) {
+function p(n) {
   let {
     tag: t
   } = n, {
     name: e,
     emojiId: l,
     emojiName: a
-  } = t, d = (0, r.e7)([s.ZP], () => null != l ? s.ZP.getUsableCustomEmojiById(l) : null);
+  } = t, d = (0, r.e7)([u.ZP], () => null != l ? u.ZP.getUsableCustomEmojiById(l) : null);
   return (0, i.jsxs)(i.Fragment, {
     children: [null != a || null != l ? (0, i.jsx)(o.Z, {
-      className: b.emoji,
+      className: g.emoji,
       emojiId: l,
       emojiName: a,
       animated: !!(null == d ? void 0 : d.animated)
@@ -35,41 +35,41 @@ function Z(n) {
   })
 }
 
-function v(n) {
-  let t = (0, r.e7)([h.Z], () => h.Z.getChannel(n), [n]),
+function Z(n) {
+  let t = (0, r.e7)([f.Z], () => f.Z.getChannel(n), [n]),
     e = (0, c.C7)(t),
-    o = (0, r.e7)([h.Z], () => h.Z.getChannel(null == t ? void 0 : t.parent_id), [t]),
-    s = (0, u.Vm)(o),
-    b = (0, u.eV)(t),
-    v = b.length >= g.Cn,
-    p = (0, c.$R)(t);
+    o = (0, r.e7)([f.Z], () => f.Z.getChannel(null == t ? void 0 : t.parent_id), [t]),
+    u = (0, s.Vm)(o),
+    g = (0, s.eV)(t),
+    Z = g.length >= h.Cn,
+    C = (0, c.$R)(t);
   if (null == t) return (0, a.Zy)(), null;
-  if (!e || __OVERLAY__ || !t.isForumPost() || (null == s ? void 0 : s.length) === 0 || !p) return null;
-  let j = n => {
-      let e = new Set(b);
+  if (!e || __OVERLAY__ || !t.isForumPost() || (null == u ? void 0 : u.length) === 0 || !C) return null;
+  let E = n => {
+      let e = new Set(g);
       if (e.has(n)) e.delete(n);
       else {
-        if (v) return;
+        if (Z) return;
         e.add(n)
       }
       let i = Array.from(e).map(n => n.id);
       d.Z.updateForumPostTags(t.id, i)
     },
-    m = null == s ? void 0 : s.map(n => {
-      let t = b.includes(n);
+    b = null == u ? void 0 : u.map(n => {
+      let t = g.includes(n);
       return (0, i.jsx)(l.S89, {
         id: n.id,
-        label: (0, i.jsx)(Z, {
+        label: (0, i.jsx)(p, {
           tag: n
         }),
-        disabled: v && !t,
-        action: () => j(n),
+        disabled: Z && !t,
+        action: () => E(n),
         checked: t
       }, n.id)
     });
   return (0, i.jsx)(l.sNh, {
     id: "edit-tags",
-    label: f.intl.string(f.t["436ZFx"]),
-    children: m
+    label: v.intl.string(v.t["436ZFx"]),
+    children: b
   })
 }
