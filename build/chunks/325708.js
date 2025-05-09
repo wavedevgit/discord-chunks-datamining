@@ -70,16 +70,16 @@ function x(e) {
   }, [x]), O = 5 === t ? g.at : g.Co, E = (0, g.WL)({
     maxWidth: n,
     minWidth: O
-  }), I = (0, d.dQu)(u.Z.modules.chat.RESIZE_HANDLE_WIDTH), P = (0, s.clamp)(C, O, n), S = E ? P : P + I;
+  }), I = (0, d.dQu)(u.Z.modules.chat.RESIZE_HANDLE_WIDTH), S = (0, s.clamp)(C, O, n), P = E ? S : S + I;
   l.useEffect(() => {
-    null == r || r(P, E)
-  }, [P, r, E]);
+    null == r || r(S, E)
+  }, [S, r, E]);
   let Z = null != h ? h : l.Fragment,
     N = (0, c.e7)([f.ZP], () => f.ZP.isContextlessActivityInPanelMode());
   return (0, i.jsxs)(i.Fragment, {
     children: [!E && (0, i.jsx)("div", {
       style: {
-        minWidth: S
+        minWidth: P
       }
     }), (0, i.jsx)(Z, {
       children: (0, i.jsxs)("div", {
@@ -92,7 +92,7 @@ function x(e) {
             [b.notFloating]: !E
           }),
           style: {
-            width: S
+            width: P
           }
         }), !E && (0, i.jsx)(y, {
           minWidth: O,
@@ -106,7 +106,7 @@ function x(e) {
             [b.floating]: E
           }),
           style: {
-            width: P
+            width: S
           },
           children: o
         })]

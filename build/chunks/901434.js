@@ -29,7 +29,7 @@ let v = (e, t) => b.ZP.getName(e.getGuildId(), e.id, t.user),
       hasConnectPermission: l
     } = e, b = (0, d.Q3)("StageChannelCallEmpty"), j = (0, h.J)(n.guild_id), O = i.useCallback(() => {
       j ? (0, p.hk)(n.guild_id, () => c.default.selectVoiceChannel(n.id)) : c.default.selectVoiceChannel(n.id)
-    }, [n.id, n.guild_id, j]), E = t.filter(e => e.type === _.Ui.VOICE), I = 4 === E.length ? 2 : 3, P = (0, a.Wu)([u.Z], () => E.map(e => u.Z.getParticipant(n.id, e.id)).filter(g.lm), [n.id, E]);
+    }, [n.id, n.guild_id, j]), E = t.filter(e => e.type === _.Ui.VOICE), I = 4 === E.length ? 2 : 3, S = (0, a.Wu)([u.Z], () => E.map(e => u.Z.getParticipant(n.id, e.id)).filter(g.lm), [n.id, E]);
     return (0, r.jsxs)("div", {
       className: C.container,
       children: [b && (0, r.jsx)(m.Z, {}), (0, r.jsx)("div", {
@@ -37,7 +37,7 @@ let v = (e, t) => b.ZP.getName(e.getGuildId(), e.id, t.user),
         style: {
           maxWidth: 168 * I
         },
-        children: P.slice(0, 5).map(e => (0, r.jsx)(f.ZP, {
+        children: S.slice(0, 5).map(e => (0, r.jsx)(f.ZP, {
           participant: e,
           channel: n,
           className: C.tile,

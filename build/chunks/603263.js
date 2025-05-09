@@ -4,11 +4,11 @@ n.d(t, {
   QQ: () => b,
   QY: () => v,
   Vj: () => d,
-  j8: () => y,
+  j8: () => E,
   jn: () => f,
   m$: () => m,
   oO: () => h,
-  qt: () => E,
+  qt: () => y,
   u$: () => x,
   yC: () => u
 });
@@ -54,7 +54,8 @@ function u(e, t, n, o) {
   (0, a.jW)(t, e), o && (t.search_everywhere = !0), (0, i.tI)({
     searchType: l.Z.getSearchType(e),
     searchId: e,
-    query: t
+    query: t,
+    queryString: n
   }), r.Z.dispatch({
     type: "SEARCH_START",
     query: t,
@@ -65,12 +66,12 @@ function u(e, t, n, o) {
 }
 
 function d(e) {
-  return "relevance" === e.sort_by ? o.QIO.MOST_RELEVANT : "asc" === e.sort_order ? o.QIO.OLDEST : o.QIO.NEWEST
+  return null == e.sort_by || null == e.sort_order ? o.QIO.NEWEST : "relevance" === e.sort_by ? o.QIO.MOST_RELEVANT : "asc" === e.sort_order ? o.QIO.OLDEST : o.QIO.NEWEST
 }
 
-function p(e, t) {
-  let n = l.Z.getQuery(e);
-  return u(e, c(s({}, n, function(e) {
+function p(e, t, n) {
+  let r = l.Z.getQuery(e);
+  return u(e, c(s({}, r, function(e) {
     switch (e) {
       case o.QIO.MOST_RELEVANT:
         return {
@@ -88,34 +89,32 @@ function p(e, t) {
     }
   }(t)), {
     offset: 0
-  }))
+  }), n)
 }
 
-function m(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : o.vpv;
-  return g(e, t)
+function m(e, t, n) {
+  return g(e, t, n)
 }
 
-function f(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : o.vpv;
-  return g(e, -t)
+function f(e, t, n) {
+  return g(e, -t, n)
 }
 
-function h(e, t) {
-  return _(e, t * o.vpv)
+function h(e, t, n) {
+  return _(e, t * o.vpv, n)
 }
 
-function g(e, t) {
-  let n = l.Z.getOffset(e);
-  return _(e, n + t)
+function g(e, t, n) {
+  let r = l.Z.getOffset(e);
+  return _(e, r + t, n)
 }
 
-function _(e, t) {
-  let n = l.Z.getQuery(e),
-    r = l.Z.getTotalResults(e);
-  if (!(t < 0) && !(t > r)) return u(e, c(s({}, n), {
+function _(e, t, n) {
+  let r = l.Z.getQuery(e),
+    i = l.Z.getTotalResults(e);
+  if (!(t < 0) && !(t > i)) return u(e, c(s({}, r), {
     offset: t
-  }))
+  }), n)
 }
 
 function b(e) {
@@ -125,7 +124,7 @@ function b(e) {
   })
 }
 
-function y(e, t) {
+function E(e, t) {
   null != e && r.Z.dispatch({
     type: "SEARCH_EDITOR_STATE_CHANGE",
     searchId: e,
@@ -133,7 +132,7 @@ function y(e, t) {
   })
 }
 
-function E(e) {
+function y(e) {
   r.Z.wait(() => r.Z.dispatch({
     type: "SEARCH_EDITOR_STATE_CLEAR",
     searchId: e

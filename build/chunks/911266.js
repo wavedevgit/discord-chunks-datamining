@@ -23,7 +23,7 @@ let y = e => {
     message: t,
     hovering: n,
     compact: l
-  } = e, y = i.useRef((0, a.random)(-6, 24)).current, x = (0, s.e7)([h.Z], () => h.Z.confettiMode), C = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), v = i.useRef(0), j = i.useRef(null), O = i.useRef(null), [E, I] = i.useState(!1), P = i.useMemo(() => !n && !x && !C, [x, n, C]);
+  } = e, y = i.useRef((0, a.random)(-6, 24)).current, x = (0, s.e7)([h.Z], () => h.Z.confettiMode), C = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), v = i.useRef(0), j = i.useRef(null), O = i.useRef(null), [E, I] = i.useState(!1), S = i.useMemo(() => !n && !x && !C, [x, n, C]);
   if (i.useEffect(() => {
       n || I(!1), n && x && I(!0)
     }, [n, x]), i.useEffect(() => {
@@ -52,13 +52,13 @@ let y = e => {
         }
       }, 1100)))
     }, [x, E, n, t, C]), !(0, m.p7)("Message Confetti Peak") || !(0, b.Uw)(t)) return null;
-  let S = (0, b.Eq)(t);
-  if (null == S) return null;
+  let P = (0, b.Eq)(t);
+  if (null == P) return null;
   if (l) return (0, r.jsx)("span", {
     className: _.hidden,
     "aria-hidden": "true"
   });
-  let Z = S.emoji[0],
+  let Z = P.emoji[0],
     N = null == Z.id ? p.ZP.getURL(Z.name) : d.ZP.getEmojiURL({
       id: Z.id,
       animated: !1,
@@ -74,17 +74,17 @@ let y = e => {
     children: [(0, r.jsx)("img", {
       alt: "",
       src: N,
-      className: o()([_.emoji, _.left, P && _.shy, x && _.confettiMode]),
+      className: o()([_.emoji, _.left, S && _.shy, x && _.confettiMode]),
       width: 28
     }), (0, r.jsx)("img", {
       alt: "",
       src: N,
-      className: o()([_.emoji, _.right, P && _.shy, x && _.confettiMode]),
+      className: o()([_.emoji, _.right, S && _.shy, x && _.confettiMode]),
       width: 26
     }), (0, r.jsx)("img", {
       alt: "",
       src: N,
-      className: o()([_.emoji, _.center, P && _.shy, x && _.confettiMode]),
+      className: o()([_.emoji, _.center, S && _.shy, x && _.confettiMode]),
       width: 32
     })]
   })

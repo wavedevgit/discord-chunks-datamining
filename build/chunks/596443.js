@@ -27,7 +27,7 @@ var r = n(255367),
   E = n(12740),
   I = n(444021);
 
-function P(e) {
+function S(e) {
   var t, n, l, a;
   let {
     permission: s,
@@ -36,7 +36,7 @@ function P(e) {
     specMap: x,
     categoryTitle: C,
     userId: E
-  } = e, P = (0, c.e7)([b.Z], () => b.Z.getRoles(y.id)), S = j.Plq[s], Z = null != (l = null == (t = x[S.toString()]) ? void 0 : t.title) ? l : (0, m.wt)(S), N = null != (a = null == (n = x[S.toString()]) ? void 0 : n.description) ? a : "", T = v._o.has(S), A = v.Qn.includes(s), w = g.length, R = (0, c.e7)([_.Z], () => _.Z.can(j.Plq.MANAGE_ROLES, y), [y]), k = i.useCallback(async e => {
+  } = e, S = (0, c.e7)([b.Z], () => b.Z.getRoles(y.id)), P = j.Plq[s], Z = null != (l = null == (t = x[P.toString()]) ? void 0 : t.title) ? l : (0, m.wt)(P), N = null != (a = null == (n = x[P.toString()]) ? void 0 : n.description) ? a : "", T = v._o.has(P), A = v.Qn.includes(s), w = g.length, R = (0, c.e7)([_.Z], () => _.Z.can(j.Plq.MANAGE_ROLES, y), [y]), k = i.useCallback(async e => {
     R && (await f.Z.open(y.id, j.pNK.ROLES), await f.Z.selectRole(e))
   }, [R, y.id]);
   return (0, r.jsxs)("div", {
@@ -157,7 +157,7 @@ function P(e) {
         }),
         onClick: () => k(e),
         children: (0, r.jsx)(h.Z, {
-          role: P[e],
+          role: S[e],
           guildId: y.id,
           className: I.roleChiplet
         })
@@ -166,7 +166,7 @@ function P(e) {
   })
 }
 
-function S(e, t) {
+function P(e, t) {
   return t.toLowerCase().includes(e.toLowerCase())
 }
 
@@ -203,13 +203,13 @@ function Z(e) {
               i = v._o.has(l),
               a = v.Qn.includes(o),
               h = i ? O.intl.string(O.t.k7Kqj4) : a ? O.intl.string(O.t.IfqUEB) : null,
-              f = S(R, e),
-              g = S(R, t),
-              b = S(R, r),
-              _ = null != h && S(R, h);
+              f = P(R, e),
+              g = P(R, t),
+              b = P(R, r),
+              _ = null != h && P(R, h);
             if (!f && !g && !b && !_) return
           }
-          e.push((0, r.jsx)(P, {
+          e.push((0, r.jsx)(S, {
             permission: o,
             roleIds: a,
             guild: h,

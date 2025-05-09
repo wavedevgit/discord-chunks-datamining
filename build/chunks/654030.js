@@ -17,8 +17,8 @@ var r, i = n(255367),
   g = n(917621),
   _ = n(431583),
   b = n(592745),
-  y = n(952164),
-  E = n(768419),
+  E = n(952164),
+  y = n(768419),
   x = n(456432),
   v = n(789407),
   O = n(598077),
@@ -82,13 +82,13 @@ class G extends(r = l.PureComponent) {
     })
   }
   handleOpenSpotifyTrack(e) {
-    (0, y.aG)(e)
+    (0, E.aG)(e)
   }
   handleOpenSpotifyArtist(e, t, n) {
-    (0, y.d$)(e, t, n)
+    (0, E.d$)(e, t, n)
   }
   handleOpenSpotifyAlbum(e, t) {
-    (0, y.Z5)(e, t)
+    (0, E.Z5)(e, t)
   }
   shouldRenderCustomButton() {
     let {
@@ -216,7 +216,7 @@ class G extends(r = l.PureComponent) {
         isSyncable: h,
         isLaunchable: _,
         guildId: b,
-        analyticsLocations: y
+        analyticsLocations: E
       } = this.props;
       if (null != l) e = l.name;
       else if (null != n) {
@@ -242,7 +242,7 @@ class G extends(r = l.PureComponent) {
         channelId: p,
         guildId: null != b ? b : void 0,
         message: m,
-        analyticsLocations: y,
+        analyticsLocations: E,
         hideParty: f,
         onJoin: this.handleJoin,
         onInvite: this.handleInvite,
@@ -260,7 +260,7 @@ class G extends(r = l.PureComponent) {
 U(G, "defaultProps", {
   isPreview: !1
 });
-let H = a.ZP.connectStores([E.Z, C.Z, N.Z, T.Z, j.Z, A.Z, I.Z, b.Z, w.Z, P.default, S.ZP], e => {
+let H = a.ZP.connectStores([y.Z, C.Z, N.Z, T.Z, j.Z, A.Z, I.Z, b.Z, w.Z, P.default, S.ZP], e => {
   var t;
   let {
     activity: n,
@@ -286,8 +286,8 @@ let H = a.ZP.connectStores([E.Z, C.Z, N.Z, T.Z, j.Z, A.Z, I.Z, b.Z, w.Z, P.defau
         nick: n
       }
     }),
-    m = null != n && E.Z.canPlay(n),
-    f = E.Z.getSyncingWith(),
+    m = null != n && y.Z.canPlay(n),
+    f = y.Z.getSyncingWith(),
     h = null != f && null != a && f.userId === a;
   return {
     analyticsLocations: r,

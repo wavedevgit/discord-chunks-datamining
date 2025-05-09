@@ -50,8 +50,8 @@ function d(e) {
       content: I,
       contentKey: I
     }), t = I);
-    let P = _[_.length - 1],
-      S = null,
+    let S = _[_.length - 1],
+      P = null,
       Z = (0, s.DQ)(e);
     y = y || Z;
     let N = function(e, t, n) {
@@ -61,11 +61,11 @@ function d(e) {
       else if ((0, s.P1)(e) && n) return u.ys_.MESSAGE_GROUP_SPAMMER;
       return null
     }(p, e, Z && m);
-    (null !== N && ([S, P] = (E = v = P, null == v || v.type !== N ? (O = {
+    (null !== N && ([P, S] = (E = v = S, null == v || v.type !== N ? (O = {
       type: N,
       content: [],
       key: e.id
-    }, _.push(O)) : E = (O = v).content[O.content.length - 1], [O, E])), f === e.id && null != x) ? (null != P && P.type === u.ys_.DIVIDER ? P.unreadId = e.id : null !== S ? (j = S, e.isFirstMessageInForumPost(p) || j.content.push({
+    }, _.push(O)) : E = (O = v).content[O.content.length - 1], [O, E])), f === e.id && null != x) ? (null != S && S.type === u.ys_.DIVIDER ? S.unreadId = e.id : null !== P ? (j = P, e.isFirstMessageInForumPost(p) || j.content.push({
       type: u.ys_.DIVIDER,
       unreadId: e.id
     }), j.hasUnread = !0) : e.isFirstMessageInForumPost(p) || _.push({
@@ -81,7 +81,7 @@ function d(e) {
       content: T,
       groupId: T.id
     });
-    let A = (null == P ? void 0 : P.type) === u.ys_.MESSAGE ? d : P;
+    let A = (null == S ? void 0 : S.type) === u.ys_.MESSAGE ? d : S;
     (0, a.J)(p, A, e) && (n = e.id);
     let w = {
       type: e.type === u.uaV.THREAD_STARTER_MESSAGE ? u.ys_.THREAD_STARTER_MESSAGE : u.ys_.MESSAGE,
@@ -99,7 +99,7 @@ function d(e) {
       content: b.topic,
       contentKey: b.startId,
       isSummaryDivider: !0
-    }), null !== S ? (S.content.push(w), w.jumpTarget && (S.hasJumpTarget = !0)) : _.push(w), e.isFirstMessageInForumPost(p) && _.push({
+    }), null !== P ? (P.content.push(w), w.jumpTarget && (P.hasJumpTarget = !0)) : _.push(w), e.isFirstMessageInForumPost(p) && _.push({
       type: u.ys_.FORUM_POST_ACTION_BAR
     }), null != b && e.id === b.endId && b.count > 1 && _.push({
       type: u.ys_.DIVIDER,

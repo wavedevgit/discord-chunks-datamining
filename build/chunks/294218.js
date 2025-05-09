@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(786761),
   _ = n(750030),
   b = n(900164),
-  y = n(739566),
-  E = n(492593),
+  E = n(739566),
+  y = n(492593),
   x = n(453687),
   v = n(25015),
   O = n(689674),
@@ -101,7 +101,7 @@ let R = i.memo(function(e) {
     allowHeading: W || K,
     allowLinks: !0,
     previewLinkTarget: !0
-  }), q = i.type === P.uaV.REPLY ? i.messageReference : void 0, Q = (0, s.e7)([p.Z], () => p.Z.getMessageByReference(q)), J = (0, o.JA)(i.id), $ = (0, y.ZP)(i), ee = (0, _.k)(i), et = (0, d.Z)($), en = (0, s.e7)([m.Z], () => i.hasFlag(P.iLy.HAS_THREAD) && m.Z.getChannel(h.default.castMessageIdAsChannelId(i.id))), er = (0, c.p9)({
+  }), q = i.type === P.uaV.REPLY ? i.messageReference : void 0, Q = (0, s.e7)([p.Z], () => p.Z.getMessageByReference(q)), J = (0, o.JA)(i.id), $ = (0, E.ZP)(i), ee = (0, _.k)(i), et = (0, d.Z)($), en = (0, s.e7)([m.Z], () => i.hasFlag(P.iLy.HAS_THREAD) && m.Z.getChannel(h.default.castMessageIdAsChannelId(i.id))), er = (0, c.p9)({
     guildId: M.guild_id,
     roleId: $.iconRoleId
   }), ei = (0, s.e7)([f.Z], () => f.Z.can(P.Plq.CREATE_INSTANT_INVITE, M)), el = (0, O.Z)({
@@ -112,7 +112,7 @@ let R = i.memo(function(e) {
   if ((0, b.Z)(i, ei)) return null;
   let ea = (0, x.iG)(i),
     eo = (0, x.Gx)(i);
-  return (0, r.jsx)(E.Z, w({
+  return (0, r.jsx)(y.Z, w({
     compact: l,
     className: a()(R, {
       [A.ephemeral]: (0, g.Pv)(i),

@@ -19,7 +19,7 @@ var r = n(255367),
   _ = n(981631),
   b = n(18485);
 
-function y(e) {
+function E(e) {
   let {
     assets: t,
     currentUser: n,
@@ -28,7 +28,7 @@ function y(e) {
   return t[i]
 }
 
-function E(e) {
+function y(e) {
   let {
     currentUser: t,
     channel: n,
@@ -37,11 +37,11 @@ function E(e) {
     stickers: d,
     event: p,
     eventProperties: m
-  } = e, [h, _] = i.useState(!1), E = i.useMemo(() => y({
+  } = e, [h, _] = i.useState(!1), y = i.useMemo(() => E({
     assets: d,
     currentUser: t,
     message: l
-  }), [d, t, l]), x = i.useMemo(() => y({
+  }), [d, t, l]), x = i.useMemo(() => E({
     assets: u,
     currentUser: t,
     message: l
@@ -68,7 +68,7 @@ function E(e) {
     }({
       channel: n,
       message: l,
-      sticker: E
+      sticker: y
     }), function(e) {
       var t, n;
       let {
@@ -106,11 +106,11 @@ function E(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t))
     }({
-      sticker: E,
+      sticker: y,
       event: p,
       eventProperties: m
     }))
-  }, [n, l, E, p, m]);
+  }, [n, l, y, p, m]);
   return (0, r.jsxs)(a.zxk, {
     className: b.CTAMessageButtonOuter,
     innerClassName: b.CTAMessageButton,
@@ -121,7 +121,7 @@ function E(e) {
     children: [(0, r.jsx)(c.Z, {
       className: b.CTAMessageSticker,
       isInteracting: h,
-      sticker: E,
+      sticker: y,
       size: 28
     }), x]
   })
@@ -158,7 +158,7 @@ function x(e) {
   });
   return null != c && f ? (0, r.jsx)("div", {
     className: b.CTAMessage,
-    children: (0, r.jsx)(E, {
+    children: (0, r.jsx)(y, {
       currentUser: c,
       channel: t,
       message: n,

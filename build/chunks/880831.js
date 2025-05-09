@@ -27,8 +27,8 @@ var r = n(255367),
   O = n(70956),
   E = n(823379),
   I = n(981631),
-  P = n(217702),
-  S = n(955525);
+  S = n(217702),
+  P = n(955525);
 let Z = 10 * O.Z.Millis.SECOND;
 
 function N(e) {
@@ -55,18 +55,18 @@ function N(e) {
     renderedContent: T,
     trailingIcon: A,
     leadingIcon: w
-  } = (0, _.f)(n, Z, l, a, S.messageContent, {
-    trailingIconClass: S.messageContentTrailingIcon,
-    leadingIconClass: S.messageContentLeadingIcon,
-    iconSize: P.WW
+  } = (0, _.f)(n, Z, l, a, P.messageContent, {
+    trailingIconClass: P.messageContentTrailingIcon,
+    leadingIconClass: P.messageContentLeadingIcon,
+    iconSize: S.WW
   }), R = (0, y.cv)(n), k = R.length > 0 ? R.map(e => (0, r.jsx)(x.Z, {
-    className: S.sticker,
+    className: P.sticker,
     size: 128,
     sticker: e,
     isInteracting: C
   }, e.id)) : null;
   return (0, r.jsxs)(u.P3F, {
-    className: S.toast,
+    className: P.toast,
     onMouseEnter: () => {
       O(!0)
     },
@@ -75,8 +75,8 @@ function N(e) {
     },
     onClick: I,
     children: [(0, r.jsxs)("div", {
-      className: o()(S.messageContentWrapper, {
-        [S.mentioned]: n.mentioned
+      className: o()(P.messageContentWrapper, {
+        [P.mentioned]: n.mentioned
       }),
       children: [null != k ? null : w, null != (t = null != T ? T : k) ? t : (0, r.jsx)("span", {
         children: N
@@ -88,7 +88,7 @@ function N(e) {
         userId: n.author.id,
         avatar: s.guildMemberAvatar
       }) : n.author.getAvatarURL(d, 32),
-      className: S.avatar
+      className: P.avatar
     })]
   })
 }
@@ -205,7 +205,7 @@ function T(e) {
       },
       children: v((e, t) => (0, r.jsx)(s.animated.div, {
         ref: e => _(t.message.id, null != e ? e.offsetHeight : null),
-        className: S.toastWrapper,
+        className: P.toastWrapper,
         style: e,
         children: (0, r.jsx)(N, {
           message: t.message

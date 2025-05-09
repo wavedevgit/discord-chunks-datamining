@@ -25,23 +25,23 @@ let b = e => {
       url: n,
       description: i
     } = t;
-    return null == n ? null : (0, r.jsx)(E, {
+    return null == n ? null : (0, r.jsx)(y, {
       url: n,
       description: i
     })
   },
-  y = e => {
+  E = e => {
     var t, n, i;
     let {
       embed: l
     } = e;
     if (!h.n2.has(l.type)) return null;
     let a = void 0 !== l.video && l.type !== o.h.GIFV ? l.video.url : null != (i = null == (t = l.thumbnail) ? void 0 : t.url) ? i : null == (n = l.image) ? void 0 : n.url;
-    return null == a ? null : (0, r.jsx)(E, {
+    return null == a ? null : (0, r.jsx)(y, {
       url: a
     })
   },
-  E = e => {
+  y = e => {
     let {
       url: t,
       description: n
@@ -78,7 +78,7 @@ function v(e) {
     onConfirmPress: d,
     transitionState: p,
     onClose: m
-  } = e, h = (0, u.Dt)(), E = i.useCallback(() => {
+  } = e, h = (0, u.Dt)(), y = i.useCallback(() => {
     (0, f.aP)({
       action: f.Yy.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CANCEL,
       channelId: t,
@@ -106,7 +106,7 @@ function v(e) {
     size: s.CgR.SMALL,
     children: [(0, r.jsxs)(s.hzk, {
       children: [(0, r.jsx)(s.olH, {
-        onClick: E,
+        onClick: y,
         className: _.closeButton
       }), (0, r.jsx)(s.X6q, {
         id: h,
@@ -121,7 +121,7 @@ function v(e) {
         children: g.intl.string(g.t.gg5Dp6)
       }), null != o && (0, r.jsx)(b, {
         attachment: o
-      }), null != c && (0, r.jsx)(y, {
+      }), null != c && (0, r.jsx)(E, {
         embed: c
       })]
     }), (0, r.jsxs)(s.mzw, {
@@ -138,7 +138,7 @@ function v(e) {
         disabled: l,
         color: s.zxk.Colors.TRANSPARENT,
         size: s.zxk.Sizes.MEDIUM,
-        onClick: E,
+        onClick: y,
         children: g.intl.string(g.t["ETE/oK"])
       })]
     })]

@@ -46,7 +46,7 @@ function I(e) {
   return e
 }
 
-function P(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,7 +59,7 @@ function P(e, t) {
   }), e
 }
 
-function S(e, t) {
+function P(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -110,14 +110,14 @@ function N(e) {
         children: e => {
           var {
             onClick: i
-          } = e, l = S(e, ["onClick"]);
-          return (0, r.jsx)(p.zx, P(I({}, l), {
+          } = e, l = P(e, ["onClick"]);
+          return (0, r.jsx)(p.zx, S(I({}, l), {
             onClick: () => {
               null == i || i(), (0, s.ZDy)(async () => {
                 let {
                   default: e
                 } = await n.e("34191").then(n.bind(n, 303647));
-                return n => (0, r.jsx)(e, P(I({}, n), {
+                return n => (0, r.jsx)(e, S(I({}, n), {
                   entry: t
                 }))
               })
@@ -139,15 +139,15 @@ function N(e) {
         children: e => {
           var {
             onClick: t
-          } = e, n = S(e, ["onClick"]);
+          } = e, n = P(e, ["onClick"]);
           return (0, r.jsx)(s.ua7, {
             text: j.intl.string(j.t.UKOtz8),
             hideOnClick: !0,
             children: e => {
               var {
                 onClick: i
-              } = e, l = S(e, ["onClick"]);
-              return (0, r.jsx)(p.zx, P(I({}, n, l), {
+              } = e, l = P(e, ["onClick"]);
+              return (0, r.jsx)(p.zx, S(I({}, n, l), {
                 ref: c,
                 onClick: e => {
                   null == i || i(), t(e)
@@ -183,7 +183,7 @@ let T = e => {
     id: l.guildId,
     splash: l.splash,
     size: 300 * (0, m.x_)()
-  }), S = null != (t = y.ZP.getGuildIconURL({
+  }), P = null != (t = y.ZP.getGuildIconURL({
     id: l.guildId,
     icon: l.icon,
     size: 40
@@ -195,7 +195,7 @@ let T = e => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 643560));
-        return t => (0, r.jsx)(e, P(I({}, t), {
+        return t => (0, r.jsx)(e, S(I({}, t), {
           entry: l
         }))
       })
@@ -219,7 +219,7 @@ let T = e => {
             className: O.iconMask,
             children: (0, r.jsx)(h.Z, {
               className: O.icon,
-              iconSrc: S,
+              iconSrc: P,
               guild: new b.ZP(l),
               size: h.Z.Sizes.MEDIUM,
               active: !0

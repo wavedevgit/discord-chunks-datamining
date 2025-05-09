@@ -31,7 +31,7 @@ function v(e) {
     (0, p.T)(t, [v])
   }, [t, v]), I = (0, b.t)({
     location: x.zr
-  }), P = e => {
+  }), S = e => {
     a.Z.updateChannelOverrideSettings(null, t, {
       muted: !0
     }, g.ZB.Muted), c.Z.showMuteSuccessToast(j, t), (0, f.qc)({
@@ -41,7 +41,7 @@ function v(e) {
       warningType: h.pj.LIKELY_ATO,
       cta: e
     }), E()
-  }, S = () => {
+  }, P = () => {
     (0, o.ZDy)(async () => {
       let {
         default: e
@@ -69,7 +69,7 @@ function v(e) {
             description: C.intl.string(C.t.w2ve0t),
             buttonText: C.intl.string(C.t.ftIK2N),
             onButtonPress: () => {
-              P(f.NM.USER_MODAL_MUTE), l()
+              S(f.NM.USER_MODAL_MUTE), l()
             }
           }, "likely-ato-mute")],
           learnMore: (0, r.jsx)(o.P3F, {
@@ -113,7 +113,7 @@ function v(e) {
       text: C.intl.string(C.t.tC1pvL),
       color: o.zxk.Colors.BRAND,
       onclick: () => {
-        S(), (0, f.qc)({
+        P(), (0, f.qc)({
           channelId: t,
           warningId: v,
           senderId: j,
@@ -124,7 +124,7 @@ function v(e) {
     }, {
       text: C.intl.string(C.t.ftIK2N),
       color: o.zxk.Colors.PRIMARY,
-      onclick: () => P(f.NM.USER_BANNER_MUTE)
+      onclick: () => S(f.NM.USER_BANNER_MUTE)
     }]
   }) : null
 }

@@ -26,8 +26,8 @@ var r = n(255367),
   O = n(678738),
   E = n(502762),
   I = n(530),
-  P = n(679332),
-  S = n(544989),
+  S = n(679332),
+  P = n(544989),
   Z = n(228168),
   N = n(388032),
   T = n(638414),
@@ -83,8 +83,8 @@ function R(e) {
         themeType: Z.lY.SIDEBAR,
         themeOverride: M,
         children: [(0, r.jsxs)(l.u2, {
-          children: [(0, r.jsx)(S.Z, {
-            children: (0, r.jsx)(P.Z, {
+          children: [(0, r.jsx)(P.Z, {
+            children: (0, r.jsx)(S.Z, {
               user: t
             })
           }), (0, r.jsxs)("header", {
