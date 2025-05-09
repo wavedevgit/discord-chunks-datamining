@@ -36,8 +36,8 @@ var i, r = n(255367),
   w = n(230307),
   k = n(259580),
   L = n(572004),
-  B = n(55935),
-  M = n(630388),
+  M = n(55935),
+  B = n(630388),
   U = n(74538),
   V = n(937615),
   G = n(244526),
@@ -534,7 +534,7 @@ class el extends(i = s.PureComponent) {
     }), t = i.description;
     let b = (0, r.jsx)("div", {
         className: Y.date,
-        children: (0, B.vc)(c()(i.createdAt), "MM/DD/YYYY")
+        children: (0, M.vc)(c()(i.createdAt), "MM/DD/YYYY")
       }),
       _ = i.isGift ? (0, r.jsx)(g.ua7, {
         text: W.intl.string(W.t.QddTpq),
@@ -673,7 +673,7 @@ class el extends(i = s.PureComponent) {
         let {
           payment: e
         } = this.props;
-        return null == e.sku || !(0, M.yE)(e.sku.flags, F.l4R.STICKER_PACK)
+        return null == e.sku || !(0, B.yE)(e.sku.flags, F.l4R.STICKER_PACK)
       }
     }, {
       rule: "SUBSCRIPTION_TYPE",
@@ -690,7 +690,7 @@ class el extends(i = s.PureComponent) {
         let {
           payment: e
         } = this.props;
-        return null == e.sku || !(0, M.yE)(e.sku.flags, u.l.GUILD_PRODUCT)
+        return null == e.sku || !(0, B.yE)(e.sku.flags, u.l.GUILD_PRODUCT)
       }
     }, {
       rule: "COLLECTIBLE",

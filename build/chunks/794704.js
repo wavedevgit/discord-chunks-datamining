@@ -37,8 +37,8 @@ var i = n(255367),
   w = n(809357),
   k = n(371651),
   L = n(829907),
-  B = n(624864),
-  M = n(610394),
+  M = n(624864),
+  B = n(610394),
   U = n(957148),
   V = n(340101),
   G = n(243487),
@@ -113,7 +113,7 @@ function ex(e) {
     enabled: $.default.enabled,
     notifications_enabled: i,
     notifications_position: i ? n : null,
-    text_notifications_mode: B.Z.isNotificationDisabled(D.OverlayNotificationDisabledSetting.TEXT_CHAT) ? "DISABLED" : "ENABLED",
+    text_notifications_mode: M.Z.isNotificationDisabled(D.OverlayNotificationDisabledSetting.TEXT_CHAT) ? "DISABLED" : "ENABLED",
     hotkey: null != r ? (0, er.BB)(r.shortcut) : null,
     text_activation_hotkey: null != s ? (0, er.BB)(s.shortcut) : null,
     text_opacity_slider: ee.default.getTextWidgetOpacity(),
@@ -301,7 +301,7 @@ function ev(e) {
           x.Z.setEnabled(Z, e), (0, R.ou)(e, R.AE.OOP, null != (r = l.id) ? r : null)
       }(a || o) && (0, U.l)(a ? R.AE.LEGACY_GAME : R.AE.OOP_GAME, null != (s = l.id) ? s : null)
     },
-    B = (e, t) => {
+    M = (e, t) => {
       let n = !t && e,
         i = !w && b,
         r = !Z && E,
@@ -316,7 +316,7 @@ function ev(e) {
           return "game"
       }
     },
-    M = (e, t, n) => {
+    B = (e, t, n) => {
       if (eS(n), null == l) return;
       let i = !1,
         r = !1;
@@ -473,7 +473,7 @@ function ev(e) {
         checked: b && w || E && Z,
         disabled: V,
         onChange: (e, t) => {
-          M(e, B(e, b && w || E && Z), t)
+          B(e, M(e, b && w || E && Z), t)
         }
       })
     }),
@@ -773,7 +773,7 @@ function eR() {
     allowNowPlaying: t
   } = (0, Z.o4)("user_settings"), n = eP(e, t), r = e => t => {
     x.Z.setNotificationDisabledSetting(e, !t)
-  }, s = (0, g.e7)([B.Z], () => B.Z.getDisabledNotifications());
+  }, s = (0, g.e7)([M.Z], () => M.Z.getDisabledNotifications());
   return (0, i.jsxs)("div", {
     className: eu.notificationSettingsContainer,
     children: [(0, i.jsx)(h.X6q, {
@@ -855,8 +855,8 @@ function eZ() {
     avatarSizeMode: ee.default.getAvatarSizeMode(),
     displayNameMode: ee.default.getDisplayNameMode(),
     displayUserMode: ee.default.getDisplayUserMode()
-  })), c = (0, g.e7)([Q.default], () => Q.default.getCurrentUser()), [d] = r.useState(() => [eD(ed.intl.string(ed.t.C0ZDvr), !0, !1), eD(ed.intl.string(ed.t.iOtj8P), !1, !1, !0), eD(ed.intl.string(ed.t["0oqNgI"]), !1, !0)]), u = (0, g.e7)([M.ZP, q.Z], () => {
-    let e = M.ZP.getWidgetByType(el.Odu.VOICE_V3);
+  })), c = (0, g.e7)([Q.default], () => Q.default.getCurrentUser()), [d] = r.useState(() => [eD(ed.intl.string(ed.t.C0ZDvr), !0, !1), eD(ed.intl.string(ed.t.iOtj8P), !1, !1, !0), eD(ed.intl.string(ed.t["0oqNgI"]), !1, !0)]), u = (0, g.e7)([B.ZP, q.Z], () => {
+    let e = B.ZP.getWidgetByType(el.Odu.VOICE_V3);
     if (null == e) return null;
     let t = q.Z.getWidget(e.id);
     return null != t && (0, V.Aw)(t) ? t : null
@@ -1028,7 +1028,7 @@ function ek(e) {
   let {
     runningGame: t,
     runningGameApplication: n
-  } = e, s = null == n ? void 0 : n.id, l = (0, g.e7)([B.Z], () => B.Z.isLimitedInteractionOverrideEnabled(s), [s]), a = r.useMemo(() => null != t && (0, L.H8)(t.pid), [t]), o = (0, w.Z)({
+  } = e, s = null == n ? void 0 : n.id, l = (0, g.e7)([M.Z], () => M.Z.isLimitedInteractionOverrideEnabled(s), [s]), a = r.useMemo(() => null != t && (0, L.H8)(t.pid), [t]), o = (0, w.Z)({
     location: "overlay_user_settings"
   }), {
     disableClickableRegions: c,

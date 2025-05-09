@@ -58,7 +58,7 @@ function L(e) {
   return e
 }
 
-function B(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -71,7 +71,7 @@ function B(e, t) {
   }), e
 }
 
-function M(e) {
+function B(e) {
   let {
     children: t
   } = e;
@@ -152,7 +152,7 @@ class G extends r.PureComponent {
             className: D.switch,
             children: (0, i.jsx)(u.ua7, {
               text: R.intl.string(R.t.uCD7qK),
-              children: e => (0, i.jsx)("div", B(L({}, e), {
+              children: e => (0, i.jsx)("div", M(L({}, e), {
                 children: (0, i.jsx)(u.rsf, {
                   checked: t,
                   onChange: this.handleEnableDisable
@@ -176,11 +176,11 @@ class G extends r.PureComponent {
   }
   constructor(...e) {
     super(...e), k(this, "handleActionChanged", e => {
-      m.Z.setKeybind(B(L({}, this.props.keybind), {
+      m.Z.setKeybind(M(L({}, this.props.keybind), {
         action: e
       }))
     }), k(this, "handleShortcutChange", e => {
-      m.Z.setKeybind(B(L({}, this.props.keybind), {
+      m.Z.setKeybind(M(L({}, this.props.keybind), {
         shortcut: e
       }))
     }), k(this, "handleDeleteKeybind", () => {
@@ -189,7 +189,7 @@ class G extends r.PureComponent {
       let {
         keybind: e
       } = this.props;
-      m.Z.setKeybind(B(L({}, this.props.keybind), {
+      m.Z.setKeybind(M(L({}, this.props.keybind), {
         enabled: !e.enabled
       }))
     })
@@ -359,7 +359,7 @@ class F extends r.PureComponent {
               className: D.__invalid_defaultKeybindShortcut
             })
           })]
-        }), (0, i.jsx)(u.$i$, {}), (0, i.jsx)(M, {
+        }), (0, i.jsx)(u.$i$, {}), (0, i.jsx)(B, {
           children: e => (0, i.jsx)(i.Fragment, {
             children: e.map((e, t) => {
               let n = (0, f.UD)(e),

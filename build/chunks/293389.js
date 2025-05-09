@@ -1,6 +1,6 @@
 /** Chunk was on 69835 **/
 n.d(t, {
-  Z: () => B
+  Z: () => M
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -333,7 +333,7 @@ let L = (0, x.oH)(function() {
     for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
     return new Set(t.map(e => e.exePath))
   }),
-  B = function(e) {
+  M = function(e) {
     let {
       className: t,
       showHeader: n = !0

@@ -41,7 +41,7 @@ var i = n(255367),
   k = n(388032),
   L = n(772526);
 
-function B(e) {
+function M(e) {
   let t, {
       subscription: n,
       renewalInvoicePreview: r,
@@ -107,7 +107,7 @@ function B(e) {
   })
 }
 
-function M() {
+function B() {
   return r.useEffect(() => {
     S.default.track(Z.rMx.TOOLTIP_VIEWED, {
       type: "subscription_settings_missing_payment_method"
@@ -271,7 +271,7 @@ function H(e) {
         paymentSource: r,
         busy: s,
         analyticsLocation: n
-      }), (0, i.jsx)(B, {
+      }), (0, i.jsx)(M, {
         subscription: t,
         renewalInvoicePreview: b,
         fromStandaloneBillingPage: a,
@@ -382,7 +382,7 @@ function Y(e) {
         tag: "h1",
         children: k.intl.string(k.t["/gs+Pz"])
       }),
-      children: [T ? (0, i.jsx)(M, {}) : null, I ? (0, i.jsx)(U, {}) : null, P && null != w ? (0, i.jsx)(V, {
+      children: [T ? (0, i.jsx)(B, {}) : null, I ? (0, i.jsx)(U, {}) : null, P && null != w ? (0, i.jsx)(V, {
         daysPastDue: R,
         subscription: r,
         openInvoiceId: w.id

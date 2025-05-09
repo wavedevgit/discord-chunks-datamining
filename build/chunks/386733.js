@@ -155,7 +155,7 @@ let N = e => {
       } = (0, d.ZP)(c.Z.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
       k = r.useRef(null),
       L = R.sent / _.Q * 100,
-      B = (0, i.jsxs)("div", {
+      M = (0, i.jsxs)("div", {
         className: S.referralInfoContent,
         children: [(0, i.jsx)(E.ZP, {
           percentage: L,
@@ -222,15 +222,15 @@ let N = e => {
           })]
         })]
       }),
-      M = R.redeemed === _.Q;
+      B = R.redeemed === _.Q;
     return (0, i.jsx)(d.Gt, {
       value: w,
       children: (0, i.jsx)("div", {
         className: l()({
-          [S.containerWithGlowWithoutBanner]: M,
-          [S.containerWithoutGlow]: !M,
+          [S.containerWithGlowWithoutBanner]: B,
+          [S.containerWithoutGlow]: !B,
           [S.containerWithMargins]: !t,
-          [S.containerWithGlowOnSettingsPage]: M && t
+          [S.containerWithGlowOnSettingsPage]: B && t
         }),
         children: (0, i.jsx)("div", {
           ref: k,
@@ -239,9 +239,9 @@ let N = e => {
             [S.expandedProgressBarContainerSettingsPage]: t,
             [S.expandedProgressBarContainerVariant1]: !P && !t,
             [S.expandedProgressBarContainerVariant2]: P && !t,
-            [S.allReferralsSentBorder]: M
+            [S.allReferralsSentBorder]: B
           }),
-          children: B
+          children: M
         })
       })
     })

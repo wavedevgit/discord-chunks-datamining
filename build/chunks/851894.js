@@ -101,7 +101,7 @@ function R(e) {
       for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
     return r
-  }(Z, ["source", "pendingAvatar"]), B = (0, f.SD)({
+  }(Z, ["source", "pendingAvatar"]), M = (0, f.SD)({
     userId: s.id,
     image: k
   });
@@ -129,7 +129,7 @@ function R(e) {
           guildName: null == t ? void 0 : t.name
         }),
         profilePreview: (0, i.jsx)(h.Z, A(y({}, L), {
-          pendingAvatar: B,
+          pendingAvatar: M,
           user: s,
           guild: t,
           canUsePremiumCustomization: C.ZP.canUsePremiumProfileCustomization(s),

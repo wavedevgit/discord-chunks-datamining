@@ -58,7 +58,7 @@ function L(e) {
   return e
 }
 
-function B(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -70,7 +70,7 @@ function B(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let M = new p.Z("SubscriptionHeader.tsx"),
+let B = new p.Z("SubscriptionHeader.tsx"),
   U = {
     page: Z.ZY5.USER_SETTINGS,
     section: Z.jXE.SETTINGS_PREMIUM,
@@ -232,7 +232,7 @@ let W = function(e) {
         let {
           default: t
         } = await Promise.resolve().then(n.bind(n, 833569));
-        return n => (0, i.jsx)(t, B(L({}, n), {
+        return n => (0, i.jsx)(t, M(L({}, n), {
           premiumSubscription: r,
           analyticsLocation: z,
           analyticsLocations: Y,
@@ -243,7 +243,7 @@ let W = function(e) {
     ea = () => {
       if (null != r && null != r.premiumPlanIdFromItems) {
         let e = _.Z.get(r.premiumPlanIdFromItems);
-        if (null == e) return void M.info("Plan not fetched for plan id: ".concat(r.premiumPlanIdFromItems));
+        if (null == e) return void B.info("Plan not fetched for plan id: ".concat(r.premiumPlanIdFromItems));
         let t = (0, O.DE)(e, null == p ? void 0 : p.id, !1),
           n = t.length > 0 ? t[0] : r.currency,
           i = !1;
@@ -373,7 +373,7 @@ let W = function(e) {
             children: w.intl.string(w.t["ETE/oK"])
           }), (0, i.jsx)(c.ua7, {
             text: t,
-            children: t => (0, i.jsx)(A.Z, B(L({}, t), {
+            children: t => (0, i.jsx)(A.Z, M(L({}, t), {
               disabled: e,
               className: k.toolsButton,
               onClick: () => {

@@ -37,8 +37,8 @@ var i = n(255367),
   w = n(695346),
   k = n(461877),
   L = n(726985),
-  B = n(981631),
-  M = n(815660),
+  M = n(981631),
+  B = n(815660),
   U = n(801461),
   V = n(388032),
   G = n(556780);
@@ -356,7 +356,7 @@ function X(e) {
         onClick: function() {
           (0, u.h7j)(e => (0, i.jsx)(p.Z, H(F({}, e), {
             title: V.intl.string(V.t["3CTiKi"]),
-            children: s.hasFlag(B.xW$.MFA_SMS) ? V.intl.string(V.t.jrhJys) : void 0,
+            children: s.hasFlag(M.xW$.MFA_SMS) ? V.intl.string(V.t.jrhJys) : void 0,
             actionText: V.intl.string(V.t.N86XcH),
             handleSubmit: e => C.Z.removePhone(e, C.L.USER_SETTINGS_UPDATE)
           })))
@@ -376,7 +376,7 @@ function X(e) {
               reason: C.L.USER_SETTINGS_UPDATE
             }, t))
           }, {
-            modalKey: M.M
+            modalKey: B.M
           })
         },
         children: c ? V.intl.string(V.t.bt75u7) : V.intl.string(V.t.OYkgVl)
@@ -418,7 +418,7 @@ function Q(e) {
 }
 
 function J() {
-  m.Z.setSection(B.oAB.PROFILE_CUSTOMIZATION)
+  m.Z.setSection(M.oAB.PROFILE_CUSTOMIZATION)
 }
 
 function $(e) {

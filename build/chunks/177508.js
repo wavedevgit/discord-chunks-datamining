@@ -67,7 +67,7 @@ function v() {
       text: "Testing",
       iconPosition: "end",
       icon: d.XHJ
-    }), (0, i.jsx)(Z, {}), (0, i.jsx)(U, {}), (0, i.jsx)(V, {}), (0, i.jsx)(B, {}), (0, i.jsx)(L, {}), (0, i.jsx)(k, {}), (0, i.jsx)(w, {}), (0, i.jsx)(F, {}), (0, i.jsx)(T, {}), (0, i.jsx)(H, {})]
+    }), (0, i.jsx)(Z, {}), (0, i.jsx)(U, {}), (0, i.jsx)(V, {}), (0, i.jsx)(M, {}), (0, i.jsx)(L, {}), (0, i.jsx)(k, {}), (0, i.jsx)(w, {}), (0, i.jsx)(F, {}), (0, i.jsx)(T, {}), (0, i.jsx)(H, {})]
   })
 }
 
@@ -345,7 +345,7 @@ function Z() {
         size: d.zxk.Sizes.LARGE,
         children: "Large"
       })
-    }), (0, i.jsx)(M, {})]
+    }), (0, i.jsx)(B, {})]
   })
 }
 
@@ -511,7 +511,7 @@ function L() {
   })
 }
 
-function B() {
+function M() {
   let [e, t] = r.useState(!1), [n, s] = r.useState(!1), [l, a] = r.useState("auto");
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)("div", {
@@ -667,7 +667,7 @@ function B() {
   })
 }
 
-function M() {
+function B() {
   return (0, i.jsxs)("div", {
     className: x.shinyButtonExamples,
     children: [(0, i.jsx)(d.gtL, {
