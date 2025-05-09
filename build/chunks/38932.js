@@ -1,18 +1,5 @@
-/** Chunk was on web.js **/
-"use strict";
-var r = {
-  upsellContainer: "upsellContainer__5997d",
-  upsellContent: "upsellContent__5997d",
-  upsellCloseIconWrapper: "upsellCloseIconWrapper__5997d",
-  upsellDefaultContent: "upsellDefaultContent__5997d",
-  upsellHeader: "upsellHeader__5997d",
-  upsellButtons: "upsellButtons__5997d",
-  upsellButtonWrapper: "upsellButtonWrapper__5997d",
-  upsellButton: "upsellButton__5997d",
-  upsellRowContent: "upsellRowContent__5997d",
-  upsellRowRight: "upsellRowRight__5997d",
-  viewPremiumPerksButtonInner: "viewPremiumPerksButtonInner__5997d",
-  upsellCloseIcon: "upsellCloseIcon__5997d",
-  viewPremiumPerksButtonShine: "viewPremiumPerksButtonShine__5997d"
-};
-e.exports = r
+/** Chunk was on 22274 **/
+a.d(t, {
+  Z: () => d
+});
+let d = "https://cdn.discordapp.com/assets/content/687a5ca6b6a1216f964fd7fb5bcea95096bb6f1ab25a0d6276f80402a575a8b1.mp4"

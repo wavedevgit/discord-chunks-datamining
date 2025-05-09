@@ -237,7 +237,7 @@ let R = {
       forceShadow: x
     }))
   });
-D.displayName = "PerkDiscoverabilityCard";
+D.displayName = "PremiumPerkCard";
 let Z = r.forwardRef((e, t) => {
   var n;
   let {

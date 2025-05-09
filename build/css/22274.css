@@ -1,0 +1,182 @@
+/**
+  Module ID: 22274
+  Original File Name: dc295874ae06195a
+**/
+.container__2a3ed {
+    color: var(--text-normal);
+    inset: 0;
+    opacity: 1;
+    overflow: hidden;
+    position: absolute;
+    transition: opacity .3s linear;
+    z-index: 100
+}
+
+.container__2a3ed:not(.loaded__2a3ed) {
+    opacity: 0;
+    pointer-events: none
+}
+
+.closeButton__2a3ed.closeButton__2a3ed {
+    background-color: transparent;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1
+}
+
+.spinner__2a3ed {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transition: opacity .5s linear
+}
+
+.content__2a3ed {
+    background-color: #000;
+    inset: 0;
+    position: absolute;
+    visibility: hidden
+}
+
+.loaded__2a3ed .content__2a3ed {
+    visibility: visible
+}
+
+.theme-light .content__2a3ed {
+    background-color: #eeeff1
+}
+
+.video__2a3ed {
+    object-fit: contain;
+    pointer-events: none;
+    position: relative;
+    width: 100%
+}
+
+.nitroLogo__2a3ed {
+    left: 50%;
+    position: absolute;
+    top: 265px;
+    transform: translateX(-50%)
+}
+
+.badgeText__2a3ed {
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 30px;
+    font-style: italic;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 289px;
+    transform-origin: bottom;
+    width: 100%
+}
+
+@keyframes oldBadgeText__2a3ed {
+    0% {
+        opacity: 1
+    }
+
+    to {
+        opacity: 0
+    }
+}
+
+@keyframes oldBadgeTextWhite__2a3ed {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    90% {
+        opacity: 1
+    }
+
+    to {
+        opacity: 0
+    }
+}
+
+@keyframes newBadgeText__2a3ed {
+    0% {
+        opacity: 0;
+        transform: scale(2)
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
+.loaded__2a3ed .badgeText__2a3ed.old__2a3ed {
+    animation: oldBadgeText__2a3ed .5s linear 1s forwards;
+    background-image: var(--custom-old-badge-color)
+}
+
+.loaded__2a3ed .badgeText__2a3ed.oldWhite__2a3ed {
+    animation: oldBadgeTextWhite__2a3ed 1s linear .5s forwards;
+    background-color: #fff;
+    opacity: 0
+}
+
+.theme-light .loaded__2a3ed .badgeText__2a3ed.oldWhite__2a3ed {
+    background-image: var(--custom-old-badge-color)
+}
+
+.loaded__2a3ed .badgeText__2a3ed.new__2a3ed {
+    animation: newBadgeText__2a3ed .15s linear 1.5s forwards;
+    background-image: var(--custom-new-badge-color);
+    opacity: 0
+}
+
+@keyframes reveal__2a3ed {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.subscribedText__2a3ed {
+    margin-top: 20px;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    top: 307px;
+    width: 100%
+}
+
+.loaded__2a3ed .subscribedText__2a3ed {
+    animation: reveal__2a3ed 1s linear 3s forwards
+}
+
+.actionButtons__2a3ed {
+    align-items: center;
+    bottom: 10px;
+    display: none;
+    gap: 8px;
+    justify-content: center;
+    opacity: 0;
+    position: absolute;
+    width: 100%
+}
+
+.loaded__2a3ed .actionButtons__2a3ed {
+    animation: reveal__2a3ed .5s linear forwards
+}
+
+.ended__2a3ed .actionButtons__2a3ed {
+    display: flex
+}
+
+/*# sourceMappingURL=dc295874ae06195a.css.map*/
