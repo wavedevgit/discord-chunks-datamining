@@ -49,8 +49,8 @@ function Z() {
       pendingBio: F,
       pendingPronouns: H,
       pendingAccentColor: z,
-      pendingThemeColors: W,
-      pendingLegacyUsernameDisabled: Y,
+      pendingThemeColors: Y,
+      pendingLegacyUsernameDisabled: W,
       pendingPrimaryGuildId: K,
       errors: q
     } = (0, l.cj)([y.Z], () => {
@@ -146,7 +146,7 @@ function Z() {
       }, "banner"), (0, i.jsx)(O.Z, {
         user: B,
         pendingAvatarSrc: X,
-        pendingColors: W,
+        pendingColors: Y,
         onThemeColorsChange: T.z5,
         forcedDivider: !0
       })]
@@ -167,7 +167,7 @@ function Z() {
       onChange: e => (0, a.s4)(e)
     }), null != ei && (0, i.jsx)(_.Z, {
       legacyUsername: ei,
-      pendingLegacyUsernameDisabled: Y
+      pendingLegacyUsernameDisabled: W
     }, "legacy_username")]
   })
 }

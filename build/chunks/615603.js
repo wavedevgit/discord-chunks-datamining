@@ -179,9 +179,9 @@ let w = function(e) {
     }, [s]),
     H = null != p ? j.ZP.getNumIncludedPremiumGuildSubscriptionSlots(p.planId) : 0,
     z = Math.max(0, H - M.length),
-    W = V > H,
-    Y = H === s.length,
-    K = Y ? z : 1,
+    Y = V > H,
+    W = H === s.length,
+    K = W ? z : 1,
     q = r.useMemo(() => {
       let e = [];
       for (let t = 0; t < K; t++) e.push((0, i.jsx)(O.Z, {
@@ -193,7 +193,7 @@ let w = function(e) {
     X = r.useMemo(() => U.find(e => e.isAvailable()), [U]);
   if (0 === U.length) return null;
   let Q = U.length;
-  if (t = Y ? N.intl.formatToPlainString(F ? N.t["3DW6DQ"] : N.t["/u15QU"], {
+  if (t = W ? N.intl.formatToPlainString(F ? N.t["3DW6DQ"] : N.t["/u15QU"], {
       numUnappliedGuildBoostSlots: Q
     }) : N.intl.formatToPlainString(F ? N.t["3DW6DQ"] : N.t.BPadnJ, {
       numUnappliedGuildBoostSlots: Q
@@ -269,11 +269,11 @@ let w = function(e) {
             }))
           })
         })]
-      }), (!Y || G) && (0, i.jsx)("ul", {
+      }), (!W || G) && (0, i.jsx)("ul", {
         className: y.unappliedBoostSlots,
         children: U.map(e => (0, i.jsx)(R, {
           guildBoostSlot: e,
-          isCancellable: W,
+          isCancellable: Y,
           onCancel: D,
           onUncancel: Z,
           premiumSubscription: p,

@@ -1,6 +1,6 @@
 /** Chunk was on 69835 **/
 n.d(t, {
-  Z: () => Y
+  Z: () => W
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -77,11 +77,11 @@ let G = (0, b.hQ)(),
   z = o().debounce(e => {
     (0, g.o2)(e)
   }, 250),
-  W = o().debounce(e => {
+  Y = o().debounce(e => {
     (0, S.Ct)(e)
   }, 250);
 
-function Y(e) {
+function W(e) {
   return (0, i.jsxs)(d.hjN, {
     tag: d.RB0.H1,
     title: k.intl.string(k.t.G0neg4),
@@ -520,7 +520,7 @@ function ei() {
           initialValue: t,
           defaultValue: 1,
           stickToMarkers: !0,
-          onValueChange: W,
+          onValueChange: Y,
           onValueRender: e => "x".concat(e.toFixed(2)),
           onMarkerRender: e => 0 === e ? (0, i.jsx)("span", {
             className: L.ttsSliderMarker,

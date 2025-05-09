@@ -46,8 +46,8 @@ var r = n(990547),
   F = n(373230),
   H = n(145158),
   z = n(906467),
-  W = n(857192),
-  Y = n(131951),
+  Y = n(857192),
+  W = n(131951),
   K = n(25990),
   q = n(626135),
   X = n(572004),
@@ -100,8 +100,8 @@ var r = n(990547),
   eF = n(726985),
   eH = n(583139),
   ez = n(981631),
-  eW = n(46140),
-  eY = n(65154),
+  eY = n(46140),
+  eW = n(65154),
   eK = n(388032),
   eq = n(622802),
   eX = n(332495),
@@ -856,7 +856,7 @@ let eJ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         label: eK.intl.string(eK.t.B1fFpa),
         ariaLabel: eK.intl.string(eK.t.B1fFpa),
         element: eU.Z,
-        predicate: () => Y.Z.isSupported(),
+        predicate: () => W.Z.isSupported(),
         url: ez.Z5c.SETTINGS("voice")
       },
       [eF.s6.VOICE_AND_VIDEO_VOICE_TAB]: {
@@ -918,7 +918,7 @@ let eJ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: ez.oAB.VOICE,
         searchableTitles: [eK.intl.string(eK.t["sqUm+v"]), eK.intl.string(eK.t.nuFtHB)],
         parent: eF.s6.VOICE_AND_VIDEO_VOICE,
-        predicate: () => Y.Z.getMode() === eY.pM.VOICE_ACTIVITY
+        predicate: () => W.Z.getMode() === eW.pM.VOICE_ACTIVITY
       },
       [eF.s6.VOICE_AND_VIDEO_SWITCH_CHANNEL_ALERT]: {
         section: ez.oAB.VOICE,
@@ -949,7 +949,7 @@ let eJ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: ez.oAB.VOICE,
         searchableTitles: [eK.intl.string(eK.t.F122Gx)],
         parent: eF.s6.VOICE_AND_VIDEO_VIDEO,
-        predicate: () => Y.Z.supports(eY.AN.VIDEO)
+        predicate: () => W.Z.supports(eW.AN.VIDEO)
       },
       [eF.s6.VOICE_AND_VIDEO_VIDEO_CAMERA_PREVIEW]: {
         section: ez.oAB.VOICE,
@@ -960,7 +960,7 @@ let eJ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: ez.oAB.VOICE,
         searchableTitles: [eK.intl.string(eK.t.lZTUPj)],
         parent: eF.s6.VOICE_AND_VIDEO_VIDEO,
-        predicate: () => Y.Z.supports(eY.AN.VIDEO)
+        predicate: () => W.Z.supports(eW.AN.VIDEO)
       },
       [eF.s6.VOICE_AND_VIDEO_ADVANCED]: {
         section: ez.oAB.VOICE,
@@ -994,7 +994,7 @@ let eJ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: ez.oAB.VOICE,
         searchableTitles: [eK.intl.string(eK.t["71Ve19"])],
         parent: eF.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO,
-        predicate: () => Y.Z.supports(eY.AN.OPEN_H264)
+        predicate: () => W.Z.supports(eW.AN.OPEN_H264)
       },
       [eF.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO_HARDWARE_ACCELERATION]: {
         section: ez.oAB.VOICE,
@@ -1005,7 +1005,7 @@ let eJ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: ez.oAB.VOICE,
         searchableTitles: [eK.intl.string(eK.t.AxnPm5)],
         parent: eF.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO,
-        predicate: () => "stable" !== $.ZP.releaseChannel && Y.Z.isExperimentalEncodersSupported()
+        predicate: () => "stable" !== $.ZP.releaseChannel && W.Z.isExperimentalEncodersSupported()
       },
       [eF.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING]: {
         section: ez.oAB.VOICE,
@@ -1031,67 +1031,67 @@ let eJ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: ez.oAB.VOICE,
         searchableTitles: [eK.intl.string(eK.t.t8QhiY), eK.intl.string(eK.t.hmfkCg)],
         parent: eF.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING,
-        predicate: () => Y.Z.isNoiseSuppressionSupported()
+        predicate: () => W.Z.isNoiseSuppressionSupported()
       },
       [eF.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_ADVANCED_VOICE_ACTIVITY]: {
         section: ez.oAB.VOICE,
         searchableTitles: [eK.intl.string(eK.t.BbESsr)],
         parent: eF.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING,
-        predicate: () => Y.Z.isAdvancedVoiceActivitySupported()
+        predicate: () => W.Z.isAdvancedVoiceActivitySupported()
       },
       [eF.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_AUTOMATIC_GAIN_CONTROL]: {
         section: ez.oAB.VOICE,
         searchableTitles: [eK.intl.string(eK.t.cUMdHx)],
         parent: eF.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING,
-        predicate: () => Y.Z.isAutomaticGainControlSupported()
+        predicate: () => W.Z.isAutomaticGainControlSupported()
       },
       [eF.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_BYPASS_SYSTEM_INPUT_PROCESSING]: {
         section: ez.oAB.VOICE,
         searchableTitles: [eK.intl.string(eK.t.DFPXIC)],
         parent: eF.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING,
-        predicate: () => Y.Z.showBypassSystemInputProcessing()
+        predicate: () => W.Z.showBypassSystemInputProcessing()
       },
       [eF.s6.VOICE_AND_VIDEO_ADVANCED_QOS]: {
         section: ez.oAB.VOICE,
         searchableTitles: [eK.intl.string(eK.t.uancuL)],
         parent: td ? eF.s6.VOICE_AND_VIDEO_VOICE_ADVANCED : eF.s6.VOICE_AND_VIDEO_ADVANCED,
-        predicate: () => Y.Z.supports(eY.AN.QOS)
+        predicate: () => W.Z.supports(eW.AN.QOS)
       },
       [eF.s6.VOICE_AND_VIDEO_ADVANCED_ATTENUATION]: {
         section: ez.oAB.VOICE,
         searchableTitles: [eK.intl.string(eK.t.oSdBvb)],
         parent: td ? eF.s6.VOICE_AND_VIDEO_VOICE_ADVANCED : eF.s6.VOICE_AND_VIDEO_ADVANCED,
-        predicate: () => Y.Z.supports(eY.AN.ATTENUATION)
+        predicate: () => W.Z.supports(eW.AN.ATTENUATION)
       },
       [eF.s6.VOICE_AND_VIDEO_ADVANCED_SUBSYSTEM]: {
         section: ez.oAB.VOICE,
         searchableTitles: [eK.intl.string(eK.t.wVBHr6)],
         parent: td ? eF.s6.VOICE_AND_VIDEO_VOICE_ADVANCED : eF.s6.VOICE_AND_VIDEO_ADVANCED,
-        predicate: () => Y.Z.shouldOfferManualSubsystemSelection()
+        predicate: () => W.Z.shouldOfferManualSubsystemSelection()
       },
       [eF.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE]: {
         section: ez.oAB.VOICE,
         searchableTitles: [eK.intl.string(eK.t.KDdjoq), eK.intl.string(eK.t.NMCIf3), eK.intl.string(eK.t.FeUKeH)],
         parent: td ? eF.s6.VOICE_AND_VIDEO_VIDEO_STREAMING : eF.s6.VOICE_AND_VIDEO_ADVANCED,
-        predicate: () => Y.Z.supportsVideoHook() || Y.Z.supportsExperimentalSoundshare() || Y.Z.supportsSystemScreensharePicker() && (0, J.isMac)()
+        predicate: () => W.Z.supportsVideoHook() || W.Z.supportsExperimentalSoundshare() || W.Z.supportsSystemScreensharePicker() && (0, J.isMac)()
       },
       [eF.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_VIDEO_HOOK]: {
         section: ez.oAB.VOICE,
         searchableTitles: [eK.intl.string(eK.t.GmWk2N), eK.intl.string(eK.t["Fj/xn5"])],
         parent: eF.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE,
-        predicate: () => Y.Z.supportsVideoHook()
+        predicate: () => W.Z.supportsVideoHook()
       },
       [eF.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_EXPERIMENTAL_SOUNDSHARE]: {
         section: ez.oAB.VOICE,
         searchableTitles: [eK.intl.string(eK.t["4I0qzc"])],
         parent: eF.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE,
-        predicate: () => Y.Z.supportsExperimentalSoundshare()
+        predicate: () => W.Z.supportsExperimentalSoundshare()
       },
       [eF.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_SYSTEM_PICKER]: {
         section: ez.oAB.VOICE,
         searchableTitles: [eK.intl.string(eK.t.ie1mgY)],
         parent: eF.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE,
-        predicate: () => Y.Z.supportsSystemScreensharePicker() && (0, J.isMac)()
+        predicate: () => W.Z.supportsSystemScreensharePicker() && (0, J.isMac)()
       },
       [eF.s6.VOICE_AND_VIDEO_ADVANCED_SILENCE_WARNING]: {
         section: ez.oAB.VOICE,
@@ -1114,19 +1114,19 @@ let eJ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: ez.oAB.VOICE,
         searchableTitles: [eK.intl.string(eK.t["r6K+TE"])],
         parent: eF.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING,
-        predicate: () => Y.Z.isAecDumpSupported()
+        predicate: () => W.Z.isAecDumpSupported()
       },
       [eF.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_CONNECTION_REPLAY]: {
         section: ez.oAB.VOICE,
         searchableTitles: [eK.intl.string(eK.t.U4FgFB)],
         parent: eF.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING,
-        predicate: () => ("canary" === $.ZP.releaseChannel || "development" === $.ZP.releaseChannel) && e2 && Y.Z.supports(eY.AN.CONNECTION_REPLAY)
+        predicate: () => ("canary" === $.ZP.releaseChannel || "development" === $.ZP.releaseChannel) && e2 && W.Z.supports(eW.AN.CONNECTION_REPLAY)
       },
       [eF.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_LOGGING]: {
         section: ez.oAB.VOICE,
         searchableTitles: [eK.intl.string(eK.t["726JHB"])],
         parent: eF.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING,
-        predicate: () => J.isPlatformEmbedded && Y.Z.supports(eY.AN.DEBUG_LOGGING) && null != p.Z.fileManager.readLogFiles
+        predicate: () => J.isPlatformEmbedded && W.Z.supports(eW.AN.DEBUG_LOGGING) && null != p.Z.fileManager.readLogFiles
       },
       [eF.s6.VOICE_AND_VIDEO_RESET_VOICE_SETTINGS]: {
         section: ez.oAB.VOICE,
@@ -1701,7 +1701,7 @@ let eJ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: ez.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Layout Debugging"],
         parent: eF.s6.DEVELOPER_OPTIONS_FLAGS,
-        predicate: () => e2 && z.Z.isDeveloper && W.default.layoutDebuggingEnabled
+        predicate: () => e2 && z.Z.isDeveloper && Y.default.layoutDebuggingEnabled
       },
       [eF.s6.DEVELOPER_OPTIONS_PREVIEW_UNPUBLISHED_COLLECTIONS]: {
         section: ez.oAB.DEVELOPER_OPTIONS,
@@ -1900,7 +1900,7 @@ let eJ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         label: "Quest Preview Tool",
         element: G.Z,
         predicate: () => (0, U.X7)({
-          location: eW.dr.QUEST_PREVIEW_TOOL
+          location: eY.dr.QUEST_PREVIEW_TOOL
         })
       },
       [eF.s6.QUEST_MINOR_REWARD_CAPPING_CONFIG]: {

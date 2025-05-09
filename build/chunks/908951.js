@@ -67,9 +67,9 @@ function y(e) {
     o()(null != e, "paymentSource not specified for change"), o()(null != n, "Unable to fetch plan");
     let i = (0, j.DE)(n.id, e.id, !1);
     return i.length > 0 ? i[0] : v.pKx.USD
-  }, W = e => {
-    null != e && H(e, z(e), F)
   }, Y = e => {
+    null != e && H(e, z(e), F)
+  }, W = e => {
     (0, j.i1)(e.id, (0, O.yb)(t)).then(() => {
       H(e, z(e), F)
     }), "function" == typeof n && n(e.id)
@@ -94,7 +94,7 @@ function y(e) {
         }
         return e
       }({}, e), n = n = {
-        onAddPaymentSource: Y,
+        onAddPaymentSource: W,
         analyticsLocation: y
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
@@ -152,7 +152,7 @@ function y(e) {
           paymentSources: B,
           hidePersonalInformation: D,
           selectedPaymentSourceId: e,
-          onChange: W,
+          onChange: Y,
           onPaymentSourceAdd: K,
           dropdownLoading: M,
           disabled: R,

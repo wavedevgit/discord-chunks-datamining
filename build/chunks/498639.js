@@ -94,7 +94,7 @@ let Z = function() {
     {
       analyticsLocations: z
     } = (0, m.ZP)(u.Z.PAYMENT_FLOW_TEST_PAGE),
-    [W, Y] = r.useState(""),
+    [Y, W] = r.useState(""),
     [K, q] = r.useState(N.lds),
     {
       balance: X,
@@ -347,15 +347,15 @@ let Z = function() {
         className: A.formItem,
         children: [(0, i.jsx)(a.oil, {
           placeholder: "Application Id",
-          value: W,
-          onChange: Y
+          value: Y,
+          onChange: W
         }), (0, i.jsx)(a.oil, {
           placeholder: "Sku Id",
           value: K,
           onChange: e => q(e)
         }), (0, i.jsx)(a.zxk, {
           onClick: () => (0, d.S)({
-            applicationId: W,
+            applicationId: Y,
             skuId: K,
             openPremiumPaymentModal: () => !0,
             analyticsLocations: [],

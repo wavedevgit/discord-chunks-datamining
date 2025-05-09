@@ -48,8 +48,8 @@ var i = n(255367),
   F = n(306680),
   H = n(699516),
   z = n(111583),
-  W = n(9156),
-  Y = n(594174),
+  Y = n(9156),
+  W = n(594174),
   K = n(709054),
   q = n(998502),
   X = n(981631),
@@ -232,21 +232,21 @@ function ec(e) {
     nameplate: V,
     "aria-posinset": G,
     "aria-setsize": z
-  } = e, [Y, K] = r.useState(!1), [q, eo] = r.useState(!1), ec = r.useRef(null), ed = r.useRef(null), {
+  } = e, [W, K] = r.useState(!1), [q, eo] = r.useState(!1), ec = r.useRef(null), ed = r.useRef(null), {
     avatarSrc: eu,
     avatarDecorationSrc: em,
     eventHandlers: eg
   } = (0, U.Z)({
     user: u,
     size: g.EFr.SIZE_32,
-    animateOnHover: !(a || Y || q)
-  }), ep = t.isMultiUserDM(), eh = t.isSystemDM(), ef = (0, M.Q)(), eb = !ep && !eh && t.type === X.d4z.DM, e_ = eb && (null == u ? void 0 : u.primaryGuild) != null, ex = (0, m.e7)([W.ZP], () => W.ZP.isChannelMuted(t.getGuildId(), t.id)), {
+    animateOnHover: !(a || W || q)
+  }), ep = t.isMultiUserDM(), eh = t.isSystemDM(), ef = (0, M.Q)(), eb = !ep && !eh && t.type === X.d4z.DM, e_ = eb && (null == u ? void 0 : u.primaryGuild) != null, ex = (0, m.e7)([Y.ZP], () => Y.ZP.isChannelMuted(t.getGuildId(), t.id)), {
     ignored: eE,
     blocked: eC
   } = (0, m.cj)([H.Z], () => ({
     ignored: H.Z.isIgnored(t.getRecipientId()),
     blocked: H.Z.isBlocked(t.getRecipientId())
-  })), ej = eb && eE, eO = eb && eC, eS = (ex || ej || eO) && !(a || Y), ev = (0, m.e7)([F.ZP], () => F.ZP.getMentionCount(t.id) > 0), eT = (0, T.ZP)(t), eI = (0, m.e7)([A.Z], () => A.Z.isFavorite(t.id)), eN = (0, B.L)("PrivateChannel"), ey = null != V && (a || Y), eA = () => {
+  })), ej = eb && eE, eO = eb && eC, eS = (ex || ej || eO) && !(a || W), ev = (0, m.e7)([F.ZP], () => F.ZP.getMentionCount(t.id) > 0), eT = (0, T.ZP)(t), eI = (0, m.e7)([A.Z], () => A.Z.isFavorite(t.id)), eN = (0, B.L)("PrivateChannel"), ey = null != V && (a || W), eA = () => {
     K(!0)
   }, eP = () => {
     K(!1)
@@ -328,8 +328,8 @@ function ec(e) {
     activities: b,
     voiceChannel: y,
     applicationStream: x,
-    animateEmoji: Y || q,
-    animateText: Y || q,
+    animateEmoji: W || q,
+    animateText: W || q,
     textClassName: J.activityStatusText,
     iconClassName: eS ? J.mutedIcon : void 0
   }) : null, eV = () => {
@@ -408,7 +408,7 @@ function ec(e) {
           children: [(0, i.jsx)(L.Z, {
             nameplate: ey ? V : void 0,
             selected: a,
-            hovered: Y,
+            hovered: W,
             content: eF,
             placement: k.i.CHANNEL
           }), (0, i.jsx)(c.rU, ee($({
@@ -454,7 +454,7 @@ let ed = 12633 == n.j ? e => {
     channel: t,
     selected: n
   } = e, r = et(e, ["channel", "selected"]);
-  let s = (0, m.e7)([Y.default], () => Y.default.getUser(t.getRecipientId())),
+  let s = (0, m.e7)([W.default], () => W.default.getUser(t.getRecipientId())),
     {
       isStatusIndicatorEnabled: l,
       isTypingIndicatorEnabled: a,
@@ -494,11 +494,11 @@ let ed = 12633 == n.j ? e => {
       location: "PrivateChannel",
       user: s
     }),
-    h = (0, m.e7)([Y.default, z.Z], () => {
+    h = (0, m.e7)([W.default, z.Z], () => {
       if (t.isMultiUserDM())
         if (a) return K.default.keys(z.Z.getTypingUsers(t.id)).some(e => {
           var t;
-          return e !== (null == (t = Y.default.getCurrentUser()) ? void 0 : t.id)
+          return e !== (null == (t = W.default.getCurrentUser()) ? void 0 : t.id)
         });
         else return !1;
       return null != s && z.Z.isTyping(t.id, t.getRecipientId())

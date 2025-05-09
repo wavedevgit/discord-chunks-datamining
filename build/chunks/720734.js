@@ -46,8 +46,8 @@ var i = n(255367),
   F = n(526371),
   H = n(64220),
   z = n(359588),
-  W = n(459115),
-  Y = n(427217),
+  Y = n(459115),
+  W = n(427217),
   K = n(132750),
   q = n(526031),
   X = n(540059),
@@ -100,8 +100,8 @@ var i = n(255367),
   eF = n(78839),
   eH = n(626135),
   ez = n(768581),
-  eW = n(572004),
-  eY = n(585483),
+  eY = n(572004),
+  eW = n(585483),
   eK = n(70956),
   eq = n(74538),
   eX = n(374023),
@@ -194,8 +194,8 @@ function tr(e) {
         } = t;
         null != r && i(r), null == (n = e.current) || n.call(e)
       };
-      return eY.S.subscribe(e3.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, t), () => {
-        eY.S.unsubscribe(e3.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, t)
+      return eW.S.subscribe(e3.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, t), () => {
+        eW.S.unsubscribe(e3.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, t)
       }
     }), {
       updateOpenPopoutRef: t,
@@ -260,7 +260,7 @@ function tr(e) {
           className: e5.avatar
         }), (0, i.jsx)("div", {
           className: l()(e5.nameTag, {
-            [e5.canCopy]: eW.wS
+            [e5.canCopy]: eY.wS
           }),
           children: d()
         })]
@@ -350,7 +350,7 @@ class ts extends r.PureComponent {
     return null != u ? (0, i.jsx)(y.Z, {
       hoverText: l,
       forceHover: e,
-      children: (0, i.jsx)(Y.Z, {
+      children: (0, i.jsx)(W.Z, {
         activity: u,
         emojiClassName: e5.emoji,
         className: e5.customStatus
@@ -585,7 +585,7 @@ class ts extends r.PureComponent {
         copiedStreak: n
       } = this.state;
       if (null == e) return;
-      (0, eW.JG)(eQ.ZP.getUserTag(e, {
+      (0, eY.JG)(eQ.ZP.getUserTag(e, {
         decoration: "never",
         identifiable: "always"
       })), eH.default.track(e3.rMx.TEXT_COPIED, {
@@ -775,7 +775,7 @@ function ta() {
       location: "Account"
     }),
     {
-      simplifiedSettingsEnabled: Y
+      simplifiedSettingsEnabled: W
     } = (0, eS.Z)({
       location: "Account"
     }),
@@ -784,7 +784,7 @@ function ta() {
     {
       customStatusRTCEntrypointEnabled: J,
       customStatusHoverOnlyRTCEntrypointEnabled: ee
-    } = (0, W.Z)({
+    } = (0, Y.Z)({
       location: "Account"
     }),
     en = "account";
@@ -865,7 +865,7 @@ function ta() {
       webBuildOverride: T,
       awaitingRemote: B,
       isEligibleForPomelo: L,
-      simplifiedCallSettingsEnabled: Y,
+      simplifiedCallSettingsEnabled: W,
       voiceActivityStatusEnabled: H,
       nameplate: eo,
       selectedGuildId: M,
@@ -958,11 +958,11 @@ function tc(e) {
   let z = r.useCallback(e => {
       C(e, F)
     }, [C, F]),
-    [W, Y] = r.useState(!1),
+    [Y, W] = r.useState(!1),
     K = r.useCallback(e => {
       var t;
       if ((0, a.k)(null == e ? void 0 : e.target, Node) && (null == (t = v.current) ? void 0 : t.contains(e.target))) return h.F;
-      Y(!1)
+      W(!1)
     }, []),
     [q, X] = r.useState(!1);
   return r.useEffect(() => {
@@ -1016,7 +1016,7 @@ function tc(e) {
         ignoreModalClicks: !0,
         onRequestOpen: eA.r5,
         onRequestClose: K,
-        shouldShow: W,
+        shouldShow: Y,
         renderPopout: e => {
           let {
             closePopout: t
@@ -1049,7 +1049,7 @@ function tc(e) {
           return (0, i.jsx)("div", {
             children: (0, i.jsx)(eP.B, {
               targetElementRef: T,
-              onCTA: () => Y(!0),
+              onCTA: () => W(!0),
               canBeShown: !s,
               children: (e, t) => (0, i.jsx)(e$.Z, e7({
                 ref: T,
@@ -1083,7 +1083,7 @@ function tc(e) {
                 "aria-label": e2.intl.string(e2.t.Hapb4O),
                 disabled: c,
                 onClick: e => {
-                  null == t || t(), n(e), Y(!W)
+                  null == t || t(), n(e), W(!Y)
                 }
               }, r))
             })

@@ -46,8 +46,8 @@ var s = n(399606),
   F = n(926433),
   H = n(302036),
   z = n(994554),
-  W = n(704565),
-  Y = n(393305),
+  Y = n(704565),
+  W = n(393305),
   K = n(338879),
   q = n(766491),
   X = n(193943),
@@ -109,7 +109,7 @@ let ex = () => {
           analyticsLocations: e
         })
       },
-      perkImage: W
+      perkImage: Y
     },
     clips: eC ? {
       name: "clips",
@@ -200,7 +200,7 @@ let ex = () => {
       description: U.intl.string(U.t.kWcDKy),
       descriptionCta: U.intl.string(U.t.jVcuVV),
       onCtaClick: eD,
-      perkImage: Y
+      perkImage: W
     },
     remixing: eC ? {
       name: "remixing",
