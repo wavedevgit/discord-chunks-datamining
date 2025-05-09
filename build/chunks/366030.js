@@ -1,7 +1,7 @@
 /** Chunk was on 91245 **/
 "use strict";
 n.d(t, {
-  Z: () => L
+  Z: () => B
 }), n(953529), n(472816), n(794429), n(388685);
 var r = n(255367),
   o = n(73800),
@@ -31,9 +31,9 @@ var r = n(255367),
   S = n(753194),
   I = n(458034),
   k = n(856651),
-  N = n(981631),
-  R = n(228168),
-  M = n(388032),
+  M = n(981631),
+  N = n(228168),
+  R = n(388032),
   E = n(933466);
 
 function Z(e) {
@@ -65,13 +65,13 @@ function A(e) {
   } = e;
   if (null != l) switch (a) {
     case k.iO.LESS_THAN:
-      t = M.intl.format(M.t["2p7dAw"], {
+      t = R.intl.format(R.t["2p7dAw"], {
         description: l,
         count: Math.max(0, Number(i) - 1)
       });
       break;
     case k.iO.GREATER_THAN:
-      t = M.intl.format(M.t["2p7dAw"], {
+      t = R.intl.format(R.t["2p7dAw"], {
         description: l,
         count: Math.max(0, Number(i) + 1)
       });
@@ -156,7 +156,7 @@ function D(e) {
   })
 }
 
-function B(e) {
+function L(e) {
   let t, {
     onGetRolesClicked: n,
     onOpenProfile: a,
@@ -167,7 +167,7 @@ function B(e) {
     guildId: d
   } = e;
   o.useEffect(() => {
-    x.default.track(N.rMx.PASSPORT_ROLE_POPOUT_VIEWED, Z({
+    x.default.track(M.rMx.PASSPORT_ROLE_POPOUT_VIEWED, Z({
       other_user_id: l,
       role_id: s
     }, (0, h.JS)(u), (0, h.hH)(d)))
@@ -176,7 +176,7 @@ function B(e) {
     var e, t;
     return null != (t = null == (e = j.ZP.getSelfMember(d)) ? void 0 : e.roles.includes(s)) && t
   }, [d, s]);
-  return t = 1 === i.length && 1 === i[0].length ? M.intl.string(M.t.jDym4O) : 1 === i.length ? M.intl.format(M.t["0eBj39"], {}) : M.intl.format(M.t.D7uftL, {}), (0, r.jsxs)("div", {
+  return t = 1 === i.length && 1 === i[0].length ? R.intl.string(R.t.jDym4O) : 1 === i.length ? R.intl.format(R.t["0eBj39"], {}) : R.intl.format(R.t.D7uftL, {}), (0, r.jsxs)("div", {
     className: E.popout,
     children: [(0, r.jsx)("div", {
       className: E.popoutHeaderContainer,
@@ -196,18 +196,18 @@ function B(e) {
       children: [g ? null : (0, r.jsx)(p.zxk, {
         className: E.getRolesButton,
         onClick: n,
-        children: M.intl.string(M.t.T1t1WV)
+        children: R.intl.string(R.t.T1t1WV)
       }), (0, r.jsx)(p.zxk, {
         className: E.viewConnectionsButton,
         color: p.zxk.Colors.PRIMARY,
         onClick: a,
-        children: M.intl.string(M.t.hgKDnJ)
+        children: R.intl.string(R.t.hgKDnJ)
       })]
     })]
   })
 }
 
-function L(e) {
+function B(e) {
   let {
     userId: t,
     messageId: n,
@@ -228,7 +228,7 @@ function L(e) {
         let {
           closePopout: o
         } = e;
-        return null == d ? (0, r.jsx)(r.Fragment, {}) : (i()(null != u, "visibleConnectionsRole is null"), (0, r.jsx)(B, {
+        return null == d ? (0, r.jsx)(r.Fragment, {}) : (i()(null != u, "visibleConnectionsRole is null"), (0, r.jsx)(L, {
           eligibilityStates: d,
           userId: t,
           roleId: u.id,
@@ -244,7 +244,7 @@ function L(e) {
               guildId: a.id,
               channelId: l.id,
               roleId: u.id,
-              subsection: R.Tb.CONNECTIONS,
+              subsection: N.Tb.CONNECTIONS,
               sourceAnalyticsLocations: s
             }), o()
           }
@@ -254,7 +254,7 @@ function L(e) {
     align: "top",
     nudgeAlignIntoViewport: !0,
     children: e => (0, r.jsx)(p.ua7, {
-      text: M.intl.string(M.t.Wpsnam),
+      text: R.intl.string(R.t.Wpsnam),
       children: t => {
         var n, o;
         return (0, r.jsxs)("div", (n = Z({

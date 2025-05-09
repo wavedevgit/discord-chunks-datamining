@@ -1,6 +1,6 @@
 /**
   Module ID: 75450
-  Original File Name: 4dc5b4472767183a
+  Original File Name: bda9988017584599
 **/
 @use postcss-pxtorem;
 
@@ -957,20 +957,6 @@
     margin: 0 0 0 .25rem
 }
 
-.full-motion.app-focused:not(.hardware-acceleration-disabled) .gradient_c19a55:hover [class*=usernameGradient] {
-    animation: gradient_c19a55 1.5s linear infinite
-}
-
-@keyframes gradient_c19a55 {
-    0% {
-        background-position: 0
-    }
-
-    to {
-        background-position: 100px
-    }
-}
-
 .pill_a2c9e8 {
     align-items: center;
     background-color: var(--background-secondary-alt);
@@ -1110,4 +1096,4 @@
     margin-right: 8px
 }
 
-/*# sourceMappingURL=4dc5b4472767183a.css.map*/
+/*# sourceMappingURL=bda9988017584599.css.map*/

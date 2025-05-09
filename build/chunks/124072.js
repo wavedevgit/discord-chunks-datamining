@@ -85,7 +85,8 @@ let g = e => {
     primaryColor: null == d ? void 0 : d.primaryColor,
     secondaryColor: null == d ? void 0 : d.secondaryColor,
     tertiaryColor: null == d ? void 0 : d.tertiaryColor,
-    roleStyle: "username"
+    roleStyle: "username",
+    animateGradient: b
   }), I = i.useCallback(e => {
     y(!0), null == m || m(e)
   }, [y, m]), S = i.useCallback(e => {

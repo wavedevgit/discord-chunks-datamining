@@ -1,6 +1,6 @@
 /**
   Module ID: 10923
-  Original File Name: 8461df32a0023594
+  Original File Name: 6a7927ea30ced3b1
 **/
 .editCard_a25a68 {
     background-color: var(--background-secondary);
@@ -5687,6 +5687,20 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     pointer-events: none;
     position: relative;
     width: 142px
+}
+
+.roleStyleMessageContainer__981c8 [class*=usernameGradient]:after {
+    background: inherit;
+    -webkit-background-clip: text;
+    background-clip: text;
+    content: attr(data-text) /"";
+    inset: 0;
+    position: absolute;
+    -webkit-text-fill-color: transparent;
+    animation: gradientGlowFadeInAnimation__981c8 .1s ease-in-out;
+    filter: blur(4px);
+    opacity: .7;
+    z-index: -1
 }
 
 .roleStyleMessageContainer__981c8:after {
@@ -12838,4 +12852,4 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=8461df32a0023594.css.map*/
+/*# sourceMappingURL=6a7927ea30ced3b1.css.map*/

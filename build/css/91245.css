@@ -1,6 +1,6 @@
 /**
   Module ID: 91245
-  Original File Name: 51b08a93b2246a16
+  Original File Name: d679eaa6c6fc905d
 **/
 @use postcss-pxtorem;
 
@@ -927,20 +927,6 @@
     margin: 0 0 0 .25rem
 }
 
-.full-motion.app-focused:not(.hardware-acceleration-disabled) .gradient_c19a55:hover [class*=usernameGradient] {
-    animation: gradient_c19a55 1.5s linear infinite
-}
-
-@keyframes gradient_c19a55 {
-    0% {
-        background-position: 0
-    }
-
-    to {
-        background-position: 100px
-    }
-}
-
 .wrapper__74bfa {
     align-items: center;
     display: flex;
@@ -1368,4 +1354,4 @@
     color: var(--primary-500)
 }
 
-/*# sourceMappingURL=51b08a93b2246a16.css.map*/
+/*# sourceMappingURL=d679eaa6c6fc905d.css.map*/

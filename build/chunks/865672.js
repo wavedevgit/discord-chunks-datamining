@@ -26,7 +26,7 @@ function f(e) {
     roleStyle: l,
     includeConvenienceGlow: d,
     animateGradient: f
-  } = e, _ = "username" === l, p = "dot" === l;
+  } = e, _ = "username" === l, p = "dot" === l, h = _ && d;
   return {
     gradientStyle: {
       "--custom-gradient-color-1": null != r ? r : c.p6O,
@@ -35,14 +35,15 @@ function f(e) {
     },
     gradientClassname: a()(null != o ? u.threeColorGradient : u.twoColorGradient, {
       [u.usernameGradient]: _,
-      [u.convenienceGradient]: _ && d,
-      [u.gradientUsernameAnimation]: !s && _,
+      [u.convenienceGlowGradient]: h,
+      [u.convenienceGlowGradientActive]: h && f,
       [u.gradientDotAnimation]: !s && p,
-      [u.animateGradient]: f
+      [u.animateGradient]: f && _
     }),
     gradientGlowClassname: a()(null != o ? u.threeColorGradient : u.twoColorGradient, u.usernameGlow, {
       [u.usernameGradient]: _,
-      [u.gradientUsernameAnimation]: !s && _
+      [u.animateGradient]: f && _,
+      [u.usernameGlowActive]: _ && f
     })
   }
 }
