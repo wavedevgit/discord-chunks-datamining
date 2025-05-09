@@ -24,8 +24,8 @@ async function S(e) {
     applicationId: R,
     skuId: A,
     initialPlanId: P,
-    analyticsLocations: C,
-    analyticsLocationObject: f
+    analyticsLocations: f,
+    analyticsLocationObject: C
   } = e, D = T.Z.get(A);
   if (null == D) {
     let e = (await (0, a.oJ)(R)).find(e => e.sku.id === A);
@@ -43,8 +43,8 @@ async function S(e) {
     (0, d.Z)({
       applicationId: R,
       skuId: A,
-      analyticsLocationObject: f,
-      analyticsLocations: C,
+      analyticsLocationObject: C,
+      analyticsLocations: f,
       contextKey: m,
       onComplete: t => {
         var n;
@@ -55,7 +55,7 @@ async function S(e) {
       }
     })
   });
-  await (t = R, n = A, i = P, S = f, p = C, (0, E.m)({
+  await (t = R, n = A, i = P, S = C, p = f, (0, E.m)({
     applicationId: t,
     skuId: n,
     initialPlanId: i,

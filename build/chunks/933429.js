@@ -24,8 +24,8 @@ var r, i = n(913527),
   R = n(594190),
   A = n(38618),
   P = n(569545),
-  C = n(615365),
-  f = n(528011),
+  f = n(615365),
+  C = n(528011),
   D = n(487419),
   m = n(715903),
   g = n(223606),
@@ -78,8 +78,8 @@ var r, i = n(913527),
   eR = n(358085),
   eA = n(74538),
   eP = n(922156),
-  eC = n(436181),
-  ef = n(941128),
+  ef = n(436181),
+  eC = n(941128),
   eD = n(981631),
   em = n(188785),
   eg = n(474936),
@@ -194,7 +194,7 @@ let ez = [eD.kVF.QUARANTINED, eD.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, eD.kVF.VI
       }
     },
     [eD.kVF.GUILD_RAID_NOTIFICATION]: {
-      predicate: () => (0, f.g)().show && !eB(eD.kVF.GUILD_RAID_NOTIFICATION),
+      predicate: () => (0, C.g)().show && !eB(eD.kVF.GUILD_RAID_NOTIFICATION),
       metadata: () => ({
         dismissUntil: l()().add(3, "hours").toDate()
       })
@@ -281,8 +281,8 @@ let ez = [eD.kVF.QUARANTINED, eD.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, eD.kVF.VI
       })
     },
     [eD.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS]: {
-      predicate: () => null != eC.Z.getLastProgress(),
-      metadata: () => eC.Z.getLastProgress()
+      predicate: () => null != ef.Z.getLastProgress(),
+      metadata: () => ef.Z.getLastProgress()
     },
     [eD.kVF.SPOTIFY_AUTO_PAUSED]: {
       predicate: () => B.Z.wasAutoPaused()
@@ -314,7 +314,7 @@ let ez = [eD.kVF.QUARANTINED, eD.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, eD.kVF.VI
       predicate: () => (0, v.tq)()
     },
     [eD.kVF.CORRUPT_INSTALLATION]: {
-      predicate: () => eR.isPlatformEmbedded && (!a.Z.supported() || ef.Z.isCorruptInstallation())
+      predicate: () => eR.isPlatformEmbedded && (!a.Z.supported() || eC.Z.isCorruptInstallation())
     },
     [eD.kVF.VIDEO_UNSUPPORTED_BROWSER]: {
       predicate: e => {
@@ -363,7 +363,7 @@ let ez = [eD.kVF.QUARANTINED, eD.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, eD.kVF.VI
         let {
           selectedGuildId: t
         } = e;
-        return null != t && C.Z.getCurrentConfig({
+        return null != t && f.Z.getCurrentConfig({
           location: "notice_store"
         }).showSurvey && !eB(eD.kVF.SERVER_USAGE_SURVEY)
       },
@@ -723,7 +723,7 @@ function eH() {
 }
 class eX extends(r = o.ZP.Store) {
   initialize() {
-    this.syncWith([eu.Z, ei.Z, Q.Z, ea.Z, j.Z, eN.Z, H.Z, J.Z, W.Z, D.Z, V.Z, Y.Z], eK), this.waitFor(ed.default, ec.Z, ee.Z, $.ZP, el.Z, et.Z, es.Z, p.Z, ea.Z, eE.Z, B.Z, R.ZP, ei.Z, eP.Z, eC.Z, ep.Z, en.Z, eT.ZP, ef.Z, Q.Z, eO.Z, er.Z, j.Z, eS.Z, eN.Z, J.Z, h.Z, O.Z, F.Z, V.Z, Y.Z)
+    this.syncWith([eu.Z, ei.Z, Q.Z, ea.Z, j.Z, eN.Z, H.Z, J.Z, W.Z, D.Z, V.Z, Y.Z], eK), this.waitFor(ed.default, ec.Z, ee.Z, $.ZP, el.Z, et.Z, es.Z, p.Z, ea.Z, eE.Z, B.Z, R.ZP, ei.Z, eP.Z, ef.Z, ep.Z, en.Z, eT.ZP, eC.Z, Q.Z, eO.Z, er.Z, j.Z, eS.Z, eN.Z, J.Z, h.Z, O.Z, F.Z, V.Z, Y.Z)
   }
   hasNotice() {
     return null != ex && null != ex.type

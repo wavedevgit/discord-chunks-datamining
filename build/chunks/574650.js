@@ -44,11 +44,11 @@ let P = 12633 == n.j ? () => {
   var e, t;
   let i = (0, a.e7)([u.Z], () => u.Z.getGuildId(), []),
     P = (0, a.e7)([s.Z], () => s.Z.getGuild(i), [i]),
-    C = (0, a.e7)([O.Z], () => null != i ? O.Z.getRequest(i) : null, [i]),
-    f = (0, o.TH)(),
-    D = (null == (e = (0, o.LX)(f.pathname, T.Z5c.CHANNEL(null == P ? void 0 : P.id, N.oC.GUILD_ONBOARDING))) ? void 0 : e.isExact) === !0;
+    f = (0, a.e7)([O.Z], () => null != i ? O.Z.getRequest(i) : null, [i]),
+    C = (0, o.TH)(),
+    D = (null == (e = (0, o.LX)(C.pathname, T.Z5c.CHANNEL(null == P ? void 0 : P.id, N.oC.GUILD_ONBOARDING))) ? void 0 : e.isExact) === !0;
   if (null == P || !(0, I.Dc)(P) || D) return null;
-  let m = null != (t = null == C ? void 0 : C.applicationStatus) ? t : _.wB.STARTED,
+  let m = null != (t = null == f ? void 0 : f.applicationStatus) ? t : _.wB.STARTED,
     g = null,
     y = null,
     h = null,

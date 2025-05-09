@@ -25,14 +25,14 @@ function A(e) {
   var t, A;
   let {
     onDismiss: P
-  } = e, C = (0, l.e7)([d.Z], () => d.Z.getGuildId()), f = (0, l.e7)([E.Z], () => null != C ? E.Z.getChannelId(C) : null, [C]), D = null != C ? C : null, m = (0, l.e7)([u.Z], () => null != D ? u.Z.getGuild(D) : null, [D]), {
+  } = e, f = (0, l.e7)([d.Z], () => d.Z.getGuildId()), C = (0, l.e7)([E.Z], () => null != f ? E.Z.getChannelId(f) : null, [f]), D = null != f ? f : null, m = (0, l.e7)([u.Z], () => null != D ? u.Z.getGuild(D) : null, [D]), {
     shouldShowIncidentActions: g,
     incidentData: y,
     isUnderLockdown: h
   } = (0, I.mI)(D), U = (0, c.n2)(null != (t = null == m ? void 0 : m.id) ? t : N.lds), b = i.useCallback(() => null != m && (0, s._X)(m.id), [m]);
   if (null == m || null == y || !g) return null;
   let M = e => {
-      if (e && U && f !== S.oC.MEMBER_SAFETY && b()) return void _.default.track(N.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, {
+      if (e && U && C !== S.oC.MEMBER_SAFETY && b()) return void _.default.track(N.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, {
         notice_type: N.kVF.GUILD_RAID_NOTIFICATION,
         guild_id: m.id
       });
@@ -112,7 +112,7 @@ function A(e) {
     }) : p.intl.formatToPlainString(p.t.W87xDA, {
       guildName: m.name
     }),
-    j = U && f === S.oC.MEMBER_SAFETY;
+    j = U && C === S.oC.MEMBER_SAFETY;
   return (0, r.jsxs)(o.qXd, {
     className: R.notice,
     color: o.DM8.WARNING,

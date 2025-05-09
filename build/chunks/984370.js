@@ -24,8 +24,8 @@ var i = n(120356),
   R = n(975146),
   A = n(979651),
   P = n(358085),
-  C = n(998502),
-  f = n(665149),
+  f = n(998502),
+  C = n(665149),
   D = n(300986),
   m = n(314451),
   g = n(35583),
@@ -68,7 +68,7 @@ async function k() {
   if ((0, P.isMac)() && P.isPlatformEmbedded) {
     var e, t, n;
     let r = null != (n = await (null == (e = (t = window.DiscordNative.remoteApp).getDefaultDoubleClickAction) ? void 0 : e.call(t))) ? n : "Maximize";
-    "Minimize" === r ? C.ZP.minimize() : "Maximize" === r && C.ZP.maximize()
+    "Minimize" === r ? f.ZP.minimize() : "Maximize" === r && f.ZP.maximize()
   }
 }
 
@@ -81,7 +81,7 @@ function Z(e) {
     guildId: s,
     innerClassname: u,
     transparent: P = !1,
-    toolbar: C,
+    toolbar: f,
     mobileToolbar: b,
     "aria-label": M,
     "aria-labelledby": Z,
@@ -105,20 +105,20 @@ function Z(e) {
   } = (0, _.Z)({
     location: "HeaderBar"
   }), Y = (0, O.Q3)("HeaderBar");
-  return (0, r.jsx)(f.ZP, {
+  return (0, r.jsx)(C.ZP, {
     className: n,
     innerClassName: u,
     toolbar: function() {
-      if (null == C) return null;
+      if (null == f) return null;
       let e = null != i && !L;
       return o.tq ? b : (0, r.jsxs)(r.Fragment, {
-        children: [C, e ? (0, r.jsx)(p.Z, {
+        children: [f, e ? (0, r.jsx)(p.Z, {
           className: U.search
-        }, null != s ? s : i) : null, F && (0, r.jsx)(f.ZP.Divider, {}), !Y && (0, r.jsx)(g.Z, {}), !Y && (0, r.jsx)(I.Z, {
+        }, null != s ? s : i) : null, F && (0, r.jsx)(C.ZP.Divider, {}), !Y && (0, r.jsx)(g.Z, {}), !Y && (0, r.jsx)(I.Z, {
           canShowReminder: !0
         }), !Y && (0, r.jsx)(T.Z, {}), B && !z ? (0, r.jsx)(S.Z, {}) : null, !Y && (w ? (0, r.jsx)(m.Z, {}) : (0, r.jsx)(D.Z, {})), W && x && null != V && !G && l === y.d4z.GROUP_DM && (0, r.jsxs)("div", {
           className: U.controlButtonWrapper,
-          children: [(0, r.jsx)(f.ZP.Divider, {}), (0, r.jsx)(R.Z, {
+          children: [(0, r.jsx)(C.ZP.Divider, {}), (0, r.jsx)(R.Z, {
             onClick: () => c.Z.toggleParticipantsList(V, !G)
           })]
         })]
@@ -142,7 +142,7 @@ function v(e) {
     "aria-labelledby": l,
     role: o
   } = e;
-  return (0, r.jsx)(f.ZP, {
+  return (0, r.jsx)(C.ZP, {
     className: n,
     onDoubleClick: k,
     "aria-label": i,
@@ -184,5 +184,5 @@ function j(e) {
     }))
   })
 }
-j.Title = f.ZP.Title, j.Icon = f.ZP.Icon, j.Divider = f.ZP.Divider, j.Caret = f.ZP.Caret;
+j.Title = C.ZP.Title, j.Icon = C.ZP.Icon, j.Divider = C.ZP.Divider, j.Caret = C.ZP.Caret;
 let L = j
