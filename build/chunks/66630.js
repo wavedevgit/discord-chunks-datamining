@@ -56,7 +56,7 @@ function L(t) {
   }), W = (0, o.e7)([p.default], () => {
     var t;
     return null != (t = p.default.getCurrentUser()) ? t : null
-  }), H = (0, T.a)(), [V, K] = r.useState(null != (e = null == H ? void 0 : H.state) ? e : ""), [G, q] = r.useState(null != (n = null == H ? void 0 : H.emoji) ? n : null), [X, $] = r.useState((0, O.Z)()), J = r.useRef(null), Q = r.useRef(null), tt = r.useRef(null), [te, tn] = r.useState(null != H && F && null == U ? (0, _.Z)(H) : U), [tl, tr] = r.useState(M), [ta, ti] = r.useState(() => null != U ? (0, P.Z)(U) : z && null != B ? B.label() : D.intl.string(D.t["xod36+"])), [to, ts] = r.useState(ta), {
+  }), H = (0, T.a)(), [K, V] = r.useState(null != (e = null == H ? void 0 : H.state) ? e : ""), [G, q] = r.useState(null != (n = null == H ? void 0 : H.emoji) ? n : null), [X, $] = r.useState((0, O.Z)()), J = r.useRef(null), Q = r.useRef(null), tt = r.useRef(null), [te, tn] = r.useState(null != H && F && null == U ? (0, _.Z)(H) : U), [tl, tr] = r.useState(M), [ta, ti] = r.useState(() => null != U ? (0, P.Z)(U) : z && null != B ? B.label() : D.intl.string(D.t["xod36+"])), [to, ts] = r.useState(ta), {
     ref: tu,
     width: tc
   } = (0, c.ZP)(ta);
@@ -79,7 +79,7 @@ function L(t) {
     })
   }, [R]), (0, d.ZP)(() => {
     var t, e;
-    null == (t = J.current) || t.focus(), null == (e = J.current) || e.setSelection(V.length, V.length)
+    null == (t = J.current) || t.focus(), null == (e = J.current) || e.setSelection(K.length, K.length)
   });
   let td = t => {
       null != t && q(null != t.id ? {
@@ -94,7 +94,7 @@ function L(t) {
     },
     tm = () => {
       (0, x.Z)({
-        text: V,
+        text: K,
         emojiInfo: G,
         clearAfter: X,
         prompt: B,
@@ -132,7 +132,7 @@ function L(t) {
         className: A.profilePreview,
         children: (0, l.jsx)(w.Z, {
           user: W,
-          previewText: V,
+          previewText: K,
           previewEmoji: G,
           placeHolderText: ta,
           transitionState: a,
@@ -234,13 +234,13 @@ function L(t) {
           }), (0, l.jsx)(s.Kx8, {
             autosize: !0,
             "aria-describedby": tp,
-            value: V,
+            value: K,
             maxLength: E.s0,
             rows: 1,
             showRemainingCharacterCount: !1,
             placeholder: to,
             onChange: t => {
-              K(t)
+              V(t)
             },
             onKeyDown: t => {
               "Enter" === t.key && tm()
@@ -255,7 +255,7 @@ function L(t) {
           }), (0, l.jsx)(s.nn4, {
             id: tp,
             children: "".concat(D.intl.string(D.t.EVV6ub), ": ").concat(ta)
-          }), (V.length > 0 || null != G) && (0, l.jsx)("div", {
+          }), (K.length > 0 || null != G) && (0, l.jsx)("div", {
             className: i()(A.clearButtonWrapper, null != te && A.buttonContainerWithLabel),
             children: (0, l.jsx)(s.zxk, {
               focusProps: {
@@ -269,7 +269,7 @@ function L(t) {
               "aria-label": D.intl.string(D.t.wfYTHR),
               className: A.clearButton,
               onClick: () => {
-                K(""), q(null)
+                V(""), q(null)
               },
               look: s.zxk.Looks.BLANK,
               size: s.zxk.Sizes.NONE,
