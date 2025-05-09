@@ -63,7 +63,7 @@ function H(e) {
   return e
 }
 var z = ((i = {})[i.WHAT_YOU_LOSE = 1] = "WHAT_YOU_LOSE", i[i.CONFIRM = 2] = "CONFIRM", i[i.PREVIEW = 3] = "PREVIEW", i[i.CONFIRM_DISCOUNT = 4] = "CONFIRM_DISCOUNT", i[i.DISCOUNT_APPLIED = 5] = "DISCOUNT_APPLIED", i[i.PAUSE_SELECT = 6] = "PAUSE_SELECT", i[i.PAUSE_CONFIRM = 7] = "PAUSE_CONFIRM", i);
-async function Y(e) {
+async function W(e) {
   let {
     premiumSubscription: t,
     onClose: n,
@@ -91,7 +91,7 @@ async function Y(e) {
   }
 }
 
-function W(e) {
+function Y(e) {
   var t;
   let {
     premiumSubscription: n,
@@ -153,7 +153,7 @@ function W(e) {
       color: g.zxk.Colors.RED,
       disabled: u,
       onClick: async () => {
-        await Y({
+        await W({
           setHasError: E,
           onClose: a,
           premiumSubscription: n,
@@ -281,7 +281,7 @@ function q(e) {
         color: g.zxk.Colors.RED,
         disabled: c,
         onClick: async () => {
-          await Y({
+          await W({
             setHasError: m,
             onClose: l,
             premiumSubscription: t,
@@ -346,7 +346,7 @@ function J(e) {
   null == p && (p = k ? 1 : 2);
   let {
     analyticsLocations: z
-  } = (0, b.ZP)(c, f.Z.PREMIUM_SUBSCRIPTION_CANCELLATION_MODAL), [Y, K, J, $] = function(e, t, n) {
+  } = (0, b.ZP)(c, f.Z.PREMIUM_SUBSCRIPTION_CANCELLATION_MODAL), [W, K, J, $] = function(e, t, n) {
     let [i, r] = s.useState(e), [l, a] = s.useState(Date.now()), [o] = s.useState(Date.now()), c = s.useCallback(e => {
       C.default.track(V.rMx.CANCELLATION_FLOW_STEP, H({
         from_step: Q[i],
@@ -372,14 +372,14 @@ function J(e) {
     {
       churnUserDiscountOffer: er,
       isFetchingChurnDiscountOffer: es
-    } = (0, I.WR)(!ei || 1 !== Y);
-  switch (Y) {
+    } = (0, I.WR)(!ei || 1 !== W);
+  switch (W) {
     case 6:
       n = (0, r.jsx)(R.of, {
         premiumSubscription: i,
         premiumType: Z,
         setStep: K,
-        onClose: () => en(Y),
+        onClose: () => en(W),
         pauseDuration: ee,
         setPauseDuration: et,
         footer: (0, r.jsxs)("div", {
@@ -414,7 +414,7 @@ function J(e) {
         premiumSubscription: i,
         premiumType: Z,
         setStep: K,
-        onClose: () => en(Y),
+        onClose: () => en(W),
         analyticsLocation: u,
         pauseDuration: ee
       });
@@ -447,11 +447,11 @@ function J(e) {
           }), (0, r.jsx)(g.zxk, {
             look: g.zxk.Looks.LINK,
             color: (0, m.wj)(w) ? g.zxk.Colors.WHITE : g.zxk.Colors.PRIMARY,
-            onClick: () => en(Y),
+            onClick: () => en(W),
             children: G.intl.string(G.t.h9tkAA)
           })]
         }),
-        onClose: () => en(Y),
+        onClose: () => en(W),
         onDiscountClaim: () => K(4),
         onContinue: () => K(2),
         isLoading: ei && es,
@@ -460,11 +460,11 @@ function J(e) {
       });
       break;
     case 2:
-      n = (0, r.jsx)(W, {
+      n = (0, r.jsx)(Y, {
         premiumSubscription: i,
         premiumType: Z,
         setStep: K,
-        onClose: () => en(Y),
+        onClose: () => en(W),
         whatYouLoseExperienceEnabled: k,
         analyticsLocation: u
       });
@@ -474,7 +474,7 @@ function J(e) {
         premiumSubscription: i,
         premiumType: Z,
         onBack: () => K(2),
-        onClose: () => en(Y),
+        onClose: () => en(W),
         analyticsLocation: u
       });
       break;
@@ -482,7 +482,7 @@ function J(e) {
       n = (0, r.jsx)(A.Z, {
         premiumSubscription: i,
         premiumType: Z,
-        onClose: () => en(Y),
+        onClose: () => en(W),
         onConfirm: () => K(5),
         userDiscountOffer: er
       });
@@ -491,13 +491,13 @@ function J(e) {
       n = (0, r.jsx)(P.D, {
         premiumSubscription: i,
         premiumType: Z,
-        onClose: () => en(Y),
+        onClose: () => en(W),
         confettiCanvas: x,
         userDiscountOffer: er
       });
       break;
     default:
-      throw Error("Unexpected step: ".concat(Y))
+      throw Error("Unexpected step: ".concat(W))
   }
   return (0, r.jsxs)(b.Gt, {
     value: z,

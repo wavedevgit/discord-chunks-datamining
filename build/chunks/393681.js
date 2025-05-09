@@ -45,8 +45,8 @@ var i = n(255367),
   F = n(981631),
   H = n(801461),
   z = n(388032),
-  Y = n(951839),
-  W = n(20493);
+  W = n(951839),
+  Y = n(20493);
 
 function K(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -96,7 +96,7 @@ class X extends r.PureComponent {
     if (!e.isClaimed()) {
       let e = (0, i.jsxs)("section", {
         children: [(0, i.jsx)("div", {
-          className: Y.accountWarningBodyText,
+          className: W.accountWarningBodyText,
           children: z.intl.string(z.t.qKs3vr)
         }), (0, i.jsx)(u.zxk, {
           look: u.iLD.OUTLINED,
@@ -108,7 +108,7 @@ class X extends r.PureComponent {
       });
       return (0, i.jsx)(u.ToO, {
         type: u.ToO.Types.DANGER,
-        className: W.marginBottom20,
+        className: Y.marginBottom20,
         imageData: {
           src: n(418558),
           width: 60,
@@ -122,7 +122,7 @@ class X extends r.PureComponent {
     if (!e.verified) {
       let e = (0, i.jsxs)("section", {
         children: [(0, i.jsx)("div", {
-          className: Y.accountWarningBodyText,
+          className: W.accountWarningBodyText,
           children: z.intl.string(z.t.NAzplJ)
         }), (0, i.jsx)(w.Z, {
           size: u.PhG.SMALL,
@@ -131,7 +131,7 @@ class X extends r.PureComponent {
       });
       return (0, i.jsx)(u.ToO, {
         type: u.ToO.Types.PRIMARY,
-        className: W.marginBottom20,
+        className: Y.marginBottom20,
         imageData: {
           src: n(449125),
           width: 60,
@@ -144,12 +144,12 @@ class X extends r.PureComponent {
   }
   renderPomeloWarning() {
     return this.props.shouldRenderPomeloWarning ? (0, i.jsxs)(u.Wn, {
-      className: Y.accountWarningBodyText,
+      className: W.accountWarningBodyText,
       messageType: u.QYI.WARNING,
       children: [this.props.forceMigrationExperiment ? z.intl.format(z.t.zT1hgo, {
         date: (0, x.IE)(this.props.locale)
       }) : z.intl.format(z.t.pdYZys, {}), " ", "", (0, i.jsx)(_.Z, {
-        className: Y.noticeTextButton,
+        className: W.noticeTextButton,
         onClick: () => (0, j.Z)(H.Kq.USER_SETTINGS),
         children: z.intl.string(z.t.LhlgY2)
       })]
@@ -173,15 +173,15 @@ class X extends r.PureComponent {
       theme: r
     } = this.props, s = (0, d.wj)(r) ? n(555702) : n(610802);
     return (0, i.jsxs)(u.hjN, {
-      className: l()(Y.userSettingsSecurity, W.marginTop40),
+      className: l()(W.userSettingsSecurity, Y.marginTop40),
       title: z.intl.string(z.t.pKSjEh),
       tag: "h1",
       children: [t.mfaEnabled ? (0, i.jsx)(u.hjN, {
         children: (0, i.jsxs)(u.vwX, {
-          className: l()(Y.isEnabled, W.marginBottom20),
+          className: l()(W.isEnabled, Y.marginBottom20),
           children: [(0, i.jsx)("img", {
             alt: "",
-            className: Y.lockIcon,
+            className: W.lockIcon,
             src: n(511391)
           }), z.intl.string(z.t.FsmBy8)]
         })
@@ -190,7 +190,7 @@ class X extends r.PureComponent {
         children: (0, i.jsx)("div", {
           children: (0, i.jsx)(u.zxk, {
             size: u.zxk.Sizes.SMALL,
-            className: Y.changePasswordButton,
+            className: W.changePasswordButton,
             onClick: () => (0, u.h7j)(e => (0, i.jsx)(V.default, q(K({}, e), {
               onSuccess: e.onClose
             }))),
@@ -212,7 +212,7 @@ class X extends r.PureComponent {
             grow: 0,
             children: (0, i.jsx)("img", {
               src: s,
-              className: Y.userSettingsSecurityImage,
+              className: W.userSettingsSecurityImage,
               alt: ""
             })
           })]
@@ -286,7 +286,7 @@ class X extends r.PureComponent {
       currentUser: e
     } = this.props;
     return (0, i.jsx)(M.Z, {
-      className: W.marginTop40,
+      className: Y.marginTop40,
       currentUser: e,
       handleDisableAccount: () => this.handleDisableAccount(!1),
       handleDeleteAccount: () => this.handleDisableAccount(!0)
@@ -315,7 +315,7 @@ class X extends r.PureComponent {
       children: (0, i.jsx)(L.Z, {
         parentSetting: G.s6.ACCOUNT,
         settingsSection: F.oAB.ACCOUNT,
-        panelClassName: Y.tabPanel,
+        panelClassName: W.tabPanel,
         onTabChange: e => {
           P.default.track(F.rMx.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
             target_tab_name: e === G.s6.ACCOUNT_SECURITY_TAB ? "SECURITY" : "STANDING"

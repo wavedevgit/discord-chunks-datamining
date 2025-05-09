@@ -1,6 +1,6 @@
 /** Chunk was on 69835 **/
 n.d(t, {
-  M: () => W,
+  M: () => Y,
   Z: () => K
 });
 var i = n(255367),
@@ -85,7 +85,7 @@ function z(e) {
   })
 }
 
-function Y(e) {
+function W(e) {
   let {
     theme: t,
     section: n,
@@ -129,7 +129,7 @@ function Y(e) {
   })
 }
 
-function W() {
+function Y() {
   let e = (0, P.Z)(),
     t = (0, R.M8)(),
     n = (0, x.wE)(d.z.FAMILY_CENTER_NEW_BADGE),
@@ -205,7 +205,7 @@ function K() {
   } = (0, f.ZP)(h.Z.FAMILY_CENTER), t = (0, P.Z)(), n = (0, R.M8)(), s = (0, x.wE)(d.z.FAMILY_CENTER_NEW_BADGE), a = (0, c.e7)([N.Z], () => N.Z.getIsInitialized()), E = (0, A.M)(), D = (0, c.e7)([O.Z], () => O.Z.theme), {
     selectedTab: Z,
     handleTabChange: w
-  } = (0, y.Z)(), F = (0, _.Dt)(), z = v.default.getCurrentUser(), W = null != t, K = a && null != z && !W;
+  } = (0, y.Z)(), F = (0, _.Dt)(), z = v.default.getCurrentUser(), Y = null != t, K = a && null != z && !Y;
   (0, g.ZP)(() => {
     m.Y(L.Z5c.FAMILY_CENTER), (0, j.e)("family-center"), !N.Z.isLoading() && N.Z.canRefetch() && I.ZP.initialPageLoad(), s || (0, x.EW)(d.z.FAMILY_CENTER_NEW_BADGE, {
       dismissAction: M.L.AUTO,
@@ -222,7 +222,7 @@ function K() {
   if (r.useEffect(() => {
       X.current = q
     }), r.useEffect(() => {
-      if (a && W) {
+      if (a && Y) {
         let {
           isConsideredAdult: e,
           numOfAcceptedRequests: t,
@@ -239,7 +239,7 @@ function K() {
           name: o.V.FAMILY_CENTER_VIEW
         })
       }
-    }, [a, W]), r.useEffect(() => {
+    }, [a, Y]), r.useEffect(() => {
       let e = S.Ex.getSetting();
       a && t && void 0 === e && S.Ex.updateSetting(!0)
     }, [a, t]), r.useEffect(() => {
@@ -254,7 +254,7 @@ function K() {
       "aria-label": V.intl.string(U.default.RZqaJi),
       children: [(0, i.jsx)(b.yY, {
         location: V.intl.string(U.default.RZqaJi)
-      }), (0, i.jsx)(Y, {
+      }), (0, i.jsx)(W, {
         theme: D,
         section: Q,
         handleItemSelect: e => {

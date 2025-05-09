@@ -290,12 +290,14 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
         a = (null != (t = e.lazy_private_channels) ? t : []).map(e => (0, E.q_)(e)),
         s = null != (n = e.game_invites) ? n : [];
       m.Z.dispatchReadySupplemental.measure(() => {
+        var t;
         K({
           type: "CONNECTION_OPEN_SUPPLEMENTAL",
           guilds: i,
           presences: o,
           lazyPrivateChannels: a,
-          gameInvites: s
+          gameInvites: s,
+          userActivities: null != (t = e.user_activities) ? t : void 0
         })
       });
       let l = [];
@@ -400,10 +402,11 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
     })
   })
 }), H(["STATE_UPDATE"], e => {
-  var t;
+  var t, n;
   K({
     type: "CONNECTION_OPEN_STATE_UPDATE",
-    apexUserExperiments: null != (t = e.apex_user_experiments) ? t : void 0
+    apexUserExperiments: null != (t = e.apex_user_experiments) ? t : void 0,
+    userActivities: null != (n = e.user_activities) ? n : void 0
   })
 }), H(["RESUMED"], () => {
   w.RR.forceUpdate(), w.GC.forceUpdate(), K({

@@ -1,5 +1,5 @@
-/** Chunk was on 55551 **/
-n.d(t, {
+/** Chunk was on 5639 **/
+n.d(i, {
   R: () => l
 });
 var e = n(818083),
@@ -20,18 +20,18 @@ let a = (0, e.B)({
   }]
 });
 
-function l(i) {
+function l(t) {
   let {
-    location: t
-  } = i, {
+    location: i
+  } = t, {
     isInHoldout: n
   } = o.X.getCurrentConfig({
-    location: t
+    location: i
   }, {
     autoTrackExposure: !0
   });
   return a.getCurrentConfig({
-    location: t
+    location: i
   }, {
     disable: n,
     autoTrackExposure: !0

@@ -45,8 +45,8 @@ var i = n(255367),
   F = n(431282),
   H = n(213928),
   z = n(587243),
-  Y = n(383832),
-  W = n(981631),
+  W = n(383832),
+  Y = n(981631),
   K = n(228168),
   q = n(388032),
   X = n(404255),
@@ -231,7 +231,7 @@ function $(e) {
                       status: eo,
                       size: 12
                     }),
-                    hint: (eg || eo === W.Skl.DND) && (0, i.jsx)(a.owu, {
+                    hint: (eg || eo === Y.Skl.DND) && (0, i.jsx)(a.owu, {
                       size: "xxs"
                     }),
                     renderSubmenu: s.tq ? void 0 : e => {
@@ -304,7 +304,7 @@ function $(e) {
                     icon: a.lMe,
                     label: q.intl.string(q.t.oMNyYG),
                     onClick: () => {
-                      n(), (0, Y.Z)()
+                      n(), (0, W.Z)()
                     },
                     renderSubmenu: e => {
                       let {

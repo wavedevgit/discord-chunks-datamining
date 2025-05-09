@@ -75,11 +75,11 @@ let R = {
       forceShadow: x,
       cardType: O,
       confettiCanvas: S
-    } = e, w = null == e ? void 0 : e.onCtaClick, k = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), [L, B] = r.useState(!1), [M, U] = r.useState(!1), V = (0, b.Er)(), G = (0, b.IB)(), [F, H] = r.useState(!1), [z, Y] = r.useState(t === C.u.TENURE_REWARD_COLLECTIBLE && G && (null == V ? void 0 : V.nitroTenureStatus) === v.EB.REDEEMABLE);
+    } = e, w = null == e ? void 0 : e.onCtaClick, k = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), [L, B] = r.useState(!1), [M, U] = r.useState(!1), V = (0, b.Er)(), G = (0, b.IB)(), [F, H] = r.useState(!1), [z, W] = r.useState(t === C.u.TENURE_REWARD_COLLECTIBLE && G && (null == V ? void 0 : V.nitroTenureStatus) === v.EB.REDEEMABLE);
     r.useEffect(() => {
-      t === C.u.TENURE_REWARD_COLLECTIBLE && G && (null == V ? void 0 : V.nitroTenureStatus) === v.EB.REDEEMABLE && Y(!0)
+      t === C.u.TENURE_REWARD_COLLECTIBLE && G && (null == V ? void 0 : V.nitroTenureStatus) === v.EB.REDEEMABLE && W(!0)
     }, [G, t, V]);
-    let W = r.useCallback(() => {
+    let Y = r.useCallback(() => {
         H(!0)
       }, []),
       K = O === j.R0.CARD_CAROUSEL_FIRST_ROW || O === j.R0.CARD_CAROUSEL_SECOND_ROW || O === j.R0.CARD_CAROUSEL_THIRD_ROW,
@@ -189,7 +189,7 @@ let R = {
           offsetYPercentageMin: 20,
           customConfettiCanvas: S,
           dragCoefficientValue: .0166,
-          onAnimationEnd: W
+          onAnimationEnd: Y
         })]
       })
     }) : (0, i.jsx)("div", {

@@ -46,7 +46,7 @@ var i = n(255367),
   H = n(388032),
   z = n(125978);
 
-function Y() {
+function W() {
   return (0, i.jsx)(o.Zbd, {
     className: z.noItemsCard,
     type: o.Zbd.Types.CUSTOM,
@@ -64,7 +64,7 @@ function Y() {
   })
 }
 
-function W() {
+function Y() {
   let e = (0, a.e7)([P.Z], () => P.Z.getForApplication(U.CL));
   return r.useEffect(() => {
     (0, m.yD)(U.CL)
@@ -80,7 +80,7 @@ function W() {
     }), null != e && Z.ZP.hasAccountCredit(e) ? (0, i.jsx)(L.Z, {
       className: z.accountCredit,
       entitlements: e
-    }) : (0, i.jsx)(Y, {})]
+    }) : (0, i.jsx)(W, {})]
   })
 }
 
@@ -108,12 +108,12 @@ let q = function() {
       var e;
       return Object.values(null != (e = A.ZP.getSubscriptions()) ? e : {}).filter(e => e.type === V.NYc.GUILD).filter(e => e.status !== V.O0b.ENDED).length
     }),
-    Y = (0, f.Z)({
+    W = (0, f.Z)({
       forceFetch: !0
     }),
     q = (0, w.W)(),
     X = null !== e ? e.currentPeriodEnd : void 0,
-    Q = !q && (Y.fractionalState !== U.a$.NONE || Y.unactivatedUnits.length > 0);
+    Q = !q && (W.fractionalState !== U.a$.NONE || W.unactivatedUnits.length > 0);
   return (r.useEffect(() => (c.Z.wait(() => {
     (0, g.Y2)(), d.jg(), (0, u.X8)(), d.tZ()
   }), function() {
@@ -144,12 +144,12 @@ let q = function() {
           })
         }), (0, i.jsx)(k.Z, {
           className: z.accountCredit,
-          fractionalPremiumInfo: Y,
+          fractionalPremiumInfo: W,
           activationDate: X
         })]
       }), (0, i.jsx)(v.F, {
         setting: F.s6.SUBSCRIPTIONS_CREDITS,
-        children: (0, i.jsx)(W, {})
+        children: (0, i.jsx)(Y, {})
       }), L > 0 && (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(K, {}), (0, i.jsx)(C.Z, {
           count: L,

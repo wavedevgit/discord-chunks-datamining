@@ -45,8 +45,8 @@ var i = n(255367),
   F = n(349803),
   H = n(179984),
   z = n(706542),
-  Y = n(851001),
-  W = n(304576),
+  W = n(851001),
+  Y = n(304576),
   K = n(409100),
   q = n(391110),
   X = n(71363),
@@ -154,8 +154,8 @@ let ed = e => {
       eF = (0, y.N)(),
       eH = null == eF || null == (t = eF.subscription_trial) ? void 0 : t.sku_id,
       ez = (0, S.Nx)(),
-      eY = (0, D.Vi)(),
-      eW = null != eY && eY,
+      eW = (0, D.Vi)(),
+      eY = null != eW && eW,
       eK = null == (n = (0, I.Z)()) ? void 0 : n.billingSettingsMarketingBanner,
       {
         analyticsLocations: eq
@@ -207,7 +207,7 @@ let ed = e => {
               showIcon: !1,
               subscriptionTier: J.Si.TIER_2,
               className: en.marginTopForButtons,
-              hasActivePromotion: eW,
+              hasActivePromotion: eY,
               textOptions: {
                 textClassName: eO ? en.v2SubButtonText : en.subButtonText
               },
@@ -258,7 +258,7 @@ let ed = e => {
             onChange: e => ev(e),
             threshold: 0,
             active: !0,
-            children: eO ? (0, i.jsx)(W.Z, {
+            children: eO ? (0, i.jsx)(Y.Z, {
               ref: Q,
               subscriptionTier: eB,
               isFullscreen: s || ez,
@@ -273,8 +273,8 @@ let ed = e => {
                 [en.fullscreenHero]: s,
                 [en.settingsHeroNoBackground]: !s && ez,
                 [en.trialMarketingMargin]: ez,
-                [en.settingsHeroBogoHeight]: !s && eY,
-                [en.settingsHeroBogoMarginFullscreen]: s && eY,
+                [en.settingsHeroBogoHeight]: !s && eW,
+                [en.settingsHeroBogoMarginFullscreen]: s && eW,
                 [en.noTopPaddingOverride]: null != ew
               }),
               entrypoint: k,
@@ -366,7 +366,7 @@ let ed = e => {
           onChange: e => {
             eI(e)
           },
-          children: (0, i.jsx)(Y.Z, {
+          children: (0, i.jsx)(W.Z, {
             ref: eh,
             isFooterVisible: eT,
             isDarkMode: e_,
