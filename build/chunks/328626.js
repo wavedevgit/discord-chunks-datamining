@@ -18,8 +18,8 @@ let i = () => {
       t(n ? "shuffle-out" : "sort-out"), setTimeout(() => {
         r(), t(n ? "shuffle-in" : "sort-in"), setTimeout(() => {
           t("finished")
-        }, n ? 150 : 300)
-      }, n ? 350 : 300)
+        }, n ? 200 : 300)
+      }, n ? 250 : 300)
     }, [])
   }
 }

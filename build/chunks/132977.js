@@ -121,7 +121,7 @@ let I = e => {
     buttonShineClassName: h,
     onlyShineOnHover: E
   } = e, b = g(e, ["children", "className", "disabled", "submitting", "pauseAnimation", "shineSize", "shinePaused", "buttonShineClassName", "onlyShineOnHover"]);
-  let y = o.createRef(),
+  let y = o.useRef(null),
     O = (0, u.Z)(y),
     I = !r && !a && !0 !== l && (!E || O);
   return (0, i.jsxs)(c.zxk, m(p({

@@ -46,7 +46,7 @@ function V() {
     inputMode: e
   } = (0, s.cj)([d.Z], () => ({
     inputMode: d.Z.getMode()
-  })), t = (0, s.e7)([u.Z], () => u.Z.getSubsection()), n = r.createRef(), m = r.createRef();
+  })), t = (0, s.e7)([u.Z], () => u.Z.getSubsection()), n = r.useRef(null), m = r.useRef(null);
   r.useEffect(() => {
     var e, i;
     t === Z.GA && (null == n || null == (e = n.current) || e.scrollIntoView(), o.Z.clearSubsection()), t === Z.gP && (null == m || null == (i = m.current) || i.scrollIntoView(), o.Z.clearSubsection())

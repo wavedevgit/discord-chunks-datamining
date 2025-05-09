@@ -51,7 +51,7 @@ function S(e) {
     channelId: S,
     messageId: A,
     roleId: C
-  }), G = r.createRef(), Y = (0, s.Z)(G);
+  }), G = r.useRef(null), Y = (0, s.Z)(G);
   return (0, l.jsx)(a.Gt, {
     value: k,
     children: (0, l.jsx)(u.Mt, {

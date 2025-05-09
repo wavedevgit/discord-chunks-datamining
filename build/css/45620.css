@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 23ed820698b507df
+  Original File Name: 58724bb469b58e42
 **/
 .countDownWrapper_a1b7b8 {
     align-items: center;
@@ -1506,6 +1506,10 @@
         transform: rotate(-6deg)
     }
 
+    60% {
+        transform: rotate(6deg)
+    }
+
     to {
         transform: rotate(0deg)
     }
@@ -1530,11 +1534,11 @@
 }
 
 .full-motion .shuffleIntro__08415 {
-    animation: shuffleIntro__08415 .15s forwards
+    animation: shuffleIntro__08415 .2s forwards
 }
 
 .full-motion .shuffleOutro__08415 {
-    animation: shuffleOutro__08415 .35s forwards;
+    animation: shuffleOutro__08415 .25s forwards;
     background: var(--background-base-lower);
     border: 1px solid var(--border-subtle);
     border-radius: 16px;
@@ -1701,4 +1705,4 @@
     opacity: 0
 }
 
-/*# sourceMappingURL=23ed820698b507df.css.map*/
+/*# sourceMappingURL=58724bb469b58e42.css.map*/

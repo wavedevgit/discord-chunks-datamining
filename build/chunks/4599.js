@@ -71,7 +71,7 @@ function P(e) {
   }, {
     icon: s.owK,
     description: Z.intl.string(R ? Z.t.QxrDY2 : Z.t.W6fjkZ)
-  }], U = (0, h.ZP)(n.id, C ? w : void 0), k = r.createRef();
+  }], U = (0, h.ZP)(n.id, C ? w : void 0), k = r.useRef(null);
   return (0, l.jsx)(a.Gt, {
     value: M,
     children: (0, l.jsx)(f.Mt, {

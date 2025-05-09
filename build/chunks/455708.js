@@ -242,7 +242,7 @@ let C = i.forwardRef((e, t) => {
   } = (0, _.Iu)(e => ({
     expressionPickerQuery: e.searchQuery,
     isSearchSuggestion: e.isSearchSuggestion
-  }), s.X), f = null != u && "" !== u ? u : n, m = (0, h.HI)(), g = i.createRef();
+  }), s.X), f = null != u && "" !== u ? u : n, m = (0, h.HI)(), g = i.useRef(null);
   return i.useLayoutEffect(() => {
     if (d) {
       var e;

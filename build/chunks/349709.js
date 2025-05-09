@@ -65,7 +65,7 @@ function y(e) {
   } = e, S = (0, p.Z)({
     emojiId: y,
     emojiName: N
-  }), k = (0, r.e7)([g.ZP], () => null != l ? g.ZP.getDefaultChannel(l) : null), C = i.createRef(), D = (0, d.Z)(C), P = () => {
+  }), k = (0, r.e7)([g.ZP], () => null != l ? g.ZP.getDefaultChannel(l) : null), C = i.useRef(null), D = (0, d.Z)(C), P = () => {
     w(void 0), O(void 0)
   }, Z = e => (t, l) => {
     let n = (null == t ? void 0 : t.id) == null;

@@ -23,7 +23,7 @@ function S(e) {
   let {
     transitionState: t,
     onClose: r
-  } = e, [S, A] = l.useState(null), [E, N] = l.useState(null), [O, v] = l.useState(!1), w = l.createRef(), T = (0, i.e7)([u.default], () => u.default.getCurrentUser()), h = l.createRef();
+  } = e, [S, A] = l.useState(null), [E, N] = l.useState(null), [O, v] = l.useState(!1), w = l.useRef(null), T = (0, i.e7)([u.default], () => u.default.getCurrentUser()), h = l.useRef(null);
   l.useEffect(() => {
     c.Z.flowStep(b.MK.ANY, b.FF.AGE_GATE), s.default.track(_.rMx.OPEN_MODAL, {
       type: "Claim Age Gate"

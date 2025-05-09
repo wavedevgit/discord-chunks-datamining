@@ -85,7 +85,7 @@ function E(e, t) {
 function w(e) {
   let {
     placeholder: t = g.intl.string(g.t["Rn/sLi"])
-  } = e, n = i.createRef(), s = i.createRef(), [l, o] = i.useReducer(E, v), {
+  } = e, n = i.useRef(null), s = i.useRef(null), [l, o] = i.useReducer(E, v), {
     canSend: x,
     hint: R,
     success: w,

@@ -8,8 +8,8 @@ var o = t(442837),
   r = t(885110),
   a = t(585305),
   d = t(369566),
-  s = t(806729),
-  l = t(29899),
+  l = t(806729),
+  s = t(29899),
   u = t(708108),
   f = t(146078),
   _ = t(228168),
@@ -34,7 +34,7 @@ function m(e) {
   } = (0, d.Z)(n.id), {
     voiceChannel: O,
     voiceActivity: v
-  } = (0, l.Z)({
+  } = (0, s.Z)({
     userId: n.id,
     guildId: m
   }), A = n.id === (null == t ? void 0 : t.id), Z = (0, o.e7)([r.Z, i.Z], () => {
@@ -43,7 +43,7 @@ function m(e) {
   }), N = null != g || h.length > 0, P = x.length > 0, {
     mutualFriendsCount: T,
     mutualGuilds: C
-  } = (0, s.Z)(n), w = null == C ? void 0 : C.length, S = (0, a.Z)(n), E = [{
+  } = (0, l.Z)(n), w = null == C ? void 0 : C.length, S = (0, a.Z)(n), E = [{
     section: _.oh.USER_INFO,
     text: b.intl.string(b.t.jGoPJS)
   }];

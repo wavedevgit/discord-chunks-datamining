@@ -195,7 +195,7 @@ function z(e) {
   let {
     onCancel: t,
     onSave: n
-  } = e, s = (0, l.e7)([I.default], () => I.default.customInviteMessage), o = r.createRef(), [c, u] = r.useState(null != s ? s : A.intl.string(A.t.DwAcMz)), [h, p] = r.useState(c.length), f = e => {
+  } = e, s = (0, l.e7)([I.default], () => I.default.customInviteMessage), o = r.useRef(null), [c, u] = r.useState(null != s ? s : A.intl.string(A.t.DwAcMz)), [h, p] = r.useState(c.length), f = e => {
     e.stopPropagation(), d.Z.setInviteMessage(c), n(e)
   };
   return (0, i.jsxs)("div", {

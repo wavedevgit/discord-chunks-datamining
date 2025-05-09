@@ -9,8 +9,8 @@ var c = t(442837),
   r = t(699516),
   a = t(5192),
   d = t(111361),
-  s = t(648052),
-  l = t(537006),
+  l = t(648052),
+  s = t(537006),
   u = t(681837),
   f = t(91433),
   _ = t(944043),
@@ -57,7 +57,7 @@ function g(e) {
       nicknameIcons: (0, o.jsx)(u.Z, {
         userId: t.id
       }),
-      tags: (0, o.jsx)(s.Z, {
+      tags: (0, o.jsx)(l.Z, {
         displayProfile: v,
         themeType: y.lY.MODAL,
         onClose: P
@@ -84,7 +84,7 @@ function g(e) {
     }, e.applicationId)), (0, o.jsx)(_.Z, {
       user: t,
       className: x.bannerContainer
-    }), S && (0, o.jsx)(l.Z, {
+    }), S && (0, o.jsx)(s.Z, {
       className: x.bannerContainer,
       isPremiumUser: E,
       onInteraction: P

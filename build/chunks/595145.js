@@ -75,7 +75,7 @@ function K(e) {
     channelId: W,
     messageId: X,
     roleId: q
-  }), el = r.createRef(), es = (0, s.Z)(el), ed = (0, C.$m)(), eu = (0, a.q_F)({
+  }), el = r.useRef(null), es = (0, s.Z)(el), ed = (0, C.$m)(), eu = (0, a.q_F)({
     opacity: +(null != ed.interactionType),
     config: {
       duration: 150
