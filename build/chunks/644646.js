@@ -64,11 +64,11 @@ let v = function(e) {
     })
   }) : N.isAnimated ? (0, r.jsx)(E.Fl, {
     id: "QuestRewardTile_rewardTileAnimated",
-    children: e => {
-      var t;
+    children: t => {
+      var n;
       return (0, r.jsx)(d.Z, {
-        ref: t => {
-          e.current = t, P.current = t
+        ref: e => {
+          t.current = e, P.current = e
         },
         autoPlay: !A && v,
         loop: !0,
@@ -76,19 +76,21 @@ let v = function(e) {
         playsInline: !0,
         className: O.questRewardTileAsset,
         controls: !1,
+        onProgress: e.onLoadComplete,
         children: (0, r.jsx)("source", {
           src: N.url,
-          type: null != (t = N.mimetype) ? t : void 0
+          type: null != (n = N.mimetype) ? n : void 0
         })
       })
     }
   }) : (0, r.jsx)(E.Fl, {
     id: "QuestRewardTile_rewardTileStatic",
-    children: e => (0, r.jsx)("img", {
-      ref: e,
+    children: t => (0, r.jsx)("img", {
+      ref: t,
       alt: m.r.build(o.config).defaultReward.messages.name,
       className: a()(O.questRewardTileAsset, O.questRewardTileAssetStatic),
-      src: N.url
+      src: N.url,
+      onLoad: e.onLoadComplete
     })
   }), null == I ? (0, r.jsx)("div", {
     className: a()(O.questRewardTile, n),

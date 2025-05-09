@@ -1,6 +1,6 @@
 /** Chunk was on 17218 **/
 n.d(t, {
-  Z: () => D
+  Z: () => M
 }), n(784620), n(973216);
 var r = n(255367),
   o = n(73800),
@@ -27,13 +27,14 @@ var r = n(255367),
   w = n(78826),
   S = n(670638),
   P = n(341907),
-  E = n(46140),
-  T = n(642145),
-  N = n(981631),
-  A = n(388032),
-  R = n(508936);
+  E = n(251360),
+  T = n(46140),
+  N = n(642145),
+  A = n(981631),
+  R = n(388032),
+  B = n(508936);
 
-function B(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,7 +53,7 @@ function B(e) {
   return e
 }
 
-function k(e, t) {
+function q(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -65,7 +66,7 @@ function k(e, t) {
   }), e
 }
 
-function q(e) {
+function I(e) {
   var t;
   let {
     quest: n,
@@ -93,15 +94,15 @@ function q(e) {
   }, [s, f, g, a]), j = 2 !== x, v = (0, d.q_F)({
     opacity: +!!j,
     height: j ? p : 0,
-    config: T.Y
-  }), _ = 0 === x ? d.P4T : d.d3s, y = (0, m.Lq)(N.Ilk.RED_345), O = 0 === x ? y : l ? d.TVs.colors.TEXT_NORMAL : d.TVs.colors.WHITE;
+    config: N.Y
+  }), _ = 0 === x ? d.P4T : d.d3s, y = (0, m.Lq)(A.Ilk.RED_345), O = 0 === x ? y : l ? d.TVs.colors.TEXT_NORMAL : d.TVs.colors.WHITE;
   return (0, r.jsx)(i.animated.div, {
     style: v,
     children: (0, r.jsxs)("div", {
       ref: c,
-      className: R.hints,
+      className: B.hints,
       children: [(0, r.jsxs)("div", {
-        className: R.hintsContainer,
+        className: B.hintsContainer,
         children: [(0, r.jsx)(_, {
           size: "xs",
           color: O
@@ -119,7 +120,7 @@ function q(e) {
         look: d.iLD.LINK,
         color: d.Ttl.CUSTOM,
         style: {
-          color: (0, m.Lq)(N.Ilk.BLUE_345)
+          color: (0, m.Lq)(A.Ilk.BLUE_345)
         },
         children: "See Details"
       })]
@@ -127,14 +128,16 @@ function q(e) {
   })
 }
 
-function I(e) {
+function D(e) {
   let {
     quest: t,
     isHovering: n
   } = e, s = o.useRef(null), i = o.useRef(n), c = o.useContext(l.S).reducedMotion.enabled, d = o.useMemo(() => (0, _.fh)(t, _.eC.HERO_IMAGE), [t]), u = o.useMemo(() => {
     let e = (0, _.fh)(t, _.eC.HERO);
     return e.isAnimated ? e : (0, y.z)(y.i.QUEST_HOME_VIDEO, t)
-  }, [t]), p = (0, v.h)(t, E.dr.QUEST_HOME_DESKTOP);
+  }, [t]), p = (0, v.h)(t, T.dr.QUEST_HOME_DESKTOP), {
+    onAssetLoadComplete: m
+  } = o.useContext(E.k);
   o.useEffect(() => {
     if (null == u || null == s.current || i.current === n) return;
     n && !c ? s.current.play() : s.current.pause(), i.current = n;
@@ -143,17 +146,18 @@ function I(e) {
       null != e && e.pause()
     }
   }, [n, c, u]);
-  let m = null != u && !p && n;
+  let g = null != u && !p && n;
   return (0, r.jsxs)(r.Fragment, {
     children: [null != d && (0, r.jsx)(w.Fl, {
       id: "QuestTileBanner",
       children: e => (0, r.jsx)("img", {
         ref: e,
         alt: "".concat(t.config.messages.questName),
-        className: a()(R.heroAsset, {
-          [R.hidden]: m
+        className: a()(B.heroAsset, {
+          [B.hidden]: g
         }),
-        src: d.url
+        src: d.url,
+        onLoad: m
       })
     }), null != u && !p && (0, r.jsx)(w.Fl, {
       id: "QuestTileBanner_heroAnimated",
@@ -167,10 +171,11 @@ function I(e) {
           poster: null == d ? void 0 : d.url,
           preload: "none",
           playsInline: !0,
-          className: a()(R.heroAssetVideo, {
-            [R.visible]: m
+          className: a()(B.heroAssetVideo, {
+            [B.visible]: g
           }),
           controls: !1,
+          onLoadedData: m,
           children: (0, r.jsx)("source", {
             src: u.url,
             type: null != (t = u.mimetype) ? t : void 0
@@ -181,7 +186,7 @@ function I(e) {
   })
 }
 
-function D(e) {
+function M(e) {
   var t, n, s, i, l;
   let {
     quest: u,
@@ -191,51 +196,53 @@ function D(e) {
     onCtxMenuClose: _,
     onCtxMenuOpen: y,
     onCtxMenuSelect: C
-  } = e, w = (0, j.q8)(u), E = (0, p.ZP)(), T = ((0, c.wj)(E) ? N.BRd.DARK : N.BRd.LIGHT) === N.BRd.DARK, D = (0, h.tP)(u), M = (null == (t = u.userStatus) ? void 0 : t.claimedAt) != null, L = (0, h.B6)(u.config.expiresAt, {
+  } = e, w = (0, j.q8)(u), T = (0, p.ZP)(), N = ((0, c.wj)(T) ? A.BRd.DARK : A.BRd.LIGHT) === A.BRd.DARK, M = (0, h.tP)(u), L = (null == (t = u.userStatus) ? void 0 : t.claimedAt) != null, Z = (0, h.B6)(u.config.expiresAt, {
     month: "numeric",
     day: "numeric"
-  }), Z = (null == (n = u.userStatus) ? void 0 : n.enrolledAt) != null, W = (null == (s = u.userStatus) ? void 0 : s.completedAt) != null, V = o.useCallback(() => {
-    w && ((0, j.zi)(u) || Z || (0, x.AH)(u.id, {
+  }), W = (null == (n = u.userStatus) ? void 0 : n.enrolledAt) != null, V = (null == (s = u.userStatus) ? void 0 : s.completedAt) != null, {
+    onAssetLoadComplete: Q
+  } = o.useContext(E.k), U = o.useCallback(() => {
+    w && ((0, j.zi)(u) || W || (0, x.AH)(u.id, {
       questContent: b.jn.QUEST_HOME_DESKTOP,
       questContentCTA: g.jZ.ACCEPT_QUEST
     }), (0, P.openVideoQuestModal)(u))
-  }, [w, u, Z]);
+  }, [w, u, W]);
   return (0, r.jsxs)("div", {
-    className: R.container,
+    className: B.container,
     children: [(0, r.jsx)("div", {
-      className: R.heroAssetWrapper,
-      children: (0, r.jsx)(I, {
+      className: B.heroAssetWrapper,
+      children: (0, r.jsx)(D, {
         quest: u,
         isHovering: m
       })
     }), (0, r.jsx)("div", {
-      className: a()(R.overlay, {
-        [R.darkThemeGradient]: T,
-        [R.lightThemeGradient]: !T
+      className: a()(B.overlay, {
+        [B.darkThemeGradient]: N,
+        [B.lightThemeGradient]: !N
       })
     }), (0, r.jsxs)("div", {
-      className: R.positionContentOverBackground,
+      className: B.positionContentOverBackground,
       children: [(0, r.jsxs)("div", {
-        className: R.contents,
+        className: B.contents,
         children: [(0, r.jsxs)("div", {
-          className: R.topRow,
+          className: B.topRow,
           children: [u.preview && (0, r.jsx)("div", {
-            className: R.pill,
+            className: B.pill,
             children: (0, r.jsx)(d.Text, {
               variant: "eyebrow",
               color: "always-white",
-              className: R.eyebrowText,
-              children: A.intl.string(A.t.SKNnqq)
+              className: B.eyebrowText,
+              children: R.intl.string(R.t.SKNnqq)
             })
           }), w && (0, r.jsx)(d.ua7, {
-            text: W ? A.intl.string(A.t.YsCuyM) : Z ? A.intl.string(A.t["74Kqra"]) : (0, j.zi)(u) ? A.intl.string(A.t["I6JG4+"]) : A.intl.string(A.t.umdNio),
-            children: e => (0, r.jsx)(d.P3F, k(B({}, e), {
-              className: R.utilButtonWrapper,
-              "aria-label": A.intl.string(A.t.RscU7O),
-              onClick: V,
+            text: V ? R.intl.string(R.t.YsCuyM) : W ? R.intl.string(R.t["74Kqra"]) : (0, j.zi)(u) ? R.intl.string(R.t["I6JG4+"]) : R.intl.string(R.t.umdNio),
+            children: e => (0, r.jsx)(d.P3F, q(k({}, e), {
+              className: B.utilButtonWrapper,
+              "aria-label": R.intl.string(R.t.RscU7O),
+              onClick: U,
               children: (0, r.jsx)(d.o1U, {
                 color: "currentColor",
-                className: R.utilButtonIcon
+                className: B.utilButtonIcon
               })
             }))
           }), (0, r.jsx)(S.r, {
@@ -247,43 +254,44 @@ function D(e) {
             hideLearnMore: !0,
             shouldShowDisclosure: !0,
             showShareLink: !0,
-            children: e => (0, r.jsx)(d.P3F, k(B({}, e), {
-              className: R.utilButtonWrapper,
-              "aria-label": A.intl.string(A.t.DEoVWV),
+            children: e => (0, r.jsx)(d.P3F, q(k({}, e), {
+              className: B.utilButtonWrapper,
+              "aria-label": R.intl.string(R.t.DEoVWV),
               children: (0, r.jsx)(d.xhG, {
                 size: "md",
                 color: "currentColor",
-                className: R.utilButtonIcon
+                className: B.utilButtonIcon
               })
             }))
           })]
         }), (0, r.jsx)(O.ZP, {
-          className: R.partnerBranding,
-          logotypeClassName: R.partnerLogotypes,
+          className: B.partnerBranding,
+          logotypeClassName: B.partnerLogotypes,
           quest: u,
           separatorSpacing: O.US.MEDIUM,
-          withGameTile: !1
+          withGameTile: !1,
+          onLoadComplete: Q
         }), (0, r.jsxs)("div", {
-          className: R.bottomRow,
+          className: B.bottomRow,
           children: [(0, r.jsx)(d.Text, {
             variant: "text-sm/medium",
-            color: T ? "text-muted" : "always-white",
-            children: A.intl.format(A.t.buEvBw, {
+            color: N ? "text-muted" : "always-white",
+            children: R.intl.format(R.t.buEvBw, {
               brandName: null != (l = null == (i = u.config.cosponsorMetadata) ? void 0 : i.name) ? l : u.config.messages.gamePublisher
             })
-          }), D || M ? null : (0, r.jsx)(d.Text, {
+          }), M || L ? null : (0, r.jsx)(d.Text, {
             variant: "text-sm/medium",
-            color: T ? "text-muted" : "always-white",
-            children: A.intl.format(A.t["7D8r4O"], {
-              expiryDate: L
+            color: N ? "text-muted" : "always-white",
+            children: R.intl.format(R.t["7D8r4O"], {
+              expiryDate: Z
             })
           })]
         })]
-      }), (0, r.jsx)(q, {
+      }), (0, r.jsx)(I, {
         quest: u,
         errorHints: f,
         warningHints: v,
-        isDarkTheme: T
+        isDarkTheme: N
       })]
     })]
   })

@@ -1,6 +1,6 @@
 /** Chunk was on 37447 **/
 n.d(t, {
-  Z: () => B
+  Z: () => L
 }), n(953529);
 var r = n(255367),
   s = n(73800),
@@ -130,22 +130,22 @@ function Z(e) {
     }
   }, b.tooltipText)
 }
-let B = e => {
+let L = e => {
   var t;
   let {
     quest: n,
     location: i,
     size: c,
     isFocused: N,
-    isQuestExpired: B,
-    isExpanded: L,
+    isQuestExpired: L,
+    isExpanded: B,
     isAnimating: U,
     contentPosition: Q
   } = e, W = (0, x._Q)(n), z = (0, x.B6)(null == (t = n.userStatus) ? void 0 : t.completedAt, {
     year: "numeric",
     month: "long",
     day: "numeric"
-  }), F = W >= x.OH.ACCEPTED, G = W >= x.OH.COMPLETED, H = W >= x.OH.CLAIMED, X = (0, j.Xv)(n.config), Y = (0, S.uq)(i), V = i === h.jn.QUESTS_EMBED, K = L || U, J = F && !H && Y, $ = (0, x.t5)(n, w.dr.QUESTS_CARD, i), {
+  }), F = W >= x.OH.ACCEPTED, G = W >= x.OH.COMPLETED, H = W >= x.OH.CLAIMED, X = (0, j.Xv)(n.config), Y = (0, S.uq)(i), V = i === h.jn.QUESTS_EMBED, K = B || U, J = F && !H && Y, $ = (0, x.t5)(n, w.dr.QUESTS_CARD, i), {
     xboxAndPlaystationAccounts: ee
   } = (0, x.z6)(), et = (0, p.O5)(), en = (0, f.j)({
     location: w.dr.QUESTS_BAR_MOBILE
@@ -154,7 +154,7 @@ let B = e => {
     taskDetails: es,
     location: w.dr.QUESTS_CARD,
     questContent: h.jn.QUESTS_EMBED
-  }), eo = (0, a.e7)([g.Z], () => null != g.Z.questEnrollmentBlockedUntil, []), ea = (0, a.e7)([u.default], () => u.default.locale), el = (0, x.z)(n), ec = Y && X, eu = B && !G, ed = ee.length > 0 && Y && (0, j.$J)(n) && F && !G && !el, em = (0, r.jsx)(O.Z, {
+  }), eo = (0, a.e7)([g.Z], () => null != g.Z.questEnrollmentBlockedUntil, []), ea = (0, a.e7)([u.default], () => u.default.locale), el = (0, x.z)(n), ec = Y && X, eu = L && !G, ed = ee.length > 0 && Y && (0, j.$J)(n) && F && !G && !el, em = (0, r.jsx)(O.Z, {
     autoplay: N,
     className: o()(I.gridImg, {
       [I.questRewardGiftInventory]: Y && "lg" === c,
@@ -187,7 +187,7 @@ let B = e => {
         children: e => (0, r.jsxs)("div", M(D({
           className: I.rewardTileWrapper
         }, e), {
-          children: [B && (0, r.jsx)("div", {
+          children: [L && (0, r.jsx)("div", {
             className: I.rewardTileExpired,
             children: (0, r.jsx)(l.P4T, {
               color: l.TVs.colors.WHITE
@@ -203,7 +203,7 @@ let B = e => {
         children: [(0, r.jsx)(l.Text, {
           variant: A(i, c, F),
           className: I.taskInstructions,
-          children: B ? _.intl.formatToPlainString(_.t["ge+AJi"], {
+          children: L ? _.intl.formatToPlainString(_.t["ge+AJi"], {
             questName: n.config.messages.questName
           }) : $
         }), en ? (0, r.jsx)(y.Z, {
@@ -265,7 +265,7 @@ let B = e => {
           }({
             quest: n,
             locale: ea,
-            isQuestExpired: B,
+            isQuestExpired: L,
             sharedQuestFields: er,
             withCopySimplification: en,
             collectibleQuestRewardDescription: ei,
@@ -301,7 +301,7 @@ let B = e => {
             })
           },
           children: _.intl.string(_.t.LLLLPD)
-        }), B && !G ? null : (0, r.jsx)(Z, {
+        }), L && !G ? null : (0, r.jsx)(Z, {
           quest: n,
           progressState: W,
           isCollectibleQuest: X,

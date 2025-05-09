@@ -96,7 +96,7 @@ function E(e) {
       checked: (null == n ? void 0 : n.id) === e.quest.id,
       action: I
     }), [I, e.quest.id, null == n ? void 0 : n.id]),
-    B = e.shouldShowDisclosure && e.quest.id !== C.V6;
+    L = e.shouldShowDisclosure && e.quest.id !== C.V6;
   return (0, r.jsxs)(o.v2r, {
     variant: "fixed",
     onSelect: () => {
@@ -133,7 +133,7 @@ function E(e) {
           })
         },
         icon: o.qDn
-      }), B && (0, r.jsx)(o.sNh, {
+      }), L && (0, r.jsx)(o.sNh, {
         id: "display-disclosure",
         label: T.intl.string(T.t.GcsZKC),
         action: () => {

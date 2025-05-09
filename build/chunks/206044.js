@@ -126,8 +126,8 @@ let M = (0, a.animated)(d.CJ0),
       location: j,
       size: v,
       expansionSpring: Z,
-      isAnimating: B,
-      isExpanded: L,
+      isAnimating: L,
+      isExpanded: B,
       contentPosition: U,
       toggleExpanded: Q
     } = e, {
@@ -148,7 +148,7 @@ let M = (0, a.animated)(d.CJ0),
       e.stopPropagation(), e.currentTarget.blur(), Q(), es({
         questId: h.id,
         questContent: j,
-        questContentCTA: L ? f.jZ.COLLAPSE : f.jZ.EXPAND,
+        questContentCTA: B ? f.jZ.COLLAPSE : f.jZ.EXPAND,
         questContentPosition: U
       })
     };
@@ -195,7 +195,7 @@ let M = (0, a.animated)(d.CJ0),
         })
       }), (0, r.jsxs)("div", {
         className: _.header,
-        "aria-expanded": L,
+        "aria-expanded": B,
         children: [(0, r.jsxs)(a.animated.div, {
           className: o()(_.headerContent, {
             [_.headerContentEmbed]: et
@@ -213,9 +213,9 @@ let M = (0, a.animated)(d.CJ0),
                 range: [0, 1],
                 output: [1, 0]
               }),
-              visibility: B || !L ? "inherit" : "hidden"
+              visibility: L || !B ? "inherit" : "hidden"
             },
-            "aria-hidden": !B && L,
+            "aria-hidden": !L && B,
             children: (0, r.jsxs)(d.kL8, {
               "aria-label": R.intl.string(R.t.dcl9MT),
               onClick: el,
@@ -254,9 +254,9 @@ let M = (0, a.animated)(d.CJ0),
                 range: [0, 1],
                 output: [0, 1]
               }),
-              visibility: B || L ? "inherit" : "hidden"
+              visibility: L || B ? "inherit" : "hidden"
             },
-            "aria-hidden": !B && !L,
+            "aria-hidden": !L && !B,
             children: [(0, r.jsxs)("div", {
               className: _.headerExpandedWrapper,
               children: [(0, r.jsxs)("div", {
@@ -315,9 +315,9 @@ let M = (0, a.animated)(d.CJ0),
             children: e => (0, r.jsx)(a.animated.div, {
               style: {
                 opacity: Z,
-                visibility: B || L ? "inherit" : "hidden"
+                visibility: L || B ? "inherit" : "hidden"
               },
-              "aria-hidden": !B && !L,
+              "aria-hidden": !L && !B,
               children: (0, r.jsx)(d.P3F, D(I({}, e), {
                 className: _.iconWrapper,
                 "aria-label": R.intl.string(R.t.DEoVWV),
@@ -330,7 +330,7 @@ let M = (0, a.animated)(d.CJ0),
           }), !(0, S.W_)(j) && (0, r.jsx)(d.P3F, {
             onClick: el,
             className: _.iconWrapper,
-            "aria-label": L ? R.intl.string(R.t.iTcumZ) : R.intl.string(R.t.dcl9MT),
+            "aria-label": B ? R.intl.string(R.t.iTcumZ) : R.intl.string(R.t.dcl9MT),
             children: (0, r.jsx)(M, {
               style: {
                 rotate: Z.to({
