@@ -79,7 +79,7 @@ function R(e) {
         o = null != e.activities ? e.activities.length : 0;
       return n > r || n === r && i > o ? t : e
     }, t[0]);
-  n.status !== p.Skl.OFFLINE ? (E[e] = n.status, b[e] = n.activities, y[e] = w(Object.values(t).flatMap(e => {
+  n.status !== p.Skl.OFFLINE || n.hiddenActivities.length > 0 ? (E[e] = n.status, b[e] = n.activities, y[e] = w(Object.values(t).flatMap(e => {
     var t;
     return null != (t = e.hiddenActivities) ? t : []
   })), null != n.clientStatus && (O[e] = n.clientStatus)) : s().every(g[e], e => e.status === p.Skl.OFFLINE) && delete g[e]
@@ -96,7 +96,7 @@ function D(e) {
   let t = g[e];
   if (null == t) return;
   let n = s().maxBy(Object.values(t), e => e.processedAtTimestamp);
-  n.status !== p.Skl.OFFLINE && (E[e] = n.status, b[e] = n.activities, y[e] = n.hiddenActivities, null != n.clientStatus && (O[e] = n.clientStatus))
+  (n.status !== p.Skl.OFFLINE || n.hiddenActivities.length > 0) && (E[e] = n.status, b[e] = n.activities, y[e] = n.hiddenActivities, null != n.clientStatus && (O[e] = n.clientStatus))
 }
 
 function L(e) {
@@ -110,12 +110,13 @@ function L(e) {
     processedAtTimestamp: l
   } = e;
   if (n === f.default.getId()) return !1;
-  let c = g[n];
-  if (null == c) {
-    if (r === p.Skl.OFFLINE) return !1;
-    c = g[n] = {}
+  let c = r === p.Skl.OFFLINE && 0 === s.length,
+    u = g[n];
+  if (null == u) {
+    if (c) return !1;
+    u = g[n] = {}
   }
-  if (r === p.Skl.OFFLINE) c[t] = {
+  if (c) u[t] = {
     status: r,
     clientStatus: i,
     activities: m,
@@ -124,8 +125,8 @@ function L(e) {
   };
   else {
     let e = a.length > 1 ? [...a].sort(P) : a,
-      n = c[t];
-    a = null != n && o()(n.activities, e) ? n.activities : e, c[t] = {
+      n = u[t];
+    a = null != n && o()(n.activities, e) ? n.activities : e, u[t] = {
       status: r,
       clientStatus: i,
       activities: a,
@@ -147,12 +148,13 @@ function x(e) {
     processedAtTimestamp: s
   } = e;
   if (n === f.default.getId()) return;
-  let l = g[n];
-  if (null == l) {
-    if (r === p.Skl.OFFLINE) return;
-    l = g[n] = {}
+  let l = r === p.Skl.OFFLINE && 0 === a.length,
+    c = g[n];
+  if (null == c) {
+    if (l) return;
+    c = g[n] = {}
   }
-  if (r === p.Skl.OFFLINE) l[t] = {
+  if (l) c[t] = {
     status: r,
     clientStatus: i,
     activities: m,
@@ -161,7 +163,7 @@ function x(e) {
   };
   else {
     let e = o.length > 1 ? [...o].sort(P) : o;
-    l[t] = {
+    c[t] = {
       status: r,
       clientStatus: i,
       activities: e,
