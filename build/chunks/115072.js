@@ -33,7 +33,7 @@ function S(e) {
   let {
     transitionState: E,
     onClose: k
-  } = e, D = r.useRef(null), T = r.useRef(null), [W, N] = r.useState(""), [A, R] = r.useState(""), [I, L] = r.useState(), [Z, z] = r.useState(""), [J, M] = r.useState([]), [V, q] = r.useState(), [B, G] = r.useState(), [H, X] = r.useState(!1), [U, Y] = r.useState(""), [K, F] = r.useState(function(e) {
+  } = e, D = r.useRef(null), T = r.useRef(null), [W, N] = r.useState(""), [A, R] = r.useState(""), [L, I] = r.useState(), [Z, z] = r.useState(""), [J, M] = r.useState([]), [V, q] = r.useState(), [B, G] = r.useState(), [H, X] = r.useState(!1), [U, Y] = r.useState(""), [K, F] = r.useState(function(e) {
     switch (e) {
       case "windows":
         return "Windows";
@@ -53,9 +53,9 @@ function S(e) {
       },
       rejectWithError: !0
     }).then(e => {
-      if (null != e.body && "11790232c5ff6865a8076d0a686a063095e845a8" !== e.body.hash) {
+      if (null != e.body && "9036bfa2c03d3a7c28a903477eca9cd3adb82710" !== e.body.hash) {
         {
-          let e = new Date("1746812094671"),
+          let e = new Date("1746812695112"),
             t = new Date;
           (0, g.TD)(t, e).hours > 6 && eh(!0)
         }
@@ -79,7 +79,7 @@ function S(e) {
     };
   async function eg() {
     var e, t;
-    if (ed(!1), "" === W || null == I) return void eo(!0);
+    if (ed(!1), "" === W || "" === A || null == L) return void eo(!0);
     let r = null == V || null == (e = V.features) ? void 0 : e.find(e => (0, y.pD)(e) === B);
     ec(!0), eo(!1);
     let l = (0, b.D)(J.map(e => {
@@ -91,7 +91,7 @@ function S(e) {
       a = await (0, y.ZD)({
         name: W,
         description: A,
-        priority: I,
+        priority: L,
         feature: r,
         url: Z,
         buildOverride: null != (t = null == ep ? void 0 : ep.id) ? t : null
@@ -213,6 +213,7 @@ function S(e) {
               onChange: N
             })
           }), (0, i.jsxs)(s.xJW, {
+            error: ea && "" === A ? O.intl.string(O.t.EkokLy) : null,
             title: O.intl.string(O.t["1SplHx"]),
             children: [(0, i.jsx)(s.Kx8, {
               placeholder: "What did you expect to see?",
@@ -223,7 +224,7 @@ function S(e) {
               children: "You can add additional information/media on the ticket after submitting"
             })]
           }), (0, i.jsx)(s.xJW, {
-            error: ea && void 0 === I ? O.intl.string(O.t.EkokLy) : null,
+            error: ea && void 0 === L ? O.intl.string(O.t.EkokLy) : null,
             title: O.intl.string(O.t.xMXLdX),
             children: (0, i.jsx)(s.q4e, {
               renderOptionLabel: e => (function(e) {
@@ -254,13 +255,13 @@ function S(e) {
                   })]
                 })
               })(e),
-              onChange: L,
+              onChange: I,
               options: (0, y.Tj)().map(e => ({
                 priority: e,
                 value: e.value,
                 label: e.title
               })),
-              value: I,
+              value: L,
               maxVisibleItems: 3,
               closeOnSelect: !0
             })
