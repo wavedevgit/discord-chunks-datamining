@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: b9b6bffdd6c539ea
+  Original File Name: 299830c2b7ed290c
 **/
 .countDownWrapper_a1b7b8 {
     align-items: center;
@@ -1424,13 +1424,17 @@
 
 .title__08415 {
     font-size: 36px;
+    gap: 16px;
     line-height: 52px;
     margin-bottom: 10px
 }
 
-.informationIcon__08415 {
+.informationIcon__08415,.title__08415 {
     align-items: center;
-    display: flex;
+    display: flex
+}
+
+.informationIcon__08415 {
     justify-content: center
 }
 
@@ -1704,4 +1708,4 @@
     opacity: 0
 }
 
-/*# sourceMappingURL=b9b6bffdd6c539ea.css.map*/
+/*# sourceMappingURL=299830c2b7ed290c.css.map*/

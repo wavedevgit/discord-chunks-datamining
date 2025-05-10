@@ -51,7 +51,7 @@ function w(e) {
   return e
 }
 
-function A(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -64,13 +64,13 @@ function A(e, t) {
   }), e
 }
 
-function I(e) {
+function A(e) {
   var t, n, o;
   let {
     transitionState: v,
     onClose: C,
     quest: D,
-    autoplay: I,
+    autoplay: A,
     videoSessionId: L,
     impressionRef: R,
     parentModalOpenStartClockTime: M
@@ -137,7 +137,7 @@ function I(e) {
               onTooltipHide: () => {
                 z(!1)
               },
-              children: e => (0, r.jsx)(c.P3F, A(w({
+              children: e => (0, r.jsx)(c.P3F, I(w({
                 className: k.progressCont
               }, e), {
                 children: (0, r.jsx)(S.Z, {
@@ -161,8 +161,9 @@ function I(e) {
             videoSessionId: L,
             parentTransitionState: v,
             onOptimisticProgressUpdate: Q,
-            autoplay: I,
-            performanceClockStartTime: M
+            autoplay: A,
+            performanceClockStartTime: M,
+            onClose: C
           }), (0, r.jsxs)("div", {
             className: k.contentFooter,
             children: [(0, r.jsx)(c.zxk, {
@@ -227,7 +228,7 @@ function L(e) {
     questContent: g.jn.VIDEO_MODAL,
     minViewTimeSeconds: D.zw,
     trackGuildAndChannelMetadata: !0,
-    children: e => (0, r.jsx)(I, A(w({}, i), {
+    children: e => (0, r.jsx)(A, I(w({}, i), {
       parentModalOpenStartClockTime: o,
       impressionRef: e,
       quest: c,

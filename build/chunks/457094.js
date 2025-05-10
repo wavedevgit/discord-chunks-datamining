@@ -114,7 +114,7 @@ var r = n(255367),
   e5 = n(701476),
   e4 = n(186901);
 
-function e2(e, t, n) {
+function e7(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -123,14 +123,14 @@ function e2(e, t, n) {
   }) : e[t] = n, e
 }
 
-function e7(e) {
+function e2(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      e2(e, t, n[t])
+      e7(e, t, n[t])
     })
   }
   return e
@@ -350,7 +350,7 @@ let tl = [{
         } = await Promise.all([n.e("5863"), n.e("95626")]).then(n.bind(n, 751212));
         return t => {
           var n, l;
-          return (0, r.jsx)(e, (n = e7({}, t), l = l = {
+          return (0, r.jsx)(e, (n = e2({}, t), l = l = {
             guildId: i
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
@@ -483,7 +483,7 @@ class ts extends i.PureComponent {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 650233));
-        return t => (0, r.jsx)(e, e7({}, t))
+        return t => (0, r.jsx)(e, e2({}, t))
       })
     }), U.Z.init(), el.Z.initialize(), e_.Z.initialize(), eg.Z.initialize(), k.Z.initialize(), Z.Z.initialize(), x.Z.initialize(), S.Z.initialize(), this.rewriterUnlisten = eE.Z.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = eE.Z.addRouteChangeListener(this.handleHistoryChange)
   }
@@ -627,7 +627,7 @@ class ts extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), e2(this, "historyUnlisten", () => {}), e2(this, "rewriterUnlisten", () => {})
+    super(...e), e7(this, "historyUnlisten", () => {}), e7(this, "rewriterUnlisten", () => {})
   }
 }
 let tc = ts
