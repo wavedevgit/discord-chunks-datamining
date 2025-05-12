@@ -5,8 +5,8 @@ t.d(n, {
 var o = t(255367);
 t(73800);
 var r = t(481060),
-  c = t(906732),
-  i = t(705556),
+  i = t(906732),
+  c = t(705556),
   a = t(30556),
   l = t(664794),
   s = t(522182),
@@ -24,15 +24,15 @@ function p(e) {
     onClose: _
   } = e, {
     newestAnalyticsLocation: y
-  } = (0, c.ZP)(), {
+  } = (0, i.ZP)(), {
     gameFriends: h,
-    hasOutgoingPendingGameFriends: x,
-    hasIncomingPendingGameFriends: g
+    hasOutgoingPendingGameFriends: g,
+    hasIncomingPendingGameFriends: x
   } = (0, u.H)({
     userId: n.id
-  }), j = h.length > 0 || x || g;
+  }), j = h.length > 0 || g || x;
   return m === f.OGo.BLOCKED ? null : n.id === t.id ? (0, o.jsxs)(o.Fragment, {
-    children: [(0, o.jsx)(i.Z, {
+    children: [(0, o.jsx)(c.Z, {
       user: n,
       guildId: p,
       onClose: _
@@ -89,8 +89,8 @@ function p(e) {
       themeColor: "secondary",
       gameFriends: h,
       shouldShowTooltip: !0,
-      hasIncomingPendingGameFriends: g,
-      hasOutgoingPendingGameFriends: x
+      hasIncomingPendingGameFriends: x,
+      hasOutgoingPendingGameFriends: g
     }), (0, o.jsx)(l.Z, {
       type: "icon",
       user: n,

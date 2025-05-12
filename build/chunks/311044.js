@@ -4,8 +4,8 @@ t.d(n, {
 });
 var o = t(255367),
   r = t(73800),
-  c = t(481060),
-  i = t(81897),
+  i = t(481060),
+  c = t(81897),
   a = t(906732),
   l = t(566898),
   s = t(785717),
@@ -25,15 +25,15 @@ function _(e) {
   } = e, {
     analyticsLocations: h
   } = (0, a.ZP)(), {
-    context: x,
-    trackUserProfileAction: g
+    context: g,
+    trackUserProfileAction: x
   } = (0, s.KZ)(), {
     mutualFriends: j,
     mutualFriendsCount: I
-  } = (0, d.Z)(n), v = (0, i.Z)();
+  } = (0, d.Z)(n), O = (0, c.Z)();
   return r.useEffect(() => {
-    (0, u.Z)(n.id, v)
-  }, [n.id, v]), (0, o.jsx)(c.Ttm, {
+    (0, u.Z)(n.id, O)
+  }, [n.id, O]), (0, o.jsx)(i.Ttm, {
     className: b.scroller,
     fade: !0,
     children: null == j ? Array.from({
@@ -47,20 +47,20 @@ function _(e) {
         width: 135,
         opacity: .08
       })]
-    }, n)) : 0 === j.length ? (0, o.jsx)(m.s, {}) : j.map(e => {
+    }, n)) : 0 === j.length ? (0, o.jsx)(m.s_, {}) : j.map(e => {
       let {
         key: n,
         user: r,
-        status: c
+        status: i
       } = e;
       return (0, o.jsx)(p.Z, {
         user: r,
-        status: c,
+        status: i,
         guildId: t,
         channelId: _,
         onSelect: () => {
           var e, n;
-          y(), g({
+          y(), x({
             action: "PRESS_MUTUAL_FRIEND"
           }), (0, f.openUserProfileModal)((e = function(e) {
             for (var n = 1; n < arguments.length; n++) {
@@ -79,7 +79,7 @@ function _(e) {
               })
             }
             return e
-          }({}, x), n = n = {
+          }({}, g), n = n = {
             userId: r.id,
             sourceAnalyticsLocations: h
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {

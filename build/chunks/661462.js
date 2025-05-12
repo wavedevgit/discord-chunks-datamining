@@ -4,8 +4,8 @@ t.d(n, {
 }), t(388685);
 var o = t(255367),
   r = t(73800),
-  c = t(481060),
-  i = t(785717),
+  i = t(481060),
+  c = t(785717),
   a = t(128156),
   l = t(311044),
   s = t(408986),
@@ -17,8 +17,8 @@ function f(e) {
     user: n,
     currentUser: t,
     section: r,
-    subsection: c,
-    displayProfile: i,
+    subsection: i,
+    displayProfile: c,
     guildId: u,
     channelId: f,
     onClose: p
@@ -26,9 +26,10 @@ function f(e) {
   return r === d.oh.ACTIVITY ? (0, o.jsx)(a.Z, {
     user: n,
     currentUser: t,
-    displayProfile: i,
+    displayProfile: c,
     guildId: u,
-    subsection: c,
+    channelId: f,
+    subsection: i,
     onClose: p
   }) : r === d.oh.MUTUAL_FRIENDS ? (0, o.jsx)(l.Z, {
     user: n,
@@ -54,12 +55,12 @@ function p(e) {
     initialSubsection: y,
     onClose: h
   } = e, {
-    trackUserProfileAction: x
-  } = (0, i.KZ)(), [{
-    section: g,
+    trackUserProfileAction: g
+  } = (0, c.KZ)(), [{
+    section: x,
     subsection: j,
     text: I
-  }, v] = r.useState((t = function(e) {
+  }, O] = r.useState((t = function(e) {
     for (var n = 1; n < arguments.length; n++) {
       var t = null != arguments[n] ? arguments[n] : {},
         o = Object.keys(t);
@@ -95,31 +96,31 @@ function p(e) {
   }), t));
   return (0, o.jsxs)("div", {
     className: u.container,
-    children: [(0, o.jsx)(c.njP, {
+    children: [(0, o.jsx)(i.njP, {
       type: "top",
       className: u.tabBar,
-      selectedItem: g,
+      selectedItem: x,
       onItemSelect: e => {
-        x({
+        g({
           action: "PRESS_SECTION",
           section: e
-        }), v(n => {
+        }), O(n => {
           var t;
           return null != (t = b.find(n => n.section === e)) ? t : n
         })
       },
-      children: b.map(e => (0, o.jsx)(c.njP.Item, {
+      children: b.map(e => (0, o.jsx)(i.njP.Item, {
         className: u.tabBarItem,
         id: e.section,
         "aria-label": e.text,
-        children: (0, o.jsx)(c.Text, {
+        children: (0, o.jsx)(i.Text, {
           variant: "heading-md/normal",
           tag: "span",
           children: e.text
         })
       }, e.section))
-    }), (0, o.jsx)(c.njP.Panel, {
-      id: g,
+    }), (0, o.jsx)(i.njP.Panel, {
+      id: x,
       "aria-label": I,
       className: u.tabBarPanel,
       children: (0, o.jsx)(f, {
@@ -128,7 +129,7 @@ function p(e) {
         displayProfile: d,
         guildId: p,
         channelId: m,
-        section: g,
+        section: x,
         subsection: j,
         onClose: h
       })
