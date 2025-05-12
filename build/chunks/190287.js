@@ -27,14 +27,15 @@ let f = e => {
       reasonMaxLength: b,
       placeholder: j,
       position: _
-    } = e, [v, O] = i.useState(!1), C = (0, l.e7)([d.Z], () => d.Z.isGuildMetadataLoaded());
+    } = e, v = i.useRef(null), [O, C] = i.useState(!1), y = (0, l.e7)([d.Z], () => d.Z.isGuildMetadataLoaded());
     return (0, r.jsxs)("div", {
       className: p.reasonContainer,
       children: [(0, r.jsx)(s.yRy, {
+        targetElementRef: v,
         onRequestClose: () => {
-          O(!1)
+          C(!1)
         },
-        shouldShow: v,
+        shouldShow: O,
         position: "right",
         align: "top",
         animation: s.yRy.Animation.NONE,
@@ -52,10 +53,11 @@ let f = e => {
         },
         children: () => (0, r.jsx)("div", {
           className: p.background,
+          ref: v,
           children: (0, r.jsx)(o.Z, {
             active: !1,
             onClick: () => {
-              O(!0)
+              C(!0)
             },
             tabIndex: 0,
             renderButtonContents: null != u ? () => (0, r.jsx)(a.Z, {
@@ -76,7 +78,7 @@ let f = e => {
             g(e)
           },
           defaultDirty: (null == n ? void 0 : n.length) > 0
-        }, "text-input-".concat(_, "-").concat(C)), (null != (t = null == n ? void 0 : n.length) ? t : 0) > 0 || null != u ? (0, r.jsx)(s.zxk, {
+        }, "text-input-".concat(_, "-").concat(y)), (null != (t = null == n ? void 0 : n.length) ? t : 0) > 0 || null != u ? (0, r.jsx)(s.zxk, {
           className: p.clearStatusButton,
           onClick: h,
           look: s.zxk.Looks.BLANK,

@@ -58,10 +58,10 @@ function m(e) {
     editorRef: n,
     options: f,
     channel: p
-  } = e, m = null == (t = n.current) ? void 0 : t.getSlateEditor(), g = i.useCallback((e, t) => {
+  } = e, m = null == (t = n.current) ? void 0 : t.getSlateEditor(), g = i.useRef(null), E = i.useCallback((e, t) => {
     let r = n.current;
     null != e && null != r && r.insertEmoji(e, t, !1), t && (0, l._Q)()
-  }, [n]), E = e => {
+  }, [n]), b = e => {
     let {
       closePopout: t
     } = e;
@@ -70,7 +70,7 @@ function m(e) {
       channel: p,
       closePopout: t,
       onSelectEmoji: (e, n) => {
-        g(e, n), n && t()
+        E(e, n), n && t()
       },
       pickerIntention: u.Hz.COMMUNITY_CONTENT
     })
@@ -87,7 +87,8 @@ function m(e) {
         dividerClassName: d.staticDivider
       })
     }), (0, r.jsx)(o.yRy, {
-      renderPopout: E,
+      targetElementRef: g,
+      renderPopout: b,
       position: "bottom",
       animation: o.yRy.Animation.NONE,
       align: "left",
@@ -96,6 +97,7 @@ function m(e) {
           isShown: n
         } = t;
         return (0, r.jsx)(a.Z, h(_({}, e), {
+          ref: g,
           active: n,
           className: d.emojiButton,
           tabIndex: 0

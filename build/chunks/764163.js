@@ -61,13 +61,13 @@ function C(e) {
     emojiData: n,
     "aria-labelledby": l,
     onSelectEmoji: s
-  } = e, u = (0, a.e7)([p.ZP], () => null != n.id ? p.ZP.getCustomEmojiById(n.id) : void 0), d = (0, a.e7)([h.ZP], () => h.ZP.getDefaultChannel(t)), x = i.useCallback(e => {
+  } = e, u = i.useRef(null), d = (0, a.e7)([p.ZP], () => null != n.id ? p.ZP.getCustomEmojiById(n.id) : void 0), x = (0, a.e7)([h.ZP], () => h.ZP.getDefaultChannel(t)), C = i.useCallback(e => {
     let {
       closePopout: t
     } = e;
     return (0, r.jsx)(g.Z, {
       pickerIntention: b.Hz.GUILD_ROLE_BENEFIT_EMOJI,
-      channel: d,
+      channel: x,
       closePopout: t,
       onNavigateAway: t,
       onSelectEmoji: (e, n) => {
@@ -80,34 +80,36 @@ function C(e) {
         }), n && t()
       }
     })
-  }, [s, d]), C = i.useMemo(() => null == u && null == n.name ? null : function() {
+  }, [s, x]), y = i.useMemo(() => null == d && null == n.name ? null : function() {
     return (0, r.jsx)(c.Z, {
       className: _.emoji,
       emojiId: n.id,
       emojiName: n.name,
-      animated: null == u ? void 0 : u.animated
+      animated: null == d ? void 0 : d.animated
     })
-  }, [n, u]), y = "";
-  return null != u ? y = ":".concat(u.name, ":") : null != n.name && (y = f.ZP.convertSurrogateToName(n.name)), (0, r.jsx)(o.yRy, {
+  }, [n, d]), N = "";
+  return null != d ? N = ":".concat(d.name, ":") : null != n.name && (N = f.ZP.convertSurrogateToName(n.name)), (0, r.jsx)(o.yRy, {
+    targetElementRef: u,
     animation: o.yRy.Animation.NONE,
     position: "top",
-    renderPopout: x,
+    renderPopout: C,
     children: (e, t) => {
       let {
         isShown: n
       } = t;
       return (0, r.jsxs)("div", O(v({
+        ref: u,
         className: _.emojiInputContainer
       }, e), {
         children: [(0, r.jsx)(m.Z, {
           className: _.emojiButton,
           active: n,
           tabIndex: 0,
-          renderButtonContents: C
+          renderButtonContents: y
         }), (0, r.jsx)(o.oil, {
           inputClassName: _.emojiText,
           placeholder: j.intl.string(j.t.qJPLNT),
-          value: y,
+          value: N,
           "aria-labelledby": l,
           readOnly: !0
         })]
