@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => T
+  Z: () => S
 }), n(388685), n(642613);
 var a = n(255367),
   r = n(73800),
@@ -24,7 +24,7 @@ var a = n(255367),
   y = n(388032),
   C = n(459100),
   O = n(616257);
-let E = [{
+let N = [{
     key: "id",
     cellClassName: C.eventColumn,
     render(e) {
@@ -52,7 +52,7 @@ let E = [{
       return t.toLocaleString()
     }
   }],
-  N = [{
+  E = [{
     id: "details",
     name: "Details",
     group: _.v0.NONE,
@@ -132,13 +132,13 @@ let E = [{
     }
   }];
 
-function T() {
+function S() {
   let [e, t] = r.useState(""), n = r.useRef(null), l = (0, u.Wu)([b.Z], () => b.Z.loggedTriggers), s = r.useMemo(() => l.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [l, e]), [c, d] = r.useState(void 0), h = s.find(e => e.key === c), {
     TabBar: p,
     renderSelectedTab: v
   } = (0, _.ZP)({
-    tabs: N
-  }, []), T = (0, u.e7)([b.Z], () => b.Z.trackTriggers), S = r.useCallback(e => {
+    tabs: E
+  }, []), S = (0, u.e7)([b.Z], () => b.Z.trackTriggers), T = r.useCallback(e => {
     x.Z.dispatch({
       type: "SET_TRACK_TRIGGERS",
       enabled: e
@@ -153,8 +153,8 @@ function T() {
         title: "Enables tracking of all triggers",
         className: C.triggersEnable,
         children: (0, a.jsx)(m.rsf, {
-          checked: T,
-          onChange: S,
+          checked: S,
+          onChange: T,
           className: C.__invalid_toolbarSwitch
         })
       }), (0, a.jsx)(m.zxk, {
@@ -178,7 +178,7 @@ function T() {
         placeholder: "Search by experiment id"
       })]
     }), (0, a.jsx)(g.Z, {
-      columns: E,
+      columns: N,
       data: s,
       selectedRowKey: c,
       onClickRow: e => d(e.key)

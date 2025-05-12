@@ -70,7 +70,7 @@ function y(e) {
   let {
     subscription: p,
     onUpdated: y
-  } = e, [C, O] = r.useState(!1), [E, N] = r.useState(!1), [T, S] = r.useState(null), P = e => (null == e && (e = p.status), e in j) ? j[e] : "Unknown status ".concat(e), w = e => {
+  } = e, [C, O] = r.useState(!1), [N, E] = r.useState(!1), [S, T] = r.useState(null), P = e => (null == e && (e = p.status), e in j) ? j[e] : "Unknown status ".concat(e), w = e => {
     let t = new Date(e);
     return u.default.fromTimestamp(t.getTime())
   }, k = async e => {
@@ -120,10 +120,10 @@ function y(e) {
         rejectWithError: !1
       })
     } catch (e) {
-      S(e.body.message)
+      T(e.body.message)
     }
     y()
-  }, R = (null == (t = b.GP[p.planIdFromItems]) ? void 0 : t.premiumType) === b.p9.TIER_0, Z = null == (n = p.metadata) ? void 0 : n.ended_at, L = null != Z ? new Date(Z).toISOString().substring(0, 10) : "";
+  }, R = (null == (t = b.GP[p.planIdFromItems]) ? void 0 : t.premiumType) === b.p9.TIER_0, Z = null == (n = p.metadata) ? void 0 : n.ended_at, A = null != Z ? new Date(Z).toISOString().substring(0, 10) : "";
   return (0, a.jsxs)("div", {
     className: i()(f.card, R ? f.gradientWrapperTier0 : f.gradientWrapperTier2),
     children: [(0, a.jsxs)("div", {
@@ -191,7 +191,7 @@ function y(e) {
       className: v.collapsablePane,
       children: [(0, a.jsxs)(o.P3F, {
         onClick: () => {
-          N(!E)
+          E(!N)
         },
         className: v.collapsablePaneHeader,
         children: [(0, a.jsx)("div", {
@@ -200,9 +200,9 @@ function y(e) {
             children: "Modifications"
           })
         }), (0, a.jsx)(c.Z, {
-          direction: E ? c.Z.Directions.UP : c.Z.Directions.DOWN
+          direction: N ? c.Z.Directions.UP : c.Z.Directions.DOWN
         })]
-      }), E && (0, a.jsxs)(a.Fragment, {
+      }), N && (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(o.hjN, {
           title: "Status",
           tag: o.RB0.H3,
@@ -224,10 +224,10 @@ function y(e) {
             size: o.zxk.Sizes.SMALL,
             onClick: e => I(),
             children: "Renew Subscription"
-          }), null !== T && (0, a.jsx)(o.kzN, {
+          }), null !== S && (0, a.jsx)(o.kzN, {
             className: v.error,
-            onDismiss: () => S(null),
-            children: T
+            onDismiss: () => T(null),
+            children: S
           })]
         }), (0, a.jsxs)(o.hjN, {
           title: "Premium Streak Start Date",
@@ -249,7 +249,7 @@ function y(e) {
           className: v.formSection,
           children: (0, a.jsx)("input", {
             type: "date",
-            value: L,
+            value: A,
             onChange: e => k({
               endedAt: e.target.value
             })

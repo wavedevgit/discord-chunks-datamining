@@ -79,18 +79,18 @@ function g() {
     refreshEntitlementList: y,
     grantFractionalPremium: C,
     deleteFractionalPremium: O,
-    triggerNextEntitlementFulfillment: E,
-    entitlements: N,
-    loading: T
+    triggerNextEntitlementFulfillment: N,
+    entitlements: E,
+    loading: S
   } = (0, m.m)();
   r.useEffect(() => {
     y()
   }, [y]);
-  let S = e => e.filter(e => null != e.endsAt && e.endsAt > new Date && e.type === x.qc2.FRACTIONAL_REDEMPTION),
+  let T = e => e.filter(e => null != e.endsAt && e.endsAt > new Date && e.type === x.qc2.FRACTIONAL_REDEMPTION),
     P = e => e.filter(e => Object.values(s.a).includes(e.skuId) && null == e.startsAt);
   return r.useEffect(() => {
-    f(S(N)), _(P(N))
-  }, [N]), (0, a.jsx)(o.zJl, {
+    f(T(E)), _(P(E))
+  }, [E]), (0, a.jsx)(o.zJl, {
     className: p.panel,
     children: (0, a.jsxs)("div", {
       className: b.panelInner,
@@ -168,21 +168,21 @@ function g() {
           }), (0, a.jsxs)("div", {
             className: h.buttonGroup,
             children: [(0, a.jsx)(o.zxk, {
-              disabled: T,
+              disabled: S,
               size: o.zxk.Sizes.TINY,
               color: o.zxk.Colors.PRIMARY,
               look: o.zxk.Looks.OUTLINED,
-              onClick: () => E(),
+              onClick: () => N(),
               children: "Run fulfillment"
             }), (0, a.jsx)(o.zxk, {
-              disabled: T,
+              disabled: S,
               size: o.zxk.Sizes.TINY,
               color: o.zxk.Colors.RED,
               look: o.zxk.Looks.OUTLINED,
               onClick: () => O(),
               children: "Delete all"
             }), (0, a.jsx)(o.zxk, {
-              disabled: T,
+              disabled: S,
               look: o.zxk.Looks.BLANK,
               size: o.zxk.Sizes.ICON,
               onClick: y,

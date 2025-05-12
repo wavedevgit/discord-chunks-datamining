@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 0684a113e276cbaf
+  Original File Name: f2057769fd332be4
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -1307,6 +1307,17 @@
     margin-bottom: var(--spacing-8)
 }
 
+.krispTesterRow_fc5fb8 {
+    margin-bottom: var(--space-8)
+}
+
+.innerPanel_fc5fb8 {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+    padding: var(--space-16)
+}
+
 .switch__9d40d {
     margin-bottom: 0
 }
@@ -2507,4 +2518,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=0684a113e276cbaf.css.map*/
+/*# sourceMappingURL=f2057769fd332be4.css.map*/

@@ -68,16 +68,16 @@ function _() {
         opacity: e
       })
     }, [s]),
-    E = r.useCallback(e => {
+    N = r.useCallback(e => {
       y(null == l ? void 0 : l.wallpaperId, e.target.value)
     }, [null == l ? void 0 : l.wallpaperId]),
-    N = r.useCallback(e => {
+    E = r.useCallback(e => {
       O(null == l ? void 0 : l.wallpaperId, e.target.value)
     }, [null == l ? void 0 : l.wallpaperId]),
-    T = r.useCallback(e => {
+    S = r.useCallback(e => {
       C(null == l ? void 0 : l.wallpaperId, e.target.value)
     }, [null == l ? void 0 : l.wallpaperId]),
-    S = r.useCallback(() => y(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
+    T = r.useCallback(() => y(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
     P = r.useCallback(() => O(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
     w = r.useCallback(() => C(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
     k = r.useCallback(e => {
@@ -134,7 +134,7 @@ function _() {
         children: [(0, a.jsx)("input", {
           type: "color",
           value: g.primary_color,
-          onChange: E
+          onChange: N
         }, "primaryColor-".concat(g.primary_color)), (0, a.jsx)(d.M0o, {
           color: "currentColor",
           tooltip: b.intl.string(b.t.N86XcH),
@@ -142,7 +142,7 @@ function _() {
             size: "xs",
             color: "currentColor"
           }),
-          onClick: S,
+          onClick: T,
           className: f.removeButton
         })]
       }), (0, a.jsx)(d.ua7, {
@@ -158,7 +158,7 @@ function _() {
         children: [(0, a.jsx)("input", {
           type: "color",
           value: g.secondary_color,
-          onChange: N
+          onChange: E
         }, "secondaryColor-".concat(g.secondary_color)), (0, a.jsx)(d.M0o, {
           color: "currentColor",
           tooltip: b.intl.string(b.t.N86XcH),
@@ -197,7 +197,7 @@ function _() {
         children: [(0, a.jsx)("input", {
           type: "color",
           value: g.link_color,
-          onChange: T
+          onChange: S
         }, "linkColor-".concat(g.link_color)), (0, a.jsx)(d.M0o, {
           color: "currentColor",
           tooltip: b.intl.string(b.t.N86XcH),
