@@ -153,7 +153,7 @@ function el() {
           })
         })]
       }) : null, (0, i.jsx)(z.nT, {
-        featureSet: g && !o ? z.uZ.FRACTIONAL_PREMIUM : z.uZ.DEFAULT
+        featureSet: g ? z.uZ.FRACTIONAL_PREMIUM : z.uZ.DEFAULT
       }), g && !d && (0, B.C)("nitro-settings-hero", e) ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(H.Z, {
           textOptions: {
