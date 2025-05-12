@@ -67,6 +67,7 @@ function W(e) {
     playsInline: !0,
     className: a()(V.bannerAsset, V.orbsBannerAsset),
     onProgress: t,
+    "data-mtctest-ignore": "true",
     controls: !1,
     children: (0, r.jsx)("source", {
       src: F.Z,
