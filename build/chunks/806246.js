@@ -1,4 +1,5 @@
-/** Chunk was on 98350 **/
-var i = n(149765),
-  r = n(981631);
-i.$e(r.Plq.ADMINISTRATOR, r.Plq.BAN_MEMBERS, r.Plq.KICK_MEMBERS, r.Plq.MODERATE_MEMBERS)
+/** Chunk was on web.js **/
+"use strict";
+var r = n(149765),
+  i = n(981631);
+r.$e(i.Plq.ADMINISTRATOR, i.Plq.BAN_MEMBERS, i.Plq.KICK_MEMBERS, i.Plq.MODERATE_MEMBERS)

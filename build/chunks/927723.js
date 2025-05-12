@@ -1,13 +1,18 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  k: () => c
+  V: () => p,
+  k: () => _
 });
 var r = n(255367);
 n(73800);
-var i = n(481060);
+var i = n(481060),
+  o = n(63063),
+  a = n(981631),
+  s = n(388032),
+  l = n(776571);
 
-function o(e, t, n) {
+function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -16,20 +21,20 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 
-function a(e) {
+function u(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      c(e, t, n[t])
     })
   }
   return e
 }
 
-function s(e, t) {
+function d(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -40,13 +45,13 @@ function s(e, t) {
   return n
 }
 
-function l(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : s(Object(t)).forEach(function(n) {
+function f(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function c(e) {
+function _(e) {
   let {
     kind: t
   } = e;
@@ -54,8 +59,27 @@ function c(e) {
     let {
       default: e
     } = await n.e("7285").then(n.bind(n, 951269));
-    return n => (0, r.jsx)(e, l(a({}, n), {
+    return n => (0, r.jsx)(e, f(u({}, n), {
       kind: t
+    }))
+  })
+}
+
+function p() {
+  (0, i.ZDy)(async () => {
+    let {
+      ConfirmModal: e
+    } = await Promise.resolve().then(n.bind(n, 878678));
+    return t => (0, r.jsx)(e, f(u({}, t), {
+      header: s.intl.string(l.default.odgSTk),
+      confirmText: s.intl.string(s.t.BddRzc),
+      confirmButtonColor: i.zxk.Colors.BRAND,
+      children: (0, r.jsx)(i.Text, {
+        variant: "text-md/normal",
+        children: s.intl.format(l.default.EZfHRk, {
+          helpURL: o.Z.getArticleURL(a.BhN.NSFW_AGE_GATING)
+        })
+      })
     }))
   })
 }

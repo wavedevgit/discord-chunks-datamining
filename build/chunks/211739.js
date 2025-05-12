@@ -1,9 +1,9 @@
 /** Chunk was on 98350 **/
 n.d(t, {
-  N5: () => a,
+  N5: () => l,
   c4: () => r,
-  lc: () => u,
-  mJ: () => l
+  lc: () => o,
+  mJ: () => a
 });
 var i = n(570140);
 
@@ -14,21 +14,21 @@ function r(e) {
   })
 }
 
-function l(e) {
+function a(e) {
   i.Z.dispatch({
     type: "CATEGORY_EXPAND",
     id: e
   })
 }
 
-function a(e) {
+function l(e) {
   i.Z.dispatch({
     type: "CATEGORY_COLLAPSE_ALL",
     guildId: e
   })
 }
 
-function u(e) {
+function o(e) {
   i.Z.dispatch({
     type: "CATEGORY_EXPAND_ALL",
     guildId: e

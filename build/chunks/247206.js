@@ -21,6 +21,7 @@ n.d(t, {
   lJ: () => M,
   m8: () => et,
   oh: () => B,
+  rA: () => er,
   tG: () => C,
   vx: () => L,
   xx: () => q,
@@ -410,4 +411,11 @@ function en(e) {
   (0, o.M$)() && p.default.track(b.rMx.EXPLICIT_MEDIA_OBSCURITY_TOGGLE_V2, {
     toggle_direction: t ? "hide" : "show"
   })
+}
+
+function er(e) {
+  if (null != e.attachments) return e.attachments.some(e => null != e.flags && (0, h.yE)(e.flags, b.J0y.CONTAINS_EXPLICIT_MEDIA));
+  if (null != e.embeds) return e.embeds.some(e => null != e.flags && (0, h.yE)(e.flags, b.xPJ.CONTAINS_EXPLICIT_MEDIA));
+  let t = e;
+  return null != t.messageSnapshots && t.messageSnapshots.some(e => null != e.message && er(e.message))
 }

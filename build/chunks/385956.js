@@ -1,16 +1,16 @@
-/** Chunk was on 36084 **/
+/** Chunk was on 98254 **/
 n.d(t, {
-  T: () => u,
-  v: () => o
+  T: () => o,
+  v: () => a
 });
-var r = n(442837),
-  i = n(355298),
+var i = n(442837),
+  r = n(355298),
   l = n(333984);
 
-function o(e) {
-  return (0, r.e7)([i.Z], () => i.Z.isMessageRequest(e), [e])
+function a(e) {
+  return (0, i.e7)([r.Z], () => r.Z.isMessageRequest(e), [e])
 }
 
-function u(e) {
-  return (0, r.e7)([i.Z, l.Z], () => null != e && (i.Z.isMessageRequest(e) || l.Z.isSpam(e)))
+function o(e) {
+  return (0, i.e7)([r.Z, l.Z], () => null != e && (r.Z.isMessageRequest(e) || l.Z.isSpam(e)))
 }
