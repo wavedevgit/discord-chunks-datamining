@@ -55,11 +55,11 @@ function _(e) {
     selected: _
   } = e, {
     hasUnread: y,
-    mentionCount: O
+    mentionCount: v
   } = (0, i.cj)([u.ZP], () => ({
     hasUnread: u.ZP.hasUnread(t.id, p.W.GUILD_EVENT),
     mentionCount: u.ZP.getMentionCount(t.id, p.W.GUILD_EVENT)
-  }), [t.id]), v = (0, i.e7)([d.ZP], () => d.ZP.isMuteScheduledEventsEnabled(t.id));
+  }), [t.id]), O = (0, i.e7)([d.ZP], () => d.ZP.isMuteScheduledEventsEnabled(t.id));
   async function C() {
     await (0, o.ZDy)(async () => {
       let {
@@ -94,11 +94,11 @@ function _(e) {
         }))
       })
     },
-    showUnread: y && !v,
-    trailing: !v && O > 0 ? (0, r.jsx)(o.mAB, {
+    showUnread: y && !O,
+    trailing: !O && v > 0 ? (0, r.jsx)(o.mAB, {
       className: g.numberBadge,
       disableColor: !0,
-      count: O
+      count: v
     }) : null
   })
 }

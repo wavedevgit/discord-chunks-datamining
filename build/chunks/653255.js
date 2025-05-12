@@ -1,22 +1,22 @@
 /** Chunk was on 79887 **/
 "use strict";
 r.d(t, {
-  Z: () => g
+  Z: () => O
 });
-var n, l, o, i = r(442837),
+var n, o, l, i = r(442837),
   u = r(570140),
   a = r(358085),
-  c = r(998502),
-  s = r(869614),
+  s = r(998502),
+  c = r(869614),
   d = r(281083),
   f = r(672598);
 let p = !1,
   b = !0,
   v = !1;
-class O extends(o = i.ZP.Store) {
+class g extends(l = i.ZP.Store) {
   initialize() {
-    !a.isPlatformEmbedded || __OVERLAY__ || c.ZP.getGPUDriverVersions().then(e => {
-      p = (0, f.Z)(e), b = (0, s.Z)(e), v = (0, d.Z)(e), this.emitChange()
+    !a.isPlatformEmbedded || __OVERLAY__ || s.ZP.getGPUDriverVersions().then(e => {
+      p = (0, f.Z)(e), b = (0, c.Z)(e), v = (0, d.Z)(e), this.emitChange()
     })
   }
   get GPUDriversOutdated() {
@@ -36,13 +36,13 @@ class O extends(o = i.ZP.Store) {
     }
   }
 }
-l = "StreamingCapabilitiesStore", (n = "displayName") in O ? Object.defineProperty(O, n, {
-  value: l,
+o = "StreamingCapabilitiesStore", (n = "displayName") in g ? Object.defineProperty(g, n, {
+  value: o,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : O[n] = l;
-let g = new O(u.Z, {
+}) : g[n] = o;
+let O = new g(u.Z, {
   OVERLAY_INITIALIZE: function(e) {
     let {
       streamingCapabilitiesStoreState: t

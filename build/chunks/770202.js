@@ -19,9 +19,9 @@ var r = n(255367),
   b = n(473403),
   _ = n(981631),
   y = n(490897),
-  O = n(915887);
+  v = n(915887);
 
-function v(e, t, n) {
+function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -37,7 +37,7 @@ function C(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      O(e, t, n[t])
     })
   }
   return e
@@ -59,11 +59,11 @@ class j extends m.ZP {
       canReorderChannel: s
     } = this.props, a = (0, r.jsx)("li", {
       className: o()(this.getClassName(), {
-        [O.disabled]: this.isDisabled()
+        [v.disabled]: this.isDisabled()
       }),
       "data-dnd-name": e.name,
       children: (0, r.jsxs)(b.ZP, {
-        className: O.iconVisibility,
+        className: v.iconVisibility,
         channel: e,
         selected: t,
         onClick: this.handleClick,
@@ -80,7 +80,7 @@ class j extends m.ZP {
     return s ? n(i(a)) : a
   }
   constructor(...e) {
-    super(...e), v(this, "handleContextMenu", e => {
+    super(...e), O(this, "handleContextMenu", e => {
       let {
         channel: t
       } = this.props, i = f.Z.getGuild(t.getGuildId());
@@ -105,7 +105,7 @@ class j extends m.ZP {
           }), l))
         }
       })
-    }), v(this, "handleClick", e => {
+    }), O(this, "handleClick", e => {
       let t = e.getGuildId();
       if (null == t) throw Error("TextChannel, transitionTo: Channel does not have a guildId");
       (0, h.uL)(_.Z5c.CHANNEL(t, e.id), {

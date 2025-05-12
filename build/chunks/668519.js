@@ -5,15 +5,18 @@ r.d(t, {
   s: () => u
 });
 var n = r(818083),
-  l = r(984134);
-let o = (0, n.B)({
+  o = r(984134);
+let l = (0, n.B)({
   kind: "user",
   id: "2025-01_go_live_modal_refresh",
   label: "Go Live Modal Refresh",
   defaultConfig: {
     showRefreshedGoLiveModal: !1,
     twoClickVariant: !1,
-    skipModalForGame: !1
+    skipModalForGame: !1,
+    twoStepModal: !1,
+    showSDHDUpsell: !1,
+    footerSlideIn: !1
   },
   treatments: [{
     id: 1,
@@ -21,7 +24,10 @@ let o = (0, n.B)({
     config: {
       showRefreshedGoLiveModal: !0,
       twoClickVariant: !1,
-      skipModalForGame: !0
+      skipModalForGame: !1,
+      twoStepModal: !1,
+      showSDHDUpsell: !0,
+      footerSlideIn: !1
     }
   }, {
     id: 2,
@@ -29,7 +35,10 @@ let o = (0, n.B)({
     config: {
       showRefreshedGoLiveModal: !0,
       twoClickVariant: !0,
-      skipModalForGame: !0
+      skipModalForGame: !1,
+      twoStepModal: !1,
+      showSDHDUpsell: !0,
+      footerSlideIn: !0
     }
   }, {
     id: 3,
@@ -37,7 +46,21 @@ let o = (0, n.B)({
     config: {
       showRefreshedGoLiveModal: !0,
       twoClickVariant: !0,
-      skipModalForGame: !1
+      skipModalForGame: !1,
+      twoStepModal: !1,
+      showSDHDUpsell: !0,
+      footerSlideIn: !0
+    }
+  }, {
+    id: 4,
+    label: "Show refreshed go live modal, 2 click variant, dont skip modal for game, use two step modal",
+    config: {
+      showRefreshedGoLiveModal: !0,
+      twoClickVariant: !1,
+      skipModalForGame: !1,
+      twoStepModal: !0,
+      showSDHDUpsell: !1,
+      footerSlideIn: !1
     }
   }]
 });
@@ -48,12 +71,12 @@ function i(e) {
     autoTrackExposure: r = !0
   } = e, {
     isInHoldout: n
-  } = l.h.useExperiment({
+  } = o.h.useExperiment({
     location: t
   }, {
     autoTrackExposure: r
   });
-  return o.useExperiment({
+  return l.useExperiment({
     location: t
   }, {
     disable: n,
@@ -62,9 +85,9 @@ function i(e) {
 }
 
 function u(e) {
-  l.h.getCurrentConfig({
+  o.h.getCurrentConfig({
     location: e
-  }).isInHoldout || o.trackExposure({
+  }).isInHoldout || l.trackExposure({
     location: e
   })
 }

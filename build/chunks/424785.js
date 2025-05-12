@@ -20,8 +20,8 @@ var i = n(120356),
   b = n(378844),
   _ = n(359110),
   y = n(922482),
-  O = n(431328),
-  v = n(501655),
+  v = n(431328),
+  O = n(501655),
   C = n(427679),
   S = n(368442),
   j = n(201469),
@@ -142,9 +142,9 @@ class W extends R.ZP {
       unread: b,
       resolvedUnreadSetting: _,
       mentionCount: y,
-      isFavoriteSuggestion: O
+      isFavoriteSuggestion: v
     } = this.props, {
-      shouldShowGuildVerificationPopout: v
+      shouldShowGuildVerificationPopout: O
     } = this.state, C = this.getVoiceStatesCount(), S = (0, r.jsxs)("li", {
       className: l()(this.getModeClass(), {
         [B.disabled]: this.isDisabled()
@@ -155,7 +155,7 @@ class W extends R.ZP {
         renderPopout: this.renderPopout,
         spacing: 0,
         onRequestClose: this.closeGuildVerificationPopout,
-        shouldShow: v,
+        shouldShow: O,
         children: () => (0, r.jsx)(s.ua7, {
           text: this.getTooltipText(),
           children: o => {
@@ -183,7 +183,7 @@ class W extends R.ZP {
                 [V.iconLive]: null != f
               }),
               channel: e,
-              selected: !O && t,
+              selected: !v && t,
               connected: n,
               unread: n ? b : void 0,
               resolvedUnreadSetting: _,
@@ -197,7 +197,7 @@ class W extends R.ZP {
               },
               connectDragPreview: u,
               subtitle: this.renderSubtitle(),
-              isFavoriteSuggestion: O,
+              isFavoriteSuggestion: v,
               "aria-label": (0, h.ZP)({
                 channel: e,
                 unread: b,
@@ -207,7 +207,7 @@ class W extends R.ZP {
                 needSubscriptionToAccess: m
               })
             }, c), {
-              children: [O && this.renderAcceptSuggestionButton(), O && this.renderRemoveSuggestionButton(), !O && this.renderOpenChatButton(), !O && this.renderInviteButton(), !O && this.renderEditButton(), !O && this.renderChannelInfo()]
+              children: [v && this.renderAcceptSuggestionButton(), v && this.renderRemoveSuggestionButton(), !v && this.renderOpenChatButton(), !v && this.renderInviteButton(), !v && this.renderEditButton(), !v && this.renderChannelInfo()]
             }))
           }
         })
@@ -334,7 +334,7 @@ function K(e) {
       bypassLimit: w.Z.can(M.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), h = (0, o.e7)([E.Z], () => E.Z.isCollapsed(n.parent_id)), p = (0, j.ZP)(n.id), f = (0, o.e7)([C.Z], () => C.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, O.Rk)(n.id, v.pV.AUDIENCE), {
+  }), h = (0, o.e7)([E.Z], () => E.Z.isCollapsed(n.parent_id)), p = (0, j.ZP)(n.id), f = (0, o.e7)([C.Z], () => C.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, v.Rk)(n.id, O.pV.AUDIENCE), {
     isSubscriptionGated: b,
     needSubscriptionToAccess: _
   } = (0, m.Z)(n.id), y = (0, o.e7)([Z.ZP], () => Z.ZP.isFavorite(t.id, n.id)), P = (0, S.xJ)(n.id), T = (0, D.Z)({

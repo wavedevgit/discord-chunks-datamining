@@ -21,7 +21,7 @@ let b = i.memo(function(e) {
   let {
     guildNode: b,
     lowerBadge: _
-  } = e, y = b.id, O = (0, l.e7)([h.Z], () => h.Z.getGuild(y)), v = (0, s.E)(O), C = (0, l.e7)([p.Z], () => p.Z.isFocused()), S = (0, l.e7)([u.Z], () => u.Z.isUnavailable(y)), j = (0, c.Z)(e => e.guildId), E = (0, f.Z)(y), {
+  } = e, y = b.id, v = (0, l.e7)([h.Z], () => h.Z.getGuild(y)), O = (0, s.E)(v), C = (0, l.e7)([p.Z], () => p.Z.isFocused()), S = (0, l.e7)([u.Z], () => u.Z.isUnavailable(y)), j = (0, c.Z)(e => e.guildId), E = (0, f.Z)(y), {
     badge: x,
     unread: P,
     isMentionLowImportance: I
@@ -29,7 +29,7 @@ let b = i.memo(function(e) {
     badge: d.default.getMentionCount(y),
     isMentionLowImportance: d.default.getIsMentionLowImportance(y),
     unread: d.default.hasUnread(y)
-  })), w = (0, a.Ij)(O) && 0 === x, N = i.useMemo(() => null != _ ? _ : w ? (0, r.jsx)("div", {
+  })), w = (0, a.Ij)(v) && 0 === x, N = i.useMemo(() => null != _ ? _ : w ? (0, r.jsx)("div", {
     className: m.pauseBackground,
     children: (0, r.jsx)(o.fpf, {
       size: "custom",
@@ -57,7 +57,7 @@ let b = i.memo(function(e) {
     }
     return e
   }({}, e), n = n = {
-    guild: O,
+    guild: v,
     unavailable: S,
     animatable: C,
     selected: j === y,
@@ -66,7 +66,7 @@ let b = i.memo(function(e) {
     lowerBadge: N,
     unread: P,
     mediaState: E,
-    guildJoinRequestStatus: v
+    guildJoinRequestStatus: O
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

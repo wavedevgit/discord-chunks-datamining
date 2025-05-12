@@ -19,9 +19,9 @@ var r = n(255367),
   b = n(823379),
   _ = n(51144),
   y = n(291798);
-let O = d.u.SIZE_24;
+let v = d.u.SIZE_24;
 
-function v(e) {
+function O(e) {
   var t, n;
   let {
     activity: l,
@@ -186,7 +186,7 @@ function x(e) {
     className: y.flexColumn,
     children: [(0, r.jsxs)("div", {
       className: y.flexRow,
-      children: [(0, r.jsx)(v, {
+      children: [(0, r.jsx)(O, {
         activity: t,
         user: l,
         embeddedApp: n,
@@ -207,7 +207,7 @@ function x(e) {
           className: y.usersSummary,
           guildId: o.guild_id,
           users: x,
-          size: O,
+          size: v,
           max: 7,
           renderUser: e => {
             var t;
@@ -218,7 +218,7 @@ function x(e) {
               text: i,
               position: "bottom",
               children: (0, r.jsx)("img", {
-                src: e.getAvatarURL(o.guild_id, O),
+                src: e.getAvatarURL(o.guild_id, v),
                 alt: i,
                 className: y.avatar
               }, e.id)
