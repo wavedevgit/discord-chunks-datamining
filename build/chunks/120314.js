@@ -6,7 +6,7 @@ t.a(e, async function(e, r) {
     });
     var l = t(255367);
     t(73800);
-    var i = t(946884),
+    var i = t(545578),
       u = t(222082),
       c = t(63681),
       o = t(743965),
@@ -16,8 +16,8 @@ t.a(e, async function(e, r) {
       f = t(733653),
       _ = t(249597),
       g = t(312539),
-      b = t(325980),
-      h = t(472433),
+      h = t(325980),
+      b = t(472433),
       m = e([i]);
     i = (m.then ? (await m)() : m)[0];
     let p = {
@@ -30,7 +30,7 @@ t.a(e, async function(e, r) {
       listItem: _.H,
       code: c.E,
       code_block: o.d,
-      quote: b.p,
+      quote: h.p,
       bold: d.d8,
       italic: d.Tx,
       underline: d.v6,
@@ -38,7 +38,7 @@ t.a(e, async function(e, r) {
       mention: g.p,
       heading: s.X,
       small: s.x,
-      spoiler: h.o
+      spoiler: b.o
     };
 
     function y(e) {
