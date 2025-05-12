@@ -1,10 +1,10 @@
 /** Chunk was on 5639 **/
-n.d(i, {
+e.d(i, {
   Z: () => f
-}), n(388685);
-var e, o, a, l = n(442837),
-  r = n(570140),
-  s = n(890022);
+}), e(388685);
+var n, o, a, l = e(442837),
+  r = e(570140),
+  s = e(890022);
 let c = new Set;
 
 function u(t) {
@@ -13,7 +13,7 @@ function u(t) {
   } = t;
   (0, s.uw)("RecentUserActivityStore") && null != i && (c = new Set(i.map(t => t.application_id)))
 }
-class d extends(e = l.ZP.Store) {
+class d extends(n = l.ZP.Store) {
   get currentUserApplicationIds() {
     return c
   }

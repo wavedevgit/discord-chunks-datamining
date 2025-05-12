@@ -1,8 +1,8 @@
 /** Chunk was on 5639 **/
-n.d(i, {
-  Z: () => e
+e.d(i, {
+  Z: () => n
 });
-let e = (0, n(818083).B)({
+let n = (0, e(818083).B)({
   kind: "user",
   id: "2024-08_reaction_push_notifications_user",
   label: "In App Notifications for Reactions",
