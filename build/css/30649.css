@@ -1,0 +1,38 @@
+/**
+  Module ID: 30649
+  Original File Name: f68c12de8e62ce35
+**/
+.otherOptions__821a1 {
+    margin-top: 16px
+}
+
+.linksContainer__821a1 {
+    background-color: var(--bg-mod-faint);
+    border-radius: var(--radius-sm);
+    margin-top: 4px;
+    overflow: hidden
+}
+
+.link__821a1 {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 16px
+}
+
+.link__821a1:hover {
+    background-color: var(--background-accent)
+}
+
+.linkDivider__821a1 {
+    margin: 0 16px;
+    width: auto
+}
+
+.footer__821a1 {
+    gap: 16px;
+    justify-content: flex-start
+}
+
+/*# sourceMappingURL=f68c12de8e62ce35.css.map*/
