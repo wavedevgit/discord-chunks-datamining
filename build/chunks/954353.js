@@ -1,4 +1,4 @@
-/** Chunk was on 11186 **/
+/** Chunk was on 36087 **/
 e.exports = {
   rewardsDisclosures: "rewardsDisclosures__311b6",
   rewardsDisclosuresStack: "rewardsDisclosuresStack__311b6",

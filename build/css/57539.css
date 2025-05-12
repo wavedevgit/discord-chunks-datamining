@@ -1,7 +1,48 @@
 /**
   Module ID: 57539
-  Original File Name: e6f25689a0bccd69
+  Original File Name: 3f2b925d3877d894
 **/
+.toast__1562f {
+    gap: var(--spacing-8)
+}
+
+.header_d93468 {
+    margin: var(--spacing-16) 0
+}
+
+.subheader_d93468 {
+    margin-top: var(--spacing-16)
+}
+
+.closeButton_d93468 {
+    position: absolute;
+    right: 0;
+    top: var(--spacing-12)
+}
+
+.button_d93468:not(:first-child) {
+    margin-right: var(--spacing-16)
+}
+
+.image_d93468 {
+    border-radius: var(--radius-xs)
+}
+
+.image_d93468,.video_d93468 {
+    width: 100%
+}
+
+.media_d93468,.mediaContainer_d93468 {
+    border-radius: var(--radius-xs)
+}
+
+.mediaContainer_d93468 {
+    background-color: var(--background-secondary);
+    margin-bottom: var(--spacing-16);
+    margin-top: var(--spacing-12);
+    padding: var(--spacing-16)
+}
+
 .container__8a1ae {
     align-items: center;
     display: flex;
@@ -25,4 +66,4 @@
     margin-bottom: var(--spacing-8)
 }
 
-/*# sourceMappingURL=e6f25689a0bccd69.css.map*/
+/*# sourceMappingURL=3f2b925d3877d894.css.map*/

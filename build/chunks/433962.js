@@ -1,4 +1,4 @@
-/** Chunk was on 2900 **/
+/** Chunk was on 36087 **/
 e.exports = {
   embedHorizontal: "embedHorizontal_a8b53f",
   embedVertical: "embedVertical_a8b53f",

@@ -1,4 +1,4 @@
-/** Chunk was on 11186 **/
+/** Chunk was on 36087 **/
 e.exports = {
   questsCard: "questsCard__72a00"
 }
