@@ -26,11 +26,11 @@ function p(e) {
     newestAnalyticsLocation: y
   } = (0, c.ZP)(), {
     gameFriends: h,
-    hasOutgoingPendingGameFriends: j,
-    hasIncomingPendingGameFriends: x
+    hasOutgoingPendingGameFriends: x,
+    hasIncomingPendingGameFriends: g
   } = (0, u.H)({
     userId: n.id
-  }), g = h.length > 0 || j || x;
+  }), j = h.length > 0 || x || g;
   return m === f.OGo.BLOCKED ? null : n.id === t.id ? (0, o.jsxs)(o.Fragment, {
     children: [(0, o.jsx)(i.Z, {
       user: n,
@@ -76,7 +76,7 @@ function p(e) {
       guildId: p,
       themeColor: "secondary"
     })]
-  }) : m === f.OGo.NONE && g ? (0, o.jsxs)(o.Fragment, {
+  }) : m === f.OGo.NONE && j ? (0, o.jsxs)(o.Fragment, {
     children: [(0, o.jsx)(a.Z, {
       type: "text",
       userId: n.id,
@@ -89,8 +89,8 @@ function p(e) {
       themeColor: "secondary",
       gameFriends: h,
       shouldShowTooltip: !0,
-      hasIncomingPendingGameFriends: x,
-      hasOutgoingPendingGameFriends: j
+      hasIncomingPendingGameFriends: g,
+      hasOutgoingPendingGameFriends: x
     }), (0, o.jsx)(l.Z, {
       type: "icon",
       user: n,

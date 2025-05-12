@@ -13,7 +13,7 @@ var o = t(255367),
   u = t(857302),
   f = t(892001),
   p = t(252417),
-  m = t(388032),
+  m = t(264481),
   b = t(274151);
 
 function _(e) {
@@ -25,10 +25,10 @@ function _(e) {
   } = e, {
     analyticsLocations: h
   } = (0, a.ZP)(), {
-    context: j,
-    trackUserProfileAction: x
+    context: x,
+    trackUserProfileAction: g
   } = (0, s.KZ)(), {
-    mutualFriends: g,
+    mutualFriends: j,
     mutualFriendsCount: I
   } = (0, d.Z)(n), v = (0, i.Z)();
   return r.useEffect(() => {
@@ -36,7 +36,7 @@ function _(e) {
   }, [n.id, v]), (0, o.jsx)(c.Ttm, {
     className: b.scroller,
     fade: !0,
-    children: null == g ? Array.from({
+    children: null == j ? Array.from({
       length: null != I ? I : 10
     }).map((e, n) => (0, o.jsxs)("div", {
       className: b.loadingItem,
@@ -47,16 +47,7 @@ function _(e) {
         width: 135,
         opacity: .08
       })]
-    }, n)) : 0 === g.length ? (0, o.jsxs)("div", {
-      className: b.empty,
-      children: [(0, o.jsx)("div", {
-        className: b.emptyImage
-      }), (0, o.jsx)(c.Text, {
-        variant: "text-sm/normal",
-        color: "header-primary",
-        children: m.intl.string(m.t["ru+2j4"])
-      })]
-    }) : g.map(e => {
+    }, n)) : 0 === j.length ? (0, o.jsx)(m.s, {}) : j.map(e => {
       let {
         key: n,
         user: r,
@@ -69,7 +60,7 @@ function _(e) {
         channelId: _,
         onSelect: () => {
           var e, n;
-          y(), x({
+          y(), g({
             action: "PRESS_MUTUAL_FRIEND"
           }), (0, f.openUserProfileModal)((e = function(e) {
             for (var n = 1; n < arguments.length; n++) {
@@ -88,7 +79,7 @@ function _(e) {
               })
             }
             return e
-          }({}, j), n = n = {
+          }({}, x), n = n = {
             userId: r.id,
             sourceAnalyticsLocations: h
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {

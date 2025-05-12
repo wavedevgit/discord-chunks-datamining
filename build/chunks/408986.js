@@ -11,7 +11,7 @@ var r = t(481060),
   l = t(785717),
   s = t(806729),
   d = t(821179),
-  u = t(388032),
+  u = t(264481),
   f = t(274151);
 
 function p(e) {
@@ -53,15 +53,6 @@ function p(e) {
           }), (0, a.X)(r.id), t(), (0, c.xf)()
         }
       }, r.id)
-    }) : (0, o.jsxs)("div", {
-      className: f.empty,
-      children: [(0, o.jsx)("div", {
-        className: f.emptyImage
-      }), (0, o.jsx)(r.Text, {
-        variant: "text-sm/normal",
-        color: "header-primary",
-        children: u.intl.string(u.t.x5y3DA)
-      })]
-    })
+    }) : (0, o.jsx)(u.b, {})
   })
 }
