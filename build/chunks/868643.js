@@ -25,10 +25,13 @@ function p(e) {
 
 function m(e) {
   let t = (0, r.e7)([c.Z, o.Z, i.Z], () => {
-    var t, n;
+    var t, n, a;
     if (null == e) return !0;
-    let a = null == (t = i.Z.getChannel(e.channel_id)) ? void 0 : t.guild_id;
-    return !!(null != a && (null == (n = c.Z.getGuild(a)) ? void 0 : n.hasFeature(s.oNc.FORWARDING_DISABLED))) || null != a && o.Z.isChannelOrThreadParentGated(a, e.channel_id)
+    let r = null == (t = i.Z.getChannel(e.channel_id)) ? void 0 : t.guild_id;
+    if (null != r && (null == (n = c.Z.getGuild(r)) ? void 0 : n.hasFeature(s.oNc.FORWARDING_DISABLED))) return !0;
+    let l = null != r && o.Z.isChannelOrThreadParentGated(r, e.channel_id),
+      u = null != e && (null == (a = i.Z.getChannel(e.channel_id)) ? void 0 : a.isModeratorReportChannel());
+    return l || u
   });
   return a.useMemo(() => !t && null != e && d(e), [t, e])
 }

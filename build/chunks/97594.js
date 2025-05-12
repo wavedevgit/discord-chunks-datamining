@@ -27,8 +27,8 @@ function h(e) {
     startingIndex: o,
     shouldRedactExplicitContent: h,
     shouldHideMediaOptions: S = !1,
-    transitionState: E
-  } = e, C = function(e, t) {
+    transitionState: C
+  } = e, E = function(e, t) {
     if (null == e) return {};
     var n, a, r = function(e, t) {
       if (null == e) return {};
@@ -50,7 +50,7 @@ function h(e) {
     }
   }, [t]), r.useEffect(() => {
     var e, t;
-    E === l.Dvm.ENTERED && (u.Z.disable(), u.Z.enableTemp(s.P)), E === l.Dvm.HIDDEN && (u.Z.disable(), u.Z.enableTemp(s.v));
+    C === l.Dvm.ENTERED && (u.Z.disable(), u.Z.enableTemp(s.P)), C === l.Dvm.HIDDEN && (u.Z.disable(), u.Z.enableTemp(s.v));
     let n = () => {
         u.Z.disable(), u.Z.enableTemp(s.P)
       },
@@ -61,15 +61,15 @@ function h(e) {
     return null == r || r.addEventListener("focus", n), null == r || r.addEventListener("blur", a), () => {
       null == r || r.removeEventListener("focus", n), null == r || r.removeEventListener("blur", a), u.Z.disableTemp()
     }
-  }, [E]);
+  }, [C]);
   let I = r.useCallback(e => {
       T(e), (0, m.yg)(m.uG.SELECTED_ITEM_CHANGE)
     }, []),
     D = r.useMemo(() => ({
       zoomed: j,
       setZoomed: P,
-      entering: E === l.Dvm.ENTERING || null == E
-    }), [j, E]),
+      entering: C === l.Dvm.ENTERING || null == C
+    }), [j, C]),
     A = n[v];
   return (0, a.jsx)(l.f6W, {
     theme: M ? y.BRd.MIDNIGHT : y.BRd.DARK,
@@ -95,8 +95,8 @@ function h(e) {
       }({
         hideShadow: !0,
         className: i()(O.carouselModal, e),
-        transitionState: E
-      }, C), o = o = {
+        transitionState: C
+      }, E), o = o = {
         size: l.CgR.DYNAMIC,
         animation: c.fM.SUBTLE,
         fullscreenOnMobile: !1,
