@@ -3,7 +3,7 @@ n.d(e, {
   FI: () => F,
   LL: () => k,
   N_: () => V,
-  Xi: () => z,
+  Xi: () => Y,
   eF: () => w
 }), n(997841), n(953529), n(415506);
 var i = n(252258),
@@ -134,7 +134,7 @@ function W(t, e, n, i) {
   }
 }
 
-function z(t, e, n) {
+function Y(t, e, n) {
   let i, l = D.ZP.getName(t.getGuildId(), t.id, n),
     u = l;
   switch (t.type) {

@@ -42,16 +42,16 @@ var i, l = n(392711),
   F = n(488131),
   H = n(695346),
   W = n(592125),
-  z = n(430824),
-  Y = n(375954),
-  x = n(292959),
+  Y = n(430824),
+  x = n(375954),
+  z = n(292959),
   q = n(496675),
   X = n(699516),
   B = n(944486),
   J = n(885110),
-  K = n(246946),
-  $ = n(594174),
-  j = n(979651),
+  j = n(246946),
+  K = n(594174),
+  $ = n(979651),
   Q = n(5192),
   tt = n(912101),
   te = n(358085),
@@ -110,28 +110,33 @@ async function tS(t) {
   }), await S.ZP.fetchApplications([...n], !1)), i.forEach(t => {
     let {
       activities: n,
-      user: i
+      user: i,
+      guildId: a
     } = t;
     if (0 === n.length || X.Z.isIgnored(i.id)) return !1;
-    ! function(t, e, n) {
-      var i, a;
-      if (0 === t.length && null == t_[e]) return;
-      let r = (0, l.difference)(t, [...null != (i = t_[e]) ? i : []]).filter(t => null != t);
-      (0, l.difference)([...null != (a = t_[e]) ? a : []], t).filter(t => null != t).forEach(t => t_[e].delete(t)), r.length > 0 && null == t_[e] && (t_[e] = new Set), r.forEach(t => {
-        if (t_[e].add(t), n) {
-          var i, l;
+    ! function(t, e, n, i) {
+      let a = tI(e);
+      if (0 === t.length && 0 === a.length) return;
+      let r = (0, l.difference)(t, a).filter(t => null != t && null == t_[e][t]);
+      (0, l.difference)(a, t).filter(t => null != t && t_[e][t] === i).forEach(t => {
+        delete t_[e][t]
+      }), r.forEach(t => {
+        if (null == t_[e] ? t_[e] = {
+            [t]: i
+          } : null == t_[e][t] && (t_[e][t] = i), n) {
+          var l, a;
           let n = p.Z.getApplication(t);
-          null != n && (i = n, l = e, (0, _.PR)(l).then(t => {
+          null != n && (l = n, a = e, (0, _.PR)(a).then(t => {
             var e;
-            (0, O.m)(t.getAvatarURL(null, 64), null != (e = i.getIconURL(64)) ? e : null).then(e => {
+            (0, O.m)(t.getAvatarURL(null, 64), null != (e = l.getIconURL(64)) ? e : null).then(e => {
               tt.Z.showNotification(e, tr.intl.formatToPlainString(tr.t.SRy0Cg, {
                 username: Q.ZP.getName(null, null, t)
-              }), i.name, {
+              }), l.name, {
                 notif_type: "game_notif"
               }, {
                 onClick: () => {
                   d.Z.openPrivateChannel({
-                    recipientIds: l
+                    recipientIds: a
                   })
                 },
                 isUserAvatar: !1
@@ -139,8 +144,8 @@ async function tS(t) {
             })
           }))
         }
-      }), 0 === t_[e].size && delete t_[e]
-    }(tp(n), i.id, e)
+      }), 0 === tI(e).length && delete t_[e]
+    }(tp(n), i.id, e, null != a ? a : 0)
   })
 }
 
@@ -148,19 +153,24 @@ function tp(t) {
   return t.filter(t => t.type === tl.IIU.PLAYING && null != t.application_id).map(t => t.application_id)
 }
 
-function tI() {
-  return !!(x.Z.getDesktopType() === tl.qrD.NEVER || J.Z.getStatus() === tl.Skl.DND || H.QZ.getSetting())
+function tI(t) {
+  var e;
+  return Object.keys(null != (e = t_[t]) ? e : {})
 }
 
-function tC(t) {
-  return null != j.Z.getVoiceStateForChannel(t)
+function tC() {
+  return !!(z.Z.getDesktopType() === tl.qrD.NEVER || J.Z.getStatus() === tl.Skl.DND || H.QZ.getSetting())
 }
-class th extends(i = r.ZP.Store) {
+
+function th(t) {
+  return null != $.Z.getVoiceStateForChannel(t)
+}
+class tZ extends(i = r.ZP.Store) {
   initialize() {
-    this.waitFor($.default, W.Z, x.Z, z.Z, V.Z, X.Z, q.Z, j.Z, P.Z)
+    this.waitFor(K.default, W.Z, z.Z, Y.Z, V.Z, X.Z, q.Z, $.Z, P.Z)
   }
 }
-to(th, "displayName", "NotificationStore"), new th(s.Z, __OVERLAY__ ? {} : {
+to(tZ, "displayName", "NotificationStore"), new tZ(s.Z, __OVERLAY__ ? {} : {
   NOTIFICATIONS_SET_PERMISSION_STATE: function(t) {
     let {
       enabled: e
@@ -186,7 +196,7 @@ to(th, "displayName", "NotificationStore"), new th(s.Z, __OVERLAY__ ? {} : {
       trackingProps: l,
       options: a
     } = t;
-    return !tI() && (tt.Z.showNotification(e, n, i, l, a), !1)
+    return !tC() && (tt.Z.showNotification(e, n, i, l, a), !1)
   },
   WINDOW_FOCUS: function(t) {
     if (tf = t.focused) {
@@ -203,13 +213,13 @@ to(th, "displayName", "NotificationStore"), new th(s.Z, __OVERLAY__ ? {} : {
     } = t;
     if (d) return !1;
     let f = W.Z.getChannel(o),
-      E = $.default.getUser(null == (e = u.author) ? void 0 : e.id),
-      _ = $.default.getCurrentUser();
+      E = K.default.getUser(null == (e = u.author) ? void 0 : e.id),
+      _ = K.default.getCurrentUser();
     if (null == f || null == E) return !1;
     let T = (0, R.eF)(u, o, !tf),
-      N = x.Z.getNotifyMessagesInSelectedChannel() && (0, R.N_)(u, o);
+      N = z.Z.getNotifyMessagesInSelectedChannel() && (0, R.N_)(u, o);
     if (!T && !N || u.type === tl.uaV.CHANGELOG && (null == u.changelog_id || I.Z.latestChangelogId() !== u.changelog_id)) return !1;
-    let S = !x.Z.isSoundDisabled(tu),
+    let S = !z.Z.isSoundDisabled(tu),
       p = tn.ZP.canUseCustomNotificationSounds(_),
       C = L.Y.getCurrentConfig({
         location: "NotificationStore"
@@ -221,7 +231,7 @@ to(th, "displayName", "NotificationStore"), new th(s.Z, __OVERLAY__ ? {} : {
       {
         OverlayNotificationDisabledSetting: m
       } = n(486016);
-    if (null != Z.getFocusedPID() && !A.isNotificationDisabled(m.TEXT_CHAT) && !K.Z.disableNotifications) return !1;
+    if (null != Z.getFocusedPID() && !A.isNotificationDisabled(m.TEXT_CHAT) && !j.Z.disableNotifications) return !1;
     let {
       icon: v,
       title: y,
@@ -234,8 +244,8 @@ to(th, "displayName", "NotificationStore"), new th(s.Z, __OVERLAY__ ? {} : {
         icon: v,
         title: y,
         body: P
-      }), (0, U.R)(u, f.guild_id), x.Z.getDesktopType() === tl.qrD.NEVER) return S && tt.Z.playNotificationSound(tu, ts, h), !1;
-    let O = null != (r = Y.Z.getMessage(o, u.id)) ? r : (0, D.e5)(u);
+      }), (0, U.R)(u, f.guild_id), z.Z.getDesktopType() === tl.qrD.NEVER) return S && tt.Z.playNotificationSound(tu, ts, h), !1;
+    let O = null != (r = x.Z.getMessage(o, u.id)) ? r : (0, D.e5)(u);
     tt.Z.showNotification(v, y, P, {
       notif_type: "MESSAGE_CREATE",
       notif_user_id: null == (i = u.author) ? void 0 : i.id,
@@ -276,9 +286,9 @@ to(th, "displayName", "NotificationStore"), new th(s.Z, __OVERLAY__ ? {} : {
       userId: e,
       activity: n
     } = t;
-    if (tI() || n.type !== tl.IIU.PLAYING) return !1;
+    if (tC() || n.type !== tl.IIU.PLAYING) return !1;
     {
-      let t = $.default.getUser(e);
+      let t = K.default.getUser(e);
       if (null == t) return !1;
       let i = ti.ZP.getName(t),
         l = n.name,
@@ -310,8 +320,8 @@ to(th, "displayName", "NotificationStore"), new th(s.Z, __OVERLAY__ ? {} : {
     let {
       voiceStates: e
     } = t;
-    if (tI()) return;
-    let n = $.default.getCurrentUser();
+    if (tC()) return;
+    let n = K.default.getCurrentUser();
     if (null == n) return;
     let i = e.find(t => t.userId === n.id);
     if (null == i) return;
@@ -322,11 +332,11 @@ to(th, "displayName", "NotificationStore"), new th(s.Z, __OVERLAY__ ? {} : {
       requestToSpeakTimestamp: o
     } = i;
     if (null == l || null == a || !(!r && null != o)) return;
-    let u = z.Z.getGuild(a),
+    let u = Y.Z.getGuild(a),
       s = W.Z.getChannel(l),
       d = V.Z.getStageInstanceByChannel(l);
     null != u && null != s && null != d && tt.Z.showNotification(u.getIconURL(128), s.name, tr.intl.formatToPlainString(tr.t.sqnsSE, {
-      channelName: (0, C.F6)(s, $.default, X.Z),
+      channelName: (0, C.F6)(s, K.default, X.Z),
       channelTopic: null == d ? void 0 : d.topic
     }), {
       notif_type: "Stage Speak Invite"
@@ -338,11 +348,11 @@ to(th, "displayName", "NotificationStore"), new th(s.Z, __OVERLAY__ ? {} : {
     let {
       instance: e
     } = t;
-    if (tI() || !e.send_start_notification || tC(e.channel_id)) return !1;
-    let n = $.default.getCurrentUser(),
-      i = z.Z.getGuild(e.guild_id),
+    if (tC() || !e.send_start_notification || th(e.channel_id)) return !1;
+    let n = K.default.getCurrentUser(),
+      i = Y.Z.getGuild(e.guild_id),
       l = W.Z.getChannel(e.channel_id),
-      r = $.default.getUser(e.host_id);
+      r = K.default.getUser(e.host_id);
     if (null == n || null == l || null == i || null == r || !(0, R.LL)(n, r, l) || !q.Z.can(a.$e(tl.Plq.CONNECT, tl.Plq.VIEW_CHANNEL), l) || tE.has(e.id)) return !1;
     tE.add(e.id), tt.Z.showNotification(i.getIconURL(128), tr.intl.formatToPlainString(tr.t.bZ4OkZ, {
       guildName: i.name
@@ -370,15 +380,15 @@ to(th, "displayName", "NotificationStore"), new th(s.Z, __OVERLAY__ ? {} : {
     let {
       guildScheduledEvent: e
     } = t;
-    if (tI() || null == e.notification_type) return !1;
+    if (tC() || null == e.notification_type) return !1;
     e.notification_type === ta.sy.EVENT_START && (e.entity_type === ta.WX.STAGE_INSTANCE || e.entity_type === ta.WX.VOICE ? function(t) {
-      if (tI()) return;
+      if (tC()) return;
       let e = t.channel_id;
-      if (null == e || tC(e)) return;
-      let n = $.default.getCurrentUser(),
-        i = z.Z.getGuild(t.guild_id),
+      if (null == e || th(e)) return;
+      let n = K.default.getCurrentUser(),
+        i = Y.Z.getGuild(t.guild_id),
         l = W.Z.getChannel(t.channel_id),
-        r = $.default.getUser(t.host_id);
+        r = K.default.getUser(t.host_id);
       if (null != n && null != l && null != i && null != r && q.Z.can(a.$e(tl.Plq.CONNECT, tl.Plq.VIEW_CHANNEL), l)) tt.Z.showNotification(i.getIconURL(128), tr.intl.formatToPlainString(tr.t.bOu6Wl, {
         guildName: i.name
       }), tr.intl.formatToPlainString(tr.t.GV9L8v, {
@@ -395,9 +405,9 @@ to(th, "displayName", "NotificationStore"), new th(s.Z, __OVERLAY__ ? {} : {
         isUserAvatar: !1
       })
     }(e) : e.entity_type === ta.WX.EXTERNAL && function(t) {
-      if (tI()) return;
-      let e = $.default.getCurrentUser(),
-        n = z.Z.getGuild(t.guild_id);
+      if (tC()) return;
+      let e = K.default.getCurrentUser(),
+        n = Y.Z.getGuild(t.guild_id);
       if (null != e && null != n) tt.Z.showNotification(n.getIconURL(128), tr.intl.formatToPlainString(tr.t.bOu6Wl, {
         guildName: n.name
       }), tr.intl.formatToPlainString(tr.t.mYyaRE, {
@@ -421,7 +431,7 @@ to(th, "displayName", "NotificationStore"), new th(s.Z, __OVERLAY__ ? {} : {
       channel: n,
       isNewlyCreated: i
     } = t;
-    if (tI()) return !1;
+    if (tC()) return !1;
     let l = W.Z.getChannel(n.parent_id);
     if (null == l || !tl.TPd.GUILD_THREADS_ONLY.has(l.type) || !i || !(0, R.FI)(n, l, !tf)) return !1;
     let {
@@ -429,7 +439,7 @@ to(th, "displayName", "NotificationStore"), new th(s.Z, __OVERLAY__ ? {} : {
       user: r
     } = (0, h.MC)(n);
     if (null == r) return !1;
-    let o = z.Z.getGuild(l.guild_id);
+    let o = Y.Z.getGuild(l.guild_id);
     if (null == o) return !1;
     let u = tr.intl.formatToPlainString(tr.t["2IGVl5"], {
         channelName: l.name,
@@ -459,7 +469,7 @@ to(th, "displayName", "NotificationStore"), new th(s.Z, __OVERLAY__ ? {} : {
       trackingType: r,
       tag: o
     } = t;
-    if (tI() || null == i || null == l || null == r) return !1;
+    if (tC() || null == i || null == l || null == r) return !1;
     let u = "reactions_push_notification" === r;
     if (u) {
       var s;
@@ -522,7 +532,7 @@ to(th, "displayName", "NotificationStore"), new th(s.Z, __OVERLAY__ ? {} : {
     let {
       savedMessage: e
     } = t;
-    if (tI()) return !1;
+    if (tC()) return !1;
     let n = e.message;
     if (null == n || null == n.author) return !1;
     let i = W.Z.getChannel(e.saveData.channelId);
