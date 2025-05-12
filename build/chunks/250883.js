@@ -1,2 +1,2 @@
 /** Chunk was on 70049 **/
-p.exports = JSON.parse('{"Poezn5":"ออนไลน์","qKDqen":"ออนไลน์เพื่อแชร์กิจกรรม","a3AofX":"ตั้งค่าสถานะออนไลน์"}')
+s.exports = JSON.parse('{"jfDsyM":"แชร์แบบจำกัด"}')

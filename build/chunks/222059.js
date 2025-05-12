@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(944486),
   _ = n(594174),
   y = n(431),
-  v = n(774343),
-  O = n(417363),
+  O = n(774343),
+  v = n(417363),
   C = n(941128),
   S = n(780570),
   j = n(278464),
@@ -54,7 +54,7 @@ function D(e) {
     badge: b,
     link: _,
     showProgressBadge: y
-  } = e, v = (0, o.e7)([u.Z], () => u.Z.isEditorOpen), [O, C] = i.useState(!1), [S, j] = i.useState(!1), [N, D] = i.useState(null), [L, k] = i.useState(0), M = (0, l.Ie)("home"), U = (0, h.Q3)("DefaultHomeButton"), G = () => {
+  } = e, O = (0, o.e7)([u.Z], () => u.Z.isEditorOpen), [v, C] = i.useState(!1), [S, j] = i.useState(!1), [N, D] = i.useState(null), [L, k] = i.useState(0), M = (0, l.Ie)("home"), U = (0, h.Q3)("DefaultHomeButton"), G = () => {
     D(null), k(0), clearTimeout(N)
   };
   if (null == f) return null;
@@ -65,7 +65,7 @@ function D(e) {
     className: A.downloadProgress,
     determineOwnVisibility: !1
   }));
-  let H = p || O || v,
+  let H = p || v || O,
     F = (0, r.jsx)(a.aRk, {
       selected: U || H,
       lowerBadge: b > 0 ? (0, I.Ne)(b) : null,
@@ -138,7 +138,7 @@ function D(e) {
       children: (0, r.jsxs)(x.H, {
         children: [(0, r.jsx)(E.Z, {
           selected: p,
-          hovered: O,
+          hovered: v,
           className: A.pill
         }), (0, r.jsx)(P.Z, {
           color: a.ua7.Colors.PRIMARY,
@@ -154,8 +154,8 @@ function D(e) {
 
 function L() {
   let e = (0, j.n)(),
-    t = (0, o.e7)([C.Z, O.Z], () => {
-      let e = (0, c.E)(C.Z.activeItems, O.Z),
+    t = (0, o.e7)([C.Z, v.Z], () => {
+      let e = (0, c.E)(C.Z.activeItems, v.Z),
         {
           total: t,
           progress: n
@@ -177,7 +177,7 @@ function L() {
     d = (0, p.q)(),
     h = n + a + d,
     g = h === a && a > 0 && n + d === 0,
-    m = v.Z.getHomeLink();
+    m = O.Z.getHomeLink();
   return g && (m = w.Z5c.APPLICATION_STORE), (0, r.jsx)(D, {
     selected: e,
     user: u,

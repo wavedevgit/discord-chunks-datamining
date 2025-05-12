@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(714338),
   _ = n(607070),
   y = n(460181),
-  v = n(585483),
-  O = n(264549),
+  O = n(585483),
+  v = n(264549),
   C = n(981631),
   S = n(388032),
   j = n(268751);
@@ -111,14 +111,14 @@ function N() {
 }
 class Z extends i.PureComponent {
   componentDidMount() {
-    this.lastInputedKeys = [], v.S.subscribe(C.CkL.SCROLL_PAGE_UP, this.scrollPageUp), v.S.subscribe(C.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown), window.addEventListener("keydown", this.handleKeyDown, {
+    this.lastInputedKeys = [], O.S.subscribe(C.CkL.SCROLL_PAGE_UP, this.scrollPageUp), O.S.subscribe(C.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown), window.addEventListener("keydown", this.handleKeyDown, {
       capture: !0
     }), window.addEventListener("keyup", this.handleKeyUp, {
       capture: !0
     })
   }
   componentWillUnmount() {
-    v.S.unsubscribe(C.CkL.SCROLL_PAGE_UP, this.scrollPageUp), v.S.unsubscribe(C.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown), window.removeEventListener("keydown", this.handleKeyDown, {
+    O.S.unsubscribe(C.CkL.SCROLL_PAGE_UP, this.scrollPageUp), O.S.unsubscribe(C.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown), window.removeEventListener("keydown", this.handleKeyDown, {
       capture: !0
     }), window.removeEventListener("keyup", this.handleKeyUp, {
       capture: !0
@@ -303,7 +303,7 @@ function A(e) {
       transitionState: t,
       children: (0, r.jsx)(p.W, {
         component: "div",
-        children: l ? (0, r.jsx)(O.Z, {
+        children: l ? (0, r.jsx)(v.Z, {
           handleDemonClose: function() {
             c(!1), setTimeout(n, 500)
           }

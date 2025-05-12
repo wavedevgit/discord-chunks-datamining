@@ -20,8 +20,8 @@ var r = n(255367),
   b = n(803647),
   _ = n(131704),
   y = n(944486),
-  v = n(626135),
-  O = n(870569),
+  O = n(626135),
+  v = n(870569),
   C = n(981631),
   S = n(388032),
   j = n(390648);
@@ -55,7 +55,7 @@ let x = i.memo(function(e) {
     } = (0, h.ZP)(),
     B = E(L, D, R),
     V = i.useCallback(() => {
-      o()(null != D, "Received null activity"), (0, p.v)(G, p.d.INVITE), v.default.track(C.rMx.OPEN_MODAL, {
+      o()(null != D, "Received null activity"), (0, p.v)(G, p.d.INVITE), O.default.track(C.rMx.OPEN_MODAL, {
         type: "Send Join Invite",
         application_id: D.application_id,
         location: k.location
@@ -126,19 +126,19 @@ let x = i.memo(function(e) {
       game: A.name
     }) : S.intl.string(S.t.FeUKeH)) : (t = !0, l = null, u = s.hGI, x = null != Z && (0, _.vd)(Z.type) ? S.intl.string(S.t.uQn9Bw) : null != w ? S.intl.string(S.t.fBXEoK) : S.intl.string(S.t.n3feND)), (0, r.jsx)("div", {
       className: j.panelButtonContainer,
-      children: (0, r.jsx)(O.Z, {
+      children: (0, r.jsx)(v.Z, {
         tooltipText: x,
         disabled: t,
         onClick: l,
         icon: u
       })
     })) : null,
-    Y = B && null == R ? (0, r.jsx)(O.Z, {
+    Y = B && null == R ? (0, r.jsx)(v.Z, {
       tooltipText: S.intl.string(S.t["hC/Ze3"]),
       onClick: V,
       icon: s.ejJ
     }) : null,
-    K = null == R ? null : (0, r.jsx)(O.Z, {
+    K = null == R ? null : (0, r.jsx)(v.Z, {
       tooltipText: S.intl.string(S.t["R/FK4O"]),
       onClick: H(R.applicationId, R.location),
       icon: s.PBZ
