@@ -12,8 +12,8 @@ var i = n(255367),
   u = n(239091),
   d = n(13245),
   p = n(100527),
-  f = n(906732),
-  h = n(70097),
+  h = n(906732),
+  f = n(70097),
   m = n(74299),
   g = n(199902),
   y = n(592125),
@@ -22,14 +22,14 @@ var i = n(255367),
   b = n(944486),
   E = n(556296),
   _ = n(808506),
-  I = n(237997),
-  x = n(451478),
-  j = n(585483),
-  S = n(358085),
+  x = n(237997),
+  S = n(451478),
+  I = n(585483),
+  j = n(358085),
   C = n(13140),
   N = n(145597),
-  Z = n(830917),
-  w = n(486016),
+  w = n(830917),
+  Z = n(486016),
   P = n(32300),
   T = n(681603),
   k = n(915614),
@@ -38,16 +38,16 @@ var i = n(255367),
   L = n(333031),
   R = n(371651),
   M = n(624864),
-  V = n(610394),
+  z = n(610394),
   U = n(388627),
-  z = n(319414),
+  V = n(319414),
   W = n(561064),
   G = n(987650),
   F = n(757744),
   B = n(981631),
   H = n(960972);
-let Y = !S.isPlatformEmbedded && !1,
-  Q = Y ? (0, i.jsx)(h.Z, {
+let Y = !j.isPlatformEmbedded && !1,
+  Q = Y ? (0, i.jsx)(f.Z, {
     src: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzdpcnRrYXdrNzVuNjZ3NXpmeTJvNGl4Z2N4OXBsamx5aXphdHhxaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/OPg2B0FPBL94H12uM0/giphy480p.mp4",
     className: H.videoDev,
     autoPlay: !0,
@@ -85,8 +85,8 @@ function J(e) {
         }
         return e
       }({}, t), r = r = {
-        layoutId: F.$,
-        version: F.H
+        layoutId: F.$S,
+        version: F.HN
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -157,10 +157,10 @@ function en() {
 }
 
 function ei(e) {
-  let t = V.ZP.isInputLocked((0, N.getPID)());
-  "alt" !== e.key.toLowerCase() || t || ("keyup" === e.type.toLowerCase() ? j.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+  let t = z.ZP.isInputLocked((0, N.getPID)());
+  "alt" !== e.key.toLowerCase() || t || ("keyup" === e.type.toLowerCase() ? I.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
     show: !0
-  }) : "keydown" === e.type.toLowerCase() && j.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+  }) : "keydown" === e.type.toLowerCase() && I.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
     show: !1
   }))
 }
@@ -171,23 +171,23 @@ function er(e) {
   } = e, n = (0, W.Z)(), {
     locked: o,
     focused: u,
-    incompatibleApp: h,
-    hasZeroSizeDimension: S,
+    incompatibleApp: f,
+    hasZeroSizeDimension: j,
     keybind: k
-  } = (0, a.cj)([V.ZP, I.default, x.Z, E.ZP], () => {
-    let e = x.Z.windowSize((0, Z.ZY)(n)),
+  } = (0, a.cj)([z.ZP, x.default, S.Z, E.ZP], () => {
+    let e = S.Z.windowSize((0, w.ZY)(n)),
       t = E.ZP.getOverlayKeybind(),
       i = (0, N.getPID)();
     return {
-      locked: V.ZP.isInputLocked(i),
-      focused: V.ZP.isFocused(i),
-      incompatibleApp: I.default.incompatibleApp,
+      locked: z.ZP.isInputLocked(i),
+      focused: z.ZP.isFocused(i),
+      incompatibleApp: x.default.incompatibleApp,
       hasZeroSizeDimension: 0 === e.height || 0 === e.width,
       keybind: null != t ? (0, C.BB)(t.shortcut, !0) : "???"
     }
   }, [n]), {
     analyticsLocations: L
-  } = (0, f.ZP)(p.Z.OVERLAY);
+  } = (0, h.ZP)(p.Z.OVERLAY);
   return ! function(e, t) {
     let n = r.useRef({
       mount: e,
@@ -224,27 +224,27 @@ function er(e) {
       e.current = !0;
       let r = null != (i = _.default.getFocusedPID()) ? i : (0, N.getPID)();
       if (R.default.hasChangedRenderMode(r)) return;
-      let l = M.Z.isNotificationDisabled(w.OverlayNotificationDisabledSetting.WELCOME_GENERAL),
-        a = M.Z.isNotificationDisabled(w.OverlayNotificationDisabledSetting.GO_LIVE_NUDGE),
-        p = M.Z.isNotificationDisabled(w.OverlayNotificationDisabledSetting.GAME_ACTIVITY),
-        f = [];
-      l || f.push({
+      let l = M.Z.isNotificationDisabled(Z.OverlayNotificationDisabledSetting.WELCOME_GENERAL),
+        a = M.Z.isNotificationDisabled(Z.OverlayNotificationDisabledSetting.GO_LIVE_NUDGE),
+        p = M.Z.isNotificationDisabled(Z.OverlayNotificationDisabledSetting.GAME_ACTIVITY),
+        h = [];
+      l || h.push({
         type: G.nc.WELCOME
-      }), !a && (s && c ? f.push({
+      }), !a && (s && c ? h.push({
         type: G.nc.GO_LIVE_VOICE,
         game: t,
         voiceChannelId: n,
         voiceGuild: o
-      }) : s && f.push({
+      }) : s && h.push({
         type: G.nc.GO_LIVE_NON_VOICE,
         game: t
-      })), u && !p && f.push({
+      })), u && !p && h.push({
         type: G.nc.CONTENT_INVENTORY,
         entries: []
-      }), 0 !== f.length && d.Z.overlayMounted(...f)
+      }), 0 !== h.length && d.Z.overlayMounted(...h)
     }, [a, s, c, t, n, o, u])
   }(), r.useEffect(() => {
-    if (j.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+    if (I.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
         show: !0
       }), o) {
       if ((0, s.Ay)(c.u1M), n.addEventListener("contextmenu", X, !1), null != K) {
@@ -258,9 +258,9 @@ function er(e) {
       }
     }
     n.removeEventListener("contextmenu", X, !1), null == K && (K = Date.now(), d.Z.track(B.rMx.OVERLAY_UNLOCKED))
-  }, [o, n]), (0, i.jsx)(f.Gt, {
+  }, [o, n]), (0, i.jsx)(h.Gt, {
     value: L,
-    children: S || h ? null : (0, i.jsx)(c.f6W, {
+    children: j || f ? null : (0, i.jsx)(c.f6W, {
       theme: B.BRd.MIDNIGHT,
       children: e => (0, i.jsxs)("div", {
         id: "overlay-container",
@@ -274,7 +274,7 @@ function er(e) {
             [H.layoutLocked]: o,
             [H.layoutUnlocked]: !o
           })
-        }), (0, i.jsx)(z.Z, {}), !t && Y && (0, i.jsx)($, {
+        }), (0, i.jsx)(V.Z, {}), !t && Y && (0, i.jsx)($, {
           locked: o,
           focused: u
         }), (0, i.jsx)(T.Z, {}), (0, i.jsx)(D.Z, {

@@ -28,10 +28,12 @@ function o(e, t) {
   } = e;
   return o ? {
     width: n,
-    height: i
+    height: i,
+    fixed: o
   } : {
     width: "auto" === n ? n : Math.floor(r(n) * t.width),
-    height: "auto" === i ? i : Math.floor(r(i) * t.height)
+    height: "auto" === i ? i : Math.floor(r(i) * t.height),
+    fixed: o
   }
 }
 
@@ -53,11 +55,17 @@ function a(e, t) {
 function s(e, t) {
   let {
     width: n,
-    height: r
+    height: r,
+    fixed: i
   } = e;
-  return {
+  return i ? {
+    width: n,
+    height: r,
+    fixed: i
+  } : {
     width: "auto" === n ? n : n / t.width,
-    height: "auto" === r ? r : r / t.height
+    height: "auto" === r ? r : r / t.height,
+    fixed: i
   }
 }
 

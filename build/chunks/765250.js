@@ -32,14 +32,16 @@ function l(e) {
     widgetId: t,
     anchor: n,
     size: i,
-    opacity: o
+    minSize: o,
+    opacity: a
   } = e;
   r.Z.dispatch({
     type: "LAYOUT_UPDATE_WIDGET",
     widgetId: t,
     anchor: n,
     size: i,
-    opacity: o
+    minSize: o,
+    opacity: a
   })
 }
 

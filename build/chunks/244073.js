@@ -25,9 +25,9 @@ var i = n(255367),
   x = n(594174),
   E = n(979651),
   S = n(362446),
-  C = n(518084),
-  Z = n(981631),
-  j = n(388032),
+  j = n(518084),
+  C = n(981631),
+  Z = n(388032),
   I = n(738901),
   P = n(566177);
 
@@ -72,9 +72,9 @@ class k extends r.PureComponent {
   renderChannelLink(e) {
     let {
       guild: t
-    } = this.props, n = (0, p.F6)(e, x.default, b.Z), r = null != t ? "".concat(n, " / ").concat(t.name) : n, s = null != t ? t.id : Z.ME;
+    } = this.props, n = (0, p.F6)(e, x.default, b.Z), r = null != t ? "".concat(n, " / ").concat(t.name) : n, s = null != t ? t.id : C.ME;
     return (0, i.jsx)(l.rU, {
-      to: Z.Z5c.CHANNEL(s),
+      to: C.Z5c.CHANNEL(s),
       onClick: t => {
         t.stopPropagation(), u.Z.channelListScrollTo(s, e.id)
       },
@@ -98,11 +98,11 @@ class k extends r.PureComponent {
       deaf: h,
       mute: p
     } = this.props;
-    return null == s ? null : (0, i.jsx)(C.ZP.Bar, {
+    return null == s ? null : (0, i.jsx)(j.ZP.Bar, {
       className: o()(e, I.controls, {
         [I.unpinned]: !n
       }),
-      children: (0, i.jsxs)(C.ZP.Content, {
+      children: (0, i.jsxs)(j.ZP.Content, {
         className: o()(t, I.content),
         dynamicSize: !0,
         children: [(0, i.jsx)("div", {
@@ -124,17 +124,17 @@ class k extends r.PureComponent {
         }), (0, i.jsxs)(f.Z, {
           grow: 0,
           children: [(0, i.jsx)(g.Z, {
-            tooltipText: p ? j.intl.string(j.t.YqAjX1) : j.intl.string(j.t["w4m94+"]),
+            tooltipText: p ? Z.intl.string(Z.t.YqAjX1) : Z.intl.string(Z.t["w4m94+"]),
             icon: p ? c.nRN : c.S6n,
             iconForeground: p ? I.strikethrough : null,
             onClick: this.handleToggleSelfMute
           }), (0, i.jsx)(g.Z, {
-            tooltipText: h ? j.intl.string(j.t["2US87+"]) : j.intl.string(j.t.wjcRFR),
+            tooltipText: h ? Z.intl.string(Z.t["2US87+"]) : Z.intl.string(Z.t.wjcRFR),
             icon: h ? c.wE8 : c.VWR,
             onClick: this.handleToggleSelfDeaf,
             iconForeground: h ? I.strikethrough : null
           }), null == r && (0, i.jsx)(g.Z, {
-            tooltipText: j.intl.string(j.t["6vrfgo"]),
+            tooltipText: Z.intl.string(Z.t["6vrfgo"]),
             onClick: this.handleDisconnect,
             icon: c.gkL
           })]

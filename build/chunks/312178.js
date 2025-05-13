@@ -1,7 +1,7 @@
 /** Chunk was on 63141 **/
 "use strict";
 n.d(t, {
-  Z: () => Z
+  Z: () => C
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -134,9 +134,9 @@ class E extends r.PureComponent {
       pinned: a,
       zIndex: d,
       size: u,
-      anchor: h
-    } = e, f = (0, p.w_)(u, n), g = (0, p.KR)(h, n), {
-      minSize: m,
+      anchor: h,
+      minSize: f
+    } = e, g = (0, p.w_)(u, n), m = (0, p.KR)(h, n), {
       resizeX: v,
       resizeY: _,
       dragAnywhere: O
@@ -149,13 +149,13 @@ class E extends r.PureComponent {
       minY: 0,
       maxX: n.width,
       maxY: n.height
-    }, E = this.renderWidget(e, g, f);
+    }, E = this.renderWidget(e, m, g);
     return null == E ? null : (0, i.jsx)(c.Z, {
       id: l,
-      size: f,
-      anchor: g,
+      size: g,
+      anchor: m,
       container: x,
-      minSize: m,
+      minSize: f,
       hidden: !b,
       resizeX: v,
       resizeY: _,
@@ -242,17 +242,17 @@ let S = s.ZP.connectStores([d.Z, u.default], e => {
   }
 })(E);
 
-function C(e, t) {
+function j(e, t) {
   return (0, i.jsx)(S, {
     widgetId: e,
     layoutSize: t
   }, e)
 }
-let Z = s.ZP.connectStores([d.Z, h.Z], () => {
+let C = s.ZP.connectStores([d.Z, h.Z], () => {
   var e;
   return {
     layout: null != (e = d.Z.getLayout(f.OVERLAY_LAYOUT_ID)) ? e : void 0,
     layoutSize: h.Z.windowSize(),
-    renderWidget: C
+    renderWidget: j
   }
 })(a.Z)

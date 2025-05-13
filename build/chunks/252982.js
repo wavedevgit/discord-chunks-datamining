@@ -29,7 +29,7 @@ function o(e) {
 class a extends r.Z {
   constructor(e) {
     var t, n;
-    super(), i(this, "id", void 0), i(this, "layoutId", void 0), i(this, "type", void 0), i(this, "anchor", void 0), i(this, "size", void 0), i(this, "pinned", void 0), i(this, "zIndex", void 0), i(this, "opacity", void 0), i(this, "meta", void 0), this.id = e.id || "", this.layoutId = e.layoutId || "", this.type = e.type;
+    super(), i(this, "id", void 0), i(this, "layoutId", void 0), i(this, "type", void 0), i(this, "anchor", void 0), i(this, "size", void 0), i(this, "minSize", void 0), i(this, "pinned", void 0), i(this, "zIndex", void 0), i(this, "opacity", void 0), i(this, "meta", void 0), this.id = e.id || "", this.layoutId = e.layoutId || "", this.type = e.type;
     let {
       top: r,
       left: a,
@@ -47,6 +47,9 @@ class a extends r.Z {
     }, this.size = o({
       width: 0,
       height: 0
-    }, e.size), this.pinned = !!e.pinned, this.zIndex = e.zIndex || 0, this.opacity = null != (n = e.opacity) ? n : 1, this.meta = o({}, e.meta)
+    }, e.size), this.minSize = o({
+      width: void 0,
+      height: void 0
+    }, e.minSize), this.pinned = !!e.pinned, this.zIndex = e.zIndex || 0, this.opacity = null != (n = e.opacity) ? n : 1, this.meta = o({}, e.meta)
   }
 }

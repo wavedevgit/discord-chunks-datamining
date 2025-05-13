@@ -12,13 +12,13 @@ var i = n(255367),
   u = n(444295),
   d = n(603618),
   p = n(388627),
-  f = n(981631),
-  h = n(852266);
+  h = n(981631),
+  f = n(852266);
 
 function m(e) {
   let {
     locked: t
-  } = e, n = (0, p.II)(), m = null == n ? void 0 : n.id, g = null == n ? void 0 : n.altId, y = (0, o.e7)([c.default], () => c.default.getCurrentUser()), O = null != g ? g : m, [v, b] = r.useState(new Set), [E, _] = r.useState(new Set), I = r.useCallback((e, t, n) => {
+  } = e, n = (0, p.II)(), m = null == n ? void 0 : n.id, g = null == n ? void 0 : n.altId, y = (0, o.e7)([c.default], () => c.default.getCurrentUser()), O = null != g ? g : m, [v, b] = r.useState(new Set), [E, _] = r.useState(new Set), x = r.useCallback((e, t, n) => {
     b(n => {
       if (t) {
         if (n.has(e)) return n;
@@ -38,15 +38,15 @@ function m(e) {
       }
       return new Set(i)
     })
-  }, []), x = (0, u.ee)(() => v, [v]), j = (0, u.ee)(() => E, [E]), S = (0, l.h)(u.zi, 3e3, []);
+  }, []), S = (0, u.ee)(() => v, [v]), I = (0, u.ee)(() => E, [E]), j = (0, l.h)(u.zi, 3e3, []);
   r.useEffect(() => {
-    0 === x.size || t || S(f.Odu.FRIENDS, {
+    0 === S.size || t || j(h.Odu.FRIENDS, {
       locked: t,
-      shownUserIds: Array.from(x),
-      liveUserIds: Array.from(j),
+      shownUserIds: Array.from(S),
+      liveUserIds: Array.from(I),
       contentInventoryIds: []
     })
-  }, [x, j, t, S]);
+  }, [S, I, t, j]);
   let C = (0, o.e7)([s.Z], () => null == O ? null : s.Z.getApplicationActivity(O), [O]),
     N = (0, r.useCallback)((e, t) => {
       let n = function(e) {
@@ -101,7 +101,7 @@ function m(e) {
       }(e);
       if (null != n) {
         var i, r;
-        (0, u.Ws)(f.Odu.FRIENDS, (i = function(e) {
+        (0, u.Ws)(h.Odu.FRIENDS, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               i = Object.keys(n);
@@ -132,19 +132,19 @@ function m(e) {
         }), i))
       }
     }, []),
-    Z = (0, r.useCallback)(() => {}, []),
-    w = (0, r.useCallback)(() => (0, i.jsx)(d.lE, {
+    w = (0, r.useCallback)(() => {}, []),
+    Z = (0, r.useCallback)(() => (0, i.jsx)(d.lE, {
       activity: C,
       currentUser: y,
       showInviteButton: !1
     }), [C, y]);
   return t ? null : (0, i.jsx)(a.r1, {
-    containerClassName: h.container,
-    listClassName: h.list,
-    closePopout: Z,
-    renderHeader: w,
-    appContext: f.IlC.OVERLAY,
+    containerClassName: f.container,
+    listClassName: f.list,
+    closePopout: w,
+    renderHeader: Z,
+    appContext: h.IlC.OVERLAY,
     onAction: N,
-    onFriendVisible: I
+    onFriendVisible: x
   })
 }

@@ -25,9 +25,9 @@ var i = n(255367),
   x = n(624864),
   E = n(703656),
   S = n(199902),
-  C = n(592125),
-  Z = n(158776),
-  j = n(594174),
+  j = n(592125),
+  C = n(158776),
+  Z = n(594174),
   I = n(237997),
   P = n(5192),
   N = n(145597),
@@ -96,15 +96,15 @@ function M(e) {
   let {
     entry: t,
     idx: n
-  } = e, s = (0, l.e7)([j.default], () => j.default.getUser(t.author_id)), h = (0, v.kr)(t), f = h ? a.TVs.colors.TEXT_POSITIVE : a.TVs.colors.CONTENT_INVENTORY_OVERLAY_TEXT_SECONDARY, [_, O] = r.useState("unsent"), [b, x] = r.useState(!1), N = (0, l.e7)([I.default], () => I.default.customInviteMessage), w = (0, l.e7)([S.Z], () => null != s ? S.Z.getAnyStreamForUser(s.id) : null, [s]), {
+  } = e, s = (0, l.e7)([Z.default], () => Z.default.getUser(t.author_id)), h = (0, v.kr)(t), f = h ? a.TVs.colors.TEXT_POSITIVE : a.TVs.colors.CONTENT_INVENTORY_OVERLAY_TEXT_SECONDARY, [_, O] = r.useState("unsent"), [b, x] = r.useState(!1), N = (0, l.e7)([I.default], () => I.default.customInviteMessage), w = (0, l.e7)([S.Z], () => null != s ? S.Z.getAnyStreamForUser(s.id) : null, [s]), {
     isMobileOnline: k,
     status: D
-  } = (0, l.cj)([Z.Z], () => null == s ? {
+  } = (0, l.cj)([C.Z], () => null == s ? {
     isMobileOnline: void 0,
     status: void 0
   } : {
-    isMobileOnline: Z.Z.isMobileOnline(s.id),
-    status: Z.Z.getStatus(s.id)
+    isMobileOnline: C.Z.isMobileOnline(s.id),
+    status: C.Z.getStatus(s.id)
   }, [s]);
   r.useEffect(() => {
     if ("sent" === _) {
@@ -119,7 +119,7 @@ function M(e) {
         var i;
         O("sending");
         let e = await c.Z.getOrEnsurePrivateChannel(s.id),
-          r = null != (i = C.Z.getChannel(e)) ? i : null;
+          r = null != (i = j.Z.getChannel(e)) ? i : null;
         o()(null != r, "Send channel must be defined"), (0, E.uL)(T.Z5c.CHANNEL(r.guild_id, r.id)), await (0, y.p)({
           channel: r,
           content: null != N ? N : A.intl.string(A.t.DwAcMz),
@@ -139,7 +139,7 @@ function M(e) {
     var e;
     if (null == s) return;
     let t = await c.Z.getOrEnsurePrivateChannel(s.id),
-      n = null != (e = C.Z.getChannel(t)) ? e : null;
+      n = null != (e = j.Z.getChannel(t)) ? e : null;
     o()(null != n, "Send channel must be defined"), (0, E.uL)(T.Z5c.CHANNEL(n.guild_id, n.id))
   };
   return null == s ? null : (0, i.jsxs)("div", {

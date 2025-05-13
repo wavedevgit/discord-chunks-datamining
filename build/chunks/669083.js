@@ -48,7 +48,7 @@ let E = () => [{
     value: v.wC$.NEVER,
     name: _.intl.string(_.t.ekjlPD)
   }],
-  C = () => [{
+  j = () => [{
     value: v.OYC.ALWAYS,
     name: _.intl.string(_.t.nBmDra)
   }, {
@@ -56,7 +56,7 @@ let E = () => [{
     name: _.intl.string(_.t["2OvIZW"])
   }];
 
-function Z() {
+function C() {
   let e = h.default.getNotificationPositionMode(),
     t = e !== v._vf.DISABLED,
     n = u.ZP.getOverlayKeybind(),
@@ -71,7 +71,7 @@ function Z() {
     text_activation_hotkey: null != i ? (0, f.BB)(i.shortcut) : null
   })
 }
-class j extends r.PureComponent {
+class Z extends r.PureComponent {
   componentDidMount() {
     l.Z.track(v.rMx.SETTINGS_PANE_VIEWED, {
       settings_type: "overlay",
@@ -80,7 +80,7 @@ class j extends r.PureComponent {
     })
   }
   handleChangeNotificationPositionMode(e, t) {
-    l.Z.setNotificationPositionMode(t), Z()
+    l.Z.setNotificationPositionMode(t), C()
   }
   handleChangeAvatarSizeMode(e) {
     let {
@@ -226,7 +226,7 @@ class j extends r.PureComponent {
         className: b.marginBottom20,
         children: (0, i.jsx)(o.FXm, {
           onChange: this.handleChangeDisplayUserMode,
-          options: C(),
+          options: j(),
           value: n,
           size: o.FXm.Sizes.SMALL
         })
@@ -277,7 +277,7 @@ class j extends r.PureComponent {
         selectedSection: e
       })
     }), x(this, "handleToggleTextChatNotifications", () => {
-      l.Z.setNotificationDisabledSetting(g.OverlayNotificationDisabledSetting.TEXT_CHAT, !this.props.textChatDisabled), Z()
+      l.Z.setNotificationDisabledSetting(g.OverlayNotificationDisabledSetting.TEXT_CHAT, !this.props.textChatDisabled), C()
     }), x(this, "handleToggleInviteNotification", () => {
       let e = this.props.shouldShowInviteNotification;
       l.Z.setNotificationDisabledSetting(g.OverlayNotificationDisabledSetting.GAME_ACTIVITY, !e)
@@ -307,7 +307,7 @@ function I(e) {
   })), u = (0, m.Z)({
     location: "Overlay Settings"
   });
-  return (0, i.jsx)(j, {
+  return (0, i.jsx)(Z, {
     onClose: t,
     avatarSizeMode: n,
     displayNameMode: r,

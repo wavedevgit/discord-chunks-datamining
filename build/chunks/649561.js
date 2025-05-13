@@ -25,9 +25,9 @@ var i = n(255367),
   x = n(692546),
   E = n(518084),
   S = n(987650),
-  C = n(981631),
-  Z = n(388032),
-  j = n(137180);
+  j = n(981631),
+  C = n(388032),
+  Z = n(137180);
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -43,7 +43,7 @@ function N() {
   let e = (0, b.getPID)(),
     t = (0, b.getRPCAuthToken)();
   (0, f.lW)({
-    type: C.BmY.DISPATCH,
+    type: j.BmY.DISPATCH,
     pid: e,
     token: t,
     payloads: [{
@@ -55,7 +55,7 @@ function N() {
 }
 class w extends r.PureComponent {
   componentDidMount() {
-    this.notificationTimer = setTimeout(this.hideNotification, P), p.Z.track(C.rMx.NOTIFICATION_VIEWED, {
+    this.notificationTimer = setTimeout(this.hideNotification, P), p.Z.track(j.rMx.NOTIFICATION_VIEWED, {
       notif_type: S.n0.OverlayCrashed
     })
   }
@@ -78,32 +78,32 @@ class w extends r.PureComponent {
       contentDomRef: this.contentDomRef,
       observe: !1,
       children: (0, i.jsx)(h.f6W, {
-        theme: C.BRd.DARK,
+        theme: j.BRd.DARK,
         children: r => (0, i.jsxs)(h.P3F, {
           innerRef: this.contentDomRef,
-          className: o()(r, j.container),
+          className: o()(r, Z.container),
           onClick: e => e.stopPropagation(),
           children: [(0, i.jsx)(m.ZP, {
             expand: !0,
             icon: (0, i.jsx)(v.Z, {
               width: 40,
               height: 40,
-              className: j.notificationIcon
+              className: Z.notificationIcon
             }),
-            title: Z.intl.string(Z.t.U38qZm),
-            confirmText: Z.intl.string(Z.t.TzAl1d),
+            title: C.intl.string(C.t.U38qZm),
+            confirmText: C.intl.string(C.t.TzAl1d),
             onNotificationClick: this.handleNotificationClick,
             onConfirmClick: this.handleReload,
             onDismissClick: this.hideNotification,
             locked: !1
           }), n && null != e ? (0, i.jsxs)(E.ZP, {
-            className: j.stackTrace,
+            className: Z.stackTrace,
             children: [(0, i.jsx)(E.ZP.Bar, {
               children: "Error Details"
             }), (0, i.jsx)(E.ZP.Content, {
-              className: j.stackTraceCode,
+              className: Z.stackTraceCode,
               children: (0, i.jsx)("code", {
-                className: j.code,
+                className: Z.code,
                 children: (0, i.jsx)("pre", {
                   children: t.stack
                 })
@@ -127,7 +127,7 @@ class w extends r.PureComponent {
     }), I(this, "handleReload", e => {
       this.setState({
         busy: !0
-      }), N(), p.Z.track(C.rMx.NOTIFICATION_CLICKED, {
+      }), N(), p.Z.track(j.rMx.NOTIFICATION_CLICKED, {
         notif_type: S.n0.OverlayCrashed,
         action_type: "reload"
       }, !0), e.stopPropagation(), setTimeout(() => location.reload(!0), 200)
@@ -160,7 +160,7 @@ class k extends r.PureComponent {
     let i = (0, b.getPID)(),
       r = (0, b.getRPCAuthToken)();
     (0, f.lW)({
-      type: C.BmY.DISPATCH,
+      type: j.BmY.DISPATCH,
       pid: (0, b.getPID)(),
       token: r,
       payloads: [{
@@ -176,7 +176,7 @@ class k extends r.PureComponent {
     let s = O.Z.captureCrash(e, {
       extra: t
     });
-    p.Z.track(C.rMx.APP_CRASHED, {
+    p.Z.track(j.rMx.APP_CRASHED, {
       path: n.pathname,
       extra: t,
       error_message: e.message,

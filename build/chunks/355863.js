@@ -59,10 +59,6 @@ let O = "migrated",
   I = .01,
   S = {
     [h.Odu.GUILDS]: {
-      minSize: {
-        width: 312,
-        height: 300
-      },
       resizeX: !1,
       resizeY: !0,
       dragAnywhere: !1,
@@ -78,14 +74,15 @@ let O = "migrated",
           width: "auto",
           height: .65
         },
-        pinned: !1
-      }
+        pinned: !1,
+        minSize: {
+          width: 312,
+          height: 300
+        }
+      },
+      version: m.bv
     },
     [h.Odu.TEXT]: {
-      minSize: {
-        width: 430,
-        height: 300
-      },
       resizeX: !0,
       resizeY: !0,
       dragAnywhere: !1,
@@ -101,14 +98,15 @@ let O = "migrated",
           width: .565,
           height: .65
         },
-        pinned: !0
-      }
+        pinned: !0,
+        minSize: {
+          width: 430,
+          height: 300
+        }
+      },
+      version: m.bv
     },
     [h.Odu.VOICE]: {
-      minSize: {
-        width: 272,
-        height: 100
-      },
       resizeX: !1,
       resizeY: !1,
       dragAnywhere: !0,
@@ -124,14 +122,15 @@ let O = "migrated",
           width: "auto",
           height: "auto"
         },
-        pinned: !0
-      }
+        pinned: !0,
+        minSize: {
+          width: 272,
+          height: 100
+        }
+      },
+      version: m.bv
     },
     [h.Odu.GUILDS_TEXT]: {
-      minSize: {
-        height: 300,
-        width: 610
-      },
       resizeX: !0,
       resizeY: !0,
       dragAnywhere: !1,
@@ -147,14 +146,15 @@ let O = "migrated",
           width: .6,
           height: .45
         },
-        pinned: !1
-      }
+        pinned: !1,
+        minSize: {
+          height: 300,
+          width: 610
+        }
+      },
+      version: m.bv
     },
     [h.Odu.VOICE_V3]: {
-      minSize: {
-        width: 272,
-        height: 24
-      },
       resizeX: !1,
       resizeY: !1,
       dragAnywhere: !0,
@@ -170,15 +170,15 @@ let O = "migrated",
           width: "auto",
           height: "auto"
         },
-        pinned: !0
+        pinned: !0,
+        minSize: {
+          width: 272,
+          height: 24
+        }
       },
-      version: m.H
+      version: m.HN
     },
     [h.Odu.VIDEO]: {
-      minSize: {
-        width: 128,
-        height: 128
-      },
       resizeX: !0,
       resizeY: !0,
       dragAnywhere: !0,
@@ -195,15 +195,15 @@ let O = "migrated",
           width: 408,
           height: 128
         },
-        pinned: !0
+        pinned: !0,
+        minSize: {
+          width: 128,
+          height: 128
+        }
       },
-      version: m.H
+      version: m.HN
     },
     [h.Odu.GO_LIVE]: {
-      minSize: {
-        width: 276,
-        height: 164
-      },
       resizeX: !0,
       resizeY: !0,
       dragAnywhere: !0,
@@ -220,15 +220,15 @@ let O = "migrated",
           width: 256,
           height: 144
         },
-        pinned: !1
+        pinned: !1,
+        minSize: {
+          width: 276,
+          height: 164
+        }
       },
-      version: m.H
+      version: m.HN
     },
     [h.Odu.QUICK_ACTIONS]: {
-      minSize: {
-        width: 216,
-        height: 56
-      },
       resizeX: !1,
       resizeY: !1,
       dragAnywhere: !0,
@@ -244,15 +244,15 @@ let O = "migrated",
           width: "auto",
           height: "auto"
         },
-        pinned: !1
+        pinned: !1,
+        minSize: {
+          width: 216,
+          height: 56
+        }
       },
-      version: m.H
+      version: m.HN
     },
     [h.Odu.NOTIFICATIONS]: {
-      minSize: {
-        width: 320,
-        height: 100
-      },
       resizeX: !1,
       resizeY: !1,
       dragAnywhere: !0,
@@ -268,15 +268,15 @@ let O = "migrated",
           height: "auto",
           width: "auto"
         },
-        pinned: !0
+        pinned: !0,
+        minSize: {
+          width: 320,
+          height: 100
+        }
       },
-      version: m.H
+      version: m.HN
     },
     [h.Odu.ACTIVITY]: {
-      minSize: {
-        width: 320,
-        height: 100
-      },
       resizeX: !1,
       resizeY: !1,
       dragAnywhere: !0,
@@ -292,15 +292,15 @@ let O = "migrated",
           height: "auto",
           width: "auto"
         },
-        pinned: !1
+        pinned: !1,
+        minSize: {
+          width: 320,
+          height: 100
+        }
       },
-      version: m.H
+      version: m.HN
     },
     [h.Odu.FRIENDS]: {
-      minSize: {
-        width: 350,
-        height: 350
-      },
       resizeX: !1,
       resizeY: !0,
       dragAnywhere: !0,
@@ -317,15 +317,15 @@ let O = "migrated",
           height: 500,
           width: 350
         },
+        minSize: {
+          width: 350,
+          height: 350
+        },
         pinned: !1
       },
-      version: m.H
+      version: m.HN
     },
     [h.Odu.CLICK_ZONE_DEBUG]: {
-      minSize: {
-        width: 50,
-        height: 50
-      },
       resizeX: !0,
       resizeY: !0,
       dragAnywhere: !0,
@@ -341,15 +341,15 @@ let O = "migrated",
           height: "auto",
           width: "auto"
         },
-        pinned: !0
+        pinned: !0,
+        minSize: {
+          width: 50,
+          height: 50
+        }
       },
-      version: m.H
+      version: m.HN
     },
     [h.Odu.PERFORMANCE_DEBUG]: {
-      minSize: {
-        width: 120,
-        height: 300
-      },
       resizeX: !1,
       resizeY: !1,
       dragAnywhere: !0,
@@ -365,9 +365,13 @@ let O = "migrated",
           height: "auto",
           width: "auto"
         },
-        pinned: !0
+        pinned: !0,
+        minSize: {
+          width: 120,
+          height: 300
+        }
       },
-      version: m.H
+      version: m.HN
     }
   };
 
@@ -419,9 +423,10 @@ function C(e) {
     widgetId: t,
     anchor: n,
     size: r,
-    opacity: i
+    opacity: i,
+    minSize: o
   } = e;
-  return N(t, (e, t) => x(e, n, r, i))
+  return N(t, (e, t) => x(e, n, r, i, o))
 }
 
 function P(e) {
@@ -469,12 +474,13 @@ function L(e) {
   })
 }
 
-function x(e, t, n, r) {
+function x(e, t, n, r, o) {
   i = y(E({}, i), {
     [e.id]: e.merge({
       anchor: null != t ? t : e.anchor,
       size: null != n ? n : e.size,
-      opacity: null != r ? r : e.opacity
+      opacity: null != r ? r : e.opacity,
+      minSize: null != o ? o : e.minSize
     })
   })
 }
@@ -560,8 +566,8 @@ function V(e) {
 }
 
 function Z(e) {
-  var t;
-  return null == (t = S[e]) ? void 0 : t.defaultSettings
+  let t = S[e];
+  if (null != t) return t.defaultSettings
 }
 class H extends(o = c.ZP.PersistedStore) {
   initialize(e) {
@@ -577,8 +583,10 @@ class H extends(o = c.ZP.PersistedStore) {
         let n = a.find(e => e.type === r);
         if (null != n || S[r].version !== e.version) continue;
         s = t = !0;
-        let c = (0, l.Z)();
-        n = new _.Z(y(E({}, this.getWidgetDefaultSettings(r)), {
+        let c = (0, l.Z)(),
+          u = Z(r);
+        if (null == u) return;
+        n = new _.Z(y(E({}, u), {
           type: r,
           id: c,
           layoutId: o,
@@ -658,11 +666,15 @@ class H extends(o = c.ZP.PersistedStore) {
         case "REQUIRED":
         case "OPTIONAL_DEFAULT":
           var o;
-          (null != (o = r.version) ? o : 0) === t && n.push(y(E({}, r.defaultSettings), {
-            type: i,
-            id: (0, l.Z)(),
-            layoutId: e
-          }))
+          if ((null != (o = r.version) ? o : 0) === t) {
+            let t = Z(i);
+            if (null == t) return;
+            n.push(y(E({}, t), {
+              type: i,
+              id: (0, l.Z)(),
+              layoutId: e
+            }))
+          }
       }
     }), n
   }
@@ -735,7 +747,9 @@ g(H, "displayName", "LayoutStore"), g(H, "persistKey", "LayoutStore"), g(H, "mig
         return null != n && (null == o && n[1].type === h.Odu.VOICE && (o = n[0]), null == r && n[1].type === h.Odu.TEXT && (r = n[1].pinned), null != r && null != o || void 0)
       }), r || null == o) return;
     let a = (0, l.Z)();
-    n.widgets = [o, a], i.push([a, y(E({}, Z(h.Odu.GUILDS_TEXT)), {
+    n.widgets = [o, a];
+    let s = Z(h.Odu.GUILDS_TEXT);
+    null != s && i.push([a, y(E({}, s), {
       type: h.Odu.GUILDS_TEXT,
       id: a,
       layoutId: t,
@@ -768,7 +782,7 @@ g(H, "displayName", "LayoutStore"), g(H, "persistKey", "LayoutStore"), g(H, "mig
   for (let e in t) {
     let n = t[e];
     r[e] = y(E({}, n), {
-      version: 0
+      version: m.bv
     })
   }
   return {

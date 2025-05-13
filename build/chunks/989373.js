@@ -78,7 +78,7 @@ function S(e) {
     withTitleBar: t,
     windowKey: n
   } = e;
-  return y(n, h.$) ? (0, r.jsx)(u.Z, {
+  return y(n, h.$S) ? (0, r.jsx)(u.Z, {
     withTitleBar: t,
     windowKey: n,
     title: "Discord Overlay",
