@@ -72,14 +72,14 @@ let S = () => (0, i.jsxs)(l.Fragment, {
         flatActivityCount: T = !1,
         isRegister: L = !1
       } = e,
-      P = (0, d.WR)({
-        location: "invite"
-      }),
       {
-        currentUser: b
+        currentUser: P
       } = (0, a.cj)([N.default], () => ({
         currentUser: N.default.getCurrentUser()
-      }));
+      })),
+      b = (0, d.WR)({
+        location: "invite"
+      }) && null != P;
     if (null == c) return null;
     let R = null != c.guild ? new x.ZP(c.guild) : null,
       Z = null != c.channel ? (0, p.jD)(c.channel) : null,
@@ -167,8 +167,8 @@ let S = () => (0, i.jsxs)(l.Fragment, {
         online: c.approximate_presence_count,
         total: c.approximate_member_count,
         flat: T
-      }), P ? (0, i.jsx)(m.R, {}) : (0, i.jsx)(s.jQ, {
-        user: b
+      }), b ? (0, i.jsx)(m.R, {}) : (0, i.jsx)(s.jQ, {
+        user: P
       })]
     })
   }
