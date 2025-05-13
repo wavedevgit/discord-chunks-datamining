@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(45251),
   _ = n(156012),
   b = n(74365),
-  E = n(618857),
-  y = n(695346),
+  y = n(618857),
+  E = n(695346),
   x = n(23750),
   v = n(592125),
   O = n(594174),
@@ -209,9 +209,9 @@ let k = i.memo(function(e) {
     }
   }(t.state), d = i.useCallback(() => {
     (0, g.gD)(t.scheduledMessageId).then(() => {
-      (0, E.C$)()
+      (0, y.C$)()
     }).catch(e => {
-      (0, E.wW)(e.message)
+      (0, y.wW)(e.message)
     })
   }, [t.scheduledMessageId]);
   return (0, r.jsx)("div", {
@@ -233,7 +233,7 @@ let k = i.memo(function(e) {
           message: o,
           channel: n,
           className: P.message,
-          compact: y.jU.getSetting(),
+          compact: E.jU.getSetting(),
           animateAvatar: !1,
           focusProps: A
         }, o.id), (0, r.jsx)(p.P3F, {

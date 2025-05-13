@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(15210),
   _ = n(43542),
   b = n(910200),
-  E = n(358595),
-  y = n(981631),
+  y = n(358595),
+  E = n(981631),
   x = n(388032),
   v = n(583136);
 
@@ -30,7 +30,7 @@ function O(e) {
     message: l,
     onTransitionToInviteChannel: c,
     onAcceptInstantInvite: d
-  } = e, p = i.useRef(null), [f, g] = i.useState(!0), [O, C] = i.useState(!1), S = t.state === y.r2o.ACCEPTING, I = (0, o.e7)([u.Z], () => u.Z.useReducedMotion);
+  } = e, p = i.useRef(null), [f, g] = i.useState(!0), [O, C] = i.useState(!1), S = t.state === E.r2o.ACCEPTING, I = (0, o.e7)([u.Z], () => u.Z.useReducedMotion);
   i.useLayoutEffect(() => {
     var e, t;
     C((null != (t = null == (e = p.current) ? void 0 : e.clientHeight) ? t : 0) > 328)
@@ -49,7 +49,7 @@ function O(e) {
         transition: I ? void 0 : "height 0.2s ease"
       } : {}
     }, [f, O, I]);
-  return null == N ? (0, r.jsx)(E.Z, {}) : (0, r.jsxs)(s.P3F, {
+  return null == N ? (0, r.jsx)(y.Z, {}) : (0, r.jsxs)(s.P3F, {
     className: a()(v.guildInviteContainer, {
       [v.clickable]: O && f
     }),

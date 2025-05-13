@@ -1,6 +1,6 @@
 /** Chunk was on 36087 **/
 n.d(t, {
-  Z: () => E
+  Z: () => y
 }), n(388685), n(642613);
 var r = n(255367),
   i = n(73800),
@@ -19,12 +19,12 @@ var r = n(255367),
   _ = n(124368),
   b = n(572198);
 
-function E(e) {
+function y(e) {
   let {
     channel: t,
     channelRecord: n,
     deleteChannel: l
-  } = e, E = (0, o.Wu)([p.Z, f.Z], () => a()(p.Z.getThreadsForParent(n.guild_id, n.id)).values().filter(e => {
+  } = e, y = (0, o.Wu)([p.Z, f.Z], () => a()(p.Z.getThreadsForParent(n.guild_id, n.id)).values().filter(e => {
     let {
       id: n
     } = e;
@@ -34,21 +34,21 @@ function E(e) {
       id: t
     } = e;
     return f.Z.getChannel(t)
-  }).filter(h.lm).sort((e, t) => g.default.compare(e.id, t.id)).value(), [t.oldestReadMessageId, n.guild_id, n.id]), y = i.useCallback((e, t) => {
+  }).filter(h.lm).sort((e, t) => g.default.compare(e.id, t.id)).value(), [t.oldestReadMessageId, n.guild_id, n.id]), E = i.useCallback((e, t) => {
     (0, m.ok)(e, t, _.on.INBOX)
   }, []);
   return i.useEffect(() => {
-    null == n || !t.isFullyLoaded || t.hasError || t.collapsed || 0 !== E.length || s.Z.wait(() => {
+    null == n || !t.isFullyLoaded || t.hasError || t.collapsed || 0 !== y.length || s.Z.wait(() => {
       (0, c.In)(t.channelId, !0), l(t.channelId)
     })
   }), (0, r.jsx)("div", {
     className: b.container,
-    children: E.map(e => (0, r.jsx)(d.oL, {
+    children: y.map(e => (0, r.jsx)(d.oL, {
       channel: n,
       children: (0, r.jsx)(u.ZP, {
         className: b.forumPost,
         threadId: e.id,
-        goToThread: y
+        goToThread: E
       })
     }, e.id))
   })

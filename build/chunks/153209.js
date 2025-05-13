@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(695346),
   _ = n(626135),
   b = n(709054),
-  E = n(791914),
-  y = n(981631),
+  y = n(791914),
+  E = n(981631),
   x = n(388032),
   v = n(929968),
   O = n(413813);
@@ -64,14 +64,14 @@ function C(e) {
     className: a()(v.container, {
       [v.widerInbox]: I
     }),
-    children: [(0, r.jsx)(E.Z, {
+    children: [(0, r.jsx)(y.Z, {
       tab: s.X.FOR_YOU,
       setTab: t,
       badgeState: n,
       closePopout: l,
       children: A ? (0, r.jsx)(j, {
         onClick: () => {
-          null != T && (g.d$.updateSetting(T.id), _.default.track(y.rMx.NOTIFICATION_CENTER_ACTION, {
+          null != T && (g.d$.updateSetting(T.id), _.default.track(E.rMx.NOTIFICATION_CENTER_ACTION, {
             action_type: d.ud.MARK_ALL_READ
           }))
         }

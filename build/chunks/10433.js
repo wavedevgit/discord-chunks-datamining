@@ -23,7 +23,7 @@ function b(e) {
     code: t,
     message: n,
     embedUrl: b
-  } = e, [E, y, x] = (0, a.Wu)([f.Z], () => [f.Z.getApplication(t), f.Z.isInvalidApplication(t), f.Z.getApplicationFetchState(t)], [t]), v = (0, a.e7)([d.Z], () => {
+  } = e, [y, E, x] = (0, a.Wu)([f.Z], () => [f.Z.getApplication(t), f.Z.isInvalidApplication(t), f.Z.getApplicationFetchState(t)], [t]), v = (0, a.e7)([d.Z], () => {
     var e;
     return null != (e = d.Z.getGuildId()) ? e : void 0
   }), [O, j] = i.useState(!1), C = i.useCallback(e => {
@@ -42,13 +42,13 @@ function b(e) {
   }, [t]), i.useEffect(() => {
     O && x === f.M.FETCHED && I()
   }, [O, x, I]), i.useEffect(() => {
-    O && y && p.default.track(h.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
+    O && E && p.default.track(h.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
       device_platform: l.tq ? "mobile_web" : "desktop_web",
       sender_user_id: n.author.id,
       guild_id: v,
       channel_id: n.channel_id
     })
-  }, [O, v, y, n.author.id, n.channel_id]), y) ? (0, r.jsxs)(c.Z, {
+  }, [O, v, E, n.author.id, n.channel_id]), E) ? (0, r.jsxs)(c.Z, {
     containerRef: S,
     children: [(0, r.jsx)(c.Z.Header, {
       text: g.intl.string(g.t.j4KtLS)
@@ -64,7 +64,7 @@ function b(e) {
         })]
       })
     })]
-  }) : null == E || x === f.M.FETCHING ? (0, r.jsxs)(c.Z, {
+  }) : null == y || x === f.M.FETCHING ? (0, r.jsxs)(c.Z, {
     containerRef: S,
     children: [(0, r.jsx)(c.Z.Header, {
       text: g.intl.string(g.t.m9hXGR)
@@ -72,7 +72,7 @@ function b(e) {
       resolving: !0
     })]
   }) : (0, r.jsx)(s.O, {
-    app: u.ZP.createFromServer(E),
+    app: u.ZP.createFromServer(y),
     embedUrl: b,
     linkType: s.U.APP_DISCOVERY,
     onView: I

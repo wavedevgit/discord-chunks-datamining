@@ -1,6 +1,6 @@
 /** Chunk was on 36087 **/
 n.d(t, {
-  Z: () => E
+  Z: () => y
 });
 var r = n(255367),
   i = n(73800),
@@ -19,12 +19,12 @@ var r = n(255367),
   _ = n(388032),
   b = n(264634);
 
-function E(e) {
+function y(e) {
   let {
     onOpen: t,
     onClose: n,
-    className: E,
-    "data-jump-section": y
+    className: y,
+    "data-jump-section": E
   } = e, x = i.useRef(null), v = (0, l.e7)([m.default], () => m.default.getCurrentUser()), O = (0, o.Q3)("RecentsButton"), j = i.useRef(null), C = (0, l.e7)([p.ZP], () => (null == v ? void 0 : v.id) != null && p.ZP.getMentionCount(v.id, g.W.NOTIFICATION_CENTER) > 0), {
     enabled: S
   } = c.Z.useExperiment({
@@ -70,7 +70,7 @@ function E(e) {
             return e
           }({}, n), o = o = {
             ref: x,
-            className: E,
+            className: y,
             onClick: e,
             icon: a.xx7,
             iconSize: O ? N : void 0,
@@ -78,7 +78,7 @@ function E(e) {
             tooltip: t ? null : _.intl.string(_.t.GSmTKC),
             selected: t,
             showBadge: C || I || i,
-            "data-jump-section": y
+            "data-jump-section": E
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

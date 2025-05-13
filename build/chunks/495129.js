@@ -19,8 +19,8 @@ var i = n(120356),
   g = n(430824),
   _ = n(594174),
   b = n(938475),
-  E = n(5192),
-  y = n(981631),
+  y = n(5192),
+  E = n(981631),
   x = n(388032),
   v = n(653072);
 
@@ -39,7 +39,7 @@ function O(e) {
       rawName: t
     } = e;
     return "channel_id" === t
-  })) ? void 0 : O.rawValue, R = (0, a.e7)([g.Z], () => g.Z.getGuild(w)), k = (0, a.e7)([h.Z], () => h.Z.getChannel(Z)), D = (0, a.e7)([_.default], () => _.default.getCurrentUser()), L = (0, a.e7)([], () => P.author.id === (null == D ? void 0 : D.id)), M = null == (S = A.recipients) ? void 0 : S.find(e => e !== P.author.id), U = (0, a.e7)([_.default], () => null != M ? _.default.getUser(M) : null), F = (0, d.ZP)(P), B = (0, E._T)(A.getGuildId(), A.id, U), G = (0, a.Wu)([b.ZP], () => null != k ? b.ZP.getVoiceStatesForChannel(k) : [], [k]), H = G.some(e => e.user.id === (null == D ? void 0 : D.id)), V = null == (T = P.embeds[0]) || null == (N = T.fields) || null == (I = N.find(e => {
+  })) ? void 0 : O.rawValue, R = (0, a.e7)([g.Z], () => g.Z.getGuild(w)), k = (0, a.e7)([h.Z], () => h.Z.getChannel(Z)), D = (0, a.e7)([_.default], () => _.default.getCurrentUser()), L = (0, a.e7)([], () => P.author.id === (null == D ? void 0 : D.id)), M = null == (S = A.recipients) ? void 0 : S.find(e => e !== P.author.id), U = (0, a.e7)([_.default], () => null != M ? _.default.getUser(M) : null), F = (0, d.ZP)(P), B = (0, y._T)(A.getGuildId(), A.id, U), G = (0, a.Wu)([b.ZP], () => null != k ? b.ZP.getVoiceStatesForChannel(k) : [], [k]), H = G.some(e => e.user.id === (null == D ? void 0 : D.id)), V = null == (T = P.embeds[0]) || null == (N = T.fields) || null == (I = N.find(e => {
     let {
       rawName: t
     } = e;
@@ -100,7 +100,7 @@ function O(e) {
       children: [(0, r.jsxs)(o.zxk, {
         color: o.zxk.Colors.BRAND,
         onClick: () => {
-          null != Z && null != w && ((0, f.uL)(y.Z5c.CHANNEL(w, Z)), c.default.selectVoiceChannel(Z))
+          null != Z && null != w && ((0, f.uL)(E.Z5c.CHANNEL(w, Z)), c.default.selectVoiceChannel(Z))
         },
         className: v.button,
         innerClassName: v.buttonInner,
