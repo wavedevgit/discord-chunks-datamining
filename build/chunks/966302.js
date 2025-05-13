@@ -179,7 +179,7 @@ function ea(e) {
           isShown: o
         } = t;
         return (0, r.jsx)(R.C, {
-          buttonRef: g,
+          ref: g,
           join: !0,
           enabled: d,
           className: a()(z.actionButton, {

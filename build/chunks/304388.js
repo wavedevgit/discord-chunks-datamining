@@ -69,48 +69,50 @@ let p = i.forwardRef(function(e, t) {
     isPopoutBlocked: f,
     onPopoutOpen: m,
     onPopoutClose: g,
-    onRequestClose: b
-  } = e, [_, x] = i.useState(!1), {
-    isHovered: y,
-    setIsHovered: C,
-    onMouseEnter: v,
-    onMouseLeave: j,
-    cancelTimers: O
+    onRequestClose: b,
+    buttonRef: _
+  } = e, x = i.useRef(null), [y, C] = i.useState(!1), {
+    isHovered: v,
+    setIsHovered: j,
+    onMouseEnter: O,
+    onMouseLeave: E,
+    cancelTimers: I
   } = (0, a.Z)(200, 300);
 
-  function E(e) {
-    "focus" === e.type || _ || v()
-  }
-
-  function I() {
-    _ || j()
-  }
-
   function S(e) {
-    O(), x(!_), _ ? null == g || g() : null == m || m(), (!y || _) && e()
+    "focus" === e.type || y || O()
+  }
+
+  function P() {
+    y || E()
+  }
+
+  function Z(e) {
+    I(), C(!y), y ? null == g || g() : null == m || m(), (!v || y) && e()
   }
   i.useImperativeHandle(t, () => ({
     hidePopout() {
-      C(!1), x(!1)
+      j(!1), C(!1)
     }
-  }), [C, x]);
-  let P = y && !f || _;
+  }), [j, C]);
+  let N = v && !f || y;
   return (0, r.jsx)(o.yRy, {
+    targetElementRef: null != _ ? _ : x,
     animation: o.yRy.Animation.FADE,
-    shouldShow: P,
+    shouldShow: N,
     animationPosition: "top",
     position: "top",
     align: h,
     spacing: 16,
     onRequestClose: () => {
       if ((null == b ? void 0 : b()) === l.F) return l.F;
-      C(!1), x(!1), null == g || g()
+      j(!1), C(!1), null == g || g()
     },
     renderPopout: e => (0, r.jsx)(d, u({
-      isHovered: P,
-      onFocus: () => x(!0),
-      onMouseEnter: v,
-      onMouseLeave: I,
+      isHovered: N,
+      onFocus: () => C(!0),
+      onMouseEnter: O,
+      onMouseLeave: P,
       renderPopout: n
     }, e)),
     children: e => {
@@ -120,14 +122,15 @@ let p = i.forwardRef(function(e, t) {
       } = e;
       return (0, r.jsx)(r.Fragment, {
         children: p({
-          onClick: e => S(() => t(e)),
+          onClick: e => Z(() => t(e)),
           onKeyDown: e => {
-            (e.key === s.vn.ENTER || e.key === s.vn.SPACE) && S(() => n(e))
+            (e.key === s.vn.ENTER || e.key === s.vn.SPACE) && Z(() => n(e))
           },
           className: c.actionBarButton,
-          onMouseEnter: E,
-          onMouseLeave: I,
-          isActive: _
+          onMouseEnter: S,
+          onMouseLeave: P,
+          isActive: y,
+          ref: null != _ ? _ : x
         })
       })
     }

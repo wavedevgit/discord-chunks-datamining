@@ -190,7 +190,7 @@ function Q(e) {
         isShown: n
       } = t;
       return (0, i.createElement)(R.Z, K(q({}, e), {
-        buttonRef: M,
+        ref: M,
         isActive: n,
         count: en,
         key: "call-members",
@@ -236,7 +236,7 @@ function Q(e) {
         isShown: n
       } = t;
       return (0, i.createElement)(T.Z, K(q({
-        buttonRef: L
+        ref: L
       }, e), {
         key: "more-options",
         isActive: n,

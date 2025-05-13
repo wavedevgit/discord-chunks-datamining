@@ -216,7 +216,7 @@ function M(e) {
                 }
                 return e
               }({}, e), r = r = {
-                buttonRef: ei,
+                ref: ei,
                 key: "more-options",
                 isActive: i
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
