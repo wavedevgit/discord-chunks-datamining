@@ -1,6 +1,6 @@
 /**
   Module ID: 20565
-  Original File Name: 59785eed08f994bc
+  Original File Name: a641417192488223
 **/
 .orbIconSVG__85200 {
     height: 18px
@@ -27,7 +27,6 @@
     align-items: center;
     background-color: var(--black);
     border-radius: 20px;
-    height: 400px;
     padding: 20px;
     width: 290px
 }
@@ -46,6 +45,10 @@
 
 .theme-light .closeBtn_cf1d1c {
     color: var(--black-500)
+}
+
+.theme-dark .orbsTermsButton_cf1d1c {
+    color: var(--white)
 }
 
 .spinnerContainer_cf1d1c {
@@ -142,6 +145,14 @@
     width: 100%
 }
 
+.orbsTermsButton_cf1d1c {
+    margin-top: 16px
+}
+
+.orbsTermsButton_cf1d1c:hover {
+    text-decoration: underline
+}
+
 .orbsBalance_cf1d1c {
     margin-left: 2px
 }
@@ -152,4 +163,4 @@
     top: 2.5px
 }
 
-/*# sourceMappingURL=59785eed08f994bc.css.map*/
+/*# sourceMappingURL=a641417192488223.css.map*/
