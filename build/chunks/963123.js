@@ -381,7 +381,7 @@ function $(e) {
         await (0, V.qP)(e) && eu()
       }(0, y.FE)(el, {
         content: e,
-        ctaContent: S.jZ.VISIT_SITE
+        ctaContent: S.jZ.OPEN_GAME_LINK
       })
     }, [el, tE, eu]),
     tW = l.useMemo(() => (0, N.z)(N.i.VIDEO_PLAYER_THUMBNAIL, el), [el]),

@@ -304,20 +304,22 @@ let Y = {
   },
   list: {
     react: (e, t, n) => {
-      let r = e.ordered ? "ol" : "ul",
-        i = null == e.start ? void 0 : (e.start + (e.items.length - 1)).toString().length;
-      return (0, s.reactElement)(r, "".concat(n.key), {
+      let i = e.ordered ? "ol" : "ul",
+        o = null == e.start ? void 0 : (e.start + (e.items.length - 1)).toString().length;
+      return (0, s.reactElement)(i, "".concat(n.key), {
         start: e.start,
         className: n.formatInline ? k.inlineFormat : null,
         style: {
-          "--totalCharacters": i
+          "--totalCharacters": o
         },
-        children: e.items.map((e, r) => {
-          let i = (0, s.reactElement)("span", "".concat(n.key, "-").concat(r, "-innerSpan"), {
+        children: e.items.map((e, i) => {
+          let o = (0, s.reactElement)("span", "".concat(n.key, "-").concat(i, "-innerSpan"), {
             children: t(e, n)
           });
-          return (0, s.reactElement)("li", "".concat(n.key, "-").concat(r) + r, {
-            children: i
+          return (0, s.reactElement)("li", "".concat(n.key, "-").concat(i) + i, {
+            children: [o, (0, r.jsx)(l.nn4, {
+              children: ","
+            }, "screen-reader-pause")]
           })
         })
       })
@@ -325,11 +327,13 @@ let Y = {
   },
   heading: {
     react: (e, t, n) => {
-      let r = (0, s.reactElement)("span", "".concat(n.key, "-innerSpan"), {
+      let i = (0, s.reactElement)("span", "".concat(n.key, "-innerSpan"), {
         children: t(e.content, n)
       });
       return (0, s.reactElement)("h" + e.level, (null == n ? void 0 : n.key) != null ? "".concat(n.key) : null, {
-        children: r,
+        children: [i, (0, r.jsx)(l.nn4, {
+          children: ","
+        }, "screen-reader-pause")],
         className: n.formatInline ? k.inlineFormat : null
       })
     }
