@@ -1,17 +1,18 @@
-/** Chunk was on 1272 **/
-n.d(t, {
-  r: () => l
+/** Chunk was on 79988 **/
+o.d(a, {
+  r2: () => n,
+  sc: () => c
 });
-var r = n(818083),
-  i = n(987338);
-let l = (0, r.B)({
+var r = o(818083),
+  t = o(987338);
+let n = (0, r.B)({
   kind: "guild",
   id: "2025-05_enable_emoji_in_channel_names_guild",
   label: "Emojis in Channel Name",
   defaultConfig: {
     enabled: !1
   },
-  commonTriggerPoint: i.$P.CONNECTION_OPEN,
+  commonTriggerPoint: t.$P.CONNECTION_OPEN,
   treatments: [{
     id: 1,
     label: "Show emoji picker in channel name input fields",
@@ -19,4 +20,15 @@ let l = (0, r.B)({
       enabled: !0
     }
   }]
-})
+});
+
+function c(e) {
+  let {
+    guildId: a,
+    location: o
+  } = e;
+  return n.useExperiment({
+    guildId: a,
+    location: o
+  }).enabled
+}

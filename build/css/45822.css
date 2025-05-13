@@ -1,6 +1,6 @@
 /**
   Module ID: 45822
-  Original File Name: 244269728216c9c7
+  Original File Name: 5ec97b56118ed2f2
 **/
 .modalRoot__7169d {
     height: 478px
@@ -49,6 +49,26 @@
 
 .description_ac72c6,.name_ac72c6,.type_ac72c6 {
     margin-bottom: 20px
+}
+
+.nameInput_ac72c6 {
+    align-items: stretch;
+    background-color: transparent;
+    border: 1px solid var(--input-border);
+    border-radius: var(--radius-sm);
+    display: flex;
+    flex-direction: row;
+    overflow: hidden
+}
+
+.nameInput_ac72c6:focus-within {
+    border: 1px solid var(--text-link)
+}
+
+.emojiButton_ac72c6 {
+    background-color: var(--input-background);
+    border-radius: 0;
+    padding-right: 12px
 }
 
 .channelNameNote_ac72c6 {
@@ -117,8 +137,22 @@
     position: relative
 }
 
+.inputWrapperWithEmojiPicker_ac72c6 {
+    background-color: transparent;
+    flex-grow: 1
+}
+
 .inputInner_ac72c6 {
     padding-left: 28px
+}
+
+.inputInnerWithEmojiPicker_ac72c6,.inputWrapperWithEmojiPicker_ac72c6 {
+    border: none;
+    border-radius: 0
+}
+
+.inputInnerWithEmojiPicker_ac72c6:hover,.inputWrapperWithEmojiPicker_ac72c6:hover {
+    border: none
 }
 
 .inputPrefix_ac72c6 {
@@ -217,4 +251,4 @@
     top: 14px
 }
 
-/*# sourceMappingURL=244269728216c9c7.css.map*/
+/*# sourceMappingURL=5ec97b56118ed2f2.css.map*/

@@ -298,7 +298,7 @@ let Q = r.memo(function(e) {
           action: () => (0, s.ZDy)(async () => {
             let {
               default: e
-            } = await Promise.all([n.e("45094"), n.e("45822")]).then(n.bind(n, 218613));
+            } = await Promise.all([n.e("45094"), n.e("63228")]).then(n.bind(n, 218613));
             return n => (0, i.jsx)(e, H(F({}, n), {
               channelType: L.d4z.GUILD_TEXT,
               guildId: t.id
@@ -311,7 +311,7 @@ let Q = r.memo(function(e) {
           action: () => (0, s.ZDy)(async () => {
             let {
               default: e
-            } = await Promise.all([n.e("45094"), n.e("45822")]).then(n.bind(n, 218613));
+            } = await Promise.all([n.e("45094"), n.e("63228")]).then(n.bind(n, 218613));
             return n => (0, i.jsx)(e, H(F({}, n), {
               channelType: L.d4z.GUILD_CATEGORY,
               guildId: t.id

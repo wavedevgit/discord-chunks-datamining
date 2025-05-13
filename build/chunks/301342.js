@@ -103,7 +103,7 @@ let I = i.memo(function(e) {
         null != t && (0, c.ZDy)(async () => {
           let {
             default: i
-          } = await Promise.all([n.e("45094"), n.e("45822")]).then(n.bind(n, 218613));
+          } = await Promise.all([n.e("45094"), n.e("63228")]).then(n.bind(n, 218613));
           return n => (0, r.jsx)(i, x(E({}, n), {
             channelType: e,
             guildId: t,
