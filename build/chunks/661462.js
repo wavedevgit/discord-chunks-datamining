@@ -4,8 +4,8 @@ t.d(n, {
 }), t(388685);
 var o = t(255367),
   r = t(73800),
-  i = t(481060),
-  c = t(785717),
+  c = t(481060),
+  i = t(785717),
   a = t(128156),
   l = t(311044),
   s = t(408986),
@@ -17,8 +17,8 @@ function f(e) {
     user: n,
     currentUser: t,
     section: r,
-    subsection: i,
-    displayProfile: c,
+    subsection: c,
+    displayProfile: i,
     guildId: u,
     channelId: f,
     onClose: p
@@ -26,10 +26,10 @@ function f(e) {
   return r === d.oh.ACTIVITY ? (0, o.jsx)(a.Z, {
     user: n,
     currentUser: t,
-    displayProfile: c,
+    displayProfile: i,
     guildId: u,
     channelId: f,
-    subsection: i,
+    subsection: c,
     onClose: p
   }) : r === d.oh.MUTUAL_FRIENDS ? (0, o.jsx)(l.Z, {
     user: n,
@@ -53,10 +53,10 @@ function p(e) {
     items: b,
     initialSection: _,
     initialSubsection: y,
-    onClose: h
+    onClose: g
   } = e, {
-    trackUserProfileAction: g
-  } = (0, c.KZ)(), [{
+    trackUserProfileAction: h
+  } = (0, i.KZ)(), [{
     section: x,
     subsection: j,
     text: I
@@ -96,12 +96,12 @@ function p(e) {
   }), t));
   return (0, o.jsxs)("div", {
     className: u.container,
-    children: [(0, o.jsx)(i.njP, {
+    children: [(0, o.jsx)(c.njP, {
       type: "top",
       className: u.tabBar,
       selectedItem: x,
       onItemSelect: e => {
-        g({
+        h({
           action: "PRESS_SECTION",
           section: e
         }), O(n => {
@@ -109,17 +109,17 @@ function p(e) {
           return null != (t = b.find(n => n.section === e)) ? t : n
         })
       },
-      children: b.map(e => (0, o.jsx)(i.njP.Item, {
+      children: b.map(e => (0, o.jsx)(c.njP.Item, {
         className: u.tabBarItem,
         id: e.section,
         "aria-label": e.text,
-        children: (0, o.jsx)(i.Text, {
+        children: (0, o.jsx)(c.Text, {
           variant: "heading-md/normal",
           tag: "span",
           children: e.text
         })
       }, e.section))
-    }), (0, o.jsx)(i.njP.Panel, {
+    }), (0, o.jsx)(c.njP.Panel, {
       id: x,
       "aria-label": I,
       className: u.tabBarPanel,
@@ -131,7 +131,7 @@ function p(e) {
         channelId: m,
         section: x,
         subsection: j,
-        onClose: h
+        onClose: g
       })
     })]
   })

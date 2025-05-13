@@ -4,8 +4,8 @@ t.d(n, {
 });
 var o = t(255367),
   r = t(73800),
-  i = t(481060),
-  c = t(81897),
+  c = t(481060),
+  i = t(81897),
   a = t(906732),
   l = t(566898),
   s = t(785717),
@@ -23,17 +23,17 @@ function _(e) {
     channelId: _,
     onClose: y
   } = e, {
-    analyticsLocations: h
+    analyticsLocations: g
   } = (0, a.ZP)(), {
-    context: g,
+    context: h,
     trackUserProfileAction: x
   } = (0, s.KZ)(), {
     mutualFriends: j,
     mutualFriendsCount: I
-  } = (0, d.Z)(n), O = (0, c.Z)();
+  } = (0, d.Z)(n), O = (0, i.Z)();
   return r.useEffect(() => {
     (0, u.Z)(n.id, O)
-  }, [n.id, O]), (0, o.jsx)(i.Ttm, {
+  }, [n.id, O]), (0, o.jsx)(c.Ttm, {
     className: b.scroller,
     fade: !0,
     children: null == j ? Array.from({
@@ -51,11 +51,11 @@ function _(e) {
       let {
         key: n,
         user: r,
-        status: i
+        status: c
       } = e;
       return (0, o.jsx)(p.Z, {
         user: r,
-        status: i,
+        status: c,
         guildId: t,
         channelId: _,
         onSelect: () => {
@@ -79,9 +79,9 @@ function _(e) {
               })
             }
             return e
-          }({}, g), n = n = {
+          }({}, h), n = n = {
             userId: r.id,
-            sourceAnalyticsLocations: h
+            sourceAnalyticsLocations: g
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
             var t = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

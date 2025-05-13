@@ -92,7 +92,7 @@ class c {
       size: n
     }) : null : this.getBannerURL({
       canAnimate: t,
-      size: 480
+      size: n
     })
   }
   getPreviewBio(e) {

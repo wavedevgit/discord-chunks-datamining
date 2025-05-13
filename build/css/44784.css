@@ -1,6 +1,6 @@
 /**
   Module ID: 44784
-  Original File Name: c0389efd81113d56
+  Original File Name: fa3e398aa16f2437
 **/
 .scroller__95bea {
     display: flex;
@@ -1067,6 +1067,10 @@
 
 .backdrop__9c3be {
     background: var(--bg-backdrop);
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0
+}
+
+.backdrop__9c3be,.backgroundImage__9c3be {
     bottom: 0;
     left: 0;
     position: absolute;
@@ -1074,12 +1078,17 @@
     top: 0
 }
 
-.backdrop__9c3be,.profile__9c3be {
-    border-radius: var(--radius-lg) var(--radius-lg) 0 0
+.backgroundImage__9c3be {
+    background-size: 100%;
+    -webkit-mask-image: linear-gradient(180deg,#000 0,transparent 280px);
+    mask-image: linear-gradient(180deg,#000 0,transparent 280px);
+    mix-blend-mode: overlay;
+    opacity: .35
 }
 
 .profile__9c3be {
     background: var(--background-surface-high);
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
     box-shadow: var(--shadow-medium);
     display: flex;
     flex-direction: column;
@@ -1183,4 +1192,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=c0389efd81113d56.css.map*/
+/*# sourceMappingURL=fa3e398aa16f2437.css.map*/

@@ -5,8 +5,8 @@ t.d(n, {
 var o = t(255367);
 t(73800);
 var r = t(481060),
-  i = t(37234),
-  c = t(566898),
+  c = t(37234),
+  i = t(566898),
   a = t(769654),
   l = t(785717),
   s = t(806729),
@@ -31,26 +31,26 @@ function p(e) {
       length: 10
     }).map((e, n) => (0, o.jsxs)("div", {
       className: f.loadingItem,
-      children: [(0, o.jsx)(c.ZT, {
+      children: [(0, o.jsx)(i.ZT, {
         width: 40,
         opacity: .08
-      }), (0, o.jsx)(c.ZT, {
+      }), (0, o.jsx)(i.ZT, {
         width: 135,
         opacity: .08
       })]
     }, n)) : (null != m || b) && (null == m ? void 0 : m.length) !== 0 ? null == m ? void 0 : m.map(e => {
       let {
         guild: r,
-        nick: c
+        nick: i
       } = e;
       return (0, o.jsx)(d.Z, {
         user: n,
         guild: r,
-        nick: c,
+        nick: i,
         onSelect: () => {
           p({
             action: "PRESS_MUTUAL_GUILD"
-          }), (0, a.X)(r.id), t(), (0, i.xf)()
+          }), (0, a.X)(r.id), t(), (0, c.xf)()
         }
       }, r.id)
     }) : (0, o.jsx)(u.b0, {})

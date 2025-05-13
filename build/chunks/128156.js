@@ -5,8 +5,8 @@ t.d(n, {
 var o = t(255367);
 t(73800);
 var r = t(442837),
-  i = t(481060),
-  c = t(468363),
+  c = t(481060),
+  i = t(468363),
   a = t(353647),
   l = t(158776),
   s = t(885110),
@@ -18,8 +18,8 @@ var r = t(442837),
   b = t(744802),
   _ = t(493043),
   y = t(864141),
-  h = t(264481),
-  g = t(693408),
+  g = t(264481),
+  h = t(693408),
   x = t(228168),
   j = t(981631),
   I = t(388032),
@@ -36,7 +36,7 @@ function v(e) {
     onClose: T
   } = e, {
     voiceActivityStatusEnabled: N
-  } = (0, c.U)({
+  } = (0, i.U)({
     location: "UserProfileModalV2Activity"
   }), Z = (0, u.b)({
     location: "UserProfileModalV2Activity"
@@ -52,12 +52,12 @@ function v(e) {
     guildId: C
   }), k = (0, r.e7)([a.Z], () => a.Z.isFetchingUserOutbox(n.id)), L = n.id === t.id, M = (0, r.e7)([s.Z, l.Z], () => {
     let e = L ? s.Z.getStatus() : l.Z.getStatus(n.id);
-    return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
+    return e === c.Skl.OFFLINE || e === c.Skl.INVISIBLE
   }), D = w.length > 0 || null != E, G = N && null == E && null == U && null != B, R = !M && (D || G), V = S.length > 0;
-  return R || V || !k ? R || V || k ? (0, o.jsxs)(i.Ttm, {
+  return R || V || !k ? R || V || k ? (0, o.jsxs)(c.Ttm, {
     className: O.scroller,
     fade: !0,
-    children: [R ? (0, o.jsxs)(g.Z, {
+    children: [R ? (0, o.jsxs)(h.Z, {
       heading: I.intl.string(I.t.J6STd3),
       children: [!Z && G && (0, o.jsx)(y.Z, {
         user: n,
@@ -83,10 +83,10 @@ function v(e) {
         voiceChannel: B,
         onClose: T
       })]
-    }) : null, V ? (0, o.jsx)(g.Z, {
+    }) : null, V ? (0, o.jsx)(h.Z, {
       heading: I.intl.string(I.t.jzgEoK),
       subheading: L ? I.intl.format(I.t["4bk9Ag"], {
-        learnMoreHook: (e, n) => (0, o.jsx)(i.eee, {
+        learnMoreHook: (e, n) => (0, o.jsx)(c.eee, {
           href: d.Z.getArticleURL(j.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, n)
@@ -101,14 +101,14 @@ function v(e) {
         onClose: T
       }, e.id))
     }) : null]
-  }) : L ? (0, o.jsx)(h.Uf, {
+  }) : L ? (0, o.jsx)(g.Uf, {
     onClose: T
-  }) : (0, o.jsx)(h.P9, {
+  }) : (0, o.jsx)(g.P9, {
     user: n,
     guildId: C,
     channelId: P
   }) : (0, o.jsx)("div", {
     className: O.spinner,
-    children: (0, o.jsx)(i.$jN, {})
+    children: (0, o.jsx)(c.$jN, {})
   })
 }
