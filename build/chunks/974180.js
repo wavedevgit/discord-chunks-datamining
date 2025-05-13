@@ -117,8 +117,14 @@ async function tS(t) {
     ! function(t, e, n, i) {
       let a = tI(e);
       if (0 === t.length && 0 === a.length) return;
-      let r = (0, l.difference)(t, a).filter(t => null != t && null == t_[e][t]);
-      (0, l.difference)(a, t).filter(t => null != t && t_[e][t] === i).forEach(t => {
+      let r = (0, l.difference)(t, a).filter(t => {
+        var n;
+        return null != t && (null == (n = t_[e]) ? void 0 : n[t]) == null
+      });
+      (0, l.difference)(a, t).filter(t => {
+        var n;
+        return null != t && (null == (n = t_[e]) ? void 0 : n[t]) === i
+      }).forEach(t => {
         delete t_[e][t]
       }), r.forEach(t => {
         if (null == t_[e] ? t_[e] = {
