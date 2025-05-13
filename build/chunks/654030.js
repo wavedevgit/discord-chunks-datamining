@@ -116,30 +116,30 @@ class G extends(r = l.PureComponent) {
         channelId: l
       } = this.props;
       if (null != e && null != n && null != r && null != e.session_id && null != e.application_id) {
-        var a, o;
-        let s = (0, m.Z)(e, L.xjy.EMBEDDED);
-        c.Z.join({
-          userId: n,
-          sessionId: e.session_id,
-          applicationId: e.application_id,
-          channelId: l,
-          messageId: r.id,
-          source: L.Sbl.MESSAGE_EMBED,
-          analyticsLocations: t,
-          partyId: null == (a = e.party) ? void 0 : a.id,
-          embedded: s,
-          activity: e
-        }), s || (0, h.Z)({
-          type: L.q5t.JOIN,
-          source: L.Sbl.MESSAGE_EMBED,
-          userId: n,
-          guildId: i,
-          channelId: l,
-          applicationId: e.application_id,
-          partyId: null == (o = e.party) ? void 0 : o.id,
-          messageId: r.id,
-          analyticsLocations: t
-        })
+        let o = (0, m.Z)(e, L.xjy.EMBEDDED);
+        if (c.Z.join({
+            userId: n,
+            sessionId: e.session_id,
+            applicationId: e.application_id,
+            channelId: l,
+            messageId: r.id,
+            source: L.Sbl.MESSAGE_EMBED,
+            analyticsLocations: t,
+            embedded: o
+          }), !o) {
+          var a;
+          (0, h.Z)({
+            type: L.q5t.JOIN,
+            source: L.Sbl.MESSAGE_EMBED,
+            userId: n,
+            guildId: i,
+            channelId: l,
+            applicationId: e.application_id,
+            partyId: null == (a = e.party) ? void 0 : a.id,
+            messageId: r.id,
+            analyticsLocations: t
+          })
+        }
       }
     }), U(this, "handleInvite", async () => {
       let {

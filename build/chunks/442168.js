@@ -15,7 +15,7 @@ var r = n(255367),
   p = n(314910),
   m = n(83773);
 
-function E(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -33,7 +33,7 @@ function E(e) {
   }
   return e
 }
-let g = {
+let E = {
     visibility: "hidden"
   },
   h = {
@@ -63,7 +63,7 @@ function b(e) {
   let w = () => {
       var e;
       let t = null == (e = O.current) ? void 0 : e.getBoundingClientRect();
-      return null == t || n ? g : {
+      return null == t || n ? E : {
         width: t.width,
         height: t.height,
         top: t.top,
@@ -72,7 +72,7 @@ function b(e) {
     },
     P = e => {
       let t = null == y ? void 0 : y.getBoundingClientRect();
-      if (I.current = t, e.timestamp !== j || null == t || n) return g;
+      if (I.current = t, e.timestamp !== j || null == t || n) return E;
       let {
         top: r,
         left: l
@@ -100,18 +100,18 @@ function b(e) {
     N = (0, u.Yzy)(_, {
       ref: R,
       keys: e => e.timestamp,
-      from: e => E({
+      from: e => g({
         position: "fixed",
         visibility: "hidden",
         opacity: 1
       }, b.enabled ? P(e) : w()),
-      enter: e => [E({
+      enter: e => [g({
         opacity: 1,
         visibility: "visible"
       }, P(e))],
-      leave: E({
+      leave: g({
         opacity: 0
-      }, !b.enabled && E({
+      }, !b.enabled && g({
         height: 0,
         width: 0
       }, (() => {

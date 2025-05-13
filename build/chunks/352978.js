@@ -21,8 +21,8 @@ let m = i.memo(function(e) {
     videoComponent: a,
     className: p,
     fit: m = "contain",
-    mirror: E = !1,
-    paused: g = !1,
+    mirror: g = !1,
+    paused: E = !1,
     streamPreviewURL: h,
     videoSpinnerContext: v,
     userId: S,
@@ -34,7 +34,7 @@ let m = i.memo(function(e) {
     userId: S,
     streamId: t,
     loading: O,
-    paused: g
+    paused: E
   });
   let {
     onReady: Z
@@ -44,7 +44,7 @@ let m = i.memo(function(e) {
     loading: O,
     videoSpinnerContext: v,
     streamKey: b,
-    paused: g
+    paused: E
   }), j = i.useCallback(() => {
     y(!1), Z()
   }, [Z]);
@@ -52,13 +52,13 @@ let m = i.memo(function(e) {
     className: o()(f.wrapper, r),
     children: [null != t && (0, l.jsx)(a, {
       className: o()(f.video, (0, d.l)(f, "video", m), {
-        [f.mirror]: E
+        [f.mirror]: g
       }, p),
       streamId: t,
       onResize: n,
       onReady: j,
-      paused: g
-    }), g ? null : (0, l.jsx)("div", {
+      paused: E
+    }), E ? null : (0, l.jsx)("div", {
       className: o()(f.previewWrapper, {
         [f.loading]: O
       }),

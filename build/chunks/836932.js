@@ -49,8 +49,7 @@ function d(e, t, n, d, u) {
         sessionId: p,
         applicationId: d.id,
         channelId: e.id,
-        messageId: t.id,
-        activity: u
+        messageId: t.id
       }), r.Z.updateNotificationStatus(o), v("join")
     },
     onDismissClick: () => {

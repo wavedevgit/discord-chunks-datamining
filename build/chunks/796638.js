@@ -16,9 +16,9 @@ var r = n(255367),
   f = n(921500);
 let p = 112,
   m = 16 / 9 * 112 + 8,
-  E = 10 * u.Z.Millis.SECOND;
+  g = 10 * u.Z.Millis.SECOND;
 
-function g(e) {
+function E(e) {
   var t;
   let n = o.default.getId();
   return e.type === d.fO.USER && e.user.id === n && (null == (t = e.voiceState) ? void 0 : t.selfVideo)
@@ -44,7 +44,7 @@ function h(e, t) {
   l.useEffect(() => {
     let e = setTimeout(() => {
       v(Date.now())
-    }, E);
+    }, g);
     return () => {
       clearTimeout(e)
     }
@@ -66,14 +66,14 @@ function h(e, t) {
             case d.fO.USER:
               var n;
               let r = "\x06";
-              return e.speaking ? r = "\x03" : t - e.lastSpoke < E ? r = "\x04" : (null == (n = e.voiceState) ? void 0 : n.selfVideo) && (r = "\x05"), "".concat(r).concat(function(e) {
+              return e.speaking ? r = "\x03" : t - e.lastSpoke < g ? r = "\x04" : (null == (n = e.voiceState) ? void 0 : n.selfVideo) && (r = "\x05"), "".concat(r).concat(function(e) {
                 let t = String(864e13).length;
                 return String(864e13 - e).padStart(t, "0")
               }(e.lastSpoke)).concat((0, a.Z)(e.userNick, e.user))
           }
         })(e, n)),
         [p, m] = (0, i.partition)(l, d.Io),
-        h = p.findIndex(g),
+        h = p.findIndex(E),
         v = null; - 1 !== h && (v = p[h], p.splice(h, 1));
       let b = null == v || f ? e : e - r - u,
         O = Math.max(0, Math.min(Math.floor((b - u) / (o + u)), c, t.length)),
@@ -121,12 +121,12 @@ function v(e) {
     inCall: s,
     popoutWindow: d,
     paused: p = !1
-  } = e, E = null != d;
+  } = e, g = null != d;
   return (0, r.jsx)("div", {
     className: f.root,
     children: t.map(e => {
       if (null == e) return null;
-      let t = g(e);
+      let t = E(e);
       return (0, r.jsx)("div", {
         className: f.tileSizer,
         style: t ? {
@@ -144,7 +144,7 @@ function v(e) {
           width: t ? m : n,
           inCall: s,
           paused: p,
-          inPopout: E
+          inPopout: g
         })
       }, e.id)
     })

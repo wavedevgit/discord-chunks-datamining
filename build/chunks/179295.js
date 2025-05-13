@@ -16,7 +16,7 @@ function c(e, t) {
     handleMouseMove: c,
     handleMouseUp: d,
     handleMouseEnter: f
-  } = e, p = r.useRef(null), m = (0, l.e7)([a.Z], () => a.Z.getRTCConnection((0, i.V9)(t))), E = r.useCallback((e, t, r) => {
+  } = e, p = r.useRef(null), m = (0, l.e7)([a.Z], () => a.Z.getRTCConnection((0, i.V9)(t))), g = r.useCallback((e, t, r) => {
     p.current = Date.now(), n(e, t, r)
   }, [n]);
   return {
@@ -33,7 +33,7 @@ function c(e, t) {
         })), p.current = null
       }
     }, [d, m]),
-    handleMouseDown: E,
+    handleMouseDown: g,
     handleMouseMove: c,
     handleMouseEnter: f
   }

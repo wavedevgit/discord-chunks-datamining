@@ -51,7 +51,6 @@ function x(e) {
         channelId: null != A ? A : void 0,
         applicationId: x.id,
         isStart: null == Z,
-        instanceId: Z,
         embeddedActivitiesManager: k,
         customId: L,
         referrerId: C,

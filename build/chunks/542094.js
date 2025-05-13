@@ -1,9 +1,9 @@
 /** Chunk was on 23491 **/
 n.d(t, {
   JS: () => h,
-  Qv: () => w,
+  Qv: () => A,
   ZP: () => _,
-  fD: () => A,
+  fD: () => w,
   w1: () => I
 }), n(997841), n(704826), n(35282);
 var i, r = n(493683),
@@ -51,7 +51,7 @@ function _(e) {
       embeddedActivity: t
     } = e;
     return f.id === t.applicationId
-  }), _ = w({
+  }), _ = A({
     context: n,
     applicationId: f.id
   }), j = I({
@@ -63,7 +63,7 @@ function _(e) {
     launchingComponentId: d,
     commandOrigin: p,
     source: s
-  }), S = A(f, t.activity);
+  }), S = w(f, t.activity);
   return {
     imageBackground: P,
     videoUrl: Z,
@@ -75,7 +75,7 @@ function _(e) {
   }
 }
 
-function A(e, t) {
+function w(e, t) {
   var n;
   let i = null != (n = e.flags) ? n : 0;
   if (!((0, c.yE)(i, Z.udG.EMBEDDED_RELEASED) || (0, c.yE)(i, Z.udG.EMBEDDED_FIRST_PARTY))) return;
@@ -83,7 +83,7 @@ function A(e, t) {
   return P.eB.includes(r) ? r.replace("_", " ").replace(/(^\w|\s\w)/g, e => e.toUpperCase()) : void 0
 }
 
-function w(e) {
+function A(e) {
   let {
     context: t,
     applicationId: n,
@@ -117,12 +117,12 @@ function I(e) {
     customId: g,
     referrerId: P,
     onConfirmActivityLaunchChecksAlertOpen: Z
-  } = e, h = (0, a.q)(t, m), _ = w({
+  } = e, h = (0, a.q)(t, m), _ = A({
     context: i,
     applicationId: t,
     fetchesApplication: m
   }), {
-    analyticsLocations: A
+    analyticsLocations: w
   } = (0, o.ZP)(), I = (0, O.Z)(), j = (0, d.GK)(null != h ? h : void 0);
   switch (_) {
     case 0:
@@ -140,7 +140,7 @@ function I(e) {
           targetApplicationId: t,
           locationObject: l,
           channelId: e,
-          analyticsLocations: A,
+          analyticsLocations: w,
           componentId: v,
           commandOrigin: y,
           sectionName: b,
@@ -158,14 +158,12 @@ function I(e) {
           applicationId: t,
           activityChannelId: "channel" === i.type ? i.channel.id : void 0,
           locationObject: l,
-          analyticsLocations: A,
+          analyticsLocations: w,
           componentId: v,
           sectionName: b,
           source: E,
           customId: g,
-          referrerId: P,
-          instanceId: void 0,
-          isContextlessActivity: !1
+          referrerId: P
         }).then(e => e && (null == u ? void 0 : u({
           applicationId: t
         })))

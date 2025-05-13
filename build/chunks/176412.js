@@ -25,8 +25,8 @@ var i, r, l = n(73800),
   Z = n(541099),
   h = n(827498),
   _ = n(346683),
-  A = n(981631),
-  w = n(388032);
+  w = n(981631),
+  A = n(388032);
 let I = (i = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -95,7 +95,7 @@ function T(e) {
       let {
         applicationId: t
       } = e;
-      a && P.yT(h.ti.ACTIVITY), (0, v.yw)(A.rMx.APP_LAUNCHER_ACTIVITY_ITEM_SELECTED, {
+      a && P.yT(h.ti.ACTIVITY), (0, v.yw)(w.rMx.APP_LAUNCHER_ACTIVITY_ITEM_SELECTED, {
         location: i,
         application_id: t,
         section_name: r,
@@ -109,8 +109,8 @@ function T(e) {
     source: S,
     fetchesApplication: O,
     onConfirmActivityLaunchChecksAlertOpen: m
-  }), M = d.Ttl.BRAND, L = null != o ? o : w.intl.string(w.t.zKX8Nj);
-  return j === s.JS.JOIN ? (M = d.Ttl.GREEN, L = w.intl.string(w.t.d9PsMj)) : j !== s.JS.LEAVE || E || (M = d.Ttl.RED, L = w.intl.string(w.t["Hi1/aW"])), {
+  }), M = d.Ttl.BRAND, L = null != o ? o : A.intl.string(A.t.zKX8Nj);
+  return j === s.JS.JOIN ? (M = d.Ttl.GREEN, L = A.intl.string(A.t.d9PsMj)) : j !== s.JS.LEAVE || E || (M = d.Ttl.RED, L = A.intl.string(A.t["Hi1/aW"])), {
     onActivityItemSelected: D,
     activityAction: j,
     buttonColor: M,
@@ -121,7 +121,7 @@ function T(e) {
 function D(e, t) {
   let n = Z.Z.entrypoint(),
     i = l.useMemo(() => (0, o.debounce)((e, t) => {
-      (0, v.yw)(A.rMx.APP_LAUNCHER_EMPTY_STATE_ENCOUNTERED, {
+      (0, v.yw)(w.rMx.APP_LAUNCHER_EMPTY_STATE_ENCOUNTERED, {
         type: e,
         source: t
       })
@@ -135,7 +135,7 @@ function D(e, t) {
 }
 
 function M(e) {
-  g.S.dispatchToLastSubscribed(A.CkL.OPEN_APP_LAUNCHER, {
+  g.S.dispatchToLastSubscribed(w.CkL.OPEN_APP_LAUNCHER, {
     applicationId: e
   })
 }

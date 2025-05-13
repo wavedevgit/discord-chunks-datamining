@@ -20,20 +20,19 @@ async function m(e) {
   let {
     applicationId: t,
     channelId: n,
-    guildId: a,
-    isContextless: s
+    guildId: a
   } = e;
   try {
     return await (0, _.Z)(t, n)
-  } catch (l) {
-    let e = s ? r.E.CONTEXTLESS : null != a ? r.E.GUILD_CHANNEL : r.E.PRIVATE_CHANNEL;
+  } catch (s) {
+    let e = null != a ? r.E.GUILD_CHANNEL : r.E.PRIVATE_CHANNEL;
     i.Z.dispatch({
       type: "EMBEDDED_ACTIVITY_LAUNCH_FAIL",
       nonce: "",
       applicationId: t,
       channelId: null != n ? n : null,
       guildId: null != a ? a : null,
-      error: new o.Hx(l),
+      error: new o.Hx(s),
       locationKind: e
     })
   }
@@ -64,18 +63,16 @@ async function E(e) {
     applicationId: n,
     channel: r,
     user: i,
-    onConfirmActivityLaunchChecksAlertOpen: o,
-    isContextless: a
+    onConfirmActivityLaunchChecksAlertOpen: o
   } = e;
   if (null == i.nsfwAllowed) {
-    var s, l, u;
+    var a, s, l;
     let e = null != t ? t : await m({
       applicationId: n,
       channelId: null == r ? void 0 : r.id,
-      guildId: null != (l = null == r ? void 0 : r.getGuildId()) ? l : void 0,
-      isContextless: a
+      guildId: null != (s = null == r ? void 0 : r.getGuildId()) ? s : void 0
     });
-    if (null == e || null != (u = null == (s = e.embeddedActivityConfig) ? void 0 : s.requires_age_gate) && u && !await new Promise(t => {
+    if (null == e || null != (l = null == (a = e.embeddedActivityConfig) ? void 0 : a.requires_age_gate) && l && !await new Promise(t => {
         null == o || o(), (0, c.V)({
           application: e,
           channelId: null == r ? void 0 : r.id,
@@ -92,17 +89,15 @@ async function b(e) {
     application: n,
     applicationId: r,
     channel: i,
-    onConfirmActivityLaunchChecksAlertOpen: o,
-    isContextless: a
-  } = e, c = null != n ? n : await m({
+    onConfirmActivityLaunchChecksAlertOpen: o
+  } = e, a = null != n ? n : await m({
     applicationId: r,
     channelId: null == i ? void 0 : i.id,
-    guildId: null != (t = null == i ? void 0 : i.getGuildId()) ? t : void 0,
-    isContextless: a
+    guildId: null != (t = null == i ? void 0 : i.getGuildId()) ? t : void 0
   });
-  return null != c && (!!((0, s.yE)(c.flags, h.udG.EMBEDDED_RELEASED) || c.isVerified || l.ZP.hasActivityEverBeenLaunched(r)) || new Promise(e => {
+  return null != a && (!!((0, s.yE)(a.flags, h.udG.EMBEDDED_RELEASED) || a.isVerified || l.ZP.hasActivityEverBeenLaunched(r)) || new Promise(e => {
     null == o || o(), (0, d.j)({
-      application: c,
+      application: a,
       onConfirm: () => e(!0),
       onCancel: () => e(!1)
     })

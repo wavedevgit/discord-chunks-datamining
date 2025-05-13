@@ -77,7 +77,6 @@ function R(e) {
           channelId: null != M ? M : void 0,
           applicationId: t.id,
           isStart: null == U,
-          instanceId: null != U ? U : void 0,
           embeddedActivitiesManager: G,
           customId: a,
           referrerId: R,

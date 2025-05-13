@@ -346,7 +346,7 @@ function eu(e) {
     label: J.intl.string(J.t.VJlc0d),
     trackingArea: f.j_.PLAY,
     onClick: () => {
-      var e, t;
+      var e;
       c.Z.join({
         userId: N.author.id,
         sessionId: w.session_id,
@@ -355,9 +355,7 @@ function eu(e) {
         messageId: N.id,
         source: q.Sbl.MESSAGE_EMBED,
         analyticsLocations: v,
-        partyId: null == (e = w.party) ? void 0 : e.id,
-        embedded: (0, W.Z)(w, q.xjy.EMBEDDED),
-        activity: w
+        embedded: (0, W.Z)(w, q.xjy.EMBEDDED)
       }), (0, Y.Z)({
         type: q.q5t.JOIN,
         source: q.Sbl.MESSAGE_EMBED,
@@ -365,7 +363,7 @@ function eu(e) {
         guildId: j.guild_id,
         channelId: j.id,
         applicationId: w.application_id,
-        partyId: null == (t = w.party) ? void 0 : t.id,
+        partyId: null == (e = w.party) ? void 0 : e.id,
         messageId: N.id,
         analyticsLocations: v
       })
@@ -401,7 +399,6 @@ function eu(e) {
         channelId: j.id,
         applicationId: O.id,
         isStart: !0,
-        instanceId: void 0,
         embeddedActivitiesManager: X,
         customId: void 0,
         referrerId: void 0,
