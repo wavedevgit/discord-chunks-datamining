@@ -33,7 +33,8 @@ let O = o.ZP.connectStores([m.Z], () => ({
       disabled: a
     } = e;
     return (0, l.jsx)(u.Z, {
-      value: r ? j.intl.string(j.t["6HzNgY"]) : t,
+      value: t,
+      hideMessage: r ? j.intl.string(j.t["6HzNgY"]) : null,
       buttonColor: c.zxk.Colors.BRAND,
       onCopy: i,
       autoFocus: n,
