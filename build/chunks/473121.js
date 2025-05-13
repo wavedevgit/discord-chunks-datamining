@@ -16,8 +16,9 @@ let d = e => {
       header: d,
       subheader: u,
       button: m
-    }
-  } = e, p = (null == m ? void 0 : m.type) === "submit", x = l.useRef(a.Z.reactParserFor((t = function(e) {
+    },
+    isModeratorReport: p
+  } = e, x = (null == m ? void 0 : m.type) === "submit", b = l.useRef(a.Z.reactParserFor((t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -55,8 +56,8 @@ let d = e => {
     }) : null, null != u && "" !== d ? (0, r.jsx)(i.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
-      children: x.current(u)
-    }) : null, p && (0, r.jsx)(i.Text, {
+      children: b.current(u)
+    }) : null, x && !p && (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
       children: s.intl.format(s.t.Q0tSKS, {})
     })]
