@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 let r;
 n.d(t, {
-  Z: () => w
+  Z: () => L
 }), n(388685), n(583741);
 var i = n(255367);
 n(73800);
@@ -93,7 +93,7 @@ class x extends o.Z {
       null != e && (0, d.Dc)(e) && (o = !0, (0, f.RM)(e.id))
     }
     let x = () => 0 === m.Z.totalGuilds && !y.isPlatformEmbedded,
-      w = s.bN();
+      L = s.bN();
     e = [{
       key: "Unified NUF Modal",
       open: async function(e) {
@@ -143,7 +143,7 @@ class x extends o.Z {
     }, {
       key: "New User Age Gate",
       open: c.i,
-      predicate: () => w && !x() && !T.a
+      predicate: () => L && !x() && !T.a
     }, {
       key: "Claim Account Modal",
       open: e => c.j(y.isPlatformEmbedded, e),
@@ -181,4 +181,4 @@ class x extends o.Z {
     }), t()
   }
 }
-let w = new x
+let L = new x

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 n.r(t), n.d(t, {
   default: () => F,
-  useAppSidebarState: () => V
+  useAppSidebarState: () => B
 });
 var r = n(255367),
   i = n(73800),
@@ -33,8 +33,8 @@ var r = n(255367),
   A = n(768581),
   Z = n(998502),
   x = n(228488),
-  w = n(950796),
-  L = n(981631),
+  L = n(950796),
+  w = n(981631),
   R = n(918559),
   D = n(741764),
   k = n(388032),
@@ -60,7 +60,7 @@ function G(e) {
   return e
 }
 
-function B(e, t) {
+function V(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -72,7 +72,7 @@ function B(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let V = (0, a.U)(() => ({
+let B = (0, a.U)(() => ({
   isOpen: !0
 }));
 
@@ -116,15 +116,15 @@ function H() {
     className: U.guildIcon
   }), e = u.name) : null != a && (a.isDM() || a.isGroupDM()) ? (e = k.intl.string(k.t.YUU0RE), O = (0, r.jsx)(c.gw7, {
     size: "xs"
-  })) : t.pathname.startsWith(L.Z5c.GLOBAL_DISCOVERY) ? (e = k.intl.string(k.t["4nEZLi"]), O = (0, r.jsx)(c.Jmo, {
+  })) : t.pathname.startsWith(w.Z5c.GLOBAL_DISCOVERY) ? (e = k.intl.string(k.t["4nEZLi"]), O = (0, r.jsx)(c.Jmo, {
     size: "xs"
-  })) : t.pathname.startsWith(L.Z5c.NITRO_HOME) ? (e = k.intl.string(k.t.Ipxkoq), O = (0, r.jsx)(c.SrA, {
+  })) : t.pathname.startsWith(w.Z5c.NITRO_HOME) ? (e = k.intl.string(k.t.Ipxkoq), O = (0, r.jsx)(c.SrA, {
     size: "xs"
-  })) : t.pathname.startsWith(L.Z5c.COLLECTIBLES_SHOP) ? (e = k.intl.string(k.t.pWG4zc), O = (0, r.jsx)(c.EOn, {
+  })) : t.pathname.startsWith(w.Z5c.COLLECTIBLES_SHOP) ? (e = k.intl.string(k.t.pWG4zc), O = (0, r.jsx)(c.EOn, {
     size: "xs"
-  })) : t.pathname.startsWith(L.Z5c.FRIENDS) ? (e = k.intl.string(k.t.TdEu5e), O = (0, r.jsx)(c.iFz, {
+  })) : t.pathname.startsWith(w.Z5c.FRIENDS) ? (e = k.intl.string(k.t.TdEu5e), O = (0, r.jsx)(c.iFz, {
     size: "xs"
-  })) : t.pathname.startsWith(L.Z5c.FAMILY_CENTER) && (e = k.intl.string(M.default.RZqaJi), O = (0, r.jsx)(c.BFJ, {
+  })) : t.pathname.startsWith(w.Z5c.FAMILY_CENTER) && (e = k.intl.string(M.default.RZqaJi), O = (0, r.jsx)(c.BFJ, {
     size: "xs"
   })), null != e && "" !== e && (0, r.jsxs)("div", {
     className: U.title,
@@ -140,7 +140,7 @@ let F = i.memo(function() {
     Z.ZP.setMinimumSize(D.J, D.N)
   }, []);
   let e = (0, g.TH)("AppTitleBar"),
-    t = !V(e => e.isOpen) && e,
+    t = !B(e => e.isOpen) && e,
     {
       hasBugReporterAccess: n
     } = h.Z.useExperiment({
@@ -151,25 +151,25 @@ let F = i.memo(function() {
   i.useLayoutEffect(() => {
     Z.ZP.setMinimumSize(D.J, D.N)
   }, []);
-  let l = (0, s.e7)([C.Z], () => C.Z.darkSidebar ? L.BRd.DARK : void 0);
+  let l = (0, s.e7)([C.Z], () => C.Z.darkSidebar ? w.BRd.DARK : void 0);
   return (0, s.e7)([j.Z, I.Z], () => (0, x.rB)()) ? null : (0, r.jsx)(c.Wdt, {
     children: e => (0, r.jsx)(c.f6W, {
       theme: l,
-      children: i => (0, r.jsx)(w.T, {
+      children: i => (0, r.jsx)(L.T, {
         className: i,
         leading: t && (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(c.P3F, B(G({}, e), {
+          children: [(0, r.jsx)(c.P3F, V(G({}, e), {
             className: U.button,
             onClick: () => {
-              V.setState({
-                isOpen: !V.getState().isOpen
+              B.setState({
+                isOpen: !B.getState().isOpen
               })
             },
             children: (0, r.jsx)(z, {})
           })), (0, r.jsx)(c.P3F, {
             className: U.button,
             onClick: () => {
-              u.Z.open(L.oAB.ACCOUNT)
+              u.Z.open(w.oAB.ACCOUNT)
             },
             children: (0, r.jsx)(c.ewm, {
               size: "xs",
@@ -184,7 +184,7 @@ let F = i.memo(function() {
           }), (0, r.jsx)(f.Z, {
             canShowReminder: !0,
             className: U.button
-          }), (0, r.jsx)(v.Z, B(G({}, t ? {} : e), {
+          }), (0, r.jsx)(v.Z, V(G({}, t ? {} : e), {
             className: U.button
           })), n ? (0, r.jsx)(O.Z, {
             className: U.button

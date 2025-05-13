@@ -55,7 +55,7 @@ function T() {
       name: s.V.SPAM_MESSAGE_REQUEST_VIEW
     })
   });
-  let w = i.useCallback(e => {
+  let L = i.useCallback(e => {
       var n, i;
       let {
         row: o
@@ -71,7 +71,7 @@ function T() {
         hasSingleMessageRequest: l
       }, u)
     }, [t, l, j]),
-    L = i.useCallback(() => (0, r.jsxs)(h.Z, {
+    w = i.useCallback(() => (0, r.jsxs)(h.Z, {
       className: N.sectionTitle,
       children: [S.intl.format(S.t.C79Edn, {
         count: n
@@ -146,8 +146,8 @@ function T() {
           paddingBottom: 24,
           sectionHeight: v.oi,
           rowHeight: v.WN,
-          renderSection: L,
-          renderRow: w,
+          renderSection: w,
+          renderRow: L,
           sections: [t.length],
           chunkSize: 30,
           fade: !0

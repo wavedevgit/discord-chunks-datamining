@@ -2,7 +2,7 @@
 n.d(t, {
   FJ: () => en,
   RE: () => G,
-  T5: () => V,
+  T5: () => B,
   Xb: () => H,
   YK: () => ee,
   YS: () => J,
@@ -65,7 +65,7 @@ function x(e) {
   return e
 }
 
-function w(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -77,9 +77,9 @@ function w(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = null != (i = null == (r = T.Z.toURLSafe(window.GLOBAL_ENV.API_ENDPOINT)) ? void 0 : r.host) ? i : "localhost",
+let w = null != (i = null == (r = T.Z.toURLSafe(window.GLOBAL_ENV.API_ENDPOINT)) ? void 0 : r.host) ? i : "localhost",
   R = function() {
-    let e = L.split(":")[0];
+    let e = w.split(":")[0];
     if (!e.includes(".")) return e;
     let t = e.split("."),
       n = t[t.length - 1];
@@ -97,12 +97,12 @@ function G(e) {
   return /^http/.test(e) ? e : "".concat(location.protocol, "//").concat(location.host).concat("/" === e.charAt(0) ? "" : "/").concat(e)
 }
 
-function B(e) {
+function V(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [];
   return t.indexOf(e) > -1
 }
 
-function V(e, t) {
+function B(e, t) {
   let n = [],
     r = e.getGuildId();
   return [Z.d4z.GUILD_CATEGORY, ...g.tx].includes(e.type) || n.push(new Promise(t => {
@@ -197,8 +197,8 @@ function z(e, t) {
 
 function W(e, t) {
   var n;
-  return null == t ? e : w(x({}, e), {
-    presence: w(x({}, e.presence), {
+  return null == t ? e : L(x({}, e), {
+    presence: L(x({}, e.presence), {
       activity: null != (n = y.Z.getApplicationActivity(e.user.id, t)) ? n : null
     })
   })
@@ -259,12 +259,12 @@ async function J(e, t, n) {
   if ("string" == typeof n)
     if (e.transport === A.He.POST_MESSAGE) {
       let e = (0, u.ZP)(t);
-      if (null == e || !B(n, [e])) throw new P.Z({
+      if (null == e || !V(n, [e])) throw new P.Z({
         closeCode: Z.$VG.INVALID_ORIGIN
       }, "Invalid Origin")
     } else {
       let e = await X(t);
-      if (r = f.ZP.createFromServer(e), !B(n, e.rpc_origins)) throw new P.Z({
+      if (r = f.ZP.createFromServer(e), !V(n, e.rpc_origins)) throw new P.Z({
         closeCode: Z.$VG.INVALID_ORIGIN
       }, "Invalid Origin")
     } null == r && (r = f.ZP.createFromServer(await X(t)));

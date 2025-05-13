@@ -33,8 +33,8 @@ var i = n(243814),
   A = n(996106),
   Z = n(914946),
   x = n(452426),
-  w = n(561205),
-  L = n(600027),
+  L = n(561205),
+  w = n(600027),
   R = n(852926),
   D = n(186901),
   k = n(981631),
@@ -176,7 +176,7 @@ let G = {
         channel: l,
         guild: o,
         contextless: c
-      } = (0, L.T)(i), u = (0, g.ZP)({
+      } = (0, w.T)(i), u = (0, g.ZP)({
         application: t.application,
         channelId: null == l ? void 0 : l.id
       }), d = null != u ? E.Z.getWindow(u) : void 0;
@@ -245,7 +245,7 @@ let G = {
       if (null == r) throw new A.Z({
         errorCode: k.lTL.INVALID_COMMAND
       }, "No application.");
-      let i = null == (t = (0, w.Z)()) ? void 0 : t.id;
+      let i = null == (t = (0, L.Z)()) ? void 0 : t.id;
       if (null == i) throw new A.Z({
         errorCode: k.lTL.UNKNOWN_ERROR
       }, "Unable to find selected channel");
@@ -307,7 +307,7 @@ let G = {
       if (!(0, S.yE)(null != (t = n.application.flags) ? t : 0, k.udG.EMBEDDED)) throw new A.Z({
         errorCode: k.lTL.INVALID_COMMAND
       }, "This application cannot access this API");
-      let l = (0, w.Z)();
+      let l = (0, L.Z)();
       if (null == l) throw new A.Z({
         errorCode: k.lTL.INVALID_COMMAND
       }, "No channel found");
@@ -348,7 +348,7 @@ let G = {
       if (!(0, S.yE)(null != (t = r.application.flags) ? t : 0, k.udG.EMBEDDED)) throw new A.Z({
         errorCode: k.lTL.INVALID_COMMAND
       }, "This application cannot access this API");
-      let p = (0, w.Z)();
+      let p = (0, L.Z)();
       if (null == p && s) throw new A.Z({
         errorCode: k.lTL.INVALID_COMMAND
       }, "No channel found");

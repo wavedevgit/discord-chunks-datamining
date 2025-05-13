@@ -54,9 +54,9 @@ let x = function(e) {
     p.Y(T.Z5c.FRIENDS), (0, y.e)("friends")
   }, []);
   let x = (0, c.e7)([I.Z], () => I.Z.theme),
-    w = (0, C.If)(),
+    L = (0, C.If)(),
     {
-      section: L,
+      section: w,
       rows: R
     } = (0, c.cj)([v.ZP], () => v.ZP.getState()),
     D = (0, c.e7)([b.Z], () => b.Z.getSuggestionCount()),
@@ -69,7 +69,7 @@ let x = function(e) {
     },
     U = (0, g.Dt)(),
     G = (0, g.Dt)(),
-    B = [{
+    V = [{
       id: T.pJs.ONLINE,
       show: !E || R.filter(T.pJs.ONLINE).length > 0,
       content: j.intl.string(j.t.b9w3bG),
@@ -83,13 +83,13 @@ let x = function(e) {
       id: T.pJs.PENDING,
       show: !E || R.filter(T.pJs.PENDING).length > 0,
       content: (0, r.jsxs)(r.Fragment, {
-        children: [j.intl.string(j.t.p6IHGB), w > 0 && (0, r.jsx)(u.mAB, {
-          count: w,
+        children: [j.intl.string(j.t.p6IHGB), L > 0 && (0, r.jsx)(u.mAB, {
+          count: L,
           className: A.badge
         })]
       }),
       ariaLabel: j.intl.formatToPlainString(j.t.OAC0Z2, {
-        count: w.toString()
+        count: L.toString()
       }),
       className: A.item
     }, {
@@ -135,11 +135,11 @@ let x = function(e) {
           children: j.intl.string(j.t.TdEu5e)
         }), (0, r.jsx)(_.Z.Divider, {}), (0, r.jsx)(u.njP, {
           "aria-label": j.intl.string(j.t.TdEu5e),
-          selectedItem: L,
+          selectedItem: w,
           type: "top-pill",
           onItemSelect: M,
           className: A.tabBar,
-          children: B.filter(e => e.show).map(e => (0, r.jsx)(u.njP.Item, {
+          children: V.filter(e => e.show).map(e => (0, r.jsx)(u.njP.Item, {
             id: e.id,
             className: e.className,
             "aria-label": e.ariaLabel,
@@ -150,10 +150,10 @@ let x = function(e) {
     }), (0, r.jsxs)("div", {
       className: A.tabBody,
       children: [(0, r.jsx)(u.njP.Panel, {
-        id: L,
+        id: w,
         className: A.peopleColumn,
         "aria-labelledby": G,
-        children: L === T.pJs.ADD_FRIEND ? (0, r.jsx)(S.Z, {}) : (0, r.jsx)(N.Z, {
+        children: w === T.pJs.ADD_FRIEND ? (0, r.jsx)(S.Z, {}) : (0, r.jsx)(N.Z, {
           titleId: G
         })
       }), (0, r.jsx)("div", {

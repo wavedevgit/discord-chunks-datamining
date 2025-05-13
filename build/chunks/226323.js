@@ -97,8 +97,8 @@ function T(e) {
       nick: A,
       mute: Z,
       deaf: x,
-      serverMute: w,
-      serverDeaf: L
+      serverMute: L,
+      serverDeaf: w
     } = e,
     R = (0, o.e7)([_.Z], () => _.Z.isLocalMute(j.id)),
     D = (0, u.Z)({
@@ -110,8 +110,8 @@ function T(e) {
     U = null != A ? A : E.ZP.getName(j),
     {
       icon: G,
-      colorize: B,
-      getStatus: V
+      colorize: V,
+      getStatus: B
     } = null != (l = function(e) {
       let {
         serverDeaf: t,
@@ -126,15 +126,15 @@ function T(e) {
       if (l) return N.localMute;
       if (i) return N.mute
     }({
-      serverDeaf: L,
+      serverDeaf: w,
       deaf: x,
-      serverMute: w,
+      serverMute: L,
       mute: Z,
       localMute: R
     })) ? l : {},
-    H = null != V ? y.intl.formatToPlainString(y.t["1+MVBA"], {
+    H = null != B ? y.intl.formatToPlainString(y.t["1+MVBA"], {
       userName: U,
-      status: V()
+      status: B()
     }) : U;
 
   function F(e) {
@@ -193,7 +193,7 @@ function T(e) {
             },
             children: null != G ? (0, r.jsx)(G, {
               className: a()(I.avatarIconOverlay, {
-                [I.avatarIconRed]: B
+                [I.avatarIconRed]: V
               }),
               color: "currentColor",
               size: "xs"

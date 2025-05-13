@@ -31,16 +31,16 @@ var r, i = n(255367),
   A = n(871118),
   Z = n(707409),
   x = n(359110),
-  w = n(769654),
-  L = n(849171),
+  L = n(769654),
+  w = n(849171),
   R = n(314897),
   D = n(592125),
   k = n(594174),
   M = n(395361),
   U = n(639351),
   G = n(81063),
-  B = n(823379),
-  V = n(51144),
+  V = n(823379),
+  B = n(51144),
   H = n(599706),
   F = n(981631),
   z = n(388032),
@@ -321,7 +321,7 @@ er.Header = en, er.Body = e => {
       ref: h,
       onContextMenu: e => p(e, a),
       children: [(0, i.jsx)(u.P3F, {
-        onClick: () => (0, w.X)(r.id),
+        onClick: () => (0, L.X)(r.id),
         "aria-hidden": !0,
         tabIndex: -1,
         children: (0, i.jsxs)("div", {
@@ -527,7 +527,7 @@ er.Header = en, er.Body = e => {
         "aria-label": l.username,
         className: W.applicationStreamingAvatar
       }), (0, i.jsxs)("div", {
-        children: [q(V.ZP.getName(l)), Q(g)]
+        children: [q(B.ZP.getName(l)), Q(g)]
       }), (0, i.jsx)(S.ZP, {
         size: S.ZP.Sizes.SMALL
       })]
@@ -546,7 +546,7 @@ er.Header = en, er.Body = e => {
       return c(t)
     })
   }, [d]);
-  let p = (0, s.Wu)([k.default, R.default], () => Array.from(a).map(e => R.default.getId() === e ? null : k.default.getUser(e)).filter(B.lm)),
+  let p = (0, s.Wu)([k.default, R.default], () => Array.from(a).map(e => R.default.getId() === e ? null : k.default.getUser(e)).filter(V.lm)),
     f = (0, h.O)(),
     {
       analyticsLocations: m
@@ -589,7 +589,7 @@ er.Header = en, er.Body = e => {
         className: W.embeddedActivityImage
       }) : null, (0, i.jsxs)("div", {
         className: W.embeddedActivityImageOverlay,
-        children: [(0, i.jsx)(L.OV, {
+        children: [(0, i.jsx)(w.OV, {
           users: p,
           guildId: r,
           channelId: n.id

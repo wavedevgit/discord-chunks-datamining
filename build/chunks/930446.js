@@ -9,7 +9,7 @@ var r = n(772848),
   i = n(70956),
   o = n(960048),
   a = n(686325);
-let s = 12,
+let s = 12 * i.Z.Millis.HOUR,
   l = null;
 
 function c() {
@@ -17,9 +17,10 @@ function c() {
     t = Date.now();
   return null == l || f(l) ? l = {
     uuid: (0, r.Z)(),
-    initialized: t,
-    lastUsed: t
-  } : (e && (l.lastUsed = t), l)
+    createdAtTimestamp: t,
+    lastUsedTimestamp: t,
+    version: a.EI
+  } : (e && (l.lastUsedTimestamp = t), l)
 }
 
 function u() {
@@ -32,11 +33,11 @@ function d() {
 
 function f(e) {
   let t = Date.now();
-  if (t < e.initialized) return o.Z.addBreadcrumb({
+  if (t < e.createdAtTimestamp) return o.Z.addBreadcrumb({
     category: "ad",
-    message: "future facing timestamp Date.now(): ".concat(t, ", initialized timestamp: ").concat(e.initialized)
+    message: "future facing timestamp Date.now(): ".concat(t, ", initialized timestamp: ").concat(e.createdAtTimestamp)
   }), !0;
-  let n = t - e.lastUsed > a.iP * i.Z.Millis.MINUTE,
-    r = t - e.initialized > s * i.Z.Millis.HOUR;
+  let n = t - e.lastUsedTimestamp > a.XM,
+    r = t - e.createdAtTimestamp > s;
   return n || r
 }

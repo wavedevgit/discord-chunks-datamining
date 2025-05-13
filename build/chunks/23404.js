@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => L
+  Z: () => w
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -82,12 +82,12 @@ function x(e) {
   })
 }
 
-function w(e) {
+function L(e) {
   var t, n, l, c;
   let {
     nodeRef: _,
     quest: E
-  } = e, O = (0, u.O5)(), P = (0, o.e7)([h.Z], () => h.Z.isEnrolling(E.id), [E]), w = (0, o.e7)([h.Z], () => null != h.Z.questEnrollmentBlockedUntil, []), [L, R] = i.useState(!1), D = i.useCallback(() => R(!0), []), k = i.useCallback(() => R(!1), []), M = i.useCallback(e => {
+  } = e, O = (0, u.O5)(), P = (0, o.e7)([h.Z], () => h.Z.isEnrolling(E.id), [E]), L = (0, o.e7)([h.Z], () => null != h.Z.questEnrollmentBlockedUntil, []), [w, R] = i.useState(!1), D = i.useCallback(() => R(!0), []), k = i.useCallback(() => R(!1), []), M = i.useCallback(e => {
     e.stopPropagation()
   }, []), U = i.useCallback(() => {
     (0, d.AH)(E.id, {
@@ -103,7 +103,7 @@ function w(e) {
       fromContent: f.jn.ACTIVITY_PANEL,
       questId: E.id
     }))
-  }, [E, O]), B = i.useCallback(() => {
+  }, [E, O]), V = i.useCallback(() => {
     O({
       questId: E.id,
       questContent: f.jn.ACTIVITY_PANEL,
@@ -112,7 +112,7 @@ function w(e) {
       fromContent: f.jn.ACTIVITY_PANEL,
       questId: E.id
     })
-  }, [E.id, O]), V = (0, C.hf)({
+  }, [E.id, O]), B = (0, C.hf)({
     quest: E,
     location: f.jn.ACTIVITY_PANEL
   }), H = (0, p.tP)(E), F = (null == (t = E.userStatus) ? void 0 : t.enrolledAt) != null, z = (null == (n = E.userStatus) ? void 0 : n.completedAt) != null, W = (null == (l = E.userStatus) ? void 0 : l.claimedAt) != null, Y = (null == E ? void 0 : E.userStatus) != null && (0, g.zE)(E.userStatus, f.jn.ACTIVITY_PANEL), K = (0, p.Rf)(E), q = (0, b.DD)({
@@ -123,7 +123,7 @@ function w(e) {
   }), Q = (0, m.j)({
     location: T.dr.QUESTS_BAR_MOBILE
   });
-  return Y || H || W || w ? null : (0, r.jsxs)("div", {
+  return Y || H || W || L ? null : (0, r.jsxs)("div", {
     ref: e => {
       _.current = e
     },
@@ -182,7 +182,7 @@ function w(e) {
         })]
       })]
     }), F && !z && (0, r.jsx)(S.Z, {
-      autoplay: L,
+      autoplay: w,
       className: A.rewardTileWithInstructions,
       quest: E,
       questContent: f.jn.ACTIVITY_PANEL,
@@ -196,7 +196,7 @@ function w(e) {
           color: s.zxk.Colors.PRIMARY,
           fullWidth: !0,
           size: s.zxk.Sizes.SMALL,
-          onClick: B,
+          onClick: V,
           children: j.intl.string(j.t.LLLLPD)
         }), (0, r.jsx)(s.zxk, {
           className: A.cta,
@@ -218,18 +218,18 @@ function w(e) {
         className: A.cta,
         color: s.zxk.Colors.BRAND,
         fullWidth: !0,
-        onClick: V,
+        onClick: B,
         size: s.zxk.Sizes.SMALL,
         children: j.intl.string(j.t.cfY4PD)
       })]
     })]
   })
 }
-let L = function(e) {
+let w = function(e) {
   return (0, r.jsx)(O.A, {
     questOrQuests: e.quest,
     questContent: f.jn.ACTIVITY_PANEL,
-    children: t => (0, r.jsx)(w, Z({
+    children: t => (0, r.jsx)(L, Z({
       nodeRef: t
     }, e))
   })
