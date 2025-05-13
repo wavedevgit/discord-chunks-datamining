@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $L: () => o
+  $L: () => a
 });
 let r = new(n(226351)).o,
   i = null;
 
-function o() {
+function a() {
   null != i && (r.resolve(), clearTimeout(i))
 }

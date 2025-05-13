@@ -1,0 +1,1 @@
+{"id":"250454","type":"experiment","data":{"kind":"user","id":"2025-05_feedback_persistence_experiment","label":"Feedback metadata persistence","defaultConfig":"c","treatments":[{"id":1,"label":"Persist impression times and opt-outs to backend; show mobile opt-outs","config":"l(o({}, c), {\n    persistToBackend: !0,\n    showMobileOptOuts: !0\n})"}]},"fromModule":{"id":"web.js"}}

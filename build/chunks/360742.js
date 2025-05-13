@@ -6,7 +6,7 @@ n.d(t, {
 var r = n(81825),
   i = n(598077);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -15,14 +15,14 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 
-function a(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -46,12 +46,12 @@ function l(e, t) {
 }
 class c extends r.Z {
   static createFromServer(e) {
-    return new c(l(a({}, e), {
+    return new c(l(o({}, e), {
       user: new i.Z(e.user)
     }))
   }
   constructor(e) {
     var t;
-    super(), o(this, "id", void 0), o(this, "name", void 0), o(this, "type", void 0), o(this, "user", void 0), o(this, "displayName", void 0), this.id = e.id, this.name = e.name, this.type = e.type, this.user = e.user, this.displayName = null != (t = e.name_localized) ? t : e.name
+    super(), a(this, "id", void 0), a(this, "name", void 0), a(this, "type", void 0), a(this, "user", void 0), a(this, "displayName", void 0), this.id = e.id, this.name = e.name, this.type = e.type, this.user = e.user, this.displayName = null != (t = e.name_localized) ? t : e.name
   }
 }

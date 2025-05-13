@@ -5,8 +5,8 @@ n.d(t, {
 }), n(35282);
 var r = n(255367),
   i = n(73800),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(481060),
   l = n(503438),
   c = n(100527),
@@ -60,7 +60,7 @@ function k(e) {
   var t;
   let {
     user: n,
-    currentUser: o,
+    currentUser: a,
     activity: L,
     profileGuildId: k,
     className: M,
@@ -90,22 +90,22 @@ function k(e) {
   if (!(0, l.Z)(L)) return null;
   let z = () => {
       var e, t;
-      let o = null != (t = null == (e = L.state) ? void 0 : e.split(";")) ? t : [];
-      return 0 === o.length ? null : null == L.sync_id ? (0, r.jsx)(N.Z, {
+      let a = null != (t = null == (e = L.state) ? void 0 : e.split(";")) ? t : [];
+      return 0 === a.length ? null : null == L.sync_id ? (0, r.jsx)(N.Z, {
         variant: "text-xs/normal",
-        text: o.join(", ")
+        text: a.join(", ")
       }) : (0, r.jsx)(N.Z, {
         variant: "text-xs/normal",
-        text: o.map((e, t) => (0, r.jsxs)(i.Fragment, {
+        text: a.map((e, t) => (0, r.jsxs)(i.Fragment, {
           children: [(0, r.jsx)(s.P3F, {
-            className: a()(D.clickableText, D.inline),
+            className: o()(D.clickableText, D.inline),
             onClick: e => {
               e.stopPropagation(), W({
                 action: "OPEN_SPOTIFY_ARTIST"
               }), (0, p.d$)(L, n.id, t)
             },
             children: e
-          }), t < o.length - 1 ? ", " : ""]
+          }), t < a.length - 1 ? ", " : ""]
         }, t))
       })
     },
@@ -123,7 +123,7 @@ function k(e) {
         end: n
       })
     },
-    Q = () => n.id === o.id ? null : (0, r.jsx)("div", {
+    Q = () => n.id === a.id ? null : (0, r.jsx)("div", {
       className: D.actions,
       children: (0, r.jsx)(P.Z, {
         user: n,
@@ -169,7 +169,7 @@ function k(e) {
           }),
           children: (0, r.jsxs)(T.Z, {
             ref: K,
-            className: a()(M, {
+            className: o()(M, {
               [D.hoisted]: J
             }),
             onAction: W,

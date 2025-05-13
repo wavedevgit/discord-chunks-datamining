@@ -155,6 +155,7 @@ let Y = function() {
         }), (0, r.jsxs)(_.Z, {
           title: K,
           description: q,
+          betaTag: F,
           button: F ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(c.zxk, {
               color: c.Ttl.WHITE,

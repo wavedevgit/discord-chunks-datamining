@@ -3,9 +3,9 @@ n.d(t, {
   Z: () => m
 }), n(388685), n(642613);
 var r = n(255367),
-  i = n(73800),
-  a = n(120356),
-  l = n.n(a),
+  a = n(73800),
+  i = n(120356),
+  l = n.n(i),
   s = n(442837),
   o = n(481060),
   c = n(706454),
@@ -17,16 +17,16 @@ function m(e) {
   let {
     application: t,
     className: n
-  } = e, a = (0, s.e7)([c.default], () => c.default.locale), {
+  } = e, i = (0, s.e7)([c.default], () => c.default.locale), {
     supportedLanguages: m,
     usersLanguageIsFirst: h
-  } = i.useMemo(() => {
+  } = a.useMemo(() => {
     var e;
     if ((null == (e = t.directory_entry) ? void 0 : e.supported_locales) != null) {
       let e = new Set(t.directory_entry.supported_locales),
-        n = e.has(a),
+        n = e.has(i),
         r = p.filter(t => e.has(t.value));
-      return n && r.sort((e, t) => e.value === a ? -1 : +(t.value === a)), {
+      return n && r.sort((e, t) => e.value === i ? -1 : +(t.value === i)), {
         supportedLanguages: r.map(e => d.intl.string(e.localizedName)),
         usersLanguageIsFirst: n
       }
@@ -35,7 +35,7 @@ function m(e) {
       supportedLanguages: [],
       usersLanguageIsFirst: !1
     }
-  }, [t.directory_entry, a]);
+  }, [t.directory_entry, i]);
   return (0, r.jsxs)("div", {
     className: n,
     children: [(0, r.jsx)(o.X6q, {

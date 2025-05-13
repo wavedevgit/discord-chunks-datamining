@@ -1,10 +1,10 @@
 /** Chunk was on 88934 **/
 n.d(t, {
-  b: () => i,
+  b: () => a,
   x: () => r
 });
 let r = 1e3,
-  i = Object.freeze({
+  a = Object.freeze({
     SMALL: "small",
     LARGE: "large"
   })

@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => m
 }), n(997841);
 var r = n(255367),
-  i = n(73800),
-  a = n(481060),
+  a = n(73800),
+  i = n(481060),
   l = n(860719),
   s = n(63063),
   o = n(49012),
@@ -23,14 +23,14 @@ function m(e) {
     hasIntents: m
   } = (0, l.w)({
     flags: null == t ? void 0 : t.flags
-  }), g = i.useCallback(() => {
+  }), g = a.useCallback(() => {
     null != t.privacy_policy_url && (0, o.q)({
       href: t.privacy_policy_url
     })
   }, [t.privacy_policy_url]);
   return (0, r.jsxs)("div", {
     className: u.sectionContainer,
-    children: [(0, r.jsx)(a.X6q, {
+    children: [(0, r.jsx)(i.X6q, {
       variant: "heading-lg/semibold",
       color: "header-primary",
       children: d.intl.string(d.t.QzDgMj)
@@ -38,30 +38,30 @@ function m(e) {
       className: u.contentContainer,
       children: [m && (0, r.jsxs)("ul", {
         className: u.intentsList,
-        children: [(0, r.jsx)(a.X6q, {
+        children: [(0, r.jsx)(i.X6q, {
           variant: "heading-md/semibold",
           color: "header-secondary",
           children: d.intl.string(d.t.U6KH5e)
         }), n && (0, r.jsx)(h, {
-          icon: a.kBi,
+          icon: i.kBi,
           heading: d.intl.string(d.t.gJpBOz),
           body: d.intl.string(d.t["L+QVbm"])
         }), s && (0, r.jsx)(h, {
-          icon: a.z65,
+          icon: i.z65,
           heading: d.intl.string(d.t.jo0oj4),
           body: d.intl.string(d.t.Dm0jq6)
         }), c && (0, r.jsx)(h, {
-          icon: a.BFJ,
+          icon: i.BFJ,
           heading: d.intl.string(d.t.QZql7O),
           body: d.intl.string(d.t["ez/N/f"])
         })]
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(i.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
         children: d.intl.format(d.t.b6nqk5, {
           helpCenterUrl: p
         })
-      }), null != t.privacy_policy_url && (0, r.jsx)(a.Text, {
+      }), null != t.privacy_policy_url && (0, r.jsx)(i.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
         className: u.privacyPolicy,
@@ -77,7 +77,7 @@ function h(e) {
   let {
     icon: t,
     heading: n,
-    body: i
+    body: a
   } = e;
   return (0, r.jsxs)("li", {
     className: u.intentContainer,
@@ -86,14 +86,14 @@ function h(e) {
       size: "md"
     }), (0, r.jsxs)("div", {
       className: u.intentTextContainer,
-      children: [(0, r.jsx)(a.X6q, {
+      children: [(0, r.jsx)(i.X6q, {
         variant: "heading-md/semibold",
         color: "header-secondary",
         children: n
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(i.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
-        children: i
+        children: a
       })]
     })]
   })

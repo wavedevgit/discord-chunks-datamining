@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(255367);
 n(73800);
-var i = n(120356),
-  a = n.n(i),
+var a = n(120356),
+  i = n.n(a),
   l = n(481060),
   s = n(833829);
 
@@ -23,7 +23,7 @@ function o(e) {
         type: l.$jN.Type.SPINNING_CIRCLE
       })
     }) : null, (0, r.jsx)("div", {
-      className: a()({
+      className: i()({
         [s.loading]: t
       }),
       children: n

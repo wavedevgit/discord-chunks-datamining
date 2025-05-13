@@ -8,8 +8,8 @@ n.d(t, {
 });
 var r = n(544891),
   i = n(570140),
-  o = n(881052),
-  a = n(981631);
+  a = n(881052),
+  o = n(981631);
 async function s() {
   i.Z.wait(() => {
     i.Z.dispatch({
@@ -18,7 +18,7 @@ async function s() {
   });
   try {
     let e = await r.tn.get({
-        url: a.ANM.VIRTUAL_CURRENCY_USER_BALANCE,
+        url: o.ANM.VIRTUAL_CURRENCY_USER_BALANCE,
         rejectWithError: !1
       }),
       t = e.body.balance;
@@ -27,7 +27,7 @@ async function s() {
       balance: t
     }), e.body
   } catch (t) {
-    let e = t instanceof o.HF ? t : new o.HF(t);
+    let e = t instanceof a.HF ? t : new a.HF(t);
     i.Z.dispatch({
       type: "VIRTUAL_CURRENCY_BALANCE_FETCH_FAIL",
       error: e
@@ -50,7 +50,7 @@ async function l(e) {
   }), null == n || n();
   try {
     let e = (await r.tn.post({
-      url: a.ANM.VIRTUAL_CURRENCY_SKU_REDEEM(t),
+      url: o.ANM.VIRTUAL_CURRENCY_SKU_REDEEM(t),
       rejectWithError: !1
     })).body;
     return i.Z.dispatch({
@@ -59,7 +59,7 @@ async function l(e) {
       entitlements: e
     }), u && s(), null == l || l(e), e
   } catch (n) {
-    let e = n instanceof o.HF ? n : new o.HF(n);
+    let e = n instanceof a.HF ? n : new a.HF(n);
     i.Z.dispatch({
       type: "VIRTUAL_CURRENCY_REDEEM_FAIL",
       skuId: t,

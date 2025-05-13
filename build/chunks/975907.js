@@ -3,8 +3,8 @@ n.d(t, {
   M: () => d
 });
 var r = n(73800),
-  i = n(31569),
-  a = n(493646),
+  a = n(31569),
+  i = n(493646),
   l = n(881294),
   s = n(258971),
   o = n(133743),
@@ -13,22 +13,22 @@ var r = n(73800),
 function d(e) {
   let {
     initialQuery: t = ""
-  } = e, n = i.Z.useField("query");
-  r.useEffect(() => i.Z.setState({
+  } = e, n = a.Z.useField("query");
+  r.useEffect(() => a.Z.setState({
     query: t
   }), [t]);
   let d = r.useCallback(e => {
-      i.Z.setState({
+      a.Z.setState({
         query: e
       })
     }, []),
     u = r.useCallback(() => {
-      i.Z.setState({
+      a.Z.setState({
         query: ""
       })
     }, []),
     p = r.useCallback(() => {
-      let e = (0, a.K)();
+      let e = (0, i.K)();
       (0, l.zZ)(c.rMx.APP_DIRECTORY_SEARCH_STARTED, {
         search_term: n,
         category: e.name,

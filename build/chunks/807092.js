@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => S
 });
 var r, i = n(442837),
-  o = n(570140),
-  a = n(375954);
+  a = n(570140),
+  o = n(375954);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -55,14 +55,14 @@ function p(e) {
     message: n,
     shouldMention: r = !0,
     showMentionToggle: i = !0,
-    source: o
+    source: a
   } = e;
   d[t.id] = {
     channel: t,
     message: n,
     shouldMention: r,
     showMentionToggle: i
-  }, _[t.id] = o
+  }, _[t.id] = a
 }
 
 function h(e) {
@@ -103,12 +103,12 @@ function E(e) {
   var t, n, r;
   let {
     id: i,
-    channelId: o
+    channelId: a
   } = e;
-  if ((null == (n = d[o]) || null == (t = n.message) ? void 0 : t.id) === i) delete d[o], delete _[o];
+  if ((null == (n = d[a]) || null == (t = n.message) ? void 0 : t.id) === i) delete d[a], delete _[a];
   else {
-    if ((null == (r = f[o]) ? void 0 : r.messageId) !== i) return !1;
-    delete f[o], delete _[o]
+    if ((null == (r = f[a]) ? void 0 : r.messageId) !== i) return !1;
+    delete f[a], delete _[a]
   }
 }
 
@@ -116,7 +116,7 @@ function b(e) {
   if (null == e) return !1;
   let t = f[e];
   if (null == t) return !1;
-  let n = a.Z.getMessage(e, t.messageId);
+  let n = o.Z.getMessage(e, t.messageId);
   if (null == n) return !1;
   d[e] = {
     channel: t.channel,
@@ -145,7 +145,7 @@ function v() {
 }
 class I extends(r = i.ZP.Store) {
   initialize() {
-    this.waitFor(a.Z)
+    this.waitFor(o.Z)
   }
   getPendingReply(e) {
     return d[e]
@@ -155,7 +155,7 @@ class I extends(r = i.ZP.Store) {
   }
 }
 s(I, "displayName", "PendingReplyStore");
-let S = new I(o.Z, {
+let S = new I(a.Z, {
   CREATE_PENDING_REPLY: p,
   CREATE_SHALLOW_PENDING_REPLY: h,
   SET_PENDING_REPLY_SHOULD_MENTION: m,

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var o = n(255367),
   i = n(120356),
-  a = n.n(i),
-  r = n(481060),
+  r = n.n(i),
+  a = n(481060),
   l = n(572539),
   s = n(531578),
   c = n(722771);
@@ -42,18 +42,18 @@ function d(e) {
           }), i[e]]
         }),
         value: e,
-        className: a()(c.emojiContainer, d === e ? c.selected : null)
+        className: r()(c.emojiContainer, d === e ? c.selected : null)
       })),
       onClick: e => b(e.value)
     })
   }) : (0, o.jsx)("div", {
-    className: a()(c.ratingSelector, c.emojis),
-    children: t.map(e => (0, o.jsx)(r.P3F, {
+    className: r()(c.ratingSelector, c.emojis),
+    children: t.map(e => (0, o.jsx)(a.P3F, {
       onClick: () => b(e),
       "aria-label": e,
       className: c.emojiContainer,
       children: (0, o.jsx)("div", {
-        className: a()(u[e][n], d === e ? c.selected : null)
+        className: r()(u[e][n], d === e ? c.selected : null)
       })
     }, e))
   })

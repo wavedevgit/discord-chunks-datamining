@@ -6,12 +6,12 @@ n.d(t, {
 });
 var r = n(430901),
   i = n(96428),
-  o = n(222285),
-  a = n(288930),
+  a = n(222285),
+  o = n(288930),
   s = new WeakMap,
   l = /auto|scroll/,
   c = /^tb|vertical/,
-  u = /msie|trident/i.test(a.C.navigator && a.C.navigator.userAgent),
+  u = /msie|trident/i.test(o.C.navigator && o.C.navigator.userAgent),
   d = function(e) {
     return parseFloat(e || "0")
   },
@@ -29,10 +29,10 @@ var r = n(430901),
   }),
   p = function(e, t) {
     if (void 0 === t && (t = !1), s.has(e) && !t) return s.get(e);
-    if ((0, o.xj)(e)) return s.set(e, _), _;
+    if ((0, a.xj)(e)) return s.set(e, _), _;
     var n = getComputedStyle(e),
-      r = (0, o.zd)(e) && e.ownerSVGElement && e.getBBox(),
-      a = !u && "border-box" === n.boxSizing,
+      r = (0, a.zd)(e) && e.ownerSVGElement && e.getBBox(),
+      o = !u && "border-box" === n.boxSizing,
       p = c.test(n.writingMode || ""),
       h = !r && l.test(n.overflowY || ""),
       m = !r && l.test(n.overflowX || ""),
@@ -50,8 +50,8 @@ var r = n(430901),
       C = O + I,
       P = m ? e.offsetHeight - C - e.clientHeight : 0,
       R = h ? e.offsetWidth - N - e.clientWidth : 0,
-      w = a ? T + N : 0,
-      D = a ? A + C : 0,
+      w = o ? T + N : 0,
+      D = o ? A + C : 0,
       L = r ? r.width : d(n.width) - w - R,
       x = r ? r.height : d(n.height) - D - P,
       k = L + T + R + N,
@@ -66,15 +66,15 @@ var r = n(430901),
   },
   h = function(e, t, n) {
     var i = p(e, n),
-      o = i.borderBoxSize,
-      a = i.contentBoxSize,
+      a = i.borderBoxSize,
+      o = i.contentBoxSize,
       s = i.devicePixelContentBoxSize;
     switch (t) {
       case r.z.DEVICE_PIXEL_CONTENT_BOX:
         return s;
       case r.z.BORDER_BOX:
-        return o;
+        return a;
       default:
-        return a
+        return o
     }
   }

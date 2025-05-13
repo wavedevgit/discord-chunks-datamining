@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(442837),
   i = n(841784),
-  o = n(956221),
-  a = n(158776),
+  a = n(956221),
+  o = n(158776),
   s = n(979651);
 
 function l(e) {
@@ -16,16 +16,16 @@ function l(e) {
   } = e, {
     voiceState: l,
     voiceChannel: c
-  } = (0, o.Z)({
+  } = (0, a.Z)({
     userId: t,
     guildId: n
   }), u = null == c ? void 0 : c.id;
   return {
     voiceState: l,
     voiceChannel: c,
-    voiceActivity: (0, r.e7)([a.Z, s.Z], () => {
+    voiceActivity: (0, r.e7)([o.Z, s.Z], () => {
       if (null == t || null == u) return;
-      let e = a.Z.findActivity(t, e => {
+      let e = o.Z.findActivity(t, e => {
         if (!(0, i.Z)(e)) return !1;
         let n = s.Z.getVoiceStateForSession(t, e.session_id);
         return (null == n ? void 0 : n.channelId) === u

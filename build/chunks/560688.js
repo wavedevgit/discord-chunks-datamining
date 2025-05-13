@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  o = n(131951),
-  a = n(65154),
+  a = n(131951),
+  o = n(65154),
   s = n(388032);
 
 function l(e, t, n) {
@@ -50,7 +50,7 @@ function d(e, t) {
 }
 
 function f(e) {
-  o.Z.supports(a.AN.VIDEO) ? (0, i.ZDy)(async () => {
+  a.Z.supports(o.AN.VIDEO) ? (0, i.ZDy)(async () => {
     let {
       default: t
     } = await n.e("67753").then(n.bind(n, 873809));
@@ -64,7 +64,7 @@ function f(e) {
     let {
       default: t
     } = await n.e("67753").then(n.bind(n, 873809));
-    return o => (0, r.jsx)(t, d(c({}, o), {
+    return a => (0, r.jsx)(t, d(c({}, a), {
       header: s.intl.string(s.t.XLw6FB),
       body: s.intl.string(s.t.wVjKGh),
       confirmText: s.intl.string(s.t.BK8LKy),

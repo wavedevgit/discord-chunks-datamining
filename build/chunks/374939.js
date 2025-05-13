@@ -1,19 +1,19 @@
 /** Chunk was on 88934 **/
 n.d(t, {
-  Z: () => a
+  Z: () => i
 });
 var r = n(255367);
 n(73800);
-var i = n(767786);
+var a = n(767786);
 
-function a(e) {
+function i(e) {
   let {
     children: t
   } = e;
   return (0, r.jsx)("section", {
-    className: i.contentSection,
+    className: a.contentSection,
     children: (0, r.jsx)("div", {
-      className: i.content,
+      className: a.content,
       children: t
     })
   })

@@ -7,9 +7,9 @@ n.d(t, {
 }), n(704826), n(35282), n(781311), n(539854), n(642613), n(388685), n(415506);
 var r = n(913527),
   i = n.n(r),
-  o = n(55935);
+  a = n(55935);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -43,7 +43,7 @@ class y {
     return this._index[t.unix()]
   }
   _createLabel(e) {
-    return (0, o.vc)(e.locale(i().locale()), this.labelFormat)
+    return (0, a.vc)(e.locale(i().locale()), this.labelFormat)
   }
   _generateTimeOptions() {
     this.options = [], this._index = {};
@@ -104,7 +104,7 @@ class y {
     intervalInMinutes: e = m,
     labelFormat: t = g
   } = {}) {
-    if (a(this, "intervalInMinutes", void 0), a(this, "labelFormat", void 0), a(this, "options", []), a(this, "_index", {}), e <= 0) throw Error("intervalInMinutes should be positive number, got ".concat(e));
+    if (o(this, "intervalInMinutes", void 0), o(this, "labelFormat", void 0), o(this, "options", []), o(this, "_index", {}), e <= 0) throw Error("intervalInMinutes should be positive number, got ".concat(e));
     this.intervalInMinutes = e, this.labelFormat = t, this._generateTimeOptions()
   }
 }

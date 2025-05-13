@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => m
 }), n(388685), n(953529);
 var r = n(255367),
-  i = n(73800),
-  a = n(622535),
+  a = n(73800),
+  i = n(622535),
   l = n(481060),
   s = n(783097),
   o = n(66637),
@@ -18,16 +18,16 @@ let m = function(e) {
     application: h,
     onSelectApplication: g,
     showCategory: _ = !1
-  } = e, f = i.useRef(null), b = null == (t = h.categories) ? void 0 : t[0], [x, v] = i.useState(!1), C = i.useCallback(e => {
+  } = e, f = a.useRef(null), b = null == (t = h.categories) ? void 0 : t[0], [x, v] = a.useState(!1), C = a.useCallback(e => {
     e && v(!0)
-  }, []), j = (0, s.lf)(h), y = i.useCallback(() => {
+  }, []), j = (0, s.lf)(h), y = a.useCallback(() => {
     g(h.id)
-  }, [g, h.id]), I = i.useMemo(() => x ? c.ZP.getApplicationIconURL({
+  }, [g, h.id]), I = a.useMemo(() => x ? c.ZP.getApplicationIconURL({
     id: h.id,
     icon: h.icon,
     size: 48
   }) : void 0, [x, h]), O = _ && null != b;
-  return (0, r.jsx)(a.$, {
+  return (0, r.jsx)(i.$, {
     innerRef: f,
     onChange: C,
     active: !x,

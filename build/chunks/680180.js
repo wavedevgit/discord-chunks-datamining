@@ -3,9 +3,9 @@ n.d(t, {
   Z: () => d
 });
 var r = n(255367),
-  i = n(73800),
-  a = n(120356),
-  l = n.n(a),
+  a = n(73800),
+  i = n(120356),
+  l = n.n(i),
   s = n(481060),
   o = n(49898),
   c = n(109188);
@@ -14,15 +14,15 @@ function d(e) {
   let {
     state: t,
     query: n,
-    placeholder: a,
+    placeholder: i,
     onTextChange: d,
     onCollapsedClick: u,
     onClear: p,
     onBlur: m,
     onSubmit: h
-  } = e, g = i.useRef(null), _ = i.useCallback(e => {
+  } = e, g = a.useRef(null), _ = a.useCallback(e => {
     "Enter" === e.key && h()
-  }, [h]), f = i.useCallback(() => {
+  }, [h]), f = a.useCallback(() => {
     u(), setTimeout(() => {
       var e;
       return null == (e = g.current) ? void 0 : e.focus()
@@ -42,7 +42,7 @@ function d(e) {
     }),
     size: s.E1j.Sizes.MEDIUM,
     query: n,
-    placeholder: a,
+    placeholder: i,
     onChange: d,
     onClear: p,
     onKeyDown: _,

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(997841);
 var r = n(255367),
   i = n(481060),
-  o = n(783097),
-  a = n(594174),
+  a = n(783097),
+  o = n(594174),
   s = n(572004),
   l = n(630388),
   c = n(311819),
@@ -43,8 +43,8 @@ function _(e) {
     focusedClassName: p
   } = e;
   if (__OVERLAY__ || !s.wS || null == t) return null;
-  let h = a.default.getCurrentUser(),
-    m = (0, o.Ow)(t);
+  let h = o.default.getCurrentUser(),
+    m = (0, a.Ow)(t);
 
   function g() {
     var e;

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  o = n(403182),
-  a = n(640108);
+  a = n(403182),
+  o = n(640108);
 class s extends i.PureComponent {
   render() {
     let {
@@ -25,12 +25,12 @@ class s extends i.PureComponent {
       mimeType: h,
       onPlay: m
     } = this.props;
-    return (0, r.jsx)(a.ZP, {
+    return (0, r.jsx)(o.ZP, {
       src: e,
       fileName: n,
-      fileSize: (0, o.Ng)(t),
+      fileSize: (0, a.Ng)(t),
       fileSizeBytes: t,
-      type: a.ZP.Types.AUDIO,
+      type: o.ZP.Types.AUDIO,
       className: i,
       playable: s,
       volume: l,

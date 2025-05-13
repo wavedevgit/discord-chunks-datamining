@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => j
 }), n(35282), n(997841);
 var r = n(255367),
-  i = n(73800),
-  a = n(793030),
+  a = n(73800),
+  i = n(793030),
   l = n(442837),
   s = n(481060),
   o = n(794295),
@@ -59,7 +59,7 @@ function y(e) {
     application: t
   } = e, {
     subscriptions: n,
-    otps: i
+    otps: a
   } = (0, d.q)(t.id);
   return (0, r.jsxs)("div", {
     className: v.storeContainer,
@@ -80,15 +80,15 @@ function y(e) {
           }, e.id)
         })
       })]
-    }), i.length > 0 && (0, r.jsxs)("div", {
+    }), a.length > 0 && (0, r.jsxs)("div", {
       className: v.productSection,
-      children: [(0, r.jsx)(a.X6, {
+      children: [(0, r.jsx)(i.X6, {
         variant: "heading-lg/semibold",
         color: "header-primary",
         children: x.intl.string(x.t.yUGTs7)
       }), (0, r.jsx)("div", {
         className: v.products,
-        children: i.map(e => (0, r.jsx)(u.hd, {
+        children: a.map(e => (0, r.jsx)(u.hd, {
           skuId: e.skuId,
           appId: t.id,
           onDetails: () => (0, _.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.id, e.skuId))
@@ -107,11 +107,11 @@ function I(e) {
     match: {
       params: {
         applicationId: t,
-        skuId: a
+        skuId: i
       }
     }
-  } = e, o = (0, l.e7)([h.Z], () => h.Z.get(a), [a]), c = (0, l.e7)([h.Z], () => null != a ? h.Z.getParentSKU(a) : void 0, [a]), d = i.useId(), u = i.useCallback(() => (0, _.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, f.GlobalDiscoveryAppsSections.STORE)), [t]);
-  return i.useLayoutEffect(() => {
+  } = e, o = (0, l.e7)([h.Z], () => h.Z.get(i), [i]), c = (0, l.e7)([h.Z], () => null != i ? h.Z.getParentSKU(i) : void 0, [i]), d = a.useId(), u = a.useCallback(() => (0, _.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, f.GlobalDiscoveryAppsSections.STORE)), [t]);
+  return a.useLayoutEffect(() => {
     var e;
     switch (null == o ? void 0 : o.type) {
       case b.epS.CONSUMABLE:
@@ -122,7 +122,7 @@ function I(e) {
           } = await Promise.resolve().then(n.bind(n, 147496));
           return n => (0, r.jsx)(e, C({
             appId: t,
-            skuId: a
+            skuId: i
           }, n))
         }, {
           modalKey: d,
@@ -134,12 +134,12 @@ function I(e) {
         if ((null == c ? void 0 : c.flags) == null) return;
         return e = (0, m.KW)(c.flags) ? "user" : "guild", void(0, s.ZDy)(async () => {
           let {
-            SubscriptionDetailsModal: i
+            SubscriptionDetailsModal: a
           } = await Promise.resolve().then(n.bind(n, 519896));
-          return n => (0, r.jsx)(i, C({
+          return n => (0, r.jsx)(a, C({
             appId: t,
             subscriptionType: e,
-            skuId: a,
+            skuId: i,
             guildId: void 0
           }, n))
         }, {
@@ -149,7 +149,7 @@ function I(e) {
           }
         })
     }
-  }, [t, d, u, null == c ? void 0 : c.flags, null == o ? void 0 : o.flags, null == o ? void 0 : o.type, a]), i.useLayoutEffect(() => () => {
+  }, [t, d, u, null == c ? void 0 : c.flags, null == o ? void 0 : o.flags, null == o ? void 0 : o.type, i]), a.useLayoutEffect(() => () => {
     (0, s.Mr3)(d)
   }, [d]), null
 }
@@ -157,8 +157,8 @@ function I(e) {
 function O(e) {
   let {
     application: t
-  } = e, n = (0, g.nu)(), i = t.terms_of_service_url, l = t.privacy_policy_url;
-  if (null == i && null == l) return null;
+  } = e, n = (0, g.nu)(), a = t.terms_of_service_url, l = t.privacy_policy_url;
+  if (null == a && null == l) return null;
   let s = (e, t) => (0, r.jsx)(o.Z, {
     href: t,
     trusted: !n,
@@ -166,14 +166,14 @@ function O(e) {
   });
   return (0, r.jsx)("div", {
     className: v.legalContainer,
-    children: (0, r.jsx)(a.xv, {
+    children: (0, r.jsx)(i.xv, {
       color: "header-primary",
       variant: "text-sm/normal",
-      children: null != i && null != l ? x.intl.format(x.t.nylPOT, {
-        termsHook: e => s(e, i),
+      children: null != a && null != l ? x.intl.format(x.t.nylPOT, {
+        termsHook: e => s(e, a),
         privacyHook: e => s(e, l)
-      }) : null != i ? x.intl.format(x.t["0cPyDw"], {
-        termsHook: e => s(e, i)
+      }) : null != a ? x.intl.format(x.t["0cPyDw"], {
+        termsHook: e => s(e, a)
       }) : null != l ? x.intl.format(x.t.loYGCw, {
         privacyHook: e => s(e, l)
       }) : null

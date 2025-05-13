@@ -5,14 +5,14 @@ n.d(t, {
 });
 var r = n(818083),
   i = n(984134);
-let o = {
+let a = {
     doGroupEligibilityCheck: !1
   },
-  a = (0, r.B)({
+  o = (0, r.B)({
     kind: "user",
     id: "2025-04_feedback_trigger_experiment",
     label: "Feedback trigger logic changes",
-    defaultConfig: o,
+    defaultConfig: a,
     treatments: [{
       id: 1,
       label: "Do group eligibility check",
@@ -33,7 +33,7 @@ function s(e) {
   }, {
     autoTrackExposure: n
   });
-  return a.getCurrentConfig({
+  return o.getCurrentConfig({
     location: t
   }, {
     disable: r,

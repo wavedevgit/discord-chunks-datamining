@@ -12,8 +12,8 @@ n.d(t, {
 }), n(35282);
 var r = n(860911),
   i = n(544891),
-  o = n(893776),
-  a = n(592125),
+  a = n(893776),
+  o = n(592125),
   s = n(944486),
   l = n(981631);
 let c = "10000",
@@ -22,7 +22,7 @@ let c = "10000",
 function d() {
   var e, t, n;
   let r = s.Z.getChannelId(),
-    i = a.Z.getBasicChannel(r);
+    i = o.Z.getBasicChannel(r);
   return {
     guild_id: null != (e = null == i ? void 0 : i.guild_id) ? e : c,
     channel_id: null != (t = null == i ? void 0 : i.id) ? t : u,
@@ -45,8 +45,8 @@ async function _(e) {
     authorize: t,
     clientId: n,
     scopes: r,
-    responseType: o,
-    redirectUri: a,
+    responseType: a,
+    redirectUri: o,
     codeChallenge: s,
     codeChallengeMethod: c,
     state: u,
@@ -61,8 +61,8 @@ async function _(e) {
     url: l.ANM.OAUTH2_AUTHORIZE,
     query: {
       client_id: n,
-      response_type: o,
-      redirect_uri: a,
+      response_type: a,
+      redirect_uri: o,
       code_challenge: s,
       code_challenge_method: c,
       scope: r.join(" "),
@@ -90,8 +90,8 @@ async function p(e) {
     clientId: t,
     scopes: n,
     responseType: r,
-    redirectUri: o,
-    codeChallenge: a,
+    redirectUri: a,
+    codeChallenge: o,
     codeChallengeMethod: s,
     state: c,
     integrationType: u,
@@ -103,8 +103,8 @@ async function p(e) {
     query: {
       client_id: t,
       response_type: r,
-      redirect_uri: o,
-      code_challenge: a,
+      redirect_uri: a,
+      code_challenge: o,
       code_challenge_method: s,
       scope: n.join(" "),
       state: c,
@@ -132,7 +132,7 @@ async function h(e) {
 }
 
 function m(e, t) {
-  o.Z.logout(t, (0, r.Ui)(e.pathname + e.search, !1))
+  a.Z.logout(t, (0, r.Ui)(e.pathname + e.search, !1))
 }
 async function g(e) {
   return await i.tn.post({

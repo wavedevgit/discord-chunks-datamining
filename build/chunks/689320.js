@@ -10,10 +10,10 @@ function r(e, t, n) {
   }) : e[t] = n, e
 }
 n.d(t, {
-  t: () => a
+  t: () => o
 }), n(953529), n(388685);
 let i = Symbol.iterator;
-class o {
+class a {
   [i]() {
     return this
   }
@@ -33,7 +33,7 @@ class o {
   }
 }
 
-function a() {
+function o() {
   for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
-  return new o(t)
+  return new a(t)
 }

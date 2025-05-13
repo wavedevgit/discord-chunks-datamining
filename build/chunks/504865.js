@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  o = n.n(i),
-  a = n(442837),
+  a = n.n(i),
+  o = n(442837),
   s = n(481060),
   l = n(509545),
   c = n(74538),
@@ -23,7 +23,7 @@ let f = function(e) {
     priceOptions: p,
     isMarketingPageV2: h
   } = e;
-  if (!(0, a.e7)([l.Z], () => l.Z.isLoadedForPremiumSKUs())) return (0, r.jsx)(s.$jN, {
+  if (!(0, o.e7)([l.Z], () => l.Z.isLoadedForPremiumSKUs())) return (0, r.jsx)(s.$jN, {
     type: s.$jN.Type.PULSING_ELLIPSIS,
     className: d.priceSpinner
   });
@@ -32,7 +32,7 @@ let f = function(e) {
   return (0, r.jsx)(s.X6q, {
     color: h ? "none" : "always-white",
     variant: null != _ ? _ : "heading-md/medium",
-    className: o()(d.pricePerInterval, i),
+    className: a()(d.pricePerInterval, i),
     children: (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("span", {
         className: h ? void 0 : d.price,

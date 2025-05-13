@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(818083),
   i = n(70956);
-let o = (0, r.B)({
+let a = (0, r.B)({
   kind: "user",
   id: "2025-02_hotwheels_overlay_invites_3",
   label: "Overlay Invites Notification Pt3",

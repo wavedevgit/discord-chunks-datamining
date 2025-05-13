@@ -5,14 +5,14 @@ n.d(t, {
 });
 var r = n(73800),
   i = n(335218),
-  o = n.n(i),
-  a = {};
+  a = n.n(i),
+  o = {};
 
 function s(e, t) {
-  void 0 === t && (t = o());
-  var n = (0, r.useRef)(a),
+  void 0 === t && (t = a());
+  var n = (0, r.useRef)(o),
     i = n.current;
   return (0, r.useEffect)(function() {
     n.current = i
-  }), n.current !== a && t(e, n.current) || (i = e), i
+  }), n.current !== o && t(e, n.current) || (i = e), i
 }

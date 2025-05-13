@@ -5,9 +5,9 @@ n.d(t, {
 }), n(415506), n(388685);
 var r = n(742635),
   i = n(319245),
-  o = n(918701);
+  a = n(918701);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,7 +23,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -74,7 +74,7 @@ class u {
     return this.quest.rewardsConfig.platforms
   }
   get questType() {
-    return (0, o.q8)({
+    return (0, a.q8)({
       config: this.quest
     }) ? i.W.VIDEO : i.W.GAMEPLAY
   }
@@ -82,6 +82,6 @@ class u {
     return this.quest.taskConfig.type !== r.L.THIRD_PARTY || 0 === Object.keys(this.quest.taskConfig.tasks).length ? null : Object.values(this.quest.taskConfig.tasks)[0]
   }
   constructor(e) {
-    a(this, "quest", void 0), this.quest = e
+    o(this, "quest", void 0), this.quest = e
   }
 }

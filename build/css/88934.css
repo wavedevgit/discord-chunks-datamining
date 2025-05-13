@@ -1,6 +1,6 @@
 /**
   Module ID: 88934
-  Original File Name: 15258516217e1bb1
+  Original File Name: 54ac0ce7a3f1401c
 **/
 @value headerBarHeight 60px;
 
@@ -386,6 +386,12 @@
 
 .description_e9ef78 p {
     margin: 0
+}
+
+.betaTag_e9ef78 {
+    display: inline-block;
+    margin-left: 8px;
+    vertical-align: middle
 }
 
 .theme-dark .gradient_e9ef78 {
@@ -2576,4 +2582,4 @@
     width: 22px
 }
 
-/*# sourceMappingURL=15258516217e1bb1.css.map*/
+/*# sourceMappingURL=54ac0ce7a3f1401c.css.map*/

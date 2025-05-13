@@ -1,25 +1,25 @@
 /** Chunk was on 72135 **/
 n.d(t, {
-  Z: () => a
+  Z: () => l
 });
-var l = n(626135),
-  r = n(981631);
+var r = n(626135),
+  o = n(981631);
 
-function a(e) {
+function l(e) {
   let {
     problem: t,
     feedback: n,
-    reportType: a,
-    reportId: o = null,
+    reportType: l,
+    reportId: a = null,
     rating: i = null,
-    dontShowAgain: s
+    dontShowAgain: c
   } = e;
-  l.default.track(r.rMx.IAR_FEEDBACK_SUBMITTED, {
+  r.default.track(o.rMx.IAR_FEEDBACK_SUBMITTED, {
     reason: t,
-    report_type: a,
-    report_id: o,
+    report_type: l,
+    report_id: a,
     rating: i,
     feedback: n,
-    dont_show_again: s
+    dont_show_again: c
   })
 }

@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(818083),
   i = n(355820);
-let o = (0, r.B)({
+let a = (0, r.B)({
   kind: "user",
   id: "2025-04_custom_status_labels",
   label: "Custom Status Labels Experiment",
@@ -30,7 +30,7 @@ let o = (0, r.B)({
   }]
 });
 
-function a(e) {
+function o(e) {
   let {
     location: t,
     autoTrackExposure: n = !0
@@ -38,17 +38,17 @@ function a(e) {
     location: t,
     autoTrackExposure: n
   }), {
-    enabledWithActivityStatus: a,
+    enabledWithActivityStatus: o,
     enabledWithoutActivityStatus: s
-  } = o.useExperiment({
+  } = a.useExperiment({
     location: t
   }, {
     autoTrackExposure: n,
     disable: r
   });
   return {
-    isEligibleForCustomStatusLabels: a || s,
-    enabledWithActivityStatus: a,
+    isEligibleForCustomStatusLabels: o || s,
+    enabledWithActivityStatus: o,
     enabledWithoutActivityStatus: s
   }
 }

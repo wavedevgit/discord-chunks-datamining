@@ -1,37 +1,37 @@
 /** Chunk was on 87995 **/
 n.d(t, {
-  default: () => m
+  default: () => f
 });
 var r = n(255367),
-  l = n(73800),
-  o = n(481060),
+  o = n(73800),
+  l = n(481060),
   a = n(211266),
   i = n(332664),
   s = n(626135),
   c = n(867003),
   u = n(987562),
-  d = n(981631),
-  _ = n(388032);
-let b = [u.F5.SOMETHING_ELSE];
+  b = n(981631),
+  d = n(388032);
+let _ = [u.F5.SOMETHING_ELSE];
 
-function m(e) {
+function f(e) {
   let {
     onClose: t,
-    transitionState: m
-  } = e, f = (0, a.Z)(u.CE);
-  l.useEffect(() => {
-    s.default.track(d.rMx.OPEN_MODAL, {
+    transitionState: f
+  } = e, m = (0, a.Z)(u.CE);
+  o.useEffect(() => {
+    s.default.track(b.rMx.OPEN_MODAL, {
       type: "Block User Feedback"
     })
   }, []);
-  let p = l.useCallback(e => {
+  let p = o.useCallback(e => {
     var t;
     let {
-      rating: l,
+      rating: o,
       problem: a,
       feedback: i
-    } = e, s = null == l;
-    (0, c.tp)(l, i, null != (t = null == a ? void 0 : a.value) ? t : null, s), s || (0, o.ZDy)(async () => {
+    } = e, s = null == o;
+    (0, c.tp)(o, i, null != (t = null == a ? void 0 : a.value) ? t : null, s), s || (0, l.ZDy)(async () => {
       let {
         default: e
       } = await n.e("14466").then(n.bind(n, 729328));
@@ -53,22 +53,22 @@ function m(e) {
         }
         return e
       }({
-        body: _.intl.string(_.t["d9+vQ0"])
+        body: d.intl.string(d.t["d9+vQ0"])
       }, t))
     })
   }, []);
   return (0, r.jsx)(i.Z, {
     modalType: "block_user",
-    header: _.intl.string(_.t["+2qQAQ"]),
-    body: _.intl.string(_.t["+0Rsvb"]),
-    problemTitle: _.intl.string(_.t.TXomWV),
-    problems: f,
-    freeformNeededProblems: b,
+    header: d.intl.string(d.t["+2qQAQ"]),
+    body: d.intl.string(d.t["+0Rsvb"]),
+    problemTitle: d.intl.string(d.t.TXomWV),
+    problems: m,
+    freeformNeededProblems: _,
     onSubmit: p,
     onClose: t,
-    transitionState: m,
+    transitionState: f,
     otherKey: u.F5.SOMETHING_ELSE,
     hideHelpDeskLink: !0,
-    hideDontShowCheckbox: !0
+    hideDontShowAgainCheckbox: !0
   })
 }

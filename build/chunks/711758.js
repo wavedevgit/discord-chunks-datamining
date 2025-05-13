@@ -2,8 +2,8 @@
 n.d(t, {
   Z: () => u
 });
-var r, l = n(442837),
-  o = n(570140);
+var r, o = n(442837),
+  l = n(570140);
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -20,10 +20,10 @@ function s() {
     ignoreTimestamps: {}
   }
 }
-class c extends(r = l.ZP.PersistedStore) {
+class c extends(r = o.ZP.PersistedStore) {
   initialize(e) {
     var t, n, r;
-    let l = null != (t = null == e ? void 0 : e.ignoreTimestamps) ? t : {};
+    let o = null != (t = null == e ? void 0 : e.ignoreTimestamps) ? t : {};
     n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -36,7 +36,7 @@ class c extends(r = l.ZP.PersistedStore) {
       }
       return e
     }({}, s()), r = r = {
-      ignoreTimestamps: l
+      ignoreTimestamps: o
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -56,7 +56,7 @@ class c extends(r = l.ZP.PersistedStore) {
   }
 }
 a(c, "displayName", "IgnoreNoticeStore"), a(c, "persistKey", "IgnoreNoticeStore");
-let u = new c(o.Z, {
+let u = new c(l.Z, {
   RELATIONSHIP_IGNORE_USER_SUCCESS: function(e) {
     let {
       userId: t,

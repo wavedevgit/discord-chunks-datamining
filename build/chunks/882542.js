@@ -1,18 +1,18 @@
 /** Chunk was on 96888 **/
 n.d(t, {
-  Z: () => a
+  Z: () => r
 });
 var o = n(131951),
   i = n(626135);
 
-function a(e, t) {
+function r(e, t) {
   let {
     rating: n,
-    reasonCode: a,
-    reasonDescription: r,
+    reasonCode: r,
+    reasonDescription: a,
     feedback: l,
     analyticsData: s
-  } = t, c = o.Z.getSettings(), u = o.Z.getInputDeviceId(), d = o.Z.getInputDevices()[u], b = o.Z.getOutputDeviceId(), m = o.Z.getOutputDevices()[b], p = o.Z.getVideoDeviceId(), _ = o.Z.getVideoDevices()[p], h = o.Z.getNoiseCancellation(), f = o.Z.getMediaEngine().getAudioSubsystem(), v = o.Z.getMediaEngine().getAudioLayer();
+  } = t, c = o.Z.getSettings(), u = o.Z.getInputDeviceId(), d = o.Z.getInputDevices()[u], b = o.Z.getOutputDeviceId(), p = o.Z.getOutputDevices()[b], m = o.Z.getVideoDeviceId(), _ = o.Z.getVideoDevices()[m], f = o.Z.getNoiseCancellation(), h = o.Z.getMediaEngine().getAudioSubsystem(), O = o.Z.getMediaEngine().getAudioLayer();
   i.default.track(e, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -32,8 +32,8 @@ function a(e, t) {
     return e
   }({
     rating: null != n ? n : "no response",
-    reason_code: a,
-    reason_description: r,
+    reason_code: r,
+    reason_description: a,
     feedback: l,
     audio_input_mode: c.mode,
     automatic_audio_input_sensitivity_enabled: c.modeOptions.autoThreshold,
@@ -42,12 +42,12 @@ function a(e, t) {
     noise_suppression_enabled: c.noiseSuppression,
     automatic_gain_control_enabled: c.automaticGainControl,
     voice_output_volume: c.outputVolume,
-    noise_cancellation_enabled: h,
+    noise_cancellation_enabled: f,
     input_device_name: null == d ? void 0 : d.name,
-    output_device_name: null == m ? void 0 : m.name,
+    output_device_name: null == p ? void 0 : p.name,
     video_device_name: null == _ ? void 0 : _.name,
-    audio_subsystem: f,
-    audio_layer: v,
+    audio_subsystem: h,
+    audio_layer: O,
     automatic_audio_subsystem: c.automaticAudioSubsystem
   }, s))
 }

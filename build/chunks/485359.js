@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(525654),
-  o = n.n(i),
-  a = n(481060),
+  a = n.n(i),
+  o = n(481060),
   s = n(570140),
   l = n(468026),
   c = n(317770),
@@ -48,10 +48,10 @@ class h extends c.Z {
       let {
         kind: t,
         granted: n
-      } = e, i = "Firefox" === o().name ? d.BhN.ENABLE_MIC_FIREFOX : d.BhN.ENABLE_MIC_CHROME;
+      } = e, i = "Firefox" === a().name ? d.BhN.ENABLE_MIC_FIREFOX : d.BhN.ENABLE_MIC_CHROME;
       if (!n) {
         let e = "audio" !== t;
-        (0, a.h7j)(t => (0, r.jsx)(l.default, p({
+        (0, o.h7j)(t => (0, r.jsx)(l.default, p({
           title: e ? f.intl.string(f.t.OqloHx) : f.intl.string(f.t["kI+OOT"]),
           body: e ? f.intl.string(f.t.l3P7Ky) : f.intl.string(f.t.l3jwOT),
           onConfirm: () => window.open(u.Z.getArticleURL(i), "_blank"),

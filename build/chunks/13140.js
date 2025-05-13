@@ -10,8 +10,8 @@ n.d(t, {
 }), n(388685), n(704826), n(35282), n(415506), n(539854), n(781311);
 var r = n(921738),
   i = n.n(r),
-  o = n(392711),
-  a = n.n(o),
+  a = n(392711),
+  o = n.n(a),
   s = n(714338),
   l = n(823379),
   c = n(358085),
@@ -57,12 +57,12 @@ function h(e, t) {
   }), e
 }
 let m = __OVERLAY__ ? d.iC$ : (0, c.isLinux)() ? d.HsE : (0, c.isMac)() ? d.REU : (0, c.isWindows)() ? d.iC$ : {},
-  g = a().invert(d.HsE);
+  g = o().invert(d.HsE);
 g["223"] = "`", Object.freeze(g);
-let E = Object.freeze(a().invert(d.REU)),
-  b = a().invert(d.iC$);
+let E = Object.freeze(o().invert(d.REU)),
+  b = o().invert(d.iC$);
 b["223"] = "`", Object.freeze(b);
-let y = a().invert(null != m ? m : {});
+let y = o().invert(null != m ? m : {});
 
 function O(e) {
   return "+" === e ? "plus" : e
@@ -77,8 +77,8 @@ function v(e, t, n) {
       code: "Backquote",
       keyCode: e
     },
-    o = (0, u.jd)(i);
-  return "\\" === t && "`" === r ? t : null == o ? O(null != r ? r : t) : O(o.key)
+    a = (0, u.jd)(i);
+  return "\\" === t && "`" === r ? t : null == a ? O(null != r ? r : t) : O(a.key)
 }
 
 function I() {
@@ -134,21 +134,21 @@ function C(e) {
   let t, n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : I(),
     r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : d.MoX.KEYBOARD_KEY;
   if (null == e) return null;
-  let o = r === d.MoX.KEYBOARD_KEY || r === d.MoX.KEYBOARD_MODIFIER_KEY;
+  let a = r === d.MoX.KEYBOARD_KEY || r === d.MoX.KEYBOARD_MODIFIER_KEY;
   switch (!0) {
-    case o && n === d.CgE.LINUX:
+    case a && n === d.CgE.LINUX:
       t = d.HsE[e];
       break;
-    case o && n === d.CgE.MACOS:
+    case a && n === d.CgE.MACOS:
       t = d.REU[e];
       break;
-    case o && n === d.CgE.WINDOWS:
+    case a && n === d.CgE.WINDOWS:
       t = "+" === e ? d.iC$.plus : d.iC$[e];
       break;
-    case o && n === d.CgE.BROWSER:
+    case a && n === d.CgE.BROWSER:
       t = i()(N(e));
       break;
-    case o:
+    case a:
       t = m[e];
       break;
     case r === d.MoX.MOUSE_BUTTON:
@@ -244,8 +244,8 @@ function j(e) {
     r = e.map(e => {
       let [t, n, r] = e, i = "number" == typeof r ? r : I();
       if (t === d.MoX.KEYBOARD_KEY || t === d.MoX.KEYBOARD_MODIFIER_KEY) {
-        var o;
-        return null != (o = T(null != i ? [t, n, i] : [t, n])) ? o : "UNK".concat(n)
+        var a;
+        return null != (a = T(null != i ? [t, n, i] : [t, n])) ? a : "UNK".concat(n)
       }
       return t === d.MoX.MOUSE_BUTTON ? "mouse".concat(n) : t === d.MoX.GAMEPAD_BUTTON ? "gamepad".concat(n) : "dev".concat(t, ",").concat(n)
     }).filter(l.lm);

@@ -3,9 +3,9 @@ n.d(t, {
   Z: () => f
 }), n(388685);
 var r = n(255367),
-  i = n(73800),
-  a = n(120356),
-  l = n.n(a),
+  a = n(73800),
+  i = n(120356),
+  l = n.n(i),
   s = n(21260),
   o = n(780384),
   c = n(481060),
@@ -20,20 +20,20 @@ function _(e) {
   let {
     onTabSelect: t,
     tabs: n,
-    selectedTab: a
-  } = e, s = (0, u.ZP)(), d = (0, o.wj)(s), _ = (0, p.Q3)("GlobalDiscoveryHeaderMoreTab"), f = i.useMemo(() => null != n.find(e => {
+    selectedTab: i
+  } = e, s = (0, u.ZP)(), d = (0, o.wj)(s), _ = (0, p.Q3)("GlobalDiscoveryHeaderMoreTab"), f = a.useMemo(() => null != n.find(e => {
     let {
       id: t
     } = e;
-    return t === a
-  }), [a, n]), [b, x] = i.useState(!1), v = function(e) {
+    return t === i
+  }), [i, n]), [b, x] = a.useState(!1), v = function(e) {
     let {
       selected: t,
       isVisualRefreshEnabled: n,
       isDarkTheme: r,
-      isHovered: i
+      isHovered: a
     } = e;
-    return n ? i ? "text-primary" : t ? "text-brand" : "text-normal" : !t && i ? "interactive-hover" : t ? "header-primary" : r ? "interactive-normal" : "header-primary"
+    return n ? a ? "text-primary" : t ? "text-brand" : "text-normal" : !t && a ? "interactive-hover" : t ? "header-primary" : r ? "interactive-normal" : "header-primary"
   }({
     selected: f,
     isVisualRefreshEnabled: _,
@@ -44,24 +44,24 @@ function _(e) {
       selected: t,
       isVisualRefreshEnabled: n,
       isDarkTheme: r,
-      isHovered: i
+      isHovered: a
     } = e;
-    return n ? i ? c.TVs.colors.TEXT_PRIMARY : t ? c.TVs.colors.TEXT_BRAND : c.TVs.colors.INTERACTIVE_NORMAL : !t && i ? c.TVs.colors.INTERACTIVE_HOVER : t ? c.TVs.colors.HEADER_PRIMARY : r ? c.TVs.colors.TEXT_MUTED : c.TVs.colors.HEADER_PRIMARY
+    return n ? a ? c.TVs.colors.TEXT_PRIMARY : t ? c.TVs.colors.TEXT_BRAND : c.TVs.colors.INTERACTIVE_NORMAL : !t && a ? c.TVs.colors.INTERACTIVE_HOVER : t ? c.TVs.colors.HEADER_PRIMARY : r ? c.TVs.colors.TEXT_MUTED : c.TVs.colors.HEADER_PRIMARY
   }({
     selected: f,
     isVisualRefreshEnabled: _,
     isDarkTheme: d,
     isHovered: b
-  }), j = i.useCallback(() => x(!0), []), y = i.useCallback(() => x(!1), []), I = i.useRef(null);
+  }), j = a.useCallback(() => x(!0), []), y = a.useCallback(() => x(!1), []), I = a.useRef(null);
   return (0, r.jsx)(c.yRy, {
     targetElementRef: I,
     renderPopout: e => {
       let {
-        closePopout: i
+        closePopout: a
       } = e;
       return (0, r.jsx)(m.Z, {
-        selectedTab: a,
-        onClose: i,
+        selectedTab: i,
+        onClose: a,
         tabs: n,
         onTabSelect: t
       })
@@ -69,9 +69,9 @@ function _(e) {
     position: "bottom",
     align: "left",
     children: (e, t) => {
-      var n, i;
+      var n, a;
       let {
-        isShown: a
+        isShown: i
       } = t;
       return (0, r.jsx)(c.njP.Item, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -90,7 +90,7 @@ function _(e) {
           })
         }
         return e
-      }({}, e), i = i = {
+      }({}, e), a = a = {
         id: "more",
         look: "brand",
         selectedItem: _ && f ? "more" : void 0,
@@ -109,7 +109,7 @@ function _(e) {
             variant: _ ? "text-sm/semibold" : "text-md/medium",
             color: v,
             children: h.intl.string(h.t.UKOtz8)
-          }), a ? (0, r.jsx)(c.u04, {
+          }), i ? (0, r.jsx)(c.u04, {
             size: "xs",
             color: C
           }) : (0, r.jsx)(c.CJ0, {
@@ -117,15 +117,15 @@ function _(e) {
             color: C
           })]
         })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(i)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
+      })(Object(a)).forEach(function(e) {
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(a, e))
       }), n))
     }
   })
@@ -135,20 +135,20 @@ function f(e) {
   let {
     className: t,
     selectedTab: n,
-    tabs: a,
+    tabs: i,
     onTabSelect: o,
     onAvailableWidthChange: u
-  } = e, [m, h] = i.useState(0), f = i.useRef(m), {
+  } = e, [m, h] = a.useState(0), f = a.useRef(m), {
     lastVisibleIndex: b,
     onItemLayout: x,
     overflowItemsRef: v,
     itemWidthsRef: C
   } = (0, s.zP)({
-    items: a,
+    items: i,
     itemGapPx: 20,
     maxLines: 1,
     containerWidth: m
-  }), j = i.useMemo(() => a.slice(0, b + 1), [b, a]), y = i.useMemo(() => a.slice(b + 1), [b, a]), I = i.useRef(null), O = i.useCallback(e => {
+  }), j = a.useMemo(() => i.slice(0, b + 1), [b, i]), y = a.useMemo(() => i.slice(b + 1), [b, i]), I = a.useRef(null), O = a.useCallback(e => {
     let t = e.contentRect.width;
     if (null == t || f.current === t) return;
     h(t), f.current = t;
@@ -163,7 +163,7 @@ function f(e) {
     ref: I,
     children: [(0, r.jsxs)("div", {
       className: g.measurements,
-      children: [a.map((e, t) => (0, r.jsx)(s.AJ, {
+      children: [i.map((e, t) => (0, r.jsx)(s.AJ, {
         index: t,
         onItemLayout: x,
         children: (0, r.jsx)(c.njP.Item, {

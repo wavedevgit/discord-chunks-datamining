@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(81825);
 
@@ -14,7 +14,7 @@ function i(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -26,30 +26,30 @@ function o(e) {
   }
   return e
 }
-class a extends r.Z {
+class o extends r.Z {
   constructor(e) {
     var t, n;
     super(), i(this, "id", void 0), i(this, "layoutId", void 0), i(this, "type", void 0), i(this, "anchor", void 0), i(this, "size", void 0), i(this, "minSize", void 0), i(this, "pinned", void 0), i(this, "zIndex", void 0), i(this, "opacity", void 0), i(this, "meta", void 0), this.id = e.id || "", this.layoutId = e.layoutId || "", this.type = e.type;
     let {
       top: r,
-      left: a,
+      left: o,
       bottom: s,
       right: l
     } = null != (t = e.anchor) ? t : {
       top: 0,
       left: 0
     };
-    "number" == typeof s ? r = void 0 : s = void 0, "number" == typeof l ? a = void 0 : l = void 0, this.anchor = {
+    "number" == typeof s ? r = void 0 : s = void 0, "number" == typeof l ? o = void 0 : l = void 0, this.anchor = {
       top: r,
-      left: a,
+      left: o,
       bottom: s,
       right: l
-    }, this.size = o({
+    }, this.size = a({
       width: 0,
       height: 0
-    }, e.size), this.minSize = o({
+    }, e.size), this.minSize = a({
       width: void 0,
       height: void 0
-    }, e.minSize), this.pinned = !!e.pinned, this.zIndex = e.zIndex || 0, this.opacity = null != (n = e.opacity) ? n : 1, this.meta = o({}, e.meta)
+    }, e.minSize), this.pinned = !!e.pinned, this.zIndex = e.zIndex || 0, this.opacity = null != (n = e.opacity) ? n : 1, this.meta = a({}, e.meta)
   }
 }

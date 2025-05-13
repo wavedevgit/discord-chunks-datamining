@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  T: () => a
+  T: () => o
 });
 var r = n(818083),
   i = n(772209);
-let o = (0, r.B)({
+let a = (0, r.B)({
   kind: "user",
   id: "2025-02_reaction_reply",
   label: "Reaction Reply Experiment",
@@ -21,7 +21,7 @@ let o = (0, r.B)({
   }]
 });
 
-function a(e) {
+function o(e) {
   let {
     location: t,
     autoTrackExposure: n = !0
@@ -29,12 +29,12 @@ function a(e) {
     location: t,
     autoTrackExposure: n
   }), {
-    enabled: a
-  } = o.useExperiment({
+    enabled: o
+  } = a.useExperiment({
     location: t
   }, {
     autoTrackExposure: n,
     disable: r
   });
-  return a
+  return o
 }

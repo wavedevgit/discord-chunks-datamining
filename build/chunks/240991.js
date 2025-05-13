@@ -8,8 +8,8 @@ n.r(t), n.d(t, {
 }), n(781311);
 var r = n(392711),
   i = n.n(r),
-  o = n(31775),
-  a = n.n(o),
+  a = n(31775),
+  o = n.n(a),
   s = n(159635),
   l = n.n(s),
   c = n(25209),
@@ -21,7 +21,7 @@ let _ = (0, f.Z)([d.Z.PROFILE_BIO_RULES, (0, u.Z)({
     enableBuildOverrides: !1,
     mustConfirmExternalLink: !0
   })]),
-  p = new(a())({
+  p = new(o())({
     max: 2e3
   }),
   h = c.w4(_),

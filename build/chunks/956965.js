@@ -3,9 +3,9 @@ n.d(t, {
   Z: () => j
 }), n(388685);
 var r = n(255367),
-  i = n(73800),
-  a = n(120356),
-  l = n.n(a),
+  a = n(73800),
+  i = n(120356),
+  l = n.n(i),
   s = n(442837),
   o = n(607070),
   c = n(361213),
@@ -22,25 +22,25 @@ function b(e) {
   let {
     application: t,
     isHovered: n,
-    botBannerUrl: a,
+    botBannerUrl: i,
     botBannerUrlAnimated: s,
     iconURL: o
   } = e, m = (0, d.Z)({
     applicationId: t.id,
     size: 600,
     names: ["embedded_cover"]
-  }), h = i.useMemo(() => {
+  }), h = a.useMemo(() => {
     let e = (0, u.yJ)(t);
     return null != e && null != e.activity_preview_video_asset_id ? (0, c.Z)(t.id, e.activity_preview_video_asset_id) : null
   }, [t]), {
     imageUrl: _,
     imageUrlAnimated: f
-  } = i.useMemo(() => "fetched" === m.state && null != m.url ? {
+  } = a.useMemo(() => "fetched" === m.state && null != m.url ? {
     imageUrl: m.url
   } : {
-    imageUrl: a,
+    imageUrl: i,
     imageUrlAnimated: s
-  }, [m.state, m.url, a, s]), b = null != _, j = null != h;
+  }, [m.state, m.url, i, s]), b = null != _, j = null != h;
   return "loading" === m.state ? null : j ? (0, r.jsxs)(r.Fragment, {
     children: [b ? (0, r.jsx)(x, {
       isHovered: n,
@@ -68,8 +68,8 @@ function x(e) {
   let {
     isHovered: t,
     url: n,
-    animatedUrl: a
-  } = e, [s, o] = i.useState(!1);
+    animatedUrl: i
+  } = e, [s, o] = a.useState(!1);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("img", {
       src: n,
@@ -78,9 +78,9 @@ function x(e) {
         [g.loaded]: s
       }),
       onLoad: () => o(!0)
-    }), null != a ? (0, r.jsx)(v, {
+    }), null != i ? (0, r.jsx)(v, {
       isHovered: t,
-      url: a,
+      url: i,
       isVideo: !1
     }) : null]
   })
@@ -90,9 +90,9 @@ function v(e) {
   let {
     isHovered: t,
     url: n,
-    isVideo: a
-  } = e, [s, o] = i.useState(!1), [c, d] = i.useState(t);
-  return (i.useEffect(() => {
+    isVideo: i
+  } = e, [s, o] = a.useState(!1), [c, d] = a.useState(t);
+  return (a.useEffect(() => {
     t && d(!0)
   }, [t]), c) ? (0, r.jsx)("div", {
     className: l()(g.bannerAnimatedContainer, {
@@ -100,7 +100,7 @@ function v(e) {
       [g.videoFadeIn]: t && s
     }),
     onAnimationEnd: () => t ? null : d(!1),
-    children: a ? (0, r.jsx)(p.Z, {
+    children: i ? (0, r.jsx)(p.Z, {
       src: n,
       loop: !0,
       autoPlay: !0,
@@ -121,11 +121,11 @@ function C(e) {
     iconURL: t
   } = e, {
     backgroundGradient: n,
-    hasFetchedColors: i
+    hasFetchedColors: a
   } = (0, h.u)(t);
   return (0, r.jsx)("div", {
     className: l()(g.bannerContent, g.bannerGradient, {
-      [g.loaded]: i
+      [g.loaded]: a
     }),
     style: {
       backgroundImage: n
@@ -136,13 +136,13 @@ let j = function(e) {
   let {
     application: t,
     bannerType: n,
-    iconURL: a
-  } = e, l = (0, s.e7)([o.Z], () => o.Z.useReducedMotion), [c, d] = i.useState(!1), p = i.useCallback(() => {
+    iconURL: i
+  } = e, l = (0, s.e7)([o.Z], () => o.Z.useReducedMotion), [c, d] = a.useState(!1), p = a.useCallback(() => {
     d(!0)
-  }, []), h = i.useCallback(() => d(!1), []), v = (0, u.ye)(t), j = t.bot, {
+  }, []), h = a.useCallback(() => d(!1), []), v = (0, u.ye)(t), j = t.bot, {
     botBannerUrl: y,
     botBannerUrlAnimated: I
-  } = i.useMemo(() => (null == j ? void 0 : j.id) == null || (null == j ? void 0 : j.banner) == null ? {} : {
+  } = a.useMemo(() => (null == j ? void 0 : j.id) == null || (null == j ? void 0 : j.banner) == null ? {} : {
     botBannerUrl: (0, m.aN)({
       id: j.id,
       banner: j.banner,
@@ -175,7 +175,7 @@ let j = function(e) {
       url: y,
       animatedUrl: I
     }) : (0, r.jsx)(C, {
-      iconURL: a
+      iconURL: i
     })
   })
 }

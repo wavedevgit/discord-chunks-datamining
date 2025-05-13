@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(481060),
-  o = n(299206),
-  a = n(726521),
+  a = n(299206),
+  o = n(726521),
   s = n(389052),
   l = n(388032),
   c = n(923492);
@@ -57,7 +57,7 @@ let p = e => {
       selectedGuildId: c,
       selectedChannelId: u,
       children: d = null
-    } = e, f = (0, o.Z)({
+    } = e, f = (0, a.Z)({
       id: t.id,
       label: l.intl.string(l.t["+NP/b2"])
     });
@@ -70,7 +70,7 @@ let p = e => {
         id: "report",
         label: l.intl.string(l.t["+78Pfn"]),
         color: "danger",
-        action: () => (0, a.uu)({
+        action: () => (0, o.uu)({
           application: t,
           entrypoint: "authorized_apps_settings",
           contextualGuildId: c,
@@ -84,15 +84,15 @@ let p = e => {
       appRecord: t,
       botUser: n,
       closePopout: i,
-      showAppReportingOption: o,
-      selectedGuildId: a,
+      showAppReportingOption: a,
+      selectedGuildId: o,
       selectedChannelId: l
     } = e;
     return (0, r.jsx)(p, {
       appRecord: t,
       closePopout: i,
-      showAppReportingOption: o,
-      selectedGuildId: a,
+      showAppReportingOption: a,
+      selectedGuildId: o,
       selectedChannelId: l,
       children: (0, s.Z)({
         user: n,
@@ -105,8 +105,8 @@ let p = e => {
     let {
       appRecord: t,
       showAppReportingOption: n,
-      selectedGuildId: o,
-      selectedChannelId: a
+      selectedGuildId: a,
+      selectedChannelId: o
     } = e;
     return (0, r.jsx)(i.yRy, {
       renderPopout: e => {
@@ -117,15 +117,15 @@ let p = e => {
           appRecord: t,
           closePopout: i,
           showAppReportingOption: n,
-          selectedGuildId: o,
-          selectedChannelId: a
+          selectedGuildId: a,
+          selectedChannelId: o
         }) : (0, r.jsx)(h, {
           appRecord: t,
           botUser: t.bot,
           closePopout: i,
           showAppReportingOption: n,
-          selectedGuildId: o,
-          selectedChannelId: a
+          selectedGuildId: a,
+          selectedChannelId: o
         })
       },
       align: "right",

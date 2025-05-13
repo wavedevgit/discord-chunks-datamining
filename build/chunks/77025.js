@@ -2,7 +2,7 @@
 "use strict";
 var r = n(46015),
   i = n(527160),
-  o = r({}.hasOwnProperty);
+  a = r({}.hasOwnProperty);
 e.exports = Object.hasOwn || function(e, t) {
-  return o(i(e), t)
+  return a(i(e), t)
 }

@@ -4,35 +4,35 @@ n.d(t, {
 });
 var r = n(255367);
 n(73800);
-var i = n(120356),
-  a = n.n(i),
+var a = n(120356),
+  i = n.n(a),
   l = n(481060),
   s = n(237561);
 let o = function(e) {
   let {
     tabs: t,
     onTabSelect: n,
-    selectedTab: i,
+    selectedTab: a,
     className: o
   } = e;
   return (0, r.jsx)(l.njP, {
     type: "top-pill",
-    selectedItem: i,
+    selectedItem: a,
     onItemSelect: n,
     className: o,
     children: t.map((e, t) => {
       let {
         id: n,
-        label: i,
+        label: a,
         count: o
       } = e;
       return (0, r.jsx)(l.njP.Item, {
         id: n,
-        className: a()(s.tabItem, {
+        className: i()(s.tabItem, {
           [s.firstChildSpacingFix]: 0 === t
         }),
-        "aria-label": i,
-        children: null != o && o > 0 ? "".concat(i, " (").concat(o, ")") : i
+        "aria-label": a,
+        children: null != o && o > 0 ? "".concat(a, " (").concat(o, ")") : a
       }, n)
     })
   })

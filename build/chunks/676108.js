@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  o = n(481060),
-  a = n(318766),
+  a = n(481060),
+  o = n(318766),
   s = n(907040),
   l = n(28546),
   c = n(872635),
@@ -86,17 +86,17 @@ function m(e) {
         iconClassName: d.staticIcon,
         dividerClassName: d.staticDivider
       })
-    }), (0, r.jsx)(o.yRy, {
+    }), (0, r.jsx)(a.yRy, {
       targetElementRef: g,
       renderPopout: b,
       position: "bottom",
-      animation: o.yRy.Animation.NONE,
+      animation: a.yRy.Animation.NONE,
       align: "left",
       children: (e, t) => {
         let {
           isShown: n
         } = t;
-        return (0, r.jsx)(a.Z, h(_({}, e), {
+        return (0, r.jsx)(o.Z, h(_({}, e), {
           ref: g,
           active: n,
           className: d.emojiButton,
