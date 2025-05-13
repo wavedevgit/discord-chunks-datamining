@@ -1,2 +1,2 @@
 /** Chunk was on 53922 **/
-a.exports = JSON.parse('{"Poezn5":"Online \xe1llapot aktiv\xe1l\xe1sa","qKDqen":"Online \xe1llapot aktiv\xe1l\xe1sa a tev\xe9kenys\xe9g megoszt\xe1s\xe1hoz","a3AofX":"Online be\xe1ll\xedt\xe1sra \xe1ll\xedtja az \xe1llapotot"}')
+s.exports = JSON.parse('{"jfDsyM":"Korl\xe1tozott megoszt\xe1s"}')

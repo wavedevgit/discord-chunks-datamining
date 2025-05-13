@@ -1,2 +1,2 @@
 /** Chunk was on 44057 **/
-e.exports = JSON.parse('{"Poezn5":"G\xe5 online","qKDqen":"G\xe5 online for at dele aktivitet","a3AofX":"Indstiller status til Online"}')
+s.exports = JSON.parse('{"jfDsyM":"Begr\xe6nset deling"}')
