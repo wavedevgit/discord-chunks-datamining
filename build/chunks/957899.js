@@ -18,9 +18,10 @@ function a(e, t, n) {
 class s extends r.Z {
   handleVoiceChannelSelect(e) {
     let {
-      guildId: t
+      guildId: t,
+      channelId: n
     } = e;
-    o.M.trigger({
+    null != n && o.M.trigger({
       guildId: null != t ? t : void 0
     })
   }
