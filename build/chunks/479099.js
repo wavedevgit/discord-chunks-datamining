@@ -61,12 +61,12 @@ function v(e) {
     onClick: v,
     onRemove: T,
     selected: O,
-    ariaLabel: j
+    ariaLabel: I
   } = e, {
-    name: I,
-    emojiId: M,
-    emojiName: P
-  } = t, E = null != T, [S, A] = l.useState(!1), w = (0, c.e7)([g.ZP], () => null != M ? g.ZP.getUsableCustomEmojiById(M) : null), D = E || null != v, k = (!E || !S) && (null != M || null != P), z = 0 === a, L = l.useRef(null), R = (0, c.e7)([p.Z], () => p.Z.keyboardModeEnabled), N = e => {
+    name: j,
+    emojiId: E,
+    emojiName: S
+  } = t, M = null != T, [P, A] = l.useState(!1), w = (0, c.e7)([g.ZP], () => null != E ? g.ZP.getUsableCustomEmojiById(E) : null), D = M || null != v, k = (!M || !P) && (null != E || null != S), N = 0 === a, z = l.useRef(null), R = (0, c.e7)([p.Z], () => p.Z.keyboardModeEnabled), L = e => {
     let a = _.Sb.getSetting();
     f.wS && a && (0, u.jW)(e, async () => {
       let {
@@ -79,13 +79,13 @@ function v(e) {
   }, Z = (0, i.jsxs)(i.Fragment, {
     children: [k ? (0, i.jsx)(m.Z, {
       className: o()(b.emoji, {
-        [b.small]: z
+        [b.small]: N
       }),
-      emojiId: M,
-      emojiName: P,
+      emojiId: E,
+      emojiName: S,
       animated: !!(null == w ? void 0 : w.animated),
       size: "reaction"
-    }) : null, S && E && (0, i.jsx)("div", {
+    }) : null, P && M && (0, i.jsx)("div", {
       className: b.closeCircle,
       children: (0, i.jsx)(d.Dio, {
         size: "md",
@@ -93,33 +93,33 @@ function v(e) {
         className: b.close
       })
     }), (0, i.jsx)(d.Text, {
-      variant: z ? "text-xs/semibold" : "text-sm/semibold",
+      variant: N ? "text-xs/semibold" : "text-sm/semibold",
       lineClamp: 1,
       color: "currentColor",
-      children: I
+      children: j
     })]
   }), U = {
     key: t.id,
     className: o()(b.pill, {
       [b.disabled]: r,
       [b.clickable]: D,
-      [b.small]: z,
+      [b.small]: N,
       [b.selected]: O
     }, x),
     onClick: e => {
-      null == v || v(e), null == T || T(t), R || null == L.current || L.current.blur()
+      null == v || v(e), null == T || T(t), R || null == z.current || z.current.blur()
     },
-    onContextMenu: e => N(e),
-    onMouseEnter: () => E && A(!0),
-    onMouseLeave: () => E && A(!1)
+    onContextMenu: e => L(e),
+    onMouseEnter: () => M && A(!0),
+    onMouseLeave: () => M && A(!1)
   }, B = (0, s.JA)("forum-tag-".concat(t.id));
   return D ? (0, i.jsx)(d.P3F, C(y(C(y({}, B), {
-    innerRef: L,
+    innerRef: z,
     focusProps: {
-      ringTarget: L
+      ringTarget: z
     },
-    "aria-label": null != j ? j : h.intl.formatToPlainString(h.t.iyRTLi, {
-      tagName: I
+    "aria-label": null != I ? I : h.intl.formatToPlainString(h.t.iyRTLi, {
+      tagName: j
     }),
     role: "button",
     "aria-pressed": O

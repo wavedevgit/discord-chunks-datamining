@@ -145,13 +145,15 @@ function O(e) {
 function E(e, t, n) {
   let {
     message: i,
-    channel: l
+    channel: l,
+    compact: o
   } = e;
   return n ? (0, r.jsx)(j, {
     channel: l,
     message: i
   }) : (0, r.jsx)(_.ZP, {
     message: i,
-    content: t
+    content: t,
+    compact: null != o && o
   })
 }

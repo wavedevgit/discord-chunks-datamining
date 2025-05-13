@@ -8,10 +8,12 @@ var i = n(930282);
 
 function l(e, t) {
   let {
-    message: n
+    message: n,
+    compact: l
   } = e;
   return (0, r.jsx)(i.ZP, {
     message: n,
-    content: t
+    content: t,
+    compact: null != l && l
   })
 }

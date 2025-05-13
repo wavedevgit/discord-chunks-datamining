@@ -112,7 +112,8 @@ function D(e, t, s, l, a, r) {
   else u = (0, n.jsx)(f.ZP, {
     message: x,
     content: t,
-    className: a
+    className: a,
+    compact: !0
   });
   return E ? d = (0, n.jsx)(c.B7q, {
     size: "custom",

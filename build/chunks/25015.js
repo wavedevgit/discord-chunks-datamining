@@ -29,7 +29,7 @@ function b(e, t) {
     allowDevLinks: x = !1,
     previewLinkTarget: C = !1,
     viewingChannelId: P
-  } = t, T = (0, a.p)(), w = (0, d.o)({
+  } = t, T = (0, a.p)(), S = (0, d.o)({
     location: "useMessageRenderedContent"
   });
   return o.useMemo(() => {
@@ -49,7 +49,7 @@ function b(e, t) {
         }
       })
     }
-    return w.enabled ? {
+    return S.enabled ? {
       content: (0, r.jsx)(o.Suspense, {
         children: (0, r.jsx)(u.v.Provider, {
           value: {
@@ -77,5 +77,5 @@ function b(e, t) {
       shouldFilterKeywords: T,
       viewingChannelId: P
     })
-  }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, b, h, _, y, v, O, j, C, T, x, P, w.enabled])
+  }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, b, h, _, y, v, O, j, C, T, x, P, S.enabled])
 }

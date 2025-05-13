@@ -98,7 +98,8 @@ function P(e) {
       className: I.content,
       children: [(0, r.jsx)(N, {}), (0, r.jsx)(p.ZP, {
         message: s,
-        content: y
+        content: y,
+        compact: O
       }), (0, f.Z)({
         channelMessageProps: {
           message: s,

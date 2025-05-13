@@ -520,7 +520,8 @@ let eu = i.memo(function(e) {
       allowLinks: !0
     }), s = (0, S.Z)({
       message: i,
-      channel: t
+      channel: t,
+      compact: !1
     }, l, !1);
     return (0, r.jsx)("div", {
       className: a()(er.channelTextAreaInner, er.previewTextArea),

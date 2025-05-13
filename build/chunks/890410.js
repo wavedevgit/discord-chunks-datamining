@@ -75,7 +75,8 @@ function m(e) {
           [d.compact]: g
         }),
         message: i,
-        content: f
+        content: f,
+        compact: null != g && g
       }),
       childrenHeader: (0, r.jsx)(u.ZP, p({
         message: i,

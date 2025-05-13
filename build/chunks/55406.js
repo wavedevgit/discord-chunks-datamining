@@ -3,7 +3,7 @@
 let r;
 n.r(t), n.d(t, {
   default: () => T,
-  renderChangelogMessageMarkup: () => w
+  renderChangelogMessageMarkup: () => S
 }), n(35282), n(704826);
 var o = n(159635),
   a = n.n(o),
@@ -118,7 +118,7 @@ let T = {
   getMessageRules: e => u({}, C(e))
 };
 
-function w(e, t, n) {
+function S(e, t, n) {
   return {
     hasSpoilerEmbeds: !1,
     content: c.Z.reactParserFor(P(t))(e.content, !1, null != n ? {

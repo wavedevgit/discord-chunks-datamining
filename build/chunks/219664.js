@@ -438,24 +438,24 @@ function W(e) {
     isFirstMessageLoaded: l,
     containerWidth: s,
     hasUnreads: o
-  } = e, [c, u] = (0, T.rI)(s - 2 * T.LT), {
-    content: m
+  } = e, c = v.jU.useSetting(), [u, m] = (0, T.rI)(s - 2 * T.LT), {
+    content: h
   } = (0, O.mX)({
     firstMessage: n,
     formatInline: !1,
     noStyleAndInteraction: !0
   }), {
-    shouldRenderTagsRow: h
+    shouldRenderTagsRow: g
   } = (0, k.DM)({
     channel: t,
     isNew: !1
-  }), g = i.useMemo(() => ({
-    width: c,
-    height: u
-  }), [c, u]), f = o ? F.textContentUnread : F.textContentRead;
+  }), f = i.useMemo(() => ({
+    width: u,
+    height: m
+  }), [u, m]), x = o ? F.textContentUnread : F.textContentRead;
   return (0, r.jsxs)("div", {
     className: F.contentPreview,
-    style: g,
+    style: f,
     children: [(0, r.jsxs)("div", {
       className: F.content,
       children: [l && null == n && (0, r.jsx)(d.Text, {
@@ -464,14 +464,15 @@ function W(e) {
         children: L.intl.string(L.t.mE3KJC)
       }), l && null != n && (0, r.jsx)(b.ZP, {
         message: n,
-        content: m,
-        className: f
+        content: h,
+        className: x,
+        compact: c
       })]
     }), (0, r.jsx)("div", {
       className: a()(F.textContentFooter, {
-        [F.noTags]: !h
+        [F.noTags]: !g
       }),
-      children: h ? (0, r.jsx)(k.ZP, {
+      children: g ? (0, r.jsx)(k.ZP, {
         channel: t,
         tagsClassName: F.tagPill,
         className: F.__invalid_row

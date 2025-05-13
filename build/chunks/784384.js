@@ -1,7 +1,7 @@
 /** Chunk was on 16967 **/
 n.d(t, {
   HY: () => y,
-  nm: () => E,
+  nm: () => b,
   pU: () => I,
   y: () => S
 }), n(388685), n(361932), n(187205);
@@ -20,9 +20,9 @@ var l = n(73800),
   g = n(408433),
   m = n(823379),
   p = n(981631),
-  b = n(388032);
+  E = n(388032);
 
-function E(e) {
+function b(e) {
   let t = e.map(s.hl).find(m.lm),
     n = (0, i.e7)([d.Z], () => d.Z.getChannel(t), [t]);
   return l.useMemo(() => null != n ? n : (0, u.kt)({
@@ -34,14 +34,14 @@ function E(e) {
 function y(e, t, n) {
   let l = n instanceof u.Sf;
   if (t.isNSFW() && !(l && n.isNSFW())) return {
-    label: b.intl.string(b.t.KgPx1N)
+    label: E.intl.string(E.t.KgPx1N)
   };
   if (l && (0, u.Km)(n.type)) {
     if ((e.attachments.length > 0 || e.messageSnapshots.some(e => e.message.attachments.length > 0)) && !f.Z.can(p.Plq.ATTACH_FILES, n)) return {
-      label: b.intl.string(b.t.P7yvbm)
+      label: E.intl.string(E.t.P7yvbm)
     };
     if ((e.embeds.length > 0 || e.messageSnapshots.some(e => e.message.embeds.length > 0)) && !(0, g.eC)(n, f.Z) && !(0, g.En)(e)) return {
-      label: b.intl.string(b.t.Wr4RIS)
+      label: E.intl.string(E.t.Wr4RIS)
     };
     let t = [...(0, c.cv)(e), ...e.messageSnapshots.flatMap(e => {
       let {
@@ -53,10 +53,10 @@ function y(e, t, n) {
         let n = o.Z.getStickerById(e.id);
         return null != n && !!(0, c.J8)(n) && (n.guild_id !== t.guild_id || void 0)
       })(e, n))) return {
-      label: b.intl.string(b.t["0Yyrub"])
+      label: E.intl.string(E.t["0Yyrub"])
     };
     if ((e.hasFlag(p.iLy.IS_VOICE_MESSAGE) || e.messageSnapshots.some(e => e.message.hasFlag(p.iLy.IS_VOICE_MESSAGE))) && !f.Z.can(p.Plq.SEND_VOICE_MESSAGES, n)) return {
-      label: b.intl.string(b.t.quj4DQ)
+      label: E.intl.string(E.t.quj4DQ)
     }
   }
 }

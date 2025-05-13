@@ -14,6 +14,6 @@ function l(e, t) {
   return (0, r.jsx)(i.Z, {
     message: n,
     content: t,
-    compact: l
+    compact: null != l && l
   })
 }

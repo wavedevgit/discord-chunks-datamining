@@ -70,18 +70,18 @@ let T = e => {
       guild_id: n.id
     }, (0, l.v_)(m.Z.getChannel(b.Z.getChannelId(n.id)))))
   });
-  let w = (0, o.e7)([f.Z], () => null != t.roleId ? f.Z.getRole(n.id, t.roleId) : void 0),
-    S = (0, p.Z)(w),
-    I = S ? j.intl.formatToPlainString(j.t.t0928f, {
+  let S = (0, o.e7)([f.Z], () => null != t.roleId ? f.Z.getRole(n.id, t.roleId) : void 0),
+    w = (0, p.Z)(S),
+    I = w ? j.intl.formatToPlainString(j.t.t0928f, {
       name: T
     }) : j.intl.formatToPlainString(j.t.UDDkGx, {
       name: T
     }),
-    k = P(C({}, t), {
+    N = P(C({}, t), {
       src: null == t.src ? t.src : (0, u.o)(t.src, 40),
       size: 40
     }),
-    M = S ? () => {
+    k = w ? () => {
       (0, g.uL)(v.Z5c.CHANNEL(n.id, O.oC.ROLE_SUBSCRIPTIONS))
     } : () => {
       (0, d.f)({
@@ -99,7 +99,7 @@ let T = e => {
           className: x.mainContent,
           children: [(0, r.jsx)("div", {
             className: x.roleIconContainer,
-            children: (0, r.jsx)(c.Z, P(C({}, k), {
+            children: (0, r.jsx)(c.Z, P(C({}, N), {
               enableTooltip: !1,
               className: x.__invalid_roleIcon,
               enableHeight: !1
@@ -123,7 +123,7 @@ let T = e => {
           className: x.ctaButton,
           innerClassName: x.ctaButtonContent,
           fullWidth: !0,
-          onClick: M,
+          onClick: k,
           autoFocus: !0,
           children: [(0, r.jsx)(h.Z, {
             width: 14,
