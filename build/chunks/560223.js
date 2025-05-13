@@ -74,17 +74,17 @@ let E = e => {
       k = (0, h.Z)(),
       L = (0, b.mN)(),
       {
-        fractionalState: M
+        fractionalState: B
       } = (0, c.Z)(),
-      B = (0, d.W)(),
+      M = (0, d.W)(),
       U = (0, b.ZM)({
         perksCards: k,
         variant: s,
         isFullScreen: v,
         showTenureCard: null == N ? void 0 : N.showCard,
         isPremiumSubscriber: L,
-        fractionalState: M,
-        isInReverseTrial: B
+        fractionalState: B,
+        isInReverseTrial: M
       }),
       V = U.some(e => null != e.pillText),
       [G, F] = r.useState(null),

@@ -58,7 +58,7 @@ let h = e => {
       children: (0, d.Z)(t, !1)
     })
   },
-  y = e => {
+  E = e => {
     let {
       sku: t,
       className: n
@@ -68,7 +68,7 @@ let h = e => {
       children: (0, d.Z)(t)
     })
   },
-  E = e => {
+  y = e => {
     let {
       sku: t,
       className: n
@@ -79,7 +79,7 @@ let h = e => {
         sku: t
       }), (0, a.jsx)(b, {
         sku: t
-      }), (0, a.jsx)(y, {
+      }), (0, a.jsx)(E, {
         sku: t
       })]
     })
@@ -128,12 +128,12 @@ class v extends(r = o.PureComponent) {
           className: c()(t, n)
         });
       case 2:
-        return (0, a.jsx)(E, {
+        return (0, a.jsx)(y, {
           sku: r,
           className: c()(t, n)
         });
       default:
-        return (0, a.jsx)(y, {
+        return (0, a.jsx)(E, {
           className: c()(t, n),
           sku: r
         })
@@ -155,12 +155,12 @@ class v extends(r = o.PureComponent) {
           className: c()(m.directoryHeroPricePremium, t)
         });
       case 2:
-        return (0, a.jsx)(E, {
+        return (0, a.jsx)(y, {
           sku: n,
           className: c()(m.directoryHeroPrice, t)
         });
       default:
-        return (0, a.jsx)(y, {
+        return (0, a.jsx)(E, {
           className: c()(m.directoryHeroPrice, t),
           sku: n
         })
@@ -179,7 +179,7 @@ class v extends(r = o.PureComponent) {
         t = (0, a.jsxs)(o.Fragment, {
           children: [(0, a.jsxs)("div", {
             className: m.row,
-            children: [(0, a.jsx)(y, {
+            children: [(0, a.jsx)(E, {
               sku: r
             }), (0, a.jsx)(_, {
               sku: r
@@ -190,7 +190,7 @@ class v extends(r = o.PureComponent) {
         });
         break;
       default:
-        t = (0, a.jsx)(y, {
+        t = (0, a.jsx)(E, {
           sku: r
         })
     }

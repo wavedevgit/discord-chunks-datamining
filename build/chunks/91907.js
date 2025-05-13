@@ -55,14 +55,16 @@ function f(e) {
     channel: l,
     textClassName: u,
     onPopoutClosed: f
-  } = e, _ = (0, i.useMemo)(() => [t], [t]);
+  } = e, _ = i.useMemo(() => [t], [t]), p = i.useRef(null);
   return (0, r.jsx)(s.Z, {
+    targetElementRef: p,
     participants: _,
     channel: l,
     onPopoutClosed: f,
     children: e => (0, r.jsx)(a.Z, d(c({}, e), {
       tag: "span",
       children: (0, r.jsx)(o.xv, {
+        ref: p,
         className: u,
         variant: "text-sm/semibold",
         color: "text-primary",

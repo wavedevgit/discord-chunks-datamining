@@ -51,7 +51,7 @@ let b = {
     lastMessage: null
   },
   _ = (0, o.F)(() => new Map),
-  y = (e, t) => {
+  x = (e, t) => {
     (0, a.j)(() => {
       _.setState(n => {
         let r = n.get(e);
@@ -59,7 +59,7 @@ let b = {
       })
     })
   },
-  x = e => _(t => t.get(e), l.X);
+  y = e => _(t => t.get(e), l.X);
 
 function C(e, t, n) {
   let r = null != n ? n : {};
@@ -92,12 +92,12 @@ function v(e, t, n) {
     let {
       addtionalQuery: l,
       shouldDispatch: o = !1
-    } = r, a = i.useMemo(() => g(e, t, n, l), [e, t, n, l]), h = x(a), m = (0, c.Z)(a), [_, v] = i.useState({});
+    } = r, a = i.useMemo(() => g(e, t, n, l), [e, t, n, l]), h = y(a), m = (0, c.Z)(a), [_, v] = i.useState({});
     return i.useEffect(() => {
       if (m !== a) {
         let r = C(e, n, l),
           i = new u.ZP(t, p.aib.GUILD, r);
-        y(a, {
+        x(a, {
           searchFetcher: i,
           messageCount: f,
           lastMessage: null
@@ -105,7 +105,7 @@ function v(e, t, n) {
           i.fetch(e => {
             let n = e.body,
               r = n.messages[0];
-            if (y(a, {
+            if (x(a, {
                 searchFetcher: i,
                 result: n,
                 messageCount: n.total_results,
@@ -128,7 +128,7 @@ function v(e, t, n) {
               })
             }
           }, e => {}, e => {
-            y(a, {
+            x(a, {
               messageCount: 0,
               lastMessage: null
             }), v({})
@@ -142,7 +142,7 @@ function v(e, t, n) {
 
 function j(e, t, n, r) {
   let l = i.useMemo(() => g(e, t, n, r, !0), [e, t, n, r]),
-    o = x(l),
+    o = y(l),
     a = (0, c.Z)(l);
   return {
     key: l,
@@ -174,8 +174,8 @@ function O(e, t, n) {
     let t = e.messages,
       n = e.links,
       r = e.media;
-    y(a, t), y(c, n), y(h, r)
-  }, [c, h, a]), x = i.useCallback(e => {
+    x(a, t), x(c, n), x(h, r)
+  }, [c, h, a]), y = i.useCallback(e => {
     _({
       messages: e,
       links: e,
@@ -184,7 +184,7 @@ function O(e, t, n) {
   }, [_]);
   i.useEffect(() => {
     let e = new u.tJ(t, p.aib.GUILD, g, b);
-    x({
+    y({
       searchTabFetcher: e,
       messageCount: f,
       lastMessage: null
@@ -197,7 +197,7 @@ function O(e, t, n) {
       } catch (e) {
         t = null
       }
-      if (null == t) x({
+      if (null == t) y({
         messageCount: 0,
         lastMessage: null
       });
@@ -226,7 +226,7 @@ function O(e, t, n) {
     return () => {
       e.cancel(), clearTimeout(n)
     }
-  }, [e, t, g, b, x, _]);
+  }, [e, t, g, b, y, _]);
   let [v, O] = i.useState({});
   return {
     messagesCount: null != (r = null == s ? void 0 : s.messageCount) ? r : f,

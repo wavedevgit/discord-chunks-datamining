@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(522651),
   b = n(795318),
   _ = n(933557),
-  y = n(320007),
-  x = n(236091),
+  x = n(320007),
+  y = n(236091),
   C = n(540059),
   v = n(623624),
   j = n(665149),
@@ -109,7 +109,7 @@ function X(e) {
   });
   return (0, r.jsxs)(h.Gt, {
     value: v,
-    children: [(0, r.jsx)(x.Z, {
+    children: [(0, r.jsx)(y.Z, {
       channelId: n.id
     }, "clips-enabled-indicator"), !W && (0, r.jsx)(c.yRy, {
       position: "bottom",
@@ -136,7 +136,7 @@ function X(e) {
           iconClassName: Y.buttonIcon
         }))
       }
-    }, "more-options-popout"), !z && !t && (0, r.jsx)(y.Z, {
+    }, "more-options-popout"), !z && !t && (0, r.jsx)(x.Z, {
       className: Y.button
     }, "clips"), !W && !z && (0, r.jsx)(E.Z, {
       onOpen: D,
@@ -179,7 +179,7 @@ function Q(e) {
     channel: l,
     toggleRequestToSpeakSidebar: d,
     showRequestToSpeakSidebar: p
-  } = e, h = (0, _.ZP)(l), f = (0, a.e7)([U.Z], () => U.Z.getStageInstanceByChannel(l.id)), m = (0, k.Io)(l.id), g = (0, k.Rk)(l.id, M.pV.AUDIENCE), b = (0, a.e7)([A.Z], () => A.Z.getGuild(l.guild_id), [l.guild_id]), y = null != (t = null == b ? void 0 : b.maxStageVideoChannelUsers) ? t : 0, x = (null == b ? void 0 : b.isCommunity()) ? y < H.TU7 : (null == b ? void 0 : b.premiumTier) !== H.Eu4.TIER_3 && y <= H.eez, E = (0, F.Z)(l), I = (0, a.e7)([w.Z], () => w.Z.can(D.yP, l)), S = (0, C.Q3)("StageChannelCallHeader"), P = () => {
+  } = e, h = (0, _.ZP)(l), f = (0, a.e7)([U.Z], () => U.Z.getStageInstanceByChannel(l.id)), m = (0, k.Io)(l.id), g = (0, k.Rk)(l.id, M.pV.AUDIENCE), b = (0, a.e7)([A.Z], () => A.Z.getGuild(l.guild_id), [l.guild_id]), x = null != (t = null == b ? void 0 : b.maxStageVideoChannelUsers) ? t : 0, y = (null == b ? void 0 : b.isCommunity()) ? x < H.TU7 : (null == b ? void 0 : b.premiumTier) !== H.Eu4.TIER_3 && x <= H.eez, E = (0, F.Z)(l), I = (0, a.e7)([w.Z], () => w.Z.can(D.yP, l)), S = (0, C.Q3)("StageChannelCallHeader"), P = () => {
     u.Z.updateStageVideoLimitBoostUpsellDismissed(l.id, !0), R.default.track(H.rMx.BOOSTING_UPSELL_CLICKED, {
       guild_id: l.guild_id,
       type: z.cd.VIDEO_STAGE_LIMIT,
@@ -269,15 +269,15 @@ function Q(e) {
         children: [(0, r.jsx)(c.Text, {
           variant: "text-md/medium",
           color: "header-primary",
-          children: x ? W.intl.string(W.t["T+zF9P"]) : W.intl.string(W.t["IZ+SVl"])
+          children: y ? W.intl.string(W.t["T+zF9P"]) : W.intl.string(W.t["IZ+SVl"])
         }), (0, r.jsx)(c.Text, {
           variant: "text-xs/medium",
           color: "text-normal",
-          children: x ? W.intl.string(W.t.Izgpmp) : W.intl.string(W.t["7FHbPD"])
+          children: y ? W.intl.string(W.t.Izgpmp) : W.intl.string(W.t["7FHbPD"])
         })]
       }), (0, r.jsx)("div", {
         className: Y.buttons,
-        children: x ? (0, r.jsxs)(r.Fragment, {
+        children: y ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(c.zxk, {
             className: Y.notNowButton,
             onClick: P,

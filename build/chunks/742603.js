@@ -19,8 +19,8 @@ var i = n(120356),
   g = n(554747),
   b = n(854698),
   _ = n(897669),
-  y = n(665149),
-  x = n(984370),
+  x = n(665149),
+  y = n(984370),
   C = n(910611),
   v = n(454585),
   j = n(134483),
@@ -122,7 +122,7 @@ function H(e) {
     c = null != s ? (0, b.DK)(s) : null,
     d = null != s;
   if ((null == i ? void 0 : i.type) === w.fO.ACTIVITY) null != n && (t = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(y.ZP.Divider, {
+    children: [(0, r.jsx)(x.ZP.Divider, {
       className: L.divider
     }), (0, r.jsx)(m.Z, {
       game: n,
@@ -141,7 +141,7 @@ function H(e) {
     let e = i.user,
       n = i.stream;
     t = (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(y.ZP.Divider, {
+      children: [(0, r.jsx)(x.ZP.Divider, {
         className: L.divider
       }), (0, r.jsx)(F, {
         user: e,
@@ -228,8 +228,8 @@ function V(e) {
     className: L.subtitleContainer,
     children: [(0, r.jsx)(a.f6W, {
       theme: k.BR.DARK,
-      children: e => (0, r.jsxs)(y.ZP, {
-        onDoubleClick: x.O,
+      children: e => (0, r.jsxs)(x.ZP, {
+        onDoubleClick: y.O,
         transparent: !0,
         className: e,
         childrenBottom: F,
@@ -241,11 +241,11 @@ function V(e) {
           isChatOpen: u,
           exitFullScreen: m
         }),
-        children: [null != _ ? (0, r.jsx)(y.ZP.Icon, {
+        children: [null != _ ? (0, r.jsx)(x.ZP.Icon, {
           icon: _,
           disabled: !0,
           "aria-label": I
-        }) : null, (0, r.jsx)(y.ZP.Title, {
+        }) : null, (0, r.jsx)(x.ZP.Title, {
           children: (0, r.jsxs)(r.Fragment, {
             children: [b, z && (0, r.jsx)(a.ua7, {
               text: M.intl.string(M.t.QyZ4TU),

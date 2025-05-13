@@ -15,25 +15,27 @@ var r = n(255367),
   p = n(981631);
 
 function m(e, t) {
-  return i.useCallback(n => (i, a) => {
-    let o = u.ZP.getApplicationIconURL({
-        id: n.id,
-        icon: n.icon,
-        bot: n.bot,
+  let n = i.useRef(null);
+  return i.useCallback(i => (a, o) => {
+    let s = u.ZP.getApplicationIconURL({
+        id: i.id,
+        icon: i.icon,
+        bot: i.bot,
         botIconFirst: !0
       }),
       {
-        bot: s
-      } = n;
-    return null == s ? i : (0, r.jsx)(c.Z, {
-      userId: s.id,
-      avatarUrl: o,
+        bot: d
+      } = i;
+    return null == d ? a : (0, r.jsx)(c.Z, {
+      targetElementRef: n,
+      userId: d.id,
+      avatarUrl: s,
       guildId: e.guild_id,
       channelId: e.id,
       messageId: t.id,
       clickTrap: !0,
       children: e => {
-        var t, n;
+        var t, i;
         return (0, r.jsx)(l.eee, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -51,20 +53,21 @@ function m(e, t) {
             })
           }
           return e
-        }({}, e), n = n = {
-          children: i
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+        }({}, e), i = i = {
+          ref: n,
+          children: a
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(n)).forEach(function(e) {
-          Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+        })(Object(i)).forEach(function(e) {
+          Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
         }), t))
       }
-    }, a)
+    }, o)
   }, [e, t.id])
 }
 

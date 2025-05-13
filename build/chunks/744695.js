@@ -82,17 +82,18 @@ function b(e) {
   let {
     onTabSelect: t,
     tabs: n,
-    selectedTab: i,
-    selected: a
-  } = e;
+    selectedTab: a,
+    selected: s
+  } = e, c = i.useRef(null);
   return (0, r.jsx)(o.yRy, {
+    targetElementRef: c,
     renderPopout: e => {
       let {
-        closePopout: a
+        closePopout: i
       } = e;
       return (0, r.jsx)(u.Z, {
-        selectedTab: i,
-        onClose: a,
+        selectedTab: a,
+        onClose: i,
         tabs: n,
         onTabSelect: t
       })
@@ -104,9 +105,10 @@ function b(e) {
         isShown: n
       } = t;
       return (0, r.jsxs)(d.Z.Title, _(g({}, e), {
+        ref: c,
         wrapperClassName: h.tabWrapper,
         className: l()(h.tab, h.more, {
-          [h.selected]: a
+          [h.selected]: s
         }),
         id: p.GlobalDiscoverySharedTabId.MORE,
         "aria-label": m.intl.string(m.t.UKOtz8),

@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(82965),
   b = n(871499),
   _ = n(786915),
-  y = n(402113),
-  x = n(592125),
+  x = n(402113),
+  y = n(592125),
   C = n(271383),
   v = n(944486),
   j = n(594174),
@@ -53,7 +53,7 @@ function F(e) {
     renderExternalHeader: V
   } = e, z = (0, g.Z)({
     location: "ActivityPanelFocusedView"
-  }), W = (0, T.Z)(), Y = (0, s.Wu)([S.ZP], () => S.ZP.getEmbeddedActivitiesForLocation(H), [H]), q = (0, N.pY)(H), K = (0, s.e7)([x.Z], () => x.Z.getChannel(q)), X = (0, P.gb)(Y), Q = (0, P.uF)(X), J = i.useCallback(() => {
+  }), W = (0, T.Z)(), Y = (0, s.Wu)([S.ZP], () => S.ZP.getEmbeddedActivitiesForLocation(H), [H]), q = (0, N.pY)(H), K = (0, s.e7)([y.Z], () => y.Z.getChannel(q)), X = (0, P.gb)(Y), Q = (0, P.uF)(X), J = i.useCallback(() => {
     (0, I.tg)(M.Ez.PIP)
   }, []), $ = i.useRef(null), ee = (0, s.e7)([S.ZP], () => S.ZP.getFocusedLayout()), et = ee !== M.MI.NO_CHAT, [en, er] = i.useState(null != (n = null != (t = m.ZP.activityPanelHeight) ? t : F) ? n : null), ei = i.useCallback(e => {
     d.ZP.updatedUnsyncedSettings({
@@ -149,7 +149,7 @@ function F(e) {
   if (null == W) return null;
   let e_ = [];
   null != ep && (e_ = Array.from(ep.embeddedActivity.userIds).map(e => j.default.getUser(e)).filter(e => null != e && void 0 !== e));
-  let ey = e => {
+  let ex = e => {
     var t;
     if (null == e || void 0 === e) return null;
     let n = eg.get(e.id),
@@ -192,7 +192,7 @@ function F(e) {
               size: B,
               max: 6,
               className: U.userAvatars,
-              renderUser: ey
+              renderUser: ex
             }), (0, r.jsx)(_.Z, {
               appContext: L.IlC.APP,
               applicationId: W.id,
@@ -204,7 +204,7 @@ function F(e) {
               buttonText: D.intl.string(D.t["6F9ivr"]),
               color: u.zxk.Colors.PRIMARY
             })]
-          }), (0, r.jsx)(y.Z, {
+          }), (0, r.jsx)(x.Z, {
             applicationId: W.id,
             location: H,
             centerButton: !0,
@@ -236,7 +236,7 @@ function F(e) {
             size: B,
             max: 6,
             className: U.userAvatars,
-            renderUser: ey
+            renderUser: ex
           }), (0, r.jsxs)("div", {
             className: U.footerButtons,
             children: [z || null == ef || eh ? null : (0, r.jsx)(k.Z, {
@@ -254,7 +254,7 @@ function F(e) {
               })]
             }) : null, (0, r.jsx)("div", {
               className: U.leaveButtonContainer,
-              children: (0, r.jsx)(y.Z, {
+              children: (0, r.jsx)(x.Z, {
                 applicationId: W.id,
                 location: H,
                 centerButton: !0,

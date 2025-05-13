@@ -36,7 +36,7 @@ function g(e) {
       bannerSubtext: f.intl.format(f.t["4ZwD5O"], {
         link: h.cu
       }),
-      containerStyles: m.bannerContainer,
+      textStyles: m.bannerContainer,
       headerStyles: m.bannerHeader,
       children: (0, r.jsx)(l.Text, {
         variant: "text-sm/semibold",

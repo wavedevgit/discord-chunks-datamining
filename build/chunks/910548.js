@@ -17,8 +17,8 @@ var r, i = n(255367),
   g = n(64078),
   _ = n(29270),
   b = n(709586),
-  y = n(267642),
-  E = n(739566),
+  E = n(267642),
+  y = n(739566),
   x = n(834129),
   v = n(981631),
   O = n(388032),
@@ -174,7 +174,7 @@ function U(e) {
   }()), {
     createMultipleConfettiAt: g,
     confettiCanvas: _
-  } = l.useContext(f.h), [b, y] = l.useState(null), E = (0, s.uR)(_, b), x = function(e, t) {
+  } = l.useContext(f.h), [b, E] = l.useState(null), y = (0, s.uR)(_, b), x = function(e, t) {
     if (null == e) return "enter";
     switch (e) {
       case "enter":
@@ -230,7 +230,7 @@ function U(e) {
   }, [g, h, d, a]), l.useEffect(() => {
     if (v && "leaf_fall" === d) {
       let e = w[h].leafRotationDirection;
-      E.createConfetti({
+      y.createConfetti({
         id: "".concat(Z, "-").concat((0, c.Z)()),
         position: {
           type: "static",
@@ -278,9 +278,9 @@ function U(e) {
         sprite: "TOP_LEFT" === h ? k : D
       })
     }
-  }, [v, E, h, d]), (0, i.jsxs)(i.Fragment, {
+  }, [v, y, h, d]), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(s.Ji, {
-      ref: y,
+      ref: E,
       sprites: L,
       colors: R,
       spriteWidth: 45,
@@ -338,7 +338,7 @@ function F(e) {
     {
       reducedMotion: T
     } = l.useContext(p.Sfi),
-    P = (0, E.ZH)(n),
+    P = (0, y.ZH)(n),
     A = P.nick,
     w = o(P);
   t = null == c || null == a ? u > 1 ? O.intl.format(O.t.yfC9dn, {
@@ -353,12 +353,12 @@ function F(e) {
     usernameHook: w,
     numSubscriptions: u,
     guildName: a.name,
-    newTierName: (0, y.nW)(c)
+    newTierName: (0, E.nW)(c)
   }) : O.intl.format(O.t.cUfTTE, {
     username: A,
     usernameHook: w,
     guildName: a.name,
-    newTierName: (0, y.nW)(c)
+    newTierName: (0, E.nW)(c)
   });
   let R = l.useCallback(() => {
       if (!T.enabled)

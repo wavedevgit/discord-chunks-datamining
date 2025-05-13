@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(27457),
   b = n(111248),
   _ = n(312703),
-  y = n(796638),
-  x = n(981631),
+  x = n(796638),
+  y = n(981631),
   C = n(354459),
   v = n(363987),
   j = n(999976);
@@ -56,7 +56,7 @@ function E(e, t) {
   }), e
 }
 let I = 16 / 9,
-  S = 8 + y.cF;
+  S = 8 + x.cF;
 
 function P(e) {
   var t;
@@ -90,7 +90,7 @@ function P(e) {
     et = U <= 2 * S + 144,
     en = M && !et,
     er = (0, c.Z)(en),
-    ei = B === x.AEg.MINIMUM || B === x.AEg.NORMAL,
+    ei = B === y.AEg.MINIMUM || B === y.AEg.NORMAL,
     el = !et && (!ei || J),
     eo = (0, m.Z)(el, 100),
     ea = (null != (t = (0, c.Z)(k.id)) ? t : k.id) !== k.id,
@@ -118,9 +118,9 @@ function P(e) {
         clamp: !0
       }),
       onStart: () => Q(!0),
-      onChange: () => f.S.dispatch(x.CkL.REMEASURE_TARGET),
+      onChange: () => f.S.dispatch(y.CkL.REMEASURE_TARGET),
       onRest: () => {
-        Q(!1), f.S.dispatch(x.CkL.REMEASURE_TARGET)
+        Q(!1), f.S.dispatch(y.CkL.REMEASURE_TARGET)
       }
     }, em),
     eb = (0, s.q_F)({
@@ -135,13 +135,13 @@ function P(e) {
         clamp: !0
       })
     }, er === en && eb.value.idle && !eo || ea || ef ? "animate-never" : "animate-always"),
-    ey = (0, s.q_F)({
+    ex = (0, s.q_F)({
       value: n,
       config: E(O({}, a.config.stiff), {
         clamp: !0
       })
     }, em),
-    ex = (0, s.Yzy)(k, {
+    ey = (0, s.Yzy)(k, {
       keys: e => null == e ? void 0 : e.id,
       config: E(O({}, a.config.stiff), {
         clamp: !0
@@ -164,7 +164,7 @@ function P(e) {
     {
       visibleParticipants: ej,
       participantTileWidth: eO
-    } = (0, y.ZB)(D, T);
+    } = (0, x.ZB)(D, T);
   return (0, r.jsxs)("div", {
     className: o()(j.root, v.flexCenter, L),
     children: [(0, r.jsxs)("div", {
@@ -187,7 +187,7 @@ function P(e) {
             style: {
               aspectRatio: ec
             },
-            children: ex((e, t, n) => {
+            children: ey((e, t, n) => {
               let {
                 key: i
               } = n;
@@ -217,7 +217,7 @@ function P(e) {
             [j.idle]: G
           }),
           style: {
-            bottom: ey.value
+            bottom: ex.value
           },
           children: (0, r.jsx)(d.Z, {
             channelId: R.id,
@@ -232,7 +232,7 @@ function P(e) {
           opacity: eg.value,
           visibility: eg.value.to(e => 0 === e ? "hidden" : "visible")
         },
-        children: (0, r.jsx)(y.ZP, {
+        children: (0, r.jsx)(x.ZP, {
           channel: R,
           onClick: l,
           onContextMenu: P,

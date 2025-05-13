@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(459273),
   b = n(880831),
   _ = n(774168),
-  y = n(871499),
-  x = n(981631),
+  x = n(871499),
+  y = n(981631),
   C = n(388032);
 
 function v(e) {
@@ -126,14 +126,14 @@ function O(e) {
     null == (e = S.current) || e.focus()
   }, []);
   (0, g.yp)({
-    event: x.CkL.FOCUS_CHAT_BUTTON,
+    event: y.CkL.FOCUS_CHAT_BUTTON,
     handler: I ? null : R
   });
   let [k, M] = i.useState(!1), L = i.useCallback(() => {
     f && M(!0)
   }, [f]);
   (0, g.yp)({
-    event: x.CkL.SHOW_TEXT_IN_VOICE_POPOUT_COMING_SOON_TIP,
+    event: y.CkL.SHOW_TEXT_IN_VOICE_POPOUT_COMING_SOON_TIP,
     handler: L
   }), i.useEffect(() => {
     let e;
@@ -146,7 +146,7 @@ function O(e) {
   let D = [t = f && I ? C.intl.string(C.t.DPgc5u) : P ? C.intl.string(C.t.nthdxM) : C.intl.string(C.t["5KxXrK"])];
   return T > 0 && D.push(C.intl.formatToPlainString(C.t["3l1GOz"], {
     mentionCount: T
-  })), N > 0 && D.push(C.intl.string(C.t.x5zAGR)), (0, r.jsx)(y.Z, function(e) {
+  })), N > 0 && D.push(C.intl.string(C.t.x5zAGR)), (0, r.jsx)(x.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

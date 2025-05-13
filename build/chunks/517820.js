@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(385499),
   _ = n(528011),
   b = n(533244),
-  y = n(825829),
-  E = n(226192),
+  E = n(825829),
+  y = n(226192),
   x = n(36459),
   v = n(434404),
   O = n(518950),
@@ -80,9 +80,9 @@ function U(e) {
     compact: n
   } = e, {
     notificationType: i
-  } = (0, y.FL)(t);
+  } = (0, E.FL)(t);
   switch (i) {
-    case y.nj:
+    case E.nj:
     case u.p.RAID:
       return (0, r.jsx)(H, {
         message: t,
@@ -162,7 +162,7 @@ function G(e) {
   let {
     message: n,
     compact: l
-  } = e, a = I.default.getUser((0, y.Sw)(n)), o = null == (t = C.Z.getBasicChannel(n.channel_id)) ? void 0 : t.guild_id, c = null != o && null != a ? S.ZP.getMember(o, a.id) : null, {
+  } = e, a = I.default.getUser((0, E.Sw)(n)), o = null == (t = C.Z.getBasicChannel(n.channel_id)) ? void 0 : t.guild_id, c = null != o && null != a ? S.ZP.getMember(o, a.id) : null, {
     avatarSrc: u,
     avatarDecorationSrc: d,
     eventHandlers: p
@@ -170,7 +170,7 @@ function G(e) {
     user: a,
     guildId: o,
     size: 12
-  });
+  }), h = i.useRef(null);
   return (0, r.jsx)(z, {
     compact: l,
     header: (0, r.jsxs)(i.Fragment, {
@@ -193,11 +193,13 @@ function G(e) {
             color: "text-normal",
             children: R.intl.string(R.t.qlFrXV)
           }), (0, r.jsx)(j.Z, {
+            targetElementRef: h,
             user: a,
             guildId: o,
             channelId: n.channel_id,
             messageId: n.id,
             children: e => (0, r.jsxs)(f.P3F, L(D({
+              innerRef: h,
               className: k.alertsEnabledSubHeaderAvatarUsername
             }, e), {
               children: [(0, r.jsx)("div", L(D({}, p), {
@@ -242,11 +244,11 @@ function H(e) {
     dmsSent: u,
     raidType: h,
     resolvedReason: g
-  } = (0, y.FL)(n), x = (0, p.e7)([C.Z], () => C.Z.getChannel(n.channel_id), [n.channel_id]), v = null != (t = null == x ? void 0 : x.guild_id) ? t : null, {
+  } = (0, E.FL)(n), x = (0, p.e7)([C.Z], () => C.Z.getChannel(n.channel_id), [n.channel_id]), v = null != (t = null == x ? void 0 : x.guild_id) ? t : null, {
     shouldShowIncidentActions: O
   } = (0, _.mI)(v), j = (0, T.sR)(n.author.id, n.channel_id), S = i.useCallback(() => {
     let e = null == x ? void 0 : x.guild_id;
-    null != e && (0, E.kW)(n.id, e)
+    null != e && (0, y.kW)(n.id, e)
   }, [n.id, x]), I = h === d.$.DM_RAID, N = I ? f.P4T : f.b6m;
   return (0, r.jsx)(z, {
     compact: l,
@@ -322,7 +324,7 @@ function H(e) {
           children: (0, r.jsx)(f.Text, {
             variant: "text-xs/medium",
             color: "text-link",
-            children: (0, y.ge)(g)
+            children: (0, E.ge)(g)
           })
         })
       })]
@@ -339,7 +341,7 @@ function V(e) {
     raidDatetime: o,
     decisionId: c,
     suspiciousMentionActivityUntil: u
-  } = (0, y.FL)(n);
+  } = (0, E.FL)(n);
   return (0, r.jsx)(z, {
     compact: l,
     header: (0, r.jsxs)(i.Fragment, {
@@ -453,7 +455,7 @@ function W(e) {
     }
   } = (0, P.m)(!0), {
     notificationType: d
-  } = (0, y.FL)(i), p = null == d || d === u.p.RAID;
+  } = (0, E.FL)(i), p = null == d || d === u.p.RAID;
   return (0, r.jsx)("div", {
     onMouseEnter: s,
     onMouseLeave: c,

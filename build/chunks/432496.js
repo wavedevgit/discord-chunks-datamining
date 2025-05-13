@@ -3,12 +3,12 @@ r.d(t, {
   Z: () => a
 });
 var n = r(442837),
-  i = r(570140),
-  s = r(749210);
+  s = r(570140),
+  i = r(749210);
 let l = {},
-  o = 0;
+  u = 0;
 
-function u(e) {
+function o(e) {
   var t, r;
   return null != (r = null == (t = l[e]) ? void 0 : t.fetchState) ? r : 0
 }
@@ -18,17 +18,17 @@ function c() {
 }
 class d extends n.ZP.Store {
   isFetchingFriendsForGuild(e) {
-    return 1 === u(e)
+    return 1 === o(e)
   }
   fetchFriendMembersIfNotFetched(e, t) {
-    0 === u(e) && (l[e] = {
+    0 === o(e) && (l[e] = {
       fetchState: 1,
       foundMembers: 0,
       notFoundMembers: 0
-    }, o = t.length, s.Z.requestMembersById(e, t, !1))
+    }, u = t.length, i.Z.requestMembersById(e, t, !1))
   }
 }
-let a = new d(i.Z, {
+let a = new d(s.Z, {
   CONNECTION_OPEN: c,
   LOGOUT: c,
   RELATIONSHIP_ADD: c,
@@ -37,8 +37,8 @@ let a = new d(i.Z, {
     var t, r;
     let n = e.chunks[0],
       {
-        guildId: i
+        guildId: s
       } = n;
-    1 === u(i) && (l[i].foundMembers += n.members.length, l[i].notFoundMembers += null != (r = null == (t = n.notFound) ? void 0 : t.length) ? r : 0, l[i].foundMembers + l[i].notFoundMembers >= o && (l[i].fetchState = 2))
+    1 === o(s) && (l[s].foundMembers += n.members.length, l[s].notFoundMembers += null != (r = null == (t = n.notFound) ? void 0 : t.length) ? r : 0, l[s].foundMembers + l[s].notFoundMembers >= u && (l[s].fetchState = 2))
   }
 })

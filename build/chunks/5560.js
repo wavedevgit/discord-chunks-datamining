@@ -19,9 +19,9 @@ var r = n(255367),
   g = n(21825),
   b = n(232495),
   _ = n(10401),
-  y = n(322274);
+  x = n(322274);
 
-function x(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -37,7 +37,7 @@ function C(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -127,33 +127,34 @@ class j extends i.PureComponent {
     } = l, {
       offsetX: b,
       offsetY: _
-    } = this.state, x = {
+    } = this.state, y = {
       left: null != b ? i.x + b : void 0,
       top: null != _ ? i.y + _ : void 0
     }, j = e => {
       let t = n && !e;
       return !0 !== u ? null : (0, r.jsxs)("div", {
         children: [(0, r.jsx)("div", {
-          className: o()(y.top, {
-            [y.animating]: t,
-            [y.notAnimating]: !t
+          className: o()(x.top, {
+            [x.animating]: t,
+            [x.notAnimating]: !t
           })
         }), (0, r.jsx)("div", {
-          className: o()(y.bottom, {
-            [y.animating]: t,
-            [y.notAnimating]: !t
+          className: o()(x.bottom, {
+            [x.animating]: t,
+            [x.notAnimating]: !t
           })
         })]
       })
     }, O = e => {
       let t = n && !e;
       return {
-        [y.animating]: t,
-        [y.notAnimating]: !t,
-        [y.highPriority]: u
+        [x.animating]: t,
+        [x.notAnimating]: !t,
+        [x.highPriority]: u
       }
     }, E = this.getTutorialPopoutText();
     return (0, r.jsx)(h.ZP, v(C({
+      innerRef: this.contentRef,
       position: m,
       renderMedia: a,
       textAlign: s,
@@ -170,15 +171,15 @@ class j extends i.PureComponent {
           isShown: n
         } = t;
         return (0, r.jsx)(d.P3F, v(C({}, e), {
-          className: y.indicator,
-          style: x,
+          className: x.indicator,
+          style: y,
           innerRef: this.contentRef,
           children: (0, r.jsxs)("div", {
-            className: o()(y.animationContainer, O(n)),
+            className: o()(x.animationContainer, O(n)),
             children: [j(n), (0, r.jsx)("div", {
-              className: o()(y.innerCircle, O(n))
+              className: o()(x.innerCircle, O(n))
             }), (0, r.jsx)("div", {
-              className: o()(y.outerCircle, O(n))
+              className: o()(x.outerCircle, O(n))
             })]
           })
         }))
@@ -186,10 +187,10 @@ class j extends i.PureComponent {
     }))
   }
   constructor(...e) {
-    super(...e), x(this, "state", {
+    super(...e), y(this, "state", {
       offsetX: null,
       offsetY: null
-    }), x(this, "contentRef", i.createRef()), x(this, "handleDismiss", () => {
+    }), y(this, "contentRef", i.createRef()), y(this, "handleDismiss", () => {
       p.Z.dismiss(this.props.tutorialId)
     })
   }

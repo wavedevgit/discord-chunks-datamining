@@ -19,8 +19,8 @@ var r = n(255367),
   g = n(594174),
   _ = n(671533),
   b = n(51144),
-  y = n(506071),
-  E = n(696014),
+  E = n(506071),
+  y = n(696014),
   x = n(847033),
   v = n(544978),
   O = n(893182),
@@ -52,7 +52,7 @@ function I(e) {
   let {
     coverImageAsset: t,
     isPreview: n = !1
-  } = e, i = f.QK.useSetting(), l = (0, y.n)() && i, [a, o] = (0, m.Z)(t, l), s = l ? (0, r.jsx)(d.Z, {
+  } = e, i = f.QK.useSetting(), l = (0, E.n)() && i, [a, o] = (0, m.Z)(t, l), s = l ? (0, r.jsx)(d.Z, {
     autoPlay: !0,
     loop: !0,
     className: C.coverImage,
@@ -93,9 +93,9 @@ function N(e) {
       nickcolor: null != (t = null == r ? void 0 : r.colorString) ? t : void 0
     }
   }, [m]), {
-    isTruncated: y,
+    isTruncated: E,
     ExpandableTextContainer: N
-  } = (0, E.s)(), T = (null != (n = null == d || null == (t = d.description) ? void 0 : t.trim().length) ? n : 0) > 0, [P, A] = i.useState(1), w = (0, c.Z)("(max-width: 1439px)"), {
+  } = (0, y.s)(), T = (null != (n = null == d || null == (t = d.description) ? void 0 : t.trim().length) ? n : 0) > 0, [P, A] = i.useState(1), w = (0, c.Z)("(max-width: 1439px)"), {
     selectedTab: Z,
     isPhantomPreview: R
   } = (0, x.m)(), k = Z === v.y.GUILD_PRODUCTS_PREVIEW ? j.intl.string(j.t["LvXy/P"]) : j.intl.string(j.t.XyqKh4), D = T ? (0, r.jsxs)(r.Fragment, {
@@ -106,7 +106,7 @@ function N(e) {
         color: "text-normal",
         children: null == d ? void 0 : d.description
       })
-    }), y && (0, r.jsxs)(r.Fragment, {
+    }), E && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(s.LZC, {
         size: 4
       }), (0, r.jsx)(S, {

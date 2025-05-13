@@ -1,25 +1,25 @@
 /** Chunk was on 70657 **/
 t.d(n, {
-  Z: () => D
+  Z: () => O
 });
-var i = t(255367);
-t(73800);
-var l = t(120356),
-  r = t.n(l),
-  a = t(442837),
-  d = t(481060),
-  o = t(239091),
-  s = t(129861),
-  c = t(939863),
-  u = t(670188),
-  _ = t(314897),
-  g = t(158776),
-  p = t(885110),
-  m = t(594174),
+var i = t(255367),
+  l = t(73800),
+  r = t(120356),
+  a = t.n(r),
+  d = t(442837),
+  o = t(481060),
+  s = t(239091),
+  c = t(129861),
+  u = t(939863),
+  _ = t(670188),
+  g = t(314897),
+  p = t(158776),
+  m = t(885110),
+  f = t(594174),
   I = t(315416),
-  f = t(765305),
-  v = t(388032),
-  h = t(960689);
+  v = t(765305),
+  h = t(388032),
+  E = t(960689);
 
 function C(e) {
   for (var n = 1; n < arguments.length; n++) {
@@ -40,7 +40,7 @@ function C(e) {
   return e
 }
 
-function E(e, n) {
+function b(e, n) {
   return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,150 +53,152 @@ function E(e, n) {
   }), e
 }
 
-function b(e) {
+function x(e) {
   let {
     children: n
   } = e;
   return (0, i.jsxs)("div", {
-    className: h.emptyContainer,
-    children: [(0, i.jsx)(c.Z, {
+    className: E.emptyContainer,
+    children: [(0, i.jsx)(u.Z, {
       children: (0, i.jsx)("div", {
-        className: h.circle,
-        children: (0, i.jsx)(d.BFJ, {
+        className: E.circle,
+        children: (0, i.jsx)(o.BFJ, {
           size: "custom",
           color: "currentColor",
           height: 40,
           width: 40,
-          className: h.icon
+          className: E.icon
         })
       })
     }), n]
   })
 }
 
-function x() {
-  return (0, i.jsx)(b, {
-    children: (0, i.jsx)(d.X6q, {
+function T() {
+  return (0, i.jsx)(x, {
+    children: (0, i.jsx)(o.X6q, {
       color: "header-primary",
       variant: "heading-xl/semibold",
-      className: h.title,
-      children: v.intl.string(v.t.hW0mBQ)
+      className: E.title,
+      children: h.intl.string(h.t.hW0mBQ)
     })
   })
 }
 
-function T() {
-  return (0, i.jsx)(b, {
-    children: (0, i.jsx)(d.X6q, {
+function y() {
+  return (0, i.jsx)(x, {
+    children: (0, i.jsx)(o.X6q, {
       color: "header-secondary",
       variant: "heading-md/semibold",
-      className: h.errorTitle,
-      children: v.intl.string(v.t.obChXl)
+      className: E.errorTitle,
+      children: h.intl.string(h.t.obChXl)
     })
   })
 }
 
-function y(e) {
+function L(e) {
   let {
     count: n
   } = e;
   return (0, i.jsxs)("div", {
-    className: h.listRow,
+    className: E.listRow,
     children: [(0, i.jsx)("div", {
-      className: r()(h.listRowCircle, h.listAvatar),
-      children: (0, i.jsx)(d.BFJ, {
+      className: a()(E.listRowCircle, E.listAvatar),
+      children: (0, i.jsx)(o.BFJ, {
         size: "custom",
         color: "currentColor",
         height: 14,
         width: 14,
-        className: h.icon
+        className: E.icon
       })
-    }), (0, i.jsx)(d.Text, {
+    }), (0, i.jsx)(o.Text, {
       color: "text-normal",
       variant: "text-md/normal",
-      children: v.intl.format(v.t.BdQTfX, {
+      children: h.intl.format(h.t.BdQTfX, {
         userRemainCount: n
       })
     })]
   })
 }
 
-function L(e) {
+function j(e) {
   let {
     eventUser: n,
     guildId: t,
-    onContextMenu: l
-  } = e, o = (0, a.e7)([m.default], () => m.default.getUser(n.user_id)), c = (0, a.e7)([p.Z, g.Z, _.default], () => n.user_id === _.default.getId() ? p.Z.getStatus() : g.Z.getStatus(n.user_id, t), [n.user_id, t]);
-  return null == o ? null : (0, i.jsx)(u.Z, {
+    onContextMenu: r
+  } = e, s = l.useRef(null), u = (0, d.e7)([f.default], () => f.default.getUser(n.user_id)), I = (0, d.e7)([m.Z, p.Z, g.default], () => n.user_id === g.default.getId() ? m.Z.getStatus() : p.Z.getStatus(n.user_id, t), [n.user_id, t]);
+  return null == u ? null : (0, i.jsx)(_.Z, {
+    targetElementRef: s,
     userId: n.user_id,
     guildId: t,
     position: "left",
     spacing: 16,
-    children: (e, a) => {
-      var u;
+    children: (e, l) => {
+      var d;
       let {
         isShown: _
-      } = a;
-      return (0, i.jsxs)(d.P3F, E(C({
-        className: r()(h.listRow, h.interactiveRow, {
-          [h.selected]: _
+      } = l;
+      return (0, i.jsxs)(o.P3F, b(C({
+        innerRef: s,
+        className: a()(E.listRow, E.interactiveRow, {
+          [E.selected]: _
         }),
-        onContextMenu: e => l(e, o)
+        onContextMenu: e => r(e, u)
       }, e), {
-        children: [(0, i.jsx)(d.qEK, {
-          src: o.getAvatarURL(t, 24),
-          "aria-label": o.username,
-          size: d.EFr.SIZE_24,
-          className: h.listAvatar,
-          status: c
-        }), (0, i.jsx)(s.Z, {
-          user: o,
-          className: h.listName,
-          discriminatorClass: h.listDiscriminator,
-          nick: null == (u = n.member) ? void 0 : u.nick
+        children: [(0, i.jsx)(o.qEK, {
+          src: u.getAvatarURL(t, 24),
+          "aria-label": u.username,
+          size: o.EFr.SIZE_24,
+          className: E.listAvatar,
+          status: I
+        }), (0, i.jsx)(c.Z, {
+          user: u,
+          className: E.listName,
+          discriminatorClass: E.listDiscriminator,
+          nick: null == (d = n.member) ? void 0 : d.nick
         })]
       }))
     }
   })
 }
 
-function j(e) {
+function N(e) {
   let {
     eventUsers: n,
     guildId: t,
     usersNotShownCount: l = 0,
     onContextMenu: r
   } = e;
-  return (0, i.jsxs)(d.zJl, {
-    className: h.listScroller,
-    children: [n.map(e => (0, i.jsx)(L, {
+  return (0, i.jsxs)(o.zJl, {
+    className: E.listScroller,
+    children: [n.map(e => (0, i.jsx)(j, {
       guildId: t,
       eventUser: e,
       onContextMenu: r
-    }, e.user_id)), l > 0 && (0, i.jsx)(y, {
+    }, e.user_id)), l > 0 && (0, i.jsx)(L, {
       count: l
     })]
-  })
-}
-
-function N(e) {
-  let {
-    children: n,
-    style: t
-  } = e;
-  return (0, i.jsx)("div", {
-    className: h.container,
-    style: null != t ? t : {},
-    children: n
   })
 }
 
 function S(e) {
   let {
     children: n,
+    style: t
+  } = e;
+  return (0, i.jsx)("div", {
+    className: E.container,
+    style: null != t ? t : {},
+    children: n
+  })
+}
+
+function D(e) {
+  let {
+    children: n,
     height: t
   } = e;
-  return (0, i.jsx)(N, {
+  return (0, i.jsx)(S, {
     style: {
       height: t
     },
@@ -204,40 +206,40 @@ function S(e) {
   })
 }
 
-function D(e) {
+function O(e) {
   let {
     guildEvent: n,
     recurrenceId: l,
     eventUsers: r,
     loading: a,
-    error: s,
+    error: d,
     containerHeight: c
   } = e, u = (0, I.Z)(n.guild_id, n.id, l);
-  if (a && 0 === r.length) return (0, i.jsx)(S, {
+  if (a && 0 === r.length) return (0, i.jsx)(D, {
     height: c,
-    children: (0, i.jsx)(d.$jN, {
-      type: d.$jN.Type.SPINNING_CIRCLE,
-      className: h.spinner
+    children: (0, i.jsx)(o.$jN, {
+      type: o.$jN.Type.SPINNING_CIRCLE,
+      className: E.spinner
     })
   });
-  if (null != s && 0 === r.length) return (0, i.jsx)(S, {
+  if (null != d && 0 === r.length) return (0, i.jsx)(D, {
     height: c,
-    children: (0, i.jsx)(T, {})
+    children: (0, i.jsx)(y, {})
   });
   let _ = 0;
-  return r.length >= f.rC && u > f.rC && (_ = Math.max(u - r.length, 0)), 0 === r.length ? (0, i.jsx)(S, {
+  return r.length >= v.rC && u > v.rC && (_ = Math.max(u - r.length, 0)), 0 === r.length ? (0, i.jsx)(D, {
     height: c,
-    children: (0, i.jsx)(x, {})
-  }) : (0, i.jsx)(N, {
-    children: (0, i.jsx)(j, {
+    children: (0, i.jsx)(T, {})
+  }) : (0, i.jsx)(S, {
+    children: (0, i.jsx)(N, {
       eventUsers: r,
       guildId: n.guild_id,
       onContextMenu: function(e, n) {
-        (0, o.jW)(e, async () => {
+        (0, s.jW)(e, async () => {
           let {
             default: e
           } = await Promise.all([t.e("79695"), t.e("69220"), t.e("70686")]).then(t.bind(t, 881351));
-          return t => (0, i.jsx)(e, E(C({}, t), {
+          return t => (0, i.jsx)(e, b(C({}, t), {
             user: n
           }))
         })

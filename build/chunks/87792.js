@@ -1,6 +1,6 @@
 /** Chunk was on 69835 **/
 n.d(t, {
-  Z: () => M
+  Z: () => B
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -227,7 +227,7 @@ let Z = () => {
       subText: l
     })
   },
-  M = e => {
+  B = e => {
     let {
       user: t
     } = e, n = Array.from(T.tx.entries()), r = (0, f.kE)(), s = (0, m.t3)(), l = (0, x.Rd)(s);

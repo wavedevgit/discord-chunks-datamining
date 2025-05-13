@@ -63,7 +63,7 @@ let j = {
       back: n
     } = e, {
       upsertConfig: s
-    } = (0, p.n6)(), S = (0, o.e7)([g.default], () => g.default.getCurrentUser()), [v, T] = r.useState(!0), I = r.useRef(null), [N, y] = r.useState(!1), [A, P] = r.useState(!1), [R, D] = r.useState([]), [Z, w] = r.useState(j), k = r.useRef([]), [L, M] = r.useState(t.name), B = L.toLowerCase().replace(/\s+/g, "_"), U = r.useMemo(() => ({
+    } = (0, p.n6)(), S = (0, o.e7)([g.default], () => g.default.getCurrentUser()), [v, T] = r.useState(!0), I = r.useRef(null), [N, y] = r.useState(!1), [A, P] = r.useState(!1), [R, D] = r.useState([]), [Z, w] = r.useState(j), k = r.useRef([]), [L, B] = r.useState(t.name), M = L.toLowerCase().replace(/\s+/g, "_"), U = r.useMemo(() => ({
       type: a.Z.PROFILE_EFFECT,
       id: O,
       skuId: O,
@@ -175,7 +175,7 @@ let j = {
               value: L,
               className: b.input,
               onChange: e => {
-                M(e.target.value)
+                B(e.target.value)
               }
             })]
           }), (0, i.jsxs)("div", {
@@ -276,7 +276,7 @@ let j = {
               children: [(0, i.jsx)(d.Z, {
                 fileContents: () => (0, h.yR)(R),
                 contentType: "text/plain",
-                fileName: "".concat(B, "_timing_config.txt"),
+                fileName: "".concat(M, "_timing_config.txt"),
                 children: (0, i.jsx)(c.zxk, {
                   size: c.PhG.SMALL,
                   color: c.Ttl.BRAND,
@@ -291,7 +291,7 @@ let j = {
                   })
                 })),
                 contentType: "text/plain",
-                fileName: "".concat(B, "_config.txt"),
+                fileName: "".concat(M, "_config.txt"),
                 children: (0, i.jsx)(c.zxk, {
                   size: c.PhG.SMALL,
                   color: c.Ttl.BRAND,

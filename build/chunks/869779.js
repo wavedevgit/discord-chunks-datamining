@@ -123,7 +123,8 @@ class M extends l.PureComponent {
           notice: {
             element: _.G,
             stores: [C.Z]
-          }
+          },
+          predicate: () => !t.isModeratorReportChannel()
         }, {
           section: P.CoT.PERMISSIONS,
           label: D.intl.string(D.t.xrmhRU),
@@ -138,7 +139,7 @@ class M extends l.PureComponent {
           label: D.intl.string(D.t["9F90iY"]),
           element: R.Z,
           type: u.bT.CUSTOM,
-          predicate: () => t.type !== x && r && !j
+          predicate: () => t.type !== x && r && !j && !t.isModeratorReportChannel()
         }, {
           section: P.CoT.INTEGRATIONS,
           label: D.intl.string(D.t.s69NLC),
@@ -148,7 +149,7 @@ class M extends l.PureComponent {
             stores: [v.Z],
             element: E.B
           },
-          predicate: () => (!!d || !!h) && b.Ti.has(t.type)
+          predicate: () => !(!d && !h || t.isModeratorReportChannel()) && b.Ti.has(t.type)
         }, {
           section: u.ID.DIVIDER
         }, {
@@ -166,7 +167,7 @@ class M extends l.PureComponent {
             size: "xs",
             color: "currentColor"
           }),
-          predicate: () => a
+          predicate: () => a && !t.isModeratorReportChannel()
         }]
       }({
         channel: l,

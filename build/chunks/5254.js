@@ -21,8 +21,8 @@ function f(e, t, n) {
 }
 let p = {},
   g = 0,
-  O = !1,
-  E = !1;
+  E = !1,
+  O = !1;
 
 function N(e) {
   var t;
@@ -55,7 +55,7 @@ class m extends(i = s.ZP.Store) {
 f(m, "displayName", "FriendSuggestionStore");
 let y = new m(a.Z, {
   CONNECTION_OPEN: function(e) {
-    p = {}, (g = e.friendSuggestionCount) > 0 ? (E = !0, !O && E && (O = !0, E = !1, u.Z.fetch())) : (0, d.Z)()
+    p = {}, (g = e.friendSuggestionCount) > 0 ? (O = !0, !E && O && (E = !0, O = !1, u.Z.fetch())) : (0, d.Z)()
   },
   FRIEND_SUGGESTION_CREATE: function(e) {
     var t, n;
@@ -90,9 +90,9 @@ let y = new m(a.Z, {
   },
   LOAD_FRIEND_SUGGESTIONS_SUCCESS: function(e) {
     var t;
-    O = !1, t = e.suggestions, p = l().chain(t).map(e => N(e)).keyBy(e => e.key).value(), g = l().keys(p).length
+    E = !1, t = e.suggestions, p = l().chain(t).map(e => N(e)).keyBy(e => e.key).value(), g = l().keys(p).length
   },
   LOAD_FRIEND_SUGGESTIONS_FAILURE: function() {
-    O = !1, p = {}
+    E = !1, p = {}
   }
 })

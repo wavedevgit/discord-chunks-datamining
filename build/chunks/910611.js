@@ -20,8 +20,8 @@ var r = n(255367),
   g = n(703656),
   b = n(699516),
   _ = n(914010),
-  y = n(594174),
-  x = n(768581),
+  x = n(594174),
+  y = n(768581),
   C = n(63063),
   v = n(946734),
   j = n(99843),
@@ -40,7 +40,7 @@ function T(e) {
     children: i
   } = e, l = (0, u.q)(null == (t = n.linkedLobby) ? void 0 : t.application_id), [o, a] = (0, f.US)([s.z.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP], void 0, !0);
   if (null == l) return null;
-  let d = x.ZP.getApplicationIconURL({
+  let d = y.ZP.getApplicationIconURL({
       id: l.id,
       icon: l.icon,
       size: 14
@@ -132,7 +132,7 @@ function A(e) {
     handleParentContextMenu: m,
     renderFollowButton: g
   } = e, _ = (0, h.KS)(t, a), {
-    prefix: x,
+    prefix: y,
     level: C
   } = function(e, t) {
     var n, r;
@@ -170,8 +170,8 @@ function A(e) {
         }
     }
   }(t.type, a), v = (0, r.jsxs)(r.Fragment, {
-    children: [null != x ? (0, r.jsxs)(c.nn4, {
-      children: [x, ":"]
+    children: [null != y ? (0, r.jsxs)(c.nn4, {
+      children: [y, ":"]
     }) : null, " ", n]
   });
   switch (t.type) {
@@ -242,7 +242,7 @@ function A(e) {
             onContextMenu: m,
             onClick: f,
             className: o()(N.parentChannelName, N.cursorPointer),
-            children: (0, p.F6)(l, y.default, b.Z)
+            children: (0, p.F6)(l, x.default, b.Z)
           }), (0, r.jsx)(E.Z.Caret, {})]
         })
       }
@@ -272,8 +272,8 @@ function A(e) {
           level: C,
           onContextMenu: d,
           onClick: u,
-          children: [null != x ? (0, r.jsxs)(c.nn4, {
-            children: [x, ":"]
+          children: [null != y ? (0, r.jsxs)(c.nn4, {
+            children: [y, ":"]
           }) : null, " ", A]
         })]
       });
@@ -284,7 +284,7 @@ function A(e) {
 let w = e => {
   let {
     channel: t
-  } = e, n = (0, a.e7)([y.default], () => y.default.getCurrentUser()), i = (0, a.e7)([y.default], () => y.default.getUser(t.getRecipientId()));
+  } = e, n = (0, a.e7)([x.default], () => x.default.getCurrentUser()), i = (0, a.e7)([x.default], () => x.default.getUser(t.getRecipientId()));
   return t.isDM() && (null == n ? void 0 : n.isStaff()) && (null == i ? void 0 : i.isStaff()) ? (0, r.jsx)(d.Z, {
     type: d.Z.Types.STAFF_ONLY_DM
   }) : null

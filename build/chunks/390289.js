@@ -25,7 +25,7 @@ function _(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let y = [{
+let x = [{
     timeSinceJoin: +d.Z.Millis.HOUR,
     sends: 1,
     viewTime: +d.Z.Millis.MINUTE
@@ -42,7 +42,7 @@ let y = [{
     sends: 10,
     viewTime: 30 * d.Z.Millis.MINUTE
   }],
-  x = 5 * y[y.length - 1].viewTime,
+  y = 5 * x[x.length - 1].viewTime,
   C = d.Z.Millis.WEEK,
   v = {
     channels: {}
@@ -55,7 +55,7 @@ let y = [{
 function S() {
   if (null == O || !N(O)) return !1;
   let e = Z(O);
-  if (e.lastActionTime > Date.now() - d.Z.Millis.DAY && e.viewDuration > x) return !1;
+  if (e.lastActionTime > Date.now() - d.Z.Millis.DAY && e.viewDuration > y) return !1;
   let t = Date.now();
   e.lastActionTime = t, e.viewDuration += t - E, E = t
 }
@@ -108,7 +108,7 @@ class A extends(r = i.ZP.PersistedStore) {
         i = Math.min(h.default.age(e.id), Date.now() - r.getTime()),
         l = v.channels[e.id];
       if (null == l || l.lastActionTime < Date.now() - C) return !1;
-      for (let e of y)
+      for (let e of x)
         if (i < e.timeSinceJoin && (l.numSends >= e.sends || l.viewDuration >= e.viewTime)) return !0;
       return !1
     }(t) && (delete v.channels[e], j.add(e), (0, f.IG)(t.guild_id, t.id, g.i.ALL_MESSAGES), !0)

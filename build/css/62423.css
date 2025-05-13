@@ -1,6 +1,6 @@
 /**
   Module ID: 62423
-  Original File Name: 0c1f0a4aa44d95ca
+  Original File Name: ccb4a4502872feb3
 **/
 .content__79cbe {
     border-radius: 8px;
@@ -5032,7 +5032,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .spamBanner_a2eac3 {
     background: var(--background-tertiary);
-    border-radius: 5px;
+    border-radius: var(--radius-xs);
     box-shadow: 0 8px 16px var(--elevation-high);
     display: flex;
     flex-wrap: nowrap;
@@ -5058,6 +5058,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     flex: 5 2 auto;
     flex-direction: column;
     flex-wrap: wrap;
+    gap: var(--spacing-4);
     margin: auto 0
 }
 
@@ -5070,8 +5071,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 .bannerHeader_a2eac3 {
     color: var(--header-primary);
     font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 4px
+    font-weight: 600
 }
 
 .bannerSubtext_a2eac3 {
@@ -7201,6 +7201,17 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     width: auto;
     z-index: 2;
     -webkit-text-stroke: 2px var(--brand-700)
+}
+
+.bannerContainer__362cd {
+    background: var(--chat-background-default);
+    border: 1px solid var(--border-faint);
+    border-radius: var(--radius-sm)
+}
+
+.bannerHeader__362cd {
+    align-items: center;
+    display: flex
 }
 
 .positionContainer__31a96 {
@@ -13154,4 +13165,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=0c1f0a4aa44d95ca.css.map*/
+/*# sourceMappingURL=ccb4a4502872feb3.css.map*/

@@ -33,7 +33,7 @@ function f(e) {
       for (let t of b) c.ZP.isMember(m, t) && e.push(t);
       return e
     }, [b, m]),
-    y = r.useMemo(() => {
+    x = r.useMemo(() => {
       if (null == f || 0 === _.length) return h;
       let e = new Set;
       for (let t of _) {
@@ -45,5 +45,5 @@ function f(e) {
       }
       return e
     }, [_, f]);
-  return r.useMemo(() => null == t ? void 0 : t.filter(e => y.has(e.author_id)), [t, y])
+  return r.useMemo(() => null == t ? void 0 : t.filter(e => x.has(e.author_id)), [t, x])
 }

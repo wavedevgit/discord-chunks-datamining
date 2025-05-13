@@ -302,96 +302,97 @@ let F = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       "aria-setsize": ea,
       id: es,
       tabIndex: el,
-      itemProps: ec
-    } = e, eu = null == y ? void 0 : y.id, ed = P.ZP.useName(y), ef = (null == (t = A.default.getCurrentUser()) ? void 0 : t.id) === eu, e_ = i.useRef(null), [ep, eh] = i.useState(!1), [em, eg] = i.useState(!1), [eE, eb] = i.useState(null), {
-      voiceChannel: ey
+      itemProps: ec,
+      ref: eu
+    } = e, ed = null == y ? void 0 : y.id, ef = P.ZP.useName(y), e_ = (null == (t = A.default.getCurrentUser()) ? void 0 : t.id) === ed, ep = i.useRef(null), eh = null != eu ? eu : ep, [em, eg] = i.useState(!1), [eE, eb] = i.useState(!1), [ey, eO] = i.useState(null), {
+      voiceChannel: ev
     } = (0, _.Z)({
-      userId: eu,
+      userId: ed,
       guildId: F
     }), {
-      voiceActivityStatusEnabled: eO
+      voiceActivityStatusEnabled: eI
     } = (0, d.U)({
       location: "MemberListItem"
-    }), ev = eO ? ey : void 0, {
-      avatarDecorationSrc: eI,
-      avatarSrc: eS,
-      eventHandlers: eT
+    }), eS = eI ? ev : void 0, {
+      avatarDecorationSrc: eT,
+      avatarSrc: eA,
+      eventHandlers: eN
     } = (0, T.Z)({
       user: y,
       size: c.EFr.SIZE_32,
-      animateOnHover: !(n || ep),
+      animateOnHover: !(n || em),
       guildId: F
-    }), eA = null != ec ? ec : {}, {
-      onFocus: eN
-    } = eA, eC = G(eA, ["onFocus"]), eP = (0, O.X)(F, l), eR = (0, s.e7)([I.Z], () => null != I.Z.questEnrollmentBlockedUntil, []), [ew, eD] = i.useState(!1);
+    }), eC = null != ec ? ec : {}, {
+      onFocus: eP
+    } = eC, eR = G(eC, ["onFocus"]), ew = (0, O.X)(F, l), eD = (0, s.e7)([I.Z], () => null != I.Z.questEnrollmentBlockedUntil, []), [eL, ex] = i.useState(!1);
     i.useEffect(() => {
-      n && eD(!1)
+      n && ex(!1)
     }, [n]);
-    let eL = (0, v.fN)(C),
-      ex = null != eL && !ef && n && !ew,
-      ek = i.useCallback(() => {
-        eh(!0)
-      }, []),
-      eM = i.useCallback(() => {
-        eh(!1)
-      }, []),
+    let ek = (0, v.fN)(C),
+      eM = null != ek && !e_ && n && !eL,
       ej = i.useCallback(() => {
-        eg(!0), null == eN || eN()
-      }, [eN]),
+        eg(!0)
+      }, []),
       eU = i.useCallback(() => {
         eg(!1)
       }, []),
-      eG = i.useCallback(e => {
-        eb(e)
+      eG = i.useCallback(() => {
+        eb(!0), null == eP || eP()
+      }, [eP]),
+      eB = i.useCallback(() => {
+        eb(!1)
       }, []),
-      eB = i.useCallback(e => (0, r.jsx)(S.Z, U(M({
-        name: null != b ? b : ed,
-        quest: eL,
-        memberListItemRef: e_,
+      eF = i.useCallback(e => {
+        eO(e)
+      }, []),
+      eV = i.useCallback(e => (0, r.jsx)(S.Z, U(M({
+        name: null != b ? b : ef,
+        quest: ek,
+        memberListItemRef: eh,
         applicationStream: w,
-        isQuestEnrollmentBlocked: eR
+        isQuestEnrollmentBlocked: eD
       }, e), {
-        closePopout: () => eD(!0)
-      })), [eL, e_, w, eR, b, ed]);
+        closePopout: () => ex(!0)
+      })), [ek, eh, w, eD, b, ef]);
     return null == y ? (0, r.jsx)(m.Z, {
       avatarSize: c.EFr.SIZE_32,
       className: x.placeholder
     }) : (0, r.jsx)(c.yRy, {
-      targetElementRef: e_,
-      renderPopout: eB,
+      targetElementRef: eh,
+      renderPopout: eV,
       position: "bottom",
-      shouldShow: ex,
+      shouldShow: eM,
       nudgeAlignIntoViewport: !1,
       useRawTargetDimensions: !0,
       animation: c.yRy.Animation.NONE,
       spacing: -V,
       children: () => (0, r.jsx)(g.Z, M({
-        ref: e_,
+        ref: eh,
         selected: n,
         className: a()(x.member, Z, {
           [x.offline]: D === R.Skl.OFFLINE && !n,
-          [x.flatBottom]: ex
+          [x.flatBottom]: eM
         }),
         innerClassName: x.memberInner,
         onClick: ee,
         onKeyDown: $,
         onMouseDown: J,
         onContextMenu: et,
-        onMouseEnter: ek,
-        onMouseLeave: eM,
-        onBlur: eU,
-        hovered: ep,
+        onMouseEnter: ej,
+        onMouseLeave: eU,
+        onBlur: eB,
+        hovered: em,
         name: null == h ? (0, r.jsx)("span", {
           className: x.username,
           children: (0, r.jsx)(K, {
             colorRoleName: u,
             colorString: o,
-            name: null != b ? b : ed,
-            roleColorStrings: eP,
+            name: null != b ? b : ef,
+            roleColorStrings: ew,
             hideClanTag: Y,
             user: y,
             guildId: F,
-            isHovering: ep
+            isHovering: em
           })
         }) : (0, r.jsx)(c.ua7, {
           text: h,
@@ -400,12 +401,12 @@ let F = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
             children: (0, r.jsx)(K, {
               colorRoleName: u,
               colorString: o,
-              name: null != b ? b : ed,
-              roleColorStrings: eP,
+              name: null != b ? b : ef,
+              roleColorStrings: ew,
               hideClanTag: Y,
               user: y,
               guildId: F,
-              isHovering: ep
+              isHovering: em
             })
           }))
         }),
@@ -414,13 +415,13 @@ let F = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
           shouldAnimateStatus: L,
           activities: C,
           status: D,
-          eventHandlers: eT,
-          avatarSrc: eS,
+          eventHandlers: eN,
+          avatarSrc: eA,
           isMobile: k,
           isTyping: E,
-          avatarDecorationSrc: eI,
-          handleSetTypingRef: eG,
-          typingRef: eE,
+          avatarDecorationSrc: eT,
+          handleSetTypingRef: eF,
+          typingRef: ey,
           currentUser: N
         }),
         nameplate: H,
@@ -429,11 +430,11 @@ let F = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
           activities: C,
           status: D,
           applicationStream: w,
-          voiceStatusChannel: ev,
+          voiceStatusChannel: eS,
           user: y,
           channel: B,
-          isHoveringOrFocusing: ep || em,
-          quest: eL,
+          isHoveringOrFocusing: em || eE,
+          quest: ek,
           hideTooltip: X
         }),
         decorators: (0, r.jsx)(W, {
@@ -450,7 +451,7 @@ let F = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
         "aria-posinset": eo,
         id: es,
         tabIndex: el,
-        onFocus: ej,
+        onFocus: eG,
         focusProps: {
           offset: {
             top: 4,
@@ -459,6 +460,6 @@ let F = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
             right: 4
           }
         }
-      }, eC))
+      }, eR))
     })
   })

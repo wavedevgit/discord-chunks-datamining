@@ -2,14 +2,14 @@
 "use strict";
 let n;
 r.d(t, {
-  Z: () => l
+  Z: () => o
 });
-var o = r(145597);
+var l = r(145597);
 
-function l(e, t) {
+function o(e, t) {
   if (__OVERLAY__) {
     let e = t.getGame(),
-      r = (0, o.getPID)();
+      r = (0, l.getPID)();
     return null == e || null == r ? null : (null == n ? void 0 : n.id) === e.id && (null == n ? void 0 : n.pid) === r ? n : n = {
       id: e.id,
       pid: r,

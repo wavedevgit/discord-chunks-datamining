@@ -104,7 +104,7 @@ function S(e) {
       return (0, r.jsxs)(r.Fragment, {
         children: [null != i && (0, r.jsx)(s.xv, {
           variant: "text-".concat(N, "/medium"),
-          className: T,
+          className: a()(T, I.customStatusLabel),
           color: "none",
           children: "".concat(i, ": ")
         }), null != e && !R && (0, r.jsx)(h.Z, {

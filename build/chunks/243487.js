@@ -38,8 +38,8 @@ var r = n(255367),
   _ = n(501787),
   M = n(981631),
   T = n(65154),
-  L = n(388032),
-  R = n(62802);
+  R = n(388032),
+  L = n(62802);
 
 function G(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -93,9 +93,9 @@ function U(e) {
     return n.getAvatarURL(null == r ? void 0 : r.getGuildId(), f, !1)
   }).filter(E.lm), [i, l, f]), O = null != (t = g[0]) ? t : F(0), m = null != (n = g[1]) ? n : F(1);
   return (0, r.jsxs)("div", {
-    className: o()(R.hiddenVoiceStates, u && R.locked, p && R.flipped),
+    className: o()(L.hiddenVoiceStates, u && L.locked, p && L.flipped),
     children: [(0, r.jsx)("div", {
-      className: R.hiddenVoiceStatesAvatar,
+      className: L.hiddenVoiceStatesAvatar,
       children: (0, r.jsx)(d.Z, {
         size: c,
         backSrc: O,
@@ -103,7 +103,7 @@ function U(e) {
         isTyping: !1
       })
     }), (0, r.jsx)("div", {
-      className: R.hiddenVoiceStatesText,
+      className: L.hiddenVoiceStatesText,
       children: (0, r.jsxs)(s.Text, {
         variant: "text-xs/medium",
         children: ["+", i.length, " others in voice"]
@@ -145,7 +145,7 @@ let z = i.memo(function(e) {
     V = P.get(C[0]),
     N = u === M.OYC.ALWAYS && h !== _.Og;
   return w ? (0, r.jsxs)("div", {
-    className: R.voiceUserContainer,
+    className: L.voiceUserContainer,
     children: [Z.map(e => {
       let i = P.get(e);
       return null == i ? null : (0, r.jsx)(A.ZP, {
@@ -181,7 +181,7 @@ let z = i.memo(function(e) {
       flipped: !b
     })]
   }) : d || !g ? null : (0, r.jsx)(D.E, {
-    emptyText: L.intl.string(L.t.hEh0l5),
+    emptyText: R.intl.string(R.t.hEh0l5),
     icon: s.gj8
   })
 });

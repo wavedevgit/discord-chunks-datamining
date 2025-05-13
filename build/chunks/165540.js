@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(119315),
   b = n(367907),
   _ = n(213609),
-  y = n(499254),
-  x = n(541099),
+  x = n(499254),
+  y = n(541099),
   C = n(827498),
   v = n(663924),
   j = n(533379),
@@ -41,7 +41,7 @@ let L = i.forwardRef(function(e, t) {
     let {
       type: v,
       animateRef: j
-    } = e, E = (0, s.e7)([x.Z], () => x.Z.shouldShowPopup() && x.Z.activeViewType() === v), {
+    } = e, E = (0, s.e7)([y.Z], () => y.Z.shouldShowPopup() && y.Z.activeViewType() === v), {
       badgeTreatment: P
     } = h.Y.useExperiment({
       location: "ChannelAppLauncherButton"
@@ -68,9 +68,9 @@ let L = i.forwardRef(function(e, t) {
         (0, b.yw)(A.rMx.APP_LAUNCHER_ENTRYPOINT_BUTTON_CLICKED, {
           source: C._b.TEXT,
           badge_type: G ? P.valueOf() : null
-        }), E ? y.yT(C.ti.DISMISSED) : ((0, S.EW)(c.z.DESKTOP_APP_LAUNCHER_ONBOARDING, {
+        }), E ? x.yT(C.ti.DISMISSED) : ((0, S.EW)(c.z.DESKTOP_APP_LAUNCHER_ONBOARDING, {
           dismissAction: R.L.TAKE_ACTION
-        }), y.__(C._b.TEXT, v), f.ux()), L()
+        }), x.__(C._b.TEXT, v), f.ux()), L()
       }, [E, v, L, G, P]);
     i.useEffect(() => {
       let e = setTimeout(() => {
@@ -184,7 +184,7 @@ let L = i.forwardRef(function(e, t) {
       chatInputType: n
     }), u = (0, T.Z)({
       type: n
-    }), d = (0, E.h9)(t.id), p = (0, s.e7)([x.Z], () => x.Z.appDMChannelsWithFailedLoads().has(t.id)), {
+    }), d = (0, E.h9)(t.id), p = (0, s.e7)([y.Z], () => y.Z.appDMChannelsWithFailedLoads().has(t.id)), {
       visible: h
     } = (0, Z.xL)();
     return c ? (0, r.jsxs)("div", {

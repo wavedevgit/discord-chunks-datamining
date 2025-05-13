@@ -1,6 +1,6 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => x
+  Z: () => y
 }), n(388685), n(539854);
 var r, i, l, o = n(442837),
   a = n(846519),
@@ -34,7 +34,7 @@ function b(e) {
 function _() {
   f = {}, m = {}
 }
-class y extends(r = o.ZP.Store) {
+class x extends(r = o.ZP.Store) {
   initialize() {
     this.waitFor(u.Z)
   }
@@ -42,13 +42,13 @@ class y extends(r = o.ZP.Store) {
     return b(e)
   }
 }
-l = "PresenceSubscriptionsStore", (i = "displayName") in y ? Object.defineProperty(y, i, {
+l = "PresenceSubscriptionsStore", (i = "displayName") in x ? Object.defineProperty(x, i, {
   value: l,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : y[i] = l;
-let x = new y(s.Z, {
+}) : x[i] = l;
+let y = new x(s.Z, {
   PRESENCE_SUBSCRIPTIONS_ADD: function(e) {
     let {
       subscription: t

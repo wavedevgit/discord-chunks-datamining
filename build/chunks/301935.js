@@ -155,19 +155,19 @@ function k(e) {
     }) : (0, r.jsx)(c.$jN, {
       type: c.RAz.PULSING_ELLIPSIS
     }),
-    children: [W && (0, r.jsx)(B, {
+    children: [W && (0, r.jsx)(M, {
       type: "warning",
       title: Q ? P.intl.formatToPlainString(P.t.QOnM19, {
         subscriptionPeriodEnd: et
       }) : P.intl.formatToPlainString(P.t.HOaZu7, {
         subscriptionPeriodEnd: et
       })
-    }), J && (0, r.jsx)(B, {
+    }), J && (0, r.jsx)(M, {
       type: "danger",
       title: P.intl.string(P.t.fvOqBg)
     }), (0, r.jsxs)("div", {
       className: R.details,
-      children: [(0, r.jsx)(M, {
+      children: [(0, r.jsx)(B, {
         title: P.intl.string(P.t["5D/KEB"]),
         content: F ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsxs)("span", {
@@ -194,10 +194,10 @@ function k(e) {
             size: "xs"
           }), P.intl.string(P.t["6anEVl"])]
         })
-      }), null != G && (0, r.jsx)(M, {
+      }), null != G && (0, r.jsx)(B, {
         title: P.intl.string(P.t.KI7ER0),
         content: G
-      }), (0, r.jsx)(M, {
+      }), (0, r.jsx)(B, {
         title: P.intl.string(P.t.dnUzb2),
         content: (0, N.p)(null != (d = p.createdAt) ? d : p.currentPeriodStart)
       }), (0, r.jsx)(L, {
@@ -229,7 +229,7 @@ function L(e) {
   } = e;
   if (null != i) {
     let e = (0, v.og)((0, v.T4)(i.price, i.currency), i.interval, i.intervalCount);
-    return (0, r.jsx)(M, {
+    return (0, r.jsx)(B, {
       title: P.intl.string(P.t.hIhAMz),
       content: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(c.Text, {
@@ -245,13 +245,13 @@ function L(e) {
       })
     })
   }
-  return (0, r.jsx)(M, {
+  return (0, r.jsx)(B, {
     title: t ? P.intl.string(P.t.enxcAg) : P.intl.string(P.t["Ms+6Zm"]),
     content: n
   })
 }
 
-function M(e) {
+function B(e) {
   let {
     title: t,
     content: n
@@ -269,7 +269,7 @@ function M(e) {
   })
 }
 
-function B(e) {
+function M(e) {
   let {
     type: t,
     title: n

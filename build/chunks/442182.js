@@ -86,11 +86,11 @@ function R(e) {
     guildId: l,
     roleId: a,
     locked: u
-  } = e, m = i.useMemo(() => ({
+  } = e, m = i.useRef(null), g = i.useMemo(() => ({
     [l]: [t.id]
   }), [l, t.id]);
 
-  function g(e) {
+  function h(e) {
     if (e.stopPropagation(), !u) {
       if (e.shiftKey) return void w(t, l, a);
       let n = j.Z.getRole(a);
@@ -116,7 +116,7 @@ function R(e) {
     }
   }
 
-  function h(e) {
+  function x(e) {
     let i = f.default.getUser(t.id);
     null != i && (0, c.jW)(e, async () => {
       let {
@@ -129,16 +129,18 @@ function R(e) {
       }))
     })
   }
-  return (0, d.$)(m), (0, r.jsx)("div", {
+  return (0, d.$)(g), (0, r.jsx)("div", {
     className: S.contentWidth,
     children: (0, r.jsx)(p.Z, {
+      targetElementRef: m,
       userId: t.id,
       guildId: l,
       roleId: a,
       position: "left",
       children: e => (0, r.jsxs)(o.P3F, P(T({}, e), {
+        innerRef: m,
         className: E.memberRow,
-        onContextMenu: h,
+        onContextMenu: x,
         children: [(0, r.jsx)(C.Z, {
           className: E.memberDetails,
           avatarURL: t.avatarURL,
@@ -155,7 +157,7 @@ function R(e) {
               className: s()(E.removeButton, {
                 [E.removeButtonDisabled]: u
               }),
-              onClick: g,
+              onClick: h,
               children: (0, r.jsx)(o.k$p, {
                 size: "xs",
                 color: "currentColor"

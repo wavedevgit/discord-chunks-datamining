@@ -23,8 +23,8 @@ let g = i.memo(function(e) {
         className: g,
         count: _,
         me: b,
-        me_burst: y,
-        burst_count: E,
+        me_burst: E,
+        burst_count: y,
         burst_colors: x,
         readOnly: v,
         isLurking: O,
@@ -34,10 +34,10 @@ let g = i.memo(function(e) {
         emojiSize: I
       } = e,
       N = S === p.O.BURST,
-      T = (0, m.y4)(b, y, S),
+      T = (0, m.y4)(b, E, S),
       P = (0, d.v)(N && null != x ? x : []),
       A = i ? h : f,
-      w = N ? E : _,
+      w = N ? y : _,
       Z = (0, u.y)(w, m.aO),
       R = {};
     if (N && null != P) {

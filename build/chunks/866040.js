@@ -83,20 +83,23 @@ function g(e) {
     children: t,
     participants: n,
     channel: a,
-    onPopoutClosed: s
-  } = e, u = (0, i.e7)([c.Z], () => c.Z.theme), d = 1 === n.length ? n[0] : null;
-  return null != d ? (0, r.jsx)(o.ze6, {
-    theme: u,
+    onPopoutClosed: s,
+    targetElementRef: u
+  } = e, d = (0, i.e7)([c.Z], () => c.Z.theme), f = 1 === n.length ? n[0] : null;
+  return null != f ? (0, r.jsx)(o.ze6, {
+    theme: d,
     children: (0, r.jsx)(l.Z, {
-      user: d,
+      targetElementRef: u,
+      user: f,
       guildId: null == a ? void 0 : a.guild_id,
       channelId: null == a ? void 0 : a.id,
       onClosePopout: s,
       children: t
     })
   }) : (0, r.jsx)(o.ze6, {
-    theme: u,
+    theme: d,
     children: (0, r.jsx)(o.yRy, {
+      targetElementRef: u,
       renderPopout: () => {
         if (null != n) return (0, r.jsx)(m, {
           participants: n,

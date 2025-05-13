@@ -70,8 +70,8 @@ let p = i.forwardRef(function(e, t) {
     onPopoutOpen: m,
     onPopoutClose: g,
     onRequestClose: b
-  } = e, [_, y] = i.useState(!1), {
-    isHovered: x,
+  } = e, [_, x] = i.useState(!1), {
+    isHovered: y,
     setIsHovered: C,
     onMouseEnter: v,
     onMouseLeave: j,
@@ -87,14 +87,14 @@ let p = i.forwardRef(function(e, t) {
   }
 
   function S(e) {
-    O(), y(!_), _ ? null == g || g() : null == m || m(), (!x || _) && e()
+    O(), x(!_), _ ? null == g || g() : null == m || m(), (!y || _) && e()
   }
   i.useImperativeHandle(t, () => ({
     hidePopout() {
-      C(!1), y(!1)
+      C(!1), x(!1)
     }
-  }), [C, y]);
-  let P = x && !f || _;
+  }), [C, x]);
+  let P = y && !f || _;
   return (0, r.jsx)(o.yRy, {
     animation: o.yRy.Animation.FADE,
     shouldShow: P,
@@ -104,11 +104,11 @@ let p = i.forwardRef(function(e, t) {
     spacing: 16,
     onRequestClose: () => {
       if ((null == b ? void 0 : b()) === l.F) return l.F;
-      C(!1), y(!1), null == g || g()
+      C(!1), x(!1), null == g || g()
     },
     renderPopout: e => (0, r.jsx)(d, u({
       isHovered: P,
-      onFocus: () => y(!0),
+      onFocus: () => x(!0),
       onMouseEnter: v,
       onMouseLeave: I,
       renderPopout: n

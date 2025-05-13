@@ -24,8 +24,8 @@ function m(e) {
     hideDiscriminator: g,
     comparator: b,
     selected: _,
-    checked: y,
-    onClick: x,
+    checked: x,
+    onClick: y,
     onMouseEnter: C,
     "aria-setsize": v,
     "aria-posinset": j
@@ -51,14 +51,14 @@ function m(e) {
     id: "user-row-".concat(m),
     className: f.friendWrapper,
     onClick: () => {
-      null != x && x(i.id)
+      null != y && y(i.id)
     },
     onMouseEnter: () => {
       null != C && C(m)
     }
   }, E), n = n = {
     role: "option",
-    "aria-selected": y,
+    "aria-selected": x,
     "aria-setsize": v,
     "aria-posinset": j,
     children: (0, r.jsxs)(d.Z, {
@@ -90,7 +90,7 @@ function m(e) {
       }), (0, r.jsx)(s.XZJ, {
         displayOnly: !0,
         size: 22,
-        value: y,
+        value: x,
         className: f.checkbox
       })]
     })

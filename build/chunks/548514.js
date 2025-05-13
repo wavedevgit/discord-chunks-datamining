@@ -38,8 +38,9 @@ function Z(e) {
   let {
     renderDropdown: t,
     size: n
-  } = e;
+  } = e, a = i.useRef(null);
   return (0, r.jsx)(c.yRy, {
+    targetElementRef: a,
     renderPopout: e => {
       let {
         closePopout: n
@@ -69,6 +70,7 @@ function Z(e) {
         }
         return e
       }({
+        buttonRef: a,
         look: c.zxk.Looks.FILLED,
         size: c.zxk.Sizes.ICON,
         color: c.zxk.Colors.PRIMARY,

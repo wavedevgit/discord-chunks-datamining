@@ -1,6 +1,6 @@
 /**
   Module ID: 69835
-  Original File Name: ae193c46a3eaf234
+  Original File Name: 4478f9490e0d003d
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -7402,22 +7402,16 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 .badgeImage__1f2ac {
     align-self: center;
     height: auto;
-    margin-left: -16%;
+    max-height: 66%;
     pointer-events: none;
-    width: 80%
+    width: 70%
 }
 
 .full-motion .badgeImage__1f2ac {
     transition: all .2s ease-in-out
 }
 
-.badgeImageV2__1f2ac {
-    margin-left: 0;
-    max-height: 66%;
-    width: 70%
-}
-
-.badgeImageV2__1f2ac.wide__1f2ac {
+.badgeImage__1f2ac.wide__1f2ac {
     width: 85%
 }
 
@@ -7427,43 +7421,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
-    filter: drop-shadow(0 0 34px var(--custom-tenure-badge-glow-color))
-}
-
-.badgeBronzeGlow__1f2ac {
-    --custom-tenure-badge-glow-color: #b5491380
-}
-
-.badgeSilverGlow__1f2ac {
-    --custom-tenure-badge-glow-color: #9e9e9e80
-}
-
-.badgeGoldGlow__1f2ac {
-    --custom-tenure-badge-glow-color: #ffa81380
-}
-
-.badgePlatinumGlow__1f2ac {
-    --custom-tenure-badge-glow-color: #5eacc280
-}
-
-.badgeDiamondGlow__1f2ac {
-    --custom-tenure-badge-glow-color: #6d5cf280
-}
-
-.badgeEmeraldGlow__1f2ac {
-    --custom-tenure-badge-glow-color: #32c10280
-}
-
-.badgeRubyGlow__1f2ac {
-    --custom-tenure-badge-glow-color: #f29cc380
-}
-
-.badgeFireGlow__1f2ac {
-    --custom-tenure-badge-glow-color: #e95c0380
-}
-
-.badgeOpalGlow__1f2ac {
-    --custom-tenure-badge-glow-color: #07829280
+    filter: drop-shadow(0 0 34px var(--custom-badge-glow-color))
 }
 
 .hoverWrapper_b5493b {
@@ -18477,4 +18435,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=ae193c46a3eaf234.css.map*/
+/*# sourceMappingURL=4478f9490e0d003d.css.map*/

@@ -1,6 +1,6 @@
 /** Chunk was on 36087 **/
 n.d(t, {
-  w: () => y
+  w: () => E
 });
 var r = n(255367),
   i = n(73800),
@@ -19,7 +19,7 @@ var r = n(255367),
   _ = n(492764),
   b = n(235810);
 
-function y() {
+function E() {
   return (0, p.Z)() ? (0, r.jsx)("div", {
     className: g.emptyContainer,
     children: (0, r.jsxs)("div", {
@@ -57,11 +57,11 @@ function y() {
         color: "text-muted",
         children: h.intl.string(h.t.F6u3Ex)
       })]
-    }), (0, r.jsx)(E, {})]
+    }), (0, r.jsx)(y, {})]
   })
 }
 
-function E() {
+function y() {
   let e = (0, d.Px)(f.p9.TIER_2),
     t = i.useCallback(() => (0, o.ZDy)(async () => {
       let {

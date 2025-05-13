@@ -1,6 +1,6 @@
 /** Chunk was on 69835 **/
 n.d(t, {
-  Z: () => B
+  Z: () => M
 }), n(388685), n(781311);
 var i = n(255367),
   r = n(73800),
@@ -238,7 +238,7 @@ function L(e) {
   })
 }
 
-function M() {
+function B() {
   let e = (0, c.e7)([x.Z], () => x.Z.getAccounts()),
     t = r.useMemo(() => e.filter(e => h.Z.isSupported(e.type) && N.vbS.has(e.type)), [e]),
     [n, s] = r.useState(""),
@@ -266,7 +266,7 @@ function M() {
   })
 }
 
-function B(e) {
+function M(e) {
   let {
     className: t,
     showHeader: n = !0
@@ -281,6 +281,6 @@ function B(e) {
     className: t,
     tag: m.RB0.H1,
     title: n ? y.intl.string(y.t.Cq98yM) : null,
-    children: [(0, i.jsx)(D, {}), (0, i.jsx)(Z, {}), (0, i.jsx)(w, {}), r && (0, i.jsx)(M, {})]
+    children: [(0, i.jsx)(D, {}), (0, i.jsx)(Z, {}), (0, i.jsx)(w, {}), r && (0, i.jsx)(B, {})]
   })
 }

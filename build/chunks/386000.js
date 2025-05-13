@@ -23,8 +23,8 @@ function b(e) {
     serverMute: n,
     suppress: b,
     centerButton: _ = !1,
-    awaitingRemote: y,
-    onMouseEnter: x,
+    awaitingRemote: x,
+    onMouseEnter: y,
     onMouseLeave: C,
     onClick: v
   } = e, j = function(e, t) {
@@ -53,7 +53,7 @@ function b(e) {
     coloredIconsEnabled: S
   } = (0, h.Z)({
     location: "MuteButton"
-  }), P = t || n || b, Z = _ ? m.d : m.Z, N = (0, u.Z)(t, n, b, y, E === p.BK.GroupedButtonsRedMic || I), T = (0, l.O)(P ? "unmute" : "mute"), A = (0, o.P)(P ? "unmute" : "mute"), {
+  }), P = t || n || b, Z = _ ? m.d : m.Z, N = (0, u.Z)(t, n, b, x, E === p.BK.GroupedButtonsRedMic || I), T = (0, l.O)(P ? "unmute" : "mute"), A = (0, o.P)(P ? "unmute" : "mute"), {
     activeVoice: w
   } = (0, f.o)(), R = null != w, k = R ? A : T, {
     events: M,
@@ -88,7 +88,7 @@ function b(e) {
     color: U,
     label: N,
     onMouseEnter: e => {
-      null == x || x(e), M.onMouseEnter()
+      null == y || y(e), M.onMouseEnter()
     },
     onMouseLeave: e => {
       null == C || C(e), M.onMouseLeave()

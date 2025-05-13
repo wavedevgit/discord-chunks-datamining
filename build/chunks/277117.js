@@ -19,8 +19,8 @@ var i = n(442837),
   g = n(483424),
   b = n(681837),
   _ = n(78806),
-  y = n(91433),
-  x = n(900927),
+  x = n(91433),
+  y = n(900927),
   C = n(944043),
   v = n(678738),
   j = n(638970),
@@ -75,13 +75,13 @@ function T(e) {
         })]
       })
     }), k === P.OGo.PENDING_INCOMING && (0, r.jsx)(O.Z.Overlay, {
-      children: (0, r.jsx)(y.Z, {
+      children: (0, r.jsx)(x.Z, {
         user: t,
         channelId: A.id,
         applicationId: M
       })
     }), L.map(e => (0, r.jsx)(O.Z.Overlay, {
-      children: (0, r.jsx)(y.Z, {
+      children: (0, r.jsx)(x.Z, {
         user: t,
         isGameRelationship: !0,
         applicationId: e.applicationId,
@@ -127,7 +127,7 @@ function T(e) {
       }), (0, r.jsx)(v.Z, {
         heading: t.bot ? Z.intl.string(Z.t["A//N4u"]) : Z.intl.string(Z.t.a6XYDw),
         headingColor: "header-primary",
-        children: (0, r.jsx)(x.Z, {
+        children: (0, r.jsx)(y.Z, {
           userId: t.id
         })
       })]

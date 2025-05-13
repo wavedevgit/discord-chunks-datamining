@@ -23,16 +23,16 @@ function b(e) {
     onAcceptSuccess: n,
     onRejectSuccess: i,
     onError: b
-  } = e, _ = (0, f.Z)(), [y, x] = r.useState(!1), [C, v] = r.useState(!1), [j, O] = r.useState(!1), [E, I] = r.useState(!1), [S, P] = r.useState(!1), Z = y || C || j, N = r.useCallback(async e => {
+  } = e, _ = (0, f.Z)(), [x, y] = r.useState(!1), [C, v] = r.useState(!1), [j, O] = r.useState(!1), [E, I] = r.useState(!1), [S, P] = r.useState(!1), Z = x || C || j, N = r.useCallback(async e => {
     if (!Z) {
-      x(!0);
+      y(!0);
       try {
         await (0, p.e4)(e), I(!0), null == n || n()
       } catch (t) {
         let e = new o.Hx(t);
         null == b || b(e)
       } finally {
-        x(!1)
+        y(!1)
       }
     }
   }, [Z, n, b]), T = r.useCallback(async e => {
@@ -123,7 +123,7 @@ function b(e) {
     rejectMessageRequest: T,
     rejectAll: A,
     markAsNotSpam: R,
-    isAcceptLoading: y,
+    isAcceptLoading: x,
     isRejectLoading: C,
     isUserProfileLoading: j,
     isOptimisticAccepted: E,

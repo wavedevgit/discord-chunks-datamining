@@ -95,7 +95,7 @@ let _ = e => {
       },
       children: _
     })]
-  }), M = () => (0, i.jsx)("div", {
+  }), B = () => (0, i.jsx)("div", {
     className: l()({
       [b.largeBoxArtContainer]: O === p.y$.LARGE,
       [b.mediumBoxArtContainer]: O === p.y$.MEDIUM,
@@ -131,9 +131,9 @@ let _ = e => {
     onBlur: k,
     onMouseLeave: k,
     children: j % 2 != 0 ? (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(L, {}), (0, i.jsx)(M, {})]
+      children: [(0, i.jsx)(L, {}), (0, i.jsx)(B, {})]
     }) : (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(M, {}), (0, i.jsx)(L, {})]
+      children: [(0, i.jsx)(B, {}), (0, i.jsx)(L, {})]
     })
   })
 }

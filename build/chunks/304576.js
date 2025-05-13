@@ -51,7 +51,7 @@ let v = e => {
       isDarkMode: A
     } = e, {
       analyticsLocations: P
-    } = (0, d.ZP)(c.Z.PREMIUM_MARKETING_HERO_CTA), R = (0, g._O)(), D = (0, p.Ng)(), Z = (0, p.Wp)(D, j.Si.TIER_2) ? j.Si.TIER_2 : void 0, w = (0, h.N)(), k = (0, m.Nx)(), L = (0, _.Vi)(), M = (0, a.e7)([u.Z], () => u.Z.affinities), B = (0, f.Z)(), U = y === j.EZ.ApplicationStoreHome && null != B, V = M.length > 0;
+    } = (0, d.ZP)(c.Z.PREMIUM_MARKETING_HERO_CTA), R = (0, g._O)(), D = (0, p.Ng)(), Z = (0, p.Wp)(D, j.Si.TIER_2) ? j.Si.TIER_2 : void 0, w = (0, h.N)(), k = (0, m.Nx)(), L = (0, _.Vi)(), B = (0, a.e7)([u.Z], () => u.Z.affinities), M = (0, f.Z)(), U = y === j.EZ.ApplicationStoreHome && null != M, V = B.length > 0;
     return (0, i.jsx)(d.Gt, {
       value: P,
       children: (0, i.jsx)("div", {
@@ -69,7 +69,7 @@ let v = e => {
             color: "header-primary",
             children: O.intl.string(O.t.YCZldH)
           }), U ? (0, i.jsx)(E.Z, {
-            referrer: B,
+            referrer: M,
             isMarketingPageV2Enabled: !0
           }) : V && (0, i.jsx)("div", {
             className: S.affinityDescriptionV2,

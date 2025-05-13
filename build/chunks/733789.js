@@ -91,14 +91,14 @@ class E extends i.PureComponent {
   }
   renderActivityDiscordTag(e) {
     return (0, r.jsx)(u.Z, {
-      targetElementRef: this.ref,
+      targetElementRef: this.activityDiscordTagRef,
       user: e,
       newAnalyticsLocations: [s.Z.USERNAME],
       clickTrap: !0,
       children: t => {
         var n, i;
         return (0, r.jsx)("span", (n = b({
-          ref: this.ref,
+          ref: this.activityDiscordTagRef,
           className: g.username
         }, t), i = i = {
           children: e.username
@@ -143,7 +143,7 @@ class E extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), m(this, "ref", i.createRef()), m(this, "renderUserTooltip", (e, t, n) => (0, r.jsxs)("div", {
+    super(...e), m(this, "activityDiscordTagRef", i.createRef()), m(this, "playerAvatarRef", i.createRef()), m(this, "renderUserTooltip", (e, t, n) => (0, r.jsxs)("div", {
       className: g.tooltip,
       children: [(0, r.jsx)("div", {
         children: p.ZP.getUserTag(e)
@@ -157,6 +157,7 @@ class E extends i.PureComponent {
       if (null == e) return null;
       let l = this.props.reason.userInfo.find(t => t.user === e);
       return null == l ? null : (0, r.jsx)(u.Z, {
+        targetElementRef: this.playerAvatarRef,
         user: e,
         newAnalyticsLocations: [s.Z.AVATAR],
         clickTrap: !0,
@@ -166,6 +167,7 @@ class E extends i.PureComponent {
             decoration: "never"
           }),
           children: n => (0, r.jsx)(o.qEK, b({
+            ref: this.playerAvatarRef,
             className: a()(g.playerAvatar, {
               [g.avatarMasked]: !i
             }),

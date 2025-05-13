@@ -1,6 +1,6 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  N: () => y
+  N: () => x
 }), n(388685);
 var r = n(255367),
   i = n(442837),
@@ -65,7 +65,7 @@ let b = e => {
     })
   };
 
-function y(e) {
+function x(e) {
   let {
     children: t
   } = e, n = [l.z.LEADERBOARD_NUX_COACHMARK], [a, c] = (0, s.US)(n, void 0), d = (0, i.e7)([u.default], () => u.default.getCurrentUser());

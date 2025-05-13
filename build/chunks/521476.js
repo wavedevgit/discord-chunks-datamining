@@ -35,7 +35,7 @@ function p(e) {
         guildName: null != (n = null == p ? void 0 : p.name) ? n : ""
       }),
       bannerSubtext: g,
-      containerStyles: d.bannerContainer,
+      textStyles: d.bannerContainer,
       headerStyles: d.bannerHeader,
       children: (0, r.jsx)(i.zxk, {
         onClick: () => {

@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(941028),
   b = n(144144),
   _ = n(276264),
-  y = n(607070),
-  x = n(100527),
+  x = n(607070),
+  y = n(100527),
   C = n(367907),
   v = n(906732),
   j = n(493324),
@@ -128,57 +128,58 @@ let en = q.ZP.getEnableHardwareAcceleration(),
       activities: h,
       applicationStream: f,
       status: g,
-      channel: y,
-      guildId: x,
+      channel: x,
+      guildId: y,
       isTyping: C,
       isMobileOnline: v,
       premiumSince: j,
       nameplate: O,
       shouldShowPopoutOnHover: E
-    } = e, I = et(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate", "shouldShowPopoutOnHover"]), [S, P] = i.useState(!1), Z = null != j ? new Date(j) : null, N = i.useCallback(e => {
+    } = e, I = et(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate", "shouldShowPopoutOnHover"]), S = i.useRef(null), [P, Z] = i.useState(!1), N = null != j ? new Date(j) : null, A = i.useCallback(e => {
       (0, m.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387)), t = V.Z.isInChannel(G.Z.getVoiceChannelId(), u.id);
         return n => (0, r.jsx)(e, ee($({}, n), {
           user: u,
-          guildId: x,
-          channel: y,
+          guildId: y,
+          channel: x,
           showMediaItems: t
         }))
       })
-    }, [u, x, y]), A = i.useCallback(() => {
+    }, [u, y, x]), w = i.useCallback(() => {
       let e = "@".concat(Y.ZP.getUserTag(u, {
           decoration: "never"
         })),
         t = "<@".concat(u.id, ">");
       z.S.dispatch(K.CkL.TEXTAREA_FOCUS, {
-        channelId: y.id
+        channelId: x.id
       }), z.S.dispatchToLastSubscribed(K.CkL.INSERT_TEXT, {
         plainText: e,
         rawText: t
-      }), b.Z.startTyping(y.id)
-    }, [u, y.id]), w = i.useCallback(e => {
-      null != x && (e.stopPropagation(), (0, T.f)({
-        guildId: x,
+      }), b.Z.startTyping(x.id)
+    }, [u, x.id]), R = i.useCallback(e => {
+      null != y && (e.stopPropagation(), (0, T.f)({
+        guildId: y,
         location: {
           section: K.jXE.MEMBER_LIST,
           object: K.qAy.BOOST_GEM_ICON
         }
       }))
-    }, [x]);
+    }, [y]);
     return (0, r.jsx)(L.Z, {
+      targetElementRef: S,
       user: u,
-      guildId: x,
-      channelId: y.id,
+      guildId: y,
+      channelId: x.id,
       roleId: a,
       position: d.tq ? "window_center" : "left",
       spacing: 16,
-      onShiftClick: A,
+      onShiftClick: w,
       shouldShowOnHover: E,
-      shouldShow: S,
+      shouldShow: P,
       onRequestClose: () => {
-        P(!1)
+        Z(!1)
       },
       children: e => {
         let {
@@ -186,8 +187,9 @@ let en = q.ZP.getEnableHardwareAcceleration(),
           onMouseDown: i
         } = e, a = et(e, ["onClick", "onMouseDown"]);
         return (0, r.jsx)(_.Z, $({
+          ref: S,
           className: Q.member,
-          onContextMenu: N,
+          onContextMenu: A,
           shouldAnimateStatus: en,
           user: u,
           currentUser: p,
@@ -196,24 +198,24 @@ let en = q.ZP.getEnableHardwareAcceleration(),
           activities: h,
           applicationStream: f,
           isOwner: s,
-          premiumSince: Z,
+          premiumSince: N,
           colorString: t,
           colorStrings: l,
           colorRoleName: o,
           isTyping: C,
-          channel: y,
-          guildId: x,
+          channel: x,
+          guildId: y,
           isMobile: v,
-          onClickPremiumGuildIcon: w,
-          selected: S,
+          onClickPremiumGuildIcon: R,
+          selected: P,
           itemProps: I,
           nameplate: O,
           hideTooltip: E,
           onClick: e => {
-            e.shiftKey ? null == A || A() : P(e => !e)
+            e.shiftKey ? null == w || w() : Z(e => !e)
           },
           onMouseDown: e => {
-            S ? e.stopPropagation() : null == i || i(e)
+            P ? e.stopPropagation() : null == i || i(e)
           }
         }, a))
       }
@@ -552,7 +554,7 @@ function ec(e) {
     className: n
   } = e, {
     analyticsLocations: l
-  } = (0, v.ZP)(x.Z.MEMBER_LIST), a = (0, h.e7)([y.Z], () => y.Z.keyboardModeEnabled), s = (0, h.cj)([U.ZP], () => U.ZP.getProps(t.guild_id, t.id)), {
+  } = (0, v.ZP)(y.Z.MEMBER_LIST), a = (0, h.e7)([x.Z], () => x.Z.keyboardModeEnabled), s = (0, h.cj)([U.ZP], () => U.ZP.getProps(t.guild_id, t.id)), {
     rows: d,
     groups: p,
     version: m,

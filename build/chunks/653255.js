@@ -3,7 +3,7 @@
 r.d(t, {
   Z: () => O
 });
-var n, o, l, i = r(442837),
+var n, l, o, i = r(442837),
   u = r(570140),
   a = r(358085),
   s = r(998502),
@@ -13,7 +13,7 @@ var n, o, l, i = r(442837),
 let p = !1,
   b = !0,
   v = !1;
-class g extends(l = i.ZP.Store) {
+class g extends(o = i.ZP.Store) {
   initialize() {
     !a.isPlatformEmbedded || __OVERLAY__ || s.ZP.getGPUDriverVersions().then(e => {
       p = (0, f.Z)(e), b = (0, c.Z)(e), v = (0, d.Z)(e), this.emitChange()
@@ -36,12 +36,12 @@ class g extends(l = i.ZP.Store) {
     }
   }
 }
-o = "StreamingCapabilitiesStore", (n = "displayName") in g ? Object.defineProperty(g, n, {
-  value: o,
+l = "StreamingCapabilitiesStore", (n = "displayName") in g ? Object.defineProperty(g, n, {
+  value: l,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : g[n] = o;
+}) : g[n] = l;
 let O = new g(u.Z, {
   OVERLAY_INITIALIZE: function(e) {
     let {

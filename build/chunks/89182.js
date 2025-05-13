@@ -87,15 +87,17 @@ function g(e) {
     selected: l,
     variant: c = "TRANSPARENT"
   } = e, m = u(e, ["items", "title", "onSelect", "selected", "variant"]);
-  let h = a.useMemo(() => (function(e) {
-    switch (e) {
-      case "FILLED":
-        return d.filterBackground;
-      case "TRANSPARENT":
-        return
-    }
-  })(c), [c]);
+  let h = a.useRef(null),
+    g = a.useMemo(() => (function(e) {
+      switch (e) {
+        case "FILLED":
+          return d.filterBackground;
+        case "TRANSPARENT":
+          return
+      }
+    })(c), [c]);
   return (0, i.jsx)(o.yRy, {
+    targetElementRef: h,
     renderPopout: e => {
       let {
         closePopout: n
@@ -133,7 +135,8 @@ function g(e) {
         }
         return e
       }({}, e), a = a = {
-        className: s()(d.filter, h),
+        ref: h,
+        className: s()(d.filter, g),
         children: [(0, i.jsx)(o.Text, {
           variant: "text-sm/medium",
           color: "interactive-normal",

@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(575175),
   b = n(522651),
   _ = n(795318),
-  y = n(258609),
-  x = n(74299),
+  x = n(258609),
+  y = n(74299),
   C = n(924301),
   v = n(459502),
   j = n(856691),
@@ -168,7 +168,7 @@ function ep(e) {
     canManageGuildEvent: l
   } = (0, O.XJ)(t), h = (0, a.e7)([X.Z], () => X.Z.getStageInstanceByChannel(t.id), [t.id]), f = (0, a.e7)([C.ZP], () => C.ZP.getGuildScheduledEvent(null == h ? void 0 : h.guild_scheduled_event_id)), m = (0, a.e7)([F.Z], () => F.Z.getVoiceChannelId() === t.id, [t.id]), {
     suppress: g
-  } = (0, N.Z)(t), y = U.default.getId(), [x] = (0, ei.Z)(t), v = K.ZP.isModerator(y, t.id), j = (0, Y.B)(t.id), E = l(f), I = (0, P.Z)({
+  } = (0, N.Z)(t), x = U.default.getId(), [y] = (0, ei.Z)(t), v = K.ZP.isModerator(x, t.id), j = (0, Y.B)(t.id), E = l(f), I = (0, P.Z)({
     location: "ExitStageButton"
   }), {
     parentAnalyticsLocation: S
@@ -246,7 +246,7 @@ function ep(e) {
         className: I ? void 0 : es.buttonSpacing
       })
     }
-  }) : g && !j || x ? I ? (0, r.jsx)(M.Z, {
+  }) : g && !j || y ? I ? (0, r.jsx)(M.Z, {
     label: ea.intl.string(ea.t.SMKyio),
     onClick: Z,
     className: es.experimentButtonSpacing
@@ -345,13 +345,13 @@ let em = i.memo(function(e) {
     suppress: i,
     selfMute: l,
     mute: c
-  } = (0, N.Z)(t), u = (0, Y.B)(t.id), d = (0, a.e7)([y.Z], () => null != y.Z.getAwaitingRemoteSessionInfo()), {
+  } = (0, N.Z)(t), u = (0, Y.B)(t.id), d = (0, a.e7)([x.Z], () => null != x.Z.getAwaitingRemoteSessionInfo()), {
     cameraUnavailable: b,
     enabled: C
   } = (0, I.Z)(), v = (0, Z.Z)(t), {
     limit: j,
     reachedLimit: O
-  } = (0, S.Z)(t), k = (0, a.e7)([H.default], () => H.default.getCurrentUser()), M = (0, a.e7)([B.Z], () => (0, x.Z)(B.Z)), U = (0, a.e7)([F.Z], () => F.Z.getVoiceChannelId() === t.id, [t.id]), G = (0, a.e7)([h.Z], () => h.Z.getStreamParticipants(t.id)[0], [t.id]), V = (0, Q.PK)(t.id), z = j > 0, W = O && !V || null != G && G.user.id !== (null == k ? void 0 : k.id), q = (0, P.Z)({
+  } = (0, S.Z)(t), k = (0, a.e7)([H.default], () => H.default.getCurrentUser()), M = (0, a.e7)([B.Z], () => (0, y.Z)(B.Z)), U = (0, a.e7)([F.Z], () => F.Z.getVoiceChannelId() === t.id, [t.id]), G = (0, a.e7)([h.Z], () => h.Z.getStreamParticipants(t.id)[0], [t.id]), V = (0, Q.PK)(t.id), z = j > 0, W = O && !V || null != G && G.user.id !== (null == k ? void 0 : k.id), q = (0, P.Z)({
     location: "SpeakerControlTray"
   }), {
     coloredIconsEnabled: K,

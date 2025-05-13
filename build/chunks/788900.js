@@ -4,8 +4,8 @@
 function n(e) {
   let t = function(e) {
     var t;
-    let r, n, o, {
-        PI: l,
+    let r, n, l, {
+        PI: o,
         min: i,
         max: u,
         cos: a,
@@ -25,16 +25,16 @@ function n(e) {
       w = v ? 6 : 5,
       j = 0,
       P = (t, r, n) => {
-        let o = [];
-        for (let l = 0; l < r; l++)
-          for (let i = +!l; i * r < t * (r - l); i++) o.push(((e[w + (j >> 1)] >> ((1 & j++) << 2) & 15) / 7.5 - 1) * n);
-        return o
+        let l = [];
+        for (let o = 0; o < r; o++)
+          for (let i = +!o; i * r < t * (r - o); i++) l.push(((e[w + (j >> 1)] >> ((1 & j++) << 2) & 15) / 7.5 - 1) * n);
+        return l
       },
       S = P(O, h, (c >> 18 & 31) / 31),
       D = P(3, 3, (d >> 3 & 63) / 63 * 1.25),
       I = P(3, 3, (d >> 9 & 63) / 63 * 1.25),
       E = v && P(5, 5, y),
-      k = (r = (t = e)[3], n = 128 & t[2], ((o = 128 & t[4]) ? n ? 5 : 7 : 7 & r) / (o ? 7 & r : n ? 5 : 7)),
+      k = (r = (t = e)[3], n = 128 & t[2], ((l = 128 & t[4]) ? n ? 5 : 7 : 7 & r) / (l ? 7 & r : n ? 5 : 7)),
       x = s(k > 1 ? 32 : 32 * k),
       C = s(k > 1 ? 32 / k : 32),
       Z = new Uint8Array(x * C * 4),
@@ -43,22 +43,22 @@ function n(e) {
     for (let e = 0, t = 0; e < C; e++)
       for (let r = 0; r < x; r++, t += 4) {
         let n = f,
-          o = p,
+          l = p,
           s = b,
           c = m;
-        for (let e = 0, t = u(O, v ? 5 : 3); e < t; e++) M[e] = a(l / x * (r + .5) * e);
-        for (let t = 0, r = u(h, v ? 5 : 3); t < r; t++) R[t] = a(l / C * (e + .5) * t);
+        for (let e = 0, t = u(O, v ? 5 : 3); e < t; e++) M[e] = a(o / x * (r + .5) * e);
+        for (let t = 0, r = u(h, v ? 5 : 3); t < r; t++) R[t] = a(o / C * (e + .5) * t);
         for (let e = 0, t = 0; e < h; e++)
-          for (let r = +!e, o = 2 * R[e]; r * h < O * (h - e); r++, t++) n += S[t] * M[r] * o;
+          for (let r = +!e, l = 2 * R[e]; r * h < O * (h - e); r++, t++) n += S[t] * M[r] * l;
         for (let e = 0, t = 0; e < 3; e++)
           for (let r = +!e, n = 2 * R[e]; r < 3 - e; r++, t++) {
             let e = M[r] * n;
-            o += D[t] * e, s += I[t] * e
+            l += D[t] * e, s += I[t] * e
           }
         if (v)
           for (let e = 0, t = 0; e < 5; e++)
             for (let r = +!e, n = 2 * R[e]; r < 5 - e; r++, t++) c += E[t] * M[r] * n;
-        let d = n - 2 / 3 * o,
+        let d = n - 2 / 3 * l,
           g = (3 * n - d + s) / 2,
           y = g - s;
         Z[t] = u(0, 255 * i(1, g)), Z[t + 1] = u(0, 255 * i(1, y)), Z[t + 2] = u(0, 255 * i(1, d)), Z[t + 3] = u(0, 255 * i(1, c))
@@ -71,25 +71,25 @@ function n(e) {
   }(e);
   return function(e, t, r) {
     let n = 4 * e + 1,
-      o = 6 + t * (5 + n),
-      l = [137, 80, 78, 71, 13, 10, 26, 10, 0, 0, 0, 13, 73, 72, 68, 82, 0, 0, e >> 8, 255 & e, 0, 0, t >> 8, 255 & t, 8, 6, 0, 0, 0, 0, 0, 0, 0, o >>> 24, o >> 16 & 255, o >> 8 & 255, 255 & o, 73, 68, 65, 84, 120, 1],
+      l = 6 + t * (5 + n),
+      o = [137, 80, 78, 71, 13, 10, 26, 10, 0, 0, 0, 13, 73, 72, 68, 82, 0, 0, e >> 8, 255 & e, 0, 0, t >> 8, 255 & t, 8, 6, 0, 0, 0, 0, 0, 0, 0, l >>> 24, l >> 16 & 255, l >> 8 & 255, 255 & l, 73, 68, 65, 84, 120, 1],
       i = [0, 0x1db71064, 0x3b6e20c8, 0x26d930ac, 0x76dc4190, 0x6b6b51f4, 0x4db26158, 0x5005713c, -0x12477ce0, -0xff06cbc, -0x29295c18, -0x349e4c74, -0x649b3d50, -0x792c2d2c, -0x5ff51d88, -0x42420de4],
       u = 1,
       a = 0;
-    for (let e = 0, o = 0, i = n - 1; e < t; e++, i += n - 1)
-      for (l.push(e + 1 < t ? 0 : 1, 255 & n, n >> 8, 255 & ~n, n >> 8 ^ 255, 0), a = (a + u) % 65521; o < i; o++) {
-        let e = 255 & r[o];
-        l.push(e), a = (a + (u = (u + e) % 65521)) % 65521
+    for (let e = 0, l = 0, i = n - 1; e < t; e++, i += n - 1)
+      for (o.push(e + 1 < t ? 0 : 1, 255 & n, n >> 8, 255 & ~n, n >> 8 ^ 255, 0), a = (a + u) % 65521; l < i; l++) {
+        let e = 255 & r[l];
+        o.push(e), a = (a + (u = (u + e) % 65521)) % 65521
       }
-    for (let [e, t] of(l.push(a >> 8, 255 & a, u >> 8, 255 & u, 0, 0, 0, 0, 0, 0, 0, 0, 73, 69, 78, 68, 174, 66, 96, 130), [
+    for (let [e, t] of(o.push(a >> 8, 255 & a, u >> 8, 255 & u, 0, 0, 0, 0, 0, 0, 0, 0, 73, 69, 78, 68, 174, 66, 96, 130), [
         [12, 29],
-        [37, 41 + o]
+        [37, 41 + l]
       ])) {
       let r = -1;
-      for (let n = e; n < t; n++) r ^= l[n], r = (r = r >>> 4 ^ i[15 & r]) >>> 4 ^ i[15 & r];
-      r = ~r, l[t++] = r >>> 24, l[t++] = r >> 16 & 255, l[t++] = r >> 8 & 255, l[t++] = 255 & r
+      for (let n = e; n < t; n++) r ^= o[n], r = (r = r >>> 4 ^ i[15 & r]) >>> 4 ^ i[15 & r];
+      r = ~r, o[t++] = r >>> 24, o[t++] = r >> 16 & 255, o[t++] = r >> 8 & 255, o[t++] = 255 & r
     }
-    return "data:image/png;base64," + btoa(String.fromCharCode(...l))
+    return "data:image/png;base64," + btoa(String.fromCharCode(...o))
   }(t.w, t.h, t.rgba)
 }
 r.d(t, {

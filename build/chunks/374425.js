@@ -19,7 +19,7 @@ var r = n(255367),
   _ = n(474936),
   b = n(282940);
 
-function y(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function y(e) {
   return e
 }
 
-function E(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -84,7 +84,7 @@ let x = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
         onRequestClose: () => {
           m(!0)
         },
-        renderPopout: e => (0, r.jsx)(h.Z, E(y({}, e), {
+        renderPopout: e => (0, r.jsx)(h.Z, y(E({}, e), {
           renderableSticker: t,
           channel: n,
           refreshPositionKey: () => _(String(Date.now()))
@@ -94,14 +94,14 @@ let x = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
           let {
             onClick: n
           } = e;
-          return (0, r.jsx)(a.ua7, E(y({}, u.b_), {
+          return (0, r.jsx)(a.ua7, y(E({}, u.b_), {
             shouldShow: d,
             text: (0, u.Y)(C),
             "aria-label": !1,
             onTooltipShow: () => {
               v(O)
             },
-            children: e => (0, r.jsx)(a.P3F, E(y({}, e), {
+            children: e => (0, r.jsx)(a.P3F, y(E({}, e), {
               innerRef: s,
               className: b.clickableSticker,
               onClick: e => {

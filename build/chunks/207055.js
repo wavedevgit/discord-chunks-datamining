@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(597998),
   b = n(199902),
   _ = n(314897),
-  y = n(271383),
-  x = n(131951),
+  x = n(271383),
+  y = n(131951),
   C = n(496675),
   v = n(158776),
   j = n(885110),
@@ -41,10 +41,10 @@ let w = i.memo(e => {
     channel: g,
     sessionId: C,
     nick: A
-  } = e, w = s.id, R = (0, a.e7)([_.default], () => _.default.getId() === w, [w]), [k, M, L] = (0, a.Wu)([x.Z], () => R ? [!x.Z.isSupported() || x.Z.isSelfMute() || x.Z.isSelfMutedTemporarily(), x.Z.isSelfDeaf(), !1] : [!x.Z.isSupported() || x.Z.isLocalMute(w), !1, x.Z.isLocalVideoDisabled(w)], [R, w]), D = (0, a.e7)([E.Z], () => E.Z.isPrioritySpeaker(w)), U = (0, c.Z)({
+  } = e, w = s.id, R = (0, a.e7)([_.default], () => _.default.getId() === w, [w]), [k, M, L] = (0, a.Wu)([y.Z], () => R ? [!y.Z.isSupported() || y.Z.isSelfMute() || y.Z.isSelfMutedTemporarily(), y.Z.isSelfDeaf(), !1] : [!y.Z.isSupported() || y.Z.isLocalMute(w), !1, y.Z.isLocalVideoDisabled(w)], [R, w]), D = (0, a.e7)([E.Z], () => E.Z.isPrioritySpeaker(w)), U = (0, c.Z)({
     userId: w,
     checkSoundSharing: !0
-  }), B = (0, a.e7)([y.ZP], () => y.ZP.isGuestOrLurker(g.guild_id, w)), G = (0, a.e7)([h.Z], () => h.Z.getGuildRingingUsers(g.id).has(w)), F = (0, a.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(g.id).find(e => {
+  }), B = (0, a.e7)([x.ZP], () => x.ZP.isGuestOrLurker(g.guild_id, w)), G = (0, a.e7)([h.Z], () => h.Z.getGuildRingingUsers(g.id).has(w)), F = (0, a.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(g.id).find(e => {
     let {
       userIds: t
     } = e;
@@ -117,8 +117,8 @@ let R = [],
       collapsedMax: d = 6,
       tabIndex: f,
       location: b,
-      numAudience: y,
-      withGuildIcon: x = !1,
+      numAudience: x,
+      withGuildIcon: y = !1,
       className: j,
       children: O
     } = e, [E, I] = i.useState(null), [S, P] = i.useState(!1), T = i.useRef(null), k = (0, m.Es)(l.id, null != c ? c : R), M = i.useRef(new s.sW(50, () => {
@@ -174,9 +174,9 @@ let R = [],
             location: b
           }, "voice-user-".concat(o.id, "-").concat(c))
         });
-      return null != y && y > 0 ? i.push((0, r.jsx)(Z.ul, {
+      return null != x && x > 0 ? i.push((0, r.jsx)(Z.ul, {
         collapsed: u,
-        numAudience: y
+        numAudience: x
       })) : u && k.length > d + 1 && i.push((0, r.jsx)(Z.XX, {
         numUsers: k.length - d
       })), i
@@ -184,7 +184,7 @@ let R = [],
     return null == G && null == O ? null : (0, r.jsxs)(g.eJ, {
       className: o()(j, A.list, {
         [A.collapsed]: u,
-        [A.withGuildIcon]: x
+        [A.withGuildIcon]: y
       }),
       collapsed: u,
       children: [G, O]

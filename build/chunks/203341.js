@@ -19,8 +19,8 @@ var r = n(255367),
   g = n(43982),
   b = n(721351),
   _ = n(420529),
-  y = n(927923),
-  x = n(981631),
+  x = n(927923),
+  y = n(981631),
   C = n(921944),
   v = n(388032);
 
@@ -72,7 +72,7 @@ function E(e) {
     P = (0, a.s9z)(a.JQI),
     Z = (0, m.Z)().filter(e => e.twoWayLink),
     [N, T] = i.useState(!1),
-    A = x.WtW.VOICE !== I && [x.AEg.NO_CHAT, x.AEg.FULL_SCREEN].includes(S) ? "top" : "bottom",
+    A = y.WtW.VOICE !== I && [y.AEg.NO_CHAT, y.AEg.FULL_SCREEN].includes(S) ? "top" : "bottom",
     w = [];
   return Z.length > 0 && w.push(o.z.DONUT_DESKTOP_NUX), (0, r.jsx)(c.ZP, {
     contentTypes: w,
@@ -128,7 +128,7 @@ function E(e) {
             return e
           }({}, e, n), i = i = {
             onClick: () => T(!0),
-            label: null != O ? O === y.YE.XBOX ? v.intl.string(v.t.T0uYKy) : v.intl.string(v.t.FWAzS0) : v.intl.string(v.t["mbi/fH"]),
+            label: null != O ? O === x.YE.XBOX ? v.intl.string(v.t.T0uYKy) : v.intl.string(v.t.FWAzS0) : v.intl.string(v.t["mbi/fH"]),
             iconComponent: (0, b.Z)(O)
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);

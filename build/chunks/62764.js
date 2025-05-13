@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(443877),
   b = n(60174),
   _ = n(216337),
-  y = n(920888),
-  x = n(287151),
+  x = n(920888),
+  y = n(287151),
   C = n(569471),
   v = n(346479),
   j = n(592125),
@@ -137,7 +137,7 @@ function k(e) {
         }),
         children: [!ei && !q && null != $ && (0, r.jsx)("div", {
           className: A.reactions,
-          children: (0, r.jsx)(x.le, {
+          children: (0, r.jsx)(y.le, {
             message: z,
             readOnly: !1,
             useChatFontScaling: !1,
@@ -153,7 +153,7 @@ function k(e) {
             me_burst: !1,
             emojiSize: "reaction"
           })
-        }), (0, r.jsx)(y.Z, {
+        }), (0, r.jsx)(x.Z, {
           message: z,
           channel: V,
           disableReactionCreates: !0,

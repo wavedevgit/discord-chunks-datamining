@@ -40,8 +40,8 @@ var i = n(255367),
   w = n(379839),
   k = n(359135),
   L = n(516817),
-  M = n(273388),
-  B = n(878857),
+  B = n(273388),
+  M = n(878857),
   U = n(518950),
   V = n(199902),
   G = n(158776),
@@ -240,13 +240,13 @@ function ec(e) {
     user: u,
     size: g.EFr.SIZE_32,
     animateOnHover: !(a || Y || q)
-  }), ep = t.isMultiUserDM(), eh = t.isSystemDM(), ef = (0, B.Q)(), eb = !ep && !eh && t.type === X.d4z.DM, e_ = eb && (null == u ? void 0 : u.primaryGuild) != null, ex = (0, m.e7)([W.ZP], () => W.ZP.isChannelMuted(t.getGuildId(), t.id)), {
+  }), ep = t.isMultiUserDM(), eh = t.isSystemDM(), ef = (0, M.Q)(), eb = !ep && !eh && t.type === X.d4z.DM, e_ = eb && (null == u ? void 0 : u.primaryGuild) != null, ex = (0, m.e7)([W.ZP], () => W.ZP.isChannelMuted(t.getGuildId(), t.id)), {
     ignored: eE,
     blocked: eC
   } = (0, m.cj)([H.Z], () => ({
     ignored: H.Z.isIgnored(t.getRecipientId()),
     blocked: H.Z.isBlocked(t.getRecipientId())
-  })), ej = eb && eE, eO = eb && eC, eS = (ex || ej || eO) && !(a || Y), ev = (0, m.e7)([F.ZP], () => F.ZP.getMentionCount(t.id) > 0), eT = (0, T.ZP)(t), eI = (0, m.e7)([A.Z], () => A.Z.isFavorite(t.id)), eN = (0, M.L)("PrivateChannel"), ey = null != V && (a || Y), eA = () => {
+  })), ej = eb && eE, eO = eb && eC, eS = (ex || ej || eO) && !(a || Y), ev = (0, m.e7)([F.ZP], () => F.ZP.getMentionCount(t.id) > 0), eT = (0, T.ZP)(t), eI = (0, m.e7)([A.Z], () => A.Z.isFavorite(t.id)), eN = (0, B.L)("PrivateChannel"), ey = null != V && (a || Y), eA = () => {
     K(!0)
   }, eP = () => {
     K(!1)
@@ -266,7 +266,7 @@ function ec(e) {
       var t;
       null == (t = ec.current) || t.click()
     }
-  }, eM = e => {
+  }, eB = e => {
     t.isMultiUserDM() ? (0, h.jW)(e, async () => {
       let {
         default: e
@@ -287,7 +287,7 @@ function ec(e) {
         channelSelected: a
       }))
     })
-  }, eB = e => {
+  }, eM = e => {
     e.preventDefault(), e.stopPropagation();
     let r = Q.intl.formatToPlainString(Q.t.hJ5Ap6, {
         name: eT
@@ -389,7 +389,7 @@ function ec(e) {
         onMouseDown: ew,
         onFocus: eR,
         onBlur: eD,
-        onContextMenu: eM,
+        onContextMenu: eB,
         "aria-setsize": z,
         "aria-posinset": G,
         children: [eN && ev ? (0, i.jsx)("div", {
@@ -440,7 +440,7 @@ function ec(e) {
             })
           })), eI ? (0, i.jsx)(es, {}) : null, ej ? (0, i.jsx)(el, {}) : null, eO ? (0, i.jsx)(ea, {}) : null, (0, i.jsx)(er, {
             "aria-label": ep ? Q.intl.string(Q.t["26C4oq"]) : Q.intl.string(Q.t.jsvgc3),
-            onClick: ep ? eB : eZ,
+            onClick: ep ? eM : eZ,
             onMouseDown: ek,
             nameplate: V
           })]

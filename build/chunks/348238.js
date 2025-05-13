@@ -33,8 +33,8 @@ var r = n(255367),
   g = n(375954),
   _ = n(594174),
   b = n(585483),
-  y = n(5967),
-  E = n(630388),
+  E = n(5967),
+  y = n(630388),
   x = n(358085),
   v = n(51144),
   O = n(91047),
@@ -110,7 +110,7 @@ function L(e, t, a, o) {
   } = t, {
     id: u,
     flags: d
-  } = e, p = (0, E.yE)(d, S.iLy.EPHEMERAL), m = (0, s.bp)();
+  } = e, p = (0, y.yE)(d, S.iLy.EPHEMERAL), m = (0, s.bp)();
   return i.useCallback((e, t) => {
     if (p) return;
     if (!x.isPlatformEmbedded) {
@@ -241,17 +241,17 @@ function G(e) {
         h: l
       }, !1, u.LL.UserTriggered)
     }
-  }, [t, n])), [y, E] = i.useState(a);
-  g.current = y || g.current;
+  }, [t, n])), [E, y] = i.useState(a);
+  g.current = E || g.current;
   let x = i.useCallback(e => {
-      s && (0, m.T6)(), y || (b.S.dispatchKeyed(S.LPv.ANIMATE_CHAT_AVATAR, h, !0), _(e), E(!0))
-    }, [y, h, s, _]),
+      s && (0, m.T6)(), E || (b.S.dispatchKeyed(S.LPv.ANIMATE_CHAT_AVATAR, h, !0), _(e), y(!0))
+    }, [E, h, s, _]),
     v = i.useCallback(() => {
-      b.S.dispatchKeyed(S.LPv.ANIMATE_CHAT_AVATAR, h, !1), E(!1)
+      b.S.dispatchKeyed(S.LPv.ANIMATE_CHAT_AVATAR, h, !1), y(!1)
     }, [h]);
   return {
     hasHovered: g.current,
-    isHovered: y,
+    isHovered: E,
     handleMouseEnter: x,
     handleMouseLeave: v
   }
@@ -262,12 +262,12 @@ function H(e, t) {
   return {
     handleFocus: i.useCallback(t => {
       var n, i;
-      let l = null != (i = null == (n = (0, y.uB)(t)) ? void 0 : n.activeElement) ? i : null;
+      let l = null != (i = null == (n = (0, E.uB)(t)) ? void 0 : n.activeElement) ? i : null;
       (t.target === t.currentTarget || t.currentTarget.contains(l)) && (a(!0), r(!0)), null != e && e(t)
     }, [e]),
     handleBlur: i.useCallback(e => {
       var n, i;
-      let l = null != (i = null == (n = (0, y.uB)(e)) ? void 0 : n.activeElement) ? i : null;
+      let l = null != (i = null == (n = (0, E.uB)(e)) ? void 0 : n.activeElement) ? i : null;
       e.target !== e.currentTarget && e.currentTarget.contains(l) || r(!1), null != t && t(e)
     }, [t]),
     isFocused: n,

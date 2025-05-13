@@ -21,8 +21,8 @@ function d(e) {
       selectedSummary: b
     } = e,
     _ = [],
-    y = !1,
-    x = null != f ? o.default.extractTimestamp(f) : null,
+    x = !1,
+    y = null != f ? o.default.extractTimestamp(f) : null,
     C = null;
   return h.forEach(e => {
     var i, v, j;
@@ -53,7 +53,7 @@ function d(e) {
     let S = _[_.length - 1],
       P = null,
       Z = (0, s.DQ)(e);
-    y = y || Z;
+    x = x || Z;
     let N = function(e, t, n) {
       if (r.V.NON_COLLAPSIBLE.has(t.type));
       else if (t.blocked) return u.ys_.MESSAGE_GROUP_BLOCKED;
@@ -65,16 +65,16 @@ function d(e) {
       type: N,
       content: [],
       key: e.id
-    }, _.push(O)) : E = (O = v).content[O.content.length - 1], [O, E])), f === e.id && null != x) ? (null != S && S.type === u.ys_.DIVIDER ? S.unreadId = e.id : null !== P ? (j = P, e.isFirstMessageInForumPost(p) || j.content.push({
+    }, _.push(O)) : E = (O = v).content[O.content.length - 1], [O, E])), f === e.id && null != y) ? (null != S && S.type === u.ys_.DIVIDER ? S.unreadId = e.id : null !== P ? (j = P, e.isFirstMessageInForumPost(p) || j.content.push({
       type: u.ys_.DIVIDER,
       unreadId: e.id
     }), j.hasUnread = !0) : e.isFirstMessageInForumPost(p) || _.push({
       type: u.ys_.DIVIDER,
       unreadId: e.id
-    }), x = null) : null != x && o.default.extractTimestamp(e.id) > x && (e.isFirstMessageInForumPost(p) || _.push({
+    }), y = null) : null != y && o.default.extractTimestamp(e.id) > y && (e.isFirstMessageInForumPost(p) || _.push({
       type: u.ys_.DIVIDER,
       unreadId: e.id
-    }), x = null);
+    }), y = null);
     let T = (0, c.f)(e, p);
     null != T && _.push({
       type: u.ys_.MESSAGE,
@@ -106,7 +106,7 @@ function d(e) {
       contentKey: b.endId,
       isSummaryDivider: !0
     })
-  }), y && (0, s.P1)(p) && i.Z.trackExposure({
+  }), x && (0, s.P1)(p) && i.Z.trackExposure({
     location: "416cc9_1"
   }), _
 }

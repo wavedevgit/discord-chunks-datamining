@@ -42,7 +42,7 @@ let w = e => {
     } = e, {
       headingText: o,
       headingTop: c
-    } = B(), d = g.default.getCurrentUser(), m = (0, l.e7)([p.ZP], () => p.ZP.getPremiumTypeSubscription()), h = (0, j.N)(), f = (0, C.Ng)(), b = (0, C.Wp)(f, y.Si.TIER_2) ? y.Si.TIER_2 : void 0, _ = null != m && m.status !== A.O0b.ACCOUNT_HOLD && m.hasAnyPremiumNitro, E = (0, u.Z)(), O = (0, x.C)("nitro-home", d) && E.isFractionalPremiumActive && !_;
+    } = M(), d = g.default.getCurrentUser(), m = (0, l.e7)([p.ZP], () => p.ZP.getPremiumTypeSubscription()), h = (0, j.N)(), f = (0, C.Ng)(), b = (0, C.Wp)(f, y.Si.TIER_2) ? y.Si.TIER_2 : void 0, _ = null != m && m.status !== A.O0b.ACCOUNT_HOLD && m.hasAnyPremiumNitro, E = (0, u.Z)(), O = (0, x.C)("nitro-home", d) && E.isFractionalPremiumActive && !_;
     return (0, i.jsxs)("div", {
       className: s()(R.container, r),
       "data-testid": "subscriber-nitro-home-hero-header",
@@ -87,7 +87,7 @@ let w = e => {
     }), r = n === E.p.VARIANT_2, {
       headingText: s,
       headingTop: l
-    } = B();
+    } = M();
     return (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)("img", {
         src: Z,
@@ -120,7 +120,7 @@ let w = e => {
   L = () => {
     let {
       headingText: e
-    } = B();
+    } = M();
     return (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)("img", {
         src: Z,
@@ -150,7 +150,7 @@ let w = e => {
       })]
     })
   },
-  [M, B] = (0, h.Z)(),
+  [B, M] = (0, h.Z)(),
   U = e => {
     let {
       className: t,
@@ -239,7 +239,7 @@ let w = e => {
     }
     return (0, i.jsx)(c.Gt, {
       value: r,
-      children: (0, i.jsx)(M.Provider, {
+      children: (0, i.jsx)(B.Provider, {
         value: {
           headingText: E,
           headingTop: T

@@ -123,7 +123,7 @@ function N(e) {
         s.Z.unsubscribe("PRESENCE_UPDATES", o), s.Z.unsubscribe("VOICE_STATE_UPDATES", c), null != l.current && (window.clearTimeout(l.current), l.current = null)
       }
     }, [n]), e
-  }(), P = (0, o.Yzy)(T, {
+  }(), P = i.useRef(null), j = (0, o.Yzy)(T, {
     keys: e => {
       var t, n, r;
       return null != e ? null != e.voiceChannel ? "".concat(e.user.id, "-voice-").concat(e.voiceChannel.id) : "".concat(e.user.id, "-").concat(null == (t = e.activity) ? void 0 : t.state, ":").concat(null == (n = e.activity) ? void 0 : n.details, ":").concat(null == (r = e.activity) ? void 0 : r.name) : "none"
@@ -148,13 +148,15 @@ function N(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: v.container,
-      children: P((e, t) => null == t ? null : (0, r.jsx)(h.Z, {
+      children: j((e, t) => null == t ? null : (0, r.jsx)(h.Z, {
+        targetElementRef: P,
         position: "bottom",
         align: "left",
         userId: t.user.id,
         children: n => {
           var i;
           return (0, r.jsxs)(l.animated.div, S(C({
+            ref: P,
             className: v.activityWrapper,
             style: e
           }, n), {
@@ -176,7 +178,8 @@ function N(e) {
     }), (0, r.jsx)(E.Or, {
       popoutPosition: "bottom",
       popoutAlign: "left",
-      children: (e, i, l) => (0, r.jsx)(p.JO, S(C({}, l), {
+      children: (e, i, l, a) => (0, r.jsx)(p.JO, S(C({}, l), {
+        ref: a,
         className: t,
         onClick: e,
         icon: o.iFz,

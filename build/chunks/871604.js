@@ -71,47 +71,49 @@ function P(e) {
     user: t,
     closePopout: n
   } = e, T = N(e, ["user", "closePopout"]);
-  let C = (0, o.e7)([y.Z], () => {
+  let C = i.useRef(null),
+    P = (0, o.e7)([y.Z], () => {
       var e;
       return null == (e = y.Z.getUserProfile(t.id)) ? void 0 : e.application
     }),
-    P = (0, o.e7)([h.Z], () => h.Z.getChannelId()),
-    R = (0, o.e7)([p.Z], () => p.Z.getChannel(P)),
-    w = (0, o.e7)([p.Z], () => {
+    R = (0, o.e7)([h.Z], () => h.Z.getChannelId()),
+    w = (0, o.e7)([p.Z], () => p.Z.getChannel(R)),
+    D = (0, o.e7)([p.Z], () => {
       var e;
-      return null == (e = p.Z.getChannel(P)) ? void 0 : e.guild_id
+      return null == (e = p.Z.getChannel(R)) ? void 0 : e.guild_id
     }),
-    D = i.useMemo(() => null != R ? {
-      channel: R,
+    L = i.useMemo(() => null != w ? {
+      channel: w,
       type: "channel"
     } : {
       type: "contextless"
-    }, [R]),
-    L = (0, s.Z)({
-      context: D
+    }, [w]),
+    x = (0, s.Z)({
+      context: L
     }),
-    x = t.id,
-    k = i.useCallback(() => {
-      if (null != C)
-        if (L) {
+    k = t.id,
+    M = i.useCallback(() => {
+      if (null != P)
+        if (x) {
           let e = h.Z.getCurrentlySelectedChannelId(),
             t = p.Z.getChannel(e),
             r = null != _.ZP.getSidebarState(e) || (null == t ? void 0 : t.isGuildVocal()) ? f.Ie.SIDEBAR : f.Ie.NORMAL;
           l.__(c._b.TEXT, r, {
-            applicationId: C.id
-          }), (0, a.Mr3)((0, O.z)(x, w)), null == n || n(), m.default.track(I.rMx.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, {
-            application_id: C.id
+            applicationId: P.id
+          }), (0, a.Mr3)((0, O.z)(k, D)), null == n || n(), m.default.track(I.rMx.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, {
+            application_id: P.id
           })
         } else(0, b.L)(A({
-          applicationId: C.id
-        }, C))
-    }, [L, C, x, w, n]),
-    M = L ? S.intl.string(S.t["Cia+Aw"]) : S.intl.string(S.t.NgXl3N);
-  if (null == C || !(0, d.Eb)(C)) return null;
+          applicationId: P.id
+        }, P))
+    }, [x, P, k, D, n]),
+    j = x ? S.intl.string(S.t["Cia+Aw"]) : S.intl.string(S.t.NgXl3N);
+  if (null == P || !(0, d.Eb)(P)) return null;
   let {
-    customInstallUrl: j
-  } = C, U = null == j || E.Z.isDiscordUrl(j) ? a.qJs : a.Gr1, G = L ? void 0 : U;
+    customInstallUrl: U
+  } = P, G = null == U || E.Z.isDiscordUrl(U) ? a.qJs : a.Gr1, B = x ? void 0 : G;
   return g.wS ? (0, r.jsx)(a.yRy, {
+    targetElementRef: C,
     renderPopout: e => {
       let {
         closePopout: t
@@ -125,7 +127,7 @@ function P(e) {
           children: (0, r.jsx)(a.sNh, {
             id: "copy",
             label: S.intl.string(S.t.XWDiho),
-            action: () => (0, g.JG)((0, u.J)(C))
+            action: () => (0, g.JG)((0, u.J)(P))
           })
         })
       })
@@ -135,17 +137,18 @@ function P(e) {
         onClick: t
       } = e, n = N(e, ["onClick"]);
       return (0, r.jsx)(v.tG, A({
+        ref: C,
         action: "PRESS_ADD_APP",
-        text: M,
-        icon: G,
+        text: j,
+        icon: B,
         onContextMenu: t,
-        onClick: k
+        onClick: M
       }, n, T))
     }
   }) : (0, r.jsx)(v.tG, A({
     action: "PRESS_ADD_APP",
-    text: M,
-    icon: G,
-    onClick: k
+    text: j,
+    icon: B,
+    onClick: M
   }, T))
 }

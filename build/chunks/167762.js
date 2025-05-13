@@ -15,8 +15,8 @@ var i, r = n(255367),
   f = n(239091),
   p = n(194359),
   g = n(434650),
-  O = n(549879),
-  E = n(724757),
+  E = n(549879),
+  O = n(724757),
   N = n(620662),
   m = n(420660),
   y = n(326255),
@@ -32,8 +32,8 @@ var i, r = n(255367),
   T = n(886118),
   Z = n(301801),
   w = n(814443),
-  A = n(518950),
-  R = n(670188),
+  R = n(518950),
+  A = n(670188),
   k = n(199902),
   U = n(158776),
   G = n(699516),
@@ -109,7 +109,7 @@ let X = l.memo(e => {
     user: t,
     activities: i = [],
     gameProfileEntry: s,
-    index: E,
+    index: O,
     closeParentPopout: b,
     isSuggestion: j,
     relationshipType: T,
@@ -121,12 +121,12 @@ let X = l.memo(e => {
     avatarDecorationSrc: F,
     avatarSrc: L,
     eventHandlers: M
-  } = (0, A.Z)({
+  } = (0, R.Z)({
     user: t,
     size: J,
     animateOnHover: !0,
     guildId: null
-  }), K = (0, a.JA)("".concat(E)), {
+  }), K = (0, a.JA)("".concat(O)), {
     onFocus: H
   } = K, X = Y(K, ["onFocus"]), [$, ee] = l.useState(!1), [et, en] = l.useState(!1), [ei, er] = l.useState({}), el = t.id, es = i.filter(e => e.type === q.IIU.PLAYING && (0, N.Z)(e, q.xjy.JOIN)), ea = (0, o.Wu)([x.Z], () => x.Z.getActivities().filter(e => e.type === q.IIU.PLAYING && (0, N.Z)(e, q.xjy.JOIN))), {
     voiceChannel: eo
@@ -151,9 +151,9 @@ let X = l.memo(e => {
       isMobile: r,
       newStatus: l
     }
-  }, [t.id, i]), eg = ea.length > 0, eO = l.useCallback(e => {
+  }, [t.id, i]), eg = ea.length > 0, eE = l.useCallback(e => {
     null == D || D(el, e, eg)
-  }, [D, el, eg]), eE = (0, g.O)(eO), eN = l.useCallback(() => {
+  }, [D, el, eg]), eO = (0, g.O)(eE), eN = l.useCallback(() => {
     ee(!0)
   }, []), em = l.useCallback(() => {
     ee(!1)
@@ -212,7 +212,7 @@ let X = l.memo(e => {
       }))
     })
   }, [t, Z, G]), eb = l.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), null == G || G("open_direct_message", t.id), (0, O.i)(Z, !0), d.Z.openPrivateChannel({
+    e.preventDefault(), e.stopPropagation(), null == G || G("open_direct_message", t.id), (0, E.i)(Z, !0), d.Z.openPrivateChannel({
       recipientIds: t.id
     }), null != b && b()
   }, [t.id, b, Z, G]), eI = l.useCallback(e => {
@@ -306,7 +306,8 @@ let X = l.memo(e => {
       }, e.application_id)
     })]
   });
-  return (0, r.jsx)(R.Z, {
+  return (0, r.jsx)(A.Z, {
+    targetElementRef: eO,
     user: t,
     position: "left",
     spacing: 16,
@@ -317,7 +318,7 @@ let X = l.memo(e => {
       } = n;
       return (0, r.jsxs)("div", {
         className: z.row,
-        ref: eE,
+        ref: eO,
         children: [(0, r.jsx)(I.Z, Q({
           innerClassName: z.rowInner,
           onContextMenu: ev,
@@ -387,9 +388,9 @@ let et = l.memo(function(e) {
     renderHeader: d,
     onAction: p,
     onFriendVisible: g,
-    autoFocus: O = !1,
+    autoFocus: E = !1,
     appContext: N = q.IlC.APP
-  } = e, [m, y] = l.useState([K.SUGGESTIONS, K.FRIEND_REQUESTS]), S = l.useRef(null), h = (0, E.Z)("friends-popout", S), v = function() {
+  } = e, [m, y] = l.useState([K.SUGGESTIONS, K.FRIEND_REQUESTS]), S = l.useRef(null), h = (0, O.Z)("friends-popout", S), v = function() {
     let e = (0, o.Wu)([G.Z, D.default, U.Z], () => {
         let e = G.Z.getRelationships(),
           t = [];
@@ -505,9 +506,9 @@ let et = l.memo(function(e) {
       }
     }, [e, t, n, i])
   }(), I = function(e) {
-    let [t, n] = l.useState(""), [i, r] = ee(t, e.friendRequests), [s, a] = ee(t, e.suggestions), [o, c] = ee(t, e.sameActivity), [u, d] = ee(t, e.activities), [f, p] = ee(t, e.online), [g, O] = ee(t, e.offline), E = l.useCallback(() => {
-      n(""), r(), a(), c(), d(), p(), O()
-    }, [r, a, c, d, p, O]);
+    let [t, n] = l.useState(""), [i, r] = ee(t, e.friendRequests), [s, a] = ee(t, e.suggestions), [o, c] = ee(t, e.sameActivity), [u, d] = ee(t, e.activities), [f, p] = ee(t, e.online), [g, E] = ee(t, e.offline), O = l.useCallback(() => {
+      n(""), r(), a(), c(), d(), p(), E()
+    }, [r, a, c, d, p, E]);
     return {
       friendRequests: i,
       suggestions: s,
@@ -518,7 +519,7 @@ let et = l.memo(function(e) {
       currentActivityName: e.currentActivityName,
       searchQuery: t,
       setSearchQuery: n,
-      clearSearch: E
+      clearSearch: O
     }
   }(v), {
     searchQuery: _,
@@ -526,18 +527,18 @@ let et = l.memo(function(e) {
     clearSearch: P
   } = I, T = Y(I, ["searchQuery", "setSearchQuery", "clearSearch"]), Z = l.useCallback(e => {
     y(t => t.includes(e) ? t.filter(t => t !== e) : [...t, e])
-  }, []), A = l.useCallback((0, s.debounce)(() => {
+  }, []), R = l.useCallback((0, s.debounce)(() => {
     null == p || p("search_friends")
   }, 1e3, {
     leading: !0,
     trailing: !1
-  }), [p]), R = l.useCallback(e => {
+  }), [p]), A = l.useCallback(e => {
     var t;
-    C(e), A(), null == (t = S.current) || t.scrollToTop()
-  }, [C, A]), k = l.useCallback(() => {
+    C(e), R(), null == (t = S.current) || t.scrollToTop()
+  }, [C, R]), k = l.useCallback(() => {
     var e;
-    P(), A(), null == (e = S.current) || e.scrollToTop()
-  }, [P, A]), L = l.useCallback(e => {
+    P(), R(), null == (e = S.current) || e.scrollToTop()
+  }, [P, R]), L = l.useCallback(e => {
     (0, f.jW)(e, async () => {
       let {
         default: e
@@ -652,11 +653,11 @@ let et = l.memo(function(e) {
       className: z.searchContainer,
       children: (0, r.jsx)(c.E1j, {
         query: _,
-        onChange: R,
+        onChange: A,
         onClear: k,
         placeholder: V.intl.string(V.t["5h0QOD"]),
         size: c.E1j.Sizes.MEDIUM,
-        autoFocus: O
+        autoFocus: E
       })
     }), en ? (0, r.jsx)("div", {
       className: z.emptyStateContainer,
@@ -705,34 +706,35 @@ function en(e) {
     children: i,
     popoutPosition: s,
     popoutAlign: a
-  } = e, [o, u] = l.useState(!1), d = l.useCallback(() => {
+  } = e, [o, u] = l.useState(!1), d = l.useRef(null), f = l.useCallback(() => {
     u(!1), null == n || n()
-  }, [n]), f = l.useCallback(() => {
+  }, [n]), p = l.useCallback(() => {
     u(e => {
       let i = !e;
       return i ? null == t || t() : null == n || n(), i
     })
-  }, [n, t]), p = l.useCallback(() => (0, r.jsx)(et, {
+  }, [n, t]), g = l.useCallback(() => (0, r.jsx)(et, {
     containerClassName: z.container,
     listClassName: z.list,
-    closePopout: d,
+    closePopout: f,
     autoFocus: !0
-  }), [d]);
+  }), [f]);
   return (0, r.jsx)(c.yRy, {
+    targetElementRef: d,
     animation: c.yRy.Animation.NONE,
     position: s,
     align: a,
     autoInvert: !1,
     shouldShow: o,
-    onRequestClose: d,
-    renderPopout: p,
+    onRequestClose: f,
+    renderPopout: g,
     ignoreModalClicks: !0,
     clickTrap: !0,
     children: (e, t) => {
       let {
         isShown: n
       } = t;
-      return i(f, n, e)
+      return i(p, n, e, d)
     }
   })
 }
