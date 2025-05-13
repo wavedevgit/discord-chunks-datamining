@@ -32,7 +32,7 @@ var r = n(255367),
   N = n(388032),
   k = n(844136);
 
-function w(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,7 +51,7 @@ function w(e) {
   return e
 }
 
-function I(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -137,7 +137,7 @@ function A(e) {
               onTooltipHide: () => {
                 z(!1)
               },
-              children: e => (0, r.jsx)(c.P3F, I(w({
+              children: e => (0, r.jsx)(c.P3F, w(I({
                 className: k.progressCont
               }, e), {
                 children: (0, r.jsx)(S.Z, {
@@ -228,7 +228,7 @@ function L(e) {
     questContent: g.jn.VIDEO_MODAL,
     minViewTimeSeconds: D.zw,
     trackGuildAndChannelMetadata: !0,
-    children: e => (0, r.jsx)(A, I(w({}, i), {
+    children: e => (0, r.jsx)(A, w(I({}, i), {
       parentModalOpenStartClockTime: o,
       impressionRef: e,
       quest: c,
