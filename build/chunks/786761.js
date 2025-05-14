@@ -239,10 +239,12 @@ function M(e, t) {
 function j(e) {
   return null == e.message_snapshots ? [] : e.message_snapshots.map(e => {
     let {
-      message: t
+      message: t,
+      moderator_report: n
     } = e;
     return new d.Hx({
-      message: P(t)
+      message: P(t),
+      moderator_report: n
     })
   })
 }

@@ -17,10 +17,10 @@ var r, i = n(255367),
   g = n(358085),
   _ = n(346329),
   b = n(981631),
-  E = n(388032),
-  y = n(637214);
+  x = n(388032),
+  E = n(637214);
 
-function x(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -36,7 +36,7 @@ function v(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -65,15 +65,15 @@ class j extends(r = l.PureComponent) {
       dispatchState: e
     } = this.props;
     return null != e && null != e.launchOptions && Object.keys(e.launchOptions).length > 1 ? (0, i.jsxs)(c.P3F, {
-      "aria-label": E.intl.string(E.t.KTPVLC),
-      className: y.dropdownArrowHitbox,
+      "aria-label": x.intl.string(x.t.KTPVLC),
+      className: E.dropdownArrowHitbox,
       onClick: this.handleDropdownClick,
       children: [(0, i.jsx)("div", {
-        className: y.arrowSeparator
+        className: E.arrowSeparator
       }), (0, i.jsx)(c.CJ0, {
         size: "md",
         color: "currentColor",
-        className: y.dropdownArrow
+        className: E.dropdownArrow
       })]
     }) : null
   }
@@ -86,19 +86,19 @@ class j extends(r = l.PureComponent) {
       tooltipPosition: o
     } = this.props;
     return (0, i.jsxs)("div", {
-      className: y.disabledButtonWrapper,
+      className: E.disabledButtonWrapper,
       children: [(0, i.jsx)(c.zxk, {
         className: n,
         fullWidth: r,
         size: l,
-        color: null != a ? a : y.disabledButtonColor,
+        color: null != a ? a : E.disabledButtonColor,
         disabled: !0,
         children: e
       }), (0, i.jsx)(c.ua7, {
         text: t,
         position: o,
         children: e => (0, i.jsx)("div", v({
-          className: y.disabledButtonOverlay
+          className: E.disabledButtonOverlay
         }, e))
       })]
     })
@@ -115,25 +115,25 @@ class j extends(r = l.PureComponent) {
       isShiny: u,
       hideNotLaunchable: d
     } = this.props;
-    if (!l) return d ? null : this.renderDisabledButton(E.intl.string(E.t["359PbW"]), g.isPlatformEmbedded ? E.intl.string(E.t.NASLa2) : E.intl.string(E.t.o1bhkJ));
-    if (s) return this.renderDisabledButton(E.intl.string(E.t["3elwAA"]));
+    if (!l) return d ? null : this.renderDisabledButton(x.intl.string(x.t["359PbW"]), g.isPlatformEmbedded ? x.intl.string(x.t.NASLa2) : x.intl.string(x.t.o1bhkJ));
+    if (s) return this.renderDisabledButton(x.intl.string(x.t["3elwAA"]));
     let p = u ? c.gtL : c.zxk;
     return (0, i.jsxs)(p, {
-      className: o()(y.playButton, e),
-      innerClassName: y.playButtonContents,
+      className: o()(E.playButton, e),
+      innerClassName: E.playButtonContents,
       fullWidth: t,
       size: n,
       color: null != r ? r : c.zxk.Colors.GREEN,
       submitting: a,
       onClick: this.handleClick,
       children: [(0, i.jsx)("div", {
-        className: y.buttonText,
-        children: E.intl.string(E.t["359PbW"])
+        className: E.buttonText,
+        children: x.intl.string(x.t["359PbW"])
       }), this.renderDropdown()]
     })
   }
   constructor(...e) {
-    super(...e), x(this, "handleDropdownClick", e => {
+    super(...e), y(this, "handleDropdownClick", e => {
       e.stopPropagation();
       let {
         libraryApplication: t,
@@ -152,7 +152,7 @@ class j extends(r = l.PureComponent) {
       }, {
         onClose: l
       })
-    }), x(this, "handleClick", () => {
+    }), y(this, "handleClick", () => {
       let {
         applicationId: e,
         libraryApplication: t,
@@ -183,7 +183,7 @@ function C(e) {
     dispatchState: c
   }))
 }
-x(j, "defaultProps", {
+y(j, "defaultProps", {
   fullWidth: !1,
   size: c.zxk.Sizes.LARGE,
   tooltipPosition: "top",

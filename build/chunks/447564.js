@@ -19,9 +19,9 @@ var r = n(255367),
   g = n(937615),
   _ = n(82950),
   b = n(981631),
-  E = n(388032),
-  y = n(668275),
-  x = n(99713);
+  x = n(388032),
+  E = n(668275),
+  y = n(99713);
 
 function v(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -77,15 +77,15 @@ function S(e) {
     fetchingPrice: g,
     error: _
   } = (0, m.R2)(f.FX), {
-    entitlement: E,
-    fetchedEntitlement: y,
-    error: x
-  } = (0, m.t6)(f.FX), v = _ || x, {
+    entitlement: x,
+    fetchedEntitlement: E,
+    error: y
+  } = (0, m.t6)(f.FX), v = _ || y, {
     analyticsLocations: O
-  } = (0, c.ZP)([s.Z.HD_STREAMING_POTION_MODAL]), j = null != E && !E.consumed;
+  } = (0, c.ZP)([s.Z.HD_STREAMING_POTION_MODAL]), j = null != x && !x.consumed;
   (0, i.useEffect)(() => () => {
     v && (0, p.SN)(f.FX)
-  }, [E, t, a, v]);
+  }, [x, t, a, v]);
   let C = (0, i.useCallback)(() => {
       (0, p.Zu)(t.id), (0, o.pTH)()
     }, [t.id]),
@@ -97,7 +97,7 @@ function S(e) {
         variantsReturnStyle: l.v.INDIVIDUAL_PRODUCTS
       })
     }, [O, C]),
-    N = (0, i.useMemo)(() => () => t.isHDStreamSplashed ? 4 : n ? (null == E ? void 0 : E.type) === b.qc2.DEVELOPER_GIFT ? 1 : 2 * !!j : 3, [t.isHDStreamSplashed, n, null == E ? void 0 : E.type, j]),
+    N = (0, i.useMemo)(() => () => t.isHDStreamSplashed ? 4 : n ? (null == x ? void 0 : x.type) === b.qc2.DEVELOPER_GIFT ? 1 : 2 * !!j : 3, [t.isHDStreamSplashed, n, null == x ? void 0 : x.type, j]),
     T = (0, i.useMemo)(() => N(), [N]);
   return (0, r.jsx)(I, {
     channel: t,
@@ -106,7 +106,7 @@ function S(e) {
     onActionClick: () => {
       u(!0), (j ? C : S)()
     },
-    loading: g || !y
+    loading: g || !E
   })
 }
 let I = e => {
@@ -119,7 +119,7 @@ let I = e => {
     } = e;
     return a ? (0, r.jsx)(Z, {}) : null == i ? (0, r.jsx)(w, {}) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        className: y.modal,
+        className: E.modal,
         children: [(0, r.jsx)(N, {}), (0, r.jsx)(T, {
           channel: t
         })]
@@ -131,9 +131,9 @@ let I = e => {
     })
   },
   N = () => (0, r.jsx)("img", {
-    className: y.image,
+    className: E.image,
     src: "https://cdn.discordapp.com/assets/premium/roadblocks/hd_streaming.png",
-    alt: E.intl.string(E.t.DdigcX)
+    alt: x.intl.string(x.t.DdigcX)
   }),
   T = e => {
     let {
@@ -141,34 +141,34 @@ let I = e => {
     } = e;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        className: y.body,
+        className: E.body,
         children: [(0, r.jsxs)("div", {
-          className: y.heading,
+          className: E.heading,
           children: [(0, r.jsx)(o.X6q, {
             variant: "heading-lg/bold",
-            children: E.intl.string(E.t.K04rOD)
+            children: x.intl.string(x.t.K04rOD)
           }), (0, r.jsx)(u.Z, {})]
         }), (0, r.jsx)(o.Text, {
           variant: "text-sm/normal",
-          children: E.intl.string(E.t.lq40Pz)
+          children: x.intl.string(x.t.lq40Pz)
         }), (0, r.jsx)(o.Text, {
           color: "text-link",
           variant: "text-sm/normal",
-          children: E.intl.format(E.t["1wV4qq"], {
+          children: x.intl.format(x.t["1wV4qq"], {
             helpCenterLink: h.Z.getArticleURL(b.BhN.HD_STREAMING_POTION)
           })
         }), (0, r.jsx)(o.Text, {
           color: "text-muted",
           variant: "text-xs/medium",
-          children: E.intl.string(E.t.qk07Mj)
+          children: x.intl.string(x.t.qk07Mj)
         })]
       }), (0, r.jsx)("div", {
-        className: y.divider
+        className: E.divider
       }), (0, r.jsxs)("div", {
-        className: y.applyingTo,
+        className: E.applyingTo,
         children: [(0, r.jsx)(o.Text, {
           variant: "eyebrow",
-          children: E.intl.string(E.t.tZyXg4)
+          children: x.intl.string(x.t.tZyXg4)
         }), (0, r.jsx)(_.Z, {
           channel: t
         })]
@@ -182,13 +182,13 @@ let I = e => {
       onActionClick: i
     } = e;
     return (0, r.jsxs)("div", {
-      className: y.footer,
+      className: E.footer,
       children: [(0, r.jsx)(o.zxk, {
         onClick: () => {
           (0, o.Mr3)(C)
         },
         color: o.zxk.Colors.PRIMARY,
-        children: E.intl.string(E.t.Avt5KS)
+        children: x.intl.string(x.t.Avt5KS)
       }), (0, r.jsx)(A, {
         buttonState: t,
         price: n,
@@ -201,16 +201,16 @@ let I = e => {
       buttonState: t,
       price: n,
       onActionClick: i
-    } = e, l = E.intl.formatToPlainString(E.t.S9LAdX, {
+    } = e, l = x.intl.formatToPlainString(x.t.S9LAdX, {
       price: (0, g.T4)(n.amount, n.currency)
     });
     if (3 === t || 4 === t) {
       let e = {
-        3: E.intl.string(E.t.Qrh2BQ),
-        4: E.intl.string(E.t.utRdl5)
+        3: x.intl.string(x.t.Qrh2BQ),
+        4: x.intl.string(x.t.utRdl5)
       } [t];
       return (0, r.jsx)(o.ua7, {
-        tooltipContentClassName: y.tooltip,
+        tooltipContentClassName: E.tooltip,
         text: e,
         children: e => {
           var t, n;
@@ -232,13 +232,13 @@ let I = e => {
     }
     let s = {
       0: l,
-      1: E.intl.string(E.t.sl6Tcn),
-      2: E.intl.string(E.t.XJ9INj)
+      1: x.intl.string(x.t.sl6Tcn),
+      2: x.intl.string(x.t.XJ9INj)
     } [t];
     return (0, r.jsx)(o.zxk, {
       onClick: i,
       children: (0, r.jsxs)("div", {
-        className: y.buttonCopy,
+        className: E.buttonCopy,
         children: [(0, r.jsx)(o.hh5, {
           color: a.Z.colors.WHITE,
           size: "sm"
@@ -247,23 +247,23 @@ let I = e => {
     })
   },
   w = () => (0, r.jsx)("div", {
-    className: y.anomaly,
+    className: E.anomaly,
     children: (0, r.jsxs)("div", {
-      className: y.error,
+      className: E.error,
       children: [(0, r.jsx)(o.Eep, {
-        src: x,
+        src: y,
         width: 178,
         height: 190
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
-        children: E.intl.string(E.t.sIA0OD)
+        children: x.intl.string(x.t.sIA0OD)
       })]
     })
   }),
   Z = () => (0, r.jsx)("div", {
-    className: y.anomaly,
+    className: E.anomaly,
     children: (0, r.jsx)("div", {
-      className: y.spinner,
+      className: E.spinner,
       children: (0, r.jsx)(o.$jN, {})
     })
   })

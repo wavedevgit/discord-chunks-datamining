@@ -18,9 +18,9 @@ var r = n(255367),
   g = n(451603),
   _ = n(885714),
   b = n(314897),
-  E = n(430824),
-  y = n(701190),
-  x = n(411198),
+  x = n(430824),
+  E = n(701190),
+  y = n(411198),
   v = n(610699),
   O = n(313876),
   j = n(778333),
@@ -42,9 +42,9 @@ function R(e) {
   } = e, {
     invite: k,
     inviteError: D
-  } = (0, l.cj)([y.Z], () => ({
-    invite: y.Z.getInvite(t),
-    inviteError: y.Z.getInviteError(t)
+  } = (0, l.cj)([E.Z], () => ({
+    invite: E.Z.getInvite(t),
+    inviteError: E.Z.getInviteError(t)
   }), [t]), L = null == k;
   i.useEffect(() => {
     L && a.ZP.resolveInvite(t)
@@ -57,7 +57,7 @@ function R(e) {
       analyticsLocations: U
     } = (0, u.ZP)(),
     F = (0, d.Oo)(),
-    B = (0, l.e7)([E.Z], () => (null == k ? void 0 : k.guild) != null ? E.Z.getGuild(k.guild.id) : null, [k]),
+    B = (0, l.e7)([x.Z], () => (null == k ? void 0 : k.guild) != null ? x.Z.getGuild(k.guild.id) : null, [k]),
     G = (0, l.e7)([b.default], () => b.default.getId()),
     H = (0, l.e7)([m.ZP], () => {
       var e;
@@ -68,7 +68,7 @@ function R(e) {
     },
     z = () => {
       if (null == B && (null == k ? void 0 : k.guild) != null) {
-        let e = x.Qs(k.guild);
+        let e = y.Qs(k.guild);
         if ((0, c.bN)() && (0, c.Yt)(e)) return void(0, s.mN)(Z.L0.NSFW_SERVER_INVITE_EMBED)
       }(0, g.yU)() ? (0, _.Z)({
         analyticsSource: {

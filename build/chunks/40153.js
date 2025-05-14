@@ -1,7 +1,7 @@
 /** Chunk was on 35948 **/
 n.d(t, {
   OG: () => S,
-  ZP: () => O,
+  ZP: () => v,
   Zu: () => C
 }), n(388685);
 var r = n(255367),
@@ -75,7 +75,7 @@ function y(e) {
   })
 }
 
-function v(e) {
+function O(e) {
   let {
     name: t,
     targetNode: n,
@@ -108,7 +108,7 @@ function v(e) {
     })
   })
 }
-let O = i.memo(function(e) {
+let v = i.memo(function(e) {
   let {
     name: t,
     targetNode: n,
@@ -123,7 +123,7 @@ let O = i.memo(function(e) {
       name: t,
       targetNode: n,
       below: l
-    }), s ? (0, r.jsx)(v, {
+    }), s ? (0, r.jsx)(O, {
       name: t,
       targetNode: n,
       onDragOverChanged: o

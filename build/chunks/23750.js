@@ -64,7 +64,8 @@ class m extends i.Z {
 }
 class g extends i.Z {
   constructor(e) {
-    super(), f(this, "message", void 0), this.message = new m(e.message)
+    var t;
+    super(), f(this, "message", void 0), f(this, "moderatorReport", void 0), this.message = new m(e.message), this.moderatorReport = null != (t = e.moderator_report) ? t : null
   }
 }
 class E extends m {

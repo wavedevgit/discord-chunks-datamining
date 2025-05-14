@@ -18,9 +18,9 @@ var r, i = n(255367),
   g = n(213609),
   _ = n(541716),
   b = n(28546),
-  E = n(963249),
-  y = n(703656),
-  x = n(594174),
+  x = n(963249),
+  E = n(703656),
+  y = n(594174),
   v = n(626135),
   O = n(51144),
   j = n(479446),
@@ -47,7 +47,7 @@ function k(e) {
     analyticsSection: L,
     glow: M,
     giftIntentSecondaryAction: U
-  } = e, F = (0, c.e7)([x.default], () => x.default.getCurrentUser()), {
+  } = e, F = (0, c.e7)([y.default], () => y.default.getCurrentUser()), {
     analyticsLocations: B
   } = (0, h.ZP)(), G = (0, c.e7)([S.Z], () => S.Z.getFriendAnniversaryYears(r.id));
   l.useEffect(() => {
@@ -125,7 +125,7 @@ function k(e) {
             e.stopPropagation(), v.default.track(T.rMx.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
               gift_intent_type: t,
               cta_type: U
-            }), U === N.X2.VIEW_ALL ? ((0, y.uL)(T.Z5c.FRIENDS), m.Z.setSection(T.pJs.ALL)) : U === N.X2.SEND_MESSAGE && ((0, C.PV)(r.id), p.Z.openPrivateChannel({
+            }), U === N.X2.VIEW_ALL ? ((0, E.uL)(T.Z5c.FRIENDS), m.Z.setSection(T.pJs.ALL)) : U === N.X2.SEND_MESSAGE && ((0, C.PV)(r.id), p.Z.openPrivateChannel({
               recipientIds: r.id
             }).then(() => {
               setTimeout(() => {
@@ -160,7 +160,7 @@ function k(e) {
           onClick: e => {
             e.stopPropagation();
             let i = (0, I.F)(t);
-            (0, E.Z)({
+            (0, x.Z)({
               isGift: !0,
               initialPlanId: null,
               giftRecipient: r,

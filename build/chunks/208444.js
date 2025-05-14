@@ -1,6 +1,6 @@
 /** Chunk was on 36087 **/
 n.d(t, {
-  z: () => E
+  z: () => x
 });
 var r = n(73800),
   i = n(442837),
@@ -19,16 +19,16 @@ var r = n(73800),
   _ = n(49898),
   b = n(388032);
 
-function E(e, t) {
+function x(e, t) {
   let {
     isDiscoverable: n,
-    customInstallUrl: E,
-    installParams: y,
-    integrationTypesConfig: x
+    customInstallUrl: x,
+    installParams: E,
+    integrationTypesConfig: y
   } = e, v = (0, f.Eb)({
-    customInstallUrl: E,
-    installParams: y,
-    integrationTypesConfig: x
+    customInstallUrl: x,
+    installParams: E,
+    integrationTypesConfig: y
   }), O = (0, i.e7)([p.Z], () => {
     var e;
     return null != (e = p.Z.getGuildId()) ? e : void 0
@@ -57,12 +57,12 @@ function E(e, t) {
     onClick() {
       null == t || t(h.j_.ADD_APP), (0, m.L)({
         applicationId: e.id,
-        customInstallUrl: E,
-        installParams: y,
-        integrationTypesConfig: x,
+        customInstallUrl: x,
+        installParams: E,
+        integrationTypesConfig: y,
         guildId: O,
         source: "app_message_embed"
       })
     }
-  } : void 0, [e.id, C, S, E, y, x, v, t, O])
+  } : void 0, [e.id, C, S, x, E, y, v, t, O])
 }

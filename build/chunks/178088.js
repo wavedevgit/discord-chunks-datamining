@@ -18,9 +18,9 @@ var r = n(255367),
   g = n(585483),
   _ = n(400445),
   b = n(153209),
-  E = n(903672),
-  y = n(711165),
-  x = n(946443),
+  x = n(903672),
+  E = n(711165),
+  y = n(946443),
   v = n(264233),
   O = n(981631),
   j = n(388032);
@@ -98,7 +98,7 @@ function C(e) {
             setTab: Z,
             badgeState: S,
             closePopout: D
-          }) : w === o.X.MENTIONS ? (0, r.jsx)(E.Z, {
+          }) : w === o.X.MENTIONS ? (0, r.jsx)(x.Z, {
             setTab: Z,
             onJump: G,
             badgeState: S,
@@ -111,16 +111,16 @@ function C(e) {
             setTab: Z,
             badgeState: S,
             closePopout: D
-          }) : w === o.X.SCHEDULED ? (0, r.jsx)(y._, {
+          }) : w === o.X.SCHEDULED ? (0, r.jsx)(E._, {
             setTab: Z,
             closePopout: D
           }) : (0, r.jsx)(l.SV, {
-            fallback: (0, r.jsx)(x.h, {
+            fallback: (0, r.jsx)(y.h, {
               setTab: Z,
               closePopout: D,
               badgeState: S
             }),
-            children: (0, r.jsx)(x.Z, {
+            children: (0, r.jsx)(y.Z, {
               setTab: Z,
               onJump: G,
               showTutorial: R,

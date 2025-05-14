@@ -1,6 +1,6 @@
 /** Chunk was on 36087 **/
 n.d(t, {
-  Z: () => x
+  Z: () => y
 }), n(997841), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -18,11 +18,11 @@ var r = n(255367),
   g = n(277707),
   _ = n(358595),
   b = n(981631),
-  E = n(388032),
-  y = n(273254);
+  x = n(388032),
+  E = n(273254);
 
-function x(e) {
-  var t, x, v;
+function y(e) {
+  var t, y, v;
   let O, j, C, {
       onTransitionToInviteChannel: S,
       onAcceptInstantInvite: I,
@@ -44,7 +44,7 @@ function x(e) {
     F = null != L && L.isGuildVocal(),
     B = null != L && L.isGuildStageVoice(),
     G = (0, f.yE)(null != (t = T.flags) ? t : 0, l.$.IS_GUEST_INVITE),
-    H = null != (x = null == N ? void 0 : N.hasFeature(b.oNc.HUB)) && x,
+    H = null != (y = null == N ? void 0 : N.hasFeature(b.oNc.HUB)) && y,
     V = null == N ? void 0 : N.id,
     {
       analyticsLocations: z
@@ -76,7 +76,7 @@ function x(e) {
     isStream: !1
   });
   return j = (0, r.jsxs)("span", {
-    className: y.infoTitle,
+    className: E.infoTitle,
     children: [(0, r.jsx)(u.Z, {
       guildId: N.id,
       name: N.name,
@@ -86,7 +86,7 @@ function x(e) {
         guild: N
       })
     }), (0, r.jsx)("span", {
-      className: y.infoBadge,
+      className: E.infoBadge,
       children: (0, r.jsx)(d.Z, {
         guild: N,
         isBannerVisible: !1,
@@ -94,21 +94,21 @@ function x(e) {
       })
     })]
   }), G && (C = (0, r.jsx)(a.DY3, {
-    className: y.tooltipContainer,
-    text: E.intl.string(E.t["/FeTKy"]),
+    className: E.tooltipContainer,
+    text: x.intl.string(x.t["/FeTKy"]),
     children: (0, r.jsx)(a.d3s, {
       size: "md",
       color: "currentColor",
-      className: y.infoIcon
+      className: E.infoIcon
     })
   })), F ? (j = (0, r.jsx)(p.Z.Channel, {
     channel: L
   }), O = (0, r.jsxs)("span", {
-    className: y.infoTitle,
-    children: [E.intl.format(E.t["2wimj4"], {
+    className: E.infoTitle,
+    children: [x.intl.format(x.t["2wimj4"], {
       guildName: N.name
     }), (0, r.jsx)("span", {
-      className: y.infoBadge,
+      className: E.infoBadge,
       children: (0, r.jsx)(d.Z, {
         guild: N,
         isBannerVisible: !1
@@ -128,7 +128,7 @@ function x(e) {
       extra: C
     }), (0, r.jsxs)(p.Z.Body, {
       children: [(0, r.jsxs)("div", {
-        className: y.headerLine,
+        className: E.headerLine,
         children: [(0, r.jsx)(p.Z.Icon, {
           guild: N
         }), (0, r.jsx)(p.Z.Info, {
@@ -140,15 +140,15 @@ function x(e) {
         onClick: q,
         submitting: D,
         color: p.Z.Button.Colors.GREEN,
-        children: F ? B ? E.intl.string(E.t["7vb2cX"]) : E.intl.string(E.t.gpqgam) : M ? E.intl.string(E.t.cEnaW1) : E.intl.string(E.t.XpeFYm)
+        children: F ? B ? x.intl.string(x.t["7vb2cX"]) : x.intl.string(x.t.gpqgam) : M ? x.intl.string(x.t.cEnaW1) : x.intl.string(x.t.XpeFYm)
       })]
     }), N.hasFeature(b.oNc.HUB) && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: y.separator
+        className: E.separator
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: E.intl.format(E.t["/o1IfH"], {
+        children: x.intl.format(x.t["/o1IfH"], {
           onClick: () => (0, a.ZDy)(async () => {
             let {
               default: e

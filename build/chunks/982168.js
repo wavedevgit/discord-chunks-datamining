@@ -2,7 +2,9 @@
 "use strict";
 n.d(t, {
   P0: () => _,
+  Q3: () => h,
   WF: () => p,
+  gT: () => f,
   iZ: () => d,
   sP: () => c
 }), n(149765);
@@ -50,5 +52,9 @@ function p(e) {
     firstMessage: n
   } = i.Z.getMessage(e);
   return !t || null == n || !(0, r.rA)(n)
+}
+
+function h(e, t) {
+  return !!e.isFirstMessageInForumPost(t) && !!e.isSystemDM() && f(t)
 }
 n(806246)

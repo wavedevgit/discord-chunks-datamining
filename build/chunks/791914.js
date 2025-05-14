@@ -24,10 +24,10 @@ function _(e) {
     setTab: n,
     children: _,
     badgeState: b,
-    closePopout: E
+    closePopout: x
   } = e, {
-    enabled: y,
-    inInbox: x
+    enabled: E,
+    inInbox: y
   } = d.Z.useExperiment({
     location: "RecentsPopout"
   }), v = (0, m.Us)({
@@ -53,7 +53,7 @@ function _(e) {
       }), (0, r.jsxs)("div", {
         className: g.controls,
         children: [_, (0, r.jsx)(f.Z, {
-          closePopout: E
+          closePopout: x
         })]
       })]
     }), (0, r.jsx)("div", {
@@ -89,7 +89,7 @@ function _(e) {
             color: s.Z.STATUS_DANGER,
             className: g.iconBadge
           }) : null]
-        }) : null, y && x ? (0, r.jsx)(a.njP.Item, {
+        }) : null, E && y ? (0, r.jsx)(a.njP.Item, {
           "aria-label": h.intl.string(h.t["2pAkDA"]),
           id: l.X.BOOKMARKS,
           className: g.tab,

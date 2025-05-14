@@ -21,13 +21,13 @@ function g(e) {
   let t, n, g, {
       author: _,
       banned: b,
-      channelId: E
+      channelId: x
     } = e,
-    y = (0, i.e7)([s.default], () => s.default.getId()),
-    x = p.ZP.useName(_),
-    v = y === _.id,
+    E = (0, i.e7)([s.default], () => s.default.getId()),
+    y = p.ZP.useName(_),
+    v = E === _.id,
     O = (0, i.e7)([c.Z, u.Z], () => {
-      let e = c.Z.getChannel(E);
+      let e = c.Z.getChannel(x);
       if (null == e) return !1;
       if (e.isPrivate()) return !0;
       if (e.isThread()) {
@@ -37,8 +37,8 @@ function g(e) {
       }
       return u.Z.can(m.Plq.SEND_MESSAGES, e)
     });
-  return v ? (t = f.intl.string(f.t["F/OLvL"]), g = f.intl.string(f.t.C89OLC)) : (g = f.intl.string(f.t["YVub5+"]), b ? t = f.intl.string(f.t["57nBt7"]) : null != x && O ? (t = f.intl.formatToPlainString(f.t["9Akp1t"], {
-    username: x
+  return v ? (t = f.intl.string(f.t["F/OLvL"]), g = f.intl.string(f.t.C89OLC)) : (g = f.intl.string(f.t["YVub5+"]), b ? t = f.intl.string(f.t["57nBt7"]) : null != y && O ? (t = f.intl.formatToPlainString(f.t["9Akp1t"], {
+    username: y
   }), n = (0, r.jsx)(a.Z.Button, {
     onClick: function() {
       let {
@@ -49,7 +49,7 @@ function g(e) {
       d.S.dispatchToLastSubscribed(m.CkL.INSERT_TEXT, {
         plainText: t,
         rawText: "<@".concat(e, ">")
-      }), null != E && l.Z.startTyping(E)
+      }), null != x && l.Z.startTyping(x)
     },
     children: f.intl.string(f.t.P8tvKC)
   })) : t = f.intl.string(f.t["SMJr+f"])), (0, r.jsxs)(a.Z, {

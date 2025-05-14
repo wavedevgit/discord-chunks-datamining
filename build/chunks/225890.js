@@ -21,9 +21,9 @@ var r = n(255367),
 function b(e) {
   let {
     code: t
-  } = e, [n, b, E] = t.split("-"), {
-    guildScheduledEvent: y,
-    guild: x,
+  } = e, [n, b, x] = t.split("-"), {
+    guildScheduledEvent: E,
+    guild: y,
     channel: v,
     isMember: O
   } = (0, l.cj)([f.ZP, d.Z, c.Z, u.ZP, p.default], () => {
@@ -39,17 +39,17 @@ function b(e) {
     }
   }, [n, b]);
   return i.useEffect(() => {
-    (null == y ? void 0 : y.id) == null && h.Z.fetchGuildEvent(n, b), m.Z.getGuildEventUserCounts(n, b, null != E ? [E] : []), m.Z.getGuildEventsForCurrentUser(n)
-  }, [b, n, null == y ? void 0 : y.id, E]), (0, r.jsx)(g.ZP, {
-    guild: x,
+    (null == E ? void 0 : E.id) == null && h.Z.fetchGuildEvent(n, b), m.Z.getGuildEventUserCounts(n, b, null != x ? [x] : []), m.Z.getGuildEventsForCurrentUser(n)
+  }, [b, n, null == E ? void 0 : E.id, x]), (0, r.jsx)(g.ZP, {
+    guild: y,
     channel: v,
-    guildScheduledEvent: y,
+    guildScheduledEvent: E,
     isMember: O,
     onAcceptInstantInvite: _.dG,
     onTransitionToInviteChannel: function() {
       if ((0, o.n)(n)) return void(0, a.hk)(n);
       (null == v ? void 0 : v.isGuildStageVoice()) ? (0, s.Cq)(v) : (null == v ? void 0 : v.isGuildVoice()) && h.Z.joinVoiceEvent(v.guild_id, v.id)
     },
-    recurrenceId: E
+    recurrenceId: x
   })
 }

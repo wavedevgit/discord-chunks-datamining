@@ -41,7 +41,7 @@ function y(e) {
   return e
 }
 
-function v(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,7 +53,7 @@ function v(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class O extends o.Z {
+class v extends o.Z {
   _initialize() {
     __OVERLAY__ ? l.Z.subscribe("PREMIUM_PAYMENT_MODAL_OPEN", this._handlePremiumPaymentModalOpen) : (l.Z.subscribe("PREMIUM_PAYMENT_MODAL_CLOSE", this._handlePremiumPaymentModalClose), l.Z.subscribe("MESSAGE_LENGTH_UPSELL", this.handleMessageLengthUpsell), l.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchPremiumOffer), l.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchCheckoutRecovery), l.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchUserAffinities), l.Z.subscribe("POST_CONNECTION_OPEN", this._trackCustomNotificationSoundsExposure))
   }
@@ -78,7 +78,7 @@ class O extends o.Z {
   openPremiumPaymentModalInApp(e) {
     if (__OVERLAY__) throw Error("Should not use this function from the overlay, use ModalAPI.openModal instead");
     return new Promise((t, n) => {
-      (0, a.Z)(v(y({}, e), {
+      (0, a.Z)(O(y({}, e), {
         onClose: e => {
           e ? t() : n()
         }
@@ -130,7 +130,7 @@ class O extends o.Z {
         location: "PremiumManager"
       })
     }), _(this, "_handlePremiumPaymentModalOpen", e => {
-      (0, a.Z)(v(y({}, e), {
+      (0, a.Z)(O(y({}, e), {
         analyticsLocations: [s.Z.OVERLAY],
         onClose: e => {
           l.Z.dispatch({
@@ -147,4 +147,4 @@ class O extends o.Z {
     })
   }
 }
-let C = new O
+let C = new v

@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(306680),
   _ = n(979651),
   y = n(938475),
-  v = n(714794),
-  O = n(876548),
+  O = n(714794),
+  v = n(876548),
   C = n(25601),
   S = n(207055),
   j = n(981631),
@@ -248,11 +248,11 @@ let R = i.memo(function(e) {
               children: t.name
             }), (0, r.jsxs)("div", {
               className: I.children,
-              children: [z > 0 && t.userLimit > 0 ? (0, r.jsx)(O.Z, {
+              children: [z > 0 && t.userLimit > 0 ? (0, r.jsx)(v.Z, {
                 userCount: z,
                 video: k,
                 channel: t
-              }) : null, (0, v.Z)(U) ? (0, r.jsx)(C.Z, {
+              }) : null, (0, O.Z)(U) ? (0, r.jsx)(C.Z, {
                 mentionsCount: U,
                 isMentionLowImportance: G
               }) : null]

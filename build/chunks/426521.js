@@ -18,9 +18,9 @@ var r = n(255367),
   g = n(594174),
   _ = n(626135),
   b = n(709054),
-  E = n(591759),
-  y = n(833592),
-  x = n(497089),
+  x = n(591759),
+  E = n(833592),
+  y = n(497089),
   v = n(178480),
   O = n(418316),
   j = n(382865),
@@ -109,7 +109,7 @@ let M = i.memo(function(e) {
     } = e, {
       analyticsLocations: c
     } = (0, s.ZP)(), p = (0, C.I)(l, o), f = i.useCallback(async () => {
-      if (p || (0, y.wt)(l), null != l.item_enum && l.item_enum === x.AM.FIND_FRIENDS) return void(0, a.ZDy)(async () => {
+      if (p || (0, E.wt)(l), null != l.item_enum && l.item_enum === y.AM.FIND_FRIENDS) return void(0, a.ZDy)(async () => {
         let {
           default: e
         } = await n.e("6074").then(n.bind(n, 443189));
@@ -135,12 +135,12 @@ let M = i.memo(function(e) {
         }, t))
       });
       if (null != l.deeplink) {
-        let t = E.Z.safeParseWithQuery(l.deeplink);
+        let t = x.Z.safeParseWithQuery(l.deeplink);
         if (null == t) return;
         let n = t.hostname,
           r = t.path;
         if (null == n || null == r) return;
-        if (E.Z.isDiscordHostname(n)) {
+        if (x.Z.isDiscordHostname(n)) {
           let t = r.match("^/users/(\\d+)");
           if (null != t && 2 === t.length) {
             var e;
@@ -152,16 +152,16 @@ let M = i.memo(function(e) {
           } else await (0, u.Z)(r)
         }
         _.default.track(T.rMx.NOTIFICATION_CENTER_ACTION, {
-          action_type: x.ud.CLICKED,
+          action_type: y.ud.CLICKED,
           notification_center_id: l.id,
           item_type: l.type,
           acked: p
         })
       }
     }, [l, p, c]), h = null;
-    l.type === x.O7.INCOMING_FRIEND_REQUESTS && null != l.other_user ? h = (0, r.jsx)(I.Z, {
+    l.type === y.O7.INCOMING_FRIEND_REQUESTS && null != l.other_user ? h = (0, r.jsx)(I.Z, {
       userId: l.other_user.id
-    }) : l.type === x.O7.INCOMING_GAME_FRIEND_REQUESTS && null != l.other_user && (h = (0, r.jsx)(I.Z, {
+    }) : l.type === y.O7.INCOMING_GAME_FRIEND_REQUESTS && null != l.other_user && (h = (0, r.jsx)(I.Z, {
       userId: l.other_user.id,
       applicationId: l.applicationId
     }));

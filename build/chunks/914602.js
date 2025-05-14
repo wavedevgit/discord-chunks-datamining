@@ -1,6 +1,6 @@
 /** Chunk was on 36087 **/
 n.d(t, {
-  Z: () => y
+  Z: () => E
 }), n(388685);
 var r, i = n(255367),
   l = n(73800),
@@ -25,7 +25,7 @@ function b(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class E extends(r = l.PureComponent) {
+class x extends(r = l.PureComponent) {
   render() {
     let {
       sku: e,
@@ -106,11 +106,11 @@ class E extends(r = l.PureComponent) {
     })
   }
 }
-b(E, "defaultProps", {
+b(x, "defaultProps", {
   showMediaPlaceholder: !1,
   isMouseOver: !1,
   showBuyInline: !1,
   isHorizontal: !1,
   isEmbed: !1
 });
-let y = E
+let E = x

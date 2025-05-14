@@ -1,6 +1,6 @@
 /** Chunk was on 35948 **/
 n.d(t, {
-  j: () => v
+  j: () => O
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -19,27 +19,27 @@ var r = n(255367),
   b = n(981631),
   _ = n(921944),
   y = n(46140);
-let v = e => {
+let O = e => {
   let {
     children: t,
     isForceShowSharingPopout: n,
-    setIsForceShowSharingPopout: v
-  } = e, [O, C] = (0, i.useState)(!1), S = function(e) {
+    setIsForceShowSharingPopout: O
+  } = e, [v, C] = (0, i.useState)(!1), S = function(e) {
     let {
       isForceShowSharingPopout: t
     } = e, {
-      rtcPopoutEnabled: n
-    } = (0, g.SN)("SharingPrivacyPopout"), {
-      rtcPopoutEnabled: r
-    } = (0, g.m_)("SharingPrivacyPopout"), i = (0, u.Ws)({
+      isEnabled: n,
+      showActivitySharingIndicatorWhenSharing: r
+    } = (0, g.Do)("SharingPrivacyPopout"), i = (0, u.Ws)({
       location: y.dr.CONFLICT_CHECKS
-    }), o = d.G6.useSetting(), s = (0, l.e7)([h.Z], () => h.Z.getLayers().includes(b.S9g.USER_SETTINGS)), a = (0, l.e7)([p.Z], () => p.Z.getStatus()), c = (i || !i && t) && !s;
-    if (c && r) {
+    }), o = d.G6.useSetting(), s = (0, l.e7)([h.Z], () => h.Z.getLayers().includes(b.S9g.USER_SETTINGS)), a = (0, l.e7)([p.Z], () => p.Z.getStatus());
+    if ((i || !i && t) && !s && n) {
+      if (r && o && a !== b.Skl.INVISIBLE) return t ? m.N.Activity : null;
       if (!o && a === b.Skl.INVISIBLE) return t ? m.N.ActivityAndStatus : m.N.ActivityAndStatusNux;
-      if (!o) return t ? m.N.NewActivity : m.N.NewActivityNux;
+      if (!o) return t ? m.N.Activity : m.N.ActivityNux;
       if (a === b.Skl.INVISIBLE) return t ? m.N.Status : null
     }
-    return c && n && !o ? t ? m.N.Activity : m.N.ActivityNux : null
+    return null
   }({
     isForceShowSharingPopout: n
   }), j = (0, i.useRef)(null);
@@ -47,7 +47,7 @@ let v = e => {
     n && f.default.track(b.rMx.OPEN_POPOUT, {
       type: "SharingPrivacyPopout"
     })
-  }, [n]), null != S || O) ? (0, r.jsx)(c.ZP, {
+  }, [n]), null != S || v) ? (0, r.jsx)(c.ZP, {
     contentTypes: n ? [] : [o.z.SHARE_ACTIVITY_COACHMARK_V2],
     children: e => {
       let {
@@ -57,7 +57,7 @@ let v = e => {
         let e = () => {
           (0, a.EW)(o.z.SHARE_ACTIVITY_COACHMARK_V2, {
             dismissAction: _.L.USER_DISMISS
-          }), v(!1), C(!1)
+          }), O(!1), C(!1)
         };
         return (0, r.jsx)(s.yRy, {
           targetElementRef: j,

@@ -19,9 +19,9 @@ var r = n(512722),
   g = n(41776),
   _ = n(566006),
   b = n(48854),
-  E = n(869765),
-  y = n(314897),
-  x = n(592125),
+  x = n(869765),
+  E = n(314897),
+  y = n(592125),
   v = n(703558),
   O = n(607744),
   j = n(375954),
@@ -106,7 +106,7 @@ function L(e) {
     channelId: t,
     messageId: n,
     answerId: r
-  } = e, i = x.Z.getChannel(t);
+  } = e, i = y.Z.getChannel(t);
   if (null == i) return;
   if (g.Z.isLurking(i.guild_id)) return void D({
     guildId: i.guild_id,
@@ -155,7 +155,7 @@ async function F(e) {
   } = e, i = U({
     channelId: t,
     messageId: n
-  }), l = a().difference(i, r), o = a().difference(r, i), c = y.default.getId(), d = [...l.map(e => ({
+  }), l = a().difference(i, r), o = a().difference(r, i), c = E.default.getId(), d = [...l.map(e => ({
     type: "MESSAGE_REACTION_REMOVE",
     id: e
   })), ...o.map(e => ({
@@ -187,7 +187,7 @@ async function B(e) {
   let {
     channelId: t,
     messageId: n
-  } = e, r = x.Z.getChannel(t);
+  } = e, r = y.Z.getChannel(t);
   if (null == r) return;
   if (g.Z.isLurking(r.guild_id)) return void D({
     guildId: r.guild_id,
@@ -239,7 +239,7 @@ async function G(e) {
   let {
     channelId: t,
     messageId: n
-  } = e, r = x.Z.getChannel(t);
+  } = e, r = y.Z.getChannel(t);
   if (null != r) return g.Z.isLurking(r.guild_id) ? void D({
     guildId: r.guild_id,
     title: w.intl.string(w.t.B9QnBg),
@@ -345,7 +345,7 @@ let V = {
         channelId: t,
         messageId: n
       };
-      let l = E.Z.getMessage(t, n);
+      let l = x.Z.getMessage(t, n);
       if (null != l.message) return {
         channelId: t,
         messageId: n,
@@ -460,7 +460,7 @@ let V = {
     try {
       if (null != c && c.length > 0) {
         var p;
-        let e = null != (p = y.default.getToken()) ? p : "";
+        let e = null != (p = E.default.getToken()) ? p : "";
         await I.sk({
           channel: t,
           items: c,

@@ -24,8 +24,8 @@ let _ = (0, c.B)(function(e) {
     position: c,
     disableManageChannels: _,
     sorting: y,
-    sortingType: v,
-    sortingPosition: O,
+    sortingType: O,
+    sortingPosition: v,
     connectChannelDragSource: C,
     connectChannelDropTarget: S,
     tabIndex: j
@@ -72,8 +72,8 @@ let _ = (0, c.B)(function(e) {
     })
   }, [E]);
   if (null == E) return null;
-  let N = (0, p.jo)(c, O),
-    Z = (0, p.CN)(E, y, v),
+  let N = (0, p.jo)(c, v),
+    Z = (0, p.CN)(E, y, O),
     T = (0, r.jsx)("div", {
       className: o()(N, {
         [b.disabled]: Z,

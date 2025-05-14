@@ -19,9 +19,9 @@ let p = e => {
       withMentions: m = !1,
       initialPageSize: f
     } = e, h = (0, i.e7)([u.Z], () => u.Z.shouldReload()), g = r.useRef(!1), [_, b] = r.useState(!1), {
-      initialized: E,
-      loading: y,
-      items: x,
+      initialized: x,
+      loading: E,
+      items: y,
       hasMore: v,
       cursor: O,
       errored: j
@@ -40,22 +40,22 @@ let p = e => {
       roleFilter: o.Z.roleFilter
     }));
     r.useEffect(() => ((0, s.Vk)(!0), () => (0, s.Vk)(!1)), []), r.useEffect(() => {
-      E && t && (0, l.FT)(d.W.NOTIFICATION_CENTER)
-    }, [t, E]);
+      x && t && (0, l.FT)(d.W.NOTIFICATION_CENTER)
+    }, [t, x]);
     let I = (0, a.Z)();
     r.useEffect(() => () => {
-      p ? !I() && (j || x.length > 100) && (0, s.jF)() : n && x.length > 100 && (0, s.jF)()
-    }, [n, x, p, I, j]), r.useEffect(() => {
+      p ? !I() && (j || y.length > 100) && (0, s.jF)() : n && y.length > 100 && (0, s.jF)()
+    }, [n, y, p, I, j]), r.useEffect(() => {
       let e = h && t;
-      (!E || e) && (0, s.jk)({
+      (!x || e) && (0, s.jk)({
         limit: null != f ? f : m ? 8 : 20,
         with_mentions: m,
         roles_filter: C,
         everyone_filter: S
       })
-    }, [E, h, t, m, C, S, f]);
+    }, [x, h, t, m, C, S, f]);
     let N = r.useCallback(async e => {
-      !g.current && E && v && null != O && (e || !j) && (g.current = !0, b(!0), await (0, s.jk)({
+      !g.current && x && v && null != O && (e || !j) && (g.current = !0, b(!0), await (0, s.jk)({
         after: O,
         with_mentions: m,
         roles_filter: C,
@@ -64,11 +64,11 @@ let p = e => {
       }, () => {
         g.current = !1
       }), b(!1))
-    }, [E, v, O, j, m, C, S]);
+    }, [x, v, O, j, m, C, S]);
     return {
-      initialized: E,
-      loading: y,
-      items: x,
+      initialized: x,
+      loading: E,
+      items: y,
       hasMore: v,
       loadMore: N,
       loadingMore: _,
