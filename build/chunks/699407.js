@@ -142,7 +142,7 @@ let h = 1500,
         shouldFlushOnNextTick: !1
       }), !1
     }, v.handleConnectionClosed = function() {
-      return L(), i = null, a = null, E = 0, r = null, !1
+      return L(), i = null, a = null, !1
     }, v.handleFingerprint = function() {
       return L(), !1
     }, v.handleTrack = function(e) {
