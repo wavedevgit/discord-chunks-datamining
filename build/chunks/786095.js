@@ -67,7 +67,7 @@ function j(e, t) {
   } = (0, s.pH)(t), A = r.useMemo(() => {
     var e;
     return null != (e = T[v]) ? e : []
-  }, [T]), D = 0 === A.length, w = n > A.length && !D;
+  }, [T]), w = 0 === A.length, D = n > A.length && !w;
   if (!r.useMemo(() => (0, u.ze)(t), [t]) || null == e || 0 === e.length || null == t) return null;
   let C = e.split(" "),
     R = C.length;
@@ -101,7 +101,7 @@ function j(e, t) {
       label: h.intl.string(h.t.ZTNur6)
     });
   return I || (k = (0, i.jsxs)(i.Fragment, {
-    children: [D && (0, i.jsx)(l.sNh, {
+    children: [w && (0, i.jsx)(l.sNh, {
       id: "add-first-rule",
       label: h.intl.string(h.t.f72Zqa),
       action: L,
@@ -132,7 +132,7 @@ function j(e, t) {
         disabled: j,
         action: () => G(e)
       }, e.id)
-    }), w && (0, i.jsxs)(i.Fragment, {
+    }), D && (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(l.Clw, {}), (0, i.jsx)(l.sNh, {
         id: "add-another-rule",
         label: h.intl.string(h.t["0K5jDA"]),
