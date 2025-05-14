@@ -26,8 +26,8 @@ var r = n(255367),
   I = n(697227),
   O = n(934826),
   E = n(896083),
-  N = n(939872),
-  P = n(265985),
+  P = n(939872),
+  N = n(265985),
   S = n(293810),
   w = n(981631),
   T = n(388032);
@@ -95,7 +95,7 @@ let L = (e, t, n, a) => {
         }) : void 0,
         analyticsLocations: J,
         analyticsLocation: a,
-        renderHeader: (n, i, a) => (0, r.jsx)(P.h, {
+        renderHeader: (n, i, a) => (0, r.jsx)(N.h, {
           onClose: i,
           listing: e,
           step: a,
@@ -104,11 +104,11 @@ let L = (e, t, n, a) => {
         initialPlanId: A.id,
         skuId: A.sku_id,
         planGroup: V,
-        renderPurchaseConfirmation: (n, i) => ee ? (0, r.jsx)(N.m, {
+        renderPurchaseConfirmation: (n, i) => ee ? (0, r.jsx)(P.m, {
           listing: e,
           onClose: i,
           guildId: t
-        }) : (0, r.jsx)(P.x, {
+        }) : (0, r.jsx)(N.x, {
           listing: e,
           onClose: i,
           guildId: t

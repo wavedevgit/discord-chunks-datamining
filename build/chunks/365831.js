@@ -74,7 +74,7 @@ function O(e) {
     activeVoice: n
   } = (0, g.o)(), a = (0, u.Z)(n), O = (0, p.z)(n), {
     toggleLoopback: E,
-    isLoopbackEnabled: N
+    isLoopbackEnabled: P
   } = function() {
     let {
       activeVoice: e
@@ -87,7 +87,7 @@ function O(e) {
       isLoopbackEnabled: t,
       toggleLoopback: n
     }
-  }(), P = N ? c.Iy5 : c.X_q, S = i.useCallback(() => (0, f.v6)(null), []), w = (0, c.dQu)(c.TVs.colors.BACKGROUND_SECONDARY).hex(), T = (0, c.dQu)(c.TVs.colors.WHITE).hex(), L = i.useRef(0), k = n !== a ? L.current + 1 : L.current;
+  }(), N = P ? c.Iy5 : c.X_q, S = i.useCallback(() => (0, f.v6)(null), []), w = (0, c.dQu)(c.TVs.colors.BACKGROUND_SECONDARY).hex(), T = (0, c.dQu)(c.TVs.colors.WHITE).hex(), L = i.useRef(0), k = n !== a ? L.current + 1 : L.current;
   i.useEffect(() => {
     L.current = k
   }, [k]);
@@ -199,7 +199,7 @@ function O(e) {
         } : A ? x : C
       }
     }, "respect-motion-settings"),
-    W = h.intl.string(N ? h.t.esVyo6 : h.t.UQqFCA);
+    W = h.intl.string(P ? h.t.esVyo6 : h.t.UQqFCA);
   return (0, r.jsxs)(l.animated.div, {
     className: v.voiceFilterHero,
     "aria-hidden": D,
@@ -249,7 +249,7 @@ function O(e) {
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "header-muted",
-            children: h.intl.string(N ? h.t.Sg6cfn : h.t.ZKhtw8)
+            children: h.intl.string(P ? h.t.Sg6cfn : h.t.ZKhtw8)
           })]
         }),
         children: e => (0, r.jsx)(l.animated.div, {
@@ -257,7 +257,7 @@ function O(e) {
           style: B[0],
           children: (0, r.jsx)(c.P3F, y(b({
             className: o()(v.button, {
-              [v.loopbackEnabled]: N
+              [v.loopbackEnabled]: P
             }),
             "aria-hidden": D,
             focusProps: {
@@ -266,7 +266,7 @@ function O(e) {
             tabIndex: Z ? 0 : -1
           }, e), {
             onClick: () => E(),
-            children: (0, r.jsx)(P, {
+            children: (0, r.jsx)(N, {
               size: "custom",
               width: 20,
               height: 20,

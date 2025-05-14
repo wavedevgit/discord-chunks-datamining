@@ -339,7 +339,7 @@ function ep(e) {
   Y.set(n, {
     isFetching: !0,
     lastFetchTimestampMs: null == r ? void 0 : r.lastFetchTimestampMs
-  })
+  }), D.lastCheckedForBadgeableActivities = new Date(Date.now()).toISOString()
 }
 
 function eh(e) {
@@ -375,7 +375,7 @@ function em(e) {
     r.label_type === l.ww.UPDATED && (!u || d) && (Object.values(l.eR).forEach(e => {
       r.omit_badge_from_surfaces.includes(e) || D.surfacesToShowNewActivityIndicator.add(e)
     }), D.seenUpdatedActivities[t] = r.label_until)
-  }), D.lastCheckedForBadgeableActivities = new Date(n).toISOString()
+  })
 }
 
 function eg(e) {
