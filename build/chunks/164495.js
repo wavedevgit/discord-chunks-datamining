@@ -22,9 +22,9 @@ var r = n(255367),
   m = n(46140),
   h = n(215023),
   y = n(388032),
-  O = n(895518);
+  S = n(895518);
 
-function S(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,7 +49,7 @@ function v(e) {
     taskDetails: n
   } = e;
   return (0, r.jsx)(i.zxk, {
-    className: O.cta,
+    className: S.cta,
     color: i.zxk.Colors.BRAND,
     fullWidth: !0,
     onClick: () => {
@@ -64,7 +64,7 @@ let C = e => {
       quest: t
     } = e, n = (0, d.aM)();
     return (0, r.jsx)(i.zxk, {
-      className: O.cta,
+      className: S.cta,
       size: i.zxk.Sizes.SMALL,
       onClick: () => (0, x.FE)(t, {
         content: p.jn.QUEST_BAR_V2,
@@ -81,7 +81,7 @@ let C = e => {
     } = e, o = null == (t = (0, d.WD)()) ? void 0 : t.getId();
     return (0, r.jsx)(i.zxk, {
       fullWidth: !0,
-      className: O.cta,
+      className: S.cta,
       onClick: () => (0, x.gI)({
         quest: n
       }, {
@@ -103,7 +103,7 @@ let C = e => {
       launchInGameActivity: l
     } = (0, f.zB)(t);
     return n && o ? (0, r.jsx)(i.zxk, {
-      className: O.cta,
+      className: S.cta,
       color: i.zxk.Colors.BRAND,
       fullWidth: !0,
       onClick: l,
@@ -117,10 +117,10 @@ let C = e => {
         useReducedMotion: d,
         isExpanded: f,
         className: g,
-        ctaLabel: j,
-        onClick: k
+        ctaLabel: k,
+        onClick: y
       } = e,
-      m = function(e, t) {
+      v = function(e, t) {
         if (null == e) return {};
         var n, r, o = function(e, t) {
           if (null == e) return {};
@@ -135,28 +135,29 @@ let C = e => {
         }
         return o
       }(e, ["quest", "useReducedMotion", "isExpanded", "className", "ctaLabel", "onClick"]);
-    let v = (0, b.hf)({
+    let C = (0, b.hf)({
         quest: u,
         location: p.jn.QUEST_BAR_V2
       }),
-      C = o.useCallback(e => {
+      N = (0, j.up)(m.dr.QUESTS_BAR),
+      E = o.useCallback(e => {
         var t;
-        null == k || k(e), (0, x.xN)(u.config) && (null == (t = u.userStatus) ? void 0 : t.claimedAt) != null ? (0, a.mK)({
+        null == y || y(e), (0, x.xN)(u.config) && (null == (t = u.userStatus) ? void 0 : t.claimedAt) != null ? (0, a.mK)({
           openInLayer: !1,
           tab: h.AW.ORBS,
           analyticsLocations: [],
           analyticsSource: c.Z.QUEST_HOME_PAGE
-        }) : v()
-      }, [k, u.config, null == (s = u.userStatus) ? void 0 : s.claimedAt, v]);
-    return (0, r.jsx)(i.gtL, (t = S({
+        }) : C()
+      }, [y, u.config, null == (s = u.userStatus) ? void 0 : s.claimedAt, C]);
+    return (0, r.jsx)(i.gtL, (t = O({
       fullWidth: !0,
       size: i.zxk.Sizes.SMALL,
-      onClick: C,
+      onClick: E,
       pauseAnimation: d || !f,
-      className: l()(O.cta, g),
-      buttonShineClassName: O.shine
-    }, m), n = n = {
-      children: null != j ? j : y.intl.string(y.t.cfY4PD)
+      className: l()(S.cta, g),
+      buttonShineClassName: S.shine
+    }, v), n = n = {
+      children: null != k ? k : N
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -205,18 +206,18 @@ let C = e => {
 
 function z(e) {
   return (0, r.jsxs)("div", {
-    className: O.ctaButtons,
+    className: S.ctaButtons,
     children: [e.showBackButton && (0, r.jsx)(i.zxk, {
-      className: O.backButton,
-      innerClassName: O.backButtonInner,
+      className: S.backButton,
+      innerClassName: S.backButtonInner,
       look: "blank",
       grow: !1,
       fullWidth: !1,
       size: "none",
       onClick: e.onBack,
       children: (0, r.jsx)(i.V7D, {
-        className: O.backIcon
+        className: S.backIcon
       })
-    }), (0, r.jsx)(w, S({}, e))]
+    }), (0, r.jsx)(w, O({}, e))]
   })
 }

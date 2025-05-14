@@ -21,10 +21,10 @@ let f = o.forwardRef((e, t) => {
     percentCompleteText: x,
     percentCompleteTextVariant: g = "text-lg/medium",
     children: j
-  } = e, b = (0, a.E)(n, o > 0), k = s / 2, m = s / 2 - f / 2, h = 2 * Math.PI * m, y = h - o * h, O = {
+  } = e, b = (0, a.E)(n, o > 0), k = s / 2, m = s / 2 - f / 2, h = 2 * Math.PI * m, y = h - o * h, S = {
     strokeDasharray: "".concat(h, " ").concat(h),
     strokeDashoffset: y
-  }, S = {
+  }, O = {
     strokeDasharray: "".concat(h, " ").concat(h),
     strokeDashoffset: -o * h
   }, v = {
@@ -98,7 +98,7 @@ let f = o.forwardRef((e, t) => {
         cx: k,
         cy: k,
         stroke: "url(#linear)",
-        style: S
+        style: O
       }), (0, r.jsx)("circle", {
         className: d.progress,
         strokeWidth: f,
@@ -107,7 +107,7 @@ let f = o.forwardRef((e, t) => {
         cx: k,
         cy: k,
         stroke: b.foreground,
-        style: O
+        style: S
       })]
     })]
   })
