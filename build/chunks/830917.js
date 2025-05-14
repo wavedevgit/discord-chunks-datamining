@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Ig: () => o,
-  UU: () => a,
+  Ig: () => a,
+  UU: () => o,
   ZY: () => i
 });
 var r = n(392711);
@@ -11,11 +11,11 @@ function i(e) {
   return e.__DISCORD_WINDOW_ID
 }
 
-function o(e) {
+function a(e) {
   let t = (0, r.uniqueId)("window-");
   return e.__DISCORD_WINDOW_ID = t, t
 }
 
-function a() {
+function o() {
   return i(window)
 }

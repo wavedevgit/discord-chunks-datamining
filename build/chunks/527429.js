@@ -6,7 +6,7 @@ n.d(t, {
 var r = n(73800),
   i = n(981631);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -15,7 +15,7 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 
-function a(e) {
+function o(e) {
   switch (e) {
     case i.yXg.ARROW_DOWN:
       return "ARROW_DOWN";
@@ -45,45 +45,45 @@ class s extends r.Component {
       focusedRow: i
     } = this.state;
     if (null == e) return;
-    let o = t();
-    if (null == o) return;
-    let a = this.getNext(o, r, i, e);
+    let a = t();
+    if (null == a) return;
+    let o = this.getNext(a, r, i, e);
     this.setState({
-      focusedColumn: a.column,
-      focusedRow: a.row
+      focusedColumn: o.column,
+      focusedRow: o.row
     }, () => {
       let e = this.calculateFocusedItem();
       null != e && null != n && n(e)
     })
   }
   getNext(e, t, n, r) {
-    let i, o, a, s;
-    if (null == t || null == n) o = 0, a = 0, i = {
+    let i, a, o, s;
+    if (null == t || null == n) a = 0, o = 0, i = {
       column: 0,
       row: 0
     };
-    else switch (o = t, a = n, r) {
+    else switch (a = t, o = n, r) {
       case "ARROW_UP":
         i = {
-          column: o,
-          row: Math.max(a - 1, 0)
+          column: a,
+          row: Math.max(o - 1, 0)
         };
         break;
       case "ARROW_DOWN":
         i = {
-          column: o,
-          row: Math.min(a + 1, e[o].length - 1)
+          column: a,
+          row: Math.min(o + 1, e[a].length - 1)
         };
         break;
       case "ARROW_LEFT":
-        i = this.wrapPosition(e, o, a, -1);
+        i = this.wrapPosition(e, a, o, -1);
         break;
       case "ARROW_RIGHT":
-        i = this.wrapPosition(e, o, a, 1)
+        i = this.wrapPosition(e, a, o, 1)
     }
     return null != i && (s = e[i.column][i.row]), (null == s || null == i) && (s = e[(i = {
-      column: o,
-      row: a
+      column: a,
+      row: o
     }).column][i.row]), {
       column: i.column,
       row: i.row,
@@ -95,10 +95,10 @@ class s extends r.Component {
     if (null == r) return;
     let i = Number.MAX_SAFE_INTEGER;
     for (let e = 0; e < t.length; e++) {
-      let o = this.props.getCoordsMap()[t[e]];
-      if (null == o) continue;
-      let a = Math.abs(o.top - r.top);
-      if (a < i) i = a, n = e;
+      let a = this.props.getCoordsMap()[t[e]];
+      if (null == a) continue;
+      let o = Math.abs(a.top - r.top);
+      if (o < i) i = o, n = e;
       else break
     }
     return n
@@ -116,10 +116,10 @@ class s extends r.Component {
     return this.props.children
   }
   constructor(...e) {
-    super(...e), o(this, "state", {
+    super(...e), a(this, "state", {
       focusedColumn: null,
       focusedRow: null
-    }), o(this, "handleKeyDown", e => {
+    }), a(this, "handleKeyDown", e => {
       let {
         onSelect: t
       } = this.props;
@@ -128,20 +128,20 @@ class s extends r.Component {
         case i.yXg.ARROW_UP:
         case i.yXg.ARROW_LEFT:
         case i.yXg.ARROW_RIGHT:
-          this.focusNext(a(e.keyCode));
+          this.focusNext(o(e.keyCode));
           break;
         case i.yXg.ENTER:
           let n = this.calculateFocusedItem();
           null != n && null != t && (e.preventDefault(), e.stopPropagation(), t(n))
       }
-    }), o(this, "wrapPosition", (e, t, n, r) => {
+    }), a(this, "wrapPosition", (e, t, n, r) => {
       var i;
-      let o = e.length,
-        a = Math.max(n * o + t + r, 0) % o,
-        s = null != (i = this.calculateClosest(e[t][n], e[a])) ? i : n,
+      let a = e.length,
+        o = Math.max(n * a + t + r, 0) % a,
+        s = null != (i = this.calculateClosest(e[t][n], e[o])) ? i : n,
         l = 0;
-      return r < 0 && a > t && (l = -1), r > 0 && a < t && (l = 1), {
-        column: a,
+      return r < 0 && o > t && (l = -1), r > 0 && o < t && (l = 1), {
+        column: o,
         row: s + l
       }
     })

@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  O: () => o
+  O: () => a
 });
 var r = n(73800),
   i = n(626135);
-let o = () => r.useContext(i.AnalyticsContext)
+let a = () => r.useContext(i.AnalyticsContext)

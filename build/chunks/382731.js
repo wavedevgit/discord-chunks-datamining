@@ -1,19 +1,19 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(73800),
   i = n(867309);
-let o = Object.freeze({
+let a = Object.freeze({
   box: "border-box"
 });
 
-function a(e) {
+function o(e) {
   let {
     ref: t,
     onUpdate: n,
-    resizeObserver: a,
+    resizeObserver: o,
     listenerMap: s,
     key: l
   } = e;
@@ -26,8 +26,8 @@ function a(e) {
       {
         current: r
       } = t;
-    return null != r && (s.set(r, e), a.observe(r, o)), () => {
-      null != r && (a.unobserve(r), s.delete(r))
+    return null != r && (s.set(r, e), o.observe(r, a)), () => {
+      null != r && (o.unobserve(r), s.delete(r))
     }
-  }, [n, a, t, s, l])
+  }, [n, o, t, s, l])
 }

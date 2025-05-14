@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(692547),
   l = n(150923);
 
@@ -39,25 +39,25 @@ let f = "indeterminate";
 function _(e) {
   let t, {
       className: n,
-      percent: o,
+      percent: a,
       size: c = "small",
       foregroundColor: d = s.Z.unsafe_rawColors.BRAND_500.css,
       backgroundColor: _ = "var(--background-modifier-active)",
       foregroundGradientColor: p,
       animate: h = !0
     } = e,
-    m = null != o ? o : 0;
+    m = null != a ? a : 0;
   return t = null != p ? {
     background: "linear-gradient(to right, ".concat(p[0], ", ").concat(p[1], ")")
   } : {
     backgroundColor: d
   }, (0, r.jsx)("div", {
-    className: a()(n, l.progress, l[c]),
+    className: o()(n, l.progress, l[c]),
     style: {
       backgroundColor: _
     },
     children: m !== f && "number" == typeof m ? (0, r.jsx)("div", {
-      className: a()(l.progressBar, l[c], {
+      className: o()(l.progressBar, l[c], {
         [l.animating]: h
       }),
       style: u({
@@ -65,12 +65,12 @@ function _(e) {
       }, t)
     }) : (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: a()(l.indeterminateBar1, l[c], {
+        className: o()(l.indeterminateBar1, l[c], {
           [l.animating]: h
         }),
         style: t
       }), (0, r.jsx)("div", {
-        className: a()(l.indeterminateBar2, l[c], {
+        className: o()(l.indeterminateBar2, l[c], {
           [l.animating]: h
         }),
         style: t

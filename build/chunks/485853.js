@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  N: () => a
+  N: () => o
 });
 var r = n(503461),
   i = n(190313);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -14,12 +14,12 @@ function o(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class a {
+class o {
   get prefix() {
     return this.table.prefix
   }
   withoutLogging() {
-    return new a(this.originalPrefix, this.table.tableId, this.table.database, !1)
+    return new o(this.originalPrefix, this.table.tableId, this.table.database, !1)
   }
   get(e) {
     return this.table.get([e])
@@ -66,7 +66,7 @@ class a {
     return this.table.getMapEntriesSyncUnsafe()
   }
   constructor(e, t, n, r = !0) {
-    o(this, "originalPrefix", void 0), o(this, "table", void 0), this.originalPrefix = e, this.table = new i.i([e], t, n, r)
+    a(this, "originalPrefix", void 0), a(this, "table", void 0), this.originalPrefix = e, this.table = new i.i([e], t, n, r)
   }
 }
 class s {
@@ -85,6 +85,6 @@ class s {
     return 0 == arguments.length ? this.transaction.delete() : this.transaction.delete([e])
   }
   constructor(e) {
-    o(this, "transaction", void 0), this.transaction = e
+    a(this, "transaction", void 0), this.transaction = e
   }
 }

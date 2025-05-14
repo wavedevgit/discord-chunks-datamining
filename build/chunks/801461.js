@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Kq: () => a,
+  Kq: () => o,
   RN: () => r,
-  Wq: () => o,
+  Wq: () => a,
   en: () => u,
   hy: () => s,
   iF: () => i,
@@ -12,10 +12,10 @@ n.d(t, {
 });
 let r = /([^A-Za-z0-9_.]+)/g,
   i = /\.+/g;
-var o = function(e) {
+var a = function(e) {
     return e.NONE = "none", e.EDIT_DISPLAY_NAME = "display-name", e.EDIT_USERNAME = "username", e.PREVIEW = "preview", e.SUGGESTION = "suggestion", e
   }({}),
-  a = function(e) {
+  o = function(e) {
     return e.APP_START = "app start", e.NOTICE = "notice", e.USER_SETTINGS = "user settings", e.USER_SETTINGS_EDIT = "user settings edit", e.YOU_TAB = "you tab", e
   }({});
 let s = 32,

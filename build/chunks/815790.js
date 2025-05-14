@@ -2,21 +2,21 @@
 "use strict";
 n.d(t, {
   Dw: () => f,
-  I: () => o,
-  UG: () => a,
+  I: () => a,
+  UG: () => o,
   fv: () => d,
   jq: () => s
 });
 var r = n(814391),
   i = n(388032);
-let o = {
+let a = {
     month: "short",
     day: "numeric",
     year: "numeric",
     hour: "numeric",
     minute: "2-digit"
   },
-  a = {
+  o = {
     month: "short",
     day: "numeric",
     year: "numeric",

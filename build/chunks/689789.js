@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   S: () => i,
-  Z: () => o
+  Z: () => a
 });
 let r = (0, n(818083).B)({
   kind: "user",
@@ -35,4 +35,4 @@ function i(e) {
     canSplitFrecencyList: i
   }
 }
-let o = r
+let a = r

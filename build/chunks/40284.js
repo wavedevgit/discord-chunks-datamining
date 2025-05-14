@@ -2,9 +2,9 @@
 "use strict";
 n.d(t, {
   BT: () => u,
-  IS: () => a,
+  IS: () => o,
   Rd: () => i,
-  SG: () => o,
+  SG: () => a,
   fu: () => r,
   j1: () => s,
   jn: () => l,
@@ -12,8 +12,8 @@ n.d(t, {
 });
 var r = "dnd-core/ADD_SOURCE",
   i = "dnd-core/ADD_TARGET",
-  o = "dnd-core/REMOVE_SOURCE",
-  a = "dnd-core/REMOVE_TARGET";
+  a = "dnd-core/REMOVE_SOURCE",
+  o = "dnd-core/REMOVE_TARGET";
 
 function s(e) {
   return {
@@ -35,7 +35,7 @@ function l(e) {
 
 function c(e) {
   return {
-    type: o,
+    type: a,
     payload: {
       sourceId: e
     }
@@ -44,7 +44,7 @@ function c(e) {
 
 function u(e) {
   return {
-    type: a,
+    type: o,
     payload: {
       targetId: e
     }

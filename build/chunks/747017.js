@@ -5,8 +5,8 @@ n.d(t, {
 }), n(781311);
 var r = n(255367),
   i = n(73800),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(793030),
   l = n(442837),
   c = n(833664),
@@ -29,7 +29,7 @@ function S(e) {
   let {
     user: t,
     activities: n,
-    applicationStream: o,
+    applicationStream: a,
     voiceChannel: S,
     textClassName: T,
     iconClassName: A,
@@ -40,7 +40,7 @@ function S(e) {
     hideTooltip: w = !1
   } = e;
   (0, u.Z)(null == t ? void 0 : t.id);
-  let D = (null == o ? void 0 : o.discoverable) !== !1 ? o : null,
+  let D = (null == a ? void 0 : a.discoverable) !== !1 ? a : null,
     {
       enabledWithActivityStatus: L
     } = (0, d.Z)({
@@ -104,7 +104,7 @@ function S(e) {
       return (0, r.jsxs)(r.Fragment, {
         children: [null != i && (0, r.jsx)(s.xv, {
           variant: "text-".concat(N, "/medium"),
-          className: a()(T, I.customStatusLabel),
+          className: o()(T, I.customStatusLabel),
           color: "none",
           children: "".concat(i, ": ")
         }), null != e && !R && (0, r.jsx)(h.Z, {
@@ -121,13 +121,13 @@ function S(e) {
       })
     };
   return (0, r.jsxs)("div", {
-    className: a()(I.container, {
+    className: o()(I.container, {
       [I.textXs]: "xs" === N,
       [I.textSm]: "sm" === N
     }),
     children: [j(), (0, r.jsx)(s.xv, {
       variant: "text-".concat(N, "/normal"),
-      className: a()(I.truncated, I.dot, T),
+      className: o()(I.truncated, I.dot, T),
       children: O.l
     }), U(), P && (0, r.jsx)(m.Z, {})]
   })

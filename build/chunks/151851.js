@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  o = n.n(i),
-  a = n(442837),
+  a = n.n(i),
+  o = n(442837),
   s = n(481060),
   l = n(350810),
   c = n(579806),
@@ -35,7 +35,7 @@ let I = "#ffffff",
       children: t,
       windowKey: n,
       themeOverride: i,
-      hasOpenLayer: a
+      hasOpenLayer: o
     } = e, l = (0, r.jsx)(s.P3F, {
       className: v.winButtonClose,
       onClick: () => S(n),
@@ -60,8 +60,8 @@ let I = "#ffffff",
     return (0, r.jsx)(s.f6W, {
       theme: i,
       children: e => (0, r.jsxs)("div", {
-        className: o()(v.typeWindows, e, {
-          [v.withBackgroundOverride]: !a
+        className: a()(v.typeWindows, e, {
+          [v.withBackgroundOverride]: !o
         }),
         children: [(0, r.jsx)("div", {
           className: v.wordmarkWindows,
@@ -75,14 +75,14 @@ let I = "#ffffff",
       focused: t,
       windowKey: n,
       frame: i,
-      themeOverride: a,
+      themeOverride: o,
       hasOpenLayer: l,
       children: u
     } = e;
     return (0, r.jsx)(s.f6W, {
-      theme: a,
+      theme: o,
       children: e => (0, r.jsxs)(s.P3F, {
-        className: o()(i ? v.typeMacOSWithFrame : v.typeMacOS, t ? v.focused : v.unfocused, e, {
+        className: a()(i ? v.typeMacOSWithFrame : v.typeMacOS, t ? v.focused : v.unfocused, e, {
           [v.withBackgroundOverride]: !l
         }),
         onDoubleClick: () => y.ZP.maximize(n),
@@ -129,9 +129,9 @@ function P(e) {
     focused: t,
     type: n,
     windowKey: i,
-    macOSFrame: o = !1,
+    macOSFrame: a = !1,
     themeOverride: s
-  } = e, c = (0, u.bp)(), f = (0, a.e7)([d.Z], () => d.Z.isFullscreenInContext(c)), _ = (0, l.Z)();
+  } = e, c = (0, u.bp)(), f = (0, o.e7)([d.Z], () => d.Z.isFullscreenInContext(c)), _ = (0, l.Z)();
   if (f) return null;
   switch (n) {
     case b.PlatformTypes.WINDOWS:
@@ -144,7 +144,7 @@ function P(e) {
       return (0, r.jsx)(C, {
         focused: t,
         windowKey: i,
-        frame: o,
+        frame: a,
         themeOverride: s,
         hasOpenLayer: _
       });

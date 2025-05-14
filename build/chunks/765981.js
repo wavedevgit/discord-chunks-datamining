@@ -9,15 +9,15 @@ function i(e, t) {
   if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
 }
 
-function o(e, t) {
+function a(e, t) {
   for (var n = 0; n < t.length; n++) {
     var r = t[n];
     r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
   }
 }
 
-function a(e, t, n) {
-  return t && o(e.prototype, t), n && o(e, n), e
+function o(e, t, n) {
+  return t && a(e.prototype, t), n && a(e, n), e
 }
 var s = function() {
   function e(t, n) {
@@ -27,7 +27,7 @@ var s = function() {
       r.backend && (e && !r.isSetUp ? (r.backend.setup(), r.isSetUp = !0) : !e && r.isSetUp && (r.backend.teardown(), r.isSetUp = !1))
     }, this.store = t, this.monitor = n, t.subscribe(this.handleRefCountChange)
   }
-  return a(e, [{
+  return o(e, [{
     key: "receiveBackend",
     value: function(e) {
       this.backend = e
@@ -55,9 +55,9 @@ var s = function() {
 
       function n(n) {
         return function() {
-          for (var r = arguments.length, i = Array(r), o = 0; o < r; o++) i[o] = arguments[o];
-          var a = n.apply(e, i);
-          void 0 !== a && t(a)
+          for (var r = arguments.length, i = Array(r), a = 0; a < r; a++) i[a] = arguments[a];
+          var o = n.apply(e, i);
+          void 0 !== o && t(o)
         }
       }
       var i = (0, r.W1)(this);

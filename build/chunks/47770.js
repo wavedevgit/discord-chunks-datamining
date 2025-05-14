@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 }), n(388685);
 var r = n(836560);
 
@@ -13,7 +13,7 @@ function i(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class o {
+class a {
   on(e, t) {
     this.emitter.on(e, t)
   }

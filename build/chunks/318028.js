@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  l: () => a
+  l: () => o
 }), n(388685);
 var r = n(399606),
   i = n(597688),
-  o = n(267097);
+  a = n(267097);
 
-function a(e) {
-  (0, o.Z)();
+function o(e) {
+  (0, a.Z)();
   let [t, n] = (0, r.Wu)([i.Z], () => [i.Z.isFetchingCategories, i.Z.getCategoryForProduct(e)]);
   return {
     isFetching: t,

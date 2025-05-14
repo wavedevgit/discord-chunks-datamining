@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  J$: () => o,
-  _J: () => a,
+  J$: () => a,
+  _J: () => o,
   xG: () => s
 });
 var r = n(818083),
   i = n(987338);
-let o = (0, r.B)({
+let a = (0, r.B)({
   kind: "user",
   id: "2024-06_game_profile_experiment",
   label: "Enables the Game Profile",
@@ -24,11 +24,11 @@ let o = (0, r.B)({
   }]
 });
 
-function a(e) {
+function o(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     {
       enabled: n
-    } = o.getCurrentConfig({
+    } = a.getCurrentConfig({
       location: e
     }, {
       autoTrackExposure: t
@@ -40,7 +40,7 @@ function s(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     {
       enabled: n
-    } = o.useExperiment({
+    } = a.useExperiment({
       location: e
     }, {
       autoTrackExposure: t

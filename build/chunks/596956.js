@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  S: () => o,
+  S: () => a,
   T: () => i
 });
 var r = n(476326);
@@ -23,6 +23,6 @@ function i(e, t) {
   return !1
 }
 
-function o(e, t) {
+function a(e, t) {
   return 0 === t ? 0 : Math.min(Math.floor(e / t * 100), 100)
 }

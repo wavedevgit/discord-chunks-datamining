@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  o = n.n(i),
-  a = n(692547),
+  a = n.n(i),
+  o = n(692547),
   s = n(481060),
   l = n(201895),
   c = n(933557),
@@ -73,7 +73,7 @@ function b(e) {
     size: "custom",
     color: O,
     channel: t,
-    className: o()(p.icon, h)
+    className: a()(p.icon, h)
   }) : (0, r.jsx)(s.ua7, {
     text: v,
     "aria-label": (0, l.ZP)({
@@ -81,9 +81,9 @@ function b(e) {
     }),
     children: e => (0, r.jsx)(d.Z, E(m({}, e), {
       size: "custom",
-      color: a.Z.colors.STATUS_POSITIVE,
+      color: o.Z.colors.STATUS_POSITIVE,
       channel: t,
-      className: o()(p.icon, h)
+      className: a()(p.icon, h)
     }))
   }), A = () => {
     let e = {

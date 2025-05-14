@@ -6,8 +6,8 @@ n.d(t, {
 }), n(539854), n(388685);
 var r = n(392711),
   i = n(433517),
-  o = n(147913),
-  a = n(536442),
+  a = n(147913),
+  o = n(536442),
   s = n(810788),
   l = n(695346),
   c = n(19780),
@@ -62,20 +62,20 @@ let E = 200,
   y = {
     [_.nw.VOICE]: g(h({}, b), {
       group: _.FB.AV,
-      hotspot: a.v6.VOICE_CALL_FEEDBACK,
+      hotspot: o.v6.VOICE_CALL_FEEDBACK,
       storageKey: "lastVoiceFeedback",
       feedbackType: _.nw.VOICE,
       eligibilityChecks: [A]
     }),
     [_.nw.STREAM]: g(h({}, b), {
       group: _.FB.AV,
-      hotspot: a.v6.REPORT_PROBLEM_POST_STREAM,
+      hotspot: o.v6.REPORT_PROBLEM_POST_STREAM,
       storageKey: "lastStreamFeedback",
       feedbackType: _.nw.STREAM
     }),
     [_.nw.VIDEO_BACKGROUND]: g(h({}, b), {
       group: _.FB.AV,
-      hotspot: a.v6.VIDEO_BACKGROUND_FEEDBACK,
+      hotspot: o.v6.VIDEO_BACKGROUND_FEEDBACK,
       storageKey: "lastVideoBackgroundFeedback",
       feedbackType: _.nw.VIDEO_BACKGROUND
     }),
@@ -83,7 +83,7 @@ let E = 200,
       cooldown: 0,
       chance: .5,
       group: _.FB.AV,
-      hotspot: a.v6.POST_ACTIVITY_FEEDBACK,
+      hotspot: o.v6.POST_ACTIVITY_FEEDBACK,
       storageKey: "lastActivityFeedback",
       feedbackType: _.nw.ACTIVITY
     },
@@ -91,7 +91,7 @@ let E = 200,
       cooldown: 1728e5,
       chance: .5,
       group: _.FB.SOCIAL,
-      hotspot: a.v6.IN_APP_REPORTS_FEEDBACK,
+      hotspot: o.v6.IN_APP_REPORTS_FEEDBACK,
       storageKey: "inAppReportsFeedback",
       feedbackType: _.nw.IN_APP_REPORTS
     },
@@ -99,7 +99,7 @@ let E = 200,
       cooldown: 6048e5,
       chance: 1,
       group: _.FB.SOCIAL,
-      hotspot: a.v6.USER_DM_MUTE_FEEDBACK,
+      hotspot: o.v6.USER_DM_MUTE_FEEDBACK,
       storageKey: "userDmMute",
       feedbackType: _.nw.USER_DM_MUTE
     },
@@ -107,13 +107,13 @@ let E = 200,
       cooldown: 0,
       chance: 1,
       group: _.FB.SOCIAL,
-      hotspot: a.v6.BLOCK_USER_FEEDBACK,
+      hotspot: o.v6.BLOCK_USER_FEEDBACK,
       storageKey: "blockUser",
       feedbackType: _.nw.BLOCK_USER
     },
     [_.nw.VOICE_FILTER]: g(h({}, b), {
       group: _.FB.AV,
-      hotspot: a.v6.VOICE_FILTER_FEEDBACK,
+      hotspot: o.v6.VOICE_FILTER_FEEDBACK,
       storageKey: "lastVoiceFilterFeedback",
       feedbackType: _.nw.VOICE_FILTER,
       eligibilityChecks: [A]
@@ -126,13 +126,13 @@ function O(e) {
   let r = null != (t = u.Z.getFeedbackConfig(e)) ? t : y[e],
     i = [I, v],
     {
-      doGroupEligibilityCheck: o
+      doGroupEligibilityCheck: a
     } = (0, f.T)({
       location: "FeedbackManager"
     });
-  o ? i.push(T) : i.push(e => S(e, e));
-  let a = null != (n = r.eligibilityChecks) ? n : [];
-  return i.every(e => e(r)) && a.every(e => e(r))
+  a ? i.push(T) : i.push(e => S(e, e));
+  let o = null != (n = r.eligibilityChecks) ? n : [];
+  return i.every(e => e(r)) && o.every(e => e(r))
 }
 
 function v(e) {
@@ -166,9 +166,9 @@ function S(e, t) {
     location: "FeedbackManager/".concat(e.feedbackType)
   });
   if (n) {
-    var o, a, s;
-    let n, c = null == (o = l.A2.getSetting()[t.feedbackType]) ? void 0 : o.lastImpressionTime;
-    return (null == c || Number.isNaN(c)) && null != t.storageKey && (null == (n = null != (a = i.K.get(t.storageKey)) ? a : void 0) || Number.isNaN(n) || l.A2.updateSetting(e => g(h({}, e), {
+    var a, o, s;
+    let n, c = null == (a = l.A2.getSetting()[t.feedbackType]) ? void 0 : a.lastImpressionTime;
+    return (null == c || Number.isNaN(c)) && null != t.storageKey && (null == (n = null != (o = i.K.get(t.storageKey)) ? o : void 0) || Number.isNaN(n) || l.A2.updateSetting(e => g(h({}, e), {
       [t.feedbackType]: g(h({}, e[t.feedbackType]), {
         lastImpressionTime: n
       })
@@ -214,7 +214,7 @@ function N(e) {
     null != t && i.K.set(t, Date.now())
   }
 }
-class C extends o.Z {
+class C extends a.Z {
   possiblyShowFeedbackModal(e, t) {
     O(e) && (null == this.feedbackTypeToShow || !(_.b5[this.feedbackTypeToShow] < _.b5[e])) && (this.feedbackTypeToShow = e, this.showFeedbackModalDebounced(t))
   }
