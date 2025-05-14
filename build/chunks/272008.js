@@ -1,27 +1,27 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  AH: () => A,
-  Ag: () => M,
-  CS: () => O,
-  EW: () => x,
-  OR: () => k,
-  QB: () => N,
-  T0: () => L,
-  Wf: () => w,
-  cT: () => G,
-  eT: () => D,
-  gU: () => F,
-  gl: () => P,
-  is: () => v,
-  it: () => I,
-  lL: () => B,
-  m0: () => T,
-  nE: () => R,
-  pf: () => C,
-  qm: () => j,
-  w: () => U,
-  xw: () => S
+  AH: () => C,
+  Ag: () => U,
+  CS: () => I,
+  EW: () => M,
+  OR: () => j,
+  QB: () => P,
+  T0: () => k,
+  Wf: () => L,
+  cT: () => F,
+  eT: () => x,
+  gU: () => Z,
+  gl: () => w,
+  is: () => S,
+  it: () => T,
+  lL: () => V,
+  m0: () => N,
+  nE: () => D,
+  pf: () => R,
+  qm: () => G,
+  w: () => B,
+  xw: () => A
 }), n(415506);
 var r = n(990547),
   i = n(544891),
@@ -40,8 +40,30 @@ var r = n(990547),
   g = n(566078),
   E = n(981631),
   b = n(388032);
-let y = 5;
-async function O(e) {
+
+function y(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: !0,
+    configurable: !0,
+    writable: !0
+  }) : e[t] = n, e
+}
+
+function O(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      y(e, t, n[t])
+    })
+  }
+  return e
+}
+let v = 5;
+async function I(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
   try {
     let n = (await i.tn.post({
@@ -57,7 +79,7 @@ async function O(e) {
       user_status: n.quest_user_status
     });
     else if (null != n.error_hints_v2 && n.error_hints_v2.length > 0) return {
-      errorHints: n.error_hints_v2.slice(0, y)
+      errorHints: n.error_hints_v2.slice(0, v)
     }
   } catch (r) {
     var n;
@@ -84,19 +106,19 @@ async function O(e) {
     errorHints: []
   }
 }
-async function v(e) {
+async function S(e) {
   await i.tn.post({
     url: E.ANM.QUEST_ON_CONSOLE_STOP(e),
     rejectWithError: !1
   })
 }
-async function I() {
+async function T() {
   await i.tn.del({
     url: E.ANM.QUESTS_RESET_RECENT_QUEST_COMPLETIONS,
     rejectWithError: !1
   })
 }
-async function S() {
+async function A() {
   if (!f.Z.isFetchingCurrentQuests) {
     o.Z.dispatch({
       type: "QUESTS_FETCH_CURRENT_QUESTS_BEGIN"
@@ -131,7 +153,7 @@ async function S() {
     }
   }
 }
-async function T(e) {
+async function N(e) {
   let {
     questId: t,
     streamKey: n,
@@ -172,7 +194,7 @@ async function T(e) {
     })
   }
 }
-async function A(e, t) {
+async function C(e, t) {
   if (null != t.questContentCTA && (0, u._3)({
       questId: e,
       questContent: t.questContent,
@@ -187,9 +209,9 @@ async function A(e, t) {
     try {
       let n = await i.tn.post({
         url: E.ANM.QUESTS_ENROLL(e),
-        body: {
+        body: O({
           location: t.questContent
-        },
+        }, (0, p.qe)(t.questContent)),
         rejectWithError: !0
       });
       o.Z.dispatch({
@@ -204,7 +226,7 @@ async function A(e, t) {
     }
   }
 }
-async function N(e, t, n) {
+async function P(e, t, n) {
   if (!f.Z.isClaimingReward(e)) {
     o.Z.dispatch({
       type: "QUESTS_CLAIM_REWARD_BEGIN",
@@ -238,7 +260,7 @@ async function N(e, t, n) {
     }
   }
 }
-async function C(e) {
+async function R(e) {
   if (!f.Z.isFetchingRewardCode(e)) {
     o.Z.dispatch({
       type: "QUESTS_FETCH_REWARD_CODE_BEGIN",
@@ -263,7 +285,7 @@ async function C(e) {
     }
   }
 }
-async function P(e, t) {
+async function w(e, t) {
   let n = f.Z.isDismissingContent(e),
     r = (0, p.GN)(t);
   if (!n && r) {
@@ -292,13 +314,13 @@ async function P(e, t) {
   }
 }
 
-function R(e) {
+function D(e) {
   o.Z.dispatch({
     type: "QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE",
     streamKey: e
   })
 }
-async function w(e) {
+async function L(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1;
   try {
     let n = await i.tn.post({
@@ -320,7 +342,7 @@ async function w(e) {
     })
   }
 }
-async function D(e) {
+async function x(e) {
   try {
     let t = await i.tn.del({
       url: E.ANM.QUESTS_PREVIEW_STATUS(e),
@@ -339,7 +361,7 @@ async function D(e) {
     })
   }
 }
-async function L(e) {
+async function k(e) {
   try {
     o.Z.dispatch({
       type: "QUESTS_DOCK_RESET_SOFT_DISMISSAL"
@@ -362,21 +384,21 @@ async function L(e) {
   }
 }
 
-function x(e) {
+function M(e) {
   o.Z.dispatch({
     type: "QUESTS_DELIVERY_OVERRIDE",
     questId: e
   })
 }
 
-function k(e, t) {
+function j(e, t) {
   o.Z.dispatch({
     type: "QUESTS_SELECT_TASK_PLATFORM",
     questId: e,
     platform: t
   })
 }
-async function M() {
+async function U() {
   if (!f.Z.isFetchingClaimedQuests) {
     o.Z.dispatch({
       type: "QUESTS_FETCH_CLAIMED_QUESTS_BEGIN"
@@ -399,7 +421,7 @@ async function M() {
   }
 }
 
-function j(e, t, n) {
+function G(e, t, n) {
   o.Z.dispatch({
     type: "QUESTS_UPDATE_OPTIMISTIC_PROGRESS",
     questId: e,
@@ -407,7 +429,7 @@ function j(e, t, n) {
     progress: n
   })
 }
-async function U(e) {
+async function B(e) {
   o.Z.dispatch({
     type: "QUESTS_FETCH_QUEST_TO_DELIVER_BEGIN",
     placement: e
@@ -442,7 +464,7 @@ async function U(e) {
     })
   }
 }
-async function G(e, t) {
+async function F(e, t) {
   var n;
   await c.Z.post({
     url: E.ANM.QUESTS_VIDEO_PROGRESS(e),
@@ -460,7 +482,7 @@ async function G(e, t) {
     rejectWithError: !1
   })
 }
-async function B(e) {
+async function V(e) {
   let t = (0, m.z)(m.i.VIDEO_PLAYER_TRANSCRIPT, e);
   if (null == t) return void h.ZP.getState().setTranscriptAsset({
     questId: e.id,
@@ -487,7 +509,7 @@ async function B(e) {
     })
   }
 }
-async function F(e) {
+async function Z(e) {
   let t = await i.tn.get({
     url: E.ANM.QUEST(e),
     rejectWithError: !1
