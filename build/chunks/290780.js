@@ -2,8 +2,8 @@
 "use strict";
 var r = n(98405),
   i = n(527160),
-  a = n(914331),
-  o = n(640883),
+  o = n(914331),
+  a = n(640883),
   s = n(992032),
   l = n(861567),
   c = 1 !== [].unshift(0),
@@ -24,7 +24,7 @@ r({
 }, {
   unshift: function(e) {
     var t = i(this),
-      n = a(t),
+      n = o(t),
       r = arguments.length;
     if (r) {
       l(n + r);
@@ -34,6 +34,6 @@ r({
       }
       for (var d = 0; d < r; d++) t[d] = arguments[d]
     }
-    return o(t, n + r)
+    return a(t, n + r)
   }
 })

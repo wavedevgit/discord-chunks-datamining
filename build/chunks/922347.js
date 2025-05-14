@@ -7,7 +7,7 @@ n.d(t, {
 var r = n(979554),
   i = n(656698);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -16,14 +16,14 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -31,9 +31,9 @@ function o(e) {
 let s = e => e instanceof l;
 class l extends i.Z {
   static fromServer(e) {
-    return new l(o({}, super.fromServer(e), e))
+    return new l(a({}, super.fromServer(e), e))
   }
   constructor(e) {
-    super(e), a(this, "asset", void 0), a(this, "label", void 0), this.type = r.Z.AVATAR_DECORATION, this.asset = e.asset, this.label = e.label
+    super(e), o(this, "asset", void 0), o(this, "label", void 0), this.type = r.Z.AVATAR_DECORATION, this.asset = e.asset, this.label = e.label
   }
 }

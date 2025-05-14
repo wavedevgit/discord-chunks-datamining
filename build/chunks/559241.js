@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(592125);
 
@@ -13,7 +13,7 @@ function i(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class a {
+class o {
   constructor() {
     i(this, "filterTagIds", void 0), i(this, "sortOrder", void 0), i(this, "layout", void 0), i(this, "tagSetting", void 0), i(this, "setFilterTagIds", e => {
       this.filterTagIds = e
@@ -35,4 +35,4 @@ class a {
     })
   }
 }
-let o = new a
+let a = new o

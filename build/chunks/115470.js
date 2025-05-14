@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => h
 });
 var r, i = n(442837),
-  a = n(570140),
-  o = n(178635);
+  o = n(570140),
+  a = n(178635);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -53,7 +53,7 @@ function f(e) {
     cooldown: n,
     chance: r
   } = e;
-  d[t] = u(l({}, o.R[t]), {
+  d[t] = u(l({}, a.R[t]), {
     cooldown: n,
     chance: r
   })
@@ -72,7 +72,7 @@ class p extends(r = i.ZP.Store) {
   }
 }
 s(p, "displayName", "FeedbackOverrideStore"), s(p, "persistKey", "feedbackOverrides");
-let h = new p(a.Z, {
+let h = new p(o.Z, {
   FEEDBACK_OVERRIDE_SET: f,
   FEEDBACK_OVERRIDE_CLEAR: _
 })

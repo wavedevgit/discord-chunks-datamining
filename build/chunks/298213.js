@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(570140),
   i = n(194359),
-  a = n(855796),
-  o = n(497060),
+  o = n(855796),
+  a = n(497060),
   s = n(699516),
   l = n(885149),
   c = n(981631);
@@ -55,15 +55,15 @@ function p(e) {
     userId: t,
     applicationId: n,
     location: r,
-    friendToken: o,
+    friendToken: a,
     confirmStrangerRequest: s = !1
   } = e;
-  return null != n ? a.Z.acceptGameFriendRequest({
+  return null != n ? o.Z.acceptGameFriendRequest({
     userId: t,
     applicationId: n
   }) : i.Z.acceptFriendRequest({
     userId: t,
-    friendToken: o,
+    friendToken: a,
     confirmStrangerRequest: s,
     context: {
       location: r
@@ -77,9 +77,9 @@ function h(e) {
     applicationId: n,
     location: r,
     friendToken: i,
-    onConfirm: a,
+    onConfirm: o,
     onCancel: c
-  } = e, u = (0, o.pB)("useFriendRequestActions"), d = s.Z.isStranger(t);
+  } = e, u = (0, a.pB)("useFriendRequestActions"), d = s.Z.isStranger(t);
   return null == n && u && !1 !== d ? d && u ? void(0, l.c)({
     onConfirm: () => {
       p({
@@ -88,7 +88,7 @@ function h(e) {
         location: r,
         friendToken: i,
         confirmStrangerRequest: !0
-      }), null == a || a()
+      }), null == o || o()
     },
     onCancel: () => {
       null == c || c()
@@ -104,16 +104,16 @@ function h(e) {
       applicationId: n,
       location: r,
       friendToken: i,
-      onConfirm: a,
+      onConfirm: o,
       onCancel: c
-    }) || null == a || a()
+    }) || null == o || o()
   }).catch(e => {
     m(e, {
       userId: t,
       applicationId: n,
       location: r,
       friendToken: i,
-      onConfirm: a,
+      onConfirm: o,
       onCancel: c
     })
   }) : void 0 : p({
@@ -123,7 +123,7 @@ function h(e) {
     friendToken: i,
     confirmStrangerRequest: !0
   }).then(() => {
-    null == a || a()
+    null == o || o()
   })
 }
 
@@ -157,7 +157,7 @@ let g = {
       applicationId: n,
       location: r
     } = e;
-    null != n ? a.Z.removeGameFriend({
+    null != n ? o.Z.removeGameFriend({
       userId: t,
       applicationId: n
     }) : i.Z.removeFriend(t, {
@@ -170,7 +170,7 @@ let g = {
       applicationId: n,
       location: r
     } = e;
-    return null != n ? a.Z.cancelGameFriendRequest({
+    return null != n ? o.Z.cancelGameFriendRequest({
       userId: t,
       applicationId: n
     }) : i.Z.cancelFriendRequest(t, {

@@ -2,8 +2,8 @@
 "use strict";
 var r = n(98405),
   i = n(580983),
-  a = n(511696),
-  o = n(938373),
+  o = n(511696),
+  a = n(938373),
   s = n(880181),
   l = n(280481),
   c = n(961050),
@@ -14,8 +14,8 @@ var r = n(98405),
   p = n(751736),
   h = n(933121),
   m = n(112493),
-  g = o.PROPER,
-  E = o.CONFIGURABLE,
+  g = a.PROPER,
+  E = a.CONFIGURABLE,
   b = m.IteratorPrototype,
   y = m.BUGGY_SAFARI_ITERATORS,
   O = p("iterator"),
@@ -25,8 +25,8 @@ var r = n(98405),
   T = function() {
     return this
   };
-e.exports = function(e, t, n, o, p, m, A) {
-  l(n, t, o);
+e.exports = function(e, t, n, a, p, m, A) {
+  l(n, t, a);
   var N, C, P, R = function(e) {
       if (e === p && k) return k;
       if (!y && e && e in L) return L[e];
@@ -48,7 +48,7 @@ e.exports = function(e, t, n, o, p, m, A) {
     x = L[O] || L["@@iterator"] || p && L[p],
     k = !y && x || R(p),
     M = "Array" === t && L.entries || x;
-  if (M && (N = c(M.call(new e))) !== Object.prototype && N.next && (!a && c(N) !== b && (u ? u(N, b) : s(N[O]) || _(N, O, T)), d(N, w, !0, !0), a && (h[w] = T)), g && p === I && x && x.name !== I && (!a && E ? f(L, "name", I) : (D = !0, k = function() {
+  if (M && (N = c(M.call(new e))) !== Object.prototype && N.next && (!o && c(N) !== b && (u ? u(N, b) : s(N[O]) || _(N, O, T)), d(N, w, !0, !0), o && (h[w] = T)), g && p === I && x && x.name !== I && (!o && E ? f(L, "name", I) : (D = !0, k = function() {
       return i(x, this)
     })), p)
     if (C = {
@@ -62,7 +62,7 @@ e.exports = function(e, t, n, o, p, m, A) {
       proto: !0,
       forced: y || D
     }, C);
-  return (!a || A) && L[O] !== k && _(L, O, k, {
+  return (!o || A) && L[O] !== k && _(L, O, k, {
     name: p
   }), h[t] = k, C
 }

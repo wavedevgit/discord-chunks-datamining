@@ -5,11 +5,11 @@ n.r(t), n.d(t, {
 });
 var r = n(217224),
   i = n(199544),
-  a = n(951516),
-  o = 6e4;
+  o = n(951516),
+  a = 6e4;
 
 function s(e, t) {
-  (0, a.Z)(2, arguments);
+  (0, o.Z)(2, arguments);
   var n = (0, r.Z)(t);
-  return (0, i.Z)(e, n * o)
+  return (0, i.Z)(e, n * a)
 }

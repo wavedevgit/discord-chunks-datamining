@@ -23,8 +23,8 @@ n.r(t), n.d(t, {
   isThrottled: () => z,
   trackMaker: () => Q
 }), n(35282), n(704826), n(413496), n(433524), n(388685);
-var a, o = n(348327),
-  s = n.n(o),
+var o, a = n(348327),
+  s = n.n(a),
   l = n(512722),
   c = n.n(l),
   u = n(264344),
@@ -89,7 +89,7 @@ if (null != w) {
   let e, t = w.remoteApp.getVersion(),
     n = w.process.platform,
     i = w.os.release,
-    o = w.os.arch,
+    a = w.os.arch,
     s = w.os.appArch,
     l = w.remoteApp.getReleaseChannel(),
     c = (0, p.qf)();
@@ -112,12 +112,12 @@ if (null != w) {
       release_channel: l || "unknown",
       client_version: t,
       os_version: i,
-      os_arch: o,
+      os_arch: a,
       app_arch: s,
       system_locale: c,
       has_client_mods: (0, _.e)(),
       client_launch_id: C
-    }, (null == (a = d().name) ? void 0 : a.toLocaleLowerCase()) === "electron" && (r.browser_user_agent = d().ua || "", r.browser_version = d().version || ""), "linux" === n) {
+    }, (null == (o = d().name) ? void 0 : o.toLocaleLowerCase()) === "electron" && (r.browser_user_agent = d().ua || "", r.browser_version = d().version || ""), "linux" === n) {
     let e = w.crashReporter.getMetadata();
     r.window_manager = e.wm, r.distro = e.distro
   } else "darwin" === n ? r.os_sdk_version = null == i ? void 0 : i.split(".")[0] : "win32" === n && (r.os_sdk_version = null == i ? void 0 : i.split(".")[2])
@@ -255,10 +255,10 @@ function K() {
   let n = {},
     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
   r && (null == n.release_channel || "" === n.release_channel) && (n.release_channel = r.split("-")[0]);
-  let i = parseInt("399299", 10);
+  let i = parseInt("399311", 10);
   isNaN(i) || (n.client_build_number = i);
-  let a = null == w || null == (e = (t = w.remoteApp).getBuildNumber) ? void 0 : e.call(t);
-  return isNaN(a) || (n.native_build_number = a), n.client_event_source = W(), n.has_client_mods = (0, _.e)(), n.client_launch_id = C, n
+  let o = null == w || null == (e = (t = w.remoteApp).getBuildNumber) ? void 0 : e.call(t);
+  return isNaN(o) || (n.native_build_number = o), n.client_event_source = W(), n.has_client_mods = (0, _.e)(), n.client_launch_id = C, n
 }
 
 function z(e) {
@@ -279,30 +279,30 @@ let Q = e => {
     analyticEventConfigs: t,
     dispatcher: r,
     TRACK_ACTION_NAME: i
-  } = e, a = (0, g.$)(r, i);
+  } = e, o = (0, g.$)(r, i);
   return function(e, r) {
     let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
     if (null != n.g.isServerRendering && !0 === n.g.isServerRendering) return Promise.resolve();
-    let o = null != r ? r : {},
+    let a = null != r ? r : {},
       l = t[e];
     if ("function" == typeof l) {
       var u;
-      l = null != (u = l(o)) ? u : null
+      l = null != (u = l(a)) ? u : null
     }
     if (null != l)
       if ("throttlePeriod" in l) {
-        let t = [e, ...l.throttleKeys(o)].join("_");
+        let t = [e, ...l.throttleKeys(a)].join("_");
         if (z(t) || "number" == typeof l.throttlePercent && Math.random() > l.throttlePercent) return Promise.resolve();
         if (l.deduplicate) {
           let e = R[t];
-          if (s()(e, o)) return Promise.resolve();
-          R[t] = o
+          if (s()(e, a)) return Promise.resolve();
+          R[t] = a
         }
         P[t] = Date.now() + l.throttlePeriod
       } else if ("throttlePercent" in l) {
       if (Math.random() > l.throttlePercent) return Promise.resolve()
     } else c()(!1, "Unsupported analytics event config: ".concat(l));
-    return a(e, r, i)
+    return o(e, r, i)
   }
 };
 

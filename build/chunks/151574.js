@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(91192),
   l = n(924826),
   c = n(536895),
@@ -76,8 +76,8 @@ function M(e, t) {
   if (null == e) return {};
   var n, r, i = j(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -85,8 +85,8 @@ function M(e, t) {
 function j(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let U = 4,
@@ -100,16 +100,16 @@ function Z(e) {
     isFocused: t,
     isHidden: n,
     sendability: i,
-    listIndex: a,
+    listIndex: o,
     sticker: l,
     onMouseOver: c,
     onSelectSticker: u
-  } = e, d = (0, s.JA)("".concat(a)), {
+  } = e, d = (0, s.JA)("".concat(o)), {
     tabIndex: _
   } = d, p = M(d, ["tabIndex"]);
   return (0, r.jsxs)(f.P3F, k(L({}, p), {
     tabIndex: n ? -1 : _,
-    className: o()(w.suggestedExpression, {
+    className: a()(w.suggestedExpression, {
       [w.suggestedExpressionFocused]: t
     }),
     focusProps: {
@@ -141,14 +141,14 @@ function H(e) {
     editorRef: t,
     hasStickerResults: n,
     shouldRenderSuggestions: r,
-    focusedSuggestionType: a,
-    setFocusedStickerListItem: o,
+    focusedSuggestionType: o,
+    setFocusedStickerListItem: a,
     setFocusedSuggestionType: s,
     setHasDismissed: u,
     setTextInputValue: d
   } = e, f = i.useCallback((e, t) => {
-    o(t)
-  }, [o]), _ = (0, l.ZP)({
+    a(t)
+  }, [a]), _ = (0, l.ZP)({
     id: "expression-suggestions-stickers",
     isEnabled: !0,
     scrollToStart: V,
@@ -159,19 +159,19 @@ function H(e) {
   });
   return i.useEffect(() => {
     let e = e => {
-      var i, o;
+      var i, a;
       if (r && !e.shiftKey && !e.ctrlKey && !e.altKey && !e.metaKey) {
         switch (e.key) {
           case "ArrowUp":
-            e.preventDefault(), null == a && n && (_.focusFirstVisibleItem(), s(0));
+            e.preventDefault(), null == o && n && (_.focusFirstVisibleItem(), s(0));
             break;
           case "ArrowDown":
             s(null), null == (i = t.current) || i.focus();
             break;
           case "Escape":
-            s(null), u(!0), d(""), null == (o = t.current) || o.focus()
+            s(null), u(!0), d(""), null == (a = t.current) || a.focus()
         }
-        0 === a && _.containerProps.onKeyDown(e)
+        0 === o && _.containerProps.onKeyDown(e)
       }
     };
     return window.addEventListener("keydown", e, {
@@ -179,7 +179,7 @@ function H(e) {
     }), () => window.removeEventListener("keydown", e, {
       capture: !0
     })
-  }, [_, r, a, s, n, t, u, o, d]), {
+  }, [_, r, o, s, n, t, u, a, d]), {
     stickersNavigator: _
   }
 }
@@ -187,12 +187,12 @@ let Y = i.memo(function(e) {
   var t;
   let {
     editorRef: n,
-    channel: a,
+    channel: o,
     isEditorFocused: l,
     onSelectSticker: c,
     stickerIconVisible: u = !1,
     submitButtonVisible: d = !1
-  } = e, m = i.useContext(h.ZP), [v, I] = i.useState(null), [D, x] = i.useState(!1), [j, U] = i.useState(null), G = (0, g.Iu)(e => null != e.activeView), B = i.useRef(null), [V, Y] = i.useState(""), [W, K] = i.useState(""), [z, q] = i.useState(!1), [Q, X] = i.useState(!1), J = (0, A.Z)(V, D, a), {
+  } = e, m = i.useContext(h.ZP), [v, I] = i.useState(null), [D, x] = i.useState(!1), [j, U] = i.useState(null), G = (0, g.Iu)(e => null != e.activeView), B = i.useRef(null), [V, Y] = i.useState(""), [W, K] = i.useState(""), [z, q] = i.useState(!1), [Q, X] = i.useState(!1), J = (0, A.Z)(V, D, o), {
     analyticsLocations: $
   } = (0, p.ZP)(_.Z.EXPRESSION_SUGGESTIONS), {
     handleTextChange: ee,
@@ -228,13 +228,13 @@ let Y = i.memo(function(e) {
     })
   }, [l]);
   let ei = J.length > 0,
-    ea = en && !G && !z && !D && !Q && ei,
+    eo = en && !G && !z && !D && !Q && ei,
     {
-      stickersNavigator: eo
+      stickersNavigator: ea
     } = H({
       editorRef: n,
       hasStickerResults: ei,
-      shouldRenderSuggestions: ea,
+      shouldRenderSuggestions: eo,
       focusedSuggestionType: v,
       setFocusedSuggestionType: I,
       setHasDismissed: x,
@@ -242,7 +242,7 @@ let Y = i.memo(function(e) {
       setTextInputValue: Y
     }),
     es = (e, t) => {
-      if (ea) {
+      if (eo) {
         if (T.default.track(P.rMx.AUTO_SUGGEST_EXPRESSION_SELECTED, {
             sticker_id: e.id,
             suggestion_trigger: W
@@ -260,16 +260,16 @@ let Y = i.memo(function(e) {
     el = i.useRef([]),
     ec = i.useRef(!1);
   i.useEffect(() => {
-    ea && (el.current = J), ea !== ec.current && (m.emit(ea ? "sticker-suggestions-shown" : "sticker-suggestions-hidden"), ea && ((0, N.Tk)(V), K(V))), ec.current = ea
-  }, [m, ea, J, V]);
-  let eu = !ea,
-    ed = ea ? J : el.current;
+    eo && (el.current = J), eo !== ec.current && (m.emit(eo ? "sticker-suggestions-shown" : "sticker-suggestions-hidden"), eo && ((0, N.Tk)(V), K(V))), ec.current = eo
+  }, [m, eo, J, V]);
+  let eu = !eo,
+    ed = eo ? J : el.current;
   return (0, r.jsx)(p.Gt, {
     value: $,
     children: (0, r.jsxs)(f.P3F, {
       tabIndex: eu ? -1 : 0,
       "aria-hidden": eu,
-      className: o()(w.container, {
+      className: a()(w.container, {
         [w.hidden]: eu,
         [w.submitButtonOffset]: d,
         [w.stickerIconOffset]: u
@@ -284,7 +284,7 @@ let Y = i.memo(function(e) {
       },
       children: [(0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(s.bG, {
-          navigator: eo,
+          navigator: ea,
           children: (0, r.jsx)(s.SJ, {
             children: e => {
               var {
@@ -312,7 +312,7 @@ let Y = i.memo(function(e) {
                     sendability: i,
                     listIndex: t,
                     onMouseOver: () => {
-                      eo.setFocus("".concat(t)), U("".concat(t))
+                      ea.setFocus("".concat(t)), U("".concat(t))
                     },
                     onSelectSticker: es,
                     sticker: n

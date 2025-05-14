@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => h
 }), n(539854), n(388685);
 var r, i = n(255367),
-  a = n(73800),
-  o = n(120356),
-  s = n.n(o),
+  o = n(73800),
+  a = n(120356),
+  s = n.n(a),
   l = n(481060),
   c = n(598077),
   u = n(436980),
@@ -27,20 +27,20 @@ function _(e, t, n) {
     children: e
   }, n)
 }
-class p extends(r = a.PureComponent) {
+class p extends(r = o.PureComponent) {
   renderUsers() {
     let {
       users: e,
       max: t,
       renderUser: n = this.defaultRenderUser,
       renderMoreUsers: r
-    } = this.props, i = [], a = e.length === t ? e.length : t - 1, o = 0;
-    for (; o < a && o < e.length;) {
-      let t = o === e.length - 1;
-      i.push(n(e[o] || null, t ? null : u.avatarMasked, "user-".concat(o), t)), o++
+    } = this.props, i = [], o = e.length === t ? e.length : t - 1, a = 0;
+    for (; a < o && a < e.length;) {
+      let t = a === e.length - 1;
+      i.push(n(e[a] || null, t ? null : u.avatarMasked, "user-".concat(a), t)), a++
     }
-    if (o < e.length) {
-      let t = Math.min(e.length - o, 99);
+    if (a < e.length) {
+      let t = Math.min(e.length - a, 99);
       i.push(r("+".concat(t), u.moreUsers, "more-users", t))
     }
     return i
@@ -71,19 +71,19 @@ class p extends(r = a.PureComponent) {
   constructor(...e) {
     super(...e), f(this, "_ref", void 0), f(this, "defaultRenderUser", (e, t, n, r) => {
       let {
-        onClick: a,
-        size: o,
+        onClick: o,
+        size: a,
         guildId: f
       } = this.props, _ = e instanceof c.Z ? e : null != e ? e.user : null;
       return null == _ ? (0, i.jsx)("div", {
         className: s()(u.emptyUser, t)
       }, n) : (0, i.jsx)(l.qEK, {
         tabIndex: 0,
-        src: _.getAvatarURL(f, (0, l.pxk)(o)),
-        size: o,
+        src: _.getAvatarURL(f, (0, l.pxk)(a)),
+        size: a,
         "aria-label": _.username,
         className: s()(t, d.cursorPointer, u.avatarSize),
-        onClick: e => null != a ? a(e, _, this._ref) : null
+        onClick: e => null != o ? o(e, _, this._ref) : null
       }, _.id)
     })
   }

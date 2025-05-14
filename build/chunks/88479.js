@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(685072),
-  a = n(82965),
-  o = n(871499);
+  o = n(82965),
+  a = n(871499);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -35,8 +35,8 @@ function c(e, t) {
   if (null == e) return {};
   var n, r, i = u(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -44,8 +44,8 @@ function c(e, t) {
 function u(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let d = function(e) {
@@ -55,10 +55,10 @@ let d = function(e) {
   let {
     Component: s,
     events: u
-  } = (0, i.K)(), d = (0, a.Z)({
+  } = (0, i.K)(), d = (0, o.Z)({
     location: "DisconnectButton"
   });
-  return (0, r.jsx)(o.d, l({
+  return (0, r.jsx)(a.d, l({
     fullRegionButton: d,
     color: "disconnect",
     iconComponent: null != t ? t : s

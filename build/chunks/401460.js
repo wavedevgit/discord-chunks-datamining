@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(392711),
   l = n.n(s),
   c = n(481060),
@@ -66,7 +66,7 @@ function I(e) {
   let {
     id: t,
     className: n,
-    onSelect: a,
+    onSelect: o,
     isSelected: s = !1,
     tabIndex: l,
     children: f,
@@ -82,10 +82,10 @@ function I(e) {
       className: m.appIconSelectionContainer,
       children: [(0, r.jsx)(c.P3F, y(E({}, e, I), {
         tabIndex: null != l ? l : I.tabIndex,
-        className: o()(m.appIconSelection, {
+        className: a()(m.appIconSelection, {
           [m.selected]: s
         }, n),
-        onClick: s ? p.dG4 : () => null == a ? void 0 : a(t),
+        onClick: s ? p.dG4 : () => null == o ? void 0 : o(t),
         children: f
       })), s && (0, r.jsx)(u.oK, {}), h && (0, r.jsx)("div", {
         className: m.lockedBadgeContainer,
@@ -103,16 +103,16 @@ function S(e) {
     icon: t,
     isSelected: n,
     disabled: i,
-    tabIndex: a,
-    onSelect: o,
+    tabIndex: o,
+    onSelect: a,
     locked: s
   } = e;
   return (0, r.jsx)(I, {
-    onSelect: i ? void 0 : o,
+    onSelect: i ? void 0 : a,
     isSelected: n,
     id: t.id,
     className: i ? m.disabled : void 0,
-    tabIndex: a,
+    tabIndex: o,
     locked: s,
     children: (0, r.jsx)(f.Z, {
       id: t.id,

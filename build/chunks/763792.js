@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   G: () => i,
-  W: () => a
+  W: () => o
 });
 var r = n(535396);
 let i = [{
@@ -51,7 +51,7 @@ let i = [{
       features: []
     }
   }],
-  a = [{
+  o = [{
     type: r.Us.PERK,
     skuId: "4",
     title: "Lorem ipsum",

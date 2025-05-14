@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => p
 }), n(539854), n(388685);
 var r, i = n(442837),
-  a = n(570140);
+  o = n(570140);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -52,8 +52,8 @@ class _ extends(r = i.ZP.PersistedStore) {
     return c
   }
 }
-o(_, "displayName", "SecureFramesPersistedStore"), o(_, "persistKey", "SecureFramesPersistedStore");
-let p = new _(a.Z, {
+a(_, "displayName", "SecureFramesPersistedStore"), a(_, "persistKey", "SecureFramesPersistedStore");
+let p = new _(o.Z, {
   SECURE_FRAMES_SETTINGS_UPDATE: u,
   SECURE_FRAMES_UPLOADED_KEY_VERSION_ADD: d,
   SECURE_FRAMES_UPLOADED_KEY_VERSION_CLEAR: f

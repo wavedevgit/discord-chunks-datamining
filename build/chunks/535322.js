@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(481060),
+  o = n.n(i),
+  a = n(481060),
   s = n(325767),
   l = n(645652),
   c = n(388032),
@@ -77,9 +77,9 @@ function m(e) {
   return (0, r.jsx)(l.Z, {
     className: t,
     forceUseColor: n,
-    children: (0, r.jsx)(o.IGR, {
+    children: (0, r.jsx)(a.IGR, {
       disableColor: !0,
-      className: a()(u.tag, {
+      className: o()(u.tag, {
         [u.inheritTextColor]: i,
         [u.inheritBackgroundColor]: s
       }),

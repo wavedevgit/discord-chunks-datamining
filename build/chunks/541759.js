@@ -5,9 +5,9 @@ n.d(t, {
 });
 var r = n(314897),
   i = n(33039),
-  a = n(458725);
+  o = n(458725);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,7 +23,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -36,7 +36,7 @@ let l = {
     } = e;
     return r.default.getId() === t && null != n
   }).map(e => s({
-    type: a.u.VIDEO_STREAM_SENDER_READY_TIMEOUT
+    type: o.u.VIDEO_STREAM_SENDER_READY_TIMEOUT
   }, e)),
   makeErrorContextKey: e => "".concat(e.mediaContext, ":").concat(e.userId)
 }

@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(73800),
   i = n(570140);
 
-function a(e) {
+function o(e) {
   let {
     connectedEmbeddedActivity: t
   } = e, n = null == t ? void 0 : t.applicationId;

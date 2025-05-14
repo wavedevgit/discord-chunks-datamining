@@ -1,16 +1,16 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  D: () => a,
-  Y: () => o
+  D: () => o,
+  Y: () => a
 });
 var r = n(370336);
 let i = "_sentrySpan";
 
-function a(e, t) {
+function o(e, t) {
   t ? (0, r.xp)(e, i, t) : delete e[i]
 }
 
-function o(e) {
+function a(e) {
   return e[i]
 }

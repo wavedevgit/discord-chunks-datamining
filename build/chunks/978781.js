@@ -6,8 +6,8 @@ n.d(t, {
 }), n(314940), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(278074),
   l = n(442837),
   c = n(481060),
@@ -84,13 +84,13 @@ function M() {
 function j(e) {
   let {
     tab: t,
-    isPreview: a,
+    isPreview: o,
     isCoachmark: l,
     onClose: u
   } = e, f = i.useCallback(() => {
     u(), l || d.Z.open()
   }, [u, l]), p = (0, s.EQ)({
-    isPreview: a,
+    isPreview: o,
     isCoachmark: l
   }).with({
     isCoachmark: !0
@@ -119,7 +119,7 @@ function j(e) {
   }) : void 0, [t]);
   return (0, r.jsxs)("div", {
     className: w.footerContainer,
-    children: [a && (0, r.jsxs)("div", {
+    children: [o && (0, r.jsxs)("div", {
       className: w.footerLabelContainer,
       children: [(0, r.jsx)(c.SrA, {
         className: w.footerNitro,
@@ -136,7 +136,7 @@ function j(e) {
       className: w.footerButtonContainer,
       children: [(0, r.jsx)("div", {
         children: (0, r.jsx)(c.zxk, {
-          className: o()(w.footerButton, w.footerButtonBack),
+          className: a()(w.footerButton, w.footerButtonBack),
           color: c.Ttl.PRIMARY,
           size: c.zxk.Sizes.NONE,
           onClick: f,
@@ -145,7 +145,7 @@ function j(e) {
             direction: I.Z.Directions.LEFT
           })
         })
-      }), a && (0, r.jsx)(S.Z, {
+      }), o && (0, r.jsx)(S.Z, {
         className: w.footerButton,
         subscriptionTier: P.Si.TIER_2,
         showGradient: !0,
@@ -162,8 +162,8 @@ function U(e) {
   let {
     initialTab: t,
     markAsDismissed: n,
-    isCoachmark: a
-  } = e, [o, s] = i.useState(t), d = i.useMemo(() => [{
+    isCoachmark: o
+  } = e, [a, s] = i.useState(t), d = i.useMemo(() => [{
     name: R.intl.string(R.t.Ksh3io),
     value: 0
   }, {
@@ -196,7 +196,7 @@ function U(e) {
           })]
         }), (0, r.jsx)(c.sY7, {
           options: d,
-          value: o,
+          value: a,
           onChange: e => {
             let {
               value: t
@@ -207,11 +207,11 @@ function U(e) {
         })]
       }), (0, r.jsxs)(c.Ttm, {
         className: w.scrollContainer,
-        children: [0 === o && (0, r.jsx)(k, {
-          isCoachmark: a
-        }), 1 === o && (0, r.jsx)(M, {})]
+        children: [0 === a && (0, r.jsx)(k, {
+          isCoachmark: o
+        }), 1 === a && (0, r.jsx)(M, {})]
       }), (0, r.jsx)(j, {
-        tab: o,
+        tab: a,
         isPreview: g,
         onClose: P,
         isCoachmark: !1

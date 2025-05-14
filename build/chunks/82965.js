@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(861254),
   i = n(221241);
 
-function a(e) {
+function o(e) {
   let {
     groupedButtons: t
   } = (0, r.ZP)(e), {

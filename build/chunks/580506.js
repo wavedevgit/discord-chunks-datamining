@@ -5,9 +5,9 @@ n.d(t, {
 }), n(388685);
 var r = n(147913),
   i = n(2818),
-  a = n(192720);
+  o = n(192720);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -21,13 +21,13 @@ function s() {
     location: "saved_messages_manager"
   }, {
     autoTrackExposure: !1
-  }).enabled && (0, a.sE)()
+  }).enabled && (0, o.sE)()
 }
 class l extends r.Z {
   constructor(...e) {
-    super(...e), o(this, "actions", {
+    super(...e), a(this, "actions", {
       POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen()
-    }), o(this, "handlePostConnectionOpen", () => {
+    }), a(this, "handlePostConnectionOpen", () => {
       s()
     })
   }

@@ -4,8 +4,8 @@ let r, i;
 n.d(t, {
   Z: () => O
 }), n(388685), n(415506), n(49124);
-var a = n(570140),
-  o = n(330516),
+var o = n(570140),
+  a = n(330516),
   s = n(710845),
   l = n(594174),
   c = n(436181),
@@ -30,7 +30,7 @@ function g() {
 
 function E(e) {
   let t = JSON.parse(e);
-  return h.log("Native Dispatch error", t), new o.Z(t)
+  return h.log("Native Dispatch error", t), new a.Z(t)
 }
 
 function b(e, t) {
@@ -58,14 +58,14 @@ let O = {
       userToken: t,
       userId: n,
       installPaths: r,
-      platform: a,
-      stateCallback: o,
+      platform: o,
+      stateCallback: a,
       errorCallback: s
     } = e;
     null == i && m().then(e => {
       let c = {
           environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-          build_number: "399299"
+          build_number: "399311"
         },
         u = l.default.getCurrentUser();
       null != u && (c.user_id = u.id, c.user_name = u.tag, null != u.email && (c.email = u.email));
@@ -81,11 +81,11 @@ let O = {
         api_endpoint: "".concat("https:").concat(window.GLOBAL_ENV.API_ENDPOINT),
         environment: window.GLOBAL_ENV.PROJECT_ENV,
         sentry: c,
-        platform: a
+        platform: o
       };
       i = new e.Dispatch(JSON.stringify(d), e => {
         let t = JSON.parse(e);
-        o({
+        a({
           applications: t.applications,
           paused: t.paused,
           currentTask: null != t.current_task ? {
@@ -114,8 +114,8 @@ let O = {
       applicationName: n,
       applicationIcon: r,
       branchId: i,
-      buildId: a,
-      manifestIds: o,
+      buildId: o,
+      manifestIds: a,
       installationPath: s
     } = e, l = g();
     null != l && l.command(JSON.stringify({
@@ -124,14 +124,14 @@ let O = {
       application_name: n,
       application_icon: r,
       branch_id: i,
-      build_id: a,
-      manifest_ids: o,
+      build_id: o,
+      manifest_ids: a,
       install_path: s
     }), b)
   },
   setCurrentTask(e, t, n, r, i) {
-    let a = g();
-    return null != a && (a.command(JSON.stringify({
+    let o = g();
+    return null != o && (o.command(JSON.stringify({
       command: "SetCurrentTask",
       application_id: e,
       branch_id: t,
@@ -193,7 +193,7 @@ let O = {
       }
     })
   },
-  runLaunchSetup: (e, t) => c.Z.isRunning() ? Promise.reject(Error("Already running launch setup.")) : (a.Z.dispatch({
+  runLaunchSetup: (e, t) => c.Z.isRunning() ? Promise.reject(Error("Already running launch setup.")) : (o.Z.dispatch({
     type: "DISPATCH_APPLICATION_LAUNCH_SETUP_START"
   }), new Promise((n, r) => {
     let i = g();
@@ -204,25 +204,25 @@ let O = {
       branch_id: t
     }), (e, t, i) => {
       if ("" !== e) {
-        a.Z.dispatch({
+        o.Z.dispatch({
           type: "DISPATCH_APPLICATION_LAUNCH_SETUP_COMPLETE"
         });
         let t = E(e);
-        a.Z.dispatch({
+        o.Z.dispatch({
           type: "DISPATCH_APPLICATION_ERROR",
           error: t
         }), null != t.code && t.code === p.ff.POST_INSTALL_CANCELLED ? r(t) : n();
         return
       }
       if ("" !== t) {
-        a.Z.dispatch({
+        o.Z.dispatch({
           type: "DISPATCH_APPLICATION_LAUNCH_SETUP_COMPLETE"
         }), n();
         return
       }
       if ("" !== i) {
         let e = JSON.parse(i);
-        a.Z.dispatch({
+        o.Z.dispatch({
           type: "DISPATCH_APPLICATION_INSTALL_SCRIPTS_PROGRESS_UPDATE",
           progress: e.progress,
           total: e.total,
@@ -231,14 +231,14 @@ let O = {
       }
     })
   })),
-  launch: (e, t, n, r) => new Promise((i, a) => {
-    let o = g();
-    if (null == o) return void a(Error("native dispatch instance not found"));
+  launch: (e, t, n, r) => new Promise((i, o) => {
+    let a = g();
+    if (null == a) return void o(Error("native dispatch instance not found"));
 
     function s(e, t) {
-      "" !== e ? a(E(e)) : i([JSON.parse(t).pid])
+      "" !== e ? o(E(e)) : i([JSON.parse(t).pid])
     }
-    o.command(JSON.stringify({
+    a.command(JSON.stringify({
       command: "Launch",
       application_id: e,
       branch_id: t,

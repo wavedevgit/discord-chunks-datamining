@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => E
 });
 var r, i = n(442837),
-  a = n(902704),
-  o = n(570140);
+  o = n(902704),
+  a = n(570140);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -35,9 +35,9 @@ function f(e) {
     scrollTop: n,
     scrollHeight: r,
     offsetHeight: i
-  } = e, o = l[t];
+  } = e, a = l[t];
   if (null == n || null == r || null == i) {
-    if (null == o) return !1;
+    if (null == a) return !1;
     delete l[t]
   } else {
     let e = {
@@ -46,7 +46,7 @@ function f(e) {
       scrollHeight: r,
       offsetHeight: i
     };
-    if (null != o && (0, a.Z)(o, e)) return !1;
+    if (null != a && (0, o.Z)(a, e)) return !1;
     l[t] = e
   }
 }
@@ -111,7 +111,7 @@ class g extends(r = i.ZP.Store) {
   }
 }
 s(g, "displayName", "DimensionStore");
-let E = new g(o.Z, {
+let E = new g(a.Z, {
   UPDATE_CHANNEL_DIMENSIONS: f,
   UPDATE_CHANNEL_LIST_DIMENSIONS: m,
   UPDATE_GUILD_LIST_DIMENSIONS: _,

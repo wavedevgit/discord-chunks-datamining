@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(73800),
   i = n(813841);
-let a = [];
+let o = [];
 
-function o(e, t) {
+function a(e, t) {
   let n = (0, r.useRef)(),
-    o = (0, r.useRef)(a);
-  return o.current === a ? (n.current = e(), o.current = t) : (0, i.Z)(t, o.current) || (n.current = e(), o.current = t), n.current
+    a = (0, r.useRef)(o);
+  return a.current === o ? (n.current = e(), a.current = t) : (0, i.Z)(t, a.current) || (n.current = e(), a.current = t), n.current
 }

@@ -12,11 +12,11 @@ function i(e, t) {
   }
 }
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t && i(e.prototype, t), n && i(e, n), e
 }
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -29,9 +29,9 @@ n.d(t, {
 });
 var s = function() {
   function e(t, n) {
-    r(this, e), o(this, "ownerDocument", null), o(this, "globalContext", void 0), o(this, "optionsArgs", void 0), this.globalContext = t, this.optionsArgs = n
+    r(this, e), a(this, "ownerDocument", null), a(this, "globalContext", void 0), a(this, "optionsArgs", void 0), this.globalContext = t, this.optionsArgs = n
   }
-  return a(e, [{
+  return o(e, [{
     key: "window",
     get: function() {
       return this.globalContext ? this.globalContext : "undefined" != typeof window ? window : void 0

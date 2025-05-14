@@ -5,13 +5,13 @@ n.d(t, {
 }), n(997841);
 var r = n(255367),
   i = n(73800),
-  a = n(710260),
-  o = n(231338);
+  o = n(710260),
+  a = n(231338);
 
 function s(e) {
   let {
     children: t,
-    theme: n = o.BR.DARK,
+    theme: n = a.BR.DARK,
     primaryColor: s = null,
     secondaryColor: l = null,
     gradient: c = null,
@@ -21,7 +21,7 @@ function s(e) {
     density: _ = "compact",
     disableAdaptiveTheme: p = !1,
     reduceAdaptiveTheme: h = !1
-  } = e, m = i.useMemo(() => (0, a.TT)({
+  } = e, m = i.useMemo(() => (0, o.TT)({
     theme: n,
     primaryColor: s,
     secondaryColor: l,
@@ -33,7 +33,7 @@ function s(e) {
     disableAdaptiveTheme: p,
     reduceAdaptiveTheme: h
   }), [n, s, l, c, u, d, f, _, p, h]);
-  return (0, r.jsx)(a.Ni.Provider, {
+  return (0, r.jsx)(o.Ni.Provider, {
     value: m,
     children: t
   })

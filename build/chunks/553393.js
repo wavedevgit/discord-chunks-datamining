@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(683305),
-  o = n(91192),
+  o = n(683305),
+  a = n(91192),
   s = n(442837),
   l = n(780384),
   c = n(481060),
@@ -85,14 +85,14 @@ function F(e) {
   }), z = (0, I.tP)(O), q = (null == O || null == (t = O.userStatus) ? void 0 : t.claimedAt) != null, Q = (null == O || null == (h = O.userStatus) ? void 0 : h.enrolledAt) != null, X = (null == O || null == (m = O.userStatus) ? void 0 : m.completedAt) != null, J = (0, s.e7)([g.Z], () => g.Z.getState().theme), $ = (0, l.wj)(J) ? D.BR.DARK : D.BR.LIGHT, ee = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), {
     ref: et,
     height: en
-  } = (0, f.ZP)(), [er, ei] = i.useState(ee), ea = (0, _.Aq)(), eo = (0, o.eg)();
+  } = (0, f.ZP)(), [er, ei] = i.useState(ee), eo = (0, _.Aq)(), ea = (0, a.eg)();
   i.useEffect(() => {
-    let e = eo.current;
+    let e = ea.current;
     return null == e || e.addEventListener("scroll", V), () => {
       null == e || e.removeEventListener("scroll", V)
     }
-  }, [V, eo]), i.useEffect(() => {
-    let e = eo.current,
+  }, [V, ea]), i.useEffect(() => {
+    let e = ea.current,
       t = A.current;
     if (null == e || null == t) return;
     let n = new MutationObserver(() => Z());
@@ -102,7 +102,7 @@ function F(e) {
     }), () => {
       n.disconnect()
     }
-  }, [A, eo, Z]);
+  }, [A, ea, Z]);
   let es = (0, c.q_F)({
       from: {
         height: 0
@@ -125,7 +125,7 @@ function F(e) {
       }
     }),
     ec = () => {
-      ea.dispatch(w.CkL.POPOUT_CLOSE)
+      eo.dispatch(w.CkL.POPOUT_CLOSE)
     },
     eu = "top" === F ? "".concat(j, " ").concat(j, " 0 0") : "0 0 ".concat(j, " ").concat(j);
   if (null == O || z || q && !B(k, W)) return null;
@@ -196,7 +196,7 @@ function F(e) {
       handleClickCta: ef,
       tileAssetType: "game"
     };
-  return (0, r.jsx)(a.animated.div, {
+  return (0, r.jsx)(o.animated.div, {
     ref: e => {
       H.current = e
     },
@@ -247,7 +247,7 @@ function F(e) {
           className: x.right,
           children: (0, r.jsxs)("div", {
             className: x.imgWrapper,
-            children: [el((e, t) => t && (0, r.jsx)(a.animated.div, {
+            children: [el((e, t) => t && (0, r.jsx)(o.animated.div, {
               style: e,
               className: x.imgUnderlay
             })), "game" === eh.tileAssetType && (0, r.jsx)("img", {

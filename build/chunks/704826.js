@@ -2,8 +2,8 @@
 "use strict";
 var r = n(636881),
   i = n(580983),
-  a = n(46015),
-  o = n(518187),
+  o = n(46015),
+  a = n(518187),
   s = n(621523),
   l = n(179122),
   c = n(880181),
@@ -19,10 +19,10 @@ var r = n(636881),
   b = n(751736)("replace"),
   y = Math.max,
   O = Math.min,
-  v = a([].concat),
-  I = a([].push),
-  S = a("".indexOf),
-  T = a("".slice),
+  v = o([].concat),
+  I = o([].push),
+  S = o("".indexOf),
+  T = o("".slice),
   A = function(e) {
     return void 0 === e ? e : String(e)
   },
@@ -32,26 +32,26 @@ var r = n(636881),
   C = function() {
     return !!/./ [b] && "" === /./ [b]("a", "$0")
   }();
-o("replace", function(e, t, n) {
-  var a = C ? "$" : "$0";
+a("replace", function(e, t, n) {
+  var o = C ? "$" : "$0";
   return [function(e, n) {
     var r = p(this),
-      a = u(e) ? void 0 : m(e, b);
-    return a ? i(a, e, r, n) : i(t, _(r), e, n)
+      o = u(e) ? void 0 : m(e, b);
+    return o ? i(o, e, r, n) : i(t, _(r), e, n)
   }, function(e, i) {
-    var o = l(this),
+    var a = l(this),
       s = _(e);
-    if ("string" == typeof i && -1 === S(i, a) && -1 === S(i, "$<")) {
-      var u = n(t, o, s, i);
+    if ("string" == typeof i && -1 === S(i, o) && -1 === S(i, "$<")) {
+      var u = n(t, a, s, i);
       if (u.done) return u.value
     }
     var p = c(i);
     p || (i = _(i));
-    var m = o.global;
-    m && (R = o.unicode, o.lastIndex = 0);
-    for (var b = []; null !== (D = E(o, s)) && (I(b, D), m);) {
+    var m = a.global;
+    m && (R = a.unicode, a.lastIndex = 0);
+    for (var b = []; null !== (D = E(a, s)) && (I(b, D), m);) {
       ;
-      "" === _(D[0]) && (o.lastIndex = h(s, f(o.lastIndex), R))
+      "" === _(D[0]) && (a.lastIndex = h(s, f(a.lastIndex), R))
     }
     for (var N = "", C = 0, P = 0; P < b.length; P++) {
       for (var R, w, D = b[P], L = _(D[0]), x = y(O(d(D.index), s.length), 0), k = [], M = 1; M < D.length; M++) I(k, A(D[M]));

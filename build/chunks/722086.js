@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => _
 });
 var r, i = n(442837),
-  a = n(570140);
+  o = n(570140);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -52,8 +52,8 @@ class f extends(r = i.ZP.Store) {
     return s[e]
   }
 }
-o(f, "displayName", "NoteStore");
-let _ = new f(a.Z, {
+a(f, "displayName", "NoteStore");
+let _ = new f(o.Z, {
   CONNECTION_OPEN: l,
   OVERLAY_INITIALIZE: l,
   USER_NOTE_UPDATE: c,

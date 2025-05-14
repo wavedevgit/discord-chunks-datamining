@@ -33,5 +33,5 @@ let a = (0, i.B)({
 function s() {
   return a.useExperiment({
     location: "default"
-  }).enabled && (0, r.oC)()
+  }).enabled && (0, r.oC)() && !__OVERLAY__
 }

@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => p
 });
 var r, i = n(442837),
-  a = n(570140);
+  o = n(570140);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -52,8 +52,8 @@ class _ extends(r = i.ZP.PersistedStore) {
     return c[e]
   }
 }
-o(_, "displayName", "TopEmojiStore"), o(_, "persistKey", "TopEmojiStore");
-let p = new _(a.Z, {
+a(_, "displayName", "TopEmojiStore"), a(_, "persistKey", "TopEmojiStore");
+let p = new _(o.Z, {
   LOGOUT: u,
   TOP_EMOJIS_FETCH: d,
   TOP_EMOJIS_FETCH_SUCCESS: f

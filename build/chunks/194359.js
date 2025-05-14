@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(35282);
 var r = n(544891),
   i = n(780384),
-  a = n(570140),
-  o = n(391650),
+  o = n(570140),
+  a = n(391650),
   s = n(877215),
   l = n(895886),
   c = n(681678),
@@ -54,7 +54,7 @@ function I(e, t, n) {
   let {
     status: r,
     body: i
-  } = e, a = i && i.code;
+  } = e, o = i && i.code;
   switch (r) {
     case 429:
       0 === t && O({
@@ -64,23 +64,23 @@ function I(e, t, n) {
       });
       break;
     case 403:
-      if (a === m.evJ.EMAIL_VERIFICATION_REQUIRED) {
+      if (o === m.evJ.EMAIL_VERIFICATION_REQUIRED) {
         O({
           title: E.intl.string(E.t.Gqf33N),
           body: E.intl.string(E.t.GHOBd3),
           confirmText: E.intl.string(E.t.HbTSEx),
           onConfirm: () => {
-            o.j()
+            a.j()
           }
         });
         break
       }
     default:
-      if (a === m.evJ.USER_QUARANTINED) v();
-      else if ((0, u.b)(r, a)) break;
-      else if (a === m.evJ.RELATIONSHIP_INVALID_NO_CONFIRMATION) break;
+      if (o === m.evJ.USER_QUARANTINED) v();
+      else if ((0, u.b)(r, o)) break;
+      else if (o === m.evJ.RELATIONSHIP_INVALID_NO_CONFIRMATION) break;
       else if (0 === t) {
-        let e = null != n ? (0, f.NF)(a || 0, n) : E.intl.string(E.t.paDJBA);
+        let e = null != n ? (0, f.NF)(o || 0, n) : E.intl.string(E.t.paDJBA);
         O({
           title: E.intl.string(E.t["6moJ8v"]),
           body: e,
@@ -96,27 +96,27 @@ let S = {
         discordTag: t,
         context: n,
         captchaPayload: i,
-        errorUxConfig: a = 0
-      } = e, [o, s] = t.split("#");
+        errorUxConfig: o = 0
+      } = e, [a, s] = t.split("#");
       return r.tn.post({
         url: m.ANM.USER_RELATIONSHIPS(),
         body: y({
-          username: o,
+          username: a,
           discriminator: parseInt(s)
         }, i),
         context: n,
         oldFormErrors: !0,
         rejectWithError: !1
       }).catch(e => {
-        I(e, a, t)
+        I(e, o, t)
       })
     },
     addRelationship(e, t) {
       let {
         userId: n,
         context: i,
-        type: a,
-        friendToken: o,
+        type: o,
+        friendToken: a,
         fromFriendSuggestion: s,
         confirmStrangerRequest: l,
         captchaPayload: c
@@ -124,8 +124,8 @@ let S = {
       return r.tn.put({
         url: m.ANM.USER_RELATIONSHIP(n),
         body: y({
-          type: a,
-          friend_token: o,
+          type: o,
+          friend_token: a,
           from_friend_suggestion: s,
           confirm_stranger_request: l
         }, c),
@@ -192,10 +192,10 @@ let S = {
         url: m.ANM.USER_RELATIONSHIPS(),
         oldFormErrors: !0,
         rejectWithError: !0
-      }).then(e => a.Z.dispatch({
+      }).then(e => o.Z.dispatch({
         type: "LOAD_RELATIONSHIPS_SUCCESS",
         relationships: e.body
-      }), () => a.Z.dispatch({
+      }), () => o.Z.dispatch({
         type: "LOAD_RELATIONSHIPS_FAILURE"
       }))
     },
@@ -209,7 +209,7 @@ let S = {
       },
       rejectWithError: !1
     }).then(() => {
-      a.Z.dispatch({
+      o.Z.dispatch({
         type: "RELATIONSHIP_PENDING_INCOMING_REMOVED"
       })
     }).catch(() => {
@@ -225,7 +225,7 @@ let S = {
       },
       rejectWithError: !1
     }).then(() => {
-      a.Z.dispatch({
+      o.Z.dispatch({
         type: "RELATIONSHIP_PENDING_INCOMING_REMOVED"
       })
     }).catch(() => {
@@ -238,7 +238,7 @@ let S = {
       },
       rejectWithError: !1
     }).then(() => {
-      c.Z.showIgnoreSuccessToast(e, n), i.uv.announce(E.intl.string(E.t.Us93CQ)), a.Z.dispatch({
+      c.Z.showIgnoreSuccessToast(e, n), i.uv.announce(E.intl.string(E.t.Us93CQ)), o.Z.dispatch({
         type: "RELATIONSHIP_IGNORE_USER_SUCCESS",
         userId: e,
         timestamp: Date.now()

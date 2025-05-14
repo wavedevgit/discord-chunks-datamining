@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(846027),
   i = n(147913),
-  a = n(353926),
-  o = n(294629),
+  o = n(353926),
+  a = n(294629),
   s = n(592125),
   l = n(131951),
   c = n(19780),
@@ -37,7 +37,7 @@ function p() {
       mute: n,
       selfMute: r,
       suppress: i
-    } = (0, o.b)({
+    } = (0, a.b)({
       channel: t
     });
   return !(n || r || i)
@@ -58,7 +58,7 @@ class h extends i.Z {
       AUDIO_TOGGLE_SELF_MUTE: this.updateLoopbackState,
       AUDIO_SET_TEMPORARY_SELF_MUTE: this.updateLoopbackState,
       AUDIO_SET_SELF_MUTE: this.updateLoopbackState
-    }), f(this, "stores", new Map().set(a.Z, this.handleExperimentStateChange))
+    }), f(this, "stores", new Map().set(o.Z, this.handleExperimentStateChange))
   }
 }
 let m = new h

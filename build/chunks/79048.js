@@ -10,11 +10,11 @@ e.exports = function(e) {
       literal: ["__debug__", "Ellipsis", "False", "None", "NotImplemented", "True"],
       type: ["Any", "Callable", "Coroutine", "Dict", "List", "Literal", "Generic", "Optional", "Sequence", "Set", "Tuple", "Type", "Union"]
     },
-    a = {
+    o = {
       className: "meta",
       begin: /^(>>>|\.\.\.) /
     },
-    o = {
+    a = {
       className: "subst",
       begin: /\{/,
       end: /\}/,
@@ -31,21 +31,21 @@ e.exports = function(e) {
       variants: [{
         begin: /([uU]|[bB]|[rR]|[bB][rR]|[rR][bB])?'''/,
         end: /'''/,
-        contains: [e.BACKSLASH_ESCAPE, a],
+        contains: [e.BACKSLASH_ESCAPE, o],
         relevance: 10
       }, {
         begin: /([uU]|[bB]|[rR]|[bB][rR]|[rR][bB])?"""/,
         end: /"""/,
-        contains: [e.BACKSLASH_ESCAPE, a],
+        contains: [e.BACKSLASH_ESCAPE, o],
         relevance: 10
       }, {
         begin: /([fF][rR]|[rR][fF]|[fF])'''/,
         end: /'''/,
-        contains: [e.BACKSLASH_ESCAPE, a, s, o]
+        contains: [e.BACKSLASH_ESCAPE, o, s, a]
       }, {
         begin: /([fF][rR]|[rR][fF]|[fF])"""/,
         end: /"""/,
-        contains: [e.BACKSLASH_ESCAPE, a, s, o]
+        contains: [e.BACKSLASH_ESCAPE, o, s, a]
       }, {
         begin: /([uU]|[rR])'/,
         end: /'/,
@@ -63,11 +63,11 @@ e.exports = function(e) {
       }, {
         begin: /([fF][rR]|[rR][fF]|[fF])'/,
         end: /'/,
-        contains: [e.BACKSLASH_ESCAPE, s, o]
+        contains: [e.BACKSLASH_ESCAPE, s, a]
       }, {
         begin: /([fF][rR]|[rR][fF]|[fF])"/,
         end: /"/,
-        contains: [e.BACKSLASH_ESCAPE, s, o]
+        contains: [e.BACKSLASH_ESCAPE, s, a]
       }, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE]
     },
     c = "[0-9](_?[0-9])*",
@@ -117,16 +117,16 @@ e.exports = function(e) {
         excludeBegin: !0,
         excludeEnd: !0,
         keywords: i,
-        contains: ["self", a, f, l, e.HASH_COMMENT_MODE]
+        contains: ["self", o, f, l, e.HASH_COMMENT_MODE]
       }]
     };
-  return o.contains = [l, f, a], {
+  return a.contains = [l, f, o], {
     name: "Python",
     aliases: ["py", "gyp", "ipython"],
     unicodeRegex: !0,
     keywords: i,
     illegal: /(<\/|\?)|=>/,
-    contains: [a, f, {
+    contains: [o, f, {
       scope: "variable.language",
       match: /\bself\b/
     }, {

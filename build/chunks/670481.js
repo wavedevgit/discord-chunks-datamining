@@ -3,14 +3,14 @@
 n.d(t, {
   OU: () => d,
   ZP: () => f,
-  fC: () => o
+  fC: () => a
 });
 var r = n(73800),
   i = function() {
     this.locks = [], this.listeners = []
   };
 
-function a(e, t, n) {
+function o(e, t, n) {
   void 0 === n && (n = !1);
   var r = function(e) {
       return document.createTreeWalker(e, NodeFilter.SHOW_ELEMENT, {
@@ -20,8 +20,8 @@ function a(e, t, n) {
       })
     }(e),
     i = t.compareDocumentPosition(e),
-    a = null;
-  i & Node.DOCUMENT_POSITION_PRECEDING || n ? a = r.firstChild() : i & Node.DOCUMENT_POSITION_FOLLOWING && (a = r.lastChild()), (null != a ? a : e).focus()
+    o = null;
+  i & Node.DOCUMENT_POSITION_PRECEDING || n ? o = r.firstChild() : i & Node.DOCUMENT_POSITION_FOLLOWING && (o = r.lastChild()), (null != o ? o : e).focus()
 }
 i.prototype.add = function(e, t) {
   var n = {
@@ -62,12 +62,12 @@ i.prototype.add = function(e, t) {
     return n(t, e.locks)
   })
 };
-var o = new i,
+var a = new i,
   s = 0;
 
 function l(e) {
   (0, r.useEffect)(function() {
-    return o.subscribe(e)
+    return a.subscribe(e)
   }, [e])
 }
 
@@ -88,11 +88,11 @@ function u(e) {
     })[0],
     n = (0, r.useRef)(!1);
   return (0, r.useLayoutEffect)(function() {
-    return o.add(t, function(e) {
+    return a.add(t, function(e) {
         return n.current = e
       }),
       function() {
-        return o.remove(t)
+        return a.remove(t)
       }
   }, [t]), n
 }
@@ -113,10 +113,10 @@ function f(e, t) {
   void 0 === t && (t = {});
   var n = t.returnRef,
     i = t.disableReturnRef,
-    o = t.attachTo;
-  void 0 === o && (o = document);
+    a = t.attachTo;
+  void 0 === a && (a = document);
   var s = t.disable,
-    l = o instanceof HTMLElement ? o.ownerDocument : o,
+    l = a instanceof HTMLElement ? a.ownerDocument : a,
     d = u();
   (0, r.useEffect)(function() {
     s && (d.current = !1)
@@ -128,7 +128,7 @@ function f(e, t) {
         var n = e.current;
         if (null != n) {
           var r = t.target || l.body;
-          n.contains(r) || (t.preventDefault(), t.stopImmediatePropagation(), a(n, r))
+          n.contains(r) || (t.preventDefault(), t.stopImmediatePropagation(), o(n, r))
         }
       }
     }
@@ -139,21 +139,21 @@ function f(e, t) {
         if (null != n) {
           null != t.relatedTarget && t.relatedTarget !== l.body || (t.preventDefault(), n.focus());
           var r = t.target || l.body;
-          n.contains(r) || a(n, r)
+          n.contains(r) || o(n, r)
         }
       }
     }
-    return null == t || null == l.activeElement || t.contains(l.activeElement) || null != t.querySelector("[autofocus]") || a(t, l.activeElement, !0), o.addEventListener("focusin", n, {
+    return null == t || null == l.activeElement || t.contains(l.activeElement) || null != t.querySelector("[autofocus]") || o(t, l.activeElement, !0), a.addEventListener("focusin", n, {
         capture: !0
-      }), o.addEventListener("focusout", r, {
+      }), a.addEventListener("focusout", r, {
         capture: !0
       }),
       function() {
-        o.removeEventListener("focusin", n, {
+        a.removeEventListener("focusin", n, {
           capture: !0
-        }), o.removeEventListener("focusout", r, {
+        }), a.removeEventListener("focusout", r, {
           capture: !0
         })
       }
-  }, [o, l, e, d]), c(n, i)
+  }, [a, l, e, d]), c(n, i)
 }
