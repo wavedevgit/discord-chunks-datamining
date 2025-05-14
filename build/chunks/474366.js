@@ -98,6 +98,10 @@ function y() {
     direction: "vertical",
     align: "center",
     justify: "center",
+    padding: {
+      top: 32,
+      bottom: 16
+    },
     children: [(0, r.jsx)(o.X6q, {
       className: v.header,
       variant: "heading-md/medium",
