@@ -96,7 +96,7 @@ function S(e) {
       context: e
     }) ? l.Z.setCanHavePriority(n, !0) : (l.Z.setCanHavePriority(n, !1), r &= ~f.Dg.PRIORITY)
   }
-  return v(t, n, r)
+  return (r & f.Dg.HIDDEN) === f.Dg.HIDDEN && (r = 0), v(t, n, r)
 }
 
 function T(e) {
