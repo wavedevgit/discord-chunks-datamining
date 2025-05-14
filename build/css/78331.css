@@ -1,6 +1,6 @@
 /**
   Module ID: 78331
-  Original File Name: 11377f85d8270cd6
+  Original File Name: 91762800eb743fa0
 **/
 .emojiErrorItem__67954 {
     align-items: center;
@@ -159,14 +159,15 @@
 footer {
     background-color: var(--background-secondary);
     border-radius: 0 0 var(--radius-md) var(--radius-md);
-    padding: var(--space-lg)
+    padding: var(--space-lg);
+    --custom-button-height: 40px
 }
 
 .grid_db78b7 {
     align-items: center;
     display: grid;
     gap: var(--space-lg);
-    grid-template-columns: 6fr 1fr 2fr
+    grid-template-columns: 7fr auto 2fr
 }
 
 .grid_db78b7 img {
@@ -185,14 +186,29 @@ footer {
     white-space: nowrap
 }
 
-.select_db78b7,.submit_db78b7 {
-    height: -webkit-min-content;
-    height: -moz-min-content;
-    height: min-content
+.select_db78b7 {
+    gap: 2px;
+    height: var(--custom-button-height);
+    min-height: var(--custom-button-height);
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content
+}
+
+.select_db78b7 img {
+    height: 24px;
+    width: 24px
+}
+
+.select_db78b7>div {
+    min-width: -webkit-min-content;
+    min-width: -moz-min-content;
+    min-width: min-content
 }
 
 .submit_db78b7 {
-    padding: var(--space-sm)
+    height: var(--custom-button-height);
+    min-height: var(--custom-button-height)
 }
 
 .heading_db78b7 {
@@ -243,4 +259,4 @@ footer {
     filter: blur(10px)
 }
 
-/*# sourceMappingURL=11377f85d8270cd6.css.map*/
+/*# sourceMappingURL=91762800eb743fa0.css.map*/
