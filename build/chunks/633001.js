@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => z
+  Z: () => M
 }), n(388685), n(539854), n(583741);
 var a = n(255367),
   r = n(73800),
@@ -259,7 +259,7 @@ function D(e) {
   })
 }
 
-function M(e) {
+function z(e) {
   let t = Z(Object.values((0, o.Wu)([j.Z], () => j.Z.getWidgetsForLayout(S.$S))), e);
   return [t, () => {
     if (null != t)(0, d.E9)(t.id);
@@ -272,10 +272,10 @@ function M(e) {
   }]
 }
 
-function z() {
+function M() {
   var e, t;
-  let [n, l] = M(E.Odu.CLICK_ZONE_DEBUG), [s, d] = M(E.Odu.PERFORMANCE_DEBUG), j = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ClickZones)), g = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.WidgetAreas)), y = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.DisabledGPUBoost)), S = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ForceGPUBoost)), T = (0, o.e7)([p.default], () => p.default.getForcedRenderMode()), [R, Z] = r.useState({}), [A, z] = r.useState(T), B = e => {
-    z(e), u.Z.forceRenderMode(e)
+  let [n, l] = z(E.Odu.CLICK_ZONE_DEBUG), [s, d] = z(E.Odu.PERFORMANCE_DEBUG), j = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ClickZones)), g = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.WidgetAreas)), y = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.DisabledGPUBoost)), S = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ForceGPUBoost)), T = (0, o.e7)([p.default], () => p.default.getForcedRenderMode()), [R, Z] = r.useState({}), [A, M] = r.useState(T), B = e => {
+    M(e), u.Z.forceRenderMode(e)
   }, U = [{
     label: m.R5.UNSET,
     value: m.R5.UNSET

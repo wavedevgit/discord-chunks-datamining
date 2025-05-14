@@ -1,6 +1,6 @@
 /**
   Module ID: 88934
-  Original File Name: 54ac0ce7a3f1401c
+  Original File Name: f3ad1edfb2beb23f
 **/
 @value headerBarHeight 60px;
 
@@ -1652,6 +1652,10 @@
     gap: 12px
 }
 
+.infoSection_de3a16:empty {
+    display: none
+}
+
 .linkGrid_de3a16 {
     display: grid;
     gap: 8px;
@@ -2582,4 +2586,4 @@
     width: 22px
 }
 
-/*# sourceMappingURL=54ac0ce7a3f1401c.css.map*/
+/*# sourceMappingURL=f3ad1edfb2beb23f.css.map*/

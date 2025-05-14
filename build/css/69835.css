@@ -1,6 +1,6 @@
 /**
   Module ID: 69835
-  Original File Name: 4478f9490e0d003d
+  Original File Name: 4c68025bd64da612
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -8783,7 +8783,7 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
     border-radius: 20px;
     display: flex;
     flex-direction: row;
-    height: 68px;
+    height: 80px;
     justify-content: center;
     margin: auto auto 40px;
     padding: 16px 24px;
@@ -8814,6 +8814,12 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 
 .bannerArt__4524c {
     margin-right: 16px
+}
+
+.pill__4524c {
+    left: 20px;
+    position: absolute;
+    top: -8px
 }
 
 .container__3ce43 {
@@ -18435,4 +18441,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=4478f9490e0d003d.css.map*/
+/*# sourceMappingURL=4c68025bd64da612.css.map*/

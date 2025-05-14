@@ -118,11 +118,11 @@ function T(e) {
   let A = null != P,
     L = null != P && new Date(P).getTime() < Date.now(),
     D = (null == I ? void 0 : I.sku_id) === j.Si.TIER_0,
-    M = async () => {
-      N(!0), A ? await z({
+    z = async () => {
+      N(!0), A ? await M({
         expiresAt: null
       }) : await (0, d.a)(u), p(), N(!1)
-    }, z = async e => {
+    }, M = async e => {
       let {
         expiresAt: t
       } = e;
@@ -158,24 +158,15 @@ function T(e) {
     }
   }, [b, g]);
   let B = "Active";
-  return A && (B = "Acknowledged"), L && (B = "Expired"), (0, a.jsxs)("div", {
+  return A && (B = "Acked"), L && (B = "Expired"), (0, a.jsxs)("div", {
     className: i()(_.card, D ? _.gradientWrapperTier0 : _.gradientWrapperTier2),
-    children: [(0, a.jsxs)("div", {
+    children: [(0, a.jsx)("div", {
       className: i()(_.row, _.nameRow),
-      children: [(0, a.jsx)(c.X6q, {
+      children: (0, a.jsx)(c.X6q, {
         variant: "heading-lg/semibold",
         color: "always-white",
         children: Z
-      }), (0, a.jsx)(c.P3F, {
-        onClick: async () => {
-          N(!0), await O(T, "trial"), p(), N(!1)
-        },
-        children: (0, a.jsx)(c.XHJ, {
-          size: "md",
-          color: "currentColor",
-          className: i()(_.icon, _.trashIcon)
-        })
-      })]
+      })
     }), (0, a.jsxs)(c.P3F, {
       className: i()(_.row, _.idRow),
       onClick: () => {
@@ -188,7 +179,7 @@ function T(e) {
       }), b ? (0, a.jsx)(c.dz2, {
         size: "md",
         color: "currentColor",
-        className: i()(_.icon, _.noMargin)
+        className: _.icon
       }) : (0, a.jsx)(c.TIy, {
         size: "xs",
         color: "currentColor",
@@ -206,7 +197,7 @@ function T(e) {
       }), g ? (0, a.jsx)(c.dz2, {
         size: "md",
         color: "currentColor",
-        className: i()(_.icon, _.noMargin)
+        className: _.icon
       }) : (0, a.jsx)(c.TIy, {
         size: "xs",
         color: "currentColor",
@@ -232,31 +223,40 @@ function T(e) {
       }), (0, a.jsx)("input", {
         type: "date",
         value: null != P ? P.substring(0, 10) : "",
-        onChange: e => z({
+        onChange: e => M({
           expiresAt: e.target.value
         })
       })]
     }), (0, a.jsxs)("div", {
       className: _.badgeContainer,
       children: [(0, a.jsx)(c.P3F, {
-        onClick: M,
+        onClick: z,
         className: i()(_.badge, _.clickable, {
           [_.acked]: A,
           [_.expired]: L
         }),
         children: (0, a.jsx)(c.Text, {
           variant: "eyebrow",
-          color: "Acknowledged" === B ? void 0 : "always-white",
+          color: "Acked" === B ? void 0 : "always-white",
           children: B
         })
       }), null != w && (0, a.jsx)("div", {
-        className: i()(_.badge, _.__invalid_badgeBottom, _.redeemed),
+        className: i()(_.badge, _.redeemed),
         children: (0, a.jsx)(c.Text, {
           variant: "eyebrow",
           color: "always-white",
           children: "Redeemed"
         })
       })]
+    }), (0, a.jsx)(c.P3F, {
+      onClick: async () => {
+        N(!0), await O(T, "trial"), p(), N(!1)
+      },
+      children: (0, a.jsx)(c.XHJ, {
+        size: "md",
+        color: "currentColor",
+        className: i()(_.icon, _.trashIcon)
+      })
     }), (0, a.jsx)("div", {
       className: i()(_.loadingContainer, {
         [_.isLoading]: C || E
@@ -333,7 +333,7 @@ function P(e) {
     }
   }, [m, p]);
   let Z = "Active";
-  return k && (Z = "Expired"), w && (Z = "Acknowledged"), (0, a.jsxs)("div", {
+  return k && (Z = "Expired"), w && (Z = "Acked"), (0, a.jsxs)("div", {
     className: i()(_.card, _.discount),
     children: [(0, a.jsxs)("div", {
       className: i()(_.row, _.nameRow),
@@ -416,11 +416,11 @@ function P(e) {
         }),
         children: (0, a.jsx)(c.Text, {
           variant: "eyebrow",
-          color: "Acknowledged" === Z ? void 0 : "always-white",
+          color: "Acked" === Z ? void 0 : "always-white",
           children: Z
         })
       }), null != E && (0, a.jsx)("div", {
-        className: i()(_.badge, _.__invalid_badgeBottom, _.redeemed),
+        className: i()(_.badge, _.redeemed),
         children: (0, a.jsx)(c.Text, {
           variant: "eyebrow",
           color: "always-white",
@@ -438,8 +438,8 @@ function P(e) {
 
 function w() {
   let [e, t] = r.useState([]), [n, l] = r.useState([]), [i, s] = r.useState(), [x, h] = r.useState(), [j, O] = r.useState([]), [w, k] = r.useState([]), [I, R] = r.useState(!0), [Z, A] = r.useState(10080), [L, D] = r.useState([]), {
-    entitlements: M,
-    deleteFractionalPremium: z,
+    entitlements: z,
+    deleteFractionalPremium: M,
     refreshEntitlementList: B
   } = (0, f.m)();
   r.useEffect(() => {
@@ -447,8 +447,8 @@ function w() {
   }, [B]);
   let U = e => e.filter(e => e.sourceType === v.kNB.REVERSE_TRIAL && null != e.endsAt && e.endsAt > new Date);
   r.useEffect(() => {
-    D(U(M))
-  }, [M]), r.useEffect(() => {
+    D(U(z))
+  }, [z]), r.useEffect(() => {
     (0 === e.length || 0 === n.length || I) && y().then(e => {
       let n = Object.keys(e.trial).map(t => ({
           label: t,
@@ -603,7 +603,7 @@ function w() {
           children: L.map(e => (0, a.jsx)(p.D, {
             entitlement: e,
             active: !0,
-            onDelete: () => z(e.id)
+            onDelete: () => M(e.id)
           }, e.id))
         })]
       })]

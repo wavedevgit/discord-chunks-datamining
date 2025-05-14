@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: f2057769fd332be4
+  Original File Name: bd9128ab0642efa4
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -1182,7 +1182,6 @@
 
 .row_b4dcd9 {
     align-items: center;
-    cursor: pointer;
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -1197,6 +1196,10 @@
     opacity: 1
 }
 
+.idRow_b4dcd9 {
+    cursor: pointer
+}
+
 .idRow_b4dcd9:hover {
     text-decoration: underline;
     -webkit-text-decoration-color: var(--white);
@@ -1206,7 +1209,7 @@
 .icon_b4dcd9 {
     color: var(--white);
     height: 12px;
-    margin-left: 2px
+    margin-left: -10px
 }
 
 .discount_b4dcd9 .icon_b4dcd9 {
@@ -1218,10 +1221,11 @@
 }
 
 .trashIcon_b4dcd9 {
+    bottom: 15px;
     cursor: pointer;
-    margin-left: -2px;
-    opacity: 0;
-    transition: opacity .2s ease-in-out
+    height: 16px;
+    position: absolute;
+    right: 15px
 }
 
 .gradientWrapperTier0_b4dcd9 {
@@ -2518,4 +2522,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=f2057769fd332be4.css.map*/
+/*# sourceMappingURL=bd9128ab0642efa4.css.map*/
