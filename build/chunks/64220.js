@@ -38,19 +38,21 @@ function c(e) {
 function d(e) {
   let {
     children: t,
-    markAsDismissed: n
-  } = e, [l, a] = r.useState(!1);
+    markAsDismissed: n,
+    targetElementRef: l
+  } = e, [a, o] = r.useState(!1);
   return r.useEffect(() => {
     let e = setTimeout(() => {
-      a(!0)
+      o(!0)
     }, 1e3);
     return () => {
       clearTimeout(e)
     }
-  }, [a]), (0, i.jsx)(s.yRy, {
+  }, [o]), (0, i.jsx)(s.yRy, {
+    targetElementRef: l,
     position: "top",
     align: "left",
-    shouldShow: l,
+    shouldShow: a,
     renderPopout: () => (0, i.jsx)(c, {
       markAsDismissed: n
     }),

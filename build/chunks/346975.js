@@ -849,7 +849,8 @@ function eP(e) {
       width: eS
     } = (0, g.e7)([F.Z], () => F.Z.windowSize()),
     eP = null == (n = e_.current) || null == (t = n.getBoundingClientRect()) ? void 0 : t.width,
-    eI = i.useRef(null);
+    eI = i.useRef(null),
+    eE = i.useRef(null);
   i.useLayoutEffect(() => {
     var e;
     let t = ey.current,
@@ -871,14 +872,14 @@ function eP(e) {
       ew(r)
     }
   }, [s.availableTags, eS, eP, G]);
-  let eE = T.length > 0 && !I && (v || null != O),
-    ek = !__OVERLAY__ && !R && !I && k && (0 === Z.textValue.trim().length || Z.textValue.trim() === eC) && 0 === ev.length && !ec;
+  let ek = T.length > 0 && !I && (v || null != O),
+    eR = !__OVERLAY__ && !R && !I && k && (0 === Z.textValue.trim().length || Z.textValue.trim() === eC) && 0 === ev.length && !ec;
   i.useLayoutEffect(() => {
-    let e = eE || ek;
+    let e = ek || eR;
     if (!e) return H(0);
     null != eI.current && H(e ? eI.current.clientHeight : 0)
-  }, [H, eE, ek, eI]);
-  let eR = e => {
+  }, [H, ek, eR, eI]);
+  let eZ = e => {
       (0, X.e7)({
         guildId: s.guild_id,
         channelId: s.id,
@@ -892,7 +893,7 @@ function eP(e) {
         }
       }), Y.getState().toggleTagFilter(s.id, e)
     },
-    eZ = (0, u.ZP)({
+    eM = (0, u.ZP)({
       id: "".concat(s.id, "-tags-navigator"),
       isEnabled: !0,
       wrap: !0,
@@ -900,14 +901,14 @@ function eP(e) {
       scrollToEnd: eN,
       orientation: m.hy.HORIZONTAL
     }),
-    eM = (0, d.JA)("forum-channel-header"),
+    eA = (0, d.JA)("forum-channel-header"),
     {
-      role: eA,
-      onFocus: eL
-    } = eM,
-    eF = eg(eM, ["role", "onFocus"]),
-    eD = i.useRef(null),
-    ez = function() {
+      role: eL,
+      onFocus: eF
+    } = eA,
+    eD = eg(eA, ["role", "onFocus"]),
+    ez = i.useRef(null),
+    eB = function() {
       let e = i.useRef(!1),
         t = (0, g.e7)([j.Z], () => j.Z.keyboardModeEnabled),
         n = i.useCallback(t => {
@@ -915,17 +916,17 @@ function eP(e) {
         }, [e]);
       return i.useLayoutEffect(() => (t ? window.addEventListener("keydown", n) : window.removeEventListener("keydown", n), () => window.removeEventListener("keydown", n)), [t, n]), e
     }(),
-    eB = i.useCallback(e => {
-      if (eL(), e.target === ep.current && !ez.current) {
+    eH = i.useCallback(e => {
+      if (eF(), e.target === ep.current && !eB.current) {
         var t;
-        null == (t = eD.current) || t.focus()
+        null == (t = ez.current) || t.focus()
       }
-    }, [eL, ep, ez]);
+    }, [eF, ep, eB]);
   return (0, r.jsx)("div", eh(em({
     className: a()(eu.card, eu.headerRow, eu.columnsSpan),
     ref: ep,
-    onFocus: eB
-  }, eF), {
+    onFocus: eH
+  }, eD), {
     style: eh(em({}, S), {
       position: q === h.X.GRID ? "absolute" : "static",
       height: "auto"
@@ -939,19 +940,19 @@ function eP(e) {
         channel: s
       }) : null, (0, r.jsx)("div", {
         className: a()(eu.mainCard, eu.header, {
-          [eu.headerWithMatchingPosts]: eE || ek
+          [eu.headerWithMatchingPosts]: ek || eR
         }),
         children: (0, r.jsx)($.Z, {
           parentChannel: s,
           onChange: ej,
           isSearchLoading: v,
           canCreatePost: ef,
-          inputRef: eD
+          inputRef: ez
         })
-      }), (eE || ek) && (0, r.jsxs)("div", {
+      }), (ek || eR) && (0, r.jsxs)("div", {
         className: eu.matchingPostsRow,
         ref: eI,
-        children: [eE && (0, r.jsxs)("div", {
+        children: [ek && (0, r.jsxs)("div", {
           className: eu.matchingPosts,
           children: [(0, r.jsx)(x.X6q, {
             variant: "text-xs/normal",
@@ -976,7 +977,7 @@ function eP(e) {
           })]
         }), (0, r.jsx)("div", {
           className: eu.tagsSpacer
-        }), ek ? ef ? (0, r.jsxs)("div", {
+        }), eR ? ef ? (0, r.jsxs)("div", {
           className: eu.startPostHelp,
           children: [(0, r.jsx)(x.M2$, {
             shortcut: "SHIFT",
@@ -1022,7 +1023,7 @@ function eP(e) {
             className: eu.tagList,
             ref: ey,
             children: (0, r.jsx)(d.bG, {
-              navigator: eZ,
+              navigator: eM,
               children: (0, r.jsx)(d.SJ, {
                 children: e => {
                   var {
@@ -1035,7 +1036,7 @@ function eP(e) {
                     children: s.availableTags.map(e => (0, r.jsx)(en.Z, {
                       className: eu.tag,
                       tag: e,
-                      onClick: () => eR(e.id),
+                      onClick: () => eZ(e.id),
                       selected: G.has(e.id)
                     }, e.id))
                   }))
@@ -1043,6 +1044,7 @@ function eP(e) {
               })
             })
           }), (0, r.jsx)(x.yRy, {
+            targetElementRef: eE,
             renderPopout: e => {
               let {
                 closePopout: t,
@@ -1061,6 +1063,7 @@ function eP(e) {
                 isShown: n
               } = t;
               return (0, r.jsxs)(x.zxk, eh(em({}, e), {
+                buttonRef: eE,
                 size: x.zxk.Sizes.MIN,
                 color: x.zxk.Colors.CUSTOM,
                 className: a()(eu.tagsButton, {
@@ -1130,8 +1133,9 @@ function eP(e) {
 function eT(e) {
   let {
     channel: t
-  } = e, n = t.isMediaChannel();
+  } = e, n = t.isMediaChannel(), l = i.useRef(null);
   return (0, r.jsx)(x.yRy, {
+    targetElementRef: l,
     renderPopout: e => {
       let {
         closePopout: n
@@ -1148,6 +1152,7 @@ function eT(e) {
         isShown: i
       } = t;
       return (0, r.jsxs)(x.zxk, eh(em({}, e), {
+        buttonRef: l,
         size: x.zxk.Sizes.MIN,
         color: x.zxk.Colors.CUSTOM,
         className: eu.sortDropdown,

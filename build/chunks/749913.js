@@ -839,13 +839,13 @@ function eb(e) {
   }), {
     containerRef: f,
     containerWidth: x
-  } = (0, Q.Z)(), p = i.useRef(null), [b, j] = i.useState(!0), v = (0, G.Vm)(t), [C, _] = i.useState(0);
+  } = (0, Q.Z)(), p = i.useRef(null), b = i.useRef(null), [j, v] = i.useState(!0), C = (0, G.Vm)(t), [_, y] = i.useState(0);
   return (i.useLayoutEffect(() => {
     var e;
     let t = p.current,
       n = null == t || null == (e = t.children) ? void 0 : e[0],
       r = null == t || null == n || n.clientHeight > t.clientHeight;
-    if (r !== b && j(r), r && null != f.current && null != n && null != n.children) {
+    if (r !== j && v(r), r && null != f.current && null != n && null != n.children) {
       let {
         left: e,
         top: t
@@ -859,9 +859,9 @@ function eb(e) {
         if (l - t > a) break;
         n - e > r && (r = n - e)
       }
-      _(r)
+      y(r)
     }
-  }, [v, b, f, x]), 0 === v.length) ? null : (0, r.jsxs)("div", {
+  }, [C, j, f, x]), 0 === C.length) ? null : (0, r.jsxs)("div", {
     className: er.tagsContainer,
     ref: f,
     children: [(0, r.jsx)(g.lO_, {
@@ -896,7 +896,7 @@ function eb(e) {
               className: er.tagListInner,
               ref: t
             }, i), {
-              children: v.map(e => (0, r.jsx)(J.Z, {
+              children: C.map(e => (0, r.jsx)(J.Z, {
                 ariaLabel: en.intl.formatToPlainString(en.t.FSZVIS, {
                   tagName: e.name
                 }),
@@ -910,7 +910,8 @@ function eb(e) {
           }
         })
       })
-    }), b && (0, r.jsx)(g.yRy, {
+    }), j && (0, r.jsx)(g.yRy, {
+      targetElementRef: b,
       onRequestOpen: () => s(!0),
       onRequestClose: () => s(!1),
       renderPopout: e => {
@@ -928,11 +929,12 @@ function eb(e) {
       position: "bottom",
       align: "center",
       children: e => (0, r.jsxs)(g.zxk, el(ei({}, e), {
+        buttonRef: b,
         size: g.zxk.Sizes.TINY,
         className: er.tagsButton,
         innerClassName: er.tagsButtonInner,
         style: {
-          left: C
+          left: _
         },
         look: g.zxk.Looks.LINK,
         "aria-label": en.intl.string(en.t.N5vP9P),

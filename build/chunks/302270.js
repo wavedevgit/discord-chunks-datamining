@@ -106,12 +106,13 @@ function X(e) {
     simplifiedSettingsEnabled: W
   } = (0, I.Z)({
     location: "StageChannelCallHeader"
-  });
+  }), X = i.useRef(null);
   return (0, r.jsxs)(h.Gt, {
     value: v,
     children: [(0, r.jsx)(y.Z, {
       channelId: n.id
     }, "clips-enabled-indicator"), !W && (0, r.jsx)(c.yRy, {
+      targetElementRef: X,
       position: "bottom",
       animation: c.yRy.Animation.NONE,
       align: "right",
@@ -130,6 +131,7 @@ function X(e) {
           isShown: n
         } = t;
         return (0, i.createElement)(N.Z, K(q({}, e), {
+          ref: X,
           key: "more-options",
           isActive: n,
           className: Y.button,

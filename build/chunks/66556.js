@@ -17,27 +17,28 @@ var r = n(255367),
 function f(e) {
   let {
     channel: t
-  } = e, [n, f] = i.useState(!1), m = (0, l.e7)([s.Z, c.default], () => {
+  } = e, [n, f] = i.useState(!1), m = i.useRef(null), g = (0, l.e7)([s.Z, c.default], () => {
     let e = c.default.getCurrentUser();
     return null == e || t.isNSFW() && (!e.nsfwAllowed || !s.Z.didAgree(t.getGuildId()))
-  }, [t]), g = i.useCallback(() => {
+  }, [t]), b = i.useCallback(() => {
     f(!1)
-  }, []), b = i.useCallback(() => {
+  }, []), _ = i.useCallback(() => {
     n || (0, u.U4)("Popout"), f(!n)
   }, [n]);
   return (0, r.jsx)(o.yRy, {
+    targetElementRef: m,
     animation: o.yRy.Animation.NONE,
     position: "bottom",
     align: "right",
     autoInvert: !1,
     shouldShow: n,
-    onRequestClose: g,
+    onRequestClose: b,
     renderPopout: function() {
       return (0, r.jsx)(o.VqE, {
         children: (0, r.jsx)(d.Z, {
           className: h.browser,
           channel: t,
-          onClose: g
+          onClose: b
         })
       })
     },
@@ -65,12 +66,13 @@ function f(e) {
         }
         return e
       }({}, e), i = i = {
+        ref: m,
         className: h.icon,
-        onClick: b,
+        onClick: _,
         icon: o.or_,
         "aria-label": p.intl.string(p.t.B2panJ),
         tooltip: l ? null : p.intl.string(p.t.B2panJ),
-        disabled: m,
+        disabled: g,
         selected: l
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);

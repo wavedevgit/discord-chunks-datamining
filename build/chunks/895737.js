@@ -54,8 +54,10 @@ function d(e) {
 
 function u() {
   let e = (0, l.s)(),
-    t = (0, s.eJ)(e.sortOption);
+    t = (0, s.eJ)(e.sortOption),
+    r = i.useRef(null);
   return (0, n.jsx)(o.yRy, {
+    targetElementRef: r,
     renderPopout: t => {
       let {
         closePopout: r
@@ -67,12 +69,12 @@ function u() {
     },
     position: "bottom",
     align: "left",
-    children: (e, r) => {
-      var i, l;
+    children: (e, i) => {
+      var l, s;
       let {
-        isShown: s
-      } = r;
-      return (0, n.jsxs)(o.zxk, (i = function(e) {
+        isShown: d
+      } = i;
+      return (0, n.jsxs)(o.zxk, (l = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
             n = Object.keys(r);
@@ -89,7 +91,8 @@ function u() {
           })
         }
         return e
-      }({}, e), l = l = {
+      }({}, e), s = s = {
+        buttonRef: r,
         size: o.zxk.Sizes.MIN,
         color: o.zxk.Colors.CUSTOM,
         className: a.sortDropdown,
@@ -105,7 +108,7 @@ function u() {
           variant: "text-sm/medium",
           color: "header-primary",
           children: t
-        }), s ? (0, n.jsx)(o.u04, {
+        }), d ? (0, n.jsx)(o.u04, {
           size: "custom",
           color: "currentColor",
           width: 20
@@ -114,16 +117,16 @@ function u() {
           color: "currentColor",
           width: 20
         })]
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e);
           r.push.apply(r, n)
         }
         return r
-      })(Object(l)).forEach(function(e) {
-        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
-      }), i))
+      })(Object(s)).forEach(function(e) {
+        Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(s, e))
+      }), l))
     }
   })
 }

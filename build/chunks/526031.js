@@ -99,9 +99,11 @@ function p(e) {
 function h(e) {
   let {
     children: t,
-    markAsDismissed: n
+    markAsDismissed: n,
+    targetElementRef: r
   } = e;
   return (0, i.jsx)(l.yRy, {
+    targetElementRef: r,
     onRequestClose: () => n(u.L.INDIRECT_ACTION),
     position: "top",
     align: "center",

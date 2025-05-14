@@ -42,7 +42,7 @@ function v(e) {
   } = e, i = l.useRef(new Map), [s, p] = l.useState(() => new Set), {
     ref: v,
     width: j
-  } = (0, d.ZP)();
+  } = (0, d.ZP)(), g = l.useRef(null);
   l.useEffect(() => {
     var e, a, r, l;
     if (null == j) return;
@@ -51,7 +51,7 @@ function v(e) {
     for (let c of (o -= null != (a = null == (e = i.current.get(n)) ? void 0 : e.getBoundingClientRect().width) ? a : 0, t)) c.id !== n && (o -= null != (l = null == (r = i.current.get(c.id)) ? void 0 : r.getBoundingClientRect().width) ? l : 0) < 0 && s.add(c.id);
     p(s)
   }, [t, j, v, n]);
-  let g = l.useCallback(e => {
+  let _ = l.useCallback(e => {
     var n, l, i;
     let {
       closePopout: s
@@ -130,8 +130,9 @@ function v(e) {
     }), (0, r.jsx)("div", {
       className: h.menu,
       children: s.size > 0 && (0, r.jsx)(c.yRy, {
+        targetElementRef: g,
         layerContext: x.O$,
-        renderPopout: g,
+        renderPopout: _,
         position: "bottom",
         align: "right",
         spacing: 0,
@@ -155,6 +156,7 @@ function v(e) {
             }
             return e
           }({}, e), n = n = {
+            buttonRef: g,
             className: h.overflowChevron,
             size: c.zxk.Sizes.ICON,
             look: c.zxk.Looks.BLANK,

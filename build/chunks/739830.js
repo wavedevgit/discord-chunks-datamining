@@ -48,15 +48,16 @@ function f(e, t) {
 function m(e) {
   let {
     channel: t
-  } = e, n = (0, s.B)(t), [m, g] = i.useState(!1);
+  } = e, n = (0, s.B)(t), [m, g] = i.useState(!1), b = i.useRef(null);
   i.useEffect(() => {
     let e = () => g(!0);
     return a.S.subscribe(d.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
       a.S.unsubscribe(d.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
     }
   }, []);
-  let b = p.intl.string(p.t.h850Sk);
+  let _ = p.intl.string(p.t.h850Sk);
   return (0, r.jsx)(l.yRy, {
+    targetElementRef: b,
     shouldShow: m,
     animation: l.yRy.Animation.NONE,
     position: "bottom",
@@ -73,10 +74,11 @@ function m(e) {
         isShown: i
       } = t;
       return (0, r.jsx)(o.ZP.Icon, f(h({}, e), {
+        ref: b,
         onClick: () => g(e => !e),
-        tooltip: i ? null : b,
+        tooltip: i ? null : _,
         icon: n === u.iN.NO_MESSAGES ? l.owu : l.Dkj,
-        "aria-label": b,
+        "aria-label": _,
         selected: i
       }))
     }

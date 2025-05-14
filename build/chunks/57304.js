@@ -54,16 +54,17 @@ let x = function(e) {
   } = e, n = (0, c.Q3)("ChannelPinsButton"), x = (0, l.e7)([u.Z, p.default], () => {
     let e = p.default.getCurrentUser();
     return null == e || t.isNSFW() && (!e.nsfwAllowed || !u.Z.didAgree(t.getGuildId()))
-  }, [t]), [y, C] = i.useState(!1), v = (0, l.e7)([d.ZP], () => d.ZP.hasUnreadPins(t.id), [t]), j = (0, s.Aq)(), O = i.useCallback(() => {
+  }, [t]), [y, C] = i.useState(!1), v = (0, l.e7)([d.ZP], () => d.ZP.hasUnreadPins(t.id), [t]), j = (0, s.Aq)(), O = i.useRef(null), E = i.useCallback(() => {
     x || C(e => !e)
   }, [x]);
 
-  function E(e) {
+  function I(e) {
     (null == e ? void 0 : e.shiftKey) || j.dispatch(m.CkL.POPOUT_CLOSE)
   }
-  return i.useEffect(() => (h.S.subscribe(m.CkL.TOGGLE_CHANNEL_PINS, O), () => {
-    h.S.unsubscribe(m.CkL.TOGGLE_CHANNEL_PINS, O)
-  }), [O]), (0, r.jsx)(o.yRy, {
+  return i.useEffect(() => (h.S.subscribe(m.CkL.TOGGLE_CHANNEL_PINS, E), () => {
+    h.S.unsubscribe(m.CkL.TOGGLE_CHANNEL_PINS, E)
+  }), [E]), (0, r.jsx)(o.yRy, {
+    targetElementRef: O,
     shouldShow: y,
     animation: o.yRy.Animation.NONE,
     position: "bottom",
@@ -73,7 +74,7 @@ let x = function(e) {
     onRequestClose: () => C(!1),
     renderPopout: function(e) {
       return (0, r.jsx)(a.Z, _(b({}, e), {
-        onJump: E,
+        onJump: I,
         channel: t
       }))
     },
@@ -83,7 +84,8 @@ let x = function(e) {
         isShown: i
       } = t;
       return (0, r.jsx)(f.JO, _(b({}, e), {
-        onClick: O,
+        ref: O,
+        onClick: E,
         tooltip: i ? null : g.intl.string(g.t["mp1N//"]),
         icon: o.qQX,
         iconSize: n ? 20 : void 0,

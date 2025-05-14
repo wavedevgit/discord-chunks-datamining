@@ -39,15 +39,16 @@ let m = () => (0, a.ZDy)(async () => {
 function f(e) {
   let {
     className: t
-  } = e, n = (0, l.e7)([c.Z], () => c.Z.isDeveloper), [f, h] = i.useState(!1), [g, _] = i.useState(0), b = e => {
+  } = e, n = (0, l.e7)([c.Z], () => c.Z.isDeveloper), [f, h] = i.useState(!1), [g, _] = i.useState(0), b = i.useRef(null), x = e => {
     clearTimeout(g), _(setTimeout(() => {
       h(e)
     }, 100))
   };
   return (0, r.jsx)("div", {
-    onMouseEnter: () => b(!0),
-    onMouseLeave: () => b(!1),
+    onMouseEnter: () => x(!0),
+    onMouseLeave: () => x(!1),
     children: (0, r.jsx)(a.yRy, {
+      targetElementRef: b,
       shouldShow: f,
       animation: a.yRy.Animation.NONE,
       position: "bottom",
@@ -94,6 +95,7 @@ function f(e) {
           isShown: i
         } = n;
         return (0, r.jsx)(d.JO, {
+          ref: b,
           onClick: m,
           icon: a.nnZ,
           "aria-label": p.intl.string(p.t.cqEoj4),
