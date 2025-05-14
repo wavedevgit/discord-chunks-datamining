@@ -538,7 +538,7 @@ async function ec(e) {
             guild_id: s
           }
         },
-        retries: 3,
+        retries: 0,
         oldFormErrors: !0,
         rejectWithError: !0
       }),
