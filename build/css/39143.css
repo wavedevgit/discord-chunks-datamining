@@ -1,7 +1,31 @@
 /**
   Module ID: 39143
-  Original File Name: 1895409218de6965
+  Original File Name: f8539259da29ceb2
 **/
+.container_cd2100 {
+    align-items: center;
+    background-color: var(--background-secondary-alt);
+    border: 1px solid var(--background-tertiary);
+    border-radius: 4px;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    position: relative;
+    width: 40px
+}
+
+.container_cd2100 .removeButton_cd2100 {
+    height: 16px;
+    width: 16px
+}
+
+.removeButton_cd2100 {
+    background-size: 12px;
+    position: absolute;
+    right: -4px;
+    top: -4px
+}
+
 .closeButton_eb89ff {
     position: absolute;
     right: 12px;
@@ -83,4 +107,4 @@
     vertical-align: middle
 }
 
-/*# sourceMappingURL=1895409218de6965.css.map*/
+/*# sourceMappingURL=f8539259da29ceb2.css.map*/

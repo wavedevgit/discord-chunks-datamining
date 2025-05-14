@@ -1,7 +1,31 @@
 /**
   Module ID: 1862
-  Original File Name: fbf87188ef84ea0b
+  Original File Name: 20dec41aa544248b
 **/
+.container_cd2100 {
+    align-items: center;
+    background-color: var(--background-secondary-alt);
+    border: 1px solid var(--background-tertiary);
+    border-radius: 4px;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    position: relative;
+    width: 40px
+}
+
+.container_cd2100 .removeButton_cd2100 {
+    height: 16px;
+    width: 16px
+}
+
+.removeButton_cd2100 {
+    background-size: 12px;
+    position: absolute;
+    right: -4px;
+    top: -4px
+}
+
 .container_d03e0c {
     padding: 20px
 }
@@ -111,4 +135,4 @@
     width: 16px
 }
 
-/*# sourceMappingURL=fbf87188ef84ea0b.css.map*/
+/*# sourceMappingURL=20dec41aa544248b.css.map*/

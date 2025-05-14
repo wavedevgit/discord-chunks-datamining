@@ -1,6 +1,6 @@
 /**
   Module ID: 10923
-  Original File Name: 6a7927ea30ced3b1
+  Original File Name: 6eaf29da20d76300
 **/
 .editCard_a25a68 {
     background-color: var(--background-secondary);
@@ -12414,34 +12414,26 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     gap: 0
 }
 
-.container_cd2100 {
-    align-items: center;
-    background-color: var(--background-secondary-alt);
-    border: 1px solid var(--background-tertiary);
-    border-radius: 4px;
-    display: flex;
-    height: 40px;
-    justify-content: center;
-    position: relative;
-    width: 40px
-}
-
-.container_cd2100 .removeButton_cd2100 {
-    height: 16px;
-    width: 16px
-}
-
-.removeButton_cd2100 {
-    background-size: 12px;
-    position: absolute;
-    right: -4px;
-    top: -4px
-}
-
 .grid__4cbea {
     display: grid;
     gap: 8px;
     grid-template-columns: repeat(auto-fill,minmax(140px,1fr))
+}
+
+.traitWrapper__4cbea {
+    position: relative
+}
+
+.traitRemoveButton__4cbea {
+    color: var(--interactive-muted);
+    cursor: pointer;
+    position: absolute;
+    right: 16px;
+    top: 20px
+}
+
+.traitRemoveButton__4cbea:focus,.traitRemoveButton__4cbea:hover {
+    color: var(--interactive-hover)
 }
 
 .traitContainer__4cbea {
@@ -12452,7 +12444,7 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     display: flex;
     flex-direction: row;
     gap: 12px;
-    padding: 4px 20px
+    padding: 4px 40px 4px 16px
 }
 
 .traitContainerFocused__4cbea {
@@ -12467,19 +12459,6 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 
 .traitInput__4cbea:active,.traitInput__4cbea:focus,.traitInput__4cbea:hover {
     border: none
-}
-
-.emojiWrapper__4cbea {
-    background: none;
-    height: auto;
-    margin-left: -20px;
-    padding-left: 20px;
-    width: auto
-}
-
-.removeButton__4cbea {
-    left: 0;
-    top: 13px
 }
 
 .container_ee84e7 {
@@ -12852,4 +12831,4 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=6a7927ea30ced3b1.css.map*/
+/*# sourceMappingURL=6eaf29da20d76300.css.map*/

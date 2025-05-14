@@ -37,7 +37,7 @@ function S(e) {
     onClose: E,
     transitionState: k,
     showGuildPicker: Z = !1
-  } = e, [M, I] = a.useState(null != (n = null != (t = null == O ? void 0 : O.name) ? t : null == P ? void 0 : P.name) ? n : ""), [T, R] = a.useState(null != (i = null == P ? void 0 : P.volume) ? i : 1), [_, D] = a.useState(null == P ? void 0 : P.emojiId), [F, z] = a.useState(null == P ? void 0 : P.emojiName), {
+  } = e, [M, I] = a.useState(null != (n = null != (t = null == O ? void 0 : O.name) ? t : null == P ? void 0 : P.name) ? n : ""), [T, R] = a.useState(null != (i = null == P ? void 0 : P.volume) ? i : 1), [D, _] = a.useState(null == P ? void 0 : P.emojiId), [F, z] = a.useState(null == P ? void 0 : P.emojiName), {
     file: A,
     loadAudioFromFile: B,
     maxVolume: L,
@@ -117,13 +117,13 @@ function S(e) {
           guildId: K,
           name: M,
           volume: T,
-          emojiId: _,
+          emojiId: D,
           emojiName: F
         }), X("ready")
       } catch (e) {
         throw new c.Z(e)
       }
-    }, [A, K, M, ei, V, T, _, F]),
+    }, [A, K, M, ei, V, T, D, F]),
     es = a.useCallback(async () => {
       o()(null != K, "Cannot submit soundboard sound with no guildId"), H(!0), q(null);
       try {
@@ -132,7 +132,7 @@ function S(e) {
           soundId: P.soundId,
           name: M,
           volume: T,
-          emojiId: _,
+          emojiId: D,
           emojiName: F
         }) : (await er(), (0, u.showToast)((0, u.createToast)(w.intl.string(w.t.T7dhBA), u.ToastType.SUCCESS))), E()
       } catch (e) {
@@ -140,7 +140,7 @@ function S(e) {
       } finally {
         X("ready"), H(!1), R(1), U(1)
       }
-    }, [el, E, K, P, M, T, _, F, er, U]);
+    }, [el, E, K, P, M, T, D, F, er, U]);
   (0, d.ZP)(() => {
     B(null), h.default.track(j.rMx.OPEN_MODAL, {
       type: "Soundboard Upload Sound",
@@ -151,9 +151,9 @@ function S(e) {
   }, [T, R, L]);
   let eo = (0, l.jsx)(f.Z, {
     guildId: K,
-    emojiId: _,
+    emojiId: D,
     emojiName: F,
-    setEmojiId: D,
+    setEmojiId: _,
     setEmojiName: z,
     error: null == W ? void 0 : W.getFirstFieldErrorMessage("emoji"),
     isRequiredField: !1
@@ -172,7 +172,6 @@ function S(e) {
         children: el ? w.intl.string(w.t.HmsZGR) : w.intl.string(w.t["ioD/9P"])
       })
     }), (0, l.jsxs)(u.hzk, {
-      className: N.__invalid_content,
       children: [null != W && !W.hasFieldErrors() && (0, l.jsx)(u.kzN, {
         className: N.section,
         children: W.message

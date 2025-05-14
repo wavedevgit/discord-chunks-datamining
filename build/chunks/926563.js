@@ -38,7 +38,7 @@ function b(t) {
         displayProfile: O,
         themeType: h.lY.POPOUT
       }), (0, l.jsx)("div", {
-        inert: "",
+        inert: !0,
         children: (0, l.jsx)(o.Z, {
           user: e,
           displayProfile: O,
@@ -60,7 +60,7 @@ function b(t) {
       profileEffectId: O.profileEffectId
     }), (0, l.jsx)("div", {
       className: p.usernameContainer,
-      inert: "",
+      inert: !0,
       children: (0, l.jsx)(d.Z, {
         user: e,
         nickname: f.ZP.getName(null, null, e),

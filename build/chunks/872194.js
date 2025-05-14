@@ -1,5 +1,4 @@
-/** Chunk was on 10923 **/
-"use strict";
+/** Chunk was on 39143 **/
 e.exports = {
   container: "container_cd2100",
   removeButton: "removeButton_cd2100"
