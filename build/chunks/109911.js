@@ -1,18 +1,20 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Ji: () => c,
-  XN: () => l
+  Ji: () => d,
+  XN: () => u
 });
-var r = n(818083),
-  i = n(638395);
+var r = n(570140),
+  i = n(317770),
+  o = n(818083),
+  a = n(638395);
 n(171393);
-var o = n(987338);
-let a = (0, r.B)({
+var s = n(987338);
+let l = (0, o.B)({
     kind: "user",
     id: "2024-07_icymi",
     label: "In-case-you-missed-it tab",
-    commonTriggerPoint: o.$P.CONNECTION_OPEN_MOBILE,
+    commonTriggerPoint: s.$P.CONNECTION_OPEN_MOBILE,
     defaultConfig: {
       enabled: !1
     },
@@ -41,7 +43,7 @@ let a = (0, r.B)({
       }
     }]
   }),
-  s = ((0, r.B)({
+  c = ((0, o.B)({
     kind: "user",
     id: "2024-12_icymi_status_with_media",
     label: "Shows media with custom status in ICYMI",
@@ -55,7 +57,7 @@ let a = (0, r.B)({
         enabled: !0
       }
     }]
-  }), (0, r.B)({
+  }), (0, o.B)({
     kind: "user",
     id: "2024-10_merge_notifications_tab",
     label: "Merge notifications tab",
@@ -99,36 +101,36 @@ let a = (0, r.B)({
     }]
   }));
 
-function l(e) {
+function u(e) {
   let {
     location: t,
     autoTrackExposure: n = !0
-  } = e, r = i.Z.get("hide_icymi_tab"), o = c(t, !1), {
-    enabled: a,
-    tabBadgeVariant: l,
-    removeHomeMentionBadges: u
-  } = s.getCurrentConfig({
+  } = e, r = a.Z.get("hide_icymi_tab"), i = d(t, !1), {
+    enabled: o,
+    tabBadgeVariant: s,
+    removeHomeMentionBadges: l
+  } = c.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: n,
     disable: !0
   });
   return {
-    enabled: a && !r && o,
-    tabBadgeVariant: l,
-    removeHomeMentionBadges: u
+    enabled: o && !r && i,
+    tabBadgeVariant: s,
+    removeHomeMentionBadges: l
   }
 }
 
-function c(e) {
+function d(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
-  return a.getCurrentConfig({
+  return l.getCurrentConfig({
     location: e
   }, {
     disable: !0,
     autoTrackExposure: t
   }).enabled
-}(0, r.B)({
+}(0, o.B)({
   kind: "user",
   id: "2024-07_icymi_negative_items",
   label: "icymi negative content (debugging only)",
@@ -142,7 +144,7 @@ function c(e) {
       enabled: !0
     }
   }]
-}), (0, r.B)({
+}), (0, o.B)({
   kind: "user",
   id: "2025-04_icymi_search_experience",
   label: "ICYMI Search Experience",
@@ -152,7 +154,7 @@ function c(e) {
   },
   treatments: [{
     id: 1,
-    label: "control group - no search experience",
+    label: "control group - IGNORE THIS DO NOT USE",
     config: {
       searchEnabled: !1,
       renameEnabled: !1
@@ -172,4 +174,16 @@ function c(e) {
       renameEnabled: !0
     }
   }]
-})
+});
+class f extends i.Z {
+  _initialize() {
+    r.Z.subscribe("CONNECTION_OPEN", this.handleConnectionOpen)
+  }
+  _terminate() {
+    r.Z.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen)
+  }
+  handleConnectionOpen() {
+    d("SearchExperimentManager", !1)
+  }
+}
+new f
