@@ -421,7 +421,7 @@ function eu(e) {
         applicationId: eo.id
       })
     }
-  } : void 0, [v, V, O.id, j.id, X, Z, ed, em, null == eo ? void 0 : eo.id]), eE = (0, _.z)(O), ey = i.useMemo(() => null != eE ? eE : null != eu ? {
+  } : void 0, [v, V, O.id, j.id, X, Z, ed, em, null == eo ? void 0 : eo.id]), eE = (0, _.z)(O), ey = i.useMemo(() => null != eu ? {
     label: J.intl.string(J.t["HO/oXl"]),
     trackingArea: f.j_.VIEW,
     onClick: e => {
@@ -433,7 +433,7 @@ function eu(e) {
     onClick: e => {
       ep(e)
     }
-  } : void 0, [eE, eu, ep]), ev = i.useMemo(() => {
+  } : null != eE ? eE : void 0, [eE, eu, ep]), ev = i.useMemo(() => {
     let e = [];
     return Q || null == eb ? Q && null != ex && e.push(ex) : e.push(eb), null != ey && e.push(ey), e
   }, [ex, Q, eb, ey]), eO = ea(O.name, null == (t = N.activity) ? void 0 : t.type), ej = Z ? (0, p.H)({

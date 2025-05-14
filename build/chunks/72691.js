@@ -16,8 +16,8 @@ var o = n(255367),
   b = n(409813),
   m = n(104494),
   j = n(639119),
-  _ = n(165583),
-  O = n(197115),
+  _ = n(767714),
+  O = n(165583),
   h = n(185139),
   x = n(263954),
   g = n(706454),
@@ -65,7 +65,7 @@ let N = e => {
       children: [(0, o.jsx)(s.olH, {
         onClick: p,
         className: S.closeButton
-      }), f && (0, o.jsx)(_.dz, {
+      }), f && (0, o.jsx)(O.dz, {
         className: S.premiumTrialBadge
       }), (0, o.jsx)("img", {
         className: c()(S.heroImage, {
@@ -107,7 +107,7 @@ let N = e => {
         color: s.zxk.Colors.PRIMARY,
         look: s.zxk.Looks.LINK,
         children: w.intl.string(w.t.cpT0Cg)
-      }), (0, o.jsx)(O.Z, {
+      }), (0, o.jsx)(_.Z, {
         textOptions: {
           textOverride: null != r || null != n ? w.intl.string(w.t["Gd/XHB"]) : void 0
         },

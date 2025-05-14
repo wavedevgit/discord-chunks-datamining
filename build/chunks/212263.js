@@ -17,8 +17,8 @@ var r = n(255367),
   p = n(98278),
   h = n(104494),
   m = n(639119),
-  g = n(165583),
-  E = n(197115),
+  g = n(767714),
+  E = n(165583),
   b = n(631771),
   y = n(609218),
   O = n(210887),
@@ -160,7 +160,7 @@ let M = e => {
       className: w.premiumPromoClose,
       onClick: D,
       children: R.intl.string(R.t.cpT0Cg)
-    }), z ? (0, r.jsx)(g.ZP, {
+    }), z ? (0, r.jsx)(E.ZP, {
       type: P.cd.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_EMOJI,
       subscriptionTier: P.Si.TIER_2,
       onClose: D,
@@ -183,7 +183,7 @@ let M = e => {
           onClick: Z
         })
       })]
-    }), !z && (0, r.jsx)(E.Z, {
+    }), !z && (0, r.jsx)(g.Z, {
       subscriptionTier: P.Si.TIER_2,
       submitting: F,
       premiumModalAnalyticsLocation: {

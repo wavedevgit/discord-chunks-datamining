@@ -62,7 +62,7 @@ let I = [{
       }), (0, r.jsxs)(c.Text, {
         variant: "text-xxs/normal",
         color: "text-muted",
-        children: [o ? O.intl.format(O.t.LFVi6O, {
+        children: [o ? O.intl.format(O.t["req+eX"], {
           dateAcquired: d
         }) : O.intl.format(O.t.gW9R4O, {
           date: d

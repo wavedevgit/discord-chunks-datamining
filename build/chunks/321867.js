@@ -9,8 +9,8 @@ var o = n(255367),
   l = n(100527),
   c = n(906732),
   s = n(118012),
-  u = n(411477),
-  _ = n(197115),
+  u = n(767714),
+  _ = n(411477),
   d = n(594174),
   f = n(626135),
   m = n(74538),
@@ -33,7 +33,7 @@ function x(t) {
         location_stack: N
       })
     }, [E, e, N]), E) return null;
-  let h = (0, o.jsx)(_.Z, {
+  let h = (0, o.jsx)(u.Z, {
     className: v.__invalid_getNitroLink,
     size: a.zxk.Sizes.SMALL,
     look: a.zxk.Looks.LINK,
@@ -49,7 +49,7 @@ function x(t) {
     },
     disableShine: !0
   });
-  return (0, o.jsx)(u.Z, {
+  return (0, o.jsx)(_.Z, {
     reducedRightPadding: !0,
     className: v.nitroPreviewUpsell,
     text: C.intl.format(C.t.Og8039, {}),

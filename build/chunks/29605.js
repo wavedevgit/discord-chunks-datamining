@@ -339,70 +339,83 @@ let z = u().throttle(f.OQ, 1e3),
       f = (0, j.Z)(c),
       [h, x] = i.useState(!1),
       [y, P] = i.useState(!1),
-      w = i.useRef(null);
+      w = i.useRef(null),
+      Z = (0, R.y4)(e),
+      [M, B] = i.useMemo(() => {
+        let t = null == p ? void 0 : p.filter(t => !(0, N.Kt)(t, e.id)),
+          [n, r] = u().partition(t, e => !e.animated);
+        return [n, r]
+      }, [p, e.id]),
+      H = Math.max(Z - M.length, Z - B.length),
+      V = (0, v.h)({
+        location: "guild_settings",
+        autoTrackExposure: !0
+      }) && H > 0;
     i.useEffect(() => {
-      h && q()
+      h && Q()
     }, [h]), i.useEffect(() => {
       z(e.id)
     }, [e.id]), i.useEffect(() => {
       null != f && f < c && z(e.id)
     }, [c, f, e.id]);
-    let [Z, M] = i.useMemo(() => {
-      let t = null == p ? void 0 : p.filter(t => !(0, N.Kt)(t, e.id)),
-        [n, r] = u().partition(t, e => !e.animated);
-      return [n, r]
-    }, [p, e.id]), B = (0, R.y4)(e), H = Math.max(B - Z.length, B - M.length), V = (n, r, i) => (0, C.G)({
-      data: n,
-      file: r,
-      image: i,
-      guildId: e.id,
-      uploadId: t,
-      hideErrorModal: !0
-    }), Y = async n => {
+    let Y = async (n, r, i) => {
+      if (!V) return await (0, C.G)({
+        data: n,
+        file: r,
+        image: i,
+        guildId: e.id,
+        uploadId: t,
+        hideErrorModal: !0
+      });
+      (0, O.i)({
+        userImage: {
+          data: n,
+          file: r,
+          image: i
+        }
+      })
+    }, q = async n => {
       l((0, d.Z)()), T.default.track(L.rMx.EMOJI_UPLOAD_STARTED, {
         guild_id: e.id,
         upload_id: t
-      }), await (0, I._)(n, V), x(!0)
-    }, q = () => {
+      }), await (0, I._)(n, Y), x(!0)
+    }, Q = () => {
       null !== w.current && ((0, g.Mr3)(w.current), w.current = null)
-    }, Q = async e => {
+    }, J = async e => {
       w.current = await (0, g.ZDy)(async () => {
         let {
           default: t
         } = await n.e("16169").then(n.bind(n, 935333));
         return n => (0, r.jsx)(t, F({
-          processFiles: () => Y(e)
+          processFiles: () => q(e)
         }, n))
       })
-    }, J = (0, _.l)(e), $ = (0, v.h)({
-      location: "guild_settings",
-      autoTrackExposure: !0
-    }) && H > 0;
+    }, $ = (0, _.l)(e);
     return (0, r.jsxs)("div", {
       className: U.emojiSettings,
       children: [0 === H ? null : (0, r.jsx)(b.Z, {
         className: U.emojiUploadContainer,
-        onDrop: Q
+        onDrop: J
       }), (0, r.jsxs)(g.hjN, {
         tag: g.RB0.H1,
         title: G.intl.string(G.t.sMOuub),
         children: [(0, r.jsx)(K, {
           guild: e,
-          staticEmojiCount: Z.length,
-          animatedEmojiCount: M.length
+          staticEmojiCount: M.length,
+          animatedEmojiCount: B.length
         }), (0, r.jsxs)(g.hjN, {
           className: U.uploader,
           children: [(0, r.jsx)(g.R94, {
             type: g.geA.DESCRIPTION,
             children: G.intl.format(G.t.TA1BR0, {
-              count: B
+              count: Z
             })
-          }), J && (0, r.jsx)(g.R94, {
+          }), $ && (0, r.jsx)(g.R94, {
             type: g.geA.DESCRIPTION,
             children: G.intl.format(G.t.uMkfTk, {
               onClick: () => D.Z.open(e.id, L.pNK.ROLE_SUBSCRIPTIONS, void 0, L.KsC.ROLE_SUBSCRIPTION_EMOJI)
             })
-          }), $ ? (0, r.jsx)(g.zxk, {
+          }), V ? (0, r.jsx)(g.zxk, {
             onClick: () => (0, O.i)(),
             children: G.intl.string(G.t.DU0dy8)
           }) : (0, r.jsxs)(r.Fragment, {
@@ -424,7 +437,7 @@ let z = u().throttle(f.OQ, 1e3),
               children: [G.intl.string(G.t.DU0dy8), H > 0 ? (0, r.jsx)(I.Z, {
                 disabled: y || 0 === H || !a,
                 tabIndex: 0,
-                onChange: V,
+                onChange: Y,
                 setLoading: P,
                 multiple: !0
               }) : null]
@@ -432,8 +445,8 @@ let z = u().throttle(f.OQ, 1e3),
           })]
         }), (0, r.jsx)(W, {
           isLoading: null == p,
-          staticEmojis: Z,
-          animatedEmojis: M,
+          staticEmojis: M,
+          animatedEmojis: B,
           guild: e,
           theme: s
         })]
