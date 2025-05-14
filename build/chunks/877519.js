@@ -4,8 +4,9 @@ n.d(t, {
   Z: () => E
 }), n(388685);
 var r = n(147913),
-  i = n(70956),
-  o = n(272008),
+  i = n(70956);
+n(358085);
+var o = n(272008),
   a = n(569984),
   s = n(497505),
   l = n(573196),
@@ -52,13 +53,14 @@ class g extends r.Z {
         wasSaved: r
       } = e;
       !("localization" in n.proto) || !t || r || Date.now() - this.lastFetchedQuestForLocaleChangeAt <= h || (this.lastFetchedQuestForLocaleChangeAt = Date.now(), this._fetch())
-    }), d(this, "handleLogout", () => {
+    }), d(this, "handleFetchMobileAdDataBegin", () => {}), d(this, "handleLogout", () => {
       window.clearTimeout(this.initialFetchTimerId), window.clearTimeout(this.recurringFetchTimerId), this.lastFetchAttemptedAt = 0, this.lastFetchedQuestForLocaleChangeAt = 0
     }), d(this, "actions", {
       QUESTS_FETCH_CURRENT_QUESTS_BEGIN: this.handleQuestsFetchCurrentQuestsBegin,
       POST_CONNECTION_OPEN: this.handlePostConnectionOpen,
       RUNNING_GAMES_CHANGE: this.handleRunningGamesChange,
       USER_SETTINGS_PROTO_UPDATE: this.handleUserSettingsProtoUpdate,
+      FETCH_MOBILE_AD_DATA_BEGIN: this.handleFetchMobileAdDataBegin,
       LOGOUT: this.handleLogout
     })
   }

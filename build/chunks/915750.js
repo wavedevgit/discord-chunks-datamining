@@ -87,7 +87,7 @@ class N {
     minViewTimeSeconds: c = I,
     isQuestEnrollmentBlocked: f
   }) {
-    var _ = this;
+    var y = this;
     E(this, "id", void 0), E(this, "quests", void 0), E(this, "questContent", void 0), E(this, "triggeredByStatusChange", void 0), E(this, "trackGuildAndChannelMetadata", void 0), E(this, "questContentPosition", void 0), E(this, "questContentRowIndex", void 0), E(this, "adDecisionData", void 0), E(this, "heartbeatTimeoutId", void 0), E(this, "lastBeatTime", void 0), E(this, "minViewTimeReachedTimeoutId", void 0), E(this, "minViewTimeSeconds", void 0), E(this, "minViewportPercentage", void 0), E(this, "isQuestEnrollmentBlocked", void 0), E(this, "isRunning", !1), E(this, "onMinViewTimeReached", () => {
       this.quests.forEach(e => {
         (0, m.T)().info("".concat(e.config.messages.questName, " Quest viewed for at least ").concat(this.minViewTimeSeconds, "s at ").concat((0, d._b)(this.questContent)), {
@@ -104,7 +104,8 @@ class N {
           properties: b({
             min_view_time_seconds: this.minViewTimeSeconds,
             min_viewport_percentage: this.minViewportPercentage,
-            triggered_by_status_change: this.triggeredByStatusChange
+            triggered_by_status_change: this.triggeredByStatusChange,
+            google_advertising_id: _.Z.googleAdvertisingId
           }, this.commonProperties(e)),
           trackGuildAndChannelMetadata: this.trackGuildAndChannelMetadata,
           shouldExtendSession: t
@@ -112,23 +113,23 @@ class N {
       })
     }), E(this, "beat", function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-      _.quests.forEach(t => {
-        if (null != _.lastBeatTime) {
-          let n = Math.round(Date.now() - _.lastBeatTime);
+      y.quests.forEach(t => {
+        if (null != y.lastBeatTime) {
+          let n = Math.round(Date.now() - y.lastBeatTime);
           (0, m.T)().info("".concat(t.config.messages.questName, " Quest impression ").concat(e ? "terminal " : "", "heartbeat: ").concat(n, "ms since last heartbeat"), {
-            impressionId: _.id
+            impressionId: y.id
           }), (0, d.dA)({
             questId: t.id,
             event: g.rMx.QUEST_CONTENT_VIEW_TIME,
             properties: b({
               is_termination_beat: e,
               viewed_time_ms: n,
-              triggered_by_status_change: _.triggeredByStatusChange
-            }, _.commonProperties(t)),
-            trackGuildAndChannelMetadata: _.trackGuildAndChannelMetadata
+              triggered_by_status_change: y.triggeredByStatusChange
+            }, y.commonProperties(t)),
+            trackGuildAndChannelMetadata: y.trackGuildAndChannelMetadata
           })
         }
-      }), _.lastBeatTime = Date.now()
+      }), y.lastBeatTime = Date.now()
     }), E(this, "commonProperties", e => b(O(b({
       impression_id: this.id
     }, this.adDecisionData), {
@@ -166,7 +167,7 @@ class N {
       }), this.isRunning = !0
     }), E(this, "stop", function() {
       let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-      e && _.beat(!0), _.lastBeatTime = void 0, clearInterval(_.heartbeatTimeoutId), clearTimeout(_.minViewTimeReachedTimeoutId), _.isRunning = !1
+      e && y.beat(!0), y.lastBeatTime = void 0, clearInterval(y.heartbeatTimeoutId), clearTimeout(y.minViewTimeReachedTimeoutId), y.isRunning = !1
     }), this.id = (0, o.Z)(), this.adDecisionData = n, this.questContent = t, this.questContentPosition = s, this.minViewTimeSeconds = c, this.minViewportPercentage = S, this.quests = Array.isArray(e) ? e : [e], this.trackGuildAndChannelMetadata = i, this.triggeredByStatusChange = r, this.questContentRowIndex = l, this.isQuestEnrollmentBlocked = f
   }
 }
