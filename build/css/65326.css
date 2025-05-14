@@ -1,6 +1,6 @@
 /**
   Module ID: 65326
-  Original File Name: 35cf0410793bc84b
+  Original File Name: 4f384826a67df612
 **/
 .scroller__95bea {
     display: flex;
@@ -503,15 +503,9 @@
 
 .nick__0a95c {
     align-items: center;
-    color: var(--text-muted);
     display: flex;
-    font-size: 12px;
-    font-weight: 500;
     justify-content: flex-start;
-    line-height: 16px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap
+    overflow: hidden
 }
 
 .container_d1d9f3 {
@@ -770,4 +764,4 @@
     gap: 8px
 }
 
-/*# sourceMappingURL=35cf0410793bc84b.css.map*/
+/*# sourceMappingURL=4f384826a67df612.css.map*/

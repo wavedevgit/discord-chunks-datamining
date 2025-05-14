@@ -1,6 +1,6 @@
 /**
   Module ID: 62423
-  Original File Name: ccb4a4502872feb3
+  Original File Name: c6e9828b9f86cd4f
 **/
 .content__79cbe {
     border-radius: 8px;
@@ -13022,15 +13022,9 @@ div.profileThemedContainer__656be {
 
 .nick__0a95c {
     align-items: center;
-    color: var(--text-muted);
     display: flex;
-    font-size: 12px;
-    font-weight: 500;
     justify-content: flex-start;
-    line-height: 16px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap
+    overflow: hidden
 }
 
 .section__1f6ca {
@@ -13165,4 +13159,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=ccb4a4502872feb3.css.map*/
+/*# sourceMappingURL=c6e9828b9f86cd4f.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 44784
-  Original File Name: fa3e398aa16f2437
+  Original File Name: 2988b28402f6061f
 **/
 .scroller__95bea {
     display: flex;
@@ -503,15 +503,9 @@
 
 .nick__0a95c {
     align-items: center;
-    color: var(--text-muted);
     display: flex;
-    font-size: 12px;
-    font-weight: 500;
     justify-content: flex-start;
-    line-height: 16px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap
+    overflow: hidden
 }
 
 .container_d1d9f3 {
@@ -1192,4 +1186,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=fa3e398aa16f2437.css.map*/
+/*# sourceMappingURL=2988b28402f6061f.css.map*/
