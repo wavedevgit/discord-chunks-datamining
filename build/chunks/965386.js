@@ -11,8 +11,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  o = n.n(i),
-  a = n(481060),
+  a = n.n(i),
+  o = n(481060),
   s = n(256965);
 let l = e => {
     let {
@@ -20,7 +20,7 @@ let l = e => {
       className: n
     } = e;
     return (0, r.jsx)("div", {
-      className: o()(s.autocompleteRowContent, n),
+      className: a()(s.autocompleteRowContent, n),
       children: t
     })
   },
@@ -30,7 +30,7 @@ let l = e => {
       className: n
     } = e;
     return (0, r.jsx)("div", {
-      className: o()(s.autocompleteRowContentPrimary, n),
+      className: a()(s.autocompleteRowContentPrimary, n),
       children: t
     })
   },
@@ -40,7 +40,7 @@ let l = e => {
       className: n
     } = e;
     return (0, r.jsx)("div", {
-      className: o()(s.autocompleteRowIcon, n),
+      className: a()(s.autocompleteRowIcon, n),
       children: t
     })
   },
@@ -49,8 +49,8 @@ let l = e => {
       children: t,
       className: n
     } = e;
-    return (0, r.jsx)(a.Text, {
-      className: o()(n, s.autocompleteRowHeading),
+    return (0, r.jsx)(o.Text, {
+      className: a()(n, s.autocompleteRowHeading),
       color: "interactive-active",
       variant: "text-md/normal",
       children: t
@@ -61,8 +61,8 @@ let l = e => {
       children: t,
       className: n
     } = e;
-    return (0, r.jsx)(a.Text, {
-      className: o()(n, s.autocompleteRowSubheading),
+    return (0, r.jsx)(o.Text, {
+      className: a()(n, s.autocompleteRowSubheading),
       color: "interactive-normal",
       variant: "text-xs/normal",
       children: t
@@ -73,8 +73,8 @@ let l = e => {
       children: t,
       className: n
     } = e;
-    return (0, r.jsx)(a.Text, {
-      className: o()(n, s.autocompleteRowContentSecondary),
+    return (0, r.jsx)(o.Text, {
+      className: a()(n, s.autocompleteRowContentSecondary),
       color: "interactive-normal",
       variant: "text-xs/normal",
       children: t

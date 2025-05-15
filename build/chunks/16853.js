@@ -1,16 +1,16 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(255367),
   i = n(73800),
   l = n(481060),
-  o = n(643560);
-let a = e => {
+  a = n(643560);
+let o = e => {
   let {
     entry: t,
     hideEditButton: n,
-    children: a,
+    children: o,
     onRequestOpen: s,
     onRequestClose: c,
     targetElementRef: u
@@ -27,12 +27,12 @@ let a = e => {
       let {
         closePopout: i
       } = e;
-      return (0, r.jsx)(o.default, {
+      return (0, r.jsx)(a.default, {
         entry: t,
         closePopout: i,
         hideEditButton: n
       })
     },
-    children: a
+    children: o
   })
 }

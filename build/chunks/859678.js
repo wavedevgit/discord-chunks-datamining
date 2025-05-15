@@ -1,17 +1,17 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  G: () => a
+  G: () => o
 });
 var r = n(73800),
   i = n(15624),
-  o = n(866483);
+  a = n(866483);
 
-function a(e) {
+function o(e) {
   let t = i.Z.useCanUIRequestGatewaySocket();
   r.useEffect(() => {
-    if (t) return o.m$(e), () => {
-      o.HY(e)
+    if (t) return a.m$(e), () => {
+      a.HY(e)
     }
   }, [e, t])
 }

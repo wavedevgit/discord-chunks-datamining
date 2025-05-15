@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  o = n.n(l),
-  a = n(442837),
+  a = n.n(l),
+  o = n(442837),
   s = n(481060),
   c = n(287734),
   u = n(358221),
@@ -18,9 +18,9 @@ var r = n(255367),
   g = n(823379),
   b = n(5192),
   _ = n(501655),
-  x = n(856393),
-  y = n(388032),
-  C = n(761325);
+  C = n(856393),
+  x = n(388032),
+  y = n(761325);
 let v = (e, t) => b.ZP.getName(e.getGuildId(), e.id, t.user),
   j = function(e) {
     let {
@@ -29,56 +29,56 @@ let v = (e, t) => b.ZP.getName(e.getGuildId(), e.id, t.user),
       hasConnectPermission: l
     } = e, b = (0, d.Q3)("StageChannelCallEmpty"), j = (0, h.J)(n.guild_id), O = i.useCallback(() => {
       j ? (0, p.hk)(n.guild_id, () => c.default.selectVoiceChannel(n.id)) : c.default.selectVoiceChannel(n.id)
-    }, [n.id, n.guild_id, j]), E = t.filter(e => e.type === _.Ui.VOICE), I = 4 === E.length ? 2 : 3, S = (0, a.Wu)([u.Z], () => E.map(e => u.Z.getParticipant(n.id, e.id)).filter(g.lm), [n.id, E]);
+    }, [n.id, n.guild_id, j]), E = t.filter(e => e.type === _.Ui.VOICE), I = 4 === E.length ? 2 : 3, S = (0, o.Wu)([u.Z], () => E.map(e => u.Z.getParticipant(n.id, e.id)).filter(g.lm), [n.id, E]);
     return (0, r.jsxs)("div", {
-      className: C.container,
+      className: y.container,
       children: [b && (0, r.jsx)(m.Z, {}), (0, r.jsx)("div", {
-        className: C.tiles,
+        className: y.tiles,
         style: {
           maxWidth: 168 * I
         },
         children: S.slice(0, 5).map(e => (0, r.jsx)(f.ZP, {
           participant: e,
           channel: n,
-          className: C.tile,
+          className: y.tile,
           inCall: !0,
           noVideoRender: !0,
           inPopout: !1,
           width: 48
         }, e.id))
       }), (0, r.jsx)(s.X6q, {
-        className: C.channelName,
+        className: y.channelName,
         variant: b ? "heading-xxl/normal" : "heading-xxl/semibold",
         children: n.name
       }), (0, r.jsx)("div", {
-        className: C.participantsRow,
+        className: y.participantsRow,
         children: (0, r.jsx)(s.Text, {
           tag: "div",
           color: "header-secondary",
           variant: b ? "heading-lg/normal" : "text-sm/normal",
-          children: 0 === E.length ? y.intl.string(y.t.FUVhyM) : 1 === E.length ? y.intl.formatToPlainString(y.t.EQwZlJ, {
+          children: 0 === E.length ? x.intl.string(x.t.FUVhyM) : 1 === E.length ? x.intl.formatToPlainString(x.t.EQwZlJ, {
             a: v(n, E[0])
-          }) : 2 === E.length ? y.intl.formatToPlainString(y.t.zBcKoK, {
+          }) : 2 === E.length ? x.intl.formatToPlainString(x.t.zBcKoK, {
             a: v(n, E[0]),
             b: v(n, E[1])
-          }) : E.length > 2 ? y.intl.formatToPlainString(y.t["3AqFaG"], {
+          }) : E.length > 2 ? x.intl.formatToPlainString(x.t["3AqFaG"], {
             a: v(n, E[0]),
             b: v(n, E[1]),
             n: E.length - 2
           }) : void 0
         })
       }), (0, r.jsxs)("div", {
-        className: C.buttonContainer,
+        className: y.buttonContainer,
         children: [(0, r.jsx)(s.zxk, {
           disabled: !l,
-          className: o()(C.joinButton, {
-            [C.roundButton]: !b
+          className: a()(y.joinButton, {
+            [y.roundButton]: !b
           }),
           color: l ? b ? s.zxk.Colors.WHITE : s.zxk.Colors.GREEN : s.zxk.Colors.PRIMARY,
           onClick: O,
           size: s.zxk.Sizes.MEDIUM,
-          children: l ? y.intl.string(y.t["7vb2cX"]) : y.intl.string(y.t.TVBCKS)
-        }), b && (0, r.jsx)(x.e, {
+          children: l ? x.intl.string(x.t["7vb2cX"]) : x.intl.string(x.t.TVBCKS)
+        }), b && (0, r.jsx)(C.e, {
           channel: n
         })]
       })]

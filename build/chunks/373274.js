@@ -44,8 +44,8 @@ var r, i = n(255367),
   V = n(285573),
   H = n(995993),
   F = n(910595),
-  z = n(120818),
-  W = n(61642),
+  W = n(120818),
+  z = n(61642),
   Y = n(848442),
   K = n(53425),
   q = n(424785),
@@ -594,7 +594,7 @@ class ep extends(r = l.PureComponent) {
               selected: s === en.z.GUILD_SCHEDULED_EVENTS
             }, en.z.GUILD_SCHEDULED_EVENTS);
           case en.z.GUILD_ROLE_SUBSCRIPTIONS:
-            return (0, i.jsx)(W.Z, {
+            return (0, i.jsx)(z.Z, {
               guild: r,
               selected: s === el.oC.ROLE_SUBSCRIPTIONS
             }, en.z.GUILD_ROLE_SUBSCRIPTIONS);
@@ -604,7 +604,7 @@ class ep extends(r = l.PureComponent) {
               selected: s === el.oC.GUILD_SHOP
             }, en.z.GUILD_SHOP);
           case en.z.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR:
-            return (0, i.jsx)(z.T, {
+            return (0, i.jsx)(W.T, {
               guild: r
             });
           case en.z.CHANNELS_AND_ROLES:

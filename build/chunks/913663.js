@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => p
 });
 var r, i = n(442837),
-  o = n(570140),
-  a = n(703558);
+  a = n(570140),
+  o = n(703558);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -24,14 +24,14 @@ function u(e) {
     sticker: n,
     draftType: r
   } = e;
-  (r === a.d.FirstThreadMessage ? c : l)[t] = [n]
+  (r === o.d.FirstThreadMessage ? c : l)[t] = [n]
 }
 
 function d(e) {
   let {
     channelId: t,
     draftType: n
-  } = e, r = n === a.d.FirstThreadMessage ? c : l;
+  } = e, r = n === o.d.FirstThreadMessage ? c : l;
   null != r[t] && delete r[t]
 }
 
@@ -40,11 +40,11 @@ function f() {
 }
 class _ extends(r = i.ZP.Store) {
   getStickerPreview(e, t) {
-    return (t === a.d.FirstThreadMessage ? c : l)[e]
+    return (t === o.d.FirstThreadMessage ? c : l)[e]
   }
 }
 s(_, "displayName", "StickerMessagePreviewStore");
-let p = new _(o.Z, {
+let p = new _(a.Z, {
   ADD_STICKER_PREVIEW: u,
   CLEAR_STICKER_PREVIEW: d,
   LOGOUT: f

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  o = n(442837),
-  a = n(607070),
+  a = n(442837),
+  o = n(607070),
   s = n(70097),
   l = n(92190),
   c = n(106376);
@@ -14,7 +14,7 @@ let u = e => {
   let {
     className: t,
     animationState: n = "on"
-  } = e, u = (0, o.e7)([a.Z], () => a.Z.useReducedMotion), [d, f] = (0, i.useState)(!1), _ = (0, i.useRef)(null), p = "on" === n || "on_hover" === n && d;
+  } = e, u = (0, a.e7)([o.Z], () => o.Z.useReducedMotion), [d, f] = (0, i.useState)(!1), _ = (0, i.useRef)(null), p = "on" === n || "on_hover" === n && d;
   return (0, i.useEffect)(() => {
     null !== _.current && (p ? _.current.play() : (_.current.currentTime = 0, _.current.pause()))
   }, [p]), (0, r.jsx)("div", {

@@ -3,10 +3,10 @@ n.d(t, {
   GB: () => C,
   JI: () => N,
   UM: () => A,
-  V6: () => P,
+  V6: () => T,
   WT: () => O,
   X7: () => I,
-  jq: () => T,
+  jq: () => P,
   mx: () => E
 }), n(415506);
 var r = n(255367),
@@ -75,7 +75,7 @@ let E = 100,
     }) : null
   };
 
-function P(e) {
+function T(e) {
   var t;
   let {
     invite: n,
@@ -91,7 +91,7 @@ function P(e) {
   })
 }
 
-function T(e) {
+function P(e) {
   let {
     invite: t,
     showBigUserIcon: n

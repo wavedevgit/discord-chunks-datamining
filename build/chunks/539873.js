@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(953529);
 var r = n(255367),
   i = n(73800),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(442837),
   l = n(481060),
   c = n(570140),
@@ -70,8 +70,8 @@ function R(e, t) {
   if (null == e) return {};
   var n, r, i = w(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -79,15 +79,15 @@ function R(e, t) {
 function w(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
 function D(e) {
   let {
     className: t,
-    disabled: o,
+    disabled: a,
     isEditor: A,
     renderCTAButtons: C
   } = e, [w, D] = (0, s.Wu)([g.Z], () => [g.Z.getCurrentDesktopIcon(), g.Z.isUpsellPreview]), {
@@ -163,14 +163,14 @@ function D(e) {
               })]
             }) : (0, r.jsx)(l.X6q, {
               variant: "text-sm/normal",
-              className: a()({
+              className: o()({
                 [T.subtext]: G
               }),
               children: I.intl.string(I.t.IgENJi)
             })]
           }), null == C ? void 0 : C()]
         }), (0, r.jsx)("div", {
-          className: a()(S.presets, {
+          className: o()(S.presets, {
             [S.presetsJustified]: L && A
           }),
           children: (0, y.wu)().filter(e => {
@@ -182,8 +182,8 @@ function D(e) {
             icon: e,
             isSelected: w === e.id,
             onSelect: e => B(e),
-            disabled: o,
-            tabIndex: 0 !== t || o ? void 0 : 0,
+            disabled: a,
+            tabIndex: 0 !== t || a ? void 0 : 0,
             locked: L && !A && e.id !== E.aH.DEFAULT
           }, e.id))
         })]

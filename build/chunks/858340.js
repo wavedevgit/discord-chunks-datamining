@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => _
 });
 var r, i = n(442837),
-  o = n(570140),
-  a = n(981631);
+  a = n(570140),
+  o = n(981631);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -22,7 +22,7 @@ function c() {
 }
 
 function u() {
-  delete l[a.K3D.SOUND]
+  delete l[o.K3D.SOUND]
 }
 
 function d(e) {
@@ -30,7 +30,7 @@ function d(e) {
     errorMessage: t,
     errorCode: n
   } = e;
-  l[a.K3D.SOUND] = {
+  l[o.K3D.SOUND] = {
     errorMessage: t,
     errorCode: n
   }
@@ -41,7 +41,7 @@ class f extends(r = i.ZP.Store) {
   }
 }
 s(f, "displayName", "HookErrorStore");
-let _ = new f(o.Z, {
+let _ = new f(a.Z, {
   MEDIA_ENGINE_SET_GO_LIVE_SOURCE: c,
   MEDIA_ENGINE_SOUNDSHARE_TRANSMITTING: u,
   MEDIA_ENGINE_SOUNDSHARE_FAILED: d

@@ -1,36 +1,36 @@
 /** Chunk was on 55196 **/
-t.d(l, {
+n.d(t, {
   Z: () => d
 });
-var n = t(73800),
-  i = t(46973),
-  s = t(846519),
-  r = t(763520),
-  a = t(798681),
-  o = t(70956),
-  c = t(878001);
+var l = n(73800),
+  i = n(46973),
+  r = n(846519),
+  s = n(763520),
+  a = n(798681),
+  o = n(70956),
+  c = n(878001);
 let u = 20 * o.Z.Millis.SECOND;
 
 function d(e) {
   let {
-    streamId: l,
-    userId: t,
+    streamId: t,
+    userId: n,
     videoSpinnerContext: o,
     streamKey: d,
-    loading: m,
-    paused: p = !1
-  } = e, f = n.useRef(new s.V7), v = o === r.m.SELF_STREAM || o === r.m.REMOTE_STREAM ? i.Yn.STREAM : i.Yn.DEFAULT;
-  return n.useEffect(() => {
-    if (!m || p || !a.w.isIncomingVideoEnabled()) return;
-    let e = f.current;
+    loading: p,
+    paused: f = !1
+  } = e, m = l.useRef(new r.V7), v = o === s.m.SELF_STREAM || o === s.m.REMOTE_STREAM ? i.Yn.STREAM : i.Yn.DEFAULT;
+  return l.useEffect(() => {
+    if (!p || f || !a.w.isIncomingVideoEnabled()) return;
+    let e = m.current;
     return e.start(u, () => {
-      (0, c.K)(l, t, v, d)
+      (0, c.K)(t, n, v, d)
     }), () => {
       e.stop()
     }
-  }, [p, l, m, v, d, t]), {
-    onReady: n.useCallback(() => {
-      f.current.stop(), (0, c.w)(v, t)
-    }, [t, v])
+  }, [f, t, p, v, d, n]), {
+    onReady: l.useCallback(() => {
+      m.current.stop(), (0, c.w)(v, n)
+    }, [n, v])
   }
 }

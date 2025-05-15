@@ -1,16 +1,16 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(255367),
   i = n(73800),
   l = n(390322),
-  o = n(381871);
-let a = e => {
+  a = n(381871);
+let o = e => {
   let {
     isHovered: t,
     closePopout: n,
-    onMouseEnter: a,
+    onMouseEnter: o,
     onMouseLeave: s,
     onFocus: c,
     channel: u
@@ -19,9 +19,9 @@ let a = e => {
     t || n()
   }, [n, t]), (0, r.jsx)(l.Z, {
     children: (0, r.jsx)("div", {
-      onMouseEnter: a,
+      onMouseEnter: o,
       onMouseLeave: s,
-      children: (0, r.jsx)(o.Z, {
+      children: (0, r.jsx)(a.Z, {
         channel: u,
         closePopout: n,
         onFocus: c

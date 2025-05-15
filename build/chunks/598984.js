@@ -1,16 +1,16 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  NR: () => o,
+  NR: () => a,
   Ob: () => l,
   Vx: () => u,
-  ZI: () => a,
+  ZI: () => o,
   m1: () => c,
   uc: () => s
 });
 var r = n(987170),
   i = n(987338);
-let o = (0, r.Z)({
+let a = (0, r.Z)({
     kind: "user",
     id: "2024-06_ctp_app_open_vanilla",
     label: "CTP app open - A/A test - Vanilla",
@@ -26,7 +26,7 @@ let o = (0, r.Z)({
       }
     }]
   }),
-  a = (0, r.Z)({
+  o = (0, r.Z)({
     kind: "user",
     id: "2024-06_ctp_app_open_filters",
     label: "CTP app open - A/A test - Filters",

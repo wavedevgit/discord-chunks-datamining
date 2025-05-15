@@ -1,45 +1,45 @@
 /** Chunk was on 55196 **/
-t.d(l, {
-  m: () => f,
-  o: () => x
-}), t(388685);
-var n, i = t(259443),
-  s = t(379649),
-  r = t(314897),
-  a = t(592125),
-  o = t(866960),
-  c = t(19780),
-  u = t(979651),
-  d = t(626135),
-  m = t(981631);
+n.d(t, {
+  m: () => m,
+  o: () => g
+}), n(388685);
+var l, i = n(259443),
+  r = n(379649),
+  s = n(314897),
+  a = n(592125),
+  o = n(866960),
+  c = n(19780),
+  u = n(979651),
+  d = n(626135),
+  p = n(981631);
 
-function p(e, l, t) {
-  return l in e ? Object.defineProperty(e, l, {
-    value: t,
+function f(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
     enumerable: !0,
     configurable: !0,
     writable: !0
-  }) : e[l] = t, e
+  }) : e[t] = n, e
 }
-var f = ((n = {}).SELF_VIDEO = "self_video", n.SELF_STREAM = "self_stream", n.REMOTE_VIDEO = "remote_video", n.REMOTE_STREAM = "remote_stream", n.CHANGE_VIDEO_BACKGROUND = "change_video_background", n.REPLAY_VIDEO_STREAM = "replay_video_stream", n);
+var m = ((l = {}).SELF_VIDEO = "self_video", l.SELF_STREAM = "self_stream", l.REMOTE_VIDEO = "remote_video", l.REMOTE_STREAM = "remote_stream", l.CHANGE_VIDEO_BACKGROUND = "change_video_background", l.REPLAY_VIDEO_STREAM = "replay_video_stream", l);
 let v = new Map;
-class x {
+class g {
   onSpinnerStarted() {
-    null == this.spinnerVisibleStart && (this.spinnerVisibleStart = (0, s.zO)())
+    null == this.spinnerVisibleStart && (this.spinnerVisibleStart = (0, r.zO)())
   }
-  trackSpinnerDuration(e, l, t) {
+  trackSpinnerDuration(e, t, n) {
     if (null == this.spinnerVisibleStart) return;
-    let n = function(e) {
-        var l;
-        let t = (null != (l = v.get(e)) ? l : 0) + 1;
-        return v.set(e, t), t
-      }(t),
-      i = (0, s.zO)() - this.spinnerVisibleStart;
-    if (this.spinnerVisibleStart = null, i < 0) return void this.logger.warn("spinner duration is negative: ".concat(i, " ms\n        [").concat(e, ", count for stream: ").concat(n, "]"));
-    this.logger.info("spinner visible for ".concat(i, " ms\n      [").concat(e, ", count for stream: ").concat(n, "]"));
-    let p = c.Z.getGuildId(),
-      f = u.Z.getUserVoiceChannelId(p, r.default.getId()),
-      x = function(e) {
+    let l = function(e) {
+        var t;
+        let n = (null != (t = v.get(e)) ? t : 0) + 1;
+        return v.set(e, n), n
+      }(n),
+      i = (0, r.zO)() - this.spinnerVisibleStart;
+    if (this.spinnerVisibleStart = null, i < 0) return void this.logger.warn("spinner duration is negative: ".concat(i, " ms\n        [").concat(e, ", count for stream: ").concat(l, "]"));
+    this.logger.info("spinner visible for ".concat(i, " ms\n      [").concat(e, ", count for stream: ").concat(l, "]"));
+    let f = c.Z.getGuildId(),
+      m = u.Z.getUserVoiceChannelId(f, s.default.getId()),
+      g = function(e) {
         if (null != e) {
           if (e.isGuildVoice()) return "guild_voice";
           if (e.isGuildStageVoice()) return "is_stage_channel";
@@ -47,23 +47,23 @@ class x {
           if (e.isGroupDM()) return "group_dm"
         }
         return null
-      }(a.Z.getChannel(f));
-    d.default.track(m.rMx.VIDEO_SPINNER_SHOWN_V2, {
+      }(a.Z.getChannel(m));
+    d.default.track(p.rMx.VIDEO_SPINNER_SHOWN_V2, {
       video_spinner_context: e,
       duration_video_spinner_visible_ms: i,
       rtc_connection_id: c.Z.getRTCConnectionId(),
       media_session_id: c.Z.getMediaSessionId(),
-      event_count_for_stream: n,
-      guild_id: p,
-      channel_id: f,
-      channel_type: x,
-      spinning_user_id: l,
+      event_count_for_stream: l,
+      guild_id: f,
+      channel_id: m,
+      channel_type: g,
+      spinning_user_id: t,
       connection_type: o.Z.getType(),
       effective_connection_speed: o.Z.getEffectiveConnectionSpeed(),
       service_provider: o.Z.getServiceProvider()
     })
   }
   constructor(e) {
-    p(this, "logger", void 0), p(this, "spinnerVisibleStart", null), this.logger = new i.Yd(e)
+    f(this, "logger", void 0), f(this, "spinnerVisibleStart", null), this.logger = new i.Yd(e)
   }
 }

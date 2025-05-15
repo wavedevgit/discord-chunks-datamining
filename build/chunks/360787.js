@@ -1,9 +1,9 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => x
+  Z: () => C
 }), n(388685), n(539854);
-var r, i, l, o = n(442837),
-  a = n(846519),
+var r, i, l, a = n(442837),
+  o = n(846519),
   s = n(570140),
   c = n(278323),
   u = n(158776),
@@ -14,7 +14,7 @@ function p(e, t) {
 }
 let h = {},
   f = {},
-  m = new a.sW(3e3, function() {
+  m = new o.sW(3e3, function() {
     let e = [];
     for (let [t, n] of Object.entries(f)) e.push(n), h[t] = n, delete f[t];
     0 !== e.length && c.Z.subscribeActivities(e)
@@ -28,7 +28,7 @@ function g(e) {
 function b() {
   h = {}, f = {}
 }
-class _ extends(r = o.ZP.Store) {
+class _ extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(u.Z)
   }
@@ -42,7 +42,7 @@ l = "PresenceSubscriptionsStore", (i = "displayName") in _ ? Object.defineProper
   configurable: !0,
   writable: !0
 }) : _[i] = l;
-let x = new _(s.Z, {
+let C = new _(s.Z, {
   PRESENCE_SUBSCRIPTIONS_ADD: function(e) {
     let {
       subscription: t
@@ -56,8 +56,8 @@ let x = new _(s.Z, {
       userId: r,
       applicationId: i,
       partyId: l,
-      messageId: o,
-      channelId: a,
+      messageId: a,
+      channelId: o,
       inviteTime: s
     } = t;
     if (g(t) || s + d.$y < Date.now()) return n;
@@ -67,8 +67,8 @@ let x = new _(s.Z, {
       userId: r,
       applicationId: i,
       partyId: l,
-      messageId: o,
-      channelId: a,
+      messageId: a,
+      channelId: o,
       expiresAt: u
     }, m.delay(), !0
   },

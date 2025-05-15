@@ -66,7 +66,7 @@ function F(e) {
   return e
 }
 
-function z(e, t) {
+function W(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -78,7 +78,7 @@ function z(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class W extends R.ZP {
+class z extends R.ZP {
   getVoiceStatesCount() {
     var e;
     let {
@@ -177,7 +177,7 @@ class W extends R.ZP {
               }
               return i
             }(o, ["onClick", "onContextMenu"]);
-            return (0, r.jsxs)(L.ZP, z(F({
+            return (0, r.jsxs)(L.ZP, W(F({
               className: B.iconVisibility,
               iconClassName: l()({
                 [V.iconLive]: null != f
@@ -246,7 +246,7 @@ class W extends R.ZP {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("18320"), n.e("83331"), n.e("81070")]).then(n.bind(n, 213202));
-        return n => (0, r.jsx)(e, z(F({}, n), {
+        return n => (0, r.jsx)(e, W(F({}, n), {
           channel: t,
           guild: i
         }))
@@ -310,7 +310,7 @@ class W extends R.ZP {
     })
   }
 }
-let Y = (0, u.B)((0, d.Q)(W));
+let Y = (0, u.B)((0, d.Q)(z));
 
 function K(e) {
   let {
@@ -346,7 +346,7 @@ function K(e) {
     needSubscriptionToAccess: _,
     enableConnectedUserLimit: P || n.userLimit > 0 && n.userLimit < M.xGv
   }), A = e.connected && null == T;
-  return (0, r.jsx)(Y, z(F({
+  return (0, r.jsx)(Y, W(F({
     categoryCollapsed: h,
     connectAction: p,
     numAudience: g,

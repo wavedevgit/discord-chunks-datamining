@@ -8,8 +8,8 @@ var r = n(255367);
 n(73800);
 var i = n(347715),
   l = n(481060),
-  o = n(668781),
-  a = n(493683),
+  a = n(668781),
+  o = n(493683),
   s = n(100527),
   c = n(346486),
   u = n(486324),
@@ -48,14 +48,14 @@ let p = (e, t) => (0, l.ZDy)(async () => {
   }),
   h = (e, t) => {
     p(n => {
-      a.Z.setIcon(e, n.imageUri, t).catch(f)
+      o.Z.setIcon(e, n.imageUri, t).catch(f)
     }, [t])
   },
   f = e => {
     var t;
     if ((null == e || null == (t = e.body) ? void 0 : t.retry_after) != null) {
       let t = (0, i.Z)(new Date, e.body.retry_after);
-      o.Z.show({
+      a.Z.show({
         title: d.intl.string(d.t["Whhv4+"]),
         body: d.intl.format(d.t.VIJkAw, {
           duration: (0, r.jsx)(c.Z, {

@@ -4,8 +4,8 @@ n.d(t, {
 }), n(388685), n(997841);
 var r, i = n(442837),
   l = n(570140),
-  o = n(314897),
-  a = n(592125),
+  a = n(314897),
+  o = n(592125),
   s = n(430824),
   c = n(944486),
   u = n(9156),
@@ -25,7 +25,7 @@ function _(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let x = [{
+let C = [{
     timeSinceJoin: +d.Z.Millis.HOUR,
     sends: 1,
     viewTime: +d.Z.Millis.MINUTE
@@ -42,8 +42,8 @@ let x = [{
     sends: 10,
     viewTime: 30 * d.Z.Millis.MINUTE
   }],
-  y = 5 * x[x.length - 1].viewTime,
-  C = d.Z.Millis.WEEK,
+  x = 5 * C[C.length - 1].viewTime,
+  y = d.Z.Millis.WEEK,
   v = {
     channels: {}
   },
@@ -55,7 +55,7 @@ let x = [{
 function S() {
   if (null == O || !N(O)) return !1;
   let e = Z(O);
-  if (e.lastActionTime > Date.now() - d.Z.Millis.DAY && e.viewDuration > y) return !1;
+  if (e.lastActionTime > Date.now() - d.Z.Millis.DAY && e.viewDuration > x) return !1;
   let t = Date.now();
   e.lastActionTime = t, e.viewDuration += t - E, E = t
 }
@@ -76,7 +76,7 @@ function Z(e) {
 
 function N(e) {
   if (!u.ZP.useNewNotifications || j.has(e)) return !1;
-  let t = a.Z.getBasicChannel(e);
+  let t = o.Z.getBasicChannel(e);
   if (null == t || null == t.guild_id || u.ZP.isGuildOrCategoryOrChannelMuted(t.guild_id, t.id) || T(t.guild_id, t.id) || T(t.guild_id, t.parent_id)) return !1;
   let n = u.ZP.resolveUnreadSetting(t);
   return u.ZP.getChannelUnreadSetting(t.guild_id, t.id) === g.i.UNSET && n !== g.i.ALL_MESSAGES
@@ -89,7 +89,7 @@ function T(e, t) {
 }
 class A extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (v.channels = e.channels), this.syncWith([u.ZP], P), this.waitFor(u.ZP, c.Z, a.Z)
+    null != e && (v.channels = e.channels), this.syncWith([u.ZP], P), this.waitFor(u.ZP, c.Z, o.Z)
   }
   getState() {
     return v
@@ -100,15 +100,15 @@ class A extends(r = i.ZP.PersistedStore) {
   }
   maybeAutoUpgradeChannel(e) {
     if (!N(e)) return !1;
-    let t = a.Z.getBasicChannel(e);
+    let t = o.Z.getBasicChannel(e);
     return null != t && null != t.guild_id && !! function(e) {
       var t;
       let n = s.Z.getGuild(e.guild_id),
         r = null != (t = null == n ? void 0 : n.joinedAt) ? t : new Date,
         i = Math.min(h.default.age(e.id), Date.now() - r.getTime()),
         l = v.channels[e.id];
-      if (null == l || l.lastActionTime < Date.now() - C) return !1;
-      for (let e of x)
+      if (null == l || l.lastActionTime < Date.now() - y) return !1;
+      for (let e of C)
         if (i < e.timeSinceJoin && (l.numSends >= e.sends || l.viewDuration >= e.viewTime)) return !0;
       return !1
     }(t) && (delete v.channels[e], j.add(e), (0, f.IG)(t.guild_id, t.id, g.i.ALL_MESSAGES), !0)
@@ -122,7 +122,7 @@ let w = new A(l.Z, {
     },
     CONNECTION_OPEN: function() {
       O = c.Z.getChannelId(), E = Date.now(), P();
-      let e = Date.now() - C;
+      let e = Date.now() - y;
       h.default.forEach(v.channels, (t, n) => {
         let {
           lastActionTime: r
@@ -132,7 +132,7 @@ let w = new A(l.Z, {
     },
     MESSAGE_CREATE: function(e) {
       var t;
-      if (e.optimistic || e.isPushNotification || (null == (t = e.message.author) ? void 0 : t.id) !== o.default.getId() || !N(e.channelId)) return !1;
+      if (e.optimistic || e.isPushNotification || (null == (t = e.message.author) ? void 0 : t.id) !== a.default.getId() || !N(e.channelId)) return !1;
       let n = Z(e.channelId);
       n.lastActionTime = Date.now(), n.numSends++
     }

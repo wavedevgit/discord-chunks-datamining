@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  o = n(442837),
-  a = n(704215),
+  a = n(442837),
+  o = n(704215),
   s = n(481060),
   l = n(980591),
   c = n(605236),
@@ -36,10 +36,10 @@ function T(e) {
     themeType: N
   } = (0, h.z)(), C = (0, p.T)({
     location: "UserProfilePopoutInteractionCoachmark"
-  }), P = (0, o.e7)([_.default], () => {
+  }), P = (0, a.e7)([_.default], () => {
     var e;
     return (null == (e = _.default.getCurrentUser()) ? void 0 : e.id) === T.id
-  }), R = (0, o.e7)([f.Z], () => f.Z.findActivity(T.id, e => {
+  }), R = (0, a.e7)([f.Z], () => f.Z.findActivity(T.id, e => {
     let {
       type: t
     } = e;
@@ -61,7 +61,7 @@ function T(e) {
     content: E.intl.string(E.t.HEGlIC),
     header: E.intl.string(E.t["R/RaKy"]),
     spacing: S,
-    dismissibleContentType: a.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK_ALL
+    dismissibleContentType: o.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK_ALL
   } : {
     asset: y,
     assetClassName: void 0,
@@ -69,8 +69,8 @@ function T(e) {
     content: E.intl.string(E.t.LQ32TU),
     header: E.intl.string(E.t.XDBiPT),
     spacing: I,
-    dismissibleContentType: a.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK_ACTIVITY
-  }, F = (0, c.wE)(a.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK), V = D && !F ? [B] : [], [Z, H] = (0, u.US)(V);
+    dismissibleContentType: o.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK_ACTIVITY
+  }, F = (0, c.wE)(o.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK), V = D && !F ? [B] : [], [Z, H] = (0, u.US)(V);
   return (0, r.jsx)(s.yRy, {
     targetElementRef: A,
     align: "center",

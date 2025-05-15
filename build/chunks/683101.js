@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(392711),
-  o = n.n(l),
-  a = n(374470),
+  a = n.n(l),
+  o = n(374470),
   s = n(481060),
   c = n(239091),
   u = n(294218),
@@ -56,11 +56,11 @@ class b extends i.PureComponent {
       searchOffset: n,
       index: i,
       totalResults: l
-    } = this.props, a = o().find(e, e => e.isSearchHit);
-    if (null == a) return null;
-    let c = d.Z.getChannel(a.channel_id);
+    } = this.props, o = a().find(e, e => e.isSearchHit);
+    if (null == o) return null;
+    let c = d.Z.getChannel(o.channel_id);
     if (null == c) return null;
-    let f = "search-result-".concat(a.id);
+    let f = "search-result-".concat(o.id);
     return (0, r.jsx)(s.tEY, {
       ringTarget: this.hitRef,
       ringClassName: h.__invalid_searchResultFocusRing,
@@ -84,15 +84,15 @@ class b extends i.PureComponent {
             className: h.message,
             children: (0, r.jsx)(u.Z, {
               id: f,
-              message: a,
+              message: o,
               channel: c,
-              onContextMenu: e => this.handleContextMenu(e, a),
+              onContextMenu: e => this.handleContextMenu(e, o),
               animateAvatar: !1,
               subscribeToComponentDispatch: !1,
               trackAnnouncementViews: !0,
               isSearchResult: !0
             })
-          }, a.id)
+          }, o.id)
         }), (0, r.jsx)("div", {
           className: h.buttonsContainer,
           "aria-hidden": !0,
@@ -132,7 +132,7 @@ class b extends i.PureComponent {
           if (null != r && !r.isCollapsed) return !0;
           if (null == e || null == t) return !1;
           for (;
-            (0, a.k)(e) && e !== t;) {
+            (0, o.k)(e) && e !== t;) {
             let {
               tagName: t
             } = e;

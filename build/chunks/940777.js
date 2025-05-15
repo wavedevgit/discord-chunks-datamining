@@ -79,9 +79,9 @@ function D() {
     H = (0, y.Z)(e => e.guildId) === N.I_8,
     {
       badge: F,
-      unread: z
+      unread: W
     } = (0, P.Z)(G),
-    W = function(e) {
+    z = function(e) {
       let t = (0, a.e7)([C.Z], () => C.Z.getVoiceChannelId()),
         n = null != t && null != e[t],
         r = (0, a.e7)([O.Z], () => {
@@ -121,14 +121,14 @@ function D() {
     children: [(0, r.jsx)(g.Z, {
       selected: H,
       hovered: k,
-      unread: z && !U,
+      unread: W && !U,
       className: T.pill
     }), (0, r.jsx)(w.Z, {
       onShow: q,
       children: (0, r.jsx)(I.S, {
         children: (0, r.jsx)(c.aRk, {
           selected: K || H || k,
-          upperBadge: W,
+          upperBadge: z,
           lowerBadge: Y,
           children: (0, r.jsx)(c.LYs, (e = A({}, l), t = t = {
             ariaLabel: Z.intl.formatToPlainString(Z.t["/uzRsr"], {

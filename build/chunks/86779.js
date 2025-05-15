@@ -41,24 +41,24 @@ let b = "mweb_handoff_nonce",
         fingerprint: m
       })
     }, [m, e]);
-    let [y, C] = i.useState(null), P = i.useCallback(e => {
+    let [y, C] = i.useState(null), T = i.useCallback(e => {
       C(e), p.default.track(_.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
         reason: e,
         fingerprint: (0, s.K)(N)
       }, {
         fingerprint: N
       })
-    }, [C, N]), T = c.K.get(b);
-    if ("null" === n && null === y && P("deep_link_failed"), null != n && "null" !== n && null == T && null === y && P("nonce_missing"), i.useEffect(() => {
-        if (null != T) {
+    }, [C, N]), P = c.K.get(b);
+    if ("null" === n && null === y && T("deep_link_failed"), null != n && "null" !== n && null == P && null === y && T("nonce_missing"), i.useEffect(() => {
+        if (null != P) {
           let e = c.K.get(v);
-          (null == e || Date.now() >= e) && (P("nonce_expired"), S())
+          (null == e || Date.now() >= e) && (T("nonce_expired"), S())
         }
-      }, [T, P]), i.useEffect(() => {
-        null != n && "null" !== n && null != T && null == y && a.tn.post({
+      }, [P, T]), i.useEffect(() => {
+        null != n && "null" !== n && null != P && null == y && a.tn.post({
           url: _.ANM.HANDOFF_EXCHANGE,
           body: {
-            key: T,
+            key: P,
             handoff_token: n
           },
           rejectWithError: !0
@@ -72,11 +72,11 @@ let b = "mweb_handoff_nonce",
             t = new URLSearchParams(e.search);
           t.delete("handoff_token"), t.delete("fingerprint"), e.search = t.toString(), window.history.pushState(null, "", e)
         }).catch(() => {
-          P("handoff_exchange")
+          T("handoff_exchange")
         }).finally(() => {
           S()
         })
-      }, [n, T, y, N, P]), null == N) return null;
+      }, [n, P, y, N, T]), null == N) return null;
     let A = null == y ? (0, r.jsxs)(r.Fragment, {
       children: [x.intl.string(x.t.uJ1Jsb), (0, r.jsx)("br", {}), x.intl.string(x.t.GHVWAg)]
     }) : j.has(y) ? x.intl.string(x.t.EPt55u) : I.has(y) ? x.intl.string(x.t.g87kTk) : void 0;

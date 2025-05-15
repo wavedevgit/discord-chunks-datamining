@@ -5,7 +5,7 @@ n.d(t, {
 var r, i = n(442837),
   l = n(570140);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -13,13 +13,13 @@ function o(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let a = {
+let o = {
     toastsEnabledForChannel: {}
   },
-  s = a;
+  s = o;
 class c extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    s = null != e ? e : a
+    s = null != e ? e : o
   }
   getToastsEnabled(e) {
     var t;
@@ -29,7 +29,7 @@ class c extends(r = i.ZP.PersistedStore) {
     return s
   }
 }
-o(c, "displayName", "CallChatToastsStore"), o(c, "persistKey", "CallChatToasts");
+a(c, "displayName", "CallChatToastsStore"), a(c, "persistKey", "CallChatToasts");
 let u = new c(l.Z, {
   CALL_CHAT_TOASTS_SET_ENABLED: function(e) {
     let {

@@ -1,6 +1,6 @@
 /** Chunk was on 27278 **/
 n.d(t, {
-  Z: () => _
+  Z: () => Z
 }), n(388685);
 var r = n(255367),
   o = n(73800),
@@ -14,13 +14,13 @@ var r = n(255367),
   p = n(554370),
   f = n(788983),
   m = n(546247),
-  v = n(214629),
-  b = n(317381),
-  h = n(16609),
-  O = n(781780),
-  j = n(325749),
-  x = n(981631),
-  y = n(921944),
+  b = n(214629),
+  v = n(317381),
+  O = n(16609),
+  j = n(781780),
+  h = n(325749),
+  y = n(981631),
+  x = n(921944),
   g = n(578809);
 
 function P(e) {
@@ -60,7 +60,7 @@ function P(e) {
               return e
             }({}, t), o = o = {
               onClickButton: () => {
-                i(y.L.USER_DISMISS), t.onClose()
+                i(x.L.USER_DISMISS), t.onClose()
               }
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
               var n = Object.keys(e);
@@ -97,15 +97,15 @@ function P(e) {
   }) : t
 }
 
-function _() {
+function Z() {
   let {
     embeddedActivity: e,
     channelId: t,
     guildId: n
-  } = (0, i.cj)([b.ZP], () => {
-    let e = b.ZP.getCurrentEmbeddedActivity(),
-      t = (0, h.pY)(null == e ? void 0 : e.location),
-      n = (0, h.jS)(null == e ? void 0 : e.location);
+  } = (0, i.cj)([v.ZP], () => {
+    let e = v.ZP.getCurrentEmbeddedActivity(),
+      t = (0, O.pY)(null == e ? void 0 : e.location),
+      n = (0, O.jS)(null == e ? void 0 : e.location);
     return {
       embeddedActivity: e,
       channelId: t,
@@ -114,14 +114,14 @@ function _() {
   }), l = o.useRef(null), u = (0, c.Z)(e);
   o.useEffect(() => {
     null != e ? clearTimeout(l.current) : null != u && null == e && (l.current = window.setTimeout(() => {
-      (0, f.xv)(x.KJ3.ACTIVITY_POPOUT)
+      (0, f.xv)(y.KJ3.ACTIVITY_POPOUT)
     }, 5e3))
   }, [e, u]);
   let d = (0, i.e7)([s.Z], () => {
       let t = null == e ? void 0 : e.applicationId;
       return null == t ? void 0 : s.Z.getApplication(t)
     }),
-    m = (0, v.PR)();
+    m = (0, b.PR)();
   return (0, r.jsx)("div", {
     className: g.container,
     children: null == e || null == d ? (0, r.jsx)(a.$jN, {
@@ -132,14 +132,14 @@ function _() {
         className: g.iframeAndHeaderContainer,
         children: [(0, r.jsx)("div", {
           className: g.headerContainer,
-          children: (0, r.jsx)(j.Z, {
+          children: (0, r.jsx)(h.Z, {
             applicationId: d.id,
             channelId: t
           })
         }), (0, r.jsx)("div", {
           className: g.iframeContainer,
           children: (0, r.jsx)(P, {
-            children: (0, r.jsx)(O.Z, {
+            children: (0, r.jsx)(j.Z, {
               channelId: t,
               guildId: n,
               embeddedActivity: e,

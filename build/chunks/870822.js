@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 }), n(997841);
 var r = n(630388),
   i = n(981631);
 
-function o(e) {
+function a(e) {
   return null != e.flags && ((0, r.yE)(e.flags, i.udG.SOCIAL_LAYER_INTEGRATION_LIMITED) || (0, r.yE)(e.flags, i.udG.SOCIAL_LAYER_INTEGRATION))
 }

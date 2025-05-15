@@ -1,21 +1,21 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(255367),
   i = n(73800),
   l = n(450369),
-  o = n(172211);
-let a = i.memo(function(e) {
+  a = n(172211);
+let o = i.memo(function(e) {
   let {
     channel: t,
     participants: n,
     tileWidth: i,
-    selectedParticipant: a
+    selectedParticipant: o
   } = e;
   return (0, r.jsx)("div", {
-    className: o.rowContainer,
-    children: n.map(e => e.id === (null == a ? void 0 : a.id) ? null : (0, r.jsx)(l.Z, {
+    className: a.rowContainer,
+    children: n.map(e => e.id === (null == o ? void 0 : o.id) ? null : (0, r.jsx)(l.Z, {
       channel: t,
       participant: e,
       width: i

@@ -3,22 +3,22 @@
 let r;
 n.d(t, {
   ph: () => s,
-  yW: () => a
+  yW: () => o
 });
 var i = n(899517);
-let o = 1e3;
+let a = 1e3;
 
-function a() {
-  return Date.now() / o
+function o() {
+  return Date.now() / a
 }
 let s = function() {
   let {
     performance: e
   } = i.n;
-  if (!e || !e.now) return a;
+  if (!e || !e.now) return o;
   let t = Date.now() - e.now(),
     n = void 0 == e.timeOrigin ? t : e.timeOrigin;
-  return () => (n + e.now()) / o
+  return () => (n + e.now()) / a
 }();
 (() => {
   let {
@@ -30,14 +30,14 @@ let s = function() {
   }
   let t = 36e5,
     n = e.now(),
-    o = Date.now(),
-    a = e.timeOrigin ? Math.abs(e.timeOrigin + n - o) : t,
-    s = a < t,
+    a = Date.now(),
+    o = e.timeOrigin ? Math.abs(e.timeOrigin + n - a) : t,
+    s = o < t,
     l = e.timing && e.timing.navigationStart,
-    c = "number" == typeof l ? Math.abs(l + n - o) : t,
+    c = "number" == typeof l ? Math.abs(l + n - a) : t,
     u = c < t;
   if (s || u)
-    if (a <= c) return r = "timeOrigin", e.timeOrigin;
+    if (o <= c) return r = "timeOrigin", e.timeOrigin;
     else return r = "navigationStart";
   return r = "dateNow"
 })()

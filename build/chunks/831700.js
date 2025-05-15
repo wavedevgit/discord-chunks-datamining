@@ -44,8 +44,8 @@ var r = n(255367),
   V = n(63063),
   H = n(98597),
   F = n(648501),
-  z = n(473403),
-  W = n(830993),
+  W = n(473403),
+  z = n(830993),
   Y = n(653577),
   K = n(207055),
   q = n(981631),
@@ -259,7 +259,7 @@ class en extends H.ZP {
               }(c, ["onClick", "onContextMenu"]);
               return (0, r.jsx)(I.Z, {
                 channel: e,
-                children: (0, r.jsxs)(z.ZP, et(ee({
+                children: (0, r.jsxs)(W.ZP, et(ee({
                   ref: this.channelItemRef,
                   className: J.iconVisibility,
                   iconClassName: o()({
@@ -397,7 +397,7 @@ class en extends H.ZP {
       } = this.state;
       if (s && !n && !i && !a) {
         let n = T.SE.getSetting().includes(o.id);
-        return (0, r.jsx)(W.Z, {
+        return (0, r.jsx)(z.Z, {
           onAction: this.closePopout,
           guild: o,
           channel: e,

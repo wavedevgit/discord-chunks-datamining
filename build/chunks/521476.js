@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(100527),
-  o = n(906732),
-  a = n(545594),
+  a = n(906732),
+  o = n(545594),
   s = n(295474),
   c = n(981631),
   u = n(388032),
@@ -19,13 +19,13 @@ function p(e) {
     guild: p
   } = e, {
     analyticsLocations: h
-  } = (0, o.ZP)(l.Z.AUTOMOD_PROFILE_QUARANTINE_ALERT), [f, m] = (0, s.ww)({
+  } = (0, a.ZP)(l.Z.AUTOMOD_PROFILE_QUARANTINE_ALERT), [f, m] = (0, s.ww)({
     guildId: null != (t = null == p ? void 0 : p.id) ? t : c.lds,
     analyticsLocations: h,
     openWithoutBackstack: !0
   }), g = m ? u.intl.string(u.t["9ph2v7"]) : u.intl.string(u.t.ldh9Cg), b = m ? u.intl.string(u.t["/PGQf3"]) : u.intl.string(u.t.WikgZ2);
   return (0, r.jsx)("div", {
-    children: (0, r.jsx)(a.i, {
+    children: (0, r.jsx)(o.i, {
       bannerIcon: (0, r.jsx)(i.ics, {
         size: "lg",
         color: "currentColor",

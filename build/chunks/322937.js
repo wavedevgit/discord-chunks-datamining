@@ -1,20 +1,20 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  $: () => o
+  $: () => a
 });
 var r = n(73800),
   i = n(774078),
   l = n(202107);
 
-function o(e) {
+function a(e) {
   let {
     communicationDisabledUntil: t,
     userId: n,
-    guildId: o
-  } = null != e ? e : {}, a = (0, i.Z)(null != t ? Date.parse(t) : Date.now()), s = a.seconds, c = (0, r.useRef)(null);
-  return (0, r.useEffect)(() => null == e || null == o || null == n ? void clearTimeout(c.current) : (s <= 0 && null == c.current && (c.current = setTimeout(() => {
-    l.Z.clearGuildMemberTimeout(o, n)
+    guildId: a
+  } = null != e ? e : {}, o = (0, i.Z)(null != t ? Date.parse(t) : Date.now()), s = o.seconds, c = (0, r.useRef)(null);
+  return (0, r.useEffect)(() => null == e || null == a || null == n ? void clearTimeout(c.current) : (s <= 0 && null == c.current && (c.current = setTimeout(() => {
+    l.Z.clearGuildMemberTimeout(a, n)
   }, 1e3)), () => {
     null != c.current && (clearTimeout(c.current), c.current = null)
-  }), [o, n, s, t, e]), a
+  }), [a, n, s, t, e]), o
 }

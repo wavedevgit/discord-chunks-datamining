@@ -5,9 +5,9 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  o = n.n(l),
-  a = n(392711),
-  s = n.n(a),
+  a = n.n(l),
+  o = n(392711),
+  s = n.n(o),
   c = n(91192),
   u = n(924826),
   d = n(873546),
@@ -18,9 +18,9 @@ var r = n(255367),
   g = n(607070),
   b = n(100527),
   _ = n(906732),
-  x = n(82295),
-  y = n(91218),
-  C = n(623624),
+  C = n(82295),
+  x = n(91218),
+  y = n(623624),
   v = n(518738),
   j = n(850020),
   O = n(965376),
@@ -34,8 +34,8 @@ var r = n(255367),
   A = n(885110),
   w = n(111583),
   R = n(594174),
-  k = n(499033),
-  M = n(626135),
+  M = n(499033),
+  k = n(626135),
   L = n(585483),
   D = n(700785),
   U = n(51144),
@@ -70,12 +70,12 @@ let Y = B.ZP.getEnableHardwareAcceleration(),
     let {
       channel: t,
       sectionId: l,
-      userId: o,
-      guildOwnerId: a
-    } = e, s = i.useRef(null), u = (0, p.e7)([w.Z], () => w.Z.isTyping(t.id, o)), h = (0, p.e7)([Z.ZP], () => Z.ZP.getMember(t.guild_id, o)), g = (0, p.e7)([N.Z], () => {
+      userId: a,
+      guildOwnerId: o
+    } = e, s = i.useRef(null), u = (0, p.e7)([w.Z], () => w.Z.isTyping(t.id, a)), h = (0, p.e7)([Z.ZP], () => Z.ZP.getMember(t.guild_id, a)), g = (0, p.e7)([N.Z], () => {
       var e;
       return (null == h ? void 0 : h.colorRoleId) != null ? null == (e = N.Z.getRole(t.guild_id, h.colorRoleId)) ? void 0 : e.name : void 0
-    }, [t.guild_id, h]), b = (0, p.e7)([R.default], () => R.default.getUser(o)), _ = (0, p.e7)([R.default], () => R.default.getCurrentUser()), x = (null == b ? void 0 : b.id) === (null == _ ? void 0 : _.id), y = (0, p.e7)([T.Z, A.Z], () => x ? A.Z.getStatus() : T.Z.getStatus(o, t.guild_id)), v = (0, p.e7)([T.Z], () => T.Z.isMobileOnline(o)), O = (0, p.e7)([T.Z, A.Z], () => x ? A.Z.getActivities() : T.Z.getActivities(o, t.guild_id)), k = (0, p.e7)([P.Z], () => P.Z.getAnyStreamForUser(o)), M = (0, c.JA)(o), D = (0, p.e7)([E.Z], () => E.Z.canUserViewChannel(t.id, l, o)), B = (null == b ? void 0 : b.id) != null && b.id === a, V = i.useCallback(e => {
+    }, [t.guild_id, h]), b = (0, p.e7)([R.default], () => R.default.getUser(a)), _ = (0, p.e7)([R.default], () => R.default.getCurrentUser()), C = (null == b ? void 0 : b.id) === (null == _ ? void 0 : _.id), x = (0, p.e7)([T.Z, A.Z], () => C ? A.Z.getStatus() : T.Z.getStatus(a, t.guild_id)), v = (0, p.e7)([T.Z], () => T.Z.isMobileOnline(a)), O = (0, p.e7)([T.Z, A.Z], () => C ? A.Z.getActivities() : T.Z.getActivities(a, t.guild_id)), M = (0, p.e7)([P.Z], () => P.Z.getAnyStreamForUser(a)), k = (0, c.JA)(a), D = (0, p.e7)([E.Z], () => E.Z.canUserViewChannel(t.id, l, a)), B = (null == b ? void 0 : b.id) != null && b.id === o, V = i.useCallback(e => {
       null != b && (0, f.jW)(e, async () => {
         let {
           default: e
@@ -111,7 +111,7 @@ let Y = B.ZP.getEnableHardwareAcceleration(),
         rawText: n
       }), m.Z.startTyping(t.id)
     }, [b, t]), q = i.useCallback(e => {
-      e.stopPropagation(), (0, C.f)({
+      e.stopPropagation(), (0, y.f)({
         guildId: t.guild_id,
         location: {
           section: F.jXE.THREAD_MEMBER_LIST,
@@ -163,7 +163,7 @@ let Y = B.ZP.getEnableHardwareAcceleration(),
           user: b,
           currentUser: _,
           nick: null == h ? void 0 : h.nick,
-          status: y,
+          status: x,
           activities: O,
           colorString: null == h ? void 0 : h.colorString,
           colorStrings: null == h ? void 0 : h.colorStrings,
@@ -173,10 +173,10 @@ let Y = B.ZP.getEnableHardwareAcceleration(),
           guildId: t.guild_id,
           isMobile: v,
           selected: X,
-          applicationStream: k,
+          applicationStream: M,
           premiumSince: null == $ ? null : new Date($),
           onClickPremiumGuildIcon: q,
-          itemProps: M,
+          itemProps: k,
           lostPermissionTooltipText: D ? void 0 : H.intl.string(H.t["/QcoT0"]),
           isOwner: B,
           nameplate: K,
@@ -197,7 +197,7 @@ let Y = B.ZP.getEnableHardwareAcceleration(),
       label: n,
       count: i,
       guildId: l
-    } = e, o = (0, v.p9)({
+    } = e, a = (0, v.p9)({
       roleId: t,
       guildId: l,
       size: 16
@@ -207,15 +207,15 @@ let Y = B.ZP.getEnableHardwareAcceleration(),
       children: (0, r.jsx)("div", {
         className: z.memberGroupsPlaceholder
       })
-    }) : (0, r.jsxs)(x.Z, {
+    }) : (0, r.jsxs)(C.Z, {
       className: z.membersGroup,
       "aria-label": H.intl.formatToPlainString(H.t.UaqbkZ, {
         title: n,
         count: i
       }),
-      children: [null != o ? (0, r.jsx)(y.Z, W({
+      children: [null != a ? (0, r.jsx)(x.Z, W({
         className: z.roleIcon
-      }, o)) : null, (0, r.jsxs)("span", {
+      }, a)) : null, (0, r.jsxs)("span", {
         "aria-hidden": !0,
         children: [n, " — ", i]
       })]
@@ -250,10 +250,10 @@ function J(e) {
     channel: t,
     guild: n
   } = e, l = "members-".concat(t.id), {
-    analyticsLocations: a
+    analyticsLocations: o
   } = (0, _.ZP)(b.Z.MEMBER_LIST), d = (0, O.D)(t.id, n), f = d.filter(e => e.userIds.length > 0).reverse()[0], {
     navigator: m,
-    listRef: x
+    listRef: C
   } = function(e, t) {
     let n = (0, p.e7)([g.Z], () => g.Z.keyboardModeEnabled),
       r = i.useRef(null),
@@ -261,11 +261,11 @@ function J(e) {
         let i = r.current;
         if (null == i) return;
         let l = parseInt(n, 10),
-          [o, a] = i.getSectionRowFromIndex(l),
-          s = 0 === o && 0 === a ? t : 0;
+          [a, o] = i.getSectionRowFromIndex(l),
+          s = 0 === a && 0 === o ? t : 0;
         i.scrollToIndex({
-          section: o,
-          row: a,
+          section: a,
+          row: o,
           padding: s,
           callback: () => {
             requestAnimationFrame(() => {
@@ -277,14 +277,14 @@ function J(e) {
           }
         })
       }, [t]),
-      o = i.useCallback(() => new Promise(e => {
+      a = i.useCallback(() => new Promise(e => {
         let t = r.current;
         if (null == t) return e();
         t.scrollToTop({
           callback: () => requestAnimationFrame(() => e())
         })
       }), []),
-      a = i.useCallback(() => new Promise(e => {
+      o = i.useCallback(() => new Promise(e => {
         let t = r.current;
         if (null == t) return e();
         t.scrollToBottom({
@@ -298,32 +298,32 @@ function J(e) {
         id: e,
         setFocus: l,
         isEnabled: n,
-        scrollToStart: o,
-        scrollToEnd: a
+        scrollToStart: a,
+        scrollToEnd: o
       }),
       listRef: r
     }
-  }(l, q), y = 0 === d.length || d.every(e => 0 === e.userIds.length);
+  }(l, q), x = 0 === d.length || d.every(e => 0 === e.userIds.length);
   if (i.useEffect(() => {
-      M.default.track(F.rMx.MEMBER_LIST_VIEWED, {
+      k.default.track(F.rMx.MEMBER_LIST_VIEWED, {
         channel_id: t.id,
         channel_type: t.type,
         guild_id: t.guild_id
       })
-    }, [t.guild_id, t.id, t.type]), y) return (0, r.jsx)($, {
+    }, [t.guild_id, t.id, t.type]), x) return (0, r.jsx)($, {
     channel: t
   });
-  let C = s().omit(m.containerProps, ["ref"]),
+  let y = s().omit(m.containerProps, ["ref"]),
     v = D.iJ(n);
   return (0, r.jsx)(_.Gt, {
-    value: a,
+    value: o,
     children: (0, r.jsx)(c.bG, {
       navigator: m,
       children: (0, r.jsx)(h.Wdt, {
         children: e => (0, r.jsx)("div", {
-          className: o()(z.membersWrap, z.hiddenMembers, V.container),
+          className: a()(z.membersWrap, z.hiddenMembers, V.container),
           children: (0, r.jsx)(h.aVo, W({
-            ref: x,
+            ref: C,
             className: z.members,
             paddingTop: 0,
             sectionHeight: 40,
@@ -345,11 +345,11 @@ function J(e) {
                 row: i
               } = e, {
                 userIds: l,
-                id: o
+                id: a
               } = d[n];
               return (0, r.jsx)(K, {
                 channel: t,
-                sectionId: o,
+                sectionId: a,
                 userId: l[i],
                 guildOwnerId: v
               }, l[i])
@@ -362,7 +362,7 @@ function J(e) {
             innerTag: "ul",
             sections: d.map(e => e.userIds.length),
             fade: !0
-          }, C, e), l)
+          }, y, e), l)
         })
       })
     })
@@ -374,7 +374,7 @@ function $(e) {
     channel: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: o()(z.membersWrap, z.hiddenMembers, z.members, V.emptyState),
+    className: a()(z.membersWrap, z.hiddenMembers, z.members, V.emptyState),
     children: [(0, r.jsx)(h.Text, {
       className: V.emptyStateHeader,
       variant: "text-xs/bold",
@@ -388,7 +388,7 @@ function $(e) {
           size: "lg",
           color: "currentColor"
         })
-      }), (0, r.jsx)(k.Z, {
+      }), (0, r.jsx)(M.Z, {
         className: V.emptyStateStars
       })]
     }), (0, r.jsx)(h.X6q, {

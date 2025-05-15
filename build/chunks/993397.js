@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  o = n.n(l),
-  a = n(278074),
+  a = n.n(l),
+  o = n(278074),
   s = n(481060),
   c = n(492593),
   u = n(534469),
@@ -23,9 +23,9 @@ function b(e) {
     onClick: n,
     count: i,
     compact: l,
-    collapsedReason: o
-  } = e, u = (0, a.EQ)({
-    collapsedReason: o
+    collapsedReason: a
+  } = e, u = (0, o.EQ)({
+    collapsedReason: a
   }).with({
     collapsedReason: f.t.VFWjc3
   }, () => (0, r.jsx)(s.kZF, {
@@ -52,7 +52,7 @@ function b(e) {
       iconNode: u,
       children: (0, r.jsxs)("div", {
         className: m.blockedMessageText,
-        children: [f.intl.format(o, {
+        children: [f.intl.format(a, {
           count: i
         }), " —", " ", (0, r.jsx)(s.P3F, {
           tag: "span",
@@ -69,14 +69,14 @@ let _ = i.memo(function(e) {
   let {
     messages: n,
     channel: l,
-    compact: a = !1,
+    compact: o = !1,
     unreadId: s,
     collapsedReason: c
   } = e, {
     hasJumpTarget: p = !1
-  } = n, [f, _] = i.useState(p), x = i.useCallback(() => _(e => !e), []), y = n.hasUnread ? n.content.length - 1 : n.content.length;
+  } = n, [f, _] = i.useState(p), C = i.useCallback(() => _(e => !e), []), x = n.hasUnread ? n.content.length - 1 : n.content.length;
   return (0, r.jsxs)("div", {
-    className: o()({
+    className: a()({
       [g.groupStart]: !0,
       [m.expanded]: f
     }),
@@ -84,15 +84,15 @@ let _ = i.memo(function(e) {
       isUnread: !0,
       id: s
     }, "divider") : null, (0, r.jsx)(b, {
-      count: y,
-      compact: a,
+      count: x,
+      compact: o,
       expanded: f,
-      onClick: x,
+      onClick: C,
       collapsedReason: c
     }, "collapsed-message-item"), f ? n.content.map((e, t) => {
       if (e.type === h.ys_.DIVIDER && t > 0) {
-        var i, o;
-        let e = null != (o = null == (i = n.content[t + 1]) ? void 0 : i.isGroupStart) && o;
+        var i, a;
+        let e = null != (a = null == (i = n.content[t + 1]) ? void 0 : i.isGroupStart) && a;
         return (0, r.jsx)(d.Z, {
           isUnread: !0,
           isBeforeGroup: e,
@@ -103,7 +103,7 @@ let _ = i.memo(function(e) {
         let t = e.type === h.ys_.THREAD_STARTER_MESSAGE ? u.Ru : u.ZP;
         return (0, r.jsx)(t, {
           className: m.__invalid_blocked,
-          compact: a,
+          compact: o,
           channel: l,
           message: e.content,
           groupId: e.groupId,

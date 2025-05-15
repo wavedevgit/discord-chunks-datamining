@@ -1,13 +1,13 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  J: () => x,
+  J: () => C,
   Z: () => _
 }), n(388685), n(997841);
 var r = n(73800),
   i = n(252258),
   l = n(442837),
-  o = n(317381),
-  a = n(122613),
+  a = n(317381),
+  o = n(122613),
   s = n(16609),
   c = n(574952),
   u = n(100527),
@@ -23,34 +23,34 @@ function _(e) {
   let {
     context: t,
     primaryEntryPointCommand: n,
-    application: a,
+    application: o,
     showAppLauncherPopup: c = !1
-  } = e, [h, _] = r.useState(!1), x = (0, l.e7)([o.ZP], () => o.ZP.getCurrentEmbeddedActivity()), y = c ? b.t.cpT0Cg : b.t["0hKkS0"], C = r.useMemo(() => null != n ? (0, p.XZ)(n.displayName) : b.intl.string(b.t["3xjX0d"]), [n]), v = void 0 !== a.flags && (0, m.yE)(a.flags, g.udG.EMBEDDED), j = null != x && x.applicationId === a.id && (x.location.kind === i.E.CONTEXTLESS || (0, s.pY)(x.location) === t.channel.id), {
+  } = e, [h, _] = r.useState(!1), C = (0, l.e7)([a.ZP], () => a.ZP.getCurrentEmbeddedActivity()), x = c ? b.t.cpT0Cg : b.t["0hKkS0"], y = r.useMemo(() => null != n ? (0, p.XZ)(n.displayName) : b.intl.string(b.t["3xjX0d"]), [n]), v = void 0 !== o.flags && (0, m.yE)(o.flags, g.udG.EMBEDDED), j = null != C && C.applicationId === o.id && (C.location.kind === i.E.CONTEXTLESS || (0, s.pY)(C.location) === t.channel.id), {
     analyticsLocations: O
   } = (0, d.ZP)(u.Z.APP_DMS_ENTRY_POINT_COMMAND_BUTTON), E = null != t.channel.recipients ? t.channel.recipients[0] : void 0;
   return {
     isExecutingLaunchInteraction: h,
     buttonText: (0, f.ms)({
       context: t,
-      applicationId: a.id,
+      applicationId: o.id,
       botUserId: E
-    }) && v ? j ? b.intl.string(b.t["Hi1/aW"]) : null != C ? C : b.intl.string(b.t.zKX8Nj) : b.intl.string(y),
+    }) && v ? j ? b.intl.string(b.t["Hi1/aW"]) : null != y ? y : b.intl.string(b.t.zKX8Nj) : b.intl.string(x),
     hasActiveMatchingEmbeddedActivity: j,
     isEmbeddedApp: v,
-    currentEmbeddedActivity: x,
+    currentEmbeddedActivity: C,
     channelRecipientUserId: E,
     setIsExecutingLaunchInteraction: _,
     analyticsLocations: O
   }
 }
 
-function x(e) {
+function C(e) {
   let {
     context: t,
     application: n,
     isEmbeddedApp: i,
     hasActiveMatchingEmbeddedActivity: l,
-    currentEmbeddedActivity: o,
+    currentEmbeddedActivity: a,
     onOpenButtonPress: s,
     channelRecipientUserId: u,
     setIsExecutingLaunchInteraction: d,
@@ -60,10 +60,10 @@ function x(e) {
     applicationId: n.id,
     botUserId: u
   }), g = r.useCallback(() => {
-    l && null != o ? (0, c.Z)().leaveActivity({
-      location: o.location,
-      applicationId: o.applicationId
-    }) : (d(!0), (0, a.Z)({
+    l && null != a ? (0, c.Z)().leaveActivity({
+      location: a.location,
+      applicationId: a.applicationId
+    }) : (d(!0), (0, o.Z)({
       targetApplicationId: n.id,
       channelId: t.channel.id,
       analyticsLocations: p,
@@ -72,6 +72,6 @@ function x(e) {
       },
       commandOrigin: h.bB.APP_DMS_ENTRY_POINT_COMMAND_BUTTON
     }))
-  }, [l, t.channel.id, n.id, o, p, d]);
+  }, [l, t.channel.id, n.id, a, p, d]);
   return m && i ? g : s
 }

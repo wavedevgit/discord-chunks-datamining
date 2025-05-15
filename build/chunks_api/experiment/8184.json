@@ -1,0 +1,1 @@
+{"id":"8184","type":"experiment","data":{"kind":"user","id":"2025-05_dob_in_unclaimed_flow","label":"Age Gate in Unclaimed Account Flow","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Show birthday fields before registration","config":{"enabled":false}}]},"fromModule":{"id":"27978"}}

@@ -1,13 +1,13 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => x
+  Z: () => C
 });
 var r = n(255367);
 n(73800);
 var i = n(81897),
   l = n(906732),
-  o = n(566898),
-  a = n(769654),
+  a = n(566898),
+  o = n(769654),
   s = n(785717),
   c = n(806729),
   u = n(857302),
@@ -20,15 +20,15 @@ var i = n(81897),
   b = n(388032),
   _ = n(954767);
 
-function x(e) {
+function C(e) {
   let {
     user: t,
     channelId: n
   } = e, {
-    analyticsLocations: x
+    analyticsLocations: C
   } = (0, l.ZP)(), {
-    context: y
-  } = (0, s.KZ)(), C = (0, i.Z)(), {
+    context: x
+  } = (0, s.KZ)(), y = (0, i.Z)(), {
     mutualFriendsCount: v,
     mutualFriends: j,
     mutualGuilds: O
@@ -48,7 +48,7 @@ function x(e) {
           user: t,
           guild: n,
           nick: i,
-          onSelect: () => (0, a.X)(n.id)
+          onSelect: () => (0, o.X)(n.id)
         }, n.id)
       })
     }), I && E && (0, r.jsx)(p.Z, {
@@ -57,15 +57,15 @@ function x(e) {
       section: "MUTUAL_FRIENDS",
       header: b.intl.string(b.t["0mTJ3t"]),
       listClassName: _.list,
-      onExpand: () => (0, u.Z)(t.id, C),
+      onExpand: () => (0, u.Z)(t.id, y),
       items: null == j ? Array.from({
         length: v
       }).map((e, t) => (0, r.jsxs)("div", {
         className: _.loadingMutualFriend,
-        children: [(0, r.jsx)(o.ZT, {
+        children: [(0, r.jsx)(a.ZT, {
           width: 40,
           opacity: .08
-        }), (0, r.jsx)(o.ZT, {
+        }), (0, r.jsx)(a.ZT, {
           width: 135,
           opacity: .08
         })]
@@ -98,9 +98,9 @@ function x(e) {
                 })
               }
               return e
-            }({}, y), t = t = {
+            }({}, x), t = t = {
               userId: i.id,
-              sourceAnalyticsLocations: x
+              sourceAnalyticsLocations: C
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {

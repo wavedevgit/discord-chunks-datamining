@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(120356),
   l = n.n(i),
-  o = n(442837),
-  a = n(846027),
+  a = n(442837),
+  o = n(846027),
   s = n(522651),
   c = n(793148),
   u = n(131951),
@@ -26,9 +26,9 @@ function m(e) {
     currentWindow: b = window,
     location: _
   } = e, {
-    currentVolume: x,
-    muted: y
-  } = (0, o.cj)([u.Z], () => ({
+    currentVolume: C,
+    muted: x
+  } = (0, a.cj)([u.Z], () => ({
     currentVolume: u.Z.getLocalVolume(m, g),
     muted: u.Z.isLocalMute(m, g)
   }));
@@ -38,14 +38,14 @@ function m(e) {
       iconClassName: l()(n, f.controlIcon),
       sliderClassName: i,
       className: t,
-      value: (0, d.P)(x),
-      muted: y,
+      value: (0, d.P)(C),
+      muted: x,
       maxValue: p.isPlatformEmbedded ? 200 : 100,
       onValueChange: e => {
-        e > 0 && y && a.Z.toggleLocalMute(m, g), a.Z.setLocalVolume(m, (0, d.A)(e), g)
+        e > 0 && x && o.Z.toggleLocalMute(m, g), o.Z.setLocalVolume(m, (0, d.A)(e), g)
       },
       onToggleMute: () => {
-        null != _ && (0, s.v)(_, s.d.VOLUME, y), a.Z.toggleLocalMute(m, g)
+        null != _ && (0, s.v)(_, s.d.VOLUME, x), o.Z.toggleLocalMute(m, g)
       }
     })
   })

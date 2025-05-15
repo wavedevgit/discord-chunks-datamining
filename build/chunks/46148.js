@@ -64,7 +64,7 @@ let C = (e, t) => {
       },
       H = C(R, null != D ? D : null),
       F = S(H),
-      z = j(H);
+      W = j(H);
     return (0, r.jsx)("div", {
       ref: k,
       children: (0, r.jsx)(s.yRy, {
@@ -83,7 +83,7 @@ let C = (e, t) => {
             alt: "",
             className: O.chatWallpaperDMListCoachmarkArt
           }),
-          body: z,
+          body: W,
           align: G
         }),
         children: () => (0, i.cloneElement)(t, {

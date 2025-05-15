@@ -5,8 +5,8 @@ n.d(t, {
   Z: () => d
 });
 var r, i = n(442837),
-  o = n(570140),
-  a = n(865427);
+  a = n(570140),
+  o = n(865427);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -54,8 +54,8 @@ let f = 0,
   p = {};
 
 function h() {
-  0 === f && (f = 1, (0, a.Ce)().then(e => {
-    o.Z.dispatch({
+  0 === f && (f = 1, (0, o.Ce)().then(e => {
+    a.Z.dispatch({
       type: "CURRENT_BUILD_OVERRIDE_RESOLVED",
       overrides: e
     })
@@ -71,7 +71,7 @@ function m(e) {
 
 function g(e) {
   if (e in p) return;
-  let t = (0, a.r4)(e);
+  let t = (0, o.r4)(e);
   if (null == t) {
     p = u(l({}, p), {
       [e]: {
@@ -88,8 +88,8 @@ function g(e) {
       payload: String(t.payload),
       state: 1
     }
-  }), (0, a._I)(t.url).then(t => {
-    o.Z.dispatch({
+  }), (0, o._I)(t.url).then(t => {
+    a.Z.dispatch({
       type: "BUILD_OVERRIDE_RESOLVED",
       url: e,
       override: t
@@ -124,7 +124,7 @@ class b extends(r = i.ZP.Store) {
   }
 }
 s(b, "displayName", "BuildOverrideStore");
-let y = new b(o.Z, {
+let y = new b(a.Z, {
   BUILD_OVERRIDE_RESOLVED: E,
   CURRENT_BUILD_OVERRIDE_RESOLVED: m
 })

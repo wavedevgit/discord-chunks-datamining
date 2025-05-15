@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(442837),
   l = n(481060),
-  o = n(479313),
-  a = n(765104),
+  a = n(479313),
+  o = n(765104),
   s = n(626135),
   c = n(665149),
   u = n(981631),
@@ -17,7 +17,7 @@ var i = n(442837),
 function h(e) {
   let {
     channel: t
-  } = e, n = (0, i.e7)([a.Z], () => a.Z.shouldShowTopicsBar());
+  } = e, n = (0, i.e7)([o.Z], () => o.Z.shouldShowTopicsBar());
   return (0, r.jsx)(c.ZP.Icon, {
     icon: l.sVe,
     onClick: () => {
@@ -27,7 +27,7 @@ function h(e) {
         guild_id: t.guild_id,
         channel_id: t.id,
         channel_type: t.type
-      }), (0, o.e7)()
+      }), (0, a.e7)()
     },
     tooltip: n ? p.intl.string(p.t.nGs3kJ) : p.intl.string(p.t.bIm2sL),
     selected: n,

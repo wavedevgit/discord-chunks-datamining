@@ -3,8 +3,8 @@
 n.d(t, {
   l: () => h
 });
-var r, i, o = n(570140),
-  a = n(830917),
+var r, i, a = n(570140),
+  o = n(830917),
   s = n(692401),
   l = n(459005),
   c = n(398463);
@@ -75,12 +75,12 @@ class p extends s.W {
     null != this._flushIdleHandler && (f(this._flushIdleHandler), this._flushIdleHandler = null), null != this._flushIdleMaxTimeoutHandler && (clearTimeout(this._flushIdleMaxTimeoutHandler), this._flushIdleMaxTimeoutHandler = null)
   }
   constructor() {
-    super(), u(this, "_flushIdleMaxTimeoutHandler", null), o.Z.subscribe("WINDOW_VISIBILITY_CHANGE", e => {
+    super(), u(this, "_flushIdleMaxTimeoutHandler", null), a.Z.subscribe("WINDOW_VISIBILITY_CHANGE", e => {
       let {
         visible: t,
         windowId: n
       } = e;
-      n === (0, a.UU)() && this._trackAppBackgrounded(!t)
+      n === (0, o.UU)() && this._trackAppBackgrounded(!t)
     })
   }
 }

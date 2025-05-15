@@ -1,13 +1,13 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => M
+  Z: () => k
 }), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  o = n.n(l),
-  a = n(512722),
-  s = n.n(a),
+  a = n.n(l),
+  o = n(512722),
+  s = n.n(o),
   c = n(442837),
   u = n(481060),
   d = n(239091),
@@ -18,9 +18,9 @@ var r = n(255367),
   g = n(884902),
   b = n(670188),
   _ = n(271383),
-  x = n(496675),
-  y = n(158776),
-  C = n(471253),
+  C = n(496675),
+  x = n(158776),
+  y = n(471253),
   v = n(431328),
   j = n(145834),
   O = n(590415),
@@ -72,7 +72,7 @@ let A = i.memo(function(e) {
     });
     return (0, r.jsxs)(m.ZP, {
       toolbar: i,
-      className: o()(Z.headerContainer, {
+      className: a()(Z.headerContainer, {
         [Z.chatOpen]: n
       }),
       children: [(0, r.jsx)(m.ZP.Icon, {
@@ -88,10 +88,10 @@ let A = i.memo(function(e) {
     let {
       channel: t,
       participant: l,
-      tempDisableOnInit: a = !1
-    } = e, m = i.useRef(null), [x, v] = i.useState(a);
+      tempDisableOnInit: o = !1
+    } = e, m = i.useRef(null), [C, v] = i.useState(o);
     (0, h.ZP)(() => {
-      if (!x) return;
+      if (!C) return;
       let e = setTimeout(() => v(!1), 1e3);
       return () => clearTimeout(e)
     });
@@ -100,21 +100,21 @@ let A = i.memo(function(e) {
     let {
       isMobile: I,
       status: S
-    } = (0, c.cj)([y.Z], () => ({
-      isMobile: y.Z.isMobileOnline(l.user.id),
-      status: y.Z.getStatus(l.user.id, E)
+    } = (0, c.cj)([x.Z], () => ({
+      isMobile: x.Z.isMobileOnline(l.user.id),
+      status: x.Z.getStatus(l.user.id, E)
     })), A = (0, c.e7)([_.ZP], () => _.ZP.getMember(E, l.user.id)), w = (0, g.X)(t.guild_id, null == A ? void 0 : A.colorStrings), R = i.useMemo(() => ({
       [E]: [l.user.id]
     }), [E, l.user.id]);
     (0, f.$)(R);
-    let k = l.rtsState === O.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
+    let M = l.rtsState === O.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
 
-    function M() {
-      (0, C.DT)(t, l.user.id, !1)
+    function k() {
+      (0, y.DT)(t, l.user.id, !1)
     }
 
     function L() {
-      (0, C.DT)(t, l.user.id, !0)
+      (0, y.DT)(t, l.user.id, !0)
     }
     let D = e => {
       (0, d.jW)(e, async () => {
@@ -168,13 +168,13 @@ let A = i.memo(function(e) {
           }))
         }
       }), (0, r.jsx)(u.ua7, {
-        text: k ? P.intl.string(P.t.h9rsTU) : P.intl.string(P.t.f0T7hI),
+        text: M ? P.intl.string(P.t.h9rsTU) : P.intl.string(P.t.f0T7hI),
         children: e => (0, r.jsx)(u.zxk, T(N({}, e), {
           innerClassName: Z.buttonContainer,
           look: u.zxk.Looks.BLANK,
           size: u.zxk.Sizes.NONE,
-          onClick: M,
-          disabled: k || x,
+          onClick: k,
+          disabled: M || C,
           children: (0, r.jsx)(u.Lrb, {
             size: "xs",
             color: "currentColor"
@@ -183,7 +183,7 @@ let A = i.memo(function(e) {
       }), (0, r.jsx)(u.ua7, {
         text: P.intl.string(P.t.moABMz),
         children: e => (0, r.jsx)(u.zxk, T(N({}, e), {
-          innerClassName: o()(Z.buttonContainer, Z.buttonMargin),
+          innerClassName: a()(Z.buttonContainer, Z.buttonMargin),
           look: u.zxk.Looks.BLANK,
           size: u.zxk.Sizes.NONE,
           onClick: L,
@@ -206,7 +206,7 @@ let A = i.memo(function(e) {
       children: P.intl.string(P.t.GYCh0d)
     })
   }),
-  k = i.memo(function() {
+  M = i.memo(function() {
     return (0, r.jsxs)("div", {
       className: Z.emptyStateContainer,
       children: [(0, r.jsx)(I.Z, {}), (0, r.jsx)(u.Text, {
@@ -223,14 +223,14 @@ let A = i.memo(function(e) {
     })
   });
 
-function M(e) {
+function k(e) {
   let {
     channel: t,
     toggleRequestToSpeakSidebar: n,
     chatOpen: i
-  } = e, l = (0, v.Fd)(t.id), a = [+!!(0, c.e7)([x.Z], () => x.Z.can(S.Pl.MANAGE_CHANNELS, t) || x.Z.can(S.Pl.MANAGE_ROLES, t)), Math.max(1, l.length)];
+  } = e, l = (0, v.Fd)(t.id), o = [+!!(0, c.e7)([C.Z], () => C.Z.can(S.Pl.MANAGE_CHANNELS, t) || C.Z.can(S.Pl.MANAGE_ROLES, t)), Math.max(1, l.length)];
   return (0, r.jsxs)("div", {
-    className: o()(Z.container, {
+    className: a()(Z.container, {
       [Z.chatOpen]: i
     }),
     children: [(0, r.jsx)(A, {
@@ -238,7 +238,7 @@ function M(e) {
       chatOpen: i
     }), (0, r.jsx)(u.aVo, {
       className: Z.contentContainer,
-      sections: a,
+      sections: o,
       sectionHeight: function(e) {
         return 40 * (1 === e)
       },
@@ -263,7 +263,7 @@ function M(e) {
               channel: t
             }, "rts-toggle");
           case 1: {
-            if (0 === l.length) return (0, r.jsx)(k, {}, "participants-empty");
+            if (0 === l.length) return (0, r.jsx)(M, {}, "participants-empty");
             let e = l[i];
             return (0, r.jsx)(w, {
               channel: t,

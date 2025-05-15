@@ -18,13 +18,13 @@ var r = n(255367),
   f = n(893354),
   _ = n(20493);
 let x = () => {
-  let [e, t] = i.useState(""), [l, x] = i.useState(""), [E, b] = i.useState(!1), [v, O] = i.useState(!1), [I, j] = i.useState(null), [S, N] = i.useState(null), y = (0, o.e7)([d.Z], () => d.Z.getCountryCode()), C = y.code.split(" ")[0], P = async () => {
+  let [e, t] = i.useState(""), [l, x] = i.useState(""), [E, b] = i.useState(!1), [v, O] = i.useState(!1), [I, j] = i.useState(null), [S, N] = i.useState(null), y = (0, o.e7)([d.Z], () => d.Z.getCountryCode()), C = y.code.split(" ")[0], T = async () => {
     try {
       await c.Z.resendCode(e)
     } catch (e) {
       N(e.body.message)
     }
-  }, T = async () => {
+  }, P = async () => {
     b(!0);
     try {
       let {
@@ -76,11 +76,11 @@ let x = () => {
       }), (0, r.jsx)(g.zx, {
         size: g.zx.Sizes.SMALL,
         look: g.zx.Looks.LINK,
-        onClick: P,
+        onClick: T,
         children: m.intl.string(m.t["5b60go"])
       }), (0, r.jsx)(g.zx, {
         className: _.marginTop20,
-        onClick: T,
+        onClick: P,
         submitting: E,
         children: m.intl.string(m.t.i4jeWV)
       })]

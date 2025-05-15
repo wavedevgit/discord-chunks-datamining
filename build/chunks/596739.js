@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(481060),
-  o = n(388032),
-  a = n(392819),
+  a = n(388032),
+  o = n(392819),
   s = n(560580);
 
 function c(e) {
@@ -20,11 +20,11 @@ function c(e) {
     null == c || c()
   }, [c]);
   return (0, r.jsxs)("div", {
-    className: a.safetyBanner,
+    className: o.safetyBanner,
     children: [(0, r.jsxs)("div", {
-      className: a.shieldAndHeading,
+      className: o.shieldAndHeading,
       children: [(0, r.jsx)("img", {
-        className: a.safetyShieldIcon,
+        className: o.safetyShieldIcon,
         src: s,
         alt: ""
       }), (0, r.jsxs)("div", {
@@ -39,7 +39,7 @@ function c(e) {
         })]
       })]
     }), (0, r.jsx)("div", {
-      className: a.buttons,
+      className: o.buttons,
       children: null == u ? void 0 : u.map((e, t) => {
         var n;
         return (0, r.jsx)(l.zxk, {
@@ -47,19 +47,19 @@ function c(e) {
           color: e.color,
           "aria-label": e.text,
           onClick: e.onclick,
-          className: a.ctaButton,
+          className: o.ctaButton,
           children: e.text
         }, t)
       })
     }), d ? (0, r.jsx)(l.P3F, {
-      className: a.closeButton,
+      className: o.closeButton,
       onClick: p,
       role: "button",
-      "aria-label": o.intl.string(o.t.WAI6xs),
+      "aria-label": a.intl.string(a.t.WAI6xs),
       children: (0, r.jsx)(l.Dio, {
         size: "md",
         color: "currentColor",
-        className: a.closeButton
+        className: o.closeButton
       })
     }) : null]
   })

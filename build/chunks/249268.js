@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(442837),
-  o = n(481060),
-  a = n(594174),
+  a = n(481060),
+  o = n(594174),
   s = n(5192),
   l = n(371583),
   c = n(864138),
@@ -20,7 +20,7 @@ function p(e) {
   let {
     userId: t,
     leaderboard: n
-  } = e, p = (0, i.e7)([a.default], () => a.default.getUser(t));
+  } = e, p = (0, i.e7)([o.default], () => o.default.getUser(t));
   if (null == p) return null;
   let h = (0, l.r)(n),
     m = s.ZP.getName(n.guild_id, void 0, p);
@@ -32,24 +32,24 @@ function p(e) {
         user: p,
         rank: 1,
         rankBadgeVisibility: "hidden"
-      }), (0, r.jsx)(o.LZC, {
+      }), (0, r.jsx)(a.LZC, {
         size: 8,
         horizontal: !0
       }), (0, r.jsxs)("div", {
         children: [(0, r.jsxs)("div", {
           className: _.userNameContainer,
-          children: [(0, r.jsx)(o.Text, {
+          children: [(0, r.jsx)(a.Text, {
             variant: "text-sm/semibold",
             className: _.userName,
             children: m
-          }), (0, r.jsx)(o.LZC, {
+          }), (0, r.jsx)(a.LZC, {
             size: 4,
             horizontal: !0
           }), (0, r.jsx)(u.Z, {
             className: _.winnerImage,
             leaderboard: n
           })]
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-xs/normal",
           className: _.userSubtitle,
           children: f.intl.string(f.t["0ScUkZ"])

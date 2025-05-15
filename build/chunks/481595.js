@@ -5,8 +5,8 @@ n.d(t, {
 }), n(997841);
 var r = n(255367),
   i = n(73800),
-  o = n(512722),
-  a = n.n(o),
+  a = n(512722),
+  o = n.n(a),
   s = n(742280),
   l = n(399606),
   c = n(481060),
@@ -60,7 +60,7 @@ function U(e) {
   let {
     hasLegalTermsFlash: t,
     legalTermsNodeRef: n,
-    onPaymentSourceChange: o,
+    onPaymentSourceChange: a,
     handlePaymentSourceAdd: m
   } = e, {
     application: U,
@@ -87,13 +87,13 @@ function U(e) {
     defaultPaymentSourceId: v.Z.defaultPaymentSourceId,
     hasFetchedPaymentSources: v.Z.hasFetchedPaymentSources
   }));
-  a()(null != Y, "Expected selectedSkuId");
+  o()(null != Y, "Expected selectedSkuId");
   let er = Z[Y],
     ei = null == er ? void 0 : er.eligiblePaymentGateways,
-    eo = H[Y],
-    ea = null != F ? F : I.c,
-    es = null != eo ? eo[ea] : null;
-  a()(null != er, "SKU must exist and be fetched."), a()(null != U, "Application must exist.");
+    ea = H[Y],
+    eo = null != F ? F : I.c,
+    es = null != ea ? ea[eo] : null;
+  o()(null != er, "SKU must exist and be fetched."), o()(null != U, "Application must exist.");
   let el = (0, l.e7)([h.Z, S.Z], () => S.Z.inTestModeForApplication(U.id) || h.Z.inDevModeForApplication(U.id), [U.id]),
     ec = (0, l.e7)([y.Z], () => y.Z.enabled),
     eu = s.M.EEA_COUNTRIES.has(O.Z.ipCountryCodeWithFallback),
@@ -154,7 +154,7 @@ function U(e) {
       }), (0, r.jsx)(_.ZP, {
         paymentSources: Object.values(B),
         selectedPaymentSourceId: F,
-        onChange: o,
+        onChange: a,
         onPaymentSourceAdd: m,
         hidePersonalInformation: ec,
         paymentGatewayRestrictions: ei

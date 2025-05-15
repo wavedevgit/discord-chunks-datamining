@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(442837),
   l = n(481060),
-  o = n(40851),
-  a = n(357156),
+  a = n(40851),
+  o = n(357156),
   s = n(390322),
   c = n(88479),
   u = n(592125),
@@ -21,18 +21,18 @@ function g(e) {
   let {
     channelId: t,
     onClick: n
-  } = e, g = (0, o.bp)(), b = (0, f.qY)(t), _ = (0, i.e7)([u.Z], () => u.Z.getChannel(t), [t]), {
-    canManageGuildEvent: x
-  } = (0, a.XJ)(_), y = x(b);
+  } = e, g = (0, a.bp)(), b = (0, f.qY)(t), _ = (0, i.e7)([u.Z], () => u.Z.getChannel(t), [t]), {
+    canManageGuildEvent: C
+  } = (0, o.XJ)(_), x = C(b);
   if (null == b) return null;
-  let C = () => {
+  let y = () => {
       if (null != _ && (0, h.Z)(_)) return void(0, d.lC)(_, g);
       n()
     },
     v = () => {
       p.Z.endEvent(b.id, b.guild_id)
     };
-  return y ? (0, r.jsx)(l.yRy, {
+  return x ? (0, r.jsx)(l.yRy, {
     renderPopout: e => {
       let {
         closePopout: t
@@ -62,7 +62,7 @@ function g(e) {
       } = e;
       return (0, r.jsx)(c.Z, {
         label: m.intl.string(m.t["6vrfgo"]),
-        onClick: C,
+        onClick: y,
         onPopoutClick: t
       })
     }

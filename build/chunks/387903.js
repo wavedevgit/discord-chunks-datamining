@@ -40,7 +40,7 @@ var r, l, i = n(255367),
   R = n(388032),
   V = n(636424);
 
-function F(e, t, n) {
+function Y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -49,14 +49,14 @@ function F(e, t, n) {
   }) : e[t] = n, e
 }
 
-function Y(e) {
+function F(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      F(e, t, n[t])
+      Y(e, t, n[t])
     })
   }
   return e
@@ -67,7 +67,7 @@ let G = {
     VoiceChannel: [108, 60],
     ActivityFeed: [900, 500]
   },
-  z = (0, f.Z)(class extends o.PureComponent {
+  W = (0, f.Z)(class extends o.PureComponent {
     render() {
       return (0, i.jsx)("div", {
         className: V.timestamp,
@@ -76,7 +76,7 @@ let G = {
     }
   });
 
-function W(e) {
+function z(e) {
   let {
     activity: t
   } = e, n = (0, m.ZP)(), r = function(e) {
@@ -244,7 +244,7 @@ class H extends(r = o.PureComponent) {
       position: "top",
       children: e => {
         var t;
-        return (0, i.jsx)("img", Y({
+        return (0, i.jsx)("img", F({
           alt: null != (t = u.small_text) ? t : "",
           src: (0, Z.xF)(d, u.small_image, [M.Si.SMALL, M.Si.SMALL]),
           className: this.getTypeClass("assetsSmallImage", null == m ? "WithoutLargeImage" : void 0)
@@ -390,7 +390,7 @@ class H extends(r = o.PureComponent) {
     let {
       timestamps: n
     } = e;
-    return null == n ? null : (0, N.Z)(e) ? (0, i.jsx)(z, {
+    return null == n ? null : (0, N.Z)(e) ? (0, i.jsx)(W, {
       timestamps: n
     }) : (0, i.jsx)(P.ZP, {
       start: n.start,
@@ -493,26 +493,26 @@ class H extends(r = o.PureComponent) {
             }), y, d ? null : S, u ? v : null]
           })]
         })
-      }), d ? v : null, (0, i.jsx)(W, {
+      }), d ? v : null, (0, i.jsx)(z, {
         activity: c
       })]
     })
   }
   constructor(...e) {
-    super(...e), F(this, "handleOpenSpotifyTrack", () => {
+    super(...e), Y(this, "handleOpenSpotifyTrack", () => {
       let {
         activity: e,
         onOpenSpotifyTrack: t
       } = this.props;
       u()(null != e, "Spotify activity was null"), null == t || t(e)
-    }), F(this, "handleOpenSpotifyArtist", e => {
+    }), Y(this, "handleOpenSpotifyArtist", e => {
       let {
         activity: t,
         onOpenSpotifyArtist: n,
         user: r
       } = this.props;
       u()(null != t, "Spotify activity was null"), null == n || n(t, r.id, e)
-    }), F(this, "handleOpenSpotifyAlbum", () => {
+    }), Y(this, "handleOpenSpotifyAlbum", () => {
       let {
         activity: e,
         onOpenSpotifyAlbum: t,
@@ -522,7 +522,7 @@ class H extends(r = o.PureComponent) {
     })
   }
 }
-F(H, "Types", B);
+Y(H, "Types", B);
 let J = e => {
   var t, n, r, l, o;
   let a = (0, S.Z)({
@@ -532,7 +532,7 @@ let J = e => {
     sourceUserId: e.user.id,
     trackEntryPointImpression: !0
   });
-  return (0, i.jsx)(H, (l = Y({}, e), o = o = {
+  return (0, i.jsx)(H, (l = F({}, e), o = o = {
     onOpenGameProfileModal: a
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
     var n = Object.keys(e);

@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  TC: () => o,
+  TC: () => a,
   Xi: () => i,
   e3: () => r
 });
 let r = 500,
   i = 255,
-  o = [.75, 1, 1.5, 2]
+  a = [.75, 1, 1.5, 2]

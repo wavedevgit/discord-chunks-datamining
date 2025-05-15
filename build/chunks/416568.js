@@ -44,8 +44,8 @@ var r = n(255367),
   V = n(187835),
   H = n(118122),
   F = n(193154),
-  z = n(602147),
-  W = n(222059),
+  W = n(602147),
+  z = n(222059),
   Y = n(751277),
   K = n(65721),
   q = n(843343),
@@ -189,7 +189,7 @@ function ec(e) {
     pathname: o
   } = (0, c.TH)(), s = o.startsWith(ee.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB("")), a = (0, h.Wu)([A.Z, T.ZP], () => L.default.keys(A.Z.getGuilds()).filter(e => T.ZP.isCurrentUserGuest(e))), u = i.concat(a);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(W.u, {}), l ? (0, r.jsx)(E.Z, {}) : null, (0, r.jsx)(Y.Z, {
+    children: [(0, r.jsx)(z.u, {}), l ? (0, r.jsx)(E.Z, {}) : null, (0, r.jsx)(Y.Z, {
       isOnHubVerificationRoute: s
     }), !t && (0, r.jsx)(B.Z, {}), u.map(e => (0, r.jsx)($.Z, {
       guildId: e
@@ -236,9 +236,9 @@ function ed(e) {
   } = e, a = (0, S.Q3)("GuildsBar"), [d] = (0, h.Wu)([R.ZP], () => {
     let e = R.ZP.getGuildsTree();
     return [e, e.version]
-  }), p = (0, h.e7)([x.Z], () => x.Z.lurkingGuildIds()), b = i.useMemo(() => n ? [] : p, [p, n]), y = (0, h.e7)([C.Z], () => C.Z.isFullscreenInContext()), [j, E] = i.useState(!1), T = i.useCallback(() => E(!0), []), A = i.useCallback(() => E(!1), []), L = i.useRef(!1), [V] = i.useState(() => new f.V7), H = i.useRef(null), F = i.useRef(null), W = (0, u.OP)(), {
+  }), p = (0, h.e7)([x.Z], () => x.Z.lurkingGuildIds()), b = i.useMemo(() => n ? [] : p, [p, n]), y = (0, h.e7)([C.Z], () => C.Z.isFullscreenInContext()), [j, E] = i.useState(!1), T = i.useCallback(() => E(!0), []), A = i.useCallback(() => E(!1), []), L = i.useRef(!1), [V] = i.useState(() => new f.V7), H = i.useRef(null), F = i.useRef(null), z = (0, u.OP)(), {
     ref: Y
-  } = W, q = eo(W, ["ref"]), J = (0, m.mFp)(), [$, er] = i.useState(!1), [ed, eh] = i.useState(!1), ep = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), ef = (0, m.dQu)(g.Z.space.SPACE_XS), eg = i.useMemo(() => new ea(d, er, eh, () => {
+  } = z, q = eo(z, ["ref"]), J = (0, m.mFp)(), [$, er] = i.useState(!1), [ed, eh] = i.useState(!1), ep = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), ef = (0, m.dQu)(g.Z.space.SPACE_XS), eg = i.useMemo(() => new ea(d, er, eh, () => {
     var e, t;
     null == (e = H.current) || e.calculateState(), null == (t = F.current) || t.calculateState()
   }, function(e, t, n) {
@@ -342,7 +342,7 @@ function ed(e) {
     } = eS,
     eP = eo(eS, ["shouldShow", "questId", "onDiscoveryButtonClick"]),
     eI = ev && ej,
-    ew = (0, r.jsx)(z.Z, {
+    ew = (0, r.jsx)(W.Z, {
       ref: eC,
       questId: eI ? eE : void 0,
       selected: e_,

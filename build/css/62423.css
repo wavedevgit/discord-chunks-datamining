@@ -1,6 +1,6 @@
 /**
   Module ID: 62423
-  Original File Name: c6e9828b9f86cd4f
+  Original File Name: d72e4ab23665dcf6
 **/
 .content__79cbe {
     border-radius: 8px;
@@ -1807,8 +1807,8 @@ html:not(.visual-refresh) .header_cba592 {
 
 .buttonSection__49094 {
     align-items: center;
-    background: var(--primary-630);
-    border: 1px solid var(--border-faint);
+    background: var(--plum-23);
+    border: 1px solid hsl(var(--plum-11-hsl)/.06);
     border-radius: 12px;
     display: flex;
     gap: 8px;
@@ -2001,14 +2001,6 @@ html:not(.visual-refresh) .header_cba592 {
 
 .premium__88a38 {
     color: var(--premium-nitro-pink-text)
-}
-
-.actionBarButton__18c2e {
-    border-radius: 8px;
-    height: 24px;
-    margin-right: 20px;
-    padding: 0;
-    width: 24px
 }
 
 .container__6b38f {
@@ -2424,61 +2416,6 @@ html:not(.visual-refresh) .header_cba592 {
     background-color: var(--blurple-50)
 }
 
-.container__1405b {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative
-}
-
-.eventPromptsContainer__1405b {
-    bottom: 104px;
-    position: absolute
-}
-
-.controlButton__1405b {
-    margin: 0 8px
-}
-
-@media (max-width:456px) {
-    .controlButton__1405b {
-        margin: 0 4px
-    }
-}
-
-.wrapper__1405b {
-    align-items: center;
-    display: flex;
-    flex-direction: row
-}
-
-.experimentWrapper__1405b {
-    gap: 12px
-}
-
-.buttonContainer__1405b {
-    position: relative
-}
-
-.buttonContainer__1405b,.buttonSection__1405b {
-    align-items: center;
-    display: flex;
-    justify-content: center
-}
-
-.buttonSection__1405b {
-    background: var(--primary-630);
-    border: 1px solid hsl(var(--plum-11-hsl)/.06);
-    border-radius: 12px;
-    gap: 8px;
-    padding: 4px
-}
-
-.buttonSection__1405b.experimentButtonSection__1405b {
-    background: var(--plum-23)
-}
-
 .progress__26d03 {
     stroke-width: 4px;
     stroke-dasharray: 100;
@@ -2632,6 +2569,50 @@ input[type=checked]:focus-visible+.label_df4aaf {
     .iconButton__7b3e8 {
         display: none
     }
+}
+
+.container__1405b {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative
+}
+
+.eventPromptsContainer__1405b {
+    bottom: 104px;
+    position: absolute
+}
+
+@media (max-width:456px) {
+    .controlButton__1405b {
+        margin: 0 4px
+    }
+}
+
+.wrapper__1405b {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 12px
+}
+
+.buttonContainer__1405b {
+    position: relative
+}
+
+.buttonContainer__1405b,.buttonSection__1405b {
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+.buttonSection__1405b {
+    background: var(--plum-23);
+    border: 1px solid hsl(var(--plum-11-hsl)/.06);
+    border-radius: 12px;
+    gap: 8px;
+    padding: 4px
 }
 
 .root_c8dbe9 {
@@ -9591,6 +9572,14 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     width: 100%
 }
 
+.actionBarButton__18c2e {
+    border-radius: 8px;
+    height: 24px;
+    margin-right: 20px;
+    padding: 0;
+    width: 24px
+}
+
 .voiceEffectsActionBar__68198 {
     display: flex
 }
@@ -12028,10 +12017,6 @@ div.profileThemedContainer__656be {
     margin-left: 16px
 }
 
-.experimentButtonSpacing_fcb27c {
-    margin-left: 12px
-}
-
 .speakerRaiseHandButtonContainer_fcb27c {
     position: relative
 }
@@ -12069,29 +12054,25 @@ div.profileThemedContainer__656be {
     gap: 8px
 }
 
-.avControls_fcb27c,.experimentWrapper_fcb27c {
+.avControls_fcb27c,.wrapper_fcb27c {
     display: flex;
     flex-direction: row
 }
 
-.experimentWrapper_fcb27c {
+.wrapper_fcb27c {
     align-items: center;
     gap: 12px
 }
 
 .buttonSection_fcb27c {
     align-items: center;
-    background: var(--primary-630);
+    background: var(--plum-23);
     border: 1px solid hsl(var(--plum-11-hsl)/.06);
     border-radius: 12px;
     display: flex;
     gap: 8px;
     justify-content: center;
     padding: 4px
-}
-
-.buttonSection_fcb27c.experimentButtonSection_fcb27c {
-    background: var(--plum-23)
 }
 
 .enable-forced-colors .speakerRaiseHandBadge_fcb27c {
@@ -13159,4 +13140,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=c6e9828b9f86cd4f.css.map*/
+/*# sourceMappingURL=d72e4ab23665dcf6.css.map*/

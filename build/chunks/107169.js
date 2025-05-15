@@ -1,18 +1,18 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(871499),
-  o = n(388032);
+  a = n(388032);
 
-function a(e) {
+function o(e) {
   var {
     popoutWindowAlwaysOnTop: t,
     onToggleStayOnTop: n
-  } = e, a = function(e, t) {
+  } = e, o = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -27,7 +27,7 @@ function a(e) {
     }
     return i
   }(e, ["popoutWindowAlwaysOnTop", "onToggleStayOnTop"]);
-  let s = t ? o.intl.string(o.t.YdyDMz) : o.intl.string(o.t.ZVGHwM),
+  let s = t ? a.intl.string(a.t.YdyDMz) : a.intl.string(a.t.ZVGHwM),
     c = t ? i.QVc : i.k5M;
   return (0, r.jsx)(l.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -50,5 +50,5 @@ function a(e) {
     onClick: () => n(!t),
     label: s,
     iconComponent: c
-  }, a))
+  }, o))
 }

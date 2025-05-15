@@ -10,7 +10,7 @@ function r(e, t, n) {
   }) : e[t] = n, e
 }
 n.d(t, {
-  d: () => o
+  d: () => a
 }), n(415506);
 class i {
   raise(e) {
@@ -75,4 +75,4 @@ class i {
     r(this, "callback", null)
   }
 }
-let o = new i
+let a = new i

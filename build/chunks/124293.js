@@ -1,24 +1,24 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  B: () => a
+  B: () => o
 });
 var r = n(255367),
   i = n(73800),
   l = n(709014);
-let o = {
+let a = {
     all: {
       name: "all",
       start: 0,
       duration: 240
     }
   },
-  a = () => {
+  o = () => {
     let e = i.useRef(null),
       t = i.useCallback(() => {
         null != e.current && e.current.play("all")
       }, []),
-      a = i.useCallback(t => {
-        var i, a;
+      o = i.useCallback(t => {
+        var i, o;
         return (0, r.jsx)(l.L, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -36,19 +36,19 @@ let o = {
             })
           }
           return e
-        }({}, t), a = a = {
+        }({}, t), o = o = {
           src: () => n.e("43613").then(n.t.bind(n, 927459, 19)),
           ref: e,
-          markers: o
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+          markers: a
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(a)).forEach(function(e) {
-          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
+        })(Object(o)).forEach(function(e) {
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(o, e))
         }), i))
       }, []);
     return {
@@ -62,6 +62,6 @@ let o = {
         var t, n;
         return null != (n = null == (t = e.current) ? void 0 : t.getCurrentFrame()) ? n : null
       }, []),
-      Component: a
+      Component: o
     }
   }

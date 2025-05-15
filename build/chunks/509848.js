@@ -7,8 +7,8 @@ n.d(t, {
 });
 var r = n(392711),
   i = n.n(r),
-  o = n(31775),
-  a = n.n(o);
+  a = n(31775),
+  o = n.n(a);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -39,7 +39,7 @@ class f {
   }
   _get(e) {
     var t;
-    return null != (t = this._subscriptions[e]) ? t : new(a())({
+    return null != (t = this._subscriptions[e]) ? t : new(o())({
       max: d
     })
   }

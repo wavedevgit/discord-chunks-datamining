@@ -28,9 +28,9 @@ var r = n(255367),
   N = n(84879),
   y = n(20493);
 let C = n(515695),
-  P = new f.Z("LoginQRSocket");
+  T = new f.Z("LoginQRSocket");
 
-function T(e) {
+function P(e) {
   let {
     text: t = ""
   } = e, [n, l] = i.useState(!1);
@@ -90,7 +90,7 @@ function Z(e) {
     case 0:
     case 1:
       return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(T, {
+        children: [(0, r.jsx)(P, {
           text: 1 === t.step ? "https://discord.com/ra/".concat(t.fingerprint) : ""
         }), (0, r.jsx)(p.Dx, {
           className: y.marginBottom8,
@@ -169,21 +169,21 @@ function R(e) {
     }), [c, u] = i.useState(null), d = (0, h.Z)(), p = i.useMemo(() => new s.Z(1500, 3e4), []), m = (0, g.Z)(() => {
       a({
         step: 0
-      }), d ? n(e => e + 1) : (P.info("document is not visible, will defer reconnection when document becomes visible."), l(!0))
+      }), d ? n(e => e + 1) : (T.info("document is not visible, will defer reconnection when document becomes visible."), l(!0))
     }), f = i.useCallback(() => {
-      P.error("Could not complete QR code login, trying to restart with a new QR code."), a({
+      T.error("Could not complete QR code login, trying to restart with a new QR code."), a({
         step: 0
       }), p.pending || p.fail(m)
     }, [m, p]);
     return i.useEffect(() => {
-      d && r && 0 === o.step && (P.info("reconnecting, now that document is visible"), l(!1), n(e => e + 1))
+      d && r && 0 === o.step && (T.info("reconnecting, now that document is visible"), l(!1), n(e => e + 1))
     }, [o, d, r, l]), i.useEffect(() => {
       let t = Date.now(),
         n = () => "".concat(Date.now() - t, "ms"),
         r = "wss:".concat(window.GLOBAL_ENV.REMOTE_AUTH_ENDPOINT, "/?v=2"),
         i = new WebSocket(r);
-      P.info("[0ms] connecting to ".concat(r));
-      let l = e => P.info("[".concat(n(), "] ").concat(e)),
+      T.info("[0ms] connecting to ".concat(r));
+      let l = e => T.info("[".concat(n(), "] ").concat(e)),
         s = null,
         o = null,
         c = null,

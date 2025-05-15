@@ -67,14 +67,14 @@ let k = e => {
       color: U = c.zxk.Colors.WHITE,
       look: R = c.zxk.Looks.OUTLINED,
       type: V,
-      onAction: F
-    } = e, Y = (0, s.e7)([b.default], () => {
+      onAction: Y
+    } = e, F = (0, s.e7)([b.default], () => {
       let e = b.default.getCurrentUser();
       return a()(null != e, "UserActivityActions: currentUser cannot be undefined"), e
-    }), B = V === S.Y.STREAM_PREVIEW || null != o, G = (0, y.Z)(t), z = G || B ? f.Z.Direction.HORIZONTAL : f.Z.Direction.VERTICAL;
+    }), B = V === S.Y.STREAM_PREVIEW || null != o, G = (0, y.Z)(t), W = G || B ? f.Z.Direction.HORIZONTAL : f.Z.Direction.VERTICAL;
     if ((null == t ? void 0 : t.application_id) === w.bO) {
-      var W, H;
-      return W = function(e) {
+      var z, H;
+      return z = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -96,7 +96,7 @@ let k = e => {
         metadata: {
           button_urls: [w.U8]
         }
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(W, Object.getOwnPropertyDescriptors(H)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(z, Object.getOwnPropertyDescriptors(H)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
@@ -104,20 +104,20 @@ let k = e => {
         }
         return n
       })(Object(H)).forEach(function(e) {
-        Object.defineProperty(W, e, Object.getOwnPropertyDescriptor(H, e))
-      }), t = W, (0, r.jsx)(k, {
+        Object.defineProperty(z, e, Object.getOwnPropertyDescriptor(H, e))
+      }), t = z, (0, r.jsx)(k, {
         user: l,
         color: U,
         look: R,
         activity: t,
-        onAction: F
+        onAction: Y
       })
     }
-    let J = z === f.Z.Direction.VERTICAL;
+    let J = W === f.Z.Direction.VERTICAL;
     return (0, r.jsx)(f.Z, {
       grow: 0,
       align: f.Z.Align.STRETCH,
-      direction: z,
+      direction: W,
       wrap: J ? f.Z.Wrap.WRAP : f.Z.Wrap.NO_WRAP,
       className: i()(u, L.buttonsWrapper, J ? L.vertical : L.horizontal),
       children: (() => {
@@ -125,14 +125,14 @@ let k = e => {
           platform: d.Z.get(N.ABu.XBOX),
           look: R,
           color: U,
-          onAction: F,
+          onAction: Y,
           Icon: h.Z
         }, "ConnectPlatformActivityButton");
         if ((null == t ? void 0 : t.platform) === N.M7m.PS4 || (null == t ? void 0 : t.platform) === N.M7m.PS5) return (0, r.jsx)(j.Z, {
           look: R,
           color: U,
           platform: d.Z.get(N.ABu.PLAYSTATION),
-          onAction: F,
+          onAction: Y,
           Icon: O.Z
         }, "ConnectPlatformActivityButton");
         if (G) {
@@ -144,7 +144,7 @@ let k = e => {
               source: M,
               look: R,
               color: U,
-              onAction: F
+              onAction: Y
             }, "spotify-activity-sync-button"),
             n = (0, r.jsx)(x.Z, {
               activity: t,
@@ -152,7 +152,7 @@ let k = e => {
               source: M,
               look: R,
               color: U,
-              onAction: F
+              onAction: Y
             }, "spotify-activity-play-button");
           return (0, r.jsxs)(r.Fragment, {
             children: [n, e]
@@ -165,40 +165,40 @@ let k = e => {
             channelId: e.channelId,
             color: U,
             look: R,
-            onAction: F
+            onAction: Y
           }, e.channelId)
         }
         return B ? (0, r.jsx)(A.Z, {
-          isCurrentUser: Y.id === l.id,
+          isCurrentUser: F.id === l.id,
           color: U,
           look: R,
           applicationStream: o,
-          onAction: F
+          onAction: Y
         }, "watch-button") : (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(T.Z, {
             activity: t,
             color: U,
             look: R,
-            onAction: F
+            onAction: Y
           }, "watch-button"), (0, r.jsx)(I.Z, {
             activity: t,
             embeddedActivity: n,
             user: l,
             color: U,
             look: R,
-            onAction: F
+            onAction: Y
           }, "join-activity-button"), (0, r.jsx)(Z.Z, {
             activity: t,
             user: l,
             color: U,
             look: R,
-            onAction: F
+            onAction: Y
           }, "notify-button"), (0, r.jsx)(P.Z, {
             user: l,
             color: U,
             look: R,
             activity: t,
-            onAction: F
+            onAction: Y
           }, "custom-activity-button")]
         })
       })()

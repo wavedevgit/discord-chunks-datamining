@@ -53,8 +53,8 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
       "aria-posinset": H
     } = e, {
       id: F,
-      name: z,
-      children: W
+      name: W,
+      children: z
     } = t, [Y, K] = i.useState(!1), [q, Q] = i.useState(!1), X = Y || q, J = (0, f.Ml)("FolderItem");
     i.useEffect(() => {
       R && K(!1)
@@ -77,12 +77,12 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
       Q(e)
     }, []), en = i.useCallback(e => {
       ("ArrowRight" === e.key && !a || "ArrowLeft" === e.key && a) && k()
-    }, [k, a]), er = null != z && "" !== z ? z : null != T && "" !== T ? T : E.intl.string(E.t.xV9hVl), ei = (0, c.Ie)("".concat(F)), el = "folder-items-".concat(F), eo = function(e) {
+    }, [k, a]), er = null != W && "" !== W ? W : null != T && "" !== T ? T : E.intl.string(E.t.xV9hVl), ei = (0, c.Ie)("".concat(F)), el = "folder-items-".concat(F), eo = function(e) {
       let t = (0, h.dQu)(h.TVs.modules.guildbar.FOLDER_SIZE),
         n = (0, h.dQu)(h.TVs.modules.guildbar.AVATAR_SIZE),
         r = (0, h.dQu)(h.TVs.space.SPACE_XS);
       return e * (n + r) - r + (r - (t - n) / 2) + (0, h.dQu)(h.TVs.space.SPACE_4)
-    }(W.length), es = (0, h.Yzy)(!$ && a, {
+    }(z.length), es = (0, h.Yzy)(!$ && a, {
       from: {
         height: 0
       },
@@ -169,7 +169,7 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
             height: e.height.to(e => e * eo)
           },
           "aria-label": t.name,
-          children: W.map((t, n) => U(t, n, W.length, e.height))
+          children: z.map((t, n) => U(t, n, z.length, e.height))
         }, l)
       }), A && a ? (0, r.jsx)(O.Zu, {
         name: er,

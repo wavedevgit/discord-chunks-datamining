@@ -120,7 +120,7 @@ let H = c.ZP.connectStores([S.ZP, O.Z], e => {
       voiceStates: E.ZP.getVoiceStates(t.guild_id)[t.id]
     }
   })(V),
-  z = c.ZP.connectStores([v.default], e => {
+  W = c.ZP.connectStores([v.default], e => {
     let {
       guild: t
     } = e;
@@ -128,7 +128,7 @@ let H = c.ZP.connectStores([S.ZP, O.Z], e => {
       unread: v.default.hasUnread(t.id)
     }
   })(Z.ic),
-  W = c.ZP.connectStores([S.ZP], e => {
+  z = c.ZP.connectStores([S.ZP], e => {
     let {
       channel: t
     } = e;
@@ -492,7 +492,7 @@ class q extends l.PureComponent {
             score: l ? n.score : void 0
           }, "".concat(n.type, "-").concat(n.record.id));
         case f.h8.GUILD:
-          return (0, i.jsx)(z, {
+          return (0, i.jsx)(W, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
             onClick: () => this.selectResult(n),
@@ -515,7 +515,7 @@ class q extends l.PureComponent {
             score: l ? n.score : void 0
           }, "".concat(n.type, "-").concat(n.record.id));
         case f.h8.GROUP_DM:
-          return (0, i.jsx)(W, {
+          return (0, i.jsx)(z, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
             onClick: () => this.selectResult(n),

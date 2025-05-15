@@ -1,11 +1,11 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(544891),
   i = n(570140),
   l = n(981631);
-let o = {
+let a = {
   fetchRegions(e) {
     r.tn.get({
       url: l.ANM.REGIONS(e),

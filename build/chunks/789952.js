@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.r(t), n.d(t, {
-  hasDomParent: () => a,
+  hasDomParent: () => o,
   isDOMRangeCollapsed: () => s,
   normalizeDOMPoint: () => l
 }), n(415506), n(388685);
@@ -20,12 +20,12 @@ function i(e) {
     focusOffset: e.endOffset
   }
 }
-let o = !1;
+let a = !1;
 {
   r.F3.toSlateRange = (e, t, n) => {
     let {
-      exactMatch: o,
-      suppressThrow: a
+      exactMatch: a,
+      suppressThrow: o
     } = n, {
       anchorNode: l,
       anchorOffset: c,
@@ -33,16 +33,16 @@ let o = !1;
       focusOffset: d
     } = i(t), f = s(l, c, u, d);
     if (null == l || null == u || null == c || null == d) {
-      if (a) return null;
+      if (o) return null;
       throw Error("Cannot resolve a Slate range from DOM range")
     }
     let _ = r.F3.toSlatePoint(e, [l, c], {
-        exactMatch: o,
-        suppressThrow: a
+        exactMatch: a,
+        suppressThrow: o
       }),
       p = f ? _ : r.F3.toSlatePoint(e, [u, d], {
-        exactMatch: o,
-        suppressThrow: a
+        exactMatch: a,
+        suppressThrow: o
       });
     return null != _ && null != p ? {
       anchor: _,
@@ -53,23 +53,23 @@ let o = !1;
   r.F3.toSlatePoint = (t, n, r) => {
     let {
       exactMatch: i,
-      suppressThrow: o,
-      direction: a = "forward"
+      suppressThrow: a,
+      direction: o = "forward"
     } = r;
-    i || (n = l(n, a));
+    i || (n = l(n, o));
     try {
       return e(t, n, {
         exactMatch: !0,
-        suppressThrow: o
+        suppressThrow: a
       })
     } catch (e) {
-      if (o) return null;
+      if (a) return null;
       throw e
     }
-  }, o = !0
+  }, a = !0
 }
 
-function a(e, t) {
+function o(e, t) {
   if (null == t) return !1;
   for (; null != e;) {
     if (e === t) return !0;
@@ -89,25 +89,25 @@ function l(e, t) {
     let e = "backward" === t ? r.childNodes.length - 1 : 0;
     r = c(r, e, t)[0]
   }
-  let o = "backward" === t && null != r.textContent ? r.textContent.length : 0;
-  return [r, o]
+  let a = "backward" === t && null != r.textContent ? r.textContent.length : 0;
+  return [r, a]
 }
 
 function c(e, t, n) {
   let {
     childNodes: r
-  } = e, i = r[t], o = t, a = !1, s = !1;
+  } = e, i = r[t], a = t, o = !1, s = !1;
   for (;
-    (u(i) || d(i) && 0 === i.childNodes.length || d(i) && "false" === i.getAttribute("contenteditable")) && (!a || !s);) {
-    if (o >= r.length) {
-      a = !0, o = t - 1, n = "backward";
+    (u(i) || d(i) && 0 === i.childNodes.length || d(i) && "false" === i.getAttribute("contenteditable")) && (!o || !s);) {
+    if (a >= r.length) {
+      o = !0, a = t - 1, n = "backward";
       continue
     }
-    if (o < 0) {
-      s = !0, o = t + 1, n = "forward";
+    if (a < 0) {
+      s = !0, a = t + 1, n = "forward";
       continue
     }
-    i = r[o], t = o, o += "forward" === n ? 1 : -1
+    i = r[a], t = a, a += "forward" === n ? 1 : -1
   }
   return [i, t]
 }

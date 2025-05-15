@@ -1,11 +1,11 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Y: () => y
+  Y: () => x
 }), n(388685);
 var r, i = n(255367),
   l = n(73800),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(950035),
   c = n(481060),
   u = n(542094),
@@ -20,17 +20,17 @@ let b = ["embedded_cover"],
     tension: 800,
     friction: 24
   };
-var x = ((r = x || {})[r.THIRTEEN_BY_ELEVEN = 0] = "THIRTEEN_BY_ELEVEN", r[r.SIXTEEN_BY_NINE = 1] = "SIXTEEN_BY_NINE", r);
+var C = ((r = C || {})[r.THIRTEEN_BY_ELEVEN = 0] = "THIRTEEN_BY_ELEVEN", r[r.SIXTEEN_BY_NINE = 1] = "SIXTEEN_BY_NINE", r);
 
-function y(e) {
+function x(e) {
   var t;
   let {
     context: n,
     activityItem: r,
-    onClick: o,
-    aspectRatio: x = 0,
-    animatedDivClass: y,
-    commandOrigin: C
+    onClick: a,
+    aspectRatio: C = 0,
+    animatedDivClass: x,
+    commandOrigin: y
   } = e, {
     onActivityItemSelected: v,
     imageBackground: j,
@@ -41,10 +41,10 @@ function y(e) {
     activityItem: r,
     guildId: null != (t = n.channel.getGuildId()) ? t : void 0,
     locationObject: {},
-    onActivityItemSelected: o,
+    onActivityItemSelected: a,
     embeddedActivitiesManager: h.Z,
     assetNames: b,
-    commandOrigin: C
+    commandOrigin: y
   }), [I, S] = l.useState(!1), P = l.useCallback(() => {
     S(!0)
   }, [S]), Z = l.useCallback(() => {
@@ -75,7 +75,7 @@ function y(e) {
         return (0, i.jsx)("div", {
           className: g.activityAction,
           children: (0, i.jsx)("div", {
-            className: a()(g.activityActionButton, g.activityActionButtonDanger),
+            className: o()(g.activityActionButton, g.activityActionButtonDanger),
             children: (0, i.jsx)(c.Text, {
               variant: "text-sm/medium",
               color: "always-white",
@@ -113,9 +113,9 @@ function y(e) {
         return (0, i.jsx)(c.f6W, {
           theme: f.BRd.DARK,
           children: e => (0, i.jsxs)(s.animated.div, {
-            className: a()(e, g.activityItem, y, {
-              [g.activityItem_13_11]: 0 === x,
-              [g.activityItem_16_9]: 1 === x
+            className: o()(e, g.activityItem, x, {
+              [g.activityItem_13_11]: 0 === C,
+              [g.activityItem_16_9]: 1 === C
             }),
             style: {
               transform: t.to([0, 1], [1, 1.05]).to(e => "scale(".concat(e, ")"))
@@ -132,4 +132,4 @@ function y(e) {
     })
   })
 }
-y.AspectRatio = x
+x.AspectRatio = C

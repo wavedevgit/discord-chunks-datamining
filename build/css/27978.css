@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: e6626490f1fdd218
+  Original File Name: 34cc58844b23ee71
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -2089,6 +2089,28 @@ html:not(.visual-refresh) .footer__7c901 {
     width: 252px
 }
 
+.contentContainer_efe2ea {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 100%
+}
+
+.button_efe2ea {
+    align-self: flex-end
+}
+
+.buttonWithIcon_efe2ea {
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+.externalArrow_efe2ea {
+    margin-left: 8px;
+    transform: rotate(45deg)
+}
+
 .select_d48ec6.error_d48ec6 .errorMessage_d48ec6 {
     color: var(--status-danger);
     font-size: 14px;
@@ -2211,6 +2233,11 @@ html:not(.visual-refresh) .footer__7c901 {
 
 .messagePositive_d332d2 {
     color: var(--text-positive)
+}
+
+.birthdayText_d332d2 {
+    margin-bottom: 20px;
+    margin-top: 4px
 }
 
 .iconContainer__98cf7 {
@@ -2389,4 +2416,4 @@ html:not(.visual-refresh) .footer__7c901 {
     height: 100px
 }
 
-/*# sourceMappingURL=e6626490f1fdd218.css.map*/
+/*# sourceMappingURL=34cc58844b23ee71.css.map*/

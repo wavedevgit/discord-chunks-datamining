@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(442837),
   l = n(320582),
-  o = n(246016),
-  a = n(189156),
+  a = n(246016),
+  o = n(189156),
   s = n(699516),
   c = n(246946),
   u = n(5192),
@@ -19,9 +19,9 @@ var i = n(442837),
   g = n(483424),
   b = n(681837),
   _ = n(78806),
-  x = n(91433),
-  y = n(900927),
-  C = n(944043),
+  C = n(91433),
+  x = n(900927),
+  y = n(944043),
   v = n(678738),
   j = n(638970),
   O = n(502762),
@@ -41,12 +41,12 @@ function T(e) {
     isHovering: w,
     onOpenProfile: R
   } = e, {
-    relationshipType: k,
-    originApplicationId: M
+    relationshipType: M,
+    originApplicationId: k
   } = (0, i.cj)([s.Z], () => ({
     relationshipType: s.Z.getRelationshipType(t.id),
     originApplicationId: s.Z.getOriginApplicationId(t.id)
-  })), L = (0, l.vh)(t.id), D = (0, o.Y)({
+  })), L = (0, l.vh)(t.id), D = (0, a.Y)({
     userId: t.id
   }), U = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), B = (0, i.e7)([d.Z], () => {
     var e;
@@ -74,23 +74,23 @@ function T(e) {
           onOpenProfile: R
         })]
       })
-    }), k === P.OGo.PENDING_INCOMING && (0, r.jsx)(O.Z.Overlay, {
-      children: (0, r.jsx)(x.Z, {
+    }), M === P.OGo.PENDING_INCOMING && (0, r.jsx)(O.Z.Overlay, {
+      children: (0, r.jsx)(C.Z, {
         user: t,
         channelId: A.id,
-        applicationId: M
+        applicationId: k
       })
     }), L.map(e => (0, r.jsx)(O.Z.Overlay, {
-      children: (0, r.jsx)(x.Z, {
+      children: (0, r.jsx)(C.Z, {
         user: t,
         isGameRelationship: !0,
         applicationId: e.applicationId,
         channelId: A.id
       })
-    }, e.applicationId)), (0, r.jsx)(C.Z, {
+    }, e.applicationId)), (0, r.jsx)(y.Z, {
       user: t,
       className: N.card
-    }), t.isProvisional && (0, r.jsx)(a.wQ, {
+    }), t.isProvisional && (0, r.jsx)(o.wQ, {
       userId: t.id,
       headingColor: "header-primary"
     }), G ? (0, r.jsx)(j.Z, {
@@ -127,7 +127,7 @@ function T(e) {
       }), (0, r.jsx)(v.Z, {
         heading: t.bot ? Z.intl.string(Z.t["A//N4u"]) : Z.intl.string(Z.t.a6XYDw),
         headingColor: "header-primary",
-        children: (0, r.jsx)(y.Z, {
+        children: (0, r.jsx)(x.Z, {
           userId: t.id
         })
       })]

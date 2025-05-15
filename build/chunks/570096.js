@@ -1,12 +1,12 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  N: () => x
+  N: () => C
 }), n(388685);
 var r = n(255367),
   i = n(442837),
   l = n(704215),
-  o = n(481060),
-  a = n(782568),
+  a = n(481060),
+  o = n(782568),
   s = n(243778),
   c = n(970731),
   u = n(594174),
@@ -26,13 +26,13 @@ let b = e => {
       children: [(0, r.jsx)(p.Z, {
         user: t,
         rank: 1,
-        avatarSize: o.EFr.SIZE_56
-      }), (0, r.jsx)(o.P3F, {
+        avatarSize: a.EFr.SIZE_56
+      }), (0, r.jsx)(a.P3F, {
         className: g.closeIcon,
         onClick: () => {
           n(f.L.USER_DISMISS)
         },
-        children: (0, r.jsx)(o.Dio, {
+        children: (0, r.jsx)(a.Dio, {
           color: "currentColor",
           size: "sm"
         })
@@ -53,29 +53,29 @@ let b = e => {
       content: m.intl.string(m.t.qIZICA),
       buttonCTA: m.intl.string(m.t.hvVgAQ),
       onClick: () => {
-        (0, a.Z)(d.Z.getArticleURL(h.BhN.GUILD_LEADERBOARD)), n(f.L.USER_DISMISS)
+        (0, o.Z)(d.Z.getArticleURL(h.BhN.GUILD_LEADERBOARD)), n(f.L.USER_DISMISS)
       },
       markAsDismissed: n,
       caretPosition: c.DF.RIGHT_TOP,
       buttonProps: {
-        color: o.zxk.Colors.WHITE,
-        look: o.zxk.Looks.LINK,
-        size: o.zxk.Sizes.MIN
+        color: a.zxk.Colors.WHITE,
+        look: a.zxk.Looks.LINK,
+        size: a.zxk.Sizes.MIN
       }
     })
   };
 
-function x(e) {
+function C(e) {
   let {
     children: t
-  } = e, n = [l.z.LEADERBOARD_NUX_COACHMARK], [a, c] = (0, s.US)(n, void 0), d = (0, i.e7)([u.default], () => u.default.getCurrentUser());
-  return a !== l.z.LEADERBOARD_NUX_COACHMARK || null == d ? t : (0, r.jsx)(o.yRy, {
+  } = e, n = [l.z.LEADERBOARD_NUX_COACHMARK], [o, c] = (0, s.US)(n, void 0), d = (0, i.e7)([u.default], () => u.default.getCurrentUser());
+  return o !== l.z.LEADERBOARD_NUX_COACHMARK || null == d ? t : (0, r.jsx)(a.yRy, {
     renderPopout: () => _({
       user: d,
       markAsDismissed: c
     }),
     position: "left",
-    animation: o.yRy.Animation.TRANSLATE,
+    animation: a.yRy.Animation.TRANSLATE,
     shouldShow: !0,
     children: () => t
   })

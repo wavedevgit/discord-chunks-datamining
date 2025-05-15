@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(925975),
-  o = n(957730),
-  a = n(981631),
+  a = n(957730),
+  o = n(981631),
   s = n(388032),
   c = n(224079);
 
@@ -30,13 +30,13 @@ class p extends i.PureComponent {
       richValue: n,
       message: i,
       channel: l,
-      onCancel: o,
-      children: a,
+      onCancel: a,
+      children: o,
       isRefreshEnabled: u
     } = this.props, p = (0, r.jsx)("div", {
       className: c.operations,
       children: s.intl.format(s.t.wDsPXl, {
-        onCancel: () => o(l.id),
+        onCancel: () => a(l.id),
         onSave: this.onClickSave
       })
     });
@@ -44,7 +44,7 @@ class p extends i.PureComponent {
       className: e,
       ref: this.node,
       onContextMenu: d,
-      children: [a({
+      children: [o({
         textValue: t,
         richValue: n,
         message: i,
@@ -68,7 +68,7 @@ class p extends i.PureComponent {
         channel: n,
         onConfirmDelete: r,
         onCancel: i,
-        saveMessage: a,
+        saveMessage: o,
         validateEdit: s
       } = this.props;
       return 0 === e.length ? (r(n, t), i(n.id), Promise.resolve({
@@ -90,8 +90,8 @@ class p extends i.PureComponent {
           isEdit: !0
         });
         (null == s ? void 0 : s.content) != null && (e = s.content);
-        let c = o.ZP.parse(this.props.channel, e);
-        return c.content !== this.props.message.content && a(this.props.channel.id, this.props.message.id, c), i(n.id), Promise.resolve({
+        let c = a.ZP.parse(this.props.channel, e);
+        return c.content !== this.props.message.content && o(this.props.channel.id, this.props.message.id, c), i(n.id), Promise.resolve({
           shouldClear: !0,
           shouldRefocus: !0
         })
@@ -103,7 +103,7 @@ class p extends i.PureComponent {
       } = this.props;
       i(r.id, t, n)
     }), u(this, "onKeyDown", e => {
-      if (e.keyCode === a.yXg.ESCAPE && !e.shiftKey) {
+      if (e.keyCode === o.yXg.ESCAPE && !e.shiftKey) {
         let {
           channel: t,
           onCancel: n

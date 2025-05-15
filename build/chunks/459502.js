@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(442837),
   l = n(692547),
-  o = n(481060),
-  a = n(357156),
+  a = n(481060),
+  o = n(357156),
   s = n(592125),
   c = n(15274),
   u = n(924301),
@@ -21,25 +21,25 @@ function g(e) {
   let {
     channelId: t
   } = e, g = (0, i.e7)([s.Z], () => s.Z.getChannel(t), [t]), b = (0, d.sz)(t), _ = null != (0, d.qY)(t), {
-    canManageGuildEvent: x
-  } = (0, a.XJ)(g), y = (0, i.cj)([u.ZP], () => b.reduce((e, t) => (e[t.id] = u.ZP.getUserCount(t.id, (0, p.DK)(t)), e), {}));
+    canManageGuildEvent: C
+  } = (0, o.XJ)(g), x = (0, i.cj)([u.ZP], () => b.reduce((e, t) => (e[t.id] = u.ZP.getUserCount(t.id, (0, p.DK)(t)), e), {}));
   return b.length < 1 || _ ? null : (0, r.jsx)(r.Fragment, {
     children: b.map(e => (0, r.jsx)(h.Z, {
-      icon: (0, r.jsx)(o.Que, {
+      icon: (0, r.jsx)(a.Que, {
         size: "custom",
         color: "currentColor",
         height: 20,
         width: 20
       }),
       color: l.Z.unsafe_rawColors.GREEN_360.css,
-      title: f.intl.formatToPlainString(x(e) ? f.t["1vGXqK"] : f.t.xMJylZ, {
+      title: f.intl.formatToPlainString(C(e) ? f.t["1vGXqK"] : f.t.xMJylZ, {
         eventName: e.name
       }),
       description: f.intl.formatToPlainString(f.t.PTebCQ, {
         startTime: (0, p.ub)(e.scheduled_start_time).startDateTimeString
       }),
       onClick: () => {
-        x(e) ? (0, o.ZDy)(async () => {
+        C(e) ? (0, a.ZDy)(async () => {
           let {
             default: t
           } = await Promise.all([n.e("22347"), n.e("84722"), n.e("30057")]).then(n.bind(n, 296864));
@@ -80,7 +80,7 @@ function g(e) {
           parentGuildId: e.guild_id
         })
       },
-      userCount: y[e.id],
+      userCount: x[e.id],
       className: m.eventPrompt
     }, e.id))
   })

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(392711),
-  o = n.n(l),
-  a = n(442837),
+  a = n.n(l),
+  o = n(442837),
   s = n(570140),
   c = n(239091),
   u = n(561472),
@@ -18,9 +18,9 @@ var r = n(255367),
   g = n(541716),
   b = n(665149),
   _ = n(910611),
-  x = n(359110),
-  y = n(592125),
-  C = n(703558),
+  C = n(359110),
+  x = n(592125),
+  y = n(703558),
   v = n(430824),
   j = n(979651),
   O = n(664342),
@@ -66,22 +66,22 @@ function T(e) {
     channelId: t,
     baseChannelId: l,
     channelViewSource: T = "Split View"
-  } = e, A = (0, a.e7)([y.Z], () => y.Z.getChannel(t)), w = (0, a.e7)([v.Z], () => v.Z.getGuild(null == A ? void 0 : A.getGuildId())), R = (0, f.ZP)(A);
-  var k = A;
-  let M = (0, a.e7)([j.Z], () => null != k && !o().isEmpty(j.Z.getVoiceStatesForChannel(k.id)));
+  } = e, A = (0, o.e7)([x.Z], () => x.Z.getChannel(t)), w = (0, o.e7)([v.Z], () => v.Z.getGuild(null == A ? void 0 : A.getGuildId())), R = (0, f.ZP)(A);
+  var M = A;
+  let k = (0, o.e7)([j.Z], () => null != M && !a().isEmpty(j.Z.getVoiceStatesForChannel(M.id)));
   i.useEffect(() => {
-    M && null != k && (s.Z.dispatch({
+    k && null != M && (s.Z.dispatch({
       type: "SIDEBAR_CLOSE",
-      baseChannelId: k.parent_id
-    }), (0, x.ad)(k, {
+      baseChannelId: M.parent_id
+    }), (0, C.ad)(M, {
       source: E.on.VOICE_AUTO_OPEN
     }))
-  }, [M, k]);
+  }, [k, M]);
   let L = i.useRef(!1);
   if (i.useEffect(() => {
       if (null == A || L.current) return;
       L.current = !0;
-      let e = (0, p.K)(y.Z.getChannel(A.id), !0);
+      let e = (0, p.K)(x.Z.getChannel(A.id), !0);
       (0, d.yw)(I.rMx.CHANNEL_OPENED, N(Z({}, e, (0, d.$H)(A.id)), {
         channel_view: T
       })), (0, h.a)(I.rMx.CHANNEL_OPENED_CLICKSTREAM, {
@@ -95,7 +95,7 @@ function T(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.Z, {
       channel: A,
-      draftType: C.d.ChannelMessage
+      draftType: y.d.ChannelMessage
     }), (0, r.jsx)(b.ZP, {
       toolbar: D,
       "aria-label": S.intl.string(S.t.Pwe8tL),
@@ -115,7 +115,7 @@ function T(e) {
           })
         },
         handleClick: function() {
-          null != A && (0, x.Kh)(A.id)
+          null != A && (0, C.Kh)(A.id)
         }
       })
     }), (0, r.jsx)("div", {

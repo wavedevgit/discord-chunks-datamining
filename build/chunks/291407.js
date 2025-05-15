@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(442837),
-  o = n(704215),
-  a = n(605236),
+  a = n(704215),
+  o = n(605236),
   s = n(243778),
   c = n(375954),
   u = n(890977),
@@ -20,9 +20,9 @@ function p(e) {
     trinketsClassName: h
   } = e, f = (0, l.e7)([c.Z], () => c.Z.hasCurrentUserSentMessageSinceAppStart()), m = i.useMemo(() => {
     let e = [];
-    return f && e.push(o.z.DESKTOP_APP_LAUNCHER_ONBOARDING), e
+    return f && e.push(a.z.DESKTOP_APP_LAUNCHER_ONBOARDING), e
   }, [f]), g = () => {
-    setTimeout(() => (0, a.EW)(o.z.DESKTOP_APP_LAUNCHER_ONBOARDING, {
+    setTimeout(() => (0, o.EW)(a.z.DESKTOP_APP_LAUNCHER_ONBOARDING, {
       dismissAction: d.L.AUTO_DISMISS
     }), 1e4)
   };
@@ -32,7 +32,7 @@ function p(e) {
       let {
         visibleContent: i
       } = e;
-      return i === o.z.DESKTOP_APP_LAUNCHER_ONBOARDING ? (0, r.jsx)(u.b, {
+      return i === a.z.DESKTOP_APP_LAUNCHER_ONBOARDING ? (0, r.jsx)(u.b, {
         animationContainerClassName: n,
         glowClassName: p,
         trinketsClassName: h,

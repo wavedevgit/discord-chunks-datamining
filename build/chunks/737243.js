@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(442837),
-  o = n(911969),
-  a = n(581364),
+  a = n(911969),
+  o = n(581364),
   s = n(869765),
   c = n(699516),
   u = n(697451),
@@ -21,35 +21,35 @@ let h = i.memo(function(e) {
     interactionUsernameProfile: g,
     interactionAvatarProfile: b,
     interactionData: _,
-    referencedUsernameProfile: x,
-    referencedAvatarProfile: y,
-    setPopout: C
+    referencedUsernameProfile: C,
+    referencedAvatarProfile: x,
+    setPopout: y
   } = e, {
     isInteractionUserBlocked: v,
     isInteractionUserIgnored: j
   } = (0, l.cj)([c.Z], () => ({
     isInteractionUserBlocked: c.Z.isBlockedForMessage(h),
     isInteractionUserIgnored: c.Z.isIgnoredForMessage(h)
-  }), [h]), O = (0, l.e7)([s.Z], () => s.Z.getMessageByReference(null == h ? void 0 : h.messageReference)), E = (0, d.wq)(null == (t = h.interaction) ? void 0 : t.user.id, f.id), I = (0, d.Nk)(h.interaction, f, g, C), S = (0, d.NU)(b, C), P = (0, a.t0)(h), Z = (null == P ? void 0 : P.type) === o.B8.APPLICATION_COMMAND ? null == (n = P.target_user) ? void 0 : n.id : void 0, N = (0, d.wq)(Z, f.id), T = (0, d.JC)(Z, f, x, C), A = (0, d.rY)(y, C), w = (0, d.Xn)(_, C), R = i.useCallback(() => {
-    C({
+  }), [h]), O = (0, l.e7)([s.Z], () => s.Z.getMessageByReference(null == h ? void 0 : h.messageReference)), E = (0, d.wq)(null == (t = h.interaction) ? void 0 : t.user.id, f.id), I = (0, d.Nk)(h.interaction, f, g, y), S = (0, d.NU)(b, y), P = (0, o.t0)(h), Z = (null == P ? void 0 : P.type) === a.B8.APPLICATION_COMMAND ? null == (n = P.target_user) ? void 0 : n.id : void 0, N = (0, d.wq)(Z, f.id), T = (0, d.JC)(Z, f, C, y), A = (0, d.rY)(x, y), w = (0, d.Xn)(_, y), R = i.useCallback(() => {
+    y({
       interactionUsernameProfile: !1,
       interactionAvatarProfile: !1,
       interactionData: !1,
       referencedUsernameProfile: !1,
       referencedAvatarProfile: !1
     })
-  }, [C]), k = i.useCallback(() => (0, p.Z)({
+  }, [y]), M = i.useCallback(() => (0, p.Z)({
     message: h,
     channel: f,
     compact: m,
-    setPopout: C,
-    referencedAvatarProfile: y,
-    referencedUsernameProfile: x,
+    setPopout: y,
+    referencedAvatarProfile: x,
+    referencedUsernameProfile: C,
     replyReference: h.messageReference,
     replyMessage: O,
     isReplySpineClickable: !1,
     showReplySpine: !1
-  }), [f, m, h, y, O, x, C]);
+  }), [f, m, h, x, O, C, y]);
   return (0, r.jsx)(u.Z, {
     message: h,
     channel: f,
@@ -59,8 +59,8 @@ let h = i.memo(function(e) {
     showAvatarPopout: b,
     showUsernamePopout: g,
     showDataPopout: _,
-    showTargetAvatarPopout: y,
-    showTargetUsernamePopout: x,
+    showTargetAvatarPopout: x,
+    showTargetUsernamePopout: C,
     onClickAvatar: S,
     onClickUsername: I,
     onClickCommand: w,
@@ -69,7 +69,7 @@ let h = i.memo(function(e) {
     onClickTargetUsername: T,
     onTargetUserContextMenu: N,
     onPopoutRequestClose: R,
-    renderTargetMessage: k
+    renderTargetMessage: M
   })
 });
 
@@ -77,7 +77,7 @@ function f(e, t, n) {
   let {
     message: i,
     channel: l,
-    compact: o
+    compact: a
   } = e;
   return null != i.interaction && "" !== i.interaction.displayName ? (0, r.jsx)(h, function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -99,7 +99,7 @@ function f(e, t, n) {
   }({
     message: i,
     channel: l,
-    compact: o,
+    compact: a,
     setPopout: t
   }, n)) : null
 }

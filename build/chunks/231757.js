@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  o = n(726542),
-  a = n(842146),
+  a = n(726542),
+  o = n(842146),
   s = n(293177),
   l = n(349407),
   c = n(49012),
@@ -44,14 +44,14 @@ function p(e) {
     overrideUrl: h,
     successRedirect: m
   } = e;
-  return (f === d.ABu.LEAGUE_OF_LEGENDS && (f = d.ABu.RIOT_GAMES), f === d.ABu.CRUNCHYROLL) ? void a.K([null != p ? p : "unknown"]) : f === d.ABu.XBOX ? void l.K([null != p ? p : "unknown"]) : f === d.ABu.PLAYSTATION || f === d.ABu.PLAYSTATION_STAGING ? void s.K([null != p ? p : "unknown"], f) : f === d.ABu.DOMAIN ? void(0, i.ZDy)(async () => {
+  return (f === d.ABu.LEAGUE_OF_LEGENDS && (f = d.ABu.RIOT_GAMES), f === d.ABu.CRUNCHYROLL) ? void o.K([null != p ? p : "unknown"]) : f === d.ABu.XBOX ? void l.K([null != p ? p : "unknown"]) : f === d.ABu.PLAYSTATION || f === d.ABu.PLAYSTATION_STAGING ? void s.K([null != p ? p : "unknown"], f) : f === d.ABu.DOMAIN ? void(0, i.ZDy)(async () => {
     let {
       default: e
     } = await n.e("64941").then(n.bind(n, 907053));
     return t => (0, r.jsx)(e, _({
       analyticsLocation: [null != p ? p : "unknown"]
     }, t))
-  }) : (null == (t = o.Z.get(f)) ? void 0 : t.isFederated) === !0 ? void(0, i.ZDy)(async () => {
+  }) : (null == (t = a.Z.get(f)) ? void 0 : t.isFederated) === !0 ? void(0, i.ZDy)(async () => {
     let {
       default: e
     } = await n.e("54934").then(n.bind(n, 701460));

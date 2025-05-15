@@ -1,25 +1,25 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(930362);
 
-function o(e) {
+function a(e) {
   let {
     changePage: t,
     offset: n,
-    totalResults: o,
-    pageLength: a
-  } = e, s = Math.floor(n / a) + 1;
+    totalResults: a,
+    pageLength: o
+  } = e, s = Math.floor(n / o) + 1;
   return (0, r.jsx)("div", {
     className: l.container,
     children: (0, r.jsx)(i.DsT, {
       currentPage: s,
-      totalCount: o,
-      pageSize: a,
+      totalCount: a,
+      pageSize: o,
       onPageChange: t,
       maxVisiblePages: 5
     })

@@ -18,7 +18,7 @@ function f(e) {
     userId: t,
     channelId: n,
     guildId: f,
-    simplified: b = !1
+    minimal: b = !1
   } = e, Z = (0, d.J)({
     channelId: n
   }), m = (0, r.e7)([c.default], () => c.default.getId() === t), v = (0, o.bp)(), p = l.useCallback(() => {

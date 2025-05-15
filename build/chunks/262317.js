@@ -1,14 +1,14 @@
 /** Chunk was on 62423 **/
 n.d(t, {
   XX: () => R,
-  ZP: () => M,
-  ul: () => k
+  ZP: () => k,
+  ul: () => M
 }), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  o = n.n(l),
-  a = n(481060),
+  a = n.n(l),
+  o = n(481060),
   s = n(475179),
   c = n(239091),
   u = n(287734),
@@ -20,9 +20,9 @@ var r = n(255367),
   g = n(257115),
   b = n(569545),
   _ = n(102172),
-  x = n(525925),
-  y = n(701362),
-  C = n(670188),
+  C = n(525925),
+  x = n(701362),
+  y = n(670188),
   v = n(597998),
   j = n(314897),
   O = n(430824),
@@ -72,7 +72,7 @@ function R(e) {
   } = e;
   return (0, r.jsx)("div", {
     className: T.moreContainer,
-    children: (0, r.jsxs)(a.Text, {
+    children: (0, r.jsxs)(o.Text, {
       color: "text-muted",
       variant: "text-sm/medium",
       children: ["+", t]
@@ -80,7 +80,7 @@ function R(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   let {
     numAudience: t,
     collapsed: n
@@ -88,31 +88,31 @@ function k(e) {
     count: t
   });
   return (0, r.jsxs)("div", {
-    className: o()(T.audienceContainer, {
+    className: a()(T.audienceContainer, {
       [T.audienceContainerCollapsed]: n
     }),
     children: [(0, r.jsx)("div", {
       className: T.audienceIconContainer,
-      children: (0, r.jsx)(a.VWR, {
+      children: (0, r.jsx)(o.VWR, {
         size: "md",
         color: "currentColor",
         className: T.audienceIcon
       })
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(o.Text, {
       color: "text-muted",
       variant: "text-sm/medium",
       children: i
     })]
   })
 }
-let M = (0, p.$)(function(e) {
+let k = (0, p.$)(function(e) {
   var t;
   let {
     collapsed: l,
     user: p,
     channel: R,
-    mute: k,
-    localMute: M,
+    mute: M,
+    localMute: k,
     localVideoDisabled: L,
     deaf: D,
     video: U,
@@ -136,8 +136,8 @@ let M = (0, p.$)(function(e) {
     otherClientSessionType: er,
     voicePlatform: ei,
     isSelfOnOtherClient: el = !1,
-    tabIndex: eo,
-    location: ea,
+    tabIndex: ea,
+    location: eo,
     isSelf: es,
     application: ec
   } = e, eu = i.useRef(null), [ed, ep] = i.useState(!1), eh = () => {
@@ -152,7 +152,7 @@ let M = (0, p.$)(function(e) {
       channelId: R.id,
       guildId: R.guild_id
     };
-    j.default.getId() !== p.id && u.default.selectVoiceChannel(R.id), X ? ((0, x.Z)(e), s.Z.selectParticipant(e.channelId, (0, b.V9)(e))) : (0, d.iV)(e), null == ee || ee(p.id)
+    j.default.getId() !== p.id && u.default.selectVoiceChannel(R.id), X ? ((0, C.Z)(e), s.Z.selectParticipant(e.channelId, (0, b.V9)(e))) : (0, d.iV)(e), null == ee || ee(p.id)
   }, eb = e => {
     (0, c.jW)(e, async () => {
       let {
@@ -169,20 +169,20 @@ let M = (0, p.$)(function(e) {
         })
       }))
     })
-  }, e_ = () => (0, r.jsx)(y.Z, {
+  }, e_ = () => (0, r.jsx)(x.Z, {
     user: p,
     channel: R,
     onWatch: eg,
     previewIsOpen: en,
-    location: ea
-  }), ex = e => {
+    location: eo
+  }), eC = e => {
     let t = P.al.has(null != er ? er : ""),
       n = {
         user: p,
         speaking: z,
         disconnected: W,
-        mute: k,
-        localMute: M,
+        mute: M,
+        localMute: k,
         localVideoDisabled: L,
         isStreaming: K,
         isGuest: Q,
@@ -195,11 +195,11 @@ let M = (0, p.$)(function(e) {
         overlap: l,
         serverMute: G,
         serverDeaf: F,
-        tabIndex: eo,
+        tabIndex: ea,
         otherClientSessionType: er,
         voicePlatform: ei,
         embeddedApplication: B,
-        avatarContainerClass: o()({
+        avatarContainerClass: a()({
           [T.userAvatar]: !0
         }),
         disabled: el && !t,
@@ -214,7 +214,7 @@ let M = (0, p.$)(function(e) {
       };
     if (el) {
       var i;
-      return (0, r.jsx)(a.ua7, {
+      return (0, r.jsx)(o.ua7, {
         text: null != (i = (0, g.Z)(er)) ? i : N.intl.string(N.t.IyYqqa),
         children: e => {
           var {
@@ -241,7 +241,7 @@ let M = (0, p.$)(function(e) {
         }
       })
     }
-    return (0, r.jsx)(a.yRy, {
+    return (0, r.jsx)(o.yRy, {
       targetElementRef: eu,
       position: "right",
       renderPopout: e_,
@@ -254,14 +254,14 @@ let M = (0, p.$)(function(e) {
         onKeyDown: e.onKeyDown
       }))
     })
-  }, ey = (0, r.jsx)("div", {
+  }, ex = (0, r.jsx)("div", {
     className: T.draggable,
     "data-dnd-name": R.name,
     onMouseEnter: el ? void 0 : () => {
       K && !ed && (null == $ || $(p.id))
     },
     onMouseLeave: el ? void 0 : ef,
-    children: (0, r.jsx)(C.Z, {
+    children: (0, r.jsx)(y.Z, {
       clickTrap: (null == p ? void 0 : p.id) === (null == (t = I.default.getCurrentUser()) ? void 0 : t.id) && ed,
       targetElementRef: eu,
       user: p,
@@ -270,8 +270,8 @@ let M = (0, p.$)(function(e) {
       newAnalyticsLocations: [h.Z.VOICE_USER],
       shouldShow: ed,
       onRequestClose: () => ep(!1),
-      children: e => ex(e)
+      children: e => eC(e)
     })
   });
-  return q ? Y(ey) : ey
+  return q ? Y(ex) : ex
 })

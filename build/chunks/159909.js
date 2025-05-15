@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(399606),
   l = n(481060),
-  o = n(125268),
-  a = n(673125),
+  a = n(125268),
+  o = n(673125),
   s = n(871499),
   c = n(304388),
   u = n(388032);
@@ -23,11 +23,11 @@ function d() {
 }
 
 function p() {
-  let e = (0, i.e7)([a.Z], () => !a.Z.visibleOverlayCanvas);
+  let e = (0, i.e7)([o.Z], () => !o.Z.visibleOverlayCanvas);
   return (0, r.jsx)(c.Z, {
     renderPopout: () => null,
     children: t => {
-      var n, i, a = d({}, function(e) {
+      var n, i, o = d({}, function(e) {
         if (null == e) throw TypeError("Cannot destructure " + e);
         return e
       }(t));
@@ -48,11 +48,11 @@ function p() {
           })
         }
         return e
-      }({}, a), i = i = {
+      }({}, o), i = i = {
         label: u.intl.string(u.t.Cuo44O),
         isActive: e,
         iconComponent: l.tEF,
-        onClick: o.LT
+        onClick: a.LT
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

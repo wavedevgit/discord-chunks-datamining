@@ -1,11 +1,11 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => y
+  Z: () => x
 }), n(388685);
 var r, i = n(873546),
   l = n(442837),
-  o = n(570140),
-  a = n(38618),
+  a = n(570140),
+  o = n(38618),
   s = n(268967),
   c = n(188785);
 
@@ -57,9 +57,9 @@ function _() {
         for (let n of t.prerequisites) !1 !== h[n] && (g[e] = !1)
     }
 }
-class x extends(r = l.ZP.Store) {
+class C extends(r = l.ZP.Store) {
   initialize() {
-    _(), this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type), this.waitFor(a.Z)
+    _(), this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type), this.waitFor(o.Z)
   }
   shouldShow(e) {
     return !(!b || m || c.a || i.tq && ["writing-messages", "organize-by-topic"].includes(e)) && (g[e] || !1)
@@ -78,8 +78,8 @@ class x extends(r = l.ZP.Store) {
     return null != t ? t[e] : null
   }
 }
-u(x, "displayName", "TutorialIndicatorStore");
-let y = new x(o.Z, {
+u(C, "displayName", "TutorialIndicatorStore");
+let x = new C(a.Z, {
   CONNECTION_OPEN: function(e) {
     let {
       tutorial: t

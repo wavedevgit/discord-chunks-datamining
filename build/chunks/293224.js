@@ -106,7 +106,7 @@ function en(e) {
     onMouseEnter: f,
     onMouseLeave: m,
     onContextMenu: g,
-    fullRegionButton: y
+    isTrayButton: y
   } = e, O = function(e, t) {
     if (null == e) return {};
     var n, i, r = function(e, t) {
@@ -121,7 +121,7 @@ function en(e) {
       for (i = 0; i < o.length; i++) n = o[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
     return r
-  }(e, ["isActive", "disabled", "iconComponent", "iconColor", "tooltip", "defaultColor", "highlightedColor", "caretColor", "popoutOpen", "onClick", "popoutDisabled", "onPopoutClick", "onMouseEnter", "onMouseLeave", "onContextMenu", "fullRegionButton"]);
+  }(e, ["isActive", "disabled", "iconComponent", "iconColor", "tooltip", "defaultColor", "highlightedColor", "caretColor", "popoutOpen", "onClick", "popoutDisabled", "onPopoutClick", "onMouseEnter", "onMouseLeave", "onContextMenu", "isTrayButton"]);
   return (0, i.jsx)(M.d, {
     onClick: null != d ? d : () => {},
     color: t ? s : a,
@@ -130,15 +130,13 @@ function en(e) {
     popoutOpen: u,
     popoutDisabled: p,
     label: l,
-    fullRegionButton: y,
-    forceGroupedButtons: !0,
+    isTrayButton: y,
     onMouseEnter: e => {
       null == f || f(e)
     },
     onMouseLeave: e => {
       null == m || m(e)
     },
-    ignoreColorForCaret: !u,
     iconComponent: r,
     iconColor: o,
     caretColor: c,
@@ -211,7 +209,8 @@ function ei(e) {
         },
         onMouseLeave: () => {
           f.onMouseLeave()
-        }
+        },
+        isTrayButton: !0
       })
     }
   })
@@ -278,7 +277,8 @@ function er(e) {
         onMouseEnter: d,
         onMouseLeave: h,
         onPopoutClick: g(n),
-        popoutOpen: r
+        popoutOpen: r,
+        isTrayButton: !0
       })
     }
   })
@@ -350,7 +350,8 @@ function eo(e) {
         onContextMenu: y(n),
         onMouseEnter: _,
         onMouseLeave: x,
-        disabled: j
+        disabled: j,
+        isTrayButton: !0
       })
     }
   })
@@ -442,7 +443,8 @@ function el(e) {
         onContextMenu: y(r),
         onMouseEnter: v,
         onMouseLeave: b,
-        disabled: !u || !s
+        disabled: !u || !s,
+        isTrayButton: !0
       })
     }
   })
@@ -520,7 +522,8 @@ function ea(e) {
         onMouseLeave: E,
         isActive: r,
         popoutOpen: r,
-        disabled: h
+        disabled: h,
+        isTrayButton: !0
       })
     }
   })
@@ -586,7 +589,8 @@ function es(e) {
         onContextMenu: h(r),
         isActive: o,
         onPopoutClick: a ? h(r) : void 0,
-        popoutOpen: o
+        popoutOpen: o,
+        isTrayButton: !1
       })
     }
   })
