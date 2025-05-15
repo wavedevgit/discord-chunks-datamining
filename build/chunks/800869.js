@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => d
+  Z: () => u
 });
 var r = t(255367),
   i = t(793030),
@@ -9,9 +9,9 @@ var r = t(255367),
   a = t(680278),
   l = t(388032),
   c = t(305063),
-  u = t(719119);
+  d = t(719119);
 
-function d(e) {
+function u(e) {
   let {
     markAsDismissed: n
   } = e;
@@ -20,7 +20,7 @@ function d(e) {
     children: [(0, r.jsx)("img", {
       alt: "",
       className: c.image,
-      src: u
+      src: d
     }), (0, r.jsx)(i.xv, {
       color: "always-white",
       variant: "text-md/semibold",

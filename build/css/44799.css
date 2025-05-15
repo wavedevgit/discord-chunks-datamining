@@ -1,6 +1,6 @@
 /**
   Module ID: 44799
-  Original File Name: e2d9a7a42538bf5e
+  Original File Name: 9f0f5e368db1a023
 **/
 .parentContainer__98cbd {
     display: flex;
@@ -79,6 +79,10 @@
     gap: 6px
 }
 
+.price__98cbd {
+    font-size: 14px
+}
+
 .inlineBoost__98cbd {
     gap: 0
 }
@@ -103,6 +107,10 @@
 
 .full-motion .buttonContainer__98cbd {
     transition: bottom .2s ease,opacity .2s ease
+}
+
+.full-motion .labelContainer__98cbd {
+    transition: opacity .2s ease
 }
 
 @media (max-width:1588px) {
@@ -539,4 +547,4 @@
     transition: padding-left .2s ease
 }
 
-/*# sourceMappingURL=e2d9a7a42538bf5e.css.map*/
+/*# sourceMappingURL=9f0f5e368db1a023.css.map*/
