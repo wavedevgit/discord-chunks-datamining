@@ -3,7 +3,7 @@
 n.d(t, {
   Z: () => x,
   r: () => h
-}), n(642613), n(388685), n(825670);
+}), n(642613), n(388685), n(825670), n(467055);
 var r, i = n(315008),
   o = n(347715),
   a = n(259443),
@@ -143,12 +143,12 @@ class S extends(r = s.ZP.Store) {
     return g.modelState[e]
   }
   getOngoingDownloads() {
-    return Object.values(g.modelState).filter(e => {
-      let {
-        status: t
-      } = e;
-      return t === c.L.DOWNLOADING
-    })
+    return Object.fromEntries(Object.entries(g.modelState).filter(e => {
+      let [t, {
+        status: n
+      }] = e;
+      return n === c.L.DOWNLOADING
+    }))
   }
   isModelDownloaded(e) {
     var t;

@@ -25,19 +25,19 @@ var i = n(255367),
   C = n(388610),
   N = n(592125),
   S = n(496675),
-  O = n(699516),
-  Z = n(594174),
+  E = n(699516),
+  O = n(594174),
   w = n(585483),
-  T = n(787263),
-  E = n(975316),
+  Z = n(787263),
+  T = n(975316),
   R = n(428813),
-  _ = n(2147),
-  I = n(856606),
+  I = n(2147),
+  _ = n(856606),
   P = n(981631),
-  D = n(388032),
+  A = n(388032),
   L = n(511740);
 
-function A(e) {
+function D(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
     n = arguments.length > 2 ? arguments[2] : void 0;
   h.ZP.trackWithMetadata(P.rMx.SETTINGS_PANE_VIEWED, {
@@ -49,7 +49,7 @@ function A(e) {
 }
 class M extends l.PureComponent {
   componentDidMount() {
-    A(this.props.section, null, this.props.analyticsLocation)
+    D(this.props.section, null, this.props.analyticsLocation)
   }
   componentWillUnmount() {
     a.Z.wait(() => (0, o.xv)())
@@ -66,7 +66,7 @@ class M extends l.PureComponent {
       canManageWebhooks: a,
       canUnlinkChannel: o
     } = this.props;
-    (s || r || a || o) && (i !== P.QZA.CLOSED || i === t) && (r || l !== P.CoT.PERMISSIONS) && (a || o || l !== P.CoT.INTEGRATIONS) ? l !== n && A(l, n): (0, c.xf)()
+    (s || r || a || o) && (i !== P.QZA.CLOSED || i === t) && (r || l !== P.CoT.PERMISSIONS) && (a || o || l !== P.CoT.INTEGRATIONS) ? l !== n && D(l, n): (0, c.xf)()
   }
   render() {
     let {
@@ -98,7 +98,7 @@ class M extends l.PureComponent {
           canUnlinkChannel: h
         } = e, f = (0, m.KS)(t), {
           GUILD_CATEGORY: x
-        } = P.d4z, j = b.Ec.has(t.type), N = t.type === x ? D.intl.string(D.t.ifbXnJ) : j ? t.isForumPost() ? D.intl.string(D.t.nEOg1N) : D.intl.string(D.t.H7vTe3) : D.intl.string(D.t["8D8Rsb"]);
+        } = P.d4z, j = b.Ec.has(t.type), N = t.type === x ? A.intl.string(A.t.ifbXnJ) : j ? t.isForumPost() ? A.intl.string(A.t.nEOg1N) : A.intl.string(A.t.H7vTe3) : A.intl.string(A.t["8D8Rsb"]);
         return [{
           section: u.ID.HEADER,
           label: null != t ? (0, i.jsxs)(i.Fragment, {
@@ -106,48 +106,48 @@ class M extends l.PureComponent {
               size: "xxs",
               color: "currentColor",
               className: L.channelIcon
-            }) : null, (0, g.F6)(t, Z.default, O.Z), null != n ? (0, i.jsx)(s.Text, {
+            }) : null, (0, g.F6)(t, O.default, E.Z), null != n ? (0, i.jsx)(s.Text, {
               tag: "span",
               variant: "text-xs/semibold",
               color: "header-secondary",
               lineClamp: 1,
               className: L.category,
-              children: (0, g.F6)(n, Z.default, O.Z)
+              children: (0, g.F6)(n, O.default, E.Z)
             }) : null]
-          }) : D.intl.string(D.t.XPDhcX)
+          }) : A.intl.string(A.t.XPDhcX)
         }, {
           section: P.CoT.OVERVIEW,
-          label: D.intl.string(D.t["/dp6yc"]),
-          ariaLabel: D.intl.string(D.t["/dp6yc"]),
-          element: _.Z,
+          label: A.intl.string(A.t["/dp6yc"]),
+          ariaLabel: A.intl.string(A.t["/dp6yc"]),
+          element: I.Z,
           notice: {
-            element: _.G,
+            element: I.G,
             stores: [C.Z]
           },
           predicate: () => !t.isModeratorReportChannel()
         }, {
           section: P.CoT.PERMISSIONS,
-          label: D.intl.string(D.t.xrmhRU),
+          label: A.intl.string(A.t.xrmhRU),
           element: p.Z,
           notice: {
-            element: I.n,
+            element: _.n,
             stores: [y.Z]
           },
           predicate: () => l && !j
         }, {
           section: P.CoT.INSTANT_INVITES,
-          label: D.intl.string(D.t["9F90iY"]),
+          label: A.intl.string(A.t["9F90iY"]),
           element: R.Z,
           type: u.bT.CUSTOM,
           predicate: () => t.type !== x && r && !j && !t.isModeratorReportChannel()
         }, {
           section: P.CoT.INTEGRATIONS,
-          label: D.intl.string(D.t.s69NLC),
-          ariaLabel: D.intl.string(D.t.s69NLC),
-          element: E.Z,
+          label: A.intl.string(A.t.s69NLC),
+          ariaLabel: A.intl.string(A.t.s69NLC),
+          element: T.Z,
           notice: {
             stores: [v.Z],
-            element: E.B
+            element: T.B
           },
           predicate: () => !(!d && !h || t.isModeratorReportChannel()) && b.Ti.has(t.type)
         }, {
@@ -155,7 +155,7 @@ class M extends l.PureComponent {
         }, {
           section: P.CoT.DELETE,
           onClick() {
-            (0, T.w)(t, function() {
+            (0, Z.w)(t, function() {
               w.S.subscribeOnce(P.CkL.LAYER_POP_COMPLETE, () => {
                 (0, o.zz)(t.id)
               }), (0, c.xf)()

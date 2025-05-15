@@ -353,7 +353,7 @@ class eo extends s.PureComponent {
           autoFocus: !0,
           focusProps: {
             offset: {
-              right: -30
+              right: l ? -30 : 0
             }
           }
         })
