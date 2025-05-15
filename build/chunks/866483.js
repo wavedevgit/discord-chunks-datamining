@@ -1,32 +1,33 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  HY: () => c,
-  Pf: () => s,
-  RZ: () => a,
-  m$: () => l
+  HY: () => u,
+  Pf: () => l,
+  RZ: () => s,
+  m$: () => c
 }), n(388685), n(642613);
-let r = ["coldStart"],
-  i = !0,
-  o = new Set;
-
-function a() {
-  return o.size > 0 || i
-}
+let r = ["COLD_START"],
+  i = "NO_REASONS",
+  o = !0,
+  a = new Set;
 
 function s() {
-  let e = [...i ? r : [], ...o].sort();
-  return e.length > 0 ? e.join(",") : ""
+  return a.size > 0 || o
 }
 
-function l(e) {
-  u(() => o.add(e))
+function l() {
+  let e = [...o ? r : [], ...a].sort();
+  return e.length > 0 ? e.join(",") : i
 }
 
 function c(e) {
-  u(() => o.delete(e))
+  d(() => a.add(e))
 }
 
 function u(e) {
-  a(), i = !1, e(), a()
+  d(() => a.delete(e))
+}
+
+function d(e) {
+  s(), o = !1, e(), s()
 }

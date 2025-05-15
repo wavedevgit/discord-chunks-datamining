@@ -2,7 +2,7 @@
 s.d(t, {
   Z: () => a
 }), s(997841);
-var n = s(598077),
+var n = s(594174),
   l = s(978003);
 
 function a(e, t) {
@@ -20,8 +20,6 @@ function a(e, t) {
     stickers: t.message.stickers,
     stickerItems: t.message.stickerItems,
     customRenderedContent: null,
-    author: null != t.moderatorReport ? new n.Z({
-      id: t.moderatorReport.reported_user_id
-    }) : e.author
+    author: null != t.moderatorReport ? n.default.getUser(t.moderatorReport.reported_user_id) : e.author
   })
 }
