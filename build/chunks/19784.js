@@ -1,18 +1,18 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  V: () => a
+  V: () => o
 });
 var r = n(239189),
   i = (n(444675), function(e) {
     return (0, r.requestAnimationFrame)(e)
   }),
-  a = function() {
+  o = function() {
     return function(e) {
       void 0 === e && (e = i);
       var t = !0,
         n = !1,
-        a = 0,
+        o = 0,
         s = [],
         l = 0,
         c = new Set,
@@ -32,7 +32,7 @@ var r = n(239189),
           }
         },
         p = function() {
-          t && (t = !1, 0 == a && (a = r.now(), e(_)))
+          t && (t = !1, 0 == o && (o = r.now(), e(_)))
         },
         h = [];
       this.setTimeout = function(e, t) {
@@ -43,7 +43,7 @@ var r = n(239189),
             });
             e >= 0 && h.splice(e, 1)
           },
-          a = o(h, function(e) {
+          o = a(h, function(e) {
             return e.time > n
           }),
           s = {
@@ -51,20 +51,20 @@ var r = n(239189),
             handler: e,
             cancel: i
           };
-        return h.splice(a, 0, s), p(), s
+        return h.splice(o, 0, s), p(), s
       };
       var m = this.advance = function() {
         var e = r.now();
         if (c.size && (c.forEach(f), c.clear()), h.length && r.batchedUpdates(function() {
-            var t = o(h, function(t) {
+            var t = a(h, function(t) {
               return t.time > e
             });
             h.splice(0, t).forEach(function(e) {
               return e.handler()
             })
-          }), e > a) {
-          var t = Math.min(64, e - a);
-          a = e, r.batchedUpdates(function() {
+          }), e > o) {
+          var t = Math.min(64, e - o);
+          o = e, r.batchedUpdates(function() {
             s.length && (r.willAdvance(s), s = s.filter(function(e) {
               return l = e.priority, e.idle || e.advance(t), !e.idle
             }), l = 0), u.size && (u.forEach(function(t) {
@@ -80,12 +80,12 @@ var r = n(239189),
       }, this.onFrame = function(e) {
         u.add(e), p()
       }, this.onWrite = function(e) {
-        n ? e(a) : d.add(e)
+        n ? e(o) : d.add(e)
       }
     }
   }();
 
-function o(e, t) {
+function a(e, t) {
   var n = e.findIndex(t);
   return n < 0 ? e.length : n
 }

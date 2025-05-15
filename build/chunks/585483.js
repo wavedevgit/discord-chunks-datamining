@@ -2,13 +2,13 @@
 "use strict";
 n.d(t, {
   S: () => s,
-  b: () => o
+  b: () => a
 }), n(388685), n(539854);
 var r = n(836560);
 n(17089);
 var i = n(710845);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -17,7 +17,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 n(981631);
-class o {
+class a {
   safeDispatch(e) {
     for (var t, n = arguments.length, r = Array(n > 1 ? n - 1 : 0), i = 1; i < n; i++) r[i - 1] = arguments[i];
     if (!this.hasSubscribers(e)) {
@@ -72,7 +72,7 @@ class o {
     return this.unsubscribe("".concat(e, "_").concat(t), n)
   }
   constructor() {
-    a(this, "emitter", new r.EventEmitter), a(this, "_savedDispatches", {}), this.emitter.setMaxListeners(100)
+    o(this, "emitter", new r.EventEmitter), o(this, "_savedDispatches", {}), this.emitter.setMaxListeners(100)
   }
 }
-let s = new o
+let s = new a

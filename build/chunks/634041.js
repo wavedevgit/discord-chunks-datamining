@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => P
 });
 var r, i = n(442837),
-  a = n(46973),
-  o = n(570140),
+  o = n(46973),
+  a = n(570140),
   s = n(581883),
   l = n(131951),
   c = n(944486),
@@ -97,7 +97,7 @@ function T(e) {
   let {
     settings: t
   } = e;
-  a.TO.CAMERA_BACKGROUND_LIVE in t && (m = !0)
+  o.TO.CAMERA_BACKGROUND_LIVE in t && (m = !0)
 }
 
 function A() {
@@ -122,7 +122,7 @@ class C extends(r = i.ZP.Store) {
   }
 }
 f(C, "displayName", "VideoBackgroundStore");
-let P = new C(o.Z, {
+let P = new C(a.Z, {
   VIDEO_FILTER_ASSETS_FETCH_SUCCESS: y,
   VIDEO_FILTER_ASSET_UPLOAD_SUCCESS: O,
   VIDEO_FILTER_ASSET_DELETE_SUCCESS: v,

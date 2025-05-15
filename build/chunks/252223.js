@@ -5,8 +5,8 @@ n.d(t, {
 }), n(781311), n(539854);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(392711),
   l = n(793030),
   c = n(442837),
@@ -53,7 +53,7 @@ function C(e) {
   let {
     user: t,
     activities: n,
-    applicationStream: a,
+    applicationStream: o,
     voiceChannel: A,
     textClassName: C,
     iconClassName: P,
@@ -66,7 +66,7 @@ function C(e) {
     hideTooltip: M = !1
   } = e;
   (0, d.Z)(null == t ? void 0 : t.id);
-  let j = (null == a ? void 0 : a.discoverable) !== !1 ? a : null,
+  let j = (null == o ? void 0 : o.discoverable) !== !1 ? o : null,
     {
       enabledWithActivityStatus: U
     } = (0, f.Z)({
@@ -104,7 +104,7 @@ function C(e) {
     z = M || !L,
     q = () => (0, r.jsx)(l.xv, {
       variant: "text-".concat(R, "/normal"),
-      className: o()(T.dot, C),
+      className: a()(T.dot, C),
       children: I.l
     }),
     Q = () => {
@@ -150,7 +150,7 @@ function C(e) {
       return (0, r.jsxs)(r.Fragment, {
         children: [null != n && (0, r.jsx)(l.xv, {
           variant: "text-".concat(R, "/medium"),
-          className: o()(C, T.customStatusLabel),
+          className: a()(C, T.customStatusLabel),
           color: "none",
           children: "".concat(n, ": ")
         }), null != e && !k && (0, r.jsx)(m.Z, {
@@ -168,7 +168,7 @@ function C(e) {
       })
     },
     $ = () => (0, r.jsxs)("div", {
-      className: o()(T.container, {
+      className: a()(T.container, {
         [T.textXs]: "xs" === R,
         [T.textSm]: "sm" === R
       }),

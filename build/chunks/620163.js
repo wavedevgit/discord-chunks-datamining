@@ -1,6 +1,6 @@
 /** Chunk was on 69835 **/
 n.d(t, {
-  i: () => e6
+  i: () => e2
 }), n(539854), n(388685);
 var i = n(255367);
 n(73800);
@@ -125,15 +125,15 @@ let e0 = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
     }) : null
   },
   e8 = ew.Z,
-  e6 = e => {
+  e2 = e => {
     let {
       unseenGiftCount: t,
       showPrepaidPaymentPastDueWarning: T,
       impressionSource: P,
       numOfPendingFamilyRequests: D,
       isOverlaySupported: F,
-      isClipsBetaTagShowing: e6 = !1,
-      shouldMergeGameSettings: e2,
+      isClipsBetaTagShowing: e2 = !1,
+      shouldMergeGameSettings: e6,
       isKeywordFilteringEnabled: e5,
       isStaff: e4,
       isInappropriateConversationWarningEnabled: e7,
@@ -273,7 +273,7 @@ let e0 = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         label: eX.intl.string(eX.t.URyqtL),
         ariaLabel: eX.intl.string(eX.t.URyqtL),
         element: eM.Z,
-        predicate: () => e2
+        predicate: () => e6
       },
       [ez.s6.GAMES_MY_GAMES]: {
         section: eY.oAB.GAMES,
@@ -577,9 +577,9 @@ let e0 = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eX.intl.string(eX.t.z2jK6e)],
         label: eX.intl.string(eX.t.z2jK6e),
         ariaLabel: eX.intl.string(eX.t.z2jK6e),
-        icon: e6 ? (0, i.jsx)(C.Z, {}) : void 0,
+        icon: e2 ? (0, i.jsx)(C.Z, {}) : void 0,
         element: j.Z,
-        predicate: () => !e2,
+        predicate: () => !e6,
         url: eY.Z5c.SETTINGS("clips")
       },
       [ez.s6.RESTRICTED_USERS]: {
@@ -1549,23 +1549,23 @@ let e0 = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         label: eX.intl.string(eX.t.Cq98yM),
         ariaLabel: eX.intl.string(eX.t.Cq98yM),
         element: ed.Z,
-        predicate: () => !e2,
+        predicate: () => !e6,
         url: eY.Z5c.SETTINGS("activity-privacy")
       },
       [ez.s6.ACTIVITY_PRIVACY_STATUS]: {
-        section: e2 ? eY.oAB.GAMES : eY.oAB.ACTIVITY_PRIVACY,
+        section: e6 ? eY.oAB.GAMES : eY.oAB.ACTIVITY_PRIVACY,
         searchableTitles: [eX.intl.string(eX.t["8ka8lp"])],
-        parent: e2 ? ez.s6.GAMES_ACTIVITY_PRIVACY : ez.s6.ACTIVITY_PRIVACY
+        parent: e6 ? ez.s6.GAMES_ACTIVITY_PRIVACY : ez.s6.ACTIVITY_PRIVACY
       },
       [ez.s6.ACTIVITY_PRIVACY_RICH_PRESENCE]: {
-        section: e2 ? eY.oAB.GAMES : eY.oAB.ACTIVITY_PRIVACY,
+        section: e6 ? eY.oAB.GAMES : eY.oAB.ACTIVITY_PRIVACY,
         searchableTitles: [eX.intl.string(eX.t.VOszPD)],
-        parent: e2 ? ez.s6.GAMES_ACTIVITY_PRIVACY : ez.s6.ACTIVITY_PRIVACY
+        parent: e6 ? ez.s6.GAMES_ACTIVITY_PRIVACY : ez.s6.ACTIVITY_PRIVACY
       },
       [ez.s6.ACTIVITY_PRIVACY_TOS]: {
-        section: e2 ? eY.oAB.GAMES : eY.oAB.ACTIVITY_PRIVACY,
+        section: e6 ? eY.oAB.GAMES : eY.oAB.ACTIVITY_PRIVACY,
         searchableTitles: [ez.CF],
-        parent: e2 ? ez.s6.GAMES_ACTIVITY_PRIVACY : ez.s6.ACTIVITY_PRIVACY
+        parent: e6 ? ez.s6.GAMES_ACTIVITY_PRIVACY : ez.s6.ACTIVITY_PRIVACY
       },
       [ez.s6.ACTIVITY_PRIVACY_STATUS_DISPLAY]: {
         section: eY.oAB.ACTIVITY_PRIVACY,
@@ -1577,14 +1577,14 @@ let e0 = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eX.intl.string(eX.t.AVDyEh)],
         label: eX.intl.string(eX.t.AVDyEh),
         element: eC.Z,
-        predicate: () => !e2 && (0, eB.Jw)()
+        predicate: () => !e6 && (0, eB.Jw)()
       },
       [ez.s6.OVERLAY]: {
         section: eY.oAB.OVERLAY,
         searchableTitles: [eX.intl.string(eX.t["9cb1U1"]), eX.intl.string(eX.t.HcoRu7)],
         label: eX.intl.string(eX.t["9cb1U1"]),
         element: eI.Z,
-        predicate: () => !e2 && F
+        predicate: () => !e6 && F
       },
       [ez.s6.CHANGELOG]: {
         section: "changelog",

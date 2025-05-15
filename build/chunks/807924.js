@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(126387),
   i = n(493623),
-  a = n(67966),
-  o = n(343713),
+  o = n(67966),
+  a = n(343713),
   s = n(205208),
   l = n(464826),
   c = n(544338),
@@ -23,7 +23,7 @@ let _ = {
   phase: "main",
   fn: function(e) {
     var t, n = e.state,
-      a = e.name,
+      o = e.name,
       c = e.options,
       u = n.elements.arrow,
       _ = n.modifiersData.popperOffsets,
@@ -37,7 +37,7 @@ let _ = {
         y = "y" === h ? d.I : d.F2,
         O = n.rects.reference[m] + n.rects.reference[h] - _[h] - n.rects.popper[m],
         v = _[h] - n.rects.reference[h],
-        I = (0, o.Z)(u),
+        I = (0, a.Z)(u),
         S = I ? "y" === h ? I.clientHeight || 0 : I.clientWidth || 0 : 0,
         T = O / 2 - v / 2,
         A = g[b],
@@ -45,14 +45,14 @@ let _ = {
         C = S / 2 - E[m] / 2 + T,
         P = (0, l.u)(A, C, N),
         R = h;
-      n.modifiersData[a] = (t = {}, t[R] = P, t.centerOffset = P - C, t)
+      n.modifiersData[o] = (t = {}, t[R] = P, t.centerOffset = P - C, t)
     }
   },
   effect: function(e) {
     var t = e.state,
       n = e.options.element,
       r = void 0 === n ? "[data-popper-arrow]" : n;
-    if (null != r)("string" != typeof r || (r = t.elements.popper.querySelector(r))) && (0, a.Z)(t.elements.popper, r) && (t.elements.arrow = r)
+    if (null != r)("string" != typeof r || (r = t.elements.popper.querySelector(r))) && (0, o.Z)(t.elements.popper, r) && (t.elements.arrow = r)
   },
   requires: ["popperOffsets"],
   requiresIfExists: ["preventOverflow"]

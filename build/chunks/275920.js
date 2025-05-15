@@ -1,17 +1,17 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(626135),
   i = n(981631);
 
-function a(e) {
+function o(e) {
   let {
     type: t,
     source: n,
-    userId: a,
-    guildId: o,
+    userId: o,
+    guildId: a,
     channelId: s,
     channelType: l,
     applicationId: c,
@@ -25,12 +25,12 @@ function a(e) {
   r.default.track(i.rMx.APPLICATION_OPENED, {
     type: t,
     source: n,
-    guild_id: o,
+    guild_id: a,
     channel_id: s,
     channel_type: l,
     application_id: c,
     party_id: null != u ? u : void 0,
-    other_user_id: a,
+    other_user_id: o,
     message_id: d,
     location: f,
     location_stack: _,

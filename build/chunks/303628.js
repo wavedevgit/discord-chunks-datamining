@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(91192),
   l = n(536895),
   c = n(442837),
@@ -70,8 +70,8 @@ function R(e, t) {
   if (null == e) return {};
   var n, r, i = w(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -79,8 +79,8 @@ function R(e, t) {
 function w(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let D = [];
@@ -89,7 +89,7 @@ function L(e) {
   let {
     channelId: t,
     type: n
-  } = e, a = (0, c.e7)([_.Z], () => _.Z.keyboardModeEnabled), A = (0, p.Z)("attachments", l.hy.HORIZONTAL), C = (0, c.e7)([b.Z], () => b.Z.getUploads(t, n.drafts.type)), {
+  } = e, o = (0, c.e7)([_.Z], () => _.Z.keyboardModeEnabled), A = (0, p.Z)("attachments", l.hy.HORIZONTAL), C = (0, c.e7)([b.Z], () => b.Z.getUploads(t, n.drafts.type)), {
     isApplicationCommand: w,
     commandOptions: L,
     commandOptionStates: x
@@ -161,16 +161,16 @@ function L(e) {
           return (0, r.jsx)("ul", P(N({
             ref: i
           }, s), {
-            className: o()(S.channelAttachmentArea, T.scrollbarGhost),
+            className: a()(S.channelAttachmentArea, T.scrollbarGhost),
             children: w ? k.map(e => (0, r.jsx)(O.Z, {
               channelId: t,
-              keyboardModeEnabled: a,
+              keyboardModeEnabled: o,
               option: e
             }, e.name)) : C.map(e => (0, r.jsx)(v.Z, {
               channelId: t,
               draftType: n.drafts.type,
               upload: e,
-              keyboardModeEnabled: a,
+              keyboardModeEnabled: o,
               clip: e.clip
             }, e.id))
           }))

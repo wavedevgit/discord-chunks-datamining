@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(670481),
   l = n(114858),
   c = n(873546),
@@ -59,8 +59,8 @@ var r = n(255367),
   en = n(663993),
   er = n(766127),
   ei = n(823453),
-  ea = n(628123),
-  eo = n(436774),
+  eo = n(628123),
+  ea = n(436774),
   es = n(686546),
   el = n(950796),
   ec = n(151851),
@@ -141,7 +141,7 @@ let eg = (0, en.Un)({
       children: t,
       skipsSettingDefaultPageTitle: n
     } = e, {
-      pathname: a
+      pathname: o
     } = (0, l.TH)(), f = (0, ee.getPlatform)(), b = c.tq || c.Em, Q = (0, u.e7)([z.Z], () => z.Z.darkSidebar ? eu.BRd.DARK : void 0), $ = (0, M.Q3)("AppSkeleton"), en = (0, u.e7)([O.Z], () => O.Z.useForcedColors ? "yes" : "no"), [el, ec, e_] = (0, u.Wu)([w.Z], () => [w.Z.isEditorOpen, w.Z.isCoachmark, w.Z.isPreview]), [ep, eh] = (0, u.Wu)([N.Z], () => [N.Z.isEditorOpen, N.Z.isUpsellPreview]), em = (0, u.e7)([X.Z], () => X.Z.getLayers().includes(eu.S9g.USER_SETTINGS)), ey = (0, u.e7)([J.default], () => et.ZP.canUseClientThemes(J.default.getCurrentUser())), eO = el && !em, ev = ep && !em, eI = [];
     em || !ec || ey || eI.push(d.z.CLIENT_THEMES_COACHMARK);
     let [eS, eT] = (0, B.US)(eI, ed.R.SIDEBAR, !0);
@@ -149,7 +149,7 @@ let eg = (0, en.Un)({
     let eA = eS === d.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK,
       eN = eS === d.z.CLIENT_THEMES_COACHMARK;
     i.useEffect(() => {
-      null == (0, l.LX)(a, {
+      null == (0, l.LX)(o, {
         path: "invite",
         exact: !1,
         strict: !1
@@ -157,7 +157,7 @@ let eg = (0, en.Un)({
         type: "APP_ICON_TRACK_IMPRESSION",
         markAsDismissed: eT
       }))
-    }, [eA, eN, eT, a]);
+    }, [eA, eN, eT, o]);
     let eC = i.useRef(document.body),
       eP = eO || eN,
       eR = ev && !eN,
@@ -176,10 +176,10 @@ let eg = (0, en.Un)({
         children: [(0, r.jsx)(ei.Z, {
           skipsSettingDefaultPageTitle: n
         }), (0, r.jsx)(E.T, {
-          children: (0, r.jsx)(ea.Z, {
+          children: (0, r.jsx)(eo.Z, {
             children: (0, r.jsxs)(_.JcV, {
               containerRef: eC,
-              children: [(0, r.jsx)(es.Co, {}), (0, r.jsx)(eo.ZP, {}), (0, r.jsx)(s.OU, {}), (0, r.jsx)(y.Wu, {
+              children: [(0, r.jsx)(es.Co, {}), (0, r.jsx)(ea.ZP, {}), (0, r.jsx)(s.OU, {}), (0, r.jsx)(y.Wu, {
                 appContext: eu.IlC.APP,
                 renderWindow: window,
                 children: (0, r.jsxs)(V.yP, {
@@ -187,7 +187,7 @@ let eg = (0, en.Un)({
                     type: f,
                     themeOverride: Q
                   }) : null, (0, r.jsxs)("div", {
-                    className: o()(ef.appAsidePanelWrapper, b && ef.mobileAppAsidePanelWrapper),
+                    className: a()(ef.appAsidePanelWrapper, b && ef.mobileAppAsidePanelWrapper),
                     children: [(0, r.jsx)(k.K, {}), (0, r.jsx)("div", {
                       className: ef.notAppAsidePanel,
                       "data-app-not-dev-tools": !0,
@@ -197,7 +197,7 @@ let eg = (0, en.Un)({
                             value: S.Z,
                             children: (0, r.jsxs)(L.p, {
                               children: [(0, r.jsx)("div", {
-                                className: o()(b ? ef.mobileApp : ef.app),
+                                className: a()(b ? ef.mobileApp : ef.app),
                                 children: t
                               }), (0, r.jsx)(P.Z, {}), (0, r.jsx)(m.Z, {}), (0, r.jsx)(_.nKe, {}), (0, r.jsx)(g.Z, {}), (0, r.jsx)(Z.Ox, {}), (0, r.jsx)(V.Un, {}), (0, r.jsx)(H.ot, {}), (0, r.jsx)(_.Ixi, {}), (0, r.jsx)(T.Z, {}), (0, r.jsx)(Y.Z, {}), (0, r.jsx)(eg, {}), (0, r.jsx)(eE, {})]
                             })

@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(442837),
-  a = n(481060),
-  o = n(230711),
+  o = n(481060),
+  a = n(230711),
   s = n(726542),
   l = n(394821),
   c = n(740605),
@@ -25,7 +25,7 @@ function p(e) {
     onClose: m
   } = e, g = (0, i.e7)([d.Z], () => null != d.Z.getAccount(null, f.ABu.CRUNCHYROLL));
   if (!(0, l.Z)(t) && !(0, u.gr)(n)) return null;
-  if (!g) return (0, r.jsx)(a.sNh, {
+  if (!g) return (0, r.jsx)(o.sNh, {
     id: "connect-crunchyroll",
     label: _.intl.formatToPlainString(_.t.XWSHTU, {
       platform: s.Z.get(f.ABu.CRUNCHYROLL).name
@@ -33,12 +33,12 @@ function p(e) {
     action: () => {
       null == h || h({
         action: "PRESS_CONNECT_CRUNCHYROLL_MENU_ITEM"
-      }), o.Z.open(f.oAB.CONNECTIONS), null == m || m()
+      }), a.Z.open(f.oAB.CONNECTIONS), null == m || m()
     }
   });
   if ("recent" !== p || !(0, u.gr)(n)) return null;
   let E = n.extra.url;
-  return null == E || "" === E ? null : (0, r.jsx)(a.sNh, {
+  return null == E || "" === E ? null : (0, r.jsx)(o.sNh, {
     id: "watch-on-crunchyroll",
     label: _.intl.string(_.t.OpxQVF),
     action: () => {

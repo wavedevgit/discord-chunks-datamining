@@ -6,15 +6,15 @@ n.d(t, {
 }), n(410992), n(227481), n(730884), n(20464), n(341884), n(364341), n(629680), n(505025), n(918970), n(121784), n(644351), n(146733), n(35282), n(853839), n(570086), n(479048), n(388685);
 var r = n(772848),
   i = n(433517),
-  a = n(70956);
-let o = "purchase_token",
-  s = 60 * a.Z.Millis.DAY;
+  o = n(70956);
+let a = "purchase_token",
+  s = 60 * o.Z.Millis.DAY;
 
 function l() {
-  let e = i.K.get(o);
+  let e = i.K.get(a);
   if (null != e && e.expires >= Date.now()) return e.purchaseToken;
   let t = (0, r.Z)();
-  return i.K.set(o, {
+  return i.K.set(a, {
     purchaseToken: t,
     expires: Date.now() + s
   }), t

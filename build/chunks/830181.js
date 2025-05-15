@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  x: () => o
+  x: () => a
 });
 var r = n(818083),
   i = n(812740);
-let a = (0, r.B)({
+let o = (0, r.B)({
   kind: "user",
   id: "2025-03_preload_user_profile_for_popout_performance",
   label: "Preload User Profile for Popout Performance Experiment",
@@ -21,7 +21,7 @@ let a = (0, r.B)({
   }]
 });
 
-function o(e) {
+function a(e) {
   let {
     location: t,
     autoTrackExposure: n = !0
@@ -29,7 +29,7 @@ function o(e) {
     location: t,
     autoTrackExposure: n
   });
-  return a.getCurrentConfig({
+  return o.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: n,

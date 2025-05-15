@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   s = n(727637),
   l = n(100527),
   c = n(906732),
@@ -72,7 +72,7 @@ function C(e) {
     channelId: C,
     messageId: P,
     roleId: R
-  }), G = (0, _.ZP)(t.id, A), B = (0, a.e7)([u.Z], () => null != A ? u.Z.getGuild(A) : null), F = i.useRef(null), V = (0, s.Z)(F);
+  }), G = (0, _.ZP)(t.id, A), B = (0, o.e7)([u.Z], () => null != A ? u.Z.getGuild(A) : null), F = i.useRef(null), V = (0, s.Z)(F);
   i.useEffect(() => {
     null == L || L(null == F ? void 0 : F.current)
   }, [F, L]);
@@ -82,7 +82,7 @@ function C(e) {
         hideRestrictedProfile: !0
       }, U, e))
     },
-    H = () => x ? null : (0, r.jsx)(o.sNh, {
+    H = () => x ? null : (0, r.jsx)(a.sNh, {
       id: "view-profile",
       label: S.intl.string(S.t["+Xp3ho"]),
       action: () => {
@@ -92,7 +92,7 @@ function C(e) {
         }, U))
       }
     }),
-    Y = M ? "div" : o.VqE;
+    Y = M ? "div" : a.VqE;
   return (0, r.jsx)(c.Gt, {
     value: j,
     children: (0, r.jsx)(d.Mt, {

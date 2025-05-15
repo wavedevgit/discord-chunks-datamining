@@ -6,7 +6,7 @@ n.d(t, {
 var r = n(836560),
   i = n(376398);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -15,14 +15,14 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -53,7 +53,7 @@ class c extends r.EventEmitter {
         noiseSuppression: !1,
         autoGainControl: !1
       },
-      video: l(o({}, e), {
+      video: l(a({}, e), {
         frameRate: 30
       })
     };
@@ -73,7 +73,7 @@ class c extends r.EventEmitter {
     this.emit("speaking", this.stream.getAudioTracks().some(e => e.enabled))
   }
   constructor(e) {
-    super(), a(this, "id", void 0), a(this, "stream", void 0), a(this, "streamId", void 0), e.getVideoTracks().forEach(e => {
+    super(), o(this, "id", void 0), o(this, "stream", void 0), o(this, "streamId", void 0), e.getVideoTracks().forEach(e => {
       e.onended = () => {
         this.emit("desktopsourceend")
       }

@@ -45,13 +45,13 @@ e.exports = function(e) {
       className: "symbol",
       begin: e.UNDERSCORE_IDENT_RE + "@"
     },
-    a = {
+    o = {
       className: "subst",
       begin: /\$\{/,
       end: /\}/,
       contains: [e.C_NUMBER_MODE]
     },
-    o = {
+    a = {
       className: "variable",
       begin: "\\$" + e.UNDERSCORE_IDENT_RE
     },
@@ -60,7 +60,7 @@ e.exports = function(e) {
       variants: [{
         begin: '"""',
         end: '"""(?=[^"])',
-        contains: [o, a]
+        contains: [a, o]
       }, {
         begin: "'",
         end: "'",
@@ -70,10 +70,10 @@ e.exports = function(e) {
         begin: '"',
         end: '"',
         illegal: /\n/,
-        contains: [e.BACKSLASH_ESCAPE, o, a]
+        contains: [e.BACKSLASH_ESCAPE, a, o]
       }]
     };
-  a.contains.push(s);
+  o.contains.push(s);
   let l = {
       className: "meta",
       begin: "@(?:file|property|field|get|set|receiver|param|setparam|delegate)\\s*:(?:\\s*" + e.UNDERSCORE_IDENT_RE + ")?"

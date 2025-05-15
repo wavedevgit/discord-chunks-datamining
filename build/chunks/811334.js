@@ -12,8 +12,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(481060),
+  o = n.n(i),
+  a = n(481060),
   s = n(911969),
   l = n(937615),
   c = n(388032),
@@ -25,7 +25,7 @@ function d(e) {
     className: n
   } = e;
   return (0, r.jsx)("div", {
-    className: a()(u.table, n),
+    className: o()(u.table, n),
     children: t
   })
 }
@@ -47,7 +47,7 @@ function _(e) {
     className: i
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(u.row, i),
+    className: o()(u.row, i),
     children: [(0, r.jsx)("div", {
       className: u.rowLabel,
       children: t
@@ -63,13 +63,13 @@ function p(e) {
     label: t,
     value: n,
     discounts: i,
-    originalAmount: a,
+    originalAmount: o,
     interval: d,
     currency: f,
     className: p,
     intervalCount: h,
     inTrialPeriod: m
-  } = e, g = e => null != i ? i.find(t => t.type === e) : null, E = g(s.eW.SUBSCRIPTION_PLAN), b = g(s.eW.ENTITLEMENT), y = null != E ? Math.floor(E.amount / a * 100) : null, O = (0, l.T4)(a, f);
+  } = e, g = e => null != i ? i.find(t => t.type === e) : null, E = g(s.eW.SUBSCRIPTION_PLAN), b = g(s.eW.ENTITLEMENT), y = null != E ? Math.floor(E.amount / o * 100) : null, O = (0, l.T4)(o, f);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(_, {
       label: t,
@@ -82,7 +82,7 @@ function p(e) {
         }) : null]
       }),
       className: p
-    }), m && (0, r.jsx)(o.Text, {
+    }), m && (0, r.jsx)(a.Text, {
       variant: "text-md/medium",
       className: u.trialEndPrice,
       children: c.intl.format(c.t.v9QeOD, {
@@ -105,7 +105,7 @@ function h(e) {
     negativeMarginBottom: i = !1
   } = e;
   return (0, r.jsx)("div", {
-    className: a()(u.divider, {
+    className: o()(u.divider, {
       [u.dividerExtended]: t,
       [u.negativeMarginTop]: n,
       [u.negativeMarginBottom]: i
@@ -120,7 +120,7 @@ function m(e) {
     className: i
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(u.totalRow, i),
+    className: o()(u.totalRow, i),
     children: [(0, r.jsx)("div", {
       className: u.totalLabel,
       children: t
@@ -137,7 +137,7 @@ function g(e) {
     className: n
   } = e;
   return (0, r.jsx)("div", {
-    className: a()(u.finePrint, n),
+    className: o()(u.finePrint, n),
     children: t
   })
 }

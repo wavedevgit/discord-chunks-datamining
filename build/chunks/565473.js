@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  y: () => a
+  y: () => o
 });
 var r = n(927923),
   i = n(981631);
 
-function a(e) {
+function o(e) {
   switch (e) {
     case i.ABu.XBOX:
       return r.YE.XBOX;

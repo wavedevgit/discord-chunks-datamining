@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  k: () => a,
+  k: () => o,
   v: () => i
 });
 let r = (0, n(818083).B)({
@@ -48,7 +48,7 @@ function i(e) {
   })
 }
 
-function a(e) {
+function o(e) {
   let {
     autoTrackExposure: t,
     location: n

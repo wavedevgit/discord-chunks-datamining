@@ -1,15 +1,15 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Jw: () => o,
+  Jw: () => a,
   bC: () => l
 });
 var r = n(442837),
   i = n(808506),
-  a = n(358085);
+  o = n(358085);
 
-function o() {
-  return a.isPlatformEmbedded
+function a() {
+  return o.isPlatformEmbedded
 }
 
 function s(e) {

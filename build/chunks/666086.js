@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(392711),
   i = n(106351),
-  a = n(904245),
-  o = n(147913),
+  o = n(904245),
+  a = n(147913),
   s = n(367907),
   l = n(447003),
   c = n(592125),
@@ -46,7 +46,7 @@ function I(e) {
 }
 let S = 50,
   T = 1e3;
-class A extends o.Z {
+class A extends a.Z {
   isChannelEligible(e, t) {
     switch (e.type) {
       case i.d.DM:
@@ -63,7 +63,7 @@ class A extends o.Z {
   maybeSendGiftingPromptSystemMessageDebounced(e, t, n, i) {
     (0, r.debounce)(() => {
       let r = p.Z.getChannelId();
-      !b.Z.isGiftIntentMessageInCooldown(n) && e === r && _.Z.isReady(e) && (a.Z.sendGiftingPromptSystemMessage(e, {
+      !b.Z.isGiftIntentMessageInCooldown(n) && e === r && _.Z.isReady(e) && (o.Z.sendGiftingPromptSystemMessage(e, {
         giftIntentType: t,
         recipientUserId: n,
         giftIntentSecondaryAction: i
@@ -86,13 +86,13 @@ class A extends o.Z {
     }), i = c.Z.getChannel(t);
     if ((n || r) && null != i && this.isChannelEligible(i, e)) {
       let t = new Set(null != e ? d.ZP.getMemberIds(e) : i.recipients),
-        a = b.Z.getFriendAnniversaries().filter(e => t.has(e));
-      if (r && a.length > 0) {
-        let e = a[0];
-        this.maybeSendGiftingPromptSystemMessageDebounced(i.id, y.hX.FRIEND_ANNIVERSARY, e, a.length > 1 ? y.X2.VIEW_ALL : y.X2.SEND_MESSAGE)
+        o = b.Z.getFriendAnniversaries().filter(e => t.has(e));
+      if (r && o.length > 0) {
+        let e = o[0];
+        this.maybeSendGiftingPromptSystemMessageDebounced(i.id, y.hX.FRIEND_ANNIVERSARY, e, o.length > 1 ? y.X2.VIEW_ALL : y.X2.SEND_MESSAGE)
       }
       n && h.default.track(O.rMx.FRIEND_ANNIVERSARIES_CHANNEL_VIEWED, I({
-        friend_anniversaries_count: a.length
+        friend_anniversaries_count: o.length
       }, (0, s.v_)(i)))
     }
   }

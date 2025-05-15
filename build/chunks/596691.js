@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  K: () => a
+  K: () => o
 });
 var r = n(818083),
   i = n(987338);
-let a = (0, r.B)({
+let o = (0, r.B)({
   kind: "user",
   id: "2024-08_mobile_perguild_collectibles_edit",
   label: "Mobile Per-guild Collectibles Edit",

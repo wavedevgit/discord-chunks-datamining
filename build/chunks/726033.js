@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(788111),
-  a = n(601665),
-  o = n(103113),
+  o = n(601665),
+  a = n(103113),
   s = n(862077),
   l = n(738953);
 
@@ -56,5 +56,5 @@ function _(e) {
   } = e, [n, c] = (0, i.Z)(t.id);
   return n ? (0, r.jsx)(s.Z, f(u({}, e), {
     onHide: c
-  })) : t.isNonUserBot() ? (0, r.jsx)(o.Z, u({}, e)) : t.bot ? (0, r.jsx)(a.Z, u({}, e)) : (0, r.jsx)(l.Z, u({}, e))
+  })) : t.isNonUserBot() ? (0, r.jsx)(a.Z, u({}, e)) : t.bot ? (0, r.jsx)(o.Z, u({}, e)) : (0, r.jsx)(l.Z, u({}, e))
 }

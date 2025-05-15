@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(570140),
   i = n(147913),
-  a = n(70956),
-  o = n(2818),
+  o = n(70956),
+  a = n(2818),
   s = n(768943);
 
 function l(e, t, n) {
@@ -22,7 +22,7 @@ let c = null;
 function u(e) {
   let {
     enabled: t
-  } = o.Z.getCurrentConfig({
+  } = a.Z.getCurrentConfig({
     location: "MessageRemindersNotificationManager"
   }, {
     autoTrackExposure: !1
@@ -37,7 +37,7 @@ function d() {
   var e;
   let {
     enabled: t
-  } = o.Z.getCurrentConfig({
+  } = a.Z.getCurrentConfig({
     location: "MessageRemindersNotificationManager"
   }, {
     autoTrackExposure: !1
@@ -49,7 +49,7 @@ function d() {
     c = null;
     return
   }
-  let r = Date.now() + a.Z.Millis.WEEK;
+  let r = Date.now() + o.Z.Millis.WEEK;
   n.saveData.dueAt.getTime() > r || (c = setTimeout(() => u(n), n.saveData.dueAt.getTime() - Date.now()))
 }
 class f extends i.Z {

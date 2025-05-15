@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(314897),
   i = n(592125),
-  a = n(19780),
-  o = n(626135),
+  o = n(19780),
+  a = n(626135),
   s = n(354459),
   l = n(981631);
 
@@ -16,13 +16,13 @@ function c(e, t) {
     {
       targetUserId: r,
       tileType: i,
-      entrypoint: a
+      entrypoint: o
     } = n;
   return n => u({
     menuItemProps: n,
     menuName: e,
     location: t,
-    entrypoint: null != a ? a : s.A5.CONTEXT_MENU,
+    entrypoint: null != o ? o : s.A5.CONTEXT_MENU,
     targetUserId: r,
     tileType: i
   })
@@ -39,8 +39,8 @@ function u(e) {
     entrypoint: u,
     targetUserId: d,
     tileType: f
-  } = e, _ = a.Z.getChannelId(), p = a.Z.getGuildId(), h = null == (t = i.Z.getChannel(_)) ? void 0 : t.type, m = r.default.getId();
-  o.default.track(l.rMx.CALL_MENU_ITEM_INTERACTED, {
+  } = e, _ = o.Z.getChannelId(), p = o.Z.getGuildId(), h = null == (t = i.Z.getChannel(_)) ? void 0 : t.type, m = r.default.getId();
+  a.default.track(l.rMx.CALL_MENU_ITEM_INTERACTED, {
     location: c,
     menu_name: s,
     menu_item_type: n,

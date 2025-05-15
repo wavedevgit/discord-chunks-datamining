@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   s = n(549879),
   l = n(300284),
   c = n(314897),
@@ -45,7 +45,7 @@ function g(e) {
     fullWidth: h,
     appContext: g,
     onClose: E
-  } = e, b = (0, a.e7)([c.default], () => c.default.getId() === t.id), y = (0, a.e7)([u.Z], () => null != n ? u.Z.getGuild(n) : null), O = (0, l.Z)({
+  } = e, b = (0, o.e7)([c.default], () => c.default.getId() === t.id), y = (0, o.e7)([u.Z], () => null != n ? u.Z.getGuild(n) : null), O = (0, l.Z)({
     guild: y
   }), v = (0, l.Z)({}), {
     trackUserProfileAction: I
@@ -53,19 +53,19 @@ function g(e) {
   return b ? null == y ? (0, r.jsx)(f.tG, {
     action: "EDIT_PROFILE",
     text: _.intl.string(_.t.s5vZlZ),
-    icon: o.vdY,
+    icon: a.vdY,
     autoFocus: !0,
     fullWidth: h,
     onClick: () => {
       null == E || E(), v(), (0, s.i)(g)
     }
-  }) : (0, r.jsx)(o.yRy, {
+  }) : (0, r.jsx)(a.yRy, {
     targetElementRef: S,
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsxs)(o.v2r, {
+      return (0, r.jsxs)(a.v2r, {
         className: p.popoutMenu,
         onSelect: void 0,
         navId: "edit-profile-popout",
@@ -73,7 +73,7 @@ function g(e) {
           t(), null == E || E()
         },
         "aria-label": _.intl.string(_.t.AXIHpa),
-        children: [(0, r.jsx)(o.sNh, {
+        children: [(0, r.jsx)(a.sNh, {
           id: "edit-server-profile",
           label: _.intl.string(_.t["PKQB/P"]),
           subtext: _.intl.string(_.t.VYHWKC),
@@ -82,7 +82,7 @@ function g(e) {
               action: "EDIT_GUILD_PROFILE"
             }), O(), (0, s.i)(g)
           }
-        }), (0, r.jsx)(o.sNh, {
+        }), (0, r.jsx)(a.sNh, {
           id: "edit-main-profile",
           label: _.intl.string(_.t.HmFaFB),
           subtext: _.intl.string(_.t["+EERMj"]),
@@ -97,7 +97,7 @@ function g(e) {
     children: e => (0, r.jsx)(f.tG, m({
       ref: S,
       text: _.intl.string(_.t.s5vZlZ),
-      icon: o.vdY,
+      icon: a.vdY,
       autoFocus: !0,
       fullWidth: h
     }, e))

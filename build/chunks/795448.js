@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   Gk: () => s,
-  Ni: () => o,
-  PV: () => a,
+  Ni: () => a,
+  PV: () => o,
   d$: () => i
 });
 var r = n(570140);
@@ -14,14 +14,14 @@ function i() {
   })
 }
 
-function a(e) {
+function o(e) {
   r.Z.dispatch({
     type: "MESSAGE_GIFT_INTENT_SHOWN",
     recipientUserId: e
   })
 }
 
-function o(e) {
+function a(e) {
   r.Z.dispatch({
     type: "GIFT_INTENT_FLOW_PURCHASED_GIFT",
     recipientUserId: e

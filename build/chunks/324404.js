@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 }), n(388685);
 var r = n(374470);
 
@@ -13,12 +13,12 @@ function i(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let a = {
+let o = {
   root: null,
   rootMargin: "0px",
   threshold: .5
 };
-class o {
+class a {
   isVisible(e) {
     return null == this._observer || this._visibleComponents.has(e)
   }
@@ -35,7 +35,7 @@ class o {
     let n = this._components.get(e);
     null != n && (this._nodes.delete(n), this._components.delete(e), this._visibleComponents.delete(e), t.unobserve(n))
   }
-  constructor(e = a) {
+  constructor(e = o) {
     i(this, "_observer", void 0), i(this, "_options", void 0), i(this, "_nodes", new WeakMap), i(this, "_components", new WeakMap), i(this, "_visibleComponents", new WeakSet), i(this, "_handleEntries", e => {
       e.forEach(e => {
         let t;
