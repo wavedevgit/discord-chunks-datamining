@@ -6,8 +6,8 @@ n.d(t, {
 }), n(388685), n(704826), n(35282);
 var r = n(336317),
   i = n(768581),
-  a = n(302221),
-  o = n(956664),
+  o = n(302221),
+  a = n(956664),
   s = n(753090);
 let l = new Set(["™", "™️", "\xa9", "\xa9️", "\xae", "\xae️"]);
 
@@ -42,10 +42,10 @@ async function f(e) {
     size: 32,
     animated: !1
   }) : c(r);
-  let s = await (0, o.OF)(t);
+  let s = await (0, a.OF)(t);
   return null == s ? void 0 : s.map(e => {
     let [t, n, r] = e;
-    return (0, a.vq)(t, n, r)
+    return (0, o.vq)(t, n, r)
   })
 }
 

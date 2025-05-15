@@ -1,18 +1,18 @@
 /** Chunk was on web.js **/
 "use strict";
 n.r(t), n.d(t, {
-  announce: () => a,
-  clearAnnouncer: () => o,
+  announce: () => o,
+  clearAnnouncer: () => a,
   destroyAnnouncer: () => s
 });
 let r = 7e3,
   i = null;
 
-function a(e, t = "assertive", n = r) {
+function o(e, t = "assertive", n = r) {
   i || (i = new l), i.announce(e, t, n)
 }
 
-function o(e) {
+function a(e) {
   i && i.clear(e)
 }
 

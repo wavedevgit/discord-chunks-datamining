@@ -5,8 +5,8 @@ n.d(t, {
 }), n(415506), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(722770),
   l = n(481060),
   c = n(591146),
@@ -55,8 +55,8 @@ function h(e, t) {
   if (null == e) return {};
   var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -64,8 +64,8 @@ function h(e, t) {
 function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let g = 16,
@@ -105,17 +105,17 @@ function O(e) {
       height: g
     },
     highlight: i = !1,
-    rounded: a = !1
-  } = e, o = h(e, ["selected", "lowerBadgeSize", "highlight", "rounded"]);
-  let s = !!o.isFolder,
+    rounded: o = !1
+  } = e, a = h(e, ["selected", "lowerBadgeSize", "highlight", "rounded"]);
+  let s = !!a.isFolder,
     u = (0, c.Ml)("BlobMask"),
     d = (0, l.dQu)(l.TVs.modules.guildbar.AVATAR_SIZE),
     _ = (0, l.dQu)(l.TVs.modules.guildbar.FOLDER_SIZE),
     m = !u && s ? _ : d,
     E = m / 2;
-  return (0, r.jsx)(v, p(f({}, o), {
+  return (0, r.jsx)(v, p(f({}, a), {
     selected: t,
-    rounded: a,
+    rounded: o,
     baseViewBoxSize: m,
     viewBoxSize: m,
     style: {
@@ -133,7 +133,7 @@ function v(e) {
   let {
     children: t,
     viewBoxSize: n,
-    className: a,
+    className: o,
     style: l,
     innerClassName: c,
     isFolder: d,
@@ -155,7 +155,7 @@ function v(e) {
     y: d ? 0 : -4
   }, U = d ? 20 : h, G = v ? y(n) : b(n);
   return (0, r.jsxs)("div", {
-    className: o()(a, u.wrapper),
+    className: a()(o, u.wrapper),
     style: l,
     onFocus: T,
     onBlur: A,
@@ -163,7 +163,7 @@ function v(e) {
       width: j.width,
       height: j.height,
       viewBox: "".concat(j.x, " ").concat(j.y, " ").concat(j.width, " ").concat(j.height),
-      className: o()(u.svg, {
+      className: a()(u.svg, {
         [u.noContain]: _,
         [u.shiftSVG]: !d
       }),
@@ -208,7 +208,7 @@ function v(e) {
         }), (0, r.jsx)("use", {
           href: "#".concat(D),
           fill: "white",
-          className: o()({
+          className: a()({
             [u.isHighlighted]: _
           })
         }), N ? (0, r.jsx)("use", {

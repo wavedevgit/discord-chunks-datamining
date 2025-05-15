@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(373793),
   i = n(367907),
-  a = n(69580),
-  o = n(973616),
+  o = n(69580),
+  a = n(973616),
   s = n(728345),
   l = n(812206),
   c = n(433534),
@@ -29,7 +29,7 @@ async function d(e) {
   let m = l.Z.getApplication(f);
   if (null == m) {
     let e = await (0, s.UM)(f);
-    m = o.ZP.createFromServer(e)
+    m = a.ZP.createFromServer(e)
   }
   let g = r.Y.USER_INSTALL,
     E = null == m || null == (d = m.integrationTypesConfig) || null == (n = d[g]) || null == (t = n.oauth2InstallParams) ? void 0 : t.scopes;
@@ -39,7 +39,7 @@ async function d(e) {
     section_name: h.sectionName,
     source: h.entrypoint
   }), new Promise(e => {
-    (0, a.openOAuth2Modal)({
+    (0, o.openOAuth2Modal)({
       clientId: f,
       integrationType: g,
       scopes: E,

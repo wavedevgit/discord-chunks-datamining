@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => M
 }), n(539854), n(388685);
 var r, i = n(442837),
-  a = n(570140),
-  o = n(740504),
+  o = n(570140),
+  a = n(740504),
   s = n(853856),
   l = n(314897),
   c = n(592125),
@@ -58,7 +58,7 @@ function y(e) {
       channel: t,
       index: -1
     }), n[t.id] = []
-  }), t[u.sH].forEach(r), t[u.Zb].forEach(r), (0, o.Z)(n._categories, n).forEach(b), h[e] = n, n
+  }), t[u.sH].forEach(r), t[u.Zb].forEach(r), (0, a.Z)(n._categories, n).forEach(b), h[e] = n, n
 }
 
 function O() {
@@ -176,7 +176,7 @@ class k extends(r = i.ZP.Store) {
   }
 }
 _(k, "displayName", "GuildCategoryStore");
-let M = new k(a.Z, {
+let M = new k(o.Z, {
   CHANNEL_SELECT: D,
   CONNECTION_OPEN: O,
   OVERLAY_INITIALIZE: O,

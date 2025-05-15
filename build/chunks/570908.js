@@ -5,14 +5,14 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(462991);
 let l = i.forwardRef((e, t) => {
   let {
     muted: n = !1,
     highlighted: i = !1,
-    avatar: a,
+    avatar: o,
     decorators: l,
     name: c,
     subText: u,
@@ -21,13 +21,13 @@ let l = i.forwardRef((e, t) => {
   } = e;
   return (0, r.jsxs)("div", {
     ref: t,
-    className: o()(f, s.layout, {
+    className: a()(f, s.layout, {
       [s.muted]: n,
       [s.highlighted]: i
     }),
     children: [(0, r.jsx)("div", {
-      className: o()(s.avatar, d),
-      children: a
+      className: a()(s.avatar, d),
+      children: o
     }), (0, r.jsxs)("div", {
       className: s.content,
       children: [(0, r.jsxs)("div", {

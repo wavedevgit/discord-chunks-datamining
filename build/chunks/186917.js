@@ -1,19 +1,19 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(493773),
   i = n(580747),
-  a = n(607789);
-let o = (e, t) => {
+  o = n(607789);
+let a = (e, t) => {
   let n = (0, i.Z)("profile_effect_debug_controls"),
     {
-      id: o,
+      id: a,
       preset: s,
       increment: l,
       decrement: c
-    } = (0, a.Z)(e);
+    } = (0, o.Z)(e);
   return (0, r.ZP)(() => {
     if (!n) return;
     let e = e => {
@@ -23,7 +23,7 @@ let o = (e, t) => {
       window.removeEventListener("keydown", e)
     }
   }), {
-    id: null != o ? o : null,
+    id: null != a ? a : null,
     preset: s
   }
 }

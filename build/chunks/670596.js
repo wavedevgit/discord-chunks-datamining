@@ -2,12 +2,12 @@
 "use strict";
 n.d(t, {
   U: () => i,
-  p: () => a
+  p: () => o
 });
 var r = n(73800),
   i = function(e) {
     return e.DEFAULT = "default", e.CHECKBOX = "checkbox", e.RADIO = "radio", e.SLIDER = "slider", e.SEARCH = "search", e.IMAGE_UPLOAD = "image upload", e
   }({});
-let a = r.createContext({
+let o = r.createContext({
   onSelect: void 0
 })

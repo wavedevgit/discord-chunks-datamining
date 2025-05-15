@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => f
 });
 var r, i = n(442837),
-  a = n(570140);
+  o = n(570140);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,7 +22,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -47,7 +47,7 @@ class d extends(r = i.ZP.PersistedStore) {
     return c
   }
 }
-o(d, "displayName", "ActivityShelfStore"), o(d, "persistKey", "ActivityShelfStore");
-let f = new d(a.Z, {
+a(d, "displayName", "ActivityShelfStore"), a(d, "persistKey", "ActivityShelfStore");
+let f = new d(o.Z, {
   LOGOUT: u
 })

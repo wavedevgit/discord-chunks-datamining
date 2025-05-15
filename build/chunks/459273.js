@@ -8,8 +8,8 @@ n.d(t, {
 }), n(388685), n(415506);
 var r = n(255367),
   i = n(73800),
-  a = n(836560),
-  o = n(211266),
+  o = n(836560),
+  a = n(211266),
   s = n(585483);
 
 function l(e, t, n) {
@@ -32,7 +32,7 @@ class c {
       for (let t of this.emitter.listeners(e)) s.S.resubscribe(e, t)
   }
   constructor() {
-    l(this, "emitter", new a.EventEmitter)
+    l(this, "emitter", new o.EventEmitter)
   }
 }
 class u {
@@ -48,9 +48,9 @@ let d = i.createContext(new u),
   f = i.forwardRef(function(e, t) {
     let {
       children: n
-    } = e, a = (0, o.Z)(() => new c);
-    return i.useImperativeHandle(t, () => a, [a]), (0, r.jsx)(d.Provider, {
-      value: a,
+    } = e, o = (0, a.Z)(() => new c);
+    return i.useImperativeHandle(t, () => o, [o]), (0, r.jsx)(d.Provider, {
+      value: o,
       children: n
     })
   });
@@ -59,21 +59,21 @@ function _(e) {
   let {
     event: t,
     handler: n
-  } = e, r = i.useContext(d), a = i.useRef(n);
+  } = e, r = i.useContext(d), o = i.useRef(n);
   i.useEffect(() => {
-    a.current = n
+    o.current = n
   }, [n]);
-  let o = null == n;
+  let a = null == n;
   return i.useEffect(() => {
-    if (o) return;
+    if (a) return;
     let e = function() {
       for (var e, t = arguments.length, n = Array(t), r = 0; r < t; r++) n[r] = arguments[r];
-      null == (e = a.current) || e.call(a, ...n)
+      null == (e = o.current) || e.call(o, ...n)
     };
     return r.subscribe(t, e), () => {
       r.unsubscribe(t, e)
     }
-  }, [r, t, o]), null
+  }, [r, t, a]), null
 }
 
 function p(e) {

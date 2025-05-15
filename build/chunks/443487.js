@@ -10,8 +10,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(481060),
   l = n(686546),
   c = n(884902),
@@ -36,7 +36,7 @@ function E(e) {
     selected: n
   } = e;
   return (0, r.jsx)("div", {
-    className: a()(m.container, m.openOnHover, {
+    className: o()(m.container, m.openOnHover, {
       [m.selected]: n
     }),
     children: t
@@ -61,22 +61,22 @@ function y(e) {
   } = e;
   return (0, r.jsx)("div", {
     className: m.facePile,
-    children: t.map((e, a) => {
-      let o = (0, r.jsx)(s.qEK, {
+    children: t.map((e, o) => {
+      let a = (0, r.jsx)(s.qEK, {
         src: e.getAvatarURL(n, 80),
         size: s.EFr.SIZE_16,
         "aria-label": i ? void 0 : e.username,
         "aria-hidden": i
       });
-      return a === t.length - 1 ? (0, r.jsx)("div", {
+      return o === t.length - 1 ? (0, r.jsx)("div", {
         className: m.facePileItem,
-        children: o
+        children: a
       }, e.id) : (0, r.jsx)(l.ZP, {
         width: 16,
         height: 16,
         className: m.facePileItem,
         mask: l.ZP.Masks.CONTENT_INVENTORY_CARD_FACE_PILE_AVATAR,
-        children: o
+        children: a
       }, e.id)
     })
   })
@@ -87,13 +87,13 @@ function O(e) {
     guildId: t,
     channelId: n,
     entry: i,
-    maxAvatars: a = 3
-  } = e, l = i.author_id, g = (0, o.e7)([f.default], () => f.default.getUser(l)), {
+    maxAvatars: o = 3
+  } = e, l = i.author_id, g = (0, a.e7)([f.default], () => f.default.getUser(l)), {
     displayParticipants: E,
     participant1: b,
     participant2: O,
     numOtherParticipants: v
-  } = (0, p.Z)(i, a), I = (0, o.e7)([u.ZP], () => u.ZP.getMember(t, l)), S = (0, o.e7)([d.Z], () => {
+  } = (0, p.Z)(i, o), I = (0, a.e7)([u.ZP], () => u.ZP.getMember(t, l)), S = (0, a.e7)([d.Z], () => {
     var e;
     return (null == I ? void 0 : I.colorRoleId) != null ? null == (e = d.Z.getRole(t, I.colorRoleId)) ? void 0 : e.name : void 0
   }, [t, I]), T = (0, c.X)(t, null == I ? void 0 : I.colorStrings);

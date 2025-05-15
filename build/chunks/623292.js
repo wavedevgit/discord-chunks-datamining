@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  A6: () => o,
+  A6: () => a,
   fE: () => i,
-  qx: () => a
+  qx: () => o
 });
 var r = n(570140);
 
@@ -12,20 +12,20 @@ function i(e) {
     message: t,
     channel: n,
     shouldMention: i,
-    showMentionToggle: a,
-    source: o
+    showMentionToggle: o,
+    source: a
   } = e;
   r.Z.dispatch({
     type: "CREATE_PENDING_REPLY",
     message: t,
     channel: n,
     shouldMention: i,
-    showMentionToggle: a,
-    source: o
+    showMentionToggle: o,
+    source: a
   })
 }
 
-function a(e, t) {
+function o(e, t) {
   r.Z.dispatch({
     type: "SET_PENDING_REPLY_SHOULD_MENTION",
     channelId: e,
@@ -33,7 +33,7 @@ function a(e, t) {
   })
 }
 
-function o(e) {
+function a(e) {
   r.Z.dispatch({
     type: "DELETE_PENDING_REPLY",
     channelId: e

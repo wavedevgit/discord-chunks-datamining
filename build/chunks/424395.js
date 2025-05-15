@@ -1,17 +1,17 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Vb: () => o,
+  Vb: () => a,
   YI: () => s,
   j1: () => l,
-  u5: () => a
+  u5: () => o
 }), n(642613), n(35282);
 var r = n(73800),
   i = n(66685);
 
-function a() {
+function o() {
   let e = n(274304).Z;
-  return o().filter(e => {
+  return a().filter(e => {
     let {
       enabled: t
     } = e;
@@ -36,13 +36,13 @@ function a() {
   })
 }
 
-function o() {
+function a() {
   return n(515297)
 }
 
 function s(e, t) {
   var n, r;
-  let i = o().filter(e => {
+  let i = a().filter(e => {
     let {
       enabled: t
     } = e;
@@ -54,8 +54,8 @@ function s(e, t) {
     return t
   });
   if (i.includes(e)) return e;
-  let a = e.split("-");
-  return i.includes(a[0]) ? a[0] : "zh" === a[0] && a.length > 1 && "Hant" === a[1] ? null != (n = i.find(e => "zh-TW" === e)) ? n : t : null != (r = i.find(e => e.split("-")[0] === a[0])) ? r : t
+  let o = e.split("-");
+  return i.includes(o[0]) ? o[0] : "zh" === o[0] && o.length > 1 && "Hant" === o[1] ? null != (n = i.find(e => "zh-TW" === e)) ? n : t : null != (r = i.find(e => e.split("-")[0] === o[0])) ? r : t
 }
 
 function l(e, t) {

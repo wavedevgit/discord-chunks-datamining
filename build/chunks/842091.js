@@ -5,9 +5,9 @@ n.d(t, {
 });
 var r = n(159635),
   i = n.n(r),
-  a = n(840498);
+  o = n(840498);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,17 +23,17 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
 }
 
 function l(e, t, n, r, i) {
-  let o;
-  return n || (t += "\n\n"), o = e(t, s({
+  let a;
+  return n || (t += "\n\n"), a = e(t, s({
     inline: n
-  }, r)), o = (0, a.ge)(r, o), o = (0, a.RA)(o), null != i && (o = i(o, n)), o
+  }, r)), a = (0, o.ge)(r, a), a = (0, o.RA)(a), null != i && (a = i(a, n)), a
 }
 let c = {
   reactParserFor(e) {
@@ -43,8 +43,8 @@ let c = {
       let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
         r = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
         i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
-        a = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null;
-      return n(l(t, e, r, i, a), i)
+        o = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null;
+      return n(l(t, e, r, i, o), i)
     }
   },
   astParserFor(e) {

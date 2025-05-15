@@ -2,8 +2,8 @@
 "use strict";
 var r = n(98405),
   i = n(154028),
-  a = n(636881),
-  o = n(580983),
+  o = n(636881),
+  a = n(580983),
   s = n(46015),
   l = n(621523),
   c = n(880181),
@@ -34,8 +34,8 @@ var r = n(98405),
     var n = d(arguments),
       r = f(t);
     if (!(!c(r) && (void 0 === e || u(e)))) return n[1] = function(e, t) {
-      if (c(r) && (t = o(r, this, p(e), t)), !u(t)) return t
-    }, a(h, null, n)
+      if (c(r) && (t = a(r, this, p(e), t)), !u(t)) return t
+    }, o(h, null, n)
   },
   N = function(e, t, n) {
     var r = g(n, t - 1),
@@ -50,7 +50,7 @@ h && r({
 }, {
   stringify: function(e, t, n) {
     var r = d(arguments),
-      i = a(S ? A : h, null, r);
+      i = o(S ? A : h, null, r);
     return T && "string" == typeof i ? b(i, O, N) : i
   }
 })

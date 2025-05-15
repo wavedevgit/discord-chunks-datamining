@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(35282), n(415506);
 var r = n(664751),
   i = n(990547),
-  a = n(243814),
-  o = n(544891),
+  o = n(243814),
+  a = n(544891),
   s = n(283693),
   l = n(570140),
   c = n(638880),
@@ -38,16 +38,16 @@ function w(e) {
     secret: n,
     channelId: r,
     intent: i = N.Ws.PLAY,
-    embedded: a = !1,
-    source: o,
+    embedded: o = !1,
+    source: a,
     locationObject: s,
     analyticsLocations: c
   } = e;
   x({
     applicationId: t,
     channelId: r,
-    embedded: a,
-    source: o,
+    embedded: o,
+    source: a,
     locationObject: s,
     analyticsLocations: c
   }).then(e => 0 === e ? null : y.Z.waitConnected(t).then(() => Promise.race([y.Z.waitSubscribed(t, A.zMe.ACTIVITY_JOIN)]))).then(() => {
@@ -56,7 +56,7 @@ function w(e) {
       applicationId: t,
       secret: n,
       intent: i,
-      embedded: a
+      embedded: o
     })
   }).catch(() => l.Z.dispatch({
     type: "ACTIVITY_JOIN_FAILED",
@@ -72,12 +72,12 @@ function D(e, t) {
 }
 
 function L(e) {
-  return o.tn.post({
+  return a.tn.post({
     url: A.ANM.OAUTH2_AUTHORIZE,
     query: {
       client_id: e,
       response_type: "token",
-      scope: [a.x.IDENTIFY].join(" ")
+      scope: [o.x.IDENTIFY].join(" ")
     },
     retries: 3,
     body: {
@@ -105,15 +105,15 @@ async function x(e) {
     branchId: n,
     channelId: r,
     embedded: i = !1,
-    source: a,
-    locationObject: o = {},
+    source: o,
+    locationObject: a = {},
     analyticsLocations: s = []
   } = e;
   if (i) return await (0, c.Z)({
     applicationId: t,
     activityChannelId: null != r ? r : void 0,
-    source: a,
-    locationObject: o,
+    source: o,
+    locationObject: a,
     analyticsLocations: s
   }) ? 0 : Promise.resolve();
   if (p.Z.isConnected(t)) return Promise.resolve();
@@ -176,8 +176,8 @@ let k = {
         let r = e.getFlags(),
           i = b.yE(r, A.eHb.OVERLAY_DISABLED);
         t && i !== t && (r = b.x9(r, A.eHb.OVERLAY_DISABLED));
-        let a = b.yE(r, A.eHb.OVERLAY_V3_DISABLED);
-        null != n && n !== a && (r = b.x9(r, A.eHb.OVERLAY_V3_DISABLED)), S.h(e.id, e.branchId, r);
+        let o = b.yE(r, A.eHb.OVERLAY_V3_DISABLED);
+        null != n && n !== o && (r = b.x9(r, A.eHb.OVERLAY_V3_DISABLED)), S.h(e.id, e.branchId, r);
         return
       }
     }
@@ -222,7 +222,7 @@ let k = {
     });
     let r = async e => {
       try {
-        let t = await o.tn.get({
+        let t = await a.tn.get({
           url: A.ANM.APPLICATIONS_GAMES_SUPPLEMENTAL,
           query: {
             application_ids: e
@@ -299,16 +299,16 @@ let k = {
       iconHash: n,
       publisher: r,
       distributor: i,
-      sku: a,
+      sku: o,
       executableName: s
     } = e, c = (0, d.F)(s);
-    null != c && o.tn.post({
+    null != c && a.tn.post({
       url: A.ANM.UNVERIFIED_APPLICATIONS,
       body: {
         name: t,
         os: (0, O.getPlatformName)(),
         icon: n,
-        distributor_application: D(i, a),
+        distributor_application: D(i, o),
         executable: c,
         publisher: r,
         report_version: P
@@ -333,7 +333,7 @@ let k = {
     })
   },
   uploadIcon(e, t, n) {
-    o.tn.post({
+    a.tn.post({
       url: A.ANM.UNVERIFIED_APPLICATIONS_ICONS,
       body: {
         application_name: e,
@@ -358,8 +358,8 @@ let k = {
       sessionId: n,
       applicationId: r,
       channelId: i,
-      messageId: a,
-      intent: o = N.Ws.PLAY,
+      messageId: o,
+      intent: a = N.Ws.PLAY,
       embedded: s = !1,
       source: c,
       locationObject: u,
@@ -371,19 +371,19 @@ let k = {
       sessionId: n,
       applicationId: r,
       channelId: i,
-      messageId: a
+      messageId: o
     }), Promise.resolve(!0);
     l.Z.dispatch({
       type: "ACTIVITY_JOIN_LOADING",
       applicationId: r
     });
     try {
-      let e = await I.Z.getJoinSecret(t, n, r, i, a);
+      let e = await I.Z.getJoinSecret(t, n, r, i, o);
       return w({
         applicationId: r,
         secret: e,
         channelId: i,
-        intent: o,
+        intent: a,
         embedded: s,
         source: c,
         locationObject: u,

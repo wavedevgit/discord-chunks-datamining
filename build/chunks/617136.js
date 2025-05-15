@@ -14,8 +14,8 @@ n.d(t, {
 }), n(388685);
 var r = n(73800),
   i = n(930446),
-  a = n(367907),
-  o = n(857192),
+  o = n(367907),
+  a = n(857192),
   s = n(819640),
   l = n(626135),
   c = n(915750),
@@ -110,9 +110,9 @@ function N(e) {
       location: h.dr.QUEST_PREVIEW_TOOL
     }) && s.Z.getLayers().includes(m.S9g.USER_SETTINGS)) return;
   let f = E({}, T(d, c), r);
-  if (o.default.isLoggingAnalyticsEvents && console.info("[Quest] AnalyticsUtils.track", n, f), d.preview) return;
+  if (a.default.isLoggingAnalyticsEvents && console.info("[Quest] AnalyticsUtils.track", n, f), d.preview) return;
   let p = v.has(n);
-  if (i) return a.ZP.trackWithMetadata(n, f, p);
+  if (i) return o.ZP.trackWithMetadata(n, f, p);
   l.default.track(n, f, {
     flush: p
   })
@@ -127,16 +127,16 @@ function P(e) {
     questContent: n,
     questContentCTA: r,
     questContentPosition: i,
-    questContentRowIndex: a,
-    impressionId: o,
+    questContentRowIndex: o,
+    impressionId: a,
     trackGuildAndChannelMetadata: s = !1
   } = e, l = (0, f.qe)(n);
   N({
     questId: t,
     event: m.rMx.QUEST_CONTENT_CLICKED,
-    properties: y(E({}, l, A(n, i, a)), {
+    properties: y(E({}, l, A(n, i, o)), {
       cta_name: r,
-      impression_id: o,
+      impression_id: a,
       google_advertising_id: u.Z.googleAdvertisingId
     }),
     trackGuildAndChannelMetadata: s,
@@ -169,8 +169,8 @@ function w() {
       questId: n,
       event: r,
       properties: i,
-      trackGuildAndChannelMetadata: a = !1,
-      shouldExtendSession: o = !1
+      trackGuildAndChannelMetadata: o = !1,
+      shouldExtendSession: a = !1
     } = t;
     N({
       questId: n,
@@ -178,8 +178,8 @@ function w() {
       properties: y(E({}, i), {
         impression_id: null == e ? void 0 : e.getId()
       }),
-      trackGuildAndChannelMetadata: a,
-      shouldExtendSession: o
+      trackGuildAndChannelMetadata: o,
+      shouldExtendSession: a
     })
   }
   return r.useCallback(t, [e])
@@ -192,14 +192,14 @@ function D() {
       questId: n,
       questContent: r,
       questContentCTA: i,
-      questContentPosition: a,
-      questContentRowIndex: o,
+      questContentPosition: o,
+      questContentRowIndex: a,
       trackGuildAndChannelMetadata: s = !1
     } = t;
     e({
       questId: n,
       event: m.rMx.QUEST_CONTENT_CLICKED,
-      properties: y(E({}, (0, f.qe)(r), A(r, a, o)), {
+      properties: y(E({}, (0, f.qe)(r), A(r, o, a)), {
         cta_name: i,
         google_advertising_id: u.Z.googleAdvertisingId
       }),
@@ -216,7 +216,7 @@ function L(e, t) {
 }
 
 function x(e, t) {
-  a.ZP.trackWithMetadata(m.rMx.QUEST_EMBED_FALLBACK_VIEWED, {
+  o.ZP.trackWithMetadata(m.rMx.QUEST_EMBED_FALLBACK_VIEWED, {
     quest_id: e,
     reason: t
   })

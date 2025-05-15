@@ -6,7 +6,7 @@ n.d(t, {
 var r = n(626135),
   i = n(981631);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -14,7 +14,7 @@ function a(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let o = "mp4a.40.2",
+let a = "mp4a.40.2",
   s = "aac",
   l = 128e3,
   c = 25e5;
@@ -24,7 +24,7 @@ class u {
   }
   async checkCodecCapability(e, t, n, r, i) {
     try {
-      var a, c, u, d;
+      var o, c, u, d;
       let f = {
           type: "file",
           video: {
@@ -41,14 +41,14 @@ class u {
             bitrate: l
           }
         },
-        _ = await (null == (a = navigator.mediaCapabilities) ? void 0 : a.decodingInfo(f));
+        _ = await (null == (o = navigator.mediaCapabilities) ? void 0 : o.decodingInfo(f));
       return {
         videoCodec: e,
         videoProfile: t,
         resolution: n,
         framerate: r,
         videoBitrate: i,
-        audioCodec: o,
+        audioCodec: a,
         audioProfile: s,
         audioBitrate: l,
         capability: {
@@ -57,14 +57,14 @@ class u {
           powerEfficient: null != (d = null == _ ? void 0 : _.powerEfficient) && d
         }
       }
-    } catch (a) {
+    } catch (o) {
       return {
         videoCodec: e,
         videoProfile: t,
         resolution: n,
         framerate: r,
         videoBitrate: i,
-        audioCodec: o,
+        audioCodec: a,
         audioProfile: s,
         audioBitrate: l,
         capability: {
@@ -176,14 +176,14 @@ class u {
           height: 1080
         }, 30, 2 * c)],
         n = performance.now() - e,
-        a = {
+        o = {
           capabilities: t,
           timestamp: performance.now()
         };
       return r.default.track(i.rMx.MEDIA_VIDEO_CAPABILITIES_DETECTED, {
         detection_duration_ms: n,
         capabilities_json: JSON.stringify(t)
-      }), this.capabilities = a, this.isDetecting = !1, this.detectionPromise = null, this.hasAttemptedDetection = !0, a
+      }), this.capabilities = o, this.isDetecting = !1, this.detectionPromise = null, this.hasAttemptedDetection = !0, o
     })(), this.detectionPromise
   }
   async getCapabilities() {
@@ -199,8 +199,8 @@ class u {
     return null != (n = null == r ? void 0 : r.capability.supported) && n
   }
   constructor() {
-    a(this, "capabilities", null), a(this, "isDetecting", !1), a(this, "detectionPromise", null), a(this, "hasAttemptedDetection", !1)
+    o(this, "capabilities", null), o(this, "isDetecting", !1), o(this, "detectionPromise", null), o(this, "hasAttemptedDetection", !1)
   }
 }
-a(u, "instance", void 0);
+o(u, "instance", void 0);
 let d = u

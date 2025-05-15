@@ -5,9 +5,9 @@ n.d(t, {
 }), n(388685);
 var r = n(147913),
   i = n(313261),
-  a = n(38618);
+  o = n(38618);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,10 +24,10 @@ class s extends r.Z {
     }, {
       autoTrackExposure: !0
     });
-    a.Z.getSocket().dispatcher.toggleRequestIdleCallback(e)
+    o.Z.getSocket().dispatcher.toggleRequestIdleCallback(e)
   }
   constructor(...e) {
-    super(...e), o(this, "actions", {
+    super(...e), a(this, "actions", {
       EXPERIMENT_OVERRIDE_BUCKET: this.handleCheckExperiments,
       LOGIN_SUCCESS: this.handleCheckExperiments,
       EXPERIMENTS_FETCH_SUCCESS: this.handleCheckExperiments,

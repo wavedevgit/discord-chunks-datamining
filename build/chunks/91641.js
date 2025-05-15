@@ -23,21 +23,21 @@ function i(e) {
   return e
 }
 
-function a(e, t, n) {
+function o(e, t, n) {
   t.forEach(e => {
     e.trackExposure(n)
   })
 }
 n.d(t, {
-  E: () => o
+  E: () => a
 }), n(415506), n(388685), n(987338);
-class o {
+class a {
   registeredExperimentIds() {
     return this.experiments.map(e => e.definition.id)
   }
   trigger() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-    a(this.triggerPoint, this.experiments, i({}, this.params, e))
+    o(this.triggerPoint, this.experiments, i({}, this.params, e))
   }
   getExperiments() {
     return this.experiments
