@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(430824),
   _ = n(594174),
   b = n(739566),
-  E = n(761652),
-  x = n(388032),
+  x = n(761652),
+  E = n(388032),
   y = n(912861);
 
 function v(e) {
@@ -137,7 +137,7 @@ let I = i.memo(function(e) {
                 messageId: P,
                 sourceAnalyticsLocations: Z
               }),
-              children: [E.ME, e.nick]
+              children: [x.ME, e.nick]
             }))
           }
           break
@@ -146,7 +146,7 @@ let I = i.memo(function(e) {
           let e = I.value.toString(),
             t = h.Z.getChannel(e);
           null != t && (y = (0, r.jsxs)(m.Z, O(v({}, C), {
-            children: [E.zy, t.name]
+            children: [x.zy, t.name]
           })));
           break
         }
@@ -154,7 +154,7 @@ let I = i.memo(function(e) {
           let e = I.value.toString(),
             t = null != T ? g.Z.getRole(T.id, e) : void 0;
           null != t && (y = (0, r.jsxs)(m.Z, O(v({}, C), {
-            children: [E.ME, t.name]
+            children: [x.ME, t.name]
           })));
           break
         }
@@ -162,7 +162,7 @@ let I = i.memo(function(e) {
           let e = I.value.toString(),
             t = null != T ? g.Z.getRole(T.id, e) : void 0;
           if (null != t) y = (0, r.jsxs)(m.Z, {
-            children: [E.ME, t.name]
+            children: [x.ME, t.name]
           });
           else {
             let t = _.default.getUser(e);
@@ -174,14 +174,14 @@ let I = i.memo(function(e) {
                   guildId: N.guild_id,
                   sourceAnalyticsLocations: Z
                 }),
-                children: [E.ME, e.nick]
+                children: [x.ME, e.nick]
               }))
             }
           }
           break
         }
         case c.jw.ATTACHMENT:
-          y = S(x.intl.string(x.t.nONJVV));
+          y = S(E.intl.string(E.t.nONJVV));
           break;
         default: {
           let e = null == w || null == (u = w.choices) ? void 0 : u.find(e => e.value === I.value);

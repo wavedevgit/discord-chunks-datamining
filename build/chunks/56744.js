@@ -27,10 +27,10 @@ let m = i.memo(function(e) {
   } = (0, l.cj)([s.Z], () => ({
     isReplyAuthorBlocked: null != f && s.Z.isBlockedForMessage(f),
     isReplyAuthorIgnored: null != f && s.Z.isIgnoredForMessage(f)
-  }), [f]), E = (0, u.Uj)(f), x = (0, u.Uj)(t);
+  }), [f]), x = (0, u.Uj)(f), E = (0, u.Uj)(t);
   return (0, r.jsx)(d.Z, {
-    repliedAuthor: E,
-    baseAuthor: x,
+    repliedAuthor: x,
+    baseAuthor: E,
     baseMessage: t,
     channel: n,
     referencedMessage: p,

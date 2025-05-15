@@ -1,6 +1,7 @@
-/** Chunk was on 36087 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Oo: () => l
+  Oo: () => a
 });
 var r = n(818083);
 let i = (0, r.B)({
@@ -19,7 +20,7 @@ let i = (0, r.B)({
   }]
 });
 
-function l() {
+function a() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
     {
       enabled: t

@@ -307,106 +307,107 @@ function T(e) {
 }
 let A = i.memo(function(e) {
   let {
-    bannerVisible: t,
-    controller: n,
-    className: l,
-    onClick: s,
-    onContextMenu: c,
-    onMouseDown: f,
-    disableBannerAnimation: g,
-    "aria-expanded": b,
-    "aria-controls": y,
-    guild: v,
-    guildBanner: C,
-    animationOverlayHeight: I,
-    children: w,
-    headerClassName: N,
-    communityInfoVisible: A,
-    hasSubheader: D
-  } = e, L = v.hasFeature(O.oNc.ANIMATED_BANNER), k = (0, h.Z)(v), M = !k && v.hasCommunityInfoSubheader(), U = !k && A, G = (0, _.xR)(C) && L && !g, [B, V] = i.useState(!1), H = i.useRef(!1), F = i.useRef(null), W = i.useRef(void 0), z = m.QK.getSetting();
+    ref: t,
+    bannerVisible: n,
+    controller: l,
+    className: s,
+    onClick: c,
+    onContextMenu: f,
+    onMouseDown: g,
+    disableBannerAnimation: b,
+    "aria-expanded": y,
+    "aria-controls": v,
+    guild: C,
+    guildBanner: I,
+    animationOverlayHeight: w,
+    children: N,
+    headerClassName: A,
+    communityInfoVisible: D,
+    hasSubheader: L
+  } = e, k = C.hasFeature(O.oNc.ANIMATED_BANNER), M = (0, h.Z)(C), U = !M && C.hasCommunityInfoSubheader(), G = !M && D, B = (0, _.xR)(I) && k && !b, [V, H] = i.useState(!1), F = i.useRef(!1), W = i.useRef(null), z = null != t ? t : W, Y = i.useRef(void 0), K = m.QK.getSetting();
   i.useEffect(() => {
-    if (G && t && !H.current && z) return V(!0), W.current = setTimeout(() => {
-      V(!1)
+    if (B && n && !F.current && K) return H(!0), Y.current = setTimeout(() => {
+      H(!1)
     }, 5e3), () => {
-      clearTimeout(W.current)
+      clearTimeout(Y.current)
     }
-  }, [G, t, z]), i.useEffect(() => {
-    H.current = t
-  }, [t]);
-  let Y = () => {
+  }, [B, n, K]), i.useEffect(() => {
+    F.current = n
+  }, [n]);
+  let q = () => {
       let {
         renderBanner: t,
         guildBanner: n
       } = e;
       return null != n && !t
     },
-    K = (0, d.Q3)("GuildHeader"),
+    Q = (0, d.Q3)("GuildHeader"),
     {
-      entrypoints: q
+      entrypoints: X
     } = (0, p._k)({
       location: "guild_header"
     }),
-    Q = {
-      bannerVisible: t,
-      guild: v,
-      onClick: s,
-      onContextMenu: c,
-      ariaControls: y,
-      ariaExpanded: b,
-      guildHeaderRef: F
+    J = {
+      bannerVisible: n,
+      guild: C,
+      onClick: c,
+      onContextMenu: f,
+      ariaControls: v,
+      ariaExpanded: y,
+      guildHeaderRef: z
     };
   return (0, r.jsx)(u.f6W, {
-    theme: t ? O.BRd.DARK : void 0,
+    theme: n ? O.BRd.DARK : void 0,
     children: e => (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        ref: F,
-        className: o()(l, {
+        ref: z,
+        className: o()(s, {
           [S.container]: !0,
-          [S.clickable]: !q && null != s,
-          [S.selected]: !q && null != s && b,
-          [S.hasBanner]: Y(),
-          [S.bannerVisible]: t,
-          [e]: !K && t,
-          [S.communityInfoVisible]: U || D && M,
-          [S.invitesRefresh]: q
+          [S.clickable]: !X && null != c,
+          [S.selected]: !X && null != c && y,
+          [S.hasBanner]: q(),
+          [S.bannerVisible]: n,
+          [e]: !Q && n,
+          [S.communityInfoVisible]: G || L && U,
+          [S.invitesRefresh]: X
         }),
-        onMouseDown: f,
-        onClick: q ? void 0 : s,
-        onContextMenu: c,
+        onMouseDown: g,
+        onClick: X ? void 0 : c,
+        onContextMenu: f,
         children: [(0, r.jsxs)("header", {
-          className: o()(S.header, N, {
+          className: o()(S.header, A, {
             [S.themedHeaderMobile]: a.tq
           }),
           children: [(0, r.jsx)("div", {
             className: o()(S.headerContent, S.primaryInfo),
-            children: q ? (0, r.jsx)(T, E(j({}, Q), {
-              children: w
-            })) : (0, r.jsx)(Z, E(j({}, Q), {
-              children: w
+            children: X ? (0, r.jsx)(T, E(j({}, J), {
+              children: N
+            })) : (0, r.jsx)(Z, E(j({}, J), {
+              children: N
             }))
-          }), M && (0, r.jsx)(P, {
-            guild: v,
-            controller: n,
-            hasBanner: null != C,
-            hasSubheader: null != D && D
+          }), U && (0, r.jsx)(P, {
+            guild: C,
+            controller: l,
+            hasBanner: null != I,
+            hasSubheader: null != L && L
           })]
-        }), null != C ? (0, r.jsx)(x, {
-          guild: v,
-          controller: n,
-          guildBanner: C,
-          animate: B,
-          isRefreshEnabled: K
+        }), null != I ? (0, r.jsx)(x, {
+          guild: C,
+          controller: l,
+          guildBanner: I,
+          animate: V,
+          isRefreshEnabled: Q
         }) : null, (0, r.jsx)(R, {
-          controller: n
+          controller: l
         })]
-      }), G && Y() ? (0, r.jsx)("div", {
+      }), B && q() ? (0, r.jsx)("div", {
         className: S.animatedBannerHoverLayer,
         onMouseEnter: () => {
-          V(!0), clearTimeout(W.current)
+          H(!0), clearTimeout(Y.current)
         },
-        onMouseLeave: () => V(!1),
+        onMouseLeave: () => H(!1),
         style: {
-          height: I
+          height: w
         }
       }) : null]
     })

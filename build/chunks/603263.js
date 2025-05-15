@@ -4,11 +4,11 @@ n.d(t, {
   QQ: () => b,
   QY: () => v,
   Vj: () => d,
-  j8: () => E,
+  j8: () => x,
   jn: () => f,
   m$: () => m,
   oO: () => h,
-  qt: () => x,
+  qt: () => E,
   u$: () => y,
   yC: () => u
 });
@@ -124,7 +124,7 @@ function b(e) {
   })
 }
 
-function E(e, t) {
+function x(e, t) {
   null != e && r.Z.dispatch({
     type: "SEARCH_EDITOR_STATE_CHANGE",
     searchId: e,
@@ -132,7 +132,7 @@ function E(e, t) {
   })
 }
 
-function x(e) {
+function E(e) {
   r.Z.wait(() => r.Z.dispatch({
     type: "SEARCH_EDITOR_STATE_CLEAR",
     searchId: e

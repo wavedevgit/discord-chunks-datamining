@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(841762),
   _ = n(336197),
   b = n(406432),
-  E = n(348238),
-  x = n(38267),
+  x = n(348238),
+  E = n(38267),
   y = n(884902),
   v = n(670188),
   O = n(695346),
@@ -76,7 +76,7 @@ function M(e) {
     channel: F
   } = e, B = i.useRef(null), G = i.useRef(null), H = (0, P.J)(M, U), {
     setPopout: V
-  } = (0, x.Z)(U.id, w.d$), z = (0, E.qo)(U, F, V, !0), W = O.QK.useSetting(), K = (0, N.n)(), [Y, X] = i.useState(!1), [q, Q] = i.useState((null == H ? void 0 : H.coverImage) == null), J = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), $ = (0, c.e7)([j.ZP, C.default], () => {
+  } = (0, E.Z)(U.id, w.d$), z = (0, x.qo)(U, F, V, !0), W = O.QK.useSetting(), K = (0, N.n)(), [Y, X] = i.useState(!1), [q, Q] = i.useState((null == H ? void 0 : H.coverImage) == null), J = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), $ = (0, c.e7)([j.ZP, C.default], () => {
     var e;
     return j.ZP.isMember(null == H ? void 0 : H.guildId, null == (e = C.default.getCurrentUser()) ? void 0 : e.id)
   }, [H]), ee = (0, c.e7)([j.ZP], () => (null == H ? void 0 : H.authorId) != null ? j.ZP.getMember(H.guildId, H.authorId) : null), et = (0, f.Z)((null == ee ? void 0 : ee.avatarDecoration) != null ? null == ee ? void 0 : ee.avatarDecoration : null == H || null == (t = H.user) ? void 0 : t.avatarDecoration), [en, er, ei] = i.useMemo(() => {

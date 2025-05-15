@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(809026),
   _ = n(139256),
   b = n(489887),
-  E = n(388032),
-  x = n(271629);
+  x = n(388032),
+  E = n(271629);
 
 function y() {
   return (0, r.jsx)("svg", {
@@ -52,7 +52,7 @@ function v(e) {
     })
   }
   return null != t ? (0, r.jsx)("div", {
-    className: x.imageContainer,
+    className: E.imageContainer,
     children: t
   }) : null
 }
@@ -83,7 +83,7 @@ function O(e) {
         variant: "text-sm/semibold",
         color: "text-normal",
         scaleFontToUserSetting: !0,
-        children: E.intl.string(E.t["a+lSZ2"])
+        children: x.intl.string(x.t["a+lSZ2"])
       });
       break;
     case "VICTOR":
@@ -92,16 +92,16 @@ function O(e) {
       } = i;
       t = (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
-          className: x.victorAnswer,
+          className: E.victorAnswer,
           children: [(0, r.jsx)(s.Text, {
             variant: "text-sm/semibold",
             color: "text-normal",
-            className: x.victorAnswerText,
+            className: E.victorAnswerText,
             scaleFontToUserSetting: !0,
             children: a
           }), (0, r.jsx)(_.ZY, {
             size: 16,
-            className: x.victorIcon,
+            className: E.victorIcon,
             isVictor: !0,
             isExpired: !0
           })]
@@ -109,7 +109,7 @@ function O(e) {
           variant: "text-xs/medium",
           color: l,
           scaleFontToUserSetting: !0,
-          children: [E.intl.string(E.t.ufIDIy), " • ", o, "%"]
+          children: [x.intl.string(x.t.ufIDIy), " • ", o, "%"]
         })]
       });
       break;
@@ -122,7 +122,7 @@ function O(e) {
           variant: "text-sm/semibold",
           color: "text-normal",
           scaleFontToUserSetting: !0,
-          children: E.intl.string(E.t.kPN9sr)
+          children: x.intl.string(x.t.kPN9sr)
         }), (0, r.jsxs)(s.Text, {
           variant: "text-xs/medium",
           color: l,
@@ -132,7 +132,7 @@ function O(e) {
       })
   }
   return (0, r.jsx)("div", {
-    className: x.description,
+    className: E.description,
     children: t
   })
 }
@@ -158,8 +158,8 @@ function j(e) {
     }
   })(n), [n]), c = null != n.victorEmoji || "NO_VOTES" === o.type;
   return (0, r.jsxs)("div", {
-    className: a()(x.container, {
-      [x.containerWithImage]: c
+    className: a()(E.container, {
+      [E.containerWithImage]: c
     }, t),
     children: [(0, r.jsx)(v, {
       hasNoVotes: "NO_VOTES" === o.type,
@@ -182,7 +182,7 @@ function j(e) {
       }
       return e
     }({}, o)), null != l && (0, r.jsx)(s.zxk, {
-      className: x.button,
+      className: E.button,
       size: s.zxk.Sizes.TINY,
       onClick: l,
       color: s.zxk.Colors.PRIMARY,
@@ -190,7 +190,7 @@ function j(e) {
         variant: "text-sm/medium",
         color: "none",
         scaleFontToUserSetting: !0,
-        children: E.intl.string(E.t.Jw7VbW)
+        children: x.intl.string(x.t.Jw7VbW)
       })
     })]
   })
@@ -223,14 +223,14 @@ function C(e) {
       }),
       timestamp: n.timestamp,
       compact: a,
-      children: E.intl.format(E.t["VJcK4+"], {
+      children: x.intl.format(x.t["VJcK4+"], {
         username: y.nick,
         usernameHook: v(y),
         title: _,
         titleOnClick: C
       })
     }), (0, r.jsx)(j, {
-      className: x.embed,
+      className: E.embed,
       data: p,
       onClickPollLink: u ? void 0 : C
     })]

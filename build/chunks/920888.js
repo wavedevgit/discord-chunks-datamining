@@ -39,7 +39,7 @@ function b(e) {
   return e
 }
 
-function E(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -51,8 +51,8 @@ function E(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = (e, t) => null == e && null == t || e === t,
-  y = (e, t) => e.findIndex(e => x(e.emoji.id, null == t ? void 0 : t.id) && x(e.emoji.name, null == t ? void 0 : t.name)),
+let E = (e, t) => null == e && null == t || e === t,
+  y = (e, t) => e.findIndex(e => E(e.emoji.id, null == t ? void 0 : t.id) && E(e.emoji.name, null == t ? void 0 : t.name)),
   v = (e, t) => {
     if (null == t) return e;
     let n = y(e, t);
@@ -77,8 +77,8 @@ class O extends i.PureComponent {
       isGuest: l,
       isPendingMember: _,
       isForumToolbar: b,
-      channel: E,
-      className: x,
+      channel: x,
+      className: E,
       forceAddReactions: y,
       reactionClassName: v,
       useChatFontScaling: O,
@@ -93,7 +93,7 @@ class O extends i.PureComponent {
     let A = y || P;
     return (0, r.jsxs)(o.W, {
       component: "div",
-      className: a()(T.reactions, x),
+      className: a()(T.reactions, E),
       transitionAppear: !N,
       role: "group",
       transitionLeave: !1,
@@ -116,7 +116,7 @@ class O extends i.PureComponent {
         className: v
       }), C > 0 && (0, r.jsx)(s.P3F, {
         onClick: t => {
-          t.stopPropagation(), (0, m.op)(E, e)
+          t.stopPropagation(), (0, m.op)(x, e)
         },
         className: a()(T.reaction, v, T.remainingReactions),
         "aria-label": f.intl.string(f.t.lfIHs7),
@@ -129,7 +129,7 @@ class O extends i.PureComponent {
         tabIndex: A || this.state.isHovered ? 0 : -1,
         type: c.O.NORMAL,
         message: e,
-        channel: E,
+        channel: x,
         useChatFontScaling: O,
         isHovered: this.state.isHovered,
         className: a()({
@@ -162,9 +162,9 @@ let j = e => {
       a = r.length - i.length,
       o = r.length;
     return i.forEach(t => {
-      t.burst_count > 0 && e.push(E(b({}, t), {
+      t.burst_count > 0 && e.push(x(b({}, t), {
         type: c.O.BURST
-      })), t.count > 0 && e.push(E(b({}, t), {
+      })), t.count > 0 && e.push(x(b({}, t), {
         type: c.O.NORMAL
       })), null != t.me_vote && --o
     }), {
@@ -173,7 +173,7 @@ let j = e => {
       remainingReactions: a
     }
   }, [l, n, t.reactions]);
-  return (0, r.jsx)(O, E(b({}, e), {
+  return (0, r.jsx)(O, x(b({}, e), {
     visibleReactionsCount: s,
     combinedReactions: a,
     remainingReactions: o

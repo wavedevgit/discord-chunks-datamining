@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(592125),
   _ = n(906467),
   b = n(430824),
-  E = n(496675),
-  x = n(699516),
+  x = n(496675),
+  E = n(699516),
   y = n(594174),
   v = n(100604),
   O = n(694784),
@@ -49,7 +49,7 @@ function T(e) {
     message: t,
     snapshot: n,
     index: d
-  } = e, p = i.useMemo(() => new v.r(t, n, d), [t, n, d]), m = (0, a.e7)([g.Z, y.default, x.Z, E.Z, b.Z, u.Z], () => p.getForwardInfo(g.Z, y.default, x.Z, E.Z, b.Z, u.Z).footerInfo, [p], o.Z), f = i.useCallback(() => {
+  } = e, p = i.useMemo(() => new v.r(t, n, d), [t, n, d]), m = (0, a.e7)([g.Z, y.default, E.Z, x.Z, b.Z, u.Z], () => p.getForwardInfo(g.Z, y.default, E.Z, x.Z, b.Z, u.Z).footerInfo, [p], o.Z), f = i.useCallback(() => {
     (0, O.Z)(t)
   }, [t]);
   return null == m ? null : (0, r.jsxs)(c.P3F, {
@@ -77,15 +77,15 @@ function P(e) {
     message: n,
     snapshot: l,
     index: o
-  } = e, s = i.useMemo(() => (0, j.Z)(n, l), [n, l]), c = h.RS.useSetting(), u = h.NA.useSetting(), b = (0, a.e7)([_.Z], () => _.Z.isDeveloper), E = (0, d.A)((null != (t = s.editedTimestamp) ? t : s.timestamp).valueOf()), {
-    content: x,
+  } = e, s = i.useMemo(() => (0, j.Z)(n, l), [n, l]), c = h.RS.useSetting(), u = h.NA.useSetting(), b = (0, a.e7)([_.Z], () => _.Z.isDeveloper), x = (0, d.A)((null != (t = s.editedTimestamp) ? t : s.timestamp).valueOf()), {
+    content: E,
     hasSpoilerEmbeds: y
   } = (0, m.Z)(s, {
     hideSimpleEmbedContent: c && u,
     isInteracting: !1,
     formatInline: !1,
-    allowList: E,
-    allowHeading: E,
+    allowList: x,
+    allowHeading: x,
     allowLinks: !0,
     allowDevLinks: b,
     previewLinkTarget: !0
@@ -98,7 +98,7 @@ function P(e) {
       className: I.content,
       children: [(0, r.jsx)(N, {}), (0, r.jsx)(p.ZP, {
         message: s,
-        content: x,
+        content: E,
         compact: O
       }), (0, f.Z)({
         channelMessageProps: {

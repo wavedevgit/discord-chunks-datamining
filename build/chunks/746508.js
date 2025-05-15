@@ -40,8 +40,8 @@ var r = n(255367),
   M = n(258609),
   U = n(446226),
   G = n(935261),
-  V = n(74299),
-  B = n(803647),
+  B = n(74299),
+  V = n(803647),
   H = n(142497),
   F = n(810788),
   z = n(160404),
@@ -127,7 +127,7 @@ function eG(e, t) {
   }), e
 }
 
-function eV(e, t) {
+function eB(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -142,7 +142,7 @@ function eV(e, t) {
   }
   return i
 }
-let eB = {
+let eV = {
   offset: {
     left: -1,
     top: -1,
@@ -268,7 +268,7 @@ function eW(e) {
         label: i,
         iconComponent: l,
         iconColor: u
-      } = e, d = eV(e, ["unavailable", "isActive", "label", "iconComponent", "iconColor"]);
+      } = e, d = eB(e, ["unavailable", "isActive", "label", "iconComponent", "iconColor"]);
       let p = (0, r.jsx)(N, {
         size: c ? "md" : "sm",
         className: a()(eD.buttonIcon, {
@@ -294,7 +294,7 @@ function eW(e) {
         children: (e, l) => {
           var {
             onClick: s
-          } = e, u = eV(e, ["onClick"]), {
+          } = e, u = eB(e, ["onClick"]), {
             isShown: h
           } = l;
           return (0, r.jsx)(f.ua7, {
@@ -327,7 +327,7 @@ function eW(e) {
               innerClassName: eD.buttonContents,
               wrapperClassName: eD.button,
               fullWidth: !0,
-              focusProps: eB,
+              focusProps: eV,
               children: S ? p : (0, r.jsxs)(D.Z, {
                 align: D.Z.Align.CENTER,
                 children: [p, eR.intl.string(eR.t.FlNoSU)]
@@ -387,7 +387,7 @@ function eY(e) {
       }),
       innerClassName: eD.buttonContents,
       wrapperClassName: eD.button,
-      focusProps: eB,
+      focusProps: eV,
       children: [g ? (0, r.jsx)(T.r, {
         top: -1,
         right: -1
@@ -423,7 +423,7 @@ function eK(e) {
     }, [_, n.id]),
     v = m.find(e => e.ownerId === (null == g ? void 0 : g.id)),
     C = (0, eo.E)(n, g, m);
-  t = null == v ? l ? y : ec.Z : () => (0, B.Z)(v);
+  t = null == v ? l ? y : ec.Z : () => (0, V.Z)(v);
   let S = null != v || C.length > 0,
     N = b ? eR.intl.string(eR.t.fjBNo6) : eR.intl.string(eR.t.uQn9Bw),
     T = E || o || O,
@@ -465,7 +465,7 @@ function eK(e) {
       var {
         onClick: n,
         onMouseEnter: i
-      } = e, l = eV(e, ["onClick", "onMouseEnter"]);
+      } = e, l = eB(e, ["onClick", "onMouseEnter"]);
       return (0, r.jsx)(f.ua7, {
         text: N,
         children: e => (0, r.jsx)(f.zxk, eG(eU(eG(eU({}, e), {
@@ -491,7 +491,7 @@ function eK(e) {
           },
           innerClassName: eD.buttonContents,
           wrapperClassName: eD.button,
-          focusProps: eB,
+          focusProps: eV,
           children: T ? R : (0, r.jsxs)(D.Z, {
             align: D.Z.Align.CENTER,
             children: [R, eR.intl.string(eR.t["r0/+v7"])]
@@ -629,7 +629,7 @@ class eq extends i.PureComponent {
         enableActivities: i
       }) : null, (0, K.Z)(e) ? (0, r.jsx)(q.Z, {
         channel: e,
-        focusProps: eB
+        focusProps: eV
       }) : null]
     })
   }
@@ -708,7 +708,7 @@ class eq extends i.PureComponent {
         className: eD.voicePanelIntroductionButton,
         color: f.zxk.Colors.BRAND,
         onClick: this.handleCloseVoicePanelIntroduction,
-        focusProps: eB,
+        focusProps: eV,
         children: eR.intl.string(eR.t.shaBeH)
       })]
     }))
@@ -766,7 +766,7 @@ let eX = (0, E.Z)(function(e) {
     {
       channelId: s
     } = o,
-    c = eV(o, ["channelId"]),
+    c = eB(o, ["channelId"]),
     d = (0, u.e7)([eg.Z], () => eg.Z.getChannel(s), [s]),
     p = null == d ? void 0 : d.getGuildId(),
     h = (0, u.e7)([em.Z], () => em.Z.getGuild(p), [p]),
@@ -774,7 +774,7 @@ let eX = (0, E.Z)(function(e) {
       noiseCancellationSupported: e_.Z.isNoiseCancellationSupported(),
       noiseCancellationActive: e_.Z.getNoiseCancellation(),
       noiseCancellationError: e_.Z.isNoiseCancellationError(),
-      canGoLive: (0, V.Z)(e_.Z)
+      canGoLive: (0, B.Z)(e_.Z)
     })),
     m = (0, u.e7)([e_.Z, F.Z], () => F.Z.hasHotspot(ew.v.VOICE_PANEL_INTRODUCTION) && (0, eT.EO)(a) && !e_.Z.isInteractionRequired() && !(null == d ? void 0 : d.isGuildStageVoice())),
     b = (0, u.e7)([ev.Z], () => null != s && ev.Z.hasVideo(s), [s]),
@@ -839,7 +839,7 @@ let eX = (0, E.Z)(function(e) {
           onClick: () => {
             x(!0)
           },
-          focusProps: eB,
+          focusProps: eV,
           children: eR.intl.string(eR.t.WAI6xs)
         })]
       }) : null]

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 n.r(t), n.d(t, {
   default: () => F,
-  useAppSidebarState: () => B
+  useAppSidebarState: () => V
 });
 var r = n(255367),
   i = n(73800),
@@ -60,7 +60,7 @@ function G(e) {
   return e
 }
 
-function V(e, t) {
+function B(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -72,7 +72,7 @@ function V(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let B = (0, a.U)(() => ({
+let V = (0, a.U)(() => ({
   isOpen: !0
 }));
 
@@ -140,7 +140,7 @@ let F = i.memo(function() {
     Z.ZP.setMinimumSize(D.J, D.N)
   }, []);
   let e = (0, g.TH)("AppTitleBar"),
-    t = !B(e => e.isOpen) && e,
+    t = !V(e => e.isOpen) && e,
     {
       hasBugReporterAccess: n
     } = h.Z.useExperiment({
@@ -158,11 +158,11 @@ let F = i.memo(function() {
       children: i => (0, r.jsx)(L.T, {
         className: i,
         leading: t && (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(c.P3F, V(G({}, e), {
+          children: [(0, r.jsx)(c.P3F, B(G({}, e), {
             className: U.button,
             onClick: () => {
-              B.setState({
-                isOpen: !B.getState().isOpen
+              V.setState({
+                isOpen: !V.getState().isOpen
               })
             },
             children: (0, r.jsx)(z, {})
@@ -184,7 +184,7 @@ let F = i.memo(function() {
           }), (0, r.jsx)(f.Z, {
             canShowReminder: !0,
             className: U.button
-          }), (0, r.jsx)(v.Z, V(G({}, t ? {} : e), {
+          }), (0, r.jsx)(v.Z, B(G({}, t ? {} : e), {
             className: U.button
           })), n ? (0, r.jsx)(O.Z, {
             className: U.button

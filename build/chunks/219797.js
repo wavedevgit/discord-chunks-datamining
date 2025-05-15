@@ -24,8 +24,8 @@ var r = n(255367),
   g = n(850908),
   _ = n(524444),
   b = n(981631),
-  E = n(388032),
-  x = n(324846);
+  x = n(388032),
+  E = n(324846);
 
 function y(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -92,15 +92,15 @@ function j(e) {
     l = i.useCallback(() => {
       var e;
       return (0, f.yE)(null != (e = n.flags) ? e : 0, b.J0y.IS_CLIP) ? (0, r.jsxs)(o.DY, {
-        text: E.intl.string(E.t["/fgfWl"]),
-        className: x.clipPill,
+        text: x.intl.string(x.t["/fgfWl"]),
+        className: E.clipPill,
         children: [(0, r.jsx)(s.AlX, {
           size: "xs",
           color: "currentColor"
         }), (0, r.jsx)(a.x, {
           variant: "text-xs/semibold",
           color: "always-white",
-          children: E.intl.string(E.t.oA4afH)
+          children: x.intl.string(x.t.oA4afH)
         })]
       }) : null
     }, [n]),

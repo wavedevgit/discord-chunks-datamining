@@ -21,13 +21,13 @@ function g(e) {
   let t, n, g, {
       author: _,
       banned: b,
-      channelId: E
+      channelId: x
     } = e,
-    x = (0, i.e7)([s.default], () => s.default.getId()),
+    E = (0, i.e7)([s.default], () => s.default.getId()),
     y = p.ZP.useName(_),
-    v = x === _.id,
+    v = E === _.id,
     O = (0, i.e7)([c.Z, u.Z], () => {
-      let e = c.Z.getChannel(E);
+      let e = c.Z.getChannel(x);
       if (null == e) return !1;
       if (e.isPrivate()) return !0;
       if (e.isThread()) {
@@ -49,7 +49,7 @@ function g(e) {
       d.S.dispatchToLastSubscribed(m.CkL.INSERT_TEXT, {
         plainText: t,
         rawText: "<@".concat(e, ">")
-      }), null != E && l.Z.startTyping(E)
+      }), null != x && l.Z.startTyping(x)
     },
     children: f.intl.string(f.t.P8tvKC)
   })) : t = f.intl.string(f.t["SMJr+f"])), (0, r.jsxs)(a.Z, {

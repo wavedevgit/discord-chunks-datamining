@@ -34,9 +34,9 @@ var r = n(399834),
   g = n(544611),
   _ = n.n(g),
   b = n(803068),
-  E = n.n(b),
-  x = n(561099),
-  y = n.n(x),
+  x = n.n(b),
+  E = n(561099),
+  y = n.n(E),
   v = n(655e3),
   O = n.n(v);
 
@@ -78,7 +78,7 @@ function S(e, t) {
     case "delete-word":
       return m()(t);
     case "backspace":
-      return E()(t);
+      return x()(t);
     case "backspace-word":
       return d()(t);
     case "backspace-to-start-of-line":

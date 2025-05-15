@@ -22,7 +22,7 @@ function g(e) {
     guildId: t,
     guildProductListingId: n,
     sourceAnalyticsLocations: i
-  } = e, g = (0, a.e7)([p.Z], () => p.Z.getGuildProduct(n)), _ = (0, a.e7)([c.Z], () => c.Z.getGuild(t), [t]), b = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), E = (0, u.n)();
+  } = e, g = (0, a.e7)([p.Z], () => p.Z.getGuildProduct(n)), _ = (0, a.e7)([c.Z], () => c.Z.getGuild(t), [t]), b = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), x = (0, u.n)();
   return (l()(null != _, "guild cannot be null"), l()(null != g, "guildProductListing cannot be null"), (0, d.SO)(_)) ? (0, r.jsx)(o.ua7, {
     text: h.intl.string(h.t.sAJr9f),
     children: e => {
@@ -68,7 +68,7 @@ function g(e) {
     children: h.intl.string(h.t.RcTOGB)
   }) : (0, r.jsx)(o.gtL, {
     shineSize: o.gtL.ShineSizes.SMALL,
-    pauseAnimation: b || !E,
+    pauseAnimation: b || !x,
     onClick: () => (0, m.z)({
       guildProductListing: g,
       guildId: _.id,

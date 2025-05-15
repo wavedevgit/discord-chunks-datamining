@@ -1,6 +1,6 @@
 /** Chunk was on 36087 **/
 n.d(t, {
-  f: () => x
+  f: () => E
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -18,7 +18,7 @@ var r = n(255367),
   g = n(981631),
   _ = n(388032),
   b = n(429495);
-let E = e => {
+let x = e => {
     let {
       channel: t,
       message: n
@@ -52,7 +52,7 @@ let E = e => {
       })
     })
   },
-  x = e => {
+  E = e => {
     let {
       message: t,
       channel: n
@@ -67,7 +67,7 @@ let E = e => {
         h = null != f && (f.systemChannelFlags & g.xmn.SUPPRESS_JOIN_NOTIFICATION_REPLIES) == 0;
       return a && !l && !o && !s && h
     });
-    return null != i && a ? (0, r.jsx)(E, {
+    return null != i && a ? (0, r.jsx)(x, {
       message: t,
       channel: n
     }) : null

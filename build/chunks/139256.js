@@ -23,8 +23,8 @@ var r = n(255367),
   g = n(506071),
   _ = n(203143),
   b = n(79390),
-  E = n(839963),
-  x = n(294608),
+  x = n(839963),
+  E = n(294608),
   y = n(65145),
   v = n(981631),
   O = n(388032),
@@ -178,18 +178,18 @@ function w(e) {
     canTapAnswers: l,
     answersInteraction: n
   }).with({
-    answersInteraction: E.Y7.RADIO_BUTTONS
+    answersInteraction: x.Y7.RADIO_BUTTONS
   }, () => ({
     ContainerComponent: T,
     answerElementType: 1
   })).with({
-    answersInteraction: E.Y7.CHECKBOXES
+    answersInteraction: x.Y7.CHECKBOXES
   }, () => ({
     ContainerComponent: N,
     answerElementType: 2
   })).with({
     canTapAnswers: !0,
-    answersInteraction: E.Y7.LIST
+    answersInteraction: x.Y7.LIST
   }, () => ({
     ContainerComponent: I,
     answerElementType: 3
@@ -222,7 +222,7 @@ function Z(e) {
   } = e, {
     channelId: u,
     messageId: d
-  } = (0, x.pE)(), p = (0, x.$B)(n.style), m = !0 === n.isSelected, f = i.useCallback(() => {
+  } = (0, E.pE)(), p = (0, E.$B)(n.style), m = !0 === n.isSelected, f = i.useCallback(() => {
     _.Z.handlePollAnswerTapped({
       channelId: u,
       messageId: d,
@@ -305,7 +305,7 @@ function L(e) {
     fallback: a
   } = e, {
     message: o
-  } = (0, x.GF)();
+  } = (0, E.GF)();
   if (null != t.attachmentIds && t.attachmentIds.length > 0) {
     let e = o.attachments.find(e => {
       var n;

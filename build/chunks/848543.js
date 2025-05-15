@@ -91,9 +91,9 @@ function A(e) {
     U = (0, y.sR)({
       isSoundboardButtonDisabled: R
     }),
-    [G, V] = (0, b.cv)(U),
+    [G, B] = (0, b.cv)(U),
     {
-      analyticsLocations: B,
+      analyticsLocations: V,
       parentAnalyticsLocation: H
     } = (0, h.ZP)(p.Z.SOUNDBOARD_BUTTON);
 
@@ -104,7 +104,7 @@ function A(e) {
       } = await n.e("56049").then(n.bind(n, 338991));
       return t => (0, r.jsx)(e, j(P({
         guildId: M,
-        sourceAnalyticsLocations: B
+        sourceAnalyticsLocations: V
       }, t), {
         onInteraction: (0, g.u)("SoundboardContextMenu", p.Z.RTC_PANEL)
       }))
@@ -133,7 +133,7 @@ function A(e) {
         onClose: n,
         gridNotice: G === s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(I.o, {
           onClose: n,
-          markAsDismissed: V
+          markAsDismissed: B
         }),
         analyticsSource: "rtc panel"
       })
@@ -150,7 +150,7 @@ function A(e) {
         disabled: R,
         onClick: () => {
           var t;
-          null != G && G !== s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && V(S.L.UNKNOWN), null == e || null == (t = e.onClick) || t.call(e), k(!D), W(), (0, f.v)(H, f.d.SOUNDBOARD)
+          null != G && G !== s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && B(S.L.UNKNOWN), null == e || null == (t = e.onClick) || t.call(e), k(!D), W(), (0, f.v)(H, f.d.SOUNDBOARD)
         },
         onMouseEnter: t => {
           var n, r;
@@ -178,7 +178,7 @@ function A(e) {
     event: C.CkL.TOGGLE_SOUNDBOARD,
     handler: Q
   }), (0, r.jsx)(h.Gt, {
-    value: B,
+    value: V,
     children: (0, r.jsx)(u.ua7, {
       targetElementRef: A,
       text: x ? N.intl.string(N.t["Ox4/zc"]) : L ? N.intl.string(N.t["+YBKYG"]) : w ? N.intl.string(N.t.X1lQlp) : N.intl.string(N.t["6EJvHh"]),

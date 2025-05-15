@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(739566),
   _ = n(492593),
   b = n(930282),
-  E = n(464891),
-  x = n(507418),
+  x = n(464891),
+  E = n(507418),
   y = n(348238),
   v = n(38267),
   O = n(25015),
@@ -104,7 +104,7 @@ function D(e) {
       reportedTimestamp: o,
       compact: !1
     }),
-    childrenHeader: (0, r.jsx)(E.ZP, {
+    childrenHeader: (0, r.jsx)(x.ZP, {
       message: t,
       channel: l,
       author: s,
@@ -115,7 +115,7 @@ function D(e) {
       onPopoutRequestClose: d,
       showUsernamePopout: p,
       showAvatarPopout: m,
-      renderPopout: x.Z,
+      renderPopout: E.Z,
       compact: !1,
       displayCompactAvatars: !1
     }),
@@ -151,16 +151,16 @@ function L(e) {
     g = C.RS.useSetting(),
     _ = C.NA.useSetting(),
     b = (0, a.e7)([I.Z], () => I.Z.isDeveloper),
-    E = (0, h.A)((null != (l = f.editedTimestamp) ? l : f.timestamp).valueOf()),
+    x = (0, h.A)((null != (l = f.editedTimestamp) ? l : f.timestamp).valueOf()),
     {
-      content: x,
+      content: E,
       hasSpoilerEmbeds: y
     } = (0, O.Z)(f, {
       hideSimpleEmbedContent: g && _,
       isInteracting: !1,
       formatInline: !1,
-      allowList: E,
-      allowHeading: E,
+      allowList: x,
+      allowHeading: x,
       allowLinks: !0,
       allowDevLinks: b,
       previewLinkTarget: !0
@@ -172,7 +172,7 @@ function L(e) {
       className: R.content,
       children: [(0, r.jsx)(D, {
         mergedMessageRecord: f,
-        content: x,
+        content: E,
         channel: v,
         reportingUserId: null == s || null == (n = s.moderatorReport) ? void 0 : n.reporting_user_id,
         reportedTimestamp: o.timestamp

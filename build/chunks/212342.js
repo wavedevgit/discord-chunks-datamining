@@ -1,6 +1,6 @@
 /** Chunk was on 36087 **/
 n.d(t, {
-  Z: () => x
+  Z: () => E
 }), n(388685), n(997841);
 var r, i, l, a = n(442837),
   o = n(433517),
@@ -15,7 +15,7 @@ var r, i, l, a = n(442837),
 let g = "ChannelFollowingBumpChannels",
   _ = new Set,
   b = new Set;
-class E extends(r = a.ZP.Store) {
+class x extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(c.default), _ = new Set(o.K.get(g))
   }
@@ -23,13 +23,13 @@ class E extends(r = a.ZP.Store) {
     return b.has(e)
   }
 }
-l = "ChannelFollowingPublishBumpStore", (i = "displayName") in E ? Object.defineProperty(E, i, {
+l = "ChannelFollowingPublishBumpStore", (i = "displayName") in x ? Object.defineProperty(x, i, {
   value: l,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : E[i] = l;
-let x = new E(s.Z, {
+}) : x[i] = l;
+let E = new x(s.Z, {
   MESSAGE_CREATE: function(e) {
     var t;
     let {

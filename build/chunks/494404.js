@@ -20,8 +20,8 @@ var r = n(255367),
   g = n(804063),
   _ = n(294218),
   b = n(703656),
-  E = n(210887),
-  x = n(592125),
+  x = n(210887),
+  E = n(592125),
   y = n(375954),
   v = n(496675),
   O = n(933429),
@@ -163,7 +163,7 @@ function D(e) {
     renderHeader: g,
     renderEmptyState: _,
     renderItem: b,
-    getProTip: x,
+    getProTip: E,
     scrollerClassName: y,
     className: v,
     listName: w
@@ -201,7 +201,7 @@ function D(e) {
     className: a()(T.emptyPlaceholder, T.loadingPlaceholder),
     children: (0, r.jsx)(d.$jN, {})
   }, "spinner")] : 0 === n.length ? U.push((0, r.jsx)(i.Fragment, {
-    children: _(E.Z.theme)
+    children: _(x.Z.theme)
   }, "empty-state")) : (F = !1, U = [], s().each(n, e => {
     U.push(...b(e))
   }));
@@ -220,9 +220,9 @@ function D(e) {
     })
   }) : (0, r.jsx)("div", {
     className: T.scrollingFooterWrap,
-    children: _(E.Z.theme)
+    children: _(x.Z.theme)
   }));
-  let G = null == x ? void 0 : x(),
+  let G = null == E ? void 0 : E(),
     H = F && null != G ? (0, r.jsx)("div", {
       className: T.footer,
       children: (0, r.jsx)(f.Z, {
@@ -319,7 +319,7 @@ function L(e) {
     canCloseAllMessages: m = !1,
     renderHeader: f,
     renderEmptyState: h,
-    renderMessage: E,
+    renderMessage: x,
     getProTip: v,
     scrollerClassName: O,
     className: j,
@@ -335,7 +335,7 @@ function L(e) {
       let {
         id: r,
         channel_id: i
-      } = e, l = x.Z.getChannel(i);
+      } = e, l = E.Z.getChannel(i);
       null != l && (p.Z.trackJump(i, r, t), (0, b.uL)(I.Z5c.CHANNEL(l.getGuildId(), i, r))), null == d || d(n)
     }
   }
@@ -363,7 +363,7 @@ function L(e) {
         channel: n
       } = e;
       if (null == t) return [];
-      if (null != E) return E(t, e => P(t, e));
+      if (null != x) return x(t, e => P(t, e));
       let i = [];
       return null == n ? [] : (i.push((0, r.jsxs)("div", {
         className: T.messageGroupWrapper,
