@@ -6,9 +6,9 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  o = n.n(i),
-  a = n(392711),
-  s = n.n(a),
+  a = n.n(i),
+  o = n(392711),
+  s = n.n(o),
   l = n(481060),
   c = n(565138),
   u = n(223390);
@@ -43,7 +43,7 @@ function _(e) {
     className: t,
     maxGuilds: n,
     guilds: i,
-    onFocus: a,
+    onFocus: o,
     onClick: _,
     size: p = c.Z.Sizes.SMALLER,
     hideOverflowCount: h = !1,
@@ -58,9 +58,9 @@ function _(e) {
       b = s()(i).take(n).map((e, t) => {
         let n = e.name,
           i = t === E && !d,
-          a = o()(u.avatar, g, i && u.isLast);
+          o = a()(u.avatar, g, i && u.isLast);
         return m ? (0, r.jsx)("div", {
-          className: a,
+          className: o,
           children: (0, r.jsx)(c.Z, {
             guild: e,
             onClick: _,
@@ -69,7 +69,7 @@ function _(e) {
           })
         }) : (0, r.jsx)(l.DY3, {
           text: n,
-          className: a,
+          className: o,
           children: (0, r.jsx)(c.Z, {
             guild: e,
             onClick: _,
@@ -80,8 +80,8 @@ function _(e) {
     if (d) {
       let e = f(p);
       b[b.length - 1] = (0, r.jsx)(l.zxk, {
-        className: o()(u.overflow, g),
-        onFocus: a,
+        className: a()(u.overflow, g),
+        onFocus: o,
         onClick: e => null == _ ? void 0 : _(e),
         look: l.zxk.Looks.BLANK,
         size: l.zxk.Sizes.NONE,
@@ -94,7 +94,7 @@ function _(e) {
     return b
   }
   return i.length <= 0 ? null : (0, r.jsx)("div", {
-    className: o()(t, u.avatars),
+    className: a()(t, u.avatars),
     children: E()
   })
 }

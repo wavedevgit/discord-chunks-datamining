@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 var r = n(657398),
   i = n(389109),
-  o = "[object Arguments]";
+  a = "[object Arguments]";
 e.exports = function(e) {
-  return i(e) && r(e) == o
+  return i(e) && r(e) == a
 }

@@ -5,9 +5,9 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(481060),
-  o = n(598117);
+  a = n(598117);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,7 +23,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -59,6 +59,6 @@ let u = async function() {
       guildId: t
     }))
   }, {
-    modalKey: o.Hj
+    modalKey: a.Hj
   })
 }

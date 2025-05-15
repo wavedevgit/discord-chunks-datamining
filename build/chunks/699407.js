@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
-let r, i, o;
+let r, i, a;
 n.d(t, {
   X: () => v,
   l: () => A
 }), n(358797), n(290780), n(388685), n(539854), n(17089);
-var a, s = n(756647),
+var o, s = n(756647),
   l = n(442837),
   c = n(544891),
   u = n(761609);
@@ -53,7 +53,7 @@ let h = 1500,
   g = 1500,
   E = 0,
   b = Number.MAX_SAFE_INTEGER - 1,
-  y = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e()),
+  y = null != (o = window.requestIdleCallback) ? o : e => setImmediate(() => e()),
   O = new u.R,
   v = {
     handleConnectionOpen: () => {},
@@ -70,7 +70,7 @@ let h = 1500,
     var t;
     let {
       dispatcher: n,
-      actionHandler: a,
+      actionHandler: o,
       getFingerprint: u,
       getSessionId: _ = T,
       TRACKING_URL: A,
@@ -81,13 +81,13 @@ let h = 1500,
 
     function R(e) {
       var t;
-      if (null != o) return o;
+      if (null != a) return a;
       let n = null != (t = e.fingerprint) ? t : u();
       return null != n ? (0, s.s)(n) : null
     }
 
     function w() {
-      return 0 !== I.length && (null != o ? null != i : null != u())
+      return 0 !== I.length && (null != a ? null != i : null != u())
     }
 
     function D(e) {
@@ -138,11 +138,11 @@ let h = 1500,
         analyticsToken: t,
         user: n
       } = e;
-      return null != t && (i = t), null != n.id && (o = n.id), D({
+      return null != t && (i = t), null != n.id && (a = n.id), D({
         shouldFlushOnNextTick: !1
       }), !1
     }, v.handleConnectionClosed = function() {
-      return L(), i = null, o = null, !1
+      return L(), i = null, a = null, !1
     }, v.handleFingerprint = function() {
       return L(), !1
     }, v.handleTrack = function(e) {
@@ -150,8 +150,8 @@ let h = 1500,
         event: t,
         properties: n,
         flush: i,
-        fingerprint: o,
-        resolve: a
+        fingerprint: a,
+        resolve: o
       } = e;
       return _().then(e => {
         let {
@@ -160,13 +160,13 @@ let h = 1500,
         (s !== r || E >= b) && (E = 0, r = s), E += 1;
         let l = {
             type: t,
-            fingerprint: o,
+            fingerprint: a,
             properties: f({
               client_track_timestamp: Date.now(),
               client_heartbeat_session_id: s,
               event_sequence_number: E
             }, n),
-            resolve: a
+            resolve: o
           },
           c = R(l);
         null != c && (l.properties.client_uuid = O.generate(c)), I.push(l), I.length > m && (I = I.slice(-m)), i ? D({
@@ -184,5 +184,5 @@ let h = 1500,
         super(...e), d(this, "submitEventsImmediately", x)
       }
     }
-    return d(k, "displayName", "AnalyticsTrackingStore"), new k(n, a)
+    return d(k, "displayName", "AnalyticsTrackingStore"), new k(n, o)
   }

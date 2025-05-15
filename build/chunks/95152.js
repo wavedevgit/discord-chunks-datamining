@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(953529);
 var r = n(255367),
   i = n(73800),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(481060),
   l = n(166459),
   c = n(990169),
@@ -64,7 +64,7 @@ let T = 104,
   A = 16;
 
 function N(e) {
-  var t, n, o;
+  var t, n, a;
   let {
     file: s
   } = e, [l, u] = i.useState(), [d, f] = i.useState(!1), [_, p] = i.useState({}), h = i.useRef(null);
@@ -95,14 +95,14 @@ function N(e) {
   return (0, r.jsx)("img", {
     ref: h,
     src: l,
-    className: a()(b.icon, {
+    className: o()(b.icon, {
       [b.image]: !d
     }),
     "aria-hidden": !0,
     alt: "",
     style: {
       width: null != (n = _.width) ? n : "initial",
-      height: null != (o = _.height) ? o : T,
+      height: null != (a = _.height) ? a : T,
       marginLeft: g,
       marginRight: g,
       marginTop: null != _.height ? T - _.height - 33 : -33
@@ -115,7 +115,7 @@ class C extends i.Component {
     return this.props.upload.item.platform !== u.ow.WEB ? null : this.props.upload.isImage ? (0, r.jsx)(N, {
       file: this.props.upload.item.file
     }) : (0, r.jsx)("div", {
-      className: a()(b.icon, {
+      className: o()(b.icon, {
         [b[null != (e = this.props.upload.classification) ? e : ""]]: !0
       })
     })
@@ -143,7 +143,7 @@ class P extends i.Component {
       upload: e,
       transitionState: t,
       messageMaxLength: n,
-      disableSpoiler: o
+      disableSpoiler: a
     } = this.props, {
       hasSpoiler: l
     } = this.state;
@@ -155,7 +155,7 @@ class P extends i.Component {
       children: [(0, r.jsxs)("div", {
         className: b.inner,
         children: [(0, r.jsxs)("div", {
-          className: a()(b.file, {
+          className: o()(b.file, {
             [b.expandable]: e.isImage
           }),
           children: [(0, r.jsx)(C, {
@@ -180,7 +180,7 @@ class P extends i.Component {
               children: E.intl.string(E.t.ILJuBg)
             })
           }), (0, r.jsx)(s.oil, {
-            className: a()(b.channelTextAreaUpload, y.marginTop8),
+            className: o()(b.channelTextAreaUpload, y.marginTop8),
             value: this.state.filename,
             onChange: e => this.setState({
               filename: e
@@ -195,7 +195,7 @@ class P extends i.Component {
                 children: E.intl.string(E.t.eOB2eX)
               })
             }), (0, r.jsx)(s.oil, {
-              className: a()(b.channelTextAreaUpload, y.marginTop8),
+              className: o()(b.channelTextAreaUpload, y.marginTop8),
               placeholder: E.intl.string(E.t.RNH1jo),
               value: this.state.description,
               onChange: e => this.setState({
@@ -205,7 +205,7 @@ class P extends i.Component {
                 if (e.which === g.yXg.ENTER) return this.handleSubmit()
               }
             })]
-          }) : null, !0 !== o && (0, r.jsx)(s.XZJ, {
+          }) : null, !0 !== a && (0, r.jsx)(s.XZJ, {
             className: y.marginBottom20,
             value: l,
             onChange: (e, t) => this.setState({
@@ -220,7 +220,7 @@ class P extends i.Component {
       }), (0, r.jsx)("div", {
         className: b.footer,
         children: (0, r.jsxs)("div", {
-          className: a()(b.hasSpoilers, b.footerRightAlign),
+          className: o()(b.hasSpoilers, b.footerRightAlign),
           children: [(0, r.jsx)(s.zxk, {
             type: "button",
             look: s.zxk.Looks.LINK,
@@ -241,7 +241,7 @@ class P extends i.Component {
     })
   }
   constructor(e) {
-    var t, n, r, i, o, a;
+    var t, n, r, i, a, o;
     super(e), O(this, "cancelAll", () => {
       l.Z.clearAll(this.props.channelId, this.props.draftType), this.props.onClose()
     }), O(this, "cancel", () => {
@@ -259,22 +259,22 @@ class P extends i.Component {
       } = this.props, {
         filename: r,
         description: i,
-        hasSpoiler: o
+        hasSpoiler: a
       } = this.state;
       n({
         upload: e,
         name: r,
         description: i,
-        spoiler: o
+        spoiler: a
       }), t()
     });
     let s = e.ignoreDraft ? "" : _.Z.getDraft(this.props.channelId, e.draftType);
     this.state = S(v({}, (0, d.eK)(s)), {
       textFocused: !0,
       hasSpoiler: null != (i = null == (t = e.upload) ? void 0 : t.spoiler) && i,
-      filename: null != (o = null == (n = e.upload) ? void 0 : n.filename) ? o : "",
+      filename: null != (a = null == (n = e.upload) ? void 0 : n.filename) ? a : "",
       contentWarningProps: null,
-      description: null != (a = null == (r = e.upload) ? void 0 : r.description) ? a : ""
+      description: null != (o = null == (r = e.upload) ? void 0 : r.description) ? o : ""
     })
   }
 }

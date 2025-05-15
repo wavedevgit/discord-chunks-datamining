@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => d
 });
 var r, i = n(442837),
-  o = n(570140),
-  a = n(288219);
+  a = n(570140),
+  o = n(288219);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -31,7 +31,7 @@ class u extends(r = i.ZP.DeviceSettingsStore) {
     }
   }
   initialize(e) {
-    for (var t in a.Z) {
+    for (var t in o.Z) {
       var n, r;
       l[t] = null != (r = null == e || null == (n = e.toggleStates) ? void 0 : n[t]) && r
     }
@@ -45,6 +45,6 @@ class u extends(r = i.ZP.DeviceSettingsStore) {
   }
 }
 s(u, "displayName", "LabFeatureStore"), s(u, "persistKey", "LabFeatureStore");
-let d = new u(o.Z, {
+let d = new u(a.Z, {
   LAB_FEATURE_TOGGLE: c
 })

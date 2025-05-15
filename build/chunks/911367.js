@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  t: () => o
+  t: () => a
 });
 var r = n(73800),
   i = n(365943);
 
-function o() {
+function a() {
   r.useEffect(() => {
     (0, i.z)()
   }, [])

@@ -7,8 +7,8 @@ n.d(t, {
 }), n(415506), n(388685);
 var r = n(255367),
   i = n(73800),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(950035),
   l = n(1561),
   c = n(438784),
@@ -66,8 +66,8 @@ function S(e, t) {
   if (null == e) return {};
   var n, r, i = T(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -75,8 +75,8 @@ function S(e, t) {
 function T(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let A = {
@@ -93,13 +93,13 @@ function C(e) {
     size: t,
     isMobile: n,
     isTyping: i
-  } = e, o = S(e, ["size", "isMobile", "isTyping"]);
-  let a = (0, h.UC)(t),
-    s = a.status * (n && !i ? h.EW : 1),
-    l = a.status * (i ? h.D6 : 1),
-    c = i ? (a.status * h.D6 - a.status) / 2 : 0,
-    u = a.size - a.status - c - a.offset,
-    d = a.size - s - a.offset;
+  } = e, a = S(e, ["size", "isMobile", "isTyping"]);
+  let o = (0, h.UC)(t),
+    s = o.status * (n && !i ? h.EW : 1),
+    l = o.status * (i ? h.D6 : 1),
+    c = i ? (o.status * h.D6 - o.status) / 2 : 0,
+    u = o.size - o.status - c - o.offset,
+    d = o.size - s - o.offset;
   return (0, r.jsx)("rect", O({
     x: u,
     y: d,
@@ -107,7 +107,7 @@ function C(e) {
     height: s,
     fill: "transparent",
     "aria-hidden": !0
-  }, o))
+  }, a))
 }
 
 function P(e, t) {
@@ -263,9 +263,9 @@ function w(e, t, n, r) {
 function D(e, t, n) {
   let r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
     i = (0, u.W5)(e.status, t, n, r),
-    o = (r ? e.size - (i.width / 2 + e.status / 2) : e.size - i.width) - e.offset;
+    a = (r ? e.size - (i.width / 2 + e.status / 2) : e.size - i.width) - e.offset;
   return I(O({}, i), {
-    x: o,
+    x: a,
     y: e.size - i.height - e.offset
   })
 }
@@ -274,27 +274,27 @@ function L(e, t, n) {
   let {
     size: r,
     status: i,
-    stroke: o,
-    offset: a
+    stroke: a,
+    offset: o
   } = e, s = n ? i * h.D6 : i, l = (s - i) / 2, c = t ? i * h.EW : i;
   return {
-    avatarCutoutX: r - s + l - o - a,
-    avatarCutoutY: r - c - o - a,
-    avatarCutoutWidth: s + 2 * o,
-    avatarCutoutHeight: c + 2 * o,
-    avatarCutoutRadius: t ? (c + 2 * o) * h.ZC : (i + 2 * o) / 2
+    avatarCutoutX: r - s + l - a - o,
+    avatarCutoutY: r - c - a - o,
+    avatarCutoutWidth: s + 2 * a,
+    avatarCutoutHeight: c + 2 * a,
+    avatarCutoutRadius: t ? (c + 2 * a) * h.ZC : (i + 2 * a) / 2
   }
 }
 
 function x(e, t, n, i) {
-  let o = D(n, i, t, !1),
-    a = (0, u.lm)(i, e);
+  let a = D(n, i, t, !1),
+    o = (0, u.lm)(i, e);
   if (!t) {
-    let t = o.height / 2 + n.stroke,
-      i = o.x + n.status / 2;
+    let t = a.height / 2 + n.stroke,
+      i = a.x + n.status / 2;
     return (0, r.jsx)("circle", {
       style: {
-        opacity: a
+        opacity: o
       },
       fill: e,
       r: t,
@@ -302,16 +302,16 @@ function x(e, t, n, i) {
       cy: i
     })
   }
-  let s = o.height + 2 * n.stroke,
-    l = o.width + 2 * n.stroke,
-    c = o.x - n.stroke,
-    d = o.y - n.stroke;
+  let s = a.height + 2 * n.stroke,
+    l = a.width + 2 * n.stroke,
+    c = a.x - n.stroke,
+    d = a.y - n.stroke;
   return (0, r.jsx)("rect", {
     fill: e,
     height: s,
     width: l,
     style: {
-      opacity: a
+      opacity: o
     },
     x: c,
     y: d,
@@ -325,11 +325,11 @@ function k(e) {
     isMobile: n,
     isTyping: r,
     size: i
-  } = e, o = n && !r && t === m.Skl.ONLINE, a = (0, h.UC)(i);
-  return O({}, L(a, o, r), (0, u.Dk)({
+  } = e, a = n && !r && t === m.Skl.ONLINE, o = (0, h.UC)(i);
+  return O({}, L(o, a, r), (0, u.Dk)({
     status: t,
-    size: a.status,
-    isMobile: o,
+    size: o.status,
+    isMobile: a,
     isTyping: r,
     topOffset: 2,
     leftOffset: 6
@@ -341,7 +341,7 @@ function M(e) {
     children: t,
     size: n,
     onClick: i,
-    onMouseDown: o,
+    onMouseDown: a,
     onKeyDown: s,
     onContextMenu: c,
     onMouseEnter: u,
@@ -382,13 +382,13 @@ function M(e) {
       })
     })
   });
-  return null != i || null != o ? (0, r.jsxs)(l.P, {
-    className: a()(b.wrapper, b.pointer, f),
+  return null != i || null != a ? (0, r.jsxs)(l.P, {
+    className: o()(b.wrapper, b.pointer, f),
     style: T,
     onClick: i,
     tabIndex: _,
     onContextMenu: c,
-    onMouseDown: o,
+    onMouseDown: a,
     onKeyDown: s,
     onMouseEnter: null != u ? u : void 0,
     onMouseLeave: null != d ? d : void 0,
@@ -396,7 +396,7 @@ function M(e) {
     "aria-hidden": m,
     children: [t, w]
   }) : (0, r.jsxs)("div", {
-    className: a()(b.wrapper, f),
+    className: o()(b.wrapper, f),
     style: T,
     onContextMenu: null != c ? c : void 0,
     onMouseEnter: null != u ? u : void 0,
@@ -411,11 +411,11 @@ let j = i.forwardRef((e, t) => {
   let {
     src: n,
     isSpeaking: i,
-    className: o
+    className: a
   } = e;
   return (0, r.jsxs)("div", {
     ref: t,
-    className: a()(b.avatarStack, o),
+    className: o()(b.avatarStack, a),
     children: [(0, r.jsx)("img", {
       src: null != n ? n : void 0,
       alt: " ",
@@ -432,7 +432,7 @@ function U(e) {
     src: t,
     status: n,
     size: i,
-    statusColor: o,
+    statusColor: a,
     isMobile: s = !1,
     isTyping: l = !1,
     typingIndicatorRef: f,
@@ -445,7 +445,7 @@ function U(e) {
     "aria-label": T,
     imageClassName: A,
     ref: N
-  } = e, C = n !== m.Skl.UNKNOWN ? n : null, P = (0, h.UC)(i), R = null != C ? Math.ceil((P.status * h.D6 - P.status) / 2) : 0, L = P.size + R, k = (0, u.vj)(C, o);
+  } = e, C = n !== m.Skl.UNKNOWN ? n : null, P = (0, h.UC)(i), R = null != C ? Math.ceil((P.status * h.D6 - P.status) / 2) : 0, L = P.size + R, k = (0, u.vj)(C, a);
   return (0, r.jsx)(M, I(O({}, e), {
     ariaLabel: T,
     ariaHidden: S,
@@ -457,7 +457,7 @@ function U(e) {
       width: L,
       height: L,
       viewBox: "0 0 ".concat(L, " ").concat(L),
-      className: a()(b.mask, b.svg),
+      className: o()(b.mask, b.svg),
       "aria-hidden": !0,
       children: [(0, r.jsx)("foreignObject", {
         x: 0,
@@ -502,10 +502,10 @@ function G(e, t, n) {
 function B(e, t, n) {
   let r = e.status * t,
     i = null != n ? (r * h.D6 - r) / 2 : 0,
-    o = (e.status - r) / 2,
-    a = e.size - r - i - e.offset - o,
-    s = e.size - r * h.EW - e.offset - o,
-    l = Math.round(a / t * 100) / 100,
+    a = (e.status - r) / 2,
+    o = e.size - r - i - e.offset - a,
+    s = e.size - r * h.EW - e.offset - a,
+    l = Math.round(o / t * 100) / 100,
     c = Math.round(s / t * 100) / 100;
   return "translate(".concat(l, ", ").concat(c, ")")
 }
@@ -514,7 +514,7 @@ function F(e) {
   let {
     fromIsMobile: t = !0,
     fromStatus: n,
-    fromColor: o,
+    fromColor: a,
     isMobile: l = !1,
     isTyping: _ = !1,
     typingIndicatorRef: m,
@@ -531,7 +531,7 @@ function F(e) {
     imageClassName: U,
     pulseStatusIcon: F
   } = e, V = (0, u.vj)(v, T), Z = i.useId(), H = i.useId(), [Y] = i.useState(() => O({
-    fill: o
+    fill: a
   }, k({
     size: E,
     status: n,
@@ -555,7 +555,7 @@ function F(e) {
     avatarCutoutHeight: X,
     avatarCutoutRadius: J,
     fill: $
-  } = K, ee = S(K, ["avatarCutoutX", "avatarCutoutY", "avatarCutoutWidth", "avatarCutoutHeight", "avatarCutoutRadius", "fill"]), et = (0, h.px)(E), en = (0, h.UC)(E), er = en.status * h.D6, ei = en.status * h.EW, eo = null != v ? (en.status * h.D6 - en.status) / 2 : 0, ea = en.size + Math.ceil(eo), [es, el, ec] = (0, f.q_F)({
+  } = K, ee = S(K, ["avatarCutoutX", "avatarCutoutY", "avatarCutoutWidth", "avatarCutoutHeight", "avatarCutoutRadius", "fill"]), et = (0, h.px)(E), en = (0, h.UC)(E), er = en.status * h.D6, ei = en.status * h.EW, ea = null != v ? (en.status * h.D6 - en.status) / 2 : 0, eo = en.size + Math.ceil(ea), [es, el, ec] = (0, f.q_F)({
     config: {
       tension: 450,
       friction: 20,
@@ -575,13 +575,13 @@ function F(e) {
   return (0, r.jsx)(M, I(O({}, e), {
     ariaLabel: L,
     ariaHidden: D,
-    typingOffset: eo,
+    typingOffset: ea,
     specs: en,
     children: (0, r.jsxs)("svg", {
-      width: ea,
-      height: ea,
-      viewBox: "0 0 ".concat(ea, " ").concat(ea),
-      className: a()(b.mask, b.svg),
+      width: eo,
+      height: eo,
+      viewBox: "0 0 ".concat(eo, " ").concat(eo),
+      className: o()(b.mask, b.svg),
       "aria-hidden": !0,
       children: [(0, r.jsxs)("mask", {
         id: Z,
@@ -658,20 +658,20 @@ let Z = i.memo(function(e) {
   var {
     statusColor: t,
     status: n
-  } = e, o = S(e, ["statusColor", "status"]);
+  } = e, a = S(e, ["statusColor", "status"]);
   let {
-    isMobile: a = !1,
+    isMobile: o = !1,
     isTyping: s = !1
-  } = o, l = i.useRef(n), c = i.useRef(a), d = (0, u.vj)(n, t), f = i.useRef(d), _ = i.useRef(!1), p = _.current || V(s, n, l.current, a, c.current);
+  } = a, l = i.useRef(n), c = i.useRef(o), d = (0, u.vj)(n, t), f = i.useRef(d), _ = i.useRef(!1), p = _.current || V(s, n, l.current, o, c.current);
   return i.useLayoutEffect(() => {
-    _.current = p, l.current = n, c.current = a, f.current = d
-  }, [n, a, d, p]), null != n && null != l.current && p ? (0, r.jsx)(F, I(O({}, o), {
+    _.current = p, l.current = n, c.current = o, f.current = d
+  }, [n, o, d, p]), null != n && null != l.current && p ? (0, r.jsx)(F, I(O({}, a), {
     status: n,
     statusColor: d,
     fromStatus: l.current,
     fromIsMobile: c.current,
     fromColor: f.current
-  })) : (0, r.jsx)(U, I(O({}, o), {
+  })) : (0, r.jsx)(U, I(O({}, a), {
     status: n,
     statusColor: d
   }))

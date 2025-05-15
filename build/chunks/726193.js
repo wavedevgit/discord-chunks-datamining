@@ -5,9 +5,9 @@ n.r(t), n.d(t, {
   default: () => y
 });
 var r, i = n(73800),
-  o = n(867309);
+  a = n(867309);
 
-function a(e, t) {
+function o(e, t) {
   e.prototype = Object.create(t.prototype), e.prototype.constructor = e, s(e, t)
 }
 
@@ -20,8 +20,8 @@ function s(e, t) {
 function l(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -86,7 +86,7 @@ let y = function(e, t) {
         throw Error("WrappedComponent: " + u + " lacks a handleClickOutside(event) function for processing outside click events.")
       }, i.__getComponentNode = function() {
         var e = i.getInstance();
-        return t && "function" == typeof t.setClickOutsideRef ? t.setClickOutsideRef()(e) : "function" == typeof e.setClickOutsideRef ? e.setClickOutsideRef() : (0, o.findDOMNode)(e)
+        return t && "function" == typeof t.setClickOutsideRef ? t.setClickOutsideRef()(e) : "function" == typeof e.setClickOutsideRef ? e.setClickOutsideRef() : (0, a.findDOMNode)(e)
       }, i.enableOnClickOutside = function() {
         if ("undefined" != typeof document && !m[i._uid]) {
           void 0 === r && (r = _()), m[i._uid] = !0;
@@ -110,7 +110,7 @@ let y = function(e, t) {
         return i.instanceRef = e
       }, i._uid = p(), i.initTimeStamp = performance.now(), i
     }
-    a(s, n);
+    o(s, n);
     var g = s.prototype;
     return g.getInstance = function() {
       if (e.prototype && !e.prototype.isReactComponent) return this;

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(70780),
   i = n(147913),
-  o = n(710845),
-  a = n(131951),
+  a = n(710845),
+  o = n(131951),
   s = n(936349),
   l = n(70956),
   c = n(358085);
@@ -22,7 +22,7 @@ function u(e, t, n) {
 let d = +l.Z.Millis.SECOND,
   f = 30 * l.Z.Millis.SECOND,
   _ = 360,
-  p = new o.Z("RTCLatencyTestManager");
+  p = new a.Z("RTCLatencyTestManager");
 p.enableNativeLogger(!0);
 class h extends i.Z {
   _terminate() {
@@ -33,7 +33,7 @@ class h extends i.Z {
       POST_CONNECTION_OPEN: () => this._handleConnectionOpen()
     }), u(this, "_handleTestRegionsResponse", e => {
       let t = e.map(e => e.region);
-      s.Z.shouldPerformLatencyTest(t) ? a.Z.getMediaEngine().rankRtcRegions(e).then(e => {
+      s.Z.shouldPerformLatencyTest(t) ? o.Z.getMediaEngine().rankRtcRegions(e).then(e => {
         p.verbose("RTC region latency test completed, ranked regions are: ", e), (0, r.o)(e, t)
       }).catch(e => p.warn(e)) : p.verbose("RTC cached ranked preferred regions are ".concat(s.Z.getPreferredRegions()))
     }), u(this, "_fetchAndScheduleRefetch", () => {

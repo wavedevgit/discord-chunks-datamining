@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  o = n(512722),
-  a = n.n(o),
+  a = n(512722),
+  o = n.n(a),
   s = n(399606),
   l = n(607070),
   c = n(597688),
@@ -49,20 +49,20 @@ function I(e) {
     handleClose: t,
     confettiCanvas: n,
     hideConfetti: i = !1,
-    analyticsLocations: o
+    analyticsLocations: a
   } = e, l = (0, s.e7)([u.Z], () => u.Z.purchases), {
     skusById: f,
     selectedSkuId: _,
     application: h
   } = (0, g.JL)(), m = (0, s.e7)([c.Z], () => c.Z.getProduct(_)), E = (0, d.o)(m, l);
-  a()(null != _, "Expected selectedSkuId"), a()(null != h, "Expected application");
+  o()(null != _, "Expected selectedSkuId"), o()(null != h, "Expected application");
   let O = f[_];
-  return (a()(null != O, "Expected sku"), null == m) ? null : (0, r.jsxs)(b.C3, {
+  return (o()(null != O, "Expected sku"), null == m) ? null : (0, r.jsxs)(b.C3, {
     children: [(0, r.jsx)(y.Z, {}), (0, r.jsx)(p.e, {
       product: m,
       onClose: t,
       confettiCanvas: n,
-      analyticsLocations: o,
+      analyticsLocations: a,
       hideConfetti: i,
       selectedVariantIndex: E
     })]
@@ -73,8 +73,8 @@ function S(e) {
   let {
     isGift: t,
     giftCode: n,
-    selectedGiftStyle: o,
-    hasSentMessage: a,
+    selectedGiftStyle: a,
+    hasSentMessage: o,
     giftRecipient: u,
     giftMessageError: d,
     isSendingMessage: p
@@ -88,8 +88,8 @@ function S(e) {
     children: [(0, r.jsx)(E.Z, {
       giftCode: n,
       onClose: e.handleClose,
-      selectedGiftStyle: o,
-      hasSentMessage: a,
+      selectedGiftStyle: a,
+      hasSentMessage: o,
       giftRecipient: u,
       giftMessageError: d,
       isSendingMessage: p

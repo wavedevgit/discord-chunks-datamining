@@ -5,8 +5,8 @@ n.d(t, {
 }), n(35282), n(388685), n(413496), n(433524);
 var r = n(159635),
   i = n.n(r),
-  o = n(339085),
-  a = n(633302),
+  a = n(339085),
+  o = n(633302),
   s = n(176354),
   l = n(594199);
 
@@ -61,11 +61,11 @@ let _ = {
     order: l.ZP.order,
     requiredFirstCharacters: [":"],
     match(e) {
-      let t = a.ZP.EMOJI_NAME_AND_DIVERSITY_RE.exec(e);
-      return null != t && "" !== a.ZP.convertNameToSurrogate(t[1]) ? t : null
+      let t = o.ZP.EMOJI_NAME_AND_DIVERSITY_RE.exec(e);
+      return null != t && "" !== o.ZP.convertNameToSurrogate(t[1]) ? t : null
     },
     parse(e) {
-      let [t, n] = e, r = a.ZP.convertNameToSurrogate(n);
+      let [t, n] = e, r = o.ZP.convertNameToSurrogate(n);
       return null == r || "" === r ? {
         type: "text",
         content: t
@@ -81,19 +81,19 @@ let _ = {
     requiredFirstCharacters: ["<"],
     match: e => /^<(a)?:(\w+):(\d+)>/.exec(e),
     parse(e, t, n) {
-      let [r, i, a, s] = e, {
+      let [r, i, o, s] = e, {
         guildId: l
-      } = n, c = o.ZP.getDisambiguatedEmojiContext(l).getById(s), u = null == c || c.require_colons;
-      return null != c && (a = c.name), {
+      } = n, c = a.ZP.getDisambiguatedEmojiContext(l).getById(s), u = null == c || c.require_colons;
+      return null != c && (o = c.name), {
         emojiId: s,
-        name: u ? ":".concat(a, ":") : a,
+        name: u ? ":".concat(o, ":") : o,
         animated: "a" === i
       }
     }
   },
   text: {
     parse(e) {
-      let t = a.ZP.findInlineEmojisFromSurrogates(e[0]),
+      let t = o.ZP.findInlineEmojisFromSurrogates(e[0]),
         n = 0;
       return t.map(e => {
         if ("text" === e.type) {

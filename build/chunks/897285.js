@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(147913),
   i = n(914010),
-  o = n(924301),
-  a = n(482241);
+  a = n(924301),
+  o = n(482241);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -21,8 +21,8 @@ let l = {},
   u = new Set,
   d = 18e5,
   f = async e => {
-    if (!(0 === o.ZP.getGuildScheduledEventsForGuild(e).length || c.has(e)) && !u.has(e)) try {
-      c.add(e), await a.Z.getGuildEventsForCurrentUser(e), u.add(e)
+    if (!(0 === a.ZP.getGuildScheduledEventsForGuild(e).length || c.has(e)) && !u.has(e)) try {
+      c.add(e), await o.Z.getGuildEventsForCurrentUser(e), u.add(e)
     } catch (t) {
       c.delete(e)
     }
@@ -33,12 +33,12 @@ class _ extends r.Z {
     if (!(Date.now() - l["".concat(e, "-").concat(t)] < d) || 0 !== r.length) {
       l["".concat(e, "-").concat(t)] = Date.now(), r.forEach(n => l["".concat(e, "-").concat(t, "-").concat(n)] = Date.now());
       try {
-        await a.Z.fetchGuildEventUserCounts(e, t, r)
+        await o.Z.fetchGuildEventUserCounts(e, t, r)
       } catch (e) {}
     }
   }
   getGuildEventUsers(e, t, n) {
-    return a.Z.fetchUsersForGuildEvent(e, t, n)
+    return o.Z.fetchUsersForGuildEvent(e, t, n)
   }
   getGuildEventsForCurrentUser(e) {
     return f(e)
@@ -70,7 +70,7 @@ class _ extends r.Z {
       guildId: t
     } = e;
     if (null != t)
-      for (let e of o.ZP.getGuildScheduledEventsForGuild(t)) try {
+      for (let e of a.ZP.getGuildScheduledEventsForGuild(t)) try {
         await this.getGuildEventUserCounts(t, e.id, [])
       } finally {
         await new Promise(e => setTimeout(e, 200 * Math.random() + 50))

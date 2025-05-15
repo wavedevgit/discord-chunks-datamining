@@ -5,10 +5,10 @@ n.d(t, {
 });
 var r = n(836560);
 let i = 160,
-  o = 500;
-var a = function(e) {
+  a = 500;
+var o = function(e) {
   return e.VERTICAL = "vertical", e.HORIZONTAL = "horizontal", e
-}(a || {});
+}(o || {});
 let s = {
   open: !1,
   orientation: null
@@ -31,7 +31,7 @@ function c() {
 }
 class u extends r.EventEmitter {
   get orientations() {
-    return Object.values(a)
+    return Object.values(o)
   }
   get state() {
     return s
@@ -49,6 +49,6 @@ class u extends r.EventEmitter {
     } else s.open && (s.open = !1, this.emit("changed", s))
   }
   constructor() {
-    super(), setInterval(() => this.check(), o)
+    super(), setInterval(() => this.check(), a)
   }
 }

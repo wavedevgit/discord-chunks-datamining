@@ -1,6 +1,6 @@
 /** Chunk was on web.js **/
 "use strict";
-var r, i, o, a = n(848120),
+var r, i, a, o = n(848120),
   s = n(507604),
   l = n(127849),
   c = n(880181),
@@ -30,7 +30,7 @@ var r, i, o, a = n(848120),
   L = y("toStringTag"),
   x = O("TYPED_ARRAY_TAG"),
   k = "TypedArrayConstructor",
-  M = a && !!b && "Opera" !== f(l.opera),
+  M = o && !!b && "Opera" !== f(l.opera),
   j = !1,
   U = {
     Int8Array: 1,
@@ -76,12 +76,12 @@ var r, i, o, a = n(848120),
     if (s) {
       if (n)
         for (var i in U) {
-          var o = l[i];
-          if (o && d(o.prototype, e)) try {
-            delete o.prototype[e]
+          var a = l[i];
+          if (a && d(a.prototype, e)) try {
+            delete a.prototype[e]
           } catch (n) {
             try {
-              o.prototype[e] = t
+              a.prototype[e] = t
             } catch (e) {}
           }
         }(!R[e] || n) && h(R, e, n ? t : M && A[e] || t, r)
@@ -105,8 +105,8 @@ var r, i, o, a = n(848120),
       for (r in U)(i = l[r]) && (!i[e] || n) && h(i, e, t)
     }
   };
-for (r in U)(o = (i = l[r]) && i.prototype) ? I(o)[k] = i : M = !1;
-for (r in G)(o = (i = l[r]) && i.prototype) && (I(o)[k] = i);
+for (r in U)(a = (i = l[r]) && i.prototype) ? I(a)[k] = i : M = !1;
+for (r in G)(a = (i = l[r]) && i.prototype) && (I(a)[k] = i);
 if ((!M || !c(P) || P === Function.prototype) && (P = function() {
     throw new D("Incorrect invocation")
   }, M))

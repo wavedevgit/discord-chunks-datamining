@@ -2,14 +2,14 @@
 "use strict";
 n.d(t, {
   $i: () => c,
-  Xv: () => o,
-  Zo: () => a,
+  Xv: () => a,
+  Zo: () => o,
   ai: () => s,
   jJ: () => l
 });
 var r = n(818083),
   i = n(293810);
-let o = (0, r.B)({
+let a = (0, r.B)({
     kind: "guild",
     id: "2021-06_guild_role_subscriptions",
     label: "Guild Role Subscriptions",
@@ -24,7 +24,7 @@ let o = (0, r.B)({
       }
     }]
   }),
-  a = (0, r.B)({
+  o = (0, r.B)({
     kind: "user",
     id: "2021-08_guild_role_subscription_users",
     label: "Guild Role Subscription Users",

@@ -1,16 +1,16 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  IH: () => o,
-  qC: () => a
+  IH: () => a,
+  qC: () => o
 }), n(539854);
 let r = 10,
   i = [];
 
-function o(e) {
+function a(e) {
   for (i.push(e); i.length > r;) i.shift()
 }
 
-function a() {
+function o() {
   return i.join(" -> ")
 }

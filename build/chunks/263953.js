@@ -3,8 +3,8 @@
 n.d(t, {
   q: () => E
 }), n(388685);
-var r, i, o = n(255367),
-  a = n(73800),
+var r, i, a = n(255367),
+  o = n(73800),
   s = n(120356),
   l = n.n(s),
   c = n(748780),
@@ -50,7 +50,7 @@ function m(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class g extends(r = a.PureComponent) {
+class g extends(r = o.PureComponent) {
   componentDidMount() {
     if (null != this._measureRef.current) {
       let {
@@ -163,8 +163,8 @@ class g extends(r = a.PureComponent) {
     } = this.props, {
       animationProgress: r,
       animationState: i,
-      baseHeight: o,
-      targetHeight: a
+      baseHeight: a,
+      targetHeight: o
     } = this.state, s = null != (e = this.props.sideMargin) ? e : 0, l = null != (t = this.props.verticalMargin) ? t : 0, u = 1 === i, d = 0 === i;
     return m(p({}, {
       overflow: d || u ? "hidden" : "visible",
@@ -182,7 +182,7 @@ class g extends(r = a.PureComponent) {
       }),
       height: d ? r.interpolate({
         inputRange: [0, 1],
-        outputRange: [o, a],
+        outputRange: [a, o],
         extrapolate: "clamp",
         easing: c.Z.Easing.inOut(c.Z.Easing.ease)
       }) : n ? "100%" : "auto"
@@ -197,20 +197,20 @@ class g extends(r = a.PureComponent) {
     } = this.props, {
       animationState: i
     } = this.state;
-    return e ? (0, o.jsx)("div", {
+    return e ? (0, a.jsx)("div", {
       ref: this._measureRef,
       className: l()(f.measurementFill, t, {
         [l()(f.measurementFillStatic, r)]: 3 === i
       }),
-      children: (0, o.jsx)(c.Z.div, {
+      children: (0, a.jsx)(c.Z.div, {
         className: l()(f.animatedNode, n),
         style: this.getAnimatedStyle(),
         children: this.props.children
       })
-    }) : (0, o.jsx)("div", {
+    }) : (0, a.jsx)("div", {
       ref: this._measureRef,
       className: l()(f.measurement, t),
-      children: (0, o.jsx)(c.Z.div, {
+      children: (0, a.jsx)(c.Z.div, {
         className: l()(f.animatedNode, n),
         style: this.getAnimatedStyle(),
         children: this.props.children
@@ -223,13 +223,13 @@ class g extends(r = a.PureComponent) {
       targetHeight: 0,
       baseHeight: 0,
       animationState: null
-    }), _(this, "direction", this.props.getDirection()), _(this, "_measureRef", a.createRef())
+    }), _(this, "direction", this.props.getDirection()), _(this, "_measureRef", o.createRef())
   }
 }
 _(g, "contextType", d.S), _(g, "defaultProps", {
   duration: 300
 });
-class E extends(i = a.Component) {
+class E extends(i = o.Component) {
   componentDidMount() {
     this.setPrevSteps()
   }
@@ -250,18 +250,18 @@ class E extends(i = a.Component) {
       innerClassName: n,
       animatedNodeClassName: r,
       staticClassName: i,
-      sideMargin: a,
+      sideMargin: o,
       verticalMargin: s,
       children: c,
       fillParent: d,
       animationMotionType: _
     } = this.props;
-    return (0, o.jsx)(u.W, {
+    return (0, a.jsx)(u.W, {
       component: "div",
       className: l()(f.transitionGroup, t),
-      children: (0, o.jsx)(g, {
+      children: (0, a.jsx)(g, {
         fillParent: d,
-        sideMargin: a,
+        sideMargin: o,
         animationMotionType: null != _ ? _ : "slide",
         verticalMargin: s,
         getDirection: this.getDirection,

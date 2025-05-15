@@ -7,8 +7,8 @@ n.d(t, {
 });
 var r = n(570140),
   i = n(579806),
-  o = n(15624),
-  a = n(710845),
+  a = n(15624),
+  o = n(710845),
   s = n(314897),
   l = n(626135),
   c = n(931619),
@@ -57,7 +57,7 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = new a.Z("ConnectionStore"),
+let y = new o.Z("ConnectionStore"),
   O = new d.Z,
   v = new f.Z(O),
   I = new _.Z(O);
@@ -66,7 +66,7 @@ O.handleIdentify = () => {
   if (y.verbose("handleIdentify called", {
       hasToken: null != e
     }), null == e) return null;
-  let t = o.Z.getState(),
+  let t = a.Z.getState(),
     n = h.Z.getLatestTaskRunOn(),
     r = null != n ? (Date.now() - n) / 1e3 : null,
     i = {

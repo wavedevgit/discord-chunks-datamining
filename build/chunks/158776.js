@@ -5,9 +5,9 @@ n.d(t, {
   f: () => P
 }), n(361932), n(187205), n(388685), n(583741), n(642613), n(539854);
 var r, i = n(348327),
-  o = n.n(i),
-  a = n(392711),
-  s = n.n(a),
+  a = n.n(i),
+  o = n(392711),
+  s = n.n(o),
   l = n(442837),
   c = n(570140),
   u = n(122810),
@@ -76,13 +76,16 @@ function R(e) {
       let n = t.processedAtTimestamp,
         r = e.processedAtTimestamp,
         i = null != t.activities ? t.activities.length : 0,
-        o = null != e.activities ? e.activities.length : 0;
-      return n > r || n === r && i > o ? t : e
+        a = null != e.activities ? e.activities.length : 0;
+      return n > r || n === r && i > a ? t : e
     }, t[0]);
-  n.status !== p.Skl.OFFLINE ? (E[e] = n.status, b[e] = n.activities, y[e] = w(Object.values(t).flatMap(e => {
+  n.status !== p.Skl.OFFLINE || null != n.hiddenActivities && n.hiddenActivities.length > 0 ? (E[e] = n.status, b[e] = n.activities, y[e] = w(Object.values(t).flatMap(e => {
     var t;
     return null != (t = e.hiddenActivities) ? t : []
-  })), null != n.clientStatus && (O[e] = n.clientStatus)) : s().every(g[e], e => e.status === p.Skl.OFFLINE) && delete g[e]
+  })), null != n.clientStatus && (O[e] = n.clientStatus)) : s().every(g[e], e => e.status === p.Skl.OFFLINE && (null == e.hiddenActivities || 0 === e.hiddenActivities.length)) ? delete g[e] : n.status === p.Skl.OFFLINE && t.some(e => null != e.hiddenActivities && e.hiddenActivities.length > 0) && (y[e] = w(Object.values(t).flatMap(e => {
+    var t;
+    return null != (t = e.hiddenActivities) ? t : []
+  })))
 }
 
 function w(e) {
@@ -96,7 +99,10 @@ function D(e) {
   let t = g[e];
   if (null == t) return;
   let n = s().maxBy(Object.values(t), e => e.processedAtTimestamp);
-  n.status !== p.Skl.OFFLINE && (E[e] = n.status, b[e] = n.activities, y[e] = n.hiddenActivities, null != n.clientStatus && (O[e] = n.clientStatus))
+  if (n.status !== p.Skl.OFFLINE || null != n.hiddenActivities && n.hiddenActivities.length > 0) {
+    var r;
+    E[e] = n.status, b[e] = n.activities, y[e] = null != (r = n.hiddenActivities) ? r : [], null != n.clientStatus && (O[e] = n.clientStatus)
+  }
 }
 
 function L(e) {
@@ -105,17 +111,18 @@ function L(e) {
     userId: n,
     status: r,
     clientStatus: i,
-    activities: a,
+    activities: o,
     hiddenActivities: s,
     processedAtTimestamp: l
   } = e;
   if (n === f.default.getId()) return !1;
-  let c = g[n];
-  if (null == c) {
-    if (r === p.Skl.OFFLINE) return !1;
-    c = g[n] = {}
+  let c = r === p.Skl.OFFLINE && (null == s || 0 === s.length),
+    u = g[n];
+  if (null == u) {
+    if (c) return !1;
+    u = g[n] = {}
   }
-  if (r === p.Skl.OFFLINE) c[t] = {
+  if (c) u[t] = {
     status: r,
     clientStatus: i,
     activities: m,
@@ -123,12 +130,12 @@ function L(e) {
     processedAtTimestamp: l
   };
   else {
-    let e = a.length > 1 ? [...a].sort(P) : a,
-      n = c[t];
-    a = null != n && o()(n.activities, e) ? n.activities : e, c[t] = {
+    let e = o.length > 1 ? [...o].sort(P) : o,
+      n = u[t];
+    o = null != n && a()(n.activities, e) ? n.activities : e, u[t] = {
       status: r,
       clientStatus: i,
-      activities: a,
+      activities: o,
       hiddenActivities: s,
       processedAtTimestamp: l
     }
@@ -142,17 +149,18 @@ function x(e) {
     userId: n,
     status: r,
     clientStatus: i,
-    activities: o,
-    hiddenActivities: a,
+    activities: a,
+    hiddenActivities: o,
     processedAtTimestamp: s
   } = e;
   if (n === f.default.getId()) return;
-  let l = g[n];
-  if (null == l) {
-    if (r === p.Skl.OFFLINE) return;
-    l = g[n] = {}
+  let l = r === p.Skl.OFFLINE && (null == o || 0 === o.length),
+    c = g[n];
+  if (null == c) {
+    if (l) return;
+    c = g[n] = {}
   }
-  if (r === p.Skl.OFFLINE) l[t] = {
+  if (l) c[t] = {
     status: r,
     clientStatus: i,
     activities: m,
@@ -160,12 +168,12 @@ function x(e) {
     processedAtTimestamp: s
   };
   else {
-    let e = o.length > 1 ? [...o].sort(P) : o;
-    l[t] = {
+    let e = a.length > 1 ? [...a].sort(P) : a;
+    c[t] = {
       status: r,
       clientStatus: i,
       activities: e,
-      hiddenActivities: a,
+      hiddenActivities: o,
       processedAtTimestamp: s
     }
   }
@@ -206,8 +214,8 @@ function U(e) {
       let {
         user: n,
         status: r,
-        clientStatus: o,
-        activities: a,
+        clientStatus: a,
+        activities: o,
         hiddenActivities: s,
         processedAtTimestamp: l
       } = t;
@@ -215,8 +223,8 @@ function U(e) {
         guildId: e.id,
         userId: n.id,
         status: r,
-        clientStatus: o,
-        activities: a,
+        clientStatus: a,
+        activities: o,
         hiddenActivities: s,
         processedAtTimestamp: l
       }), i.add(n.id)
@@ -226,8 +234,8 @@ function U(e) {
       user: t,
       status: n,
       clientStatus: r,
-      activities: o,
-      hiddenActivities: a,
+      activities: a,
+      hiddenActivities: o,
       processedAtTimestamp: s
     } = e;
     null != t && (x({
@@ -235,8 +243,8 @@ function U(e) {
       userId: t.id,
       status: n,
       clientStatus: r,
-      activities: o,
-      hiddenActivities: a,
+      activities: a,
+      hiddenActivities: o,
       processedAtTimestamp: s
     }), i.add(t.id))
   }), i.delete(r), i.forEach(D)
@@ -259,8 +267,8 @@ function B(e) {
       status: n,
       clientStatus: r,
       activities: i,
-      hiddenActivities: o,
-      processedAtTimestamp: a
+      hiddenActivities: a,
+      processedAtTimestamp: o
     } = e;
     null != t && L({
       guildId: p.ME,
@@ -268,8 +276,8 @@ function B(e) {
       status: n,
       clientStatus: r,
       activities: i,
-      hiddenActivities: o,
-      processedAtTimestamp: a
+      hiddenActivities: a,
+      processedAtTimestamp: o
     })
   })
 }
@@ -283,8 +291,8 @@ function F(e) {
       user: n,
       status: r,
       clientStatus: i,
-      activities: o,
-      hiddenActivities: a,
+      activities: a,
+      hiddenActivities: o,
       processedAtTimestamp: s
     } = e;
     L({
@@ -292,8 +300,8 @@ function F(e) {
       userId: n.id,
       status: r,
       clientStatus: i,
-      activities: o,
-      hiddenActivities: a,
+      activities: a,
+      hiddenActivities: o,
       processedAtTimestamp: s
     })
   })
@@ -324,8 +332,8 @@ function H(e) {
       user: n,
       status: r,
       clientStatus: i,
-      activities: o,
-      hiddenActivities: a,
+      activities: a,
+      hiddenActivities: o,
       processedAtTimestamp: s
     } = e;
     return L({
@@ -333,8 +341,8 @@ function H(e) {
       userId: n.id,
       status: r,
       clientStatus: i,
-      activities: o,
-      hiddenActivities: a,
+      activities: a,
+      hiddenActivities: o,
       processedAtTimestamp: s
     })
   }).some(e => e)
@@ -400,11 +408,11 @@ class q extends(r = l.ZP.Store) {
     var t, n;
     let r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
       i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : p.Skl.OFFLINE,
-      o = _.default.getUser(e);
-    if (null != o && o.hasFlag(p.xW$.BOT_HTTP_INTERACTIONS) && (i = p.Skl.UNKNOWN), null == o ? void 0 : o.isClyde()) return p.Skl.ONLINE;
+      a = _.default.getUser(e);
+    if (null != a && a.hasFlag(p.xW$.BOT_HTTP_INTERACTIONS) && (i = p.Skl.UNKNOWN), null == a ? void 0 : a.isClyde()) return p.Skl.ONLINE;
     if (null == r) return null != (t = E[e]) ? t : i;
-    let a = I(e, r);
-    return null != (n = null == a ? void 0 : a.status) ? n : i
+    let o = I(e, r);
+    return null != (n = null == o ? void 0 : o.status) ? n : i
   }
   getActivities(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;

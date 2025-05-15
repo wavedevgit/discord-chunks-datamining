@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   Hr: () => i,
-  Ku: () => o,
-  ZP: () => a
+  Ku: () => a,
+  ZP: () => o
 });
 let r = (0, n(818083).B)({
   kind: "user",
@@ -32,7 +32,7 @@ function i(e, t) {
   return n
 }
 
-function o(e, t) {
+function a(e, t) {
   let {
     showGameIcon: n
   } = r.getCurrentConfig({
@@ -42,4 +42,4 @@ function o(e, t) {
   });
   return n
 }
-let a = r
+let o = r

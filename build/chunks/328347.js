@@ -4,8 +4,8 @@ let r;
 n.d(t, {
   Z: () => h
 });
-var i, o = n(442837),
-  a = n(570140);
+var i, a = n(442837),
+  o = n(570140);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -28,7 +28,7 @@ let l = [],
   _ = e => {
     e.item.skuId === r && (r = void 0)
   };
-class p extends(i = o.ZP.Store) {
+class p extends(i = a.ZP.Store) {
   get analyticsLocations() {
     return c
   }
@@ -46,7 +46,7 @@ class p extends(i = o.ZP.Store) {
   }
 }
 s(p, "displayName", "CollectiblesShopStore");
-let h = new p(a.Z, {
+let h = new p(o.Z, {
   COLLECTIBLES_SHOP_OPEN: d,
   COLLECTIBLES_SHOP_CLOSE: f,
   COLLECTIBLES_PRODUCT_DETAILS_OPEN: _,

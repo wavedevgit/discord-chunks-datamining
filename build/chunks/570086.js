@@ -2,8 +2,8 @@
 "use strict";
 var r = n(98405),
   i = n(127849),
-  o = n(154028),
-  a = n(530575),
+  a = n(154028),
+  o = n(530575),
   s = n(117895).f,
   l = n(77025),
   c = n(170322),
@@ -14,8 +14,8 @@ var r = n(98405),
   p = n(507604),
   h = n(511696),
   m = "DOMException",
-  g = o("Error"),
-  E = o(m),
+  g = a("Error"),
+  E = a(m),
   b = function() {
     c(this, y);
     var e = arguments.length,
@@ -23,7 +23,7 @@ var r = n(98405),
       n = d(e < 2 ? void 0 : arguments[1], "Error"),
       r = new E(t, n),
       i = new g(t);
-    return i.name = m, s(r, "stack", a(1, _(i.stack, 1))), u(r, this, b), r
+    return i.name = m, s(r, "stack", o(1, _(i.stack, 1))), u(r, this, b), r
   },
   y = b.prototype = E.prototype,
   O = "stack" in new g(m),
@@ -38,13 +38,13 @@ r({
 }, {
   DOMException: T ? b : E
 });
-var A = o(m),
+var A = a(m),
   N = A.prototype;
 if (N.constructor !== A) {
-  for (var C in h || s(N, "constructor", a(1, A)), f)
+  for (var C in h || s(N, "constructor", o(1, A)), f)
     if (l(f, C)) {
       var P = f[C],
         R = P.s;
-      l(A, R) || s(A, R, a(6, P.c))
+      l(A, R) || s(A, R, o(6, P.c))
     }
 }
