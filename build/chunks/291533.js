@@ -1,20 +1,25 @@
 /** Chunk was on 43498 **/
 n.d(t, {
-  G: () => u
+  G: () => h
 });
 var i = n(442837),
   r = n(704215),
   l = n(243778),
   o = n(999382),
-  s = n(819640),
-  a = n(562511);
-let c = 12633 == n.j ? 18e4 : null;
+  s = n(667105),
+  a = n(819640),
+  c = n(562511),
+  u = n(46140);
+let d = 12633 == n.j ? 18e4 : null;
 
-function u(e) {
-  let t = (0, a.A2)(e),
+function h(e) {
+  let t = (0, c.A2)(e),
     n = (0, i.e7)([o.Z], () => o.Z.isOpen()),
-    u = (0, i.e7)([s.Z], () => s.Z.hasLayers());
-  return (0, l.bf)(!t || n || u ? null : r.z.GUILD_TAG_AVAILABLE_COACHMARK, {
-    cooldownDurationMs: c
+    h = (0, i.e7)([a.Z], () => a.Z.hasLayers()),
+    p = (0, s.Ws)({
+      location: u.dr.QUESTS_BAR
+    });
+  return (0, l.bf)(t && !n && !h && p ? r.z.GUILD_TAG_AVAILABLE_COACHMARK : null, {
+    cooldownDurationMs: d
   })
 }
