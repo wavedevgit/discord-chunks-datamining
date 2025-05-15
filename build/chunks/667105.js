@@ -344,6 +344,12 @@ function Z(e) {
   } = e, n = V({
     location: t,
     quest: F()
-  });
-  return 0 !== (0, o.e7)([b.Z], () => b.Z.lastFetchedCurrentQuests) && !n
+  }), {
+    lastFetchedCurrentQuests: r,
+    lastFetchedQuestToDeliver: i
+  } = (0, o.cj)([b.Z], () => ({
+    lastFetchedCurrentQuests: b.Z.lastFetchedCurrentQuests,
+    lastFetchedQuestToDeliver: b.Z.lastFetchedQuestToDeliver
+  }));
+  return 0 !== r && 0 !== i && !n
 }

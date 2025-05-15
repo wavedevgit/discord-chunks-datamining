@@ -94,7 +94,12 @@ let tu = "message1",
       to(this, "_channels", {})
     }
   };
-async function tS(t) {
+
+function tS(t, e, n) {
+  let i = t.filter(t => t.type === tl.IIU.PLAYING && null != t.application_id).map(t => t.application_id);
+  return n === o.Tv.ONLY_GAMES_PLAYED ? i.filter(t => N.Z.currentUserApplicationIds.has(t)) : i
+}
+async function tp(t) {
   let e = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     n = new Set,
     i = (0, Z.W7)(t),
@@ -104,16 +109,15 @@ async function tS(t) {
       activities: e,
       user: i
     } = t;
-    if (0 === e.length || X.Z.isIgnored(i.id)) return !1;
-    let l = tp(e);
-    a === o.Tv.ONLY_GAMES_PLAYED && (l = l.filter(t => N.Z.currentUserApplicationIds.has(t))), n = new Set([...n, ...l])
+    if (0 === e.length || X.Z.isIgnored(i.id)) return;
+    let l = tS(e, i, a);
+    0 !== l.length && (n = new Set([...n, ...l]))
   }), await S.ZP.fetchApplications([...n], !1)), i.forEach(t => {
     let {
       activities: n,
       user: i,
-      guildId: a
+      guildId: r
     } = t;
-    if (0 === n.length || X.Z.isIgnored(i.id)) return !1;
     ! function(t, e, n, i) {
       let a = tI(e);
       if (0 === t.length && 0 === a.length) return;
@@ -151,12 +155,8 @@ async function tS(t) {
           }))
         }
       }), 0 === tI(e).length && delete t_[e]
-    }(tp(n), i.id, e, null != a ? a : 0)
+    }(tS(n, i, a), i.id, e, null != r ? r : 0)
   })
-}
-
-function tp(t) {
-  return t.filter(t => t.type === tl.IIU.PLAYING && null != t.application_id).map(t => t.application_id)
 }
 
 function tI(t) {
@@ -532,7 +532,7 @@ to(tZ, "displayName", "NotificationStore"), new tZ(s.Z, __OVERLAY__ ? {} : {
       guilds: n,
       presences: i
     } = t;
-    tg = e, tE.clear(), n.forEach(t => t.stage_instances.forEach(t => tE.add(t.id))), (0, Z.uw)("NotificationStore") && (0, A.MH)() !== o.Tv.ACTIVITY_NOTIFICATIONS_DISABLED && tS(i, !1)
+    tg = e, tE.clear(), n.forEach(t => t.stage_instances.forEach(t => tE.add(t.id))), (0, Z.uw)("NotificationStore") && (0, A.MH)() !== o.Tv.ACTIVITY_NOTIFICATIONS_DISABLED && tp(i, !1)
   },
   MESSAGE_REMINDER_DUE: function(t) {
     let {
@@ -560,6 +560,6 @@ to(tZ, "displayName", "NotificationStore"), new tZ(s.Z, __OVERLAY__ ? {} : {
     let {
       updates: e
     } = t;
-    (0, Z.uw)("handlePresenceUpdates") && (0, A.MH)() !== o.Tv.ACTIVITY_NOTIFICATIONS_DISABLED && tS(e)
+    (0, Z.uw)("handlePresenceUpdates") && (0, A.MH)() !== o.Tv.ACTIVITY_NOTIFICATIONS_DISABLED && tp(e)
   }
 })
