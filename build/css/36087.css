@@ -1,6 +1,6 @@
 /**
   Module ID: 36087
-  Original File Name: c356b047c5ea1fbc
+  Original File Name: 0f0d7a5fc6d9eb0e
 **/
 .descriptionText__535f5 {
     color: var(--header-secondary);
@@ -5905,17 +5905,25 @@ html .progress__61462 {
     width: 100px
 }
 
+.avatar__8c0e2 {
+    margin-right: var(--spacing-4)
+}
+
+.username__8c0e2 a {
+    color: unset
+}
+
+.timestampSeparator__8c0e2 {
+    margin: 0 var(--spacing-4)
+}
+
+.timestamp__8c0e2 {
+    margin: 0
+}
+
 .container__0ed20 {
     display: flex;
     width: 100%
-}
-
-.quote__0ed20 {
-    background-color: var(--border-subtle);
-    border-radius: 2px;
-    flex-shrink: 0;
-    margin-right: var(--spacing-12);
-    width: 4px
 }
 
 .content__0ed20 {
@@ -5982,12 +5990,6 @@ html .progress__61462 {
     border-radius: 4px;
     height: 16px;
     width: 16px
-}
-
-.messageHeader__0ed20 {
-    align-items: center;
-    display: flex;
-    gap: var(--spacing-4)
 }
 
 .safetyPolicyNoticeContainer_e80b85 {
@@ -11664,4 +11666,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=c356b047c5ea1fbc.css.map*/
+/*# sourceMappingURL=0f0d7a5fc6d9eb0e.css.map*/
