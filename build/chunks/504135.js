@@ -83,10 +83,11 @@ function b(e) {
     onSelect: M,
     onInteraction: j
   } = i.useContext(c.p), U = i.useRef(null), G = i.useCallback(e => {
+    var t;
     if (null == j || j({
         type: c.U.DEFAULT
       }), null == A) return !1;
-    e.shiftKey && D || L || N(), e.persist(), null == M || M(), requestAnimationFrame(() => A(e))
+    e.shiftKey && D || L || N(), e.persist(), null == M || M(), (null != (t = e.nativeEvent.view) ? t : window).requestAnimationFrame(() => A(e))
   }, [A, N, M, D, L, j]);
   return i.useEffect(() => {
     S && ((0, u.F)(U), null == C || C())
