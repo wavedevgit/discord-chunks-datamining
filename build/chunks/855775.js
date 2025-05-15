@@ -5,7 +5,7 @@ n.d(t, {
   Z: () => H,
   c: () => _
 }), n(388685);
-var a, o = n(442837),
+var o, a = n(442837),
   s = n(570140),
   l = n(981631);
 
@@ -152,7 +152,7 @@ function V(e) {
   if (!t || null == N) return !1;
   T = !1, N = null, P()
 }
-class Z extends(a = o.ZP.Store) {
+class Z extends(o = a.ZP.Store) {
   getPricesForSku(e) {
     return b[e]
   }

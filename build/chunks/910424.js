@@ -60,7 +60,7 @@ function v(e) {
     onAction: j
   } = e, {
     activeStream: P,
-    watchingOtherStream: E
+    watchingOtherStream: I
   } = (0, l.cj)([d.Z], () => ({
     activeStream: d.Z.getActiveStreamForApplicationStream(S),
     watchingOtherStream: null != S && d.Z.getAllActiveStreamsForChannel(S.channelId).filter(e => {
@@ -69,14 +69,14 @@ function v(e) {
       } = e;
       return t !== S.ownerId
     }).length > 0
-  })), I = (0, l.e7)([p.Z], () => p.Z.getChannel(null == S ? void 0 : S.channelId)), [Z, x] = (0, u.wq)(I), C = (0, c.Aq)(), T = null != P && null != S && P.state !== g.jm8.ENDED && P.ownerId === S.ownerId, N = e => {
+  })), E = (0, l.e7)([p.Z], () => p.Z.getChannel(null == S ? void 0 : S.channelId)), [Z, x] = (0, u.wq)(E), C = (0, c.Aq)(), T = null != P && null != S && P.state !== g.jm8.ENDED && P.ownerId === S.ownerId, A = e => {
     null != S && (null == j || j(), a.default.selectVoiceChannel(S.channelId), T || (0, s.iV)(S, {
       forceMultiple: e
     }), C.dispatch(g.CkL.POPOUT_CLOSE), f.S.dispatch(g.CkL.MODAL_CLOSE), o.Z.popAll())
   };
   if (null == S) return null;
-  let A = (0, u.P9)(x);
-  t ? A = b.intl.string(b.t.XvBdeX) : T && (A = b.intl.string(b.t.JH1SJy));
+  let N = (0, u.P9)(x);
+  t ? N = b.intl.string(b.t.XvBdeX) : T && (N = b.intl.string(b.t.JH1SJy));
   let w = {
     color: n,
     look: v
@@ -84,20 +84,20 @@ function v(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(m.Z, y(h({
       disabled: t || T || !Z,
-      onClick: () => N(!1)
+      onClick: () => A(!1)
     }, w), {
       fullWidth: !0,
       children: [(0, r.jsx)(i.hGI, {
         size: "md",
         color: "currentColor",
         className: O.streamIcon
-      }), A]
-    }), "play"), E && !T ? (0, r.jsx)(i.ua7, {
+      }), N]
+    }), "play"), I && !T ? (0, r.jsx)(i.ua7, {
       text: b.intl.string(b.t.wCrzur),
       children: e => (0, r.jsx)(m.Z, y(h(y(h({}, e), {
         onClick: () => {
           var t;
-          null == (t = e.onClick) || t.call(e), N(!0)
+          null == (t = e.onClick) || t.call(e), A(!0)
         }
       }), w), {
         className: O.iconButton,

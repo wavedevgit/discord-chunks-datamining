@@ -24,7 +24,7 @@ e.exports = function(e) {
       end: /\}/,
       contains: r.contains
     },
-    a = {
+    o = {
       className: "string",
       begin: "'\\\\?.",
       end: "'",
@@ -59,7 +59,7 @@ e.exports = function(e) {
       end: "$",
       keywords: "port",
       contains: [t]
-    }, a, e.QUOTE_STRING_MODE, e.C_NUMBER_MODE, n, e.inherit(e.TITLE_MODE, {
+    }, o, e.QUOTE_STRING_MODE, e.C_NUMBER_MODE, n, e.inherit(e.TITLE_MODE, {
       begin: "^[_a-z][\\w']*"
     }), t, {
       begin: "->|<-"

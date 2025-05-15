@@ -90,8 +90,8 @@ let g = e => {
       tabIndex: g = -1,
       "aria-label": m,
       filters: f,
-      setLoading: b
-    } = e, p = l.useRef(null), O = l.useRef(null), [y, j] = l.useState(!1);
+      setLoading: p
+    } = e, b = l.useRef(null), O = l.useRef(null), [y, j] = l.useState(!1);
     l.useEffect(() => {
       y && x()
     }, [y]);
@@ -99,7 +99,7 @@ let g = e => {
         null !== O.current && ((0, i.Mr3)(O.current), O.current = null)
       },
       w = async e => {
-        null == b || b(!0), await h(e, t), j(!0), null == b || b(!1)
+        null == p || p(!0), await h(e, t), j(!0), null == p || p(!1)
       }, _ = async e => {
         var t, l, a;
         if (e.stopPropagation(), e.preventDefault(), (null == (t = e.currentTarget) ? void 0 : t.files) == null || (null == (a = e.currentTarget) || null == (l = a.files) ? void 0 : l.length) === 0) return;
@@ -121,6 +121,6 @@ let g = e => {
       className: d,
       tabIndex: g,
       "aria-label": m,
-      ref: p
+      ref: b
     })
   }

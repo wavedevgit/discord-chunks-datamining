@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(73800),
   i = n(952683),
-  a = n(116805);
-let o = e => {
+  o = n(116805);
+let a = e => {
     let t = "translate(".concat(e.x.toFixed(1), "px, ").concat(e.y.toFixed(1), "px)");
     return {
       pointerEvents: "none",
@@ -20,7 +20,7 @@ let o = e => {
   s = () => {
     let e = (0, r.useRef)(null),
       t = (0, i.f)(t => ({
-        currentOffset: (0, a.s)(t, e),
+        currentOffset: (0, o.s)(t, e),
         isDragging: t.isDragging(),
         itemType: t.getItemType(),
         item: t.getItem(),
@@ -30,7 +30,7 @@ let o = e => {
       display: !0,
       itemType: t.itemType,
       item: t.item,
-      style: o(t.currentOffset),
+      style: a(t.currentOffset),
       monitor: t.monitor,
       ref: e
     } : {

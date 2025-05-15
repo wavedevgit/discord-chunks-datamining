@@ -11,9 +11,9 @@ n.d(t, {
 }), n(997841);
 var r = n(544891),
   i = n(570140),
-  a = n(408987);
+  o = n(408987);
 n(777639);
-var o = n(346479);
+var a = n(346479);
 n(388610);
 var s = n(592125),
   l = n(37234),
@@ -50,8 +50,8 @@ function p(e) {
     name: t,
     type: n,
     topic: r,
-    bitrate: a,
-    userLimit: o,
+    bitrate: o,
+    userLimit: a,
     nsfw: s,
     flags: l,
     rateLimitPerUser: c,
@@ -76,8 +76,8 @@ function p(e) {
     name: t,
     channelType: n,
     topic: r,
-    bitrate: a,
-    userLimit: o,
+    bitrate: o,
+    userLimit: a,
     nsfw: s,
     flags: l,
     rateLimitPerUser: c,
@@ -128,7 +128,7 @@ async function h(e, t) {
   } = t, L = s.Z.getChannel(e);
   return i.Z.dispatch({
     type: "CHANNEL_SETTINGS_SUBMIT"
-  }), await o.Z.unarchiveThreadIfNecessary(e), r.tn.patch({
+  }), await a.Z.unarchiveThreadIfNecessary(e), r.tn.patch({
     url: c.ANM.CHANNEL(e),
     body: {
       name: n,
@@ -177,7 +177,7 @@ async function h(e, t) {
       channelId: e
     });
     let n = null == L ? void 0 : L.getGuildId();
-    return null == n || (null == L ? void 0 : L.isThread()) || a.Z.checkGuildTemplateDirty(n), t
+    return null == n || (null == L ? void 0 : L.isThread()) || o.Z.checkGuildTemplateDirty(n), t
   }, e => (i.Z.dispatch({
     type: "CHANNEL_SETTINGS_SUBMIT_FAILURE",
     errors: e.body
@@ -192,7 +192,7 @@ function m(e) {
     rejectWithError: !0
   }).then(() => {
     let e = null == t ? void 0 : t.getGuildId();
-    null == e || (null == t ? void 0 : t.isThread()) || a.Z.checkGuildTemplateDirty(e), f()
+    null == e || (null == t ? void 0 : t.isThread()) || o.Z.checkGuildTemplateDirty(e), f()
   })
 }
 let g = {

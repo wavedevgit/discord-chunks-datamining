@@ -10,13 +10,13 @@ e.exports = function(e) {
     i = e.inherit(e.TITLE_MODE, {
       begin: r
     }),
-    a = {
+    o = {
       className: "variable",
       begin: "\\$" + r
     },
-    o = {
+    a = {
       className: "string",
-      contains: [e.BACKSLASH_ESCAPE, a],
+      contains: [e.BACKSLASH_ESCAPE, o],
       variants: [{
         begin: /'/,
         end: /'/
@@ -28,7 +28,7 @@ e.exports = function(e) {
   return {
     name: "Puppet",
     aliases: ["pp"],
-    contains: [n, a, o, {
+    contains: [n, o, a, {
       beginKeywords: "class",
       end: "\\{|;",
       illegal: /=/,
@@ -54,7 +54,7 @@ e.exports = function(e) {
         end: /\}/,
         keywords: t,
         relevance: 0,
-        contains: [o, n, {
+        contains: [a, n, {
           begin: "[a-zA-Z_]+\\s*=>",
           returnBegin: !0,
           end: "=>",
@@ -66,7 +66,7 @@ e.exports = function(e) {
           className: "number",
           begin: "(\\b0[0-7_]+)|(\\b0x[0-9a-fA-F_]+)|(\\b[1-9][0-9_]*(\\.[0-9_]+)?)|[0_]\\b",
           relevance: 0
-        }, a]
+        }, o]
       }],
       relevance: 0
     }]

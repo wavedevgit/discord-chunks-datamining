@@ -7,8 +7,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(505266),
   l = n(442837),
   c = n(481060),
@@ -37,7 +37,7 @@ var r = n(255367),
   D = n(593639);
 
 function L(e) {
-  var t, n, a, u, d;
+  var t, n, o, u, d;
   let {
     transitionState: f,
     onClose: p,
@@ -76,7 +76,7 @@ function L(e) {
       children: (0, r.jsx)(c.Y0X, {
         transitionState: f,
         size: c.CgR.DYNAMIC,
-        className: o()(P.rootContainer, {
+        className: a()(P.rootContainer, {
           [P.rootContainerLoading]: R
         }),
         hideShadow: !0,
@@ -89,7 +89,7 @@ function L(e) {
           duration: k(null != (u = null == (n = N.entitlements) ? void 0 : n.items) ? u : []),
           onClose: p
         }) : (0, r.jsx)(j, {
-          duration: k(null != (d = null == (a = N.entitlements) ? void 0 : a.items) ? d : []),
+          duration: k(null != (d = null == (o = N.entitlements) ? void 0 : o.items) ? d : []),
           onClose: p
         })
       })
@@ -150,13 +150,13 @@ function M(e) {
     duration: t,
     onClose: n
   } = e, {
-    theme: a
-  } = (0, c.TCT)(), o = (0, p.Z)({
+    theme: o
+  } = (0, c.TCT)(), a = (0, p.Z)({
     forceFetch: !0
-  }), s = (0, y.vc)(o.endsAt, "L"), l = i.useCallback(() => {
+  }), s = (0, y.vc)(a.endsAt, "L"), l = i.useCallback(() => {
     (0, g.$)(n)
   }, [n]);
-  return o.fractionalState === N.a$.NONE ? (0, r.jsx)("div", {
+  return a.fractionalState === N.a$.NONE ? (0, r.jsx)("div", {
     className: P.spinnerContainer,
     children: (0, r.jsx)(c.$jN, {
       type: c.$jN.Type.SPINNING_CIRCLE
@@ -187,7 +187,7 @@ function M(e) {
         className: P.nitroHeading,
         premiumType: N.p9.TIER_2,
         type: E.C.Types.PREMIUM_ACTIVATED,
-        theme: a
+        theme: o
       }), (0, r.jsx)(c.Text, {
         variant: "text-md/normal",
         className: P.text,
@@ -209,25 +209,25 @@ function j(e) {
   let {
     duration: t,
     onClose: n
-  } = e, a = (0, p.Z)({
+  } = e, o = (0, p.Z)({
     forceFetch: !0
   }), s = (0, f.ZP)(), l = i.useCallback(() => {
     u.Z.open(T.oAB.SUBSCRIPTIONS, null, {}), n()
   }, [n]);
-  if (!a.fetched) return (0, r.jsx)("div", {
+  if (!o.fetched) return (0, r.jsx)("div", {
     className: P.spinnerContainer,
     children: (0, r.jsx)(c.$jN, {
       type: c.$jN.Type.SPINNING_CIRCLE
     })
   });
-  let d = a.isFractionalPremiumActive ? C.intl.string(C.t["1ku8i4"]) : C.intl.format(C.t.fI1nLy, {
+  let d = o.isFractionalPremiumActive ? C.intl.string(C.t["1ku8i4"]) : C.intl.format(C.t.fI1nLy, {
     helpCenterLink: O.Z.getArticleURL(T.BhN.FRACTIONAL_PREMIUM_ABOUT),
     duration: t
   });
   return (0, r.jsx)(c.f6W, {
     theme: s,
     children: e => (0, r.jsxs)("div", {
-      className: o()(P.claimedRootContainer, e),
+      className: a()(P.claimedRootContainer, e),
       children: [(0, r.jsxs)("div", {
         className: P.headerContainer,
         children: [(0, r.jsx)("img", {
@@ -276,17 +276,17 @@ function U(e) {
   let {
     quest: t,
     location: n,
-    onClose: a,
-    transitionState: o
+    onClose: o,
+    transitionState: a
   } = e, s = (0, d.Z)(() => {
     var e;
     return (null == (e = t.userStatus) ? void 0 : e.claimedAt) != null
   });
   return (i.useEffect(() => {
-    s && a()
-  }, [a, s]), s) ? null : (0, r.jsx)(L, {
-    onClose: a,
-    transitionState: o,
+    s && o()
+  }, [o, s]), s) ? null : (0, r.jsx)(L, {
+    onClose: o,
+    transitionState: a,
     quest: t,
     location: n
   })

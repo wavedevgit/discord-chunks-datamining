@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(475413),
-  a = n(955418),
-  o = n(388032),
+  o = n(955418),
+  a = n(388032),
   s = n(200669);
 
 function l(e) {
@@ -19,13 +19,13 @@ function l(e) {
   return n ? (0, r.jsx)("footer", {
     className: s.footer,
     children: !l && (0, r.jsx)(i.tG, {
-      text: o.intl.string(o.t.hZkfwc),
+      text: a.intl.string(a.t.hZkfwc),
       fullWidth: !0
     })
   }) : (0, r.jsx)("footer", {
     className: s.footer,
     inert: !0,
-    children: (0, r.jsx)(a.Z, {
+    children: (0, r.jsx)(o.Z, {
       user: t
     })
   })

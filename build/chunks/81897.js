@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(211266),
   i = n(493773);
 
-function a() {
+function o() {
   let e = (0, r.Z)(() => new AbortController);
   return (0, i.zq)(() => {
     e.abort()

@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(616922),
   i = n(388032);
 
-function a(e, t) {
+function o(e, t) {
   switch (t) {
     case r.kG.USER_ACTIVITY_PLAY:
       return e.hasSpotifyAccount ? i.intl.formatToPlainString(i.t.LEgD7u, {

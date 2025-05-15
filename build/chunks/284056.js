@@ -205,11 +205,12 @@ function j(e) {
   let {
     inputDevice: r,
     outputDevice: s,
-    modeOptions: o,
-    inputVolume: c,
-    outputVolume: d,
-    inputMode: u,
-    isDeafened: g
+    threshold: o,
+    autoThreshold: c,
+    inputVolume: d,
+    outputVolume: u,
+    inputMode: g,
+    isDeafened: f
   } = (0, a.cj)([p.Z], () => {
     let e = p.Z.getInputDeviceId(),
       t = p.Z.getInputDevices(),
@@ -227,21 +228,25 @@ function j(e) {
         } = e;
         return t === i
       }),
-      a = p.Z.getModeOptions(),
-      o = p.Z.getInputVolume(),
-      c = p.Z.getOutputVolume();
+      {
+        threshold: a,
+        autoThreshold: o
+      } = p.Z.getModeOptions(),
+      c = p.Z.getInputVolume(),
+      d = p.Z.getOutputVolume();
     return {
       inputDevice: n,
       outputDevice: s,
-      modeOptions: a,
-      inputVolume: o,
-      outputVolume: c,
+      threshold: a,
+      autoThreshold: o,
+      inputVolume: c,
+      outputVolume: d,
       inputMode: p.Z.getMode(),
       isDeafened: p.Z.isSelfDeaf()
     }
-  }), f = (0, a.e7)([h.Z], () => h.Z.isConnected()), {
-    ref: b,
-    width: _
+  }), b = (0, a.e7)([h.Z], () => h.Z.isConnected()), {
+    ref: _,
+    width: x
   } = (0, m.ZP)();
   return (0, i.jsx)(C, function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -255,16 +260,16 @@ function j(e) {
     }
     return e
   }({
-    isVoiceConnected: f,
-    inputVolume: c,
-    outputVolume: d,
-    inputMode: u,
-    isDeafened: g,
-    vadThreshold: o.threshold,
-    vadAutoThreshold: o.autoThreshold,
+    isVoiceConnected: b,
+    inputVolume: d,
+    outputVolume: u,
+    inputMode: g,
+    isDeafened: f,
+    vadThreshold: o,
+    vadAutoThreshold: c,
     inputDeviceName: null != (t = null == r ? void 0 : r.name) ? t : "",
     outputDeviceName: null != (n = null == s ? void 0 : s.name) ? n : "",
-    measureButtonRef: b,
-    buttonMinWidth: _
+    measureButtonRef: _,
+    buttonMinWidth: x
   }, e))
 }

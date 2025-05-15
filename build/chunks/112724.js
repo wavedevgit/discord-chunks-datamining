@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(393903),
-  o = n(448986);
+  o = n(393903),
+  a = n(448986);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -62,7 +62,7 @@ function _(e) {
     let [s, c] = i.useState({
       width: 0,
       height: 0
-    }), _ = (0, o.Z)(e => {
+    }), _ = (0, a.Z)(e => {
       if (null != e) {
         let {
           width: t,
@@ -73,9 +73,9 @@ function _(e) {
           height: n
         })
       }
-    }), p = (0, o.Z)(e => {
+    }), p = (0, a.Z)(e => {
       _(e.contentRect)
-    }), h = (0, a.y)(p);
+    }), h = (0, o.y)(p);
     return i.useImperativeHandle(n, () => ({
       triggerResize: () => {
         var e;

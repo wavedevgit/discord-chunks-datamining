@@ -30,7 +30,7 @@ e.exports = function(e) {
       className: "strong",
       begin: /\*[^\s]([^\n]+\n)+([^\n]+)\*/
     }],
-    a = [{
+    o = [{
       className: "emphasis",
       begin: /_{2}([^\n]+?)_{2}/
     }, {
@@ -53,7 +53,7 @@ e.exports = function(e) {
       }],
       relevance: 0
     }],
-    o = {
+    a = {
       className: "symbol",
       begin: "^(NOTE|TIP|IMPORTANT|WARNING|CAUTION):\\s+",
       relevance: 10
@@ -114,7 +114,7 @@ e.exports = function(e) {
         relevance: 0
       }],
       relevance: 10
-    }, s, o, ...r, ...i, ...a, {
+    }, s, a, ...r, ...i, ...o, {
       className: "string",
       variants: [{
         begin: "``.+?''"

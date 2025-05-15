@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(818083),
   i = n(987338);
-let a = (0, r.B)({
+let o = (0, r.B)({
   kind: "guild",
   id: "2024-12_guild_voice_channel_ringing",
   label: "Guild Voice Ringing",

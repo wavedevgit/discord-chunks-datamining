@@ -24,17 +24,17 @@ var l = n(120356),
   S = n(387903),
   j = n(606925),
   P = n(719216),
-  E = n(429589),
-  I = n(636245),
+  I = n(429589),
+  E = n(636245),
   Z = n(697761),
   x = n(611459),
   C = n(544671),
   T = n(757182),
-  N = n(910424),
-  A = n(981631),
+  A = n(910424),
+  N = n(981631),
   w = n(477839),
-  D = n(388032),
-  _ = n(622802),
+  _ = n(388032),
+  D = n(622802),
   L = n(126485);
 let k = e => {
     let {
@@ -50,7 +50,7 @@ let k = e => {
       look: l,
       activity: i,
       onAction: () => {
-        a.dispatch(A.CkL.POPOUT_CLOSE), (0, g.closeUserProfileModal)(), null == o || o()
+        a.dispatch(N.CkL.POPOUT_CLOSE), (0, g.closeUserProfileModal)(), null == o || o()
       }
     }, "custom-activity-button")
   },
@@ -92,7 +92,7 @@ let k = e => {
         }
         return e
       }({}, t), H = H = {
-        buttons: [D.intl.string(_.default["Fv/2Oz"])],
+        buttons: [_.intl.string(D.default["Fv/2Oz"])],
         metadata: {
           button_urls: [w.U8]
         }
@@ -122,16 +122,16 @@ let k = e => {
       className: i()(u, L.buttonsWrapper, J ? L.vertical : L.horizontal),
       children: (() => {
         if ((0, v.Z)(t)) return (0, r.jsx)(j.Z, {
-          platform: d.Z.get(A.ABu.XBOX),
+          platform: d.Z.get(N.ABu.XBOX),
           look: R,
           color: U,
           onAction: F,
           Icon: h.Z
         }, "ConnectPlatformActivityButton");
-        if ((null == t ? void 0 : t.platform) === A.M7m.PS4 || (null == t ? void 0 : t.platform) === A.M7m.PS5) return (0, r.jsx)(j.Z, {
+        if ((null == t ? void 0 : t.platform) === N.M7m.PS4 || (null == t ? void 0 : t.platform) === N.M7m.PS5) return (0, r.jsx)(j.Z, {
           look: R,
           color: U,
-          platform: d.Z.get(A.ABu.PLAYSTATION),
+          platform: d.Z.get(N.ABu.PLAYSTATION),
           onAction: F,
           Icon: O.Z
         }, "ConnectPlatformActivityButton");
@@ -160,7 +160,7 @@ let k = e => {
         }
         if ((0, m.dS)(t)) {
           let e = (0, m.rq)(t);
-          return null == e ? null : (0, r.jsx)(I.Z, {
+          return null == e ? null : (0, r.jsx)(E.Z, {
             guildId: e.guildId,
             channelId: e.channelId,
             color: U,
@@ -168,7 +168,7 @@ let k = e => {
             onAction: F
           }, e.channelId)
         }
-        return B ? (0, r.jsx)(N.Z, {
+        return B ? (0, r.jsx)(A.Z, {
           isCurrentUser: Y.id === l.id,
           color: U,
           look: R,
@@ -180,7 +180,7 @@ let k = e => {
             color: U,
             look: R,
             onAction: F
-          }, "watch-button"), (0, r.jsx)(E.Z, {
+          }, "watch-button"), (0, r.jsx)(I.Z, {
             activity: t,
             embeddedActivity: n,
             user: l,

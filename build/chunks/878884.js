@@ -50,7 +50,7 @@ function P(e) {
   return t || n || r
 }
 
-function E() {
+function I() {
   var e;
   let t = f.Z.getChannelId();
   if (null == t) return !1;
@@ -63,12 +63,12 @@ function E() {
   }), r
 }
 
-function I() {
+function E() {
   y.clear(), v.clear(), S.clear()
 }
 class Z extends(r = o.ZP.Store) {
   initialize() {
-    this.waitFor(g.Z, m.default, p.Z, f.Z), this.syncWith([m.default], E)
+    this.waitFor(g.Z, m.default, p.Z, f.Z), this.syncWith([m.default], I)
   }
   get desyncedVoiceStatesCount() {
     return y.size()
@@ -91,16 +91,16 @@ i = "RTCConnectionDesyncStore", (l = "displayName") in Z ? Object.defineProperty
 }) : Z[l] = i;
 let x = new Z(s.Z, {
   CONNECTION_OPEN: function() {
-    I()
+    E()
   },
-  VOICE_CHANNEL_SELECT: I,
+  VOICE_CHANNEL_SELECT: E,
   RTC_CONNECTION_STATE: function(e) {
     let {
       state: t,
       context: n
     } = e;
     if (n !== a.Yn.DEFAULT || t !== O.hes.DISCONNECTED) return !1;
-    I()
+    E()
   },
   VOICE_STATE_UPDATES: function(e) {
     let {

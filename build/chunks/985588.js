@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(442837),
   i = n(387343),
-  a = n(66999),
-  o = n(163612),
+  o = n(66999),
+  a = n(163612),
   s = n(314897),
   l = n(523746),
   c = n(592125),
@@ -22,12 +22,12 @@ function m(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "useCanRing",
     n = arguments.length > 2 ? arguments[2] : void 0,
     i = (0, r.e7)([c.Z], () => c.Z.getChannel(n)),
-    a = (0, r.e7)([s.default], () => s.default.getId() === e.id),
-    o = (0, r.e7)([_.Z], () => _.Z.isFriend(e.id)),
+    o = (0, r.e7)([s.default], () => s.default.getId() === e.id),
+    a = (0, r.e7)([_.Z], () => _.Z.isFriend(e.id)),
     l = null == i ? void 0 : i.type,
     u = null != l && h.TPd.CALLABLE.has(l),
     d = E(e, t, i) || u;
-  return o && !a && !e.bot && !e.system && !e.isProvisional && d
+  return a && !o && !e.bot && !e.system && !e.isProvisional && d
 }
 
 function g(e) {
@@ -40,7 +40,7 @@ function g(e) {
   if (n) {
     let {
       enabled: t
-    } = o.Z.getCurrentConfig({
+    } = a.Z.getCurrentConfig({
       guildId: e.guild_id,
       location: "ring"
     }), n = p.Z.getVoiceState(e.guild_id, s.default.getId());
@@ -62,10 +62,10 @@ function E(e) {
     }),
     {
       needSubscriptionToAccess: c
-    } = (0, a.Z)(null == n ? void 0 : n.id),
+    } = (0, o.Z)(null == n ? void 0 : n.id),
     {
       enabled: _
-    } = o.Z.useExperiment({
+    } = a.Z.useExperiment({
       guildId: null == n ? void 0 : n.guild_id,
       location: t
     }),

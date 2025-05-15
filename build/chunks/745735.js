@@ -1,20 +1,20 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(73800),
   i = n(512722),
-  a = n.n(i);
+  o = n.n(i);
 
-function o(e, t) {
+function a(e, t) {
   let n = (0, r.useRef)(e),
     i = (0, r.useRef)(null);
   (0, r.useEffect)(() => {
     n.current = e
   }, [e]), (0, r.useEffect)(() => {
     function e() {
-      a()(null != n.current, "Missing callback"), n.current()
+      o()(null != n.current, "Missing callback"), n.current()
     }
     if (null === t) {
       null !== i.current && (clearInterval(i.current), i.current = null);

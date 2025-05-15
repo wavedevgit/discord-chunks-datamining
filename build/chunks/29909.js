@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(481060),
   l = n(68405),
   c = n(985375),
@@ -57,7 +57,7 @@ let E = i.memo(function(e) {
   let {
     width: t,
     height: n,
-    src: a,
+    src: o,
     url: p,
     format: m,
     className: E
@@ -72,7 +72,7 @@ let E = i.memo(function(e) {
   let S = e => {
     e.preventDefault(), e.stopPropagation(), y(!0), O ? (0, l.PF)(p) : ((0, l.uL)({
       url: p,
-      src: a,
+      src: o,
       width: t,
       height: n,
       format: m
@@ -81,7 +81,7 @@ let E = i.memo(function(e) {
   return (0, r.jsx)(s.ua7, {
     text: v,
     children: e => (0, r.jsx)(s.P3F, g(h({}, e), {
-      className: o()(E, _.gifFavoriteButton, {
+      className: a()(E, _.gifFavoriteButton, {
         [_.selected]: O,
         [_.showPulse]: b
       }),

@@ -28,7 +28,7 @@ async function a(e) {
     cropOriginCoordinates: o,
     maxDimensions: s,
     imageRotation: c
-  }), m = await t.arrayBuffer(), f = new Worker(new URL("/assets/" + r.u("86047"), r.b)), b = new Promise((e, t) => {
+  }), m = await t.arrayBuffer(), f = new Worker(new URL("/assets/" + r.u("86047"), r.b)), p = new Promise((e, t) => {
     f.onmessage = r => {
       let {
         data: n
@@ -55,7 +55,7 @@ async function a(e) {
     height: 0 | g,
     imageRotation: 0 | c
   }), {
-    result: b,
+    result: p,
     cancelFn: () => f.terminate()
   }
 }
