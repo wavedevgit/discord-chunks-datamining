@@ -95,12 +95,12 @@ let g = function(e) {
     D = o.useCallback(e => {
       Z(!1), null == k || k(e)
     }, [k]),
-    L = (0, r.jsx)(s.tEY, p(d({}, C), {
-      children: (0, r.jsx)(l.d.Provider, {
-        value: {
-          animate: M,
-          setAnimate: Z
-        },
+    L = (0, r.jsx)(l.d.Provider, {
+      value: {
+        animate: M,
+        setAnimate: Z
+      },
+      children: (0, r.jsx)(s.tEY, p(d({}, C), {
         children: (0, r.jsxs)("div", p(d({
           className: i()(t, {
             [u.gradient]: !!E && w,
@@ -127,8 +127,8 @@ let g = function(e) {
             children: v
           }) : null]
         }))
-      })
-    }));
+      }))
+    });
   return f ? (0, r.jsx)(s.Rny, {
     children: L
   }) : L
