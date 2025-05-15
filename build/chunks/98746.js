@@ -49,35 +49,36 @@ function p(e) {
     onBanMultiple: g,
     transitionState: j,
     onClose: C,
-    canBulkBan: f = !1
-  } = e, [v, z] = s.useState(k), [S, _] = s.useState(""), [N, L] = s.useState(0), [R, Z] = s.useState(!1), I = (0, a.sE)(t, {
+    canBulkBan: f = !1,
+    modReportId: v
+  } = e, [z, S] = s.useState(k), [_, N] = s.useState(""), [L, R] = s.useState(0), [Z, I] = s.useState(!1), w = (0, a.sE)(t, {
     location: p,
     targetUserId: null == c ? void 0 : c.id,
     targets: h
-  }), w = s.useCallback(() => {
+  }), y = s.useCallback(() => {
     if (null != g) {
-      if (!(null != h && (null == h ? void 0 : h.size) > 0 && f) || R) return;
-      if ("" === S.trim() && !R) return void Z(!0);
-      g(t, [...h], v, S)
+      if (!(null != h && (null == h ? void 0 : h.size) > 0 && f) || Z) return;
+      if ("" === _.trim() && !Z) return void I(!0);
+      g(t, [...h], z, _)
     } else {
       if (null == c) return;
-      r.Z.banUser(t, null == c ? void 0 : c.id, v, S)
+      r.Z.banUser(t, null == c ? void 0 : c.id, z, _, v)
     }
-    I(a.jQ.BAN), C()
-  }, [g, I, C, h, f, R, S, t, v, c]), y = s.useCallback(e => {
-    z(e)
-  }, []), M = s.useCallback(e => {
+    w(a.jQ.BAN), C()
+  }, [g, w, C, h, f, Z, _, t, z, c, v]), M = s.useCallback(e => {
+    S(e)
+  }, []), Y = s.useCallback(e => {
     let {
       value: t
     } = e;
-    _(t), Z(!1)
-  }, []), Y = s.useCallback(e => {
-    _(e), R && Z(!1)
-  }, [R]), A = s.useCallback(() => {
-    _(""), L(1)
-  }, []), O = s.useCallback(() => {
-    L(0)
-  }, []), U = [{
+    N(t), I(!1)
+  }, []), A = s.useCallback(e => {
+    N(e), Z && I(!1)
+  }, [Z]), O = s.useCallback(() => {
+    N(""), R(1)
+  }, []), U = s.useCallback(() => {
+    R(0)
+  }, []), E = [{
     name: x.intl.string(x.t.tamLhY),
     value: x.intl.string(x.t.tamLhY)
   }, {
@@ -86,7 +87,7 @@ function p(e) {
   }, {
     name: x.intl.string(x.t.EXY1d3),
     value: x.intl.string(x.t.EXY1d3)
-  }], E = (() => {
+  }], J = (() => {
     if (null != g && null != h) return x.intl.formatToPlainString(x.t.HVJexc, {
       count: null == h ? void 0 : h.size
     });
@@ -102,7 +103,7 @@ function p(e) {
       separator: !1,
       children: (0, n.jsx)(i.X6q, {
         variant: "heading-xl/semibold",
-        children: E
+        children: J
       })
     }), (0, n.jsxs)(i.hzk, {
       className: m.modalContent,
@@ -122,23 +123,23 @@ function p(e) {
         })]
       }), (0, n.jsxs)(i.xJW, {
         title: x.intl.string(x.t.w4Ivys),
-        children: [R && (0, n.jsx)(i.kzN, {
+        children: [Z && (0, n.jsx)(i.kzN, {
           className: m.error,
           children: x.intl.string(x.t.IrYX19)
         }), (0, n.jsx)(i.qBt, {
           steps: [0, 1],
-          step: N,
+          step: L,
           children: (e => {
-            switch (N) {
+            switch (L) {
               case 0:
                 return (0, n.jsxs)(n.Fragment, {
                   children: [(0, n.jsx)(i.FXm, {
-                    value: S,
+                    value: _,
                     options: e,
-                    onChange: M,
+                    onChange: Y,
                     radioItemClassName: m.radioItemStyles
                   }), (0, n.jsxs)(i.P3F, {
-                    onClick: A,
+                    onClick: O,
                     className: m.banReasonOtherClickable,
                     children: [(0, n.jsx)(i.Text, {
                       variant: "text-md/medium",
@@ -153,24 +154,24 @@ function p(e) {
               case 1:
                 return (0, n.jsx)(i.Kx8, {
                   maxLength: d.GNZ,
-                  onChange: Y,
-                  value: S,
+                  onChange: A,
+                  value: _,
                   rows: 5,
                   autoFocus: !0
                 })
             }
-          })(U)
+          })(E)
         })]
       }), (0, n.jsx)(i.xJW, {
         title: x.intl.string(x.t["8l3W09"]),
         children: (0, n.jsx)(i.q4e, {
           options: b(),
-          value: v,
-          onChange: y
+          value: z,
+          onChange: M
         })
       })]
     }), (() => {
-      switch (N) {
+      switch (L) {
         case 0:
           return (0, n.jsxs)(i.mzw, {
             className: m.footer,
@@ -184,7 +185,7 @@ function p(e) {
               type: "submit",
               color: i.zxk.Colors.RED,
               size: i.zxk.Sizes.SMALL,
-              onClick: w,
+              onClick: y,
               children: x.intl.string(x.t["5MBJ5O"])
             })]
           });
@@ -198,13 +199,13 @@ function p(e) {
               look: i.zxk.Looks.LINK,
               color: i.zxk.Colors.PRIMARY,
               size: i.zxk.Sizes.SMALL,
-              onClick: O,
+              onClick: U,
               children: x.intl.string(x.t["13/7kZ"])
             }), (0, n.jsx)(i.zxk, {
               type: "submit",
               color: i.zxk.Colors.RED,
               size: i.zxk.Sizes.SMALL,
-              onClick: w,
+              onClick: y,
               children: x.intl.string(x.t["5MBJ5O"])
             })]
           })

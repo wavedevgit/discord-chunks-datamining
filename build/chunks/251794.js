@@ -30,7 +30,8 @@ function o(e) {
   let {
     guildId: t,
     userId: o,
-    anaylticsLocations: a
+    anaylticsLocations: a,
+    modReportId: s
   } = e;
   (0, i.ZDy)(async () => {
     let {
@@ -39,7 +40,8 @@ function o(e) {
     return n => (0, r.jsx)(e, l({
       guildId: t,
       userId: o,
-      anaylticsLocations: a
+      anaylticsLocations: a,
+      modReportId: s
     }, n))
   })
 }

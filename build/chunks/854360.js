@@ -16,9 +16,10 @@ function f(e) {
   var t, r, {
       guildId: f,
       user: b,
-      location: O
+      location: O,
+      modReportId: g
     } = e,
-    g = function(e, t) {
+    d = function(e, t) {
       if (null == e) return {};
       var r, n, o = function(e, t) {
         if (null == e) return {};
@@ -32,14 +33,14 @@ function f(e) {
         for (n = 0; n < c.length; n++) r = c[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
       }
       return o
-    }(e, ["guildId", "user", "location"]);
-  let [y, d] = o.useState(""), j = (0, a.sE)(f, {
+    }(e, ["guildId", "user", "location", "modReportId"]);
+  let [y, j] = o.useState(""), m = (0, a.sE)(f, {
     location: O,
     targetUserId: b.id
-  }), m = o.useCallback(() => {
-    i.Z.kickUser(f, b.id, y), j(a.jQ.KICK)
-  }, [f, b.id, y, j]), h = o.useCallback(e => {
-    d(e)
+  }), h = o.useCallback(() => {
+    i.Z.kickUser(f, b.id, y, g), m(a.jQ.KICK)
+  }, [f, b.id, y, m, g]), P = o.useCallback(e => {
+    j(e)
   }, []);
   return (0, n.jsxs)(c.ConfirmModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -64,8 +65,8 @@ function f(e) {
     }),
     confirmText: u.intl.string(u.t["3glT6e"]),
     cancelText: u.intl.string(u.t["ETE/oK"]),
-    onConfirm: m
-  }, g), r = r = {
+    onConfirm: h
+  }, d), r = r = {
     children: [(0, n.jsx)(c.Text, {
       variant: "text-md/normal",
       className: p.spacing,
@@ -77,7 +78,7 @@ function f(e) {
       className: p.spacing,
       children: (0, n.jsx)(c.Kx8, {
         maxLength: l.GNZ,
-        onChange: h,
+        onChange: P,
         value: y,
         rows: 2
       })

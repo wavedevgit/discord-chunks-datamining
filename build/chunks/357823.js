@@ -9,8 +9,8 @@ var i = t(481060),
   u = t(883385),
   a = t(108843),
   o = t(100527),
-  c = t(299206),
-  d = t(819403),
+  d = t(299206),
+  c = t(819403),
   s = t(286694),
   _ = t(314897),
   E = t(238296),
@@ -25,13 +25,13 @@ let h = (0, a.Z)((0, u.Z)(function(e) {
     onSelect: a,
     onInteraction: o,
     context: g
-  } = e, h = t.id, T = n.isNonUserBot(), b = n.id === _.default.getId(), v = (0, d.Z)(n), O = (0, s.Z)(n, u, h), S = (0, E.Y)({
+  } = e, h = t.id, T = n.isNonUserBot(), b = n.id === _.default.getId(), v = (0, c.Z)(n), O = (0, s.Z)(n, u, h), I = (0, E.Y)({
     isOwnSettings: b,
     userId: n.id,
     channelId: h,
     guildId: u,
     context: g
-  }), [y, I] = (0, E.E)(n, h, u), p = (0, f.Z)(n, u, h), M = (0, c.Z)({
+  }), [S, y] = (0, E.E)(n, h, u), p = (0, f.Z)(n, u, h), M = (0, d.Z)({
     id: n.id,
     label: A.intl.string(A.t["/AXYnJ"])
   });
@@ -45,13 +45,13 @@ let h = (0, a.Z)((0, u.Z)(function(e) {
     children: !T && (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsxs)(i.kSQ, {
         children: [v, O]
-      }), S, !b && (0, l.jsx)(i.kSQ, {
+      }), I, !b && (0, l.jsx)(i.kSQ, {
         children: (0, l.jsxs)(i.sNh, {
           id: "more-options",
           label: A.intl.string(A.t.PdRCRk),
-          children: [y, (0, l.jsx)(i.kSQ, {
+          children: [S, (0, l.jsx)(i.kSQ, {
             children: p
-          }), I]
+          }), y]
         })
       }), b && (0, l.jsx)(i.kSQ, {
         children: M

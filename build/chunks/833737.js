@@ -1,6 +1,6 @@
 /** Chunk was on 16120 **/
 n.d(t, {
-  default: () => I
+  default: () => N
 });
 var r = n(255367),
   l = n(73800),
@@ -26,16 +26,16 @@ var r = n(255367),
   S = n(358386),
   A = n(37258),
   v = n(931617),
-  Z = n(981631),
-  N = n(388032);
-let I = (0, c.Z)((0, u.Z)(function(e) {
+  I = n(981631),
+  Z = n(388032);
+let N = (0, c.Z)((0, u.Z)(function(e) {
   var t;
   let {
     user: n,
     guildId: u,
     channelId: c,
-    context: Z,
-    onSelect: I,
+    context: I,
+    onSelect: N,
     moderationAlertId: h,
     analyticsLocation: T,
     analyticsLocations: D,
@@ -55,12 +55,12 @@ let I = (0, c.Z)((0, u.Z)(function(e) {
     userId: n.id,
     guildId: u,
     sourceAnalyticsLocations: D
-  }), F = (0, j.Z)(n.id, Z), K = (0, E.Z)({
+  }), F = (0, j.Z)(n.id, I), K = (0, E.Z)({
     guildId: u,
     userId: n.id,
     analyticsLocation: null != T ? T : L.location,
     analyticsLocations: [w],
-    context: Z
+    context: I
   }), V = (0, p.Z)({
     user: n,
     guildId: u,
@@ -73,7 +73,7 @@ let I = (0, c.Z)((0, u.Z)(function(e) {
     channelId: c
   }), Y = (0, _.Z)(n, u, null != c ? c : k, w), H = (0, P.Z)(c, h), Q = (0, S.Z)(n, u), X = (0, v.Z)(n.id, u, !1, w), J = (0, O.Z)({
     id: n.id,
-    label: N.intl.string(N.t["/AXYnJ"]),
+    label: Z.intl.string(Z.t["/AXYnJ"]),
     onSuccess: G
   }), z = (0, M.Z)(n, u), $ = !!(null == n ? void 0 : n.isNonUserBot());
   return (0, r.jsxs)(a.v2r, {
@@ -81,8 +81,8 @@ let I = (0, c.Z)((0, u.Z)(function(e) {
     onClose: () => {
       (0, o.Zy)(), null == C || C()
     },
-    "aria-label": N.intl.string(N.t.liqwPD),
-    onSelect: I,
+    "aria-label": Z.intl.string(Z.t.liqwPD),
+    onSelect: N,
     children: [!$ && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(a.kSQ, {
         children: [q, F]
@@ -102,5 +102,5 @@ let I = (0, c.Z)((0, u.Z)(function(e) {
     })]
   })
 }, {
-  object: Z.qAy.CONTEXT_MENU
+  object: I.qAy.CONTEXT_MENU
 }), [d.Z.CONTEXT_MENU, d.Z.GUILD_MODERATION_USER_MENU])
