@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   cG: () => i,
-  dR: () => o,
-  oY: () => a
+  dR: () => a,
+  oY: () => o
 });
 var r = n(290031);
 
@@ -18,7 +18,7 @@ function i(e) {
   return n
 }
 
-function o(e) {
+function a(e) {
   let {
     location: t
   } = e, {
@@ -29,7 +29,7 @@ function o(e) {
   return n
 }
 
-function a(e) {
+function o(e) {
   let {
     location: t
   } = e, {

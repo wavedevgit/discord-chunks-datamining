@@ -5,8 +5,8 @@ n.d(t, {
 }), n(704826), n(35282), n(953529);
 var r = n(255367),
   i = n(73800),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(481060),
   l = n(403182),
   c = n(587446),
@@ -37,7 +37,7 @@ let p = i.forwardRef(function(e, t) {
   let {
     title: n,
     titleIcon: i,
-    titleId: o,
+    titleId: a,
     description: l,
     children: f,
     className: p,
@@ -51,7 +51,7 @@ let p = i.forwardRef(function(e, t) {
     showPremiumIcon: v = !1
   } = e;
   return (0, r.jsx)("div", {
-    className: a()(d.customizationSection, p, {
+    className: o()(d.customizationSection, p, {
       [d.disabled]: m,
       [d.hideDivider]: g,
       [d.showBorder]: E,
@@ -66,7 +66,7 @@ let p = i.forwardRef(function(e, t) {
       hasBackground: y,
       children: [(0, r.jsxs)(s.vwX, {
         className: d.title,
-        id: o,
+        id: a,
         children: [n, v && (0, r.jsx)(c.Z, {}), i]
       }), null != l ? (0, r.jsx)(s.R94, {
         type: s.R94.Types.DESCRIPTION,

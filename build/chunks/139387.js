@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(570140),
   i = n(434404),
-  o = n(821864),
-  a = n(308063);
+  a = n(821864),
+  o = n(308063);
 let s = {
   init() {
     r.Z.dispatch({
@@ -71,7 +71,7 @@ let s = {
     try {
       r.Z.dispatch({
         type: "INTEGRATION_SETTINGS_SUBMITTING"
-      }), await o.U3({
+      }), await a.U3({
         applicationId: e,
         commandId: e,
         defaultEveryoneValue: !0,
@@ -106,7 +106,7 @@ let s = {
     try {
       r.Z.dispatch({
         type: "INTEGRATION_SETTINGS_SUBMITTING"
-      }), await a.Z.update(e, t.id, t), r.Z.dispatch({
+      }), await o.Z.update(e, t.id, t), r.Z.dispatch({
         type: "INTEGRATION_SETTINGS_SAVE_SUCCESS"
       })
     } catch (e) {

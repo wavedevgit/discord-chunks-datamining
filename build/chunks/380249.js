@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  l: () => a
+  l: () => o
 });
 var r = n(818083),
   i = n(987338);
-let o = (0, r.B)({
+let a = (0, r.B)({
   kind: "user",
   id: "2025-04_rich_presence_activity_invite_redesign",
   label: "Rich Presence Activity Invite Redesign Experiment",
@@ -22,8 +22,8 @@ let o = (0, r.B)({
   }]
 });
 
-function a() {
-  return o.getCurrentConfig({
+function o() {
+  return a.getCurrentConfig({
     location: "getIsRichPresenceActivityInviteRedesignEnabled"
   }).enabled
 }

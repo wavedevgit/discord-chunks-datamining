@@ -6,9 +6,9 @@ n.d(t, {
 var r = n(147913),
   i = n(579806);
 n(987170);
-var o = n(998502);
+var a = n(998502);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,7 +24,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -44,11 +44,11 @@ function f() {
   for (let t of c) u(t.gpus) && (e = s({}, e, t.experiment.getCurrentConfig({
     location: "updateFlags"
   })));
-  o.ZP.setChromiumSwitches(e)
+  a.ZP.setChromiumSwitches(e)
 }
 class _ extends r.Z {
   constructor(...e) {
-    super(...e), a(this, "actions", {
+    super(...e), o(this, "actions", {
       POST_CONNECTION_OPEN: async () => {
         try {
           var e, t, n, r;

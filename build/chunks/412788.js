@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => _
 }), n(539854);
 var r, i = n(512722),
-  o = n.n(i),
-  a = n(442837),
+  a = n.n(i),
+  o = n(442837),
   s = n(433517),
   l = n(570140);
 
@@ -47,7 +47,7 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class _ extends(r = a.ZP.Store) {
+class _ extends(r = o.ZP.Store) {
   static clearAll() {
     _.allStores.forEach(e => e.clear())
   }
@@ -71,7 +71,7 @@ class _ extends(r = a.ZP.Store) {
     super(l.Z, f(u({}, e), {
       CLEAR_CACHES: () => (this.clear(), !1),
       WRITE_CACHES: () => (this.save(), !1)
-    }), t), o()(null != this.getClass().displayName, "Snapshot stores need a display name"), o()(!("CLEAR_CACHES" in e), "SnapshotStores cannot use the 'CLEAR_CACHES' action"), o()(!("WRITE_CACHES" in e), "SnapshotStores cannot use the 'WRITE_CACHES' action"), _.allStores.push(this)
+    }), t), a()(null != this.getClass().displayName, "Snapshot stores need a display name"), a()(!("CLEAR_CACHES" in e), "SnapshotStores cannot use the 'CLEAR_CACHES' action"), a()(!("WRITE_CACHES" in e), "SnapshotStores cannot use the 'WRITE_CACHES' action"), _.allStores.push(this)
   }
 }
 c(_, "allStores", [])

@@ -1,18 +1,18 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  DB: () => a,
+  DB: () => o,
   Lm: () => h,
   Ob: () => d,
   Rw: () => f,
-  Sd: () => o,
+  Sd: () => a,
   gS: () => _,
   mG: () => p
 });
 var r = n(586072),
   i = n(981631);
 
-function o() {
+function a() {
   let {
     isUserEligibleForCreatorMonetization: e
   } = r.bT.useExperiment({
@@ -23,7 +23,7 @@ function o() {
   return e
 }
 
-function a() {
+function o() {
   let {
     isUserEligibleForCreatorMonetization: e
   } = r.bT.getCurrentConfig({

@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  P: () => a,
-  h: () => o
+  P: () => o,
+  h: () => a
 });
 var r = n(818083),
   i = n(987338);
-let o = (0, r.B)({
+let a = (0, r.B)({
     kind: "user",
     id: "2025-04_shop_generic_product_description",
     label: "Shop Show Generic Product Description",
@@ -22,6 +22,6 @@ let o = (0, r.B)({
       }
     }]
   }),
-  a = e => o.useExperiment({
+  o = e => a.useExperiment({
     location: e
   }).showGenericProductDescription

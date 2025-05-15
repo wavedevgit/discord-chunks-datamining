@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(244287),
   i = n(126387),
-  o = n(885952),
-  a = n(510104),
+  a = n(885952),
+  o = n(510104),
   s = n(891734),
   l = n(740078),
   c = n(632471);
@@ -14,7 +14,7 @@ var r = n(244287),
 function u(e) {
   if ((0, i.Z)(e) === l.d7) return [];
   var t = (0, r.Z)(e);
-  return [(0, o.Z)(e), t, (0, o.Z)(t)]
+  return [(0, a.Z)(e), t, (0, a.Z)(t)]
 }
 let d = {
   name: "flip",
@@ -23,8 +23,8 @@ let d = {
   fn: function(e) {
     var t = e.state,
       n = e.options,
-      o = e.name;
-    if (!t.modifiersData[o]._skip) {
+      a = e.name;
+    if (!t.modifiersData[a]._skip) {
       for (var d = n.mainAxis, f = void 0 === d || d, _ = n.altAxis, p = void 0 === _ || _, h = n.fallbackPlacements, m = n.padding, g = n.boundary, E = n.rootBoundary, b = n.altBoundary, y = n.flipVariations, O = void 0 === y || y, v = n.allowedAutoPlacements, I = t.options.placement, S = (0, i.Z)(I), T = S === I, A = h || (T || !O ? [(0, r.Z)(I)] : u(I)), N = [I].concat(A).reduce(function(e, n) {
           return e.concat((0, i.Z)(n) === l.d7 ? (0, s.Z)(t, {
             placement: n,
@@ -40,7 +40,7 @@ let d = {
           M = (0, c.Z)(x) === l.BL,
           j = [l.we, l.I].indexOf(k) >= 0,
           U = j ? "width" : "height",
-          G = (0, a.Z)(t, {
+          G = (0, o.Z)(t, {
             placement: x,
             boundary: g,
             rootBoundary: E,
@@ -69,7 +69,7 @@ let d = {
             });
             if (t) return D = t, "break"
           }, Y = Z; Y > 0 && "break" !== H(Y); Y--);
-      t.placement !== D && (t.modifiersData[o]._skip = !0, t.placement = D, t.reset = !0)
+      t.placement !== D && (t.modifiersData[a]._skip = !0, t.placement = D, t.reset = !0)
     }
   },
   requiresIfExists: ["offset"],

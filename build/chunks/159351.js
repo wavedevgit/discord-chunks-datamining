@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Xt: () => i,
-  fw: () => o
+  fw: () => a
 });
 var r = n(570140);
 
@@ -13,7 +13,7 @@ function i(e) {
   })
 }
 
-function o() {
+function a() {
   r.Z.wait(() => r.Z.dispatch({
     type: "NEW_PAYMENT_SOURCE_CLEAR_ERROR"
   }))

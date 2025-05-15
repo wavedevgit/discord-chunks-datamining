@@ -8,8 +8,8 @@ n.d(t, {
 }), n(35282), n(388685), n(539854);
 var r = n(392711),
   i = n(759174),
-  o = n(586902),
-  a = n(317381),
+  a = n(586902),
+  o = n(317381),
   s = n(569545),
   l = n(199902),
   c = n(314897),
@@ -134,7 +134,7 @@ class R {
     var t, n;
     return null != (n = null == (t = this.participants[e]) ? void 0 : t.reduce((t, n) => {
       if (n.type === b.fO.USER) {
-        let t = (0, o.O)({
+        let t = (0, a.O)({
           userId: e,
           checkIsMuted: !0
         });
@@ -158,8 +158,8 @@ class R {
     t ? this.guildRingingUsers.add(e) : this.guildRingingUsers.delete(e)
   }
   _getEmbeddedActivities() {
-    let e = a.ZP.getEmbeddedActivitiesForChannel(this.channelId),
-      t = a.ZP.getSelfEmbeddedActivityForChannel(this.channelId);
+    let e = o.ZP.getEmbeddedActivitiesForChannel(this.channelId),
+      t = o.ZP.getSelfEmbeddedActivityForChannel(this.channelId);
     return null == t ? e : (0, r.uniqBy)([...e, t], e => e.compositeInstanceId)
   }
   _getParticipantsForEmbeddedActivities() {
@@ -181,7 +181,7 @@ class R {
     })
   }
   _getParticipantsForUser(e) {
-    var t, n, r, i, a, u;
+    var t, n, r, i, o, u;
     let E, y, v = [],
       S = p.default.getUser(e);
     if (null == S) return v;
@@ -196,7 +196,7 @@ class R {
       id: S.id,
       voiceState: A,
       voicePlatform: N,
-      speaking: (0, o.O)({
+      speaking: (0, a.O)({
         userId: e,
         checkIsMuted: !0
       }),
@@ -206,7 +206,7 @@ class R {
       userNick: g.ZP.getName(null == C ? void 0 : C.getGuildId(), this.channelId, S),
       localVideoDisabled: f.Z.isLocalVideoDisabled(S.id)
     }), v.push(E));
-    let R = null != (a = l.Z.getStreamForUser(e, null == C ? void 0 : C.getGuildId())) ? a : l.Z.getActiveStreamForUser(e, null == C ? void 0 : C.getGuildId());
+    let R = null != (o = l.Z.getStreamForUser(e, null == C ? void 0 : C.getGuildId())) ? o : l.Z.getActiveStreamForUser(e, null == C ? void 0 : C.getGuildId());
     if (null != R && R.channelId === this.channelId) {
       let t = (0, s.V9)(R),
         n = this.getParticipant(t),

@@ -5,9 +5,9 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  o = n(120356),
-  a = n.n(o),
-  s = n(683305),
+  a = n(120356),
+  o = n.n(a),
+  s = n(950035),
   l = n(481060),
   c = n(596687);
 let u = 25,
@@ -18,7 +18,7 @@ function _(e) {
   let {
     children: t,
     shouldAnimate: n,
-    className: o,
+    className: a,
     pauseDuration: _ = d,
     scrollSpeed: p = u
   } = e, h = i.useRef(null), m = i.useRef(null), g = () => {
@@ -71,7 +71,7 @@ function _(e) {
   }, "animate-always");
   return (0, r.jsx)("div", {
     ref: h,
-    className: a()(c.container, o),
+    className: o()(c.container, a),
     children: (0, r.jsx)(s.animated.div, {
       ref: m,
       className: c.marquee,

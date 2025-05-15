@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => h
 }), n(388685);
 var r, i = n(255367),
-  o = n(73800),
-  a = n(120356),
-  s = n.n(a),
+  a = n(73800),
+  o = n(120356),
+  s = n.n(o),
   l = n(481060),
   c = n(540026),
   u = n(388032),
@@ -21,7 +21,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 let _ = 150;
-class p extends(r = o.PureComponent) {
+class p extends(r = a.PureComponent) {
   componentDidMount() {
     this.updateMediaBar()
   }
@@ -42,8 +42,8 @@ class p extends(r = o.PureComponent) {
       iconColor: t,
       className: n,
       sliderWrapperClassName: r,
-      sliderClassName: o,
-      currentWindow: a,
+      sliderClassName: a,
+      currentWindow: o,
       muted: f,
       minValue: p,
       maxValue: h,
@@ -91,13 +91,13 @@ class p extends(r = o.PureComponent) {
           }), _)
         },
         children: (0, i.jsx)(c.Z, {
-          sliderClassName: o,
+          sliderClassName: a,
           type: c.Z.Types.VOLUME,
           value: m / h,
           onDrag: this.handleValueChange,
           onDragStart: this.handleDragStart,
           onDragEnd: this.handleDragEnd,
-          currentWindow: a,
+          currentWindow: o,
           ref: this._mediaBar
         })
       }), (0, i.jsx)(l.zxk, {
@@ -114,7 +114,7 @@ class p extends(r = o.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), f(this, "_mediaBar", o.createRef()), f(this, "_hoverTimeout", void 0), f(this, "state", {
+    super(...e), f(this, "_mediaBar", a.createRef()), f(this, "_hoverTimeout", void 0), f(this, "state", {
       hovered: !1,
       focused: !1,
       dragging: !1
@@ -135,13 +135,13 @@ class p extends(r = o.PureComponent) {
         value: n,
         maxValue: r,
         onValueChange: i
-      } = this.props, o = .05 * (r - t);
+      } = this.props, a = .05 * (r - t);
       switch (e.key) {
         case "ArrowUp":
-          e.stopPropagation(), e.preventDefault(), null == i || i(Math.min(r, n + o));
+          e.stopPropagation(), e.preventDefault(), null == i || i(Math.min(r, n + a));
           break;
         case "ArrowDown":
-          e.stopPropagation(), e.preventDefault(), null == i || i(Math.max(t, n - o))
+          e.stopPropagation(), e.preventDefault(), null == i || i(Math.max(t, n - a))
       }
     }), f(this, "handleDragStart", () => {
       this.setState({

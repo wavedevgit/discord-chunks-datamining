@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  o = n(379357),
-  a = n(442550),
+  a = n(379357),
+  o = n(442550),
   s = n(297781),
   l = n(443487),
   c = n(522314);
@@ -20,7 +20,7 @@ let u = [s.OV, s.EE, s.Af, s.U9, s.n8, s.pQ],
       hovered: d
     } = e, {
       largeImage: f
-    } = (0, o.rv)({
+    } = (0, a.rv)({
       entry: t,
       showCoverImage: !1
     });
@@ -40,7 +40,7 @@ let u = [s.OV, s.EE, s.Af, s.U9, s.n8, s.pQ],
             hovered: d
           }, n))
         })]
-      }), (0, r.jsx)(a.f, {
+      }), (0, r.jsx)(o.f, {
         alt: null == f ? void 0 : f.alt,
         src: null == f ? void 0 : f.src,
         size: 48,

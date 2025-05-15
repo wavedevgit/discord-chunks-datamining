@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(147913),
   i = n(592125),
-  o = n(109590),
-  a = n(176505);
+  a = n(109590),
+  o = n(176505);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -21,9 +21,9 @@ class l extends r.Z {
     let {
       channelId: t
     } = e;
-    if ((0, a.AB)(t)) return;
+    if ((0, o.AB)(t)) return;
     let n = i.Z.getChannel(t);
-    null != n && n.isForumLikeChannel() && (0, o.EB)(n)
+    null != n && n.isForumLikeChannel() && (0, a.EB)(n)
   }
   constructor(...e) {
     super(...e), s(this, "actions", {

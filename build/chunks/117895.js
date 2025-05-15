@@ -2,8 +2,8 @@
 "use strict";
 var r = n(507604),
   i = n(64637),
-  o = n(282108),
-  a = n(179122),
+  a = n(282108),
+  o = n(179122),
   s = n(459316),
   l = TypeError,
   c = Object.defineProperty,
@@ -11,8 +11,8 @@ var r = n(507604),
   d = "enumerable",
   f = "configurable",
   _ = "writable";
-t.f = r ? o ? function(e, t, n) {
-  if (a(e), t = s(t), a(n), "function" == typeof e && "prototype" === t && "value" in n && _ in n && !n[_]) {
+t.f = r ? a ? function(e, t, n) {
+  if (o(e), t = s(t), o(n), "function" == typeof e && "prototype" === t && "value" in n && _ in n && !n[_]) {
     var r = u(e, t);
     r && r[_] && (e[t] = n.value, n = {
       configurable: f in n ? n[f] : r[f],
@@ -22,7 +22,7 @@ t.f = r ? o ? function(e, t, n) {
   }
   return c(e, t, n)
 } : c : function(e, t, n) {
-  if (a(e), t = s(t), a(n), i) try {
+  if (o(e), t = s(t), o(n), i) try {
     return c(e, t, n)
   } catch (e) {}
   if ("get" in n || "set" in n) throw new l("Accessors not supported");

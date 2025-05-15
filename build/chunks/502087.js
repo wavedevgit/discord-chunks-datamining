@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => E
 });
 var r, i = n(442837),
-  o = n(570140),
-  a = n(168232),
+  a = n(570140),
+  o = n(168232),
   s = n(474936);
 
 function l(e, t, n) {
@@ -71,7 +71,7 @@ function m(e) {
   let {
     user: t
   } = e;
-  _.premiumTypeActual = (0, a.G)(t.premium_type)
+  _.premiumTypeActual = (0, o.G)(t.premium_type)
 }
 class g extends(r = i.ZP.PersistedStore) {
   initialize(e) {
@@ -102,7 +102,7 @@ l(g, "displayName", f), l(g, "persistKey", f), l(g, "migrations", [e => {
     createdAtOverride: s.Zh
   })
 }]);
-let E = new g(o.Z, {
+let E = new g(a.Z, {
   SET_PREMIUM_TYPE_OVERRIDE: p,
   SET_CREATED_AT_OVERRIDE: h,
   CURRENT_USER_UPDATE: m,

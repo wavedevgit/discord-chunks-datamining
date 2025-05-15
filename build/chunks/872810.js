@@ -16,8 +16,8 @@ n.d(t, {
 });
 var r = n(512722),
   i = n.n(r),
-  o = n(990547),
-  a = n(544891),
+  a = n(990547),
+  o = n(544891),
   s = n(570140),
   l = n(258609),
   c = n(569545),
@@ -95,7 +95,7 @@ function D(e, t) {
   } = e;
   if (null != n && w(n, r)) return;
   let i = (0, c.V9)(e),
-    o = (null == t ? void 0 : t.forceMultiple) || _.Z.getAllActiveStreamsForChannel(r).filter(e => {
+    a = (null == t ? void 0 : t.forceMultiple) || _.Z.getAllActiveStreamsForChannel(r).filter(e => {
       let {
         ownerId: t
       } = e;
@@ -104,8 +104,8 @@ function D(e, t) {
   s.Z.dispatch({
     type: "STREAM_WATCH",
     streamKey: i,
-    allowMultiple: o
-  }), o || null != t && t.noFocus || I.Z.selectParticipant(e.channelId, i)
+    allowMultiple: a
+  }), a || null != t && t.noFocus || I.Z.selectParticipant(e.channelId, i)
 }
 
 function L(e, t) {
@@ -124,8 +124,8 @@ function x(e, t) {
   if (null != n && w(n, r)) return;
   D(e, t);
   let i = d.Z.getWindowOpen(S.KJ3.CHANNEL_CALL_POPOUT),
-    o = g.Z.getVoiceChannelId();
-  i && o === r || (0, u.Z)(e)
+    a = g.Z.getVoiceChannelId();
+  i && a === r || (0, u.Z)(e)
 }
 
 function k(e) {
@@ -158,7 +158,7 @@ async function j(e, t, n) {
     streamKey: r
   });
   try {
-    let e = await a.tn.get({
+    let e = await o.tn.get({
       url: S.ANM.STREAM_PREVIEW(r),
       query: {
         version: Date.now()
@@ -186,7 +186,7 @@ async function U(e) {
       url: S.ANM.STREAM_NOTIFY(e),
       oldFormErrors: !0,
       trackedActionData: {
-        event: o.NetworkActionNames.STREAM_NOTIFY
+        event: a.NetworkActionNames.STREAM_NOTIFY
       },
       rejectWithError: !0
     })
@@ -200,7 +200,7 @@ function G(e) {
 }
 
 function B(e, t) {
-  a.tn.patch({
+  o.tn.patch({
     url: S.ANM.STREAM(e),
     body: {
       region: t

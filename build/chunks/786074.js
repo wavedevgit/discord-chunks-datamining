@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(490983),
   i = n(388032);
-let o = {
+let a = {
   MENTION_EVERYONE: () => ({
     test: "everyone",
     text: "@everyone",

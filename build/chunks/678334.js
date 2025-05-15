@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  o = n(512722),
-  a = n.n(o),
+  a = n(512722),
+  o = n.n(a),
   s = n(481060),
   l = n(906732),
   c = n(600164),
@@ -31,7 +31,7 @@ function A(e) {
   let {
     premiumSubscription: t,
     setPurchaseState: n,
-    onBack: o,
+    onBack: a,
     onNext: A,
     legalTermsNodeRef: N,
     flashLegalTerms: C,
@@ -67,14 +67,14 @@ function A(e) {
     inReverseTrial: er
   } = (0, b.JL)(), {
     isGift: ei,
-    selectedGiftStyle: eo,
-    customGiftMessage: ea,
+    selectedGiftStyle: ea,
+    customGiftMessage: eo,
     emojiConfetti: es,
     soundEffect: el,
     giftRecipient: ec,
     selectedGiftingPromotionReward: eu
   } = (0, E.wD)(), ed = (0, u.a5)(H), ef = (0, m.MY)(ec), e_ = {};
-  e_.gift_style = eo, e_.reward_sku_ids = ed && (null == eu ? void 0 : eu.skuId) != null ? [null == eu ? void 0 : eu.skuId] : [], ef === m.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && (a()(null != ec, "Gift recipient must be set at purchase review step for these gift options."), e_.recipient_id = ec.id, e_.custom_message = ea, e_.emoji_id = null == es ? void 0 : es.id, e_.emoji_name = (null == es ? void 0 : es.id) == null ? null == es ? void 0 : es.surrogates : void 0, e_.sound_id = null == el ? void 0 : el.soundId);
+  e_.gift_style = ea, e_.reward_sku_ids = ed && (null == eu ? void 0 : eu.skuId) != null ? [null == eu ? void 0 : eu.skuId] : [], ef === m.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && (o()(null != ec, "Gift recipient must be set at purchase review step for these gift options."), e_.recipient_id = ec.id, e_.custom_message = eo, e_.emoji_id = null == es ? void 0 : es.id, e_.emoji_name = (null == es ? void 0 : es.id) == null ? null == es ? void 0 : es.surrogates : void 0, e_.sound_id = null == el ? void 0 : el.soundId);
   let ep = null == H ? void 0 : H.id,
     eh = (0, O.sE)(x, Y.paymentSourceId, ep),
     {
@@ -93,7 +93,7 @@ function A(e) {
     eN = null;
   if (z === S.GZQ.ONE_TIME) {
     var eC;
-    a()(null != X, "SKU must be selected for one-time purchases"), eA = null != (eC = J[X]) ? eC : null, a()(null != eA, "SKU must exist and be fetched.");
+    o()(null != X, "SKU must be selected for one-time purchases"), eA = null != (eC = J[X]) ? eC : null, o()(null != eA, "SKU must exist and be fetched.");
     let e = $[X],
       t = null != q ? q : h.c;
     eN = null != e ? e[t] : null
@@ -171,7 +171,7 @@ function A(e) {
     }), (0, r.jsx)(I.Z, {}), B && !eD ? (0, r.jsx)("div", {
       className: T.back,
       children: (0, r.jsx)(f.Z, {
-        onClick: o
+        onClick: a
       })
     }) : null]
   })

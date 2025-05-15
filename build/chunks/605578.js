@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  o = n(1561),
-  a = n(204857);
+  a = n(1561),
+  o = n(204857);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -75,11 +75,11 @@ let d = i.forwardRef(function(e, t) {
     onDoubleClick: p,
     onMouseDown: y,
     onContextMenu: h,
-    children: [(0, r.jsx)(o.P, u(l({}, v), {
+    children: [(0, r.jsx)(a.P, u(l({}, v), {
       focusProps: l({
         ringTarget: S
       }, f),
-      className: a.focusTarget,
+      className: o.focusTarget,
       "aria-label": I,
       onClick: e => {
         e.stopPropagation(), null == _ || _(e)

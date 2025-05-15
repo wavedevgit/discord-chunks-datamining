@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  o = n.n(i),
-  a = n(481060),
+  a = n.n(i),
+  o = n(481060),
   s = n(182701);
 
 function l(e, t, n) {
@@ -53,8 +53,8 @@ function f(e, t) {
   if (null == e) return {};
   var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -62,8 +62,8 @@ function f(e, t) {
 function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -74,19 +74,19 @@ function p(e) {
     className: i,
     tooltip: l
   } = e;
-  return (0, r.jsx)(a.ua7, {
+  return (0, r.jsx)(o.ua7, {
     text: l,
     children: e => {
       var {
         onClick: l
       } = e, u = f(e, ["onClick"]);
-      return (0, r.jsx)(a.zxk, d(c({}, u), {
+      return (0, r.jsx)(o.zxk, d(c({}, u), {
         onClick: e => {
           null == n || n(e), null == l || l()
         },
         innerClassName: s.buttonReset,
-        color: o()(s.cta, i),
-        size: a.zxk.Sizes.MIN,
+        color: a()(s.cta, i),
+        size: o.zxk.Sizes.MIN,
         children: t
       }))
     }

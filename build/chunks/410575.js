@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => f
 });
 var r, i = n(255367),
-  o = n(73800),
-  a = n(772848),
+  a = n(73800),
+  o = n(772848),
   s = n(626135),
   l = n(251625),
   c = n(981631);
@@ -31,16 +31,16 @@ function d(e) {
   }
   return e
 }
-class f extends(r = o.Component) {
+class f extends(r = a.Component) {
   renderProvider(e) {
     var t, n;
     let {
       section: r,
-      page: o,
-      object: a,
+      page: a,
+      object: o,
       objectType: l,
       children: c
-    } = this.props, u = this.mergeLocation(e.location, this.getLocation(o, r, a, l)), d = this.getContext(u, null != (t = this._loadDate) ? t : e.loadDate, null != (n = this._loadId) ? n : e.loadId);
+    } = this.props, u = this.mergeLocation(e.location, this.getLocation(a, r, o, l)), d = this.getContext(u, null != (t = this._loadDate) ? t : e.loadDate, null != (n = this._loadId) ? n : e.loadId);
     return (0, i.jsx)(s.AnalyticsContext.Provider, {
       value: d,
       children: c
@@ -62,7 +62,7 @@ class f extends(r = o.Component) {
       location: e,
       loadDate: t,
       loadId: n
-    }))), null != e.loadId ? this._loadId = e.loadId : e.root && (this._loadId = (0, a.Z)())
+    }))), null != e.loadId ? this._loadId = e.loadId : e.root && (this._loadId = (0, o.Z)())
   }
 }
 u(f, "Pages", c.ZY5), u(f, "Sections", c.jXE), u(f, "Objects", c.qAy), u(f, "ObjectTypes", c.Qqv), u(f, "defaultProps", {

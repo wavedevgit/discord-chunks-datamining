@@ -5,9 +5,9 @@ n.d(t, {
 }), n(388685), n(583741), n(953529);
 var r = n(255367),
   i = n(73800),
-  o = n(120356),
-  a = n.n(o),
-  s = n(683305),
+  a = n(120356),
+  o = n.n(a),
+  s = n(950035),
   l = n(793030),
   c = n(442837),
   u = n(481060),
@@ -73,7 +73,7 @@ function v(e) {
   let {
     guild: t,
     themeResponsive: n = !0,
-    onButtonClick: o
+    onButtonClick: a
   } = e, g = (0, f.Ek)(t.id, "GuildBoostingMarketing"), b = (0, c.e7)([d.Z], () => {
     var e, n;
     return null == (n = d.Z.getStateForGuild(t.id)) || null == (e = n.powerupCatalog) ? void 0 : e[_.Us.PERK]
@@ -122,7 +122,7 @@ function v(e) {
     })
   }, [b]);
   return g && null != b && 0 !== b.length ? (0, r.jsxs)(s.animated.div, {
-    className: a()(m.container, {
+    className: o()(m.container, {
       [m.themeResponsiveContainer]: n
     }),
     style: y(E({}, S), {
@@ -131,14 +131,14 @@ function v(e) {
     children: [(0, r.jsx)(l.xv, {
       tag: "span",
       variant: "text-md/semibold",
-      className: a()(m.description, {
+      className: o()(m.description, {
         [m.text]: !n,
         [m.responsiveText]: n
       }),
       children: A
     }), (0, r.jsx)(u.zxk, {
       className: m.button,
-      onClick: o,
+      onClick: a,
       children: h.intl.string(p.default.E5V5KC)
     })]
   }) : null
