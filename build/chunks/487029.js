@@ -27,8 +27,8 @@ function N(e) {
     guildId: t,
     channel: n,
     width: N,
-    height: C,
-    keepOpen: E,
+    height: E,
+    keepOpen: C,
     interactive: j = !0,
     analyticsSource: I,
     onClose: P
@@ -57,8 +57,8 @@ function N(e) {
     0 === S.length && 0 === T.length && P()
   }, [S.length, T, P]), l.useEffect(() => () => {
     let e = Z.current;
-    E || null == e || D(e)
-  }, [E, D]), (0, u.Z)({
+    C || null == e || D(e)
+  }, [C, D]), (0, u.Z)({
     type: i.ImpressionTypes.POPOUT,
     name: i.ImpressionNames.SOUNDBOARD_POPOUT,
     properties: {
@@ -93,10 +93,10 @@ function N(e) {
     value: R,
     children: (0, r.jsx)(b.Z, {
       wheelWidth: N,
-      wheelHeight: C,
+      wheelHeight: E,
       itemWidth: 96,
       itemHeight: 52,
-      showDeadZoneIndicator: !E,
+      showDeadZoneIndicator: !C,
       activeItem: _,
       onItemSelect: M,
       onItemAction: U,

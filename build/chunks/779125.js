@@ -1,6 +1,6 @@
 /** Chunk was on 36087 **/
 n.d(t, {
-  Z: () => x
+  Z: () => E
 });
 var r = n(255367);
 n(73800);
@@ -20,12 +20,12 @@ var i = n(442837),
   _ = n(900849),
   b = n(981631);
 
-function x(e) {
+function E(e) {
   let {
     channel: t,
     onClick: n,
-    beforeTransition: x,
-    className: E,
+    beforeTransition: E,
+    className: x,
     openChatWithoutConnecting: y
   } = e, v = (0, i.e7)([h.default, f.Z], () => null == t ? "" : (0, s.F6)(t, h.default, f.Z), [t]);
   return (0, r.jsx)(l.ua7, {
@@ -38,9 +38,9 @@ function x(e) {
       } = e;
       return (0, r.jsx)(c.Z, {
         role: "link",
-        className: E,
+        className: x,
         onClick: e => {
-          e.stopPropagation(), null != n ? n() : (null != x && x(), (0, l.pTH)(), function(e, t) {
+          e.stopPropagation(), null != n ? n() : (null != E && E(), (0, l.pTH)(), function(e, t) {
             let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
             if (null == e || null == t) return;
             let r = m.Z.getGuild(e);

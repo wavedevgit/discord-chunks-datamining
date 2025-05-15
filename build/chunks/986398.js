@@ -10,11 +10,13 @@ var r = n(255367),
 function o(e) {
   let {
     leaderboard: t,
-    className: n
-  } = e, o = (0, i.xF)(t.settings.application_id, t.settings.winner_asset_id);
-  return null == o ? null : (0, r.jsx)("img", {
     className: n,
-    src: o,
-    alt: a.intl.string(a.t.QyRmzc)
+    ref: o
+  } = e, s = (0, i.xF)(t.settings.application_id, t.settings.winner_asset_id);
+  return null == s ? null : (0, r.jsx)("img", {
+    className: n,
+    src: s,
+    alt: a.intl.string(a.t.QyRmzc),
+    ref: o
   })
 }

@@ -216,7 +216,7 @@ function T(e) {
     onClick: o,
     onContextMenu: s,
     children: a
-  } = e, d = (0, c.e7)([g.Z], () => g.Z.theme), h = i.useCallback(async () => {
+  } = e, d = i.useRef(null), h = (0, c.e7)([g.Z], () => g.Z.theme), p = i.useCallback(async () => {
     let {
       default: e
     } = await Promise.all([n.e("87154"), n.e("42018")]).then(n.bind(n, 859432));
@@ -225,7 +225,7 @@ function T(e) {
         closePopout: n
       } = t;
       return (0, r.jsx)(u.f6W, {
-        theme: d,
+        theme: h,
         children: t => (0, r.jsx)("div", {
           className: t,
           children: (0, r.jsx)(e, {
@@ -235,8 +235,8 @@ function T(e) {
         })
       })
     }
-  }, [l, d]), p = (0, c.e7)([b.Z], () => (0, f.b)(b.Z, l)), m = i.useCallback(() => {
-    p ? (0, u.ZDy)(async () => {
+  }, [l, h]), m = (0, c.e7)([b.Z], () => (0, f.b)(b.Z, l)), _ = i.useCallback(() => {
+    m ? (0, u.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("7654"), n.e("17439")]).then(n.bind(n, 560114));
@@ -250,10 +250,11 @@ function T(e) {
       } = await n.e("88358").then(n.bind(n, 598402));
       return t => (0, r.jsx)(e, j({}, t))
     })
-  }, [p, l]);
+  }, [m, l]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.KeG, {
-      renderPopout: h,
+      targetElementRef: d,
+      renderPopout: p,
       position: "bottom",
       align: "left",
       animation: u.yRy.Animation.SCALE,
@@ -261,6 +262,7 @@ function T(e) {
       children: e => {
         var n;
         return (0, r.jsxs)(u.P3F, E(j({
+          innerRef: d,
           className: S.guildDropdown,
           "aria-label": C.intl.formatToPlainString(C.t.xMXpl5, {
             guildName: null != (n = null == l ? void 0 : l.toString()) ? n : ""
@@ -293,7 +295,7 @@ function T(e) {
       }, e), {
         onClick: () => {
           var t;
-          null == (t = e.onClick) || t.call(e), m()
+          null == (t = e.onClick) || t.call(e), _()
         },
         children: (0, r.jsx)(u.ejJ, {
           size: "refresh_sm",

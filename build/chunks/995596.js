@@ -70,13 +70,14 @@ function T(e) {
     onTabSelect: t,
     tabs: n,
     selectedTab: i
-  } = e, s = (0, x.ZP)(), o = (0, c.wj)(s), u = l.useMemo(() => null != n.find(e => {
+  } = e, s = l.useRef(null), o = (0, x.ZP)(), u = (0, c.wj)(o), m = l.useMemo(() => null != n.find(e => {
     let {
       id: t
     } = e;
     return t === i
-  }), [i, n]), m = u ? "header-primary" : o ? "text-muted" : "header-primary", h = u ? d.TVs.colors.HEADER_PRIMARY : o ? d.TVs.colors.TEXT_MUTED : d.TVs.colors.HEADER_PRIMARY;
+  }), [i, n]), h = m ? "header-primary" : u ? "text-muted" : "header-primary", j = m ? d.TVs.colors.HEADER_PRIMARY : u ? d.TVs.colors.TEXT_MUTED : d.TVs.colors.HEADER_PRIMARY;
   return (0, r.jsx)(d.yRy, {
+    targetElementRef: s,
     renderPopout: e => {
       let {
         closePopout: l
@@ -114,21 +115,22 @@ function T(e) {
         return e
       }({}, e), l = l = {
         id: "more",
+        clickableInnerRef: s,
         color: "text-muted",
         className: a()(v.more, {
-          [v.selected]: u
+          [v.selected]: m
         }),
         "aria-label": g.intl.string(g.t.UKOtz8),
         children: [(0, r.jsx)(d.Text, {
           variant: "text-md/medium",
-          color: m,
+          color: h,
           children: g.intl.string(g.t.UKOtz8)
         }), i ? (0, r.jsx)(d.u04, {
           size: "sm",
-          color: h
+          color: j
         }) : (0, r.jsx)(d.CJ0, {
           size: "sm",
-          color: h
+          color: j
         })]
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);

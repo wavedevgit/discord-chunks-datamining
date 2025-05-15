@@ -111,12 +111,12 @@ let g = (e, t) => {
       onItemSelect: m,
       onItemAction: x,
       interactive: N = !0,
-      onClose: C,
-      children: E
+      onClose: E,
+      children: C
     } = e, j = l.useRef(null), I = l.useRef([]), P = l.useRef(!1), S = l.useRef(null), [T, Z] = l.useState(0), [_, w] = l.useState({
       x: 0,
       y: 0
-    }), A = Math.abs(_.x) + Math.abs(_.y) > 0, R = l.useMemo(() => o().chunk(E, f), [E]), D = l.useCallback((e, t) => {
+    }), A = Math.abs(_.x) + Math.abs(_.y) > 0, R = l.useMemo(() => o().chunk(C, f), [C]), D = l.useCallback((e, t) => {
       null == I.current[T] ? I.current[T] = [] : I.current[T][t] = e
     }, [T]), k = l.useCallback((e, t) => {
       S.current = t, m(f * e + t)
@@ -171,7 +171,7 @@ let g = (e, t) => {
       t >= 0 && t < R.length && (null != S.current && (R[t].length > S.current ? k(t, S.current) : M()), Z(t))
     }, [N, T, R, k, M]), W = l.useMemo(() => R[T].map((e, l) => {
       let i = h[l];
-      if (null == i) throw Error("Too many items supplied ".concat(E.length, " expected max of ").concat(h.length));
+      if (null == i) throw Error("Too many items supplied ".concat(C.length, " expected max of ").concat(h.length));
       let o = p(i.x, t, y),
         a = p(i.y, n, O);
       return (0, r.jsx)("div", {
@@ -185,7 +185,7 @@ let g = (e, t) => {
         },
         children: e
       }, l)
-    }), [R, T, t, y, n, O, E.length, D]);
+    }), [R, T, t, y, n, O, C.length, D]);
     return (0, r.jsx)(a.P3F, {
       className: c.chatWheelMouseInput,
       onMouseMove: G,
@@ -265,7 +265,7 @@ let g = (e, t) => {
           className: c.innerContent,
           children: [b && (0, r.jsx)(a.P3F, {
             className: c.chatWheelDeadZoneIcon,
-            onClick: C,
+            onClick: E,
             children: (0, r.jsx)(d, {
               className: c.chatWheelDeadZoneIcon
             })

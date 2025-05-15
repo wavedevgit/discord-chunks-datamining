@@ -70,9 +70,11 @@ function f(e) {
     guildId: t,
     name: n,
     position: o = "right",
-    onClose: l
-  } = e, d = u(e, ["guildId", "name", "position", "onClose"]);
+    onClose: l,
+    targetElementRef: d
+  } = e, f = u(e, ["guildId", "name", "position", "onClose", "targetElementRef"]);
   return (0, r.jsx)(i.yRy, s({
+    targetElementRef: d,
     position: o,
     clickTrap: !0,
     renderPopout: e => (0, r.jsx)(a.Z, c(s({}, e), {
@@ -82,5 +84,5 @@ function f(e) {
       guildId: t,
       name: n
     }))
-  }, d))
+  }, f))
 }

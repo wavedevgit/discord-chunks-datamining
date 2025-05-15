@@ -70,9 +70,9 @@ let g = function(e) {
     hasReply: S,
     authorHasGradientRole: w = !1,
     guildId: I,
-    onMouseEnter: N,
-    onMouseLeave: k
-  } = e, R = function(e, t) {
+    onMouseEnter: R,
+    onMouseLeave: N
+  } = e, k = function(e, t) {
     if (null == e) return {};
     var n, r, o = function(e, t) {
       if (null == e) return {};
@@ -90,11 +90,11 @@ let g = function(e) {
   let E = (0, c.Z)(I, "BaseMessage"),
     [M, Z] = o.useState(!1),
     A = o.useCallback(e => {
-      Z(!0), null == N || N(e)
-    }, [N]),
+      Z(!0), null == R || R(e)
+    }, [R]),
     D = o.useCallback(e => {
-      Z(!1), null == k || k(e)
-    }, [k]),
+      Z(!1), null == N || N(e)
+    }, [N]),
     L = (0, r.jsx)(l.d.Provider, {
       value: {
         animate: M,
@@ -115,7 +115,7 @@ let g = function(e) {
             [u.hasReply]: S
           }),
           ref: x
-        }, R), {
+        }, k), {
           role: "article",
           onMouseEnter: A,
           onMouseLeave: D,

@@ -204,98 +204,100 @@ let Y = e => {
   z = i.createContext(void 0),
   q = e => {
     var t, {
-        index: a
+        index: a,
+        ref: p
       } = e,
-      p = B(e, ["index"]);
-    let m = i.useRef(null),
-      [g, E] = i.useState("default"),
-      O = (0, s.JA)("".concat(a)),
-      v = null == (t = b.default.getCurrentUser()) ? void 0 : t.isStaff(),
+      m = B(e, ["index", "ref"]);
+    let g = i.useRef(null),
+      [E, O] = i.useState("default"),
+      v = (0, s.JA)("".concat(a)),
+      I = null == (t = b.default.getCurrentUser()) ? void 0 : t.isStaff(),
       {
-        isRich: I,
-        appName: S
-      } = (0, L.n)(p.entry),
-      T = i.useMemo(() => ({
-        entry: p.entry,
-        channelId: p.channel.id,
-        guildId: p.channel.guild_id,
-        requestId: p.requestId,
-        richPresenceName: I ? S : void 0
-      }), [S, p.channel.guild_id, p.channel.id, p.entry, p.requestId, I]),
-      A = i.useRef(!1),
-      [N, C] = i.useState(!1),
-      [P, R] = i.useState(!1),
-      w = (0, c.e7)([_.Z], () => _.Z.keyboardModeEnabled);
+        isRich: S,
+        appName: T
+      } = (0, L.n)(m.entry),
+      A = i.useMemo(() => ({
+        entry: m.entry,
+        channelId: m.channel.id,
+        guildId: m.channel.guild_id,
+        requestId: m.requestId,
+        richPresenceName: S ? T : void 0
+      }), [T, m.channel.guild_id, m.channel.id, m.entry, m.requestId, S]),
+      N = i.useRef(!1),
+      [C, P] = i.useState(!1),
+      [R, w] = i.useState(!1),
+      D = (0, c.e7)([_.Z], () => _.Z.keyboardModeEnabled);
     i.useEffect(() => {
-      N && w && R(!0)
-    }, [N, w]);
-    let D = i.useCallback(e => {
-        v && (0, f.jW)(e, async () => {
+      C && D && w(!0)
+    }, [C, D]);
+    let M = i.useCallback(e => {
+        I && (0, f.jW)(e, async () => {
           let {
             default: e
           } = await n.e("153").then(n.bind(n, 330150));
           return () => (0, r.jsx)(e, {
-            entry: p.entry,
-            requestId: p.requestId
+            entry: m.entry,
+            requestId: m.requestId
           })
         })
-      }, [p, v]),
-      M = i.useCallback(() => {
-        E(String(Date.now()))
+      }, [m, I]),
+      U = i.useCallback(() => {
+        O(String(Date.now()))
       }, []),
-      U = i.useCallback(function(e) {
+      F = i.useCallback(function(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-        (0, y.L)(e, j({}, T, t))
-      }, [T]),
-      F = i.useMemo(() => o().throttle(e => {
+        (0, y.L)(e, j({}, A, t))
+      }, [A]),
+      V = i.useMemo(() => o().throttle(e => {
         (0, y.L)(x.xP.CARD_POPOUT_OPEN, e)
       }, Z, {
         leading: !0,
         trailing: !1
       }), []),
-      V = () => {
-        A.current = !1, setTimeout(() => {
-          A.current || (C(!1), R(w))
+      H = () => {
+        N.current = !1, setTimeout(() => {
+          N.current || (P(!1), w(D))
         }, 100)
       };
     return (0, r.jsx)("div", {
+      ref: p,
       onMouseEnter: () => {
-        p.entry.content_type !== l.s.LEADERBOARD || (0, h.un)(u.z.LEADERBOARD_NUX_COACHMARK) || (0, h.EW)(u.z.LEADERBOARD_NUX_COACHMARK, {
+        m.entry.content_type !== l.s.LEADERBOARD || (0, h.un)(u.z.LEADERBOARD_NUX_COACHMARK) || (0, h.EW)(u.z.LEADERBOARD_NUX_COACHMARK, {
           dismissAction: k.L.SECONDARY
-        }), A.current = !0, setTimeout(() => {
-          A.current && C(!0), F(T)
+        }), N.current = !0, setTimeout(() => {
+          N.current && P(!0), V(A)
         }, 100)
       },
-      onMouseLeave: V,
+      onMouseLeave: H,
       children: (0, r.jsx)(d.yRy, {
-        targetElementRef: m,
+        targetElementRef: g,
         renderPopout: e => {
           let {
             closePopout: t
           } = e;
           return (0, r.jsx)(z.Provider, {
-            value: V,
+            value: H,
             children: (0, r.jsx)(W, j({
               closePopout: t,
-              updatePopoutPosition: M,
-              trackRankingItemInteraction: U
-            }, p))
+              updatePopoutPosition: U,
+              trackRankingItemInteraction: F
+            }, m))
           })
         },
         position: "left",
-        shouldShow: N,
-        positionKey: g,
-        onRequestOpen: () => F(T),
+        shouldShow: C,
+        positionKey: E,
+        onRequestOpen: () => V(A),
         onRequestClose: () => {
-          P && V()
+          R && H()
         },
         spacing: 8,
         children: (e, t) => {
           let {
             isShown: n
           } = t;
-          return (0, r.jsx)(d.P3F, G(j({}, e, O), {
-            innerRef: m,
+          return (0, r.jsx)(d.P3F, G(j({}, e, v), {
+            innerRef: g,
             focusProps: {
               offset: {
                 top: 4,
@@ -305,12 +307,12 @@ let Y = e => {
               }
             },
             onClick: () => {
-              N || C(!0)
+              C || P(!0)
             },
-            onContextMenu: D,
-            children: (0, r.jsx)(Y, G(j({}, p), {
+            onContextMenu: M,
+            children: (0, r.jsx)(Y, G(j({}, m), {
               selected: n,
-              hovered: A.current
+              hovered: N.current
             }))
           }))
         }

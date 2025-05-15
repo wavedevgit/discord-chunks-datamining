@@ -184,30 +184,32 @@ class C extends(r = o.Component) {
       disabled: o,
       onContextMenu: s,
       clickableRef: c,
-      look: u,
-      disableItemStyles: d
-    } = this.props, _ = this.props["aria-label"], p = r === n;
+      clickableInnerRef: u,
+      look: d,
+      disableItemStyles: _
+    } = this.props, p = this.props["aria-label"], m = r === n;
     return (0, a.jsx)(f.P, {
       className: l()(t, {
-        [h.item]: !d,
-        [h.brand]: "brand" === u,
-        [h.selected]: null == i && p,
-        [h.themed]: "grey" === u,
+        [h.item]: !_,
+        [h.brand]: "brand" === d,
+        [h.selected]: null == i && m,
+        [h.themed]: "grey" === d,
         [h.disabled]: null == i && o
       }),
       style: this.getStyle(),
       role: "tab",
-      "aria-selected": p,
-      "aria-controls": p ? A("".concat(n)) : void 0,
+      "aria-selected": m,
+      "aria-controls": m ? A("".concat(n)) : void 0,
       "aria-disabled": o,
-      tabIndex: p ? 0 : -1,
+      tabIndex: m ? 0 : -1,
       onMouseEnter: null != i ? this.handleMouseOver : void 0,
       onClick: this.handleClick,
       onMouseLeave: null != i ? this.handleMouseOut : void 0,
       onMouseUp: null != i ? this.handleMouseUp : void 0,
       onMouseDown: this.handleMouseDown,
       onContextMenu: s,
-      "aria-label": _,
+      "aria-label": p,
+      innerRef: u,
       ref: c,
       children: e
     })

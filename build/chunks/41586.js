@@ -58,20 +58,20 @@ function H(e, t) {
 let w = l.forwardRef(function(e, t) {
   let {
     guild: n
-  } = e, o = (0, u.e7)([j.Z], () => j.Z.hasDefaultSearchStateByGuildId(n.id), [n.id]), a = (0, u.e7)([b.Z], () => (0, d.wj)(b.Z.theme)), w = (0, u.e7)([p.Z], () => p.Z.can(c.$e(v.Pl.MANAGE_GUILD, v.Pl.KICK_MEMBERS), n)), N = l.useCallback(() => {
-    null != n && w && (0, C.ZDy)(async () => e => (0, r.jsx)(m.Z, H(_({}, e), {
+  } = e, o = l.useRef(null), a = (0, u.e7)([j.Z], () => j.Z.hasDefaultSearchStateByGuildId(n.id), [n.id]), w = (0, u.e7)([b.Z], () => (0, d.wj)(b.Z.theme)), N = (0, u.e7)([p.Z], () => p.Z.can(c.$e(v.Pl.MANAGE_GUILD, v.Pl.KICK_MEMBERS), n)), S = l.useCallback(() => {
+    null != n && N && (0, C.ZDy)(async () => e => (0, r.jsx)(m.Z, H(_({}, e), {
       guild: n
     })))
-  }, [n, w]), S = (0, u.e7)([j.Z], () => j.Z.getSearchStateByGuildId(n.id), [n.id], s()), D = (0, f.gm)(n.id), [Z, L] = l.useState(S.query), R = null != S.selectedSort && S.selectedSort !== h.d$.ORDER_BY_GUILD_JOINED_AT_DESC && S.selectedSort !== h.d$.ORDER_BY_UNSPECIFIED, P = l.useCallback(e => {
+  }, [n, N]), D = (0, u.e7)([j.Z], () => j.Z.getSearchStateByGuildId(n.id), [n.id], s()), Z = (0, f.gm)(n.id), [R, L] = l.useState(D.query), P = null != D.selectedSort && D.selectedSort !== h.d$.ORDER_BY_GUILD_JOINED_AT_DESC && D.selectedSort !== h.d$.ORDER_BY_UNSPECIFIED, I = l.useCallback(e => {
     let t = e.trim();
-    t.length > 0 && D(), (0, g.Dr)(n.id, {
+    t.length > 0 && Z(), (0, g.Dr)(n.id, {
       query: t
     })
-  }, [n.id, D]), I = l.useMemo(() => i()(P, 300), [P]), M = l.useCallback(e => {
-    L(e), I(e)
-  }, [I]), V = l.useCallback(() => {
-    L(""), P("")
-  }, [P]);
+  }, [n.id, Z]), M = l.useMemo(() => i()(I, 300), [I]), V = l.useCallback(e => {
+    L(e), M(e)
+  }, [M]), E = l.useCallback(() => {
+    L(""), I("")
+  }, [I]);
   return l.useImperativeHandle(t, () => ({
     resetSearchText() {
       L("")
@@ -80,7 +80,7 @@ let w = l.forwardRef(function(e, t) {
     className: y.searchHeaderContainer,
     children: [(0, r.jsx)("div", {
       className: y.searchHeader,
-      children: o ? (0, r.jsx)(C.X6q, {
+      children: a ? (0, r.jsx)(C.X6q, {
         variant: "heading-md/medium",
         children: O.intl.string(O.t.y12ALC)
       }) : (0, r.jsx)(C.X6q, {
@@ -93,10 +93,10 @@ let w = l.forwardRef(function(e, t) {
         className: y.searchHeader,
         children: (0, r.jsx)(C.E1j, {
           className: y.searchBar,
-          query: Z,
+          query: R,
           placeholder: O.intl.string(O.t.NVoAMz),
-          onChange: M,
-          onClear: V,
+          onChange: V,
+          onClear: E,
           autoComplete: "off",
           inputProps: {
             autoCapitalize: "none",
@@ -107,6 +107,7 @@ let w = l.forwardRef(function(e, t) {
       })
     }), (0, r.jsx)("div", {
       children: (0, r.jsx)(C.yRy, {
+        targetElementRef: o,
         animation: C.yRy.Animation.FADE,
         position: "bottom",
         spacing: 4,
@@ -134,19 +135,20 @@ let w = l.forwardRef(function(e, t) {
             return l
           }(e, ["onClick"]);
           return (0, r.jsx)(C.zxk, H(_({}, n), {
+            buttonRef: o,
             onClick: t,
             "aria-label": O.intl.string(O.t.XvNMNj),
-            color: a ? C.zxk.Colors.PRIMARY : C.zxk.Colors.TRANSPARENT,
-            look: a ? C.zxk.Looks.FILLED : C.zxk.Looks.OUTLINED,
+            color: w ? C.zxk.Colors.PRIMARY : C.zxk.Colors.TRANSPARENT,
+            look: w ? C.zxk.Looks.FILLED : C.zxk.Looks.OUTLINED,
             size: C.zxk.Sizes.SMALL,
             children: (0, r.jsxs)("div", {
               className: y.sortButton,
               children: [(0, r.jsx)(C.uVW, {
                 size: "xs",
-                color: R ? C.TVs.colors.INTERACTIVE_ACTIVE.css : C.TVs.colors.HEADER_SECONDARY.css
+                color: P ? C.TVs.colors.INTERACTIVE_ACTIVE.css : C.TVs.colors.HEADER_SECONDARY.css
               }), (0, r.jsx)(C.Text, {
                 variant: "text-sm/medium",
-                color: R ? "interactive-active" : "header-secondary",
+                color: P ? "interactive-active" : "header-secondary",
                 className: y.sortText,
                 children: O.intl.string(O.t.XvNMNj)
               })]
@@ -156,9 +158,9 @@ let w = l.forwardRef(function(e, t) {
       })
     }), (0, r.jsx)("div", {
       className: y.tableOptions,
-      children: w && (0, r.jsx)(C.zxk, {
+      children: N && (0, r.jsx)(C.zxk, {
         className: y.__invalid_pruneButton,
-        onClick: N,
+        onClick: S,
         "aria-label": O.intl.string(O.t.zbyz7u),
         color: C.zxk.Colors.RED,
         look: C.zxk.Looks.OUTLINED,

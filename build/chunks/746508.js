@@ -562,6 +562,7 @@ class eq extends i.PureComponent {
         })
       }
     }) : (0, r.jsx)(f.yRy, {
+      targetElementRef: this.krispButtonRef,
       position: "top",
       align: "center",
       renderPopout: () => (0, r.jsx)(eF, {}),
@@ -572,7 +573,8 @@ class eq extends i.PureComponent {
         return (0, r.jsx)(eQ, {
           popoutProps: t,
           isShown: i,
-          noiseCancellationActive: e
+          noiseCancellationActive: e,
+          ref: this.krispButtonRef
         })
       }
     }, "krisp-popout")
@@ -666,7 +668,7 @@ class eq extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), eM(this, "ref", i.createRef()), eM(this, "handleChannelLinkClick", e => {
+    super(...e), eM(this, "ref", i.createRef()), eM(this, "krispButtonRef", i.createRef()), eM(this, "handleChannelLinkClick", e => {
       var t;
       let {
         guild: n,
@@ -717,28 +719,30 @@ function eQ(e) {
   let {
     popoutProps: t,
     isShown: n,
-    noiseCancellationActive: l
+    noiseCancellationActive: l,
+    ref: a
   } = e, {
-    parentAnalyticsLocation: a
+    parentAnalyticsLocation: o
   } = (0, A.ZP)(), {
-    play: o,
-    Component: s,
-    events: c
+    play: s,
+    Component: c,
+    events: u
   } = (0, h.P)(l ? "disable" : "enable");
-  return i.useEffect(() => () => o(), [l, o]), (0, r.jsx)(eP.Z, eG(eU({}, t), {
+  return i.useEffect(() => () => s(), [l, s]), (0, r.jsx)(eP.Z, eG(eU({}, t), {
+    ref: a,
     onClick: e => {
-      (0, L.v)(a, L.d.KRISP, !l), t.onClick(e)
+      (0, L.v)(o, L.d.KRISP, !l), t.onClick(e)
     },
     onMouseEnter: () => {
       var e;
-      null == (e = t.onMouseEnter) || e.call(t), c.onMouseEnter()
+      null == (e = t.onMouseEnter) || e.call(t), u.onMouseEnter()
     },
     onMouseLeave: () => {
-      c.onMouseLeave()
+      u.onMouseLeave()
     },
     tooltipClassName: eD.noiseCancellationTooltip,
     tooltipText: n ? null : eR.intl.string(eR.t.vFiCS0),
-    icon: (0, r.jsx)(s, {
+    icon: (0, r.jsx)(c, {
       size: "refresh_sm"
     })
   }))

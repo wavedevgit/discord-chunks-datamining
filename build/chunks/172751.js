@@ -100,48 +100,50 @@ let E = i.memo(function(e) {
     var t;
     let {
       primaryGuild: n,
-      userId: i,
-      contextGuildId: a,
-      className: _,
-      containerClassName: p,
-      textVariant: m,
-      textColor: E,
-      badgeSize: y,
-      disableGuildProfile: O = !1,
-      inline: v = !0,
-      onShowProfile: I,
-      onClose: S
-    } = e, T = (0, s.e7)([d.default], () => d.default.getUser(i), [i]), A = (0, s.e7)([u.Z], () => u.Z.theme), N = null != (t = null == T ? void 0 : T.primaryGuild) ? t : n, {
-      tag: C,
-      badge: P,
-      guildId: R
-    } = (0, f.Pb)(N);
-    return (0, f.yF)(i, a) && null != R ? O ? (0, r.jsx)(b, {
-      guildId: R,
-      guildTag: C,
-      guildBadge: P,
-      className: o()(h.noTooltip, _),
-      textVariant: m,
-      textColor: E,
-      badgeSize: y,
-      inline: v
+      userId: a,
+      contextGuildId: _,
+      className: p,
+      containerClassName: m,
+      textVariant: E,
+      textColor: y,
+      badgeSize: O,
+      disableGuildProfile: v = !1,
+      inline: I = !0,
+      onShowProfile: S,
+      onClose: T
+    } = e, A = i.useRef(null), N = (0, s.e7)([d.default], () => d.default.getUser(a), [a]), C = (0, s.e7)([u.Z], () => u.Z.theme), P = null != (t = null == N ? void 0 : N.primaryGuild) ? t : n, {
+      tag: R,
+      badge: w,
+      guildId: D
+    } = (0, f.Pb)(P);
+    return (0, f.yF)(a, _) && null != D ? v ? (0, r.jsx)(b, {
+      guildId: D,
+      guildTag: R,
+      guildBadge: w,
+      className: o()(h.noTooltip, p),
+      textVariant: E,
+      textColor: y,
+      badgeSize: O,
+      inline: I
     }) : (0, r.jsx)(l.ze6, {
-      theme: A,
+      theme: C,
       children: (0, r.jsx)(c.Z, {
-        guildId: R,
-        onRequestOpen: I,
-        onClose: S,
+        guildId: D,
+        onRequestOpen: S,
+        onClose: T,
+        targetElementRef: A,
         children: e => (0, r.jsx)("span", {
-          className: p,
+          className: m,
+          ref: A,
           children: (0, r.jsx)(b, g({
-            guildId: R,
-            guildTag: C,
-            guildBadge: P,
-            className: _,
-            textVariant: m,
-            textColor: E,
-            badgeSize: y,
-            inline: v
+            guildId: D,
+            guildTag: R,
+            guildBadge: w,
+            className: p,
+            textVariant: E,
+            textColor: y,
+            badgeSize: O,
+            inline: I
           }, e))
         })
       })

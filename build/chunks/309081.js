@@ -213,6 +213,7 @@ function N(e) {
         "aria-expanded": n
       } = e;
       return k(e, ["aria-controls", "aria-expanded"]), (0, r.jsx)(c.yRy, {
+        targetElementRef: j,
         animation: c.yRy.Animation.NONE,
         position: "bottom",
         renderPopout: z,
@@ -224,7 +225,7 @@ function N(e) {
             } = e,
             u = k(e, ["onClick", "aria-controls", "aria-expanded"]);
           return (0, r.jsxs)(c.P3F, (a = A({
-            ref: j
+            innerRef: j
           }, u), l = l = {
             className: H,
             onClick: B && !b ? o : h,

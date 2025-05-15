@@ -35,9 +35,11 @@ function o(e) {
 function c(e) {
   let {
     children: t,
-    markAsDismissed: n
+    markAsDismissed: n,
+    targetElementRef: l
   } = e;
   return (0, i.jsx)(r.yRy, {
+    targetElementRef: l,
     onRequestClose: () => n(s.L.INDIRECT_ACTION),
     position: "top",
     align: "left",

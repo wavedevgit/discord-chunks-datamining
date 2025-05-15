@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(566620),
   _ = n(403404),
   b = n(100527),
-  x = n(906732),
-  E = n(783097),
+  E = n(906732),
+  x = n(783097),
   y = n(581364),
   v = n(592180),
   O = n(726033),
@@ -102,8 +102,8 @@ function U(e, t, n, i, l) {
     showAvatarPopout: g,
     showTargetAvatarPopout: _,
     onClickAvatar: b,
-    onUserContextMenu: x,
-    onClickTargetAvatar: E,
+    onUserContextMenu: E,
+    onClickTargetAvatar: x,
     onTargetUserContextMenu: y,
     onPopoutRequestClose: v
   } = e;
@@ -143,8 +143,8 @@ function U(e, t, n, i, l) {
       user: t,
       guildId: m.guild_id,
       guildAvatar: O,
-      onClick: 1 === n ? E : b,
-      onContextMenu: 1 === n ? y : x
+      onClick: 1 === n ? x : b,
+      onContextMenu: 1 === n ? y : E
     }),
     C = 1 === n ? _ : g;
   return null != l && null != C ? (0, r.jsx)(p.yRy, {
@@ -207,7 +207,7 @@ function H(e) {
     } = e,
     {
       analyticsLocations: c
-    } = (0, x.ZP)(b.Z.EXECUTED_COMMAND),
+    } = (0, E.ZP)(b.Z.EXECUTED_COMMAND),
     f = (0, d.e7)([C.default], () => C.default.getCurrentUser()),
     S = i.useMemo(() => (e, t, n) => (s()(null != t, "ExecutedCommand: user cannot be undefined"), s()(null != f, "ExecutedCommand: currentUser cannot be undefined"), s()(null != o, "ExecutedCommand: channel cannot be undefined"), (0, r.jsx)(O.Z, L(D({}, e), {
       user: t,
@@ -293,7 +293,7 @@ function H(e) {
               children: s
             });
             {
-              let e = (0, E.XZ)(s);
+              let e = (0, x.XZ)(s);
               return (0, r.jsx)(p.P3F, L(D({}, n), {
                 tag: "span",
                 onClick: () => {
@@ -356,7 +356,7 @@ function H(e) {
       userHook: q
     })
   }
-  return (0, r.jsx)(x.Gt, {
+  return (0, r.jsx)(E.Gt, {
     value: c,
     children: (0, r.jsx)("div", {
       className: a()(k.repliedMessage, k.messageSpine, k.executedCommand, K),

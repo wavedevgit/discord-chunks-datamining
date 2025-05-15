@@ -30,9 +30,9 @@ var r = n(255367),
   S = n(134433),
   w = n(753194),
   I = n(458034),
-  N = n(856651),
-  k = n(981631),
-  R = n(228168),
+  R = n(856651),
+  N = n(981631),
+  k = n(228168),
   E = n(388032),
   M = n(933466);
 
@@ -64,13 +64,13 @@ function A(e) {
     description: l
   } = e;
   if (null != l) switch (a) {
-    case N.iO.LESS_THAN:
+    case R.iO.LESS_THAN:
       t = E.intl.format(E.t["2p7dAw"], {
         description: l,
         count: Math.max(0, Number(i) - 1)
       });
       break;
-    case N.iO.GREATER_THAN:
+    case R.iO.GREATER_THAN:
       t = E.intl.format(E.t["2p7dAw"], {
         description: l,
         count: Math.max(0, Number(i) + 1)
@@ -167,7 +167,7 @@ function L(e) {
     guildId: d
   } = e;
   o.useEffect(() => {
-    x.default.track(k.rMx.PASSPORT_ROLE_POPOUT_VIEWED, Z({
+    x.default.track(N.rMx.PASSPORT_ROLE_POPOUT_VIEWED, Z({
       other_user_id: l,
       role_id: s
     }, (0, h.JS)(u), (0, h.hH)(d)))
@@ -244,7 +244,7 @@ function B(e) {
               guildId: a.id,
               channelId: l.id,
               roleId: u.id,
-              subsection: R.Tb.CONNECTIONS,
+              subsection: k.Tb.CONNECTIONS,
               sourceAnalyticsLocations: s
             }), o()
           }

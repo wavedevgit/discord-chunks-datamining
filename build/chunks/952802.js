@@ -29,8 +29,8 @@ function p(e) {
     maxLength: N,
     spellCheck: O,
     autoComplete: b,
-    autoCapitalize: y,
-    autoCorrect: E,
+    autoCapitalize: E,
+    autoCorrect: y,
     onChange: S,
     inputClassName: P
   } = e, T = (0, o.Dt)(), [k, w] = s.useState(!1), A = (0, c.o9)(i, g);
@@ -64,8 +64,8 @@ function p(e) {
           S(e, t)
         },
         autoComplete: b,
-        autoCapitalize: y,
-        autoCorrect: E,
+        autoCapitalize: E,
+        autoCorrect: y,
         autoFocus: C,
         maxLength: N,
         spellCheck: O,

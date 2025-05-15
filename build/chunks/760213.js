@@ -1,6 +1,6 @@
 /** Chunk was on 56782 **/
 r.d(t, {
-  W: () => y,
+  W: () => E,
   Z: () => S
 }), r(457542);
 var n, s = r(255367),
@@ -23,9 +23,9 @@ var n, s = r(255367),
   N = r(981631),
   O = r(388032),
   b = r(576052),
-  y = ((n = {})[n.LOGIN_REQUIRED = 0] = "LOGIN_REQUIRED", n[n.SWITCHED = 1] = "SWITCHED", n[n.REMOVED = 2] = "REMOVED", n);
+  E = ((n = {})[n.LOGIN_REQUIRED = 0] = "LOGIN_REQUIRED", n[n.SWITCHED = 1] = "SWITCHED", n[n.REMOVED = 2] = "REMOVED", n);
 
-function E(e) {
+function y(e) {
   let {
     actionText: t,
     user: r,
@@ -38,8 +38,8 @@ function E(e) {
     currentUser: f.default.getCurrentUser(),
     hidePrivateData: m.Z.hidePersonalInformation,
     isAuthenticated: p.default.isAuthenticated()
-  })), y = new h.Z(r), E = C && (null == i ? void 0 : i.id) === y.id, S = r.tokenStatus === v.q.INVALID, P = l || y.isPomelo() ? null : "#".concat(y.discriminator), T = null;
-  return E ? T = (0, s.jsx)(c.Text, {
+  })), E = new h.Z(r), y = C && (null == i ? void 0 : i.id) === E.id, S = r.tokenStatus === v.q.INVALID, P = l || E.isPomelo() ? null : "#".concat(E.discriminator), T = null;
+  return y ? T = (0, s.jsx)(c.Text, {
     variant: "text-sm/semibold",
     className: b.hintText,
     color: "text-positive",
@@ -54,12 +54,12 @@ function E(e) {
     children: (0, s.jsxs)("div", {
       className: b.userDetails,
       children: [(0, s.jsx)(c.qEK, {
-        src: y.getAvatarURL(void 0, 40),
+        src: E.getAvatarURL(void 0, 40),
         size: c.EFr.SIZE_40,
         "aria-label": r.username
       }), (0, s.jsxs)("div", {
         className: a()(b.usernameSection, {
-          [b.hasActionMaxWidth]: !E
+          [b.hasActionMaxWidth]: !y
         }),
         children: [(0, s.jsxs)("div", {
           className: b.username,
@@ -67,7 +67,7 @@ function E(e) {
             variant: "text-md/semibold",
             color: "header-primary",
             className: b.textOverflow,
-            children: g.ZP.getUserTag(y, {
+            children: g.ZP.getUserTag(E, {
               mode: "username",
               identifiable: l ? "never" : "always"
             })
@@ -79,7 +79,7 @@ function E(e) {
         }), T]
       }), (0, s.jsxs)("div", {
         className: b.userActions,
-        children: [!E && (0, s.jsx)(c.zxk, {
+        children: [!y && (0, s.jsx)(c.zxk, {
           onClick: function() {
             if (S) return void n(0, r.id);
             x.default.track(N.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
@@ -145,7 +145,7 @@ function S(e) {
   return (0, s.jsx)("div", {
     className: b.list,
     children: n ? (0, s.jsx)(c.$jN, {}) : l.map((e, n) => (0, s.jsxs)(i.Fragment, {
-      children: [(0, s.jsx)(E, {
+      children: [(0, s.jsx)(y, {
         user: e,
         actionText: t,
         onAction: r

@@ -31,6 +31,7 @@ function d(e) {
   return (0, r.jsx)(a.yRy, {
     shouldShow: s,
     position: d,
+    targetElementRef: _,
     overridePositionRef: _,
     align: f,
     onRequestClose: l,

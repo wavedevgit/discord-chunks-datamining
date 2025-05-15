@@ -65,7 +65,8 @@ let b = function(e) {
         buttonUseState: "apply",
         source: u.YD.MessageConfettiBar
       })
-    }, [t.id]);
+    }, [t.id]),
+    w = i.useRef(null);
   return (0, r.jsxs)("div", {
     className: g.bar,
     children: [(0, r.jsx)(_.Z, {
@@ -73,9 +74,11 @@ let b = function(e) {
       shouldShow: A,
       onRequestClose: C,
       setEmojiConfetti: P,
+      positionRef: w,
       position: "top",
       align: "left",
       children: () => (0, r.jsxs)(o.P3F, {
+        innerRef: w,
         onClick: () => N(!A),
         className: g.emojiSelectContainer,
         children: [(0, r.jsx)("div", {

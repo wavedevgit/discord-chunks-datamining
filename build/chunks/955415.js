@@ -262,10 +262,12 @@ let S = e => {
   },
   P = e => {
     let {
-      guild: t
+      guild: t,
+      ref: n
     } = e;
     return (0, l.jsx)("div", {
       className: b.guildNameWrapper,
+      ref: n,
       children: (0, l.jsx)("span", {
         className: b.guildName,
         children: t.name

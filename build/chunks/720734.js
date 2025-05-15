@@ -411,6 +411,7 @@ class tr extends r.PureComponent {
           case c.z.EXPIRING_STATUS_COACHMARK:
             return (0, i.jsx)(er.Z, {
               markAsDismissed: r,
+              targetElementRef: this.avatarWithPopoutRef,
               children: t => {
                 let {
                   onClick: n

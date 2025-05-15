@@ -240,6 +240,7 @@ class e_ extends i.PureComponent {
       })]
     });
     return m ? (0, r.jsx)(h.yRy, {
+      targetElementRef: this.activityPopoutTargetRef,
       position: "top",
       align: "center",
       spacing: 16,
@@ -260,6 +261,7 @@ class e_ extends i.PureComponent {
         caretPosition: H.DF.BOTTOM_CENTER
       }),
       children: e => (0, r.jsx)(h.P3F, em(eg({}, e), {
+        innerRef: this.activityPopoutTargetRef,
         className: o()(ep.gameWrapper, ep.clickableGameWrapper, {
           [ep.clickableGameWrapperForceHover]: c
         }),
@@ -295,7 +297,7 @@ class e_ extends i.PureComponent {
     }) : null
   }
   constructor(...e) {
-    super(...e), ef(this, "handleApplicationOrChannelLinkClick", () => {
+    super(...e), ef(this, "activityPopoutTargetRef", i.createRef()), ef(this, "handleApplicationOrChannelLinkClick", () => {
       var e;
       let {
         channel: t,

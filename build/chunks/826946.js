@@ -11,12 +11,13 @@ let s = function(e) {
   let {
     className: t,
     guildId: n
-  } = e, s = i.useCallback((e, t) => {
+  } = e, s = i.useRef(null), c = i.useCallback((e, t) => {
     e.stopPropagation(), t.onClick(e)
   }, []);
   return (0, r.jsx)(a.Z, {
     guildId: n,
     position: "left",
+    targetElementRef: s,
     children: e => {
       var n, i;
       return (0, r.jsx)(l.P3F, (n = function(e) {
@@ -37,8 +38,9 @@ let s = function(e) {
         }
         return e
       }({}, e), i = i = {
+        innerRef: s,
         className: t,
-        onClick: t => s(t, e),
+        onClick: t => c(t, e),
         children: (0, r.jsx)("div", {
           className: o.icon,
           children: (0, r.jsx)(l.bJT, {

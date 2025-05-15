@@ -17,46 +17,48 @@ function h(e) {
     show: t,
     alpha2: r,
     countryCode: i
-  } = e, h = s.useRef(null), [p, m] = s.useState(0), [f, x] = s.useState(!1);
+  } = e, h = s.useRef(null), p = s.useRef(null), [m, f] = s.useState(0), [x, g] = s.useState(!1);
   s.useEffect(() => {
     function e() {
       var e, r;
-      m(t && null != (r = null == (e = h.current) ? void 0 : e.getBoundingClientRect().width) ? r : 0)
+      f(t && null != (r = null == (e = p.current) ? void 0 : e.getBoundingClientRect().width) ? r : 0)
     }
     return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
   }, [t, r, i]);
-  let g = (0, o.q_F)({
-      width: "".concat(p, "px"),
+  let j = (0, o.q_F)({
+      width: "".concat(m, "px"),
       onStart: () => {
-        x(!0)
+        g(!0)
       },
       onRest: () => {
-        x(!1)
+        g(!1)
       }
     }),
-    j = e => {
+    v = e => {
       c.Z.setCountryCode(e)
     };
   return (0, n.jsx)(o.yRy, {
+    targetElementRef: h,
     position: "top",
     renderPopout: e => (0, n.jsx)(u.Z, {
       className: d.popout,
       onClick: t => {
-        j(t), e.closePopout()
+        v(t), e.closePopout()
       }
     }),
     children: e => {
       var s, c;
       return (0, n.jsx)("div", {
         className: l()(d.outerContainer, {
-          [d.hidden]: !(t || f)
+          [d.hidden]: !(t || x)
         }),
+        ref: h,
         children: (0, n.jsx)(a.animated.div, {
           className: d.container,
-          style: g,
+          style: j,
           children: (0, n.jsxs)("div", {
             className: d.innerContainer,
-            ref: h,
+            ref: p,
             children: [(0, n.jsxs)(o.P3F, (s = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var r = null != arguments[t] ? arguments[t] : {},

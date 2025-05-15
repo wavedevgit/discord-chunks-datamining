@@ -41,9 +41,9 @@ function m(e) {
       compact: g,
       popoutProps: _,
       hideTimestamp: b = !1,
-      withFooter: x = !1
+      withFooter: E = !1
     } = e,
-    E = function(e, t) {
+    x = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -62,11 +62,11 @@ function m(e) {
     v = (0, a.Z)(y);
   return (0, r.jsx)("div", {
     className: l()({
-      [d.withFooter]: x
+      [d.withFooter]: E
     }, d.embedCard, {
       [d.compact]: g
     }, h),
-    children: (0, r.jsx)(s.Z, (t = p({}, E), n = n = {
+    children: (0, r.jsx)(s.Z, (t = p({}, x), n = n = {
       className: l()(d.messageContainer, {
         [d.compact]: g
       }),

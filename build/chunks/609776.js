@@ -16,8 +16,8 @@ var r = n(255367),
   _ = n(13664),
   m = n(440371),
   b = n(810788),
-  x = n(699516),
-  f = n(594174),
+  f = n(699516),
+  x = n(594174),
   p = n(626135),
   v = n(570188),
   j = n(427679),
@@ -44,7 +44,7 @@ function w(e) {
       value: n.id,
       options: t.map(e => ({
         value: e.id,
-        label: (0, d.F6)(e, f.default, x.Z, !0)
+        label: (0, d.F6)(e, x.default, f.Z, !0)
       })),
       onChange: e => {
         let n = t.find(t => t.id === e);
@@ -60,7 +60,7 @@ function w(e) {
 }
 
 function P(e) {
-  var t, n, l, x, f, P;
+  var t, n, l, f, x, P;
   let {
     channel: k,
     guild: A,
@@ -74,9 +74,9 @@ function P(e) {
     isEvent: U = !1,
     defaultOptions: z,
     isSlideReady: F = !0
-  } = e, V = i.useMemo(() => j.Z.getStageInstanceByChannel(k.id), [k.id]), [W, H] = i.useState(null != (n = null != (t = null == z ? void 0 : z.topic) ? t : null == V ? void 0 : V.topic) ? n : ""), [q, J] = i.useState(null != (l = null == z ? void 0 : z.description) ? l : ""), [K] = i.useState(U), [Y, X] = i.useState(null != (x = null == z ? void 0 : z.schedule) ? x : {
+  } = e, V = i.useMemo(() => j.Z.getStageInstanceByChannel(k.id), [k.id]), [W, H] = i.useState(null != (n = null != (t = null == z ? void 0 : z.topic) ? t : null == V ? void 0 : V.topic) ? n : ""), [q, J] = i.useState(null != (l = null == z ? void 0 : z.description) ? l : ""), [K] = i.useState(U), [Y, X] = i.useState(null != (f = null == z ? void 0 : z.schedule) ? f : {
     startDate: (0, g.ib)()
-  }), [Q, $] = i.useState(K && (null == z ? void 0 : z.schedule) != null), ee = (0, v.J)(k), et = (0, v.U)(k), en = null == V && ee && !K, [er, ei] = i.useState(en && et), el = (0, o.e7)([b.Z], () => b.Z.hasHotspot(E.v.LIVE_STAGE_NOTIFICATION_BADGE)), ea = C.j8.GUILD_ONLY, [eo] = i.useState(null != (P = null != (f = null == z ? void 0 : z.privacyLevel) ? f : null == V ? void 0 : V.privacy_level) ? P : ea), [ec, es] = i.useState(null == z ? void 0 : z.recurrenceRule), ed = (0, N._d)(k.id), eu = (0, N.K3)(k.id), [eh, eg] = i.useState(!1), e_ = (0, u.Q3)("StageChannelSettings"), em = (0, d.ZP)(k), eb = (0, h.q)(A), ex = null != M, ef = eb.length > 1;
+  }), [Q, $] = i.useState(K && (null == z ? void 0 : z.schedule) != null), ee = (0, v.J)(k), et = (0, v.U)(k), en = null == V && ee && !K, [er, ei] = i.useState(en && et), el = (0, o.e7)([b.Z], () => b.Z.hasHotspot(E.v.LIVE_STAGE_NOTIFICATION_BADGE)), ea = C.j8.GUILD_ONLY, [eo] = i.useState(null != (P = null != (x = null == z ? void 0 : z.privacyLevel) ? x : null == V ? void 0 : V.privacy_level) ? P : ea), [ec, es] = i.useState(null == z ? void 0 : z.recurrenceRule), ed = (0, N._d)(k.id), eu = (0, N.K3)(k.id), [eh, eg] = i.useState(!1), e_ = (0, u.Q3)("StageChannelSettings"), em = (0, d.ZP)(k), eb = (0, h.q)(A), ef = null != M, ex = eb.length > 1;
   (0, s.ZP)(() => {
     p.default.track(y.rMx.START_STAGE_OPENED, {
       stage_instance_id: null == V ? void 0 : V.id,
@@ -185,7 +185,7 @@ function P(e) {
             className: T.warning,
             children: R.getAnyErrorMessage()
           }) : null]
-        }), ex && ef ? (0, r.jsx)(w, {
+        }), ef && ex ? (0, r.jsx)(w, {
           stageChannelsInGuild: eb,
           channel: k,
           onSelectChannel: M
@@ -220,7 +220,7 @@ function P(e) {
           sendStartNotification: er,
           setSendStartNotification: ei,
           showNotificationNewBadge: el
-        }) : null, ex && !ef ? (0, r.jsx)(c.Text, {
+        }) : null, ef && !ex ? (0, r.jsx)(c.Text, {
           color: "header-secondary",
           variant: "text-xs/normal",
           className: T.channelSelection,

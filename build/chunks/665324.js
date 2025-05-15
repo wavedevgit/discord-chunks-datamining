@@ -141,8 +141,9 @@ function z(e) {
 let H = e => {
     var {
       renderPopoutBody: t,
-      renderPopoutChildren: n
-    } = e, l = function(e, t) {
+      renderPopoutChildren: n,
+      popoutTargetRef: l
+    } = e, s = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -156,35 +157,41 @@ let H = e => {
         for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
-    }(e, ["renderPopoutBody", "renderPopoutChildren"]);
-    let [s, a] = i.useState(!1), o = i.useMemo(() => new u.V7, []), c = i.useCallback(() => {
-      o.stop(), a(!0)
-    }, [o]), m = i.useCallback(() => {
-      o.start(200, () => a(!1))
-    }, [o]);
+    }(e, ["renderPopoutBody", "renderPopoutChildren", "popoutTargetRef"]);
+    let [a, o] = i.useState(!1), c = i.useMemo(() => new u.V7, []), m = i.useCallback(() => {
+      c.stop(), o(!0)
+    }, [c]), g = i.useCallback(() => {
+      c.start(200, () => o(!1))
+    }, [c]);
     return (0, r.jsx)(d.yRy, G(M({
-      shouldShow: s,
+      shouldShow: a,
       renderPopout: e => (0, r.jsx)(d.VqE, {
         className: L.browserUnsupportedDialog,
-        onMouseEnter: c,
-        onMouseLeave: m,
+        onMouseEnter: m,
+        onMouseLeave: g,
         children: t(e)
       })
-    }, l), {
+    }, s), {
+      targetElementRef: l,
       children: e => n(e)
     }))
   },
-  W = () => (0, r.jsx)(H, {
-    renderPopoutBody: () => (0, r.jsx)(d.Text, {
-      variant: "text-sm/normal",
-      color: "header-secondary",
-      children: A.intl.format(A.t.bGXPVl, {})
-    }),
-    renderPopoutChildren: e => (0, r.jsx)(d.zxk, G(M({}, e), {
-      disabled: !0,
-      children: A.intl.string(A.t["/uNYPD"])
-    }))
-  });
+  W = () => {
+    let e = i.useRef(null);
+    return (0, r.jsx)(H, {
+      renderPopoutBody: () => (0, r.jsx)(d.Text, {
+        variant: "text-sm/normal",
+        color: "header-secondary",
+        children: A.intl.format(A.t.bGXPVl, {})
+      }),
+      renderPopoutChildren: t => (0, r.jsx)(d.zxk, G(M({}, t), {
+        disabled: !0,
+        buttonRef: e,
+        children: A.intl.string(A.t["/uNYPD"])
+      })),
+      popoutTargetRef: e
+    })
+  };
 
 function V(e) {
   let {

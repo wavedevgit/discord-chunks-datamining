@@ -29,10 +29,10 @@ let v = [s.h8.TEXT_CHANNEL, s.h8.GROUP_DM, s.h8.USER],
   m = null,
   x = null,
   N = [],
-  C = [];
+  E = [];
 
-function E(e) {
-  N = [...N, e], C = C.map(e => {
+function C(e) {
+  N = [...N, e], E = E.map(e => {
     var t, n;
     return t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -80,14 +80,14 @@ class P extends(l = i.ZP.Store) {
     return null != (e = null == r ? void 0 : r.query) ? e : ""
   }
   getResults() {
-    return C
+    return E
   }
 }
 b(P, "displayName", "ActivityInviteModalStore");
 let S = new P(o.Z, {
     ACTIVITY_INVITE_MODAL_OPEN: function(e) {
       m = e.activity, x = e.resolve, N = [], null == r && (r = new s.ZP((e, t) => {
-        C = ("" === t.trim() ? function() {
+        E = ("" === t.trim() ? function() {
           let e = [];
           return y.Z.getPrivateChannelIds().forEach(t => {
             let n = c.Z.getChannel(t);
@@ -162,12 +162,12 @@ let S = new P(o.Z, {
         type: O.mFx.JOIN,
         activity: m,
         location: "Channel Text Area - Invite to Join Modal"
-      }).then(() => E(t)) : null != n && a.Z.sendActivityInviteUser({
+      }).then(() => C(t)) : null != n && a.Z.sendActivityInviteUser({
         userId: n,
         type: O.mFx.JOIN,
         activity: m,
         location: "Channel Text Area - Invite to Join Modal"
-      }).then(() => E(n))
+      }).then(() => C(n))
     },
     ACTIVITY_INVITE_MODAL_CLOSE: j,
     OVERLAY_SET_INPUT_LOCKED: function(e) {

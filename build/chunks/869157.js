@@ -177,13 +177,15 @@ function D(e) {
       }))
     }
   }, [a.id, null == j || null == (l = j.application) ? void 0 : l.id, A]);
-  let D = (0, r.jsx)(d.ua7, {
+  let D = i.useRef(null),
+    L = (0, r.jsx)(d.ua7, {
       tooltipClassName: T.tooltip,
       text: o,
       shouldShow: N,
       position: "left",
       hideOnClick: !1,
       children: e => (0, r.jsx)("div", k(Z({}, e), {
+        ref: D,
         children: (0, r.jsx)(E.Z, {
           isDisabled: N,
           currentValue: f.permission,
@@ -193,7 +195,8 @@ function D(e) {
         })
       }))
     }),
-    L = (0, r.jsx)(d.yRy, {
+    M = (0, r.jsx)(d.yRy, {
+      targetElementRef: D,
       renderPopout: () => (0, r.jsx)(d.P3F, {
         onClick: e => {
           e.stopPropagation(), g.Z.dismissToggleTooltip(a.id, j)
@@ -213,7 +216,7 @@ function D(e) {
       onRequestClose: () => g.Z.dismissToggleTooltip(a.id, j),
       shouldShow: A,
       closeOnScroll: !0,
-      children: () => D
+      children: () => L
     });
   return (0, r.jsxs)("div", {
     className: T.entryItem,
@@ -233,7 +236,7 @@ function D(e) {
         isSentinel: _,
         isDisabled: !v,
         onRemove: u
-      }), L]
+      }), M]
     })]
   }, f.id)
 }

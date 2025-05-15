@@ -78,9 +78,9 @@ function S(e) {
 }
 let D = (0, p.hQ)(),
   Z = (0, p.hQ)(),
-  L = "text-sm/medium";
+  R = "text-sm/medium";
 
-function R(e) {
+function L(e) {
   return 1 === e.type
 }
 
@@ -146,7 +146,7 @@ let V = l.memo(function(e) {
     }, d), {
       enableTooltip: !1
     })) : m, (0, r.jsx)(u.Text, {
-      variant: L,
+      variant: R,
       className: _.roleTagLabel,
       children: s
     })]
@@ -168,14 +168,14 @@ function E(e) {
       color: "currentColor",
       className: _.channelIcon
     }), (0, r.jsx)(u.Text, {
-      variant: t.isCategory() ? "eyebrow" : L,
+      variant: t.isCategory() ? "eyebrow" : R,
       children: n.display
     })]
   })
 }
 
 function T(e, t, n) {
-  return R(e) ? (0, r.jsx)(V, {
+  return L(e) ? (0, r.jsx)(V, {
     row: e,
     guildId: t,
     className: n
@@ -206,7 +206,7 @@ function k(e) {
     }), t.forEach(e => {
       e in n && (r[e] = I(n[e]))
     }), r
-  })(a, C, h), [a, C, h]), v = l.useMemo(() => Object.keys(j), [j]), [O, S] = l.useState(""), [L, V] = l.useState(!1), [E, k] = l.useState(!1), [A, B] = l.useState(!1), U = l.useRef(null), {
+  })(a, C, h), [a, C, h]), v = l.useMemo(() => Object.keys(j), [j]), [O, S] = l.useState(""), [R, V] = l.useState(!1), [E, k] = l.useState(!1), [A, B] = l.useState(!1), U = l.useRef(null), {
     sections: F,
     sectionCounts: z
   } = l.useMemo(() => {
@@ -230,7 +230,7 @@ function k(e) {
         let {
           row: t
         } = e;
-        return R(t)
+        return L(t)
       }).map(e => e.row.record.id);
     m(new Set(n), new Set(r))
   }, [m]), G = () => {
@@ -238,18 +238,18 @@ function k(e) {
   };
   l.useEffect(() => {
     let e = setTimeout(() => {
-      B(L || E)
+      B(R || E)
     }, 32);
     return () => {
       clearTimeout(e)
     }
-  }, [L, E]);
+  }, [R, E]);
   let Y = (e, t, n) => {
       n.stopPropagation(), n.preventDefault(), 2 === t ? V(e) : (1 === t || V(e), k(e))
     },
     W = l.useCallback(e => {
       let t = H({}, j);
-      P(e) ? t[e.id] = M(e.record) : R(e) && (t[e.id] = I(e.record)), q(t), S(""), G(), setTimeout(() => {
+      P(e) ? t[e.id] = M(e.record) : L(e) && (t[e.id] = I(e.record)), q(t), S(""), G(), setTimeout(() => {
         var e;
         let t = null == (e = U.current) ? void 0 : e.containerRef.current,
           n = null == t ? void 0 : t.firstChild;

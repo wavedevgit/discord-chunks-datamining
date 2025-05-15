@@ -48,8 +48,9 @@ function u(e) {
     active: i = !1,
     className: u,
     children: d,
-    onClick: p
-  } = e, h = function(e, t) {
+    onClick: p,
+    ref: h
+  } = e, f = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -63,8 +64,9 @@ function u(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(e, ["padded", "inset", "active", "className", "children", "onClick"]);
+  }(e, ["padded", "inset", "active", "className", "children", "onClick", "ref"]);
   return null != p ? (0, r.jsx)(a.P3F, c(s({
+    innerRef: h,
     onClick: p,
     tabIndex: null != p ? 0 : -1,
     className: l()(u, {
@@ -74,16 +76,17 @@ function u(e) {
       [o.active]: i,
       [o.interactive]: null != p
     })
-  }, h), {
+  }, f), {
     children: d
   })) : (0, r.jsx)("div", c(s({
+    ref: h,
     className: l()(u, {
       [o.outer]: !n,
       [o.inset]: n,
       [o.padded]: t,
       [o.active]: i
     })
-  }, h), {
+  }, f), {
     children: d
   }))
 }

@@ -21,8 +21,8 @@ var r, l = n(392711),
   m = n(814443),
   x = n(789407),
   N = n(630186),
-  C = n(250889),
-  E = n(199902),
+  E = n(250889),
+  C = n(199902),
   j = n(592125),
   I = n(480294),
   P = n(831506),
@@ -90,7 +90,7 @@ function X(e) {
 
 function z(e) {
   return null == F[e] && (F = L(U({}, F), {
-    [e]: new C.Z({
+    [e]: new E.Z({
       name: e
     })
   })), F[e]
@@ -137,7 +137,7 @@ function en(e, t, n) {
     U = !1,
     L = [];
   for (let e of t) {
-    let n = E.Z.getAnyStreamForUser(e.id),
+    let n = C.Z.getAnyStreamForUser(e.id),
       r = j.Z.getChannel(null == n ? void 0 : n.channelId);
     if ((null == r ? void 0 : r.isNSFW()) && (!O || !S.Z.didAgree(null == r ? void 0 : r.getGuildId()))) continue;
     let h = X(e.id);
@@ -155,7 +155,7 @@ function en(e, t, n) {
         tags: {
           source: "ACTIVITIES"
         }
-      }), null) : e === x.XB ? x.r9 : e.startsWith(C.H) ? z(e.slice(C.H.length)) : e.startsWith(N._) ? J(e.slice(N._.length)) : (q(e), null)
+      }), null) : e === x.XB ? x.r9 : e.startsWith(E.H) ? z(e.slice(E.H.length)) : e.startsWith(N._) ? J(e.slice(N._.length)) : (q(e), null)
     }(f);
     if ((0, c.Z)(h)) {
       let t = (0, s.a)();
@@ -290,7 +290,7 @@ function eo() {
 }
 class ea extends(r = o.ZP.Store) {
   initialize() {
-    this.syncWith([A.default, g.Z, _.Z, P.Z, R.Z, E.Z, w.Z, I.Z, m.Z], eo), this.waitFor(O.Z, T.Z, g.Z, A.default, m.Z)
+    this.syncWith([A.default, g.Z, _.Z, P.Z, R.Z, C.Z, w.Z, I.Z, m.Z], eo), this.waitFor(O.Z, T.Z, g.Z, A.default, m.Z)
   }
   get currentActivityParties() {
     return V

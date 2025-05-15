@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(857595),
   _ = n(607070),
   b = n(313201),
-  x = n(592125),
-  E = n(984933),
+  E = n(592125),
+  x = n(984933),
   y = n(768119),
   v = n(944486),
   O = n(585483),
@@ -119,6 +119,7 @@ class D extends i.PureComponent {
       focused: l
     } = this.state, o = j.Sq(t).length > 0;
     return null == e ? null : (0, r.jsx)(d.yRy, {
+      targetElementRef: this._containerRef,
       renderPopout: this.renderPopout,
       position: "bottom",
       animation: d.yRy.Animation.NONE,
@@ -131,6 +132,7 @@ class D extends i.PureComponent {
         } = s;
         return (0, r.jsx)("div", {
           className: i,
+          ref: this._containerRef,
           children: (0, r.jsx)("div", {
             className: a()(w.search, {
               [w.open]: o || l,
@@ -160,7 +162,7 @@ class D extends i.PureComponent {
     super(e), Z(this, "state", {
       focused: !1,
       selectedIndex: void 0
-    }), Z(this, "_editorRef", void 0), Z(this, "_searchBarRef", i.createRef()), Z(this, "_searchPopoutRef", i.createRef()), Z(this, "handleSetSearchQuery", e => {
+    }), Z(this, "_editorRef", void 0), Z(this, "_containerRef", i.createRef()), Z(this, "_searchBarRef", i.createRef()), Z(this, "_searchPopoutRef", i.createRef()), Z(this, "handleSetSearchQuery", e => {
       let {
         query: t,
         anchor: n,
@@ -225,9 +227,9 @@ class D extends i.PureComponent {
       } = e;
       if (!t) return void this.focusEditor();
       let n = v.Z.getChannelId(),
-        r = x.Z.getChannel(n);
-      if ((null == r ? void 0 : r.isThread()) && (r = x.Z.getChannel(null == r ? void 0 : r.parent_id)), null == r || r.isPrivate()) return void this.focusEditor();
-      let i = E.ZP.getTextChannelNameDisambiguations(r.getGuildId())[r.id],
+        r = E.Z.getChannel(n);
+      if ((null == r ? void 0 : r.isThread()) && (r = E.Z.getChannel(null == r ? void 0 : r.parent_id)), null == r || r.isPrivate()) return void this.focusEditor();
+      let i = x.ZP.getTextChannelNameDisambiguations(r.getGuildId())[r.id],
         l = null != i ? i.name : r.name;
       Promise.resolve().then(() => {
         let {

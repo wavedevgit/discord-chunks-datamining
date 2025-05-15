@@ -17,12 +17,12 @@ function f(e) {
   let {
     onSelect: t,
     sound: n
-  } = e, [f, _] = i.useState(!1);
+  } = e, [f, _] = i.useState(!1), p = i.useRef(null);
 
-  function p(e) {
+  function h(e) {
     _(!1), null == t || t(e)
   }
-  let h = e => (0, r.jsxs)("div", {
+  let m = e => (0, r.jsxs)("div", {
     className: u.customGiftHeader,
     children: [(0, r.jsxs)("div", {
       className: u.__invalid_customGiftHeaderText,
@@ -39,6 +39,7 @@ function f(e) {
     })]
   });
   return (0, r.jsx)(o.yRy, {
+    targetElementRef: p,
     shouldShow: f,
     position: "bottom",
     align: "left",
@@ -54,11 +55,11 @@ function f(e) {
           guildId: null,
           channel: null,
           onClose: t,
-          onSelect: p,
+          onSelect: h,
           analyticsSource: "gift soundboard",
           soundButtonOverlay: s.Pb.ADD,
           listPadding: d,
-          renderHeader: h,
+          renderHeader: m,
           defaultSoundsOnly: !0
         })
       })
@@ -66,6 +67,7 @@ function f(e) {
     children: () => (0, r.jsx)(o.P3F, {
       className: u.sound,
       onClick: () => _(!0),
+      innerRef: p,
       children: null == n ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(o.KY1, {
           size: "custom",

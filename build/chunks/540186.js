@@ -18,7 +18,7 @@ var i = n(442837),
   m = n(388032),
   b = n(158170);
 
-function x(e) {
+function f(e) {
   let {
     icon: t
   } = e;
@@ -31,7 +31,7 @@ function x(e) {
   })
 }
 
-function f(e) {
+function x(e) {
   let {
     icon: t,
     text: n
@@ -63,11 +63,11 @@ function p(e) {
     topic: o.topic,
     description: o.description,
     privacy_level: null != (t = o.privacyLevel) ? t : _.j8.PUBLIC
-  }, m = (0, d.w8)(l.id, u.pV.SPEAKER), x = (0, d.Rk)(l.id, u.pV.AUDIENCE), f = m.slice(0, 5);
-  return null == f.find(e => {
+  }, m = (0, d.w8)(l.id, u.pV.SPEAKER), f = (0, d.Rk)(l.id, u.pV.AUDIENCE), x = m.slice(0, 5);
+  return null == x.find(e => {
     var t;
     return (null == (t = e.user) ? void 0 : t.id) === (null == c ? void 0 : c.id)
-  }) && f.push({
+  }) && x.push({
     user: c,
     userNick: s.ZP.getName(n.id, l.id, c)
   }), (0, r.jsx)("div", {
@@ -80,9 +80,9 @@ function p(e) {
         showGuildPopout: !1,
         setShowGuildPopout: () => {},
         source: h.k.UNSPECIFIED,
-        speakers: f,
+        speakers: x,
         speakerCount: m.length,
-        audienceCount: Math.max(1337, x),
+        audienceCount: Math.max(1337, f),
         channelName: l.name
       })
     })
@@ -122,22 +122,22 @@ function v(e) {
         })]
       }), (0, r.jsxs)("div", {
         className: b.__invalid_list,
-        children: [(0, r.jsx)(f, {
-          icon: (0, r.jsx)(x, {
+        children: [(0, r.jsx)(x, {
+          icon: (0, r.jsx)(f, {
             icon: l.Jmo
           }),
           text: m.intl.string(m.t.u6oOcn)
-        }), (0, r.jsx)(f, {
-          icon: (0, r.jsx)(x, {
+        }), (0, r.jsx)(x, {
+          icon: (0, r.jsx)(f, {
             icon: l.iFz
           }),
           text: m.intl.string(m.t.QC8ymZ)
-        }), (0, r.jsx)(f, {
-          icon: (0, r.jsx)(x, {
+        }), (0, r.jsx)(x, {
+          icon: (0, r.jsx)(f, {
             icon: l.vdY
           }),
           text: m.intl.string(m.t.mgGOT0)
-        }), (0, r.jsx)(f, {
+        }), (0, r.jsx)(x, {
           icon: (0, r.jsx)(o.Z, {
             className: b.badgeIconBackground,
             foreground: b.badgeIconForeground,

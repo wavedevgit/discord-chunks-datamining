@@ -190,8 +190,9 @@ function A(e) {
   let {
     language: t,
     setLanguage: n
-  } = e;
+  } = e, a = i.useRef(null);
   return (0, r.jsx)(l.yRy, {
+    targetElementRef: a,
     position: "left",
     renderPopout: e => {
       let {
@@ -223,7 +224,8 @@ function A(e) {
         size: "md",
         color: "currentColor"
       }, t, e), {
-        className: h.codeIcon
+        className: h.codeIcon,
+        ref: a
       }))
     })
   })

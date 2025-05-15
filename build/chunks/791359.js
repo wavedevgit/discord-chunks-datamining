@@ -37,32 +37,33 @@ let Z = 15 * E.Z.Millis.MINUTE,
       onUserContextMenu: n,
       onChannelContextMenu: l,
       quest: a
-    } = e, o = (0, r.jsx)(I.Z, {
+    } = e, o = i.useRef(null), c = (0, r.jsx)(I.Z, {
       party: t,
       onUserContextMenu: n
-    }), c = (0, r.jsx)(y.Z, {
+    }), d = (0, r.jsx)(y.Z, {
       party: t,
       onChannelContextMenu: l,
       quest: a
     }), {
-      partiedMembers: d,
-      applicationStreams: p,
-      currentActivities: h,
-      voiceChannels: f
-    } = t, g = d.length, m = p.length, b = h.length, E = f.length > 0, O = i.useCallback(() => {
-      let e = h.filter(e => {
+      partiedMembers: p,
+      applicationStreams: h,
+      currentActivities: f,
+      voiceChannels: g
+    } = t, m = p.length, b = h.length, E = f.length, O = g.length > 0, S = i.useCallback(() => {
+      let e = f.filter(e => {
         var t, n;
         return (null == (t = e.game) ? void 0 : t.name) != null && (null == (n = e.game) ? void 0 : n.type) === T.wW.GAME
       }).map(e => e.game.name);
       _.default.track(N.rMx.NOW_PLAYING_CARD_HOVERED, {
-        num_users: g,
-        num_streams: m,
-        num_activities: b,
-        in_voice_channel: E,
+        num_users: m,
+        num_streams: b,
+        num_activities: E,
+        in_voice_channel: O,
         games_detected: e
       })
-    }, [g, m, b, E, h]), S = s()(O, Z);
-    return null != o || null != c ? (0, r.jsx)(u.yRy, {
+    }, [m, b, E, O, f]), P = s()(S, Z);
+    return null != c || null != d ? (0, r.jsx)(u.yRy, {
+      targetElementRef: o,
       position: "left",
       renderPopout: e => {
         let {
@@ -97,12 +98,13 @@ let Z = 15 * E.Z.Millis.MINUTE,
           }
           return e
         }({}, e), i = i = {
-          onMouseEnter: S,
+          ref: o,
+          onMouseEnter: P,
           "aria-haspopup": "menu",
           className: A.itemCard,
           active: l,
           children: (0, r.jsxs)("div", {
-            children: [o, c]
+            children: [c, d]
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);

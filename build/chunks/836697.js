@@ -23,19 +23,20 @@ function y(e) {
   let {
     onActivate: t,
     children: n
-  } = e, a = (0, l.e7)([u.Z], () => u.Z.hasJoinRequestCoackmark()), d = i.useCallback(() => {
+  } = e, a = i.useRef(null), d = (0, l.e7)([u.Z], () => u.Z.hasJoinRequestCoackmark()), h = i.useCallback(() => {
     c.ZP.clearCoachmark()
-  }, []), h = (0, s.Z)(a), p = i.useRef(null);
+  }, []), p = (0, s.Z)(d), f = i.useRef(null);
   return i.useEffect(() => {
-    if (a && a !== h) {
+    if (d && d !== p) {
       var e, n, r, i, l;
-      t(), null == (l = p.current) || null == (i = l.ref) || null == (r = i.current) || null == (n = r.layerRef) || null == (e = n.current) || e.updatePosition()
+      t(), null == (l = f.current) || null == (i = l.ref) || null == (r = i.current) || null == (n = r.layerRef) || null == (e = n.current) || e.updatePosition()
     }
-  }, [p, a, h, t]), (0, r.jsxs)("div", {
+  }, [f, d, p, t]), (0, r.jsxs)("div", {
     className: _.container,
     children: [(0, r.jsx)(o.yRy, {
-      ref: p,
-      shouldShow: a,
+      ref: f,
+      targetElementRef: a,
+      shouldShow: d,
       renderPopout: () => (0, r.jsxs)("div", {
         className: _.popoutContainer,
         children: [(0, r.jsxs)("div", {
@@ -54,7 +55,7 @@ function y(e) {
             fullWidth: !0,
             size: o.PhG.SMALL,
             color: o.Ttl.BRAND,
-            onClick: d,
+            onClick: h,
             children: b.intl.string(b.t["4r+amZ"])
           })]
         }), (0, r.jsx)("div", {
@@ -85,7 +86,8 @@ function y(e) {
           }
           return e
         }({}, e), n = n = {
-          className: _.popoutAnchor
+          className: _.popoutAnchor,
+          ref: a
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

@@ -227,6 +227,7 @@ let ei = function(e) {
           markAsDismissed: o
         } = i;
         return a === u.z.MESSAGE_REQUEST_SETTINGS_COACH_MARK ? (0, r.jsx)(d.yRy, {
+          targetElementRef: e.targetElementRef,
           renderPopout: () => t ? (0, r.jsx)(ei, {
             markAsDismissed: o
           }) : (0, r.jsx)(Z.ZP, {
@@ -282,12 +283,13 @@ let eo = (0, f.Z)(function(e) {
     g = null == f ? void 0 : f.channelId,
     b = null != f,
     _ = (0, M.T)(g),
-    E = (0, k.J)(g);
+    E = (0, k.J)(g),
+    O = i.useRef(null);
   i.useEffect(() => {
     null != g && !_ && E && b && ((0, T.Kh)(g), P.Z.closeChannelSidebar(L.uZ))
   }, [g, E, b, _]);
-  let [O, y] = i.useState(q.pS.REQUESTS), v = e => {
-    y(e)
+  let [y, v] = i.useState(q.pS.REQUESTS), C = e => {
+    v(e)
   };
   return (0, I.Tt)({
     location: $.intl.string($.t.e7GWjY)
@@ -306,14 +308,16 @@ let eo = (0, f.Z)(function(e) {
             icon: d._XJ,
             "aria-hidden": !0
           }), (0, r.jsx)(el, {
+            targetElementRef: O,
             children: (0, r.jsx)(S.Z.Title, {
+              ref: O,
               children: $.intl.string($.t.e7GWjY)
             })
           }), (0, r.jsx)(S.Z.Divider, {}), (0, r.jsxs)(d.njP, {
             "aria-label": $.intl.string($.t.e7GWjY),
-            selectedItem: O,
+            selectedItem: y,
             type: "top-pill",
-            onItemSelect: v,
+            onItemSelect: C,
             children: [(0, r.jsx)(d.njP.Item, {
               id: q.pS.REQUESTS,
               className: ee.item,
@@ -330,7 +334,7 @@ let eo = (0, f.Z)(function(e) {
       }), (0, r.jsx)("div", {
         className: et.content,
         children: (0, r.jsx)(ea, {
-          section: O
+          section: y
         })
       })]
     }), b && (0, r.jsx)(er, {

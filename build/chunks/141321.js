@@ -1,6 +1,6 @@
 /** Chunk was on 36087 **/
 n.d(t, {
-  Z: () => x
+  Z: () => E
 });
 var r = n(255367),
   i = n(73800),
@@ -19,12 +19,12 @@ var r = n(255367),
   _ = n(388032),
   b = n(264634);
 
-function x(e) {
+function E(e) {
   let {
     onOpen: t,
     onClose: n,
-    className: x,
-    "data-jump-section": E
+    className: E,
+    "data-jump-section": x
   } = e, y = i.useRef(null), v = (0, l.e7)([m.default], () => m.default.getCurrentUser()), O = (0, o.Q3)("RecentsButton"), j = i.useRef(null), C = (0, l.e7)([p.ZP], () => (null == v ? void 0 : v.id) != null && p.ZP.getMentionCount(v.id, g.W.NOTIFICATION_CENTER) > 0), {
     enabled: S
   } = c.Z.useExperiment({
@@ -33,6 +33,7 @@ function x(e) {
     autoTrackExposure: !1
   }), I = (0, l.e7)([s.Z], () => S && s.Z.getUnseenInviteCount() > 0), N = (0, a.dQu)(a.TVs.modules.chat.INPUT_ICON_SIZE);
   return (0, r.jsx)(f.k, {
+    targetElementRef: j,
     onOpen: t,
     onClose: n,
     badgeState: {
@@ -70,7 +71,7 @@ function x(e) {
             return e
           }({}, n), o = o = {
             ref: y,
-            className: x,
+            className: E,
             onClick: e,
             icon: a.xx7,
             iconSize: O ? N : void 0,
@@ -78,7 +79,7 @@ function x(e) {
             tooltip: t ? null : _.intl.string(_.t.GSmTKC),
             selected: t,
             showBadge: C || I || i,
-            "data-jump-section": E
+            "data-jump-section": x
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
