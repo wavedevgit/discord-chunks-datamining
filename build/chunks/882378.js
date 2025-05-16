@@ -21,7 +21,7 @@ var r = n(255367),
 let C = i.memo(function(e) {
   let {
     channel: t
-  } = e, C = (0, u.h)(t.id), x = (0, d.o)(t.id), y = (0, p.M)(t.id), v = (0, a.f9)(), j = (0, l.e7)([f.Z], () => f.Z.hasLayers()), O = i.useCallback(() => x ? b.intl.string(b.t["16QyDg"]) : null != y ? b.intl.string(b.t.kCN9i4) : null, [x, y]), E = i.useMemo(() => (x || null != y) && !v && !j, [x, y, v, j]), [I, S] = i.useState(O());
+  } = e, C = (0, u.h)(t.id), x = (0, d.o)(t.id), y = (0, p.M)(t.id), v = (0, a.f9)(), j = (0, l.e7)([f.Z], () => f.Z.hasLayers()), O = i.useCallback(() => x ? b.intl.string(b.t["16QyDg"]) : null != y ? b.intl.string(b.t.kCN9i4) : null, [x, y]), E = i.useMemo(() => (x || null != y) && !v && !j, [x, y, v, j]), [I, P] = i.useState(O());
   i.useEffect(() => {
     null != y && null != C && (o.uvj.announce(b.intl.string(b.t.acsXuL)), setTimeout(() => {
       (0, c.T)(t.id, [y.id])
@@ -46,9 +46,9 @@ let C = i.memo(function(e) {
     })
   }), i.useEffect(() => {
     let e = O();
-    null != e && S(e)
+    null != e && P(e)
   }, [x, y, O]);
-  let P = i.useCallback(() => {
+  let S = i.useCallback(() => {
     null != y && (0, c.T)(t.id, [y.id]), null != C && ((0, o.ZDy)(async () => {
       let {
         default: e
@@ -87,7 +87,7 @@ let C = i.memo(function(e) {
     tooltipContentClassName: _.tooltipContent,
     children: () => (0, r.jsx)(m.ZP.Icon, {
       icon: o.b7C,
-      onClick: P,
+      onClick: S,
       tooltip: b.intl.string(b.t.rpc2qq),
       tooltipDisabled: null != y
     })

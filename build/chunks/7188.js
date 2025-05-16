@@ -114,14 +114,20 @@ function D(e) {
     stream: n,
     location: u
   } = e, h = C(e, ["hideBadges", "stream", "location"]);
-  let {
-    parentAnalyticsLocation: I
-  } = (0, s.ZP)(), S = (0, a.e7)([p.default], () => m.ZP.isPremium(p.default.getCurrentUser(), O.p9.TIER_1)), A = (0, a.e7)([_.Z], () => _.Z.getChannel(null == n ? void 0 : n.channelId)), P = i.useMemo(() => null != n ? [n] : [], [n]), D = i.useCallback(() => {
-    null != A && (0, f.Z)(A.getGuildId(), A.id, b.jXE.STREAM_SETTINGS)
-  }, [A]);
-  if (null == n || null == A) return null;
-  let L = R;
-  return t || S || (L = w), (0, r.jsx)(o.yRy, {
+  let I = i.useRef(null),
+    {
+      parentAnalyticsLocation: S
+    } = (0, s.ZP)(),
+    A = (0, a.e7)([p.default], () => m.ZP.isPremium(p.default.getCurrentUser(), O.p9.TIER_1)),
+    P = (0, a.e7)([_.Z], () => _.Z.getChannel(null == n ? void 0 : n.channelId)),
+    D = i.useMemo(() => null != n ? [n] : [], [n]),
+    L = i.useCallback(() => {
+      null != P && (0, f.Z)(P.getGuildId(), P.id, b.jXE.STREAM_SETTINGS)
+    }, [P]);
+  if (null == n || null == P) return null;
+  let x = R;
+  return t || A || (x = w), (0, r.jsx)(o.yRy, {
+    targetElementRef: I,
     position: "top",
     renderPopout: e => {
       let {
@@ -129,13 +135,13 @@ function D(e) {
       } = e;
       return (0, r.jsx)(g.Z, {
         children: (0, r.jsx)(d.Z, {
-          channel: A,
+          channel: P,
           currentUser: p.default.getCurrentUser(),
-          activeStreams: P,
+          activeStreams: D,
           onClose: t,
           showReportOption: !0,
-          handleGoLive: D,
-          onInteraction: (0, c.u)("ManageStreamsButton", null != I ? I : u, {
+          handleGoLive: L,
+          onInteraction: (0, c.u)("ManageStreamsButton", null != S ? S : u, {
             entrypoint: y.A5.OTHER_BUTTON
           })
         })
@@ -143,10 +149,11 @@ function D(e) {
     },
     animation: o.yRy.Animation.FADE,
     children: e => (0, r.jsx)(E.Z, T(N(T({}, e), {
+      buttonRef: I,
       label: v.intl.string(v.t.tmiYpK),
-      iconComponent: L,
+      iconComponent: x,
       onClick: t => {
-        (null != I || null != u) && (0, l.v)(null != I ? I : u, l.d.STREAM_SETTINGS), null == e || e.onClick(t)
+        (null != S || null != u) && (0, l.v)(null != S ? S : u, l.d.STREAM_SETTINGS), null == e || e.onClick(t)
       }
     }), h))
   })

@@ -31,9 +31,9 @@ function O(e) {
     whichPopoutIsOpen: E,
     setWhichPopoutIsOpen: I
   } = e, {
-    parentAnalyticsLocation: S
+    parentAnalyticsLocation: P
   } = (0, u.ZP)(), {
-    Component: P,
+    Component: S,
     play: Z,
     events: {
       onMouseEnter: N,
@@ -81,7 +81,7 @@ function O(e) {
           guildId: A,
           sourceAnalyticsLocations: B
         }, t), i = i = {
-          onInteraction: (0, p.u)("SoundboardContextMenu", S)
+          onInteraction: (0, p.u)("SoundboardContextMenu", P)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -97,11 +97,11 @@ function O(e) {
   }
 
   function W() {
-    (0, d.v)(S, d.d.SOUNDBOARD), E === v.D.SOUNDBOARD ? (null == I || I(void 0), V()) : (null != E ? (Z(), H()) : Z(), null == I || I(v.D.SOUNDBOARD))
+    (0, d.v)(P, d.d.SOUNDBOARD), E === v.D.SOUNDBOARD ? (null == I || I(void 0), V()) : (null != E ? (Z(), H()) : Z(), null == I || I(v.D.SOUNDBOARD))
   }
   let Y = i.useRef(null);
   return (0, r.jsx)(s.y, {
-    ref: Y,
+    targetElementRef: Y,
     shouldShow: G && (E === v.D.SOUNDBOARD || null == E) || E === v.D.SOUNDBOARD,
     animation: s.y.Animation.FADE,
     animationPosition: "top",
@@ -133,10 +133,11 @@ function O(e) {
       })
     },
     children: () => (0, r.jsx)(y.d, {
+      ref: Y,
       isTrayButton: !0,
       themeable: O,
       label: w ? j.intl.string(j.t["Ox4/zc"]) : R ? j.intl.string(j.t["+YBKYG"]) : M ? j.intl.string(j.t.X1lQlp) : void 0,
-      iconComponent: P,
+      iconComponent: S,
       disabled: k,
       onContextMenu: z,
       onClick: W,

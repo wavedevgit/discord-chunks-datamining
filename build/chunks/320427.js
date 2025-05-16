@@ -1,20 +1,20 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => h
+  Z: () => f
 });
-var r = n(255367);
-n(73800);
-var i = n(399606),
-  l = n(481060),
-  a = n(125268),
-  o = n(673125),
-  s = n(984063),
-  c = n(871499),
-  u = n(304388),
-  d = n(388032);
+var r = n(255367),
+  i = n(73800),
+  l = n(399606),
+  a = n(481060),
+  o = n(125268),
+  s = n(673125),
+  c = n(984063),
+  u = n(871499),
+  d = n(304388),
+  p = n(388032);
 
-function p() {
-  return (p = Object.assign || function(e) {
+function h() {
+  return (h = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -23,22 +23,24 @@ function p() {
   }).apply(this, arguments)
 }
 
-function h() {
-  let e = (0, i.e7)([o.Z], () => o.Z.getDrawMode()),
-    t = (null == e ? void 0 : e.type) === s.W.LINE,
-    n = () => {
-      t ? (0, a.Bo)(null) : (0, a.Bo)({
-        type: s.W.LINE
+function f() {
+  let e = (0, l.e7)([s.Z], () => s.Z.getDrawMode()),
+    t = (null == e ? void 0 : e.type) === c.W.LINE,
+    n = i.useRef(null),
+    f = () => {
+      t ? (0, o.Bo)(null) : (0, o.Bo)({
+        type: c.W.LINE
       })
     };
-  return (0, r.jsx)(u.Z, {
+  return (0, r.jsx)(d.Z, {
     renderPopout: () => null,
+    popoutTargetRef: n,
     children: e => {
-      var i, a, o = p({}, function(e) {
+      var i, l, o = h({}, function(e) {
         if (null == e) throw TypeError("Cannot destructure " + e);
         return e
       }(e));
-      return (0, r.jsx)(c.Z, (i = function(e) {
+      return (0, r.jsx)(u.Z, (i = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -55,20 +57,21 @@ function h() {
           })
         }
         return e
-      }({}, o), a = a = {
-        label: d.intl.string(d.t.ZQCf9f),
+      }({}, o), l = l = {
+        buttonRef: n,
+        label: p.intl.string(p.t.ZQCf9f),
         isActive: t,
-        iconComponent: l.vdY,
-        onClick: n
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+        iconComponent: a.vdY,
+        onClick: f
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(a)).forEach(function(e) {
-        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
+      })(Object(l)).forEach(function(e) {
+        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
       }), i))
     }
   })

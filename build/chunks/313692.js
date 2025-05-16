@@ -31,8 +31,8 @@ function E(e) {
     userId: l,
     guildId: E,
     location: I,
-    className: S,
-    onNavigate: P
+    className: P,
+    onNavigate: S
   } = e, Z = i.useRef(null), N = (0, s.e7)([g.ZP], () => g.ZP.getGuildSidebarState(E), [E]), T = i.useRef(0), [A, w] = i.useState(null != (t = null == N ? void 0 : N.details.additionalSearchQuery) ? t : {}), R = (0, x.z0)(l, E, {
     addtionalQuery: A,
     shouldDispatch: !0
@@ -136,11 +136,11 @@ function E(e) {
       }
     }, [R.result, B]);
   return null == M || null == k || null == F ? null : (0, r.jsxs)("div", {
-    className: a()(j.container, S),
+    className: a()(j.container, P),
     children: [(0, r.jsx)(y.Z, {
       guildId: E,
       userId: l,
-      onNavigate: P
+      onNavigate: S
     }), (0, r.jsx)(c.Den, {
       className: O.innerContainer,
       ref: Z,

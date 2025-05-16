@@ -30,20 +30,20 @@ function v(e) {
   } = e, {
     analyticsLocations: j
   } = (0, o.ZP)(a.Z.VOICE_CONTROL_TRAY), O = (0, h.Ou)(t), E = i.useRef(null), I = (0, u.Z)(), {
-    isSharedCanvasEnabled: S
+    isSharedCanvasEnabled: P
   } = f.Z.useExperiment({
     guildId: null == t ? void 0 : t.guild_id,
     location: "b7309a_1"
   }), {
-    enableViewerClipping: P
+    enableViewerClipping: S
   } = d.Z.useExperiment({
     location: "VoiceEffectsActionBar"
   }, {
     autoTrackExposure: !1
   }), Z = (0, s.Z)(m.Z), N = (0, h.Zm)(t, "VoiceEffectsActionBar") ? [l.z.CONSUMABLE_HD_POTION_UPSELL] : [], [T, A] = (0, c.US)(N, void 0, !0), w = T === l.z.CONSUMABLE_HD_POTION_UPSELL;
   if (null == t || null != I) return null;
-  let R = P && Z,
-    M = S && n;
+  let R = S && Z,
+    M = P && n;
   return (0, r.jsxs)(o.Gt, {
     value: j,
     children: [(0, r.jsxs)("div", {

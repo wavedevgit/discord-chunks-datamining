@@ -26,8 +26,8 @@ var r = n(255367),
   O = n(390322),
   E = n(857192),
   I = n(626135),
-  S = n(456100),
-  P = n(566620),
+  P = n(456100),
+  S = n(566620),
   Z = n(127255),
   N = n(5200),
   T = n(558317),
@@ -141,12 +141,12 @@ let U = i.forwardRef(function(e, t) {
       guildId: n
     }).slice(0, 5));
   i.useEffect(() => {
-    let e = setTimeout(() => P.ux(), 1e3);
+    let e = setTimeout(() => S.ux(), 1e3);
     return () => clearTimeout(e)
   }, []);
   let {
     enabled: B
-  } = S.c.useExperiment({
+  } = P.c.useExperiment({
     location: "ActivitiesMiniShelf"
   }, {
     autoTrackExposure: !0

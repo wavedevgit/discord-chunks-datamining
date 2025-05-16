@@ -26,8 +26,8 @@ var r = n(255367),
   O = n(112724),
   E = n(902840),
   I = n(110924),
-  S = n(317381),
-  P = n(82888),
+  P = n(317381),
+  S = n(82888),
   Z = n(917107),
   N = n(296797),
   T = n(100527),
@@ -80,8 +80,8 @@ var r = n(255367),
   eO = n(856393),
   eE = n(657218),
   eI = n(407908),
-  eS = n(66556),
-  eP = n(739830),
+  eP = n(66556),
+  eS = n(739830),
   eZ = n(377929),
   eN = n(900157),
   eT = n(108427),
@@ -251,7 +251,7 @@ class ta extends i.PureComponent {
     } = this.props, n = this.shouldRenderCall();
     if (s()(null != e, "Missing channel in Channel.renderEmbeddedActivityPanel"), n || (null == t ? void 0 : t.location.kind) === p.E.CONTEXTLESS) return null;
     let i = this.props.height - 200;
-    return (0, r.jsx)(P.Z, {
+    return (0, r.jsx)(S.Z, {
       maxHeight: i,
       renderExternalHeader: this.renderHeaderBar
     })
@@ -618,11 +618,11 @@ class ta extends i.PureComponent {
         case e7.d4z.PUBLIC_THREAD:
           a.push((0, r.jsx)(eI.Z, {
             channel: e
-          })), null == t || t.isForumLikeChannel() || a.push((0, r.jsx)(eS.Z, {
+          })), null == t || t.isForumLikeChannel() || a.push((0, r.jsx)(eP.Z, {
             channel: t
           }, "browser")), e.isVocalThread() && a.push((0, r.jsx)(ed.Z, {
             channel: e
-          }, "thread-call")), a.push((0, r.jsx)(eP.Z, {
+          }, "thread-call")), a.push((0, r.jsx)(eS.Z, {
             channel: e
           }, "notifications")), a.push((0, r.jsx)(en.Z, {
             channel: e
@@ -638,7 +638,7 @@ class ta extends i.PureComponent {
         case e7.d4z.GUILD_TEXT:
           a.push((0, r.jsx)(F.Z, {
             channel: e
-          }, "favorites")), a.push((0, r.jsx)(eS.Z, {
+          }, "favorites")), a.push((0, r.jsx)(eP.Z, {
             channel: e
           }, "browser")), n || a.push((0, r.jsx)(et.Z, {
             channel: e
@@ -792,15 +792,15 @@ let to = (0, O.Z)(ta),
     }, [o]), v = (0, V.Z)(), j = (0, h.e7)([eW.Z], () => {
       var e;
       return (null != (e = null == v ? void 0 : v.channelId) ? e : eW.Z.getVoiceChannelId()) === (null == c ? void 0 : c.id)
-    }), O = (0, h.e7)([S.ZP], () => null != c ? S.ZP.getSelfEmbeddedActivityForChannel(c.id) : null, [c]), P = (0, h.e7)([eV.Z], () => eV.Z.isConnected()), T = (0, I.Z)(P), R = P && !1 === T;
+    }), O = (0, h.e7)([P.ZP], () => null != c ? P.ZP.getSelfEmbeddedActivityForChannel(c.id) : null, [c]), S = (0, h.e7)([eV.Z], () => eV.Z.isConnected()), T = (0, I.Z)(S), R = S && !1 === T;
     i.useEffect(() => {
       j && R && null != O && null != c && b.Z.selectParticipant(c.id, (0, A.gN)({
         applicationId: O.applicationId,
         instanceId: O.compositeInstanceId
       }))
     }, [R, c, j, O]);
-    let M = (0, h.e7)([S.ZP], () => S.ZP.getCurrentEmbeddedActivity()),
-      k = (0, h.e7)([S.ZP], () => S.ZP.getActivityPanelMode()),
+    let M = (0, h.e7)([P.ZP], () => P.ZP.getCurrentEmbeddedActivity()),
+      k = (0, h.e7)([P.ZP], () => P.ZP.getActivityPanelMode()),
       L = null != M && !(0, Z.Z)(null == c ? void 0 : c.id) && k === e8.Ez.PANEL,
       D = (0, h.e7)([eK.Z], () => null != c && c.isVocalThread() && !u().isEmpty(eK.Z.getVoiceStatesForChannel(c.id)), [c]),
       B = null != c && c.isPrivate() && !L && y,
@@ -810,7 +810,7 @@ let to = (0, O.Z)(ta),
       } = (0, d.TH)(),
       z = (0, h.e7)([em.Z], () => null != c && em.Z.isLurking(c.guild_id), [c]),
       W = (0, h.e7)([eM.Z], () => eM.Z.hasSeen(null == c ? void 0 : c.guild_id, z), [c, z]),
-      Y = (0, h.e7)([w.Z, S.ZP], () => null != S.ZP.getConnectedActivityLocation() && S.ZP.getActivityPanelMode() === e8.Ez.PANEL ? S.ZP.getFocusedLayout() === e8.MI.NO_CHAT ? e7.AEg.NO_CHAT : e7.AEg.NORMAL : null != o ? w.Z.getLayout(o) : e7.AEg.NORMAL, [o]),
+      Y = (0, h.e7)([w.Z, P.ZP], () => null != P.ZP.getConnectedActivityLocation() && P.ZP.getActivityPanelMode() === e8.Ez.PANEL ? P.ZP.getFocusedLayout() === e8.MI.NO_CHAT ? e7.AEg.NO_CHAT : e7.AEg.NORMAL : null != o ? w.Z.getLayout(o) : e7.AEg.NORMAL, [o]),
       q = (0, h.e7)([w.Z], () => null != c ? w.Z.getSelectedParticipant(c.id) : null),
       K = (0, h.e7)([eq.default], () => eq.default.getCurrentUser()),
       Q = (0, eh.Z)(null == C ? void 0 : C.id),

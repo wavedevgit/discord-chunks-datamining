@@ -98,4 +98,4 @@ let m = () => {
       n = null !== e && e.hasPremiumNitroMonthly,
       r = !!(null == e ? void 0 : e.hasActiveTrial);
     return n && !r && !t
-  }, O = () => (0, u.W)()
+  }, O = () => (0, u.W)().isInReverseTrial

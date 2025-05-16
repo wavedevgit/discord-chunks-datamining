@@ -27,8 +27,8 @@ var i = n(120356),
   O = n(210975),
   E = n(809244),
   I = n(618158),
-  S = n(358221),
-  P = n(362721),
+  P = n(358221),
+  S = n(362721),
   Z = n(887012),
   N = n(613548),
   T = n(221888),
@@ -76,7 +76,7 @@ function G(e) {
   let {
     focusedParticipant: t,
     channel: n
-  } = e, i = (0, c.bp)(), l = (0, a.e7)([S.Z], () => S.Z.getLayout(n.id, i));
+  } = e, i = (0, c.bp)(), l = (0, a.e7)([P.Z], () => P.Z.getLayout(n.id, i));
   return (0, r.jsx)(I.Z, {
     children: (0, r.jsx)(T.Z, {
       className: L.participants,
@@ -173,14 +173,14 @@ function V(e) {
     exitFullScreen: m
   } = e, {
     focusedParticipant: g
-  } = (0, a.cj)([S.Z], () => ({
-    focusedParticipant: S.Z.getSelectedParticipant(t.id),
-    participantsOpen: S.Z.getParticipantsOpen(t.id)
+  } = (0, a.cj)([P.Z], () => ({
+    focusedParticipant: P.Z.getSelectedParticipant(t.id),
+    participantsOpen: P.Z.getParticipantsOpen(t.id)
   }), [t.id]), b = (0, h.ZP)(t), _ = (0, f.KS)(t), [E] = (0, d.Z)((null == g ? void 0 : g.type) === w.fO.ACTIVITY ? [g.applicationId] : []), I = k.intl.string(k.t.BVZqJi);
   t.isDM() ? I = k.intl.string(k.t.jN2DfX) : t.isGroupDM() && (I = k.intl.string(k.t["e5y+go"]));
   let Z = (0, a.e7)([p.Z], () => p.Z.getChannelStatus(t)),
     T = t.isGuildVoice() && c && null != Z && Z.length > 0,
-    G = (0, P.ZP)(t),
+    G = (0, S.ZP)(t),
     F = T ? (0, r.jsx)(o.ua7, {
       text: k.intl.string(k.t.Mgpxi4),
       delay: 500,

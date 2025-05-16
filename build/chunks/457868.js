@@ -26,8 +26,8 @@ var r = n(255367),
   O = n(965376),
   E = n(159299),
   I = n(823415),
-  S = n(670188),
-  P = n(199902),
+  P = n(670188),
+  S = n(199902),
   Z = n(271383),
   N = n(430824),
   T = n(158776),
@@ -75,7 +75,7 @@ let Y = B.ZP.getEnableHardwareAcceleration(),
     } = e, s = i.useRef(null), u = (0, p.e7)([w.Z], () => w.Z.isTyping(t.id, a)), h = (0, p.e7)([Z.ZP], () => Z.ZP.getMember(t.guild_id, a)), g = (0, p.e7)([N.Z], () => {
       var e;
       return (null == h ? void 0 : h.colorRoleId) != null ? null == (e = N.Z.getRole(t.guild_id, h.colorRoleId)) ? void 0 : e.name : void 0
-    }, [t.guild_id, h]), b = (0, p.e7)([R.default], () => R.default.getUser(a)), _ = (0, p.e7)([R.default], () => R.default.getCurrentUser()), C = (null == b ? void 0 : b.id) === (null == _ ? void 0 : _.id), x = (0, p.e7)([T.Z, A.Z], () => C ? A.Z.getStatus() : T.Z.getStatus(a, t.guild_id)), v = (0, p.e7)([T.Z], () => T.Z.isMobileOnline(a)), O = (0, p.e7)([T.Z, A.Z], () => C ? A.Z.getActivities() : T.Z.getActivities(a, t.guild_id)), M = (0, p.e7)([P.Z], () => P.Z.getAnyStreamForUser(a)), k = (0, c.JA)(a), D = (0, p.e7)([E.Z], () => E.Z.canUserViewChannel(t.id, l, a)), B = (null == b ? void 0 : b.id) != null && b.id === o, V = i.useCallback(e => {
+    }, [t.guild_id, h]), b = (0, p.e7)([R.default], () => R.default.getUser(a)), _ = (0, p.e7)([R.default], () => R.default.getCurrentUser()), C = (null == b ? void 0 : b.id) === (null == _ ? void 0 : _.id), x = (0, p.e7)([T.Z, A.Z], () => C ? A.Z.getStatus() : T.Z.getStatus(a, t.guild_id)), v = (0, p.e7)([T.Z], () => T.Z.isMobileOnline(a)), O = (0, p.e7)([T.Z, A.Z], () => C ? A.Z.getActivities() : T.Z.getActivities(a, t.guild_id)), M = (0, p.e7)([S.Z], () => S.Z.getAnyStreamForUser(a)), k = (0, c.JA)(a), D = (0, p.e7)([E.Z], () => E.Z.canUserViewChannel(t.id, l, a)), B = (null == b ? void 0 : b.id) != null && b.id === o, V = i.useCallback(e => {
       null != b && (0, f.jW)(e, async () => {
         let {
           default: e
@@ -126,7 +126,7 @@ let Y = B.ZP.getEnableHardwareAcceleration(),
     });
     if (null == b) return null;
     let $ = null == h ? void 0 : h.premiumSince;
-    return (0, r.jsx)(S.Z, {
+    return (0, r.jsx)(P.Z, {
       targetElementRef: s,
       user: b,
       guildId: t.guild_id,

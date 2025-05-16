@@ -26,8 +26,8 @@ var r = n(255367),
   O = n(357156),
   E = n(923973),
   I = n(829750),
-  S = n(189771),
-  P = n(294629),
+  P = n(189771),
+  S = n(294629),
   Z = n(793319),
   N = n(987329),
   T = n(560688),
@@ -124,15 +124,15 @@ function eu(e) {
     canManageGuildEvent: h
   } = (0, O.XJ)(t), f = (0, o.e7)([q.Z], () => q.Z.getStageInstanceByChannel(t.id), [t.id]), m = (0, o.e7)([y.ZP], () => y.ZP.getGuildScheduledEvent(null == f ? void 0 : f.guild_scheduled_event_id)), g = (0, o.e7)([B.Z], () => B.Z.getVoiceChannelId() === t.id, [t.id]), {
     suppress: C
-  } = (0, P.Z)(t), x = L.default.getId(), [v] = (0, en.Z)(t), j = Y.ZP.isModerator(x, t.id), E = (0, z.B)(t.id), I = h(m), {
-    parentAnalyticsLocation: S
+  } = (0, S.Z)(t), x = L.default.getId(), [v] = (0, en.Z)(t), j = Y.ZP.isModerator(x, t.id), E = (0, z.B)(t.id), I = h(m), {
+    parentAnalyticsLocation: P
   } = (0, p.ZP)(), Z = i.useRef(null);
   if (!g) return (0, r.jsx)(s.zxk, {
     size: s.zxk.Sizes.MEDIUM,
     color: s.zxk.Colors.GREEN,
     className: a()(ea.buttonSpacing, ea.buttonWithTextButton),
     onClick: () => {
-      (0, b.v)(S, b.d.JOIN_STAGE), (0, V.TM)(t)
+      (0, b.v)(P, b.d.JOIN_STAGE), (0, V.TM)(t)
     },
     children: (0, r.jsxs)("div", {
       className: ea.buttonWithTextInnerContainer,
@@ -170,7 +170,7 @@ function eu(e) {
           "aria-label": el.intl.string(el.t["3Uj+2t"]),
           onClose: i,
           onSelect: n,
-          onInteraction: (0, _.u)("End Stage", S, {
+          onInteraction: (0, _.u)("End Stage", P, {
             entrypoint: ei.A5.CARET
           }),
           children: (0, r.jsx)(s.sNh, {
@@ -261,10 +261,10 @@ let eh = i.memo(function(e) {
     suppress: l,
     selfMute: a,
     mute: c
-  } = (0, P.Z)(t), u = (0, z.B)(t.id), d = (0, o.e7)([C.Z], () => null != C.Z.getAwaitingRemoteSessionInfo()), {
+  } = (0, S.Z)(t), u = (0, z.B)(t.id), d = (0, o.e7)([C.Z], () => null != C.Z.getAwaitingRemoteSessionInfo()), {
     cameraUnavailable: b,
     enabled: y
-  } = (0, E.Z)(), v = (0, S.Z)(t), {
+  } = (0, E.Z)(), v = (0, P.Z)(t), {
     limit: j,
     reachedLimit: O
   } = (0, I.Z)(t), w = (0, o.e7)([G.default], () => G.default.getCurrentUser()), R = (0, o.e7)([D.Z], () => (0, x.Z)(D.Z)), L = (0, o.e7)([B.Z], () => B.Z.getVoiceChannelId() === t.id, [t.id]), U = (0, o.e7)([h.Z], () => h.Z.getStreamParticipants(t.id)[0], [t.id]), F = (0, K.PK)(t.id), H = j > 0, V = O && !F || null != U && U.user.id !== (null == w ? void 0 : w.id), W = (0, _.u)("AudioDeviceMenu", n, {

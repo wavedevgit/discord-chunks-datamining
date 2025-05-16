@@ -32,10 +32,10 @@ function O(e) {
     channel: O,
     remoteMode: E,
     onInteraction: I
-  } = e, S = (0, a.bp)(), {
-    id: P,
+  } = e, P = (0, a.bp)(), {
+    id: S,
     type: Z
-  } = O, N = (0, i.e7)([u.Z], () => u.Z.getGuild(O.guild_id), [O.guild_id]), T = (0, i.e7)([d.Z], () => d.Z.getSelectedParticipant(P)), A = (null == T ? void 0 : T.type) === x.fO.STREAM ? T.stream : null, w = (0, i.e7)([o.Z], () => (null == T ? void 0 : T.type) === x.fO.ACTIVITY ? o.Z.getApplication(T.applicationId) : void 0), R = (0, h.Z)(P), M = (0, _.Z)(P), k = (0, m.Z)(O, N, null == A ? void 0 : A.ownerId, null == w ? void 0 : w.id), L = (0, p.Z)(P), D = (0, C.Z)(), U = (0, c.$A)(P), B = (0, c.j8)(P), G = (0, b.Z)(A, S), F = (0, g.Z)(w, P), H = (0, f.Z)(), V = (0, s.Z)(O);
+  } = O, N = (0, i.e7)([u.Z], () => u.Z.getGuild(O.guild_id), [O.guild_id]), T = (0, i.e7)([d.Z], () => d.Z.getSelectedParticipant(S)), A = (null == T ? void 0 : T.type) === x.fO.STREAM ? T.stream : null, w = (0, i.e7)([o.Z], () => (null == T ? void 0 : T.type) === x.fO.ACTIVITY ? o.Z.getApplication(T.applicationId) : void 0), R = (0, h.Z)(S), M = (0, _.Z)(S), k = (0, m.Z)(O, N, null == A ? void 0 : A.ownerId, null == w ? void 0 : w.id), L = (0, p.Z)(S), D = (0, C.Z)(), U = (0, c.$A)(S), B = (0, c.j8)(S), G = (0, b.Z)(A, P), F = (0, g.Z)(w, S), H = (0, f.Z)(), V = (0, s.Z)(O);
   return (0, r.jsxs)(l.v2r, {
     className: j.menu,
     onClose: t,

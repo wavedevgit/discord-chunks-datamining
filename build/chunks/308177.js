@@ -46,12 +46,12 @@ let O = (0, a.Z)(e => {
   } = e, {
     selectedParticipantId: E,
     largeStream: I,
-    chatOpen: S
+    chatOpen: P
   } = (0, l.cj)([o.Z], () => ({
     selectedParticipantId: o.Z.getSelectedParticipantId(a.id),
     largeStream: o.Z.getStageStreamSize(a.id),
     chatOpen: o.Z.getChatOpen(a.id)
-  }), [a.id]), P = (0, c.Io)(a.id), Z = (0, c.Rk)(a.id, u.pV.AUDIENCE), N = (0, l.e7)([s.Z], () => null != E ? s.Z.getParticipant(a.id, E) : null), T = (0, c.w8)(a.id, u.pV.SPEAKER), A = T.filter(j), w = null != T.find(e => e.type === u.Ui.STREAM), R = v(C), M = y(C, S), k = {
+  }), [a.id]), S = (0, c.Io)(a.id), Z = (0, c.Rk)(a.id, u.pV.AUDIENCE), N = (0, l.e7)([s.Z], () => null != E ? s.Z.getParticipant(a.id, E) : null), T = (0, c.w8)(a.id, u.pV.SPEAKER), A = T.filter(j), w = null != T.find(e => e.type === u.Ui.STREAM), R = v(C), M = y(C, P), k = {
     [u.pV.SPEAKER]: M,
     [u.pV.AUDIENCE]: R,
     [u.pV.SELECTED]: 1
@@ -65,8 +65,8 @@ let O = (0, a.Z)(e => {
       let {
         section: t
       } = e;
-      return 1 === t ? 0 === P ? null : (0, r.jsx)(m.Z, {
-        participantCount: P,
+      return 1 === t ? 0 === S ? null : (0, r.jsx)(m.Z, {
+        participantCount: S,
         label: b.intl.string(b.t.CduOk5),
         className: _.header,
         onClick: () => W(!z),

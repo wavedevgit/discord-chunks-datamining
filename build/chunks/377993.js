@@ -26,8 +26,8 @@ var r = n(255367),
   O = n(233870),
   E = n(51144),
   I = n(998502),
-  S = n(276264),
-  P = n(981631),
+  P = n(276264),
+  S = n(981631),
   Z = n(388032),
   N = n(11847);
 
@@ -85,9 +85,9 @@ function R(e) {
         decoration: "never"
       })),
       n = "<@".concat(t.id, ">");
-    j.S.dispatch(P.CkL.TEXTAREA_FOCUS, {
+    j.S.dispatch(S.CkL.TEXTAREA_FOCUS, {
       channelId: o.id
-    }), j.S.dispatchToLastSubscribed(P.CkL.INSERT_TEXT, {
+    }), j.S.dispatchToLastSubscribed(S.CkL.INSERT_TEXT, {
       plainText: e,
       rawText: n
     }), c.Z.startTyping(o.id)
@@ -126,7 +126,7 @@ function R(e) {
         }
         return i
       }(e, ["onClick", "onMouseDown"]);
-      return (0, r.jsx)(S.Z, T({
+      return (0, r.jsx)(P.Z, T({
         ref: N,
         user: t,
         currentUser: f,
@@ -178,10 +178,10 @@ function k(e) {
     for (let t of e) {
       var r, i, l;
       C.Z.isFriend(t.id) || t.id === (null == (r = y.default.getCurrentUser()) ? void 0 : r.id) ? n[t.id] = {
-        status: null != (i = _.Z.getStatus(t.id)) ? i : P.Skl.OFFLINE,
+        status: null != (i = _.Z.getStatus(t.id)) ? i : S.Skl.OFFLINE,
         activities: null != (l = _.Z.getActivities(t.id)) ? l : A
       } : n[t.id] = {
-        status: P.Skl.OFFLINE,
+        status: S.Skl.OFFLINE,
         activities: A
       }
     }
@@ -199,7 +199,7 @@ function k(e) {
     }
   }, [t], M);
   i.useEffect(() => {
-    v.default.track(P.rMx.MEMBER_LIST_VIEWED, {
+    v.default.track(S.rMx.MEMBER_LIST_VIEWED, {
       channel_id: t.id,
       channel_type: t.type,
       guild_id: t.guild_id

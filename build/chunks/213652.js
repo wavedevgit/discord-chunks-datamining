@@ -36,7 +36,7 @@ function C(e) {
   } = (0, l.cj)([s.Z], () => ({
     viewerClippingAllowed: null != y && (s.Z.isViewerClippingAllowedForUser(y.ownerId) || v),
     isAtMaxSavingClipOperations: s.Z.getIsAtMaxSaveClipOperations()
-  })), E = s.Z.getSettings().clipsEnabled, I = (null == y ? void 0 : y.ownerId) === h.default.getId(), S = !E || !(I || j) || O || null == C, P = i.useCallback(e => {
+  })), E = s.Z.getSettings().clipsEnabled, I = (null == y ? void 0 : y.ownerId) === h.default.getId(), P = !E || !(I || j) || O || null == C, S = i.useCallback(e => {
     var t, n;
     return (0, r.jsx)(a.xmR, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -71,10 +71,10 @@ function C(e) {
   return (0, r.jsx)(d.Z, {
     className: _.actionBarButton,
     onClick: () => {
-      S || ((0, m.v)(n, m.d.CLIP), I ? (0, c.C1)() : (0, c.C1)(C.id))
+      P || ((0, m.v)(n, m.d.CLIP), I ? (0, c.C1)() : (0, c.C1)(C.id))
     },
-    disabled: S,
-    iconComponent: P,
+    disabled: P,
+    iconComponent: S,
     label: null == y ? b.intl.string(b.t.eg5qtb) : I || j ? E ? O ? void 0 : b.intl.string(b.t.U4URzM) : b.intl.string(b.t.wSS1yM) : b.intl.string(b.t.aRifJS),
     grow: !1
   })

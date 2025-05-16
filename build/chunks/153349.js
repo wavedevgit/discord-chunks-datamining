@@ -26,8 +26,8 @@ var r = n(255367),
   O = n(590415),
   E = n(614173),
   I = n(618896),
-  S = n(231338),
-  P = n(388032),
+  P = n(231338),
+  S = n(388032),
   Z = n(916396);
 
 function N(e) {
@@ -67,7 +67,7 @@ let A = i.memo(function(e) {
       chatOpen: n
     } = e, i = (0, r.jsx)(m.ZP.Icon, {
       icon: u.Dio,
-      tooltip: P.intl.string(P.t.cpT0Cg),
+      tooltip: S.intl.string(S.t.cpT0Cg),
       onClick: t
     });
     return (0, r.jsxs)(m.ZP, {
@@ -78,9 +78,9 @@ let A = i.memo(function(e) {
       children: [(0, r.jsx)(m.ZP.Icon, {
         icon: u.V9,
         disabled: !0,
-        "aria-label": P.intl.string(P.t.TYZgzc)
+        "aria-label": S.intl.string(S.t.TYZgzc)
       }), (0, r.jsx)(m.ZP.Title, {
-        children: P.intl.string(P.t.TYZgzc)
+        children: S.intl.string(S.t.TYZgzc)
       })]
     })
   }),
@@ -99,7 +99,7 @@ let A = i.memo(function(e) {
     s()(null != E, "Channel cannot be guildless");
     let {
       isMobile: I,
-      status: S
+      status: P
     } = (0, c.cj)([x.Z], () => ({
       isMobile: x.Z.isMobileOnline(l.user.id),
       status: x.Z.getStatus(l.user.id, E)
@@ -151,7 +151,7 @@ let A = i.memo(function(e) {
               className: Z.participantAvatar,
               user: l.user,
               isMobile: I,
-              status: S
+              status: P
             }), (0, r.jsxs)("div", {
               className: Z.participantTextContainer,
               children: [(0, r.jsx)(u.PUh, {
@@ -168,7 +168,7 @@ let A = i.memo(function(e) {
           }))
         }
       }), (0, r.jsx)(u.ua7, {
-        text: M ? P.intl.string(P.t.h9rsTU) : P.intl.string(P.t.f0T7hI),
+        text: M ? S.intl.string(S.t.h9rsTU) : S.intl.string(S.t.f0T7hI),
         children: e => (0, r.jsx)(u.zxk, T(N({}, e), {
           innerClassName: Z.buttonContainer,
           look: u.zxk.Looks.BLANK,
@@ -181,7 +181,7 @@ let A = i.memo(function(e) {
           })
         }))
       }), (0, r.jsx)(u.ua7, {
-        text: P.intl.string(P.t.moABMz),
+        text: S.intl.string(S.t.moABMz),
         children: e => (0, r.jsx)(u.zxk, T(N({}, e), {
           innerClassName: a()(Z.buttonContainer, Z.buttonMargin),
           look: u.zxk.Looks.BLANK,
@@ -203,7 +203,7 @@ let A = i.memo(function(e) {
       className: Z.toggle,
       onChange: i,
       value: n,
-      children: P.intl.string(P.t.GYCh0d)
+      children: S.intl.string(S.t.GYCh0d)
     })
   }),
   M = i.memo(function() {
@@ -213,12 +213,12 @@ let A = i.memo(function(e) {
         className: Z.emptyStateTitle,
         variant: "text-lg/semibold",
         color: "header-primary",
-        children: P.intl.string(P.t["7R24mZ"])
+        children: S.intl.string(S.t["7R24mZ"])
       }), (0, r.jsx)(u.Text, {
         className: Z.emptyStateBody,
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: P.intl.string(P.t.Rpr2s7)
+        children: S.intl.string(S.t.Rpr2s7)
       })]
     })
   });
@@ -228,7 +228,7 @@ function k(e) {
     channel: t,
     toggleRequestToSpeakSidebar: n,
     chatOpen: i
-  } = e, l = (0, v.Fd)(t.id), o = [+!!(0, c.e7)([C.Z], () => C.Z.can(S.Pl.MANAGE_CHANNELS, t) || C.Z.can(S.Pl.MANAGE_ROLES, t)), Math.max(1, l.length)];
+  } = e, l = (0, v.Fd)(t.id), o = [+!!(0, c.e7)([C.Z], () => C.Z.can(P.Pl.MANAGE_CHANNELS, t) || C.Z.can(P.Pl.MANAGE_ROLES, t)), Math.max(1, l.length)];
   return (0, r.jsxs)("div", {
     className: a()(Z.container, {
       [Z.chatOpen]: i
@@ -282,9 +282,9 @@ function k(e) {
           className: Z.listTitle,
           variant: "text-xs/bold",
           color: "header-secondary",
-          children: l.length > 0 ? P.intl.formatToPlainString(P.t["5z7q5e"], {
+          children: l.length > 0 ? S.intl.formatToPlainString(S.t["5z7q5e"], {
             numHands: l.length
-          }) : P.intl.string(P.t.TYZgzc)
+          }) : S.intl.string(S.t.TYZgzc)
         }, "participants-section") : null
       }
     })]

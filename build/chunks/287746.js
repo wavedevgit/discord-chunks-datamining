@@ -26,8 +26,8 @@ var r = n(255367),
   O = n(367907),
   E = n(450936),
   I = n(993766),
-  S = n(499254),
-  P = n(541099),
+  P = n(499254),
+  S = n(541099),
   Z = n(827498),
   N = n(533379),
   T = n(555573),
@@ -80,8 +80,8 @@ var r = n(255367),
   eO = n(155409),
   eE = n(163612),
   eI = n(314897),
-  eS = n(433355),
-  eP = n(592125),
+  eP = n(433355),
+  eS = n(592125),
   eZ = n(703558),
   eN = n(323873),
   eT = n(271383),
@@ -436,7 +436,7 @@ class tn extends i.PureComponent {
           let {
             location: t,
             sectionName: n
-          } = null != (h = (0, eY._U)(l)) ? h : {}, r = e === M.bB.APPLICATION_LAUNCHER ? P.Z.lastShownEntrypoint() : Z._b.TEXT, {
+          } = null != (h = (0, eY._U)(l)) ? h : {}, r = e === M.bB.APPLICATION_LAUNCHER ? S.Z.lastShownEntrypoint() : Z._b.TEXT, {
             isAuthorized: i
           } = await (0, U.L)({
             applicationId: l.applicationId,
@@ -619,8 +619,8 @@ class tr extends i.PureComponent {
         showAppLauncherButton: O,
         showAppDMsUI: E,
         isInitialLoading: I,
-        isRefreshChatInputEnabled: S,
-        isRefreshEnabled: P,
+        isRefreshChatInputEnabled: P,
+        isRefreshEnabled: S,
         pendingScheduledMessage: Z,
         recipientUser: N,
         voiceChannel: T,
@@ -667,7 +667,7 @@ class tr extends i.PureComponent {
             renderAppCommandButton: this.renderAppCommandButton,
             pendingScheduledMessage: Z
           })
-        }), P ? null : this.renderAppLauncherButton(), S ? null : this.renderAppCommandButton()]
+        }), S ? null : this.renderAppLauncherButton(), P ? null : this.renderAppCommandButton()]
       }),
       G = E && I,
       F = G && I ? D : U,
@@ -760,7 +760,7 @@ class tr extends i.PureComponent {
                   }) : (0, r.jsx)(eJ.Z, {
                     channel: i,
                     children: F
-                  }), S ? null : (0, r.jsx)(_.Z, {
+                  }), P ? null : (0, r.jsx)(_.Z, {
                     channel: i,
                     poggermodeEnabled: y
                   })]
@@ -815,7 +815,7 @@ class tr extends i.PureComponent {
           return;
         case e0.yXg.ARROW_RIGHT:
           n === B.Ie.NORMAL && eB.S.dispatch(e0.CkL.FOCUS_CHANNEL_TEXT_AREA, {
-            channelId: eS.ZP.getCurrentSidebarChannelId(r.id)
+            channelId: eP.ZP.getCurrentSidebarChannelId(r.id)
           })
       }
     }), e7(this, "handleOpenExpressionPicker", e => {
@@ -827,7 +827,7 @@ class tr extends i.PureComponent {
       let {
         applicationId: t
       } = e;
-      return S.__(Z._b.TEXT, this.props.chatInputType, {
+      return P.__(Z._b.TEXT, this.props.chatInputType, {
         applicationId: t
       })
     }), e7(this, "handleChatInteract", () => {
@@ -903,7 +903,7 @@ let ti = i.memo(function(e) {
   }), g = (0, d.e7)([ep.Z], () => ep.Z.isEnabled()), b = (0, em.Z)(t.id), _ = (0, ei.Z)(t.id), C = (0, N.R)({
     channel: t,
     chatInputType: l
-  }), x = (0, D.h9)(t.id), v = (0, ey.k)(t.id), O = (0, y.ZP)(), S = (0, K.Z)(t.id), Z = (0, q.Z)(null == S ? void 0 : S.wallpaperId), {
+  }), x = (0, D.h9)(t.id), v = (0, ey.k)(t.id), O = (0, y.ZP)(), P = (0, K.Z)(t.id), Z = (0, q.Z)(null == P ? void 0 : P.wallpaperId), {
     isInitialLoading: T,
     primaryEntryPointCommand: A,
     isProfileFetching: w,
@@ -925,11 +925,11 @@ let ti = i.memo(function(e) {
     commands: L
   });
   let U = i.useRef(null),
-    B = (0, d.e7)([P.Z], () => P.Z.appDMChannelsWithFailedLoads().has(t.id)),
+    B = (0, d.e7)([S.Z], () => S.Z.appDMChannelsWithFailedLoads().has(t.id)),
     G = (0, Q.R6)("ChannelChat"),
     F = (0, Q.Q3)("ChannelChat"),
     H = (0, d.e7)([eR.Z], () => eR.Z.getVoiceChannelId()),
-    V = (0, d.e7)([eP.Z], () => eP.Z.getChannel(H)),
+    V = (0, d.e7)([eS.Z], () => eS.Z.getChannel(H)),
     z = (0, d.e7)([ek.default], () => t.type !== e0.d4z.DM ? null : ek.default.getUser(t.getRecipientId()));
   return (0, r.jsx)(tr, {
     channel: t,
@@ -960,7 +960,7 @@ let ti = i.memo(function(e) {
     recipientUser: z,
     voiceChannel: V,
     theme: O,
-    chatWallpaperState: S,
+    chatWallpaperState: P,
     wallpaperColorMix: Z
   })
 })

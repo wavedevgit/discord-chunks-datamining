@@ -28,8 +28,8 @@ var r = n(255367),
   O = n(592125),
   E = n(906467),
   I = n(323873),
-  S = n(709054),
-  P = n(786761),
+  P = n(709054),
+  S = n(786761),
   Z = n(750030),
   N = n(534091),
   T = n(901461),
@@ -190,12 +190,12 @@ function el(e) {
     groupId: x,
     viewingChannelId: O
   } = e, E = o.type === X.uaV.REPLY ? o.messageReference : void 0, I = (0, c.JA)(null != (t = e.id) ? t : ""), {
-    onFocus: S
+    onFocus: P
   } = I, Z = en(I, ["onFocus"]), {
     isFocused: N,
     handleFocus: w,
     handleBlur: B
-  } = (0, k.bb)(S), {
+  } = (0, k.bb)(P), {
     popouts: F,
     selected: H,
     setPopout: W
@@ -238,7 +238,7 @@ function el(e) {
         [J.message]: !0,
         [J.cozyMessage]: !b,
         [J.mentioned]: o.mentioned,
-        [J.ephemeral]: (0, P.Pv)(o),
+        [J.ephemeral]: (0, S.Pv)(o),
         [J.systemMessage]: (0, T.Z)(o),
         [J.groupStart]: o.id === x || o.type === X.uaV.REPLY,
         [J.selected]: eu
@@ -335,20 +335,20 @@ let ea = i.memo(function(e) {
     {
       isFocused: eE,
       hasFocused: eI,
-      handleFocus: eS,
-      handleBlur: eP
+      handleFocus: eP,
+      handleBlur: eS
     } = (0, k.bb)(eu),
     eZ = i.useCallback(e => {
-      eS(e), ey(e)
-    }, [eS, ey]),
+      eP(e), ey(e)
+    }, [eP, ey]),
     eN = i.useCallback(e => {
-      eP(e), ev()
-    }, [eP, ev]),
+      eS(e), ev()
+    }, [eS, ev]),
     eT = (0, u.e7)([I.Z], () => I.Z.isEditing($, Z), [$, Z]),
     eA = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled),
     ew = eb || eT || eA && eE,
     eR = ew || eO,
-    eM = (0, u.e7)([O.Z], () => v.hasFlag(X.iLy.HAS_THREAD) && O.Z.getChannel(S.default.castMessageIdAsChannelId(v.id))),
+    eM = (0, u.e7)([O.Z], () => v.hasFlag(X.iLy.HAS_THREAD) && O.Z.getChannel(P.default.castMessageIdAsChannelId(v.id))),
     ek = v.isFirstMessageInForumPost(N),
     eL = (0, m.A)((null != (n = v.editedTimestamp) ? n : v.timestamp).valueOf()),
     eD = (0, u.e7)([E.Z], () => E.Z.isDeveloper),
@@ -419,7 +419,7 @@ let ea = i.memo(function(e) {
             [J.message]: !0,
             [J.cozyMessage]: !er,
             [J.mentioned]: v.mentioned,
-            [J.ephemeral]: (0, P.Pv)(v),
+            [J.ephemeral]: (0, S.Pv)(v),
             [J.nitroMessage]: v.type === X.uaV.NITRO_NOTIFICATION || v.type === X.uaV.CHAT_WALLPAPER_SET || v.type === X.uaV.CHAT_WALLPAPER_REMOVED,
             [J.systemMessage]: (0, T.Z)(v),
             [J.groupStart]: !eo && (e$ || v.type === X.uaV.REPLY),

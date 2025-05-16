@@ -26,8 +26,8 @@ var r, i = n(255367),
   O = n(40851),
   E = n(100527),
   I = n(367907),
-  S = n(906732),
-  P = n(43267),
+  P = n(906732),
+  S = n(43267),
   Z = n(933557),
   N = n(600164),
   T = n(313201),
@@ -144,7 +144,7 @@ let eh = e => {
       children: (0, i.jsxs)("div", {
         className: ei.confirmChannelItemContainer,
         children: [(0, i.jsx)(f.qEK, {
-          src: (0, P.x)(n),
+          src: (0, S.x)(n),
           size: f.EFr.SIZE_24,
           "aria-label": l
         }), (0, i.jsx)("span", {
@@ -758,7 +758,7 @@ function eg(e) {
     onChange: o
   } = e, {
     analyticsLocations: s
-  } = (0, S.ZP)(E.Z.NEW_GROUP_DM_INVITE_MODAL);
+  } = (0, P.ZP)(E.Z.NEW_GROUP_DM_INVITE_MODAL);
   if (!(0, A.a)(E.Z.NEW_GROUP_DM_INVITE_MODAL)) return null;
   let c = (0, Z.pT)(Array.from(t), W.default, V.Z);
   return (0, i.jsxs)("div", {

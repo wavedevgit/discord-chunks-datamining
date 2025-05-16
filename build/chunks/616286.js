@@ -88,7 +88,7 @@ function O(e) {
     parentAnalyticsLocation: E
   } = (0, u.ZP)(), {
     disabled: I
-  } = O, S = i.useRef(null), P = (0, s.e7)([d.Z], () => d.Z.getChatOpen(n), [n]), {
+  } = O, P = i.useRef(null), S = (0, s.e7)([d.Z], () => d.Z.getChatOpen(n), [n]), {
     isShowing: Z,
     unreadCount: N,
     mentionCount: T
@@ -112,8 +112,8 @@ function O(e) {
       mentionCount: n
     }
   }(n), A = i.useCallback(() => {
-    (0, p.v)(E, p.d.CHAT, !P), null == h || h(), !P && m && (null == _ || _()), c.Z.updateChatOpen(n, !P)
-  }, [n, P, h, m, _, E]), w = i.useCallback(e => {
+    (0, p.v)(E, p.d.CHAT, !S), null == h || h(), !S && m && (null == _ || _()), c.Z.updateChatOpen(n, !S)
+  }, [n, S, h, m, _, E]), w = i.useCallback(e => {
     let {
       className: t
     } = e;
@@ -123,7 +123,7 @@ function O(e) {
     })
   }, [n]), R = i.useCallback(() => {
     var e;
-    null == (e = S.current) || e.focus()
+    null == (e = P.current) || e.focus()
   }, []);
   (0, g.yp)({
     event: x.CkL.FOCUS_CHAT_BUTTON,
@@ -143,7 +143,7 @@ function O(e) {
       clearTimeout(e)
     }
   }, [M]);
-  let D = [t = f && I ? y.intl.string(y.t.DPgc5u) : P ? y.intl.string(y.t.nthdxM) : y.intl.string(y.t["5KxXrK"])];
+  let D = [t = f && I ? y.intl.string(y.t.DPgc5u) : S ? y.intl.string(y.t.nthdxM) : y.intl.string(y.t["5KxXrK"])];
   return T > 0 && D.push(y.intl.formatToPlainString(y.t["3l1GOz"], {
     mentionCount: T
   })), N > 0 && D.push(y.intl.string(y.t.x5zAGR)), (0, r.jsx)(C.Z, function(e) {
@@ -164,7 +164,7 @@ function O(e) {
     }
     return e
   }({
-    buttonRef: S,
+    buttonRef: P,
     onClick: A,
     label: t,
     "aria-label": D.join(", "),

@@ -26,8 +26,8 @@ var r = n(255367),
   O = n(390322),
   E = n(616286),
   I = n(975146),
-  S = n(597998),
-  P = n(606304),
+  P = n(597998),
+  S = n(606304),
   Z = n(358221),
   N = n(355827),
   T = n(185935),
@@ -71,9 +71,9 @@ function L(e) {
   let {
     channelId: t,
     guildId: n
-  } = e, i = (0, c.Wu)([P.Z, Z.Z], () => {
+  } = e, i = (0, c.Wu)([S.Z, Z.Z], () => {
     let e = Date.now();
-    return s()(P.Z.getSpeakers()).map(e => Z.Z.getParticipant(t, e)).filter(e => null != e && e.type === A.fO.USER && e.speaking && !(0, y.ZP)(e)).sortBy(t => -P.Z.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
+    return s()(S.Z.getSpeakers()).map(e => Z.Z.getParticipant(t, e)).filter(e => null != e && e.type === A.fO.USER && e.speaking && !(0, y.ZP)(e)).sortBy(t => -S.Z.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
   });
   return 0 === i.length ? null : (0, r.jsx)(r.Fragment, {
     children: i.map((e, t) => (0, r.jsx)(u.ua7, {
@@ -82,7 +82,7 @@ function L(e) {
       text: w.intl.formatToPlainString(w.t.JjdizM, {
         username: e.user.username
       }),
-      children: l => (0, r.jsx)(S.ZP, k(M({}, l), {
+      children: l => (0, r.jsx)(P.ZP, k(M({}, l), {
         className: a()(R.speaker, {
           [R.last]: t === i.length - 1
         }),
@@ -103,8 +103,8 @@ function D(e) {
   } = e, o = i.useRef(null), {
     analyticsLocations: s
   } = (0, h.ZP)(p.Z.VOICE_CHANNEL_HEADER), y = n.id, {
-    voiceParticipantsHidden: S,
-    selectedParticipant: P,
+    voiceParticipantsHidden: P,
+    selectedParticipant: S,
     userParticipantCount: w,
     participantsListOpen: D
   } = (0, c.cj)([Z.Z], () => ({
@@ -122,25 +122,25 @@ function D(e) {
   } = C.Z.useExperiment({
     location: "ChannelCallHeaderToolbar"
   }), V = (0, b.Q3)("ChannelCallHeaderToolbar"), z = [];
-  return S && z.push((0, r.jsx)(L, {
+  return P && z.push((0, r.jsx)(L, {
     channelId: y,
     guildId: n.guild_id
   }, "current-speaker")), z.push((0, r.jsx)(g.Z, {
     className: R.button,
     channelId: y
-  }, "clips-enabled-indicator")), (null == P ? void 0 : P.type) === A.fO.STREAM && (z.push((0, r.jsx)(v.Z, {
+  }, "clips-enabled-indicator")), (null == S ? void 0 : S.type) === A.fO.STREAM && (z.push((0, r.jsx)(v.Z, {
     className: R.button,
-    participant: P
+    participant: S
   }, "warning")), z.push((0, r.jsx)(_.Z, {
     size: f.ZP.Sizes.LARGE,
     className: R.button,
-    participant: P,
+    participant: S,
     showQuality: !0,
     premiumIndicator: !1
-  }, "live-indicator"))), (null == P ? void 0 : P.type) === A.fO.USER && z.push((0, r.jsx)(j.Z, {
+  }, "live-indicator"))), (null == S ? void 0 : S.type) === A.fO.USER && z.push((0, r.jsx)(j.Z, {
     className: R.button,
-    userId: P.id
-  }, "video-warning")), S && !B && z.push((0, r.jsx)(u.yRy, {
+    userId: S.id
+  }, "video-warning")), P && !B && z.push((0, r.jsx)(u.yRy, {
     targetElementRef: o,
     position: "bottom",
     renderPopout: () => (0, r.jsx)(O.Z, {

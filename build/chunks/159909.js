@@ -1,19 +1,19 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => p
+  Z: () => h
 });
-var r = n(255367);
-n(73800);
-var i = n(399606),
-  l = n(481060),
-  a = n(125268),
-  o = n(673125),
-  s = n(871499),
-  c = n(304388),
-  u = n(388032);
+var r = n(255367),
+  i = n(73800),
+  l = n(399606),
+  a = n(481060),
+  o = n(125268),
+  s = n(673125),
+  c = n(871499),
+  u = n(304388),
+  d = n(388032);
 
-function d() {
-  return (d = Object.assign || function(e) {
+function p() {
+  return (p = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -22,16 +22,18 @@ function d() {
   }).apply(this, arguments)
 }
 
-function p() {
-  let e = (0, i.e7)([o.Z], () => !o.Z.visibleOverlayCanvas);
-  return (0, r.jsx)(c.Z, {
+function h() {
+  let e = (0, l.e7)([s.Z], () => !s.Z.visibleOverlayCanvas),
+    t = i.useRef(null);
+  return (0, r.jsx)(u.Z, {
     renderPopout: () => null,
-    children: t => {
-      var n, i, o = d({}, function(e) {
+    popoutTargetRef: t,
+    children: n => {
+      var i, l, s = p({}, function(e) {
         if (null == e) throw TypeError("Cannot destructure " + e);
         return e
-      }(t));
-      return (0, r.jsx)(s.Z, (n = function(e) {
+      }(n));
+      return (0, r.jsx)(c.Z, (i = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -48,21 +50,22 @@ function p() {
           })
         }
         return e
-      }({}, o), i = i = {
-        label: u.intl.string(u.t.Cuo44O),
+      }({}, s), l = l = {
+        buttonRef: t,
+        label: d.intl.string(d.t.Cuo44O),
         isActive: e,
-        iconComponent: l.tEF,
-        onClick: a.LT
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+        iconComponent: a.tEF,
+        onClick: o.LT
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(i)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
-      }), n))
+      })(Object(l)).forEach(function(e) {
+        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+      }), i))
     }
   })
 }

@@ -27,8 +27,8 @@ var i = n(120356),
   O = n(594174),
   E = n(572004),
   I = n(5192),
-  S = n(51144),
-  P = n(131085),
+  P = n(51144),
+  S = n(131085),
   Z = n(388032),
   N = n(157092);
 
@@ -96,7 +96,7 @@ function w(e) {
             primaryGuild: null == t ? void 0 : t.primaryGuild,
             userId: null == t ? void 0 : t.id,
             contextGuildId: n,
-            badgeSize: P.Gg.SIZE_16,
+            badgeSize: S.Gg.SIZE_16,
             textVariant: "heading-md/semibold",
             className: N.memberClanTag,
             containerClassName: N.memberClanTagContainer
@@ -104,7 +104,7 @@ function w(e) {
         }), (0, r.jsx)(o.Text, {
           variant: "text-md/medium",
           color: "text-normal",
-          children: S.ZP.getUserTag(t)
+          children: P.ZP.getUserTag(t)
         })]
       })]
     }), (0, r.jsx)(o.Text, {
@@ -175,12 +175,12 @@ function M(e) {
     canBanUser: (0, h.mm)(t, m),
     canModerateMembers: null != m && (0, p.F)(m.id, t.id, [O.default, C.Z, x.Z])
   }), [t, m]), I = (0, u.b)(i), {
-    analyticsLocations: S,
-    newestAnalyticsLocation: P
+    analyticsLocations: P,
+    newestAnalyticsLocation: S
   } = (0, c.ZP)(), w = (0, f.sE)(l, {
     targetUserId: t.id,
-    location: P,
-    locations: S
+    location: S,
+    locations: P
   }), M = (0, a.e7)([g.default], () => g.default.getId() === (null == t ? void 0 : t.id)), k = (0, a.e7)([v.Z, b.Z], () => {
     var e;
     let t = v.Z.getChannelId(l);
@@ -211,7 +211,7 @@ function M(e) {
             default: e
           } = await n.e("5454").then(n.bind(n, 854360));
           return n => (0, r.jsx)(e, A(T({}, n), {
-            location: P,
+            location: S,
             guildId: l,
             user: t,
             modReportId: k
@@ -233,7 +233,7 @@ function M(e) {
             default: e
           } = await n.e("4114").then(n.bind(n, 98746));
           return n => (0, r.jsx)(e, A(T({}, n), {
-            location: P,
+            location: S,
             guildId: l,
             user: t,
             modReportId: k
@@ -253,11 +253,11 @@ function M(e) {
         I ? (0, d.q)({
           guildId: i.guildId,
           userId: i.userId,
-          anaylticsLocations: S
+          anaylticsLocations: P
         }) : (0, d.z)({
           guildId: i.guildId,
           userId: i.userId,
-          anaylticsLocations: S,
+          anaylticsLocations: P,
           modReportId: k
         })
       },

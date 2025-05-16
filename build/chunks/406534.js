@@ -26,8 +26,8 @@ var r = n(255367),
   O = n(88101),
   E = n(576954),
   I = n(765104),
-  S = n(122707),
-  P = n(779836),
+  P = n(122707),
+  S = n(779836),
   Z = n(23750),
   N = n(496675),
   T = n(306680),
@@ -159,8 +159,8 @@ function ei(e) {
     eI = f.isForumPost() && !e_ ? (0, r.jsx)(g.Z, {
       postId: f.id
     }) : null,
-    eS = (0, _.Z)(f.id),
-    eP = (0, C.nw)(f);
+    eP = (0, _.Z)(f.id),
+    eS = (0, C.nw)(f);
   (0, K.Z)();
   let eZ = null,
     eN = [],
@@ -168,7 +168,7 @@ function ei(e) {
       if (e.type === J.ys_.DIVIDER) {
         var n, i;
         let l = null != e.unreadId;
-        return null != ed ? null : e.isSummaryDivider ? (0, r.jsx)(P.Z, {
+        return null != ed ? null : e.isSummaryDivider ? (0, r.jsx)(S.Z, {
           index: t,
           item: e,
           channel: f,
@@ -201,7 +201,7 @@ function ei(e) {
       if ((0, D.Z)(e.content, l)) return;
       e.type === J.ys_.MESSAGE && null == eZ && (eZ = e);
       let a = e.groupId === (null == eZ ? void 0 : eZ.groupId) ? eZ.content.id : e.groupId,
-        o = eP && e.content.isFirstMessageInForumPost(f),
+        o = eS && e.content.isFirstMessageInForumPost(f),
         s = e.type === J.ys_.THREAD_STARTER_MESSAGE ? H.Ru : H.ZP;
       return (0, r.jsx)(s, {
         compact: ea && !o,
@@ -211,7 +211,7 @@ function ei(e) {
         flashKey: e.flashKey,
         id: (0, L.p)(f.id, e.content.id),
         isLastItem: t >= eo.length - 1,
-        renderContentOnly: eS || o
+        renderContentOnly: eP || o
       }, e.content.id)
     });
   eN.push(...eT);
@@ -255,7 +255,7 @@ function ei(e) {
       o = (0, R.KC)(new Date, new Date(l));
     if (T.ZP.isEstimated(f.id) ? (e = o ? ee.t.wvtbbG : ee.t.tHqbtr, t = ee.t.vaPWFR) : (e = o ? ee.t.BctFHx : ee.t["3wXb9P"], t = ee.t["4H8ldH"]), eC && (0, c.tW)(f) && eO.includes(X.E.SUMMARIES)) {
       let n = T.ZP.ackMessageId(f.id),
-        o = (0, S.q)(f.id, T.ZP.getOldestUnreadMessageId(f.id));
+        o = (0, P.q)(f.id, T.ZP.getOldestUnreadMessageId(f.id));
       if ((0, d.yw)(J.rMx.SUMMARIES_UNREAD_BAR_VIEWED, {
           num_unread_summaries: o,
           num_unread_messages: ei,

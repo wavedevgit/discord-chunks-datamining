@@ -50,8 +50,8 @@ function C(e) {
     shouldPrioritizeGroupPlusIcon: O = !1,
     isContextlessActivity: E = !1,
     iconClassName: I,
-    look: S,
-    size: P,
+    look: P,
+    size: S,
     buttonText: Z,
     color: N
   } = e, T = function(e, t) {
@@ -85,8 +85,8 @@ function C(e) {
     iconComponent: L,
     label: D,
     iconClassName: I,
-    look: S,
-    size: P,
+    look: P,
+    size: S,
     buttonText: Z,
     color: null != N ? N : void 0
   }) : null != M && null != C && f.Z.can(g.Plq.CREATE_INSTANT_INVITE, C) ? (0, r.jsx)(m.Z, _({
@@ -146,8 +146,8 @@ function C(e) {
     iconComponent: L,
     label: D,
     iconClassName: I,
-    look: S,
-    size: P,
+    look: P,
+    size: S,
     buttonText: Z
   }, T)) : null
 }

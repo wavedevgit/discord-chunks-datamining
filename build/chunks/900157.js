@@ -26,8 +26,8 @@ var r = n(255367),
   O = n(664342),
   E = n(124368),
   I = n(981631),
-  S = n(388032),
-  P = n(591837);
+  P = n(388032),
+  S = n(591837);
 
 function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -98,7 +98,7 @@ function T(e) {
       draftType: y.d.ChannelMessage
     }), (0, r.jsx)(b.ZP, {
       toolbar: D,
-      "aria-label": S.intl.string(S.t.Pwe8tL),
+      "aria-label": P.intl.string(P.t.Pwe8tL),
       children: (0, _.ud)({
         channel: A,
         channelName: R,
@@ -119,7 +119,7 @@ function T(e) {
         }
       })
     }), (0, r.jsx)("div", {
-      className: P.chat,
+      className: S.chat,
       children: (0, r.jsx)(m.Z, {
         channel: A,
         guild: w,

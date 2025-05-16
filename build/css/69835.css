@@ -1,6 +1,6 @@
 /**
   Module ID: 69835
-  Original File Name: 01ea5ddcef7c401b
+  Original File Name: 595a4e3bf3088447
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -8910,6 +8910,16 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
     left: 20px;
     position: absolute;
     top: -8px
+}
+
+.buttonGradient__4524c {
+    background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
+    color: var(--white-500)
+}
+
+.visual-refresh .buttonGradient__4524c {
+    background-clip: padding-box;
+    border-radius: var(--radius-sm)
 }
 
 .container__3ce43 {
@@ -18579,4 +18589,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=01ea5ddcef7c401b.css.map*/
+/*# sourceMappingURL=595a4e3bf3088447.css.map*/

@@ -46,7 +46,7 @@ let v = e => {
     {
       fractionalState: k
     } = (0, m.Z)(),
-    L = (0, h.W)();
+    L = (0, h.W)().isInReverseTrial;
   return w ? (t = j.intl.string(j.t["+vt7w8"]), n = j.intl.string(j.t.LgHbnJ)) : (t = j.intl.string(j.t.LgHbnJ), n = j.intl.string(j.t["+vt7w8"])), (0, i.jsx)(c.yWw, {
     className: l()(O.allPerksScroller, {
       [O.open]: s,

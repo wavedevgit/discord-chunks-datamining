@@ -63,7 +63,7 @@ function O(e) {
     analyticsLocations: x
   } = (0, d.ZP)(u.Z.USERNAME), O = (0, o.e7)([g.default], () => g.default.getUser(p)), E = (0, o.e7)([m.ZP], () => null != p ? m.ZP.getMember(_.guild_id, p) : null), I = (0, h.X)(_.guild_id, null == E ? void 0 : E.colorStrings);
 
-  function S(e) {
+  function P(e) {
     if (null == O) return null;
     (0, c.jW)(e, async () => {
       let {
@@ -76,11 +76,11 @@ function O(e) {
       }))
     })
   }
-  let P = null != (l = null != (t = null == E ? void 0 : E.nick) ? t : b.ZP.getName(O)) ? l : "???",
+  let S = null != (l = null != (t = null == E ? void 0 : E.nick) ? t : b.ZP.getName(O)) ? l : "???",
     Z = null == E ? void 0 : E.colorString;
   return null == O ? (0, r.jsx)("span", {
     className: a()(y.threadCreatorName, y.unknownCreatorName),
-    children: P
+    children: S
   }) : (0, r.jsx)(d.Gt, {
     value: x,
     children: (0, r.jsx)(f.Z, {
@@ -94,9 +94,9 @@ function O(e) {
         innerRef: C,
         tag: "span",
         className: y.threadCreatorName,
-        onContextMenu: S,
+        onContextMenu: P,
         children: (0, r.jsx)(s.PUh, {
-          name: P,
+          name: S,
           color: null != Z ? Z : void 0,
           roleColors: I
         })

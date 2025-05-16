@@ -1,65 +1,59 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  n: () => f
+  n: () => c
 });
 var r = n(255367);
 n(73800);
-var i = n(442837),
-  a = n(481060),
-  o = n(886969),
-  s = n(580130),
-  l = n(474936),
-  c = n(981631),
-  u = n(388032),
-  d = n(429680);
+var i = n(481060),
+  a = n(886969),
+  o = n(474936),
+  s = n(388032),
+  l = n(429680);
 
-function f(e) {
+function c(e) {
   let {
     fractionalPremiumInfo: t,
     variant: n = "default",
-    style: f
-  } = e, _ = t.fractionalState === l.a$.FP_SUB_PAUSED, p = (0, o.Z)(t.endsAt, _), h = (0, i.e7)([s.Z], () => s.Z.get(t.currentEntitlementId));
-  if ((null == h ? void 0 : h.sourceType) === c.kNB.REVERSE_TRIAL) return null;
-  let m = "",
-    g = {
-      trial: {
-        days_and_hours: u.t.SQyVVV,
-        days: u.t["2ifAYG"],
-        hours: u.t.kZSTYm
-      },
-      default: {
-        days_and_hours: u.t["6r9LLi"],
-        days: u.t.c2BbVF,
-        hours: u.t["8Xm6uL"]
-      }
-    };
-  return (p.days > 0 && p.hours > 0 ? m = u.intl.format(g[n].days_and_hours, {
-    days: p.days,
-    hours: p.hours
-  }) : p.days > 0 ? m = u.intl.format(g[n].days, {
-    days: p.days
-  }) : p.hours > 0 && (m = u.intl.format(g[n].hours, {
-    hours: p.hours
-  })), "" === m) ? null : (0, r.jsxs)("div", {
-    className: d.activeFractionalPremiumBannerContainer,
-    style: f,
+    style: c
+  } = e, u = t.fractionalState === o.a$.FP_SUB_PAUSED, d = (0, a.Z)(t.endsAt, u), f = "", _ = {
+    trial: {
+      days_and_hours: s.t.SQyVVV,
+      days: s.t["2ifAYG"],
+      hours: s.t.kZSTYm
+    },
+    default: {
+      days_and_hours: s.t["6r9LLi"],
+      days: s.t.c2BbVF,
+      hours: s.t["8Xm6uL"]
+    }
+  };
+  return (d.days > 0 && d.hours > 0 ? f = s.intl.format(_[n].days_and_hours, {
+    days: d.days,
+    hours: d.hours
+  }) : d.days > 0 ? f = s.intl.format(_[n].days, {
+    days: d.days
+  }) : d.hours > 0 && (f = s.intl.format(_[n].hours, {
+    hours: d.hours
+  })), "" === f) ? null : (0, r.jsxs)("div", {
+    className: l.activeFractionalPremiumBannerContainer,
+    style: c,
     children: [(0, r.jsxs)("div", {
-      className: d.nitroIconContainer,
-      children: [(0, r.jsx)(a.SrA, {
+      className: l.nitroIconContainer,
+      children: [(0, r.jsx)(i.SrA, {
         size: "md",
         color: "white",
-        className: d.iconFractional
-      }), (0, r.jsx)(a.SrA, {
+        className: l.iconFractional
+      }), (0, r.jsx)(i.SrA, {
         size: "md",
         color: "currentColor",
-        className: d.iconFractionalDark
+        className: l.iconFractionalDark
       })]
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
-      children: m
+      children: f
     }), (0, r.jsx)("div", {
-      className: d.activeFractionalPremiumBannerBackgroundImage
+      className: l.activeFractionalPremiumBannerBackgroundImage
     })]
   })
 }

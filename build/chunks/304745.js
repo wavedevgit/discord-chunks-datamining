@@ -31,8 +31,8 @@ function I(e) {
     channel: t,
     idle: n,
     whichPopoutIsOpen: I,
-    setWhichPopoutIsOpen: S
-  } = e, P = (0, l.e7)([u.ZP], () => u.ZP.isLaunchingActivity()), Z = (0, p.KF)(t.id), N = (0, p.g5)(Z), T = Z !== p.jy.CAN_LAUNCH || P, {
+    setWhichPopoutIsOpen: P
+  } = e, S = (0, l.e7)([u.ZP], () => u.ZP.isLaunchingActivity()), Z = (0, p.KF)(t.id), N = (0, p.g5)(Z), T = Z !== p.jy.CAN_LAUNCH || S, {
     isHovered: A,
     setIsHovered: w,
     onMouseEnter: R,
@@ -71,7 +71,7 @@ function I(e) {
         align: "center",
         spacing: 16,
         onRequestClose: () => {
-          w(!1), null == S || S(void 0)
+          w(!1), null == P || P(void 0)
         },
         renderPopout: e => {
           let {

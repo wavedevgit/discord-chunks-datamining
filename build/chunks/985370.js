@@ -28,12 +28,12 @@ let g = e => {
     onMouseLeave: y,
     cancelTimers: v
   } = (0, u.Z)(200, 300), [j, O] = i.useState(!1), E = (0, l.e7)([p.Z], () => p.Z.effectCooldownEndTime), I = i.useMemo(() => null != E ? (E.getTime() - Date.now()) / 1e3 : 0, [E]), {
-    seconds: S
-  } = (0, o.Z)(null != E ? E : new Date), P = S > 0, {
+    seconds: P
+  } = (0, o.Z)(null != E ? E : new Date), S = P > 0, {
     parentAnalyticsLocation: Z
   } = (0, s.ZP)(), N = i.useCallback(e => {
-    "focus" !== e.type && (j || P || x())
-  }, [j, P, x]), T = i.useCallback(() => {
+    "focus" !== e.type && (j || S || x())
+  }, [j, S, x]), T = i.useCallback(() => {
     j || y()
   }, [y, j]), A = i.useCallback((e, t) => {
     v(), O(!j), g === f.D.EMOJI ? null == b || b(void 0) : null == b || b(f.D.EMOJI), (!_ || j) && (null == t || t(e))
@@ -70,7 +70,7 @@ let g = e => {
         isCenterButton: !0,
         color: j ? "primaryDark" : void 0,
         totalCooldownSeconds: I,
-        remainingCooldownSeconds: S,
+        remainingCooldownSeconds: P,
         className: n,
         onKeyDown: e => {
           e.keyCode === m.yXg.ENTER && e.keyCode === m.yXg.SPACE && A(e, i)
