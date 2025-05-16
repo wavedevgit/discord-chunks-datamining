@@ -1,6 +1,6 @@
 /** Chunk was on 79368 **/
 n.d(t, {
-  J: () => v
+  J: () => h
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -153,7 +153,7 @@ let f = e => {
       })]
     })
   },
-  h = e => {
+  v = e => {
     let {
       countdown: t
     } = e;
@@ -169,7 +169,7 @@ let f = e => {
     })
   };
 
-function v(e) {
+function h(e) {
   let {
     textVariant: t,
     className: n,
@@ -204,7 +204,7 @@ function v(e) {
       })]
     }), (0, r.jsx)("div", {
       className: _.digitsContainer,
-      children: (0, r.jsx)(h, {
+      children: (0, r.jsx)(v, {
         countdown: s
       })
     })]

@@ -1,65 +1,93 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => u
+  v: () => u
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(260630),
-  o = n(898517),
+  a = n(854568),
+  o = n(308521),
   s = n(481060),
   l = n(40851),
   c = n(912811);
-
-function u(e) {
+o.RuntimeLoader.setWasmUrl(a);
+let u = i.forwardRef(function(e, t) {
   let {
-    buffer: t,
-    autoplay: n = !0,
-    className: a,
-    fit: l,
-    alignment: u,
-    style: f,
-    eventTargetRef: _
-  } = e, p = i.useContext(s.Sfi), h = d(), [m, g] = i.useState(void 0), {
-    rive: E,
-    RiveComponent: b
+    buffer: n,
+    autoplay: a = !0,
+    className: l,
+    fit: u,
+    alignment: f,
+    style: _,
+    eventTargetRef: p,
+    artboard: h,
+    withReducedMotion: m = "halt"
+  } = e, g = i.useContext(s.Sfi), E = d(), [b, y] = i.useState(void 0), O = i.useRef(null), {
+    rive: v,
+    RiveComponent: I
   } = (0, o.useRive)({
-    eventTarget: null == _ ? void 0 : _.current,
-    buffer: t,
-    autoplay: n,
-    stateMachines: m,
+    eventTarget: null == p ? void 0 : p.current,
+    buffer: n,
+    autoplay: a,
+    stateMachines: b,
+    artboard: h,
+    useOffscreenRenderer: !0,
     layout: new o.Layout({
-      fit: null != l ? c.L[l] : o.Fit.Cover,
-      alignment: null != u ? c.E[u] : o.Alignment.Center
+      fit: null != u ? c.L[u] : o.Fit.Cover,
+      alignment: null != f ? c.E[f] : o.Alignment.Center
     })
   });
+  i.useImperativeHandle(t, () => ({
+    play: () => null == v ? void 0 : v.play(),
+    pause: () => null == v ? void 0 : v.pause(),
+    stop: () => null == v ? void 0 : v.stop()
+  }), [v]), i.useEffect(() => {
+    if (null != v && "short-loop" === m && g.reducedMotion.enabled) {
+      let e = () => {
+          v.isPlaying && (O.current = setTimeout(() => {
+            v.pause()
+          }, 5e3))
+        },
+        t = () => {
+          clearTimeout(O.current)
+        };
+      return v.on(o.EventType.Play, e), v.on(o.EventType.Pause, t), v.on(o.EventType.Stop, t), () => {
+        v.off(o.EventType.Play, e), v.off(o.EventType.Pause, t), v.off(o.EventType.Stop, t)
+      }
+    }
+  }, [v, m, g.reducedMotion.enabled]), i.useLayoutEffect(() => {
+    null != v && "layout" === u && (v.resizeDrawingSurfaceToCanvas(), setTimeout(() => {
+      v.resizeDrawingSurfaceToCanvas()
+    }, 100))
+  }, [v, u]), i.useEffect(() => {
+    null != v && null == b && (y(v.stateMachineNames), v.reset({
+      stateMachines: v.stateMachineNames,
+      autoplay: a,
+      artboard: h,
+      autoBind: !0
+    }), v.setupRiveListeners())
+  }, [v, a, b, h]);
+  let S = i.useRef(0);
   i.useEffect(() => {
-    null != E && null == m && (g(E.stateMachineNames), E.reset({
-      stateMachines: E.stateMachineNames,
-      autoplay: n
-    }), E.setupRiveListeners())
-  }, [E, n, m]);
-  let y = i.useRef(0);
-  i.useEffect(() => {
-    if (null == E) return;
-    E.play();
+    if (null == v) return;
+    v.play();
     let e = t => {
-      null != t.data && "number" == typeof t.data && (y.current = t.data, t.data > 0 && (p.reducedMotion.enabled && E.isPlaying && E.pause(), E.off(o.EventType.Advance, e)))
+      null != t.data && "number" == typeof t.data && (S.current = t.data, t.data > 0 && ("halt" === m && g.reducedMotion.enabled && v.isPlaying && v.pause(), v.off(o.EventType.Advance, e)))
     };
-    return E.on(o.EventType.Advance, e), () => {
-      E.off(o.EventType.Advance, e)
+    return v.on(o.EventType.Advance, e), () => {
+      v.off(o.EventType.Advance, e)
     }
-  }, [E, p.reducedMotion.enabled]);
-  let O = i.useRef(!1);
+  }, [v, g.reducedMotion.enabled, m]);
+  let T = i.useRef(!1);
   return i.useEffect(() => {
-    if (null != E) return !h && O.current && E.isPlaying && y.current > 0 ? E.pause() : h && !E.isPlaying && O.current && E.play(), () => {
-      null != E && h && (O.current = null != E.frameRequestId)
+    if (null != v) return !E && T.current && v.isPlaying && S.current > 0 ? v.pause() : E && !v.isPlaying && T.current && v.play(), () => {
+      null != v && E && (T.current = null != v.frameRequestId)
     }
-  }, [E, h]), (0, r.jsx)(b, {
-    className: a,
-    style: f
+  }, [v, E]), (0, r.jsx)(I, {
+    className: l,
+    style: _
   })
-}
+});
 
 function d() {
   let {
@@ -73,4 +101,3 @@ function d() {
     }
   }, [e]), t
 }
-o.RuntimeLoader.setWasmUrl(a)

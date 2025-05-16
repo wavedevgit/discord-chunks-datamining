@@ -1,7 +1,7 @@
 /** Chunk was on 79368 **/
 n.d(t, {
-  h: () => j,
-  x: () => x
+  h: () => x,
+  x: () => j
 });
 var r = n(255367);
 n(73800);
@@ -18,17 +18,17 @@ var i = n(120356),
   f = n(584825),
   p = n(570533),
   g = n(629262),
-  h = n(575460),
-  v = n(293810),
+  v = n(575460),
+  h = n(293810),
   b = n(388032),
   y = n(506222);
-let j = e => {
+let x = e => {
     let {
       onClose: t,
       listing: n,
       step: i,
       guildId: o
-    } = e, s = (0, f.YB)(o), u = (0, c.Z)(v.Xy), m = (() => {
+    } = e, s = (0, f.YB)(o), u = (0, c.Z)(h.Xy), m = (() => {
       var e;
       if (u) return null;
       let t = (null == s || null == (e = s.cover_image_asset) ? void 0 : e.application_id) != null ? (0, _._W)(s.cover_image_asset.application_id, s.cover_image_asset, 440) : void 0;
@@ -67,7 +67,7 @@ let j = e => {
       })]
     })
   },
-  x = e => {
+  j = e => {
     let {
       onClose: t,
       listing: n,
@@ -97,7 +97,7 @@ let j = e => {
           children: b.intl.string(b.t.w0CQ09)
         }), (0, r.jsx)("div", {
           className: y.confirmationBenefits,
-          children: _.map(e => (0, r.jsx)(h.Z, {
+          children: _.map(e => (0, r.jsx)(v.Z, {
             benefit: e,
             guildId: i,
             onClick: () => t(!0)

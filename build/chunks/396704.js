@@ -1,20 +1,24 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  V: () => l
+  J: () => s,
+  V: () => c
 }), n(388685), n(415506);
-var r = n(898517),
+var r = n(308521),
   i = n(381814),
   a = n(570833),
-  o = n(493773);
-let s = (0, i.U)(() => ({
+  o = n(493773),
+  s = function(e) {
+    return e.Loading = "loading", e.Loaded = "loaded", e
+  }({});
+let l = (0, i.U)(() => ({
   riveAssetCache: new Map
 }));
 
-function l(e) {
-  let t = s(t => t.riveAssetCache.get(e));
+function c(e) {
+  let t = l(t => t.riveAssetCache.get(e));
   return (0, o.ZP)(() => {
-    if (s.getState().riveAssetCache.has(e)) return;
+    if (l.getState().riveAssetCache.has(e)) return;
     let t = new r.RiveFile({
         src: e
       }),
@@ -24,7 +28,7 @@ function l(e) {
             status: "loaded",
             buffer: t.buffer
           };
-          s.setState(t => ({
+          l.setState(t => ({
             riveAssetCache: t.riveAssetCache.set(e, n)
           }))
         }), t.on(r.EventType.LoadError, t => {

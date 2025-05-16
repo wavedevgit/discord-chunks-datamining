@@ -67,7 +67,7 @@ function v() {
       text: "Testing",
       iconPosition: "end",
       icon: d.XHJ
-    }), (0, i.jsx)(Z, {}), (0, i.jsx)(U, {}), (0, i.jsx)(V, {}), (0, i.jsx)(B, {}), (0, i.jsx)(L, {}), (0, i.jsx)(k, {}), (0, i.jsx)(w, {}), (0, i.jsx)(F, {}), (0, i.jsx)(T, {}), (0, i.jsx)(H, {})]
+    }), (0, i.jsx)(Z, {}), (0, i.jsx)(V, {}), (0, i.jsx)(G, {}), (0, i.jsx)(M, {}), (0, i.jsx)(B, {}), (0, i.jsx)(L, {}), (0, i.jsx)(k, {}), (0, i.jsx)(H, {}), (0, i.jsx)(T, {}), (0, i.jsx)(z, {})]
   })
 }
 
@@ -345,11 +345,24 @@ function Z() {
         size: d.zxk.Sizes.LARGE,
         children: "Large"
       })
-    }), (0, i.jsx)(M, {})]
+    }), (0, i.jsx)(U, {}), (0, i.jsx)(w, {})]
   })
 }
 
 function w() {
+  return (0, i.jsx)("div", {
+    style: {
+      display: "flex",
+      gap: 16
+    },
+    children: (0, i.jsx)(c.z, {
+      variant: "expressive",
+      text: "Expressive button"
+    })
+  })
+}
+
+function k() {
   let [e, t] = r.useState("1");
   return (0, i.jsxs)("div", {
     className: x.section,
@@ -379,7 +392,7 @@ function w() {
   })
 }
 
-function k() {
+function L() {
   let [e, t] = r.useState(1), [n, s] = r.useState(!1), [l, a] = r.useState(5), [o, c] = r.useState(!1), u = r.useRef(null);
   return (0, i.jsxs)("div", {
     className: x.section,
@@ -472,7 +485,7 @@ function k() {
   })
 }
 
-function L() {
+function B() {
   return (0, i.jsxs)("div", {
     className: x.section,
     children: [(0, i.jsx)(d.X6q, {
@@ -513,7 +526,7 @@ function L() {
   })
 }
 
-function B() {
+function M() {
   let [e, t] = r.useState(!1), [n, s] = r.useState(!1), [l, a] = r.useState("auto");
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)("div", {
@@ -669,7 +682,7 @@ function B() {
   })
 }
 
-function M() {
+function U() {
   return (0, i.jsxs)("div", {
     className: x.shinyButtonExamples,
     children: [(0, i.jsx)(d.gtL, {
@@ -687,7 +700,7 @@ function M() {
   })
 }
 
-function U() {
+function V() {
   let [e, t] = r.useState(null), [n, s] = r.useState(null), [l, o] = r.useState([]), [c, u] = r.useState([]), [g, m] = r.useState([]);
   return (0, i.jsxs)("div", {
     className: x.searchableSelectExamples,
@@ -741,7 +754,7 @@ function U() {
   })
 }
 
-function V() {
+function G() {
   let [e, t] = r.useState(""), [n, s] = r.useState(""), [l, a] = r.useState("");
   return (0, i.jsxs)("div", {
     className: x.section,
@@ -800,7 +813,7 @@ function V() {
   })
 }
 
-function G(e) {
+function F(e) {
   let {
     transitionState: t
   } = e, [n, s] = r.useState(!1), [l, a] = r.useState(d.CgR.SMALL), [o, c] = r.useState(!1), u = n ? x.modalOutlines : "";
@@ -870,7 +883,7 @@ function G(e) {
   })
 }
 
-function F() {
+function H() {
   return (0, i.jsxs)("div", {
     className: x.section,
     children: [(0, i.jsx)(d.X6q, {
@@ -878,7 +891,7 @@ function F() {
       children: "Modals"
     }), (0, i.jsx)(d.zxk, {
       onClick: () => {
-        (0, d.h7j)(e => (0, i.jsx)(G, E({}, e)))
+        (0, d.h7j)(e => (0, i.jsx)(F, E({}, e)))
       },
       children: "Open modal"
     }), (0, i.jsx)(d.zxk, {
@@ -895,7 +908,7 @@ function F() {
   })
 }
 
-function H() {
+function z() {
   let e = (0, o.e7)([g.Z], () => g.Z.gradientPreset);
   return (0, i.jsx)(d.f6W, {
     theme: _.BR.DARKER,

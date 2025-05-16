@@ -1,6 +1,6 @@
 /**
   Module ID: 34600
-  Original File Name: 8ee16a1c59bc3fc9
+  Original File Name: a024bf623864af7e
 **/
 :root {
     --application-subscription-end: hotpink;
@@ -3502,6 +3502,7 @@
     --header-primary: #f2f2f5;
     --header-secondary: #b5bac2;
     --home-background: #29292e;
+    --icon-invert: #2e3036;
     --icon-muted: #80858f;
     --icon-primary: #f2f2f5;
     --icon-secondary: #b5bac2;
@@ -3650,6 +3651,7 @@
     --status-warning-text: #000;
     --text-brand: #949cf7;
     --text-danger: #fa787a;
+    --text-invert: #2e3036;
     --text-link: #00abfc;
     --text-link-low-saturation: #2eb5ff;
     --text-low-contrast: #949ca3;
@@ -3866,6 +3868,7 @@
     --header-primary: #060607;
     --header-secondary: #4f4f59;
     --home-background: #fafafa;
+    --icon-invert: #fff;
     --icon-muted: #80858f;
     --icon-primary: #060607;
     --icon-secondary: #4f4f59;
@@ -4014,6 +4017,7 @@
     --status-warning-text: #fff;
     --text-brand: #5966f2;
     --text-danger: #a12929;
+    --text-invert: #fff;
     --text-link: #006be8;
     --text-link-low-saturation: #006be8;
     --text-low-contrast: #5c5e66;
@@ -4230,6 +4234,7 @@
     --header-primary: #ededf0;
     --header-secondary: #a8abb5;
     --home-background: #26262e;
+    --icon-invert: #2e3036;
     --icon-muted: #5c5e6b;
     --icon-primary: #d4d6d9;
     --icon-secondary: #9496a3;
@@ -4378,6 +4383,7 @@
     --status-warning-text: #000;
     --text-brand: #7885f5;
     --text-danger: #fa787a;
+    --text-invert: #2e3036;
     --text-link: #00abfc;
     --text-link-low-saturation: #2eb5ff;
     --text-low-contrast: #5c5e6b;
@@ -4594,6 +4600,7 @@
     --header-primary: #e3e6e8;
     --header-secondary: #9496a3;
     --home-background: #26262e;
+    --icon-invert: #2e3036;
     --icon-muted: #6b707d;
     --icon-primary: #dedee0;
     --icon-secondary: #9496a3;
@@ -4742,6 +4749,7 @@
     --status-warning-text: #000;
     --text-brand: #949cf7;
     --text-danger: #fa787a;
+    --text-invert: #2e3036;
     --text-link: #00abfc;
     --text-link-low-saturation: #2eb5ff;
     --text-low-contrast: #6b707d;
@@ -4769,4 +4777,4 @@
     --white: #fff
 }
 
-/*# sourceMappingURL=8ee16a1c59bc3fc9.css.map*/
+/*# sourceMappingURL=a024bf623864af7e.css.map*/
