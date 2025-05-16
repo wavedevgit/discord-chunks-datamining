@@ -40,34 +40,31 @@ async function m(e) {
     joinRequestId: u,
     section: p,
     subsection: m,
-    friendToken: g,
-    showGuildProfile: E,
-    hideRestrictedProfile: b,
-    sourceAnalyticsLocations: y,
-    appContext: O,
-    customStatusPrompt: v = null
-  } = e, I = c.default.getUser(t);
+    showGuildProfile: g,
+    hideRestrictedProfile: E,
+    sourceAnalyticsLocations: b,
+    appContext: y,
+    customStatusPrompt: O = null
+  } = e, v = c.default.getUser(t);
   h(t);
   let {
-    withMutualFriendsCount: S
+    withMutualFriendsCount: I
   } = (0, d.R)({
     location: "openUserProfileModal"
   });
-  null == I ? await (0, o.In)(t, {
+  null == v ? await (0, o.In)(t, {
     type: "modal",
-    guildId: E && null != n ? n : void 0,
-    withMutualFriendsCount: S,
-    withMutualFriends: !S,
+    guildId: g && null != n ? n : void 0,
+    withMutualFriendsCount: I,
+    withMutualFriends: !I,
     withMutualGuilds: !0,
-    friendToken: g,
     joinRequestId: u
-  }) : (0, f.Z)(I.id, I.getAvatarURL(void 0, _), {
+  }) : (0, f.Z)(v.id, v.getAvatarURL(void 0, _), {
     type: "modal",
-    guildId: E && null != n ? n : void 0,
-    withMutualFriendsCount: !I.bot && S,
-    withMutualFriends: !I.bot && !S,
+    guildId: g && null != n ? n : void 0,
+    withMutualFriendsCount: !v.bot && I,
+    withMutualFriends: !v.bot && !I,
     withMutualGuilds: !0,
-    friendToken: g,
     joinRequestId: u
   }), a.Z.dispatch({
     type: "USER_PROFILE_MODAL_OPEN",
@@ -78,14 +75,13 @@ async function m(e) {
     roleId: null != s ? s : void 0,
     sessionId: null != l ? l : void 0,
     openedAt: Date.now(),
-    customStatusPrompt: v,
+    customStatusPrompt: O,
     section: p,
     subsection: m,
-    friendToken: g,
-    showGuildProfile: E,
-    hideRestrictedProfile: b,
-    sourceAnalyticsLocations: y,
-    appContext: O
+    showGuildProfile: g,
+    hideRestrictedProfile: E,
+    sourceAnalyticsLocations: b,
+    appContext: y
   })
 }
 

@@ -250,16 +250,12 @@ let tl = [{
   path: [e3.Z5c.USERS(":id")],
   render: function(e) {
     let {
-      match: t,
-      location: n
+      match: t
     } = e, {
-      friend_token: i
-    } = (0, l.parse)(n.search), {
-      id: o
+      id: n
     } = t.params;
     return (0, q.h)(() => (0, ex.openUserProfileModal)({
-      userId: o,
-      friendToken: i,
+      userId: n,
       sourceAnalyticsLocations: [T.Z.URI_SCHEME]
     })), (0, r.jsx)(a.l_, {
       to: eV.Z.defaultRoute

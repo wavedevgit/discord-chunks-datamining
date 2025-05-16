@@ -23,48 +23,46 @@ function m(e) {
     guildId: n,
     channelId: a,
     applicationId: m,
-    friendToken: g,
-    isGameRelationship: E = !1,
-    className: b
-  } = e, y = f.ZP.getName(n, a, t), {
-    trackUserProfileAction: O
+    isGameRelationship: g = !1,
+    className: E
+  } = e, b = f.ZP.getName(n, a, t), {
+    trackUserProfileAction: y
   } = (0, _.KZ)(), {
-    newestAnalyticsLocation: v
+    newestAnalyticsLocation: O
   } = (0, l.ZP)(), {
-    acceptFriendRequest: I,
-    cancelFriendRequest: S
+    acceptFriendRequest: v,
+    cancelFriendRequest: I
   } = (0, d.u)({
     userId: t.id,
     applicationId: m,
-    isGameRelationship: E,
-    location: v,
-    friendToken: g
-  }), T = i.useCallback(() => {
-    I(), O({
-      action: E ? "ACCEPT_GAME_FRIEND_REQUEST" : "ACCEPT_FRIEND_REQUEST"
+    isGameRelationship: g,
+    location: O
+  }), S = i.useCallback(() => {
+    v(), y({
+      action: g ? "ACCEPT_GAME_FRIEND_REQUEST" : "ACCEPT_FRIEND_REQUEST"
     })
-  }, [I, E, O]), A = i.useCallback(() => {
-    S(), O({
-      action: E ? "IGNORE_GAME_FRIEND_REQUEST" : "IGNORE_FRIEND_REQUEST"
+  }, [v, g, y]), T = i.useCallback(() => {
+    I(), y({
+      action: g ? "IGNORE_GAME_FRIEND_REQUEST" : "IGNORE_FRIEND_REQUEST"
     })
-  }, [S, E, O]), N = null != m, C = (0, c.q)(m);
-  return N && null == C ? null : (0, r.jsxs)("div", {
-    className: o()(h.container, b),
-    children: [N ? (0, r.jsx)(s.Text, {
+  }, [I, g, y]), A = null != m, N = (0, c.q)(m);
+  return A && null == N ? null : (0, r.jsxs)("div", {
+    className: o()(h.container, E),
+    children: [A ? (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
-      children: p.intl.format(E ? p.t.syHjLC : p.t.V15uUF, {
-        username: y,
+      children: p.intl.format(g ? p.t.syHjLC : p.t.V15uUF, {
+        username: b,
         applicationIcon: () => (0, r.jsx)(u.Z, {
           className: h.gameIcon,
-          game: C,
+          game: N,
           size: u.Z.Sizes.XXSMALL
-        }, null == C ? void 0 : C.id),
-        applicationName: null == C ? void 0 : C.name
+        }, null == N ? void 0 : N.id),
+        applicationName: null == N ? void 0 : N.name
       })
     }) : (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       children: p.intl.format(p.t.uIomX1, {
-        username: y
+        username: b
       })
     }), (0, r.jsxs)("div", {
       className: h.buttonContainer,
@@ -73,14 +71,14 @@ function m(e) {
         color: o()(s.zxk.Colors.BRAND, h.color),
         size: s.zxk.Sizes.SMALL,
         className: h.button,
-        onClick: T,
+        onClick: S,
         children: p.intl.string(p.t.ZcibdX)
       }), (0, r.jsx)(s.zxk, {
         look: s.zxk.Looks.FILLED,
         color: s.zxk.Colors.PRIMARY,
         size: s.zxk.Sizes.SMALL,
         className: h.button,
-        onClick: A,
+        onClick: T,
         children: p.intl.string(p.t.xuio0N)
       })]
     })]

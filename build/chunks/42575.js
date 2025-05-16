@@ -31,7 +31,6 @@ function g(e) {
         location: "Friends"
       },
       type: void 0,
-      friendToken: void 0,
       fromFriendSuggestion: !0
     })
   }, E = e => {

@@ -65,35 +65,33 @@ async function g(e) {
       subsection: d,
       guildId: p,
       channelId: g,
-      friendToken: E,
-      showGuildProfile: b = !0,
-      appContext: y,
-      customStatusPrompt: O
+      showGuildProfile: E = !0,
+      appContext: b,
+      customStatusPrompt: y
     } = e,
-    v = _(e, ["userId", "section", "subsection", "guildId", "channelId", "friendToken", "showGuildProfile", "appContext", "customStatusPrompt"]);
-  let I = l.default.getUser(a);
-  if (null == I) return;
-  let S = l.default.getCurrentUser();
-  null != S && (h = await (0, i.ZDy)(async () => {
+    O = _(e, ["userId", "section", "subsection", "guildId", "channelId", "showGuildProfile", "appContext", "customStatusPrompt"]);
+  let v = l.default.getUser(a);
+  if (null == v) return;
+  let I = l.default.getCurrentUser();
+  null != I && (h = await (0, i.ZDy)(async () => {
     let {
       default: e
     } = (0, c.q)({
       location: "UserProfileModalManager"
     }) ? await Promise.all([n.e("1268"), n.e("82412"), n.e("62880"), n.e("84471"), n.e("44784")]).then(n.bind(n, 866035)): await Promise.all([n.e("1268"), n.e("82412"), n.e("62880"), n.e("84471"), n.e("65326")]).then(n.bind(n, 678780));
     return t => (0, r.jsx)(e, f({
-      user: I,
-      currentUser: S,
+      user: v,
+      currentUser: I,
       guildId: p,
-      friendToken: E,
       initialSection: o,
       initialSubsection: d,
       channelId: g,
-      showGuildProfile: b,
-      customStatusPrompt: O
-    }, t, v))
+      showGuildProfile: E,
+      customStatusPrompt: y
+    }, t, O))
   }, {
-    modalKey: m(a, b ? p : void 0),
-    contextKey: (0, i.VnL)(null != (t = null != y ? y : (0, s.GB)()) ? t : u.IlC.APP)
+    modalKey: m(a, E ? p : void 0),
+    contextKey: (0, i.VnL)(null != (t = null != b ? b : (0, s.GB)()) ? t : u.IlC.APP)
   }))
 }
 

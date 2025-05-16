@@ -20,24 +20,23 @@ function p(e) {
     currentUser: t,
     guildId: p,
     relationshipType: m,
-    friendToken: b,
-    onClose: _
+    onClose: b
   } = e, {
-    newestAnalyticsLocation: y
+    newestAnalyticsLocation: _
   } = (0, c.ZP)(), {
-    gameFriends: g,
-    hasOutgoingPendingGameFriends: h,
-    hasIncomingPendingGameFriends: x
+    gameFriends: y,
+    hasOutgoingPendingGameFriends: g,
+    hasIncomingPendingGameFriends: h
   } = (0, u.H)({
     userId: n.id
-  }), j = g.length > 0 || h || x;
+  }), x = y.length > 0 || g || h;
   return m === f.OGo.BLOCKED ? null : n.id === t.id ? (0, o.jsxs)(o.Fragment, {
     children: [(0, o.jsx)(i.Z, {
       user: n,
       guildId: p,
-      onClose: _
+      onClose: b
     }), (0, o.jsx)(s.Z, {
-      onClose: _
+      onClose: b
     }), (0, o.jsx)(l.Z, {
       type: "icon",
       user: n,
@@ -48,7 +47,7 @@ function p(e) {
     children: [(0, o.jsx)(a.Z, {
       type: "text",
       userId: n.id,
-      onClose: _,
+      onClose: b,
       autoFocus: !0
     }), (0, o.jsx)(l.Z, {
       type: "icon",
@@ -61,7 +60,7 @@ function p(e) {
       type: "text",
       userId: n.id,
       color: r.zxk.Colors.BRAND,
-      onClose: _,
+      onClose: b,
       autoFocus: !0
     }), (0, o.jsx)(d.g, {
       type: "icon",
@@ -69,28 +68,28 @@ function p(e) {
       relationshipType: m,
       shouldShowTooltip: !0,
       themeColor: "secondary",
-      analyticsLocation: y
+      analyticsLocation: _
     }), (0, o.jsx)(l.Z, {
       type: "icon",
       user: n,
       guildId: p,
       themeColor: "secondary"
     })]
-  }) : m === f.OGo.NONE && j ? (0, o.jsxs)(o.Fragment, {
+  }) : m === f.OGo.NONE && x ? (0, o.jsxs)(o.Fragment, {
     children: [(0, o.jsx)(a.Z, {
       type: "text",
       userId: n.id,
-      onClose: _,
+      onClose: b,
       autoFocus: !0
     }), (0, o.jsx)(d.k9, {
       type: "icon",
       user: n,
-      analyticsLocation: y,
+      analyticsLocation: _,
       themeColor: "secondary",
-      gameFriends: g,
+      gameFriends: y,
       shouldShowTooltip: !0,
-      hasIncomingPendingGameFriends: x,
-      hasOutgoingPendingGameFriends: h
+      hasIncomingPendingGameFriends: h,
+      hasOutgoingPendingGameFriends: g
     }), (0, o.jsx)(l.Z, {
       type: "icon",
       user: n,
@@ -101,14 +100,13 @@ function p(e) {
     children: [(0, o.jsx)(d.Z7, {
       type: "text",
       userId: n.id,
-      friendToken: b,
-      analyticsLocation: y,
+      analyticsLocation: _,
       color: r.zxk.Colors.BRAND,
       autoFocus: !0
     }), (0, o.jsx)(a.Z, {
       type: "icon",
       userId: n.id,
-      onClose: _,
+      onClose: b,
       themeColor: "secondary"
     }), (0, o.jsx)(l.Z, {
       type: "icon",

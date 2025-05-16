@@ -32,15 +32,14 @@ function g(e) {
     displayProfile: v,
     initialSection: A,
     initialSubsection: Z,
-    friendToken: N,
-    onClose: P
+    onClose: N
   } = e, {
-    relationshipType: T,
+    relationshipType: P,
     originApplicationId: C
   } = (0, c.cj)([r.Z], () => ({
     relationshipType: r.Z.getRelationshipType(t.id),
     originApplicationId: r.Z.getOriginApplicationId(t.id)
-  })), w = (0, i.vh)(t.id), S = t.id === g.id, E = (0, d.I5)(g), M = a.ZP.useName(null == v ? void 0 : v.guildId, O, t), k = (0, I.Z)({
+  })), T = (0, i.vh)(t.id), w = t.id === g.id, S = (0, d.I5)(g), E = a.ZP.useName(null == v ? void 0 : v.guildId, O, t), M = (0, I.Z)({
     user: t,
     currentUser: g,
     guildId: j,
@@ -51,7 +50,7 @@ function g(e) {
     children: [(0, o.jsx)(b.Z, {
       className: x.username,
       user: t,
-      nickname: M,
+      nickname: E,
       pronouns: null == v ? void 0 : v.pronouns,
       nicknameVariant: "heading-xl/bold",
       nicknameIcons: (0, o.jsx)(u.Z, {
@@ -60,19 +59,18 @@ function g(e) {
       tags: (0, o.jsx)(l.Z, {
         displayProfile: v,
         themeType: y.lY.MODAL,
-        onClose: P
+        onClose: N
       })
-    }), T === h.OGo.PENDING_INCOMING && (0, o.jsx)(p.Z.Overlay, {
+    }), P === h.OGo.PENDING_INCOMING && (0, o.jsx)(p.Z.Overlay, {
       className: x.bannerContainer,
       children: (0, o.jsx)(f.Z, {
         user: t,
         applicationId: C,
         guildId: null != (n = null == v ? void 0 : v.guildId) ? n : void 0,
         channelId: O,
-        friendToken: N,
         className: x.friendRequestBanner
       })
-    }), w.map(e => (0, o.jsx)(p.Z.Overlay, {
+    }), T.map(e => (0, o.jsx)(p.Z.Overlay, {
       className: x.bannerContainer,
       children: (0, o.jsx)(f.Z, {
         user: t,
@@ -84,20 +82,20 @@ function g(e) {
     }, e.applicationId)), (0, o.jsx)(_.Z, {
       user: t,
       className: x.bannerContainer
-    }), S && (0, o.jsx)(s.Z, {
+    }), w && (0, o.jsx)(s.Z, {
       className: x.bannerContainer,
-      isPremiumUser: E,
-      onInteraction: P
+      isPremiumUser: S,
+      onInteraction: N
     }), (0, o.jsx)(m.Z, {
       user: t,
       currentUser: g,
       displayProfile: v,
       guildId: j,
       channelId: O,
-      items: k,
+      items: M,
       initialSection: A,
       initialSubsection: Z,
-      onClose: P
+      onClose: N
     })]
   })
 }

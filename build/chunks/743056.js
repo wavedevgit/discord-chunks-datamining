@@ -12,10 +12,9 @@ function a(e) {
     applicationId: n,
     isGameRelationship: a,
     location: o,
-    friendToken: s,
-    onConfirm: l,
-    onCancel: c
-  } = e, u = r.useCallback(() => {
+    onConfirm: s,
+    onCancel: l
+  } = e, c = r.useCallback(() => {
     i.Z.cancelFriendRequest({
       userId: t,
       applicationId: a ? n : null,
@@ -28,11 +27,10 @@ function a(e) {
         userId: t,
         applicationId: a ? n : null,
         location: o,
-        friendToken: s,
-        onConfirm: l,
-        onCancel: c
+        onConfirm: s,
+        onCancel: l
       })
-    }, [n, s, a, o, c, l, t]),
-    cancelFriendRequest: u
+    }, [n, a, o, l, s, t]),
+    cancelFriendRequest: c
   }
 }
