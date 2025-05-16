@@ -2,7 +2,7 @@
 "use strict";
 n(65234), n(111804), n(490233), n(97749), n(388685), n(539854), n(190126), n(368063), n(35282), n(203651);
 var r = n(544891),
-  i = n(912471),
+  i = n(857613),
   a = n(569611),
   o = n(547010),
   s = n(580189),
@@ -45,7 +45,7 @@ function b(e) {
     } = n(358085);
     if ("/" === e.url[0]) {
       var f, p;
-      e.url = (0, r.K0)() + e.url, "Authorization" in e.header || "authorization" in e.header || e.set("Authorization", t.getToken()), (0, i.hn)();
+      e.url = (0, r.K0)() + e.url, "Authorization" in e.header || "authorization" in e.header || e.set("Authorization", t.getToken()), (0, i.c)();
       let n = c.getSuperPropertiesBase64();
       null != n && e.set("X-Super-Properties", n);
       let a = t.getFingerprint();
