@@ -56,7 +56,7 @@ function R(e) {
     {
       analyticsLocations: U
     } = (0, u.ZP)(),
-    F = (0, d.Oo)(),
+    F = (0, d.iU)(),
     B = (0, l.e7)([x.Z], () => (null == k ? void 0 : k.guild) != null ? x.Z.getGuild(k.guild.id) : null, [k]),
     G = (0, l.e7)([b.default], () => b.default.getId()),
     H = (0, l.e7)([m.ZP], () => {
@@ -171,7 +171,8 @@ function R(e) {
             onAcceptInstantInvite: z,
             isMemberOfGuild: null != B,
             invite: M,
-            message: n
+            message: n,
+            currentUserId: G
           }))
       }
   }

@@ -1,6 +1,6 @@
 /**
   Module ID: 36087
-  Original File Name: 0f0d7a5fc6d9eb0e
+  Original File Name: 9ccea705faf97833
 **/
 .descriptionText__535f5 {
     color: var(--header-secondary);
@@ -6442,7 +6442,7 @@ html .progress__61462 {
 }
 
 .cardHeightMeasure__083ae .banner__083ae {
-    height: 80px
+    height: 72px
 }
 
 .mainContent__083ae {
@@ -6472,21 +6472,30 @@ html .progress__61462 {
     background: var(--background-secondary)
 }
 
-.separator__083ae {
-    background-color: var(--border-subtle);
-    height: 1px
+.collapsedFooterContent__083ae {
+    padding-top: 8px
 }
 
 .buttonContainer__083ae {
-    padding: 16px
-}
-
-.hideDetailsButton__083ae {
-    margin-top: -8px
+    padding: 0 16px 16px
 }
 
 .hideDetailsButtonInner__083ae {
     margin: 0
+}
+
+.inviteTitleWrapper__083ae {
+    white-space: nowrap;
+    width: 100%
+}
+
+.inviteTitle__083ae,.inviteTitleWrapper__083ae {
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.inviteTitle__083ae {
+    padding: 8px 12px
 }
 
 .flex__708d1 {
@@ -11666,4 +11675,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=0f0d7a5fc6d9eb0e.css.map*/
+/*# sourceMappingURL=9ccea705faf97833.css.map*/

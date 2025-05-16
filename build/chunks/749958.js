@@ -1,26 +1,67 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Oo: () => a
+  iU: () => s,
+  n2: () => o
 });
 var r = n(818083);
 let i = (0, r.B)({
-  kind: "user",
-  id: "2025-03_guild_profile_invite_embed",
-  label: "Enables invite embeds using new guild profile components",
-  defaultConfig: {
-    enabled: !1
-  },
-  treatments: [{
-    id: 1,
-    label: "new embeds enabled",
-    config: {
-      enabled: !0
-    }
-  }]
-});
+    kind: "user",
+    id: "2025-03_guild_profile_invite_embed",
+    label: "Enables invite embeds using new guild profile components",
+    defaultConfig: {
+      enabled: !1
+    },
+    treatments: [{
+      id: 1,
+      label: "new embeds enabled",
+      config: {
+        enabled: !0
+      }
+    }]
+  }),
+  a = (0, r.B)({
+    kind: "user",
+    id: "2025-05_guild_profile_invite_embed_iterations",
+    label: "Enables iterations to guild profile invite embeds",
+    defaultConfig: {
+      updateCopy: !1,
+      updateButton: !1
+    },
+    treatments: [{
+      id: 1,
+      label: "new copy only",
+      config: {
+        updateCopy: !0,
+        updateButton: !1
+      }
+    }, {
+      id: 2,
+      label: "new button only",
+      config: {
+        updateCopy: !1,
+        updateButton: !0
+      }
+    }, {
+      id: 3,
+      label: "new copy and button",
+      config: {
+        updateCopy: !0,
+        updateButton: !0
+      }
+    }]
+  });
 
-function a() {
+function o() {
+  let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
+  return a.useExperiment({
+    location: "GuildProfileEmbedExperiment"
+  }, {
+    autoTrackExposure: e
+  })
+}
+
+function s() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
     {
       enabled: t
@@ -28,36 +69,14 @@ function a() {
       location: "GuildProfileEmbedExperiment"
     }, {
       autoTrackExposure: e
+    }),
+    {
+      updateButton: n,
+      updateCopy: r
+    } = a.useExperiment({
+      location: "GuildProfileEmbedExperiment"
+    }, {
+      autoTrackExposure: e
     });
-  return t
-}(0, r.B)({
-  kind: "user",
-  id: "2025-05_guild_profile_invite_embed_iterations",
-  label: "Enables iterations to guild profile invite embeds",
-  defaultConfig: {
-    updateCopy: !1,
-    updateButton: !1
-  },
-  treatments: [{
-    id: 1,
-    label: "new copy only",
-    config: {
-      updateCopy: !0,
-      updateButton: !1
-    }
-  }, {
-    id: 2,
-    label: "new button only",
-    config: {
-      updateCopy: !1,
-      updateButton: !0
-    }
-  }, {
-    id: 3,
-    label: "new copy and button",
-    config: {
-      updateCopy: !0,
-      updateButton: !0
-    }
-  }]
-})
+  return t || n || r
+}
