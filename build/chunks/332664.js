@@ -44,22 +44,22 @@ function E(e) {
     problemTitle: h,
     problems: E,
     transitionState: S,
-    ratingOptions: D,
-    ratingEmojiKind: k,
-    ratingTextLabels: P,
+    ratingOptions: k,
+    ratingEmojiKind: P,
+    ratingTextLabels: D,
     freeformNeededProblems: N = [],
-    otherKey: Z,
-    hideDontShowAgainCheckbox: C,
-    startRating: L = null,
-    hideHelpDeskLink: R = !1,
+    otherKey: C,
+    hideDontShowAgainCheckbox: Z,
+    startRating: R = null,
+    hideHelpDeskLink: L = !1,
     onSubmit: I,
     onClose: A,
-    impression: B,
+    impression: F,
     freeformDescription: T
-  } = e, F = (0, d.Z)(E), [M, U] = i.useState(!1), [z, V] = i.useState(L), [G, H] = i.useState(null), [K, J] = i.useState(s().shuffle(E)), [X, W] = i.useState(""), q = (0, p.Dt)(), Y = (0, m.Z)(z), Q = (0, m.Z)(M), $ = (0, m.Z)(G), ee = (0, m.Z)(I), et = (0, m.Z)(X), en = null;
-  return null == z ? en = "RATING" : z !== v.aZ.GOOD && null == G ? en = "PROBLEM" : null != G && N.includes(G.value) && (en = "FREEFORM"), i.useEffect(() => {
-    s().isEqual(F, E) || J((0, O.B)(E, Z))
-  }, [E, F, Z]), (0, u.ZP)(() => (f.default.track(y.rMx.OPEN_MODAL, {
+  } = e, B = (0, d.Z)(E), [M, U] = i.useState(!1), [z, V] = i.useState(R), [H, G] = i.useState(null), [K, J] = i.useState(s().shuffle(E)), [X, W] = i.useState(""), q = (0, p.Dt)(), Y = (0, m.Z)(z), Q = (0, m.Z)(M), $ = (0, m.Z)(H), ee = (0, m.Z)(I), et = (0, m.Z)(X), en = null;
+  return null == z ? en = "RATING" : z !== v.aZ.GOOD && null == H ? en = "PROBLEM" : null != H && N.includes(H.value) && (en = "FREEFORM"), i.useEffect(() => {
+    s().isEqual(B, E) || J((0, O.B)(E, C))
+  }, [E, B, C]), (0, u.ZP)(() => (f.default.track(y.rMx.OPEN_MODAL, {
     type: n,
     source: "Feedback Modal"
   }), () => {
@@ -70,7 +70,7 @@ function E(e) {
       feedback: et.current
     })
   })), (0, o.jsxs)(c.Y0X, {
-    impression: B,
+    impression: F,
     transitionState: S,
     className: j.modalRoot,
     "aria-labelledby": q,
@@ -88,12 +88,12 @@ function E(e) {
         className: j.ratingBody,
         children: l
       })]
-    }), ("RATING" === en || "PROBLEM" === en && null == P) && (0, o.jsx)(c.xJW, {
+    }), ("RATING" === en || "PROBLEM" === en && null == D) && (0, o.jsx)(c.xJW, {
       className: a()(j.problemInfo, j.ratingSelectorContainer),
       children: (0, o.jsx)(g.Z, {
-        ratingOptions: D,
-        emojiKind: k,
-        textLabels: P,
+        ratingOptions: k,
+        emojiKind: P,
+        textLabels: D,
         selectedRating: z,
         onChangeRating: function(e) {
           V(e), e === v.aZ.GOOD && A()
@@ -104,12 +104,12 @@ function E(e) {
       children: (0, o.jsx)(c.xJW, {
         title: h,
         className: a()(j.problemInfo, j.presetList, {
-          [j.marginBottom16]: C
+          [j.marginBottom16]: Z
         }),
         children: (0, o.jsx)(_.Z, {
           options: K,
           onClick: function(e) {
-            H(e), N.includes(e.value) || A()
+            G(e), N.includes(e.value) || A()
           },
           hideCaret: e => {
             let {
@@ -122,15 +122,15 @@ function E(e) {
     }), "FREEFORM" === en && (0, o.jsx)(c.hzk, {
       className: j.__invalid_content,
       children: (0, o.jsxs)(c.xJW, {
-        title: null != (t = null == T ? void 0 : T(G)) ? t : x.intl.string(x.t.h95hcn),
+        title: null != (t = null == T ? void 0 : T(H)) ? t : x.intl.string(x.t.h95hcn),
         className: j.problemInfo,
         children: [(0, o.jsx)(c.Kx8, {
           value: X,
           maxLength: v.iF,
           onChange: W
-        }), !R && (0, o.jsx)(w, {})]
+        }), !L && (0, o.jsx)(w, {})]
       })
-    }), "RATING" === en && !C && (0, o.jsx)(c.mzw, {
+    }), "RATING" === en && !Z && (0, o.jsx)(c.mzw, {
       className: j.footer,
       direction: b.Z.Direction.HORIZONTAL,
       children: (0, o.jsx)(c.XZJ, {
@@ -143,7 +143,7 @@ function E(e) {
           children: x.intl.string(x.t["5E9SBw"])
         })
       })
-    }), ("FREEFORM" === en || "PROBLEM" === en && null != P) && (0, o.jsxs)(c.mzw, {
+    }), ("FREEFORM" === en || "PROBLEM" === en && null != D) && (0, o.jsxs)(c.mzw, {
       className: j.footer,
       direction: b.Z.Direction.HORIZONTAL,
       children: [(0, o.jsx)(c.zxk, {
@@ -151,7 +151,7 @@ function E(e) {
         look: c.zxk.Looks.LINK,
         color: c.zxk.Colors.PRIMARY,
         onClick: () => {
-          "FREEFORM" === en ? (H(null), W("")) : V(null)
+          "FREEFORM" === en ? (G(null), W("")) : V(null)
         },
         children: x.intl.string(x.t["13/7kZ"])
       }), (0, o.jsx)(c.zxk, {
