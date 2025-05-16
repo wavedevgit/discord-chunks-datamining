@@ -12,8 +12,8 @@ var r = n(442837),
   c = n(131951),
   d = n(358085),
   u = n(726985),
-  m = n(388032),
-  g = n(20493);
+  g = n(388032),
+  m = n(20493);
 
 function p(e) {
   (0, d.isMac)() && e ? (0, s.ZDy)(async () => {
@@ -44,12 +44,12 @@ function p(e) {
           l.Z.setUseSystemScreensharePicker(e), a.Z.app.relaunch()
         },
         confirmButtonColor: s.zxk.Colors.BRAND,
-        header: m.intl.string(m.t["9jf31N"]),
-        cancelText: m.intl.string(m.t["ETE/oK"]),
-        confirmText: m.intl.string(m.t.BddRzc),
+        header: g.intl.string(g.t["9jf31N"]),
+        cancelText: g.intl.string(g.t["ETE/oK"]),
+        confirmText: g.intl.string(g.t.BddRzc),
         children: (0, i.jsx)(s.Text, {
           variant: "text-md/normal",
-          children: m.intl.string(m.t.uBd6JS)
+          children: g.intl.string(g.t.uBd6JS)
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
         var n = Object.keys(e);
@@ -82,9 +82,9 @@ function h(e) {
       children: (0, i.jsx)(s.j7V, {
         value: n,
         onChange: e => l.Z.setVideoHook(e),
-        note: m.intl.string(m.t["Fj/xn5"]),
+        note: g.intl.string(g.t["Fj/xn5"]),
         hideBorder: t,
-        children: m.intl.string(m.t.GmWk2N)
+        children: g.intl.string(g.t.GmWk2N)
       })
     }), (0, i.jsx)(o.F, {
       setting: u.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_EXPERIMENTAL_SOUNDSHARE,
@@ -92,7 +92,7 @@ function h(e) {
         value: a,
         onChange: e => l.Z.setExperimentalSoundshare(e),
         hideBorder: t,
-        children: m.intl.string(m.t["4I0qzc"])
+        children: g.intl.string(g.t["4I0qzc"])
       })
     }), (0, i.jsx)(o.F, {
       setting: u.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_SYSTEM_PICKER,
@@ -100,15 +100,15 @@ function h(e) {
         value: d,
         onChange: p,
         hideBorder: t,
-        children: m.intl.string(m.t.ie1mgY)
+        children: g.intl.string(g.t.ie1mgY)
       })
     })]
   });
   return (0, i.jsx)(o.F, {
     setting: u.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE,
     children: t ? h : (0, i.jsx)(s.hjN, {
-      className: g.marginBottom20,
-      title: m.intl.string(m.t.NMCIf3),
+      className: m.marginBottom20,
+      title: g.intl.string(g.t.NMCIf3),
       children: h
     })
   })

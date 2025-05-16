@@ -9,8 +9,8 @@ var i, r, s = n(255367),
   c = n(159635),
   d = n.n(c),
   u = n(663993),
-  m = n(770146),
-  g = n(772096),
+  g = n(770146),
+  m = n(772096),
   p = n(428595),
   h = n(532901),
   f = n(204227),
@@ -59,7 +59,7 @@ let O = E(x({}, d().defaultRules), {
     heading: E(x({}, d().defaultRules.heading), {
       react(e, t, n) {
         let i = "h".concat(e.level);
-        return (0, s.jsx)(m.Z, {
+        return (0, s.jsx)(g.Z, {
           tag: i,
           children: t(e.content, n)
         }, n.key)
@@ -83,7 +83,7 @@ let O = E(x({}, d().defaultRules), {
     del: E(x({}, d().defaultRules.del), {
       order: 6
     }),
-    link: E(x({}, g.ZP, (0, h.Z)({
+    link: E(x({}, m.ZP, (0, h.Z)({
       enableBuildOverrides: !1
     })), {
       order: 6

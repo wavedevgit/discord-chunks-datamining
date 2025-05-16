@@ -17,25 +17,25 @@ function d(e) {
     className: s,
     note: d,
     title: u,
-    disabled: m
-  } = e, g = r.useRef(null), p = r.useRef(null), h = r.useId(), f = (0, i.jsx)(a.rsf, {
+    disabled: g
+  } = e, m = r.useRef(null), p = r.useRef(null), h = r.useId(), f = (0, i.jsx)(a.rsf, {
     id: h,
     checked: t,
     onChange: n,
     focusProps: {
       enabled: !1
     },
-    innerRef: g,
-    disabled: m
+    innerRef: m,
+    disabled: g
   });
   return (0, i.jsx)("div", {
     className: l()(c.container, s, {
-      [c.disabled]: m
+      [c.disabled]: g
     }),
     children: (0, i.jsx)(a.tEY, {
       within: !0,
       offset: -4,
-      focusTarget: g,
+      focusTarget: m,
       ringTarget: p,
       children: (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
@@ -44,7 +44,7 @@ function d(e) {
             header: u,
             description: d,
             relatedId: h,
-            disabled: m
+            disabled: g
           })
         }), (0, i.jsx)("div", {
           className: c.control,

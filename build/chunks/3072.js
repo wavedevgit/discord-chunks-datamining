@@ -1,6 +1,6 @@
 /** Chunk was on 69835 **/
 n.d(t, {
-  eR: () => m,
+  eR: () => g,
   hW: () => b,
   is: () => p
 }), n(388685);
@@ -23,7 +23,7 @@ async function u(e, t) {
   return null == n || null == c ? null : (n.connect(t).connect(c.destination), n.start(), n)
 }
 
-function m(e) {
+function g(e) {
   let t = (0, r.e7)([l.Z], () => l.Z.volume),
     n = (0, r.e7)([l.Z], () => l.Z.isMuted);
   return (0, i.useCallback)(() => {
@@ -32,7 +32,7 @@ function m(e) {
   }, [n, e, t])
 }
 
-function g(e) {
+function m(e) {
   null != e.current && (e.current.stop(), e.current = null)
 }
 
@@ -44,12 +44,12 @@ function p(e, t) {
     d = (0, i.useRef)(!0);
   (0, i.useEffect)(() => {
     (async () => {
-      null != n.current && g(n), !t && null != s.current && (n.current = await u(e, s.current), null != n.current && (n.current.loop = !0), d.current || g(n))
+      null != n.current && m(n), !t && null != s.current && (n.current = await u(e, s.current), null != n.current && (n.current.loop = !0), d.current || m(n))
     })()
   }, [t, e]), (0, i.useEffect)(() => {
     null != s.current && (s.current.gain.value = o ? 0 : a)
   }, [o, a]), (0, i.useEffect)(() => () => {
-    d.current = !1, g(n)
+    d.current = !1, m(n)
   }, [])
 }
 let h = n(956294),
@@ -65,5 +65,5 @@ function b() {
   let t = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
     [n] = (0, a.Z)(o.yN.CURSORS),
     i = null != (e = n.selectedCursor) ? e : o.Vx.DEFAULT;
-  return m(t ? h : f[i])
+  return g(t ? h : f[i])
 }

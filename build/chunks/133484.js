@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(767714),
   d = n(626135),
   u = n(74538),
-  m = n(981631),
-  g = n(474936),
+  g = n(981631),
+  m = n(474936),
   p = n(388032),
   h = n(451740),
   f = n(699623),
@@ -27,9 +27,9 @@ function _(e) {
     analyticsLocations: E
   } = (0, o.ZP)(a.Z.PREMIUM_UPSELL_OVERLAY);
   return (r.useEffect(() => {
-    n && d.default.track(m.rMx.PREMIUM_UPSELL_VIEWED, {
+    n && d.default.track(g.rMx.PREMIUM_UPSELL_VIEWED, {
       location_stack: E,
-      type: g.cd.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_INLINE
+      type: m.cd.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_INLINE
     })
   }, [n, E]), n) ? (0, i.jsxs)("div", {
     className: h.upsellOverlayContainer,
@@ -42,9 +42,9 @@ function _(e) {
         alt: p.intl.string(p.t.LHFZQ0),
         src: function(e) {
           switch (e) {
-            case m.BRd.DARK:
+            case g.BRd.DARK:
               return f;
-            case m.BRd.LIGHT:
+            case g.BRd.LIGHT:
               return b
           }
         }(x)
@@ -65,7 +65,7 @@ function _(e) {
         textOptions: {
           textOverride: u.ZP.isPremium(t) ? p.intl.string(p.t.AfRWIy) : p.intl.string(p.t.nkdUys)
         },
-        subscriptionTier: g.Si.TIER_2
+        subscriptionTier: m.Si.TIER_2
       })]
     })]
   }) : _

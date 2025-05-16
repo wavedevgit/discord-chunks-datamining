@@ -13,8 +13,8 @@ var i = n(255367),
   c = n(605236),
   d = n(703656),
   u = n(664915),
-  m = n(507808),
-  g = n(432792),
+  g = n(507808),
+  m = n(432792),
   p = n(981631),
   h = n(921944),
   f = n(46140),
@@ -38,7 +38,7 @@ function _(e) {
   }
   return e
 }
-let x = e => (0, i.jsx)(g.tE, _({
+let x = e => (0, i.jsx)(m.tE, _({
     titleText: b.intl.string(b.t.KnWRQU),
     descriptionText: b.intl.format(b.t["xYx+WV"], {
       quantity: 200
@@ -53,7 +53,7 @@ let x = e => (0, i.jsx)(g.tE, _({
       onCtaClick: n,
       targetElementRef: a,
       isGuildBarScrolling: c,
-      children: m
+      children: g
     } = e, h = function(e, t) {
       if (null == e) return {};
       var n, i, r = function(e, t) {
@@ -75,7 +75,7 @@ let x = e => (0, i.jsx)(g.tE, _({
       S = (0, o.Q3)("VirtualCurrency: DiscoveryOnboardingCoachmark"),
       v = r.useCallback(e => {
         if (S) {
-          let t = window.innerHeight - ((0, g.t4)() + C.COACHMARK_VERTICAL_OFFSET);
+          let t = window.innerHeight - ((0, m.t4)() + C.COACHMARK_VERTICAL_OFFSET);
           return e.top <= t
         }
         return !0
@@ -94,7 +94,7 @@ let x = e => (0, i.jsx)(g.tE, _({
         let t = Math.floor(e.width / 2) - 2;
         b !== t && j(t)
       }, [b]);
-    return (0, i.jsx)(g.WS, {
+    return (0, i.jsx)(m.WS, {
       positionControlRef: f,
       targetElementRef: a,
       coachmarkRef: O,
@@ -108,7 +108,7 @@ let x = e => (0, i.jsx)(g.tE, _({
         coachmarkRef: O
       }, h)),
       spacing: 8,
-      children: m
+      children: g
     })
   };
 C.COACHMARK_VERTICAL_OFFSET = 10;
@@ -119,13 +119,13 @@ let j = e => {
     scrollToBottom: i
   } = e, s = (0, o.Q3)("VirtualCurrency: DiscoveryOnboardingCoachmark"), l = r.useCallback(() => {
     if (s && null !== n.current) {
-      let e = (0, g.t4)();
+      let e = (0, m.t4)();
       n.current.getBoundingClientRect().bottom > window.innerHeight - e && i()
     }
   }, [s, n, i]), {
     shouldShow: d,
     closeCoachmarkIfOpen: u
-  } = (0, g.M)({
+  } = (0, m.M)({
     onboardingCoachmarkType: "discover",
     onShowCoachmarkHandler: l
   }), b = r.useCallback(function() {
@@ -135,7 +135,7 @@ let j = e => {
       groupName: h.R.VIRTUAL_CURRENCY_ONBOARDING
     }), u(e)
   }, [u]), _ = r.useCallback(() => u("CTA_CLICK"), [u]), x = r.useCallback(() => {
-    b("CTA_CLICK"), (0, m.Y)({
+    b("CTA_CLICK"), (0, g.Y)({
       pageType: p.ZY5.GUILD_LIST,
       sectionType: p.jXE.ORBS_DISCOVERY_ONBOARDING_COACHMARK,
       ctaObject: p.qAy.DISCOVERY_BUTTON_TO_ORB_INTRO_QUEST

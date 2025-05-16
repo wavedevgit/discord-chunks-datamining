@@ -1,6 +1,6 @@
 /** Chunk was on 69835 **/
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var i = n(255367);
 n(73800);
@@ -13,7 +13,7 @@ var r = n(481060),
   d = n(388032),
   u = n(289581);
 
-function m() {
+function g() {
   return (0, i.jsxs)(r.zxk, {
     innerClassName: u.qrCodeButtonContent,
     size: r.zxk.Sizes.LARGE,

@@ -1,6 +1,6 @@
 /** Chunk was on 69835 **/
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var i = n(255367);
 n(73800);
@@ -12,12 +12,12 @@ var r = n(481060),
   c = n(981631),
   d = n(474936),
   u = n(388032),
-  m = n(839058);
-let g = function(e) {
+  g = n(839058);
+let m = function(e) {
   let {
     hasAppliedGuildBoosts: t,
     hasBoostPerk: n,
-    hasGuildAffinitiesOrInGuild: g,
+    hasGuildAffinitiesOrInGuild: m,
     subscriptionIsPausedOrPausePending: p
   } = e, {
     subtitle: h,
@@ -43,9 +43,9 @@ let g = function(e) {
         helpdeskArticle: l.Z.getArticleURL(c.BhN.GUILD_SUBSCRIPTIONS)
       })
     };
-    let m = d.GP[d.Xh.PREMIUM_MONTH_GUILD],
-      g = a.ZP.getDefaultPrice(m.id, n),
-      p = (0, o.og)((0, o.T4)(g.amount, g.currency), m.interval, m.intervalCount);
+    let g = d.GP[d.Xh.PREMIUM_MONTH_GUILD],
+      m = a.ZP.getDefaultPrice(g.id, n),
+      p = (0, o.og)((0, o.T4)(m.amount, m.currency), g.interval, g.intervalCount);
     return {
       subtitle: n ? u.intl.string(u.t.bhPzXV) : u.intl.string(u.t.Zs9h9f),
       flavor: u.intl.formatToPlainString(u.t.PGgTdH, {
@@ -55,14 +55,14 @@ let g = function(e) {
   }({
     hasAppliedGuildBoosts: t,
     hasBoostPerk: n,
-    hasGuildAffinitiesOrInGuild: g,
+    hasGuildAffinitiesOrInGuild: m,
     subscriptionIsPausedOrPausePending: p
   });
   return (0, i.jsxs)("div", {
-    className: m.wrapper,
+    className: g.wrapper,
     children: [(0, i.jsx)(r.X6q, {
       variant: "heading-lg/bold",
-      className: m.subtitle,
+      className: g.subtitle,
       children: h
     }), null != f && (0, i.jsx)(r.Text, {
       variant: "text-sm/normal",

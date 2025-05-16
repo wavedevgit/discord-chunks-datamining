@@ -1,7 +1,7 @@
 /** Chunk was on 69835 **/
 n.d(t, {
   T: () => p,
-  Z: () => g
+  Z: () => m
 }), n(539854);
 var i = n(73800),
   r = n(442837),
@@ -12,14 +12,14 @@ var i = n(73800),
   c = n(888369),
   d = n(944486),
   u = n(981631),
-  m = n(647086);
+  g = n(647086);
 
-function g(e) {
+function m(e) {
   let {
     withVoiceChannels: t = !1,
     withCurrentVoiceChannel: n = !1
   } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, i = arguments.length > 2 ? arguments[2] : void 0;
-  return h(e === m._ || e === u.I_8 ? (0, l.t)() : s.Z.getGuildWithoutChangingGuildActionRows(e).guildChannels, {
+  return h(e === g._ || e === u.I_8 ? (0, l.t)() : s.Z.getGuildWithoutChangingGuildActionRows(e).guildChannels, {
     currentVoiceChannelId: d.Z.getVoiceChannelId(),
     selectedChannelId: d.Z.getChannelId()
   }, {
@@ -32,20 +32,20 @@ function p(e, t, n) {
   let {
     withVoiceChannels: s = !1,
     withCurrentVoiceChannel: l = !1
-  } = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {}, a = arguments.length > 4 ? arguments[4] : void 0, u = (0, r.e7)([c.default], () => c.default.getGuildChangeSentinel(e)), m = (0, r.e7)([o.Z], () => o.Z.version), {
-    currentVoiceChannelId: g,
+  } = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {}, a = arguments.length > 4 ? arguments[4] : void 0, u = (0, r.e7)([c.default], () => c.default.getGuildChangeSentinel(e)), g = (0, r.e7)([o.Z], () => o.Z.version), {
+    currentVoiceChannelId: m,
     selectedChannelId: p
   } = (0, r.cj)([d.Z], () => ({
     currentVoiceChannelId: d.Z.getVoiceChannelId(),
     selectedChannelId: d.Z.getChannelId()
   }));
   return (0, i.useMemo)(() => h(t, {
-    currentVoiceChannelId: g,
+    currentVoiceChannelId: m,
     selectedChannelId: p
   }, {
     withVoiceChannels: s,
     withCurrentVoiceChannel: l
-  }, a).map(e => e.id), [t, n, u, m])
+  }, a).map(e => e.id), [t, n, u, g])
 }
 
 function h(e, t) {

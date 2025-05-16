@@ -62,7 +62,7 @@ function b(e) {
         onClick: t
       } = e;
       return (0, r.jsx)(u.Z, {
-        ref: v,
+        buttonRef: v,
         label: g.intl.string(g.t["6vrfgo"]),
         onClick: j,
         onPopoutClick: t

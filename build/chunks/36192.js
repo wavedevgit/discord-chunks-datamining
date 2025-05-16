@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(704215),
   d = n(481060),
   u = n(230711),
-  m = n(497321),
-  g = n(100527),
+  g = n(497321),
+  m = n(100527),
   p = n(43015),
   h = n(136097),
   f = n(605236),
@@ -32,12 +32,12 @@ function v() {
     } = (0, h.h)(),
     s = (0, a.e7)([b.Z], () => b.Z.hidePersonalInformation),
     l = (0, a.e7)([_.default], () => _.default.getCurrentUser()),
-    [u, g] = r.useState(!1);
+    [u, m] = r.useState(!1);
   r.useEffect(() => {
     (0, f.EW)(c.z.AUTH_SESSIONS_NEW, {
       dismissAction: j.L.AUTO
     }), (0, p.fw)();
-    let e = setTimeout(() => g(!0), 500);
+    let e = setTimeout(() => m(!0), 500);
     return () => {
       clearTimeout(e), (0, p.$Z)()
     }
@@ -49,7 +49,7 @@ function v() {
       })
     },
     [E, v] = r.useState(new Set);
-  return s ? (0, i.jsx)(m.Z, {}) : (e = null == t && 0 === n.length ? u ? (0, i.jsx)("div", {
+  return s ? (0, i.jsx)(g.Z, {}) : (e = null == t && 0 === n.length ? u ? (0, i.jsx)("div", {
     className: S.loading,
     children: (0, i.jsx)(d.$jN, {})
   }) : null : (0, i.jsxs)(i.Fragment, {
@@ -142,8 +142,8 @@ function T(e) {
     session: o,
     current: c,
     setChecked: u,
-    checked: m,
-    useChecks: g
+    checked: g,
+    useChecks: m
   } = e, f = null != (a = null == (t = o.client_info) ? void 0 : t.location) ? a : null == (n = o.client_info) ? void 0 : n.ip, b = null == (r = o.client_info) ? void 0 : r.platform, {
     text: _,
     icon: x
@@ -201,13 +201,13 @@ function T(e) {
           })]
         })]
       })]
-    }), c ? null : g ? (0, i.jsx)("div", {
+    }), c ? null : m ? (0, i.jsx)("div", {
       className: S.sessionCheckbox,
       children: (0, i.jsx)(d.XZJ, {
         onChange: (e, t) => {
           null == u || u(t)
         },
-        value: m
+        value: g
       })
     }) : (0, i.jsx)(d.P3F, {
       className: S.sessionMoreButton,
@@ -248,7 +248,7 @@ function I() {
         children: (0, i.jsx)("span", {
           children: O.intl.format(O.t["044+8v"], {
             onClick: () => u.Z.setSection(C.oAB.ACCOUNT, null, {
-              analyticsLocations: [g.Z.USER_SETTINGS_SESSIONS]
+              analyticsLocations: [m.Z.USER_SETTINGS_SESSIONS]
             })
           })
         })

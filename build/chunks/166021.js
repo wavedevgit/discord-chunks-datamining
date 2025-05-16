@@ -15,7 +15,7 @@ let u = e => {
     cards: t,
     className: n,
     cardType: s
-  } = e, u = () => window.innerWidth < 910 ? 1 : window.innerWidth < 1400 ? 2 : 3, [m, g] = r.useState(0), [p, h] = r.useState(u()), f = t.length;
+  } = e, u = () => window.innerWidth < 910 ? 1 : window.innerWidth < 1400 ? 2 : 3, [g, m] = r.useState(0), [p, h] = r.useState(u()), f = t.length;
   r.useEffect(() => {
     let e = () => {
       h(u())
@@ -24,12 +24,12 @@ let u = e => {
       window.removeEventListener("resize", e)
     }
   }, []), r.useEffect(() => {
-    g(e => f > p && e > f - p ? f - p : f <= p ? 0 : e)
+    m(e => f > p && e > f - p ? f - p : f <= p ? 0 : e)
   }, [f, p]);
-  let b = m > 0,
+  let b = g > 0,
     _ = r.useCallback(e => ({
-      x: (e - m) * 100
-    }), [m]),
+      x: (e - g) * 100
+    }), [g]),
     [x, E] = (0, o.bYB)(t.length, _);
   return r.useEffect(() => {
     E(_)
@@ -39,7 +39,7 @@ let u = e => {
       className: d.cardContainer,
       children: [f > p && (0, i.jsx)(o.P3F, {
         onClick: b ? () => {
-          g(e => 0 === e ? f - p : e - 1)
+          m(e => 0 === e ? f - p : e - 1)
         } : void 0,
         className: l()({
           [d.leftArrow]: b,
@@ -94,7 +94,7 @@ let u = e => {
         })
       }), f > p && (0, i.jsx)(o.P3F, {
         onClick: () => {
-          g(e => e >= f - p ? 0 : e + 1)
+          m(e => e >= f - p ? 0 : e + 1)
         },
         className: d.rightArrow,
         children: (0, i.jsx)(o.ZSh, {
@@ -105,7 +105,7 @@ let u = e => {
         className: d.cardProgressBar,
         children: t.map((e, t) => {
           if (!(t > f - p)) return (0, i.jsx)("div", {
-            className: t === m ? d.selectedDot : d.dot
+            className: t === g ? d.selectedDot : d.dot
           }, "progress_bar_dot_".concat(t))
         })
       })]

@@ -12,8 +12,8 @@ var r = n(704215),
   c = n(605236),
   d = n(314910),
   u = n(378364),
-  m = n(197344),
-  g = n(226625),
+  g = n(197344),
+  m = n(226625),
   p = n(981631),
   h = n(921944),
   f = n(388032),
@@ -22,7 +22,7 @@ var r = n(704215),
 function _(e) {
   let {
     dismissibleContent: t
-  } = e, n = m.Z.useIsEligible(), u = (0, c.wE)(t), {
+  } = e, n = g.Z.useIsEligible(), u = (0, c.wE)(t), {
     analyticsLocations: _
   } = (0, o.ZP)(a.Z.HOLIDAY_COACHMARK), x = e => {
     (0, c.EW)(r.z.HOLIDAY_COACHMARK_HALLOWEEN_2024, {
@@ -38,7 +38,7 @@ function _(e) {
       className: b.wrapper,
       children: [(0, i.jsxs)("div", {
         className: b.backgroundWrapper,
-        children: [(0, i.jsx)(g.Z, {
+        children: [(0, i.jsx)(m.Z, {
           className: b.backgroundImage,
           pageMultiplier: 5
         }), (0, i.jsx)("div", {

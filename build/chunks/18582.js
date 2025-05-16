@@ -15,8 +15,8 @@ function d(e) {
       children: s,
       onClick: d,
       className: u,
-      tag: m,
-      target: g,
+      tag: g,
+      target: m,
       isGrass: p = !1,
       muted: h = !1,
       disabled: f = !1
@@ -61,8 +61,8 @@ function d(e) {
   }({}, b), n = n = {
     onClick: f ? void 0 : E,
     className: l()(_, u),
-    tag: m,
-    target: g,
+    tag: g,
+    target: m,
     children: s
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

@@ -12,8 +12,8 @@ var r = n(524437),
   c = n(294602),
   d = n(880257),
   u = n(63063),
-  m = n(838436),
-  g = n(526761),
+  g = n(838436),
+  m = n(526761),
   p = n(726985),
   h = n(981631),
   f = n(388032),
@@ -47,10 +47,10 @@ function _() {
       value: r.Q4.SHOW,
       label: f.intl.string(f.t["5k5OFh"])
     };
-  return t && (C.unshift(O), j.unshift(O)), (0, i.jsxs)(m.U, {
+  return t && (C.unshift(O), j.unshift(O)), (0, i.jsxs)(g.U, {
     setting: p.s6.PRIVACY_SENSITIVE_MEDIA_V2,
-    scrollPosition: g.FY.EXPLICIT_MEDIA_REDACTION_V2,
-    children: [(0, i.jsx)(m.H, {
+    scrollPosition: m.FY.EXPLICIT_MEDIA_REDACTION_V2,
+    children: [(0, i.jsx)(g.H, {
       header: f.intl.string(f.t["c/UOwM"]),
       description: f.intl.format(f.t.ZUvrwM, {
         learnMoreLink: u.Z.getArticleURL(h.BhN.EXPLICIT_MEDIA_REDACTION)

@@ -1,6 +1,6 @@
 /** Chunk was on 69835 **/
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var i = n(255367);
 n(73800);
@@ -13,11 +13,11 @@ var r = n(906732),
   d = n(981631),
   u = n(388032);
 
-function m(e) {
+function g(e) {
   let {
     refreshStyles: t = !1
   } = e, n = (0, l.pI)(), {
-    analyticsLocations: m
+    analyticsLocations: g
   } = (0, r.ZP)();
   return (0, i.jsx)(c.Z, {
     title: u.intl.string(u.t.xbMc8v),
@@ -27,7 +27,7 @@ function m(e) {
     label: u.intl.string(u.t.kbFsAA),
     volume: n,
     onVolumeChange: function(e) {
-      n = (0, o.A)(e), (0, s.xz)(n, m)
+      n = (0, o.A)(e), (0, s.xz)(n, g)
     },
     refreshStyles: t
   })

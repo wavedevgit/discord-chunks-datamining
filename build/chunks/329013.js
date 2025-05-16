@@ -12,8 +12,8 @@ var i = n(255367),
   c = n(37234),
   d = n(857595),
   u = n(607070),
-  m = n(100527),
-  g = n(906732),
+  g = n(100527),
+  m = n(906732),
   p = n(238302),
   h = n(514361),
   f = n(705262),
@@ -42,7 +42,7 @@ let R = () => {
     var e, t;
     let {
       analyticsLocations: n
-    } = (0, g.ZP)(m.Z.USER_SETTINGS), l = (0, s.e7)([h.Z], () => h.Z.isPreview), a = (null == (t = (0, E.N)()) || null == (e = t.subscription_trial) ? void 0 : e.sku_id) === y.Si.TIER_2, c = (0, x.Ng)(), d = (0, x.Wp)(c, y.Si.TIER_2), u = !l || a, {
+    } = (0, m.ZP)(g.Z.USER_SETTINGS), l = (0, s.e7)([h.Z], () => h.Z.isPreview), a = (null == (t = (0, E.N)()) || null == (e = t.subscription_trial) ? void 0 : e.sku_id) === y.Si.TIER_2, c = (0, x.Ng)(), d = (0, x.Wp)(c, y.Si.TIER_2), u = !l || a, {
       enabled: p
     } = C.Z.getCurrentConfig({
       location: "UserSettingsAppearanceClientThemes"

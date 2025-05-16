@@ -12,8 +12,8 @@ var r = n(442837),
   c = n(210887),
   d = n(598077),
   u = n(246946),
-  m = n(594174),
-  g = n(626135),
+  g = n(594174),
+  m = n(626135),
   p = n(51144),
   h = n(480387),
   f = n(726745),
@@ -24,7 +24,7 @@ var r = n(442837),
   C = n(965695);
 
 function j(e) {
-  let t = (0, r.e7)([m.default], () => m.default.getCurrentUser()),
+  let t = (0, r.e7)([g.default], () => g.default.getCurrentUser()),
     n = (0, r.e7)([u.Z], () => u.Z.hidePersonalInformation),
     j = (0, r.e7)([c.Z], () => (0, s.wj)(c.Z.theme)),
     O = (0, o.R6)("useMultiAccountMenuItems"),
@@ -32,7 +32,7 @@ function j(e) {
       multiAccountUsers: S
     } = (0, b.L)(),
     v = e => {
-      e !== (null == t ? void 0 : t.id) && (g.default.track(x.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
+      e !== (null == t ? void 0 : t.id) && (m.default.track(x.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
         location: {
           section: x.jXE.USER_PROFILE
         }

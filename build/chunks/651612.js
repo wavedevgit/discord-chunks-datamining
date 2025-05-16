@@ -99,7 +99,7 @@ function C(e) {
       return e
     }({
       isTrayButton: !0,
-      ref: x,
+      buttonRef: x,
       onClick: v,
       label: I,
       "aria-label": S.join(", "),

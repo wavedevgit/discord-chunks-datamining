@@ -17,7 +17,7 @@ function d(e) {
     isMarketingPageV2Enabled: n
   } = e, d = e => null != e.globalName ? e.globalName : e.username, {
     avatarSrc: u,
-    eventHandlers: m
+    eventHandlers: g
   } = (0, s.Z)({
     user: t,
     size: l.EF.SIZE_32,
@@ -51,7 +51,7 @@ function d(e) {
           src: u,
           "aria-label": t.username,
           size: l.EF.SIZE_32
-        }, m))
+        }, g))
       }), n ? (0, i.jsx)(r.X6q, {
         variant: "heading-lg/medium",
         className: o.textContainer,

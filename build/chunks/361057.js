@@ -1,16 +1,16 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => u
+  Z: () => d
 });
-var r = n(255367);
-n(73800);
-var i = n(481060),
-  l = n(871499),
-  a = n(447564),
-  o = n(304388);
+var r = n(255367),
+  i = n(73800),
+  l = n(481060),
+  a = n(871499),
+  o = n(447564),
+  s = n(304388);
 
-function s() {
-  return (s = Object.assign || function(e) {
+function c() {
+  return (c = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -18,24 +18,21 @@ function s() {
     return e
   }).apply(this, arguments)
 }
-let c = e => {
+let u = i.forwardRef((e, t) => {
   let {
-    channel: t,
-    glow: n,
-    ref: c
+    channel: n,
+    glow: i
   } = e;
-  return (0, r.jsx)(o.Z, {
-    buttonRef: c,
+  return (0, r.jsx)(s.Z, {
     renderPopout: () => null,
     children: e => {
-      var o = s({}, function(e) {
+      var s = c({}, function(e) {
         if (null == e) throw TypeError("Cannot destructure " + e);
         return e
       }(e));
       let {
-        onClick: c,
-        ref: u
-      } = o, d = function(e, t) {
+        onClick: u
+      } = s, d = function(e, t) {
         if (null == e) return {};
         var n, r, i = function(e, t) {
           if (null == e) return {};
@@ -49,8 +46,8 @@ let c = e => {
           for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
         }
         return i
-      }(o, ["onClick", "ref"]);
-      return (0, r.jsx)(l.Z, function(e) {
+      }(s, ["onClick"]);
+      return (0, r.jsx)(a.Z, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -68,15 +65,15 @@ let c = e => {
         }
         return e
       }({
-        ref: u,
-        iconComponent: i.hh5,
-        iconColor: n ? "#eb90f1" : void 0,
+        buttonRef: t,
+        iconComponent: l.hh5,
+        iconColor: i ? "#eb90f1" : void 0,
         onClick: e => {
-          (0, a.k)(t, "ActionBar"), e.stopPropagation(), c(e)
+          (0, o.k)(n, "ActionBar"), e.stopPropagation(), u(e)
         }
       }, d))
     }
   })
-};
-c.displayName = "ActionBarHDStreamingConsumableButton";
-let u = c
+});
+u.displayName = "ActionBarHDStreamingConsumableButton";
+let d = u

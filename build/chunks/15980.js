@@ -1,6 +1,6 @@
 /** Chunk was on 69835 **/
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(388685);
 var i, r, s, l = n(442837),
   a = n(570140),
@@ -24,7 +24,7 @@ s = "WebAuthnStore", (r = "displayName") in u ? Object.defineProperty(u, r, {
   configurable: !0,
   writable: !0
 }) : u[r] = s;
-let m = new u(a.Z, {
+let g = new u(a.Z, {
   LOGOUT: function() {
     d = [], c = !1
   },

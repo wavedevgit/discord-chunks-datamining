@@ -13,8 +13,8 @@ var i = n(255367),
   c = n(194359),
   d = n(99690),
   u = n(100527),
-  m = n(699516),
-  g = n(594174),
+  g = n(699516),
+  m = n(594174),
   p = n(63063),
   h = n(838436),
   f = n(526761),
@@ -57,7 +57,7 @@ function j(e) {
   let {
     userId: n,
     last: s
-  } = e, p = (0, a.e7)([m.Z], () => m.Z.isBlocked(n)), h = (0, a.e7)([g.default], () => g.default.getUser(n)), [f, b] = r.useState(!1), _ = r.useCallback(() => {
+  } = e, p = (0, a.e7)([g.Z], () => g.Z.isBlocked(n)), h = (0, a.e7)([m.default], () => m.default.getUser(n)), [f, b] = r.useState(!1), _ = r.useCallback(() => {
     b(!0), p ? c.Z.unblockUser(n).catch(() => {
       b(!1)
     }) : c.Z.unignoreUser(n, u.Z.USER_SETTINGS).catch(() => {
@@ -134,7 +134,7 @@ function O(e) {
 }
 
 function S() {
-  let e = (0, a.Wu)([m.Z], () => m.Z.getBlockedIDs());
+  let e = (0, a.Wu)([g.Z], () => g.Z.getBlockedIDs());
   return (0, i.jsx)(O, {
     setting: b.s6.BLOCKED_USERS,
     userIds: e,
@@ -143,7 +143,7 @@ function S() {
 }
 
 function v() {
-  let e = (0, a.Wu)([m.Z], () => m.Z.getIgnoredIDs());
+  let e = (0, a.Wu)([g.Z], () => g.Z.getIgnoredIDs());
   return (0, i.jsx)(O, {
     setting: b.s6.IGNORED_USERS,
     userIds: e,

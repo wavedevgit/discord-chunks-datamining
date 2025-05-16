@@ -10,8 +10,8 @@ var i, r = n(255367),
   c = n(481060),
   d = n(893776),
   u = n(468026),
-  m = n(594174),
-  g = n(388032);
+  g = n(594174),
+  m = n(388032);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -47,7 +47,7 @@ class f extends(i = s.Component) {
       color: e,
       disabled: this.state.isSendingVerificationEmail,
       onClick: this.handleResendVerification,
-      children: g.intl.string(g.t.lm1UKi)
+      children: m.intl.string(m.t.lm1UKi)
     })
   }
   constructor(...e) {
@@ -64,13 +64,13 @@ class f extends(i = s.Component) {
         d.Z.verifyResend().then(() => (0, c.h7j)(t => {
           var n, i;
           return (0, r.jsx)(c.ConfirmModal, (n = h({
-            header: g.intl.string(g.t.LykQYm),
-            confirmText: g.intl.string(g.t.BddRzc),
+            header: m.intl.string(m.t.LykQYm),
+            confirmText: m.intl.string(m.t.BddRzc),
             confirmButtonColor: c.zxk.Colors.BRAND
           }, t), i = i = {
             children: (0, r.jsx)(c.Text, {
               variant: "text-md/normal",
-              children: g.intl.format(g.t.azKEPz, {
+              children: m.intl.format(m.t.azKEPz, {
                 email: e.email
               })
             })
@@ -87,9 +87,9 @@ class f extends(i = s.Component) {
         })).catch(e => {
           let {
             body: t
-          } = e, n = g.intl.string(g.t.XcrQNz);
+          } = e, n = m.intl.string(m.t.XcrQNz);
           null != t && t.email && (n = t.email), (0, c.h7j)(e => (0, r.jsx)(u.default, h({
-            title: g.intl.string(g.t.VbTh0N),
+            title: m.intl.string(m.t.VbTh0N),
             body: n
           }, e)))
         }).then(() => this.setState({
@@ -103,8 +103,8 @@ p(f, "defaultProps", {
   size: c.zxk.Sizes.MEDIUM,
   color: c.zxk.Colors.BRAND
 });
-let b = o.ZP.connectStores([m.default], () => {
-  let e = m.default.getCurrentUser();
+let b = o.ZP.connectStores([g.default], () => {
+  let e = g.default.getCurrentUser();
   return a()(null != e, "ResendEmailVerificationButton: currentUser cannot be undefined"), {
     currentUser: e
   }

@@ -1,6 +1,6 @@
 /** Chunk was on 69835 **/
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(539854);
 var i, r = n(442837),
   s = n(570140),
@@ -42,7 +42,7 @@ class u extends(i = r.ZP.PersistedStore) {
   }
 }
 o(u, "displayName", "GuildAffinitiesStore"), o(u, "persistKey", "GuildAffinitiesStore");
-let m = new u(s.Z, {
+let g = new u(s.Z, {
   CONNECTION_OPEN: function() {
     return Date.now() - c.lastFetched > 864e5 && (0, l.j)(), !1
   },

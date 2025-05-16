@@ -1,7 +1,7 @@
 /** Chunk was on 69835 **/
 n.d(t, {
   Z: () => f,
-  n: () => g
+  n: () => m
 });
 var i, r = n(255367),
   s = n(73800),
@@ -20,7 +20,7 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -32,7 +32,7 @@ function m(e) {
   }
   return e
 }
-var g = ((i = {})[i.RIGHT = -1] = "RIGHT", i[i.LEFT = 1] = "LEFT", i);
+var m = ((i = {})[i.RIGHT = -1] = "RIGHT", i[i.LEFT = 1] = "LEFT", i);
 let p = {
   friction: 7,
   tension: 40,
@@ -40,7 +40,7 @@ let p = {
 };
 class h extends s.PureComponent {
   componentWillEnter(e) {
-    this._animated.setValue(-this.props.direction), o.Z.spring(this._animated, m({
+    this._animated.setValue(-this.props.direction), o.Z.spring(this._animated, g({
       toValue: 0
     }, this.props.springSettings)).start(e)
   }
@@ -48,7 +48,7 @@ class h extends s.PureComponent {
     this._animated.setValue(0)
   }
   componentWillLeave(e) {
-    o.Z.spring(this._animated, m({
+    o.Z.spring(this._animated, g({
       toValue: this.props.direction
     }, this.props.springSettings)).start(e)
   }

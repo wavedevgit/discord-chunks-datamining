@@ -16,8 +16,8 @@ let d = r.forwardRef(function(e, t) {
     onContextMenu: s,
     onClick: d,
     disabled: u,
-    icon: m,
-    iconForeground: g,
+    icon: g,
+    iconForeground: m,
     innerClassName: p,
     className: h,
     redGlow: f,
@@ -31,13 +31,13 @@ let d = r.forwardRef(function(e, t) {
     tooltipForceOpen: S,
     tooltipContentClassName: v,
     plated: T
-  } = e, I = "function" == typeof m ? (0, i.jsx)(m, {
+  } = e, I = "function" == typeof g ? (0, i.jsx)(g, {
     width: 20,
     height: 20,
     size: "custom",
-    colorClass: null != g ? g : "",
+    colorClass: null != m ? m : "",
     color: "currentColor"
-  }) : m;
+  }) : g;
   return (0, i.jsx)(a.ua7, {
     tooltipClassName: b,
     text: n,
@@ -46,8 +46,8 @@ let d = r.forwardRef(function(e, t) {
     tooltipContentClassName: v,
     forceOpen: S,
     children: e => {
-      var n, m, {
-          onClick: g,
+      var n, g, {
+          onClick: m,
           onMouseEnter: b,
           onMouseLeave: E
         } = e,
@@ -83,7 +83,7 @@ let d = r.forwardRef(function(e, t) {
           })
         }
         return e
-      }({}, O), m = m = {
+      }({}, O), g = g = {
         buttonRef: t,
         look: a.zxk.Looks.BLANK,
         size: a.zxk.Sizes.NONE,
@@ -98,7 +98,7 @@ let d = r.forwardRef(function(e, t) {
           [c.plateMuted]: f && T
         }),
         onClick: e => {
-          null != g && g(), null != d && d(e)
+          null != m && m(), null != d && d(e)
         },
         onMouseEnter: () => {
           null == b || b(), null == _ || _()
@@ -123,15 +123,15 @@ let d = r.forwardRef(function(e, t) {
           mask: o.ZP.Masks.PANEL_BUTTON,
           children: I
         }) : I, r]
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(m)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(g)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var i = Object.getOwnPropertySymbols(e);
           n.push.apply(n, i)
         }
         return n
-      })(Object(m)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(m, e))
+      })(Object(g)).forEach(function(e) {
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(g, e))
       }), n))
     }
   })

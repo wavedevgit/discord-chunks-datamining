@@ -20,8 +20,8 @@ let o = {
       colors: n,
       emojiURL: d,
       numBursts: u,
-      particlesPerBurst: m,
-      offsetXPercentageMax: g,
+      particlesPerBurst: g,
+      offsetXPercentageMax: m,
       offsetXPercentageMin: p,
       offsetYPercentageMax: h,
       offsetYPercentageMin: f,
@@ -49,8 +49,8 @@ let o = {
           var s, l;
           let d = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : o,
             u = arguments.length > 6 && void 0 !== arguments[6] ? arguments[6] : 1.66,
-            m = c(e.width, 100, n),
-            g = c(e.height, 75, r),
+            g = c(e.width, 100, n),
+            m = c(e.height, 75, r),
             p = c(e.width, 350, t),
             h = c(e.height, 75, i),
             {
@@ -80,8 +80,8 @@ let o = {
             position: {
               type: "static-random",
               minValue: {
-                x: e.left + m,
-                y: e.top + g
+                x: e.left + g,
+                y: e.top + m
               },
               maxValue: {
                 x: e.left + p,
@@ -118,11 +118,11 @@ let o = {
           })(Object(l)).forEach(function(e) {
             Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(l, e))
           }), s
-        }(t.getBoundingClientRect(), g, p, h, f, _, x), null != m ? m : 50), i === e.length - 1 && null != E && T(!0)
+        }(t.getBoundingClientRect(), m, p, h, f, _, x), null != g ? g : 50), i === e.length - 1 && null != E && T(!0)
       }, 60 * i)), () => {
         for (let t of e) clearTimeout(t)
       }
-    }, [S, t, u, m, g, p, h, f, _, x, E]), (0, i.jsx)(s.Ji, {
+    }, [S, t, u, g, m, p, h, f, _, x, E]), (0, i.jsx)(s.Ji, {
       ref: j,
       sprites: null != I ? I : a.CA,
       colors: null != n ? n : a.Br,

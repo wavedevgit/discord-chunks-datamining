@@ -12,8 +12,8 @@ var r = n(442837),
   c = n(645041),
   d = n(430824),
   u = n(562511),
-  m = n(731722),
-  g = n(299929),
+  g = n(731722),
+  m = n(299929),
   p = n(921944),
   h = n(388032);
 let f = new o.Z("GuildTagCoachmark");
@@ -34,7 +34,7 @@ function b(e) {
     spacing: 16,
     shouldShow: !0,
     onRequestClose: () => t(p.L.USER_DISMISS),
-    renderPopout: () => (0, i.jsx)(g.Z, {
+    renderPopout: () => (0, i.jsx)(m.Z, {
       guildId: e.guild.id,
       guildProfile: e.guild.profile,
       title: h.intl.formatToPlainString(h.t["m/Tc3t"], {
@@ -63,7 +63,7 @@ function _(e) {
     spacing: 16,
     shouldShow: !0,
     onRequestClose: () => t(p.L.USER_DISMISS),
-    renderPopout: () => (0, i.jsx)(g.Z, {
+    renderPopout: () => (0, i.jsx)(m.Z, {
       guildId: e.guild.id,
       guildProfile: e.guild.profile,
       title: h.intl.formatToPlainString(h.t.VFqnyc, {
@@ -79,7 +79,7 @@ function _(e) {
 function x(e) {
   let t = (0, r.e7)([d.Z], () => d.Z.getGuild(e.guildId)),
     n = (0, u.S3)(e.guildId);
-  return null != t && (0, m.jq)(t) && null !== n ? "changed" === n ? (0, i.jsx)(b, {
+  return null != t && (0, g.jq)(t) && null !== n ? "changed" === n ? (0, i.jsx)(b, {
     guild: t,
     onDismiss: e.onDismiss,
     children: e.children

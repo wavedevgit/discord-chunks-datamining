@@ -21,7 +21,7 @@ function u(e) {
       return (null != (r = null == (n = e.createdAt) ? void 0 : n.getTime()) ? r : e.currentPeriodStart.getTime()) - (null != (s = null == (i = t.createdAt) ? void 0 : i.getTime()) ? s : t.currentPeriodStart.getTime())
     })) ? t : []
   }), [l, u] = r.useState();
-  return null == l && (l = (0, i.jsx)(m, {
+  return null == l && (l = (0, i.jsx)(g, {
     onBack: t,
     title: c.intl.string(c.t["DB/m9f"])
   })), (0, i.jsxs)("div", {
@@ -30,7 +30,7 @@ function u(e) {
       children: (0, i.jsx)(o.Z, {
         subscriptions: n,
         updateHeader: (e, t) => {
-          u((0, i.jsx)(m, {
+          u((0, i.jsx)(g, {
             title: e,
             onBack: () => {
               t(), u(void 0)
@@ -42,7 +42,7 @@ function u(e) {
   })
 }
 
-function m(e) {
+function g(e) {
   let {
     onBack: t,
     title: n

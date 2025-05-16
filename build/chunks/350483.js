@@ -12,8 +12,8 @@ var r = n(392711),
   c = n(984933),
   d = n(914010),
   u = n(771845),
-  m = n(55589),
-  g = n(585483),
+  g = n(55589),
+  m = n(585483),
   p = n(475468),
   h = n(981631),
   f = n(490897);
@@ -22,7 +22,7 @@ function b(e, t) {
   return [{
     resourceId: e,
     type: f.W.GUILD_EVENT
-  }, ...e === h.ME ? m.Z.getPrivateChannelIds() : (0, a.Z)(e, {
+  }, ...e === h.ME ? g.Z.getPrivateChannelIds() : (0, a.Z)(e, {
     withVoiceChannels: t,
     withCurrentVoiceChannel: !0
   }).map(e => e.id)]
@@ -30,7 +30,7 @@ function b(e, t) {
 let _ = s().throttle(function(e, t) {
   var r, s;
   let a, {
-      channelPredicate: m = () => !0,
+      channelPredicate: g = () => !0,
       guildPredicate: f = () => !0,
       guildFeaturePredicate: _ = () => !1,
       ensureChatIsVisible: x = () => !1,
@@ -50,7 +50,7 @@ let _ = s().throttle(function(e, t) {
     if (a = v[T], f(C))
       for (; null != a && "" !== a;) {
         if ("string" == typeof a) {
-          if (m(C, a)) return (0, p.K)(C, a, !1, x(C, a))
+          if (g(C, a)) return (0, p.K)(C, a, !1, x(C, a))
         } else if ("object" == typeof a && _(a.resourceId, a.type)) return C !== d.Z.getGuildId() && (0, p.K)(C, null == (s = c.ZP.getDefaultChannel(C)) ? void 0 : s.id), (0, l.ZDy)(async () => {
           let {
             default: e
@@ -92,7 +92,7 @@ let _ = s().throttle(function(e, t) {
     if (S += e, null == (C = O[S]) || "" === C) break;
     v = b(C, E), T = e < 0 ? v.length - 1 : 0
   }
-  g.S.dispatch(h.CkL.SHAKE_APP, {
+  m.S.dispatch(h.CkL.SHAKE_APP, {
     duration: 200,
     intensity: 2
   })

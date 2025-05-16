@@ -12,8 +12,8 @@ var r = n(120356),
   c = n(767714),
   d = n(388032),
   u = n(944680),
-  m = n(568147),
-  g = n(332796);
+  g = n(568147),
+  m = n(332796);
 let p = e => {
   let {
     className: t,
@@ -56,7 +56,7 @@ let p = e => {
           premiumModalAnalyticsLocation: h
         })]
       }), (0, i.jsx)("img", {
-        src: x ? g : m,
+        src: x ? m : g,
         className: s()(u.bannerImage, n),
         alt: "gift nitro banner"
       })]

@@ -12,9 +12,9 @@ var r = n(120356),
   c = n(767714),
   d = n(474936),
   u = n(388032),
-  m = n(638068);
+  g = n(638068);
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -58,15 +58,15 @@ let p = e => {
     _ = (0, l.wj)(b) || n,
     x = _ ? a.Ttl.WHITE : a.Ttl.BRAND,
     E = p === d.Si.TIER_0 ? u.intl.string(u.t.rk4Uu7) : u.intl.string(u.t.Ve9Ge3);
-  return (0, i.jsx)(c.Z, g({
+  return (0, i.jsx)(c.Z, m({
     isGift: !0,
     color: x,
     look: a.iLD.OUTLINED,
-    textOptions: g({
+    textOptions: m({
       textOverride: E
     }, h),
     giftMessage: r,
-    className: s()(t, m.giftButton, _ ? m.buttonWhite : m.buttonBrand),
+    className: s()(t, g.giftButton, _ ? g.buttonWhite : g.buttonBrand),
     subscriptionTier: p
   }, f))
 }

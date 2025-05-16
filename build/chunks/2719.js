@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(442837),
   d = n(692547),
   u = n(481060),
-  m = n(230711),
-  g = n(129861),
+  g = n(230711),
+  m = n(129861),
   p = n(279837),
   h = n(168107),
   f = n(480916),
@@ -81,12 +81,12 @@ function W(e) {
   let {
     className: a,
     user: o
-  } = e, c = r.useRef(null), m = (0, j.o9)(), g = (0, O.b)(), p = (0, E.gS)(), h = null != (s = null == p || null == (t = p.nick) ? void 0 : t[0]) ? s : null, [f, b] = r.useState(!1);
+  } = e, c = r.useRef(null), g = (0, j.o9)(), m = (0, O.b)(), p = (0, E.gS)(), h = null != (s = null == p || null == (t = p.nick) ? void 0 : t[0]) ? s : null, [f, b] = r.useState(!1);
   r.useEffect(() => {
     b(null != c.current && c.current.scrollWidth > c.current.clientWidth)
   }, [o.username]);
   let _ = !o.isClaimed(),
-    x = m && !o.isPomelo() && !o.hasVerifiedEmailOrPhone() || _,
+    x = g && !o.isPomelo() && !o.hasVerifiedEmailOrPhone() || _,
     C = x ? V.intl.string(V.t["7Ngnys"]) : void 0;
   return (0, i.jsxs)("div", {
     className: l()(G.field, a),
@@ -113,7 +113,7 @@ function W(e) {
           })]
         })]
       })
-    }), g && (0, i.jsx)("div", {
+    }), m && (0, i.jsx)("div", {
       className: G.pomeloWarning,
       children: (0, i.jsx)(u.ua7, {
         text: V.intl.string(V.t.HHC5Z2),
@@ -147,7 +147,7 @@ function W(e) {
         color: u.zxk.Colors.PRIMARY,
         "aria-label": V.intl.string(V.t["JECa9/"]),
         onClick: () => (0, u.ZDy)(async () => {
-          if (g) {
+          if (m) {
             let {
               default: e
             } = await Promise.all([n.e("85342"), n.e("69525")]).then(n.bind(n, 193049));
@@ -172,10 +172,10 @@ function Y(e) {
   let {
     user: s,
     className: a
-  } = e, o = (0, E.gS)(), c = null != (n = null == o || null == (t = o.nick) ? void 0 : t[0]) ? n : null, m = D.ZP.getGlobalName(s), g = r.useRef(null), [p, h] = r.useState(!1);
+  } = e, o = (0, E.gS)(), c = null != (n = null == o || null == (t = o.nick) ? void 0 : t[0]) ? n : null, g = D.ZP.getGlobalName(s), m = r.useRef(null), [p, h] = r.useState(!1);
   return r.useEffect(() => {
-    h(null != g.current && g.current.scrollWidth > g.current.clientWidth)
-  }, [m]), (0, i.jsxs)("div", {
+    h(null != m.current && m.current.scrollWidth > m.current.clientWidth)
+  }, [g]), (0, i.jsxs)("div", {
     className: l()(G.field, a),
     children: [(0, i.jsx)("div", {
       className: G.constrainedRow,
@@ -186,12 +186,12 @@ function Y(e) {
           children: V.intl.string(V.t["9AjdkJ"])
         }), (0, i.jsx)("div", {
           className: G.usernameInnerRow,
-          ref: g,
+          ref: m,
           children: (0, i.jsx)(u.Text, {
             tag: "span",
             color: "header-primary",
             variant: "text-md/normal",
-            children: null == m ? V.intl.string(V.t.ep5kjI) : m
+            children: null == g ? V.intl.string(V.t.ep5kjI) : g
           })
         })]
       })
@@ -420,7 +420,7 @@ function Q(e) {
 }
 
 function J() {
-  m.Z.setSection(B.oAB.PROFILE_CUSTOMIZATION)
+  g.Z.setSection(B.oAB.PROFILE_CUSTOMIZATION)
 }
 
 function $(e) {
@@ -468,7 +468,7 @@ function ee() {
     a = null == l || null == (e = l.avatar) ? void 0 : e[0],
     {
       avatarSrc: d,
-      avatarDecorationSrc: m
+      avatarDecorationSrc: g
     } = (0, I.Z)({
       user: t,
       size: u.EFr.SIZE_80
@@ -489,14 +489,14 @@ function ee() {
       children: [(0, i.jsx)(z, {
         className: G.avatar,
         src: d,
-        avatarDecoration: m,
+        avatarDecoration: g,
         status: s,
         size: u.EFr.SIZE_80,
         "aria-label": t.username
       }), (0, i.jsxs)("div", {
         children: [(0, i.jsxs)("div", {
           className: G.profileCardUsernameRow,
-          children: [(0, i.jsx)(g.Z, {
+          children: [(0, i.jsx)(m.Z, {
             user: t,
             className: G.userTag,
             discriminatorClass: G.discriminator

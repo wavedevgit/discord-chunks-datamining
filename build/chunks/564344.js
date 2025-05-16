@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(18438),
   d = n(778825),
   u = n(851894),
-  m = n(484459),
-  g = n(216045),
+  g = n(484459),
+  m = n(216045),
   p = n(839469),
   h = n(25990),
   f = n(594174),
@@ -56,7 +56,7 @@ function v() {
     }
   }
   r.useEffect(() => {
-    null != T && (0, m.Z)(T.id, T.getAvatarURL(null == v ? void 0 : v.id, 80), {
+    null != T && (0, g.Z)(T.id, T.getAvatarURL(null == v ? void 0 : v.id, 80), {
       guildId: null == v ? void 0 : v.id
     })
   }, [null == v ? void 0 : v.id, T]);
@@ -84,6 +84,6 @@ function v() {
       }, C.NB.GUILD) : null]
     }), I === C.NB.GUILD ? (0, i.jsx)(u.Z, {
       selectedGuild: v
-    }) : (0, i.jsx)(g.Z, {})]
+    }) : (0, i.jsx)(m.Z, {})]
   })
 }

@@ -23,31 +23,31 @@ var r = n(255367),
   y = n(694095);
 
 function v(e) {
-  var t, n, l, v, _, C, N;
+  var t, n, l;
   let {
-    name: I,
-    icon: S,
-    imageSrc: E,
-    iconBackgroundColor: P,
-    iconClassName: w,
-    iconWrapperClassName: T,
-    details: Z,
-    integration: k,
-    buttonText: A,
-    buttonDisabled: D,
-    hasNextSection: R,
-    onButtonClick: L,
-    guildId: M,
-    isScrolling: B,
-    canShowMigrationTooltip: U,
-    trailing: W
-  } = e, [z, H] = i.useState(!1), [G, F] = i.useState(!1), V = (v = A, _ = D, C = R, N = L, null == v || null == N ? null : C ? (0, r.jsxs)(p.Z, {
+    name: v,
+    icon: _,
+    imageSrc: C,
+    iconBackgroundColor: N,
+    iconClassName: I,
+    iconWrapperClassName: S,
+    details: E,
+    integration: P,
+    buttonText: w,
+    buttonDisabled: T,
+    hasNextSection: Z,
+    onButtonClick: k,
+    guildId: A,
+    isScrolling: D,
+    canShowMigrationTooltip: R,
+    trailing: L
+  } = e, [M, B] = i.useState(!1), [U, W] = i.useState(!1), z = R && !D && !U && void 0 !== A && null != P, H = i.useRef(null), G = i.useRef(null), F = i.useCallback((e, t, n, i) => null == e || null == i ? null : n ? (0, r.jsxs)(p.Z, {
     align: p.Z.Align.CENTER,
-    ref: Y,
+    ref: G,
     children: [(0, r.jsx)(c.Text, {
       variant: "text-sm/normal",
-      children: v
-    }), C ? (0, r.jsx)(c.Fbu, {
+      children: e
+    }), n ? (0, r.jsx)(c.Fbu, {
       size: "custom",
       color: "currentColor",
       width: 10,
@@ -55,17 +55,17 @@ function v(e) {
       className: y.caret
     }) : null]
   }) : (0, r.jsx)(c.zxk, {
-    buttonRef: q,
+    buttonRef: H,
     size: c.zxk.Sizes.SMALL,
-    look: C ? c.zxk.Looks.LINK : c.zxk.Looks.FILLED,
-    color: C ? c.zxk.Colors.PRIMARY : c.zxk.Colors.BRAND,
-    disabled: _,
-    onClick: N,
-    children: v
-  })), K = U && !B && !G && void 0 !== M && null != k, q = i.useRef(null), Y = i.useRef(null);
+    look: n ? c.zxk.Looks.LINK : c.zxk.Looks.FILLED,
+    color: n ? c.zxk.Colors.PRIMARY : c.zxk.Colors.BRAND,
+    disabled: t,
+    onClick: i,
+    children: e
+  }), [H, G])(w, T, Z, k);
   i.useEffect(() => {
     var e, t;
-    K && f.default.track(j.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, (e = function(e) {
+    z && f.default.track(j.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -82,8 +82,8 @@ function v(e) {
         })
       }
       return e
-    }({}, (0, d.hH)(M)), t = t = {
-      application_id: null == k ? void 0 : k.application.id,
+    }({}, (0, d.hH)(A)), t = t = {
+      application_id: null == P ? void 0 : P.application.id,
       location: "overview"
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
@@ -95,12 +95,12 @@ function v(e) {
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
-  }, [M, null == k ? void 0 : k.application.id, K]);
-  let X = K ? (0, r.jsx)(c.yRy, {
-      targetElementRef: R ? Y : q,
+  }, [A, null == P ? void 0 : P.application.id, z]);
+  let V = z ? (0, r.jsx)(c.yRy, {
+      targetElementRef: Z ? G : H,
       renderPopout: () => (0, r.jsx)(c.P3F, {
         onClick: e => {
-          e.stopPropagation(), F(!0), x.Z.dismissOverviewTooltip(M, k.integration)
+          e.stopPropagation(), W(!0), x.Z.dismissOverviewTooltip(A, P.integration)
         },
         children: (0, r.jsx)(b.ZP, {
           content: O.intl.string(O.t.TyMJwM),
@@ -111,24 +111,24 @@ function v(e) {
       align: "center",
       animation: c.yRy.Animation.TRANSLATE,
       shouldShow: !0,
-      children: () => V
-    }) : V,
-    $ = (0, s.Wu)([m.Z], () => {
+      children: () => F
+    }) : F,
+    K = (0, s.Wu)([m.Z], () => {
       var e;
-      return null != k && null != M && null != (e = m.Z.getApplicationEntitlementsForGuild(k.application.id, M)) ? e : []
+      return null != P && null != A && null != (e = m.Z.getApplicationEntitlementsForGuild(P.application.id, A)) ? e : []
     }),
-    J = (0, u.LD)(M, !0),
-    Q = (null == k ? void 0 : k.application) != null && Object.keys(null != (l = null == (n = J.result) || null == (t = n.sections[k.application.id]) ? void 0 : t.commands) ? l : {}).length > 0,
-    ee = (0, r.jsxs)(p.Z, {
+    q = (0, u.LD)(A, !0),
+    Y = (null == P ? void 0 : P.application) != null && Object.keys(null != (l = null == (n = q.result) || null == (t = n.sections[P.application.id]) ? void 0 : t.commands) ? l : {}).length > 0,
+    X = (0, r.jsxs)(p.Z, {
       children: [(0, r.jsx)(h.Z, {
-        name: I,
-        icon: S,
-        imageSrc: E,
-        iconBackgroundColor: P,
-        iconClassName: w,
-        iconWrapperClassName: T,
-        details: Z,
-        isPremium: $.length > 0
+        name: v,
+        icon: _,
+        imageSrc: C,
+        iconBackgroundColor: N,
+        iconClassName: I,
+        iconWrapperClassName: S,
+        details: E,
+        isPremium: K.length > 0
       }), (0, r.jsx)(p.Z.Child, {
         shrink: 0,
         grow: 0,
@@ -172,24 +172,24 @@ function v(e) {
                 className: y.featureIcon
               })
             }, "commands")), l
-          }(k, z, Q), X, W]
+          }(P, M, Y), V, L]
         })
       })]
     });
-  return R ? (0, r.jsx)(c.P3F, {
+  return Z ? (0, r.jsx)(c.P3F, {
     onClick: () => {
-      U && null != M && null != k && x.Z.dismissOverviewTooltip(M, k.integration), null == L || L()
+      R && null != A && null != P && x.Z.dismissOverviewTooltip(A, P.integration), null == k || k()
     },
-    onFocus: () => H(!0),
-    onBlur: () => H(!1),
+    onFocus: () => B(!0),
+    onBlur: () => B(!1),
     children: (0, r.jsx)(c.Zbd, {
       editable: !0,
       className: o()(y.card, y.clickable),
-      children: ee
+      children: X
     })
   }) : (0, r.jsx)(c.Zbd, {
     editable: !0,
     className: y.card,
-    children: ee
+    children: X
   })
 }

@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(481060),
   d = n(224706),
   u = n(225433),
-  m = n(570928),
-  g = n(594190),
+  g = n(570928),
+  m = n(594190),
   p = n(320724),
   h = n(297700),
   f = n(77498),
@@ -68,7 +68,7 @@ let P = a.ZP.connectStores([C.Z], () => ({
 function D(e) {
   let {
     onClose: t
-  } = e, n = (0, a.e7)([g.ZP], () => g.ZP.getCandidateGames()), [s, o] = r.useState(null), u = n.map(e => ({
+  } = e, n = (0, a.e7)([m.ZP], () => m.ZP.getCandidateGames()), [s, o] = r.useState(null), u = n.map(e => ({
     key: e.pid,
     value: e,
     label: null != e.name ? e.name : ""
@@ -116,7 +116,7 @@ function Z(e) {
     rawGame: n,
     nowPlaying: s = !1,
     isOverride: p
-  } = e, x = (0, a.cj)([g.ZP, f.Z, b.Z], () => (0, g.FZ)(n, [g.ZP, f.Z, b.Z])), [E, C] = r.useState(!1), [v, N] = r.useState(null != (t = x.name) ? t : "???"), P = l()(T.flexCenter, {
+  } = e, x = (0, a.cj)([m.ZP, f.Z, b.Z], () => (0, m.FZ)(n, [m.ZP, f.Z, b.Z])), [E, C] = r.useState(!1), [v, N] = r.useState(null != (t = x.name) ? t : "???"), P = l()(T.flexCenter, {
     [S.game]: !s,
     [S.activeGame]: s,
     [I.card]: !s,
@@ -182,7 +182,7 @@ function Z(e) {
           when: t
         })), (0, i.jsx)("div", {
           className: S.lastPlayed,
-          children: (0, i.jsx)(m.Z, {
+          children: (0, i.jsx)(g.Z, {
             hoverText: null != n && "" !== n ? n.toUpperCase() : "",
             children: e
           })
@@ -337,12 +337,12 @@ let L = (0, x.oH)(function() {
     let {
       className: t,
       showHeader: n = !0
-    } = e, s = (0, a.Wu)([g.ZP], () => g.ZP.getGamesSeen(!0)), {
+    } = e, s = (0, a.Wu)([m.ZP], () => m.ZP.getGamesSeen(!0)), {
       runningGame: o,
       overrideExePaths: d
-    } = (0, a.cj)([g.ZP], () => ({
-      runningGame: g.ZP.getVisibleGame(),
-      overrideExePaths: L(...g.ZP.getOverrides())
+    } = (0, a.cj)([m.ZP], () => ({
+      runningGame: m.ZP.getVisibleGame(),
+      overrideExePaths: L(...m.ZP.getOverrides())
     }));
     return r.useEffect(() => ((0, p.Ky)(), p.P7), []), (0, i.jsxs)(c.hjN, {
       tag: "h1",
@@ -352,7 +352,7 @@ let L = (0, x.oH)(function() {
         rawGame: o,
         isOverride: d.has(o.exePath),
         nowPlaying: !0
-      }, (0, g.rH)(o)) : (0, i.jsx)(w, {}), (0, i.jsxs)("div", {
+      }, (0, m.rH)(o)) : (0, i.jsx)(w, {}), (0, i.jsxs)("div", {
         className: l()(S.nowPlayingAdd, N.marginReset, N.marginTop8, N.marginBottom20),
         children: [(0, i.jsx)("span", {
           children: O.intl.string(O.t.xwhoqK)
@@ -391,7 +391,7 @@ let L = (0, x.oH)(function() {
         }), s.map(e => (0, i.jsx)(Z, {
           rawGame: e,
           isOverride: d.has(e.exePath)
-        }, (0, g.rH)(e)))]
+        }, (0, m.rH)(e)))]
       })]
     })
   }

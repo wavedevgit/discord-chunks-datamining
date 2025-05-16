@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(887580),
   d = n(389494),
   u = n(353926),
-  m = n(430824),
-  g = n(572004),
+  g = n(430824),
+  m = n(572004),
   p = n(878209),
   h = n(987338),
   f = n(516370);
@@ -53,7 +53,7 @@ function _(e) {
   let {
     experiment: n,
     experimentId: s,
-    overrideDescriptor: m,
+    overrideDescriptor: g,
     defaultOpen: p
   } = e, [b, _] = r.useState(p), [x, E] = r.useState(!1), C = r.useCallback(() => {
     _(e => !e)
@@ -64,7 +64,7 @@ function _(e) {
     let [t, n] = e;
     return "".concat(new Date(n).toLocaleString(), " (").concat(t, ")")
   })), v = r.useCallback(e => {
-    (0, g.JG)((0, c.sZ)(s), () => {
+    (0, m.JG)((0, c.sZ)(s), () => {
       (0, o.showToast)({
         id: "experiment-link-copied",
         message: "Copied experiment link",
@@ -82,7 +82,7 @@ function _(e) {
           direction: "horizontal",
           align: "center",
           gap: 4,
-          children: [n.title, " ", g.wS && (0, i.jsx)(o.P3F, {
+          children: [n.title, " ", m.wS && (0, i.jsx)(o.P3F, {
             onClick: v,
             children: (0, i.jsx)(o.xPt, {
               size: "xs"
@@ -108,7 +108,7 @@ function _(e) {
           children: (0, i.jsx)(d.y, {
             experiment: n,
             experimentId: s,
-            overrideDescriptor: m
+            overrideDescriptor: g
           })
         }), "string" == typeof n.description ? (0, i.jsx)("div", {
           className: f.description,
@@ -142,7 +142,7 @@ function _(e) {
         }), (0, i.jsx)(o.Text, {
           variant: "code",
           className: f.pre,
-          children: null == m ? "None" : JSON.stringify(m, void 0, 2)
+          children: null == g ? "None" : JSON.stringify(g, void 0, 2)
         }), (0, i.jsx)(o.vwX, {
           tag: "h5",
           className: f.debugTitle,
@@ -175,16 +175,16 @@ function x(e) {
     experiment: t,
     experimentId: n,
     overrideDescriptor: s
-  } = e, [c, g] = r.useState(null != s), [p, b] = r.useState(!1), _ = r.useCallback(() => {
-    g(e => !e)
+  } = e, [c, m] = r.useState(null != s), [p, b] = r.useState(!1), _ = r.useCallback(() => {
+    m(e => !e)
   }, []), x = (0, a.e7)([u.Z], () => u.Z.getLoadedGuildExperiment(n)), E = (0, a.Wu)([u.Z], () => l().sortBy(u.Z.getRecentExposures(h.xY.GUILD, n), e => {
     let [t, n] = e;
     return -n
   }).map(e => {
     let [t, n] = e;
     return "".concat(new Date(n).toLocaleString(), " (").concat(t, ")")
-  })), [C, j] = (0, a.Wu)([m.Z, u.Z], () => {
-    let e = l().sortBy(l().values(m.Z.getGuilds()), e => e.name.toLowerCase()),
+  })), [C, j] = (0, a.Wu)([g.Z, u.Z], () => {
+    let e = l().sortBy(l().values(g.Z.getGuilds()), e => e.name.toLowerCase()),
       t = {},
       i = [];
     for (let s of e) {

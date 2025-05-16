@@ -1,6 +1,6 @@
 /** Chunk was on 69835 **/
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -41,25 +41,25 @@ function u(e) {
     })]
   })
 }
-let m = function(e) {
+let g = function(e) {
   let {
     onClose: t,
     onClaim: n,
-    code: m,
-    outboundPromotion: g,
+    code: g,
+    outboundPromotion: m,
     transitionState: p
   } = e, [h, f] = r.useState(null), b = (0, a.Dt)();
   return r.useEffect(() => {
-    null == m && (0, o.A2)(g.id).then(e => n(e)).catch(e => {
+    null == g && (0, o.A2)(m.id).then(e => n(e)).catch(e => {
       var t;
       return f(null == e || null == (t = e.body) ? void 0 : t.code)
     })
-  }, [m, g.id, n]), (0, i.jsx)(s.Y0X, {
+  }, [g, m.id, n]), (0, i.jsx)(s.Y0X, {
     transitionState: p,
     "aria-labelledby": b,
     children: null != h ? (0, i.jsx)(u, {
       onClose: t
-    }) : null == m ? (0, i.jsx)(s.hzk, {
+    }) : null == g ? (0, i.jsx)(s.hzk, {
       children: (0, i.jsx)(s.$jN, {
         className: d.loading
       })
@@ -77,14 +77,14 @@ let m = function(e) {
         children: [(0, i.jsx)(s.Text, {
           variant: "text-md/normal",
           className: d.bodyText,
-          children: g.outboundRedemptionModalBody
+          children: m.outboundRedemptionModalBody
         }), (0, i.jsx)(s.$i$, {
           className: d.formDivider
         }), (0, i.jsxs)(s.hjN, {
           title: c.intl.string(c.t.s9LFQk),
           className: d.formSection,
           children: [(0, i.jsx)(l.Z, {
-            value: m,
+            value: g,
             buttonColor: s.zxk.Colors.BRAND,
             buttonLook: s.zxk.Looks.FILLED,
             delay: 1e3
@@ -99,7 +99,7 @@ let m = function(e) {
         children: [(0, i.jsx)(s.zxk, {
           color: s.zxk.Colors.BRAND,
           onClick: () => {
-            let e = (0, o.BU)(m, g);
+            let e = (0, o.BU)(g, m);
             window.open(e, "_blank")
           },
           children: c.intl.string(c.t["+zx47e"])

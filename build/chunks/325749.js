@@ -36,8 +36,8 @@ var r = n(255367),
   A = n(317381),
   D = n(884338),
   U = n(473179),
-  B = n(932174),
-  R = n(981631),
+  R = n(932174),
+  B = n(981631),
   L = n(388032),
   Y = n(951927);
 let z = D.u.SIZE_24;
@@ -80,12 +80,12 @@ function M(e) {
     popoutWindowAlwaysOnTop: ee,
     handleStayOnTop: et
   } = function() {
-    let e = (0, c.e7)([v.Z], () => v.Z.getIsAlwaysOnTop(R.KJ3.ACTIVITY_POPOUT)),
+    let e = (0, c.e7)([v.Z], () => v.Z.getIsAlwaysOnTop(B.KJ3.ACTIVITY_POPOUT)),
       t = o.useCallback(e => {
-        O.hY(R.KJ3.ACTIVITY_POPOUT, e)
+        O.hY(B.KJ3.ACTIVITY_POPOUT, e)
       }, []);
     return {
-      canStayOnTop: w.isPlatformEmbedded && T.ZP.supportsFeature(R.eRX.POPOUT_WINDOWS),
+      canStayOnTop: w.isPlatformEmbedded && T.ZP.supportsFeature(B.eRX.POPOUT_WINDOWS),
       popoutWindowAlwaysOnTop: e,
       handleStayOnTop: t
     }
@@ -98,7 +98,7 @@ function M(e) {
       popoutWindow: e,
       currentDocument: t,
       rootNode: n
-    } = (0, B.Z)(), [r, i] = o.useState(!1), l = o.useCallback(() => {
+    } = (0, R.Z)(), [r, i] = o.useState(!1), l = o.useCallback(() => {
       null != n && r && (i(!1), (0, k.Pr)(n, t))
     }, [n, t, r]), a = o.useCallback(() => {
       null != n && (r ? l() : (i(!0), (0, k.Dj)(n)))
@@ -124,7 +124,7 @@ function M(e) {
     position: "bottom",
     children: el
   })), (0, r.jsx)(u.f6W, {
-    theme: R.BRd.DARK,
+    theme: B.BRd.DARK,
     children: e => (0, r.jsxs)("div", {
       className: l()(Y.container, e),
       children: [(0, r.jsxs)("div", {
@@ -157,7 +157,7 @@ function M(e) {
         }), (0, r.jsxs)("div", {
           className: Y.actionButtonsContainer,
           children: [(0, r.jsx)(P.Z, {
-            appContext: R.IlC.POPOUT,
+            appContext: B.IlC.POPOUT,
             applicationId: t,
             channel: K,
             shouldPrioritizeGroupPlusIcon: !0,
@@ -216,7 +216,7 @@ function M(e) {
                 }
                 return e
               }({}, e), r = r = {
-                ref: ei,
+                buttonRef: ei,
                 key: "more-options",
                 isActive: i
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

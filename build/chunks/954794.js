@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(823379),
   d = n(882029),
   u = n(955204),
-  m = n(248998),
-  g = n(388032),
+  g = n(248998),
+  m = n(388032),
   p = n(167407);
 
 function h(e) {
@@ -30,7 +30,7 @@ function h(e) {
         }), (0, i.jsx)(a.Text, {
           variant: "text-lg/normal",
           color: "text-normal",
-          children: g.intl.string(g.t["13/7kZ"])
+          children: m.intl.string(m.t["13/7kZ"])
         })]
       })
     }), (0, i.jsxs)("div", {
@@ -40,11 +40,11 @@ function h(e) {
         children: [(0, i.jsx)(a.X6q, {
           variant: "heading-lg/extrabold",
           color: "header-primary",
-          children: g.intl.string(g.t["6jI0hY"])
+          children: m.intl.string(m.t["6jI0hY"])
         }), (0, i.jsx)(a.Text, {
           variant: "text-md/normal",
           color: "header-secondary",
-          children: g.intl.string(g.t.GuUItb)
+          children: m.intl.string(m.t.GuUItb)
         })]
       }), (0, i.jsx)("div", {
         className: p.headerIcon,
@@ -64,7 +64,7 @@ function h(e) {
             achievementId: t,
             dateUnlocked: n
           } = e;
-          return (0, i.jsx)(m.Z, {
+          return (0, i.jsx)(g.Z, {
             achievementId: t,
             dateUnlocked: n
           }, t)
@@ -77,11 +77,11 @@ function h(e) {
         children: (0, i.jsx)(a.Text, {
           variant: "text-md/bold",
           color: "header-secondary",
-          children: g.intl.string(g.t.GFyMg4)
+          children: m.intl.string(m.t.GFyMg4)
         })
       }), (0, i.jsx)("div", {
         className: p.achievementGrid,
-        children: f.map(e => (0, i.jsx)(m.Z, {
+        children: f.map(e => (0, i.jsx)(g.Z, {
           achievementId: e.id
         }, e.id))
       })]

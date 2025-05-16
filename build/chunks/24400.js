@@ -1,6 +1,6 @@
 /** Chunk was on 69835 **/
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var i = n(255367),
   r = n(604849),
@@ -11,9 +11,9 @@ var i = n(255367),
   c = n(526761),
   d = n(726985),
   u = n(981631),
-  m = n(388032);
+  g = n(388032);
 
-function g() {
+function m() {
   let e = (0, r.c)();
   return (0, i.jsx)(a.U, {
     setting: d.s6.PRIVACY_SAFETY_ALERTS_V2,
@@ -21,8 +21,8 @@ function g() {
     children: (0, i.jsx)(o.Z, {
       value: e,
       onChange: s.Q,
-      title: m.intl.string(m.t.qFsx5u),
-      note: m.intl.format(m.t.lunaRk, {
+      title: g.intl.string(g.t.qFsx5u),
+      note: g.intl.format(g.t.lunaRk, {
         learnMoreLink: l.Z.getArticleURL(u.BhN.SAFETY_ALERTS)
       })
     })

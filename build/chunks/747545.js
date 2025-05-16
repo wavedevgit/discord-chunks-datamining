@@ -12,8 +12,8 @@ var i = n(255367),
   c = n(442837),
   d = n(846519),
   u = n(481060),
-  m = n(846027),
-  g = n(579806),
+  g = n(846027),
+  m = n(579806),
   p = n(906732),
   h = n(920321),
   f = n(921801),
@@ -77,7 +77,7 @@ function N(e) {
       color: "interactive-normal",
       variant: "text-sm/normal",
       children: S.intl.format(S.t.stagfH, {
-        onEnableClick: () => m.Z.enable(!0)
+        onEnableClick: () => g.Z.enable(!0)
       })
     }), N ? null : (0, i.jsx)(u.j7V, {
       className: v.previewToggle,
@@ -105,9 +105,9 @@ function N(e) {
           options: k,
           value: R,
           isDisabled: !D,
-          onChange: e => m.Z.setVideoDevice(e),
+          onChange: e => g.Z.setVideoDevice(e),
           "aria-label": S.intl.string(S.t["t9eQ/v"])
-        }), !r && !!(0, C.isWindows)() && !!C.isPlatformEmbedded && o().satisfies(g.Z.os.release, ">=10.0.22000") && (0, i.jsx)(u.R94, {
+        }), !r && !!(0, C.isWindows)() && !!C.isPlatformEmbedded && o().satisfies(m.Z.os.release, ">=10.0.22000") && (0, i.jsx)(u.R94, {
           className: v.cameraDeeplink,
           children: S.intl.format(S.t.aJYgRk, {
             onCameraSettingsClick: () => {
