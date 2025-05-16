@@ -23,9 +23,9 @@ let M = function(A) {
     badge: e,
     primaryColor: M,
     secondaryColor: a
-  } = A, [l, E] = t.useState(!1), c = t.useMemo(() => Q.go.every(A => A.primary !== M || A.secondary !== a), [M, a]);
+  } = A, [l, E] = t.useState(!1), c = t.useRef(null), P = t.useMemo(() => Q.go.every(A => A.primary !== M || A.secondary !== a), [M, a]);
 
-  function P(A) {
+  function d(A) {
     let g = {};
     void 0 !== A.primary && (g.badgeColorPrimary = A.primary), void 0 !== A.secondary && (g.badgeColorSecondary = A.secondary), w.Z.updateGuildProfile(v, g)
   }
@@ -40,7 +40,7 @@ let M = function(A) {
         className: f()(i.pickerItem, {
           [i.pickerItemSelected]: A.primary === M && A.secondary === a
         }),
-        onClick: () => P(A),
+        onClick: () => d(A),
         children: (0, B.jsx)(n.v, {
           badge: e,
           width: 32,
@@ -49,18 +49,19 @@ let M = function(A) {
           secondaryTintColor: A.secondary
         })
       }, "".concat(A.primary).concat(A.secondary))), (0, B.jsx)(h.Z, {
+        popoutTargetRef: c,
         showSecondaryColor: D.ER[e] >= 2,
         palette: {
           primary: M,
           secondary: a
         },
         onPrimaryColorChange: A => {
-          P({
+          d({
             primary: (0, r.Rf)(A)
           })
         },
         onSecondaryColorChange: A => {
-          P({
+          d({
             secondary: (0, r.Rf)(A)
           })
         },
@@ -86,11 +87,12 @@ let M = function(A) {
             }
             return A
           }({}, A), v = v = {
+            innerRef: c,
             onClick: () => {
               E(A => !A)
             },
             className: f()(i.pickerItem, {
-              [i.pickerItemSelected]: c
+              [i.pickerItemSelected]: P
             }),
             children: (0, B.jsx)(C.ilE, {
               size: "custom",

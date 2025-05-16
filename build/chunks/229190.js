@@ -76,9 +76,11 @@ function h(A) {
     children: f,
     palette: r,
     onPrimaryColorChange: h,
-    onSecondaryColorChange: n
+    onSecondaryColorChange: n,
+    popoutTargetRef: w
   } = A;
   return (0, B.jsx)(e.yRy, {
+    targetElementRef: w,
     renderPopout: () => (0, B.jsx)(C, {
       showSecondaryColor: v,
       palette: r,

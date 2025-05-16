@@ -28,6 +28,7 @@ let p = r.memo(function(e) {
   }
   return (0, i.jsxs)("div", {
     className: m.container,
+    ref: e.ref,
     children: [(0, i.jsx)(s.olH, {
       className: m.closeButton,
       onClick: f

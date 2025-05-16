@@ -30,6 +30,7 @@ function b(e) {
     }), null == (n = e.onDismiss) || n.call(e, t)
   }
   return (0, i.jsx)(l.yRy, {
+    targetElementRef: e.targetElementRef,
     position: "top",
     spacing: 16,
     shouldShow: !0,
@@ -59,6 +60,7 @@ function _(e) {
     }), (0, c.Qd)(s.C.ADOPT_CLAN_IDENTITY_NOTICE, e.guild.id, !0, p.L.DISMISS), null == (n = e.onDismiss) || n.call(e, t)
   }
   return (0, i.jsx)(l.yRy, {
+    targetElementRef: e.targetElementRef,
     position: "top",
     spacing: 16,
     shouldShow: !0,
@@ -82,14 +84,17 @@ function x(e) {
   return null != t && (0, g.jq)(t) && null !== n ? "changed" === n ? (0, i.jsx)(b, {
     guild: t,
     onDismiss: e.onDismiss,
+    targetElementRef: e.targetElementRef,
     children: e.children
   }) : (0, i.jsx)(_, {
     guild: t,
     onDismiss: e.onDismiss,
+    targetElementRef: e.targetElementRef,
     children: e.children
   }) : (f.error("GuildTagCoachmark rendered without guildId or coachmark type."), (0, i.jsx)(l.yRy, {
     position: "top",
     renderPopout: () => (0, i.jsx)("div", {}),
+    targetElementRef: e.targetElementRef,
     children: e.children
   }))
 }
