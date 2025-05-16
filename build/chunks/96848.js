@@ -21,7 +21,7 @@ function _(e) {
   let {
     setEmojiConfetti: t,
     emojiConfetti: n
-  } = e, [s, l] = i.useState(!1), _ = e => (0, r.jsxs)("div", {
+  } = e, [s, l] = i.useState(!1), _ = i.useRef(null), p = e => (0, r.jsxs)("div", {
     className: u.customGiftContent,
     children: [(0, r.jsxs)("div", {
       className: u.customGiftHeader,
@@ -33,10 +33,11 @@ function _(e) {
         children: c.intl.string(c.t.stGFAw)
       })]
     }), e]
-  }), p = e => {
+  }), h = e => {
     null != t && (t(e), l(!1))
   };
   return (0, r.jsx)(a.yRy, {
+    targetElementRef: _,
     shouldShow: s,
     position: "bottom",
     align: "left",
@@ -50,10 +51,10 @@ function _(e) {
         children: (0, r.jsx)(o.Z, {
           analyticsOverride: d,
           closePopout: t,
-          onSelectEmoji: p,
+          onSelectEmoji: h,
           wrapper: "div",
           pickerIntention: f,
-          renderHeader: _,
+          renderHeader: p,
           headerClassName: u.emojiHeader,
           className: u.emojiList,
           listHeaderClassName: u.emojiList,
@@ -66,6 +67,7 @@ function _(e) {
     },
     children: () => (0, r.jsx)("div", {
       className: u.container,
+      ref: _,
       children: (0, r.jsx)(a.P3F, {
         className: u.emoji,
         onClick: () => l(!0),

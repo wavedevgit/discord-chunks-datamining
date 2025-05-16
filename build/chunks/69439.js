@@ -76,11 +76,11 @@ function O(e) {
     isClaiming: m.Z.isClaimingReward(w.id) || m.Z.isFetchingRewardCode(w.id),
     isEnrolling: m.Z.isEnrolling(w.id),
     isQuestEnrollmentBlocked: null != m.Z.questEnrollmentBlockedUntil
-  })), Z = (null == (t = w.userStatus) ? void 0 : t.enrolledAt) != null, W = (null == (n = w.userStatus) ? void 0 : n.completedAt) != null, V = W && (null == (s = w.userStatus) ? void 0 : s.claimedAt) == null, Q = (0, g.iQ)(w), U = !(0, g.zi)(w), H = (0, p._Q)(w), z = (0, g.Xv)(w.config), F = (0, g.q8)(w), X = (0, g.Vl)(w), K = (0, p.Rf)(w), [Y, G, J] = (0, p.me)(w, K), $ = U && H === p.OH.ACCEPTED, ee = $ && Y === f.LI.SELECT, et = $ && !ee && G.length > 1, en = o.useCallback(e => {
-    J(e), e === j.cd.DESKTOP && P([])
-  }, [J, P]), {
-    text: er,
-    onClick: eo
+  })), Z = (null == (t = w.userStatus) ? void 0 : t.enrolledAt) != null, W = (null == (n = w.userStatus) ? void 0 : n.completedAt) != null, V = W && (null == (s = w.userStatus) ? void 0 : s.claimedAt) == null, Q = (0, g.iQ)(w), U = !(0, g.zi)(w), H = (0, p._Q)(w), z = (0, g.Xv)(w.config), F = (0, g.q8)(w), X = (0, g.Vl)(w), K = o.useRef(null), Y = (0, p.Rf)(w), [G, J, $] = (0, p.me)(w, Y), ee = U && H === p.OH.ACCEPTED, et = ee && G === f.LI.SELECT, en = ee && !et && J.length > 1, er = o.useCallback(e => {
+    $(e), e === j.cd.DESKTOP && P([])
+  }, [$, P]), {
+    text: eo,
+    onClick: es
   } = (0, x.Ks)({
     progressState: H,
     quest: w,
@@ -92,8 +92,8 @@ function O(e) {
     isVideoQuest: F,
     inGameQuest: X
   }), {
-    startingConsoleQuest: es,
-    startConsoleQuest: ea
+    startingConsoleQuest: ea,
+    startConsoleQuest: ei
   } = (0, p.GI)({
     questId: w.id,
     beforeRequest: () => {
@@ -108,14 +108,14 @@ function O(e) {
     afterRequest: e => {
       R.stopAnimation(), P(e)
     }
-  }), ei = (null == (O = w.userStatus) ? void 0 : O.claimedAt) != null, el = null;
-  return (Q && V ? el = (0, r.jsx)(l.zxk, {
+  }), el = (null == (O = w.userStatus) ? void 0 : O.claimedAt) != null, ec = null;
+  return (Q && V ? ec = (0, r.jsx)(l.zxk, {
     color: l.Ttl.BRAND,
     submitting: D,
-    onClick: null != eo ? eo : void 0,
+    onClick: null != es ? es : void 0,
     className: _.button,
-    children: er
-  }) : W ? el = F ? (0, r.jsxs)(r.Fragment, {
+    children: eo
+  }) : W ? ec = F ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.zxk, {
       color: l.Ttl.PRIMARY,
       className: _.button,
@@ -137,27 +137,27 @@ function O(e) {
     }), (0, r.jsx)(l.zxk, {
       color: l.Ttl.BRAND,
       className: _.button,
-      onClick: null != eo ? eo : void 0,
-      children: er
+      onClick: null != es ? es : void 0,
+      children: eo
     })]
   }) : (0, r.jsx)(l.zxk, {
     color: l.Ttl.BRAND,
     className: _.button,
-    onClick: null != eo ? eo : void 0,
-    children: er
-  }) : U ? U && V ? el = (0, r.jsx)(l.zxk, {
+    onClick: null != es ? es : void 0,
+    children: eo
+  }) : U ? U && V ? ec = (0, r.jsx)(l.zxk, {
     color: l.Ttl.BRAND,
     submitting: D,
-    onClick: null != eo ? eo : void 0,
+    onClick: null != es ? es : void 0,
     className: _.button,
-    children: er
-  }) : U && Z && !ei ? el = ee ? (0, r.jsx)(l.PhF, {
+    children: eo
+  }) : U && Z && !el ? ec = et ? (0, r.jsx)(l.PhF, {
     className: _.platformSelectorPrimary,
     isSelected: () => !1,
     options: y,
     placeholder: v.intl.string(v.t.drVw4e),
     renderOptionLabel: C,
-    select: en,
+    select: er,
     serialize: e => {
       switch (e) {
         case j.cd.DESKTOP:
@@ -166,15 +166,15 @@ function O(e) {
           return v.intl.string(v.t["8lAfuL"])
       }
     }
-  }) : (0, g.$J)(w) && !q && Y !== f.LI.DESKTOP ? k ? (0, r.jsx)(l.zxk, {
+  }) : (0, g.$J)(w) && !q && G !== f.LI.DESKTOP ? k ? (0, r.jsx)(l.zxk, {
     color: l.Ttl.PRIMARY,
     className: _.button,
-    onClick: null != eo ? eo : void 0,
-    children: er
+    onClick: null != es ? es : void 0,
+    children: eo
   }) : (0, r.jsx)(l.zxk, {
     color: l.Ttl.PRIMARY,
-    onClick: ea,
-    disabled: es,
+    onClick: ei,
+    disabled: ea,
     className: _.button,
     children: (0, r.jsxs)("div", {
       className: _.ctaInner,
@@ -182,15 +182,15 @@ function O(e) {
     })
   }) : F || X && w.config.features.includes(j.S7.START_QUEST_CTA) ? (0, r.jsx)(l.zxk, {
     color: l.Ttl.BRAND,
-    onClick: null != eo ? eo : void 0,
+    onClick: null != es ? es : void 0,
     className: _.button,
-    children: er
+    children: eo
   }) : (0, r.jsx)(l.zxk, {
     color: l.Ttl.PRIMARY,
     disabled: !0,
     className: _.button,
     children: v.intl.string(v.t["9KoPyM"])
-  }) : U && !Z && (el = L ? (0, r.jsxs)(r.Fragment, {
+  }) : U && !Z && (ec = L ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.zxk, {
       color: l.Ttl.PRIMARY,
       className: _.button,
@@ -205,20 +205,21 @@ function O(e) {
   }) : (0, r.jsx)(l.zxk, {
     submitting: M,
     color: l.Ttl.BRAND,
-    onClick: null != eo ? eo : void 0,
+    onClick: null != es ? es : void 0,
     className: _.button,
-    children: er
-  })) : el = (0, r.jsx)(l.zxk, {
+    children: eo
+  })) : ec = (0, r.jsx)(l.zxk, {
     color: l.Ttl.PRIMARY,
     disabled: !0,
     className: _.button,
     children: v.intl.format(v.t["14o6QU"], {
       expiryDate: I
     })
-  }), null == el) ? null : (0, r.jsxs)("div", {
+  }), null == ec) ? null : (0, r.jsxs)("div", {
     className: _.container,
-    children: [el, et && (0, r.jsx)(b.U, {
-      onSelect: en,
+    children: [ec, en && (0, r.jsx)(b.U, {
+      popoutTargetRef: K,
+      onSelect: er,
       quest: w,
       questContent: f.jn.ACTIVITY_PANEL,
       children: e => {
@@ -241,6 +242,7 @@ function O(e) {
           }
           return e
         }({
+          buttonRef: K,
           className: a()(_.button, _.platformSelectorSecondary),
           color: l.Ttl.PRIMARY
         }, e), n = n = {
@@ -259,7 +261,7 @@ function O(e) {
                 default:
                   return null
               }
-            }(Y), (0, r.jsx)(l.CJ0, {
+            }(G), (0, r.jsx)(l.CJ0, {
               className: _.platformSelectorSecondaryChevron,
               color: "currentColor"
             })]

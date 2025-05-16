@@ -16,16 +16,16 @@ var r = n(255367),
   x = n(113434),
   g = n(569984),
   h = n(497505),
-  j = n(918701),
-  f = n(467628),
+  f = n(918701),
+  j = n(467628),
   b = n(75137),
   C = n(373370),
   v = n(566078),
   y = n(65443),
   T = n(340100),
   O = n(644646),
-  N = n(667105),
-  E = n(341907),
+  E = n(667105),
+  N = n(341907),
   q = n(128535),
   S = n(87894),
   P = n(2660),
@@ -101,7 +101,7 @@ function Z(e) {
     location: i,
     questContentPosition: o,
     inGiftInventory: u
-  } = e, d = n >= x.OH.COMPLETED, m = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), p = (0, a.e7)([g.Z], () => g.Z.isEnrolling(t.id)), h = (0, j.q8)(t), f = (0, j.Vl)(t), b = (0, N.Ks)({
+  } = e, d = n >= x.OH.COMPLETED, m = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), p = (0, a.e7)([g.Z], () => g.Z.isEnrolling(t.id)), h = (0, f.q8)(t), j = (0, f.Vl)(t), b = (0, E.Ks)({
     progressState: n,
     quest: t,
     location: i,
@@ -109,7 +109,7 @@ function Z(e) {
     questContentPosition: o,
     inGiftInventory: u,
     isVideoQuest: h,
-    inGameQuest: f
+    inGameQuest: j
   }), C = d && !m ? l.gtL : l.zxk;
   return (0, r.jsx)(l.ua7, {
     text: b.tooltipText,
@@ -136,7 +136,7 @@ let L = e => {
     quest: n,
     location: i,
     size: c,
-    isFocused: N,
+    isFocused: E,
     isQuestExpired: L,
     isExpanded: B,
     isAnimating: U,
@@ -145,17 +145,17 @@ let L = e => {
     year: "numeric",
     month: "long",
     day: "numeric"
-  }), F = W >= x.OH.ACCEPTED, G = W >= x.OH.COMPLETED, H = W >= x.OH.CLAIMED, X = (0, j.Xv)(n.config), Y = (0, S.uq)(i), V = i === h.jn.QUESTS_EMBED, K = B || U, J = F && !H && Y, $ = (0, x.t5)(n, w.dr.QUESTS_CARD, i), {
+  }), F = W >= x.OH.ACCEPTED, G = W >= x.OH.COMPLETED, H = W >= x.OH.CLAIMED, X = (0, f.Xv)(n.config), Y = (0, S.uq)(i), V = i === h.jn.QUESTS_EMBED, K = B || U, J = F && !H && Y, $ = (0, x.t5)(n, w.dr.QUESTS_CARD, i), {
     xboxAndPlaystationAccounts: ee
-  } = (0, x.z6)(), et = (0, p.O5)(), en = (0, f.j)({
+  } = (0, x.z6)(), et = (0, p.O5)(), en = (0, j.j)({
     location: w.dr.QUESTS_BAR_MOBILE
   }), er = s.useMemo(() => v.r.build(n.config), [n.config]), es = (0, x.Rf)(n), ei = (0, C.DD)({
     quest: n,
     taskDetails: es,
     location: w.dr.QUESTS_CARD,
     questContent: h.jn.QUESTS_EMBED
-  }), eo = (0, a.e7)([g.Z], () => null != g.Z.questEnrollmentBlockedUntil, []), ea = (0, a.e7)([u.default], () => u.default.locale), el = (0, x.z)(n), ec = Y && X, eu = L && !G, ed = ee.length > 0 && Y && (0, j.$J)(n) && F && !G && !el, em = (0, r.jsx)(O.Z, {
-    autoplay: N,
+  }), eo = (0, a.e7)([g.Z], () => null != g.Z.questEnrollmentBlockedUntil, []), ea = (0, a.e7)([u.default], () => u.default.locale), el = (0, x.z)(n), ec = Y && X, eu = L && !G, ed = ee.length > 0 && Y && (0, f.$J)(n) && F && !G && !el, em = (0, r.jsx)(O.Z, {
+    autoplay: E,
     className: o()(I.gridImg, {
       [I.questRewardGiftInventory]: Y && "lg" === c,
       [I.questRewardEmbed]: V && "lg" === c,
@@ -195,7 +195,7 @@ let L = e => {
           }), ec ? (0, r.jsx)(P.Z, {
             questConfig: n.config,
             fallback: em,
-            isFocused: N
+            isFocused: E
           }) : em]
         }))
       }), (0, r.jsxs)("div", {
@@ -223,11 +223,11 @@ let L = e => {
               withCopySimplification: u,
               collectibleQuestRewardDescription: p,
               formattedCompletionDate: x
-            } = e, g = (null == (t = o.userStatus) ? void 0 : t.completedAt) != null, h = g && (null == (n = o.userStatus) ? void 0 : n.claimedAt) != null, f = (0, j.oo)({
+            } = e, g = (null == (t = o.userStatus) ? void 0 : t.completedAt) != null, h = g && (null == (n = o.userStatus) ? void 0 : n.claimedAt) != null, j = (0, f.oo)({
               quest: o
-            }), C = c.defaultReward.messages.nameWithArticle, v = c.defaultReward.messages.nameWithArticle, y = u ? v : C, T = (0, j.Kr)(o.config), O = (0, j.b7)(o), N = (0, b.U)();
+            }), C = c.defaultReward.messages.nameWithArticle, v = c.defaultReward.messages.nameWithArticle, y = u ? v : C, T = (0, f.Kr)(o.config), O = (0, f.b7)(o), E = (0, b.U)();
             if (h) {
-              let e = f ? (0, j.o9)({
+              let e = j ? (0, f.o9)({
                   quest: o,
                   idx: null == (r = o.userStatus) ? void 0 : r.claimedTier
                 }) : null,
@@ -240,23 +240,23 @@ let L = e => {
                 date: x
               })
             }
-            if (g) return f ? _.intl.formatToPlainString(_.t.l1jCMz, {
+            if (g) return j ? _.intl.formatToPlainString(_.t.l1jCMz, {
               date: x
             }) : _.intl.formatToPlainString(_.t.zNoqRU, {
               reward: y,
               date: x
             });
-            let E = f ? (0, j.o9)({
+            let N = j ? (0, f.o9)({
               quest: o,
               idx: 0
             }) : null;
             return l ? _.intl.formatToPlainString(_.t.DT3aub, {
-              reward: null != (i = null == E ? void 0 : E.messages.nameWithArticle) ? i : y
-            }) : null != E && null != E.approximateCount ? _.intl.format(_.t["4bMK19"], {
-              maxReward: E.messages.nameWithArticle,
-              maxRewardCount: (0, m.Bs)(E.approximateCount, a),
+              reward: null != (i = null == N ? void 0 : N.messages.nameWithArticle) ? i : y
+            }) : null != N && null != N.approximateCount ? _.intl.format(_.t["4bMK19"], {
+              maxReward: N.messages.nameWithArticle,
+              maxRewardCount: (0, m.Bs)(N.approximateCount, a),
               helpCenterLink: d.Z.getArticleURL(R.BhN.QUESTS_LEARN_MORE)
-            }) : N ? p : null != T ? _.intl.formatToPlainString(_.t.Pu5eyM, {
+            }) : E ? p : null != T ? _.intl.formatToPlainString(_.t.Pu5eyM, {
               reward: y,
               duration: T
             }) : null != O ? O.description : _.intl.formatToPlainString(_.t.ttFsLi, {
@@ -281,7 +281,7 @@ let L = e => {
           children: _.intl.string(_.t.V293qq)
         }), (0, r.jsx)(l.zxk, {
           color: l.Ttl.BRAND,
-          onClick: () => (0, E.openQuestMinorEnrollmentBlockModal)(i),
+          onClick: () => (0, N.openQuestMinorEnrollmentBlockModal)(i),
           className: I.questEnrollmentBlockedButton,
           children: _.intl.string(_.t.vY9GgI)
         })]
@@ -290,7 +290,7 @@ let L = e => {
         children: [!Y && (0, r.jsx)(k, {
           containerSize: c,
           onClick: () => {
-            (0, E.navigateToQuestHome)({
+            (0, N.navigateToQuestHome)({
               fromContent: i,
               questId: n.id
             }), et({

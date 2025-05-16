@@ -380,7 +380,7 @@ function w() {
 }
 
 function k() {
-  let [e, t] = r.useState(1), [n, s] = r.useState(!1), [l, a] = r.useState(5), [o, c] = r.useState(!1);
+  let [e, t] = r.useState(1), [n, s] = r.useState(!1), [l, a] = r.useState(5), [o, c] = r.useState(!1), u = r.useRef(null);
   return (0, i.jsxs)("div", {
     className: x.section,
     children: [(0, i.jsx)(d.X6q, {
@@ -388,6 +388,7 @@ function k() {
       children: "Context Menus"
     }), (0, i.jsx)("span", {
       children: (0, i.jsx)(d.yRy, {
+        targetElementRef: u,
         shouldShow: o,
         renderPopout: () => (0, i.jsxs)(d.v2r, {
           navId: "demo",
@@ -462,6 +463,7 @@ function k() {
           })]
         }),
         children: () => (0, i.jsx)(d.zxk, {
+          buttonRef: u,
           onClick: () => c(!o),
           children: "Toggle context menu"
         })

@@ -55,6 +55,7 @@ function l(e) {
     return o
   }(e, ["children"]);
   return (0, r.jsx)(o.yRy, {
+    targetElementRef: e.popoutTargetRef,
     position: "bottom",
     align: "right",
     renderPopout: e => {

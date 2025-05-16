@@ -1,7 +1,7 @@
 /** Chunk was on 37447 **/
 n.d(t, {
-  US: () => j,
-  ZP: () => f,
+  US: () => f,
+  ZP: () => j,
   fF: () => h
 });
 var r, s, i = n(255367);
@@ -17,8 +17,8 @@ var o = n(120356),
   x = n(981631),
   g = n(582835),
   h = ((r = {})[r.SMALL = 24] = "SMALL", r[r.MEDIUM = 32] = "MEDIUM", r),
-  j = ((s = {})[s.SMALL = 2] = "SMALL", s[s.MEDIUM = 8] = "MEDIUM", s);
-let f = function(e) {
+  f = ((s = {})[s.SMALL = 2] = "SMALL", s[s.MEDIUM = 8] = "MEDIUM", s);
+let j = function(e) {
   let {
     className: t,
     logotypeClassName: n,
@@ -26,13 +26,13 @@ let f = function(e) {
     quest: s,
     separatorSpacing: o = 2,
     theme: h = x.BRd.DARK,
-    withCosponsor: j = !0,
-    withGameTile: f = !0,
+    withCosponsor: f = !0,
+    withGameTile: j = !0,
     onLoadComplete: b
-  } = e, C = (0, c.wj)(h) ? x.BRd.DARK : x.BRd.LIGHT, v = (0, d.Gd)(s.id, C), y = j && null != s.config.cosponsorMetadata && null != v;
+  } = e, C = (0, c.wj)(h) ? x.BRd.DARK : x.BRd.LIGHT, v = (0, d.Gd)(s.id, C), y = f && null != s.config.cosponsorMetadata && null != v;
   return (0, i.jsxs)("div", {
     className: a()(g.partnerBranding, t),
-    children: [f && (0, i.jsx)(p.Fl, {
+    children: [j && (0, i.jsx)(p.Fl, {
       id: "QuestPartnerBranding_gameTile",
       children: e => (0, i.jsx)("img", {
         ref: e,

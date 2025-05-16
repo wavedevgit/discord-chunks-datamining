@@ -343,7 +343,7 @@ let L = (0, x.oH)(function() {
     } = (0, a.cj)([m.ZP], () => ({
       runningGame: m.ZP.getVisibleGame(),
       overrideExePaths: L(...m.ZP.getOverrides())
-    }));
+    })), u = r.useRef(null);
     return r.useEffect(() => ((0, p.Ky)(), p.P7), []), (0, i.jsxs)(c.hjN, {
       tag: "h1",
       title: n ? O.intl.string(O.t.AVDyEh) : null,
@@ -357,6 +357,7 @@ let L = (0, x.oH)(function() {
         children: [(0, i.jsx)("span", {
           children: O.intl.string(O.t.xwhoqK)
         }), (0, i.jsx)(c.yRy, {
+          targetElementRef: u,
           renderPopout: e => {
             let {
               closePopout: t
@@ -371,6 +372,7 @@ let L = (0, x.oH)(function() {
             look: c.iLD.LINK,
             size: c.PhG.MIN,
             color: c.Ttl.LINK,
+            buttonRef: u,
             children: O.intl.string(O.t.GjgdXV)
           }))
         })]

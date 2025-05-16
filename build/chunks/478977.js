@@ -1,14 +1,14 @@
 /** Chunk was on 17218 **/
 n.d(t, {
-  Z: () => c
+  Z: () => d
 });
-var r = n(255367);
-n(73800);
-var o = n(866442),
-  s = n(481060),
-  a = n(409667);
+var r = n(255367),
+  o = n(73800),
+  s = n(866442),
+  a = n(481060),
+  i = n(409667);
 
-function i(e) {
+function l(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -27,7 +27,7 @@ function i(e) {
   return e
 }
 
-function l(e, t) {
+function c(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -39,33 +39,35 @@ function l(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let c = function(e) {
+let d = function(e) {
   let {
     colorKey: t,
     value: n,
-    onChange: c,
-    title: d
-  } = e;
-  return (0, r.jsxs)(s.xJW, {
-    children: [(0, r.jsx)(s.vwX, {
-      tag: s.RB0.H5,
-      children: d
-    }), (0, r.jsx)(s.yRy, {
-      renderPopout: e => (0, r.jsx)(s.Z$W, l(i({}, e), {
+    onChange: d,
+    title: u
+  } = e, p = o.useRef(null);
+  return (0, r.jsxs)(a.xJW, {
+    children: [(0, r.jsx)(a.vwX, {
+      tag: a.RB0.H5,
+      children: u
+    }), (0, r.jsx)(a.yRy, {
+      targetElementRef: p,
+      renderPopout: e => (0, r.jsx)(a.Z$W, c(l({}, e), {
         value: n,
-        onChange: e => c(t, (0, o.Rf)(e))
+        onChange: e => d(t, (0, s.Rf)(e))
       })),
-      children: e => (0, r.jsx)(s.P3F, l(i({}, e), {
+      children: e => (0, r.jsx)(a.P3F, c(l({}, e), {
+        innerRef: p,
         tag: "span",
         "aria-label": "Select a color",
-        className: a.swatchContainer,
+        className: i.swatchContainer,
         style: {
           backgroundColor: n
         },
-        children: (0, r.jsx)(s.ilE, {
+        children: (0, r.jsx)(a.ilE, {
           size: "xs",
           color: "currentColor",
-          className: a.swatchIcon
+          className: i.swatchIcon
         })
       }))
     })]
