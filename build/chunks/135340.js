@@ -1,4 +1,5 @@
-/** Chunk was on 78331 **/
+/** Chunk was on 50629 **/
+"use strict";
 e.exports = {
   emojiErrorItem: "emojiErrorItem__67954",
   fileIcon: "fileIcon__67954",
