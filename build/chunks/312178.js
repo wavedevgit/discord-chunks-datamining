@@ -1,7 +1,7 @@
 /** Chunk was on 63141 **/
 "use strict";
 n.d(t, {
-  Z: () => C
+  Z: () => j
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -242,17 +242,17 @@ let S = s.ZP.connectStores([d.Z, u.default], e => {
   }
 })(E);
 
-function j(e, t) {
+function C(e, t) {
   return (0, i.jsx)(S, {
     widgetId: e,
     layoutSize: t
   }, e)
 }
-let C = s.ZP.connectStores([d.Z, h.Z], () => {
+let j = s.ZP.connectStores([d.Z, h.Z], () => {
   var e;
   return {
     layout: null != (e = d.Z.getLayout(f.OVERLAY_LAYOUT_ID)) ? e : void 0,
     layoutSize: h.Z.windowSize(),
-    renderWidget: j
+    renderWidget: C
   }
 })(a.Z)

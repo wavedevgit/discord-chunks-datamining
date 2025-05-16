@@ -48,7 +48,7 @@ let E = () => [{
     value: v.wC$.NEVER,
     name: _.intl.string(_.t.ekjlPD)
   }],
-  j = () => [{
+  C = () => [{
     value: v.OYC.ALWAYS,
     name: _.intl.string(_.t.nBmDra)
   }, {
@@ -56,7 +56,7 @@ let E = () => [{
     name: _.intl.string(_.t["2OvIZW"])
   }];
 
-function C() {
+function j() {
   let e = h.default.getNotificationPositionMode(),
     t = e !== v._vf.DISABLED,
     n = u.ZP.getOverlayKeybind(),
@@ -80,7 +80,7 @@ class Z extends r.PureComponent {
     })
   }
   handleChangeNotificationPositionMode(e, t) {
-    l.Z.setNotificationPositionMode(t), C()
+    l.Z.setNotificationPositionMode(t), j()
   }
   handleChangeAvatarSizeMode(e) {
     let {
@@ -226,7 +226,7 @@ class Z extends r.PureComponent {
         className: b.marginBottom20,
         children: (0, i.jsx)(o.FXm, {
           onChange: this.handleChangeDisplayUserMode,
-          options: j(),
+          options: C(),
           value: n,
           size: o.FXm.Sizes.SMALL
         })
@@ -277,7 +277,7 @@ class Z extends r.PureComponent {
         selectedSection: e
       })
     }), x(this, "handleToggleTextChatNotifications", () => {
-      l.Z.setNotificationDisabledSetting(g.OverlayNotificationDisabledSetting.TEXT_CHAT, !this.props.textChatDisabled), C()
+      l.Z.setNotificationDisabledSetting(g.OverlayNotificationDisabledSetting.TEXT_CHAT, !this.props.textChatDisabled), j()
     }), x(this, "handleToggleInviteNotification", () => {
       let e = this.props.shouldShowInviteNotification;
       l.Z.setNotificationDisabledSetting(g.OverlayNotificationDisabledSetting.GAME_ACTIVITY, !e)

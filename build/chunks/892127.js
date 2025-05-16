@@ -89,11 +89,11 @@ let S = r.memo(function(e) {
   }, []), {
     id: D,
     pinned: A,
-    zIndex: L,
-    size: R,
+    zIndex: R,
+    size: L,
     anchor: M,
     minSize: z
-  } = t, U = r.useMemo(() => (0, h.w_)(R, P), [R, P]), V = (0, h.KR)(M, P), {
+  } = t, U = r.useMemo(() => (0, h.w_)(L, P), [L, P]), V = (0, h.KR)(M, P), {
     resizeX: W,
     resizeY: G,
     dragAnywhere: F
@@ -133,7 +133,7 @@ let S = r.memo(function(e) {
     resizeX: null != W && W,
     resizeY: null != G && G,
     style: {
-      zIndex: L
+      zIndex: R
     },
     dragAnywhere: null != F && F,
     active: !w,

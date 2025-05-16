@@ -1,6 +1,6 @@
 /** Chunk was on 89298 **/
 n.d(t, {
-  Z: () => R,
+  Z: () => L,
   w: () => A
 }), n(388685), n(642613);
 var i = n(255367),
@@ -109,7 +109,7 @@ let A = e => {
   })
 };
 
-function L(e) {
+function R(e) {
   var {
     widgetId: t,
     size: n,
@@ -165,11 +165,11 @@ function L(e) {
   })
 }
 
-function R(e) {
+function L(e) {
   var t, n, a, v, x, P;
   let {
     id: A,
-    widget: R,
+    widget: L,
     size: M,
     locked: z,
     padding: U,
@@ -240,7 +240,7 @@ function R(e) {
     }
   }(z, ed, eu), ef = (0, o.e7)([h.Z], () => h.Z.getWindowState(I.$J)), em = {
     id: A,
-    widget: R,
+    widget: L,
     layout: eu,
     participants: eo.length,
     containerSize: ed,
@@ -291,7 +291,7 @@ function R(e) {
         } = e,
         u = w(e, ["id", "containerSize", "tileSize", "sizeOffset", "layout", "padding", "widget"]);
       if (null == c) return;
-      if (0 === l) return void L(N({
+      if (0 === l) return void R(N({
         widgetId: t,
         size: T,
         minSize: D(a, 1, {
@@ -305,7 +305,7 @@ function R(e) {
         tileWidth: d,
         tileHeight: p
       } = i;
-      L(N({
+      R(N({
         widgetId: t,
         size: k(a, d, p, l, {
           padding: s,
@@ -330,7 +330,7 @@ function R(e) {
           widget: s
         } = e,
         c = w(e, ["id", "sizeOffset", "containerSize", "padding", "participants", "widget"]);
-      null != s && L(N({
+      null != s && R(N({
         widgetId: t,
         size: D(n, a, {
           padding: l,
@@ -352,7 +352,7 @@ function R(e) {
           padding: l
         } = e,
         a = w(e, ["id", "sizeOffset", "widget", "padding"]);
-      null != r && L(N({
+      null != r && R(N({
         widgetId: t,
         size: T,
         minSize: D(n, 0, {

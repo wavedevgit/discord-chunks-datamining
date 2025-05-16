@@ -58,7 +58,7 @@ let k = e => [e.userId, ... function(e) {
     searchStringGenerator: k,
     throttleMs: 100
   },
-  L = r.memo(function(e) {
+  R = r.memo(function(e) {
     let {
       channel: t,
       query: n
@@ -84,7 +84,7 @@ let k = e => [e.userId, ... function(e) {
       disableUserPopout: !0
     })
   }),
-  R = r.memo(function(e) {
+  L = r.memo(function(e) {
     var t;
     let {
       channel: n
@@ -137,7 +137,7 @@ let k = e => [e.userId, ... function(e) {
       onMouseLeave: () => h(n),
       children: [(0, i.jsx)("div", {
         className: T.channelItemIcon,
-        children: (0, i.jsx)(R, {
+        children: (0, i.jsx)(L, {
           channel: m
         })
       }), (0, i.jsxs)("div", {
@@ -161,7 +161,7 @@ let k = e => [e.userId, ... function(e) {
         })]
       }), (0, i.jsx)("div", {
         className: T.channelItemAvatars,
-        children: (0, i.jsx)(L, {
+        children: (0, i.jsx)(R, {
           channel: m,
           currentVoiceChannel: o,
           query: f

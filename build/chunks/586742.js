@@ -74,7 +74,7 @@ let A = r.memo(function(e) {
     } = e, l = null == (t = n.user) ? void 0 : t.id;
     return (0, a.e7)([O.Z], () => null != n.user && null != o && null != r && O.Z.isLocalVideoDisabled(l, o), [l, n.user, o, r]) ? null : (0, i.jsx)(m.ZP, k({}, e))
   }),
-  L = r.memo(function(e) {
+  R = r.memo(function(e) {
     let {
       context: t = Z.Yn.DEFAULT,
       participants: o,
@@ -140,7 +140,7 @@ let A = r.memo(function(e) {
       }, e.id))
     })
   }),
-  R = r.memo(function(e) {
+  L = r.memo(function(e) {
     let {
       context: t = Z.Yn.DEFAULT,
       participants: n,
@@ -173,7 +173,7 @@ let A = r.memo(function(e) {
       ref: f,
       className: O,
       style: y,
-      children: (0, i.jsx)(L, {
+      children: (0, i.jsx)(R, {
         context: t,
         participants: n,
         locked: a,
@@ -317,7 +317,7 @@ function z(e) {
     horizontal: b,
     widget: e.widget,
     widgetLayoutSpecs: Z
-  }), (0, i.jsx)(R, D(k({}, e), {
+  }), (0, i.jsx)(L, D(k({}, e), {
     channel: s,
     participants: C,
     participantsVersion: O,

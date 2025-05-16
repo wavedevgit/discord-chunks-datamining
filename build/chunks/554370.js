@@ -35,8 +35,8 @@ var i = n(255367),
   k = n(915614),
   D = n(268861),
   A = n(690336),
-  L = n(333031),
-  R = n(371651),
+  R = n(333031),
+  L = n(371651),
   M = n(624864),
   z = n(610394),
   U = n(388627),
@@ -120,7 +120,7 @@ let q = r.memo(function(e) {
         r === B.AeJ.PRIMARY && t === i && n()
       },
       onContextMenu: J,
-      children: r ? null : (0, i.jsx)(L.Z, {
+      children: r ? null : (0, i.jsx)(R.Z, {
         className: H.closeContainer,
         children: (0, i.jsx)(k.Z, {
           keybind: t,
@@ -135,7 +135,7 @@ let q = r.memo(function(e) {
       locked: t,
       focused: n
     } = e;
-    return t && n ? (0, i.jsx)(L.Z, {
+    return t && n ? (0, i.jsx)(R.Z, {
       className: H.closeContainer,
       children: (0, i.jsx)(k.Z, {
         onClick: () => d.Z.setInputLocked(!1, (0, N.getPID)()),
@@ -186,7 +186,7 @@ function er(e) {
       keybind: null != t ? (0, C.BB)(t.shortcut, !0) : "???"
     }
   }, [n]), {
-    analyticsLocations: L
+    analyticsLocations: R
   } = (0, h.ZP)(p.Z.OVERLAY);
   return ! function(e, t) {
     let n = r.useRef({
@@ -223,7 +223,7 @@ function er(e) {
       if (e.current) return;
       e.current = !0;
       let r = null != (i = _.default.getFocusedPID()) ? i : (0, N.getPID)();
-      if (R.default.hasChangedRenderMode(r)) return;
+      if (L.default.hasChangedRenderMode(r)) return;
       let l = M.Z.isNotificationDisabled(Z.OverlayNotificationDisabledSetting.WELCOME_GENERAL),
         a = M.Z.isNotificationDisabled(Z.OverlayNotificationDisabledSetting.GO_LIVE_NUDGE),
         p = M.Z.isNotificationDisabled(Z.OverlayNotificationDisabledSetting.GAME_ACTIVITY),
@@ -259,7 +259,7 @@ function er(e) {
     }
     n.removeEventListener("contextmenu", X, !1), null == K && (K = Date.now(), d.Z.track(B.rMx.OVERLAY_UNLOCKED))
   }, [o, n]), (0, i.jsx)(h.Gt, {
-    value: L,
+    value: R,
     children: j || f ? null : (0, i.jsx)(c.f6W, {
       theme: B.BRd.MIDNIGHT,
       children: e => (0, i.jsxs)("div", {
