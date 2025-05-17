@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: bd9128ab0642efa4
+  Original File Name: 6b186034c552ea66
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -1428,6 +1428,66 @@
     margin-left: 8px
 }
 
+.header__1436a,.subheader__1436a {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content
+}
+
+.header__1436a {
+    margin: 16px 0
+}
+
+.subheader__1436a {
+    margin: 12px 0 8px
+}
+
+.slider__1436a {
+    margin: -8px 0;
+    width: 100%
+}
+
+.themeSelectionContainer__1436a {
+    display: flex;
+    flex-direction: row;
+    gap: 8px
+}
+
+.themeColorPicker__1436a {
+    border: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    width: 100%
+}
+
+.themeControl__1436a {
+    margin-top: 16px
+}
+
+.themeControl__1436a:first-of-type {
+    margin-top: 0
+}
+
+.colorList__1436a {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px
+}
+
+.colorItem__1436a {
+    align-items: center;
+    display: flex;
+    gap: 8px
+}
+
+.colorPreview__1436a {
+    border: 1px solid var(--background-tertiary);
+    border-radius: 4px;
+    height: 24px;
+    width: 24px
+}
+
 .container_f1a68f {
     padding: 8px
 }
@@ -1829,12 +1889,7 @@
     margin-left: 7px
 }
 
-.quarantineNotice__9671b {
-    background-color: var(--red-430)
-}
-
-.quarantineNotice__9671b .quarantineLearnMoreLink__9671b {
-    color: #fff;
+.quarantineLearnMoreLink__9671b {
     margin-left: 10px;
     text-decoration: underline
 }
@@ -2522,4 +2577,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=bd9128ab0642efa4.css.map*/
+/*# sourceMappingURL=6b186034c552ea66.css.map*/

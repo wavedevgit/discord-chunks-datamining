@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: 34cc58844b23ee71
+  Original File Name: 461295c163c9b7e8
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -1379,12 +1379,7 @@ html:not(.visual-refresh) .footer__7c901 {
     margin-left: 7px
 }
 
-.quarantineNotice__9671b {
-    background-color: var(--red-430)
-}
-
-.quarantineNotice__9671b .quarantineLearnMoreLink__9671b {
-    color: #fff;
+.quarantineLearnMoreLink__9671b {
     margin-left: 10px;
     text-decoration: underline
 }
@@ -2416,4 +2411,4 @@ html:not(.visual-refresh) .footer__7c901 {
     height: 100px
 }
 
-/*# sourceMappingURL=34cc58844b23ee71.css.map*/
+/*# sourceMappingURL=461295c163c9b7e8.css.map*/

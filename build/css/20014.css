@@ -1,6 +1,6 @@
 /**
   Module ID: 20014
-  Original File Name: 2cd71394967f2fae
+  Original File Name: 0cfa17d125aae920
 **/
 .wrapper__48b20 {
     background-color: var(--black-500);
@@ -222,12 +222,7 @@
     margin-left: 7px
 }
 
-.quarantineNotice__9671b {
-    background-color: var(--red-430)
-}
-
-.quarantineNotice__9671b .quarantineLearnMoreLink__9671b {
-    color: #fff;
+.quarantineLearnMoreLink__9671b {
     margin-left: 10px;
     text-decoration: underline
 }
@@ -640,4 +635,4 @@
     align-items: stretch
 }
 
-/*# sourceMappingURL=2cd71394967f2fae.css.map*/
+/*# sourceMappingURL=0cfa17d125aae920.css.map*/

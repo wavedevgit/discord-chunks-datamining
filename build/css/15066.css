@@ -1,6 +1,6 @@
 /**
   Module ID: 15066
-  Original File Name: 63418161dae9472b
+  Original File Name: a6d94eba5727948c
 **/
 .left_caab99 {
     transform: rotate(270deg)
@@ -304,12 +304,7 @@
     margin-left: 7px
 }
 
-.quarantineNotice__9671b {
-    background-color: var(--red-430)
-}
-
-.quarantineNotice__9671b .quarantineLearnMoreLink__9671b {
-    color: #fff;
+.quarantineLearnMoreLink__9671b {
     margin-left: 10px;
     text-decoration: underline
 }
@@ -1290,4 +1285,4 @@ h1.title_feb59c,h2.title_feb59c {
     margin-right: var(--spacing-32)
 }
 
-/*# sourceMappingURL=63418161dae9472b.css.map*/
+/*# sourceMappingURL=a6d94eba5727948c.css.map*/

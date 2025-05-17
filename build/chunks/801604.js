@@ -60,14 +60,14 @@ function b(e) {
     fps: y,
     muteStreamAudio: O,
     selectedSource: Z,
-    sourceType: w,
-    audioSourceId: I
+    sourceType: I,
+    audioSourceId: w
   }] = (0, h.E_)(), {
     twoClickVariant: N
   } = (0, d.a)({
     location: "go_live_modal_refresh",
     autoTrackExposure: !1
-  }), E = (0, c.Z)(), [T, P] = null != (l = (0, p.Z)(b)) ? l : [C, y], R = (0, u.L)(b), k = (0, f.M)(T), A = w === s.vA.CAMERA, M = null != Z || !!N && (!m || A), L = null != Z ? null == Z || null == (t = Z.id) ? void 0 : t.startsWith(s.vA.CAMERA) : A, D = M ? void 0 : b === x.tI.PRESET_VIDEO ? _.intl.string(g.default.MuHUFR) : b === x.tI.PRESET_DOCUMENTS ? _.intl.string(g.default.y0JuYW) : void 0;
+  }), E = (0, c.Z)(), [T, P] = null != (l = (0, p.Z)(b)) ? l : [C, y], R = (0, u.L)(b), k = (0, f.M)(T), A = I === s.vA.CAMERA, M = null != Z || !!N && (!m || A), L = null != Z ? null == Z || null == (t = Z.id) ? void 0 : t.startsWith(s.vA.CAMERA) : A, D = M ? void 0 : b === x.tI.PRESET_VIDEO ? _.intl.string(g.default.MuHUFR) : b === x.tI.PRESET_DOCUMENTS ? _.intl.string(g.default.y0JuYW) : void 0;
   return (0, r.jsxs)("div", {
     className: v.root,
     children: [M && (0, r.jsx)(S, {
@@ -111,7 +111,7 @@ function b(e) {
           })]
         }), L ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(j, {}), (0, r.jsx)("span", {
-            children: null == (n = E[null != I ? I : ""]) ? void 0 : n.name
+            children: null == (n = E[null != w ? w : ""]) ? void 0 : n.name
           })]
         }) : null]
       })]

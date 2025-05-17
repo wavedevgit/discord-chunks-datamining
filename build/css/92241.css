@@ -1,6 +1,6 @@
 /**
   Module ID: 92241
-  Original File Name: e18ab468bb3a02ca
+  Original File Name: 66c6fb1944271aa4
 **/
 .buttonsContainer_a8b931 {
     display: flex;
@@ -185,12 +185,7 @@
     margin-left: 7px
 }
 
-.quarantineNotice__9671b {
-    background-color: var(--red-430)
-}
-
-.quarantineNotice__9671b .quarantineLearnMoreLink__9671b {
-    color: #fff;
+.quarantineLearnMoreLink__9671b {
     margin-left: 10px;
     text-decoration: underline
 }
@@ -522,4 +517,4 @@
     padding-top: var(--spacing-16)
 }
 
-/*# sourceMappingURL=e18ab468bb3a02ca.css.map*/
+/*# sourceMappingURL=66c6fb1944271aa4.css.map*/

@@ -98,8 +98,8 @@ function v() {
       noiseSuppressionSupported: m.Z.isNoiseSuppressionSupported(),
       noiseCancellationSupported: m.Z.isNoiseCancellationSupported()
     })),
-    w = E ? "KRISP" : S ? "STANDARD" : "NONE",
-    k = (0, d.N)(),
+    k = E ? "KRISP" : S ? "STANDARD" : "NONE",
+    w = (0, d.N)(),
     I = r.useCallback(() => {
       var e;
       null == (e = g.current) || e.stop(), g.current = null, j(null)
@@ -110,9 +110,9 @@ function v() {
   }
 
   function Z(e) {
-    if (t && R(), I(), null == k) return;
-    let n = k.createBufferSource();
-    n.buffer = e.audioBuffer, _.current = k.createGain(), _.current.gain.value = y, n.connect(_.current), _.current.connect(k.destination), n.loop = !0, n.start(), g.current = n, j(e)
+    if (t && R(), I(), null == w) return;
+    let n = w.createBufferSource();
+    n.buffer = e.audioBuffer, _.current = w.createGain(), _.current.gain.value = y, n.connect(_.current), _.current.connect(w.destination), n.loop = !0, n.start(), g.current = n, j(e)
   }
   r.useEffect(() => {
     I()
@@ -156,7 +156,7 @@ function v() {
         title: "Noise Cancellation",
         tag: o.RB0.H3,
         children: (0, a.jsx)(o.q4e, {
-          value: w,
+          value: k,
           onChange: e => {
             c.Z.setNoiseCancellation("KRISP" === e), c.Z.setNoiseSuppression("STANDARD" === e)
           },
@@ -195,7 +195,7 @@ function v() {
                 inputName: s,
                 audioBuffer: i,
                 createdAt: Date.now(),
-                suppression: w,
+                suppression: k,
                 echoCancellation: N
               }])
             })

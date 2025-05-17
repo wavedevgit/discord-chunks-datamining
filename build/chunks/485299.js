@@ -19,18 +19,24 @@ function f(e) {
     selectedSource: n
   }, f] = (0, d.E_)(), [m, h] = l.useState(null);
   return l.useEffect(() => {
-    null != n && (0, c.t)({
-      width: 800,
-      height: 451,
-      types: [i.vA.SCREEN, i.vA.WINDOW]
-    }).then(e => {
-      var t;
-      let {
-        screenSources: r,
-        windowSources: l
-      } = e, i = null != (t = l.find(e => "windowHandle" in n ? (0, a.Z)(e.id, n.windowHandle) : e.id === n.id)) ? t : r.find(e => n.id === e.id);
-      null != i && h(i.url)
-    })
+    var e;
+    if (null != n) {
+      if (null == (e = n.id) ? void 0 : e.startsWith(i.vA.CAMERA)) {
+        "url" in n && h(n.url);
+        return
+      }(0, c.t)({
+        width: 800,
+        height: 451,
+        types: [i.vA.SCREEN, i.vA.WINDOW]
+      }).then(e => {
+        var t;
+        let {
+          screenSources: r,
+          windowSources: l
+        } = e, i = null != (t = l.find(e => "windowHandle" in n ? (0, a.Z)(e.id, n.windowHandle) : e.id === n.id)) ? t : r.find(e => n.id === e.id);
+        null != i && h(i.url)
+      })
+    }
   }, [n]), (0, r.jsxs)("div", {
     className: u.root,
     children: [null == m ? (0, r.jsx)(s.$, {}) : (0, r.jsx)("img", {

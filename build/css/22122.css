@@ -1,6 +1,6 @@
 /**
   Module ID: 22122
-  Original File Name: 8a38fcdaba239fdd
+  Original File Name: 16b38013ef238a0d
 **/
 .buttonsContainer_a8b931 {
     display: flex;
@@ -275,12 +275,7 @@
     margin-left: 7px
 }
 
-.quarantineNotice__9671b {
-    background-color: var(--red-430)
-}
-
-.quarantineNotice__9671b .quarantineLearnMoreLink__9671b {
-    color: #fff;
+.quarantineLearnMoreLink__9671b {
     margin-left: 10px;
     text-decoration: underline
 }
@@ -647,4 +642,4 @@
     margin-right: auto
 }
 
-/*# sourceMappingURL=8a38fcdaba239fdd.css.map*/
+/*# sourceMappingURL=16b38013ef238a0d.css.map*/

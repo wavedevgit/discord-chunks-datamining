@@ -108,7 +108,7 @@ let P = [{
   }
 }];
 
-function w(e) {
+function k(e) {
   let {
     actionLog: t,
     initialHeight: n
@@ -184,7 +184,7 @@ function w(e) {
     })]
   })
 }
-let k = [{
+let w = [{
     key: "action",
     cellClassName: O.actionColumn,
     render(e) {
@@ -268,11 +268,11 @@ function R() {
         placeholder: "Search by action name"
       })]
     }), (0, a.jsx)(_.Z, {
-      columns: k,
+      columns: w,
       data: E,
       selectedRowKey: null == v ? void 0 : v.id.toString(),
       onClickRow: e => j(e.actionLog)
-    }), null != v && (0, a.jsx)(w, {
+    }), null != v && (0, a.jsx)(k, {
       actionLog: v,
       initialHeight: null != e.current ? e.current.clientHeight / 2 : 300
     })]

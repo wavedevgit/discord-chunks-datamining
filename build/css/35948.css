@@ -1,6 +1,6 @@
 /**
   Module ID: 35948
-  Original File Name: a77a2b837edf8b4e
+  Original File Name: a905b42d21c6687b
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -794,12 +794,7 @@
     margin-left: 7px
 }
 
-.quarantineNotice__9671b {
-    background-color: var(--red-430)
-}
-
-.quarantineNotice__9671b .quarantineLearnMoreLink__9671b {
-    color: #fff;
+.quarantineLearnMoreLink__9671b {
     margin-left: 10px;
     text-decoration: underline
 }
@@ -6279,4 +6274,4 @@
     background-image: url(/assets/05207174d5432737.svg)
 }
 
-/*# sourceMappingURL=a77a2b837edf8b4e.css.map*/
+/*# sourceMappingURL=a905b42d21c6687b.css.map*/
