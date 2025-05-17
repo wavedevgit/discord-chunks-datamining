@@ -55,20 +55,22 @@ function _(e) {
     icon: t,
     tooltipText: n,
     tooltipAriaLabel: i,
-    className: c
-  } = e, d = (0, o.vjg)(o.Skl.ONLINE);
+    className: c,
+    onTooltipShow: d
+  } = e, _ = (0, o.vjg)(o.Skl.ONLINE);
   return null == n ? (0, r.jsx)(t, {
     size: "custom",
-    color: d,
+    color: _,
     className: a()(l.icon, c)
   }) : (0, r.jsx)(o.ua7, {
     text: n,
     "aria-label": i,
     tooltipContentClassName: l.container,
     delay: s.X,
+    onTooltipShow: d,
     children: e => (0, r.jsx)(t, f(u({}, e), {
       size: "custom",
-      color: d,
+      color: _,
       className: a()(l.icon, c)
     }))
   })
