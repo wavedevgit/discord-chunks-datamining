@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  X: () => s
+  X: () => l
 });
-var r = n(596691),
-  i = n(91641),
-  a = n(89805),
-  o = n(987338);
-let s = new i.E([a.NR, a.ZI, a.Ob, a.uc, a.m1, r.K], o.$P.OPEN_USER_SETTINGS, {
+var r = n(520931),
+  i = n(596691),
+  a = n(91641),
+  o = n(89805),
+  s = n(987338);
+let l = new a.E([o.NR, o.ZI, o.Ob, o.uc, o.m1, i.K, r.D], s.$P.OPEN_USER_SETTINGS, {
   location: "open user settings"
 })
