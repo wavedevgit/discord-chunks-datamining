@@ -4,7 +4,7 @@ n.d(t, {
   Z: () => l
 });
 var r = n(358085),
-  i = n(782769),
+  i = n(790920),
   a = n(527805),
   o = n(620662),
   s = n(981631);
@@ -24,7 +24,7 @@ function l(e) {
     SelectedChannelStore: m,
     VoiceStateStore: g,
     PermissionStore: E
-  } = e, b = f.getChannel(c), y = (0, i.a)(b);
+  } = e, b = (0, i.a)();
   if (null == t) return !1;
   if (d && null != c) return (0, a.ZP)({
     userId: t.id,
@@ -32,7 +32,7 @@ function l(e) {
     channelId: c,
     currentUser: u,
     application: l,
-    isActivitiesEnabledForCurrentPlatform: y,
+    isActivitiesEnabledForCurrentPlatform: b,
     ChannelStore: f,
     VoiceStateStore: g,
     PermissionStore: E,
