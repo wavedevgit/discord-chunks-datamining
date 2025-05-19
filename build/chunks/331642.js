@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   Z: () => E
 }), n(388685);
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(594174),
   d = n(74538),
   u = n(242291),
-  g = n(830253),
-  m = n(792165),
+  m = n(830253),
+  g = n(792165),
   p = n(603074),
   h = n(294206),
   f = n(388032),
@@ -21,13 +21,13 @@ var i = n(255367),
 function _(e) {
   let {
     onSelect: t
-  } = e, [n, l] = r.useState(!1), o = (0, s.e7)([c.default], () => c.default.getCurrentUser()), u = d.ZP.canUseCustomCallSounds(o), g = r.useRef(null);
+  } = e, [n, l] = r.useState(!1), o = (0, s.e7)([c.default], () => c.default.getCurrentUser()), u = d.ZP.canUseCustomCallSounds(o), m = r.useRef(null);
 
   function _(e) {
     u && (l(!1), null == t || t(e))
   }
   return (0, i.jsx)(a.yRy, {
-    targetElementRef: g,
+    targetElementRef: m,
     shouldShow: n,
     position: "left",
     onRequestClose: () => l(!1),
@@ -43,7 +43,7 @@ function _(e) {
           channel: null,
           onClose: t,
           onSelect: _,
-          gridNotice: u ? null : (0, i.jsx)(m.o, {}),
+          gridNotice: u ? null : (0, i.jsx)(g.o, {}),
           analyticsSource: "call sounds edit setting"
         })
       })
@@ -68,7 +68,7 @@ function _(e) {
         }
         return e
       }({}, e), r = r = {
-        ref: g,
+        ref: m,
         onClick: () => {
           l(!n)
         },
@@ -97,7 +97,7 @@ function x(e) {
     sound: t
   } = e, {
     previewSound: n
-  } = (0, g.Z)(t, null), r = 0 === (0, u.pI)() ? f.intl.string(f.t.OASXjo) : f.intl.formatToPlainString(f.t["/8fYOz"], {
+  } = (0, m.Z)(t, null), r = 0 === (0, u.pI)() ? f.intl.string(f.t.OASXjo) : f.intl.formatToPlainString(f.t["/8fYOz"], {
     emojiName: t.emojiName,
     soundName: t.name
   });

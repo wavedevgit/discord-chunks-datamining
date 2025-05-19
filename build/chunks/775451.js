@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   V9: () => x,
   ek: () => b
@@ -12,8 +12,8 @@ var i = n(255367),
   c = n(23547),
   d = n(790542),
   u = n(317257),
-  g = n(120786),
-  m = n(970815),
+  m = n(120786),
+  g = n(970815),
   p = n(981631),
   h = n(388032),
   f = n(313008);
@@ -22,7 +22,7 @@ let b = {
     END: f.alignRight
   },
   _ = e => {
-    if (null != e) return m.th[e]
+    if (null != e) return g.th[e]
   },
   x = e => {
     let {
@@ -66,7 +66,7 @@ let b = {
         [f.hidden]: A,
         [f.visible]: !A
       }),
-      children: [(0, i.jsx)(m.A4, {
+      children: [(0, i.jsx)(g.A4, {
         ref: R,
         balance: v,
         balanceWidgetMode: D ? u.b.DEFAULT : T,
@@ -81,7 +81,7 @@ let b = {
           [f.visible]: !A
         }),
         ref: k,
-        children: (0, i.jsx)(g.L, {
+        children: (0, i.jsx)(m.L, {
           analyticsPage: E,
           ctaText: n,
           ctaOnClick: () => {

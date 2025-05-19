@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   O: () => c,
   Q: () => d
@@ -42,9 +42,9 @@ function d(e) {
       options: s,
       value: d,
       select: u,
-      selectClassName: g
+      selectClassName: m
     } = e,
-    m = function(e, t) {
+    g = function(e, t) {
       if (null == e) return {};
       var n, i, r = function(e, t) {
         if (null == e) return {};
@@ -77,11 +77,11 @@ function d(e) {
       })
     }
     return e
-  }({}, m), n = n = {
+  }({}, g), n = n = {
     id: p,
     children: (0, i.jsx)(a.PhF, {
       "aria-labelledby": p,
-      className: l()(o.selectControl, g),
+      className: l()(o.selectControl, m),
       options: s,
       isSelected: e => e === d,
       select: u,

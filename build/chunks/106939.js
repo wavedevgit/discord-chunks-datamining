@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   M: () => Y,
   Z: () => K
@@ -12,8 +12,8 @@ var i = n(255367),
   c = n(399606),
   d = n(704215),
   u = n(481060),
-  g = n(150063),
-  m = n(493773),
+  m = n(150063),
+  g = n(493773),
   p = n(758119),
   h = n(100527),
   f = n(906732),
@@ -137,13 +137,13 @@ function Y() {
     l = (0, A.M)(),
     {
       selectedTab: a,
-      handleTabChange: g
+      handleTabChange: m
     } = (0, y.Z)(),
     h = (0, _.Dt)(),
     f = v.default.getCurrentUser(),
     E = null != e,
     O = s && null != f && !E;
-  (0, m.ZP)(() => {
+  (0, g.ZP)(() => {
     (0, j.e)("family-center"), I.ZP.initialPageLoad(), n || (0, x.EW)(d.z.FAMILY_CENTER_NEW_BADGE, {
       dismissAction: M.L.AUTO,
       forceTrack: !0
@@ -186,7 +186,7 @@ function Y() {
     }), (0, i.jsx)(z, {
       section: a,
       handleItemSelect: e => {
-        g(e)
+        m(e)
       }
     }), (0, i.jsx)(u.njP.Panel, {
       id: a,
@@ -206,8 +206,8 @@ function K() {
     selectedTab: Z,
     handleTabChange: w
   } = (0, y.Z)(), F = (0, _.Dt)(), z = v.default.getCurrentUser(), Y = null != t, K = a && null != z && !Y;
-  (0, m.ZP)(() => {
-    g.Y(L.Z5c.FAMILY_CENTER), (0, j.e)("family-center"), !N.Z.isLoading() && N.Z.canRefetch() && I.ZP.initialPageLoad(), s || (0, x.EW)(d.z.FAMILY_CENTER_NEW_BADGE, {
+  (0, g.ZP)(() => {
+    m.Y(L.Z5c.FAMILY_CENTER), (0, j.e)("family-center"), !N.Z.isLoading() && N.Z.canRefetch() && I.ZP.initialPageLoad(), s || (0, x.EW)(d.z.FAMILY_CENTER_NEW_BADGE, {
       dismissAction: M.L.AUTO,
       forceTrack: !0
     })

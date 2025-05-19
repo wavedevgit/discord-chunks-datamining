@@ -1,6 +1,6 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var i = n(255367),
   r = n(73800),
@@ -11,16 +11,16 @@ var i = n(255367),
   c = n(569550),
   d = n(726985),
   u = n(388032),
-  g = n(20493);
+  m = n(20493);
 
-function m(e) {
+function g(e) {
   let {
     refreshStyles: t = !1
   } = e, n = o.I0.useSetting(), {
-    analyticsLocations: m
+    analyticsLocations: g
   } = (0, l.ZP)(), p = r.useCallback(e => {
-    (0, c.Z)("stream_previews_disabled", e, o.I0.getSetting(), m), o.I0.updateSetting(e)
-  }, [m]), h = (0, i.jsx)(s.j7V, {
+    (0, c.Z)("stream_previews_disabled", e, o.I0.getSetting(), g), o.I0.updateSetting(e)
+  }, [g]), h = (0, i.jsx)(s.j7V, {
     value: n,
     onChange: p,
     note: u.intl.string(u.t.jTNPHB),
@@ -30,7 +30,7 @@ function m(e) {
   return (0, i.jsx)(a.F, {
     setting: d.s6.VOICE_AND_VIDEO_STREAM_PREVIEWS,
     children: t ? h : (0, i.jsx)(s.hjN, {
-      className: g.marginBottom20,
+      className: m.marginBottom20,
       title: u.intl.string(u.t.OBwCXF),
       children: h
     })

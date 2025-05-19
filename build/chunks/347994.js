@@ -1,6 +1,6 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(388685);
 var i = n(392711),
   r = n.n(i),
@@ -19,7 +19,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let u = new s.Z("UserSettingsProto"),
-  g = new class {
+  m = new class {
     async getAll(e) {
       let t = performance.now(),
         n = await o.Z.userSettings(e).getMany(),

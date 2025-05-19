@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   Z: () => E
 });
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(125529),
   d = n(879892),
   u = n(124570),
-  g = n(594174),
-  m = n(709586),
+  m = n(594174),
+  g = n(709586),
   p = n(267642),
   h = n(981631),
   f = n(388032),
@@ -54,7 +54,7 @@ let E = function() {
     {
       analyticsLocations: t
     } = (0, a.ZP)(),
-    E = (0, s.e7)([g.default], () => g.default.getCurrentUser()),
+    E = (0, s.e7)([m.default], () => m.default.getCurrentUser()),
     {
       fractionalState: C
     } = (0, o.Z)(),
@@ -91,7 +91,7 @@ let E = function() {
   });
   return (0, i.jsxs)("div", {
     className: b.wrapper,
-    children: [(0, i.jsx)(m.Z, {
+    children: [(0, i.jsx)(g.Z, {
       className: b.boostIcon,
       width: 16,
       height: 16

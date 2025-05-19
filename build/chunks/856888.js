@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   Z: () => u
 }), n(642613), n(388685);
@@ -21,7 +21,7 @@ function u(e) {
       return (null != (r = null == (n = e.createdAt) ? void 0 : n.getTime()) ? r : e.currentPeriodStart.getTime()) - (null != (s = null == (i = t.createdAt) ? void 0 : i.getTime()) ? s : t.currentPeriodStart.getTime())
     })) ? t : []
   }), [l, u] = r.useState();
-  return null == l && (l = (0, i.jsx)(g, {
+  return null == l && (l = (0, i.jsx)(m, {
     onBack: t,
     title: c.intl.string(c.t["DB/m9f"])
   })), (0, i.jsxs)("div", {
@@ -30,7 +30,7 @@ function u(e) {
       children: (0, i.jsx)(o.Z, {
         subscriptions: n,
         updateHeader: (e, t) => {
-          u((0, i.jsx)(g, {
+          u((0, i.jsx)(m, {
             title: e,
             onBack: () => {
               t(), u(void 0)
@@ -42,7 +42,7 @@ function u(e) {
   })
 }
 
-function g(e) {
+function m(e) {
   let {
     onBack: t,
     title: n

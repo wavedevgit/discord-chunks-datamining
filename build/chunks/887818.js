@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   Z: () => u
 }), n(388685);
@@ -33,7 +33,7 @@ u.Toggle = function(e) {
   } = e, {
     isOpen: s,
     toggleOpen: u
-  } = r.useContext(d), g = s ? a.u04 : a.CJ0, m = null != n ? n : s ? o.intl.string(o.t.fgq1go) : o.intl.string(o.t.XJuakJ);
+  } = r.useContext(d), m = s ? a.u04 : a.CJ0, g = null != n ? n : s ? o.intl.string(o.t.fgq1go) : o.intl.string(o.t.XJuakJ);
   return (0, i.jsxs)(a.P3F, {
     className: l()(c.toggle, t),
     onClick: u,
@@ -41,8 +41,8 @@ u.Toggle = function(e) {
       variant: "heading-sm/semibold",
       tag: "div",
       color: "currentColor",
-      children: m
-    }), (0, i.jsx)(g, {
+      children: g
+    }), (0, i.jsx)(m, {
       size: "sm",
       color: "currentColor"
     })]

@@ -1,6 +1,6 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(388685), n(704826), n(35282), n(539854);
 var i = n(255367);
 n(73800);
@@ -12,17 +12,17 @@ var r = n(525654),
   c = n(320161),
   d = n(998502),
   u = n(388032),
-  g = n(980832);
+  m = n(980832);
 
-function m() {
-  var e, t, n, r, m;
+function g() {
+  var e, t, n, r, g;
   let p = window.GLOBAL_ENV.RELEASE_CHANNEL,
-    h = "400649",
-    f = "a838f8d7fe69c8566568179a12d49dffdd592faa".substring(0, 7),
+    h = "400663",
+    f = "1d9f6177e800a63314b0ef88c50146db032b16a1".substring(0, 7),
     b = null === a.Z || void 0 === a.Z ? void 0 : a.Z.remoteApp.getVersion(),
     _ = null === a.Z || void 0 === a.Z || null == (e = (t = a.Z.remoteApp).getBuildNumber) ? void 0 : e.call(t),
     x = null === a.Z || void 0 === a.Z || null == (n = (r = a.Z.remoteApp).getAppArch) ? void 0 : n.call(r),
-    E = null == (m = o.C.getCurrentBuildOverride().overrides) ? void 0 : m.discord_web,
+    E = null == (g = o.C.getCurrentBuildOverride().overrides) ? void 0 : g.discord_web,
     C = function() {
       var e;
       let t = null === s() || void 0 === s() || null == (e = s().os) ? void 0 : e.toString();
@@ -57,36 +57,36 @@ function m() {
         return e
       }({}, e), n = n = {
         "aria-label": u.intl.string(u.t["9Al4QU"]),
-        className: g.clickable,
+        className: m.clickable,
         children: (0, i.jsxs)("div", {
-          className: g.info,
+          className: m.info,
           "data-mtctest-ignore": "true",
           children: [(0, i.jsxs)(l.Text, {
             tag: "span",
-            className: g.line,
+            className: m.line,
             variant: "text-xs/normal",
             color: "text-muted",
             children: [p, " ", h, " ", (0, i.jsxs)("span", {
-              className: g.versionHash,
+              className: m.versionHash,
               children: ["(", f, ")"]
             })]
           }), " ", null != E && (0, i.jsx)(l.Text, {
             tag: "span",
-            className: g.line,
+            className: m.line,
             variant: "text-xs/normal",
             color: "text-muted",
             children: (0, i.jsxs)("span", {
-              className: g.versionHash,
+              className: m.versionHash,
               children: ["Build Override: ", E.id]
             })
           }), null != b ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)(l.Text, {
               tag: "span",
-              className: g.line,
+              className: m.line,
               variant: "text-xs/normal",
               color: "text-muted",
               children: ["Host ", b, " ", null != x ? (0, i.jsxs)("span", {
-                className: g.appArch,
+                className: m.appArch,
                 children: [x.toLowerCase(), " "]
               }) : null, null != _ ? (0, i.jsxs)("span", {
                 children: ["(", _, ")"]
@@ -94,7 +94,7 @@ function m() {
             }), " "]
           }) : null, null != C ? (0, i.jsx)(l.Text, {
             tag: "span",
-            className: g.line,
+            className: m.line,
             variant: "text-xs/normal",
             color: "text-muted",
             children: C

@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   Z: () => c
 }), n(388685);
@@ -29,14 +29,14 @@ function c(e) {
       }
       return r
     }(e, ["children", "lineClamp"]);
-  let [g, m] = r.useState(!1), [p, h] = r.useState(null), f = null != p && (0, i.jsx)("button", {
+  let [m, g] = r.useState(!1), [p, h] = r.useState(null), f = null != p && (0, i.jsx)("button", {
     className: o.button,
-    onClick: () => m(e => !e),
+    onClick: () => g(e => !e),
     children: (0, i.jsxs)(l.Text, {
       className: o.seeMore,
       variant: "text-sm/medium",
       color: "text-brand",
-      children: [g ? a.intl.string(a.t["JQX/PT"]) : a.intl.string(a.t.Fbrd8P), g ? (0, i.jsx)(l.u04, {
+      children: [m ? a.intl.string(a.t["JQX/PT"]) : a.intl.string(a.t.Fbrd8P), m ? (0, i.jsx)(l.u04, {
         color: s.Z.colors.TEXT_BRAND,
         size: "xs"
       }) : (0, i.jsx)(l.CJ0, {
@@ -59,7 +59,7 @@ function c(e) {
     requestAnimationFrame(x)
   }, [x, c, d]);
   let E = "auto";
-  return null != p && (E = g ? "".concat(p.expandedHeight, "px") : "".concat(p.truncatedHeight, "px")), (0, i.jsxs)("div", {
+  return null != p && (E = m ? "".concat(p.expandedHeight, "px") : "".concat(p.truncatedHeight, "px")), (0, i.jsxs)("div", {
     children: [(0, i.jsx)(l.Text, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -79,7 +79,7 @@ function c(e) {
       return e
     }({}, u), n = n = {
       className: o.content,
-      lineClamp: g ? void 0 : d,
+      lineClamp: m ? void 0 : d,
       ref: _,
       style: {
         height: E

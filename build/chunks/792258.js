@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   Z: () => f
 });
@@ -12,8 +12,8 @@ var r = n(120356),
   c = n(372769),
   d = n(914788),
   u = n(981631),
-  g = n(332495),
-  m = n(388032),
+  m = n(332495),
+  g = n(388032),
   p = n(45452);
 let h = [18, 18, 16, 16, 14, 12, 10],
   f = e => {
@@ -61,7 +61,7 @@ let h = [18, 18, 16, 16, 14, 12, 10],
         }), void 0 !== n.approximateMemberCount ? (0, i.jsx)(o.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
-          children: m.intl.format(g.default["5JmNgo"], {
+          children: g.intl.format(m.default["5JmNgo"], {
             members: n.approximateMemberCount
           })
         }) : null]

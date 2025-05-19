@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 2e052a580e7f70ac
+  Original File Name: 612895c41a5d732f
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -1550,6 +1550,10 @@
 
 .explanation_f1a68f {
     color: var(--text-muted)
+}
+
+.tenureBadgeControls_f1a68f {
+    margin: 8px 0 16px
 }
 
 .icon__2a871 {
@@ -3502,4 +3506,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=2e052a580e7f70ac.css.map*/
+/*# sourceMappingURL=612895c41a5d732f.css.map*/

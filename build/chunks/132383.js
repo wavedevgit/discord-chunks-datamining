@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 e.exports = {
   container: "container__60b20",
   lightTextLink: "lightTextLink__60b20",

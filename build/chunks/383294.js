@@ -30,9 +30,9 @@ var r = n(255367),
   Z = n(696693),
   I = n(557256),
   k = n(582425),
-  P = n(345554),
-  R = n(88490),
-  E = n(466674);
+  R = n(345554),
+  E = n(88490),
+  P = n(466674);
 
 function T() {
   let e = (0, l.e7)([f.Z], () => f.Z.useReducedMotion),
@@ -41,8 +41,8 @@ function T() {
     b = o.useRef(null),
     m = (0, u.ZP)(),
     y = (0, i.apv)(m),
-    h = y ? P.Z : k.Z,
-    j = y ? E.Z : R.Z;
+    h = y ? R.Z : k.Z,
+    j = y ? P.Z : E.Z;
   o.useEffect(() => {
     if (!t && !e) {
       var n;

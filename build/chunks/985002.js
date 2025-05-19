@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   G: () => o
 }), n(388685);
@@ -12,7 +12,7 @@ function o(e) {
   let {
     onError: t,
     onSuccess: n
-  } = null != e ? e : {}, [o, c] = i.useState(!1), [d, u] = i.useState(!1), [g, m] = i.useState(!1), [p, h] = i.useState(!1), [f, b] = i.useState(!1), [_, x] = i.useState(!1), [E, C] = i.useState(!1), [j, O] = i.useState(!1), S = o || d || g || p || _ || j, v = i.useCallback(async e => {
+  } = null != e ? e : {}, [o, c] = i.useState(!1), [d, u] = i.useState(!1), [m, g] = i.useState(!1), [p, h] = i.useState(!1), [f, b] = i.useState(!1), [_, x] = i.useState(!1), [E, C] = i.useState(!1), [j, O] = i.useState(!1), S = o || d || m || p || _ || j, v = i.useCallback(async e => {
     if (!S) {
       c(!0);
       try {
@@ -38,14 +38,14 @@ function o(e) {
     }
   }, [S, t, n]), I = i.useCallback(async e => {
     if (!S) {
-      m(!0);
+      g(!0);
       try {
         await (0, s.Yw)(e.id, a.ne.INACTIVE), null == n || n()
       } catch (n) {
         let e = new r.Hx(n);
         null == t || t(e)
       } finally {
-        m(!1)
+        g(!1)
       }
     }
   }, [S, t, n]), N = i.useCallback(async e => {
@@ -124,7 +124,7 @@ function o(e) {
     }, [j, t]),
     isAcceptLoading: o,
     isDeclineLoading: d,
-    isDisconnectLoading: g,
+    isDisconnectLoading: m,
     isCancelLoading: p,
     isGetLinkCodeLoading: f,
     isSelectTeenUserLoading: E,

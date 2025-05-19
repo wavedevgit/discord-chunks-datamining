@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   Z: () => C
 });
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(442837),
   d = n(481060),
   u = n(37234),
-  g = n(960412),
-  m = n(151662),
+  m = n(960412),
+  g = n(151662),
   p = n(695346),
   h = n(981631),
   f = n(930441),
@@ -25,9 +25,9 @@ let C = () => {
     {
       categories: t,
       initialized: n
-    } = (0, c.cj)([m.Z], () => m.Z.getEmailSettings());
+    } = (0, c.cj)([g.Z], () => g.Z.getEmailSettings());
   return r.useEffect(() => {
-    null == n && (0, g.Y7)()
+    null == n && (0, m.Y7)()
   }, [n]), (0, i.jsxs)("div", {
     className: x.container,
     children: [(0, i.jsx)(d.Text, {
@@ -76,7 +76,7 @@ let C = () => {
       note: _.intl.string(b.default["y34S4+"]),
       hideBorder: !0,
       onChange: function(e) {
-        (0, g.pR)(f.$Z.FAMILY_CENTER_DIGEST, e)
+        (0, m.pR)(f.$Z.FAMILY_CENTER_DIGEST, e)
       },
       children: _.intl.string(b.default.irvJKS)
     })]

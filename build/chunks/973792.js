@@ -1,11 +1,10 @@
-/** Chunk was on 72425 **/
-t.exports = {
+/** Chunk was on 82081 **/
+e.exports = {
   container: "container__6e9b4",
+  coachmarkPointer: "coachmarkPointer__6e9b4",
   title: "title__6e9b4",
   description: "description__6e9b4",
   orbAsset: "orbAsset__6e9b4",
-  content: "content__6e9b4",
-  ctaButton: "ctaButton__6e9b4",
   tail: "tail__6e9b4",
   tailPositionNormal: "tailPositionNormal__6e9b4",
   tailPositionInverted: "tailPositionInverted__6e9b4",

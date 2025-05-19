@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   Z: () => h
 });
@@ -11,9 +11,9 @@ var i = n(255367),
   c = n(981631),
   d = n(474936),
   u = n(388032),
-  g = n(898582);
+  m = n(898582);
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -84,7 +84,7 @@ function h(e) {
     label: u.intl.string(u.t.obRG6e),
     action: () => l.Z.open(c.oAB.SUBSCRIPTIONS),
     iconLeft: s.WGR,
-    className: g.manageSubscription
+    className: m.manageSubscription
   }) : null, [x, b]);
   return (0, i.jsxs)(s.v2r, {
     onSelect: _,
@@ -101,7 +101,7 @@ function h(e) {
           let {
             default: e
           } = await Promise.resolve().then(n.bind(n, 760558));
-          return n => (0, i.jsx)(e, p(m({}, n), {
+          return n => (0, i.jsx)(e, p(g({}, n), {
             guildBoostSlots: [t],
             locationSection: c.jXE.SETTINGS_PREMIUM
           }))
@@ -117,7 +117,7 @@ function h(e) {
           let {
             default: e
           } = await Promise.resolve().then(n.bind(n, 450468));
-          return n => (0, i.jsx)(e, p(m({}, n), {
+          return n => (0, i.jsx)(e, p(g({}, n), {
             guildBoostSlotId: t.id
           }))
         })
@@ -132,7 +132,7 @@ function h(e) {
           let {
             default: e
           } = await Promise.resolve().then(n.bind(n, 401786));
-          return n => (0, i.jsx)(e, p(m({}, n), {
+          return n => (0, i.jsx)(e, p(g({}, n), {
             guildBoostSlot: t
           }))
         })

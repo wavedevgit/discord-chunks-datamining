@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   _Y: () => y,
   default: () => w
@@ -12,8 +12,8 @@ var i = n(255367),
   c = n(563132),
   d = n(409813),
   u = n(45572),
-  g = n(126982),
-  m = n(791785),
+  m = n(126982),
+  g = n(791785),
   p = n(51499),
   h = n(614277),
   f = n(626135),
@@ -77,7 +77,7 @@ let N = {
     payment_type: j.Zuq[j.GZQ.ONE_TIME],
     is_gift: !1,
     eligible_for_trial: !1,
-    payment_modal_version: m.PaymentModal.CURRENT_VERSION
+    payment_modal_version: g.PaymentModal.CURRENT_VERSION
   },
   y = (e, t) => {
     let {
@@ -110,7 +110,7 @@ let N = {
       orbProductContext: a,
       analyticsLocations: o,
       analyticsSourceLocation: u
-    } = (0, C.C)(), g = (0, r.useMemo)(() => {
+    } = (0, C.C)(), m = (0, r.useMemo)(() => {
       var t, n;
       return v(T(v({
         load_id: i,
@@ -131,26 +131,26 @@ let N = {
     return {
       emitOrbCheckoutPaymentFlowEvent: (0, r.useCallback)(e => {
         let n = Date.now() - s;
-        e === j.rMx.PAYMENT_FLOW_STARTED ? f.default.track(j.rMx.PAYMENT_FLOW_STARTED, T(v({}, g), {
+        e === j.rMx.PAYMENT_FLOW_STARTED ? f.default.track(j.rMx.PAYMENT_FLOW_STARTED, T(v({}, m), {
           has_saved_payment_source: t,
           payment_gateway: O.ht.VIRTUAL_CURRENCY,
           continue_session_initial_step: null
-        })) : e === j.rMx.PAYMENT_FLOW_LOADED ? f.default.track(j.rMx.PAYMENT_FLOW_LOADED, T(v({}, g), {
+        })) : e === j.rMx.PAYMENT_FLOW_LOADED ? f.default.track(j.rMx.PAYMENT_FLOW_LOADED, T(v({}, m), {
           has_saved_payment_source: t,
           initial_step: d.h8.REVIEW,
           duration_ms: n
-        })) : e === j.rMx.PAYMENT_FLOW_CANCELED ? f.default.track(j.rMx.PAYMENT_FLOW_CANCELED, T(v({}, g), {
+        })) : e === j.rMx.PAYMENT_FLOW_CANCELED ? f.default.track(j.rMx.PAYMENT_FLOW_CANCELED, T(v({}, m), {
           duration_ms: n
-        })) : e === j.rMx.PAYMENT_FLOW_COMPLETED ? f.default.track(j.rMx.PAYMENT_FLOW_COMPLETED, T(v({}, g), {
+        })) : e === j.rMx.PAYMENT_FLOW_COMPLETED ? f.default.track(j.rMx.PAYMENT_FLOW_COMPLETED, T(v({}, m), {
           payment_gateway: O.ht.VIRTUAL_CURRENCY,
           duration_ms: n
-        })) : e === j.rMx.PAYMENT_FLOW_SUCCEEDED ? f.default.track(j.rMx.PAYMENT_FLOW_SUCCEEDED, T(v({}, g), {
+        })) : e === j.rMx.PAYMENT_FLOW_SUCCEEDED ? f.default.track(j.rMx.PAYMENT_FLOW_SUCCEEDED, T(v({}, m), {
           duration_ms: n
-        })) : e === j.rMx.PAYMENT_FLOW_FAILED && f.default.track(j.rMx.PAYMENT_FLOW_FAILED, T(v({}, g), {
+        })) : e === j.rMx.PAYMENT_FLOW_FAILED && f.default.track(j.rMx.PAYMENT_FLOW_FAILED, T(v({}, m), {
           payment_gateway: O.ht.VIRTUAL_CURRENCY,
           duration_ms: n
         }))
-      }, [s, g, t])
+      }, [s, m, t])
     }
   },
   P = e => {
@@ -160,9 +160,9 @@ let N = {
     } = e, {
       selectedSkuId: o,
       purchaseState: d,
-      setPurchaseState: g
+      setPurchaseState: m
     } = (0, c.JL)(), {
-      product: m
+      product: g
     } = (0, a.T)(o), {
       emitOrbCheckoutPaymentFlowEvent: f
     } = A(), {
@@ -181,10 +181,10 @@ let N = {
     }, [S, f]);
     let N = (0, r.useCallback)(() => {
       I.current = T, f(j.rMx.PAYMENT_FLOW_COMPLETED), x(() => {
-        g(u.A.COMPLETED), f(j.rMx.PAYMENT_FLOW_SUCCEEDED)
+        m(u.A.COMPLETED), f(j.rMx.PAYMENT_FLOW_SUCCEEDED)
       })
-    }, [x, g, T, f]);
-    if (null == o || null == m) return (0, i.jsx)(s.$jN, {
+    }, [x, m, T, f]);
+    if (null == o || null == g) return (0, i.jsx)(s.$jN, {
       type: s.$jN.Type.WANDERING_CUBES
     });
     let y = null != (t = I.current) ? t : T,
@@ -215,7 +215,7 @@ let N = {
       useBreadcrumbLabel: () => S.intl.string(S.t.QBnNHh)
     }
   }],
-  D = (e, t, n) => (0, i.jsx)(g.Z, {
+  D = (e, t, n) => (0, i.jsx)(m.Z, {
     isOrbCheckout: !0,
     step: n,
     onClose: () => t(!1)
@@ -242,7 +242,7 @@ let N = {
     return (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(x.o, {
         onClose: async () => await c(!1)
-      }), (0, i.jsx)(m.PaymentModal, {
+      }), (0, i.jsx)(g.PaymentModal, {
         applicationId: (0, b.N)(t),
         transitionState: s.transitionState,
         analyticsDataOverride: o,

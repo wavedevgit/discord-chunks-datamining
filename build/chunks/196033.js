@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   W: () => f
 });
@@ -11,8 +11,8 @@ var i = n(73800),
   c = n(619899),
   d = n(281598),
   u = n(388032),
-  g = n(513767),
-  m = n(78230),
+  m = n(513767),
+  g = n(78230),
   p = n(786792),
   h = n(161594);
 let f = () => {
@@ -21,8 +21,8 @@ let f = () => {
     n = (0, a.H)("upsell_banner"),
     f = (0, l.e7)([o.Z], () => o.Z.getMarketingBySurface(r.K.EDIT_PROFILE_SETTINGS)),
     b = i.useMemo(() => null != f ? f : n ? {
-      asset: m,
-      popoutAsset: g,
+      asset: g,
+      popoutAsset: m,
       title: u.intl.string(u.t.QZVVBg),
       body: u.intl.string(u.t.sajmAg),
       version: 0,

@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   Z: () => d
 });
@@ -33,7 +33,7 @@ let o = (e, t) => null != t ? t : e ? .5 : .2,
         ellipseOpacity: d,
         circleColor: u
       } = e,
-      g = function(e, t) {
+      m = function(e, t) {
         if (null == e) return {};
         var n, i, r = function(e, t) {
           if (null == e) return {};
@@ -48,8 +48,8 @@ let o = (e, t) => null != t ? t : e ? .5 : .2,
         }
         return r
       }(e, ["ellipseOpacity", "circleColor"]);
-    let m = (0, s.ZP)(),
-      p = (0, r.ap)(m),
+    let g = (0, s.ZP)(),
+      p = (0, r.ap)(g),
       h = o(p, d),
       f = c(p, u);
     return (0, i.jsxs)("svg", (t = a({
@@ -61,7 +61,7 @@ let o = (e, t) => null != t ? t : e ? .5 : .2,
       viewBox: "0 0 100 100",
       fill: "none",
       xmlns: "http://www.w3.org/2000/svg"
-    }, (0, l.Z)(a({}, g))), n = n = {
+    }, (0, l.Z)(a({}, m))), n = n = {
       children: [(0, i.jsxs)("svg", {
         width: "100",
         height: "100",

@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   Z: () => h
 });
@@ -12,8 +12,8 @@ var r = n(120356),
   c = n(743612),
   d = n(735825),
   u = n(593595),
-  g = n(721239),
-  m = n(557634),
+  m = n(721239),
+  g = n(557634),
   p = n(992429);
 let h = e => {
   var t;
@@ -39,10 +39,10 @@ let h = e => {
       n = p, r = "unlocked icon";
       break;
     case d.EB.PENDING:
-      n = g, r = "locked icon";
+      n = m, r = "locked icon";
       break;
     case d.EB.REDEEMED:
-      n = m, r = "thumbs up icon";
+      n = g, r = "thumbs up icon";
       break;
     default:
       n = void 0, r = ""

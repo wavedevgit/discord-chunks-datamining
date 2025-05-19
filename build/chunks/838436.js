@@ -1,6 +1,6 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
-  H: () => m,
+  H: () => g,
   U: () => f
 }), n(953529);
 var i = n(255367);
@@ -14,7 +14,7 @@ var r = n(120356),
   d = n(834166),
   u = n(867768);
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -33,7 +33,7 @@ function g(e) {
   return e
 }
 
-function m(e) {
+function g(e) {
   let {
     header: t,
     description: n,
@@ -84,17 +84,17 @@ function h(e) {
     className: n,
     children: r,
     scrollPosition: l,
-    scrollHighlightDelay: g
-  } = e, m = (0, o.a)(l);
+    scrollHighlightDelay: m
+  } = e, g = (0, o.a)(l);
   return (0, i.jsx)(a.F, {
     setting: t,
     children: (0, i.jsxs)("div", {
       className: s()(u.container, n, {
         [d.settingsBackgroundFlashElement]: null != l
       }),
-      ref: m,
+      ref: g,
       children: [r, null != l ? (0, i.jsx)(c.Z, {
-        animationDelay: g,
+        animationDelay: m,
         scrollPosition: l
       }) : null]
     })
@@ -102,5 +102,5 @@ function h(e) {
 }
 
 function f(e) {
-  return null != e.scrollPosition ? (0, i.jsx)(h, g({}, e)) : (0, i.jsx)(p, g({}, e))
+  return null != e.scrollPosition ? (0, i.jsx)(h, m({}, e)) : (0, i.jsx)(p, m({}, e))
 }

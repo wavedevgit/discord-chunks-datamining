@@ -1,6 +1,6 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var i = n(255367),
   r = n(73800),
@@ -12,7 +12,7 @@ var i = n(255367),
   d = n(131951),
   u = n(388032);
 
-function g() {
+function m() {
   let e = (0, c.Z)(),
     {
       currentDeviceId: t,
@@ -22,9 +22,9 @@ function g() {
       isVideoAvailable: d.Z.isVideoAvailable()
     })),
     {
-      analyticsLocations: g
+      analyticsLocations: m
     } = (0, o.ZP)(),
-    m = r.useMemo(() => Object.values(e).map(e => {
+    g = r.useMemo(() => Object.values(e).map(e => {
       let {
         id: t,
         name: n
@@ -38,11 +38,11 @@ function g() {
     title: u.intl.string(u.t.FsQ3OT),
     children: (0, i.jsx)(l.q4e, {
       placeholder: u.intl.string(u.t["t9eQ/v"]),
-      options: m,
+      options: g,
       value: t,
       isDisabled: !n,
       onChange: e => a.Z.setVideoDevice(e, {
-        analyticsLocations: g
+        analyticsLocations: m
       }),
       "aria-label": u.intl.string(u.t["t9eQ/v"])
     })

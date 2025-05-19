@@ -1,7 +1,7 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   C: () => p,
-  d: () => m
+  d: () => g
 });
 var i = n(255367),
   r = n(73800),
@@ -12,7 +12,7 @@ var i = n(255367),
   c = n(594174),
   d = n(74538),
   u = n(43747);
-let g = (0, r.createContext)({
+let m = (0, r.createContext)({
     skuId: "123",
     loadId: (0, s.Z)(),
     analyticsLocations: [],
@@ -21,12 +21,12 @@ let g = (0, r.createContext)({
     orbProductContext: null,
     onRedeemVirtualCurrency: () => {}
   }),
-  m = e => {
+  g = e => {
     let {
       skuId: t,
       loadId: n,
       analyticsLocations: s,
-      onCheckoutSuccess: m,
+      onCheckoutSuccess: g,
       children: p
     } = e, h = (0, l.e7)([c.default], () => d.ZP.canUseCollectibles(c.default.getCurrentUser())), {
       product: f
@@ -48,13 +48,13 @@ let g = (0, r.createContext)({
       error: E
     } = (0, u.f)(), C = (0, r.useCallback)(e => {
       _(t, n => {
-        m({
+        g({
           entitlements: n,
           skuId: t
         }), e()
       })
-    }, [t, _, m]);
-    return (0, i.jsx)(g.Provider, {
+    }, [t, _, g]);
+    return (0, i.jsx)(m.Provider, {
       value: {
         skuId: t,
         loadId: n,
@@ -67,4 +67,4 @@ let g = (0, r.createContext)({
       children: p
     })
   },
-  p = () => (0, r.useContext)(g)
+  p = () => (0, r.useContext)(m)

@@ -1,6 +1,6 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var i = n(255367);
 n(73800);
@@ -12,13 +12,13 @@ var r = n(873546),
   c = n(949914),
   d = n(388032),
   u = n(477108);
-let g = e => {
+let m = e => {
   let {
     onGoBack: t
   } = e, n = (0, o.Z)(), {
-    loading: g
+    loading: m
   } = (0, a.sp)(n);
-  return ((0, l.Z)(r.tq ? "role-subscriptions-user-setting" : void 0), g) ? (0, i.jsx)(s.$jN, {}) : 0 === n.length ? null : (0, i.jsxs)("div", {
+  return ((0, l.Z)(r.tq ? "role-subscriptions-user-setting" : void 0), m) ? (0, i.jsx)(s.$jN, {}) : 0 === n.length ? null : (0, i.jsxs)("div", {
     className: u.__invalid_container,
     children: [(0, i.jsxs)(s.zxk, {
       look: s.zxk.Looks.BLANK,

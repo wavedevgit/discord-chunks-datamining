@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   Z: () => v
 }), n(388685), n(49124), n(953529), n(457542);
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(313201),
   d = n(202858),
   u = n(287880),
-  g = n(358085),
-  m = n(960048),
+  m = n(358085),
+  g = n(960048),
   p = n(998502),
   h = n(365007),
   f = n(15980),
@@ -62,11 +62,11 @@ function O(e) {
   } = e, f = (0, c.Dt)(), [C, j] = r.useState(""), [O, S] = r.useState(!0), [v, T] = r.useState(b.x.INIT), [I, N] = r.useState(""), [y, A] = r.useState(null), P = async () => {
     let e;
     T(b.x.REGISTER);
-    let t = g.isPlatformEmbedded && p.ZP.supportsFeature(_.eRX.WEBAUTHN) ? p.ZP.webAuthnRegister(u) : s.Ue(JSON.parse(u)).then(e => JSON.stringify(e));
+    let t = m.isPlatformEmbedded && p.ZP.supportsFeature(_.eRX.WEBAUTHN) ? p.ZP.webAuthnRegister(u) : s.Ue(JSON.parse(u)).then(e => JSON.stringify(e));
     try {
       e = await t
     } catch (e) {
-      m.Z.captureException(e), A(x.intl.string(x.t.xSCvBQ)), T(b.x.INIT);
+      g.Z.captureException(e), A(x.intl.string(x.t.xSCvBQ)), T(b.x.INIT);
       return
     }
     N(e), T(b.x.NAME)
@@ -282,7 +282,7 @@ function v() {
               challenge: n
             })))
           }).catch(e => {
-            e.message !== x.intl.string(x.t.N2yb9f) && m.Z.captureException(e)
+            e.message !== x.intl.string(x.t.N2yb9f) && g.Z.captureException(e)
           }).finally(() => {
             s(!1)
           })

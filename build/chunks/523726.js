@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 29922 **/
 e.exports = {
   header: "header__7e090",
   animation: "animation__7e090",

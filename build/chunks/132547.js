@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   Z: () => R
 }), n(388685), n(65234), n(111804), n(490233), n(97749), n(35282);
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(433811),
   d = n(214852),
   u = n(626135),
-  g = n(63063),
-  m = n(464670),
+  m = n(63063),
+  g = n(464670),
   p = n(796634),
   h = n(767714),
   f = n(314684),
@@ -64,7 +64,7 @@ let A = e => {
   P = e => {
     let {
       analyticsLocations: t
-    } = e, n = g.Z.getArticleURL(S.BhN.REFERRAL_PROGRAM);
+    } = e, n = m.Z.getArticleURL(S.BhN.REFERRAL_PROGRAM);
     return (0, i.jsxs)("div", {
       className: T.giftingVariant2Container,
       children: [(0, i.jsx)("div", {
@@ -112,7 +112,7 @@ let A = e => {
     (0, d.z)(c.X);
     let e = r.useRef(null),
       t = r.useRef(null),
-      [n, g] = r.useState(!1),
+      [n, m] = r.useState(!1),
       {
         analyticsLocations: p
       } = (0, o.ZP)(a.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
@@ -120,7 +120,7 @@ let A = e => {
     (0, f.FM)();
     let N = "true" === new URLSearchParams(window.location.search).get("autoScroll");
     window.history.replaceState({}, "", window.location.pathname);
-    let y = m.PU.useExperiment({
+    let y = g.PU.useExperiment({
       location: "HeroHeading"
     });
     return (0, i.jsxs)(i.Fragment, {
@@ -134,7 +134,7 @@ let A = e => {
             children: [(0, i.jsx)(x.Z, {
               className: T.heroHeading,
               location: C.MQ.HOME
-            }), y.cohort === m.XS.Variant2 && (0, i.jsx)(P, {
+            }), y.cohort === g.XS.Variant2 && (0, i.jsx)(P, {
               analyticsLocations: p
             }), (0, i.jsx)(b.Z, {
               variant: C.gM.WHATS_NEW,
@@ -147,7 +147,7 @@ let A = e => {
               noBackground: !0,
               leftAlignHeaders: !0,
               showAllPerksButton: (0, i.jsx)(O.Z, {
-                setIsAllPerksVisible: g,
+                setIsAllPerksVisible: m,
                 previousComponent: C.MQ.HOME
               })
             }), (0, i.jsx)(_.Z, {
@@ -181,7 +181,7 @@ let A = e => {
         })
       }), (0, i.jsx)(j.Z, {
         isAllPerksVisible: n,
-        setIsAllPerksVisible: g,
+        setIsAllPerksVisible: m,
         previousComponent: C.MQ.HOME
       })]
     })

@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   f: () => j
 }), n(388685), n(49124);
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(801937),
   d = n(502109),
   u = n(241209),
-  g = n(563132),
-  m = n(586585),
+  m = n(563132),
+  g = n(586585),
   p = n(439021),
   h = n(450272),
   f = n(231338),
@@ -53,7 +53,7 @@ function C(e, t) {
 }
 
 function j() {
-  return (0, i.jsx)(g.PaymentContextProvider, {
+  return (0, i.jsx)(m.PaymentContextProvider, {
     stepConfigs: [],
     skuIDs: [],
     activeSubscription: null,
@@ -159,8 +159,8 @@ function T(e) {
     null != n.current && n.current.show()
   };
   return (0, i.jsx)(v, {
-    footer: (0, i.jsx)(m.Z, {
-      primaryCTA: m.Z.CTAType.CONTINUE,
+    footer: (0, i.jsx)(g.Z, {
+      primaryCTA: g.Z.CTAType.CONTINUE,
       primaryText: b.intl.string("applePay" === t ? b.t.WoXvJC : b.t.wnVVr6),
       primaryDisabled: !s,
       onPrimary: () => a(),
@@ -288,7 +288,7 @@ let y = {
   D = e => void 0 !== e ? JSON.stringify(e, null, 2) : "undefined";
 
 function Z() {
-  let [e, t] = r.useState(D(P)), [n, l] = r.useState(P), [a, c] = r.useState(D(R)), [d, g] = r.useState(R), [m, p] = r.useState(null), [f, b] = r.useState((0, i.jsx)(h.DS, {
+  let [e, t] = r.useState(D(P)), [n, l] = r.useState(P), [a, c] = r.useState(D(R)), [d, m] = r.useState(R), [g, p] = r.useState(null), [f, b] = r.useState((0, i.jsx)(h.DS, {
     errorLabel: y.CONFIGURABLE,
     elementOptions: P,
     children: (0, i.jsx)(s.ExpressCheckoutElement, {
@@ -333,10 +333,10 @@ function Z() {
       showCharacterCount: !0,
       value: a,
       onChange: c
-    }), null != m && (0, i.jsx)(o.Text, {
+    }), null != g && (0, i.jsx)(o.Text, {
       variant: "text-md/normal",
       color: "text-danger",
-      children: m
+      children: g
     }), (0, i.jsx)(o.zxk, {
       className: _.applyChangesButton,
       color: o.zxk.Colors.BRAND,
@@ -361,7 +361,7 @@ function Z() {
                 options: n
               })
             })]
-          })), l(t), g(n), p(null)
+          })), l(t), m(n), p(null)
         } catch (e) {
           console.error("ConfigurableStripeExpressCheckoutElement - error parsing JSON: ", e), p("Error parsing JSON. Check console for more information.")
         }

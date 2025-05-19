@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   Z: () => M
 }), n(388685);
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(570140),
   d = n(355467),
   u = n(179360),
-  g = n(821849),
-  m = n(497321),
+  m = n(821849),
+  g = n(497321),
   p = n(100527),
   h = n(906732),
   f = n(211242),
@@ -69,7 +69,7 @@ let M = function(e) {
   }, [ee]), r.useEffect(() => {
     c.Z.wait(async () => {
       let e = Date.now();
-      await Promise.all([d.jg(), (0, u.X8)(), d.tZ(), (0, g.Y2)(Q, null, L.JjL.DISCOVERY), null != G && J && q && (0, j.Z)(G)]), K.current = Date.now() - e, Y(!1)
+      await Promise.all([d.jg(), (0, u.X8)(), d.tZ(), (0, m.Y2)(Q, null, L.JjL.DISCOVERY), null != G && J && q && (0, j.Z)(G)]), K.current = Date.now() - e, Y(!1)
     })
   }, [Q, G, J, q]), r.useEffect(() => {
     n && (null != F || null != H) && (0, y.a)(F, H)
@@ -78,7 +78,7 @@ let M = function(e) {
       location_stack: s,
       load_duration_ms: K.current
     })
-  }, [s, W]), (0, a.e7)([O.Z], () => O.Z.enabled)) ? (0, i.jsx)(m.Z, {}) : n ? (0, i.jsx)(_.c8, {}) : t === k.EZ.ApplicationStoreHome && q ? J && null == $ ? (0, i.jsx)("div", {
+  }, [s, W]), (0, a.e7)([O.Z], () => O.Z.enabled)) ? (0, i.jsx)(g.Z, {}) : n ? (0, i.jsx)(_.c8, {}) : t === k.EZ.ApplicationStoreHome && q ? J && null == $ ? (0, i.jsx)("div", {
     className: l()(B.container, B.loading),
     children: (0, i.jsx)(o.$jN, {})
   }) : (0, i.jsx)(h.Gt, {

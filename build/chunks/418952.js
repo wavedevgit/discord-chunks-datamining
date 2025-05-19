@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 e.exports = {
   content: "content_b00844",
   contentNoArt: "contentNoArt_b00844",
@@ -17,6 +17,7 @@ e.exports = {
   bottomPointer: "bottomPointer_b00844",
   centerLeftPointer: "centerLeftPointer_b00844",
   topLeftPointer: "topLeftPointer_b00844",
+  bottomLeftPointer: "bottomLeftPointer_b00844",
   gifTag: "gifTag_b00844",
   earlyAccessText: "earlyAccessText_b00844",
   earlyAccessIcon: "earlyAccessIcon_b00844",

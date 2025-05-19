@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   Z: () => d
 });
@@ -16,8 +16,8 @@ let d = r.forwardRef(function(e, t) {
     onContextMenu: s,
     onClick: d,
     disabled: u,
-    icon: g,
-    iconForeground: m,
+    icon: m,
+    iconForeground: g,
     innerClassName: p,
     className: h,
     redGlow: f,
@@ -31,13 +31,13 @@ let d = r.forwardRef(function(e, t) {
     tooltipForceOpen: S,
     tooltipContentClassName: v,
     plated: T
-  } = e, I = "function" == typeof g ? (0, i.jsx)(g, {
+  } = e, I = "function" == typeof m ? (0, i.jsx)(m, {
     width: 20,
     height: 20,
     size: "custom",
-    colorClass: null != m ? m : "",
+    colorClass: null != g ? g : "",
     color: "currentColor"
-  }) : g;
+  }) : m;
   return (0, i.jsx)(a.ua7, {
     tooltipClassName: b,
     text: n,
@@ -46,8 +46,8 @@ let d = r.forwardRef(function(e, t) {
     tooltipContentClassName: v,
     forceOpen: S,
     children: e => {
-      var n, g, {
-          onClick: m,
+      var n, m, {
+          onClick: g,
           onMouseEnter: b,
           onMouseLeave: E
         } = e,
@@ -83,7 +83,7 @@ let d = r.forwardRef(function(e, t) {
           })
         }
         return e
-      }({}, O), g = g = {
+      }({}, O), m = m = {
         buttonRef: t,
         look: a.zxk.Looks.BLANK,
         size: a.zxk.Sizes.NONE,
@@ -98,7 +98,7 @@ let d = r.forwardRef(function(e, t) {
           [c.plateMuted]: f && T
         }),
         onClick: e => {
-          null != m && m(), null != d && d(e)
+          null != g && g(), null != d && d(e)
         },
         onMouseEnter: () => {
           null == b || b(), null == _ || _()
@@ -123,15 +123,15 @@ let d = r.forwardRef(function(e, t) {
           mask: o.ZP.Masks.PANEL_BUTTON,
           children: I
         }) : I, r]
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(g)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(m)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var i = Object.getOwnPropertySymbols(e);
           n.push.apply(n, i)
         }
         return n
-      })(Object(g)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(g, e))
+      })(Object(m)).forEach(function(e) {
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(m, e))
       }), n))
     }
   })

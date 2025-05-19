@@ -1,6 +1,6 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var i = n(255367);
 n(73800);
@@ -12,14 +12,14 @@ var r = n(120356),
   c = n(993413),
   d = n(486324),
   u = n(388032),
-  g = n(771066);
+  m = n(771066);
 
-function m(e) {
+function g(e) {
   let {
     showRemoveBannerButton: t,
     errors: n,
     onBannerChange: r,
-    guildId: m,
+    guildId: g,
     className: p,
     disabled: h = !1,
     showPremiumIcon: f = !0,
@@ -37,26 +37,26 @@ function m(e) {
     disabled: h,
     forcedDivider: _,
     children: (0, i.jsxs)("div", {
-      className: g.buttonsContainer,
+      className: m.buttonsContainer,
       children: [(0, i.jsx)(C, {
         className: s()({
-          [g.buttonHighlighted]: x
+          [m.buttonHighlighted]: x
         }),
         size: l.zxk.Sizes.SMALL,
         onClick: () => (0, o.$r)({
           uploadType: d.pC.BANNER,
           analyticsSource: E,
-          guildId: m,
+          guildId: g,
           isTryItOutFlow: b
         }),
         children: u.intl.string(u.t.N0bC3N)
       }), t && (0, i.jsx)(l.zxk, {
-        className: g.removeButton,
+        className: m.removeButton,
         color: l.zxk.Colors.PRIMARY,
         look: l.zxk.Looks.LINK,
         size: l.zxk.Sizes.SMALL,
         onClick: () => r(null),
-        children: null != m ? u.intl.string(u.t.jHlJNT) : u.intl.string(u.t.tT9n7O)
+        children: null != g ? u.intl.string(u.t.jHlJNT) : u.intl.string(u.t.tT9n7O)
       })]
     })
   })

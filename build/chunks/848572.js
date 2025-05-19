@@ -62,11 +62,13 @@ function g(e, t) {
 var E = function(e) {
   return e.UPCOMING = "upcoming", e.EARNED = "earned", e
 }({});
-let b = () => {
-    let e = (0, a.e7)([l.default], () => l.default.getCurrentUser());
-    return (0, f.l)(null == e ? void 0 : e.id)
-  },
-  y = e => (0, a.e7)([s.Z], () => {
+
+function b() {
+  let e = (0, a.e7)([l.default], () => l.default.getCurrentUser()),
+    t = (0, f.l)(null == e ? void 0 : e.id);
+  return null != t ? t : null
+}
+let y = e => (0, a.e7)([s.Z], () => {
     if (null == e) return null;
     let t = s.Z.getUserProfile(e);
     return null == t ? void 0 : t.premiumSince

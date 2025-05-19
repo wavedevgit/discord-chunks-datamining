@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   Z: () => _
 });
@@ -12,8 +12,8 @@ var r = n(120356),
   c = n(481060),
   d = n(220082),
   u = n(687158),
-  g = n(576635),
-  m = n(74538),
+  m = n(576635),
+  g = n(74538),
   p = n(193528),
   h = n(993413),
   f = n(388032),
@@ -34,12 +34,12 @@ function _(e) {
   } = e, S = (0, u.ZP)(t.id, x), {
     primaryColor: v,
     secondaryColor: T
-  } = (0, g.Z)({
+  } = (0, m.Z)({
     user: t,
     displayProfile: S,
     pendingThemeColors: r,
     isPreview: !0
-  }), I = m.ZP.canUsePremiumProfileCustomization(t), N = null != n ? n : t.getAvatarURL(x, 80), y = (0, c.dQu)(o.Z.unsafe_rawColors.PRIMARY_530).hex(), A = (0, d.Cf)(N, y, !1);
+  }), I = g.ZP.canUsePremiumProfileCustomization(t), N = null != n ? n : t.getAvatarURL(x, 80), y = (0, c.dQu)(o.Z.unsafe_rawColors.PRIMARY_530).hex(), A = (0, d.Cf)(N, y, !1);
   if (null == v || null == T) return null;
   let P = e => {
     l(a()(e, null == S ? void 0 : S.themeColors) ? void 0 : e)

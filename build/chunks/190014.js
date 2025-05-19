@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   Z: () => x
 }), n(388685);
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(639814),
   d = n(838436),
   u = n(51331),
-  g = n(703115),
-  m = n(526761),
+  m = n(703115),
+  g = n(526761),
   p = n(726985),
   h = n(736530),
   f = n(981631),
@@ -22,10 +22,10 @@ function _(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, c = o.iH.useSetting().includes(n), m = r.useCallback(e => {
+  } = e, c = o.iH.useSetting().includes(n), g = r.useCallback(e => {
     let i = (0, a.rr)();
     e ? i.delete(n) : i.add(n), o.iH.updateSetting([...i]), s.default.track(f.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
-      action: g.Y.RESTRICT_GUILD_ACTIVITY_JOIN_TOGGLE,
+      action: m.Y.RESTRICT_GUILD_ACTIVITY_JOIN_TOGGLE,
       ingress: t,
       guild_id: n
     })
@@ -35,7 +35,7 @@ function _(e) {
     children: (0, i.jsx)(u.Z, {
       title: b.intl.string(b.t["T+nevL"]),
       value: !c,
-      onChange: m,
+      onChange: g,
       note: b.intl.format(b.t.jXKQCg, {
         helpdeskArticle: l.Z.getArticleURL(f.BhN.ACTIVITY_STATUS_SETTINGS)
       })
@@ -45,7 +45,7 @@ function _(e) {
 
 function x(e) {
   let {
-    ingress: t = m.f4.USER_SETTINGS_PRIVACY_SAFETY,
+    ingress: t = g.f4.USER_SETTINGS_PRIVACY_SAFETY,
     guildId: n
   } = e, r = (0, c.is)();
   return (0, i.jsx)(_, {

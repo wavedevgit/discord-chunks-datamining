@@ -1,12 +1,12 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   Z: () => E
 });
 var i, r, s, l, a, o, c = n(442837),
   d = n(570140),
   u = n(592125),
-  g = n(896797),
-  m = n(430824),
+  m = n(896797),
+  g = n(430824),
   p = n(944486),
   h = n(55589),
   f = n(981631);
@@ -21,10 +21,10 @@ function _(e) {
 }
 class x extends(o = c.ZP.Store) {
   initialize() {
-    this.waitFor(g.Z, h.Z, p.Z, m.Z, u.Z)
+    this.waitFor(m.Z, h.Z, p.Z, g.Z, u.Z)
   }
   getHomeLink() {
-    return null != b ? b : g.Z.fallbackRoute
+    return null != b ? b : m.Z.fallbackRoute
   }
 }
 r = "AppViewStore", (i = "displayName") in x ? Object.defineProperty(x, i, {

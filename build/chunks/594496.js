@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   Z: () => R
 });
@@ -12,8 +12,8 @@ var r = n(512722),
   c = n(150039),
   d = n(126631),
   u = n(433411),
-  g = n(532432),
-  m = n(134795),
+  m = n(532432),
+  g = n(134795),
   p = n(513901),
   h = n(451392),
   f = n(906364),
@@ -134,7 +134,7 @@ function R(e) {
     }, "pronouns"), (0, i.jsxs)(I.Z, {
       user: Z,
       showOverlay: !K,
-      children: [(0, i.jsx)(g.Z, {
+      children: [(0, i.jsx)(m.Z, {
         sectionTitle: (0, i.jsxs)(i.Fragment, {
           children: [N.intl.string(N.t.lqaIxM), (0, i.jsx)(a.ua7, {
             text: N.intl.string(N.t["5AFxuL"]),
@@ -179,7 +179,7 @@ function R(e) {
         }),
         user: Z,
         guild: H
-      }, "effect"), (0, i.jsx)(m.Z, {
+      }, "effect"), (0, i.jsx)(g.Z, {
         showRemoveBannerButton: X,
         errors: null == V ? void 0 : V.banner,
         onBannerChange: e => ee(e, null == Y ? void 0 : Y.banner, O.g_),

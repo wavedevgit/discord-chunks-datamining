@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   Z: () => I
 }), n(388685), n(35282);
@@ -10,8 +10,8 @@ var i, r = n(255367),
   c = n(442837),
   d = n(481060),
   u = n(570140),
-  g = n(355467),
-  m = n(117938),
+  m = n(355467),
+  g = n(117938),
   p = n(46141),
   h = n(351402),
   f = n(823379),
@@ -59,7 +59,7 @@ let v = "isDefault";
 class T extends(i = s.PureComponent) {
   componentWillUnmount() {
     u.Z.wait(() => {
-      (0, g._H)(), (0, g.w7)()
+      (0, m._H)(), (0, m.w7)()
     })
   }
   renderError() {
@@ -81,7 +81,7 @@ class T extends(i = s.PureComponent) {
     } = this.state, {
       updateError: t,
       paymentSource: n
-    } = this.props, i = (0, m.L)(n);
+    } = this.props, i = (0, g.L)(n);
     return (0, r.jsxs)("div", {
       className: C.addressSection,
       children: [(0, r.jsx)(d.Text, {

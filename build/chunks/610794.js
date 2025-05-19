@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   Z: () => O
 }), n(388685), n(457542);
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(410030),
   d = n(726542),
   u = n(275759),
-  g = n(231757),
-  m = n(888496),
+  m = n(231757),
+  g = n(888496),
   p = n(706454),
   h = n(553795),
   f = n(63063),
@@ -27,7 +27,7 @@ function C(e) {
     account: n,
     refreshed: l,
     handleRefresh: o
-  } = e, [c, d] = r.useState(!1), g = null != (t = n.metadata) ? t : {}, h = (0, s.e7)([p.default], () => p.default.locale), C = r.useCallback(async () => {
+  } = e, [c, d] = r.useState(!1), m = null != (t = n.metadata) ? t : {}, h = (0, s.e7)([p.default], () => p.default.locale), C = r.useCallback(async () => {
     d(!0);
     try {
       await o(n)
@@ -37,24 +37,24 @@ function C(e) {
   }, [n, o]), j = null;
   switch (n.type) {
     case b.ABu.REDDIT:
-      j = (0, m.oP)(g, E.metadataItem);
+      j = (0, g.oP)(m, E.metadataItem);
       break;
     case b.ABu.STEAM:
-      j = (0, m.Dq)(g, E.metadataItem);
+      j = (0, g.Dq)(m, E.metadataItem);
       break;
     case b.ABu.TWITTER:
-      j = (0, m.rJ)(g, E.metadataItem);
+      j = (0, g.rJ)(m, E.metadataItem);
       break;
     case b.ABu.EBAY:
-      j = (0, m.ul)(g, E.metadataItem);
+      j = (0, g.ul)(m, E.metadataItem);
       break;
     case b.ABu.PAYPAL:
-      j = (0, m.li)(g, E.metadataItem);
+      j = (0, g.li)(m, E.metadataItem);
       break;
     case b.ABu.TIKTOK:
-      j = (0, m.hf)(g, E.metadataItem)
+      j = (0, g.hf)(m, E.metadataItem)
   }
-  let O = (0, u.FI)(g[_.PC.CREATED_AT], h),
+  let O = (0, u.FI)(m[_.PC.CREATED_AT], h),
     S = null,
     v = x.intl.string(x.t.wzzjk5);
   return (null == j || 0 === j.length) && null == O && (S = (0, i.jsx)(a.Text, {
@@ -96,9 +96,9 @@ function j(e) {
     account: t,
     handleRefresh: n,
     refreshedAccountIds: s
-  } = e, [u, m] = r.useState(t.visibility), [p, h] = r.useState(t.metadataVisibility), f = (0, c.ZP)();
+  } = e, [u, g] = r.useState(t.visibility), [p, h] = r.useState(t.metadataVisibility), f = (0, c.ZP)();
   r.useEffect(() => {
-    m(t.visibility), h(t.metadataVisibility)
+    g(t.visibility), h(t.metadataVisibility)
   }, [t]);
   let b = d.Z.get(t.type),
     _ = !0 === b.hasMetadata;
@@ -120,13 +120,13 @@ function j(e) {
               verified: n
             } = t, i = +!!e;
             if (e && !n) {
-              m(i), (0, g.Z)({
+              g(i), (0, m.Z)({
                 platformType: t.type,
                 location: "User Settings"
               });
               return
             }
-            m(i), o.Z.setVisibility(t.type, t.id, i)
+            g(i), o.Z.setVisibility(t.type, t.id, i)
           },
           children: [(0, i.jsx)(a.Text, {
             variant: "text-md/semibold",
@@ -147,7 +147,7 @@ function j(e) {
               verified: n
             } = t, i = +!!e;
             if (e && !n) {
-              h(i), (0, g.Z)({
+              h(i), (0, m.Z)({
                 platformType: t.type,
                 location: "User Settings"
               });

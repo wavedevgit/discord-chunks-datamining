@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   default: () => k
 }), n(415506), n(388685);
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(355467),
   d = n(179360),
   u = n(100527),
-  g = n(906732),
-  m = n(975298),
+  m = n(906732),
+  g = n(975298),
   p = n(600164),
   h = n(374649),
   f = n(431369),
@@ -102,7 +102,7 @@ function Z(e) {
     premiumSubscription: l,
     guildBoostSlotId: c,
     fractionalPremiumInfo: d,
-    onBack: m,
+    onBack: g,
     onNext: _,
     onClose: C
   } = e, [O, S] = r.useState(!1), [y, R] = r.useState(null), [Z, w] = r.useMemo(() => {
@@ -130,7 +130,7 @@ function Z(e) {
     }
   }), {
     analyticsLocations: M
-  } = (0, g.ZP)(), [U] = (0, h.ED)({
+  } = (0, m.ZP)(), [U] = (0, h.ED)({
     subscriptionId: l.id,
     renewal: !0,
     currency: l.currency,
@@ -215,7 +215,7 @@ function Z(e) {
         },
         children: A.intl.string(A.t["/AS/gI"])
       }), (0, i.jsx)(x.Z, {
-        onClick: m
+        onClick: g
       })]
     })]
   })
@@ -264,11 +264,11 @@ function k(e) {
     O.ZP.hasFetchedSubscriptions() || (0, c.jg)()
   }, []);
   let d = (0, a.e7)([O.ZP], () => O.ZP.getPremiumTypeSubscription()),
-    p = (0, m.Z)(),
+    p = (0, g.Z)(),
     [h, f] = r.useState(1),
     {
       analyticsLocations: b
-    } = (0, g.ZP)(u.Z.GUILD_BOOST_CANCELLATION_MODAL);
+    } = (0, m.ZP)(u.Z.GUILD_BOOST_CANCELLATION_MODAL);
   if (null == d) t = (0, i.jsx)(o.hzk, {
     children: (0, i.jsx)(o.$jN, {})
   });
@@ -302,7 +302,7 @@ function k(e) {
     default:
       throw Error("Unexpected step: ".concat(h))
   }
-  return (0, i.jsx)(g.Gt, {
+  return (0, i.jsx)(m.Gt, {
     value: b,
     children: (0, i.jsx)(o.Y0X, {
       transitionState: s,

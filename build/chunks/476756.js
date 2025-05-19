@@ -1,6 +1,6 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var i = n(255367);
 n(73800);
@@ -12,18 +12,18 @@ var r = n(512722),
   c = n(474873),
   d = n(197344),
   u = n(871465),
-  g = n(388032);
+  m = n(388032);
 
-function m() {
+function g() {
   let e = (0, l.e7)([c.Z], () => c.Z.getSoundpack()),
     t = d.Z.useHolidaySoundpack();
   s()(null != t, "should not render this without a holiday soundpack");
   let n = [{
     value: u.YC.CLASSIC,
-    label: g.intl.string(g.t.p3Hg5e)
+    label: m.intl.string(m.t.p3Hg5e)
   }, {
     value: t.soundpack,
-    label: g.intl.string(t.soundpackLabel)
+    label: m.intl.string(t.soundpackLabel)
   }];
   return (0, i.jsx)(a.q4e, {
     onChange: o.c,

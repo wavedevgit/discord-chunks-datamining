@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 e.exports = {
   container: "container__58c96",
   pointer: "pointer__58c96"

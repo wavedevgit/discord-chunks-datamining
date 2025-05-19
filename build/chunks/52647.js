@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   Z: () => u
 }), n(410992), n(227481), n(730884), n(20464), n(341884), n(364341), n(629680), n(505025), n(918970), n(121784), n(644351), n(146733);
@@ -18,17 +18,17 @@ let u = () => {
     })) ? e : new Uint8Array,
     n = (0, a.x)(s.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL, t),
     u = (0, a.x)(s.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK, t),
-    g = (0, a.x)(s.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, t),
-    m = i.useCallback(() => {
-      n.isDismissed && n.handleToggleDismissState(), u.isDismissed && u.handleToggleDismissState(), g.isDismissed && g.handleToggleDismissState(), l.Z.dispatch({
+    m = (0, a.x)(s.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, t),
+    g = i.useCallback(() => {
+      n.isDismissed && n.handleToggleDismissState(), u.isDismissed && u.handleToggleDismissState(), m.isDismissed && m.handleToggleDismissState(), l.Z.dispatch({
         type: "VIRTUAL_CURRENCY_ONBOARDING_MODAL_RESET"
       })
-    }, [u, g, n]),
+    }, [u, m, n]),
     {
       handleResetStatusClick: p
     } = (0, o.kJ)(d.V6);
   return {
-    resetOnboardingAnnouncementModal: m,
+    resetOnboardingAnnouncementModal: g,
     resetQuestStatus: p
   }
 }

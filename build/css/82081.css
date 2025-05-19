@@ -1,6 +1,6 @@
 /**
   Module ID: 82081
-  Original File Name: a5cdaa91e94aa254
+  Original File Name: 24ce14b3a0487252
 **/
 .closeButton_b425c1 {
     align-items: center;
@@ -39,6 +39,10 @@
     position: relative;
     width: 256px;
     z-index: 1000
+}
+
+.coachmarkPointer__6e9b4 {
+    border-right-color: var(--bg-surface-overlay)
 }
 
 .title__6e9b4 {
@@ -208,4 +212,4 @@
     gap: 12px
 }
 
-/*# sourceMappingURL=a5cdaa91e94aa254.css.map*/
+/*# sourceMappingURL=24ce14b3a0487252.css.map*/

@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   E: () => o
 }), n(388685), n(35282), n(781311);
@@ -14,12 +14,12 @@ function o() {
     n = i.useRef(new r.Z((0, l.ji)(t))),
     [o, c] = i.useState(!1),
     [d, u] = i.useState(a.QF),
-    g = i.useCallback(async e => {
+    m = i.useCallback(async e => {
       u(await n.current.search(e.trim())), c(!0)
     }, []);
   return i.useEffect(() => {
-    "" === e || e.length < 2 ? (u(a.QF), c(!1)) : g(e)
-  }, [e, g]), {
+    "" === e || e.length < 2 ? (u(a.QF), c(!1)) : m(e)
+  }, [e, m]), {
     hasSearchResults: o,
     searchResults: d
   }

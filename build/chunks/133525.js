@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 e.exports = {
   tierCard: "tierCard_a45ed3",
   withTier2Rim: "withTier2Rim_a45ed3",

@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   Z: () => c
 });
@@ -18,8 +18,8 @@ function c(e) {
       color: c,
       onClick: d,
       disabled: u,
-      children: g,
-      muted: m = !1
+      children: m,
+      muted: g = !1
     } = e,
     p = function(e, t) {
       if (null == e) return {};
@@ -54,10 +54,10 @@ function c(e) {
     }
     return e
   }({}, p), n = n = {
-    muted: m,
+    muted: g,
     className: s()(u ? a.buttonDisabled : a.buttonEnabled, o[c], r),
     onClick: u ? void 0 : d,
-    children: g
+    children: m
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

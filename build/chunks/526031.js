@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   Z: () => h
 });
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(765585),
   d = n(429467),
   u = n(921944),
-  g = n(388032),
-  m = n(385255);
+  m = n(388032),
+  g = n(385255);
 
 function p(e) {
   let {
@@ -27,7 +27,7 @@ function p(e) {
     tryItText: (0, i.jsx)(l.Text, {
       variant: "text-xs/semibold",
       color: "always-white",
-      children: g.intl.string(g.t.RzWDqa)
+      children: m.intl.string(m.t.RzWDqa)
     }),
     tryItButtonColor: l.Ttl.BRAND,
     onTryFeature: () => {
@@ -75,23 +75,23 @@ function p(e) {
     header: (0, i.jsx)(l.X6q, {
       variant: "heading-sm/bold",
       color: "text-primary",
-      className: m.header,
-      children: g.intl.string(g.t.jrzHRk)
+      className: g.header,
+      children: m.intl.string(m.t.jrzHRk)
     }),
     body: (0, i.jsx)(l.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      className: m.body,
-      children: g.intl.string(g.t.hA60Ul)
+      className: g.body,
+      children: m.intl.string(m.t.hA60Ul)
     }),
     position: "top",
     align: "center",
-    artClassName: m.art,
-    className: m.container,
-    contentClassName: m.content,
-    pointerClassName: m.pointer,
+    artClassName: g.art,
+    className: g.container,
+    contentClassName: g.content,
+    pointerClassName: g.pointer,
     dismissIcon: (0, i.jsx)(r.D, {}),
-    dismissIconClassName: m.dismissIcon,
+    dismissIconClassName: g.dismissIcon,
     onDismissIconClick: () => t(u.L.USER_DISMISS)
   })
 }

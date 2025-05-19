@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   Z: () => f
 });
@@ -12,8 +12,8 @@ var r = n(512722),
   c = n(644744),
   d = n(792423),
   u = n(674985),
-  g = n(594174),
-  m = n(843200),
+  m = n(594174),
+  g = n(843200),
   p = n(388032),
   h = n(647573);
 
@@ -22,8 +22,8 @@ function f() {
     houseMembership: e,
     isClaimed: t,
     isVerified: n
-  } = (0, l.cj)([g.default, u.Z], () => {
-    let e = g.default.getCurrentUser();
+  } = (0, l.cj)([m.default, u.Z], () => {
+    let e = m.default.getCurrentUser();
     return s()(null != e, "UserSettingsHypeSquad: currentUser cannot be undefined"), {
       houseMembership: u.Z.getHouseMembership(),
       isClaimed: e.isClaimed(),
@@ -42,7 +42,7 @@ function f() {
         children: p.intl.string(p.t["6FaVFB"])
       })]
     }),
-    children: [(0, i.jsx)(m.Z, {
+    children: [(0, i.jsx)(g.Z, {
       className: h.verificationNotice,
       unclaimedNotice: p.intl.string(p.t.vZU8Ki),
       unverifiedNotice: p.intl.string(p.t.T7TYEB)

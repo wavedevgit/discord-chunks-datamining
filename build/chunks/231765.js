@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   Z: () => z
 }), n(953529), n(388685);
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(37234),
   d = n(607070),
   u = n(578361),
-  g = n(460181),
-  m = n(585483),
+  m = n(460181),
+  g = n(585483),
   p = n(57562),
   h = n(955204),
   f = n(64078),
@@ -294,7 +294,7 @@ function B(e) {
       screenshakeEnabledLocations: s
     },
     updateSettings: a
-  } = e, c = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), u = !t || !n || c, g = (e, t) => {
+  } = e, c = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), u = !t || !n || c, m = (e, t) => {
     null != e.shakeIntensity && e.shakeIntensity > r && (0, p.T)(h.hn.MORE), a(e, t)
   };
   return (0, i.jsxs)(o.hjN, {
@@ -323,7 +323,7 @@ function B(e) {
         minValue: N[0],
         maxValue: N[N.length - 1],
         initialValue: r,
-        onValueChange: e => g({
+        onValueChange: e => m({
           shakeIntensity: e
         }, 1),
         onMarkerRender: e => e === N[N.length - 1] ? j.intl.string(j.t["4rbMWV"]) : "".concat(100 * e, "%")
@@ -424,7 +424,7 @@ function G(e) {
   let p = e => {
       if (e.enabled && !1 === s.enabled) {
         var t;
-        n(!0), (0, g.GN)("poggermode_enabled"), m.S.dispatch(C.CkL.SHAKE_APP, {
+        n(!0), (0, m.GN)("poggermode_enabled"), g.S.dispatch(C.CkL.SHAKE_APP, {
           duration: 2e3,
           intensity: null != (t = e.shakeIntensity) ? t : s.shakeIntensity
         })
@@ -439,7 +439,7 @@ function G(e) {
       let i = u(s.screenshakeEnabled, e.screenshakeEnabled, s.enabled, e.enabled);
       if (1 === t && i) {
         var r;
-        m.S.dispatch(C.CkL.SHAKE_APP, {
+        g.S.dispatch(C.CkL.SHAKE_APP, {
           duration: 1e3,
           intensity: null != (r = e.shakeIntensity) ? r : s.shakeIntensity
         })
@@ -496,7 +496,7 @@ let F = (e, t, n) => {
   H = e => 0 === e ? u.n.LEFT : u.n.RIGHT;
 
 function z() {
-  let [e, t] = r.useState(0), [n, s] = r.useState(H(e)), [a, c] = r.useState(!1), g = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), m = a && !g;
+  let [e, t] = r.useState(0), [n, s] = r.useState(H(e)), [a, c] = r.useState(!1), m = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), g = a && !m;
   return r.useEffect(() => {
     let t = setTimeout(() => {
       s(H(e))
@@ -511,11 +511,11 @@ function z() {
       direction: n,
       children: F(e, t, c)
     }), (0, i.jsx)("div", {
-      className: m ? O.enableAnimationOverlayVisible : O.enableAnimationOverlayHidden,
+      className: g ? O.enableAnimationOverlayVisible : O.enableAnimationOverlayHidden,
       children: (0, i.jsx)(o.Fmz, {
         className: O.enableAnimation,
         importData: V,
-        shouldAnimate: m,
+        shouldAnimate: g,
         autoplay: !1,
         resetOnPlay: !0,
         loop: !1,

@@ -1,111 +1,111 @@
-/** Chunk was on 69835 **/
-n.d(t, {
-  default: () => p
-}), n(388685);
-var i = n(255367),
-  r = n(73800),
-  s = n(442837),
-  l = n(481060),
-  a = n(809206),
-  o = n(118012),
-  c = n(25990),
-  d = n(155433),
-  u = n(981631),
-  g = n(388032),
-  m = n(132709);
+/** Chunk was on 48707 **/
+s.d(e, {
+  default: () => m
+}), s(388685);
+var l = s(255367),
+  n = s(73800),
+  i = s(442837),
+  o = s(481060),
+  r = s(809206),
+  a = s(118012),
+  c = s(25990),
+  u = s(155433),
+  d = s(981631),
+  x = s(388032),
+  h = s(132709);
 
-function p(e) {
-  var t, n, p, h;
+function m(t) {
+  var e, s, m, p;
   let {
-    transitionState: f,
-    onSuccess: b,
+    transitionState: g,
+    onSuccess: w,
     onClose: _,
-    requirementsUpdated: x,
-    noSkip: E = !1
-  } = e, [C, j] = r.useState(""), [O, S] = r.useState(""), [v, T] = r.useState(""), [I, N] = r.useState(null), [y, A] = r.useState(null), P = (0, s.e7)([c.Z], () => c.Z.getErrors()), R = (0, s.e7)([c.Z], () => c.Z.getFormState()), D = r.useRef(null);
-  async function Z(e) {
-    e.preventDefault(), (0, a.b9)();
-    let t = !1;
-    if ("" === O ? (N(g.intl.string(g.t["/7/oPT"])), t = !0) : N(null), O !== v ? (A(g.intl.string(g.t.IEKYZ2)), t = !0) : A(null), t) return;
-    let n = await (0, a.Mn)({
-      password: C,
-      newPassword: O
+    requirementsUpdated: f,
+    noSkip: j = !1
+  } = t, [v, k] = n.useState(""), [C, E] = n.useState(""), [z, N] = n.useState(""), [S, b] = n.useState(null), [R, T] = n.useState(null), Z = (0, i.e7)([c.Z], () => c.Z.getErrors()), I = (0, i.e7)([c.Z], () => c.Z.getFormState()), P = n.useRef(null);
+  async function y(t) {
+    t.preventDefault(), (0, r.b9)();
+    let e = !1;
+    if ("" === C ? (b(x.intl.string(x.t["/7/oPT"])), e = !0) : b(null), C !== z ? (T(x.intl.string(x.t.IEKYZ2)), e = !0) : T(null), e) return;
+    let s = await (0, r.Mn)({
+      password: v,
+      newPassword: C
     });
-    if (null == n ? void 0 : n.ok) b();
+    if (null == s ? void 0 : s.ok) w();
     else {
-      var i;
-      (null == n || null == (i = n.body) ? void 0 : i.username) != null && (0, d.P)()
+      var l;
+      (null == s || null == (l = s.body) ? void 0 : l.username) != null && (0, u.P)()
     }
   }
-  return r.useEffect(() => {
-    if (f === l.Dvm.ENTERED) {
-      var e;
-      null == (e = D.current) || e.focus()
+  return n.useEffect(() => {
+    if (g === o.Dvm.ENTERED) {
+      var t;
+      null == (t = P.current) || t.focus()
     }
-  }, [f]), (0, i.jsxs)(l.Y0X, {
-    transitionState: f,
-    children: [(0, i.jsxs)(l.xBx, {
+  }, [g]), (0, l.jsxs)(o.Y0X, {
+    transitionState: g,
+    children: [(0, l.jsxs)(o.xBx, {
       separator: !1,
-      className: m.header,
-      children: [(0, i.jsx)(o.Z, {
-        color: o.Z.Colors.HEADER_PRIMARY,
-        size: o.Z.Sizes.SIZE_24,
-        className: m.title,
-        children: g.intl.string(g.t["geta7+"])
-      }), (0, i.jsx)(l.Text, {
+      className: h.header,
+      children: [(0, l.jsx)(a.Z, {
+        color: a.Z.Colors.HEADER_PRIMARY,
+        size: a.Z.Sizes.SIZE_24,
+        className: h.title,
+        children: x.intl.string(x.t["geta7+"])
+      }), (0, l.jsx)(o.Text, {
         color: "header-secondary",
         variant: "text-md/normal",
-        className: m.subtitle,
-        children: x ? g.intl.string(g.t["37iHbW"]) : g.intl.string(g.t.iOurYm)
-      }), !0 !== E && (0, i.jsx)(l.olH, {
+        className: h.subtitle,
+        children: f ? x.intl.string(x.t["37iHbW"]) : x.intl.string(x.t.iOurYm)
+      }), !0 !== j && (0, l.jsx)(o.olH, {
         onClick: _,
-        className: m.modalCloseButton
+        className: h.modalCloseButton
       })]
-    }), (0, i.jsxs)("form", {
-      onSubmit: Z,
-      children: [(0, i.jsxs)(l.hzk, {
-        className: m.content,
-        children: [(0, i.jsx)(l.xJW, {
-          title: g.intl.string(g.t.WBqMRU),
-          error: null == P || null == (t = P.password) ? void 0 : t[0],
-          children: (0, i.jsx)(l.oil, {
-            type: "password",
-            value: C,
-            onChange: j,
-            inputRef: D
-          })
-        }), (0, i.jsx)(l.xJW, {
-          className: m.newPassword,
-          title: g.intl.string(g.t["8dM4FB"]),
-          error: null != (h = null != (p = null == P || null == (n = P.new_password) ? void 0 : n[0]) ? p : I) ? h : void 0,
-          children: (0, i.jsx)(l.oil, {
-            type: "password",
-            value: O,
-            onChange: S
-          })
-        }), (0, i.jsx)(l.xJW, {
-          className: m.newPassword,
-          title: g.intl.string(g.t.iQG2KC),
-          error: null != y ? y : void 0,
-          children: (0, i.jsx)(l.oil, {
+    }), (0, l.jsxs)("form", {
+      onSubmit: y,
+      children: [(0, l.jsxs)(o.hzk, {
+        className: h.content,
+        children: [(0, l.jsx)(o.xJW, {
+          title: x.intl.string(x.t.WBqMRU),
+          error: null == Z || null == (e = Z.password) ? void 0 : e[0],
+          children: (0, l.jsx)(o.oil, {
             type: "password",
             value: v,
-            onChange: T
+            onChange: k,
+            inputRef: P
+          })
+        }), (0, l.jsx)(o.xJW, {
+          className: h.newPassword,
+          title: x.intl.string(x.t["8dM4FB"]),
+          error: null != (p = null != (m = null == Z || null == (s = Z.new_password) ? void 0 : s[0]) ? m : S) ? p : void 0,
+          children: (0, l.jsx)(o.oil, {
+            type: "password",
+            value: C,
+            onChange: E
+          })
+        }), (0, l.jsx)(o.xJW, {
+          className: h.newPassword,
+          title: x.intl.string(x.t.iQG2KC),
+          error: null != R ? R : void 0,
+          children: (0, l.jsx)(o.oil, {
+            type: "password",
+            value: z,
+            onChange: N
           })
         })]
-      }), (0, i.jsxs)(l.mzw, {
-        children: [(0, i.jsx)(l.zxk, {
+      }), (0, l.jsxs)(o.mzw, {
+        children: [(0, l.jsx)(o.zxk, {
           type: "submit",
-          color: l.zxk.Colors.BRAND,
-          size: l.zxk.Sizes.MEDIUM,
-          submitting: R === u.QZA.SUBMITTING,
-          children: g.intl.string(g.t.i4jeWV)
-        }), !0 !== E && (0, i.jsx)(l.zxk, {
-          className: m.cancel,
-          look: l.zxk.Looks.LINK,
-          color: l.zxk.Colors.PRIMARY,
+          color: o.zxk.Colors.BRAND,
+          size: o.zxk.Sizes.MEDIUM,
+          submitting: I === d.QZA.SUBMITTING,
+          children: x.intl.string(x.t.i4jeWV)
+        }), !0 !== j && (0, l.jsx)(o.zxk, {
+          className: h.cancel,
+          look: o.zxk.Looks.LINK,
+          color: o.zxk.Colors.PRIMARY,
           onClick: _,
-          children: g.intl.string(g.t["ETE/oK"])
+          children: x.intl.string(x.t["ETE/oK"])
         })]
       })]
     })]

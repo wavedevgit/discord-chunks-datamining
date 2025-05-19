@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 e.exports = {
   sectionsContainer: "sectionsContainer__722a8",
   nitroWheel: "nitroWheel__722a8"

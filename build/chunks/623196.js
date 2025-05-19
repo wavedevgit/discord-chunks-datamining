@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   Z: () => C
 }), n(388685), n(457542);
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(668781),
   d = n(594174),
   u = n(63063),
-  g = n(88658),
-  m = n(398826),
+  m = n(88658),
+  g = n(398826),
   p = n(575356),
   h = n(838436),
   f = n(726985),
@@ -42,7 +42,7 @@ function C() {
     })),
     [s, C] = r.useState(!1);
   if (null == e) return null;
-  let j = (0, g.$6)(t, e) || n,
+  let j = (0, m.$6)(t, e) || n,
     O = null != t && l()().diff(l()(t.created_at), "days") < b.eBq,
     S = j && O,
     v = () => {
@@ -55,7 +55,7 @@ function C() {
         cancelText: _.intl.string(_.t.jpVjsr),
         confirmButtonColor: o.zxk.Colors.BRAND,
         onConfirm: e => {
-          C(!0), (0, m.h)(e).then(e => {
+          C(!0), (0, g.h)(e).then(e => {
             null != e && null != e.body ? c.Z.show({
               body: _.intl.string(_.t["6Nmv4u"])
             }) : c.Z.show({

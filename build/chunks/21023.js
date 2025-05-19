@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   n: () => h
 }), n(388685);
@@ -12,7 +12,7 @@ var r = n(481060),
   c = n(981631),
   d = n(388032),
   u = n(554074);
-let g = e => {
+let m = e => {
     let {
       text: t,
       badge: n,
@@ -24,7 +24,7 @@ let g = e => {
       children: [t, " ", n]
     })
   },
-  m = e => {
+  g = e => {
     let {
       text: t,
       variant: n
@@ -62,19 +62,19 @@ let g = e => {
   h = (e, t, n, h, f) => {
     let b = {
         0: {
-          label: (0, i.jsx)(g, {
+          label: (0, i.jsx)(m, {
             text: d.intl.string(d.t["09yRKy"])
           }),
-          column1: (0, i.jsx)(m, {
+          column1: (0, i.jsx)(g, {
             text: l.ZP.formatPriceString(e, o.rV.MONTH)
           }),
-          column2: (0, i.jsx)(m, {
+          column2: (0, i.jsx)(g, {
             text: n ? h : l.ZP.formatPriceString(t, o.rV.MONTH)
           }),
           withBottomBorder: !0
         },
         1: {
-          label: (0, i.jsx)(g, {
+          label: (0, i.jsx)(m, {
             text: d.intl.string(d.t.vaDeDQ)
           }),
           column1: (0, i.jsx)(p, {
@@ -85,7 +85,7 @@ let g = e => {
           })
         },
         2: {
-          label: (0, i.jsx)(g, {
+          label: (0, i.jsx)(m, {
             text: d.intl.string(d.t.RIRtn5)
           }),
           column1: (0, i.jsx)(p, {
@@ -96,7 +96,7 @@ let g = e => {
           })
         },
         3: {
-          label: (0, i.jsx)(g, {
+          label: (0, i.jsx)(m, {
             text: d.intl.string(d.t.OuItFh)
           }),
           column1: (0, i.jsx)(p, {
@@ -107,7 +107,7 @@ let g = e => {
           })
         },
         4: {
-          label: (0, i.jsx)(g, {
+          label: (0, i.jsx)(m, {
             text: d.intl.string(d.t["9kRJS0"])
           }),
           column1: (0, i.jsx)(p, {
@@ -118,29 +118,29 @@ let g = e => {
           })
         },
         5: {
-          label: (0, i.jsx)(g, {
+          label: (0, i.jsx)(m, {
             text: d.intl.string(d.t.ufhQCw)
           }),
-          column1: (0, i.jsx)(m, {
+          column1: (0, i.jsx)(g, {
             text: (0, l.v9)(o.p9.TIER_0)
           }),
-          column2: (0, i.jsx)(m, {
+          column2: (0, i.jsx)(g, {
             text: (0, l.v9)(o.p9.TIER_2)
           })
         },
         6: {
-          label: (0, i.jsx)(g, {
+          label: (0, i.jsx)(m, {
             text: d.intl.string(d.t.VwxlMz)
           }),
           column1: (0, i.jsx)(p, {
             includes: !1
           }),
-          column2: (0, i.jsx)(m, {
+          column2: (0, i.jsx)(g, {
             text: d.intl.string(d.t.XdN6KS)
           })
         },
         7: {
-          label: (0, i.jsx)(g, {
+          label: (0, i.jsx)(m, {
             text: d.intl.formatToPlainString(d.t.nyhDp6, {
               numBoosts: o.cb,
               percentageOff: (0, a.T3)(s.default.locale, o.Rr / 100)
@@ -154,7 +154,7 @@ let g = e => {
           })
         },
         8: {
-          label: (0, i.jsx)(g, {
+          label: (0, i.jsx)(m, {
             text: d.intl.string(d.t.tFbcuL)
           }),
           column1: (0, i.jsx)(p, {
@@ -165,7 +165,7 @@ let g = e => {
           })
         },
         9: {
-          label: (0, i.jsx)(g, {
+          label: (0, i.jsx)(m, {
             text: d.intl.string(d.t["aR/zTk"])
           }),
           column1: (0, i.jsx)(p, {
@@ -176,7 +176,7 @@ let g = e => {
           })
         },
         10: {
-          label: (0, i.jsx)(g, {
+          label: (0, i.jsx)(m, {
             text: d.intl.string(d.t.IzrZHx)
           }),
           column1: (0, i.jsx)(p, {
@@ -187,7 +187,7 @@ let g = e => {
           })
         },
         11: {
-          label: (0, i.jsx)(g, {
+          label: (0, i.jsx)(m, {
             text: d.intl.string(d.t["HwNg/f"])
           }),
           column1: (0, i.jsx)(p, {
@@ -198,7 +198,7 @@ let g = e => {
           })
         },
         12: {
-          label: (0, i.jsx)(g, {
+          label: (0, i.jsx)(m, {
             text: d.intl.string(d.t["y+HHLy"])
           }),
           column1: (0, i.jsx)(p, {
@@ -209,7 +209,7 @@ let g = e => {
           })
         },
         13: {
-          label: (0, i.jsx)(g, {
+          label: (0, i.jsx)(m, {
             text: d.intl.string(d.t.qQxxVV)
           }),
           column1: (0, i.jsx)(p, {
@@ -220,7 +220,7 @@ let g = e => {
           })
         },
         14: {
-          label: (0, i.jsx)(g, {
+          label: (0, i.jsx)(m, {
             text: d.intl.string(d.t.xi0NBA)
           }),
           column1: (0, i.jsx)(p, {
@@ -232,7 +232,7 @@ let g = e => {
           withBottomBorder: !0
         },
         15: {
-          label: (0, i.jsx)(g, {
+          label: (0, i.jsx)(m, {
             text: d.intl.string(d.t.MfsUHh)
           }),
           column1: (0, i.jsx)(p, {
@@ -243,7 +243,7 @@ let g = e => {
           })
         },
         21: {
-          label: (0, i.jsx)(g, {
+          label: (0, i.jsx)(m, {
             text: d.intl.string(d.t["A+0H1d"])
           }),
           column1: (0, i.jsx)(p, {
@@ -254,7 +254,7 @@ let g = e => {
           })
         },
         16: {
-          label: (0, i.jsx)(g, {
+          label: (0, i.jsx)(m, {
             text: d.intl.string(d.t["il8+nJ"])
           }),
           column1: (0, i.jsx)(p, {
@@ -265,7 +265,7 @@ let g = e => {
           })
         },
         17: {
-          label: (0, i.jsx)(g, {
+          label: (0, i.jsx)(m, {
             text: d.intl.formatToPlainString(d.t["8crdzM"], {
               maxChars: c.en1
             })
@@ -309,7 +309,7 @@ let g = e => {
           withBottomBorder: !1
         },
         22: {
-          label: (0, i.jsx)(g, {
+          label: (0, i.jsx)(m, {
             text: d.intl.string(d.t["93xPy8"])
           }),
           column1: (0, i.jsx)(p, {
@@ -321,7 +321,7 @@ let g = e => {
           withBottomBorder: !0
         },
         23: {
-          label: (0, i.jsx)(g, {
+          label: (0, i.jsx)(m, {
             text: d.intl.string(d.t["5BJqND"])
           }),
           column1: (0, i.jsx)(p, {

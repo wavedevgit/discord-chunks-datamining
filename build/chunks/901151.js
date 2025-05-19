@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   Z: () => O
 }), n(642613), n(539854);
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(63063),
   d = n(709054),
   u = n(695346),
-  g = n(749876),
-  m = n(546957),
+  m = n(749876),
+  g = n(546957),
   p = n(838436),
   h = n(51331),
   f = n(726985),
@@ -185,8 +185,8 @@ function O() {
   let {
     showLoadingIndicator: e,
     slayerSdkApplications: t
-  } = (0, g.Z)();
-  return (0, i.jsx)(m.Z, {
+  } = (0, m.Z)();
+  return (0, i.jsx)(g.Z, {
     children: e ? (0, i.jsx)(l.$jN, {}) : t.length > 0 ? (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(E, {
         applications: t

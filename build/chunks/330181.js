@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   Z: () => p
 }), n(388685);
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(906732),
   d = n(584825),
   u = n(931547),
-  g = n(388032);
-let m = e => {
+  m = n(388032);
+let g = e => {
   let [t, n] = r.useState(!1), [i, s] = r.useState(null);
   return {
     resetRenewalMutation: async t => {
@@ -41,7 +41,7 @@ function p(e) {
     resetRenewalMutation: p,
     submitting: h,
     error: f
-  } = m(a), b = (0, d._k)(t, {
+  } = g(a), b = (0, d._k)(t, {
     includeSoftDeleted: !0
   }), {
     currentListing: _,
@@ -61,7 +61,7 @@ function p(e) {
   if (null == n || null == _ || null == x) return null;
   let E = l()(n.currentPeriodEnd).format("MMM DD, YYYY");
   return (0, i.jsx)(u.Z, {
-    message: g.intl.format(g.t.chw89f, {
+    message: m.intl.format(m.t.chw89f, {
       currentListing: _.name,
       nextListing: x.name,
       changeDate: E
@@ -69,7 +69,7 @@ function p(e) {
     error: null == f ? void 0 : f.message,
     onClick: () => p(n),
     submitting: h,
-    ctaMessage: g.intl.string(g.t.De4wIy),
+    ctaMessage: m.intl.string(m.t.De4wIy),
     className: s
   })
 }

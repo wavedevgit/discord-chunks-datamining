@@ -49,7 +49,7 @@ function v() {
   var e, t;
   let [n, v] = r.useState(!1), g = (0, l.e7)([u.default], () => u.default.getCurrentUser()), j = (0, d.kG)(), _ = (0, l.e7)([m.ZP], () => m.ZP.getPremiumTypeSubscription()), y = null != j && null != (t = null == (e = b.vK[j]) ? void 0 : e.tenureReqNumMonths) ? t : 0, C = r.useCallback(async e => {
     let t = new Date;
-    null != e && (t.setMonth(t.getMonth() - e), t.setDate(t.getDate() - 7));
+    null != e && (t.setMonth(t.getMonth() - e), t.setDate(t.getDate() - 1));
     let n = {
       subscription_status: null != e ? p.O0b.ACTIVE : p.O0b.ENDED,
       endedAt: void 0,

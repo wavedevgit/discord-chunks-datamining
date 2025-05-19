@@ -1,4 +1,4 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
   Z: () => h
 });
@@ -12,8 +12,8 @@ var r = n(442837),
   c = n(131951),
   d = n(36703),
   u = n(388032),
-  g = n(245095);
-let m = (0, o.hQ)(),
+  m = n(245095);
+let g = (0, o.hQ)(),
   p = (0, o.hQ)();
 
 function h() {
@@ -27,22 +27,22 @@ function h() {
     outputVolume: c.Z.getOutputVolume()
   }));
   return (0, i.jsxs)("div", {
-    className: g.volumes,
+    className: m.volumes,
     children: [(0, i.jsx)("div", {
-      className: g.column,
+      className: m.column,
       children: (0, i.jsx)(s.xJW, {
         title: u.intl.string(u.t.OX2Bnp),
-        titleId: m,
+        titleId: g,
         children: (0, i.jsx)(s.iRW, {
           initialValue: (0, d.P)(t),
           asValueChanges: t => l.Z.setInputVolume((0, d.A)(t), {
             analyticsLocations: e
           }),
-          "aria-labelledby": m
+          "aria-labelledby": g
         })
       })
     }), (0, i.jsx)("div", {
-      className: g.column,
+      className: m.column,
       children: (0, i.jsx)(s.xJW, {
         title: u.intl.string(u.t.eATD2N),
         titleId: p,

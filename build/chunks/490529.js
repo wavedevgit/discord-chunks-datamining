@@ -1,7 +1,7 @@
-/** Chunk was on 69835 **/
+/** Chunk was on 17364 **/
 n.d(t, {
-  X8: () => m,
-  tI: () => g,
+  X8: () => g,
+  tI: () => m,
   uj: () => a
 }), n(539854);
 var i = n(512722),
@@ -39,7 +39,7 @@ let a = () => {
     [l.intl.string(l.t["zaKm/f"]), l.intl.string(l.t.SES9Zm), l.intl.string(l.t.ebblm5), l.intl.string(l.t.csrWfH)]
   ],
   u = () => [s.gkr.HOUSE_1, s.gkr.HOUSE_2, s.gkr.HOUSE_3, s.jsM],
-  g = () => {
+  m = () => {
     let e = u(),
       t = c(),
       n = d();
@@ -58,7 +58,7 @@ let a = () => {
       }
     })
   },
-  m = e => ({
+  g = e => ({
     [s.gkr.HOUSE_1]: l.intl.string(l.t.ORKdHR),
     [s.gkr.HOUSE_2]: l.intl.string(l.t.aKf3dn),
     [s.gkr.HOUSE_3]: l.intl.string(l.t["21LOa2"])
