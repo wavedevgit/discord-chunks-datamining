@@ -112,20 +112,24 @@ function D() {
         onChange: e => T.G6.updateSetting(e),
         note: r,
         children: y.intl.string(y.t["4q/Ewc"])
-      }), n ? (0, i.jsxs)(m.xJW, {
-        tag: m.RB0.H3,
-        title: y.intl.string(y.t.ffGYGx),
-        children: [(0, i.jsx)(m.Text, {
-          variant: "text-sm/normal",
-          color: "header-secondary",
-          className: P.marginBottom8,
-          children: y.intl.format(y.t.aUxRra, {
-            helpdeskArticle: C.Z.getArticleURL(N.BhN.ACTIVITY_STATUS_SETTINGS)
-          })
-        }), (0, i.jsx)(m.q4e, {
-          options: o,
-          value: t,
-          onChange: e => a(e)
+      }), n ? (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsxs)(m.xJW, {
+          tag: m.RB0.H3,
+          title: y.intl.string(y.t.ffGYGx),
+          children: [(0, i.jsx)(m.Text, {
+            variant: "text-sm/normal",
+            color: "header-secondary",
+            className: P.marginBottom8,
+            children: y.intl.format(y.t.aUxRra, {
+              helpdeskArticle: C.Z.getArticleURL(N.BhN.ACTIVITY_STATUS_SETTINGS)
+            })
+          }), (0, i.jsx)(m.q4e, {
+            options: o,
+            value: t,
+            onChange: e => a(e)
+          })]
+        }), (0, i.jsx)(m.$i$, {
+          className: l()(P.marginBottom20, P.marginTop20)
         })]
       }) : (0, i.jsx)(m.j7V, {
         value: t === d.E5.OFF,
@@ -134,8 +138,6 @@ function D() {
         }),
         onChange: e => s(!e),
         children: y.intl.string(y.t.D5GXTU)
-      }), (0, i.jsx)(m.$i$, {
-        className: l()(P.marginBottom20, P.marginTop20)
       })]
     })
   })
