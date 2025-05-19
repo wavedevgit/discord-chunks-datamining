@@ -3,7 +3,7 @@
 n.d(t, {
   X: () => _,
   e: () => f
-}), n(415506);
+});
 var r = n(259443),
   i = n(128813);
 let a = null,
@@ -30,12 +30,11 @@ function d(e) {
 }
 
 function f() {
-  if (null == a) return a = (async () => {
+  return null == a && (a = (async () => {
     await i.mX();
     let e = i.Qw();
     e.installLogCallback(s, l, c, u, d), await e.initLibdiscore()
-  })();
-  throw Error("initLibdiscore called multiple times")
+  })()), a
 }
 
 function _() {
