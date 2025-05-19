@@ -1,13 +1,13 @@
 /** Chunk was on 70205 **/
-n.d(e, {
+n.d(t, {
   Z: () => g
 });
 var i, l, a, r = n(442837),
-  o = n(570140),
-  u = n(818083),
+  u = n(570140),
+  o = n(818083),
   s = n(314897);
 let d = {},
-  c = (0, u.B)({
+  c = (0, o.B)({
     kind: "user",
     id: "2025-03_slayer_notif_supression_killswitch",
     label: "Disable suppressing notifications with slayer game active",
@@ -29,8 +29,8 @@ class f extends(a = r.ZP.Store) {
       }, {
         autoTrackExposure: !1
       }).enabled) return !1;
-    for (let t in d)
-      if (d[t] === s.default.getId()) return !0;
+    for (let e in d)
+      if (d[e] === s.default.getId()) return !0;
     return !1
   }
 }
@@ -40,11 +40,11 @@ l = "RpcNotificationSettingsStore", (i = "displayName") in f ? Object.defineProp
   configurable: !0,
   writable: !0
 }) : f[i] = l;
-let g = new f(o.Z, {
-  RPC_APP_DISCONNECTED: function(t) {
-    delete d[t.socketId]
+let g = new f(u.Z, {
+  RPC_APP_DISCONNECTED: function(e) {
+    delete d[e.socketId]
   },
-  SET_RPC_NOTIFICATION_SETTINGS: function(t) {
-    delete d[t.socketId], t.suppressNotifications && (d[t.socketId] = t.targetUserId)
+  SET_RPC_NOTIFICATION_SETTINGS: function(e) {
+    delete d[e.socketId], e.suppressNotifications && (d[e.socketId] = e.targetUserId)
   }
 })
