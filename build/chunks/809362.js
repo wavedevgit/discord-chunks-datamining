@@ -1,11 +1,14 @@
 /** Chunk was on 16318 **/
 n.d(t, {
-  I: () => i
+  I: () => a
 });
-let r = (0, n(818083).B)({
+var r = n(818083),
+  i = n(987338);
+let l = (0, r.B)({
   kind: "user",
   id: "2025-04_culture_creation_holdout",
   label: "Culture Creation Holdout",
+  commonTriggerPoint: i.$P.CONNECTION_OPEN,
   defaultConfig: {
     inHoldout: !1
   },
@@ -18,13 +21,13 @@ let r = (0, n(818083).B)({
   }]
 });
 
-function i(e) {
+function a(e) {
   let {
     inHoldout: t
-  } = r.useExperiment({
+  } = l.useExperiment({
     location: e
   }, {
-    autoTrackExposure: !0
+    autoTrackExposure: !1
   });
   return t
 }

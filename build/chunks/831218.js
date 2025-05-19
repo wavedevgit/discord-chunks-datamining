@@ -392,6 +392,7 @@ class V extends(r = l.Component) {
           className: k.headerText,
           children: L.intl.string(L.t.YUU0RE)
         }), (0, i.jsx)(x.Z, {
+          location: "PrivateChannelsList-CreateDMButton",
           tooltip: L.intl.string(L.t["6Urw1t"]),
           tooltipPosition: "top",
           popoutAlign: "left",

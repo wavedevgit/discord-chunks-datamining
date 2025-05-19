@@ -35,7 +35,8 @@ function Z() {
   return (0, r.jsx)("div", {
     className: A.inviteToolbar,
     children: (0, r.jsx)(E.Z, {
-      tooltip: j.intl.string(j.t.HfOgAw)
+      tooltip: j.intl.string(j.t.HfOgAw),
+      location: "PeoplePageHeaderToolbar-CreateDMButton"
     })
   })
 }

@@ -585,7 +585,8 @@ class ta extends i.PureComponent {
             channel: e
           }, "pins")), a.push((0, r.jsx)(ec.Z, {
             channel: e,
-            tooltip: te.intl.string(te.t.Xjlbvr)
+            tooltip: te.intl.string(te.t.Xjlbvr),
+            location: "ChannelHeaderToolbar-DM-AddFriendsButton"
           }, "invite")), a.push((0, r.jsx)(ep.Z, {
             channel: e,
             showCallOrActivityPanel: i || l
@@ -604,7 +605,8 @@ class ta extends i.PureComponent {
             let t = te.intl.string(te.t.Xjlbvr);
             a.push((0, r.jsx)(ec.Z, {
               channel: e,
-              tooltip: t
+              tooltip: t,
+              location: "ChannelHeaderToolbar-GroupDM-AddFriendsButton"
             }, "invite"))
           }
           a.push((0, r.jsx)(ee.Z, {
