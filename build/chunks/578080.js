@@ -1,6 +1,6 @@
-/** Chunk was on 17218 **/
+/** Chunk was on 88622 **/
 n.d(t, {
-  Z: () => Z
+  Z: () => W
 }), n(953529);
 var r = n(255367),
   o = n(73800),
@@ -20,10 +20,10 @@ var r = n(255367),
   b = n(113434),
   j = n(569984),
   v = n(497505),
-  _ = n(918701),
-  y = n(865364),
-  C = n(373370),
-  O = n(475595),
+  y = n(918701),
+  _ = n(865364),
+  O = n(373370),
+  C = n(475595),
   w = n(566078),
   S = n(340100),
   P = n(611855),
@@ -32,8 +32,8 @@ var r = n(255367),
   N = n(670638),
   A = n(667105),
   R = n(46140),
-  B = n(981631),
-  k = n(701488),
+  k = n(981631),
+  B = n(701488),
   q = n(388032),
   I = n(92503);
 
@@ -74,7 +74,7 @@ function L(e) {
     style: t,
     onClick: n
   } = e;
-  return (0, y.O)({
+  return (0, _.O)({
     location: R.dr.QUESTS_BAR,
     autoTrackExposure: !0
   }) ? (0, r.jsx)(u.zxk, {
@@ -87,42 +87,42 @@ function L(e) {
     children: q.intl.string(q.t.lwQdjI)
   }) : null
 }
-let Z = o.forwardRef(function(e, t) {
+let W = o.forwardRef(function(e, t) {
   var n, s;
   let {
-    children: y,
-    className: Z,
-    collapsedHeight: W,
+    children: _,
+    className: W,
+    collapsedHeight: Z,
     expansionSpring: V,
     isExpanded: Q,
     isExpansionAnimationComplete: U,
     onCtxMenuOpen: H,
     onCtxMenuClose: z,
     onCtxMenuSelect: F,
-    quest: X,
-    useReducedMotion: K
-  } = e, Y = (0, l.e7)([j.Z], () => j.Z.isEnrolling(X.id), [X]), G = (0, x.aM)(), J = (0, b.B6)(X.config.expiresAt), $ = w.r.build(X.config), ee = (0, b.B6)($.rewardsExpireAt), et = o.useMemo(() => (0, O.fh)(X, O.eC.HERO), [X]), en = (0, A.tP)($.application.id), er = $.features.has(R.S7.START_QUEST_CTA) ? g.jZ.START_QUEST : g.jZ.ACCEPT_QUEST, eo = $.features.has(R.S7.START_QUEST_CTA) ? q.intl.string(q.t.E80Bdn) : q.intl.string(q.t.l7E81t), es = o.useCallback(() => {
-    (0, h.AH)(X.id, {
+    quest: K,
+    useReducedMotion: X
+  } = e, Y = (0, l.e7)([j.Z], () => j.Z.isEnrolling(K.id), [K]), G = (0, x.aM)(), J = (0, b.B6)(K.config.expiresAt), $ = w.r.build(K.config), ee = (0, b.B6)($.rewardsExpireAt), et = o.useMemo(() => (0, C.fh)(K, C.eC.HERO), [K]), en = (0, A.tP)($.application.id), er = $.features.has(R.S7.START_QUEST_CTA) ? g.jZ.START_QUEST : g.jZ.ACCEPT_QUEST, eo = $.features.has(R.S7.START_QUEST_CTA) ? q.intl.string(q.t.E80Bdn) : q.intl.string(q.t.l7E81t), es = o.useCallback(() => {
+    (0, h.AH)(K.id, {
       questContent: v.jn.QUEST_BAR,
       questContentCTA: er
-    }), $.features.has(R.S7.START_QUEST_CTA) && (0, m.uL)(B.Z5c.ACTIVITY_DETAILS(k.In), void 0)
-  }, [X, er, $.features]), ea = (0, A.hf)({
-    quest: X,
+    }), $.features.has(R.S7.START_QUEST_CTA) && (0, m.uL)(k.Z5c.ACTIVITY_DETAILS(B.In), void 0)
+  }, [K, er, $.features]), ea = (0, A.hf)({
+    quest: K,
     location: v.jn.QUEST_BAR
   }), ei = o.useCallback(() => {
-    (0, _.FE)(X, {
+    (0, y.FE)(K, {
       content: v.jn.QUEST_BAR,
       ctaContent: g.jZ.OPEN_GAME_LINK,
       impressionId: G
     })
-  }, [G, X]), el = $.features.has(R.S7.POST_ENROLLMENT_CTA), ec = (0, b.Rf)(X), ed = (0, b.Jf)(X), eu = null != ed ? ed.progress > 0 : ec.progressSeconds > 0, ep = (null == (n = X.userStatus) ? void 0 : n.enrolledAt) != null, em = (null == (s = X.userStatus) ? void 0 : s.completedAt) != null, ef = o.useMemo(() => (0, _.Xv)(X.config), [X.config]), eg = Q && U, ex = (0, C.DD)({
-    quest: X,
+  }, [G, K]), el = $.features.has(R.S7.POST_ENROLLMENT_CTA), ec = (0, b.Rf)(K), ed = (0, b.Jf)(K), eu = null != ed ? ed.progress > 0 : ec.progressSeconds > 0, ep = (null == (n = K.userStatus) ? void 0 : n.enrolledAt) != null, em = (null == (s = K.userStatus) ? void 0 : s.completedAt) != null, ef = o.useMemo(() => (0, y.Xv)(K.config), [K.config]), eg = Q && U, ex = (0, O.DD)({
+    quest: K,
     taskDetails: ec,
     location: R.dr.QUESTS_BAR,
     questContent: v.jn.QUEST_BAR,
     thirdPartyTaskDetails: null != ed ? ed : void 0
   }), eh = (0, f.isWeb)(), eb = o.useMemo(() => {
-    let e = (0, d.Qg)(X.config.colors.primary, {
+    let e = (0, d.Qg)(K.config.colors.primary, {
       base: "#ffffff",
       contrastRatio: d.S3.Text
     });
@@ -131,22 +131,22 @@ let Z = o.forwardRef(function(e, t) {
       "--custom-cta-color-hover": (0, c.r5)(e, .3),
       "--custom-cta-color-active": (0, c.r5)(e, .35)
     }
-  }, [X.config.colors.primary]);
+  }, [K.config.colors.primary]);
   return (0, r.jsxs)(i.animated.div, {
-    className: a()(Z, I.contentExpanded, {
+    className: a()(W, I.contentExpanded, {
       [I.contentInteractable]: eg
     }),
     style: {
-      backgroundColor: X.config.colors.secondary,
+      backgroundColor: K.config.colors.secondary,
       transform: em ? void 0 : (0, i.to)([V.to({
         range: [0, 1],
         output: [0, -100]
       }), V.to({
         range: [0, 1],
-        output: [0, W]
+        output: [0, Z]
       })], (e, t) => "translateY(calc(".concat(e, "% + ").concat(t, "px))"))
     },
-    children: [y, (0, r.jsx)("div", {
+    children: [_, (0, r.jsx)("div", {
       "aria-hidden": !eg,
       children: ep ? (0, r.jsxs)("div", {
         className: I.questAcceptedContent,
@@ -158,15 +158,15 @@ let Z = o.forwardRef(function(e, t) {
             children: [(0, r.jsx)(E.Z, {
               className: I.questProgressRewardTile,
               learnMoreStyle: "icon",
-              quest: X,
+              quest: K,
               questContent: v.jn.QUEST_BAR,
               location: R.dr.QUESTS_BAR
             }), (0, r.jsxs)("div", {
               children: [(0, r.jsx)(u.X6q, {
                 color: "always-white",
                 variant: "heading-sm/semibold",
-                children: (0, _.AV)({
-                  quest: X,
+                children: (0, y.AV)({
+                  quest: K,
                   taskDetails: ec,
                   thirdPartyTaskDetails: null != ed ? ed : void 0
                 })
@@ -186,7 +186,7 @@ let Z = o.forwardRef(function(e, t) {
             onClose: z,
             onSelect: F,
             questContent: v.jn.QUEST_BAR,
-            quest: X,
+            quest: K,
             shouldShowDisclosure: !1,
             showShareLink: !0,
             children: e => (0, r.jsx)(u.P3F, M(D({}, e), {
@@ -213,7 +213,7 @@ let Z = o.forwardRef(function(e, t) {
           variant: "text-xs/normal",
           children: ex
         }), (0, r.jsx)(S.Z, {
-          quest: X
+          quest: K
         }), !eh && !eu && !en && el && (0, r.jsx)(L, {
           onClick: eg ? ei : void 0
         })]
@@ -230,7 +230,7 @@ let Z = o.forwardRef(function(e, t) {
               onClose: z,
               onSelect: F,
               questContent: v.jn.QUEST_BAR,
-              quest: X,
+              quest: K,
               shouldShowDisclosure: !0,
               showShareLink: !0,
               children: e => (0, r.jsx)(u.P3F, M(D({}, e), {
@@ -248,7 +248,7 @@ let Z = o.forwardRef(function(e, t) {
             children: [(0, r.jsx)(E.Z, {
               className: I.rewardTile,
               learnMoreStyle: "text",
-              quest: X,
+              quest: K,
               questContent: v.jn.QUEST_BAR,
               location: R.dr.QUESTS_BAR
             }), (0, r.jsx)(u.X6q, {
@@ -256,7 +256,7 @@ let Z = o.forwardRef(function(e, t) {
               color: "always-white",
               variant: "heading-md/medium",
               children: q.intl.format(q.t.EQa7oq, {
-                questName: X.config.messages.questName
+                questName: K.config.messages.questName
               })
             }), (0, r.jsx)(u.Text, {
               className: I.description,
@@ -266,7 +266,7 @@ let Z = o.forwardRef(function(e, t) {
             })]
           }), (0, r.jsx)(u.zxk, {
             className: I.cta,
-            style: "1232852290197655573" !== X.id ? eb : void 0,
+            style: "1232852290197655573" !== K.id ? eb : void 0,
             color: u.zxk.Colors.CUSTOM,
             fullWidth: !0,
             onClick: eg ? es : void 0,
@@ -277,7 +277,7 @@ let Z = o.forwardRef(function(e, t) {
         }), (0, r.jsx)("div", {
           className: I.heroAssetWrapper,
           style: {
-            color: X.config.colors.secondary
+            color: K.config.colors.secondary
           },
           children: et.isAnimated ? (0, r.jsx)(T.Fl, {
             id: "QuestBarContentExpanded_heroAnimated",
@@ -285,7 +285,7 @@ let Z = o.forwardRef(function(e, t) {
               var t;
               return (0, r.jsx)(p.Z, {
                 ref: e,
-                autoPlay: !K,
+                autoPlay: !X,
                 loop: !0,
                 muted: !0,
                 playsInline: !0,

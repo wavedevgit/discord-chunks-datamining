@@ -281,7 +281,7 @@ let L = e => {
           children: _.intl.string(_.t.V293qq)
         }), (0, r.jsx)(l.zxk, {
           color: l.Ttl.BRAND,
-          onClick: () => (0, N.openQuestMinorEnrollmentBlockModal)(i),
+          onClick: () => (0, N.openQuestMinorEnrollmentBlockModal)(n, i),
           className: I.questEnrollmentBlockedButton,
           children: _.intl.string(_.t.vY9GgI)
         })]

@@ -1,4 +1,4 @@
-/** Chunk was on 17218 **/
+/** Chunk was on 88622 **/
 n.d(t, {
   Z: () => j
 });
@@ -25,10 +25,10 @@ let j = e => {
     onCtxMenuSelect: s,
     onCtxMenuOpen: j,
     onCtxMenuClose: v,
-    useReducedMotion: _,
-    isExpanded: y,
-    isExpansionAnimationComplete: C
-  } = e, O = (0, d.aM)(), w = o.useCallback(() => {
+    useReducedMotion: y,
+    isExpanded: _,
+    isExpansionAnimationComplete: O
+  } = e, C = (0, d.aM)(), w = o.useCallback(() => {
     (0, g.openDisclosureModal)(t, {
       content: u.jn.QUEST_BAR_V2,
       ctaContent: c.jZ.OPEN_DISCLOSURE
@@ -37,9 +37,9 @@ let j = e => {
     (0, p.FE)(t, {
       content: u.jn.QUEST_BAR_V2,
       ctaContent: c.jZ.OPEN_GAME_LINK,
-      impressionId: O
+      impressionId: C
     })
-  }, [O, t]), P = y && C, E = (0, r.jsx)(l.P3F, {
+  }, [C, t]), P = _ && O, E = (0, r.jsx)(l.P3F, {
     onClick: S,
     className: a()(b.clickable, {
       [b.logo]: P
@@ -74,7 +74,7 @@ let j = e => {
       expansionSpring: n,
       isFullyExpanded: P,
       partnerBranding: E,
-      useReducedMotion: _
+      useReducedMotion: y
     }), (0, r.jsxs)(i.animated.div, {
       className: b.promotedBadgeWrapper,
       style: {

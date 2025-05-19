@@ -1,9 +1,10 @@
 /**
   Module ID: 58914
-  Original File Name: 729cc0b71a9cc93f
+  Original File Name: d7beea9eafe3efbe
 **/
 .ctaButtons_a77fde {
     display: grid;
+    grid-template: "back cta" 1fr/-webkit-max-content 1fr;
     grid-template: "back cta" 1fr/max-content 1fr
 }
 
@@ -17,13 +18,13 @@
 }
 
 .iconButtonLarge_a77fde {
-    display: flex;
-    height: 32px;
-    padding: 8px;
-    justify-content: center;
     align-items: center;
+    background-color: var(--background-modifier-hover);
+    display: flex;
     flex: 1 0 0;
-    background-color: var(--background-modifier-hover)
+    height: 32px;
+    justify-content: center;
+    padding: 8px
 }
 
 .iconButtonLarge_a77fde:hover {
@@ -31,8 +32,8 @@
 }
 
 .iconButton_a77fde {
-    padding: 8px;
-    background-color: var(--background-modifier-hover)
+    background-color: var(--background-modifier-hover);
+    padding: 8px
 }
 
 .iconButton_a77fde:hover {
@@ -40,9 +41,9 @@
 }
 
 .iconButtonInner_a77fde {
+    align-items: center;
     color: var(--interactive-normal);
-    display: flex;
-    align-items: center
+    display: flex
 }
 
 .shine_a77fde {
@@ -50,14 +51,14 @@
 }
 
 .backButton_a77fde {
-    grid-area: back;
+    aspect-ratio: 1/1;
     background-color: var(--background-modifier-hover);
     border: 1px solid var(--background-modifier-hover);
     border-radius: 4px;
-    padding: 3px;
-    aspect-ratio: 1/1;
+    grid-area: back;
     margin-right: 8px;
-    margin-top: 12px
+    margin-top: 12px;
+    padding: 3px
 }
 
 .backButton_a77fde:focus,.backButton_a77fde:hover {
@@ -71,8 +72,8 @@
 }
 
 .backButtonInner_a77fde {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center
 }
 
@@ -87,20 +88,20 @@
 }
 
 .outer_bb1069 {
-    display: flex;
-    position: relative;
     align-items: center;
+    display: flex;
     justify-content: center;
+    position: relative;
     z-index: 2
 }
 
 .progressBar_bb1069 {
+    bottom: 0;
+    left: 0;
     overflow: visible;
     position: absolute;
-    top: 0;
-    left: 0;
     right: 0;
-    bottom: 0;
+    top: 0;
     shape-rendering: geometricPrecision
 }
 
@@ -118,18 +119,15 @@
 }
 
 .coverContent_bb1069 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     border-radius: 50%;
+    inset: 0;
+    position: absolute;
     z-index: 999
 }
 
 .progressTextWrapper_bb1069 {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center
 }
 
@@ -144,13 +142,10 @@
 }
 
 .modalRoot_de2fa0 {
-    border: none!important
-}
-
-.modalRoot_de2fa0 {
+    border: none!important;
     border-radius: 12px;
-    width: min(calc(100vw - 110px),calc(177.77778vh - 551.11111px),1900px);
-    min-width: 500px
+    min-width: 500px;
+    width: min(calc(100vw - 110px),calc(177.77778vh - 551.11111px),1900px)
 }
 
 .modalBody_de2fa0 {
@@ -167,12 +162,12 @@
 }
 
 .modalContent_de2fa0 {
+    background-color: var(--bg-base-tertiary);
     display: flex;
-    flex-direction: column;
     flex: 1;
-    width: 100%;
+    flex-direction: column;
     height: 100%;
-    background-color: var(--bg-base-tertiary)
+    width: 100%
 }
 
 .closeButton_de2fa0 {
@@ -197,28 +192,28 @@
 }
 
 .videoCont_de2fa0 {
-    display: flex;
     align-items: center;
+    display: flex;
+    height: 100%;
     justify-content: center;
-    width: 100%;
-    height: 100%
+    width: 100%
 }
 
 .videoContInnerRelative_de2fa0 {
-    position: relative;
-    width: 100%;
+    aspect-ratio: 16/9;
     height: 100%;
-    aspect-ratio: 16/9
+    position: relative;
+    width: 100%
 }
 
 .videoContOverlay_de2fa0 {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
     background: linear-gradient(180deg,transparent,rgba(0,0,0,.7) 59.99%);
-    display: inline-block
+    display: inline-block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
 }
 
 @keyframes animate-fade-in_de2fa0 {
@@ -237,11 +232,10 @@
 }
 
 .videoInner_de2fa0 {
-    width: 100%;
     max-height: 100%;
+    object-fit: contain;
     position: relative;
-    -o-object-fit: contain;
-    object-fit: contain
+    width: 100%
 }
 
 .videoInner_de2fa0:-webkit-full-screen {
@@ -257,27 +251,27 @@
 }
 
 .videoFooterCont_de2fa0,.videoFooterContGradient_de2fa0 {
-    position: absolute;
-    width: 100%;
+    box-sizing: border-box;
     padding: 0;
-    box-sizing: border-box
+    position: absolute;
+    width: 100%
 }
 
 .videoFooterContGradient_de2fa0 {
+    background: linear-gradient(180deg,transparent,#000);
     bottom: -1px;
     height: 113px;
-    background: linear-gradient(180deg,transparent,#000);
     pointer-events: none
 }
 
 .videoControlsCont_de2fa0 {
-    width: 100%;
-    box-sizing: border-box
+    box-sizing: border-box;
+    width: 100%
 }
 
 .videoControlsCont_de2fa0,.videoControlsGroup_de2fa0 {
-    display: flex;
     align-items: center;
+    display: flex;
     height: 100%
 }
 
@@ -293,9 +287,9 @@
 
 .videoControlsGroupEnd_de2fa0 {
     display: flex;
+    justify-content: flex-end;
     margin-left: auto;
-    width: 200px;
-    justify-content: flex-end
+    width: 200px
 }
 
 .videoControlsBtnCont_de2fa0 {
@@ -315,8 +309,8 @@
 }
 
 .videoControlsBtnTooltip_de2fa0 {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 4px
 }
 
@@ -329,8 +323,8 @@
 }
 
 .controlsBarItem_de2fa0 {
-    opacity: .6;
-    color: var(--interactive-active)
+    color: var(--interactive-active);
+    opacity: .6
 }
 
 .controlsBarItemActive_de2fa0 {
@@ -339,14 +333,14 @@
 
 .durationTimeWrapper_de2fa0 {
     flex: 0 0 auto;
-    margin-left: 3px;
-    height: 16px
+    height: 16px;
+    margin-left: 3px
 }
 
 .durationTimeDisplay_de2fa0,.durationTimeSeparator_de2fa0 {
-    text-align: center;
+    color: var(--white);
     display: inline;
-    color: var(--white)
+    text-align: center
 }
 
 .durationTimeSeparator_de2fa0 {
@@ -354,22 +348,22 @@
 }
 
 .volumeSlider_de2fa0 {
-    margin-left: 6px;
-    cursor: pointer
+    cursor: pointer;
+    margin-left: 6px
 }
 
 .contentHeader_de2fa0 {
-    display: flex;
-    padding: 4px 24px;
     align-items: center;
+    background-image: linear-gradient(90deg,rgba(205,216,255,.08) 23%,rgba(35,36,40,0));
+    display: flex;
     height: 77px;
-    background-image: linear-gradient(90deg,rgba(205,216,255,.08) 23%,rgba(35,36,40,0))
+    padding: 4px 24px
 }
 
 .contentHeaderGameInfo_de2fa0 {
-    display: flex;
     align-items: center;
-    cursor: pointer
+    cursor: pointer;
+    display: flex
 }
 
 .contentHeaderLogotype_de2fa0 {
@@ -391,28 +385,28 @@
 }
 
 .questHeading_de2fa0 {
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 4px;
     opacity: .9
 }
 
 .contentFooter_de2fa0 {
-    display: flex;
     align-items: center;
+    box-sizing: border-box;
+    display: flex;
     justify-content: space-between;
-    width: 100%;
     padding: 16px 24px;
-    box-sizing: border-box
+    width: 100%
 }
 
 .contentFooterButtonCont_de2fa0 {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 8px
+    gap: 8px;
+    justify-content: flex-end
 }
 
 .claimBtn_de2fa0 {
@@ -420,9 +414,9 @@
 }
 
 .orbClaimCopy_de2fa0 {
+    align-items: center;
     display: flex;
     flex-wrap: nowrap;
-    align-items: center;
     gap: 3px
 }
 
@@ -436,8 +430,8 @@
 }
 
 .progressCont_de2fa0 {
-    margin-top: 5px;
-    margin-left: auto
+    margin-left: auto;
+    margin-top: 5px
 }
 
 .questProgressRewardTile_de2fa0 {
@@ -453,36 +447,35 @@
 }
 
 .transcriptOverlay_de2fa0 {
-    top: 0;
-    left: 0;
-    width: 100%;
+    background-color: var(--opacity-black-68);
     height: 100%;
-    background-color: var(--opacity-black-68)
+    left: 0;
+    top: 0;
+    width: 100%
 }
 
 .transcriptCont_de2fa0,.transcriptOverlay_de2fa0 {
-    position: absolute;
+    animation-duration: .2s;
     animation-name: animate-fade-in_de2fa0;
-    animation-duration: .2s
+    position: absolute
 }
 
 .transcriptCont_de2fa0 {
-    top: 24px;
-    right: 24px;
+    align-items: flex-start;
+    background-color: var(--background-tertiary);
+    border: 1px solid var(--alpha-primary-500048,rgba(78,80,88,.48));
+    border-radius: 16px;
     bottom: 24px;
     display: flex;
-    width: 363px;
     flex-direction: column;
-    align-items: flex-start;
-    border-radius: 16px;
-    border: 1px solid rgba(78,80,88,.48);
-    border: 1px solid var(--alpha-primary-500048,rgba(78,80,88,.48));
-    background-color: var(--background-tertiary)
+    right: 24px;
+    top: 24px;
+    width: 363px
 }
 
 .transcriptScroller_de2fa0 {
-    width: 100%;
-    height: 100%
+    height: 100%;
+    width: 100%
 }
 
 .transcriptBackBtn_de2fa0 {
@@ -491,18 +484,17 @@
 }
 
 .transcriptHeader_de2fa0 {
-    justify-content: space-between;
     align-items: center;
-    gap: 12px;
+    border-bottom: 1px solid var(--alpha-primary-500048,rgba(78,80,88,.48));
     color: var(--header-primary);
-    border-bottom: 1px solid rgba(78,80,88,.48);
-    border-bottom: 1px solid var(--alpha-primary-500048,rgba(78,80,88,.48))
+    gap: 12px;
+    justify-content: space-between
 }
 
 .transcriptBody_de2fa0,.transcriptHeader_de2fa0 {
+    align-self: stretch;
     display: flex;
-    padding: 12px 16px;
-    align-self: stretch
+    padding: 12px 16px
 }
 
 .transcriptBody_de2fa0 {
@@ -516,13 +508,12 @@
 }
 
 .stillFrameImageCard_de2fa0 {
-    pointer-events: none;
-    width: 100%;
-    height: 100%;
-    -o-object-fit: contain;
-    object-fit: contain;
+    animation-duration: .5s;
     animation-name: animate-fade-in_de2fa0;
-    animation-duration: .5s
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none;
+    width: 100%
 }
 
 .stillFrameImageCardHidden_de2fa0 {
@@ -530,27 +521,27 @@
 }
 
 .endScreenPanel_de2fa0 {
-    display: inline-flex;
-    padding: 8px 16px;
-    justify-content: center;
     align-items: center;
-    gap: 16px;
-    flex-shrink: 0;
-    cursor: pointer;
-    border-radius: 12px;
-    border: 1px solid hsla(0,0%,100%,.05);
-    background: linear-gradient(90deg,rgba(109,114,131,.45) 34.5%,hsla(0,0%,59.2%,.45));
-    box-shadow: 0 0 30px 0 rgba(220,239,255,.25);
+    animation-duration: .5s;
+    animation-name: animate-fade-in_de2fa0;
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
-    animation-name: animate-fade-in_de2fa0;
-    animation-duration: .5s
+    background: linear-gradient(90deg,hsla(226,9%,47%,.45) 34.5%,hsla(0,0%,59%,.45));
+    border: 1px solid hsla(0,0%,100%,.05);
+    border-radius: 12px;
+    box-shadow: 0 0 30px 0 rgba(220,239,255,.25);
+    cursor: pointer;
+    display: inline-flex;
+    flex-shrink: 0;
+    gap: 16px;
+    justify-content: center;
+    padding: 8px 16px
 }
 
 .endScreenPanelInner_de2fa0 {
+    align-items: center;
     display: flex;
-    flex-direction: row;
-    align-items: center
+    flex-direction: row
 }
 
 .endScreenPanelTextCont_de2fa0 {
@@ -568,8 +559,8 @@
 }
 
 .endScreenPanelRight_de2fa0 {
-    position: absolute;
     bottom: 82px;
+    position: absolute;
     right: 22px
 }
 
@@ -578,56 +569,56 @@
 }
 
 .verticalDivider_de2fa0 {
-    width: 2px;
-    margin: 0 16px
+    margin: 0 16px;
+    width: 2px
 }
 
 .loadingSpinner_de2fa0 {
-    position: absolute;
-    top: 32px;
-    left: 32px;
-    display: flex;
-    padding: 8px;
-    justify-content: center;
     align-items: center;
-    border-radius: 12px;
-    border: 1px solid hsla(0,0%,100%,.05);
-    background: rgba(0,0,0,.45);
     -webkit-backdrop-filter: blur(15.85px);
-    backdrop-filter: blur(15.85px)
+    backdrop-filter: blur(15.85px);
+    background: rgba(0,0,0,.45);
+    border: 1px solid hsla(0,0%,100%,.05);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    left: 32px;
+    padding: 8px;
+    position: absolute;
+    top: 32px
 }
 
 .captionContainer_de2fa0 {
-    position: absolute;
-    padding: 4px;
     bottom: 16px;
     left: 0;
+    padding: 4px;
+    position: absolute;
     right: 0
 }
 
 .captionText_de2fa0 {
-    text-shadow: 0 2px 7px #000;
-    text-align: center
+    text-align: center;
+    text-shadow: 0 2px 7px #000
 }
 
 .playPausePopCont_de2fa0 {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    padding: 12px;
-    border-radius: 50%;
-    pointer-events: none;
     background-color: var(--opacity-black-60);
+    border-radius: 50%;
     color: var(--white-500);
-    top: 50%;
+    height: 24px;
     left: 50%;
+    opacity: 0;
+    padding: 12px;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
     transform: translate(-50%,-50%);
-    opacity: 0
+    width: 24px
 }
 
 .playPausePopCont_de2fa0 .playPausePopIcon_de2fa0 {
-    width: 100%;
-    height: 100%
+    height: 100%;
+    width: 100%
 }
 
 .full-motion .pause_de2fa0,.full-motion .play_de2fa0 {
@@ -653,24 +644,24 @@
 
 .transcriptBodySpinner_de2fa0 {
     display: flex;
-    width: 100%;
     height: 100%;
-    justify-content: center
+    justify-content: center;
+    width: 100%
 }
 
 .pauseText_de2fa0 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 1;
-    transform: translate(-50%,-50%);
-    background-color: var(--background-primary);
-    padding: 20px;
-    opacity: .9;
-    border-radius: 12px;
     -webkit-backdrop-filter: blur(15.85px);
     backdrop-filter: blur(15.85px);
-    pointer-events: none
+    background-color: var(--background-primary);
+    border-radius: 12px;
+    left: 50%;
+    opacity: .9;
+    padding: 20px;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1
 }
 
 .copyLinkBtn_de2fa0 {
@@ -694,15 +685,15 @@
 }
 
 .endScreenOverlay_afedfc {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(25,26,28,.75);
     -webkit-backdrop-filter: blur(50px);
     backdrop-filter: blur(50px);
-    display: inline-block
+    background: rgba(25,26,28,.75);
+    display: inline-block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
 }
 
 @keyframes animate-fade-in_afedfc {
@@ -716,40 +707,39 @@
 }
 
 .endScreenImageBackground_afedfc {
-    pointer-events: none;
-    -o-object-fit: contain;
-    object-fit: contain
+    object-fit: contain;
+    pointer-events: none
 }
 
 .endScreenContainer_afedfc,.endScreenImageBackground_afedfc {
-    width: 100%;
-    height: 100%;
+    animation-duration: .5s;
     animation-name: animate-fade-in_afedfc;
-    animation-duration: .5s
+    height: 100%;
+    width: 100%
 }
 
 .endScreenContainer_afedfc {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 32px;
     box-sizing: border-box;
-    padding: 10px 10px 60px
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    left: 0;
+    padding: 10px 10px 60px;
+    position: absolute;
+    top: 0
 }
 
 .endScreenCard_afedfc {
-    border-radius: 12px;
     border: 1px solid hsla(0,0%,100%,.15);
+    border-radius: 12px;
     width: 53%
 }
 
 .endScreenCtaContainer_afedfc {
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 24px;
     max-width: 269px
 }
@@ -769,20 +759,20 @@
 }
 
 .endScreenCtaBtn_afedfc {
-    display: inline-flex;
-    padding: 8px 16px;
-    justify-content: center;
     align-items: center;
-    gap: 16px;
-    flex-shrink: 0;
-    cursor: pointer;
-    border-radius: 12px;
-    border: 1px solid hsla(0,0%,100%,.05);
-    background: rgba(109,114,131,.45);
-    box-shadow: 0 0 30px 0 rgba(220,239,255,.25);
     -webkit-backdrop-filter: blur(16px);
     backdrop-filter: blur(16px);
-    overflow: hidden
+    background: hsla(226,9%,47%,.45);
+    border: 1px solid hsla(0,0%,100%,.05);
+    border-radius: 12px;
+    box-shadow: 0 0 30px 0 rgba(220,239,255,.25);
+    cursor: pointer;
+    display: inline-flex;
+    flex-shrink: 0;
+    gap: 16px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 8px 16px
 }
 
 .full-motion .accentOnHover_afedfc {
@@ -813,18 +803,18 @@
 }
 
 .full-motion .endScreenCtaBtn_afedfc:after {
-    content: "";
-    position: absolute;
-    height: 100%;
+    animation-delay: .75s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: shine_afedfc;
+    animation-timing-function: ease-in-out;
     aspect-ratio: 1;
     background-color: #9497a0;
+    content: "";
     filter: blur(22.45px);
+    height: 100%;
     left: -50%;
-    animation-name: shine_afedfc;
-    animation-duration: 2s;
-    animation-delay: .75s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out
+    position: absolute
 }
 
 @media (min-width:1400px) {
@@ -847,12 +837,12 @@
 }
 
 .hitboxArea__370d1 {
-    position: absolute;
-    display: flex;
     align-items: center;
-    width: 100%;
+    display: flex;
     height: 2px;
-    top: -1px
+    position: absolute;
+    top: -1px;
+    width: 100%
 }
 
 .interactionEnabled__370d1 {
@@ -875,13 +865,13 @@
 }
 
 .buffer__370d1,.seekableBar__370d1 {
-    position: absolute;
-    height: 2px
+    height: 2px;
+    position: absolute
 }
 
 .seekableBar__370d1 {
-    left: 0;
     background-color: var(--white-600);
+    left: 0;
     opacity: 0
 }
 
@@ -890,22 +880,22 @@
 }
 
 .timeDisplay__370d1 {
-    text-shadow: 2px 2px 2px var(--black);
+    pointer-events: none;
     position: absolute;
-    top: -12px;
-    pointer-events: none
+    text-shadow: 2px 2px 2px var(--black);
+    top: -12px
 }
 
 .grabber__370d1 {
-    width: 12px;
-    height: 12px;
+    background-color: var(--white-500);
     border-radius: 50%;
+    height: 12px;
     position: absolute;
-    background-color: var(--white-500)
+    width: 12px
 }
 
 .grabberPast__370d1 {
     background-color: var(--white)
 }
 
-/*# sourceMappingURL=729cc0b71a9cc93f.css.map*/
+/*# sourceMappingURL=d7beea9eafe3efbe.css.map*/

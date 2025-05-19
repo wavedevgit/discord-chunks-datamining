@@ -1,4 +1,4 @@
-/** Chunk was on 17218 **/
+/** Chunk was on 88622 **/
 n.d(t, {
   Z: () => p
 });
@@ -24,20 +24,20 @@ let p = function(e) {
     quest: b,
     useReducedMotion: j,
     collapsedHeight: v
-  } = e, _ = o.useRef(null), y = o.useRef(null), C = (null == (t = b.userStatus) ? void 0 : t.enrolledAt) != null, O = (0, s.Rf)(b);
+  } = e, y = o.useRef(null), _ = o.useRef(null), O = (null == (t = b.userStatus) ? void 0 : t.enrolledAt) != null, C = (0, s.Rf)(b);
   return (0, r.jsxs)(i.p, {
     expandedContentRef: n,
-    collapsedContentRef: _,
+    collapsedContentRef: y,
     expansionSpring: p,
     children: [(0, r.jsx)(l.Z, {
-      ref: _,
+      ref: y,
       className: u.content,
       expansionSpring: p,
       isExpanded: m,
       isExpansionAnimationComplete: f,
       quest: b,
       useReducedMotion: j,
-      taskDetails: O
+      taskDetails: C
     }), (0, r.jsx)(c.Z, {
       expansionSpring: p,
       className: u.content,
@@ -45,18 +45,18 @@ let p = function(e) {
       onCtxMenuOpen: g,
       onCtxMenuClose: x,
       onCtxMenuSelect: h,
-      overlayRef: y,
+      overlayRef: _,
       isExpanded: m,
       isExpansionAnimationComplete: f,
       quest: b,
       useReducedMotion: j,
       ref: n,
-      taskDetails: O,
+      taskDetails: C,
       children: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(d.Z, {
           expansionSpring: p,
           isExpanded: m
-        }), !C && (0, r.jsx)(a.Z, {
+        }), !O && (0, r.jsx)(a.Z, {
           quest: b,
           expansionSpring: p,
           useReducedMotion: j,
@@ -68,7 +68,7 @@ let p = function(e) {
         })]
       })
     }), (0, r.jsx)("div", {
-      ref: y,
+      ref: _,
       className: u.overlay
     })]
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 17218 **/
+/** Chunk was on 88622 **/
 e.exports = {
   lottieAnimation: "lottieAnimation__85ad0",
   backgroundFallback: "backgroundFallback__85ad0",

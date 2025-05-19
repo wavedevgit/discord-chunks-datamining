@@ -1,4 +1,4 @@
-/** Chunk was on 17218 **/
+/** Chunk was on 88622 **/
 n.d(t, {
   Z: () => h
 });
@@ -26,14 +26,14 @@ let h = function(e) {
     isExpansionAnimationComplete: b,
     quest: j,
     useReducedMotion: v
-  } = e, _ = (null == (t = j.userStatus) ? void 0 : t.enrolledAt) != null, {
-    percentComplete: y
-  } = (0, l.Rf)(j), C = (0, l.Jf)(j), O = null != C ? C.percentComplete > 0 : y > 0;
+  } = e, y = (null == (t = j.userStatus) ? void 0 : t.enrolledAt) != null, {
+    percentComplete: _
+  } = (0, l.Rf)(j), O = (0, l.Jf)(j), C = null != O ? O.percentComplete > 0 : _ > 0;
   return (0, r.jsxs)(a.animated.div, {
     "aria-hidden": h && b,
     className: s()(n, x.contentCollapsed, {
       [x.contentCollapsedExpanded]: h,
-      [x.contentCollapsedAccepted]: _
+      [x.contentCollapsedAccepted]: y
     }),
     style: {
       opacity: o.to({
@@ -46,7 +46,7 @@ let h = function(e) {
       useReducedMotion: v
     }), (0, r.jsx)("div", {
       className: x.contentCollapsedWrapper,
-      children: _ ? (0, r.jsxs)("div", {
+      children: y ? (0, r.jsxs)("div", {
         className: x.questProgressWrapper,
         children: [(0, r.jsx)(p.Z, {
           className: x.questProgressRewardTile,
@@ -54,7 +54,7 @@ let h = function(e) {
           questContent: c.jn.QUEST_BAR,
           autoplay: !1,
           location: f.dr.QUESTS_BAR
-        }), O ? (0, r.jsx)(u.Z, {
+        }), C ? (0, r.jsx)(u.Z, {
           className: x.questProgressBar,
           quest: j
         }) : (0, r.jsx)(i.Text, {

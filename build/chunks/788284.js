@@ -1,4 +1,4 @@
-/** Chunk was on 17218 **/
+/** Chunk was on 88622 **/
 n.d(t, {
   Z: () => h
 }), n(388685);
@@ -50,15 +50,15 @@ function h(e) {
       },
       n = f.reduce((e, n) => [...e, n, t.r, t.g, t.b], []);
     return x(i.id, n)
-  }, [i]), _ = (null == (t = i.userStatus) ? void 0 : t.enrolledAt) != null, y = !l && g;
+  }, [i]), y = (null == (t = i.userStatus) ? void 0 : t.enrolledAt) != null, _ = !l && g;
   o.useEffect(() => {
     var e, t, n, r;
-    g ? y && (null == (r = h.current) || null == (n = r.animation) || n.play()) : null == (t = h.current) || null == (e = t.animation) || e.goToAndStop(0, !0)
-  }, [y, g]);
-  let C = o.useCallback(() => {
+    g ? _ && (null == (r = h.current) || null == (n = r.animation) || n.play()) : null == (t = h.current) || null == (e = t.animation) || e.goToAndStop(0, !0)
+  }, [_, g]);
+  let O = o.useCallback(() => {
     j(!0)
   }, []);
-  return null == v || _ ? (0, r.jsx)("div", {
+  return null == v || y ? (0, r.jsx)("div", {
     className: m.backgroundFallback,
     style: {
       backgroundImage: "linear-gradient(90deg, ".concat(i.config.colors.primary, ", ").concat(i.config.colors.secondary, ")")
@@ -67,9 +67,9 @@ function h(e) {
     className: a()(m.lottieAnimationBackgroundWrapper, s),
     children: (0, r.jsx)(d.Fmz, {
       ref: h,
-      onComplete: C,
+      onComplete: O,
       importData: () => v,
-      shouldAnimate: !b && y,
+      shouldAnimate: !b && _,
       className: a()(m.lottieAnimation, m.lottieAnimationBackground, n),
       loop: 0,
       rendererSettings: {

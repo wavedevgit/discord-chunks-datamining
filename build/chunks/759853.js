@@ -1,4 +1,4 @@
-/** Chunk was on 17218 **/
+/** Chunk was on 88622 **/
 n.d(t, {
   Z: () => j
 }), n(388685);
@@ -25,11 +25,11 @@ let b = ["#51BC9D"],
       overlayRef: s,
       quest: j,
       progressBarRef: v,
-      isExpanded: _
+      isExpanded: y
     } = e, {
-      completionSpring: y,
-      startCompletionAnimation: C
-    } = (0, f.G)(), O = (null == (t = j.userStatus) ? void 0 : t.completedAt) != null, w = o.useRef(!1), S = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), P = o.useRef(null), E = (0, d.e7)([m.Z], () => m.Z.hasLayers()), T = (0, u.Z)(E), [N, A] = o.useState(null), [R, B] = o.useState(null), k = o.useRef(new i.qA({
+      completionSpring: _,
+      startCompletionAnimation: O
+    } = (0, f.G)(), C = (null == (t = j.userStatus) ? void 0 : t.completedAt) != null, w = o.useRef(!1), S = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), P = o.useRef(null), E = (0, d.e7)([m.Z], () => m.Z.hasLayers()), T = (0, u.Z)(E), [N, A] = o.useState(null), [R, k] = o.useState(null), B = o.useRef(new i.qA({
       gravity: 0,
       wind: 0
     })), q = (0, i.uR)(N, R), I = o.useCallback(() => {
@@ -110,28 +110,28 @@ let b = ["#51BC9D"],
           Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
         }), a), 100)
       }
-    }, [v, P, q, S]), D = (0, u.Z)(_);
+    }, [v, P, q, S]), D = (0, u.Z)(y);
     return (o.useEffect(() => {
-      O && _ && !D && (C(), I())
-    }, [_, O, C, I, D]), o.useEffect(() => {
-      O && !E && T && setTimeout(() => {
-        C(), I()
+      C && y && !D && (O(), I())
+    }, [y, C, O, I, D]), o.useEffect(() => {
+      C && !E && T && setTimeout(() => {
+        O(), I()
       }, 200)
-    }, [O, T, E, C, I]), o.useEffect(() => {
-      q.isReady && (!w.current && O && (C(), I()), w.current = O)
-    }, [O, w, I, C, q]), S) ? null : (0, r.jsxs)("div", {
+    }, [C, T, E, O, I]), o.useEffect(() => {
+      q.isReady && (!w.current && C && (O(), I()), w.current = C)
+    }, [C, w, I, O, q]), S) ? null : (0, r.jsxs)("div", {
       className: x.wrapper,
       "aria-hidden": "true",
       ref: P,
       children: [(0, r.jsx)(c.animated.div, {
         className: x.background,
         style: {
-          opacity: y
+          opacity: _
         }
       }), (0, r.jsx)(c.animated.div, {
         className: a()(x.borders, x.bordersTopLeft),
         style: {
-          opacity: y
+          opacity: _
         }
       }), (0, r.jsxs)(c.animated.div, {
         className: x.confettiWrapper,
@@ -144,9 +144,9 @@ let b = ["#51BC9D"],
         children: [(0, r.jsx)(i.O_, {
           ref: A,
           className: x.confetti,
-          environment: k.current
+          environment: B.current
         }), (0, r.jsx)(i.Ji, {
-          ref: B,
+          ref: k,
           sprites: [h],
           colors: b,
           spriteWidth: g.Ko,
@@ -154,7 +154,7 @@ let b = ["#51BC9D"],
         }), null != s.current && (0, l.createPortal)((0, r.jsx)(c.animated.div, {
           className: a()(x.borders, x.bordersBottom),
           style: {
-            opacity: y
+            opacity: _
           }
         }), s.current)]
       })]
