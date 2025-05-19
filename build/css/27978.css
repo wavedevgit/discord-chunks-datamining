@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: 461295c163c9b7e8
+  Original File Name: 999076e819b79a2f
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -2231,8 +2231,20 @@ html:not(.visual-refresh) .footer__7c901 {
 }
 
 .birthdayText_d332d2 {
-    margin-bottom: 20px;
+    color: var(--text-secondary);
+    margin-bottom: 32px;
     margin-top: 4px
+}
+
+.centeredSubText_d332d2 {
+    color: var(--text-secondary);
+    text-align: center
+}
+
+.centeredButtonContainer_d332d2 {
+    display: flex;
+    justify-content: center;
+    width: 100%
 }
 
 .iconContainer__98cf7 {
@@ -2411,4 +2423,4 @@ html:not(.visual-refresh) .footer__7c901 {
     height: 100px
 }
 
-/*# sourceMappingURL=461295c163c9b7e8.css.map*/
+/*# sourceMappingURL=999076e819b79a2f.css.map*/
