@@ -1,6 +1,6 @@
 /**
   Module ID: 44784
-  Original File Name: 2988b28402f6061f
+  Original File Name: 3dea749851bc4e94
 **/
 .scroller__95bea {
     display: flex;
@@ -1061,7 +1061,8 @@
 
 .backdrop__9c3be {
     background: var(--bg-backdrop);
-    border-radius: var(--radius-lg) var(--radius-lg) 0 0
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    z-index: 1
 }
 
 .backdrop__9c3be,.backgroundImage__9c3be {
@@ -1186,4 +1187,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=2988b28402f6061f.css.map*/
+/*# sourceMappingURL=3dea749851bc4e94.css.map*/
