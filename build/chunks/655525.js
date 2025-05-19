@@ -1,17 +1,17 @@
-/** Chunk was on 94928 **/
+/** Chunk was on 20185 **/
 "use strict";
 n.d(t, {
   Z: () => o
 });
 var r = n(255367);
 n(73800);
-var s = n(346497),
-  i = n(227140);
+var i = n(346497),
+  s = n(227140);
 
 function o() {
-  let e = (0, s.Vi)(),
-    t = (0, s.W1)();
-  return e ? (0, r.jsx)(i.Z, {
+  let e = (0, i.Vi)(),
+    t = (0, i.W1)();
+  return e ? (0, r.jsx)(s.Z, {
     copy: t
   }) : null
 }

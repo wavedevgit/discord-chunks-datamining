@@ -18,16 +18,16 @@ var a = n(255367),
   b = n(835473),
   f = n(246992),
   v = n(681619),
-  j = n(810568),
-  g = n(168524),
+  g = n(810568),
+  j = n(168524),
   _ = n(77498),
   y = n(823379),
   C = n(550532),
   O = n(71585),
   N = n(146282),
   E = n(780106),
-  S = n(650613),
-  T = n(789086),
+  T = n(650613),
+  S = n(789086),
   P = n(206583),
   k = n(403542),
   w = n(616257);
@@ -116,19 +116,19 @@ function Z() {
       var e, t, n;
       return parseInt(R) > 0 ? R : null != (n = null == (e = _.Z.getGameByName(R)) ? void 0 : e.id) ? n : null == (t = p.Z.getApplicationByName(R)) ? void 0 : t.id
     }, [R]),
-    D = (0, g.Z)({
+    D = (0, j.Z)({
       applicationId: L,
       location: "DevToolsContentInventory",
-      source: j.m1.DevTools
+      source: g.m1.DevTools
     }),
-    z = Object.entries(null != (t = m.K.get("GameProfileModal")) ? t : {}).filter(e => {
+    M = Object.entries(null != (t = m.K.get("GameProfileModal")) ? t : {}).filter(e => {
       let [t, n] = e;
       return n
     }).map(e => {
       let [t] = e;
       return t
     }),
-    M = (0, b.Z)(z).filter(y.lm),
+    z = (0, b.Z)(M).filter(y.lm),
     B = (0, u.e7)([C.Z], () => C.Z.getFakeGameToShow());
   return (0, a.jsx)("div", {
     className: w.panel,
@@ -142,7 +142,7 @@ function Z() {
           data: s
         }), (0, a.jsx)(x.LZC, {
           size: 8
-        }), (0, a.jsx)(T.Z, {}), (0, a.jsx)(x.zxk, {
+        }), (0, a.jsx)(S.Z, {}), (0, a.jsx)(x.zxk, {
           fullWidth: !0,
           onClick: function() {
             h.Z.dispatch({
@@ -196,7 +196,7 @@ function Z() {
           },
           children: i ? "Disable Fast Impression Capping" : "Enable Fast Impression Capping"
         })]
-      }), !1, (0, a.jsx)(S.Z, {}), (0, a.jsxs)(x.hjN, {
+      }), !1, (0, a.jsx)(T.Z, {}), (0, a.jsxs)(x.hjN, {
         children: [(0, a.jsx)(x.vwX, {
           children: "Game Profile"
         }), (0, a.jsx)(x.oil, {
@@ -210,7 +210,7 @@ function Z() {
             border: "1px solid green"
           } : {}
         }), (0, a.jsx)("ul", {
-          children: M.map(e => (0, a.jsx)("li", {
+          children: z.map(e => (0, a.jsx)("li", {
             children: (0, a.jsx)(A, {
               application: e
             })
@@ -244,10 +244,10 @@ function Z() {
 let A = e => {
   let {
     application: t
-  } = e, n = (0, g.Z)({
+  } = e, n = (0, j.Z)({
     applicationId: t.id,
     location: "DevToolsContentInventory",
-    source: j.m1.DevTools
+    source: g.m1.DevTools
   });
   return (0, a.jsx)(x.P3F, {
     onClick: n,

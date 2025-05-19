@@ -1,4 +1,4 @@
-/** Chunk was on 35948 **/
+/** Chunk was on 1022 **/
 n.d(t, {
   Z: () => m
 });
@@ -20,8 +20,8 @@ let m = i.forwardRef(function(e, t) {
     selected: n,
     onClick: m,
     questId: b,
-    className: _
-  } = e, y = i.useCallback(() => {
+    className: y
+  } = e, O = i.useCallback(() => {
     (0, s.k5)({
       source: h.GlobalDiscoveryAnalyticsLocations.GUILDS_BAR_ICON
     });
@@ -58,9 +58,9 @@ let m = i.forwardRef(function(e, t) {
   return (0, r.jsx)(d.Z, {
     id: "guild-discover-button",
     ref: t,
-    className: _,
+    className: y,
     onClick: () => {
-      y(), void 0 !== m && m()
+      O(), void 0 !== m && m()
     },
     selected: n,
     tooltip: g.intl.string(g.t["4nEZLi"]),

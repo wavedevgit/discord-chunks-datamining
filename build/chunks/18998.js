@@ -1,6 +1,6 @@
-/** Chunk was on 35948 **/
+/** Chunk was on 1022 **/
 n.d(t, {
-  Z: () => y
+  Z: () => O
 }), n(583741), n(388685), n(539854);
 var r, i = n(255367),
   l = n(73800),
@@ -121,7 +121,7 @@ class b extends l.Component {
     }
   }
 }
-class _ extends(r = l.PureComponent) {
+class y extends(r = l.PureComponent) {
   componentDidMount() {
     this.calculateState()
   }
@@ -213,10 +213,10 @@ class _ extends(r = l.PureComponent) {
     })
   }
 }
-f(_, "contextType", h.Sfi), f(_, "defaultProps", {
+f(y, "contextType", h.Sfi), f(y, "defaultProps", {
   className: p.container,
   reverse: !1,
   hide: !1,
   animate: !0
 });
-let y = _
+let O = y

@@ -1,4 +1,4 @@
-/** Chunk was on 35948 **/
+/** Chunk was on 1022 **/
 e.exports = {
   pulse: "pulse__3b43f",
   container: "container__3b43f",

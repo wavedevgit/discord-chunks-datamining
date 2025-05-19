@@ -3,14 +3,14 @@ n.d(t, {
   Z: () => p
 });
 var r, i, l = n(39612),
-  s = n(271579),
+  a = n(271579),
   o = n(756647),
-  a = n(625128),
+  s = n(625128),
   c = n(626135),
   u = n(954824),
   d = n(751189),
-  h = n(981631);
-let g = "template",
+  g = n(981631);
+let h = "template",
   p = (r = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -30,21 +30,21 @@ let g = "template",
     return e
   }({}, d.Z), i = i = {
     openNativeAppModal(e) {
-      a.Z.openNativeAppModal(e, h.Etm.GUILD_TEMPLATE_BROWSER)
+      s.Z.openNativeAppModal(e, g.Etm.GUILD_TEMPLATE_BROWSER)
     },
     openMobileApp(e, t) {
       if (null != platform.ua && platform.ua.toLowerCase().indexOf("googlebot") > -1) return;
       let n = null != e ? (0, l.Oh)(e) : (0, l.Gk)(),
-        r = (0, s.WS)(),
-        i = (0, s.ZP)(n, {
-          utmSource: g,
+        r = (0, a.WS)(),
+        i = (0, a.ZP)(n, {
+          utmSource: h,
           fingerprint: t,
           attemptId: r
         });
-      c.default.track(h.rMx.DEEP_LINK_CLICKED, {
+      c.default.track(g.rMx.DEEP_LINK_CLICKED, {
         fingerprint: (0, o.K)(t),
         attempt_id: r,
-        source: g,
+        source: h,
         guild_template_code: e
       }), u.Z.launch(i, () => {})
     }

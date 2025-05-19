@@ -1,11 +1,11 @@
-/** Chunk was on 21924 **/
+/** Chunk was on 85634 **/
 n.d(t, {
   Z: () => m
 }), n(388685), n(413496), n(433524), n(35282);
 var r = n(255367),
-  l = n(73800),
+  a = n(73800),
   i = n(481060),
-  a = n(454585),
+  l = n(454585),
   o = n(273744),
   s = n(388032),
   c = n(232890),
@@ -17,14 +17,14 @@ let u = e => {
         title: u,
         subtitle: m,
         placeholder: p,
-        rows: x,
-        character_limit: b,
-        pattern: _
+        rows: _,
+        character_limit: g,
+        pattern: b
       },
-      onChange: f,
+      onChange: x,
       initialText: h,
-      isRequired: g
-    } = e, v = l.useRef(a.Z.reactParserFor((t = function(e) {
+      isRequired: f
+    } = e, v = a.useRef(l.Z.reactParserFor((t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -41,7 +41,7 @@ let u = e => {
         })
       }
       return e
-    }({}, a.Z.defaultRules), n = n = {
+    }({}, l.Z.defaultRules), n = n = {
       link: o.s
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -52,38 +52,38 @@ let u = e => {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t))), [j, y] = l.useState(""), [O, Z] = l.useState(null);
-    l.useEffect(() => {
+    }), t))), [j, C] = a.useState(""), [y, I] = a.useState(null);
+    a.useEffect(() => {
       var e;
-      y(null != (e = null == h ? void 0 : h.value) ? e : "")
+      C(null != (e = null == h ? void 0 : h.value) ? e : "")
     }, [h]);
-    let I = l.useCallback(e => {
-      let t = null != _ ? new RegExp(_) : null;
-      null == t || t.test(e) ? null != e && (Z(null), y(e), f({
+    let O = a.useCallback(e => {
+      let t = null != b ? new RegExp(b) : null;
+      null == t || t.test(e) ? null != e && (I(null), C(e), x({
         value: e,
         isValid: !0
-      })) : (Z(s.intl.string(s.t["24xrGR"])), f({
+      })) : (I(s.intl.string(s.t["24xrGR"])), x({
         value: e,
         isValid: !1
       }))
-    }, [f, _]);
+    }, [x, b]);
     return (0, r.jsxs)("div", {
       className: d.marginBottom8,
       children: [null != u && (0, r.jsx)("div", {
         className: d.marginBottom8,
         children: (0, r.jsxs)(i.Text, {
           variant: "text-sm/bold",
-          children: [u, g && (0, r.jsx)("span", {
+          children: [u, f && (0, r.jsx)("span", {
             className: c.required,
             children: "*"
           })]
         })
       }), (0, r.jsx)(i.Kx8, {
-        maxLength: b,
-        onChange: I,
+        maxLength: g,
+        onChange: O,
         value: j,
-        error: O,
-        rows: x,
+        error: y,
+        rows: _,
         placeholder: p,
         autoFocus: !0
       }), null != m && (0, r.jsx)("div", {
@@ -98,14 +98,14 @@ let u = e => {
     let {
       elements: t,
       onChange: n,
-      state: l
+      state: a
     } = e, i = t.map(e => {
       var t;
       let i = e.name;
       return (0, r.jsx)(u, {
         data: e.data,
         onChange: e => n(i, e.value, e.isValid),
-        initialText: null != (t = null == l ? void 0 : l[i]) ? t : void 0,
+        initialText: null != (t = null == a ? void 0 : a[i]) ? t : void 0,
         isRequired: e.should_submit_data
       }, i)
     });

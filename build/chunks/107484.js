@@ -1,28 +1,28 @@
-/** Chunk was on 91245 **/
+/** Chunk was on 62134 **/
 "use strict";
 n.d(t, {
   Z: () => u
 }), n(388685);
-var r, o, a, i = n(442837),
-  l = n(570140);
-let s = new Map;
+var r, o, l, i = n(442837),
+  s = n(570140);
+let a = new Map;
 class c extends(r = i.ZP.Store) {
   getGuildRoleConnectionEligibility(e) {
-    return null != e ? s.get(e) : void 0
+    return null != e ? a.get(e) : void 0
   }
 }
-a = "GuildRoleConnectionEligibilityStore", (o = "displayName") in c ? Object.defineProperty(c, o, {
-  value: a,
+l = "GuildRoleConnectionEligibilityStore", (o = "displayName") in c ? Object.defineProperty(c, o, {
+  value: l,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : c[o] = a;
-let u = new c(l.Z, {
+}) : c[o] = l;
+let u = new c(s.Z, {
   GUILD_ROLE_CONNECTION_ELIGIBILITY_FETCH_SUCCESS: e => {
     let {
       roleId: t,
       roleConnectionEligibility: n
     } = e;
-    s.set(t, n)
+    a.set(t, n)
   }
 })

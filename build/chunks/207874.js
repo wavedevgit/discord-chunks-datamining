@@ -1,30 +1,30 @@
-/** Chunk was on 94928 **/
+/** Chunk was on 20185 **/
 "use strict";
 n.d(t, {
   Z: () => d
 });
 var r = n(255367),
-  s = n(73800),
-  i = n(442837),
+  i = n(73800),
+  s = n(442837),
   o = n(461745),
-  l = n(663389),
-  a = n(5967),
+  a = n(663389),
+  l = n(5967),
   c = n(996733),
   u = n(388032);
 
 function d(e) {
   let {
     style: t
-  } = e, n = (0, c.Z7)(), d = s.useCallback((e, t) => {
+  } = e, n = (0, c.Z7)(), d = i.useCallback((e, t) => {
     t.stopPropagation(), t.preventDefault(), (0, c.QH)(e)
-  }, []), f = s.useCallback(() => {
+  }, []), p = i.useCallback(() => {
     (0, c.QH)(!1), (0, c.yN)("")
-  }, []), p = s.useRef(null), g = (0, i.e7)([l.Z], () => l.Z.getSection());
-  return s.useEffect(() => {
+  }, []), f = i.useRef(null), g = (0, s.e7)([a.Z], () => a.Z.getSection());
+  return i.useEffect(() => {
     let e = e => {
       var t;
-      let n = p.current;
-      (null == (t = (0, a.uB)(e)) ? void 0 : t.activeElement) === document.body && (null == n || n.focus())
+      let n = f.current;
+      (null == (t = (0, l.uB)(e)) ? void 0 : t.activeElement) === document.body && (null == n || n.focus())
     };
     return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
   }, [g]), (0, r.jsx)("div", {
@@ -32,10 +32,10 @@ function d(e) {
       marginBottom: "8px"
     },
     children: (0, r.jsx)(o.ZP, {
-      ref: p,
+      ref: f,
       size: o.ZP.Sizes.MEDIUM,
       query: n,
-      onClear: f,
+      onClear: p,
       onQueryChange: c.yN,
       placeholder: u.intl.string(u.t["5h0QOD"]),
       className: t,

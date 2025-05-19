@@ -1,5 +1,4 @@
-/** Chunk was on 94928 **/
-"use strict";
+/** Chunk was on 27115 **/
 e.exports = {
   pill: "pill_a2c9e8",
   clickable: "clickable_a2c9e8",

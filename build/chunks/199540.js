@@ -1,4 +1,4 @@
-/** Chunk was on 35948 **/
+/** Chunk was on 1022 **/
 n.d(t, {
   Z: () => b
 }), n(388685);
@@ -82,14 +82,14 @@ function b(e) {
     mentionCount: d = 0,
     isMentionLowImportance: g,
     tooltipName: b,
-    folderGroupId: _,
-    folderButtonContent: y,
-    onClick: O,
-    onContextMenu: v,
+    folderGroupId: y,
+    folderButtonContent: O,
+    onClick: v,
+    onContextMenu: _,
     onHoverChange: C,
-    onKeyDown: S,
+    onKeyDown: j,
     treeItemProps: {
-      onFocus: j
+      onFocus: S
     },
     "aria-setsize": E,
     "aria-posinset": x
@@ -132,12 +132,12 @@ function b(e) {
       return e
     }({
       className: f.folderButton,
-      onClick: O,
-      onContextMenu: v,
+      onClick: v,
+      onContextMenu: _,
       onMouseEnter: N,
       onMouseLeave: Z,
-      onKeyDown: S,
-      onFocus: j,
+      onKeyDown: j,
+      onFocus: S,
       focusProps: {
         enabled: !1
       }
@@ -146,7 +146,7 @@ function b(e) {
       "aria-setsize": E,
       "aria-posinset": x,
       "aria-expanded": o,
-      "aria-owns": _,
+      "aria-owns": y,
       children: (0, r.jsxs)(a.aRk, {
         isFolder: !0,
         upperBadge: T,
@@ -159,9 +159,9 @@ function b(e) {
             folderName: b,
             mentions: d
           })
-        }), null != y ? (0, r.jsx)("div", {
+        }), null != O ? (0, r.jsx)("div", {
           className: f.folderIconWrapper,
-          children: y
+          children: O
         }) : (0, r.jsx)(m, {
           folderNode: l,
           hovered: I,

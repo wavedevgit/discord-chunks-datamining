@@ -1,6 +1,6 @@
-/** Chunk was on 35948 **/
+/** Chunk was on 1022 **/
 n.d(t, {
-  Z: () => _
+  Z: () => y
 });
 var r = n(255367),
   i = n(73800),
@@ -18,36 +18,36 @@ var r = n(255367),
   m = n(32066),
   b = n(73433);
 
-function _(e) {
+function y(e) {
   let {
     channel: t,
     connected: n,
     hovered: l,
-    subtitle: _,
-    onClick: y
-  } = e, O = (0, s.e7)([u.Z], () => u.Z.getChannelStatus(t)), v = null != O && O.length > 0, C = (0, c.ZP)(t, !0), S = null != _ && _.length > 0;
+    subtitle: y,
+    onClick: O
+  } = e, v = (0, s.e7)([u.Z], () => u.Z.getChannelStatus(t)), _ = null != v && v.length > 0, C = (0, c.ZP)(t, !0), j = null != y && y.length > 0;
   if (i.useEffect(() => {
-      v && p.default.track(f.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
+      _ && p.default.track(f.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
         channel_id: t.id,
         guild_id: t.guild_id
       })
-    }, [v, t.id, t.guild_id]), null == t.guild_id) return null;
-  let j = o()(m.statusDiv, n && C ? m.hoverable : null);
-  return v ? (0, r.jsx)(a.P3F, {
-    className: j,
-    onClick: C ? y : void 0,
+    }, [_, t.id, t.guild_id]), null == t.guild_id) return null;
+  let S = o()(m.statusDiv, n && C ? m.hoverable : null);
+  return _ ? (0, r.jsx)(a.P3F, {
+    className: S,
+    onClick: C ? O : void 0,
     children: (0, r.jsx)(a.Text, {
       variant: "text-xs/medium",
       className: o()(m.statusText, b.markup),
       children: (0, r.jsx)(d.Z, {
-        children: h.Z.parseVoiceChannelStatus(O, !0, {
+        children: h.Z.parseVoiceChannelStatus(v, !0, {
           channelId: t.id
         })
       })
     })
-  }) : n && C && (!S || l) ? (0, r.jsxs)(a.P3F, {
-    className: j,
-    onClick: y,
+  }) : n && C && (!j || l) ? (0, r.jsxs)(a.P3F, {
+    className: S,
+    onClick: O,
     children: [(0, r.jsx)(a.Text, {
       variant: "text-xs/medium",
       className: m.statusText,
@@ -57,7 +57,7 @@ function _(e) {
       className: m.pencilIcon,
       size: "xxs"
     })]
-  }) : S ? (0, r.jsx)(d.Z, {
-    children: _
+  }) : j ? (0, r.jsx)(d.Z, {
+    children: y
   }) : null
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 94928 **/
+/** Chunk was on 20185 **/
 "use strict";
 n.r(e.exports = {
   badgeIconPrivateMessages: "badgeIconPrivateMessages__80f39",

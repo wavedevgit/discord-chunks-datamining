@@ -1,4 +1,4 @@
-/** Chunk was on 35948 **/
+/** Chunk was on 1022 **/
 n.d(t, {
   Z: () => R
 });
@@ -17,13 +17,13 @@ var r = n(255367),
   g = n(488131),
   m = n(592125),
   b = n(306680),
-  _ = n(979651),
-  y = n(938475),
-  O = n(714794),
-  v = n(876548),
+  y = n(979651),
+  O = n(938475),
+  v = n(714794),
+  _ = n(876548),
   C = n(25601),
-  S = n(207055),
-  j = n(981631),
+  j = n(207055),
+  S = n(981631),
   E = n(124368),
   x = n(388032),
   P = n(915887),
@@ -154,7 +154,7 @@ let R = i.memo(function(e) {
     isSelectedVoice: w,
     isLast: R,
     withGuildIcon: D
-  } = e, L = (0, a.e7)([y.ZP], () => y.ZP.getVoiceStatesForChannel(t), [t]), k = (0, a.e7)([_.Z], () => _.Z.hasVideo(t.id)), {
+  } = e, L = (0, a.e7)([O.ZP], () => O.ZP.getVoiceStatesForChannel(t), [t]), k = (0, a.e7)([y.Z], () => y.Z.hasVideo(t.id)), {
     unread: M,
     mentionCount: U,
     isMentionLowImportance: G
@@ -176,9 +176,9 @@ let R = i.memo(function(e) {
         channel: i
       }))
     })
-  }, [t.id]), W = null == L ? 0 : L.length, z = (0, s.JA)(t.id), {
+  }, [t.id]), z = null == L ? 0 : L.length, W = (0, s.JA)(t.id), {
     role: Y
-  } = z, K = function(e, t) {
+  } = W, K = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -192,7 +192,7 @@ let R = i.memo(function(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(z, ["role"]), q = i.useRef(null), Q = U > 0 ? x.intl.formatToPlainString(x.t["ZL7+Iy"], {
+  }(W, ["role"]), q = i.useRef(null), Q = U > 0 ? x.intl.formatToPlainString(x.t["ZL7+Iy"], {
     channelName: t.name,
     mentionCount: U
   }) : M ? x.intl.formatToPlainString(x.t.YlVvmZ, {
@@ -248,11 +248,11 @@ let R = i.memo(function(e) {
               children: t.name
             }), (0, r.jsxs)("div", {
               className: I.children,
-              children: [W > 0 && t.userLimit > 0 ? (0, r.jsx)(v.Z, {
-                userCount: W,
+              children: [z > 0 && t.userLimit > 0 ? (0, r.jsx)(_.Z, {
+                userCount: z,
                 video: k,
                 channel: t
-              }) : null, (0, O.Z)(U) ? (0, r.jsx)(C.Z, {
+              }) : null, (0, v.Z)(U) ? (0, r.jsx)(C.Z, {
                 mentionsCount: U,
                 isMentionLowImportance: G
               }) : null]
@@ -260,12 +260,12 @@ let R = i.memo(function(e) {
           })
         }))]
       })
-    }), (0, r.jsx)(S.Z, {
+    }), (0, r.jsx)(j.Z, {
       channel: t,
       collapsed: !w,
       collapsedMax: 6,
       voiceStates: L,
-      location: j.Sbl.GUILD_CHANNEL_LIST
+      location: S.Sbl.GUILD_CHANNEL_LIST
     })]
   })
 })

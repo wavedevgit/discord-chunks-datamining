@@ -1,7 +1,7 @@
-/** Chunk was on 35948 **/
+/** Chunk was on 1022 **/
 n.d(t, {
   Wj: () => C,
-  ZP: () => v
+  ZP: () => _
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -18,16 +18,16 @@ var r = n(255367),
   g = n(905128),
   m = n(326660),
   b = n(317169),
-  _ = n(19394),
-  y = n(535396),
-  O = n(921944);
+  y = n(19394),
+  O = n(535396),
+  v = n(921944);
 
-function v(e) {
+function _(e) {
   let t = (0, l.e7)([f.Z], () => f.Z.getNotificationStateForGuild(e), [e]),
     n = (0, l.e7)([g.Z], () => g.Z.getStateForGuild(e)),
     {
       trailing: p,
-      showUnread: O
+      showUnread: v
     } = function(e, t, n) {
       let l = (0, b.Z)(e).available;
       return i.useMemo(() => {
@@ -38,7 +38,7 @@ function v(e) {
         };
         let {
           unlockedPowerups: c
-        } = t, u = (0, _.h)(c), d = null != (i = null == n ? void 0 : n.lastSeenWarningNotification) ? i : Date.now(), h = new Date(null == (e = u[u.length - 1]) ? void 0 : e.ends_at).getTime(), p = null != (o = null == n ? void 0 : n.lastBoostCount) ? o : 0;
+        } = t, u = (0, y.h)(c), d = null != (i = null == n ? void 0 : n.lastSeenWarningNotification) ? i : Date.now(), h = new Date(null == (e = u[u.length - 1]) ? void 0 : e.ends_at).getTime(), p = null != (o = null == n ? void 0 : n.lastBoostCount) ? o : 0;
         return u.length > 0 && d < h ? {
           trailing: (0, r.jsx)(s.P4T, {
             color: s.TVs.colors.STATUS_WARNING,
@@ -57,21 +57,21 @@ function v(e) {
         }
       }, [l, null == n ? void 0 : n.lastBoostCount, null == n ? void 0 : n.lastSeenWarningNotification, t])
     }(e, n, t),
-    v = function(e, t) {
+    _ = function(e, t) {
       let [n, r] = (0, c.US)(null != t ? [o.z.GUILD_POWERUP_PERKS_COACHMARK] : []), {
         available: l
       } = (0, b.Z)(e), s = i.useMemo(() => {
         if (null == t || n === o.z.GUILD_POWERUP_PERKS_COACHMARK) return;
         let r = function(e, t) {
           let n = h.Oe.find(e => {
-            let n = y.Cp[e],
+            let n = O.Cp[e],
               r = null != n ? t.unlockedPowerups[n] : void 0;
-            return null != r && r.user_id !== y.Fq
+            return null != r && r.user_id !== O.Fq
           });
           if (null == n) return;
-          let r = y.Q1[n];
+          let r = O.Q1[n];
           if (null == r || (0, u.OY)(r, e)) return;
-          let i = y.Cp[n],
+          let i = O.Cp[n],
             l = null != i ? t.allPowerups[i] : void 0;
           if (null != l) return {
             type: m.J.LEVEL_REACHED,
@@ -83,7 +83,7 @@ function v(e) {
         }(e, t);
         if (null != r) return r;
         let i = function(e, t, n) {
-          let r = Array.from(y.KW.values()).map(e => {
+          let r = Array.from(O.KW.values()).map(e => {
             if (null == t.unlockedPowerups[e]) return t.allPowerups[e]
           }).filter(d.lm);
           if (0 !== r.length) {
@@ -156,27 +156,27 @@ function v(e) {
         }
       }, [t, n, r, s, a, p])
     }(e, n);
-  if (null !== n && (null != p || O || null != v)) return {
+  if (null !== n && (null != p || v || null != _)) return {
     trailing: p,
-    showUnread: O,
-    popout: v
+    showUnread: v,
+    popout: _
   }
 }
 
 function C(e) {
   let t = (0, l.e7)([g.Z], () => g.Z.getStateForGuild(e)),
-    n = v(e);
+    n = _(e);
   i.useEffect(() => {
     (0, p.jd)(e)
   }, [e]), i.useEffect(() => {
     var e;
-    null == n || null == (e = n.popout) || e.markAsDismissed(O.L.AUTO_DISMISS)
+    null == n || null == (e = n.popout) || e.markAsDismissed(v.L.AUTO_DISMISS)
   }, [n]), i.useEffect(() => {
     null != t && h.Oe.forEach(n => {
-      let r = y.Cp[n];
+      let r = O.Cp[n];
       if (null == r || null == t.unlockedPowerups[r]) return;
-      let i = y.Q1[n];
-      null != i && (0, u.Qd)(i, e, !1, O.L.AUTO_DISMISS)
+      let i = O.Q1[n];
+      null != i && (0, u.Qd)(i, e, !1, v.L.AUTO_DISMISS)
     })
   }, [e, t])
 }

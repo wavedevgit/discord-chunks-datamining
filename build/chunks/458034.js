@@ -1,4 +1,4 @@
-/** Chunk was on 91245 **/
+/** Chunk was on 62134 **/
 "use strict";
 n.d(t, {
   Am: () => u,
@@ -8,19 +8,19 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var o = n(442837),
-  a = n(481060),
+  l = n(481060),
   i = n(430824),
-  l = n(275759),
-  s = n(388032);
+  s = n(275759),
+  a = n(388032);
 let c = "guild-connection-roles";
 
 function u(e) {
-  (0, a.ZDy)(async () => {
+  (0, l.ZDy)(async () => {
     let {
       default: t
     } = await n.e("40897").then(n.bind(n, 507294));
     return n => {
-      var o, a;
+      var o, l;
       return (0, r.jsx)(t, (o = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -38,33 +38,33 @@ function u(e) {
           })
         }
         return e
-      }({}, n), a = a = {
+      }({}, n), l = l = {
         guildId: e
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(a)).forEach(function(e) {
-        Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(a, e))
+      })(Object(l)).forEach(function(e) {
+        Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(l, e))
       }), o))
     }
   }, {
     modalKey: c,
-    contextKey: a.z1l,
+    contextKey: l.z1l,
     onCloseRequest: () => {
-      (0, a.Mr3)(c, a.z1l)
+      (0, l.Mr3)(c, l.z1l)
     }
   })
 }
 
 function d(e) {
-  return (0, o.e7)([i.Z], () => (0, l.kQ)(e, i.Z.getRoles(e.id)), [e]) ? (0, r.jsx)(a.sNh, {
+  return (0, o.e7)([i.Z], () => (0, s.kQ)(e, i.Z.getRoles(e.id)), [e]) ? (0, r.jsx)(l.sNh, {
     id: "guild-connection-roles",
-    label: s.intl.string(s.t.ghtnsr),
-    icon: a.xPt,
+    label: a.intl.string(a.t.ghtnsr),
+    icon: l.xPt,
     action: () => u(e.id)
   }) : null
 }

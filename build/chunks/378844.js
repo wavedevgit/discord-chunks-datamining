@@ -1,7 +1,7 @@
-/** Chunk was on 35948 **/
+/** Chunk was on 1022 **/
 n.d(t, {
-  R: () => _,
-  Z: () => y
+  R: () => y,
+  Z: () => O
 });
 var r, i = n(255367);
 n(73800);
@@ -36,26 +36,26 @@ function b(e) {
   }
   return e
 }
-var _ = ((r = {})[r.VOICE = 0] = "VOICE", r);
-let y = e => {
+var y = ((r = {})[r.VOICE = 0] = "VOICE", r);
+let O = e => {
   let {
     type: t,
     guildId: r,
-    closePopout: _
-  } = e, y = (0, c.Dt)(), {
-    notClaimed: O,
-    notEmailVerified: v,
+    closePopout: y
+  } = e, O = (0, c.Dt)(), {
+    notClaimed: v,
+    notEmailVerified: _,
     notPhoneVerified: C,
-    newAccount: S,
-    newMember: j
+    newAccount: j,
+    newMember: S
   } = (0, l.e7)([d.Z], () => d.Z.getCheck(r), [r]), E = 0 === t ? g.intl.string(g.t["6zY8BA"]) : null, x = null, P = null;
-  return (0 === t && (O ? (x = g.intl.string(g.t.IRxUlJ), P = g.intl.string(g.t.fiNVio)) : C ? (x = g.intl.string(g.t.vW8iUF), P = g.intl.string(g.t["50gfOj"])) : v ? (x = g.intl.string(g.t.vdSOp6), P = g.intl.string(g.t.lm1UKi)) : j ? (x = g.intl.formatToPlainString(g.t.v1ktYW, {
+  return (0 === t && (v ? (x = g.intl.string(g.t.IRxUlJ), P = g.intl.string(g.t.fiNVio)) : C ? (x = g.intl.string(g.t.vW8iUF), P = g.intl.string(g.t["50gfOj"])) : _ ? (x = g.intl.string(g.t.vdSOp6), P = g.intl.string(g.t.lm1UKi)) : S ? (x = g.intl.formatToPlainString(g.t.v1ktYW, {
     min: p.YeM.MEMBER_AGE
-  }), P = g.intl.string(g.t.BddRzc)) : S && (x = g.intl.formatToPlainString(g.t["sncw4+"], {
+  }), P = g.intl.string(g.t.BddRzc)) : j && (x = g.intl.formatToPlainString(g.t["sncw4+"], {
     min: p.YeM.ACCOUNT_AGE
   }), P = g.intl.string(g.t.BddRzc))), null == E || null == x) ? null : (0, i.jsxs)(o.VqE, {
     className: m.container,
-    "aria-labelledby": y,
+    "aria-labelledby": O,
     children: [(0, i.jsx)("img", {
       alt: "",
       className: m.image,
@@ -64,7 +64,7 @@ let y = e => {
       className: m.content,
       children: [(0, i.jsx)(o.X6q, {
         variant: "heading-md/semibold",
-        id: y,
+        id: O,
         children: E
       }), (0, i.jsx)(o.Text, {
         color: "header-secondary",
@@ -74,7 +74,7 @@ let y = e => {
         className: m.buttonContainer,
         children: [null != P ? (0, i.jsx)(o.zxk, {
           onClick: () => {
-            O ? a.j() : C ? (0, o.ZDy)(async () => {
+            v ? a.j() : C ? (0, o.ZDy)(async () => {
               let {
                 default: e
               } = await Promise.resolve().then(n.bind(n, 607018));
@@ -83,7 +83,7 @@ let y = e => {
               }, t))
             }, {
               modalKey: f.M
-            }) : v && (s.Z.verifyResend(), (0, o.h7j)(e => {
+            }) : _ && (s.Z.verifyResend(), (0, o.h7j)(e => {
               var t, n, r;
               return (0, i.jsx)(o.ConfirmModal, (n = b({
                 header: g.intl.string(g.t.LykQYm),
@@ -106,12 +106,12 @@ let y = e => {
               })(Object(r)).forEach(function(e) {
                 Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
               }), n))
-            })), _()
+            })), y()
           },
           className: m.primaryButton,
           children: P
-        }) : null, O || C || v ? (0, i.jsx)(o.zxk, {
-          onClick: _,
+        }) : null, v || C || _ ? (0, i.jsx)(o.zxk, {
+          onClick: y,
           look: o.zxk.Looks.BLANK,
           className: m.cancel,
           children: g.intl.string(g.t.oEAioK)

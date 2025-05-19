@@ -1,74 +1,74 @@
-/** Chunk was on 84921 **/
-n.d(t, {
-  Ux: () => N,
-  gS: () => S,
-  ww: () => p
-}), n(997841);
-var r = n(73800),
-  i = n(399606),
-  l = n(230711),
-  o = n(18438),
-  a = n(314897),
-  s = n(271383),
-  c = n(430824),
-  u = n(496675),
-  d = n(914010),
-  E = n(715903),
-  _ = n(981631),
-  I = n(372897),
-  O = n(526761),
-  T = n(388032);
+/** Chunk was on 40390 **/
+e.d(t, {
+  Ux: () => f,
+  gS: () => k,
+  ww: () => x
+}), e(997841);
+var i = e(73800),
+  l = e(399606),
+  r = e(230711),
+  s = e(18438),
+  o = e(314897),
+  a = e(271383),
+  d = e(430824),
+  u = e(496675),
+  c = e(914010),
+  _ = e(715903),
+  g = e(981631),
+  h = e(372897),
+  N = e(526761),
+  I = e(388032);
 
-function N(e) {
-  return (0, i.e7)([a.default, s.ZP], () => {
-    if (null == e) return !1;
-    let t = a.default.getId();
-    return (0, E.EY)(s.ZP.getMember(e, t))
-  }, [e])
+function f(n) {
+  return (0, l.e7)([o.default, a.ZP], () => {
+    if (null == n) return !1;
+    let t = o.default.getId();
+    return (0, _.EY)(a.ZP.getMember(n, t))
+  }, [n])
 }
 
-function S(e) {
-  return (0, i.cj)([a.default, s.ZP, d.Z, c.Z], () => {
+function k(n) {
+  return (0, l.cj)([o.default, a.ZP, c.Z, d.Z], () => {
     let t = {
         nick: void 0,
         bio: void 0
       },
-      n = d.Z.getGuildId(),
-      r = null != e ? e : n,
-      i = c.Z.getGuild(r);
-    if (null == i || null == r) return t;
-    let l = a.default.getId(),
-      o = s.ZP.getMember(r, l),
-      u = (0, E.Ow)(null == o ? void 0 : o.flags);
+      e = c.Z.getGuildId(),
+      i = null != n ? n : e,
+      l = d.Z.getGuild(i);
+    if (null == l || null == i) return t;
+    let r = o.default.getId(),
+      s = a.ZP.getMember(i, r),
+      u = (0, _.Ow)(null == s ? void 0 : s.flags);
     if (0 === u.size) return t;
-    if (u.has(I.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME))
-      if (null == e) {
-        var _;
-        t.nick = [T.intl.formatToPlainString(T.t.WBUh3N, {
-          guildName: null != (_ = i.name) ? _ : ""
+    if (u.has(h.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME))
+      if (null == n) {
+        var g;
+        t.nick = [I.intl.formatToPlainString(I.t.WBUh3N, {
+          guildName: null != (g = l.name) ? g : ""
         })]
-      } else t.nick = [T.intl.string(T.t.EPZCrK)];
-    return u.has(I.q.AUTOMOD_QUARANTINED_BIO) && (t.bio = [T.intl.string(T.t.dZh1v7)]), t
-  }, [e])
+      } else t.nick = [I.intl.string(I.t.EPZCrK)];
+    return u.has(h.q.AUTOMOD_QUARANTINED_BIO) && (t.bio = [I.intl.string(I.t.dZh1v7)]), t
+  }, [n])
 }
 
-function p(e) {
+function x(n) {
   let {
     guildId: t,
-    scrollPosition: n,
-    analyticsLocation: a,
-    analyticsLocations: s,
-    openWithoutBackstack: d
-  } = e, E = (0, i.e7)([c.Z], () => c.Z.getGuild(t), [t]), I = (0, i.e7)([u.Z], () => null != E && u.Z.can(_.Plq.CHANGE_NICKNAME, E), [E]);
-  return [r.useCallback(() => {
-    if (null == E) return;
-    let e = _.oAB.PROFILE_CUSTOMIZATION,
-      t = O.NB.GUILD;
-    I ? (0, o.Fq)(E) : t = O.NB.USER_PROFILE, l.Z.open(e, t, {
-      scrollPosition: n,
-      analyticsLocation: a,
-      analyticsLocations: s,
-      openWithoutBackstack: d
+    scrollPosition: e,
+    analyticsLocation: o,
+    analyticsLocations: a,
+    openWithoutBackstack: c
+  } = n, _ = (0, l.e7)([d.Z], () => d.Z.getGuild(t), [t]), h = (0, l.e7)([u.Z], () => null != _ && u.Z.can(g.Plq.CHANGE_NICKNAME, _), [_]);
+  return [i.useCallback(() => {
+    if (null == _) return;
+    let n = g.oAB.PROFILE_CUSTOMIZATION,
+      t = N.NB.GUILD;
+    h ? (0, s.Fq)(_) : t = N.NB.USER_PROFILE, r.Z.open(n, t, {
+      scrollPosition: e,
+      analyticsLocation: o,
+      analyticsLocations: a,
+      openWithoutBackstack: c
     })
-  }, [I, n, a, s, d, E]), I]
+  }, [h, e, o, a, c, _]), h]
 }

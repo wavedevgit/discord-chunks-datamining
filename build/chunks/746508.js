@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => eX
+  Z: () => eQ
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -49,8 +49,8 @@ var r = n(255367),
   Y = n(917405),
   K = n(641015),
   q = n(848543),
-  Q = n(565799),
-  X = n(501655),
+  X = n(565799),
+  Q = n(501655),
   J = n(368442),
   $ = n(600518),
   ee = n(485287),
@@ -570,7 +570,7 @@ class eq extends i.PureComponent {
         let {
           isShown: i
         } = n;
-        return (0, r.jsx)(eQ, {
+        return (0, r.jsx)(eX, {
           popoutProps: t,
           isShown: i,
           noiseCancellationActive: e,
@@ -715,7 +715,7 @@ class eq extends i.PureComponent {
   }
 }
 
-function eQ(e) {
+function eX(e) {
   let {
     popoutProps: t,
     isShown: n,
@@ -747,7 +747,7 @@ function eQ(e) {
     })
   }))
 }
-let eX = (0, E.Z)(function(e) {
+let eQ = (0, E.Z)(function(e) {
   let t = (0, k.Q3)("ConnectedRTCConnection"),
     n = (0, U.Z)(),
     l = (0, u.e7)([M.Z], () => M.Z.getAwaitingRemoteSessionInfo()),
@@ -783,7 +783,7 @@ let eX = (0, E.Z)(function(e) {
     O = (0, u.e7)([z.Z], () => z.Z.isViewingRoles(p)),
     y = (0, u.e7)([eE.Z], () => O && !eE.Z.can(ex.Plq.VIEW_CHANNEL, d), [O, d]),
     I = er.Fg.useSetting(),
-    [C, S, T] = (0, u.Wu)([eC.ZP, Q.Z], () => (null == d ? void 0 : d.isGuildStageVoice()) ? [Q.Z.getMutableParticipants(d.id, X.pV.SPEAKER), Q.Z.getParticipantsVersion(d.id), null] : [null, null, null != d ? eC.ZP.getVoiceStatesForChannel(d) : null], [d]),
+    [C, S, T] = (0, u.Wu)([eC.ZP, X.Z], () => (null == d ? void 0 : d.isGuildStageVoice()) ? [X.Z.getMutableParticipants(d.id, Q.pV.SPEAKER), X.Z.getParticipantsVersion(d.id), null] : [null, null, null != d ? eC.ZP.getVoiceStatesForChannel(d) : null], [d]),
     P = i.useMemo(() => {
       var e, t;
       return null != (t = null != (e = null == C ? void 0 : C.map(e => {

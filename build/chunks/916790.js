@@ -18,8 +18,8 @@ var a = n(255367),
   b = n(572004),
   f = n(55935),
   v = n(428530),
-  j = n(257785),
-  g = n(484036),
+  g = n(257785),
+  j = n(484036),
   _ = n(681619),
   y = n(621060),
   C = n(981631),
@@ -29,7 +29,7 @@ var a = n(255367),
 function E(e) {
   return parseFloat(e.toFixed(3))
 }
-let S = [{
+let T = [{
   key: "store",
   cellClassName: O.actionColumn,
   render(e) {
@@ -49,7 +49,7 @@ let S = [{
   }
 }];
 
-function T(e) {
+function S(e) {
   let {
     actionLog: t
   } = e, n = r.useMemo(() => t.traces.map(e => ({
@@ -58,7 +58,7 @@ function T(e) {
   })), [t]);
   return (0, a.jsx)(d.zJl, {
     children: (0, a.jsx)(_.Z, {
-      columns: S,
+      columns: T,
       data: n
     })
   })
@@ -73,16 +73,16 @@ let P = [{
       actionLog: n
     } = e, r = c()(n.createdAt);
     return (0, a.jsxs)(a.Fragment, {
-      children: [(0, a.jsxs)(j.E, {
+      children: [(0, a.jsxs)(g.E, {
         className: O.actionProperties,
-        children: [(0, a.jsx)(j.Z9, {
+        children: [(0, a.jsx)(g.Z9, {
           name: "Created at",
           children: (0, a.jsx)("time", {
             dateTime: null == (t = n.createdAt) ? void 0 : t.toISOString(),
             title: (0, f.vc)(r, "LLLL"),
             children: (0, f.Y4)(r)
           })
-        }), (0, a.jsxs)(j.Z9, {
+        }), (0, a.jsxs)(g.Z9, {
           name: "Total Time",
           children: [E(n.totalTime), " ms"]
         })]
@@ -102,7 +102,7 @@ let P = [{
     let {
       actionLog: t
     } = e;
-    return (0, a.jsx)(T, {
+    return (0, a.jsx)(S, {
       actionLog: t
     })
   }
@@ -150,7 +150,7 @@ function k(e) {
   } = (0, y.ZP)({
     tabs: l
   }, [l]);
-  return (0, a.jsxs)(g.Z, {
+  return (0, a.jsxs)(j.Z, {
     className: O.subPanel,
     minHeight: 100,
     initialHeight: n,
@@ -238,11 +238,11 @@ function R() {
     [c, m] = r.useState(o),
     [x, p] = r.useState(o),
     [b, f] = r.useState(!1),
-    [v, j] = r.useState(),
-    g = r.useCallback(e => {
+    [v, g] = r.useState(),
+    j = r.useCallback(e => {
       p(e)
     }, []);
-  (0, h.BO)(t, b ? c : o, g, I);
+  (0, h.BO)(t, b ? c : o, j, I);
   let y = r.useCallback(e => {
       m(o), f(e)
     }, [o]),
@@ -271,7 +271,7 @@ function R() {
       columns: w,
       data: E,
       selectedRowKey: null == v ? void 0 : v.id.toString(),
-      onClickRow: e => j(e.actionLog)
+      onClickRow: e => g(e.actionLog)
     }), null != v && (0, a.jsx)(k, {
       actionLog: v,
       initialHeight: null != e.current ? e.current.clientHeight / 2 : 300

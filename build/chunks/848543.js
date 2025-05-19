@@ -171,12 +171,12 @@ function A(e) {
         })
       }))
     })
-  }), Q = i.useCallback(() => {
+  }), X = i.useCallback(() => {
     R || k(!D)
   }, [R, D]);
   return (0, O.yp)({
     event: C.CkL.TOGGLE_SOUNDBOARD,
-    handler: Q
+    handler: X
   }), (0, r.jsx)(h.Gt, {
     value: V,
     children: (0, r.jsx)(u.ua7, {

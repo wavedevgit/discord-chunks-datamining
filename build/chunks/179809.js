@@ -1,4 +1,4 @@
-/** Chunk was on 35948 **/
+/** Chunk was on 1022 **/
 n.d(t, {
   Z: () => N
 }), n(388685);
@@ -17,13 +17,13 @@ var r = n(255367),
   g = n(771845),
   m = n(624138),
   b = n(727258),
-  _ = n(276952),
-  y = n(199540),
-  O = n(40153),
-  v = n(252686),
+  y = n(276952),
+  O = n(199540),
+  v = n(40153),
+  _ = n(252686),
   C = n(682662),
-  S = n(662146),
-  j = n(981631),
+  j = n(662146),
+  S = n(981631),
   E = n(388032),
   x = n(728492),
   P = n(335426);
@@ -53,8 +53,8 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
       "aria-posinset": H
     } = e, {
       id: F,
-      name: W,
-      children: z
+      name: z,
+      children: W
     } = t, [Y, K] = i.useState(!1), [q, Q] = i.useState(!1), X = Y || q, J = (0, f.Ml)("FolderItem");
     i.useEffect(() => {
       R && K(!1)
@@ -77,12 +77,12 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
       Q(e)
     }, []), en = i.useCallback(e => {
       ("ArrowRight" === e.key && !a || "ArrowLeft" === e.key && a) && k()
-    }, [k, a]), er = null != W && "" !== W ? W : null != T && "" !== T ? T : E.intl.string(E.t.xV9hVl), ei = (0, c.Ie)("".concat(F)), el = "folder-items-".concat(F), eo = function(e) {
+    }, [k, a]), er = null != z && "" !== z ? z : null != T && "" !== T ? T : E.intl.string(E.t.xV9hVl), ei = (0, c.Ie)("".concat(F)), el = "folder-items-".concat(F), eo = function(e) {
       let t = (0, h.dQu)(h.TVs.modules.guildbar.FOLDER_SIZE),
         n = (0, h.dQu)(h.TVs.modules.guildbar.AVATAR_SIZE),
         r = (0, h.dQu)(h.TVs.space.SPACE_XS);
       return e * (n + r) - r + (r - (t - n) / 2) + (0, h.dQu)(h.TVs.space.SPACE_4)
-    }(z.length), es = (0, h.Yzy)(!$ && a, {
+    }(W.length), es = (0, h.Yzy)(!$ && a, {
       from: {
         height: 0
       },
@@ -96,13 +96,13 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
         duration: I
       }
     }), ea = i.useCallback(e => null == n ? void 0 : n(F, e), [n, F]), ec = (0, r.jsxs)(C.H, {
-      children: [(0, r.jsx)(_.Z, {
+      children: [(0, r.jsx)(y.Z, {
         disabled: $ || a,
         hovered: Y,
         selected: l,
         unread: Z,
         className: P.pill
-      }), (0, r.jsx)(S.Z, {
+      }), (0, r.jsx)(j.Z, {
         text: er,
         disabled: R,
         selected: l,
@@ -116,9 +116,9 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
             [P.wobble]: !$ && q && !a
           }),
           "data-dnd-name": er,
-          children: $ ? (0, r.jsx)(v.Z, {
+          children: $ ? (0, r.jsx)(_.Z, {
             isFolder: !0
-          }) : (0, r.jsx)(y.Z, {
+          }) : (0, r.jsx)(O.Z, {
             folderNode: t,
             expanded: a,
             sorting: R,
@@ -137,12 +137,12 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
             "aria-posinset": H
           })
         })
-      }), A ? (0, r.jsx)(O.ZP, {
+      }), A ? (0, r.jsx)(v.ZP, {
         name: er,
         targetNode: t,
         onDragOverChanged: et
       }) : null]
-    }), eu = null != t.color ? t.color : j.Wyy, ed = eu === j.Wyy ? void 0 : (0, u.Rf)(eu);
+    }), eu = null != t.color ? t.color : S.Wyy, ed = eu === S.Wyy ? void 0 : (0, u.Rf)(eu);
     return (0, r.jsxs)("div", {
       ref: ea,
       className: o()(x.folderGroup, {
@@ -169,9 +169,9 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
             height: e.height.to(e => e * eo)
           },
           "aria-label": t.name,
-          children: z.map((t, n) => U(t, n, z.length, e.height))
+          children: W.map((t, n) => U(t, n, W.length, e.height))
         }, l)
-      }), A && a ? (0, r.jsx)(O.Zu, {
+      }), A && a ? (0, r.jsx)(v.Zu, {
         name: er,
         targetNode: t
       }) : null]

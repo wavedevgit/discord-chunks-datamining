@@ -1,33 +1,33 @@
-/** Chunk was on 94928 **/
+/** Chunk was on 20185 **/
 "use strict";
 n.d(t, {
   Z: () => o
 });
 var r = n(255367);
 n(73800);
-var s = n(692547),
-  i = n(313201);
+var i = n(692547),
+  s = n(313201);
 
 function o(e) {
   var t, n, {
       isSelected: o
     } = e,
-    l = function(e, t) {
+    a = function(e, t) {
       if (null == e) return {};
-      var n, r, s = function(e, t) {
+      var n, r, i = function(e, t) {
         if (null == e) return {};
-        var n, r, s = {},
-          i = Object.keys(e);
-        for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (s[n] = e[n]);
-        return s
+        var n, r, i = {},
+          s = Object.keys(e);
+        for (r = 0; r < s.length; r++) n = s[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n])
+        var s = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
-      return s
+      return i
     }(e, ["isSelected"]);
-  let a = (0, i.Dt)();
+  let l = (0, s.Dt)();
   return (0, r.jsxs)("svg", (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -45,12 +45,12 @@ function o(e) {
       })
     }
     return e
-  }({}, l), n = n = {
+  }({}, a), n = n = {
     width: "16",
     height: "16",
     viewBox: "0 0 16 16",
     xmlns: "http://www.w3.org/2000/svg",
-    fill: "url(#".concat(a, ")"),
+    fill: "url(#".concat(l, ")"),
     children: [(0, r.jsx)("path", {
       d: "M10 9.33332C10.7364 9.33332 11.3334 8.73637 11.3334 7.99999C11.3334 7.26361 10.7364 6.66666 10 6.66666C9.26364 6.66666 8.66669 7.26361 8.66669 7.99999C8.66669 8.73637 9.26364 9.33332 10 9.33332Z",
       fill: "url(#paint0_linear_6413_12612)"
@@ -71,13 +71,13 @@ function o(e) {
         y2: "0.127441",
         gradientUnits: "userSpaceOnUse",
         children: [(0, r.jsx)("stop", {
-          stopColor: o ? s.Z.unsafe_rawColors.WHITE_500.css : s.Z.unsafe_rawColors.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS.css
+          stopColor: o ? i.Z.unsafe_rawColors.WHITE_500.css : i.Z.unsafe_rawColors.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS.css
         }), (0, r.jsx)("stop", {
           offset: "0.502368",
-          stopColor: o ? s.Z.unsafe_rawColors.WHITE_500.css : s.Z.unsafe_rawColors.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS_2.css
+          stopColor: o ? i.Z.unsafe_rawColors.WHITE_500.css : i.Z.unsafe_rawColors.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS_2.css
         }), (0, r.jsx)("stop", {
           offset: "1",
-          stopColor: o ? s.Z.unsafe_rawColors.WHITE_500.css : s.Z.unsafe_rawColors.PREMIUM_TIER_2_PINK_FOR_GRADIENTS.css
+          stopColor: o ? i.Z.unsafe_rawColors.WHITE_500.css : i.Z.unsafe_rawColors.PREMIUM_TIER_2_PINK_FOR_GRADIENTS.css
         })]
       })
     })]

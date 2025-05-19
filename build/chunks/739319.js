@@ -1,11 +1,11 @@
-/** Chunk was on 21924 **/
+/** Chunk was on 85634 **/
 n.d(t, {
   Z: () => m
 }), n(388685);
 var r = n(255367),
-  l = n(73800),
+  a = n(73800),
   i = n(120356),
-  a = n.n(i),
+  l = n.n(i),
   o = n(481060),
   s = n(454585),
   c = n(572004),
@@ -22,7 +22,7 @@ function m(e) {
         is_localized: m
       }
     }
-  } = e, [p, x] = l.useState(!1), b = l.useRef(s.Z.reactParserFor(s.Z.defaultRules));
+  } = e, [p, _] = a.useState(!1), g = a.useRef(s.Z.reactParserFor(s.Z.defaultRules));
   return m ? (0, r.jsxs)("div", {
     className: u.container,
     children: [(0, r.jsx)(o.X6q, {
@@ -33,10 +33,10 @@ function m(e) {
     }), (0, r.jsx)(o.Text, {
       variant: "text-sm/normal",
       className: u.bodyText,
-      children: b.current(n)
+      children: g.current(n)
     }), (0, r.jsx)("div", {
       children: (0, r.jsxs)("div", {
-        className: a()(u.smsNumberContainer, {
+        className: l()(u.smsNumberContainer, {
           [u.copied]: p
         }),
         children: [(0, r.jsx)(o.Text, {
@@ -48,7 +48,7 @@ function m(e) {
           size: o.zxk.Sizes.SMALL,
           className: u.__invalid_trailingButton,
           onClick: () => {
-            (0, c.JG)(i, () => x(!0))
+            (0, c.JG)(i, () => _(!0))
           },
           color: o.zxk.Colors.PRIMARY,
           children: p ? d.intl.string(d.t["t5VZ8/"]) : d.intl.string(d.t.OpuAlJ)

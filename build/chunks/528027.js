@@ -1,15 +1,15 @@
-/** Chunk was on 94928 **/
+/** Chunk was on 20185 **/
 "use strict";
 n.d(t, {
   Z: () => d
 });
 var r = n(255367);
 n(73800);
-var s = n(120356),
-  i = n.n(s),
+var i = n(120356),
+  s = n.n(i),
   o = n(596454),
-  l = n(377171),
-  a = n(403910),
+  a = n(377171),
+  l = n(403910),
   c = n(549631),
   u = n(366523);
 
@@ -17,17 +17,17 @@ function d(e) {
   var t;
   let {
     guildId: n,
-    emojiId: s,
+    emojiId: i,
     emojiName: d,
-    className: f
-  } = e, p = (0, a.Z)(n, s);
-  return null != p || null != d ? (0, r.jsx)(o.Z, {
-    emojiId: null == p ? void 0 : p.id,
-    emojiName: null != d ? d : null == p ? void 0 : p.name,
-    animated: null != (t = null == p ? void 0 : p.animated) && t,
-    className: i()(u.emojiIcon, f)
+    className: p
+  } = e, f = (0, l.Z)(n, i);
+  return null != f || null != d ? (0, r.jsx)(o.Z, {
+    emojiId: null == f ? void 0 : f.id,
+    emojiName: null != d ? d : null == f ? void 0 : f.name,
+    animated: null != (t = null == f ? void 0 : f.animated) && t,
+    className: s()(u.emojiIcon, p)
   }) : (0, r.jsx)(c.Z, {
-    className: i()(u.emojiIcon, f),
-    color: l.Z.CREATOR_REVENUE_LOCKED_CHANNEL_ICON
+    className: s()(u.emojiIcon, p),
+    color: a.Z.CREATOR_REVENUE_LOCKED_CHANNEL_ICON
   })
 }

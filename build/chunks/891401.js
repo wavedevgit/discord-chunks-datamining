@@ -19,7 +19,7 @@ var a = n(255367),
   f = n(388032),
   v = n(145634);
 
-function j(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -38,7 +38,7 @@ function j(e) {
   return e
 }
 
-function g(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -75,10 +75,10 @@ function y() {
     E = r.useCallback(e => {
       N(null == l ? void 0 : l.wallpaperId, e.target.value)
     }, [null == l ? void 0 : l.wallpaperId]),
-    S = r.useCallback(e => {
+    T = r.useCallback(e => {
       O(null == l ? void 0 : l.wallpaperId, e.target.value)
     }, [null == l ? void 0 : l.wallpaperId]),
-    T = r.useCallback(() => C(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
+    S = r.useCallback(() => C(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
     P = r.useCallback(() => N(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
     k = r.useCallback(() => O(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
     w = r.useCallback(e => {
@@ -109,7 +109,7 @@ function y() {
         children: JSON.stringify(u.Z.getWallpaperById(s), null, 2)
       }), (0, a.jsx)(d.ua7, {
         text: "The opacity of the wallpaper.",
-        children: e => (0, a.jsx)(o.X6, g(j({
+        children: e => (0, a.jsx)(o.X6, j(g({
           className: i()(v.subheader, v.hasTooltip),
           variant: "heading-md/semibold"
         }, e), {
@@ -124,7 +124,7 @@ function y() {
         onValueChange: _
       }, "opacity-".concat(R)), (0, a.jsx)(d.ua7, {
         text: "The most prominent color in the wallpaper. This will be used to adjust the color tokens.",
-        children: e => (0, a.jsx)(o.X6, g(j({
+        children: e => (0, a.jsx)(o.X6, j(g({
           className: i()(v.subheader, v.hasTooltip),
           variant: "heading-md/semibold"
         }, e), {
@@ -143,12 +143,12 @@ function y() {
             size: "xs",
             color: "currentColor"
           }),
-          onClick: T,
+          onClick: S,
           className: v.removeButton
         })]
       }), (0, a.jsx)(d.ua7, {
         text: "The second most prominent color in the wallpaper. This will be used to adjust the color tokens.",
-        children: e => (0, a.jsx)(o.X6, g(j({
+        children: e => (0, a.jsx)(o.X6, j(g({
           className: i()(v.subheader, v.hasTooltip),
           variant: "heading-md/semibold"
         }, e), {
@@ -172,7 +172,7 @@ function y() {
         })]
       }), (0, a.jsx)(d.ua7, {
         text: "Controls how much the primary/secondary colors are mixed into the tokens.",
-        children: e => (0, a.jsx)(o.X6, g(j({
+        children: e => (0, a.jsx)(o.X6, j(g({
           className: i()(v.subheader, v.hasTooltip),
           variant: "heading-md/semibold"
         }, e), {
@@ -187,7 +187,7 @@ function y() {
         onValueChange: w
       }, "tokenMixAmount-".concat(Z)), (0, a.jsx)(d.ua7, {
         text: "The color used for hyperlinks.",
-        children: e => (0, a.jsx)(o.X6, g(j({
+        children: e => (0, a.jsx)(o.X6, j(g({
           className: i()(v.subheader, v.hasTooltip),
           variant: "heading-md/semibold"
         }, e), {
@@ -198,7 +198,7 @@ function y() {
         children: [(0, a.jsx)("input", {
           type: "color",
           value: p.link_color,
-          onChange: S
+          onChange: T
         }, "linkColor-".concat(p.link_color)), (0, a.jsx)(d.M0o, {
           color: "currentColor",
           tooltip: f.intl.string(f.t.N86XcH),

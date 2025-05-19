@@ -1,4 +1,4 @@
-/** Chunk was on 91245 **/
+/** Chunk was on 62134 **/
 "use strict";
 n.d(t, {
   Z: () => f
@@ -6,36 +6,36 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var o = n(481060),
-  a = n(493773),
+  l = n(493773),
   i = n(367907),
-  l = n(524444),
-  s = n(297047),
+  s = n(524444),
+  a = n(297047),
   c = n(592125),
   u = n(944486),
   d = n(626135),
   p = n(981631),
-  g = n(388032),
-  m = n(400822);
+  m = n(388032),
+  g = n(400822);
 let f = function(e) {
   let {
     guild: t,
     message: n,
     onClose: f
   } = e, b = c.Z.getChannel(u.Z.getChannelId(t.id));
-  return ((0, a.ZP)(() => {
+  return ((0, l.ZP)(() => {
     d.default.track(p.rMx.OPEN_POPOUT, {
       type: "New Member Badge Popout",
       guild_id: t.id,
       channel_id: null == b ? void 0 : b.id
     })
-  }), null == b) ? null : (0, r.jsx)(l.W_, {
-    className: m.messagePopoutContent,
+  }), null == b) ? null : (0, r.jsx)(s.W_, {
+    className: g.messagePopoutContent,
     children: (0, r.jsxs)("div", {
-      className: m.popoutContainer,
+      className: g.popoutContainer,
       children: [(0, r.jsxs)("div", {
-        className: m.mainContent,
+        className: g.mainContent,
         children: [(0, r.jsx)("div", {
-          className: m.iconContainer,
+          className: g.iconContainer,
           children: (0, r.jsx)(o.hg2, {
             size: "custom",
             color: "currentColor",
@@ -45,24 +45,24 @@ let f = function(e) {
         }), (0, r.jsxs)("div", {
           children: [(0, r.jsx)(o.X6q, {
             variant: "heading-md/semibold",
-            className: m.header,
-            children: g.intl.string(g.t["v/OYd3"])
+            className: g.header,
+            children: m.intl.string(m.t["v/OYd3"])
           }), (0, r.jsx)(o.Text, {
             variant: "text-sm/normal",
-            children: g.intl.string(g.t.Z85MlJ)
+            children: m.intl.string(m.t.Z85MlJ)
           })]
         })]
       }), (0, r.jsx)(o.zxk, {
         size: o.zxk.Sizes.SMALL,
         color: o.zxk.Colors.BRAND,
-        className: m.ctaButton,
+        className: g.ctaButton,
         fullWidth: !0,
         onClick: () => {
           i.ZP.trackWithMetadata(p.rMx.NEW_MEMBER_MENTION_CTA_CLICKED, {
             target_user_id: n.author.id
-          }), f(), (0, s.q)(n.author, b.id)
+          }), f(), (0, a.q)(n.author, b.id)
         },
-        children: g.intl.format(g.t["+xsVS0"], {
+        children: m.intl.format(m.t["+xsVS0"], {
           username: n.author.username
         })
       })]

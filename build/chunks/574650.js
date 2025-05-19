@@ -1,26 +1,26 @@
-/** Chunk was on 84921 **/
+/** Chunk was on 27632 **/
 n.d(t, {
   Z: () => P
 }), n(539854), n(388685);
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  l = n.n(i),
-  o = n(114858),
-  a = n(442837),
+  l = n.n(i);
+if (12633 == n.j) var o = n(114858);
+var a = n(442837),
   s = n(481060),
   c = n(430824),
   u = n(914010),
-  d = n(693546),
-  E = n(305325),
+  E = n(693546),
+  d = n(305325),
   _ = n(246364),
   I = n(983736),
   O = n(937111),
   T = n(981631),
   N = n(176505),
   S = n(388032),
-  p = n(246752),
-  R = n(240211);
+  R = n(246752),
+  p = n(240211);
 
 function A(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -40,29 +40,29 @@ function A(e) {
   }
   return e
 }
-let P = () => {
+let P = 12633 == n.j ? () => {
   var e, t;
   let i = (0, a.e7)([u.Z], () => u.Z.getGuildId(), []),
     P = (0, a.e7)([c.Z], () => c.Z.getGuild(i), [i]),
-    f = (0, a.e7)([O.Z], () => null != i ? O.Z.getRequest(i) : null, [i]),
-    C = (0, o.TH)(),
-    D = (null == (e = (0, o.LX)(C.pathname, T.Z5c.CHANNEL(null == P ? void 0 : P.id, N.oC.GUILD_ONBOARDING))) ? void 0 : e.isExact) === !0;
+    C = (0, a.e7)([O.Z], () => null != i ? O.Z.getRequest(i) : null, [i]),
+    f = (0, o.TH)(),
+    D = (null == (e = (0, o.LX)(f.pathname, T.Z5c.CHANNEL(null == P ? void 0 : P.id, N.oC.GUILD_ONBOARDING))) ? void 0 : e.isExact) === !0;
   if (null == P || !(0, I.Dc)(P) || D) return null;
-  let g = null != (t = null == f ? void 0 : f.applicationStatus) ? t : _.wB.STARTED,
+  let m = null != (t = null == C ? void 0 : C.applicationStatus) ? t : _.wB.STARTED,
+    g = null,
     y = null,
-    m = null,
     h = null,
-    b = [p.notice, R.notice];
-  switch (g) {
+    U = [R.notice, p.notice];
+  switch (m) {
     case _.wB.SUBMITTED:
-      y = S.intl.string(S.t["5iLvS0"]), m = S.intl.string(S.t.mqtdmZ), h = () => {
+      g = S.intl.string(S.t["5iLvS0"]), y = S.intl.string(S.t.mqtdmZ), h = () => {
         (0, s.h7j)(e => {
           var t, n;
           return (0, r.jsx)(s.ConfirmModal, (t = A({
             header: S.intl.string(S.t.aIz1oa),
             confirmText: S.intl.string(S.t["cY+Ooa"]),
             cancelText: S.intl.string(S.t["ETE/oK"]),
-            onConfirm: () => d.Z.removeGuildJoinRequest(P.id),
+            onConfirm: () => E.Z.removeGuildJoinRequest(P.id),
             confirmButtonColor: s.zxk.Colors.BRAND
           }, e), n = n = {
             children: (0, r.jsx)(s.Text, {
@@ -83,7 +83,7 @@ let P = () => {
       };
       break;
     case _.wB.REJECTED:
-      y = S.intl.string(S.t.lk30cX), m = S.intl.string(S.t["8RrsHh"]), h = () => {
+      g = S.intl.string(S.t.lk30cX), y = S.intl.string(S.t["8RrsHh"]), h = () => {
         (0, s.ZDy)(async () => {
           let {
             default: e
@@ -92,26 +92,26 @@ let P = () => {
             guildId: P.id
           }, t))
         })
-      }, b.push(p.error);
+      }, U.push(R.error);
       break;
     default:
-      y = S.intl.string(S.t.G5YKXF), m = S.intl.string(S.t["r8/DT0"]), h = () => {
-        (0, E.hk)(P.id)
+      g = S.intl.string(S.t.G5YKXF), y = S.intl.string(S.t["r8/DT0"]), h = () => {
+        (0, d.hk)(P.id)
       }
   }
   return (0, r.jsxs)("div", {
-    className: l()(...b),
+    className: l()(...U),
     children: [(0, r.jsx)(s.Text, {
-      className: p.header,
+      className: R.header,
       variant: "text-sm/normal",
-      children: y
+      children: g
     }), (0, r.jsx)(s.zxk, {
-      className: p.button,
+      className: R.button,
       look: s.zxk.Looks.OUTLINED,
       color: s.zxk.Colors.WHITE,
       size: s.zxk.Sizes.NONE,
       onClick: h,
-      children: m
+      children: y
     })]
   })
-}
+} : null

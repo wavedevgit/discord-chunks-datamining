@@ -1,4 +1,4 @@
-/** Chunk was on 35948 **/
+/** Chunk was on 1022 **/
 n.d(t, {
   E: () => em,
   j: () => eg
@@ -17,13 +17,13 @@ var r, i = n(255367),
   g = n(607070),
   m = n(100527),
   b = n(906732),
-  _ = n(313201),
-  y = n(540059),
-  O = n(362658),
-  v = n(583962),
+  y = n(313201),
+  O = n(540059),
+  v = n(362658),
+  _ = n(583962),
   C = n(915885),
-  S = n(258871),
-  j = n(216306),
+  j = n(258871),
+  S = n(216306),
   E = n(398758),
   x = n(486311),
   P = n(220444),
@@ -44,8 +44,8 @@ var r, i = n(255367),
   V = n(285573),
   H = n(995993),
   F = n(910595),
-  W = n(120818),
-  z = n(61642),
+  z = n(120818),
+  W = n(61642),
   Y = n(848442),
   K = n(53425),
   q = n(424785),
@@ -306,7 +306,7 @@ class ep extends(r = l.PureComponent) {
       guildChannelsVersion: t,
       showNewUnreadsBar: n
     } = this.props;
-    return (0, i.jsx)(_.FG, {
+    return (0, i.jsx)(y.FG, {
       children: r => (0, i.jsx)(d.y5t, {
         component: (0, i.jsx)(d.nn4, {
           children: (0, i.jsx)(d.H, {
@@ -476,7 +476,7 @@ class ep extends(r = l.PureComponent) {
       } = this.props, c = ed(s, a);
       if (e === D.wZ) {
         let e = n.getGuildActionSection();
-        return e.isEmpty() ? 0 : e.getRow(t) === en.z.GUILD_PREMIUM_PROGRESS_BAR ? e.getRows().length > 1 ? v.aR : v.PD : c
+        return e.isEmpty() ? 0 : e.getRow(t) === en.z.GUILD_PREMIUM_PROGRESS_BAR ? e.getRows().length > 1 ? _.aR : _.PD : c
       }
       if (n.isPlaceholderRow(e, t)) return 0;
       let u = n.getChannelFromSectionRow(e, t);
@@ -488,7 +488,7 @@ class ep extends(r = l.PureComponent) {
       if (h.record.type === ei.d4z.GUILD_CATEGORY) return 40;
       let {
         isFavoritesPerk: f
-      } = O.Z.getCurrentConfig({
+      } = v.Z.getCurrentConfig({
         location: "channel_list"
       }, {
         autoTrackExposure: !0
@@ -531,7 +531,7 @@ class ep extends(r = l.PureComponent) {
       if (null == r) return;
       let i = null,
         l = r.getShownChannelAndThreadIds();
-      null != n && l.includes(n) && (i = (0, j.KY)(t)), (0, j.Uo)(e.id, l, i)
+      null != n && l.includes(n) && (i = (0, S.KY)(t)), (0, S.Uo)(e.id, l, i)
     }), ea(this, "renderSection", e => {
       let {
         section: t
@@ -573,13 +573,13 @@ class ep extends(r = l.PureComponent) {
         if (null == t) return null;
         switch (t) {
           case en.z.GUILD_HUB_HEADER_OPTIONS:
-            return (0, i.jsx)(S.Z, {
+            return (0, i.jsx)(j.Z, {
               guild: r,
               channel: A.ZP.getDefaultChannel(r.id)
             }, en.z.GUILD_HUB_HEADER_OPTIONS);
           case en.z.GUILD_PREMIUM_PROGRESS_BAR:
             let l = e.getRows();
-            return (0, i.jsx)(v.ZP, {
+            return (0, i.jsx)(_.ZP, {
               guild: r,
               withMargin: l.length > 1
             }, en.z.GUILD_PREMIUM_PROGRESS_BAR);
@@ -594,7 +594,7 @@ class ep extends(r = l.PureComponent) {
               selected: s === en.z.GUILD_SCHEDULED_EVENTS
             }, en.z.GUILD_SCHEDULED_EVENTS);
           case en.z.GUILD_ROLE_SUBSCRIPTIONS:
-            return (0, i.jsx)(z.Z, {
+            return (0, i.jsx)(W.Z, {
               guild: r,
               selected: s === el.oC.ROLE_SUBSCRIPTIONS
             }, en.z.GUILD_ROLE_SUBSCRIPTIONS);
@@ -604,7 +604,7 @@ class ep extends(r = l.PureComponent) {
               selected: s === el.oC.GUILD_SHOP
             }, en.z.GUILD_SHOP);
           case en.z.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR:
-            return (0, i.jsx)(W.T, {
+            return (0, i.jsx)(z.T, {
               guild: r
             });
           case en.z.CHANNELS_AND_ROLES:
@@ -637,9 +637,9 @@ class ep extends(r = l.PureComponent) {
       if (null == m) return null;
       let {
         category: b,
-        channel: _
-      } = m, y = b instanceof D.VR, O = _.record, j = "".concat(t).concat(_.id);
-      switch (O.type) {
+        channel: y
+      } = m, O = b instanceof D.VR, v = y.record, S = "".concat(t).concat(y.id);
+      switch (v.type) {
         case ei.d4z.GUILD_ANNOUNCEMENT:
         case ei.d4z.GUILD_TEXT:
         case ei.d4z.GUILD_FORUM:
@@ -648,79 +648,79 @@ class ep extends(r = l.PureComponent) {
         case ei.d4z.GROUP_DM:
           return (0, i.jsxs)(l.Fragment, {
             children: [(0, i.jsx)(X.Z, {
-              channel: O,
+              channel: v,
               guild: r,
-              position: _.position,
-              selected: s === _.id,
-              muted: _.isMuted,
-              subtitle: _.subtitle,
+              position: y.position,
+              selected: s === y.id,
+              muted: y.isMuted,
+              subtitle: y.subtitle,
               disableManageChannels: h,
               canBeNewChannel: f && t === u.recentsSectionNumber,
-              isFavoriteCategory: y,
+              isFavoriteCategory: O,
               withGuildIcon: g
-            }), _.threadCount > 0 ? (0, i.jsx)(K.Z, {
+            }), y.threadCount > 0 ? (0, i.jsx)(K.Z, {
               withGuildIcon: g,
-              channel: O,
-              sortedThreadIds: _.threadIds,
-              selectedChannel: null != o && (o.id === _.id || o.parent_id === O.id) ? o : null,
-              selectedVoiceChannelId: (null == a ? void 0 : a.parent_id) === O.id ? c : null
+              channel: v,
+              sortedThreadIds: y.threadIds,
+              selectedChannel: null != o && (o.id === y.id || o.parent_id === v.id) ? o : null,
+              selectedVoiceChannelId: (null == a ? void 0 : a.parent_id) === v.id ? c : null
             }) : null]
-          }, j);
+          }, S);
         case ei.d4z.GUILD_STAGE_VOICE:
           var E, P;
           return (0, i.jsx)(q.Z, {
-            channel: O,
+            channel: v,
             guild: r,
-            position: _.position,
-            selected: s === _.id,
-            connected: c === _.id,
-            collapsed: _.isCollapsed || b.isCollapsed,
-            voiceStates: null != (E = d[_.id]) ? E : [],
-            speakerVoiceStates: null != (P = p[_.id]) ? P : [],
+            position: y.position,
+            selected: s === y.id,
+            connected: c === y.id,
+            collapsed: y.isCollapsed || b.isCollapsed,
+            voiceStates: null != (E = d[y.id]) ? E : [],
+            speakerVoiceStates: null != (P = p[y.id]) ? P : [],
             disableManageChannels: h,
-            isFavoriteCategory: y
-          }, j);
+            isFavoriteCategory: O
+          }, S);
         case ei.d4z.GUILD_VOICE:
           return (0, i.jsx)(et.Z, {
-            channel: O,
+            channel: v,
             guild: r,
-            position: _.position,
-            selected: s === _.id,
-            connected: c === _.id,
-            collapsed: _.isCollapsed || b.isCollapsed,
-            voiceStates: d[_.id],
-            subtitle: _.subtitle,
+            position: y.position,
+            selected: s === y.id,
+            connected: c === y.id,
+            collapsed: y.isCollapsed || b.isCollapsed,
+            voiceStates: d[y.id],
+            subtitle: y.subtitle,
             disableManageChannels: h,
-            showTutorial: _.isFirstVoiceChannel,
-            isFavoriteCategory: y,
+            showTutorial: y.isFirstVoiceChannel,
+            isFavoriteCategory: O,
             withGuildIcon: g
-          }, j);
+          }, S);
         case ei.d4z.GUILD_STORE:
           return (0, i.jsx)(Q.Z, {
-            channel: O,
+            channel: v,
             guild: r,
-            position: _.position,
-            selected: s === _.id
-          }, j);
+            position: y.position,
+            selected: s === y.id
+          }, S);
         case ei.d4z.GUILD_CATEGORY:
           if (t !== u.voiceChannelsSectionNumber) return null;
           return (0, i.jsx)(U.kw, {
-            channel: O
-          }, "readonly-".concat(O.id));
+            channel: v
+          }, "readonly-".concat(v.id));
         case ei.d4z.PUBLIC_THREAD:
         case ei.d4z.PRIVATE_THREAD:
           return (0, i.jsx)(X.Z, {
-            channel: O,
+            channel: v,
             guild: r,
-            position: _.position,
-            selected: s === _.id,
-            muted: _.isMuted,
-            subtitle: _.subtitle,
+            position: y.position,
+            selected: s === y.id,
+            muted: y.isMuted,
+            subtitle: y.subtitle,
             disableManageChannels: h,
             canBeNewChannel: !1,
             isFavoriteCategory: !1,
             forceTopLevelThread: !0
-          }, j);
+          }, S);
         default:
           return null
       }
@@ -782,8 +782,8 @@ let ef = e => {
     selectedVoiceChannelId: r
   } = e, o = (0, u.e7)([g.Z], () => g.Z.keyboardModeEnabled), {
     analyticsLocations: s
-  } = (0, b.ZP)(m.Z.GUILD_CHANNEL_LIST), d = (0, u.e7)([Z.Z], () => Z.Z.getChannel(n)), h = (0, u.e7)([Z.Z], () => Z.Z.getChannel(r)), p = (0, u.e7)([R.Z], () => R.Z.getGuildId()), _ = (0, E.DM)(t), O = l.useRef(null), v = l.useCallback((e, t) => {
-    let n = O.current;
+  } = (0, b.ZP)(m.Z.GUILD_CHANNEL_LIST), d = (0, u.e7)([Z.Z], () => Z.Z.getChannel(n)), h = (0, u.e7)([Z.Z], () => Z.Z.getChannel(r)), p = (0, u.e7)([R.Z], () => R.Z.getGuildId()), y = (0, E.DM)(t), v = l.useRef(null), _ = l.useCallback((e, t) => {
+    let n = v.current;
     if (null != n)
       if (ei.Xyh.test(t) || (0, el.AB)(t)) n.scrollToChannel(t, !1, 2 * er.yE, () => {
         requestAnimationFrame(() => {
@@ -796,40 +796,40 @@ let ef = e => {
         null == (r = document.querySelector(e)) || r.focus()
       }
   }, []), C = l.useCallback(() => new Promise(e => {
-    let t = O.current;
+    let t = v.current;
     if (null == t) return e();
     t.scrollTo(0, () => requestAnimationFrame(() => e()))
-  }), []), S = l.useCallback(() => new Promise(e => {
-    let t = O.current;
+  }), []), j = l.useCallback(() => new Promise(e => {
+    let t = v.current;
     if (null == t) return e();
     t.scrollTo(Number.MAX_SAFE_INTEGER, () => requestAnimationFrame(() => e()))
-  }), []), j = (0, c.ZP)({
+  }), []), S = (0, c.ZP)({
     id: "channels",
     defaultFocused: null != n ? n : void 0,
     isEnabled: o,
-    setFocus: v,
+    setFocus: _,
     scrollToStart: C,
-    scrollToEnd: S
-  }), x = j.setFocus;
+    scrollToEnd: j
+  }), x = S.setFocus;
   l.useEffect(() => {
     null != n && x(n)
   }, [n, x]);
   let P = (0, I.Z)(t),
-    w = (0, y.Q3)("NavigableChannels");
+    w = (0, O.Q3)("NavigableChannels");
   return (0, i.jsx)(b.Gt, {
     value: s,
     children: (0, i.jsx)(f.Z, {
       section: ei.jXE.GUILD_CHANNEL_LIST,
       children: (0, i.jsx)(a.bG, {
-        navigator: j,
+        navigator: S,
         children: (0, i.jsx)(ep, eu(ec({}, e), {
-          listNavigator: j,
-          ref: O,
+          listNavigator: S,
+          ref: v,
           selectedChannel: d,
           selectedVoiceChannel: h,
           stageChannelSpeakerVoiceStates: P,
           selectedGuildId: p,
-          optInEnabled: _,
+          optInEnabled: y,
           isRefreshEnabled: w
         }))
       })
@@ -841,7 +841,7 @@ function eg(e) {
   let t = (0, k.o)(),
     {
       isFavoritesPerk: n
-    } = (0, O.z)("favorites-channel-list"),
+    } = (0, v.z)("favorites-channel-list"),
     {
       density: r
     } = (0, d.TCT)();
@@ -858,7 +858,7 @@ function em(e) {
     n = (0, u.cj)([L.Z], () => L.Z.getGuild(e.guildId, {
       guildActionRows: t
     })),
-    r = (0, y.Q3)("GuildChannelList"),
+    r = (0, O.Q3)("GuildChannelList"),
     {
       density: l
     } = (0, d.TCT)();

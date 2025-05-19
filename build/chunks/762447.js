@@ -1,4 +1,4 @@
-/** Chunk was on 35948 **/
+/** Chunk was on 1022 **/
 e.exports = {
   tutorial: "tutorial__73f2a",
   shown: "shown__73f2a",

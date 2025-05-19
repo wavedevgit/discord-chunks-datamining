@@ -49,8 +49,8 @@ var r = n(255367),
   Y = n(10401),
   K = n(970731),
   q = n(210887),
-  Q = n(592125),
-  X = n(796974),
+  X = n(592125),
+  Q = n(796974),
   J = n(486472),
   $ = n(984933),
   ee = n(650774),
@@ -515,7 +515,7 @@ function eT(e) {
   } = e, o = (0, d.e7)([et.Z], () => et.Z.getGuild(n));
   (0, _.J_)(n);
   let c = (0, A.Z)(n),
-    h = (0, d.e7)([X.Z], () => X.Z.getGuildDimensions(n).scrollTo),
+    h = (0, d.e7)([Q.Z], () => Q.Z.getGuildDimensions(n).scrollTo),
     g = (0, d.e7)([el.Z], () => el.Z.getChannelId()),
     [m, b, C] = (0, d.Wu)([er.Z], () => [er.Z.can(ef.Plq.MANAGE_GUILD, o), er.Z.can(ef.Plq.MANAGE_ROLES, o), er.Z.can(ef.Plq.MANAGE_THREADS, o)]),
     j = (0, d.e7)([J.Z], () => J.Z.isUnavailable(n)),
@@ -536,7 +536,7 @@ function eT(e) {
   i.useEffect(() => {
     n !== $ && K(!F)
   }, [n, $, F]);
-  let [ed, ep] = (0, T.ZP)(e => [eg.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(em.R.GUILD_HEADER_TOOLTIPS)], u.X), eh = (0, v.Z)(o), eb = (0, f.s9z)(f.JQI), e_ = (0, d.e7)([en.Z], () => en.Z.hasLayers()), eE = (0, d.e7)([Y.Z], () => Y.Z.shouldShow(eC)), eO = m && (null == o ? void 0 : o.premiumProgressBarEnabled) === !1 && !es.s.isDisallowPopupsSet(), ey = (0, d.e7)([ee.Z], () => ee.Z.getMemberCount(n)), eI = m && null != ey && ey >= 30 && (null == o ? void 0 : o.premiumProgressBarEnabled) === !1 && !es.s.isDisallowPopupsSet(), ev = b && null != o && (o.hasFeature(ef.oNc.COMMUNITY) || null != ey && ey > 50), eS = (0, w.Z)(n), eT = (null == o ? void 0 : o.hasFeature(ef.oNc.HUB)) === !0, eP = m && (null == o ? void 0 : o.hasFeature(ef.oNc.DISCOVERABLE)) === !0, ej = (0, I.Q)(), eA = (m || (null == o ? void 0 : o.premiumTier) === ef.Eu4.NONE) && !es.s.isDisallowPopupsSet() && !ej, eZ = (0, d.e7)([D.Z, en.Z], () => null != o && null != R && m && !en.Z.hasLayers() && D.Z.shouldShowGuildTemplateDirtyTooltip(n)), ex = (0, d.e7)([Q.Z], () => Q.Z.getChannel(a)), {
+  let [ed, ep] = (0, T.ZP)(e => [eg.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(em.R.GUILD_HEADER_TOOLTIPS)], u.X), eh = (0, v.Z)(o), eb = (0, f.s9z)(f.JQI), e_ = (0, d.e7)([en.Z], () => en.Z.hasLayers()), eE = (0, d.e7)([Y.Z], () => Y.Z.shouldShow(eC)), eO = m && (null == o ? void 0 : o.premiumProgressBarEnabled) === !1 && !es.s.isDisallowPopupsSet(), ey = (0, d.e7)([ee.Z], () => ee.Z.getMemberCount(n)), eI = m && null != ey && ey >= 30 && (null == o ? void 0 : o.premiumProgressBarEnabled) === !1 && !es.s.isDisallowPopupsSet(), ev = b && null != o && (o.hasFeature(ef.oNc.COMMUNITY) || null != ey && ey > 50), eS = (0, w.Z)(n), eT = (null == o ? void 0 : o.hasFeature(ef.oNc.HUB)) === !0, eP = m && (null == o ? void 0 : o.hasFeature(ef.oNc.DISCOVERABLE)) === !0, ej = (0, I.Q)(), eA = (m || (null == o ? void 0 : o.premiumTier) === ef.Eu4.NONE) && !es.s.isDisallowPopupsSet() && !ej, eZ = (0, d.e7)([D.Z, en.Z], () => null != o && null != R && m && !en.Z.hasLayers() && D.Z.shouldShowGuildTemplateDirtyTooltip(n)), ex = (0, d.e7)([X.Z], () => X.Z.getChannel(a)), {
     isPopoutOpen: eL
   } = (0, Z.y)(), ew = null != (t = null == o ? void 0 : o.hasFeature(ef.oNc.COMMUNITY)) && t, eR = (0, d.e7)([z.Z], () => !s().isEmpty(z.Z.getThreadsForGuild(n))), eD = eo.ZP.isNewUser(R), ek = W && !eD, eM = (0, S.Z)(R);
   (0, x.Z)(o);

@@ -1,89 +1,89 @@
-/** Chunk was on 58593 **/
+/** Chunk was on 37220 **/
 n.d(t, {
   Np: () => d,
-  l8: () => s,
+  l8: () => c,
   mc: () => u,
-  so: () => l
+  so: () => s
 });
-var a = n(255367);
+var i = n(255367);
 n(73800);
 var r = n(481060),
-  o = n(822869);
+  l = n(822869);
 
-function i(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      a = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      i = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), a.forEach(function(t) {
-      var a;
-      a = n[t], t in e ? Object.defineProperty(e, t, {
-        value: a,
+    }))), i.forEach(function(t) {
+      var i;
+      i = n[t], t in e ? Object.defineProperty(e, t, {
+        value: i,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : e[t] = a
+      }) : e[t] = i
     })
   }
   return e
 }
 
-function c(e, t) {
+function o(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, a)
+      var i = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, i)
     }
     return n
   })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let l = "forward-modal";
+let s = "forward-modal";
 
-function s(e) {
+function c(e) {
   let {
     message: t,
-    source: s,
+    source: c,
     initialSelectedDestinations: u = [],
     forwardOptions: d,
-    onRequestSent: p
+    onRequestSent: f
   } = e;
-  (0, o.Lb)(t.channel_id, t.id, s), (0, r.ZDy)(async () => {
+  (0, l.Lb)(t.channel_id, t.id, c), (0, r.ZDy)(async () => {
     let {
       ForwardModal: e
     } = await Promise.all([n.e("25292"), n.e("6380"), n.e("16967")]).then(n.bind(n, 930864));
-    return n => (0, a.jsx)(e, c(i({}, n), {
+    return n => (0, i.jsx)(e, o(a({}, n), {
       message: t,
       initialSelectedDestinations: u,
       forwardOptions: d,
-      onRequestSent: p
+      onRequestSent: f
     }))
   }, {
-    modalKey: l
+    modalKey: s
   })
 }
 
 function u() {
-  (0, r.Mr3)(l)
+  (0, r.Mr3)(s)
 }
 
 function d(e) {
   let {
     message: t,
-    failedDestinations: o,
-    forwardOptions: l
+    failedDestinations: l,
+    forwardOptions: s
   } = e;
   (0, r.ZDy)(async () => {
     let {
       ForwardFailedAlertModal: e
     } = await n.e("86590").then(n.bind(n, 384331));
-    return n => (0, a.jsx)(e, c(i({}, n), {
+    return n => (0, i.jsx)(e, o(a({}, n), {
       message: t,
-      failedDestinations: o,
-      forwardOptions: l
+      failedDestinations: l,
+      forwardOptions: s
     }))
   })
 }

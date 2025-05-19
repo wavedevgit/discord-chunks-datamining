@@ -1,4 +1,4 @@
-/** Chunk was on 94928 **/
+/** Chunk was on 20185 **/
 var r = {
   "./bg.png": "135316",
   "./cs.png": "107217",
@@ -33,17 +33,17 @@ var r = {
   "./zh-TW.png": "408999"
 };
 
-function s(e) {
-  return n(i(e))
+function i(e) {
+  return n(s(e))
 }
 
-function i(e) {
+function s(e) {
   if (!n.o(r, e)) {
     var t = Error("Cannot find module '" + e + "'");
     throw t.code = "MODULE_NOT_FOUND", t
   }
   return r[e]
 }
-s.keys = function() {
+i.keys = function() {
   return Object.keys(r)
-}, s.resolve = i, e.exports = s, s.id = 621287
+}, i.resolve = s, e.exports = i, i.id = 621287

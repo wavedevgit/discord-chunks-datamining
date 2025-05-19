@@ -1,4 +1,4 @@
-/** Chunk was on 35948 **/
+/** Chunk was on 1022 **/
 n.d(t, {
   m: () => f
 });
@@ -53,10 +53,10 @@ function f(e) {
       renderIcon: g,
       text: m,
       selected: b,
-      trailing: _,
-      background: y,
-      showUnread: O = !1,
-      ref: v
+      trailing: y,
+      background: O,
+      showUnread: v = !1,
+      ref: _
     } = e,
     C = function(e, t) {
       if (null == e) return {};
@@ -73,17 +73,17 @@ function f(e) {
       }
       return i
     }(e, ["id", "className", "innerClassName", "renderIcon", "text", "selected", "trailing", "background", "showUnread", "ref"]);
-  let S = (0, o.JA)(n),
-    j = null != (t = (0, s.qg)(m)) ? t : "";
+  let j = (0, o.JA)(n),
+    S = null != (t = (0, s.qg)(m)) ? t : "";
   return (0, r.jsx)("li", {
-    ref: v,
+    ref: _,
     children: (0, r.jsxs)(a.kL8, p(h({}, C), {
-      buttonProps: p(h({}, S), {
+      buttonProps: p(h({}, j), {
         id: n,
         role: "button"
       }),
       tag: "div",
-      "aria-label": j,
+      "aria-label": S,
       focusProps: {
         offset: {
           top: 1,
@@ -97,7 +97,7 @@ function f(e) {
       className: l()(u.containerDefault, d.wrapper, {
         [d.modeSelected]: b
       }, i),
-      children: [y, O ? (0, r.jsx)("div", {
+      children: [O, v ? (0, r.jsx)("div", {
         className: l()(d.unread, d.unreadImportant)
       }) : null, (0, r.jsx)("div", {
         className: l()([d.link, d.basicChannelRowLink, f]),
@@ -110,7 +110,7 @@ function f(e) {
             className: d.name,
             "aria-hidden": !0,
             children: m
-          }), _]
+          }), y]
         })
       })]
     }))

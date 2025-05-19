@@ -1,6 +1,6 @@
-/** Chunk was on 35948 **/
+/** Chunk was on 1022 **/
 n.d(t, {
-  T: () => _
+  T: () => y
 });
 var r = n(255367),
   i = n(73800),
@@ -24,17 +24,17 @@ function b(e, t) {
     children: e
   }, t)
 }
-let _ = i.memo(function(e) {
+let y = i.memo(function(e) {
   var t, n;
   let {
-    guild: _
-  } = e, y = (0, o.e7)([c.Z], () => c.Z.getNewMemberActions(_.id), [_.id]), O = (0, o.e7)([u.Z], () => u.Z.getCompletedActions(_.id)), v = i.useMemo(() => {
-    if (null == y || null == O) return 0;
+    guild: y
+  } = e, O = (0, o.e7)([c.Z], () => c.Z.getNewMemberActions(y.id), [y.id]), v = (0, o.e7)([u.Z], () => u.Z.getCompletedActions(y.id)), _ = i.useMemo(() => {
+    if (null == O || null == v) return 0;
     let e = 0;
-    return y.forEach(t => {
-      null != O[t.channelId] && e++
+    return O.forEach(t => {
+      null != v[t.channelId] && e++
     }), e
-  }, [O, y]), C = null == y ? 0 : y.length, S = (0, l.JA)("progress-bar-".concat(_.id));
+  }, [v, O]), C = null == O ? 0 : O.length, j = (0, l.JA)("progress-bar-".concat(y.id));
   return (0, r.jsxs)("li", {
     children: [(0, r.jsxs)(s.P3F, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -53,7 +53,7 @@ let _ = i.memo(function(e) {
         })
       }
       return e
-    }({}, S), n = n = {
+    }({}, j), n = n = {
       role: "button",
       focusProps: {
         offset: {
@@ -62,7 +62,7 @@ let _ = i.memo(function(e) {
       },
       className: m.progressBarContainer,
       onClick: function() {
-        (0, d.uL)(p.Z5c.CHANNEL(_.id, f.oC.GUILD_HOME))
+        (0, d.uL)(p.Z5c.CHANNEL(y.id, f.oC.GUILD_HOME))
       },
       children: [(0, r.jsxs)("div", {
         className: m.progressBarText,
@@ -78,7 +78,7 @@ let _ = i.memo(function(e) {
             children: g.intl.format(g.t.eqZ1lZ, {
               numberHook: b,
               total: C.toString(),
-              completed: v.toString()
+              completed: _.toString()
             })
           }), (0, r.jsx)(h.Z, {
             className: m.arrow,
@@ -90,7 +90,7 @@ let _ = i.memo(function(e) {
       }), (0, r.jsx)(s.Exd, {
         className: m.progressBar,
         foregroundGradientColor: [(0, a.Lq)(p.Ilk.GREEN_300), (0, a.Lq)(p.Ilk.GREEN_230)],
-        percent: v / C * 100 + 3,
+        percent: _ / C * 100 + 3,
         animate: !0
       })]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

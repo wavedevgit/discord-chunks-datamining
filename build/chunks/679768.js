@@ -1,11 +1,11 @@
-/** Chunk was on 94928 **/
+/** Chunk was on 20185 **/
 "use strict";
 n.d(t, {
-  Z: () => s
+  Z: () => i
 });
 var r = n(255367);
 
-function s(e) {
+function i(e) {
   var t, n;
   return (0, r.jsxs)("svg", (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {

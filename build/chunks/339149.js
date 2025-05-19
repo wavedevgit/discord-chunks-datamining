@@ -1,4 +1,4 @@
-/** Chunk was on 35948 **/
+/** Chunk was on 1022 **/
 n.d(t, {
   E: () => I,
   Z: () => w
@@ -17,13 +17,13 @@ var r, i = n(255367),
   g = n(703656),
   m = n(417363),
   b = n(941128),
-  _ = n(780570),
-  y = n(353042),
-  O = n(981631),
-  v = n(388032),
+  y = n(780570),
+  O = n(353042),
+  v = n(981631),
+  _ = n(388032),
   C = n(496614);
 
-function S(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -32,66 +32,66 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      j(e, t, n[t])
     })
   }
   return e
 }
 let E = {
-  [O.vxO.INSTALLING]: {
-    [f.J6.NONE]: (e, t) => v.intl.formatToPlainString(v.t["p+2sEx"], {
+  [v.vxO.INSTALLING]: {
+    [f.J6.NONE]: (e, t) => _.intl.formatToPlainString(_.t["p+2sEx"], {
       name: e
     }),
-    [f.J6.SECONDS]: (e, t) => v.intl.formatToPlainString(v.t["/0NgPD"], {
+    [f.J6.SECONDS]: (e, t) => _.intl.formatToPlainString(_.t["/0NgPD"], {
       name: e,
       timeRemaining: t
     }),
-    [f.J6.MINUTES]: (e, t) => v.intl.formatToPlainString(v.t.ZIwMzs, {
+    [f.J6.MINUTES]: (e, t) => _.intl.formatToPlainString(_.t.ZIwMzs, {
       name: e,
       timeRemaining: t
     }),
-    [f.J6.HOURS]: (e, t) => v.intl.formatToPlainString(v.t["3IQDUl"], {
+    [f.J6.HOURS]: (e, t) => _.intl.formatToPlainString(_.t["3IQDUl"], {
       name: e,
       timeRemaining: t
     })
   },
-  [O.vxO.UPDATING]: {
-    [f.J6.NONE]: (e, t) => v.intl.formatToPlainString(v.t["6F9QzM"], {
+  [v.vxO.UPDATING]: {
+    [f.J6.NONE]: (e, t) => _.intl.formatToPlainString(_.t["6F9QzM"], {
       name: e
     }),
-    [f.J6.SECONDS]: (e, t) => v.intl.formatToPlainString(v.t["2OVgVl"], {
+    [f.J6.SECONDS]: (e, t) => _.intl.formatToPlainString(_.t["2OVgVl"], {
       name: e,
       timeRemaining: t
     }),
-    [f.J6.MINUTES]: (e, t) => v.intl.formatToPlainString(v.t.mgQg1N, {
+    [f.J6.MINUTES]: (e, t) => _.intl.formatToPlainString(_.t.mgQg1N, {
       name: e,
       timeRemaining: t
     }),
-    [f.J6.HOURS]: (e, t) => v.intl.formatToPlainString(v.t["aTdq4+"], {
+    [f.J6.HOURS]: (e, t) => _.intl.formatToPlainString(_.t["aTdq4+"], {
       name: e,
       timeRemaining: t
     })
   },
-  [O.vxO.REPAIRING]: {
-    [f.J6.NONE]: (e, t) => v.intl.formatToPlainString(v.t["p+2sEx"], {
+  [v.vxO.REPAIRING]: {
+    [f.J6.NONE]: (e, t) => _.intl.formatToPlainString(_.t["p+2sEx"], {
       name: e
     }),
-    [f.J6.SECONDS]: (e, t) => v.intl.formatToPlainString(v.t["/0NgPD"], {
+    [f.J6.SECONDS]: (e, t) => _.intl.formatToPlainString(_.t["/0NgPD"], {
       name: e,
       timeRemaining: t
     }),
-    [f.J6.MINUTES]: (e, t) => v.intl.formatToPlainString(v.t.ZIwMzs, {
+    [f.J6.MINUTES]: (e, t) => _.intl.formatToPlainString(_.t.ZIwMzs, {
       name: e,
       timeRemaining: t
     }),
-    [f.J6.HOURS]: (e, t) => v.intl.formatToPlainString(v.t["3IQDUl"], {
+    [f.J6.HOURS]: (e, t) => _.intl.formatToPlainString(_.t["3IQDUl"], {
       name: e,
       timeRemaining: t
     })
@@ -103,9 +103,9 @@ class x extends l.PureComponent {
       state: e,
       isPaused: t
     } = this.props;
-    if (e.type === O.vxO.UPDATING || e.type === O.vxO.REPAIRING || e.type === O.vxO.INSTALLING) {
-      if (t) return v.intl.string(v.t["5oxtFR"]);
-      else if (e.stage === O.f07.PATCHING || e.stage === O.f07.REPAIRING) return (0, i.jsx)(y.Z, {
+    if (e.type === v.vxO.UPDATING || e.type === v.vxO.REPAIRING || e.type === v.vxO.INSTALLING) {
+      if (t) return _.intl.string(_.t["5oxtFR"]);
+      else if (e.stage === v.f07.PATCHING || e.stage === v.f07.REPAIRING) return (0, i.jsx)(O.Z, {
         getHistoricalTotalBytes: m.Z.getHistoricalTotalBytesWritten,
         updateInterval: 5e3,
         children: this.renderProgressBody
@@ -115,10 +115,10 @@ class x extends l.PureComponent {
   }
   render() {
     let e = this.renderText();
-    return null != e ? e : v.intl.string(v.t.cw57am)
+    return null != e ? e : _.intl.string(_.t.cw57am)
   }
   constructor(...e) {
-    super(...e), S(this, "renderProgressBody", (e, t) => {
+    super(...e), j(this, "renderProgressBody", (e, t) => {
       let {
         state: n,
         application: r
@@ -167,7 +167,7 @@ class P extends(r = l.PureComponent) {
       firstState: t,
       isPaused: n
     } = this.props;
-    return null == e || null == t ? v.intl.string(v.t.cw57am) : (0, i.jsx)(x, {
+    return null == e || null == t ? _.intl.string(_.t.cw57am) : (0, i.jsx)(x, {
       application: e,
       state: t,
       isPaused: n
@@ -193,7 +193,7 @@ class P extends(r = l.PureComponent) {
         "aria-label": !1,
         children: n => {
           var r, l;
-          return (0, i.jsx)("div", (r = j({}, n), l = l = {
+          return (0, i.jsx)("div", (r = S({}, n), l = l = {
             children: (0, i.jsx)(h._3P, {
               percent: e,
               colorOverride: t ? u.Z.unsafe_rawColors.PRIMARY_500.css : null,
@@ -218,13 +218,13 @@ class P extends(r = l.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), S(this, "state", {
+    super(...e), j(this, "state", {
       animationScale: new a.Z.Value(0)
-    }), S(this, "handleOnClick", e => {
+    }), j(this, "handleOnClick", e => {
       let {
         onClick: t
       } = this.props;
-      e.preventDefault(), e.stopPropagation(), null != t && t(e), (0, g.uL)(O.Z5c.APPLICATION_LIBRARY)
+      e.preventDefault(), e.stopPropagation(), null != t && t(e), (0, g.uL)(v.Z5c.APPLICATION_LIBRARY)
     })
   }
 }
@@ -238,7 +238,7 @@ function I(e, t) {
     return null != l && e.push(l), e
   }, [])
 }
-S(P, "defaultProps", {
+j(P, "defaultProps", {
   strokeSize: h._3P.StrokeSizes.MEDIUM
 });
 let w = c.ZP.connectStores([b.Z, m.Z, p.Z], () => {
@@ -247,9 +247,9 @@ let w = c.ZP.connectStores([b.Z, m.Z, p.Z], () => {
     {
       total: n,
       progress: r
-    } = _.lK(t);
+    } = y.lK(t);
   return {
-    percent: _.xI(r, n),
+    percent: y.xI(r, n),
     isPaused: b.Z.paused,
     firstApplication: e.length > 0 ? p.Z.getApplication(e[0].applicationId) : null,
     firstState: t.length > 0 ? t[0] : null
@@ -274,6 +274,6 @@ let w = c.ZP.connectStores([b.Z, m.Z, p.Z], () => {
   }(e, ["determineOwnVisibility"]);
   return t ? (0, i.jsx)(d.W, {
     component: l.Fragment,
-    children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(P, j({}, n)) : null
-  }) : (0, i.jsx)(P, j({}, n))
+    children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(P, S({}, n)) : null
+  }) : (0, i.jsx)(P, S({}, n))
 })

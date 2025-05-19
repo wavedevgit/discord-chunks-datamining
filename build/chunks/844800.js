@@ -1,16 +1,16 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => h
+  Z: () => g
 });
-var r, i, l, s = n(442837),
+var r, i, l, a = n(442837),
   o = n(570140);
-let a = !1,
+let s = !1,
   c = null,
   u = null;
-class d extends(l = s.ZP.Store) {
+class d extends(l = a.ZP.Store) {
   getState() {
     return {
-      verifySuccess: a,
+      verifySuccess: s,
       verifyErrors: c,
       redirectGuildId: u
     }
@@ -22,17 +22,17 @@ i = "HubEmailVerificationStore", (r = "displayName") in d ? Object.definePropert
   configurable: !0,
   writable: !0
 }) : d[r] = i;
-let h = new d(o.Z, {
+let g = new d(o.Z, {
   HUB_VERIFY_EMAIL_SUCCESS: function(e) {
     let {
       guildId: t
     } = e;
-    a = !0, c = null, u = t
+    s = !0, c = null, u = t
   },
   HUB_VERIFY_EMAIL_FAILURE: function(e) {
     let {
       errors: t
     } = e;
-    a = !1, c = t
+    s = !1, c = t
   }
 })

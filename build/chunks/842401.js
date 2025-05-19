@@ -1,12 +1,12 @@
-/** Chunk was on 21924 **/
+/** Chunk was on 85634 **/
 n.d(t, {
   Z: () => s
 });
 var r = n(255367);
 n(73800);
-var l = n(481060),
+var a = n(481060),
   i = n(99690),
-  a = n(388032),
+  l = n(388032),
   o = n(178816);
 let s = e => {
   let {
@@ -14,10 +14,10 @@ let s = e => {
   } = e;
   return (0, r.jsxs)("div", {
     className: o.container,
-    children: [(0, r.jsx)(l.X6q, {
+    children: [(0, r.jsx)(a.X6q, {
       className: o.header,
       variant: "heading-sm/semibold",
-      children: a.intl.string(a.t["Rsth7+"])
+      children: l.intl.string(l.t["Rsth7+"])
     }), (0, r.jsx)("div", {
       className: o.userContainer,
       children: (0, r.jsxs)("div", {
@@ -25,13 +25,13 @@ let s = e => {
         children: [(0, r.jsx)(i.Z, {
           className: o.userIcon,
           user: t,
-          size: l.EFr.SIZE_40
+          size: a.EFr.SIZE_40
         }), (0, r.jsxs)("div", {
-          children: [null != t.globalName && (0, r.jsx)(l.Text, {
+          children: [null != t.globalName && (0, r.jsx)(a.Text, {
             variant: "text-md/semibold",
             color: "header-primary",
             children: t.globalName
-          }), (0, r.jsx)(l.Text, {
+          }), (0, r.jsx)(a.Text, {
             color: "header-secondary",
             variant: "text-sm/normal",
             children: t.username

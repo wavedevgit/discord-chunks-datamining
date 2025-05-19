@@ -1,7 +1,7 @@
-/** Chunk was on 35948 **/
+/** Chunk was on 1022 **/
 n.d(t, {
-  OG: () => S,
-  ZP: () => v,
+  OG: () => j,
+  ZP: () => _,
   Zu: () => C
 }), n(388685);
 var r = n(255367),
@@ -32,7 +32,7 @@ function b(e) {
   }, n), t
 }
 
-function _(e, t) {
+function y(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
   return a()(t.type !== h.eD.ROOT, "[GuildDropTarget] Tried using a root node as a drop target."), {
@@ -51,13 +51,13 @@ function _(e, t) {
   }
 }
 
-function y(e) {
+function O(e) {
   let {
     name: t,
     targetNode: n,
     combine: l,
     below: o
-  } = e, s = i.useMemo(() => _([h.eD.GUILD, h.eD.FOLDER], n, o, l), [n, o, l]), [{
+  } = e, s = i.useMemo(() => y([h.eD.GUILD, h.eD.FOLDER], n, o, l), [n, o, l]), [{
     canDrop: a,
     isOver: u
   }, d] = (0, c.L)(s), p = b([
@@ -75,7 +75,7 @@ function y(e) {
   })
 }
 
-function O(e) {
+function v(e) {
   let {
     name: t,
     targetNode: n,
@@ -83,7 +83,7 @@ function O(e) {
   } = e, [{
     canDrop: s,
     isOver: a
-  }, u] = (0, c.L)(() => _([h.eD.GUILD], n, !0, !0));
+  }, u] = (0, c.L)(() => y([h.eD.GUILD], n, !0, !0));
   i.useEffect(() => {
     null == l || l(a)
   }, [l, a]);
@@ -108,7 +108,7 @@ function O(e) {
     })
   })
 }
-let v = i.memo(function(e) {
+let _ = i.memo(function(e) {
   let {
     name: t,
     targetNode: n,
@@ -119,11 +119,11 @@ let v = i.memo(function(e) {
   return (0, r.jsxs)("div", {
     className: m.wrapper,
     "aria-hidden": !0,
-    children: [(0, r.jsx)(y, {
+    children: [(0, r.jsx)(O, {
       name: t,
       targetNode: n,
       below: l
-    }), s ? (0, r.jsx)(O, {
+    }), s ? (0, r.jsx)(v, {
       name: t,
       targetNode: n,
       onDragOverChanged: o
@@ -138,7 +138,7 @@ function C(e) {
   } = e, [{
     canDrop: i,
     isOver: l
-  }, o] = (0, c.L)(() => _([h.eD.GUILD], n, !0, !0)), s = b([
+  }, o] = (0, c.L)(() => y([h.eD.GUILD], n, !0, !0)), s = b([
     [l, m.wrapperOver]
   ]), a = b([
     [l, m.dragOver],
@@ -161,7 +161,7 @@ function C(e) {
   })
 }
 
-function S(e) {
+function j(e) {
   let {
     children: t
   } = e, [, n] = (0, c.L)({

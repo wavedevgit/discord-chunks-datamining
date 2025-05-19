@@ -1,11 +1,11 @@
-/** Chunk was on 21924 **/
+/** Chunk was on 85634 **/
 n.d(t, {
-  Z: () => f
+  Z: () => x
 });
 var r = n(255367),
-  l = n(73800),
+  a = n(73800),
   i = n(442837),
-  a = n(481060),
+  l = n(481060),
   o = n(384275),
   s = n(686546),
   c = n(522289),
@@ -13,71 +13,71 @@ var r = n(255367),
   u = n(146078),
   m = n(881998),
   p = n(709054),
-  x = n(388032),
-  b = n(711845),
-  _ = n(970952);
-let f = e => {
+  _ = n(388032),
+  g = n(711845),
+  b = n(970952);
+let x = e => {
   var t, n;
   let {
-    entry: f
+    entry: x
   } = e, {
     name: h
-  } = f, g = (0, i.e7)([m.Z], () => {
+  } = x, f = (0, i.e7)([m.Z], () => {
     let e = m.Z.getApps();
-    return null != e ? e.find(e => e.application.id === f.id) : null
-  }), v = null != (n = f.getIconURL(40)) ? n : _, j = (0, d.Z)({
-    application: f
-  }), y = l.useRef(!1);
-  l.useEffect(() => {
-    y.current || (o.Z.fetch(), y.current = !0)
+    return null != e ? e.find(e => e.application.id === x.id) : null
+  }), v = null != (n = x.getIconURL(40)) ? n : b, j = (0, d.Z)({
+    application: x
+  }), C = a.useRef(!1);
+  a.useEffect(() => {
+    C.current || (o.Z.fetch(), C.current = !0)
   }, []);
-  let O = null != g ? p.default.extractTimestamp(g.id) : void 0;
+  let y = null != f ? p.default.extractTimestamp(f.id) : void 0;
   return (0, r.jsxs)("div", {
-    className: b.container,
-    children: [(0, r.jsx)(a.X6q, {
-      className: b.header,
+    className: g.container,
+    children: [(0, r.jsx)(l.X6q, {
+      className: g.header,
       variant: "heading-sm/semibold",
-      children: x.intl.string(x.t["aYfK//"])
+      children: _.intl.string(_.t["aYfK//"])
     }), (0, r.jsx)("div", {
-      className: b.appContainer,
+      className: g.appContainer,
       children: (0, r.jsxs)("div", {
-        className: b.appInfo,
+        className: g.appInfo,
         children: [(0, r.jsx)(s.ZP, {
           mask: s.ZP.Masks.AVATAR_DEFAULT,
           width: 40,
           height: 40,
-          className: b.appIconMask,
+          className: g.appIconMask,
           children: (0, r.jsx)("img", {
             src: v,
             alt: "",
-            className: b.appIcon
+            className: g.appIcon
           })
         }), (0, r.jsxs)("div", {
-          className: b.textContainer,
-          children: [(0, r.jsx)(a.Text, {
+          className: g.textContainer,
+          children: [(0, r.jsx)(l.Text, {
             color: "header-primary",
             variant: "text-md/medium",
             children: h
           }), j.length > 0 ? (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(a.Text, {
+            children: [(0, r.jsx)(l.Text, {
               color: "text-normal",
               variant: "text-md/normal",
               children: (0, u.Z)(j.length)
             }), (0, r.jsx)(c.Z, {
-              className: b.guildStack,
+              className: g.guildStack,
               guilds: j,
               maxGuilds: 6
             })]
           }) : (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(a.Text, {
+            children: [(0, r.jsx)(l.Text, {
               color: "text-normal",
               variant: "text-md/normal",
-              children: null == (t = f.bot) ? void 0 : t.tag
-            }), null != O && (0, r.jsx)(a.Text, {
+              children: null == (t = x.bot) ? void 0 : t.tag
+            }), null != y && (0, r.jsx)(l.Text, {
               color: "text-normal",
               variant: "text-md/normal",
-              children: x.intl.formatToPlainString(x.t.C9rUOz, {
-                authorizedAt: O
+              children: _.intl.formatToPlainString(_.t.C9rUOz, {
+                authorizedAt: y
               })
             })]
           })]

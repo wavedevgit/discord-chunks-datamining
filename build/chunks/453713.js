@@ -143,13 +143,13 @@ let O = s()(e => {
       previewingVariantIndexProps: o,
       setIsHoveringOnSwitch: s,
       minimal: d,
-      purchases: g,
-      alternativeBackgroundColor: O
-    } = e, S = (0, p.o)(l, g), j = o.previewingVariantIndex, y = null == (t = l.variants) ? void 0 : t[S], P = null !== j ? null == (n = l.variants) ? void 0 : n[j] : void 0, E = (0, f.Z)("shop-variants-group-".concat(l.storeListingId), u.hy.HORIZONTAL);
-    if (null == y) return null;
-    let k = null != P ? P.variantLabel : null == y ? void 0 : y.variantLabel;
+      selectedVariantIndex: p,
+      alternativeBackgroundColor: g
+    } = e, O = o.previewingVariantIndex, S = null == (t = l.variants) ? void 0 : t[p], j = null !== O ? null == (n = l.variants) ? void 0 : n[O] : void 0, y = (0, f.Z)("shop-variants-group-".concat(l.storeListingId), u.hy.HORIZONTAL);
+    if (null == S) return null;
+    let P = null != j ? j.variantLabel : null == S ? void 0 : S.variantLabel;
     return (0, r.jsx)(c.bG, {
-      navigator: E,
+      navigator: y,
       children: (0, r.jsx)(c.SJ, {
         children: e => {
           var t, {
@@ -161,7 +161,7 @@ let O = s()(e => {
           }, c), {
             className: a()(m.variantsPanel, i, {
               [m.minimalState]: d,
-              [m.alternativeColor]: O
+              [m.alternativeColor]: g
             }),
             onMouseEnter: () => null == s ? void 0 : s(!0),
             onMouseLeave: () => null == s ? void 0 : s(!1),
@@ -173,7 +173,7 @@ let O = s()(e => {
                   variantGroupProduct: l,
                   variant: e,
                   variantIndex: t,
-                  selectedVariantIndex: S,
+                  selectedVariantIndex: p,
                   totalVariants: null != (i = null == (n = l.variants) ? void 0 : n.length) ? i : 0,
                   onEnter: () => o.handleEntering(t),
                   onLeave: o.handleLeaving,
@@ -184,7 +184,7 @@ let O = s()(e => {
               variant: "text-xs/medium",
               color: "text-secondary",
               className: m.variantLabel,
-              children: d ? h.intl.string(h.t.wbgaj4) : k
+              children: d ? h.intl.string(h.t.wbgaj4) : P
             })]
           }))
         }

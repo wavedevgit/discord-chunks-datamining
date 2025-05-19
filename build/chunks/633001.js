@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => M
+  Z: () => z
 }), n(388685), n(539854), n(583741);
 var a = n(255367),
   r = n(73800),
@@ -18,16 +18,16 @@ var a = n(255367),
   b = n(829907),
   f = n(610394),
   v = n(352527),
-  j = n(355863),
-  g = n(449224),
+  g = n(355863),
+  j = n(449224),
   _ = n(808506),
   y = n(572004),
   C = n(70956),
   O = n(145597),
   N = n(246992),
   E = n(981631),
-  S = n(757744),
-  T = n(388032),
+  T = n(757744),
+  S = n(388032),
   P = n(931207),
   k = n(616257);
 
@@ -75,7 +75,7 @@ let R = {
         width: 100,
         height: 100
       }
-    }, j.Z.getWidgetDefaultSettings(E.Odu.CLICK_ZONE_DEBUG)), {
+    }, g.Z.getWidgetDefaultSettings(E.Odu.CLICK_ZONE_DEBUG)), {
       pinned: !0
     }),
     [E.Odu.PERFORMANCE_DEBUG]: e => I(w({
@@ -91,7 +91,7 @@ let R = {
         width: "auto",
         height: "auto"
       }
-    }, j.Z.getWidgetDefaultSettings(E.Odu.PERFORMANCE_DEBUG)), {
+    }, g.Z.getWidgetDefaultSettings(E.Odu.PERFORMANCE_DEBUG)), {
       pinned: !0
     })
   },
@@ -116,14 +116,14 @@ function A(e) {
       (0, y.JG)(t, () => l(!0))
     },
     className: P.copyId,
-    children: ["Application Id: ", t, " ", n ? T.intl.string(T.t["t5VZ8/"]) : null]
+    children: ["Application Id: ", t, " ", n ? S.intl.string(S.t["t5VZ8/"]) : null]
   })
 }
 
 function L(e) {
   let {
     trackedGame: t
-  } = e, n = (0, o.e7)([x.ZP], () => x.ZP.getGameForPID(t.pid)), r = (0, o.e7)([g.Z], () => g.Z.getGameForPID(t.pid));
+  } = e, n = (0, o.e7)([x.ZP], () => x.ZP.getGameForPID(t.pid)), r = (0, o.e7)([j.Z], () => j.Z.getGameForPID(t.pid));
   return (0, a.jsxs)("div", {
     className: P.panelGroup,
     children: [(0, a.jsx)(c.Text, {
@@ -259,23 +259,23 @@ function D(e) {
   })
 }
 
-function z(e) {
-  let t = Z(Object.values((0, o.Wu)([j.Z], () => j.Z.getWidgetsForLayout(S.$S))), e);
+function M(e) {
+  let t = Z(Object.values((0, o.Wu)([g.Z], () => g.Z.getWidgetsForLayout(T.$S))), e);
   return [t, () => {
     if (null != t)(0, d.E9)(t.id);
     else {
       let t = R[e];
       if (null == t) return;
-      let n = t(S.$S);
+      let n = t(T.$S);
       (0, d.A4)(n)
     }
   }]
 }
 
-function M() {
+function z() {
   var e, t;
-  let [n, l] = z(E.Odu.CLICK_ZONE_DEBUG), [s, d] = z(E.Odu.PERFORMANCE_DEBUG), j = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ClickZones)), g = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.WidgetAreas)), y = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.DisabledGPUBoost)), S = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ForceGPUBoost)), T = (0, o.e7)([p.default], () => p.default.getForcedRenderMode()), [R, Z] = r.useState({}), [A, M] = r.useState(T), B = e => {
-    M(e), u.Z.forceRenderMode(e)
+  let [n, l] = M(E.Odu.CLICK_ZONE_DEBUG), [s, d] = M(E.Odu.PERFORMANCE_DEBUG), g = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ClickZones)), j = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.WidgetAreas)), y = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.DisabledGPUBoost)), T = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ForceGPUBoost)), S = (0, o.e7)([p.default], () => p.default.getForcedRenderMode()), [R, Z] = r.useState({}), [A, z] = r.useState(S), B = e => {
+    z(e), u.Z.forceRenderMode(e)
   }, U = [{
     label: m.R5.UNSET,
     value: m.R5.UNSET
@@ -289,7 +289,7 @@ function M() {
     label: m.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION,
     value: m.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION
   }].map(e => I(w({}, e), {
-    label: "".concat(e.label, " ").concat(T === e.value ? "(current)" : "")
+    label: "".concat(e.label, " ").concat(S === e.value ? "(current)" : "")
   })), F = (0, o.cj)([p.default], () => p.default.getTrackedGames()), G = (0, o.e7)([_.default], () => _.default.getFocusedPID()), V = (0, o.e7)([_.default], () => _.default.isFocusedPidOutOfProcess()), H = (0, O.getPID)(), W = (0, o.e7)([p.default], () => p.default.isOverlayOOPEnabledForPid(H), [H]), [X, K] = (0, o.Wu)([v.Z], () => [v.Z.enabled, v.Z.keepOpen]), Y = (0, o.e7)([x.ZP], () => x.ZP.getRunningGames());
   r.useEffect(() => {
     Z(e => {
@@ -350,7 +350,7 @@ function M() {
           text: "Enables a red border around click zones to help with debugging.",
           children: e => (0, a.jsx)("div", I(w({}, e), {
             children: (0, a.jsx)(c.XZJ, {
-              value: j,
+              value: g,
               onChange: () => ee(),
               size: 18,
               type: c.XZJ.Types.INVERTED,
@@ -368,7 +368,7 @@ function M() {
           text: "Enables a border around any widgets that are rendered on screen that are pinned (even if they are hidden). Blue = pinned widgets, Gray = unpinned widgets",
           children: e => (0, a.jsx)("div", I(w({}, e), {
             children: (0, a.jsx)(c.XZJ, {
-              value: g,
+              value: j,
               onChange: () => et(),
               size: 18,
               type: c.XZJ.Types.INVERTED,
@@ -404,7 +404,7 @@ function M() {
           text: "Forces GPU Boost, which can help with performance when games compete for GPU resources.",
           children: e => (0, a.jsx)("div", I(w({}, e), {
             children: (0, a.jsx)(c.XZJ, {
-              value: S,
+              value: T,
               onChange: () => ea(),
               size: 18,
               disabled: y,

@@ -1,4 +1,4 @@
-/** Chunk was on 35948 **/
+/** Chunk was on 1022 **/
 n.d(t, {
   Z: () => L
 }), n(415506), n(388685);
@@ -16,13 +16,13 @@ var r, i = n(255367),
   g = n(93687),
   m = n(266076),
   b = n(199902),
-  _ = n(19780),
-  y = n(306680),
-  O = n(944486),
-  v = n(594174),
+  y = n(19780),
+  O = n(306680),
+  v = n(944486),
+  _ = n(594174),
   C = n(451478),
-  S = n(276952),
-  j = n(682662),
+  j = n(276952),
+  S = n(682662),
   E = n(662146),
   x = n(674552),
   P = n(981631),
@@ -144,7 +144,7 @@ class D extends(r = l.PureComponent) {
   getChannelIcon() {
     let {
       channel: e
-    } = this.props, t = e.type === P.d4z.DM ? v.default.getUser(e.getRecipientId()) : null;
+    } = this.props, t = e.type === P.d4z.DM ? _.default.getUser(e.getRecipientId()) : null;
     return null != t ? t.getAvatarURL(void 0, 48, !1) : (0, h.x)(e)
   }
   render() {
@@ -164,11 +164,11 @@ class D extends(r = l.PureComponent) {
     } = this.props, {
       hovered: g,
       animating: b
-    } = this.state, _ = e.isMultiUserDM() && null == e.icon && h;
+    } = this.state, y = e.isMultiUserDM() && null == e.icon && h;
     return (0, i.jsx)(o.animated.div, {
       style: this.getAnimatedStyle(),
-      children: (0, i.jsxs)(j.H, {
-        children: [(0, i.jsx)(S.Z, {
+      children: (0, i.jsxs)(S.H, {
+        children: [(0, i.jsx)(j.Z, {
           hovered: !b && g,
           selected: !b && n,
           unread: !b && d,
@@ -203,9 +203,9 @@ class D extends(r = l.PureComponent) {
                 name: t
               }) : "",
               onContextMenu: this.handleContextMenu,
-              icon: _ ? void 0 : this.getChannelIcon(),
-              backgroundStyle: _ ? "on-hover" : "always",
-              children: _ ? (0, i.jsx)(m.Z, {
+              icon: y ? void 0 : this.getChannelIcon(),
+              backgroundStyle: y ? "on-hover" : "always",
+              children: y ? (0, i.jsx)(m.Z, {
                 channel: e,
                 size: c.EFr.SIZE_40,
                 facepileSizeOverride: c.EFr.SIZE_32,
@@ -231,7 +231,7 @@ class D extends(r = l.PureComponent) {
     }), N(this, "handleContextMenu", e => {
       let {
         channel: t
-      } = this.props, r = t.type === P.d4z.DM ? v.default.getUser(t.getRecipientId()) : null;
+      } = this.props, r = t.type === P.d4z.DM ? _.default.getUser(t.getRecipientId()) : null;
       null != r ? (0, u.jW)(e, async () => {
         let {
           default: e
@@ -262,11 +262,11 @@ let L = l.forwardRef(function(e, t) {
   let n = e.channel.id,
     r = (0, p.ZP)(e.channel),
     l = (0, s.Ie)(n, 2),
-    o = (0, a.e7)([_.Z], () => _.Z.getChannelId(), []),
+    o = (0, a.e7)([y.Z], () => y.Z.getChannelId(), []),
     u = (0, a.e7)([d.Z], () => null != o ? d.Z.getMode(o) : P.WtW.VOICE, [o]),
     h = (0, a.e7)([b.Z], () => b.Z.getAllApplicationStreamsForChannel(n).length > 0),
-    m = (0, a.e7)([O.Z], () => O.Z.getChannelId(), []),
-    v = (0, a.e7)([y.ZP], () => y.ZP.getMentionCount(n), [n]),
+    m = (0, a.e7)([v.Z], () => v.Z.getChannelId(), []),
+    _ = (0, a.e7)([O.ZP], () => O.ZP.getMentionCount(n), [n]),
     {
       isFacepileEnabled: C
     } = g.Z.useExperiment({
@@ -274,22 +274,22 @@ let L = l.forwardRef(function(e, t) {
     }, {
       autoTrackExposure: !1
     }),
-    S = o === n,
-    j = !1,
+    j = o === n,
+    S = !1,
     E = !1;
-  S && (j = u === P.WtW.VOICE, E = u === P.WtW.VIDEO);
+  j && (S = u === P.WtW.VOICE, E = u === P.WtW.VIDEO);
   let x = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE),
     I = (0, f.Q3)("DirectMessage");
   return (0, i.jsx)(D, T(Z({}, e), {
     ref: t,
     channelName: r,
-    unread: v > 0,
+    unread: _ > 0,
     selected: m === n,
-    badge: v,
-    audio: j,
+    badge: _,
+    audio: S,
     video: E,
     stream: h,
-    isCurrentUserInThisDMCall: S,
+    isCurrentUserInThisDMCall: j,
     isGDMFacepileEnabled: C,
     size: I ? x : 56,
     isVisualRefreshEnabled: I,

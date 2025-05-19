@@ -1,6 +1,6 @@
-/** Chunk was on 35948 **/
+/** Chunk was on 1022 **/
 n.d(t, {
-  Z: () => y
+  Z: () => O
 });
 var r = n(255367),
   i = n(73800),
@@ -21,7 +21,7 @@ let b = {
   tension: 300
 };
 
-function _(e) {
+function y(e) {
   var t;
   let {
     guildChannels: n,
@@ -60,7 +60,7 @@ function _(e) {
   })
 }
 
-function y(e) {
+function O(e) {
   let {
     position: t,
     guildChannels: n,
@@ -69,19 +69,19 @@ function y(e) {
     jumpToChannel: d
   } = e, {
     bottomBar: p,
-    topBar: y
-  } = (0, a.cj)([f.Z], () => f.Z.getUnreadStateForGuildId(n.id)), O = (0, a.e7)([h.Z], () => h.Z.isFocused()), {
-    mode: v,
+    topBar: O
+  } = (0, a.cj)([f.Z], () => f.Z.getUnreadStateForGuildId(n.id)), v = (0, a.e7)([h.Z], () => h.Z.isFocused()), {
+    mode: _,
     mentionCount: C,
-    targetChannelId: S
-  } = "bottom" === t ? p : y, j = v === f.x.HIDDEN, E = (0, c.q_F)({
+    targetChannelId: j
+  } = "bottom" === t ? p : O, S = _ === f.x.HIDDEN, E = (0, c.q_F)({
     to: {
-      transform: j ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
+      transform: S ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
     },
     config: b
-  }, O ? "respect-motion-settings" : "animate-never"), x = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), null != S && d(S)
-  }, [d, S]);
+  }, v ? "respect-motion-settings" : "animate-never"), x = i.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), null != j && d(j)
+  }, [d, j]);
   return (0, r.jsx)("div", {
     className: o()(m.container, {
       [m.top]: "top" === t,
@@ -90,10 +90,10 @@ function y(e) {
     children: (0, r.jsx)(s.animated.div, {
       className: m.containerPadding,
       style: E,
-      "aria-hidden": j,
-      children: v === f.x.HIDDEN ? (0, r.jsx)("div", {
+      "aria-hidden": S,
+      children: _ === f.x.HIDDEN ? (0, r.jsx)("div", {
         className: o()(m.bar, m.emptyBar)
-      }) : v === f.x.UNREAD ? (0, r.jsxs)(c.P3F, {
+      }) : _ === f.x.UNREAD ? (0, r.jsxs)(c.P3F, {
         className: m.bar,
         onClick: x,
         children: ["bottom" === t ? (0, r.jsx)(c.CJ0, {
@@ -114,7 +114,7 @@ function y(e) {
           className: m.barText,
           children: g.intl.string(g.t.FCRiT0)
         })]
-      }) : v === f.x.MENTIONS ? (0, r.jsx)(c.P3F, {
+      }) : _ === f.x.MENTIONS ? (0, r.jsx)(c.P3F, {
         className: o()(m.bar, m.mentionsBar),
         onClick: x,
         children: (0, r.jsx)(c.Text, {
@@ -125,7 +125,7 @@ function y(e) {
             count: C
           })
         })
-      }) : v === f.x.VOICE_CHANNELS ? (0, r.jsx)(_, {
+      }) : _ === f.x.VOICE_CHANNELS ? (0, r.jsx)(y, {
         jumpToVoiceChannels: u,
         guildChannels: n,
         guildChannelsVersion: l

@@ -1,37 +1,18 @@
-/** Chunk was on 94928 **/
+/** Chunk was on 20185 **/
 "use strict";
 n.d(t, {
-  JE: () => l,
+  JE: () => a,
   ab: () => o,
-  iG: () => a,
+  iG: () => l,
   lL: () => u,
   rC: () => c
 });
 var r = n(293810),
-  s = n(474936),
-  i = n(388032);
+  i = n(474936),
+  s = n(388032);
 
 function o(e) {
   return "roles" in e ? "emoji-".concat(e.id) : "".concat(e.ref_type, "-").concat(e.emoji_id, "-").concat(e.name, "-").concat(e.ref_id)
-}
-
-function l(e) {
-  let {
-    interval: t,
-    interval_count: n
-  } = e;
-  return i.intl.format(function(e) {
-    switch (e) {
-      case s.rV.DAY:
-        return i.t["3rUmPT"];
-      case s.rV.MONTH:
-        return i.t["zuN54+"];
-      case s.rV.YEAR:
-        return i.t.cuSp8f
-    }
-  }(t), {
-    count: n
-  })
 }
 
 function a(e) {
@@ -39,20 +20,39 @@ function a(e) {
     interval: t,
     interval_count: n
   } = e;
+  return s.intl.format(function(e) {
+    switch (e) {
+      case i.rV.DAY:
+        return s.t["3rUmPT"];
+      case i.rV.MONTH:
+        return s.t["zuN54+"];
+      case i.rV.YEAR:
+        return s.t.cuSp8f
+    }
+  }(t), {
+    count: n
+  })
+}
+
+function l(e) {
+  let {
+    interval: t,
+    interval_count: n
+  } = e;
   switch (t) {
-    case s.rV.DAY:
-      if (n > 0 && n % 7 == 0) return i.intl.formatToPlainString(i.t.iVZYys, {
+    case i.rV.DAY:
+      if (n > 0 && n % 7 == 0) return s.intl.formatToPlainString(s.t.iVZYys, {
         weeks: n / 7
       });
-      return i.intl.formatToPlainString(i.t.jzH70d, {
+      return s.intl.formatToPlainString(s.t.jzH70d, {
         days: n
       });
-    case s.rV.MONTH:
-      return i.intl.formatToPlainString(i.t.erUSmJ, {
+    case i.rV.MONTH:
+      return s.intl.formatToPlainString(s.t.erUSmJ, {
         months: n
       });
-    case s.rV.YEAR:
-      return i.intl.formatToPlainString(i.t.IfYQVF, {
+    case i.rV.YEAR:
+      return s.intl.formatToPlainString(s.t.IfYQVF, {
         years: n
       })
   }

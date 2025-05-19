@@ -1,6 +1,6 @@
-/** Chunk was on 35948 **/
+/** Chunk was on 1022 **/
 n.d(t, {
-  Z: () => _
+  Z: () => y
 });
 var r = n(255367),
   i = n(73800),
@@ -18,19 +18,19 @@ var r = n(255367),
   m = n(981631),
   b = n(388032);
 
-function _(e) {
+function y(e) {
   let {
     guild: t,
     selected: n
-  } = e, _ = (0, l.e7)([f.Z], () => f.Z.can(m.Plq.KICK_MEMBERS, t)), y = (0, l.e7)([u.Z], () => u.Z.getSubmittedGuildJoinRequestTotal(t.id)), O = _ && null != y ? y : 0;
+  } = e, y = (0, l.e7)([f.Z], () => f.Z.can(m.Plq.KICK_MEMBERS, t)), O = (0, l.e7)([u.Z], () => u.Z.getSubmittedGuildJoinRequestTotal(t.id)), v = y && null != O ? O : 0;
   i.useEffect(() => {
-    _ && t.hasFeature(m.oNc.MEMBER_VERIFICATION_GATE_ENABLED) && t.hasFeature(m.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.Z.fetchGuildJoinRequests({
+    y && t.hasFeature(m.oNc.MEMBER_VERIFICATION_GATE_ENABLED) && t.hasFeature(m.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.Z.fetchGuildJoinRequests({
       guildId: t.id,
       status: d.wB.SUBMITTED,
       limit: h.p
     })
-  }, [_, t]);
-  let v = i.useCallback(() => {
+  }, [y, t]);
+  let _ = i.useCallback(() => {
       (0, g._X)(t.id)
     }, [t.id]),
     C = (0, a.XL)(t.id, o.z.MEMBERS_LAUNCH_UPSELL);
@@ -45,9 +45,9 @@ function _(e) {
       }),
       text: b.intl.string(b.t.oclz3d),
       selected: n,
-      onClick: v,
-      trailing: O > 0 ? (0, r.jsx)(s.mAB, {
-        count: O
+      onClick: _,
+      trailing: v > 0 ? (0, r.jsx)(s.mAB, {
+        count: v
       }) : null
     })
   })

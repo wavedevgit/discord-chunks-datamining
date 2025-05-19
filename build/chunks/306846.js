@@ -1,4 +1,4 @@
-/** Chunk was on 94928 **/
+/** Chunk was on 20185 **/
 "use strict";
 e.exports = {
   productCard: "productCard__8d9f6",

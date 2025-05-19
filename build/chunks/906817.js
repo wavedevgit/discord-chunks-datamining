@@ -1,8 +1,8 @@
-/** Chunk was on 35948 **/
+/** Chunk was on 1022 **/
 n.d(t, {
-  EM: () => _,
-  WW: () => y,
-  ZP: () => O
+  EM: () => y,
+  WW: () => O,
+  ZP: () => v
 });
 var r = n(255367),
   i = n(73800),
@@ -23,7 +23,7 @@ function b(e) {
   return e ? 9 : p.QP
 }
 
-function _(e, t, n, r, i) {
+function y(e, t, n, r, i) {
   let l = r && "compact" === i ? 8 : p.$k;
   if (e === d.wZ) return l;
   if (e === d.wd) return t.hasFeature(f.oNc.HUB) ? 0 : l;
@@ -38,7 +38,7 @@ function _(e, t, n, r, i) {
   return r && "compact" === i ? 32 : p.Pw
 }
 
-function y(e, t) {
+function O(e, t) {
   switch (e) {
     case d.wZ:
       return "hoisted-spacer";
@@ -57,25 +57,25 @@ function y(e, t) {
     }
   }
 }
-let O = i.memo(function(e) {
+let v = i.memo(function(e) {
   let {
     sectionIndex: t,
     guild: n,
     guildChannels: b,
-    guildChannelsVersion: _,
-    selectedChannelId: y,
-    disableManageChannels: O
+    guildChannelsVersion: y,
+    selectedChannelId: O,
+    disableManageChannels: v
   } = e, {
-    isFavoritesPerk: v
+    isFavoritesPerk: _
   } = (0, a.z)("ChannelListSection"), C = i.useCallback(() => {
     let e = b.getCategoryFromSection(b.recentsSectionNumber);
     if (null == e) return;
     let t = null,
       r = e.getShownChannelAndThreadIds();
-    null != y && r.includes(y) && (t = (0, c.KY)(b)), (0, c.Uo)(n.id, r, t)
-  }, [n.id, y, b, _]), S = (0, s.Q3)("ChannelListSection"), {
-    density: j
-  } = (0, l.TCT)(), E = S && "compact" === j ? 8 : p.$k;
+    null != O && r.includes(O) && (t = (0, c.KY)(b)), (0, c.Uo)(n.id, r, t)
+  }, [n.id, O, b, y]), j = (0, s.Q3)("ChannelListSection"), {
+    density: S
+  } = (0, l.TCT)(), E = j && "compact" === S ? 8 : p.$k;
   switch (t) {
     case d.wZ:
       return (0, r.jsx)("div", {
@@ -92,7 +92,7 @@ let O = i.memo(function(e) {
       });
     case d.p2:
       return (0, r.jsx)(h.P, {
-        name: v ? g.intl.string(g.t.mlPMCw) : g.intl.string(g.t.k8fFjo)
+        name: _ ? g.intl.string(g.t.mlPMCw) : g.intl.string(g.t.k8fFjo)
       });
     case b.recentsSectionNumber:
       return (0, r.jsx)(h.P, {
@@ -119,7 +119,7 @@ let O = i.memo(function(e) {
       return (0, r.jsx)(h.ZP, {
         channel: e.record,
         position: e.position,
-        disableManageChannels: O,
+        disableManageChannels: v,
         children: (0, r.jsx)(u.Z, {
           inlineSpecs: p.MF,
           arrowAlignment: o.cy.TOP,
@@ -134,7 +134,7 @@ let O = i.memo(function(e) {
       return (0, r.jsx)(h.ZP, {
         channel: e.record,
         position: e.position,
-        disableManageChannels: O
+        disableManageChannels: v
       })
     }
   }

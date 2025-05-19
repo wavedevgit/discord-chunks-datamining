@@ -493,7 +493,7 @@ let W = () => (0, r.jsx)(G, {
       onClick: () => g.al(t.applicationId, t.branchId)
     })
   },
-  Q = [{
+  X = [{
     key: "name",
     cellClassName: D.nameCell,
     render: e => (0, r.jsxs)(y.Z, {
@@ -540,7 +540,7 @@ let W = () => (0, r.jsx)(G, {
       })
     }
   }];
-class X extends i.PureComponent {
+class Q extends i.PureComponent {
   componentDidMount() {
     window.addEventListener("resize", this.throttledUpdateHeight)
   }
@@ -584,7 +584,7 @@ class X extends i.PureComponent {
         })]
       }), (0, r.jsx)(I.Z, {
         hasHeader: !1,
-        columns: Q,
+        columns: X,
         data: e,
         className: D.table,
         rowClassName: D.row,
@@ -670,4 +670,4 @@ let $ = (0, _.Z)(c.ZP.connectStores([E.Z, T.Z, P.Z, S.Z, j.Z], () => ({
   paused: P.Z.paused,
   isFocused: j.Z.isFocused(),
   theme: S.Z.theme
-}))((0, b.Z)(X)))
+}))((0, b.Z)(Q)))

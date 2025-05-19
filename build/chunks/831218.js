@@ -1,4 +1,4 @@
-/** Chunk was on 35948 **/
+/** Chunk was on 1022 **/
 n.d(t, {
   Z: () => H
 }), n(388685);
@@ -16,13 +16,13 @@ var r, i = n(255367),
   g = n(100527),
   m = n(367907),
   b = n(906732),
-  _ = n(453542),
-  y = n(702321),
-  O = n(46148),
-  v = n(82295),
+  y = n(453542),
+  O = n(702321),
+  v = n(46148),
+  _ = n(82295),
   C = n(313201),
-  S = n(540059),
-  j = n(860144),
+  j = n(540059),
+  S = n(860144),
   E = n(214852),
   x = n(518311),
   P = n(355298),
@@ -322,12 +322,12 @@ class V extends(r = l.Component) {
       let o = Math.round((t.offsetHeight - 44 * i) / 44),
         s = o > n.length ? n.slice(0, o + 1) : n,
         a = s.map(e => null != r[e] ? r[e].getRecipientId() : null),
-        c = n.some(e => (0, y.Z)(e)),
+        c = n.some(e => (0, O.Z)(e)),
         u = {
           num_users_visible: s.length,
           num_users_visible_with_mobile_indicator: a.filter(e => null != e && T.Z.isMobileOnline(e)).length
         };
-      this.hasReportedAnalytics = !0, m.ZP.trackWithMetadata(D.rMx.DM_LIST_VIEWED, G(U({}, u, (0, _.X)()), {
+      this.hasReportedAnalytics = !0, m.ZP.trackWithMetadata(D.rMx.DM_LIST_VIEWED, G(U({}, u, (0, y.X)()), {
         visible_user_ids: a.filter(e => null != e),
         changelog_dm_visible: c
       }))
@@ -352,7 +352,7 @@ class V extends(r = l.Component) {
         totalRowCount: o,
         preRenderedChildren: s
       } = this.state, a = r[n[t]];
-      return null == a ? null : (0, i.jsx)(O.s, {
+      return null == a ? null : (0, i.jsx)(v.s, {
         channelId: a.id,
         selectedChannelId: l,
         children: (0, i.jsx)(R.ZP, {
@@ -386,7 +386,7 @@ class V extends(r = l.Component) {
         showDMHeader: n,
         isVisualRefreshEnabled: r
       } = this.props;
-      return 0 !== t && n ? (0, i.jsxs)(v.Z, {
+      return 0 !== t && n ? (0, i.jsxs)(_.Z, {
         className: k.privateChannelsHeaderContainer,
         children: [(0, i.jsx)("span", {
           className: k.headerText,
@@ -430,7 +430,7 @@ M(V, "defaultProps", {
 });
 let H = e => {
   var t;
-  let n = (0, S.Q3)("ConnectedPrivateChannelsList"),
+  let n = (0, j.Q3)("ConnectedPrivateChannelsList"),
     {
       density: r
     } = (0, h.TCT)(),
@@ -441,15 +441,15 @@ let H = e => {
       showDMHeader: p
     } = e,
     m = l.Children.count(d),
-    _ = Z.Z.getMutablePrivateChannels(),
-    y = (0, I.k1)(_),
-    O = (0, u.Wu)([A.Z, P.Z, w.Z], () => {
+    y = Z.Z.getMutablePrivateChannels(),
+    O = (0, I.k1)(y),
+    v = (0, u.Wu)([A.Z, P.Z, w.Z], () => {
       let e = A.Z.getPrivateChannelIds();
       return (0, I.tU)(e, [P.Z, w.Z])
     }, []);
-  (0, E.z)(j.R);
+  (0, E.z)(S.R);
   let {
-    analyticsLocations: v
+    analyticsLocations: _
   } = (0, b.ZP)(g.Z.CONTACTS_LIST), x = (0, u.cj)([f.Z, N.Z, Z.Z], () => ({
     theme: N.Z.darkSidebar ? D.BRd.DARK : s,
     keyboardModeEnabled: f.Z.keyboardModeEnabled,
@@ -491,14 +491,14 @@ let H = e => {
     setFocus: L
   });
   return (0, i.jsx)(b.Gt, {
-    value: v,
+    value: _,
     children: (0, i.jsx)(a.bG, {
       navigator: H,
       children: (0, i.jsx)(V, U(G(U({
         density: r,
         isVisualRefreshEnabled: n,
-        channels: y,
-        privateChannelIds: O,
+        channels: O,
+        privateChannelIds: v,
         listRef: R,
         theme: s,
         version: o

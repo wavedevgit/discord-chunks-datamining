@@ -1,11 +1,11 @@
-/** Chunk was on 21924 **/
+/** Chunk was on 85634 **/
 n.d(t, {
   s: () => c
 });
-var r, l, i = n(255367);
+var r, a, i = n(255367);
 n(73800);
-var a = n(159635),
-  o = n.n(a),
+var l = n(159635),
+  o = n.n(l),
   s = n(481060);
 let c = (r = function(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -24,7 +24,7 @@ let c = (r = function(e) {
     })
   }
   return e
-}({}, o().defaultRules.link), l = l = {
+}({}, o().defaultRules.link), a = a = {
   react: function(e, t, n) {
     return (0, i.jsx)(s.eee, {
       href: e.target,
@@ -32,13 +32,13 @@ let c = (r = function(e) {
       children: t(e.content, n)
     })
   }
-}, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+}, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
     n.push.apply(n, r)
   }
   return n
-})(Object(l)).forEach(function(e) {
-  Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
+})(Object(a)).forEach(function(e) {
+  Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
 }), r)

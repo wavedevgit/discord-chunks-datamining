@@ -1,4 +1,4 @@
-/** Chunk was on 35948 **/
+/** Chunk was on 1022 **/
 n.d(t, {
   s: () => E
 }), n(388685);
@@ -17,23 +17,23 @@ var r = n(255367),
   g = n(13186),
   m = n(981631),
   b = n(921944),
-  _ = n(474936),
-  y = n(388032),
-  O = n(706442),
-  v = n(777091);
+  y = n(474936),
+  O = n(388032),
+  v = n(706442),
+  _ = n(777091);
 let C = (e, t) => {
     let n = null != t && !t.isPreview;
     return e ? e && !n ? "no-wallpaper-nitro" : "has-wallpaper-nitro" : "non-nitro"
   },
-  S = e => "has-wallpaper-nitro" === e ? y.intl.string(y.t.T9dXPj) : y.intl.string(y.t.zyvzQ0),
-  j = e => {
+  j = e => "has-wallpaper-nitro" === e ? O.intl.string(O.t.T9dXPj) : O.intl.string(O.t.zyvzQ0),
+  S = e => {
     switch (e) {
       case "non-nitro":
-        return y.intl.string(y.t.VU8fxM);
+        return O.intl.string(O.t.VU8fxM);
       case "no-wallpaper-nitro":
-        return y.intl.string(y.t.BQBNjY);
+        return O.intl.string(O.t.BQBNjY);
       case "has-wallpaper-nitro":
-        return y.intl.string(y.t.eZMxlZ)
+        return O.intl.string(O.t.eZMxlZ)
     }
   },
   E = e => {
@@ -47,7 +47,7 @@ let C = (e, t) => {
     } = (0, p.m)({
       location: "ChatWallpaperDMListCoachmark",
       selectedChannelId: E
-    }), Z = N === h.FN.CONTEXT_MENU, [T, A] = (0, c.US)(x && Z && I && w && !P ? [o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK] : []), R = (0, u.m)(_.p9.TIER_2), D = (0, f.Z)(n), L = T === o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK, k = (0, i.useRef)(null), M = (0, i.useRef)(null), U = (0, i.useRef)(null), [G, B] = (0, i.useState)(g.U.TOP);
+    }), Z = N === h.FN.CONTEXT_MENU, [T, A] = (0, c.US)(x && Z && I && w && !P ? [o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK] : []), R = (0, u.m)(y.p9.TIER_2), D = (0, f.Z)(n), L = T === o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK, k = (0, i.useRef)(null), M = (0, i.useRef)(null), U = (0, i.useRef)(null), [G, B] = (0, i.useState)(g.U.TOP);
     if ((0, i.useLayoutEffect)(() => {
         if (null === k.current) return;
         let e = () => {
@@ -63,8 +63,8 @@ let C = (e, t) => {
         A(b.L.USER_DISMISS)
       },
       H = C(R, null != D ? D : null),
-      F = S(H),
-      W = j(H);
+      F = j(H),
+      z = S(H);
     return (0, r.jsx)("div", {
       ref: k,
       children: (0, r.jsx)(s.yRy, {
@@ -76,14 +76,14 @@ let C = (e, t) => {
         renderPopout: () => (0, r.jsx)(g.Z, {
           ref: U,
           onClose: V,
-          buttonText: y.intl.string(y.t["+IrDzM"]),
+          buttonText: O.intl.string(O.t["+IrDzM"]),
           header: F,
           art: (0, r.jsx)("img", {
-            src: v.Z,
+            src: _.Z,
             alt: "",
-            className: O.chatWallpaperDMListCoachmarkArt
+            className: v.chatWallpaperDMListCoachmarkArt
           }),
-          body: W,
+          body: z,
           align: G
         }),
         children: () => (0, i.cloneElement)(t, {

@@ -5,14 +5,14 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(525654),
-  s = n.n(l),
+  a = n.n(l),
   o = n(442837),
-  a = n(893776),
+  s = n(893776),
   c = n(493773),
   u = n(129293),
   d = n(388905),
-  h = n(703656),
-  g = n(108427),
+  g = n(703656),
+  h = n(108427),
   p = n(981631),
   m = n(388032),
   f = n(20493);
@@ -20,11 +20,11 @@ var r = n(255367),
 function _(e) {
   let {
     location: t,
-    transitionTo: l = h.uL
+    transitionTo: l = g.uL
   } = e, [o, _] = i.useState("submitting");
 
   function x() {
-    return "Android" === s().os.family || "iOS" === s().os.family ? null : (0, r.jsx)(d.zx, {
+    return "Android" === a().os.family || "iOS" === a().os.family ? null : (0, r.jsx)(d.zx, {
       onClick: () => l(p.Z5c.LOGIN, {
         source: "authorizeIPAdress"
       }),
@@ -32,12 +32,12 @@ function _(e) {
     })
   }
   return ((0, c.ZP)(() => {
-    (0, g.e)("authorize_ip");
+    (0, h.e)("authorize_ip");
     let e = (0, u.Z)(t);
     if (null == e) return void _("failed");
     (async () => {
       try {
-        await a.Z.authorizeIPAddress(e), _("succeeded")
+        await s.Z.authorizeIPAddress(e), _("succeeded")
       } catch (e) {
         _("failed")
       }

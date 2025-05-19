@@ -1,4 +1,4 @@
-/** Chunk was on 84921 **/
+/** Chunk was on 27632 **/
 n.d(t, {
   Z: () => _
 });
@@ -11,9 +11,9 @@ var i = n(481060),
   s = n(222727),
   c = n(981631),
   u = n(921944),
-  d = n(388032),
-  E = n(131715);
-let _ = e => {
+  E = n(388032),
+  d = n(131715);
+let _ = 12633 == n.j ? e => {
   let {
     notice: t,
     noticeType: n,
@@ -31,13 +31,13 @@ let _ = e => {
     }), !I && (0, r.jsx)(i.SrA, {
       size: "md",
       color: "currentColor",
-      className: E.premiumIcon
+      className: d.premiumIcon
     }), (0, o.Gv)(T, N, S, I), (0, r.jsx)(i.NoS, {
       onClick: () => {
         _(u.L.UNKNOWN), l.Z.open(c.oAB.PREMIUM)
       },
       noticeType: n,
-      children: d.intl.string(d.t.hvVgAQ)
+      children: E.intl.string(E.t.hvVgAQ)
     })]
   })
-}
+} : null

@@ -1,4 +1,4 @@
-/** Chunk was on 35948 **/
+/** Chunk was on 1022 **/
 n.d(t, {
   PD: () => D,
   ZP: () => M,
@@ -19,13 +19,13 @@ var r = n(255367),
   g = n(906732),
   m = n(540059),
   b = n(434404),
-  _ = n(151494),
-  y = n(496675),
-  O = n(259580),
-  v = n(267642),
+  y = n(151494),
+  O = n(496675),
+  v = n(259580),
+  _ = n(267642),
   C = n(624138),
-  S = n(667815),
-  j = n(531572),
+  j = n(667815),
+  S = n(531572),
   E = n(26323),
   x = n(30513),
   P = n(981631),
@@ -69,7 +69,7 @@ let A = (0, C.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
     let {
       guild: t,
       onSelect: n
-    } = e, [l, o] = i.useState(t.premiumProgressBarEnabled), [s, a] = i.useState(!1), u = (0, c.e7)([y.Z], () => y.Z.can(P.Plq.MANAGE_GUILD, t)), p = async () => {
+    } = e, [l, o] = i.useState(t.premiumProgressBarEnabled), [s, a] = i.useState(!1), u = (0, c.e7)([O.Z], () => O.Z.can(P.Plq.MANAGE_GUILD, t)), p = async () => {
       u && (a(!0), await b.Z.saveGuild(t.id, {
         premiumProgressBarEnabled: !l
       }), o(!l), a(!1))
@@ -100,12 +100,12 @@ let A = (0, C.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
       withMargin: n
     } = e, l = (0, m.Q3)("GuildBoostingSidebarDisplay"), {
       analyticsLocations: u
-    } = (0, g.ZP)(p.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY), b = (0, v.Jh)(t.id), C = (0, _.Z)(t.id), A = (0, v.FZ)(b), D = null == A, L = null != A ? A : b, M = (0, c.e7)([j.Z], () => {
+    } = (0, g.ZP)(p.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY), b = (0, _.Jh)(t.id), C = (0, y.Z)(t.id), A = (0, _.FZ)(b), D = null == A, L = null != A ? A : b, M = (0, c.e7)([S.Z], () => {
       var e;
-      return null != (e = j.Z.getCountForGuild(t.id)) ? e : 0
-    }), U = (0, c.e7)([y.Z], () => y.Z.can(P.Plq.MANAGE_GUILD, t));
+      return null != (e = S.Z.getCountForGuild(t.id)) ? e : 0
+    }), U = (0, c.e7)([O.Z], () => O.Z.can(P.Plq.MANAGE_GUILD, t));
     i.useEffect(() => {
-      M !== C && (0, S.v)(t.id, C)
+      M !== C && (0, j.v)(t.id, C)
     }, [t.id, M, C]);
     let G = D ? "100%" : "".concat(Math.min(100, C / P.oCV[L] * 100), "%"),
       {
@@ -140,23 +140,23 @@ let A = (0, C.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
           perkIntro: I.intl.string(I.t.ZhvSn5)
         })
       },
-      W = I.intl.formatToPlainString(I.t["2oNfMT"], {
-        levelName: (0, v.e9)(L)
+      z = I.intl.formatToPlainString(I.t["2oNfMT"], {
+        levelName: (0, _.e9)(L)
       }),
-      z = I.intl.format(I.t.dhKnYm, {
+      W = I.intl.format(I.t.dhKnYm, {
         numBoosts: C,
         numTotal: P.oCV[L]
       });
-    D && (W = (0, v.e9)(L), z = I.intl.format(I.t.B2byER, {
+    D && (z = (0, _.e9)(L), W = I.intl.format(I.t.B2byER, {
       numBoosts: C
-    })), l && (W = W.toLocaleLowerCase());
+    })), l && (z = z.toLocaleLowerCase());
     let Y = (0, a.JA)("boosts-".concat(t.id));
     return (0, r.jsx)("li", {
       children: (0, r.jsx)(d.ua7, {
         text: H ? I.intl.formatToPlainString(w.default["9CtPjo"], {
-          perk: (0, v.nW)(L)
+          perk: (0, _.nW)(L)
         }) : D ? I.intl.string(I.t["Y+V9go"]) : I.intl.formatToPlainString(I.t.UyDKl5, {
-          levelName: (0, v.nW)(L)
+          levelName: (0, _.nW)(L)
         }),
         color: d.ua7.Colors.BLACK,
         position: "top",
@@ -191,7 +191,7 @@ let A = (0, C.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
                 color: l ? "none" : "interactive-active",
                 variant: l ? "text-sm/medium" : "text-xs/bold",
                 lineClamp: 1,
-                children: W
+                children: z
               })
             }), (0, r.jsxs)("div", {
               className: N.progressFraction,
@@ -200,12 +200,12 @@ let A = (0, C.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
                 variant: l ? "text-sm/medium" : "text-xs/normal",
                 className: N.progressText,
                 lineClamp: 1,
-                children: z
-              }), (0, r.jsx)(O.Z, {
+                children: W
+              }), (0, r.jsx)(v.Z, {
                 className: N.count,
                 height: 16,
                 width: 16,
-                direction: O.Z.Directions.RIGHT
+                direction: v.Z.Directions.RIGHT
               })]
             })]
           }), (0, r.jsxs)("div", {

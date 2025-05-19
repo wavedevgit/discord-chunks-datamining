@@ -1,9 +1,9 @@
-/** Chunk was on 35948 **/
+/** Chunk was on 1022 **/
 n.d(t, {
   Ne: () => f,
   Ny: () => g,
   Or: () => b,
-  jt: () => _
+  jt: () => y
 }), n(388685);
 var r = n(255367);
 n(73800);
@@ -82,13 +82,13 @@ function b(e) {
     if (!n) return null;
     t = o.gj8
   }
-  return y({
+  return O({
     icon: t,
     isCurrentUserConnected: l
   })
 }
 
-function _(e) {
+function y(e) {
   let {
     guildJoinRequestStatus: t
   } = e, [n, r] = function(e) {
@@ -103,13 +103,13 @@ function _(e) {
         return [void 0, o.vdY]
     }
   }(t);
-  return y({
+  return O({
     icon: r,
     color: n
   })
 }
 
-function y(e) {
+function O(e) {
   let {
     icon: t,
     color: n,

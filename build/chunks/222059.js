@@ -1,4 +1,4 @@
-/** Chunk was on 35948 **/
+/** Chunk was on 1022 **/
 n.d(t, {
   u: () => L
 }), n(388685);
@@ -17,13 +17,13 @@ var r = n(255367),
   g = n(460181),
   m = n(155409),
   b = n(944486),
-  _ = n(594174),
-  y = n(431),
-  O = n(774343),
-  v = n(417363),
+  y = n(594174),
+  O = n(431),
+  v = n(774343),
+  _ = n(417363),
   C = n(941128),
-  S = n(780570),
-  j = n(278464),
+  j = n(780570),
+  S = n(278464),
   E = n(276952),
   x = n(682662),
   P = n(662146),
@@ -52,20 +52,20 @@ function D(e) {
     selected: p,
     user: f,
     badge: b,
-    link: _,
-    showProgressBadge: y
-  } = e, O = (0, o.e7)([u.Z], () => u.Z.isEditorOpen), [v, C] = i.useState(!1), [S, j] = i.useState(!1), [N, D] = i.useState(null), [L, k] = i.useState(0), M = (0, l.Ie)("home"), U = (0, h.Q3)("DefaultHomeButton"), G = () => {
+    link: y,
+    showProgressBadge: O
+  } = e, v = (0, o.e7)([u.Z], () => u.Z.isEditorOpen), [_, C] = i.useState(!1), [j, S] = i.useState(!1), [N, D] = i.useState(null), [L, k] = i.useState(0), M = (0, l.Ie)("home"), U = (0, h.Q3)("DefaultHomeButton"), G = () => {
     D(null), k(0), clearTimeout(N)
   };
   if (null == f) return null;
   let B = T.intl.string(T.t.YUU0RE);
-  S && (B = s.K.get(w.wli) ? T.intl.string(T.t.nkq1l5) : T.intl.string(T.t.Be8Q5O));
+  j && (B = s.K.get(w.wli) ? T.intl.string(T.t.nkq1l5) : T.intl.string(T.t.Be8Q5O));
   let V = null;
-  !p && y && (V = (0, r.jsx)(c.Z, {
+  !p && O && (V = (0, r.jsx)(c.Z, {
     className: A.downloadProgress,
     determineOwnVisibility: !1
   }));
-  let H = p || v || O,
+  let H = p || _ || v,
     F = (0, r.jsx)(a.aRk, {
       selected: U || H,
       lowerBadge: b > 0 ? (0, I.Ne)(b) : null,
@@ -97,8 +97,8 @@ function D(e) {
           if (!__OVERLAY__ && (null != N && clearTimeout(N), D(setTimeout(G, 500)), k(L + 1), 15 === L)) {
             G();
             let e = !s.K.get(w.wli);
-            s.K.set(w.wli, e), e && s.K.set(Z.O5, !0), e ? (0, g.GN)("discodo") : (0, g.GN)("user_leave"), j(!0), setTimeout(() => {
-              j(!1)
+            s.K.set(w.wli, e), e && s.K.set(Z.O5, !0), e ? (0, g.GN)("discodo") : (0, g.GN)("user_leave"), S(!0), setTimeout(() => {
+              S(!1)
             }, 1e3)
           }
         },
@@ -108,7 +108,7 @@ function D(e) {
         "aria-selected": p
       }, M), n = n = {
         to: {
-          pathname: _,
+          pathname: y,
           state: {
             analyticsSource: {
               page: w.ZY5.GUILD_CHANNEL,
@@ -138,7 +138,7 @@ function D(e) {
       children: (0, r.jsxs)(x.H, {
         children: [(0, r.jsx)(E.Z, {
           selected: p,
-          hovered: v,
+          hovered: _,
           className: A.pill
         }), (0, r.jsx)(P.Z, {
           color: a.ua7.Colors.PRIMARY,
@@ -153,14 +153,14 @@ function D(e) {
 }
 
 function L() {
-  let e = (0, j.n)(),
-    t = (0, o.e7)([C.Z, v.Z], () => {
-      let e = (0, c.E)(C.Z.activeItems, v.Z),
+  let e = (0, S.n)(),
+    t = (0, o.e7)([C.Z, _.Z], () => {
+      let e = (0, c.E)(C.Z.activeItems, _.Z),
         {
           total: t,
           progress: n
-        } = S.lK(e),
-        r = S.xI(n, t);
+        } = j.lK(e),
+        r = j.xI(n, t);
       return r > 0 && r < 100
     }),
     n = (0, f.If)(),
@@ -168,16 +168,16 @@ function L() {
     {
       unviewedTrialCount: l,
       unviewedDiscountCount: s
-    } = (0, o.cj)([y.Z], () => ({
-      unviewedTrialCount: y.Z.getUnacknowledgedOffers(i).length,
-      unviewedDiscountCount: y.Z.getUnacknowledgedDiscountOffers().length
+    } = (0, o.cj)([O.Z], () => ({
+      unviewedTrialCount: O.Z.getUnacknowledgedOffers(i).length,
+      unviewedDiscountCount: O.Z.getUnacknowledgedDiscountOffers().length
     })),
     a = l + s,
-    u = (0, o.e7)([_.default], () => _.default.getCurrentUser()),
+    u = (0, o.e7)([y.default], () => y.default.getCurrentUser()),
     d = (0, p.q)(),
     h = n + a + d,
     g = h === a && a > 0 && n + d === 0,
-    m = O.Z.getHomeLink();
+    m = v.Z.getHomeLink();
   return g && (m = w.Z5c.APPLICATION_STORE), (0, r.jsx)(D, {
     selected: e,
     user: u,

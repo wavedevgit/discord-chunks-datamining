@@ -1,12 +1,12 @@
-/** Chunk was on 21924 **/
+/** Chunk was on 85634 **/
 n.d(t, {
   Z: () => u
 }), n(388685);
 var r = n(255367);
 n(73800);
-var l = n(120356),
-  i = n.n(l),
-  a = n(481060),
+var a = n(120356),
+  i = n.n(a),
+  l = n(481060),
   o = n(259580),
   s = n(88309),
   c = n(935786);
@@ -14,14 +14,14 @@ let d = e => {
     let {
       child: t,
       onClick: n
-    } = e, [l] = t;
-    return (0, r.jsxs)(a.P3F, {
+    } = e, [a] = t;
+    return (0, r.jsxs)(l.P3F, {
       className: i()(c.childButton, s.listElement),
       onClick: () => n(t),
-      children: [(0, r.jsx)(a.Text, {
+      children: [(0, r.jsx)(l.Text, {
         className: c.childText,
         variant: "text-md/semibold",
-        children: l
+        children: a
       }), (0, r.jsx)(o.Z, {
         className: c.childIcon,
         direction: o.Z.Directions.RIGHT
@@ -36,15 +36,15 @@ let d = e => {
       onSelectChild: n
     } = e;
     if (null == t || 0 === t.length) return null;
-    let l = t.map(e => {
-      let [t, l] = e;
+    let a = t.map(e => {
+      let [t, a] = e;
       return (0, r.jsx)(d, {
         child: e,
         onClick: n
-      }, "".concat(t, "+").concat(l))
+      }, "".concat(t, "+").concat(a))
     });
     return (0, r.jsx)("div", {
       className: s.listElementWrapper,
-      children: l
+      children: a
     })
   }
