@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 37485 **/
 "use strict";
 n.d(t, {
   Z: () => u
@@ -8,7 +8,7 @@ var r = n(255367),
   l = n(755930),
   s = n(267101),
   a = n(388032),
-  o = n(963877);
+  o = n(697495);
 let c = (0, l.Yn)([(0, l.nn)({
   key: "LISTING_NAME",
   cellClassName: o.listingNameColumn,

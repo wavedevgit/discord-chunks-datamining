@@ -1,10 +1,14 @@
-/** Chunk was on 73344 **/
+/** Chunk was on 16318 **/
 e.exports = {
   popout: "popout_cba592",
   header: "header_cba592",
   searchBar: "searchBar_cba592",
   searchBarComponent: "searchBarComponent_cba592",
   addButton: "addButton_cba592",
+  customizationContainer: "customizationContainer_cba592",
+  iconSelector: "iconSelector_cba592",
+  channelNameInput: "channelNameInput_cba592",
+  channelNameLabel: "channelNameLabel_cba592",
   subtitleWarning: "subtitleWarning_cba592",
   noResults: "noResults_cba592",
   scroller: "scroller_cba592",

@@ -1,6 +1,6 @@
 /**
   Module ID: 53300
-  Original File Name: 418f9e5eba99df24
+  Original File Name: 9cd053d70df80431
 **/
 .container__6f9f7 {
     display: flex;
@@ -150,8 +150,12 @@
     max-width: 352px
 }
 
-.description__69ef9,.title__69ef9 {
+.descriptionContainer__69ef9,.title__69ef9 {
     margin-bottom: var(--spacing-24)
+}
+
+.privateProfileWarning__69ef9 {
+    margin-top: var(--spacing-16)
 }
 
 .enableSwitchContainer__69ef9 {
@@ -460,4 +464,4 @@
     margin-top: var(--spacing-16)
 }
 
-/*# sourceMappingURL=418f9e5eba99df24.css.map*/
+/*# sourceMappingURL=9cd053d70df80431.css.map*/

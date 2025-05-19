@@ -1,10 +1,10 @@
 /** Chunk was on 37220 **/
 n.d(t, {
-  $Z: () => Z,
+  $Z: () => N,
   B8: () => I,
   F4: () => P,
   HH: () => A,
-  Hd: () => N,
+  Hd: () => Z,
   Xl: () => T,
   dF: () => C,
   eM: () => R,
@@ -54,11 +54,11 @@ function _(e, t) {
   }), (0, b.JG)((0, p.wR)(e.guild_id, e.id, t.id))
 }
 
-function Z(e, t, n) {
+function N(e, t, n) {
   t.state === j.yb.SEND_FAILED || n.shiftKey ? r.Z.deleteMessage(e.id, t.id, t.state === j.yb.SEND_FAILED) : l.Z.confirmDelete(e, t)
 }
 
-function N(e, t) {
+function Z(e, t) {
   r.Z.startEditMessage(e.id, t.id, t.content)
 }
 

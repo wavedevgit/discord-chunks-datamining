@@ -1,4 +1,4 @@
-/** Chunk was on 48791 **/
+/** Chunk was on 72019 **/
 e.exports = {
   wrapper: "wrapper_fa8995",
   gradient: "gradient_fa8995",

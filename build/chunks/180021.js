@@ -1,4 +1,4 @@
-/** Chunk was on 40790 **/
+/** Chunk was on 72704 **/
 e.exports = {
   container: "container__3ce43",
   containerV2: "containerV2__3ce43",
@@ -15,5 +15,12 @@ e.exports = {
   reverseTrialHomeHeader: "reverseTrialHomeHeader__3ce43",
   flexCentered: "flexCentered__3ce43",
   tooltip: "tooltip__3ce43",
-  pillContainer: "pillContainer__3ce43"
+  pillContainer: "pillContainer__3ce43",
+  pillIcon: "pillIcon__3ce43",
+  giftingContainerHighVis: "giftingContainerHighVis__3ce43",
+  giftingContainerHighVisIcon: "giftingContainerHighVisIcon__3ce43",
+  giftingContainerHighVisDescription: "giftingContainerHighVisDescription__3ce43",
+  giftingContainerHighVisButtonContainer: "giftingContainerHighVisButtonContainer__3ce43",
+  giftingContainerHighVisButton: "giftingContainerHighVisButton__3ce43",
+  giftingContainerHighVisButtonText: "giftingContainerHighVisButtonText__3ce43"
 }

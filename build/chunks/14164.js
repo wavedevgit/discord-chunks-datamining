@@ -1,4 +1,4 @@
-/** Chunk was on 49245 **/
+/** Chunk was on 40417 **/
 e.exports = {
   guildInviteContainer: "guildInviteContainer__083ae",
   clickable: "clickable__083ae",
@@ -9,8 +9,9 @@ e.exports = {
   floatingFooter: "floatingFooter__083ae",
   gradient: "gradient__083ae",
   footerContent: "footerContent__083ae",
-  separator: "separator__083ae",
+  collapsedFooterContent: "collapsedFooterContent__083ae",
   buttonContainer: "buttonContainer__083ae",
-  hideDetailsButton: "hideDetailsButton__083ae",
-  hideDetailsButtonInner: "hideDetailsButtonInner__083ae"
+  hideDetailsButtonInner: "hideDetailsButtonInner__083ae",
+  inviteTitleWrapper: "inviteTitleWrapper__083ae",
+  inviteTitle: "inviteTitle__083ae"
 }

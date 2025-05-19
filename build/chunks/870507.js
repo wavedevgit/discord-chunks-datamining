@@ -1,5 +1,4 @@
-/** Chunk was on 93243 **/
-"use strict";
+/** Chunk was on 73628 **/
 e.exports = {
   container: "container_fcf29c",
   flexContainer: "flexContainer_fcf29c",

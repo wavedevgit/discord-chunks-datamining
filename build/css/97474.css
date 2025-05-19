@@ -1,6 +1,6 @@
 /**
   Module ID: 97474
-  Original File Name: 275bc5a9c11edb9a
+  Original File Name: c55537ed9cb1dec2
 **/
 .labelWrapper_abe771 {
     align-items: center;
@@ -59,7 +59,7 @@
 }
 
 .ringing__3751b {
-    animation: outgoing-call-pulse__3751b 1s ease-out infinite;
+    animation: outgoing-call-pulse__3751b 1.25s ease-out infinite;
     opacity: .3
 }
 
@@ -95,4 +95,4 @@
     margin-right: 8px
 }
 
-/*# sourceMappingURL=275bc5a9c11edb9a.css.map*/
+/*# sourceMappingURL=c55537ed9cb1dec2.css.map*/

@@ -1,10 +1,13 @@
-/** Chunk was on 88708 **/
+/** Chunk was on 67489 **/
 e.exports = {
   container: "container_b5b7aa",
   positionContentOverBackground: "positionContentOverBackground_b5b7aa",
   contents: "contents_b5b7aa",
   heroAssetWrapper: "heroAssetWrapper_b5b7aa",
   heroAsset: "heroAsset_b5b7aa",
+  heroAssetVideo: "heroAssetVideo_b5b7aa",
+  hidden: "hidden_b5b7aa",
+  visible: "visible_b5b7aa",
   overlay: "overlay_b5b7aa",
   darkThemeGradient: "darkThemeGradient_b5b7aa",
   lightThemeGradient: "lightThemeGradient_b5b7aa",
@@ -17,7 +20,5 @@ e.exports = {
   partnerLogotypes: "partnerLogotypes_b5b7aa",
   bottomRow: "bottomRow_b5b7aa",
   hints: "hints_b5b7aa",
-  hintsContainer: "hintsContainer_b5b7aa",
-  videoOverlay: "videoOverlay_b5b7aa",
-  videoOverlayVisible: "videoOverlayVisible_b5b7aa"
+  hintsContainer: "hintsContainer_b5b7aa"
 }

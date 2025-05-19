@@ -1,4 +1,4 @@
-/** Chunk was on 49245 **/
+/** Chunk was on 70004 **/
 e.exports = {
   outerContainer: "outerContainer__2055a",
   outerContainerNoProgress: "outerContainerNoProgress__2055a",
@@ -15,6 +15,7 @@ e.exports = {
   taskDetails: "taskDetails__2055a",
   taskInstructions: "taskInstructions__2055a",
   ctaButtonContainer: "ctaButtonContainer__2055a",
+  questEnrollmentBlockedButton: "questEnrollmentBlockedButton__2055a",
   ctaButtonWrapper: "ctaButtonWrapper__2055a",
   ctaButtonInner: "ctaButtonInner__2055a",
   learnMoreLink: "learnMoreLink__2055a",

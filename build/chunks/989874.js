@@ -1,5 +1,4 @@
-/** Chunk was on 97502 **/
-"use strict";
+/** Chunk was on 77578 **/
 e.exports = {
   headerGuildName: "headerGuildName__949ab",
   headerGuildBadge: "headerGuildBadge__949ab",

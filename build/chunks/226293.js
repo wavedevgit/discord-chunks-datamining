@@ -1,4 +1,4 @@
-/** Chunk was on 98587 **/
+/** Chunk was on 93886 **/
 e.exports = {
   premiumIcon: "premiumIcon__9671b",
   platformIcon: "platformIcon__9671b",
@@ -14,7 +14,6 @@ e.exports = {
   premiumText: "premiumText__9671b",
   premiumAction: "premiumAction__9671b",
   ellipsis: "ellipsis__9671b",
-  quarantineNotice: "quarantineNotice__9671b",
   quarantineLearnMoreLink: "quarantineLearnMoreLink__9671b",
   errorCodeNoticeText: "errorCodeNoticeText__9671b",
   errorCodeNoticeClickable: "errorCodeNoticeClickable__9671b"

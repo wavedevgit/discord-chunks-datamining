@@ -1,34 +1,34 @@
-/** Chunk was on 97502 **/
+/** Chunk was on 37485 **/
 "use strict";
 n.d(t, {
   Z: () => m
 });
-var r = n(200651),
-  i = n(192379),
-  s = n(120356),
-  l = n.n(s),
-  a = n(200100),
+var r = n(255367),
+  i = n(73800),
+  l = n(120356),
+  s = n.n(l),
+  a = n(950035),
   o = n(481060),
   c = n(190686);
-class d extends i.Component {
+class u extends i.Component {
   render() {
     var e, t;
     let n = this.props,
       {
         icon: i
       } = n,
-      s = function(e, t) {
+      l = function(e, t) {
         if (null == e) return {};
         var n, r, i = function(e, t) {
           if (null == e) return {};
           var n, r, i = {},
-            s = Object.keys(e);
-          for (r = 0; r < s.length; r++) n = s[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+            l = Object.keys(e);
+          for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
           return i
         }(e, t);
         if (Object.getOwnPropertySymbols) {
-          var s = Object.getOwnPropertySymbols(e);
-          for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+          var l = Object.getOwnPropertySymbols(e);
+          for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
         }
         return i
       }(n, ["icon"]);
@@ -51,7 +51,7 @@ class d extends i.Component {
       return e
     }({
       size: "md"
-    }, s), t = t = {
+    }, l), t = t = {
       color: "currentColor"
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
@@ -65,17 +65,17 @@ class d extends i.Component {
     }), e))
   }
 }
-let u = (0, a.animated)(d),
+let d = (0, a.animated)(u),
   m = function(e) {
     let {
       className: t,
       name: n,
       icon: i,
-      iconClassName: s
+      iconClassName: l
     } = e, a = (0, o.Yzy)({
       name: n,
       icon: i,
-      iconClassName: s
+      iconClassName: l
     }, {
       key: e => e.name,
       initial: null,
@@ -90,15 +90,15 @@ let u = (0, a.animated)(d),
       }
     }, "animate-always");
     return (0, r.jsx)("div", {
-      className: l()(c.crossfade, t),
+      className: s()(c.crossfade, t),
       children: a((e, t) => {
         let {
           icon: n,
           iconClassName: i
         } = t;
-        return (0, r.jsx)(u, {
+        return (0, r.jsx)(d, {
           icon: n,
-          className: l()(c.icon, i),
+          className: s()(c.icon, i),
           style: e
         })
       })

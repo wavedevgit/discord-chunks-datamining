@@ -1,4 +1,2 @@
-/** Chunk was on 73344 **/
-e.exports = {
-  art: "art__9292c"
-}
+/** Chunk was on 16318 **/
+e.exports = {}

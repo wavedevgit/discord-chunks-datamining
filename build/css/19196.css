@@ -1,6 +1,6 @@
 /**
   Module ID: 19196
-  Original File Name: 522f233ade8e00cd
+  Original File Name: baf48fec1a535711
 **/
 .label__33095 {
     gap: var(--spacing-8)
@@ -91,7 +91,7 @@
 }
 
 .ringing__3751b {
-    animation: outgoing-call-pulse__3751b 1s ease-out infinite;
+    animation: outgoing-call-pulse__3751b 1.25s ease-out infinite;
     opacity: .3
 }
 
@@ -117,4 +117,4 @@
     margin-right: 4px
 }
 
-/*# sourceMappingURL=522f233ade8e00cd.css.map*/
+/*# sourceMappingURL=baf48fec1a535711.css.map*/

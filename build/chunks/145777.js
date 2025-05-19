@@ -1,5 +1,4 @@
-/** Chunk was on 16383 **/
-"use strict";
+/** Chunk was on 89373 **/
 e.exports = {
   popoutContainer: "popoutContainer__8641f",
   mainContent: "mainContent__8641f",

@@ -1,8 +1,8 @@
-/** Chunk was on 44011 **/
-t.d(e, {
+/** Chunk was on 63776 **/
+t.d(n, {
   P: () => i
 });
-let l = (0, t(818083).B)({
+let r = (0, t(818083).B)({
   kind: "user",
   id: "2023-08-30_open-in-popout",
   label: "Open Channel in Popout",
@@ -18,9 +18,9 @@ let l = (0, t(818083).B)({
   }]
 });
 
-function i(n) {
-  return l.useExperiment({
-    location: n
+function i(e) {
+  return r.useExperiment({
+    location: e
   }, {
     autoTrackExposure: !1
   }).enabled

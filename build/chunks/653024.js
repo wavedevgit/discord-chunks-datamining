@@ -1,4 +1,4 @@
-/** Chunk was on 48791 **/
+/** Chunk was on 72019 **/
 e.exports = {
   listItem: "listItem__650eb",
   unavailableBadge: "unavailableBadge__650eb",

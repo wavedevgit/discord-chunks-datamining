@@ -1,4 +1,4 @@
-/** Chunk was on 40790 **/
+/** Chunk was on 72704 **/
 e.exports = {
   bgShade: "bgShade__6d791",
   titleWrapper: "titleWrapper__6d791 bgShade__6d791",

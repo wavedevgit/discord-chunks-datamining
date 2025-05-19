@@ -1,4 +1,4 @@
-/** Chunk was on 40790 **/
+/** Chunk was on 72704 **/
 e.exports = {
   sideNavContent: "sideNavContent_dc2e0e",
   container: "container_dc2e0e",

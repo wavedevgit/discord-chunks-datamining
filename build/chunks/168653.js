@@ -1,4 +1,4 @@
-/** Chunk was on 49245 **/
+/** Chunk was on 40417 **/
 e.exports = {
   inviteDetailsContainer: "inviteDetailsContainer_da5e8d",
   clickable: "clickable_da5e8d",

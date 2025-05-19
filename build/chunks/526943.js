@@ -1,4 +1,4 @@
-/** Chunk was on 48791 **/
+/** Chunk was on 72019 **/
 e.exports = {
   container: "container_f37cb1",
   clickable: "clickable_f37cb1",
@@ -30,5 +30,7 @@ e.exports = {
   invitesRefresh: "invitesRefresh_f37cb1",
   guildDropdown: "guildDropdown_f37cb1",
   guildBadgeAndName: "guildBadgeAndName_f37cb1",
-  inviteButton: "inviteButton_f37cb1"
+  inviteButton: "inviteButton_f37cb1",
+  settingsButton: "settingsButton_f37cb1",
+  settingsButtonIcon: "settingsButtonIcon_f37cb1"
 }

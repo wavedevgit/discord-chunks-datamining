@@ -1,5 +1,4 @@
-/** Chunk was on 93243 **/
-"use strict";
+/** Chunk was on 79376 **/
 e.exports = {
   button: "button_e18686",
   default: "default_e18686",

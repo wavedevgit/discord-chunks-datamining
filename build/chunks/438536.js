@@ -1,23 +1,23 @@
-/** Chunk was on 86797 **/
+/** Chunk was on 40417 **/
 n.d(t, {
-  Z: () => u
+  Z: () => c
 });
-var i = n(255367);
+var r = n(255367);
 n(73800);
-var r = n(442837),
-  a = n(481060),
-  l = n(569471),
+var i = n(442837),
+  l = n(481060),
+  a = n(569471),
   o = n(346479),
-  d = n(388032);
+  s = n(388032);
 
-function u(e, t) {
-  return (0, r.e7)([l.Z], () => l.Z.hasJoined(e.id)) ? (0, i.jsx)(a.sNh, {
+function c(e, t) {
+  return (0, i.e7)([a.Z], () => a.Z.hasJoined(e.id)) ? (0, r.jsx)(l.sNh, {
     id: "leave-thread",
-    label: e.isForumPost() ? d.intl.string(d.t["2LsZdX"]) : d.intl.string(d.t["fa/84u"]),
+    label: e.isForumPost() ? s.intl.string(s.t["2LsZdX"]) : s.intl.string(s.t["fa/84u"]),
     action: () => o.Z.leaveThread(e, t)
-  }) : (0, i.jsx)(a.sNh, {
+  }) : (0, r.jsx)(l.sNh, {
     id: "join-thread",
-    label: e.isForumPost() ? d.intl.string(d.t.ihLPiI) : d.intl.string(d.t["10kukZ"]),
+    label: e.isForumPost() ? s.intl.string(s.t.ihLPiI) : s.intl.string(s.t["10kukZ"]),
     action: () => o.Z.joinThread(e, t)
   })
 }

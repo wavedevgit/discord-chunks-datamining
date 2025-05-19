@@ -1,16 +1,16 @@
-/** Chunk was on 45620 **/
+/** Chunk was on 90111 **/
 "use strict";
-n.d(t, {
-  Z: () => m
-}), n(388685);
-var r = n(255367),
-  l = n(73800),
-  i = n(950035),
-  a = n(780384),
-  o = n(481060),
-  s = n(410030),
-  c = n(965645),
-  u = n(362061);
+r.d(t, {
+  Z: () => h
+}), r(388685);
+var n = r(255367),
+  i = r(73800),
+  o = r(950035),
+  l = r(780384),
+  a = r(481060),
+  s = r(410030),
+  c = r(965645),
+  u = r(362061);
 let d = [{
     box: "#FFD89E",
     ribbon: "#FF7476"
@@ -33,7 +33,7 @@ let d = [{
     box: "#DB6D6D",
     ribbon: "#67DA9C"
   }],
-  b = [{
+  p = [{
     box: "#EABB75",
     ribbon: "#E4595C"
   }, {
@@ -55,34 +55,34 @@ let d = [{
     box: "#DB6F6F",
     ribbon: "#81C29F"
   }],
-  f = 1 / 300,
-  p = (0, i.animated)(c.Z),
-  g = (0, i.animated)(u.Z),
-  h = (0, i.animated)(o.OgN),
-  m = l.memo(function(e) {
+  b = 1 / 300,
+  f = (0, o.animated)(c.Z),
+  v = (0, o.animated)(u.Z),
+  m = (0, o.animated)(a.OgN),
+  h = i.memo(function(e) {
     let {
       themeOverride: t,
-      hovered: n,
-      isContentDismissed: i,
+      hovered: r,
+      isContentDismissed: o,
       boxColors: c = {
         dark: d,
-        light: b
+        light: p
       }
-    } = e, u = (0, s.ZP)(), [m, _] = function(e) {
-      let [t, n] = l.useState(!1), [r, i] = l.useState(Math.floor(7 * Math.random())), a = l.useRef(r);
-      return l.useEffect(() => {
-        a.current = r
-      }), l.useEffect(() => {
+    } = e, u = (0, s.ZP)(), [h, g] = function(e) {
+      let [t, r] = i.useState(!1), [n, o] = i.useState(Math.floor(7 * Math.random())), l = i.useRef(n);
+      return i.useEffect(() => {
+        l.current = n
+      }), i.useEffect(() => {
         if (e) return;
-        let t = Math.random() <= f;
-        if (n(t), !t) {
+        let t = Math.random() <= b;
+        if (r(t), !t) {
           let e;
-          do e = Math.floor(7 * Math.random()); while (e === a.current);
-          i(e)
+          do e = Math.floor(7 * Math.random()); while (e === l.current);
+          o(e)
         }
-      }, [e]), [t, r]
-    }(n), C = (0, o.q_F)({
-      reverse: !n,
+      }, [e]), [t, n]
+    }(r), x = (0, a.q_F)({
+      reverse: !r,
       reset: !0,
       from: {
         scale: 1
@@ -94,13 +94,13 @@ let d = [{
         tension: 800,
         friction: 24
       }
-    }), v = i ? _ : 0, O = (0, a.wj)(null != t ? t : u) ? c.dark[v] : c.light[v];
-    return !n && i ? (0, r.jsx)(h, {}) : i && m ? (0, r.jsx)(g, {
-      isDark: (0, a.wj)(u),
-      style: C
-    }) : (0, r.jsx)(p, {
+    }), _ = o ? g : 0, O = (0, l.wj)(null != t ? t : u) ? c.dark[_] : c.light[_];
+    return !r && o ? (0, n.jsx)(m, {}) : o && h ? (0, n.jsx)(v, {
+      isDark: (0, l.wj)(u),
+      style: x
+    }) : (0, n.jsx)(f, {
       boxColor: O.box,
       ribbonColor: O.ribbon,
-      style: C
+      style: x
     })
   })

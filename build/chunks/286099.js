@@ -1,4 +1,4 @@
-/** Chunk was on 21924 **/
+/** Chunk was on 89373 **/
 e.exports = {
   successImg: "successImg_f05c94"
 }

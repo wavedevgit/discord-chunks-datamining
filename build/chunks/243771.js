@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
-n.d(t, {
-  Z: () => o
+n.r(t), n.d(t, {
+  default: () => o,
+  messagesLoader: () => i
 });
 let {
   createLoader: r
-} = n(164484), i = r({
+} = n(66685), i = r({
   bg: () => n.e("1338").then(n.t.bind(n, 610522, 19)),
   cs: () => n.e("22545").then(n.t.bind(n, 541086, 19)),
   da: () => n.e("2273").then(n.t.bind(n, 633589, 19)),
@@ -21,7 +22,7 @@ let {
   hu: () => n.e("47018").then(n.t.bind(n, 383958, 19)),
   it: () => n.e("68299").then(n.t.bind(n, 885443, 19)),
   ja: () => n.e("99451").then(n.t.bind(n, 222710, 19)),
-  ko: () => n.e("34838").then(n.t.bind(n, 25171, 19)),
+  ko: () => n.e("34838").then(n.t.bind(n, 82965, 19)),
   lt: () => n.e("22470").then(n.t.bind(n, 814527, 19)),
   nl: () => n.e("31173").then(n.t.bind(n, 125757, 19)),
   no: () => n.e("22410").then(n.t.bind(n, 163146, 19)),
@@ -39,4 +40,4 @@ let {
   "en-US": () => n.e("44134").then(n.bind(n, 549814))
 }, "en-US"), {
   makeMessagesProxy: a
-} = n(164484), o = a(i)
+} = n(66685), o = a(i)

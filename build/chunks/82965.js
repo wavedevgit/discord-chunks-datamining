@@ -1,16 +1,2 @@
-/** Chunk was on web.js **/
-"use strict";
-n.d(t, {
-  Z: () => o
-});
-var r = n(861254),
-  i = n(221241);
-
-function o(e) {
-  let {
-    groupedButtons: t
-  } = (0, r.ZP)(e), {
-    squareButtonsEnabled: n
-  } = (0, i.Z)(e);
-  return t || n
-}
+/** Chunk was on 34838 **/
+s.exports = JSON.parse('{"cgdAs7":"(새 탭에서 열림)"}')

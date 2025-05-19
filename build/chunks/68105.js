@@ -1,4 +1,4 @@
-/** Chunk was on 88708 **/
+/** Chunk was on 67489 **/
 e.exports = {
   contentExpanded: "contentExpanded_f339f7",
   contentInteractable: "contentInteractable_f339f7",

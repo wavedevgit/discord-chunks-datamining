@@ -1,6 +1,6 @@
 /**
   Module ID: 49675
-  Original File Name: 11df4d6d606fdcef
+  Original File Name: f4b958aa54ba1926
 **/
 .availabilityIndicator__40463 {
     display: flex;
@@ -73,10 +73,6 @@
     gap: var(--spacing-12);
     grid-template-columns: auto auto;
     position: relative
-}
-
-.recentAvatarSlots__1df30.withPremiumUpsell__1df30 {
-    grid-template-columns: auto auto 1fr
 }
 
 .recentAvatarList__1df30 {
@@ -188,32 +184,6 @@
 }
 
 .avatarPlaceholder__1df30 {
-}
-
-.premiumUpsellButton__1df30 {
-    align-items: center;
-    background-color: var(--background-secondary-alt);
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    position: relative
-}
-
-.premiumUpsellButton__1df30 :after {
-    background-color: var(--modal-background);
-    border-radius: var(--radius-round);
-    bottom: -4px;
-    content: "";
-    height: 24px;
-    position: absolute;
-    right: -4px;
-    width: 24px
-}
-
-.premiumUpsellLockIcon__1df30 {
-    bottom: 2px;
-    position: absolute;
-    right: 2px
 }
 
 .modal_edf440 {
@@ -395,4 +365,4 @@
     margin: 0
 }
 
-/*# sourceMappingURL=11df4d6d606fdcef.css.map*/
+/*# sourceMappingURL=f4b958aa54ba1926.css.map*/

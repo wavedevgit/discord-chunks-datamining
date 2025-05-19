@@ -8,8 +8,8 @@ var i = n(255367),
   a = n(442837),
   o = n(544891),
   s = n(481060),
-  c = n(53281),
-  u = n(476326),
+  u = n(53281),
+  c = n(476326),
   d = n(304761),
   m = n(273031),
   h = n(859235),
@@ -22,7 +22,7 @@ var i = n(255367),
   y = n(223356),
   b = n(225452),
   O = n(388032),
-  S = n(606174);
+  S = n(388426);
 let _ = ["Android", "iOS", "Windows Mobile", "Windows", "Linux", "Mac OS X"].map(e => ({
   label: e,
   value: e
@@ -43,7 +43,7 @@ function w(e) {
         return "Linux"
     }
     return ""
-  }((0, j.getOS)())), [Q, $] = r.useState(""), [ee, et] = r.useState(""), [en, ei] = r.useState(""), [er, el] = r.useState(""), [ea, eo] = r.useState(!1), [es, ec] = r.useState(!1), [eu, ed] = r.useState(!1), [em, eh] = r.useState(null);
+  }((0, j.getOS)())), [Q, $] = r.useState(""), [ee, et] = r.useState(""), [en, ei] = r.useState(""), [er, el] = r.useState(""), [ea, eo] = r.useState(!1), [es, eu] = r.useState(!1), [ec, ed] = r.useState(!1), [em, eh] = r.useState(null);
   r.useEffect(() => {
     let e = Math.random().toString(16).slice(2);
     o.tn.get({
@@ -53,8 +53,8 @@ function w(e) {
       },
       rejectWithError: !0
     }).then(e => {
-      if (null != e.body && "c61e8721a6c4701d5ce85dba0e45fdaf1412ff74" !== e.body.hash) {
-        let e = new Date("1747688953504"),
+      if (null != e.body && "32a760612222f7ea70809091f4494cf0dc496019" !== e.body.hash) {
+        let e = new Date("1747689856143"),
           t = new Date,
           n = (0, g.TD)(t, e);
         n.hours > 6 && eh(n.hours)
@@ -79,7 +79,7 @@ function w(e) {
     var e, t;
     if (ed(!1), "" === W || "" === A || null == L) return void eo(!0);
     let r = null == q || null == (e = q.features) ? void 0 : e.find(e => (0, y.pD)(e) === B);
-    ec(!0), eo(!1);
+    eu(!0), eo(!1);
     let l = (0, b.D)(J.map(e => {
         let {
           item: t
@@ -104,10 +104,10 @@ function w(e) {
       } : {
         overridePlatformInformation: H
       }, l).catch(() => ed(!0));
-    ec(!1), null != a && a.ok ? (ef && window.open(a.body.permalink_url, "_blank"), ex(), (0, s.ZDy)(async () => {
+    eu(!1), null != a && a.ok ? (ef && window.open(a.body.permalink_url, "_blank"), ex(), (0, s.ZDy)(async () => {
       let {
         default: e
-      } = await n.e("64648").then(n.bind(n, 81155));
+      } = await n.e("64648").then(n.bind(n, 538393));
       return t => {
         var n, r;
         return (0, i.jsx)(e, (n = function(e) {
@@ -161,10 +161,10 @@ function w(e) {
     void 0 === t || J.some(e => {
       var n;
       return e.filename === t.name && (null == (n = e.item.file) ? void 0 : n.size) === t.size
-    }) || M([...J, new u.ZP({
+    }) || M([...J, new c.ZP({
       id: (0, l.Z)(),
       file: t,
-      platform: u.ow.WEB
+      platform: c.ow.WEB
     })])
   }, [J]);
   return (0, i.jsxs)(s.Y0X, {
@@ -340,14 +340,14 @@ function w(e) {
             })]
           }) : null, (0, i.jsxs)(s.zxk, {
             color: s.zxk.Colors.PRIMARY,
-            children: [O.intl.string(O.t.HVxmOD), (0, i.jsx)(c.Z, {
+            children: [O.intl.string(O.t.HVxmOD), (0, i.jsx)(u.Z, {
               ref: D,
               onChange: e => {
                 var t, n;
-                (null == (n = e.currentTarget) || null == (t = n.files) ? void 0 : t[0]) != null && M([...J, ...Array.from(e.currentTarget.files).map(e => new u.ZP({
+                (null == (n = e.currentTarget) || null == (t = n.files) ? void 0 : t[0]) != null && M([...J, ...Array.from(e.currentTarget.files).map(e => new c.ZP({
                   id: (0, l.Z)(),
                   file: e,
-                  platform: u.ow.WEB
+                  platform: c.ow.WEB
                 }))])
               },
               multiple: !0
@@ -385,7 +385,7 @@ function w(e) {
                 })]
               }, e.id))
             })]
-          }) : null, eu ? (0, i.jsx)(s.Text, {
+          }) : null, ec ? (0, i.jsx)(s.Text, {
             color: "text-danger",
             variant: "text-sm/normal",
             children: "Something went wrong, try again!"

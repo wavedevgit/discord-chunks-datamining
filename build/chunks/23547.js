@@ -1,4 +1,4 @@
-/** Chunk was on 56893 **/
+/** Chunk was on 72704 **/
 n.d(t, {
   Mm: () => p,
   jj: () => m,
@@ -52,7 +52,7 @@ function p(e) {
       (r = c({}, e)).isCoachmarkEnabled && (0, l.ZDy)(async () => {
         let {
           BalanceWidgetEarnedOrbsCoachmarkModal: e
-        } = await Promise.all([n.e("82081"), n.e("1258")]).then(n.bind(n, 720463));
+        } = await Promise.all([n.e("82081"), n.e("42242")]).then(n.bind(n, 720463));
         return t => (0, i.jsx)(e, c({}, r, t))
       }, g)
     } else !a && t && m()

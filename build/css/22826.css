@@ -1,6 +1,6 @@
 /**
   Module ID: 22826
-  Original File Name: 0639f49e2a6d40f3
+  Original File Name: 67c03bd35836aba3
 **/
 .container__4216d {
     align-items: center;
@@ -436,11 +436,7 @@
 .select__81a06 {
     border-radius: 4px;
     max-width: 400px;
-    width: 90%
-}
-
-.loading__81a06 {
-    padding-left: 16px
+    width: 400px
 }
 
 .iconContainer__81a06 {
@@ -479,10 +475,9 @@
 }
 
 .select_b08511 {
-    margin-right: 16px;
     max-width: 400px;
     padding: 8px!important;
-    width: 90%
+    width: 400px
 }
 
 .selectOption_b08511 {
@@ -1065,8 +1060,8 @@
 }
 
 .markdownContainer__48344.markdownContainer__48344.markdownContainer__48344.markdownContainer__48344.containerSizedText__48344 {
-    font-size: 14px;
-    line-height: 19.25px
+    font-size: .875rem;
+    line-height: calc(var(--chat-markup-line-height)*.875)
 }
 
 .markdownContainer__48344.markdownContainer__48344.markdownContainer__48344.markdownContainer__48344>p:first-child {
@@ -1085,7 +1080,7 @@
     margin-bottom: 0
 }
 
-.markdownContainer__48344.markdownContainer__48344.markdownContainer__48344.markdownContainer__48344 pre {
+.markdownContainer__48344.markdownContainer__48344.markdownContainer__48344.markdownContainer__48344 blockquote,.markdownContainer__48344.markdownContainer__48344.markdownContainer__48344.markdownContainer__48344 pre {
     max-width: unset
 }
 
@@ -1101,6 +1096,11 @@
 
 .img__8f9ad {
     object-fit: cover
+}
+
+.hiddenSpoiler__8f9ad {
+    filter: blur(var(--custom-message-attachment-spoiler-blur-radius));
+    pointer-events: none
 }
 
 .clickable__4337d {
@@ -1223,7 +1223,7 @@
     row-gap: var(--space-4)
 }
 
-.textChildren_c3d3d9.centerAlign_c3d3d9 {
+.textChildren_c3d3d9.verticallyCenterAlign_c3d3d9 {
     justify-content: center
 }
 
@@ -1267,4 +1267,4 @@
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=0639f49e2a6d40f3.css.map*/
+/*# sourceMappingURL=67c03bd35836aba3.css.map*/

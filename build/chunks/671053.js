@@ -1,4 +1,4 @@
-/** Chunk was on 40790 **/
+/** Chunk was on 72704 **/
 e.exports = {
   container: "container__37e49",
   avatar: "avatar__37e49",
@@ -19,6 +19,8 @@ e.exports = {
   redGlow: "redGlow__37e49",
   voiceFilterWarning: "voiceFilterWarning__37e49",
   buttons: "buttons__37e49",
+  containerListenAlongVisible: "containerListenAlongVisible__37e49",
+  containerQuestBarVisible: "containerQuestBarVisible__37e49",
   containerRtcOpened: "containerRtcOpened__37e49",
   buttonChevronIcon: "buttonChevronIcon__37e49",
   iconForeground: "iconForeground__37e49",

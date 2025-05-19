@@ -1,4 +1,4 @@
-/** Chunk was on 82196 **/
-t.exports = {
+/** Chunk was on 72704 **/
+e.exports = {
   baseCardOutline: "baseCardOutline__1ab14"
 }

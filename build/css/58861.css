@@ -1,6 +1,6 @@
 /**
   Module ID: 58861
-  Original File Name: 871e96b56c1683fb
+  Original File Name: acbd9dd54ab09745
 **/
 .buttonContainer__7e329 {
     align-items: center;
@@ -724,6 +724,10 @@
     min-height: 0
 }
 
+.header_fe7ab2 {
+    margin: 16px 0 8px
+}
+
 .headerBar_fe7ab2 {
     box-shadow: var(--elevation-low)
 }
@@ -759,12 +763,19 @@
     border-bottom: 1px solid var(--background-tertiary);
     flex-shrink: 0;
     height: 36px;
+    overflow: hidden;
+    white-space: nowrap;
     width: 95%
 }
 
-.tabBar_fe7ab2,.tabItem_fe7ab2 {
-    overflow: hidden;
-    white-space: nowrap
+.tabMeasurer_fe7ab2 {
+    height: 0;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    width: 0
 }
 
 .tabItem_fe7ab2 {
@@ -775,8 +786,10 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 22px;
+    overflow: hidden;
     padding: 6px 12px;
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
+    white-space: nowrap
 }
 
 .tabItem_fe7ab2:hover {
@@ -1467,4 +1480,4 @@
     pointer-events: auto
 }
 
-/*# sourceMappingURL=871e96b56c1683fb.css.map*/
+/*# sourceMappingURL=acbd9dd54ab09745.css.map*/

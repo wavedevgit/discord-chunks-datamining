@@ -1,5 +1,4 @@
-/** Chunk was on 97502 **/
-"use strict";
+/** Chunk was on 56484 **/
 e.exports = {
   card: "card__991c2",
   iconMask: "iconMask__991c2",

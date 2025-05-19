@@ -1,4 +1,4 @@
-/** Chunk was on 40790 **/
+/** Chunk was on 72704 **/
 e.exports = {
   text: "text__73a39",
   colorClickerGameBrand: "colorClickerGameBrand__73a39"

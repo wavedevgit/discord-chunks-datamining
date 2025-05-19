@@ -1,4 +1,4 @@
-/** Chunk was on 88622 **/
+/** Chunk was on 67489 **/
 n.d(t, {
   Z: () => l
 });
@@ -7,7 +7,7 @@ n(73800);
 var o = n(120356),
   s = n.n(o),
   a = n(481060),
-  i = n(409667);
+  i = n(371772);
 let l = function(e) {
   let {
     allowClicks: t = !1,

@@ -1,4 +1,4 @@
-/** Chunk was on 40790 **/
+/** Chunk was on 72704 **/
 e.exports = {
   wrapper: "wrapper_a202d2",
   image: "image_a202d2",

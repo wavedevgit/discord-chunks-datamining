@@ -3,8 +3,8 @@ t.d(r, {
   default: () => D,
   g: () => Z
 }), t(388685), t(472816), t(794429), t(953529);
-var n = t(200651),
-  i = t(192379),
+var n = t(255367),
+  i = t(73800),
   l = t(120356),
   o = t.n(l),
   a = t(442837),
@@ -94,7 +94,7 @@ let D = function(e) {
       }), (0, n.jsx)(c.X6q, {
         variant: "text-md/medium",
         color: "header-primary",
-        children: P.NW.string(P.t.ghtnsr)
+        children: P.intl.string(P.t.ghtnsr)
       }), (0, n.jsx)(c.olH, {
         className: k.modalCloseButton,
         onClick: D
@@ -104,7 +104,7 @@ let D = function(e) {
       children: [(0, n.jsx)(c.X6q, {
         variant: "heading-md/semibold",
         color: "header-primary",
-        children: P.NW.format(P.t["Y+TsER"], {
+        children: P.intl.format(P.t["Y+TsER"], {
           helpdeskArticleUrl: O.Z.getArticleURL(_.BhN.CONNECTION_DETAILS)
         })
       }), (0, n.jsx)("div", {

@@ -1,5 +1,4 @@
-/** Chunk was on 48791 **/
+/** Chunk was on 72019 **/
 e.exports = {
-  guildsError: "guildsError_e8d03f",
-  errorInner: "errorInner_e8d03f"
+  guildsError: "guildsError_e8d03f"
 }

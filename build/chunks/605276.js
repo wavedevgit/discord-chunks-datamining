@@ -19,7 +19,7 @@ var l = t(255367),
   x = t(825334),
   b = t(981631),
   j = t(388032),
-  C = t(617449);
+  C = t(886958);
 let _ = r.memo(function(e) {
     let {
       guild: n

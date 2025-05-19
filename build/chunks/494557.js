@@ -1,4 +1,4 @@
-/** Chunk was on 82169 **/
+/** Chunk was on 24225 **/
 e.exports = {
   buttonsWrapper: "buttonsWrapper__65bb6",
   horizontal: "horizontal__65bb6",

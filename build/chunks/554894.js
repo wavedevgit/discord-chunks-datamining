@@ -1,4 +1,4 @@
-/** Chunk was on 82169 **/
+/** Chunk was on 24225 **/
 e.exports = {
   effectsWrapper: "effectsWrapper__78936",
   effects: "effects__78936"

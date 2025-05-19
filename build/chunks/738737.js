@@ -1,4 +1,4 @@
-/** Chunk was on 79368 **/
+/** Chunk was on 24225 **/
 n.d(t, {
   Z: () => s
 });
@@ -33,7 +33,7 @@ function s(e) {
       PaymentModal: i
     } = await Promise.resolve().then(n.bind(n, 791785)), {
       STEPS: l
-    } = await Promise.all([n.e("17938"), n.e("8854")]).then(n.bind(n, 7305));
+    } = await Promise.all([n.e("17938"), n.e("81767")]).then(n.bind(n, 7305));
     return n => {
       var x, j, {
           onClose: C

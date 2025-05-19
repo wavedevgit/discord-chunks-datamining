@@ -1,5 +1,5 @@
 /** Chunk was on 10165 **/
-e.exports = {
+t.exports = {
   header: "header_cd8d1b",
   art: "art_cd8d1b",
   artContainer: "artContainer_cd8d1b",

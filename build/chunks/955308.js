@@ -1,4 +1,4 @@
-/** Chunk was on 48791 **/
+/** Chunk was on 72019 **/
 e.exports = {
   ping: "ping__06d62",
   smallPing: "smallPing__06d62",

@@ -1,4 +1,4 @@
-/** Chunk was on 97502 **/
+/** Chunk was on 37485 **/
 "use strict";
 e.exports = {
   grid: "grid_d87d30",
@@ -7,5 +7,6 @@ e.exports = {
   emptyTierWrapper: "emptyTierWrapper_d87d30",
   unusedTierWrapper: "unusedTierWrapper_d87d30",
   emptyTierImage: "emptyTierImage_d87d30",
-  unlockTierCtaHeading: "unlockTierCtaHeading_d87d30"
+  unlockTierCtaHeading: "unlockTierCtaHeading_d87d30",
+  tooltip: "tooltip_d87d30"
 }

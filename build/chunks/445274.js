@@ -1,5 +1,4 @@
-/** Chunk was on 93243 **/
-"use strict";
+/** Chunk was on 67756 **/
 e.exports = {
   container: "container_fea832",
   inner: "inner_fea832",

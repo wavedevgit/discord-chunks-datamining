@@ -1,4 +1,4 @@
-/** Chunk was on 20597 **/
+/** Chunk was on 19370 **/
 e.exports = {
   topBar: "topBar__6088c",
   author: "author__6088c",

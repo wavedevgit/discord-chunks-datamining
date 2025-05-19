@@ -1,2 +1,2 @@
 /** Chunk was on 87827 **/
-p.exports = JSON.parse('{"Poezn5":"Влез онлайн","qKDqen":"Влез онлайн, за да споделиш „Активност“","a3AofX":"Задай статус „Онлайн“"}')
+s.exports = JSON.parse('{"jfDsyM":"Ограничено споделяне"}')

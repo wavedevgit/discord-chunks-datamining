@@ -1,6 +1,9 @@
-/** Chunk was on 40790 **/
+/** Chunk was on 72704 **/
 e.exports = {
   banner: "banner__4524c",
-  body: "body__4524c",
-  trialPill: "trialPill__4524c"
+  bodyContainer: "bodyContainer__4524c",
+  promoNitroButton: "promoNitroButton__4524c",
+  bannerArt: "bannerArt__4524c",
+  pill: "pill__4524c",
+  buttonGradient: "buttonGradient__4524c"
 }

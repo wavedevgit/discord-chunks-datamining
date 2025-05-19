@@ -1,6 +1,7 @@
 /** Chunk was on 93886 **/
 e.exports = {
   panel: "panel_fe7ab2",
+  header: "header_fe7ab2",
   headerBar: "headerBar_fe7ab2",
   headerTitle: "headerTitle_fe7ab2",
   dispatcherHeader: "dispatcherHeader_fe7ab2",
@@ -8,6 +9,7 @@ e.exports = {
   inspectorWrapper: "inspectorWrapper_fe7ab2",
   tabBarContainer: "tabBarContainer_fe7ab2",
   tabBar: "tabBar_fe7ab2",
+  tabMeasurer: "tabMeasurer_fe7ab2",
   tabItem: "tabItem_fe7ab2",
   selected: "selected_fe7ab2",
   menu: "menu_fe7ab2",

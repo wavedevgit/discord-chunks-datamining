@@ -1,4 +1,4 @@
-/** Chunk was on 73344 **/
+/** Chunk was on 16318 **/
 e.exports = {
   demoEffectOverlay: "demoEffectOverlay__40460",
   demoEffectImg: "demoEffectImg__40460"

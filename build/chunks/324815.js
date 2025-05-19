@@ -1,4 +1,4 @@
-/** Chunk was on 56893 **/
+/** Chunk was on 72704 **/
 n.d(t, {
   Z: () => c
 });
@@ -6,7 +6,7 @@ var i = n(255367),
   r = n(120356),
   s = n.n(r),
   l = n(18582),
-  a = n(610902);
+  a = n(297104);
 let o = {
   white: a.borderWhite,
   green: a.borderGreen

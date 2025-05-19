@@ -66,7 +66,7 @@ var r = n(255367),
   ei = n(981631),
   ea = n(186901),
   eo = n(388032),
-  es = n(453214);
+  es = n(370315);
 
 function el(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -273,7 +273,7 @@ function eE(e) {
   i.useEffect(() => {
     M.default.isAuthenticated() && !eM && y.Z.getExperiments()
   }, [eM]);
-  let [ej, eU] = i.useState(null), [eG, eB] = i.useState(null), [eF, eV] = i.useState(null), [eZ, eH] = i.useState(!1), [eY, eW] = i.useState(!1), eK = null == ej ? void 0 : ej.guilds, [ez, eq] = i.useState(null != eO ? eO : null), [eQ, eX] = i.useState(null != ev ? ev : null), [eJ, e$] = i.useState(G.Hn), [e0, e1] = i.useState(!1), e2 = i.useMemo(() => (null == ej ? void 0 : ej.user) != null ? new k.Z(ej.user) : null, [null == ej ? void 0 : ej.user]), e3 = i.useMemo(() => null == eK ? void 0 : eK.find(e => e.id === ez), [eK, ez]), [e4, e5] = i.useState(null), e6 = i.useMemo(() => {
+  let [ej, eU] = i.useState(null), [eG, eB] = i.useState(null), [eF, eV] = i.useState(null), [eZ, eH] = i.useState(!1), [eY, eW] = i.useState(!1), eK = null == ej ? void 0 : ej.guilds, [ez, eq] = i.useState(null != eO ? eO : null), [eQ, eX] = i.useState(null != ev ? ev : null), [eJ, e$] = i.useState(G.Hn), [e0, e1] = i.useState(!1), e3 = i.useMemo(() => (null == ej ? void 0 : ej.user) != null ? new k.Z(ej.user) : null, [null == ej ? void 0 : ej.user]), e2 = i.useMemo(() => null == eK ? void 0 : eK.find(e => e.id === ez), [eK, ez]), [e4, e5] = i.useState(null), e6 = i.useMemo(() => {
     var e;
     return null == ex && null == eI && (null != (e = null == eb ? void 0 : eb.length) ? e : 0) === 0 && null == el
   }, [ex, null == eb ? void 0 : eb.length, el, eI]), [e8, e7] = i.useState(null);
@@ -341,7 +341,7 @@ function eE(e) {
       if (!e && !eA) {
         null != eP && (eP({
           application: null == ej ? void 0 : ej.application,
-          guild: e3
+          guild: e2
         }), null == ew || ew());
         return
       }
@@ -371,7 +371,7 @@ function eE(e) {
           }, 100)), null != eP) eP({
           application: null == ej ? void 0 : ej.application,
           location: n.location,
-          guild: e3
+          guild: e2
         }), null == ew || ew();
         else if (null != n.location) {
           var t;
@@ -379,7 +379,7 @@ function eE(e) {
           B.Z.isDiscordUrl(n.location) && e === ei.Z5c.OAUTH2_AUTHORIZED ? (0, L.uL)(ei.Z5c.OAUTH2_AUTHORIZED, {
             state: {
               application: null == ej ? void 0 : ej.application,
-              guild: e3
+              guild: e2
             }
           }) : window.location = n.location
         } else eH(!1)
@@ -387,7 +387,7 @@ function eE(e) {
         let e = t.body;
         (null == e ? void 0 : e.message) != null && "" !== e.message ? eV(Error(e.message)) : eV(e), eB("AUTHORIZE_SCOPES"), eH(!1)
       }
-    }, [eR, eA, eP, null == ej ? void 0 : ej.application, e3, ew, ee, tt, ea, el, eu, ef, e_, eh, tr, eJ, ez, e4, eQ, ta, e0]),
+    }, [eR, eA, eP, null == ej ? void 0 : ej.application, e2, ew, ee, tt, ea, el, eu, ef, e_, eh, tr, eJ, ez, e4, eQ, ta, e0]),
     tu = i.useRef(!1),
     td = i.useCallback(async () => {
       if (!M.default.isAuthenticated()) return void(0, V.c$)(ek, "oauth2_error_not_authenticated");
@@ -526,7 +526,7 @@ function eE(e) {
       }), ty = !1, tO = !1, tv = !1, tI = !0;
       break;
     case "AUTHORIZE_SCOPES":
-      if (null == ej || null == e2 || null == e4) return {
+      if (null == ej || null == e3 || null == e4) return {
         body: (0, r.jsx)(eg, {})
       };
       let tS = null == eF || eF instanceof Error ? {} : eF,
@@ -570,7 +570,7 @@ function eE(e) {
           selectedGuildId: ez,
           onChannelChange: eX
         }) : null]
-      }), tt.includes(u.x.BOT) && !f.fS(tr, G.Hn) && (T = "AUTHORIZE_BOT_PERMISSIONS"), tf.length > 1 && (E = "SELECT_INSTALL_TYPE"), tb = tN && null == e3 || tA && null == eQ, tE = !0;
+      }), tt.includes(u.x.BOT) && !f.fS(tr, G.Hn) && (T = "AUTHORIZE_BOT_PERMISSIONS"), tf.length > 1 && (E = "SELECT_INSTALL_TYPE"), tb = tN && null == e2 || tA && null == eQ, tE = !0;
       break;
     case "AUTHORIZE_BOT_PERMISSIONS":
       if (null == ej) return {
@@ -581,7 +581,7 @@ function eE(e) {
         permissions: tr,
         deniedPermissions: eJ,
         onPermissionsChange: tg,
-        guild: e3
+        guild: e2
       }), E = "AUTHORIZE_SCOPES", tE = !0
   }
   if (ty && null != ej) {
@@ -600,9 +600,9 @@ function eE(e) {
       })]
     })
   }
-  return tO && null != ej && null != e2 && (R = (0, r.jsx)(J.Z, {
+  return tO && null != ej && null != e3 && (R = (0, r.jsx)(J.Z, {
     id: ep,
-    user: e2,
+    user: e3,
     application: ej.application,
     bot: ej.bot,
     accountScopes: tn,

@@ -1,4 +1,4 @@
-/** Chunk was on 82169 **/
+/** Chunk was on 24225 **/
 e.exports = {
   container: "container_b27fdc",
   tierTextInfoContainer: "tierTextInfoContainer_b27fdc",
