@@ -1,6 +1,6 @@
 /**
   Module ID: 22274
-  Original File Name: dc295874ae06195a
+  Original File Name: 26096b79dccd06f1
 **/
 .container__2a3ed {
     color: var(--text-normal);
@@ -56,22 +56,22 @@
 }
 
 .nitroLogo__2a3ed {
+    bottom: 140px;
     left: 50%;
     position: absolute;
-    top: 265px;
     transform: translateX(-50%)
 }
 
 .badgeText__2a3ed {
     -webkit-background-clip: text;
     background-clip: text;
+    bottom: 105px;
     color: transparent;
     font-size: 30px;
     font-style: italic;
     position: absolute;
     text-align: center;
     text-transform: uppercase;
-    top: 289px;
     transform-origin: bottom;
     width: 100%
 }
@@ -148,11 +148,11 @@
 }
 
 .subscribedText__2a3ed {
+    bottom: 80px;
     margin-top: 20px;
     opacity: 0;
     position: absolute;
     text-align: center;
-    top: 307px;
     width: 100%
 }
 
@@ -162,7 +162,7 @@
 
 .actionButtons__2a3ed {
     align-items: center;
-    bottom: 10px;
+    bottom: 15px;
     display: none;
     gap: 8px;
     justify-content: center;
@@ -179,4 +179,4 @@
     display: flex
 }
 
-/*# sourceMappingURL=dc295874ae06195a.css.map*/
+/*# sourceMappingURL=26096b79dccd06f1.css.map*/

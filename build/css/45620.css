@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 9eae3c57b72c2ec5
+  Original File Name: 0dd2d29e6cf2fbbd
 **/
 .countDownWrapper_a1b7b8 {
     align-items: center;
@@ -1551,12 +1551,8 @@
 
 .feedSingleRow__08415 {
     grid-template-rows: 1fr;
-    height: 372px;
-    margin-left: -50vw;
-    margin-right: -50vw;
     overflow-x: visible;
-    overflow-y: hidden;
-    padding: 5px 50vw 25px
+    padding: 5px 0 25px
 }
 
 .endOfFeed__08415 {
@@ -1708,4 +1704,4 @@
     opacity: 0
 }
 
-/*# sourceMappingURL=9eae3c57b72c2ec5.css.map*/
+/*# sourceMappingURL=0dd2d29e6cf2fbbd.css.map*/
