@@ -1,4 +1,4 @@
-/** Chunk was on 17364 **/
+/** Chunk was on 56893 **/
 e.exports = {
   hoverWrapper: "hoverWrapper_b5493b",
   flipCardContainer: "flipCardContainer_b5493b",

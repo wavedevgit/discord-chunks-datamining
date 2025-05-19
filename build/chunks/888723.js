@@ -1,4 +1,4 @@
-/** Chunk was on 17364 **/
+/** Chunk was on 56893 **/
 e.exports = {
   boxBackdrop: "boxBackdrop_abac7b",
   bentoBoxesGrid: "bentoBoxesGrid_abac7b",

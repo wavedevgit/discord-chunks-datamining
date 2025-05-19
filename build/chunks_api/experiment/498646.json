@@ -1,1 +1,1 @@
-{"id":"498646","type":"experiment","data":{"kind":"user","id":"2025-02_clicker_game","label":"Clicker Game","defaultConfig":{"enableGame":false},"treatments":[{"id":1,"label":"On","config":{"enableGame":false}}]},"fromModule":{"id":"17364"}}
+{"id":"498646","type":"experiment","data":{"kind":"user","id":"2025-02_clicker_game","label":"Clicker Game","defaultConfig":{"enableGame":false},"treatments":[{"id":1,"label":"On","config":{"enableGame":false}}]},"fromModule":{"id":"56893"}}

@@ -1,72 +1,72 @@
-/** Chunk was on 21863 **/
-i.d(t, {
-  Yn: () => a,
-  ZP: () => s
-}), i(415506);
-var n = i(255367);
-i(73800);
-var r = i(481060),
-  l = i(981631);
+/** Chunk was on 56893 **/
+n.d(t, {
+  Yn: () => o,
+  ZP: () => c
+}), n(415506);
+var i = n(255367);
+n(73800);
+var r = n(481060),
+  s = n(981631);
 
-function c(e) {
+function l(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var i = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(i);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(i).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(i, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = i[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
+    var n = null != arguments[t] ? arguments[t] : {},
+      i = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), i.forEach(function(t) {
+      var i;
+      i = n[t], t in e ? Object.defineProperty(e, t, {
+        value: i,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : e[t] = n
+      }) : e[t] = i
     })
   }
   return e
 }
 
-function o(e, t) {
+function a(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var i = Object.keys(e);
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      i.push.apply(i, n)
+      var i = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, i)
     }
-    return i
-  })(Object(t)).forEach(function(i) {
-    Object.defineProperty(e, i, Object.getOwnPropertyDescriptor(t, i))
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function a() {
+function o() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
   return new Promise(t => {
     (0, r.ZDy)(async () => {
       let {
         default: t
-      } = await Promise.all([i.e("76540"), i.e("69422")]).then(i.bind(i, 628908));
-      return i => (0, n.jsx)(t, o(c({}, i), {
+      } = await Promise.all([n.e("76540"), n.e("69422")]).then(n.bind(n, 628908));
+      return n => (0, i.jsx)(t, a(l({}, n), {
         isTotp: e
       }))
     }, {
       onCloseCallback: t,
-      onCloseRequest: l.VqG
+      onCloseRequest: s.VqG
     })
   })
 }
-let s = {
+let c = {
   enableMFA: async function() {
     await new Promise(e => {
       (0, r.ZDy)(async () => {
         let {
           default: t
-        } = await Promise.all([i.e("35006"), i.e("23746")]).then(i.bind(i, 837651));
-        return i => (0, n.jsx)(t, o(c({}, i), {
+        } = await Promise.all([n.e("35006"), n.e("23746")]).then(n.bind(n, 837651));
+        return n => (0, i.jsx)(t, a(l({}, n), {
           handleEnableMFASuccess: e
         }))
       })
-    }), await a()
+    }), await o()
   }
 }

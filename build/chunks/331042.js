@@ -506,9 +506,7 @@ let eu = 880,
         environment: O.current
       }), (0, r.jsx)(Y.i, {
         options: S
-      }), d && (0, r.jsx)(C.o, {
-        onClose: o
-      }), (0, r.jsx)(_.Y0X, {
+      }), d && (0, r.jsx)(C.o, {}), (0, r.jsx)(_.Y0X, {
         hideShadow: !0,
         transitionState: t,
         size: _.CgR.DYNAMIC,

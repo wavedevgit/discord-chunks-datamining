@@ -693,9 +693,7 @@ let eT = {
     let Z = (0, e_.ZS)(l.skuId);
     return (0, r.jsxs)(g.Gt, {
       value: k,
-      children: [f && (0, r.jsx)(L.o, {
-        onClose: n
-      }), (0, r.jsx)(h.Y0X, {
+      children: [f && (0, r.jsx)(L.o, {}), (0, r.jsx)(h.Y0X, {
         hideShadow: !0,
         className: eE.modalRoot,
         returnRef: s,

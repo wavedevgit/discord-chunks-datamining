@@ -1,45 +1,45 @@
-/** Chunk was on 29922 **/
-t.d(n, {
-  Z: () => _
-}), t(388685);
-var o = t(255367);
-t(73800);
-var r = t(442837),
-  i = t(481060),
-  a = t(607070),
-  l = t(600164),
-  c = t(122890),
-  s = t(110818),
-  p = t(523726);
+/** Chunk was on 56893 **/
+n.d(t, {
+  Z: () => u
+}), n(388685);
+var i = n(255367);
+n(73800);
+var r = n(442837),
+  s = n(481060),
+  l = n(607070),
+  a = n(600164),
+  o = n(122890),
+  c = n(110818),
+  d = n(523726);
 
-function _(e) {
+function u(e) {
   let {
-    purchaseState: n,
-    currentStep: t,
-    onClose: _
-  } = e, [u, d] = (0, c.z)({
-    purchaseState: n,
-    currentStep: t,
-    initialScene: s.fe.Scenes.ENTRY,
-    purchaseScene: s.fe.Scenes.STARS,
-    errorScene: s.fe.Scenes.ERROR,
-    successScene: s.fe.Scenes.SUCCESS
-  }), f = (0, r.e7)([a.Z], () => a.Z.useReducedMotion);
-  return (0, o.jsxs)(i.xBx, {
-    align: l.Z.Align.START,
-    className: p.header,
+    purchaseState: t,
+    currentStep: n,
+    onClose: u
+  } = e, [m, g] = (0, o.z)({
+    purchaseState: t,
+    currentStep: n,
+    initialScene: c.fe.Scenes.ENTRY,
+    purchaseScene: c.fe.Scenes.STARS,
+    errorScene: c.fe.Scenes.ERROR,
+    successScene: c.fe.Scenes.SUCCESS
+  }), p = (0, r.e7)([l.Z], () => l.Z.useReducedMotion);
+  return (0, i.jsxs)(s.xBx, {
+    align: a.Z.Align.START,
+    className: d.header,
     separator: !1,
-    children: [(0, o.jsx)(s.fe, {
-      className: p.animation,
-      nextScene: u,
-      onScenePlay: e => d(s.fe.getNextScene(e)),
+    children: [(0, i.jsx)(c.fe, {
+      className: d.animation,
+      nextScene: m,
+      onScenePlay: e => g(c.fe.getNextScene(e)),
       pauseWhileUnfocused: !1,
-      pause: f
-    }), (0, o.jsx)("div", {
-      className: p.headerTitle
-    }), (0, o.jsx)(i.olH, {
-      onClick: _,
-      className: p.closeButton
+      pause: p
+    }), (0, i.jsx)("div", {
+      className: d.headerTitle
+    }), (0, i.jsx)(s.olH, {
+      onClick: u,
+      className: d.closeButton
     })]
   })
 }

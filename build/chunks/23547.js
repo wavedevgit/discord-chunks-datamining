@@ -1,60 +1,60 @@
-/** Chunk was on 20565 **/
+/** Chunk was on 56893 **/
 n.d(t, {
-  Mm: () => m,
-  jj: () => f,
+  Mm: () => p,
+  jj: () => m,
   wH: () => u
 });
-var r = n(255367),
-  o = n(73800),
-  a = n(442837),
-  c = n(481060),
-  s = n(751648),
-  l = n(479766);
+var i = n(255367),
+  r = n(73800),
+  s = n(442837),
+  l = n(481060),
+  a = n(751648),
+  o = n(479766);
 
-function i(e) {
+function c(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      i = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    }))), i.forEach(function(t) {
+      var i;
+      i = n[t], t in e ? Object.defineProperty(e, t, {
+        value: i,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : e[t] = r
+      }) : e[t] = i
     })
   }
   return e
 }
 let d = "balance-widget-menu-coachmark-modal",
-  u = () => (0, c.nfh)(d),
-  f = () => (0, c.Mr3)(d),
-  b = {
+  u = () => (0, l.nfh)(d),
+  m = () => (0, l.Mr3)(d),
+  g = {
     modalKey: d,
-    onCloseCallback: s.j2,
+    onCloseCallback: a.j2,
     onCloseRequest: async () => {
-      await (0, s.j2)()
+      await (0, a.j2)()
     }
   };
 
-function m(e) {
-  let t = (0, a.cj)([l.Z], () => l.Z.earnedOrbsCoachmark),
+function p(e) {
+  let t = (0, s.cj)([o.Z], () => o.Z.earnedOrbsCoachmark),
     {
-      shouldOpen: s
+      shouldOpen: a
     } = t;
-  return (0, o.useEffect)(() => {
+  return (0, r.useEffect)(() => {
     let t = u();
-    if (s && !t) {
-      var o;
-      (o = i({}, e)).isCoachmarkEnabled && (0, c.ZDy)(async () => {
+    if (a && !t) {
+      var r;
+      (r = c({}, e)).isCoachmarkEnabled && (0, l.ZDy)(async () => {
         let {
           BalanceWidgetEarnedOrbsCoachmarkModal: e
-        } = await n.e("82081").then(n.bind(n, 720463));
-        return t => (0, r.jsx)(e, i({}, o, t))
-      }, b)
-    } else !s && t && f()
-  }, [s, e]), i({}, t)
+        } = await Promise.all([n.e("82081"), n.e("1258")]).then(n.bind(n, 720463));
+        return t => (0, i.jsx)(e, c({}, r, t))
+      }, g)
+    } else !a && t && m()
+  }, [a, e]), c({}, t)
 }

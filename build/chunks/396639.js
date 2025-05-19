@@ -1,4 +1,4 @@
-/** Chunk was on 17364 **/
+/** Chunk was on 56893 **/
 n.d(t, {
   _Y: () => y,
   default: () => w
@@ -240,9 +240,7 @@ let N = {
       e || a(j.rMx.PAYMENT_FLOW_CANCELED), await s.onClose()
     }, [s, a]);
     return (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(x.o, {
-        onClose: async () => await c(!1)
-      }), (0, i.jsx)(g.PaymentModal, {
+      children: [(0, i.jsx)(x.o, {}), (0, i.jsx)(g.PaymentModal, {
         applicationId: (0, b.N)(t),
         transitionState: s.transitionState,
         analyticsDataOverride: o,

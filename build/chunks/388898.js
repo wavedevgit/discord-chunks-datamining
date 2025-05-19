@@ -1,4 +1,4 @@
-/** Chunk was on 17364 **/
+/** Chunk was on 56893 **/
 e.exports = {
   section: "section__25879",
   newBadge: "newBadge__25879"

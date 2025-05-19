@@ -45,6 +45,12 @@ class s extends(r = i.ZP.Store) {
   get onboardingModalOpenedPrior() {
     return this._onboardingModalOpenedPrior
   }
+  get balancePillOverlay() {
+    return this._balancePillOverlay
+  }
+  setBalancePillOverlay(e) {
+    this._balancePillOverlay = e
+  }
   getCurrentBalance() {
     return this.balance
   }
@@ -119,8 +125,11 @@ class s extends(r = i.ZP.Store) {
       VIRTUAL_CURRENCY_ONBOARDING_MODAL_OPEN: e => this.handleOnboardingModalOpen(e),
       VIRTUAL_CURRENCY_ONBOARDING_MODAL_RESET: e => this.handleOnboardingModalReset(e),
       VIRTUAL_CURRENCY_EARNED_ORBS_COACHMARK_OPEN: e => this.handleEarnedOrbsCoachmarkOpen(e),
-      VIRTUAL_CURRENCY_EARNED_ORBS_COACHMARK_CLOSE: e => this.handleEarnedOrbsCoachmarkClose(e)
-    }), o(this, "_entitlements", null), o(this, "_redeemingSkuId", null), o(this, "_isRedeemingVirtualCurrency", !1), o(this, "_redeemVirtualCurrencyError", null), o(this, "_balance", null), o(this, "_fetchBalanceError", null), o(this, "_isFetchingBalance", !1), o(this, "_onboardingModalOpenedPrior", !1), o(this, "_earnedOrbsCoachmarkOpen", !1), o(this, "_earnedOrbsCoachmarkDedupeKeys", []), o(this, "_earnedOrbsCoachmarkQuantity", 0)
+      VIRTUAL_CURRENCY_EARNED_ORBS_COACHMARK_CLOSE: e => this.handleEarnedOrbsCoachmarkClose(e),
+      VIRTUAL_CURRENCY_SET_BALANCE_PILL_OVERLAY: e => {
+        this.setBalancePillOverlay(e.balancePillOverlay)
+      }
+    }), o(this, "_entitlements", null), o(this, "_redeemingSkuId", null), o(this, "_isRedeemingVirtualCurrency", !1), o(this, "_redeemVirtualCurrencyError", null), o(this, "_balance", null), o(this, "_fetchBalanceError", null), o(this, "_isFetchingBalance", !1), o(this, "_onboardingModalOpenedPrior", !1), o(this, "_earnedOrbsCoachmarkOpen", !1), o(this, "_earnedOrbsCoachmarkDedupeKeys", []), o(this, "_earnedOrbsCoachmarkQuantity", 0), o(this, "_balancePillOverlay", !1)
   }
 }
 o(s, "displayName", "VirtualCurrencyStore");
