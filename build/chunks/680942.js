@@ -12,9 +12,9 @@ var r = n(255367),
   c = n(677232),
   u = n(884697),
   d = n(228624),
-  b = n(67409),
-  f = n(474936),
-  p = n(231338),
+  f = n(67409),
+  p = n(474936),
+  b = n(231338),
   g = n(388032),
   h = n(846165);
 let m = {
@@ -74,7 +74,7 @@ let m = {
       color: x = i.Ttl.BRAND
     } = e, {
       analyticsLocations: S
-    } = (0, o.ZP)(), j = l.useRef(null), y = (0, a.Z)(j), P = (0, d.hv)("CollectiblesShopGiftButton");
+    } = (0, o.ZP)(), j = l.useRef(null), y = (0, a.Z)(j), E = (0, d.hv)("CollectiblesShopGiftButton");
     return (0, u.x6)(t) ? null : (0, r.jsx)(i.ua7, {
       text: g.intl.string(g.t["JCFN//"]),
       delay: v,
@@ -107,15 +107,15 @@ let m = {
           "aria-label": g.intl.string(g.t.PEjaCw),
           onClick: e => {
             e.stopPropagation(), (0, s.Z)({
-              skuId: (0, b.S)({
+              skuId: (0, f.S)({
                 product: t,
                 selectedVariantIndex: n
               }),
               isGift: !0,
-              giftingOrigin: f.Wt.SHOP_PAGE,
+              giftingOrigin: p.Wt.SHOP_PAGE,
               analyticsLocations: S,
               returnRef: _,
-              variantsReturnStyle: P,
+              variantsReturnStyle: E,
               onClose: null != C ? e => {
                 e && C()
               } : void 0
@@ -124,7 +124,7 @@ let m = {
           children: O ? (0, r.jsx)(c.Z, {
             hovered: y,
             isContentDismissed: !0,
-            themeOverride: p.BR.DARK,
+            themeOverride: b.BR.DARK,
             boxColors: m
           }) : (0, r.jsx)(i.OgN, {
             size: "md",

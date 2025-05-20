@@ -12,9 +12,9 @@ var r = n(255367),
   c = n(381585),
   u = n(139668),
   d = n(364111),
-  b = n(303952),
-  f = n(752053),
-  p = n(81136),
+  f = n(303952),
+  p = n(752053),
+  b = n(81136),
   g = n(953655),
   h = n(548685),
   m = n(580914),
@@ -34,11 +34,11 @@ let S = e => {
     } = e, {
       noCache: O,
       includeUnpublished: S
-    } = (0, p.Z)(), j = (0, c.sp)(), y = null != (t = null == j ? void 0 : j.sessionId) ? t : "";
+    } = (0, b.Z)(), j = (0, c.sp)(), y = null != (t = null == j ? void 0 : j.sessionId) ? t : "";
     l.useEffect(() => {
-      (0, b.n)({
+      (0, f.n)({
         sessionId: y,
-        checkpoint: b.a.SHOP_MOUNTED,
+        checkpoint: f.a.SHOP_MOUNTED,
         tab: u,
         isFullScreen: v,
         unpublishedCategoriesShown: S,
@@ -46,8 +46,8 @@ let S = e => {
       })
     }, [u]);
     let {
-      isFetchingShopHome: P,
-      fetchShopHomeError: E,
+      isFetchingShopHome: E,
+      fetchShopHomeError: P,
       shopBlocks: k,
       refreshShopHome: T
     } = (0, d.E)(u, {
@@ -59,47 +59,47 @@ let S = e => {
       sessionId: y,
       tab: u,
       isFullScreen: v
-    }), w = l.useCallback(() => {
+    }), I = l.useCallback(() => {
       T()
     }, [T]);
     if (l.useEffect(() => {
-        null != E || P || 0 === k.length || (0, b.n)({
+        null != P || E || 0 === k.length || (0, f.n)({
           sessionId: y,
-          checkpoint: b.a.SHOP_RENDERED,
+          checkpoint: f.a.SHOP_RENDERED,
           tab: u,
           isFullScreen: v,
           unpublishedCategoriesShown: S,
           cacheDisabled: O
         })
-      }, [E, P, k.length, S, O, y, u, v]), null != E) return (0, r.jsx)(f.Z, {
-      onRetry: w,
-      errorOrigin: f.i.SHOP_PAGE,
-      errorMessage: E.message
+      }, [P, E, k.length, S, O, y, u, v]), null != P) return (0, r.jsx)(p.Z, {
+      onRetry: I,
+      errorOrigin: p.i.SHOP_PAGE,
+      errorMessage: P.message
     });
-    if (P || 0 === k.length) return (0, r.jsxs)("div", {
+    if (E || 0 === k.length) return (0, r.jsxs)("div", {
       className: x.loadingContainer,
       children: [(0, r.jsx)(m.Z, {
-        isLoading: P,
+        isLoading: E,
         handleTransition: n,
         tab: u
       }), (0, r.jsx)(g.Z, {
-        isLoading: P,
+        isLoading: E,
         handleTransition: n,
         categories: []
       }), (0, r.jsx)(h.Z, {
-        isLoading: P,
+        isLoading: E,
         handleTransition: n,
         numVisibleItems: i,
         tab: u
       })]
     });
-    let I = (e, t) => {
+    let w = (e, t) => {
       if (null == e) return null;
       let l = null;
       switch (e.type) {
         case o.z.HERO:
           l = (0, r.jsx)(m.Z, {
-            isLoading: P,
+            isLoading: E,
             handleTransition: n,
             heroBlock: e,
             tab: u
@@ -107,7 +107,7 @@ let S = e => {
           break;
         case o.z.FEATURED:
           l = (0, r.jsx)(g.Z, {
-            isLoading: P,
+            isLoading: E,
             handleTransition: n,
             featuredBlockRecord: e
           }, t);
@@ -115,7 +115,7 @@ let S = e => {
         case o.z.FEED:
           let c = e.sortedSkuIds;
           l = (0, r.jsx)(h.Z, {
-            isLoading: P || s,
+            isLoading: E || s,
             handleTransition: n,
             numVisibleItems: i,
             sortedSkuIds: c,
@@ -147,7 +147,7 @@ let S = e => {
       }, t)
     };
     return (0, r.jsx)(r.Fragment, {
-      children: k.map((e, t) => I(e, t))
+      children: k.map((e, t) => w(e, t))
     })
   },
   j = e => {

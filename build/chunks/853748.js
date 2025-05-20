@@ -12,9 +12,9 @@ var r = n(255367),
   c = n(481060),
   u = n(774078),
   d = n(388032),
-  b = n(894948),
-  f = n(781385),
-  p = n(585616);
+  f = n(894948),
+  p = n(781385),
+  b = n(585616);
 
 function g(e) {
   let {
@@ -31,7 +31,7 @@ function g(e) {
   }(n, l, i, a);
   return (0, r.jsx)(c.Text, {
     variant: "heading-md/medium",
-    className: b.countdown,
+    className: f.countdown,
     tag: "div",
     children: (0, r.jsx)("div", {
       role: "timer",
@@ -55,7 +55,7 @@ let h = l.memo(function(e) {
     }
   });
   return (0, r.jsxs)(o.animated.div, {
-    className: a()([b.countDownWrapper, i && b.fullScreenWrapper, s.tq && b.mobileWrapper]),
+    className: a()([f.countDownWrapper, i && f.fullScreenWrapper, s.tq && f.mobileWrapper]),
     role: "status",
     style: function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -77,23 +77,23 @@ let h = l.memo(function(e) {
     }({}, l.style, u),
     children: [(0, r.jsx)(c.Text, {
       variant: "text-md/medium",
-      className: b.countdownLabel,
+      className: f.countdownLabel,
       children: l.label()
     }), null != l.iconSrc && (0, r.jsx)("img", {
       src: l.iconSrc,
-      className: b.countdownIcon,
+      className: f.countdownIcon,
       alt: "",
       "aria-hidden": !0
     }), (0, r.jsx)(g, {
       endDate: t
     }), (0, r.jsx)("img", {
-      src: f.Z,
-      className: a()(b.sparkles, b.left),
+      src: p.Z,
+      className: a()(f.sparkles, f.left),
       alt: "",
       "aria-hidden": !0
     }), (0, r.jsx)("img", {
-      src: p.Z,
-      className: a()(b.sparkles, b.right),
+      src: b.Z,
+      className: a()(f.sparkles, f.right),
       alt: "",
       "aria-hidden": !0
     })]
