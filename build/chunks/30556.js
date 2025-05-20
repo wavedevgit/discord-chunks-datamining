@@ -1,20 +1,20 @@
-/** Chunk was on 84471 **/
+/** Chunk was on 41071 **/
 t.d(n, {
-  Z: () => a
+  Z: () => c
 });
 var l = t(255367);
 t(73800);
 var r = t(481060),
   i = t(493683),
-  s = t(475413),
-  o = t(388032);
+  o = t(475413),
+  s = t(388032);
 
-function a(e) {
+function c(e) {
   var {
     type: n,
     userId: t,
-    onClose: a
-  } = e, c = function(e, n) {
+    onClose: c
+  } = e, u = function(e, n) {
     if (null == e) return {};
     var t, l, r = function(e, n) {
       if (null == e) return {};
@@ -29,8 +29,8 @@ function a(e) {
     }
     return r
   }(e, ["type", "userId", "onClose"]);
-  let d = n === s.j8.TEXT ? s.tG : s.ef;
-  return (0, l.jsx)(d, function(e) {
+  let a = n === o.j8.TEXT ? o.tG : o.ef;
+  return (0, l.jsx)(a, function(e) {
     for (var n = 1; n < arguments.length; n++) {
       var t = null != arguments[n] ? arguments[n] : {},
         l = Object.keys(t);
@@ -50,12 +50,12 @@ function a(e) {
   }({
     action: "SEND_MESSAGE",
     icon: r.kBi,
-    text: o.intl.string(o.t.zROXER),
-    tooltipText: o.intl.string(o.t.zROXER),
+    text: s.intl.string(s.t.zROXER),
+    tooltipText: s.intl.string(s.t.zROXER),
     onClick: () => {
       i.Z.openPrivateChannel({
         recipientIds: t
-      }), null == a || a()
+      }), null == c || c()
     }
-  }, c))
+  }, u))
 }

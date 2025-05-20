@@ -1,14 +1,14 @@
-/** Chunk was on 84471 **/
+/** Chunk was on 41071 **/
 t.d(n, {
-  Z: () => a
+  Z: () => c
 });
 var l = t(255367);
 t(73800);
 var r = t(81570),
   i = t(527790),
-  s = t(248930);
+  o = t(248930);
 
-function o(e) {
+function s(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       l = Object.keys(t);
@@ -27,12 +27,12 @@ function o(e) {
   return e
 }
 
-function a(e) {
+function c(e) {
   var {
     location: n,
     user: t,
-    currentUser: a
-  } = e, c = function(e, n) {
+    currentUser: c
+  } = e, u = function(e, n) {
     if (null == e) return {};
     var t, l, r = function(e, n) {
       if (null == e) return {};
@@ -49,9 +49,9 @@ function a(e) {
   }(e, ["location", "user", "currentUser"]);
   return (0, r.T)({
     location: n
-  }) && t.id !== a.id && !t.bot ? (0, l.jsx)(s.Z, o({
+  }) && t.id !== c.id && !t.bot ? (0, l.jsx)(o.Z, s({
     user: t
-  }, c)) : (0, l.jsx)(i.Z, o({
+  }, u)) : (0, l.jsx)(i.Z, s({
     user: t
-  }, c))
+  }, u))
 }

@@ -13,8 +13,9 @@ var i = n(442837),
 function l(e) {
   let {
     user: t,
-    guildId: n
-  } = e, l = (0, i.e7)([o.Z], () => o.Z.isBlocked(t.id));
+    guildId: n,
+    iconColor: l
+  } = e, c = (0, i.e7)([o.Z], () => o.Z.isBlocked(t.id));
   return (0, r.jsxs)("div", {
     className: s.container,
     children: [(0, r.jsx)(a.qEK, {
@@ -24,7 +25,11 @@ function l(e) {
       "aria-label": t.username
     }), (0, r.jsx)("div", {
       className: s.avatarIconContainer,
-      children: l ? (0, r.jsx)(a.t6m, {}) : (0, r.jsx)(a.kZF, {})
+      children: c ? (0, r.jsx)(a.t6m, {
+        color: l
+      }) : (0, r.jsx)(a.kZF, {
+        color: l
+      })
     })]
   })
 }

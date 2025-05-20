@@ -1,4 +1,4 @@
-/** Chunk was on 65326 **/
+/** Chunk was on 11678 **/
 t.r(n), t.d(n, {
   default: () => s
 }), t(388685);
@@ -8,9 +8,9 @@ var c = t(788111),
   i = t(752342),
   r = t(886794),
   a = t(4599),
-  d = t(910364);
+  l = t(910364);
 
-function l(e) {
+function d(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       o = Object.keys(t);
@@ -50,7 +50,7 @@ function s(e) {
   let {
     user: s
   } = t, [u, f] = (0, c.Z)(s.id);
-  return u && !n ? (0, o.jsx)(a.Z, l({
+  return u && !n ? (0, o.jsx)(a.Z, d({
     onHide: f
-  }, t)) : s.isNonUserBot() ? (0, o.jsx)(r.Z, l({}, t)) : s.bot ? (0, o.jsx)(i.Z, l({}, t)) : (0, o.jsx)(d.Z, l({}, t))
+  }, t)) : s.isNonUserBot() ? (0, o.jsx)(r.Z, d({}, t)) : s.bot ? (0, o.jsx)(i.Z, d({}, t)) : (0, o.jsx)(l.Z, d({}, t))
 }
