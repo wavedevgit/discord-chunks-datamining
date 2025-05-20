@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Q4: () => C,
-  Vv: () => I,
-  oO: () => T,
-  po: () => S,
-  x_: () => d.Z
+  Q4: () => P,
+  Vv: () => S,
+  oO: () => A,
+  po: () => T,
+  x_: () => f.Z
 }), n(388685), n(35282);
 var r = n(392711),
   i = n.n(r),
@@ -15,10 +15,11 @@ var r = n(392711),
   l = n(261470),
   c = n(956664),
   u = n(931619),
-  d = n(921948),
-  f = n(981631);
+  d = n(591759),
+  f = n(921948),
+  _ = n(981631);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,7 +28,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -37,42 +38,42 @@ function p(e, t) {
   }
   return n
 }
-let h = 5,
-  m = /\.webp($|\?|#)/i,
-  g = /\.avif($|\?|#)/i,
-  E = [16, 20, 22, 24, 28, 32, 40, 44, 48, 56, 60, 64, 80, 96, 100, 128, 160, 240, 256, 300, 320, 480, 512, 600, 640, 1024, 1280, 1536, 2048, 3072, 4096],
-  b = new(o())({
+let m = 5,
+  g = /\.webp($|\?|#)/i,
+  E = /\.avif($|\?|#)/i,
+  b = [16, 20, 22, 24, 28, 32, 40, 44, 48, 56, 60, 64, 80, 96, 100, 128, 160, 240, 256, 300, 320, 480, 512, 600, 640, 1024, 1280, 1536, 2048, 3072, 4096],
+  y = new(o())({
     max: 1e3
   });
 
-function y(e, t) {
+function O(e, t) {
   null == e.backoff && (e.backoff = new l.Z);
   let {
     backoff: n
   } = e;
   return async () => {
-    await u.Z.isOnline(), n.fails < h ? n.fail(() => {
-      O(e)
-    }) : v(!0, e, t)
+    await u.Z.isOnline(), n.fails < m ? n.fail(() => {
+      v(e)
+    }) : I(!0, e, t)
   }
 }
 
-function O(e) {
+function v(e) {
   let t = new Image;
-  t.onerror = y(e, t), t.onload = () => {
+  t.onerror = O(e, t), t.onload = () => {
     let {
       backoff: n
     } = e;
-    null != n && n.succeed(), v(!1, e, t)
+    null != n && n.succeed(), I(!1, e, t)
   }, t.src = e.url
 }
 
-function v(e, t, n) {
+function I(e, t, n) {
   let {
     callbacks: r,
     url: i
   } = t;
-  if (e) b.del(i);
+  if (e) y.del(i);
   else {
     let {
       width: e,
@@ -83,18 +84,18 @@ function v(e, t, n) {
       loaded: !0,
       width: e,
       height: r
-    }, b.set(i, t)
+    }, y.set(i, t)
   }
   null != r && r.forEach(n => n(e, t))
 }
 
-function I(e) {
-  let t = b.get(e);
+function S(e) {
+  let t = y.get(e);
   return null != t && t.loaded
 }
 
-function S(e, t) {
-  let n = b.get(e);
+function T(e, t) {
+  let n = y.get(e);
   if (null != n && n.loaded) return null != t && u.Z.awaitOnline().then(() => {
     null != n && null != n.callbacks && n.callbacks.forEach(t => {
       null != n ? t(!1, n) : t(!0, {
@@ -102,34 +103,34 @@ function S(e, t) {
         loaded: !0
       })
     })
-  }), f.dG4;
+  }), _.dG4;
   {
     let r;
     return null == n && (n = {
       url: e,
       loaded: !1
-    }, b.set(e, n), O(n)), null != t && (r = t.bind(null), null == n.callbacks && (n.callbacks = new Set), n.callbacks.add(r)), () => {
+    }, y.set(e, n), v(n)), null != t && (r = t.bind(null), null == n.callbacks && (n.callbacks = new Set), n.callbacks.add(r)), () => {
       null != r && null != n && (null != n.callbacks && n.callbacks.delete(r), null != n.backoff && n.backoff.cancel())
     }
   }
 }
 
-function T(e) {
+function A(e) {
   var t;
   let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
   if (n) {
-    let t = E.filter(t => t <= e).pop();
+    let t = b.filter(t => t <= e).pop();
     if (null != t && e / t <= 1.25) return t
   }
-  return null != (t = E.find(t => e <= t)) ? t : E[E.length - 1]
+  return null != (t = b.find(t => e <= t)) ? t : b[b.length - 1]
 }
 
-function A(e) {
+function N(e) {
   let [t, n] = e.split("?");
   return [t, s.parse(n)]
 }
 
-function N(e) {
+function C(e) {
   let {
     src: t,
     sourceWidth: n,
@@ -138,22 +139,22 @@ function N(e) {
     targetHeight: o,
     format: l = null,
     quality: u = null,
-    animated: d = !1,
-    srcIsAnimated: _ = !1
+    animated: f = !1,
+    srcIsAnimated: p = !1
   } = e;
-  if (t.startsWith("data:image")) return t;
-  let [p, h] = A(t);
-  null != l && (h.format = l), null != u && (h.quality = u), d && _ && (m.test(t) || g.test(t)) && (h.animated = !0), g.test(t) && (h.format = "webp");
-  let E = (0, c.Tj)({
+  if (t.startsWith("data:image") || d.Z.isDiscordCdnUrl(t)) return t;
+  let [h, m] = N(t);
+  null != l && (m.format = l), null != u && (m.quality = u), f && p && (g.test(t) || E.test(t)) && (m.animated = !0), E.test(t) && (m.format = "webp");
+  let b = (0, c.Tj)({
     width: a,
     height: o,
-    maxWidth: f.hiG,
-    maxHeight: f.hiG
+    maxWidth: _.hiG,
+    maxHeight: _.hiG
   });
-  return a = E.width, o = E.height, (a !== n || o !== r) && (h.width = 0 | a, h.height = 0 | o), i().isEmpty(h) || (p += "?" + s.stringify(h)), p
+  return a = b.width, o = b.height, (a !== n || o !== r) && (m.width = 0 | a, m.height = 0 | o), i().isEmpty(m) || (h += "?" + s.stringify(m)), h
 }
 
-function C(e) {
+function P(e) {
   let {
     src: t,
     width: n,
@@ -165,14 +166,14 @@ function C(e) {
     quality: l = null,
     animated: c = !1,
     srcIsAnimated: u = !1
-  } = e, f = n, _ = r;
-  o < 1 && (f = Math.round(n * o), _ = Math.round(r * o)), null != i && (f = Math.min(f, i)), null != a && (_ = Math.min(_, a));
-  let p = (0, d.Z)();
-  return N({
+  } = e, d = n, _ = r;
+  o < 1 && (d = Math.round(n * o), _ = Math.round(r * o)), null != i && (d = Math.min(d, i)), null != a && (_ = Math.min(_, a));
+  let p = (0, f.Z)();
+  return C({
     src: t,
     sourceWidth: n,
     sourceHeight: r,
-    targetWidth: f *= p,
+    targetWidth: d *= p,
     targetHeight: _ *= p,
     format: s,
     quality: l,
