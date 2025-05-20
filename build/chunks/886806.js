@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => E
+  Z: () => b
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -19,25 +19,25 @@ var r = n(255367),
   _ = n(726401),
   x = n(20493);
 
-function b(e) {
+function E(e) {
   n.g.location.assign(e)
 }
 
-function E(e) {
+function b(e) {
   let {
     location: t,
-    transitionTo: l = b
-  } = e, [o, E] = i.useState("submitting"), v = i.useRef(void 0);
+    transitionTo: l = E
+  } = e, [o, b] = i.useState("submitting"), v = i.useRef(void 0);
   (0, c.ZP)(() => {
     (0, h.e)("verify_email");
     let e = (0, u.Z)(t);
-    if (null == e) return void E("failed");
+    if (null == e) return void b("failed");
     (async () => {
       try {
         let t = await s.Z.verify(e);
-        E("succeeded"), v.current = t
+        b("succeeded"), v.current = t
       } catch (e) {
-        E("failed")
+        b("failed")
       }
     })()
   });
@@ -46,7 +46,7 @@ function E(e) {
         source: "verify_email"
       })
     }, [l]),
-    S = i.useCallback(() => {
+    I = i.useCallback(() => {
       p.default.track(m.rMx.VERIFY_ACCOUNT_APP_OPENED, {
         verifying_user_id: v.current
       }), (0, g.Z)("verify_email")
@@ -73,7 +73,7 @@ function E(e) {
       className: x.marginBottom40,
       children: f.intl.string(f.t.dAfGb2)
     }), (0, r.jsx)(d.zx, {
-      onClick: S,
+      onClick: I,
       children: f.intl.string(f.t.uJWIj4)
     })]
   }) : (0, r.jsxs)(d.ZP, {

@@ -18,14 +18,14 @@ var r = n(255367),
   f = n(970648),
   _ = n(981631),
   x = n(388032),
-  b = n(493148);
-let E = "mweb_handoff_nonce",
+  E = n(493148);
+let b = "mweb_handoff_nonce",
   v = "mweb_handoff_nonce_expiration",
   O = +m.Z.Millis.MINUTE,
-  S = new Set(["nonce_missing", "nonce_expired", "handoff_exchange"]),
-  I = new Set(["deep_link_failed"]),
+  I = new Set(["nonce_missing", "nonce_expired", "handoff_exchange"]),
+  S = new Set(["deep_link_failed"]),
   j = () => {
-    c.K.remove(E), c.K.remove(v)
+    c.K.remove(b), c.K.remove(v)
   },
   y = () => {
     let e = (0, o.e7)([h.default], () => h.default.getFingerprint()),
@@ -48,7 +48,7 @@ let E = "mweb_handoff_nonce",
       }, {
         fingerprint: y
       })
-    }, [C, y]), A = c.K.get(E);
+    }, [C, y]), A = c.K.get(b);
     if ("null" === n && null === N && T("deep_link_failed"), null != n && "null" !== n && null == A && null === N && T("nonce_missing"), i.useEffect(() => {
         if (null != A) {
           let e = c.K.get(v);
@@ -79,16 +79,16 @@ let E = "mweb_handoff_nonce",
       }, [n, A, N, y, T]), null == y) return null;
     let P = null == N ? (0, r.jsxs)(r.Fragment, {
       children: [x.intl.string(x.t.uJ1Jsb), (0, r.jsx)("br", {}), x.intl.string(x.t.GHVWAg)]
-    }) : I.has(N) ? x.intl.string(x.t.EPt55u) : S.has(N) ? x.intl.string(x.t.g87kTk) : void 0;
-    return null != N && I.has(N) ? (0, r.jsx)("div", {
-      className: b.errorContainer,
+    }) : S.has(N) ? x.intl.string(x.t.EPt55u) : I.has(N) ? x.intl.string(x.t.g87kTk) : void 0;
+    return null != N && S.has(N) ? (0, r.jsx)("div", {
+      className: E.errorContainer,
       children: (0, r.jsx)(u.Text, {
         color: "interactive-normal",
         variant: "text-sm/semibold",
         children: P
       })
     }) : (0, r.jsxs)("div", {
-      className: b.container,
+      className: E.container,
       children: [(0, r.jsx)(u.Text, {
         variant: "text-sm/semibold",
         children: P
@@ -96,7 +96,7 @@ let E = "mweb_handoff_nonce",
         color: u.zxk.Colors.BRAND_INVERTED,
         onClick: () => {
           let e = f.Z.generateNonce();
-          c.K.set(E, e), c.K.set(v, Date.now() + O);
+          c.K.set(b, e), c.K.set(v, Date.now() + O);
           let t = new URL(_.x0X),
             n = new URLSearchParams(window.location.search);
           n.delete("fingerprint"), n.delete("handoff_token");
@@ -111,7 +111,7 @@ let E = "mweb_handoff_nonce",
           }), window.location.href = t.toString()
         },
         children: (0, r.jsx)(u.Text, {
-          className: b.buttonText,
+          className: E.buttonText,
           variant: "text-sm/semibold",
           children: x.intl.string(x.t["NcC75+"])
         })

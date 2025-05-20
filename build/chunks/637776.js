@@ -21,15 +21,15 @@ function f(e) {
     location: t
   } = e, [f, _] = i.useState(!1), {
     verifySuccess: x,
-    verifyErrors: b,
-    redirectGuildId: E
+    verifyErrors: E,
+    redirectGuildId: b
   } = (0, l.e7)([d.Z], () => d.Z.getState());
   i.useEffect(() => {
     let e = (0, o.Z)(t);
     a.Z.verify(e), (0, u.e)("verify_hub_email")
   }, [t]);
   let v = () => {
-    (0, g.Z)(E), _(!0)
+    (0, g.Z)(b), _(!0)
   };
   return f ? (0, r.jsxs)(s.ZP, {
     children: [(0, r.jsx)(s.Dx, {
@@ -40,7 +40,7 @@ function f(e) {
       children: p.intl.string(p.t["m1+IBg"])
     }), (0, r.jsx)(s.zx, {
       className: m.spacedButton,
-      onClick: () => (0, c.uL)(h.Z5c.CHANNEL(E)),
+      onClick: () => (0, c.uL)(h.Z5c.CHANNEL(b)),
       children: p.intl.string(p.t.fIv16O)
     })]
   }) : x ? (0, r.jsxs)(s.ZP, {
@@ -54,7 +54,7 @@ function f(e) {
       onClick: v,
       children: p.intl.string(p.t.uJWIj4)
     })]
-  }) : null != b ? (0, r.jsxs)(s.ZP, {
+  }) : null != E ? (0, r.jsxs)(s.ZP, {
     children: [(0, r.jsx)(s.Ee, {
       className: m.image,
       src: n(375673)

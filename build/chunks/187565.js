@@ -59,17 +59,17 @@ function j(e, t, n) {
   return i.useMemo(() => n && (null == s ? void 0 : s.id) === e ? s : null != r ? r : null != t ? new c.ZP(t) : null, [n, s, e, r, t])
 }
 
-function v(e, t) {
-  let n = !(null == e ? void 0 : e.isClaimed()),
-    r = null == e ? void 0 : e.verified,
-    [l, o] = i.useState(!t && n ? 0 : 2);
+function v(e) {
+  let t = !(null == e ? void 0 : e.isClaimed()),
+    n = null == e ? void 0 : e.verified,
+    [r, l] = i.useState(2 * !t);
   return i.useEffect(() => {
-    null != e && e.isClaimed() && o(2)
+    null != e && e.isClaimed() && l(2)
   }, [e]), i.useEffect(() => {
-    1 === l && r && o(2)
-  }, [l, r]), {
-    currentStep: l,
-    setCurrentStep: o
+    1 === r && n && l(2)
+  }, [r, n]), {
+    currentStep: r,
+    setCurrentStep: l
   }
 }
 

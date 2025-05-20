@@ -34,8 +34,8 @@ function x(e) {
       }
     }, [e.transitionTo]),
     {
-      isAuthenticated: b,
-      loginStatus: E
+      isAuthenticated: E,
+      loginStatus: b
     } = (0, o.cj)([p.default], () => ({
       isAuthenticated: p.default.isAuthenticated(),
       loginStatus: p.default.getLoginStatus()
@@ -44,7 +44,7 @@ function x(e) {
       location: v,
       redirectTo: O
     } = e,
-    [S, I] = i.useState(b);
+    [I, S] = i.useState(E);
 
   function j(e) {
     let {
@@ -56,7 +56,7 @@ function x(e) {
       handoffKey: t,
       handoffToken: n,
       handoffSource: r
-    }), I(!1)
+    }), S(!1)
   }
   return ((0, u.ZP)(() => {
     if (null != v) {
@@ -66,7 +66,7 @@ function x(e) {
       } = (0, l.parse)(v.search);
       if (null != e && null != t) {
         let n = null != O ? (0, d.L)(O) : void 0;
-        S ? s.Z.logout("handoff", null).finally(() => {
+        I ? s.Z.logout("handoff", null).finally(() => {
           j({
             handoffKey: e,
             handoffToken: t,
@@ -79,7 +79,7 @@ function x(e) {
         })
       }
     }
-  }), S || E === f.u34.LOGGING_IN) ? (0, r.jsx)(m.q, {}) : (0, r.jsx)(m.Z, (t = function(e) {
+  }), I || b === f.u34.LOGGING_IN) ? (0, r.jsx)(m.q, {}) : (0, r.jsx)(m.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

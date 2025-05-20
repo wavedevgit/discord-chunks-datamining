@@ -18,8 +18,8 @@ var r = n(255367),
   f = n(63063),
   _ = n(981631),
   x = n(388032),
-  b = n(793613),
-  E = n(20493);
+  E = n(793613),
+  b = n(20493);
 
 function v(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -53,12 +53,12 @@ function O(e, t) {
   }), e
 }
 a.ZP.initialize();
-let S = {
+let I = {
     [g.BM.MESSAGE]: x.t.fuqnBA,
     [g.BM.USER]: x.t.F4jrRU,
     [g.BM.GUILD]: x.t.gH3aMj
   },
-  I = e => {
+  S = e => {
     let {
       title: t,
       menuType: i
@@ -98,7 +98,7 @@ let S = {
       })
     };
     return (0, r.jsxs)(o.P3F, {
-      className: b.reportButton,
+      className: E.reportButton,
       onClick: () => a(),
       children: [(0, r.jsx)(o.Text, {
         variant: "text-md/medium",
@@ -134,17 +134,17 @@ let S = {
       children: (0, r.jsx)(o.$jN, {})
     }) : null != n && n.length > 0 && (0, r.jsxs)(u.ZP, {
       children: [(0, r.jsx)(u.Dx, {
-        className: E.marginBottom8,
+        className: b.marginBottom8,
         children: x.intl.string(x.t.Z11w19)
       }), (0, r.jsx)(u.DK, {
-        className: E.marginBottom8,
+        className: b.marginBottom8,
         children: x.intl.format(x.t["532l+v"], {
           supportURL: f.Z.getArticleURL(_.BhN.COPYRIGHT_AND_IP_POLICY)
         })
       }), (0, r.jsx)("div", {
-        className: b.container,
-        children: n.map(e => null == S[e] ? null : (0, r.jsx)(I, {
-          title: x.intl.string(S[e]),
+        className: E.container,
+        children: n.map(e => null == I[e] ? null : (0, r.jsx)(S, {
+          title: x.intl.string(I[e]),
           menuType: e
         }, e))
       })]

@@ -17,12 +17,12 @@ var r, i = n(255367),
   f = n(899370),
   _ = n(224841),
   x = n(13430),
-  b = n(213609),
-  E = n(882037),
+  E = n(213609),
+  b = n(882037),
   v = n(8184),
   O = n(254942),
-  S = n(481230),
-  I = n(388905),
+  I = n(481230),
+  S = n(388905),
   j = n(853268),
   y = n(639946),
   N = n(616952),
@@ -195,16 +195,16 @@ class eh extends(r = l.PureComponent) {
       usernameSuggestion: u,
       isMobileWebInviteRegistration: d,
       inUnclaimedFlowExperiment: g
-    } = this.props, h = null != a ? a.code : null, p = null != s ? s.skuId : null, f = E.MD.getState(), _ = (0, J.Ew)(u) ? null : t === u, x = en.a ? await (0, T.K)(t) : t, b = en.a ? await (0, T.K)(n) : n;
+    } = this.props, h = null != a ? a.code : null, p = null != s ? s.skuId : null, f = b.MD.getState(), _ = (0, J.Ew)(u) ? null : t === u, x = en.a ? await (0, T.K)(t) : t, E = en.a ? await (0, T.K)(n) : n;
     W.S.dispatch(ee.CkL.WAVE_EMPHASIZE), this.setState({
       registering: !0,
       apiErrors: {}
     });
     try {
-      d || null == a ? await (0, S.R$)({
+      d || null == a ? await (0, I.R$)({
         email: e,
         username: x,
-        globalName: b,
+        globalName: E,
         consent: i,
         password: r,
         invite: h,
@@ -213,12 +213,12 @@ class eh extends(r = l.PureComponent) {
         giftCodeSKUId: p,
         birthday: l,
         promoEmailConsent: f.required ? f : null
-      }) : await (0, S.ZP)({
+      }) : await (0, I.ZP)({
         consent: i,
         invite: h,
         giftCodeSKUId: p,
         usedUsernameSuggestion: _,
-        globalName: b,
+        globalName: E,
         birthday: g ? l : void 0
       }), null == c || c()
     } catch (t) {
@@ -258,7 +258,7 @@ class eh extends(r = l.PureComponent) {
         termsURL: ee.EYA.TERMS,
         privacyURL: ee.EYA.PRIVACY
       })
-    }) : (0, i.jsx)(I.i_, {
+    }) : (0, i.jsx)(S.i_, {
       className: o()(eo.marginTop8, {
         [ea.centeredSubText]: n
       }),
@@ -279,9 +279,9 @@ class eh extends(r = l.PureComponent) {
         globalName: e
       })
     }, n = this.state.globalName;
-    return (0, i.jsxs)(I.ZP, {
+    return (0, i.jsxs)(S.ZP, {
       className: e,
-      children: [(0, i.jsx)(Q.R, {}), (0, i.jsxs)(I.gO, {
+      children: [(0, i.jsx)(Q.R, {}), (0, i.jsxs)(S.gO, {
         className: eo.marginTop40,
         children: [(0, i.jsx)(h.vwX, {
           children: el.intl.string(el.t.TWzdWl)
@@ -294,7 +294,7 @@ class eh extends(r = l.PureComponent) {
               onMouseEnter: r,
               onMouseLeave: l
             } = e;
-            return (0, i.jsx)(I.II, {
+            return (0, i.jsx)(S.II, {
               autoFocus: !0,
               className: eo.marginBottom8,
               name: "username",
@@ -307,20 +307,20 @@ class eh extends(r = l.PureComponent) {
               onBlur: () => this.trackInputBlur("username")
             })
           }
-        }), (0, i.jsx)(I.zx, {
+        }), (0, i.jsx)(S.zx, {
           className: eo.marginTop20,
           disabled: !0,
           children: el.intl.string(el.t["3PatS0"])
-        }), (0, i.jsx)(I.i_, {
+        }), (0, i.jsx)(S.i_, {
           disabled: !0,
           className: eo.marginTop8,
           children: el.intl.format(el.t["F+0zT0"], {
             termsURL: ee.EYA.TERMS,
             privacyURL: ee.EYA.PRIVACY
           })
-        }), en.a ? null : (0, i.jsx)(I.zx, {
-          look: I.zx.Looks.LINK,
-          color: I.zx.Colors.LINK,
+        }), en.a ? null : (0, i.jsx)(S.zx, {
+          look: S.zx.Looks.LINK,
+          color: S.zx.Colors.LINK,
           disabled: !0,
           className: eo.marginTop20,
           children: el.intl.string(el.t["r/jzu7"])
@@ -352,13 +352,13 @@ class eh extends(r = l.PureComponent) {
     } = this.props, {
       consent: r,
       registering: l
-    } = this.state, a = I.zx.Colors.BRAND, o = n ? el.intl.string(el.t["825cFx"]) : el.intl.string(el.t["3PatS0"]);
-    return (null == e ? void 0 : e.stage_instance) != null && (a = I.zx.Colors.GREEN, o = el.intl.string(el.t["5UKyUl"])), (0, i.jsx)(h.ua7, {
+    } = this.state, a = S.zx.Colors.BRAND, o = n ? el.intl.string(el.t["825cFx"]) : el.intl.string(el.t["3PatS0"]);
+    return (null == e ? void 0 : e.stage_instance) != null && (a = S.zx.Colors.GREEN, o = el.intl.string(el.t["5UKyUl"])), (0, i.jsx)(h.ua7, {
       text: !r && t ? el.intl.string(el.t.AY4IVF) : null,
       children: e => (0, i.jsx)("div", eu(ec({
         className: n ? eo.marginTop8 : eo.marginTop20
       }, e), {
-        children: (0, i.jsx)(I.zx, {
+        children: (0, i.jsx)(S.zx, {
           type: "submit",
           submitting: l,
           disabled: !this.hasConsent(),
@@ -393,13 +393,13 @@ class eh extends(r = l.PureComponent) {
       })
     };
     return (0, i.jsxs)("div", {
-      children: [(0, i.jsxs)(I.ZP, {
+      children: [(0, i.jsxs)(S.ZP, {
         onSubmit: this.handleSubmit,
         tag: "form",
         className: t,
         children: [this.renderInviteHeader(), m ? (0, i.jsx)("div", {
           className: ea.divider
-        }) : null, (0, i.jsxs)(I.gO, {
+        }) : null, (0, i.jsxs)(S.gO, {
           className: m ? void 0 : eo.marginTop40,
           children: [(0, i.jsx)(h.vwX, {
             error: null != s ? s : eg(null != l ? l : r),
@@ -413,7 +413,7 @@ class eh extends(r = l.PureComponent) {
                 onMouseEnter: t,
                 onMouseLeave: n
               } = e;
-              return (0, i.jsx)(I.II, {
+              return (0, i.jsx)(S.II, {
                 autoFocus: !0,
                 className: eo.marginBottom8,
                 name: "global_name",
@@ -462,16 +462,16 @@ class eh extends(r = l.PureComponent) {
             })]
           }) : null, n && g, this.renderInviteButton(), !n && g, p, en.a ? null : (0, i.jsx)("div", {
             className: n ? ea.centeredButtonContainer : void 0,
-            children: (0, i.jsx)(I.zx, {
-              look: I.zx.Looks.LINK,
-              color: I.zx.Colors.LINK,
+            children: (0, i.jsx)(S.zx, {
+              look: S.zx.Looks.LINK,
+              color: S.zx.Colors.LINK,
               onClick: this.handleGotoLogin,
               className: eo.marginTop20,
               children: n ? el.intl.string(el.t["1lWxu7"]) : el.intl.string(el.t["r/jzu7"])
             })
           })]
         })]
-      }), null != e && m ? (0, i.jsx)(I.ZP, {
+      }), null != e && m ? (0, i.jsx)(S.ZP, {
         className: eo.marginTop20,
         children: (0, i.jsx)(C.y, {
           guild: e.guild,
@@ -486,7 +486,7 @@ class eh extends(r = l.PureComponent) {
         message: e
       }
     } = this.state;
-    return "string" != typeof e ? null : (0, i.jsx)(I.i_, {
+    return "string" != typeof e ? null : (0, i.jsx)(S.i_, {
       className: o()(eo.marginTop20, ea.errorMessage),
       children: e
     })
@@ -506,11 +506,11 @@ class eh extends(r = l.PureComponent) {
       dateOfBirthClientError: f,
       registering: _,
       apiErrors: {
-        email: b,
-        username: E,
+        email: E,
+        username: b,
         global_name: v,
         password: O,
-        date_of_birth: S
+        date_of_birth: I
       } = {}
     } = this.state, {
       consentRequired: j,
@@ -528,7 +528,7 @@ class eh extends(r = l.PureComponent) {
       children: e => (0, i.jsx)("div", eu(ec({
         className: eo.marginTop20
       }, e), {
-        children: (0, i.jsx)(I.zx, {
+        children: (0, i.jsx)(S.zx, {
           type: "submit",
           submitting: _,
           disabled: !this.hasConsent() || this.state.isRateLimited,
@@ -541,11 +541,11 @@ class eh extends(r = l.PureComponent) {
       }), C && a.length > 0 && !D.Z.wasRegistrationSuggestionFetched(a) && await L.Z.fetchSuggestionsRegistration(a)
     }, M = null != e ? (0, i.jsx)(l.Fragment, {
       children: e()
-    }, "custom-header") : (0, i.jsx)(I.Dx, {
+    }, "custom-header") : (0, i.jsx)(S.Dx, {
       children: el.intl.string(el.t.wC4TlZ)
-    }, "title"), U = (0, i.jsxs)(I.gO, {
+    }, "title"), U = (0, i.jsxs)(S.gO, {
       className: eo.marginTop20,
-      children: [(0, i.jsx)(I.II, {
+      children: [(0, i.jsx)(S.II, {
         autoFocus: !0,
         className: eo.marginBottom20,
         label: el.intl.string(el.t.dI4d4e),
@@ -555,7 +555,7 @@ class eh extends(r = l.PureComponent) {
           email: e,
           emailClientError: 0 === e.length ? el.intl.string(el.t.EkokLy) : null
         }),
-        error: null != g ? g : eg(b),
+        error: null != g ? g : eg(E),
         type: "email",
         autoComplete: "username",
         setRef: e => {
@@ -564,7 +564,7 @@ class eh extends(r = l.PureComponent) {
         required: !0,
         onFocus: () => this.trackInputFocus("email"),
         onBlur: () => this.trackInputBlur("email")
-      }), (0, i.jsx)(I.II, {
+      }), (0, i.jsx)(S.II, {
         label: el.intl.string(el.t["9AjdkJ"]),
         className: eo.marginBottom20,
         name: "global_name",
@@ -603,7 +603,7 @@ class eh extends(r = l.PureComponent) {
         }),
         onFocus: k,
         tabIndex: -1,
-        children: [(0, i.jsx)(I.II, {
+        children: [(0, i.jsx)(S.II, {
           label: el.intl.string(el.t.TWzdWl),
           className: eo.marginBottom20,
           name: "username",
@@ -614,7 +614,7 @@ class eh extends(r = l.PureComponent) {
               usernameClientError: 0 === e.length ? el.intl.string(el.t.EkokLy) : null
             })
           },
-          error: null != p ? p : eg(E),
+          error: null != p ? p : eg(b),
           autoComplete: "off",
           setRef: e => {
             this.usernameRef = e
@@ -623,7 +623,7 @@ class eh extends(r = l.PureComponent) {
           onFocus: () => this.trackInputFocus("username"),
           onBlur: () => this.trackInputBlur("username")
         }), this.renderUsernameValidation()]
-      }), (0, i.jsx)(I.II, {
+      }), (0, i.jsx)(S.II, {
         label: el.intl.string(el.t["CIGa+/"]),
         name: "password",
         value: s,
@@ -646,14 +646,14 @@ class eh extends(r = l.PureComponent) {
         name: "date_of_birth",
         onChange: this.handleBirthdayChange,
         ref: this.dateOfBirthRef,
-        error: null != f ? f : eg(S),
+        error: null != f ? f : eg(I),
         value: u,
         required: !0,
         onFocus: this.trackInputFocus,
         onBlur: this.trackInputBlur
-      }), (0, i.jsx)(N.Z, {}), w, R, Z, P, en.a ? null : (0, i.jsx)(I.zx, {
-        look: y ? I.zx.Looks.FILLED : I.zx.Looks.LINK,
-        color: y ? I.zx.Colors.PRIMARY : I.zx.Colors.LINK,
+      }), (0, i.jsx)(N.Z, {}), w, R, Z, P, en.a ? null : (0, i.jsx)(S.zx, {
+        look: y ? S.zx.Looks.FILLED : S.zx.Looks.LINK,
+        color: y ? S.zx.Colors.PRIMARY : S.zx.Colors.LINK,
         onClick: this.handleGotoLogin,
         className: eo.marginTop20,
         children: el.intl.string(el.t["r/jzu7"])
@@ -665,19 +665,19 @@ class eh extends(r = l.PureComponent) {
       className: o()(T, ea.horizontalAuthBox),
       children: () => [M, (0, i.jsxs)("div", {
         className: ea.flex,
-        children: [(0, i.jsx)(I.Dx, {
+        children: [(0, i.jsx)(S.Dx, {
           className: ea.createAccountTemplateHeader,
           children: el.intl.string(el.t.wC4TlZ)
         }), U]
       }, "register-title")]
-    }) : (0, i.jsxs)(I.ZP, {
+    }) : (0, i.jsxs)(S.ZP, {
       onSubmit: this.handleSubmit,
       tag: "form",
       className: T,
-      children: [A && !y ? (0, i.jsx)(I.zx, {
+      children: [A && !y ? (0, i.jsx)(S.zx, {
         onClick: this.handleGotoLogin,
-        look: I.zx.Looks.LINK,
-        color: I.zx.Colors.PRIMARY,
+        look: S.zx.Looks.LINK,
+        color: S.zx.Colors.PRIMARY,
         className: ea.goBackButton,
         children: (0, i.jsxs)("div", {
           className: ea.content,
@@ -843,7 +843,7 @@ function ep(e) {
     n = (0, M.F4)(),
     r = (0, d.e7)([D.Z], () => D.Z.registrationUsernameSuggestion()),
     [a, o] = l.useState(et.EW.FULL);
-  (0, b.Z)({
+  (0, E.Z)({
     type: u.ImpressionTypes.VIEW,
     name: u.ImpressionNames.USER_REGISTRATION,
     properties: {
