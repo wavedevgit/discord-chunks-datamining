@@ -1,12 +1,12 @@
 /** Chunk was on 43473 **/
 n.d(t, {
-  Z: () => p
+  Z: () => m
 });
 var o = n(255367);
 n(73800);
 var r = n(481060),
-  i = n(906732),
-  c = n(705556),
+  c = n(906732),
+  i = n(705556),
   a = n(30556),
   l = n(664794),
   s = n(522182),
@@ -14,33 +14,33 @@ var r = n(481060),
   u = n(562831),
   f = n(981631);
 
-function p(e) {
+function m(e) {
   let {
     user: t,
     currentUser: n,
-    guildId: p,
-    relationshipType: m,
+    guildId: m,
+    relationshipType: p,
     onClose: b
   } = e, {
     newestAnalyticsLocation: _
-  } = (0, i.ZP)(), {
-    gameFriends: g,
+  } = (0, c.ZP)(), {
+    gameFriends: y,
     hasOutgoingPendingGameFriends: h,
-    hasIncomingPendingGameFriends: y
+    hasIncomingPendingGameFriends: g
   } = (0, u.H)({
     userId: t.id
-  }), x = g.length > 0 || h || y;
-  return m === f.OGo.BLOCKED ? null : t.id === n.id ? (0, o.jsxs)(o.Fragment, {
-    children: [(0, o.jsx)(c.Z, {
+  }), x = y.length > 0 || h || g;
+  return p === f.OGo.BLOCKED ? null : t.id === n.id ? (0, o.jsxs)(o.Fragment, {
+    children: [(0, o.jsx)(i.Z, {
       user: t,
-      guildId: p,
+      guildId: m,
       onClose: b
     }), (0, o.jsx)(s.Z, {
       onClose: b
     }), (0, o.jsx)(l.Z, {
       type: "icon",
       user: t,
-      guildId: p,
+      guildId: m,
       themeColor: "secondary"
     })]
   }) : t.bot ? (0, o.jsxs)(o.Fragment, {
@@ -52,10 +52,10 @@ function p(e) {
     }), (0, o.jsx)(l.Z, {
       type: "icon",
       user: t,
-      guildId: p,
+      guildId: m,
       themeColor: "secondary"
     })]
-  }) : m === f.OGo.FRIEND || m === f.OGo.PENDING_OUTGOING || m === f.OGo.PENDING_INCOMING ? (0, o.jsxs)(o.Fragment, {
+  }) : p === f.OGo.FRIEND || p === f.OGo.PENDING_OUTGOING || p === f.OGo.PENDING_INCOMING ? (0, o.jsxs)(o.Fragment, {
     children: [(0, o.jsx)(a.Z, {
       type: "text",
       userId: t.id,
@@ -65,17 +65,17 @@ function p(e) {
     }), (0, o.jsx)(d.g, {
       type: "icon",
       user: t,
-      relationshipType: m,
+      relationshipType: p,
       shouldShowTooltip: !0,
       themeColor: "secondary",
       analyticsLocation: _
     }), (0, o.jsx)(l.Z, {
       type: "icon",
       user: t,
-      guildId: p,
+      guildId: m,
       themeColor: "secondary"
     })]
-  }) : m === f.OGo.NONE && x ? (0, o.jsxs)(o.Fragment, {
+  }) : p === f.OGo.NONE && x ? (0, o.jsxs)(o.Fragment, {
     children: [(0, o.jsx)(a.Z, {
       type: "text",
       userId: t.id,
@@ -86,14 +86,14 @@ function p(e) {
       user: t,
       analyticsLocation: _,
       themeColor: "secondary",
-      gameFriends: g,
+      gameFriends: y,
       shouldShowTooltip: !0,
-      hasIncomingPendingGameFriends: y,
+      hasIncomingPendingGameFriends: g,
       hasOutgoingPendingGameFriends: h
     }), (0, o.jsx)(l.Z, {
       type: "icon",
       user: t,
-      guildId: p,
+      guildId: m,
       themeColor: "secondary"
     })]
   }) : (0, o.jsxs)(o.Fragment, {
@@ -111,7 +111,7 @@ function p(e) {
     }), (0, o.jsx)(l.Z, {
       type: "icon",
       user: t,
-      guildId: p,
+      guildId: m,
       themeColor: "secondary"
     })]
   })

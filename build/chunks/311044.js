@@ -4,16 +4,16 @@ n.d(t, {
 });
 var o = n(255367),
   r = n(73800),
-  i = n(481060),
-  c = n(81897),
+  c = n(481060),
+  i = n(81897),
   a = n(906732),
   l = n(566898),
   s = n(785717),
   d = n(806729),
   u = n(857302),
   f = n(892001),
-  p = n(252417),
-  m = n(264481),
+  m = n(252417),
+  p = n(264481),
   b = n(274151);
 
 function _(e) {
@@ -21,23 +21,23 @@ function _(e) {
     user: t,
     guildId: n,
     channelId: _,
-    onClose: g
+    onClose: y
   } = e, {
     analyticsLocations: h
   } = (0, a.ZP)(), {
-    context: y,
+    context: g,
     trackUserProfileAction: x
   } = (0, s.KZ)(), {
     mutualFriends: j,
-    mutualFriendsCount: I
-  } = (0, d.Z)(t), O = (0, c.Z)();
+    mutualFriendsCount: O
+  } = (0, d.Z)(t), I = (0, i.Z)();
   return r.useEffect(() => {
-    (0, u.Z)(t.id, O)
-  }, [t.id, O]), (0, o.jsx)(i.Ttm, {
+    (0, u.Z)(t.id, I)
+  }, [t.id, I]), (0, o.jsx)(c.Ttm, {
     className: b.scroller,
     fade: !0,
     children: null == j ? Array.from({
-      length: null != I ? I : 10
+      length: null != O ? O : 10
     }).map((e, t) => (0, o.jsxs)("div", {
       className: b.loadingItem,
       children: [(0, o.jsx)(l.ZT, {
@@ -47,20 +47,20 @@ function _(e) {
         width: 135,
         opacity: .08
       })]
-    }, t)) : 0 === j.length ? (0, o.jsx)(m.s_, {}) : j.map(e => {
+    }, t)) : 0 === j.length ? (0, o.jsx)(p.s_, {}) : j.map(e => {
       let {
         key: t,
         user: r,
-        status: i
+        status: c
       } = e;
-      return (0, o.jsx)(p.Z, {
+      return (0, o.jsx)(m.Z, {
         user: r,
-        status: i,
+        status: c,
         guildId: n,
         channelId: _,
         onSelect: () => {
           var e, t;
-          g(), x({
+          y(), x({
             action: "PRESS_MUTUAL_FRIEND"
           }), (0, f.openUserProfileModal)((e = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -79,7 +79,7 @@ function _(e) {
               })
             }
             return e
-          }({}, y), t = t = {
+          }({}, g), t = t = {
             userId: r.id,
             sourceAnalyticsLocations: h
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {

@@ -5,8 +5,8 @@ n.r(t), n.d(t, {
 var o = n(255367);
 n(73800);
 var r = n(788111),
-  i = n(752342),
-  c = n(886794),
+  c = n(752342),
+  i = n(886794),
   a = n(858970),
   l = n(595145);
 
@@ -37,13 +37,13 @@ function d(e) {
     var n, o, r = function(e, t) {
       if (null == e) return {};
       var n, o, r = {},
-        i = Object.keys(e);
-      for (o = 0; o < i.length; o++) n = i[o], t.indexOf(n) >= 0 || (r[n] = e[n]);
+        c = Object.keys(e);
+      for (o = 0; o < c.length; o++) n = c[o], t.indexOf(n) >= 0 || (r[n] = e[n]);
       return r
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      for (o = 0; o < i.length; o++) n = i[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+      var c = Object.getOwnPropertySymbols(e);
+      for (o = 0; o < c.length; o++) n = c[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
     return r
   }(e, ["hideRestrictedProfile"]);
@@ -52,5 +52,5 @@ function d(e) {
   } = n, [u, f] = (0, r.Z)(d.id);
   return u && !t ? (0, o.jsx)(a.Z, s({
     onHide: f
-  }, n)) : d.isNonUserBot() ? (0, o.jsx)(c.Z, s({}, n)) : d.bot ? (0, o.jsx)(i.Z, s({}, n)) : (0, o.jsx)(l.Z, s({}, n))
+  }, n)) : d.isNonUserBot() ? (0, o.jsx)(i.Z, s({}, n)) : d.bot ? (0, o.jsx)(c.Z, s({}, n)) : (0, o.jsx)(l.Z, s({}, n))
 }

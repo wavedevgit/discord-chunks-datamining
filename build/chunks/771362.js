@@ -18,6 +18,6 @@ function u(e) {
     let {
       type: t
     } = e, l = i.Z.get(t);
-    return null != l && n(l)
+    return null != l && i.Z.isSupported(t) && n(l)
   }), [null == t ? void 0 : t.connectedAccounts, n])
 }

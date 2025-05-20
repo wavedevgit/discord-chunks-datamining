@@ -12,7 +12,5 @@ e.exports = {
   profileButtons: "profileButtons__9c3be",
   profileScroller: "profileScroller__9c3be",
   profileHeading: "profileHeading__9c3be",
-  profileConnections: "profileConnections__9c3be",
-  profileAppConnections: "profileAppConnections__9c3be",
   profileNote: "profileNote__9c3be"
 }

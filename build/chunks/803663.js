@@ -44,6 +44,7 @@ function g(e) {
     onClick: T
   }) : (0, r.jsx)(p.tG, {
     text: m.intl.string(m.t.ZYO5OD),
+    themeColor: "secondary",
     fullWidth: !0,
     disabled: v,
     onClick: T

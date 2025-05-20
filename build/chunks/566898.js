@@ -1,19 +1,19 @@
 /** Chunk was on 43473 **/
 n.d(t, {
   M9: () => h,
-  Pb: () => g,
+  Pb: () => y,
   XX: () => b,
-  ZP: () => y,
+  ZP: () => g,
   ZT: () => f,
   iv: () => _,
-  pk: () => m
+  pk: () => p
 });
 var o = n(255367);
 n(73800);
 var r = n(120356),
-  i = n.n(r),
-  c = n(392711),
-  a = n.n(c),
+  c = n.n(r),
+  i = n(392711),
+  a = n.n(i),
   l = n(481060),
   s = n(881448);
 
@@ -37,7 +37,7 @@ function f(e) {
     className: r
   } = e;
   return (0, o.jsx)("div", {
-    className: i()(r, {
+    className: c()(r, {
       [s.blob]: !0
     }),
     style: {
@@ -47,14 +47,14 @@ function f(e) {
   })
 }
 
-function p(e) {
+function m(e) {
   let t, {
       groupStart: n = !1,
       compact: r = !1,
-      attachmentSpecs: c,
+      attachmentSpecs: i,
       usernameWidth: d,
-      usernameOpacity: p,
-      className: m,
+      usernameOpacity: m,
+      className: p,
       style: b
     } = e,
     _ = r ? 50 : a().random(40, 50);
@@ -63,14 +63,14 @@ function p(e) {
       className: s.header,
       children: (0, o.jsx)(f, {
         width: d,
-        opacity: p,
+        opacity: m,
         className: s.__invalid_username
       })
     })]
   }) : r && (t = (0, o.jsxs)(o.Fragment, {
     children: [r && (0, o.jsx)(f, {
       width: _,
-      className: i()({
+      className: c()({
         [s.compactTimestamp]: !0,
         [s.hidden]: !n
       })
@@ -78,12 +78,12 @@ function p(e) {
       className: s.header,
       children: (0, o.jsx)(f, {
         width: d,
-        opacity: p
+        opacity: m
       })
     })]
   })), (0, o.jsxs)("div", {
     "aria-hidden": !0,
-    className: i()(m, {
+    className: c()(p, {
       [s.wrapper]: !0,
       [s.compact]: r,
       [s.cozy]: !r
@@ -98,7 +98,7 @@ function p(e) {
           opacity: .06
         }, t))
       })]
-    }), null != c && (0, o.jsx)("div", {
+    }), null != i && (0, o.jsx)("div", {
       className: s.attachmentContainer,
       children: (0, o.jsx)("div", {
         className: s.attachment,
@@ -121,33 +121,33 @@ function p(e) {
           return e
         }({
           opacity: .03
-        }, c)
+        }, i)
       })
     })]
   })
 }
-let m = 44,
+let p = 44,
   b = 22,
   _ = 26,
-  g = 26,
+  y = 26,
   h = 6;
 
-function y(e) {
+function g(e) {
   let {
     messages: t,
     groupSpacing: n = 0,
     compact: r = !1,
-    attachmentSpecs: i,
-    className: c
-  } = e, l = null != i ? i.last ? t - 1 : a().random(0, t - 1) : -1, s = a().random(80, 120), u = a().random(.1, .2);
+    attachmentSpecs: c,
+    className: i
+  } = e, l = null != c ? c.last ? t - 1 : a().random(0, t - 1) : -1, s = a().random(80, 120), u = a().random(.1, .2);
   return (0, o.jsx)(o.Fragment, {
-    children: Array(t).fill(null).map((e, t) => (0, o.jsx)(p, {
+    children: Array(t).fill(null).map((e, t) => (0, o.jsx)(m, {
       compact: r,
-      className: c,
+      className: i,
       usernameWidth: s,
       usernameOpacity: u,
       groupStart: 0 === t,
-      attachmentSpecs: t === l ? i : void 0,
+      attachmentSpecs: t === l ? c : void 0,
       style: 0 === t ? {
         marginTop: d(n)
       } : void 0

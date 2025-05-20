@@ -1,6 +1,6 @@
 /**
   Module ID: 43473
-  Original File Name: ed185bb7f52ee9b6
+  Original File Name: af183110aac42c84
 **/
 .scroller__95bea {
     display: flex;
@@ -802,6 +802,62 @@
     width: 376px
 }
 
+.container__9bfb9 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%
+}
+
+.connection__9bfb9 {
+    display: flex;
+    gap: 8px
+}
+
+.connectionInfo__9bfb9 {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center
+}
+
+.platformIcon__9bfb9 {
+    flex-shrink: 0;
+    height: 24px;
+    width: 24px
+}
+
+.accountName__9bfb9 {
+    align-items: center;
+    display: flex;
+    gap: 2px
+}
+
+.platformUrlAnchor__9bfb9:hover {
+    -webkit-text-decoration: underline var(--text-default);
+    text-decoration: underline var(--text-default)
+}
+
+.platformUrlIcon__9bfb9 {
+    color: var(--text-default);
+    display: block;
+    height: 16px;
+    transform: rotate(45deg);
+    width: 16px
+}
+
+.metadata__9bfb9 {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden
+}
+
+.metadata__9bfb9:empty {
+    display: none
+}
+
 .heading_be87fd {
     color: var(--text-default)
 }
@@ -1189,12 +1245,7 @@
     color: var(--text-default)
 }
 
-.profileConnections__9c3be {
-    flex-direction: column;
-    gap: 8px
-}
-
-.profileAppConnections__9c3be,.profileConnections__9c3be>div {
+.profileAppConnections__9c3be {
     margin-top: 0
 }
 
@@ -1231,4 +1282,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=ed185bb7f52ee9b6.css.map*/
+/*# sourceMappingURL=af183110aac42c84.css.map*/

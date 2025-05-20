@@ -1,12 +1,12 @@
 /** Chunk was on 43473 **/
 n.d(t, {
-  Z: () => p
+  Z: () => m
 });
 var o = n(255367);
 n(73800);
 var r = n(481060),
-  i = n(37234),
-  c = n(566898),
+  c = n(37234),
+  i = n(566898),
   a = n(769654),
   l = n(785717),
   s = n(806729),
@@ -14,43 +14,43 @@ var r = n(481060),
   u = n(264481),
   f = n(274151);
 
-function p(e) {
+function m(e) {
   let {
     user: t,
     onClose: n
   } = e, {
-    trackUserProfileAction: p
+    trackUserProfileAction: m
   } = (0, l.KZ)(), {
-    mutualGuilds: m,
+    mutualGuilds: p,
     isFetching: b
   } = (0, s.Z)(t);
   return (0, o.jsx)(r.Ttm, {
     className: f.scroller,
     fade: !0,
-    children: null == m && b ? Array.from({
+    children: null == p && b ? Array.from({
       length: 10
     }).map((e, t) => (0, o.jsxs)("div", {
       className: f.loadingItem,
-      children: [(0, o.jsx)(c.ZT, {
+      children: [(0, o.jsx)(i.ZT, {
         width: 40,
         opacity: .08
-      }), (0, o.jsx)(c.ZT, {
+      }), (0, o.jsx)(i.ZT, {
         width: 135,
         opacity: .08
       })]
-    }, t)) : (null != m || b) && (null == m ? void 0 : m.length) !== 0 ? null == m ? void 0 : m.map(e => {
+    }, t)) : (null != p || b) && (null == p ? void 0 : p.length) !== 0 ? null == p ? void 0 : p.map(e => {
       let {
         guild: r,
-        nick: c
+        nick: i
       } = e;
       return (0, o.jsx)(d.Z, {
         user: t,
         guild: r,
-        nick: c,
+        nick: i,
         onSelect: () => {
-          p({
+          m({
             action: "PRESS_MUTUAL_GUILD"
-          }), (0, a.X)(r.id), n(), (0, i.xf)()
+          }), (0, a.X)(r.id), n(), (0, c.xf)()
         }
       }, r.id)
     }) : (0, o.jsx)(u.b0, {})

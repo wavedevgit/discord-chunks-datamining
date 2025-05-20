@@ -88,10 +88,9 @@ function A(e) {
   if (null == R && null != n && (0, l.Z)(n)) return (0, r.jsx)(E.tG, {
     icon: D,
     text: O.intl.string(O.t.RscU7O),
-    color: o.Ttl.BRAND,
     size: N === b.lY.MODAL_V2 ? o.PhG.TINY : void 0,
     fullWidth: N !== b.lY.MODAL_V2,
-    themeColor: "none",
+    themeColor: "secondary",
     onClick: e => {
       e.stopPropagation(), null == S || S(), null == v || v({
         action: "PRESS_PLAY_BUTTON"
@@ -125,7 +124,7 @@ function A(e) {
       submitting: L,
       size: N === b.lY.MODAL_V2 ? o.PhG.TINY : void 0,
       fullWidth: N !== b.lY.MODAL_V2,
-      themeColor: N === b.lY.MODAL_V2 ? "secondary" : void 0,
+      themeColor: "secondary",
       onClick: e => {
         e.stopPropagation(), null == v || v({
           action: "PRESS_JOIN_BUTTON"
@@ -141,7 +140,7 @@ function A(e) {
       submitting: L,
       size: N === b.lY.MODAL_V2 ? o.PhG.TINY : void 0,
       fullWidth: N !== b.lY.MODAL_V2,
-      themeColor: N === b.lY.MODAL_V2 ? "secondary" : void 0,
+      themeColor: "secondary",
       onClick: e => {
         e.stopPropagation(), null == v || v({
           action: "PRESS_ASK_TO_JOIN_BUTTON"

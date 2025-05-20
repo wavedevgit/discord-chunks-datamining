@@ -428,6 +428,9 @@ function X(e) {
     defaultTextColor: "interactive-normal"
   } : 3 === n ? {
     defaultTextColor: "text-muted"
+  } : 4 === n ? {
+    defaultTextColor: "text-secondary",
+    defaultIconColor: f.TVs.colors.TEXT_SECONDARY
   } : {
     defaultTextColor: "text-secondary"
   }, (0, r.jsx)(L.Provider, {

@@ -1,13 +1,13 @@
 /** Chunk was on 43473 **/
 n.d(t, {
-  Z: () => c
+  Z: () => i
 });
 var o = n(255367);
 n(73800);
 var r = n(678738),
-  i = n(362258);
+  c = n(362258);
 
-function c(e) {
+function i(e) {
   return (0, o.jsx)(r.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -26,7 +26,7 @@ function c(e) {
     }
     return e
   }({
-    headingClassName: i.heading,
+    headingClassName: c.heading,
     headingVariant: "text-xs/semibold",
     headingColor: "none"
   }, e))

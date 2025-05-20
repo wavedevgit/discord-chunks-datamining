@@ -51,6 +51,7 @@ function h(e) {
     text: p.intl.formatToPlainString(p.t.XWSHTU, {
       platform: a.Z.get(t).name
     }),
+    themeColor: "secondary",
     fullWidth: !0,
     onClick: E
   })

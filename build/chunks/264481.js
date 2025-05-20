@@ -1,29 +1,29 @@
 /** Chunk was on 43473 **/
 n.d(t, {
-  P9: () => O,
-  Uf: () => C,
-  b0: () => I,
+  P9: () => I,
+  Uf: () => P,
+  b0: () => O,
   s_: () => j
 }), n(388685);
 var o = n(255367),
   r = n(73800),
-  i = n(392711),
-  c = n(481060),
+  c = n(392711),
+  i = n(481060),
   a = n(493683),
   l = n(230711),
   s = n(410030),
   d = n(726542),
   u = n(5192),
   f = n(475413),
-  p = n(981631),
-  m = n(388032),
+  m = n(981631),
+  p = n(388032),
   b = n(771627);
-let _ = [() => m.intl.string(m.t.madJdH), () => m.intl.string(m.t.NYmfoK), () => m.intl.string(m.t.R2PaCg), () => m.intl.string(m.t.laSR8v), () => m.intl.string(m.t.DnsJEx)],
-  g = [() => m.intl.string(m.t.nFSbeH), () => m.intl.string(m.t.gTcxOz), () => m.intl.string(m.t["8T0wYm"]), () => m.intl.string(m.t.BIHl1t), () => m.intl.string(m.t.jhBm09)],
-  h = [() => m.intl.string(m.t.AyMGXF), () => m.intl.string(m.t.aAFW7e), e => m.intl.formatToPlainString(m.t.h2g0cH, {
+let _ = [() => p.intl.string(p.t.madJdH), () => p.intl.string(p.t.NYmfoK), () => p.intl.string(p.t.R2PaCg), () => p.intl.string(p.t.laSR8v), () => p.intl.string(p.t.DnsJEx)],
+  y = [() => p.intl.string(p.t.nFSbeH), () => p.intl.string(p.t.gTcxOz), () => p.intl.string(p.t["8T0wYm"]), () => p.intl.string(p.t.BIHl1t), () => p.intl.string(p.t.jhBm09)],
+  h = [() => p.intl.string(p.t.AyMGXF), () => p.intl.string(p.t.aAFW7e), e => p.intl.formatToPlainString(p.t.h2g0cH, {
     name: e
-  }), () => m.intl.string(m.t["rrYh5+"]), () => m.intl.string(m.t["HX3K+P"]), () => m.intl.string(m.t["/yW3aW"]), () => m.intl.string(m.t["PmL/v7"]), () => m.intl.string(m.t.IALa3t), () => m.intl.string(m.t.HRcTFB), () => m.intl.string(m.t.NuCqPj), () => m.intl.string(m.t["M1tw+/"]), () => m.intl.string(m.t.UBm1y8), () => m.intl.string(m.t.Cu95PT), () => m.intl.string(m.t["R/wFur"]), () => m.intl.string(m.t.HQPAVV), () => m.intl.string(m.t.YolGh4)],
-  y = [p.ABu.EPIC_GAMES, p.ABu.RIOT_GAMES, p.ABu.XBOX, p.ABu.SPOTIFY, p.ABu.PLAYSTATION, p.ABu.LEAGUE_OF_LEGENDS, p.ABu.STEAM, p.ABu.CRUNCHYROLL, p.ABu.YOUTUBE, p.ABu.REDDIT, p.ABu.BATTLENET, p.ABu.GITHUB, p.ABu.TIKTOK, p.ABu.TWITTER_LEGACY, p.ABu.TWITCH];
+  }), () => p.intl.string(p.t["rrYh5+"]), () => p.intl.string(p.t["HX3K+P"]), () => p.intl.string(p.t["/yW3aW"]), () => p.intl.string(p.t["PmL/v7"]), () => p.intl.string(p.t.IALa3t), () => p.intl.string(p.t.HRcTFB), () => p.intl.string(p.t.NuCqPj), () => p.intl.string(p.t["M1tw+/"]), () => p.intl.string(p.t.UBm1y8), () => p.intl.string(p.t.Cu95PT), () => p.intl.string(p.t["R/wFur"]), () => p.intl.string(p.t.HQPAVV), () => p.intl.string(p.t.YolGh4)],
+  g = [m.ABu.EPIC_GAMES, m.ABu.RIOT_GAMES, m.ABu.XBOX, m.ABu.SPOTIFY, m.ABu.PLAYSTATION, m.ABu.LEAGUE_OF_LEGENDS, m.ABu.STEAM, m.ABu.CRUNCHYROLL, m.ABu.YOUTUBE, m.ABu.REDDIT, m.ABu.BATTLENET, m.ABu.GITHUB, m.ABu.TIKTOK, m.ABu.TWITTER_LEGACY, m.ABu.TWITCH];
 
 function x(e) {
   let {
@@ -35,11 +35,11 @@ function x(e) {
     className: b.empty,
     children: [(0, o.jsxs)("div", {
       className: b.textContainer,
-      children: [(0, o.jsx)(c.X6q, {
+      children: [(0, o.jsx)(i.X6q, {
         variant: "heading-md/medium",
         color: "header-primary",
         children: t
-      }), (0, o.jsx)(c.Text, {
+      }), (0, o.jsx)(i.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
         children: n
@@ -49,10 +49,10 @@ function x(e) {
 }
 
 function j() {
-  let e = m.intl.string(m.t.RnD2yc),
+  let e = p.intl.string(p.t.RnD2yc),
     [t] = r.useState(() => {
       var e;
-      return (null != (e = (0, i.sample)(_)) ? e : _[0])()
+      return (null != (e = (0, c.sample)(_)) ? e : _[0])()
     });
   return (0, o.jsx)(x, {
     heading: e,
@@ -60,11 +60,11 @@ function j() {
   })
 }
 
-function I() {
-  let e = m.intl.string(m.t.bFgqYG),
+function O() {
+  let e = p.intl.string(p.t.bFgqYG),
     [t] = r.useState(() => {
       var e;
-      return (null != (e = (0, i.sample)(g)) ? e : g[0])()
+      return (null != (e = (0, c.sample)(y)) ? e : y[0])()
     });
   return (0, o.jsx)(x, {
     heading: e,
@@ -72,21 +72,21 @@ function I() {
   })
 }
 
-function O(e) {
+function I(e) {
   let {
     user: t,
     guildId: n,
     channelId: l
-  } = e, s = u.ZP.getName(n, l, t), d = m.intl.formatToPlainString(m.t.sjSitL, {
+  } = e, s = u.ZP.getName(n, l, t), d = p.intl.formatToPlainString(p.t.sjSitL, {
     name: s
-  }), [p] = r.useState(() => {
+  }), [m] = r.useState(() => {
     var e;
-    return (null != (e = (0, i.sample)(h)) ? e : h[0])(s)
+    return (null != (e = (0, c.sample)(h)) ? e : h[0])(s)
   }), _ = r.useCallback(() => {
     a.Z.openPrivateChannel({
       recipientIds: t.id
     })
-  }, [t.id]), g = r.useCallback(() => {
+  }, [t.id]), y = r.useCallback(() => {
     a.Z.openPrivateChannel({
       recipientIds: t.id,
       joinCall: !0
@@ -94,18 +94,18 @@ function O(e) {
   }, [t.id]);
   return (0, o.jsx)(x, {
     heading: d,
-    bodyText: p,
+    bodyText: m,
     children: (0, o.jsxs)("div", {
       className: b.buttonRow,
       children: [(0, o.jsx)(f.tG, {
-        icon: c.kBi,
-        text: m.intl.string(m.t["g33r/P"]),
+        icon: i.kBi,
+        text: p.intl.string(p.t["g33r/P"]),
         onClick: _,
         themeColor: "secondary"
       }), (0, o.jsx)(f.tG, {
-        icon: c.qWc,
-        text: m.intl.string(m.t.JJogjo),
-        onClick: g,
+        icon: i.qWc,
+        text: p.intl.string(p.t.JJogjo),
+        onClick: y,
         themeColor: "secondary"
       })]
     })
@@ -116,12 +116,12 @@ function v() {
   let e = (0, s.ZP)();
   return (0, o.jsx)("div", {
     className: b.connectionPlatforms,
-    children: y.map((t, n) => {
+    children: g.map((t, n) => {
       let r = d.Z.get(t);
       if (null == r) return null;
-      let i = (0, c.wjy)(e) ? r.icon.darkPNG : r.icon.lightPNG;
+      let c = (0, i.wjy)(e) ? r.icon.darkPNG : r.icon.lightPNG;
       return (0, o.jsx)("img", {
-        src: i,
+        src: c,
         alt: r.name,
         className: b.connectionIcon
       }, n)
@@ -129,26 +129,26 @@ function v() {
   })
 }
 
-function C(e) {
+function P(e) {
   let {
     onClose: t
   } = e, n = r.useCallback(() => {
-    null == t || t(), l.Z.open(p.oAB.CONNECTIONS)
-  }, [t]), i = r.useCallback(() => {
-    null == t || t(), l.Z.open(p.oAB.CONTENT_AND_SOCIAL, "CONNECTED_GAMES")
+    null == t || t(), l.Z.open(m.oAB.CONNECTIONS)
+  }, [t]), c = r.useCallback(() => {
+    null == t || t(), l.Z.open(m.oAB.CONTENT_AND_SOCIAL, "CONNECTED_GAMES")
   }, [t]);
   return (0, o.jsxs)(x, {
-    heading: m.intl.string(m.t.Sc0oWF),
-    bodyText: m.intl.string(m.t.m8UJqa),
+    heading: p.intl.string(p.t.Sc0oWF),
+    bodyText: p.intl.string(p.t.m8UJqa),
     children: [(0, o.jsx)(v, {}), (0, o.jsxs)("div", {
       className: b.buttonRow,
       children: [(0, o.jsx)(f.tG, {
-        text: m.intl.string(m.t["/Hl24e"]),
+        text: p.intl.string(p.t["/Hl24e"]),
         onClick: n,
         themeColor: "secondary"
       }), (0, o.jsx)(f.tG, {
-        text: m.intl.string(m.t.GTCx0t),
-        onClick: i,
+        text: p.intl.string(p.t.GTCx0t),
+        onClick: c,
         themeColor: "secondary"
       })]
     })]
