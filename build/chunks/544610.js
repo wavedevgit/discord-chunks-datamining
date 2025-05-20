@@ -15,8 +15,8 @@ var i, l, a, o = n(392711),
   g = n(51144),
   b = n(592125),
   _ = n(480294),
-  C = n(580005),
-  x = n(699516),
+  x = n(580005),
+  C = n(699516),
   y = n(594174),
   v = n(981631);
 let j = !1,
@@ -41,7 +41,7 @@ function A() {
   if (0 === O.trim().length) {
     var t;
     let n;
-    return null != r && r.clearQuery(), t = e, n = x.Z.getFriendIDs(), (null == t ? void 0 : t.isPrivate()) && (n = n.filter(e => !t.recipients.includes(e))), I = n.reduce((e, t) => {
+    return null != r && r.clearQuery(), t = e, n = C.Z.getFriendIDs(), (null == t ? void 0 : t.isPrivate()) && (n = n.filter(e => !t.recipients.includes(e))), I = n.reduce((e, t) => {
       let n = y.default.getUser(t);
       return null == n || n.isProvisional || e.push({
         user: n,
@@ -54,18 +54,18 @@ function A() {
     friends: !0,
     provisional: !1
   }, n, function() {
-    let e = C.Z.getFrequentlyWithoutFetchingLatest().filter(e => e instanceof f.mn && e.isDM()),
+    let e = x.Z.getFrequentlyWithoutFetchingLatest().filter(e => e instanceof f.mn && e.isDM()),
       t = Math.max(...e.map(e => {
         let {
           id: t
         } = e;
-        return C.Z.getScoreWithoutFetchingLatest(t)
+        return x.Z.getScoreWithoutFetchingLatest(t)
       })),
       n = {};
     return e.forEach(e => {
-      let r = C.Z.getScoreWithoutFetchingLatest(e.id),
+      let r = x.Z.getScoreWithoutFetchingLatest(e.id),
         i = e.getRecipientId(),
-        l = .2 * !!x.Z.isFriend(i),
+        l = .2 * !!C.Z.isFriend(i),
         a = .1 * (null != b.Z.getDMFromUserId(i));
       n[i] = 1 + r / t + l + a
     }), n
@@ -75,7 +75,7 @@ function A() {
 function w() {
   if (!j) return !1;
   let e = P;
-  return (P = s().some(x.Z.getRelationships(), e => e === v.OGo.FRIEND)) !== e
+  return (P = s().some(C.Z.getRelationships(), e => e === v.OGo.FRIEND)) !== e
 }
 
 function R(e, t) {
@@ -127,7 +127,7 @@ function U() {
 }
 class B extends(i = c.ZP.Store) {
   initialize() {
-    this.waitFor(y.default, b.Z, x.Z, p.Z, _.Z), this.syncWith([y.default, b.Z], A), this.syncWith([x.Z], w)
+    this.waitFor(y.default, b.Z, C.Z, p.Z, _.Z), this.syncWith([y.default, b.Z], A), this.syncWith([C.Z], w)
   }
   getResults() {
     return I

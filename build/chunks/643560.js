@@ -53,14 +53,14 @@ function f(e) {
   } = e, {
     isEntryAdmin: b,
     canEdit: _,
-    canRemove: C
-  } = (0, u.Z)(t), x = (0, o.Z)({
+    canRemove: x
+  } = (0, u.Z)(t), C = (0, o.Z)({
     id: t.guildId,
     label: d.intl.string(d.t["94lLDw"]),
     onSuccess: m
   });
   i.useEffect(() => {
-    _ || C || null != x || (0, a.Zy)()
+    _ || x || null != C || (0, a.Zy)()
   });
   let y = () => {
     c.kx(t.channelId, t.guildId)
@@ -88,7 +88,7 @@ function f(e) {
             }))
           }), v()
         }
-      }) : null, C ? (0, r.jsx)(l.sNh, {
+      }) : null, x ? (0, r.jsx)(l.sNh, {
         id: "remove-from-hub",
         label: d.intl.string(d.t.KUxYWF),
         action: function() {
@@ -117,7 +117,7 @@ function f(e) {
         color: "danger"
       })]
     }), (0, r.jsx)(l.kSQ, {
-      children: x
+      children: C
     })]
   })
 }

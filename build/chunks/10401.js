@@ -1,6 +1,6 @@
 /** Chunk was on 23445 **/
 n.d(t, {
-  Z: () => x
+  Z: () => C
 }), n(388685);
 var r, i = n(873546),
   l = n(442837),
@@ -57,7 +57,7 @@ function _() {
         for (let n of t.prerequisites) !1 !== h[n] && (g[e] = !1)
     }
 }
-class C extends(r = l.ZP.Store) {
+class x extends(r = l.ZP.Store) {
   initialize() {
     _(), this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type), this.waitFor(o.Z)
   }
@@ -78,8 +78,8 @@ class C extends(r = l.ZP.Store) {
     return null != t ? t[e] : null
   }
 }
-u(C, "displayName", "TutorialIndicatorStore");
-let x = new C(a.Z, {
+u(x, "displayName", "TutorialIndicatorStore");
+let C = new x(a.Z, {
   CONNECTION_OPEN: function(e) {
     let {
       tutorial: t

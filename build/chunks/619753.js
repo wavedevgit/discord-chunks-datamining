@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(905405),
   b = n(255269),
   _ = n(937889),
-  C = n(804063),
-  x = n(703656),
+  x = n(804063),
+  C = n(703656),
   y = n(359110),
   v = n(695346),
   j = n(131704),
@@ -94,12 +94,12 @@ function U(e) {
       r = null != n ? T.Sq(n) : null;
     u.oO(l, t, r)
   }, [l, j, b]), Z = i.useCallback((e, t) => {
-    if (null == _ || _(e, t), (0, C.Z)(e)) {
+    if (null == _ || _(e, t), (0, x.Z)(e)) {
       let t = O.Z.getChannel(e.channel_id),
         n = null != t ? t.getGuildId() : null;
       c.Z.trackJump(e.channel_id, e.id, "Search Results", {
         search_id: S.Z.getAnalyticsId(l)
-      }), (0, x.uL)(R.Z5c.CHANNEL(n, e.channel_id, e.id))
+      }), (0, C.uL)(R.Z5c.CHANNEL(n, e.channel_id, e.id))
     }
   }, [_, l]), N = i.useMemo(() => {
     let e;
@@ -241,8 +241,8 @@ function G(e) {
     startIndex: u,
     resultRefs: d,
     totalResults: p,
-    scrollTo: C,
-    searchId: x,
+    scrollTo: x,
+    searchId: C,
     renderEmbeds: j,
     offset: S,
     jumpToMessage: T,
@@ -300,8 +300,8 @@ function G(e) {
             d.current[n] = e
           },
           totalResults: p,
-          scrollTo: C,
-          searchId: x,
+          scrollTo: x,
+          searchId: C,
           renderEmbeds: j,
           searchOffset: S,
           pageResultsLength: o.length,

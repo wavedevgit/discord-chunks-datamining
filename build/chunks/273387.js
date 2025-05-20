@@ -1,6 +1,6 @@
 /** Chunk was on 23445 **/
 n.d(t, {
-  Z: () => C
+  Z: () => x
 }), n(388685);
 var r, i = n(442837),
   l = n(570140),
@@ -77,7 +77,7 @@ class _ extends(r = i.ZP.Store) {
   }
 }
 s(_, "displayName", "GuildDirectoryStore");
-let C = new _(l.Z, {
+let x = new _(l.Z, {
   GUILD_DIRECTORY_FETCH_START: function() {
     p = !0
   },
@@ -146,17 +146,17 @@ let C = new _(l.Z, {
     let {
       channelId: b,
       entry: _
-    } = e, C = (0, a.MQ)(_), x = null == (t = h[b]) ? void 0 : t[C.guildId];
+    } = e, x = (0, a.MQ)(_), C = null == (t = h[b]) ? void 0 : t[x.guildId];
     h[b] = u(c({}, h[b]), {
-      [C.guildId]: c({}, x, C)
+      [x.guildId]: c({}, C, x)
     });
-    let y = null != (i = null == x ? void 0 : x.primaryCategoryId) ? i : o.AR.UNCATEGORIZED,
-      v = null != (l = C.primaryCategoryId) ? l : o.AR.UNCATEGORIZED,
+    let y = null != (i = null == C ? void 0 : C.primaryCategoryId) ? i : o.AR.UNCATEGORIZED,
+      v = null != (l = x.primaryCategoryId) ? l : o.AR.UNCATEGORIZED,
       j = Object.assign({}, null == (n = m[b]) ? void 0 : n[y]);
-    null != x && y !== v && delete j[C.guildId], m[b] = u(c({}, m[b]), {
+    null != C && y !== v && delete j[x.guildId], m[b] = u(c({}, m[b]), {
       [y]: j,
       [v]: u(c({}, null == (r = m[b]) ? void 0 : r[v]), {
-        [C.guildId]: c({}, x, C)
+        [x.guildId]: c({}, C, x)
       })
     }), v !== y && null != g[b] && (g[b] = u(c({}, g[b]), {
       [y]: (null == (s = g[b]) ? void 0 : s[y]) > 0 ? (null == (d = g[b]) ? void 0 : d[y]) - 1 : 0,

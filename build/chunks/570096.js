@@ -1,6 +1,6 @@
 /** Chunk was on 23445 **/
 n.d(t, {
-  N: () => x
+  N: () => C
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -40,7 +40,7 @@ let _ = e => {
       })]
     })
   },
-  C = e => {
+  x = e => {
     let {
       user: t,
       markAsDismissed: n
@@ -66,13 +66,13 @@ let _ = e => {
     })
   };
 
-function x(e) {
+function C(e) {
   let {
     children: t
   } = e, n = [a.z.LEADERBOARD_NUX_COACHMARK], [s, u] = (0, c.US)(n, void 0), p = (0, l.e7)([d.default], () => d.default.getCurrentUser()), h = i.useRef(null);
   return s !== a.z.LEADERBOARD_NUX_COACHMARK || null == p ? t : (0, r.jsx)(o.yRy, {
     targetElementRef: h,
-    renderPopout: () => C({
+    renderPopout: () => x({
       user: p,
       markAsDismissed: u
     }),

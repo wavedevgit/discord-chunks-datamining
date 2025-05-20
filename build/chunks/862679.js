@@ -22,13 +22,13 @@ let d = function(e) {
     imageSrc: g,
     animationSrc: b,
     secondaryButtonText: _,
-    onSecondaryButtonClick: C,
-    children: x,
+    onSecondaryButtonClick: x,
+    children: C,
     useReducedMotion: y = !1
   } = e, v = (0, a.e7)([c.ZP], () => c.ZP.getState().isMembersOpen);
   if (l.tq && v) return null;
   if (null == t) return (0, r.jsx)(r.Fragment, {
-    children: i.Children.only(x)
+    children: i.Children.only(C)
   });
   let j = null;
   return null != g ? j = (0, r.jsx)("img", {
@@ -60,7 +60,7 @@ let d = function(e) {
       children: [null != _ && (0, r.jsx)(o.zxk, {
         className: u.button,
         size: o.zxk.Sizes.SMALL,
-        onClick: C,
+        onClick: x,
         look: o.zxk.Looks.LINK,
         color: o.zxk.Colors.PRIMARY,
         submitting: f,

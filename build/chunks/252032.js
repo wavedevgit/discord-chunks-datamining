@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(630388),
   b = n(838440),
   _ = n(930282),
-  C = n(955384),
-  x = n(981631),
+  x = n(955384),
+  C = n(981631),
   y = n(30804);
 
 function v(e) {
@@ -44,7 +44,7 @@ function j(e) {
     id: s
   } = t, {
     id: c
-  } = n, m = t.getGuildId(), b = (0, l.e7)([h.Z], () => h.Z.getGuild(m), [m]), _ = t.type === x.d4z.GUILD_ANNOUNCEMENT, j = null != b && b.hasFeature(x.oNc.NEWS), E = _ && j, {
+  } = n, m = t.getGuildId(), b = (0, l.e7)([h.Z], () => h.Z.getGuild(m), [m]), _ = t.type === C.d4z.GUILD_ANNOUNCEMENT, j = null != b && b.hasFeature(C.oNc.NEWS), E = _ && j, {
     editingMessage: I,
     editingTextValue: P,
     editingRichValue: S
@@ -55,8 +55,8 @@ function j(e) {
   }), [s]), Z = (0, l.e7)([d.default], () => d.default.getId()), N = i.useCallback((e, n, r) => {
     let {
       content: i
-    } = r, l = f.Z.can(x.Plq.MANAGE_MESSAGES, t), s = null != I && null != I.author ? I.author.id : null;
-    return E && (s === Z || l) && null != I && (0, g.yE)(I.flags, x.iLy.CROSSPOSTED) ? o.Z.confirmEdit(e, n, i) : a.Z.editMessage(e, n, {
+    } = r, l = f.Z.can(C.Plq.MANAGE_MESSAGES, t), s = null != I && null != I.author ? I.author.id : null;
+    return E && (s === Z || l) && null != I && (0, g.yE)(I.flags, C.iLy.CROSSPOSTED) ? o.Z.confirmEdit(e, n, i) : a.Z.editMessage(e, n, {
       content: i
     }), Promise.resolve()
   }, [I, E, Z, t]), T = i.useCallback(e => {
@@ -92,7 +92,7 @@ function j(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   }, [c]), A = (0, u.R6)("EditorWrapper");
-  return null != P && null != S ? (0, r.jsx)(C.Z, {
+  return null != P && null != S ? (0, r.jsx)(x.Z, {
     ref: void 0,
     channel: t,
     message: n,
@@ -119,8 +119,8 @@ function O(e) {
     onKeyDown: d,
     renderLeftAccessories: p
   } = e, [h, f] = i.useState(!0), g = i.useCallback(() => f(!0), []), b = i.useCallback(() => f(!1), []);
-  return i.useEffect(() => (m.S.subscribe(x.CkL.TEXTAREA_FOCUS, g), m.S.subscribe(x.CkL.TEXTAREA_BLUR, b), () => {
-    m.S.unsubscribe(x.CkL.TEXTAREA_FOCUS, g), m.S.unsubscribe(x.CkL.TEXTAREA_BLUR, b)
+  return i.useEffect(() => (m.S.subscribe(C.CkL.TEXTAREA_FOCUS, g), m.S.subscribe(C.CkL.TEXTAREA_BLUR, b), () => {
+    m.S.unsubscribe(C.CkL.TEXTAREA_FOCUS, g), m.S.unsubscribe(C.CkL.TEXTAREA_BLUR, b)
   }), [g, b]), (0, r.jsx)(c.Z, {
     className: y.channelTextArea,
     textValue: t,

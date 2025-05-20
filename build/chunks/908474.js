@@ -21,8 +21,8 @@ function f(e) {
     if (null == e) return null;
     let t = new Date(e).getTime();
     return (0, c.fv)(t, c.jq.JOINED_AT)
-  }, []), _ = i.useMemo(() => null == t ? null : b(g), [t, b, g]), C = i.useMemo(() => (0, s.J)(t.communicationDisabledUntil), [t.communicationDisabledUntil]), x = i.useMemo(() => null == t.communicationDisabledUntil ? new Date : new Date(t.communicationDisabledUntil), [t.communicationDisabledUntil]);
-  return null != g || C ? (0, r.jsx)(a.xJW, {
+  }, []), _ = i.useMemo(() => null == t ? null : b(g), [t, b, g]), x = i.useMemo(() => (0, s.J)(t.communicationDisabledUntil), [t.communicationDisabledUntil]), C = i.useMemo(() => null == t.communicationDisabledUntil ? new Date : new Date(t.communicationDisabledUntil), [t.communicationDisabledUntil]);
+  return null != g || x ? (0, r.jsx)(a.xJW, {
     title: p.intl.string(p.t["7V375+"]),
     titleClassName: h.infoTitle,
     children: (0, r.jsxs)(d.WM, {
@@ -43,7 +43,7 @@ function f(e) {
           color: "text-normal",
           children: _
         })
-      }), C && null != x && (0, r.jsx)(d._2, {
+      }), x && null != C && (0, r.jsx)(d._2, {
         icon: (0, r.jsx)(a.YlB, {
           size: "custom",
           color: "currentColor",
@@ -59,7 +59,7 @@ function f(e) {
           variant: "text-sm/semibold",
           color: "text-normal",
           children: (0, r.jsx)(o.Z, {
-            deadline: x,
+            deadline: C,
             showUnits: !0,
             stopAtOneSec: !0
           })

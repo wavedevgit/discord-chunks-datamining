@@ -1,6 +1,6 @@
 /** Chunk was on 23445 **/
 n.d(t, {
-  Z: () => x,
+  Z: () => C,
   y: () => _
 }), n(388685);
 var r, i = n(255367),
@@ -19,7 +19,7 @@ var r, i = n(255367),
   b = n(354494),
   _ = ((r = {})[r.PostSidebar = 0] = "PostSidebar", r[r.ThreadSidebar = 1] = "ThreadSidebar", r[r.CallChatSidebar = 2] = "CallChatSidebar", r[r.MessageRequestSidebar = 3] = "MessageRequestSidebar", r[r.HomeSidebar = 4] = "HomeSidebar", r[r.ParticipantsSidebar = 5] = "ParticipantsSidebar", r);
 
-function C(e) {
+function x(e) {
   let {
     resizableNode: t,
     onResize: n,
@@ -41,14 +41,14 @@ function C(e) {
   })
 }
 
-function x(e) {
+function C(e) {
   let {
     sidebarType: t,
     maxWidth: n,
     onWidthChange: r,
     children: a,
     floatingLayer: h
-  } = e, _ = l.useRef(null), x = function(e) {
+  } = e, _ = l.useRef(null), C = function(e) {
     switch (e) {
       case 0:
         return "postSidebarWidth";
@@ -63,11 +63,11 @@ function x(e) {
       case 5:
         return "callParticipantsSidebarWidth"
     }
-  }(t), [y, v] = l.useState(m.ZP[x]), j = l.useCallback(e => {
+  }(t), [y, v] = l.useState(m.ZP[C]), j = l.useCallback(e => {
     p.ZP.updatedUnsyncedSettings({
-      [x]: e
+      [C]: e
     })
-  }, [x]), O = 5 === t ? g.at : g.Co, E = (0, g.WL)({
+  }, [C]), O = 5 === t ? g.at : g.Co, E = (0, g.WL)({
     maxWidth: n,
     minWidth: O
   }), I = (0, d.dQu)(u.Z.modules.chat.RESIZE_HANDLE_WIDTH), P = (0, s.clamp)(y, O, n), S = E ? P : P + I;
@@ -94,7 +94,7 @@ function x(e) {
           style: {
             width: S
           }
-        }), !E && (0, i.jsx)(C, {
+        }), !E && (0, i.jsx)(x, {
           minWidth: O,
           maxWidth: n,
           resizableNode: _,

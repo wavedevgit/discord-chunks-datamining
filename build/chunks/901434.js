@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(823379),
   b = n(5192),
   _ = n(501655),
-  C = n(856393),
-  x = n(388032),
+  x = n(856393),
+  C = n(388032),
   y = n(761325);
 let v = (e, t) => b.ZP.getName(e.getGuildId(), e.id, t.user),
   j = function(e) {
@@ -56,12 +56,12 @@ let v = (e, t) => b.ZP.getName(e.getGuildId(), e.id, t.user),
           tag: "div",
           color: "header-secondary",
           variant: b ? "heading-lg/normal" : "text-sm/normal",
-          children: 0 === E.length ? x.intl.string(x.t.FUVhyM) : 1 === E.length ? x.intl.formatToPlainString(x.t.EQwZlJ, {
+          children: 0 === E.length ? C.intl.string(C.t.FUVhyM) : 1 === E.length ? C.intl.formatToPlainString(C.t.EQwZlJ, {
             a: v(n, E[0])
-          }) : 2 === E.length ? x.intl.formatToPlainString(x.t.zBcKoK, {
+          }) : 2 === E.length ? C.intl.formatToPlainString(C.t.zBcKoK, {
             a: v(n, E[0]),
             b: v(n, E[1])
-          }) : E.length > 2 ? x.intl.formatToPlainString(x.t["3AqFaG"], {
+          }) : E.length > 2 ? C.intl.formatToPlainString(C.t["3AqFaG"], {
             a: v(n, E[0]),
             b: v(n, E[1]),
             n: E.length - 2
@@ -77,8 +77,8 @@ let v = (e, t) => b.ZP.getName(e.getGuildId(), e.id, t.user),
           color: l ? b ? s.zxk.Colors.WHITE : s.zxk.Colors.GREEN : s.zxk.Colors.PRIMARY,
           onClick: O,
           size: s.zxk.Sizes.MEDIUM,
-          children: l ? x.intl.string(x.t["7vb2cX"]) : x.intl.string(x.t.TVBCKS)
-        }), b && (0, r.jsx)(C.e, {
+          children: l ? C.intl.string(C.t["7vb2cX"]) : C.intl.string(C.t.TVBCKS)
+        }), b && (0, r.jsx)(x.e, {
           channel: n
         })]
       })]

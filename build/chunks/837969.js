@@ -33,11 +33,11 @@ function d(e) {
     includeSetSizes: g = !0,
     focusOnMount: b = !0,
     enabled: _ = !0,
-    onDispatch: C
-  } = e, x = r.useCallback((e, t) => {
+    onDispatch: x
+  } = e, C = r.useCallback((e, t) => {
     let n = (0, i.Z)(e, t);
-    return null != C && C(e, n, t), n
-  }, [C]), [y, v] = r.useReducer(x, {
+    return null != x && x(e, n, t), n
+  }, [x]), [y, v] = r.useReducer(C, {
     focusedIndex: d,
     itemCount: n
   }), {
@@ -62,15 +62,15 @@ function d(e) {
         maintainFocusPosition: g,
         includeSetSizes: b,
         focusOnMount: _,
-        enabled: C,
-        makeId: x = a.qR,
+        enabled: x,
+        makeId: C = a.qR,
         getIndexFromId: y
       } = e, v = r.useRef(n), j = r.useRef(y);
       j.current = y, v.current = n;
-      let O = r.useRef(C);
+      let O = r.useRef(x);
       r.useEffect(() => {
-        O.current = C
-      }, [C]);
+        O.current = x
+      }, [x]);
       let [E, I] = r.useState(!1), [P] = r.useState(() => new a.$o(e => () => {
         let t = null != j.current && "string" == typeof e ? j.current(e) : e;
         "number" != typeof t || t < 0 || m({
@@ -85,7 +85,7 @@ function d(e) {
         [Z, N] = r.useState(!0);
       r.useEffect(() => {
         if (Z && !_) return void N(!1);
-        S(x(t, d), d)
+        S(C(t, d), d)
       }, [d]);
       let T = r.useCallback(function() {
           let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
@@ -93,8 +93,8 @@ function d(e) {
           n !== d && m({
             type: i.G.SET_FOCUSED_INDEX,
             index: n
-          }), e && S(x(t, n), n)
-        }, [x, d, f, m, t, S]),
+          }), e && S(C(t, n), n)
+        }, [C, d, f, m, t, S]),
         A = r.useCallback(e => {
           if (!O.current) return;
           if (o.includes(e.key) && !(e.shiftKey || e.altKey || e.metaKey || e.ctrlKey) && e.currentTarget === e.target) {
@@ -126,26 +126,26 @@ function d(e) {
               });
               return;
             case l.Us.SELECT_FOCUSED_ITEM:
-              let r = c(s(x, t, d));
+              let r = c(s(C, t, d));
               if ((null == r ? void 0 : r.ownerDocument.activeElement) !== r || e.repeat) return;
               if (e.preventDefault(), e.stopPropagation(), m({
                   type: n
                 }), null != p) return void p(d);
               null == r || r.click()
           }
-        }, [x, t, m, d, T, p]),
+        }, [C, t, m, d, T, p]),
         w = r.useCallback(() => {
           E || I(!0)
         }, [E]),
         R = r.useCallback(() => {
-          E || (g ? S(x(t, d), d) : T(!0))
-        }, [x, t, S, g, E, d, T]),
+          E || (g ? S(C(t, d), d) : T(!0))
+        }, [C, t, S, g, E, d, T]),
         M = r.useCallback(e => {
           e.currentTarget.contains(e.relatedTarget) || requestAnimationFrame(() => {
-            if (null == c(s(x, t, d))) return void S(t);
+            if (null == c(s(C, t, d))) return void S(t);
             I(!1)
           })
-        }, [x, t, d, S]),
+        }, [C, t, d, S]),
         k = r.useRef(null);
       r.useLayoutEffect(() => {
         let e = k.current;
@@ -168,11 +168,11 @@ function d(e) {
             role: "listitem",
             "aria-setsize": b ? v.current : void 0,
             "aria-posinset": b ? n + 1 : void 0,
-            id: x(t, n),
+            id: C(t, n),
             tabIndex: g && n === d ? 0 : -1,
-            onFocus: P.get(null != j.current ? x(t, n) : n)
+            onFocus: P.get(null != j.current ? C(t, n) : n)
           }
-        }, [x, t, d, g, P, b]);
+        }, [C, t, d, g, P, b]);
       return r.useMemo(() => ({
         dispatch: m,
         getContainerProps: L,

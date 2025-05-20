@@ -21,30 +21,30 @@ function b(e) {
   var t, n;
   let {
     context: b
-  } = e, _ = b.channel, C = r.useMemo(() => {
+  } = e, _ = b.channel, x = r.useMemo(() => {
     if (!0 !== _.isDM()) return null;
     let e = f.default.getUser(_.getRecipientId());
     return void 0 === e || !0 !== e.bot ? null : e
-  }, [_]), x = (0, i.e7)([d.Z], () => {
+  }, [_]), C = (0, i.e7)([d.Z], () => {
     var e;
-    return d.Z.isFetchingProfile(null != (e = null == C ? void 0 : C.id) ? e : m.lds)
-  }), y = (0, o.Z)(x), v = (0, i.e7)([c.Z], () => c.Z.getAppIdForBotUserId(null == C ? void 0 : C.id)), j = (0, i.e7)([d.Z], () => {
+    return d.Z.isFetchingProfile(null != (e = null == x ? void 0 : x.id) ? e : m.lds)
+  }), y = (0, o.Z)(C), v = (0, i.e7)([c.Z], () => c.Z.getAppIdForBotUserId(null == x ? void 0 : x.id)), j = (0, i.e7)([d.Z], () => {
     var e;
-    return null !== C ? null == (e = d.Z.getUserProfile(null == C ? void 0 : C.id)) ? void 0 : e.application : void 0
+    return null !== x ? null == (e = d.Z.getUserProfile(null == x ? void 0 : x.id)) ? void 0 : e.application : void 0
   }), O = null != v ? v : null == j ? void 0 : j.id;
   r.useEffect(() => {
     if (null == O) {
       var e;
-      (0, p.Z)(null != (e = null == C ? void 0 : C.id) ? e : m.lds, void 0, {
+      (0, p.Z)(null != (e = null == x ? void 0 : x.id) ? e : m.lds, void 0, {
         withMutualGuilds: !0
       })
     }
-  }, [C, O]), r.useEffect(() => {
-    (null == C ? void 0 : C.id) != null && l.Z.dispatch({
+  }, [x, O]), r.useEffect(() => {
+    (null == x ? void 0 : x.id) != null && l.Z.dispatch({
       type: "APP_DM_OPEN",
-      botUserId: C.id
+      botUserId: x.id
     })
-  }, [null == C ? void 0 : C.id]);
+  }, [null == x ? void 0 : x.id]);
   let E = (0, s.v1)({
       channel: _,
       type: "channel"
@@ -52,7 +52,7 @@ function b(e) {
       commandTypes: g
     }, {
       applicationId: O,
-      allowFetch: (null == C ? void 0 : C.id) != null,
+      allowFetch: (null == x ? void 0 : x.id) != null,
       allowApplicationState: !0
     }),
     I = E.commands.filter(e => e.type === a.yU.PRIMARY_ENTRY_POINT && e.applicationId === O)[0],
@@ -70,7 +70,7 @@ function b(e) {
     application: A,
     isInitialLoading: w,
     primaryEntryPointCommand: I,
-    isProfileFetching: x,
+    isProfileFetching: C,
     wasProfileFetching: null != y ? y : null,
     applicationId: O,
     channelId: _.id,

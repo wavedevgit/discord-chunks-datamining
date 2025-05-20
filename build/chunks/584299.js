@@ -1,6 +1,6 @@
-/** Chunk was on 97590 **/
-"use strict";
+/** Chunk was on 23445 **/
 e.exports = {
-  container: "container__0c9ee",
-  errorHeader: "errorHeader__0c9ee"
+  closeButton: "closeButton__40059",
+  header: "header__40059",
+  footer: "footer__40059"
 }

@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(541716),
   b = n(752305),
   _ = n(893718),
-  C = n(303628),
-  x = n(313201),
+  x = n(303628),
+  C = n(313201),
   y = n(540059),
   v = n(967128),
   j = n(665149),
@@ -142,7 +142,7 @@ function q(e) {
     }
   }(t, n), {
     textAreaState: _,
-    setTextAreaState: C
+    setTextAreaState: x
   } = function(e, t) {
     let [n, r] = i.useState((0, b.H2)());
     return i.useEffect(() => {
@@ -158,7 +158,7 @@ function q(e) {
       textAreaState: n,
       setTextAreaState: r
     }
-  }(t, m), x = (0, L.vH)(t), {
+  }(t, m), C = (0, L.vH)(t), {
     nameError: j,
     messageError: O,
     submit: P,
@@ -231,10 +231,10 @@ function q(e) {
     parentChannel: t,
     parentMessageId: n,
     threadSettings: f,
-    privateThreadMode: x,
+    privateThreadMode: C,
     textAreaState: _,
     location: l
-  }), N = (0, L.oD)(f, x) ? s.qtY : s.or_, T = (0, y.R6)("CreateThreadSidebar");
+  }), N = (0, L.oD)(f, C) ? s.qtY : s.or_, T = (0, y.R6)("CreateThreadSidebar");
   return (0, r.jsx)("div", {
     className: H.chat,
     onMouseDown: p,
@@ -269,7 +269,7 @@ function q(e) {
                 startedFromMessage: null != n,
                 threadSettings: f,
                 updateThreadSettings: g,
-                privateThreadMode: x
+                privateThreadMode: C
               }) : null]
             }), (0, r.jsx)(J, {
               parentChannel: t,
@@ -281,7 +281,7 @@ function q(e) {
           children: [(0, r.jsx)(Q, {
             parentChannel: t,
             textAreaState: _,
-            setTextAreaState: C,
+            setTextAreaState: x,
             submit: P,
             error: O,
             isRefreshChatInputEnabled: T
@@ -345,7 +345,7 @@ function X(e) {
     disabled: c
   } = e, d = null != (t = l.name) ? t : "", p = (0, k.Op)(o, {
     content: d
-  }), h = (0, L.Od)(n, i), f = null != i, m = (0, x.Dt)();
+  }), h = (0, L.Od)(n, i), f = null != i, m = (0, C.Dt)();
   return (0, r.jsx)(s.hjN, {
     tag: "label",
     htmlFor: m,
@@ -381,7 +381,7 @@ function Q(e) {
     submit: d,
     error: p,
     isRefreshChatInputEnabled: h
-  } = e, [f, m] = i.useState(!0), g = i.useCallback(() => m(!0), []), b = i.useCallback(() => m(!1), []), x = i.useCallback((e, n, r) => {
+  } = e, [f, m] = i.useState(!0), g = i.useCallback(() => m(!0), []), b = i.useCallback(() => m(!1), []), C = i.useCallback((e, n, r) => {
     c.Z.saveDraft(t.id, n, Z.d.FirstThreadMessage), l(e => ("" !== n && e.textValue !== n ? u.Z.startTyping(t.id) : "" === n && u.Z.stopTyping(t.id), {
       textValue: n,
       richValue: r
@@ -406,7 +406,7 @@ function Q(e) {
       content: n.textValue
     });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(C.Z, {
+    children: [(0, r.jsx)(x.Z, {
       channelId: t.id,
       type: W,
       canAttachFiles: v
@@ -430,7 +430,7 @@ function Q(e) {
       }),
       onFocus: g,
       onBlur: b,
-      onChange: x,
+      onChange: C,
       onSubmit: y,
       promptToUpload: M.d
     })]

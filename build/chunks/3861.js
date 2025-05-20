@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(430371),
   b = n(236564),
   _ = n(45430),
-  C = n(981631),
-  x = n(354459),
+  x = n(981631),
+  C = n(354459),
   y = n(363987);
 let v = (0, o.Z)(e => {
   let {
@@ -45,17 +45,17 @@ let v = (0, o.Z)(e => {
     callContainerDimensions: L
   } = e;
   i.useEffect(() => {
-    p.S.dispatch(C.CkL.REMEASURE_TARGET)
+    p.S.dispatch(x.CkL.REMEASURE_TARGET)
   }, [T, A, L.width, L.height]);
   let D = (0, d.Q3)("ChannelCallContent"),
-    U = i.useMemo(() => n.filter(e => e.type !== x.fO.ACTIVITY || !e.participants.some(e => (0, s.J)(e))), [n, o]);
+    U = i.useMemo(() => n.filter(e => e.type !== C.fO.ACTIVITY || !e.participants.some(e => (0, s.J)(e))), [n, o]);
   return (null == k ? void 0 : k.channelId) === I.id ? (0, r.jsx)(f.Z, {
     height: A
   }) : (null == I ? void 0 : I.isGuildVocal()) && !Z ? (0, r.jsx)(h.Z, {
     channel: I,
     participants: t,
     hasConnectPermission: P
-  }) : R === C.WtW.VOICE ? (0, r.jsx)(c.Z, {
+  }) : R === x.WtW.VOICE ? (0, r.jsx)(c.Z, {
     guildId: I.guild_id,
     width: T,
     className: y.voiceCallWrapper,

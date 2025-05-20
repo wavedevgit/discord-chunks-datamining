@@ -2,7 +2,7 @@
 n.d(t, {
   ZP: () => j,
   cy: () => y,
-  iu: () => x
+  iu: () => C
 }), n(388685);
 var r, i, l, a = n(255367),
   o = n(73800),
@@ -38,7 +38,7 @@ function _(e) {
   return e
 }
 
-function C(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,7 +50,7 @@ function C(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var x = ((i = {}).CENTER = "center", i.LEFT = "left", i),
+var C = ((i = {}).CENTER = "center", i.LEFT = "left", i),
   y = ((l = {}).TOP = "top", l.MIDDLE = "middle", l);
 class v extends o.PureComponent {
   componentDidMount() {
@@ -159,7 +159,7 @@ class j extends(r = o.PureComponent) {
         return i
       }(e, ["renderMedia", "textAlign", "onComplete", "onSkipAll", "isLongText", "title", "body", "children", "spacing", "forceTheme", "innerRef"]),
       m = "top" === f.position || "bottom" === f.position ? "center" : "top";
-    return (0, a.jsx)(d.yRy, C(_({
+    return (0, a.jsx)(d.yRy, x(_({
       targetElementRef: h
     }, f), {
       align: m,
@@ -192,7 +192,7 @@ class j extends(r = o.PureComponent) {
       } = this.props, s = null != o;
       return (0, a.jsx)(d.f6W, {
         theme: r,
-        children: e => (0, a.jsx)(v, C(_({}, this.props), {
+        children: e => (0, a.jsx)(v, x(_({}, this.props), {
           className: c()({
             [g.bottom]: "bottom" === n,
             [g.contentNarrowNoMedia]: !i && !s,
@@ -213,6 +213,6 @@ class j extends(r = o.PureComponent) {
     })
   }
 }
-b(j, "TextAlignments", x), b(j, "defaultProps", {
+b(j, "TextAlignments", C), b(j, "defaultProps", {
   textAlign: "left"
 })

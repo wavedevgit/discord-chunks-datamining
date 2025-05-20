@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(712114),
   b = n(540059),
   _ = n(605236),
-  C = n(536442),
-  x = n(79390),
+  x = n(536442),
+  C = n(79390),
   y = n(216789),
   v = n(665906),
   j = n(695346),
@@ -86,7 +86,7 @@ let F = i.memo(function(e) {
     location: "ChannelAttachButton"
   }, {
     autoTrackExposure: !1
-  }), er = (0, o.e7)([C.qc], () => C.qc.hasHotspot(C.v6.CLIPS_CHANNEL_ATTACH_REMINDER)), ei = (0, c.s9z)(e => (0, c.DEQ)(e, k.Qr)), el = (0, o.e7)([E.Z], () => E.Z.hasLayers()), ea = (0, o.e7)([m.Z], () => m.Z.hasClips()), [eo, es] = i.useState(null), ec = (0, f.Go)() && (J || ea), eu = H.isPrivate(), ed = (0, o.e7)([P.Z], () => eu || P.Z.can(M.Plq.ATTACH_FILES, H) && P.Z.can(M.Plq.SEND_MESSAGES, H)), ep = (0, d.Z)($);
+  }), er = (0, o.e7)([x.qc], () => x.qc.hasHotspot(x.v6.CLIPS_CHANNEL_ATTACH_REMINDER)), ei = (0, c.s9z)(e => (0, c.DEQ)(e, k.Qr)), el = (0, o.e7)([E.Z], () => E.Z.hasLayers()), ea = (0, o.e7)([m.Z], () => m.Z.hasClips()), [eo, es] = i.useState(null), ec = (0, f.Go)() && (J || ea), eu = H.isPrivate(), ed = (0, o.e7)([P.Z], () => eu || P.Z.can(M.Plq.ATTACH_FILES, H) && P.Z.can(M.Plq.SEND_MESSAGES, H)), ep = (0, d.Z)($);
   (null == ep ? void 0 : ep.newClipIds.length) !== (null == $ ? void 0 : $.newClipIds.length) && (null != (t = null == $ ? void 0 : $.newClipIds.length) ? t : 0) > 0 && null == eo && er && et && !ei && !en && !el && es("recentClips");
   let eh = (e, t, n) => {
       null != t && "ETOOLARGE" === t.code ? (0, T.G)(H, []) : (0, T.d)(e, H, V, {
@@ -120,8 +120,8 @@ let F = i.memo(function(e) {
   let eg = (0, v.NE)(H),
     eb = (0, v.Xu)(H),
     e_ = !j.dN.useSetting() && !(0, N.isAndroidWeb)() && null != window.ResizeObserver,
-    eC = (0, x.UI)(null != H ? H : void 0),
-    ex = (0, h.qB)(),
+    ex = (0, C.UI)(null != H ? H : void 0),
+    eC = (0, h.qB)(),
     ey = (0, y.Us)({
       location: "ChannelAttachButton"
     }),
@@ -135,8 +135,8 @@ let F = i.memo(function(e) {
       channel: H,
       activities: Q,
       newClipsCount: ev,
-      canPostPolls: eC,
-      canLaunchActivities: ex,
+      canPostPolls: ex,
+      canLaunchActivities: eC,
       appContext: q,
       canSendScheduledMessages: ey
     }),
@@ -232,7 +232,7 @@ let F = i.memo(function(e) {
         channel: H,
         isOmniMenuOpen: "attachMenu" === eo,
         openOmniMenu: () => es("attachMenu"),
-        enabled: ex,
+        enabled: eC,
         animationContainerClassName: U.buttonAnimation,
         glowClassName: U.buttonAnimationGlow,
         trinketsClassName: U.buttonAnimationTrinkets,

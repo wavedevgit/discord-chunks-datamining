@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(906732),
   b = n(895924),
   _ = n(540059),
-  C = n(605236),
-  x = n(340541),
+  x = n(605236),
+  C = n(340541),
   y = n(448239),
   v = n(626135),
   j = n(607187),
@@ -186,7 +186,7 @@ function w(e) {
     analyticsLocations: u
   } = (0, g.ZP)(m.Z.VC_TILE_ACTIVITY_INVITE), p = (0, _.Q3)("SingleUserTile"), {
     entrypoints: h
-  } = (0, x._k)({
+  } = (0, C._k)({
     location: "single_user_tile"
   }), {
     enabled: b
@@ -196,7 +196,7 @@ function w(e) {
     autoTrackExposure: !0
   });
 
-  function C() {
+  function x() {
     (0, c.ZDy)(async () => {
       let {
         default: e
@@ -249,7 +249,7 @@ function w(e) {
               [I.button]: !p
             }),
             innerClassName: I.buttonContents,
-            onClick: C,
+            onClick: x,
             children: [(0, r.jsx)(A, {
               size: "xs",
               color: "currentColor"
@@ -287,7 +287,7 @@ function R(e) {
       n_participants: d
     })
   });
-  let x = (0, p.Z)({
+  let C = (0, p.Z)({
       guildId: n.id
     }).slice(0, 3),
     {
@@ -313,7 +313,7 @@ function R(e) {
         className: a()(I.activitiesContainer, {
           [I.activitiesContainerSmol]: s <= 300
         }),
-        children: x.map(e => (0, r.jsx)(h.Y, {
+        children: C.map(e => (0, r.jsx)(h.Y, {
           context: Z,
           activityItem: e,
           aspectRatio: h.Y.AspectRatio.SIXTEEN_BY_NINE,
@@ -327,7 +327,7 @@ function R(e) {
             tile_type: "activity suggestion",
             close_type: "permanent",
             n_participants: d
-          }), (0, C.EW)(o.z.VC_TILE_ACTIVITIES_ENTRY_POINT)
+          }), (0, x.EW)(o.z.VC_TILE_ACTIVITIES_ENTRY_POINT)
         },
         children: [(0, r.jsx)(y.Z, {}), (0, r.jsx)(c.Text, {
           variant: "text-sm/medium",

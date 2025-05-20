@@ -1,6 +1,6 @@
 /** Chunk was on 23445 **/
 n.d(t, {
-  Z: () => C
+  Z: () => x
 }), n(704826), n(35282), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -121,6 +121,6 @@ class _ extends i.PureComponent {
     })
   }
 }
-let C = o.ZP.connectStores([d.Z], () => ({
+let x = o.ZP.connectStores([d.Z], () => ({
   regions: d.Z.getRegions(null)
 }))(_)

@@ -25,8 +25,8 @@ function h(e) {
     newClipsCount: g,
     canPostPolls: b,
     canLaunchActivities: _,
-    appContext: C,
-    canSendScheduledMessages: x
+    appContext: x,
+    canSendScheduledMessages: C
   } = e, y = [];
   return t && (y.push({
     type: "UPLOAD_A_FILE",
@@ -36,7 +36,7 @@ function h(e) {
     type: "UPLOAD_TEXT_AS_FILE",
     icon: i.xD0,
     display: d.intl.string(d.t["G9s+EB"])
-  })), h && t && C !== u.IlC.POPOUT && y.push({
+  })), h && t && x !== u.IlC.POPOUT && y.push({
     type: "CLIPS",
     icon: i.AlX,
     display: d.intl.string(d.t.o034cn),
@@ -84,7 +84,7 @@ function h(e) {
       }),
       activity: e
     }))
-  }), x && y.push({
+  }), C && y.push({
     type: "SCHEDULED_MESSAGE",
     icon: i.T39,
     display: d.intl.string(d.t["3+ii4O"])

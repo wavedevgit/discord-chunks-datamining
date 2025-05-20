@@ -1,7 +1,7 @@
 /** Chunk was on 23445 **/
 n.d(t, {
   $A: () => _,
-  j8: () => C
+  j8: () => x
 });
 var r = n(255367);
 n(73800);
@@ -39,7 +39,7 @@ function _(e) {
   }) : null
 }
 
-function C(e) {
+function x(e) {
   let t = (0, a.e7)([p.Z], () => p.Z.getChannel(e), [e]);
   l()(null != t, "useNotificationSettingsItem: channel cannot be undefined");
   let n = (0, d.Mn)("StageChannelCallOverflowMenu"),

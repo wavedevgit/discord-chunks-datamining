@@ -22,12 +22,12 @@ function b(e) {
   var t, b;
   let {
     channel: _,
-    children: C
-  } = e, x = (0, i.e7)([u.Z], () => u.Z.isBlocked(_.getRecipientId()));
+    children: x
+  } = e, C = (0, i.e7)([u.Z], () => u.Z.isBlocked(_.getRecipientId()));
   (0, o.Z)(_.id);
   let y = (0, s.Z)(_.id),
     v = _.isSystemDM(),
-    j = x && !v && !_.isMultiUserDM(),
+    j = C && !v && !_.isMultiUserDM(),
     O = {};
   if (v) {
     let e = y ? (0, r.jsxs)(r.Fragment, {
@@ -67,7 +67,7 @@ function b(e) {
     }
     return e
   }({}, O), b = b = {
-    children: C
+    children: x
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(b)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

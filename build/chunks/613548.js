@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(236091),
   b = n(540059),
   _ = n(517525),
-  C = n(2818),
-  x = n(954551),
+  x = n(2818),
+  C = n(954551),
   y = n(44136),
   v = n(651183),
   j = n(853476),
@@ -119,7 +119,7 @@ function D(e) {
   }), G = !D && B && (n.isGuildVoice() || n.isGroupDM()), {
     enabled: F,
     inInbox: H
-  } = C.Z.useExperiment({
+  } = x.Z.useExperiment({
     location: "ChannelCallHeaderToolbar"
   }), V = (0, b.Q3)("ChannelCallHeaderToolbar"), z = [];
   return P && z.push((0, r.jsx)(L, {
@@ -162,7 +162,7 @@ function D(e) {
     }
   }, "call-members-popout")), V || t || z.push((0, r.jsx)(m.Z, {
     className: R.button
-  }, "clips")), F && !H && z.push((0, r.jsx)(x.Z, {
+  }, "clips")), F && !H && z.push((0, r.jsx)(C.Z, {
     className: R.button
   }, "for-later")), G && z.push((0, r.jsx)(I.Z, {
     className: a()(R.button, {

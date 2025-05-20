@@ -1,6 +1,6 @@
 /**
   Module ID: 23445
-  Original File Name: ce14eb0d8f6d8ea9
+  Original File Name: adf7c36b804d931f
 **/
 .content__79cbe {
     border-radius: 8px;
@@ -5975,10 +5975,19 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .tags_e5a45e {
     align-items: center;
-    display: flex;
-    gap: 8px;
+    gap: var(--spacing-8);
     justify-content: center;
     overflow: hidden
+}
+
+.tags_e5a45e,.wrap_e5a45e {
+    display: flex
+}
+
+.wrap_e5a45e {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    overflow: auto
 }
 
 .container__7e6bb {
@@ -6719,6 +6728,25 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 .animation_ee23ac {
     height: 40px;
     width: 40px
+}
+
+.closeButton__40059 {
+    margin-left: auto;
+    margin-right: -4px;
+    margin-top: -4px
+}
+
+.header__40059 {
+    align-items: baseline;
+    display: flex;
+    flex-direction: column
+}
+
+.footer__40059 {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
 }
 
 .container__34c2c {
@@ -13154,4 +13182,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=ce14eb0d8f6d8ea9.css.map*/
+/*# sourceMappingURL=adf7c36b804d931f.css.map*/

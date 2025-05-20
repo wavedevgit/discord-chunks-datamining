@@ -26,9 +26,9 @@ let _ = i.memo(function(e) {
       title: p,
       onToggleExpand: b,
       expanded: _,
-      expandedCount: C
+      expandedCount: x
     } = e,
-    x = (0, l.e7)([u.Z], () => u.Z.hidden),
+    C = (0, l.e7)([u.Z], () => u.Z.hidden),
     y = i.useCallback(e => {
       (0, o.jW)(e, async () => {
         let {
@@ -44,11 +44,11 @@ let _ = i.memo(function(e) {
     children: [(0, r.jsx)(a.nn4, {
       children: f.intl.format(f.t.UaqbkZ, {
         title: p,
-        count: C
+        count: x
       })
     }), (0, r.jsxs)(a.P3F, {
       onClick: e => {
-        if (e.currentTarget === e.target || e.currentTarget.contains(e.target)) return x ? (0, c.lY)() : C > 3 ? b() : (0, h.dG4)()
+        if (e.currentTarget === e.target || e.currentTarget.contains(e.target)) return C ? (0, c.lY)() : x > 3 ? b() : (0, h.dG4)()
       },
       onContextMenu: y,
       tag: "span",
@@ -57,9 +57,9 @@ let _ = i.memo(function(e) {
       children: [(0, r.jsxs)("div", {
         className: m.header,
         children: [(0, r.jsxs)("span", {
-          children: [p, " — ", C]
+          children: [p, " — ", x]
         }), (0, r.jsx)(d.Z, {})]
-      }), C <= 3 && !x ? null : (t = x ? (0, r.jsx)(a.u04, {
+      }), x <= 3 && !C ? null : (t = C ? (0, r.jsx)(a.u04, {
         className: m.toggleExpandIcon
       }) : _ ? (0, r.jsx)(a.CJ0, {
         className: m.toggleExpandIcon

@@ -1,6 +1,6 @@
 /** Chunk was on 23445 **/
 n.d(t, {
-  Z: () => C
+  Z: () => x
 });
 var r = n(255367);
 n(73800);
@@ -38,12 +38,12 @@ function _(e) {
   return e
 }
 
-function C(e) {
+function x(e) {
   var {
     applicationId: t,
     stream: i,
-    channel: C,
-    exitFullScreen: x,
+    channel: x,
+    exitFullScreen: C,
     appContext: y,
     analyticsLocation: v,
     guildScheduledEvent: j,
@@ -73,7 +73,7 @@ function C(e) {
     {
       parentAnalyticsLocation: w
     } = (0, u.ZP)(),
-    R = null == C ? void 0 : C.getGuildId(),
+    R = null == x ? void 0 : x.getGuildId(),
     M = (0, a.e7)([p.Z], () => null != R ? p.Z.getGuild(R) : null, [R]),
     k = (0, a.e7)([h.Z], () => null != t ? h.Z.getApplicationActivity(t) : void 0),
     L = null == t || O ? o.ejJ : o.gQj,
@@ -89,9 +89,9 @@ function C(e) {
     size: S,
     buttonText: Z,
     color: null != N ? N : void 0
-  }) : null != M && null != C && f.Z.can(g.Plq.CREATE_INSTANT_INVITE, C) ? (0, r.jsx)(m.Z, _({
+  }) : null != M && null != x && f.Z.can(g.Plq.CREATE_INSTANT_INVITE, x) ? (0, r.jsx)(m.Z, _({
     onClick: () => {
-      l()(null != M, "guild cannot be null"), l()(null != C, "channel cannot be null"), null != w && (0, d.v)(w, d.d.INVITE),
+      l()(null != M, "guild cannot be null"), l()(null != x, "channel cannot be null"), null != w && (0, d.v)(w, d.d.INVITE),
         function(e) {
           let {
             guild: t,
@@ -134,11 +134,11 @@ function C(e) {
           })
         }({
           guild: M,
-          channel: C,
+          channel: x,
           streamUserId: null == i ? void 0 : i.ownerId,
           applicationId: t,
           appContext: null != y ? y : A,
-          exitFullScreen: x,
+          exitFullScreen: C,
           analyticsLocation: v,
           guildScheduledEvent: j
         })

@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(687158),
   b = n(510659),
   _ = n(892001),
-  C = n(113557),
-  x = n(867176),
+  x = n(113557),
+  C = n(867176),
   y = n(451834),
   v = n(502762),
   j = n(952124),
@@ -107,7 +107,7 @@ function R(e) {
               })]
             }), (0, r.jsxs)("header", {
               className: A.header,
-              children: [(0, r.jsx)(x.Z, {
+              children: [(0, r.jsx)(C.Z, {
                 user: t,
                 displayProfile: k,
                 themeType: N.lY.SIDEBAR,
@@ -116,7 +116,7 @@ function R(e) {
               }), (0, r.jsx)(y.Z, {
                 userId: t.id,
                 className: A.toast
-              }), (0, r.jsx)(C.Z, {
+              }), (0, r.jsx)(x.Z, {
                 location: "UserProfileSiebar",
                 user: t,
                 displayProfile: k,

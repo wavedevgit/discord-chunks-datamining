@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(453687),
   b = n(930282),
   _ = n(318713),
-  C = n(981631),
-  x = n(388032),
+  x = n(981631),
+  C = n(388032),
   y = n(684525),
   v = n(848697),
   j = n(73433);
@@ -62,8 +62,8 @@ let O = i.memo(function(e) {
             color: "interactive-normal",
             tag: "span",
             className: y.learnMore,
-            children: x.intl.format(x.t.Nd3Gh4, {
-              helpUrl: f.Z.getArticleURL(C.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
+            children: C.intl.format(C.t.Nd3Gh4, {
+              helpUrl: f.Z.getArticleURL(x.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
             })
           })
         })
@@ -78,13 +78,13 @@ let O = i.memo(function(e) {
       message: u,
       children: f,
       content: m,
-      onUpdate: C
+      onUpdate: x
     } = e, E = null == (t = u.editedTimestamp) ? void 0 : t.toString(), I = i.useRef(!1), P = (0, c.e7)([h.Z], () => h.Z.getMessage(u.id), [u.id]), S = i.useCallback(() => {
       (null == P ? void 0 : P.isBlockedEdit) ? (0, p.I)(u.id) : d.Z.deleteMessage(u.channel_id, u.id, !0)
     }, [u, P]);
     return i.useLayoutEffect(() => {
-      I.current ? null != C && C() : I.current = !0
-    }, [C, u.content, m, E, f]), (0, r.jsxs)("div", {
+      I.current ? null != x && x() : I.current = !0
+    }, [x, u.content, m, E, f]), (0, r.jsxs)("div", {
       id: (0, g.ut)(u),
       className: a()(l, j.markup, {
         [v.messageContent]: !0,
@@ -99,11 +99,11 @@ let O = i.memo(function(e) {
           isInline: !1,
           children: (0, r.jsxs)("span", {
             className: v.edited,
-            children: ["(", x.intl.string(x.t.Z7eEx8), ")"]
+            children: ["(", C.intl.string(C.t.Z7eEx8), ")"]
           })
         })]
       }), (0, r.jsx)(O, {
-        notice: null != (n = null == P ? void 0 : P.errorMessage) ? n : x.intl.string(x.t.zQ69pq),
+        notice: null != (n = null == P ? void 0 : P.errorMessage) ? n : C.intl.string(C.t.zQ69pq),
         message: u,
         compact: o,
         onDismiss: S

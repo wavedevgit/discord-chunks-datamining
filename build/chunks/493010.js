@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(909820),
   b = n(981631),
   _ = n(921944),
-  C = n(388032),
-  x = n(591837);
+  x = n(388032),
+  C = n(591837);
 let y = function(e) {
   let {
     channel: t,
@@ -36,7 +36,7 @@ let y = function(e) {
     }, [t.id]),
     j = (0, r.jsx)(h.ZP.Icon, {
       icon: a.Dio,
-      tooltip: C.intl.string(C.t.cpT0Cg),
+      tooltip: x.intl.string(x.t.cpT0Cg),
       onClick: v
     });
   return (0, r.jsxs)(u.Z, {
@@ -48,16 +48,16 @@ let y = function(e) {
       draftType: f.d.ChannelMessage
     }), (0, r.jsxs)(h.ZP, {
       toolbar: j,
-      "aria-label": C.intl.string(C.t.BIYAqa),
+      "aria-label": x.intl.string(x.t.BIYAqa),
       children: [(0, r.jsx)(h.ZP.Icon, {
         icon: a.kBi,
         disabled: !0,
-        "aria-label": C.intl.string(C.t.Kx5kCA)
+        "aria-label": x.intl.string(x.t.Kx5kCA)
       }), (0, r.jsx)(h.ZP.Title, {
         children: t.name
       })]
     }), (0, r.jsx)("div", {
-      className: x.chat,
+      className: C.chat,
       children: (0, r.jsx)(c.Z, {
         channel: t,
         guild: n,

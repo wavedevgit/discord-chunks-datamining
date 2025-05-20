@@ -1,7 +1,7 @@
 /** Chunk was on 23445 **/
 n.d(t, {
-  Z: () => eC,
-  l: () => ex
+  Z: () => ex,
+  l: () => eC
 }), n(642613), n(415506), n(539854), n(388685), n(35282), n(49124);
 var r, i = n(255367),
   l = n(73800),
@@ -18,8 +18,8 @@ var r, i = n(255367),
   g = n(26151),
   b = n(493683),
   _ = n(529103),
-  C = n(447543),
-  x = n(708690),
+  x = n(447543),
+  C = n(708690),
   y = n(194359),
   v = n(425493),
   j = n(461745),
@@ -211,7 +211,7 @@ class eg extends(r = l.PureComponent) {
     let {
       channel: e
     } = this.props;
-    m.Z.wait(() => x.Z.open(null == e ? void 0 : e.id));
+    m.Z.wait(() => C.Z.open(null == e ? void 0 : e.id));
     let t = (0, P.v_)(e);
     q.default.track(er.rMx.OPEN_POPOUT, ec(es({}, t), {
       type: this._getAnalyticsEntryPoint().entryPointType,
@@ -220,7 +220,7 @@ class eg extends(r = l.PureComponent) {
     })), X.S.subscribe(er.CkL.SCROLL_PAGE_UP, this.scrollPageUp), X.S.subscribe(er.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown)
   }
   componentWillUnmount() {
-    X.S.unsubscribe(er.CkL.SCROLL_PAGE_UP, this.scrollPageUp), X.S.unsubscribe(er.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown), null != this.copyTimeout && clearTimeout(this.copyTimeout), m.Z.wait(() => x.Z.close())
+    X.S.unsubscribe(er.CkL.SCROLL_PAGE_UP, this.scrollPageUp), X.S.unsubscribe(er.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown), null != this.copyTimeout && clearTimeout(this.copyTimeout), m.Z.wait(() => C.Z.close())
   }
   isNotFriends() {
     let {
@@ -243,7 +243,7 @@ class eg extends(r = l.PureComponent) {
     }, {
       autoTrackExposure: !1
     });
-    C.ZP.createInvite(e.id, {
+    x.ZP.createInvite(e.id, {
       max_age: t
     }, er.t4x.GROUP_DM)
   }
@@ -604,15 +604,15 @@ class eg extends(r = l.PureComponent) {
       let e = this.searchBarRef.current;
       null == e || e.focus()
     }), eo(this, "focusResult", e => {
-      x.Z.select(e)
+      C.Z.select(e)
     }), eo(this, "handleSelect", (e, t) => {
       let {
         results: n,
         channel: r
       } = this.props;
-      null == t ? x.Z.clear(null == r ? void 0 : r.id) : null != n && this.handleClick(n[t].user.id)
+      null == t ? C.Z.clear(null == r ? void 0 : r.id) : null != n && this.handleClick(n[t].user.id)
     }), eo(this, "handleSelectionChange", (e, t) => {
-      x.Z.select(t);
+      C.Z.select(t);
       let n = this.scrollerRef.current;
       null != n && n.scrollToIndex({
         section: e,
@@ -623,7 +623,7 @@ class eg extends(r = l.PureComponent) {
       let {
         channel: t
       } = this.props, n = (0, P.v_)(t);
-      x.Z.search(e, null == t ? void 0 : t.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
+      C.Z.search(e, null == t ? void 0 : t.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
         q.default.track(er.rMx.SEARCH_USER_LIST_STARTED, ec(es({}, n), {
           entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
           entry_point_source: this._getAnalyticsEntryPoint().entryPointSource,
@@ -632,14 +632,14 @@ class eg extends(r = l.PureComponent) {
       }, 500)
     }), eo(this, "handleRemoveUser", e => {
       let t = Array.from(this.props.selectedUsers);
-      x.Z.removeUser(t[e]), this.forceFocus()
+      C.Z.removeUser(t[e]), this.forceFocus()
     }), eo(this, "handleClick", e => {
       let {
         selectedUsers: t,
         query: n,
         channel: r
       } = this.props;
-      t.has(e) ? x.Z.removeUser(e) : (x.Z.addUser(e), n.length > 0 && x.Z.clear(null == r ? void 0 : r.id)), this.forceFocus()
+      t.has(e) ? C.Z.removeUser(e) : (C.Z.addUser(e), n.length > 0 && C.Z.clear(null == r ? void 0 : r.id)), this.forceFocus()
     }), eo(this, "handleAddFriendNavigation", () => {
       (0, k.uL)(er.Z5c.FRIENDS), _.Z.setSection(er.pJs.ADD_FRIEND), this.props.onClose()
     }), eo(this, "handleScroll", () => {
@@ -805,7 +805,7 @@ function e_(e) {
   }, n, r))
 }
 
-function eC(e) {
+function ex(e) {
   var t, n;
   let {
     channel: r,
@@ -818,11 +818,11 @@ function eC(e) {
     popoutAlign: p = "right",
     subscribeToGlobalHotkey: m = !1,
     location: g
-  } = e, b = null != s ? s : null == r ? f.kL_ : f.ejJ, _ = (0, w.a)(g), C = "channel-invite-modal-".concat(null == r ? void 0 : r.id), x = (0, f.VXO)(C), y = l.useCallback(() => (0, f.ZDy)(() => Promise.resolve(e => (0, i.jsx)(e_, ec(es({}, e), {
+  } = e, b = null != s ? s : null == r ? f.kL_ : f.ejJ, _ = (0, w.a)(g), x = "channel-invite-modal-".concat(null == r ? void 0 : r.id), C = (0, f.VXO)(x), y = l.useCallback(() => (0, f.ZDy)(() => Promise.resolve(e => (0, i.jsx)(e_, ec(es({}, e), {
     channel: r
   }))), {
-    modalKey: C
-  }), [r, C]), v = l.useRef(null), [j, E] = l.useState(null != r && r.isGroupDM() && 0 === r.recipients.length), I = l.useCallback(() => _ ? x ? (0, f.Mr3)(C) : y() : E(e => !e), [_, x, C, y]);
+    modalKey: x
+  }), [r, x]), v = l.useRef(null), [j, E] = l.useState(null != r && r.isGroupDM() && 0 === r.recipients.length), I = l.useCallback(() => _ ? C ? (0, f.Mr3)(x) : y() : E(e => !e), [_, C, x, y]);
   l.useEffect(() => (m && X.S.subscribe(er.CkL.TOGGLE_DM_CREATE, I), () => {
     X.S.unsubscribe(er.CkL.TOGGLE_DM_CREATE, I)
   }), [m, I, _]);
@@ -864,7 +864,7 @@ function eC(e) {
   })
 }
 
-function ex(e) {
+function eC(e) {
   let {
     channel: t,
     className: n,

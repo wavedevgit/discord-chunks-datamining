@@ -19,8 +19,8 @@ var r = n(255367),
   g = n(937889),
   b = n(739566),
   _ = n(267128),
-  C = n(378233),
-  x = n(419922),
+  x = n(378233),
+  C = n(419922),
   y = n(375954),
   v = n(699516),
   j = n(768581),
@@ -59,7 +59,7 @@ function N(e) {
     trailingIconClass: S.messageContentTrailingIcon,
     leadingIconClass: S.messageContentLeadingIcon,
     iconSize: P.WW
-  }), R = (0, C.cv)(n), M = R.length > 0 ? R.map(e => (0, r.jsx)(x.Z, {
+  }), R = (0, x.cv)(n), M = R.length > 0 ? R.map(e => (0, r.jsx)(C.Z, {
     className: S.sticker,
     size: 128,
     sticker: e,
@@ -142,9 +142,9 @@ function T(e) {
     lingerMs: Z
   }), m = i.useRef({}), [g, b] = i.useState({}), _ = i.useCallback((e, t) => {
     null == t ? delete m.current[e] : m.current[e] = t
-  }, []), C = i.useRef(g);
+  }, []), x = i.useRef(g);
   i.useLayoutEffect(() => {
-    C.current = g
+    x.current = g
   }), i.useLayoutEffect(() => {
     let e = {},
       t = 0;
@@ -152,14 +152,14 @@ function T(e) {
       var n;
       let i = null != (n = m.current[r.id]) ? n : 0;
       e[r.id] = t, t += i + 8
-    }(0, o.isEqual)(e, C.current) || b(e)
+    }(0, o.isEqual)(e, x.current) || b(e)
   }, [f]);
-  let x = f.map(e => ({
+  let C = f.map(e => ({
       message: e,
       height: m.current[e.id],
       y: g[e.id]
     })),
-    v = (0, u.Yzy)(x, {
+    v = (0, u.Yzy)(C, {
       keys: e => e.message.id,
       from: () => ({
         opacity: 0

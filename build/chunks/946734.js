@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(430824),
   b = n(594174),
   _ = n(251625),
-  C = n(823379),
-  x = n(665149),
+  x = n(823379),
+  C = n(665149),
   y = n(228168),
   v = n(388032),
   j = n(479367);
@@ -75,7 +75,7 @@ class E {
         return [t, n.map(e => {
           var t;
           return null == (t = g.Z.getGuild(e)) ? void 0 : t.name
-        }).filter(C.lm)]
+        }).filter(x.lm)]
       }).filter(t => {
         let [n] = t;
         return n !== (null == e ? void 0 : e.globalName)
@@ -134,7 +134,7 @@ function I(e) {
     className: j.spacer
   }) : (0, r.jsxs)(d.Gt, {
     value: f,
-    children: [(0, r.jsx)(x.iz, {
+    children: [(0, r.jsx)(C.iz, {
       className: j.divider
     }), (0, r.jsx)(s.IGR, {
       text: v.intl.string(v.t.l1QVfn),

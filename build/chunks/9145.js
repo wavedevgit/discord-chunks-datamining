@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(871499),
   b = n(786915),
   _ = n(402113),
-  C = n(592125),
-  x = n(271383),
+  x = n(592125),
+  C = n(271383),
   y = n(944486),
   v = n(594174),
   j = n(585483),
@@ -50,7 +50,7 @@ function G(e) {
     maxHeight: G,
     connectedLocation: F,
     renderExternalHeader: H
-  } = e, V = (0, N.Z)(), z = (0, s.Wu)([I.ZP], () => I.ZP.getEmbeddedActivitiesForLocation(F), [F]), W = (0, Z.pY)(F), Y = (0, s.e7)([C.Z], () => C.Z.getChannel(W)), q = (0, P.gb)(z), K = (0, P.uF)(q), X = i.useCallback(() => {
+  } = e, V = (0, N.Z)(), z = (0, s.Wu)([I.ZP], () => I.ZP.getEmbeddedActivitiesForLocation(F), [F]), W = (0, Z.pY)(F), Y = (0, s.e7)([x.Z], () => x.Z.getChannel(W)), q = (0, P.gb)(z), K = (0, P.uF)(q), X = i.useCallback(() => {
     (0, E.tg)(M.Ez.PIP)
   }, []), Q = i.useRef(null), J = (0, s.e7)([I.ZP], () => I.ZP.getFocusedLayout()), $ = J !== M.MI.NO_CHAT, [ee, et] = i.useState(null != (n = null != (t = m.ZP.activityPanelHeight) ? t : G) ? n : null), en = i.useCallback(e => {
     d.ZP.updatedUnsyncedSettings({
@@ -83,9 +83,9 @@ function G(e) {
   let eu = K.get(null != (l = null == V ? void 0 : V.id) ? l : ""),
     ed = F.kind === o.E.CONTEXTLESS,
     ep = (0, s.e7)([y.Z], () => y.Z.getChannelId()),
-    eh = (0, s.Wu)([x.ZP], () => {
+    eh = (0, s.Wu)([C.ZP], () => {
       var e;
-      return null == Y ? [] : Array.from(null != (e = null == eu ? void 0 : eu.embeddedActivity.userIds) ? e : []).map(e => x.ZP.getMember(Y.guild_id, e))
+      return null == Y ? [] : Array.from(null != (e = null == eu ? void 0 : eu.embeddedActivity.userIds) ? e : []).map(e => C.ZP.getMember(Y.guild_id, e))
     }, [eu, Y]),
     ef = i.useMemo(() => {
       let e = new Map;

@@ -22,7 +22,7 @@ function f(e) {
     messagesCount: m,
     linksCount: g,
     mediaCount: b
-  } = (0, c.P2)(t, n), _ = new Intl.NumberFormat(p.intl.currentLocale).format(m), C = new Intl.NumberFormat(p.intl.currentLocale).format(g), x = new Intl.NumberFormat(p.intl.currentLocale).format(b), y = i.useCallback(async e => {
+  } = (0, c.P2)(t, n), _ = new Intl.NumberFormat(p.intl.currentLocale).format(m), x = new Intl.NumberFormat(p.intl.currentLocale).format(g), C = new Intl.NumberFormat(p.intl.currentLocale).format(b), y = i.useCallback(async e => {
     if (null == f) return;
     let r = (0, c.Ow)(t, e, {
       include_nsfw: !0
@@ -74,7 +74,7 @@ function f(e) {
         }) : (0, r.jsx)(a.Text, {
           variant: "text-sm/semibold",
           color: "interactive-normal",
-          children: C
+          children: x
         }),
         onNavigate: g > 0 ? () => y(c.mw.LINKS) : void 0
       }), (0, r.jsx)(u._2, {
@@ -94,7 +94,7 @@ function f(e) {
         }) : (0, r.jsx)(a.Text, {
           variant: "text-sm/semibold",
           color: "interactive-normal",
-          children: x
+          children: C
         }),
         onNavigate: b > 0 ? () => y(c.mw.MEDIA) : void 0
       })]

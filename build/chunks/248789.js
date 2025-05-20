@@ -52,15 +52,15 @@ function _(e) {
   let {
     channelId: t,
     warningId: _,
-    senderId: C
-  } = e, x = i.useCallback(() => {
+    senderId: x
+  } = e, C = i.useCallback(() => {
     (0, u.T)(t, [_])
-  }, [t, _]), y = (0, a.e7)([c.Z], () => c.Z.isBlocked(C)), v = i.useMemo(() => ({
+  }, [t, _]), y = (0, a.e7)([c.Z], () => c.Z.isBlocked(x)), v = i.useMemo(() => ({
     channelId: t,
     warningId: _,
-    senderId: C,
+    senderId: x,
     warningType: d.pj.INAPPROPRIATE_CONVERSATION_TIER_2
-  }), [t, _, C]);
+  }), [t, _, x]);
   i.useEffect(() => {
     (0, p.KQ)(b(g({}, v), {
       viewName: p.pb.SAFETY_WARNING_BANNER
@@ -84,7 +84,7 @@ function _(e) {
             onClose: l
           } = n;
           return (0, r.jsx)(e, {
-            otherUserId: C,
+            otherUserId: x,
             channelId: t,
             warningId: _,
             warningType: d.pj.INAPPROPRIATE_CONVERSATION_TIER_2,
@@ -95,13 +95,13 @@ function _(e) {
       }, {
         modalKey: f.X_
       }), j(p.NM.USER_BANNER_OPEN_SAFETY_TOOLS)
-    }, [t, C, _, j]),
+    }, [t, x, _, j]),
     E = i.useCallback(() => {
-      x(), j(p.NM.USER_BANNER_BLOCK_CONFIRM)
-    }, [x, j]),
+      C(), j(p.NM.USER_BANNER_BLOCK_CONFIRM)
+    }, [C, j]),
     I = i.useCallback(() => {
-      x(), j(p.NM.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
-    }, [x, j]),
+      C(), j(p.NM.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
+    }, [C, j]),
     P = i.useCallback(() => {
       (0, o.ZDy)(async () => {
         let {
@@ -120,20 +120,20 @@ function _(e) {
               null == l || l(), j(p.NM.USER_BANNER_BLOCK_CANCEL)
             },
             onClose: l,
-            userId: C,
+            userId: x,
             channelId: t
           })
         }
       })
-    }, [E, I, C, t, j]);
+    }, [E, I, x, t, j]);
   return (0, r.jsx)(h.Q, {
     channelId: t,
     warningId: _,
-    senderId: C,
+    senderId: x,
     warningType: d.pj.INAPPROPRIATE_CONVERSATION_TIER_2,
     header: m.intl.string(m.t.ZzlB5u),
     description: m.intl.string(m.t["D1aU+v"]),
-    onDismiss: x,
+    onDismiss: C,
     buttons: [{
       text: m.intl.string(m.t.Qyu4UF),
       color: o.zxk.Colors.BRAND,

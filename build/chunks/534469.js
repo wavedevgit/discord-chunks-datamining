@@ -20,8 +20,8 @@ var r = n(255367),
   g = n(911266),
   b = n(111810),
   _ = n(235894),
-  C = n(367814),
-  x = n(807092),
+  x = n(367814),
+  C = n(807092),
   y = n(869765),
   v = n(703656),
   j = n(695346),
@@ -141,7 +141,7 @@ function ei(e) {
     g = (0, A.ZP)(i),
     b = (0, M.iG)(i),
     _ = (0, M.Gx)(i),
-    x = (0, C.Z)(g),
+    C = (0, x.Z)(g),
     v = (0, Z.k)(i);
   return i.type === X.uaV.THREAD_STARTER_MESSAGE && null != h && h.state === y.Y.LOADED ? (0, r.jsx)(el, et(ee({}, e), {
     viewingChannelId: i.channel_id,
@@ -168,7 +168,7 @@ function ei(e) {
     "aria-labelledby": b,
     "aria-describedby": _,
     hasThread: !1,
-    authorHasGradientRole: x,
+    authorHasGradientRole: C,
     guildId: v
   }))
 }
@@ -187,7 +187,7 @@ function el(e) {
     },
     compact: b = !1,
     className: _,
-    groupId: x,
+    groupId: C,
     viewingChannelId: O
   } = e, E = o.type === X.uaV.REPLY ? o.messageReference : void 0, I = (0, c.JA)(null != (t = e.id) ? t : ""), {
     onFocus: P
@@ -204,7 +204,7 @@ function el(e) {
     handleMouseLeave: eo,
     isHovered: es
   } = (0, k.tn)({
-    groupId: x,
+    groupId: C,
     message: o,
     defaultValue: H,
     popouts: F
@@ -220,15 +220,15 @@ function el(e) {
     allowLinks: !0,
     previewLinkTarget: !0,
     viewingChannelId: O
-  }), ef = (0, L.Z)(s, h, ec), em = (0, A.ZP)(o), eg = (0, M.iG)(o, x), eb = (0, M.Gx)(o), e_ = (0, z.Z)(e, ep, !1), eC = i.useCallback(() => (0, v.XU)(g, h, s), [g, h, s]), ex = (0, f.p9)({
+  }), ef = (0, L.Z)(s, h, ec), em = (0, A.ZP)(o), eg = (0, M.iG)(o, C), eb = (0, M.Gx)(o), e_ = (0, z.Z)(e, ep, !1), ex = i.useCallback(() => (0, v.XU)(g, h, s), [g, h, s]), eC = (0, f.p9)({
     guildId: g,
     roleId: em.iconRoleId
-  }), ey = (0, C.Z)(em);
+  }), ey = (0, x.Z)(em);
   return (0, r.jsxs)("div", {
     className: J.quotedChatMessage,
     children: [(0, r.jsx)(d.P3F, {
       className: J.jump,
-      onClick: eC,
+      onClick: ex,
       "aria-label": Q.intl.string(Q.t.k5WiPT),
       children: Q.intl.string(Q.t.k5WiPT)
     }), (0, r.jsx)(R.Z, et(ee({}, Z), {
@@ -240,7 +240,7 @@ function el(e) {
         [J.mentioned]: o.mentioned,
         [J.ephemeral]: (0, S.Pv)(o),
         [J.systemMessage]: (0, T.Z)(o),
-        [J.groupStart]: o.id === x || o.type === X.uaV.REPLY,
+        [J.groupStart]: o.id === C || o.type === X.uaV.REPLY,
         [J.selected]: eu
       }),
       zalgo: !0,
@@ -262,7 +262,7 @@ function el(e) {
         replyReference: E,
         author: em,
         repliedMessage: ei,
-        roleIcon: ex
+        roleIcon: eC
       }),
       childrenAccessories: (0, G.Z)({
         channelMessageProps: e,
@@ -319,8 +319,8 @@ let ea = i.memo(function(e) {
       selected: eb,
       setPopout: e_
     } = (0, D.Z)(v.id, K.d$),
-    eC = (0, k.qo)(v, N, e_),
-    ex = (0, k.Go)(v, N),
+    ex = (0, k.qo)(v, N, e_),
+    eC = (0, k.Go)(v, N),
     {
       handleMouseEnter: ey,
       handleMouseLeave: ev,
@@ -367,7 +367,7 @@ let ea = i.memo(function(e) {
     }),
     eG = (0, L.Z)(Z, $, eA),
     eF = (0, A.ZP)(v),
-    eH = (0, u.e7)([x.Z], () => x.Z.getPendingReply($)),
+    eH = (0, u.e7)([C.Z], () => C.Z.getPendingReply($)),
     eV = function(e) {
       let t = i.useRef(e);
       return i.useEffect(() => {
@@ -388,7 +388,7 @@ let ea = i.memo(function(e) {
     eX = null != eq,
     eQ = i.useMemo(() => Object.values(eg).some(e => e), [eg]);
   l = v.type === X.uaV.CUSTOM_GIFT ? "" : !eT && eX ? (0, F.Z)(e, eU) : (0, z.Z)(e, eU, eT);
-  let eJ = (0, C.Z)(eF),
+  let eJ = (0, x.Z)(eF),
     e$ = v.id === ea,
     e0 = (0, r.jsx)(d.tEY, {
       offset: {
@@ -410,9 +410,9 @@ let ea = i.memo(function(e) {
           "aria-describedby": eY,
           onFocus: eZ,
           onBlur: eN,
-          onContextMenu: eC,
+          onContextMenu: ex,
           onKeyDown: eG,
-          onClick: ex,
+          onClick: eC,
           compact: er,
           contentOnly: eo,
           className: a()(ei, {
@@ -453,7 +453,7 @@ let ea = i.memo(function(e) {
           childrenAccessories: (0, G.Z)({
             channelMessageProps: e,
             hasSpoilerEmbeds: eB,
-            handleContextMenu: eC,
+            handleContextMenu: ex,
             isInteracting: eR,
             isAutomodBlockedMessage: eX
           }),

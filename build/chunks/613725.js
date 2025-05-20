@@ -29,27 +29,27 @@ function m() {
       guildId: t,
       channelId: n
     }
-  }, i.X), n = (0, l.e7)([d.Z], () => d.Z.getGuild(e)), m = (0, l.e7)([u.Z], () => null == n ? u.Z.getChannel(t) : null), g = (0, l.e7)([p.default], () => p.default.getCurrentUser()), b = null != m ? (0, o.x)(m) : null, _ = null != g ? g.getAvatarURL(e, 80) : h.pK["0"], C = (0, r.jsx)(a.qEK, {
+  }, i.X), n = (0, l.e7)([d.Z], () => d.Z.getGuild(e)), m = (0, l.e7)([u.Z], () => null == n ? u.Z.getChannel(t) : null), g = (0, l.e7)([p.default], () => p.default.getCurrentUser()), b = null != m ? (0, o.x)(m) : null, _ = null != g ? g.getAvatarURL(e, 80) : h.pK["0"], x = (0, r.jsx)(a.qEK, {
     src: _,
     "aria-hidden": !0,
     size: a.EFr.SIZE_80,
     className: f.avatarSizeOverride
-  }), x = null;
-  return x = null != n ? (0, r.jsx)(s.Z, {
+  }), C = null;
+  return C = null != n ? (0, r.jsx)(s.Z, {
     guild: n
   }) : null != b ? (0, r.jsx)(a.qEK, {
     "aria-hidden": !0,
     src: b,
     size: a.EFr.SIZE_80,
     className: f.avatarSizeOverride
-  }) : C, (0, r.jsxs)("div", {
+  }) : x, (0, r.jsxs)("div", {
     className: f.container,
     children: [(0, r.jsx)("div", {
       className: f.personAvatar,
-      children: C
+      children: x
     }), (0, r.jsx)("div", {
       className: f.guildAvatar,
-      children: x
+      children: C
     }), (0, r.jsx)("svg", {
       className: f.illustration,
       xmlns: "http://www.w3.org/2000/svg",

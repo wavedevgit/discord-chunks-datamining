@@ -1116,7 +1116,7 @@ function eT(e) {
             })]
           })]
         }) : null]
-      }), w, en && !ep && (0, r.jsx)(C.ZP, {
+      }), w, en && !ep && !ed && (0, r.jsx)(C.ZP, {
         contentTypes: [f.z.FORUM_CHANNEL_HELPER_CARD],
         children: e => {
           let {
