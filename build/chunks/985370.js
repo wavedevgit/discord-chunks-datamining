@@ -37,8 +37,9 @@ let g = e => {
     j || y()
   }, [y, j]), A = i.useCallback((e, t) => {
     v(), O(!j), g === f.D.EMOJI ? null == b || b(void 0) : null == b || b(f.D.EMOJI), (!_ || j) && (null == t || t(e))
-  }, [v, j, _, b, g]), w = (_ || j) && (g === f.D.EMOJI || null == g);
+  }, [v, j, _, b, g]), w = (_ || j) && (g === f.D.EMOJI || null == g), R = i.useRef(null);
   return (0, r.jsx)(a.yRy, {
+    targetElementRef: R,
     shouldShow: w,
     animation: a.yRy.Animation.FADE,
     animationPosition: "top",
@@ -80,7 +81,8 @@ let g = e => {
         },
         onMouseEnter: N,
         onMouseLeave: T,
-        isActive: j
+        isActive: j,
+        ref: R
       })
     }
   })

@@ -53,8 +53,8 @@
     e$ = eu(Q),
     e0 = eu(X),
     e1 = eu(J),
-    e3 = eu($),
-    e2 = eu(ee),
+    e2 = eu($),
+    e3 = eu(ee),
     e4 = eu(et),
     e5 = eu(en),
     e6 = eu(er),
@@ -368,7 +368,7 @@
   }
 
   function tM(e, t) {
-    return e && t ? e3.default(e, t) : !e && !t
+    return e && t ? e2.default(e, t) : !e && !t
   }
 
   function tj(e, t) {
@@ -376,7 +376,7 @@
   }
 
   function tU(e, t) {
-    return e && t ? e2.default(e, t) : !e && !t
+    return e && t ? e3.default(e, t) : !e && !t
   }
 
   function tG(e, t) {
@@ -525,7 +525,7 @@
     })
   }
 
-  function t3(e) {
+  function t2(e) {
     var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
       n = t.excludeTimes,
       r = t.includeTimes,
@@ -533,7 +533,7 @@
     return n && t1(e, n) || r && !t1(e, r) || i && !i(e) || !1
   }
 
-  function t2(e, t) {
+  function t3(e, t) {
     var n = t.minTime,
       r = t.maxTime;
     if (!n || !r) throw Error("Both minTime and maxTime props required");
@@ -1593,10 +1593,10 @@
         return tl(t_(e = t.call.apply(t, [this].concat(i))), "state", {
           height: null
         }), tl(t_(e), "handleClick", function(t) {
-          (e.props.minTime || e.props.maxTime) && t2(t, e.props) || (e.props.excludeTimes || e.props.includeTimes || e.props.filterTime) && t3(t, e.props) || e.props.onChange(t)
+          (e.props.minTime || e.props.maxTime) && t3(t, e.props) || (e.props.excludeTimes || e.props.includeTimes || e.props.filterTime) && t2(t, e.props) || e.props.onChange(t)
         }), tl(t_(e), "liClasses", function(t, n, r) {
           var i = ["react-datepicker__time-list-item", e.props.timeClassName ? e.props.timeClassName(t, n, r) : void 0];
-          return e.props.selected && n === eC.default(t) && r === eN.default(t) && i.push("react-datepicker__time-list-item--selected"), ((e.props.minTime || e.props.maxTime) && t2(t, e.props) || (e.props.excludeTimes || e.props.includeTimes || e.props.filterTime) && t3(t, e.props)) && i.push("react-datepicker__time-list-item--disabled"), e.props.injectTimes && (60 * eC.default(t) + eN.default(t)) % e.props.intervals != 0 && i.push("react-datepicker__time-list-item--injected"), i.join(" ")
+          return e.props.selected && n === eC.default(t) && r === eN.default(t) && i.push("react-datepicker__time-list-item--selected"), ((e.props.minTime || e.props.maxTime) && t3(t, e.props) || (e.props.excludeTimes || e.props.includeTimes || e.props.filterTime) && t2(t, e.props)) && i.push("react-datepicker__time-list-item--disabled"), e.props.injectTimes && (60 * eC.default(t) + eN.default(t)) % e.props.intervals != 0 && i.push("react-datepicker__time-list-item--injected"), i.join(" ")
         }), tl(t_(e), "handleOnKeyDown", function(t, n) {
           " " === t.key && (t.preventDefault(), t.key = "Enter"), "Enter" === t.key && e.handleClick(n), e.props.handleOnKeyDown(t)
         }), tl(t_(e), "renderTimes", function() {

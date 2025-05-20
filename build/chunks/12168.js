@@ -149,30 +149,32 @@ function D(e) {
     onExpandedToggle: p,
     emojiSearchProps: m,
     recentlyUsedEmojis: b,
-    analyticsOverride: S
-  } = e, A = (0, f.Dt)(), [D, L] = i.useState(!1), x = (0, _.wC)(t.guild_id), k = (0, s.uniqBy)([...x, ...P], "name").filter(e => !E.ZP.isEmojiFilteredOrLocked({
+    analyticsOverride: S,
+    ref: A
+  } = e, D = (0, f.Dt)(), [L, x] = i.useState(!1), k = (0, _.wC)(t.guild_id), M = (0, s.uniqBy)([...k, ...P], "name").filter(e => !E.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,
     intention: C
   })).slice(0, y.e5);
-  null != b && b.length > 0 && k.splice(k.length - 1, 1, b[0]);
-  let M = e => {
-      L(e), null == p || p(e)
+  null != b && b.length > 0 && M.splice(M.length - 1, 1, b[0]);
+  let j = e => {
+      x(e), null == p || p(e)
     },
-    j = (e, t) => {
+    U = (e, t) => {
       if (null == e && t) return void a();
-      null != e && u(e), M(!t), t && g.kJ.setSearchPlaceholder(null)
+      null != e && u(e), j(!t), t && g.kJ.setSearchPlaceholder(null)
     },
-    U = e => {
-      null != e && e.key !== v.vn.TAB && (e.key !== v.vn.ENTER || e.shiftKey ? M(!0) : M(!D))
+    G = e => {
+      null != e && e.key !== v.vn.TAB && (e.key !== v.vn.ENTER || e.shiftKey ? j(!0) : j(!L))
     };
   return (0, r.jsxs)(c.VqE, {
-    "aria-labelledby": A,
+    "aria-labelledby": D,
+    ref: A,
     children: [(0, r.jsx)(c.y5t, {
       forceLevel: 2,
       children: (0, r.jsx)(c.nn4, {
         children: (0, r.jsx)(c.H, {
-          id: A,
+          id: D,
           children: n
         })
       })
@@ -182,30 +184,30 @@ function D(e) {
         analyticsOverride: S,
         channel: t,
         className: o()(I.animatedPicker, {
-          [I.animatedPickerTall]: D
+          [I.animatedPickerTall]: L
         }),
         headerClassName: o()(I.emojiPickerHeader, {
-          [I.emojiPickerHeaderExpanded]: D
+          [I.emojiPickerHeaderExpanded]: L
         }),
         closePopout: a,
-        onSelectEmoji: D ? j : () => {},
-        shouldHidePickerActions: !D,
+        onSelectEmoji: L ? U : () => {},
+        shouldHidePickerActions: !L,
         wrapper: "div",
         pickerIntention: C,
         searchProps: N(T({}, m), {
           accessory: (0, r.jsx)(w, {
             otherAccessories: null == m ? void 0 : m.accessory,
-            isEmojiPickerExpanded: D,
-            onSetExpanded: M,
+            isEmojiPickerExpanded: L,
+            onSetExpanded: j,
             onFocus: l
           }),
-          onKeyDown: U
+          onKeyDown: G
         })
       }), (0, r.jsx)("div", {
         className: I.slotsContainer,
         children: (0, r.jsx)("div", {
           className: o()(I.slots, I.slotsWide),
-          children: k.map(e => {
+          children: M.map(e => {
             let n = E.ZP.isEmojiDisabled({
               emoji: e,
               channel: t,
@@ -223,7 +225,7 @@ function D(e) {
                   emoji: e,
                   isDisabled: n,
                   onClick: () => {
-                    n ? null == d || d(e) : j(e, !0)
+                    n ? null == d || d(e) : U(e, !0)
                   }
                 })
               })

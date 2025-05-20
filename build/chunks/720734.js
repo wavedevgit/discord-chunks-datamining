@@ -1008,11 +1008,10 @@ function tg(e) {
         "aria-checked": S,
         disabled: a
       }), G && (0, i.jsx)(_.yRy, {
-        targetElementRef: T,
+        targetElementRef: O,
         position: "top",
         align: "left",
         nudgeAlignIntoViewport: !1,
-        overridePositionRef: O,
         animation: _.yRy.Animation.FADE,
         useMouseEnter: !0,
         ignoreModalClicks: !0,

@@ -32,7 +32,6 @@ function d(e) {
     shouldShow: s,
     position: d,
     targetElementRef: _,
-    overridePositionRef: _,
     align: f,
     onRequestClose: l,
     renderPopout: e => {

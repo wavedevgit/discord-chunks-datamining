@@ -94,8 +94,8 @@ function O(e) {
   let Z = null != n,
     D = !Z,
     A = Z && null != a,
-    F = null == n && null != a,
-    R = (0, c.q_F)({
+    R = null == n && null != a,
+    F = (0, c.q_F)({
       opacity: +!!Z,
       height: 72 * !!Z,
       pointerEvents: Z ? "auto" : "none",
@@ -144,7 +144,7 @@ function O(e) {
         easing: x,
         duration: 200
       } : C,
-      delay: F ? 50 - 50 * e : 200 + 50 * e
+      delay: R ? 50 - 50 * e : 200 + 50 * e
     }), "respect-motion-settings", [n]),
     z = (0, c.Yzy)(null == O ? void 0 : O.iconURL, {
       key: k,
@@ -192,7 +192,7 @@ function O(e) {
         opacity: 0,
         translateX: 24 * (null != n),
         translateY: 16 * (null == n),
-        delay: F ? 100 : 50,
+        delay: R ? 100 : 50,
         config: e => "opacity" === e ? {
           easing: x,
           duration: 200
@@ -203,7 +203,7 @@ function O(e) {
   return (0, r.jsxs)(l.animated.div, {
     className: h.voiceFilterHero,
     "aria-hidden": D,
-    style: R,
+    style: F,
     children: [(0, r.jsx)("div", {
       className: o()([h.bgGradient, h.bgGradientHighlight])
     }), M(e => (0, r.jsx)(l.animated.div, {
