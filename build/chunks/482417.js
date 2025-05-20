@@ -19,9 +19,9 @@ function c(e) {
     {
       title: f,
       provider: b,
-      image_url: O
+      image_url: m
     } = d,
-    m = p.name,
+    O = p.name,
     y = {
       onClick: () => (0, l.o)(o.Hw.TRACK, d.external_id),
       ariaDescription: a.intl.formatToPlainString(a.t.xTsar6, {
@@ -31,7 +31,7 @@ function c(e) {
     j = {
       onClick: () => (0, l.o)(o.Hw.ARTIST, p.external_id),
       ariaDescription: a.intl.formatToPlainString(a.t.xTsar6, {
-        itemName: m
+        itemName: O
       })
     };
   return b === n.p.SPOTIFY && (c = {
@@ -55,8 +55,8 @@ function c(e) {
     return e
   }({}, u), r = r = {
     title: f,
-    subtitle: m,
-    thumbnailUrl: O,
+    subtitle: O,
+    thumbnailUrl: m,
     titleClickable: y,
     subtitleClickable: j,
     thumbnailClickable: y,

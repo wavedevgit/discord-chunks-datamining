@@ -1,7 +1,7 @@
 /** Chunk was on 30243 **/
 r.d(t, {
   Gt: () => b,
-  ZP: () => O
+  ZP: () => m
 }), r(388685);
 var n = r(255367),
   l = r(73800),
@@ -35,13 +35,13 @@ function b() {
   return e
 }
 
-function O(e) {
+function m(e) {
   let {
     components: t,
     accentColor: r,
     spoiler: i,
     renderComponents: d
-  } = e, [p, b] = l.useState(i), O = e => (0, n.jsx)(s.am.AutoMeasuredNestedContainer, {
+  } = e, [p, b] = l.useState(i), m = e => (0, n.jsx)(s.am.AutoMeasuredNestedContainer, {
     children: l => (0, n.jsx)("div", {
       ref: l,
       className: o()(u.container, {
@@ -61,6 +61,6 @@ function O(e) {
     reason: c.wk.SPOILER,
     obscured: p,
     onToggleObscurity: () => b(e => !e),
-    children: e => O(e)
-  }) : O(!1)
+    children: e => m(e)
+  }) : m(!1)
 }

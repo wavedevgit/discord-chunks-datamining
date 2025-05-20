@@ -1,6 +1,6 @@
 /** Chunk was on 36087 **/
 n.d(t, {
-  H: () => x
+  H: () => E
 }), n(953529);
 var r = n(255367);
 n(73800);
@@ -20,12 +20,12 @@ var i = n(399606),
   _ = n(226060),
   b = n(981631);
 
-function x(e) {
+function E(e) {
   let {
     guildProductListing: t,
     guildId: n,
-    location: x,
-    shouldShowFullDescriptionButton: E = !0,
+    location: E,
+    shouldShowFullDescriptionButton: x = !0,
     hideRoleTag: y = !1,
     lineClamp: v = 1,
     cardWidth: O,
@@ -43,7 +43,7 @@ function x(e) {
   let k = () => (0, g.e)({
       guildId: n,
       guildProductListingId: t.id,
-      analyticsLocation: x
+      analyticsLocation: E
     }),
     D = (0, r.jsx)(h.m, {
       product: t,
@@ -78,10 +78,10 @@ function x(e) {
     ctaComponent: (0, r.jsx)(_.Z, {
       guildId: n,
       guildProductListingId: t.id,
-      sourceAnalyticsLocations: x
+      sourceAnalyticsLocations: E
     }),
     productType: A,
-    shouldShowFullDescriptionButton: E,
+    shouldShowFullDescriptionButton: x,
     onShowFullDescription: k,
     onTapCard: k,
     actionMenu: D,

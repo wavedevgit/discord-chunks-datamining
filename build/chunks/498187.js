@@ -1,6 +1,6 @@
 /** Chunk was on 30243 **/
 r.d(t, {
-  Z: () => O
+  Z: () => m
 });
 var n = r(876215),
   l = r(758713),
@@ -20,15 +20,15 @@ let f = {
     [u._.EMBED]: o.m1.Embed
   };
 
-function O(e) {
+function m(e) {
   var t, r;
   let l, o, {
       entry: s,
       location: u,
-      baseEntryData: O
+      baseEntryData: m
     } = e,
-    m = (0, i.q)(s.extra.application_id),
-    y = null == m ? void 0 : m.getIconURL(d.Si.LARGE),
+    O = (0, i.q)(s.extra.application_id),
+    y = null == O ? void 0 : O.getIconURL(d.Si.LARGE),
     j = s.extra.game_name;
   if (null != s.extra.platform) {
     let e = f[s.extra.platform];
@@ -67,7 +67,7 @@ function O(e) {
       })
     }
     return e
-  }({}, O), r = r = {
+  }({}, m), r = r = {
     thumbnailUrl: y,
     title: j,
     titleClickable: h,

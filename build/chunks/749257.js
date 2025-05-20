@@ -19,7 +19,7 @@ var r = n(255367),
   _ = n(388032),
   b = n(564965);
 
-function x(e) {
+function E(e) {
   let {
     actions: t
   } = e, n = [
@@ -89,30 +89,30 @@ function x(e) {
   })
 }
 
-function E(e) {
+function x(e) {
   let {
     channel: t,
     message: n,
     snapshot: i
   } = e, {
     moderatorReport: a
-  } = i, _ = null == a ? void 0 : a.reported_user_id, E = (0, l.e7)([d.default], () => null != _ ? d.default.getUser(_) : null), y = (0, l.e7)([u.Z], () => u.Z.getGuild(t.guild_id)), v = (0, l.e7)([c.ZP], () => null != E ? c.ZP.getMember(t.guild_id, null == E ? void 0 : E.id) : null), O = function(e, t, n) {
+  } = i, _ = null == a ? void 0 : a.reported_user_id, x = (0, l.e7)([d.default], () => null != _ ? d.default.getUser(_) : null), y = (0, l.e7)([u.Z], () => u.Z.getGuild(t.guild_id)), v = (0, l.e7)([c.ZP], () => null != x ? c.ZP.getMember(t.guild_id, null == x ? void 0 : x.id) : null), O = function(e, t, n) {
     let r = new Set;
     return null != e && null != t && (0, s.CX)(e, t) && r.add("delete"), null != e && (0, s.mm)(e, t) && r.add("ban"), null != e && null != t && (0, s.BK)(e, t) && r.add("kick"), null != e && null != n && null != t && (0, o.F)(t.id, e.id) && r.add("timeout"), r
-  }(E, y, v);
+  }(x, y, v);
   (0, p.Cv)(n, O.size > 0);
   let j = O.size <= 3 ? O.size : 2,
     C = new Set(Array.from(O).slice(0, j)),
     S = new Set(Array.from(O).slice(j)),
     I = (0, m.Z)({
       channel: t,
-      user: E,
+      user: x,
       member: v,
       inline: C.has("ban")
     }),
     N = (0, h.Z)({
       channel: t,
-      user: E,
+      user: x,
       member: v,
       inline: C.has("kick")
     }),
@@ -124,14 +124,14 @@ function E(e) {
       }),
       timeout: (0, g.Z)({
         channel: t,
-        user: E,
+        user: x,
         inline: C.has("timeout")
       }),
       kick: N
     };
   return t.isModeratorReportChannel() && 0 !== O.size ? (0, r.jsxs)("div", {
     className: b.container,
-    children: [Array.from(C).map(e => T[e]), S.size > 0 ? (0, r.jsx)(x, {
+    children: [Array.from(C).map(e => T[e]), S.size > 0 ? (0, r.jsx)(E, {
       actions: Array.from(S).map(e => T[e])
     }) : null]
   }) : null
@@ -143,7 +143,7 @@ function y(e) {
     channel: n
   } = e;
   return (0, r.jsx)(r.Fragment, {
-    children: t.messageSnapshots.map((e, i) => (0, r.jsx)(E, {
+    children: t.messageSnapshots.map((e, i) => (0, r.jsx)(x, {
       channel: n,
       message: t,
       snapshot: e

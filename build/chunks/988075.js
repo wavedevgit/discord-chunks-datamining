@@ -1,6 +1,6 @@
 /** Chunk was on 30243 **/
 r.d(t, {
-  Z: () => O
+  Z: () => m
 }), r(35282), r(388685);
 var n = r(255367),
   l = r(73800),
@@ -15,20 +15,20 @@ var n = r(255367),
   f = r(388032),
   b = r(823670);
 
-function O(e) {
+function m(e) {
   let {
     file: t,
     name: r,
     size: i,
-    spoiler: O
-  } = e, m = (0, a.e7)([p.Z], () => p.Z.getChannelId()), y = l.useMemo(() => null != t.contentType && -1 !== t.contentType.indexOf("/") ? t.contentType.split("/") : ["unknown", "unknown"], [t.contentType]), [j, g] = l.useState(O), h = l.useMemo(() => () => (0, n.jsx)(d.mz, {
+    spoiler: m
+  } = e, O = (0, a.e7)([p.Z], () => p.Z.getChannelId()), y = l.useMemo(() => null != t.contentType && -1 !== t.contentType.indexOf("/") ? t.contentType.split("/") : ["unknown", "unknown"], [t.contentType]), [j, g] = l.useState(m), h = l.useMemo(() => () => (0, n.jsx)(d.mz, {
     mimeType: y,
     downloadURL: t.url,
     showDownload: !0,
     showImageAppPicker: !1,
     isVisualMediaType: !1,
-    channelId: m
-  }), [t, y, m]), v = e => (0, n.jsx)(c.Z, {
+    channelId: O
+  }), [t, y, O]), v = e => (0, n.jsx)(c.Z, {
     className: o()({
       [b.fileHidden]: e
     }),
@@ -39,7 +39,7 @@ function O(e) {
   });
   return (0, n.jsx)("div", {
     className: b.fileDisplayContainer,
-    children: O ? (0, n.jsx)(s.ZP, {
+    children: m ? (0, n.jsx)(s.ZP, {
       type: s.ZP.Types.ATTACHMENT,
       reason: u.wk.SPOILER,
       obscured: j,

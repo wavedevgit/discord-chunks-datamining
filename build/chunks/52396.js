@@ -16,7 +16,7 @@ var n = r(255367),
   f = r(301419),
   b = r(397035);
 
-function O(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -35,7 +35,7 @@ function O(e) {
   return e
 }
 
-function m(e, t) {
+function O(e, t) {
   if (null == e) return {};
   var r, n, l = function(e, t) {
     if (null == e) return {};
@@ -60,8 +60,8 @@ function j() {
 function g(e) {
   var {
     entry: t
-  } = e, r = m(e, ["entry"]);
-  let l = O({
+  } = e, r = O(e, ["entry"]);
+  let l = m({
     baseEntryData: (0, u.Z)({
       entry: t,
       channel: r.channel
@@ -69,27 +69,27 @@ function g(e) {
   }, r);
   switch (t.content_type) {
     case a.s.TOP_ARTIST:
-      return (0, n.jsx)(P, O({
+      return (0, n.jsx)(P, m({
         entry: t
       }, l));
     case a.s.TOP_GAME:
-      return (0, n.jsx)(x, O({
+      return (0, n.jsx)(x, m({
         entry: t
       }, l));
     case a.s.PLAYED_GAME:
-      return (0, n.jsx)(S, O({
+      return (0, n.jsx)(S, m({
         entry: t
       }, l));
     case a.s.WATCHED_MEDIA:
-      return (0, n.jsx)(w, O({
+      return (0, n.jsx)(w, m({
         entry: t
       }, l));
     case a.s.LISTENED_SESSION:
-      return (0, n.jsx)(C, O({
+      return (0, n.jsx)(C, m({
         entry: t
       }, l));
     case a.s.LAUNCHED_ACTIVITY:
-      return (0, n.jsx)(v, O({
+      return (0, n.jsx)(v, m({
         entry: t
       }, l));
     default:
@@ -100,10 +100,10 @@ function g(e) {
 function h(e) {
   var {
     errorFallback: t
-  } = e, r = m(e, ["errorFallback"]);
+  } = e, r = O(e, ["errorFallback"]);
   return (0, n.jsx)(c.S, {
     fallback: t,
-    children: (0, n.jsx)(g, O({}, r))
+    children: (0, n.jsx)(g, m({}, r))
   })
 }
 
@@ -111,12 +111,12 @@ function v(e) {
   var {
     entry: t,
     children: r
-  } = e, l = m(e, ["entry", "children"]);
-  let i = (0, s.Z)(O({
+  } = e, l = O(e, ["entry", "children"]);
+  let i = (0, s.Z)(m({
     entry: t
   }, l));
   return (0, n.jsx)(y.Provider, {
-    value: O({
+    value: m({
       parsedEntry: i
     }, l),
     children: r
@@ -127,12 +127,12 @@ function P(e) {
   var {
     entry: t,
     children: r
-  } = e, l = m(e, ["entry", "children"]);
-  let i = (0, f.Z)(O({
+  } = e, l = O(e, ["entry", "children"]);
+  let i = (0, f.Z)(m({
     entry: t
   }, l));
   return (0, n.jsx)(y.Provider, {
-    value: O({
+    value: m({
       parsedEntry: i
     }, l),
     children: r
@@ -143,12 +143,12 @@ function x(e) {
   var {
     entry: t,
     children: r
-  } = e, l = m(e, ["entry", "children"]);
-  let i = (0, d.Z)(O({
+  } = e, l = O(e, ["entry", "children"]);
+  let i = (0, d.Z)(m({
     entry: t
   }, l));
   return (0, n.jsx)(y.Provider, {
-    value: O({
+    value: m({
       parsedEntry: i
     }, l),
     children: r
@@ -159,12 +159,12 @@ function S(e) {
   var {
     entry: t,
     children: r
-  } = e, l = m(e, ["entry", "children"]);
-  let i = (0, d.Z)(O({
+  } = e, l = O(e, ["entry", "children"]);
+  let i = (0, d.Z)(m({
     entry: t
   }, l));
   return (0, n.jsx)(y.Provider, {
-    value: O({
+    value: m({
       parsedEntry: i
     }, l),
     children: r
@@ -175,12 +175,12 @@ function w(e) {
   var {
     entry: t,
     children: r
-  } = e, l = m(e, ["entry", "children"]);
-  let i = (0, b.Z)(O({
+  } = e, l = O(e, ["entry", "children"]);
+  let i = (0, b.Z)(m({
     entry: t
   }, l));
   return (0, n.jsx)(y.Provider, {
-    value: O({
+    value: m({
       parsedEntry: i
     }, l),
     children: r
@@ -191,12 +191,12 @@ function C(e) {
   var {
     entry: t,
     children: r
-  } = e, l = m(e, ["entry", "children"]);
-  let i = (0, p.Z)(O({
+  } = e, l = O(e, ["entry", "children"]);
+  let i = (0, p.Z)(m({
     entry: t
   }, l));
   return (0, n.jsx)(y.Provider, {
-    value: O({
+    value: m({
       parsedEntry: i
     }, l),
     children: r

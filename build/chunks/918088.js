@@ -21,8 +21,8 @@ var r = n(278074),
   g = n(358085),
   _ = n(798628),
   b = n(79390),
-  x = n(839963),
-  E = n(897325),
+  E = n(839963),
+  x = n(897325),
   y = n(57101),
   v = n(562293),
   O = n(981631),
@@ -83,8 +83,8 @@ function T(e, t) {
     {
       selectedAnswerIds: g,
       submitting: b,
-      editing: x,
-      showResults: E
+      editing: E,
+      showResults: x
     } = null != (i = null != t ? t : (0, _.fU)(e.getChannelId(), e.id)) ? i : C,
     y = e.reactions,
     j = !0;
@@ -94,9 +94,9 @@ function T(e, t) {
   }
   let S = g.size > 0,
     I = y.some(e => !0 === e.me_vote),
-    T = !x && I,
-    P = T || h || E,
-    A = m && j && (!I || x || P),
+    T = !E && I,
+    P = T || h || x,
+    A = m && j && (!I || E || P),
     w = null == (r = u.Z.getChannel(e.getChannelId())) || null == (n = r.getGuildId) ? void 0 : n.call(r),
     Z = null != w ? d.ZP.getSelfMember(w) : null,
     R = (0, s.EY)(Z),
@@ -112,7 +112,7 @@ function T(e, t) {
     hasSelectedAnswer: S,
     hasVoted: T,
     hasVoteRecorded: I,
-    isEditingVote: x,
+    isEditingVote: E,
     isExpired: h,
     isInteractive: j,
     isSent: m,
@@ -120,7 +120,7 @@ function T(e, t) {
     selectedAnswerIds: g,
     submitting: b,
     tapShouldOpenVotersModal: P,
-    showResults: E
+    showResults: x
   }
 }
 
@@ -138,7 +138,7 @@ function P(e, t) {
   if (null == v) return;
   let O = l.Z.useReducedMotion,
     C = null == (s = u.Z.getChannel(e.getChannelId())) || null == (n = s.getGuildId) ? void 0 : n.call(s),
-    N = (0, E.E)(v, C),
+    N = (0, x.E)(v, C),
     P = _.answers,
     A = _.layout_type,
     w = T(e, t, {
@@ -317,13 +317,13 @@ function P(e, t) {
       canSelectMultipleAnswers: en
     }).with({
       tapShouldOpenVotersModal: !0
-    }, () => x.Y7.LIST).with({
+    }, () => E.Y7.LIST).with({
       canTapAnswers: !1
-    }, () => x.Y7.LIST).with({
+    }, () => E.Y7.LIST).with({
       canSelectMultipleAnswers: !1
-    }, () => x.Y7.RADIO_BUTTONS).with({
+    }, () => E.Y7.RADIO_BUTTONS).with({
       canSelectMultipleAnswers: !0
-    }, () => x.Y7.CHECKBOXES).exhaustive(),
+    }, () => E.Y7.CHECKBOXES).exhaustive(),
     answerTapAccessibilityLabel: W ? $ : void 0,
     layoutType: A,
     resources: (0, y.Z)({

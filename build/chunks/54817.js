@@ -25,8 +25,8 @@ function g(e) {
   } = e, g = (0, s.ZP)(t), _ = i(g), {
     avatarSrc: b,
     eventHandlers: {
-      onMouseEnter: x,
-      onMouseLeave: E
+      onMouseEnter: E,
+      onMouseLeave: x
     }
   } = (0, u.m)(!0), y = "" !== t.content ? new Date(t.content).toLocaleString(f.intl.currentLocale, {
     hour: "numeric",
@@ -36,8 +36,8 @@ function g(e) {
     year: "numeric"
   }) : "";
   return (0, r.jsx)("div", {
-    onMouseEnter: x,
-    onMouseLeave: E,
+    onMouseEnter: E,
+    onMouseLeave: x,
     children: (0, r.jsx)(d.Z, {
       className: l()(h.mainContainer, {
         [h.compact]: n

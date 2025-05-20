@@ -18,8 +18,8 @@ function d(e) {
       baseEntryData: f
     } = e,
     b = (0, l.q)(p.extra.application_id),
-    O = null == b ? void 0 : b.getIconURL(128),
-    m = (0, i.xF)(p.extra.application_id, p.extra.media_assets_large_image, [s.Si.LARGE, s.Si.LARGE]),
+    m = null == b ? void 0 : b.getIconURL(128),
+    O = (0, i.xF)(p.extra.application_id, p.extra.media_assets_large_image, [s.Si.LARGE, s.Si.LARGE]),
     y = p.extra.media_title,
     j = p.extra.media_subtitle,
     g = (0, a.Jg)(p) ? u.t["LH+Z39"] : u.t.YuKgmp,
@@ -54,7 +54,7 @@ function d(e) {
     }
     return e
   }({}, f), r = r = {
-    thumbnailUrl: null != m ? m : O,
+    thumbnailUrl: null != O ? O : m,
     title: y,
     titleClickable: d,
     thumbnailClickable: d,

@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(566620),
   _ = n(403404),
   b = n(100527),
-  x = n(906732),
-  E = n(783097),
+  E = n(906732),
+  x = n(783097),
   y = n(581364),
   v = n(592180),
   O = n(726033),
@@ -101,8 +101,8 @@ function U(e, t, n, i, l, o) {
     isInteractionUserIgnored: g,
     showAvatarPopout: _,
     showTargetAvatarPopout: b,
-    onClickAvatar: x,
-    onUserContextMenu: E,
+    onClickAvatar: E,
+    onUserContextMenu: x,
     onClickTargetAvatar: y,
     onTargetUserContextMenu: v,
     onPopoutRequestClose: O
@@ -145,8 +145,8 @@ function U(e, t, n, i, l, o) {
       user: t,
       guildId: f.guild_id,
       guildAvatar: j,
-      onClick: 1 === n ? y : x,
-      onContextMenu: 1 === n ? v : E,
+      onClick: 1 === n ? y : E,
+      onContextMenu: 1 === n ? v : x,
       ref: o
     }),
     I = 1 === n ? b : _;
@@ -211,7 +211,7 @@ function H(e) {
     } = e,
     {
       analyticsLocations: c
-    } = (0, x.ZP)(b.Z.EXECUTED_COMMAND),
+    } = (0, E.ZP)(b.Z.EXECUTED_COMMAND),
     f = (0, d.e7)([C.default], () => C.default.getCurrentUser()),
     S = i.useRef(null),
     P = i.useRef(null),
@@ -302,7 +302,7 @@ function H(e) {
               children: c
             });
             {
-              let e = (0, E.XZ)(c);
+              let e = (0, x.XZ)(c);
               return (0, r.jsx)(p.P3F, L(D({}, i), {
                 tag: "span",
                 onClick: () => {
@@ -366,7 +366,7 @@ function H(e) {
       userHook: J
     })
   }
-  return (0, r.jsx)(x.Gt, {
+  return (0, r.jsx)(E.Gt, {
     value: c,
     children: (0, r.jsx)("div", {
       className: a()(k.repliedMessage, k.messageSpine, k.executedCommand, X),

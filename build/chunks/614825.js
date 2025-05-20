@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(594174),
   _ = n(78839),
   b = n(55935),
-  x = n(63063),
-  E = n(74538),
+  E = n(63063),
+  x = n(74538),
   y = n(276444),
   v = n(93237),
   O = n(786397),
@@ -68,7 +68,7 @@ class P extends i.Component {
       trialOffer: r
     } = this.props;
     return e && !n && void 0 === r.redeemed_at ? S.intl.format(S.t.LwCwT0, {
-      helpdeskArticle: x.Z.getArticleURL(C.BhN.REFERRAL_PROGRAM)
+      helpdeskArticle: E.Z.getArticleURL(C.BhN.REFERRAL_PROGRAM)
     }) : t ? null : S.intl.string(S.t.lQLlOT)
   }
   renderActions(e, t, n) {
@@ -82,7 +82,7 @@ class P extends i.Component {
         this.handleStartTrial(a, s)
       },
       color: d.zxk.Colors.BRAND
-    }, u = o.id !== a.user_id || (0, E.I5)(o) || !o.verified || (0, O.B)(a), p = this.renderExpirationDate(e, t, n);
+    }, u = o.id !== a.user_id || (0, x.I5)(o) || !o.verified || (0, O.B)(a), p = this.renderExpirationDate(e, t, n);
     return c.disabled = u, (0, r.jsxs)("div", {
       className: I.buttonContainer,
       children: [(0, r.jsx)("div", {
@@ -181,7 +181,7 @@ function A(e) {
   } = (0, u.cj)([y.Z], () => ({
     trialOffer: n ? y.Z.getRelevantUserTrialOffer(t) : null,
     isResolving: !!n && y.Z.isResolving(t)
-  }), [n, t]), a = g.default.getCurrentUser(), o = (0, u.e7)([g.default], () => null != i && (0, E.I5)(void 0 !== a && i.user_id === a.id ? a : g.default.getUser(i.user_id))), s = (0, u.e7)([_.ZP], () => {
+  }), [n, t]), a = g.default.getCurrentUser(), o = (0, u.e7)([g.default], () => null != i && (0, x.I5)(void 0 !== a && i.user_id === a.id ? a : g.default.getUser(i.user_id))), s = (0, u.e7)([_.ZP], () => {
     var e;
     return o ? null == (e = _.ZP.getPremiumTypeSubscription()) ? void 0 : e.trialEndsAt : null
   }), {

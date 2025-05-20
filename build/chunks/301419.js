@@ -25,7 +25,7 @@ function c(e) {
         itemName: s.extra.media.parent_title
       })
     },
-    O = {
+    m = {
       onClick: () => (0, l.o)(o.Hw.ARTIST, s.extra.artist.external_id),
       ariaDescription: a.intl.formatToPlainString(a.t.xTsar6, {
         itemName: f
@@ -53,7 +53,7 @@ function c(e) {
   }({}, u), r = r = {
     title: f,
     thumbnailUrl: p,
-    titleClickable: O,
+    titleClickable: m,
     subtitleClickable: b,
     thumbnailClickable: b,
     userDescription: a.t.CcVI1d,

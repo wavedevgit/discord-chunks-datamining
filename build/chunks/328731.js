@@ -14,9 +14,9 @@ var n = r(255367),
   p = r(91907),
   f = r(866040),
   b = r(388032),
-  O = r(103395);
+  m = r(103395);
 
-function m(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -61,15 +61,15 @@ function j(e) {
     orderedParticipants: S
   } = (0, u.Z)(t), w = [v, P];
   return (0, n.jsxs)("div", {
-    className: o()(O.container, i),
+    className: o()(m.container, i),
     children: [h.length > 0 ? (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsx)(f.Z, {
         targetElementRef: j,
         participants: S,
         channel: r,
-        children: e => (0, n.jsx)(a.P3F, y(m({
+        children: e => (0, n.jsx)(a.P3F, y(O({
           innerRef: j,
-          className: O.clickable
+          className: m.clickable
         }, e), {
           children: (0, n.jsx)(c.Z, {
             maxUsers: 3,
@@ -86,7 +86,7 @@ function j(e) {
     }) : null, (0, n.jsx)(a.X6q, {
       variant: "text-sm/semibold",
       color: "text-secondary",
-      className: o()(O.truncatedText, O.usersHeader),
+      className: o()(m.truncatedText, m.usersHeader),
       scaleFontToUserSetting: !0,
       children: b.intl.format(b.t.rH95Gh, {
         user0: s.ZP.getName(r.guild_id, r.id, w[0]),
@@ -106,7 +106,7 @@ function j(e) {
           targetElementRef: g,
           participants: S,
           channel: r,
-          children: t => (0, n.jsx)(d.Z, y(m({}, t), {
+          children: t => (0, n.jsx)(d.Z, y(O({}, t), {
             tag: "span",
             children: (0, n.jsx)(a.Text, {
               ref: g,

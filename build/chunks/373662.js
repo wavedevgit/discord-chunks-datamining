@@ -58,8 +58,8 @@ let h = i.forwardRef(function(e, t) {
     icon: g,
     iconProps: _,
     onClick: b,
-    onTooltipShow: x,
-    onTooltipHide: E,
+    onTooltipShow: E,
+    onTooltipHide: x,
     disabled: y,
     dangerous: v,
     separator: O,
@@ -83,8 +83,8 @@ let h = i.forwardRef(function(e, t) {
     text: null != l ? l : n,
     color: null != h ? h : o.FGA.PRIMARY,
     "aria-label": n,
-    onTooltipShow: x,
-    onTooltipHide: E,
+    onTooltipShow: E,
+    onTooltipHide: x,
     hideOnClick: !0,
     tooltipClassName: p.tooltip,
     children: e => {
@@ -92,7 +92,7 @@ let h = i.forwardRef(function(e, t) {
       let {
         onMouseEnter: f,
         onMouseLeave: h,
-        onClick: x
+        onClick: E
       } = e;
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)(c.zx, (l = m({
@@ -103,7 +103,7 @@ let h = i.forwardRef(function(e, t) {
           onMouseEnter: f,
           onMouseLeave: h,
           onClick: e => {
-            null == x || x(), b(e)
+            null == E || E(), b(e)
           },
           "aria-label": null != i ? i : n,
           disabled: y,

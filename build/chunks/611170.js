@@ -66,7 +66,8 @@ function u(e) {
     sourceMetadata: {
       message: e.message
     },
-    analyticsSource: "renderImageComponentForGalleryItem"
+    analyticsSource: "renderImageComponentForGalleryItem",
+    srcIsAnimated: e.item.srcIsAnimated
   }))
 }
 

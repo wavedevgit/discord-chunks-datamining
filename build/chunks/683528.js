@@ -25,7 +25,7 @@ function g(e) {
   return "IMAGE" === e.type ? (0, u.q)({
     proxyURL: e.proxyUrl,
     url: e.url
-  }) : "VIDEO" === e.type && null != e.proxyUrl ? (0, d.D)(e.proxyUrl) : null
+  }) : "VIDEO" === e.type && null != e.proxyUrl ? (0, d.Dt)(e.proxyUrl) : null
 }
 
 function E(e) {

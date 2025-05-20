@@ -40,10 +40,10 @@ function b(e) {
     renderComponents: l
   } = e, {
     message: b
-  } = (0, c.CJ)(), [O, m] = (0, s.e4)(), y = (0, s.$Y)(m), j = r.type === o.re.BUTTON;
+  } = (0, c.CJ)(), [m, O] = (0, s.e4)(), y = (0, s.$Y)(O), j = r.type === o.re.BUTTON;
   return (0, n.jsxs)("div", {
     className: p.section,
-    ref: O,
+    ref: m,
     children: [(0, n.jsxs)("div", {
       className: p.children,
       children: [(0, n.jsx)("div", {

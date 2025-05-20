@@ -3,10 +3,11 @@
 n.d(t, {
   Cb: () => f,
   Hv: () => y,
-  JD: () => E,
-  VY: () => h,
-  y_: () => b,
-  ym: () => p
+  JD: () => b,
+  VY: () => m,
+  hR: () => p,
+  hg: () => g,
+  ym: () => h
 }), n(997841), n(953529);
 var r = n(911969),
   i = n(406432),
@@ -62,8 +63,11 @@ function _(e) {
     flags: e.flags
   }
 }
+var p = function(e) {
+  return e[e.IS_ANIMATED = 1] = "IS_ANIMATED", e
+}({});
 
-function p(e) {
+function h(e) {
   var t;
   return {
     url: e.url,
@@ -75,14 +79,16 @@ function p(e) {
     contentType: e.content_type,
     loadingState: e.loading_state,
     contentScanMetadata: null != e.content_scan_metadata ? _(e.content_scan_metadata) : void 0,
-    srcIsAnimated: (0, o.yE)(null != (t = e.flags) ? t : 0, s.J0y.IS_ANIMATED)
+    flags: null != (t = e.flags) ? t : 0
   }
 }
 
-function h(e) {
+function m(e) {
   var t, n;
   let i = 0;
-  return (0, o.yE)(null != (t = e.flags) ? t : 0, s.J0y.CONTAINS_EXPLICIT_MEDIA) && (i += 1), {
+  (0, o.yE)(null != (t = e.flags) ? t : 0, s.J0y.CONTAINS_EXPLICIT_MEDIA) && (i |= 1);
+  let a = 0;
+  return (0, o.yE)(null != (n = e.flags) ? n : 0, s.J0y.IS_ANIMATED) && (a |= 1), {
     url: e.url,
     proxyUrl: e.proxy_url,
     height: e.height,
@@ -95,21 +101,21 @@ function h(e) {
       version: e.content_scan_version,
       flags: i
     },
-    srcIsAnimated: (0, o.yE)(null != (n = e.flags) ? n : 0, s.J0y.IS_ANIMATED)
+    flags: a
   }
 }
 
-function m(e) {
+function g(e) {
   return (0, i.tw)(e.contentType) ? "IMAGE" : (0, i.X2)(e.contentType) && null != e.proxyUrl && null != a.Z.toURLSafe(e.proxyUrl) ? "VIDEO" : "INVALID"
 }
 
-function g(e) {
+function E(e) {
   return (0, i.CO)(e.filename) ? "IMAGE" : (0, i.NU)(e.filename) ? "VIDEO" : "INVALID"
 }
 
-function E(e, t) {
-  return d(c({}, h(e)), {
-    type: g(e),
+function b(e, t) {
+  return d(c({}, m(e)), {
+    type: E(e),
     alt: e.description,
     sourceMetadata: {
       message: t,
@@ -120,15 +126,6 @@ function E(e, t) {
         title: e.title,
         size: e.size
       }
-    }
-  })
-}
-
-function b(e, t) {
-  return d(c({}, e), {
-    type: m(e),
-    sourceMetadata: {
-      message: t
     }
   })
 }

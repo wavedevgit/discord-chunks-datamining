@@ -1,42 +1,44 @@
 /** Chunk was on 30243 **/
 r.d(t, {
-  Z: () => O
-}), r(953529), r(388685);
+  Z: () => y
+}), r(953529), r(997841), r(388685);
 var n = r(255367),
   l = r(73800),
   i = r(120356),
   o = r.n(i),
   a = r(95398),
-  c = r(169525),
-  s = r(499376),
-  u = r(128854),
-  d = r(524444),
-  p = r(295435),
-  f = r(217702),
-  b = r(583760);
+  c = r(768494),
+  s = r(169525),
+  u = r(499376),
+  d = r(128854),
+  p = r(524444),
+  f = r(630388),
+  b = r(295435),
+  m = r(217702),
+  O = r(583760);
 
-function O(e) {
+function y(e) {
   let {
     media: t,
     spoiler: r,
     description: i
-  } = e, O = (0, s.pU)(t), {
-    gifAutoPlay: m
-  } = (0, u.c)(), [y, j] = l.useState(r), g = e => {
+  } = e, y = (0, u.pU)(t), j = (0, f.yE)(t.flags, c.hR.IS_ANIMATED), {
+    gifAutoPlay: g
+  } = (0, d.c)(), [h, v] = l.useState(r), P = e => {
     var r, l;
-    return "IMAGE" !== O ? (0, n.jsx)(p.S, {
-      className: b.imgContainer,
+    return "IMAGE" !== y ? (0, n.jsx)(b.S, {
+      className: O.imgContainer,
       media: t,
       placeholderWidth: 85,
       placeholderHeight: 85,
       maxWidth: 85,
       maxHeight: 85,
       hiddenSpoilers: e
-    }) : (0, n.jsx)(d.Yi, {
-      containerClassName: o()(b.imgContainer, {
-        [b.hiddenSpoiler]: e
+    }) : (0, n.jsx)(p.Yi, {
+      containerClassName: o()(O.imgContainer, {
+        [O.hiddenSpoiler]: e
       }),
-      imageClassName: b.img,
+      imageClassName: O.img,
       src: t.proxyUrl,
       alt: i,
       original: t.url,
@@ -49,16 +51,17 @@ function O(e) {
       maxHeight: 170,
       minWidth: 85,
       minHeight: 85,
-      autoPlay: m && !e,
-      mediaLayoutType: f.hV.MOSAIC,
-      reducedSizeAltTextButton: !0
+      autoPlay: g && !e,
+      mediaLayoutType: m.hV.MOSAIC,
+      reducedSizeAltTextButton: !0,
+      srcIsAnimated: j
     })
   };
   return r ? (0, n.jsx)(a.ZP, {
     type: a.ZP.Types.ATTACHMENT,
-    reason: c.wk.SPOILER,
-    obscured: y,
-    onToggleObscurity: () => j(e => !e),
-    children: e => g(e)
-  }) : g(!1)
+    reason: s.wk.SPOILER,
+    obscured: h,
+    onToggleObscurity: () => v(e => !e),
+    children: e => P(e)
+  }) : P(!1)
 }

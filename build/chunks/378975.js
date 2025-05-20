@@ -15,7 +15,7 @@ var n = r(255367),
   f = r(388032),
   b = r(950386);
 
-function O(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -34,7 +34,7 @@ function O(e) {
   return e
 }
 
-function m(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -144,7 +144,7 @@ function h(e) {
   } = (0, d.Ee)(e, {
     type: t,
     values: P
-  }), N = c > 1, I = w === p.gH.LOADING, [T, k] = l.useState(!1), [Z, L] = l.useState(() => new Set(r.filter(e => e.default).map(e => e.value))), [D, R] = l.useState(Z), _ = l.useMemo(() => r.some(e => null != e.emoji), [r]);
+  }), N = c > 1, I = w === p.gH.LOADING, [T, k] = l.useState(!1), [Z, L] = l.useState(() => new Set(r.filter(e => e.default).map(e => e.value))), [D, R] = l.useState(Z), A = l.useMemo(() => r.some(e => null != e.emoji), [r]);
   l.useEffect(() => {
     if ((null == x ? void 0 : x.type) === s.re.STRING_SELECT) {
       let e = new Set(x.values);
@@ -154,15 +154,15 @@ function h(e) {
       L(e), R(e)
     }
   }, [i, P, x]);
-  let A = l.useCallback(() => {
+  let _ = l.useCallback(() => {
     D !== Z && S({
       type: s.re.STRING_SELECT,
       values: Array.from(Z)
     }) && R(Z)
   }, [Z, D, R, S]);
   l.useEffect(() => {
-    !T && (Z.size === D.size && Array.from(D).every(e => Z.has(e)) || A())
-  }, [T, Z, D, A]);
+    !T && (Z.size === D.size && Array.from(D).every(e => Z.has(e)) || _())
+  }, [T, Z, D, _]);
   let M = a.UNb;
   N ? M = a.gzz : 0 === h && (M = a.s6k);
   let U = (0, a.cYr)({
@@ -173,11 +173,11 @@ function h(e) {
   return (0, n.jsxs)(l.Fragment, {
     children: [(0, n.jsx)("div", {
       className: b.container,
-      children: (0, n.jsx)(a.PhF, O({
+      children: (0, n.jsx)(a.PhF, m({
         isProcessing: I,
         isDisabled: v || w === p.gH.DISABLED || C,
         className: b.select,
-        options: r.map(e => m(O({}, e), {
+        options: r.map(e => O(m({}, e), {
           disabled: N && !Z.has(e.value) && Z.size === c
         })),
         placeholder: null != o ? o : f.intl.string(f.t.Otr6W1),
@@ -186,15 +186,15 @@ function h(e) {
         maxVisibleItems: 5,
         closeOnSelect: !N,
         optionClassName: b.selectOption,
-        renderOptionLabel: e => (0, n.jsx)(y, m(O({}, e), {
+        renderOptionLabel: e => (0, n.jsx)(y, O(m({}, e), {
           isDisabled: N && !Z.has(e.value) && Z.size === c,
-          isOffset: _
+          isOffset: A
         })),
         renderOptionValue: e => N ? (0, n.jsx)(g, {
           options: e
-        }) : (0, n.jsx)(j, O({}, e[0]))
+        }) : (0, n.jsx)(j, m({}, e[0]))
       }, U))
-    }), null != E ? (0, n.jsx)(u.st, m(O({}, (0, u.c4)(E)), {
+    }), null != E ? (0, n.jsx)(u.st, O(m({}, (0, u.c4)(E)), {
       className: b.error
     })) : null]
   })

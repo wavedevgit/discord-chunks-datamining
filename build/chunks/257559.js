@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(594174),
   _ = n(630388),
   b = n(970257),
-  x = n(981631),
-  E = n(388032),
+  E = n(981631),
+  x = n(388032),
   y = n(739788);
 
 function v(e, t, n) {
@@ -82,28 +82,28 @@ class C extends i.PureComponent {
         }
         return i
       }(i, ["channel", "message", "showContextMenuHint"]),
-      u = l.type === x.d4z.GUILD_ANNOUNCEMENT && (0, _.yE)(a.flags, x.iLy.CROSSPOSTED);
+      u = l.type === E.d4z.GUILD_ANNOUNCEMENT && (0, _.yE)(a.flags, E.iLy.CROSSPOSTED);
     return s && (e = (0, r.jsx)(d.Z, {
       className: y.spacingTop,
-      children: E.intl.format(E.t.IxY7Ex, {})
+      children: x.intl.format(x.t.IxY7Ex, {})
     })), (0, b.vc)(a) && (t = (0, r.jsx)(o.j7V, {
       value: n,
       onChange: this.handleToggleReport,
       hideBorder: !0,
       className: y.spacingTop,
-      children: E.intl.string(E.t.x0jzo6)
+      children: x.intl.string(x.t.x0jzo6)
     })), (0, r.jsx)(p.Z.Provider, {
       value: l.guild_id,
       children: (0, r.jsxs)(o.ConfirmModal, j(O({
-        header: u ? E.intl.string(E.t.aIz1oa) : E.intl.string(E.t.MWMcg4),
-        confirmText: E.intl.string(E.t.oyYWHB),
-        cancelText: E.intl.string(E.t["ETE/oK"]),
+        header: u ? x.intl.string(x.t.aIz1oa) : x.intl.string(x.t.MWMcg4),
+        confirmText: x.intl.string(x.t.oyYWHB),
+        cancelText: x.intl.string(x.t["ETE/oK"]),
         onConfirm: this.handleDelete
       }, c), {
         children: [(0, r.jsx)(o.Text, {
           variant: "text-md/normal",
           className: y.spacing,
-          children: u ? E.intl.string(E.t["2kHABQ"]) : E.intl.string(E.t.AMvpS0)
+          children: u ? x.intl.string(x.t["2kHABQ"]) : x.intl.string(x.t.AMvpS0)
         }), (0, r.jsx)("div", {
           className: y.message,
           children: (0, r.jsx)(f.Z, {
@@ -137,14 +137,14 @@ let S = {
   confirmPin: function(e, t) {
     (0, o.h7j)(n => {
       let i, l = (0, u.F6)(e, g.default, h.Z);
-      return i = e.isPrivate() ? E.intl.string(E.t.hMRngI) : E.intl.formatToPlainString(E.t["3IRluL"], {
+      return i = e.isPrivate() ? x.intl.string(x.t.hMRngI) : x.intl.formatToPlainString(x.t["3IRluL"], {
         channelName: l
       }), (0, r.jsx)(p.Z.Provider, {
         value: e.guild_id,
         children: (0, r.jsxs)(o.ConfirmModal, j(O({
-          header: E.intl.string(E.t.bKMaZW),
-          confirmText: E.intl.string(E.t.rOQ5BQ),
-          cancelText: E.intl.string(E.t["ETE/oK"]),
+          header: x.intl.string(x.t.bKMaZW),
+          confirmText: x.intl.string(x.t.rOQ5BQ),
+          cancelText: x.intl.string(x.t["ETE/oK"]),
           confirmButtonColor: o.zxk.Colors.BRAND,
           onConfirm: () => s.Z.pinMessage(e, t.id)
         }, n), {
@@ -169,15 +169,15 @@ let S = {
     (0, o.h7j)(n => (0, r.jsx)(p.Z.Provider, {
       value: e.guild_id,
       children: (0, r.jsxs)(o.ConfirmModal, j(O({
-        header: E.intl.string(E.t.CFF2vL),
-        confirmText: E.intl.string(E.t.lAU5jI),
-        cancelText: E.intl.string(E.t["ETE/oK"]),
+        header: x.intl.string(x.t.CFF2vL),
+        confirmText: x.intl.string(x.t.lAU5jI),
+        cancelText: x.intl.string(x.t["ETE/oK"]),
         onConfirm: () => s.Z.unpinMessage(e, t.id)
       }, n), {
         children: [(0, r.jsx)(o.Text, {
           variant: "text-md/normal",
           className: y.spacing,
-          children: E.intl.string(E.t.NjEPp6)
+          children: x.intl.string(x.t.NjEPp6)
         }), (0, r.jsx)("div", {
           className: a()(y.message, y.spacing),
           children: (0, r.jsx)(f.Z, {
@@ -186,7 +186,7 @@ let S = {
             disableInteraction: !0
           })
         }), (0, r.jsx)(d.Z, {
-          children: E.intl.format(E.t.oCVB3d, {})
+          children: x.intl.format(x.t.oCVB3d, {})
         })]
       }))
     }))
@@ -201,9 +201,9 @@ let S = {
   },
   confirmEdit: function(e, t, n) {
     (0, o.h7j)(i => (0, r.jsx)(o.ConfirmModal, j(O({
-      header: E.intl.string(E.t.aIz1oa),
-      confirmText: E.intl.string(E.t["cY+Ooa"]),
-      cancelText: E.intl.string(E.t["ETE/oK"]),
+      header: x.intl.string(x.t.aIz1oa),
+      confirmText: x.intl.string(x.t["cY+Ooa"]),
+      cancelText: x.intl.string(x.t["ETE/oK"]),
       confirmButtonColor: o.zxk.Colors.BRAND,
       onConfirm: () => c.Z.editMessage(e, t, {
         content: n
@@ -212,7 +212,7 @@ let S = {
       children: (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
         className: y.spacing,
-        children: E.intl.string(E.t.grBcMz)
+        children: x.intl.string(x.t.grBcMz)
       })
     })))
   }

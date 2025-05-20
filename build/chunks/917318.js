@@ -59,13 +59,13 @@ function g(e) {
     author: d,
     mentions: f,
     type: g
-  } = n, _ = (0, o.ZP)(n), b = n.getChannelId(), x = (0, l.e7)([u.default], () => u.default.getUser(f[0]), [f]), E = (0, o.JZ)(d, i), y = (0, s.l)({
+  } = n, _ = (0, o.ZP)(n), b = n.getChannelId(), E = (0, l.e7)([u.default], () => u.default.getUser(f[0]), [f]), x = (0, o.JZ)(d, i), y = (0, s.l)({
     user: d,
     channelId: b,
     guildId: i.guild_id,
     messageId: n.id
-  })(E), v = (0, o.Sw)(x, i), O = (0, s.l)({
-    user: x,
+  })(x), v = (0, o.Sw)(E, i), O = (0, s.l)({
+    user: E,
     channelId: b,
     guildId: i.guild_id,
     messageId: n.id
@@ -103,7 +103,7 @@ function _(e) {
     messageId: n.id
   })(g), b = null != (t = f[u]) ? t : null;
   if (null == b) return null;
-  let x = p.intl.format(b(), {
+  let E = p.intl.format(b(), {
     actorName: d.nick,
     actorHook: _
   });
@@ -113,7 +113,7 @@ function _(e) {
     }),
     timestamp: n.timestamp,
     compact: l,
-    children: x
+    children: E
   })
 }
 
