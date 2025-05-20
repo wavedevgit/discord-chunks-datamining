@@ -77,7 +77,7 @@ let E = e => {
       {
         fractionalState: B
       } = (0, c.Z)(),
-      M = (0, d.W)().isInReverseTrial,
+      M = (0, d.W)(),
       U = (0, b.ZM)({
         perksCards: k,
         variant: s,

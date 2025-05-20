@@ -203,7 +203,7 @@ let L = e => {
       location: n
     } = e, {
       analyticsLocations: r
-    } = (0, c.ZP)(o.Z.PREMIUM_MARKETING_HERO_CTA), l = (0, _.W)().isInReverseTrial, m = (0, b._O)(), p = R.intl.string(R.t.qYKftb), h = (0, S.b)(n), x = (0, i.jsx)(L, {
+    } = (0, c.ZP)(o.Z.PREMIUM_MARKETING_HERO_CTA), l = (0, _.W)(), m = (0, b._O)(), p = R.intl.string(R.t.qYKftb), h = (0, S.b)(n), x = (0, i.jsx)(L, {
       className: t
     }), C = R.intl.string(R.t.ifwQZW), {
       fractionalState: j,

@@ -1,6 +1,6 @@
 /** Chunk was on 80960 **/
 r.d(t, {
-  Z: () => N
+  Z: () => R
 }), r(784620), r(973216);
 var n = r(255367),
   a = r(73800),
@@ -23,8 +23,8 @@ var n = r(255367),
   E = r(65154),
   j = r(388032),
   C = r(442122),
-  Z = r(20493);
-class P extends a.PureComponent {
+  P = r(20493);
+class Z extends a.PureComponent {
   render() {
     var e, t;
     let {
@@ -112,20 +112,21 @@ class P extends a.PureComponent {
       title: j.intl.string(j.t.wU9INz) + (null != a ? " - " + a : ""),
       className: C.allowSelection,
       children: [(0, v.a)(u), 0 === f.length ? null : (0, n.jsx)(o.$i$, {
-        className: Z.marginBottom20
+        className: P.marginBottom20
       }), (0, v.a)(f)]
     })
   }
 }
-let N = s.ZP.connectStores([u.ZP, d.Z, h.Z, p.Z], e => {
+let R = s.ZP.connectStores([u.ZP, d.Z, h.Z, p.Z], e => {
+  var t;
   let {
-    context: t,
-    index: r
-  } = e, n = u.ZP.getAllStats(t)[r], a = t === E.Yn.STREAM ? p.Z.getHostname(p.Z.getActiveStreamKey()) : d.Z.getHostname();
+    context: r,
+    index: n
+  } = e, a = u.ZP.getAllStats(r)[n], i = r === E.Yn.STREAM ? Object.values(p.Z.getRTCConnections()).find(e => e.getMediaEngineConnectionId() === a.mediaEngineConnectionId) : null, l = null != (t = null == i ? void 0 : i.hostname) ? t : "";
   return {
     hidePersonalInformation: h.Z.hidePersonalInformation,
-    transport: null != n ? n.transport : null,
+    transport: null != a ? a.transport : null,
     mediaSessionId: d.Z.getMediaSessionId(),
-    hostname: f.Z.getShortHostname(a)
+    hostname: f.Z.getShortHostname(l)
   }
-})(P)
+})(Z)

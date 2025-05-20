@@ -39,16 +39,16 @@ var i, r = n(255367),
   I = n(892071),
   W = n(740492),
   _ = n(358085),
-  U = n(62883),
-  F = n(998502),
-  K = n(473159),
+  K = n(62883),
+  U = n(998502),
+  F = n(473159),
   q = n(928518),
   B = n(981631),
   H = n(501787),
   G = n(388032),
-  V = n(728294);
+  J = n(728294);
 
-function J(e, t, n) {
+function V(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -64,13 +64,13 @@ function Y(e) {
     "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), i.forEach(function(t) {
-      J(e, t, n[t])
+      V(e, t, n[t])
     })
   }
   return e
 }
 
-function Q(e, t) {
+function $(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -82,12 +82,12 @@ function Q(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class $ extends(i = o.Component) {
+class Q extends(i = o.Component) {
   componentDidMount() {
     let {
       guestWindow: e
     } = this.props, t = e.document;
-    null == t.querySelector("title") && null != t.head && t.head.appendChild(t.createElement("title")), this.updateTitle(), this.updateClientTheme(), (0, K.O)(e), e.addEventListener("blur", this.handleBlur), _.isPlatformEmbedded ? t.addEventListener("contextmenu", U.contextMenuCallbackNative, !1) : t.addEventListener("contextmenu", U.contextMenuCallbackWeb, !1), e.addEventListener("beforeunload", this.beforeUnload), this.registerPopoutGlobalKeybinds()
+    null == t.querySelector("title") && null != t.head && t.head.appendChild(t.createElement("title")), this.updateTitle(), this.updateClientTheme(), (0, F.O)(e), e.addEventListener("blur", this.handleBlur), _.isPlatformEmbedded ? t.addEventListener("contextmenu", K.contextMenuCallbackNative, !1) : t.addEventListener("contextmenu", K.contextMenuCallbackWeb, !1), e.addEventListener("beforeunload", this.beforeUnload), this.registerPopoutGlobalKeybinds()
   }
   componentDidUpdate(e) {
     let {
@@ -100,7 +100,7 @@ class $ extends(i = o.Component) {
     let {
       guestWindow: e
     } = this.props, t = e.document;
-    this.unregisterPopoutGlobalKeybinds(), e.removeEventListener("blur", this.handleBlur), _.isPlatformEmbedded ? t.removeEventListener("contextmenu", U.contextMenuCallbackNative) : t.removeEventListener("contextmenu", U.contextMenuCallbackWeb), (0, h.j)(() => m.s9z.setState(e => Q(Y({}, e), {
+    this.unregisterPopoutGlobalKeybinds(), e.removeEventListener("blur", this.handleBlur), _.isPlatformEmbedded ? t.removeEventListener("contextmenu", K.contextMenuCallbackNative) : t.removeEventListener("contextmenu", K.contextMenuCallbackWeb), (0, h.j)(() => m.s9z.setState(e => $(Y({}, e), {
       [m.u1M]: []
     }))), e.removeEventListener("beforeunload", this.beforeUnload)
   }
@@ -165,7 +165,7 @@ class $ extends(i = o.Component) {
                   children: (0, r.jsx)(E.m, {
                     children: (0, r.jsxs)(R.yP, {
                       children: [(0, r.jsxs)("div", {
-                        className: V.popout,
+                        className: J.popout,
                         children: [l && v && (0, r.jsx)(z.T, {
                           windowKey: i,
                           short: !0
@@ -175,7 +175,7 @@ class $ extends(i = o.Component) {
                           windowKey: i,
                           macOSFrame: !0
                         }) : null, (0, r.jsx)("div", {
-                          className: s()(V.content, p),
+                          className: s()(J.content, p),
                           children: n
                         })]
                       }), (0, r.jsx)(m.nKe, {}), (0, r.jsx)(b.Z, {}), (0, r.jsx)(R.Un, {})]
@@ -190,24 +190,24 @@ class $ extends(i = o.Component) {
     })
   }
   constructor(...e) {
-    super(...e), J(this, "rootRef", o.createRef()), J(this, "_cleanupWindowActionCreators", void 0), J(this, "_combokeys", null), J(this, "beforeUnload", e => {
+    super(...e), V(this, "rootRef", o.createRef()), V(this, "_cleanupWindowActionCreators", void 0), V(this, "_combokeys", null), V(this, "beforeUnload", e => {
       let t = () => {
-        q.Z.unmountWindow(this.props.windowKey), _.isPlatformEmbedded && F.ZP.close(this.props.windowKey)
+        q.Z.unmountWindow(this.props.windowKey), _.isPlatformEmbedded && U.ZP.close(this.props.windowKey)
       };
       if (null == this.props.connectedEmbeddedActivity || W.ZP.disableEmbeddedActivityPopOutAlert) t();
       else {
         if (!_.isPlatformEmbedded) return;
-        (0, x.R)() ? t(): (e.returnValue = G.intl.string(G.t["bST/Y2"]), (0, j.Z)(() => {
+        (0, x.R)() || this.props.windowKey === H.$J ? t() : (e.returnValue = G.intl.string(G.t["bST/Y2"]), (0, j.Z)(() => {
           t()
         }))
       }
-    }), J(this, "handleBlur", () => {
+    }), V(this, "handleBlur", () => {
       var e, t;
       null == (e = (t = this.props).onBlur) || e.call(t)
     })
   }
 }
-J($, "defaultProps", {
+V(Q, "defaultProps", {
   withTitleBar: !0
 });
 let X = o.forwardRef(function(e, t) {
@@ -262,7 +262,7 @@ let X = o.forwardRef(function(e, t) {
     return null == n ? null : (0, r.jsx)(m.Sle, {
       children: (0, r.jsx)(P.Gt, {
         value: a,
-        children: (0, r.jsx)($, Q(Y({
+        children: (0, r.jsx)(Q, $(Y({
           ref: t
         }, e), {
           guestWindow: n,

@@ -113,7 +113,7 @@ let q = function() {
     }),
     q = (0, w.W)(),
     X = null !== e ? e.currentPeriodEnd : void 0,
-    Q = !(q.isInReverseTrial && !q.hasBankedFractionalNitro) && (W.fractionalState !== U.a$.NONE || W.unactivatedUnits.length > 0);
+    Q = !(q && !(W.unactivatedUnits.length > 0)) && (W.fractionalState !== U.a$.NONE || W.unactivatedUnits.length > 0);
   return (r.useEffect(() => (c.Z.wait(() => {
     (0, m.Y2)(), d.jg(), (0, u.X8)(), d.tZ()
   }), function() {

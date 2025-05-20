@@ -1,7 +1,7 @@
 /** Chunk was on 80960 **/
 r.d(t, {
   al: () => b,
-  ck: () => Z
+  ck: () => P
 }), r(388685), r(539854), r(784620), r(973216);
 var n = r(255367),
   a = r(73800),
@@ -276,7 +276,7 @@ let b = {
     })
   };
 
-function Z(e) {
+function P(e) {
   var t, r, a;
   let {
     label: i,
