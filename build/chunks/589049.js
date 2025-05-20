@@ -1,27 +1,31 @@
 /** Chunk was on 80125 **/
 n.d(t, {
-  Z: () => u
+  Z: () => f
 });
 var r = n(255367);
 n(73800);
 var i = n(481060),
   o = n(230711),
-  l = n(906732),
-  c = n(981631),
-  a = n(388032);
+  l = n(40851),
+  c = n(906732),
+  a = n(174609),
+  u = n(358085),
+  s = n(981631),
+  d = n(388032);
 
-function u() {
-  let {
-    analyticsLocations: e
-  } = (0, l.ZP)();
-  return (0, r.jsx)(i.sNh, {
+function f() {
+  let e = (0, l.bp)(),
+    {
+      analyticsLocations: t
+    } = (0, c.ZP)();
+  return e === s.IlC.APP || u.isPlatformEmbedded ? (0, r.jsx)(i.sNh, {
     id: "voice-and-video-settings",
-    label: a.intl.string(a.t.dsXapK),
+    label: d.intl.string(d.t.dsXapK),
     action: () => {
-      o.Z.open(c.oAB.VOICE, null, {
-        analyticsLocations: e
+      (0, a.Z)(), o.Z.open(s.oAB.VOICE, null, {
+        analyticsLocations: t
       })
     },
     icon: i.ewm
-  })
+  }) : null
 }

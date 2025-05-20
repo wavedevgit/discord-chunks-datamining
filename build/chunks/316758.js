@@ -43,8 +43,7 @@ async function p(e) {
     channel: t,
     items: n,
     poll: r,
-    nonce: l,
-    maxSizeCallback: o
+    nonce: l
   } = e;
   return i.Z.uploadFiles({
     channelId: t.id,

@@ -296,7 +296,8 @@ function W(e) {
     channelId: t,
     messageRecord: n,
     reason: r,
-    noSendFailed: i
+    noSendFailed: i,
+    shouldSendNotification: a
   } = e;
   null != n && !0 !== i && s.Z.dispatch({
     type: "MESSAGE_SEND_FAILED",
