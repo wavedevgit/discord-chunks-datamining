@@ -29,44 +29,44 @@ function E(e) {
   } = e, {
     selectedPlan: s,
     selectedSkuId: E,
-    step: S
+    step: y
   } = (0, f.JL)(), {
-    setSelectedGiftingPromotionReward: y,
+    setSelectedGiftingPromotionReward: S,
     selectedGiftingPromotionReward: I,
-    claimableRewards: P
-  } = (0, h.wD)(), M = (0, a.e7)([p.default], () => p.default.getCurrentUser());
+    claimableRewards: M
+  } = (0, h.wD)(), P = (0, a.e7)([p.default], () => p.default.getCurrentUser());
   i.useEffect(() => {
-    let e = null != P && P.length > 0;
-    null == I && e && y(P[0])
-  }, [P, I, y]);
+    let e = null != M && M.length > 0;
+    null == I && e && S(M[0])
+  }, [M, I, S]);
   let O = e => {
       let t = e.skuId;
       return (0, l.jsx)(d.Z, {
         skuId: t,
         price: m.intl.string(m.t.QQsaCQ),
         isSelected: t === (null == I ? void 0 : I.skuId),
-        onSelect: () => y(e),
+        onSelect: () => S(e),
         className: g.giftSelectItem
       }, t)
     },
     Z = (0, c.Q3)("PremiumPaymentFreeSKUSelectStep");
-  r()(null != s, "Expected plan to selected"), r()(null != E, "Expected selectedSkuId"), r()(null != S, "Step should be set");
-  let T = null == P ? void 0 : P.map(e => O(e)),
-    b = null != I && null != M ? (0, l.jsx)(C.Z, {
+  r()(null != s, "Expected plan to selected"), r()(null != E, "Expected selectedSkuId"), r()(null != y, "Step should be set");
+  let T = null == M ? void 0 : M.map(e => O(e)),
+    v = null != I && null != P ? (0, l.jsx)(C.Z, {
       avatarDecorationOverride: {
         asset: I.assetId
       },
-      user: M,
+      user: P,
       guildId: null,
       avatarSize: o.EFr.SIZE_152
     }) : null,
-    v = (0, l.jsx)(_.O3, {
+    b = (0, l.jsx)(_.O3, {
       children: (0, l.jsx)(o.mzw, {
         className: g.modalFooter,
         children: (0, l.jsx)(u.y, {
           onStepChange: e => {
-            null != M && null != I && x.default.track(L.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
-              user_id: M.id,
+            null != P && null != I && x.default.track(L.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
+              user_id: P.id,
               reward_sku_id: I.skuId
             }), t(e)
           },
@@ -101,7 +101,7 @@ function E(e) {
         padding: {
           top: 24
         },
-        children: [b, (0, l.jsx)(o.Kqy, {
+        children: [v, (0, l.jsx)(o.Kqy, {
           gap: 8,
           padding: {
             top: 12
@@ -109,7 +109,7 @@ function E(e) {
           children: T
         })]
       })
-    }), v]
+    }), b]
   }) : (0, l.jsxs)("div", {
     className: g.stepBodySkuSelect,
     children: [(0, l.jsxs)("div", {
@@ -123,7 +123,7 @@ function E(e) {
       className: g.closeButton
     }), (0, l.jsx)("div", {
       className: g.bodyColumnRight,
-      children: b
-    }), v]
+      children: v
+    }), b]
   })
 }

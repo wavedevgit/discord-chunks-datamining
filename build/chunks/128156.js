@@ -13,14 +13,14 @@ var r = n(442837),
   d = n(63063),
   u = n(209698),
   f = n(369566),
-  m = n(29899),
-  p = n(151545),
+  p = n(29899),
+  m = n(151545),
   b = n(744802),
   _ = n(493043),
   y = n(864141),
   h = n(264481),
-  g = n(693408),
-  x = n(228168),
+  x = n(693408),
+  g = n(228168),
   j = n(981631),
   O = n(388032),
   I = n(514656);
@@ -47,7 +47,7 @@ function v(e) {
   } = (0, f.Z)(t.id), {
     voiceChannel: B,
     voiceActivity: D
-  } = (0, m.Z)({
+  } = (0, p.Z)({
     userId: t.id,
     guildId: P
   }), U = (0, r.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), k = t.id === n.id, L = (0, r.e7)([s.Z, l.Z], () => {
@@ -57,7 +57,7 @@ function v(e) {
   return G || V || !U ? G || V || U ? (0, o.jsxs)(c.Ttm, {
     className: I.scroller,
     fade: !0,
-    children: [G ? (0, o.jsxs)(g.Z, {
+    children: [G ? (0, o.jsxs)(x.Z, {
       heading: O.intl.string(O.t.J6STd3),
       children: [!Z && R && (0, o.jsx)(y.Z, {
         user: t,
@@ -71,7 +71,7 @@ function v(e) {
         stream: E,
         onClose: N,
         profileGuildId: null == v ? void 0 : v.guildId
-      }), w.map((e, r) => (0, o.jsx)(p.Z, {
+      }), w.map((e, r) => (0, o.jsx)(m.Z, {
         user: t,
         currentUser: n,
         activity: e,
@@ -83,7 +83,7 @@ function v(e) {
         voiceChannel: B,
         onClose: N
       })]
-    }) : null, V ? (0, o.jsx)(g.Z, {
+    }) : null, V ? (0, o.jsx)(x.Z, {
       heading: O.intl.string(O.t.jzgEoK),
       subheading: k ? O.intl.format(O.t["4bk9Ag"], {
         learnMoreHook: (e, t) => (0, o.jsx)(c.eee, {
@@ -91,7 +91,7 @@ function v(e) {
           children: e
         }, t)
       }) : void 0,
-      scrollIntoView: T === x.Tb.RECENT_ACTIVITY,
+      scrollIntoView: T === g.Tb.RECENT_ACTIVITY,
       children: S.map(e => (0, o.jsx)(b.Z, {
         location: "UserProfileModalV2Activity",
         user: t,

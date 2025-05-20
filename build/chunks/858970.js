@@ -13,14 +13,14 @@ var r = n(442837),
   d = n(5192),
   u = n(785717),
   f = n(221292),
-  m = n(687158),
-  p = n(316027),
+  p = n(687158),
+  m = n(316027),
   b = n(502762),
   _ = n(848780),
   y = n(907179),
   h = n(228168),
-  g = n(981631),
-  x = n(388032),
+  x = n(981631),
+  g = n(388032),
   j = n(247787);
 
 function O(e) {
@@ -53,7 +53,7 @@ function I(e) {
     openedAt: T,
     onHide: N,
     sourceAnalyticsLocations: C = []
-  } = e, Z = n === g.ME ? void 0 : n, w = (0, r.e7)([s.Z], () => s.Z.isBlocked(t.id)), {
+  } = e, Z = n === x.ME ? void 0 : n, w = (0, r.e7)([s.Z], () => s.Z.isBlocked(t.id)), {
     analyticsLocations: S
   } = (0, a.ZP)([...C, w ? i.Z.BLOCKED_PROFILE_MODAL : i.Z.IGNORED_PROFILE_MODAL]), E = (0, u.ZB)({
     layout: "MODAL_V2",
@@ -65,11 +65,11 @@ function I(e) {
     roleId: P
   }), B = [{
     icon: c.owK,
-    description: x.intl.string(x.t.kcuWvb)
+    description: g.intl.string(g.t.kcuWvb)
   }, {
     icon: c.owK,
-    description: x.intl.string(w ? x.t.QxrDY2 : x.t.W6fjkZ)
-  }], D = (0, m.ZP)(t.id, Z);
+    description: g.intl.string(w ? g.t.QxrDY2 : g.t.W6fjkZ)
+  }], D = (0, p.ZP)(t.id, Z);
   return (0, o.jsx)(a.Gt, {
     value: S,
     children: (0, o.jsx)(u.Mt, {
@@ -81,7 +81,7 @@ function I(e) {
       children: (0, o.jsx)(c.Y0X, {
         transitionState: A,
         className: j.root,
-        "aria-label": x.intl.string(x.t["3N/J2t"]),
+        "aria-label": g.intl.string(g.t["3N/J2t"]),
         children: (0, o.jsxs)(b.Z, {
           user: t,
           displayProfile: D,
@@ -90,7 +90,7 @@ function I(e) {
             className: j.background
           }), (0, o.jsxs)("div", {
             className: j.content,
-            children: [(0, o.jsx)(p.Z, {
+            children: [(0, o.jsx)(m.Z, {
               user: t,
               guildId: Z,
               iconColor: c.TVs.colors.TEXT_NORMAL
@@ -99,11 +99,11 @@ function I(e) {
               children: [(0, o.jsx)(c.X6q, {
                 variant: "heading-xl/bold",
                 color: "text-normal",
-                children: x.intl.string(x.t.b33pLC)
+                children: g.intl.string(g.t.b33pLC)
               }), (0, o.jsx)(c.Text, {
                 variant: "text-md/medium",
                 color: "text-normal",
-                children: x.intl.format(w ? x.t.T7QiLi : x.t.MnEow8, {
+                children: g.intl.format(w ? g.t.T7QiLi : g.t.MnEow8, {
                   username: d.ZP.getName(Z, I, t)
                 })
               })]

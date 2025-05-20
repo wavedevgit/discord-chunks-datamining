@@ -1,6 +1,6 @@
 /** Chunk was on 43473 **/
 n.d(t, {
-  Z: () => m
+  Z: () => p
 }), n(388685);
 var o = n(255367),
   r = n(73800),
@@ -21,7 +21,7 @@ function f(e) {
     displayProfile: i,
     guildId: u,
     channelId: f,
-    onClose: m
+    onClose: p
   } = e;
   return r === d.oh.ACTIVITY ? (0, o.jsx)(a.Z, {
     user: t,
@@ -30,34 +30,34 @@ function f(e) {
     guildId: u,
     channelId: f,
     subsection: c,
-    onClose: m
+    onClose: p
   }) : r === d.oh.MUTUAL_FRIENDS ? (0, o.jsx)(l.Z, {
     user: t,
     guildId: u,
     channelId: f,
-    onClose: m
+    onClose: p
   }) : r === d.oh.MUTUAL_GUILDS ? (0, o.jsx)(s.Z, {
     user: t,
-    onClose: m
+    onClose: p
   }) : null
 }
 
-function m(e) {
+function p(e) {
   var t, n, a;
   let {
     user: l,
     currentUser: s,
     displayProfile: d,
-    guildId: m,
-    channelId: p,
+    guildId: p,
+    channelId: m,
     items: b,
     initialSection: _,
     initialSubsection: y,
     onClose: h
   } = e, {
-    trackUserProfileAction: g
+    trackUserProfileAction: x
   } = (0, i.KZ)(), [{
-    section: x,
+    section: g,
     subsection: j,
     text: O
   }, I] = r.useState((n = function(e) {
@@ -99,9 +99,9 @@ function m(e) {
     children: [(0, o.jsx)(c.njP, {
       type: "top",
       className: u.tabBar,
-      selectedItem: x,
+      selectedItem: g,
       onItemSelect: e => {
-        g({
+        x({
           action: "PRESS_SECTION",
           section: e
         }), I(t => {
@@ -120,16 +120,16 @@ function m(e) {
         })
       }, e.section))
     }), (0, o.jsx)(c.njP.Panel, {
-      id: x,
+      id: g,
       "aria-label": O,
       className: u.tabBarPanel,
       children: (0, o.jsx)(f, {
         user: l,
         currentUser: s,
         displayProfile: d,
-        guildId: m,
-        channelId: p,
-        section: x,
+        guildId: p,
+        channelId: m,
+        section: g,
         subsection: j,
         onClose: h
       })

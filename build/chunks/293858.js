@@ -27,18 +27,18 @@ function E(e) {
       handleClose: n,
       planGroup: s,
       onSubscriptionConfirmation: E,
-      renderPurchaseConfirmation: S,
-      postSuccessGuild: y,
+      renderPurchaseConfirmation: y,
+      postSuccessGuild: S,
       followupSKUInfo: I,
-      continueSessionToInitialStep: P
+      continueSessionToInitialStep: M
     } = e,
     {
-      activeSubscription: M,
+      activeSubscription: P,
       paymentSources: O,
       paymentSourceId: Z,
       selectedPlan: T,
-      selectedSkuId: b,
-      step: v,
+      selectedSkuId: v,
+      step: b,
       updatedSubscription: N,
       startingPremiumSubscriptionPlanIdRef: k,
       startingFractionalPremiumEndsAtRef: A
@@ -63,7 +63,7 @@ function E(e) {
     V = (0, C.tK)(null == D ? void 0 : D.skuId),
     Q = (0, L.$)(O, Z),
     q = U && null != D && z;
-  r()(null != T, "Expected plan to selected"), r()(null != b, "Expected selectedSkuId"), r()(null != v, "Step should be set");
+  r()(null != T, "Expected plan to selected"), r()(null != v, "Expected selectedSkuId"), r()(null != b, "Step should be set");
   let J = i.useCallback(() => {
     n(), null == E || E()
   }, [n, E]);
@@ -75,12 +75,12 @@ function E(e) {
     null != X && null != X.reminderNotice && Y && (0, o.wH)(a.z.GIFTING_PROMOTION_REMINDER, X.dismissibleContentVersion, {
       dismissAction: g.L.INDIRECT_ACTION
     })
-  }, [X, Y]), t = null != S ? S(T, J, N) : null != P ? (0, l.jsx)(c.VY, {}) : U ? (0, l.jsx)(c.TB, {
+  }, [X, Y]), t = null != y ? y(T, J, N) : null != M ? (0, l.jsx)(c.VY, {}) : U ? (0, l.jsx)(c.TB, {
     planId: T.id,
     onClose: J
   }) : k.current === T.id ? (0, l.jsx)(c.ZP, {
     planId: T.id,
-    postSuccessGuild: y,
+    postSuccessGuild: S,
     onClose: J,
     paymentSourceType: Q,
     hideClose: K,
@@ -90,7 +90,7 @@ function E(e) {
     startingPremiumSubscriptionPlanId: k.current,
     planId: T.id,
     onClose: J,
-    isDowngrade: null != M && (0, p.GY)(M, T.id, s),
+    isDowngrade: null != P && (0, p.GY)(P, T.id, s),
     paymentSourceType: Q,
     hideClose: K,
     startingFractionalPremiumEndsAt: A.current

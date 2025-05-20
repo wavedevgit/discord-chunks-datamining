@@ -1,6 +1,6 @@
 /** Chunk was on 43473 **/
 n.d(t, {
-  Z: () => m
+  Z: () => p
 });
 var o = n(255367);
 n(73800);
@@ -14,20 +14,20 @@ var r = n(481060),
   u = n(264481),
   f = n(274151);
 
-function m(e) {
+function p(e) {
   let {
     user: t,
     onClose: n
   } = e, {
-    trackUserProfileAction: m
+    trackUserProfileAction: p
   } = (0, l.KZ)(), {
-    mutualGuilds: p,
+    mutualGuilds: m,
     isFetching: b
   } = (0, s.Z)(t);
   return (0, o.jsx)(r.Ttm, {
     className: f.scroller,
     fade: !0,
-    children: null == p && b ? Array.from({
+    children: null == m && b ? Array.from({
       length: 10
     }).map((e, t) => (0, o.jsxs)("div", {
       className: f.loadingItem,
@@ -38,7 +38,7 @@ function m(e) {
         width: 135,
         opacity: .08
       })]
-    }, t)) : (null != p || b) && (null == p ? void 0 : p.length) !== 0 ? null == p ? void 0 : p.map(e => {
+    }, t)) : (null != m || b) && (null == m ? void 0 : m.length) !== 0 ? null == m ? void 0 : m.map(e => {
       let {
         guild: r,
         nick: i
@@ -48,7 +48,7 @@ function m(e) {
         guild: r,
         nick: i,
         onSelect: () => {
-          m({
+          p({
             action: "PRESS_MUTUAL_GUILD"
           }), (0, a.X)(r.id), n(), (0, c.xf)()
         }

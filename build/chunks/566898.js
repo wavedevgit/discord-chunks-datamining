@@ -3,10 +3,10 @@ n.d(t, {
   M9: () => h,
   Pb: () => y,
   XX: () => b,
-  ZP: () => g,
+  ZP: () => x,
   ZT: () => f,
   iv: () => _,
-  pk: () => p
+  pk: () => m
 });
 var o = n(255367);
 n(73800);
@@ -47,14 +47,14 @@ function f(e) {
   })
 }
 
-function m(e) {
+function p(e) {
   let t, {
       groupStart: n = !1,
       compact: r = !1,
       attachmentSpecs: i,
       usernameWidth: d,
-      usernameOpacity: m,
-      className: p,
+      usernameOpacity: p,
+      className: m,
       style: b
     } = e,
     _ = r ? 50 : a().random(40, 50);
@@ -63,7 +63,7 @@ function m(e) {
       className: s.header,
       children: (0, o.jsx)(f, {
         width: d,
-        opacity: m,
+        opacity: p,
         className: s.__invalid_username
       })
     })]
@@ -78,12 +78,12 @@ function m(e) {
       className: s.header,
       children: (0, o.jsx)(f, {
         width: d,
-        opacity: m
+        opacity: p
       })
     })]
   })), (0, o.jsxs)("div", {
     "aria-hidden": !0,
-    className: c()(p, {
+    className: c()(m, {
       [s.wrapper]: !0,
       [s.compact]: r,
       [s.cozy]: !r
@@ -126,13 +126,13 @@ function m(e) {
     })]
   })
 }
-let p = 44,
+let m = 44,
   b = 22,
   _ = 26,
   y = 26,
   h = 6;
 
-function g(e) {
+function x(e) {
   let {
     messages: t,
     groupSpacing: n = 0,
@@ -141,7 +141,7 @@ function g(e) {
     className: i
   } = e, l = null != c ? c.last ? t - 1 : a().random(0, t - 1) : -1, s = a().random(80, 120), u = a().random(.1, .2);
   return (0, o.jsx)(o.Fragment, {
-    children: Array(t).fill(null).map((e, t) => (0, o.jsx)(m, {
+    children: Array(t).fill(null).map((e, t) => (0, o.jsx)(p, {
       compact: r,
       className: i,
       usernameWidth: s,

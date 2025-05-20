@@ -23,16 +23,16 @@ var l = n(255367),
   m = n(793541),
   g = n(380898),
   E = n(710094),
-  S = n(293858),
-  y = n(183813),
+  y = n(293858),
+  S = n(183813),
   I = n(614223),
-  P = n(174827),
-  M = n(846464),
+  M = n(174827),
+  P = n(846464),
   O = n(184160),
   Z = n(48175),
   T = n(981631),
-  b = n(474936),
-  v = n(388032),
+  v = n(474936),
+  b = n(388032),
   N = n(236691);
 
 function k(e) {
@@ -68,14 +68,14 @@ function U(e) {
     trialId: m,
     trialFooterMessageOverride: g,
     reviewWarningMessage: E,
-    openInvoiceId: S,
-    onSubscriptionConfirmation: y,
+    openInvoiceId: y,
+    onSubscriptionConfirmation: S,
     renderPurchaseConfirmation: I,
-    postSuccessGuild: P,
-    followupSKUInfo: M,
+    postSuccessGuild: M,
+    followupSKUInfo: P,
     renderHeader: O,
     applicationId: Z,
-    guildId: v,
+    guildId: b,
     referralTrialOfferId: N,
     skuId: k,
     returnRef: A,
@@ -110,15 +110,15 @@ function U(e) {
     isGift: B,
     trialFooterMessageOverride: g,
     reviewWarningMessage: E,
-    planGroup: b.Y1,
-    openInvoiceId: S,
-    onSubscriptionConfirmation: y,
+    planGroup: v.Y1,
+    openInvoiceId: y,
+    onSubscriptionConfirmation: S,
     renderPurchaseConfirmation: I,
-    postSuccessGuild: P,
-    followupSKUInfo: M,
+    postSuccessGuild: M,
+    followupSKUInfo: P,
     renderHeader: O,
     applicationId: Z,
-    guildId: v,
+    guildId: b,
     referralTrialOfferId: N,
     skuId: k,
     shakeWhilePurchasing: !0,
@@ -187,7 +187,7 @@ let H = [{
   renderStep: e => (0, l.jsx)(_.I, k({}, e))
 }, {
   key: f.h8.SKU_SELECT,
-  renderStep: e => (0, l.jsx)(M.q, k({}, e)),
+  renderStep: e => (0, l.jsx)(P.q, k({}, e)),
   options: {
     renderHeader: !1,
     hideSlider: !0,
@@ -202,17 +202,17 @@ let H = [{
   }
 }, {
   key: f.h8.PLAN_SELECT,
-  renderStep: e => (0, l.jsx)(P.x, k({}, e)),
+  renderStep: e => (0, l.jsx)(M.x, k({}, e)),
   options: {
     renderHeader: !0,
-    useBreadcrumbLabel: e => R(e) ? null : v.intl.string(v.t["r+SebW"])
+    useBreadcrumbLabel: e => R(e) ? null : b.intl.string(b.t["r+SebW"])
   }
 }, {
   key: f.h8.ADD_PAYMENT_STEPS,
   renderStep: e => (0, l.jsx)(w, k({}, e)),
   options: {
     renderHeader: !0,
-    useBreadcrumbLabel: e => R(e) ? null : v.intl.string(v.t.Sb6wIy)
+    useBreadcrumbLabel: e => R(e) ? null : b.intl.string(b.t.Sb6wIy)
   }
 }, {
   key: f.h8.AWAITING_PURCHASE_TOKEN_AUTH,
@@ -225,14 +225,14 @@ let H = [{
   renderStep: e => (0, l.jsx)(E.l, k({}, e)),
   options: {
     renderHeader: !0,
-    useBreadcrumbLabel: e => R(e) ? v.intl.string(v.t.UKbp1N) : v.intl.string(v.t.QBnNHh)
+    useBreadcrumbLabel: e => R(e) ? b.intl.string(b.t.UKbp1N) : b.intl.string(b.t.QBnNHh)
   }
 }, {
   key: f.h8.CONFIRM,
-  renderStep: e => (0, l.jsx)(S.b, k({}, e))
+  renderStep: e => (0, l.jsx)(y.b, k({}, e))
 }, {
   key: f.h8.SELECT_FREE_SKU,
-  renderStep: e => (0, l.jsx)(y.S, k({}, e)),
+  renderStep: e => (0, l.jsx)(S.S, k({}, e)),
   options: {
     bodyClassName: N.selectFreeSku,
     isDynamicModal: !0
@@ -258,14 +258,14 @@ function B(e) {
       repeatPurchase: g,
       subscriptionTier: E
     } = e;
-  if (null != E && !Object.values(b.Si).includes(E)) throw Error("subscriptionTier must be a premium subscription");
+  if (null != E && !Object.values(v.Si).includes(E)) throw Error("subscriptionTier must be a premium subscription");
   return (0, l.jsx)(C.Gt, {
     value: n,
     children: (0, l.jsx)(h.PaymentContextProvider, {
       loadId: _,
       activeSubscription: null != e.subscription ? e.subscription : t,
       stepConfigs: H,
-      skuIDs: [...b.YQ],
+      skuIDs: [...v.YQ],
       isGift: f,
       defaultPlanId: r,
       referralCode: m,

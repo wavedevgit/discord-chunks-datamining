@@ -29,17 +29,17 @@ function j(e) {
     startedPaymentFlowWithPaymentSourcesRef: m
   } = (0, u.JL)(), {
     isGift: g
-  } = (0, c.wD)(), E = null != j ? (0, d.Af)(j) : null, S = null != E ? (0, d.gq)(E.planId) : null, y = null != E ? (0, d.Rd)(E.planId) : null, I = (0, x.Kp)({
+  } = (0, c.wD)(), E = null != j ? (0, d.Af)(j) : null, y = null != E ? (0, d.gq)(E.planId) : null, S = null != E ? (0, d.Rd)(E.planId) : null, I = (0, x.Kp)({
     isTrial: !1,
     isGift: g,
     selectedSkuId: _,
     startedPaymentFlowWithPaymentSources: m.current
   });
-  return s()(null != y, "Expected premium type"), (0, l.jsx)(C.Z, {
-    premiumType: y,
+  return s()(null != S, "Expected premium type"), (0, l.jsx)(C.Z, {
+    premiumType: S,
     titleText: h.intl.string(h.t["7VcWW1"]),
     subtitleText: h.intl.format(h.t.Qk34Ii, {
-      subscriptionName: S
+      subscriptionName: y
     }),
     footer: (0, l.jsxs)("div", {
       className: f.whatYouLoseButtonContainer,

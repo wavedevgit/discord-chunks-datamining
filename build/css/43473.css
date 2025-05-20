@@ -1,6 +1,6 @@
 /**
   Module ID: 43473
-  Original File Name: af183110aac42c84
+  Original File Name: 4ac26adb36761a95
 **/
 .scroller__95bea {
     display: flex;
@@ -1212,7 +1212,7 @@
     padding: 8px 0
 }
 
-.profileUsername__9c3be {
+.profileSection__9c3be {
     padding: 0 32px
 }
 
@@ -1226,8 +1226,7 @@
 .profileButtons__9c3be {
     align-items: center;
     display: flex;
-    gap: 8px;
-    padding: 0 32px
+    gap: 8px
 }
 
 .profileButtons__9c3be:empty {
@@ -1237,8 +1236,7 @@
 .profileScroller__9c3be {
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    padding: 0 32px
+    gap: 24px
 }
 
 .profileHeading__9c3be {
@@ -1282,4 +1280,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=af183110aac42c84.css.map*/
+/*# sourceMappingURL=4ac26adb36761a95.css.map*/

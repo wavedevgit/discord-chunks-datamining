@@ -35,7 +35,7 @@ function m(e) {
   } = (0, p.JL)(), {
     isGift: L,
     claimableRewards: m
-  } = (0, u.wD)(), E = L && null != m && m.length > 0, S = (0, o.N)(i), y = (0, a.Nx)();
+  } = (0, u.wD)(), E = L && null != m && m.length > 0, y = (0, o.N)(i), S = (0, a.Nx)();
   return (0, l.jsx)(g, {
     selectSku: e => (function(e) {
       let {
@@ -74,13 +74,13 @@ function m(e) {
       setSelectedSkuId: s,
       handleStepChange: t,
       isGift: L,
-      userTrialOffer: S,
+      userTrialOffer: y,
       startedPaymentFlowWithPaymentSources: C.current,
       setSelectedPlanId: d
     }),
     onClose: n,
     isGift: L,
-    inOfferExperience: y,
+    inOfferExperience: S,
     priceOptions: _,
     showPromotionalGiftBanner: E
   })
