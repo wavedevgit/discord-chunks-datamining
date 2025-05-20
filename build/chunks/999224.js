@@ -227,4 +227,10 @@ W["robot-synthetic"] = K(W.robot, {
   name: A.default.XhhSOj
 }), W["ghost-dev"] = K(W.ghost, {
   name: A.default.KmHwvL
+}), W["wobble-dev"] = K(W.ghost, {
+  name: A.default["6PDpsb"]
+}), W["fan-dev"] = K(W.robot, {
+  name: A.default["87aX+/"]
+}), W["autotune-dev"] = K(W.tunes, {
+  name: A.default.EYDrR0
 }), W.rachel = W.skye, W.alex = W.quinn, W.elliot = W.axel, W.sebastian = W.sebastien, W.justin = W.justus, W.taylor = W.harper, W.monique = W.solara

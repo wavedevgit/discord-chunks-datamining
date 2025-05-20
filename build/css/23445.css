@@ -1,6 +1,6 @@
 /**
   Module ID: 23445
-  Original File Name: 374d1020886bfc4f
+  Original File Name: ce14eb0d8f6d8ea9
 **/
 .content__79cbe {
     border-radius: 8px;
@@ -12784,6 +12784,10 @@ div.profileThemedContainer__656be {
     gap: 4px
 }
 
+.guildIcon_c4eb81 {
+    border-radius: var(--radius-xs)
+}
+
 .discordIcon_c4eb81 {
     color: var(--interactive-normal);
     height: 16px;
@@ -13150,4 +13154,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=374d1020886bfc4f.css.map*/
+/*# sourceMappingURL=ce14eb0d8f6d8ea9.css.map*/

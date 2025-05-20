@@ -87,7 +87,8 @@ function f(e) {
         delay: x,
         children: e => (0, n.jsx)(s.Z, j(p({}, e), {
           guild: y,
-          size: s.Z.Sizes.SMOL
+          size: s.Z.Sizes.SMOL,
+          className: b.guildIcon
         }))
       }), (0, n.jsx)(l.Text, {
         variant: "text-sm/normal",

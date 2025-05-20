@@ -1,6 +1,6 @@
 /**
   Module ID: 11678
-  Original File Name: cb0eabe6da10901e
+  Original File Name: cfa2415e3b57354e
 **/
 .scroller__95bea {
     display: flex;
@@ -71,6 +71,10 @@
     align-items: center;
     display: flex;
     gap: 4px
+}
+
+.guildIcon_c4eb81 {
+    border-radius: var(--radius-xs)
 }
 
 .discordIcon_c4eb81 {
@@ -787,4 +791,4 @@
     gap: 8px
 }
 
-/*# sourceMappingURL=cb0eabe6da10901e.css.map*/
+/*# sourceMappingURL=cfa2415e3b57354e.css.map*/

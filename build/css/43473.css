@@ -1,6 +1,6 @@
 /**
   Module ID: 43473
-  Original File Name: ca614b7ef2f67007
+  Original File Name: ed185bb7f52ee9b6
 **/
 .scroller__95bea {
     display: flex;
@@ -71,6 +71,10 @@
     align-items: center;
     display: flex;
     gap: 4px
+}
+
+.guildIcon_c4eb81 {
+    border-radius: var(--radius-xs)
 }
 
 .discordIcon_c4eb81 {
@@ -1227,4 +1231,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=ca614b7ef2f67007.css.map*/
+/*# sourceMappingURL=ed185bb7f52ee9b6.css.map*/
