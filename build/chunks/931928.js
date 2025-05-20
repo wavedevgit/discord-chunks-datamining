@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   ED: () => x,
   fO: () => j,
@@ -13,8 +13,8 @@ var i = n(255367),
   c = n(605236),
   d = n(703656),
   u = n(664915),
-  m = n(507808),
-  g = n(432792),
+  g = n(507808),
+  m = n(432792),
   p = n(981631),
   h = n(921944),
   f = n(46140),
@@ -38,7 +38,7 @@ function _(e) {
   }
   return e
 }
-let x = e => (0, i.jsx)(g.M4, _({
+let x = e => (0, i.jsx)(m.M4, _({
     titleText: b.intl.string(b.t.KnWRQU),
     descriptionText: b.intl.format(b.t["xYx+WV"], {
       quantity: 200
@@ -54,7 +54,7 @@ let x = e => (0, i.jsx)(g.M4, _({
     var t, n, {
         onClose: a,
         onCtaClick: c,
-        targetElementRef: m,
+        targetElementRef: g,
         isGuildBarScrolling: h,
         children: f
       } = e,
@@ -77,7 +77,7 @@ let x = e => (0, i.jsx)(g.M4, _({
       S = (0, o.Q3)("VirtualCurrency: DiscoveryOnboardingCoachmark"),
       v = r.useCallback(e => {
         if (S) {
-          let t = window.innerHeight - ((0, g.t4)() + j.COACHMARK_VERTICAL_OFFSET);
+          let t = window.innerHeight - ((0, m.t4)() + j.COACHMARK_VERTICAL_OFFSET);
           return e.top <= t
         }
         return !0
@@ -92,11 +92,11 @@ let x = e => (0, i.jsx)(g.M4, _({
       N = r.useCallback(() => {
         E.includes(I) || (0, d.uL)(p.Z5c.ME), c()
       }, [I, c]);
-    return (0, i.jsx)(g.WS, (t = _({
+    return (0, i.jsx)(m.WS, (t = _({
       positionControlRef: O,
-      targetElementRef: m,
+      targetElementRef: g,
       calculateVisibility: v,
-      defaultCoachmarkAlign: "bottom",
+      defaultCoachmarkAlign: C.align,
       popoutElement: (0, i.jsx)(x, _({
         onClose: a,
         onCtaClick: N
@@ -123,13 +123,13 @@ let O = e => {
     scrollToBottom: i
   } = e, s = (0, o.Q3)("VirtualCurrency: DiscoveryOnboardingCoachmark"), l = r.useCallback(() => {
     if (s && null !== n.current) {
-      let e = (0, g.t4)();
+      let e = (0, m.t4)();
       n.current.getBoundingClientRect().bottom > window.innerHeight - e && i()
     }
   }, [s, n, i]), {
     shouldShow: d,
     closeCoachmarkIfOpen: u
-  } = (0, g.M)({
+  } = (0, m.M)({
     onboardingCoachmarkType: "discover",
     onShowCoachmarkHandler: l
   }), b = r.useCallback(function() {
@@ -139,7 +139,7 @@ let O = e => {
       groupName: h.R.VIRTUAL_CURRENCY_ONBOARDING
     }), u(e)
   }, [u]), _ = r.useCallback(() => u("CTA_CLICK"), [u]), x = r.useCallback(() => {
-    b("CTA_CLICK"), (0, m.Y)({
+    b("CTA_CLICK"), (0, g.Y)({
       pageType: p.ZY5.GUILD_LIST,
       sectionType: p.jXE.ORBS_DISCOVERY_ONBOARDING_COACHMARK,
       ctaObject: p.qAy.DISCOVERY_BUTTON_TO_ORB_INTRO_QUEST

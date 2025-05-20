@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   D: () => E
 }), n(388685);
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(607070),
   d = n(530618),
   u = n(74538),
-  m = n(937615),
-  g = n(230916),
+  g = n(937615),
+  m = n(230916),
   p = n(798769),
   h = n(474936),
   f = n(388032),
@@ -28,10 +28,10 @@ function E(e) {
     confettiCanvas: C,
     userWasChurned: j = !1,
     userDiscountOffer: O
-  } = e, S = (0, o.ZP)(), v = (0, l.wj)(S) ? _ : x, T = r.useRef(null), [I, N] = r.useState(!1), y = (0, g._)(t, h.Xh.PREMIUM_MONTH_TIER_2, O), A = (0, u.aS)(h.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
+  } = e, S = (0, o.ZP)(), v = (0, l.wj)(S) ? _ : x, T = r.useRef(null), [I, N] = r.useState(!1), y = (0, m._)(t, h.Xh.PREMIUM_MONTH_TIER_2, O), A = (0, u.aS)(h.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
     currency: t.currency,
     paymentSourceId: t.paymentSourceId
-  }), P = (0, m.T4)(A.amount, A.currency), R = (0, s.e7)([c.Z], () => c.Z.useReducedMotion);
+  }), P = (0, g.T4)(A.amount, A.currency), R = (0, s.e7)([c.Z], () => c.Z.useReducedMotion);
   if (r.useEffect(() => {
       null != T.current && null != y && N(!0)
     }, [T, I, y]), null == O || null == y) return null;

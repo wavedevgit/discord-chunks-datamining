@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   L: () => E
 });
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(481060),
   d = n(607070),
   u = n(70097),
-  m = n(507808),
-  g = n(981631),
+  g = n(507808),
+  m = n(981631),
   p = n(388032),
   h = n(350298),
   f = n(806539),
@@ -49,10 +49,10 @@ let x = () => {
       linkPreText: a = p.intl.string(p.t["5qZv9P"]),
       linkText: d = p.intl.string(p.t.XRdyj4)
     } = e, u = r.useCallback(() => {
-      null != s && (0, m.Y)({
+      null != s && (0, g.Y)({
         pageType: s,
-        sectionType: g.jXE.ORBS_BALANCE_MENU,
-        ctaObject: g.qAy.ORBS_LEARN_MORE_LINK
+        sectionType: m.jXE.ORBS_BALANCE_MENU,
+        ctaObject: m.qAy.ORBS_LEARN_MORE_LINK
       })
     }, [s]);
     return (0, i.jsxs)("div", {
@@ -76,7 +76,7 @@ let x = () => {
         }), (0, i.jsx)(c.eee, {
           target: "_blank",
           rel: "author",
-          href: g.yXt.HELP_ARTICLE_ORBS_FAQ,
+          href: m.yXt.HELP_ARTICLE_ORBS_FAQ,
           className: h.learnMoreLink,
           onClick: u,
           children: d

@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   Z: () => y
 }), n(539854);
@@ -12,8 +12,8 @@ var r = n(120356),
   c = n(846027),
   d = n(600164),
   u = n(313201),
-  m = n(921801),
-  g = n(463395),
+  g = n(921801),
+  m = n(463395),
   p = n(131951),
   h = n(626135),
   f = n(63063),
@@ -50,22 +50,22 @@ function N(e) {
     noiseCancellation: r,
     noiseSuppression: s,
     noiseSuppressionSupported: u,
-    noiseCancellationSupported: m
+    noiseCancellationSupported: g
   } = (0, l.cj)([p.Z], () => ({
     noiseCancellation: p.Z.getNoiseCancellation(),
     noiseSuppression: p.Z.getNoiseSuppression(),
     noiseSuppressionSupported: p.Z.isNoiseSuppressionSupported(),
     noiseCancellationSupported: p.Z.isNoiseCancellationSupported()
   }));
-  if (!u && !m) return null;
-  let g = [];
-  return m && g.push({
+  if (!u && !g) return null;
+  let m = [];
+  return g && m.push({
     name: C.intl.string(C.t.rdoNzs),
     value: 2
-  }), u && g.push({
+  }), u && m.push({
     name: C.intl.string(C.t.qXeYHx),
     value: 1
-  }), g.push({
+  }), m.push({
     name: C.intl.string(C.t.wkYAl5),
     value: 0
   }), (0, i.jsxs)(o.hjN, {
@@ -80,12 +80,12 @@ function N(e) {
       className: j.marginBottom8,
       children: C.intl.string(C.t.najZCQ)
     }), (0, i.jsx)(o.FXm, {
-      options: g,
+      options: m,
       onChange: e => {
         c.Z.setNoiseCancellation(2 === e.value, T), c.Z.setNoiseSuppression(1 === e.value, T)
       },
       value: r ? 2 : +!!s
-    }), m && (0, i.jsx)(o.ToO, {
+    }), g && (0, i.jsx)(o.ToO, {
       className: j.marginBottom8,
       type: o.Dd5.PRIMARY,
       imageData: {
@@ -126,16 +126,16 @@ function y(e) {
     hasEchoCancellation: b,
     hasNoiseSuppression: O,
     hasAutomaticGainControl: S
-  } = (0, l.cj)([g.Z], () => ({
-    hasEchoCancellation: g.Z.hasEchoCancellation(r),
-    hasNoiseSuppression: g.Z.hasNoiseSuppression(r),
-    hasAutomaticGainControl: g.Z.hasAutomaticGainControl(r)
+  } = (0, l.cj)([m.Z], () => ({
+    hasEchoCancellation: m.Z.hasEchoCancellation(r),
+    hasNoiseSuppression: m.Z.hasNoiseSuppression(r),
+    hasAutomaticGainControl: m.Z.hasAutomaticGainControl(r)
   }), [r]), v = n === E.pM4.VOICE_ACTIVITY && u, T = (0, i.jsxs)(_.Z, {
     children: [(b || O || S) && (0, i.jsx)(o.R94, {
       className: t ? void 0 : j.marginBottom20,
       type: o.R94.Types.DESCRIPTION,
       children: C.intl.string(C.t["/Whuzs"])
-    }), (0, i.jsx)(m.F, {
+    }), (0, i.jsx)(g.F, {
       setting: x.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_ECHO_CANCELLATION,
       children: (0, i.jsx)(o.j7V, {
         className: t ? void 0 : s()(j.marginTop8, j.marginBottom20),
@@ -148,12 +148,12 @@ function y(e) {
         hideBorder: t,
         children: C.intl.string(C.t.iWTwu7)
       })
-    }), (0, i.jsx)(m.F, {
+    }), (0, i.jsx)(g.F, {
       setting: x.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_NOISE_SUPPRESSION,
       children: (0, i.jsx)(N, {
         refreshStyles: t
       })
-    }), (0, i.jsx)(m.F, {
+    }), (0, i.jsx)(g.F, {
       setting: x.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_ADVANCED_VOICE_ACTIVITY,
       children: (0, i.jsx)(o.j7V, {
         value: h,
@@ -165,7 +165,7 @@ function y(e) {
         hideBorder: t,
         children: C.intl.string(C.t.BbESsr)
       })
-    }), (0, i.jsx)(m.F, {
+    }), (0, i.jsx)(g.F, {
       setting: x.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_AUTOMATIC_GAIN_CONTROL,
       children: (0, i.jsx)(o.j7V, {
         value: d,
@@ -178,7 +178,7 @@ function y(e) {
         hideBorder: t,
         children: C.intl.string(C.t.cUMdHx)
       })
-    }), (0, i.jsx)(m.F, {
+    }), (0, i.jsx)(g.F, {
       setting: x.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_BYPASS_SYSTEM_INPUT_PROCESSING,
       children: (0, i.jsx)(o.j7V, {
         value: f,

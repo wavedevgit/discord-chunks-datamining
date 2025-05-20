@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   Z: () => P
 }), n(388685);
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(596454),
   d = n(906732),
   u = n(856768),
-  m = n(993413),
-  g = n(921801),
+  g = n(993413),
+  m = n(921801),
   p = n(208049),
   h = n(763296),
   f = n(242291),
@@ -45,14 +45,14 @@ function P(e) {
   let {
     refreshStyles: t = !1
   } = e, n = (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsxs)(g.F, {
+    children: [(0, i.jsxs)(m.F, {
       setting: S.s6.VOICE_AND_VIDEO_SOUNDBOARD,
       children: [(0, i.jsx)(j.Z, {
         refreshStyles: t
       }), (0, i.jsx)(O.Z, {
         refreshStyles: t
       })]
-    }), (0, i.jsxs)(g.F, {
+    }), (0, i.jsxs)(m.F, {
       setting: S.s6.VOICE_AND_VIDEO_ENTRANCE_SOUNDS,
       children: [t ? null : (0, i.jsx)(o.$i$, {
         className: N.callSoundsDivider
@@ -75,7 +75,7 @@ function R(e) {
     refreshStyles: t
   } = e, {
     analyticsLocations: n
-  } = (0, d.ZP)(), [s, c] = r.useState(T.hY), g = (0, b.tT)(s), E = A(g), j = (null == g ? void 0 : g.type) === b.zx.GLOBAL, O = (0, a.e7)([h.Z], () => h.Z.hasFetchedAllSounds()) && null != g && null == E;
+  } = (0, d.ZP)(), [s, c] = r.useState(T.hY), m = (0, b.tT)(s), E = A(m), j = (null == m ? void 0 : m.type) === b.zx.GLOBAL, O = (0, a.e7)([h.Z], () => h.Z.hasFetchedAllSounds()) && null != m && null == E;
   r.useEffect(() => {
     O && (0, f.tt)({
       location: n
@@ -113,7 +113,7 @@ function R(e) {
         },
         renderOptionSuffix: S,
         hideDivider: !0
-      }), (0, i.jsxs)(m.Z, {
+      }), (0, i.jsxs)(g.Z, {
         className: l()({
           [y.marginTop20]: !t
         }),

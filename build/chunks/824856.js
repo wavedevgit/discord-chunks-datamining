@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   Z: () => b
 }), n(953529);
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(481060),
   d = n(58385),
   u = n(889989),
-  m = n(937615),
-  g = n(624138),
+  g = n(937615),
+  m = n(624138),
   p = n(150414),
   h = n(993553),
   f = n(53524);
@@ -31,7 +31,7 @@ function b(e) {
   } = (0, d.X)(n.skuId), j = r.useMemo(() => {
     if (null == C || 0 === C.length) return null;
     let e = C[0];
-    return (0, m.xg)(e)
+    return (0, g.xg)(e)
   }, [C]);
   return null == j ? null : (0, i.jsxs)(a.l, {
     className: l()(f.wrapper, s),
@@ -54,7 +54,7 @@ function b(e) {
         })]
       }), t]
     }),
-    children: [!(0, g.Ew)(x) && (0, i.jsx)("div", {
+    children: [!(0, m.Ew)(x) && (0, i.jsx)("div", {
       className: f.description,
       children: (0, i.jsx)(h.Z, {
         variant: "text-sm/medium",

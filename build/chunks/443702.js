@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   Z: () => N
 });
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(570140),
   d = n(355467),
   u = n(230711),
-  m = n(497321),
-  g = n(231428),
+  g = n(497321),
+  m = n(231428),
   p = n(390954),
   h = n(89057),
   f = n(921801),
@@ -46,7 +46,7 @@ class I extends r.PureComponent {
       isRemovingPaymentSource: a,
       isUpdatingPaymentSource: c
     } = this.props;
-    return t ? (0, i.jsx)(m.Z, {}) : (0, i.jsxs)("div", {
+    return t ? (0, i.jsx)(g.Z, {}) : (0, i.jsxs)("div", {
       className: T.__invalid_userSettingsBilling,
       children: [e && 0 === Object.keys(n).length ? (0, i.jsx)("div", {
         className: T.syncing,
@@ -70,7 +70,7 @@ class I extends r.PureComponent {
               tag: "h1",
               children: v.intl.string(v.t.obLrcH)
             }),
-            children: [(0, i.jsx)(h.oQ, {}), (0, i.jsx)(g.Z, {
+            children: [(0, i.jsx)(h.oQ, {}), (0, i.jsx)(m.Z, {
               locale: s
             })]
           })

@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   r: () => x
 }), n(953529);
@@ -12,8 +12,8 @@ var r = n(120356),
   c = n(695346),
   d = n(903002),
   u = n(875781),
-  m = n(981631),
-  g = n(560012),
+  g = n(981631),
+  m = n(560012),
   p = n(388032),
   h = n(324819),
   f = n(146036),
@@ -27,7 +27,7 @@ function _(e) {
     assets: o = [],
     assetCount: c = 0,
     disabled: u = !1,
-    onClick: m
+    onClick: g
   } = e;
   return (0, i.jsx)("div", {
     className: h.container,
@@ -69,7 +69,7 @@ function _(e) {
             assetCount: c,
             size: d.F.MEDIUM
           }), (0, i.jsx)(a.zxk, {
-            onClick: m,
+            onClick: g,
             color: a.zxk.Colors.PRIMARY,
             children: "Manage"
           })]
@@ -94,18 +94,18 @@ function x() {
     children: [(0, i.jsx)(_, {
       headerAssetSrc: f,
       headerText: p.intl.string(p.t.CQkyMj),
-      description: p.intl.string(g.default.ctRS3d),
+      description: p.intl.string(m.default.ctRS3d),
       assets: t,
       assetCount: n,
-      onClick: () => o.Z.open(m.oAB.REGISTERED_GAMES),
+      onClick: () => o.Z.open(g.oAB.REGISTERED_GAMES),
       disabled: e
     }), (0, i.jsx)(_, {
       headerAssetSrc: b,
       headerText: p.intl.string(p.t["3fe7U1"]),
-      description: p.intl.string(g.default.DU5UXF),
+      description: p.intl.string(m.default.DU5UXF),
       assets: r,
       assetCount: s,
-      onClick: () => o.Z.open(m.oAB.CONNECTIONS),
+      onClick: () => o.Z.open(g.oAB.CONNECTIONS),
       disabled: e
     })]
   })

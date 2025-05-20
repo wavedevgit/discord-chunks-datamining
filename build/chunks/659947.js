@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   Z: () => I
 }), n(539854), n(388685);
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(600164),
   d = n(415795),
   u = n(592125),
-  m = n(984933),
-  g = n(430824),
+  g = n(984933),
+  m = n(430824),
   p = n(914010),
   h = n(727785),
   f = n(388032),
@@ -102,7 +102,7 @@ function I(e) {
   r.useEffect(() => {
     o.current = s
   });
-  let [d, u] = r.useState(null != (n = null == (t = s.params) ? void 0 : t.channelId) ? n : void 0), m = r.useCallback(() => {
+  let [d, u] = r.useState(null != (n = null == (t = s.params) ? void 0 : t.channelId) ? n : void 0), g = r.useCallback(() => {
     (0, l.ZDy)(async () => e => (0, i.jsx)(N, x(_({}, e), {
       onSelect: e => {
         u(e), a.Z.setKeybind(x(_({}, o.current), {
@@ -127,7 +127,7 @@ function I(e) {
         grow: 0,
         shrink: 0,
         children: (0, i.jsx)(l.zxk, {
-          onClick: m,
+          onClick: g,
           children: f.intl.string(f.t.Dm8O4e)
         })
       })]
@@ -167,11 +167,11 @@ function N(e) {
     autocompleterBeforeCreateSearchContext: j
   }), A = function(e) {
     let t = "" !== e,
-      n = (0, s.Wu)([m.ZP, u.Z, p.Z], () => {
+      n = (0, s.Wu)([g.ZP, u.Z, p.Z], () => {
         let e = p.Z.getGuildId();
         if (t || null == e) return [];
         let n = [];
-        for (let t of m.ZP.getVocalChannelIds(e)) {
+        for (let t of g.ZP.getVocalChannelIds(e)) {
           let e = u.Z.getChannel(t);
           null != e && n.push(e)
         }
@@ -267,7 +267,7 @@ function N(e) {
           })();
           if (null == r) return null;
           let s = null != r.parent_id ? u.Z.getChannel(r.parent_id) : void 0,
-            l = g.Z.getGuild(r.guild_id);
+            l = m.Z.getGuild(r.guild_id);
           return (0, i.jsx)(d.$W, {
             id: r.id,
             channel: r,
@@ -303,12 +303,12 @@ function y(e) {
     channel: n,
     category: r,
     guild: a
-  } = (0, s.cj)([u.Z, g.Z], () => {
+  } = (0, s.cj)([u.Z, m.Z], () => {
     let e = null != t ? u.Z.getChannel(t) : void 0;
     return null != e ? {
       channel: e,
       category: null != e.parent_id ? u.Z.getChannel(e.parent_id) : void 0,
-      guild: null != e.guild_id ? g.Z.getGuild(e.guild_id) : void 0
+      guild: null != e.guild_id ? m.Z.getGuild(e.guild_id) : void 0
     } : {
       channel: void 0,
       category: void 0,

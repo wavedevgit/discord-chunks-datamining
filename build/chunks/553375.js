@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  a = n(26033),
-  o = n(810568),
+  o = n(26033),
+  a = n(810568),
   s = n(168524),
   l = n(858042),
   c = n(981631),
@@ -22,7 +22,7 @@ function d(e) {
     entry: r
   } = e;
   return null != r ? {
-    applicationId: (0, a.dX)(r) ? r.extra.application_id : void 0,
+    applicationId: (0, o.dX)(r) ? r.extra.application_id : void 0,
     sourceUserId: r.author_id
   } : null != n ? {
     applicationId: n.type === c.IIU.PLAYING && null != n.application_id ? n.application_id : void 0,
@@ -55,7 +55,7 @@ function _(e) {
   let {
     user: t,
     activity: n,
-    entry: a,
+    entry: o,
     onAction: l,
     isMenuOpen: c,
     appContext: f
@@ -64,11 +64,11 @@ function _(e) {
     sourceUserId: p
   } = d({
     activity: n,
-    entry: a,
+    entry: o,
     user: t
   }), h = (0, s.Z)({
     location: "UserProfileActivityContextMenu",
-    source: o.m1.UserProfileCardContextMenu,
+    source: a.m1.UserProfileCardContextMenu,
     trackEntryPointImpression: c,
     applicationId: _,
     sourceUserId: p,

@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   Z: () => v
 }), n(388685);
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(481060),
   d = n(846027),
   u = n(906732),
-  m = n(687058),
-  g = n(253052),
+  g = n(687058),
+  m = n(253052),
   p = n(463395),
   h = n(131951),
   f = n(358085),
@@ -41,8 +41,8 @@ function v() {
       inputDeviceId: h.Z.getInputDeviceId(),
       outputDeviceId: h.Z.getOutputDeviceId()
     })),
-    y = (0, m.Z)(),
-    A = (0, g.Z)(),
+    y = (0, g.Z)(),
+    A = (0, m.Z)(),
     P = r.useMemo(() => {
       let e = l()(y).find(e => e.id === I),
         t = l()(A).find(e => e.id === N),

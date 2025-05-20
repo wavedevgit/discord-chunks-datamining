@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(692547),
   l = n(481060),
   c = n(906732),
@@ -63,7 +63,7 @@ function I(e) {
   let {
     channel: t,
     textVariant: n,
-    textClassName: a,
+    textClassName: o,
     iconClassName: b,
     hideText: O = !1,
     hideTooltip: I = !1,
@@ -84,7 +84,7 @@ function I(e) {
     size: "custom",
     color: T,
     channel: t,
-    className: o()(E.icon, b)
+    className: a()(E.icon, b)
   }) : (0, r.jsx)(l.ua7, {
     text: A,
     "aria-label": (0, u.ZP)({
@@ -96,12 +96,12 @@ function I(e) {
       size: "custom",
       color: s.Z.colors.STATUS_POSITIVE,
       channel: t,
-      className: o()(E.icon, b)
+      className: a()(E.icon, b)
     }))
   }), D = () => {
     let e = {
       variant: n,
-      className: a,
+      className: o,
       canTruncate: S
     };
     return C ? (0, r.jsx)(h.Z, v(y({}, e), {

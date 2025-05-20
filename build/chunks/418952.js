@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 e.exports = {
   content: "content_b00844",
   contentNoArt: "contentNoArt_b00844",

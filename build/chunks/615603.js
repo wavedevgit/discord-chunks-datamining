@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   Z: () => w
 }), n(539854), n(314940);
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(481060),
   d = n(607070),
   u = n(975298),
-  m = n(125529),
-  g = n(760558),
+  g = n(125529),
+  m = n(760558),
   p = n(401786),
   h = n(450468),
   f = n(98278),
@@ -71,7 +71,7 @@ function R(e) {
     premiumSubscription: a,
     useReducedMotion: o,
     boostManagementDisabledFromFractionalPremium: d
-  } = e, u = r.useMemo(() => null != t.cooldownEndsAt ? new Date(t.cooldownEndsAt) : null, [t]), g = (0, E.tl)(t), p = (null == a ? void 0 : a.isPaused) === !0 || d, h = d ? N.intl.format(N.t.hshta2, {
+  } = e, u = r.useMemo(() => null != t.cooldownEndsAt ? new Date(t.cooldownEndsAt) : null, [t]), m = (0, E.tl)(t), p = (null == a ? void 0 : a.isPaused) === !0 || d, h = d ? N.intl.format(N.t.hshta2, {
     helpCenterLink: C.Z.getArticleURL(T.BhN.FRACTIONAL_PREMIUM_ABOUT)
   }) : N.intl.string(N.t.mOWsFx);
   return (0, i.jsxs)("li", {
@@ -81,9 +81,9 @@ function R(e) {
       children: [(0, i.jsx)(v.Z, {
         className: y.unappliedGuildBoostSlotIcon,
         hasCooldown: t.isOnCooldown(),
-        isCanceled: g,
+        isCanceled: m,
         useReducedMotion: o
-      }), g && null != a ? (0, i.jsx)(c.Text, {
+      }), m && null != a ? (0, i.jsx)(c.Text, {
         color: "text-muted",
         variant: "text-sm/medium",
         children: N.intl.format(N.t.Z4ULRE, {
@@ -99,7 +99,7 @@ function R(e) {
       })]
     }), (0, i.jsxs)("div", {
       className: y.unappliedGuildBoostSlotContentSecondary,
-      children: [n && !g && (0, i.jsx)(m.Z, {
+      children: [n && !m && (0, i.jsx)(g.Z, {
         shouldShow: p,
         text: h,
         "aria-label": h.toString(),
@@ -112,7 +112,7 @@ function R(e) {
           disabled: p,
           children: N.intl.string(N.t.twFU3d)
         }))
-      }), g && (0, i.jsx)(m.Z, {
+      }), m && (0, i.jsx)(g.Z, {
         shouldShow: p,
         text: h,
         "aria-label": h.toString(),
@@ -253,14 +253,14 @@ let w = function(e) {
           })]
         }), (0, i.jsx)("div", {
           className: y.headerContentSecondary,
-          children: (0, i.jsx)(m.Z, {
+          children: (0, i.jsx)(g.Z, {
             shouldShow: null == X || B,
             text: J,
             "aria-label": J.toString(),
             children: e => (0, i.jsx)(c.zxk, P(A({}, e), {
               disabled: null == X || B,
               onClick: null != X ? () => {
-                (0, c.ZDy)(async () => e => (0, i.jsx)(g.default, P(A({}, e), {
+                (0, c.ZDy)(async () => e => (0, i.jsx)(m.default, P(A({}, e), {
                   guildBoostSlots: [X],
                   locationSection: T.jXE.SETTINGS_PREMIUM
                 })))

@@ -2,12 +2,12 @@
 "use strict";
 n.d(t, {
   X0: () => s,
-  uH: () => o,
-  zv: () => a
+  uH: () => a,
+  zv: () => o
 });
 var r = n(818083),
   i = n(987338);
-let a = (0, r.B)({
+let o = (0, r.B)({
   id: "2024-11_soundmoji_rendering",
   label: "Render soundmojis",
   kind: "user",
@@ -24,11 +24,11 @@ let a = (0, r.B)({
   }]
 });
 
-function o(e) {
+function a(e) {
   let {
     location: t
   } = e;
-  return a.getCurrentConfig({
+  return o.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: !1
@@ -39,7 +39,7 @@ function s(e) {
   let {
     location: t
   } = e;
-  return a.useExperiment({
+  return o.useExperiment({
     location: t
   }, {
     autoTrackExposure: !1

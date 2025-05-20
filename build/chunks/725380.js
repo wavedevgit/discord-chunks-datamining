@@ -27,9 +27,9 @@ n.d(t, {
   Ky: () => l,
   RF: () => c
 }), n(388685), n(35282);
-let a = {};
+let o = {};
 
-function o(e, t) {
+function a(e, t) {
   return "".concat(e, ":").concat(t)
 }
 
@@ -39,18 +39,18 @@ function s(e) {
 }
 
 function l(e, t) {
-  return a[o(e, t)]
+  return o[a(e, t)]
 }
 
 function c(e, t, n) {
-  let r = o(e, t);
-  a[r] = i({}, a[r], n)
+  let r = a(e, t);
+  o[r] = i({}, o[r], n)
 }
 
 function u(e) {
-  for (let t in a) {
+  for (let t in o) {
     let [n, r] = s(t);
-    e(n, r, a[t])
+    e(n, r, o[t])
   }
-  a = {}
+  o = {}
 }

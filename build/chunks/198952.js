@@ -1,6 +1,6 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
-  Z: () => m,
+  Z: () => g,
   r: () => u
 });
 var i = n(255367);
@@ -19,8 +19,8 @@ let d = l.ZP.getEnableHardwareAcceleration() ? r.Xo$ : r.qEK,
       avatarSize: c = r.EFr.SIZE_48
     } = e, {
       avatarSrc: u,
-      avatarDecorationSrc: m,
-      eventHandlers: g
+      avatarDecorationSrc: g,
+      eventHandlers: m
     } = (0, s.Z)({
       user: l,
       size: c
@@ -42,10 +42,10 @@ let d = l.ZP.getEnableHardwareAcceleration() ? r.Xo$ : r.qEK,
         })
       }
       return e
-    }({}, g), n = n = {
+    }({}, m), n = n = {
       children: (0, i.jsx)(d, {
         src: u,
-        avatarDecoration: m,
+        avatarDecoration: g,
         size: c,
         "aria-label": o.intl.formatToPlainString(a.default.kFj4h4, {
           name: l.username
@@ -62,7 +62,7 @@ let d = l.ZP.getEnableHardwareAcceleration() ? r.Xo$ : r.qEK,
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   },
-  m = e => {
+  g = e => {
     let {
       currentUser: t,
       otherUser: n,

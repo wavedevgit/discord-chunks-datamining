@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(442837),
-  a = n(481060),
-  o = n(569545),
+  o = n(481060),
+  a = n(569545),
   s = n(687516),
   l = n(314897),
   c = n(959457),
@@ -39,7 +39,7 @@ function _(e, t, d) {
   var _;
   let p = (0, s.Cf)(e),
     h = (0, i.e7)([l.default], () => l.default.getId()),
-    m = null != e ? (0, o.V9)(e) : c.Z.getActiveStreamKey(),
+    m = null != e ? (0, a.V9)(e) : c.Z.getActiveStreamKey(),
     g = null != (_ = c.Z.getVideoStats(m)) ? _ : {},
     E = f({
       media_session_id: c.Z.getMediaSessionId(m),
@@ -48,7 +48,7 @@ function _(e, t, d) {
       max_viewers: c.Z.getMaxViewers(m)
     }, g),
     b = () => {
-      null == d || d(), null != e && (0, a.ZDy)(async () => {
+      null == d || d(), null != e && (0, o.ZDy)(async () => {
         let {
           default: t
         } = await n.e("18912").then(n.bind(n, 340140));
@@ -60,11 +60,11 @@ function _(e, t, d) {
         }, n))
       })
     };
-  return null == e ? null : (0, r.jsx)(a.sNh, {
+  return null == e ? null : (0, r.jsx)(o.sNh, {
     id: "report-stream-problem",
     color: "danger",
     label: u.intl.string(u.t.sdnCxc),
     action: b,
-    icon: a.P4T
+    icon: o.P4T
   })
 }

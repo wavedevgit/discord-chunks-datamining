@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   Z: () => h
 });
@@ -12,8 +12,8 @@ var r = n(120356),
   c = n(906732),
   d = n(921801),
   u = n(131951),
-  m = n(726985),
-  g = n(388032),
+  g = n(726985),
+  m = n(388032),
   p = n(20493);
 
 function h(e) {
@@ -34,11 +34,11 @@ function h(e) {
       onChange: e => o.Z.setSidechainCompression(e, {
         analyticsLocations: h
       }),
-      note: g.intl.string(g.t.zlA23N),
+      note: m.intl.string(m.t.zlA23N),
       hideBorder: t,
-      children: g.intl.string(g.t["/jwMtr"])
+      children: m.intl.string(m.t["/jwMtr"])
     }), (0, i.jsx)(a.xJW, {
-      title: g.intl.string(g.t.fhEzfn),
+      title: m.intl.string(m.t.fhEzfn),
       children: (0, i.jsx)(a.iRW, {
         initialValue: r,
         minValue: 1,
@@ -49,7 +49,7 @@ function h(e) {
     })]
   });
   return (0, i.jsx)(d.F, {
-    setting: m.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_SIDECHAIN_COMPRESSION,
+    setting: g.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_SIDECHAIN_COMPRESSION,
     children: t ? f : (0, i.jsx)(a.hjN, {
       className: p.marginBottom20,
       children: f

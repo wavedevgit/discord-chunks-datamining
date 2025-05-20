@@ -1,6 +1,6 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -12,10 +12,10 @@ var i = n(255367),
   d = n(353857),
   u = n(444675);
 
-function m() {
+function g() {
   let e = (0, s.e7)([o.default], () => o.default.locale),
-    [t, m] = r.useState(e),
-    [g] = r.useState(() => (0, c.getAvailableLocales)().map(e => {
+    [t, g] = r.useState(e),
+    [m] = r.useState(() => (0, c.getAvailableLocales)().map(e => {
       var t, r;
       let s;
       try {
@@ -74,7 +74,7 @@ function m() {
       let {
         value: t
       } = e;
-      m(t), u.nextTick(() => a.ZP.updateLocale(t))
+      g(t), u.nextTick(() => a.ZP.updateLocale(t))
     }, []);
   return (0, i.jsx)(l.hjN, {
     tag: l.RB0.H1,
@@ -84,7 +84,7 @@ function m() {
         title: c.intl.string(c.t["mx+sp6"]),
         children: (0, i.jsx)(l.FXm, {
           onChange: p,
-          options: g,
+          options: m,
           value: t
         })
       })

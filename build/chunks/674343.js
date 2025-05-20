@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   Z: () => u
 }), n(953529);
@@ -19,11 +19,11 @@ function u(e) {
     description: r,
     label: a,
     onVolumeChange: u,
-    refreshStyles: m = !1
+    refreshStyles: g = !1
   } = e;
   return (0, i.jsxs)("div", {
     className: s()(c.soundboardRow, {
-      [c.refresh]: m
+      [c.refresh]: g
     }),
     children: [(0, i.jsx)("div", {
       className: c.soundboardColumn,

@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   Z: () => x
 }), n(388685);
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(963056),
   d = n(570928),
   u = n(100527),
-  m = n(906732),
-  g = n(51144),
+  g = n(906732),
+  m = n(51144),
   p = n(429467),
   h = n(981631),
   f = n(388032),
@@ -61,7 +61,7 @@ function x(e) {
     customStatusHoverOnlyRTCEntrypointEnabled: j
   } = e, {
     analyticsLocations: O
-  } = (0, m.ZP)(u.Z.RTC_PANEL), S = null == s ? void 0 : s.find(e => {
+  } = (0, g.ZP)(u.Z.RTC_PANEL), S = null == s ? void 0 : s.find(e => {
     let {
       type: t
     } = e;
@@ -108,7 +108,7 @@ function x(e) {
       }
     })
   }, [O]), T = r.useMemo(() => null != E && E !== a.Skl.UNKNOWN && null != l && l.isPomelo() ? (0, i.jsx)(c.Z, {
-    text: g.ZP.humanizeStatus(E)
+    text: m.ZP.humanizeStatus(E)
   }) : C, [E, l, C]), I = void 0 !== S, [N, y] = r.useState(!1), A = r.useMemo(() => (0, i.jsx)(_, {
     openModal: v,
     hasCustomStatus: I,
@@ -120,7 +120,7 @@ function x(e) {
     forceHover: t || N,
     children: T
   }) : A;
-  return (0, i.jsx)(m.Gt, {
+  return (0, i.jsx)(g.Gt, {
     value: O,
     children: null != s && s.length > 0 ? (0, i.jsx)(d.Z, {
       hoverText: P,

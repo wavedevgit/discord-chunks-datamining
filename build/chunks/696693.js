@@ -1,4 +1,4 @@
-/** Chunk was on 20565 **/
+/** Chunk was on 94784 **/
 e.exports = {
   modal: "modal_cf1d1c",
   closeBtn: "closeBtn_cf1d1c",

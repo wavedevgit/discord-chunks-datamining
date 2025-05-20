@@ -1,18 +1,18 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  EU: () => o,
+  EU: () => a,
   Xm: () => i
 });
 var r = n(4242);
 
 function i(e) {
   return null == e ? null : {
-    nameplate: a(e.nameplate)
+    nameplate: o(e.nameplate)
   }
 }
 
-function a(e) {
+function o(e) {
   return null == e ? null : {
     asset: e.asset,
     skuId: e.sku_id,
@@ -22,7 +22,7 @@ function a(e) {
   }
 }
 
-function o(e) {
+function a(e) {
   return {
     src: e.asset,
     imgAlt: e.label,

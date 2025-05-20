@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(481060),
+  o = n.n(i),
+  a = n(481060),
   s = n(315263),
   l = n(100527),
   c = n(906732),
@@ -107,7 +107,7 @@ function B(e) {
     location: "UserProfileBadgeList"
   }), W = (0, N.Of)(null != (t = null == Z ? void 0 : Z.id) ? t : null), K = (0, A.Z)(W).some(e => e.id === E.l.ORB_PROFILE_BADGE);
   return (0, r.jsx)("div", {
-    className: a()(x.container, i),
+    className: o()(x.container, i),
     "aria-label": L.intl.string(L.t.VWV0y8),
     role: "group",
     children: n.map((e, t) => {
@@ -172,12 +172,12 @@ function B(e) {
           currentUserOwnsOrbBadge: K
         }),
         N = null != c && Y;
-      return (0, r.jsx)(o.DY3, {
+      return (0, r.jsx)(a.DY3, {
         text: S,
         "aria-label": e.description,
         forceOpen: null != j && j(e.id),
         delay: C.vB,
-        children: (0, r.jsx)(o.eee, {
+        children: (0, r.jsx)(a.eee, {
           onClick: y,
           onMouseEnter: v,
           href: e.link,
@@ -188,7 +188,7 @@ function B(e) {
             alt: " ",
             "aria-hidden": !0,
             src: null != (n = e.iconSrc) ? n : (0, C.Ej)(e.icon),
-            className: a()(x.badge, d)
+            className: o()(x.badge, d)
           })
         })
       }, "".concat(e.id, "-").concat(t))

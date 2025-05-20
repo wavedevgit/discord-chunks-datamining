@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   Z: () => u
 });
@@ -17,8 +17,8 @@ function u(e) {
   let {
     otherUser: l,
     status: u
-  } = e, m = (0, a.j_)(l.id, u), {
-    avatarSrc: g,
+  } = e, g = (0, a.j_)(l.id, u), {
+    avatarSrc: m,
     avatarDecorationSrc: p,
     eventHandlers: h
   } = (0, s.Z)({
@@ -47,7 +47,7 @@ function u(e) {
     }({}, h), n = n = {
       children: (0, i.jsx)(d, {
         className: c.avatar,
-        src: g,
+        src: m,
         avatarDecoration: p,
         size: r.EFr.SIZE_40,
         "aria-label": l.username
@@ -72,7 +72,7 @@ function u(e) {
         className: c.__invalid_timestamp,
         color: "text-muted",
         variant: "text-xs/normal",
-        children: m
+        children: g
       })]
     })]
   })

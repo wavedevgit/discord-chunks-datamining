@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   Z: () => ei
 }), n(388685);
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(524437),
   d = n(780384),
   u = n(481060),
-  m = n(153867),
-  g = n(230711),
+  g = n(153867),
+  m = n(230711),
   p = n(493773),
   h = n(714338),
   f = n(857595),
@@ -293,7 +293,7 @@ class ee extends r.Component {
         className: G.forcedColorsWarning,
         children: (0, _.b)() ? V.intl.format(V.t.Jae48P, {
           onClick: () => {
-            g.Z.open(B.oAB.ACCESSIBILITY)
+            m.Z.open(B.oAB.ACCESSIBILITY)
           }
         }) : V.intl.string(V.t.AUMSZG)
       })
@@ -447,7 +447,7 @@ class ee extends r.Component {
         className: F.marginTop20,
         children: V.intl.format(V.t["5LEQdX"], {
           onAccessibilityClick() {
-            g.Z.open(B.oAB.ACCESSIBILITY)
+            m.Z.open(B.oAB.ACCESSIBILITY)
           }
         })
       })]
@@ -482,11 +482,11 @@ class ee extends r.Component {
   }
   constructor(...e) {
     super(...e), H(this, "darkMessages", J(B.BRd.DARK)), H(this, "lightMessages", J(B.BRd.LIGHT)), H(this, "handleDisplayCompactAvatarsChanged", e => {
-      m.ZP.updatedUnsyncedSettings({
+      g.ZP.updatedUnsyncedSettings({
         displayCompactAvatars: e
       })
     }), H(this, "handleDesktopRefreshEnabledChanged", e => {
-      m.ZP.updatedUnsyncedSettings({
+      g.ZP.updatedUnsyncedSettings({
         disableVisualRefresh: !e
       })
     }), H(this, "handleMessageDisplayModeChange", e => {
@@ -604,7 +604,7 @@ class et extends ee {
       className: G.a11yCallout,
       children: V.intl.format(V.t["5LEQdX"], {
         onAccessibilityClick() {
-          g.Z.open(B.oAB.ACCESSIBILITY)
+          m.Z.open(B.oAB.ACCESSIBILITY)
         }
       })
     });

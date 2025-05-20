@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   Z: () => E
 });
@@ -12,8 +12,8 @@ var r = n(442837),
   c = n(526156),
   d = n(406613),
   u = n(314394),
-  m = n(625528),
-  g = n(674116),
+  g = n(625528),
+  m = n(674116),
   p = n(754367),
   h = n(661950),
   f = n(526761),
@@ -29,14 +29,14 @@ function E() {
   } = (0, d.F)({
     location: "UserSettingsVoiceAndVideo"
   });
-  if (!n) return (0, i.jsx)(g.Z, {});
+  if (!n) return (0, i.jsx)(m.Z, {});
   let E = [{
       title: x.intl.string(x.t.K3lovL),
       component: h.Z,
       setting: b.s6.VOICE_AND_VIDEO_VOICE_TAB
     }, {
       title: x.intl.string(x.t.FlNoSU),
-      component: m.Z,
+      component: g.Z,
       setting: b.s6.VOICE_AND_VIDEO_VIDEO_TAB,
       subsection: f.gP
     }, {

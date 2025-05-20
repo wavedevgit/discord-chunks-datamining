@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   Z: () => p
 }), n(953529);
@@ -12,12 +12,12 @@ var r = n(120356),
   c = n(332495),
   d = n(388032),
   u = n(175875),
-  m = n(589608),
-  g = n(128216);
+  g = n(589608),
+  m = n(128216);
 let p = () => {
   let e = (0, a.o)(d.intl.string(c.default.i4XFEB), d.intl.string(c.default.eHQZuL));
   return (0, i.jsxs)("div", {
-    className: s()(u.container, m.box, m),
+    className: s()(u.container, g.box, g),
     children: [(0, i.jsxs)("div", {
       children: [(0, i.jsx)(l.X6q, {
         className: u.header,
@@ -34,7 +34,7 @@ let p = () => {
     }), (0, i.jsx)("div", {
       className: u.artContainer,
       children: (0, i.jsx)("img", {
-        src: g,
+        src: m,
         alt: d.intl.string(c.default.o4pfFB)
       })
     })]

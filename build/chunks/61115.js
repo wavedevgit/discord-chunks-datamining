@@ -6,9 +6,9 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
-  s = n(950035),
+  o = n(120356),
+  a = n.n(o),
+  s = n(230986),
   l = n(481060),
   c = n(493773),
   u = n(600164),
@@ -66,8 +66,8 @@ function T(e) {
   let {
     questId: t,
     survey: n,
-    transitionState: a,
-    onClose: o,
+    transitionState: o,
+    onClose: a,
     onSubmit: f
   } = e, p = (0, _.B4)(t), [b, O] = i.useState(0), [T, N] = (0, l.q_F)(() => ({
     from: {
@@ -84,12 +84,12 @@ function T(e) {
   }, R = async e => {
     1 === e && (await N({
       width: "100%"
-    }), o())
+    }), a())
   };
   return (0, c.ZP)(() => {
     null != p && d.default.track(h.rMx.QUEST_SURVEY_DISPLAYED, C(p, n))
-  }), null == p && o(), (0, r.jsx)(l.Y0X, {
-    transitionState: a,
+  }), null == p && a(), (0, r.jsx)(l.Y0X, {
+    transitionState: o,
     size: l.CgR.DYNAMIC,
     className: g.modalRoot,
     children: (0, r.jsxs)(l.MyZ, {
@@ -104,7 +104,7 @@ function T(e) {
           className: g.modalHeader,
           children: [(0, r.jsx)(l.olH, {
             className: g.closeBtn,
-            onClick: o
+            onClick: a
           }), (0, r.jsx)("img", {
             src: E,
             alt: "",
@@ -144,7 +144,7 @@ function T(e) {
           children: (0, r.jsxs)("div", {
             className: g.closeButtonContainer,
             children: [(0, r.jsx)(l.zxk, {
-              onClick: o,
+              onClick: a,
               children: m.intl.string(m.t.cpT0Cg)
             }), (0, r.jsx)(s.animated.div, {
               className: g.progressOverlay,
@@ -164,7 +164,7 @@ function A(e) {
     onClick: i
   } = e;
   return (0, r.jsxs)(l.P3F, {
-    className: o()(g.choiceContainer, t),
+    className: a()(g.choiceContainer, t),
     onClick: () => i(n),
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/semibold",

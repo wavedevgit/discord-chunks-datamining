@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => _
 });
 var r, i = n(442837),
-  a = n(570140);
+  o = n(570140);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -33,8 +33,8 @@ class f extends(r = i.ZP.Store) {
     return l
   }
 }
-o(f, "displayName", "CollectiblesMarketingsStore");
-let _ = new f(a.Z, {
+a(f, "displayName", "CollectiblesMarketingsStore");
+let _ = new f(o.Z, {
   COLLECTIBLES_MARKETING_FETCH: c,
   COLLECTIBLES_MARKETING_FETCH_SUCCESS: u,
   LOGOUT: d

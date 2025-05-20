@@ -12,14 +12,14 @@ e.exports = function(e) {
       relevance: 10
     },
     i = "[A-Za-z_][A-Za-z0-9_'-]*",
-    a = {
+    o = {
       scope: "symbol",
       match: RegExp(`<${i}(/${i})*>`)
     },
-    o = "[A-Za-z0-9_\\+\\.-]+",
+    a = "[A-Za-z0-9_\\+\\.-]+",
     s = {
       scope: "symbol",
-      match: RegExp(`(\\.\\.|\\.|~)?/(${o})?(/${o})*(?=[\\s;])`)
+      match: RegExp(`(\\.\\.|\\.|~)?/(${a})?(/${a})*(?=[\\s;])`)
     },
     l = t.either("==", "=", "\\+\\+", "\\+", "<=", "<\\|", "<", ">=", ">", "->", "//", "/", "!=", "!", "\\|\\|", "\\|>", "\\?", "\\*", "&&"),
     c = {
@@ -101,7 +101,7 @@ e.exports = function(e) {
     g = [u, e.HASH_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, e.COMMENT(/\/\*\*(?!\/)/, /\*\//, {
       subLanguage: "markdown",
       relevance: 0
-    }), r, h, a, s, m, f, d, c];
+    }), r, h, o, s, m, f, d, c];
   return _.contains = g, {
     name: "Nix",
     aliases: ["nixos"],

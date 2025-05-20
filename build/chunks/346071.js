@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  a = n(886969),
-  o = n(474936),
+  o = n(886969),
+  a = n(474936),
   s = n(388032),
   l = n(429680);
 
@@ -16,7 +16,7 @@ function c(e) {
     fractionalPremiumInfo: t,
     variant: n = "default",
     style: c
-  } = e, u = t.fractionalState === o.a$.FP_SUB_PAUSED, d = (0, a.Z)(t.endsAt, u), f = "", _ = {
+  } = e, u = t.fractionalState === a.a$.FP_SUB_PAUSED, d = (0, o.Z)(t.endsAt, u), f = "", _ = {
     trial: {
       days_and_hours: s.t.SQyVVV,
       days: s.t["2ifAYG"],

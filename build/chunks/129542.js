@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  D: () => a
+  D: () => o
 }), n(415506);
 var r = n(358085),
   i = n(981631);
 
-function a() {
+function o() {
   switch ((0, r.getPlatform)()) {
     case r.PlatformTypes.WINDOWS:
       let e = "x86";

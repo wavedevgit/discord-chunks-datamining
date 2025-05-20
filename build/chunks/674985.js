@@ -1,6 +1,6 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var i, r, s, l = n(442837),
   a = n(570140),
@@ -18,7 +18,7 @@ r = "HypeSquadStore", (i = "displayName") in u ? Object.defineProperty(u, i, {
   configurable: !0,
   writable: !0
 }) : u[i] = r;
-let m = new u(a.Z, {
+let g = new u(a.Z, {
   CONNECTION_OPEN: function() {
     let e = o.default.getCurrentUser();
     null != e && (e.hasFlag(c.xW$.HYPESQUAD_ONLINE_HOUSE_1) ? d = c.gkr.HOUSE_1 : e.hasFlag(c.xW$.HYPESQUAD_ONLINE_HOUSE_2) ? d = c.gkr.HOUSE_2 : e.hasFlag(c.xW$.HYPESQUAD_ONLINE_HOUSE_3) && (d = c.gkr.HOUSE_3))

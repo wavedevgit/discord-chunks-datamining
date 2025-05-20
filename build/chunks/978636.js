@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  JL: () => a,
+  JL: () => o,
   i9: () => i
 }), n(388685);
 let r = (0, n(381814).U)(() => ({
@@ -17,7 +17,7 @@ function i(e) {
   })
 }
 
-function a(e) {
+function o(e) {
   let {
     hasFiredFromMessage: t
   } = r.getState();

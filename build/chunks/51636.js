@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   Z: () => w
 }), n(388685), n(953529);
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(399606),
   d = n(704215),
   u = n(481060),
-  m = n(607070),
-  g = n(213609),
+  g = n(607070),
+  m = n(213609),
   p = n(605236),
   h = n(706140),
   f = n(626135),
@@ -75,7 +75,7 @@ let R = {
       forceShadow: x,
       cardType: O,
       confettiCanvas: S
-    } = e, w = null == e ? void 0 : e.onCtaClick, k = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), [L, B] = r.useState(!1), [M, U] = r.useState(!1), V = (0, b.Er)(), G = (0, b.IB)(), [F, H] = r.useState(!1), [z, W] = r.useState(t === C.I.TENURE_REWARD_COLLECTIBLE && G && (null == V ? void 0 : V.nitroTenureStatus) === v.EB.REDEEMABLE);
+    } = e, w = null == e ? void 0 : e.onCtaClick, k = (0, c.e7)([g.Z], () => g.Z.useReducedMotion), [L, B] = r.useState(!1), [M, U] = r.useState(!1), V = (0, b.Er)(), G = (0, b.IB)(), [F, H] = r.useState(!1), [z, W] = r.useState(t === C.I.TENURE_REWARD_COLLECTIBLE && G && (null == V ? void 0 : V.nitroTenureStatus) === v.EB.REDEEMABLE);
     r.useEffect(() => {
       t === C.I.TENURE_REWARD_COLLECTIBLE && G && (null == V ? void 0 : V.nitroTenureStatus) === v.EB.REDEEMABLE && W(!0)
     }, [G, t, V]);
@@ -119,7 +119,7 @@ let R = {
       k && L && (U(!0), f.default.track(T.rMx.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
         card_type: t
       }), null != s && Q(I.L.TAKE_ACTION))
-    }, [k, L, s, t, Q]), (0, g.Z)({
+    }, [k, L, s, t, Q]), (0, m.Z)({
       type: o.ImpressionTypes.VIEW,
       name: o.ImpressionNames.PREMIUM_MARKETING_TENURE_REWARD_CARD,
       properties: {
@@ -131,7 +131,7 @@ let R = {
       }
     }, {
       disableTrack: t !== C.I.TENURE_REWARD_COLLECTIBLE || null == V
-    }), (0, g.Z)({
+    }), (0, m.Z)({
       type: o.ImpressionTypes.VIEW,
       name: o.ImpressionNames.PERK_DISCOVERABILITY_CARD,
       properties: {
@@ -247,8 +247,8 @@ let Z = r.forwardRef((e, t) => {
     description: o = "",
     descriptionCta: c = "",
     isPremiumGetCta: d,
-    onCtaClick: m,
-    onMouseEnter: g,
+    onCtaClick: g,
+    onMouseEnter: m,
     className: p,
     perkComponent: h,
     cardVariant: f,
@@ -264,7 +264,7 @@ let Z = r.forwardRef((e, t) => {
       [y.clickable]: null != _,
       [y.hideOverflow]: I
     }),
-    onMouseEnter: g,
+    onMouseEnter: m,
     style: {
       backgroundImage: null != E ? "url(".concat(E, ")") : void 0
     },
@@ -282,7 +282,7 @@ let Z = r.forwardRef((e, t) => {
       perkImage: v,
       isCarousel: I,
       descriptionCta: c,
-      onCtaClick: m,
+      onCtaClick: g,
       perkComponent: h,
       subtitleClassName: y.cardSubtitle,
       cardVariant: f,
@@ -294,7 +294,7 @@ let Z = r.forwardRef((e, t) => {
       description: o,
       descriptionCta: c,
       isPremiumGetCta: d,
-      onCtaClick: m,
+      onCtaClick: g,
       cardVariant: f,
       perkComponent: h
     }), (0, i.jsx)("div", {

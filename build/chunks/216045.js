@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   Z: () => F
 }), n(388685);
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(622535),
   d = n(481060),
   u = n(570140),
-  m = n(809206),
-  g = n(497321),
+  g = n(809206),
+  m = n(497321),
   p = n(634894),
   h = n(100527),
   f = n(906732),
@@ -96,7 +96,7 @@ function F() {
     es = ei === o.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE;
   r.useEffect(() => {
     es && er(U.L.TAKE_ACTION)
-  }, [es, er]), r.useEffect(() => () => u.Z.wait(m.W3), []);
+  }, [es, er]), r.useEffect(() => () => u.Z.wait(g.W3), []);
   let el = "UserSettingsProfileCustomization";
   (0, p.j)({
     location: el + " auto on",
@@ -110,7 +110,7 @@ function F() {
   } = w.b.useExperiment({
     location: "profile customization"
   }), ed = !X, eu = r.useRef(null);
-  return s ? (0, i.jsx)(g.Z, {}) : (0, i.jsxs)(f.Gt, {
+  return s ? (0, i.jsx)(m.Z, {}) : (0, i.jsxs)(f.Gt, {
     value: Q,
     children: [(0, i.jsx)(b.Z, {}), (0, i.jsx)(S.Z, {
       profilePreview: (0, i.jsx)(v.Z, (e = function(e) {

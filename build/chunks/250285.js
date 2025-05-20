@@ -1,6 +1,6 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -11,13 +11,13 @@ var i = n(255367),
   c = n(91192),
   d = n(906732),
   u = n(892001),
-  m = n(772599);
-let g = e => {
+  g = n(772599);
+let m = e => {
   let {
     userId: t,
     children: n,
     isLast: s,
-    className: g
+    className: m
   } = e, [p, h] = r.useState(!1), {
     analyticsLocations: f
   } = (0, d.ZP)(), b = r.useCallback(() => {
@@ -60,9 +60,9 @@ let g = e => {
           style: {
             opacity: 1
           },
-          className: l()(m.rowItem, g, {
-            [m.last]: s,
-            [m.active]: p
+          className: l()(g.rowItem, m, {
+            [g.last]: s,
+            [g.active]: p
           }),
           onMouseEnter: _,
           onMouseLeave: x,

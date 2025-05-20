@@ -9,7 +9,7 @@ n.d(t, {
   $R: () => T,
   A$: () => ee,
   AM: () => W,
-  B: () => ea,
+  B: () => eo,
   B8: () => A,
   BQ: () => ef,
   C2: () => eO,
@@ -36,7 +36,7 @@ n.d(t, {
   Tc: () => eG,
   UE: () => eE,
   V3: () => eF,
-  Vr: () => eo,
+  Vr: () => ea,
   Wl: () => e4,
   Wt: () => eD,
   XP: () => e5,
@@ -94,19 +94,19 @@ n.d(t, {
   z9: () => J,
   zF: () => eA
 }), n(410992), n(227481), n(730884), n(20464), n(341884), n(364341), n(629680), n(505025), n(918970), n(121784), n(644351), n(146733), n(388685), n(953529), n(35282), n(49124), n(415506), n(539854), n(824928), n(563775), n(980754);
-let a = new("undefined" == typeof TextDecoder ? (0, module.require)("util").TextDecoder : TextDecoder)("utf-8", {
+let o = new("undefined" == typeof TextDecoder ? (0, module.require)("util").TextDecoder : TextDecoder)("utf-8", {
   ignoreBOM: !0,
   fatal: !0
 });
-a.decode();
-let o = null;
+o.decode();
+let a = null;
 
 function s() {
-  return (null === o || 0 === o.byteLength) && (o = new Uint8Array(r.memory.buffer)), o
+  return (null === a || 0 === a.byteLength) && (a = new Uint8Array(r.memory.buffer)), a
 }
 
 function l(e, t) {
-  return e >>>= 0, a.decode(s().subarray(e, e + t))
+  return e >>>= 0, o.decode(s().subarray(e, e + t))
 }
 
 function c(e) {
@@ -146,19 +146,19 @@ function h(e, t, n) {
   }
   let r = e.length,
     i = t(r, 1) >>> 0,
-    a = s(),
-    o = 0;
-  for (; o < r; o++) {
-    let t = e.charCodeAt(o);
+    o = s(),
+    a = 0;
+  for (; a < r; a++) {
+    let t = e.charCodeAt(a);
     if (t > 127) break;
-    a[i + o] = t
+    o[i + a] = t
   }
-  if (o !== r) {
-    0 !== o && (e = e.slice(o)), i = n(i, r, r = o + 3 * e.length, 1) >>> 0;
-    let t = p(e, s().subarray(i + o, i + r));
-    o += t.written, i = n(i, r, o, 1) >>> 0
+  if (a !== r) {
+    0 !== a && (e = e.slice(a)), i = n(i, r, r = a + 3 * e.length, 1) >>> 0;
+    let t = p(e, s().subarray(i + a, i + r));
+    a += t.written, i = n(i, r, a, 1) >>> 0
   }
-  return f = o, i
+  return f = a, i
 }
 let m = null;
 
@@ -173,24 +173,24 @@ let E = "undefined" == typeof FinalizationRegistry ? {
 });
 
 function b(e, t, n, i) {
-  let a = {
+  let o = {
       a: e,
       b: t,
       cnt: 1,
       dtor: n
     },
-    o = function() {
+    a = function() {
       for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
-      a.cnt++;
-      let o = a.a;
-      a.a = 0;
+      o.cnt++;
+      let a = o.a;
+      o.a = 0;
       try {
-        return i(o, a.b, ...t)
+        return i(a, o.b, ...t)
       } finally {
-        0 == --a.cnt ? (r.__wbindgen_export_5.get(a.dtor)(o, a.b), E.unregister(a)) : a.a = o
+        0 == --o.cnt ? (r.__wbindgen_export_5.get(o.dtor)(a, o.b), E.unregister(o)) : o.a = a
       }
     };
-  return o.original = a, E.register(o, a, a), o
+  return a.original = o, E.register(a, o, o), a
 }
 
 function y(e) {
@@ -234,7 +234,7 @@ function I(e, t) {
   e >>>= 0;
   let n = g(),
     i = [];
-  for (let a = e; a < e + 4 * t; a += 4) i.push(r.__wbindgen_export_2.get(n.getUint32(a, !0)));
+  for (let o = e; o < e + 4 * t; o += 4) i.push(r.__wbindgen_export_2.get(n.getUint32(o, !0)));
   return r.__externref_drop_slice(e, t), i
 }
 
@@ -251,8 +251,8 @@ function T() {
   r.crash()
 }
 
-function A(e, t, n, i, a) {
-  r.installLogCallback(e, t, n, i, a)
+function A(e, t, n, i, o) {
+  r.installLogCallback(e, t, n, i, o)
 }
 
 function N(e, t) {
@@ -288,8 +288,8 @@ class x {
   static isBlockedDomain(e) {
     let t, n = h(e, r.__wbindgen_malloc, r.__wbindgen_realloc),
       i = f,
-      a = r.blockeddomainsstore_isBlockedDomain(n, i);
-    return 0 !== a[0] && (t = l(a[0], a[1]).slice(), r.__wbindgen_free(a[0], +a[1], 1)), t
+      o = r.blockeddomainsstore_isBlockedDomain(n, i);
+    return 0 !== o[0] && (t = l(o[0], o[1]).slice(), r.__wbindgen_free(o[0], +o[1], 1)), t
   }
   static startFetchingBlockedDomains(e) {
     let t = h(e, r.__wbindgen_malloc, r.__wbindgen_realloc),
@@ -466,11 +466,11 @@ function ei() {
   return Symbol.iterator
 }
 
-function ea(e) {
+function eo(e) {
   return e.length
 }
 
-function eo(e, t) {
+function ea(e, t) {
   return e.match(t)
 }
 
@@ -740,9 +740,9 @@ function e6() {
 function e8(e, t) {
   let n = t,
     i = "string" == typeof n ? n : void 0;
-  var a = d(i) ? 0 : h(i, r.__wbindgen_malloc, r.__wbindgen_realloc),
-    o = f;
-  g().setInt32(e + 4, o, !0), g().setInt32(e + 0, a, !0)
+  var o = d(i) ? 0 : h(i, r.__wbindgen_malloc, r.__wbindgen_realloc),
+    a = f;
+  g().setInt32(e + 4, a, !0), g().setInt32(e + 0, o, !0)
 }
 
 function e7(e, t) {

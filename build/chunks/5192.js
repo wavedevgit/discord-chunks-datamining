@@ -8,17 +8,17 @@ n.d(t, {
 });
 var r = n(442837),
   i = n(592125),
-  a = n(271383),
-  o = n(699516),
+  o = n(271383),
+  a = n(699516),
   s = n(51144),
   l = n(388032);
 
 function c(e, t, n) {
   if (null == n) return null;
-  if (null != e) return a.ZP.getNick(e, n.id);
+  if (null != e) return o.ZP.getNick(e, n.id);
   if (null != t) {
     let e = i.Z.getChannel(t);
-    if (null == e ? void 0 : e.isPrivate()) return o.Z.getNickname(n.id)
+    if (null == e ? void 0 : e.isPrivate()) return a.Z.getNickname(n.id)
   }
   return null
 }
@@ -29,7 +29,7 @@ function u(e, t, n) {
 }
 
 function d(e, t, n) {
-  return (0, r.e7)([a.ZP, i.Z, o.Z], () => u(e, t, n))
+  return (0, r.e7)([o.ZP, i.Z, a.Z], () => u(e, t, n))
 }
 let f = {
   getNickname: c,

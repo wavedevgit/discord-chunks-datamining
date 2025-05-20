@@ -20,8 +20,8 @@ var n = r(255367),
   v = r(981631),
   x = r(388032),
   _ = r(807179);
-let j = new o.Z("EmojiStudioModal"),
-  O = e => {
+let O = new o.Z("EmojiStudioModal"),
+  j = e => {
     let {
       userImage: t,
       guildId: r,
@@ -30,7 +30,7 @@ let j = new o.Z("EmojiStudioModal"),
       let e = d.Z.getGuildId(),
         t = c.Z.getGuild(e);
       return u.Z.can(v.Plq.CREATE_GUILD_EXPRESSIONS, t) && null != t ? t.id : null
-    }), [m, O] = a.useState(null != r ? r : h), [E, D] = a.useState(null), [N, C] = a.useState(""), [w, S] = a.useState(null), [A, k] = a.useState(!1), M = async () => {
+    }), [m, j] = a.useState(null != r ? r : h), [E, D] = a.useState(null), [N, C] = a.useState(""), [w, S] = a.useState(null), [A, k] = a.useState(!1), M = async () => {
       if (D(null), null == m) return void D(g.ze.MISSING_GUILD);
       if (null == t || (null == t ? void 0 : t.file) == null || null == w) return void D(g.ze.MISSING_IMAGE_DATA);
       try {
@@ -40,7 +40,7 @@ let j = new o.Z("EmojiStudioModal"),
           name: N
         })
       } catch (e) {
-        D((0, f.z)(e)), j.error("Failed to upload emoji.", e);
+        D((0, f.z)(e)), O.error("Failed to upload emoji.", e);
         return
       }(0, s.Mr3)(g.Hj)
     }, R = a.useRef(0), T = a.useCallback(e => {
@@ -90,7 +90,7 @@ let j = new o.Z("EmojiStudioModal"),
               })]
             })]
           }), (0, n.jsx)(y, {
-            onChange: O,
+            onChange: j,
             selected: m
           }), (0, n.jsx)(s.zxk, {
             className: _.submit,
@@ -119,7 +119,7 @@ let j = new o.Z("EmojiStudioModal"),
         className: _.modalContent,
         children: [null == l ? (0, n.jsx)(m.u, {
           setUserImage: o
-        }) : (0, n.jsx)(O, {
+        }) : (0, n.jsx)(j, {
           userImage: l,
           guildId: i,
           back: c

@@ -18,15 +18,15 @@ var n = r(255367),
   E = r(72703),
   C = r(626135),
   f = r(823379),
-  R = r(197712),
-  A = r(511004),
+  A = r(197712),
+  R = r(511004),
   O = r(486324),
-  w = r(981631),
-  y = r(678916),
-  D = r(388032),
-  T = r(253380);
+  D = r(981631),
+  I = r(678916),
+  w = r(388032),
+  y = r(253380);
 
-function b(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -45,7 +45,7 @@ function b(e) {
   return e
 }
 
-function x(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -57,11 +57,11 @@ function x(e, t) {
     Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
   }), e
 }
-let I = {
+let _ = {
     x: 0,
     y: 0
   },
-  N = (e, t) => {
+  b = (e, t) => {
     let {
       width: r,
       height: n
@@ -75,18 +75,19 @@ let I = {
     }
   };
 
-function _(e) {
+function x(e) {
   switch (e) {
     case O.pC.BANNER:
       return {
         height: O.f, width: O.L0
       };
     case O.pC.VIDEO_BACKGROUND:
-      return y.HE;
+      return I.HE;
     case O.pC.AVATAR:
     case O.pC.AVATAR_DECORATION:
+    case O.pC.GUILD_ICON:
       return {
-        height: w.dGM, width: w.dGM
+        height: D.dGM, width: D.dGM
       };
     case O.pC.GUILD_BANNER:
       return {
@@ -113,7 +114,7 @@ function k(e) {
   } = e;
   return 1 !== t || 0 !== r || 0 !== n.x || 0 !== n.y
 }
-let M = {
+let G = {
   imageDimensions: null,
   cropDimensions: {
     width: 0,
@@ -125,7 +126,7 @@ let M = {
     left: 0,
     right: 0
   },
-  imageTransformCoordinates: I,
+  imageTransformCoordinates: _,
   imageRotation: 0,
   zoomRatio: 1,
   startingCoordinates: {
@@ -136,22 +137,22 @@ let M = {
   hasImageEdits: !1
 };
 
-function j(e, t) {
+function M(e, t) {
   var r, n, i, a, o, s;
   switch (t.type) {
     case "SET_DIMENSIONS":
-      return x(b({}, e), {
+      return N(T({}, e), {
         imageDimensions: t.imageDimensions,
         cropDimensions: t.cropDimensions,
         dragBoundaries: t.dragBoundaries
       });
     case "START_DRAGGING_IMAGE":
-      return x(b({}, e), {
+      return N(T({}, e), {
         startingCoordinates: t.startingCoordinates,
         isDragging: !0
       });
     case "STOP_DRAGGING_IMAGE":
-      return x(b({}, e), {
+      return N(T({}, e), {
         isDragging: !1,
         hasImageEdits: k({
           zoomRatio: e.zoomRatio,
@@ -160,7 +161,7 @@ function j(e, t) {
         })
       });
     case "ROTATE_IMAGE":
-      return x(b({}, e), {
+      return N(T({}, e), {
         imageRotation: t.imageRotation,
         imageTransformCoordinates: t.imageTransformCoordinates,
         imageDimensions: null != (r = t.imageDimensions) ? r : e.imageDimensions,
@@ -173,7 +174,7 @@ function j(e, t) {
         })
       });
     case "SET_IMAGE_ZOOM_RATIO":
-      return x(b({}, e), {
+      return N(T({}, e), {
         imageTransformCoordinates: t.imageTransformCoordinates,
         zoomRatio: t.zoomRatio,
         dragBoundaries: t.dragBoundaries,
@@ -184,7 +185,7 @@ function j(e, t) {
         })
       });
     case "RESET":
-      return x(b({}, e), {
+      return N(T({}, e), {
         zoomRatio: 1,
         imageRotation: 0,
         imageDimensions: null != (a = t.imageDimensions) ? a : e.imageDimensions,
@@ -203,14 +204,14 @@ function v(e) {
     imageUri: r,
     originalAsset: a,
     transitionState: f,
-    onCrop: y,
+    onCrop: I,
     onClose: k,
     uploadType: v = O.pC.AVATAR,
     showUpsellHeader: S = !1,
-    analyticsPage: G
-  } = e, B = i.useRef(I), P = i.useRef(null), z = i.useRef(null), [L, V] = i.useReducer(j, M), {
-    cropDimensions: H,
-    dragBoundaries: U,
+    analyticsPage: j
+  } = e, B = i.useRef(_), P = i.useRef(null), z = i.useRef(null), [L, U] = i.useReducer(M, G), {
+    cropDimensions: V,
+    dragBoundaries: H,
     imageDimensions: F,
     imageRotation: X,
     zoomRatio: K,
@@ -222,19 +223,19 @@ function v(e) {
     newestAnalyticsLocation: en
   } = (0, d.ZP)(u.Z.IMAGE_CROPPING_MODAL), ei = (0, m.Q3)("ImageEditingModal"), ea = "image/gif" === t.type;
   i.useEffect(() => {
-    (0, A.Z)()
+    (0, R.Z)()
   }, []), i.useEffect(() => {
-    ea && S && C.default.track(w.rMx.OPEN_MODAL, {
-      type: w.jXE.CROP_GIF_MODAL,
+    ea && S && C.default.track(D.rMx.OPEN_MODAL, {
+      type: D.jXE.CROP_GIF_MODAL,
       location: {
-        page: G
+        page: j
       },
       location_stack: er,
       upload_type: v
     })
-  }, [S, G, ea, er, v]);
+  }, [S, j, ea, er, v]);
   let eo = i.useCallback((e, t, r, n) => {
-      B.current = (0, R.U$)(e, t, r), null != P.current && (P.current.style.transform = "translate3d(".concat(B.current.x, "px, ").concat(B.current.y, "px, 0) rotate(").concat(n, "deg)"))
+      B.current = (0, A.U$)(e, t, r), null != P.current && (P.current.style.transform = "translate3d(".concat(B.current.x, "px, ").concat(B.current.y, "px, 0) rotate(").concat(n, "deg)"))
     }, [P]),
     es = i.useCallback(() => {
       if (null == P.current || K > 1) return;
@@ -244,8 +245,8 @@ function v(e) {
       } = P.current.getBoundingClientRect(), {
         width: r,
         height: n
-      } = (0, R.Es)(v, e, t, ei), i = (0, R.AK)(v, r, n, t, ei), a = (0, R.kH)(r, n, i);
-      V({
+      } = (0, A.Es)(v, e, t, ei), i = (0, A.AK)(v, r, n, t, ei), a = (0, A.kH)(r, n, i);
+      U({
         type: "SET_DIMENSIONS",
         imageDimensions: {
           width: r,
@@ -256,7 +257,7 @@ function v(e) {
       })
     }, [ei, v, K]),
     el = i.useCallback(e => {
-      V({
+      U({
         type: "START_DRAGGING_IMAGE",
         startingCoordinates: {
           x: e.clientX - B.current.x,
@@ -269,10 +270,10 @@ function v(e) {
         x: t,
         y: r
       } = B.current;
-      if (Z && (e.clientX !== t || e.clientY !== r)) eo(e.clientX - Y.x, e.clientY - Y.y, U, X)
-    }, [U, X, Z, Y.x, Y.y, eo]),
+      if (Z && (e.clientX !== t || e.clientY !== r)) eo(e.clientX - Y.x, e.clientY - Y.y, H, X)
+    }, [H, X, Z, Y.x, Y.y, eo]),
     eu = i.useCallback(() => {
-      V({
+      U({
         type: "STOP_DRAGGING_IMAGE",
         imageTransformCoordinates: B.current
       })
@@ -282,17 +283,17 @@ function v(e) {
       let {
         width: t,
         height: r
-      } = F, n = (0, R.kH)(t * e, r * e, H), {
+      } = F, n = (0, A.kH)(t * e, r * e, V), {
         x: i,
         y: a
       } = B.current;
-      (0, s.inRange)(i, n.right, n.left) && (0, s.inRange)(a, n.top, n.bottom) || eo(i, a, n, X), V({
+      (0, s.inRange)(i, n.right, n.left) && (0, s.inRange)(a, n.top, n.bottom) || eo(i, a, n, X), U({
         type: "SET_IMAGE_ZOOM_RATIO",
         zoomRatio: e,
         dragBoundaries: n,
         imageTransformCoordinates: B.current
       })
-    }, [H, F, X, eo]),
+    }, [V, F, X, eo]),
     em = i.useCallback((e, t) => {
       let {
         width: r,
@@ -300,7 +301,7 @@ function v(e) {
       } = e, {
         width: i,
         height: a
-      } = (0, R.Es)(v, n, r, ei), o = (0, R.AK)(v, i, a, r, ei), s = (0, R.kH)(i * t, a * t, o);
+      } = (0, A.Es)(v, n, r, ei), o = (0, A.AK)(v, i, a, r, ei), s = (0, A.kH)(i * t, a * t, o);
       return {
         newImageDimensions: {
           width: i,
@@ -327,7 +328,7 @@ function v(e) {
           newCropDimensions: i,
           newDragBoundaries: a
         } = em(F, K);
-        eo(r, n, a, t), V({
+        eo(r, n, a, t), U({
           type: "ROTATE_IMAGE",
           imageTransformCoordinates: B.current,
           imageRotation: t,
@@ -335,12 +336,12 @@ function v(e) {
           cropDimensions: i,
           dragBoundaries: a
         })
-      } else eo(r, n, U, t), V({
+      } else eo(r, n, H, t), U({
         type: "ROTATE_IMAGE",
         imageTransformCoordinates: B.current,
         imageRotation: t
       })
-    }, [U, em, F, X, eo, K]),
+    }, [H, em, F, X, eo, K]),
     eh = i.useCallback(() => {
       if (null != P.current && null != F) {
         if (F.width !== F.height && (X - 0) % 180 != 0) {
@@ -349,55 +350,55 @@ function v(e) {
             newCropDimensions: t,
             newDragBoundaries: r
           } = em(F, 1);
-          V({
+          U({
             type: "RESET",
             imageDimensions: e,
             cropDimensions: t,
             dragBoundaries: r
           }), eo(0, 0, r, 0)
         } else {
-          let e = (0, R.kH)(+F.width, +F.height, H);
-          V({
+          let e = (0, A.kH)(+F.width, +F.height, V);
+          U({
             type: "RESET",
             dragBoundaries: e
           }), eo(0, 0, e, 0)
         }
         et(e => e + 1)
       }
-    }, [H, em, F, X, eo]),
+    }, [V, em, F, X, eo]),
     ep = i.useCallback(() => {
-      let e = _(v);
+      let e = x(v);
       return e.width !== e.height
     }, [v]),
     eE = i.useCallback(() => {
       if (null == F) return {};
       let e = F.width / F.height,
-        t = ep() && e > O.MY ? H.height / F.height : 1,
+        t = ep() && e > O.MY ? V.height / F.height : 1,
         {
           width: r,
           height: n
-        } = N(F, X);
+        } = b(F, X);
       return {
         width: r * K * t,
         minWidth: r * K * t,
         height: n * K * t,
         minHeight: n * K * t
       }
-    }, [H.height, F, X, ep, K]),
+    }, [V.height, F, X, ep, K]),
     eC = i.useCallback(async () => {
       let e;
       if (null == P.current) return;
       Q(!0);
       let r = P.current,
-        n = _(v);
+        n = x(v);
       if (ea) try {
         let {
           result: i,
           cancelFn: a
-        } = await (0, R.$p)({
+        } = await (0, A.$p)({
           file: t,
           image: r,
-          cropDimensions: H,
+          cropDimensions: V,
           cropOriginCoordinates: B.current,
           maxDimensions: n,
           imageRotation: X
@@ -408,12 +409,12 @@ function v(e) {
         throw null == (i = z.current) || i.call(z), z.current = null, Error("Error cropping GIF: ".concat(e instanceof Error ? e.toString() : String(e)))
       } else e = (0, l.PT)({
         image: r,
-        cropDimensions: H,
+        cropDimensions: V,
         cropOriginCoordinates: B.current,
         maxDimensions: n,
         imageRotation: X
       });
-      await y({
+      await I({
         assetOrigin: function(e) {
           let {
             hasImageEdits: t,
@@ -428,7 +429,7 @@ function v(e) {
         file: t,
         originalAsset: a
       }), Q(!1), k()
-    }, [H, t, W, X, ea, k, y, a, v]),
+    }, [V, t, W, X, ea, k, I, a, v]),
     ef = i.useCallback(() => {
       if (null != z.current) {
         z.current(), z.current = null, Q(!1);
@@ -446,52 +447,52 @@ function v(e) {
       return null == (e = z.current) ? void 0 : e.call(z)
     }
   }, []);
-  let eR = v === O.pC.AVATAR || v === O.pC.BANNER,
-    eA = (0, h.M)(!eR);
+  let eA = v === O.pC.AVATAR || v === O.pC.BANNER,
+    eR = (0, h.M)(!eA);
   return (0, n.jsx)(d.Gt, {
     value: er,
     children: (0, n.jsxs)(c.Y0X, {
       transitionState: f,
       size: c.CgR.MEDIUM,
-      children: [S && !eA && (0, n.jsx)(g.Z, {
+      children: [S && !eR && (0, n.jsx)(g.Z, {
         type: v,
-        analyticsPage: G,
-        analyticsSection: w.jXE.CROP_GIF_MODAL,
+        analyticsPage: j,
+        analyticsSection: D.jXE.CROP_GIF_MODAL,
         isGIF: ea,
         banner: r
       }), (0, n.jsxs)(c.xBx, {
-        className: T.modalHeader,
+        className: y.modalHeader,
         separator: !1,
         children: [(0, n.jsx)(c.X6q, {
           variant: "heading-lg/semibold",
-          children: D.intl.string(D.t.DxAYCA)
+          children: w.intl.string(w.t.DxAYCA)
         }), (0, n.jsx)(c.olH, {
           onClick: k,
-          className: T.modalCloseButton
+          className: y.modalCloseButton
         })]
       }), (0, n.jsxs)(c.hzk, {
-        className: T.modalContent,
+        className: y.modalContent,
         children: [(0, n.jsx)("div", {
-          className: T.editingContainer,
+          className: y.editingContainer,
           children: q ? (0, n.jsxs)("div", {
-            className: T.errorContainer,
+            className: y.errorContainer,
             children: [(0, n.jsx)(c.P4T, {
               size: "sm",
               color: c.TVs.colors.TEXT_DANGER
             }), (0, n.jsx)(c.Text, {
               variant: "text-md/normal",
               color: "text-danger",
-              children: D.intl.string(D.t["+ITMYW"])
+              children: w.intl.string(w.t["+ITMYW"])
             })]
           }) : (0, n.jsxs)(n.Fragment, {
             children: [(0, n.jsx)("img", {
               onLoad: es,
               onError: () => $(!0),
-              style: b({
+              style: T({
                 opacity: +(null != F),
                 transform: "translate3d(".concat(B.current.x, "px, ").concat(B.current.y, "px, 0) rotate(").concat(X, "deg)")
               }, eE()),
-              className: o()(J ? T.imageDisabled : T.imageEnabled, T.rotationSupported),
+              className: o()(J ? y.imageDisabled : y.imageEnabled, y.rotationSupported),
               src: r,
               crossOrigin: "anonymous",
               alt: "avatar",
@@ -499,24 +500,38 @@ function v(e) {
               onMouseDown: el,
               draggable: !1
             }), (0, n.jsx)("div", {
-              className: v === O.pC.AVATAR ? T.overlayAvatar : T.overlayBanner,
+              className: function(e) {
+                switch (e) {
+                  case O.pC.GUILD_ICON:
+                    return y.overlayGuildIcon;
+                  case O.pC.BANNER:
+                  case O.pC.GUILD_BANNER:
+                  case O.pC.VIDEO_BACKGROUND:
+                  case O.pC.SCHEDULED_EVENT_IMAGE:
+                  case O.pC.HOME_HEADER:
+                    return y.overlayBanner;
+                  case O.pC.AVATAR:
+                  case O.pC.AVATAR_DECORATION:
+                    return y.overlayAvatar
+                }
+              }(v),
               style: {
                 opacity: +(null != F),
-                width: H.width,
-                height: H.height
+                width: V.width,
+                height: V.height
               }
             })]
           })
         }), (0, n.jsxs)("div", {
-          className: T.toolsContainer,
+          className: y.toolsContainer,
           children: [(0, n.jsxs)("div", {
-            className: T.zoomControls,
+            className: y.zoomControls,
             children: [(0, n.jsx)(c.XBm, {
               size: "xxs",
               color: "currentColor",
-              className: T.zoomIcon
+              className: y.zoomIcon
             }), (0, n.jsx)(c.iRW, {
-              className: T.slider,
+              className: y.slider,
               initialValue: 1,
               minValue: 1,
               maxValue: 2,
@@ -525,15 +540,15 @@ function v(e) {
               disabled: J || q,
               equidistant: !0,
               hideBubble: !0,
-              "aria-label": D.intl.string(D.t.dnvZSk)
+              "aria-label": w.intl.string(w.t.dnvZSk)
             }, ee), (0, n.jsx)(c.XBm, {
               size: "md",
               color: "currentColor",
-              className: T.zoomIcon
+              className: y.zoomIcon
             })]
           }), (0, n.jsx)(c.ua7, {
-            text: D.intl.string(D.t.E36Wd3),
-            "aria-label": D.intl.string(D.t.LzFiKC),
+            text: w.intl.string(w.t.E36Wd3),
+            "aria-label": w.intl.string(w.t.LzFiKC),
             children: e => {
               var {
                 onClick: t
@@ -552,8 +567,8 @@ function v(e) {
                 }
                 return i
               }(e, ["onClick"]);
-              return (0, n.jsx)(c.zxk, x(b({
-                className: T.rotateButton,
+              return (0, n.jsx)(c.zxk, N(T({
+                className: y.rotateButton,
                 look: c.zxk.Looks.BLANK,
                 size: c.PhG.NONE,
                 color: c.zxk.Colors.TRANSPARENT,
@@ -568,38 +583,38 @@ function v(e) {
               }))
             }
           })]
-        }), S && eA && (0, n.jsx)("div", {
+        }), S && eR && (0, n.jsx)("div", {
           children: (0, n.jsx)(p.Z, {
             uploadType: v,
             analyticsSource: en,
             showUpsell: !0,
             position: "inline",
-            className: T.premiumUpsell,
+            className: y.premiumUpsell,
             showShadow: !1
           })
         })]
       }), (0, n.jsxs)(c.mzw, {
-        className: T.modalFooter,
+        className: y.modalFooter,
         children: [(0, n.jsx)(c.zxk, {
-          className: T.resetButton,
+          className: y.resetButton,
           look: c.zxk.Looks.LINK,
           size: c.PhG.MIN,
           color: c.zxk.Colors.PRIMARY,
           onClick: eh,
           disabled: !W,
-          children: D.intl.string(D.t.yBZMsb)
+          children: w.intl.string(w.t.yBZMsb)
         }), (0, n.jsx)(c.zxk, {
-          className: T.linkButton,
+          className: y.linkButton,
           look: c.zxk.Looks.LINK,
           size: c.PhG.MIN,
           color: c.zxk.Colors.PRIMARY,
           onClick: ef,
-          children: D.intl.string(D.t["9TG40t"])
+          children: w.intl.string(w.t["9TG40t"])
         }), (0, n.jsx)(c.zxk, {
           submitting: J,
           onClick: eC,
           disabled: J || q,
-          children: D.intl.string(D.t.ZSHmKC)
+          children: w.intl.string(w.t.ZSHmKC)
         })]
       })]
     })

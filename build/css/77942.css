@@ -1,6 +1,6 @@
 /**
   Module ID: 77942
-  Original File Name: 042c0a2670c0c66e
+  Original File Name: b6d9882c8d13cfa4
 **/
 .container_aea6af {
     align-items: center;
@@ -162,7 +162,11 @@
     border-radius: 50%
 }
 
-.overlayAvatar__57752,.overlayBanner__57752 {
+.overlayGuildIcon__57752 {
+    border-radius: 25%
+}
+
+.overlayBanner__57752 {
 }
 
 .sliderContainer__57752 {
@@ -242,4 +246,4 @@
     text-transform: none
 }
 
-/*# sourceMappingURL=042c0a2670c0c66e.css.map*/
+/*# sourceMappingURL=b6d9882c8d13cfa4.css.map*/

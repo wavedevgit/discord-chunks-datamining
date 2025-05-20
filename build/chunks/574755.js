@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   Z: () => S
 });
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(605236),
   d = n(441167),
   u = n(695346),
-  m = n(131951),
-  g = n(924557),
+  g = n(131951),
+  m = n(924557),
   p = n(435064),
   h = n(779618),
   f = n(39604),
@@ -36,9 +36,9 @@ function S(e) {
     autoTrackExposure: !1
   }), {
     analyticsLocations: T
-  } = (0, o.ZP)(), I = (0, g.Go)(), {
+  } = (0, o.ZP)(), I = (0, m.Go)(), {
     viewerClipsEnabled: N
-  } = (0, s.cj)([p.Z], () => p.Z.getSettings()), y = (0, h.Z)(m.Z);
+  } = (0, s.cj)([p.Z], () => p.Z.getSettings()), y = (0, h.Z)(g.Z);
   return r.useEffect(() => {
     (0, c.EW)(l.z.CLIPS_SETTINGS_BETA_TAG)
   }), (0, i.jsxs)(o.Gt, {

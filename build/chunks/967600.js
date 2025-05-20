@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 e.exports = {
   bioTextArea: "bioTextArea__6a919",
   bioTextAreaContainer: "bioTextAreaContainer__6a919"

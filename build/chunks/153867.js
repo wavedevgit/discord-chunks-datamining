@@ -7,8 +7,8 @@ n.d(t, {
 });
 var r = n(524437),
   i = n(381499),
-  a = n(780384),
-  o = n(570140),
+  o = n(780384),
+  a = n(570140),
   s = n(514361),
   l = n(238514),
   c = n(781391),
@@ -64,14 +64,14 @@ function E(e) {
     theme: n,
     useSystemTheme: r
   } = e, i = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : f.fy.INFREQUENT_USER_ACTION, s = "system" === n ? p.KW.ON : p.KW.OFF, u = null != r ? r : s;
-  if (o.Z.dispatch({
+  if (a.Z.dispatch({
       type: "UNSYNCED_USER_SETTINGS_UPDATE",
       settings: {
         useSystemTheme: u
       }
-    }), null == t && "system" !== n && (0, a.wj)(n) && (0, c.Ag)({
+    }), null == t && "system" !== n && (0, o.wj)(n) && (0, c.Ag)({
       [p.zd.DARK]: n
-    }), o.Z.dispatch({
+    }), a.Z.dispatch({
       type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE",
       changes: {
         appearance: {
@@ -91,19 +91,19 @@ function E(e) {
 }
 let b = {
   overrideLocale(e) {
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "USER_SETTINGS_LOCALE_OVERRIDE",
       locale: e
     })
   },
   updatedUnsyncedSettings(e) {
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "UNSYNCED_USER_SETTINGS_UPDATE",
       settings: e
     })
   },
   setShouldSyncTextSettings(e) {
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE",
       changes: {
         text: {
@@ -123,7 +123,7 @@ let b = {
   },
   setShouldSyncAppearanceSettings(e) {
     var t;
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE",
       changes: {
         appearance: {
@@ -140,14 +140,14 @@ let b = {
     })
   },
   applySettingsOverride(e) {
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "USER_SETTINGS_OVERRIDE_APPLY",
       settings: e
     })
   },
   clearSettingsOverride() {
     for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "USER_SETTINGS_OVERRIDE_CLEAR",
       settings: t
     })
@@ -158,7 +158,7 @@ let b = {
     })
   }, f.fy.INFREQUENT_USER_ACTION),
   updateTheme(e) {
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE",
       changes: {
         appearance: {

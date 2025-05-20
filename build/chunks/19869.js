@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   O: () => T
 }), n(388685);
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(906732),
   d = n(335131),
   u = n(703656),
-  m = n(511050),
-  g = n(52647),
+  g = n(511050),
+  m = n(52647),
   p = n(822857),
   h = n(317257),
   f = n(120786),
@@ -40,9 +40,9 @@ function T() {
 function I() {
   let {
     openIntroToOrbsClaimedCoachmark: e
-  } = (0, m.l)({
+  } = (0, g.l)({
     location: "VirtualCurrencyComponents"
-  }), [t, n] = r.useState(150), [g, p] = r.useState(150), [x, E] = r.useState(500), [C, T] = r.useState(h.b.DEFAULT), I = () => {
+  }), [t, n] = r.useState(150), [m, p] = r.useState(150), [x, E] = r.useState(500), [C, T] = r.useState(h.b.DEFAULT), I = () => {
     switch (C) {
       case h.b.DEFAULT:
         T(h.b.HIGHLIGHTED);
@@ -136,7 +136,7 @@ function I() {
       }), (0, i.jsx)("div", {
         className: v.interactivePillContainer,
         children: (0, i.jsx)(_.A4, {
-          balance: g,
+          balance: m,
           balanceWidgetMode: C,
           onClick: () => I()
         })
@@ -160,7 +160,7 @@ function I() {
       }), (0, i.jsx)("div", {
         className: v.interactivePillContainer,
         children: (0, i.jsx)(_.A4, {
-          balance: g,
+          balance: m,
           balanceWidgetMode: C,
           onClick: () => I()
         })
@@ -221,7 +221,7 @@ function N() {
 function y() {
   let {
     resetOnboardingAnnouncementModal: e
-  } = (0, g.Z)();
+  } = (0, m.Z)();
   return (0, i.jsxs)(j.$0, {
     children: [(0, i.jsx)(l.X6q, {
       variant: "heading-xl/semibold",

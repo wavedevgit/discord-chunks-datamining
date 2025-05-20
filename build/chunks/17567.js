@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   Z: () => p
 }), n(388685);
@@ -32,7 +32,7 @@ function u(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -44,13 +44,13 @@ function m(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = new i.Z("Guilds"),
+let m = new i.Z("Guilds"),
   p = new class {
     async getAsync(e) {
       let t = performance.now(),
         n = await c.Z.guilds(e).getMany(),
         i = performance.now();
-      return g.verbose("loaded in ".concat(i - t, "ms (guilds: ").concat(n.length, ")")), n
+      return m.verbose("loaded in ".concat(i - t, "ms (guilds: ").concat(n.length, ")")), n
     }
     async getOneAsync(e, t) {
       return await c.Z.guilds(e).get(t)
@@ -90,7 +90,7 @@ let g = new i.Z("Guilds"),
       let n = l.Z.getGuild(e.guildId),
         i = l.Z.getRoles(e.guildId);
       null != n && this.put(a.rk(n, {
-        roles: m(u({}, i), {
+        roles: g(u({}, i), {
           [e.role.id]: e.role
         }),
         member: s.ZP.getSelfMember(e.guildId)
@@ -102,7 +102,7 @@ let g = new i.Z("Guilds"),
         let i = u({}, l.Z.getRoles(e.guildId));
         delete i[e.roleId];
         let r = s.ZP.getSelfMember(e.guildId);
-        null != r && (r = m(u({}, r), {
+        null != r && (r = g(u({}, r), {
           roles: r.roles.filter(t => t !== e.roleId)
         })), this.put(a.rk(n, {
           roles: i,

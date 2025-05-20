@@ -1,16 +1,16 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  U: () => a,
-  Z: () => o
+  U: () => o,
+  Z: () => a
 });
 var r = n(709054),
   i = n(356659);
 
-function a(e) {
+function o(e) {
   return new Date(r.default.extractTimestamp(e)).toISOString()
 }
 
-function o(e) {
+function a(e) {
   return e.slice(0, i.JO)
 }

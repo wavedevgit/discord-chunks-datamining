@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   Z: () => u
 });
@@ -18,9 +18,9 @@ function u(e) {
     className: n,
     layoutClassName: r,
     profilePreview: u,
-    previewTitle: m
-  } = e, g = () => (0, i.jsx)(o.Z, {
-    title: null != m ? m : c.intl.string(c.t.Zb06yM),
+    previewTitle: g
+  } = e, m = () => (0, i.jsx)(o.Z, {
+    title: null != g ? g : c.intl.string(c.t.Zb06yM),
     className: d.preview,
     children: u
   });
@@ -28,9 +28,9 @@ function u(e) {
     className: n,
     children: (0, i.jsxs)(a.hjN, {
       className: d.profileCustomizationSection,
-      children: [l.tq && g(), (0, i.jsxs)("div", {
+      children: [l.tq && m(), (0, i.jsxs)("div", {
         className: s()(d.baseLayout, r),
-        children: [t, !l.tq && g()]
+        children: [t, !l.tq && m()]
       })]
     })
   })

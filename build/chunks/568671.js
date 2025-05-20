@@ -1,6 +1,6 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var i = n(255367);
 n(73800);
@@ -13,7 +13,7 @@ var r = n(481060),
   d = n(388032),
   u = n(289581);
 
-function m() {
+function g() {
   return (0, i.jsxs)(r.zxk, {
     innerClassName: u.qrCodeButtonContent,
     size: r.zxk.Sizes.LARGE,
@@ -21,7 +21,7 @@ function m() {
       (0, r.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("35006"), n.e("90688")]).then(n.bind(n, 978305));
+        } = await Promise.all([n.e("95221"), n.e("90688")]).then(n.bind(n, 978305));
         return t => (0, i.jsx)(e, function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},

@@ -1,6 +1,6 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var i = n(255367),
   r = n(73800),
@@ -39,4 +39,4 @@ class u extends r.Component {
     })
   }
 }
-let m = u
+let g = u

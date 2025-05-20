@@ -4,8 +4,8 @@ let r;
 n.d(t, {
   Z: () => _
 });
-var i, a = n(442837),
-  o = n(570140),
+var i, o = n(442837),
+  a = n(570140),
   s = n(594190),
   l = n(77498);
 
@@ -25,7 +25,7 @@ function u(e) {
 function d(e) {
   r = e.associatedGame
 }
-class f extends(i = a.ZP.Store) {
+class f extends(i = o.ZP.Store) {
   getGameForPID(e) {
     var t;
     if (__OVERLAY__ || null == e) return null;
@@ -37,7 +37,7 @@ class f extends(i = a.ZP.Store) {
   }
 }
 c(f, "displayName", "OverlayRunningGameStore");
-let _ = new f(o.Z, {
+let _ = new f(a.Z, {
   OVERLAY_INITIALIZE: u,
   OVERLAY_SET_ASSOCIATED_GAME: d
 })

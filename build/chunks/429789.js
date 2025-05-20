@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   Z: () => f
 });
@@ -12,8 +12,8 @@ var r = n(120356),
   c = n(313201),
   d = n(921801),
   u = n(131951),
-  m = n(726985),
-  g = n(388032),
+  g = n(726985),
+  m = n(388032),
   p = n(20493);
 let h = (0, c.hQ)();
 
@@ -33,7 +33,7 @@ function f(e) {
       id: h,
       tag: a.RB0.H5,
       className: p.marginBottom8,
-      children: g.intl.string(g.t.oSdBvb)
+      children: m.intl.string(m.t.oSdBvb)
     }), (0, i.jsx)(a.iRW, {
       initialValue: n,
       onValueChange: e => {
@@ -45,23 +45,23 @@ function f(e) {
         [p.marginBottom20]: !t
       }),
       type: a.R94.Types.DESCRIPTION,
-      children: g.intl.string(g.t["0A/8Rk"])
+      children: m.intl.string(m.t["0A/8Rk"])
     }), !t && (0, i.jsx)(a.$i$, {
       className: p.marginBottom20
     }), (0, i.jsx)(a.j7V, {
       value: r,
       onChange: e => o.Z.setAttenuation(n, e, c),
       hideBorder: t,
-      children: g.intl.string(g.t["9dHxRU"])
+      children: m.intl.string(m.t["9dHxRU"])
     }), (0, i.jsx)(a.j7V, {
       value: c,
       onChange: e => o.Z.setAttenuation(n, r, e),
       hideBorder: t,
-      children: g.intl.string(g.t.SMt0Gh)
+      children: m.intl.string(m.t.SMt0Gh)
     })]
   });
   return (0, i.jsx)(d.F, {
-    setting: m.s6.VOICE_AND_VIDEO_ADVANCED_ATTENUATION,
+    setting: g.s6.VOICE_AND_VIDEO_ADVANCED_ATTENUATION,
     children: t ? f : (0, i.jsx)(a.hjN, {
       className: p.marginBottom20,
       children: f

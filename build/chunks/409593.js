@@ -27,7 +27,7 @@ e.exports = function(e) {
     i = {
       begin: "^" + e.UNDERSCORE_IDENT_RE + "\\s*(?=[:+?]?=)"
     },
-    a = {
+    o = {
       className: "meta",
       begin: /^\.PHONY:/,
       end: /$/,
@@ -36,7 +36,7 @@ e.exports = function(e) {
         keyword: ".PHONY"
       }
     },
-    o = {
+    a = {
       className: "section",
       begin: /^[^\s]+:/,
       end: /$/,
@@ -49,6 +49,6 @@ e.exports = function(e) {
       $pattern: /[\w-]+/,
       keyword: "define endef undefine ifdef ifndef ifeq ifneq else endif include -include sinclude override export unexport private vpath"
     },
-    contains: [e.HASH_COMMENT_MODE, t, n, r, i, a, o]
+    contains: [e.HASH_COMMENT_MODE, t, n, r, i, o, a]
   }
 }

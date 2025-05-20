@@ -5,8 +5,8 @@ n.d(t, {
   Z: () => q
 }), n(388685);
 var i = n(114858),
-  a = n(259443),
-  o = n(433517),
+  o = n(259443),
+  a = n(433517),
   s = n(570140),
   l = n(668781),
   c = n(904245),
@@ -37,7 +37,7 @@ function C(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let P = new a.Yd("MessageManager");
+let P = new o.Yd("MessageManager");
 
 function R(e) {
   let {
@@ -45,8 +45,8 @@ function R(e) {
     channelId: n,
     messageId: r,
     forceFetch: i,
-    isPreload: a,
-    jumpType: o,
+    isPreload: o,
+    jumpType: a,
     skipLocalFetch: s,
     logFailures: l
   } = e;
@@ -72,16 +72,16 @@ function R(e) {
     focusTargetId: null
   }), f.Z.commit(h));
   let m = i;
-  if (!a || p.Z.isConnected() || h.loadingMore ? h.loadingMore || h.ready && !h.cached ? null != r ? m = !0 : l && P.log("Skipping fetch because no other conditions matched") : null == t || null != b.Z.getGuild(t) ? m = !0 : l && P.log("Skipping fetch we are connected and have loaded messages") : m = !0, (0, _.Z)(n) && y.ZP.hasUnread(n) && (m = !0), m)
+  if (!o || p.Z.isConnected() || h.loadingMore ? h.loadingMore || h.ready && !h.cached ? null != r ? m = !0 : l && P.log("Skipping fetch because no other conditions matched") : null == t || null != b.Z.getGuild(t) ? m = !0 : l && P.log("Skipping fetch we are connected and have loaded messages") : m = !0, (0, _.Z)(n) && y.ZP.hasUnread(n) && (m = !0), m)
     if (f.Z.commit(h.mutate({
         loadingMore: !0
       })), null != r) c.Z.jumpToMessage({
       channelId: n,
       messageId: r,
       flash: !0,
-      isPreload: a,
+      isPreload: o,
       skipLocalFetch: s,
-      jumpType: o
+      jumpType: a
     });
     else {
       if ((null == d ? void 0 : d.isThread()) && L(n)) return P.log("Jumping to start of thread ".concat(d.id)), c.Z.fetchMessages({
@@ -91,13 +91,13 @@ function R(e) {
           messageId: n,
           flash: !1
         },
-        isPreload: a,
+        isPreload: o,
         skipLocalFetch: s
       });
       if (!((null == d ? void 0 : d.isThread()) && y.ZP.hasTrackedUnread(d.id)) || h.ready) return c.Z.fetchMessages({
         channelId: n,
         limit: T.AQB,
-        isPreload: a,
+        isPreload: o,
         skipLocalFetch: s,
         jump: {
           jumpType: u.SR.ANIMATED
@@ -112,7 +112,7 @@ function R(e) {
           flash: !1,
           offset: 1
         },
-        isPreload: a,
+        isPreload: o,
         skipLocalFetch: s
       })
     }
@@ -124,13 +124,13 @@ function L(e) {
   if (y.ZP.hasOpenedThread(e)) return !1;
   if (null == r) {
     var t;
-    r = null != (t = o.K.get(D, {})) ? t : {}
+    r = null != (t = a.K.get(D, {})) ? t : {}
   }
   if (e in r) return !1;
   r[e] = Date.now();
   let n = Date.now() - w;
   for (let e in r) r[e] < n && delete r[e];
-  return o.K.set(D, r), !0
+  return a.K.set(D, r), !0
 }
 
 function x() {
@@ -275,11 +275,11 @@ function Y(e) {
     channelId: n,
     jump: r,
     isStale: i,
-    isPreview: a = !1
+    isPreview: o = !1
   } = e;
-  if (a) return;
-  let o = null != (t = H[n]) ? t : 0;
-  if (Date.now() - o < 10 * I.Z.Millis.SECOND) return;
+  if (o) return;
+  let a = null != (t = H[n]) ? t : 0;
+  if (Date.now() - a < 10 * I.Z.Millis.SECOND) return;
   H[n] = Date.now();
   let s = O.Z.getChannelId(),
     l = g.ZP.getCurrentSidebarChannelId(s),
@@ -297,7 +297,7 @@ function W(e) {
     messageRecord: n,
     reason: r,
     noSendFailed: i,
-    shouldSendNotification: a
+    shouldSendNotification: o
   } = e;
   null != n && !0 !== i && s.Z.dispatch({
     type: "MESSAGE_SEND_FAILED",

@@ -84,6 +84,7 @@ function c(e, t, r, n) {
   switch (e) {
     case a.pC.AVATAR:
     case a.pC.AVATAR_DECORATION:
+    case a.pC.GUILD_ICON:
       return {
         width: t, height: r
       };
@@ -121,6 +122,7 @@ function d(e, t, r, n, i) {
   switch (e) {
     case a.pC.AVATAR:
     case a.pC.AVATAR_DECORATION:
+    case a.pC.GUILD_ICON:
       let s = Math.min(t, r);
       return {
         width: s, height: s

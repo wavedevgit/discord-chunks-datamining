@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   Z: () => j
 }), n(388685);
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(481060),
   d = n(410030),
   u = n(63063),
-  m = n(74538),
-  g = n(937615),
+  g = n(74538),
+  m = n(937615),
   p = n(230916),
   h = n(798769),
   f = n(474936),
@@ -41,10 +41,10 @@ let j = function(e) {
       v(!0)
     }
     I(!1)
-  }, y = (0, d.ZP)(), A = (0, o.wj)(y) ? E : C, P = (0, p._)(t, f.Xh.PREMIUM_MONTH_TIER_2, O), R = (0, m.aS)(f.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
+  }, y = (0, d.ZP)(), A = (0, o.wj)(y) ? E : C, P = (0, p._)(t, f.Xh.PREMIUM_MONTH_TIER_2, O), R = (0, g.aS)(f.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
     currency: t.currency,
     paymentSourceId: t.paymentSourceId
-  }), D = (0, g.T4)(R.amount, R.currency);
+  }), D = (0, m.T4)(R.amount, R.currency);
   return null == O ? null : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(h.Z, {
       premiumType: n,
@@ -79,7 +79,7 @@ let j = function(e) {
             className: x.confirmDiscountLegaleseText,
             children: _.intl.format(_.t.hrGTjI, {
               discountedPrice: P,
-              billingPeriod: (0, m.JP)(O.discount.user_usage_limit_interval),
+              billingPeriod: (0, g.JP)(O.discount.user_usage_limit_interval),
               numMonths: O.discount.user_usage_limit,
               fullPrice: D,
               helpdeskArticle: u.Z.getArticleURL(b.BhN.PAID_TERMS)

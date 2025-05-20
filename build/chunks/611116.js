@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   Z: () => p
 });
@@ -12,7 +12,7 @@ var i = n(255367),
   d = n(388032),
   u = n(888723);
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -31,7 +31,7 @@ function m(e) {
   return e
 }
 
-function g(e) {
+function m(e) {
   let {
     className: t,
     boxes: n,
@@ -39,7 +39,7 @@ function g(e) {
     shouldLoadVideo: s,
     isReducedMotion: o,
     includeSideGradient: d = !1,
-    startLeftAligned: g = !1
+    startLeftAligned: m = !1
   } = e;
   return (0, i.jsxs)("div", {
     className: l()(u.boxBackdrop, t),
@@ -50,10 +50,10 @@ function g(e) {
       children: r
     }), (0, i.jsx)("div", {
       className: u.bentoBoxesGrid,
-      children: n.map((e, t) => (0, i.jsx)(c.Z, m({
+      children: n.map((e, t) => (0, i.jsx)(c.Z, g({
         shouldLoadVideo: s,
         isReducedMotion: o,
-        index: t + +!!g
+        index: t + +!!m
       }, e), e.name))
     }), d && (0, i.jsx)("div", {
       className: u.bentoSideGradient
@@ -66,10 +66,10 @@ let p = r.memo(function(e) {
     bestOfBoxes: n
   } = (0, o.ZP)();
   return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(g, m({
+    children: [(0, i.jsx)(m, g({
       boxes: Object.values(t),
       title: d.intl.string(d.t.LRmNAg)
-    }, e)), (0, i.jsx)(g, m({
+    }, e)), (0, i.jsx)(m, g({
       boxes: Object.values(n),
       title: d.intl.string(d.t.EnzW2N),
       includeSideGradient: !0,

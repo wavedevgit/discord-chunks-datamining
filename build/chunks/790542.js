@@ -1,27 +1,27 @@
-/** Chunk was on 23609 **/
-n.d(t, {
-  A: () => a
+/** Chunk was on 128 **/
+r.d(t, {
+  A: () => o
 });
-var i = n(73800),
-  r = n(442837),
-  s = n(751648),
-  l = n(479766);
+var n = r(73800),
+  a = r(442837),
+  l = r(751648),
+  i = r(479766);
 
-function a() {
+function o() {
   let {
     balance: e,
     isFetching: t,
-    error: n
-  } = (0, r.cj)([l.Z], () => ({
-    balance: l.Z.balance,
-    isFetching: l.Z.isFetchingBalance,
-    error: l.Z.fetchBalanceError
+    error: r
+  } = (0, a.cj)([i.Z], () => ({
+    balance: i.Z.balance,
+    isFetching: i.Z.isFetchingBalance,
+    error: i.Z.fetchBalanceError
   }));
-  return (0, i.useEffect)(() => {
-    null !== e || null !== n || t || (0, s.ZO)()
-  }, [e, n, t]), {
+  return (0, n.useEffect)(() => {
+    null !== e || null !== r || t || (0, l.ZO)()
+  }, [e, r, t]), {
     balance: e,
     isFetching: t,
-    error: n
+    error: r
   }
 }

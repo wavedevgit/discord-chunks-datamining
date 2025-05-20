@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   R: () => z,
   Z: () => W
@@ -13,8 +13,8 @@ var r = n(120356),
   c = n(481060),
   d = n(366939),
   u = n(100527),
-  m = n(906732),
-  g = n(975298),
+  g = n(906732),
+  m = n(975298),
   p = n(710845),
   h = n(963249),
   f = n(301766),
@@ -172,7 +172,7 @@ function H() {
 function z() {
   let {
     analyticsLocations: e
-  } = (0, m.ZP)(u.Z.ACCOUNT_CREDIT_BANNER);
+  } = (0, g.ZP)(u.Z.ACCOUNT_CREDIT_BANNER);
   return (0, i.jsx)(G, {
     wordMark: (0, i.jsx)(H, {}),
     subscriptionInfo: (0, i.jsx)("div", {
@@ -203,9 +203,9 @@ let W = function(e) {
     analyticsLocation: z
   } = e, W = "subscription_header", {
     analyticsLocations: Y
-  } = (0, m.ZP)(u.Z.SUBSCRIPTION_HEADER), K = (0, o.e7)([b.default], () => b.default.getCurrentUser()), {
+  } = (0, g.ZP)(u.Z.SUBSCRIPTION_HEADER), K = (0, o.e7)([b.default], () => b.default.getCurrentUser()), {
     fractionalState: q
-  } = (0, g.Z)({
+  } = (0, m.Z)({
     forceFetch: !1
   }), X = q === D.a$.FP_SUB_PAUSED, {
     enabled: Q
@@ -281,19 +281,19 @@ let W = function(e) {
     },
     eu = j.ZP.getPlanIdFromInvoice(r, l);
   if ((0, f.Q0)(eu)) return null;
-  let em = j.ZP.getStatusFromInvoice(r, l),
-    eg = j.ZP.getPremiumType(eu),
+  let eg = j.ZP.getStatusFromInvoice(r, l),
+    em = j.ZP.getPremiumType(eu),
     ep = {
-      [k.tier0]: eg === D.p9.TIER_0,
-      [k.tier1]: eg === D.p9.TIER_1,
-      [k.tier2]: eg === D.p9.TIER_2,
-      [k.canceled]: em === Z.O0b.CANCELED,
-      [k.pausePending]: em === Z.O0b.PAUSE_PENDING,
-      [k.paused]: em === Z.O0b.PAUSED && !X,
-      [k.failedPayment]: (0, j.zV)(em)
+      [k.tier0]: em === D.p9.TIER_0,
+      [k.tier1]: em === D.p9.TIER_1,
+      [k.tier2]: em === D.p9.TIER_2,
+      [k.canceled]: eg === Z.O0b.CANCELED,
+      [k.pausePending]: eg === Z.O0b.PAUSE_PENDING,
+      [k.paused]: eg === Z.O0b.PAUSED && !X,
+      [k.failedPayment]: (0, j.zV)(eg)
     },
     eh = null;
-  switch (eg) {
+  switch (em) {
     case D.p9.TIER_0:
       eh = (0, i.jsxs)("div", {
         className: k.wordMark,

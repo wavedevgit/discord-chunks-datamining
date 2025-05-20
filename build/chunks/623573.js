@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   default: () => f
 });
@@ -12,8 +12,8 @@ var r = n(120356),
   c = n(563132),
   d = n(409813),
   u = n(3409),
-  m = n(388032),
-  g = n(281817),
+  g = n(388032),
+  m = n(281817),
   p = n(893354);
 
 function h(e) {
@@ -38,10 +38,10 @@ function h(e) {
     },
     onStepChange: () => {},
     header: (0, i.jsxs)("div", {
-      className: s()(g.modalTitle, p.flex, p.justifyBetween, p.alignCenter),
+      className: s()(m.modalTitle, p.flex, p.justifyBetween, p.alignCenter),
       children: [(0, i.jsx)(o.vwX, {
         tag: o.RB0.H4,
-        children: m.intl.string(m.t.eQ2bLi)
+        children: g.intl.string(g.t.eQ2bLi)
       }), (0, i.jsx)(o.olH, {
         onClick: r
       })]
@@ -54,10 +54,10 @@ function h(e) {
   return (0, i.jsx)(o.Y0X, {
     transitionState: t,
     size: o.CgR.SMALL,
-    className: g.modal,
-    "aria-label": m.intl.string(m.t.eQ2bLi),
+    className: m.modal,
+    "aria-label": g.intl.string(g.t.eQ2bLi),
     children: (0, i.jsx)("form", {
-      className: g.form,
+      className: m.form,
       onSubmit: function(e) {
         e.preventDefault()
       },

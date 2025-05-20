@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   Z: () => h
 }), n(388685);
@@ -8,11 +8,11 @@ var i = n(255367),
   l = n.n(s),
   a = n(392711),
   o = n.n(a),
-  c = n(950035),
+  c = n(230986),
   d = n(442837),
   u = n(481060),
-  m = n(607070),
-  g = n(536837);
+  g = n(607070),
+  m = n(536837);
 let p = {
   mass: 10,
   tension: 550,
@@ -23,7 +23,7 @@ function h(e) {
   let {
     className: t,
     pageMultiplier: n
-  } = e, s = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), [a, h] = r.useState({
+  } = e, s = (0, d.e7)([g.Z], () => g.Z.useReducedMotion), [a, h] = r.useState({
     x: 0,
     y: 0
   }), f = r.useMemo(() => o().throttle(e => {
@@ -47,6 +47,6 @@ function h(e) {
     style: {
       transform: (0, c.to)([b.x, b.y], (e, t) => "translate3d(".concat(e, "px, ").concat(t, "px, 0)"))
     },
-    className: l()(g.background, t)
+    className: l()(m.background, t)
   })
 }

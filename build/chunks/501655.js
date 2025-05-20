@@ -7,8 +7,8 @@ n.d(t, {
 }), n(539854), n(388685);
 var r = n(759174),
   i = n(933546),
-  a = n(569545),
-  o = n(199902),
+  o = n(569545),
+  a = n(199902),
   s = n(592125),
   l = n(720202),
   c = n(271383),
@@ -72,13 +72,13 @@ function T(e) {
   let {
     speaker: n,
     role: r,
-    user: a,
-    userNick: o,
+    user: o,
+    userNick: a,
     connectedOn: s,
     voiceState: l,
     type: c
   } = e, u = n ? "\0" : "\x01", d = "STREAM" === c ? "\0" : "\x01", f = l.selfMute ? "\x01" : "\0", _ = l.selfVideo ? "\0" : "\x01", p = "".concat(null != (t = null == r ? void 0 : r.position) ? t : 999).padStart(3, "0");
-  return "".concat(u).concat(d).concat(f).concat(_).concat(p).concat(s).concat((0, i.Z)(o, a))
+  return "".concat(u).concat(d).concat(f).concat(_).concat(p).concat(s).concat((0, i.Z)(a, o))
 }
 
 function A(e) {
@@ -99,10 +99,10 @@ function C(e) {
     role: n,
     rtsState: r,
     blocked: i,
-    ignored: a,
-    isFriend: o
+    ignored: o,
+    isFriend: a
   } = e, s = [];
-  return N(r) && s.push("ALL_REQUESTED_TO_SPEAK"), r === g.xO.REQUESTED_TO_SPEAK && s.push("REQUESTED_TO_SPEAK_ONLY"), t ? s.push("SPEAKER") : (null != n ? s.push(n.id) : s.push("NO_ROLE"), s.push("AUDIENCE")), i ? s.push("BLOCKED") : a && s.push("IGNORED"), o && s.push("FRIEND"), s
+  return N(r) && s.push("ALL_REQUESTED_TO_SPEAK"), r === g.xO.REQUESTED_TO_SPEAK && s.push("REQUESTED_TO_SPEAK_ONLY"), t ? s.push("SPEAKER") : (null != n ? s.push(n.id) : s.push("NO_ROLE"), s.push("AUDIENCE")), i ? s.push("BLOCKED") : o && s.push("IGNORED"), a && s.push("FRIEND"), s
 }
 class P {
   _getParticipantsForUser(e, t) {
@@ -135,9 +135,9 @@ class P {
         rtsState: (0, g.gf)(O)
       });
     b.push(C);
-    let P = null != (i = o.Z.getStreamForUser(e, this.guildId)) ? i : o.Z.getActiveStreamForUser(e, this.guildId);
+    let P = null != (i = a.Z.getStreamForUser(e, this.guildId)) ? i : a.Z.getActiveStreamForUser(e, this.guildId);
     if (null != P && P.channelId === this.channelId) {
-      let e = (0, a.V9)(P);
+      let e = (0, o.V9)(P);
       s = v(y({}, N), {
         id: e,
         type: "STREAM",

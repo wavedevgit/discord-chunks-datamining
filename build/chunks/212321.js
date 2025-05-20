@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  R: () => o,
+  R: () => a,
   j: () => s
 });
 var r = n(818083),
   i = n(812740);
-let a = (0, r.B)({
+let o = (0, r.B)({
   kind: "user",
   id: "2025-04_user_profile_mutual_friends_count_performance",
   label: "User Profile Mutual Friends Count Performance Experiment",
@@ -22,7 +22,7 @@ let a = (0, r.B)({
   }]
 });
 
-function o(e) {
+function a(e) {
   let {
     location: t,
     autoTrackExposure: n = !0
@@ -30,7 +30,7 @@ function o(e) {
     location: t,
     autoTrackExposure: n
   });
-  return a.getCurrentConfig({
+  return o.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: n,
@@ -46,7 +46,7 @@ function s(e) {
     location: t,
     autoTrackExposure: n
   });
-  return a.useExperiment({
+  return o.useExperiment({
     location: t
   }, {
     autoTrackExposure: n,

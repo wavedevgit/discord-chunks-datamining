@@ -7,9 +7,9 @@ n.d(t, {
 });
 var r = n(442837),
   i = n(581883),
-  a = n(710111);
+  o = n(710111);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,7 +25,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -66,8 +66,8 @@ function f(e) {
 function _(e, t) {
   var n, r;
   let i = null == (n = t[e]) ? void 0 : n.joinSound,
-    o = null == (r = t[a.hY]) ? void 0 : r.joinSound,
-    l = null != i ? i : o;
+    a = null == (r = t[o.hY]) ? void 0 : r.joinSound,
+    l = null != i ? i : a;
   return null != l ? c(s({}, l), {
     type: +(null != i)
   }) : void 0

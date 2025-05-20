@@ -1,6 +1,6 @@
 /**
   Module ID: 48389
-  Original File Name: 48f4888e898288ac
+  Original File Name: 387d894609944647
 **/
 .header__6e6ad {
     align-items: center;
@@ -204,7 +204,11 @@
     border-radius: 50%
 }
 
-.overlayAvatar__57752,.overlayBanner__57752 {
+.overlayGuildIcon__57752 {
+    border-radius: 25%
+}
+
+.overlayBanner__57752 {
 }
 
 .sliderContainer__57752 {
@@ -284,4 +288,4 @@
     text-transform: none
 }
 
-/*# sourceMappingURL=48f4888e898288ac.css.map*/
+/*# sourceMappingURL=387d894609944647.css.map*/

@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   default: () => h,
   y: () => p
@@ -13,9 +13,9 @@ var r = n(481060),
   c = n(474936),
   d = n(981631),
   u = n(388032),
-  m = n(784687);
+  g = n(784687);
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -43,7 +43,7 @@ function p(e) {
     let {
       default: e
     } = await Promise.resolve().then(n.bind(n, 267717));
-    return n => (0, i.jsx)(e, g({
+    return n => (0, i.jsx)(e, m({
       user: a,
       analyticsSource: t,
       analyticsLocation: {
@@ -74,9 +74,9 @@ function h(e) {
     }
     return r
   }(e, ["user", "onClose"]);
-  return (0, i.jsx)(o.Z, g({
-    modalClassName: m.modal,
-    modalContentClassName: m.modalContent,
+  return (0, i.jsx)(o.Z, m({
+    modalClassName: g.modal,
+    modalContentClassName: g.modalContent,
     type: c.cd.TRY_IT_OUT_MODAL_UPSELL,
     title: u.intl.string(u.t.reVc0N),
     body: u.intl.string(u.t.KckEj4),
@@ -90,9 +90,9 @@ function h(e) {
     hideBackButton: !0,
     showEnhancedUpsell: !0,
     LeadingComponent: (0, i.jsx)("div", {
-      className: m.previewContainerParent,
+      className: g.previewContainerParent,
       children: (0, i.jsx)(s.Z, {
-        containerClassName: m.previewContainer,
+        containerClassName: g.previewContainer,
         user: t,
         disabledInputs: !0
       })

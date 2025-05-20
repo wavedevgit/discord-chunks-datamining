@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   Z: () => O
 }), n(388685), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749);
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(276264),
   d = n(205822),
   u = n(329013),
-  m = n(594174),
-  g = n(396821),
+  g = n(594174),
+  m = n(396821),
   p = n(780771),
   h = n(4242),
   f = n(996746),
@@ -55,13 +55,13 @@ function j(e, t) {
 
 function O() {
   var e;
-  let [t, n] = (0, r.useState)(!1), [s, l] = (0, r.useState)(!1), [a, c] = (0, r.useState)(null), m = (0, g.ZP)(e => e.toolsCache), {
+  let [t, n] = (0, r.useState)(!1), [s, l] = (0, r.useState)(!1), [a, c] = (0, r.useState)(null), g = (0, m.ZP)(e => e.toolsCache), {
     setToolsCache: f,
     removeToolsCache: _
-  } = (0, g.L3)(), {
+  } = (0, m.L3)(), {
     setImgCache: O
-  } = (0, g.W_)(), A = (0, r.useCallback)(e => {
-    let t = m[e];
+  } = (0, m.W_)(), A = (0, r.useCallback)(e => {
+    let t = g[e];
     null != t && c({
       src: t.url,
       palette: t.palette,
@@ -74,7 +74,7 @@ function O() {
       src: e,
       preview: !0
     }))
-  }, [m]), P = (0, r.useCallback)(e => {
+  }, [g]), P = (0, r.useCallback)(e => {
     c(t => null == t ? null : j(C({}, t), {
       palette: e,
       preview: !0
@@ -150,7 +150,7 @@ function O() {
           }
         }), (0, i.jsx)("div", {
           className: E.uploadedArea,
-          children: Object.values(m).map(e => {
+          children: Object.values(g).map(e => {
             let {
               url: t
             } = e;
@@ -252,7 +252,7 @@ function T(e) {
 function I(e) {
   let {
     nameplate: t
-  } = e, n = (0, a.e7)([m.default], () => m.default.getCurrentUser());
+  } = e, n = (0, a.e7)([g.default], () => g.default.getCurrentUser());
   return (0, i.jsx)("div", {
     className: E.preview,
     children: (0, i.jsxs)("div", {

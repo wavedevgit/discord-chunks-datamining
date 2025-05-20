@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(481060),
   l = n(576635),
   c = n(213053),
@@ -16,7 +16,7 @@ let f = Object.assign(i.forwardRef(function(e, t) {
   let {
     user: n,
     displayProfile: i,
-    themeType: a,
+    themeType: o,
     className: f,
     pendingThemeColors: _,
     themeOverride: p,
@@ -36,12 +36,12 @@ let f = Object.assign(i.forwardRef(function(e, t) {
     profileThemeClassName: O
   } = (0, c.Z)({
     theme: null != p ? p : g,
-    themeType: a,
+    themeType: o,
     primaryColor: E,
     secondaryColor: b
   });
   return (0, r.jsx)("div", {
-    className: o()(d.outer, O, f),
+    className: a()(d.outer, O, f),
     style: y,
     ref: t,
     children: (0, r.jsx)("div", {
@@ -49,7 +49,7 @@ let f = Object.assign(i.forwardRef(function(e, t) {
       children: (0, r.jsx)(s.ze6, {
         theme: null != p ? p : g,
         children: (0, r.jsx)(u.X, {
-          themeType: a,
+          themeType: o,
           theme: null != p ? p : g,
           primaryColor: E,
           secondaryColor: b,
@@ -66,7 +66,7 @@ let f = Object.assign(i.forwardRef(function(e, t) {
     } = e;
     return (0, r.jsx)("div", {
       ref: t,
-      className: o()(d.overlay, i),
+      className: a()(d.overlay, i),
       children: n
     })
   })

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(392711),
   i = n.n(r),
-  a = n(46973),
-  o = n(909766);
+  o = n(46973),
+  a = n(909766);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -19,10 +19,10 @@ function s(e, t, n) {
 let l = 1e3;
 class c {
   start() {
-    this.connection.on(a.Sh.Stats, this.sampleStats)
+    this.connection.on(o.Sh.Stats, this.sampleStats)
   }
   stop() {
-    this.connection.off(a.Sh.Stats, this.sampleStats)
+    this.connection.off(o.Sh.Stats, this.sampleStats)
   }
   getPttQueueLatencyStats() {
     let e = this.pttQueueLatencyHistogram.getReport([50, 95]);
@@ -45,6 +45,6 @@ class c {
           }
         }
       })
-    }, this.pttQueueLatencyHistogram = new o.b
+    }, this.pttQueueLatencyHistogram = new a.b
   }
 }

@@ -1,19 +1,19 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   Z: () => y,
   r: () => N
 }), n(539854), n(388685);
 var i = n(255367),
   r = n(73800),
-  s = n(950035),
+  s = n(230986),
   l = n(399606),
   a = n(481060),
   o = n(607070),
   c = n(975298),
   d = n(280942),
   u = n(209747),
-  m = n(430824),
-  g = n(594174),
+  g = n(430824),
+  m = n(594174),
   p = n(267642),
   h = n(74538),
   f = n(709054),
@@ -44,7 +44,7 @@ function S(e) {
     return j.intl.formatToPlainString(j.t.lY2Bur, {
       date: new Date(e)
     })
-  }, [n, o, c, d]), m = r.useMemo(() => (function(e) {
+  }, [n, o, c, d]), g = r.useMemo(() => (function(e) {
     if (null == e || e === E.Eu4.NONE) return "";
     let t = [j.intl.formatToPlainString(j.t.dLlKX1, {
       numEmojiSlots: C.HO[e].limits.emoji
@@ -67,7 +67,7 @@ function S(e) {
     return j.intl.format(j.t["/dOAmZ"], {
       perk: n
     })
-  })(t), [t]), g = (0, a.Yzy)(l, {
+  })(t), [t]), m = (0, a.Yzy)(l, {
     from: {
       opacity: 0
     },
@@ -85,13 +85,13 @@ function S(e) {
       color: "text-muted",
       children: u
     })
-  }) : g((e, t) => (0, i.jsx)(s.animated.div, {
+  }) : m((e, t) => (0, i.jsx)(s.animated.div, {
     style: e,
     className: O.boostDescriptionInnerContainer,
     children: (0, i.jsx)(a.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
-      children: t ? m : u
+      children: t ? g : u
     })
   }))
 }
@@ -102,9 +102,9 @@ function v(e) {
     guildBoostSlot: n,
     premiumSubscription: s,
     hasCancelableGuildBoostSlot: u,
-    showAltText: m,
+    showAltText: g,
     isLastGuildBoostSlot: h
-  } = e, f = (0, l.e7)([o.Z], () => o.Z.useReducedMotion), x = (0, l.e7)([g.default], () => g.default.getCurrentUser()), E = r.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), C = r.useMemo(() => null != E && E > new Date, [E]), v = (0, p.tl)(n), T = (0, c.Z)(), I = r.useRef(null);
+  } = e, f = (0, l.e7)([o.Z], () => o.Z.useReducedMotion), x = (0, l.e7)([m.default], () => m.default.getCurrentUser()), E = r.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), C = r.useMemo(() => null != E && E > new Date, [E]), v = (0, p.tl)(n), T = (0, c.Z)(), I = r.useRef(null);
   return (0, i.jsxs)("div", {
     className: O.boostContainer,
     children: [(0, i.jsxs)("div", {
@@ -121,7 +121,7 @@ function v(e) {
         }) : (0, i.jsx)(S, {
           guildTier: t,
           guildBoostSlot: n,
-          showAltText: m,
+          showAltText: g,
           isCanceled: v,
           premiumSubscription: s,
           fractionalPremiumInfo: T
@@ -195,7 +195,7 @@ function T(e) {
     premiumSubscription: r,
     hasCancelableGuildBoostSlot: s,
     showAltText: a
-  } = e, o = (0, l.e7)([m.Z], () => m.Z.getGuild(t), [t]);
+  } = e, o = (0, l.e7)([g.Z], () => g.Z.getGuild(t), [t]);
   return (0, i.jsxs)("div", {
     className: O.appliedBoostContainer,
     children: [(0, i.jsx)(x.Z, {
@@ -217,7 +217,7 @@ function I(e) {
     guildId: t,
     appliedGuildBoosts: n,
     premiumSubscription: r
-  } = e, s = (0, l.e7)([m.Z], () => m.Z.getGuild(t), [t]), a = f.default.fromTimestamp(Date.now());
+  } = e, s = (0, l.e7)([g.Z], () => g.Z.getGuild(t), [t]), a = f.default.fromTimestamp(Date.now());
   if (n.forEach(e => {
       (null == a || 0 > f.default.compare(e.id, a)) && (a = e.id)
     }), null == a) return null;

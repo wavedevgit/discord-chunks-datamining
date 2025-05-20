@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   Z: () => d
 });
@@ -17,18 +17,18 @@ let d = e => {
     settingsSection: r,
     parentSetting: d,
     panelClassName: u,
-    defaultTabIndex: m,
-    onTabChange: g
+    defaultTabIndex: g,
+    onTabChange: m
   } = e, {
     viewableTabs: p,
     filteredTab: h
-  } = (0, o.a)(n, d), f = null != m ? n[m] : null, b = null != (t = null != f ? f : h) ? t : p[0];
+  } = (0, o.a)(n, d), f = null != g ? n[g] : null, b = null != (t = null != f ? f : h) ? t : p[0];
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(l.njP, {
       className: c.tabBar,
       selectedItem: b.setting,
       onItemSelect: e => {
-        a.Z.setSection(r, e), null == g || g(e)
+        a.Z.setSection(r, e), null == m || m(e)
       },
       orientation: "horizontal",
       type: "top",

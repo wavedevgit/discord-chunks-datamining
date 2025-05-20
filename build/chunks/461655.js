@@ -1,6 +1,6 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(953529), n(997841);
 var i = n(314877),
   r = n(81825),
@@ -19,12 +19,12 @@ function u(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class m extends r.Z {
+class g extends r.Z {
   static createFromServer(e) {
     let t = null != e.payment_source ? l.ZP.createFromServer(e.payment_source) : null,
       n = null != e.sku ? a.Z.createFromServer(e.sku) : null,
       i = null != e.subscription ? o.Z.createFromServer(e.subscription) : null;
-    return new m({
+    return new g({
       id: e.id,
       createdAt: new Date(e.created_at),
       currency: e.currency,

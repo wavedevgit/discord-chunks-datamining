@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   Z: () => L
 }), n(953529), n(314940);
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(481060),
   d = n(209613),
   u = n(82295),
-  m = n(785681),
-  g = n(485664),
+  g = n(785681),
+  m = n(485664),
   p = n(880257),
   h = n(631885),
   f = n(895328),
@@ -135,7 +135,7 @@ function R(e) {
     sectionType: t,
     sectionTitle: n,
     requests: s
-  } = e, l = r.useRef(null), a = "".concat(t, "-list"), m = (0, d.Z)(a), g = r.useCallback(e => {
+  } = e, l = r.useRef(null), a = "".concat(t, "-list"), g = (0, d.Z)(a), m = r.useCallback(e => {
     let {
       row: n,
       listIndex: r
@@ -160,7 +160,7 @@ function R(e) {
   return (0, i.jsx)("div", {
     className: T.section,
     children: (0, i.jsx)(o.bG, {
-      navigator: m,
+      navigator: g,
       children: (0, i.jsx)(o.SJ, {
         children: e => {
           var {
@@ -208,7 +208,7 @@ function R(e) {
             sectionHeight: C.zE,
             rowHeight: C.ip,
             renderSection: p,
-            renderRow: g,
+            renderRow: m,
             sections: [s.length],
             chunkSize: 30,
             fade: !0
@@ -226,7 +226,7 @@ let D = () => {
         count: t.length,
         max: n
       },
-      s = (0, m.o)(S.intl.formatToPlainString(O.default["+tnO39"], r), S.intl.formatToPlainString(O.default["pu6/U1"], r));
+      s = (0, g.o)(S.intl.formatToPlainString(O.default["+tnO39"], r), S.intl.formatToPlainString(O.default["pu6/U1"], r));
     return t.length > 0 ? (0, i.jsx)(R, {
       sectionType: C.ne.ACTIVE,
       sectionTitle: s,
@@ -249,7 +249,7 @@ let D = () => {
   Z = () => {
     let e = (0, h.VM)(),
       t = (0, p.Z)() ? C.AG : C.i0,
-      n = (0, m.o)(S.intl.formatToPlainString(O.default["1/PzIi"], {
+      n = (0, g.o)(S.intl.formatToPlainString(O.default["1/PzIi"], {
         maxConnections: t
       }), S.intl.formatToPlainString(O.default.RcTgiI, {
         maxConnections: t
@@ -264,8 +264,8 @@ let D = () => {
     }) : null
   },
   w = () => {
-    let e = (0, g.o)(),
-      t = (0, g.Q)(),
+    let e = (0, m.o)(),
+      t = (0, m.Q)(),
       n = (0, a.EQ)({
         helpline: e,
         throughline: t
@@ -295,7 +295,7 @@ let D = () => {
   },
   k = () => {
     let e = (0, h.mq)(C.ne.PENDING),
-      t = (0, m.o)(S.intl.formatToPlainString(O.default.IkAgkJ, {
+      t = (0, g.o)(S.intl.formatToPlainString(O.default.IkAgkJ, {
         count: e.length
       }), S.intl.formatToPlainString(O.default.Q8XnAQ, {
         count: e.length

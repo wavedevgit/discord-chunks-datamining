@@ -1,6 +1,6 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var i = n(255367);
 n(73800);
@@ -12,9 +12,9 @@ var r = n(442837),
   c = n(442334),
   d = n(388032),
   u = n(802454),
-  m = n(948865);
+  g = n(948865);
 
-function g() {
+function m() {
   let e = (0, r.e7)([a.Z], () => a.Z.getSettings().storageLocation),
     t = async () => {
       let e = await l.Z.fileManager.showOpenDialog({
@@ -28,7 +28,7 @@ function g() {
       note: d.intl.string(d.t.svjwGh),
       className: u.formItem,
       children: (0, i.jsx)(s.P3F, {
-        className: m.selectControl,
+        className: g.selectControl,
         "aria-label": d.intl.formatToPlainString(d.t.iMONTk, {
           storageLocation: e
         }),

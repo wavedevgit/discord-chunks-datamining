@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   Z: () => _
 }), n(388685);
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(921801),
   d = n(131951),
   u = n(962100),
-  m = n(445817),
-  g = n(726985),
+  g = n(445817),
+  m = n(726985),
   p = n(65154),
   h = n(388032),
   f = n(20493);
@@ -36,8 +36,8 @@ function _(e) {
     refreshStyles: t = !1
   } = e, n = (0, a.e7)([d.Z], () => d.Z.supports(p.AN.VIDEO)), [s, u] = r.useState(!1), _ = (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(c.F, {
-      setting: g.s6.VOICE_AND_VIDEO_VIDEO_CAMERA,
-      children: (0, i.jsx)(m.Z, {
+      setting: m.s6.VOICE_AND_VIDEO_VIDEO_CAMERA,
+      children: (0, i.jsx)(g.Z, {
         previewEnabled: s,
         onEnablePreview: () => u(!0),
         onCancelPreview: () => u(!1)

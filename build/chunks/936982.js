@@ -1,6 +1,6 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var i = n(255367),
   r = n(73800),
@@ -11,7 +11,7 @@ var i = n(255367),
   c = n(410030),
   d = n(246946),
   u = n(388032);
-let m = () => {
+let g = () => {
   let e = (0, s.e7)([d.Z], () => d.Z.hidePersonalInformation),
     t = (0, c.ZP)();
   return (r.useEffect(() => {

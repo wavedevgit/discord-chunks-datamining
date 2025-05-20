@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(481060),
+  o = n.n(i),
+  a = n(481060),
   s = n(563132),
   l = n(409813),
   c = n(175531);
@@ -34,8 +34,8 @@ function u(e) {
       r = e.id === l.h8.ADD_PAYMENT_STEPS && !d.current;
     return !n || n && (t || r)
   }), (0, r.jsx)("div", {
-    className: a()("breadcrumb", c.wrapper, t),
-    children: (0, r.jsx)(o.OoM, {
+    className: o()("breadcrumb", c.wrapper, t),
+    children: (0, r.jsx)(a.OoM, {
       activeId: i,
       breadcrumbs: f
     })

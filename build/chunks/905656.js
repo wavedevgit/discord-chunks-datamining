@@ -5,8 +5,8 @@ n.d(t, {
 }), n(290780);
 var r = n(255367),
   i = n(73800),
-  a = n(780384),
-  o = n(481060),
+  o = n(780384),
+  a = n(481060),
   s = n(197344),
   l = n(526167),
   c = n(70097),
@@ -25,8 +25,8 @@ function b(e) {
     movDark: t = d,
     movLight: n = h,
     mp4Dark: i = f,
-    mp4Light: a = m,
-    pngDark: o = _,
+    mp4Light: o = m,
+    pngDark: a = _,
     pngLight: s = g,
     webmDark: c = p,
     webmLight: b = E
@@ -35,9 +35,9 @@ function b(e) {
     type: "video/mp4"
   }, "mp4"), (0, r.jsx)("img", {
     alt: "",
-    src: o
+    src: a
   }, "png")], v = [(0, r.jsx)("source", {
-    src: a,
+    src: o,
     type: "video/mp4"
   }, "mp4"), (0, r.jsx)("img", {
     alt: "",
@@ -73,11 +73,11 @@ let y = s.Z.getAppSpinnerSources(),
       onReady: f
     } = e, {
       theme: _
-    } = (0, o.TCT)(), {
+    } = (0, a.TCT)(), {
       reducedMotion: p
-    } = i.useContext(o.Sfi), h = v;
+    } = i.useContext(a.Sfi), h = v;
     null != O && (h = O);
-    let m = null != (t = h[(0, a.wj)(_) ? u.BRd.DARK : u.BRd.LIGHT]) ? t : h[u.BRd.DARK];
+    let m = null != (t = h[(0, o.wj)(_) ? u.BRd.DARK : u.BRd.LIGHT]) ? t : h[u.BRd.DARK];
     return (0, r.jsx)(c.Z, {
       ref: l,
       onLoadedData: f,

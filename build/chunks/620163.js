@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   i: () => e2
 }), n(539854), n(388685);
@@ -12,8 +12,8 @@ var r = n(990547),
   c = n(893776),
   d = n(37234),
   u = n(809206),
-  m = n(230711),
-  g = n(493544),
+  g = n(230711),
+  m = n(493544),
   p = n(579806),
   h = n(782568),
   f = n(758182),
@@ -66,8 +66,8 @@ var r = n(990547),
   ec = n(393681),
   ed = n(309739),
   eu = n(64914),
-  em = n(501348),
-  eg = n(795594),
+  eg = n(501348),
+  em = n(795594),
   ep = n(443702),
   eh = n(327192),
   ef = n(949493),
@@ -150,15 +150,15 @@ let e0 = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
       hypeSquadRemoved: tc,
       hasIgnoredUsers: td,
       hasBlockedUsers: tu,
-      useRefreshedVoiceAndVideo: tm,
-      isEligibleForSensitiveContentDefaults: tg,
+      useRefreshedVoiceAndVideo: tg,
+      isEligibleForSensitiveContentDefaults: tm,
       inputMode: tp,
       activeInputProfile: th,
       isInputProfileCustom: tf
     } = e;
     return Object.freeze({
       [ez.s6.SEARCH_NO_RESULTS]: {
-        section: g.ID.CUSTOM,
+        section: m.ID.CUSTOM,
         element: ey.Z
       },
       [ez.s6.ACCOUNT_SECURITY_TAB]: {
@@ -193,7 +193,7 @@ let e0 = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eX.intl.string(eX.t["2UzQiY"]), eX.intl.string(eX.t.dJOmCw), eX.intl.string(eX.t["Y0A/1N"]), eX.intl.string(eX.t.wRpUfX), eX.intl.string(eX.t["+2/AhI"])],
         section: eY.oAB.ACCOUNT,
         parent: ez.s6.ACCOUNT_PROFILE,
-        predicate: () => tg
+        predicate: () => tm
       },
       [ez.s6.ACCOUNT_USERNAME]: {
         searchableTitles: [eX.intl.string(eX.t["+JkHPz"])],
@@ -297,7 +297,7 @@ let e0 = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
       },
       [ez.s6.PROFILE_CUSTOMIZATION]: {
         section: eY.oAB.PROFILE_CUSTOMIZATION,
-        type: g.bT.WIDE,
+        type: m.bT.WIDE,
         searchableTitles: [eX.intl.string(eX.t["vi7f+v"])],
         label: eX.intl.string(eX.t["vi7f+v"]),
         ariaLabel: eX.intl.string(eX.t["vi7f+v"]),
@@ -310,7 +310,7 @@ let e0 = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         },
         onSettingsClose: () => {
           o.Z.wait(() => {
-            (0, N.It)(), (0, u.P6)(), m.Z.clearSubsection(eY.oAB.PROFILE_CUSTOMIZATION)
+            (0, N.It)(), (0, u.P6)(), g.Z.clearSubsection(eY.oAB.PROFILE_CUSTOMIZATION)
           })
         },
         url: eY.Z5c.SETTINGS("profile-customization")
@@ -531,7 +531,7 @@ let e0 = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eY.oAB.AUTHORIZED_APPS,
         searchableTitles: [eX.intl.string(eX.t["f6kk+v"])],
         label: eX.intl.string(eX.t["f6kk+v"]),
-        element: eg.Z,
+        element: em.Z,
         url: eY.Z5c.SETTINGS("authorized-apps")
       },
       [ez.s6.SESSIONS]: {
@@ -695,7 +695,7 @@ let e0 = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eX.intl.string(eX.t["iHH+k5"])],
         label: eX.intl.string(eX.t["iHH+k5"]),
         ariaLabel: eX.intl.string(eX.t["iHH+k5"]),
-        element: em.Z,
+        element: eg.Z,
         newIndicator: (0, i.jsx)(a.lBU, {
           text: eX.intl.string(eX.t.y2b7CA)
         }),
@@ -868,36 +868,36 @@ let e0 = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eY.oAB.VOICE,
         searchableTitles: [eX.intl.string(eX.t.K3lovL), eX.intl.string(eX.t.NiTd0d)],
         parent: ez.s6.VOICE_AND_VIDEO,
-        predicate: () => tm
+        predicate: () => tg
       },
       [ez.s6.VOICE_AND_VIDEO_VIDEO_TAB]: {
         section: eY.oAB.VOICE,
         searchableTitles: [eX.intl.string(eX.t.FlNoSU)],
         parent: ez.s6.VOICE_AND_VIDEO,
-        predicate: () => tm
+        predicate: () => tg
       },
       [ez.s6.VOICE_AND_VIDEO_SOUNDBOARD_TAB]: {
         section: eY.oAB.VOICE,
         searchableTitles: [eX.intl.string(eX.t.ABjMWF)],
         parent: ez.s6.VOICE_AND_VIDEO,
-        predicate: () => tm
+        predicate: () => tg
       },
       [ez.s6.VOICE_AND_VIDEO_DEBUG_TAB]: {
         section: eY.oAB.VOICE,
         searchableTitles: [eX.intl.string(eX.t.OFpL3d)],
         parent: ez.s6.VOICE_AND_VIDEO,
-        predicate: () => tm
+        predicate: () => tg
       },
       [ez.s6.VOICE_AND_VIDEO_VIDEO_STREAMING]: {
         section: eY.oAB.VOICE,
         searchableTitles: [eX.intl.string(eX.t.KDdjoq), eX.intl.string(eX.t.FeUKeH)],
         parent: ez.s6.VOICE_AND_VIDEO_VIDEO_TAB,
-        predicate: () => tm
+        predicate: () => tg
       },
       [ez.s6.VOICE_AND_VIDEO_VOICE]: {
         section: eY.oAB.VOICE,
         searchableTitles: [eX.intl.string(eX.t.K3lovL), eX.intl.string(eX.t.NiTd0d)],
-        parent: tm ? ez.s6.VOICE_AND_VIDEO_VOICE_TAB : ez.s6.VOICE_AND_VIDEO
+        parent: tg ? ez.s6.VOICE_AND_VIDEO_VOICE_TAB : ez.s6.VOICE_AND_VIDEO
       },
       [ez.s6.VOICE_AND_VIDEO_DEVICES]: {
         section: eY.oAB.VOICE,
@@ -943,12 +943,12 @@ let e0 = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
       [ez.s6.VOICE_AND_VIDEO_SWITCH_CHANNEL_ALERT]: {
         section: eY.oAB.VOICE,
         searchableTitles: [eX.intl.string(eX.t.e7LIiY)],
-        parent: tm ? ez.s6.VOICE_AND_VIDEO_VOICE_ADVANCED : ez.s6.VOICE_AND_VIDEO
+        parent: tg ? ez.s6.VOICE_AND_VIDEO_VOICE_ADVANCED : ez.s6.VOICE_AND_VIDEO
       },
       [ez.s6.VOICE_AND_VIDEO_SOUNDS]: {
         section: eY.oAB.VOICE,
         searchableTitles: [eX.intl.string(eX.t.nzUc3N)],
-        parent: tm ? ez.s6.VOICE_AND_VIDEO_SOUNDBOARD_TAB : ez.s6.VOICE_AND_VIDEO
+        parent: tg ? ez.s6.VOICE_AND_VIDEO_SOUNDBOARD_TAB : ez.s6.VOICE_AND_VIDEO
       },
       [ez.s6.VOICE_AND_VIDEO_SOUNDBOARD]: {
         section: eY.oAB.VOICE,
@@ -963,7 +963,7 @@ let e0 = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
       [ez.s6.VOICE_AND_VIDEO_VIDEO]: {
         section: eY.oAB.VOICE,
         searchableTitles: [eX.intl.string(eX.t.LKzQSE)],
-        parent: tm ? ez.s6.VOICE_AND_VIDEO_VIDEO_TAB : ez.s6.VOICE_AND_VIDEO
+        parent: tg ? ez.s6.VOICE_AND_VIDEO_VIDEO_TAB : ez.s6.VOICE_AND_VIDEO
       },
       [ez.s6.VOICE_AND_VIDEO_VIDEO_CAMERA]: {
         section: eY.oAB.VOICE,
@@ -991,24 +991,24 @@ let e0 = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eY.oAB.VOICE,
         searchableTitles: [eX.intl.string(eX.t["8/udY2"])],
         parent: ez.s6.VOICE_AND_VIDEO_VIDEO_TAB,
-        predicate: () => tm
+        predicate: () => tg
       },
       [ez.s6.VOICE_AND_VIDEO_VOICE_ADVANCED]: {
         section: eY.oAB.VOICE,
         searchableTitles: [eX.intl.string(eX.t["8/udY2"])],
         parent: ez.s6.VOICE_AND_VIDEO_VOICE_TAB,
-        predicate: () => tm
+        predicate: () => tg
       },
       [ez.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_AUDIO]: {
         section: eY.oAB.VOICE,
         searchableTitles: [eX.intl.string(eX.t.DSGme3)],
         parent: ez.s6.VOICE_AND_VIDEO_ADVANCED,
-        predicate: () => !tm
+        predicate: () => !tg
       },
       [ez.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO]: {
         section: eY.oAB.VOICE,
         searchableTitles: [eX.intl.string(eX.t.Tceiq6)],
-        parent: tm ? ez.s6.VOICE_AND_VIDEO_VIDEO_ADVANCED : ez.s6.VOICE_AND_VIDEO_ADVANCED
+        parent: tg ? ez.s6.VOICE_AND_VIDEO_VIDEO_ADVANCED : ez.s6.VOICE_AND_VIDEO_ADVANCED
       },
       [ez.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO_OPENH264]: {
         section: eY.oAB.VOICE,
@@ -1041,12 +1041,12 @@ let e0 = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
       [ez.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_SIDECHAIN_COMPRESSION]: {
         section: eY.oAB.VOICE,
         searchableTitles: [eX.intl.string(eX.t["/jwMtr"])],
-        parent: tm ? ez.s6.VOICE_AND_VIDEO_VIDEO_STREAMING : ez.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING
+        parent: tg ? ez.s6.VOICE_AND_VIDEO_VIDEO_STREAMING : ez.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING
       },
       [ez.s6.VOICE_AND_VIDEO_STREAM_PREVIEWS]: {
         section: eY.oAB.VOICE,
         searchableTitles: [eX.intl.string(eX.t.OBwCXF)],
-        parent: tm ? ez.s6.VOICE_AND_VIDEO_VIDEO_STREAMING : ez.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING
+        parent: tg ? ez.s6.VOICE_AND_VIDEO_VIDEO_STREAMING : ez.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING
       },
       [ez.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_NOISE_SUPPRESSION]: {
         section: eY.oAB.VOICE,
@@ -1075,25 +1075,25 @@ let e0 = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
       [ez.s6.VOICE_AND_VIDEO_ADVANCED_QOS]: {
         section: eY.oAB.VOICE,
         searchableTitles: [eX.intl.string(eX.t.uancuL)],
-        parent: tm ? ez.s6.VOICE_AND_VIDEO_VOICE_ADVANCED : ez.s6.VOICE_AND_VIDEO_ADVANCED,
+        parent: tg ? ez.s6.VOICE_AND_VIDEO_VOICE_ADVANCED : ez.s6.VOICE_AND_VIDEO_ADVANCED,
         predicate: () => Y.Z.supports(eq.AN.QOS)
       },
       [ez.s6.VOICE_AND_VIDEO_ADVANCED_ATTENUATION]: {
         section: eY.oAB.VOICE,
         searchableTitles: [eX.intl.string(eX.t.oSdBvb)],
-        parent: tm ? ez.s6.VOICE_AND_VIDEO_VOICE_ADVANCED : ez.s6.VOICE_AND_VIDEO_ADVANCED,
+        parent: tg ? ez.s6.VOICE_AND_VIDEO_VOICE_ADVANCED : ez.s6.VOICE_AND_VIDEO_ADVANCED,
         predicate: () => Y.Z.supports(eq.AN.ATTENUATION)
       },
       [ez.s6.VOICE_AND_VIDEO_ADVANCED_SUBSYSTEM]: {
         section: eY.oAB.VOICE,
         searchableTitles: [eX.intl.string(eX.t.wVBHr6)],
-        parent: tm ? ez.s6.VOICE_AND_VIDEO_VOICE_ADVANCED : ez.s6.VOICE_AND_VIDEO_ADVANCED,
+        parent: tg ? ez.s6.VOICE_AND_VIDEO_VOICE_ADVANCED : ez.s6.VOICE_AND_VIDEO_ADVANCED,
         predicate: () => Y.Z.shouldOfferManualSubsystemSelection()
       },
       [ez.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE]: {
         section: eY.oAB.VOICE,
         searchableTitles: [eX.intl.string(eX.t.KDdjoq), eX.intl.string(eX.t.NMCIf3), eX.intl.string(eX.t.FeUKeH)],
-        parent: tm ? ez.s6.VOICE_AND_VIDEO_VIDEO_STREAMING : ez.s6.VOICE_AND_VIDEO_ADVANCED,
+        parent: tg ? ez.s6.VOICE_AND_VIDEO_VIDEO_STREAMING : ez.s6.VOICE_AND_VIDEO_ADVANCED,
         predicate: () => Y.Z.supportsVideoHook() || Y.Z.supportsExperimentalSoundshare() || Y.Z.supportsSystemScreensharePicker() && (0, J.isMac)()
       },
       [ez.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_VIDEO_HOOK]: {
@@ -1117,13 +1117,13 @@ let e0 = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
       [ez.s6.VOICE_AND_VIDEO_ADVANCED_SILENCE_WARNING]: {
         section: eY.oAB.VOICE,
         searchableTitles: [eX.intl.string(eX.t["aP1N/v"])],
-        parent: tm ? ez.s6.VOICE_AND_VIDEO_VOICE_ADVANCED : ez.s6.VOICE_AND_VIDEO_ADVANCED,
+        parent: tg ? ez.s6.VOICE_AND_VIDEO_VOICE_ADVANCED : ez.s6.VOICE_AND_VIDEO_ADVANCED,
         predicate: () => J.isPlatformEmbedded
       },
       [ez.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING]: {
         section: eY.oAB.VOICE,
         searchableTitles: [eX.intl.string(eX.t.OFpL3d)],
-        parent: tm ? ez.s6.VOICE_AND_VIDEO_DEBUG_TAB : ez.s6.VOICE_AND_VIDEO_ADVANCED
+        parent: tg ? ez.s6.VOICE_AND_VIDEO_DEBUG_TAB : ez.s6.VOICE_AND_VIDEO_ADVANCED
       },
       [ez.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_STREAM_INFO_OVERLAY]: {
         section: eY.oAB.VOICE,
@@ -1152,7 +1152,7 @@ let e0 = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
       [ez.s6.VOICE_AND_VIDEO_RESET_VOICE_SETTINGS]: {
         section: eY.oAB.VOICE,
         searchableTitles: [eX.intl.string(eX.t["/RXu6+"])],
-        parent: tm ? ez.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING : ez.s6.VOICE_AND_VIDEO_ADVANCED
+        parent: tg ? ez.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING : ez.s6.VOICE_AND_VIDEO_ADVANCED
       },
       [ez.s6.CLICKER_GAME]: {
         url: eY.Z5c.SETTINGS("clicker-game"),
@@ -1991,11 +1991,11 @@ let e0 = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         })
       },
       [ez.s6.SOCIAL_LINKS]: {
-        section: g.ID.CUSTOM,
+        section: m.ID.CUSTOM,
         element: el.Z
       },
       [ez.s6.CLIENT_DEBUG_INFO]: {
-        section: g.ID.CUSTOM,
+        section: m.ID.CUSTOM,
         element: et.Z
       }
     })

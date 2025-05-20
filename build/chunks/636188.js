@@ -1,4 +1,4 @@
-/** Chunk was on 23609 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   Z: () => B
 }), n(388685), n(642613);
@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(239091),
   d = n(2052),
   u = n(493773),
-  m = n(100527),
-  g = n(906732),
+  g = n(100527),
+  m = n(906732),
   p = n(70097),
   h = n(142497),
   f = n(810788),
@@ -71,7 +71,7 @@ function P(e) {
     selected: c = !1,
     disabled: d = !1,
     onMouseLeave: u,
-    onBlur: m
+    onBlur: g
   } = e;
   return (0, i.jsxs)(o.P3F, {
     className: l()(a, N.backgroundOption, {
@@ -79,7 +79,7 @@ function P(e) {
       [N.backgroundOptionDisabled]: d
     }),
     onMouseLeave: u,
-    onBlur: m,
+    onBlur: g,
     onClick: d ? void 0 : n,
     children: [c ? (0, i.jsx)("div", {
       className: N.backgroundOptionRing
@@ -161,7 +161,7 @@ function D(e) {
   let S = (0, d.O)(),
     {
       analyticsLocations: v
-    } = (0, g.ZP)(m.Z.VIDEO_BACKGROUND_IMAGE_OPTION),
+    } = (0, m.ZP)(g.Z.VIDEO_BACKGROUND_IMAGE_OPTION),
     P = (0, a.e7)([f.Z], () => null != C && f.Z.hasHotspot(C)),
     D = x ? (0, i.jsx)(p.Z, {
       className: N.backgroundImageOption,
@@ -279,7 +279,7 @@ function k(e) {
     onClick: t
   } = e, n = (0, d.O)(), {
     analyticsLocations: r
-  } = (0, g.ZP)(m.Z.VIDEO_BACKGROUND_CUSTOM_UPSELL);
+  } = (0, m.ZP)(g.Z.VIDEO_BACKGROUND_CUSTOM_UPSELL);
   return (0, u.ZP)(() => {
     b.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
       type: T.cd.VIDEO_BACKGROUNDS_INLINE,
@@ -345,8 +345,8 @@ function B(e) {
     smallerOptions: d
   } = e, u = r.useMemo(() => n.sort((e, t) => null == e.last_used || null == t.last_used ? x.default.compare(t.id, e.id) : new Date(t.last_used).getTime() - new Date(e.last_used).getTime()), [n]), p = u.length >= 25, {
     analyticsLocations: h
-  } = (0, g.ZP)(m.Z.VIDEO_BACKGROUND_OPTIONS), f = Object.values((0, C.Z)()).sort((e, t) => j.E1[e.id] - j.E1[t.id]);
-  return (0, i.jsx)(g.Gt, {
+  } = (0, m.ZP)(g.Z.VIDEO_BACKGROUND_OPTIONS), f = Object.values((0, C.Z)()).sort((e, t) => j.E1[e.id] - j.E1[t.id]);
+  return (0, i.jsx)(m.Gt, {
     value: h,
     children: (0, i.jsxs)("div", {
       className: d ? N.backgroundOptionsSmall : N.backgroundOptionsLarge,

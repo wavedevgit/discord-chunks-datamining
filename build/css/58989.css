@@ -1,6 +1,6 @@
 /**
   Module ID: 58989
-  Original File Name: 6afc62dba409ca1c
+  Original File Name: 1106b7c2b0040108
 **/
 .header__6e6ad {
     align-items: center;
@@ -175,7 +175,11 @@
     border-radius: 50%
 }
 
-.overlayAvatar__57752,.overlayBanner__57752 {
+.overlayGuildIcon__57752 {
+    border-radius: 25%
+}
+
+.overlayBanner__57752 {
 }
 
 .sliderContainer__57752 {
@@ -255,4 +259,4 @@
     text-transform: none
 }
 
-/*# sourceMappingURL=6afc62dba409ca1c.css.map*/
+/*# sourceMappingURL=1106b7c2b0040108.css.map*/

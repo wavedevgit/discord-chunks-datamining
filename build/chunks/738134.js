@@ -1,5 +1,4 @@
-/** Chunk was on web.js **/
-"use strict";
+/** Chunk was on 94784 **/
 e.exports = {
   clickable: "clickable_a3e8db",
   disabled: "disabled_a3e8db",

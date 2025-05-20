@@ -2,8 +2,8 @@
 "use strict";
 var r = n(670575),
   i = n(131604),
-  a = n(3843),
-  o = n(837447);
+  o = n(3843),
+  a = n(837447);
 
 function s(e) {
   return e.call.bind(e)
@@ -57,32 +57,32 @@ function I(e) {
 function S(e) {
   return "undefined" != typeof DataView && (I.working ? I(e) : e instanceof DataView)
 }
-t.isArgumentsObject = r, t.isGeneratorFunction = i, t.isTypedArray = o, t.isPromise = function(e) {
+t.isArgumentsObject = r, t.isGeneratorFunction = i, t.isTypedArray = a, t.isPromise = function(e) {
   return "undefined" != typeof Promise && e instanceof Promise || null !== e && "object" == typeof e && "function" == typeof e.then && "function" == typeof e.catch
 }, t.isArrayBufferView = function(e) {
-  return "undefined" != typeof ArrayBuffer && ArrayBuffer.isView ? ArrayBuffer.isView(e) : o(e) || S(e)
+  return "undefined" != typeof ArrayBuffer && ArrayBuffer.isView ? ArrayBuffer.isView(e) : a(e) || S(e)
 }, t.isUint8Array = function(e) {
-  return "Uint8Array" === a(e)
+  return "Uint8Array" === o(e)
 }, t.isUint8ClampedArray = function(e) {
-  return "Uint8ClampedArray" === a(e)
+  return "Uint8ClampedArray" === o(e)
 }, t.isUint16Array = function(e) {
-  return "Uint16Array" === a(e)
+  return "Uint16Array" === o(e)
 }, t.isUint32Array = function(e) {
-  return "Uint32Array" === a(e)
+  return "Uint32Array" === o(e)
 }, t.isInt8Array = function(e) {
-  return "Int8Array" === a(e)
+  return "Int8Array" === o(e)
 }, t.isInt16Array = function(e) {
-  return "Int16Array" === a(e)
+  return "Int16Array" === o(e)
 }, t.isInt32Array = function(e) {
-  return "Int32Array" === a(e)
+  return "Int32Array" === o(e)
 }, t.isFloat32Array = function(e) {
-  return "Float32Array" === a(e)
+  return "Float32Array" === o(e)
 }, t.isFloat64Array = function(e) {
-  return "Float64Array" === a(e)
+  return "Float64Array" === o(e)
 }, t.isBigInt64Array = function(e) {
-  return "BigInt64Array" === a(e)
+  return "BigInt64Array" === o(e)
 }, t.isBigUint64Array = function(e) {
-  return "BigUint64Array" === a(e)
+  return "BigUint64Array" === o(e)
 }, g.working = "undefined" != typeof Map && g(new Map), t.isMap = function(e) {
   return "undefined" != typeof Map && (g.working ? g(e) : e instanceof Map)
 }, E.working = "undefined" != typeof Set && E(new Set), t.isSet = function(e) {
