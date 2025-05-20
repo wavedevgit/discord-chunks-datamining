@@ -1,6 +1,6 @@
 /**
   Module ID: 15066
-  Original File Name: 29f616d90ca4b854
+  Original File Name: f3c1e0c71c97c3a2
 **/
 .wrapper__74bfa {
     align-items: center;
@@ -633,6 +633,24 @@
 
 .visual-refresh .pill_a2c9e8.selected_a2c9e8:not(.disabled_a2c9e8):active {
     background-color: var(--opacity-blurple-12)
+}
+
+.visual-refresh .pill_a2c9e8.danger_a2c9e8 {
+    background-color: var(--background-feedback-critical);
+    border-color: var(--border-feedback-critical);
+    color: var(--text-feedback-critical)
+}
+
+.visual-refresh .pill_a2c9e8.success_a2c9e8 {
+    background-color: var(--background-feedback-positive);
+    border-color: var(--border-subtle);
+    color: var(--text-feedback-positive)
+}
+
+.visual-refresh .pill_a2c9e8.warning_a2c9e8 {
+    background-color: var(--background-feedback-warning);
+    border-color: var(--border-subtle);
+    color: var(--text-feedback-warning)
 }
 
 .visual-refresh.full-motion .pill_a2c9e8 {
@@ -1295,4 +1313,4 @@ h1.title_feb59c,h2.title_feb59c {
     margin-right: var(--spacing-32)
 }
 
-/*# sourceMappingURL=29f616d90ca4b854.css.map*/
+/*# sourceMappingURL=f3c1e0c71c97c3a2.css.map*/

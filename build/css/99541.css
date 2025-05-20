@@ -1,6 +1,6 @@
 /**
   Module ID: 99541
-  Original File Name: 857d61ba5881c12e
+  Original File Name: 8a279a082a5c0528
 **/
 .badgeContainer__98c7b {
     display: flex;
@@ -1741,6 +1741,24 @@
     background-color: var(--opacity-blurple-12)
 }
 
+.visual-refresh .pill_a2c9e8.danger_a2c9e8 {
+    background-color: var(--background-feedback-critical);
+    border-color: var(--border-feedback-critical);
+    color: var(--text-feedback-critical)
+}
+
+.visual-refresh .pill_a2c9e8.success_a2c9e8 {
+    background-color: var(--background-feedback-positive);
+    border-color: var(--border-subtle);
+    color: var(--text-feedback-positive)
+}
+
+.visual-refresh .pill_a2c9e8.warning_a2c9e8 {
+    background-color: var(--background-feedback-warning);
+    border-color: var(--border-subtle);
+    color: var(--text-feedback-warning)
+}
+
 .visual-refresh.full-motion .pill_a2c9e8 {
     transition: background-color .2s ease
 }
@@ -1902,4 +1920,4 @@
     opacity: 1
 }
 
-/*# sourceMappingURL=857d61ba5881c12e.css.map*/
+/*# sourceMappingURL=8a279a082a5c0528.css.map*/

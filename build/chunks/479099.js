@@ -104,7 +104,8 @@ function h(e) {
       [I.disabled]: o,
       [I.clickable]: D,
       [I.small]: w,
-      [I.selected]: y
+      [I.selected]: y,
+      [I[t.color]]: null != t.color && !D
     }, b),
     onClick: e => {
       null == h || h(e), null == C || C(t), U || null == M.current || M.current.blur()

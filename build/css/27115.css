@@ -1,6 +1,6 @@
 /**
   Module ID: 27115
-  Original File Name: bda9988017584599
+  Original File Name: 1e3b920cf43249a2
 **/
 @use postcss-pxtorem;
 
@@ -1055,6 +1055,24 @@
     background-color: var(--opacity-blurple-12)
 }
 
+.visual-refresh .pill_a2c9e8.danger_a2c9e8 {
+    background-color: var(--background-feedback-critical);
+    border-color: var(--border-feedback-critical);
+    color: var(--text-feedback-critical)
+}
+
+.visual-refresh .pill_a2c9e8.success_a2c9e8 {
+    background-color: var(--background-feedback-positive);
+    border-color: var(--border-subtle);
+    color: var(--text-feedback-positive)
+}
+
+.visual-refresh .pill_a2c9e8.warning_a2c9e8 {
+    background-color: var(--background-feedback-warning);
+    border-color: var(--border-subtle);
+    color: var(--text-feedback-warning)
+}
+
 .visual-refresh.full-motion .pill_a2c9e8 {
     transition: background-color .2s ease
 }
@@ -1096,4 +1114,4 @@
     margin-right: 8px
 }
 
-/*# sourceMappingURL=bda9988017584599.css.map*/
+/*# sourceMappingURL=1e3b920cf43249a2.css.map*/
