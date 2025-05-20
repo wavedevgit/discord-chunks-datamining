@@ -55,24 +55,24 @@ function j(e, n, j) {
     [n]: [e.id]
   }), [n, e.id]);
   (0, o.$)(P), (0, r.e7)([Z.Z], () => Z.Z.getGuildVersion(n), [n]);
-  let v = (0, r.e7)([g.Z], () => g.Z.getChannel(j)),
-    x = (0, r.e7)([b.Z], () => b.Z.getGuild(n), [n]),
-    y = (0, r.e7)([f.default], () => f.default.getCurrentUser()),
-    N = (0, u.Z)(v, "Context Menu"),
-    _ = (0, d.Xb)(v);
-  if ((null == y ? void 0 : y.id) === e.id) return [N];
-  if (null == x || null == v || null == y) return [];
-  let E = _ || v.ownerId === y.id && v.type === p.d4z.PRIVATE_THREAD;
+  let x = (0, r.e7)([g.Z], () => g.Z.getChannel(j)),
+    v = (0, r.e7)([b.Z], () => b.Z.getGuild(n), [n]),
+    _ = (0, r.e7)([f.default], () => f.default.getCurrentUser()),
+    y = (0, u.Z)(x, "Context Menu"),
+    N = (0, d.Xb)(x);
+  if ((null == _ ? void 0 : _.id) === e.id) return [y];
+  if (null == v || null == x || null == _) return [];
+  let E = N || x.ownerId === _.id && x.type === p.d4z.PRIVATE_THREAD;
   return [E ? (0, l.jsx)(a.sNh, {
     id: "remove",
-    label: v.isForumPost() ? O.intl.formatToPlainString(O.t.v2KNNz, {
+    label: x.isForumPost() ? O.intl.formatToPlainString(O.t.v2KNNz, {
       user: e.username
     }) : O.intl.formatToPlainString(O.t["27xWaW"], {
       user: e.username
     }),
     color: "danger",
-    action: () => c.Z.removeMember(v, e.id, "Context Menu")
-  }) : null, (0, s.BK)(e, x) ? (0, l.jsx)(a.sNh, {
+    action: () => c.Z.removeMember(x, e.id, "Context Menu")
+  }) : null, (0, s.BK)(e, v) ? (0, l.jsx)(a.sNh, {
     id: "kick",
     label: E ? O.intl.formatToPlainString(O.t["1Ie87u"], {
       user: e.username
@@ -85,11 +85,11 @@ function j(e, n, j) {
         default: n
       } = await t.e("5454").then(t.bind(t, 854360));
       return t => (0, l.jsx)(n, h(m({}, t), {
-        guildId: x.id,
+        guildId: v.id,
         user: e
       }))
     })
-  }) : null, (0, s.mm)(e, x) ? (0, l.jsx)(a.sNh, {
+  }) : null, (0, s.mm)(e, v) ? (0, l.jsx)(a.sNh, {
     id: "ban",
     label: E ? O.intl.formatToPlainString(O.t.i62APT, {
       user: e.username
@@ -102,7 +102,7 @@ function j(e, n, j) {
         default: n
       } = await t.e("4114").then(t.bind(t, 98746));
       return t => (0, l.jsx)(n, h(m({}, t), {
-        guildId: x.id,
+        guildId: v.id,
         user: e
       }))
     })

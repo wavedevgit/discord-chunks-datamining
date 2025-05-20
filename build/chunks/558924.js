@@ -57,7 +57,7 @@ function N(e, t) {
       channel: o
     }) : null,
     action: () => {
-      T && L(x.L.TAKE_ACTION), c.Z.ring(t, [e.id]), S && null != t && (0, p.Kh)(t)
+      T && L(x.L.TAKE_ACTION), c.Z.ring(t, [e.id], "user_context_menu"), S && null != t && (0, p.Kh)(t)
     },
     className: y.menuItem
   }) : C ? (0, i.jsx)(d.sNh, {

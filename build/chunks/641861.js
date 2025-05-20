@@ -93,7 +93,7 @@ function j(e) {
     recipientUserId: n,
     isUserRinging: i
   } = e, a = (0, m.Q3)("RingUserButton"), o = i ? x.intl.string(x.t.ygslb2) : x.intl.string(x.t["3Hv9qa"]), d = i ? () => u.Z.stopRinging(t, [n]) : () => {
-    u.Z.ring(t, [n]), (0, g.Kh)(t)
+    u.Z.ring(t, [n], "dm_banner"), (0, g.Kh)(t)
   };
   return a ? (0, r.jsx)(s.z, {
     variant: i ? "destructive-secondary" : "secondary",
