@@ -1,4 +1,4 @@
-/** Chunk was on 56893 **/
+/** Chunk was on 23609 **/
 e.exports = {
   root: "root__6fdb8",
   themes: "themes__6fdb8",

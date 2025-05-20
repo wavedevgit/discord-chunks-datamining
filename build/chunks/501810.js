@@ -1,4 +1,4 @@
-/** Chunk was on 56893 **/
+/** Chunk was on 23609 **/
 e.exports = {
   pageActions: "pageActions__2d021",
   pageButtonNext: "pageButtonNext__2d021",

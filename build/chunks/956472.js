@@ -41,7 +41,7 @@ let c = e => {
       isPremiumUser: r
     }), {
       enabled: d
-    } = (0, i.C)({
+    } = (0, i.CE)({
       location: "getShopProductPrices"
     }), h = d ? u.find(e => e.currency === a.pKx.DISCORD_ORB) : void 0, p = u.find(e => e.currency !== a.pKx.DISCORD_ORB), f = [], g = [], m = 1 === u.length && null != h, b = null != h && null != o && o >= h.amount;
     null != h && null != p ? (b ? f.push(h, p) : f.push(p, h), l === s.AW.ORBS ? g.push(h) : g.push(p, h)) : null != h ? (f.push(h), g.push(h)) : null != p && (f.push(p), l !== s.AW.ORBS && g.push(p));

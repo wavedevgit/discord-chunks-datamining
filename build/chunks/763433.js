@@ -28,7 +28,7 @@ function f(e) {
     children: b
   } = e, x = (0, d.ZP)(), v = (0, o.e7)([m.default], () => m.default.getCurrentUser()), C = (null == v ? void 0 : v.isStaff()) || (null == v ? void 0 : v.isStaffPersonal()), {
     enabled: j
-  } = (0, p.W)({
+  } = (0, p.WX)({
     location: "global_discovery_header_bar"
   });
   return (0, a.jsx)(c.f6W, {

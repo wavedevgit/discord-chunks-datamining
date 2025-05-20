@@ -50,8 +50,8 @@ var r = n(255367),
   q = n(981631),
   Y = n(921944),
   $ = n(420212),
-  K = n(474936),
-  X = n(484920);
+  X = n(474936),
+  K = n(484920);
 let J = e => {
     let {
       isFullScreen: t,
@@ -158,7 +158,7 @@ let J = e => {
       }
     }, [et, u, er, ep, eg, eh, eo, ea, ee, en]), l.useEffect(() => {
       null == eS || ej || j.default.track(q.rMx.PREMIUM_UPSELL_VIEWED, {
-        type: K.cd.COLLECTIBLES_SHOP,
+        type: X.cd.COLLECTIBLES_SHOP,
         location_stack: et
       })
     }, [ej, et, eS]);
@@ -208,13 +208,13 @@ let J = e => {
         }
         eH(t)
       }
-    }, [eH, n, eD.enabled, es, eG, ez, eq, eV, eU]), e$ = (0, w.b)("Collectibles Shop Button"), eK = l.useMemo(() => {
+    }, [eH, n, eD.enabled, es, eG, ez, eq, eV, eU]), e$ = (0, w.b)("Collectibles Shop Button"), eX = l.useMemo(() => {
       if (!eG) return eB;
       let e = (eV - 1) * ez;
       return eB.slice(e, e + ez)
-    }, [eB, eG, ez, eV]), eX = l.useRef(null), eJ = l.useCallback(e => {
-      eU(e), null != el.current && null != eX.current ? el.current.scrollTo({
-        to: eX.current.getBoundingClientRect().top
+    }, [eB, eG, ez, eV]), eK = l.useRef(null), eJ = l.useCallback(e => {
+      eU(e), null != el.current && null != eK.current ? el.current.scrollTo({
+        to: eK.current.getBoundingClientRect().top
       }) : null != el.current && el.current.scrollTo({
         to: 0
       })
@@ -233,11 +233,11 @@ let J = e => {
           onClose: ex,
           shouldAddEventListener: n && !eO,
           children: [(0, r.jsx)("div", {
-            className: X.shop,
+            className: K.shop,
             ref: n ? eM : eW,
             tabIndex: -1,
             children: (0, r.jsx)(b.Den, {
-              className: X.shopScroll,
+              className: K.shopScroll,
               ref: el,
               onScroll: () => {
                 if (ei(), null != el.current) {
@@ -246,10 +246,10 @@ let J = e => {
                 }
               },
               children: (0, r.jsxs)("div", {
-                className: a()(X.shopViewWrapper, {
-                  [X.visible]: eo === z.f7.VISIBLE,
-                  [X.in]: eo === z.f7.IN,
-                  [X.out]: eo === z.f7.OUT
+                className: a()(K.shopViewWrapper, {
+                  [K.visible]: eo === z.f7.VISIBLE,
+                  [K.in]: eo === z.f7.IN,
+                  [K.out]: eo === z.f7.OUT
                 }),
                 children: [(0, r.jsx)(H.I, {
                   isFullScreen: n,
@@ -286,15 +286,15 @@ let J = e => {
                       });
                     case z.AW.CATALOG:
                       return (0, r.jsx)("div", {
-                        className: X.pageWrapper,
+                        className: K.pageWrapper,
                         children: (0, r.jsxs)("main", {
-                          className: a()(X.page, {
-                            [X.pageFullscreen]: n,
-                            [X.pageWithPagination]: eG && (null == eB ? void 0 : eB.length) > ez
+                          className: a()(K.page, {
+                            [K.pageFullscreen]: n,
+                            [K.pageWithPagination]: eG && (null == eB ? void 0 : eB.length) > ez
                           }),
                           children: [(0, r.jsx)(A.Z, {
                             isFetchingCategories: eP,
-                            sortedCategories: eK,
+                            sortedCategories: eX,
                             setCategoryRef: eF,
                             isPremiumUser: ej,
                             initialItemCardRef: eL,
@@ -302,7 +302,7 @@ let J = e => {
                             isGiftEasterEggEnabled: eN,
                             isFullScreen: n
                           }), eG && eB.length > ez && (0, r.jsx)("div", {
-                            className: X.paginationContainer,
+                            className: K.paginationContainer,
                             children: (0, r.jsx)("div", {
                               children: (0, r.jsx)(d.D, {
                                 currentPage: eV,

@@ -331,10 +331,10 @@ function ep(e) {
     }, [P, I, S, eg.setNodeRef]),
     {
       enabled: e_
-    } = (0, N.W)({
+    } = (0, N.WX)({
       location: "GuildsBar"
     });
-  (0, T.i)();
+  (0, T.t)();
   let eC = i.useRef(null),
     ej = (0, Z.qp)({
       isVirtualCurrencyEnabled: e_,

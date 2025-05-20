@@ -1,4 +1,4 @@
-/** Chunk was on 56893 **/
+/** Chunk was on 23609 **/
 e.exports = {
   soundboardColumn: "soundboardColumn__16280",
   soundboardRow: "soundboardRow__16280",

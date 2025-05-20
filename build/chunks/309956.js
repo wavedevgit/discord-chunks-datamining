@@ -11,7 +11,7 @@ var r = n(73800),
 let s = (e, t, n) => {
   let {
     enabled: s
-  } = (0, i.W)({
+  } = (0, i.WX)({
     location: "useShopViewTransition"
   }), c = r.useMemo(() => t !== a.AW.ORBS || s ? t : a.AW.HOME, [t, s]), [u, d] = r.useState(c), [b, f] = r.useState(a.f7.VISIBLE);
   r.useEffect(() => {

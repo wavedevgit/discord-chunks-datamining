@@ -1,4 +1,4 @@
-/** Chunk was on 56893 **/
+/** Chunk was on 23609 **/
 e.exports = {
   headerImage: "headerImage__25f6c",
   closeButton: "closeButton__25f6c",

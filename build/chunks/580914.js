@@ -79,7 +79,7 @@ let L = {
       heroLogo: W,
       heroBannerStatic: V,
       heroBannerAnimated: U
-    } = (0, E.hr)(F), G = null == D ? void 0 : D.heroBanner, z = l.useMemo(() => Z(F.rankedSkuIds), [t, Z, F.rankedSkuIds]), q = (0, x.a)()(z), Y = (0, S.l)(q).slice(0, 4), $ = (0, k.St)(Y), K = v === T.AW.ORBS ? I.intl.string(I.t["1CdL8f"]) : I.intl.formatToPlainString(I.t.wvKYCg, {
+    } = (0, E.hr)(F), G = null == D ? void 0 : D.heroBanner, z = l.useMemo(() => Z(F.rankedSkuIds), [t, Z, F.rankedSkuIds]), q = (0, x.a)()(z), Y = (0, S.l)(q).slice(0, 4), $ = (0, k.St)(Y), X = v === T.AW.ORBS ? I.intl.string(I.t["1CdL8f"]) : I.intl.formatToPlainString(I.t.wvKYCg, {
       category_name: F.name
     });
     return null != A && (t || F !== L) ? (0, r.jsxs)("div", {
@@ -164,7 +164,7 @@ let L = {
                   fromContent: o.j.ORBS_SHOP_HERO_CTA
                 })) : n("shop latest category hero", F.categorySkuId)
               },
-              children: K
+              children: X
             })
           })]
         }), (0, r.jsx)("div", {

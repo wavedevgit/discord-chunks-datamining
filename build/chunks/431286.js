@@ -1,6 +1,6 @@
 /** Chunk was on 75293 **/
 n.d(t, {
-  i: () => j
+  t: () => j
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -34,7 +34,7 @@ function j() {
     onboardingModalOpenedPrior: b.Z.onboardingModalOpenedPrior
   })), {
     enabled: j
-  } = (0, m.W)({
+  } = (0, m.hl)({
     location: "virtual_currency_announcement_modal"
   }), [S, E] = (0, h.US)(j ? [s.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], ...y.b.useSelectedDismissibleContent), x = (0, c.s9z)(c.JQI);
   i.useEffect(() => {

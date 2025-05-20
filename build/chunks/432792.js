@@ -1,4 +1,4 @@
-/** Chunk was on 56893 **/
+/** Chunk was on 23609 **/
 n.d(t, {
   M: () => O,
   M4: () => v,
@@ -35,7 +35,7 @@ let C = () => (0, g.Lk)(document.body.style.getPropertyValue("--custom-app-panel
       onShowCoachmarkHandler: i
     } = e, s = (0, u.wE)(l.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL), {
       enabled: a
-    } = (0, p.W)({
+    } = (0, p.WX)({
       location: "virtual_currency_onboarding_coachmark"
     }), o = j[t], c = (0, u.wE)(o), d = a && s && n && !c, m = r.useCallback(function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "CLOSE";

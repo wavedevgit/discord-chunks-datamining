@@ -1,4 +1,4 @@
-/** Chunk was on 56893 **/
+/** Chunk was on 23609 **/
 e.exports = {
   features: "features_b8f10d",
   video: "video_b8f10d",

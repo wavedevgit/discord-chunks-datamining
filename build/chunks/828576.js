@@ -1,4 +1,4 @@
-/** Chunk was on 56893 **/
+/** Chunk was on 23609 **/
 e.exports = {
   body: "body__996b0",
   confirmDiscountContent: "confirmDiscountContent__996b0",

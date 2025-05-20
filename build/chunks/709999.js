@@ -329,7 +329,7 @@ let eu = e => {
       isPurchased: eR
     }), eT = null !== ee ? ee : Y, [eH, eB] = i.useState(!1), {
       enabled: eD
-    } = (0, E.W)({
+    } = (0, E.WX)({
       location: "collectibles_shop_tall_card"
     }), eV = (0, L.N)("CollectiblesShopTallCard"), eU = (0, R.E)("shop_tall_card");
     i.useEffect(() => {

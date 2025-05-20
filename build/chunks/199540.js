@@ -159,13 +159,16 @@ function b(e) {
             folderName: b,
             mentions: d
           })
-        }), null != O ? (0, r.jsx)("div", {
-          className: f.folderIconWrapper,
-          children: O
-        }) : (0, r.jsx)(m, {
-          folderNode: l,
-          hovered: I,
-          sorting: s
+        }), (0, r.jsx)("div", {
+          className: f.folderButtonInner,
+          children: null != O ? (0, r.jsx)("div", {
+            className: f.folderIconWrapper,
+            children: O
+          }) : (0, r.jsx)(m, {
+            folderNode: l,
+            hovered: I,
+            sorting: s
+          })
         })]
       })
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

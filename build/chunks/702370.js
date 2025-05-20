@@ -49,8 +49,8 @@ var r = n(255367),
   K = n(228624),
   q = n(635552),
   Y = n(83479),
-  Q = n(290175),
-  X = n(905357),
+  X = n(290175),
+  Q = n(905357),
   J = n(724994),
   $ = n(328456),
   ee = n(390698),
@@ -267,7 +267,7 @@ let eT = {
       {
         isDisabled: Z,
         disabledReason: B
-      } = (0, Q.G)(S.skuId),
+      } = (0, X.G)(S.skuId),
       D = (0, V.ne)({
         product: S,
         isPartiallyOwnedBundle: L,
@@ -291,10 +291,10 @@ let eT = {
         onSuccess: m
       }),
       eh = (0, K.hv)("CollectiblesProductPreviewInfo"),
-      ev = (0, X.T)(S),
+      ev = (0, Q.T)(S),
       {
         enabled: ex
-      } = (0, y.W)({
+      } = (0, y.WX)({
         location: "collectibles_shop_product_details_modal"
       }),
       {

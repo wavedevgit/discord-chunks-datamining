@@ -1,6 +1,6 @@
 /**
   Module ID: 75293
-  Original File Name: c4baa51f41a7896e
+  Original File Name: 0d5b88a6b7883b92
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -2131,14 +2131,17 @@ div:has(>.positionLayer_fc71d3) {
     outline: 1px solid var(--status-positive)
 }
 
-.folderButton__48112 {
-    border-radius: var(--radius-md);
+.folderButton__48112,.folderButtonInner__48112 {
     box-sizing: border-box;
     cursor: pointer;
     height: var(--guildbar-folder-size);
-    overflow: hidden;
-    position: relative;
     width: var(--guildbar-folder-size)
+}
+
+.folderButtonInner__48112 {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    position: relative
 }
 
 .folderButtonContent__48112 {
@@ -2251,6 +2254,11 @@ div:has(>.positionLayer_fc71d3) {
     padding: var(--custom-folder-padding)
 }
 
+.refresh-fast-follow-avatars .folderButtonInner__48112 {
+    height: var(--guildbar-avatar-size);
+    width: var(--guildbar-avatar-size)
+}
+
 .refresh-fast-follow-avatars .folderButtonContent__48112 {
     transform: translate3d(0,calc(var(--guildbar-avatar-size)*-1),0)
 }
@@ -2263,7 +2271,7 @@ div:has(>.positionLayer_fc71d3) {
     padding: 0
 }
 
-.keyboard-mode .folderButton__48112:focus .refresh-fast-follow-avatars .folderIcon__48112,.refresh-fast-follow-avatars .folderIcon__48112:hover {
+.refresh-fast-follow-avatars .folderButton__48112:focus .folderIcon__48112,.refresh-fast-follow-avatars .folderIcon__48112:hover {
     background-color: var(--opacity-white-12)
 }
 
@@ -6251,4 +6259,4 @@ div:has(>.positionLayer_fc71d3) {
     width: 96px
 }
 
-/*# sourceMappingURL=c4baa51f41a7896e.css.map*/
+/*# sourceMappingURL=0d5b88a6b7883b92.css.map*/

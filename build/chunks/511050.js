@@ -1,4 +1,4 @@
-/** Chunk was on 56893 **/
+/** Chunk was on 23609 **/
 n.d(t, {
   Z: () => h,
   l: () => p
@@ -19,7 +19,7 @@ let g = new s.Z("VirtualCurrency"),
       location: t
     } = e, {
       enabled: n
-    } = (0, d.W)({
+    } = (0, d.WX)({
       location: t
     }), s = (0, r.e7)([l.Z], () => {
       if (!n) return null;
