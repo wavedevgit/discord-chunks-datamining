@@ -1,5 +1,5 @@
-/** Chunk was on 8854 **/
-e.exports = {
+/** Chunk was on 18718 **/
+o.exports = {
   promotionalFooterBanner: "promotionalFooterBanner_e68795",
   bannerText: "bannerText_e68795"
 }

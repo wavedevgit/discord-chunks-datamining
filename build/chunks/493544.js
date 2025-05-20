@@ -1,4 +1,4 @@
-/** Chunk was on 20185 **/
+/** Chunk was on 99541 **/
 "use strict";
 n.d(t, {
   ID: () => h,
@@ -173,7 +173,7 @@ let P = function(e) {
     },
     reverse: y,
     config: c.config.stiff
-  }, "animate-always"), N = o.useCallback(e => {
+  }, "animate-always"), T = o.useCallback(e => {
     x.current = e, null != v && (v.current = e)
   }, [v]);
   o.useLayoutEffect(() => {
@@ -181,13 +181,13 @@ let P = function(e) {
       to: 0
     })
   }, [i, E, x]);
-  let T = (0, s.jsx)(S, {
+  let N = (0, s.jsx)(S, {
     isMobile: d.tq,
     mobileSidebarOpen: h,
     closeAction: a
   });
 
-  function D() {
+  function I() {
     return null == r ? null : (0, s.jsx)(f.oXn, {
       className: l()(_.noticeRegion, {
         [_.noticeRegionHiddenSidebar]: y
@@ -215,7 +215,7 @@ let P = function(e) {
               }),
               children: [d.tq && (0, s.jsx)("div", {
                 className: _.mobileSidebarHeader,
-                children: T
+                children: N
               }), t]
             })
           })
@@ -228,19 +228,19 @@ let P = function(e) {
             }),
             children: [e && (0, s.jsx)(u.r, {
               onClick: j
-            }), T]
+            }), N]
           });
         if ("custom" === m) return (0, s.jsxs)(p.W, {
           component: "div",
           className: _.contentRegion,
-          children: [t, n, !d.tq && T, D()]
+          children: [t, n, !d.tq && N, I()]
         });
         if ("scrollableCustom" === m) return (0, s.jsxs)(p.W, {
           component: "div",
           className: _.contentRegion,
           children: [t, (0, s.jsxs)(f.yWw, {
             className: l()(_.contentRegionScroller, y ? _.contentRegionHiddenSidebar : _.contentRegionShownSidebar),
-            ref: N,
+            ref: T,
             children: [(0, s.jsx)(O.Provider, {
               value: x.current,
               children: (0, s.jsx)("div", {
@@ -251,8 +251,8 @@ let P = function(e) {
                   children: n
                 })
               })
-            }), !d.tq && T]
-          }), D()]
+            }), !d.tq && N]
+          }), I()]
         });
         let r = C[null != m ? m : "default"];
         return (0, s.jsxs)(p.W, {
@@ -264,7 +264,7 @@ let P = function(e) {
             className: _.contentTransitionWrap,
             children: [t, (0, s.jsxs)(f.yWw, {
               className: l()(_.contentRegionScroller, y ? _.contentRegionHiddenSidebar : _.contentRegionShownSidebar),
-              ref: N,
+              ref: T,
               children: [(0, s.jsx)(O.Provider, {
                 value: x.current,
                 children: (0, s.jsx)(f.njP.Panel, {
@@ -281,9 +281,9 @@ let P = function(e) {
                     children: n
                   })
                 })
-              }), !d.tq && T]
+              }), !d.tq && N]
             })]
-          }), D()]
+          }), I()]
         })
       }()]
     }))

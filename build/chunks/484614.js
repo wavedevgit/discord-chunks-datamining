@@ -1,90 +1,91 @@
-/** Chunk was on 71874 **/
-t.d(n, {
-  Z: () => _
+/** Chunk was on 99541 **/
+"use strict";
+n.d(t, {
+  Z: () => p
 });
-var r, a = t(255367),
-  i = t(73800),
-  o = t(846519),
-  l = t(481060),
-  c = t(572004),
-  s = t(388032);
+var r, i = n(255367),
+  s = n(73800),
+  o = n(846519),
+  a = n(481060),
+  l = n(572004),
+  c = n(388032);
 
-function d(e, n, t) {
-  return n in e ? Object.defineProperty(e, n, {
-    value: t,
+function u(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
     enumerable: !0,
     configurable: !0,
     writable: !0
-  }) : e[n] = t, e
+  }) : e[t] = n, e
 }
-class u extends(r = i.PureComponent) {
+class d extends(r = s.PureComponent) {
   componentWillUnmount() {
     this._timeout.stop()
   }
   render() {
-    var e, n;
+    var e, t;
     let {
-      text: t
+      text: n
     } = this.props, {
       mode: r
-    } = this.state, i = r === l.kO8.Modes.SUCCESS ? s.intl.string(s.t["t5VZ8/"]) : t;
-    return (0, a.jsx)(l.kO8, (e = function(e) {
-      for (var n = 1; n < arguments.length; n++) {
-        var t = null != arguments[n] ? arguments[n] : {},
-          r = Object.keys(t);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(t, e).enumerable
-        }))), r.forEach(function(n) {
-          d(e, n, t[n])
+    } = this.state, s = r === a.kO8.Modes.SUCCESS ? c.intl.string(c.t["t5VZ8/"]) : n;
+    return (0, i.jsx)(a.kO8, (e = function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+          u(e, t, n[t])
         })
       }
       return e
-    }({}, this.props), n = n = {
+    }({}, this.props), t = t = {
       onCopy: this.handleCopy,
       mode: r,
-      text: i,
-      supportsCopy: c.wS
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
-      var t = Object.keys(e);
+      text: s,
+      supportsCopy: l.wS
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+      var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
-        t.push.apply(t, r)
+        n.push.apply(n, r)
       }
-      return t
-    })(Object(n)).forEach(function(t) {
-      Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+      return n
+    })(Object(t)).forEach(function(n) {
+      Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
   }
   handleCopy(e) {
     let {
-      onCopy: n,
-      delay: t = 1e3
+      onCopy: t,
+      delay: n = 1e3
     } = this.props;
-    (0, c.JG)(e, () => this.setState({
-      mode: l.kO8.Modes.SUCCESS
+    (0, l.JG)(e, () => this.setState({
+      mode: a.kO8.Modes.SUCCESS
     }), () => this.setState({
-      mode: l.kO8.Modes.ERROR
-    })), this._timeout.start(t, () => this.setState({
-      mode: l.kO8.Modes.DEFAULT
-    })), null == n || n(e)
+      mode: a.kO8.Modes.ERROR
+    })), this._timeout.start(n, () => this.setState({
+      mode: a.kO8.Modes.DEFAULT
+    })), null == t || t(e)
   }
   getVerticalButtonColor(e) {
     switch (e) {
-      case l.kO8.Modes.SUCCESS:
-        return l.zxk.Colors.GREEN;
-      case l.kO8.Modes.ERROR:
-        return l.zxk.Colors.RED;
+      case a.kO8.Modes.SUCCESS:
+        return a.zxk.Colors.GREEN;
+      case a.kO8.Modes.ERROR:
+        return a.zxk.Colors.RED;
       default:
-        return l.zxk.Colors.BRAND
+        return a.zxk.Colors.BRAND
     }
   }
   constructor(e) {
-    super(e), d(this, "_timeout", void 0), this.state = {
-      mode: l.kO8.Modes.DEFAULT
+    super(e), u(this, "_timeout", void 0), this.state = {
+      mode: a.kO8.Modes.DEFAULT
     }, this._timeout = new o.V7, this.handleCopy = this.handleCopy.bind(this)
   }
 }
-d(u, "defaultProps", {
+u(d, "defaultProps", {
   delay: 1e3
 });
-let _ = u
+let p = d

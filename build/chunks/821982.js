@@ -1,11 +1,10 @@
-/** Chunk was on web.js **/
-"use strict";
+/** Chunk was on 94136 **/
 n.d(t, {
-  Z: () => a
+  Z: () => l
 });
 var r = n(768581),
   i = n(1585);
-let a = (e, t, n) => (0, r.NZ)({
+let l = (e, t, n) => (0, r.NZ)({
   avatarDecoration: {
     asset: e
   },

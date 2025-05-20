@@ -1,5 +1,5 @@
-/** Chunk was on 8854 **/
-e.exports = {
+/** Chunk was on 18718 **/
+o.exports = {
   attributionBannerContainer: "attributionBannerContainer__7b5f3",
   avatarContainer: "avatarContainer__7b5f3",
   bannerHeader: "bannerHeader__7b5f3",
