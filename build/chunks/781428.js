@@ -39,8 +39,8 @@ var r, i = n(255367),
   k = n(626135),
   M = n(585483),
   U = n(358085),
-  G = n(481153),
-  B = n(588705),
+  B = n(481153),
+  G = n(588705),
   F = n(494526),
   z = n(163671),
   V = n(981631),
@@ -299,7 +299,7 @@ class $ extends(r = l.PureComponent) {
     } = this.props;
     return (0, i.jsxs)(E.ZP, {
       className: e,
-      children: [(0, i.jsx)(B.R, {}), (0, i.jsxs)(E.gO, {
+      children: [(0, i.jsx)(G.R, {}), (0, i.jsxs)(E.gO, {
         className: q.marginTop20,
         children: [(0, i.jsx)(A.Z, {
           className: q.marginBottom20,
@@ -362,7 +362,7 @@ class $ extends(r = l.PureComponent) {
       } = this.props,
       d = !this.hasError("email") && this.hasError("password"),
       h = (null == r ? void 0 : r.stage_instance) != null;
-    return n = null == r || h ? null != l ? (0, i.jsx)(G.Z, {
+    return n = null == r || h ? null != l ? (0, i.jsx)(B.Z, {
       giftCode: l
     }) : (0, i.jsxs)("div", {
       className: W.header,
@@ -372,7 +372,7 @@ class $ extends(r = l.PureComponent) {
       }, "title"), !1 === (0, U.isAndroidWeb)() ? (0, i.jsx)(E.DK, {
         children: K.intl.string(K.t.euS7r6)
       }, "subtitle") : null]
-    }) : (0, i.jsx)(B.Z, {
+    }) : (0, i.jsx)(G.Z, {
       invite: r
     }), (0, i.jsxs)(v.Z, {
       direction: v.Z.Direction.HORIZONTAL,

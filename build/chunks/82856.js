@@ -1,4 +1,4 @@
-/** Chunk was on 128 **/
+/** Chunk was on 66317 **/
 r.d(t, {
   o: () => h,
   y: () => O
@@ -8,8 +8,8 @@ var n = r(255367),
   l = r(442837),
   i = r(481060),
   o = r(493773),
-  c = r(819640),
-  u = r(751648),
+  u = r(819640),
+  c = r(751648),
   s = r(479766),
   d = r(970815),
   b = r(981631);
@@ -37,17 +37,17 @@ function h() {
   let e = (0, l.e7)([s.Z], () => s.Z.balancePillOverlay);
   return (0, o.ZP)(() => {
     setTimeout(() => {
-      e || (0, u.qD)(!0)
+      e || (0, c.qD)(!0)
     }, 300)
   }), (0, a.useEffect)(() => () => {
-    !(0, i.$sL)() && e && (0, u.qD)(!1)
+    !(0, i.$sL)() && e && (0, c.qD)(!1)
   }, [e]), null
 }
 
 function O(e) {
   var t, r, {
       pillRef: o,
-      anchorPillType: u
+      anchorPillType: c
     } = e,
     h = function(e, t) {
       if (null == e) return {};
@@ -85,13 +85,13 @@ function O(e) {
   }), t)), {
     isAnyLayerOpen: m,
     isLastLayerShopFullScreen: C
-  } = (0, l.cj)([c.Z], () => {
-    let e = c.Z.getLayers();
+  } = (0, l.cj)([u.Z], () => {
+    let e = u.Z.getLayers();
     return {
       isLastLayerShopFullScreen: e.length > 0 && e[e.length - 1] === b.S9g.COLLECTIBLES_SHOP,
-      isAnyLayerOpen: c.Z.hasLayers()
+      isAnyLayerOpen: u.Z.hasLayers()
     }
-  }), g = a.useMemo(() => !!O && (!m || C && "SHOP_FULLSCREEN" === u), [O, m, C, u]), _ = null != o.current ? o.current.offsetHeight : 36;
+  }), g = a.useMemo(() => !!O && (!m || C && "SHOP_FULLSCREEN" === c), [O, m, C, c]), _ = null != o.current ? o.current.offsetHeight : 36;
   return (0, n.jsx)(i.yRy, {
     fixed: !0,
     autoInvert: !1,

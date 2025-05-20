@@ -130,7 +130,7 @@ function k(e, t) {
   (0, s.ZDy)(async () => {
     let {
       default: i
-    } = await Promise.all([n.e("128"), n.e("94784")]).then(n.bind(n, 383294));
+    } = await Promise.all([n.e("66317"), n.e("94784")]).then(n.bind(n, 383294));
     return n => (0, r.jsx)(i, P(N({}, n), {
       quest: e,
       location: t

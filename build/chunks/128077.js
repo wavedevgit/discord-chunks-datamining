@@ -1,4 +1,4 @@
-/** Chunk was on 128 **/
+/** Chunk was on 66317 **/
 r.d(t, {
   f: () => i
 }), r(388685);
@@ -7,7 +7,7 @@ var n = r(73800),
   l = r(388032);
 
 function i() {
-  let [e, t] = (0, n.useState)(""), [r, i] = (0, n.useState)([]), [o, c] = (0, n.useState)(null), [u, s] = (0, n.useState)(!1);
+  let [e, t] = (0, n.useState)(""), [r, i] = (0, n.useState)([]), [o, u] = (0, n.useState)(null), [c, s] = (0, n.useState)(!1);
   return (0, n.useEffect)(() => {
     if (null != o) return void t(l.intl.format(l.t["7gHWra"], {
       amount: "1 orb",
@@ -28,19 +28,19 @@ function i() {
   }, [r, o]), {
     entitlements: r,
     error: o,
-    isSubmitting: u,
+    isSubmitting: c,
     responseMessage: e,
     redeemVirtualCurrency: function(e, t) {
       return (0, a.df)({
         skuId: e,
         onRedeemStart: () => {
-          s(!0), c(null)
+          s(!0), u(null)
         },
         onRedeemSucceed: e => {
           i(e), s(!1), null == t || t(e)
         },
         onRedeemFail: e => {
-          c(e), s(!1)
+          u(e), s(!1)
         }
       })
     }

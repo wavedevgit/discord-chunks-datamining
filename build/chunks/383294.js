@@ -22,14 +22,14 @@ var r = n(255367),
   y = n(960919),
   O = n(63063),
   j = n(272008),
-  v = n(497505),
-  C = n(46140),
+  C = n(497505),
+  v = n(46140),
   S = n(981631),
   N = n(215023),
-  B = n(388032),
-  E = n(696693),
-  I = n(557256),
-  Z = n(582425),
+  Z = n(388032),
+  B = n(696693),
+  E = n(557256),
+  I = n(582425),
   T = n(345554),
   L = n(88490),
   P = n(466674);
@@ -41,7 +41,7 @@ function w() {
     f = a.useRef(null),
     p = (0, u.ZP)(),
     g = (0, l.apv)(p),
-    _ = g ? T.Z : Z.Z,
+    _ = g ? T.Z : I.Z,
     h = g ? P.Z : L.Z;
   a.useEffect(() => {
     if (!t && !e) {
@@ -62,18 +62,18 @@ function w() {
     }
   });
   return (0, r.jsxs)(s.animated.div, {
-    className: E.videoLayers,
+    className: B.videoLayers,
     style: x,
     children: [!c && (0, r.jsx)("div", {
-      className: E.videoPlaceholder
+      className: B.videoPlaceholder
     }), (0, r.jsx)(m.Z, {
       ref: f,
       autoPlay: !1,
       loop: !0,
       muted: !0,
       playsInline: !0,
-      className: o()(E.videoAsset, {
-        [E.hidden]: t
+      className: o()(B.videoAsset, {
+        [B.hidden]: t
       }),
       controls: !1,
       children: (0, r.jsx)("source", {
@@ -84,8 +84,8 @@ function w() {
       autoPlay: !0,
       muted: !0,
       playsInline: !0,
-      className: o()(E.videoAsset, {
-        [E.hidden]: !t
+      className: o()(B.videoAsset, {
+        [B.hidden]: !t
       }),
       controls: !1,
       onLoadedData: () => d(!0),
@@ -111,67 +111,67 @@ function R(e) {
   return (0, r.jsxs)(l.Y0X, {
     transitionState: t,
     size: l.CgR.DYNAMIC,
-    className: E.modal,
+    className: B.modal,
     children: [(0, r.jsx)("div", {
-      className: E.header,
+      className: B.header,
       children: (0, r.jsx)(l.olH, {
-        className: E.closeBtn,
+        className: B.closeBtn,
         onClick: c
       })
     }), "loading" === o ? (0, r.jsx)("div", {
-      className: E.spinnerContainer,
+      className: B.spinnerContainer,
       children: (0, r.jsx)(l.$jN, {
         type: l.RAz.SPINNING_CIRCLE
       })
     }) : "success" === o ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(w, {}), (0, r.jsx)(l.X6q, {
         variant: "heading-lg/medium",
-        className: E.title,
-        children: B.intl.format(B.t["8l9H0t"], {
+        className: B.title,
+        children: Z.intl.format(Z.t["8l9H0t"], {
           balanceHook: () => (0, r.jsxs)("span", {
-            className: E.orbsBalance,
+            className: B.orbsBalance,
             children: [(0, r.jsx)(y.Z, {
               shouldUseThemeColor: !0,
-              className: E.orbsBalanceIcon
+              className: B.orbsBalanceIcon
             }), n]
           })
         })
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
-        className: E.subtext,
-        children: B.intl.string(B.t.EDUOIC)
+        className: B.subtext,
+        children: Z.intl.string(Z.t.EDUOIC)
       }), (0, r.jsx)(l.zxk, {
-        className: E.ctaBtn,
+        className: B.ctaBtn,
         onClick: a,
-        children: B.intl.string(B.t.WYchdX)
+        children: Z.intl.string(Z.t.WYchdX)
       }), (0, r.jsx)(l.zxk, {
         look: l.iLD.LINK,
         color: l.Ttl.CUSTOM,
-        className: E.orbsTermsButton,
+        className: B.orbsTermsButton,
         onClick: () => window.open(O.Z.getArticleURL(S.BhN.VIRTUAL_CURRENCY_LEARN_MORE)),
-        children: B.intl.string(B.t["7kTAgI"])
+        children: Z.intl.string(Z.t["7kTAgI"])
       })]
     }) : (0, r.jsxs)("div", {
-      className: E.errorContainer,
+      className: B.errorContainer,
       children: [(0, r.jsx)("img", {
         alt: "",
-        className: E.errorImage,
-        src: I
+        className: B.errorImage,
+        src: E
       }), (0, r.jsxs)("div", {
-        className: E.errorContentContainer,
+        className: B.errorContentContainer,
         children: [(0, r.jsx)(l.X6q, {
           variant: "heading-xl/medium",
-          className: E.errorHeader,
-          children: B.intl.string(B.t.tWYWJy)
+          className: B.errorHeader,
+          children: Z.intl.string(Z.t.tWYWJy)
         }), (0, r.jsx)(l.Text, {
           variant: "text-md/normal",
           color: "text-muted",
-          children: B.intl.string(B.t.JNQRU1)
+          children: Z.intl.string(Z.t.JNQRU1)
         })]
       }), (0, r.jsx)(l.zxk, {
-        className: E.ctaBtn,
+        className: B.ctaBtn,
         onClick: c,
-        children: B.intl.string(B.t.cpT0Cg)
+        children: Z.intl.string(Z.t.cpT0Cg)
       })]
     })]
   })
@@ -213,7 +213,7 @@ function k(e) {
     }, [r, t]), a.useEffect(() => {
       !o && null != i && null != l && i > l && s(!0)
     }, [i, l, o]), a.useEffect(() => {
-      (0, j.QB)(e, v.y$.CROSS_PLATFORM, n).then(e => {
+      (0, j.QB)(e, C.y$.CROSS_PLATFORM, n).then(e => {
         if ((null == e ? void 0 : e.claimedAt) != null) return void c("success");
         c("error")
       }).catch(() => {
@@ -233,7 +233,7 @@ function k(e) {
       openInLayer: !1,
       tab: N.AW.ORBS,
       analyticsLocations: [],
-      analyticsSource: c.id === C.V6 ? f.Z.INTRO_TO_ORBS_QUEST : f.Z.QUEST_HOME_PAGE
+      analyticsSource: c.id === v.V6 ? f.Z.INTRO_TO_ORBS_QUEST : f.Z.QUEST_HOME_PAGE
     }), u({
       delayMS: 300
     })

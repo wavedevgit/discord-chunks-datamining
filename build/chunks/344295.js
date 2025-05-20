@@ -39,9 +39,9 @@ var r = n(255367),
   k = n(701476),
   M = n(436620),
   U = n(388032),
-  G = n(20493);
+  B = n(20493);
 
-function B(e, t, n) {
+function G(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -114,8 +114,10 @@ class H extends i.PureComponent {
       } = t;
       if (null != e)
         if ((0, v.c)(k.M5.INVITE_UNCLAIMED), null != t.guild) {
-          var a, o;
-          i((null == (a = t.guild.features) ? void 0 : a.includes(L.oNc.MEMBER_VERIFICATION_GATE_ENABLED)) && (null == (o = t.guild.features) ? void 0 : o.includes(L.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)) ? L.Z5c.GUILD_MEMBER_VERIFICATION(t.guild.id) : L.Z5c.APP_WITH_INVITE_AND_GUILD_ONBOARDING(t.code))
+          var a, c, u;
+          let e = (0, C.yE)(null != (u = t.flags) ? u : 0, o.$.IS_APPLICATION_BYPASS),
+            n = (null == (a = t.guild.features) ? void 0 : a.includes(L.oNc.MEMBER_VERIFICATION_GATE_ENABLED)) && (null == (c = t.guild.features) ? void 0 : c.includes(L.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL));
+          i(!e && n ? L.Z5c.GUILD_MEMBER_VERIFICATION(t.guild.id) : L.Z5c.APP_WITH_INVITE_AND_GUILD_ONBOARDING(t.code))
         } else d.ZP.transitionToInvite(t, i)
     }
   }
@@ -145,7 +147,7 @@ class H extends i.PureComponent {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          B(e, t, n[t])
+          G(e, t, n[t])
         })
       }
       return e
@@ -163,9 +165,9 @@ class H extends i.PureComponent {
     return (0, r.jsxs)(m.ZP, {
       children: [(0, r.jsx)(m.Ee, {
         src: n(167969),
-        className: G.marginBottom8
+        className: B.marginBottom8
       }), (0, r.jsx)(m.Dx, {
-        className: a()(G.marginTop8, G.marginBottom8),
+        className: a()(B.marginTop8, B.marginBottom8),
         children: U.intl.string(U.t.kux01N)
       }), (0, r.jsx)(m.DK, {
         children: e ? U.intl.string(U.t["5AkWAQ"]) : U.intl.string(U.t["+qUJAg"])
@@ -173,7 +175,7 @@ class H extends i.PureComponent {
         onClick: () => window.open(T.Z.getArticleURL(L.BhN.INVALID_INVITES), "_blank"),
         look: m.zx.Looks.LINK,
         color: m.zx.Colors.LINK,
-        className: G.marginTop8,
+        className: B.marginTop8,
         children: U.intl.string(U.t.urIwn5)
       })]
     })
@@ -197,7 +199,7 @@ class H extends i.PureComponent {
     let t = null != e ? e : this.handleContinue;
     return (0, r.jsxs)(m.ZP, {
       children: [(0, r.jsx)(m.Dx, {
-        className: G.marginBottom8,
+        className: B.marginBottom8,
         children: U.intl.string(U.t.csrAMD)
       }), (0, r.jsx)(m.DK, {
         children: U.intl.string(U.t["m1+IBg"])
@@ -223,7 +225,7 @@ class H extends i.PureComponent {
       invite: e
     } = this.props;
     return (null != e.stage_instance || null != e.guild_scheduled_event) && null != e.guild ? (0, r.jsx)(m.ZP, {
-      className: G.marginTop20,
+      className: B.marginTop20,
       children: (0, r.jsx)(_.y, {
         guild: e.guild,
         onlineCount: e.approximate_presence_count
@@ -295,9 +297,9 @@ class H extends i.PureComponent {
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, B(this, "state", {
+    super(...e), t = this, G(this, "state", {
       error: null
-    }), B(this, "getAcceptInviteContext", e => d.ZP.getInviteContext(e, this.props.invite)), B(this, "handleContinue", e => {
+    }), G(this, "getAcceptInviteContext", e => d.ZP.getInviteContext(e, this.props.invite)), G(this, "handleContinue", e => {
       let {
         invite: t,
         transitionTo: n
@@ -306,7 +308,7 @@ class H extends i.PureComponent {
         var r;
         (null == (r = t.guild) ? void 0 : r.id) != null ? n(L.Z5c.APP_WITH_INVITE_AND_GUILD_ONBOARDING(t.code)) : d.ZP.transitionToInvite(null != e ? e : t, n)
       }
-    }), B(this, "handleAccept", () => {
+    }), G(this, "handleAccept", () => {
       this.setState({
         error: null
       });
@@ -334,25 +336,25 @@ class H extends i.PureComponent {
           }
         })
       })
-    }), B(this, "handleDefaultTransition", () => {
+    }), G(this, "handleDefaultTransition", () => {
       let {
         defaultRoute: e,
         transitionTo: t
       } = this.props;
       t(e)
-    }), B(this, "renderButton", function(e) {
+    }), G(this, "renderButton", function(e) {
       let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : t.handleDefaultTransition,
         {
           invite: i
         } = t.props,
         l = null != i.stage_instance || null != i.guild_scheduled_event;
       return M.KO ? (0, r.jsx)(m.zx, {
-        className: l ? G.marginTop20 : G.marginTop40,
+        className: l ? B.marginTop20 : B.marginTop40,
         onClick: n,
         color: l ? m.zx.Colors.GREEN : m.zx.Colors.BRAND,
         children: e
       }) : (0, r.jsx)(m.v6, {
-        className: G.marginTop40
+        className: B.marginTop40
       })
     })
   }

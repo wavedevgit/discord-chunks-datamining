@@ -1,4 +1,4 @@
-/** Chunk was on 128 **/
+/** Chunk was on 66317 **/
 r.d(t, {
   v: () => o
 });
@@ -21,11 +21,11 @@ let i = {
     let t = a.useRef(null),
       o = a.useRef(e);
     o.current = e;
-    let c = a.useMemo(() => () => {
+    let u = a.useMemo(() => () => {
         null != t.current && t.current.play(e)
       }, [e]),
-      u = a.useCallback(e => {
-        var a, c;
+      c = a.useCallback(e => {
+        var a, u;
         return (0, n.jsx)(l.L, (a = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var r = null != arguments[t] ? arguments[t] : {},
@@ -43,25 +43,25 @@ let i = {
             })
           }
           return e
-        }({}, e), c = c = {
+        }({}, e), u = u = {
           src: () => r.e("44980").then(r.t.bind(r, 304306, 19)),
           ref: t,
           initialAnimation: o.current,
           markers: i
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(c)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(u)) : (function(e, t) {
           var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var n = Object.getOwnPropertySymbols(e);
             r.push.apply(r, n)
           }
           return r
-        })(Object(c)).forEach(function(e) {
-          Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(c, e))
+        })(Object(u)).forEach(function(e) {
+          Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(u, e))
         }), a))
       }, []);
     return {
       events: {},
-      play: c,
+      play: u,
       getDuration: a.useCallback(() => {
         var e;
         return null == (e = t.current) ? void 0 : e.getDuration()
@@ -70,6 +70,6 @@ let i = {
         var e, r;
         return null != (r = null == (e = t.current) ? void 0 : e.getCurrentFrame()) ? r : null
       }, []),
-      Component: u
+      Component: c
     }
   }

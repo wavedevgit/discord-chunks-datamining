@@ -1,4 +1,4 @@
-/** Chunk was on 128 **/
+/** Chunk was on 66317 **/
 r.d(t, {
   D2: () => h,
   ZP: () => C,
@@ -9,8 +9,8 @@ var n = r(255367),
   l = r(60488),
   i = r(934248),
   o = r(780384),
-  c = r(410030),
-  u = r(738134);
+  u = r(410030),
+  c = r(738134);
 
 function s(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -75,12 +75,12 @@ let f = {
       onSetAnimationDurationMS: n,
       play: l,
       getDuration: i
-    } = e, o = i(), c = null != o ? 1e3 * o : h;
+    } = e, o = i(), u = null != o ? 1e3 * o : h;
     (0, a.useEffect)(() => {
       null !== t && t !== r.current && (r.current = t, l())
     }, [t, l, r]), (0, a.useEffect)(() => {
-      n(c)
-    }, [n, c])
+      n(u)
+    }, [n, u])
   },
   p = e => {
     var {
@@ -94,7 +94,7 @@ let f = {
       currentAnimationType: t
     }, r, b(a, ["Component"]))), (0, n.jsx)(l, d(s({}, f), {
       size: "custom",
-      className: u.orbsLottie,
+      className: c.orbsLottie,
       useLottieDefaultColors: !0
     }))
   },
@@ -110,11 +110,11 @@ let f = {
       currentAnimationType: t
     }, r, b(a, ["Component"]))), (0, n.jsx)(i, d(s({}, f), {
       size: "custom",
-      className: u.orbsLottie,
+      className: c.orbsLottie,
       useLottieDefaultColors: !0
     }))
   },
   C = e => {
-    let t = (0, c.ZP)();
+    let t = (0, u.ZP)();
     return (0, o.ap)(t) ? (0, n.jsx)(m, s({}, e)) : (0, n.jsx)(p, s({}, e))
   }

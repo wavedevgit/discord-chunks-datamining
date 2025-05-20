@@ -1,6 +1,6 @@
-/** Chunk was on 128 **/
+/** Chunk was on 66317 **/
 r.d(t, {
-  Z: () => c
+  Z: () => u
 }), r(539854);
 var n, a = r(442837),
   l = r(570140);
@@ -132,4 +132,4 @@ class o extends(n = a.ZP.Store) {
   }
 }
 i(o, "displayName", "VirtualCurrencyStore");
-let c = new o
+let u = new o

@@ -1,4 +1,4 @@
-/** Chunk was on 128 **/
+/** Chunk was on 66317 **/
 r.d(t, {
   Z: () => O,
   l: () => h
@@ -8,8 +8,8 @@ var n = r(73800),
   l = r(710845),
   i = r(569984),
   o = r(918701),
-  c = r(751648),
-  u = r(23547),
+  u = r(751648),
+  c = r(23547),
   s = r(822857),
   d = r(981631),
   b = r(46140);
@@ -31,8 +31,8 @@ let f = new l.Z("VirtualCurrency"),
         delayMS: r = 500
       } = e;
       if (null == l && !t) return void f.warn("Could not open Intro to Orbs Claimed Coachmark. Reward orb quantity not found or quest does not exist with ID ".concat(b.V6));
-      if (!(0, u.wH)()) {
-        let e = () => (0, c.hF)({
+      if (!(0, c.wH)()) {
+        let e = () => (0, u.hF)({
           earnedOrbsQuantity: null != l ? l : 200,
           dedupeKey: t ? void 0 : b.V6
         });
@@ -42,7 +42,7 @@ let f = new l.Z("VirtualCurrency"),
         }, r)
       }
     }, [l]), O = (0, n.useCallback)(() => {
-      (0, u.wH)() && (0, u.jj)()
+      (0, c.wH)() && (0, c.jj)()
     }, []);
     return r ? {
       rewardOrbQuantity: l,
