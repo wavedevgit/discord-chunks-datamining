@@ -13,8 +13,8 @@ var r = n(255367),
   u = n(481060),
   d = n(607070),
   f = n(70097),
-  p = n(688465),
-  b = n(341907),
+  b = n(688465),
+  p = n(341907),
   g = n(507808),
   h = n(594174),
   m = n(451478),
@@ -140,7 +140,7 @@ let L = {
                 variant: "heading-xxl/bold",
                 className: B.title,
                 color: "header-primary",
-                children: [F.title, v === T.AW.ORBS && (0, r.jsx)(p.Z, {})]
+                children: [F.title, v === T.AW.ORBS && (0, r.jsx)(b.Z, {})]
               }), (0, r.jsx)(u.Text, {
                 variant: v === T.AW.ORBS ? "text-lg/medium" : "text-md/normal",
                 className: v === T.AW.ORBS ? B.orbsSubHeaderText : (null == D ? void 0 : D.showDarkBannerText) ? B.subHeaderTextDark : B.subHeaderText,
@@ -160,7 +160,7 @@ let L = {
                   pageType: I.ZY5.SHOP_ORBS_TAB,
                   sectionType: I.jXE.ORBS_SHOP_HERO_BLOCK,
                   ctaObject: I.qAy.CTA_TO_QUEST_HOME
-                }), (0, b.navigateToQuestHome)({
+                }), (0, p.navigateToQuestHome)({
                   fromContent: o.j.ORBS_SHOP_HERO_CTA
                 })) : n("shop latest category hero", F.categorySkuId)
               },

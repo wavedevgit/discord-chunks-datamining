@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => b
+  Z: () => p
 });
 var r = n(255367);
 n(73800);
@@ -14,17 +14,17 @@ var l = n(120356),
   u = n(597688),
   d = n(709999),
   f = n(388032),
-  p = n(806734);
-let b = e => {
+  b = n(806734);
+let p = e => {
   let {
     shelf: t,
     handleTransition: n,
     tab: l
-  } = e, b = (0, a.e7)([s.default], () => s.default.getCurrentUser());
-  return null == b ? null : (0, r.jsxs)("div", {
-    className: i()(p.shelfBlockContainer, p.centeredSection),
+  } = e, p = (0, a.e7)([s.default], () => s.default.getCurrentUser());
+  return null == p ? null : (0, r.jsxs)("div", {
+    className: i()(b.shelfBlockContainer, b.centeredSection),
     children: [(0, r.jsxs)("div", {
-      className: p.blockHeader,
+      className: b.blockHeader,
       children: [(0, r.jsx)(o.X6q, {
         variant: "heading-lg/semibold",
         children: t.name
@@ -37,7 +37,7 @@ let b = e => {
         })
       })]
     }), (0, r.jsx)("div", {
-      className: p.feed,
+      className: b.feed,
       children: (0, r.jsx)(r.Fragment, {
         children: t.rankedSkuIds.map((e, n) => {
           let i = u.Z.getCategoryForProduct(e),
@@ -51,7 +51,7 @@ let b = e => {
             children: (0, r.jsx)(d.Z, {
               product: a,
               category: i,
-              user: b,
+              user: p,
               tab: l
             }, e)
           }, e)
