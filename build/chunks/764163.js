@@ -70,14 +70,18 @@ function C(e) {
       channel: x,
       closePopout: t,
       onNavigateAway: t,
-      onSelectEmoji: (e, n) => {
-        null != e && s(null != e.id ? {
-          id: e.id,
+      onSelectEmoji: e => {
+        let {
+          emoji: n,
+          willClose: r
+        } = e;
+        null != n && s(null != n.id ? {
+          id: n.id,
           name: void 0
         } : {
           id: void 0,
-          name: e.optionallyDiverseSequence
-        }), n && t()
+          name: n.optionallyDiverseSequence
+        }), r && t()
       }
     })
   }, [s, x]), y = i.useMemo(() => null == d && null == n.name ? null : function() {

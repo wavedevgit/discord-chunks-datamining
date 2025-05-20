@@ -26,7 +26,10 @@ function d(e) {
     positionRef: _,
     children: p
   } = e, h = i.useCallback(e => {
-    null != e && (n(e), l())
+    let {
+      emoji: t
+    } = e;
+    null != t && (n(t), l())
   }, [l, n]);
   return (0, r.jsx)(o.yRy, {
     shouldShow: s,

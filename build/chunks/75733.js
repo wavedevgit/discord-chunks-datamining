@@ -107,10 +107,14 @@ function _(e) {
       emoji: void 0,
       label: ""
     })
-  }, [t, l, o]), d = i.useCallback(e => (n, r) => {
+  }, [t, l, o]), d = i.useCallback(e => n => {
+    let {
+      emoji: r,
+      willClose: i
+    } = n;
     o(t, l, {
-      emoji: null != n ? n : void 0
-    }), r && e()
+      emoji: null != r ? r : void 0
+    }), i && e()
   }, [t, l, o]), [m, g] = i.useState(!1), p = i.useCallback(() => g(!0), []), h = i.useCallback(() => g(!1), []), x = i.useCallback(e => {
     o(t, l, {
       label: e

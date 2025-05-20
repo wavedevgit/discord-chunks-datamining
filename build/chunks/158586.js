@@ -67,8 +67,12 @@ let u = e => {
             return (0, o.jsx)(a.Z, {
               guildId: null == j ? void 0 : j.guild_id,
               closePopout: t,
-              onSelectEmoji: (e, i) => {
-                O(e), i && t()
+              onSelectEmoji: e => {
+                let {
+                  emoji: i,
+                  willClose: o
+                } = e;
+                O(i), o && t()
               },
               pickerIntention: c.Hz.COMMUNITY_CONTENT,
               channel: j

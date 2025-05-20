@@ -67,9 +67,12 @@ function y(e) {
     emojiName: N
   }), k = (0, r.e7)([g.ZP], () => null != l ? g.ZP.getDefaultChannel(l) : null), C = i.useRef(null), D = (0, d.Z)(C), P = () => {
     w(void 0), O(void 0)
-  }, Z = e => (t, l) => {
-    let n = (null == t ? void 0 : t.id) == null;
-    P(), n ? w(null == t ? void 0 : t.optionallyDiverseSequence) : (I && w(null == t ? void 0 : t.name), O(null == t ? void 0 : t.id)), l && e()
+  }, Z = e => t => {
+    let {
+      emoji: l,
+      willClose: n
+    } = t, i = (null == l ? void 0 : l.id) == null;
+    P(), i ? w(null == l ? void 0 : l.optionallyDiverseSequence) : (I && w(null == l ? void 0 : l.name), O(null == l ? void 0 : l.id)), n && e()
   }, R = e => {
     e.stopPropagation(), P()
   }, T = i.useMemo(() => {

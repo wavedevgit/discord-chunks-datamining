@@ -117,7 +117,10 @@ let ec = (e, t) => {
     } = e, f = (0, u.e7)([y.ZP], () => y.ZP.getDisambiguatedEmojiContext(l), [l]), _ = i.useCallback((e, r) => {
       switch (e.type) {
         case H.ld.CREATE_EMOJI:
-          o(void 0, !0), C.Z.open(e.guildId, Q.pNK.EMOJI);
+          o({
+            emoji: void 0,
+            willClose: !0
+          }), C.Z.open(e.guildId, Q.pNK.EMOJI);
           return;
         case H.ld.EMOJI: {
           if (null != e.emoji && r.altKey) return void(f.isFavoriteEmojiWithoutFetchingLatest(e.emoji) ? (0, p.Xe)(e.emoji) : ((0, j.J1)({
@@ -142,7 +145,11 @@ let ec = (e, t) => {
             category: e.category,
             subCategory: e.subCategory,
             newlyAddedHighlight: e.subCategory === q.t0.NEWLY_ADDED_EMOJI && O.Z.isNewerThanLastSeen(l, e.emoji.id)
-          }), o(e.emoji, !r.shiftKey, d)
+          }), o({
+            emoji: e.emoji,
+            willClose: !r.shiftKey,
+            isBurst: d
+          })
         }
       }
     }, [o, l, n, f, t, d]), {

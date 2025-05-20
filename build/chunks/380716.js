@@ -190,19 +190,23 @@ function w(e) {
     el(n), ea(e)
   }, []), ej = i.useCallback(() => null != ei ? ei : null, [ei, en])(), ef = i.useCallback(e => {
     null != e && eg(e, null)
-  }, [eg]), eb = e => (n, l) => {
-    var t, i;
-    if (null == n) return;
-    let a = null;
-    eg(null, null == n.id ? {
+  }, [eg]), eb = e => n => {
+    var l, t;
+    let {
+      emoji: i,
+      willClose: a
+    } = n;
+    if (null == i) return;
+    let r = null;
+    eg(null, null == i.id ? {
       id: null,
-      name: null != (t = n.optionallyDiverseSequence) ? t : "",
+      name: null != (l = i.optionallyDiverseSequence) ? l : "",
       animated: !1
     } : {
-      id: n.id,
-      name: null != (i = n.originalName) ? i : n.name,
-      animated: n.animated
-    }), l && e()
+      id: i.id,
+      name: null != (t = i.originalName) ? t : i.name,
+      animated: i.animated
+    }), a && e()
   }, ey = null;
   return ey = null != ej ? (0, t.jsxs)(t.Fragment, {
     children: [(0, t.jsx)("img", {

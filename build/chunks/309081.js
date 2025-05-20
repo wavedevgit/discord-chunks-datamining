@@ -167,8 +167,12 @@ function N(e) {
         pickerIntention: _.Hz.POLLS,
         closePopout: t,
         onNavigateAway: t,
-        onSelectEmoji: (e, n) => {
-          null != e && d(e, m), n && t()
+        onSelectEmoji: e => {
+          let {
+            emoji: n,
+            willClose: r
+          } = e;
+          null != n && d(n, m), r && t()
         }
       })
     })

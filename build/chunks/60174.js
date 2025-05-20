@@ -164,8 +164,13 @@ class T extends i.Component {
       }), o = (0, r.jsx)(g.$, {
         closePopout: t,
         channel: i,
-        onSelectEmoji: (e, n, r) => {
-          this.onAddReaction(e, r), n && (r ? s()(t, 150)() : t())
+        onSelectEmoji: e => {
+          let {
+            emoji: n,
+            willClose: r,
+            isBurst: i
+          } = e;
+          this.onAddReaction(n, i), r && (i ? s()(t, 150)() : t())
         },
         analyticsOverride: a,
         messageId: l.id

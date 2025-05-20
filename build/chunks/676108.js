@@ -58,9 +58,15 @@ function m(e) {
     editorRef: n,
     options: f,
     channel: p
-  } = e, m = null == (t = n.current) ? void 0 : t.getSlateEditor(), g = i.useRef(null), E = i.useCallback((e, t) => {
-    let r = n.current;
-    null != e && null != r && r.insertEmoji(e, t, !1), t && (0, l._Q)()
+  } = e, m = null == (t = n.current) ? void 0 : t.getSlateEditor(), g = i.useRef(null), E = i.useCallback(e => {
+    let {
+      emoji: t,
+      willClose: r
+    } = e, i = n.current;
+    null != t && null != i && i.insertEmoji({
+      emoji: t,
+      willClose: r
+    }), r && (0, l._Q)()
   }, [n]), b = e => {
     let {
       closePopout: t
@@ -69,8 +75,15 @@ function m(e) {
       persistSearch: !0,
       channel: p,
       closePopout: t,
-      onSelectEmoji: (e, n) => {
-        E(e, n), n && t()
+      onSelectEmoji: e => {
+        let {
+          emoji: n,
+          willClose: r
+        } = e;
+        E({
+          emoji: n,
+          willClose: r
+        }), r && t()
       },
       pickerIntention: u.Hz.COMMUNITY_CONTENT
     })

@@ -18,15 +18,19 @@ function u(e) {
     emoji: u,
     setEmoji: m,
     channel: h
-  } = e, j = i.useRef(null), x = e => (t, n) => {
-    var r, i;
-    null != t && (null == t.id ? m({
-      name: null != (r = t.optionallyDiverseSequence) ? r : ""
+  } = e, j = i.useRef(null), x = e => t => {
+    var n, r;
+    let {
+      emoji: i,
+      willClose: l
+    } = t;
+    null != i && (null == i.id ? m({
+      name: null != (n = i.optionallyDiverseSequence) ? n : ""
     }) : m({
-      id: t.id,
-      name: null != (i = t.originalName) ? i : t.name,
-      animated: t.animated
-    }), n && e())
+      id: i.id,
+      name: null != (r = i.originalName) ? r : i.name,
+      animated: i.animated
+    }), l && e())
   }, v = null == u || null == u.name ? null : () => {
     var e;
     return (0, r.jsx)(o.Z, {
