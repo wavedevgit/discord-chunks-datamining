@@ -59,9 +59,9 @@ function T(e, t) {
 }
 
 function S() {
-  return (0, a.jsxs)("div", {
+  return (0, a.jsxs)(u.Ttm, {
     className: N.container,
-    children: [(0, a.jsx)(P, {}), (0, a.jsx)(b.Z, {})]
+    children: [(0, a.jsx)(P, {}), (0, a.jsx)(k, {}), (0, a.jsx)(b.Z, {})]
   })
 }
 
@@ -96,8 +96,8 @@ function P() {
     P = r.useCallback(() => {
       null != s && (0, x.i)(s, null)
     }, [s]),
-    Z = null != (e = null == d ? void 0 : d.opacity) ? e : 1,
-    A = null != (t = null == d ? void 0 : d.token_mix_amount) ? t : 100;
+    k = null != (e = null == d ? void 0 : d.opacity) ? e : 1,
+    Z = null != (t = null == d ? void 0 : d.token_mix_amount) ? t : 100;
   return (0, a.jsxs)("div", {
     children: [(0, a.jsx)(o.X6, {
       className: N.header,
@@ -124,12 +124,12 @@ function P() {
         }))
       }), (0, a.jsx)(u.iRW, {
         className: N.slider,
-        initialValue: Z,
+        initialValue: k,
         defaultValue: 1,
         minValue: 0,
         maxValue: 1,
         onValueChange: b
-      }, "opacity-".concat(Z)), (0, a.jsx)(u.ua7, {
+      }, "opacity-".concat(k)), (0, a.jsx)(u.ua7, {
         text: "The most prominent color in the wallpaper. This will be used to adjust the color tokens.",
         children: e => (0, a.jsx)(o.X6, T(E({
           className: i()(N.subheader, N.hasTooltip),
@@ -187,12 +187,12 @@ function P() {
         }))
       }), (0, a.jsx)(u.iRW, {
         className: N.slider,
-        initialValue: A,
+        initialValue: Z,
         defaultValue: 100,
         minValue: 0,
         maxValue: 100,
         onValueChange: S
-      }, "tokenMixAmount-".concat(A)), (0, a.jsx)(u.ua7, {
+      }, "tokenMixAmount-".concat(Z)), (0, a.jsx)(u.ua7, {
         text: "The color used for hyperlinks.",
         children: e => (0, a.jsx)(o.X6, T(E({
           className: i()(N.subheader, N.hasTooltip),
@@ -221,7 +221,7 @@ function P() {
         onClick: P,
         children: "Reset"
       })]
-    }), (0, a.jsx)(k, {})]
+    })]
   })
 }
 

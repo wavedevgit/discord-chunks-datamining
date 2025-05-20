@@ -642,9 +642,9 @@ function eO(e) {
     }),
     e4 = e1.containerProps,
     {
-      ref: e2
+      ref: e5
     } = e4,
-    e5 = ef(e4, ["ref"]),
+    e2 = ef(e4, ["ref"]),
     e7 = Z.ZP.getSidebarState(t.id),
     te = null != e7 && (0, Z.D5)(e7),
     tt = (0, g.e7)([Z.ZP], () => Z.ZP.getSection(t.id)) === ec.ULH.MEMBERS;
@@ -677,7 +677,7 @@ function eO(e) {
           children: (0, r.jsx)(x.GMG, eh({
             ref: e => {
               var t;
-              e2.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null, eK(e)
+              e5.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null, eK(e)
             },
             itemGutter: 16,
             padding: 24,
@@ -692,7 +692,7 @@ function eO(e) {
             getSectionProps: e0,
             onScroll: v ? e6 : void 0,
             chunkSize: 350
-          }, e5, e), k)
+          }, e2, e), k)
         }) : (0, r.jsx)(d.bG, {
           navigator: e9,
           children: (0, r.jsx)(d.SJ, {

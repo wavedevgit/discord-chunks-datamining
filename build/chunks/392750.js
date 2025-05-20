@@ -5,7 +5,7 @@ n.d(t, {
 var a = n(255367);
 n(73800);
 var r = n(442837),
-  l = n(814443),
+  l = n(752048),
   i = n(594174),
   s = n(681619),
   o = n(534514),
@@ -35,8 +35,8 @@ let d = [{
 function u() {
   let e = (0, r.Wu)([l.Z, i.default], () => l.Z.getUserAffinities().map(e => {
     let {
-      user_id: t,
-      affinity: n
+      otherUserId: t,
+      communicationProbability: n
     } = e;
     return {
       user: i.default.getUser(t),

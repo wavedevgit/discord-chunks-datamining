@@ -1,29 +1,30 @@
-/** Chunk was on 93886 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  I: () => l
+  I: () => o
 });
-var a = n(381814),
-  r = n(731965);
-let l = (0, a.U)(e => ({
+var r = n(381814),
+  i = n(731965);
+let o = (0, r.U)(e => ({
   colors: [],
   chassisMixAmount: 0,
   gradientAngle: 0,
   setColors: t => {
-    (0, r.j)(() => {
+    (0, i.j)(() => {
       e({
         colors: t
       })
     })
   },
   setChassisMixAmount: t => {
-    (0, r.j)(() => {
+    (0, i.j)(() => {
       e({
         chassisMixAmount: t
       })
     })
   },
   setGradientAngle: t => {
-    (0, r.j)(() => {
+    (0, i.j)(() => {
       e({
         gradientAngle: t
       })
