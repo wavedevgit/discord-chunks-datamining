@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 23445 **/
 e.exports = {
   raisedHandIcon: "raisedHandIcon__15cd2",
   raisedHandCount: "raisedHandCount__15cd2"

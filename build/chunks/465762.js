@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 23445 **/
 e.exports = {
   box: "box_ee23ac",
   textContainer: "textContainer_ee23ac",

@@ -1,14 +1,14 @@
-/** Chunk was on 62423 **/
-n.d(t, {
-  l: () => l
+/** Chunk was on 59104 **/
+t.d(a, {
+  l: () => o
 });
-var r = n(381814),
-  i = n(731965);
-let l = (0, r.U)(e => ({
+var n = t(381814),
+  r = t(731965);
+let o = (0, n.U)(e => ({
   canCloseModal: !0,
-  onUpdateCanCloseModal(t) {
-    (0, i.j)(() => e({
-      canCloseModal: t
+  onUpdateCanCloseModal(a) {
+    (0, r.j)(() => e({
+      canCloseModal: a
     }))
   }
 }))

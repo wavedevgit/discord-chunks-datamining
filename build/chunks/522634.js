@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 23445 **/
 e.exports = {
   icon: "icon_d98031",
   browser: "browser_d98031"

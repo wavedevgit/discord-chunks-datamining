@@ -22,8 +22,8 @@ var r = n(481060),
   v = n(494439),
   h = n(991307),
   p = n(700994),
-  m = n(332031),
-  Z = n(981631),
+  Z = n(332031),
+  m = n(981631),
   S = n(388032);
 
 function j(e) {
@@ -65,12 +65,12 @@ function A(e) {
     channelId: o,
     mediaEngineContext: a,
     onSelect: c,
-    onShowProfile: Z,
+    onShowProfile: m,
     onWatchStream: j,
     appContext: P
   } = e, A = (0, v.Z)({
     onAction: () => {
-      null == Z || Z()
+      null == m || m()
     }
   }), I = (0, E.Z)({
     user: t,
@@ -78,7 +78,7 @@ function A(e) {
   }), T = (0, g.Z)({
     user: t,
     appContext: P
-  }), M = (0, m.Z)(t.id, j), N = (0, p.Z)(t.id), C = (0, h.Z)(t.id, a), D = (0, y.Z)({
+  }), M = (0, Z.Z)(t.id, j), N = (0, p.Z)(t.id), C = (0, h.Z)(t.id, a), D = (0, y.Z)({
     user: t
   }), w = (0, u.Z)(null, t), x = (0, f.Z)({
     user: t,
@@ -126,7 +126,7 @@ function I(e) {
     onShowProfile: a,
     onWatchStream: c,
     appContext: b
-  } = e, Z = (0, v.Z)({
+  } = e, m = (0, v.Z)({
     onAction: () => {
       null == a || a()
     }
@@ -136,7 +136,7 @@ function I(e) {
   }), P = (0, g.Z)({
     user: t,
     appContext: b
-  }), A = (0, m.Z)(t.id, c), I = (0, p.Z)(t.id), T = (0, h.Z)(t.id, n), M = (0, y.Z)({
+  }), A = (0, Z.Z)(t.id, c), I = (0, p.Z)(t.id), T = (0, h.Z)(t.id, n), M = (0, y.Z)({
     user: t
   }), N = (0, u.Z)(null, t), C = (0, f.Z)({
     user: t,
@@ -160,7 +160,7 @@ function I(e) {
       children: [(0, l.jsx)(r.kSQ, {
         children: U
       }), (0, l.jsxs)(r.kSQ, {
-        children: [Z, j, P, A]
+        children: [m, j, P, A]
       }), (0, l.jsx)(r.kSQ, {
         children: I
       }), (0, l.jsx)(r.kSQ, {
@@ -200,5 +200,5 @@ let T = (0, a.Z)((0, o.Z)(function(e) {
     channelId: n
   }))
 }, {
-  object: Z.qAy.CONTEXT_MENU
+  object: m.qAy.CONTEXT_MENU
 }), [c.Z.CONTEXT_MENU, c.Z.USER_OVERLAY_CONTEXT_MENU])

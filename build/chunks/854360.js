@@ -1,48 +1,48 @@
-/** Chunk was on 5454 **/
+/** Chunk was on 36760 **/
 r.d(t, {
-  default: () => f
+  default: () => d
 }), r(388685);
 var n = r(255367),
-  o = r(73800),
-  c = r(481060),
-  i = r(749210),
+  i = r(73800),
+  o = r(481060),
+  c = r(749210),
   a = r(910693),
-  s = r(51144),
-  l = r(981631),
-  u = r(388032),
-  p = r(373283);
+  l = r(51144),
+  u = r(981631),
+  s = r(388032),
+  _ = r(373283);
 
-function f(e) {
+function d(e) {
   var t, r, {
-      guildId: f,
-      user: b,
+      guildId: d,
+      user: f,
       location: O,
-      modReportId: g
+      modReportId: b
     } = e,
-    d = function(e, t) {
+    p = function(e, t) {
       if (null == e) return {};
-      var r, n, o = function(e, t) {
+      var r, n, i = function(e, t) {
         if (null == e) return {};
-        var r, n, o = {},
-          c = Object.keys(e);
-        for (n = 0; n < c.length; n++) r = c[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
-        return o
+        var r, n, i = {},
+          o = Object.keys(e);
+        for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+        return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var c = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < c.length; n++) r = c[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
+        var o = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
       }
-      return o
+      return i
     }(e, ["guildId", "user", "location", "modReportId"]);
-  let [y, j] = o.useState(""), m = (0, a.sE)(f, {
+  let [E, g] = i.useState(""), y = (0, a.sE)(d, {
     location: O,
-    targetUserId: b.id
-  }), h = o.useCallback(() => {
-    i.Z.kickUser(f, b.id, y, g), m(a.jQ.KICK)
-  }, [f, b.id, y, m, g]), P = o.useCallback(e => {
-    j(e)
+    targetUserId: f.id
+  }), m = i.useCallback(() => {
+    c.Z.kickUser(d, f.id, E, b), y(a.jQ.KICK)
+  }, [d, f.id, E, y, b]), j = i.useCallback(e => {
+    g(e)
   }, []);
-  return (0, n.jsxs)(c.ConfirmModal, (t = function(e) {
+  return (0, n.jsxs)(o.ConfirmModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);
@@ -60,26 +60,26 @@ function f(e) {
     }
     return e
   }({
-    header: u.intl.formatToPlainString(u.t["1Ie87u"], {
-      user: b.username
+    header: s.intl.formatToPlainString(s.t["1Ie87u"], {
+      user: f.username
     }),
-    confirmText: u.intl.string(u.t["3glT6e"]),
-    cancelText: u.intl.string(u.t["ETE/oK"]),
-    onConfirm: h
-  }, d), r = r = {
-    children: [(0, n.jsx)(c.Text, {
+    confirmText: s.intl.string(s.t["3glT6e"]),
+    cancelText: s.intl.string(s.t["ETE/oK"]),
+    onConfirm: m
+  }, p), r = r = {
+    children: [(0, n.jsx)(o.Text, {
       variant: "text-md/normal",
-      className: p.spacing,
-      children: u.intl.format(u.t["/yH0UV"], {
-        user: "@".concat(s.ZP.getName(b))
+      className: _.spacing,
+      children: s.intl.format(s.t["/yH0UV"], {
+        user: "@".concat(l.ZP.getName(f))
       })
-    }), (0, n.jsx)(c.xJW, {
-      title: u.intl.string(u.t["+2QEPj"]),
-      className: p.spacing,
-      children: (0, n.jsx)(c.Kx8, {
-        maxLength: l.GNZ,
-        onChange: P,
-        value: y,
+    }), (0, n.jsx)(o.xJW, {
+      title: s.intl.string(s.t["+2QEPj"]),
+      className: _.spacing,
+      children: (0, n.jsx)(o.Kx8, {
+        maxLength: u.GNZ,
+        onChange: j,
+        value: E,
         rows: 2
       })
     })]

@@ -25,13 +25,13 @@ let h = (0, a.Z)((0, u.Z)(function(e) {
     onSelect: a,
     onInteraction: o,
     context: g
-  } = e, h = t.id, T = n.isNonUserBot(), b = n.id === _.default.getId(), v = (0, c.Z)(n), O = (0, s.Z)(n, u, h), I = (0, E.Y)({
-    isOwnSettings: b,
+  } = e, h = t.id, v = n.isNonUserBot(), T = n.id === _.default.getId(), b = (0, c.Z)(n), O = (0, s.Z)(n, u, h), S = (0, E.Y)({
+    isOwnSettings: T,
     userId: n.id,
     channelId: h,
     guildId: u,
     context: g
-  }), [S, y] = (0, E.E)(n, h, u), p = (0, f.Z)(n, u, h), M = (0, d.Z)({
+  }), [I, y] = (0, E.E)(n, h, u), p = (0, f.Z)(n, u, h), M = (0, d.Z)({
     id: n.id,
     label: A.intl.string(A.t["/AXYnJ"])
   });
@@ -42,18 +42,18 @@ let h = (0, a.Z)((0, u.Z)(function(e) {
     onSelect: a,
     onInteraction: o,
     variant: "fixed",
-    children: !T && (0, l.jsxs)(l.Fragment, {
+    children: !v && (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsxs)(i.kSQ, {
-        children: [v, O]
-      }), I, !b && (0, l.jsx)(i.kSQ, {
+        children: [b, O]
+      }), S, !T && (0, l.jsx)(i.kSQ, {
         children: (0, l.jsxs)(i.sNh, {
           id: "more-options",
           label: A.intl.string(A.t.PdRCRk),
-          children: [S, (0, l.jsx)(i.kSQ, {
+          children: [I, (0, l.jsx)(i.kSQ, {
             children: p
           }), y]
         })
-      }), b && (0, l.jsx)(i.kSQ, {
+      }), T && (0, l.jsx)(i.kSQ, {
         children: M
       })]
     })

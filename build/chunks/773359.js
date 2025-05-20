@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 23445 **/
 n.d(t, {
   Z: () => d
 });
@@ -14,7 +14,7 @@ let d = e => {
   let {
     channelId: t
   } = e, n = i.useCallback(() => {
-    o.l.reopenModReport(t)
+    o.Z.reopenModReport(t)
   }, [t]);
   return (0, r.jsx)(a.i, {
     bannerHeader: (0, r.jsx)(l.Text, {

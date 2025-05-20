@@ -1,9 +1,9 @@
-/** Chunk was on 37220 **/
+/** Chunk was on 36087 **/
 n.d(t, {
   Z: () => d
 });
-var i = n(544891),
-  r = n(570140),
+var r = n(544891),
+  i = n(570140),
   l = n(346479),
   a = n(624453),
   o = n(668781),
@@ -13,9 +13,9 @@ let u = {
     async pinMessage(e, t) {
       let {
         id: n,
-        name: r
+        name: i
       } = e;
-      await l.Z.unarchiveThreadIfNecessary(e.id), i.tn.put({
+      await l.Z.unarchiveThreadIfNecessary(e.id), r.tn.put({
         url: s.ANM.PIN(n, t),
         oldFormErrors: !0,
         rejectWithError: !0
@@ -25,7 +25,7 @@ let u = {
           maxPins: s.tG9
         }) : c.intl.formatToPlainString(c.t.NnO1S0, {
           maxPins: s.tG9,
-          channelName: r
+          channelName: i
         }), o.Z.show({
           title: c.intl.string(c.t.HI88Q0),
           body: t,
@@ -34,7 +34,7 @@ let u = {
       })
     },
     async unpinMessage(e, t) {
-      await l.Z.unarchiveThreadIfNecessary(e.id), i.tn.del({
+      await l.Z.unarchiveThreadIfNecessary(e.id), r.tn.del({
         url: s.ANM.PIN(e.id, t),
         oldFormErrors: !0,
         rejectWithError: !0
@@ -47,7 +47,7 @@ let u = {
       }))
     },
     ackPins(e) {
-      r.Z.dispatch({
+      i.Z.dispatch({
         type: "CHANNEL_PINS_ACK",
         channelId: e
       })
@@ -55,22 +55,22 @@ let u = {
     fetchPins(e) {
       let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
         n = a.Z.getPinnedMessages(e);
-      !t && null != n && (n.loaded || n.loading) || (r.Z.dispatch({
+      !t && null != n && (n.loaded || n.loading) || (i.Z.dispatch({
         type: "LOAD_PINNED_MESSAGES",
         channelId: e
-      }), i.tn.get({
+      }), r.tn.get({
         url: s.ANM.PINS(e),
         retries: 2,
         oldFormErrors: !0,
         rejectWithError: !0
       }).then(t => {
-        r.Z.dispatch({
+        i.Z.dispatch({
           type: "LOAD_PINNED_MESSAGES_SUCCESS",
           messages: t.body,
           channelId: e
         })
       }, () => {
-        r.Z.dispatch({
+        i.Z.dispatch({
           type: "LOAD_PINNED_MESSAGES_FAILURE",
           channelId: e
         })

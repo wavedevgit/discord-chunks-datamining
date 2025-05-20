@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 23445 **/
 e.exports = {
   chat: "chat_f75fb0",
   content: "content_f75fb0",

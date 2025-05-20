@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 23445 **/
 e.exports = {
   qualityIndicator: "qualityIndicator__30845",
   clickable: "clickable__30845",

@@ -4,13 +4,13 @@ n.d(t, {
 });
 var i = n(255367);
 n(73800);
-var r = n(442837),
-  a = n(481060),
+var a = n(442837),
+  r = n(481060),
   l = n(787014),
   o = n(904245),
   u = n(787263),
-  c = n(660189),
-  s = n(216572),
+  s = n(660189),
+  c = n(216572),
   d = n(144140),
   f = n(314897),
   g = n(496675),
@@ -20,25 +20,25 @@ var r = n(442837),
 
 function b(e) {
   let t = e.isForumPost(),
-    n = (0, r.e7)([f.default], () => e.isOwner(f.default.getId()), [e]),
-    b = (0, s.HL)(e),
+    n = (0, a.e7)([f.default], () => e.isOwner(f.default.getId()), [e]),
+    b = (0, c.HL)(e),
     {
       canManageChannel: _,
       canAccessChannel: v
-    } = (0, r.cj)([g.Z], () => ({
+    } = (0, a.cj)([g.Z], () => ({
       canAccessChannel: g.Z.can(e.accessPermissions, e),
       canManageChannel: g.Z.can(e.isThread() ? p.Plq.MANAGE_THREADS : p.Plq.MANAGE_CHANNELS, e)
     }), [e]),
-    h = (0, r.e7)([d.Z], () => {
+    h = (0, a.e7)([d.Z], () => {
       var t;
       return null != (t = d.Z.getCount(e.id)) ? t : 0
     }, [e.id]),
     {
       firstMessage: y
-    } = (0, r.e7)([c.Z], () => c.Z.getMessage(e.id), [e.id]),
+    } = (0, a.e7)([s.Z], () => s.Z.getMessage(e.id), [e.id]),
     C = t && (_ || n && h < 1),
     A = t && n && !_ && h > 0 && null != y;
-  return v && !b && (_ || C || A) ? (0, i.jsx)(a.sNh, {
+  return v && !b && (_ || C || A) ? (0, i.jsx)(r.sNh, {
     id: "delete-channel",
     label: e.type === p.d4z.GUILD_CATEGORY ? E.intl.string(E.t.ifbXnJ) : e.isForumPost() ? C ? E.intl.string(E.t.nEOg1N) : E.intl.string(E.t.xwMqDw) : e.isThread() ? E.intl.string(E.t.H7vTe3) : E.intl.string(E.t["8D8Rsb"]),
     color: "danger",

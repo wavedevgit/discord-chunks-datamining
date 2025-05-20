@@ -1,9 +1,9 @@
 /** Chunk was on 62134 **/
 "use strict";
 n.d(t, {
-  CF: () => Q,
+  CF: () => X,
   ZP: () => et,
-  nD: () => X
+  nD: () => Q
 }), n(539854), n(388685), n(997841);
 var r = n(255367),
   o = n(73800),
@@ -218,7 +218,7 @@ let Y = o.memo(function(e) {
   })
 });
 
-function Q(e, t, n) {
+function X(e, t, n) {
   let {
     message: o,
     channel: l,
@@ -254,7 +254,7 @@ function Q(e, t, n) {
   })
 }
 
-function X(e) {
+function Q(e) {
   let {
     message: t,
     avatar: n,
@@ -458,13 +458,13 @@ let ee = o.memo(function(e) {
       user: null == t ? void 0 : t.author,
       compact: l,
       isRepliedMessage: !1
-    }), [t, P, l]), V = (0, a.e7)([N.Z], () => $(l, L, g, N.Z.getGuild(e.guildId)), [l, L, g, e.guildId]), Q = o.useMemo(() => {
+    }), [t, P, l]), V = (0, a.e7)([N.Z], () => $(l, L, g, N.Z.getGuild(e.guildId)), [l, L, g, e.guildId]), X = o.useMemo(() => {
       let e = [];
       return (0, _.yE)(t.flags, F.iLy.SUPPRESS_NOTIFICATIONS) && e.push((0, r.jsx)(v.Z, {}, "suppress-notifications")), t.hasPotions() && e.push((0, r.jsx)(O.Z, {
         message: t
       })), e
     }, [t]), J = (0, A.XX)(t, b), ee = (0, A.Dv)(t), et = h ? "".concat(J) : "".concat(J, " ").concat(ee), en = (null == n ? void 0 : n.state) === j.Y.LOADED ? (0, A.Gq)(t) : void 0;
-    return (0, r.jsx)(X, {
+    return (0, r.jsx)(Q, {
       message: t,
       avatar: D,
       username: (0, r.jsxs)(r.Fragment, {
@@ -493,7 +493,7 @@ let ee = o.memo(function(e) {
       usernameSpanId: (0, A.XX)(t, b),
       usernameClassName: i()(H.headerText, {
         [H.hasRoleIcon]: 0 !== V,
-        [H.hasBadges]: null != G || Q.length > 0
+        [H.hasBadges]: null != G || X.length > 0
       }),
       compact: l,
       showTimestamp: !0 !== h,
@@ -501,6 +501,6 @@ let ee = o.memo(function(e) {
       ariaLabelledBy: et,
       ariaDescribedBy: en,
       className: y,
-      badges: Q
+      badges: X
     })
   })

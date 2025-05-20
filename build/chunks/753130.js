@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 23445 **/
 e.exports = {
   role: "role_b4b2c3",
   roleColor: "roleColor_b4b2c3",
