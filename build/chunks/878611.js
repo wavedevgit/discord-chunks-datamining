@@ -54,7 +54,7 @@ let f = {
     null != l && (0, i.jW)(o, async () => {
       let {
         default: t
-      } = await Promise.all([n.e("94342"), n.e("26881"), n.e("13351"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("87918")]).then(n.bind(n, 757387));
+      } = await Promise.all([n.e("94342"), n.e("79695"), n.e("13351"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("20204")]).then(n.bind(n, 757387));
       return n => (0, r.jsx)(t, d(c({}, n), {
         user: e,
         channel: l,

@@ -1,4 +1,4 @@
-/** Chunk was on 72704 **/
+/** Chunk was on 56893 **/
 n.d(t, {
   Z: () => _
 }), n(388685);
@@ -54,7 +54,7 @@ let _ = s().throttle(function(e, t) {
         } else if ("object" == typeof a && _(a.resourceId, a.type)) return C !== d.Z.getGuildId() && (0, p.K)(C, null == (s = c.ZP.getDefaultChannel(C)) ? void 0 : s.id), (0, l.ZDy)(async () => {
           let {
             default: e
-          } = await Promise.all([n.e("42743"), n.e("22347"), n.e("56236"), n.e("529")]).then(n.bind(n, 17671));
+          } = await Promise.all([n.e("42743"), n.e("22347"), n.e("56236"), n.e("7549")]).then(n.bind(n, 17671));
           return t => (0, i.jsx)(e, function(e, t) {
             return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
               var n = Object.keys(e);

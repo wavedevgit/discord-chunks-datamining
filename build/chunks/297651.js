@@ -1,53 +1,53 @@
-/** Chunk was on 90111 **/
+/** Chunk was on 45620 **/
 "use strict";
-r.d(t, {
-  E: () => b
+n.d(t, {
+  E: () => f
 });
-var n = r(73800),
-  i = r(442837),
-  o = r(626135),
-  l = r(74538),
-  a = r(381585),
-  s = r(597688),
-  c = r(884697),
-  u = r(819490),
-  d = r(82892),
-  p = r(981631);
+var r = n(73800),
+  l = n(442837),
+  i = n(626135),
+  a = n(74538),
+  o = n(381585),
+  s = n(597688),
+  c = n(884697),
+  u = n(819490),
+  d = n(82892),
+  b = n(981631);
 
-function b(e, t) {
-  let r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "product",
-    b = (0, a.sp)(),
-    f = (0, i.e7)([s.Z], () => s.Z.getProduct(e)),
-    v = (0, d.x)(),
-    m = l.ZP.canUseCollectibles(v),
-    h = n.useRef(null),
-    g = (0, u.B)("shop_product_card"),
-    x = n.useCallback(() => {
-      if (!g) return;
-      let n = null != f ? (0, c.Vw)(f, m, !1) : null,
-        i = null != f ? (0, c.eu)(f, m, !1) : void 0;
-      o.default.track(p.rMx.COLLECTIBLES_TILE_IMPRESSION, {
-        collectibles_shop_session_id: null == b ? void 0 : b.sessionId,
+function f(e, t) {
+  let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "product",
+    f = (0, o.sp)(),
+    p = (0, l.e7)([s.Z], () => s.Z.getProduct(e)),
+    g = (0, d.x)(),
+    h = a.ZP.canUseCollectibles(g),
+    m = r.useRef(null),
+    _ = (0, u.B)("shop_product_card"),
+    C = r.useCallback(() => {
+      if (!_) return;
+      let r = null != p ? (0, c.Vw)(p, h, !1) : null,
+        l = null != p ? (0, c.eu)(p, h, !1) : void 0;
+      i.default.track(b.rMx.COLLECTIBLES_TILE_IMPRESSION, {
+        collectibles_shop_session_id: null == f ? void 0 : f.sessionId,
         sku_id: e,
-        display_price: null == n ? void 0 : n.amount,
-        display_price_currency: null == n ? void 0 : n.currency.toString(),
-        display_price_strikethrough: i,
-        position: null == b ? void 0 : b.tilePosition,
+        display_price: null == r ? void 0 : r.amount,
+        display_price_currency: null == r ? void 0 : r.currency.toString(),
+        display_price_strikethrough: l,
+        position: null == f ? void 0 : f.tilePosition,
         page_type: t,
-        page_category: null == b ? void 0 : b.pageCategory,
-        page_section: null == b ? void 0 : b.pageSection,
-        type: r,
-        category_position: null == b ? void 0 : b.categoryPosition
+        page_category: null == f ? void 0 : f.pageCategory,
+        page_section: null == f ? void 0 : f.pageSection,
+        type: n,
+        category_position: null == f ? void 0 : f.categoryPosition
       })
-    }, [null == b ? void 0 : b.sessionId, null == b ? void 0 : b.categoryPosition, null == b ? void 0 : b.pageCategory, null == b ? void 0 : b.pageSection, null == b ? void 0 : b.tilePosition, m, g, t, f, e, r]),
-    _ = n.useCallback(e => {
-      e ? null === h.current && (h.current = setTimeout(() => {
-        x(), h.current = null
-      }, 1e3)) : null !== h.current && (clearTimeout(h.current), h.current = null)
-    }, [x]);
-  return n.useEffect(() => () => {
-    null !== h.current && (clearTimeout(h.current), h.current = null)
+    }, [null == f ? void 0 : f.sessionId, null == f ? void 0 : f.categoryPosition, null == f ? void 0 : f.pageCategory, null == f ? void 0 : f.pageSection, null == f ? void 0 : f.tilePosition, h, _, t, p, e, n]),
+    v = r.useCallback(e => {
+      e ? null === m.current && (m.current = setTimeout(() => {
+        C(), m.current = null
+      }, 1e3)) : null !== m.current && (clearTimeout(m.current), m.current = null)
+    }, [C]);
+  return r.useEffect(() => () => {
+    null !== m.current && (clearTimeout(m.current), m.current = null)
   }, []), {
-    handleCardVisibilityChange: _
+    handleCardVisibilityChange: v
   }
 }

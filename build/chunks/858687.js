@@ -1,35 +1,35 @@
-/** Chunk was on 60864 **/
+/** Chunk was on 19549 **/
 n.d(t, {
-  Z: () => d
+  Z: () => u
 });
 var r = n(255367),
-  l = n(73800),
-  o = n(481060),
-  i = n(493683),
-  a = n(699516),
+  i = n(73800),
+  a = n(481060),
+  l = n(493683),
+  o = n(699516),
   c = n(594174),
   s = n(933557),
-  u = n(388032);
+  d = n(388032);
 
-function d(e, t) {
-  let d = l.useCallback(() => {
-    let l = (0, s.F6)(e, c.default, a.Z),
-      d = u.intl.formatToPlainString(u.t.hJ5Ap6, {
-        name: l
+function u(e, t) {
+  let u = i.useCallback(() => {
+    let i = (0, s.F6)(e, c.default, o.Z),
+      u = d.intl.formatToPlainString(d.t.hJ5Ap6, {
+        name: i
       }),
-      b = u.intl.format(u.t.SSIVOj, {
-        name: l
+      f = d.intl.format(d.t.SSIVOj, {
+        name: i
       });
-    e.isManaged() && (d = u.intl.formatToPlainString(u.t.hVGjER, {
-      name: l
-    }), b = u.intl.format(u.t.IK1Qvr, {
-      name: l
+    e.isManaged() && (u = d.intl.formatToPlainString(d.t.hVGjER, {
+      name: i
+    }), f = d.intl.format(d.t.IK1Qvr, {
+      name: i
     }));
-    let f = function(n) {
+    let p = function(n) {
       let r = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-      i.Z.closePrivateChannel(e.id, t, r)
+      l.Z.closePrivateChannel(e.id, t, r)
     };
-    (0, o.ZDy)(async () => {
+    (0, a.ZDy)(async () => {
       let {
         default: e
       } = await n.e("14604").then(n.bind(n, 960670));
@@ -51,16 +51,16 @@ function d(e, t) {
         }
         return e
       }({
-        header: d,
-        body: b,
-        onSubmit: f
+        header: u,
+        body: f,
+        onSubmit: p
       }, t))
     })
   }, [e, t]);
-  return (0, r.jsx)(o.sNh, {
+  return (0, r.jsx)(a.sNh, {
     id: "leave-channel",
-    label: u.intl.string(u.t["26C4oq"]),
-    action: d,
+    label: d.intl.string(d.t["26C4oq"]),
+    action: u,
     color: "danger"
   })
 }

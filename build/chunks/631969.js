@@ -1,18 +1,18 @@
-/** Chunk was on 67756 **/
-n.d(a, {
-  Z: () => c
+/** Chunk was on 44606 **/
+n.d(t, {
+  Z: () => a
 });
-var t = n(255367);
+var r = n(255367);
 n(73800);
-var o = n(120356),
-  r = n.n(o),
-  i = n(159252);
+var l = n(120356),
+  s = n.n(l),
+  i = n(979263);
 
-function c(e) {
+function a(e) {
   let {
-    className: a
+    className: t
   } = e;
-  return (0, t.jsx)("div", {
-    className: r()(i.image, a)
+  return (0, r.jsx)("div", {
+    className: s()(i.image, t)
   })
 }

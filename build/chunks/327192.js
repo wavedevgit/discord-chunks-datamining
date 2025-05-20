@@ -1,4 +1,4 @@
-/** Chunk was on 72704 **/
+/** Chunk was on 56893 **/
 n.d(t, {
   Z: () => X
 }), n(388685), n(539854), n(457542);
@@ -40,8 +40,8 @@ var i = n(255367),
   B = n(856651),
   M = n(921944),
   U = n(388032),
-  V = n(879198),
-  G = n(971005);
+  V = n(741138),
+  G = n(20493);
 
 function F(e) {
   for (var t = 1; t < arguments.length; t++) {

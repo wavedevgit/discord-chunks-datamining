@@ -1,4 +1,4 @@
-/** Chunk was on 72704 **/
+/** Chunk was on 56893 **/
 n.d(t, {
   C: () => ea,
   Z: () => ec
@@ -52,7 +52,7 @@ var i = n(255367),
   q = n(474936),
   X = n(981631),
   Q = n(388032),
-  J = n(899484),
+  J = n(133525),
   $ = n(881188),
   ee = n(434691);
 let et = "to_premium_home_button",

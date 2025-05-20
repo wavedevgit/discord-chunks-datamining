@@ -1,4 +1,4 @@
-/** Chunk was on 72704 **/
+/** Chunk was on 56893 **/
 n.d(t, {
   Z: () => u
 });
@@ -10,7 +10,7 @@ var r = n(693789),
   a = n(703656),
   o = n(272008),
   c = n(981631),
-  d = n(906736);
+  d = n(283294);
 let u = function() {
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(s.X6q, {

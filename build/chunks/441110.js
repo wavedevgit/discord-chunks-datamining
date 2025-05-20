@@ -15,7 +15,7 @@ var o = n(481060),
   d = n(626135),
   p = n(981631),
   m = n(388032),
-  g = n(804864);
+  g = n(400822);
 let f = function(e) {
   let {
     guild: t,

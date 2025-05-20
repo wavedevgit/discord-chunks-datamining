@@ -1,6 +1,6 @@
 /**
   Module ID: 16967
-  Original File Name: 97f39757efcaed88
+  Original File Name: c2f995e40e6fed22
 **/
 .closeButton__47998 {
     position: absolute;
@@ -241,6 +241,7 @@
 .footerWithMessage__62280 {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     padding: 0
 }
 
@@ -509,4 +510,4 @@
     width: 16px
 }
 
-/*# sourceMappingURL=97f39757efcaed88.css.map*/
+/*# sourceMappingURL=c2f995e40e6fed22.css.map*/

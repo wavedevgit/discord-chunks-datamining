@@ -1,23 +1,23 @@
-/** Chunk was on 90111 **/
+/** Chunk was on 45620 **/
 "use strict";
-r.d(t, {
-  Z: () => g
+n.d(t, {
+  Z: () => _
 });
-var n = r(255367),
-  i = r(73800),
-  o = r(481060),
-  l = r(727637),
-  a = r(906732),
-  s = r(333867),
-  c = r(677232),
-  u = r(884697),
-  d = r(228624),
-  p = r(67409),
-  b = r(474936),
-  f = r(231338),
-  v = r(388032),
-  m = r(45217);
-let h = {
+var r = n(255367),
+  l = n(73800),
+  i = n(481060),
+  a = n(727637),
+  o = n(906732),
+  s = n(333867),
+  c = n(677232),
+  u = n(884697),
+  d = n(228624),
+  b = n(67409),
+  f = n(474936),
+  p = n(231338),
+  g = n(388032),
+  h = n(846165);
+let m = {
     dark: [{
       box: "#FFF19E",
       ribbon: "#FF484B"
@@ -63,83 +63,83 @@ let h = {
       ribbon: "#026530"
     }]
   },
-  g = e => {
+  _ = e => {
     let {
       product: t,
-      selectedVariantIndex: r,
-      returnRef: g,
-      onSuccess: x,
-      tooltipDelay: _,
+      selectedVariantIndex: n,
+      returnRef: _,
+      onSuccess: C,
+      tooltipDelay: v,
       isGiftEasterEggEnabled: O,
-      color: j = o.Ttl.BRAND
+      color: x = i.Ttl.BRAND
     } = e, {
-      analyticsLocations: y
-    } = (0, a.ZP)(), P = i.useRef(null), C = (0, l.Z)(P), w = (0, d.hv)("CollectiblesShopGiftButton");
-    return (0, u.x6)(t) ? null : (0, n.jsx)(o.ua7, {
-      text: v.intl.string(v.t["JCFN//"]),
-      delay: _,
+      analyticsLocations: S
+    } = (0, o.ZP)(), j = l.useRef(null), y = (0, a.Z)(j), P = (0, d.hv)("CollectiblesShopGiftButton");
+    return (0, u.x6)(t) ? null : (0, r.jsx)(i.ua7, {
+      text: g.intl.string(g.t["JCFN//"]),
+      delay: v,
       children: e => {
-        var i, l;
-        return (0, n.jsx)(o.zxk, (i = function(e) {
+        var l, a;
+        return (0, r.jsx)(i.zxk, (l = function(e) {
           for (var t = 1; t < arguments.length; t++) {
-            var r = null != arguments[t] ? arguments[t] : {},
-              n = Object.keys(r);
-            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(r, e).enumerable
-            }))), n.forEach(function(t) {
-              var n;
-              n = r[t], t in e ? Object.defineProperty(e, t, {
-                value: n,
+            var n = null != arguments[t] ? arguments[t] : {},
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-              }) : e[t] = n
+              }) : e[t] = r
             })
           }
           return e
-        }({}, e), l = l = {
-          buttonRef: P,
-          className: m.giftButton,
-          color: j,
-          look: o.zxk.Looks.FILLED,
-          size: o.PhG.ICON,
-          innerClassName: m.giftButtonInner,
-          "aria-label": v.intl.string(v.t.PEjaCw),
+        }({}, e), a = a = {
+          buttonRef: j,
+          className: h.giftButton,
+          color: x,
+          look: i.zxk.Looks.FILLED,
+          size: i.PhG.ICON,
+          innerClassName: h.giftButtonInner,
+          "aria-label": g.intl.string(g.t.PEjaCw),
           onClick: e => {
             e.stopPropagation(), (0, s.Z)({
-              skuId: (0, p.S)({
+              skuId: (0, b.S)({
                 product: t,
-                selectedVariantIndex: r
+                selectedVariantIndex: n
               }),
               isGift: !0,
-              giftingOrigin: b.Wt.SHOP_PAGE,
-              analyticsLocations: y,
-              returnRef: g,
-              variantsReturnStyle: w,
-              onClose: null != x ? e => {
-                e && x()
+              giftingOrigin: f.Wt.SHOP_PAGE,
+              analyticsLocations: S,
+              returnRef: _,
+              variantsReturnStyle: P,
+              onClose: null != C ? e => {
+                e && C()
               } : void 0
             })
           },
-          children: O ? (0, n.jsx)(c.Z, {
-            hovered: C,
+          children: O ? (0, r.jsx)(c.Z, {
+            hovered: y,
             isContentDismissed: !0,
-            themeOverride: f.BR.DARK,
-            boxColors: h
-          }) : (0, n.jsx)(o.OgN, {
+            themeOverride: p.BR.DARK,
+            boxColors: m
+          }) : (0, r.jsx)(i.OgN, {
             size: "md",
             color: "currentColor"
           })
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-          var r = Object.keys(e);
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+          var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var n = Object.getOwnPropertySymbols(e);
-            r.push.apply(r, n)
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
           }
-          return r
-        })(Object(l)).forEach(function(e) {
-          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
-        }), i))
+          return n
+        })(Object(a)).forEach(function(e) {
+          Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(a, e))
+        }), l))
       }
     })
   }

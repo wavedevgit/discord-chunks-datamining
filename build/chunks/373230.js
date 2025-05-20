@@ -1,11 +1,11 @@
-/** Chunk was on 72704 **/
+/** Chunk was on 78701 **/
 n.d(t, {
-  T: () => l,
-  c: () => s
+  T: () => o,
+  c: () => i
 });
-var i = n(818083),
-  r = n(355820);
-let s = (0, i.B)({
+var r = n(818083),
+  a = n(355820);
+let i = (0, r.B)({
   kind: "user",
   id: "2025-01_recent_avatars",
   label: "Recent Avatars",
@@ -27,20 +27,20 @@ let s = (0, i.B)({
   }]
 });
 
-function l(e) {
+function o(e) {
   let {
     location: t,
     autoTrackExposure: n = !0
-  } = e, i = (0, r.A)({
+  } = e, r = (0, a.A)({
     location: t,
     autoTrackExposure: n
   }), {
-    enabled: l
-  } = s.useExperiment({
+    enabled: o
+  } = i.useExperiment({
     location: t
   }, {
     autoTrackExposure: n,
-    disable: i
+    disable: r
   });
-  return l
+  return o
 }

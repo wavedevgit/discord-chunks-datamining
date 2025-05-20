@@ -1,4 +1,4 @@
-/** Chunk was on 72704 **/
+/** Chunk was on 56893 **/
 n.d(t, {
   Z: () => b
 }), n(388685);
@@ -9,8 +9,8 @@ var i = n(255367),
   a = n(481060),
   o = n(981631),
   c = n(388032),
-  d = n(977106),
-  u = n(971005);
+  d = n(937848),
+  u = n(20493);
 let m = 0,
   g = () => "notification-position-selector-".concat(m++),
   p = e => {

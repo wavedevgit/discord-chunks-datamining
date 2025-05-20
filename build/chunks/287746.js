@@ -1,4 +1,4 @@
-/** Chunk was on 16318 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => ti
 }), n(388685), n(35282), n(781311), n(997841);
@@ -109,8 +109,8 @@ var r = n(255367),
   e$ = n(641861),
   e0 = n(981631),
   e1 = n(388032),
-  e2 = n(22249),
-  e3 = n(906557);
+  e2 = n(100658),
+  e3 = n(672);
 
 function e7(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -147,7 +147,7 @@ function e5(e, t) {
   }), e
 }
 
-function e6(e, t) {
+function e4(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -163,7 +163,7 @@ function e6(e, t) {
   return i
 }
 
-function e4(e) {
+function e6(e) {
   e.preventDefault()
 }
 let e9 = /^\+(?!\w+):?(?!:)(\w+)?:?$/;
@@ -171,7 +171,7 @@ let e9 = /^\+(?!\w+):?(?!:)(\w+)?:?$/;
 function te(e) {
   var {
     isSidebar: t
-  } = e, n = e6(e, ["isSidebar"]);
+  } = e, n = e4(e, ["isSidebar"]);
   return t ? (0, r.jsx)("section", e5(e8({}, n), {
     role: "complementary"
   })) : (0, r.jsx)("main", e8({}, n))
@@ -179,7 +179,7 @@ function te(e) {
 let tt = e => {
   let {
     ref: t
-  } = e, n = e6(e, ["ref"]);
+  } = e, n = e4(e, ["ref"]);
   return (0, r.jsx)(tn, e5(e8({}, n), {
     refInstance: t
   }))
@@ -748,7 +748,7 @@ class tr extends i.PureComponent {
                   showAutomodUserProfileChatBlocker: j
                 })) ? t : (0, r.jsxs)("form", {
                   ref: this.inputFormRef,
-                  onSubmit: e4,
+                  onSubmit: e6,
                   className: a()(e2.form, {
                     [e2.formWithLoadedChatInput]: !G
                   }),

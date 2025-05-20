@@ -1,25 +1,24 @@
-/** Chunk was on 59787 **/
-"use strict";
+/** Chunk was on 79368 **/
 n.d(t, {
   L: () => u,
-  Z: () => p
+  Z: () => _
 });
-var r, o = n(990547),
-  i = n(544891),
-  a = n(570140),
-  s = n(314897),
-  l = n(573261),
+var r, i = n(990547),
+  a = n(544891),
+  o = n(570140),
+  l = n(314897),
+  s = n(573261),
   c = n(815660),
   d = n(981631),
   u = ((r = {}).USER_ACTION_REQUIRED = "user_action_required", r.USER_SETTINGS_UPDATE = "user_settings_update", r.GUILD_PHONE_REQUIRED = "guild_phone_required", r.MFA_PHONE_UPDATE = "mfa_phone_update", r.CONTACT_SYNC = "contact_sync", r);
-let p = {
+let _ = {
   setCountryCode(e) {
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "PHONE_SET_COUNTRY_CODE",
       countryCode: e
     })
   },
-  removePhone: (e, t) => i.tn.del({
+  removePhone: (e, t) => a.tn.del({
     url: d.ANM.PHONE,
     body: {
       password: e,
@@ -30,8 +29,8 @@ let p = {
   }),
   resendCode(e) {
     let t = {},
-      n = s.default.getFingerprint();
-    return null != n && "" !== n && (t["X-Fingerprint"] = n), i.tn.post({
+      n = l.default.getFingerprint();
+    return null != n && "" !== n && (t["X-Fingerprint"] = n), a.tn.post({
       url: d.ANM.RESEND_PHONE,
       headers: t,
       body: {
@@ -40,7 +39,7 @@ let p = {
       rejectWithError: !1
     })
   },
-  beginAddPhone: (e, t) => i.tn.post({
+  beginAddPhone: (e, t) => a.tn.post({
     url: d.ANM.PHONE,
     body: {
       phone: e,
@@ -48,7 +47,7 @@ let p = {
     },
     rejectWithError: !1
   }),
-  addPhone: (e, t, n) => i.tn.post({
+  addPhone: (e, t, n) => a.tn.post({
     url: d.ANM.PHONE,
     body: {
       phone_token: e,
@@ -58,14 +57,14 @@ let p = {
     oldFormErrors: !0,
     rejectWithError: !1
   }),
-  addPhoneWithoutPassword: e => i.tn.post({
+  addPhoneWithoutPassword: e => a.tn.post({
     url: d.ANM.PHONE_VERIFY_NO_PASSWORD,
     body: {
       code: e
     },
     rejectWithError: !1
   }),
-  beginReverifyPhone: (e, t) => i.tn.post({
+  beginReverifyPhone: (e, t) => a.tn.post({
     url: d.ANM.PHONE_REVERIFY,
     body: {
       phone: e,
@@ -73,7 +72,7 @@ let p = {
     },
     rejectWithError: !1
   }),
-  reverifyPhone: (e, t, n) => i.tn.post({
+  reverifyPhone: (e, t, n) => a.tn.post({
     url: d.ANM.PHONE_REVERIFY,
     body: {
       phone_token: e,
@@ -83,7 +82,7 @@ let p = {
     oldFormErrors: !0,
     rejectWithError: !1
   }),
-  validatePhoneForSupport: e => i.tn.post({
+  validatePhoneForSupport: e => a.tn.post({
     url: d.ANM.VERIFY_PHONE_FOR_TICKET,
     body: {
       token: e
@@ -94,25 +93,25 @@ let p = {
   async verifyPhone(e, t) {
     let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
       r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
-      i = {},
-      u = s.default.getFingerprint();
-    null != u && "" !== u && (i["X-Fingerprint"] = u), r && (i.authorization = "");
-    let p = await l.Z.post({
+      a = {},
+      u = l.default.getFingerprint();
+    null != u && "" !== u && (a["X-Fingerprint"] = u), r && (a.authorization = "");
+    let _ = await s.Z.post({
       url: d.ANM.VERIFY_PHONE,
-      headers: i,
+      headers: a,
       body: {
         phone: e,
         code: t
       },
       oldFormErrors: !0,
       trackedActionData: {
-        event: o.NetworkActionNames.USER_VERIFY_PHONE
+        event: i.NetworkActionNames.USER_VERIFY_PHONE
       },
       rejectWithError: !1
     });
-    return n && a.Z.dispatch({
+    return n && o.Z.dispatch({
       type: "MODAL_POP",
       key: c.M
-    }), p.body
+    }), _.body
   }
 }

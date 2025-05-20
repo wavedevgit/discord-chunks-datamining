@@ -1,4 +1,4 @@
-/** Chunk was on 40417 **/
+/** Chunk was on 36087 **/
 n.d(t, {
   Z: () => b
 });
@@ -11,7 +11,7 @@ var i = n(275726),
   s = n(942951),
   c = n(834129),
   u = n(594174),
-  d = n(720068),
+  d = n(776571),
   p = n(388032);
 let m = {
     [i.u.REPORT_TO_MOD_BAN_USER]: () => d.default.komFTk,

@@ -1,46 +1,46 @@
-/** Chunk was on 27978 **/
-n.d(t, {
-  Z: () => d
+/** Chunk was on 70657 **/
+t.d(n, {
+  Z: () => u
 });
-var r = n(255367),
-  i = n(73800),
-  l = n(481060),
-  a = n(725436),
-  o = n(11868),
-  s = n(217804),
-  c = n(765305),
-  u = n(925457);
+var i = t(255367),
+  l = t(73800),
+  r = t(481060),
+  a = t(725436),
+  d = t(11868),
+  o = t(217804),
+  s = t(765305),
+  c = t(244231);
 
-function d(e) {
+function u(e) {
   let {
-    guildScheduledEvent: t,
-    channel: n,
-    onClose: d
-  } = e, g = t.entity_type === c.WX.EXTERNAL, h = i.useCallback(e => (0, o.Qt)(t, d)(e), [t, d]), p = (0, s.u)(t, n);
+    guildScheduledEvent: n,
+    channel: t,
+    onClose: u
+  } = e, _ = n.entity_type === s.WX.EXTERNAL, g = l.useCallback(e => (0, d.Qt)(n, u)(e), [n, u]), p = (0, o.u)(n, t);
   if (null == p) return null;
   let {
     IconComponent: m,
     locationName: f
-  } = p, _ = (0, r.jsxs)(r.Fragment, {
-    children: [null != m && (0, r.jsx)(m, {
+  } = p, I = (0, i.jsxs)(i.Fragment, {
+    children: [null != m && (0, i.jsx)(m, {
       size: "custom",
       color: "currentColor",
       width: 20,
       height: 20,
-      className: u.channelIcon
-    }), (0, r.jsx)(l.Text, {
+      className: c.channelIcon
+    }), (0, i.jsx)(r.Text, {
       color: "header-secondary",
       variant: "text-sm/normal",
-      className: u.locationText,
+      className: c.locationText,
       children: (0, a.m)(f, !0)
     })]
   });
-  return (0, r.jsx)("div", {
-    className: u.row,
-    children: null != h ? (0, r.jsx)(l.P3F, {
-      className: g ? u.externalLocation : u.channelLocation,
-      onClick: h,
-      children: _
-    }) : _
+  return (0, i.jsx)("div", {
+    className: c.row,
+    children: null != g ? (0, i.jsx)(r.P3F, {
+      className: _ ? c.externalLocation : c.channelLocation,
+      onClick: g,
+      children: I
+    }) : I
   })
 }

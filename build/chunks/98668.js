@@ -1,5 +1,3 @@
 /** Chunk was on web.js **/
 "use strict";
-e.exports = {
-  loadingPopout: "loadingPopout__58f1c"
-}
+e.exports = "/assets/bdfe508d89ae4987.svg"

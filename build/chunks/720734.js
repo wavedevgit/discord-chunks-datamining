@@ -1,4 +1,4 @@
-/** Chunk was on 72704 **/
+/** Chunk was on 56893 **/
 n.d(t, {
   Z: () => tu,
   m: () => tc
@@ -112,13 +112,13 @@ var i = n(255367),
   e1 = n(51144),
   e3 = n(998502),
   e8 = n(870569),
-  e6 = n(345243),
-  e2 = n(115530),
+  e2 = n(345243),
+  e6 = n(115530),
   e5 = n(981631),
-  e7 = n(215023),
-  e4 = n(46140),
+  e4 = n(215023),
+  e7 = n(46140),
   e9 = n(388032),
-  te = n(671053);
+  te = n(239692);
 
 function tt(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -641,12 +641,12 @@ class tc extends r.PureComponent {
       return null == e ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
           className: te.panelTitleContainer,
-          children: (0, i.jsx)(e2.Z, {
+          children: (0, i.jsx)(e6.Z, {
             children: e1.ZP.getName(e)
           })
         }), (0, i.jsx)("div", {
           className: te.panelSubtextContainer,
-          children: (0, i.jsx)(e6.Z, {
+          children: (0, i.jsx)(e2.Z, {
             children: this.renderStatus()
           })
         })]
@@ -773,7 +773,7 @@ function tu() {
     V = (0, eb.D)(),
     G = (0, O.u)(),
     F = e$.ZP.canUsePremiumGuildMemberProfile(t),
-    H = (null == t || null == (e = t.avatarDecoration) ? void 0 : e.skuId) === e7.rL,
+    H = (null == t || null == (e = t.avatarDecoration) ? void 0 : e.skuId) === e4.rL,
     {
       voiceActivityStatusEnabled: z
     } = (0, I.U)({
@@ -828,7 +828,7 @@ function tu() {
       user: t
     }),
     ec = (0, ef.Ws)({
-      location: e4.dr.CONFLICT_CHECKS
+      location: e7.dr.CONFLICT_CHECKS
     }),
     ed = (0, d.e7)([ej.Z, ez.default, eB.Z], () => {
       let e, t = ej.Z.getSyncingWith(),
