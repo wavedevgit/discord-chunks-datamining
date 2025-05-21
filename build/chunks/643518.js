@@ -3,8 +3,8 @@ t.d(n, {
   Z: () => b
 }), t(539854);
 var o = t(442837),
-  c = t(468363),
-  i = t(158776),
+  i = t(468363),
+  c = t(158776),
   r = t(885110),
   a = t(585305),
   l = t(369566),
@@ -24,40 +24,40 @@ function b(e) {
     initialSubsection: I
   } = e, {
     voiceActivityStatusEnabled: h
-  } = (0, c.U)({
+  } = (0, i.U)({
     location: "useUserProfileModalTabBarItems"
   }), {
     live: y,
     recent: x,
-    stream: j,
-    outbox: g
+    stream: g,
+    outbox: j
   } = (0, l.Z)(n.id), {
-    voiceChannel: O,
-    voiceActivity: v
+    voiceChannel: v,
+    voiceActivity: O
   } = (0, s.Z)({
     userId: n.id,
     guildId: b
-  }), Z = n.id === (null == t ? void 0 : t.id), A = (0, o.e7)([r.Z, i.Z], () => {
-    let e = Z ? r.Z.getStatus() : i.Z.getStatus(n.id);
+  }), Z = n.id === (null == t ? void 0 : t.id), P = (0, o.e7)([r.Z, c.Z], () => {
+    let e = Z ? r.Z.getStatus() : c.Z.getStatus(n.id);
     return e === _.Skl.OFFLINE || e === _.Skl.INVISIBLE
-  }), N = null != j || y.length > 0, P = x.length > 0, {
-    mutualFriendsCount: C,
-    mutualGuilds: w
-  } = (0, d.Z)(n), T = null == w ? void 0 : w.length, S = (0, a.Z)(n), E = [{
+  }), A = null != g || y.length > 0, N = x.length > 0, {
+    mutualFriendsCount: w,
+    mutualGuilds: C
+  } = (0, d.Z)(n), E = null == C ? void 0 : C.length, T = (0, a.Z)(n), S = [{
     section: p.oh.USER_INFO,
     text: m.intl.string(m.t.jGoPJS)
   }];
-  return !A && (N || h && null == j && null == v && null != O) ? E.push({
+  return !P && (A || h && null == g && null == O && null != v) ? S.push({
     section: p.oh.ACTIVITY,
     text: m.intl.string(m.t.chq59f)
-  }) : (P || null == g && I === p.Tb.RECENT_ACTIVITY) && E.push({
+  }) : (N || null == j && I === p.Tb.RECENT_ACTIVITY) && S.push({
     section: p.oh.ACTIVITY,
     text: m.intl.string(m.t.chq59f)
-  }), !Z && S && (E.push({
+  }), !Z && T && (S.push({
     section: p.oh.MUTUAL_FRIENDS,
-    text: (0, u.Z)(C)
-  }), E.push({
+    text: (0, u.Z)(w)
+  }), S.push({
     section: p.oh.MUTUAL_GUILDS,
-    text: (0, f.Z)(T)
-  })), E
+    text: (0, f.Z)(E)
+  })), S
 }

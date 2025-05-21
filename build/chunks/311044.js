@@ -25,19 +25,19 @@ function _(e) {
   } = e, {
     analyticsLocations: h
   } = (0, a.ZP)(), {
-    context: x,
-    trackUserProfileAction: g
+    context: g,
+    trackUserProfileAction: x
   } = (0, s.KZ)(), {
     mutualFriends: j,
-    mutualFriendsCount: O
-  } = (0, d.Z)(t), I = (0, i.Z)();
+    mutualFriendsCount: I
+  } = (0, d.Z)(t), O = (0, i.Z)();
   return r.useEffect(() => {
-    (0, u.Z)(t.id, I)
-  }, [t.id, I]), (0, o.jsx)(c.Ttm, {
+    (0, u.Z)(t.id, O)
+  }, [t.id, O]), (0, o.jsx)(c.Ttm, {
     className: b.scroller,
     fade: !0,
     children: null == j ? Array.from({
-      length: null != O ? O : 10
+      length: null != I ? I : 10
     }).map((e, t) => (0, o.jsxs)("div", {
       className: b.loadingItem,
       children: [(0, o.jsx)(l.ZT, {
@@ -60,7 +60,7 @@ function _(e) {
         channelId: _,
         onSelect: () => {
           var e, t;
-          y(), g({
+          y(), x({
             action: "PRESS_MUTUAL_FRIEND"
           }), (0, f.openUserProfileModal)((e = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -79,7 +79,7 @@ function _(e) {
               })
             }
             return e
-          }({}, x), t = t = {
+          }({}, g), t = t = {
             userId: r.id,
             sourceAnalyticsLocations: h
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {

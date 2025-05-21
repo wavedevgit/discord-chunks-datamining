@@ -1,8 +1,8 @@
 /** Chunk was on 43473 **/
 n.d(t, {
-  P9: () => I,
+  P9: () => O,
   Uf: () => P,
-  b0: () => O,
+  b0: () => I,
   s_: () => j
 }), n(388685);
 var o = n(255367),
@@ -23,9 +23,9 @@ let _ = [() => m.intl.string(m.t.madJdH), () => m.intl.string(m.t.NYmfoK), () =>
   h = [() => m.intl.string(m.t.AyMGXF), () => m.intl.string(m.t.aAFW7e), e => m.intl.formatToPlainString(m.t.h2g0cH, {
     name: e
   }), () => m.intl.string(m.t["rrYh5+"]), () => m.intl.string(m.t["HX3K+P"]), () => m.intl.string(m.t["/yW3aW"]), () => m.intl.string(m.t["PmL/v7"]), () => m.intl.string(m.t.IALa3t), () => m.intl.string(m.t.HRcTFB), () => m.intl.string(m.t.NuCqPj), () => m.intl.string(m.t["M1tw+/"]), () => m.intl.string(m.t.UBm1y8), () => m.intl.string(m.t.Cu95PT), () => m.intl.string(m.t["R/wFur"]), () => m.intl.string(m.t.HQPAVV), () => m.intl.string(m.t.YolGh4)],
-  x = [p.ABu.EPIC_GAMES, p.ABu.RIOT_GAMES, p.ABu.XBOX, p.ABu.SPOTIFY, p.ABu.PLAYSTATION, p.ABu.LEAGUE_OF_LEGENDS, p.ABu.STEAM, p.ABu.CRUNCHYROLL, p.ABu.YOUTUBE, p.ABu.REDDIT, p.ABu.BATTLENET, p.ABu.GITHUB, p.ABu.TIKTOK, p.ABu.TWITTER_LEGACY, p.ABu.TWITCH];
+  g = [p.ABu.EPIC_GAMES, p.ABu.RIOT_GAMES, p.ABu.XBOX, p.ABu.SPOTIFY, p.ABu.PLAYSTATION, p.ABu.LEAGUE_OF_LEGENDS, p.ABu.STEAM, p.ABu.CRUNCHYROLL, p.ABu.YOUTUBE, p.ABu.REDDIT, p.ABu.BATTLENET, p.ABu.GITHUB, p.ABu.TIKTOK, p.ABu.TWITTER_LEGACY, p.ABu.TWITCH];
 
-function g(e) {
+function x(e) {
   let {
     heading: t,
     bodyText: n,
@@ -54,58 +54,59 @@ function j() {
       var e;
       return (null != (e = (0, c.sample)(_)) ? e : _[0])()
     });
-  return (0, o.jsx)(g, {
+  return (0, o.jsx)(x, {
     heading: e,
     bodyText: t
   })
 }
 
-function O() {
+function I() {
   let e = m.intl.string(m.t.bFgqYG),
     [t] = r.useState(() => {
       var e;
       return (null != (e = (0, c.sample)(y)) ? e : y[0])()
     });
-  return (0, o.jsx)(g, {
+  return (0, o.jsx)(x, {
     heading: e,
     bodyText: t
   })
 }
 
-function I(e) {
+function O(e) {
   let {
     user: t,
     guildId: n,
-    channelId: l
-  } = e, s = u.ZP.getName(n, l, t), d = m.intl.formatToPlainString(m.t.sjSitL, {
-    name: s
-  }), [p] = r.useState(() => {
+    channelId: l,
+    onClose: s
+  } = e, d = u.ZP.getName(n, l, t), p = m.intl.formatToPlainString(m.t.sjSitL, {
+    name: d
+  }), [_] = r.useState(() => {
     var e;
-    return (null != (e = (0, c.sample)(h)) ? e : h[0])(s)
-  }), _ = r.useCallback(() => {
+    return (null != (e = (0, c.sample)(h)) ? e : h[0])(d)
+  }), y = r.useCallback(() => {
     a.Z.openPrivateChannel({
       recipientIds: t.id
-    })
-  }, [t.id]), y = r.useCallback(() => {
+    }), null == s || s()
+  }, [t.id, s]), g = r.useCallback(() => {
     a.Z.openPrivateChannel({
       recipientIds: t.id,
       joinCall: !0
-    })
-  }, [t.id]);
-  return (0, o.jsx)(g, {
-    heading: d,
-    bodyText: p,
+    }), null == s || s()
+  }, [t.id, s]);
+  return (0, o.jsx)(x, {
+    heading: p,
+    bodyText: _,
     children: (0, o.jsxs)("div", {
       className: b.buttonRow,
       children: [(0, o.jsx)(f.tG, {
         icon: i.kBi,
         text: m.intl.string(m.t["g33r/P"]),
-        onClick: _,
+        onClick: y,
         themeColor: "secondary"
       }), (0, o.jsx)(f.tG, {
         icon: i.qWc,
         text: m.intl.string(m.t.JJogjo),
-        onClick: y,
+        onClick: g,
         themeColor: "secondary"
       })]
     })
@@ -116,7 +117,7 @@ function v() {
   let e = (0, s.ZP)();
   return (0, o.jsx)("div", {
     className: b.connectionPlatforms,
-    children: x.map((t, n) => {
+    children: g.map((t, n) => {
       let r = d.Z.get(t);
       if (null == r) return null;
       let c = (0, i.wjy)(e) ? r.icon.darkPNG : r.icon.lightPNG;
@@ -137,7 +138,7 @@ function P(e) {
   }, [t]), c = r.useCallback(() => {
     null == t || t(), l.Z.open(p.oAB.CONTENT_AND_SOCIAL, "CONNECTED_GAMES")
   }, [t]);
-  return (0, o.jsxs)(g, {
+  return (0, o.jsxs)(x, {
     heading: m.intl.string(m.t.Sc0oWF),
     bodyText: m.intl.string(m.t.m8UJqa),
     children: [(0, o.jsx)(v, {}), (0, o.jsxs)("div", {

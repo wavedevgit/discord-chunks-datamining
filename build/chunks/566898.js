@@ -3,7 +3,7 @@ n.d(t, {
   M9: () => h,
   Pb: () => y,
   XX: () => b,
-  ZP: () => x,
+  ZP: () => g,
   ZT: () => f,
   iv: () => _,
   pk: () => m
@@ -132,7 +132,7 @@ let m = 44,
   y = 26,
   h = 6;
 
-function x(e) {
+function g(e) {
   let {
     messages: t,
     groupSpacing: n = 0,
