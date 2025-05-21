@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => T,
-  _: () => S
+  _: () => N
 }), n(388685);
 var r = n(255367),
   l = n(73800),
@@ -36,12 +36,12 @@ let y = {
     scale: 1,
     opacity: 1
   },
-  N = {
+  S = {
     tension: 2400,
     friction: 52
   };
 
-function S(e) {
+function N(e) {
   let {
     channelId: t,
     onClick: n,
@@ -94,7 +94,7 @@ function P(e) {
   } = l.useContext(c.Sfi), f = (0, c.q_F)({
     from: d.enabled ? O : y,
     to: w,
-    config: N
+    config: S
   }, "animate-always"), x = (0, o.e7)([u.Z], () => u.Z.keyboardModeEnabled), b = (0, o.e7)([p.Z], () => p.Z.getUploads(t, m.Ie.CREATE_FORUM_POST.drafts.type));
   return (0, r.jsx)(s.animated.div, {
     className: _.popoutContainer,
@@ -107,7 +107,7 @@ function P(e) {
       className: _.popout,
       paddingFix: !1,
       fade: !0,
-      children: [(0, r.jsx)(S, {
+      children: [(0, r.jsx)(N, {
         channelId: t,
         onClick: () => {
           a(!0)
@@ -151,7 +151,7 @@ function T(e) {
         className: _.badge,
         children: s
       })]
-    }) : (0, r.jsx)(S, {
+    }) : (0, r.jsx)(N, {
       onMouseEnter: d,
       channelId: t
     }), n && (0, r.jsx)(P, {

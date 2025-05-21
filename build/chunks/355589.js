@@ -26,8 +26,8 @@ var r = n(255367),
   y = n(430824),
   O = n(186523),
   w = n(585483),
-  N = n(70956),
-  S = n(709054),
+  S = n(70956),
+  N = n(709054),
   P = n(961675),
   T = n(883429),
   I = n(993259),
@@ -175,7 +175,7 @@ let X = e => {
   }),
   Q = (e, t) => l.useCallback(() => (t(!1), T.Z.hideAdminOnboarding(e, !0)), [e, t]),
   $ = e => {
-    let t = S.default.extractTimestamp(e);
+    let t = N.default.extractTimestamp(e);
     return o()().isBefore(o()(t).add(o().duration(15, "days")))
   },
   ee = (e, t, n) => {
@@ -187,7 +187,7 @@ let X = e => {
     let i = l.useRef(0);
     l.useEffect(() => (n || !e || t ? clearTimeout(i.current) : i.current = setTimeout(() => {
       r()
-    }, 60 * N.Z.Millis.SECOND), () => clearTimeout(i.current)), [e, t, r, n])
+    }, 60 * S.Z.Millis.SECOND), () => clearTimeout(i.current)), [e, t, r, n])
   },
   en = (e, t, n) => {
     (0, p.ZP)(() => {
@@ -380,8 +380,8 @@ let X = e => {
       transitions: f,
       setVisible: x
     } = el(), b = ei(i), j = ec(), w = Q(l.id, x), {
-      onboardingSteps: N,
-      isDismissed: S,
+      onboardingSteps: S,
+      isDismissed: N,
       isHidden: P,
       isAllDone: T
     } = eo({
@@ -389,14 +389,14 @@ let X = e => {
       channel: l,
       hasAnyThread: t,
       handleHide: w
-    }), I = !P && !S, R = (0, A.AF)(), Z = l.isMediaChannel(), L = e => R.getState().setOnboardingExpanded(e);
+    }), I = !P && !N, R = (0, A.AF)(), Z = l.isMediaChannel(), L = e => R.getState().setOnboardingExpanded(e);
     return (en(T, I, w), er({
       isAllDone: T,
       isVisible: I,
       canManageChannel: m,
       guildId: null == o ? void 0 : o.id,
       channel: l
-    }), ee(S, P, x), (0, p.ZP)(() => {
+    }), ee(N, P, x), (0, p.ZP)(() => {
       t && I || L(!0)
     }), null == o) ? null : (0, C.iZ)(l) ? n ? null : (0, r.jsx)(_.q, {}) : I && m ? Z ? t ? null : (0, r.jsx)(v.Z, {
       channel: l
@@ -417,8 +417,8 @@ let X = e => {
                 variant: "heading-md/medium",
                 className: z.header,
                 children: D.intl.format(D.t["9L+8b2"], {
-                  numCompleted: N.completedSteps.toString(),
-                  numSteps: N.steps.length.toString()
+                  numCompleted: S.completedSteps.toString(),
+                  numSteps: S.steps.length.toString()
                 })
               }), (0, r.jsxs)(g.Text, {
                 variant: "text-xs/normal",
@@ -440,7 +440,7 @@ let X = e => {
             className: z.listContainer,
             children: (0, r.jsx)("ol", {
               className: z.checklist,
-              children: N.getSteps().map(e => (0, r.jsxs)(g.P3F, {
+              children: S.getSteps().map(e => (0, r.jsxs)(g.P3F, {
                 tag: "li",
                 "aria-label": e.name,
                 onClick: () => j(e),

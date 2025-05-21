@@ -26,8 +26,8 @@ var r = n(255367),
   y = n(496675),
   O = n(456269),
   w = n(109590),
-  N = n(368844),
-  S = n(73315),
+  S = n(368844),
+  N = n(73315),
   P = n(404616),
   T = n(510060),
   I = n(983200),
@@ -107,7 +107,7 @@ function H(e) {
     gridCoords: g,
     gridSectionBoundaries: f,
     observePostVisibilityAnalytics: x
-  } = e, b = (0, o.e7)([_.Z], () => _.Z.getChannel(n.parent_id)), j = n.id, S = l.useRef(null), I = (0, o.e7)([C.ZP], () => C.ZP.getCurrentSidebarChannelId(n.parent_id) === n.id), {
+  } = e, b = (0, o.e7)([_.Z], () => _.Z.getChannel(n.parent_id)), j = n.id, N = l.useRef(null), I = (0, o.e7)([C.ZP], () => C.ZP.getCurrentSidebarChannelId(n.parent_id) === n.id), {
     firstMessage: z,
     loaded: B
   } = (0, w.cl)(n), {
@@ -130,13 +130,13 @@ function H(e) {
     channel: n
   });
   l.useEffect(() => {
-    null == x || x(S.current, j)
+    null == x || x(N.current, j)
   }, [x, j]);
   let Q = (0, o.e7)([y.Z], () => y.Z.can(A.Plq.MANAGE_MESSAGES, n)),
     $ = v.QK.useSetting(),
     ee = v.cC.useSetting(),
     et = (0, p.Z)(ee, Q),
-    en = (0, N.aU)(z, b, !1),
+    en = (0, S.aU)(z, b, !1),
     [er, el] = (0, T.rI)(h.width - 2 * T.LT),
     ei = (0, O.xw)(n, s.z.CREATION_DATE, M.R6.POSTED_DURATION_AGO),
     ea = (0, P.NN)(n),
@@ -168,7 +168,7 @@ function H(e) {
     }(eo, ["onFocus"]),
     eu = n.isMediaPost();
   return (0, r.jsxs)("li", {
-    ref: S,
+    ref: N,
     onClick: J,
     onFocus: ec,
     onContextMenu: Y,
@@ -179,7 +179,7 @@ function H(e) {
     children: [(0, r.jsx)(d.P3F, D({
       onClick: J,
       focusProps: {
-        ringTarget: S
+        ringTarget: N
       },
       onContextMenu: Y,
       "aria-label": L.intl.formatToPlainString(L.t.pgYN6e, {
@@ -328,7 +328,7 @@ let V = e => e.preventDefault(),
     } = e, {
       containsVideo: u,
       containsGif: m
-    } = l.useMemo(() => (0, N.cp)(t), [t]), p = l.useMemo(() => t.slice(I.$x, I.GV), [t]), b = (0, I.tu)({
+    } = l.useMemo(() => (0, S.cp)(t), [t]), p = l.useMemo(() => t.slice(I.$x, I.GV), [t]), b = (0, I.tu)({
       numAttachments: p.length,
       containerWidth: i,
       containerHeight: s
@@ -372,7 +372,7 @@ let V = e => e.preventDefault(),
           responsive: !0
         })), i && (0, r.jsx)("div", {
           className: F.obscuredTagContainer,
-          children: (0, r.jsx)(S.Z, {
+          children: (0, r.jsx)(N.Z, {
             obscureReason: s,
             iconClassname: F.obscuredTag
           })

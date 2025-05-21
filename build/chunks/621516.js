@@ -26,8 +26,8 @@ var r = n(255367),
   y = n(388032),
   O = n(461238),
   w = n(906739),
-  N = n(965358),
-  S = n(420196),
+  S = n(965358),
+  N = n(420196),
   P = n(433075);
 
 function T(e) {
@@ -245,11 +245,11 @@ let E = e => {
             children: (0, r.jsxs)("div", {
               className: O.contentImageContainer,
               children: [(0, r.jsx)("img", {
-                src: E ? S : P,
+                src: E ? N : P,
                 alt: "",
                 className: a()(O.previewEmbedImage, O.secondaryImage)
               }), (0, r.jsx)("img", {
-                src: E ? w : N,
+                src: E ? w : S,
                 alt: "",
                 className: O.previewEmbedImage
               })]

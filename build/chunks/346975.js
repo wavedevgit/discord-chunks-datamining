@@ -26,8 +26,8 @@ var r = n(255367),
   y = n(898188),
   O = n(41776),
   w = n(256413),
-  N = n(292853),
-  S = n(982168),
+  S = n(292853),
+  N = n(982168),
   P = n(216572),
   T = n(543015),
   I = n(359110),
@@ -126,7 +126,7 @@ function eb(e) {
   } = e;
   return (0, r.jsx)(et.oL, {
     channel: t,
-    children: (0, r.jsx)(eN, {
+    children: (0, r.jsx)(eS, {
       channel: t,
       guild: n,
       sidebarState: l
@@ -195,7 +195,7 @@ function ew(e) {
   return null
 }
 
-function eN(e) {
+function eS(e) {
   let {
     channel: t,
     sidebarState: n
@@ -325,7 +325,7 @@ function eN(e) {
     eb = null != b,
     e_ = l.useRef(null),
     {
-      containerRef: eN,
+      containerRef: eS,
       containerWidth: eI
     } = (0, eo.Z)();
   l.useEffect(() => () => {
@@ -386,7 +386,7 @@ function eN(e) {
   }, "forum-channel-header") : 2 !== e || en ? 1 === e && eb && !$ ? (0, r.jsx)(eP, {
     channel: t,
     coords: n
-  }, "archive-or-search-result") : l() : (0, r.jsx)(eS, {
+  }, "archive-or-search-result") : l() : (0, r.jsx)(eN, {
     channel: t,
     coords: n
   }, "archived-missing-reading-history-perm"), [eb, en, b, $, t, z, R, P, B]), eU = (0, g.e7)([U.Z], () => U.Z.hasHidden(t.id)), eV = {
@@ -436,7 +436,7 @@ function eN(e) {
         className: a()(eg.loadingCard, eg["loadingCard-".concat(e.row % 3)])
       }, "loading-".concat(e.row));
       let t = i[e.section][e.row],
-        n = null != f && (0, S.UD)(f) ? T.ZP : ee.ZP;
+        n = null != f && (0, N.UD)(f) ? T.ZP : ee.ZP;
       return (0, r.jsx)("li", {
         className: eg.card,
         "data-item-role": "item",
@@ -653,7 +653,7 @@ function eN(e) {
     tl = (0, g.e7)([M.ZP], () => M.ZP.getSection(t.id)) === eu.ULH.MEMBERS;
   return (0, r.jsx)("div", {
     className: eg.container,
-    ref: eN,
+    ref: eS,
     "data-member-list-open": tl,
     children: (0, r.jsx)(x.Wdt, {
       children: e => (0, r.jsxs)(r.Fragment, {
@@ -672,7 +672,7 @@ function eN(e) {
           })
         }), H ? (0, r.jsx)("div", {
           className: eg.optInNotice,
-          children: (0, r.jsx)(N.Z, {
+          children: (0, r.jsx)(S.Z, {
             channel: t
           })
         }) : null, es ? (0, r.jsx)(ec.KT, {
@@ -725,7 +725,7 @@ function eN(e) {
   })
 }
 
-function eS(e) {
+function eN(e) {
   let {
     channel: t,
     coords: n
@@ -792,7 +792,7 @@ function eE(e) {
     isSearchLoading: v,
     numResults: O,
     children: w,
-    coords: N,
+    coords: S,
     onHeightChange: T
   } = e, {
     name: I,
@@ -848,9 +848,9 @@ function eE(e) {
     e_ = (0, W.ql)(s),
     ey = l.useRef(null),
     eO = l.useRef(null),
-    [ew, eN] = l.useState(0),
+    [ew, eS] = l.useState(0),
     {
-      width: eS
+      width: eN
     } = (0, g.e7)([B.Z], () => B.Z.windowSize()),
     eP = null == (n = ey.current) || null == (t = n.getBoundingClientRect()) ? void 0 : t.width,
     eT = l.useRef(null),
@@ -873,9 +873,9 @@ function eE(e) {
         if (i - t > a) break;
         n - e > r && (r = n - e)
       }
-      eN(r)
+      eS(r)
     }
-  }, [s.availableTags, eS, eP, U]);
+  }, [s.availableTags, eN, eP, U]);
   let eR = I.length > 0 && !E && (v || null != O),
     eZ = !__OVERLAY__ && !Z && !E && k && (0 === M.textValue.trim().length || M.textValue.trim() === e_) && 0 === eC.length && !ec;
   l.useLayoutEffect(() => {
@@ -926,13 +926,13 @@ function eE(e) {
         null == (t = eB.current) || t.focus()
       }
     }, [eD, eb, eH]),
-    eV = l.useMemo(() => ec ? (0, S.iq)(s.availableTags) : s.availableTags, [s.availableTags, ec]);
+    eV = l.useMemo(() => ec ? (0, N.iq)(s.availableTags) : s.availableTags, [s.availableTags, ec]);
   return (0, r.jsx)("div", ex(ef({
     className: a()(eg.card, eg.headerRow, eg.columnsSpan),
     ref: eb,
     onFocus: eU
   }, ez), {
-    style: ex(ef({}, N), {
+    style: ex(ef({}, S), {
       position: G === h.X.GRID ? "absolute" : "static",
       height: "auto"
     }),

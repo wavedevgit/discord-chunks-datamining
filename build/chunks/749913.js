@@ -26,8 +26,8 @@ var r = n(255367),
   y = n(795639),
   O = n(957730),
   w = n(25015),
-  N = n(252032),
-  S = n(216572),
+  S = n(252032),
+  N = n(216572),
   P = n(913663),
   T = n(268350),
   I = n(456077),
@@ -99,7 +99,7 @@ function es(e) {
     onChange: i,
     canCreatePost: s,
     inputRef: o
-  } = e, d = !(0, S.HL)(t) && s, {
+  } = e, d = !(0, N.HL)(t) && s, {
     textAreaState: u,
     formOpen: m,
     previewing: f
@@ -116,7 +116,7 @@ function es(e) {
     }
   }, c.X), [x, p] = l.useState(null), b = l.useContext(D.oo), j = l.useCallback(() => {
     b.bumpDispatchPriority()
-  }, [b]), v = (0, h.e7)([M.Z], () => M.Z.can(ee.Plq.ATTACH_FILES, t)), C = (0, h.Wu)([L.Z], () => L.Z.getUploads(t.id, Z.d.FirstThreadMessage)), w = m && v && d, N = (null == t ? void 0 : t.isMediaChannel()) === !0, I = function(e, t) {
+  }, [b]), v = (0, h.e7)([M.Z], () => M.Z.can(ee.Plq.ATTACH_FILES, t)), C = (0, h.Wu)([L.Z], () => L.Z.getUploads(t.id, Z.d.FirstThreadMessage)), w = m && v && d, S = (null == t ? void 0 : t.isMediaChannel()) === !0, I = function(e, t) {
     let n = (0, K.AF)(),
       r = (0, G.ql)(e);
     return l.useCallback(() => {
@@ -279,14 +279,14 @@ function es(e) {
               submit: R,
               disabled: !d
             }), f && (0, r.jsx)(eh, {})]
-          }), w && (N ? (0, r.jsx)(y._, {
+          }), w && (S ? (0, r.jsx)(y._, {
             parentChannel: t
           }) : (0, r.jsx)(X.Z, {
             channelId: t.id
           }))]
         }), (0, r.jsxs)("div", {
           className: er.form,
-          children: [w && N && (0, r.jsx)(_.Z, {
+          children: [w && S && (0, r.jsx)(_.Z, {
             parentChannel: t
           }), m && (0, r.jsx)(ef, {
             className: er.horizontalPadding,
@@ -518,7 +518,7 @@ let eu = l.memo(function(e) {
       allowHeading: !0,
       previewLinkTarget: !0,
       allowLinks: !0
-    }), s = (0, N.Z)({
+    }), s = (0, S.Z)({
       message: l,
       channel: t,
       compact: !1
@@ -593,7 +593,7 @@ let eu = l.memo(function(e) {
       event: ee.CkL.TEXTAREA_BLUR,
       handler: y
     });
-    let N = (0, H.Op)(m, {
+    let S = (0, H.Op)(m, {
       content: x.textValue
     });
     return (0, r.jsx)("div", {
@@ -615,7 +615,7 @@ let eu = l.memo(function(e) {
             focused: p,
             className: er.channelTextArea,
             innerClassName: a()(er.channelTextAreaInner, {
-              [er.channelTextAreaInnerError]: null != N
+              [er.channelTextAreaInnerError]: null != S
             }),
             onChange: O,
             onSubmit: w,
@@ -634,7 +634,7 @@ let eu = l.memo(function(e) {
             autoCompletePosition: "bottom"
           })
         }), (0, r.jsx)(g.pdY, {
-          error: N
+          error: S
         })]
       })
     })
@@ -758,7 +758,7 @@ function ex(e) {
     canCreatePost: n,
     disabled: l,
     disableIfInvalid: i = !1
-  } = e, a = (0, S.HL)(t), {
+  } = e, a = (0, N.HL)(t), {
     submitting: s,
     textAreaState: o,
     name: d,

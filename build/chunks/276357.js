@@ -50,11 +50,11 @@ function b(e) {
     wrap: !0,
     scrollToStart: p,
     scrollToEnd: p
-  }), N = l.useRef(null);
+  }), S = l.useRef(null);
   return l.useEffect(() => {
     requestAnimationFrame(() => {
-      if (null != N.current) {
-        let e = N.current.querySelector(".".concat(x.tag));
+      if (null != S.current) {
+        let e = S.current.querySelector(".".concat(x.tag));
         null != e && e.focus()
       }
     })
@@ -125,7 +125,7 @@ function b(e) {
             return e
           }({
             ref: e => {
-              l.current = e, N.current = e
+              l.current = e, S.current = e
             }
           }, i), n = n = {
             className: x.tagContainer,
