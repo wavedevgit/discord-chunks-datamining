@@ -54,40 +54,49 @@ function g(e) {
   return {
     backgroundGradientPresetId: null != e.backgroundGradientPresetId ? i.yC.create({
       value: e.backgroundGradientPresetId
-    }) : void 0
+    }) : void 0,
+    customUserThemeSettings: null != e.customUserThemeSettings ? {
+      colors: e.customUserThemeSettings.colors,
+      gradientColorStops: e.customUserThemeSettings.gradientColorStops,
+      gradientAngle: e.customUserThemeSettings.gradientAngle,
+      baseMix: e.customUserThemeSettings.baseMix
+    } : void 0
   }
 }
 
 function E(e) {
   let {
     backgroundGradientPresetId: t,
-    theme: n,
-    useSystemTheme: r
-  } = e, i = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : f.fy.INFREQUENT_USER_ACTION, s = "system" === n ? p.KW.ON : p.KW.OFF, u = null != r ? r : s;
+    customUserThemeSettings: n,
+    theme: r,
+    useSystemTheme: i
+  } = e, s = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : f.fy.INFREQUENT_USER_ACTION, u = "system" === r ? p.KW.ON : p.KW.OFF, d = null != i ? i : u;
   if (a.Z.dispatch({
       type: "UNSYNCED_USER_SETTINGS_UPDATE",
       settings: {
-        useSystemTheme: u
+        useSystemTheme: d
       }
-    }), null == t && "system" !== n && (0, o.wj)(n) && (0, c.Ag)({
-      [p.zd.DARK]: n
+    }), null == t && "system" !== r && (0, o.wj)(r) && (0, c.Ag)({
+      [p.zd.DARK]: r
     }), a.Z.dispatch({
       type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE",
       changes: {
         appearance: {
           settings: {
             clientThemeSettings: {
-              backgroundGradientPresetId: t
+              backgroundGradientPresetId: t,
+              customUserThemeSettings: n
             },
-            theme: "system" === n ? void 0 : n
+            theme: "system" === r ? void 0 : r
           }
         }
       }
     }), l.Z.shouldSync("appearance")) return f.hW.updateAsync("appearance", e => {
-    e.theme = m(n), e.clientThemeSettings = g({
-      backgroundGradientPresetId: t
+    e.theme = m(r), e.clientThemeSettings = g({
+      backgroundGradientPresetId: t,
+      customUserThemeSettings: n
     })
-  }, i)
+  }, s)
 }
 let b = {
   overrideLocale(e) {

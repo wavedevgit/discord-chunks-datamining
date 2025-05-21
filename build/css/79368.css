@@ -1,6 +1,6 @@
 /**
   Module ID: 79368
-  Original File Name: 7c6b21ef9fa38552
+  Original File Name: 84b1975110762ac0
 **/
 .menu__43313 {
     max-height: 70vh
@@ -936,11 +936,11 @@
 }
 
 .expressiveRive__2723e {
-    height: calc(100% + var(--__glow-size)*2);
-    left: calc(var(--__glow-size)*-1);
+    height: calc(100% + var(--__glow-amount)*2);
+    left: calc(var(--__glow-amount)*-1);
     position: absolute;
-    top: calc(var(--__glow-size)*-1);
-    width: calc(100% + var(--__glow-size)*2)
+    top: calc(var(--__glow-amount)*-1);
+    width: calc(100% + var(--__glow-amount)*2)
 }
 
 .expressive__2723e .expressiveBackground__2723e {
@@ -952,7 +952,19 @@
 }
 
 .expressive__2723e .expressiveFill__2723e {
-    --__glow-size: 0px
+    --__glow-amount: 0px;
+    background-color: var(--button-expressive-background);
+    border-radius: 8px;
+    transition: background-color .15s ease,width .15s ease,height .15s ease,top .15s ease,left .15s ease
+}
+
+.expressive__2723e:hover .expressiveFill__2723e {
+    background-color: var(--button-expressive-background-hover)
+}
+
+.expressive__2723e:active .expressiveFill__2723e {
+    --__glow-amount: -1px;
+    background-color: var(--button-expressive-background-active)
 }
 
 .expressive__2723e .expressiveHover__2723e {
@@ -962,7 +974,7 @@
 }
 
 .expressiveWrapper__2723e {
-    --__glow-size: 8px;
+    --__glow-amount: 8px;
     display: flex;
     position: relative;
     width: -webkit-min-content;
@@ -2466,4 +2478,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     color: CanvasText
 }
 
-/*# sourceMappingURL=7c6b21ef9fa38552.css.map*/
+/*# sourceMappingURL=84b1975110762ac0.css.map*/

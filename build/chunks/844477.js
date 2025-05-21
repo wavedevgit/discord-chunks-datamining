@@ -169,12 +169,8 @@ function b(e) {
       className: o()(m.expressiveRive, m.expressiveHover),
       fit: "layout",
       artboard: a ? "HoverLightmode" : "HoverDarkmode"
-    }), (0, r.jsx)(c.QD, {
-      className: o()(m.expressiveRive, m.expressiveFill),
-      eventTargetRef: n,
-      fit: "layout",
-      artboard: a ? "ButtonFillLightmode" : "ButtonFillDarkmode",
-      withReducedMotion: "play"
+    }), (0, r.jsx)("div", {
+      className: o()(m.expressiveRive, m.expressiveFill)
     })]
   })
 }

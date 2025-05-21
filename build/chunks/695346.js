@@ -399,12 +399,24 @@ let eI = (0, d.KM)((0, d.Zc)("appearance", "developerMode", e => null != e && e,
   eS = (0, d.Zc)("appearance", "clientThemeSettings", e => {
     var t;
     return {
-      backgroundGradientPresetId: null == e || null == (t = e.backgroundGradientPresetId) ? void 0 : t.value
+      backgroundGradientPresetId: null == e || null == (t = e.backgroundGradientPresetId) ? void 0 : t.value,
+      customUserThemeSettings: (null == e ? void 0 : e.customUserThemeSettings) != null ? {
+        colors: e.customUserThemeSettings.colors,
+        gradientColorStops: e.customUserThemeSettings.gradientColorStops,
+        gradientAngle: e.customUserThemeSettings.gradientAngle,
+        baseMix: e.customUserThemeSettings.baseMix
+      } : void 0
     }
   }, e => ({
     backgroundGradientPresetId: null != e.backgroundGradientPresetId ? a.yC.create({
       value: e.backgroundGradientPresetId
-    }) : void 0
+    }) : void 0,
+    customUserThemeSettings: null != e.customUserThemeSettings ? {
+      colors: e.customUserThemeSettings.colors,
+      gradientColorStops: e.customUserThemeSettings.gradientColorStops,
+      gradientAngle: e.customUserThemeSettings.gradientAngle,
+      baseMix: e.customUserThemeSettings.baseMix
+    } : void 0
   })),
   eT = (0, d.R2)((0, d.KM)((0, d.Zc)("textAndImages", "gifAutoPlay", e => {
     var t;

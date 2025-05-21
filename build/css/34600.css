@@ -1,6 +1,6 @@
 /**
   Module ID: 34600
-  Original File Name: a024bf623864af7e
+  Original File Name: 2968167f68fb9a72
 **/
 :root {
     --application-subscription-end: hotpink;
@@ -3386,6 +3386,9 @@
     --button-danger-background-disabled: #d9383d;
     --button-danger-background-hover: #a12929;
     --button-danger-border: hsla(0,0%,100%,0);
+    --button-expressive-background: #fff;
+    --button-expressive-background-active: #f0f0f0;
+    --button-expressive-background-hover: #fff;
     --button-filled-brand-background: #5966f2;
     --button-filled-brand-background-active: #3d45a6;
     --button-filled-brand-background-hover: #4752c4;
@@ -3752,6 +3755,9 @@
     --button-danger-background-disabled: #d9383d;
     --button-danger-background-hover: #a12929;
     --button-danger-border: hsla(0,0%,100%,0);
+    --button-expressive-background: #5966f2;
+    --button-expressive-background-active: #3d45a6;
+    --button-expressive-background-hover: #4752c4;
     --button-filled-brand-background: #5966f2;
     --button-filled-brand-background-active: #3d45a6;
     --button-filled-brand-background-hover: #4752c4;
@@ -4118,6 +4124,9 @@
     --button-danger-background-disabled: #d9383d;
     --button-danger-background-hover: #a12929;
     --button-danger-border: hsla(0,0%,100%,0);
+    --button-expressive-background: #fff;
+    --button-expressive-background-active: #f0f0f0;
+    --button-expressive-background-hover: #fff;
     --button-filled-brand-background: #5966f2;
     --button-filled-brand-background-active: #3d45a6;
     --button-filled-brand-background-hover: #4752c4;
@@ -4484,6 +4493,9 @@
     --button-danger-background-disabled: #d9383d;
     --button-danger-background-hover: #a12929;
     --button-danger-border: hsla(0,0%,100%,0);
+    --button-expressive-background: #fff;
+    --button-expressive-background-active: #f0f0f0;
+    --button-expressive-background-hover: #fff;
     --button-filled-brand-background: #5966f2;
     --button-filled-brand-background-active: #3d45a6;
     --button-filled-brand-background-hover: #4752c4;
@@ -4777,4 +4789,4 @@
     --white: #fff
 }
 
-/*# sourceMappingURL=a024bf623864af7e.css.map*/
+/*# sourceMappingURL=2968167f68fb9a72.css.map*/
