@@ -266,7 +266,7 @@ class w extends i.PureComponent {
         label: s = null,
         ariaLabel: l,
         onClick: c,
-        color: u,
+        variant: u,
         icon: p,
         className: f,
         newIndicator: g,
@@ -296,7 +296,7 @@ class w extends i.PureComponent {
         children: [s, O]
       });
       return (0, r.jsx)(a.njP.Item, {
-        color: u,
+        variant: u,
         id: i,
         onClick: c,
         className: f,

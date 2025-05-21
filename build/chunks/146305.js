@@ -361,7 +361,7 @@ let eO = {
           }, label: eb.intl.string(eb.t.l3hWPz), ariaLabel: eb.intl.string(eb.t.l3hWPz), icon: (0, r.jsx)(s.XHJ, {
             size: "xs",
             color: "currentColor"
-          }), predicate: () => t.isOwnerWithRequiredMfaLevel
+          }), variant: "destructive", predicate: () => t.isOwnerWithRequiredMfaLevel
         };
       case ef.pNK.LANDING:
       case ef.pNK.MEMBER_EDIT:

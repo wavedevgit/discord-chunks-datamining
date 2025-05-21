@@ -167,6 +167,7 @@ class M extends l.PureComponent {
             size: "xs",
             color: "currentColor"
           }),
+          variant: "destructive",
           predicate: () => a && !t.isModeratorReportChannel()
         }]
       }({
