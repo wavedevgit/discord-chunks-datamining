@@ -77,30 +77,30 @@ function p(e) {
     description: A,
     formattedPrice: s,
     role: p,
-    ctaComponent: m,
-    shouldShowFullDescriptionButton: h = !0,
+    ctaComponent: h,
+    shouldShowFullDescriptionButton: m = !0,
     onShowFullDescription: b,
     productType: v,
     onTapCard: C,
-    actionMenu: q,
-    showOpaqueBackground: x = !1,
+    actionMenu: x,
+    showOpaqueBackground: q = !1,
     hideRoleTag: j = !1,
     lineClamp: O = 1,
     cardWidth: U = 332,
     cardHeight: P,
-    thumbnailHeight: V = 187,
-    descriptionTextVariant: N = "text-sm/normal",
-    isDraft: y = !1
+    thumbnailHeight: y = 187,
+    descriptionTextVariant: V = "text-sm/normal",
+    isDraft: N = !1
   } = e, I = (0, o.hQ)(), T = (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)(g, {
-      showDraftBadge: y,
+      showDraftBadge: N,
       hidePurchaseToUnlockBadge: !0,
       children: (0, n.jsx)("img", {
         alt: "",
         src: t,
         className: u.productThumbnail,
         style: {
-          height: V
+          height: y
         }
       })
     }), (0, n.jsxs)("div", {
@@ -115,14 +115,14 @@ function p(e) {
           children: r
         }), (0, n.jsx)(l.Rny, {
           children: (0, n.jsx)(i.Z, {
-            variant: N,
+            variant: V,
             color: "text-muted",
             lineClamp: O,
             text: A
           })
-        }), h && (0, n.jsx)(f, {
+        }), m && (0, n.jsx)(f, {
           onShowFullDescription: b,
-          variant: N
+          variant: V
         }), j || null == p || "" === p.name ? null : (0, n.jsxs)(n.Fragment, {
           children: [(0, n.jsx)(l.LZC, {
             size: 16
@@ -130,7 +130,7 @@ function p(e) {
             role: p
           })]
         })]
-      }), q]
+      }), x]
     }), (0, n.jsxs)("div", {
       className: u.purchaseDetails,
       children: [(0, n.jsx)(l.Text, {
@@ -148,12 +148,12 @@ function p(e) {
         onClick: e => {
           e.stopPropagation()
         },
-        children: m
+        children: h
       })]
     })]
   });
   return null == C ? (0, n.jsx)("article", {
-    className: a()(u.productCard, x ? u.opaqueBackground : u.solidBackground),
+    className: a()(u.productCard, q ? u.opaqueBackground : u.solidBackground),
     "aria-labelledby": I,
     children: T
   }) : (0, n.jsx)("div", {
@@ -166,7 +166,7 @@ function p(e) {
       "aria-label": d.intl.formatToPlainString(d.t["e+TmJS"], {
         productName: r
       }),
-      className: a()(u.productCard, x ? u.opaqueBackground : u.solidBackground, u.cardClickableContainer),
+      className: a()(u.productCard, q ? u.opaqueBackground : u.solidBackground, u.cardClickableContainer),
       onClick: C,
       children: T
     })

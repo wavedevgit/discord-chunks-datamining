@@ -92,7 +92,7 @@ let u = (e, t, n) => c({
       }, {
         w: s.Pu,
         h: s.Pu
-      }, 8)), n === i.vP.Failure && e.drawPath(r.Cv, {
+      }, 8)), n === i.vP.Failure && e.drawPath(r.C, {
         x: s.sB,
         y: s.sB
       }, !0, 2 + 2 / 3), e.drawRoundedImage("AvatarImage", {

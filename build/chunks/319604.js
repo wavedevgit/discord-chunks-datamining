@@ -131,7 +131,7 @@ function b(e) {
     h: c.Pu
   }, 8, {
     fillMode: o.JU.Contain
-  }) === o.vP.Failure && e.drawPath(i.Cv, {
+  }) === o.vP.Failure && e.drawPath(i.C, {
     x: c.sB,
     y: c.sB
   }, !0, 2 + 2 / 3)

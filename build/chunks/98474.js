@@ -1,13 +1,13 @@
-/** Chunk was on 22173 **/
+/** Chunk was on 18895 **/
 n.d(t, {
-  Z: () => O
+  Z: () => v
 }), n(388685);
 var i = n(255367),
   r = n(73800),
   o = n(505266),
-  a = n(366594),
-  s = n(748780),
-  l = n(481060),
+  l = n(366594),
+  a = n(748780),
+  s = n(481060),
   c = n(596454),
   u = n(745510),
   d = n(314910),
@@ -48,33 +48,33 @@ function j(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = [];
+let O = [];
 
-function O(e) {
+function v(e) {
   let {
     messageId: t,
     emoji: n,
-    startPosition: O,
+    startPosition: v,
     targetPosition: y
-  } = e, [x, T] = r.useState(0), [S, _] = r.useState(0), [C, P] = r.useState(null), {
-    confettiCanvas: R
-  } = r.useContext(u.h), E = (0, o.uR)(R, C), I = r.useMemo(() => [{
+  } = e, [T, x] = r.useState(0), [S, _] = r.useState(0), [P, E] = r.useState(null), {
+    confettiCanvas: C
+  } = r.useContext(u.h), R = (0, o.uR)(C, P), I = r.useMemo(() => [{
     src: null == n.id ? m.ZP.getURL(n.name) : p.ZP.getEmojiURL({
       id: n.id,
       animated: !1,
       size: 22
     }),
     colorize: !1
-  }], [n.name, n.id]), N = y.x - y.width / 2 * .5, w = y.y - y.height / 2 * .5, Z = (0, l.q_F)({
+  }], [n.name, n.id]), w = y.x - y.width / 2 * .5, N = y.y - y.height / 2 * .5, Z = (0, s.q_F)({
     from: {
-      y: O.y
+      y: v.y
     },
     to: {
-      y: w
+      y: N
     },
     config: {
       duration: 450,
-      easing: s.Z.Easing.in(s.Z.Easing.exp)
+      easing: a.Z.Easing.in(a.Z.Easing.exp)
     },
     onChange: e => {
       let {
@@ -82,20 +82,20 @@ function O(e) {
       } = e;
       _(t)
     }
-  }), A = (0, l.q_F)({
+  }), A = (0, s.q_F)({
     from: {
-      x: O.x,
+      x: v.x,
       scale: 1,
       opacity: 1
     },
     to: {
-      x: N,
+      x: w,
       scale: .5,
       opacity: .4
     },
     config: {
       duration: 450,
-      easing: s.Z.Easing.in(s.Z.Easing.ease)
+      easing: a.Z.Easing.in(a.Z.Easing.ease)
     },
     onRest: () => {
       (0, h.G)(t, n.name, n.id)
@@ -104,31 +104,31 @@ function O(e) {
       let {
         x: t
       } = e;
-      T(t)
+      x(t)
     }
   });
   return r.useEffect(() => {
-    x > 0 && S > 0 && E.createConfetti(j(b({}, f.We), {
+    T > 0 && S > 0 && R.createConfetti(j(b({}, f.We), {
       position: {
         type: "static",
         value: {
-          x: x,
+          x: T,
           y: S
         }
       }
     }))
-  }, [E, x, S]), (0, i.jsxs)(i.Fragment, {
+  }, [R, T, S]), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(o.Ji, {
-      ref: P,
+      ref: E,
       sprites: I,
-      colors: v,
+      colors: O,
       spriteWidth: f.Ko,
       spriteHeight: f.Ko
     }), (0, i.jsx)(d.ZP, {
-      children: (0, i.jsx)(a.animated.div, {
+      children: (0, i.jsx)(l.animated.div, {
         style: b({}, Z),
         className: g.emojiContainer,
-        children: (0, i.jsx)(a.animated.div, {
+        children: (0, i.jsx)(l.animated.div, {
           style: j(b({}, A), {
             opacity: A.opacity
           }),

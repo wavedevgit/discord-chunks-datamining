@@ -1,20 +1,20 @@
-/** Chunk was on 27632 **/
+/** Chunk was on 44247 **/
 n.d(t, {
-  E: () => I,
-  Z: () => T
+  E: () => O,
+  Z: () => p
 }), n(388685), n(642613);
 var r = n(255367),
   i = n(73800),
   l = n(442837),
   o = n(481060),
   a = n(239091),
-  s = n(585237),
-  c = n(812206),
+  c = n(585237),
+  s = n(812206),
   u = n(55563),
-  E = n(73346),
-  d = n(388032);
+  d = n(73346),
+  _ = n(388032);
 
-function _(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,13 +22,13 @@ function _(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let I = {
-  DropdownSizes: s.Z.DropdownSizes,
-  Sizes: s.Z.Sizes,
-  Colors: s.Z.Colors,
-  Looks: s.Z.Looks
+let O = {
+  DropdownSizes: c.Z.DropdownSizes,
+  Sizes: c.Z.Sizes,
+  Colors: c.Z.Colors,
+  Looks: c.Z.Looks
 };
-class O extends i.PureComponent {
+class I extends i.PureComponent {
   render() {
     var e, t;
     let n = this.props,
@@ -37,7 +37,7 @@ class O extends i.PureComponent {
         children: l,
         applicationId: o,
         primarySKU: a,
-        onSKUSelect: c
+        onSKUSelect: s
       } = n,
       u = function(e, t) {
         if (null == e) return {};
@@ -54,14 +54,14 @@ class O extends i.PureComponent {
         }
         return i
       }(n, ["skus", "children", "applicationId", "primarySKU", "onSKUSelect"]);
-    return (0, r.jsx)(s.Z, (e = function(e) {
+    return (0, r.jsx)(c.Z, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          _(e, t, n[t])
+          E(e, t, n[t])
         })
       }
       return e
@@ -83,7 +83,7 @@ class O extends i.PureComponent {
     }), e))
   }
   constructor(...e) {
-    super(...e), _(this, "renderContextMenu", () => {
+    super(...e), E(this, "renderContextMenu", () => {
       let {
         skus: e,
         onSKUSelect: t,
@@ -92,7 +92,7 @@ class O extends i.PureComponent {
       return (0, r.jsx)(o.v2r, {
         onSelect: n,
         navId: "test-skus",
-        "aria-label": d.intl.string(d.t.ogxXGh),
+        "aria-label": _.intl.string(_.t.ogxXGh),
         onClose: a.Zy,
         children: e.map(e => (0, r.jsx)(o.sNh, {
           id: "".concat(e.id),
@@ -102,9 +102,9 @@ class O extends i.PureComponent {
           }
         }, "".concat(e.id)))
       })
-    }), _(this, "handleContextMenu", e => {
+    }), E(this, "handleContextMenu", e => {
       e.stopPropagation(), a.vq(e, this.renderContextMenu)
-    }), _(this, "handleClick", () => {
+    }), E(this, "handleClick", () => {
       let {
         onSKUSelect: e,
         primarySKU: t
@@ -113,13 +113,13 @@ class O extends i.PureComponent {
     })
   }
 }
-let T = l.ZP.connectStores([u.Z, c.Z], e => {
+let p = l.ZP.connectStores([u.Z, s.Z], e => {
   var t;
   let {
     applicationId: n
-  } = e, r = (0, E.uF)(n, c.Z, u.Z);
+  } = e, r = (0, d.uF)(n, s.Z, u.Z);
   return {
     skus: (null != (t = u.Z.getForApplication(n)) ? t : []).sort((e, t) => null != r && e.id === r.id ? -1 : null != r && t.id === r.id ? 1 : e.name >= t.name ? -1 : 1),
     primarySKU: r
   }
-})(O)
+})(I)

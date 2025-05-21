@@ -1,13 +1,13 @@
-/** Chunk was on 22173 **/
+/** Chunk was on 18895 **/
 n.d(t, {
   Z: () => g,
   s: () => f
 }), n(388685);
 var i, r = n(255367),
   o = n(73800),
-  a = n(442837),
-  s = n(481060),
-  l = n(749210),
+  l = n(442837),
+  a = n(481060),
+  s = n(749210),
   c = n(313201),
   u = n(823379),
   d = n(41776),
@@ -21,12 +21,12 @@ let g = e => {
     guild: i,
     closePopout: f,
     ctaRef: g
-  } = e, b = (0, c.Dt)(), [j, v] = o.useState(!1), O = (0, a.e7)([d.Z], () => d.Z.isLurking(i.id), [i.id]);
+  } = e, b = (0, c.Dt)(), [j, O] = o.useState(!1), v = (0, l.e7)([d.Z], () => d.Z.isLurking(i.id), [i.id]);
   o.useEffect(() => {
-    j && !O && f()
-  }, [j, O, f]);
+    j && !v && f()
+  }, [j, v, f]);
   let y = null,
-    x = p.intl.string(p.t.d7b1p6);
+    T = p.intl.string(p.t.d7b1p6);
   switch (t) {
     case 0:
       y = p.intl.string(p.t.Xiwf1d);
@@ -38,17 +38,17 @@ let g = e => {
       return (0, u.vE)(t)
   }
   if (null == y) return null;
-  let T = async () => {
-    v(!0);
+  let x = async () => {
+    O(!0);
     try {
-      await l.Z.joinGuild(i.id, {
+      await s.Z.joinGuild(i.id, {
         source: h.vtS.CHAT_INPUT_BLOCKER
       }), f()
     } catch (e) {
-      v(!1)
+      O(!1)
     }
   };
-  return (0, r.jsxs)(s.VqE, {
+  return (0, r.jsxs)(a.VqE, {
     className: m.container,
     "aria-labelledby": b,
     children: [(0, r.jsx)("img", {
@@ -57,24 +57,24 @@ let g = e => {
       src: n(64395)
     }), (0, r.jsxs)("div", {
       className: m.content,
-      children: [(0, r.jsx)(s.X6q, {
+      children: [(0, r.jsx)(a.X6q, {
         variant: "heading-md/semibold",
         id: b,
         children: y
-      }), (0, r.jsx)(s.Text, {
+      }), (0, r.jsx)(a.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: x
+        children: T
       }), (0, r.jsxs)("div", {
         className: m.buttonContainer,
-        children: [(0, r.jsx)(s.zxk, {
+        children: [(0, r.jsx)(a.zxk, {
           buttonRef: g,
-          onClick: T,
+          onClick: x,
           submitting: j,
           children: p.intl.string(p.t["9VLmlZ"])
-        }), (0, r.jsx)(s.zxk, {
+        }), (0, r.jsx)(a.zxk, {
           onClick: f,
-          look: s.zxk.Looks.BLANK,
+          look: a.zxk.Looks.BLANK,
           className: m.cancel,
           children: p.intl.string(p.t["2m+Sqq"])
         })]

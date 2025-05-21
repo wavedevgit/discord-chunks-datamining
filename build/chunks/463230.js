@@ -1,6 +1,6 @@
-/** Chunk was on 27632 **/
+/** Chunk was on 44247 **/
 n.d(t, {
-  Z: () => _
+  Z: () => E
 });
 var r = n(255367);
 n(73800);
@@ -8,36 +8,36 @@ var i = n(481060),
   l = n(230711),
   o = n(985754),
   a = n(91802),
-  s = n(222727),
-  c = n(981631),
+  c = n(222727),
+  s = n(981631),
   u = n(921944),
-  E = n(388032),
-  d = n(131715);
-let _ = 12633 == n.j ? e => {
+  d = n(388032),
+  _ = n(131715);
+let E = e => {
   let {
     notice: t,
     noticeType: n,
-    dismissCurrentNotice: _
-  } = e, I = (null == t ? void 0 : t.metadata.premiumSubscription) != null, O = (0, a.n)();
-  if ((0, s.U)(c.jXE.NOTIFICATION_BAR, null == O ? void 0 : O.countryCode), null == O) return null;
-  let T = O.countryCode,
-    N = O.currency,
-    S = O.paymentSourceTypes.length > 0;
+    dismissCurrentNotice: E
+  } = e, O = (null == t ? void 0 : t.metadata.premiumSubscription) != null, I = (0, a.n)();
+  if ((0, c.U)(s.jXE.NOTIFICATION_BAR, null == I ? void 0 : I.countryCode), null == I) return null;
+  let p = I.countryCode,
+    T = I.currency,
+    S = I.paymentSourceTypes.length > 0;
   return (0, r.jsxs)(i.qXd, {
-    color: I ? i.DM8.BRAND : i.DM8.PREMIUM_TIER_2,
+    color: O ? i.DM8.BRAND : i.DM8.PREMIUM_TIER_2,
     children: [(0, r.jsx)(i.RyX, {
-      onClick: () => _(u.L.UNKNOWN),
+      onClick: () => E(u.L.UNKNOWN),
       noticeType: n
-    }), !I && (0, r.jsx)(i.SrA, {
+    }), !O && (0, r.jsx)(i.SrA, {
       size: "md",
       color: "currentColor",
-      className: d.premiumIcon
-    }), (0, o.Gv)(T, N, S, I), (0, r.jsx)(i.NoS, {
+      className: _.premiumIcon
+    }), (0, o.Gv)(p, T, S, O), (0, r.jsx)(i.NoS, {
       onClick: () => {
-        _(u.L.UNKNOWN), l.Z.open(c.oAB.PREMIUM)
+        E(u.L.UNKNOWN), l.Z.open(s.oAB.PREMIUM)
       },
       noticeType: n,
-      children: E.intl.string(E.t.hvVgAQ)
+      children: d.intl.string(d.t.hvVgAQ)
     })]
   })
-} : null
+}

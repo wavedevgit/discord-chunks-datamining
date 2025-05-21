@@ -1,6 +1,6 @@
 /** Chunk was on 73628 **/
 r.d(t, {
-  Z: () => m
+  Z: () => h
 });
 var n = r(255367),
   A = r(73800),
@@ -46,14 +46,14 @@ function f(e, t) {
 }
 let p = (0, s.hQ)();
 
-function m(e) {
+function h(e) {
   let {
     newRoleParams: t,
     setNewRoleParams: r
   } = e, a = A.useRef(null), {
     name: s,
-    color: m
-  } = t, h = e => r(t => (l()(null != t, "newRoleParams should be defined"), f(g({}, t), {
+    color: h
+  } = t, m = e => r(t => (l()(null != t, "newRoleParams should be defined"), f(g({}, t), {
     color: e
   })));
   return (0, n.jsxs)("div", {
@@ -72,12 +72,12 @@ function m(e) {
       className: u.roleColorContainer,
       children: [(0, n.jsx)(i.nn4, {
         children: d.intl.format(d.t["Vlq/pK"], {
-          color: (0, o.Rf)(m)
+          color: (0, o.Rf)(h)
         })
       }), (0, n.jsx)("div", {
         className: u.roleColorPreview,
         style: {
-          backgroundColor: (0, o.Rf)(m)
+          backgroundColor: (0, o.Rf)(h)
         }
       }), (0, n.jsx)(i.LZC, {
         size: 8,
@@ -85,8 +85,8 @@ function m(e) {
       }), (0, n.jsx)(i.yRy, {
         targetElementRef: a,
         renderPopout: e => (0, n.jsx)(i.Z$W, f(g({}, e), {
-          value: m,
-          onChange: h
+          value: h,
+          onChange: m
         })),
         children: e => (0, n.jsx)(i.P3F, f(g({}, e), {
           innerRef: a,
