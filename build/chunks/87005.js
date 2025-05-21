@@ -1,6 +1,6 @@
-/** Chunk was on 79368 **/
+/** Chunk was on 87040 **/
 n.d(t, {
-  f: () => v
+  f: () => h
 }), n(388685), n(539854);
 var r = n(73800),
   i = n(243814),
@@ -24,14 +24,14 @@ let p = {
     includeFrecency: !0
   };
 
-function v(e) {
+function h(e) {
   let {
     context: t,
     onlyActivityApps: n,
     allowCommandFetch: l,
-    includeAuthorizedAppsAndFetch: v
+    includeAuthorizedAppsAndFetch: h
   } = e, {
-    sectionDescriptors: h,
+    sectionDescriptors: v,
     loading: b
   } = s.wi({
     context: t,
@@ -55,19 +55,19 @@ function v(e) {
           var e, t;
           return s && null != (t = null == (e = u.Z.getApps()) ? void 0 : e.filter(e => e.scopes.includes(i.x.APPLICATIONS_COMMANDS))) ? t : []
         }),
-        v = t.filter(e => e.id !== f.bi.FRECENCY && e.id !== f.bi.BUILT_IN),
-        h = "contextless" === n.type,
+        h = t.filter(e => e.id !== f.bi.FRECENCY && e.id !== f.bi.BUILT_IN),
+        v = "contextless" === n.type,
         b = r.useMemo(() => {
           let e = [];
-          return h && e.push(m.jT), e
-        }, [h]),
-        y = (0, d.h)(v, g);
+          return v && e.push(m.jT), e
+        }, [v]),
+        y = (0, d.h)(h, g);
       return r.useMemo(() => l ? y.filter(e => null != e.application && (0, _.ye)(e.application) && null != (0, c.Xu)(n, e.id)).filter(e => !b.includes(e.id)) : y.filter(e => !b.includes(e.id)), [l, y, n, b])
     }({
-      sectionDescriptors: h,
+      sectionDescriptors: v,
       context: t,
       onlyActivityApps: n,
-      includeAuthorizedAppsAndFetch: v
+      includeAuthorizedAppsAndFetch: h
     })
   }
 }

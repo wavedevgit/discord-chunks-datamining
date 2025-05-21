@@ -1,4 +1,4 @@
-/** Chunk was on 79368 **/
+/** Chunk was on 87040 **/
 n.d(t, {
   Z: () => s
 });
@@ -21,8 +21,8 @@ function s(e) {
     analyticsLocations: f,
     analyticsSubscriptionType: p,
     renderHeader: g,
-    renderPurchaseConfirmation: v,
-    planGroup: h,
+    renderPurchaseConfirmation: h,
+    planGroup: v,
     reviewWarningMessage: b,
     skuId: y
   } = e;
@@ -35,8 +35,8 @@ function s(e) {
       STEPS: l
     } = await Promise.all([n.e("17938"), n.e("54433"), n.e("11629")]).then(n.bind(n, 7305));
     return n => {
-      var x, j, {
-          onClose: C
+      var j, C, {
+          onClose: x
         } = n,
         I = function(e, t) {
           if (null == e) return {};
@@ -59,7 +59,7 @@ function s(e) {
         skuIDs: [y],
         children: (0, r.jsx)(o.c1, {
           children: (0, r.jsx)(a.KB, {
-            children: (0, r.jsx)(i, (x = function(e) {
+            children: (0, r.jsx)(i, (j = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                   r = Object.keys(n);
@@ -76,10 +76,10 @@ function s(e) {
                 })
               }
               return e
-            }({}, I), j = j = {
+            }({}, I), C = C = {
               initialPlanId: t,
               onClose: e => {
-                C(), null == u || u(e)
+                x(), null == u || u(e)
               },
               analyticsLocations: f,
               analyticsObject: _,
@@ -87,21 +87,21 @@ function s(e) {
               analyticsSubscriptionType: p,
               skuId: y,
               renderHeader: g,
-              renderPurchaseConfirmation: v,
-              planGroup: h,
+              renderPurchaseConfirmation: h,
+              planGroup: v,
               trialId: c,
               trialFooterMessageOverride: d,
               reviewWarningMessage: b
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(x, Object.getOwnPropertyDescriptors(j)) : (function(e, t) {
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(j, Object.getOwnPropertyDescriptors(C)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
                 var r = Object.getOwnPropertySymbols(e);
                 n.push.apply(n, r)
               }
               return n
-            })(Object(j)).forEach(function(e) {
-              Object.defineProperty(x, e, Object.getOwnPropertyDescriptor(j, e))
-            }), x))
+            })(Object(C)).forEach(function(e) {
+              Object.defineProperty(j, e, Object.getOwnPropertyDescriptor(C, e))
+            }), j))
           })
         })
       })

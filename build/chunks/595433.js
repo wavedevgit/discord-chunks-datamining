@@ -1,15 +1,15 @@
 /** Chunk was on 49131 **/
 "use strict";
 n.d(t, {
-  H: () => l
+  H: () => i
 }), n(388685);
 var r = n(73800),
-  i = n(481060);
+  l = n(481060);
 
-function l() {
+function i() {
   let [e, t] = r.useState(!0);
   return {
-    transitions: (0, i.Yzy)(e, {
+    transitions: (0, l.Yzy)(e, {
       keys: e => e ? "shown" : "hidden",
       config: a,
       from: {

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367);
 n(73800);
-var i = n(120356),
-  l = n.n(i),
+var l = n(120356),
+  i = n.n(l),
   a = n(481060),
   s = n(228392),
   o = n(404616),
@@ -28,7 +28,7 @@ function x(e) {
         readGuideCta: !0
       })
     },
-    className: l()(g.container, h.container, m.mainCard),
+    className: i()(g.container, h.container, m.mainCard),
     children: [(0, r.jsxs)("div", {
       className: h.inline,
       children: [(0, r.jsxs)("div", {
@@ -73,7 +73,7 @@ function x(e) {
       className: h.inline,
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsx)(a.X6q, {
-          className: l()(g.__invalid_channelName, h.title),
+          className: i()(g.__invalid_channelName, h.title),
           variant: "heading-lg/semibold",
           color: "header-primary",
           children: u.intl.string(u.t.JtSpDw)

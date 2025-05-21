@@ -1,22 +1,22 @@
 /** Chunk was on 49131 **/
 "use strict";
 n.d(t, {
-  Z: () => l
+  Z: () => i
 });
 var r = n(73800),
-  i = n(924826);
+  l = n(924826);
 
-function l(e) {
+function i(e) {
   let {
     listRef: t,
     padding: n,
-    channel: l,
+    channel: i,
     isEnabled: a
   } = e, s = r.useCallback(e => {
     let r = t.current,
-      i = document.querySelector(e);
-    null != i && (null == r || r.scrollIntoViewNode({
-      node: i,
+      l = document.querySelector(e);
+    null != l && (null == r || r.scrollIntoViewNode({
+      node: l,
       padding: n,
       callback: () => {
         var t;
@@ -36,8 +36,8 @@ function l(e) {
       callback: () => requestAnimationFrame(e)
     })
   }), [t]);
-  return (0, i.ZP)({
-    id: "forum-channel-list-".concat(l.id),
+  return (0, l.ZP)({
+    id: "forum-channel-list-".concat(i.id),
     isEnabled: a,
     scrollToStart: o,
     scrollToEnd: c,

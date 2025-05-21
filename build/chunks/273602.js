@@ -47,7 +47,7 @@ function S(e) {
       spoiler: S[0].spoiler,
       alt: S[0].description
     } : null,
-    [U, F] = i.useState(!1),
+    [F, U] = i.useState(!1),
     B = i.useCallback(() => {
       (0, x.xI)({
         added: !1
@@ -84,11 +84,11 @@ function S(e) {
       }({
         thread: D,
         attachments: S,
-        setIsUploading: F,
+        setIsUploading: U,
         guild: N,
         onClose: w
       }))
-    }, [D, S, F, N, w]);
+    }, [D, S, U, N, w]);
   return null == L ? null : (0, a.jsxs)(l.Y0X, {
     transitionState: M,
     size: l.CgR.SMALL,
@@ -121,19 +121,19 @@ function S(e) {
       children: [(0, a.jsx)(l.zxk, {
         look: l.zxk.Looks.BLANK,
         className: I.cancelButton,
-        disabled: U,
+        disabled: F,
         onClick: w,
         children: P.intl.string(P.t["ETE/oK"])
       }), (0, a.jsx)(l.zxk, {
         color: l.zxk.Colors.PRIMARY,
         className: I.dontAddButton,
-        disabled: U,
+        disabled: F,
         onClick: B,
         children: P.intl.string(P.t["8rKVHB"])
       }), (0, a.jsx)(l.zxk, {
         color: l.zxk.Colors.BRAND,
         className: I.__invalid_button,
-        submitting: U,
+        submitting: F,
         onClick: G,
         autoFocus: !0,
         children: P.intl.string(P.t.d611xM)

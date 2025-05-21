@@ -1,7 +1,66 @@
 /**
   Module ID: 49131
-  Original File Name: caa36b1ed9c4a301
+  Original File Name: 287fc08bd3dbe0e5
 **/
+.footer_fc958f {
+    align-items: center;
+    background-color: var(--background-surface-highest);
+    display: flex;
+    gap: 8px;
+    height: 20px;
+    justify-content: space-between;
+    padding: var(--spacing-8) var(--spacing-16);
+    position: relative
+}
+
+.footerChannelTitle_fc958f,.footerMessageSummary_fc958f {
+    align-items: center;
+    display: flex;
+    gap: var(--spacing-4)
+}
+
+.container_fc958f,.visual-refresh .container_fc958f {
+    padding: 0
+}
+
+.body_fc958f {
+    padding: var(--spacing-16)
+}
+
+.contentAndMedia_fc958f {
+    align-items: center;
+    display: flex
+}
+
+.bodyMedia_fc958f {
+    padding-right: var(--spacing-16)
+}
+
+.originalMessageAuthorAndContent_fc958f {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    overflow: hidden
+}
+
+.originalMessageAuthorAndContent_fc958f a {
+    color: unset
+}
+
+.message_fc958f {
+    display: flex;
+    gap: var(--spacing-16);
+    overflow: hidden
+}
+
+.messageContent_fc958f {
+    margin-left: 0
+}
+
+.originalMessageAuthorAvatar_fc958f {
+    min-width: 40px
+}
+
 .container_c6ad88 {
     background-color: var(--background-primary);
     border-radius: 12px;
@@ -2261,4 +2320,4 @@
     color: var(--text-link)
 }
 
-/*# sourceMappingURL=caa36b1ed9c4a301.css.map*/
+/*# sourceMappingURL=287fc08bd3dbe0e5.css.map*/

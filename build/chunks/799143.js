@@ -1,7 +1,7 @@
-/** Chunk was on 79368 **/
+/** Chunk was on 87040 **/
 n.d(t, {
-  Y: () => v,
-  a: () => h
+  Y: () => h,
+  a: () => v
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -38,7 +38,7 @@ function g(e) {
   })
 }
 
-function v() {
+function h() {
   let {
     analyticsLocations: e
   } = (0, d.ZP)(), {
@@ -47,7 +47,7 @@ function v() {
   } = (0, l.cj)([u.Z], () => ({
     canSetInputDevice: u.Z.supports(f.AN.AUDIO_INPUT_DEVICE),
     inputDeviceId: u.Z.getInputDeviceId()
-  })), a = (0, l.e7)([u.Z], () => u.Z.getInputDevices()), v = i.useCallback(t => {
+  })), a = (0, l.e7)([u.Z], () => u.Z.getInputDevices()), h = i.useCallback(t => {
     var n;
     c.Z.setInputDevice(t, {
       analyticsLocations: e
@@ -55,7 +55,7 @@ function v() {
       input_mode: t,
       active_voice_filter_id: null != (n = u.Z.getActiveVoiceFilter()) ? n : null
     })
-  }, [e]), h = i.useCallback(() => {
+  }, [e]), v = i.useCallback(() => {
     var e;
     _.default.track(m.rMx.VOICE_FILTER_MIC_SELECTOR_OPENED, {
       active_voice_filter_id: null != (e = u.Z.getActiveVoiceFilter()) ? e : null
@@ -63,8 +63,8 @@ function v() {
   }, []);
   return (0, r.jsx)(s.q4e, {
     value: n,
-    onOpen: h,
-    onChange: v,
+    onOpen: v,
+    onChange: h,
     options: o().map(a, e => {
       let {
         id: t,
@@ -89,7 +89,7 @@ function v() {
   })
 }
 
-function h() {
+function v() {
   let {
     analyticsLocations: e
   } = (0, d.ZP)(), {

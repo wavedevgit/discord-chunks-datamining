@@ -1,12 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  P0: () => p,
-  Q3: () => m,
-  WF: () => h,
-  gT: () => _,
-  iZ: () => f,
-  iq: () => g,
+  P0: () => h,
+  Q3: () => g,
+  UD: () => f,
+  WF: () => m,
+  gT: () => p,
+  iZ: () => _,
+  iq: () => E,
   sP: () => u
 }), n(642613), n(149765);
 var r = n(247206),
@@ -31,22 +32,26 @@ function u(e) {
 }
 
 function d(e) {
-  return p(s.Z.getChannel(e))
+  return h(s.Z.getChannel(e))
 }
 
 function f(e) {
-  return null != e && e.isModeratorReportChannel() && e.isForumChannel()
+  return _(s.Z.getChannel(e))
 }
 
 function _(e) {
-  return null != e && e.isModeratorReportChannel() && e.isForumPost()
+  return null != e && e.isModeratorReportChannel() && e.isForumChannel()
 }
 
 function p(e) {
-  return null != e && (f(e) || _(e))
+  return null != e && e.isModeratorReportChannel() && e.isForumPost()
 }
 
 function h(e) {
+  return null != e && (_(e) || p(e))
+}
+
+function m(e) {
   if (null == e || !(0, a.U)() || !d(e)) return !0;
   let {
     loaded: t,
@@ -55,11 +60,11 @@ function h(e) {
   return !t || null == n || !(0, r.rA)(n)
 }
 
-function m(e, t) {
-  return !!e.isFirstMessageInForumPost(t) && !!e.isSystemDM() && _(t)
+function g(e, t) {
+  return !!e.isFirstMessageInForumPost(t) && !!e.isSystemDM() && p(t)
 }
 
-function g(e) {
+function E(e) {
   return e.sort((e, t) => e.id == i.a.MULTIPLE_REPORTS ? -1 : +(t.id == i.a.MULTIPLE_REPORTS))
 }
 n(806246)

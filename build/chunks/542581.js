@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => b
 }), n(388685);
 var r = n(255367),
-  i = n(73800),
-  l = n(120356),
-  a = n.n(l),
+  l = n(73800),
+  i = n(120356),
+  a = n.n(i),
   s = n(366594),
   o = n(760907),
   c = n(481060),
@@ -18,10 +18,10 @@ var r = n(255367),
   f = n(388032),
   x = n(761852),
   p = n(73433);
-let b = i.memo(function(e) {
+let b = l.memo(function(e) {
   let {
     channel: t,
-    onChange: l
+    onChange: i
   } = e, b = (0, h.AF)(), {
     guidelinesOpen: j
   } = (0, h.xH)(e => {
@@ -31,15 +31,15 @@ let b = i.memo(function(e) {
     return {
       guidelinesOpen: t
     }
-  }, o.X), v = (0, m.r_)(t), [C, _] = i.useState(!1), y = i.useCallback(e => {
+  }, o.X), v = (0, m.r_)(t), [C, _] = l.useState(!1), y = l.useCallback(e => {
     if (null == e) return;
     let t = e.clientHeight >= 220;
     t !== C && _(t)
   }, [C]);
-  i.useLayoutEffect(() => {
-    setTimeout(l, 350)
-  }, [j, l]);
-  let [O, w] = i.useState(!j), S = (0, c.q_F)({
+  l.useLayoutEffect(() => {
+    setTimeout(i, 350)
+  }, [j, i]);
+  let [O, w] = l.useState(!j), N = (0, c.q_F)({
     opacity: +!!j,
     maxHeight: 500 * !!j,
     config: {
@@ -48,7 +48,7 @@ let b = i.memo(function(e) {
     onRest: () => w(!j)
   });
   return null != t.topic && t.topic.length > 0 ? (0, r.jsx)(s.animated.div, {
-    style: S,
+    style: N,
     className: O ? x.hiddenVisually : void 0,
     children: (0, r.jsxs)("div", {
       className: x.container,
@@ -116,8 +116,8 @@ let b = i.memo(function(e) {
                     default: e
                   } = await n.e("78712").then(n.bind(n, 223164));
                   return n => {
-                    var i, l;
-                    return (0, r.jsx)(e, (i = function(e) {
+                    var l, i;
+                    return (0, r.jsx)(e, (l = function(e) {
                       for (var t = 1; t < arguments.length; t++) {
                         var n = null != arguments[t] ? arguments[t] : {},
                           r = Object.keys(n);
@@ -134,18 +134,18 @@ let b = i.memo(function(e) {
                         })
                       }
                       return e
-                    }({}, n), l = l = {
+                    }({}, n), i = i = {
                       channel: t
-                    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+                    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
                       var n = Object.keys(e);
                       if (Object.getOwnPropertySymbols) {
                         var r = Object.getOwnPropertySymbols(e);
                         n.push.apply(n, r)
                       }
                       return n
-                    })(Object(l)).forEach(function(e) {
-                      Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
-                    }), i))
+                    })(Object(i)).forEach(function(e) {
+                      Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(i, e))
+                    }), l))
                   }
                 })
               },

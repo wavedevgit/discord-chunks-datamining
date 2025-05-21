@@ -1,5 +1,6 @@
-/** Chunk was on 79368 **/
-n.r(e.exports = {
+/** Chunk was on web.js **/
+"use strict";
+var r = {
   button: "button__2723e",
   xs: "xs__2723e",
   sm: "sm__2723e",
@@ -20,4 +21,5 @@ n.r(e.exports = {
   active: "active__2723e",
   "overlay-primary": "overlay-primary__2723e",
   "overlay-secondary": "overlay-secondary__2723e"
-})
+};
+n.r(e.exports = r)

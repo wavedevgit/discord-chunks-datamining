@@ -1,7 +1,7 @@
-/** Chunk was on 79368 **/
+/** Chunk was on 87040 **/
 n.d(t, {
-  h: () => x,
-  x: () => j
+  h: () => j,
+  x: () => C
 });
 var r = n(255367);
 n(73800);
@@ -18,17 +18,17 @@ var i = n(120356),
   f = n(584825),
   p = n(570533),
   g = n(629262),
-  v = n(575460),
-  h = n(293810),
+  h = n(575460),
+  v = n(293810),
   b = n(388032),
   y = n(506222);
-let x = e => {
+let j = e => {
     let {
       onClose: t,
       listing: n,
       step: i,
       guildId: o
-    } = e, s = (0, f.YB)(o), u = (0, c.Z)(h.Xy), m = (() => {
+    } = e, s = (0, f.YB)(o), u = (0, c.Z)(v.Xy), m = (() => {
       var e;
       if (u) return null;
       let t = (null == s || null == (e = s.cover_image_asset) ? void 0 : e.application_id) != null ? (0, _._W)(s.cover_image_asset.application_id, s.cover_image_asset, 440) : void 0;
@@ -67,7 +67,7 @@ let x = e => {
       })]
     })
   },
-  j = e => {
+  C = e => {
     let {
       onClose: t,
       listing: n,
@@ -97,7 +97,7 @@ let x = e => {
           children: b.intl.string(b.t.w0CQ09)
         }), (0, r.jsx)("div", {
           className: y.confirmationBenefits,
-          children: _.map(e => (0, r.jsx)(v.Z, {
+          children: _.map(e => (0, r.jsx)(h.Z, {
             benefit: e,
             guildId: i,
             onClick: () => t(!0)

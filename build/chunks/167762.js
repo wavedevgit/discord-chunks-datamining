@@ -19,9 +19,9 @@ var i, r = n(255367),
   O = n(724757),
   N = n(620662),
   m = n(420660),
-  y = n(326255),
-  S = n(956221),
-  h = n(771173),
+  h = n(326255),
+  y = n(956221),
+  S = n(771173),
   v = n(297781),
   b = n(82295),
   I = n(554300),
@@ -32,8 +32,8 @@ var i, r = n(255367),
   T = n(886118),
   Z = n(301801),
   w = n(814443),
-  R = n(518950),
-  A = n(670188),
+  A = n(518950),
+  R = n(670188),
   k = n(199902),
   U = n(158776),
   G = n(699516),
@@ -121,7 +121,7 @@ let X = l.memo(e => {
     avatarDecorationSrc: F,
     avatarSrc: L,
     eventHandlers: M
-  } = (0, R.Z)({
+  } = (0, A.Z)({
     user: t,
     size: J,
     animateOnHover: !0,
@@ -130,7 +130,7 @@ let X = l.memo(e => {
     onFocus: H
   } = K, X = Y(K, ["onFocus"]), [$, ee] = l.useState(!1), [et, en] = l.useState(!1), [ei, er] = l.useState({}), el = t.id, es = i.filter(e => e.type === q.IIU.PLAYING && (0, N.Z)(e, q.xjy.JOIN)), ea = (0, o.Wu)([x.Z], () => x.Z.getActivities().filter(e => e.type === q.IIU.PLAYING && (0, N.Z)(e, q.xjy.JOIN))), {
     voiceChannel: eo
-  } = (0, S.Z)({
+  } = (0, y.Z)({
     userId: t.id
   }), ec = (0, P.K)({
     location: "friends-popout",
@@ -157,11 +157,11 @@ let X = l.memo(e => {
     ee(!0)
   }, []), em = l.useCallback(() => {
     ee(!1)
-  }, []), ey = l.useCallback(() => {
-    en(!0), H()
-  }, [H]), eS = l.useCallback(() => {
-    en(!1)
   }, []), eh = l.useCallback(() => {
+    en(!0), H()
+  }, [H]), ey = l.useCallback(() => {
+    en(!1)
+  }, []), eS = l.useCallback(() => {
     if (null != s) {
       let e = s.traits,
         t = W(Q({}, s), {
@@ -175,7 +175,7 @@ let X = l.memo(e => {
         }, n))
       })
     }
-    if (!(0, y.Z)({
+    if (!(0, h.Z)({
         activities: i,
         status: eu,
         applicationStream: ed,
@@ -190,7 +190,7 @@ let X = l.memo(e => {
       }),
       user: t
     });
-    return (0, r.jsx)(h.Z, {
+    return (0, r.jsx)(S.Z, {
       location: "FriendsPopout",
       user: t,
       activities: i,
@@ -306,7 +306,7 @@ let X = l.memo(e => {
       }, e.application_id)
     })]
   });
-  return (0, r.jsx)(A.Z, {
+  return (0, r.jsx)(R.Z, {
     targetElementRef: eO,
     user: t,
     position: "left",
@@ -324,8 +324,8 @@ let X = l.memo(e => {
           onContextMenu: ev,
           onMouseEnter: eN,
           onMouseLeave: em,
-          onFocus: ey,
-          onBlur: eS,
+          onFocus: eh,
+          onBlur: ey,
           avatar: (0, r.jsx)(c.qEK, W(Q({}, M), {
             size: J,
             src: L,
@@ -341,7 +341,7 @@ let X = l.memo(e => {
             className: z.username,
             children: null != (i = null != w ? w : t.globalName) ? i : t.username
           }),
-          subText: eh(),
+          subText: eS(),
           selected: l,
           nameplate: ec,
           hovered: $
@@ -390,7 +390,7 @@ let et = l.memo(function(e) {
     onFriendVisible: g,
     autoFocus: E = !1,
     appContext: N = q.IlC.APP
-  } = e, [m, y] = l.useState([K.SUGGESTIONS, K.FRIEND_REQUESTS]), S = l.useRef(null), h = (0, O.Z)("friends-popout", S), v = function() {
+  } = e, [m, h] = l.useState([K.SUGGESTIONS, K.FRIEND_REQUESTS]), y = l.useRef(null), S = (0, O.Z)("friends-popout", y), v = function() {
     let e = (0, o.Wu)([G.Z, D.default, U.Z], () => {
         let e = G.Z.getRelationships(),
           t = [];
@@ -526,19 +526,19 @@ let et = l.memo(function(e) {
     setSearchQuery: C,
     clearSearch: P
   } = I, T = Y(I, ["searchQuery", "setSearchQuery", "clearSearch"]), Z = l.useCallback(e => {
-    y(t => t.includes(e) ? t.filter(t => t !== e) : [...t, e])
-  }, []), R = l.useCallback((0, s.debounce)(() => {
+    h(t => t.includes(e) ? t.filter(t => t !== e) : [...t, e])
+  }, []), A = l.useCallback((0, s.debounce)(() => {
     null == p || p("search_friends")
   }, 1e3, {
     leading: !0,
     trailing: !1
-  }), [p]), A = l.useCallback(e => {
+  }), [p]), R = l.useCallback(e => {
     var t;
-    C(e), R(), null == (t = S.current) || t.scrollToTop()
-  }, [C, R]), k = l.useCallback(() => {
+    C(e), A(), null == (t = y.current) || t.scrollToTop()
+  }, [C, A]), k = l.useCallback(() => {
     var e;
-    P(), R(), null == (e = S.current) || e.scrollToTop()
-  }, [P, R]), L = l.useCallback(e => {
+    P(), A(), null == (e = y.current) || e.scrollToTop()
+  }, [P, A]), L = l.useCallback(e => {
     (0, f.jW)(e, async () => {
       let {
         default: e
@@ -653,7 +653,7 @@ let et = l.memo(function(e) {
       className: z.searchContainer,
       children: (0, r.jsx)(c.E1j, {
         query: _,
-        onChange: A,
+        onChange: R,
         onClear: k,
         placeholder: V.intl.string(V.t["5h0QOD"]),
         size: c.E1j.Sizes.MEDIUM,
@@ -667,7 +667,7 @@ let et = l.memo(function(e) {
         children: V.intl.string(V.t["7sW4h4"])
       })
     }) : (0, r.jsx)(a.bG, {
-      navigator: h,
+      navigator: S,
       children: (0, r.jsx)(a.SJ, {
         children: e => {
           var {
@@ -680,7 +680,7 @@ let et = l.memo(function(e) {
               innerAriaLabel: V.intl.string(V.t.TdEu5e),
               ref: e => {
                 var n;
-                S.current = e, t.current = null != (n = null == e ? void 0 : e.getScrollerNode()) ? n : null
+                y.current = e, t.current = null != (n = null == e ? void 0 : e.getScrollerNode()) ? n : null
               },
               className: i,
               sectionHeight: 40,

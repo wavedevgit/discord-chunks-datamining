@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => em
 }), n(539854), n(388685), n(953529);
 var r = n(255367),
-  i = n(73800),
-  l = n(120356),
-  a = n.n(l),
+  l = n(73800),
+  i = n(120356),
+  a = n.n(i),
   s = n(913527),
   o = n.n(s),
   c = n(366594),
@@ -26,8 +26,8 @@ var r = n(255367),
   y = n(430824),
   O = n(186523),
   w = n(585483),
-  S = n(70956),
-  N = n(709054),
+  N = n(70956),
+  S = n(709054),
   P = n(961675),
   T = n(883429),
   I = n(993259),
@@ -90,7 +90,7 @@ let V = {
       onboardingCTA: e
     })
   };
-class X {
+class W {
   addStep(e) {
     ++this.currentIndex, this.steps.push(H({
       index: this.currentIndex
@@ -106,7 +106,7 @@ class X {
     B(this, "currentIndex", 0), B(this, "steps", []), B(this, "completedSteps", 0)
   }
 }
-let W = e => {
+let X = e => {
     let t = null != e.topic && e.topic.length > 0;
     return {
       name: D.intl.string(D.t.UgJu1d),
@@ -154,16 +154,16 @@ let W = e => {
       isDone: t
     }
   },
-  Y = (e, t, i) => ({
+  Y = (e, t, l) => ({
     name: D.intl.string(D.t["6A0O6+"]),
     description: t ? D.intl.string(D.t["8hI5vr"]) : D.intl.format(D.t.ysxcAw, {
       onClick: e => {
-        null != i && (e.preventDefault(), e.stopPropagation(), (0, R.qz)(), (0, g.ZDy)(async () => {
+        null != l && (e.preventDefault(), e.stopPropagation(), (0, R.qz)(), (0, g.ZDy)(async () => {
           let {
             default: e
           } = await n.e("18417").then(n.bind(n, 740696));
           return t => (0, r.jsx)(e, U(H({}, t), {
-            guildId: i
+            guildId: l
           }))
         }))
       }
@@ -173,21 +173,21 @@ let W = e => {
     },
     isDone: e
   }),
-  Q = (e, t) => i.useCallback(() => (t(!1), T.Z.hideAdminOnboarding(e, !0)), [e, t]),
+  Q = (e, t) => l.useCallback(() => (t(!1), T.Z.hideAdminOnboarding(e, !0)), [e, t]),
   $ = e => {
-    let t = N.default.extractTimestamp(e);
+    let t = S.default.extractTimestamp(e);
     return o()().isBefore(o()(t).add(o().duration(15, "days")))
   },
   ee = (e, t, n) => {
-    i.useEffect(() => {
+    l.useEffect(() => {
       e || n(!t)
     }, [e, n, t])
   },
   et = (e, t, n, r) => {
-    let l = i.useRef(0);
-    i.useEffect(() => (n || !e || t ? clearTimeout(l.current) : l.current = setTimeout(() => {
+    let i = l.useRef(0);
+    l.useEffect(() => (n || !e || t ? clearTimeout(i.current) : i.current = setTimeout(() => {
       r()
-    }, 60 * S.Z.Millis.SECOND), () => clearTimeout(l.current)), [e, t, r, n])
+    }, 60 * N.Z.Millis.SECOND), () => clearTimeout(i.current)), [e, t, r, n])
   },
   en = (e, t, n) => {
     (0, p.ZP)(() => {
@@ -199,17 +199,17 @@ let W = e => {
       isAllDone: t,
       isVisible: n,
       canManageChannel: r,
-      guildId: l,
+      guildId: i,
       channel: a
-    } = e, s = (0, h.e7)([y.Z], () => null != l ? y.Z.getRoles(l) : void 0), o = i.useCallback(() => {
+    } = e, s = (0, h.e7)([y.Z], () => null != i ? y.Z.getRoles(i) : void 0), o = l.useCallback(() => {
       w.S.dispatch(F.CkL.REMEASURE_TARGET)
     }, []);
-    i.useEffect(() => {
+    l.useEffect(() => {
       o()
     }, [o, t, n, r, s, a.id, a.permissionOverwrites])
   },
-  ei = () => {
-    let [e, t] = i.useState(!0);
+  el = () => {
+    let [e, t] = l.useState(!0);
     return {
       transitions: (0, g.Yzy)(e, {
         keys: e => e ? "shown" : "hidden",
@@ -228,7 +228,7 @@ let W = e => {
       setVisible: t
     }
   },
-  el = e => (0, g.Yzy)(e, {
+  ei = e => (0, g.Yzy)(e, {
     from: {
       maxHeight: 0
     },
@@ -270,18 +270,18 @@ let W = e => {
   eo = e => {
     let {
       guild: t,
-      channel: l,
+      channel: i,
       hasAnyThread: a,
       handleHide: s
-    } = e, [o, c] = i.useState(!1), d = (0, Z.c)(l.id), u = (0, h.e7)([P.Z], () => P.Z.hasHidden(l.id)), f = function(e, t, l, a) {
+    } = e, [o, c] = l.useState(!1), d = (0, Z.c)(i.id), u = (0, h.e7)([P.Z], () => P.Z.hasHidden(i.id)), f = function(e, t, i, a) {
       let s = null == e ? void 0 : e.id,
         o = (0, h.e7)([y.Z], () => null != s ? y.Z.getRoles(s) : void 0);
-      return i.useMemo(() => {
-        let i = new X,
+      return l.useMemo(() => {
+        let l = new W,
           s = (null == t ? void 0 : t.isMediaChannel()) === !0;
-        return null == e || null == t || s || null == o || i.addStep(function(e, t, i, l) {
-          let a = (0, b.Z)(i) ? m.$e(F.Plq.VIEW_CHANNEL, F.Plq.SEND_MESSAGES) : F.Plq.SEND_MESSAGES,
-            s = null != e ? (0, I.E$)(e, t, i, a).filter(t => i.permissionOverwrites.hasOwnProperty(t.id) || (0, j.pM)(e.id, t.id)) : [],
+        return null == e || null == t || s || null == o || l.addStep(function(e, t, l, i) {
+          let a = (0, b.Z)(l) ? m.$e(F.Plq.VIEW_CHANNEL, F.Plq.SEND_MESSAGES) : F.Plq.SEND_MESSAGES,
+            s = null != e ? (0, I.E$)(e, t, l, a).filter(t => l.permissionOverwrites.hasOwnProperty(t.id) || (0, j.pM)(e.id, t.id)) : [],
             o = s.length > 0,
             c = s.some(t => (0, j.pM)(e.id, t.id));
           return {
@@ -298,8 +298,8 @@ let W = e => {
                 let {
                   default: t
                 } = await n.e("78704").then(n.bind(n, 560602));
-                return l(!0), n => (0, r.jsx)(t, U(H({}, n), {
-                  channel: i,
+                return i(!0), n => (0, r.jsx)(t, U(H({}, n), {
+                  channel: l,
                   guild: e,
                   permission: a,
                   currentSelectedRoles: s
@@ -307,21 +307,21 @@ let W = e => {
               }, {
                 modalKey: "SEND_MESSAGE_ROLE_PERMISSION_FIX_MODAL_KEY",
                 onCloseRequest: F.VqG,
-                onCloseCallback: () => l(!1)
+                onCloseCallback: () => i(!1)
               })
             }
           }
-        }(e, o, t, a)), s || i.addStep(W(t)), i.addStep(K(t)), i.addStep(J(t)), i.addStep(Y(l, s, null == e ? void 0 : e.id)), i
-      }, [t, e, o, l, a])
-    }(t, l, a, c), x = f.isAllDone();
-    return et(x, d || u || !$(l.id), o, s), {
+        }(e, o, t, a)), s || l.addStep(X(t)), l.addStep(K(t)), l.addStep(J(t)), l.addStep(Y(i, s, null == e ? void 0 : e.id)), l
+      }, [t, e, o, i, a])
+    }(t, i, a, c), x = f.isAllDone();
+    return et(x, d || u || !$(i.id), o, s), {
       onboardingSteps: f,
       isHidden: u,
       isDismissed: d,
       isAllDone: x
     }
   },
-  ec = () => i.useCallback(e => {
+  ec = () => l.useCallback(e => {
     var t;
     null == (t = e.clickHandler) || t.call(e)
   }, []),
@@ -364,9 +364,9 @@ let W = e => {
     let {
       hasAnyThread: t,
       hasActiveThreads: n,
-      channel: i
+      channel: l
     } = e, {
-      onboardingExpanded: l
+      onboardingExpanded: i
     } = (0, A.xH)(e => {
       let {
         onboardingExpanded: t
@@ -376,30 +376,30 @@ let W = e => {
       }
     }, d.X), {
       tagFilter: s
-    } = (0, E.H)(i.id), o = (0, h.e7)([y.Z], () => y.Z.getGuild(i.getGuildId())), m = (0, k.r_)(i), {
+    } = (0, E.H)(l.id), o = (0, h.e7)([y.Z], () => y.Z.getGuild(l.getGuildId())), m = (0, k.r_)(l), {
       transitions: f,
       setVisible: x
-    } = ei(), b = el(l), j = ec(), w = Q(i.id, x), {
-      onboardingSteps: S,
-      isDismissed: N,
+    } = el(), b = ei(i), j = ec(), w = Q(l.id, x), {
+      onboardingSteps: N,
+      isDismissed: S,
       isHidden: P,
       isAllDone: T
     } = eo({
       guild: o,
-      channel: i,
+      channel: l,
       hasAnyThread: t,
       handleHide: w
-    }), I = !P && !N, R = (0, A.AF)(), Z = i.isMediaChannel(), L = e => R.getState().setOnboardingExpanded(e);
+    }), I = !P && !S, R = (0, A.AF)(), Z = l.isMediaChannel(), L = e => R.getState().setOnboardingExpanded(e);
     return (en(T, I, w), er({
       isAllDone: T,
       isVisible: I,
       canManageChannel: m,
       guildId: null == o ? void 0 : o.id,
-      channel: i
-    }), ee(N, P, x), (0, p.ZP)(() => {
+      channel: l
+    }), ee(S, P, x), (0, p.ZP)(() => {
       t && I || L(!0)
-    }), null == o) ? null : (0, C.iZ)(i) ? n ? null : (0, r.jsx)(_.q, {}) : I && m ? Z ? t ? null : (0, r.jsx)(v.Z, {
-      channel: i
+    }), null == o) ? null : (0, C.iZ)(l) ? n ? null : (0, r.jsx)(_.q, {}) : I && m ? Z ? t ? null : (0, r.jsx)(v.Z, {
+      channel: l
     }) : (0, r.jsx)(r.Fragment, {
       children: f((e, t) => t ? (0, r.jsx)(c.animated.div, {
         style: e,
@@ -417,8 +417,8 @@ let W = e => {
                 variant: "heading-md/medium",
                 className: z.header,
                 children: D.intl.format(D.t["9L+8b2"], {
-                  numCompleted: S.completedSteps.toString(),
-                  numSteps: S.steps.length.toString()
+                  numCompleted: N.completedSteps.toString(),
+                  numSteps: N.steps.length.toString()
                 })
               }), (0, r.jsxs)(g.Text, {
                 variant: "text-xs/normal",
@@ -429,8 +429,8 @@ let W = e => {
                   className: z.icon
                 }), D.intl.string(D.t.znhX2d)]
               }), (0, r.jsx)(eu, {
-                expanded: l,
-                onClick: () => L(!l)
+                expanded: i,
+                onClick: () => L(!i)
               }), (0, r.jsx)(ed, {
                 handleHide: w
               })]
@@ -440,7 +440,7 @@ let W = e => {
             className: z.listContainer,
             children: (0, r.jsx)("ol", {
               className: z.checklist,
-              children: S.getSteps().map(e => (0, r.jsxs)(g.P3F, {
+              children: N.getSteps().map(e => (0, r.jsxs)(g.P3F, {
                 tag: "li",
                 "aria-label": e.name,
                 onClick: () => j(e),
@@ -488,9 +488,9 @@ let W = e => {
         })
       }) : null)
     }) : t ? null : (0, r.jsx)(M.Z, {
-      channelName: i.name,
-      guildId: i.guild_id,
+      channelName: l.name,
+      guildId: l.guild_id,
       tagFilter: s,
-      channel: i
+      channel: l
     })
   }

@@ -4,9 +4,9 @@ n.d(t, {
   q: () => y
 });
 var r = n(255367),
-  i = n(73800),
-  l = n(120356),
-  a = n.n(l),
+  l = n(73800),
+  i = n(120356),
+  a = n.n(i),
   s = n(442837),
   o = n(481060),
   c = n(596454),
@@ -26,8 +26,8 @@ function C(e) {
   let {
     className: t,
     sound: n,
-    playSound: i,
-    isPlaying: l
+    playSound: l,
+    isPlaying: i
   } = e, s = (null == n ? void 0 : n.emojiId) != null || (null == n ? void 0 : n.emojiName) != null, d = j.intl.formatToPlainString(j.t.tuMUJy, {
     emojiName: null == n ? void 0 : n.emojiName,
     soundName: null == n ? void 0 : n.name
@@ -35,9 +35,9 @@ function C(e) {
   return (0, r.jsxs)(o.P3F, {
     "aria-label": d,
     tag: "span",
-    onClick: i,
+    onClick: l,
     className: a()(v.inlineContainer, v.inlineButton, {
-      [v.playing]: !0 === l
+      [v.playing]: !0 === i
     }, t),
     children: [s && (0, r.jsx)(c.Z, {
       emojiId: null == n ? void 0 : n.emojiId,
@@ -50,15 +50,15 @@ function C(e) {
 }
 
 function _() {
-  let e = i.useRef(null),
-    t = i.useRef(null),
+  let e = l.useRef(null),
+    t = l.useRef(null),
     n = (0, s.e7)([g.Z], () => {
       var e;
       return null == (e = g.Z.getSoundsForGuild(p.X8)) ? void 0 : e.find(e => "airhorn" === e.name)
     }),
     {
-      createMultipleConfettiAt: l
-    } = i.useContext(m.h),
+      createMultipleConfettiAt: i
+    } = l.useContext(m.h),
     a = (0, s.e7)([u.Z], () => u.Z.useReducedMotion),
     {
       isPlaying: o,
@@ -67,7 +67,7 @@ function _() {
   (0, d.ZP)(() => {
     (0, h.w)()
   });
-  let b = i.useCallback(async () => {
+  let b = l.useCallback(async () => {
     if (await c()) {
       var n;
       if (null == (n = e.current) || n.addAnimation(), !a && null != t.current) {
@@ -77,12 +77,12 @@ function _() {
             y: e.top + e.height / 2
           },
           r = x.CA[Math.floor(Math.random() * x.CA.length)];
-        l(n.x, n.y, void 0, void 0, {
+        i(n.x, n.y, void 0, void 0, {
           sprite: r
         })
       }
     }
-  }, [c, l, a]);
+  }, [c, i, a]);
   return void 0 === n ? null : (0, r.jsx)("div", {
     ref: t,
     children: (0, r.jsx)(C, {
