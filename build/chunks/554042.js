@@ -63,11 +63,11 @@ function j() {
     })
   }, []);
   let T = f.isPlatformEmbedded ? n : e,
-    I = (0, a.e7)([p.C], () => {
+    N = (0, a.e7)([p.C], () => {
       var e, t;
       return (0, h.fD)() ? null == (t = p.C.getCurrentBuildOverride()) || null == (e = t.overrides) ? void 0 : e.discord_web : null
     }),
-    [N, y] = (0, g.R)("playground-overrideText", null),
+    [I, y] = (0, g.R)("playground-overrideText", null),
     [A, P] = (0, g.R)("playground-defaultText", C[0].value),
     R = r.useCallback(e => {
       let t = C.find(t => {
@@ -96,7 +96,7 @@ function j() {
               display: "inline-block"
             },
             children: ["Zoom: ", T, "%"]
-          }), null != I ? (0, i.jsxs)(o.Text, {
+          }), null != N ? (0, i.jsxs)(o.Text, {
             tag: "div",
             variant: "heading-lg/bold",
             style: {
@@ -104,7 +104,7 @@ function j() {
               marginLeft: "1em"
             },
             color: "header-secondary",
-            children: ["(", I.id, ")"]
+            children: ["(", N.id, ")"]
           }) : null]
         }), (0, i.jsx)(o.xJW, {
           children: (0, i.jsx)(o.q4e, {
@@ -118,7 +118,7 @@ function j() {
             className: E.input,
             children: (0, i.jsx)(o.oil, {
               placeholder: "Enter custom input...",
-              value: null != N ? N : "",
+              value: null != I ? I : "",
               onChange: R
             })
           })
@@ -186,7 +186,7 @@ function j() {
             }) : null]
           }, e), S.map(t => {
             var n;
-            let r = null != (n = "custom" === A ? N : A) ? n : "";
+            let r = null != (n = "custom" === A ? I : A) ? n : "";
             return (0, i.jsx)("div", {
               className: E.textSample,
               children: (0, i.jsxs)("div", {

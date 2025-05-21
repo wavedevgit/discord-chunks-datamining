@@ -1,18 +1,17 @@
-/** Chunk was on web.js **/
-"use strict";
+/** Chunk was on 8787 **/
 n.d(t, {
-  X: () => o
+  X: () => s
 });
-var r = n(818083),
-  i = n(987338);
-let o = (0, r.B)({
+var i = n(818083),
+  r = n(987338);
+let s = (0, i.B)({
   id: "2025-04_tenure_level_up_moment",
   kind: "user",
   label: "Tenure Level Up Moment",
   defaultConfig: {
     enabled: !1
   },
-  commonTriggerPoint: i.$P.CONNECTION_OPEN,
+  commonTriggerPoint: r.$P.CONNECTION_OPEN,
   treatments: [{
     id: 1,
     label: "Enables new animation and UI for the moment Nitro tenure levels up.",

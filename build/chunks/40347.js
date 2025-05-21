@@ -3,24 +3,24 @@ d.d(t, {
   Z: () => Z
 });
 var a = d(780384),
-  c = d(410030),
-  n = d(848572),
+  n = d(410030),
+  c = d(804413),
   s = d(291175),
   o = d(474936),
   l = d(861885),
   i = d(245013),
   r = d(662190),
   f = d(234372),
-  p = d(23732),
-  _ = d(643193),
-  u = d(107120),
+  u = d(23732),
+  p = d(643193),
+  _ = d(107120),
   b = d(261684),
-  h = d(831631),
-  E = d(594393),
-  m = d(636774),
-  T = d(705821),
-  g = d(927982),
-  U = d(254673),
+  E = d(831631),
+  h = d(594393),
+  T = d(636774),
+  m = d(705821),
+  U = d(927982),
+  g = d(254673),
   M = d(38932),
   N = d(56946);
 let x = {
@@ -60,30 +60,30 @@ let x = {
   R = {
     [o.VU.PREMIUM_TENURE_1_MONTH]: {
       dark: l.Z,
-      light: h.Z
+      light: E.Z
     },
     [o.VU.PREMIUM_TENURE_3_MONTH]: {
       dark: i.Z,
-      light: E.Z
+      light: h.Z
     },
     [o.VU.PREMIUM_TENURE_6_MONTH]: {
       dark: r.Z,
-      light: m.Z
+      light: T.Z
     },
     [o.VU.PREMIUM_TENURE_12_MONTH]: {
       dark: f.Z,
-      light: T.Z
+      light: m.Z
     },
     [o.VU.PREMIUM_TENURE_24_MONTH]: {
+      dark: u.Z,
+      light: U.Z
+    },
+    [o.VU.PREMIUM_TENURE_36_MONTH]: {
       dark: p.Z,
       light: g.Z
     },
-    [o.VU.PREMIUM_TENURE_36_MONTH]: {
-      dark: _.Z,
-      light: U.Z
-    },
     [o.VU.PREMIUM_TENURE_60_MONTH]: {
-      dark: u.Z,
+      dark: _.Z,
       light: M.Z
     },
     [o.VU.PREMIUM_TENURE_72_MONTH]: {
@@ -93,8 +93,8 @@ let x = {
   };
 
 function Z() {
-  let e = (0, n.kG)(),
-    t = (0, a.wj)((0, c.ZP)());
+  let e = (0, c.Z)(),
+    t = (0, a.wj)((0, n.ZP)());
   if (!e) return null;
   let d = x[e],
     l = R[e],

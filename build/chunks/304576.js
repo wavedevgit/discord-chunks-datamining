@@ -45,8 +45,8 @@ let v = e => {
     let {
       isFullscreen: s,
       className: T,
-      buttonClassName: I,
-      subscriptionTier: N,
+      buttonClassName: N,
+      subscriptionTier: I,
       entrypoint: y,
       isDarkMode: A
     } = e, {
@@ -83,16 +83,16 @@ let v = e => {
               [S.marketingPageV2CTAMargin]: !(V || U)
             }),
             children: (0, i.jsx)(b.Z, {
-              className: l()(S.button, I),
+              className: l()(S.button, N),
               forceWhite: !0
             })
           }) : (0, i.jsx)(C.PK, {
-            subscriptionTier: null != (r = null != N ? N : null == w || null == (n = w.subscription_trial) ? void 0 : n.sku_id) ? r : Z,
+            subscriptionTier: null != (r = null != I ? I : null == w || null == (n = w.subscription_trial) ? void 0 : n.sku_id) ? r : Z,
             inOfferExperience: k,
             containerClassName: l()(S.marketingPageV2CTAContainer, {
               [S.marketingPageV2CTAMargin]: !(V || U)
             }),
-            buttonClassName: I,
+            buttonClassName: N,
             isMarketingPageV2Enabled: !0,
             isDarkMode: A
           }), (0, i.jsx)(C._O, {

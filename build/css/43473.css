@@ -1,6 +1,6 @@
 /**
   Module ID: 43473
-  Original File Name: 67b1751ee8136caf
+  Original File Name: c70f3b10d3e87a08
 **/
 .scroller__95bea {
     display: flex;
@@ -868,7 +868,7 @@
     gap: 24px;
     height: 100%;
     justify-content: flex-start;
-    padding-top: 155px;
+    padding: 155px 0 0 16px;
     width: 100%
 }
 
@@ -1289,4 +1289,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=67b1751ee8136caf.css.map*/
+/*# sourceMappingURL=c70f3b10d3e87a08.css.map*/

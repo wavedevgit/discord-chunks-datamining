@@ -1,4 +1,4 @@
-/** Chunk was on 75293 **/
+/** Chunk was on 35 **/
 e.exports = {
   circleIconButton: "circleIconButton_a2be55",
   geoRestrictedBadge: "geoRestrictedBadge_a2be55"

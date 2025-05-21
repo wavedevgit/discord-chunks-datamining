@@ -26,8 +26,8 @@ var i = n(255367),
   S = n(981631),
   v = n(388032),
   T = n(614729),
-  I = n(865215),
-  N = n(901644),
+  N = n(865215),
+  I = n(901644),
   y = n(172811);
 let A = e => {
     let {
@@ -88,7 +88,7 @@ let A = e => {
             }),
             children: v.intl.string(v.t.Lm2nFR)
           }),
-          imageSrc: N.Z
+          imageSrc: I.Z
         }), (0, i.jsx)(A, {
           headerText: v.intl.string(v.t.GyAbk5),
           bodyText: v.intl.string(v.t.DNXdBA),
@@ -118,7 +118,7 @@ let A = e => {
       } = (0, o.ZP)(a.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
       [h, E] = r.useState(!1);
     (0, f.FM)();
-    let N = "true" === new URLSearchParams(window.location.search).get("autoScroll");
+    let I = "true" === new URLSearchParams(window.location.search).get("autoScroll");
     window.history.replaceState({}, "", window.location.pathname);
     let y = m.PU.useExperiment({
       location: "HeroHeading"
@@ -141,7 +141,7 @@ let A = e => {
               className: T.whatsNew,
               noBackground: !0,
               leftAlignHeaders: !0,
-              shouldAutoScroll: N
+              shouldAutoScroll: I
             }), (0, i.jsx)(b.Z, {
               className: T.perksDiscoverability,
               noBackground: !0,
@@ -171,7 +171,7 @@ let A = e => {
                 className: T.bottomOfPageVisibilitySensor
               })
             }), (0, i.jsx)("img", {
-              src: I,
+              src: N,
               className: T.bottomIllustration,
               width: 112,
               height: 85,

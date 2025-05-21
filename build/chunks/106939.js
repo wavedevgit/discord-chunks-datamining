@@ -27,8 +27,8 @@ var i = n(255367),
   S = n(695346),
   v = n(594174),
   T = n(626135),
-  I = n(260722),
-  N = n(914788),
+  N = n(260722),
+  I = n(914788),
   y = n(841409),
   A = n(652262),
   P = n(880257),
@@ -133,7 +133,7 @@ function Y() {
   let e = (0, P.Z)(),
     t = (0, R.M8)(),
     n = (0, x.wE)(d.z.FAMILY_CENTER_NEW_BADGE),
-    s = (0, c.e7)([N.Z], () => N.Z.getIsInitialized()),
+    s = (0, c.e7)([I.Z], () => I.Z.getIsInitialized()),
     l = (0, A.M)(),
     {
       selectedTab: a,
@@ -144,7 +144,7 @@ function Y() {
     E = null != e,
     O = s && null != f && !E;
   (0, m.ZP)(() => {
-    (0, j.e)("family-center"), I.ZP.initialPageLoad(), n || (0, x.EW)(d.z.FAMILY_CENTER_NEW_BADGE, {
+    (0, j.e)("family-center"), N.ZP.initialPageLoad(), n || (0, x.EW)(d.z.FAMILY_CENTER_NEW_BADGE, {
       dismissAction: M.L.AUTO,
       forceTrack: !0
     })
@@ -202,12 +202,12 @@ function Y() {
 function K() {
   let {
     analyticsLocations: e
-  } = (0, f.ZP)(h.Z.FAMILY_CENTER), t = (0, P.Z)(), n = (0, R.M8)(), s = (0, x.wE)(d.z.FAMILY_CENTER_NEW_BADGE), a = (0, c.e7)([N.Z], () => N.Z.getIsInitialized()), E = (0, A.M)(), D = (0, c.e7)([O.Z], () => O.Z.theme), {
+  } = (0, f.ZP)(h.Z.FAMILY_CENTER), t = (0, P.Z)(), n = (0, R.M8)(), s = (0, x.wE)(d.z.FAMILY_CENTER_NEW_BADGE), a = (0, c.e7)([I.Z], () => I.Z.getIsInitialized()), E = (0, A.M)(), D = (0, c.e7)([O.Z], () => O.Z.theme), {
     selectedTab: Z,
     handleTabChange: w
   } = (0, y.Z)(), F = (0, _.Dt)(), z = v.default.getCurrentUser(), Y = null != t, K = a && null != z && !Y;
   (0, m.ZP)(() => {
-    g.Y(L.Z5c.FAMILY_CENTER), (0, j.e)("family-center"), !N.Z.isLoading() && N.Z.canRefetch() && I.ZP.initialPageLoad(), s || (0, x.EW)(d.z.FAMILY_CENTER_NEW_BADGE, {
+    g.Y(L.Z5c.FAMILY_CENTER), (0, j.e)("family-center"), !I.Z.isLoading() && I.Z.canRefetch() && N.ZP.initialPageLoad(), s || (0, x.EW)(d.z.FAMILY_CENTER_NEW_BADGE, {
       dismissAction: M.L.AUTO,
       forceTrack: !0
     })

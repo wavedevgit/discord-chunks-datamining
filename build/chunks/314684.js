@@ -33,9 +33,9 @@ var i = n(73800),
   S = n(106255),
   v = n(474936),
   T = n(735825),
-  I = n(981631);
+  N = n(981631);
 
-function N(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -90,7 +90,7 @@ function A() {
     o = function() {
       let e = (0, l.e7)([b.Z], () => {
         var e;
-        return null != (e = b.Z.getForApplication(I.XAJ)) ? e : R
+        return null != (e = b.Z.getForApplication(N.XAJ)) ? e : R
       }, [], x.OL);
       return (0, S.Cl)(T.qY, e)
     }(),
@@ -102,13 +102,13 @@ function A() {
       tenureRewardStatusId: null == t ? void 0 : t.id,
       tenureRewardType: (0, S.Xs)(d)
     };
-    if (c) return y(N({}, e), {
+    if (c) return y(I({}, e), {
       nitroTenureStatus: T.EB.REDEEMED,
       tenureRewardSkuId: n.skuId,
       showNotification: !0,
       showCard: !0
     });
-    if (a) return y(N({}, e), {
+    if (a) return y(I({}, e), {
       nitroTenureStatus: T.EB.REDEEMABLE,
       tenureRewardSkuId: n.skuId,
       showNotification: !0,
@@ -122,7 +122,7 @@ function A() {
       if (n < 0) return null;
       let r = !1,
         l = !1;
-      return t.next_tenure_reward_id === T.Ft.FREE_AVATAR_DECO_1_MONTH && (l = n <= T.bm, r = n <= T.dF), y(N({}, e), {
+      return t.next_tenure_reward_id === T.Ft.FREE_AVATAR_DECO_1_MONTH && (l = n <= T.bm, r = n <= T.dF), y(I({}, e), {
         nitroTenureStatus: T.EB.PENDING,
         tenureRewardSkuId: t.next_tenure_reward_id,
         redeemableInDays: 0 === i ? 1 : i,
@@ -189,7 +189,7 @@ let R = new Set,
       [n] = (0, p.cv)(t),
       r = i.useRef(!1);
     return i.useCallback(() => {
-      null != e && !0 === e.showNotification && (n === a.z.TENURE_REWARD_REDEEMABLE || n === a.z.TENURE_REWARD_PENDING) && ((0, m.EW)(n), n === a.z.TENURE_REWARD_PENDING && !1 === r.current && (_.default.track(I.rMx.USER_NITRO_TENURE_REWARD_ACKNOWLEDGED, {
+      null != e && !0 === e.showNotification && (n === a.z.TENURE_REWARD_REDEEMABLE || n === a.z.TENURE_REWARD_PENDING) && ((0, m.EW)(n), n === a.z.TENURE_REWARD_PENDING && !1 === r.current && (_.default.track(N.rMx.USER_NITRO_TENURE_REWARD_ACKNOWLEDGED, {
         user_tenure_reward_id: null == e ? void 0 : e.tenureRewardStatusId,
         tenure_reward_id: e.tenureRewardSkuId,
         reward_type: null == e ? void 0 : e.tenureRewardType,
@@ -217,7 +217,7 @@ function B() {
   let t = (0, C.oY)({
     location: "Home"
   });
-  L(v.CL), L(I.XAJ, t), M(T.qY);
+  L(v.CL), L(N.XAJ, t), M(T.qY);
   let n = A(),
     r = null != (e = null == n ? void 0 : n.showCard) && e;
   i.useEffect(() => {

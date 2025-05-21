@@ -23,7 +23,7 @@ let m = (e, t) => (null == e ? void 0 : e.status) === c.Vq.EARNED ? u.intl.forma
     var e;
     let t = (0, c.Rw)(),
       n = null != (e = (0, c.GG)()) ? e : new Date,
-      r = (0, d.u)();
+      r = (0, d.u)(null == t ? void 0 : t.id);
     if (null == t || null == r) return null;
     let {
       id: p,

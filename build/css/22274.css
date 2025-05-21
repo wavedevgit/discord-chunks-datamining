@@ -1,6 +1,6 @@
 /**
   Module ID: 22274
-  Original File Name: 26096b79dccd06f1
+  Original File Name: d0b9be431ec8086c
 **/
 .container__2a3ed {
     color: var(--text-normal);
@@ -18,11 +18,16 @@
 }
 
 .closeButton__2a3ed.closeButton__2a3ed {
-    background-color: transparent;
+    background-color: var(--background-mod-subtle);
+    opacity: 0;
     position: absolute;
     right: 10px;
     top: 10px;
     z-index: 1
+}
+
+.loaded__2a3ed .closeButton__2a3ed.closeButton__2a3ed {
+    animation: reveal__2a3ed 1s linear 3s forwards
 }
 
 .spinner__2a3ed {
@@ -56,22 +61,22 @@
 }
 
 .nitroLogo__2a3ed {
-    bottom: 140px;
     left: 50%;
     position: absolute;
+    top: min(210px,calc(100% - 125px));
     transform: translateX(-50%)
 }
 
 .badgeText__2a3ed {
     -webkit-background-clip: text;
     background-clip: text;
-    bottom: 105px;
     color: transparent;
     font-size: 30px;
     font-style: italic;
     position: absolute;
     text-align: center;
     text-transform: uppercase;
+    top: min(230px,calc(100% - 105px));
     transform-origin: bottom;
     width: 100%
 }
@@ -148,11 +153,11 @@
 }
 
 .subscribedText__2a3ed {
-    bottom: 80px;
     margin-top: 20px;
     opacity: 0;
     position: absolute;
     text-align: center;
+    top: min(250px,calc(100% - 85px));
     width: 100%
 }
 
@@ -162,12 +167,12 @@
 
 .actionButtons__2a3ed {
     align-items: center;
-    bottom: 15px;
     display: none;
     gap: 8px;
     justify-content: center;
     opacity: 0;
     position: absolute;
+    top: min(340px,calc(100% - 40px));
     width: 100%
 }
 
@@ -179,4 +184,4 @@
     display: flex
 }
 
-/*# sourceMappingURL=26096b79dccd06f1.css.map*/
+/*# sourceMappingURL=d0b9be431ec8086c.css.map*/

@@ -29,9 +29,9 @@ let v = e => {
       isAllPerksVisible: s,
       setIsAllPerksVisible: v,
       previousComponent: T,
-      isFullScreen: I
+      isFullScreen: N
     } = e,
-    N = r.useRef(null),
+    I = r.useRef(null),
     y = r.useRef(null),
     A = Object.entries((0, _.Z)()).reduce((e, t) => {
       let [n, i] = t;
@@ -52,7 +52,7 @@ let v = e => {
       [O.open]: s,
       [O.openCloseReduceMotion]: Z
     }),
-    ref: N,
+    ref: I,
     children: (0, i.jsx)("div", {
       className: O.container,
       children: (0, i.jsxs)(g.Gt, {
@@ -79,7 +79,7 @@ let v = e => {
               perksCards: A,
               variant: x.gM.CARD_CAROUSEL_FIRST_ROW,
               isPremiumSubscriber: w,
-              isFullScreen: I,
+              isFullScreen: N,
               fractionalState: k,
               isInReverseTrial: L
             }),
@@ -95,7 +95,7 @@ let v = e => {
               perksCards: A,
               variant: x.gM.CARD_CAROUSEL_SECOND_ROW,
               isPremiumSubscriber: w,
-              isFullScreen: I,
+              isFullScreen: N,
               fractionalState: k,
               isInReverseTrial: L
             }),
@@ -111,7 +111,7 @@ let v = e => {
               perksCards: A,
               variant: x.gM.CARD_CAROUSEL_THIRD_ROW,
               isPremiumSubscriber: w,
-              isFullScreen: I,
+              isFullScreen: N,
               fractionalState: k,
               isInReverseTrial: L
             }),

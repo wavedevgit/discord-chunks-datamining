@@ -1,6 +1,6 @@
 /**
   Module ID: 8787
-  Original File Name: cfe9f93f7de15a13
+  Original File Name: 010c506fdd189beb
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -1710,6 +1710,61 @@ h1.title_feb59c,h2.title_feb59c {
     align-items: center;
     display: flex;
     gap: 3px
+}
+
+.contents_ce2e74 {
+    align-items: center;
+    background: var(--background-surface-high);
+    border-radius: var(--radius-md);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 16px;
+    max-width: 274px;
+    padding: 20px;
+    text-align: center
+}
+
+.badgeImage_ce2e74 {
+    margin-bottom: 8px;
+    min-height: 108px;
+    width: 130px
+}
+
+.subtitle_ce2e74 {
+    width: 250px
+}
+
+.closeButton_ce2e74 {
+    position: absolute;
+    right: 10px;
+    top: 10px
+}
+
+.checkItOutButton_ce2e74 {
+    font-weight: 600;
+    margin-top: 8px
+}
+
+.pointer_ce2e74 {
+    bottom: -5px;
+    height: 0;
+    left: 50%;
+    width: 0
+}
+
+.pointer_ce2e74,.pointer_ce2e74:after {
+    position: absolute;
+    transform: translateX(-50%)
+}
+
+.pointer_ce2e74:after {
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 15px solid var(--background-surface-high);
+    content: "";
+    top: -6px
 }
 
 .profileThemesArt__0a176 {
@@ -18746,4 +18801,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=cfe9f93f7de15a13.css.map*/
+/*# sourceMappingURL=010c506fdd189beb.css.map*/

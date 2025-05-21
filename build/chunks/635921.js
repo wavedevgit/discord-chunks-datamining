@@ -1,6 +1,6 @@
 /** Chunk was on 8787 **/
 n.d(t, {
-  PK: () => I,
+  PK: () => N,
   ZP: () => A,
   _O: () => y
 }), n(953529);
@@ -28,7 +28,7 @@ var i = n(255367),
   S = n(474936),
   v = n(388032),
   T = n(909176);
-let I = e => {
+let N = e => {
     let {
       inOfferExperience: t,
       subscriptionTier: n,
@@ -52,7 +52,7 @@ let I = e => {
       children: [c, " ", d]
     })
   },
-  N = e => {
+  I = e => {
     let {
       isFullscreen: t
     } = e;
@@ -128,7 +128,7 @@ let A = r.forwardRef((e, t) => {
             className: l()(T.button, C),
             forceWhite: !0
           })
-        }) : (0, i.jsx)(I, {
+        }) : (0, i.jsx)(N, {
           subscriptionTier: null != (r = null != O ? O : null == k || null == (n = k.subscription_trial) ? void 0 : n.sku_id) ? r : w,
           inOfferExperience: L,
           buttonClassName: C,
@@ -137,7 +137,7 @@ let A = r.forwardRef((e, t) => {
           variant: "text-md/normal",
           withBottomMargin: !1
         })]
-      }), !L && (0, i.jsx)(N, {
+      }), !L && (0, i.jsx)(I, {
         isFullscreen: s
       })]
     })

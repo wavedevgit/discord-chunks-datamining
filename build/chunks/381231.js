@@ -1,4 +1,4 @@
-/** Chunk was on 75293 **/
+/** Chunk was on 35 **/
 e.exports = {
   filters: "filters_c485a2",
   filterBtn: "filterBtn_c485a2",

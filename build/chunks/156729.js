@@ -1,6 +1,6 @@
 /** Chunk was on 8787 **/
 n.d(t, {
-  Z: () => I
+  Z: () => N
 }), n(388685), n(35282);
 var i, r = n(255367),
   s = n(73800),
@@ -297,7 +297,7 @@ j(T, "defaultProps", {
   onSubmit: () => {},
   onCancel: () => {}
 });
-let I = c.ZP.connectStores([h.Z], () => ({
+let N = c.ZP.connectStores([h.Z], () => ({
   updateError: h.Z.editSourceError,
   removeError: h.Z.removeSourceError
 }))(T)

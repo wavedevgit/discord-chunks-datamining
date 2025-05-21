@@ -33,8 +33,8 @@ function v() {
     {
       canSetInputDevice: v,
       canSetOutputDevice: T,
-      inputDeviceId: I,
-      outputDeviceId: N
+      inputDeviceId: N,
+      outputDeviceId: I
     } = (0, a.cj)([h.Z], () => ({
       canSetInputDevice: h.Z.supports(E.AN.AUDIO_INPUT_DEVICE),
       canSetOutputDevice: h.Z.supports(E.AN.AUDIO_OUTPUT_DEVICE),
@@ -44,8 +44,8 @@ function v() {
     y = (0, g.Z)(),
     A = (0, m.Z)(),
     P = r.useMemo(() => {
-      let e = l()(y).find(e => e.id === I),
-        t = l()(A).find(e => e.id === N),
+      let e = l()(y).find(e => e.id === N),
+        t = l()(A).find(e => e.id === I),
         n = S.some(t => {
           var n;
           return null == e || null == (n = e.hardwareId) ? void 0 : n.startsWith(t)
@@ -55,7 +55,7 @@ function v() {
           return null == t || null == (n = t.hardwareId) ? void 0 : n.startsWith(e)
         });
       return n && i && (null == e ? void 0 : e.containerId) != null && e.containerId === (null == t ? void 0 : t.containerId)
-    }, [y, A, I, N]);
+    }, [y, A, N, I]);
   v || (e = (0, i.jsx)(c.R94, {
     type: c.R94.Types.DESCRIPTION,
     className: O.marginTop8,
@@ -108,7 +108,7 @@ function v() {
         children: (0, i.jsxs)(c.xJW, {
           title: C.intl.string(C.t.hHMYbW),
           children: [(0, i.jsx)(c.q4e, {
-            value: I,
+            value: N,
             onChange: e => d.Z.setInputDevice(e, {
               location: "Settings",
               analyticsLocations: s
@@ -133,7 +133,7 @@ function v() {
         children: (0, i.jsxs)(c.xJW, {
           title: C.intl.string(C.t.dl18zc),
           children: [(0, i.jsx)(c.q4e, {
-            value: N,
+            value: I,
             onChange: e => d.Z.setOutputDevice(e, {
               location: "Settings",
               analyticsLocations: s
