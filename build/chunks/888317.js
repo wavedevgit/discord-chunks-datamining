@@ -1,32 +1,31 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => u
+  Z: () => l
 });
 var r = n(255367),
   i = n(481060),
-  o = n(499254),
-  a = n(827498),
-  s = n(541716),
-  l = n(26033),
-  c = n(388032);
+  o = n(26033),
+  a = n(614716),
+  s = n(388032);
 
-function u(e) {
+function l(e) {
   let {
     display: t,
     entry: n,
-    onAction: u,
-    onClose: d
-  } = e;
-  return "recent" === t && (0, l.Mq)(n) ? (0, r.jsx)(i.sNh, {
+    onAction: l,
+    onClose: c
+  } = e, u = (0, o.Mq)(n), d = (0, a.Z)({
+    applicationId: u ? n.extra.application_id : void 0,
+    onClose: c
+  });
+  return "recent" === t && u ? (0, r.jsx)(i.sNh, {
     id: "view-activity",
-    label: c.intl.string(c.t.GDWYR0),
+    label: s.intl.string(s.t.GDWYR0),
     action: () => {
-      null == u || u({
+      null == l || l({
         action: "PRESS_VIEW_ACTIVITY_MENU_ITEM"
-      }), null == d || d(), (0, o.__)(a._b.TEXT, s.Ie.NORMAL, {
-        applicationId: n.extra.application_id
-      })
+      }), d()
     }
   }) : null
 }

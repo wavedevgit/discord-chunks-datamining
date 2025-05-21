@@ -16,15 +16,15 @@ var r = n(255367),
   f = n(113434),
   v = n(569984),
   g = n(497505),
-  b = n(918701),
-  E = n(373370),
+  E = n(918701),
+  b = n(373370),
   O = n(475595),
   h = n(566078),
   S = n(164495),
   C = n(472144),
   j = n(602667),
-  y = n(644646),
-  _ = n(604162),
+  _ = n(644646),
+  y = n(604162),
   x = n(747717),
   D = n(963123),
   P = n(281055),
@@ -33,7 +33,7 @@ var r = n(255367),
   k = n(388032),
   I = n(844136);
 
-function w(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,7 +52,7 @@ function w(e) {
   return e
 }
 
-function A(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -75,11 +75,11 @@ function L(e) {
     videoSessionId: R,
     impressionRef: M,
     parentModalOpenStartClockTime: V
-  } = e, B = (0, b.il)(P), F = (0, f.tP)(P), Z = (0, a.e7)([d.Z], () => d.Z.getState().theme), U = (0, s.wj)(Z) ? N.BRd.DARK : N.BRd.LIGHT, q = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), Y = (0, p.aM)(), Q = (0, E.up)(T.dr.VIDEO_MODAL), [G, z] = l.useState(B.progressSeconds), [H, K] = l.useState(!1), {
+  } = e, B = (0, E.il)(P), F = (0, f.tP)(P), Z = (0, a.e7)([d.Z], () => d.Z.getState().theme), U = (0, s.wj)(Z) ? N.BRd.DARK : N.BRd.LIGHT, q = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), Y = (0, p.aM)(), Q = (0, b.up)(T.dr.VIDEO_MODAL), [G, z] = l.useState(B.progressSeconds), [H, K] = l.useState(!1), {
     completedRatio: W,
     completedRatioDisplay: X
-  } = (0, f.I)(P), [$, J] = (0, _.G6)(k.intl.string(k.t.RDE0SU), k.intl.string(k.t["+5kSoa"]), 1700), ee = null != (0, b.LM)(P.config), et = (null == (t = P.userStatus) ? void 0 : t.claimedAt) != null ? ee ? k.intl.string(k.t.WYchdX) : k.intl.string(k.t.vTgCW1) : Q, en = l.useCallback(() => {
-    (0, b.f2)(P.id, {
+  } = (0, f.I)(P), [$, J] = (0, y.G6)(k.intl.string(k.t.RDE0SU), k.intl.string(k.t["+5kSoa"]), 1700), ee = null != (0, E.LM)(P.config), et = (null == (t = P.userStatus) ? void 0 : t.claimedAt) != null ? ee ? k.intl.string(k.t.WYchdX) : k.intl.string(k.t.vTgCW1) : Q, en = l.useCallback(() => {
+    (0, E.f2)(P.id, {
       content: g.jn.VIDEO_MODAL,
       ctaContent: m.jZ.COPY_QUEST_URL,
       impressionId: Y
@@ -105,7 +105,7 @@ function L(e) {
             children: [(0, r.jsxs)(c.P3F, {
               className: I.contentHeaderGameInfo,
               onClick: () => {
-                (0, b.FE)(P, {
+                (0, E.FE)(P, {
                   content: g.jn.VIDEO_MODAL,
                   ctaContent: m.jZ.OPEN_GAME_LINK,
                   impressionId: Y
@@ -138,7 +138,7 @@ function L(e) {
               onTooltipHide: () => {
                 K(!1)
               },
-              children: e => (0, r.jsx)(c.P3F, A(w({
+              children: e => (0, r.jsx)(c.P3F, w(A({
                 className: I.progressCont
               }, e), {
                 children: (0, r.jsx)(C.Z, {
@@ -147,7 +147,7 @@ function L(e) {
                   percentComplete: W,
                   percentCompleteText: H ? X : void 0,
                   percentCompleteTextVariant: "text-sm/medium",
-                  children: (0, r.jsx)(y.Z, {
+                  children: (0, r.jsx)(_.Z, {
                     className: I.questProgressRewardTile,
                     quest: P,
                     questContent: g.jn.VIDEO_MODAL,
@@ -190,7 +190,7 @@ function L(e) {
                 disabled: (null == (o = P.userStatus) ? void 0 : o.completedAt) == null,
                 ctaLabel: et,
                 onClick: () => {
-                  ((0, b.xN)(P.config) || (0, b.Bg)(P.config)) && j()
+                  ((0, E.xN)(P.config) || (0, E.Bg)(P.config)) && j()
                 }
               })]
             })]
@@ -229,7 +229,7 @@ function R(e) {
     questContent: g.jn.VIDEO_MODAL,
     minViewTimeSeconds: P.zw,
     trackGuildAndChannelMetadata: !0,
-    children: e => (0, r.jsx)(L, A(w({}, i), {
+    children: e => (0, r.jsx)(L, w(A({}, i), {
       parentModalOpenStartClockTime: o,
       impressionRef: e,
       quest: c,
