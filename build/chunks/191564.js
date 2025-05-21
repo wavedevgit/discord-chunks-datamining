@@ -17,8 +17,8 @@ var n = r(255367),
   g = r(767714),
   h = r(150039),
   b = r(594174),
-  j = r(626135),
-  x = r(74538),
+  x = r(626135),
+  j = r(74538),
   y = r(934261),
   O = r(52268),
   P = r(981631),
@@ -59,7 +59,7 @@ function C(e) {
         subscriptionTier: v.Si.TIER_2,
         showGradient: b,
         textOptions: {
-          textOverride: x.ZP.isPremium(t) ? _.intl.string(_.t.KXLX7u) : b ? _.intl.string(_.t.pj0XBA) : _.intl.string(_.t.mr4K7O)
+          textOverride: j.ZP.isPremium(t) ? _.intl.string(_.t.KXLX7u) : b ? _.intl.string(_.t.pj0XBA) : _.intl.string(_.t.mr4K7O)
         }
       })]
     }), b && (0, u.G1)(r) && (0, n.jsx)(m.Z, {
@@ -81,18 +81,18 @@ function w(e) {
     analyticsLocations: g
   } = e, {
     pendingProfileEffectId: b
-  } = (0, h.bd)(r), [j, P] = i.useMemo(() => {
+  } = (0, h.bd)(r), [x, P] = i.useMemo(() => {
     let e = (0, u.bl)(l, c);
     return [e.purchased, e.shopPreviews]
   }, [l, c]), [v, w] = i.useState(() => null != p ? p : void 0 !== b ? b : null == m ? null : null != m ? m : null), [I, S] = i.useMemo(() => {
     var e;
-    let t = j.find(e => (null == e ? void 0 : e.id) === v),
+    let t = x.find(e => (null == e ? void 0 : e.id) === v),
       r = null != t || null === v;
     return [null != (e = null != t ? t : P.find(e => (null == e ? void 0 : e.id) === v)) ? e : null, r]
-  }, [v, j, P]), {
+  }, [v, x, P]), {
     product: N,
     purchase: Z
-  } = (0, d.Z)(null == I ? void 0 : I.skuId), k = i.useRef(null), D = x.ZP.canUseCollectibles(t), A = v === (void 0 === b ? null != m ? m : null : b), T = i.useCallback(e => {
+  } = (0, d.Z)(null == I ? void 0 : I.skuId), k = i.useRef(null), D = j.ZP.canUseCollectibles(t), A = v === (void 0 === b ? null != m ? m : null : b), T = i.useCallback(e => {
     w(e)
   }, [w]), B = i.useCallback(e => {
     f(), (0, a.mK)({
@@ -158,11 +158,11 @@ function I(e) {
     isFetching: p,
     categories: m,
     purchases: g
-  } = (0, f.Z)("ProfileEffectModal"), x = (0, l.e7)([b.default], () => b.default.getCurrentUser()), {
+  } = (0, f.Z)("ProfileEffectModal"), j = (0, l.e7)([b.default], () => b.default.getCurrentUser()), {
     analyticsLocations: y
-  } = (0, c.ZP)(r, s.Z.EDIT_PROFILE_EFFECT_MODAL), O = (0, h.Kg)(x, u);
+  } = (0, c.ZP)(r, s.Z.EDIT_PROFILE_EFFECT_MODAL), O = (0, h.Kg)(j, u);
   return i.useEffect(() => {
-    j.default.track(P.rMx.OPEN_MODAL, {
+    x.default.track(P.rMx.OPEN_MODAL, {
       type: P.jXE.PROFILE_EFFECT_CUSTOMIZATION,
       location_stack: y
     })
@@ -176,7 +176,7 @@ function I(e) {
         className: E.spinner,
         type: o.$jN.Type.SPINNING_CIRCLE
       }) : (0, n.jsx)(w, {
-        user: x,
+        user: j,
         guild: u,
         categories: m,
         purchases: g,

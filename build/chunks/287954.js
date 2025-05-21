@@ -108,7 +108,7 @@ function g(e) {
     resetInteraction: O,
     interactionSourceId: v,
     interactionPopoutTargetRef: I
-  } = (0, o.Xo)(), S = f === c.lY.MODAL ? (0, a.z)(t.id, n) : void 0, T = y === E.sourceType && b === c.P.REACT, A = y === E.sourceType && b === c.P.REPLY, N = (T || A) && v === E.sourceId;
+  } = (0, o.Xo)(), S = [c.lY.MODAL, c.lY.MODAL_V2].includes(f) ? (0, a.z)(t.id, n) : void 0, T = y === E.sourceType && b === c.P.REACT, A = y === E.sourceType && b === c.P.REPLY, N = (T || A) && v === E.sourceId;
   return (0, r.jsx)(i.yRy, _(d({
     targetElementRef: null != I ? I : void 0,
     renderPopout: e => {

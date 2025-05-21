@@ -18,8 +18,8 @@ var i = r(392711),
   g = r(678135),
   h = r(643879),
   b = r(350327),
-  j = r(687158),
-  x = r(706454),
+  x = r(687158),
+  j = r(706454),
   y = r(695346),
   O = r(265159),
   P = r(25990),
@@ -53,7 +53,7 @@ let S = e => {
       pendingProfileEffectRecord: r,
       product: f,
       purchase: p
-    } = e, g = (0, a.P)("ProfileEffectDescription"), h = (0, l.e7)([v.default], () => v.default.getCurrentUser()), b = (0, l.e7)([s.Z], () => s.Z.getProduct(null == r ? void 0 : r.skuId)), j = (0, l.e7)([x.default], () => x.default.locale), y = E.ZP.canUseCollectibles(h), O = (0, c.qS)(p), P = (0, c.G1)(f), I = !y && O, S = (null == p ? void 0 : p.expiresAt) != null ? (0, _.TD)(Date.now(), p.expiresAt) : null, Z = (0, d.a)(p), k = (0, u.k)(b), D = (0, m.M)(!P || y), A = N(I, P, y, D);
+    } = e, g = (0, a.P)("ProfileEffectDescription"), h = (0, l.e7)([v.default], () => v.default.getCurrentUser()), b = (0, l.e7)([s.Z], () => s.Z.getProduct(null == r ? void 0 : r.skuId)), x = (0, l.e7)([j.default], () => j.default.locale), y = E.ZP.canUseCollectibles(h), O = (0, c.qS)(p), P = (0, c.G1)(f), I = !y && O, S = (null == p ? void 0 : p.expiresAt) != null ? (0, _.TD)(Date.now(), p.expiresAt) : null, Z = (0, d.a)(p), k = (0, u.k)(b), D = (0, m.M)(!P || y), A = N(I, P, y, D);
     return null != r ? (0, n.jsx)("div", {
       className: t ? w.effectDescriptionNoGradient : w.effectDescriptionBorderWithGradient,
       children: (0, n.jsxs)("div", {
@@ -80,13 +80,13 @@ let S = e => {
           color: "text-muted",
           className: w.effectPurchasedAt,
           children: [C.intl.format(C.t.gW9R4O, {
-            date: p.purchasedAt.toLocaleDateString(j, {
+            date: p.purchasedAt.toLocaleDateString(x, {
               month: "long",
               year: "numeric"
             })
           }), null != p.expiresAt && (0, n.jsxs)(n.Fragment, {
             children: [(0, n.jsx)("br", {}), C.intl.format(C.t.eZSTa2, {
-              date: p.expiresAt.toLocaleDateString(j, {
+              date: p.expiresAt.toLocaleDateString(x, {
                 minute: "numeric",
                 hour: "numeric",
                 day: "numeric",
@@ -116,7 +116,7 @@ let S = e => {
       guild: d
     } = e, {
       pendingGlobalName: m,
-      pendingNickname: x,
+      pendingNickname: j,
       pendingPronouns: v,
       pendingBio: _,
       pendingBanner: C,
@@ -128,11 +128,11 @@ let S = e => {
       pendingNickname: void 0,
       pendingGlobalName: void 0,
       pendingAccentColor: void 0
-    }, null != d ? f.Z.getAllPending() : P.Z.getAllPending())), A = E.ZP.isPremium(o), T = E.ZP.canUsePremiumProfileCustomization(o), B = (0, j.ZP)(o.id), G = !!(null == B ? void 0 : B.getPreviewBio(_).value), R = {
+    }, null != d ? f.Z.getAllPending() : P.Z.getAllPending())), A = E.ZP.isPremium(o), T = E.ZP.canUsePremiumProfileCustomization(o), B = (0, x.ZP)(o.id), G = !!(null == B ? void 0 : B.getPreviewBio(_).value), R = {
       user: o,
       guild: d,
       pendingGlobalName: m,
-      pendingNickname: x,
+      pendingNickname: j,
       pendingPronouns: v,
       pendingBio: y.dN.useSetting() && null != _ ? p.ZP.parse(void 0, _).content : _,
       pendingBanner: C,
