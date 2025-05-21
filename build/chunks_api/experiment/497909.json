@@ -1,0 +1,1 @@
+{"id":"497909","type":"experiment","data":{"kind":"user","id":"e.id","label":"'libdiscore '.concat(e.feature, ' Migration')","defaultConfig":{"enabled":false},"treatments":[{"id":0,"label":"Control","config":{"enabled":false}},{"id":1,"label":"'Use libdiscore '.concat(e.feature)","config":{"enabled":false}}]},"fromModule":{"id":"web.js"}}
