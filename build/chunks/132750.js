@@ -14,7 +14,7 @@ var i = n(255367),
   g = n(906732),
   m = n(51144),
   p = n(429467),
-  h = n(981631),
+  h = n(676035),
   f = n(388032),
   b = n(493456);
 
@@ -61,12 +61,7 @@ function x(e) {
     customStatusHoverOnlyRTCEntrypointEnabled: j
   } = e, {
     analyticsLocations: O
-  } = (0, g.ZP)(u.Z.RTC_PANEL), S = null == s ? void 0 : s.find(e => {
-    let {
-      type: t
-    } = e;
-    return t === h.IIU.CUSTOM_STATUS
-  }), v = r.useCallback(() => {
+  } = (0, g.ZP)(u.Z.RTC_PANEL), S = (0, h.a)(), v = r.useCallback(() => {
     (0, a.ZDy)(async () => {
       let e = (0, p.Z)(),
         {
@@ -109,7 +104,7 @@ function x(e) {
     })
   }, [O]), T = r.useMemo(() => null != E && E !== a.Skl.UNKNOWN && null != l && l.isPomelo() ? (0, i.jsx)(c.Z, {
     text: m.ZP.humanizeStatus(E)
-  }) : C, [E, l, C]), I = void 0 !== S, [N, y] = r.useState(!1), A = r.useMemo(() => (0, i.jsx)(_, {
+  }) : C, [E, l, C]), I = null != S, [N, y] = r.useState(!1), A = r.useMemo(() => (0, i.jsx)(_, {
     openModal: v,
     hasCustomStatus: I,
     className: b.customStatusActionHoverText,
