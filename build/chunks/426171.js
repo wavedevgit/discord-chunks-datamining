@@ -47,8 +47,7 @@ let h = "".concat("#").concat("itemSkuId", "="),
       });
       let e = o,
         f = (0, p.oQ)({
-          product: o,
-          tab: a
+          product: o
         }),
         g = setTimeout(() => {
           let i = document.getElementById("shop-item-".concat(e.skuId));

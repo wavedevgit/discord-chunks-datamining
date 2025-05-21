@@ -1,8 +1,9 @@
 /** Chunk was on 44022 **/
 n.d(t, {
-  Ip: () => g,
+  Ip: () => p,
   T4: () => c,
-  oQ: () => h
+  oQ: () => f,
+  oo: () => h
 }), n(539854);
 var i = n(932563),
   r = n(822857),
@@ -30,55 +31,119 @@ let u = e => {
     }).find(e => e.currency === a.pKx.DISCORD_ORB)) ? t : null
   },
   d = e => {
-    var t;
     let {
-      product: n,
-      isPremiumUser: i,
-      tab: l,
-      orbBalance: o
-    } = e, c = u({
-      product: n,
-      isPremiumUser: i
+      product: t,
+      isPremiumUser: n
+    } = e, i = u({
+      product: t,
+      isPremiumUser: n
     }), {
-      enabled: d
+      enabled: l
     } = (0, r.CE)({
-      location: "getShopProductPrices"
-    }), h = d ? c.find(e => e.currency === a.pKx.DISCORD_ORB) : void 0, g = c.find(e => e.currency !== a.pKx.DISCORD_ORB), p = [], f = [], E = 1 === c.length && null != h, m = null != h && null != o && o >= h.amount;
-    null != h && null != g ? (m ? p.push(h, g) : p.push(g, h), l === s.AW.ORBS ? f.push(h) : f.push(g, h)) : null != h ? (p.push(h), f.push(h)) : null != g && (p.push(g), l !== s.AW.ORBS && f.push(g));
-    let b = p.length > 0 && (null == (t = p[0]) ? void 0 : t.currency) === a.pKx.DISCORD_ORB;
+      location: "getShopBasePricingData"
+    }), o = l ? i.find(e => e.currency === a.pKx.DISCORD_ORB) : void 0, s = i.find(e => e.currency !== a.pKx.DISCORD_ORB), c = 1 === i.length && null != o;
     return {
-      displayPrices: f,
-      checkoutEligiblePrices: p,
-      isOrbExclusive: E,
-      hasSufficientOrbs: m,
-      shouldCheckoutWithOrbs: b
+      orbPrice: o,
+      fiatPrice: s,
+      isOrbExclusive: c
     }
   },
   h = e => {
     let {
-      tab: t,
-      product: n
-    } = e, r = (0, i.z)(), s = l.default.getCurrentUser(), {
-      shouldCheckoutWithOrbs: a
+      product: t,
+      isPremiumUser: n,
+      tab: i
+    } = e, {
+      orbPrice: r,
+      fiatPrice: l,
+      isOrbExclusive: o
     } = d({
-      product: n,
-      isPremiumUser: o.ZP.canUseCollectibles(s),
-      orbBalance: r,
-      tab: t
+      product: t,
+      isPremiumUser: n
+    }), a = [];
+    return i === s.AW.ORBS ? null != r && (a = [r]) : (null != l && a.push(l), null != r && a.push(r)), {
+      orbPrice: r,
+      fiatPrice: l,
+      isOrbExclusive: o,
+      displayPrices: a
+    }
+  },
+  g = e => {
+    var t;
+    let {
+      hasSufficientOrbs: n,
+      orbPrice: i,
+      fiatPrice: r,
+      isOrbExclusive: l
+    } = e, o = [];
+    null != i && null != r ? n ? o.push(i, r) : o.push(r, i) : null != i ? o.push(i) : null != r && o.push(r);
+    let s = o.length > 0 && (null == (t = o[0]) ? void 0 : t.currency) === a.pKx.DISCORD_ORB;
+    return {
+      checkoutEligiblePrices: o,
+      isOrbExclusive: l,
+      hasSufficientOrbs: n,
+      shouldCheckoutWithOrbs: s
+    }
+  },
+  f = e => {
+    let {
+      product: t
+    } = e, n = (0, i.zl)(), r = l.default.getCurrentUser(), {
+      orbPrice: s,
+      fiatPrice: a,
+      isOrbExclusive: u
+    } = d({
+      product: t,
+      isPremiumUser: o.ZP.canUseCollectibles(r)
+    }), c = null != s && null != n && n >= s.amount, {
+      shouldCheckoutWithOrbs: h
+    } = g({
+      orbPrice: s,
+      fiatPrice: a,
+      isOrbExclusive: u,
+      hasSufficientOrbs: c
     });
-    return a
+    return h
   };
 
-function g(e) {
+function p(e) {
   let {
     product: t,
     isPremiumUser: n,
     tab: r
-  } = e;
-  return d({
+  } = e, {
+    orbPrice: l,
+    fiatPrice: o,
+    isOrbExclusive: s,
+    displayPrices: a
+  } = h({
     product: t,
     isPremiumUser: n,
-    tab: r,
-    orbBalance: (0, i.c)()
-  })
+    tab: r
+  }), u = (0, i.V_)(null != l ? l.amount : null);
+  return function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var n = null != arguments[t] ? arguments[t] : {},
+        i = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), i.forEach(function(t) {
+        var i;
+        i = n[t], t in e ? Object.defineProperty(e, t, {
+          value: i,
+          enumerable: !0,
+          configurable: !0,
+          writable: !0
+        }) : e[t] = i
+      })
+    }
+    return e
+  }({
+    displayPrices: a
+  }, g({
+    orbPrice: l,
+    fiatPrice: o,
+    isOrbExclusive: s,
+    hasSufficientOrbs: u
+  }))
 }

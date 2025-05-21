@@ -1,7 +1,7 @@
 /** Chunk was on 44022 **/
 n.d(t, {
   A2: () => E,
-  S3: () => f
+  S3: () => p
 });
 var i = n(73800),
   r = n(442837),
@@ -14,11 +14,11 @@ var i = n(73800),
   d = n(358085),
   h = n(731722),
   g = n(864133),
-  p = n(981631);
+  f = n(981631);
 
-function f(e) {
+function p(e) {
   let t = function(e) {
-    let t = (0, s.FT)(l.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : p.lds);
+    let t = (0, s.FT)(l.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : f.lds);
     return (0, r.e7)([u.Z, c.default, a.ZP], () => {
       var t, n;
       if (null === e) return !1;
@@ -31,7 +31,7 @@ function f(e) {
     }, [e]) && !t
   }(e);
   return ! function(e) {
-    let t = (0, s.FT)(l.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : p.lds),
+    let t = (0, s.FT)(l.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : f.lds),
       n = (0, r.e7)([g.Z], () => null === e ? null : g.Z.getGuildLastSeenInfo(e)),
       a = (0, r.e7)([c.default], () => {
         var e;
@@ -50,12 +50,12 @@ function f(e) {
           }
         })
       }, [e, h, t, n]), null == h || (null == a ? void 0 : a.identityGuildId) === e && (null == a ? void 0 : a.tag) === h) return !1;
-    let f = (null == a ? void 0 : a.identityGuildId) === e && (null == a ? void 0 : a.tag) === null || (0, d.isDesktop)(),
+    let p = (null == a ? void 0 : a.identityGuildId) === e && (null == a ? void 0 : a.tag) === null || (0, d.isDesktop)(),
       E = null === n || (null == n ? void 0 : n.tag) === h;
-    return f && !E && t
+    return p && !E && t
   }(e) ? t ? "available" : null : "changed"
 }
 
 function E(e) {
-  return null !== f(e)
+  return null !== p(e)
 }

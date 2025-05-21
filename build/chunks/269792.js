@@ -22,43 +22,51 @@ var a = d(255367),
 
 function U() {
   var e;
-  let [t, d] = n.useState(!1), [c, i] = n.useState(!0), u = (0, E.Z)(), p = null == u ? void 0 : u.currentBadge.id;
+  let t = n.useRef(null),
+    [d, c] = n.useState(!1),
+    [i, u] = n.useState(!0),
+    p = (0, E.Z)(),
+    b = null == p ? void 0 : p.currentBadge.id;
   n.useEffect(() => {
-    if (null != p) return (0, r.wH)(o.z.NITRO_TENURE_BADGE_LEVEL_UP, (0, _.q)(p), {
+    if (null != b) return (0, r.wH)(o.z.NITRO_TENURE_BADGE_LEVEL_UP, (0, _.q)(b), {
       dismissAction: h.L.INDIRECT_ACTION
     }), () => f.Z.setState({
       shouldRenderTenureLevelUp: !1
     })
-  }, [p]);
-  let b = n.useCallback(() => {
-      d(!0)
+  }, [b]);
+  let U = n.useCallback(() => {
+      c(!0)
     }, []),
-    U = n.useCallback(() => {
-      i(!1)
+    M = n.useCallback(() => {
+      u(!1)
     }, []);
-  if (!c || null == u) return null;
-  let M = {
-    "--custom-old-badge-color": "linear-gradient(to right, ".concat(null != (e = u.prevBadgeTextGradient) ? e : "transparent", ")"),
-    "--custom-new-badge-color": "linear-gradient(to right, ".concat(u.currentBadgeTextGradient, ")")
+  if (!i || null == p) return null;
+  let N = {
+    "--custom-old-badge-color": "linear-gradient(to right, ".concat(null != (e = p.prevBadgeTextGradient) ? e : "transparent", ")"),
+    "--custom-new-badge-color": "linear-gradient(to right, ".concat(p.currentBadgeTextGradient, ")")
   };
   return (0, a.jsxs)("div", {
+    ref: t,
     className: s()(m.container, {
-      [m.loaded]: t
+      [m.loaded]: d
     }),
-    style: M,
-    children: [t && (0, a.jsx)(l.M0o, {
-      className: m.closeButton,
-      tooltip: T.intl.string(T.t.cpT0Cg),
-      color: l.YX$.SECONDARY,
-      size: l.tT7.SIZE_24,
-      icon: (0, a.jsx)(l.Dio, {
-        size: "xs",
-        color: "currentColor"
-      }),
-      onClick: U
+    style: N,
+    children: [d && (0, a.jsx)(l.EqS, {
+      containerRef: t,
+      children: (0, a.jsx)(l.M0o, {
+        className: m.closeButton,
+        tooltip: T.intl.string(T.t.cpT0Cg),
+        color: l.YX$.SECONDARY,
+        size: l.tT7.SIZE_24,
+        icon: (0, a.jsx)(l.Dio, {
+          size: "xs",
+          color: "currentColor"
+        }),
+        onClick: M
+      })
     }), (0, a.jsx)(g, {
-      onVideoLoaded: b,
-      levelUpData: u
+      onVideoLoaded: U,
+      levelUpData: p
     })]
   })
 }

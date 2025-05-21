@@ -170,7 +170,7 @@ let N = {
       isRedeeming: O,
       orbRedemptionError: S,
       orbProductContext: v
-    } = (0, E.C)(), T = (0, _.c)(), N = (0, r.useRef)(T);
+    } = (0, E.C)(), T = (0, _.cR)(), N = (0, r.useRef)(T);
     (0, l.ZP)(() => {
       f(C.rMx.PAYMENT_FLOW_LOADED)
     }), (0, r.useEffect)(() => {

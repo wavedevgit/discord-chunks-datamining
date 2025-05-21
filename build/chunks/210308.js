@@ -106,7 +106,9 @@ function S(e) {
     }), (0, i.jsx)(a.Text, {
       variant: "text-sm/medium",
       className: j.subtitle,
-      children: C.intl.string(C.t.ZGKm3t)
+      children: C.intl.formatToPlainString(C.t.WggHRU, {
+        badge: C.intl.string(u.nameUnformatted)
+      })
     }), (0, i.jsx)(a.zxk, {
       className: j.checkItOutButton,
       color: a.Ttl.WHITE,

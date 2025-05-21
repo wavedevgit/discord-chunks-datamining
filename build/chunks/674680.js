@@ -1,6 +1,6 @@
 /** Chunk was on 44022 **/
 n.d(t, {
-  Z: () => f
+  Z: () => p
 });
 var i = n(255367);
 n(73800);
@@ -36,31 +36,31 @@ let g = {
     locked: c.Il.PRIMARY_400,
     unlocked: c.Il.GREEN_330
   },
-  p = {
+  f = {
     trophy: c.Il.PRIMARY_400,
     locked: c.Il.PRIMARY_400,
     unlocked: c.Il.GREEN_330
   };
 
-function f(e) {
+function p(e) {
   var t;
   let {
     achievementId: n,
     unlocked: c,
-    size: f = l.EFr.SIZE_40
-  } = e, E = (0, o.ZP)(), m = (0, u.oX)(n);
-  if (null == m) return null;
-  let b = (0, l.UCu)(f),
+    size: p = l.EFr.SIZE_40
+  } = e, E = (0, o.ZP)(), b = (0, u.oX)(n);
+  if (null == b) return null;
+  let m = (0, l.UCu)(p),
     {
       name: _,
       rarity: O
-    } = m,
+    } = b,
     {
       color: C
     } = (0, u.F7)(O),
-    v = (0, r.wj)(E) ? g : p,
-    y = (b.size - b.offset - 2 * b.stroke) * .8,
-    L = b.size - b.stroke,
+    v = (0, r.wj)(E) ? g : f,
+    y = (m.size - m.offset - 2 * m.stroke) * .8,
+    L = m.size - m.stroke,
     T = {
       width: .4 * y,
       height: .4 * y
@@ -68,8 +68,8 @@ function f(e) {
     S = {
       width: T.width + 1,
       height: T.height + 1,
-      right: b.stroke + 1,
-      bottom: b.stroke + 1,
+      right: m.stroke + 1,
+      bottom: m.stroke + 1,
       padding: 0
     };
   return (0, i.jsxs)("div", {
@@ -77,7 +77,7 @@ function f(e) {
     style: {
       width: L,
       height: L,
-      padding: b.stroke
+      padding: m.stroke
     },
     "aria-label": "".concat(null != (t = _()) ? t : ""),
     children: [(0, i.jsx)("div", {
@@ -104,4 +104,4 @@ function f(e) {
     })]
   })
 }
-f.Sizes = l.EFr
+p.Sizes = l.EFr

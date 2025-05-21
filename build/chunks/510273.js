@@ -70,12 +70,12 @@ function g(e) {
   } = e, {
     name: l,
     description: g,
-    rarity: p,
-    hideDescriptionUntilUnlock: f,
+    rarity: f,
+    hideDescriptionUntilUnlock: p,
     onAction: E
   } = t, {
-    color: m
-  } = (0, a.F7)(p);
+    color: b
+  } = (0, a.F7)(f);
   r.useEffect(() => {
     let e = setTimeout(() => {
       u.Z.playAchievementUnlockSound()
@@ -84,12 +84,12 @@ function g(e) {
       clearTimeout(e)
     }
   }, []);
-  let b = null != E && n,
-    _ = b ? s.P3F : "div";
+  let m = null != E && n,
+    _ = m ? s.P3F : "div";
   return (0, i.jsxs)(_, {
-    className: o()(d.container, b && d.actionable),
+    className: o()(d.container, m && d.actionable),
     onClick: () => {
-      b && E()
+      m && E()
     },
     children: [(0, i.jsx)("div", {
       className: d.iconContainer,
@@ -107,12 +107,12 @@ function g(e) {
       }), (0, i.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "header-secondary",
-        children: f && !n ? "?????" : g()
+        children: p && !n ? "?????" : g()
       })]
     }), (0, i.jsx)("div", {
       className: d.flair,
       children: (0, i.jsx)(h, {
-        color: m
+        color: b
       })
     })]
   })
