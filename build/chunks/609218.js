@@ -100,7 +100,6 @@ function P(e) {
           }), (0, r.jsx)(c.Text, {
             variant: "text-sm/medium",
             color: "text-secondary",
-            className: T.body,
             children: C
           })]
         })]

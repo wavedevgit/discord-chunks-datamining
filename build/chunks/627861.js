@@ -486,7 +486,7 @@ function eu(e) {
   }
   let eS = null != (x = null == w || null == (n = w.timestamps) ? void 0 : n.start) ? x : null == w ? void 0 : w.created_at,
     eI = null != eS ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(o.jje, {
+      children: [(0, r.jsx)(o.iWm, {
         size: "xxs"
       }), (0, r.jsx)(b.x3, {
         entry: {
