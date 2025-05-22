@@ -53,8 +53,8 @@ var i = n(255367),
   H = n(109590),
   z = n(660189),
   W = n(208970),
-  J = n(73315),
-  K = n(470623),
+  K = n(73315),
+  J = n(470623),
   X = n(196255),
   Y = n(858543),
   q = n(265641),
@@ -134,7 +134,7 @@ let el = 72,
     }), {
       ref: T,
       height: x
-    } = (0, b.ZP)(), S = (0, K.xH)(e => e.setCardHeight, d.X);
+    } = (0, b.ZP)(), S = (0, J.xH)(e => e.setCardHeight, d.X);
     r.useEffect(() => {
       null != x && S(t, x)
     }, [x, S, t]), r.useEffect(() => {
@@ -622,7 +622,7 @@ function eO(e) {
         shouldObscure: r,
         obscureReason: o,
         shouldShowAgeVerification: l
-      }), r && (0, i.jsx)(J.Z, {
+      }), r && (0, i.jsx)(K.Z, {
         iconClassname: ei.obscuredTag,
         obscureReason: o
       })]

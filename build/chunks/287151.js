@@ -48,8 +48,8 @@ var i, r = n(255367),
   H = n(960020),
   z = n(566006),
   W = n(886132),
-  J = n(183023),
-  K = n(524444),
+  K = n(183023),
+  J = n(524444),
   X = n(89729),
   Y = n(620652),
   q = n(640753),
@@ -561,12 +561,12 @@ let eh = o.memo(e => {
     return p ? null == l ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: et.reactionEmojiDetailsUnfurlGuildDetails,
-        children: (0, r.jsx)(J.Oe, {
+        children: (0, r.jsx)(K.Oe, {
           expressionSourceGuild: l,
           hasJoinedExpressionSourceGuild: a,
           isDisplayingJoinGuildButtonInPopout: c.type === W.$.JOIN_GUILD
         })
-      }), m && (0, r.jsx)(J.n_, {
+      }), m && (0, r.jsx)(K.n_, {
         emojiId: o,
         expressionSourceGuild: l,
         hasJoinedEmojiSourceGuild: a,
@@ -651,7 +651,7 @@ let eh = o.memo(e => {
             })
           })]
         })
-      })(), v ? (0, r.jsx)(K.SE, {
+      })(), v ? (0, r.jsx)(J.SE, {
         className: et.emojiDetailsLoader
       }) : A && (0, r.jsx)(ep, {
         emojiId: n,
