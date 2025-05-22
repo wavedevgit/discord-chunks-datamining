@@ -93,11 +93,12 @@ function y(e) {
 }
 
 function O(e, t) {
-  let n = a.RS.useSetting(),
-    r = a.NA.useSetting();
+  var n, r;
+  let o = a.RS.useSetting(),
+    s = a.NA.useSetting();
   if (null == e) return [];
-  let o = e.embeds;
-  return n && r && null != o ? o.map((e, n) => {
+  let l = (null == (n = e.messageSnapshots[0]) ? void 0 : n.moderatorReport) != null ? null == (r = e.messageSnapshots[0]) ? void 0 : r.message.embeds : e.embeds;
+  return o && s && null != l ? l.map((e, n) => {
     var r;
     let o = null != (r = e.image) ? r : e.thumbnail;
     if (null == o && null != e.images && (o = e.images[0]), null != o && null != o.url) {
