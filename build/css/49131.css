@@ -1,6 +1,6 @@
 /**
   Module ID: 49131
-  Original File Name: 424fa20d39a1f94e
+  Original File Name: d560a8d9d273290a
 **/
 .footer_fc958f {
     align-items: center;
@@ -61,6 +61,11 @@
 
 .originalMessageAuthorAvatar_fc958f {
     min-width: 40px
+}
+
+.newBadge_fc958f {
+    color: var(--brand-560);
+    margin-left: var(--spacing-4)
 }
 
 .container_c6ad88 {
@@ -2322,4 +2327,4 @@
     color: var(--text-link)
 }
 
-/*# sourceMappingURL=424fa20d39a1f94e.css.map*/
+/*# sourceMappingURL=d560a8d9d273290a.css.map*/

@@ -19,14 +19,14 @@ let o = (0, r.U)(e => ({
   setChassisMixAmount: t => {
     (0, i.j)(() => {
       e({
-        chassisMixAmount: t
+        chassisMixAmount: Math.round(t)
       })
     })
   },
   setGradientAngle: t => {
     (0, i.j)(() => {
       e({
-        gradientAngle: t
+        gradientAngle: Math.round(t)
       })
     })
   }

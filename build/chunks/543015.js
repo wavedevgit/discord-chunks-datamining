@@ -261,14 +261,12 @@ function ed(e) {
     hasMediaAttachment: i,
     originalAuthor: s
   } = e, {
-    isNew: o,
-    hasUnreads: c
+    hasUnreads: o
   } = (0, w.J$)(t);
   return (0, r.jsxs)("div", {
     className: a()(ei.body, ea.body),
     children: [(0, r.jsx)(E.ZP, {
-      channel: t,
-      isNew: o
+      channel: t
     }), (0, r.jsx)("div", {
       className: (ea.message, ei.message),
       children: (0, r.jsx)(eu, {
@@ -276,7 +274,7 @@ function ed(e) {
         message: n,
         content: l,
         hasMediaAttachment: i,
-        hasUnreads: c,
+        hasUnreads: o,
         originalAuthor: s
       })
     })]
@@ -337,7 +335,9 @@ function em(e) {
     channel: t,
     facepileRef: n,
     firstMessage: l
-  } = e, i = (0, C.Q)(t.id), a = (null == l ? void 0 : l.reactions) != null && l.reactions.length > 0;
+  } = e, {
+    isNew: i
+  } = (0, w.J$)(t), a = (0, C.Q)(t.id), s = (null == l ? void 0 : l.reactions) != null && l.reactions.length > 0;
   return (0, r.jsxs)("div", {
     className: ei.footer,
     children: [(0, r.jsxs)("div", {
@@ -349,10 +349,14 @@ function em(e) {
       }), (0, r.jsx)(g.Text, {
         variant: "text-sm/medium",
         children: t.name
-      })]
+      }), i ? (0, r.jsx)(g.IGR, {
+        color: g.TVs.unsafe_rawColors.BRAND_260.css,
+        text: el.intl.string(el.t.y2b7CA),
+        className: ei.newBadge
+      }) : null]
     }), (0, r.jsxs)("div", {
       className: ei.footerMessageSummary,
-      children: [a || null == l ? null : (0, r.jsx)(eg, {
+      children: [s || null == l ? null : (0, r.jsx)(eg, {
         firstMessage: l,
         channel: t
       }), (0, r.jsx)(eh, {
@@ -361,11 +365,11 @@ function em(e) {
       }), (0, r.jsx)("span", {
         className: ea.bullet,
         children: "•"
-      }), i.length > 0 ? (0, r.jsxs)("div", {
+      }), a.length > 0 ? (0, r.jsxs)("div", {
         className: ea.typing,
         children: [(0, r.jsx)(ex, {
           channel: t,
-          userIds: i,
+          userIds: a,
           facepileRef: n
         }), (0, r.jsx)("div", {
           className: ea.dots,

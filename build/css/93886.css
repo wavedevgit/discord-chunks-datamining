@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 612895c41a5d732f
+  Original File Name: f285b4ce7fd00d09
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -1486,6 +1486,10 @@
     border-radius: 4px;
     height: 24px;
     width: 24px
+}
+
+.saveButton__1436a {
+    margin-top: 16px
 }
 
 .container_f1a68f {
@@ -3506,4 +3510,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=612895c41a5d732f.css.map*/
+/*# sourceMappingURL=f285b4ce7fd00d09.css.map*/

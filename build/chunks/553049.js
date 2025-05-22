@@ -103,7 +103,8 @@ function v() {
       minValue: 0,
       maxValue: 360,
       onValueChange: y,
-      onValueRender: e => "".concat(e.toFixed(0), "\xb0")
+      onValueRender: e => "".concat(Math.round(e), "\xb0"),
+      keyboardStep: 1
     }), (0, a.jsx)(s.X6q, {
       className: f.subheader,
       variant: "heading-md/semibold",
@@ -114,7 +115,23 @@ function v() {
       defaultValue: 0,
       minValue: 0,
       maxValue: 100,
-      onValueChange: _
+      onValueChange: _,
+      keyboardStep: 1
+    }), (0, a.jsx)(s.zxk, {
+      className: f.saveButton,
+      onClick: () => {
+        (0, o.ZI)({
+          theme: N,
+          customUserThemeSettings: {
+            colors: n,
+            gradientColorStops: [],
+            gradientAngle: g,
+            baseMix: v
+          }
+        })
+      },
+      disabled: 0 === n.length,
+      children: "Save Theme"
     })]
   }) : null
 }
