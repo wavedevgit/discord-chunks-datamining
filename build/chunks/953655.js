@@ -13,22 +13,22 @@ var r = n(255367),
   u = n(381585),
   d = n(597688),
   f = n(506800),
-  b = n(788822),
-  p = n(215023),
+  p = n(788822),
+  b = n(215023),
   g = n(388032),
   h = n(806734);
 let m = e => {
     let {
       handleTransition: t,
       featuredBlockRecord: n
-    } = e, a = d.Z.getCategory(o.T.ROBERT), c = (0, f.c)("CollectiblesFeedShop") && null != a, u = d.Z.getCategory(o.T.ANIME_V2), m = l.useMemo(() => g.intl.string(new Date > p.gJ ? g.t.l0CjbW : g.t.uPewb2), []);
+    } = e, a = d.Z.getCategory(o.T.ROBERT), c = (0, f.c)("CollectiblesFeedShop") && null != a, u = d.Z.getCategory(o.T.ANIME_V2), m = l.useMemo(() => g.intl.string(new Date > b.gJ ? g.t.l0CjbW : g.t.uPewb2), []);
     return (0, r.jsx)("div", {
       className: i()(h.col2, h.centeredSection),
       children: null == n ? void 0 : n.subblocks.map((e, n) => {
         if (e.type === s.O.CATEGORY) {
           let l = null != e.unpublishedAt ? g.intl.string(g.t["h/uBCQ"]) : "1341506445245415424" === e.categoryStoreListingId ? g.intl.string(g.t.PsL3bW) : e.categoryStoreListingId === (null == u ? void 0 : u.storeListingId) ? g.intl.string(g.t["o/oRJC"]) : void 0,
             i = c && e.categoryStoreListingId === (null == a ? void 0 : a.storeListingId) ? m : l;
-          return (0, r.jsx)(b.q, {
+          return (0, r.jsx)(p.q, {
             subblock: e,
             badgeText: 0 === n ? l : i,
             handleTransition: t
@@ -44,7 +44,7 @@ let m = e => {
       categories: n
     } = e, l = (0, f.c)("CollectiblesFeedShop") && null != d.Z.getCategory(o.T.ROBERT);
     if (null == n || n.length < 2) return c.Z.captureMessage("Collectible Featured Block requires at least 2 categories"), null;
-    let [a, s] = n, m = (null == a ? void 0 : a.unpublishedAt) != null ? g.intl.string(g.t["h/uBCQ"]) : void 0, _ = g.intl.string(new Date > p.gJ ? g.t.l0CjbW : g.t.uPewb2), C = l ? _ : g.intl.string(g.t["o/oRJC"]);
+    let [a, s] = n, m = (null == a ? void 0 : a.unpublishedAt) != null ? g.intl.string(g.t["h/uBCQ"]) : void 0, _ = g.intl.string(new Date > b.gJ ? g.t.l0CjbW : g.t.uPewb2), C = l ? _ : g.intl.string(g.t["o/oRJC"]);
     return (0, r.jsx)("div", {
       className: i()(h.col2, h.centeredSection),
       children: (0, r.jsxs)(u.k0, {
@@ -52,11 +52,11 @@ let m = e => {
           categoryPosition: 1,
           pageSection: "featured_block"
         },
-        children: [null != a && (0, r.jsx)(b.q, {
+        children: [null != a && (0, r.jsx)(p.q, {
           category: a,
           badgeText: m,
           handleTransition: t
-        }), null != s && (0, r.jsx)(b.q, {
+        }), null != s && (0, r.jsx)(p.q, {
           category: s,
           badgeText: C,
           handleTransition: t

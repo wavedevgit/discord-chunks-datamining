@@ -13,8 +13,8 @@ var r = n(255367),
   u = n(481060),
   d = n(607070),
   f = n(70097),
-  b = n(688465),
-  p = n(341907),
+  p = n(688465),
+  b = n(341907),
   g = n(507808),
   h = n(594174),
   m = n(451478),
@@ -79,7 +79,7 @@ let L = {
       heroLogo: W,
       heroBannerStatic: V,
       heroBannerAnimated: U
-    } = (0, P.hr)(F), G = null == D ? void 0 : D.heroBanner, z = l.useMemo(() => Z(F.rankedSkuIds), [t, Z, F.rankedSkuIds]), q = (0, x.a)()(z), Y = (0, S.l)(q).slice(0, 4), $ = (0, k.St)(Y), K = v === T.AW.ORBS ? w.intl.string(w.t["1CdL8f"]) : w.intl.formatToPlainString(w.t.wvKYCg, {
+    } = (0, P.hr)(F), G = null == D ? void 0 : D.heroBanner, z = l.useMemo(() => Z(F.rankedSkuIds), [t, Z, F.rankedSkuIds]), q = (0, x.a)()(z), Y = (0, S.l)(q).slice(0, 4), K = (0, k.St)(Y), $ = v === T.AW.ORBS ? w.intl.string(w.t["1CdL8f"]) : w.intl.formatToPlainString(w.t.wvKYCg, {
       category_name: F.name
     });
     return null != A && (t || F !== L) ? (0, r.jsxs)("div", {
@@ -140,7 +140,7 @@ let L = {
                 variant: "heading-xxl/bold",
                 className: B.title,
                 color: "header-primary",
-                children: [F.title, v === T.AW.ORBS && (0, r.jsx)(b.Z, {})]
+                children: [F.title, v === T.AW.ORBS && (0, r.jsx)(p.Z, {})]
               }), (0, r.jsx)(u.Text, {
                 variant: v === T.AW.ORBS ? "text-lg/medium" : "text-md/normal",
                 className: v === T.AW.ORBS ? B.orbsSubHeaderText : (null == D ? void 0 : D.showDarkBannerText) ? B.subHeaderTextDark : B.subHeaderText,
@@ -160,11 +160,11 @@ let L = {
                   pageType: I.ZY5.SHOP_ORBS_TAB,
                   sectionType: I.jXE.ORBS_SHOP_HERO_BLOCK,
                   ctaObject: I.qAy.CTA_TO_QUEST_HOME
-                }), (0, p.navigateToQuestHome)({
+                }), (0, b.navigateToQuestHome)({
                   fromContent: o.j.ORBS_SHOP_HERO_CTA
                 })) : n("shop latest category hero", F.categorySkuId)
               },
-              children: K
+              children: $
             })
           })]
         }), (0, r.jsx)("div", {
@@ -174,7 +174,7 @@ let L = {
           children: t ? (0, r.jsx)(r.Fragment, {
             children: [void 0, void 0, void 0, void 0].map((e, t) => (0, r.jsx)(y.K, {}, t))
           }) : (0, r.jsx)(r.Fragment, {
-            children: $.map((e, t) => {
+            children: K.map((e, t) => {
               let n = C.Z.getCategoryForProduct(e.skuId);
               return null == e || null == n ? null : (0, r.jsx)(_.k0, {
                 newValue: {

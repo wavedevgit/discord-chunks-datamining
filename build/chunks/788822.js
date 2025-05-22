@@ -13,8 +13,8 @@ var r = n(255367),
   u = n(597688),
   d = n(297651),
   f = n(794324),
-  b = n(388032),
-  p = n(806734);
+  p = n(388032),
+  b = n(806734);
 let g = e => {
   var t, n, a;
   let g, {
@@ -33,13 +33,13 @@ let g = e => {
     } = (0, f.YG)(h, m),
     S = l.useRef(null),
     j = v === o.T.NAMEPLATE,
-    y = j ? b.intl.string(b.t["/Rk1dn"]) : null == m ? void 0 : m.bodyText;
+    y = j ? p.intl.string(p.t["/Rk1dn"]) : null == m ? void 0 : m.bodyText;
   return (0, r.jsx)(s.$, {
     innerRef: S,
     onChange: O,
     threshold: 0,
     children: (0, r.jsxs)(c.P3F, {
-      className: p.featuredBlock,
+      className: b.featuredBlock,
       innerRef: S,
       style: {
         backgroundImage: "url(".concat(x, ")")
@@ -48,11 +48,11 @@ let g = e => {
       children: [null != _ && (0, r.jsx)(c.IGR, {
         disableColor: !0,
         text: _,
-        className: p.featuredBlockBadge
+        className: b.featuredBlockBadge
       }), null != y && (0, r.jsx)(c.X6q, {
         lineClamp: 4,
-        className: i()(p.featuredBlockBodyText, {
-          [p.featuredBlockNameplate]: j
+        className: i()(b.featuredBlockBodyText, {
+          [b.featuredBlockNameplate]: j
         }),
         style: {
           color: null != (a = null == m ? void 0 : m.bannerTextColor) ? a : "white"
@@ -60,10 +60,10 @@ let g = e => {
         variant: "heading-lg/semibold",
         children: y
       }), (0, r.jsx)(c.zxk, {
-        className: p.featuredBlockButton,
+        className: b.featuredBlockButton,
         color: c.Ttl.WHITE,
         onClick: () => {},
-        children: b.intl.string(b.t.jVcuVV)
+        children: p.intl.string(p.t.jVcuVV)
       })]
     })
   })

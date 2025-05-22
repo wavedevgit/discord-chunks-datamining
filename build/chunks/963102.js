@@ -13,8 +13,8 @@ var r = n(255367),
   u = n(37234),
   d = n(425493),
   f = n(410030),
-  b = n(984370),
-  p = n(341907),
+  p = n(984370),
+  b = n(341907),
   g = n(507808),
   h = n(822857),
   m = n(775451),
@@ -33,7 +33,7 @@ function y(e) {
     selected: l,
     handleTransition: a
   } = e;
-  return (0, r.jsx)(b.Z.Title, {
+  return (0, r.jsx)(p.Z.Title, {
     onClick: () => a(t),
     wrapperClassName: j.tabWrapper,
     className: i()(j.tab, {
@@ -72,13 +72,13 @@ function E(e) {
         pageType: N,
         sectionType: x.jXE.ORBS_BALANCE_MENU,
         ctaObject: x.qAy.CTA_TO_QUEST_HOME
-      }), (0, p.navigateToQuestHome)({
+      }), (0, b.navigateToQuestHome)({
         fromContent: o.j.ORBS_BALANCE_MENU
       })
     }, [L, t, N]);
   return (0, r.jsx)(c.f6W, {
     theme: k,
-    children: e => (0, r.jsxs)(b.Z, {
+    children: e => (0, r.jsxs)(p.Z, {
       className: i()(e, j.headerBar, {
         [j.fullscreenHeaderBar]: t
       }),
@@ -90,7 +90,7 @@ function E(e) {
         "aria-label": S.intl.string(S.t.pWG4zc) + " home",
         children: [(0, r.jsx)(C.Z, {
           className: j.discordLogo
-        }), (0, r.jsx)(b.Z.Title, {
+        }), (0, r.jsx)(p.Z.Title, {
           children: S.intl.string(S.t.pWG4zc)
         })]
       }), (0, r.jsx)("div", {
