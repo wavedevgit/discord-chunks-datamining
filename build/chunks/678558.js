@@ -101,20 +101,22 @@ let w = e => {
     analyticsLocations: G
   } = (0, d.ZP)(), B = (0, u.bp)() === O.IlC.POPOUT, [F, V] = i.useState(!1), Z = (0, s.e7)([m.default], () => m.default.getCurrentUser()), {
     fractionalState: H
-  } = (0, f.Z)(), Y = (0, p.y)("guild_boosting_subscribe_button", Z, H);
-  g.Z.hasFetched || (0, c.X8)();
-  let W = (0, b.vx)(g.Z.boostSlots),
-    K = null != N ? Math.max((0, b.KK)(o, N), 1) : 1,
-    z = (0, b.aq)({
+  } = (0, f.Z)(), Y = (0, p.y)("guild_boosting_subscribe_button", Z, H), W = (0, s.e7)([g.Z], () => g.Z.hasFetched);
+  i.useEffect(() => {
+    W || (0, c.X8)()
+  }, [W]);
+  let K = (0, b.vx)(g.Z.boostSlots),
+    z = null != N ? Math.max((0, b.KK)(o, N), 1) : 1,
+    q = (0, b.aq)({
       isBoostManagementDisabledForFractionalPremium: Y
     }),
-    q = async () => {
+    Q = async () => {
       V(!0), await (0, y.u)({
         analyticsLocations: G,
         analyticsLocation: t,
         analyticsSourceLocation: n,
         guild: o,
-        numberOfBoostsToAdd: K,
+        numberOfBoostsToAdd: z,
         onClose: R,
         closeLayer: w,
         inPopout: B,
@@ -122,25 +124,25 @@ let w = e => {
         handleSubscribeModalClose: x,
         intent: j
       }), V(!1)
-    }, Q = E.ZP.getPremiumTypeSubscription(), X = (0, r.jsxs)("div", {
+    }, X = E.ZP.getPremiumTypeSubscription(), J = (0, r.jsxs)("div", {
       className: S.button,
       children: [M, null != T ? T : I.intl.string(I.t.gKmQ1N)]
-    }), J = (0, h.o)("GuildBoostingSubscribeButton", Z, H), $ = !1;
-  return (($ = null !== Q && !(W.length > 0) && (null == Q ? void 0 : Q.isPausedOrPausePending) && (H === v.a$.NONE || J)) && (X = (0, r.jsxs)("div", {
+    }), $ = (0, h.o)("GuildBoostingSubscribeButton", Z, H), ee = !1;
+  return ((ee = null !== X && !(K.length > 0) && (null == X ? void 0 : X.isPausedOrPausePending) && (H === v.a$.NONE || $)) && (J = (0, r.jsxs)("div", {
     className: S.button,
     children: [(0, r.jsx)(l.mBM, {
       size: "xs",
       className: S.buttonIcon
-    }), " ", X]
-  }), U.disabled = !0), null != z) ? (0, r.jsx)(_.Z, {
-    text: z,
+    }), " ", J]
+  }), U.disabled = !0), null != q) ? (0, r.jsx)(_.Z, {
+    text: q,
     "aria-label": !1,
     children: e => (0, r.jsx)(l.gtL, C(A(C(A({}, e), {
       disabled: !0,
       size: l.zxk.Sizes.SMALL,
       pauseAnimation: D
     }), U), {
-      children: X
+      children: J
     }))
   }) : (0, r.jsx)(l.gtL, C(A({
     size: l.zxk.Sizes.SMALL
@@ -149,8 +151,8 @@ let w = e => {
       [S.buttonHighlighted]: k
     }),
     submitting: F,
-    onClick: q,
+    onClick: Q,
     pauseAnimation: D,
-    children: X
+    children: J
   }))
 }

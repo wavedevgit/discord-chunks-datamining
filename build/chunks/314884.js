@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => E
+  Z: () => y
 }), n(388685);
 var r, i = n(442837),
   o = n(570140),
@@ -46,54 +46,63 @@ function u(e, t) {
   }), e
 }
 let d = !1,
-  f = {};
+  f = !1,
+  _ = {};
 
-function _(e) {
+function p() {
+  f = !0
+}
+
+function h(e) {
   let {
     guildBoostSlots: t
   } = e;
-  f = {}, t.forEach(e => {
-    f[e.id] = e
-  }), d = !0
+  _ = {}, t.forEach(e => {
+    _[e.id] = e
+  }), f = !1, d = !0
 }
 
-function p(e) {
+function m(e) {
   let {
     guildBoostSlot: t
   } = e;
-  f = u(l({}, f), {
+  _ = u(l({}, _), {
     [t.id]: t
   })
 }
 
-function h() {
-  f = {}, d = !1
+function g() {
+  _ = {}, d = !1, f = !1
 }
 
-function m() {
+function E() {
   let e = {};
-  for (let t of Object.values(f)) e[t.id] = t, t.subscription = a.ZP.getSubscriptionById(t.subscriptionId);
-  f = e
+  for (let t of Object.values(_)) e[t.id] = t, t.subscription = a.ZP.getSubscriptionById(t.subscriptionId);
+  _ = e
 }
-class g extends(r = i.ZP.Store) {
+class b extends(r = i.ZP.Store) {
   initialize() {
-    this.syncWith([a.ZP], m)
+    this.syncWith([a.ZP], E)
   }
   get hasFetched() {
     return d
   }
-  get boostSlots() {
+  get isFetching() {
     return f
   }
+  get boostSlots() {
+    return _
+  }
   getGuildBoostSlot(e) {
-    return f[e]
+    return _[e]
   }
 }
-s(g, "displayName", "GuildBoostSlotStore");
-let E = new g(o.Z, {
-  GUILD_BOOST_SLOTS_FETCH_SUCCESS: _,
-  GUILD_BOOST_SLOT_UPDATE_SUCCESS: p,
-  GUILD_BOOST_SLOT_CREATE: p,
-  GUILD_BOOST_SLOT_UPDATE: p,
-  LOGOUT: h
+s(b, "displayName", "GuildBoostSlotStore");
+let y = new b(o.Z, {
+  GUILD_BOOST_SLOTS_FETCH: p,
+  GUILD_BOOST_SLOTS_FETCH_SUCCESS: h,
+  GUILD_BOOST_SLOT_UPDATE_SUCCESS: m,
+  GUILD_BOOST_SLOT_CREATE: m,
+  GUILD_BOOST_SLOT_UPDATE: m,
+  LOGOUT: g
 })

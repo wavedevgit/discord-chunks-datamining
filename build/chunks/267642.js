@@ -297,7 +297,7 @@ function B(e) {
   let {
     isBoostManagementDisabledForFractionalPremium: t
   } = e, n = _.ZP.getPremiumTypeSubscription();
-  f.Z.hasFetched || (0, s.X8)();
+  f.Z.hasFetched || f.Z.isFetching || (0, s.X8)();
   let r = G(f.Z.boostSlots),
     i = null == n ? void 0 : n.isPausedOrPausePending,
     a = r.length > 0,
