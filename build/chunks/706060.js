@@ -1,6 +1,6 @@
 /** Chunk was on 8787 **/
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(388685), n(642613), n(539854);
 var i = n(255367),
   r = n(73800),
@@ -26,9 +26,9 @@ function u(e) {
     setting: t,
     children: n,
     depth: o
-  } = e, [g, m] = r.useState(1 === o), p = r.useCallback(() => {
-    m(!g)
-  }, [g, m]);
+  } = e, [m, g] = r.useState(1 === o), p = r.useCallback(() => {
+    g(!m)
+  }, [m, g]);
   if (0 === n.length) return (0, i.jsx)("div", {
     style: {
       marginLeft: 8 * o
@@ -39,7 +39,7 @@ function u(e) {
       hasChildren: !1
     })
   }, (0, s.Z)());
-  let h = g ? (0, i.jsx)("div", {
+  let h = m ? (0, i.jsx)("div", {
     className: c.settingNodeChildren,
     children: n.sort((e, t) => e.setting.localeCompare(t.setting)).sort((e, t) => e.children.length - t.children.length).map(e => (0, i.jsx)(u, {
       setting: e.setting,
@@ -59,14 +59,14 @@ function u(e) {
         setting: t,
         hasChildren: n.length > 0
       }), (0, i.jsx)(a.Z, {
-        direction: g ? a.Z.Directions.DOWN : a.Z.Directions.RIGHT,
+        direction: m ? a.Z.Directions.DOWN : a.Z.Directions.RIGHT,
         className: c.headerCaret
       })]
     }), h]
   }, (0, s.Z)())
 }
 
-function g() {
+function m() {
   let e = (0, o.Pt)(),
     t = {
       children: []

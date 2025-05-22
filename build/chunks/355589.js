@@ -398,7 +398,7 @@ let X = e => {
       channel: l
     }), ee(N, P, x), (0, p.ZP)(() => {
       t && I || L(!0)
-    }), null == o) ? null : (0, C.iZ)(l) ? n ? null : (0, r.jsx)(_.q, {}) : I && m ? Z ? t ? null : (0, r.jsx)(v.Z, {
+    }), null == o) ? null : (0, C.iZ)(l) ? n || s.size > 0 ? null : (0, r.jsx)(_.q, {}) : I && m ? Z ? t ? null : (0, r.jsx)(v.Z, {
       channel: l
     }) : (0, r.jsx)(r.Fragment, {
       children: f((e, t) => t ? (0, r.jsx)(c.animated.div, {

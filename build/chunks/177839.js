@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(607070),
   d = n(100527),
   u = n(906732),
-  g = n(66595),
-  m = n(535322),
+  m = n(66595),
+  g = n(535322),
   p = n(477734),
   h = n(626135),
   f = n(881100),
@@ -56,11 +56,11 @@ let E = e => e ? _.intl.string(_.t.QX14gI) : _.intl.string(_.t.RGadQU),
       value: f,
       children: (0, i.jsxs)("div", {
         className: l()(x.perkCard, r),
-        children: [p ? (0, i.jsx)(m.Z, {
+        children: [p ? (0, i.jsx)(g.Z, {
           className: x.perkCardNewBadge,
           shouldInheritBackgroundColor: !0,
           shouldInheritTextColor: !0
-        }) : null, h ? (0, i.jsx)(g.Z, {
+        }) : null, h ? (0, i.jsx)(m.Z, {
           className: x.perkCardEarlyAccessBadge
         }) : null, (0, i.jsx)("img", {
           src: s,
@@ -84,16 +84,16 @@ let E = e => e ? _.intl.string(_.t.QX14gI) : _.intl.string(_.t.RGadQU),
     let {
       className: t,
       isSubscriberNitroHome: n = !1
-    } = e, [s, d] = r.useState(!1), g = (0, f.N)({
+    } = e, [s, d] = r.useState(!1), m = (0, f.N)({
       styles: x
-    }), m = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), {
+    }), g = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), {
       analyticsLocations: _
-    } = (0, u.ZP)(), O = (0, p._f)(), S = [g.emoji, g.streaming, g.upload, g.customAppIcons, g.soundboard, O ? g.remix : g.videoBackground, g.superReactions, g.stickersPremiumPerk, g.badgeAlt];
+    } = (0, u.ZP)(), O = (0, p._f)(), S = [m.emoji, m.streaming, m.upload, m.customAppIcons, m.soundboard, O ? m.remix : m.videoBackground, m.superReactions, m.stickersPremiumPerk, m.badgeAlt];
     return (0, i.jsxs)("div", {
       className: l()(x.perksContainer, t, {
         [x.partiallyHidden]: n && !s,
         [x.subscriberNitroHome]: n,
-        [x.reducedMotion]: m
+        [x.reducedMotion]: g
       }),
       children: [(0, i.jsx)(o.X6q, {
         variant: "heading-xxl/extrabold",

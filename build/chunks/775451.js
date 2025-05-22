@@ -12,8 +12,8 @@ var i = n(255367),
   c = n(23547),
   d = n(790542),
   u = n(317257),
-  g = n(120786),
-  m = n(82856),
+  m = n(120786),
+  g = n(82856),
   p = n(981631),
   h = n(388032),
   f = n(313008);
@@ -62,7 +62,7 @@ let b = {
         [f.hidden]: y,
         [f.visible]: !y
       }),
-      children: [(0, i.jsx)(m.y, {
+      children: [(0, i.jsx)(g.y, {
         pillRef: P,
         anchorPillType: _,
         balance: S,
@@ -78,7 +78,7 @@ let b = {
           [f.visible]: !y
         }),
         ref: w,
-        children: (0, i.jsx)(g.L, {
+        children: (0, i.jsx)(m.L, {
           analyticsPage: x,
           ctaText: n,
           ctaOnClick: () => {

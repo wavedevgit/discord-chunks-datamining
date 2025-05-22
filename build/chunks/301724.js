@@ -35,7 +35,7 @@ let o = "premium_tier_2_gradient",
       stopOpacity: "0"
     })]
   }),
-  g = (0, r.jsxs)("linearGradient", {
+  m = (0, r.jsxs)("linearGradient", {
     id: c,
     x1: "0%",
     y1: "0%",
@@ -52,7 +52,7 @@ let o = "premium_tier_2_gradient",
       stopColor: "#AB5D8A"
     })]
   }),
-  m = (0, r.jsxs)("linearGradient", {
+  g = (0, r.jsxs)("linearGradient", {
     id: d,
     x1: "0.005697",
     y1: "18.3495",
@@ -77,7 +77,7 @@ let o = "premium_tier_2_gradient",
     })]
   }),
   p = (0, r.jsxs)("defs", {
-    children: [u, g, m]
+    children: [u, m, g]
   }),
   h = e => {
     let {

@@ -1,6 +1,6 @@
 /** Chunk was on 8787 **/
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var i = n(255367),
   r = n(73800),
@@ -12,12 +12,12 @@ var i = n(255367),
   d = n(388032),
   u = n(561234);
 
-function g(e) {
+function m(e) {
   let {
     preset: t,
     onShuffle: n
-  } = e, g = (0, s.e7)([a.Z], () => a.Z.useReducedMotion), m = (0, o.g2)({
-    useReducedMotion: g
+  } = e, m = (0, s.e7)([a.Z], () => a.Z.useReducedMotion), g = (0, o.g2)({
+    useReducedMotion: m
   }), {
     name: p,
     header: h
@@ -32,14 +32,14 @@ function g(e) {
     className: u.container,
     children: [(0, i.jsx)(l.P3F, {
       onClick: () => {
-        n(), m.startAnimation(!1)
+        n(), g.startAnimation(!1)
       },
       className: u.button,
       "aria-label": d.intl.string(d.t["44yJxs"]),
-      children: m.render()
+      children: g.render()
     }), (0, i.jsxs)(l.P3F, {
       onClick: () => {
-        n(), m.startAnimation(!1)
+        n(), g.startAnimation(!1)
       },
       "aria-label": "".concat(p, ": ").concat(d.intl.string(d.t["44yJxs"])),
       className: u.select,

@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(930114),
   d = n(246946),
   u = n(626135),
-  g = n(669079),
-  m = n(981631),
+  m = n(669079),
+  g = n(981631),
   p = n(388032),
   h = n(423953);
 
@@ -58,7 +58,7 @@ class x extends r.Component {
       }
     } = this.props;
     return _(b({}, e), {
-      object: m.qAy.BUTTON_CTA
+      object: g.qAy.BUTTON_CTA
     })
   }
   render() {
@@ -119,7 +119,7 @@ class x extends r.Component {
         codeInput: t
       } = this.state;
       if ("" === t) return;
-      let n = (0, g.JT)(t);
+      let n = (0, m.JT)(t);
       if (null == n) return void this.setState({
         hasError: !0
       });
@@ -131,10 +131,10 @@ class x extends r.Component {
         if (null != e && null != e.giftCode.promotion) throw this.setState({
           isPromoCode: !0
         }), Error("Cannnot redeem promotion code as gift");
-        u.default.track(m.rMx.OPEN_MODAL, {
+        u.default.track(g.rMx.OPEN_MODAL, {
           type: "gift_accept",
           location: _(b({}, this.analyticsLocation), {
-            object: m.qAy.BUTTON_CTA
+            object: g.qAy.BUTTON_CTA
           })
         }), (0, c.V)({
           processedCode: n

@@ -12,7 +12,7 @@ var i = n(255367),
   d = n(10970),
   u = n(388032);
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -31,7 +31,7 @@ function g(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -57,7 +57,7 @@ function p(e) {
       route: c.j.HOME
     })
   }, _ = e => {
-    h(g({
+    h(m({
       route: c.j.SWITCH_APP_PLANS
     }, e)), n(u.intl.string(u.t.VFqtkJ), b)
   }, [x, E] = r.useState({});
@@ -65,14 +65,14 @@ function p(e) {
     for (let n of t) {
       var e;
       let t = null == (e = n.items[0]) ? void 0 : e.planId;
-      null != t && (E(e => m(g({}, e), {
+      null != t && (E(e => g(m({}, e), {
         [n.id]: o.G.LOADING
       })), (0, l.vY)(t).then(() => {
-        E(e => m(g({}, e), {
+        E(e => g(m({}, e), {
           [n.id]: o.G.DONE
         }))
       }).catch(() => {
-        E(e => m(g({}, e), {
+        E(e => g(m({}, e), {
           [n.id]: o.G.ERROR
         }))
       }))
@@ -111,7 +111,7 @@ function p(e) {
         }
         return r
       }(p, ["route"]);
-      return (0, i.jsx)(d.Z, m(g({}, S), {
+      return (0, i.jsx)(d.Z, g(m({}, S), {
         navigateToHome: b
       }));
     default:

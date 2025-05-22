@@ -12,7 +12,7 @@ var i = n(255367),
   d = n(388032),
   u = n(20493);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -20,7 +20,7 @@ function g(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class m extends r.PureComponent {
+class g extends r.PureComponent {
   async componentDidMount() {
     this.setState({
       openOnStartup: await c.ZP.getSetting("OPEN_ON_STARTUP", !0),
@@ -65,17 +65,17 @@ class m extends r.PureComponent {
     })
   }
   constructor(e) {
-    super(e), g(this, "handleToggleOpenOnStartup", () => {
+    super(e), m(this, "handleToggleOpenOnStartup", () => {
       let e = !this.state.openOnStartup;
       this.setState({
         openOnStartup: e
       }), c.ZP.send("TOGGLE_OPEN_ON_STARTUP", e)
-    }), g(this, "handleToggleStartMinimized", () => {
+    }), m(this, "handleToggleStartMinimized", () => {
       let e = !this.state.startMinimized;
       this.setState({
         startMinimized: e
       }), c.ZP.send("TOGGLE_START_MINIMIZED", e)
-    }), g(this, "handleToggleMinimizeToTray", () => {
+    }), m(this, "handleToggleMinimizeToTray", () => {
       let e = !this.state.minimizeToTray;
       this.setState({
         minimizeToTray: e
@@ -87,4 +87,4 @@ class m extends r.PureComponent {
     }
   }
 }
-let p = m
+let p = g

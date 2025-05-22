@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(727637),
   d = n(100527),
   u = n(906732),
-  g = n(368326),
-  m = n(429467),
+  m = n(368326),
+  g = n(429467),
   p = n(440051),
   h = n(734934),
   f = n(300284),
@@ -98,13 +98,13 @@ function ee(e) {
     ed = k.Cr.useSetting(),
     eu = (0, W.F)(ed),
     {
-      expiringStatusProfileFeedback: eg
+      expiringStatusProfileFeedback: em
     } = p.Y.useExperiment({
       location: "UserProfileAccountPopout"
     }, {
       autoTrackExposure: !1
     }),
-    em = (0, l.e7)([B.Z], () => B.Z.hidePersonalInformation),
+    eg = (0, l.e7)([B.Z], () => B.Z.hidePersonalInformation),
     ep = (0, h.p)(),
     eh = k.Sb.useSetting(),
     ef = (0, W.I)(ec),
@@ -113,14 +113,14 @@ function ee(e) {
       analyticsLocations: es
     }),
     ex = (0, V.I5)(t),
-    eE = (0, g.p)({
+    eE = (0, m.p)({
       location: "UserProfileAccountPopout"
     }),
     eC = (0, x.b)({
       location: "UserProfileAccountPopout"
     }),
     ej = r.useRef((0, G.Z)(e => e.shouldRenderTenureLevelUp)),
-    eO = r.useMemo(() => (0, m.Z)(), []),
+    eO = r.useMemo(() => (0, g.Z)(), []),
     eS = e => {
       null == n || n(), (0, C.openUserProfileModal)($({
         customStatusPrompt: eO,
@@ -190,7 +190,7 @@ function ee(e) {
             }), (0, i.jsx)(Z.Z, {
               user: t,
               bio: null == er ? void 0 : er.bio,
-              hidePersonalInformation: em,
+              hidePersonalInformation: eg,
               onClose: n
             }), (0, i.jsx)(v.Z, {
               isPremiumUser: ex,
@@ -225,7 +225,7 @@ function ee(e) {
                     id: "set-status",
                     action: "PRESS_SET_STATUS",
                     label: (0, i.jsx)(z.Z, {}),
-                    sublabel: eg && null != eu && (0, i.jsx)(a.Text, {
+                    sublabel: em && null != eu && (0, i.jsx)(a.Text, {
                       color: "currentColor",
                       variant: "text-xs/medium",
                       children: eu

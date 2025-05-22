@@ -1,6 +1,6 @@
 /** Chunk was on 8787 **/
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(953529);
 var i = n(255367);
 n(73800);
@@ -13,7 +13,7 @@ var r = n(120356),
   d = n(772526),
   u = n(845904);
 
-function g(e) {
+function m(e) {
   let {
     onClickManageSubscription: t,
     count: n

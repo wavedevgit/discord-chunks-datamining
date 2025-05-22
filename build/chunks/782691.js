@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(481060),
   d = n(23645),
   u = n(53281),
-  g = n(678135),
-  m = n(594174),
+  m = n(678135),
+  g = n(594174),
   p = n(373071),
   h = n(489495),
   f = n(189),
@@ -63,7 +63,7 @@ let j = {
       back: n
     } = e, {
       upsertConfig: s
-    } = (0, p.n6)(), S = (0, o.e7)([m.default], () => m.default.getCurrentUser()), [v, T] = r.useState(!0), I = r.useRef(null), [N, y] = r.useState(!1), [A, P] = r.useState(!1), [R, D] = r.useState([]), [Z, w] = r.useState(j), k = r.useRef([]), [L, B] = r.useState(t.name), M = L.toLowerCase().replace(/\s+/g, "_"), U = r.useMemo(() => ({
+    } = (0, p.n6)(), S = (0, o.e7)([g.default], () => g.default.getCurrentUser()), [v, T] = r.useState(!0), I = r.useRef(null), [N, y] = r.useState(!1), [A, P] = r.useState(!1), [R, D] = r.useState([]), [Z, w] = r.useState(j), k = r.useRef([]), [L, B] = r.useState(t.name), M = L.toLowerCase().replace(/\s+/g, "_"), U = r.useMemo(() => ({
       type: a.Z.PROFILE_EFFECT,
       id: O,
       skuId: O,
@@ -349,7 +349,7 @@ let j = {
           }), (0, i.jsx)("div", {
             children: A && (0, i.jsxs)("div", {
               className: l()(b.userProfilePreview, b.preview),
-              children: [(0, i.jsx)(g.Z, {
+              children: [(0, i.jsx)(m.Z, {
                 user: S,
                 pendingAvatar: void 0,
                 pendingProfileEffectId: null,

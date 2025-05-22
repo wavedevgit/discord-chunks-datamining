@@ -18,8 +18,8 @@ var i = n(73800),
   c = n(607070),
   d = n(335131),
   u = n(1870),
-  g = n(228624),
-  m = n(605236),
+  m = n(228624),
+  g = n(605236),
   p = n(706140),
   h = n(243778),
   f = n(594174),
@@ -189,7 +189,7 @@ let R = new Set,
       [n] = (0, p.cv)(t),
       r = i.useRef(!1);
     return i.useCallback(() => {
-      null != e && !0 === e.showNotification && (n === a.z.TENURE_REWARD_REDEEMABLE || n === a.z.TENURE_REWARD_PENDING) && ((0, m.EW)(n), n === a.z.TENURE_REWARD_PENDING && !1 === r.current && (_.default.track(I.rMx.USER_NITRO_TENURE_REWARD_ACKNOWLEDGED, {
+      null != e && !0 === e.showNotification && (n === a.z.TENURE_REWARD_REDEEMABLE || n === a.z.TENURE_REWARD_PENDING) && ((0, g.EW)(n), n === a.z.TENURE_REWARD_PENDING && !1 === r.current && (_.default.track(I.rMx.USER_NITRO_TENURE_REWARD_ACKNOWLEDGED, {
         user_tenure_reward_id: null == e ? void 0 : e.tenureRewardStatusId,
         tenure_reward_id: e.tenureRewardSkuId,
         reward_type: null == e ? void 0 : e.tenureRewardType,
@@ -230,7 +230,7 @@ function M(e) {
   let n = (0, C.oY)({
       location: "Home"
     }),
-    r = (0, g.hv)("useCollectiblePurchaseForTenureReward"),
+    r = (0, m.hv)("useCollectiblePurchaseForTenureReward"),
     [s, a] = (0, l.Wu)([u.Z], () => [u.Z.purchases, u.Z.hasPreviouslyFetched]);
   return i.useEffect(() => {
     n && !a && (0, d.qg)({

@@ -14,8 +14,8 @@ let d = r.forwardRef(function(e, t) {
       currentPageIndex: s,
       numPages: d,
       onChangePage: u,
-      children: g,
-      className: m,
+      children: m,
+      className: g,
       showPageCount: p = !0
     } = e,
     h = function(e, t) {
@@ -53,10 +53,10 @@ let d = r.forwardRef(function(e, t) {
     }
     return e
   }({
-    className: l()(c.__invalid_paginator, m),
+    className: l()(c.__invalid_paginator, g),
     ref: t
   }, h), r = r = {
-    children: [g, (0, i.jsxs)("div", {
+    children: [m, (0, i.jsxs)("div", {
       className: c.pageActions,
       children: [(0, i.jsx)(a.P3F, {
         className: l()(c.pageButtonPrev, {

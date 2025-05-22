@@ -1,6 +1,6 @@
 /** Chunk was on 8787 **/
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -11,7 +11,7 @@ var i = n(255367),
   c = n(231338),
   d = n(388032),
   u = n(468590);
-async function g(e) {
+async function m(e) {
   try {
     return (await s.tn.get({
       url: o.ANM.BILLING_INVOICE_BREAKDOWN,
@@ -26,18 +26,18 @@ async function g(e) {
   }
 }
 
-function m(e) {
+function g(e) {
   let {
     payment: t
-  } = e, [n, s] = r.useState(null), [o, m] = r.useState(null), p = async e => {
+  } = e, [n, s] = r.useState(null), [o, g] = r.useState(null), p = async e => {
     try {
-      let n = await g(t.id);
+      let n = await m(t.id);
       s(n);
       let i = e ? n.refundInvoiceLinks[0] : n.invoiceLink;
-      window.open(i, "_blank"), m(null)
+      window.open(i, "_blank"), g(null)
     } catch (e) {
       var n;
-      m(null == (n = e.body) ? void 0 : n.message)
+      g(null == (n = e.body) ? void 0 : n.message)
     }
   }, h = null != t.paymentSource && t.status === c.Py.COMPLETED, f = null == n ? void 0 : n.invoiceLink, b = null == n ? void 0 : n.refundInvoiceLinks;
   return t.hasInvoiceURL && null == n ? (0, i.jsxs)("div", {

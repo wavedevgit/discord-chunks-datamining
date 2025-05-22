@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(388032),
   d = n(937848),
   u = n(20493);
-let g = 0,
-  m = () => "notification-position-selector-".concat(g++),
+let m = 0,
+  g = () => "notification-position-selector-".concat(m++),
   p = e => {
     switch (e) {
       case o._vf.TOP_LEFT:
@@ -33,7 +33,7 @@ function f(e) {
   let {
     position: t,
     onChange: n
-  } = e, [s] = r.useState(() => m()), g = t === o._vf.DISABLED ? c.intl.string(c.t.R6LxVV) : c.intl.formatToPlainString(c.t.XXHDMz, {
+  } = e, [s] = r.useState(() => g()), m = t === o._vf.DISABLED ? c.intl.string(c.t.R6LxVV) : c.intl.formatToPlainString(c.t.XXHDMz, {
     position: p(t)
   });
   return (0, i.jsxs)("div", {
@@ -69,7 +69,7 @@ function f(e) {
     }), (0, i.jsx)(a.R94, {
       type: a.geA.DESCRIPTION,
       className: u.marginTop8,
-      children: g
+      children: m
     })]
   })
 }

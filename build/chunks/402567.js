@@ -1,6 +1,6 @@
 /** Chunk was on 8787 **/
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(388685);
 var i = n(73800),
   r = n(442837),
@@ -11,17 +11,17 @@ var i = n(73800),
   c = n(211712),
   d = n(981631);
 let u = Object.keys(c.hq),
-  g = e => {
+  m = e => {
     let t = null == e ? u : u.filter(t => t !== e);
     return t[Math.floor(Math.random() * t.length)]
   };
 
-function m() {
+function g() {
   let e = (0, r.e7)([s.Z], () => s.Z.useReducedMotion),
-    [t, n] = (0, i.useState)(g()),
+    [t, n] = (0, i.useState)(m()),
     {
       banner: u,
-      themeColors: m,
+      themeColors: g,
       avatarDecorationSkuId: p
     } = (0, i.useMemo)(() => {
       let n = (0, c.Ib)(t);
@@ -39,12 +39,12 @@ function m() {
   (0, i.useEffect)(() => {
     (0, a.x3)({
       banner: u,
-      themeColors: m,
+      themeColors: g,
       avatarDecoration: h
     })
-  }, [u, m, h]);
+  }, [u, g, h]);
   let f = (0, i.useCallback)(() => {
-    let e = g(t);
+    let e = m(t);
     n(e), o.default.track(d.rMx.TRY_IT_OUT_PRESET_SHUFFLED, {
       preset: e
     })

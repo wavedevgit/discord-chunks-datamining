@@ -1,6 +1,6 @@
 /** Chunk was on 8787 **/
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var i = n(255367);
 n(73800);
@@ -12,11 +12,11 @@ var r = n(399606),
   c = n(981631),
   d = n(65154),
   u = n(388032),
-  g = n(908406);
+  m = n(908406);
 
-function m() {
+function g() {
   return (0, r.e7)([a.Z], () => a.Z.supports(d.AN.LOOPBACK)) ? (0, i.jsx)("div", {
-    className: g.micTest,
+    className: m.micTest,
     children: (0, i.jsx)(l.Z, {
       title: u.intl.string(u.t.gyljWF),
       description: u.intl.string(u.t["8hhsCQ"]),
@@ -24,14 +24,14 @@ function m() {
       captionVoice: u.intl.string(u.t.bp3JOT),
       captionNoVoice: (0, i.jsxs)(i.Fragment, {
         children: [u.intl.string(u.t["MA+OZm"]), (0, i.jsx)(s.eee, {
-          className: g.micTestHelpLink,
+          className: m.micTestHelpLink,
           href: o.Z.getArticleURL(c.BhN.NO_INPUT_DETECTED),
           children: u.intl.string(u.t.RYKKo6)
         })]
       }),
       buttonTest: u.intl.string(u.t.c4qHt7),
       buttonStop: u.intl.string(u.t.I6OnJy),
-      buttonClassName: g.micTestButton,
+      buttonClassName: m.micTestButton,
       buttonColor: s.zxk.Colors.BRAND,
       location: {
         page: c.ZY5.USER_SETTINGS,

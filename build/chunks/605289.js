@@ -12,8 +12,8 @@ var r = n(120356),
   c = n(78839),
   d = n(985754),
   u = n(222727),
-  g = n(736519),
-  m = n(409100),
+  m = n(736519),
+  g = n(784238),
   p = n(474936),
   h = n(981631),
   f = n(614075);
@@ -54,11 +54,11 @@ let b = function(e) {
       })
     }), (0, i.jsxs)("div", {
       className: f.ctaButtonContainer,
-      children: [(0, i.jsx)(m.Z, {
+      children: [(0, i.jsx)(g.Z, {
         forceInverted: !0,
         className: f.ctaButton,
         subscriptionTier: p.Si.TIER_2
-      }), (0, i.jsx)(g.Z, {
+      }), (0, i.jsx)(m.Z, {
         forceWhite: !0,
         subscriptionTier: p.Si.TIER_2,
         className: f.ctaButton

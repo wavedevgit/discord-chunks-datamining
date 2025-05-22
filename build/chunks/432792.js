@@ -14,8 +14,8 @@ var i = n(255367),
   c = n(607070),
   d = n(70097),
   u = n(605236),
-  g = n(765585),
-  m = n(930153),
+  m = n(765585),
+  g = n(930153),
   p = n(822857),
   h = n(622562),
   f = n(937860),
@@ -23,7 +23,7 @@ var i = n(255367),
   _ = n(973792),
   x = n(447489),
   E = n(484885);
-let C = () => (0, m.Lk)(document.body.style.getPropertyValue("--custom-app-panels-height"), 56) + 8,
+let C = () => (0, g.Lk)(document.body.style.getPropertyValue("--custom-app-panels-height"), 56) + 8,
   j = {
     discover: l.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK,
     shop: l.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK
@@ -37,21 +37,21 @@ let C = () => (0, m.Lk)(document.body.style.getPropertyValue("--custom-app-panel
       enabled: a
     } = (0, p.WX)({
       location: "virtual_currency_onboarding_coachmark"
-    }), o = j[t], c = (0, u.wE)(o), d = a && s && n && !c, g = r.useCallback(function() {
+    }), o = j[t], c = (0, u.wE)(o), d = a && s && n && !c, m = r.useCallback(function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "CLOSE";
       c || (0, u.EW)(j[t], {
         forceTrack: !0,
         dismissAction: "CTA_CLICK" === e ? b.L.TAKE_ACTION : b.L.USER_DISMISS,
         groupName: b.R.VIRTUAL_CURRENCY_ONBOARDING
       })
-    }, [c, t]), [m, h] = r.useState(!1);
+    }, [c, t]), [g, h] = r.useState(!1);
     return r.useEffect(() => {
-      d ? m || ((0, u.kk)(o, {
+      d ? g || ((0, u.kk)(o, {
         groupName: b.R.VIRTUAL_CURRENCY_ONBOARDING
-      }), void 0 !== i && i(), h(!0)) : m && h(!1)
-    }, [d, i, m, o]), {
-      shouldShow: m,
-      closeCoachmarkIfOpen: g
+      }), void 0 !== i && i(), h(!0)) : g && h(!1)
+    }, [d, i, g, o]), {
+      shouldShow: g,
+      closeCoachmarkIfOpen: m
     }
   },
   S = e => {
@@ -87,7 +87,7 @@ let C = () => (0, m.Lk)(document.body.style.getPropertyValue("--custom-app-panel
       position: d = "right",
       align: u = "bottom"
     } = e;
-    return (0, i.jsx)(g.Z, {
+    return (0, i.jsx)(m.Z, {
       dismissibleContent: l.z.COLLECTIBLES_NAMEPLATE_SHOP_COACHMARK,
       inlineArt: !0,
       tryItText: (0, i.jsx)(a.Text, {
@@ -128,8 +128,8 @@ function T(e) {
     targetElementRef: c,
     defaultCoachmarkAlign: d,
     disableAutoInvert: u,
-    onGetTargetElementDimensions: g,
-    spacing: m,
+    onGetTargetElementDimensions: m,
+    spacing: g,
     position: p = "right"
   } = e, [f, b] = r.useState("bottom" === d), [_, x] = r.useState(!0), [E, C] = r.useState(String(Date.now())), j = (0, o.Z)(), O = r.useCallback(e => {
     let n = t(e);
@@ -147,7 +147,7 @@ function T(e) {
       elementBoundingRect: i,
       hasElementPositionChanged: r
     } = e;
-    if (null != g && g({
+    if (null != m && m({
         height: t,
         width: n
       }), null != i) {
@@ -156,7 +156,7 @@ function T(e) {
       if (e === f) return;
       b(e), C(String(Date.now()))
     }
-  }, [f, O, g, u]);
+  }, [f, O, m, u]);
   (0, h.fu)({
     onGetElementDimensionsAndBoundingRect: T,
     positionControlRef: l,
@@ -175,7 +175,7 @@ function T(e) {
     align: I,
     nudgeAlignIntoViewport: !1,
     shouldShow: N,
-    spacing: m,
+    spacing: g,
     positionKey: E,
     animation: a.yRy.Animation.TRANSLATE,
     targetElementRef: c,

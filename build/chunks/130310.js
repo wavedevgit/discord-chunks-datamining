@@ -12,8 +12,8 @@ var r = n(120356),
   c = n(332495),
   d = n(388032),
   u = n(634789),
-  g = n(20493);
-let m = e => {
+  m = n(20493);
+let g = e => {
     let {
       header: t,
       description: n,
@@ -21,7 +21,7 @@ let m = e => {
       inModal: a
     } = e;
     return (0, i.jsxs)("div", {
-      className: s()(u.row, g.marginBottom8, {
+      className: s()(u.row, m.marginBottom8, {
         [u.inModal]: a
       }),
       children: [(0, i.jsx)("div", {
@@ -44,14 +44,14 @@ let m = e => {
   p = e => {
     let {
       inModal: t
-    } = e, n = (0, a.o)(d.intl.string(c.default.Sm8Gq6), d.intl.string(c.default.YU7aaW)), r = (0, a.o)(d.intl.string(c.default["TCzk/f"]), d.intl.string(c.default["2OqtJC"])), s = (0, a.o)(d.intl.string(c.default.ASf7XF), d.intl.string(c.default["82y87e"])), g = (0, a.o)(d.intl.string(c.default["0QDVFB"]), d.intl.string(c.default["1xBHHR"]));
+    } = e, n = (0, a.o)(d.intl.string(c.default.Sm8Gq6), d.intl.string(c.default.YU7aaW)), r = (0, a.o)(d.intl.string(c.default["TCzk/f"]), d.intl.string(c.default["2OqtJC"])), s = (0, a.o)(d.intl.string(c.default.ASf7XF), d.intl.string(c.default["82y87e"])), m = (0, a.o)(d.intl.string(c.default["0QDVFB"]), d.intl.string(c.default["1xBHHR"]));
     return (0, i.jsxs)("div", {
       children: [(0, i.jsx)(l.Text, {
         className: u.groupHeader,
         variant: "text-xxs/bold",
         color: "header-secondary",
         children: n
-      }), (0, i.jsx)(m, {
+      }), (0, i.jsx)(g, {
         header: d.intl.string(c.default["/zMYZW"]),
         description: d.intl.string(c.default.DxFKkZ),
         icon: (0, i.jsx)(l.iFz, {
@@ -61,7 +61,7 @@ let m = e => {
           color: l.TVs.colors.TEXT_PRIMARY.css
         }),
         inModal: t
-      }), (0, i.jsx)(m, {
+      }), (0, i.jsx)(g, {
         header: d.intl.string(c.default["44NEx8"]),
         description: d.intl.string(c.default.WrY56O),
         icon: (0, i.jsx)(l.dRF, {
@@ -71,7 +71,7 @@ let m = e => {
           color: l.TVs.colors.TEXT_PRIMARY.css
         }),
         inModal: t
-      }), (0, i.jsx)(m, {
+      }), (0, i.jsx)(g, {
         header: d.intl.string(c.default["Z3G+8v"]),
         description: d.intl.string(c.default.KBgAra),
         icon: (0, i.jsx)(o.Z, {
@@ -85,9 +85,9 @@ let m = e => {
         variant: "text-xxs/bold",
         color: "header-secondary",
         children: r
-      }), (0, i.jsx)(m, {
+      }), (0, i.jsx)(g, {
         header: s,
-        description: g,
+        description: m,
         icon: (0, i.jsx)(l.Dio, {
           size: "custom",
           width: 20,

@@ -1,6 +1,6 @@
 /** Chunk was on 8787 **/
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(539854), n(388685), n(642613);
 var i, r, s, l = n(442837),
   a = n(570140),
@@ -26,7 +26,7 @@ s = "PaymentStore", (r = "displayName") in u ? Object.defineProperty(u, r, {
   configurable: !0,
   writable: !0
 }) : u[r] = s;
-let g = new u(a.Z, {
+let m = new u(a.Z, {
   BILLING_PAYMENTS_FETCH_SUCCESS: function(e) {
     let {
       payments: t

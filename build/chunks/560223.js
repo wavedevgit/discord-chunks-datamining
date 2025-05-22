@@ -1,6 +1,5 @@
 /** Chunk was on 8787 **/
 n.d(t, {
-  N: () => E,
   Z: () => C
 }), n(388685);
 var i = n(255367),
@@ -12,8 +11,8 @@ var i = n(255367),
   c = n(975298),
   d = n(695349),
   u = n(314684),
-  g = n(687362),
-  m = n(675619),
+  m = n(687362),
+  g = n(675619),
   p = n(119850),
   h = n(22189),
   f = n(391110),
@@ -57,7 +56,7 @@ let E = e => {
       headerClassname: S,
       isFullScreen: v = !0,
       shouldAutoScroll: T = !1
-    } = e, I = r.useRef(null), N = (0, u.Er)(), y = (0, g.v)(N), A = s === f.gM.WHATS_NEW, P = (0, u.IY)(), R = (0, p.x)();
+    } = e, I = r.useRef(null), N = (0, u.Er)(), y = (0, m.v)(N), A = s === f.gM.WHATS_NEW, P = (0, u.IY)(), R = (0, p.x)();
     r.useEffect(() => {
       A && !y && (P(), R())
     }, [P, R, A, y]);
@@ -65,7 +64,7 @@ let E = e => {
         A && y && P()
       },
       Z = y && A;
-    (0, m.r)({
+    (0, g.r)({
       ref: I,
       shouldScroll: Z || T,
       onScrollEnd: D,

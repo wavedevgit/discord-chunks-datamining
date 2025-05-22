@@ -12,10 +12,10 @@ var r = n(120356),
   c = n(182567),
   d = n(78839),
   u = n(63063),
-  g = n(74538),
-  m = n(821629),
-  p = n(346497),
-  h = n(409100),
+  m = n(74538),
+  g = n(821629),
+  p = n(784238),
+  h = n(346497),
   f = n(725727),
   b = n(474936),
   _ = n(981631),
@@ -28,7 +28,7 @@ let C = function(e) {
   } = e, {
     promotion: C
   } = (0, f.mq)(), j = (0, l.e7)([d.ZP], () => d.ZP.getPremiumTypeSubscription());
-  if (!(0, p.Vi)()) return null;
+  if (!(0, h.Vi)()) return null;
   let O = new Date(C.endDate);
   return (0, i.jsx)(c.O, {
     newLocations: [o.Z.PREMIUM_MARKETING_PAGE_BANNER],
@@ -49,11 +49,11 @@ let C = function(e) {
           children: [(0, i.jsx)(a.X6q, {
             variant: "display-sm",
             color: "always-white",
-            children: null == j || null == (0, g.he)(j) ? x.intl.string(x.t.xbzNJC) : x.intl.string(x.t["22WZ9P"])
+            children: null == j || null == (0, m.he)(j) ? x.intl.string(x.t.xbzNJC) : x.intl.string(x.t["22WZ9P"])
           }), (0, i.jsx)(a.Text, {
             className: E.countdown,
             variant: "text-sm/bold",
-            children: (0, i.jsx)(m.Z, {
+            children: (0, i.jsx)(g.Z, {
               endDate: O
             })
           }), (0, i.jsx)(a.Text, {
@@ -63,7 +63,7 @@ let C = function(e) {
               helpCenterLink: u.Z.getArticleURL(_.BhN.SUMMER_BOGO_2024)
             })
           })]
-        }), (0, i.jsx)(h.Z, {
+        }), (0, i.jsx)(p.Z, {
           textOptions: {
             textOverride: x.intl.string(x.t.J61px8),
             textClassName: E.subscribeButtonText

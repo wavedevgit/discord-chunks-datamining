@@ -13,13 +13,13 @@ function a(e) {
     autocompleterResultTypes: n,
     autocompleterOptions: a,
     autocompleterBeforeCreateSearchContext: o
-  } = e, [c, d] = i.useState(""), [u, g] = i.useState(l), m = i.useCallback((e, t) => {
-    "" === (t = t.trim()).trim() ? g(l) : g(e)
+  } = e, [c, d] = i.useState(""), [u, m] = i.useState(l), g = i.useCallback((e, t) => {
+    "" === (t = t.trim()).trim() ? m(l) : m(e)
   }, []);
   i.useEffect(() => r.Z.addRouteChangeListener(() => {
     d("")
   }), []);
-  let [p] = i.useState(() => new s.Z(m, n, void 0, a));
+  let [p] = i.useState(() => new s.Z(g, n, void 0, a));
   return i.useEffect(() => {
     t ? (null == o || o(p), p.createSearchContext()) : (p.clean(), d(""))
   }, [t, p, o]), {

@@ -11,8 +11,8 @@ var i, r, s = n(230711),
   c = n(526167),
   d = n(63063),
   u = n(763365),
-  g = n(981631),
-  m = n(526761),
+  m = n(981631),
+  g = n(526761),
   p = n(388032),
   h = n(888723),
   f = n(509614),
@@ -59,9 +59,9 @@ let B = () => {
   let {
     analyticsLocations: e
   } = (0, a.ZP)(l.Z.PREMIUM_MARKETING_BENTO_BOX), t = (0, o.Z)({
-    scrollPosition: m.Y_.TRY_IT_OUT,
+    scrollPosition: g.Y_.TRY_IT_OUT,
     analyticsLocations: e
-  }), n = (0, c.rO)(), i = d.Z.getArticleURL(g.BhN.REFERRAL_PROGRAM), {
+  }), n = (0, c.rO)(), i = d.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM), {
     whatsNewSectionVariant: r
   } = u.T.useExperiment({
     location: "WhatsNewSection"
@@ -121,7 +121,7 @@ let B = () => {
         descriptionCta: p.intl.string(p.t.jVcuVV),
         previewImage: _,
         onClick: () => {
-          s.Z.open(g.oAB.APPEARANCE, null, {
+          s.Z.open(m.oAB.APPEARANCE, null, {
             openWithoutBackstack: !0,
             analyticsLocations: e
           })

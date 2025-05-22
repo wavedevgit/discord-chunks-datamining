@@ -1,6 +1,6 @@
 /** Chunk was on 8787 **/
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var i, r = n(255367),
   s = n(73800),
@@ -59,4 +59,4 @@ d(u, "Header", e => {
     children: t
   })
 });
-let g = u
+let m = u

@@ -16,8 +16,8 @@ function u(e) {
   let {
     children: t,
     canBeShown: u,
-    onCTA: g,
-    targetElementRef: m
+    onCTA: m,
+    targetElementRef: g
   } = e;
   return (0, i.jsx)(l.ZP, {
     bypassAutoDismiss: !0,
@@ -28,7 +28,7 @@ function u(e) {
         markAsDismissed: u
       } = e;
       return l === r.z.VOICE_FILTER_LAUNCH_COACHMARK ? (0, i.jsx)(s.yRy, {
-        targetElementRef: m,
+        targetElementRef: g,
         renderPopout: () => (0, i.jsxs)("div", {
           className: d.popup,
           children: [(0, i.jsxs)("div", {
@@ -68,7 +68,7 @@ function u(e) {
               look: s.zxk.Looks.FILLED,
               fullWidth: !0,
               onClick: () => {
-                u(o.L.TAKE_ACTION), g()
+                u(o.L.TAKE_ACTION), m()
               },
               children: c.intl.string(c.t["9WdoBw"])
             })]

@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(605236),
   d = n(279745),
   u = n(921944),
-  g = n(388032),
-  m = n(418952);
+  m = n(388032),
+  g = n(418952);
 let p = r.forwardRef(function(e, t) {
   let {
     body: n,
@@ -61,40 +61,40 @@ let p = r.forwardRef(function(e, t) {
     className: C,
     ref: t,
     children: (0, i.jsxs)("div", {
-      className: l()(m.content, f, {
-        [m.contentNoArt]: null == p || j,
-        [m.contentPremium]: O || A
+      className: l()(g.content, f, {
+        [g.contentNoArt]: null == p || j,
+        [g.contentPremium]: O || A
       }),
       children: [null != w && (0, i.jsx)(a.P3F, {
         onClick: k,
         className: Z,
         children: w
       }), (0, i.jsxs)("div", {
-        className: l()(p, j ? m.artInline : m.artAbsolute),
+        className: l()(p, j ? g.artInline : g.artAbsolute),
         children: [v && (0, i.jsx)(d.Z, {
-          className: m.gifTag
+          className: g.gifTag
         }), y]
       }), (0, i.jsxs)("div", {
-        className: m.body,
+        className: g.body,
         children: [(0, i.jsxs)(a.X6q, {
-          className: l()(O ? m.headerWithPremiumIcon : m.header, h),
+          className: l()(O ? g.headerWithPremiumIcon : g.header, h),
           variant: "heading-md/bold",
           color: "always-white",
           children: [O && !A ? (0, i.jsx)(a.SrA, {
             size: "md",
             color: "currentColor",
-            className: m.premiumIcon
+            className: g.premiumIcon
           }) : null, A ? (0, i.jsxs)(a.Text, {
             color: "always-white",
             variant: "eyebrow",
-            className: m.earlyAccessBadgeContainer,
+            className: g.earlyAccessBadgeContainer,
             children: [(0, i.jsx)(a.SrA, {
               size: "md",
               color: "currentColor",
-              className: m.earlyAccessIcon
+              className: g.earlyAccessIcon
             }), (0, i.jsx)("span", {
-              className: m.earlyAccessText,
-              children: g.intl.string(g.t.phHyIS)
+              className: g.earlyAccessText,
+              children: m.intl.string(m.t.phHyIS)
             })]
           }) : null, s]
         }), null == n ? null : "string" == typeof n ? (0, i.jsx)(a.Text, {
@@ -104,41 +104,41 @@ let p = r.forwardRef(function(e, t) {
         }) : n]
       }), (0, i.jsx)("div", {
         ref: V,
-        className: M || !S ? m.buttonContainerVertical : m.buttonContainerHorizontal,
+        className: M || !S ? g.buttonContainerVertical : g.buttonContainerHorizontal,
         children: null != x ? (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)(a.zxk, {
-            className: m.button,
+            className: g.button,
             size: B,
             onClick: e => {
               null == E || E(e), x(e), F(u.L.PRIMARY)
             },
             color: null != L ? L : O || A ? a.zxk.Colors.BRAND_INVERTED : a.zxk.Colors.WHITE,
-            children: null != b ? b : g.intl.string(g.t.IHf1RE)
+            children: null != b ? b : m.intl.string(m.t.IHf1RE)
           }), !R && (0, i.jsx)(a.zxk, {
-            className: m.button,
+            className: g.button,
             size: B,
             onClick: e => {
               null == E || E(e), F(u.L.DISMISS)
             },
             color: O || A ? a.zxk.Colors.WHITE : a.zxk.Colors.BRAND,
             look: O || A ? a.zxk.Looks.LINK : a.zxk.Looks.FILLED,
-            children: null != _ ? _ : g.intl.string(g.t.om7Ovr)
+            children: null != _ ? _ : m.intl.string(m.t.om7Ovr)
           })]
         }) : (0, i.jsx)(a.zxk, {
-          className: m.button,
+          className: g.button,
           size: a.zxk.Sizes.MAX,
           onClick: e => {
             null == E || E(e), F(u.L.PRIMARY)
           },
           color: a.zxk.Colors.WHITE,
-          children: g.intl.string(g.t.HU2IR0)
+          children: m.intl.string(m.t.HU2IR0)
         })
       }), (0, i.jsx)("div", {
-        className: l()(m.pointer, D, {
-          [m.bottomPointer]: "top" === I,
-          [m.centerLeftPointer]: "right" === I && "center" === N,
-          [m.topLeftPointer]: "right" === I && "top" === N,
-          [m.bottomLeftPointer]: "right" === I && "bottom" === N
+        className: l()(g.pointer, D, {
+          [g.bottomPointer]: "top" === I,
+          [g.centerLeftPointer]: "right" === I && "center" === N,
+          [g.topLeftPointer]: "right" === I && "top" === N,
+          [g.bottomLeftPointer]: "right" === I && "bottom" === N
         })
       })]
     })

@@ -1,6 +1,6 @@
 /** Chunk was on 8787 **/
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -12,13 +12,13 @@ var i = n(255367),
   d = n(131085),
   u = n(919563);
 
-function g(e) {
+function m(e) {
   let {
     className: t,
     guildTag: n,
     guildBadge: s,
-    onTagClick: g,
-    guildId: m,
+    onTagClick: m,
+    guildId: g,
     guildName: p,
     guildIcon: h,
     guildIconSize: f
@@ -31,7 +31,7 @@ function g(e) {
     children: [(0, i.jsxs)("div", {
       className: u.guildPrefixContainer,
       children: [(0, i.jsx)(o.Ft, {
-        guildId: m,
+        guildId: g,
         guildName: p,
         guildIcon: h,
         iconSize: f,
@@ -83,11 +83,11 @@ function g(e) {
     }), (0, i.jsx)("div", {
       className: u.tagContainer,
       children: (0, i.jsx)(c.m0, {
-        guildId: m,
+        guildId: g,
         className: u.tag,
         guildTag: n,
         guildBadge: s,
-        onClick: g,
+        onClick: m,
         badgeSize: d.Gg.SIZE_16,
         textColor: "interactive-normal",
         textVariant: "text-sm/semibold",

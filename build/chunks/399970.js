@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(155268),
   d = n(600164),
   u = n(313201),
-  g = n(695103),
-  m = n(388032),
+  m = n(695103),
+  g = n(388032),
   p = n(458240),
   h = n(20493);
 let f = /^\d+$|^$/;
@@ -25,10 +25,10 @@ function b(e) {
     authorizedApplicationId: b,
     authorizationError: _,
     authorizing: x
-  } = (0, s.cj)([g.Z], () => ({
-    authorizedApplicationId: g.Z.testModeApplicationId,
-    authorizationError: g.Z.error,
-    authorizing: g.Z.isFetchingAuthorization
+  } = (0, s.cj)([m.Z], () => ({
+    authorizedApplicationId: m.Z.testModeApplicationId,
+    authorizationError: m.Z.error,
+    authorizing: m.Z.isFetchingAuthorization
   })), [E, C] = r.useState(null != b ? b : ""), [j, O] = r.useState("8080"), [S, v] = r.useState("localhost"), T = (0, u.Dt)(), I = f.test(E);
   async function N() {
     o.q$();
@@ -58,7 +58,7 @@ function b(e) {
         id: T,
         tag: "h1",
         className: h.marginReset,
-        children: m.intl.string(m.t.f8fzk5)
+        children: g.intl.string(g.t.f8fzk5)
       }), (0, i.jsx)(l.olH, {
         onClick: t
       })]
@@ -67,7 +67,7 @@ function b(e) {
       children: [(0, i.jsx)(l.R94, {
         className: h.marginBottom20,
         type: l.R94.Types.DESCRIPTION,
-        children: m.intl.string(m.t.a6Vilp)
+        children: g.intl.string(g.t.a6Vilp)
       }), null == _ ? null : (0, i.jsx)(l.kzN, {
         className: h.marginBottom20,
         children: _
@@ -80,12 +80,12 @@ function b(e) {
           align: d.Z.Align.START,
           children: [(0, i.jsx)(l.xJW, {
             className: p.inputWrapper,
-            title: m.intl.string(m.t.P6TzgI),
+            title: g.intl.string(g.t.P6TzgI),
             required: !0,
             children: (0, i.jsx)(l.oil, {
               value: E,
               maxLength: 19,
-              error: I ? null : m.intl.string(m.t.gPNgKC),
+              error: I ? null : g.intl.string(g.t.gPNgKC),
               onChange: function(e) {
                 C(e)
               },
@@ -93,17 +93,17 @@ function b(e) {
             })
           }), (0, i.jsx)(l.xJW, {
             className: p.inputWrapper,
-            title: m.intl.string(m.t["/GTqXF"]),
+            title: g.intl.string(g.t["/GTqXF"]),
             children: (0, i.jsx)(l.q4e, {
               isDisabled: !I || "" === E,
               value: S,
               options: [{
                 value: "localhost",
-                label: m.intl.string(m.t["+Y9Y6u"]),
+                label: g.intl.string(g.t["+Y9Y6u"]),
                 key: "localhost"
               }, {
                 value: "proxy",
-                label: m.intl.string(m.t.uaksyc),
+                label: g.intl.string(g.t.uaksyc),
                 key: "proxy"
               }],
               onChange: function(e) {
@@ -113,7 +113,7 @@ function b(e) {
             })
           }), "localhost" !== S ? null : (0, i.jsx)(l.xJW, {
             className: p.inputWrapper,
-            title: m.intl.string(m.t.fF4zxs),
+            title: g.intl.string(g.t.fF4zxs),
             required: !0,
             children: (0, i.jsx)(l.oil, {
               value: j,
@@ -126,7 +126,7 @@ function b(e) {
             type: "submit",
             disabled: !I || 0 === E.length || "localhost" === S && 0 === j.length,
             color: y ? l.zxk.Colors.RED : l.zxk.Colors.GREEN,
-            children: y ? m.intl.string(m.t.d6TR3N) : m.intl.string(m.t.qwuK5O)
+            children: y ? g.intl.string(g.t.d6TR3N) : g.intl.string(g.t.qwuK5O)
           })]
         })
       })]

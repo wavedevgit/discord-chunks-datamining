@@ -19,11 +19,11 @@ function u(e) {
     description: r,
     label: a,
     onVolumeChange: u,
-    refreshStyles: g = !1
+    refreshStyles: m = !1
   } = e;
   return (0, i.jsxs)("div", {
     className: s()(c.soundboardRow, {
-      [c.refresh]: g
+      [c.refresh]: m
     }),
     children: [(0, i.jsx)("div", {
       className: c.soundboardColumn,

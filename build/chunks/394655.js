@@ -1,6 +1,6 @@
 /** Chunk was on 8787 **/
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var i = n(255367),
   r = n(905405),
@@ -12,7 +12,7 @@ var i = n(255367),
   d = n(981631),
   u = n(388032);
 
-function g() {
+function m() {
   let e = (0, r.p)();
   return (0, i.jsx)(a.U, {
     setting: c.s6.PRIVACY_KEYWORD_FILTER_V2,

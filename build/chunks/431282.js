@@ -14,7 +14,7 @@ var i = n(255367),
   d = n(475413),
   u = n(404255);
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -33,7 +33,7 @@ function g(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -87,7 +87,7 @@ function h(e) {
       v(e === t)
     })
   }, [t, j, T]);
-  let I = e => (0, i.jsxs)(d.kF, m(g({}, e, C, _), {
+  let I = e => (0, i.jsxs)(d.kF, g(m({}, e, C, _), {
     ref: O,
     role: "button",
     look: o.zxk.Looks.BLANK,
@@ -138,7 +138,7 @@ function f(e) {
         var {
           ref: t
         } = e, s = p(e, ["ref"]);
-        return (0, i.jsx)("div", m(g({}, s), {
+        return (0, i.jsx)("div", g(m({}, s), {
           ref: t,
           onMouseLeave: () => r.setFocus(null),
           children: n
@@ -151,7 +151,7 @@ function f(e) {
 function b(e) {
   return (0, i.jsx)("div", {
     className: u.submenuPaddingContainer,
-    children: (0, i.jsx)(o.v2r, g({
+    children: (0, i.jsx)(o.v2r, m({
       variant: "fixed",
       hideScroller: !0,
       onSelect: void 0

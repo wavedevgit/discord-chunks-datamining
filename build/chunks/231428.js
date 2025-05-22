@@ -10,8 +10,8 @@ var i, r = n(255367),
   c = n.n(o),
   d = n(91192),
   u = n(442837),
-  g = n(481060),
-  m = n(570140),
+  m = n(481060),
+  g = n(570140),
   p = n(355467),
   h = n(827837),
   f = n(821849),
@@ -71,7 +71,7 @@ function Z(e) {
     locale: n,
     compactMode: i,
     numPages: l
-  } = e, o = s.useRef(null), [c, u] = s.useState(0), [m, h] = s.useState(null), f = t.slice(10 * c, (c + 1) * 10);
+  } = e, o = s.useRef(null), [c, u] = s.useState(0), [g, h] = s.useState(null), f = t.slice(10 * c, (c + 1) * 10);
   s.useEffect(() => {
     var e;
     null == (e = o.current) || e.scrollTo({
@@ -81,8 +81,8 @@ function Z(e) {
   let _ = s.useCallback(e => {
       u(e);
       let n = t[t.length - 1].id;
-      e >= l - 2 && m !== n && ((0, p.cQ)(10, n), h(n))
-    }, [t, l, m]),
+      e >= l - 2 && g !== n && ((0, p.cQ)(10, n), h(n))
+    }, [t, l, g]),
     E = (0, b.Z)("billing-history", o);
   return (0, r.jsx)(d.bG, {
     navigator: E,
@@ -113,7 +113,7 @@ function Z(e) {
           showPageCount: !1,
           ref: t
         }, s), {
-          children: (0, r.jsx)(g.Den, {
+          children: (0, r.jsx)(m.Den, {
             className: y.bottomDivider,
             ref: o,
             children: f.map((e, t) => (0, r.jsx)(S.Z, {
@@ -133,12 +133,12 @@ class w extends(i = s.PureComponent) {
     return Math.max(Math.ceil(this.props.payments.length / 10), 1)
   }
   componentDidMount() {
-    m.Z.wait(() => {
+    g.Z.wait(() => {
       (0, h.N)(), (0, p.cQ)(30)
     })
   }
   renderPremiumExternalSubscription(e) {
-    return c()(null != e.paymentGateway, "Expected payment gateway when rendering for external subscription"), (0, r.jsxs)(g.Zbd, {
+    return c()(null != e.paymentGateway, "Expected payment gateway when rendering for external subscription"), (0, r.jsxs)(m.Zbd, {
       className: y.externalRow,
       children: [(0, r.jsx)("div", {
         className: y.externalRowHeader,
@@ -220,7 +220,7 @@ function L(e) {
     o = s.useCallback(() => a.length === i.size, [a, i]),
     c = s.useMemo(() => t.filter(e => e.currency !== v.pKx.DISCORD_ORB), [t]);
   return s.useEffect(() => {
-    o() || m.Z.wait(() => {
+    o() || g.Z.wait(() => {
       l.forEach(e => (0, f.GZ)(e, void 0, void 0, !0, void 0))
     })
   }, [o, l]), (0, r.jsx)(w, D(R({}, e), {

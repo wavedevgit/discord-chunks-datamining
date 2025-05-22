@@ -1,6 +1,6 @@
 /**
   Module ID: 8787
-  Original File Name: 010c506fdd189beb
+  Original File Name: a44c03eb9367520e
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -8629,97 +8629,6 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
     border: 1px solid var(--background-modifier-accent)
 }
 
-.giftingVariant2Container_ca1a02 {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    max-width: 1066px;
-    width: calc(100% - 32px)
-}
-
-.giftingVariant2CardHeader_ca1a02 {
-    align-items: flex-start;
-    display: flex;
-    margin-bottom: 16px;
-    width: 100%
-}
-
-.giftingVariant2CardContainer_ca1a02 {
-    align-items: stretch;
-    -moz-column-gap: 16px;
-    column-gap: 16px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 80px;
-    width: 100%
-}
-
-.giftingVariant2Card_ca1a02 {
-    align-items: center;
-    border-radius: 16px;
-    flex-direction: row;
-    padding: 24px;
-    width: 45%
-}
-
-.giftingVariant2Card_ca1a02,.giftingVariant2CardContent_ca1a02 {
-    background-color: var(--background-secondary-alt);
-    display: flex
-}
-
-.giftingVariant2CardContent_ca1a02 {
-    align-items: flex-start;
-    border: none;
-    border-radius: var(--radius-sm);
-    flex-direction: column;
-    height: 100%;
-    justify-content: space-between;
-    row-gap: 10px;
-    width: 65%
-}
-
-.giftingVariant2CardContentButton_ca1a02 {
-    background-color: var(--opacity-8);
-    border: var(--opacity-8);
-    font-weight: 500
-}
-
-.giftingVariant2CardImageContainer_ca1a02 {
-    margin: 0 auto
-}
-
-.giftingVariant2CardImage_ca1a02 {
-    height: 110px;
-    width: 110px
-}
-
-.giftingVariant2CardContentPremiumSubscribeButton_ca1a02 {
-    height: 40px;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content
-}
-
-.giftingVariant2CardContentPremiumSubscribeButtonText_ca1a02 {
-    color: var(--text-primary);
-    font-weight: 500
-}
-
-.theme-light .giftingVariant2CardContentPremiumSubscribeButton_ca1a02 {
-    background-color: var(--opacity-24);
-    border-color: var(--opacity-24);
-    color: #fff
-}
-
-.theme-dark .giftingVariant2CardContentPremiumSubscribeButton_ca1a02 {
-    background-color: var(--opacity-8);
-    border-color: var(--opacity-8);
-    color: #fff
-}
-
 .container_c880e8 {
     align-items: center;
     display: flex;
@@ -9143,13 +9052,13 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
     align-items: center;
     display: flex;
     flex-direction: column;
+    padding-bottom: 80px;
     text-align: center;
     width: 100%
 }
 
 .containerV2__3ce43 {
     justify-content: center;
-    padding-bottom: 100px;
     padding-top: 42px
 }
 
@@ -9260,16 +9169,23 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 
 .giftingContainerHighVis__3ce43 {
     align-items: center;
-    background: var(--opacity-24);
     border-radius: var(--radius-lg);
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin: 80px auto 40px;
+    margin: 40px auto;
     padding: 16px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content
+}
+
+.theme-light .giftingContainerHighVis__3ce43 {
+    background: rgba(235,237,239,.7)
+}
+
+.theme-dark .giftingContainerHighVis__3ce43 {
+    background: rgba(35,36,40,.5)
 }
 
 .giftingContainerHighVisIcon__3ce43 {
@@ -18801,4 +18717,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=010c506fdd189beb.css.map*/
+/*# sourceMappingURL=a44c03eb9367520e.css.map*/

@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(846027),
   d = n(230711),
   u = n(825209),
-  g = n(906732),
-  m = n(313201),
+  m = n(906732),
+  g = n(313201),
   p = n(131951),
   h = n(358085),
   f = n(383451),
@@ -23,7 +23,7 @@ var i = n(255367),
   C = n(893354),
   j = n(20493);
 let O = !h.isPlatformEmbedded,
-  S = (0, m.hQ)();
+  S = (0, g.hQ)();
 
 function v(e) {
   return e >= 1e3 ? (e /= 1e3, "".concat(e.toFixed(2), "s")) : "".concat(e.toFixed(0), "\xa0ms")
@@ -36,7 +36,7 @@ function T(e) {
     {
       shortcut: r,
       delay: s,
-      pttLatchingEnabled: g
+      pttLatchingEnabled: m
     } = (0, a.cj)([p.Z], () => p.Z.getModeOptions()),
     {
       enableLatching: O
@@ -91,7 +91,7 @@ function T(e) {
       })]
     }), O && (0, i.jsxs)(o.xJW, {
       className: j.marginTop8,
-      children: [(0, i.jsx)(m.FG, {
+      children: [(0, i.jsx)(g.FG, {
         children: e => (0, i.jsxs)("div", {
           className: l()(C.horizontal, j.marginBottom4),
           children: [(0, i.jsx)(o.vwX, {
@@ -103,7 +103,7 @@ function T(e) {
             })
           }), (0, i.jsx)(o.rsf, {
             id: e,
-            checked: null != g && g,
+            checked: null != m && m,
             onChange: e => c.Z.setMode(n, {
               pttLatchingEnabled: e
             })
@@ -121,7 +121,7 @@ function T(e) {
 function I() {
   let {
     analyticsLocations: e
-  } = (0, g.ZP)(), t = (0, a.e7)([p.Z], () => p.Z.getMode()), s = [{
+  } = (0, m.ZP)(), t = (0, a.e7)([p.Z], () => p.Z.getMode()), s = [{
     value: _.pM4.VOICE_ACTIVITY,
     name: x.intl.string(x.t.cHCEOD)
   }, {

@@ -11,8 +11,8 @@ var i = n(255367),
   c = n(335131),
   d = n(196033),
   u = n(981631),
-  g = n(474936),
-  m = n(388032),
+  m = n(474936),
+  g = n(388032),
   p = n(811344);
 let h = () => {
   let {
@@ -27,7 +27,7 @@ let h = () => {
   } = (0, d.W)();
   return r.useEffect(() => {
     o.default.track(u.rMx.PREMIUM_UPSELL_VIEWED, {
-      type: g.cd.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
+      type: m.cd.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
       location_stack: e,
       version: _
     })
@@ -67,7 +67,7 @@ let h = () => {
       },
       className: p.ctaButton,
       color: s.zxk.Colors.BRAND_INVERTED,
-      children: m.intl.string(m.t.fYfGgI)
+      children: g.intl.string(g.t.fYfGgI)
     })]
   })
 }
