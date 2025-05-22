@@ -29,9 +29,9 @@ var r = n(255367),
   P = n(302463),
   y = n(293810),
   b = n(388032),
-  D = n(800515);
+  h = n(800515);
 
-function h(e) {
+function D(e) {
   let {
     className: t,
     onClick: n,
@@ -40,8 +40,8 @@ function h(e) {
   } = e;
   return (0, r.jsx)(s.zxk, {
     buttonRef: l,
-    className: o()(D.button, t),
-    innerClassName: D.buttonInner,
+    className: o()(h.button, t),
+    innerClassName: h.buttonInner,
     look: s.zxk.Looks.OUTLINED,
     color: s.zxk.Colors.WHITE,
     size: s.zxk.Sizes.NONE,
@@ -54,7 +54,7 @@ function U(e) {
   let {
     onClick: t
   } = e;
-  return (0, r.jsx)(h, {
+  return (0, r.jsx)(D, {
     onClick: t,
     children: b.intl.string(b.t.R9GHyc)
   })
@@ -98,28 +98,28 @@ function M() {
     };
   return (0, r.jsxs)(s.qXd, {
     color: s.DM8.BRAND,
-    className: D.notice,
-    children: [(0, r.jsxs)(h, {
+    className: h.notice,
+    children: [(0, r.jsxs)(D, {
       onClick: () => Z({
         backToSettings: !0
       }),
-      className: D.backButton,
+      className: h.backButton,
       children: [(0, r.jsx)(S.Z, {
         width: 16,
         height: 16,
         direction: S.Z.Directions.LEFT,
-        className: D.backArrow
+        className: h.backArrow
       }), v]
     }), L && f ? (0, r.jsx)("div", {
-      className: D.noticeContents,
+      className: h.noticeContents,
       children: (0, r.jsx)("div", {
-        className: D.noticeText,
+        className: h.noticeText,
         children: b.intl.string(b.t.PxbiAQ)
       })
     }) : (0, r.jsxs)("div", {
-      className: D.noticeContents,
+      className: h.noticeContents,
       children: [(0, r.jsx)("div", {
-        className: D.noticeText,
+        className: h.noticeText,
         children: f ? b.intl.formatToPlainString(b.t["0PHahI"], {
           numRoles: Object.keys(l).length
         }) : b.intl.formatToPlainString(b.t.vMlK8v, {
@@ -135,26 +135,26 @@ function M() {
           let {
             onClick: n
           } = t;
-          return (0, r.jsxs)(h, {
+          return (0, r.jsxs)(D, {
             onClick: n,
             buttonRef: e,
             children: [k, (0, r.jsx)(N.Z, {
               width: 16,
               height: 16,
               direction: N.Z.Directions.DOWN,
-              className: D.selectCaret
+              className: h.selectCaret
             })]
           })
         }
       }), f && (0, r.jsx)(s.DY3, {
-        className: D.previewWarning,
+        className: h.previewWarning,
         text: b.intl.string(b.t.mW4DUF),
         children: (0, r.jsx)(s.P4T, {
           size: "xs",
           color: c.Z.unsafe_rawColors.YELLOW_300.css
         })
       }), M && (0, r.jsx)(s.DY3, {
-        className: D.previewWarning,
+        className: h.previewWarning,
         text: b.intl.formatToPlainString(b.t.eummvb, {
           maxTiers: y.fF,
           maxProducts: P.dD
@@ -177,9 +177,9 @@ function v(e) {
     guildId: t
   } = e;
   return (0, a.e7)([A.Z], () => A.Z.isViewingRoles(t)) ? (0, r.jsx)("div", {
-    className: o()(D.settingsWrapper, {
-      [D.windows]: (0, f.isWindows)(),
-      [D.osx]: (0, f.isMac)()
+    className: o()(h.settingsWrapper, {
+      [h.windows]: (0, f.isWindows)(),
+      [h.osx]: (0, f.isMac)()
     }),
     children: (0, r.jsx)(M, {})
   }) : null

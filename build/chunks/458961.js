@@ -35,8 +35,8 @@ var n = r(255367),
   Z = r(120651),
   K = r(871388),
   W = r(412110),
-  z = r(513669),
-  w = r(972797),
+  w = r(513669),
+  z = r(972797),
   X = r(943516),
   S = r(302463),
   k = r(981631),
@@ -169,7 +169,7 @@ function _(e) {
     saveProductWithAttachments: eZ,
     hasUnsavedAttachmentChanges: eK,
     cancelUnusedUploads: eW
-  } = (0, y.P)(), ez = (null == ea ? void 0 : ea.attachments) != null && (null == ea ? void 0 : ea.attachments.length) > 0, ew = null != eF ? eF : eP, eX = null != eT && "published" in eT, eS = null != eT && !eX, ek = null != (x = null == ea ? void 0 : ea.role_id) ? x : null, [eQ, eR] = A.useState(), eB = null != eQ || null != ek, eL = (0, c.e7)([j.Z], () => null != ek && null !== eQ ? j.Z.getRole(_, ek) : null != eQ ? eQ : void 0, [eQ, ek, _]), eD = "";
+  } = (0, y.P)(), ew = (null == ea ? void 0 : ea.attachments) != null && (null == ea ? void 0 : ea.attachments.length) > 0, ez = null != eF ? eF : eP, eX = null != eT && "published" in eT, eS = null != eT && !eX, ek = null != (x = null == ea ? void 0 : ea.role_id) ? x : null, [eQ, eR] = A.useState(), eB = null != eQ || null != ek, eL = (0, c.e7)([j.Z], () => null != ek && null !== eQ ? j.Z.getRole(_, ek) : null != eQ ? eQ : void 0, [eQ, ek, _]), eD = "";
   eB && eN ? eD = R.intl.string(R.t.ih4QMT) : eB ? eD = R.intl.string(R.t.o9xphY) : eN && (eD = R.intl.string(R.t.DWYJub));
   let eE = () => {
       eI(!1), eW()
@@ -190,10 +190,10 @@ function _(e) {
       imageName: eq,
       isImageChanged: eO,
       newRoleParams: eQ,
-      hasSavedAttachments: ez,
+      hasSavedAttachments: ew,
       hasUnsavedAttachmentChanges: eK
-    }), [ea, ef, eb, eh, eC, eq, eO, eQ, ez, eK]),
-    e0 = A.useMemo(() => eM || null == eG || "publish" === eG || null != ew ? null : (0, n.jsx)(u.oXn, {
+    }), [ea, ef, eb, eh, eC, eq, eO, eQ, ew, eK]),
+    e0 = A.useMemo(() => eM || null == eG || "publish" === eG || null != ez ? null : (0, n.jsx)(u.oXn, {
       className: B.successNotice,
       children: (0, n.jsx)(f.Z, {
         message: (0, n.jsxs)("div", {
@@ -210,7 +210,7 @@ function _(e) {
         onReset: () => eY(void 0),
         onResetText: R.intl.string(R.t.T6QuWV)
       })
-    }), [ew, eM, eG]),
+    }), [ez, eM, eG]),
     e1 = A.useCallback(() => {
       eM ? (0, Z.Z)({
         title: R.intl.string(R.t.FVDhIS),
@@ -243,11 +243,11 @@ function _(e) {
     }
   };
   A.useEffect(() => {
-    if (null != ew) {
+    if (null != ez) {
       var e;
-      (0, W.V)(ew, _, null == eo || null == (e = eo.team) ? void 0 : e.id)
+      (0, W.V)(ez, _, null == eo || null == (e = eo.team) ? void 0 : e.id)
     }
-  }, [ew, _, eo]), A.useEffect(() => {
+  }, [ez, _, eo]), A.useEffect(() => {
     eM && eY(void 0)
   }, [eM]);
   let e6 = A.useRef(null);
@@ -286,7 +286,7 @@ function _(e) {
             title: R.intl.string(R.t.Hsk7xc),
             tag: "label",
             htmlFor: G,
-            error: null == ew ? void 0 : ew.getFirstFieldErrorMessage("name"),
+            error: null == ez ? void 0 : ez.getFirstFieldErrorMessage("name"),
             children: (0, n.jsx)(u.Kx8, {
               value: ef,
               onChange: ep,
@@ -303,7 +303,7 @@ function _(e) {
           }), (0, n.jsx)(u.xJW, {
             title: R.intl.string(R.t.QdKLyc),
             tag: "label",
-            error: null == ew ? void 0 : ew.getFirstFieldErrorMessage("description"),
+            error: null == ez ? void 0 : ez.getFirstFieldErrorMessage("description"),
             htmlFor: Y,
             children: (0, n.jsx)(v.Z, {
               id: Y,
@@ -319,7 +319,7 @@ function _(e) {
           }), (0, n.jsx)(u.xJW, {
             title: R.intl.string(R.t["CAY/vr"]),
             tag: "label",
-            error: null == ew ? void 0 : ew.getFirstFieldErrorMessage("price_tier"),
+            error: null == ez ? void 0 : ez.getFirstFieldErrorMessage("price_tier"),
             children: (0, n.jsx)(J, {
               guildId: _,
               selectedPriceTier: eb,
@@ -328,7 +328,7 @@ function _(e) {
           }), (0, n.jsxs)(u.xJW, {
             title: R.intl.string(R.t["sqXj6+"]),
             tag: "label",
-            error: null == ew ? void 0 : ew.getFirstFieldErrorMessage("image"),
+            error: null == ez ? void 0 : ez.getFirstFieldErrorMessage("image"),
             titleClassName: B.thumbnailLabel,
             children: [(0, n.jsx)(u.Text, {
               variant: "text-xs/normal",
@@ -336,7 +336,7 @@ function _(e) {
               children: R.intl.string(R.t.yOU4Vl)
             }), (0, n.jsx)(u.LZC, {
               size: 10
-            }), (0, n.jsx)(z.Z, {
+            }), (0, n.jsx)(w.Z, {
               presetImages: I.M,
               radioGroupAriaLabel: R.intl.string(R.t.fKzQj4),
               image: eC,
@@ -351,7 +351,7 @@ function _(e) {
             })]
           }), eN ? (0, n.jsx)(u.xJW, {
             title: R.intl.string(R.t.zLrtkJ),
-            error: null == ew ? void 0 : ew.getFirstFieldErrorMessage("attachments"),
+            error: null == ez ? void 0 : ez.getFirstFieldErrorMessage("attachments"),
             children: (0, n.jsx)(F.s, {
               onFileAdded: () => {
                 var e;
@@ -362,7 +362,7 @@ function _(e) {
               }
             })
           }) : null, eB ? (0, n.jsx)(X.ZP, {
-            error: null != (M = null == ew ? void 0 : ew.getFirstFieldErrorMessage(N.NB)) ? M : void 0,
+            error: null != (M = null == ez ? void 0 : ez.getFirstFieldErrorMessage(N.NB)) ? M : void 0,
             newRoleParams: eQ,
             setNewRoleParams: eR,
             guildId: _,
@@ -375,7 +375,7 @@ function _(e) {
       }), (0, n.jsx)(u.zJl, {
         children: (0, n.jsxs)("div", {
           className: B.productPreview,
-          children: [(0, n.jsx)(w.Z, {
+          children: [(0, n.jsx)(z.Z, {
             disabled: !e$,
             disabledTooltip: el ? R.intl.string(R.t["0NQ00t"]) : R.intl.string(R.t["Ax89/f"]),
             published: el,
@@ -451,7 +451,7 @@ function _(e) {
                 }))
               }) : eE()
             },
-            disabled: ez
+            disabled: ew
           })]
         }), (0, n.jsx)("div", {
           className: B.footerActionRightButtons,

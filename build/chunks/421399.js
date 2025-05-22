@@ -1,7 +1,7 @@
 /** Chunk was on 44247 **/
 n.d(t, {
   Z: () => M,
-  a: () => h
+  a: () => D
 });
 var r, i = n(255367),
   l = n(73800),
@@ -47,7 +47,7 @@ function b(e) {
   return e
 }
 
-function D(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,7 +59,7 @@ function D(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var h = ((r = {})[r.SYSTEM_TAG = 0] = "SYSTEM_TAG", r[r.BADGES = 1] = "BADGES", r);
+var D = ((r = {})[r.SYSTEM_TAG = 0] = "SYSTEM_TAG", r[r.BADGES = 1] = "BADGES", r);
 
 function U(e) {
   let {
@@ -79,7 +79,7 @@ function M(e) {
     message: r,
     channel: o,
     userOverride: p,
-    compact: h = !1,
+    compact: D = !1,
     withMentionPrefix: M = !1,
     showPopout: v = !1,
     hideGuildTag: k = !1,
@@ -120,7 +120,7 @@ function M(e) {
   }), es = (0, d.EJ)(K + q), eu = {
     className: a()([y.username, eo && ec]),
     style: (() => {
-      if (ee) return eo && null != J ? D(b({}, ea), {
+      if (ee) return eo && null != J ? h(b({}, ea), {
         textDecorationColor: null == J ? void 0 : J.primaryColor
       }) : null != X ? {
         color: X
@@ -130,12 +130,12 @@ function M(e) {
     onContextMenu: j,
     children: es,
     "data-text": K + q
-  }, ed = l.useMemo(() => h && !k ? (0, i.jsx)(S.ZP, {
+  }, ed = l.useMemo(() => D && !k ? (0, i.jsx)(S.ZP, {
     primaryGuild: n.primaryGuild,
     userId: r.author.id,
     contextGuildId: H,
     className: y.clanTagChiplet
-  }) : null, [h, n.primaryGuild, H, r.author.id, k]), e_ = null != p ? p : r.author, eE = null != F && null != v ? (0, i.jsx)(m.Z, {
+  }) : null, [D, n.primaryGuild, H, r.author.id, k]), e_ = null != p ? p : r.author, eE = null != F && null != v ? (0, i.jsx)(m.Z, {
     targetElementRef: W,
     user: e_,
     renderPopout: F,
@@ -169,7 +169,7 @@ function M(e) {
         return i
       }(e, ["onClick"]);
       return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(_.P3F, D(b({
+        children: [(0, i.jsx)(_.P3F, h(b({
           tag: "span",
           innerRef: W
         }, n, eu), {
@@ -178,24 +178,24 @@ function M(e) {
       })
     }
   }) : (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(_.P3F, D(b({}, eu), {
+    children: [(0, i.jsx)(_.P3F, h(b({}, eu), {
       className: a()(eu.className, L)
     })), ed]
   }), eO = null != G ? G[0] : null, eI = null != G ? G[1] : null;
   return (0, i.jsxs)(I.Gt, {
     value: Y,
-    children: [null != eO && h ? (0, i.jsxs)(i.Fragment, {
+    children: [null != eO && D ? (0, i.jsxs)(i.Fragment, {
       children: [" ", eO, " "]
     }) : null, "dot" === $ ? (0, i.jsx)(_.FhE, {
       color: X,
       colors: el ? J : null,
       name: Q,
       className: y.roleDot
-    }) : null, eE, !h && !k && (0, i.jsx)(S.ZP, {
+    }) : null, eE, !D && !k && (0, i.jsx)(S.ZP, {
       primaryGuild: n.primaryGuild,
       userId: r.author.id,
       contextGuildId: H,
       className: y.clanTagChiplet
-    }), null != eI ? eI : null, null == eO || h ? null : eO, null != r && (0, g.f)(r) && et && w ? (0, i.jsx)(U, {}) : null]
+    }), null != eI ? eI : null, null == eO || D ? null : eO, null != r && (0, g.f)(r) && et && w ? (0, i.jsx)(U, {}) : null]
   })
 }

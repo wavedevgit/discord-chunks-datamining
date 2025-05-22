@@ -29,8 +29,8 @@ var i = n(442837),
   P = n(921944),
   y = n(981631),
   b = n(801461),
-  D = n(474936),
-  h = n(388032),
+  h = n(474936),
+  D = n(388032),
   U = n(131715);
 let M = e => {
   let {
@@ -53,7 +53,7 @@ let M = e => {
             children: [(0, r.jsx)(o.RyX, {
               onClick: () => i(P.L.UNKNOWN),
               noticeType: M
-            }), h.intl.string(h.t["+xn1o6"]), (0, r.jsx)("i", {
+            }), D.intl.string(D.t["+xn1o6"]), (0, r.jsx)("i", {
               className: U.iconApple
             }), (0, r.jsx)("i", {
               className: U.iconAndroid
@@ -88,7 +88,7 @@ let M = e => {
                   }, t))
                 })
               },
-              children: h.intl.string(h.t["1WjMbG"])
+              children: D.intl.string(D.t["1WjMbG"])
             })]
           });
         case l.z.NAGBAR_NOTICE_CONNECT_SPOTIFY:
@@ -99,13 +99,13 @@ let M = e => {
               noticeType: M
             }), (0, r.jsx)(R.Z, {
               className: U.platformIcon
-            }), h.intl.string(h.t["5NUVHB"]), (0, r.jsx)(o.NoS, {
+            }), D.intl.string(D.t["5NUVHB"]), (0, r.jsx)(o.NoS, {
               onClick: () => (0, d.Z)({
                 platformType: y.ABu.SPOTIFY,
                 location: "Notice Bar"
               }),
               noticeType: M,
-              children: h.intl.string(h.t.S0W8Z2)
+              children: D.intl.string(D.t.S0W8Z2)
             })]
           });
         case l.z.NAGBAR_NOTICE_CONNECT_PLAYSTATION:
@@ -117,12 +117,12 @@ let M = e => {
               alt: "",
               className: U.platformIcon,
               src: s.Z.get(y.ABu.PLAYSTATION).icon.whiteSVG
-            }), h.intl.string(h.t.WHWgoa), (0, r.jsx)(o.EyT, {
+            }), D.intl.string(D.t.WHWgoa), (0, r.jsx)(o.EyT, {
               onClick: () => (0, d.Z)({
                 platformType: y.ABu.PLAYSTATION,
                 location: "Notice Bar"
               }),
-              children: h.intl.string(h.t.S0W8Z2)
+              children: D.intl.string(D.t.S0W8Z2)
             })]
           });
         case l.z.NAGBAR_NOTICE_MFA_SMS_BACKUP:
@@ -131,10 +131,10 @@ let M = e => {
             children: [(0, r.jsx)(o.RyX, {
               onClick: () => i(P.L.UNKNOWN),
               noticeType: M
-            }), h.intl.string(h.t.B2hnhY), (0, r.jsx)(o.NoS, {
+            }), D.intl.string(D.t.B2hnhY), (0, r.jsx)(o.NoS, {
               onClick: () => c.Z.open(y.oAB.ACCOUNT),
               noticeType: M,
-              children: h.intl.string(h.t["50KYxs"])
+              children: D.intl.string(D.t["50KYxs"])
             })]
           });
         case l.z.NAGBAR_NOTICE_PREMIUM_PROMO:
@@ -144,7 +144,7 @@ let M = e => {
               className: U.premiumLogo
             }), (0, r.jsx)("span", {
               className: U.premiumText,
-              children: h.intl.string(h.t["+urf7+"])
+              children: D.intl.string(D.t["+urf7+"])
             }), (0, r.jsx)(o.NoS, {
               className: U.premiumAction,
               noticeType: M,
@@ -154,7 +154,7 @@ let M = e => {
                   location_object: y.qAy.BUTTON_CTA
                 }), c.Z.open(y.oAB.PREMIUM)
               },
-              children: h.intl.string(h.t["8JC5e3"])
+              children: D.intl.string(D.t["8JC5e3"])
             }), (0, r.jsx)(o.RyX, {
               onClick: () => {
                 i(P.L.UNKNOWN), (0, a.mB)(y.xW$.PREMIUM_PROMO_DISMISSED, !0)
@@ -165,12 +165,12 @@ let M = e => {
         case l.z.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING:
           return (0, r.jsx)(T.Z, {
             dismissCurrentNotice: () => i(P.L.UNKNOWN),
-            subscriptionTier: D.Si.TIER_2
+            subscriptionTier: h.Si.TIER_2
           });
         case l.z.NAGBAR_NOTICE_PREMIUM_TIER_0_TRIAL_ENDING:
           return (0, r.jsx)(T.Z, {
             dismissCurrentNotice: () => i(P.L.UNKNOWN),
-            subscriptionTier: D.Si.TIER_0
+            subscriptionTier: h.Si.TIER_0
           });
         case l.z.NAGBAR_NOTICE_PREMIUM_REACTIVATE:
           return (0, r.jsxs)(o.qXd, {
@@ -178,12 +178,12 @@ let M = e => {
             children: [(0, r.jsx)(o.RyX, {
               noticeType: M,
               onClick: () => i(P.L.UNKNOWN)
-            }), h.intl.string(h.t["0KFB2N"]), (0, r.jsx)(o.NoS, {
+            }), D.intl.string(D.t["0KFB2N"]), (0, r.jsx)(o.NoS, {
               noticeType: M,
               onClick: () => {
                 i(P.L.UNKNOWN), c.Z.open(y.oAB.PREMIUM)
               },
-              children: h.intl.string(h.t.pyYSiI)
+              children: D.intl.string(D.t.pyYSiI)
             })]
           });
         case l.z.NAGBAR_NOTICE_LOCALIZED_PRICING:
@@ -198,12 +198,12 @@ let M = e => {
             children: [(0, r.jsx)(o.RyX, {
               onClick: () => i(P.L.UNKNOWN),
               noticeType: M
-            }), h.intl.string(h.t["7490vb"]), (0, r.jsx)(o.NoS, {
+            }), D.intl.string(D.t["7490vb"]), (0, r.jsx)(o.NoS, {
               noticeType: M,
               onClick: () => {
                 (0, S.uL)(y.Z5c.SETTINGS("account"))
               },
-              children: h.intl.string(h.t.Vm8akJ)
+              children: D.intl.string(D.t.Vm8akJ)
             })]
           });
         case l.z.NAGBAR_ACTIVATE_SERVER_SUBSCRIPTION:
@@ -213,12 +213,12 @@ let M = e => {
             children: [(0, r.jsx)(o.RyX, {
               onClick: () => i(P.L.UNKNOWN),
               noticeType: M
-            }), h.intl.string(h.t.pJ4hJC), (0, r.jsx)(o.NoS, {
+            }), D.intl.string(D.t.pJ4hJC), (0, r.jsx)(o.NoS, {
               noticeType: M,
               onClick: () => {
                 i(P.L.PRIMARY), (0, S.uL)(1 === N.length ? y.Z5c.GUILD_SETTINGS(N[0], "role-subscriptions") : y.Z5c.PICK_GUILD_SETTINGS("role-subscriptions", void 0, "server-subscriptions-finish-setting-up"))
               },
-              children: h.intl.string(h.t["74s74O"])
+              children: D.intl.string(D.t["74s74O"])
             })]
           });
         case l.z.NAGBAR_NOTICE_POMELO:
@@ -227,10 +227,10 @@ let M = e => {
             children: [(0, r.jsx)(o.RyX, {
               onClick: () => i(P.L.UNKNOWN),
               noticeType: M
-            }), h.intl.format(h.t.pdYZys, {}), (0, r.jsx)(o.NoS, {
+            }), D.intl.format(D.t.pdYZys, {}), (0, r.jsx)(o.NoS, {
               onClick: () => (0, I.Z)(b.Kq.NOTICE),
               noticeType: M,
-              children: h.intl.string(h.t.LhlgY2)
+              children: D.intl.string(D.t.LhlgY2)
             })]
           });
         case l.z.UU_MIGRATION_NOTICE:
@@ -239,12 +239,12 @@ let M = e => {
             children: [(0, r.jsx)(o.RyX, {
               onClick: () => i(P.L.UNKNOWN),
               noticeType: M
-            }), h.intl.format(h.t.zT1hgo, {
+            }), D.intl.format(D.t.zT1hgo, {
               date: (0, O.IE)(k)
             }), (0, r.jsx)(o.NoS, {
               onClick: () => (0, I.Z)(b.Kq.NOTICE),
               noticeType: M,
-              children: h.intl.string(h.t.LhlgY2)
+              children: D.intl.string(D.t.LhlgY2)
             })]
           });
         case l.z.CHECKOUT_RECOVERY_NAGBAR:
@@ -253,17 +253,17 @@ let M = e => {
             children: [(0, r.jsx)(o.RyX, {
               onClick: () => i(P.L.UNKNOWN),
               noticeType: M
-            }), h.intl.string(h.t["O9GI+v"]), (0, r.jsx)(o.NoS, {
+            }), D.intl.string(D.t["O9GI+v"]), (0, r.jsx)(o.NoS, {
               onClick: () => {
                 (0, E.Z)({
-                  subscriptionTier: D.Si.TIER_2,
+                  subscriptionTier: h.Si.TIER_2,
                   analyticsLocations: [u.Z.CHECKOUT_RECOVERY_NAGBAR],
                   analyticsLocation: y.Sbl.CHECKOUT_RECOVERY_NAGBAR,
                   onClose: () => i(P.L.UNKNOWN)
                 })
               },
               noticeType: M,
-              children: h.intl.string(h.t.Zi69Dw)
+              children: D.intl.string(D.t.Zi69Dw)
             })]
           });
         case l.z.REPORT_TO_MOD_SURVEY_NOTICE:
@@ -272,12 +272,12 @@ let M = e => {
             children: [(0, r.jsx)(o.RyX, {
               onClick: () => i(P.L.USER_DISMISS),
               noticeType: y.kVF.REPORT_TO_MOD_SURVEY
-            }), h.intl.string(h.t["Aa+l7e"]), (0, r.jsx)(o.NoS, {
+            }), D.intl.string(D.t["Aa+l7e"]), (0, r.jsx)(o.NoS, {
               onClick: () => {
                 window.open("https://discord.sjc1.qualtrics.com/jfe/form/SV_5uP0NWTpoXsYSUu?user_id=".concat(null == L ? void 0 : L.id, "&guild_id=").concat(Z), "_blank"), i(P.L.TAKE_ACTION)
               },
               noticeType: y.kVF.REPORT_TO_MOD_SURVEY,
-              children: h.intl.string(h.t["iT+wQ0"])
+              children: D.intl.string(D.t["iT+wQ0"])
             })]
           })
       }

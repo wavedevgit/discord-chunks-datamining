@@ -30,8 +30,8 @@ var i = n(120356),
   P = n(314451),
   y = n(35583),
   b = n(981631),
-  D = n(176505),
-  h = n(220705);
+  h = n(176505),
+  D = n(220705);
 
 function U(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -89,7 +89,7 @@ function k(e) {
     role: Z,
     hideSearch: j,
     showDivider: x
-  } = e, F = null == i || (0, D.AB)(i) ? null : i, w = (0, a.e7)([m.Z], () => m.Z.isInChannel(F) || !1), G = (0, a.e7)([_.Z], () => null != F && _.Z.getParticipantsListOpen(F)), {
+  } = e, F = null == i || (0, h.AB)(i) ? null : i, w = (0, a.e7)([m.Z], () => m.Z.isInChannel(F) || !1), G = (0, a.e7)([_.Z], () => null != F && _.Z.getParticipantsListOpen(F)), {
     hasBugReporterAccess: V
   } = d.Z.useExperiment({
     location: "HeaderBar"
@@ -113,11 +113,11 @@ function k(e) {
       let e = null != i && !j;
       return o.tq ? U : (0, r.jsxs)(r.Fragment, {
         children: [R, e ? (0, r.jsx)(N.Z, {
-          className: h.search
+          className: D.search
         }, null != s ? s : i) : null, x && (0, r.jsx)(g.ZP.Divider, {}), !H && (0, r.jsx)(y.Z, {}), !H && (0, r.jsx)(O.Z, {
           canShowReminder: !0
         }), !H && (0, r.jsx)(p.Z, {}), B && !W ? (0, r.jsx)(S.Z, {}) : null, !H && (V ? (0, r.jsx)(P.Z, {}) : (0, r.jsx)(C.Z, {})), z && w && null != F && !G && l === b.d4z.GROUP_DM && (0, r.jsxs)("div", {
-          className: h.controlButtonWrapper,
+          className: D.controlButtonWrapper,
           children: [(0, r.jsx)(g.ZP.Divider, {}), (0, r.jsx)(f.Z, {
             onClick: () => c.Z.toggleParticipantsList(F, !G)
           })]
@@ -173,7 +173,7 @@ function Z(e) {
   let {
     analyticsLocations: i
   } = (0, u.ZP)(s.Z.HEADER_BAR), o = l()(n.className, {
-    [h.forumOrHome]: null != n.channelType && b.TPd.GUILD_THREADS_ONLY.has(n.channelType) || n.channelId === D.oC.GUILD_HOME
+    [D.forumOrHome]: null != n.channelType && b.TPd.GUILD_THREADS_ONLY.has(n.channelType) || n.channelId === h.oC.GUILD_HOME
   });
   return (0, r.jsx)(u.Gt, {
     value: i,

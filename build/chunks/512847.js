@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => D
+  Z: () => k
 });
 var r = n(255367),
   i = n(73800),
@@ -119,12 +119,21 @@ function Z() {
 }
 
 function x() {
+  return N([y.Z], () => y.Z.isCurrentUserPrioritySpeaker(), (e, t) => {
+    if (e !== t) {
+      let e = b.Z.isSelfMute();
+      if (b.Z.getMode() === S.pM4.VOICE_ACTIVITY && !e) return t ? "ptt_start" : "ptt_stop"
+    }
+  }), null
+}
+
+function L() {
   return N([I.Z], () => I.Z.userHasBeenMovedVersion, (e, t) => {
     if (e !== t) return "user_moved"
   }), null
 }
 
-function L() {
+function w() {
   return N([O.Z, I.Z], () => {
     let e = O.Z.getVoiceChannelId();
     if (null == e) return d.xO.NONE;
@@ -135,7 +144,7 @@ function L() {
   }), null
 }
 
-function w() {
+function R() {
   return N([O.Z, h.Z, f.default, I.Z, g.Z], () => {
     let e, t, n = O.Z.getVoiceChannelId(),
       r = f.default.getId(),
@@ -189,7 +198,7 @@ function w() {
   }), null
 }
 
-function R() {
+function D() {
   return N([O.Z, a.ZP, f.default], () => {
     let e = O.Z.getVoiceChannelId(),
       t = O.Z.getChannelId(),
@@ -234,8 +243,8 @@ function R() {
   }), null
 }
 
-function D() {
+function k() {
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(T, {}), (0, r.jsx)(P, {}), (0, r.jsx)(j, {}), (0, r.jsx)(Z, {}), (0, r.jsx)(x, {}), (0, r.jsx)(w, {}), (0, r.jsx)(L, {}), (0, r.jsx)(R, {}), (0, r.jsx)(A, {})]
+    children: [(0, r.jsx)(T, {}), (0, r.jsx)(P, {}), (0, r.jsx)(j, {}), (0, r.jsx)(Z, {}), (0, r.jsx)(L, {}), (0, r.jsx)(R, {}), (0, r.jsx)(w, {}), (0, r.jsx)(D, {}), (0, r.jsx)(A, {}), (0, r.jsx)(x, {})]
   })
 }

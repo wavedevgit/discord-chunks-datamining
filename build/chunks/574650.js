@@ -51,11 +51,11 @@ let A = () => {
   let P = null != (t = null == R ? void 0 : R.applicationStatus) ? t : E.wB.STARTED,
     y = null,
     b = null,
-    D = null,
-    h = [N.notice, f.notice];
+    h = null,
+    D = [N.notice, f.notice];
   switch (P) {
     case E.wB.SUBMITTED:
-      y = S.intl.string(S.t["5iLvS0"]), b = S.intl.string(S.t.mqtdmZ), D = () => {
+      y = S.intl.string(S.t["5iLvS0"]), b = S.intl.string(S.t.mqtdmZ), h = () => {
         (0, c.h7j)(e => {
           var t, n;
           return (0, r.jsx)(c.ConfirmModal, (t = m({
@@ -83,7 +83,7 @@ let A = () => {
       };
       break;
     case E.wB.REJECTED:
-      y = S.intl.string(S.t.lk30cX), b = S.intl.string(S.t["8RrsHh"]), D = () => {
+      y = S.intl.string(S.t.lk30cX), b = S.intl.string(S.t["8RrsHh"]), h = () => {
         (0, c.ZDy)(async () => {
           let {
             default: e
@@ -92,15 +92,15 @@ let A = () => {
             guildId: A.id
           }, t))
         })
-      }, h.push(N.error);
+      }, D.push(N.error);
       break;
     default:
-      y = S.intl.string(S.t.G5YKXF), b = S.intl.string(S.t["r8/DT0"]), D = () => {
+      y = S.intl.string(S.t.G5YKXF), b = S.intl.string(S.t["r8/DT0"]), h = () => {
         (0, _.hk)(A.id)
       }
   }
   return (0, r.jsxs)("div", {
-    className: l()(...h),
+    className: l()(...D),
     children: [(0, r.jsx)(c.Text, {
       className: N.header,
       variant: "text-sm/normal",
@@ -110,7 +110,7 @@ let A = () => {
       look: c.zxk.Looks.OUTLINED,
       color: c.zxk.Colors.WHITE,
       size: c.zxk.Sizes.NONE,
-      onClick: D,
+      onClick: h,
       children: b
     })]
   })

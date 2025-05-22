@@ -37,13 +37,13 @@ let P = e => {
     autoTrackExposure: !1,
     disable: P
   }), {
-    enabled: D
+    enabled: h
   } = E.ru.useExperiment({
     location: "OutboundPromotionNotice"
   }, {
     autoTrackExposure: !1
   }), {
-    location: h
+    location: D
   } = (0, u.O)(), {
     analyticsLocations: U
   } = (0, d.ZP)(), M = i.useCallback(() => {
@@ -68,7 +68,7 @@ let P = e => {
           })
         }
         return e
-      }({}, h), t = t = {
+      }({}, D), t = t = {
         object: A.qAy.BUTTON_CTA,
         objectType: A.Qqv.TIER_2
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
@@ -82,7 +82,7 @@ let P = e => {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
       }), e)
     })
-  }, [U, h]), v = i.useCallback(() => {
+  }, [U, D]), v = i.useCallback(() => {
     s.Z.open(A.oAB.INVENTORY), p.ZP.dismissOutboundPromotionNotice()
   }, []), k = i.useCallback(() => {
     S.default.track(A.rMx.OUTBOUND_PROMOTION_NOTICE_CLICKED), b ? M() : v()
@@ -113,7 +113,7 @@ let P = e => {
       children: b ? g.intl.string(g.t.pj0XBA) : g.intl.string(g.t.jVcuVV)
     })]
   });
-  return D ? (0, r.jsx)(f.O1, {
+  return h ? (0, r.jsx)(f.O1, {
     contentType: t,
     newSnowflakeId: n,
     timeRecurringConfig: {
