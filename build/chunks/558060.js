@@ -15,8 +15,8 @@ var l = n(120356),
   d = n(388032),
   f = n(561197);
 
-function b() {
-  return (b = Object.assign || function(e) {
+function p() {
+  return (p = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -25,7 +25,7 @@ function b() {
   }).apply(this, arguments)
 }
 
-function p(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -75,7 +75,7 @@ function h(e) {
   });
   let v = (0, o.ql)(t, u.tuJ.PREMIUM_TIER_2),
     O = !n && !(0, o.x6)(t),
-    x = (0, o.x6)(t) && n ? g(p({}, C), {
+    x = (0, o.x6)(t) && n ? g(b({}, C), {
       amount: l.original
     }) : C,
     S = _ && n,
@@ -113,11 +113,11 @@ function h(e) {
         text: d.intl.string(d.t.MPFyJy),
         "aria-label": d.intl.string(d.t.X3Ekj4),
         children: e => {
-          var t = b({}, function(e) {
+          var t = p({}, function(e) {
             if (null == e) throw TypeError("Cannot destructure " + e);
             return e
           }(e));
-          return (0, r.jsx)(a.SrA, g(p({
+          return (0, r.jsx)(a.SrA, g(b({
             size: "md",
             color: "currentColor"
           }, t), {
