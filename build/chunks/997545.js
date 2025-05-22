@@ -769,7 +769,7 @@ class L extends _.Z {
   getUserIdBySsrc(e) {}
   prepareSecureFramesTransition(e, t, n) {
     var r, i;
-    null == (r = (i = this.conn).prepareSecureFramesTransition) || r.call(i, e, t, n)
+    0 === e && (this.lastExecutedTransitionId = -1, this.lastPreparedTransitionId = -1), this.lastPreparedTransitionId = e, null == (r = (i = this.conn).prepareSecureFramesTransition) || r.call(i, e, t, n)
   }
   prepareSecureFramesEpoch(e, t, n) {
     var r, i;
@@ -777,7 +777,12 @@ class L extends _.Z {
   }
   executeSecureFramesTransition(e) {
     var t, n;
-    null == (t = (n = this.conn).executeSecureFramesTransition) || t.call(n, e)
+    let r;
+    if (!(r = -1 === this.lastExecutedTransitionId || -1 === this.lastPreparedTransitionId || (this.lastPreparedTransitionId >= this.lastExecutedTransitionId ? e > this.lastExecutedTransitionId && e <= this.lastPreparedTransitionId : e > this.lastExecutedTransitionId || e <= this.lastPreparedTransitionId))) {
+      let t = "Skipping invalid transition ".concat(e, " outside of range (").concat(this.lastExecutedTransitionId, "-").concat(this.lastPreparedTransitionId, "]");
+      throw this.logger.warn(t), Error(t)
+    }
+    this.lastExecutedTransitionId = e, null == (t = (n = this.conn).executeSecureFramesTransition) || t.call(n, e)
   }
   getMLSKeyPackage(e) {
     var t, n;
@@ -793,11 +798,11 @@ class L extends _.Z {
   }
   prepareMLSCommitTransition(e, t, n) {
     var r, i;
-    null == (r = (i = this.conn).prepareMLSCommitTransition) || r.call(i, e, t, n)
+    this.lastPreparedTransitionId = e, null == (r = (i = this.conn).prepareMLSCommitTransition) || r.call(i, e, t, n)
   }
   processMLSWelcome(e, t, n) {
     var r, i;
-    null == (r = (i = this.conn).processMLSWelcome) || r.call(i, e, t, n)
+    this.lastPreparedTransitionId = e, null == (r = (i = this.conn).processMLSWelcome) || r.call(i, e, t, n)
   }
   getMLSPairwiseFingerprint(e, t, n) {
     var r, i;
@@ -808,7 +813,7 @@ class L extends _.Z {
     null == (t = (n = this.conn).presentDesktopSourcePicker) || t.call(n, e)
   }
   constructor(e, t, n) {
-    super(e, t), I(this, "mediaEngineConnectionId", "Native-".concat(R++)), I(this, "goLiveSourceIdentifier", void 0), I(this, "selfVideo", !1), I(this, "forceAudioNormal", !1), I(this, "forceAudioPriority", !1), I(this, "codecs", []), I(this, "videoEncoderFallbackPending", !1), I(this, "desktopDegradationPreference", (0, b.zS)().DegradationPreference.MAINTAIN_FRAMERATE), I(this, "sourceDesktopDegradationPreference", (0, b.zS)().DegradationPreference.DISABLED), I(this, "videoDegradationPreference", (0, b.zS)().DegradationPreference.BALANCED), I(this, "localPans", {}), I(this, "remoteAudioSSRCs", {}), I(this, "remoteVideoSSRCs", {}), I(this, "inputMode", v.pM.VOICE_ACTIVITY), I(this, "vadThreshold", -40), I(this, "vadAutoThreshold", !0), I(this, "vadUseKrisp", !0), I(this, "vadLeading", 5), I(this, "vadTrailing", 25), I(this, "pttReleaseDelay", 20), I(this, "soundshareActive", !1), I(this, "soundshareId", null), I(this, "soundshareSentSpeakingEvent", !1), I(this, "echoCancellation", !0), I(this, "noiseSuppression", !0), I(this, "automaticGainControl", !0), I(this, "noiseCancellation", !1), I(this, "voiceFilterId", null), I(this, "experimentalEncoders", !1), I(this, "hardwareH264", !0), I(this, "softwareH264", !0), I(this, "attenuationFactor", .5), I(this, "attenuateWhileSpeakingSelf", !1), I(this, "attenuateWhileSpeakingOthers", !0), I(this, "qos", !0), I(this, "conn", void 0), I(this, "minimumJitterBufferLevel", 0), I(this, "postponeDecodeLevel", 100), I(this, "reconnectInterval", 6e4), I(this, "keyframeInterval", 0), I(this, "clipsKeyFrameInterval", 0), I(this, "videoQualityMeasurement", ""), I(this, "videoEncoderExperiments", ""), I(this, "numFastUdpReconnects", 0), I(this, "simulcastLQDisabledSsrc", void 0), I(this, "logger", void 0), I(this, "handleSpeakingNative", (e, t) => {
+    super(e, t), I(this, "mediaEngineConnectionId", "Native-".concat(R++)), I(this, "goLiveSourceIdentifier", void 0), I(this, "selfVideo", !1), I(this, "forceAudioNormal", !1), I(this, "forceAudioPriority", !1), I(this, "codecs", []), I(this, "videoEncoderFallbackPending", !1), I(this, "desktopDegradationPreference", (0, b.zS)().DegradationPreference.MAINTAIN_FRAMERATE), I(this, "sourceDesktopDegradationPreference", (0, b.zS)().DegradationPreference.DISABLED), I(this, "videoDegradationPreference", (0, b.zS)().DegradationPreference.BALANCED), I(this, "localPans", {}), I(this, "remoteAudioSSRCs", {}), I(this, "remoteVideoSSRCs", {}), I(this, "inputMode", v.pM.VOICE_ACTIVITY), I(this, "vadThreshold", -40), I(this, "vadAutoThreshold", !0), I(this, "vadUseKrisp", !0), I(this, "vadLeading", 5), I(this, "vadTrailing", 25), I(this, "pttReleaseDelay", 20), I(this, "soundshareActive", !1), I(this, "soundshareId", null), I(this, "soundshareSentSpeakingEvent", !1), I(this, "echoCancellation", !0), I(this, "noiseSuppression", !0), I(this, "automaticGainControl", !0), I(this, "noiseCancellation", !1), I(this, "voiceFilterId", null), I(this, "experimentalEncoders", !1), I(this, "hardwareH264", !0), I(this, "softwareH264", !0), I(this, "attenuationFactor", .5), I(this, "attenuateWhileSpeakingSelf", !1), I(this, "attenuateWhileSpeakingOthers", !0), I(this, "qos", !0), I(this, "conn", void 0), I(this, "minimumJitterBufferLevel", 0), I(this, "postponeDecodeLevel", 100), I(this, "reconnectInterval", 6e4), I(this, "keyframeInterval", 0), I(this, "clipsKeyFrameInterval", 0), I(this, "videoQualityMeasurement", ""), I(this, "videoEncoderExperiments", ""), I(this, "numFastUdpReconnects", 0), I(this, "simulcastLQDisabledSsrc", void 0), I(this, "lastPreparedTransitionId", -1), I(this, "lastExecutedTransitionId", -1), I(this, "logger", void 0), I(this, "handleSpeakingNative", (e, t) => {
       let n = v.Dg.NONE;
       n = "boolean" == typeof t ? t ? v.Dg.VOICE : v.Dg.NONE : t, this.handleSpeakingFlags(e, n)
     }), I(this, "handleNativeMuteToggled", () => {
