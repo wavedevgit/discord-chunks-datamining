@@ -1,135 +1,134 @@
 /** Chunk was on 43473 **/
-t.d(n, {
+n.d(t, {
   Z: () => p
-}), t(388685);
-var o = t(255367),
-  r = t(73800),
-  c = t(481060),
-  i = t(785717),
-  a = t(128156),
-  l = t(311044),
-  s = t(408986),
-  d = t(228168),
-  u = t(662776);
+}), n(388685);
+var o = n(255367),
+  r = n(73800),
+  i = n(481060),
+  c = n(785717),
+  l = n(128156),
+  a = n(311044),
+  s = n(408986),
+  d = n(228168),
+  u = n(662776);
 
 function f(e) {
   let {
-    user: n,
-    currentUser: t,
+    user: t,
+    currentUser: n,
     section: r,
-    subsection: c,
-    displayProfile: i,
+    subsection: i,
+    displayProfile: c,
     guildId: u,
     channelId: f,
     onClose: p
   } = e;
-  return r === d.oh.ACTIVITY ? (0, o.jsx)(a.Z, {
-    user: n,
-    currentUser: t,
-    displayProfile: i,
+  return r === d.oh.ACTIVITY ? (0, o.jsx)(l.Z, {
+    user: t,
+    currentUser: n,
+    displayProfile: c,
     guildId: u,
     channelId: f,
-    subsection: c,
+    subsection: i,
     onClose: p
-  }) : r === d.oh.MUTUAL_FRIENDS ? (0, o.jsx)(l.Z, {
-    user: n,
+  }) : r === d.oh.MUTUAL_FRIENDS ? (0, o.jsx)(a.Z, {
+    user: t,
     guildId: u,
-    channelId: f,
-    onClose: p
+    channelId: f
   }) : r === d.oh.MUTUAL_GUILDS ? (0, o.jsx)(s.Z, {
-    user: n,
+    user: t,
     onClose: p
   }) : null
 }
 
 function p(e) {
-  var n, t, a;
+  var t, n, l;
   let {
-    user: l,
+    user: a,
     currentUser: s,
     displayProfile: d,
     guildId: p,
     channelId: m,
     items: b,
-    initialSection: _,
-    initialSubsection: y,
+    initialSection: y,
+    initialSubsection: _,
     onClose: h
   } = e, {
-    trackUserProfileAction: g
-  } = (0, i.KZ)(), [{
-    section: x,
+    trackUserProfileAction: x
+  } = (0, c.KZ)(), [{
+    section: g,
     subsection: j,
-    text: I
-  }, O] = r.useState((t = function(e) {
-    for (var n = 1; n < arguments.length; n++) {
-      var t = null != arguments[n] ? arguments[n] : {},
-        o = Object.keys(t);
-      "function" == typeof Object.getOwnPropertySymbols && (o = o.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(t, e).enumerable
-      }))), o.forEach(function(n) {
+    text: O
+  }, I] = r.useState((n = function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var n = null != arguments[t] ? arguments[t] : {},
+        o = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (o = o.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), o.forEach(function(t) {
         var o;
-        o = t[n], n in e ? Object.defineProperty(e, n, {
+        o = n[t], t in e ? Object.defineProperty(e, t, {
           value: o,
           enumerable: !0,
           configurable: !0,
           writable: !0
-        }) : e[n] = o
+        }) : e[t] = o
       })
     }
     return e
-  }({}, null != (n = b.find(e => {
+  }({}, null != (t = b.find(e => {
     let {
-      section: n
+      section: t
     } = e;
-    return n === _
-  })) ? n : b[0]), a = a = {
-    subsection: y
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(a)) : (function(e, n) {
-    var t = Object.keys(e);
+    return t === y
+  })) ? t : b[0]), l = l = {
+    subsection: _
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
       var o = Object.getOwnPropertySymbols(e);
-      t.push.apply(t, o)
+      n.push.apply(n, o)
     }
-    return t
-  })(Object(a)).forEach(function(e) {
-    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(a, e))
-  }), t));
+    return n
+  })(Object(l)).forEach(function(e) {
+    Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
+  }), n));
   return (0, o.jsxs)("div", {
     className: u.container,
-    children: [(0, o.jsx)(c.njP, {
+    children: [(0, o.jsx)(i.njP, {
       type: "top",
       className: u.tabBar,
-      selectedItem: x,
+      selectedItem: g,
       onItemSelect: e => {
-        g({
+        x({
           action: "PRESS_SECTION",
           section: e
-        }), O(n => {
-          var t;
-          return null != (t = b.find(n => n.section === e)) ? t : n
+        }), I(t => {
+          var n;
+          return null != (n = b.find(t => t.section === e)) ? n : t
         })
       },
-      children: b.map(e => (0, o.jsx)(c.njP.Item, {
+      children: b.map(e => (0, o.jsx)(i.njP.Item, {
         className: u.tabBarItem,
         id: e.section,
         "aria-label": e.text,
-        children: (0, o.jsx)(c.Text, {
+        children: (0, o.jsx)(i.Text, {
           variant: "heading-md/normal",
           tag: "span",
           children: e.text
         })
       }, e.section))
-    }), (0, o.jsx)(c.njP.Panel, {
-      id: x,
-      "aria-label": I,
+    }), (0, o.jsx)(i.njP.Panel, {
+      id: g,
+      "aria-label": O,
       className: u.tabBarPanel,
       children: (0, o.jsx)(f, {
-        user: l,
+        user: a,
         currentUser: s,
         displayProfile: d,
         guildId: p,
         channelId: m,
-        section: x,
+        section: g,
         subsection: j,
         onClose: h
       })

@@ -22,7 +22,7 @@ function f(e) {
   } = (0, s.KZ)(), {
     mutualGuilds: p,
     isFetching: g
-  } = (0, c.Z)(n), v = e => {
+  } = (0, c.Z)(n), h = e => {
     (0, o.X)(e), t(), (0, i.xf)()
   };
   return (0, l.jsx)(r.zJl, {
@@ -43,7 +43,7 @@ function f(e) {
         onSelect: () => {
           f({
             action: "PRESS_MUTUAL_GUILD"
-          }), v(t.id)
+          }), h(t.id)
         }
       }, t.id)
     }) : (0, l.jsxs)("div", {

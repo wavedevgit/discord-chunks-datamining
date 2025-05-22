@@ -1,6 +1,6 @@
 /** Chunk was on 41071 **/
 t.d(n, {
-  Z: () => v
+  Z: () => h
 });
 var l = t(255367),
   r = t(73800),
@@ -15,26 +15,25 @@ var l = t(255367),
   p = t(388032),
   g = t(301150);
 
-function v(e) {
+function h(e) {
   let {
     user: n,
     guildId: t,
-    channelId: v,
-    onClose: h
+    channelId: h
   } = e, {
-    mutualFriends: j
+    mutualFriends: v
   } = (0, u.Z)(n), {
-    analyticsLocations: m
+    analyticsLocations: j
   } = (0, s.ZP)(), {
-    context: b,
-    trackUserProfileAction: x
-  } = (0, c.KZ)(), Z = (0, o.Z)();
+    context: m,
+    trackUserProfileAction: b
+  } = (0, c.KZ)(), x = (0, o.Z)();
   r.useEffect(() => {
-    (0, a.Z)(n.id, Z)
-  }, [n.id, Z]);
-  let O = e => {
+    (0, a.Z)(n.id, x)
+  }, [n.id, x]);
+  let Z = e => {
     var n, t;
-    h(), (0, d.openUserProfileModal)((n = function(e) {
+    (0, d.openUserProfileModal)((n = function(e) {
       for (var n = 1; n < arguments.length; n++) {
         var t = null != arguments[n] ? arguments[n] : {},
           l = Object.keys(t);
@@ -51,9 +50,9 @@ function v(e) {
         })
       }
       return e
-    }({}, b), t = t = {
+    }({}, m), t = t = {
       userId: e,
-      sourceAnalyticsLocations: m
+      sourceAnalyticsLocations: j
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(t)) : (function(e, n) {
       var t = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -68,10 +67,10 @@ function v(e) {
   return (0, l.jsx)(i.zJl, {
     className: g.listScroller,
     fade: !0,
-    children: null == j ? (0, l.jsx)("div", {
+    children: null == v ? (0, l.jsx)("div", {
       className: g.empty,
       children: (0, l.jsx)(i.$jN, {})
-    }) : 0 === j.length ? (0, l.jsxs)("div", {
+    }) : 0 === v.length ? (0, l.jsxs)("div", {
       className: g.empty,
       children: [(0, l.jsx)("div", {
         className: g.emptyIconFriends
@@ -79,7 +78,7 @@ function v(e) {
         className: g.emptyText,
         children: p.intl.string(p.t["/5p4g4"])
       })]
-    }) : j.map(e => {
+    }) : v.map(e => {
       let {
         key: n,
         user: r,
@@ -89,11 +88,11 @@ function v(e) {
         user: r,
         status: i,
         guildId: t,
-        channelId: v,
+        channelId: h,
         onSelect: () => {
-          x({
+          b({
             action: "PRESS_MUTUAL_FRIEND"
-          }), O(r.id)
+          }), Z(r.id)
         }
       }, n)
     })

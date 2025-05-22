@@ -1,6 +1,6 @@
 /**
   Module ID: 43473
-  Original File Name: c70f3b10d3e87a08
+  Original File Name: e48a9004dd9a58b9
 **/
 .scroller__95bea {
     display: flex;
@@ -858,7 +858,7 @@
     display: none
 }
 
-.heading_be87fd {
+:where(.section_be87fd) {
     color: var(--text-default)
 }
 
@@ -1216,12 +1216,12 @@
     padding: 0 32px
 }
 
-.profileBanner__9c3be {
+.profileOverlay__9c3be {
     margin: 0 32px;
     overflow: visible
 }
 
-.friendRequestBanner__9c3be {
+.profileBanner__9c3be {
     padding: 12px
 }
 
@@ -1289,4 +1289,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=c70f3b10d3e87a08.css.map*/
+/*# sourceMappingURL=e48a9004dd9a58b9.css.map*/

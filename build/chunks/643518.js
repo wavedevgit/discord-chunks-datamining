@@ -37,17 +37,17 @@ function b(e) {
   } = (0, s.Z)({
     userId: n.id,
     guildId: b
-  }), Z = n.id === (null == t ? void 0 : t.id), P = (0, o.e7)([r.Z, c.Z], () => {
+  }), Z = n.id === (null == t ? void 0 : t.id), A = (0, o.e7)([r.Z, c.Z], () => {
     let e = Z ? r.Z.getStatus() : c.Z.getStatus(n.id);
     return e === _.Skl.OFFLINE || e === _.Skl.INVISIBLE
-  }), A = null != g || y.length > 0, N = x.length > 0, {
+  }), P = null != g || y.length > 0, N = x.length > 0, {
     mutualFriendsCount: w,
     mutualGuilds: C
   } = (0, d.Z)(n), E = null == C ? void 0 : C.length, T = (0, a.Z)(n), S = [{
     section: p.oh.USER_INFO,
     text: m.intl.string(m.t.jGoPJS)
   }];
-  return !P && (A || h && null == g && null == O && null != v) ? S.push({
+  return !A && (P || h && null == g && null == O && null != v) ? S.push({
     section: p.oh.ACTIVITY,
     text: m.intl.string(m.t.chq59f)
   }) : (N || null == j && I === p.Tb.RECENT_ACTIVITY) && S.push({

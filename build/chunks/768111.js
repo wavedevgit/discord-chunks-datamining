@@ -1,33 +1,33 @@
 /** Chunk was on 43473 **/
-t.d(n, {
+n.d(t, {
   Z: () => s
-}), t(539854);
-var o = t(585305),
-  r = t(806729),
-  c = t(708108),
-  i = t(146078),
-  a = t(228168),
-  l = t(388032);
+}), n(539854);
+var o = n(585305),
+  r = n(806729),
+  i = n(708108),
+  c = n(146078),
+  l = n(228168),
+  a = n(388032);
 
 function s(e) {
   let {
-    user: n,
-    currentUser: t
+    user: t,
+    currentUser: n
   } = e, {
     mutualFriendsCount: s,
     mutualGuilds: d
-  } = (0, r.Z)(n), u = null == d ? void 0 : d.length, f = (0, o.Z)(n), p = [{
-    text: l.intl.string(l.t.chq59f),
-    section: a.oh.ACTIVITY,
+  } = (0, r.Z)(t), u = null == d ? void 0 : d.length, f = (0, o.Z)(t), p = [{
+    text: a.intl.string(a.t.chq59f),
+    section: l.oh.ACTIVITY,
     subsection: void 0
   }];
-  return n.id !== (null == t ? void 0 : t.id) && f && (p.push({
-    text: (0, c.Z)(s),
-    section: a.oh.MUTUAL_FRIENDS,
+  return t.id !== (null == n ? void 0 : n.id) && f && (p.push({
+    text: (0, i.Z)(s),
+    section: l.oh.MUTUAL_FRIENDS,
     subsection: void 0
   }), p.push({
-    text: (0, i.Z)(u),
-    section: a.oh.MUTUAL_GUILDS,
+    text: (0, c.Z)(u),
+    section: l.oh.MUTUAL_GUILDS,
     subsection: void 0
   })), p
 }

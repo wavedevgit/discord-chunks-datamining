@@ -45,10 +45,7 @@ function d(e) {
           color: m,
           className: p,
           children: n
-        }), null != o && (0, r.jsx)(o, {
-          size: "xxs",
-          color: m
-        })]
+        }), o]
       }), null != d && (0, r.jsx)(l.Text, {
         variant: "text-xs/normal",
         children: d

@@ -31,8 +31,8 @@ function g(e) {
     channelId: v,
     displayProfile: O,
     initialSection: Z,
-    initialSubsection: P,
-    onClose: A
+    initialSubsection: A,
+    onClose: P
   } = e, {
     relationshipType: N,
     originApplicationId: w
@@ -43,7 +43,7 @@ function g(e) {
     user: t,
     currentUser: g,
     guildId: j,
-    initialSubsection: P
+    initialSubsection: A
   });
   return (0, o.jsxs)("div", {
     className: x.body,
@@ -59,7 +59,7 @@ function g(e) {
       tags: (0, o.jsx)(d.Z, {
         displayProfile: O,
         themeType: h.lY.MODAL,
-        onClose: A
+        onClose: P
       })
     }), N === y.OGo.PENDING_INCOMING && (0, o.jsx)(_.Z.Overlay, {
       className: x.bannerContainer,
@@ -85,7 +85,7 @@ function g(e) {
     }), E && (0, o.jsx)(s.Z, {
       className: x.bannerContainer,
       isPremiumUser: T,
-      onInteraction: A
+      onInteraction: P
     }), (0, o.jsx)(b.Z, {
       user: t,
       currentUser: g,
@@ -94,8 +94,8 @@ function g(e) {
       channelId: v,
       items: M,
       initialSection: Z,
-      initialSubsection: P,
-      onClose: A
+      initialSubsection: A,
+      onClose: P
     })]
   })
 }

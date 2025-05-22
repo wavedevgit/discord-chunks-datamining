@@ -48,8 +48,8 @@ function Z(e) {
     user: n,
     guildId: t,
     channelId: Z,
-    messageId: P,
-    roleId: A,
+    messageId: A,
+    roleId: P,
     transitionState: N,
     openedAt: w,
     onHide: C,
@@ -62,8 +62,8 @@ function Z(e) {
     userId: n.id,
     guildId: S,
     channelId: Z,
-    messageId: P,
-    roleId: A,
+    messageId: A,
+    roleId: P,
     showGuildProfile: E
   }), R = [{
     icon: r.owK,
